@@ -1,0 +1,546 @@
+
+PT J
+AU Anand, K
+   van Lelyveld, I
+   Banai, A
+   Friedrich, S
+   Garratt, R
+   Halaj, G
+   Fique, J
+   Hansen, I
+   Jaramillo, SM
+   Lee, H
+   Molina-Borboa, JL
+   Nobili, S
+   Rajan, S
+   Salakhova, D
+   Silva, TC
+   Silvestri, L
+   de Souza, SRS
+AF Anand, Kartik
+   van Lelyveld, Iman
+   Banai, Adam
+   Friedrich, Soeren
+   Garratt, Rodney
+   Halaj, Grzegorz
+   Fique, Jose
+   Hansen, Ib
+   Jaramillo, Serafin Martinez
+   Lee, Hwayun
+   Molina-Borboa, Jose Luis
+   Nobili, Stefano
+   Rajan, Sriram
+   Salakhova, Dilyara
+   Silva, Thiago Christiano
+   Silvestri, Laura
+   Stancato de Souza, Sergio Rubens
+TI The missing links: A global study on uncovering financial network
+   structures from partial data
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Network reconstruction; Market structure; Intermediation
+ID SYSTEMIC RISK; MARKET
+AB Capturing financial network linkages and contagion in stress test models are important goals for banking supervisors and central banks responsible for micro- and macroprudential policy. However, granular data on financial networks is often lacking, and instead the networks must be reconstructed from partial data. In this paper, we conduct a horse race of network reconstruction methods using network data obtained from 25 different markets spanning 13 jurisdictions. Our contribution is two-fold: first, we collate and analyze data on a wide range of financial networks. And second, we rank the methods in terms of their ability to reconstruct the structures of links and exposures in networks. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Anand, Kartik; Friedrich, Soeren] Deutsch Bundesbank, Frankfurt, Germany.
+   [van Lelyveld, Iman] Nederlandsche Bank, Amsterdam, Netherlands.
+   [Banai, Adam] Magyar Nemzeti Bank, Budapest, Hungary.
+   [Garratt, Rodney] Fed Reserve Bank New York, New York, NY 10045 USA.
+   [Halaj, Grzegorz] European Cent Bank, Frankfurt, Germany.
+   [Fique, Jose] Bank Canada, Ottawa, ON, Canada.
+   [Hansen, Ib] Danmarks Nationalbank, Copenhagen, Denmark.
+   [Jaramillo, Serafin Martinez; Molina-Borboa, Jose Luis] Banco Mexico, Mexico City, DF, Mexico.
+   [Lee, Hwayun] Bank Korea, Seoul, South Korea.
+   [Nobili, Stefano] Banca Italia, Rome, Italy.
+   [Rajan, Sriram] Off Financial Res, Washington, DC USA.
+   [Salakhova, Dilyara] Banque France, Paris, France.
+   [Silva, Thiago Christiano; Stancato de Souza, Sergio Rubens] Banco Cent Brasil, Brasilia, DF, Brazil.
+   [Silvestri, Laura] Bank England, London, England.
+RP Anand, K (reprint author), Deutsch Bundesbank, Frankfurt, Germany.; van Lelyveld, I (reprint author), Nederlandsche Bank, Amsterdam, Netherlands.
+EM kartik.anand@bundesbank.de
+RI Christiano, Thiago/B-8828-2012
+OI Christiano, Thiago/0000-0003-2631-4393; van Lelyveld,
+   Iman/0000-0002-6925-5525
+CR Ali R., 2016, 38 BANK ENGL FIN STA
+   Amundsen E., 2012, 25 DANM NAT
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Arciero L, 2016, INT J CENT BANK, V12, P247
+   BACHARACH M, 1965, INT ECON REV, V6, P294, DOI 10.2307/2525582
+   Baral P., 2012, ESTIMATION BIL UNPUB
+   Basel Committee on Banking Supervision (BCBS), 2015, 29 BCBS
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Baumgartner S., 2004, WORKING PAPER
+   BCBS, 2013, 24 BCBS
+   BCBS, 2013, 25 BCBS
+   Benos E., 2013, 25 BANK ENGL FIN STA
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blasques F., 2015, 460 DNB
+   Blien U., 1997, ENTROPY OPTIMIZING M
+   Miranda RCC, 2014, J COMPLEX NETW, V2, P585, DOI 10.1093/comnet/cnu022
+   Cimini G, 2015, SCI REP-UK, V5, DOI 10.1038/srep15758
+   Cont R., 2010, WORKING PAPER
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Elsinger H., 2013, HDB SYSTEMIC RISK
+   Fang S. C., 1997, ENTROPY OPTIMIZATION
+   Fender I., 2010, BIS Q REV, P57
+   Furfine C., 1999, FINANCIAL MARKETS IN, V8, P24, DOI DOI 10.1111/1468-0416.00031
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Garratt R.J., 2011, 413 BANK ENGL
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Huser AC, 2015, J NETW THEORY FINANC, V1, P1
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   MacKay D. J. C., 2003, INFORM THEORY INFERE
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   Merton R.C., 2013, FINANC ANAL J, V69
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Musmeci N, 2013, J STAT PHYS, V151, P720, DOI 10.1007/s10955-013-0720-1
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Van Lelyveld Iman, 2006, INT J CENT BANK, V2, P99
+   Zawadowski A., 2011, INTERWOVEN LEN UNPUB
+NR 41
+TC 18
+Z9 18
+U1 6
+U2 18
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD APR
+PY 2018
+VL 35
+BP 107
+EP 119
+DI 10.1016/j.jfs.2017.05.012
+PG 13
+WC Business, Finance; Economics
+SC Business & Economics
+GA GD1ME
+UT WOS:000430263200008
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Stanton, R
+   Walden, J
+   Wallace, N
+AF Stanton, Richard
+   Walden, Johan
+   Wallace, Nancy
+TI Mortgage Loan Flow Networks and Financial Norms
+SO REVIEW OF FINANCIAL STUDIES
+LA English
+DT Article
+ID SOCIAL-STRUCTURE; SYSTEMIC RISK; CRISIS
+AB We develop a theoretical model of a network of intermediaries whose optimal behavior is jointly determined, leading to heterogeneous financial norms and systemic vulnerabilities. We apply the model to the network of U.S. mortgage intermediaries from 2005 to 2007, using a data set containing all private-label, fixed-rate mortgages, with loan flows defining links. Default risk was closely related to network position, evolving predictably among linked nodes, and loan quality estimated from the model was related to independent quality measures, altogether pointing to the vital importance of network effects in this market.
+C1 [Stanton, Richard; Walden, Johan; Wallace, Nancy] Univ Calif Berkeley, Haas Sch Business, 545 Student Serv Bldg, Berkeley, CA 94720 USA.
+RP Stanton, R (reprint author), Univ Calif Berkeley, Haas Sch Business, 545 Student Serv Bldg, Berkeley, CA 94720 USA.
+EM stanton@haas.berkeley.edu
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Adelino M, 2016, REV FINANC STUD, V29, P1635, DOI 10.1093/rfs/hhw018
+   Agarwal S, 2014, Q J ECON, V129, P889, DOI 10.1093/qje/qju003
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Babus A., 2013, WORKING PAPER
+   Babus A, 2016, RAND J ECON, V47, P239, DOI 10.1111/1756-2171.12126
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Berger AN, 1997, EUR J OPER RES, V98, P175, DOI 10.1016/S0377-2217(96)00342-6
+   Bernanke B.S., 2007, GLOBAL IMBALANCES RE
+   BILLETT MT, 1995, J FINANC, V50, P699, DOI 10.2307/2329425
+   Cabrales A., 2014, WORKING PAPER
+   Chang Briana, 2015, WORKING PAPER
+   Cheng IH, 2014, AM ECON REV, V104, P2797, DOI 10.1257/aer.104.9.2797
+   Demyanyk Y, 2011, REV FINANC STUD, V24, P1848, DOI 10.1093/rfs/hhp033
+   Di Maggio Marco, 2014, WORKING PAPER
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Friedkin NE, 1999, ADV GROUP, V16, P1
+   FROOT KA, 1993, J FINANC, V48, P1629, DOI 10.2307/2329062
+   Glaeser EL, 2017, J FINANC ECON, V126, P147, DOI 10.1016/j.jfineco.2017.06.012
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Gofman Michael, 2011, WORKING PAPER
+   GRANOVETTER M, 1985, AM J SOCIOL, V91, P481, DOI 10.1086/228311
+   Jackson Matthew O., 2013, NETWORK SCIENCE, V1, P49, DOI DOI 10.1017/NWS.2012.7
+   Jackson MO, 1996, J ECON THEORY, V71, P44, DOI 10.1006/jeth.1996.0108
+   Kelly B, 2013, WORKING PAPER
+   Kermani A., 2014, WORKING PAPER
+   Lopez-Pintado D, 2012, GAME ECON BEHAV, V75, P776, DOI 10.1016/j.geb.2012.01.008
+   Loutskina E, 2009, J FINANC, V64, P861, DOI 10.1111/j.1540-6261.2009.01451.x
+   MacKenzie D, 2011, AM J SOCIOL, V116, P1778, DOI 10.1086/659639
+   Mian A, 2011, AM ECON REV, V101, P2132, DOI 10.1257/aer.101.5.2132
+   Mian A, 2009, Q J ECON, V124, P1449, DOI 10.1162/qjec.2009.124.4.1449
+   Mian Atif, 2014, HOUSE OF DEBT
+   Nadauld TD, 2013, J FINANC ECON, V107, P454, DOI 10.1016/j.jfineco.2012.09.002
+   Nier E. W., 2008, WORKING PAPER
+   Palmer Christopher, 2015, WORKING PAPER
+   Poon M, 2009, ACCOUNT ORG SOC, V34, P654, DOI 10.1016/j.aos.2009.02.003
+   Rajan R., 2010, FAULT LINES HIDDEN F
+   Shiller RJ, 2014, AM ECON REV, V104, P1486, DOI 10.1257/aer.104.6.1486
+   Stanton R, 2014, ANNU REV FINANC ECON, V6, P259, DOI 10.1146/annurev-financial-110613-034324
+   Uzzi B, 1997, ADMIN SCI QUART, V42, P35, DOI 10.2307/2393808
+   Zhong Z., 2014, WORKING PAPER
+NR 43
+TC 3
+Z9 3
+U1 2
+U2 8
+PU OXFORD UNIV PRESS INC
+PI CARY
+PA JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
+SN 0893-9454
+EI 1465-7368
+J9 REV FINANC STUD
+JI Rev. Financ. Stud.
+PD SEP
+PY 2018
+VL 31
+IS 9
+BP 3595
+EP 3642
+DI 10.1093/rfs/hhx097
+PG 48
+WC Business, Finance; Economics
+SC Business & Economics
+GA HB7TU
+UT WOS:000451284600009
+DA 2019-12-28
+ER
+
+PT J
+AU Chen, TK
+   Liao, HH
+AF Chen, Tsung-Kang
+   Liao, Hsien-Hsing
+TI Suppliers'/customers' production efficiency uncertainty and firm credit
+   risk
+SO REVIEW OF QUANTITATIVE FINANCE AND ACCOUNTING
+LA English
+DT Article
+DE Production efficiency uncertainty; Business counterparties
+   (suppliers/customers); Credit risk; Supply chain uncertainty;
+   Information flow risk
+ID INTERNAL LIQUIDITY RISK; SUPPLY-CHAIN; INFORMATION ASYMMETRY;
+   VOLATILITY; CONTAGION; SPREADS; MODEL
+AB This study explores the effects of business counterparties' (i.e. suppliers'/customers') production efficiency uncertainty (PEU) on corporate credit risk by employing American bond observations of manufacturing firms. Empirical results of this study show that customers' PEU is positively related to corporate bond yield spreads whereas suppliers' has an opposite effect. The former result shows the importance of demand uncertainty while the latter one suggests that the benefits of supply chain integration or information sharing exceed the costs of supply chain uncertainty. We also find that the effects of suppliers'/customers' PEUs on bond yield spreads are significantly affected by the information flow risk within the supply chain. In addition, the customer-side effect becomes weaker during the financial crisis period, whereas the supplier-side one is insignificantly affected. These empirical results are robust when controlling for potential endogeneity problems and employing an alternative sample which consists of the bond observations with both supplier and customer identification information. Finally, it has to be noticed that our conclusions are only applicable to manufacturing industries.
+C1 [Chen, Tsung-Kang] Fu Jen Catholic Univ, Dept Finance & Int Business, 510,Jhongjheng Rd, New Taipei, Taiwan.
+   [Liao, Hsien-Hsing] Natl Taiwan Univ, Dept Finance, 1,Sect 4 Roosevelt Rd, Taipei, Taiwan.
+RP Liao, HH (reprint author), Natl Taiwan Univ, Dept Finance, 1,Sect 4 Roosevelt Rd, Taipei, Taiwan.
+EM vocterchen@mail.fju.edu.tw; hliao@ntu.edu.tw
+FU Ministry of Science and Technology of TaiwanMinistry of Science and
+   Technology, Taiwan [NSC99-2410-H-030-026-MY2]
+FX The authors are indebted to the editor (Cheng-Few Lee) and anonymous
+   referee for insightful comments and suggestions. We thank the National
+   Science Council (now Ministry of Science and Technology) of Taiwan for
+   financial support (NSC99-2410-H-030-026-MY2). We also thank the
+   participants at the 2014 Asian Finance Association Annual Meeting and
+   2014 American Accounting Association Annual Meeting for their helpful
+   comments and suggestions. We also appreciate Te-Feng Chen and Huimin
+   Chung (the authors of Chen and Chung 2007) for generously providing
+   their EM-algorithm in estimating ADJPIN.
+CR BLINDER AS, 1986, Q J ECON, V101, P431, DOI 10.2307/1885691
+   Brynjolfsson E, 2003, REV ECON STAT, V85, P793, DOI 10.1162/003465303772815736
+   Campbell JY, 2003, J FINANC, V58, P2321, DOI 10.1046/j.1540-6261.2003.00607.x
+   Chen CN, 2013, REV PAC BASIN FINANC, V16, DOI 10.1142/S0219091513500148
+   Chen T. F., 2007, WORKING PAPER
+   Chen TK, 2017, REV QUANT FINANC ACC, V49, P1005, DOI 10.1007/s11156-017-0615-3
+   Chen TK, 2014, REV QUANT FINANC ACC, V43, P463, DOI 10.1007/s11156-013-0382-8
+   Chen TK, 2014, J EMPIR FINANC, V29, P266, DOI 10.1016/j.jempfin.2014.08.003
+   Chen TK, 2013, J BANK FINANC, V37, P3181, DOI 10.1016/j.jbankfin.2013.02.026
+   Chen TK, 2013, J BANK FINANC, V37, P2434, DOI 10.1016/j.jbankfin.2013.02.011
+   Chen TK, 2011, J BANK FINANC, V35, P978, DOI 10.1016/j.jbankfin.2010.09.013
+   Chiang WK, 2007, INT J PROD RES, V45, P1429, DOI 10.1080/00207540600634949
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   DAVIS T, 1993, SLOAN MANAGE REV, V34, P35
+   Dooley KJ, 2010, J SUPPLY CHAIN MANAG, V46, P12, DOI 10.1111/j.1745-493X.2009.03183.x
+   Douglas AVS, 2016, REV QUANT FINANC ACC, V46, P417, DOI 10.1007/s11156-014-0474-0
+   Duarte J, 2009, J FINANC ECON, V91, P119, DOI 10.1016/j.jfineco.2007.10.008
+   Duffie D, 2001, ECONOMETRICA, V69, P633, DOI 10.1111/1468-0262.00208
+   Eshleman JD, 2014, REV QUANT FINANC ACC, V43, P405, DOI 10.1007/s11156-013-0379-3
+   Fee CE, 2004, J FINANC ECON, V74, P423, DOI 10.1016/j.jfineco.2003.10.002
+   Gupta A, 2003, COMPUT CHEM ENG, V27, P1219, DOI 10.1016/S0098-1354(03)00048-6
+   Hertzel MG, 2008, J FINANC ECON, V87, P374, DOI 10.1016/j.jfineco.2007.01.005
+   Huang MC, 2014, SUPPLY CHAIN MANAG, V19, P64, DOI 10.1108/SCM-04-2013-0114
+   KAHN JA, 1987, AM ECON REV, V77, P667
+   Kale JR, 2007, J FINANC ECON, V83, P321, DOI 10.1016/j.jfineco.2005.12.007
+   LANG LHP, 1992, J FINANC ECON, V32, P45, DOI 10.1016/0304-405X(92)90024-R
+   Lee HL, 1997, MANAGE SCI, V43, P546, DOI 10.1287/mnsc.43.4.546
+   Lee HL, 1997, SLOAN MANAGE REV, V38, P93
+   Love I., 2010, INT REV FINANC, V10, P125, DOI DOI 10.1111/J.1468-2443.2009
+   Lu CW, 2010, J BANK FINANC, V34, P2265, DOI 10.1016/j.jbankfin.2010.02.013
+   Mason-Jones R., 1998, IOM CONTROL, V1998, P17
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   PORTER ME, 1979, HARVARD BUS REV, V57, P137
+   Qian Q, 2016, PROCEDIA COMPUT SCI, V91, P57, DOI 10.1016/j.procs.2016.07.041
+   Roberts M. R., 2012, 1129 FR SIM SCH
+   Schoar A, 2002, J FINANC, V57, P2379, DOI 10.1111/1540-6261.00500
+   Shaw KW, 2012, REV QUANT FINANC ACC, V38, P323, DOI 10.1007/s11156-011-0230-7
+   Simangunsong E, 2012, INT J PROD RES, V50, P4493, DOI 10.1080/00207543.2011.613864
+   Sovey AJ, 2011, AM J POLIT SCI, V55, P188, DOI 10.1111/j.1540-5907.2010.00477.x
+   Stock JH, 2002, J BUS ECON STAT, V20, P518, DOI 10.1198/073500102288618658
+   Tsai CY, 2008, DECIS SUPPORT SYST, V44, P1031, DOI 10.1016/j.dss.2007.12.006
+   vanderVaart JT, 1996, INT J PROD ECON, V46, P137, DOI 10.1016/0925-5273(95)00193-X
+   WEST KD, 1986, J POLIT ECON, V94, P374, DOI 10.1086/261378
+   Yu F, 2005, J FINANC ECON, V75, P53, DOI 10.1016/j.jfineco.2004.07.002
+NR 44
+TC 1
+Z9 1
+U1 1
+U2 10
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0924-865X
+EI 1573-7179
+J9 REV QUANT FINANC ACC
+JI Rev. Quant. Financ. Account.
+PD FEB
+PY 2018
+VL 50
+IS 2
+BP 519
+EP 560
+DI 10.1007/s11156-017-0637-x
+PG 42
+WC Business, Finance
+SC Business & Economics
+GA FT0FB
+UT WOS:000422796000006
+DA 2019-12-27
+ER
+
+PT J
+AU Peterson, OK
+   Arun, TG
+AF Peterson, Ozili K.
+   Arun, Thankom G.
+TI Income smoothing among European systemic and non-systemic banks
+SO BRITISH ACCOUNTING REVIEW
+LA English
+DT Article
+DE Loan loss provisions; Income smoothing; Europe; Systemic banks;
+   Accounting information; Financial reporting
+ID LOAN-LOSS PROVISIONS; EARNINGS MANAGEMENT; CAPITAL MANAGEMENT; RISK;
+   DETERMINANTS; OWNERSHIP; BEHAVIOR; LOSSES; CREDIT; FAIL
+AB There is scant research on the financial reporting behaviour of global systemically-important banks (G-SIBS) and non-global systemically-important banks (non-G-SIBs). We examine the link between financial reporting and financial system stability given the understanding that income smoothing is a stability mechanism for banks. We empirically examine whether the way G-SIBS use loan loss provisions (LLPs) to smooth income differ compared to non-G-SIBs and the incentive to do so. We examine 231 European banks and find that income smoothing is pronounced among G-SIBS in the post-crisis period and pronounced among non-G-SIBS in the pre-crisis period. Also, G-SIBS exhibit greater income smoothing when they: (i) have substantial non-performing loans, (ii) are more profitable and meet/exceed minimum regulatory capital ratios (iii) engage in forward-looking loan-loss provisioning and during recessionary periods. The implication of our findings is that capital regulation and abnormal economic fluctuations create incentives for systemic banks to use accounting numbers (loan loss provisions) to smooth income, which also align with the financial system stability objective of bank regulators. Our findings are useful to accounting standard setters in their evaluation of the role of reported accounting numbers for financial system stability, given the current regulatory environment in Europe which focuses on systemic banks.
+C1 [Peterson, Ozili K.; Arun, Thankom G.] Univ Essex, Essex Business Sch, Colchester, Essex, England.
+RP Arun, TG (reprint author), Univ Essex, Essex Business Sch, Colchester, Essex, England.
+EM pozili@essex.ac.uk; tarun@essex.ac.uk
+OI arun, thankom/0000-0002-2552-0462
+CR Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Ahmed AS, 1999, J ACCOUNT ECON, V28, P1, DOI 10.1016/S0165-4101(99)00017-8
+   Aichian A., 1962, ASPECTS LABOR EC, P157
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anandarajan A., 2003, ADV INT ACCOUNTING, V16, P45
+   Andreou P. C., 2017, BRIT ACCOUNTING REV
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   Balboa M, 2013, J BANK FINANC, V37, P5186, DOI 10.1016/j.jbankfin.2013.05.020
+   Barton J, 2002, ACCOUNT REV, V77, P1, DOI 10.2308/accr.2002.77.s-1.1
+   Basel Committee on Banking Supervision (BCBS), 2014, G SIB ASS METH SCOR
+   Basel Committee on Banking Supervision (BCBS) & Financial Stability Board (FSB), 2013, GLOB SYST IMP BANKS
+   Beaver WH, 1996, J ACCOUNT ECON, V22, P177, DOI 10.1016/S0165-4101(96)00428-4
+   Bhat V., 1996, APPL FINANCIAL EC, V6, P505, DOI [10.1080/096031096333953, DOI 10.1080/096031096333953]
+   Bhattacharya U, 2003, ACCOUNT REV, V78, P641, DOI 10.2308/accr.2003.78.3.641
+   Black L, 2016, J BANK FINANC, V63, P107, DOI 10.1016/j.jbankfin.2015.09.007
+   Bonin J., 2013, 10 WESL U DEP EC
+   Bouvatier V, 2014, J BANK FINANC, V41, P253, DOI 10.1016/j.jbankfin.2013.12.001
+   Brunnermeier M., 2009, FUNDAMENTAL PRINCIPL, V11
+   Burgstahler D, 1997, J ACCOUNT ECON, V24, P99, DOI 10.1016/S0165-4101(97)00017-7
+   Bushman RM, 2015, J ACCOUNT RES, V53, P511, DOI 10.1111/1475-679X.12079
+   Bushman RM, 2012, J ACCOUNT ECON, V54, P1, DOI 10.1016/j.jacceco.2012.04.002
+   Ching K. M., 2002, UNPUB
+   Curcio D, 2017, BRIT ACCOUNT REV, V49, P181, DOI 10.1016/j.bar.2016.09.001
+   Curcio D, 2015, EUR J FINANC, V21, P26, DOI 10.1080/1351847X.2012.762408
+   Degeorge F, 1999, J BUS, V72, P1, DOI 10.1086/209601
+   Dell'Ariccia G, 2008, J FINANC INTERMED, V17, P89, DOI 10.1016/j.jfi.2007.06.001
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   ELSOOD HA, 2012, INT REV FINANC ANAL, V25, P64, DOI DOI 10.1016/j.irfa.2012.06.007
+   Financial Stability Board (FSB), 2011, POL MEAS ADDR SYST I
+   Financial Stability Forum, 2009, REP FIN STAB ADDR PR
+   Flannery MJ, 2013, J FINANC INTERMED, V22, P55, DOI 10.1016/j.jfi.2012.08.001
+   Fonseca AR, 2008, J BANK FINANC, V32, P217, DOI 10.1016/j.jbankfin.2007.02.012
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Galati G, 2013, J ECON SURV, V27, P846, DOI 10.1111/j.1467-6419.2012.00729.x
+   Goodhart C., 2015, BUTTERWORTHS J INT B, V30, P607
+   Gorton G, 2010, BROOKINGS PAP ECO AC, P261
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   Kanagaretnam K, 2005, J BUS RES, V58, P312, DOI 10.1016/j.jbusres.2003.06.002
+   Kanagaretnam K., 2003, REV QUANTITATIVE FIN, V20, P63, DOI DOI 10.1023/A:1022187622780
+   Kilic E, 2013, ACCOUNT REV, V88, P233, DOI 10.2308/accr-50264
+   Labo G., 2001, REV QUANTITATIVE FIN, V16, P223, DOI DOI 10.1023/A:1011284303517
+   Laeven L, 2003, J FINANC INTERMED, V12, P178, DOI 10.1016/S1042-9573(03)00016-0
+   Leventis S, 2012, J ECON STUD, V39, P604, DOI 10.1108/01443581211259509
+   Leventis S, 2012, J APPL ACCOUNT RES, V13, P161, DOI 10.1108/09675421211254858
+   Leventis S, 2011, J FINANC SERV RES, V40, P103, DOI 10.1007/s10693-010-0096-1
+   Liu CC, 2006, ACCOUNT REV, V81, P421, DOI 10.2308/accr.2006.81.2.421
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Ma MLZ, 2016, ACCOUNT PERSPECT, V15, P89, DOI 10.1111/1911-3838.12091
+   Manganaris P, 2017, BRIT ACCOUNT REV, V49, P121, DOI 10.1016/j.bar.2016.07.002
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Markose Sheri M, 2012, SYSTEMIC RISK GLOBAL
+   Marton J, 2017, BRIT ACCOUNT REV, V49, P162, DOI 10.1016/j.bar.2016.09.003
+   Mesnard B., 2017, GLOBAL SYSTEMICALLY
+   Metzemakers P., 2005, J INT FINANC MARK I, V15, P29
+   Nelson MW, 2002, ACCOUNT REV, V77, P175, DOI 10.2308/accr.2002.77.s-1.175
+   Nicolo A, 2008, J FINANC INTERMED, V17, P444, DOI 10.1016/j.jfi.2008.03.001
+   Olszak M, 2017, J FINANC SERV RES, V51, P55, DOI 10.1007/s10693-015-0238-6
+   Perez D, 2008, EUR ACCOUNT REV, V17, P423, DOI 10.1080/09638180802016742
+   Pool S, 2015, J MACROECON, V45, P124, DOI 10.1016/j.jmacro.2015.04.006
+   Shrieves RE, 2003, J BANK FINANC, V27, P1219, DOI 10.1016/S0378-4266(02)00252-2
+   Skala D, 2015, INT FINANC, V18, P25, DOI 10.1111/1468-2362.12058
+   Song I. N, 2014, 14170 INT MONT FUND
+   Tabak BM, 2013, J BANK FINANC, V37, P3855, DOI 10.1016/j.jbankfin.2013.06.003
+   WARFIELD TD, 1995, J ACCOUNT ECON, V20, P61, DOI 10.1016/0165-4101(94)00393-J
+   Watts R., 1986, POSITIVE ACCOUNTING
+   White G. I., 2003, ANAL USE FINANCIAL S
+   ZIMMERMAN JL, 1983, J ACCOUNT ECON, V5, P119, DOI 10.1016/0165-4101(83)90008-3
+NR 68
+TC 8
+Z9 8
+U1 2
+U2 6
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0890-8389
+J9 BRIT ACCOUNT REV
+JI Brit. Account. Rev.
+PD SEP
+PY 2018
+VL 50
+IS 5
+BP 539
+EP 558
+DI 10.1016/j.bar.2018.03.001
+PG 20
+WC Business, Finance
+SC Business & Economics
+GA GU5DE
+UT WOS:000445304700005
+DA 2019-12-28
+ER
+
+PT J
+AU Li, XF
+   Wei, Y
+AF Li, Xiafei
+   Wei, Yu
+TI The dependence and risk spillover between crude oil market and China
+   stock market: New evidence from a variational mode decomposition-based
+   copula method
+SO ENERGY ECONOMICS
+LA English
+DT Article
+DE Crude oil market; China stock market; Variational mode decomposition;
+   Copula; CoVaR
+ID REGIME SWITCHING MODEL; PRICE SHOCKS; SYSTEMIC RISK; FINANCIAL
+   CONTAGION; DYNAMIC CORRELATION; EQUITY MARKETS; WAVELET; VOLATILITY;
+   MOVEMENTS; US
+AB This paper examines the dependence structure between crude oil market and China stock market over different investment horizons, before and after the recent financial crisis, by combining the variational mode decomposition (VMD) method with various static and time-varying copulas. Based on the decomposed time series and the copula dependence, the Value-at-Risk (VaR), conditional VaR (CoVaR) and delta CoVaR (Delta CoVaR) are quantified to analyze the upside and downside risk spillovers from oil market to China stock market in raw, short- and long-run investment horizons before and after the financial crisis. The empirical results show that, first, the recent financial crisis enhances the dependences between the crude oil market and China stock market, and the long-run dependence increases more significantly than that of short-run. For the raw return series, there are symmetric upper and lower tail dependencies in full sample and pre-crisis subsample periods, but an average dependence in post-crisis subsample period. Second, the VaR of China stock market increases heavily around the financial crisis, but the average VaR after the crisis deceases compared to the risk before the crisis. Third, the risk spillovers from crude oil price to China stock market are found in each sample periods. Before the crisis, however, it mainly exists in long-run horizon, while after the crisis, it happens in both short- and long-run horizons. Finally, the risk spillovers from oil price to China stock market display strong asymmetric features, with larger long-term, downside risk spillovers in post-crisis subsample. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Li, Xiafei] Southwest Jiaotong Univ, Sch Econ & Management, Chengdu, Sichuan, Peoples R China.
+   [Wei, Yu] Yunnan Univ Finance & Econ, Sch Finance, Kunming, Yunnan, Peoples R China.
+RP Wei, Y (reprint author), 237 Longquan Rd, Kunming, Yunnan, Peoples R China.
+EM weiyusy@126.com
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71371157, 71671145]; humanities and social science
+   fund of Ministry of Education of China [16YJA790062, 17YJA790015,
+   17XJA790002]
+FX We would like to show our sincere gratitude to two anonymous reviewers,
+   as well as Professor R.S.J. Tol, Editor of Energy Economics, whose
+   comments and suggestions greatly improved the quality of this paper. The
+   authors are also grateful for the financial support from the National
+   Natural Science Foundation of China (71371157, 71671145), the humanities
+   and social science fund of Ministry of Education of China (16YJA790062,
+   17YJA790015, 17XJA790002).
+CR Abadie A, 2002, J AM STAT ASSOC, V97, P284, DOI 10.1198/016214502753479419
+   Adrian T., 2011, COVALT NBER WORKING
+   Aloui R, 2016, ENERG ECON, V55, P92, DOI 10.1016/j.eneco.2016.01.012
+   Apergis N, 2009, ENERG ECON, V31, P569, DOI 10.1016/j.eneco.2009.03.001
+   Arouri MEH, 2010, ENERG POLICY, V38, P4528, DOI 10.1016/j.enpol.2010.04.007
+   Avdulaj K, 2015, ENERG ECON, V51, P31, DOI 10.1016/j.eneco.2015.05.018
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Balcilar M, 2015, ENERG ECON, V49, P317, DOI 10.1016/j.eneco.2015.01.026
+   Balcilar M, 2013, ENERG ECON, V39, P271, DOI 10.1016/j.eneco.2013.04.014
+   Berger T, 2016, ENERG ECON, V56, P374, DOI 10.1016/j.eneco.2016.03.024
+   Berger T, 2015, PHYSICA A, V436, P338, DOI 10.1016/j.physa.2015.05.053
+   Bernal O, 2014, J BANK FINANC, V47, P270, DOI 10.1016/j.jbankfin.2014.05.030
+   Bjornland HC, 2009, SCOT J POLIT ECON, V56, P232, DOI 10.1111/j.1467-9485.2009.00482.x
+   Brooks C., 2002, INTRO ECONOMETRICS F
+   Cherubini U., 2002, APPL MATH FINANCE, V9, P69, DOI DOI 10.1080/13504860210136721A
+   Chesnay F., 2001, EC NOTES, V0, P53, DOI DOI 10.1111/1468-0300.00047
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Chiou JS, 2009, ENERGY, V34, P788, DOI 10.1016/j.energy.2009.02.011
+   Cong RG, 2008, ENERG POLICY, V36, P3544, DOI 10.1016/j.enpol.2008.06.006
+   da Silva OC, 2012, INSUR MATH ECON, V50, P346, DOI 10.1016/j.insmatheco.2012.01.001
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Dragomiretskiy K, 2014, IEEE T SIGNAL PROCES, V62, P531, DOI 10.1109/TSP.2013.2288675
+   Filis G, 2010, ENERG ECON, V32, P877, DOI 10.1016/j.eneco.2010.03.010
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Jammazi R, 2016, ENERGY, V107, P866, DOI 10.1016/j.energy.2016.02.093
+   Jiang YH, 2018, PHYSICA A, V508, P265, DOI 10.1016/j.physa.2018.05.092
+   Kang WS, 2015, J BANK FINANC, V61, pS150, DOI 10.1016/j.jbankfin.2015.08.027
+   KLING JL, 1985, J PORTFOLIO MANAGE, V12, P34, DOI 10.3905/jpm.1985.409034
+   Lahmiri S, 2015, PHYSICA A, V437, P130, DOI 10.1016/j.physa.2015.05.067
+   Li ZP, 2017, MECH SYST SIGNAL PR, V85, P512, DOI 10.1016/j.ymssp.2016.08.042
+   Liu XY, 2017, PHYSICA A, V465, P374, DOI 10.1016/j.physa.2016.08.043
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Lu FB, 2017, ENVIRON RES, V152, P351, DOI 10.1016/j.envres.2016.07.015
+   Mensi W, 2017, ENERG ECON, V66, P122, DOI 10.1016/j.eneco.2017.06.007
+   Mensi W, 2017, J BANK FINANC, V75, P258, DOI 10.1016/j.jbankfin.2016.11.017
+   Miller JI, 2009, ENERG ECON, V31, P559, DOI 10.1016/j.eneco.2009.01.009
+   Mohammadi H, 2010, ENERG ECON, V32, P1001, DOI 10.1016/j.eneco.2010.04.009
+   Nandha M, 2008, ENERG ECON, V30, P986, DOI 10.1016/j.eneco.2007.09.003
+   Papapetrou E, 2001, ENERG ECON, V23, P511, DOI 10.1016/S0140-9883(01)00078-0
+   Park J, 2008, ENERG ECON, V30, P2587, DOI 10.1016/j.eneco.2008.04.003
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Pircalabu A, 2017, ENERG ECON, V62, P139, DOI 10.1016/j.eneco.2016.11.023
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Raza N, 2016, RESOUR POLICY, V49, P290, DOI 10.1016/j.resourpol.2016.06.011
+   Reboredo JC, 2016, ENERG ECON, V54, P33, DOI 10.1016/j.eneco.2015.11.015
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Reboredo JC, 2011, ENERG ECON, V33, P948, DOI 10.1016/j.eneco.2011.04.006
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Sadorsky P, 1999, ENERG ECON, V21, P449, DOI 10.1016/S0140-9883(99)00020-1
+   Sadorsky P, 2012, ENERG ECON, V34, P248, DOI 10.1016/j.eneco.2011.03.006
+   Shahzad SJH, 2016, PHYSICA A, V457, P8, DOI 10.1016/j.physa.2016.03.048
+   Sklar A, 1959, PUBL I STAT U PARIS, V8, P229, DOI DOI 10.12691/IJEFM-3-2-3
+   Tong B, 2013, ENERG ECON, V40, P882, DOI 10.1016/j.eneco.2013.10.008
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+   Yang LS, 2016, PHYSICA A, V462, P255, DOI 10.1016/j.physa.2016.06.040
+NR 57
+TC 7
+Z9 7
+U1 13
+U2 29
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD AUG
+PY 2018
+VL 74
+BP 565
+EP 581
+DI 10.1016/j.eneco.2018.07.011
+PG 17
+WC Economics
+SC Business & Economics
+GA GU9YP
+UT WOS:000445713500040
+DA 2019-12-27
+ER

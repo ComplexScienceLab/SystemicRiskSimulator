@@ -1,0 +1,463 @@
+
+PT J
+AU Bernal, O
+   Gnabo, JY
+   Guilmin, G
+AF Bernal, Oscar
+   Gnabo, Jean-Yves
+   Guilmin, Gregory
+TI Economic policy uncertainty and risk spillovers in the Eurozone
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Eurozone; Economic policy uncertainty; Risk spillovers; Sovereign
+   debt-crisis; Delta CoVaR
+ID DEBT CRISIS; POLITICAL UNCERTAINTY; SYSTEMIC RISK; SOVEREIGN;
+   INVESTMENT; SPREADS; CREDIT; AREA; COORDINATION; REGRESSION
+AB This paper focuses on the impact of economic policy uncertainty on risk spillovers within the Eurozone and contributes to these two growing literatures. To this end, we adapt the two-step procedure developed by Adrian and Brunnermeier (forthcoming) in the framework of financial systemic risk to the sovereign bond market. Accordingly, we attempt (i) to measure the extent to which distress affecting one given country's sovereign spreads can affect the Eurozone's bond market as a whole and then (ii) to identify the determinants of risk spillovers by estimating a panel data model with macroeconomic state variables and economic policy uncertainty (EPU) indices introduced by Baker et al. (2013) as regressors. EPU indices considered concern the four largest Eurozone countries, i.e. Germany, France, Italy and Spain, as well as the United States. The model is estimated with quarterly data for ten countries representing the bulk of debt issuances within the Eurozone over a period ranging from Q4/2008 to Q2/2013, which is characterized by historically high dispersion of sovereign bond spreads either across time or across countries. Our results support the idea that economic policy uncertainty in the core economies of the Eurozone, i.e. Germany and France, as well as in the largest periphery countries, i.e. Italy and Spain, can create an environment likely to exacerbate the transmission of risk arising from abnormal developments of individual countries' sovereign spreads to the Eurozone bond market as a whole. In this respect, our results plead for larger effort of Eurozone "leaders" to reduce the uncertainty surrounding their economic policy in periods of crisis not only to avoid adverse effects on their own economies but also to reduce the risk of a destabilization of the Eurozone sovereign bond market as a whole. (C) 2016 Elsevier Ltd. All rights reserved.
+C1 [Bernal, Oscar; Gnabo, Jean-Yves; Guilmin, Gregory] Univ Namur, Namur, Belgium.
+RP Gnabo, JY (reprint author), Univ Namur, Namur, Belgium.
+EM jean-yves.gnabo@unamur.be
+FU Communaute francaise de Belgique through Projet d'Actions de Recherche
+   Concertees [13/17-055]
+FX We are very grateful for the insightful comments from Joshua Aizenman -
+   Co-Editor of the Journal of International Money and Finance - as well as
+   from four anonymous reviewers on an earlier version of this paper. We
+   would like also to gratefully thank Denisa Banulescu, Sophie Bereau,
+   Kris Boudt, Alain de Crombrugghe, Christophe Hurlin, Charles Larkin,
+   Mikael Petitjean, Camelia Turcu for their helpful comments and
+   suggestions. We also thank participants at the Seminaire du Laboratoire
+   d'Economie d'Orleans, the 12th INFINITI Conference on International
+   Finance and the 7th International Risk Management Conference. We
+   acknowledge support from the Communaute francaise de Belgique through
+   the Projet d'Actions de Recherche Concertees, 13/17-055 grant. All
+   remaining errors are ours.
+CR Adrian T., AM EC REV IN PRESS
+   Afonso A, 2012, J INT MONEY FINANC, V31, P606, DOI 10.1016/j.jimonfin.2012.01.016
+   Almeida H, 2010, REV FINANC STUD, V23, P3279, DOI 10.1093/rfs/hhq058
+   Antonakakis N, 2014, ENERG ECON, V44, P433, DOI 10.1016/j.eneco.2014.05.007
+   Antonakakis N, 2013, J INT FINANC MARK I, V26, P258, DOI 10.1016/j.intfin.2013.06.004
+   Arghyrou MG, 2012, J INT FINANC MARK I, V22, P658, DOI 10.1016/j.intfin.2012.03.003
+   Attinasi M, 2009, 1131 ECB
+   Baker S. R., 2013, MEASURING EC POLICY
+   Baum C., 2014, WORKING PAPER
+   Beber A, 2009, REV FINANC STUD, V22, P925, DOI 10.1093/rfs/hhm088
+   Bernal O, 2014, J BANK FINANC, V47, P270, DOI 10.1016/j.jbankfin.2014.05.030
+   Bernanke B, 1996, REV ECON STAT, V78, P1, DOI 10.2307/2109844
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P975, DOI 10.1016/j.jimonfin.2011.12.006
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P639, DOI 10.1016/j.jimonfin.2011.10.006
+   Bisias D., 2012, SURVEY SYSTEMIC RISK
+   Bloom N., 2012, CESWP1418 US CENS BU
+   Bloom N, 2014, J ECON PERSPECT, V28, P153, DOI 10.1257/jep.28.2.153
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Brogaard J, 2015, MANAGE SCI, V61, P3, DOI 10.1287/mnsc.2014.2044
+   Bulmer S, 2014, WEST EUR POLIT, V37, P1244, DOI 10.1080/01402382.2014.929333
+   Bun MJG, 2003, ECON LETT, V79, P145, DOI 10.1016/S0165-1765(02)00299-9
+   Byrne JP, 2016, ECON INQ, V54, P375, DOI 10.1111/ecin.12240
+   Caceres C., 2010, IMF WORKING PAPER
+   Caporale G., 2011, WORKING PAPER SERIES, V3693
+   Castro C, 2014, J EMPIR FINANC, V25, P1, DOI 10.1016/j.jempfin.2013.10.009
+   Codogno L, 2003, ECON POLICY, P503
+   Collignon S., 2001, EC POLICY COORDINATI
+   Colombo V, 2013, ECON LETT, V121, P39, DOI 10.1016/j.econlet.2013.06.024
+   DE SANTIS R., 2012, 1419 ECB
+   Demirguc-kunt A, 1996, WORLD BANK ECON REV, V10, P291, DOI 10.1093/wber/10.2.291
+   Di Cesare A., 2011, 128 BANC IT
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Ehrmann M, 2014, J INT MONEY FINANC, V49, P319, DOI 10.1016/j.jimonfin.2014.06.008
+   Ejsing J., 2012, 1440 ECB
+   Erickson T., 2010, 1027 U ROCH BRADL RE
+   Fahrholz C, 2013, J BANK FINANC, V37, P4665, DOI 10.1016/j.jbankfin.2013.05.016
+   Favero C, 2012, ECON POLICY, P231, DOI 10.1111/j.1468-0327.2012.00282.x
+   Favero C, 2010, J FINANC QUANT ANAL, V45, P107, DOI 10.1017/S0022109009990494
+   Favero CA, 2013, J ECONOMETRICS, V177, P343, DOI 10.1016/j.jeconom.2013.04.004
+   Fernandes F., 2014, REAL EFFECTS F UNPUB
+   Forbes K. J., 2001, INT FINANCIAL CONTAG, P43, DOI DOI 10.1007/978-1-4757-3314-3_
+   Francis BB, 2014, J EMPIR FINANC, V29, P281, DOI 10.1016/j.jempfin.2014.08.004
+   Gerlach S., 2010, DP7833 CEPR
+   Geyer A., 2004, Review of Finance, V8, P171, DOI 10.1023/B:EUFI.0000035191.62455.32
+   Giordano L., 2012, 71 CONSOB
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Goldstein M., 2004, MARKET BASED FISCAL
+   Gomez-Puig M., 2006, WORKING PAPER
+   Gulen Huseyin, 2013, WORKING PAPER
+   Kang WS, 2014, J MACROECON, V39, P42, DOI 10.1016/j.jmacro.2013.10.006
+   Kilponen J, 2015, INT J CENT BANK, V11, P285
+   Kim H., 2014, WORKING PAPER
+   Kiviet J., 2001, T120010064 TINB I
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R, 1999, J AM STAT ASSOC, V94, P1296, DOI 10.2307/2669943
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Lopez Espinoza G., 2012, J BANK FINANC, V36, P3150
+   Mattli W., 1999, LOGIC REGIONAL INTEG
+   Monfort A, 2014, REV FINANC, V18, P2103, DOI 10.1093/rof/rft049
+   Oliveira L, 2012, J INT FINANC MARK I, V22, P278, DOI 10.1016/j.intfin.2011.09.007
+   Panico C, 2013, CAMB J ECON, V37, P585, DOI 10.1093/cje/bet009
+   Pastor L, 2013, J FINANC ECON, V110, P520, DOI 10.1016/j.jfineco.2013.08.007
+   Poterba J., 1999, STATE FISCAL I US MU
+   Pritsker M., 2000, INT FINANCIAL CONTAG
+   Schwarz K., 2014, WORKING PAPER
+   von Hagen J, 2003, INT J FINANC ECON, V8, P279, DOI 10.1002/ijfe.215
+   von Hagen J, 2011, EUR J POLIT ECON, V27, P36, DOI 10.1016/j.ejpoleco.2010.07.002
+   Wang YZ, 2014, PAC-BASIN FINANC J, V26, P227, DOI 10.1016/j.pacfin.2013.12.008
+NR 68
+TC 21
+Z9 22
+U1 6
+U2 34
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD JUL
+PY 2016
+VL 65
+BP 24
+EP 45
+DI 10.1016/j.jimonfin.2016.02.017
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA DN8IQ
+UT WOS:000377322800002
+DA 2019-12-28
+ER
+
+PT J
+AU Manning, MJ
+   Hughes, D
+AF Manning, Mark Jozsef
+   Hughes, David
+TI Central counterparties and banks: vive la difference
+SO Journal of Financial Market Infrastructures
+LA English
+DT Article
+DE central counterparties; bank regulation; risk frameworks; systemic
+   importance
+AB Since the global financial crisis, central counterparties (CCPs) have assumed an increasingly prominent role in the financial system. While regulatory standards for CCPs have been strengthened in recent years, there remains considerable debate in both industry and policy circles as to whether they are adequate to promote resilience. In this debate, experience has often been drawn from bank regulation. To help ground the debate, this paper draws out the essential differences between CCPs and banks, comparing indicators of systemic importance and considering implications for the regulatory approach. It argues that banks and CCPs may affect systemic stability in different ways, with a CCP's systemic importance derived from that of its participants. While size is an important indicator of a bank's systemic importance, a CCP's central role in the financial network and its typical lack of substitutability are likely to be more important. The paper demonstrates that, while continuous review and challenge is important, any refinements to regulatory standards for CCPs to reflect lessons drawn from bank regulation should not overlook these differences.
+C1 [Manning, Mark Jozsef; Hughes, David] Reserve Bank Australia, 65 Martin Pl, Sydney, NSW 2000, Australia.
+RP Hughes, D (reprint author), Reserve Bank Australia, 65 Martin Pl, Sydney, NSW 2000, Australia.
+EM ManningM@rba.gov.au; hughesd@rba.gov.au
+CR [Anonymous], 2013, GLOB SYST IMP BANKS
+   BASEL COMM. ON BANKING SUPERVISION BANK FOR INT'L SETTLEMENTS, 2014, BAS 3 LEV RAT FRAM D
+   BASEL COMM. ON BANKING SUPERVISION BANK FOR INT'L SETTLEMENTS, 2014, BAS 3 NET STABL FUND
+   Basel Committee on Banking Supervision, 2013, BAS 3 LIQ COV LIQ RI
+   Basel Committee on Banking Supervision, 2014, PRINC SOUND MAN OP R
+   Basel Committee on Banking Supervision, 2014, CAP REQ BANK EXP CTR
+   Basel Committee on Banking Supervision (Basel), 2011, BAS 3 GLOB REG FRAM
+   Carter L, 2015, J FINANCIAL MARKET I, V4, P39
+   Coeure B, 2015, KNOWN UNKNOWNS CENTR
+   CPMI IOSCO, 2014, REC FIN MARK INFR
+   CPSS IOSCO, 2012, PRINC FIN MARK INFR
+   FSB, 2014, KEY ATTR EFF RES REG
+   FSB, 2010, IMPL OTC DER MARK RE
+   FSB, 2011, KEY ATTR EFF RES REG
+   FSB, 2014, AD LOSS ABS CAP GLOB
+   FSB, 2013, GUID DEV EFF RES STR
+   Gibson M., 2013, RBA B, P39
+   Heath A., 2015, RDP201502 RBA
+   International Swaps and Derivatives Association, 2015, CCP DEF MAN REC COUN
+   JP Morgan Chase, 2014, PERSPECTIVES
+   Kroszner R. S., 2006, COMMUNICATION
+   Merton R.C., 1995, GLOBAL FINANCIAL SYS
+   Pirrong C., 2011, 1 ISDA
+   Powell J. H., 2014, KEYN ADDR 17 ANN INT
+   Reserve Bank of Australia, 2014, SUBM FIN SYST INQ
+   Singh M., 2014, WP14203 INT MON FUND
+   Wendt F., 2015, WP1521 INT MON FUND
+NR 27
+TC 8
+Z9 8
+U1 0
+U2 1
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2049-5404
+EI 2049-5412
+J9 J FINANC MARK INFRAS
+JI J. Financ. Mark. Infrastruct.
+PD MAR
+PY 2016
+VL 4
+IS 3
+BP 1
+EP 24
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA EE4QU
+UT WOS:000389590800001
+DA 2019-12-28
+ER
+
+PT J
+AU Sedunov, J
+AF Sedunov, John
+TI What is the systemic risk exposure of financial institutions?
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Systemic risk; Banking crises; Financial institutions
+AB I compare the performance of three measures of institution-level systemic risk exposure - Exposure CoVaR (Adrian and Brunnermeier, 2016), systemic expected shortfall (Acharya et at., 2016), and Granger causality (Billio et al, 2012). I modify Exposure CoVaR to allow for forecasting, and estimate the ability of each measure to forecast the performance of financial institutions during systemic crisis periods in 1998 (LTCM) and 2008 (Lehman Brothers). I find that Exposure CoVaR forecasts the within-crisis performance of financial institutions, and provides useful forecasts of future systemic risk exposures. Systemic expected shortfall and Granger causality do not forecast the performance of financial institutions reliably during crises. I also find, using cross-sectional regressions, that foreign equity exposure and securitization income determine systemic risk exposure during the 1998 and 2008 crises, respectively; financial institution size determines systemic risk exposure during both crisis periods; and executive compensation does not determine systemic risk exposure. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Sedunov, John] Villanova Univ, Villanova Sch Business, 2042 Bartley Hall,800 Lancaster Ave, Villanova, PA 19085 USA.
+RP Sedunov, J (reprint author), Villanova Univ, Villanova Sch Business, 2042 Bartley Hall,800 Lancaster Ave, Villanova, PA 19085 USA.
+EM john.sedunov@villanova.edu
+CR Acharya V., 2016, REV FINANC IN PRESS
+   Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adams Z, 2014, J FINANC QUANT ANAL, V49, P575, DOI 10.1017/S0022109014000325
+   Adrian T., 2016, AM EC REV IN PRESS
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bodie Z., 2007, WORKING PAPER
+   Chan-Lau J. A., 2010, FINANC MKTS I INSTRU, V19, P355, DOI DOI 10.2139/SSRN.1995499)
+   Chiodo Abbigail J., 2002, FEDERAL RESERVE BANK, V2002, P7
+   De Bandt O., 2000, WORKING PAPER, V35
+   Fahlenbrach R, 2012, J FINANC, V67, P2139, DOI 10.1111/j.1540-6261.2012.01783.x
+   Giglio S., 2014, WORKING PAPER
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Gray D, 2011, IMF WORKING PAPER
+   Hull J., 2009, RISK MANAGEMENT FINA
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Kritzman M., 2010, WORKING PAPER
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Lo Duca M, 2013, J BANK FINANC, V37, P2183, DOI 10.1016/j.jbankfin.2012.06.010
+   Paradis T., 2008, WALL STREET ENDS MIX
+   Patro DK, 2013, J FINANC STABIL, V9, P105, DOI 10.1016/j.jfs.2012.03.002
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Tarashev Nicola, 2009, BIS Q REV, P75
+NR 25
+TC 18
+Z9 19
+U1 3
+U2 27
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD JUN
+PY 2016
+VL 24
+BP 71
+EP 87
+DI 10.1016/j.jfs.2016.04.005
+PG 17
+WC Business, Finance; Economics
+SC Business & Economics
+GA DO5ZD
+UT WOS:000377860900006
+DA 2019-12-28
+ER
+
+PT J
+AU Altuntas, M
+   Rauch, J
+   Wende, S
+AF Altuntas, Muhammed
+   Rauch, Jannes
+   Wende, Sabine
+TI Strategic Group Performance and Dynamics under Different Economic
+   Conditions
+SO GENEVA PAPERS ON RISK AND INSURANCE-ISSUES AND PRACTICE
+LA English
+DT Article
+DE strategic groups; cluster analysis; performance; financial crisis;
+   German insurance market
+ID PHARMACEUTICAL-INDUSTRY; BUSINESS GROUPS; SYSTEMIC RISK; INSURANCE;
+   PROPERTY; DETERMINANTS; FIRM; REINSURANCE; CONFLICT; SIZE
+AB We analyse strategic groups in the German insurance market. We use cluster analysis to subdivide insurance groups into strategic groups. Furthermore, we analyse whether strategic group affiliation can affect the performance of the insurance groups' property-liability subsidiaries. In addition, we examine the consequences of the financial crisis of 2008 on the competitive situation in the German insurance sector and examine whether changes in strategic group affiliation can be considered as a consequence of the financial crisis. Using a data set of 829 firm-year observations for the years 2004-2012, our results indicate the existence of three strategic group in the German insurance sector. In addition, we find that performance differences at the subsidiary level can be attributed to strategic group affiliation. Furthermore, we do not find evidence that the financial crisis induced changes in strategic group affiliation.
+C1 [Altuntas, Muhammed] Univ Cologne, Dept Risk Management & Insurance, Albertus Magnus Pl, D-50923 Cologne, Germany.
+   [Rauch, Jannes] Univ Cologne, Cologne Grad Sch Management Econ & Social Sci, Albertus Magnus Pl, D-50923 Cologne, Germany.
+   [Wende, Sabine] Univ Cologne, Fac Management Econ & Social Sci, Albertus Magnus Pl, D-50923 Cologne, Germany.
+RP Altuntas, M (reprint author), Univ Cologne, Dept Risk Management & Insurance, Albertus Magnus Pl, D-50923 Cologne, Germany.; Rauch, J (reprint author), Univ Cologne, Cologne Grad Sch Management Econ & Social Sci, Albertus Magnus Pl, D-50923 Cologne, Germany.; Wende, S (reprint author), Univ Cologne, Fac Management Econ & Social Sci, Albertus Magnus Pl, D-50923 Cologne, Germany.
+EM muhammed.altuntas@uni-koeln.de; jrauch@uni-koeln.de;
+   sabine.wende@uni-koeln.de
+OI Wende, Sabine/0000-0003-3055-0663
+FU Deutscher Verein fur Versicherungswissenschaft e.V.; Deutscher
+   Akademischer Austauschdienst e.V.
+FX The authors thank T.R. Berry-Stolzle, J.T. Schmit, H.R. Schradin, T.
+   Semrau and the participants and discussants of the Research Seminar at
+   University of Cologne, of the Annual Meeting of the American Risk and
+   Insurance Association 2014, of the Jahrestagung des Deutscher Vereins
+   fur Versicherungswissenschaft e.V. 2015 and two anonymous referees for
+   helpful comments and suggestions on the paper. Furthermore, Jannes Rauch
+   received travel grants from the Deutscher Verein fur
+   Versicherungswissenschaft e.V. and from the Deutscher Akademischer
+   Austauschdienst e.V.
+CR Aldenderfer M.S., 1984, CLUSTER ANAL
+   Altuntas M., 2015, RISK MANAGE IN PRESS
+   Altuntas M., 2010, RISK MANAGEMENT INSU, V13, P173
+   Anderson D. R., 1988, J INSURANCE REGULATI, V6, P449
+   Baluch F, 2011, GENEVA PAP R I-ISS P, V36, P126, DOI 10.1057/gpp.2010.40
+   BARRESE J, 1992, J RISK INSUR, V59, P375, DOI 10.2307/253052
+   Belsley DA, 2005, REGRESSION DIAGNOSTI
+   Berry-Stolzle TR, 2012, J RISK INSUR, V79, P129, DOI 10.1111/j.1539-6975.2010.01398.x
+   Berry-Stolzle TR, 2010, INSUR MATH ECON, V46, P554, DOI 10.1016/j.insmatheco.2010.02.003
+   CAVES RE, 1977, Q J ECON, V91, P241, DOI 10.2307/1885416
+   CHANG SJ, 1988, J IND ECON, V37, P141, DOI 10.2307/2098561
+   Chatterjee S, 2012, REGRESSION ANAL EXAM
+   Chen RB, 2004, J RISK INSUR, V71, P469, DOI 10.1111/j.0022-4367.2004.00099.x
+   Cho TS, 2006, ORGAN SCI, V17, P453, DOI 10.1287/orsc.1060.0192
+   Coelho FJ, 2004, SERV IND J, V24, P1, DOI 10.1080/0264206042000276810
+   COOL KO, 1987, MANAGE SCI, V33, P1102, DOI 10.1287/mnsc.33.9.1102
+   CUMMINS JD, 2002, J FINANCIAL SERVICES, V21, P15, DOI DOI 10.1023/A:1014369617192
+   DESS GG, 1984, ACAD MANAGE J, V27, P467, DOI 10.2307/256040
+   Easingwood C, 2003, SERV IND J, V23, P31, DOI 10.1080/02642060412331300872
+   Ferguson TD, 2000, STRATEGIC MANAGE J, V21, P1195, DOI 10.1002/1097-0266(200012)21:12<1195::AID-SMJ138>3.0.CO;2-R
+   FIEGENBAUM A, 1995, STRATEGIC MANAGE J, V16, P461, DOI 10.1002/smj.4250160605
+   FIEGENBAUM A, 1990, STRATEGIC MANAGE J, V11, P197, DOI 10.1002/smj.4250110303
+   Fiegenbaum A, 1996, STRATEGIC MANAGE J, V17, P219, DOI 10.1002/(SICI)1097-0266(199603)17:3<219::AID-SMJ806>3.3.CO;2-E
+   HALL M, 1967, REV ECON STAT, V49, P319, DOI 10.2307/1926642
+   HARRIGAN KR, 1985, STRATEGIC MANAGE J, V6, P55, DOI 10.1002/smj.4250060105
+   Harrington SE, 2009, J RISK INSUR, V76, P785, DOI 10.1111/j.1539-6975.2009.01330.x
+   Hergert M. L., 1983, THESIS HARVARD U CAM
+   HUNT MS, 1972, THESIS HARVARD U CAM
+   JOHNSON JE, 1981, J RISK INSUR, V48, P18, DOI 10.2307/252650
+   KETCHEN DJ, 1993, ACAD MANAGE J, V36, P1278, DOI 10.2307/256812
+   Khanna T, 2001, STRATEGIC MANAGE J, V22, P45, DOI 10.1002/1097-0266(200101)22:1<45::AID-SMJ147>3.3.CO;2-6
+   Kim E, 1999, J MANAGERIAL ISSUES, V11, P344
+   Leask G, 2007, STRATEG MANAGE J, V28, P723, DOI 10.1002/smj.603
+   LEFF NH, 1978, ECON DEV CULT CHANGE, V26, P661, DOI 10.1086/451052
+   Liebenberg AP, 2008, J RISK INSUR, V75, P893, DOI 10.1111/j.1539-6975.2008.00290.x
+   MARCUS M, 1969, REV ECON STAT, V51, P104, DOI 10.2307/1926958
+   MASCARENHAS B, 1989, ACAD MANAGE J, V32, P333, DOI 10.2307/256365
+   MAYERS D, 1990, J BUS, V63, P19, DOI 10.1086/296481
+   MAYERS D, 1981, J BUS, V54, P407, DOI 10.1086/296138
+   Mehra A, 1996, STRATEGIC MANAGE J, V17, P307
+   Meier UB, 2006, J RISK FINANC, V7, P160, DOI 10.1108/15265940610648607
+   MEYER JW, 1977, AM J SOCIOL, V83, P340, DOI 10.1086/226550
+   Nisler J, 2017, VISION 2020: SUSTAINABLE ECONOMIC DEVELOPMENT, INNOVATION MANAGEMENT, AND GLOBAL GROWTH, VOLS I-IX, 2017, P3257
+   Oster S., 1982, REV ECON STAT, V64, P417
+   Petersen MA, 2009, REV FINANC STUD, V22, P435, DOI 10.1093/rfs/hhn053
+   PORTER ME, 1979, REV ECON STAT, V61, P214, DOI 10.2307/1924589
+   Rauch J, 2015, GENEVA PAP R I-ISS P, V40, P47, DOI 10.1057/gpp.2014.16
+   Reger RK, 1996, ORGAN SCI, V7, P22, DOI 10.1287/orsc.7.1.22
+   SCHERER FM, 1980, IND MARKET STRUCTURE
+   Sommer DW, 1996, J RISK INSUR, V63, P501, DOI 10.2307/253623
+   Tsay AA, 2004, INT SER OPER RES MAN, V74, P557
+NR 51
+TC 1
+Z9 1
+U1 1
+U2 11
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1018-5895
+EI 1468-0440
+J9 GENEVA PAP R I-ISS P
+JI Geneva Pap. Risk Insur.-Issues Pract.
+PD APR
+PY 2016
+VL 41
+IS 2
+SI SI
+BP 325
+EP 347
+DI 10.1057/gpp.2015.28
+PG 23
+WC Business, Finance
+SC Business & Economics
+GA DI3VM
+UT WOS:000373427000009
+DA 2019-12-28
+ER
+
+PT J
+AU Hammoudeh, S
+   Kang, SH
+   Mensi, W
+   Nguyen, DK
+AF Hammoudeh, Shawkat
+   Kang, Sang Hoon
+   Mensi, Walid
+   Duc Khuong Nguyen
+TI Dynamic Global Linkages of the BRICS Stock Markets with the United
+   States and Europe Under External Crisis Shocks: Implications for
+   Portfolio Risk Forecasting
+SO WORLD ECONOMY
+LA English
+DT Article
+ID US FINANCIAL CRISIS; TIME-SERIES; CONDITIONAL HETEROSCEDASTICITY;
+   EMERGING ECONOMIES; CONTAGION; INTEGRATION; ROOT; INTERDEPENDENCE;
+   COMOVEMENTS; VOLATILITY
+AB Crisis shocks often lead to changes in the interdependence across stock markets and thus affect risk assessment and management. This paper investigates the extent to which the global financial crisis of 2008-09, which was triggered by the US subprime crisis in 2007, and the European debt crisis that started at the end of 2009, affects the interdependence of the leading emerging markets of the BRICS countries with those of the United States and Europe. Our empirical analysis makes use of the FIAPARCH model combined with the Dynamic Equicorrelation (DECO-FIAPARCH), which allows for the estimation of market linkage for a large group of countries as a whole, while controlling for asymmetric volatility and long memory. The results reveal the presence of important changes in the time-varying linkages of the BRICS stock markets with the US and European ones. In particular, the average linkages have significantly been higher between 2007 and the first half of 2012 than the remaining part of the sample, and there is also evidence of a structural change around the Lehman Brothers collapse. We also show the effects of these stylised facts on portfolio risk assessment and forecasting.
+C1 [Hammoudeh, Shawkat] Drexel Univ, Lebow Coll Business, Philadelphia, PA 19104 USA.
+   [Hammoudeh, Shawkat] Montpellier Business Sch, Energy & Sustainable Dev CESD, Montpellier, France.
+   [Kang, Sang Hoon] Pusan Natl Univ, Dept Business Adm, Busan, South Korea.
+   [Mensi, Walid] El Manar Univ, Tunis, Tunisia.
+   [Mensi, Walid] Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Dept Finance & Investment, Coll Econ & Adm Sci, Riyadh, Saudi Arabia.
+   [Duc Khuong Nguyen] IPAG Business Sch, Paris, France.
+RP Hammoudeh, S (reprint author), Drexel Univ, Lebow Coll Business, Philadelphia, PA 19104 USA.; Hammoudeh, S (reprint author), Montpellier Business Sch, Energy & Sustainable Dev CESD, Montpellier, France.
+CR Abbas Q, 2013, EMERG MARK REV, V16, P66, DOI 10.1016/j.ememar.2013.04.004
+   Ahmad W, 2013, ECON MODEL, V33, P209, DOI 10.1016/j.econmod.2013.04.009
+   Aielli GP, 2013, J BUS ECON STAT, V31, P282, DOI 10.1080/07350015.2013.771027
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Arouri ME, 2012, Q REV ECON FINANC, V52, P207, DOI 10.1016/j.qref.2012.04.004
+   Bai J, 2003, J APPL ECONOMET, V18, P1, DOI 10.1002/jae.659
+   Beirne J, 2010, EMERG MARK REV, V11, P250, DOI 10.1016/j.ememar.2010.05.002
+   Bekaert G, 2000, J FINANC, V55, P565, DOI 10.1111/0022-1082.00220
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Bhar R, 2009, GLOB FINANC J, V19, P203, DOI 10.1016/j.gfj.2008.09.005
+   Bianconi M, 2013, EMERG MARK REV, V14, P76, DOI 10.1016/j.ememar.2012.11.002
+   Chiang SM, 2013, GLOB FINANC J, V24, P30, DOI 10.1016/j.gfj.2013.03.001
+   Cho S, 2015, INT REV FINANC ANAL, V42, P109, DOI 10.1016/j.irfa.2014.10.007
+   Christoffersen P., 2009, HDB FINANCIAL TIME S, P753, DOI DOI 10.1007/978-3-540-71297-8_33
+   DeSantis G, 1997, J INT MONEY FINANC, V16, P561, DOI 10.1016/S0261-5606(97)00020-X
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   Dooley M, 2009, J INT MONEY FINANC, V28, P1331, DOI 10.1016/j.jimonfin.2009.08.004
+   Dungey M, 2015, J BANK FINANC, V58, P71, DOI 10.1016/j.jbankfin.2015.04.006
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Engle R, 2012, J BUS ECON STAT, V30, P212, DOI 10.1080/07350015.2011.652048
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Giot P, 2003, J APPL ECONOMET, V18, P641, DOI 10.1002/jae.710
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   Hwang E, 2013, ECON MODEL, V35, P338, DOI 10.1016/j.econmod.2013.07.021
+   INCLAN C, 1994, J AM STAT ASSOC, V89, P913, DOI 10.2307/2290916
+   Jorian P., 2007, VALUE RISK NEW BENCH
+   Kim EH, 2000, J BUS, V73, P25
+   Kupiec P., 1995, J DERIV, V2, P17
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.2307/2336182
+   Pragidis IC, 2015, J FINANC STABIL, V18, P127, DOI 10.1016/j.jfs.2015.04.001
+   Tse YK, 1998, J APPL ECONOMET, V13, P49
+   Wang Z, 2003, APPL ECON LETT, V10, P527, DOI 10.1080/1350485032000100198
+   Wu Ping-Tsung, 2007, J EMPIR FINANC, V14, P248
+   Zhang B, 2013, N AM J ECON FINANC, V26, P725, DOI 10.1016/j.najef.2013.05.003
+NR 38
+TC 5
+Z9 5
+U1 1
+U2 11
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0378-5920
+EI 1467-9701
+J9 WORLD ECON
+JI World Econ.
+PD NOV
+PY 2016
+VL 39
+IS 11
+BP 1703
+EP 1727
+DI 10.1111/twec.12433
+PG 25
+WC Business, Finance; Economics; International Relations
+SC Business & Economics; International Relations
+GA EB7FW
+UT WOS:000387552900002
+DA 2019-12-27
+ER

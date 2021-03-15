@@ -1,0 +1,567 @@
+
+PT J
+AU Escribano, A
+   Maggi, M
+AF Escribano, Ana
+   Maggi, Mario
+TI Intersectoral default contagion: A multivariate Poisson autoregression
+   analysis
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Default contagion; Financial crises; Poisson autoregressive process;
+   Intensity estimation
+ID CORPORATE DEFAULTS; CREDIT CONTAGION; PREDICTION; MODEL; RISK
+AB This paper analyzes credit rating default dependencies in a multisectoral framework. Using Mergent's FISD database, we study the default series in the U.S. over the last two decades, disaggregating defaults by industry-sector group. During this period, two main waves of default occurred: the implosion of the "dot-corn" bubble and the global financial crisis. We estimate a Multivariate Autoregressive Conditional Poisson model according to the biweekly number of defaults that occurred in different sectors of the economy from 1996 to 2015. We discuss the contagion effect between sectors in two ways: the degree of transmission of the probability of default from one sector to another, i.e., the "infectivity" of the sector, and the degree of contagion of one sector from another, i.e., the "vulnerability" of the sector. Our results show differences between the sectors' relations during the first and second part of our sample. We add some exogenous variables to the analysis and evaluate their contribution to the goodness of fit.
+C1 [Escribano, Ana] Univ Castilla La Mancha, Dept Econ & Finance, Plaza Univ 1, Albacete 02071, Spain.
+   [Maggi, Mario] Univ Pavia, Dept Econ & Management, Via San Felice 5, I-27100 Pavia, Italy.
+RP Escribano, A (reprint author), Univ Castilla La Mancha, Dept Econ & Finance, Plaza Univ 1, Albacete 02071, Spain.
+EM ana.escribano@uclm.es; mario.maggi@unipv.it
+OI Maggi, Mario/0000-0002-7233-4443
+FU Spanish Ministerio de Economia y Competitividad [ECO2014-59664-P];
+   Spanish Ministerio de Ciencia, Innovacion y Universidades
+   [ECO2017-89715-P]; University of Castilla-La Mancha [2016/11653]
+FX This work was supported by the Spanish Ministerio de Economia y
+   Competitividad [grant number ECO2014-59664-P]; the Spanish Ministerio de
+   Ciencia, Innovacion y Universidades [grant number ECO2017-89715-P]; and
+   the University of Castilla-La Mancha [grant number 2016/11653]. Any
+   errors are solely the responsibility of the authors.
+CR Agosto A, 2016, J EMPIR FINANC, V38, P640, DOI 10.1016/j.jempfin.2016.02.007
+   Azizpour S, 2018, J FINANC ECON, V129, P154, DOI 10.1016/j.jfineco.2018.04.008
+   Berthault A, 2000, HIST DEFAULT RATES C
+   Chen PM, 2014, J BANK FINANC, V40, P211, DOI 10.1016/j.jbankfin.2013.11.036
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   Collin-Dufresne P., 2010, W15733 NAT BUR EC RE
+   Das S., 2006, J FIXED INCOME, V16, P7, DOI DOI 10.3905/JFI.2006.656006
+   Das SR, 2007, J FINANC, V62, P93, DOI 10.1111/j.1540-6261.2007.01202.x
+   Dong YH, 2014, ECON MODEL, V40, P91, DOI 10.1016/j.econmod.2014.03.004
+   Duffie D, 2007, J FINANC ECON, V83, P635, DOI 10.1016/j.jfineco.2005.10.011
+   Egloff D, 2007, J BANK FINANC, V31, P2475, DOI 10.1016/j.jbankfin.2006.10.023
+   Emery K. M., 2005, J FIXED INCOME, V15, P87, DOI [10.3905/jfi.2005.591612, DOI 10.3905/JFI.2005.591612]
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P741, DOI 10.1016/j.jedc.2005.01.004
+   Giesecke K, 2004, J BANK FINANC, V28, P3009, DOI 10.1016/j.jbankfin.2003.11.002
+   Giesecke K, 2011, J FINANC ECON, V102, P233, DOI 10.1016/j.jfineco.2011.01.011
+   Heinen A., 2007, J EMPIR FINANC, V14, P564, DOI DOI 10.1016/J.JEMPFIN.2006.07.004
+   Kramer F, 2010, J CREDIT RISK, V6, P3
+   Lando D, 2010, J FINANC INTERMED, V19, P355, DOI 10.1016/j.jfi.2010.03.002
+   LANG LHP, 1992, J FINANC ECON, V32, P45, DOI 10.1016/0304-405X(92)90024-R
+   Yurdakul F, 2014, PROCD SOC BEHV, V109, P784, DOI 10.1016/j.sbspro.2013.12.544
+NR 20
+TC 0
+Z9 0
+U1 1
+U2 1
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD NOV
+PY 2019
+VL 82
+BP 376
+EP 400
+DI 10.1016/j.econmod.2019.01.020
+PG 25
+WC Economics
+SC Business & Economics
+GA JN4VN
+UT WOS:000496897200028
+DA 2019-12-27
+ER
+
+PT J
+AU De Santis, RA
+AF De Santis, Roberto A.
+TI Redenomination Risk
+SO JOURNAL OF MONEY CREDIT AND BANKING
+LA English
+DT Article; Proceedings Paper
+CT 127th Annual Meeting of the American-Economic-Association
+CY JAN 03-05, 2015
+CL Boston, MA
+SP Amer Econ Assoc
+DE C32; F36; G12; G15; redenomination risk; sovereign credit spreads;
+   systemic risk; euro
+ID SOVEREIGN DEBT CRISIS; FLIGHT-TO-LIQUIDITY; MONETARY-POLICY; RARE
+   DISASTERS; CREDIT; DEFAULT; EURO; IMPLICIT; SPREADS; PRICES
+AB Euro redenomination risk is the risk that a euro asset is redenominated into a devalued legacy currency. We propose a time-varying, country-specific intra-euro area redenomination risk measure, defined as the quanto credit default swaps (CDS) of a member country relative to the quanto CDS of a benchmark member country. Focusing on Italy, Spain, and France and using Germany as benchmark, we show that the redenomination risk shocks significantly affect sovereign yield spreads, with Italy and Spain being most adversely affected. Finally, foreign redenomination risk shocks spill over and above local redenomination risk shocks, suggesting that this risk is systemic.
+C1 [De Santis, Roberto A.] European Cent Bank, Frankfurt, Germany.
+RP De Santis, RA (reprint author), European Cent Bank, Frankfurt, Germany.
+EM roberto.de_santis@ecb.europa.eu
+CR Arias JE, 2018, ECONOMETRICA, V86, P685, DOI 10.3982/ECTA14468
+   Arora N, 2012, J FINANC ECON, V103, P280, DOI 10.1016/j.jfineco.2011.10.001
+   Bachmann R, 2012, J MONETARY ECON, V59, P235, DOI 10.1016/j.jmoneco.2012.02.005
+   Bai Jennie, 2011, WORKING PAPER
+   Bank for International Settlements (BIS), 2014, OTC DER STAT END DEC
+   Barro RJ, 2006, Q J ECON, V121, P823, DOI 10.1162/qjec.121.3.823
+   Barro RJ, 2011, ECONOMETRICA, V79, P1567, DOI 10.3982/ECTA8827
+   Barro RJ, 2009, AM ECON REV, V99, P243, DOI 10.1257/aer.99.1.243
+   Beber A, 2009, REV FINANC STUD, V22, P925, DOI 10.1093/rfs/hhm088
+   Bernanke BS, 2005, Q J ECON, V120, P387, DOI 10.1162/0033553053327452
+   Bongaerts D, 2011, J FINANC, V66, P203, DOI 10.1111/j.1540-6261.2010.01630.x
+   Britten-Jones M, 2000, J FINANC, V55, P839, DOI 10.1111/0022-1082.00228
+   Burnside C, 2011, REV FINANC STUD, V24, P853, DOI 10.1093/rfs/hhq138
+   CALVO GA, 1988, AM ECON REV, V78, P647
+   Campa JM, 1996, AM ECON REV, V86, P726
+   Carr P, 2007, J BANK FINANC, V31, P2383, DOI 10.1016/j.jbankfin.2006.09.008
+   Cole HL, 2000, REV ECON STUD, V67, P91, DOI 10.1111/1467-937X.00123
+   Corsetti G, 2016, J EUR ECON ASSOC, V14, P1329, DOI 10.1111/jeea.12184
+   De Grauwe P, 2012, JCMS-J COMMON MARK S, V50, P866, DOI 10.1111/j.1468-5965.2012.02287.x
+   De Santis RA, 2015, J BANK FINANC, V56, P86, DOI 10.1016/j.jbankfin.2015.02.018
+   De Santis RA, 2014, J EMPIR FINANC, V26, P150, DOI 10.1016/j.jempfin.2013.12.003
+   Dewachter H, 2015, J BANK FINANC, V50, P308, DOI 10.1016/j.jbankfin.2014.03.011
+   Di Cesare Antonio, 2012, BANCA ITALIA OCCASIO, V128
+   Duffle D., 1999, FINANCIAL ANAL J, P73, DOI DOI 10.2469/FAJ.V55.N1.2243
+   European Central Bank (ECB), 2014, INT ROL EUR
+   Farhi Emmanuel, 2009, NBER WORKING PAPER S, V15062
+   Favero CA, 2013, J ECONOMETRICS, V177, P343, DOI 10.1016/j.jeconom.2013.04.004
+   Helleiner Eric, 2003, MAKING NATL MONEY TE
+   Hui CH, 2011, J BANK FINANC, V35, P2945, DOI 10.1016/j.jbankfin.2011.03.020
+   International Monetary Fund (IMF), 2013, NEW LOOK ROL SOV CRE, P57
+   Jarocinski M, 2010, ECON LETT, V108, P257, DOI 10.1016/j.econlet.2010.05.022
+   Jurek JW, 2014, J FINANC ECON, V113, P325, DOI 10.1016/j.jfineco.2014.05.004
+   Kamga Kuate, 2013, LIQUIDITY PREMIUM CD
+   Klose Jens, 2012, 7 GERM COUNC EC EXP
+   Krishnamurthy Arvind, 2015, ECB POLICIES I UNPUB
+   Kriwoluzky A, 2015, CEPR DISCUSSION PAPE
+   Lafarguette Romain, 2015, INVOICING CURR UNPUB
+   Longstaff FA, 2005, J FINANC, V60, P2213, DOI 10.1111/j.1540-6261.2005.00797.x
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Monfort A, 2014, REV FINANC, V18, P2103, DOI 10.1093/rof/rft049
+   Pan J, 2002, J FINANC ECON, V63, P3, DOI 10.1016/S0304-405X(01)00088-5
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Rose Andrew, 2007, 6254 CEPR
+   Rubio-Ramirez JF, 2010, REV ECON STUD, V77, P665, DOI 10.1111/j.1467-937X.2009.00578.x
+   Shambaugh JC, 2012, BROOKINGS PAP ECO AC, P157
+   Waggoner DF, 1999, REV ECON STAT, V81, P639, DOI 10.1162/003465399558508
+   Wenxin Du, 2016, BOARD GOVERNORS FEDE, V2016-087
+NR 47
+TC 1
+Z9 1
+U1 1
+U2 1
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-2879
+EI 1538-4616
+J9 J MONEY CREDIT BANK
+JI J. Money Credit Bank.
+PD DEC
+PY 2019
+VL 51
+IS 8
+BP 2173
+EP 2206
+DI 10.1111/jmcb.12582
+PG 34
+WC Business, Finance; Economics
+SC Business & Economics
+GA JM1RE
+UT WOS:000495998800004
+DA 2019-12-28
+ER
+
+PT J
+AU Gaffeo, E
+   Gobbi, L
+   Molinari, M
+AF Gaffeo, Edoardo
+   Gobbi, Lucio
+   Molinari, Massimo
+TI The economics of netting in financial networks
+SO JOURNAL OF ECONOMIC INTERACTION AND COORDINATION
+LA English
+DT Article; Proceedings Paper
+CT 22nd Annual Conference on Economic Science with Heterogeneous
+   Interacting Agents (WEHIA)
+CY JUN 12-14, 2017
+CL Univ Cattolica Sacro Cuore, Milan, ITALY
+HO Univ Cattolica Sacro Cuore
+DE C63; D85; G21
+ID CONTAGION; RISK; EXPOSURES; MARKET
+AB Can the netting of on-balance-sheet interbank assets and liabilities be useful in thwarting financial contagion during a systemic crisis episode? In order to answer this question, in this paper we use mean-field approximation techniques and computer simulations to comparatively assess how contagion spreads out throughout an interbank network under different settlement modes. We find that a regulator forcing banks to net their credit/debt obligations instead of allowing them to regulate their mutual exposures on a gross basis succeeds in reducing the number of defaults and in preserving the aggregate amount of bank capital. Interbank netting takes its toll on retail depositors by increasing their potential losses, however. Hence, our analysis provides support for an optimal crisis-management policy mix that combines the enforcement of bilateral netting with a blanket deposit insurance scheme. The desirability of netting increases when the system is highly connected and susceptible to large shocks, especially when strains are first detected in banks located at the core of the network.
+C1 [Gaffeo, Edoardo; Gobbi, Lucio] Univ Trento, Dept Econ & Management, Trento, Italy.
+   [Molinari, Massimo] Bank Italy, Market Operat Directorate, Via Nazl 91, I-00184 Rome, Italy.
+RP Molinari, M (reprint author), Bank Italy, Market Operat Directorate, Via Nazl 91, I-00184 Rome, Italy.
+EM massimo.molinari@bancaditalia.it
+CR Aldasoro I, 2017, J ECON BEHAV ORGAN, V142, P164, DOI 10.1016/j.jebo.2017.05.022
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Bank of England, 2009, ROL MACR POL DISC PA
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Berardi S, 2017, INT REV ECON FINANC, V47, P255, DOI 10.1016/j.iref.2016.11.001
+   Brandi G, 2016, ARXIV161003259V1
+   British Banking Association, 2002, DEP NETT POL BRIEF
+   Caccioli F, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500580
+   Cecchetti S, 2016, 1050 BANK IT
+   Chinazzi M, 2015, SYSTEMIC RISK CONTAG
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Constancio V, 2014, 3 C MACR RES NETW FR
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Dewatrinpont M, 2012, CRISIS AFTERMATH NEW
+   Duan J-C, 2013, CASCADING DEFAULTS S
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Emmons WR, 1995, 016A FED RES BANK ST
+   Erol S, 2017, NETWORK REACTIONS BA
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gaffeo E, 2015, QUANT FINANC, V15, P637, DOI 10.1080/14697688.2014.968196
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Garlaschelli D, 2004, PHYS REV LETT, V93, DOI 10.1103/PhysRevLett.93.188701
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Giudici P, 2017, CORRELATION NETWORKS
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Grilli R, 2015, J ECON INTERACT COOR, V10, P287, DOI 10.1007/s11403-014-0129-1
+   Huser A-C, 2015, SUSTAINABLE ARCHITEC
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Laeven L, 2012, J INT MONEY FINANC, V31, P1220, DOI 10.1016/j.jimonfin.2012.01.014
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   Loepfe L, 2013, PLOS ONE, V8, DOI 10.1371/journal.pone.0077526
+   May R, 2010, J R SOC INTERFACE, V7, P1
+   Mengle D, 2010, INT SWAP DERIVATIVES
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Roukny T, 2014, 222014 DTSCH BUND
+   Schoenmaker D, 2011, 13 DSF
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   van der Zwet A, 2011, NEDERLANDSCHE BANK O, V9
+NR 42
+TC 0
+Z9 0
+U1 0
+U2 0
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1860-711X
+EI 1860-7128
+J9 J ECON INTERACT COOR
+JI J. Econ. Interact. Coord.
+PD SEP
+PY 2019
+VL 14
+IS 3
+SI SI
+BP 595
+EP 622
+DI 10.1007/s11403-018-0229-4
+PG 28
+WC Economics
+SC Business & Economics
+GA JA5QT
+UT WOS:000487898600008
+DA 2019-12-27
+ER
+
+PT J
+AU Baker, CM
+AF Baker, Colleen M.
+TI Incomplete Clearinghouse Mandates
+SO AMERICAN BUSINESS LAW JOURNAL
+LA English
+DT Article
+ID SYSTEMIC RISK; DERIVATIVES-CLEARINGHOUSES; MARKET; BANKRUPTCY; OWNERSHIP
+AB In the 2007-08 financial crisis, over-the-counter (OTC) derivatives triggered the collapse of colossal financial institutions. In response, global policy makers instituted clearinghouse mandates. As a result, all standardized OTC derivatives must now use clearinghouses, and global financial market stability now depends upon these institutions. Yet certain underlying legal and regulatory structures threaten to undermine clearinghouse stability, particularly were a significant clearinghouse to become distressed. This article argues that the clearinghouse mandates are incomplete in that they fail to reform these problematic arrangements. As with electric utilities, the lights at the financial market infrastructures known as clearinghouses must always be on. Yet the legal frameworks for handling a distressed clearinghouse, the problem of clearinghouse recovery, and resolution, remain uncertain. This article advances debate on this issue. It argues that recovery, a private market restructuring process, can be conceptualized as a bargaining game dependent upon time-critical cooperation between a clearinghouse and members. This article uses transaction cost economics to demonstrate, however, that certain underlying legal and regulatory structures could work at cross-purposes to this necessary cooperation, and actually increase its cost. Based upon this analysis, it proposes reforms designed to ensure that parties' incentives promote efficient recovery. In the absence of efficient recovery frameworks, the path of a distressed, significant clearinghouse is likely to resemble that of the government-backed mortgage lenders whose fate more than ten years after their entry into conservatorship remains uncertain. This article aims to help avoid a repeat of this history.
+C1 [Baker, Colleen M.] Univ Oklahoma, Legal Studies, Norman, OK 73019 USA.
+RP Baker, CM (reprint author), Univ Oklahoma, Legal Studies, Norman, OK 73019 USA.
+CR ACTIVITIES PERMISSIBLE FOR NATIONAL BANKS AND FEDERAL SAVINGS ASSOCIATIONS, 2017, ACT PERM NAT BANKS F
+   Allen JL, 2012, STANFORD LAW REV, V64, P1079
+   [Anonymous], 2009, WHY EC FAIL PRED FIN, P4
+   [Anonymous], 2016, RES REC RES REV 3 RS
+   [Anonymous], 2017, REC FIN MARK INFR
+   [Anonymous], 2014, WHAT IS RES PLAN CCP
+   [Anonymous], DES FIN MARK UT
+   [Anonymous], 2018, ICE CLEAR CRED RUL
+   [Anonymous], 2011, CENTR CLEAR OTC DER
+   [Anonymous], 2015, PUBLIC ROUNDTABLE RE, P69
+   [Anonymous], 2016, REC PLANS WIND DOWN
+   [Anonymous], 2014, CCP RISK MAN REC RES
+   [Anonymous], 2019, RESP FSB DISC PAP FI, P5
+   [Anonymous], 2019, EACH RESP FSB CONS F, P13
+   [Anonymous], 2018, INC CENTR CLEAR OV T, P9
+   [Anonymous], 2017, ANN REPORT
+   [Anonymous], 2018, INC CENTR CLEAR OV T
+   [Anonymous], 2017, ANN REPORT
+   [Anonymous], 2017, GUID CENTR COUNT RES
+   [Anonymous], 2017, REC FIN MARK INFR
+   [Anonymous], 2019, HIST FANN MAE FREDD
+   Ayadi Rym, 2015, FUTURE CREDIT DERIVA
+   Baker C., 2013, ARIZ L REV, V55, P603
+   Baker Colleen, 2012, U MICH J L REFORM, V46, P69
+   Baker Colleen, 2013, HARVARD BUSINESS LAW, V177
+   Baker Colleen, 2016, WORKING PAPER
+   Baker CM, 2010, NOTRE DAME LAW REV, V85, P1287
+   Baker Colleen M., 2016, VA L BUS REV, V343
+   BANK FOR INT'L SETTLEMENTS, 2018, STAT REL OTC DER STA
+   BANK FOR INT'L SETTLEMENTS FINA. STABILITY BD. & OICV- IOSCO, 2018, AN CENTR CLEAR INT
+   Barometer Bailout, BAIL BAR
+   BAROMETER BAILOUT, BAIL BAR
+   Bliss Robert R., 2006, FED RES BANK CHI ECO, V30, P23
+   Brunsden Jim, 2018, FIN TIMES
+   CARNELL RICHARD, 2009, LAW BANKING FINANCIA, P296
+   Carter Louise, 2015, BULLETIN, V79
+   Carter Louise, 2015, BULL, V82
+   Chang FB, 2014, COLUM BUS L REV, V2014, P747
+   Chase JPMorgan, 2014, PERSPECTIVES
+   Chender Louisa, 2018, STREETWISE PROF 0920
+   Chender Louisa, 2018, LIQUIDITY RISK CLEAR
+   Chender Louisa, 2018, EUROPES OVERSIGHT PL
+   Cox Robert, 2016, J FIN MKT INFRASTRUC, V4, P27
+   Cox RT, 2016, J FINANC MARK INFRAS, V4, P25
+   Crawford J, 2017, AM BUS LAW J, V54, P107, DOI 10.1111/ablj.12096
+   Dahlgren Sarah, 2014, COMMUNICATION   0429
+   Davis Warren, 2016, FUTURES DERIVATI FEB
+   DECHARIO TONI, 2010, 466 FED RES BANK NY
+   Duey Zachary, 2015, 2015 C CENTR COUNT R
+   Duffie Darrell, 2014, 3256 STAN U GRAD SCH
+   Duffie Darrell, 2013, FUTURIZATION SWAPS, P3
+   Duffie Darrell, 2017, RISK
+   Duffie Darrell, 2011, 2022 STAN U GRAD SCH
+   Duffie Darrell, 2014, 14101 HOOV I EC
+   Evans-Pritchard Blake, 2018, RISK            1111
+   Faruqui Umar, 2018, BIS Q REV, p[73, 74]
+   Faruqui Umar, 2018, BIS Q REV, V76
+   Fleming Sam, 2014, FIN TIMES
+   Gao S, 2017, AM BUS LAW J, V54, P393, DOI 10.1111/ablj.12102
+   Gelpern A, 2012, EUR BUS ORGAN LAW RE, V13, P347, DOI 10.1017/S1566752912000274
+   GILSON SC, 1996, CORPORATE BANKRUPTCY, P308
+   Gorton Gary, 2013, 0914 YAL ICF
+   Gregory J, 2014, CENTRAL COUNTERPARTIES: MANDATORY CLEARING AND BILATERAL MARGIN REQUIREMENTS FOR OTC DERIVATIVES, P181
+   Griffith SJ, 2014, MINN LAW REV, V98, P1291
+   Griffith Sean J., 2012, EMORY LJ, V61, P1153
+   HART OLIVER, 1995, FIRMS CONTRACTS FINA, P29
+   Heal Geoffrey, 2003, 9885 NAT BUR EC RES
+   Heal Geoffrey, 2004, 10706 NAT BUR EC RES
+   Hu Henry, 2019, FIN TIMES
+   Huang Wenqian, 2019, BIS WORKING PAPERS
+   Hull J., 2009, OPTIONS FUTURES OTHE
+   INT'L SWAPS & DERIVATIVES ASS'N, 2017, SAF CLEAR NEED COMPR
+   Investopedia Staff, 2018, DISS BEAR STEARNS HE
+   JACKSON TH, 1982, YALE LAW J, V91, P857, DOI 10.2307/796070
+   Jackson Thomas, 1996, CORPORATE BANKRUPTCY, P151
+   JOHNSON KN, 2013, U WASH L REV, V88, P185
+   Johnson Kristin N., 2012, BROOK L REV, V77, P681
+   Johnson Simon, 2014, FIN TIMES
+   Kaufman George G., 2001, NEW SAFETY NET
+   Kress JC, 2011, HARVARD J LEGIS, V48, P49
+   Kroszner RS, 1999, J MONEY CREDIT BANK, V31, P596, DOI 10.2307/2601077
+   Kroszner RS, 2000, J FINANC SERV RES, V18, P157, DOI 10.1023/A:1026534619637
+   Kunreuther H, 2003, J RISK UNCERTAINTY, V26, P231, DOI 10.1023/A:1024119208153
+   Lee R, 2011, RUNNING THE WORLDS MARKETS: THE GOVERNANCE OF FINANCIAL INFRASTRUCTURE, P1
+   Lewis Rebecca, 2017, 201702 PDP FED RES B, P1
+   Light Joe, 2018, BLOOMBERG
+   Lin Li, 2013, 133 INT MON FUND, P5
+   Lioudis Nick K., 2019, COLLAPSE LEHMAN BROT
+   Lubben SJ, 2017, J FINANC REGUL, V3, P133, DOI 10.1093/jfr/fjx007
+   Lubben Stephen J., 2015, VA L BUS REV, V10, P127
+   Manmohan Singh FIN. STABILITY BOARD, 2017, GUIDANCE CENTRAL COU
+   Manns J, 2013, IOWA LAW REV, V98, P1575
+   Marshall D., 2013, EC PERSPECTIVES, V37, P30
+   Michaels Dave, 2018, WALL ST J
+   Morgenson Gretchen, 2012, NY TIMES
+   Mosser Patricia C., 2013, 644 FED RES BANK NEW
+   Murphy D, 2013, GLOB FINANC MARKET, P1, DOI 10.1057/9781137293862
+   Nijenhuis Erika W., 2010, COLUM J TAX L, V2, P78
+   Nijenhuis Erika W., 2010, COLUM J TAX L, V2, P1
+   NORMAN PETER, 2011, RISK CONTROLLERS CEN, P26
+   OMAROVA S, 2009, U MIAMI L REV, V63, P1041
+   Paddrick Mark, 2017, 1706 OFF FIN RES, P18
+   Peer Nadav Orian, 2018, 189 TUL PUBL L RES
+   Perrone Frank, 2019, RETHINKING CLEARING
+   Pierce Hester, 2016, CLEV ST L REV, V64, P589
+   Pierce Hester, 2014, 1412 MERC CTR
+   Pirrong Craig, 2011, DISCUSSION PAPER SER, V1
+   Pirrong Craig, 2008, CLEARINGHOUSE CURE
+   Rausser G, 2010, J FINAN ECON POLICY, V2, P346, DOI 10.1108/17576381011100865
+   Roe MJ, 2013, CALIF LAW REV, V101, P1641
+   Saguato P, 2017, YALE J REGUL, V34, P601
+   Sanches Daniel, 2014, BUS REV, P10
+   Schaefer Steve, 2013, FORBES
+   Singh Manmohan, 2018, 1865 IMF
+   Singh Manmohan, 2011, 1166 IMF
+   Singh Manmohan, 2014, 14203 IMF, P6
+   SJOSTROM WK, 2009, WASH LEE L REV, V66, P943
+   SKEEL DAVID, 2011, NEW FINANCIAL DEAL U
+   Squire R, 2014, CORNELL LAW REV, V99, P857
+   Stafford Philip, 2018, FIN TIMES
+   Stafford Philip, 2014, FIN TIMES
+   Steigerwald Robert, 2006, EC PERSPECT Q, V4Q, P22
+   Stout Lynn A., 2009, DEREGULATING DERIVAT
+   Tadelis Steven, 2012, HDB ORG EC, P159, DOI 10.2139/ssrn.263511
+   Taub Jennifer, 2014, N Y TIMES DEALBOOK
+   Tucker Paul, 2011, COMMUNICATION   0601
+   Tucker Paul, 2014, COMMUNICATION   0411
+   Turing Dermot, 2017, VAND L REV EN BANC, V70, P280
+   Turing Dermot, 2017, VAND L REV EN BANC, V70, P279
+   Turing Dermot, 2018, 18228 IMF
+   U. S. DEP'T OF THE TREASURY, 2017, FIN SYST CREAT EC OP, P217
+   Weber RF, 2012, AM BUS LAW J, V49, P643, DOI 10.1111/j.1744-1714.2012.01140.x
+   Williams Julie L., 2009, INTERPRETIVE LETT, P3
+   Williamson OE, 1998, ECONOMIST, V146, P23, DOI 10.1023/A:1003263908567
+   Williamson OE, 2010, J RETAILING, V86, P215, DOI 10.1016/j.jretai.2010.07.005
+   Williamson Oliver E., 1998, ECONOMIST, V146, P45
+   Williamson Oliver E., 2007, EC DISCUSSION PAPERS, P3
+   Yadav Y, 2016, J FINANC REGUL, V2, P21, DOI 10.1093/jfr/fjw001
+   Yadav Y, 2013, GEORGETOWN LAW J, V101, P387
+   Yadav Yesha, 2014, GEORGIA J INT COMP L, V43, P161
+NR 140
+TC 0
+Z9 0
+U1 0
+U2 0
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0002-7766
+EI 1744-1714
+J9 AM BUS LAW J
+JI Am. Bus. Law J.
+PD SEP
+PY 2019
+VL 56
+IS 3
+BP 507
+EP 581
+DI 10.1111/ablj.12149
+PG 75
+WC Business; Law
+SC Business & Economics; Government & Law
+GA IR9SV
+UT WOS:000481787000002
+DA 2019-12-28
+ER
+
+PT J
+AU Bardoscia, M
+   Barucca, P
+   Codd, AB
+   Hill, J
+AF Bardoscia, Marco
+   Barucca, Paolo
+   Codd, Adam Brinley
+   Hill, John
+TI Forward-looking solvency contagion
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Financial networks; Systemic risk; Financial contagion; Macro-prudential
+   policy; Stress testing
+ID SYSTEMIC RISK; CORPORATE-DEBT; STABILITY; EXPOSURES; MARKET
+AB Solvency contagion risk is a key channel through which systemic risk can come about. We introduce a model that accounts not only for losses transmitted after banks default, but also for losses due to the fact that creditors revalue their exposures when probabilities of default of their counterparties change. We apply the model to run a series of simplified stress tests of the UK banking system from 2008 to 2016, based on two datasets of real interbank exposures between the seven major UK banks. We show that risks due to solvency contagion decrease markedly from the peak of the crisis, to the point of becoming negligible. We also characterise the distributions of both vulnerabilities and systemic importances of individual banks, thereby tracking the evolution of risk concentration. (C) 2019 The Bank of England. Published by Elsevier B.V. All rights reserved.
+C1 [Bardoscia, Marco; Codd, Adam Brinley; Hill, John] Bank England, Threadneedle St, London EC2R 8AH, England.
+   [Barucca, Paolo] UCL, Gower St, London WC1E 6EA, England.
+RP Bardoscia, M (reprint author), Bank England, Threadneedle St, London EC2R 8AH, England.
+EM marco.bardoscia@bankofengland.co.uk
+FU FET Project SIMPOL [610704]; FET Project DOLFINS [640772]; H2020 Project
+   CoeGSS [676547]; FET IP Project MULTIPLEX [317532]; Department of
+   Banking and Finance at the University of Zurich; London Institute for
+   Mathematical Sciences
+FX The authors would like to thank Paul Nahai-Williamson and Amar Radia for
+   their expert advice and Stefano Battiston, Guido Caldarelli, and Fabio
+   Caccioli for countless fruitful discussions. Feedback from Peyton H.
+   Young, Luitgard Veraart, Jose A. Lopez, Camelia Minoiu, Rhiannon
+   Sowerbutts, Matthieu Chavaz, Vesko Karadotchev, Georgina Green, Caterina
+   Lepore, Sinem Hacioglu, and anonymous reviewers has been invaluable and
+   has greatly contributed to improve the manuscript. We are also grateful
+   to a number of participants at seminars organised by the Bank of England
+   for feedback and suggestions. Marco Bardoscia acknowledges previous
+   support from FET Project SIMPOL nr. 610704, FET Project DOLFINS nr.
+   640772, and H2020 Project CoeGSS nr. 676547. Paolo Barucca acknowledges
+   support from FET Project DOLFINS nr. 640772 and FET IP Project MULTIPLEX
+   nr. 317532. Marco Bardoscia and Paolo Barucca warmly thank the
+   Department of Banking and Finance at the University of Zurich and the
+   London Institute for Mathematical Sciences for their kind hospitality
+   and financial support during the initial stages of the work.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya V.V., 2013, WORLD SCI SERIES FIN, P99
+   Acharya VV, 2007, J FINANC ECON, V85, P787, DOI 10.1016/j.jfineco.2006.05.011
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Banerjee T., 2018, DYNAMIC CLEARING CON
+   Bank of England, 2016, STRESS TEST UK BANK
+   Bank of England, 2017, STRESS TEST UK BANK
+   Bank of England, 2015, STRESS TEST UK BANK
+   Bardoscia M, 2017, NAT COMMUN, V8, DOI 10.1038/ncomms14416
+   Bardoscia M, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0163825
+   Bardoscia M, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0130406
+   Barucca P., 2016, NETWORK VALUATION FI
+   Basel Committee on Banking Supervision, 2011, CAP TREATM BIL COUNT
+   Basel Committee on Banking Supervision, 2014, SUP FRAM MEAS CONTR
+   Basel Committee on Banking Supervision (Basel), 2011, BAS 3 GLOB REG FRAM
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Bielecki TR, 2005, LECT NOTES MATH, V1856, P27
+   BLACK F, 1976, J FINANC, V31, P351, DOI 10.2307/2326607
+   Branch B., 2002, INT REV FINANC ANAL, V11, P39, DOI DOI 10.1016/S1057-5219(01)00068-0
+   Brigo D., 2004, CREDIT DEFAULT SWAP
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cimini G, 2015, SCI REP-UK, V5, DOI 10.1038/srep15758
+   Cont R., 2010, NETWORK STRUCTURE SY
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Davydenko SA, 2012, REV FINANC STUD, V25, P2959, DOI 10.1093/rfs/hhs091
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H., 2006, INT J CENT BANK
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Fink K, 2016, J FINANC STABIL, V25, P83, DOI 10.1016/j.jfs.2016.06.002
+   Fischer T, 2014, MATH FINANC, V24, P97, DOI 10.1111/j.1467-9965.2012.00526.x
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROYAL SOC LOND MAT
+   Gandy A, 2017, MANAGE SCI, V63, P4428, DOI 10.1287/mnsc.2016.2546
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Glasserman P., 2005, MEASURING MARGINAL R
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Halaj G, 2018, PHYSICA A, V503, P1151, DOI 10.1016/j.physa.2018.08.060
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   Huser AC, 2018, J FINANC STABIL, V38, P81, DOI 10.1016/j.jfs.2017.12.001
+   Jackson M. O, 2019, WHAT MAKES FINANCIAL
+   JAMES C, 1991, J FINANC, V46, P1223, DOI 10.2307/2328857
+   Kurth A, 2003, RISK, P84
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Shapley L. S., 1953, ANN MATH STUD, V28, P307, DOI DOI 10.1515/9781400881970-018
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   de Souza SRS, 2016, J ECON DYN CONTROL, V66, P54, DOI 10.1016/j.jedc.2016.03.003
+   Suzuki T, 2002, J OPER RES SOC JPN, V45, P123, DOI 10.15807/jorsj.45.123
+   Tarashev N., 2010, ATTRIBUTING SYSTEMIC
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wells S. J., 2004, FINANCIAL INTERLINKA
+NR 64
+TC 0
+Z9 0
+U1 1
+U2 1
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD NOV
+PY 2019
+VL 108
+AR UNSP 103755
+DI 10.1016/j.jedc.2019.103755
+PG 26
+WC Economics
+SC Business & Economics
+GA JN3XW
+UT WOS:000496834000009
+DA 2019-12-27
+ER

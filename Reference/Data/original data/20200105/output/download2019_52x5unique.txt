@@ -1,0 +1,619 @@
+
+PT J
+AU Huang, YL
+   Shen, CH
+AF Huang, Yu-Li
+   Shen, Chung-Hua
+TI Effect of interbank activities on bank risk: Why is China different?
+SO QUARTERLY REVIEW OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Shadow banking; Bank shadow; Interbank activities; Credit rating; Banks
+ID SYSTEMIC RISK; CREDIT RATINGS; PERFORMANCE; GOVERNANCE; IMPACT; DEBT
+AB Shadow banking commonly occurs outside the banking system to avoid regulation. However, in China, shadow banking could occur inside the banking system through interbank activities. This unique Chinese style of shadow banking provides a natural environment to examine how this form of banking, proxied by interbank activities, affects credit ratings. To prove this, we conduct two comparisons. First, we compare the local Chinese commercial banks with foreign bank subsidiaries in China where the two types of banks are subject to the same macroeconomic environments, policies, and regulations. However, unlike the local banks, foreign bank subsidiaries do not engage in the Chinese style of shadow banking. Next, we compare the interbank activities of five developed countries (Germany, France, Japan, the United Kingdom, and the United States) where the unique shadow banking system is absent. Our results show that credit ratings are downgraded for Chinese banks when they conduct interbank activities. The results do not hold for foreign bank subsidiaries in China as their ratings are either upgraded or show no effect from interbank activities. Furthermore, after we control for country heteroscedasticity, we find that agencies either upgrade ratings or keep them the same for the banks from the five developed countries that conduct interbank activities. (c) 2019 Board of Trustees of the University of Illinois. Published by Elsevier Inc. All rights reserved.
+C1 [Huang, Yu-Li; Shen, Chung-Hua] Shih Chien Univ, Dept Finance & Banking, Taipei, Taiwan.
+   [Shen, Chung-Hua] Nanjing Audit Univ, Inst Banking & Money, Nanjing, Jiangsu, Peoples R China.
+RP Huang, YL (reprint author), 70 Dazhi St, Taipei 104, Taiwan.
+EM ylhuang@g2.usc.edu.tw; chshen01@ntu.edu.tw
+CR Abiad A, 2010, IMF STAFF PAPERS, V57, P281, DOI 10.1057/imfsp.2009.23
+   Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Ahmed AS, 2002, ACCOUNT REV, V77, P867, DOI 10.2308/accr.2002.77.4.867
+   Allen F., 2000, CARNEGIE-ROCHESTER C, V53, P177
+   Allen F., 2016, WORKING PAPER
+   Arinaminpathy N., 2012, 465 BANK ENGL
+   Barry TA, 2011, J BANK FINANC, V35, P1327, DOI 10.1016/j.jbankfin.2010.10.004
+   Barth J. R., 2013, 18733 NBER
+   Borensztein E, 2013, J BANK FINANC, V37, P4014, DOI 10.1016/j.jbankfin.2013.07.006
+   Brewer E., 1986, EC PERSPECTIVES  NOV, P25
+   Calomiris C., 1995, CARNEGIE-ROCHESTER C, V45, P203, DOI DOI 10.1016/0167-2231(95)00034-W
+   Calomiris C. W., 1998, CATO J, V17, P275
+   Chen K., 2016, 21890 NAT BUR EC RES
+   Cihak M., 2010, J FINANCIAL SERVICES, V38, P19
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   De Nicolo G., 2007, IMF WORKING PAPERS, V215
+   Demirguc-Kunt A., 2008, DEPOSIT INSURANCE TH
+   Dinger V, 2009, J MONEY CREDIT BANK, V41, P491, DOI 10.1111/j.1538-4616.2009.00217.x
+   Du J., 2017, VOXCHINA        0719
+   Elliott D. J., 2015, SHADOW BANKING CHINA
+   Fernandes L. M. M., 2013, INTERBANK LINKAGES C
+   Financial Stability Board, 2012, GLOB SHAD BANK MON R
+   Financial Stability Board, 2011, SHAD BANK STRENGTH O
+   Flannery MJ, 1996, J MONEY CREDIT BANK, V28, P804, DOI 10.2307/2077922
+   Fourel V., 2013, SYSTEMIC RISK THEFRE
+   Francis J, 2005, J ACCOUNT ECON, V39, P295, DOI 10.1016/j.jacceco.2004.06.003
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2001, J BUS, V74, P33, DOI 10.1086/209662
+   Gabrieli S., 2014, 531 BANQ FRANC, V531
+   Gabrieli S., 2012, CEI TOR VERGETA WORK
+   Gabrieli S., 2014, BANQUE FRANCE WORKIN, V531
+   General Office of the State Council, 2013, NOT STRENGTH SHAD BA, P107
+   Ghosh A, 2016, REV DEV FINANC, V6, P58, DOI 10.1016/j.rdf.2016.05.003
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   HASSAN MK, 1993, Q REV ECON FINANC, V33, P51, DOI 10.1016/1062-9769(93)90028-I
+   Hsu S., 2015, WORKING PAPER SERIES, V375
+   Huang YL, 2015, J FINANC SERV RES, V47, P341, DOI 10.1007/s10693-014-0193-7
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Jaffe AB, 1997, REV ECON STAT, V79, P610, DOI 10.1162/003465397557196
+   Jiang C., 2018, RES REPORT
+   Karas A., 2012, BANK NETWORKS UNPUB
+   Karels G. V., 1989, J BUSINESS FINANCE A, V16, P663, DOI DOI 10.1111/J.1468-5957.1989.TB00045.X
+   Kaufmann D, 2010, EUR J DEV RES, V22, P55, DOI 10.1057/ejdr.2009.49
+   La Porta R, 1998, J POLIT ECON, V106, P1113, DOI 10.1086/250042
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Langfield S, 2016, ECON POLICY, V31, P51, DOI 10.1093/epolic/eiv019
+   Li J., 2013, SHADOW BANKING SYSTE
+   Li J., 2013, WORKINGPAPER SERIES
+   Liedorp F., 2010, 248 DNB
+   Maechler A., 2007, 248 INT MON FUND, V248
+   MANSUR I, 1993, APPL ECON, V25, P1503, DOI 10.1080/00036849300000154
+   McCulley P., 2007, GLOBAL CENTRAL BANK
+   Minton BA, 1999, J FINANC ECON, V54, P423, DOI 10.1016/S0304-405X(99)00042-2
+   Mistrulli P. E., 2007, 641 BANK IT, V641
+   Poon WPH, 2009, J MONEY CREDIT BANK, V41, P285, DOI 10.1111/j.1538-4616.2009.00206.x
+   Poon WPH, 2005, J BUS FINAN ACCOUNT, V32, P1741, DOI 10.1111/j.0306-686X.2005.00646.x
+   Pozsar Z., 2010, 458 FED RES BANK, V458
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Rosen R. J., 2015, EC PERSPECTIVES
+   Schwarcz D., 2013, TRANSPARENCY OPAQUE, P394
+   Shen CH, 2013, ACCOUNT FINANC, V53, P265, DOI 10.1111/j.1467-629X.2011.00455.x
+   Shen CH, 2012, J INT FINANC MARK I, V22, P171, DOI 10.1016/j.intfin.2011.08.004
+   van Lelyveld I., 2006, INT J CENT BANK, V2, P2
+   Wang J., 2017, SERIES INT INVESTMEN
+   Wells S., 2004, BANK ENGLAND WORKING
+   Yin C. F., 2013, SHADOW BANKING BANKS
+NR 66
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1062-9769
+EI 1878-4259
+J9 Q REV ECON FINANC
+JI Q. Rev. Econ. Financ.
+PD NOV
+PY 2019
+VL 74
+BP 308
+EP 327
+DI 10.1016/j.qref.2019.01.002
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA JR5WZ
+UT WOS:000499696300027
+DA 2019-12-28
+ER
+
+PT J
+AU Newaz, MK
+   Park, JS
+AF Newaz, Mohammed Khaleq
+   Park, Jin Suk
+TI The impact of trade intensity and Market characteristics on asymmetric
+   volatility, spillovers and asymmetric spillovers: Evidence from the
+   response of international stock markets to US shocks
+SO QUARTERLY REVIEW OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Asymmetric volatility; Asymmetric spillovers; Spillovers; Trade
+   intensity
+ID CONDITIONAL HETEROSKEDASTICITY; FINANCIAL CRISIS; ECONOMIC-GROWTH;
+   SHORT-SALES; RETURNS; CONTAGION; LEVERAGE; RISK; INTERDEPENDENCE;
+   DECOMPOSITION
+AB This study examines the relationship between trade intensity and three stock market phenomena: asymmetric volatility, spillovers and asymmetric spillovers between the US and 74 international stock markets. The evidence is provided based on the cross-market models using the various measures from multivariate volatility models and the spillover indices. As stock trading gets more intensive, the market volatility responds proportionally stronger to a negative domestic shock than a positive one. Trade intensity also increases the spillovers of US shocks to the local markets. However, its impact diminishes at a higher level. Regarding other market characteristics, geographical distance, representing transaction costs or psychological /cultural obstacles, has a significant negative association with spillovers and the asymmetric spillovers. Less negative skewness, as stronger short-selling constraints, is associated with weaker spillovers. More volatile markets are generally linked to stronger asymmetries and spillovers. (C) 2018 Board of Trustees of the University of Illinois. Published by Elsevier Inc. All rights reserved.
+C1 [Newaz, Mohammed Khaleq] Coventry Univ, Sch Econ Finance & Accounting, Coventry CV1 5FB, W Midlands, England.
+   [Park, Jin Suk] Coventry Univ, Ctr Financial & Corp Integr, Coventry CV1 5ED, W Midlands, England.
+RP Park, JS (reprint author), Coventry Univ, Ctr Financial & Corp Integr, Coventry CV1 5ED, W Midlands, England.
+EM mohammad.newaz@coventry.ac.uk; jin.park@coventry.ac.uk
+OI Park, Jin Suk/0000-0001-5317-0378; Newaz, Mohammad/0000-0002-8383-8946
+CR Abdalla S. Z. S., 2012, INT J EC FINANCE, V4, DOI [10.5539/ijef.v4n3p216, DOI 10.5539/IJEF.V4N3P216]
+   Abou-Zaid A., 2011, REV APPL EC, V7
+   Ake B., 2010, INT J BUSINESS MANAG, V5
+   Allen DE, 2017, INT REV ECON FINANC, V47, P159, DOI 10.1016/j.iref.2016.10.007
+   Anderson JE, 2003, AM ECON REV, V93, P170, DOI 10.1257/000282803321455214
+   Arestis P, 2001, J MONEY CREDIT BANK, V33, P16, DOI 10.2307/2673870
+   Asai M, 2013, N AM J ECON FINANC, V25, P202, DOI 10.1016/j.najef.2012.06.005
+   Avramov D, 2006, REV FINANC STUD, V19, P1241, DOI 10.1093/rfs/hhj027
+   Awartani BMA, 2005, INT J FORECASTING, V21, P167, DOI 10.1016/j.ijforecast.2004.08.003
+   Badshah I, 2016, INT REV FINANC ANAL, V48, P182, DOI 10.1016/j.irfa.2016.09.016
+   Bae K. H., 2008, PACIFIC BASIN FINANC, V16, P370
+   Barunik J, 2017, J INT MONEY FINANC, V77, P39, DOI 10.1016/j.jimonfin.2017.06.003
+   Barunik J, 2016, J FINANC MARK, V27, P55, DOI 10.1016/j.finmar.2015.09.003
+   Baumohl E, 2014, ECON MODEL, V38, P175, DOI 10.1016/j.econmod.2013.12.022
+   Beirne J, 2013, REV INT ECON, V21, P1060, DOI 10.1111/roie.12091
+   Bekiros S, 2017, J FINANC STABIL, V30, P156, DOI 10.1016/j.jfs.2017.05.006
+   Berger D, 2011, J FINANC ECON, V101, P227, DOI 10.1016/j.jfineco.2011.02.009
+   Black F, 1976, P 1976 M AM STAT ASS, P177
+   Bley J, 2012, J INT FINANC MARK I, V22, P538, DOI 10.1016/j.intfin.2012.01.004
+   Bollerslev T., 1988, J POLITICAL EC, DOI [10.1108/eb043389, DOI 10.1108/EB043389]
+   Boujelbene M. A., 2011, J APPL EC SCI, VVI, P121
+   Bris A, 2007, J FINANC, V62, P1029, DOI 10.1111/j.1540-6261.2007.01230.x
+   Brooks David R., 2007, EMERG MARK REV, V8, P124, DOI DOI 10.1016/J.EMEMAR.2007.01.002
+   BURBIDGE J, 1985, J MONETARY ECON, V16, P45, DOI 10.1016/0304-3932(85)90005-4
+   CAMPBELL JY, 1992, J FINANC ECON, V31, P281, DOI 10.1016/0304-405X(92)90037-X
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Chkili W, 2012, J INT FINANC MARK I, V22, P738, DOI 10.1016/j.intfin.2012.04.009
+   Christensen BJ, 2015, ECON MODEL, V49, P407, DOI 10.1016/j.econmod.2015.03.006
+   CHRISTIE AA, 1982, J FINANC ECON, V10, P407, DOI 10.1016/0304-405X(82)90018-6
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Cunha C. M. P., 2015, DISPOSITION EFFECT A
+   De Luca G, 2006, ADV ECONOMETRICS, V20, P33, DOI 10.1016/S0731-9053(05)20002-6
+   DEBONDT WFM, 1993, INT J FORECASTING, V9, P355, DOI 10.1016/0169-2070(93)90030-Q
+   Demirguc-kunt A, 1996, WORLD BANK ECON REV, V10, P291, DOI 10.1093/wber/10.2.291
+   Demirguc-Kunt A, 1996, WORLD BANK ECON REV, V10, P341, DOI 10.1093/wber/10.2.341
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Ding Z., 1993, J EMPIR FINANC, V1, P83, DOI DOI 10.1016/0927-5398(93)90006-D
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   ENGLE RF, 1993, J FINANC, V48, P1749, DOI 10.2307/2329066
+   FIGLEWSKI S, 2001, REV FINANC STUD, V24, P46, DOI DOI 10.2139/SSRN.256109
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Forbes KJ, 2004, REV ECON STAT, V86, P705, DOI 10.1162/0034653041811743
+   FRENCH KR, 1987, J FINANC ECON, V19, P3, DOI 10.1016/0304-405X(87)90026-2
+   Gamba-Santamaria S, 2017, FINANC RES LETT, V20, P207, DOI 10.1016/j.fri.2016.10.001
+   Garcia R, 2011, J BANK FINANC, V35, P1954, DOI 10.1016/j.jbankfin.2011.01.003
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Hammoudeh SM, 2009, Q REV ECON FINANC, V49, P829, DOI 10.1016/j.qref.2009.04.004
+   Hardouvelis GA, 2002, REV FINANC STUD, V15, P1525, DOI 10.1093/rfs/15.5.1525
+   Harvey CR, 1999, J FINANC QUANT ANAL, V34, P465, DOI 10.2307/2676230
+   Hibbert AM, 2008, J BANK FINANC, V32, P2254, DOI 10.1016/j.jbankfin.2007.12.046
+   Hong H, 2003, REV FINANC STUD, V16, P487, DOI 10.1093/rfs/hhg006
+   Hou AJ, 2013, J INT FINANC MARK I, V23, P12, DOI 10.1016/j.intfin.2012.08.003
+   Huang W.-C., 2004, REV PAC BASIN FINANC, V07, P379, DOI 10.1142/S0219091504000159
+   Jayasuriya S, 2009, J EMERG MARK FINANC, V8, P25, DOI 10.1177/097265270900800102
+   Jin XY, 2017, INT REV ECON FINANC, V51, P157, DOI 10.1016/j.iref.2017.05.015
+   Johansson AC, 2009, WORLD DEV, V37, P839, DOI 10.1016/j.worlddev.2008.07.015
+   Karali B, 2014, ENERG ECON, V46, P413, DOI 10.1016/j.eneco.2014.06.004
+   Karolyi G.A., 1994, PACIFIC BASIN FINANC, V2, P405, DOI DOI 10.1016/0927-538X(94)90003-5
+   KAROLYI GA, 1995, J BUS ECON STAT, V13, P11
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   Kiviaho J, 2014, EUR FINANC MANAG, V20, P574, DOI 10.1111/j.1468-036X.2012.00646.x
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koulakiotis A, 2009, Q REV ECON FINANC, V49, P858, DOI 10.1016/j.qref.2009.01.003
+   Koutmos G, 1995, J INT MONEY FINANC, V14, P747, DOI 10.1016/0261-5606(95)00031-3
+   Kroner KF, 1998, REV FINANC STUD, V11, P817, DOI 10.1093/rfs/11.4.817
+   Levine R., 2005, HDB EC GROWTH, P865, DOI [10.1016/S1574, DOI 10.1016/S1574-0684(05)01012-9]
+   Li YA, 2015, INT J FINANC ECON, V20, P155, DOI 10.1002/ijfe.1506
+   LIN WL, 1994, REV FINANC STUD, V7, P507, DOI 10.1093/rfs/7.3.507
+   Locke PR, 2015, J BEHAV EXP FINANC, V8, P54, DOI 10.1016/j.jbef.2015.09.001
+   Long L, 2014, ECON MODEL, V37, P89, DOI 10.1016/j.econmod.2013.11.002
+   Moon GH, 2010, GLOBAL ECON REV, V39, P129, DOI 10.1080/1226508X.2010.483834
+   MSCI, 2017, MSCI GLOB INV MARK I
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Ngare E, 2014, J ECON BUS, V74, P24, DOI 10.1016/j.jeconbus.2014.03.002
+   Ormos M, 2016, ECON SYST, V40, P345, DOI 10.1016/j.ecosys.2015.09.008
+   Peng Y, 2012, ANN FINANC, V8, P49, DOI 10.1007/s10436-011-0181-y
+   Philippas D, 2013, J INT FINANC MARK I, V27, P161, DOI 10.1016/j.intfin.2013.09.008
+   PINDYCK RS, 1984, AM ECON REV, V74, P335
+   Pragidis IC, 2015, J FINANC STABIL, V18, P127, DOI 10.1016/j.jfs.2015.04.001
+   Prehn S, 2016, APPL ECON LETT, V23, P761, DOI 10.1080/13504851.2015.1105916
+   Rajan RG, 1998, AM ECON REV, V88, P559
+   Rigobon R., 2016, ECB WORKING PAPER SE, V1975
+   Samarakoon LP, 2011, J INT FINANC MARK I, V21, P724, DOI 10.1016/j.intfin.2011.05.001
+   Segal G, 2015, J FINANC ECON, V117, P369, DOI 10.1016/j.jfineco.2015.05.004
+   Seru A, 2010, REV FINANC STUD, V23, P705, DOI 10.1093/rfs/hhp060
+   SHEFRIN H, 1985, J FINANC, V40, P777, DOI 10.1111/j.1540-6261.1985.tb05002.x
+   Shefrin H., 2017, BEHAV CORPORATE FINA
+   Smith GP, 2015, FINAN REV, V50, P331, DOI 10.1111/fire.12069
+   Smith GP, 2016, FINANC RES LETT, V17, P193, DOI 10.1016/j.frl.2016.03.001
+   Talpsepp T, 2010, J EMPIR FINANC, V17, P938, DOI 10.1016/j.jempfin.2010.08.005
+   Tsai IC, 2014, INT REV FINANC ANAL, V33, P281, DOI 10.1016/j.irfa.2014.03.007
+   Wahab M, 2012, INT REV ECON FINANC, V21, P156, DOI 10.1016/j.iref.2011.05.007
+   Wang CD, 2014, J AM STAT ASSOC, V109, P197, DOI 10.1080/01621459.2013.864189
+   Wang PJ, 2015, EUR J OPER RES, V241, P749, DOI 10.1016/j.ejor.2014.09.029
+   Wang XX, 2015, INT J FORECASTING, V31, P609, DOI 10.1016/j.ijforecast.2014.10.007
+   Wu GJ, 2001, REV FINANC STUD, V14, P837, DOI 10.1093/rfs/14.3.837
+   Zhang B, 2008, APPL ECON LETT, V15, P959, DOI 10.1080/13504850600970042
+NR 99
+TC 1
+Z9 1
+U1 1
+U2 1
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1062-9769
+EI 1878-4259
+J9 Q REV ECON FINANC
+JI Q. Rev. Econ. Financ.
+PD FEB
+PY 2019
+VL 71
+BP 79
+EP 94
+DI 10.1016/j.qref.2018.07.007
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA HK7AE
+UT WOS:000458137200008
+DA 2019-12-27
+ER
+
+PT J
+AU Parrado-Martinez, P
+   Gomez-Fernandez-Aguado, P
+   Partal-Urena, A
+AF Parrado-Martinez, Purificacion
+   Gomez-Fernandez-Aguado, Pilar
+   Partal-Urena, Antonio
+TI Factors influencing the European bank's probability of default: An
+   application of SYMBOL methodology
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Probability of default; Basel regulatory framework; CAMEL indicators;
+   SYMBOL; Financial stability
+ID FINANCIAL STABILITY; RISK-TAKING; CDS SPREADS; PANEL-DATA; DETERMINANTS;
+   LIQUIDITY; US; DISTRESS; FAILURES; LOANS
+AB This paper analyses European banks' probability of default (PD) by estimating a new measure that is based on the SYstemic Model of Bank Originated Losses (SYMBOL). First, we calculate the individual PD of a sample of European credit institutions during the period of 2011-2016. Then, dynamic panel data models are estimated to analyse the influence of several bank-specific and macroeconomic variables on the PD. We conclude that capital adequacy, liquidity, asset quality and profitability indicators influence the European banks' PD. The macroeconomic scenario, the industry concentration and the size of banks also appear to have an impact on their risk. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Parrado-Martinez, Purificacion; Gomez-Fernandez-Aguado, Pilar; Partal-Urena, Antonio] Univ Jaen, Dept Financial Econ & Accounting, Paraje Lagunillas S-N, ES-23071 Jaen, Spain.
+RP Parrado-Martinez, P (reprint author), Univ Jaen, Dept Financial Econ & Accounting, Paraje Lagunillas S-N, ES-23071 Jaen, Spain.
+EM pparrado@ujaen.es
+RI Parrado Martinez, Purificacion/G-1541-2017
+OI Parrado Martinez, Purificacion/0000-0001-9309-2706
+FU University of Cantabria Foundation for Education and Research in the
+   Financial Sector (UCEIF); Santander Financial Institute (SANFI)
+FX This work was supported by the University of Cantabria Foundation for
+   Education and Research in the Financial Sector (UCEIF) and the Santander
+   Financial Institute (SANFI) [2016 Research Grant]. The usual disclaimer
+   applies.
+CR Abascal M., 2015, SPAN REV FINANC EC, V13, P20
+   Acosta J., 2017, EUROPEAN CENTRAL BAN
+   Aghajan H, 2018, J AMB INTEL SMART EN, V10, P1, DOI 10.3233/AIS-180473
+   Agoraki MEK, 2011, J FINANC STABIL, V7, P38, DOI 10.1016/j.jfs.2009.08.002
+   Ahmad N., 2007, INT J BANKING FINANC, V5, P135
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Altuntas M, 2017, J RISK FINANC, V18, P284, DOI 10.1108/JRF-10-2016-0128
+   Angbazo L, 1997, J BANK FINANC, V21, P55, DOI 10.1016/S0378-4266(96)00025-8
+   Annaert J, 2013, J INT MONEY FINANC, V32, P444, DOI 10.1016/j.jimonfin.2012.05.029
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Basel Committee on Banking Supervision (BCBS), 2006, BAS 2 INT CONV CAP M
+   Baselga-Pascual L, 2015, N AM J ECON FINANC, V34, P138, DOI 10.1016/j.najef.2015.08.004
+   Benczur P, 2017, J FINANC STABIL, V33, P207, DOI 10.1016/j.jfs.2016.03.001
+   Berger AN, 1997, J BANK FINANC, V21, P849, DOI 10.1016/S0378-4266(97)00003-4
+   Berger AN, 2000, J MONEY CREDIT BANK, V32, P641, DOI 10.2307/2601200
+   Betz F, 2014, J BANK FINANC, V45, P225, DOI 10.1016/j.jbankfin.2013.11.041
+   Blasko M, 2006, Q REV ECON FINANC, V46, P53, DOI 10.1016/j.qref.2004.11.002
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   Boyd JH, 2005, J FINANC, V60, P1329, DOI 10.1111/j.1540-6261.2005.00763.x
+   BOYD JH, 1986, J ECON THEORY, V38, P211, DOI 10.1016/0022-0531(86)90115-8
+   CALOMIRIS CW, 2009, CATO J, V29, P65
+   Campolongo F., 2010, JRC SCI TECHNICAL RE
+   Cannas G., 2013, 88531 JRC
+   Cariboni J., 2015, OECD J FINANC MARK T, V2, P29
+   Castro P, 2015, SPAN J FINANC ACCOUN, V44, P458, DOI 10.1080/02102412.2015.1088202
+   Casu B., 2018, J FINANC SERV RES, DOI [10.1007/s10693-018-0304-y, DOI 10.1007/S10693-018-0304-Y]
+   Chiaramonte L, 2013, EUR J FINANC, V19, P861, DOI 10.1080/1351847X.2011.636832
+   Cihak M, 2010, J FINANC STABIL, V6, P130, DOI 10.1016/j.jfs.2010.03.001
+   Cole RA, 2012, J FINANC SERV RES, V42, P5, DOI 10.1007/s10693-011-0116-9
+   Constantin A, 2018, J FINANC STABIL, V35, P226, DOI 10.1016/j.jfs.2016.10.011
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   De Lisa R, 2011, J FINANC SERV RES, V40, P123, DOI 10.1007/s10693-010-0097-0
+   De Nicolo G., 2003, FINANC DEV, V40, P42
+   Delis MD, 2011, REV FINANC, V15, P511, DOI 10.1093/rof/rfq035
+   Delis MD, 2011, J BANK FINANC, V35, P840, DOI 10.1016/j.jbankfin.2010.09.032
+   Demirguc-Kunt A, 2010, J FINANC ECON, V98, P626, DOI 10.1016/j.jfineco.2010.06.004
+   DeYoung R, 2018, J FINANC INTERMED, V34, P32, DOI 10.1016/j.jfi.2018.01.006
+   Distinguin I, 2013, J BANK FINANC, V37, P3295, DOI 10.1016/j.jbankfin.2013.04.027
+   Drago D, 2017, FINANC RES LETT, V22, P140, DOI 10.1016/j.frl.2016.12.035
+   European Banking Authority (EBA), 2015, EBAGL201510
+   European Commission, 2016, EFF AN EA EUR DEP IN
+   European Commission, 2012, FISC SUST REP
+   European Commission, 2014, EC REV FIN REG AG
+   European Commission, 2018, GUID REV MOD US SUPP
+   Fernandes C, 2016, J INT ECON LAW, V19, P707, DOI 10.1093/jiel/jgw060
+   Festic M, 2011, J BANK FINANC, V35, P310, DOI 10.1016/j.jbankfin.2010.08.007
+   Galliani C, 2015, COMPUT ECON, V45, P597, DOI 10.1007/s10614-014-9436-9
+   Ghosh A, 2015, J FINANC STABIL, V20, P93, DOI 10.1016/j.jfs.2015.08.004
+   Giordana GA, 2017, J RISK FINANC MANAG, V10, DOI 10.3390/jrfm10020008
+   Gonzalez F, 2005, J BANK FINANC, V29, P1153, DOI 10.1016/j.jbankfin.2004.05.029
+   Haq M, 2012, J INT FINANC MARK I, V22, P696, DOI 10.1016/j.intfin.2012.04.003
+   Hau H., 2012, EUROPEAN CENTRAL BAN
+   Hordijk L., 2018, EUR29233 EN, DOI 10.2760/607271
+   Hsiao C., 2003, ANAL PANEL DATA
+   Jabra W. B., 2017, COGENT EC FINANCE, V5, P1
+   Jin JY, 2011, J BANK FINANC, V35, P2811, DOI 10.1016/j.jbankfin.2011.03.005
+   Jokipii T, 2011, J FINANC STABIL, V7, P165, DOI 10.1016/j.jfs.2010.02.002
+   Kerstein J, 2013, J ACCOUNT AUDIT FINA, V28, P128, DOI 10.1177/2150129713478846
+   Khan MS, 2017, J BANK FINANC, V82, P203, DOI 10.1016/j.jbankfin.2016.09.005
+   Klomp J, 2012, J BANK FINANC, V36, P3197, DOI 10.1016/j.jbankfin.2011.10.006
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Lepetit L, 2015, FINANC RES LETT, V13, P214, DOI 10.1016/j.frl.2015.01.001
+   Leung WS, 2015, J INT FINANC MARK I, V34, P277, DOI 10.1016/j.intfin.2014.11.012
+   LIPSITZ SR, 1991, BIOMETRIKA, V78, P153
+   Mannasoo K, 2009, J BANK FINANC, V33, P244, DOI 10.1016/j.jbankfin.2008.07.016
+   Marchesi M., 2012, 24603 JRC EUR COMM
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Muresano R, 2016, COMPUT ECON, V48, P253, DOI 10.1007/s10614-015-9509-4
+   Nurazi R, 2005, J ECON SOC POLICY, V10
+   Olweny T, 2011, EC FINANCE REV, V1, P1
+   Pagano A., 2012, 77925 JRC
+   Poghosyan T, 2011, J FINANC SERV RES, V40, P163, DOI 10.1007/s10693-011-0103-1
+   Roodman D, 2009, STATA J, V9, P86, DOI 10.1177/1536867X0900900106
+   Salas V., 2002, J FINANCIAL SERVICES, V22, P203, DOI DOI 10.1023/A:1019781109676
+   Samaniego-Medina R, 2016, J ECON BUS, V86, P1, DOI 10.1016/j.jeconbus.2016.03.001
+   SAUNDERS A, 1990, J FINANC, V45, P643, DOI 10.2307/2328676
+   Shehzad CT, 2010, J BANK FINANC, V34, P399, DOI 10.1016/j.jbankfin.2009.08.007
+   Uhde A, 2009, J BANK FINANC, V33, P1299, DOI 10.1016/j.jbankfin.2009.01.006
+   Vazquez F, 2015, J BANK FINANC, V61, P1, DOI 10.1016/j.jbankfin.2015.08.023
+   Tran VT, 2016, INT REV FINANC ANAL, V48, P98, DOI 10.1016/j.irfa.2016.09.010
+   Wang L., 2017, BANK RATING GAPS PRO
+   Windmeijer F, 2005, J ECONOMETRICS, V126, P25, DOI 10.1016/j.jeconom.2004.02.005
+NR 84
+TC 0
+Z9 0
+U1 8
+U2 8
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD JUL
+PY 2019
+VL 61
+BP 223
+EP 240
+DI 10.1016/j.intfin.2019.04.003
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA ID7DR
+UT WOS:000471842400013
+DA 2019-12-28
+ER
+
+PT J
+AU Chamizo, A
+   Fonollosa, A
+   Novales, A
+AF Chamizo, Alvaro
+   Fonollosa, Alexandre
+   Novales, Alfonso
+TI Forward-looking asset correlations in the estimation of economic capital
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Forward-looking asset correlation; Economic capital; Financial crisis;
+   Asset allocation; Systemic risk
+ID DEFAULT
+AB We analyze whether the credit market anticipated the financial crisis before the regulators using a methodology that combines the Merton model for the determination of economic capital with Vasicek's factor model for asset correlation. Contrary to standard practice, we estimate the credit value at risk (VaR) and expected shortfall (ES) of a global loan portfolio using CDS spreads because credit derivatives incorporate forward-looking information on future systemic shocks that might be essential in the estimation of economic capital. We find that one-factor model can generally be a good representation of correlations in the credit market because of the high inter-sector correlations, although an appropriately chosen second factor can provide additional information for risk estimation in stressed times. We show that there were, indeed, signs of stress in the credit market that were not incorporated in the determination of economic capital during the crisis and that some financial institutions did not consider properly. The overall impression is that it is not so much that risk models were over-simplified to anticipate the financial crisis but rather, that they were backward-looking. A potential implication of our research is that the level of regulatory capital should react to events in the credit market. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Chamizo, Alvaro; Fonollosa, Alexandre] BBVA, Madrid, Spain.
+   [Novales, Alfonso] Univ Complutense, Fac Ciencias Econom & Empresariales, ICAE, Campus Somosaguas, Madrid 28223, Spain.
+   [Novales, Alfonso] Univ Complutense, Fac Ciencias Econom & Empresariales, Dept Anal Econ, Campus Somosaguas, Madrid 28223, Spain.
+RP Novales, A (reprint author), Univ Complutense, Fac Ciencias Econom & Empresariales, ICAE, Campus Somosaguas, Madrid 28223, Spain.; Novales, A (reprint author), Univ Complutense, Fac Ciencias Econom & Empresariales, Dept Anal Econ, Campus Somosaguas, Madrid 28223, Spain.
+EM alvaro.chamizo@bbva.com; alexandre.fonollosa@bbva.com; anovales@ucm.es
+RI Novales, Alfonso/H-7157-2015
+OI Novales, Alfonso/0000-0002-2137-1789
+FU Programa de Ayudas a la Investigacion from Banco de Espana
+   [ECO2015-67305-P, PrometeoII/2013/015]
+FX Financial support by grants ECO2015-67305-P, PrometeoII/2013/015,
+   Programa de Ayudas a la Investigacion from Banco de Espana is gratefully
+   acknowledged.
+CR Bada O., 2014, R J STAT SOFTW, V59
+   Bai JS, 2002, ECONOMETRICA, V70, P191, DOI 10.1111/1468-0262.00273
+   Basel Committee on Banking Supervision (BCBS), 2006, BAS 2 INT CONV CAP M
+   BLACK F, 1976, J FINANC, V31, P351, DOI 10.2307/2326607
+   Bohn Jeffrey R., 2003, MODELING DEFAULT RIS
+   Chamizo A., 2016, J FINANC TRANSFORMAT, P117
+   Chamizo A., 2016, LOOKING SYSTEMIC RIS
+   Crosbie P., 1999, GLOBAL CORRELATION F
+   Danielsson J, 2013, J ECONOMETRICS, V172, P283, DOI 10.1016/j.jeconom.2012.08.011
+   Das SR, 2007, J FINANC SERV RES, V32, P17
+   Derman E, 2011, Q J FINANC, V1, P109, DOI 10.1142/S2010139211000031
+   Du D, 2019, J FINANCE
+   Duffie D, 1999, REV FINANC STUD, V12, P687, DOI 10.1093/rfs/12.4.687
+   Dullmann K., 2007, BANKING FINANCIAL 2, V13
+   Elkamhi R, 2012, J FINANC ECON, V105, P62, DOI 10.1016/j.jfineco.2012.02.005
+   Ericsson J, 2009, J FINANC QUANT ANAL, V44, P109, DOI 10.1017/S0022109009090061
+   Erlenmaier U, 2014, REV FINANC, V18, P1775, DOI 10.1093/rof/rft030
+   FED, 2011, SUP GUID MOD RISK MA, P11
+   Gianfrancesco I., 2011, BANKS BANK SYST, V6
+   Goldberg J., 2018, LIQUIDITY SUPPLY DEM
+   Gordy MB, 2013, INT J CENT BANK, V9, P33
+   Greenspan A., 2008, FINANC TIMES
+   Huang JZ, 2012, REV ASSET PRICING ST, V2, P153, DOI 10.1093/rapstu/ras011
+   Hull J, 2001, FINANC ANAL J, V57, P34, DOI 10.2469/faj.v57.n6.2491
+   Hull J, 2010, J CREDIT RISK, V6, P99
+   Jacobs Jr M., 2011, J FINANCIAL TRANSFOR, V31, P31
+   Karagozoglu A. K., 2016, J RISK FINANCE, V17, P194
+   Kendall M., 1977, DISTRIBUTION THEORY, V1
+   Kinateder H, 2017, Q REV ECON FINANC, V66, P1, DOI 10.1016/j.qref.2017.04.013
+   Kinateder H, 2016, J RISK, V18, P25
+   Lando D., 1998, REV DERIV RES, V2, P99, DOI DOI 10.1007/BF01531332
+   LELAND H.E, 2004, J INVESTMENT MANAGEM, V95, P5
+   Lopez JA, 2004, J FINANC INTERMED, V13, P265, DOI 10.1016/S1042-9573(03)00045-7
+   Markit, 2008, MARK COM US GUID VER
+   Markit, 2012, MARK COM US GUID CDS
+   McGinty L., 2004, CREDIT CORRELATION G
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Novales A., 2018, QUANT FINANC, P1
+   Ou S., 2013, ANN DEFAULT STUDY CO, P1
+   Oura H., 2012, MACROFINANCIAL STRES
+   Schonbucher P. J., 2000, BONN EC DISCUSSION P
+   Strebulaev IA, 2007, J FINANC, V62, P1747, DOI 10.1111/j.1540-6261.2007.01256.x
+   Tarashev N., 2008, DISCUSSION PAPER SER
+   Vasicek O, 2002, RISK, V15, P160
+   Zhou CS, 2001, REV FINANC STUD, V14, P555, DOI 10.1093/rfs/14.2.555
+NR 45
+TC 0
+Z9 0
+U1 3
+U2 3
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD JUL
+PY 2019
+VL 61
+BP 264
+EP 288
+DI 10.1016/j.intfin.2019.04.001
+PG 25
+WC Business, Finance; Economics
+SC Business & Economics
+GA ID7DR
+UT WOS:000471842400015
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Moagar-Poladian, S
+   Clichici, D
+   Stanciu, CV
+AF Moagar-Poladian, Simona
+   Clichici, Dorina
+   Stanciu, Cristian-Valeriu
+TI The Comovement of Exchange Rates and Stock Markets in Central and
+   Eastern Europe
+SO SUSTAINABILITY
+LA English
+DT Article
+DE foreign exchange markets; stock markets; global financial crisis;
+   European sovereign debt crisis; Central and Eastern Europe
+ID DYNAMIC CONDITIONAL CORRELATION; EU MEMBER STATES; FOREIGN-EXCHANGE;
+   CO-MOVEMENTS; FINANCIAL CRISES; CONTAGION; VOLATILITY; LINKAGES;
+   INTERDEPENDENCE; INTEGRATION
+AB This paper analyses the link between exchange rates and stock markets in four Central and Eastern European countries. We simultaneously explore the comovements of foreign exchange markets and stock markets at the cross-country level and the link between these two markets within each country while employing a Dynamic Conditional Correlation Mixed Data Sampling (DCC-MIDAS) model. Such an approach to financial markets conveys a much more visible picture of the existing patterns of financial integration between these markets that would otherwise be neglected. The estimates reveal significant differences between the patterns of correlation in our sample countries. First, the paper finds a quite low degree of convergence between foreign exchange markets, with rising correlations during some of the crisis episodes. Second, both the 2004 European Union enlargement and the European sovereign debt crisis underpin the stock market comovements in the Central and Eastern European countries. Third, the correlations between the exchange rate returns and stock markets rise mostly during the European sovereign debt crisis and to a lesser extent during the global financial crisis, revealing signs of contagion and lower portfolio diversification opportunities. These results are of utmost relevance for the process of financial integration and they also have important implications for policy makers, risk management, and investors.
+C1 [Moagar-Poladian, Simona; Clichici, Dorina] Romanian Acad, Inst World Econ, Bucharest 050711, Romania.
+   [Stanciu, Cristian-Valeriu] Univ Craiova, Finance Dept, Craiova 200585, Romania.
+RP Clichici, D (reprint author), Romanian Acad, Inst World Econ, Bucharest 050711, Romania.
+EM dorina.clichici@iem.ro
+CR Abed R.E., 2016, J APPL FINANC BANK, V6, P53
+   Albulescu CT, 2018, Q REV ECON FINANC, V69, P56, DOI 10.1016/j.qref.2018.03.007
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Andreou E, 2013, J INT FINANC MARK I, V27, P248, DOI 10.1016/j.intfin.2013.09.003
+   Andries AM, 2016, EMERG MARK FINANC TR, V52, P574, DOI 10.1080/1540496X.2014.998563
+   Antonakakis N, 2012, J INT FINANC MARK I, V22, P1091, DOI 10.1016/j.intfin.2012.05.009
+   Apostolakis G, 2015, J FINANC STABIL, V19, P1, DOI 10.1016/j.jfs.2015.05.003
+   Asgharian H, 2016, J FINANC ECONOMET, V14, P617, DOI 10.1093/jjfinec/nbv025
+   Atoyan R., 2014, 25 YEARS TRANSITION
+   Babetskaia-Kukharchuk O, 2008, APPL ECON LETT, V15, P385, DOI 10.1080/13504850600705984
+   Baig T., 1999, IMF STAFF PAPERS
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   Bekaert G., 2003, 9510 NBER
+   Bienkowski W, 2014, EASTERN EUR ECON, V52, P32, DOI 10.1080/00128775.2014.1004907
+   BNR, EXCHANGE RATE REGIME
+   Boero G, 2011, INT J FINANC ECON, V16, P357, DOI 10.1002/ijfe.434
+   BRANSON WH, 1985, HDB INT EC, V2, P749, DOI DOI 10.1016/S1573-4404(85)02006-8
+   Bubak V, 2011, J BANK FINANC, V35, P2829, DOI 10.1016/j.jbankfin.2011.03.012
+   Buttner D, 2010, ECON MODEL, V27, P915, DOI 10.1016/j.econmod.2010.05.014
+   Calvet LE, 2006, J ECONOMETRICS, V131, P179, DOI 10.1016/j.jeconom.2005.01.008
+   Caporale GM, 2014, INT REV FINANC ANAL, V33, P87, DOI 10.1016/j.irfa.2013.12.005
+   Cappiello L., 2006, WORKING PAPER
+   Celik S, 2012, ECON MODEL, V29, P1946, DOI 10.1016/j.econmod.2012.06.011
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Chkili W, 2014, RES INT BUS FINANC, V31, P46, DOI 10.1016/j.ribaf.2013.11.007
+   Christiansen C, 2009, J BANK FINANC, V33, P1048, DOI 10.1016/j.jbankfin.2008.10.014
+   Christoffersen P, 2012, REV FINANC STUD, V25, P3711, DOI 10.1093/rfs/hhs104
+   CNB, MON POL INSTR
+   Colacito R, 2011, J ECONOMETRICS, V164, P45, DOI 10.1016/j.jeconom.2011.02.013
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Dimitriou D, 2017, ECON MODEL, V66, P112, DOI 10.1016/j.econmod.2017.06.003
+   DORNBUSCH R, 1980, AM ECON REV, V70, P960
+   Dorodnykh E., 2012, INT J FINANC RES, V3, P2, DOI [10.5430/ijfr.v3n2p2, DOI 10.5430/IJFR.V3N2P2]
+   Dua P, 2016, ECON MODEL, V59, P249, DOI 10.1016/j.econmod.2016.07.013
+   Dungey M., 2004, AUST ECON PAP, V43, P379, DOI DOI 10.1111/j.1467-8454.2004.00238.x
+   Egert B, 2011, EMPIR ECON, V40, P393, DOI 10.1007/s00181-010-0341-3
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle RF, 2008, REV FINANC STUD, V21, P1187, DOI 10.1093/rfs/hhn004
+   Engle RF, 2013, REV ECON STAT, V95, P776, DOI 10.1162/REST_a_00300
+   European Commission, 2018, 078 EUR COMM
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Frankel J. A, 1983, EC INTERDEPENDENCE F, P84
+   Fratzscher M, 2003, INT J FINANC ECON, V8, P109, DOI 10.1002/ijfe.203
+   Gjika D, 2013, ECON MODEL, V33, P55, DOI 10.1016/j.econmod.2013.03.015
+   Harkmann K, 2014, EASTERN EUR ECON, V52, P55, DOI 10.2753/EEE0012-8775520303
+   Huang B.-N., 2003, J ASIAN EC, V14, P337, DOI [10.1016/S1049-0078(03)00021-6, DOI 10.1016/S1049-0078(03)00021-6]
+   Islami M., 2013, INT EC EC POLICY, V10, P47
+   Jiang J, 2007, PHYSICA A, V375, P274, DOI 10.1016/j.physa.2006.08.073
+   JUNIOR L, 2015, J RISK FINANC MANAG, V8, P227, DOI DOI 10.3390/jrfm8020227
+   Kadlcakova N, 2017, PRAGUE ECON PAP, V26, P690, DOI 10.18267/j.pep.634
+   Kim SJ, 2005, J BANK FINANC, V29, P2475, DOI 10.1016/j.jbankfin.2004.09.002
+   Kitamura Y, 2010, RES INT BUS FINANC, V24, P158, DOI 10.1016/j.ribaf.2009.11.002
+   Kotkatvuori-Ornberg J, 2013, INT REV FINANC ANAL, V28, P70, DOI 10.1016/j.irfa.2013.01.009
+   Kuhl M., 2008, GOVERNANCE EC DEV RE, V76
+   Lee CY, 2011, ASIAN STUD-AZIJSKE S, P1, DOI 10.1080/09603107.2010.537631
+   Lee YH, 2014, FINANC UVER, V64, P296
+   Lestano, 2016, EMERG MARK FINANC TR, V52, P382, DOI 10.1080/1540496X.2014.998560
+   Lin CH, 2012, INT REV ECON FINANC, V22, P161, DOI 10.1016/j.iref.2011.09.006
+   Lizal L., 2013, BIS PAPERS, P127
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Lupu R, 2009, ECON COMPUT ECON CYB, V43, P173
+   MNB, EXCH RAT
+   Mobarek A, 2016, J FINANC STABIL, V24, P1, DOI 10.1016/j.jfs.2016.03.003
+   Moore T, 2014, INT REV ECON FINANC, V29, P1, DOI 10.1016/j.iref.2013.02.004
+   MSCI, MSCI GLOB MARK ACC R
+   NBP, MONETARY POLICY
+   Nioi M., 2019, EC MODEL
+   Orlov A.G., 2009, J INT FINANC MARK I, V19, P742, DOI DOI 10.1016/J.INTFIN.2008.12.004
+   Peng Y, 2012, ANN FINANC, V8, P49, DOI 10.1007/s10436-011-0181-y
+   Pramor M., 2006, IMF WORKING PAPERS
+   Samitas A, 2013, J INT FINANC MARK I, V25, P18, DOI 10.1016/j.intfin.2013.01.005
+   Savva CS, 2010, EMPIR ECON, V39, P337, DOI 10.1007/s00181-009-0306-6
+   Stavarek D, 2009, AMFITEATRU ECON, V11, P159
+   TAI CS, 2007, EMERG MARK REV, V8, P264, DOI DOI 10.1016/J.EMEMAR.2006.09.011
+   Tamakoshi G, 2014, INT REV ECON FINANC, V31, P105, DOI 10.1016/j.iref.2014.01.016
+   Ulku N, 2012, J INT FINANC MARK I, V22, P55, DOI 10.1016/j.intfin.2011.07.005
+   van Horen N, 2006, REV WORLD ECON, V142, P374, DOI 10.1007/s10290-006-0072-x
+   Virk N, 2017, J INT MONEY FINANC, V71, P53, DOI 10.1016/j.jimonfin.2016.10.007
+   Vodenska I, 2016, RISKS, V4, DOI 10.3390/risks4020013
+   Wu MC, 2007, PHYSICA A, V375, P633, DOI 10.1016/j.physa.2006.09.018
+NR 80
+TC 1
+Z9 1
+U1 1
+U2 1
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+EI 2071-1050
+J9 SUSTAINABILITY-BASEL
+JI Sustainability
+PD JUL 2
+PY 2019
+VL 11
+IS 14
+AR 3985
+DI 10.3390/su11143985
+PG 22
+WC Green & Sustainable Science & Technology; Environmental Sciences;
+   Environmental Studies
+SC Science & Technology - Other Topics; Environmental Sciences & Ecology
+GA IS6KX
+UT WOS:000482261800229
+OA DOAJ Gold
+DA 2019-12-27
+ER

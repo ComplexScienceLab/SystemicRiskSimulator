@@ -1,0 +1,419 @@
+
+PT J
+AU Huang, HH
+   Lee, HH
+AF Huang, Hsing-Hua
+   Lee, Han-Hsing
+TI Product market competition and credit risk
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Product market competition; Credit risk; Structural model; Hazard model
+ID OPTIMAL CAPITAL STRUCTURE; PREDICTION MODELS; FINANCIAL RATIOS;
+   CORPORATE-DEBT; REAL OPTIONS; BANKRUPTCY; DEFAULT; CONTAGION; RETURNS
+AB This study theoretically and empirically investigates effects of product market competition on credit risk. We first develop a real-options-based structural model in a homogeneous oligopoly and show that credit spreads are positively related to the number of firms in an industry. The disparity of firm size in an industry is relevant to both product market competition and credit risk, and we therefore extend the model to an asymmetric duopoly case. In particular, we demonstrate that credit spreads of relatively small (large) firms within an industry are positively (negatively) related to Herfindahl-Hirschman index, and the relative firm size in an industry is an important determinant of credit risk. The models' implications are empirically scrutinized by a reduced-form hazard model and generally supported. By performing out-of-sample analyses, the results demonstrate that firm size together with the interaction terms between intra-industry firm size dummies and competition intensity can effectively predict default. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Huang, Hsing-Hua; Lee, Han-Hsing] Natl Chiao Tung Univ, Grad Inst Finance, Dept Informat Management & Finance, Hsinchu 300, Taiwan.
+RP Lee, HH (reprint author), Natl Chiao Tung Univ, Grad Inst Finance, Dept Informat Management & Finance, 1001 Univ Rd, Hsinchu 300, Taiwan.
+EM hhhuang@mail.nctu.edu.tw; hhlee@mail.nctu.edu.tw
+CR Agarwal V, 2008, J BANK FINANC, V32, P1541, DOI 10.1016/j.jbankfin.2007.07.014
+   Aguerrevere FL, 2009, J FINANC, V64, P957, DOI 10.1111/j.1540-6261.2009.01454.x
+   Akdogu E, 2012, J BANK FINANC, V36, P439, DOI 10.1016/j.jbankfin.2011.08.001
+   Ali A, 2009, REV FINANC STUD, V22, P3839, DOI 10.1093/rfs/hhn103
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   Bharath ST, 2008, REV FINANC STUD, V21, P1339, DOI 10.1093/rfs/hhn044
+   Bohn Jeffrey R., 2003, MODELING DEFAULT RIS
+   Brockman P, 2003, J FINANC ECON, V67, P511, DOI 10.1016/S0304-405X(02)00260-X
+   Chava S., 2004, Review of Finance, V8, P537, DOI 10.1093/rof/8.4.537
+   CLARKE RN, 1989, J BUS, V62, P17, DOI 10.1086/296449
+   Cox D.R., 1984, ANAL SURVIVAL DATA
+   Das SR, 2009, J BANK FINANC, V33, P719, DOI 10.1016/j.jbankfin.2008.11.003
+   Dichev ID, 1998, J FINANC, V53, P1131, DOI 10.1111/0022-1082.00046
+   Duan J.C., 2010, CLUSTERED DEFAULTS
+   Duffie D, 2007, J FINANC ECON, V83, P635, DOI 10.1016/j.jfineco.2005.10.011
+   Ericsson J, 2009, J FINANC QUANT ANAL, V44, P109, DOI 10.1017/S0022109009090061
+   Fresard L, 2010, J FINANC, V65, P1097, DOI 10.1111/j.1540-6261.2010.01562.x
+   Giroud X., 2008, CORPORATE GOVERNANCE
+   Grenadier SR, 2002, REV FINANC STUD, V15, P691, DOI 10.1093/rfs/15.3.691
+   Grullon G, 2007, CORPORATE PAYOUT POL
+   Hillegeist SA, 2004, REV ACC STUD, V9, P5, DOI 10.1023/B:RAST.0000013627.90884.b7
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   Kahle KM, 1996, J FINANC QUANT ANAL, V31, P309, DOI 10.2307/2331394
+   LANG LHP, 1992, J FINANC ECON, V32, P45, DOI 10.1016/0304-405X(92)90024-R
+   LELAND HE, 1994, J FINANC, V49, P1213, DOI 10.2307/2329184
+   Liang W., 2006, MODELING EFFECT MACR
+   Lyandres E., 2011, PRODUCT MARKET COMPE
+   MacKay P, 2005, REV FINANC STUD, V18, P1433, DOI 10.1093/rfs/hhi032
+   Mauer DC, 2005, J BANK FINANC, V29, P1405, DOI 10.1016/j.jbankfin.2004.05.036
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Nikolov B., 2009, CASH HOLDINGS COMPET
+   OHLSON JA, 1980, J ACCOUNTING RES, V18, P109, DOI 10.2307/2490395
+   Shumway T, 2001, J BUS, V74, P101, DOI 10.1086/209665
+   Tang DY, 2010, J BANK FINANC, V34, P743, DOI 10.1016/j.jbankfin.2009.05.018
+   Valta P., 2010, COMPETITION COST DEB
+   Vassalou M, 2004, J FINANC, V59, P831, DOI 10.1111/j.1540-6261.2004.00650.x
+   ZMIJEWSKI ME, 1984, J ACCOUNTING RES, V22, P59, DOI 10.2307/2490859
+NR 37
+TC 13
+Z9 13
+U1 1
+U2 39
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD FEB
+PY 2013
+VL 37
+IS 2
+BP 324
+EP 340
+DI 10.1016/j.jbankfin.2012.09.001
+PG 17
+WC Business, Finance; Economics
+SC Business & Economics
+GA 063EN
+UT WOS:000312979100007
+DA 2019-12-27
+ER
+
+PT J
+AU Colletaz, G
+   Hurlin, C
+   Perignon, C
+AF Colletaz, Gilbert
+   Hurlin, Christophe
+   Perignon, Christophe
+TI The Risk Map: A new tool for validating risk models
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Financial risk management; Tail risk; Basel III
+ID FORECASTS; MANAGEMENT; REGRESSION; SIMULATION; MARKET
+AB This paper presents a new method to validate risk models: the Risk Map. This method jointly accounts for the number and the magnitude of extreme losses and graphically summarizes all information about the performance of a risk model. It relies on the concept of a super exception, which is defined as a situation in which the loss exceeds both the standard Value-at-Risk (VaR) and a VaR defined at an extremely low probability. We then formally test whether the sequences of exceptions and super exceptions are rejected by standard model validation tests. We show that the Risk Map can be used to validate market, credit, operational, or systemic risk estimates (VaR, stressed VaR, expected shortfall, and CoVaR) or to assess the performance of the margin system of a clearing house. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Colletaz, Gilbert; Hurlin, Christophe] Univ Orleans, Lab Econ Orleans, F-45067 Orleans, France.
+   [Perignon, Christophe] HEC Paris, Dept Finance, F-78351 Jouy En Josas, France.
+RP Perignon, C (reprint author), HEC Paris, Dept Finance, 1 Rue Liberat, F-78351 Jouy En Josas, France.
+EM gilbert.colletaz@univ-orleans.fr; christophe.hurlin@univ-orleans.fr;
+   perignon@hec.fr
+RI Hurlin, Christophe/J-1474-2019
+OI Hurlin, Christophe/0000-0002-6082-8251
+CR Acharya V., 2010, WORKING PAPER
+   Adrian T., 2011, WORKING PAPER
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Bali TG, 2009, J FINANC QUANT ANAL, V44, P883, DOI 10.1017/S0022109009990159
+   Basak S, 2001, REV FINANC STUD, V14, P371, DOI 10.1093/rfs/14.2.371
+   Basel Committee on Banking Supervision, 2011, REV BAS 2 MARK RISK
+   Basel Committee on Banking Supervision, 2011, MESS AC LIT RISK MEA
+   Basel Committee on Banking Supervision, 2006, INT CONV CAP MEAS CA
+   Bauwens L, 2010, ECONOMET J, V13, P218, DOI 10.1111/j.1368-423X.2009.00307.x
+   Berkowitz J, 2001, J BUS ECON STAT, V19, P465, DOI 10.1198/07350010152596718
+   Berkowitz J, 2002, J FINANC, V57, P1093, DOI 10.1111/1540-6261.00455
+   Berkowitz J, 2011, MANAGE SCI, V57, P2213, DOI 10.1287/mnsc.1080.0964
+   Blochlinger A, 2012, J FINANC QUANT ANAL, V47, P1089, DOI 10.1017/S0022109012000324
+   Booth GG, 1997, MANAGE SCI, V43, P1177, DOI 10.1287/mnsc.43.8.1177
+   Broadie M, 2011, MANAGE SCI, V57, P1172, DOI 10.1287/mnsc.1110.1330
+   Brownlees Christian, 2011, WORKING PAPER
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Christoffersen P., 2004, J FINANCIAL ECONOMET, V2, P84, DOI DOI 10.1093/JJFINEC/NBH004
+   Christoffersen P., 2009, ENCY QUANTITATIVE FI
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Cotter J., 2001, J BANK FINANC, V25, P475
+   Cruz Lopez J., 2013, WORKING PAPER
+   Dahen H, 2010, J BANK FINANC, V34, P1484, DOI 10.1016/j.jbankfin.2009.08.017
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   European Central Bank, 2009, REC SEC CLEAR SETTL
+   Fresard L, 2011, J BANK FINANC, V35, P2569, DOI 10.1016/j.jbankfin.2011.02.013
+   Gaglianone WP, 2011, J BUS ECON STAT, V29, P150, DOI 10.1198/jbes.2010.07318
+   Hurlin C., 2012, REV FUTURES MARKETS, V20, P179
+   Jorion P., 2007, VALUE RISK NEW BENCH
+   Kupiec P, 1995, J DERIV, V3, P73, DOI [10.3905/jod.1995.407942, DOI 10.3905/JOD.1995.407942]
+   Lopez J.A., 1999, FEDERAL RESERVE BANK, V2, P3, DOI DOI 10.1086/250095
+   Lopez J. A., 1999, J RISK, V1, P37, DOI DOI 10.21314/J0R.1999.005)
+   Lopez JA, 2000, J BANK FINANC, V24, P151, DOI 10.1016/S0378-4266(99)00055-2
+   Perignon C, 2008, J DERIV, V16, P54, DOI 10.3905/JOD.2008.16.2.054
+   Pritsker M, 2006, J BANK FINANC, V30, P561, DOI 10.1016/j.jbankfin.2005.04.013
+   Stulz RM, 2008, J APPL CORP FINANC, V20, P39, DOI 10.1111/j.1745-6622.2008.00202.x
+   Taylor JW, 2005, MANAGE SCI, V51, P712, DOI 10.1287/mnsc.1040.0355
+   Zhu DM, 2010, J ECONOMETRICS, V157, P297, DOI 10.1016/j.jeconom.2010.01.013
+NR 40
+TC 24
+Z9 24
+U1 0
+U2 50
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD OCT
+PY 2013
+VL 37
+IS 10
+BP 3843
+EP 3854
+DI 10.1016/j.jbankfin.2013.06.006
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA 210DL
+UT WOS:000323809400009
+DA 2019-12-28
+ER
+
+PT J
+AU Bastos, R
+   Pindado, J
+AF Bastos, Rafael
+   Pindado, Julio
+TI Trade credit during a financial crisis: A panel data analysis
+SO JOURNAL OF BUSINESS RESEARCH
+LA English
+DT Article
+DE Trade credit; Credit contagion; Economic shocks; Credit constraints;
+   Insolvency risk
+ID MONETARY-POLICY; CONTAGION; DISTRESS; MODEL
+AB This paper investigates the use of trade credit by firms from countries that have recently undergone a financial crisis. The paper examines a sample of 147 firms from Argentina, Brazil, and Turkey and finds empirical evidence that supports the substitution hypothesis between bank credit and trade credit. The paper also supports the matching hypothesis in which firms that delay collection from their customers then demand long-term trade credit from their suppliers. Specifically, the paper finds that firms that present high levels of days-of-sales outstanding and a high probability of insolvency use more trade credit and that these relations are enhanced during a financial crisis. Results suggest that credit constraints during a financial crisis cause firms holding high levels of accounts receivable to postpone payments to suppliers. Specifically, high-risk firms postpone suppliers' payments to avoid insolvency. These results can be interpreted as evidence of a credit contagion in the supply chain. (C) 2012 Elsevier Inc. All rights reserved.
+C1 [Bastos, Rafael] Fac Ateneu, Fortaleza, CE, Brazil.
+   [Pindado, Julio] Univ Salamanca, E-37007 Salamanca, Spain.
+RP Pindado, J (reprint author), Univ Salamanca, Dept Adm & Econ Empresa, Campus Miguel de Unamuno, E-37007 Salamanca, Spain.
+EM rafaelb@fate.edu.br; pindado@usal.es
+RI Pindado, Julio/N-8035-2013
+OI Pindado, Julio/0000-0002-9638-9262
+CR ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   Bastos R, 2007, APPL ECON, V39, P2631, DOI 10.1080/00036840600722232
+   Baum C. F., 2003, WORKING PAPERS EC
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   BRICK IE, 1984, J FINANC, V39, P1169, DOI 10.2307/2327620
+   Chote R., 1998, FINANC TIMES, P25
+   DANIELSON MG, 2004, FINANCIAL REV, V39, P579, DOI DOI 10.1111/J.0732-8516.2004.00089.X
+   DELANNAY AF, 2004, ECON PLANN, V37, P173
+   Deloof M., 1999, J BUSINESS FINANCE A, V26, P945, DOI DOI 10.1111/1468-5957.00281
+   Deloof M, 2011, APPL ECON, V43, P1647, DOI 10.1080/00036840903166269
+   Demirguc-Kunt A., 2696 WORLD BANK
+   EMERY GW, 1984, J FINANC QUANT ANAL, V19, P271, DOI 10.2307/2331090
+   Fabbri D., 4754 WORLD BANK
+   Fisman R, 2003, J FINANC, V58, P353, DOI 10.1111/1540-6261.00527
+   Friedman Milton, 1963, MONETARY HIST US 186
+   Fukuda S., 2006, CIRJE DISCUSSION PAP
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P741, DOI 10.1016/j.jedc.2005.01.004
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   Kazmin A., 2008, FINANC TIMES, P3
+   Leahy Joe, 2011, FINANCIAL TIMES
+   Love I, 2007, J FINANC ECON, V83, P453, DOI 10.1016/j.jfineco.2005.11.002
+   Marotta G, 1997, APPL ECON, V29, P1619, DOI 10.1080/00036849700000038
+   Marotta G, 2005, APPL ECON, V37, P403, DOI 10.1080/0003684042000329063
+   MELTZER AH, 1960, REV ECON STAT, V42, P429, DOI 10.2307/1925692
+   Nilsen JH, 2002, J MONEY CREDIT BANK, V34, P226, DOI 10.1353/mcb.2002.0032
+   Paul S., 2007, J ACCOUNTING BUSINES, V14, P96
+   Petersen MA, 1997, REV FINANC STUD, V10, P661, DOI 10.1093/rfs/10.3.661
+   Peterson M, 2010, J BUS RES, V63, P548, DOI 10.1016/j.jbusres.2009.06.002
+   Pindado J., 2009, REV EC FINANCIERA, V17, P46
+   Pindado J, 2008, J BUS RES, V61, P995, DOI 10.1016/j.jbusres.2007.10.006
+   SCHWARTZ RA, 1974, J FINANC QUANT ANAL, V9, P643, DOI 10.2307/2329765
+   Tsuruta D, RIETI DISCUSSION PAP
+   Uesugi I, 2008, INT J BUS, V13, P141
+   Wilner BS, 2000, J FINANC, V55, P153, DOI 10.1111/0022-1082.00203
+   Zurawicki L, 2005, J BUS RES, V58, P1100, DOI 10.1016/j.jbusres.2004.03.005
+NR 36
+TC 27
+Z9 29
+U1 3
+U2 65
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 0148-2963
+EI 1873-7978
+J9 J BUS RES
+JI J. Bus. Res.
+PD MAY
+PY 2013
+VL 66
+IS 5
+BP 614
+EP 620
+DI 10.1016/j.jbusres.2012.03.015
+PG 7
+WC Business
+SC Business & Economics
+GA 124GC
+UT WOS:000317450800005
+DA 2019-12-27
+ER
+
+PT J
+AU Abreu, JF
+   Gulamhussen, MA
+AF Abreu, Jose Filipe
+   Gulamhussen, Mohamed Azzim
+TI The stock market reaction to the public announcement of a supranational
+   list of too-big-to-fail banks during the financial crisis
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Too-big-to-fail; Banks; Regulation
+ID SYSTEMIC RISK; EVENT; LESSONS
+AB In the aftermath of the global financial meltdown, regulators initiated a process to strengthen the regulation of too-big-to-fail (TBTF) banks with two goals: first, to increase the ability of these banks to absorb future financial shocks and second, to weaken the market expectation of public support for these banks in the event of a future financial crisis, thereby reducing the moral hazard problem associated with TBTF banks. We use an event study approach to analyze the market reaction to the official designation of a list of banks as TBTF by the Financial Stability Board (FSB) (on November 4, 2011). We do not find abnormal returns surrounding the FSB public announcement, which indicates that identifying the TBTF banks did not reduce the moral hazard problem. (C) 2013 Elsevier B.V. All rights reserved.
+C1 Inst Univ Lisboa, ISCTE Business Sch, P-1649026 Lisbon, Portugal.
+RP Abreu, JF (reprint author), Av Almirante Reis 71-5, P-1150012 Lisbon, Portugal.
+EM jfabreu@bportugal.pt; mohamed.azzim@iscte.pt
+RI Gulamhussen, Mohamed Azzim/I-7976-2014; Gulamhussen, M. A./M-9542-2018
+OI Gulamhussen, Mohamed Azzim/0000-0001-5359-7574; Gulamhussen, M.
+   A./0000-0001-5359-7574
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Ahern KR, 2009, J EMPIR FINANC, V16, P466, DOI 10.1016/j.jempfin.2009.01.003
+   Anabtawi I, 2011, NOTRE DAME LAW REV, V86, P1349
+   AVERY RB, 1988, J MONEY CREDIT BANK, V20, P597, DOI 10.2307/1992286
+   Barth JR, 2012, JUST BIG IS TOO BIG
+   BCBS, 2011, GLOB SYST IMP BANKS
+   BCBS, 2010, BAS 3 GLOB REG FRAM
+   BCBS, 2004, INT CONV CAP MEAS CA
+   Bigus J., 2005, J INT FINANC MARK I, V15, P369
+   Brewer E, 2010, J FINANC REGUL COMPL, V18, P56, DOI 10.1108/13581981011019633
+   BROWN SJ, 1985, J FINANC ECON, V14, P3, DOI 10.1016/0304-405X(85)90042-X
+   CLARE AD, 1995, J MONEY CREDIT BANK, V27, P920, DOI 10.2307/2077760
+   CORRADO CJ, 1992, J FINANC QUANT ANAL, V27, P465, DOI 10.2307/2331331
+   Cowan A., 1992, REV QUANTITATIVE FIN, V2, P343, DOI DOI 10.1007/BF00939016
+   De Larosiere Group, 2009, HIGH LEV GROUP FIN S
+   Decamps JP, 2004, J FINANC INTERMED, V13, P132, DOI 10.1016/j.jfi.2003.06.003
+   ECB, 2010, FINANC STAB REV, P129
+   Fama E. F., 1969, INT ECON REV, V10, P1, DOI [10.2307/2525569, DOI 10.2307/2525569]
+   Ferguson RW, 1999, J FINANC SERV RES, V16, P297, DOI 10.1023/A:1008156828977
+   Financial Stability Board (FSB), 2009, IMPR FIN REG REP FIN
+   Fisher RW, 2010, INT FINANC, V13, P311, DOI 10.1111/j.1468-2362.2010.01263.x
+   Flannery M., 2010, BIS WORKSH SYST RISK
+   Flannery MJ, 1996, J FINANC, V51, P1347, DOI 10.2307/2329397
+   Flannery MJ, 1999, J FINANC SERV RES, V16, P101, DOI 10.1023/A:1008180106687
+   Freixas X., 2008, MICROECONOMICS BANKI
+   FSB, 2010, RED MOR HAZ POS SYST
+   GOODHART CAE, 1998, FINANCIAL REGULATION
+   Greenspan A., 1997, RISK, V10, P18
+   Issing O, 2009, INT FINANC, V12, P431, DOI 10.1111/j.1468-2362.2009.01250.x
+   JENSEN MC, 1976, J FINANC ECON, V3, P305, DOI 10.1016/0304-405X(76)90026-X
+   Kane EJ, 2000, J MONEY CREDIT BANK, V32, P671, DOI 10.2307/2601202
+   Kaufman G., 2002, Q REV EC FINANCE, V42, P423
+   MacKinlay AC, 1997, J ECON LIT, V35, P13
+   Morgan D. P, 2005, 220 FED RES BANK NEW
+   OHARA M, 1990, J FINANC, V45, P1587, DOI 10.2307/2328751
+   Penas MF, 2004, J FINANC ECON, V74, P149, DOI 10.1016/j.jfineco.2003.05.004
+   Pop A, 2009, Q REV ECON FINANC, V49, P1429, DOI 10.1016/j.qref.2009.08.001
+   Rosengren ES, 1999, J FINANC SERV RES, V16, P117, DOI 10.1023/A:1008132223525
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   Standard and Poor's, 2011, US GOV SAYS SUPP BAN
+   Stern G. H., 2004, TOO BIG FAIL HAZARDS
+   Wall L., 1993, FEDERAL RESERVE BANK, V95
+NR 42
+TC 12
+Z9 12
+U1 1
+U2 16
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD JUL
+PY 2013
+VL 25
+BP 49
+EP 72
+DI 10.1016/j.intfin.2013.01.003
+PG 24
+WC Business, Finance; Economics
+SC Business & Economics
+GA 168BD
+UT WOS:000320679800004
+DA 2019-12-28
+ER
+
+PT J
+AU Trapp, M
+   Wewel, C
+AF Trapp, Monika
+   Wewel, Claudio
+TI Transatlantic systemic risk
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Systemic risk; Banking sector; Real sectors; Regulation; Copula
+ID DEFAULT; RECOVERY; BANKS
+AB In this paper we study systemic risk for the US and Europe. We show that banks' exposures to common risk factors are crucial for systemic risk. We come to this conclusion by first showing that relations between US and European banks are smaller than within each region. We then show that European banks react more strongly to the onset of the financial crisis than US banks. Regarding the consequences of systemic risk, we show that dependence between the banking sector and a wide range of real sectors is limited. Our results imply that regulators and supervisors should address international bank dependencies arising from common risk factors, while recessions in real sectors due to bank defaults should be a secondary concern. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Trapp, Monika; Wewel, Claudio] Univ Cologne, D-50923 Cologne, Germany.
+RP Wewel, C (reprint author), Univ Cologne, Dept Bank Management, Albertus Magnus Pl, D-50923 Cologne, Germany.
+EM trapp@wiso.uni-koeln.de; wewel@wiso.uni-koeln.de
+CR Acharya V. V., 2010, AFA 2011 DENV M, DOI 10.2139/ssrn.1573171
+   Adrian T., 2011, COVAR
+   Altunbas Y, 2002, J BANK FINANC, V26, P2093, DOI 10.1016/S0378-4266(02)00201-7
+   Arora N, 2012, J FINANC ECON, V103, P280, DOI 10.1016/j.jfineco.2011.10.001
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Billio M., 2010, 477410 MIT SLOAN SCH
+   Blackmore V, 2009, CAP MARK LAW J, V4, pS112, DOI 10.1093/cmlj/kmp022
+   Bosma J., 2012, 162012 DTSCH BUND
+   Buehler W., 2010, WORKING PAPER
+   Buehler W., 2010, TIME VARYING CREDIT
+   Chan-Lau Jorge A., 2004, 0433 IMF
+   De Nicolo G, 2002, J BANK FINANC, V26, P861, DOI 10.1016/S0378-4266(02)00211-X
+   Demirguc-Kunt A., 1999, 2143 WORLD BANK
+   Dermine J., 2002, 2 ECB CENTR BANK C
+   Elsinger H., 2006, INT EC EC POLICY, V3, P73
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Garratt R.J., 2011, 413 BANK ENGL
+   Gauthier C., 2010, 20104 BANK CAN
+   Gropp R, 2004, J INT MONEY FINANC, V23, P405, DOI 10.1016/j.jimonfin.2004.01.005
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Harmon D, 2010, NETWORKS EC MARKET I
+   Hartmann P., 2006, BANKING SYSTEM STABI
+   Helwege J, 2010, J INT FINANC MARK I, V20, P1, DOI 10.1016/j.intfin.2009.11.002
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Jia CX, 2009, J BANK FINANC, V33, P77, DOI 10.1016/j.jbankfin.2007.03.017
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kaufman George G., 2000, FINANCIAL MARKETS I, V9, P69, DOI DOI 10.1111/1468-0416.00036
+   Kwok CCY, 2006, J INT BUS STUD, V37, P227, DOI 10.1057/palgrave.jibs.8400188
+   Lando D, 2010, J FINANC INTERMED, V19, P355, DOI 10.1016/j.jfi.2010.03.002
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   Mayordomo S., EUROPEAN FI IN PRESS
+   Muns S., 2011, 2011027 TILEC
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Reinhart C. M., 2009, 14656 NBER
+   Reinhart CM, 2009, BANKING CRISES EQUAL
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Schneider P, 2010, J FINANC QUANT ANAL, V45, P1517, DOI 10.1017/S0022109010000554
+   Unal H, 2003, J BANK FINANC, V27, P1001, DOI 10.1016/S0378-4266(02)00255-8
+   Wells S., 2004, 230 BANK ENGL
+   Went P., 2010, BASEL 3 ACCORD WHERE
+NR 42
+TC 9
+Z9 10
+U1 2
+U2 21
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD NOV
+PY 2013
+VL 37
+IS 11
+BP 4241
+EP 4255
+DI 10.1016/j.jbankfin.2013.07.024
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA 242BJ
+UT WOS:000326212100018
+DA 2019-12-28
+ER

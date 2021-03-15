@@ -1,0 +1,416 @@
+
+PT J
+AU Cezario, WR
+   Antunes, AMDS
+   Leite, LF
+   de Menezes, RPB
+AF Cezario, Wendel Rodrigues
+   de Souza Antunes, Adelaide Maria
+   Leite, Luiz Fernando
+   Borges de Menezes, Rodrigo Pio
+TI The energy revolution in the USA and the pre-salt reserves in Brazil:
+   Risks and opportunities for the Brazilian petrochemical industry
+SO FUTURES
+LA English
+DT Article
+DE Shale gas; Refinery-petrochemical integration; pre-salt reserves in
+   Brazil
+AB The petrochemical industry is known for its interrelations with the oil industry. In recent years the world has witnessed the rapid growth of the Chinese economy and an associated surge in demand for petroleum and oil products, alongside the emergence of alternative sources of oil and natural gas to those produced by OPEC (Organization of Petroleum Exporting Countries) and Russia, such as Brazil's pre-salt reserves and shale gas in the United States. The US is undergoing a veritable energy revolution with its use of unconventional oil and natural gas production techniques in low-permeability reservoirs, chiefly shale gas. Brazil's prospects as an international player are on the rise thanks to the exploration of oil and natural gas from its pre-salt reserves, which could lead to exports of petroleum of over 2 million barrels/day. All these movements have a direct influence on the petrochemical industry. This article aims to foster discussions about the risks and opportunities facing the Brazilian petrochemical industry with the exploration of oil and natural gas in Brazil and unconventional sources in the United States. Systemic thinking and scenario-based planning were used as the basis for the analysis. (C) 2015 Elsevier Ltd. All rights reserved.
+C1 [Cezario, Wendel Rodrigues; Leite, Luiz Fernando] Univ Fed Rio de Janeiro, Escola Quim, BR-21941 Rio De Janeiro, Brazil.
+   [de Souza Antunes, Adelaide Maria] Univ Fed Rio de Janeiro, Escola Quim, Inst Nacl Propriedade Ind, BR-21941 Rio De Janeiro, Brazil.
+   [Borges de Menezes, Rodrigo Pio] Petroleo Brasileiro SA Petrobras, Rio De Janeiro, Brazil.
+RP Cezario, WR (reprint author), Univ Fed Rio de Janeiro, Escola Quim, BR-21941 Rio De Janeiro, Brazil.
+EM wendelcezario@eq.ufrj.br
+RI Antunes, Adelaide M S/C-6328-2017
+CR Amer M, 2013, FUTURES, V46, P23, DOI 10.1016/j.futures.2012.10.003
+   Andrade A. L., 2006, PENSAMENTO SISTEMICO
+   ANP, 2014, DAD MENS AG NAC PETR
+   ANP, 2013, RES NAC PETR GAS NAT
+   Asche F., 2006, ENERG POLICY, V47, P117
+   Azevedo P. F., 2005, SELECTA, V6, P127
+   Bartlett G., 2001, INT C THINK BREAKTHR
+   BERKOWITZ N, 1975, FUEL, V54, P138, DOI 10.1016/0016-2361(75)90001-0
+   BP, 2013, BP EN OUTL 2030
+   Branco DAC, 2010, ENERG POLICY, V38, P3098, DOI 10.1016/j.enpol.2010.01.050
+   Brasil, 2014, TAR EXT COM
+   Braskem, 2010, REL AN SUST 2010
+   Carvalho O., 2011, BRASIL IND PETROQUIM, P445
+   Chermack T. J., 2003, FUTURES
+   Dooho C., 2013, EFFECT SHALE GAS REV
+   Economides MJ, 2009, J NAT GAS SCI ENG, V1, P1, DOI 10.1016/j.jngse.2009.03.005
+   EPE, 2013, PLAN DEC EN 2021
+   EPE Balanco Energetic Nacional, 2012, EMPR PESQ EN
+   Fan J. P. H., 2010, J CORP FINANC, V6, P345
+   Foster J., 2013, CAN SHALE GALE SAVE
+   Leite L. F., 2013, OLEFINAS LEVES TECNO
+   Magalhaes M. V. O., 2009, 10 INT S PROC SYST E
+   Mazim A. P. R., 2014, THESIS
+   Medlock KB, 2012, ENERGY STRATEG REV, V1, P33, DOI 10.1016/j.esr.2011.12.002
+   Moreira C., 2011, POTENCIAL INVESTIMEN
+   PERRONE Otto V, 2010, IND PETROQUIMICA BRA
+   Petrobras, 2013, PLAN NEG GEST 2013 2
+   Plotkin JS, 2005, CATAL TODAY, V106, P10, DOI 10.1016/j.cattod.2005.07.174
+   PricewaterhouseCoopers LLP, 2013, SHAL EN POT GAM CHAN
+   Vaccaro GLR, 2010, RENEW SUST ENERG REV, V14, P1263, DOI 10.1016/j.rser.2009.12.008
+   Schuwartz D., 1991, ART LONG VIEW PLANNI
+   Seddon D, 2010, CATALYTIC SCI SERIES, V8
+   Wagialla K. M., 2007, 7 SAUDI ENG
+   Wittcoff H. A., 2010, IND ORGANIC CHEM
+   Wongtschowski P., 2002, IND QUIMICAS RISCOS
+NR 35
+TC 7
+Z9 7
+U1 0
+U2 21
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0016-3287
+EI 1873-6378
+J9 FUTURES
+JI Futures
+PD OCT
+PY 2015
+VL 73
+BP 1
+EP 11
+DI 10.1016/j.futures.2015.07.013
+PG 11
+WC Economics; Regional & Urban Planning
+SC Business & Economics; Public Administration
+GA CY2JN
+UT WOS:000366234900001
+DA 2019-12-28
+ER
+
+PT J
+AU Zareei, A
+AF Zareei, Abalfazl
+TI Network centrality, failure prediction and systemic risk
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE network theory; centrality; failure prediction modeling; systemic risk;
+   financial; network
+ID BANKRUPTCY; CONTAGION; BOND
+AB A financial market can be expressed as a network structure in which the stocks reside as nodes and the links account for returns correlation. The centrality measure in the financial network structure captures firms' embeddedness and connectivity in the capital market structure. This paper investigates firms' centrality in the financial network as an explanatory variable in corporate-failure prediction as well as a measure of firms' systemic importance. First, when analyzing credit default swap (CDS) spreads, we find that peripheral firms in the network have higher average CDS spreads and a higher propensity for CDS jump events. Second, centrality is found to increase the explanatory power of default prediction models, and, moreover, it is negatively related to failure and bankruptcy probability. This implies that peripheral firms in the network are more likely to fail. Finally, by examining the out-of-sample performance of centrality as a measure of systemic importance, we find that centrality correctly distinguishes the firms that suffered higher losses during the 2007-8 crisis period.
+C1 [Zareei, Abalfazl] Univ Carlos III Madrid, Dept Business Adm, Calle Madrid 126, E-28903 Madrid, Spain.
+RP Zareei, A (reprint author), Univ Carlos III Madrid, Dept Business Adm, Calle Madrid 126, E-28903 Madrid, Spain.
+EM azareei@emp.uc3m.es
+CR Acharya V, 2011, WORKING PAPER
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Beaver WH, 2005, REV ACCOUNT STUD, V10, P93, DOI 10.1007/s11142-004-6341-9
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Blanco R, 2005, J FINANC, V60, P2255, DOI 10.1111/j.1540-6261.2005.00798.x
+   BONACICH P, 1987, AM J SOCIOL, V92, P1170, DOI 10.1086/228631
+   Bonacich P, 2007, SOC NETWORKS, V29, P555, DOI 10.1016/j.socnet.2007.04.002
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brunnermeier M., 2013, BANQUE DE FRANCE FIN, V2013, P123
+   Brunnermeier M.K., 2011, 17454 NAT BUR EC RES
+   Buhler W., 2010, SYSTEMIC RISK IS BAN
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   Chan-Lau J.A., 2008, CREDIT DERIVATIVES H
+   Chan-Lau J. A., 2010, WORKING PAPER
+   Chava S., 2004, Review of Finance, V8, P537, DOI 10.1093/rof/8.4.537
+   Chen L, 2007, J FINANC, V62, P119, DOI 10.1111/j.1540-6261.2007.01203.x
+   Chiu WC, 2013, INVEST ANAL J, P65
+   Cohen RB, 2003, J FINANC, V58, P609, DOI 10.1111/1540-6261.00539
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Dichev ID, 1998, J FINANC, V53, P1131, DOI 10.1111/0022-1082.00046
+   Duan JC, 2012, J ECONOMETRICS, V170, P191, DOI 10.1016/j.jeconom.2012.05.002
+   FREEMAN LC, 1979, SOC NETWORKS, V1, P215, DOI 10.1016/0378-8733(78)90021-7
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Getmansky M, 2004, J FINANC ECON, V74, P529, DOI 10.1016/j.jfineco.2004.04.001
+   Gup Benton E., 2004, TOO BIG FAIL POLICIE
+   Hartmann P., 2000, WORKING PAPER
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   Kendall MG, 1938, BIOMETRIKA, V30, P81, DOI 10.1093/biomet/30.1-2.81
+   Ledoit O, 2004, J MULTIVARIATE ANAL, V88, P365, DOI 10.1016/S0047-259X(03)00096-4
+   Lo AW, 2002, FINANC ANAL J, V58, P36, DOI 10.2469/faj.v58.n4.2453
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Newman MEJ, 2004, PHYS REV E, V70, DOI 10.1103/PhysRevE.70.056131
+   Newman MEJ, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.066133
+   Norden L, 2009, EUR FINANC MANAG, V15, P529, DOI 10.1111/j.1468-036X.2007.00427.x
+   Onnela JP, 2003, PHYS SCRIPTA, VT106, P48, DOI 10.1238/Physica.Topical.106a00048
+   Patro DK, 2013, J FINANC STABIL, V9, P105, DOI 10.1016/j.jfs.2012.03.002
+   Peduzzi P, 1996, J CLIN EPIDEMIOL, V49, P1373, DOI 10.1016/S0895-4356(96)00236-3
+   Peltonen TA, 2014, J FINANC STABIL, V13, P118, DOI 10.1016/j.jfs.2014.05.004
+   Peralta G., 2014, SSRN ELECT J, V1, DOI [10.2139/ssrn.2430309, DOI 10.2139/SSRN.2430309]
+   Pozzi F., 2013, SCI REPORTS, V3, DOI [10.1038/srep01666, DOI 10.1038/SREP01666]
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Shumway T, 2001, J BUS, V74, P101, DOI 10.1086/209665
+   Tse CK, 2010, J EMPIR FINANC, V17, P659, DOI 10.1016/j.jempfin.2010.04.008
+NR 47
+TC 1
+Z9 1
+U1 0
+U2 2
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD DEC
+PY 2015
+VL 1
+IS 4
+BP 73
+EP 97
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA V3S6P
+UT WOS:000218550600003
+DA 2019-12-27
+ER
+
+PT J
+AU Buriak, A
+   Lyeonov, S
+   Vasylieva, T
+AF Buriak, Anna
+   Lyeonov, Serhiy
+   Vasylieva, Tetiana
+TI SYSTEMICALLY IMPORTANT DOMESTIC BANKS: AN INDICATOR-BASED MEASUREMENT
+   APPROACH FOR THE UKRAINIAN BANKING SYSTEM
+SO PRAGUE ECONOMIC PAPERS
+LA English
+DT Article
+DE systemic risk; risk-based bank supervision; systemic importance
+   indicator; size; interconnectedness
+AB This study offers a scientific and methodical approach to identifying systemically important domestic banks based on the indicator-based measurement approach recommended by the Basel Committee on Banking Supervision. By improving both a set of criteria and indicators of a bank's systemic importance it is offered to distinguish its five levels - low, moderate, medium, significant and high. The approach was tested on 26 Ukrainian banks representing different groups (depending on the size of assets) according to the classification of the National Bank of Ukraine. We have discovered the absence of banks with high systemic importance in the period 2007-2011 the majo-rity of banks are characterized by their moderate or low level. In our opinion, the best solution for systemic risk regulation would be the introduction of a differentiated regime of supervision over banks depending on their level of systemic importance and risk profile.
+C1 [Buriak, Anna; Lyeonov, Serhiy; Vasylieva, Tetiana] Natl Bank Ukraine, Ukrainian Acad Banking, Sumy, Ukraine.
+RP Buriak, A (reprint author), Natl Bank Ukraine, Ukrainian Acad Banking, Sumy, Ukraine.
+EM a.buryak@mail.ru; svl76@mail.ru; tavasilyeva@ukr.net
+RI Lyeonov, Serhiy V./A-9659-2017; Vasylieva, Tetiana/K-5592-2018
+OI Lyeonov, Serhiy V./0000-0001-5639-3008; Vasylieva,
+   Tetiana/0000-0003-0635-7978
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   BCBS, 2011, GLOB SYST IMP BANKS
+   BCBS, 2012, FRAM DEAL DOM SYST I
+   BIKKER J., 2001, MEASURES COMPETITION
+   Bramer P., 2011, 312 OTT VON GUER U M
+   Chaddock R. E, 1925, PRINCIPLES METHODS S
+   Chen Z, 2009, 232 RES DEP NETH CEN
+   COCHRAN W.G., 1977, SAMPLING TECHNIQUES
+   Drehmann M., BIS Q REV        MAR
+   ECB, 2009, WORKSH FRANKF
+   IMF, 2012, WOR ECON FINANC, P1
+   NBU, 2012, MAIN IND UKR BANKS
+   Skorepa M., 2013, ADDITIONAL CAPITAL R, P96
+   Tarullo D., 2011, COMMUNICATION
+   Weistroffer C., 2011, IDENTIFYING SYSTEMIC
+NR 15
+TC 3
+Z9 3
+U1 0
+U2 5
+PU UNIV ECONOMICS-PRAGUE
+PI PRAGUE 3
+PA OECONOMICA PUBL, NAM W CHIRCHILLA 4, PRAGUE 3, CZ-130 67, CZECH REPUBLIC
+SN 1210-0455
+EI 2336-730X
+J9 PRAGUE ECON PAP
+JI Prague Econ. Pap.
+PD DEC
+PY 2015
+VL 24
+IS 6
+BP 715
+EP 728
+DI 10.18267/j.pep.531
+PG 14
+WC Economics
+SC Business & Economics
+GA DA8JA
+UT WOS:000368049700006
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Singh, MK
+   Gomez-Puig, M
+   Sosvilla-Rivero, S
+AF Singh, Manish K.
+   Gomez-Puig, Marta
+   Sosvilla-Rivero, Simon
+TI Bank risk behavior and connectedness in EMU countries
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Contingent claim analysis; Distance-to-default; Banking risk
+ID DISTANCE-TO-DEFAULT; PREDICTION MODELS; FINANCIAL RATIOS;
+   CORPORATE-DEBT; SYSTEMIC RISK; BANKRUPTCY; EQUITY
+AB Given the structural differences in banking sector and financial regulation at country level in European Economic and Monetary Union (EMU), this paper tries to estimate the banking sector risk behavior at country level. Based on contingent claim literature, it computes "Distance-to-default (DtD)" at bank level and analyzes the aggregate series at country level for a representative set of banks over the period 2004-Q4 to 2013-Q2. The indices provide an intuitive, forward-looking and timely risk measure having strong correlations with national/regional market sentiment indicators. An underlying trend exists, but causality tests suggest no systemic component. Cross-sectional differences in DtD suggests fragility in EMU countries 12-18 months prior to the crisis and better predictive ability than the regulatory index based on large and complex banking institutions at European level. Furthermore, we explore the reasons for this divergence using VAR estimates. (C) 2015 Elsevier Ltd. All rights reserved.
+C1 [Singh, Manish K.; Gomez-Puig, Marta] Univ Barcelona, Dept Econ Theory, Barcelona 08034, Spain.
+   [Sosvilla-Rivero, Simon] Univ Complutense, Complutense Inst Int Econ, Madrid 28223, Spain.
+RP Sosvilla-Rivero, S (reprint author), Univ Complutense, Complutense Inst Int Econ, Campus Somosaguas, Madrid 28223, Spain.
+EM sosvilla@ccee.ucm.es
+RI Gomez-Puig, Marta/E-4408-2016; Sosvilla-Rivero, Simon/H-4163-2015
+OI Gomez-Puig, Marta/0000-0001-8349-2829; Sosvilla-Rivero,
+   Simon/0000-0003-2084-0640
+FU Government of Spain [ECO2011-23189, ECO2013-48326]; Fundacion Banco
+   Sabadell
+FX The authors thank the editor and one anonymous referee for useful
+   comments and suggestions on a previous draft of this article,
+   substantially improving the content and quality of the article. We are
+   very grateful to Analistas Financieros Internacionales for kindly
+   providing the credit rating dataset and Fernando Fernandez-Rodriguez for
+   his research assistance. We thank Scott R. Baker, Raquel Lopez, Eliseo
+   Navarro, Vito Polito, Michael R. Wickens and the European Cenral Bank
+   for allowing us access to their datasets. We also thank the 6th
+   International IFABS Conference participants and especially Stefan
+   Eichler and Karol Sobanski for helpful comments. This paper is based
+   upon work supported by the Government of Spain under grant numbers
+   ECO2011-23189 and ECO2013-48326 and Fundacion Banco Sabadell
+   (Convocatoria 2014).
+CR Agarwal V, 2008, J BANK FINANC, V32, P1541, DOI 10.1016/j.jbankfin.2007.07.014
+   Altman E. I., 1976, P C TOP RES ACC, P205
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   Baker S. R., 2013, 1302 U CHIC BOOTH SC
+   Belke A, 2001, OPEN ECON REV, V12, P231, DOI 10.1023/A:1011112105352
+   Belke A, 2013, POLITICS GOV, V1, P48, DOI 10.17645/pag.v1i1.90
+   Belke A, 2013, EMPIRICA, V40, P175, DOI 10.1007/s10663-011-9181-4
+   Bharath ST, 2008, REV FINANC STUD, V21, P1339, DOI 10.1093/rfs/hhn044
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   BLANCO R., 2001, 0120 BANC ESP
+   Blume ME, 1998, J FINANC, V53, P1389, DOI 10.1111/0022-1082.00057
+   Bohn Jeffrey R., 2003, MODELING DEFAULT RIS
+   Campbell J., 2011, J INVEST MANAG, V9, P1, DOI DOI 10.2469/DIG.V41.N4.5)
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   Chava S., 2004, Review of Finance, V8, P537, DOI 10.1093/rof/8.4.537
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Duggar E., 2007, WORKING PAPERS INT M
+   European Central Bank, 2013, EUR CENTR BANK MONTH, P44
+   Gapen M.T., 2005, WORKING PAPERS INT M, V05/155
+   Gomez-Puig M., 2015, 201504 U BARC I REC
+   Gray D., 2010, J INVESTMENT MANAGEM, V8, P90
+   Gray D., 2010, LESSONS FINANCIAL CR
+   Gray D., 2007, 13607 NAT BUR EC RES
+   Gray D., 2008, MACROFINANCIAL RISK
+   Gropp R, 2006, J MONEY CREDIT BANK, V38, P399, DOI 10.1353/mcb.2006.0032
+   Gros D., 2015, 548 RUHR U BOCH
+   Harada K., 2008, 14518 NAT BUR EC RES
+   Harada K., 2010, 16182 NAT BUR EC RES
+   Hillegeist SA, 2004, REV ACC STUD, V9, P5, DOI 10.1023/B:RAST.0000013627.90884.b7
+   Jessen C, 2015, J BANK FINANC, V50, P493, DOI 10.1016/j.jbankfin.2014.05.016
+   Jobst A., 2013, WORKING PAPERS INT M, V13/54
+   Jorion P, 2006, NBER CONF R, P29
+   KAPLAN RS, 1979, J BUS, V52, P231, DOI 10.1086/296045
+   Kealhofer S, 2003, FINANC ANAL J, V59, P30, DOI 10.2469/faj.v59.n1.2501
+   Klose J, 2014, INT FINANC, V17, P25, DOI 10.1111/infi.12042
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Koutsomanoli-Filippaki A, 2009, J BANK FINANC, V33, P2050, DOI 10.1016/j.jbankfin.2009.05.009
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Oderda G., 2003, EC NOTES, V32, P177
+   OHLSON JA, 1980, J ACCOUNTING RES, V18, P109, DOI 10.2307/2490395
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Polito V, 2012, EUR ECON REV, V56, P526, DOI 10.1016/j.euroecorev.2011.12.003
+   Polito V, 2011, ECON POLICY, P599, DOI 10.1111/j.1468-0327.2011.00270.x
+   Qi M, 2014, J BANK FINANC, V49, P216, DOI 10.1016/j.jbankfin.2014.09.009
+   Saldias M, 2013, J FINANC STABIL, V9, P498, DOI 10.1016/j.jfs.2013.07.003
+   Shumway T, 2001, J BUS, V74, P101, DOI 10.1086/209665
+   Thomas S., 2012, 201210 IND GANDH I D
+   Vasicek O.A., 1984, CREDIT VALUATION
+   Vassalou M, 2004, J FINANC, V59, P831, DOI 10.1111/j.1540-6261.2004.00650.x
+   ZMIJEWSKI ME, 1984, J ACCOUNTING RES, V22, P59, DOI 10.2307/2490859
+NR 50
+TC 6
+Z9 6
+U1 1
+U2 12
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD OCT
+PY 2015
+VL 57
+BP 161
+EP 184
+DI 10.1016/j.jimonfin.2015.07.014
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA CR2KB
+UT WOS:000361157100008
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Alihodzic, A
+   Cho, HJ
+AF Alihodzic, Almir
+   Cho, Hye-jin
+TI ANALYSIS OF SYSTEMIC LIQUIDITY RISK FOR THE BANKING SECTOR IN BOSNIA AND
+   HERZEGOVINA (BH)
+SO EKONOMSKI VJESNIK
+LA English
+DT Article
+DE Systemic liquidity risk; Danish balance principle; ANOVA test;
+   macroeconomic parameters
+ID FINANCIAL FRAGILITY
+AB The purpose of this paper is to relate the Danish concept of the "Balance Principle" to test the hypotheses of systemic liquidity risk in the banking sector. In the paper, the major econometric method is to gauge the general applicability of theories of liquidity and to test the applicable validity of Bosnia and Herzegovina (BH). A prime example for this study is taken from the first quarter of 2004 to the second quarter of 2014. Our intention here is to consider the identification of macroeconomic parameters that positively affect the growth of the banking sector. The parameter liquidity, i. e. liquid assets / total assets will be observed as a dependent variable, and nonperforming loans / total loans, average profitability on equity capital, non-interest expenses / total revenue, the average required reserve, total loans, the money supply in the wider sense, net capital / risk weighted assets and net performing assets / total assets will be used as independent variables. The purpose of the paper is to determine whether there is interdependence in the movement between the independent and dependent variables through a multiple linear regression.
+C1 [Alihodzic, Almir] Univ Zenica, Fac Econ, Travnicka 72000, Zenica, Bosnia & Herceg.
+   [Cho, Hye-jin] Univ Paris, F-75013 Paris, France.
+RP Alihodzic, A (reprint author), Univ Zenica, Fac Econ, Travnicka 72000, Zenica, Bosnia & Herceg.
+EM almir.dr2@gmail.com; hyejin.cho@malix.univ-paris1.fr
+CR Alihodzic A., 2014, P FIN RISK SER 14, V14, P697
+   Alihodzic A., 2014, TESTING APPL WILSONS, P345
+   Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   Basel Committee on Banking Supervision (BCBS), 2006, INT CONV CAP MEAS CA
+   Bodie Z., 2008, INVESTMENTS
+   Bratanovic S. B., 2006, ANAL BANK RISK MANAG
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Burnside C, 2001, EUR ECON REV, V45, P1151, DOI 10.1016/S0014-2921(01)00090-3
+   Diamond P., 1983, J POLITICAL EC, V91, P404
+   Goodhart CAE, 2006, ECON THEOR, V27, P107, DOI 10.1007/s00199-004-0572-7
+   Hull J., 2010, RISK MANAGEMENT FINA
+   IMF, 2014, 1439 IMF
+   IMF, 2011, GLOB FIN REP DUR FIN, P118
+   Kosmidou K, 2008, MANAG FINANC, V34, P146, DOI 10.1108/03074350810848036
+   Kozaric K., 2007, PRICE MONEY BOSNIA H
+   National Bank of Serbia, 2014, ANN FIN STAB
+   Ruozi R., 2013, LIQUIDITY RISK MANAG
+   Schmaltz C, 2009, QUANTITATIVE LIQUIDI
+   The Central Bank of Bosnia and Herzegovina, 2008, ANN REPORT
+   The Central Bank of Bosnia and Herzegovina, 2013, ANN REPORT
+   The Central Bank of Bosnia and Herzegovina, 2013, FIN STAB REP
+   The Central Bank of Bosnia and Herzegovina, 2012, ANN REPORT
+   The Central Bank of Bosnia and Herzegovina, 2009, ANN REPORT
+NR 23
+TC 0
+Z9 0
+U1 0
+U2 0
+PU SVEUCILISTE JOSIPA JURJA STROSSMAYERA & OSIJEKU, EKONOMSKI FAK
+PI OSIJEK
+PA GAJEV TRG 7, OSIJEK, 31000, CROATIA
+SN 0353-359X
+EI 1847-2206
+J9 EKON VJESN
+JI Ekon. Vjesn.
+PY 2015
+VL 28
+IS 2
+BP 289
+EP 306
+PG 18
+WC Economics
+SC Business & Economics
+GA DF7BU
+UT WOS:000371513300001
+OA DOAJ Gold
+DA 2019-12-28
+ER

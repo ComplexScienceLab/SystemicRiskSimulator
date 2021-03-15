@@ -1,0 +1,545 @@
+keyword	TC	Centrality	Burst	PY	BurstBegin	BurstEnd	Span	HalfLife2	Status	WaitingTime
+@PHRASEbank failure	10.0	0.0	3.5382	2011	2011	2013	3	2.0	1	0
+@PHRASErisk	450.0	0.0	3.607	2008	2013	2014	2	8.0	1	5
+@PHRASEagency	5.0	0.0	2.8084	2011	2011	2013	3	0.0	1	0
+@PHRASEmanagement	68.0	0.0	2.8801	2010	2010	2013	4	6.0	1	0
+@PHRASEbanking regulation	15.0	0.0	3.2787	2013	2013	2016	4	2.0	1	0
+@PHRASEmarket	343.0	0.0	2.8529	2006	2006	2010	5	10.0	1	0
+@PHRASEinference	16.0	0.0	3.6282	2012	2012	2015	4	3.0	1	0
+@PHRASEfail	18.0	0.0	3.3745	2014	2018	2020	3	4.0	1	4
+@PHRASEcredit contagion	23.0	0.0	4.7841	2009	2009	2013	5	4.0	1	0
+@PHRASEinstitution	27.0	0.0	3.9277	2011	2011	2014	4	3.0	1	0
+@PHRASEstructural change	7.0	0.0	2.8533	2012	2012	2014	3	2.0	1	0
+@PHRASEliquidity	275.0	0.0	7.5675	2010	2010	2012	3	6.0	1	0
+@PHRASEgreat depression	5.0	0.0	2.8084	2011	2011	2013	3	1.0	1	0
+@PHRASEannouncement	14.0	0.0	4.1224	2010	2010	2013	4	3.0	1	0
+@PHRASEintermediation	6.0	0.0	3.0255	2014	2014	2015	2	0.0	1	0
+@PHRASEtest	59.0	0.0	3.5539	2012	2012	2014	3	4.0	1	0
+@PHRASEconnectedness	66.0	0.0	8.7118	2015	2018	2020	3	3.0	1	3
+@PHRASEsystem	25.0	0.0	2.9617	2012	2012	2014	3	3.0	1	0
+@PHRASErisk management	51.0	0.0	3.2954	2009	2009	2015	7	6.0	1	0
+@PHRASEfragility	21.0	0.0	3.4076	2010	2010	2014	5	4.0	1	0
+@PHRASEextreme value theory	12.0	0.0	3.2751	2011	2011	2013	3	2.0	1	0
+@PHRASEfinancial contagion	121.0	0.0	3.41	2008	2008	2010	3	8.0	1	0
+@PHRASEcrise	91.0	0.0	4.6409	2010	2010	2012	3	6.0	1	0
+@PHRASEinformation	88.0	0.0	8.925	2010	2010	2013	4	6.0	1	0
+@PHRASErisk spillover	17.0	0.0	3.0323	2016	2018	2020	3	2.0	1	2
+@PHRASEpanics	21.0	0.0	3.867	2010	2010	2011	2	6.0	1	0
+@PHRASEg28	19.0	0.0	3.0478	2011	2011	2013	3	4.0	1	0
+@PHRASEparameter	7.0	0.0	2.8533	2012	2012	2014	3	2.0	1	0
+@PHRASEmarket discipline	16.0	0.0	3.8195	2010	2010	2013	4	3.0	1	0
+@PHRASEstrategy	12.0	0.0	3.9692	2011	2011	2013	3	1.0	1	0
+@PHRASEinterest rate	23.0	0.0	3.0779	2010	2010	2011	2	6.0	1	0
+@PHRASEsize	13.0	0.0	3.0469	2014	2015	2017	3	2.0	1	1
+@PHRASEdeposit insurance	82.0	0.0	6.4973	2010	2010	2014	5	5.0	1	0
+@PHRASEcapital shortfall	35.0	0.0	9.2026	2017	2018	2020	3	2.0	1	1
+@PHRASElaw	8.0	0.0	3.2001	2012	2012	2015	4	2.0	1	0
+@PHRASEinternational transmission	12.0	0.0	3.034	2014	2014	2016	3	1.0	1	0
+@PHRASEdesign	5.0	0.0	0.0	2010	-1	-1	0	8.0	0	10
+@PHRASEliquidity shock	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEdelta covar	3.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEindustry	24.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEdeveloping country	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEcrisis	155.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEcontagion effect	11.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEcopula	60.0	0.0	0.0	2011	-1	-1	0	6.0	0	9
+@PHRASEprice shock	5.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEsector	19.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEcommonality	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEc32	7.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEregulatory capital	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEasset return	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEtime-varying copula	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEeconomics	14.0	0.0	0.0	2011	-1	-1	0	6.0	0	9
+@PHRASEownership	17.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEdecision	8.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEvolatility spillover	50.0	0.0	0.0	2013	-1	-1	0	4.0	0	7
+@PHRASEvolatility	180.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEidentification	12.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEportfolio	19.0	0.0	0.0	2013	-1	-1	0	4.0	0	7
+@PHRASEmarket structure	5.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASErisk-weighted asset	1.0	0.0	0.0	2020	-1	-1	0	0.0	0	0
+@PHRASEtrade credit	6.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEregime switching	4.0	0.0	0.0	2019	-1	-1	0	0.0	0	1
+@PHRASEoperational risk	7.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEinterdependence	90.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEoil price	25.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEwavelet	9.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEvector autoregression	6.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEeurozone	22.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEbank bailout	5.0	0.0	0.0	2012	-1	-1	0	7.0	0	8
+@PHRASEinterbank market	88.0	0.0	0.0	2006	-1	-1	0	10.0	0	14
+@PHRASEsovereign	14.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEtransmission	63.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEdynamics	59.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEoil	16.0	0.0	0.0	2015	-1	-1	0	3.0	0	5
+@PHRASEcommunity structure	3.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEcommercial bank	2.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEcentral bank	2.0	0.0	0.0	2011	-1	-1	0	0.0	0	9
+@PHRASEilliquidity	8.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEeuropean stock market	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEchao	2.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEmoney	8.0	0.0	0.0	2010	-1	-1	0	8.0	0	10
+@PHRASEcomplex system	13.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEshadow banking	17.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEcredit crisis	4.0	0.0	0.0	2009	-1	-1	0	7.0	0	11
+@PHRASEdecomposition	13.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEbrics	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASErating	7.0	0.0	0.0	2013	-1	-1	0	5.0	0	7
+@PHRASEstability	92.0	0.0	0.0	2013	-1	-1	0	4.0	0	7
+@PHRASEe44	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEclimate	2.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEautoregressive conditional heteroskedasticity	12.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEuncertainty	36.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEmonetary policy	75.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEdistance	5.0	0.0	0.0	2019	-1	-1	0	0.0	0	1
+@PHRASEequilibrium	52.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASErun	20.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEcurrency	8.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEpredictability	10.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEconsolidation	10.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEinternational equity market	5.0	0.0	0.0	2009	-1	-1	0	3.0	0	11
+@PHRASEheterogeneity	4.0	0.0	0.0	2019	-1	-1	0	0.0	0	1
+@PHRASEsimulation	14.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEasset price	11.0	0.0	0.0	2010	-1	-1	0	5.0	0	10
+@PHRASEask	2.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEbalance sheet	3.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEconventional	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEprice	78.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEpower law	3.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEfinancial distress	14.0	0.0	0.0	2010	-1	-1	0	5.0	0	10
+@PHRASEdistribution	21.0	0.0	0.0	2006	-1	-1	0	9.0	0	14
+@PHRASEdynamic conditional correlation	28.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEagency cost	4.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEinsurance industry	3.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEinequality	3.0	0.0	0.0	2012	-1	-1	0	0.0	0	8
+@PHRASEmovement	5.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEmacroprudential policy	36.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEemergingmarket	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEbond	33.0	0.0	0.0	2009	-1	-1	0	6.0	0	11
+@PHRASEasset allocation	9.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEcascade	13.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEhawkes processe	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEreturn	158.0	0.0	0.0	2009	-1	-1	0	8.0	0	11
+@PHRASEus	41.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEmacroprudential	7.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEfinancial system	8.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEup call contagion	5.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEbanking sector	2.0	0.0	0.0	2013	-1	-1	0	0.0	0	7
+@PHRASEdownside risk	7.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEmarket power	7.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEneural network	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASErisk taking	27.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEdiversification	88.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEanalytic hierarchy process (ahp)	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEcapitalism	3.0	0.0	0.0	2014	-1	-1	0	0.0	0	6
+@PHRASEvariance decomposition	9.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEpower	14.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASErollover risk	6.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEnews	8.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEperformance	100.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEderivative	19.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEc58	3.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEtime	17.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEcrash	2.0	0.0	0.0	2012	-1	-1	0	0.0	0	8
+@PHRASEdiscipline	10.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEcapital structure	13.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEpure	4.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEunit root	38.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEproductivity	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEglobal economy	2.0	0.0	0.0	2010	-1	-1	0	0.0	0	10
+@PHRASErealized volatility	4.0	0.0	0.0	2015	-1	-1	0	0.0	0	5
+@PHRASEheteroskedasticity	6.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEeuro	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEbasel	3.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEcross section	18.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEregression	29.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEcapital buffer	3.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEfinancial intermediation	23.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEenvironmental management	1.0	0.0	0.0	2007	-1	-1	0	0.0	0	13
+@PHRASEdistress	7.0	0.0	0.0	2010	-1	-1	0	8.0	0	10
+@PHRASEtail dependence	21.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEquantile regression	17.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEprivate	6.0	0.0	0.0	2012	-1	-1	0	3.0	0	8
+@PHRASEquality	6.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEdiffusion	13.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEagricultural insurance	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEcybernetic multilevel controlsystem	1.0	0.0	0.0	2009	-1	-1	0	0.0	0	11
+@PHRASEdefault	68.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASErisk premia	5.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEbank	141.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEfirm	44.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEcapital requirement	26.0	0.0	0.0	2011	-1	-1	0	5.0	0	9
+@PHRASEsafe haven	3.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEglobalization	10.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEriskmanagement	6.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEfinancialcrisis	9.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEbasel iii	23.0	0.0	0.0	2013	-1	-1	0	3.0	0	7
+@PHRASEvalue-at-risk	15.0	0.0	0.0	2013	-1	-1	0	2.0	0	7
+@PHRASEgarch	13.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEportfolio optimization	5.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEcore-periphery	3.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEbankruptcy prediction	3.0	0.0	0.0	2019	-1	-1	0	0.0	0	1
+@PHRASEfinancial integration	23.0	0.0	0.0	2010	-1	-1	0	5.0	0	10
+@PHRASEcycle	15.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEblockchain	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEeuro area	17.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEmarginal expected shortfall	11.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEexpected shortfall	17.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASElimit	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEfintech	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEconventional stock market	3.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEcorrelated default	3.0	0.0	0.0	2015	-1	-1	0	0.0	0	5
+@PHRASEdefaultable security	1.0	0.0	0.0	2007	-1	-1	0	0.0	0	13
+@PHRASEyield spread	5.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEintegration	62.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEorganization	4.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEchina	19.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEeurope	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEbanking network	8.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEfinancial stress index	6.0	0.0	0.0	2012	-1	-1	0	2.0	0	8
+@PHRASEasymptoticdependence	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEsovereign risk	30.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEstress test	13.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEmarket linkage	3.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEcollateral	10.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEadverse selection	2.0	0.0	0.0	2012	-1	-1	0	0.0	0	8
+@PHRASEchinese stock market	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEinformation content	4.0	0.0	0.0	2015	-1	-1	0	0.0	0	5
+@PHRASEeuropean debt crisis	7.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEdisclosure	8.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEprudential regulation	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEcontract	3.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEanticoagulation	2.0	0.0	0.0	2013	-1	-1	0	0.0	0	7
+@PHRASEstructural model	4.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEexuberance	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEinflation	6.0	0.0	0.0	2010	-1	-1	0	5.0	0	10
+@PHRASEspread	55.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEindex	19.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEhierarchical structure	3.0	0.0	0.0	2014	-1	-1	0	0.0	0	6
+@PHRASEcapital control	2.0	0.0	0.0	2012	-1	-1	0	0.0	0	8
+@PHRASEshortfall	7.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEovernight money market	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEsystemic risk measure	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEhedge fund	12.0	0.0	0.0	2010	-1	-1	0	5.0	0	10
+@PHRASEdata warehouse	1.0	0.0	0.0	2009	-1	-1	0	0.0	0	11
+@PHRASEbanking crise	33.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEdefault contagion	3.0	0.0	0.0	2019	-1	-1	0	0.0	0	1
+@PHRASEcorporate debt	7.0	0.0	0.0	2007	-1	-1	0	7.0	0	13
+@PHRASEstock price	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEdefault risk	29.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEcoordination	4.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEjapan	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEvariance	13.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEspillover	65.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEchoice	7.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEvalue at risk	24.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEmacroprudential regulation	21.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEcat bond	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEcreditrisk	3.0	0.0	0.0	2014	-1	-1	0	0.0	0	6
+@PHRASEcontagion	722.0	0.0	0.0	2006	-1	-1	0	10.0	0	14
+@PHRASEcluster analysis	3.0	0.0	0.0	2014	-1	-1	0	0.0	0	6
+@PHRASEefficiency	33.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEbenefit function	1.0	0.0	0.0	2009	-1	-1	0	0.0	0	11
+@PHRASEcreate	1.0	0.0	0.0	2007	-1	-1	0	0.0	0	13
+@PHRASEinterdependency	5.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEratio	3.0	0.0	0.0	2015	-1	-1	0	0.0	0	5
+@PHRASEgrowth	30.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEglobal financial crisis	66.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEpayment	2.0	0.0	0.0	2011	-1	-1	0	0.0	0	9
+@PHRASEcorrelation	18.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEcomponent	6.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEmultivariate model	8.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEfinancial institution	35.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEstresstesting	1.0	0.0	0.0	2020	-1	-1	0	0.0	0	0
+@PHRASEdebtrank	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEskewness	8.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEcrude oil	11.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEcrude oil market	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEcompensation	3.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEasymmetric volatility	7.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEinterconnectedness	29.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEdepression	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEbank run	26.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEoption	3.0	0.0	0.0	2012	-1	-1	0	0.0	0	8
+@PHRASEsupervision	20.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEtoo big to fail	4.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEbanking crisis	10.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEfinancial regulation	28.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEco-movement	6.0	0.0	0.0	2012	-1	-1	0	6.0	0	8
+@PHRASEworld	6.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEvar	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEcopula approach	6.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEprocyclicality	4.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEbitcoin	3.0	0.0	0.0	2019	-1	-1	0	0.0	0	1
+@PHRASEbehavior	36.0	0.0	0.0	2007	-1	-1	0	9.0	0	13
+@PHRASEccp	3.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEcentrality	24.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEdebt crisis	28.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEfinancialstability	7.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEadoption	3.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEantithrombotic therapy	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEleverage	47.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEsovereign debt crisis	29.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEentropy	8.0	0.0	0.0	2015	-1	-1	0	1.0	0	5
+@PHRASEor in banking	1.0	0.0	0.0	2020	-1	-1	0	0.0	0	0
+@PHRASEbanking system	18.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEmerger	10.0	0.0	0.0	2010	-1	-1	0	3.0	0	10
+@PHRASEdynamic correlation	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEcds spread	23.0	0.0	0.0	2013	-1	-1	0	4.0	0	7
+@PHRASEfederal funds market	5.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEcentral counterparty	7.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEcapital regulation	11.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEstock	54.0	0.0	0.0	2011	-1	-1	0	6.0	0	9
+@PHRASEstock market	104.0	0.0	0.0	2009	-1	-1	0	8.0	0	11
+@PHRASEbank risk	24.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEcatastrophe insurance	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEfinancial market	35.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEliquidity risk	28.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEcointegration	28.0	0.0	0.0	2009	-1	-1	0	8.0	0	11
+@PHRASEemerging stock market	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEcurrency crise	12.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEliquidation	1.0	0.0	0.0	2020	-1	-1	0	0.0	0	0
+@PHRASEcomonotonicity	2.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEdependence	73.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEinnovation	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEcontingent claims analysis	3.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEcapital market	1.0	0.0	0.0	2007	-1	-1	0	0.0	0	13
+@PHRASEemerging market	45.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEafrica	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEliquidity risk management	1.0	0.0	0.0	2020	-1	-1	0	0.0	0	0
+@PHRASEeconometric model	2.0	0.0	0.0	2010	-1	-1	0	1.0	0	10
+@PHRASEsystematic risk	13.0	0.0	0.0	2013	-1	-1	0	3.0	0	7
+@PHRASEhealth	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEearnings management	5.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEfinancialnetwork	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEbusiness	9.0	0.0	0.0	2015	-1	-1	0	2.0	0	5
+@PHRASEdcc	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEnetwork model	22.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEasset bubble	2.0	0.0	0.0	2010	-1	-1	0	0.0	0	10
+@PHRASEsystemicrisk	32.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEcredit spread	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEinsolvency	5.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEmerton model	3.0	0.0	0.0	2014	-1	-1	0	0.0	0	6
+@PHRASEinstrumental variable	6.0	0.0	0.0	2011	-1	-1	0	3.0	0	9
+@PHRASEexposure	70.0	0.0	0.0	2006	-1	-1	0	10.0	0	14
+@PHRASEbanking risk	3.0	0.0	0.0	2015	-1	-1	0	0.0	0	5
+@PHRASEstock return	42.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEchallenge	3.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEtransition	4.0	0.0	0.0	2010	-1	-1	0	1.0	0	10
+@PHRASEforecasting	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEterm structure	13.0	0.0	0.0	2012	-1	-1	0	3.0	0	8
+@PHRASEagent-based model	17.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEvaluation	25.0	0.0	0.0	2012	-1	-1	0	6.0	0	8
+@PHRASEbiological farming system	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEcommodity	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASElogit estimation	2.0	0.0	0.0	2010	-1	-1	0	1.0	0	10
+@PHRASEmarket risk	5.0	0.0	0.0	2010	-1	-1	0	4.0	0	10
+@PHRASEdeterminant	100.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEmarket liquidity	9.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEnon-performing loan	5.0	0.0	0.0	2010	-1	-1	0	5.0	0	10
+@PHRASErisk factor	4.0	0.0	0.0	2015	-1	-1	0	0.0	0	5
+@PHRASEbailout	18.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEimpulse response analysis	25.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEresolution	5.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEcorporate yield spread	3.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEarea	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASErequirement	4.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEcatastrophe bond pricing	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEdebt	81.0	0.0	0.0	2011	-1	-1	0	5.0	0	9
+@PHRASEexchange rate	29.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEasset pricing	3.0	0.0	0.0	2019	-1	-1	0	0.0	0	1
+@PHRASEdistance to default	3.0	0.0	0.0	2012	-1	-1	0	0.0	0	8
+@PHRASEequity	33.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEspecification	4.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEunited states	4.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEnetwork structure	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEmoney market	5.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEtail risk	5.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEnetwork theory	3.0	0.0	0.0	2015	-1	-1	0	0.0	0	5
+@PHRASEdefault swap spread	3.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEbank regulation	28.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEanalytic hierarchy proce	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEbusiness fluctuation	4.0	0.0	0.0	2010	-1	-1	0	2.0	0	10
+@PHRASEeurozone crisis	8.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASErate	20.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEshock	37.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEcentral counterparty (ccp)	3.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEmoral hazard	28.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEfinancial development	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEconditional skewness	1.0	0.0	0.0	2009	-1	-1	0	0.0	0	11
+@PHRASEconditional heteroskedasticity	23.0	0.0	0.0	2007	-1	-1	0	10.0	0	13
+@PHRASEinterbank network	24.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEbehaviour	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEgranger causality	15.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEregression quantile	5.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEeconomic model	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEbetting	1.0	0.0	0.0	2009	-1	-1	0	0.0	0	11
+@PHRASEconventional bank	3.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEexecutive compensation	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEconvergence	7.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEenergy	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEdynamic copula	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEcomovement	38.0	0.0	0.0	2009	-1	-1	0	7.0	0	11
+@PHRASEmodel	387.0	0.0	0.0	2009	-1	-1	0	7.0	0	11
+@PHRASEasymptotic independence	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEeconomic growth	12.0	0.0	0.0	2010	-1	-1	0	9.0	0	10
+@PHRASElesson	4.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEoptimization	1.0	0.0	0.0	2020	-1	-1	0	0.0	0	0
+@PHRASEregulatory arbitrage	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEcorrelation network	3.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEstructural break	5.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEcd	23.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEcausality	13.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEcounterparty risk	26.0	0.0	0.0	2012	-1	-1	0	4.0	0	8
+@PHRASEevent study	7.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEfutures market	4.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEloan	4.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEconsequence	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEequity market	37.0	0.0	0.0	2011	-1	-1	0	6.0	0	9
+@PHRASEcredit risk	75.0	0.0	0.0	2007	-1	-1	0	9.0	0	13
+@PHRASEbanking	87.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEcrisis contagion management	1.0	0.0	0.0	2009	-1	-1	0	0.0	0	11
+@PHRASEsubprime crisis	5.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEsocial network	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEbootstrap	5.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEasset	6.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEfinancial crise	82.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEinsurer	12.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASElife insurance	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEenvironment	2.0	0.0	0.0	2010	-1	-1	0	1.0	0	10
+@PHRASEnetwork	94.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEfiscal policy	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEcredit defaultswap	4.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEcontagion model	2.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEtoo big	9.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEcompetition	59.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEconditional value-at-risk	3.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASElinkage	35.0	0.0	0.0	2010	-1	-1	0	8.0	0	10
+@PHRASEeconomy	20.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEg32	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEcorporate governance	35.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEexpectation	7.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEbank performance	5.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEeffectivenessmodel	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEcross-spectrum	1.0	0.0	0.0	2009	-1	-1	0	0.0	0	11
+@PHRASEperception	2.0	0.0	0.0	2010	-1	-1	0	1.0	0	10
+@PHRASEimplied volatility	8.0	0.0	0.0	2015	-1	-1	0	1.0	0	5
+@PHRASEcredit default swap	53.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEarchimedean copula	2.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEhidden markov model	1.0	0.0	0.0	2020	-1	-1	0	0.0	0	0
+@PHRASEstockmarket	4.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEfailure	21.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEoverlapping portfolio	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEcontagion risk	16.0	0.0	0.0	2011	-1	-1	0	6.0	0	9
+@PHRASEjump	9.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEregime	7.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEconvolution	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEinvestor	3.0	0.0	0.0	2012	-1	-1	0	0.0	0	8
+@PHRASEclearing	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEgro	2.0	0.0	0.0	2011	-1	-1	0	0.0	0	9
+@PHRASEliberalization	3.0	0.0	0.0	2014	-1	-1	0	0.0	0	6
+@PHRASEg21	28.0	0.0	0.0	2011	-1	-1	0	5.0	0	9
+@PHRASEfinancial network	130.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEbond market	10.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEcrop insurance	8.0	0.0	0.0	2006	-1	-1	0	11.0	0	14
+@PHRASEg15	2.0	0.0	0.0	2010	-1	-1	0	1.0	0	10
+@PHRASEemu	3.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEfinancial crisis	245.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEcountry	27.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEprincipal component analysis	5.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEcovar	57.0	0.0	0.0	2012	-1	-1	0	6.0	0	8
+@PHRASEfinancialcrise	2.0	0.0	0.0	2010	-1	-1	0	1.0	0	10
+@PHRASEtail	10.0	0.0	0.0	2014	-1	-1	0	4.0	0	6
+@PHRASEinvestor sentiment	20.0	0.0	0.0	2015	-1	-1	0	3.0	0	5
+@PHRASEepidemic model	3.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEstate regulation	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEbusiness model	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEsystemic importance	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEinterbank	4.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEconstraint	22.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASElosse	5.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEcryptocurrency	3.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASElatin america	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEnetwork topology	14.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEcore periphery structure	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEbusiness cycle	25.0	0.0	0.0	2011	-1	-1	0	7.0	0	9
+@PHRASEcollateralized debt obligation	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEgovernance	27.0	0.0	0.0	2011	-1	-1	0	6.0	0	9
+@PHRASEcomplex network	30.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEincentive	12.0	0.0	0.0	2011	-1	-1	0	6.0	0	9
+@PHRASEbond spread	5.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEco movement	11.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEbank capital	9.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEg01	22.0	0.0	0.0	2012	-1	-1	0	3.0	0	8
+@PHRASEfinancialregulation	5.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEfinance	38.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEsystemic risk	962.0	0.0	0.0	2006	-1	-1	0	11.0	0	14
+@PHRASEcoefficient	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEevent	3.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEcredit rating	8.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEbayesian inference	3.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEpolicy	45.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEimpact	101.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEoil price shock	3.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEselection	16.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEtrade	17.0	0.0	0.0	2013	-1	-1	0	3.0	0	7
+@PHRASEhungary	3.0	0.0	0.0	2014	-1	-1	0	1.0	0	6
+@PHRASEnonparametric estimation	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEtime series	70.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEnetwork analysis	15.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEdisease	3.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEbubble	16.0	0.0	0.0	2011	-1	-1	0	7.0	0	9
+@PHRASEdisasterrisk	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEflight to liquidity	6.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEfinancial fragility	12.0	0.0	0.0	2012	-1	-1	0	2.0	0	8
+@PHRASEstress testing	13.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEsecuritization	17.0	0.0	0.0	2012	-1	-1	0	3.0	0	8
+@PHRASErisk contribution	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEdodd-frank act	6.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEbankruptcy	21.0	0.0	0.0	2010	-1	-1	0	5.0	0	10
+@PHRASEsovereign debt	16.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEcomplexity	35.0	0.0	0.0	2013	-1	-1	0	4.0	0	7
+@PHRASEfuture	12.0	0.0	0.0	2006	-1	-1	0	12.0	0	14
+@PHRASEtoo-big-to-fail	3.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEinterest rate risk	5.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEcredit	57.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASErisk contagion	13.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEattraction	1.0	0.0	0.0	2006	-1	-1	0	0.0	0	14
+@PHRASEempirical evidence	12.0	0.0	0.0	2006	-1	-1	0	11.0	0	14
+@PHRASEcorn yield	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEinvestment	39.0	0.0	0.0	2010	-1	-1	0	6.0	0	10
+@PHRASEactuarial science	2.0	0.0	0.0	2012	-1	-1	0	1.0	0	8
+@PHRASEfinancial stress	7.0	0.0	0.0	2015	-1	-1	0	3.0	0	5
+@PHRASEcentral clearing	3.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEinsurance	64.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEindicator	3.0	0.0	0.0	2013	-1	-1	0	0.0	0	7
+@PHRASEtoo	7.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEpanel data	28.0	0.0	0.0	2014	-1	-1	0	3.0	0	6
+@PHRASEprediction	7.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEregulation	36.0	0.0	0.0	2010	-1	-1	0	5.0	0	10
+@PHRASEdecision making	3.0	0.0	0.0	2017	-1	-1	0	0.0	0	3
+@PHRASEcorporate bond	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEbail-in	3.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEcost	39.0	0.0	0.0	2007	-1	-1	0	9.0	0	13
+@PHRASEfinancial stability	112.0	0.0	0.0	2006	-1	-1	0	10.0	0	14
+@PHRASEbehavioral finance	3.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEreinsurance	7.0	0.0	0.0	2016	-1	-1	0	0.0	0	4
+@PHRASEclimate change	8.0	0.0	0.0	2008	-1	-1	0	10.0	0	12
+@PHRASEpreference	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEreturn predictability	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEconditional excess probability	1.0	0.0	0.0	2008	-1	-1	0	0.0	0	12
+@PHRASEsrisk	4.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASElong memory	15.0	0.0	0.0	2014	-1	-1	0	2.0	0	6
+@PHRASEtopology	82.0	0.0	0.0	2012	-1	-1	0	5.0	0	8
+@PHRASEcapital flow	4.0	0.0	0.0	2016	-1	-1	0	1.0	0	4
+@PHRASEegarch	3.0	0.0	0.0	2019	-1	-1	0	0.0	0	1
+@PHRASEearly warning system	28.0	0.0	0.0	2010	-1	-1	0	5.0	0	10
+@PHRASEemployment	2.0	0.0	0.0	2010	-1	-1	0	0.0	0	10
+@PHRASEpanel	4.0	0.0	0.0	2018	-1	-1	0	1.0	0	2
+@PHRASEaggregation	1.0	0.0	0.0	2009	-1	-1	0	0.0	0	11
+@PHRASEconsumption	7.0	0.0	0.0	2016	-1	-1	0	2.0	0	4
+@PHRASEspillover effect	6.0	0.0	0.0	2018	-1	-1	0	0.0	0	2
+@PHRASEfire sale	27.0	0.0	0.0	2010	-1	-1	0	7.0	0	10
+@PHRASEcyclicality	5.0	0.0	0.0	2010	-1	-1	0	8.0	0	10
+@PHRASEderegulation	3.0	0.0	0.0	2016	-1	-1	0	1.0	0	4

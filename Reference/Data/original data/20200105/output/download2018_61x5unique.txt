@@ -1,0 +1,461 @@
+
+PT J
+AU Voznyak, H
+   Pelekhatyy, A
+AF Voznyak, Halyna
+   Pelekhatyy, Andriy
+TI Participatory budgeting as a tool for the implementation of the fiscal
+   policy of regional development of Ukraine
+SO ECONOMIC ANNALS-XXI
+LA English
+DT Article
+DE Fiscal Policy; Participatory Budget; Decentralisation; Local Budget;
+   Development of Regions
+AB Introduction. Ukraine's aspiration to implement the model of sustainable economic development and European standards of living has led to an increase in attention to the mechanisms of formation and implementation of the country's fiscal policy to develop its regions, which is characterised by an excessive degree of centralised budgeting, lack of unified standards for the provision of high-quality public services, instability of revenue sources of local budgets. Such trends have led to initiation and implementation of systemic socio-economic and legal reforms with regard to all public policies. One of the main reforms is to provide decentralisation of power for the adoption of budgetary decisions. Under such conditions, it is impossible to ensure fiscal independence of local budgets and introduce a new budgetary regulation mechanism without involvement of competent public opinion in management and control in different areas of finances.
+   The purpose of the article is to analyse modern fiscal policy tools which impact the formation of the revenue base of local budgets, the amount and direction of expenditures, as the implementation of such tools can promote transparent use of public funds. Results. The authors of the article have considered the essence of the participatory budget, singled out its advantages and risks and determined conditions for its effective functioning based at exploring world and European practices (focusing on France, Spain and Poland). The article deals with modern domestic practices in the implementation of participatory budgets. Also, participatory budgeting in the big cities of Poland and Ukraine were compared. It is argued that improvement of the fiscal policy related to the development of regions by means of introduction of a participatory budget will promote a transparent distribution of budget funds increasing the efficiency and performance of local self-governing bodies. Among the potential dangers of participatory democracy in the budget process, the article highlights populism, loss of time and inability to conceal deficiencies in governance, overestimating citizens' expectations in the face of limited resources and limited freedom of action of local self-governing bodies in matters of budget decision-making. Conclusions. The authors have proved the need to introduce participatory budgets into the practice of local government because such a new technology will promote socio-economic development of regions and increase the publicity of local authorities.
+C1 [Voznyak, Halyna] Natl Acad Sci Ukraine, Inst Reg Res, State Inst, 4 Kozelnytska Str, UA-79026 Lvov, Ukraine.
+   [Pelekhatyy, Andriy] Natl Acad Sci Ukraine, State Inst, Inst Econ & Forecasting, 26 Panas Myrnyi Str, UA-01011 Kiev, Ukraine.
+RP Voznyak, H (reprint author), Natl Acad Sci Ukraine, Inst Reg Res, State Inst, 4 Kozelnytska Str, UA-79026 Lvov, Ukraine.
+EM gvoznyak@gmail.com; Pelechatyj_A@i.ua
+RI Voznyak, Halyna H.V./C-5378-2019
+OI Voznyak, Halyna/0000-0003-2001-0516
+CR Allegretti G., 2016, INT EXPERIENCES PART
+   [Anonymous], 2017, LODZ ACTIVE CITIZENS
+   Dzinic J, 2016, NISPACEE J PUBLIC AD, V9, P31, DOI 10.1515/nispa-2016-0002
+   Federal Ministry for Economic Cooperation and Development, 2013, DIALOG GLOBAL, P25
+   Ginsborg P., 2010, PAIS
+   Kotina H. M., 2015, INVESTYTSII PRAKTYKA, V24, P84
+   Kyrylenko O., 2015, VISNYK TERNOPILSKOHO, V2, P86
+   Lieberherr F., 2003, URBAN NEWS       FEB, V7
+   Rice J., PARTICIPATORY BUDGET
+   Shah Anwar, 2007, PARTICIPATORY BUDGET
+   Sintomer Y, 2008, INT J URBAN REGIONAL, V32, P164, DOI 10.1111/j.1468-2427.2008.00777.x
+   The Capital City of Warsaw, 2017, PART BUDG CAP CIT WA
+NR 12
+TC 0
+Z9 0
+U1 0
+U2 5
+PU INST SOC TRANSFORMATION
+PI KYIV
+PA VUL GONCHARA 43-V, OFIS 20, KYIV, 01030, UKRAINE
+SN 1728-6220
+EI 1728-6239
+J9 ECON ANN-XXI
+JI Econ. Ann.-XXI
+PD MAR 14
+PY 2018
+VL 167
+IS 9-10
+BP 53
+EP 56
+DI 10.21003/ea.V167-11
+PG 4
+WC Economics
+SC Business & Economics
+GA GJ3OW
+UT WOS:000435207100011
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Stolbov, M
+   Shchepeleva, M
+AF Stolbov, Mikhail
+   Shchepeleva, Maria
+TI Systemic risk in Europe: deciphering leading measures, common patterns
+   and real effects
+SO ANNALS OF FINANCE
+LA English
+DT Article
+DE Causality; Cluster analysis; Independent component analysis; Principal
+   component analysis; Panel vector autoregressions; Systemic risk
+ID FINANCIAL STRESS; COMPONENTS; SHORTFALL; BANKS
+AB The paper studies salient features of systemic risk in a sample of 22 European (EU and non-EU) countries during January 2010-March 2016. Building on a novel dataset and conducting an empirical horse race, we determine pivotal systemic risk measures for the sample countries. SRISK and volatility indicator tend to lead other metrics, followed by leverage. In contrast to the conventional wisdom, composite systemic risk measures aggregated with the aid of principal and independent component analysis perform worse. The leading systemic risk measures exhibit a high degree of connectedness. The VIX index, TED spread, the Composite Index of Systemic Stress (CISS) and long-term interest rates underlie their dynamics. Two clusters within the sample are identified, with CISS and long-term interest rates being crucial to distinguish between them. There is only scarce evidence for causal linkages between systemic risk and industrial production in the sample countries, based on the concurring results of standard and nonparametric Granger causality tests.
+C1 [Stolbov, Mikhail] MGIMO Univ, Moscow State Inst Int Relat, Dept Appl Econ, 76 Vernadskogo Prospect, Moscow 119454, Russia.
+   [Shchepeleva, Maria] Bank Russia, Dept Monetary Policy, Moscow, Russia.
+RP Stolbov, M (reprint author), MGIMO Univ, Moscow State Inst Int Relat, Dept Appl Econ, 76 Vernadskogo Prospect, Moscow 119454, Russia.
+EM stolbov_mi@mail.ru
+OI Stolbov, Mikhail/0000-0002-2066-7633
+CR Abrigo M. R. M., 2015, ESTIMATION PAN UNPUB
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Bhattacharyya A., 1943, Bulletin of the Calcutta Mathematical Society, V35, P99
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Black L, 2016, J BANK FINANC, V63, P107, DOI 10.1016/j.jbankfin.2015.09.007
+   Brei M, 2016, ECON POLICY, V31, P359, DOI 10.1093/epolic/eiw001
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Bystrom H, 2015, J FUTURES MARKETS, V35, P753, DOI 10.1002/fut.21701
+   Corzo Santamaria M. T., 2014, SPANISH REV FINANCIA, V12, P1
+   De Nicolo G., 2010, 1WP1029 IMF
+   De Nicolo G., 2012, 1WP1258 IMF
+   De Nicolo G, 2017, J APPL ECONOMET, V32, P159, DOI 10.1002/jae.2509
+   Dermine J, 2015, J BANK FINANC, V53, P266, DOI 10.1016/j.jbankfin.2014.12.007
+   Diks C, 2006, J ECON DYN CONTROL, V30, P1647, DOI 10.1016/j.jedc.2005.08.008
+   Doornik JA, 2008, OXFORD B ECON STAT, V70, P927, DOI 10.1111/j.1468-0084.2008.00537.x
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Fabozzi FJ, 2016, J INT MONEY FINANC, V65, P1, DOI 10.1016/j.jimonfin.2016.03.003
+   Freixas X, 2015, SYSTEMIC RISK, CRISES, AND MACROPRUDENTIAL REGULATION, P47
+   Giglio S, 2016, J FINANC ECON, V119, P457, DOI 10.1016/j.jfineco.2016.01.010
+   Gonzalez-Hermosillo B, 2011, J EMERG MARK FINANC, V10, P227, DOI 10.1177/097265271101000204
+   GONZALO J, 1995, J BUS ECON STAT, V13, P27
+   Hollo D., 2012, 11426 ECB
+   Hyvarinen A, 2001, INDEPENDENT COMPONENT ANALYSIS: PRINCIPLES AND PRACTICE, P71
+   Idier J, 2014, J BANK FINANC, V47, P134, DOI 10.1016/j.jbankfin.2014.06.022
+   Kinateder H, 2015, J RISK FINANC, V16, P395, DOI 10.1108/JRF-02-2015-0019
+   Kinda T., 2016, 1WP1612 IMF
+   Kremer M., 2016, INT EC EC POLICY, V13, P105, DOI DOI 10.1007/S10368-015-0325-Z
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P112, DOI 10.3905/jpm.2011.37.4.112
+   Kupiec P, 2016, J FINANC SERV RES, V49, P203, DOI 10.1007/s10693-016-0254-1
+   Manzo G., 2016, IMPACT SOVEREI UNPUB
+   Mardia KV, 1979, MULTIVARIATE ANAL, P521
+   Mittnik S, 2013, J ECON DYN CONTROL, V37, P1479, DOI 10.1016/j.jedc.2013.04.014
+   Pankoke D., 2014, 1201422 U ST GALL
+   Park CY, 2014, J BANK FINANC, V45, P199, DOI 10.1016/j.jbankfin.2013.09.018
+   Pederzoli C, 2017, ANN FINANC, V13, P237, DOI 10.1007/s10436-017-0294-z
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Schleer F, 2015, J MACROECON, V46, P235, DOI 10.1016/j.jmacro.2015.09.002
+   TODA HY, 1995, J ECONOMETRICS, V66, P225, DOI 10.1016/0304-4076(94)01616-8
+   van Roye B, 2014, EMPIRICA, V41, P101, DOI 10.1007/s10663-013-9224-0
+NR 43
+TC 1
+Z9 1
+U1 1
+U2 2
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1614-2446
+EI 1614-2454
+J9 ANN FINANC
+JI Ann. Financ.
+PD FEB
+PY 2018
+VL 14
+IS 1
+BP 49
+EP 91
+DI 10.1007/s10436-017-0310-3
+PG 43
+WC Business, Finance
+SC Business & Economics
+GA GC0AD
+UT WOS:000429436400002
+DA 2019-12-28
+ER
+
+PT J
+AU Ji, Q
+   Marfatia, H
+   Gupta, R
+AF Ji, Qiang
+   Marfatia, Hardik
+   Gupta, Rangan
+TI Information spillover across international real estate investment
+   trusts: Evidence from an entropy-based network analysis
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE REIT; Transfer entropy; Information spillover; Market integration
+ID MARKET INTEGRATION; GRANGER CAUSALITY; STOCK MARKETS; SYSTEMIC RISK;
+   DEPENDENCE; COVAR; OIL
+AB In this study, we unveil information spillover between international real estate markets using an entropy-based network approach for real estate investment trusts (REIT). Our novel approach is simple and yet flexible enough to accommodate the nature and extent of information spillover among several components of the global housing network. For a network of nine leading industrial economies, we unveil static and time-varying information spillover of REIT returns using total transfer entropy, pairwise net transfer entropy and directional ("From", "To") transfer entropy. Evidence suggests that the greatest pairwise transfer entropy is from the US to Australia, whereas France, the Netherlands, New Zealand and Singapore are the largest information recipients in the network. The time-varying evolution of total transfer entropy also exhibits a declining trend for the integration of global housing market during our sample period.
+C1 [Ji, Qiang] Chinese Acad Sci, Inst Sci & Dev, Ctr Energy & Environm Policy Res, Beijing 100190, Peoples R China.
+   [Ji, Qiang] Univ Chinese Acad Sci, Sch Publ Policy & Management, Beijing 100049, Peoples R China.
+   [Marfatia, Hardik] NE Illinois Univ, Dept Econ, BBH 344G,5500 N St Louis Ave, Chicago, IL 60625 USA.
+   [Gupta, Rangan] Univ Pretoria, Dept Econ, ZA-0002 Pretoria, South Africa.
+RP Ji, Q (reprint author), Chinese Acad Sci, Inst Sci & Dev, Ctr Energy & Environm Policy Res, Beijing 100190, Peoples R China.; Ji, Q (reprint author), Univ Chinese Acad Sci, Sch Publ Policy & Management, Beijing 100049, Peoples R China.
+EM jqwxnjq@casipm.ac.cn
+OI Ji, Qiang/0000-0002-3502-5254
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71774152, 91546109]; Youth Innovation Promotion
+   Association of Chinese Academy of Sciences [Y7X0231505]
+FX The first author acknowledged the supports from the National Natural
+   Science Foundation of China under Grant No. 71774152, No. 91546109 and
+   Youth Innovation Promotion Association of Chinese Academy of Sciences
+   (Grant: Y7X0231505). We would like to thank an anonymous referee for
+   many helpful comments. However, any remaining errors are solely ours.
+CR Akinsomi O., 2016, J EC FINANCE, P1
+   Altiparmak F, 2009, EUR J OPER RES, V199, P542, DOI 10.1016/j.ejor.2008.11.022
+   [Anonymous], 2016, GLOB PERSP 2016 REIT
+   Bagliano FC, 2012, J BANK FINANC, V36, P1, DOI 10.1016/j.jbankfin.2011.06.002
+   Burke T, 2010, HOUSING STUD, V25, P821, DOI 10.1080/02673037.2010.511161
+   de Jong F, 2005, J FINANC ECON, V78, P583, DOI 10.1016/j.jfineco.2004.10.010
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Dimpfl T, 2013, STUD NONLINEAR DYN E, V17, P85, DOI 10.1515/snde-2012-0044
+   EPRA, 2016, GLOB REIT SURV 2016
+   Fratzscher M, 2002, INT J FINANC ECON, V7, P165, DOI 10.1002/ijfe.187
+   Gurran N, 2013, INT J HOUS POLICY, V13, P381, DOI 10.1080/14616718.2013.840110
+   Hirata H., 2012, GLOBAL HOUSE PRICE F
+   Hong YM, 2009, J ECONOMETRICS, V150, P271, DOI 10.1016/j.jeconom.2008.12.013
+   Jammazi R, 2017, INT REV FINANC ANAL, V52, P260, DOI 10.1016/j.irfa.2017.07.008
+   Liu BY, 2017, ENERG ECON, V68, P53, DOI 10.1016/j.eneco.2017.09.011
+   Marfatia H., 2017, WORKING PAPERS
+   Marfatia HA, 2015, N AM J ECON FINANC, V34, P103, DOI 10.1016/j.najef.2015.08.006
+   Mensi W, 2017, J BANK FINANC, V75, P258, DOI 10.1016/j.jbankfin.2016.11.017
+   Murphy L, 2011, J HOUS BUILT ENVIRON, V26, P335, DOI 10.1007/s10901-011-9226-9
+   Ntuli M., 2017, J REAL ESTATE LIT, V25, P365
+   Panchenko V, 2009, J BANK FINANC, V33, P1014, DOI 10.1016/j.jbankfin.2008.10.016
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Schreiber T, 2000, PHYS REV LETT, V85, P461, DOI 10.1103/PhysRevLett.85.461
+   SHANNON CE, 1948, BELL SYST TECH J, V27, P623, DOI 10.1002/j.1538-7305.1948.tb00917.x
+   Vansteenkiste I, 2011, J HOUS ECON, V20, P299, DOI 10.1016/j.jhe.2011.08.003
+   Xu PS, 2011, J REAL ESTATE FINANC, V43, P459, DOI 10.1007/s11146-009-9215-x
+NR 27
+TC 2
+Z9 2
+U1 1
+U2 8
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD NOV
+PY 2018
+VL 46
+BP 103
+EP 113
+DI 10.1016/j.najef.2018.04.002
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA GZ0FY
+UT WOS:000449038300007
+DA 2019-12-28
+ER
+
+PT J
+AU Morelli, S
+AF Morelli, Salvatore
+TI Banking crises in the US: the response of top income shares in a
+   historical perspective
+SO JOURNAL OF ECONOMIC INEQUALITY
+LA English
+DT Article
+DE Systemic banking crises; Top income shares; US; ADL; Time series;
+   Impulse responses; Pareto coefficient
+ID MARGINAL TAX RATES; MACROECONOMIC CONDITIONS; POLICY IMPLICATIONS;
+   BUSINESS-CYCLE; UNITED-STATES; INEQUALITY; RISK
+AB This paper examines the response of income concentration in the US to the occurrence of major systemic banking crises since the beginning of the twentieth century. In doing so, the paper analyzes the shape of the upper income tail as well as the national income shares accruing to different groups within the richest decile. The findings suggest that systemic banking crises reduce income concentration within the top decile of the US pre-tax and transfers income distribution, and more generally, that the effect is highly heterogeneous across different top income groups. While the richest income group loses ground, the lower half of the top decile appears to gain in relative terms. However, evidence suggests that the estimated short-term effect of market forces stemming from banking crises can be relatively small in magnitude and even temporary in nature, as it may be quickly reabsorbed. These findings lend indirect support to the idea that only substantial changes in government policies and institutional frameworks can bring about radical changes in income distribution.
+C1 [Morelli, Salvatore] CUNY, Stone Ctr Socio Econ Inequal, Grad Ctr, New York, NY 10021 USA.
+RP Morelli, S (reprint author), CUNY, Stone Ctr Socio Econ Inequal, Grad Ctr, New York, NY 10021 USA.
+EM salvatore.morelli@gmail.com
+OI Morelli, Salvatore/0000-0002-1935-3565
+CR Almeida V., 2017, INCOME INEQUALITY RE
+   Alvaredo F, 2013, J ECON PERSPECT, V27, P3, DOI 10.1257/jep.27.3.3
+   Atkinson A., 2010, INEQUALITY BANKING C
+   Atkinson AB, 2017, ECONOMICA, V84, P129, DOI 10.1111/ecca.12214
+   Atkinson A.B., 2011, HDRP201106
+   Atkinson A.B., 2017, 8268 WORLD BANK
+   Atkinson AB, 2011, J ECON LIT, V49, P3, DOI 10.1257/jel.49.1.3
+   Ball L.D.F., 2013, WP13151 INT MON FUND
+   Barro R.J., 2009, 14760 NAT BUR EC RES
+   Beach C., 1976, ANN ECON SOC MEAS, V5, P33
+   BEACH CM, 1977, REV ECON STAT, V59, P56, DOI 10.2307/1924904
+   Blank R.M., 1985, 1567 NAT BUR EC RES
+   BLANK RM, 1989, ECONOMICA, V56, P141, DOI 10.2307/2554036
+   BLINDER AS, 1978, REV ECON STAT, V60, P604, DOI 10.2307/1924254
+   Bolt Jutta, 2018, 174 GGDC, V174
+   Bordo M, 2001, ECON POLICY, P51
+   Bordo MD, 2012, J INT MONEY FINANC, V31, P2147, DOI 10.1016/j.jimonfin.2012.05.006
+   Boyd J.H., 2009, WP 09 141 INT MON FU
+   Cerra V, 2008, AM ECON REV, V98, P439, DOI 10.1257/aer.98.1.439
+   Cravino J, 2017, AM ECON REV, V107, P3477, DOI 10.1257/aer.20151551
+   CURRY T, 2000, FDIC BANKING REV, V13, P26
+   Dolls M, 2012, J PUBLIC ECON, V96, P279, DOI 10.1016/j.jpubeco.2011.11.001
+   Farre L, 2008, LABOUR-ENGL, V22, P383, DOI 10.1111/j.1467-9914.2008.00413.x
+   FURMAN J, 1998, INCOME INEQUALITY IS, P221
+   Gorodnichenko Y., 2012, IMF WORKING PAPERS
+   Guvenen F, 2014, AM ECON REV, V104, P148, DOI 10.1257/aer.104.5.148
+   Guvenen F, 2014, J POLIT ECON, V122, P621, DOI 10.1086/675535
+   Hendry D.F., 1995, DYNAMICS ECONOMETRIC
+   Jantti M, 2010, J ECON INEQUAL, V8, P221, DOI 10.1007/s10888-009-9113-8
+   Jenkins S., 2013, GREAT RECESSION DIST
+   Jorda O., 2015, J MONETARY ECON, V76, pS1
+   Jorda O, 2013, J MONEY CREDIT BANK, V45, P3, DOI 10.1111/jmcb.12069
+   Kaplan SN, 2010, REV FINANC STUD, V23, P1004, DOI 10.1093/rfs/hhp006
+   Kirschenmann K, 2016, J INT MONEY FINANC, V68, P161, DOI 10.1016/j.jimonfin.2016.07.010
+   Laeven L., 2008, WP081224 INT MON FUN
+   Laeven L., 2010, WP10146 INT MON FUND
+   METCALF CE, 1969, AM ECON REV, V59, P657
+   Mishkin F.S., 2003, US STOCK MARKET CRAS
+   Morelli S., 2015, HDB INCOME DISTRIBUT, V2A
+   Morelli S., 2014, 359 CTR STUD EC FIN
+   Morelli S, 2015, ECON POLIT-ITALY, V32, P31, DOI 10.1007/s40888-015-0006-y
+   Neal T, 2013, ECON REC, V89, P83, DOI 10.1111/1475-4932.12018
+   NOLAN B, 1987, REV INCOME WEALTH, P193
+   North DC, 2005, PRINC ECON HIST W WO, P1
+   Parker J.A., 2010, 16577 NAT BUR EC RES
+   Parker JA, 2009, AM ECON REV, V99, P399, DOI 10.1257/aer.99.2.399
+   Parker SC, 2000, APPL ECON, V32, P221, DOI 10.1080/000368400322903
+   Paul P., 2017, 201723 FED RES BANK
+   Pesaran M.H., 2012, 3879 CESIFO GROUP MU
+   Pesaran MH, 2016, RES ECON, V70, P262, DOI 10.1016/j.rie.2016.01.004
+   Philippon T, 2012, Q J ECON, V127, P1551
+   Philippon T., 2007, 13437 NAT BUR EC RES
+   Piketty T, 2006, AM ECON REV, V96, P200, DOI 10.1257/000282806777212116
+   Piketty T, 2003, Q J ECON, V118, P1, DOI 10.1162/00335530360535135
+   Piketty T, 2018, Q J ECON, V133, P553, DOI 10.1093/qje/qjx043
+   Piketty T, 2014, AM ECON J-ECON POLIC, V6, P230, DOI 10.1257/pol.6.1.230
+   Piketty T, 2013, IMF ECON REV, V61, P456, DOI 10.1057/imfer.2013.14
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Reinhart C. M., 2010, 15815 NAT BUR EC RES
+   Reinhart C.M., 2008, 13882 NAT BUR EC RES
+   Roine J, 2009, J PUBLIC ECON, V93, P974, DOI 10.1016/j.jpubeco.2009.04.003
+   ROMER CD, 1989, NBER MACROECON ANN, V4, P121, DOI 10.2307/3584969
+   Saez E, 2004, TAX POL EC, V18, P117, DOI 10.1086/tpe.18.20061888
+   Saez E, 2016, Q J ECON, V131, P519, DOI 10.1093/qje/qjw004
+   Saez E, 2012, J ECON LIT, V50, P3, DOI 10.1257/jel.50.1.3
+   Sialm C, 2009, AM ECON REV, V99, P1356, DOI 10.1257/aer.99.4.1356
+   Slemrod J, 2000, DOES ATLAS SHRUG EC
+   SLEMROD J, 1996, TAX PROGR INCOME INE
+   Thompson Jeffrey, 2013, GREAT RECESSION DIST, P202
+   THUROW LC, 1970, AM ECON REV, V60, P261
+NR 70
+TC 1
+Z9 1
+U1 0
+U2 2
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 1569-1721
+EI 1573-8701
+J9 J ECON INEQUAL
+JI J. Econ. Inequal.
+PD JUN
+PY 2018
+VL 16
+IS 2
+SI SI
+BP 257
+EP 294
+DI 10.1007/s10888-018-9387-9
+PG 38
+WC Economics
+SC Business & Economics
+GA GL8JY
+UT WOS:000437467800006
+DA 2019-12-28
+ER
+
+PT J
+AU Distefano, T
+   Riccaboni, M
+   Marin, G
+AF Distefano, T.
+   Riccaboni, M.
+   Marin, G.
+TI Systemic risk in the global water input-output network
+SO WATER RESOURCES AND ECONOMICS
+LA English
+DT Article
+DE Virtual water trade; Multi-regional input-output model; Network analysis
+ID STRUCTURAL DECOMPOSITION ANALYSIS; VIRTUAL WATER; TRADE; CONSUMPTION;
+   FOOTPRINTS; FLOWS; FOOD; EVOLUTION; NATIONS; ENERGY
+AB The issue of water access and security has been emphasized in the recent policy debate on sustainable development (Sustainable Development Goal No. 6) and adaptation to climate change (CoP21 in Paris, 2015). This study provides new evidence about the Blue Virtual Water Input-Output Network. The main novelty of our approach is the combination of Structural Decomposition Analysis (SDA) with Network Theory. SDA reveals that size-related, technological and structural components have contributed substantially to changes in virtual water use. Network analysis offers new insights about the vulnerability of the system to shocks through trade links across country-sector pairs. Our analysis highlights a possible trade-off in the increasing importance of virtual water trade: the efficiency improvement in granting access to virtual water might come at the cost of increasing systemic vulnerability.
+   Overall, the great unbalance between water availability and usage combined with rigidity of global consumption and production networks and the risk of cascade effects imply increasing vulnerability of the virtual water network to shocks propagation.
+C1 [Distefano, T.] Politecn Torino, Dept Environm Land & Infrastruct Engn, Corso Duca Abruzzi 24, I-10129 Turin, Italy.
+   [Riccaboni, M.] IMT Sch Adv Studies, AXES, Piazza S Francesco 19, I-55100 Lucca, Italy.
+   [Riccaboni, M.] Katholieke Univ Leuven, Dept Managerial Econ Strategy & Innovat MSI, Naamsestr 69, B-3000 Leuven, Belgium.
+   [Marin, G.] Univ Urbino, Dept Econ Soc Polit, Via Aurelio Saffi 2, I-61029 Urbino, Italy.
+   [Marin, G.] SEEDS, Ferrara, Italy.
+RP Distefano, T (reprint author), Politecn Torino, Dept Environm Land & Infrastruct Engn, Corso Duca Abruzzi 24, I-10129 Turin, Italy.
+EM tiziano.distefano@polito.it
+RI Marin, Giovanni/A-1917-2014
+OI Marin, Giovanni/0000-0002-7396-1561; Distefano,
+   Tiziano/0000-0002-1593-6480; RICCABONI, Massimo/0000-0003-4979-8933
+CR Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Aldasoro I, 2015, QUANT FINANC, V15, P589, DOI 10.1080/14697688.2014.968194
+   Allan JA, 2003, WATER INT, V28, P106, DOI 10.1080/02508060.2003.9724812
+   Andreoni V., CLIMATE VULNERABILIT
+   Ang BW, 2001, ENERGY, V26, P537, DOI 10.1016/S0360-5442(01)00022-6
+   Antonelli M, 2012, WATER RESOUR MANAG, V26, P4133, DOI 10.1007/s11269-012-0135-9
+   Arto I., GLOBAL RESOURCES USE
+   Arto I., 2012, 20 INT INP OUTP C IN
+   Baggio JA, 2016, P NATL ACAD SCI USA, V113, P13708, DOI 10.1073/pnas.1604401113
+   Barnaby W, 2009, NATURE, V458, P282, DOI 10.1038/458282a
+   Carvalho V., SURVEY COMPLEXITY RE
+   Carvalho V. M., COMPLEXITY RES INITI
+   Cazcarro I, 2013, ECOL ECON, V96, P51, DOI 10.1016/j.ecolecon.2013.09.010
+   Cazcarro I, 2013, ENVIRON SCI TECHNOL, V47, P12275, DOI 10.1021/es4019964
+   Conseil M, 2013, PLOS ONE, V8, DOI 10.1371/journal.pone.0063771
+   Contreras MGA, 2014, PHYS REV E, V90, DOI 10.1103/PhysRevE.90.062812
+   D'Odorico P, 2012, ENVIRON RES LETT, V7, DOI 10.1088/1748-9326/7/3/034007
+   Dalin C, 2012, P NATL ACAD SCI USA, V109, P5989, DOI 10.1073/pnas.1203176109
+   Dietzenbacher E, 2000, ECON SYST RES, V12, P497, DOI DOI 10.1080/09535310020003793
+   Dietzenbacher E., 1998, ECON SYST RES, V10, P307, DOI DOI 10.1080/09535319800000023
+   Dietzenbacher E, 2007, REG STUD, V41, P185, DOI 10.1080/00343400600929077
+   Dietzenbacher E, 2013, ECON SYST RES, V25, P71, DOI 10.1080/09535314.2012.761180
+   Distefano T., 2017, WORKING PAPER SERIES
+   Distefano T, 2017, ECOL ECON, V142, P130, DOI 10.1016/j.ecolecon.2017.06.019
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Feng KS, 2011, ECON SYST RES, V23, P371, DOI 10.1080/09535314.2011.638276
+   Feng KS, 2012, APPL GEOGR, V32, P691, DOI 10.1016/j.apgeog.2011.08.004
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Guan D, 2007, ECOL ECON, V61, P159, DOI 10.1016/j.ecolecon.2006.02.022
+   Hewings G., 2013, TRADE NETWORKS HIERA
+   Hoekstra AY, 2007, WATER RESOUR MANAG, V21, P35, DOI 10.1007/s11269-006-9039-x
+   Hoekstra A. Y., 2011, WATER FOOTPRINT ASSE
+   Hoekstra A. Y., 2007, GLOBALIZATION WATER
+   Hoekstra R, 2003, ENERG ECON, V25, P39, DOI 10.1016/S0140-9883(02)00059-2
+   Konar M, 2012, WATER RESOUR RES, V48, DOI 10.1029/2012WR011959
+   Konar M, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR010307
+   Konar M, 2016, ENVIRON RES LETT, V11, DOI 10.1088/1748-9326/11/3/035006
+   Lenzen M., 2001, INPUT OUTPUT ANAL AU
+   Lenzen M, 2013, ECOL ECON, V94, P78, DOI 10.1016/j.ecolecon.2013.06.018
+   Leung CC, 2007, PHYSICA A, V378, P591, DOI 10.1016/j.physa.2006.12.022
+   LUCAS RE, 1977, CARN ROCH CONF SERIE, V5, P7, DOI 10.1016/0167-2231(77)90002-1
+   Miller R. E., 2009, INPUT OUTPUT ANAL FD
+   Mitzenmacher M., 2004, INTERNET MATH, V1, P226, DOI DOI 10.1080/15427951.2004.10129088
+   Moore MO, 2011, WORLD ECON, V34, P1679, DOI 10.1111/j.1467-9701.2011.01406.x
+   Newman MEJ, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.208701
+   Reed WJ, 2001, ECON LETT, V74, P15, DOI 10.1016/S0165-1765(01)00524-9
+   Rose A, 1996, ECON SYST RES, V8, P33, DOI DOI 10.1080/09535319600000003
+   Roson R, 2015, SUSTAINABILITY-BASEL, V7, P5304, DOI 10.3390/su7055304
+   Rubinov M, 2010, NEUROIMAGE, V52, P1059, DOI 10.1016/j.neuroimage.2009.10.003
+   Saccone D., STRUCTURAL CHANGE EC
+   Sartori M, 2015, FOOD POLICY, V57, P114, DOI 10.1016/j.foodpol.2015.10.004
+   Schade Carleton, 2010, Environment Development and Sustainability, V12, P245, DOI 10.1007/s10668-009-9192-5
+   Serrano M, 2010, ECOL ECON, V69, P2224, DOI 10.1016/j.ecolecon.2010.06.008
+   Sonis M, 1998, ANN REGIONAL SCI, V32, P407, DOI 10.1007/s001680050081
+   Su B, 2012, ECON SYST RES, V24, P299, DOI 10.1080/09535314.2012.677997
+   Tamea S., 2014, DRIVERS VIRTUAL WATE
+   Tamea S, 2016, SCI REP-UK, V6, DOI 10.1038/srep18803
+   van Dijk AIJM, 2013, WATER RESOUR RES, V49, P1040, DOI 10.1002/wrcr.20123
+   Velazquez E, 2006, ECOL ECON, V56, P226, DOI 10.1016/j.ecolecon.2004.09.026
+   Velazquez E, 2011, WATER RESOUR MANAG, V25, P743, DOI 10.1007/s11269-010-9724-7
+   Xu Y, 2014, ECOL ECON, V101, P10, DOI 10.1016/j.ecolecon.2014.02.015
+NR 61
+TC 9
+Z9 9
+U1 6
+U2 20
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 2212-4284
+J9 WATER RESOUR ECON
+JI Water Resour. Econ.
+PD JUL
+PY 2018
+VL 23
+BP 28
+EP 52
+DI 10.1016/j.wre.2018.01.004
+PG 25
+WC Economics; Environmental Sciences; Environmental Studies; Water
+   Resources
+SC Business & Economics; Environmental Sciences & Ecology; Water Resources
+GA GO8WN
+UT WOS:000440380800003
+DA 2019-12-28
+ER

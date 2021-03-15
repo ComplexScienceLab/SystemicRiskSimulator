@@ -1,0 +1,441 @@
+
+PT J
+AU Fernandez, AI
+   Gonzalez, F
+   Suarez, N
+AF Fernandez, Ana I.
+   Gonzalez, Francisco
+   Suarez, Nuria
+TI The real effect of banking crises: Finance or asset allocation effects?
+   Some international evidence
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Asset allocation; Banking crisis; Economic growth; Intangible assets;
+   Institutions
+ID EXTERNAL FINANCE; GROWTH; COSTS; RISK; MARKETS; FIRM; LAW
+AB This paper analyzes whether the decline in economic growth that follows a banking crisis occurs because of a reduction in the amount of credit available (finance effect) or a worsening in the allocation of investable resources (asset allocation effect). We use a sample of more than 2500 industrial firms in 18 developed and developing countries that experienced 19 systemic banking crises between 1989 and 2007. The results indicate that banking crises negatively affect firms' intangible investments, which intensifies the economic downturn. The negative growth effect produced by the worsening of the investment allocation is stronger in countries with highly developed financial systems and institutions. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Fernandez, Ana I.; Gonzalez, Francisco; Suarez, Nuria] Univ Oviedo, Fac Econ & Business, E-33071 Oviedo, Spain.
+   [Suarez, Nuria] Univ Publ Navarra, Fac Business & Econ, Pamplona 31006, Spain.
+RP Fernandez, AI (reprint author), Univ Oviedo, Fac Econ & Business, Avda Cristo S-N, E-33071 Oviedo, Spain.
+EM afernan@uniovi.es; fgonzale@uniovi.es; nuria.suarez@unavarra.es
+RI de Lima, Andreia/G-8040-2014; SUAREZ, NURIA/H-1206-2015; Gonzalez,
+   Francisco/H-1565-2015
+OI SUAREZ, NURIA/0000-0003-0832-9778; Gonzalez,
+   Francisco/0000-0002-8808-4434
+CR Almeida H, 2005, J FINANC ECON, V75, P133, DOI 10.1016/j.jfineco.2004.06.001
+   Beck T, 2006, J BANK FINANC, V30, P1581, DOI 10.1016/j.jbankfin.2005.05.010
+   Beck T, 2000, J FINANC ECON, V58, P261, DOI 10.1016/S0304-405X(00)00072-6
+   Benfratello L, 2008, J FINANC ECON, V90, P197, DOI 10.1016/j.jfineco.2008.01.001
+   BERGER AN, 1990, J MONETARY ECON, V25, P21, DOI 10.1016/0304-3932(90)90042-3
+   BOOT AWA, 1991, ECON J, V101, P458, DOI 10.2307/2233552
+   Bordo M, 2001, ECON POLICY, P51
+   Boyd JH, 2005, J MONEY CREDIT BANK, V37, P977, DOI 10.1353/mcb.2006.0002
+   Braun M, 2005, J FINANC, V60, P1097, DOI 10.1111/j.1540-6261.2005.00757.x
+   Claessens S, 2003, J FINANC, V58, P2401, DOI 10.1046/j.1540-6261.2003.00610.x
+   Dell'Ariccia G, 2008, J FINANC INTERMED, V17, P89, DOI 10.1016/j.jfi.2007.06.001
+   Demirguc-Kunt A, 1998, J FINANC, V53, P2107, DOI 10.1111/0022-1082.00084
+   Detragiache E, 2000, J FINANC, V55, P1133, DOI 10.1111/0022-1082.00243
+   Ergungor G.E., 2004, J BANK FINANC, V28, P2869
+   Green WH, 2011, ECONOMETRIC ANAL
+   GREENWOOD J, 1990, J POLIT ECON, V98, P1076, DOI 10.1086/261720
+   Hall BH, 2002, OXFORD REV ECON POL, V18, P35, DOI 10.1093/oxrep/18.1.35
+   Hoggarth G, 2002, J BANK FINANC, V26, P825, DOI 10.1016/S0378-4266(01)00268-0
+   Hutchison MM, 2005, J MONEY CREDIT BANK, V37, P725, DOI 10.1353/mcb.2005.0043
+   JENSEN MC, 1976, J FINANC ECON, V3, P305, DOI 10.1016/0304-405X(76)90026-X
+   John K, 2008, J FINANC, V63, P1679, DOI 10.1111/j.1540-6261.2008.01372.x
+   Kaufmann D., 2005, 3630 WORLD BANK POL
+   Kroszner RS, 2007, J FINANC ECON, V84, P187, DOI 10.1016/j.jfineco.2006.05.001
+   La Porta R, 1998, J POLIT ECON, V106, P1113, DOI 10.1086/250042
+   Laeven Luc, 2008, WP08224 IMF
+   LaPorta R, 1997, J FINANC, V52, P1131, DOI 10.1111/j.1540-6261.1997.tb02727.x
+   Levine R, 1997, J ECON LIT, V35, P688
+   LEVINE R, 2005, HDB EC GROWTH
+   Matsuyama K, 2007, AM ECON REV, V97, P503, DOI 10.1257/aer.97.1.503
+   Pang J., 2009, J BANK FINANC, V33, P2037
+   Parisi M., 2006, EUROPEAN EC REV, V50, P197
+   Petersen MA, 2009, REV FINANC STUD, V22, P435, DOI 10.1093/rfs/hhn053
+   Rajan B.G., 1998, AM ECON REV, V88, P559
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Wurgler J, 2000, J FINANC ECON, V58, P187, DOI 10.1016/S0304-405X(00)00070-2
+NR 35
+TC 10
+Z9 10
+U1 0
+U2 28
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JUL
+PY 2013
+VL 37
+IS 7
+BP 2419
+EP 2433
+DI 10.1016/j.jbankfin.2013.02.012
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA 155ZP
+UT WOS:000319789800022
+DA 2019-12-28
+ER
+
+PT J
+AU Acharya, VV
+   Merrouche, O
+AF Acharya, Viral V.
+   Merrouche, Ouarda
+TI Precautionary Hoarding of Liquidity and Interbank Markets: Evidence from
+   the Subprime Crisis
+SO REVIEW OF FINANCE
+LA English
+DT Article
+ID SYSTEMIC RISK; ILLIQUIDITY; MODEL
+AB We study the liquidity demand of large settlement banks in the UK and its effect on the money markets before and during the subprime crisis of 2007-08. We find that the liquidity demand of large settlement banks experienced a 30% increase in the period immediately following August 9 2007, the day when money markets froze, igniting the crisis. Following this shift, liquidity demand had a precautionary nature in that it rose on days of high payment activity and for banks with greater credit risk. This caused overnight interbank rates to rise, an effect virtually absent in the precrisis period.
+C1 [Acharya, Viral V.] NYU Stern, CEPR, New York, NY USA.
+   [Acharya, Viral V.] NBER, Cambridge, MA 02138 USA.
+   [Merrouche, Ouarda] World Bank, Washington, DC USA.
+   [Acharya, Viral V.] London Business Sch, London, England.
+RP Acharya, VV (reprint author), NYU Stern, CEPR, New York, NY USA.
+CR Acharya VV, 2012, AM ECON J-MACROECON, V4, P184, DOI 10.1257/mac.4.2.184
+   Acharya VV, 2011, J MONETARY ECON, V58, P436, DOI 10.1016/j.jmoneco.2011.05.006
+   Acharya VV, 2011, REV FINANC STUD, V24, P2166, DOI 10.1093/rfs/hhq073
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   ACHARYA VV, 2009, SECURITIZATION RISK
+   Afonso G, 2011, J FINANC, V66, P1109, DOI 10.1111/j.1540-6261.2011.01670.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2008, INTERBANK MARKET LIQ
+   Allen F., 2008, ROLE LIQUIDITY UNPUB
+   Almeida H, 2004, J FINANC, V59, P1777, DOI 10.1111/j.1540-6261.2004.00679.x
+   Armantier O., 2010, STIGMA FINANCI UNPUB
+   Ashcraft A, 2011, J MONEY CREDIT BANK, V43, P311, DOI 10.1111/j.1538-4616.2011.00438.x
+   Ashcraft AB, 2007, AM ECON REV, V97, P221, DOI 10.1257/aer.97.2.221
+   Bai J, 2003, J APPL ECONOMET, V18, P1, DOI 10.1002/jae.659
+   Bai JS, 1998, ECONOMETRICA, V66, P47, DOI 10.2307/2998540
+   Bank for International Settlements, 2010, CGFS PAP
+   Bhattacharia S, 1987, NEW APPROACHES MONET, P69
+   BHATTACHARYA S, 1994, ECON LETT, V44, P287, DOI 10.1016/0165-1765(93)00350-W
+   Caballero RJ, 2001, J MONETARY ECON, V48, P513, DOI 10.1016/S0304-3932(01)00084-8
+   Clews Roger, 2005, BANK ENGLAND Q B SUM, P211
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   DIAMOND DW, 2001, J POLITICAL EC, V109, P2431
+   Fecht F, 2011, J FINANC ECON, V102, P344, DOI 10.1016/j.jfineco.2011.05.015
+   Flannery MJ, 1996, J MONEY CREDIT BANK, V28, P804, DOI 10.2307/2077922
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Freixas X., 2007, ROLE INTERBANK MARKE
+   Freixas X, 2011, REV FINANC STUD, V24, P2656, DOI 10.1093/rfs/hhr018
+   Furfine C, 2002, EUR ECON REV, V46, P809, DOI 10.1016/S0014-2921(01)00215-X
+   Furfine C., 1999, FINANCIAL MARKETS IN, V8, P24, DOI DOI 10.1111/1468-0416.00031
+   Furfine CH, 2000, J MONETARY ECON, V46, P535, DOI 10.1016/S0304-3932(00)00027-1
+   Hamilton JD, 1997, AM ECON REV, V87, P80
+   Heider F., 2008, LIQUIDITY HOARDING I
+   Holmstrom B, 1998, J POLIT ECON, V106, P1, DOI 10.1086/250001
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+NR 36
+TC 83
+Z9 84
+U1 0
+U2 40
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1572-3097
+EI 1573-692X
+J9 REV FINANC
+JI Rev. Financ.
+PD JAN
+PY 2013
+VL 17
+IS 1
+BP 107
+EP 160
+DI 10.1093/rof/rfs022
+PG 54
+WC Business, Finance; Economics
+SC Business & Economics
+GA 058OA
+UT WOS:000312642200003
+DA 2019-12-28
+ER
+
+PT J
+AU Cousin, A
+   Dorobantu, D
+   Rulliere, D
+AF Cousin, Areski
+   Dorobantu, Diana
+   Rulliere, Didier
+TI An extension of Davis and Lo's contagion model
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Contagion models; Credit risk; Quantitative finance; Systemic risk; C6;
+   C60; G1; G10
+ID CREDIT DERIVATIVES; INFORMATION; DEPENDENCE; DEFAULTS; RISKS
+AB The present paper provides a multi-period contagion model in the credit risk field. Our model is an extension of Davis and Lo's infectious default model. We consider an economy of n firms that may default directly or may be infected by other defaulting firms (a domino effect also being possible). Spontaneous defaults without external influence and infection are described by not necessarily independent Bernoulli-type random variables. Moreover, several sources of contamination could be required to infect another firm. In this paper we compute the probability distribution function of the total number of defaults in a dependency context. We also give a simple recursive algorithm to compute this distribution in an exchangeability context. Numerical applications illustrate the impact of exchangeability among direct defaults and among contaminations, on different indicators calculated from the law of the total number of defaults. We then calibrate the model on iTraxx data before and during the crisis. The dynamic feature together with the contagion effect have a significant impact on the model performance, especially during the recent distressed period.
+C1 [Cousin, Areski; Dorobantu, Diana; Rulliere, Didier] Univ Lyon 1, Lab SAF, EA 2429, Inst Sci Financiere & Assurances, F-69007 Lyon, France.
+RP Rulliere, D (reprint author), Univ Lyon 1, Lab SAF, EA 2429, Inst Sci Financiere & Assurances, 50 Ave Tony Garnier, F-69007 Lyon, France.
+EM didier.rulliere@univ-lyon1.fr
+FU ANRFrench National Research Agency (ANR) [ANR-08-BLAN-0314-01]; Bnp
+   Paribas Cardif 'chaire d'excellence Management de la Modelisation';
+   MIRACCLE-GICC project
+FX This work was funded by ANR Research Project ANR-08-BLAN-0314-01. It
+   also benefitted from the support of the Bnp Paribas Cardif 'chaire
+   d'excellence Management de la Modelisation' and from the MIRACCLE-GICC
+   project. The authors would like to thank the two anonymous referees for
+   useful comments and suggestions. We are grateful to Jean-Paul Laurent
+   for the many helpful discussions on the subject.
+CR Azizpour S., 2008, SELF EXCITING CORPOR
+   BOISSAY F, 2006, WORKING PAPER SERIES, V573
+   Cont R., 2008, 200801 COL U
+   Cont R, 2010, SIAM J FINANC MATH, V1, P555, DOI 10.1137/09076800X
+   Cousin A., 2008, FRONTIERS QUANTITATI, P185
+   Cousin A., 2010, LECT NOTES MATH, P1
+   Das SR, 2007, J FINANC, V62, P93, DOI 10.1111/j.1540-6261.2007.01202.x
+   Davis M., 2001, QUANTITATIVE FINANCE, V1, P382, DOI DOI 10.1080/713665832
+   de Finetti B, 1931, ATTI R ACAD N 6 SFMN, V4, P251
+   de Koch J., 2007, CDOS CHAINS
+   Denuit M, 2002, INSUR MATH ECON, V30, P1, DOI 10.1016/S0167-6687(01)00088-9
+   Denuit M, 2001, INSUR MATH ECON, V28, P305, DOI 10.1016/S0167-6687(00)00079-2
+   Egloff D, 2007, J BANK FINANC, V31, P2475, DOI 10.1016/j.jbankfin.2006.10.023
+   Epple F, 2007, INT J THEOR APPL FIN, V10, P733, DOI 10.1142/S0219024907004354
+   Feller W, 1968, INTRO PROBABILITY TH, V1
+   Frey R, 2010, FINANC STOCH, V14, P495, DOI 10.1007/s00780-010-0129-5
+   Frey R, 2010, J ECON DYN CONTROL, V34, P710, DOI 10.1016/j.jedc.2009.10.013
+   Frey R, 2008, INT J THEOR APPL FIN, V11, P611, DOI 10.1142/S0219024908004956
+   Gerber H, 1995, LIFE INSURANCE MATH
+   Giesecke K, 2004, J BANK FINANC, V28, P3009, DOI 10.1016/j.jbankfin.2003.11.002
+   Graziano G., 2009, INT J THEOR APPL FIN, V12, P54
+   Halperin I., 2008, J COMPUT FINANC, V12, P77
+   HERBERTSSON A, 2006, J COMPUT FINANC, V12, P49
+   Herbertsson A., 2007, J CREDIT RISK, V4, P3
+   Jarrow RA, 2001, J FINANC, V56, P1765, DOI 10.1111/0022-1082.00389
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   Jorion P, 2010, FINAN REV, V45, P683, DOI 10.1111/j.1540-6288.2010.00266.x
+   Lando D, 2010, J FINANC INTERMED, V19, P355, DOI 10.1016/j.jfi.2010.03.002
+   Laurent JP, 2011, QUANT FINANC, V11, P1773, DOI 10.1080/14697680903390126
+   Lopatin A., 2008, ADV ECONOMETRICS, V22, P243
+   Rosch D., 2008, RISK, P78
+   Sakata A, 2007, J PHYS SOC JPN, V76, DOI 10.1143/JPSJ.76.054801
+   SCHONBUCHER P, 2006, PORTFOLIO LOSSES TER
+   SCHONBUCHER PJ, 2001, COPULA DEPENDENT DEF
+   Steffensen M., 2007, REV FINANC, V11, P209
+   van der Voort M., 2006, IMPLIED LOSS MODEL
+   Yu F, 2007, MATH FINANC, V17, P155, DOI 10.1111/j.1467-9965.2007.00298.x
+NR 37
+TC 3
+Z9 3
+U1 0
+U2 10
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD MAR 1
+PY 2013
+VL 13
+IS 3
+BP 407
+EP 420
+DI 10.1080/14697688.2012.727015
+PG 14
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 101SI
+UT WOS:000315794300007
+DA 2019-12-28
+ER
+
+PT J
+AU Musmeci, N
+   Battiston, S
+   Caldarelli, G
+   Puliga, M
+   Gabrielli, A
+AF Musmeci, Nicolo
+   Battiston, Stefano
+   Caldarelli, Guido
+   Puliga, Michelangelo
+   Gabrielli, Andrea
+TI Bootstrapping Topological Properties and Systemic Risk of Complex
+   Networks Using the Fitness Model
+SO JOURNAL OF STATISTICAL PHYSICS
+LA English
+DT Article
+DE Complex networks; Financial systems
+AB In this paper we present a novel method to reconstruct global topological properties of a complex network starting from limited information. We assume to know for all the nodes a non-topological quantity that we interpret as fitness. In contrast, we assume to know the degree, i.e. the number of connections, only for a subset of the nodes in the network. We then use a fitness model, calibrated on the subset of nodes for which degrees are known, in order to generate ensembles of networks. Here, we focus on topological properties that are relevant for processes of contagion and distress propagation in networks, i.e. network density and k-core structure, and we study how well these properties can be estimated as a function of the size of the subset of nodes utilized for the calibration. Finally, we also study how well the resilience to distress propagation in the network can be estimated using our method. We perform a first test on ensembles of synthetic networks generated with the Exponential Random Graph model, which allows to apply common tools from statistical mechanics. We then perform a second test on empirical networks taken from economic and financial contexts. In both cases, we find that a subset as small as 10 % of nodes can be enough to estimate the properties of the network along with its resilience with an error of 5 %.
+C1 [Musmeci, Nicolo] Kings Coll London, Dept Math, London WC2R 2LS, England.
+   [Battiston, Stefano; Puliga, Michelangelo] ETH, Chair Syst Design, CH-8092 Zurich, Switzerland.
+   [Caldarelli, Guido] IMT Alti Studi Lucca, I-55100 Lucca, Italy.
+   [Caldarelli, Guido; Gabrielli, Andrea] Univ Roma La Sapienza, CNR ISC UOS ROMA, I-00185 Rome, Italy.
+   [Caldarelli, Guido; Gabrielli, Andrea] London Inst Math Sci, London W1K 2XF, England.
+RP Caldarelli, G (reprint author), IMT Alti Studi Lucca, Piazza S Ponziano 6, I-55100 Lucca, Italy.
+EM nicolo.musmeci@kcl.ac.uk; sbattiston@ethz.ch;
+   guido.caldarelli@imtlucca.it; puligam@ethz.ch;
+   andrea.gabrielli@roma1.infn.it
+RI Battiston, Stefano/I-2624-2012; battiston, stefano/M-1612-2017;
+   Gabrielli, Andrea/A-7175-2008; Caldarelli, Guido/A-5274-2010
+OI Battiston, Stefano/0000-0002-0051-973X; battiston,
+   stefano/0000-0002-0051-973X; Gabrielli, Andrea/0000-0003-3705-7281;
+   Caldarelli, Guido/0000-0001-9377-3616
+FU European project FET-Open FOC [255987]; Italian PNR project CRISIS-Lab
+FX We thank support from the European project FET-Open FOC (255987) and the
+   Italian PNR project CRISIS-Lab.
+CR Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Caldarelli G, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.258702
+   Clauset A, 2008, NATURE, V453, P98, DOI 10.1038/nature06830
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Dorogovtsev S., 2010, PHYS J, V9, P51
+   Fagiolo G, 2010, J ECON INTERACT COOR, V5, P1, DOI 10.1007/s11403-010-0061-y
+   Garlaschelli D, 2004, PHYS REV LETT, V93, DOI 10.1103/PhysRevLett.93.188701
+   Garlaschelli D, 2005, PHYSICA A, V350, P491, DOI 10.1016/j.physa.2004.11.040
+   Garlaschelli D, 2007, NAT PHYS, V3, P813, DOI 10.1038/nphys729
+   Kitsak M, 2010, NAT PHYS, V6, P888, DOI [10.1038/NPHYS1746, 10.1038/nphys1746]
+   Mastromatteo I, 2012, J STAT MECH-THEORY E, DOI 10.1088/1742-5468/2012/03/P03011
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Park J, 2004, PHYS REV E, V70, DOI 10.1103/PhysRevE.70.066117
+   VANLELYVELD I, 2006, INT J CENT BANK, V2, P99
+NR 16
+TC 43
+Z9 44
+U1 1
+U2 30
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0022-4715
+J9 J STAT PHYS
+JI J. Stat. Phys.
+PD MAY
+PY 2013
+VL 151
+IS 3-4
+BP 720
+EP 734
+DI 10.1007/s10955-013-0720-1
+PG 15
+WC Physics, Mathematical
+SC Physics
+GA 116OW
+UT WOS:000316893000017
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Calmes, C
+   Theoret, R
+AF Calmes, Christian
+   Theoret, Raymond
+TI Market-oriented banking, financial stability and macro-prudential
+   indicators of leverage
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Leverage; Financial stability; Market oriented banking; Liquidity; Basel
+   III; Kalman filter
+ID DIVERSIFICATION; RISK; LIQUIDITY; CRISIS
+AB In order to complement the macro-prudential framework introduced in Basel III, we propose a new breed of indicators based on the degree of leverage which helps track the time-varying dimension of bank systemic risk a key aspect of financial stability. Given the new sources of liquidity generated by off-balance-sheet activities, time-varying indicators of leverage become more informative of the leverage dynamics. We introduce a Kalman filter procedure to study such elasticity-based measures of broad leverage. This approach enables the detection of the build-up of financial imbalances as measured by the increase in bank risk years before what the traditional assets to equity ratio predicts. Most elasticity measures we propose appear in line with the historical episodes, well tracking the cyclical pattern of leverage. Importantly, the degree of total leverage suggests that market-oriented banking exerts a stronger influence on leverage during expansion periods. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Calmes, Christian] Univ Quebec Outaouais, LRSP, ESG UQAM, Chaire Informat Financiere & Org, 101 St Jean Bosco, Gatineau, PQ, Canada.
+   [Theoret, Raymond] Univ Quebec Montreal, Ecole Sci Gest, Montreal, PQ, Canada.
+   [Theoret, Raymond] Univ Quebec Outaouais, Chaire Informat Financiere & Org, ESG UQAM, Gatineau, PQ, Canada.
+RP Calmes, C (reprint author), Univ Quebec Outaouais, LRSP, ESG UQAM, Chaire Informat Financiere & Org, 101 St Jean Bosco, Gatineau, PQ, Canada.
+EM christian.calmes@uqo.ca; raymond.theoret@uqam.ca
+CR Acharya VV, 2009, CRIT REV, V21, P195, DOI 10.1080/08913810902952903
+   Adrian T., 2011, STAFF REPORT
+   Allen F, 2011, CROSS BORDER BANKING
+   AMBROSE BW, 2005, J FINANCIAL SERVICES, V28, P113, DOI DOI 10.1007/s10693-005-4358-2
+   Barrell R., 2010, WORKING PAPER
+   Bell J., 2000, FINANCIAL STABILITY, P113
+   Blanchard O., 2009, WORKING PAPER
+   Bordo M., 2011, WORKING PAPER
+   Boyd J. H., 1994, FEDERAL RESERVE BANK, V18, P1
+   Brunnermeier M., 2011, WORKING PAPER
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Calmes C., 2009, J INT FINANC MARK I, V19, P128, DOI DOI 10.1016/j.intfin.2007.09.003
+   Calmes C, 2012, AESTIMATIO, P88
+   Calmes C, 2009, CH CRC FINANC SER, P323
+   Calmes C, 2010, J BANK FINANC, V34, P1719, DOI 10.1016/j.jbankfin.2010.03.017
+   Calmes Christian, 2004, SWISS J EC STAT, V140, P1
+   CALOMIRIS C, 2004, J FINANCIAL SERVICES, V26, P5, DOI DOI 10.1023/B:FINA.0000029655.42748.D1
+   Canova F, 1998, J MONETARY ECON, V41, P475, DOI 10.1016/S0304-3932(98)00006-3
+   Cardone-Riportella C, 2010, J BANK FINANC, V34, P2639, DOI 10.1016/j.jbankfin.2010.05.003
+   Christopherson JA, 1998, REV FINANC STUD, V11, P111, DOI 10.1093/rfs/11.1.111
+   Cihak M., 2007, WORKING PAPER
+   Demsetz RS, 1997, J MONEY CREDIT BANK, V29, P300, DOI 10.2307/2953695
+   DeYoung R, 2001, J FINANC INTERMED, V10, P54, DOI 10.1006/jfin.2000.0305
+   Ferson W. E., 2004, CONDITIONAL EVALUATI
+   Ferson WE, 1996, J FINANC, V51, P425, DOI 10.2307/2329367
+   Franses P.H., 2000, NONLINEAR TIME SERIE
+   Gambacorta L, 2011, WORKING PAPER
+   GORTON G, 1990, J FINANC, V45, P49, DOI 10.2307/2328809
+   Griffin H. F., 2003, J FINANC RES, V26, P179
+   HAMADA RS, 1972, J FINANC, V27, P435, DOI 10.2307/2978486
+   Jones D, 2000, J BANK FINANC, V24, P35, DOI 10.1016/S0378-4266(99)00052-7
+   Kashyap A.K., 1993, WORKING PAPER
+   KLING A., 2009, WORKING PAPER
+   Ljungqvist Lars, 2004, RECURSIVE MACROECONO
+   Lorenzoni Guido, 2007, WORKING PAPER
+   Loutskina E, 2011, J FINANC ECON, V100, P663, DOI 10.1016/j.jfineco.2011.02.005
+   Lucas Jr R.E., 2011, LIQUIDITY CRISES UND, P1
+   Maddaloni A., 2011, REVIEW OF FINANCIAL, V24, P1337
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   MILLER MH, 1961, J BUS, V34, P411, DOI 10.1086/294442
+   MODIGLIANI F, 1958, AM ECON REV, V48, P261
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Nijskens R, 2011, J BANK FINANC, V35, P1391, DOI 10.1016/j.jbankfin.2010.10.001
+   Rajan R. G., 2005, WORKING PAPER
+   Rajan RG, 2009, FED RESERVE BANK ST, V91, P397
+   Ratnovski L., 2009, WORKING PAPER
+   Rhee S.G., 1986, RES FINANCE, V6, P197
+   Schoenmaker D., 2013, GOVERNANCE OF INTERN
+   Schoenmaker D., 2011, WORKING PAPER
+   Schoenmaker D, 2011, ECON LETT, V111, P57, DOI 10.1016/j.econlet.2011.01.010
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Shoenmaker D., 2011, WORKING PAPER
+   Stein J. C., 2011, WORKING PAPER
+   Stein JL, 2010, EUR FINANC MANAG, V16, P858, DOI 10.1111/j.1468-036X.2010.00579.x
+   Stiroh KJ, 2006, J MONEY CREDIT BANK, V38, P1351, DOI 10.1353/mcb.2006.0075
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   Stiroh KJ, 2004, J MONEY CREDIT BANK, V36, P853, DOI 10.1353/mcb.2004.0076
+   Stiroh KJ, 2006, J FINANC SERV RES, V30, P237, DOI DOI 10.1007/S10693-006-0418-5
+   Uhlig H, 2010, J MONETARY ECON, V57, P78, DOI 10.1016/j.jmoneco.2009.10.010
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Wagner W, 2010, CESIFO ECON STUD, V56, P96, DOI 10.1093/cesifo/ifp022
+NR 61
+TC 10
+Z9 11
+U1 0
+U2 27
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD DEC
+PY 2013
+VL 27
+BP 13
+EP 34
+DI 10.1016/j.intfin.2013.07.004
+PG 22
+WC Business, Finance; Economics
+SC Business & Economics
+GA 257NV
+UT WOS:000327392500002
+DA 2019-12-28
+ER

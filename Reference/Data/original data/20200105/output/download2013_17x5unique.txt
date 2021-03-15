@@ -1,0 +1,481 @@
+
+PT J
+AU Adam, T
+   Benecka, S
+AF Adam, Tomas
+   Benecka, Sona
+TI Financial Stress Spillover and Financial Linkages between the Euro Area
+   and the Czech Republic
+SO FINANCE A UVER-CZECH JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE systemic risk; financial crises; financial stress index; financial
+   linkages
+AB This article analyzes the transmission of financial systemic stress from the euro area to the Czech Republic. We employ a recently developed composite indicator of systemic stress (CISS), which has a unique construction reflecting the correlations between markets and so captures the systemic stress of the financial system. The results from time-varying regression with stochastic volatility estimated using Bayesian inference indicate that the degree of transmission depends significantly on the level of stress, i.e., the intensity of the transmission mechanism itself is given by the magnitude of the shock. Second, the analysis reveals a more complex structure of financial stress linkages between markets on both the domestic and the international level. Finally, the results also support the current findings that the nature of stress is important for the transmission and that the sovereign debt crisis has so far had a limited impact on Czech financial markets.
+C1 [Adam, Tomas] Czech Natl Bank, Prague, Czech Republic.
+   [Adam, Tomas] Charles Univ Prague, Fac Social Sci, CR-11636 Prague 1, Czech Republic.
+   [Benecka, Sona] Czech Natl Bank, Fac Social Sci, Prague, Czech Republic.
+   [Benecka, Sona] Univ Finance & Adm, Prague, Czech Republic.
+RP Adam, T (reprint author), Czech Natl Bank, Prague, Czech Republic.
+EM tomas.adam@cnb.cz; sona.benecka@cnb.cz
+CR Babecky J., 2011, CZECH NATL BANK WORK, V8
+   Babecky J, 2010, CZECH NATL BANK WORK, V10
+   Brave S, 2011, FEDERAL RESERVE BANK, V35, P22
+   Bubak V, 2011, J BANK FINANC, V35, P2829, DOI 10.1016/j.jbankfin.2011.03.012
+   Cardarelli Roberto, 2009, 09100 IMF
+   Chinn Menzie, 2008, J COMP POLICY ANAL, V10, P309, DOI DOI 10.1080/13876980802231123
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   ECB, 2009, FINANCIAL STABILITY
+   Egert B, 2011, EMPIR ECON, V40, P393, DOI 10.1007/s00181-010-0341-3
+   Franta M, 2011, CZECH NATL BANK WORK, V13
+   Gersl A, 2007, FINANCE UVER CZECH J, V57
+   Gersl A, 2009, FINANC UVER, V59, P577
+   Grimaldi M., 2010, EUROPEAN CENTRAL BAN, V1214
+   Hakkio C. S., 2009, ECON REV, V94, P5
+   Hanousek J, 2011, REV INT ECON, V19, P170, DOI 10.1111/j.1467-9396.2010.00939.x
+   Hanousek J, 2009, J FINANC STABIL, V5, P199, DOI 10.1016/j.jfs.2008.01.003
+   Havranek T, 2010, CZECH NATL BANK WORK, V6
+   Hollo D., 2012, EUROPEAN CENTRAL BAN, V1426
+   Illing M., 2006, J FINANCIAL STABILIT, V2, P243, DOI DOI 10.1016/j.jfs.2006.06.002
+   Kolb Robert W., 2011, FINANCIAL CONTAGION
+   Lo Duca Marco, 2011, ECB WORKING PAPER SE, V1311
+   Louzis D, 2011, FINANCIAL SYST UNPUB, DOI DOI 10.2139/SSRN.1736570
+   Nakajima J, 2011, BANK JAPAN I MONETAR
+   Nelson W, 2007, 4 JOINT CENTR BANK R
+   Ong S, 2011, 1130 FED RES BANK CL, P11
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Sandhal J, 2011, SVERIGES RIKSBANK EC, V2
+   Schwaab B, 2011, WORKING PAPER SERIES, V1327
+   Wang M, 2010, EUROPEAN J FINANCE B, V3
+   Yiu M, 2010, HONG KONG MONETARY A, V3
+NR 30
+TC 6
+Z9 6
+U1 0
+U2 0
+PU CHARLES UNIV-PRAGUE
+PI PRAGUE 2
+PA C/O DATAKONEKT S R O, VINOHRADSKA 49, PO BOX 6, PRAGUE 2 120 00, CZECH
+   REPUBLIC
+SN 0015-1920
+J9 FINANC UVER
+JI Financ. Uver
+PY 2013
+VL 63
+IS 1
+BP 46
+EP 64
+PG 19
+WC Business, Finance
+SC Business & Economics
+GA 109NY
+UT WOS:000316376500004
+DA 2019-12-28
+ER
+
+PT J
+AU Barth, A
+   Schnabel, I
+AF Barth, Andreas
+   Schnabel, Isabel
+TI Why banks are not too big to fail - evidence from the CDS market
+SO ECONOMIC POLICY
+LA English
+DT Article
+ID CONTAGION; LIQUIDITY
+AB This paper argues that bank size is not a satisfactory measure of systemic risk because it neglects aspects such as interconnectedness, correlation, and the economic context. In order to differentiate the effect of bank size from that of systemic importance, we control for systemic risk using the CoVaR measure introduced by Adrian and Brunnermeier (2011). We show that a bank's contribution to systemic risk has a significant negative effect on banks' credit default swap (CDS) spreads, supporting the too-systemic-to-fail hypothesis. Once we control for systemic risk, bank size (relative to gross domestic product (GDP)) has either no or a positive effect on banks' CDS spreads. The effect of bank size increases in the home country's debt ratio and turns positive already at moderate debt ratios. This result is consistent with the too-big-to-save hypothesis. We show further that the effect of systemic risk rises sharply at the onset of the financial crisis in August 2007, but weakens after the failure of Lehman Brothers, reflecting changing bailout expectations. Taken together, our results suggest that banks are not too big to fail, but they may be too systemic to fail and too big to save. Andreas Barth and Isabel Schnabel
+C1 [Barth, Andreas] Johannes Gutenberg Univ Mainz, D-55122 Mainz, Germany.
+   MPI Bonn, Bonn, Germany.
+RP Barth, A (reprint author), Johannes Gutenberg Univ Mainz, D-55122 Mainz, Germany.
+CR Acharya V., 2010, WORKING PAPER
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Adrian T., 2011, 17454 NBER
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Beck T., 2009, WORKING PAPER
+   Benoit S., 2012, WORKING PAPER
+   Boyd John H., 1994, FEDERAL RESERVE BANK, V18, P2
+   Brownlees T. C., 2011, WORKING PAPER
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Buiter W. H., 2008, CEPR POLICY INSIGHT, P26
+   Central Bank of Iceland, 2009, FIN STAB REP
+   Chen YN, 1999, J POLIT ECON, V107, P946, DOI 10.1086/250086
+   Demirguc-Kunt A., 2010, 7903 CEPR
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   European Central Bank, 2008, REC GOV COUNC EUR CE
+   Hellwig M., 1998, TOO BIG BE RESCUED
+   Hupkes EHG, 2005, SYSTEMIC FINANCIAL CRISES: RESOLVING LARGE BANK INSOLVENCIES, P193, DOI 10.1142/9789812569479_0014
+   Kaufman G., 2002, Q REV EC FINANCE, V42, P423
+   Lepetit L, 2008, J BANK FINANC, V32, P1452, DOI 10.1016/j.jbankfin.2007.12.002
+   Rime B., 2005, DO TOO BIG TO FAIL E
+   SCHWERT GW, 1989, J BUS ECON STAT, V7, P147, DOI 10.2307/1391432
+   Stern G. H., 2004, TOO BIG FAIL HAZARDS
+   Volz M, 2011, J EMPIR FINANC, V18, P195, DOI 10.1016/j.jempfin.2011.01.001
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 26
+TC 9
+Z9 9
+U1 3
+U2 30
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0266-4658
+J9 ECON POLICY
+JI Econ. Policy
+PD APR
+PY 2013
+VL 28
+IS 74
+BP 335
+EP 369
+DI 10.1111/1468-0327.12007
+PG 35
+WC Economics
+SC Business & Economics
+GA 129RN
+UT WOS:000317859700005
+DA 2019-12-28
+ER
+
+PT J
+AU Sarasvathy, SD
+   Menon, AR
+   Kuechle, G
+AF Sarasvathy, Saras D.
+   Menon, Anil R.
+   Kuechle, Graciela
+TI Failing firms and successful entrepreneurs: serial entrepreneurship as a
+   temporal portfolio
+SO SMALL BUSINESS ECONOMICS
+LA English
+DT Article
+DE Serial entrepreneurship; Firm performance; Industrial organization;
+   Population ecology; Labor economics; Financial economics
+ID RISK PROPENSITY DIFFERENCES; TESTING GIBRATS LAW; SELF-EFFICACY; GROWTH;
+   SIZE; MANAGERS; HETEROGENEITY; PERSPECTIVES; ADOLESCENCE; PERSISTENCE
+AB Entrepreneurial performance is almost always confounded with firm performance. In this paper we argue for an instrumental view of the firm by formally showing that entrepreneurs can amplify their expected success rates by designing their careers as temporal portfolios that exploit contagion processes embedded in serial entrepreneurship. The advantages to holding concurrent portfolios that exploit heterogeneity are well known. The same advantages may be achieved in the serial context through contagion. Our model exploits an observation due to William Feller on the near equivalence of the two, statistically speaking. It also leads to empirically plausible implications about the size distribution of firms in the economy and illustrates the relevance of considering firms and entrepreneurs as distinct loci of analysis.
+C1 [Sarasvathy, Saras D.; Menon, Anil R.] Univ Virginia, Charlottesville, VA 22903 USA.
+   [Kuechle, Graciela] Univ Deusto, Basque Inst Competitiveness, San Sebastian 20012, Spain.
+RP Sarasvathy, SD (reprint author), Univ Virginia, Charlottesville, VA 22903 USA.
+EM SarasvathyS@darden.virginia.edu; graciela.kuechle@orkestra.deusto.es
+RI Kuechle, Graciela/AAH-8290-2019
+CR Acs ZJ, 2006, ENTREPRENEURSHIP, GEOGRAPHY, AND AMERICAN ECONOMIC GROWTH, P1, DOI 10.1017/CBO9780511510816
+   Acs Zoltan, 2008, SMALL BUSINESS RES S
+   ALDRICH HE, 1994, ACAD MANAGE REV, V19, P645, DOI 10.2307/258740
+   Aldrich HE, 2001, ENTREP THEORY PRACT, V25, P41, DOI DOI 10.1177/104225870102500404
+   Almus M, 2000, SMALL BUS ECON, V15, P1, DOI 10.1023/A:1026512005921
+   Alsos G. A., 1998, ENTREP THEORY PRACT, V22, P101
+   Amaral AM, 2011, SMALL BUS ECON, V37, P1, DOI 10.1007/s11187-009-9232-4
+   Audretsch DB, 2004, REV IND ORGAN, V24, P301, DOI 10.1023/B:REIO.0000038273.50622.ec
+   BAHADUR RR, 1960, ANN MATH STAT, V31, P276, DOI 10.1214/aoms/1177705894
+   Baird DG, 2005, COLUMBIA LAW REV, V105, P2310
+   Baron RA, 1998, J BUS VENTURING, V13, P275, DOI 10.1016/S0883-9026(97)00031-1
+   Baron RA, 2000, CURR DIR PSYCHOL SCI, V9, P15, DOI 10.1111/1467-8721.00050
+   BARRON DN, 1994, AM J SOCIOL, V100, P381, DOI 10.1086/230541
+   BATES T, 1990, REV ECON STAT, V72, P551, DOI 10.2307/2109594
+   Baum J., 1989, P ADM SCI ASS CANADA, V10, P1
+   Bertinelli L, 2006, SMALL BUS ECON, V27, P301, DOI 10.1007/s11187-005-8571-z
+   BIRLEY S, 1994, J BUS VENTURING, V9, P7, DOI 10.1016/0883-9026(94)90024-8
+   BIRLEY S, 1993, INT SMALL BUS J, V12, P38, DOI DOI 10.1177/0266242693121003
+   Blanchflower DG, 1998, J LABOR ECON, V16, P26, DOI 10.1086/209881
+   Bosma N, 2004, SMALL BUS ECON, V23, P227, DOI 10.1023/B:SBEJ.0000032032.21192.72
+   Bottazzi G, 2007, SMALL BUS ECON, V29, P137, DOI 10.1007/s11187-006-0014-y
+   Boyd N. G., 1994, ENTREP THEORY PRACT, V18, P63, DOI DOI 10.1177/104225879401800404
+   Brandstatter H, 1997, J ECON PSYCHOL, V18, P157, DOI 10.1016/S0167-4870(97)00003-2
+   BROCKHAUS RH, 1980, ACAD MANAGE J, V23, P509, DOI 10.2307/255515
+   BRUDERL J, 1990, ADMIN SCI QUART, V35, P530, DOI 10.2307/2393316
+   Burke AE, 2008, SMALL BUS ECON, V31, P93, DOI 10.1007/s11187-007-9086-6
+   Busenitz LW, 1997, J BUS VENTURING, V12, P9, DOI 10.1016/S0883-9026(96)00003-1
+   Cader H. A., 2009, SMALL BUSINESS EC, V21, P2
+   Calvo JL, 2006, SMALL BUS ECON, V26, P117, DOI 10.1007/s11187-004-2135-5
+   Carter S, 2003, SMALL BUS ECON, V21, P371, DOI 10.1023/A:1026115121083
+   Caves RE, 1998, J ECON LIT, V36, P1947
+   Chen CC, 1998, J BUS VENTURING, V13, P295, DOI 10.1016/S0883-9026(97)00029-3
+   CHRISTENSEN LR, 1971, AM ECON REV, V61, P575
+   Coleman J. S., 1964, INTRO MATH SOCIOLOGY
+   CONTINI B., 1989, SMALL BUSINESS EC, V1, P309, DOI DOI 10.1007/BF00393810
+   Cope J., 2000, INT J ENTREPRENEURIA, V6, P104, DOI [DOI 10.1108/13552550010346208, 10.1108/13552550010346208]
+   Cross M., 1981, NEW FIRM FORMATION R
+   Department for Business Enterprise and Regulatory Reform (BERR), 2008, 3 BERR
+   Ericsson KA, 2006, CAMBRIDGE HANDBOOK OF EXPERTISE AND EXPERT PERFORMANCE, P3
+   EVANS DS, 1989, AM ECON REV, V79, P519
+   Feller W, 1943, ANN MATH STAT, V14, P389, DOI 10.1214/aoms/1177731359
+   Feller W, 1968, INTRO PROBABILITY TH, V1
+   Feltovich PJ, 2006, CAMBRIDGE HANDBOOK OF EXPERTISE AND EXPERT PERFORMANCE, P41
+   FICHMAN M, 1991, ACAD MANAGE REV, V16, P442, DOI 10.2307/258870
+   Flajolet P, 2005, ANN PROBAB, V33, P1200, DOI 10.1214/009117905000000026
+   Forbes D. P., 1999, INT J MANAG REV, V1, P415, DOI DOI 10.1111/1468-2370.00021
+   Frese M, 2007, PSYCHOL ENTREPRENEUR
+   Gartner W. B., 1988, AM J SMALL BUSINESS, V12, P11, DOI DOI 10.1177/104225878801200401
+   Geroski PA, 1995, INT J IND ORGAN, V13, P421, DOI 10.1016/0167-7187(95)00498-X
+   Gimeno J, 1997, ADMIN SCI QUART, V42, P750, DOI 10.2307/2393656
+   Gompers P., 2007, J FINANC ECON, V62, P731
+   Greenwood, 1920, J R STAT SOC, V83, P255
+   Griffin DW, 1996, ORGAN BEHAV HUM DEC, V65, P227, DOI 10.1006/obhd.1996.0023
+   Hamilton BH, 2000, J POLIT ECON, V108, P604, DOI 10.1086/262131
+   HANNAN MT, 1984, AM SOCIOL REV, V49, P149, DOI 10.2307/2095567
+   HAUNSPERGER DB, 1991, AM STAT, V45, P252, DOI 10.2307/2684305
+   Headd B, 2003, SMALL BUS ECON, V21, P51, DOI 10.1023/A:1024433630958
+   Henderson AD, 1999, ADMIN SCI QUART, V44, P281, DOI 10.2307/2666997
+   HOLMES TJ, 1995, J POLIT ECON, V103, P1005, DOI 10.1086/262011
+   IJIRI Y, 1975, P NATL ACAD SCI USA, V72, P1654, DOI 10.1073/pnas.72.5.1654
+   IRWIN JO, 1941, J ROY STAT SOC S, V7, P101
+   JAIN GC, 1971, SIAM J APPL MATH, V21, P501, DOI 10.1137/0121056
+   Kane T., 2010, KAUFFMAN FDN SERIES
+   Kirchhoff B. A., 1997, PORTABLE MBA ENTREPR, P444
+   KLOTZ J, 1973, ANN STAT, V1, P373, DOI 10.1214/aos/1176342377
+   KOLVEREID L, 1993, ADV SER MANAGE, V19, P275
+   Lotti F, 2009, SMALL BUS ECON, V32, P31, DOI 10.1007/s11187-007-9071-0
+   LOW MB, 1988, J MANAGE, V14, P139, DOI 10.1177/014920638801400202
+   MacMillan I.C., 1986, J BUSINESS VENTURING, V1, P241, DOI DOI 10.1016/0883-9026(86)90001-7
+   Mansfield E., 1962, ENTRY MARKET CONTEST
+   MATA J, 1994, SMALL BUS ECON, V6, P27, DOI 10.1007/BF01066110
+   McGrath R.G., 1996, P ACAD MANAGEMENT, P101
+   Miner JB, 2004, J APPL PSYCHOL, V89, P3, DOI 10.1037/0021-9010.89.1.3
+   Miner JB, 1997, ORGAN DYN, V25, P54, DOI 10.1016/S0090-2616(97)90047-4
+   Moskowitz TJ, 2002, AM ECON REV, V92, P745, DOI 10.1257/00028280260344452
+   Oliveira B, 2006, SMALL BUS ECON, V27, P139, DOI 10.1007/s11187-006-0006-y
+   PALICH LE, 1995, J BUS VENTURING, V10, P425, DOI 10.1016/0883-9026(95)00082-J
+   Petrunia R, 2008, SMALL BUS ECON, V30, P201, DOI 10.1007/s11187-006-9042-x
+   Phillips B. D., 1989, SMALL BUSINESS EC, V1, P65, DOI DOI 10.1007/BF00389917
+   Plehn-Dujowich J, 2010, SMALL BUS ECON, V35, P377, DOI 10.1007/s11187-008-9171-5
+   REID GC, 1995, SMALL BUS ECON, V7, P89, DOI 10.1007/BF01108684
+   Rerup C., 2005, SCAND J MANAG, V21, P451, DOI DOI 10.1016/J.SCAMAN.2005.09.010
+   Rodriguez AC, 2003, SMALL BUS ECON, V21, P289, DOI 10.1023/A:1025783505635
+   Ronstadt R, 1986, J BUSINESS VENTURING, V1, P323
+   Rosa P., 1996, INT SMALL BUS J, V14, P81, DOI DOI 10.1177/0266242696144006
+   ROSS GJS, 1985, J ROY STAT SOC D-STA, V34, P323
+   SAMUELSON PA, 1967, J FINANC QUANT ANAL, V2, P1, DOI 10.2307/2329779
+   Sarasvathy DK, 1998, J ECON BEHAV ORGAN, V33, P207, DOI 10.1016/S0167-2681(97)00092-9
+   Sarasvathy SD, 2001, ACAD MANAGE REV, V26, P243, DOI 10.2307/259121
+   Sarasvathy SD, 2000, J BUS VENTURING, V15, P1
+   Schollhammer H., 1991, FRONTIERS ENTREPRENE, P11
+   SIMON HA, 1958, AM ECON REV, V48, P607
+   SIMON HA, 1955, BIOMETRIKA, V42, P425
+   Stam E, 2008, J EVOL ECON, V18, P493, DOI 10.1007/s00191-008-0095-7
+   Stangler D., 2009, WHERE WILL JOBS COME
+   Starr J., 1991, FRONTIERS ENTREPRENE, P213
+   Stewart WH, 2001, J APPL PSYCHOL, V86, P145, DOI 10.1037//0021-9010.86.1.145
+   Stinchome A. L, 1965, HDB ORG, P142
+   Storey D. J., 1989, SMALL BUSINESS EC, V1, P175, DOI DOI 10.1007/BF00401855
+   Sutton J, 1997, J ECON LIT, V35, P40
+   TAIBLESON MH, 1974, AM SOCIOL REV, V39, P877, DOI 10.2307/2094160
+   Taylor R., 1999, ENTREP REGION DEV, V11, P1
+   Ucbasaran D, 2006, HABITUAL ENTREPRENEURS, P1
+   Ucbasaran D, 2003, ENTREP REGION DEV, V15, P207, DOI 10.1080/08985620210145009
+   Ucbasaran D., 2004, THESIS NOTTINGHAM U
+   Ucbasaran D, 2010, J BUS VENTURING, V25, P541, DOI 10.1016/j.jbusvent.2009.04.001
+   Ucbasaran D, 2008, SMALL BUS ECON, V30, P153, DOI 10.1007/s11187-006-9020-3
+   van Gelderen M, 2005, SMALL BUS ECON, V25, P97, DOI 10.1007/s11187-005-4260-1
+   VAUPEL JW, 1985, AM STAT, V39, P176, DOI 10.2307/2683925
+   VIVEROS R, 1994, AM STAT, V48, P243, DOI 10.2307/2684728
+   WAGNER J, 1992, SMALL BUS ECON, V4, P125, DOI 10.1007/BF00389853
+   Weiss CR, 1998, SMALL BUS ECON, V10, P305, DOI 10.1023/A:1007972518380
+   Westhead P, 2005, SMALL BUS ECON, V25, P109, DOI 10.1007/s11187-003-6461-9
+   Westhead P, 1998, J BUS VENTURING, V13, P173, DOI 10.1016/S0883-9026(97)90002-1
+   Westhead P., 2003, HABITUAL ENTREPRENEU
+   WOO CY, 1994, J MANAGE STUD, V31, P507, DOI 10.1111/j.1467-6486.1994.tb00628.x
+   Wright M, 1997, J BUS VENTURING, V12, P227, DOI 10.1016/S0883-9026(96)06115-0
+   Wright M., 1997, BRIT J MANAGE, V8, P251, DOI DOI 10.1111/1467-8551.00064
+   XEKALAKI E, 1983, BIOMETRICS, V39, P887, DOI 10.2307/2531324
+   Yang CH, 2005, SMALL BUS ECON, V25, P477, DOI 10.1007/s11187-004-6487-7
+   Zhang JF, 2011, SMALL BUS ECON, V36, P187, DOI 10.1007/s11187-009-9216-4
+   Zhao H, 2005, J APPL PSYCHOL, V90, P1265, DOI 10.1037/0021-9010.90.6.1265
+NR 122
+TC 52
+Z9 55
+U1 2
+U2 108
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0921-898X
+EI 1573-0913
+J9 SMALL BUS ECON
+JI Small Bus. Econ. Group
+PD FEB
+PY 2013
+VL 40
+IS 2
+BP 417
+EP 434
+DI 10.1007/s11187-011-9412-x
+PG 18
+WC Business; Economics; Management
+SC Business & Economics
+GA 078HN
+UT WOS:000314089400015
+DA 2019-12-27
+ER
+
+PT J
+AU Zhu, B
+   Fuss, R
+   Rottke, NB
+AF Zhu, Bing
+   Fuess, Roland
+   Rottke, Nico B.
+TI Spatial Linkages in Returns and Volatilities among U.S. Regional Housing
+   Markets
+SO REAL ESTATE ECONOMICS
+LA English
+DT Article
+ID DIVERSIFICATION; INFORMATION; MODELS
+AB This article investigates spatial linkages in returns, idiosyncratic risks and volatilities across 19 U.S. regional housing markets. Using Case & Shiller housing price indices from 1995 through 2009, we find that interconnections across markets can be wider and stronger than would normally be expected. They are wider because, in addition to geographic closeness, economic proximity is also an important source of influence; they are stronger because of the significant contagion effects during the 20072009 subprime and financial crises. The increased comovement and interdependence, especially among more geographically diverse regions with similar economic conditions, may help explain the failure of geographic portfolio diversification strategies.
+C1 [Zhu, Bing] Univ Regensburg, Dept Real Estate Finance, D-93053 Regensburg, Germany.
+   [Fuess, Roland] EBS Business Sch, Dept Finance Accounting & Real Estate, D-65189 Wiesbaden, Germany.
+   [Fuess, Roland] Glasgow Caledonian Univ, Caledonian Business Sch, Glasgow G4 0BA, Lanark, Scotland.
+   [Fuess, Roland] Ctr European Econ Res ZEW, Mannheim, Germany.
+   [Rottke, Nico B.] EBS Univ Wirtschaft & Recht, D-65189 Wiesbaden, Germany.
+RP Zhu, B (reprint author), Univ Regensburg, Dept Real Estate Finance, D-93053 Regensburg, Germany.
+EM Bing.Zhu@wiwi.uni-regensburg.de; roland.fuess@ebs.edu;
+   nico.rottke@ebs.edu
+CR Anselin L, 2003, INT REGIONAL SCI REV, V26, P153, DOI 10.1177/0160017602250972
+   Anselin L, 2006, ECONOMETRICS PANEL D, V1, P901
+   Baele L, 2005, J FINANC QUANT ANAL, V40, P373, DOI 10.1017/S0022109000002350
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Brunetti C., 2008, EMRGNG MARKTS REV, V9, P104, DOI DOI 10.1016/J.EMEMAR.2008.02.005
+   CAMPBELL JY, 1992, J FINANC, V47, P43, DOI 10.2307/2329090
+   CASE AC, 1993, J PUBLIC ECON, V52, P285, DOI 10.1016/0047-2727(93)90036-S
+   Case K. E., 1996, J HOUSING RES, V7, P243
+   CLAPP JM, 1995, REAL ESTATE ECON, V23, P239, DOI 10.1111/1540-6229.00665
+   CORGEL JB, 1987, AREUEA J, V15, P256
+   Coulson N. E., 2010, WORKING PAPER UNPUB, V2011
+   Crawford GW, 2003, REAL ESTATE ECON, V31, P223, DOI 10.1111/1540-6229.00064
+   DeSantis G, 1997, J FINANC, V52, P1881, DOI 10.1111/j.1540-6261.1997.tb02745.x
+   DiPasquale D., 1996, URBAN EC REAL ESTATE
+   Dolde W, 1997, REAL ESTATE ECON, V25, P539, DOI 10.1111/1540-6229.00727
+   Dolde W, 2002, REAL ESTATE ECON, V30, P41, DOI 10.1111/1540-6229.00029
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Elhorst JP, 2005, GEOGR ANAL, V37, P85, DOI 10.1111/j.1538-4632.2005.00577.x
+   Engle R. F., 1993, J FINANC, V48, P1479
+   Fingleton B, 2001, J REGIONAL SCI, V41, P117, DOI 10.1111/0022-4146.00210
+   Fingleton B, 2008, EMPIR ECON, V34, P35, DOI 10.1007/s00181-007-0151-4
+   Goetzmann W. N., 2003, HOME EQUITY INSURANC
+   Guirguis HS, 2007, J REAL ESTATE PORTFO, V13, P311
+   Gupta R, 2012, J REAL ESTATE FINANC, V44, P339, DOI 10.1007/s11146-010-9234-7
+   Hsiao C, 2002, J ECONOMETRICS, V109, P107, DOI 10.1016/S0304-4076(01)00143-9
+   Lee LF, 2010, J ECONOMETRICS, V154, P165, DOI 10.1016/j.jeconom.2009.08.001
+   Markwat T, 2009, J BANK FINANC, V33, P1996, DOI 10.1016/j.jbankfin.2009.05.008
+   Mayor M, 2008, EMPIR ECON, V34, P123, DOI 10.1007/s00181-007-0167-9
+   Meen G, 1999, HOUSING STUD, V14, P733, DOI 10.1080/02673039982524
+   Miao H, 2011, REAL ESTATE ECON, V39, P701, DOI 10.1111/j.1540-6229.2010.00303.x
+   Miller N, 2006, J REAL ESTATE FINANC, V33, P5, DOI 10.1007/s11146-006-8271-8
+   NERLOVE M, 1999, ANAL PANELS LTD DEPE, P136
+   Otranto E, 2005, J FORECASTING, V24, P523, DOI 10.1002/for.965
+   Seiler M. J., 1999, J REAL ESTATE LIT, V7, P163, DOI [10.1023/A:1008741320860, DOI 10.1023/A:1008741320860]
+   Shiller R., 1998, MACROMARKETS CREATIN
+   VANDIJK D, 2002, ECONOMET REV, V21, P1, DOI DOI 10.1081/ETC-120008723
+NR 36
+TC 36
+Z9 36
+U1 1
+U2 28
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1080-8620
+EI 1540-6229
+J9 REAL ESTATE ECON
+JI Real Estate Econ.
+PD SPR
+PY 2013
+VL 41
+IS 1
+BP 29
+EP 64
+DI 10.1111/j.1540-6229.2012.00337.x
+PG 36
+WC Business, Finance; Economics; Urban Studies
+SC Business & Economics; Urban Studies
+GA 096KN
+UT WOS:000315402800002
+DA 2019-12-27
+ER
+
+PT J
+AU Okhrin, O
+   Odening, M
+   Xu, W
+AF Okhrin, Ostap
+   Odening, Martin
+   Xu, Wei
+TI Systemic Weather Risk and Crop Insurance: The Case of China
+SO JOURNAL OF RISK AND INSURANCE
+LA English
+DT Article
+ID COPULAS; MARKET
+AB This article explores the possibility of spatial diversification of weather risk for 17 agricultural production regions in China. We investigate the relation between the size of the buffer load and the size of the trading area of a hypothetical temperature-based insurance. The analysis adopts the hierarchical Archimedean copula approach that allows for flexible modeling of the dependence structure of insured losses. We find that the spatial diversification effect depends on the type of the weather index and the strike level of the insurance. Our findings are relevant for the current discussion on the viability of private crop insurance in China.
+C1 [Okhrin, Ostap] Humboldt Univ, Ladislaus von Bortkiewicz Chair Stat, CASE, D-10099 Berlin, Germany.
+   [Odening, Martin] Humboldt Univ, Dept Agr Econ, D-10099 Berlin, Germany.
+   [Xu, Wei] Zurich Branch, Agr Unit SCOR Global P&C SE Reinsurance, Zurich, Switzerland.
+RP Okhrin, O (reprint author), Humboldt Univ, Ladislaus von Bortkiewicz Chair Stat, CASE, D-10099 Berlin, Germany.
+EM ostap.okhrin@wiwi.hu-berlin.de
+OI Odening, Martin/0000-0001-6427-1641
+CR Barrieu P, 2002, GENEVA PAP R I THEOR, V27, P87, DOI 10.1023/A:1021944109402
+   Campbell SD, 2005, J AM STAT ASSOC, V100, P6, DOI 10.1198/016214504000001051
+   Cherubini U., 2004, COPULA METHODS FINAN
+   China Meteorological Administration, 2008, WEATH INS PREF STUD
+   China Meteorological Data Sharing Service System, 2009, DAIL WEATH DAT BAS
+   Cummins JD, 2009, J RISK INSUR, V76, P463, DOI 10.1111/j.1539-6975.2009.01319.x
+   Diaz-Caneja M. B., 2009, EU23943 JRC
+   Embrechts P, 2003, HANDBOOKS FINANCE, P329, DOI 10.1016/B978-044450896-6.50010-8
+   Embrechts P, 2009, J RISK INSUR, V76, P639, DOI 10.1111/j.1539-6975.2009.01310.x
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Fischer MS, 2012, J ZOOL SYST EVOL RES, V50, P1, DOI 10.1111/j.1439-0469.2011.00653.x
+   Genest C, 2009, INSUR MATH ECON, V44, P199, DOI 10.1016/j.insmatheco.2007.10.005
+   Goodwin BK, 2001, AM J AGR ECON, V83, P643, DOI 10.1111/0002-9092.00184
+   Hardle W., 2010, 649 SFB HUMBOLDT U B
+   Hellmuth M. E., 2009, INDEX INSURANCE CLIM
+   Liebscher E, 2008, J MULTIVARIATE ANAL, V99, P2234, DOI 10.1016/j.jmva.2008.02.025
+   Lobell DB, 2008, ENVIRON RES LETT, V3, DOI 10.1088/1748-9326/3/3/034007
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   Mcneil AJ, 2008, J STAT COMPUT SIM, V78, P567, DOI 10.1080/00949650701255834
+   Miranda MJ, 1997, AM J AGR ECON, V79, P206, DOI 10.2307/1243954
+   Nelsen R.B., 2006, INTRO COPULAS
+   Odening M, 2007, AGRIC FINANCE REV, V67, P135, DOI 10.1108/00214660780001202
+   Okhrin O., 2010, 649 SFB HUMBOLDT U B
+   Okhrin O., 2009, 649 SFB HUMBOLT U B
+   Re Swiss, 2009, INS REC CHIN FOOD AG
+   Report No. 32727-GLB, 2005, 32727GLB WORLD BANK
+   Savu C, 2010, QUANT FINANC, V10, P295, DOI 10.1080/14697680902821733
+   Scholzel C, 2008, NONLINEAR PROC GEOPH, V15, P761, DOI 10.5194/npg-15-761-2008
+   Semenov MA, 2007, AGR FOREST METEOROL, V144, P127, DOI 10.1016/j.agrformet.2007.02.003
+   Turvey CG, 2010, CHINA AGR ECON REV, V2, P5, DOI 10.1108/17561371011017469
+   Vedenov D., 2008, ANN M AAEA 2008
+   Vedenov DV, 2006, J AGR RESOUR ECON, V31, P318
+   Vrac M, 2005, J ATMOS OCEAN TECH, V22, P1445, DOI 10.1175/JTECH1795.1
+   Wang HH, 2003, J RISK INSUR, V70, P111
+   Whelan N, 2004, QUANT FINANC, V4, P339, DOI 10.1088/1469-7688/4/3/009
+   Woodard J.D., 2008, AGR FINANCE REV, V68, P111
+   World Bank, 2007, CHIN INN AGR INS PRO
+   Xu W, 2010, AGRIC FINANCE REV, V70, P267, DOI 10.1108/00021461011065283
+   Zhu Y., 2008, ANN M AAEA 2008
+NR 39
+TC 33
+Z9 35
+U1 1
+U2 59
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-4367
+EI 1539-6975
+J9 J RISK INSUR
+JI J. Risk Insur.
+PD JUN
+PY 2013
+VL 80
+IS 2
+BP 351
+EP 372
+DI 10.1111/j.1539-6975.2012.01476.x
+PG 22
+WC Business, Finance; Economics
+SC Business & Economics
+GA 148ZR
+UT WOS:000319288300005
+DA 2019-12-28
+ER

@@ -1,0 +1,526 @@
+
+PT J
+AU Longstaff, FA
+AF Longstaff, Francis A.
+TI The subprime credit crisis and contagion in financial markets
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Contagion; Asset-backed securities; Subprime CDOs; Liquidity; Toxic
+   assets
+ID ECONOMIC DISTRESS; LIQUIDITY; RISK; TRANSACTIONS; LIQUIDATION; WEALTH;
+   SALES; US
+AB I conduct an empirical investigation into the pricing of subprime asset-backed collateralized debt obligations (CDOs) and their contagion effects on other markets. Using data for the ABX subprime indexes, I find strong evidence of contagion in the financial markets. The results support the hypothesis that financial contagion was propagated primarily through liquidity and risk-premium channels, rather than through a correlated-information channel. Surprisingly, ABX index returns forecast stock returns and Treasury and corporate bond yield changes by as much as three weeks ahead during the subprime crisis. This challenges the popular view that the market prices of these "toxic assets" were unreliable; the results suggest that significant price discovery did in fact occur in the subprime market during the crisis. (C) 2010 Elsevier B.V. All rights reserved.
+C1 [Longstaff, Francis A.] UCLA Anderson Sch, Los Angeles, CA USA.
+   [Longstaff, Francis A.] NBER, Cambridge, MA 02138 USA.
+RP Longstaff, FA (reprint author), UCLA Anderson Sch, Los Angeles, CA USA.
+EM francis.longstaff@anderson.ucla.edu
+CR Acharya VV, 2005, J FINANC ECON, V77, P375, DOI 10.1016/j.jfineco.2004.06.007
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Andrade G, 1998, J FINANC, V53, P1443, DOI 10.1111/0022-1082.00062
+   ARAGON G, 2009, HEDGE FUNDS LI UNPUB
+   ASQUITH P, 1994, Q J ECON, V109, P625, DOI 10.2307/2118416
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   BENMELECH E, 2009, NBER MACROECON ANN, V24, pCH3
+   Bhansali V, 2008, FINANC ANAL J, V64, P16, DOI 10.2469/faj.v64.n4.2
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2005, J FINANC, V60, P1825, DOI 10.1111/j.1540-6261.2005.00781.x
+   Carlin BI, 2007, J FINANC, V62, P2235, DOI 10.1111/j.1540-6261.2007.01274.x
+   CLARIDA R, 2007, GLOBAL PERSPECTIVES
+   CLARK K, 1994, J FINANC QUANT ANAL, V29, P541, DOI 10.2307/2331109
+   Cochrane JH, 2005, AM ECON REV, V95, P138, DOI 10.1257/0002828053828581
+   Cochrane JH, 2008, REV FINANC STUD, V21, P1533, DOI 10.1093/rfs/hhm046
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   JOHN K, 1995, J FINANC ECON, V37, P105, DOI 10.1016/0304-405X(94)00794-2
+   Kahl M, 2002, J FINANC, V57, P135, DOI 10.1111/1540-6261.00418
+   Kaminsky GL, 2003, J ECON PERSPECT, V17, P51, DOI 10.1257/089533003772034899
+   Kindleberger C., 1978, MANIAS PANICS CRASHE
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kiyotaki N, 2002, AM ECON REV, V92, P62, DOI 10.1257/000282802320189014
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Lettau M, 2001, J FINANC, V56, P815, DOI 10.1111/0022-1082.00347
+   LONGSTAFF F, 2009, MARKET VALUE T UNPUB
+   Longstaff F.A., 2008, FLIGHT FROM LE UNPUB
+   Longstaff FA, 2004, J BUS, V77, P511, DOI 10.1086/386528
+   Longstaff FA, 2008, J FINANC, V63, P529, DOI 10.1111/j.1540-6261.2008.01330.x
+   OPLER TC, 1994, J FINANC, V49, P1015, DOI 10.2307/2329214
+   Pulvino TC, 1998, J FINANC, V53, P939, DOI 10.1111/0022-1082.00040
+   Rajan A., 2007, STRUCTURED CREDIT HD
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Vayanos D., 2004, FLIGHT QUALITY UNPUB
+NR 36
+TC 224
+Z9 225
+U1 4
+U2 131
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD SEP
+PY 2010
+VL 97
+IS 3
+SI SI
+BP 436
+EP 450
+DI 10.1016/j.jfineco.2010.01.002
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA 616DK
+UT WOS:000279188600008
+DA 2019-12-27
+ER
+
+PT J
+AU Blinder, AS
+AF Blinder, Alan S.
+TI How Central Should the Central Bank Be?
+SO JOURNAL OF ECONOMIC LITERATURE
+LA English
+DT Article
+AB The nature and scope of the Federal Reserve's authority and the structure of its decision making are now "on the table" to an extent that has not been seen since 1935, and the Fed's vaunted independence is under some attack. This essay asks what the Federal Reserve should and shouldn't do, leaning heavily on the concept of economies of scope. In particular; I conclude that the central bank should monitor and regulate systemic risk because preserving financial stability is (a) closely aligned with the standard objectives of monetary policy and (b) likely to require lender of last resort powers. I also conclude that the Fed should supervise large financial institutions because that function is so closely to regulating systemic risk. However, several other functions now performed by the Fed could easily be done elsewhere. (JEL E52, E58, G21, G28)
+C1 Princeton Univ, Princeton, NJ 08544 USA.
+RP Blinder, AS (reprint author), Princeton Univ, Princeton, NJ 08544 USA.
+CR Acemoglu D, 2008, BROOKINGS PAP ECO AC, P351
+   BERGER AN, 1995, BROOKINGS PAPERS EC, V2, P55, DOI DOI 10.2307/2534612
+   BERNANKE B., 2002, ASSET PRICE BUBBLES
+   Bernanke B. S, 2009, WASHINGTON POST 1129
+   Bernanke Ben S., 2010, COMMUNICATION   0103
+   Blinder A., 2008, NY TIMES        0615
+   Blinder Alan S., 2006, CENTRAL BANKS 21 CEN, P31
+   Blinder AS, 2000, AM ECON REV, V90, P1421, DOI 10.1257/aer.90.5.1421
+   BLINDER AS, 2005, GREENSPAN ERA LESSON, P11
+   Blinder AS, 2004, QUIET REVOLUTION CEN
+   Greenspan A, 2002, RETHINKING STABILIZATION POLICY, P1
+   Greider William, 1987, SECRETS TEMPLE FEDER
+   MISHKIN F. S., 2008, COMMUNICATION   0515
+   Paul R., 2009, END FED
+   Rudebusch GD, 2002, J MONETARY ECON, V49, P1161, DOI 10.1016/S0304-3932(02)00149-6
+   SVENSSON LEO, 1999, NEW CHALLENGES MONET, P195
+   United States of America Department of the Treasury, 2009, FIN REG REF NEW FDN
+NR 17
+TC 45
+Z9 46
+U1 0
+U2 15
+PU AMER ECONOMIC ASSOC
+PI NASHVILLE
+PA 2014 BROADWAY, STE 305, NASHVILLE, TN 37203 USA
+SN 0022-0515
+EI 2328-8175
+J9 J ECON LIT
+JI J. Econ. Lit.
+PD MAR
+PY 2010
+VL 48
+IS 1
+BP 123
+EP 133
+DI 10.1257/jel.48.1.123
+PG 11
+WC Economics
+SC Business & Economics
+GA 597MQ
+UT WOS:000277762000004
+DA 2019-12-28
+ER
+
+PT J
+AU Zhou, C
+AF Zhou, Chen
+TI Are Banks Too Big to Fail? Measuring Systemic Importance of Financial
+   Institutions
+SO INTERNATIONAL JOURNAL OF CENTRAL BANKING
+LA English
+DT Article
+ID RISK; FRAGILITY; CONTAGION; MARKETS
+AB This paper considers three measures of the systemic importance of a financial institution within an interconnected financial system. The measures are applied to study the relation between the size of a financial institution and its systemic importance. Both the theoretical model and empirical analysis reveal that, when analyzing the systemic risk posed by one financial institution to the system, size should not be considered as a proxy of systemic importance. In other words, the "too big to fail" argument is not always valid, and measures of systemic importance should be considered. We provide the estimation methodology of systemic importance measures under the multivariate extreme value theory (EVT) framework.
+C1 [Zhou, Chen] Nederlandsche Bank, Econ & Res Div, NL-1000 AB Amsterdam, Netherlands.
+   [Zhou, Chen] Erasmus Univ, Rotterdam, Netherlands.
+RP Zhou, C (reprint author), Nederlandsche Bank, Econ & Res Div, NL-1000 AB Amsterdam, Netherlands.
+EM C.Zhou@DNB.nl
+CR Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Adrian T., 2008, 348 FED RES BANK NEW
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2009, ANNU REV FINANC ECON, V1, P97, DOI 10.1146/annurev.financial.050808.114321
+   BERNANKE B, 2009, COMMUNICATION   0310
+   Chavez-Demoulin V, 2005, QUANT FINANC, V5, P227, DOI 10.1080/14697680500039613
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   De Bandt O., 2001, FINANCIAL CRISIS CON, P249
+   de Haan L., 2006, EXTREME VALUE THEORY
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   DIEBOLD FX, 2000, J RISK FINANCE, V1, P30, DOI DOI 10.1108/EB043443
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hartmann P, 2005, 11698 NBER
+   International Monetary Fund, 2009, GLOB FIN STAB REP
+   Lagunoff R, 2001, J ECON THEORY, V99, P220, DOI 10.1006/jeth.2000.2733
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Rajan RG, 2009, TOO SYSTEMIC FAIL CO
+   Segoviano M., 2009, 0904 IMF
+   Stern G. H., 2004, TOO BIG FAIL HAZARDS
+   Yorulmazer T., 2010, EC POLICY REV, V16, P89
+   ZHOU C, 2008, THESIS TINBERGEN I
+NR 25
+TC 61
+Z9 62
+U1 2
+U2 18
+PU ASSOC INTERNATIONAL JOURNAL CENTRAL BANKING
+PI FRANKFURT
+PA POSTFACH 16 03 19, FRANKFURT, 60066, GERMANY
+SN 1815-4654
+J9 INT J CENT BANK
+JI Int. J. Cent. Bank.
+PD DEC
+PY 2010
+VL 6
+IS 4
+SI SI
+BP 205
+EP 250
+PG 46
+WC Business, Finance
+SC Business & Economics
+GA 699WO
+UT WOS:000285693800010
+DA 2019-12-28
+ER
+
+PT J
+AU Engert, A
+AF Engert, Andreas
+TI Transnational Hedge Fund Regulation
+SO EUROPEAN BUSINESS ORGANIZATION LAW REVIEW
+LA English
+DT Article
+DE hedge funds; financial stability; systemic risk; transnational
+   regulation; transnational law; self-regulation; private ordering;
+   regulatory arbitrage; regulatory competition; state capture; regulatory
+   harmonisation; regulatory cooperation
+ID INVESTORS; LIQUIDITY; SELECTION; MARKETS; FAILURE
+AB After the global financial crisis, systemic risk regulation has taken centre stage. Many consider hedge funds a potential threat to financial stability. Regulating hedge funds, however, is necessarily a transnational challenge because no national government alone can effectively control the systemic risks affecting its economy. This article takes the example of hedge funds for a case study of emerging transnational regulation. After an introduction to hedge funds and the reasons for regulating them, it considers the possible elements of a transnational regulatory regime for hedge funds: transnational industry self-regulation, including such induced by the government, regulatory competition between government regulators, and harmonisation of government regulation. The main conclusions are: self-regulation cannot substitute fully for government regulation in controlling systemic risks caused by hedge funds. Equally, regulatory competition tends to undercut systemic risk regulation. Effective transnational regulation can only be accomplished through harmonisation of government regulation. Such harmonisation is likely to arise if regulation is needed to control systemic risk in global financial markets.
+C1 Univ Mannheim, D-6800 Mannheim 1, Germany.
+RP Engert, A (reprint author), Univ Mannheim, D-6800 Mannheim 1, Germany.
+EM andreas@engert.info
+OI Engert, Andreas/0000-0001-6611-6979
+CR *ABS RES, 2009, WACHST HEDG ASS
+   Agarwal V, 2009, J FINANC QUANT ANAL, V44, P273, DOI 10.1017/S0022109009090188
+   *AIMA, 2008, AIMAS OFFSH ALT FUND, P5
+   *AIMA, 2007, GUID SOUND PRACT EUR
+   *AIMA, 2002, GUID SOUND PRACT EUR
+   *AIMA ASS PTY LTD, 2002, HEDG FUND BOOKL, P7
+   Anderson K, 2005, HARVARD LAW REV, V118, P1255
+   [Anonymous], 2008, CONT SYST RISK ROAD
+   [Anonymous], 2009, GLOB PLAN REC REF
+   Ayres I., 1992, RESPONSIVE REGULATIO
+   AYRES I, 2002, MICH LAW REV, V101, P328
+   BANNER S, 1997, WASH U L Q, V75, P849
+   BAQUERO G, 2009, PORTRAIT HEDGE FUND, P19
+   BARANOWSKI M, 2009, POTENTIAL WINNER CRI, P8
+   Basel Committee on Banking Supervision, 1999, SOUND PRACT BANKS IN
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   BILLIO M, 2009, CRISES HEDGE FUND RI, P14
+   BOOKSTABER R, 2007, DEMON OUR OWN DESIGN, P212
+   BOOTH RA, 2006, J BUSINESS TECHNOLOG, V1, P101
+   BOYSON NM, 2008, HEDGE FUND CONTAGION, P12
+   BRANDON KL, 2005, SECURITIES IND ASS R, V6, P17
+   Brav Alon, 2010, Foundations and Trends in Finance, V4, P185, DOI 10.1561/0500000026
+   BRUMMER C, 2010, POSTAMERICAN SECURIT, P43
+   Brummer C, 2008, U CHICAGO LAW REV, V75, P1435
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2005, J FINANC, V60, P1825, DOI 10.1111/j.1540-6261.2005.00781.x
+   CALDWELL T, 1995, HEDGE FUNDS INVESTME, P1
+   CALLIESS GP, 2010, ROUGH CONSENSUS RUNN
+   CAUBLE E, 2010, LE10004 ILL PROGR LA, P9
+   *CAYM ISL GOV MIN, 2010, CAYM ISL AT A GLANC
+   Chan N., 2006, ECON REV, V91, P49
+   Chincarini LB, 2007, J ALTERN INVEST, V10, P91, DOI 10.3905/jai.2007.700227
+   Choi SJ, 2003, YALE LAW J, V113, P269, DOI 10.2307/3657524
+   COLOMBATTO E, 1996, CARDOZO LAW REV, V18, P943
+   COLOMBATTO E, 1996, CARDOZO LAW REV, V18, P933
+   COLOMBATTO E, 1996, CARDOZO LAW REV, V925, P951
+   Counterparty Risk Management Policy Group (CRMPG), 1999, IMPR COUNT RISK MAN
+   CRASWELL R, 1986, J LAW ECON ORGAN, V2, P279
+   *CRED SUISS 1 BOST, 2005, HEDG FUNDS INV BANKS, P4
+   Cremers KJM, 2009, REV FINANC STUD, V22, P3329, DOI 10.1093/rfs/hhp057
+   *CRMPG, 2005, GREAT FIN STAB PRIV, P149
+   CUMMING D, 2008, U PENNSYLVANIA J BUS, V10, P807
+   CUMMING D, 2008, LAW FINANCE ANAL HED, P15
+   DANIELSON J, 2006, J FINANCIAL STABILIT, V1, P527
+   DAVIDOFF SM, 2008, COLUM BUS L REV, P172
+   De Bandt O., 2010, OXFORD HDB BANKING, P633
+   De Bandt Olivier, 2000, 35 EUR CENTR BANK, P10
+   DELAPORTE M, 1782, SCI NEGOCIANS TENEUR, P530
+   DeMarzo PM, 2005, REV ECON STUD, V72, P687, DOI 10.1111/j.1467-937X.2005.00348.x
+   *ECB, 2005, LARG EU BANKS EXP HE, P18
+   EDWARDS FR, 1999, J ECON PERSPECT, V13, P197
+   ENGERT A, 2005, HAFTUNG DRITTSCHADIG, P186
+   ENRIQUES L, 2008, CAMB LAW J, V67, P521
+   *EU COMM, 2006, REP EUR ALT INV GROU, P15
+   *FIN STAB FOR, 2000, REP WORK GROUP HIGHL
+   Financial Services Authority (FSA), 2006, 066 FSA
+   FINANCIAL SERVICES AUTHORITY (FSA), 2007, PRINC BAS REG FOC OU
+   FLECKNER A, 2008, VIRGINIA LAW BUSINES, P287
+   Fleckner AM, 2006, FORDHAM LAW REV, V74, P2541
+   FLEISCHER V, 2010, 1011 U COL LAW LEG S, P3
+   Ford CL, 2008, AM BUS LAW J, V45, P1, DOI 10.1111/j.1744-1714.2008.00050.x
+   Fraser AS, 2007, CORNELL LAW REV, V92, P795
+   *FSA, 2010, BUS PLAN 2010 11, P9
+   *FSA, 2006, HEDG FUNDS DISC RISK, P28
+   *FSA, 2009, TURN REV REG RESP GL, P72
+   *FSA, 2002, 16 FSA
+   *FSA, 2005, 054 FSA
+   *FSA, 2007, FSA CONF IND GUID, P8
+   FUNG WKH, 2006, FEDERAL RESERVE BANK, V91, P7
+   *G8 SUMM HEIL, 2007, GROWTH RESP WORLD EC, P3
+   Gadinis S, 2007, SOUTH CALIF LAW REV, V80, P1239
+   GARBARAVICIUS T, 2005, EUROPEAN CENTRAL BAN, V34, P8
+   GATSIK JH, 2001, SUFFOLK U LAW REV, V35, P617
+   GORTON G, 1990, J FINANC, V45, P49, DOI 10.2307/2328809
+   Gorton G. B., 2009, 15273 NBER
+   GRAY S, 2009, HEDGEWEEK SPECIAL RE, P3
+   Hamdani Assaf, 2002, YALE LAW J, V112, P586
+   *HEDG FUND WORK GR, 2008, HEDG FUND STAND FIN, P29
+   Higgs R., 1987, CRISIS LEVIATHAN CRI
+   Hu HTC, 2006, SOUTH CALIF LAW REV, V79, P811
+   *IIF, 2008, FIN REP IIF COMM MAR
+   Ineichen A., 2008, AIMAS ROADMAP HEDGE
+   *INT FIN SERV LOND, 2004, HEDG FUNDS
+   International Financial Services London, 2009, EC CONTR UK FIN SERV
+   IOSCO, 2009, HEDG FUNDS OV FIN RE
+   *IOSCO, 2006, REG ENV HEDG FUNDS S, P5
+   *IOSCO, 2003, OBJ PRINC SEC REG, P12
+   *IOSCO, 2000, MOD EFF SELF REG
+   JACKSON HE, 2001, THEORETICAL INQUIRIE, V2
+   JENSEN MC, 1968, J FINANC, V23, P389, DOI 10.2307/2325404
+   Jessup Phillip C., 1956, TRANSNATIONAL LAW, P2
+   Khandani A. E., 2008, WHAT HAPPENED QUANTS
+   KHORANA A, 2005, J FINANC ECON, V78, P156
+   King MR, 2009, J FINANC STABIL, V5, P283, DOI 10.1016/j.jfs.2009.02.002
+   Klausner Michael, 1995, VA LAW REV, V81, P842
+   LAFFONT JJ, 1991, Q J ECON, V106, P1089, DOI 10.2307/2937958
+   LAGARDE C, 2010, WSJ EUROPE, P14
+   LEHMANN M, 2007, Z WIRTSCHAFTSRECHT, V27, P1890
+   LEVINE ME, 1990, J LAW ECON ORGAN, V6, P167, DOI 10.1093/jleo/6.special_issue.167
+   Liang B., 2008, SHARE RESTRICTIONS L
+   LINS GT, 2009, HEDGE FUNDS OTHER PR
+   Lo A. W., 2009, FEASIBILITY SYSTEMIC
+   Lo Andrew, 2008, HEDGE FUNDS SYSTEMIC
+   Lobel Orly, 2004, MINN LAW REV, V89, P262
+   LOWENSTEIN ROGER, 2001, GENIUS FAILED RISE F
+   MACAULAY S, 1963, AM SOCIOL REV, V28, P55, DOI 10.2307/2090458
+   MACEY JR, 1985, U ILLINOIS LAW REV, P315
+   MACEY JR, 2003, EMORY LAW J, V52, P1358
+   Mahoney PG, 1997, VA LAW REV, V83, P1453, DOI 10.2307/1073764
+   MAHONEY PG, 2004, J ECON PERSPECT, V18, P173
+   MALLIARIS S, 2009, NICKELS VERSUS BLACK
+   *MAN FUNDS ASS, 2000, SOUND PRACT HEDG FUN, P1
+   *MAN FUNDS ASS, 2009, SOUND PRACT HEDG FUN
+   MORRISS AP, 2009, ILLINOIS LAW EC RES
+   OPPOLD JR, 2008, U PENNSYLVANIA J BUS, V10, P874
+   PAREDAS TA, 2006, U ILLINOIS LAW REV, P990
+   PAREDES TA, 2006, U ILL L REV, P992
+   PARTNOY F, 1997, J CORP L, V22, P227
+   Pedersen LH, 2009, INT J CENT BANK, V5, P177
+   Pistor Katharina, 2003, J INT LAW POLITICS, V35, P931
+   *PRICEWATERHOUSECO, 2009, CHANG RUL REG TAX DI
+   *PRICEWATERHOUSECO, 2008, RET NONH INV FUNDS E
+   *PRICEWATERHOUSECO, 2010, FUT NEWC REG OUR VIE
+   PRITCHARD AC, 2009, 09008 MICH LAW SCH J, P29
+   *PWG, 1999, HEDG FUNDS LEV LESS, P37
+   *PWG, 2007, AGR PWG US AG PRINC
+   RAJARATNAM, 2009, WSJ             1024, pB1
+   RAUSTIALA K, 2002, VIRGINIA J INT LAW, V43, P62
+   RIBSTEIN LE, 2003, HOUS L REV, V40, P77
+   ROBOTTI P, 2009, 200920 I BARC EST IN, P13
+   Romano R, 1998, YALE LAW J, V107, P2359, DOI 10.2307/797346
+   ROMANO R, 1985, J LAW ECON ORGAN, V1, P280
+   ROMANO R, 2001, THEORETICAL INQUIRIE, V2, P10
+   ROSENBLUM PM, 2009, INVESTMENT ADVISER R
+   Sants H, 2008, COMMUNICATION   1022
+   SCHMIES C, 2010, REGULIERUNG HEDGEFON, P169
+   Schwarcz SL, 2008, GEORGETOWN LAW J, V97, P193
+   Scott C., 2009, GERMAN LAW J, V10, P859, DOI DOI 10.2139/SSRN.1488245
+   Securities and Exchange Commission (SEC), 2003, IMPL GROWTH HEDG FUN
+   SESTER P, 2010, HEDGE FUND IN PRESS
+   SHADAB HB, 2008, NEW YORK U J LEGISLA, V11, P279
+   SHADAB HB, 2007, REGULATION, V30, P40
+   SHAVELL S, 1984, J LEGAL STUD, V13, P357, DOI 10.1086/467745
+   Shavell S, 1986, INT REV L EC, V6, P45, DOI DOI 10.1016/0144-8188(86)90038-4
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Shleifer A., 2010, 15651 NBER
+   Sinn HW, 1997, J PUBLIC ECON, V66, P247, DOI 10.1016/S0047-2727(97)00043-1
+   Sklar R, 2009, FORDHAM LAW REV, V77, P3251
+   Slaughter AM, 2004, NEW WORLD ORDER, P1
+   SMITH LM, 2008, CAMBRIDGE BUSINESS R, V10, P25
+   STIGLER GJ, 1971, BELL J ECON, V2, P3, DOI 10.2307/3003160
+   Stout Lynn A., 2002, NORTHWEST U LAW REV, V96, P688
+   STULZ RM, 2007, J ECON PERSPECT, V21, P180
+   TETT G, 2009, FOOLS GOLD UNRESTRAI, P197
+   The Asset Managers' Committee, 2009, BEST PRACT HEDG FUND
+   Tietje Christian, 2006, PC JESSUPS TRANSNATI, P17
+   Trachtman JP, 2000, J INT ECON LAW, V3, P331, DOI 10.1093/jiel/3.2.331
+   United States Senate Permanent Subcommittee on Investigations Committee on Homeland Security and Governmental Affairs, 2007, EXC SPEC NAT GAS MAR
+   *US GAO, 2008, HEDG FUNDS REG MARK, P30
+   VAUGHAN DA, 2003, SELECTED DEFINITIONS
+   Verdier P-H, 2009, YALE J INT LAW, V34, P113
+   WARREN MG, 1990, HARVARD INT LAW J, V31, P185
+   WEBER RF, 2010, ADM LAW REV IN PRESS, V62
+   WILHELMI R, 2008, WERTPAPIER MITTEILUN, V62, P863
+   WYMEERSCH E, 2010, REGULATION PRIVATE E, P4
+   ZARING D, 2005, CHI J INT L, V5, P547
+   Zitzewitz E, 2003, J LAW ECON ORGAN, V19, P245, DOI 10.1093/jleo/ewg011
+   2010, FED REG, V75, P9496
+NR 168
+TC 5
+Z9 5
+U1 0
+U2 6
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1566-7529
+EI 1741-6205
+J9 EUR BUS ORGAN LAW RE
+JI Eur. Bus. Organ. Law Rev.
+PY 2010
+VL 11
+IS 3
+BP 329
+EP 378
+DI 10.1017/S1566752910300036
+PG 50
+WC Business; Law
+SC Business & Economics; Government & Law
+GA 683SV
+UT WOS:000284496400003
+DA 2019-12-28
+ER
+
+PT J
+AU Bushman, R
+   Landsman, WR
+AF Bushman, Robert
+   Landsman, Wayne R.
+TI The pros and cons of regulating corporate reporting: a critical review
+   of the arguments
+SO ACCOUNTING AND BUSINESS RESEARCH
+LA English
+DT Article; Proceedings Paper
+CT Information for Better Markets Conference 2009
+CY DEC 14-15, 2009
+CL London, ENGLAND
+SP Inst Chartered Accountants England & Wales
+DE regulation; corporate reporting; politics
+ID MANDATORY DISCLOSURE; ECONOMIC REGULATION; MARKET; INFORMATION;
+   STANDARDS; EARNINGS; QUALITY; COST
+AB In this paper, we distil essential insights about the regulation of financial reporting from the academic literature. The key objective is to synthesise extant theory to provide a basis for evaluating implications of pressures on the regulation of financial accounting following the recent financial crisis. We succinctly lay out arguments put forth both for and against the regulation of corporate disclosure and standard-setting. We then examine current developments suggesting that accounting standard-setting is at risk of becoming entangled in a web of political forces with potentially significant consequences. The crisis has brought into sharp focus the reality that the regulation of corporate reporting is just one piece of a larger regulatory configuration, and that forces are at play that would subjugate accounting standard-setting to broader regulatory demands. Recent actions by the European Commission relating to IFRS 9 and proposed legislation in the US Congress to create a systemic risk council serve to illustrate this point. We conclude by discussing in detail the recent fair value debate as a case study of the way in which bank regulatory policy and accounting standard-setting decisions were jointly determined as a potentially socially optimal means to mitigate the effects of the financial crisis.
+C1 [Bushman, Robert; Landsman, Wayne R.] Univ N Carolina, Kenan Flagler Business Sch, Chapel Hill, NC 27599 USA.
+RP Bushman, R (reprint author), Univ N Carolina, Kenan Flagler Business Sch, CB 3490, Chapel Hill, NC 27599 USA.
+EM Bushman@unc.edu
+CR Admati AR, 2000, REV FINANC STUD, V13, P479, DOI 10.1093/rfs/13.3.479
+   ADRIAN T, 2009, J FINANCIAL INTERMED
+   Ball R, 2000, J ACCOUNT ECON, V29, P1, DOI 10.1016/S0165-4101(00)00012-4
+   Ball R, 2003, J ACCOUNT ECON, V36, P235, DOI 10.1016/j.jacceco.2003.10.003
+   BANNER S, 1997, WASH U L Q, V75, P849
+   Barth J, 2006, RETHINKING BANK SUPE
+   Barth ME, 2008, J ACCOUNT RES, V46, P467, DOI 10.1111/j.1475-679X.2008.00287.x
+   BUSHMAN R, 2009, ACCOUNTING DISCRETIO
+   Bushman RM, 2004, J ACCOUNTING RES, V42, P207, DOI 10.1111/j.1475-679X.2004.00136.x
+   CEBS, 2007, AN REP PRUD FILT REG
+   CEBS-Committee of European Banking Supervisor, 2009, ASS BANKS PILL 3 DIS
+   COASE RH, 1960, J LAW ECON, V3, P1, DOI 10.1086/466560
+   COFFEE JC, 1984, VA LAW REV, V70, P717, DOI 10.2307/1073083
+   Coffee JC, 2007, U PENN LAW REV, V156, P229, DOI 10.2307/40041391
+   Daske H, 2008, J ACCOUNT RES, V46, P1085, DOI 10.1111/j.1475-679X.2008.00306.x
+   Demsetz Harold, 1969, J LAW EC, V12, P1
+   Djankov S, 2003, J COMP ECON, V31, P595, DOI 10.1016/j.jce.2003.08.005
+   Dugan J. C, 2009, LOAN LOSS PROVISIONI
+   Dye R., 2001, ACCOUNT HORIZ, V15, P257, DOI DOI 10.2308/ACCH.2001.15.3.257
+   EASTERBROOK FH, 1984, VA LAW REV, V70, P669, DOI 10.2307/1073082
+   *FASB, 2006, 157 FASB
+   *FASB, 2009, 1574 FASB FAS, P157
+   *FASB, 2009, 1152 FASB FAS
+   *FASB, 2009, ACC FIN INSTR SUMM D
+   *FASB, 2003, 115 FASB
+   Financial Accounting Standards Board, 2009, 1071 FASB
+   Financial Accounting Standards Board (FASB), 2007, 115 FASB
+   Financial Accounting Standards Board (FASB), 1998, 133 FASB
+   Financial Stability Forum (FSF), 2009, REP FIN STAB FOR ADD
+   *G 20, 2009, PROGR REP ACT PROM F
+   GADINIS S, 2007, MARKETS REGULATORS
+   GROSSMAN SJ, 1981, J LAW ECON, V24, P461, DOI 10.1086/466995
+   HUIZINGA H, 2009, ACCOUNTING DISCRETIO
+   *IASB, 2009, REQUEST INFORM
+   *IASB, 2005, 39 IASB
+   IASB, 2003, 39 IASB
+   Jackson H., 2008, PRIVATE PUBLIC ENFOR
+   Kothari S.P., 2009, WHAT SHOULD GAAP LOO
+   La Porta R, 2006, J FINANC, V61, P1, DOI 10.1111/j.1540-6261.2006.00828.x
+   Lambert R, 2007, J ACCOUNTING RES, V45, P385, DOI 10.1111/j.1475-679X.2007.00238.x
+   Lang M, 2006, J ACCOUNT ECON, V42, P255, DOI 10.1016/j.jacceco.2006.04.005
+   LEUZ C, 2008, EC CONSEQUENCES FINA
+   Lo A. W., 2009, FEASIBILITY SYSTEMIC
+   MAHONEY PG, 1995, U CHICAGO LAW REV, V62, P1047, DOI 10.2307/1600055
+   MILGROM P, 1986, RAND J ECON, V17, P18, DOI 10.2307/2555625
+   PELTZMAN S, 1976, J LAW ECON, V19, P211, DOI 10.1086/466865
+   Pigou A., 1938, EC WELFARE
+   Plantin G., 2008, FINANCIAL STABILITY, V12
+   Plantin G, 2008, J ACCOUNT RES, V46, P435, DOI 10.1111/j.1475-679X.2008.00281.x
+   POSNER RA, 1974, BELL J ECON, V5, P335, DOI 10.2307/3003113
+   Power M, 2010, ACCOUNT BUS RES, V40, P197, DOI 10.1080/00014788.2010.9663394
+   *PRICEWATERHOUSECO, 2009, DATALINE LOOK CURREN
+   Ramanna K, 2008, J ACCOUNT ECON, V45, P253, DOI 10.1016/j.jacceco.2007.11.006
+   Reinhart C. M, 2008, 13882 NBER, V13882
+   ROCHET JC, 2005, PRUDENTIAL POLICY MO
+   *SEC, 2005, ACC SER REL, V150
+   Securities and Exchange Commission (SEC), 2008, ROADM POT US FIN STA
+   Securities and Exchange Commission (SEC), 2007, FIN RUL ACC FOR PRIV
+   Securities and Exchange Commission (SEC), 2010, COMM STAT SUPP CONV
+   Shleifer A, 2005, EUR FINANC MANAG, V11, P439, DOI 10.1111/j.1354-7798.2005.00291.x
+   Squam Lake Working Group on Financial Regulation, 2009, NEW INF INFR FIN MAR
+   STIGLER GJ, 1971, BELL J ECON, V2, P3, DOI 10.2307/3003160
+   Sunder S., 2002, J ACCOUNTING PUBLIC, V21, P219, DOI DOI 10.1016/S0278-4254(02)00050-9
+   U.S. Treasury, 2009, FIN REG REF
+   VERRECCHIA RE, 1983, J ACCOUNT ECON, V5, P179, DOI 10.1016/0165-4101(83)90011-3
+   VYAS D, 2009, FINANCIAL REPORTING
+   Watts R., 1986, POSITIVE ACCOUNTING
+   Zeff S., 2005, CPA J, V75, P19
+   Zeff S. A., 2005, CPA J, V75, P18
+   BASED LECT DELIVERED
+NR 70
+TC 33
+Z9 34
+U1 2
+U2 29
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 0001-4788
+J9 ACCOUNT BUS RES
+JI Account. Bus. Res.
+PY 2010
+VL 40
+IS 3
+SI SI
+BP 259
+EP 273
+DI 10.1080/00014788.2010.9663400
+PG 15
+WC Business, Finance
+SC Business & Economics
+GA 623LL
+UT WOS:000279741500009
+DA 2019-12-28
+ER

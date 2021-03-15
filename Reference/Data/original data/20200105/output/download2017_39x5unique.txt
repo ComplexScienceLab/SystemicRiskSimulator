@@ -1,0 +1,437 @@
+
+PT J
+AU He, L
+   Li, SW
+AF He, Liang
+   Li, Shouwei
+TI Network Entropy and Systemic Risk in Dynamic Banking Systems
+SO COMPLEXITY
+LA English
+DT Article
+ID FINANCIAL NETWORKS; COMPLEX NETWORKS; INTERBANK MARKET; CONTAGION;
+   EMERGENCE; TOPOLOGY; MODEL
+AB We investigate network entropy of dynamic banking systems, where interbank networks analyzed include random networks, small world networks, and scale-free networks. We find that network entropy is positively correlated with the effect of systemic risk in the three kinds of interbank networks and that network entropy in the small-world network is the largest, followed by those in the random network and the scale-free network.
+C1 [He, Liang] Fudan Univ, Sch Econ, Shanghai 200433, Peoples R China.
+   [Li, Shouwei] Southeast Univ, Sch Econ & Management, Nanjing 211189, Jiangsu, Peoples R China.
+RP He, L (reprint author), Fudan Univ, Sch Econ, Shanghai 200433, Peoples R China.
+EM heliangfudan@126.com
+FU NSFCNational Natural Science Foundation of China [71201023, 71371051,
+   71671037]; Social Science Fund Project of Jiangsu Province [15GLC003];
+   Humanities and Social Science Planning Foundation of the Ministry of
+   Education of China [16YJA630026]; Teaching and Research Program for
+   Excellent Young Teachers of Southeast University [2242015R30021]
+FX This research is supported by NSFC (no. 71201023, no. 71371051, and no.
+   71671037), Social Science Fund Project of Jiangsu Province (no.
+   15GLC003), Humanities and Social Science Planning Foundation of the
+   Ministry of Education of China (no. 16YJA630026), and Teaching and
+   Research Program for Excellent Young Teachers of Southeast University
+   (no. 2242015R30021).
+CR Alessi L, 2011, EUR J POLIT ECON, V27, P520, DOI 10.1016/j.ejpoleco.2011.01.003
+   Anand K, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.045102
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Batiz-Zuk E, 2016, J FINANC STABIL, V27, P198, DOI 10.1016/j.jfs.2015.04.007
+   Billio M, 2016, J INT FINANC MARK I, V45, P42, DOI 10.1016/j.intfin.2016.05.008
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Cai M, 2017, SCI REP-UK, V7, DOI 10.1038/s41598-017-09475-9
+   Chen TQ, 2015, COMPUT ECON, V46, P519, DOI 10.1007/s10614-014-9475-2
+   Dehmer M, 2008, APPL MATH COMPUT, V201, P82, DOI 10.1016/j.amc.2007.12.010
+   Demetrius L, 2005, PHYSICA A, V346, P682, DOI 10.1016/j.physa.2004.07.011
+   Erdos P., 1959, PUBL MATH-DEBRECEN, V6, P290, DOI DOI 10.1234/12345678
+   Fernandes L. M. M., 2013, ISEG DE WORKING PAPE
+   Gandy A., 2015, SSRN ELECT J
+   Gatti DD, 2010, J ECON DYN CONTROL, V34, P1627, DOI 10.1016/j.jedc.2010.06.019
+   Gatti DD, 2009, J ECON INTERACT COOR, V4, P195, DOI 10.1007/s11403-009-0054-x
+   Gencay R, 2015, J BANK FINANC, V55, P157, DOI 10.1016/j.jbankfin.2015.02.007
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Halaj G, 2015, QUANT FINANC, V15, P653, DOI 10.1080/14697688.2014.968357
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Langfield S, 2016, COMPUT ECON, V47, P3, DOI 10.1007/s10614-014-9443-x
+   Lee D., 2014, BANK KOREA WP 2014 3
+   Li SW, 2016, CHAOS SOLITON FRACT, V91, P591, DOI 10.1016/j.chaos.2016.08.006
+   Lux T, 2015, J ECON DYN CONTROL, V52, pA11, DOI 10.1016/j.jedc.2014.09.038
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Nie TY, 2016, PHYSICA A, V453, P290, DOI 10.1016/j.physa.2016.02.009
+   Sensoy A, 2016, INT REV FINANC, V16, P457, DOI 10.1111/irfi.12077
+   Shannon C., 1949, MATH THEORY COMMUNIC
+   Silva TC, 2016, EMERG MARK REV, V26, P130, DOI 10.1016/j.ememar.2015.12.004
+   Silva TC, 2017, J ECON DYN CONTROL, V76, P109, DOI 10.1016/j.jedc.2017.01.001
+   Silva TC, 2016, J NETW THEORY FINANC, V2, P1, DOI 10.21314/JNTF.2016.022
+   Silva TC, 2016, J FINANC STABIL, V25, P247, DOI 10.1016/j.jfs.2016.04.004
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Watts DJ, 1998, NATURE, V393, P440, DOI 10.1038/30918
+NR 35
+TC 1
+Z9 1
+U1 1
+U2 13
+PU WILEY-HINDAWI
+PI LONDON
+PA ADAM HOUSE, 3RD FL, 1 FITZROY SQ, LONDON, WIT 5HE, ENGLAND
+SN 1076-2787
+EI 1099-0526
+J9 COMPLEXITY
+JI Complexity
+PY 2017
+AR 1852897
+DI 10.1155/2017/1852897
+PG 7
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA FL9VV
+UT WOS:000414608900001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Huo, R
+   Ahmed, AD
+AF Huo, Rui
+   Ahmed, Abdullahi D.
+TI Return and volatility spillovers effects: Evaluating the impact of
+   Shanghai Hong Kong Stock Connect
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Volatility spillovers; BEKK GARCH; Shanghai-Hong Kong Stock Connect;
+   Portfolio
+ID FINANCIAL CRISIS; MAINLAND CHINA; MARKET; TRANSMISSION; INFORMATION;
+   CONTAGION; INTERDEPENDENCE; COMOVEMENTS; INTEGRATION; MODELS
+AB This study investigates the impact of the recently introduced Shanghai-Hong Kong Stock Connect. Using high frequency data and dynamic forecasting techniques, we find that the new Stock Connect does contribute to the increasing importance of the Chinese mainland stock market and economic activity. A weak and unstable cointegration relationship is found after this event. Additionally, the Stock Connect has also increased the conditional variance of both stock markets. We observe a leading role of the Shanghai stock market to the Hong Kong stock market in terms of both mean and volatility spillover effects after the Stock Connect. Our study indicates that the opening up of stock markets in China could enhance the leading power, influence the risk level and improve the market efficiency of the Chinese mainland stock market, since the volatility spillover effect from Shanghai to Hong Kong is strengthened. Besides, our results have important policy implications, especially on how policy makers should deal with the increased market interconnectedness and for portfolio managers in choosing potential hedging instruments. The success of Shanghai-Hong Kong Stock Connect provides valuable operational experience for the forthcoming Shenzhen-Hong Kong Stock Connect which could further improve the market efficiency in China.
+C1 [Huo, Rui] RMIT Univ, Coll Business, Melbourne, Vic 3001, Australia.
+   [Ahmed, Abdullahi D.] RMIT Univ, Coll Business, Sch Accounting, Melbourne, Vic 3001, Australia.
+RP Ahmed, AD (reprint author), RMIT Univ, Coll Business, Sch Accounting, Melbourne, Vic 3001, Australia.
+EM rui.huo@rmit.edu.au; abdullahi.ahmed@rmit.edu.au
+OI Ahmed, Abdullahi/0000-0003-4472-0205
+CR Afef M. T., 2014, J BEHAV EC FINANCE E, V2, P8
+   Allen DE, 2013, MATH COMPUT SIMULAT, V94, P238, DOI 10.1016/j.matcom.2013.01.001
+   Alotaibi AR, 2015, ECON MODEL, V45, P38, DOI 10.1016/j.econmod.2014.10.052
+   Balli F, 2014, ECON MODEL, V41, P398, DOI 10.1016/j.econmod.2014.05.035
+   Beirne J, 2013, REV INT ECON, V21, P1060, DOI 10.1111/roie.12091
+   Beirne J, 2010, EMERG MARK REV, V11, P250, DOI 10.1016/j.ememar.2010.05.002
+   Bekaert G, 1997, J FINANC ECON, V43, P29, DOI 10.1016/S0304-405X(96)00889-6
+   Bley J, 2011, J INT FINANC MARK I, V21, P662, DOI 10.1016/j.intfin.2011.04.003
+   BOLLERSLEV T, 1988, J POLIT ECON, V96, P116, DOI 10.1086/261527
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Booth GG, 1997, J BANK FINANC, V21, P811, DOI 10.1016/S0378-4266(97)00006-X
+   BROOKS RD, 2003, APPL FINANCIAL EC, V13, P747
+   Cheng H, 2005, REV QUANT FINANC ACC, V24, P343, DOI 10.1007/s11156-005-7017-7
+   Cheung W., 2010, APPL FINANCIAL EC, V20, P85, DOI DOI 10.1080/09603100903262962
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Engle R, 2001, J ECON PERSPECT, V15, P157, DOI 10.1257/jep.15.4.157
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Engle RF, 2012, REV ECON STAT, V94, P222, DOI 10.1162/REST_a_00167
+   EUN CS, 1989, J FINANC QUANT ANAL, V24, P241, DOI 10.2307/2330774
+   Gallo GM, 2008, COMPUT STAT DATA AN, V52, P3011, DOI 10.1016/j.csda.2007.09.016
+   Gjika D, 2013, ECON MODEL, V33, P55, DOI 10.1016/j.econmod.2013.03.015
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Heymans A, 2013, S AFR J ECON MANAG S, V16, P418, DOI 10.4102/sajems.v16i4.384
+   HKEX, 2015, SHANGH HONG KONG STO
+   HU JWS, 1997, J INT FINANC MARK I, V7, P351
+   Huang Bwo-Nung, 2000, INT REV FINANC ANAL, V9, P281, DOI DOI 10.1016/S1057-5219(00)00031-4
+   Huang TL, 2015, ASIA PAC MANAG REV, V20, P65, DOI 10.1016/j.apmrv.2014.12.008
+   Hwang JK, 2014, INT ADV ECON RES, V20, P311, DOI 10.1007/s11294-014-9472-1
+   Jaleel FM, 2009, J MULTINATL FINANC M, V19, P409, DOI 10.1016/j.mulfin.2009.07.006
+   JOHANSEN S, 1990, OXFORD B ECON STAT, V52, P169, DOI 10.1111/j.1468-0084.1990.mp52002003.x
+   Johansson AC, 2009, WORLD DEV, V37, P839, DOI 10.1016/j.worlddev.2008.07.015
+   Kenourgios D, 2012, J MULTINATL FINANC M, V22, P24, DOI 10.1016/j.mulfin.2012.01.002
+   Kim SW, 1995, J EMPIR FINANC, V2, P117
+   Kroner KF, 1998, REV FINANC STUD, V11, P817, DOI 10.1093/rfs/11.4.817
+   Lean HH, 2013, ECON MODEL, V32, P333, DOI 10.1016/j.econmod.2013.02.013
+   Lee YH, 2013, EMERG MARK REV, V14, P1, DOI 10.1016/j.ememar.2012.09.007
+   Li H., 2007, APPL FINANCIAL EC, V17, P285, DOI DOI 10.1080/09603100600675557
+   Lin KP, 2009, CHINA ECON REV, V20, P29, DOI 10.1016/j.chieco.2008.11.003
+   Liu Y. A., 1998, J EC FINANC, V22, P59
+   Miyakoshi T., 2003, J INT FINANC MARK I, V13, P383, DOI DOI 10.1016/S1042-4431(03)00015-5
+   Moser T., 2003, INT FINANC, V6, P157, DOI [10.1111/1468-2362.00113, DOI 10.1111/1468-2362.00113]
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.2307/2336182
+   Poon SH, 2003, J ECON LIT, V41, P478, DOI 10.1257/002205103765762743
+   Qiao Z., 2011, APPL FINANC EC, V21, P1437
+   Raine G. B., 2015, INVEST LAWYER, V22, P21
+   ROLL R, 1992, J FINANC, V47, P3, DOI 10.2307/2329089
+   ROSS SA, 1989, J FINANC, V44, P1, DOI 10.2307/2328272
+   Samarakoon LP, 2011, J INT FINANC MARK I, V21, P724, DOI 10.1016/j.intfin.2011.05.001
+   Singh P., 2010, INT REV FINANC ANAL, V19, P55
+   Su Q., 2007, APPL FINANCE EC, V17, P1349, DOI [10.1080/09603100600993760, DOI 10.1080/09603100600993760]
+   Tian G. G., 2008, MULTINATL FINANC J, V12, P105
+   Tseng W., 2002, PDP02 IMF, P3
+   Umutlu M, 2010, J BANK FINANC, V34, P509, DOI 10.1016/j.jbankfin.2009.08.010
+   Wang P, 2010, GLOB FINANC J, V21, P304, DOI 10.1016/j.gfj.2010.09.007
+   Wang S. S., 2004, J INT FINANC MARK I, V14, P235, DOI DOI 10.1016/J.INTFIN.2003.07.002
+   Wei J.K.C., 1995, PACIFIC BASIN FINANC, V3, P113
+   Wongswan J, 2006, REV FINANC STUD, V19, P1157, DOI 10.1093/rfs/hhj033
+   Yi Z, 2009, J RISK FINANC MANAG, V2, P38, DOI 10.3390/jrfm2010038
+   Yilmaz K, 2010, J ASIAN ECON, V21, P304, DOI 10.1016/j.asieco.2009.09.001
+   Zheng TG, 2013, N AM J ECON FINANC, V26, P643, DOI 10.1016/j.najef.2013.05.001
+   Zheng X., 2013, SELECTED ASIAN MARKE, P53
+   Zhou XY, 2012, PAC-BASIN FINANC J, V20, P247, DOI 10.1016/j.pacfin.2011.08.002
+   Zhu H., 2004, INT J THEORETICAL AP, V7, P135, DOI DOI 10.1142/S0219024904002414
+NR 65
+TC 15
+Z9 16
+U1 6
+U2 29
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD FEB
+PY 2017
+VL 61
+BP 260
+EP 272
+DI 10.1016/j.econmod.2016.09.021
+PG 13
+WC Economics
+SC Business & Economics
+GA EL1RT
+UT WOS:000394399400022
+DA 2019-12-27
+ER
+
+PT J
+AU Akhter, S
+   Daly, K
+AF Akhter, Selim
+   Daly, Kevin
+TI Contagion risk for Australian banks from global systemically important
+   banks: Evidence from extreme events
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Global systemically important banks (GSIBs); Australian banks; Extreme
+   value theory (EVT); Extreme events; Distance to default (DD); GARCH;
+   Logistic regression model
+ID FINANCIAL CONTAGION; TERM STRUCTURE; CRISIS; DEBT
+AB This paper presents evidence that extreme negative shocks for the global systemically important banks (GSIBs) are contagious to Australian banks. Our logit regression models predict transmission of adverse extreme shocks in the distance to default (DD) of GSIBs to the Australian banks. While most previous studies consider contagion across national stock markets, we investigate the degree of contagion risk for Australian banks spreading from GSIBs. Our results point to the critical importance for the Australian Prudential Regulation Authority (APRA) (2015) to closely observe and monitor developments across the major GSIBs and direct appropriate local policy measures accordingly.
+C1 [Akhter, Selim; Daly, Kevin] Western Sydney Univ, Finance & Property Sch Business, Discipline Econ, Sydney, NSW, Australia.
+RP Daly, K (reprint author), Western Sydney Univ, Finance & Property Sch Business, Discipline Econ, Sydney, NSW, Australia.
+EM s.akhter@westernsydney.edu.au; k.daly@westernsydney.edu.au
+CR Acharya Viral V., 2011, 17136 NAT BUR EC RES
+   Akhter S, 2015, ECON REC, V91, P191, DOI 10.1111/1475-4932.12177
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Australian Prudential Regulation Authority (APRA), 2015, STAT Q ADI PERF DAT
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bank of England, 2006, 20 BANK ENGL
+   Basel Committee on Banking Supervision, GLOB SYST IMP BANKS
+   Bernard H, 1998, INT J FINANC ECON, V3, P195, DOI 10.1002/(SICI)1099-1158(199807)3:3<195::AID-IJFE81>3.0.CO;2-M
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Bordo Michael D, 2001, INT FINANCIAL CONTAG, P367
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Cameron A.C., 2009, MICROECONOMETRICS US
+   Chan-Lau J., 2007, 74 INT MON FUND
+   Chan-Lau J., 2012, INT J FINANC EC
+   Estrella A, 2005, ECON J, V115, P722, DOI 10.1111/j.1468-0297.2005.01017.x
+   ESTRELLA A, 1991, J FINANC, V46, P555, DOI 10.2307/2328836
+   Financial System Inquiry, 2014, FIN REP 2014 COMM AU
+   Forbes K., 2012, 18465 NAT BUR EC RES
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gropp R, 2004, J INT MONEY FINANC, V23, P405, DOI 10.1016/j.jimonfin.2004.01.005
+   Gropp R., 2006, 662 ECB
+   Guy D., 2009, SOME EFFECTS GLOBAL
+   Harada K, 2013, JPN WORLD ECON, V27, P70, DOI 10.1016/j.japwor.2013.03.007
+   Hatemi A, 2011, ECON MODEL, V28, P2560, DOI 10.1016/j.econmod.2011.07.017
+   Hosmer D. W., 2013, APPL LOGISTIC REGRES
+   Hull J., 2012, RISK MANAGEMENT FINA
+   Kenourgios D, 2015, ECON MODEL, V44, P283, DOI 10.1016/j.econmod.2014.10.048
+   KINDLEBERGER CP, 1989, MANIAS PANICS CRASHE
+   Longin F., J FINANCE, V56, P649
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Pais A, 2011, J BANK FINANC, V35, P681, DOI 10.1016/j.jbankfin.2010.05.012
+   Sahut JM, 2011, ECON MODEL, V28, P138, DOI 10.1016/j.econmod.2010.09.017
+   Shin HS, 2012, IMF ECON REV, V60, P155, DOI 10.1057/imfer.2012.6
+   Stock JH, 2001, J ECON PERSPECT, V15, P101, DOI 10.1257/jep.15.4.101
+   Ureche-Rangau L, 2013, ECON MODEL, V35, P35, DOI 10.1016/j.econmod.2013.06.026
+   Van Rijckehem C, 2001, J INT ECON, V54, P293, DOI 10.1016/S0022-1996(00)00095-7
+   VanWincoop E, 2011, 17686 NAT BUR EC RES
+NR 39
+TC 3
+Z9 3
+U1 0
+U2 6
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD JUN
+PY 2017
+VL 63
+BP 191
+EP 205
+DI 10.1016/j.econmod.2016.11.018
+PG 15
+WC Economics
+SC Business & Economics
+GA ET4BA
+UT WOS:000400222800015
+DA 2019-12-27
+ER
+
+PT J
+AU Gradojevic, N
+   Caric, M
+AF Gradojevic, Nikola
+   Caric, Marko
+TI Predicting Systemic Risk with Entropic Indicators
+SO JOURNAL OF FORECASTING
+LA English
+DT Article
+DE financial crisis; systemic risk; risk management; entropy
+ID NONEXTENSIVE ENTROPY; MARKETS; RATES
+AB This paper concentrates on quantifying the behavioral aspects of systemic risk by using a novel approach based on entropy. More specifically, we study aggregate market expectations and the predictability of systemic risk before and during the financial crisis in 2008. Two underlying signals for estimating entropic risk measures are considered: (i) skewness premium of deepest out-of-the-money options; and (ii) implied volatility ratio in regard to deepest out-of-the-money options. The findings confirm the predictive and contemporaneous usefulness of our entropy setting in market risk management. The degree of predictability is closely linked to both the type of entropy and the nature of the underlying signal. Copyright (c) 2016 John Wiley & Sons, Ltd.
+C1 [Gradojevic, Nikola] Univ Guelph, Coll Business & Econ, Dept Econ & Finance, Guelph, ON, Canada.
+   [Gradojevic, Nikola] IESEG Sch Management LEM CNRS, Lille, France.
+   [Gradojevic, Nikola] Univ Novi Sad, Fac Tech Sci, Novi Sad, Serbia.
+   [Caric, Marko] Business Acad, Fac Econ & Engn Management, Novi Sad, Serbia.
+RP Gradojevic, N (reprint author), Univ Guelph, Coll Business & Econ, Dept Econ & Finance, Guelph, ON, Canada.
+EM ngradoje@uoguelph.ca
+OI Gradojevic, Nikola/0000-0003-4001-3159
+CR Bekiros S, 2013, J INT MONEY FINANC, V33, P282, DOI 10.1016/j.jimonfin.2012.11.016
+   Bekiros SD, 2014, COMPUT ECON, V44, P231, DOI 10.1007/s10614-013-9381-z
+   Bentes S, 2012, J PHYS C SERIES, V394, P12
+   Borland L., 2002, Quantitative Finance, V2, P415, DOI 10.1088/1469-7688/2/6/301
+   Borland L., 2004, NONEXTENSIVE ENTROPY, P305
+   Bowden RJ, 2011, QUANT FINANC, V11, P437, DOI 10.1080/14697681003685548
+   Gamero LG, 1997, PHYSICA A, V246, P487, DOI 10.1016/S0378-4371(97)00367-1
+   Gell-Mann M., 2004, NONEXTENSIVE ENTROPY
+   Gencay R, 2010, J EMPIR FINANC, V17, P270, DOI 10.1016/j.jempfin.2009.09.006
+   Gradojevic N, 2008, ECON LETT, V100, P27, DOI 10.1016/j.econlet.2007.10.024
+   Gradojevic N, 2017, J FORECASTING, V36, P16, DOI 10.1002/for.2411
+   Gradojevic N, 2011, IEEE SIGNAL PROC MAG, V28, P116, DOI 10.1109/MSP.2011.941843
+   Ishizaki R, 2013, PHYSICA A, V392, P3344, DOI 10.1016/j.physa.2013.03.041
+   Kaynar B, 2010, EUR J OPER RES, V207, P1380, DOI 10.1016/j.ejor.2010.07.002
+   Kitamura Y, 2002, J ECONOMETRICS, V107, P159, DOI 10.1016/S0304-4076(01)00118-X
+   Martin MT, 2000, PHYSICA A, V275, P262, DOI 10.1016/S0378-4371(99)00424-0
+   Moreno B, 2013, J FORECASTING, V32, P124, DOI 10.1002/for.1257
+   Namaki A, 2013, PHYSICA A, V392, P3039, DOI 10.1016/j.physa.2013.02.008
+   Pincus SM., 1991, P NATL ACAD SCI, V88
+   Scholes MS, 1996, J RISK UNCERTAINTY, V12, P271, DOI 10.1007/BF00055798
+   STUTZER M, 2000, ENTROPY, V2, P70, DOI DOI 10.3390/E2020070
+   Thakor NV, 2004, ANNU REV BIOMED ENG, V6, P453, DOI 10.1146/annurev.bioeng.5.040202.121601
+   Tong S, 2002, PHYSICA A, V305, P619, DOI 10.1016/S0378-4371(01)00621-5
+   TSALLIS C, 1988, J STAT PHYS, V52, P479, DOI 10.1007/BF01016429
+   Tsallis C., 2009, INTRO NONEXTENSIVE S
+   Tsallis C, 2011, ENTROPY-SWITZ, V13, P1765, DOI 10.3390/e13101765
+   Yang JP, 2005, EUR J OPER RES, V164, P792, DOI 10.1016/j.ejor.2004.01.031
+NR 27
+TC 7
+Z9 7
+U1 0
+U2 15
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0277-6693
+EI 1099-131X
+J9 J FORECASTING
+JI J. Forecast.
+PD JAN
+PY 2017
+VL 36
+IS 1
+BP 16
+EP 25
+DI 10.1002/for.2411
+PG 10
+WC Economics; Management
+SC Business & Economics
+GA EF5SN
+UT WOS:000390390000002
+DA 2019-12-28
+ER
+
+PT J
+AU Diallo, B
+   Al-Mansour, A
+AF Diallo, Boubacar
+   Al-Mansour, Abdullah
+TI Shadow banking, insurance and financial sector stability
+SO RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE
+LA English
+DT Article
+DE Shadow banking; Insurance; Financial stability
+ID SYSTEMIC RISK; PANEL-DATA; MODELS; CRISIS
+AB Motivated by the recent financial crisis and the near collapse of the insurance giant American International Group (AIG), we empirically study the link between the insurance sector, the size of the shadow system and financial stability across countries. Using the Z-score as a measure of financial stability and the ratio of insurance assets to GDP for 26 countries during the period 1998-2011, this paper shows that: (i) the insurance sector is negatively and significantly related to financial stability, and that (ii) using the shadow banking system as a channel, the insurance sector is detrimental to financial stability for countries with a high level of shadow banking assets.
+C1 [Diallo, Boubacar] Qatar Univ, Dept Finance & Econ, Coll Business & Econ, POB 2713, Doha, Qatar.
+   Coll Ind Management KFUPM, Dept Finance & Econ, Dhahran, Saudi Arabia.
+RP Diallo, B (reprint author), Qatar Univ, Dept Finance & Econ, Coll Business & Econ, POB 2713, Doha, Qatar.
+EM diallobs@kfupm.edu.sa; amansour@kfupm.edu.sa
+FU KFUPM [IN161041]
+FX We wish to thank the Deanship of Research (DSR) at KFUPM for providing
+   with us research support under the Grant IN161041. We also thank an
+   anonymous referee and the editor for their helpful comments.
+CR Agoraki MEK, 2011, J FINANC STABIL, V7, P38, DOI 10.1016/j.jfs.2009.08.002
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Baluch F, 2011, GENEVA PAP R I-ISS P, V36, P126, DOI 10.1057/gpp.2010.40
+   Beck T, 2007, J ECON GROWTH, V12, P27, DOI 10.1007/s10887-007-9010-6
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Bell M., 2009, INSURANCE STABILITY
+   Bierth C, 2015, J BANK FINANC, V55, P232, DOI 10.1016/j.jbankfin.2015.02.014
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   BOYD JH, 1993, J MONETARY ECON, V31, P47, DOI 10.1016/0304-3932(93)90016-9
+   Caprio G, 2008, BANK REGULATIONS ARE
+   Chen H, 2014, J RISK INSUR, V81, P623, DOI 10.1111/j.1539-6975.2012.01503.x
+   CHENG SH, 2012, IMF WORKING PAPER, V7196, P246
+   Cihak M, 2010, J FINANC SERV RES, V38, P95, DOI 10.1007/s10693-010-0089-0
+   Cummins JD, 2014, J RISK INSUR, V81, P489, DOI 10.1111/jori.12039
+   Das U.S., 2010, TECHNICAL REPORT
+   De Nicolo G., 2013, CESIFO WP SERIES, V4123
+   Demirguc-Kunt A, 2008, J FINANC INTERMED, V17, P511, DOI 10.1016/j.jfi.2007.10.003
+   DIALLO B, 2015, ECON LETT, V129
+   French A., 2015, BANK ENGL Q B, V55, P242
+   Grace M.F, 2010, INSURANCE IND SYSTEM
+   Hahm JH, 2013, J MONEY CREDIT BANK, V45, P3, DOI 10.1111/jmcb.12035
+   Harrington SE, 2009, J RISK INSUR, V76, P785, DOI 10.1111/j.1539-6975.2009.01330.x
+   Harutyunyan A., 2015, IMF WORKING PAPER, P1
+   IMF, 2015, GLOB FIN STAB REP
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Miyake A, 2007, J ECON BUS, V59, P14, DOI 10.1016/j.jeconbus.2005.12.002
+   Muhlnickel J., 2015, J FINANC STABIL, V18
+   Ongena S, 2013, J FINANC ECON, V108, P727, DOI 10.1016/j.jfineco.2013.01.006
+   Repullo R, 2004, J FINANC INTERMED, V13, P156, DOI 10.1016/j.jfi.2003.08.005
+   Schaeck K, 2009, J MONEY CREDIT BANK, V41, P711, DOI 10.1111/j.1538-4616.2009.00228.x
+   Shin H., 2009, SAVINGS I, V1, P10
+   SHIN H. S., 2011, TECHNICAL REPORT
+   Shin HS, 2012, IMF ECON REV, V60, P155, DOI 10.1057/imfer.2012.6
+   Trainar P., 2004, FINANCIAL STABILITY, V5, P73
+   Woodford M., 2012, TECHNICAL REPORT
+NR 38
+TC 0
+Z9 0
+U1 2
+U2 13
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0275-5319
+EI 1878-3384
+J9 RES INT BUS FINANC
+JI Res. Int. Bus. Financ.
+PD DEC
+PY 2017
+VL 42
+BP 224
+EP 232
+DI 10.1016/j.ribaf.2017.04.024
+PG 9
+WC Business, Finance
+SC Business & Economics
+GA FO6LK
+UT WOS:000416974400015
+DA 2019-12-28
+ER

@@ -1,0 +1,439 @@
+
+PT J
+AU Martin, A
+   Skeie, D
+   von Thadden, EL
+AF Martin, Antoine
+   Skeie, David
+   von Thadden, Ernst-Ludwig
+TI The fragility of short-term secured funding markets
+SO JOURNAL OF ECONOMIC THEORY
+LA English
+DT Article
+DE Investment banking; Repurchase agreements; Runs; Financial fragility;
+   Collateral; Systemic risk
+ID DEPOSIT INSURANCE; BANK LIQUIDITY; STABILITY; MODEL
+AB This paper develops an infinite-horizon model of financial institutions that borrow short-term and invest in long-term assets that can be traded in frictionless markets. Because these financial intermediaries perform maturity transformation, they are subject to potential runs. We derive distinct liquidity, collateral, and asset liquidation constraints, which determine whether a run can occur as a result of changing market expectations. We show that the extent to which borrowers can ward off an individual run depends on whether it has sufficient liquidity, collateral, and asset liquidation capacity. These determinants depend on the borrower's (endogenous) balance sheet and on (exogenous) fundamentals. Systemic runs are possible if shocks to the valuation of collateral held by outside investors are sufficiently strong and uniform, and if the system as a whole is exposed to high short-term funding risk. The theory has policy implications for prudential regulation and lender-of-last-resort interventions. (C) 2013 Elsevier Inc. All rights reserved.
+C1 [Martin, Antoine; Skeie, David] Fed Reserve Bank New York, New York, NY USA.
+   [von Thadden, Ernst-Ludwig] Univ Mannheim, Mannheim, Germany.
+RP von Thadden, EL (reprint author), Univ Mannheim, Mannheim, Germany.
+EM antoine.martin@ny.frb.org; david.skeie@ny.frb.org;
+   vthadden@uni-mannheim.de
+RI Skeie, David/J-4007-2016
+OI Skeie, David/0000-0003-1076-7697
+CR Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Acharya VV, 2011, J FINANC, V66, P1177, DOI 10.1111/j.1540-6261.2011.01669.x
+   Acharya VV, 2011, REV FINANC STUD, V24, P2166, DOI 10.1093/rfs/hhq073
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 1998, J FINANC, V53, P1245, DOI 10.1111/0022-1082.00052
+   ALLEN F, 1994, AM ECON REV, V84, P933
+   Allen F, 2004, J EUR ECON ASSOC, V2, P1015, DOI 10.1162/1542476042813805
+   Allen Franklin, 2007, UNDERSTANDING FINANC
+   Ashcraft A, 2011, J MONEY CREDIT BANK, V43, P311, DOI 10.1111/j.1538-4616.2011.00438.x
+   Bolton P, 2011, Q J ECON, V126, P259, DOI 10.1093/qje/qjq007
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   DeMarzo PM, 2005, REV FINANC STUD, V18, P1, DOI 10.1093/rfs/hhi008
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 1997, J POLIT ECON, V105, P928, DOI 10.1086/262099
+   Fecht F, 2004, J EUR ECON ASSOC, V2, P969, DOI 10.1162/1542476042813832
+   Freixas X, 2011, REV FINANC STUD, V24, P2656, DOI 10.1093/rfs/hhr018
+   Gennaioli N, 2012, J FINANC ECON, V104, P452, DOI 10.1016/j.jfineco.2011.05.005
+   Gorton G, 2004, AM ECON REV, V94, P455, DOI 10.1257/0002828041464650
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Hart O, 1998, Q J ECON, V113, P1, DOI 10.1162/003355398555496
+   He ZG, 2012, REV FINANC STUD, V25, P1799, DOI 10.1093/rfs/hhs004
+   Kahneman D, 2011, THINKING FAST SLOW F
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Martin A, 2006, ECON THEOR, V28, P197, DOI 10.1007/s00199-005-0613-x
+   Martin A., 2014, REV FINAN S IN PRESS
+   Martin A, 2013, J MONEY CREDIT BANK, V45, P87, DOI 10.1111/j.1538-4616.2012.00563.x
+   Parlour CA, 2008, J FINANC, V63, P1291, DOI 10.1111/j.1540-6261.2008.01358.x
+   POSTLEWAITE A, 1987, J POLIT ECON, V95, P485, DOI 10.1086/261468
+   QI JP, 1994, REV FINANC STUD, V7, P389, DOI 10.1093/rfs/7.2.389
+   Schroth E., 2012, DYNAMIC DEBT R UNPUB
+   Segura A., 2012, DYNAMIC MATURI UNPUB
+   Skeie DR, 2008, J FINANC INTERMED, V17, P562, DOI 10.1016/j.jfi.2008.05.001
+   Uhlig H., 2010, CRISES REPO MA UNPUB
+   von Thadden EL, 2010, REV FINANC STUD, V23, P2648, DOI 10.1093/rfs/hhq019
+   Zoltan Pozsar, 2010, WORKING PAPER
+NR 35
+TC 11
+Z9 11
+U1 0
+U2 17
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 0022-0531
+EI 1095-7235
+J9 J ECON THEORY
+JI J. Econ. Theory
+PD JAN
+PY 2014
+VL 149
+BP 15
+EP 42
+DI 10.1016/j.jet.2013.10.006
+PG 28
+WC Economics
+SC Business & Economics
+GA AB2ZO
+UT WOS:000331661300002
+DA 2019-12-28
+ER
+
+PT J
+AU Milne, A
+AF Milne, Alistair
+TI Distance to default and the financial crisis
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Bank default; Bank moral hazard; Bank regulation; Bank safety net;
+   Contingent claims; Early warning systems; Global financial crisis;
+   Market-based risk measurement; Systemic risk; Risk shifting
+ID DEPOSIT INSURANCE; COMMERCIAL-BANKS; RISK; DEBT
+AB This paper analyses contingent-claims based measures of distance to default (D2D) for the 41 largest global banking institutions over the period 2006H2 to 20011H2. D2D falls from end-2006 through to end-2008. Cross-sectional differences in D2D prior to the crisis do not predict either bank failure or bank share prices decline, but D2D measured in mid-2008 does have some predictive value for failure by end-year. The 'option value' of the bank safety net remains small except at the height of the crisis and there is little indication of bank shareholders consciously using the safety net to shift risk onto taxpayers. (C) 2013 Elsevier B. V. All rights reserved.
+C1 Univ Loughborough, Sch Business & Econ, Loughborough, Leics, England.
+RP Milne, A (reprint author), Univ Loughborough, Sch Business & Econ, Loughborough, Leics, England.
+EM a.k.l.milne@lboro.ac.uk
+OI Milne, Alistair/0000-0002-4135-3983
+CR Altunbas Y., 2011, WORKING PAPER SERIES, V1394
+   Benston G., 1986, MIT PRESS SERIES IN
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Coffinet J., 2010, BANQUE DE FRANCE WOR
+   Crosbie P., 2000, CREDIT DERIVATIVES T, P369
+   Demsetz R, 1996, FEDERAL RESERVE BANK, P1
+   DUAN JC, 1992, J BANK FINANC, V16, P715, DOI 10.1016/0378-4266(92)90004-J
+   Evanoff DD, 2002, J BANK FINANC, V26, P989, DOI 10.1016/S0378-4266(01)00270-9
+   Fahlenbrach R., 2011, THIS TIME IS THE SAM
+   Flannery MJ, 1998, J MONEY CREDIT BANK, V30, P273, DOI 10.2307/2601102
+   Gropp R, 2006, J MONEY CREDIT BANK, V38, P399, DOI 10.1353/mcb.2006.0032
+   Harada K., 2010, NATIONAL BUREAU OF E
+   Hovakimian A, 2000, J FINANC, V55, P451, DOI 10.1111/0022-1082.00212
+   Kavonius I.K., 2009, WORKING PAPER SERIES, V1124
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   MARCUS AJ, 1984, J BANK FINANC, V8, P557, DOI 10.1016/S0378-4266(84)80046-1
+   MARCUS AJ, 1984, J MONEY CREDIT BANK, V16, P446, DOI 10.2307/1992183
+   Merton R.C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Milne A., 2002, BANK CAPITAL AND INC
+   Milne A., 2009, THE FALL OF THE HOUS
+   PENNACCHI GG, 1987, J MONEY CREDIT BANK, V19, P340, DOI 10.2307/1992081
+   Ratnovski L., 2009, IMF WORKING PAPER WP
+   RONN EI, 1986, J FINANC, V41, P871, DOI 10.2307/2328234
+   SINN HW, 2010, CASINO CAPITALISM HO
+   Stulz R. M., 2009, SSRN ELECTRONIC JOUR
+   Turner A., 2009, THE TURNER REVIEW A
+   White L. J., 1991, DEBACLE PUBLIC POLIC
+NR 28
+TC 22
+Z9 22
+U1 0
+U2 43
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD JUN
+PY 2014
+VL 12
+BP 26
+EP 36
+DI 10.1016/j.jfs.2013.05.005
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA AD2TG
+UT WOS:000333087700004
+DA 2019-12-28
+ER
+
+PT J
+AU Balcilar, M
+   Demirer, R
+   Hammoudeh, S
+AF Balcilar, Mehmet
+   Demirer, Riza
+   Hammoudeh, Shawkat
+TI What drives herding in oil-rich, developing stock markets? Relative
+   roles of own volatility and global factors
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Herding; Smooth transition regime switching; Gulf Arab stock markets
+ID INVESTORS HERD; BEHAVIOR; NONLINEARITIES; REGIME
+AB The main goal of this paper is to formally establish the volatility-herding link in the developing stock markets of the oil-rich GCC countries by examining how market volatility affects herd behavior after controlling for global factors. Using a regime-switching, smooth transition regression model (STR), we find significant evidence of herding in all Gulf Arab stock markets, with the market volatility being the more paramount factor governing the switches between the extreme states of non-herding and herding. The global variables comprised of the U.S. stock market performance, the price of oil and the US interest rate as well as the risk indexes including the CBOE Volatility Index (VIX) and the St. Louis Fed's Financial Stress Index (FSI) are found to be significant factors governing the transition to herding states. The findings stress the effect of contagion in financial markets, despite the restrictions established by the GCC policymakers in order to protect their markets. (C) 2014 Elsevier Inc. All rights reserved.
+C1 [Balcilar, Mehmet] Eastern Mediterranean Univ, Dept Econ, Tr North Cyprus, Turkey.
+   [Demirer, Riza] So Illinois Univ, Dept Econ & Finance, Edwardsville, IL 62026 USA.
+   [Hammoudeh, Shawkat] Drexel Univ, Lebow Coll Business, Philadelphia, PA 19104 USA.
+RP Hammoudeh, S (reprint author), Drexel Univ, Lebow Coll Business, Philadelphia, PA 19104 USA.
+EM hammousm@drexel.edu
+RI Balcilar, Mehmet/K-7346-2019; BALCILAR, MEHMET/C-8060-2016; Demirer,
+   Riza/D-2981-2015
+OI Balcilar, Mehmet/0000-0001-9694-5196; BALCILAR,
+   MEHMET/0000-0001-9694-5196; Demirer, Riza/0000-0002-1840-8085;
+   Hammoudeh, Shawkat/0000-0002-5455-5453
+CR Avramov D, 2006, J FINANC, V61, P2365, DOI 10.1111/j.1540-6261.2006.01060.x
+   Balcilar M., 2010, 2010001 EMU EC RES C
+   Balcilar M, 2013, J INT FINANC MARK I, V23, P295, DOI 10.1016/j.intfin.2012.09.007
+   Bikhchandani S, 2001, IMF STAFF PAPERS, V47, P279
+   BIKHCHANDANI S, 1992, J POLIT ECON, V100, P992, DOI 10.1086/261849
+   Blasco N, 2012, QUANT FINANC, V12, P311, DOI 10.1080/14697688.2010.516766
+   Chang EC, 2000, J BANK FINANC, V24, P1651, DOI 10.1016/S0378-4266(99)00096-5
+   Cheng AR, 2010, J EMPIR FINANC, V17, P413, DOI 10.1016/j.jempfin.2009.11.002
+   Chiang TC, 2010, J BANK FINANC, V34, P1911, DOI 10.1016/j.jbankfin.2009.12.014
+   Choe H, 1999, J FINANC ECON, V54, P227, DOI 10.1016/S0304-405X(99)00037-9
+   Christie W.G., 1995, FINANCIAL ANAL J, V51, P31, DOI [DOI 10.2469/FAJ.V51.N4.1918, 10.2469/faj.v51.n4.1918]
+   Demirer R, 2013, RES INT BUS FINANC, V29, P77, DOI 10.1016/j.ribaf.2013.04.001
+   Demirer R, 2014, INT REV ECON FINANC, V30, P138, DOI 10.1016/j.iref.2013.10.006
+   Demirer R, 2010, J ECON BEHAV ORGAN, V76, P283, DOI 10.1016/j.jebo.2010.06.013
+   Economou F, 2011, J INT FINANC MARK I, V21, P443, DOI 10.1016/j.intfin.2011.01.005
+   Eitrheim O, 1996, J ECONOMETRICS, V74, P59, DOI 10.1016/0304-4076(95)01751-8
+   ESCRIBANO A, 1999, NONLINEAR TIME SERIE, P289
+   FROOT KA, 1992, J FINANC, V47, P1461, DOI 10.2307/2328947
+   Granger C, 1993, MODELLING NONLINEAR
+   HAMILTON JD, 1988, J ECON DYN CONTROL, V12, P385, DOI 10.1016/0165-1889(88)90047-4
+   Hammoudeh S, 2004, CONTEMP ECON POLICY, V22, P250, DOI 10.1093/cep/byh018
+   Hammoudeh S., 2008, INT REV FINANC ANAL, V17, P47, DOI DOI 10.1016/j.irfa.2005.01.002
+   Hammoudeh S, 2006, RES INT BUS FINANC, V20, P22, DOI 10.1016/j.ribaf.2005.05.008
+   Hsieh MF, 2011, QUANT FINANC, V11, P423, DOI 10.1080/14697688.2010.506882
+   Jurkatis S., 2012, 2012035 HUMB U BERL
+   Karolyi A, 2003, HDB EC FINANCE
+   Karunanayake I, 2010, AUST ECON PAP, V49, P209, DOI 10.1111/j.1467-8454.2010.00397.x
+   Khalifa AAA, 2014, INT REV ECON FINANC, V29, P512, DOI 10.1016/j.iref.2013.08.002
+   Kim C., 1998, J EMPIR FINANC, V5, P385
+   Kim C.-J., 1998, J EMPIR FINANC, V5, P131, DOI DOI 10.1016/S0927-5398(97)00015-7
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Lee CC, 2013, QUANT FINANC, V13, P1091, DOI 10.1080/14697688.2012.740571
+   LUUKKONEN R, 1988, BIOMETRIKA, V75, P491, DOI 10.2307/2336599
+   Marashdeh H., 2010, INT RES J FINANCE EC, V37, P102
+   Mayfield E. S., 1999, WORKING PAPER
+   NEWEY WK, 1987, ECONOMETRICA, V55, P703, DOI 10.2307/1913610
+   Nofsinger JR, 1999, J FINANC, V54, P2263, DOI 10.1111/0022-1082.00188
+   Olesen J. O., 2001, 112000 COP BUS SCH D
+   PAGAN AR, 1990, J ECONOMETRICS, V45, P267, DOI 10.1016/0304-4076(90)90101-X
+   Patev P., 2003, 0301 TSEN AC EC DEP
+   Peters E.E., 1994, FRACTAL MARKET ANAL
+   Philippas N, 2013, INT REV FINANC ANAL, V29, P166, DOI 10.1016/j.irfa.2013.01.004
+   Ravichandran K., 2010, J MONEY INVESTMENT B, V16, P46
+   Sarantis N, 2001, INT J FORECASTING, V17, P459, DOI 10.1016/S0169-2070(01)00093-0
+   Schaller H., 1997, APPL FINANCIAL EC, V7, P177, DOI DOI 10.1080/096031097333745
+   SCHWERT GW, 1989, CARN ROCH CONF SERIE, V31, P83, DOI 10.1016/0167-2231(89)90006-7
+   Sola M., 1994, 694 DP LOND BUS SCH
+   STULZ RM, 1984, J INT BUS STUD, V15, P55, DOI 10.1057/palgrave.jibs.8490495
+   STULZ RM, 1995, EUROPEAN FINANCIAL M, V1, P11, DOI DOI 10.1111/j.1468-036X.1995.tb00003.x
+   Tan L., 2008, PACIFIC BASIN FINANC, V16, P61, DOI DOI 10.1016/J.PACFIN.2007.04.004
+   TERASVIRTA T, 1994, J AM STAT ASSOC, V89, P208, DOI 10.2307/2291217
+   TERASVIRTA T, 1992, J APPL ECONOM, V7, pS119, DOI 10.1002/jae.3950070509
+   Terasvirta T, 1998, STAT TEXTB MONOG, V155, P507
+   TYSSEDAL JS, 1988, J R STAT SOC C-APPL, V37, P353
+   Van Dijk D., 2002, ECONOMET REV, V21, P1, DOI [10.1081/ETC-120008723, DOI 10.1081/ETC-120008723]
+   Yao J, 2014, INT REV ECON FINANC, V29, P12, DOI 10.1016/j.iref.2013.03.002
+   Yu JS, 2008, Q REV ECON FINANC, V48, P482, DOI 10.1016/j.qref.2006.06.003
+   Zheng TG, 2013, N AM J ECON FINANC, V26, P643, DOI 10.1016/j.najef.2013.05.001
+NR 58
+TC 27
+Z9 27
+U1 3
+U2 28
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD JUL
+PY 2014
+VL 29
+SI SI
+BP 418
+EP 440
+DI 10.1016/j.najef.2014.06.009
+PG 23
+WC Business, Finance; Economics
+SC Business & Economics
+GA AO4XO
+UT WOS:000341344900023
+DA 2019-12-27
+ER
+
+PT J
+AU Aloui, C
+   Hkiri, B
+AF Aloui, Chaker
+   Hkiri, Besma
+TI Co-movements of GCC emerging stock markets: New evidence from wavelet
+   coherence analysis
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Co-movement; Wavelet coherence; Stock markets; Value-at-risk
+ID INTERNATIONAL TRANSMISSION; FINANCIAL CRISIS; OIL PRICES; CONTAGION;
+   RETURNS; INTERDEPENDENCE; VOLATILITY; BULLS; JAPAN; BEARS
+AB This paper examines the short term and long term dependencies between stock market returns for the Gulf Cooperation Council (GCC) Countries (Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, and the United Arab Emirates) during the period 2005-2010. Our empirical investigation is based on the wavelet squared coherence which allows us to assess the co-movement in both time-frequency spaces. Our results reveal frequent changes in the pattern of the co-movements especially after 2007 for all the selected GCC markets at relatively higher frequencies. We further note an increasing strength of dependence among the GCC stock markets during the last financial crisis signifying enhanced portfolio benefits for investors in the short term relative to the long term. On the financial side, we uncover that the strength of co-movement between GCC markets may impact the multi-country portfolio's value at risk (VaR) levels. These findings provide potential implications for portfolio managers operating in the GCC region who are invited to consider co-movement through both frequencies and time when designing their portfolios. (C) 2013 Elsevier B.V. All rights reserved.
+C1 King Saud Univ, Dept Finance, Coll Business Adm, Riyadh 11451, Saudi Arabia.
+   Sousse Univ, Fac Econ Sci & Management Sousse, Dept Finance, Tunis, Tunisia.
+EM cmaloui@ksu.edu.sa; besma_hkiri@yahoo.fr
+RI hkiri, besma/K-2699-2019
+CR Addison P.S., 2002, ILLUSTRATED WAVELET
+   Aguiar-Conraria L, 2008, PHYSICA A, V387, P2863, DOI 10.1016/j.physa.2008.01.063
+   Akoum I, 2012, Q REV ECON FINANC, V52, P385, DOI 10.1016/j.qref.2012.07.005
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Arouri ME, 2011, ECON MODEL, V28, P1815, DOI 10.1016/j.econmod.2011.03.012
+   Awartani B, 2013, ENERG ECON, V36, P28, DOI 10.1016/j.eneco.2012.11.024
+   Bekaert G., 2002, EMERG MARK REV, V3, P429, DOI DOI 10.1016/S1566-0141(02)00045-6
+   Brooks R., 2006, Review of Finance, V10, P69, DOI 10.1007/s10679-006-6979-1
+   Candelon B, 2008, J BANK FINANC, V32, P1022, DOI 10.1016/j.jbankfin.2007.08.003
+   Charles A, 2006, ECON MODEL, V23, P683, DOI 10.1016/j.econmod.2006.03.008
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Conrad C., 2010, J EMPIR FINANC
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   Fernandez V., 2006, INT REV FINANC ANAL, V15, P203, DOI DOI 10.1016/J.IRFA.2005.02.004
+   Fernandez VP, 2005, STUD NONLINEAR DYN E, V9
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gallegati M., 2005, WAVELET ANAL M UNPUB
+   Gencay R, 2005, J INT MONEY FINANC, V24, P55, DOI 10.1016/j.jimonfin.2004.10.003
+   Graham M, 2012, GLOB FINANC J, V23, P34, DOI 10.1016/j.gfj.2012.01.003
+   Graham M, 2011, EUR J FINANC, V17, P409, DOI 10.1080/1351847X.2010.543839
+   Grinsted A, 2004, NONLINEAR PROC GEOPH, V11, P561, DOI 10.5194/npg-11-561-2004
+   GRUBEL HG, 1968, AM ECON REV, V58, P1299
+   Ho KY, 2003, JPN WORLD ECON, V15, P437, DOI 10.1016/S0922-1425(03)00026-4
+   Karolyi GA, 1996, J FINANC, V51, P951, DOI 10.2307/2329228
+   Karuppiah J., 2005, INT REV FINANC ANAL, V14, P211, DOI [10.1016/j.irfa.2004.06.014, DOI 10.1016/J.IRFA.2004.06.014]
+   Kiviaho J., 2012, EUR FINANC MANAG
+   Lee HS, 2004, APPL ECON LETT, V11, P197, DOI 10.1080/1350485042000203850
+   LEVY H, 1970, AM ECON REV, V60, P668
+   Lim K.P., 2008, J INT FINANC MARK I, V18, P527, DOI DOI 10.1016/J.INTFIN.2007.08.001
+   LIN WL, 1994, REV FINANC STUD, V7, P507, DOI 10.1093/rfs/7.3.507
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   MADALENO M, 2010, REV EC FINANC, V20, P69
+   Madaleno M, 2012, INT J FINANC ECON, V17, P89, DOI 10.1002/ijfe.448
+   Masih A. M. M., 2010, INT REV FINANC ANAL, V19, P10, DOI [DOI 10.1016/j.irfa.2009.12.001, 10.1016/j.irfa.2009.12.001]
+   Naifar N, 2013, INT REV ECON FINANC, V27, P416, DOI 10.1016/j.iref.2013.01.001
+   Nikkinen J, 2011, INT J FINANC ECON, V16, P205, DOI 10.1002/ijfe.423
+   Portes R, 2005, J INT ECON, V65, P269, DOI 10.1016/j.jinteco.2004.05.002
+   Ramsey J. B., 1997, J EMPIR FINANC, V4, P341, DOI DOI 10.1016/S0927-5398(96)00013-8
+   Ramsey JB, 1998, STUD NONLINEAR DYN E, V3, P23, DOI 10.2202/1558-3708.1039
+   Ramsey JB, 1996, PREDICTABILITY COMPL
+   Ranta M., 2009, 21 ANN C NO FIN ASS
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Rua A, 2009, J EMPIR FINANC, V16, P632, DOI 10.1016/j.jempfin.2009.02.002
+   Samarakoon LP, 2011, J INT FINANC MARK I, V21, P724, DOI 10.1016/j.intfin.2011.05.001
+   Sedik T.S., 2011, IMF WORKING PAPERS
+   Sharkasi A, 2005, INT J THEOR APPL FIN, V8, P603, DOI 10.1142/S0219024905003190
+   Sharkasi A, 2006, PHYSICA A, V368, P511, DOI 10.1016/j.physa.2005.12.048
+   THEODOSSIOU P, 1993, J FINANC RES, V16, P337, DOI 10.1111/j.1475-6803.1993.tb00152.x
+   Torrence C, 1998, B AM METEOROL SOC, V79, P61, DOI 10.1175/1520-0477(1998)079<0061:APGTWA>2.0.CO;2
+   Torrence C, 1999, J CLIMATE, V12, P2679, DOI 10.1175/1520-0442(1999)012<2679:ICITEM>2.0.CO;2
+   Vacha L, 2012, ENERG ECON, V34, P241, DOI 10.1016/j.eneco.2011.10.007
+   Ye WY, 2012, EUR J OPER RES, V222, P96, DOI 10.1016/j.ejor.2012.04.004
+NR 53
+TC 67
+Z9 68
+U1 2
+U2 31
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD JAN
+PY 2014
+VL 36
+BP 421
+EP 431
+DI 10.1016/j.econmod.2013.09.043
+PG 11
+WC Economics
+SC Business & Economics
+GA 292FO
+UT WOS:000329887800051
+DA 2019-12-27
+ER
+
+PT J
+AU Berger, T
+   Missong, M
+AF Berger, Theo
+   Missong, Martin
+TI Copulas and portfolio strategies: an applied risk management perspective
+SO JOURNAL OF RISK
+LA English
+DT Article
+ID FINANCIAL CRISIS; VINE COPULAS; DEPENDENCE; CONTAGION
+AB Modeling multivariate return distributions via copula functions is a common approach in financial risk management. However, evidence of the impact of choosing a particular copula function on different portfolio compositions is still lacking, as empirical studies typically analyze only a single portfolio strategy (eg, equally weighted portfolios) at a time. We evaluate copula models for three different portfolio strategies in a twenty-asset/daily return framework with respect to the accuracy of value-at-risk forecasts. From this risk management perspective, (dynamic) t copulas turn out to be a sensible choice for different portfolio strategies, especially when the trading strategy does not exclude highly volatile assets.
+C1 [Berger, Theo] Univ Bremen, D-28359 Bremen, Germany.
+   [Missong, Martin] Univ Bremen, D-23259 Bremen, Germany.
+RP Berger, T (reprint author), Univ Bremen, Wilhelm Herbst Str 5, D-28359 Bremen, Germany.
+EM thberger@uni-bremen.de; missong@uni-bremen.de
+CR Aas K, 2009, EUR J FINANC, V15, P639, DOI 10.1080/13518470802588767
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Berger T, 2014, INT REV FINANC ANAL, V33, P33, DOI 10.1016/j.irfa.2013.07.006
+   Berger T., 2013, INT EC, V133, P93
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Campbell S. D., 2006, J RISK, V9, P1, DOI DOI 10.21314/JOR.2007.146
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   DeMiguel V, 2009, REV FINANC STUD, V22, P1915, DOI 10.1093/rfs/hhm075
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Fantazzini D., 2009, VAR IMPLEMENTATION H, P253
+   Fantazzini D., 2009, EMERGING MARKETS PER, P533
+   Fantazzini D, 2009, COMPUT STAT DATA AN, V53, P2168, DOI 10.1016/j.csda.2008.02.002
+   Giacomini R, 2005, J BUS ECON STAT, V23, P416, DOI 10.1198/073500105000000018
+   Giacomini R, 2006, ECONOMETRICA, V74, P1545, DOI 10.1111/j.1468-0262.2006.00718.x
+   Jorion P., 2007, VALUE RISK NEW BENCH
+   Kole E, 2007, J BANK FINANC, V31, P2405, DOI 10.1016/j.jbankfin.2006.09.010
+   Kupiec P.H., 1995, J DERIV, V3, P73, DOI DOI 10.3905/jod.1995.407942
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Low RKY, 2013, J BANK FINANC, V37, P3085, DOI 10.1016/j.jbankfin.2013.02.036
+   Maillard S, 2010, J PORTFOLIO MANAGE, V36, P60, DOI 10.3905/jpm.2010.36.4.060
+   Manner H, 2012, ECONOMET REV, V31, P654, DOI 10.1080/07474938.2011.608042
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Nikoloulopoulos AK, 2012, COMPUT STAT DATA AN, V56, P3659, DOI 10.1016/j.csda.2010.07.016
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Poddig T., 2012, J FINANCIAL MARKETS, V25, P329
+   Qian E., 2005, RISK PARITY PORTFOLI
+   Ruschendorf L., 1996, IMS LECT NOTES MONOG, V28, P120
+   Schirmacher D., 2008, P ERM S CHIC
+   Sener E, 2012, INT J FORECASTING, V28, P849, DOI 10.1016/j.ijforecast.2011.10.002
+   Silva R., 2009, J MACH LEARN RES P T, P512
+   Sklar A, 1959, PUBL I STAT U PARIS, V8, P229, DOI DOI 10.12691/IJEFM-3-2-3
+   Tokpavi S., 2007, J RISK, V9, P19
+   Tse YK, 2002, J BUS ECON STAT, V20, P351, DOI 10.1198/073500102288618496
+   Weiss GNF, 2013, REV QUANT FINANC ACC, V41, P179, DOI 10.1007/s11156-012-0311-2
+   Weiss GNF, 2010, J RISK, V13, P17, DOI 10.21314/JOR.2010.217
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+NR 38
+TC 5
+Z9 5
+U1 1
+U2 7
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1465-1211
+EI 1755-2842
+J9 J RISK
+JI J. Risk
+PY 2014
+VL 17
+IS 2
+BP 51
+EP 91
+DI 10.21314/JOR.2014.294
+PG 41
+WC Business, Finance
+SC Business & Economics
+GA AZ8BA
+UT WOS:000348438500003
+DA 2019-12-27
+ER

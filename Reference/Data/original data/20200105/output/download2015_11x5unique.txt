@@ -1,0 +1,482 @@
+
+PT J
+AU Di Cesare, A
+   Stork, PA
+   De Vries, CG
+AF Di Cesare, Antonio
+   Stork, Philip A.
+   De Vries, Casper G.
+TI Risk Measures for Autocorrelated Hedge Fund Returns
+SO JOURNAL OF FINANCIAL ECONOMETRICS
+LA English
+DT Article
+DE hedge funds; Pareto distribution; serial correlation; systemic risk; VaR
+ID STATISTICS; PERFORMANCE
+AB Standard risk metrics tend to underestimate the true risks of hedge funds because of serial correlation in the reported returns. Getmansky, Lo, and Makarov (2004) derive mean, variance, Sharpe ratio, and beta formulae adjusted for serial correlation. Following their lead, we derive adjusted downside and global measures of individual and systemic risks. We distinguish between normally and fat-tailed distributed returns and show that adjustment is particularly relevant for downside risk measures in the case of fat tails. An empirical analysis reveals that unadjusted risk measures can considerably underestimate the true extent of individual and systemic risks for hedge funds.
+C1 [Di Cesare, Antonio] Bank Italy, I-00184 Rome, Italy.
+   [Stork, Philip A.] Duisenberg Sch Finance, Amsterdam, Netherlands.
+   [Stork, Philip A.] Vrije Univ Amsterdam, Amsterdam, Netherlands.
+   [De Vries, Casper G.] Erasmus Univ, Duisenberg Sch Finance, NL-3000 DR Rotterdam, Netherlands.
+   [De Vries, Casper G.] Tinbergen Inst, Amsterdam, Netherlands.
+RP Di Cesare, A (reprint author), Bank Italy, Financial Stabil Dept, Via Nazl 91, I-00184 Rome, Italy.
+EM antonio.dicesare@bancaditalia.it
+RI Stork, Philip A./B-7052-2009
+OI Stork, Philip A./0000-0003-2518-4646
+CR Agarwal V, 2004, REV FINANC STUD, V17, P63, DOI 10.1093/rfs/hhg044
+   Avramov D, 2011, J FINANC ECON, V99, P672, DOI 10.1016/j.jfineco.2010.10.003
+   BALKEMA AA, 1974, ANN PROBAB, V2, P792, DOI 10.1214/aop/1176996548
+   Bingham N.H., 1987, REGULAR VARIATION
+   Bollen NPB, 2009, J FINANC, V64, P2257, DOI 10.1111/j.1540-6261.2009.01500.x
+   Brockwell P.J., 1991, TIME SERIES THEORY M
+   Chan N, 2006, NBER CONF R, P235
+   Di Cesare A., 2014, WORKING PAPER
+   Dichev ID, 2011, J FINANC ECON, V100, P248, DOI 10.1016/j.jfineco.2011.01.003
+   Drees H, 2008, EXTREMES, V11, P35, DOI 10.1007/s10687-007-0051-1
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Feller W., 1971, INTRO PROBABILITY TH, V2
+   Fung W, 2001, REV FINANC STUD, V14, P313, DOI 10.1093/rfs/14.2.313
+   Fung W, 2008, J FINANC, V63, P1777, DOI 10.1111/j.1540-6261.2008.01374.x
+   Getmansky M, 2004, J FINANC ECON, V74, P529, DOI 10.1016/j.jfineco.2004.04.001
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Huang J., 2012, WORKING PAPER
+   Huang X, 1992, THESIS ERASMUS U ROT
+   Hyung N., 2005, J FINANCIAL ECONOMET, V3, P107
+   Ingersoll J, 2007, REV FINANC STUD, V20, P1503, DOI 10.1093/rfs/hhm025
+   JANSEN DW, 1991, REV ECON STAT, V73, P18, DOI 10.2307/2109682
+   Jorion P., 2000, EUROPEAN FINANCIAL M, V6, P277, DOI DOI 10.1111/1468-036X.00125
+   Lo AW, 2002, FINANC ANAL J, V58, P36, DOI 10.2469/faj.v58.n4.2453
+   Morton DP, 2006, J BANK FINANC, V30, P503, DOI 10.1016/j.jbankfin.2005.04.016
+   Sadka R, 2010, J FINANC ECON, V98, P54, DOI 10.1016/j.jfineco.2010.05.001
+   SIBUYA M, 1960, ANN I STAT MATH, V11, P195
+   Straetmans STM, 2008, J APPL ECONOM, V23, P17, DOI 10.1002/jae.973
+   Teo M, 2011, J FINANC ECON, V100, P24, DOI 10.1016/j.jfineco.2010.11.003
+NR 29
+TC 0
+Z9 0
+U1 0
+U2 14
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1479-8409
+EI 1479-8417
+J9 J FINANC ECONOMET
+JI J. Financ. Econom.
+PD FAL
+PY 2015
+VL 13
+IS 4
+BP 868
+EP 895
+DI 10.1093/jjfinec/nbu023
+PG 28
+WC Business, Finance; Economics
+SC Business & Economics
+GA CT5DU
+UT WOS:000362828700004
+DA 2019-12-28
+ER
+
+PT J
+AU Huser, AC
+AF Hueser, Anne-Caroline
+TI Too interconnected to fail: a survey of the interbank networks
+   literature
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE interbank networks; systemic risk; contagion; banking; macroprudential
+   policy
+ID SYSTEMIC RISK; FINANCIAL NETWORKS; MODEL; CONTAGION; MARKET; LIQUIDITY;
+   STABILITY; TOPOLOGY; COMPLEXITY; CENTRALITY
+AB The banking system is highly interconnected, and these connections can be conveniently represented as an interbank network. This survey presents a systematic overview of the recent advances in the theoretical literature on interbank networks and assesses our current understanding of the structure of interbank networks, of how network characteristics affect contagion in the banking system and of how banks form connections when faced with the possibility of contagion and systemic risk. In particular, I highlight how the theoretical literature on interbank networks offers a coherent way of studying interconnections, contagion processes and systemic risk, while emphasizing the challenges that must be addressed before general results on the link between the structure of the interbank network and financial stability can be established. The survey concludes with a discussion of the policy relevance of interbank network models, with a special focus on macroprudential policies and monetary policy.
+C1 [Hueser, Anne-Caroline] Goethe Univ, House Finance, Sustainable Architecture Finance Europe SAFE, Theodor W Adorno Pl 3, D-60629 Frankfurt, Germany.
+RP Huser, AC (reprint author), Goethe Univ, House Finance, Sustainable Architecture Finance Europe SAFE, Theodor W Adorno Pl 3, D-60629 Frankfurt, Germany.
+EM annecaroline.hueser@gmail.com
+FU Research Center SAFE - State of Hessen initiative for research LOEWE
+FX The author gratefully acknowledges research support from the Research
+   Center SAFE, funded by the State of Hessen initiative for research
+   LOEWE. The author reports no conflicts of interest. The author alone is
+   responsible for the content and writing of the paper.
+CR Abbassi P., 2014, 45 BUND
+   Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acemoglu Daron, 2015, 1517 COL BUS SCH
+   Affinito M, 2012, J BANK FINANC, V36, P3163, DOI 10.1016/j.jbankfin.2011.11.016
+   Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Aldasoro I, 2015, 10540 CEPR
+   Aldasoro I., 2015, 102 SAFE
+   Aldasoro I, 2015, LIQUIDITY CONTAGION
+   Aldasoro I, 2015, QUANT FINANC, V15, P589, DOI 10.1080/14697688.2014.968194
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2011, LIQUIDITY AND CRISES
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Alter A, 2015, INT J CENT BANK, V11, P329
+   Alves I., 2013, 3 ESRB
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Anand K., 2014, FINANCIAL SYSTEM REV, P61
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Anand K, 2013, J ECON BEHAV ORGAN, V85, P219, DOI 10.1016/j.jebo.2012.04.006
+   Anand K, 2012, J ECON DYN CONTROL, V36, P1088, DOI 10.1016/j.jedc.2012.03.005
+   [Anonymous], 2013, GLOB SYST IMP BANKS
+   Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   Arregui M.N., 2013, ADDRESSING INTERCONN, V13, P199
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Bargigli L, 2015, QUANT FINANC, V15, P673, DOI 10.1080/14697688.2014.968356
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Benoit S, 2015, FIN20151088 HEC
+   Bhattacharia S, 1987, NEW APPROACHES MONET, P69
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Bluhm M., 2014, 12 SAFE
+   Bluhm M., 2014, 46 SAFE
+   BLUME L., 2013, ACM T EC COMPUTATION, V1, P6
+   Blume L, 2011, ANN IEEE SYMP FOUND, P393, DOI 10.1109/FOCS.2011.38
+   Borgatti SP, 2005, SOC NETWORKS, V27, P55, DOI 10.1016/j.socnet.2004.11.008
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brauning F., 2015, 491 BANK INT SETTL
+   Brauning F., 2012, 201222 DTSCH BUND
+   Brunnermeier M.K., 2013, ADV EC EC 10 WORLD C
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brusco S, 2007, J FINANC, V62, P2275, DOI 10.1111/j.1540-6261.2007.01275.x
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Canedo JMD, 2009, INTELL SYST ACCOUNT, V16, P87, DOI 10.1002/isaf.295
+   Chinazzi M., 2013, 20138 LEM
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Cohen-Cole E, 2015, NETW SCI, V3, P98, DOI 10.1017/nws.2015.1
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   De Bandt O., 2012, OXFORD HDB BANKING, P633
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   Della Rossa F, 2013, SCI REP-UK, V3, DOI 10.1038/srep01467
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Duffie D, 2015, J FINANC ECON, V116, P237, DOI 10.1016/j.jfineco.2014.12.006
+   Eisert T., 2014, 10 SAFE
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Elsinger H, 2013, HANDBOOK ON SYSTEMIC RISK, P287
+   Espinosa-Vega M. A., 2014, GUIDE IMF STRESS TES, P205
+   European Central Bank, 2010, REC ADV MOD SYST RIS
+   European Central Bank, 2006, ECB FIN STAB REV, P131
+   Farboodi M., 2014, INTERMEDIATION VOLUN, DOI 10.2139/ssrn.2535900
+   Fique J, 2013, COMPUT MANAG SCI, V10, P213, DOI 10.1007/s10287-013-0172-8
+   Freixas X, 2005, REV FINANC STUD, V18, P459, DOI 10.1093/rfs/hhi001
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Fricke D, 2015, EMPIR ECON, V49, P1463, DOI 10.1007/s00181-015-0919-x
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Furfine C., 1999, FINANCIAL MARKETS IN, V8, P24, DOI DOI 10.1111/1468-0416.00031
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garratt RJ, 2014, J BANK FINANC, V49, P367, DOI 10.1016/j.jbankfin.2013.12.025
+   Geanakoplos J, 2010, NBER MACROECON ANNU, V24, P1
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Georgescu OM, 2015, J FINANC STABIL, V18, P1, DOI 10.1016/J.JFS.2015.02.003
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Gofman M, 2014, EFFICIENCY STABILITY
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Halaj G, 2014, J NETW THEORY FINANC, V1, P33
+   Halaj G, 2015, QUANT FINANC, V15, P653, DOI 10.1080/14697688.2014.968357
+   Haldane A.G., 2009, RETHINKING FINANCIAL
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   HO TSY, 1985, J FINANC, V40, P977, DOI 10.1111/j.1540-6261.1985.tb05026.x
+   In't Veld D., 2014, 14098 TINB I
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   International Monetary Fund, 2009, ASSESSING SYSTEMIC, P73
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2015, J ECON DYN CONTROL, V50, P98, DOI 10.1016/j.jedc.2014.08.016
+   Jackson M.O., 2010, SOCIAL EC NETWORKS
+   Jackson MO, 2005, GROUP FORMATION IN ECONOMICS: NETWORKS, CLUBS, AND COALITIONS, P11, DOI 10.1017/CBO9780511614385.002
+   Jackson MO, 1996, J ECON THEORY, V71, P44, DOI 10.1006/jeth.1996.0108
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Lagunoff R, 2001, J ECON THEORY, V99, P220, DOI 10.1006/jeth.2000.2733
+   Langfield S, 2016, COMPUT ECON, V47, P3, DOI 10.1007/s10614-014-9443-x
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Leon C, 2014, J FINANC STABIL, V15, P241, DOI 10.1016/j.jfs.2014.10.006
+   Lux T, 2014, J ECON DYN CONTROL, V52, pA11
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Molina-Borboa JL, 2014, J NETW THEORY FINANC, V1, P99
+   Montagna M., 2013, HUBS RESILIENCE MORE
+   Montagna M., 2013, 1873 MULT INT MOD AS
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Peltonen TA, 2014, J FINANC STABIL, V13, P118, DOI 10.1016/j.jfs.2014.05.004
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Shin H, 2010, RISK AND LIQUIDITY
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Soramaki K, 2013, ECONOMICS-KIEL, V7, DOI 10.5018/economics-ejournal.ja.2013-28
+   Summer M, 2013, ANNU REV FINANC ECON, V5, P277, DOI 10.1146/annurev-financial-110112-120948
+   Tonzer L, 2015, J FINANC STABIL, V18, P19, DOI 10.1016/J.JFS.2015.02.002
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Vivier-Lirimont S., 2006, CONTAGION INTERBANK
+   Watts DJ, 1998, NATURE, V393, P440, DOI 10.1038/30918
+   Wells S., 2004, BANK ENGLAND Q B, V44, P331
+NR 124
+TC 18
+Z9 18
+U1 0
+U2 3
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD SEP
+PY 2015
+VL 1
+IS 3
+BP 1
+EP 50
+PG 50
+WC Business, Finance
+SC Business & Economics
+GA V3S6M
+UT WOS:000218550300001
+DA 2019-12-27
+ER
+
+PT J
+AU Stracca, L
+AF Stracca, Livio
+TI Our currency, your problem? The global effects of the euro debt crisis
+SO EUROPEAN ECONOMIC REVIEW
+LA English
+DT Article
+DE Euro debt crisis; Contagion; Spill-over; Global risk aversion
+ID CONTAGION; COMOVEMENTS; TRADE
+AB In this paper. I look at the global effects of the euro debt crisis, using an event study approach. After identifying a number of euro crisis events in the period that goes from 2010 to 2012. I analyse their impact on equity returns, exchange rates and government bond yields in 40 non-euro area countries. The main finding of this study is that euro debt crisis events have contributed to a rise in global risk aversion accompanied by a fall in equity returns, mainly in the financial sector. Moreover, I find that the effect on bond yields is not statistically significant for the whole set of countries, but it has a significant though small - impact on countries with a high risk rating. Finally, the paper also focuses on transmission channels by looking at how pre-determined country characteristics influence the strength and direction of the contagion effect. I find that the most consistent conduits of contagion are: (i) trade exposure to the euro area, (ii) EU membership, and (iii) whether a currency is pegged to the euro. (C) 2014 Elsevier B.V. All rights reserved.
+C1 European Cent Bank ECB, D-60314 Frankfurt, Germany.
+RP Stracca, L (reprint author), European Cent Bank ECB, Sonnemannstr 20, D-60314 Frankfurt, Germany.
+EM livio.stracca@ecb.int
+CR Aizenmann J., 2011, 18028 NBER
+   Amisano G., 2012, CROSS COUNTRY UNPUB
+   Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Bekaert G, 2009, J FINANC, V64, P2591, DOI 10.1111/j.1540-6261.2009.01512.x
+   Claessens S., 2011, 11227 IMF
+   Claeys P., 2012, 201207 CZECH NAT BAN
+   DE SANTIS R., 2012, 1419 ECB
+   Dedola L, 2012, ECON POLICY, P319, DOI 10.1111/j.1468-0327.2012.00286.x
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Ehrmann M., 2013, 1532 ECB
+   Forbes K., 2012, 2012 JACKS HOL S FED
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Fratzscher M, 2009, J INT MONEY FINANC, V28, P1390, DOI 10.1016/j.jimonfin.2009.08.008
+   Gurkaynak R. S., 2013, 9388 CEPR
+   Habib MM, 2012, J INT ECON, V87, P50, DOI 10.1016/j.jinteco.2011.12.005
+   Kalbaska A, 2012, J ECON BEHAV ORGAN, V83, P657, DOI 10.1016/j.jebo.2012.05.010
+   MACKINLAY C, 1997, J ECON LIT, V35, P13
+   Manganelli S, 2009, ECON POLICY, P191, DOI 10.1111/j.1468-0327.2009.00220.x
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Van Rijckehem C, 2001, J INT ECON, V54, P293, DOI 10.1016/S0022-1996(00)00095-7
+NR 20
+TC 6
+Z9 6
+U1 0
+U2 14
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0014-2921
+EI 1873-572X
+J9 EUR ECON REV
+JI Eur. Econ. Rev.
+PD FEB
+PY 2015
+VL 74
+BP 1
+EP 13
+DI 10.1016/j.euroecorev.2014.10.009
+PG 13
+WC Economics
+SC Business & Economics
+GA CC1GJ
+UT WOS:000350088900001
+DA 2019-12-27
+ER
+
+PT J
+AU Bjuggren, PO
+   Eklund, JE
+AF Bjuggren, Per-Olof
+   Eklund, Johan E.
+TI Property rights and the cost of capital
+SO EUROPEAN JOURNAL OF LAW AND ECONOMICS
+LA English
+DT Article
+DE Asset pricing; International financial markets; Property rights; Cost of
+   capital; Investment
+ID FINANCE; GROWTH; TESTS
+AB In countries with more secure property rights, the cost of capital is lower, suggesting higher investment rates. Using data from 49 countries we extend the conventional capital-asset pricing model (CAPM) to include a property rights risk-factor. In the conventional CAPM model only a single risk factor-systemic risk-is considered. However, when using a world market portfolio to estimate systemic risk in national portfolios, little of the required rate of return is explained in less developed as compared to more developed countries. Adding a factor representing institutional risk increases predictive power substantially. Further, we find that property rights affect the transmission of information, which suggests that markets price information differently, and allocate resources less efficiently, in countries with less secure property rights. We find that the CAPM model performs better in countries with more secure property rights.
+C1 [Bjuggren, Per-Olof] Jonkoping Int Business Sch & Ratio Inst, SE-10364 Stockholm, Sweden.
+   [Eklund, Johan E.] Jonkoping Int Business Sch, SE-55111 Jonkoping, Sweden.
+   [Eklund, Johan E.] Swedish Entrepreneurship Forum, SE-55111 Jonkoping, Sweden.
+RP Bjuggren, PO (reprint author), Jonkoping Int Business Sch & Ratio Inst, POB 3203, SE-10364 Stockholm, Sweden.
+EM p-o.bjuggren@ratio.se; johan.eklund@entreprenorskapsforum.se
+FU Marianne and Marcus Wallenberg Foundation
+FX Financial support from the Marianne and Marcus Wallenberg Foundation is
+   gratefully acknowledged. Furthermore we acknowledge valuable comments
+   provided by Ake E. Andersson, Niclas Berggren, Sameeksha Desai, Dennis
+   C. Mueller, Goran Skogh, and participants at conferences of the European
+   Association of Law and Economics.
+CR ALCHIAN AA, 1972, AM ECON REV, V62, P777
+   BARRO RJ, 1991, Q J ECON, V106, P407, DOI 10.2307/2937943
+   Black F., 1972, STUDIES THEORY CAPIT
+   Claessens S, 2003, J FINANC, V58, P2401, DOI 10.1046/j.1540-6261.2003.00610.x
+   COASE RH, 1960, J LAW ECON, V3, P1, DOI 10.1086/466560
+   De Soto H., 2000, MYSTERY CAPITAL WHY
+   DEMSETZ H, 1964, J LAW ECON, V7, P11, DOI 10.1086/466596
+   Douglas G., 1968, RISK EQUITY MARKETS
+   Elton E.J., 1995, MODERN PORTFOLIO THE
+   FAURE M, 2003, EC ANAL ENV POLICY L
+   Gugler K, 2004, J LAW ECON, V47, P589, DOI 10.1086/425062
+   Jin L, 2006, J FINANC ECON, V79, P257, DOI 10.1016/j.jfineco.2004.11.003
+   Johnson S, 2002, AM ECON REV, V92, P1335, DOI 10.1257/000282802762024539
+   Kasper W., 1998, I EC SOCIAL ORDER PU
+   LaPorta R, 1997, J FINANC, V52, P1131, DOI 10.1111/j.1540-6261.1997.tb02727.x
+   MERTON RC, 1973, ECONOMETRICA, V41, P867, DOI 10.2307/1913811
+   Morck R, 2000, J FINANC ECON, V58, P215, DOI 10.1016/S0304-405X(00)00071-4
+   North D., 1990, I I CHANGE EC PERFOR
+   North D. C., 1981, STRUCTURE CHANGE EC
+   ROLL R, 1977, J FINANC ECON, V4, P129, DOI 10.1016/0304-405X(77)90009-5
+   SHARPE WF, 1972, FINANCIAL ANAL J, V28, P46
+   Williamson O., 2000, J ECON LIT, V38, P596
+NR 22
+TC 1
+Z9 1
+U1 0
+U2 10
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0929-1261
+EI 1572-9990
+J9 EUR J LAW ECON
+JI Eur. J. Law Econ.
+PD JUN
+PY 2015
+VL 39
+IS 3
+BP 523
+EP 537
+DI 10.1007/s10657-013-9396-x
+PG 15
+WC Economics; Law
+SC Business & Economics; Government & Law
+GA CH7MB
+UT WOS:000354219500004
+DA 2019-12-28
+ER
+
+PT J
+AU Bouvard, M
+   Chaigneau, P
+   de Motta, A
+AF Bouvard, Matthieu
+   Chaigneau, Pierre
+   de Motta, Adolfo
+TI Transparency in the Financial System: Rollover Risk and Crises
+SO JOURNAL OF FINANCE
+LA English
+DT Article
+ID SOCIAL VALUE; PUBLIC INFORMATION; BANK RUNS; COORDINATION; EQUILIBRIUM;
+   PRIVATE; MODEL; DEBT
+AB We present a theory of optimal transparency when banks are exposed to rollover risk. Disclosing bank-specific information enhances the stability of the financial system during crises, but has a destabilizing effect in normal economic times. Thus, the regulator optimally increases transparency during crises. Under this policy, however, information disclosure signals a deterioration of economic fundamentals, which gives the regulator ex post incentives to withhold information. This commitment problem precludes a disclosure policy that provides ex ante optimal insurance against aggregate shocks, and can result in excess opacity that increases the likelihood of a systemic crisis.
+C1 [Bouvard, Matthieu; de Motta, Adolfo] McGill Univ, Desautels Fac Management, Montreal, PQ H3A 2T5, Canada.
+   [Chaigneau, Pierre] HEC Montreal, Montreal, PQ, Canada.
+RP Bouvard, M (reprint author), McGill Univ, Desautels Fac Management, Montreal, PQ H3A 2T5, Canada.
+FU French National Research AgencyFrench National Research Agency (ANR);
+   Institut de Finance Mathematique de Montreal
+FX Bouvard and de Motta are at McGill University, Desautels Faculty of
+   Management, and Chaigneau is at HEC Montreal. We thank the Editor,
+   Kenneth Singleton, the Associate Editor, and two anonymous referees. We
+   are grateful to Sudipto Bhattacharya, Valentin Haddad, Augustin Landier,
+   Frederic Malherbe, Guillaume Plantin, Viktors Stebunovs, as well as
+   audiences at the University of Geneva, Toulouse School of Economics, HEC
+   Paris, Chicago Booth, McGill University, Banque de France, the 2012
+   European Meeting of the Econometric Society in Malaga, the 1st Oxford
+   Financial Intermediation Theory Conference, the McGill-Todai Market
+   Frictions Conference in Tokyo, and the 2012 AFFI international finance
+   meeting in Paris. Matthieu Bouvard acknowledges financial support from
+   the French National Research Agency (Project "Regulation and information
+   sharing"); Adolfo de Motta acknowledges financial support from Institut
+   de Finance Mathematique de Montreal. All errors remain our own.
+CR Acharya VV, 2011, J FINANC, V66, P1177, DOI 10.1111/j.1540-6261.2011.01669.x
+   Angeletos GM, 2007, ECONOMETRICA, V75, P1103, DOI 10.1111/j.1468-0262.2007.00783.x
+   Angeletos GM, 2006, J POLIT ECON, V114, P452, DOI 10.1086/504901
+   BARNEA A, 1980, J FINANC, V35, P1223, DOI 10.2307/2327095
+   Bayazitova D, 2012, REV FINANC STUD, V25, P377, DOI 10.1093/rfs/hhr121
+   Bond P, 2010, REV FINANC STUD, V23, P781, DOI 10.1093/rfs/hhp059
+   Bond Philip, 2014, WORKING PAPER
+   BRYANT J, 1980, J BANK FINANC, V4, P335, DOI 10.1016/0378-4266(80)90012-6
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   CARLSSON H, 1993, ECONOMETRICA, V61, P989, DOI 10.2307/2951491
+   Chakraborty A, 2007, J ECON THEORY, V132, P70, DOI 10.1016/j.jet.2005.07.003
+   Chakraborty A, 2010, AM ECON REV, V100, P2361, DOI 10.1257/aer.100.5.2361
+   Chen Q, 2010, J FINANC ECON, V97, P239, DOI 10.1016/j.jfineco.2010.03.016
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenbach Thomas M., 2013, 597 FED RES BANK NEW
+   Ellahie Atif, 2012, WORKING PAPER
+   Freixas X., 2012, CRISIS AFTERMATH NEW
+   Goldstein I, 2005, J FINANC, V60, P1293, DOI 10.1111/j.1540-6261.2005.00762.x
+   Goldstein I, 2018, J ECON THEORY, V177, P34, DOI 10.1016/j.jet.2018.05.013
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Greenlaw David, 2012, CHICAGO BOOTH WORKIN
+   He Zhiguo, 2014, J FINANCE IN PRESS
+   Hertzberg A, 2011, J FINANC, V66, P379, DOI 10.1111/j.1540-6261.2010.01637.x
+   HIRSHLEIFER J, 1971, AM ECON REV, V61, P561
+   Landier Augustin, 2011, RISK TOPOGRAPHY SYST
+   Metz CE, 2002, J ECON, V76, P65, DOI 10.1007/s712-002-8221-x
+   Morris S, 2004, EUR ECON REV, V48, P133, DOI 10.1016/S0014-2921(02)00239-8
+   Morris S, 2002, AM ECON REV, V92, P1521, DOI 10.1257/000282802762024610
+   Morris S, 1998, AM ECON REV, V88, P587
+   Morris S., 2000, NBER MACROECON ANNU, V15, P139
+   Morris Stephen, 2003, ADV EC ECONOMETRICS, V1
+   Morris Stephen, 2009, WORKING PAPER
+   Peristiani S., 2010, 460 FED RES BANK NEW
+   Plantin G, 2009, REV ECON STUD, V76, P395, DOI 10.1111/j.1467-937X.2008.00526.x
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Sapra H., 2014, FDN TRENDS FINANCE, V8, P1, DOI DOI 10.1561/0500000038
+   Schuermann T, 2014, INT J FORECASTING, V30, P717, DOI 10.1016/j.ijforecast.2013.10.003
+   Shapiro Joel, 2014, WORKING PAPER
+   Stein JC, 2012, Q J ECON, V127, P57, DOI 10.1093/qje/qjr054
+   Stiroh K., 2009, 409 FED RES BANK NEW
+NR 40
+TC 18
+Z9 18
+U1 2
+U2 50
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-1082
+EI 1540-6261
+J9 J FINANC
+JI J. Financ.
+PD AUG
+PY 2015
+VL 70
+IS 4
+BP 1805
+EP 1837
+DI 10.1111/jofi.12270
+PG 33
+WC Business, Finance; Economics
+SC Business & Economics
+GA CN5WH
+UT WOS:000358502300012
+DA 2019-12-28
+ER

@@ -1,0 +1,471 @@
+
+PT J
+AU Frascaroli, BF
+   Nobrega, WCL
+AF Frascaroli, Bruno Ferreira
+   Lacerda Nobrega, Wellington Charles
+TI Inflation Targeting and Inflation Risk in Latin America
+SO EMERGING MARKETS FINANCE AND TRADE
+LA English
+DT Article
+DE CoIaR; inflation at risk; inflation targeting; IT functioning; Latin
+   America
+ID FISCAL-POLICY; SYSTEMIC RISK; UNITED-KINGDOM; MONETARY; VOLATILITY;
+   UNEMPLOYMENT; ECONOMIES; COVAR
+AB We analyzed the effects of inflation targeting (IT) implementation and functioning through the reaction function of monetary authorities from Latin American (LA) inflation targeters (ITers), e. g. Brazil, Chile, Colombia, Mexico, and Peru. We adapted the Value-at-Risk (VaR) and CoVaR to the Inflation-at-Risk (IaR) and Co-Inflation-at-Risk (CoIaR), respectively, to estimate the inflation at the extremes of its probability density functions. The results suggested that the IT was able to reduce inflation risk for all ITers. Chile and Peru are further ahead in terms of inflationary control, whereas in Brazil, it is more difficult. We propose the IaR and CoIaR as additional risk-management tools.
+C1 [Frascaroli, Bruno Ferreira] Univ Fed Paraiba, Dept Econ, Joao Pessoa, Paraiba, Brazil.
+   [Lacerda Nobrega, Wellington Charles] Univ Fed Paraiba, Appl Econ, Joao Pessoa, Paraiba, Brazil.
+RP Frascaroli, BF (reprint author), Univ Fed Paraiba, Joao Pessoa, Paraiba, Brazil.
+EM frascaroli.b@gmail.com
+RI Frascaroli, Bruno/J-7399-2017
+OI Frascaroli, Bruno/0000-0002-2067-4438; Nobrega,
+   Wellington/0000-0003-0634-9396
+CR Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Aizenman J, 2011, WORLD DEV, V39, P712, DOI 10.1016/j.worlddev.2010.11.005
+   Almeida A. T. C., 2014, J INT BUSINESS EC, V2, P149, DOI [10.15640/jibe.v2n3a7, DOI 10.15640/JIBE.V2N3A7]
+   Ardakani OM, 2018, J ECON DYN CONTROL, V90, P76, DOI 10.1016/j.jedc.2018.01.045
+   Arestis P., 2003, 388 LEV I
+   Barugahara F, 2015, S AFR J ECON, V83, P56, DOI 10.1111/saje.12046
+   Berg A, 2002, N AM J ECON FINANC, V13, P213
+   Carrasco CA, 2014, J ECON POLICY REFORM, V17, P13, DOI 10.1080/17487870.2013.787794
+   Cazacu A. M., 2015, EUROPEAN SCI J, P12
+   Cebi C, 2012, ECON MODEL, V29, P1258, DOI 10.1016/j.econmod.2012.04.014
+   Cevik EI, 2014, J COMP ECON, V42, P1079, DOI 10.1016/j.jce.2014.05.001
+   CHOW GC, 1960, ECONOMETRICA, V28, P591, DOI 10.2307/1910133
+   Coenen G, 2012, AM ECON REV, V102, P71, DOI 10.1257/aer.102.3.71
+   Cukierman A, 2008, BE J MACROECON, V8
+   Aragon EKDB, 2015, EMPIR ECON, V48, P557, DOI 10.1007/s00181-013-0791-5
+   Davig T, 2011, EUR ECON REV, V55, P211, DOI 10.1016/j.euroecorev.2010.04.004
+   DECASTRO PR, 1991, MACROECONOMICS POPUL, P151
+   Dungey M, 2009, ECON MODEL, V26, P1147, DOI 10.1016/j.econmod.2009.05.001
+   Eisenstat E, 2016, J APPL ECONOMET, V31, P805, DOI 10.1002/jae.2469
+   Emara N., 2012, GLOBAL J EMERGING MA, V4, P29
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Eyzaguirre N., 1998, POLICY PAPERS BANK I, V3
+   Fischer S., 1981, CARNEGIE-ROCHESTER C, P5
+   Fraga A., 2004, NBER MACROECONOMICS
+   Fragetta M, 2010, EUR ECON REV, V54, P855, DOI 10.1016/j.euroecorev.2010.02.003
+   FRIEDMAN M, 1968, AM ECON REV, V58, P1
+   Gaglianone WP, 2011, J BUS ECON STAT, V29, P150, DOI 10.1198/jbes.2010.07318
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Goncalves CES, 2008, J DEV ECON, V85, P312, DOI 10.1016/j.jdeveco.2006.07.002
+   Gonzalez A. G., 2006, 20066 BANC MEX
+   Guerron-Quintana PA, 2011, J ECON DYN CONTROL, V35, P947, DOI 10.1016/j.jedc.2011.01.008
+   Hall J, 2011, AUST ECON REV, V44, P404, DOI 10.1111/j.1467-8462.2011.00656.x
+   Herrero A. G., 2000, OPTIONS LATIN AM GLO
+   Hossain AA, 2014, ECON PAP, V33, P163, DOI 10.1111/1759-3441.12075
+   Hove S, 2017, RES INT BUS FINANC, V39, P128, DOI 10.1016/j.ribaf.2016.07.025
+   Huang HC, 2017, J EMPIR FINANC, V44, P108, DOI 10.1016/j.jempfin.2017.09.006
+   Hyvonen M., 2004, 200404 RES BANK AUST
+   Jawadi F, 2016, ECON MODEL, V58, P535, DOI 10.1016/j.econmod.2015.06.001
+   Jorion P., 2007, VALUE RISK NEW BENCH, V3
+   Kim BY, 2008, EASTERN EUR ECON, V46, P60, DOI 10.2753/EEE0012-8775460603
+   Kim DH, 2012, INT FINANC, V15, P327, DOI 10.1111/j.1468-2362.2013.12001.x
+   Kliem M, 2016, EUR ECON REV, V88, P158, DOI 10.1016/j.euroecorev.2016.02.023
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R., 2005, QUANTILE REGRESSION
+   Kose N, 2018, EMPIRICA, V45, P197, DOI 10.1007/s10663-016-9357-z
+   Larrain M., 2007, INFLATION COMPENSATI
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Lowenkron A., 2007, MONETARY POLICY CRED, V543
+   LUCAS RE, 1976, CARN ROCH CONF SERIE, V1, P19, DOI 10.1016/S0167-2231(76)80003-6
+   Mainik G, 2014, STATIST RISK MODEL, V31, P49, DOI 10.1515/strm-2013-1164
+   Montinari L, 2016, J MACROECON, V49, P131, DOI 10.1016/j.jmacro.2016.06.001
+   PHELPS ES, 1967, ECONOMICA, V34, P254, DOI 10.2307/2552025
+   PHILLIPS AW, 1958, ECONOMICA, V25, P283, DOI 10.1111/j.1468-0335.1958.tb00003.x
+   Rizvi SKA, 2014, ECON-RES-EKON ISTRAZ, V27, P280, DOI 10.1080/1331677X.2014.952090
+   Santos E. P., 2010, PHILIPPINE REV EC, V42, P21
+   Sargent Thomas J., 1981, FEDERAL RESERVE BANK, V5, P1
+   Sayari Z., 2017, THEORETICAL APPL EC, V24, P57
+   Smal M. M., 1998, COST INFLATION
+   Soe TT, 2018, FINANC RES LETT, V24, P263, DOI 10.1016/j.frl.2017.09.015
+   Strachman E., 2013, ENSAIOS FEE, V34, P407
+   Svensson E. O., 2008, J INT ECON, V50, P155, DOI [10.1016/S0022-1996(98)00078-6, DOI 10.1016/S0022-1996(98)00078-6]
+   Svensson LEO, 1997, EUR ECON REV, V41, P1111, DOI 10.1016/S0014-2921(96)00055-4
+   Sweidan OD, 2008, GLOBAL ECON REV, V37, P387, DOI 10.1080/12265080802273364
+   Taylor J. B., 1993, CARNEGIE-ROCHESTER C, V39, P195, DOI DOI 10.1016/0167-2231(93)90009-L
+   TAYLOR JB, 1995, J ECON PERSPECT, V9, P11, DOI 10.1257/jep.9.4.11
+   Tetlow R, 1999, CAN J ECON, V32, P1334, DOI 10.2307/136486
+   Thornton J, 2016, FINANC RES LETT, V16, P145, DOI 10.1016/j.frl.2015.10.024
+   Valera HGA, 2018, EMPIR ECON, V54, P523, DOI 10.1007/s00181-016-1212-3
+   Winter L. A. C., 2008, THESIS
+   World Bank, 2017, STAT SEL COUNTR
+NR 70
+TC 0
+Z9 0
+U1 15
+U2 59
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1540-496X
+EI 1558-0938
+J9 EMERG MARK FINANC TR
+JI Emerg. Mark. Financ. Trade
+PD SEP 2
+PY 2019
+VL 55
+IS 11
+SI SI
+BP 2389
+EP 2408
+DI 10.1080/1540496X.2018.1514297
+PG 20
+WC Business; Economics; International Relations
+SC Business & Economics; International Relations
+GA HS4FN
+UT WOS:000463817500001
+DA 2019-12-28
+ER
+
+PT J
+AU Kostylenko, O
+   Rodrigues, HS
+   Torres, DFM
+AF Kostylenko, Olena
+   Rodrigues, Helena Sofia
+   Torres, Delfim F. M.
+TI The spread of a financial virus through Europe and beyond
+SO AIMS MATHEMATICS
+LA English
+DT Article
+DE financial contagion; infection spreading; network and epidemiological
+   models; mathematical modelling
+ID EPIDEMIOLOGIC MODEL; CONTAGION; INFORMATION; DYNAMICS
+AB We analyse the importance of international relations between countries on the financial stability. The contagion effect in the network is tested by implementing an epidemiological model, comprising a number of European countries and using bilateral data on foreign claims between them. Banking statistics of consolidated foreign claims on ultimate risk bases, obtained from the Banks of International Settlements, allow us to measure the exposure of contagion spreading from a particular country to the other national banking systems. We show that the financial system of some countries, experiencing the debt crisis, is a source of global systemic risk because they threaten the stability of a larger system, being a global threat to the intoxication of the world economy and resulting in what we call a "financial virus". Illustrative simulations were done in the NetLogo multi-agent programmable modelling environment and in MATLAB.
+C1 [Kostylenko, Olena; Rodrigues, Helena Sofia; Torres, Delfim F. M.] Univ Aveiro, Ctr Res & Dev Math & Applicat CIDMA, Dept Math, P-3810193 Aveiro, Portugal.
+   [Rodrigues, Helena Sofia] Polytech Inst Viana do Castelo, Sch Business Studies, P-4930678 Valenca, Portugal.
+RP Torres, DFM (reprint author), Univ Aveiro, Ctr Res & Dev Math & Applicat CIDMA, Dept Math, P-3810193 Aveiro, Portugal.
+EM delfim@ua.pt
+RI Rodrigues, Helena Sofia/H-8993-2012; Torres, Delfim F. M./A-7682-2008
+OI Torres, Delfim F. M./0000-0001-8641-2505; Rodrigues, Helena
+   Sofia/0000-0002-6319-7782
+FU Portuguese Foundation for Science and Technology (FCT - Fundacao para a
+   Ciencia e a Tecnologia), through CIDMA - Center for Research and
+   Development in Mathematics and Applications [UID/MAT/04106/2019];
+   FCTFundacao para a Ciencia e a Tecnologia (FCT) [PD/BD/114188/2016]
+FX This research was supported by the Portuguese Foundation for Science and
+   Technology (FCT - Fundacao para a Ciencia e a Tecnologia), through CIDMA
+   - Center for Research and Development in Mathematics and Applications,
+   within project UID/MAT/04106/2019. Kostylenko is also supported by the
+   FCT Ph.D. fellowship PD/BD/114188/2016. We are very grateful to
+   Professor Yuriy Petrushenko, Doctor of Economics, for providing us with
+   a consultation regarding the data used to calculate the beta and gamma
+   parameters in our work; and to four anonymous Reviewers, for valuable
+   remarks and comments, which significantly contributed to the quality of
+   the paper.
+CR Ahnert T, 2018, J FINANC STABIL, V35, P159, DOI 10.1016/j.jfs.2017.05.009
+   Albert R, 2002, REV MOD PHYS, V74, P47, DOI 10.1103/RevModPhys.74.47
+   Alderson D, 2006, NETW HETEROG MEDIA, V1, P569
+   Alexakis PD, 2016, RES INT BUS FINANC, V36, P312, DOI 10.1016/j.ribaf.2015.09.035
+   [Anonymous], 2009, WORLD EC OUTL CRIS R
+   Avdjiev S., 2010, BIS Q REV
+   Bank for International Settlements, 1994, BANK INT SETTLEMENTS
+   Bartlett J, 2012, ANZIAM J, V54, P3, DOI 10.1017/S1446181112000302
+   Brauer Fred, 2017, Infect Dis Model, V2, P113, DOI 10.1016/j.idm.2017.02.001
+   Cannarella J, 2014, EPIDEMIOLOGICAL MODE
+   Cerutti  E., 2012, W18531 NAT BUR EC RE, P26
+   Chen  J., 2018, SYSTEMIC RISK
+   David T, 2011, MATH COMPUT SIMULAT, V81, P1464, DOI 10.1016/j.matcom.2010.04.020
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Garas A, 2010, NEW J PHYS, V12, DOI 10.1088/1367-2630/12/11/113043
+   Giudici P, 2018, RISKS, V6, DOI 10.3390/risks6030095
+   Hufnagel L, 2004, P NATL ACAD SCI USA, V101, P15124, DOI 10.1073/pnas.0308344101
+   Inci AC, 2011, RES INT BUS FINANC, V25, P11, DOI 10.1016/j.ribaf.2010.05.002
+   Kaufman  G.G., BANKING CURRENCY CRI
+   Kermack WO, 1927, P R SOC LOND A-CONTA, V115, P700, DOI 10.1098/rspa.1927.0118
+   Kostylenko O. O., 2014, MECH EC REGUL, V1, P76
+   Kostylenko O, 2018, SPRINGER P MATH STAT, V223, P165, DOI 10.1007/978-3-319-71583-4_12
+   Lemos-Paiao AP, 2018, AIMS MATH, V3, P448, DOI 10.3934/Math.2018.4.448
+   Ozturk Y, 2015, APPL MATH MODEL, V39, P7600, DOI 10.1016/j.apm.2015.03.023
+   Paltalidis N., 2015, SSRN ELECT J, V61, P36
+   Press Association, GUARDIAN
+   Proulx SR, 2005, TRENDS ECOL EVOL, V20, P345, DOI 10.1016/j.tree.2005.04.004
+   Rezende EL, 2007, NATURE, V448, P925, DOI 10.1038/nature05956
+   Rodrigues H. S., 2016, J APPL MATH INFORM, V10, P92
+   Rodrigues HS, 2016, MATH METHOD APPL SCI, V39, P4780, DOI 10.1002/mma.3783
+   Stonedahl F., 2008, NETLOGO VIRUS NETWOR
+   Wilensky U., 1999, NETLOGO
+   Wu Y., 2014, COMPUT MODEL NEW TEC, V18, P229
+NR 33
+TC 1
+Z9 1
+U1 0
+U2 0
+PU AMER INST MATHEMATICAL SCIENCES-AIMS
+PI SPRINGFIELD
+PA PO BOX 2604, SPRINGFIELD, MO 65801-2604 USA
+SN 2473-6988
+J9 AIMS MATH
+JI AIMS Math.
+PY 2019
+VL 4
+IS 1
+BP 86
+EP 98
+DI 10.3934/Math.2019.1.86
+PG 13
+WC Mathematics, Applied; Mathematics
+SC Mathematics
+GA HL9VQ
+UT WOS:000459091100007
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Smith, KA
+AF Smith, Katherine A.
+TI What can Islamic financing tell us about macro-prudential policies?
+SO APPLIED ECONOMICS LETTERS
+LA English
+DT Article
+DE Financial crises; Islamic Finance; macro-prudential policy
+AB Macro-prudential policies are theoretically effective at mitigating a debt deflation crisis by forcing individuals to internalize their impact on aggregate prices reducing systemic risk caused by pecuniary externalities. To better understand the potential effectiveness of a macro-prudential time varying tax/subsidy on debt/dividends, we empirically estimate the impact of an Islamic financing presence on financial crises. Adherence to Islamic financing principles for a nontrivial portion of a country's population has similar impacts to a macro-prudential policy in that these limited asset holders are likely to hold less debt or use debt-like instruments rather than conventional debt, driving down their marginal rate of substitution and the price of equity in equilibrium. To empirically estimate the effects of this policy, we interact an Islamic financing variable with debt in an otherwise standard model of financial crises. The results show that this macro-prudential-like policy decreases the likelihood of a banking crisis by 50%. The contribution of the article is twofold. First, we show that an Islamic finance presence encourages precautionary savings like a macro-prudential policy. Second, using an Islamic finance presence to capture macro-prudential potential effects, we find empirically that the likelihood of banking crises are cut roughly by half when such policies are in effect.
+C1 [Smith, Katherine A.] US Naval Acad, Annapolis, MD 21402 USA.
+RP Smith, KA (reprint author), US Naval Acad, Annapolis, MD 21402 USA.
+EM ksmith@usna.edu
+CR Archer S, 2006, INT J THEOR APPL FIN, V9, P269, DOI 10.1142/S0219024906003627
+   Gourinchas PO, 2012, AM ECON J-MACROECON, V4, P226, DOI 10.1257/mac.4.1.226
+   Mendoza E. G., 2017, J POLITICAL EC, DOI [10.1086/696280, DOI 10.1086/696280]
+   Mendoza EG, 2006, J INT ECON, V70, P82, DOI 10.1016/j.jinteco.2005.06.016
+NR 4
+TC 0
+Z9 0
+U1 0
+U2 15
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1350-4851
+EI 1466-4291
+J9 APPL ECON LETT
+JI Appl. Econ. Lett.
+PD JAN 2
+PY 2019
+VL 26
+IS 1
+BP 27
+EP 31
+DI 10.1080/13504851.2018.1433290
+PG 5
+WC Economics
+SC Business & Economics
+GA GX2YG
+UT WOS:000447586700006
+DA 2019-12-28
+ER
+
+PT J
+AU Owusu, P
+   Tweneboah, G
+   Ijasan, K
+   Jeyasreedharan, N
+AF Owusu, Peterson, Jr.
+   Tweneboah, George
+   Ijasan, Kola
+   Jeyasreedharan, Nagaratnam
+TI Modelling return behaviour of global real estate investment trusts
+   equities Evidence from generalised lambda distribution
+SO JOURNAL OF EUROPEAN REAL ESTATE RESEARCH
+LA English
+DT Article
+DE REITs; Shape parameter; Moment matching; Maximum likelihood; Quantile
+   matching; Scale parameter
+ID CONTAGION; MARKET; REITS; RISK; CRISIS
+AB Purpose This paper aims to contribute to knowledge by investigating the return behaviour of seven global real estate investment trusts (REITs) with respect to the appropriate distributional fit that captures tail and shape characteristics. The study adds to the knowledge of distributional properties of seven global REITs by using the generalised lambda distribution (GLD), which captures fairly well the higher moments of the returns. Design/methodology/approach This is an empirical study with GLD through three rival methods of fitting tail and shape properties of seven REIT return data from January 2008 to November 2017. A post-Global Financial Crisis (GFC) (from July 2009) period fits from the same methods are juxtaposed for comparison. Findings The maximum likelihood estimates outperform the methods of moment matching and quantile matching in terms of goodness-of-fit in line with extant literature; for the post-GFC period as against the full-sample period. All three methods fit better in full-sample period than post-GFC period for all seven countries for the Region 4 support dynamics. Further, USA and Singapore possess the strongest and stronger infinite supports for both time regimes.
+   Originality/value The novelty of this work lies with the data used and the detailed analysis and for the post-GFC sample.
+C1 [Owusu, Peterson, Jr.; Tweneboah, George] Univ Witwatersrand, Wits Business Sch, Johannesburg, South Africa.
+   [Ijasan, Kola] Univ Witwatersrand, Sch Construct Econ & Management, Johannesburg, South Africa.
+   [Jeyasreedharan, Nagaratnam] Univ Tasmania, Tasmania Sch Business & Econ, Hobart, Tas, Australia.
+RP Owusu, P (reprint author), Univ Witwatersrand, Wits Business Sch, Johannesburg, South Africa.
+EM 1986355@students.wits.ac.za
+RI Owusu Junior, Peterson/F-3843-2016
+OI Owusu Junior, Peterson/0000-0001-6253-5770
+CR Ahmad W, 2013, ECON MODEL, V33, P209, DOI 10.1016/j.econmod.2013.04.009
+   Akinsomi O., 2018, J REAL ESTATE PORTFO, V24, P65
+   Anderson C., 2011, J REAL ESTATE PORTFO, V17, P113
+   Baum CF, 2007, IVREG2 STATA MODULE
+   Baum CF, 2003, STATA J, V3, P1, DOI 10.1177/1536867X0300300101
+   Bond SA, 2003, J REAL ESTATE FINANC, V26, P319, DOI 10.1023/A:1022939127383
+   Chalabi Y., 2012, FLEXIBLE DISTRIBUTIO
+   Chalabi Y., 2010, GEN LAMBDA DISTRIBUT
+   Chang GD, 2014, INT REV ECON FINANC, V31, P148, DOI 10.1016/j.iref.2013.12.005
+   Chen MC, 2015, INT J STRATEG PROP M, V19, P42, DOI 10.3846/1648715X.2014.974724
+   Corlu CG, 2016, COMMUN STAT-SIMUL C, V45, P2276, DOI 10.1080/03610918.2014.901355
+   Corlu CG, 2016, EXPERT SYST APPL, V54, P170, DOI 10.1016/j.eswa.2015.12.048
+   Corrado C.J., 2001, OPTION PRICING BASED
+   Edelstein RH, 2017, J REAL ESTATE RES, V39, P441
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   Fei P, 2010, J PORTFOLIO MANAGE, V36, P113, DOI 10.3905/JPM.2010.36.2.113
+   FISHER RA, 1922, PHILOS T R SOC A, V222, P309, DOI DOI 10.1098/RSTA.1922.0009
+   Focardi S.M., 2004, MATH FINANCIAL MODEL, V138
+   FREIMER M, 1988, COMMUN STAT THEORY, V17, P3547, DOI 10.1080/03610928808829820
+   Hardin WG, 2017, J REAL ESTATE RES, V39, P401
+   Harvey CR, 2000, J FINANC, V55, P1263, DOI 10.1111/0022-1082.00247
+   Hoesli M, 2015, REAL ESTATE ECON, V43, P101, DOI 10.1111/1540-6229.12070
+   Hoesli M, 2012, J INT MONEY FINANC, V31, P1823, DOI 10.1016/j.jimonfin.2012.05.017
+   Hung SYK, 2008, J REAL ESTATE FINANC, V37, P51, DOI 10.1007/s11146-007-9056-4
+   Hwang S., 2001, RETURN DISTRIBUTIONS, P75
+   Jin XY, 2016, RES INT BUS FINANC, V36, P179, DOI 10.1016/j.ribaf.2015.09.019
+   JOHNSON NL, 1949, BIOMETRIKA, V36, P149, DOI 10.1093/biomet/36.1-2.149
+   Jorion P., 1996, FINANCIAL ANAL J, V52, P47, DOI DOI 10.2469/faj.v52.n6.2039
+   Karian Z.A., 2016, HDB FITTING STAT DIS
+   Karian ZA, 1996, COMMUN STAT SIMULAT, V25, P611, DOI 10.1080/03610919608813333
+   Karian ZA, 2003, J IRANIAN STAT SOC, V2, P171
+   KARIAN ZA, 2000, FITTING STAT DISTRIB
+   Karvanen J., 2003, P 4 INT S IND COMP A, P769
+   King RAR, 1999, AUST NZ J STAT, V41, P353, DOI 10.1111/1467-842X.00089
+   Kolmogorov A. N., 1933, GIORN I ITAL DEGLI A, V4, P83, DOI DOI 10.1016/J.SAB.2008.10.045
+   Kuhl ME, 2006, PROCEEDINGS OF THE 2006 WINTER SIMULATION CONFERENCE, VOLS 1-5, P19, DOI 10.1109/WSC.2006.323035
+   Lakhany A, 2000, ALGO RES Q, V3, P47
+   Liow K, 2018, J EUR REAL ESTATE RE, V11, P144, DOI 10.1108/JERER-11-2017-0042
+   Lu CL, 2013, REV QUANT FINANC ACC, V40, P293, DOI 10.1007/s11156-012-0274-3
+   Lu CL, 2009, REV FINANC ECON, V18, P97, DOI 10.1016/j.rfe.2008.03.001
+   Mandelbrot B.B., 1997, FRACTALS SCALING FIN, P371, DOI DOI 10.1007/978-1-4757-2763-0_14
+   MCFARLAND JW, 1982, J FINANC, V37, P693, DOI 10.1111/j.1540-6261.1982.tb02218.x
+   Mills F.C., 1927, BEHAV PRICES NBER BO
+   Myung IJ, 2003, J MATH PSYCHOL, V47, P90, DOI 10.1016/S0022-2496(02)00028-7
+   OZTURK A, 1985, TECHNOMETRICS, V27, P81, DOI 10.2307/1270473
+   Payne JE, 2003, APPL ECON LETT, V10, P671, DOI 10.1080/1350485032000133345
+   Pfaff B., 2016, FINANCIAL RISK MODEL
+   RAMBERG JS, 1974, COMMUN ACM, V17, P78, DOI 10.1145/360827.360840
+   RAMBERG JS, 1979, TECHNOMETRICS, V21, P201, DOI 10.2307/1268517
+   Silverman B.W, 2018, DENSITY ESTIMATION S, DOI [10.1201/9781315140919, DOI 10.1201/9781315140919]
+   Stock JH, 2002, J BUS ECON STAT, V20, P518, DOI 10.1198/073500102288618658
+   Su S., 2010, FITTING GLD DATA VIA
+   Su S., 2005, J MODERN APPL STAT M, V4, P7
+   Su S, 2007, COMPUT STAT DATA AN, V51, P3983, DOI 10.1016/j.csda.2006.06.008
+   Su S, 2007, J STAT SOFTW, V21, P1
+   Tarsitano A., 2004, P 16 S COMP STAT COM, P1861
+   Tsay R.S, 2005, ANAL FINANCIAL TIME, V543
+   Van Staden P.J., 2014, MODELING GEN FAMILIE
+   Wang B, 2016, J STAT COMPUT SIM, V86, P1785, DOI 10.1080/00949655.2015.1082132
+   Wang K., 1995, J REAL ESTATE RES, V10, p[4, 445]
+   WESTERFIELD JM, 1977, J INT ECON, V7, P181, DOI 10.1016/0022-1996(77)90030-7
+   Whitelaw RF, 1998, MACROECON DYN, V2, P559, DOI 10.1017/S1365100598009092
+   YOUNG MS, 1995, J REAL ESTATE FINANC, V10, P225, DOI 10.1007/BF01096940
+   Zhou J, 2010, J PROP RES, V27, P357, DOI 10.1080/09599916.2010.517853
+NR 64
+TC 0
+Z9 0
+U1 0
+U2 0
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1753-9269
+J9 J EUR REAL ESTATE RE
+JI J. Eur. Real Estate Res.
+PD NOV 4
+PY 2019
+VL 12
+IS 3
+BP 311
+EP 328
+DI 10.1108/JERER-09-2018-0043
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA JN9RZ
+UT WOS:000497228000002
+DA 2019-12-27
+ER
+
+PT J
+AU He, Y
+   Hou, YX
+   Peng, L
+   Sheng, JL
+AF He, Yi
+   Hou, Yanxi
+   Peng, Liang
+   Sheng, Jiliang
+TI Statistical Inference for a Relative Risk Measure
+SO JOURNAL OF BUSINESS & ECONOMIC STATISTICS
+LA English
+DT Article
+DE Copula; Expected shortfall; Jackknife empirical likelihood;
+   Nonparametric estimation; Systemic risk
+ID EMPIRICAL LIKELIHOOD METHOD; SYSTEMIC RISK; TAIL RISK; ESTIMATORS;
+   DEPENDENCE; INSURERS; COPULA
+AB For monitoring systemic risk from regulators' point of view, this article proposes a relative risk measure, which is sensitive to the market comovement. The asymptotic normality of a nonparametric estimator and its smoothed version is established when the observations are independent. To effectively construct an interval without complicated asymptotic variance estimation, a jackknife empirical likelihood inference procedure based on the smoothed nonparametric estimation is provided with a Wilks type of result in case of independent observations. When data follow from AR-GARCH models, the relative risk measure with respect to the errors becomes useful and so we propose a corresponding nonparametric estimator. A simulation study and real-life data analysis show that the proposed relative risk measure is useful in monitoring systemic risk.
+C1 [He, Yi] Monash Univ, Dept Econometr & Business Stat, Caulfield, Vic 3145, Australia.
+   [Hou, Yanxi] Georgia Inst Technol, Sch Math, Atlanta, GA 30332 USA.
+   [Peng, Liang] Georgia State Univ, Dept Risk Management & Insurance, Atlanta, GA 30303 USA.
+   [Sheng, Jiliang] Jiangxi Univ Finance & Econ, Sch Stat, Nanchang 330013, Jiangxi, Peoples R China.
+RP He, Y (reprint author), Monash Univ, Dept Econometr & Business Stat, Caulfield, Vic 3145, Australia.
+EM yi.he2@monash.edu; yhou44@math.gatech.edu; lpeng@gsu.edu;
+   shengjiliang@163.com
+FU Simons Foundation; National Natural Science Foundation of ChinaNational
+   Natural Science Foundation of China [71161013, 71561011]; Science and
+   Technology Project of Jiangxi Provincial Education Department [GJJ14323]
+FX We thank the editor, Professor Todd Clark, an associate editor, and two
+   reviewers for their helpful comments. Peng's research was partly
+   supported by the Simons Foundation. Sheng's research was partly
+   supported by the National Natural Science Foundation of China (nos.
+   71161013 and 71561011) and the Science and Technology Project of Jiangxi
+   Provincial Education Department (no. GJJ14323).
+CR Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Agarwal V, 2017, J FINANC ECON, V125, P610, DOI 10.1016/j.jfineco.2017.06.006
+   Baysal RE, 2008, J RISK, V11, P3
+   Beirlant J, 2006, STAT EXTREMES THEORY
+   Berdin E., 2015, TECHNICAL REPORT
+   Bierth C, 2015, J BANK FINANC, V55, P232, DOI 10.1016/j.jbankfin.2015.02.014
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Cai JJ, 2015, J R STAT SOC B, V77, P417, DOI 10.1111/rssb.12069
+   Chen H., 2015, TECHNICAL REPORT
+   Chen H, 2014, J RISK INSUR, V81, P623, DOI 10.1111/j.1539-6975.2012.01503.x
+   Chen SX, 2008, J FINANC ECONOMET, V6, P87, DOI 10.1093/jjfinec/nbm019
+   de Haan L., 2006, SPRING S OPERAT RES
+   Drees H, 1998, J MULTIVARIATE ANAL, V64, P25, DOI 10.1006/jmva.1997.1708
+   Einmahl JHJ, 2006, ANN STAT, V34, P1987, DOI 10.1214/009053606000000434
+   Francq C, 2004, BERNOULLI, V10, P605, DOI 10.3150/bj/1093265632
+   Ganssler P., 1987, SEM EMP PROC
+   Gong Y, 2010, J MULTIVARIATE ANAL, V101, P1520, DOI 10.1016/j.jmva.2010.01.012
+   Jing BY, 2009, J AM STAT ASSOC, V104, P1224, DOI 10.1198/jasa.2009.tm08260
+   Kelly B, 2014, REV FINANC STUD, V27, P2841, DOI 10.1093/rfs/hhu039
+   Ledford AW, 1996, BIOMETRIKA, V83, P169, DOI 10.1093/biomet/83.1.169
+   Ledford AW, 1997, J ROY STAT SOC B MET, V59, P475, DOI 10.1111/1467-9868.00080
+   Ling SQ, 2007, J ECONOMETRICS, V140, P849, DOI 10.1016/j.jeconom.2006.07.016
+   Luo XL, 2010, QUANT FINANC, V10, P1039, DOI 10.1080/14697680903085544
+   OWEN A, 1990, ANN STAT, V18, P90, DOI 10.1214/aos/1176347494
+   Owen A. B., 2001, EMPIRICAL LIKELIHOOD
+   OWEN AB, 1988, BIOMETRIKA, V75, P237, DOI 10.1093/biomet/75.2.237
+   Peng L, 2015, EUR ACTUAR J, V5, P427, DOI 10.1007/s13385-015-0113-8
+   Peng L, 2012, INSUR MATH ECON, V51, P142, DOI 10.1016/j.insmatheco.2012.03.008
+   Peng L, 2012, TEST-SPAIN, V21, P74, DOI 10.1007/s11749-011-0236-4
+   Peng LA, 2010, TEST-SPAIN, V19, P514, DOI 10.1007/s11749-010-0184-4
+   Wang X, 2016, INSUR MATH ECON, V68, P231, DOI 10.1016/j.insmatheco.2016.03.015
+   Weiss GNF, 2014, J FINANC STABIL, V13, P95, DOI 10.1016/j.jfs.2014.05.001
+   Zhu K, 2011, ANN STAT, V39, P2131, DOI 10.1214/11-AOS895
+NR 35
+TC 0
+Z9 0
+U1 2
+U2 2
+PU AMER STATISTICAL ASSOC
+PI ALEXANDRIA
+PA 732 N WASHINGTON ST, ALEXANDRIA, VA 22314-1943 USA
+SN 0735-0015
+EI 1537-2707
+J9 J BUS ECON STAT
+JI J. Bus. Econ. Stat.
+PD APR 3
+PY 2019
+VL 37
+IS 2
+BP 301
+EP 311
+DI 10.1080/07350015.2017.1321549
+PG 11
+WC Economics; Social Sciences, Mathematical Methods; Statistics &
+   Probability
+SC Business & Economics; Mathematical Methods In Social Sciences;
+   Mathematics
+GA HY1CY
+UT WOS:000467853000010
+DA 2019-12-28
+ER

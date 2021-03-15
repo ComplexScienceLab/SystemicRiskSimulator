@@ -1,0 +1,413 @@
+
+PT J
+AU Hung, NT
+AF Ngo Thai Hung
+TI Spillover Effects Between Stock Prices and Exchange Rates for the
+   Central and Eastern European Countries
+SO GLOBAL BUSINESS REVIEW
+LA English
+DT Article; Early Access
+DE Stock markets; foreign exchange rate; CEE countries; multivariate GARCH;
+   spillover effects
+ID VOLATILITY SPILLOVER; DYNAMIC RELATIONSHIP; FINANCIAL CRISIS;
+   FOREIGN-EXCHANGE; MARKET LINKAGES; RETURNS; COMOVEMENTS
+AB This article attempts to empirically analyze the dynamic relationship and volatility spillover effects between exchange rates and stock returns of the five Central and Eastern European (CEE) countries (Hungary, Poland, the Czech Republic, Romania and Croatia) covering the period 2000-2017 by using the bivariate generalized autoregressive conditional heteroskedasticity-Baba, Engle, Kraft and Kroner (GARCH-BEKK) framework alongside with the constant and dynamic conditional correlation (CCC and DCC) models. The major findings reveal the following: bidirectional volatility spillovers between the two financial markets in Hungary, the Czech Republic and Croatia in the pre-crisis period; unidirectional spillover of volatility from the stock market to foreign exchange market for Poland during the sub-prime crisis period; unidirectional spillover of volatility from the foreign exchange market to the stock market for Hungary in the post-crisis period and Romania in the pre-crisis period; non-persistence volatility spillover between them in case of the Czech Republic, Romania and Croatia in the post-crisis period; the absence of volatility transmission from the stock market to foreign exchange market occurs in Hungary, while from the foreign exchange market to the stock market in case of Poland in the post-crisis period. We further find a short-lived but non-negligible financial contagion between stock and foreign exchange market in these countries. These empirical insights have significant implications for portfolio investments and currency risk hedging.
+C1 [Ngo Thai Hung] Univ Finance Mkt, Dist 7, Ho Chi Minh City, Vietnam.
+RP Hung, NT (reprint author), Univ Finance Mkt, Dist 7, Ho Chi Minh City, Vietnam.
+EM hung.nt@ufm.edu.vn
+CR Aloui C, 2007, QUANT FINANC, V7, P669, DOI 10.1080/14697680701302653
+   Andreou E, 2013, J INT FINANC MARK I, V27, P248, DOI 10.1016/j.intfin.2013.09.003
+   Ayaji A. R., 1998, GLOBAL FINANCE J, V9, P241
+   BAHMANIOSKOOEE M, 1992, APPL ECON, V24, P459, DOI 10.1080/00036849200000020
+   BOLLERSLEV T, 1990, REV ECON STAT, V72, P498, DOI 10.2307/2109358
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Branson W. H., 1983, MANAGING FOREIGN EXC
+   Caporale GM, 2014, INT REV FINANC ANAL, V33, P87, DOI 10.1016/j.irfa.2013.12.005
+   Chkili W, 2014, RES INT BUS FINANC, V31, P46, DOI 10.1016/j.ribaf.2013.11.007
+   Chkili W, 2012, J INT FINANC MARK I, V22, P738, DOI 10.1016/j.intfin.2012.04.009
+   Chow EH, 1997, J BUS, V70, P105, DOI 10.1086/209710
+   Dahir AM, 2018, BORSA ISTANB REV, V18, P101, DOI 10.1016/j.bir.2017.10.001
+   Daniel S., 2005, CZECH J EC FINANCE, V55, P3
+   DORNBUSCH R, 1980, AM ECON REV, V70, P960
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   Fedorova E, 2010, FINANC UVER, V60, P519
+   Ferreira P, 2019, ECONOMIES, V7, DOI 10.3390/economies7010009
+   Frankel J. A., 1983, EC INTERDEPENDENCE F
+   Gjika D, 2013, ECON MODEL, V33, P55, DOI 10.1016/j.econmod.2013.03.015
+   Granger C. W. J., 2000, Q REV EC FINANCE, V40, P337, DOI DOI 10.1016/S1062-9769(00)00042-9
+   Hung N. T., 2018, GLOBAL BUSINESS REV, DOI [10.1177/0972150918811713, DOI 10.1177/0972150918811713]
+   Ibrahim M.H., 2003, J ECON STUD, V30, P6, DOI DOI 10.1108/01443580310455241
+   Jebran K, 2016, FINANC INNOV, V2, DOI 10.1186/s40854-016-0021-1
+   Kanas A., 2000, J BUSINESS FINANCE A, V27, P447, DOI DOI 10.1111/1468-5957.00320
+   Kim BH, 2015, INT REV ECON FINANC, V39, P192, DOI 10.1016/j.iref.2015.04.005
+   Kroner KF, 1998, REV FINANC STUD, V11, P817, DOI 10.1093/rfs/11.4.817
+   KRONER KF, 1993, J FINANC QUANT ANAL, V28, P535, DOI 10.2307/2331164
+   Kumar M, 2013, INT J EMERG MARK, V8, P108, DOI 10.1108/17468801311306984
+   Kumar S, 2019, INT REV FINANC ANAL, V63, P273, DOI 10.1016/j.irfa.2018.12.011
+   Maitra D, 2019, GLOB BUS REV, V20, P214, DOI 10.1177/0972150918803801
+   Majdoub J, 2014, N AM J ECON FINANC, V29, P452, DOI 10.1016/j.najef.2014.06.011
+   Melik K., 2015, C P 10TH MIBES C 15, P190
+   Mohammadi H, 2015, ECONOMETRICS, V3, P215, DOI 10.3390/econometrics3020215
+   Moore T, 2014, INT REV ECON FINANC, V29, P1, DOI 10.1016/j.iref.2013.02.004
+   Morales L., 2008, FIN MAN ASS FMA EUR, DOI 10.21427/D7M49K
+   Mozumder N, 2015, ECON ISS, V20, P43
+   Okii J., 2015, S E EUROPEAN J EC BU, V9, P7
+   Pan M.-S., 2006, INT REV ECON FINANC, V16, P503
+   Panda AK, 2018, GLOB BUS REV, V19, P1538, DOI 10.1177/0972150918793554
+   Rahman Md Lutfur, 2009, INT BUSINESS RES, V2, pP167, DOI DOI 10.5539/ibr.v2n2p167
+   Walid C, 2011, EMERG MARK REV, V12, P272, DOI 10.1016/j.ememar.2011.04.003
+   Wong HT, 2017, INT REV ECON FINANC, V49, P340, DOI 10.1016/j.iref.2017.02.004
+   Wu Y., 2000, J EC FINANCE, V24, P260, DOI [10.1007/BF02752607, DOI 10.1007/BF02752607]
+   Xuan Vinh V., 2018, EMERG MARK REV, DOI [10.1016/j.ememar.2018.03.007, DOI 10.1016/J.EMEMAR.2018.03.007]
+   Yang S., 2004, INT J BUS EC, V3, P139
+   Yang SP, 2017, PAC-BASIN FINANC J, V46, P337, DOI 10.1016/j.pacfin.2017.10.004
+   Yau HY, 2009, JPN WORLD ECON, V21, P292, DOI 10.1016/j.japwor.2008.09.001
+   Yu Q., 1997, SINGAPORE ECONOMIC R, V41, P47
+   Zhao H, 2010, RES INT BUS FINANC, V24, P103, DOI 10.1016/j.ribaf.2009.09.001
+NR 50
+TC 0
+Z9 0
+U1 0
+U2 0
+PU SAGE PUBLICATIONS LTD
+PI LONDON
+PA 1 OLIVERS YARD, 55 CITY ROAD, LONDON EC1Y 1SP, ENGLAND
+SN 0972-1509
+EI 0973-0664
+J9 GLOB BUS REV
+JI Glob. Bus. Rev.
+AR 0972150919869772
+DI 10.1177/0972150919869772
+EA DEC 2019
+PG 28
+WC Business
+SC Business & Economics
+GA JV5VX
+UT WOS:000502434100001
+DA 2019-12-27
+ER
+
+PT J
+AU Welburn, JW
+AF Welburn, Jonathan W.
+TI Crises Beyond Belief: Findings on Contagion, the Role of Beliefs, and
+   the Eurozone Debt Crisis from a Borrower-Lender Game
+SO COMPUTATIONAL ECONOMICS
+LA English
+DT Article; Early Access
+DE Contagion; Sovereign debt; Default crisis; Game theory; Imperfect
+   information; Beliefs; Bayesian updating; Sensitivity analysis; European
+   Union; Eurozone crisis; Country risk
+ID FINANCIAL CRISES; MODEL
+AB The 1997 Asian financial crisis, the 1998 Russian crisis, the 2007 global financial crisis, and the 2009 Eurozone crisis redrew the landscape of economic risk. Each crisis elucidated the systemic nature of economic risk, where adverse events appear increasingly capable of quickly spreading from one country to the next through a process commonly known as contagion. This paper presents a borrower-lender game with sequential moves and imperfect information, to discuss the potential for contagion through debt and trade channels while highlighting the role of beliefs. While many in the literature focus on contagion as a direct transmission of economic shocks through debt and trade channels, this paper finds that contagion through trade is unlikely and that the role of lender beliefs can result in apparent contagion. The paper presents new theory, computational solutions, extensive sensitivity analysis, and a case study of the Eurozone crisis. Results demonstrate that changes in lender beliefs following revelations of a crisis in one country may lead a lender to be unwilling to lend to another country. This in turn may create a self-fulfilling prophecy where, without access to credit, that country may be less willing and able to repay past debts. Furthermore, results demonstrate that the borrower-lender game in this paper can explain apparent contagion throughout the Eurozone crisis through deteriorating lender beliefs. While the conventional story is that contagion leads to real propagations through debt (or trade), we find that a real propagation of shocks is not needed.
+C1 [Welburn, Jonathan W.] RAND Corp, 1776 Main St, Santa Monica, CA 90401 USA.
+RP Welburn, JW (reprint author), RAND Corp, 1776 Main St, Santa Monica, CA 90401 USA.
+EM jwelburn@rand.org
+FU National Science FoundationNational Science Foundation (NSF)
+   [DGE-1256259]; University of Wisconsin-Madison College of Engineering
+FX This paper has been made possible by several amazing people and
+   organizations. First and foremost, I am grateful for the enduring advice
+   of Vicki N. Bier without which this work could not have been completed.
+   I am also grateful for the advice of Oguzhan Alagoz, Menzie Chinn, Kjell
+   Hausken, and Thomas Rutherford and helpful feedback each provided.
+   Additionally, I am thankful for the research assistance of Anne
+   Velazquez and Victor Rodriguez. This work was supported by the National
+   Science Foundation under Grant No. DGE-1256259, the University of
+   Wisconsin-Madison College of Engineering. I am thankful to the
+   University of Wisconsin-Madison, where the majority of this work was
+   done, and my current employer, the RAND Corporation, for its support.
+CR Acemoglu D., 2013, NATL BUREAU EC RES W, V18727, DOI [10.3386/w18727, DOI 10.3386/W18727]
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Aguiar M, 2006, J INT ECON, V69, P64, DOI 10.1016/j.jinteco.2005.05.005
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Arellano C., 2013, NATL BUREAU EC RES W, V19548, DOI [10.3386/w19548, DOI 10.3386/W19548]
+   Arellano C, 2008, AM ECON REV, V98, P690, DOI 10.1257/aer.98.3.690
+   Bloomberg L. P, 2016, CREDIT DEFAULT SWAP
+   BRANDER J, 1983, J INT ECON, V15, P313, DOI 10.1016/S0022-1996(83)80008-7
+   CALVO GA, 1988, AM ECON REV, V78, P647
+   Calvo Guillermo, 1998, J APPL EC, V1, P35
+   Chan-Lau JA, 2006, MARKET BASED ESTIMAT
+   Chen Z, 2017, J SOL-GEL SCI TECHN, V13, P1
+   de Jong E, 2009, J ECON DYN CONTROL, V33, P1929, DOI 10.1016/j.jedc.2009.06.002
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   EATON J, 1986, EUR ECON REV, V30, P481, DOI 10.1016/0014-2921(86)90004-8
+   EATON J, 1981, REV ECON STUD, V48, P289, DOI 10.2307/2296886
+   Forbes K., 2001, INT FINANCIAL CONTAG, V43, P66
+   Forbes K., 2000, NATL BUREAU EC RES W, V7885, DOI [10.3386/w7885, DOI 10.3386/W7885]
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   FRED, 2016, FED RES EC DAT
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P741, DOI 10.1016/j.jedc.2005.01.004
+   Goldstein M., 1998, ASIAN FINANCIAL CRIS
+   Hausken K, 2002, PUBLIC CHOICE, V111, P209, DOI 10.1023/A:1014943528057
+   Hernandez L.F., 2001, INT REV FINANC ANAL, V10, P203
+   Huang WH, 2014, J ECON BEHAV ORGAN, V99, P18, DOI 10.1016/j.jebo.2013.12.009
+   Kaminsky G. L., 2003, NATL BUREAU EC RES W, V10061, DOI [10.3386/w10061, DOI 10.3386/W10061]
+   Kiyotaki N., 1995, J JAPANESE INT EC, V5083, DOI [10.3386/w5083, DOI 10.3386/W5083]
+   KOOPMANS TC, 1960, ECONOMETRICA, V28, P287, DOI 10.2307/1907722
+   Lorenzoni G., 2013, 19228 NAT BUR EC RES, V19228, DOI [10.3386/w19228, DOI 10.3386/W19228]
+   Mendoza E. G., 2011, NATL BUREAU EC RES W, V17151, DOI [10.3386/w17151, DOI 10.3386/W17151]
+   Mendoza EG, 2010, AM ECON REV, V100, P1941, DOI 10.1257/aer.100.5.1941
+   Morris S, 2000, GLOBAL GAMES THEORY
+   Morris S, 2012, AM ECON J-MACROECON, V4, P1, DOI 10.1257/mac.4.1.1
+   Obstfeld M., 1984, NATL BUREAU EC RES W, V1486, DOI [10.3386/w1486, DOI 10.3386/W1486]
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   Reinhart C. M., 2008, NATL BUREAU EC RES W, V13882, DOI [10.3386/w13882, DOI 10.3386/W13882]
+   Welburn JW, 2015, APPL MATH COMPUT, V266, P738, DOI 10.1016/j.amc.2015.05.093
+   Welburn JW, 2017, COMPUT ECON, V49, P177, DOI 10.1007/s10614-015-9542-3
+   World Bank, 2016, TOT POP STAT
+   Yue VZ, 2010, J INT ECON, V80, P176, DOI 10.1016/j.jinteco.2009.11.004
+NR 41
+TC 0
+Z9 0
+U1 5
+U2 5
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0927-7099
+EI 1572-9974
+J9 COMPUT ECON
+JI Comput. Econ.
+DI 10.1007/s10614-019-09926-7
+EA OCT 2019
+PG 55
+WC Economics; Management; Mathematics, Interdisciplinary Applications
+SC Business & Economics; Mathematics
+GA JH0MX
+UT WOS:000492469500001
+DA 2019-12-27
+ER
+
+PT J
+AU Yang, ZH
+   Zhou, YG
+   Cheng, X
+AF Yang, Zihui
+   Zhou, Yinggang
+   Cheng, Xin
+TI Systemic risk in global volatility spillover networks: Evidence from
+   option-implied volatility indices
+SO JOURNAL OF FUTURES MARKETS
+LA English
+DT Article; Early Access
+DE network; option-implied volatility; spillover; systemic risk
+ID INTERDEPENDENCE; LINKS
+AB With option-implied volatility indices, we identify networks of global volatility spillovers and examine time-varying systemic risk across global financial markets. The U.S. stock market is the center of the network and plays a dominant role in the spread of volatility spillover to other markets. The global systemic risks have intensified since the Federal Reserve exited from quantitative easing, hiked interest rate, and shrank its balance sheet. We further show that the U.S. monetary tightening is an important catalyst for the intensifying global systemic risk. Our findings highlight the pernicious effects of monetary tightening after an era of cheap money.
+C1 [Yang, Zihui] Sun Yat Sen Univ, Dept Finance, Lingnan Coll, Guangzhou, Guangdong, Peoples R China.
+   [Zhou, Yinggang] Xiamen Univ, Dept Finance, Ctr Macroecon Res, Sch Econ, A403 Econ Bldg, Xiamen 361005, Peoples R China.
+   [Zhou, Yinggang] Xiamen Univ, Wang Yanan Inst Studies Econ, A403 Econ Bldg, Xiamen 361005, Peoples R China.
+   [Cheng, Xin] Xiamen Univ, Sch Econ, Dept Finance, Xiamen, Fujian, Peoples R China.
+RP Zhou, YG (reprint author), Xiamen Univ, Dept Finance, Ctr Macroecon Res, Sch Econ, A403 Econ Bldg, Xiamen 361005, Peoples R China.; Zhou, YG (reprint author), Xiamen Univ, Wang Yanan Inst Studies Econ, A403 Econ Bldg, Xiamen 361005, Peoples R China.
+EM yinggang.zhou@gmail.com
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71571106, 71988101, 71721001, 71873152]; Humanities
+   and Social Sciences grant of the Chinese Ministry of Education
+   [18YJA790121]; Major National Social Science Project [17ZDA073]; Key
+   Program for the Guangdong Natural Science Foundation [2018B030311053]
+FX National Natural Science Foundation of China, Grant/Award Numbers:
+   71571106, 71988101, 71721001, 71873152; Humanities and Social Sciences
+   grant of the Chinese Ministry of Education, Grant/Award Number:
+   18YJA790121; Major National Social Science Project, Grant/Award Number:
+   17ZDA073; Key Program for the Guangdong Natural Science Foundation,
+   Grant/Award Number: 2018B030311053
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Ahern KR, 2014, J FINANC, V69, P527, DOI 10.1111/jofi.12122
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Allen F, 2013, J MONEY CREDIT BANK, V45, P121, DOI 10.1111/jmcb.12038
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Aruoba SB, 2009, J BUS ECON STAT, V27, P417, DOI 10.1198/jbes.2009.07205
+   Bernanke B. S., 2012, P EC POL S JACKS HOL, V31, P1
+   Bessler DA, 2003, J INT MONEY FINANC, V22, P261, DOI 10.1016/S0261-5606(02)00076-1
+   Black F., 1976, P 1976 M AM STAT ASS, P177
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Carvalho VM, 2014, J ECON PERSPECT, V28, P23, DOI 10.1257/jep.28.4.23
+   Chan K, 2018, J EMPIR FINANC, V48, P58, DOI 10.1016/j.jempfin.2018.06.001
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   FAMA EF, 1989, J FINANC ECON, V25, P23, DOI 10.1016/0304-405X(89)90095-0
+   Fama EF, 2013, REV ASSET PRICING ST, V3, P180, DOI 10.1093/rapstu/rat007
+   FERSON WE, 1991, J POLIT ECON, V99, P385, DOI 10.1086/261755
+   Financial Stability Board, 2009, GUID ASS SYST IMP FI
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Habib MM, 2012, J INT ECON, V87, P50, DOI 10.1016/j.jinteco.2011.12.005
+   Hamilton JD, 2002, J POLIT ECON, V110, P1135, DOI 10.1086/341872
+   Jimenez G, 2014, ECONOMETRICA, V82, P463, DOI 10.3982/ECTA10104
+   KING M, 1994, ECONOMETRICA, V62, P901, DOI 10.2307/2951737
+   Koutmos G, 1995, J INT MONEY FINANC, V14, P747, DOI 10.1016/0261-5606(95)00031-3
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Solnik B, 2016, REV ASSET PRICING ST, V6, P221, DOI 10.1093/rapstu/raw005
+   Yang J, 2013, MANAGE SCI, V59, P2343, DOI 10.1287/mnsc.2013.1706
+   Yang ZH, 2017, MANAGE SCI, V63, P333, DOI 10.1287/mnsc.2015.2305
+   Zhou YG, 2014, J BANK FINANC, V38, P216, DOI 10.1016/j.jbankfin.2013.10.010
+NR 30
+TC 0
+Z9 0
+U1 4
+U2 4
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0270-7314
+EI 1096-9934
+J9 J FUTURES MARKETS
+JI J. Futures Mark.
+DI 10.1002/fut.22078
+EA NOV 2019
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA JO1KE
+UT WOS:000497343100001
+DA 2019-12-28
+ER
+
+PT J
+AU Chen, B
+   Li, L
+   Peng, F
+   Salim, R
+AF Chen, Bing
+   Li, Li
+   Peng, Fei
+   Salim, Ruhul
+TI Risk contagion in the cross-border banking network: Some new evidence
+SO INTERNATIONAL JOURNAL OF FINANCE & ECONOMICS
+LA English
+DT Article; Early Access
+DE Contagion; cross-border banking network; banking system; credit shock;
+   liquidity shock
+ID SYSTEMIC RISK; EXPOSURES; MARKET
+AB This paper applies consolidated banking statistics data from the Bank for International Settlement to simulate risk contagion in a cross-border banking system with shocks of credit and liquidity. Simulation results from balance sheet network analysis show that the banking systems of the United States and United Kingdom are the most systemically important systems under the credit shocks in June 2008. Moreover, banking system's counter-shocks ability is directly related to its size and concentration of foreign claims. The banking systems of German and French are the most systemically important systems under the liquidity shocks. Some banking systems depend heavily on German and French banking systems for financing and are vulnerable to liquidity shocks. Risk transfer has influence on risk contagion in the cross-border banking system. After the subprime crisis, cross-border risk contagion has declined because of deleveraging foreign claims. Raising the capital level of the banking system or intervention in the interbank market to enhance the liquidity of the market under pressure scenarios can reduce the contagion effect of credit or liquidity shocks.
+C1 [Chen, Bing] Shanghai Lixin Univ Accounting & Finance, Sch Finance, 995 Shangchuan Rd, Shanghai 201209, Peoples R China.
+   [Li, Li] Shanghai Univ Int Business & Econ, Sch Business Informat, 1900 Wenxiang Rd, Shanghai 201620, Peoples R China.
+   [Peng, Fei] Shanghai Lixin Univ Accounting & Finance, Dept Econ, 995 Shangchuan Rd, Shanghai 201209, Peoples R China.
+   [Salim, Ruhul] Curtin Univ, Sch Econ Finance & Property, Bentley, WA 6102, Australia.
+RP Salim, R (reprint author), Curtin Univ, Sch Econ Finance & Property, Curtin Business Sch, Bentley, WA 6102, Australia.
+EM ruhul.salim@cbs.curtin.edu.au
+FU China National Ministry of Education Humanities and Social Sciences
+   [12YJC790004]; Shanghai Young Eastern Scholar [QD2015049]; Shanghai
+   Education Commission Research and Innovation Key Project [12ZS184]
+FX China National Ministry of Education Humanities and Social Sciences,
+   Grant/Award Number: 12YJC790004; Shanghai Young Eastern Scholar,
+   Grant/Award Number: QD2015049; Shanghai Education Commission Research
+   and Innovation Key Project, Grant/Award Number: 12ZS184
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2015, J FINANC ECON, V115, P215, DOI 10.1016/j.jfineco.2014.11.004
+   Acharya VV, 2011, J FINANC, V66, P1177, DOI 10.1111/j.1540-6261.2011.01669.x
+   Aiyar S, 2012, AM ECON REV, V102, P225, DOI 10.1257/aer.102.3.225
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2013, J MONEY CREDIT BANK, V45, P121, DOI 10.1111/jmcb.12038
+   Amundsen E., 2005, 25 DENM NAT BANK
+   Blavarg Martin, 2002, SVERIGES RIKSBANK EC, V2, P19
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Chan-Lau J., 2010, 10107 IMF
+   Chan-Lau J., 2009, ASSESSING SYSTEMIC I
+   Chen Y., 2014, SCI REP, V4, P1, DOI DOI 10.1145/2591510
+   Chinazzi M., 2012, DEP EC WORKING PAPER, V1202
+   Degryse H., 2010, INT REV FINANC, V10, P209, DOI DOI 10.1111/J.1468-2443.2010.01109.X
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Espinosa-Vega M., 2010, 10105 IMF
+   Frisell L., 2007, STATE DEPENDEN UNPUB
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Garratt RJ, 2014, J BANK FINANC, V49, P367, DOI 10.1016/j.jbankfin.2013.12.025
+   Geng N., 2012, IMF WORKING PAPERS, V12
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Guerrero-Gomez S., 2004, INTERBANK EXPO UNPUB
+   Kubelec C, 2012, INT J CENT BANK, V8, P143
+   Li JJ, 2016, CHINA J ACCOUNT RES, V9, P267, DOI 10.1016/j.cjar.2015.11.002
+   Liang N, 2013, J MONEY CREDIT BANK, V45, P129, DOI 10.1111/jmcb.12039
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   Lubloy A., 2005, HUNG EC REV, V52, P377
+   Memmel C., 2008, CONTAGION GERMAN INT
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Mistrulli P., 2007, EC WORKING PAPERS, V641
+   Muller J., 2006, J FINANCIAL SERVICES, V29, P37, DOI DOI 10.1007/S10693-005-5107-2
+   Paltalidis N, 2015, J BANK FINANC, V61, pS36, DOI 10.1016/j.jbankfin.2015.03.021
+   Panageas S, 2010, J FINANC ECON, V95, P296, DOI 10.1016/j.jfineco.2009.11.008
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Toivanen M., 2009, 62009 BANK FINL
+   Tonzer L, 2015, J FINANC STABIL, V18, P19, DOI 10.1016/J.JFS.2015.02.002
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Van Lelyveld Iman, 2006, INT J CENT BANK, V2, P99
+   Wells S., 2004, 230 BANK ENGL
+NR 44
+TC 0
+Z9 0
+U1 1
+U2 1
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1076-9307
+EI 1099-1158
+J9 INT J FINANC ECON
+JI Int. J. Financ. Econ.
+DI 10.1002/ijfe.1763
+EA NOV 2019
+PG 21
+WC Business, Finance
+SC Business & Economics
+GA JQ0NC
+UT WOS:000498650800001
+DA 2019-12-28
+ER
+
+PT J
+AU Zhu, C
+   Hua, GH
+AF Zhu, Chen
+   Hua, Guihong
+TI The impact of China's Internet Finance on the banking systemic risk - an
+   empirical study based on the SCCA model and stepwise regression
+SO APPLIED ECONOMICS LETTERS
+LA English
+DT Article; Early Access
+DE Internet Finance; the banking systemic risk; SCCA model; stepwise
+   regression method; risk prediction
+AB The disorderly development of Internet Finance impacts both the banking industry and the macroeconomy and opens a risk contagion channel, which easily generates the banking systemic risk. Based on current banking systemic risk measured by Systemic Contingent Claims Analysis (SCCA) model and a stepwise regression, we verify the impacts of China's Internet Finance on the banking industry and predict that the risk will rise in the future.
+C1 [Zhu, Chen] Nanjing Univ Finance & Econ, Sch Finance, Nanjing 210046, Jiangsu, Peoples R China.
+   [Zhu, Chen] Florida Int Univ, Coll Business, Dept Finance, Miami, FL 33199 USA.
+   [Hua, Guihong] Jiangsu Normal Univ, Business Sch, Xuzhou, Jiangsu, Peoples R China.
+RP Zhu, C (reprint author), Nanjing Univ Finance & Econ, Sch Finance, Nanjing 210046, Jiangsu, Peoples R China.
+EM 4ever_cc@163.com
+FU China's National Philosophy and Social Science Fund [17ZDA037];
+   Jiangsu's Philosophy and Social Science Fund [18EYD005]; Jiangsu
+   Provincial Graduate Training Innovation Project [KYZZ16_0448]
+FX This work was supported by the China's National Philosophy and Social
+   Science Fund under Grant 17ZDA037, Jiangsu's Philosophy and Social
+   Science Fund under Grant 18EYD005, Jiangsu Provincial Graduate Training
+   Innovation Project under Grant KYZZ16_0448.
+CR Fischer S, 2016, AM ECON REV, V106, P39, DOI 10.1257/aer.p20161005
+   Hausenblas V, 2015, ECON SYST, V39, P156, DOI 10.1016/j.ecosys.2014.07.001
+   Hou XH, 2016, J FINANC STABIL, V22, P88, DOI 10.1016/j.jfs.2016.01.001
+   Mondria J, 2013, ECON J, V123, P429, DOI 10.1111/j.1468-0297.2012.02530.x
+   Zhang L, 2015, FINANC INNOV, V1, DOI 10.1186/s40854-015-0014-5
+NR 5
+TC 0
+Z9 0
+U1 19
+U2 20
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1350-4851
+EI 1466-4291
+J9 APPL ECON LETT
+JI Appl. Econ. Lett.
+DI 10.1080/13504851.2019.1613494
+EA MAY 2019
+PG 8
+WC Economics
+SC Business & Economics
+GA IB8XA
+UT WOS:000470546400001
+DA 2019-12-28
+ER

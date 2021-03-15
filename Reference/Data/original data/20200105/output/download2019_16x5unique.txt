@@ -1,0 +1,372 @@
+
+PT J
+AU Warshaw, E
+AF Warshaw, Evan
+TI Extreme dependence and risk spillovers across north american equity
+   markets
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Equity prices; Dynamic copulas; Tail dependence; Value-at-risk;
+   Conditional value-at-risk; Risk spillovers
+ID SYSTEMIC RISK; MODELS; NAFTA
+AB This study analyzes risk spillovers across North American equity markets over 1995-2016. Downside and upside Conditional Value-at-Risk (CoVaR) are estimated after modeling the dynamic dependence structure for each equity market pair using generalized autoregressive score (GAS) copulas. US-CAN and CAN-MX dynamic correlations trend upwards over the sample period while the US-CAN correlation fluctuates around a higher long-run average. Conditional tail dependence is symmetric and significantly higher following the Global Financial Crisis (GFC) in all cases, implying greater co-movement under extreme economic conditions. Downside and upside risk spillovers are significant and asymmetric along two dimensions for each equity market pair, where downside risk spillovers are more severe and the degree of asymmetry by conditioning direction is rank ordered by relative equity market sizes. Aside from the US-CAN pair, downside and upside risk spillovers are significantly larger following the GFC as compared to the pre-crisis period. Observed asymmetric and time-varying behavior is consistent across high/low risk and high/low risk spillover sub-periods.
+C1 [Warshaw, Evan] CUNY, Grad Ctr, 365 Fifth Ave, New York, NY 10016 USA.
+RP Warshaw, E (reprint author), CUNY, Grad Ctr, 365 Fifth Ave, New York, NY 10016 USA.
+EM ewarshaw@gradcenter.cuny.edu
+CR Abadie A, 2002, J AM STAT ASSOC, V97, P284, DOI 10.1198/016214502753479419
+   Ait-Sahalia Y, 2016, J FINANC ECONOMET, V14, P1, DOI 10.1093/jjfinec/nbv024
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Ciner C, 2006, Q REV ECON FINANC, V46, P338, DOI 10.1016/j.qref.2006.02.007
+   Creal D, 2013, J APPL ECONOMET, V28, P777, DOI 10.1002/jae.1279
+   Diebold FX, 1999, REV ECON STAT, V81, P661, DOI 10.1162/003465399558526
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Ji Q., 2017, 201759 U PRET
+   Joe H, 2005, J MULTIVARIATE ANAL, V94, P401, DOI 10.1016/j.jmva.2004.06.003
+   Joe H., 1996, 166 U BRIT COL
+   Joe H., 1997, MONOGRAPHS STAT APPL, V73
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Lahrech A, 2013, N AM J ECON FINANC, V25, P94, DOI 10.1016/j.najef.2013.04.001
+   Mensi W, 2017, J BANK FINANC, V75, P258, DOI 10.1016/j.jbankfin.2016.11.017
+   Ning C., 2009, 0099 RYERS U
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2006, J APPL ECONOM, V21, P147, DOI 10.1002/jae.865
+   Phengpis C, 2006, J MULTINATL FINANC M, V16, P315, DOI 10.1016/j.mulfin.2005.08.003
+   Politis D. N., 2004, ECON REV, V23, P53, DOI [10.1081/ETC-120028836, DOI 10.1081/ETC-120028836]
+   POLITIS DN, 1994, J AM STAT ASSOC, V89, P1303, DOI 10.2307/2290993
+   Reboredo JC, 2016, J BANK FINANC, V62, P76, DOI 10.1016/j.jbankfin.2015.10.011
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Remillard B, 2017, ECONOMETRICS, V5, DOI 10.3390/econometrics5010013
+   Rivers D., 2002, ECONOMET J, V5, P1, DOI DOI 10.1111/1368-423X.T01-1-00071
+   Sklar M., 1959, FONCTIONS REPARTITIO, V8, P229
+NR 28
+TC 0
+Z9 0
+U1 1
+U2 6
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD JAN
+PY 2019
+VL 47
+BP 237
+EP 251
+DI 10.1016/j.najef.2018.12.012
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA HK1LF
+UT WOS:000457665700016
+DA 2019-12-28
+ER
+
+PT J
+AU Cohen, RD
+   Humphries, J
+   Veau, S
+   Francis, R
+AF Cohen, Ruben D.
+   Humphries, Jonathan
+   Veau, Sabrina
+   Francis, Roger
+TI An investigation of cyber loss data and its links to operational risk
+SO JOURNAL OF OPERATIONAL RISK
+LA English
+DT Article
+DE operational resilience; nonfinancial risk; dimensional analysis; risk
+   taxonomy; loss data; scenario analysis
+AB Cyber risk is one of the most challenging areas of risk, not only because it is relatively nascent but also because it remains an elusive moving target due to an everevolving threat landscape. A lack of structured data and the systemic implications of multifaceted impacts of overlapping risk frameworks are additional factors that make this risk difficult to quantify. As a starting point for overcoming this challenge, our paper considers a potential definition of this risk type, encompassing confidentiality, integrity and availability; the key components of a cyber-risk framework; a taxonomy to help establish a common framework for data collection to aid quantification; and the key quantification challenges. It then focuses on quantifying the direct financial and compensatory losses emanating from cyber risks. To help us carry this out, dimensional analysis is incorporated in the same manner as it has been applied to operational losses; this enables the identification of any similarities and/or gross deviations between the profiles of cyber and non-cyber operational losses. In all, considering the limited amount of cyber data available, this analysis shows that (1) a taxonomy for cyber risk that maps directly to operational risk might be a worthwhile exercise; (2) cyber loss data has a fundamental risk profile similar to that of non-cyber operational risk losses, with both following the same trend; and (3) the underlying risk profile related to cyber losses has not changed materially over time. These findings come with the added implications that (1) mapping the taxonomies of cyber and operational risk against each other could be conducted more objectively; (2) operational risk modeling techniques that have been developed over the past decade or so could be used in the same way to assess the direct financial impact of cyber risk as a starting point; and (3) although there has been an increase in both the frequency and the severity of cyber losses over the past few years, there has not been a major paradigm shift in their fundamental risk profile over the same period of time.
+C1 [Cohen, Ruben D.; Humphries, Jonathan; Veau, Sabrina; Francis, Roger] Aon Ctr, Leadenhall Bldg,122 Leadenhall St, London EC3V 4AN, England.
+RP Cohen, RD (reprint author), Aon Ctr, Leadenhall Bldg,122 Leadenhall St, London EC3V 4AN, England.
+EM ruben.cohen@aon.com; jonathan.humphries@aon.com; sabrina.veau@aon.com;
+   rfrancis@cfcunderwriting.com
+CR Bank of England, 2018, SYST RISK SURV RES 2
+   Basel Committee on Banking Supervision, 2017, BAS 3 FIN POSTCR REF
+   Basel Committee on Banking Supervision, 2004, INT CONV CAP MEAS CA
+   Biener C, 2015, GENEVA PAP R I-ISS P, V40, P131, DOI 10.1057/gpp.2014.19
+   Bohme R., 2017, VARIANCE J, V12, P161
+   Bohme R., 2010, WORKING PAPER
+   Bouveret A., 2018, 18143 INT MON FUND, DOI [10.5089/9781484360750.001, DOI 10.5089/9781484360750.001]
+   Cebula J. J., 2010, TECHNICAL REPORT
+   Chief Risk Officers Forum, 2016, CONC PAP PROP CAT ME
+   Cohen RD, 2018, J OPER RISK, V13, P59, DOI 10.21314/JOP.2018.207
+   Cohen RD, 2016, J OPER RISK, V11, P71, DOI 10.21314/JOP.2016.178
+   Embrechts P, 2018, J OPER RISK, V13, P17, DOI 10.21314/JOP.2018.212
+   Enclave Security, 2015, OP THREAT TAX
+   European Union Agency for Cybersecurity, 2016, THREAT TAX TOOL STRU
+   Federal Bureau of Investigation, 2017, INT CRIM REP
+   Jacobs J., 2014, ANAL PONEMON COST DA
+   Milkau U, 2013, J OPER RISK, V8, P35, DOI 10.21314/JOP.2013.119
+   Nagafuji N., 2011, SIMPLE FORMULA OPERA
+   National Institute of Standards and Technology, 2018, FRAM IMPR CRIT INFR
+   Peters G. W., 2018, FINTECH GROWTH DEREG, DOI [10.2139/ssrn.3200155, DOI 10.2139/SSRN.3200155]
+   Romanosky S, 2016, J CYBERSECURITY, V2, P121, DOI 10.1093/cybsec/tyw001
+   Verizon, 2010, VERIS VOC EV REC INC
+   Zipf G.K., 1949, HUMAN BEHAV PRINCIPL
+NR 23
+TC 0
+Z9 0
+U1 2
+U2 2
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1744-6740
+EI 1755-2710
+J9 J OPER RISK
+JI J. Oper. Risk.
+PY 2019
+VL 14
+IS 3
+BP 1
+EP 25
+DI 10.21314/JOP.2019.228
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA JA3TJ
+UT WOS:000487749500002
+DA 2019-12-28
+ER
+
+PT J
+AU Liu, YZ
+AF Liu, Yunzhe
+TI Inter-bank Risk Contagion Effect under the Framework of Animal
+   Infectious Disease Model
+SO REVISTA CIENTIFICA-FACULTAD DE CIENCIAS VETERINARIAS
+LA English
+DT Article
+DE Animal Infectious Disease Model; Risk Contagion Effect; Capital Adequacy
+   Ratio; Number of Rounds of Infection
+AB With the rapid development of the domestic and international economy, the development, stability and improvement of the financial industry has become an increasingly important research field. This paper studies the risk transmission mechanism of the interbank market by establishing an animal infectious disease model. From the results of empirical simulations, the types and scales of banks, the scale of the industry, the capital adequacy ratio and the default loss rate are all related to the risk contagion of the interbank market influences. In this paper, the inter-bank market is the main target of the study. The data of interbank borrowing and interbank deposits disclosed in the 2016-2018 annual report of domestic large, medium and small banks are selected to estimate the most likely interbank market lending matrix. The experimental results show that once the bankruptcy of Bank of China and Industrial and Commercial Bank as a systemically important bank will cause a certain scale of damage to the banking system; urban commercial banks and rural commercial banks are most vulnerable to risk contagion and fall into crisis; Banks are related to their inter-bank assets size and capital adequacy ratio and net capital; once risk is formed, the more rounds of infection, the greater the impact on the banking system.
+C1 [Liu, Yunzhe] Jilin Univ, Finance & Econ Int Econ & Trade Inst, Changchun 130000, Jilin, Peoples R China.
+RP Liu, YZ (reprint author), Jilin Univ, Finance & Econ Int Econ & Trade Inst, Changchun 130000, Jilin, Peoples R China.
+EM liuyunzhe@jlufe.edu.cn
+CR Barsotti F, 2016, INSUR MATH ECON, V71, P317, DOI 10.1016/j.insmatheco.2016.09.008
+   Bolton B, 2016, ADV ACCOUNT, V34, P27, DOI 10.1016/j.adiac.2016.07.004
+   Ding ZH, 2017, APPL ENERG, V187, P27, DOI 10.1016/j.apenergy.2016.11.037
+   Grabowski W, 2016, EMERG MARK FINANC TR, V52, P2706, DOI 10.1080/1540496X.2016.1216931
+   Hamami D, 2017, J INTELL INF SYST, V2017, P1
+   [黄文彬 Huang Wenbin], 2017, [系统工程理论与实践, Systems Engineering-Theory & Practice], V37, P1982
+   Le CHA, 2016, EMERG MARK FINANC TR, V52, P237, DOI 10.1080/1540496X.2015.1021643
+   Lee YW, 2014, J CREDIT RISK, V10, P33, DOI 10.21314/JCR.2014.172
+   Li X, 2018, CLUSTER COMPUT, V21, P907, DOI 10.1007/s10586-017-0951-z
+   McCluskey CC, 2016, MATH BIOSCI ENG, V13, P381, DOI 10.3934/mbe.2015008
+   Thater M, 2018, MATH BIOSCI ENG, V15, P485, DOI 10.3934/mbe.2018022
+   Tiwari A. K., 2018, ENERG ECON, V70, P382
+   Xu JH, 2016, APPL MATH MODEL, V40, P1685, DOI 10.1016/j.apm.2015.09.007
+   Xu R, 2016, MATH METHOD APPL SCI, V39, P3294, DOI 10.1002/mma.3774
+   Zhang B, 2017, J CELL MOL MED, V21, P1329, DOI 10.1111/jcmm.13063
+   Zhang WP, 2017, SAUDI J BIOL SCI, V24, P563, DOI 10.1016/j.sjbs.2017.01.027
+   Zhu M, 2017, MATH BIOSCI ENG, V14, P1565, DOI 10.3934/mbe.2017081
+NR 17
+TC 0
+Z9 0
+U1 0
+U2 0
+PU UNIV ZULIA, FACULTAD CIENCIAS VETERINARIAS
+PI MARACAIBO
+PA UNIVERSIDAD DEL ZULIA, MARACAIBO, VENEZUELA
+SN 0798-2259
+J9 REV CIENT-FAC CIEN V
+JI Rev. Cient.-Fac. Cienc. Vet.
+PY 2019
+VL 29
+IS 1
+BP 57
+EP 66
+PG 10
+WC Veterinary Sciences
+SC Veterinary Sciences
+GA IC4HG
+UT WOS:000470925700009
+DA 2019-12-27
+ER
+
+PT J
+AU Nanda, V
+   Wu, W
+   Zhou, X
+AF Nanda, Vikram
+   Wu, Wei
+   Zhou, Xing (Alex)
+TI Investment Commonality across Insurance Companies: Fire Sale Risk and
+   Corporate Yield Spreads
+SO JOURNAL OF FINANCIAL AND QUANTITATIVE ANALYSIS
+LA English
+DT Article
+ID SYSTEMIC RISK; CREDIT RATINGS; COSTS; DEBT
+AB Insurance companies often follow highly correlated investment strategies. As major investors in corporate bonds, their investment commonalities subject investors to fire sale risk when regulatory restrictions prompt widespread divestment of a bond following a rating downgrade. Reflective of fire sale risk, the clustering of insurance companies in a bond has significant explanatory power for yield spreads, controlling for liquidity, credit risk, and other factors. The effect of insurer clustering on bond yield spreads is more evident for bonds held to a greater extent by capital-constrained insurance companies, those with ratings closer to National Association of Insurance Commissioners risk categories with larger capital requirements, and during the financial crisis.
+C1 [Nanda, Vikram] Univ Texas Dallas, Jindal Sch Management, Richardson, TX 75083 USA.
+   [Wu, Wei] Calif State Polytech Univ Pomona, Coll Business Adm, Pomona, CA 91768 USA.
+   [Zhou, Xing (Alex)] Fed Reserve Board Governors, Washington, DC USA.
+RP Nanda, V (reprint author), Univ Texas Dallas, Jindal Sch Management, Richardson, TX 75083 USA.
+EM vikram.nanda@utdallas.edu; weiwu@cpp.edu; xing.zhou@frb.gov
+OI nanda, vikram/0000-0002-0450-1609
+CR Acharya VV, 2014, WILEY FINANC SER, P151
+   Acharya VV, 2011, WILEY FINANC SER, P241
+   Ambrose B. W., 2008, J FIXED INCOME, V18, P72
+   American Academy of Actuaries C1 Work Group, 2015, MOD CONSTR DEV RBC F
+   Bao J, 2011, J FINANC, V66, P911, DOI 10.1111/j.1540-6261.2011.01655.x
+   Becker B, 2015, J FINANC, V70, P1863, DOI 10.1111/jofi.12199
+   Becker B, 2011, J FINANC ECON, V101, P493, DOI 10.1016/j.jfineco.2011.03.012
+   BLISS RR, 1997, ADV FUT OPT, V9, P197
+   Blume ME, 1998, J FINANC, V53, P1389, DOI 10.1111/0022-1082.00057
+   Cai F, 2019, J FINANC ECON, V131, P139, DOI 10.1016/j.jfineco.2018.07.012
+   Campbell JY, 2003, J FINANC, V58, P2321, DOI 10.1046/j.1540-6261.2003.00607.x
+   Chen L, 2007, J FINANC, V62, P119, DOI 10.1111/j.1540-6261.2007.01203.x
+   Chiang C, 2016, WORKING PAPER
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   Cornaggia J, 2013, REV FINANC STUD, V26, P2229, DOI 10.1093/rfs/hht041
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   Cummins JD, 2014, J RISK INSUR, V81, P489, DOI 10.1111/jori.12039
+   de Jong F, 2012, Q J FINANC, V2, DOI 10.1142/S2010139212500061
+   Dhakal R, 2016, INT CONF RENEW ENERG, P1001, DOI 10.1109/ICRERA.2016.7884485
+   Edwards AK, 2007, J FINANC, V62, P1421, DOI 10.1111/j.1540-6261.2007.01240.x
+   Ellul A, 2011, J FINANC ECON, V101, P596, DOI 10.1016/j.jfineco.2011.03.020
+   Elton EJ, 2001, J FINANC, V56, P247, DOI 10.1111/0022-1082.00324
+   Getmansky M, 2016, WORKING PAPER
+   Goldstein M. A., 2012, WORKING PAPER
+   Griffin JM, 2012, J FINANC, V67, P1293, DOI 10.1111/j.1540-6261.2012.01748.x
+   Harrington S., 2011, WORKING PAPER
+   Harrington SE, 2014, WILEY FINANC SER, P137
+   Harrington SE, 2009, J RISK INSUR, V76, P785, DOI 10.1111/j.1539-6975.2009.01330.x
+   He J, 2012, J FINANC, V67, P2097, DOI 10.1111/j.1540-6261.2012.01782.x
+   Huang J, 2014, WORKING PAPER
+   Huang JZ, 2012, REV ASSET PRICING ST, V2, P153, DOI 10.1093/rapstu/ras011
+   Jiang J, 2012, J FINANC ECON, V105, P607, DOI 10.1016/j.jfineco.2012.04.001
+   Kedia S, 2017, J FINANC ECON, V124, P632, DOI 10.1016/j.jfineco.2017.03.007
+   Kedia S, 2014, J FINANC ECON, V114, P293, DOI 10.1016/j.jfineco.2014.07.005
+   Kisgen DJ, 2006, J FINANC, V61, P1035, DOI 10.1111/j.1540-6261.2006.00866.x
+   Kisgen DJ, 2010, REV FINANC STUD, V23, P4324, DOI 10.1093/rfs/hhq077
+   Koijen RSJ, 2015, AM ECON REV, V105, P445, DOI 10.1257/aer.20121036
+   Longstaff FA, 2005, J FINANC, V60, P2213, DOI 10.1111/j.1540-6261.2005.00797.x
+   LONGSTAFF FA, 1995, J FINANC, V50, P789, DOI 10.2307/2329288
+   Manconi A, 2016, REV FINANC, V20, P127, DOI 10.1093/rof/rfv010
+   Massa M, 2011, WORKING PAPER
+   Mathis J, 2009, J MONETARY ECON, V56, P657, DOI 10.1016/j.jmoneco.2009.04.004
+   NELSON CR, 1987, J BUS, V60, P473, DOI 10.1086/296409
+   Opp CC, 2013, J FINANC ECON, V108, P46, DOI 10.1016/j.jfineco.2012.10.011
+   Paulson A, 2014, WILEY FINANC SER, P61
+   Schwarcz D, 2014, U CHICAGO LAW REV, V81, P1569
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Staiger D, 1997, ECONOMETRICA, V65, P557, DOI 10.2307/2171753
+   Tyler Ralph, 2009, J BUSINESS TECHNOLOG, V4, P349
+NR 50
+TC 0
+Z9 0
+U1 4
+U2 4
+PU CAMBRIDGE UNIV PRESS
+PI NEW YORK
+PA 32 AVENUE OF THE AMERICAS, NEW YORK, NY 10013-2473 USA
+SN 0022-1090
+EI 1756-6916
+J9 J FINANC QUANT ANAL
+JI J. Financ. Quant. Anal.
+PD DEC
+PY 2019
+VL 54
+IS 6
+BP 2543
+EP 2574
+DI 10.1017/S0022109018001515
+PG 32
+WC Business, Finance; Economics
+SC Business & Economics
+GA JO1CF
+UT WOS:000497322300009
+DA 2019-12-28
+ER
+
+PT J
+AU Zhou, Q
+   Sun, SL
+   Liu, Q
+AF Zhou, Qi
+   Sun, Shaolong
+   Liu, Qian
+TI The capital flow of stock market studies based on epidemic model with
+   double delays
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Epidemic model; Fund contagion; Herd behaviour; Parameter inversion
+ID GLOBAL STABILITY; CONVERGENCE; PERMANENCE; CONTAGION
+AB Herd behaviour, or contagion behaviour, has been proven to exist in the Chinese stock markets. Based on that, this paper seeks to discover the implied mechanism that represents how capital flowed in the market by using an epidemic model. First, we apply the Lyapunov function to prove the locally asymptotical stability and globally asymptotical stability of the epidemic model that is constructed. Second, we use the CSAD (cross-sectional absolute deviation of returns) method to test for the existence of herd behaviour in China's stock markets. Finally, starting with the risk-free interest rate, we analyse each parameter of the financial epidemic model. We conclude that a case such as the endemic equilibrium (theta > 1) exists in the corresponding epidemic model of China's stock markets, and the local equilibrium and global equilibrium are included. The herd behaviour provides us evidence for further studying the funds' contagion behaviour. We find that when the effective infectious rate of funds (lambda) equals 0.08 (a special economic node), its value corresponds to the capital saturation level (i = 15%). We also find that in the case of normal market fluctuations, the removal rate of funds (gamma) ranges from 0.005 to 0.03. In addition, the study of the delay items shows that the first delay item contributes greatly to the stability of the equilibrium point, and thus we can control the size of the delay items with the policy change in order to achieve the purpose of macro-economic regulation. The result of the parameter inversion algorithm has no difference from the simulation results. It shows clearly that the application of the Bayesian neural network on parameter inversion is feasible. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Zhou, Qi; Liu, Qian] Sun Yat Sen Univ, Sun Yat Sen Business Sch, Guangzhou 510275, Guangdong, Peoples R China.
+   [Sun, Shaolong] Chinese Acad Sci, Acad Math & Syst Sci, Beijing 100190, Peoples R China.
+   [Sun, Shaolong] Univ Chinese Acad Sci, Sch Econ & Management, Beijing 100190, Peoples R China.
+   [Sun, Shaolong] City Univ Hong Kong, Sch Data Sci, Kowloon, Tat Chee Ave, Hong Kong, Peoples R China.
+RP Sun, SL (reprint author), Chinese Acad Sci, Acad Math & Syst Sci, Beijing 100190, Peoples R China.
+EM sunshl@amss.ac.cn
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71501176]
+FX This research is supported by the National Natural Science Foundation of
+   China (Project No: 71501176). Authors would like to express their
+   sincere appreciation to the editors. Authors would like to express their
+   sincere appreciation to the four referees in making valuable comments
+   and suggestions to this paper. Their comments and suggestions have
+   improved the quality of the paper immensely.
+CR Aizenman J, 2013, J INT MONEY FINANC, V39, P28, DOI 10.1016/j.jimonfin.2013.06.018
+   Alfaro L, 2007, CAPITAL CONTROLS CAP
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Beretta E, 1997, NONLINEAR ANAL-THEOR, V28, P1909, DOI 10.1016/S0362-546X(96)00035-1
+   Cooke KL, 1996, J MATH BIOL, V35, P240, DOI 10.1007/s002850050051
+   DEBONDT WFM, 1985, J FINANC, V40, P793, DOI 10.1111/j.1540-6261.1985.tb05004.x
+   Feng L, 2017, EMERG MARK FINANC TR, V53, P2215, DOI 10.1080/1540496X.2016.1180283
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Jeanne O, 2012, AM ECON REV, V102, P203, DOI 10.1257/aer.102.3.203
+   Jiang J., 2018, PHYSICA A
+   Jr. Rogelio V. Mercado, 2011, International Economic Journal, V25, P655
+   Kim D, 2017, INT REV ECON FINANC, V50, P8, DOI 10.1016/j.iref.2017.03.022
+   Lee HH, 2013, J JPN INT ECON, V30, P76, DOI 10.1016/j.jjie.2013.10.002
+   Li RQ, 2018, PHYSICA A, V510, P713, DOI 10.1016/j.physa.2018.07.025
+   Liu BW, 2015, APPL MATH LETT, V49, P113, DOI 10.1016/j.aml.2015.04.012
+   Liu WP, 2018, APPL MATH MODEL, V63, P491, DOI 10.1016/j.apm.2018.07.010
+   Ma WB, 2004, APPL MATH LETT, V17, P1141, DOI 10.1016/j.aml.2003.11.005
+   Ma WB, 2002, TOHOKU MATH J, V54, P581, DOI 10.2748/tmj/1113247650
+   Ma Z. E., 2004, MATH MODEL RES DYNAM
+   Niu MF, 2016, APPL MATH MODEL, V40, P4079, DOI 10.1016/j.apm.2015.11.030
+   Pires MA, 2017, PHYSICA A, V467, P167, DOI 10.1016/j.physa.2016.10.004
+   SHEFRIN H, 1985, J FINANC, V40, P777, DOI 10.1111/j.1540-6261.1985.tb05002.x
+   SHILLER RJ, 1981, J ECONOMETRICS, V16, P71, DOI 10.1016/0304-4076(81)90076-2
+   Steinhauer DA, 2013, NATURE, V499, P412, DOI 10.1038/nature12455
+   Tian BC, 2017, APPL MATH MODEL, V50, P432, DOI 10.1016/j.apm.2017.05.040
+   Wang JR, 2014, PHYSICA A, V410, P268, DOI 10.1016/j.physa.2014.05.011
+   Wang WM, 2012, NONLINEAR ANAL-REAL, V13, P2240, DOI 10.1016/j.nonrwa.2012.01.018
+   Zhang TL, 2008, NONLINEAR ANAL-REAL, V9, P1409, DOI 10.1016/j.nonrwa.2007.03.010
+NR 28
+TC 0
+Z9 0
+U1 3
+U2 3
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD JUL 15
+PY 2019
+VL 526
+AR 120733
+DI 10.1016/j.physa.2019.03.098
+PG 18
+WC Physics, Multidisciplinary
+SC Physics
+GA IH5AP
+UT WOS:000474503800069
+DA 2019-12-27
+ER

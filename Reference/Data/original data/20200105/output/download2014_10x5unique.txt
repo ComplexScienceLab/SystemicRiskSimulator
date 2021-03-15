@@ -1,0 +1,565 @@
+
+PT J
+AU Goyer, M
+   del Real, RV
+AF Goyer, Michel
+   del Real, Rocio Valdivielso
+TI Protection of domestic bank ownership in France and Germany: The
+   functional equivalency of institutional diversity in takeovers
+SO REVIEW OF INTERNATIONAL POLITICAL ECONOMY
+LA English
+DT Article
+DE institutions; banks; complex causation; varieties of capitalism;
+   takeovers; state intervention/regulation
+ID CORPORATE GOVERNANCE; POLITICAL-ECONOMY; CAPITALISM; CRISIS;
+   TRANSFORMATION; VARIETIES; INVESTORS; SYSTEMS; COUNTRY; FINANCE
+AB We investigate the character of the market for corporate control (i.e. takeovers) in French and German banking. The key feature of this character is the marked ability of French and German banks to resist unsolicited takeover bids, especially - although not exclusively- those from foreign competitors. We present an institutional perspective to account for the restrained character of takeovers in French and German banking. Our perspective is composed of two elements. First, institutional arrangements are important since they structure power relations among firm stakeholders by providing opportunities, as well as imposing constraints, to influence the decision-making process in which takeover transactions take place. Second, institutional arrangements provide firm stakeholders with several potential opportunities, not just one, to block unsolicited bids since takeover contests are composed of sequences of decisions for which approval is needed at each stage. French and German banks have used different mixes of institutional arrangements, themselves located at different stages of takeover transactions, to secure restrained markets for corporate control. Our institutional analysis, in turn, also illustrates an important shortcoming of banking sector protectionism, namely the contribution of protection from unsolicited takeover bids to the building of banks carrying systemic risks.
+C1 [Goyer, Michel] Univ Birmingham, Birmingham Business Sch, Birmingham B15 2TT, W Midlands, England.
+   [del Real, Rocio Valdivielso] Univ Warwick, Ctr Globalisat & Regionalisat, Coventry CV4 7AL, W Midlands, England.
+RP Goyer, M (reprint author), Univ Birmingham, Birmingham Business Sch, Birmingham B15 2TT, W Midlands, England.
+CR [Anonymous], 2013, GUARDIAN
+   Atanassov J, 2009, J FINANC, V64, P341, DOI 10.1111/j.1540-6261.2008.01436.x
+   Bastasin C., 2012, SAVING EUROPE NATL P
+   Bebchuk LA, 1999, COLUMBIA LAW REV, V99, P1168, DOI 10.2307/1123454
+   Blyth Mark, 2013, AUSTERITY HIST DANGE
+   Braumoeller BF, 2003, POLIT ANAL, V11, P209, DOI 10.1093/pan/mpg012
+   BRUNNER A. D., 2004, 233 INT MON FUND
+   Campbell J., 2004, I CHANGE GLOBALIZATI
+   Capron L, 2009, STRATEGIC MANAGE J, V30, P803, DOI 10.1002/smj.768
+   Carletti E., 2009, COMPETITION POLICY E
+   CLARK GL, 2007, GEOGRAPHY FINANCE CO
+   Clift B, 2009, JCMS-J COMMON MARK S, V47, P55, DOI 10.1111/j.1468-5965.2008.00801.x
+   Culpepper P, 2011, QUIET POLITICS BUSIN
+   Culpepper PD, 2005, WORLD POLIT, V57, P173, DOI 10.1353/wp.2005.0016
+   Davis G.F., 2012, SMALL WORLDS CORPORA, P203
+   De Grauwe P, 2013, ANNU REV POLIT SCI, V16, P153, DOI 10.1146/annurev-polisci-060911-085923
+   DEEG R, 1999, FINANCIAL CAPITALISM
+   Deeg R, 2005, GERMAN POLITICS, V14, P332
+   Degryse C., 2012, 201214 EUR TRAD UN I, P14
+   DOBBIN F, 1994, FORGING IND POLICY U
+   Donnelly S, 2014, REV INT POLIT ECON, V21, P980, DOI 10.1080/09692290.2013.801021
+   Dyck A, 2004, J FINANC, V59, P537, DOI 10.1111/j.1540-6261.2004.00642.x
+   Epstein RA, 2014, REV INT POLIT ECON, V21, P847, DOI 10.1080/09692290.2013.824913
+   EU Commission, 2006, REP PROP PRINC EUR U
+   Fligstein N., 1990, TRANSFORMATION CORPO
+   Frieden J., 1988, J PUBLIC POLICY, V8, P296
+   GARRETT G, 1995, INT ORGAN, V49, P627, DOI 10.1017/S0020818300028460
+   Goddard J., 2010, OXFORD HDB BANKING, P807
+   Goergen M, 2005, OXFORD REV ECON POL, V21, P243, DOI 10.1093/oxrep/gri015
+   Goldstein M, 2011, 112 PET I INT EC
+   Gordon JN, 2004, REFORMING CO TAKEOVE
+   Gourevitch PA, 2005, POLITICAL POWER AND CORPORATE CONTROL: THE NEW GLOBAL POLITICS OF CORPORATE GOVERNANCE, P1
+   Goyer M, 2011, CONTINGENT CAPITAL S
+   Goyer M, 2006, POLIT SOC, V34, P399, DOI 10.1177/0032329206290427
+   Goyer M, 2011, CORP GOV-OXFORD, V19, P562, DOI 10.1111/j.1467-8683.2011.00880.x
+   Grittersova J, 2014, REV INT POLIT ECON, V21, P339, DOI 10.1080/09692290.2012.742920
+   Grossman E, 2014, COMP POLIT STUD, V47, P574, DOI 10.1177/0010414013488540
+   Grossman E, 2011, JCMS-J COMMON MARK S, V49, P413, DOI 10.1111/j.1468-5965.2010.02145.x
+   Hall P, 1986, GOVERNING EC POLITIC
+   Hall Peter, 2003, COMP HIST ANAL SOCIA
+   Hall PA, 2012, GER POLIT, V21, P355, DOI 10.1080/09644008.2012.739614
+   Hall PA, 2009, SOCIO-ECON REV, V7, P7, DOI 10.1093/ser/mwn020
+   Hall Peter A., 2001, VARIETIES CAPITALISM
+   Hancke B., 2002, LARGE FIRMS I CHANGE
+   Hancke Bob, 2013, UNIONS CENTRAL BANKS
+   Hardie I., 2013, MARKET BASED BANKING
+   Hardie I, 2009, JCMS-J COMMON MARK S, V47, P1017, DOI 10.1111/j.1468-5965.2009.02033.x
+   HAVEMAN HA, 1994, AM J SOCIOL, V100, P104, DOI 10.1086/230501
+   HERNANDEZLOPEZ E, 2003, FORDHAM J CORPORATE, V9, P127
+   Hoepner M., 2007, COMP POLIT, V39, P401
+   IMF, 2011, 11169 IMF
+   Immergut E., 1992, HLTH POLITICS I INTE
+   Jabko N, 2012, REV INT POLIT ECON, V19, P562, DOI 10.1080/09692290.2011.638896
+   Jeffers E, 2013, COMP ECON STUD, V55, P479, DOI 10.1057/ces.2013.13
+   KATZENSTEIN PJ, 1977, INT ORGAN, V31, P587, DOI 10.1017/S0020818300018622
+   King DR, 2004, STRATEGIC MANAGE J, V25, P187, DOI 10.1002/smj.371
+   Kogut B, 2001, AM SOCIOL REV, V66, P317, DOI 10.2307/3088882
+   LEVY J, 1999, TOCQUEVILLES REVENGE
+   Levy J., 2005, CONTINUITY I CHANGE
+   LORIAUX M, 1991, FRANCE HEGEMONY INT
+   Mahoney J, 2008, COMP POLIT STUD, V41, P412, DOI 10.1177/0010414007313115
+   Morin F., 1998, OECD P CORP GOV STAT
+   Morin F, 1998, MODELE FRANCAIS DETE
+   OECD, 2004, OECD EC OUTLOOK
+   RAGIN C, 1987, COMP METHOD
+   Roe M, 1993, DEAL DECADE, P163
+   Roe M. J., 1999, EMPLOYEES CORPORATE
+   Roe MJ, 2000, STANFORD LAW REV, V53, P539, DOI 10.2307/1229469
+   ROMANO R, 1987, VA LAW REV, V73, P111, DOI 10.2307/1073029
+   Rossi S, 2004, J FINANC ECON, V74, P277, DOI 10.1016/j.jfineco.2003.10.001
+   Schmidt V. A, 1996, STATE MARKET TRANSFO
+   Schneper WD, 2004, ADMIN SCI QUART, V49, P263
+   Soskice David, 1999, CONTINUITY CHANGE CO
+   Stigler GJ, 1983, ORG IND
+   Story J., 1997, POLITICAL EC FINANCI
+   Thatcher M, 2002, J EUR PUBLIC POLICY, V9, P954, DOI 10.1080/1350176022000046445
+   Thelen K., 1992, STRUCTURING POLITICS
+   Vogel SK, 1998, FREER MARKETS MORE R
+   Weber B, 2011, SOCIO-ECON REV, V9, P639, DOI 10.1093/ser/mwr009
+   Zimmermann H, 2012, GER POLIT, V21, P484, DOI 10.1080/09644008.2012.742888
+   ZYSMAN J, 1977, POLITICAL STRATEGIES
+   Zysman John, 1983, GOVT MARKETS GROWTH
+NR 82
+TC 7
+Z9 7
+U1 0
+U2 25
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 0969-2290
+EI 1466-4526
+J9 REV INT POLIT ECON
+JI Rev. Int. Polit. Econ.
+PD AUG
+PY 2014
+VL 21
+IS 4
+BP 790
+EP 819
+DI 10.1080/09692290.2014.910539
+PG 30
+WC Economics; International Relations; Political Science
+SC Business & Economics; International Relations; Government & Law
+GA AJ4FT
+UT WOS:000337628700002
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Weiss, GNF
+   Neumann, S
+   Bostandzic, D
+AF Weiss, Gregor N. F.
+   Neumann, Sascha
+   Bostandzic, Denefa
+TI Systemic risk and bank consolidation: International evidence
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE M&A; Banks; Consolidation; Systemic risk; Lower tail dependence;
+   Marginal expected shortfall
+ID DEPOSIT-INSURANCE; MARKET POWER; MERGERS; PERFORMANCE; COMPETITION;
+   MANAGEMENT; IMPACT; TIME; LAW
+AB This paper analyzes the systemic risk effects of bank mergers to test the "concentration-fragility" hypothesis. We use the marginal expected shortfall as well as the lower tail dependence between a bank's stock returns and a relevant bank sector index to capture the merger-related change in an acquirer's contribution to systemic risk. In our empirical analysis of a dataset of international domestic and cross-border mergers, we find clear evidence for a significant increase in the merging banks', the combined banks' as well as their competitors' contribution to systemic risk following mergers, thus confirming the "concentration-fragility" hypothesis. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Weiss, Gregor N. F.] Tech Univ Dortmund, D-44227 Dortmund, Germany.
+   [Neumann, Sascha; Bostandzic, Denefa] Ruhr Univ Bochum, Lehrstuhl Finanzierung & Kreditwirtschaft, D-44780 Bochum, Germany.
+RP Weiss, GNF (reprint author), Tech Univ Dortmund, Otto Hahn Str 6a, D-44227 Dortmund, Germany.
+EM gregor.weiss@tu-dortmund.de; sascha.neumann@rub.de;
+   denefa.bostandzic@rub.de
+CR Acharya V., 2010, WORKING PAPER
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Aebi V, 2012, J BANK FINANC, V36, P3213, DOI 10.1016/j.jbankfin.2011.10.020
+   AGRAWAL A, 1992, J FINANC, V47, P1605, DOI 10.2307/2328956
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Amihud Y, 2002, J INT MONEY FINANC, V21, P857, DOI 10.1016/S0261-5606(02)00026-8
+   Baker M, 2002, J FINANC, V57, P1, DOI 10.1111/1540-6261.00414
+   Barth J.R., 2006, RETHINKING BANK REGU
+   Bartram SM, 2012, J FINANC, V67, P1329, DOI 10.1111/j.1540-6261.2012.01749.x
+   Beck T, 2006, J BANK FINANC, V30, P1581, DOI 10.1016/j.jbankfin.2005.05.010
+   Beck T, 2006, NBER CONF R, P193
+   Beine M, 2010, J BANK FINANC, V34, P184, DOI 10.1016/j.jbankfin.2009.07.014
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   BENSTON GJ, 1995, J MONEY CREDIT BANK, V27, P777, DOI 10.2307/2077749
+   Berger A. N., 2000, FINANCE EC DISCUSSIO
+   Besanko D, 1993, CAPITAL MARKETS FINA
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Boot AWA, 2000, J FINANC, V55, P679, DOI 10.1111/0022-1082.00223
+   Boyd JH, 2005, J FINANC, V60, P1329, DOI 10.1111/j.1540-6261.2005.00763.x
+   Brownlees C., 2012, WORKING PAPER
+   Brunnermeier M., 2012, WORKING PAPER
+   Brunnermeier M, 2010, WORKING PAPER
+   Caminal R, 2002, INT J IND ORGAN, V20, P1341, DOI 10.1016/S0167-7187(01)00092-3
+   Carbo-Valverde S, 2008, J FINANC SERV RES, V34, P151, DOI 10.1007/s10693-008-0032-9
+   Carbo-Valverde S, 2012, J MONEY CREDIT BANK, V44, P1609, DOI 10.1111/j.1538-4616.2012.00546.x
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   De Nicolo G, 2002, J BANK FINANC, V26, P861, DOI 10.1016/S0378-4266(02)00211-X
+   Demirguc-Kunt A, 2008, J FINANC INTERMED, V17, P407, DOI 10.1016/j.jfi.2007.03.009
+   DENICOLO G, 2004, FINANCIAL MARKETS I, V13, P173, DOI DOI 10.1111/FMII.2004.13.ISSUE-4
+   Diamond DW, 2009, AM ECON REV, V99, P606, DOI 10.1257/aer.99.2.606
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   Dias A, 2009, EUR J FINANC, V15, P619, DOI 10.1080/13518470701705579
+   Djankov S, 2008, J FINANC ECON, V88, P430, DOI 10.1016/j.jfineco.2007.02.007
+   European Central Bank, 2000, MERG ACQ INV EU BANK
+   Fahlenbrach R, 2012, J FINANC, V67, P2139, DOI 10.1111/j.1540-6261.2012.01783.x
+   Furfine CH, 2011, J CORP FINANC, V17, P832, DOI 10.1016/j.jcorpfin.2011.03.003
+   Gandhi P., 2012, SIZE ANOMALIES US BA
+   Genest C, 2009, INSUR MATH ECON, V44, P199, DOI 10.1016/j.insmatheco.2007.10.005
+   Group of Ten, 2001, WORKING PAPER
+   Huang X, 2011, WORKING PAPER
+   Kane EJ, 2000, J MONEY CREDIT BANK, V32, P671, DOI 10.2307/2601202
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   La Porta R, 1998, J POLIT ECON, V106, P1113, DOI 10.1086/250042
+   Lewis JB, 2005, POLIT ANAL, V13, P345, DOI 10.1093/pan/mpi026
+   Campa JM, 2008, J FINANC SERV RES, V33, P127, DOI 10.1007/s10693-008-0027-6
+   Matutes C, 2000, EUR ECON REV, V44, P1, DOI 10.1016/S0014-2921(98)00057-9
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   Nelsen R.B., 2006, INTRO COPULAS
+   Nier E, 2006, J FINANC INTERMED, V15, P332, DOI 10.1016/j.jfi.2006.03.001
+   Nier E., 2005, J FINANCIAL STABILIT, V1, P342, DOI DOI 10.1016/J.JFS.2005.02.007
+   OECD, 2000, BEST PRACT ROUNDT CO
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Ruenzi S., 2011, EFA M
+   Schaeck K, 2012, EUR FINANC MANAG, V18, P836, DOI 10.1111/j.1468-036X.2010.00551.x
+   Schaeck K, 2009, J MONEY CREDIT BANK, V41, P711, DOI 10.1111/j.1538-4616.2009.00228.x
+   Schmidt R, 2006, SCAND J STAT, V33, P307, DOI 10.1111/j.1467-9469.2005.00483.x
+   Spamann H, 2010, REV FINANC STUD, V23, P467, DOI 10.1093/rfs/hhp067
+   Straetmans STM, 2008, J APPL ECONOM, V23, P17, DOI 10.1002/jae.973
+   Uhde A, 2009, J BANK FINANC, V33, P1299, DOI 10.1016/j.jbankfin.2009.01.006
+   Vallascas F, 2011, J BANK FINANC, V35, P902, DOI 10.1016/j.jbankfin.2010.09.001
+   van Oordt M.R., 2012, WORKING PAPER
+   Vassalou M, 2004, J FINANC, V59, P831, DOI 10.1111/j.1540-6261.2004.00650.x
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Winton A, 2000, WORKING PAPER
+   Yermack D, 1996, J FINANC ECON, V40, P185, DOI 10.1016/0304-405X(95)00844-5
+NR 66
+TC 19
+Z9 20
+U1 0
+U2 28
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD MAR
+PY 2014
+VL 40
+BP 165
+EP 181
+DI 10.1016/j.jbankfin.2013.11.032
+PG 17
+WC Business, Finance; Economics
+SC Business & Economics
+GA AA9ON
+UT WOS:000331422900013
+DA 2019-12-28
+ER
+
+PT J
+AU Adams, Z
+   Fuss, R
+   Gropp, R
+AF Adams, Zeno
+   Fuess, Roland
+   Gropp, Reint
+TI Spillover Effects among Financial Institutions: A State-Dependent
+   Sensitivity Value-at-Risk Approach
+SO JOURNAL OF FINANCIAL AND QUANTITATIVE ANALYSIS
+LA English
+DT Article
+ID CONTAGION; LIQUIDITY
+AB In this paper, we develop a state-dependent sensitivity value-at-risk (SDSVaR) approach that enables us to quantify the direction, size, and duration of risk spillovers among financial institutions as a function of the state of financial markets (tranquil, normal, and volatile). For four sets of major financial institutions (commercial banks, investment banks, hedge funds, and insurance companies), we show that while small during normal times, equivalent shocks lead to considerable spillover effects in volatile market periods. Commercial banks and, especially, hedge funds appear to play a major role in the transmission of shocks to other financial institutions.
+C1 [Adams, Zeno; Fuess, Roland] Univ St Gallen, Swiss Inst Banking & Finance, CH-9000 St Gallen, Switzerland.
+   [Gropp, Reint] Goethe Univ Frankfurt, D-60323 Frankfurt, Germany.
+RP Adams, Z (reprint author), Univ St Gallen, Swiss Inst Banking & Finance, Rosenbergstr 52, CH-9000 St Gallen, Switzerland.
+EM zeno.adams@unisg.ch; roland.fuess@unisg.ch;
+   reint.gropp@hof.uni-frankfurt.de
+CR Acharya V. V., 2010, DP8824 CTR EC POL RE
+   Adrian T., 2011, WORKING PAPER
+   Allen F., 2007, RISKS FINANCIAL I
+   Altunbas Y, 2010, J FINANC STABIL, V6, P121, DOI 10.1016/j.jfs.2009.07.001
+   [Anonymous], 2007, ECONOMIST
+   [Anonymous], 2008, ECONOMIST
+   Barone-Adesi G., 2001, EC NOTES, V30, P167
+   Berkowitz J, 2002, J FINANC, V57, P1093, DOI 10.1111/1540-6261.00455
+   BERNANKE B, 2006, FED RES BANK ATL FIN
+   Billio M., 2009, U CA FOSCARI VENICE, V10/08
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Brown S., 2006, WORKING PAPER
+   Brownlees Christian, 2011, WORKING PAPER
+   Brunnermeier M. K., 2012, HDB EC FINANCE, V2
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Campello M, 2010, J FINANC ECON, V97, P470, DOI 10.1016/j.jfineco.2010.02.009
+   CAPPIELLO L, 2005, 501 EUR CENTR BANK
+   Chan Nicholas, 2006, FEDERAL RESERVE BANK, VQ4, P49
+   Danielsson J., 2000, ANN EC STAT, V60, P239, DOI DOI 10.2307/20076262
+   Danielsson J, 2003, MODERN RISK MANAGEME, P297
+   Danielsson J., 2009, WORKING PAPER
+   DANIELSSON JON, 2005, J FINANCIAL STABILIT, V1, P522
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   Ding B., 2009, WORKING PAPER
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   FENN GW, 1994, J FINANC ECON, V35, P181, DOI 10.1016/0304-405X(94)90003-5
+   GARBARAVICIUS T, 2005, EUROPEAN CENTRAL BAN, V34
+   Greenlaw D., 2008, US MON POL FOR 2008
+   Gropp R, 2004, J INT MONEY FINANC, V23, P405, DOI 10.1016/j.jimonfin.2004.01.005
+   Gropp R, 2009, INT J CENT BANK, V5, P97
+   Hakenes H, 2010, J FINANC INTERMED, V19, P308, DOI 10.1016/j.jfi.2010.03.001
+   Halstead JM, 2005, J ALTERN INVEST, V8, P65, DOI 10.3905/jai.2005.523083
+   Hartmann P., 2007, RISKS FINANCIAL I
+   Hott C, 2009, J FINANC STABIL, V5, P35, DOI 10.1016/j.jfs.2008.01.004
+   KAMBHU J, 2007, FRNB EC POLICY REV, V13, P1
+   King MR, 2009, J FINANC STABIL, V5, P283, DOI 10.1016/j.jfs.2009.02.002
+   Klaus B., 2009, EUROPEAN CENTRAL BAN, V1112
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R., 2005, QUANTILE REGRESSION
+   Kroszner RS, 2007, J FINANC ECON, V84, P187, DOI 10.1016/j.jfineco.2006.05.001
+   Kuester K., 2006, J FINANCIAL ECONOMET, V4, P53, DOI [DOI 10.1093/JJFINEC/NBJ002, 10.1093/jjfinec/nbj002]
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   POWELL JL, 1983, ECONOMETRICA, V51, P1569, DOI 10.2307/1912290
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   Vinod HD, 2009, J STAT SOFTW, V29, P1
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   White H, 2010, WORKING PAPER
+NR 50
+TC 25
+Z9 25
+U1 2
+U2 38
+PU CAMBRIDGE UNIV PRESS
+PI NEW YORK
+PA 32 AVENUE OF THE AMERICAS, NEW YORK, NY 10013-2473 USA
+SN 0022-1090
+EI 1756-6916
+J9 J FINANC QUANT ANAL
+JI J. Financ. Quant. Anal.
+PD JUN
+PY 2014
+VL 49
+IS 3
+BP 575
+EP 598
+DI 10.1017/S0022109014000325
+PG 24
+WC Business, Finance; Economics
+SC Business & Economics
+GA AW0IQ
+UT WOS:000345975700002
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU de Jager, P
+AF de Jager, Phillip
+TI Fair value accounting, fragile bank balance sheets and crisis: A model
+SO ACCOUNTING ORGANIZATIONS AND SOCIETY
+LA English
+DT Article
+ID FINANCIAL CRISIS; TO-MARKET; CONTRIBUTE
+AB A topic of recent interest in accounting research has been the investigation of the role of fair value accounting (FVA) in the global financial crisis. This research focused on finding a link during the crisis time-period and often states that "accounting is only a messenger". The model presented in this paper emphasises finding the link before the crisis and "accounting as money." Use is made of an accounting model of the economy due to the inability of standard models of monetary transmission to incorporate global financial crisis characteristics such as feedback effects, systemic risk and the centrality of the financial sector in the crisis. The model shows FVA in banks to be an accelerator that amplifies the financial cycle upswing. Feedback effects noted in the model include changes in the demand for financial instruments and changes in demand in the real economy. Minsky-like, crisis is shown to be endogenous to the model, working through the fragility of balance sheets in the real sector as well as in the financial sector. Bank balance sheet fragility is caused by bad capital driving out good capital, banks reaching for yield and the inversion of the yield curve. The model shows that the practice of not meeting rising credit demand with increasing credit supply is an essential control mechanism in the financial cycle. (c) 2014 Elsevier Ltd. All rights reserved.
+C1 [de Jager, Phillip] Univ Cape Town, Dept Finance & Tax, ZA-7700 Rondebosch, South Africa.
+   [de Jager, Phillip] Univ Cape Town, African Collaborat Quantitat Finance & Risk Res, ZA-7700 Rondebosch, South Africa.
+RP de Jager, P (reprint author), Univ Cape Town, Dept Finance & Tax, ZA-7700 Rondebosch, South Africa.
+EM phillip.dejager@uct.ac.za
+RI de Jager, Phillip Gerhard/O-7600-2019
+OI de Jager, Phillip Gerhard/0000-0002-2431-7729
+CR AKERLOF GA, 1993, BROOKINGS PAP ECO AC, P1
+   Allen F, 2008, J ACCOUNT ECON, V45, P358, DOI 10.1016/j.jacceco.2007.02.005
+   Andersson T, 2014, CRIT PERSPECT ACCOUN, V25, P78, DOI 10.1016/j.cpa.2012.10.006
+   Ang A, 2006, J ECONOMETRICS, V131, P359, DOI 10.1016/j.jeconom.2005.01.032
+   [Anonymous], 2006, INT CONV CAP MEAS CA
+   Arnold PJ, 2009, ACCOUNT ORG SOC, V34, P803, DOI 10.1016/j.aos.2009.04.004
+   Badertscher BA, 2012, ACCOUNT REV, V87, P59, DOI 10.2308/accr-10166
+   Ball R., 2008, DONT BLAME MESSENGER
+   Bank for International Settlements, 2012, 82 BIS
+   Bank for International Settlements, 2011, BAS 3 GLOB REG FRAM
+   Bank of England, 2009, FIN STAB REP
+   Barth ME, 2010, EUR ACCOUNT REV, V19, P399, DOI 10.1080/09638180.2010.498619
+   Bellofiore R., 2010, CAN IT HAPPEN AGAIN
+   Benston GJ, 2006, J ACCOUNTING PUBLIC, V25, P465, DOI DOI 10.1016/j.jaccpubpol.2006.05.003
+   Bezemer DJ, 2010, ACCOUNT ORG SOC, V35, P676, DOI 10.1016/j.aos.2010.07.002
+   Black W. K., 2011, DOLLARS SENSE   0601
+   BLACK WILLIAM K., 2005, BEST WAY ROB BANK OW
+   Borio C., 2012, BIS WORKING PAPERS, V395
+   Cabral R, 2013, J BANK FINANC, V37, P103, DOI 10.1016/j.jbankfin.2012.08.005
+   Daske H., 2010, RELAXATION FAIR VALU
+   Einhorn D., 2010, FOOLING SOME PEOPLE
+   Enria A., 2004, OCCASIONAL PAPER SER, V13
+   Fiechter P., 2011, DISCRETION FAIR VALU
+   Fisher I, 1933, ECONOMETRICA, V1, P337, DOI 10.2307/1907327
+   Friedman M, 1971, MONETARY HIST US 186
+   Friedman M., 1953, ESSAYS POSITIVE EC
+   Gebhardt G, 2012, ACCOUNT BUS RES, V42, P267, DOI 10.1080/00014788.2012.681859
+   Gebhardt G, 2011, J BUS FINAN ACCOUNT, V38, P289, DOI 10.1111/j.1468-5957.2011.02242.x
+   Godley W., 2012, MONETARY EC
+   Haldane A. G., 2011, WINC ANN MEM LECT WE
+   Howelss P., 2008, EC MONEY BANKING FIN
+   ING Bank N.V, 2012, ANN FIN STAT
+   International Accounting Standards Board, 2005, INT FIN REP STAND IF
+   International Monetary Fund, 2012, GLOB FIN STAB REP
+   Investec Bank Limited, 2012, INV BANK LTD GROUP C
+   Kay J., FINANCIAL TIMES 0229
+   Kay J., 2009, FINANCIAL TIMES
+   Keen S., 2011, DEBUNKING EC REVISED
+   Khan U., 2010, WORKING PAPER
+   Krugman P., 2009, NIGHT THEY REREAD MI
+   Kusano M, 2011, FAIR VALUE ACCOUNTIN
+   Lahart J., 2007, WALL STREET J, V18, P1
+   Laux C, 2010, J ECON PERSPECT, V24, P93, DOI 10.1257/jep.24.1.93
+   Laux C, 2009, ACCOUNT ORG SOC, V34, P826, DOI 10.1016/j.aos.2009.04.003
+   Livne G, 2011, J CORP FINANC, V17, P1096, DOI 10.1016/j.jcorpfin.2011.04.010
+   Lo AW, 2012, J ECON LIT, V50, P151, DOI 10.1257/jel.50.1.151
+   Magnan ML, 2009, ACCOUNT PERSPECT, V8, P189, DOI 10.1506/ap.8.3.1
+   MANKIW N. G., 2007, MACROECONOMICS
+   McMahon G, 2011, CPA J
+   Mundy S, 2012, FINANCIAL TIMES 0318
+   National Commission on the Causes of the Financial and Economic Crisis in the United States (NC), 2011, FIN CRIS INQ REP
+   Palley TI, 2010, MON REV, V61, P28, DOI 10.14452/MR-061-11-2010-04_2
+   Pinnuck M, 2012, AUST ACCOUNT REV, V22, P1, DOI 10.1111/j.1835-2561.2011.00155.x
+   Plantin G, 2008, J ACCOUNT RES, V46, P435, DOI 10.1111/j.1475-679X.2008.00281.x
+   Posner R.A., 2009, FAILURE CAPITALISM C
+   Pozen RC, 2009, HARVARD BUS REV, V87, P84
+   Rees M, 2013, UNS BOOM MAY BE
+   ROLNICK AJ, 1986, J POLIT ECON, V94, P185, DOI 10.1086/261368
+   Rose P., 2008, BANK MANAGEMENT FINA
+   Ryan SG, 2008, ACCOUNT REV, V83, P1605, DOI 10.2308/accr.2008.83.6.1605
+   Scott W. R, 2009, FINANCIAL ACCOUNTING
+   Shaffer S, 2010, WORKING PAPER
+   Soros G., 2012, MONEYWEB        0606
+   Standard Bank of South Africa, 2012, ANN FIN STAT
+   Suzuki T, 2003, ACCOUNT ORG SOC, V28, P65, DOI 10.1016/S0361-3682(02)00033-8
+   Tarrant H., 2013, NEDBANKS M BROWN 1 S
+   Taylor M., 2009, FINANCIAL TIMES
+   The Independent Commission on Banking, 2011, FIN REP IND COMM BAN
+   Toporowski J, 2008, CAMB J ECON, V32, P725, DOI 10.1093/cje/bem059
+   Toporowski J, 2010, MACROECONOMIC THEORY AND ITS FAILINGS: ALTERNATIVE PERSPECTIVES ON THE GLOBAL FINANCIAL CRISIS, P221
+   Turner A, 2010, COMMUNICATION
+   U.S. Securities and Exchange Commission, 2008, REP REC PURS SECT 13
+   Veron N., 2008, FAIR VALUE ACCOUNTIN
+   Wallace M., 2009, BANK ACCOUNTING FINA, V22, P9
+   Whiteman J., 2012, FINANCIAL TIMES
+   Wolf M., 2008, BUSINESS SPECTATOR
+   Wood D., 2010, RISKN           0204
+   Wright J., 2006, 20067 BOARD GOV FED
+   YOUNG JJ, 1995, ACCOUNT ORG SOC, V20, P55, DOI 10.1016/0361-3682(93)E0006-3
+   Zeff SA, 2007, ACCOUNT BUS RES, P49
+NR 80
+TC 12
+Z9 12
+U1 1
+U2 37
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 0361-3682
+EI 1873-6289
+J9 ACCOUNT ORG SOC
+JI Account. Organ. Soc.
+PD FEB
+PY 2014
+VL 39
+IS 2
+BP 97
+EP 116
+DI 10.1016/j.aos.2014.01.004
+PG 20
+WC Business, Finance
+SC Business & Economics
+GA AE6WS
+UT WOS:000334139300002
+DA 2019-12-28
+ER
+
+PT J
+AU Giese, J
+   Andersen, H
+   Bush, O
+   Castro, C
+   Farag, M
+   Kapadia, S
+AF Giese, Julia
+   Andersen, Henrik
+   Bush, Oliver
+   Castro, Christian
+   Farag, Marc
+   Kapadia, Sujit
+TI THE CREDIT-TO-GDP GAP AND COMPLEMENTARY INDICATORS FOR MACROPRUDENTIAL
+   POLICY: EVIDENCE FROM THE UK
+SO INTERNATIONAL JOURNAL OF FINANCE & ECONOMICS
+LA English
+DT Article
+DE recursive wild bootstrap; early warning indicators; Credit-to-GDP gap;
+   countercyclical capital buffer; financial crises; macroprudential policy
+ID COUNTERCYCLICAL CAPITAL BUFFERS; REAL-TIME IMPLICATIONS; RATIO GAPS;
+   UNRELIABILITY; CRISES; BANKING; PRICES
+AB The financial crisis has demonstrated the need for a set of macroprudential policy tools that can be used to mitigate systemic risk. Focusing on the UK, our paper reviews the performance of the Basel III credit-to-GDP gap that, alongside judgement, is to be used as a reference guide in setting the countercyclical capital buffer. We find that this measure worked well in providing an advance signal of past UK episodes of banking system distress. But this does not guarantee future signalling success. We therefore evaluate some conceptual shortcomings of the credit gap and suggest complementary indicators. Copyright (c) 2014 John Wiley & Sons, Ltd.
+C1 [Giese, Julia; Bush, Oliver; Farag, Marc; Kapadia, Sujit] Bank England, London EC2R 8AH, England.
+   [Andersen, Henrik] Norges Bank, Oslo, Norway.
+   [Castro, Christian] Banco Espana, Madrid, Spain.
+RP Bush, O (reprint author), Bank England, Threadneedle St, London EC2R 8AH, England.
+EM oliver.bush@bankofengland.co.uk
+CR Aikman D., 2010, COL U CTR CAP SOC AN
+   Alessi L, 2011, EUR J POLIT ECON, V27, P520, DOI 10.1016/j.ejpoleco.2011.01.003
+   [Anonymous], 2009, ROL MACR POL
+   Arcand J, 2012, WP12161 IMF
+   Astley M, 2009, BANK ENGLAND Q B, pQ3
+   Bank of England, 2003, FINANCIAL STABILITY
+   Bank of England, 2013, FIN POL COM IN PRESS
+   Bank of England, 2011, FIN STAB REP
+   Bank of England, 2011, INSTR MACR POL DISC
+   Barrell R, 2010, J BANK FINANC, V34, P2255, DOI 10.1016/j.jbankfin.2010.02.015
+   Basel Committee on Banking Supervision (BCBS), 2010, COUNT CAP BUFF PROP
+   Bernanke B, 2005, COMMUNICATION   0310
+   Borgy V, 2009, 263 BANQ FRANC
+   Borio C, 2004, BIS WORKING PAPERS, V157
+   Borio C., 2011, CAPITALISM SOC, V6, P1, DOI DOI 10.2202/1932-0213.1083
+   Borio C. E. V., 2002, 114 BIS
+   Cecchetti S. G., 2012, 381 BIS
+   Claessens S., 2011, 1188 IMF
+   Committee on the Global Financial System, 2010, CGFS PUBL, V38
+   Dell'Ariccia Giovanni, 2012, 1206 IMF
+   Drehmann M., 2010, 317 BIS
+   Drehmann Mathias, 2011, 355 BIS
+   Edge RM, 2011, INT J CENT BANK, V7, P261
+   Financial Stability Board International Monetary Fund Bank for International Settlements, 2011, MACR POL TOOLS FRAM
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gropp R, 2002, ECB WORKING PAPER SE, V150
+   Hahm J-H, 2012, NONCORE BANK L UNPUB
+   Haldane Andrew G., 2012, FED RES BANK KANS CI
+   International Monetary Fund, 2011, MACR POL ORG FRAM
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kindleberger C., 1978, MANIAS PANICS CRASHE
+   King MA, 2009, GOVERNORS SPEECH CBI
+   Koo R. C, 2008, HOLY GRAIL MACROECON
+   Logan A., 2000, BANK ENGLAND FINANCI, P130
+   MacKinnon J., 2006, BOOTSTRAP METHODS EC, P52
+   Mendoza E., 2008, 14049 NBER
+   Mendoza Enrique G., 1972, REAPPRAISAL FEDERAL, V3, P97
+   Mian A, 2011, AM ECON REV, V101, P2132, DOI 10.1257/aer.101.5.2132
+   Mian A, 2009, Q J ECON, V124, P1449, DOI 10.1162/qjec.2009.124.4.1449
+   Norges Bank, 2013, NORG BANK PAP, V1
+   Orphanides A, 2002, REV ECON STAT, V84, P569, DOI 10.1162/003465302760556422
+   Reid M., 1982, SECONDARY BANKING CR
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Reinhart Carmen, 2008, 14321 NBER
+   Riiser M., 2005, NORGES BANK EC B, V05, P145
+   Schularick M, 2012, AM ECON REV, V102, P1029, DOI 10.1257/aer.102.2.1029
+   Shin H. S., 2011, 16836 NBER
+   Swiss National Bank, 2013, IMPL COUNT CAP BUFF
+   van Norden S, 2011, INT J CENT BANK, V7, P299
+NR 49
+TC 13
+Z9 13
+U1 1
+U2 19
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1076-9307
+EI 1099-1158
+J9 INT J FINANC ECON
+JI Int. J. Financ. Econ.
+PD JAN
+PY 2014
+VL 19
+IS 1
+SI SI
+BP 25
+EP 47
+DI 10.1002/ijfe.1489
+PG 23
+WC Business, Finance
+SC Business & Economics
+GA AB3OK
+UT WOS:000331699900005
+DA 2019-12-28
+ER

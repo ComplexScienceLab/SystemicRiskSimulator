@@ -1,0 +1,393 @@
+
+PT J
+AU Choi, S
+AF Choi, Sangyup
+TI The Impact of US Financial Uncertainty Shocks on Emerging Market
+   Economies: An International Credit Channel
+SO OPEN ECONOMIES REVIEW
+LA English
+DT Article
+DE Uncertainty shocks; Emerging market economies; Credit channel; Vector
+   Autoregressions; Portfolio choice model; Value-at-Risk constraint
+ID BUSINESS CYCLES; RISK; CONTAGION; CRISES; CONSTRAINTS; LEVERAGE;
+   SPREADS; POLICY
+AB I document that US financial uncertainty shocks, measured by an increase in VIX, have a substantial impact on the output of emerging market economies (EMEs) without a material impact on US output during the last two decades. To understand this puzzling phenomenon, I propose a credit channel as a propagation mechanism of US financial uncertainty shocks to EMEs. I augment a boom-bust cycle model of EMEs by Schneider and Tornell (Rev Econ Stud 71(3):883-913 2004) with a portfolio choice model of constrained international investors. As international investors pull their money from EMEs-to satisfy their Value-at-Risk constraints-in response to financial uncertainty shocks, borrowing costs increase and domestic credit contracts. Higher borrowing costs and a decline in domestic credit, in turn, lead to a fall in investment in the non-tradable sector that causes a real depreciation via currency mismatch prevalent in EMEs and a decline in total output through sectoral linkages. The empirical regularity obtained by estimating structural VARs of 18 EMEs is consistent with the prediction of the model.
+C1 [Choi, Sangyup] Yonsei Univ, Sch Econ, 50 Yonsei Ro, Seoul 03722, South Korea.
+RP Choi, S (reprint author), Yonsei Univ, Sch Econ, 50 Yonsei Ro, Seoul 03722, South Korea.
+EM sangyupchoi@gmail.com
+CR Adrian T, 2014, REV FINANC STUD, V27, P373, DOI 10.1093/rfs/hht068
+   Bachmann R, 2013, AM ECON J-MACROECON, V5, P217, DOI 10.1257/mac.5.2.217
+   Baker SR, 2016, Q J ECON, V131, P1593, DOI 10.1093/qje/qjw024
+   Bloom N, 2009, ECONOMETRICA, V77, P623, DOI 10.3982/ECTA6248
+   Borio C, 2012, J FINANC STABIL, V8, P236, DOI 10.1016/j.jfs.2011.12.003
+   Caballero RJ, 2001, J MONETARY ECON, V48, P513, DOI 10.1016/S0304-3932(01)00084-8
+   Caldara D, 2016, EUR ECON REV, V88, P185, DOI 10.1016/j.euroecorev.2016.02.020
+   Carriere-Swallow Y, 2013, J INT ECON, V90, P316, DOI 10.1016/j.jinteco.2013.03.003
+   Choi S, J INT MONEY FINANC
+   Choi S, 2015, J MACROECON, V46, P344, DOI 10.1016/j.jmacro.2015.10.007
+   Choi S, 2013, ECON LETT, V119, P216, DOI 10.1016/j.econlet.2013.02.015
+   Christiano LJ, 2014, AM ECON REV, V104, P27, DOI 10.1257/aer.104.1.27
+   Chudik A, 2011, EUR ECON REV, V55, P325, DOI 10.1016/j.euroecorev.2010.12.003
+   De Bock R, 2015, J INT MONEY FINANC, V53, P218, DOI 10.1016/j.jimonfin.2014.12.009
+   Djankov S, 2008, J POLIT ECON, V116, P1105, DOI 10.1086/595015
+   Fratzscher M, 2012, J INT ECON, V88, P341, DOI 10.1016/j.jinteco.2012.05.003
+   Gonzalez-Rozada M, 2008, ECON J, V118, P1917, DOI 10.1111/j.1468-0297.2008.02196.x
+   Gourio F, 2012, AM ECON REV, V102, P2734, DOI 10.1257/aer.102.6.2734
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Matsumoto A, 2011, IMF WORKING PAPERS, P1
+   Neumeyer PA, 2005, J MONETARY ECON, V52, P345, DOI 10.1016/j.jmoneco.2004.04.011
+   Pavlova A, 2008, REV ECON STUD, V75, P1215, DOI 10.1111/j.1467-937X.2008.00509.x
+   Rabanal P, 2013, OPEN ECON REV, V24, P495, DOI 10.1007/s11079-012-9250-8
+   Schinasi GJ, 2000, IMF STAFF PAPERS, V47, P159
+   Schneider M, 2004, REV ECON STUD, V71, P883, DOI 10.1111/j.1467-937X.2004.00308.x
+   Tornell A, 2002, NBER WORKING PAPER
+   Uribe M, 2006, J INT ECON, V69, P6, DOI 10.1016/j.jinteco.2005.04.003
+   Yeyati EL, 2006, ECON POLICY, P61
+NR 29
+TC 8
+Z9 8
+U1 2
+U2 7
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0923-7992
+EI 1573-708X
+J9 OPEN ECON REV
+JI Open Econ. Rev.
+PD FEB
+PY 2018
+VL 29
+IS 1
+BP 89
+EP 118
+DI 10.1007/s11079-017-9471-y
+PG 30
+WC Economics
+SC Business & Economics
+GA FT7TI
+UT WOS:000423355500005
+DA 2019-12-27
+ER
+
+PT J
+AU Fan, H
+   Amalia, AALL
+   Gao, QQ
+AF Fan, Hong
+   Amalia, Allan Alvin Lee Lukaya
+   Gao, Qian Qian
+TI The Assessment of Systemic Risk in the Kenyan Banking Sector
+SO COMPLEXITY
+LA English
+DT Article
+ID FINANCIAL NETWORKS; INTERBANK EXPOSURES; CONTAGION; MARKET
+AB The present paper aims to assess the systemic risk of the Kenyan banking system. We propose a theoretical framework to reveal the time evolution of the systemic risk using sequences of financial data and use the framework to assess the systemic risk of the Kenyan banking system that is regarded as the largest in the East and Central African region. Firstly, we estimate the bilateral exposures matrix using aggregate financial data on loans and deposits from annual reports and analyze the interconnectedness in the market using network centrality measures. Next, we extend the Eisenberg-Noe method to a multiperiod setting to the systemic risk of the Kenyan banking system, in which the multiperiod includes the dynamic evolutions of the Kenyan banking system of every bank and the structure of the interbank network system. We apply this framework to assess dynamically the systemic risk of the Kenyan banking system between 2009 and 2015. Themain findings are the following. Thetheoretical network analysis using network centrality measures showed several banks displaying characteristics of systematically important banks (SIBs). The theoretical default analysis showed that a bank suffering a basic default will trigger a contagious default that caused several other banks in the sector to go bankrupt. Further stress test proved that the KCB bank theoretically caused a few contagious defaults due to an unusually high interconnectedness. This methodology can contribute by being part ofmonitoring system of the Central Bank of Kenya (regulatory body) as well as the implementation of policies (such as bank-internal stress tests) that assist in preventing default contagion.
+C1 [Fan, Hong; Amalia, Allan Alvin Lee Lukaya; Gao, Qian Qian] Donghua Univ, Glorious Sun Sch Business & Management, Shanghai 200051, Peoples R China.
+RP Fan, H (reprint author), Donghua Univ, Glorious Sun Sch Business & Management, Shanghai 200051, Peoples R China.
+EM hongfan@dhu.edu.cn
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71371046]
+FX The authors acknowledge the support from the National Natural Science
+   Foundation of China under Grant no. 71371046.
+CR Acharya V. V., SSRN ELECT J
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Avramidis P, 2015, J FINANC STABIL, V16, P138, DOI 10.1016/j.jfs.2015.01.003
+   Basurto M. A. Segoviano, 2006, IMF WORKING PAPERS, V6
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Capponi A, 2015, J ECON DYN CONTROL, V58, P152, DOI 10.1016/j.jedc.2015.06.008
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Duan J. C., 1994, MATH FINANC, V10, P155, DOI DOI 10.1111/J.1467-9965.1994.TB00055.X
+   Duan J. C., EQUIVALENCE KMV MAXI
+   Duan JC, 2000, MATH FINANC, V10, P461, DOI 10.1111/1467-9965.00105
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Gualdi S, 2016, SCI REP-UK, V6, DOI 10.1038/srep39467
+   Hausenblas V, 2015, ECON SYST, V39, P156, DOI 10.1016/j.ecosys.2014.07.001
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Hautsch N, 2014, INT J FORECASTING, V30, P781, DOI 10.1016/j.ijforecast.2013.09.004
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Kanno M, 2015, J FINANC STABIL, V20, P105, DOI 10.1016/j.jfs.2015.08.006
+   Krause A., 2012, J EC BEHAV ORG
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+NR 31
+TC 1
+Z9 1
+U1 2
+U2 6
+PU WILEY-HINDAWI
+PI LONDON
+PA ADAM HOUSE, 3RD FL, 1 FITZROY SQ, LONDON, WIT 5HE, ENGLAND
+SN 1076-2787
+EI 1099-0526
+J9 COMPLEXITY
+JI Complexity
+PY 2018
+AR 8767836
+DI 10.1155/2018/8767836
+PG 15
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA FV2XV
+UT WOS:000424432200001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Dastkhan, H
+   Gharneh, NS
+AF Dastkhan, Hossein
+   Gharneh, Naser Shams
+TI How the ownership structures cause epidemics in financial markets: A
+   network-based simulation model
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Simulation models; Contagion; Systemic risk; Network theory; Ownership
+   structure
+ID SYSTEMIC RISK; SHAREHOLDING RELATIONSHIPS; CONTAGION; DYNAMICS
+AB Analysis of systemic risks and contagions is one of the main challenges of policy makers and researchers in the recent years. Network theory is introduced as a main approach in the modeling and simulation of financial and economic systems. In this paper, a simulation model is introduced based on the ownership network to analyze the contagion and systemic risk events. For this purpose, different network structures with different values for parameters are considered to investigate the stability of the financial system in the presence of different kinds of idiosyncratic and aggregate shocks. The considered network structures include Erdos-Renyi, core periphery, segregated and power-law networks. Moreover, the results of the proposed model are also calculated for a real ownership network. The results show that the network structure has a significant effect on the probability and the extent of contagion in the financial systems. For each network structure, various values for the parameters results in remarkable differences in the systemic risk measures. The results of real case show that the proposed model is appropriate in the analysis of systemic risk and contagion in financial markets, identification of systemically important firms and estimation of market loss when the initial failures occur. This paper suggests a new direction in the modeling of contagion in the financial markets, in particular that the effects of new. kinds of financial exposure are clarified. This paper's idea and analytical results may also be useful for the financial policy makers, portfolio managers and the firms to conduct their investment in the right direction. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Dastkhan, Hossein; Gharneh, Naser Shams] Amirkabir Univ Technol, Dept Ind Engn & Management Syst, Hafez St, Tehran, Iran.
+RP Gharneh, NS (reprint author), Amirkabir Univ Technol, Dept Ind Engn & Management Syst, Hafez St, Tehran, Iran.
+EM hdastkhan@aut.ac.ir; nshams@aut.ac.ir
+RI Gharneh, Naser Shams/N-2851-2018
+OI Gharneh, Naser Shams/0000-0003-4936-7797
+CR Acemoglu D., 2013, WORKING PAPER
+   Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Babus A, 2016, RAND J ECON, V47, P239, DOI 10.1111/1756-2171.12126
+   Baral P., 2011, STRATEGIC BEHAV ENDO
+   Batiz-Zuk E., 2015, J FINANC STABILITY
+   Brusco S, 2007, J FINANC, V62, P2275, DOI 10.1111/j.1540-6261.2007.01275.x
+   Cabrales A., 2013, RISK SHARING CONTAGI
+   Chan-Lau JA, 2012, INT J FINANC ECON, V17, P390, DOI 10.1002/ijfe.1459
+   Cohen-Cole E., 2012, SYSTEMIC RISK NETWOR
+   Dastkhan H, 2016, INT J FINANC STUD, V4, DOI 10.3390/ijfs4030013
+   Delpini D, 2013, SCI REP-UK, V3, DOI 10.1038/srep01626
+   Di Muro MA, 2016, PHYS REV E, V94, DOI 10.1103/PhysRevE.94.042304
+   Edirisinghe C, 2015, J BANK FINANC, V60, P209, DOI 10.1016/j.jbankfin.2015.08.015
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Fique J, 2013, COMPUT MANAG SCI, V10, P213, DOI 10.1007/s10287-013-0172-8
+   Gabaix X, 2011, ECONOMETRICA, V79, P733, DOI 10.3982/ECTA8769
+   Garlaschelli D, 2005, PHYSICA A, V350, P491, DOI 10.1016/j.physa.2004.11.040
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Haldane A.G., 2011, NATURE
+   Karimi F., 2014, COMPUT ECON, V47, P49
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Levy-Carciente S, 2015, J BANK FINANC, V59, P164, DOI 10.1016/j.jbankfin.2015.05.008
+   Li HJ, 2014, PHYSICA A, V406, P80, DOI 10.1016/j.physa.2014.03.041
+   Lorenz J, 2009, EUR PHYS J B, V71, P441, DOI 10.1140/epjb/e2009-00347-4
+   Moussa A., 2011, THESIS
+   Paltalidis N, 2015, J BANK FINANC, V61, pS36, DOI 10.1016/j.jbankfin.2015.03.021
+   Park YS, 2003, JPN WORLD ECON, V15, P331, DOI 10.1016/S0922-1425(03)00019-7
+   Pecora N, 2015, PHYSICA A, V434, P1, DOI 10.1016/j.physa.2015.04.011
+   Ramsay BA, 2016, INT J FINANC ECON, V21, P36, DOI 10.1002/ijfe.1520
+   Smaga P., 2014, CONCEPT SYSTEMIC RIS
+   Tang L, 2016, PHYSICA A, V443, P58, DOI 10.1016/j.physa.2015.09.082
+   Vitali S, 2016, J ECON DYN CONTROL, V62, P56, DOI 10.1016/j.jedc.2015.10.003
+   Vodenska I, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0150994
+   Yao CZ, 2016, PHYSICA A, V462, P297, DOI 10.1016/j.physa.2016.06.100
+   Zhang X, 2014, PHYSICA A, V415, P43, DOI 10.1016/j.physa.2014.07.068
+NR 37
+TC 5
+Z9 5
+U1 0
+U2 9
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD FEB 15
+PY 2018
+VL 492
+BP 324
+EP 342
+DI 10.1016/j.physa.2017.09.089
+PG 19
+WC Physics, Multidisciplinary
+SC Physics
+GA FT9TS
+UT WOS:000423495100028
+DA 2019-12-27
+ER
+
+PT J
+AU Fry-McKibbin, R
+   Hsiao, CYL
+AF Fry-McKibbin, Renee
+   Hsiao, Cody Yu-Ling
+TI Extremal dependence tests for contagion
+SO ECONOMETRIC REVIEWS
+LA English
+DT Article
+DE Co-skewness; co-kurtosis; co-volatility; contagion testing; extremal
+   dependence; financial crisis; Lagrange multiplier tests
+ID FINANCIAL CONTAGION; MARKET EQUILIBRIUM; EQUITY MARKETS; HIGHER-ORDER;
+   RISK ASSETS; SKEWNESS; PREFERENCE; DISTRIBUTIONS; VOLATILITY; VALUATION
+AB A new test for financial market contagion based on changes in extremal dependence defined as co-kurtosis and co-volatility is developed to identify the propagation mechanism of shocks across international financial markets. The proposed approach captures changes in various aspects of the asset return relationships such as cross-market mean and skewness (co-kurtosis) as well as cross-market volatilities (co-volatility). Monte Carlo experiments show that the tests perform well except for when crisis periods are short in duration. Small crisis sample critical values are calculated for use in this case. In an empirical application involving the global financial crisis of 2008-2009, the results show that significant contagion effects are widespread from the US banking sector to global equity markets and banking sectors through either the co-kurtosis or the co-volatility channels, reinforcing that higher order moments matter during crises.
+C1 [Fry-McKibbin, Renee; Hsiao, Cody Yu-Ling] Macau Univ Sci & Technol, CAMA, Macau, Peoples R China.
+   [Fry-McKibbin, Renee] Australian Natl Univ, Crawford Sch Publ Policy, Canberra, ACT, Australia.
+   [Hsiao, Cody Yu-Ling] Macau Univ Sci & Technol, Sch Business, Macau, Peoples R China.
+RP Hsiao, CYL (reprint author), Macau Univ Sci & Technol, CAMA, Macau, Peoples R China.; Hsiao, CYL (reprint author), Macau Univ Sci & Technol, Sch Business, Macau, Peoples R China.
+EM ylhsiao@must.edu.mo
+OI Fry-McKibbin, Renee/0000-0003-2396-7540
+FU ARCFondation ARC pour la Recherche sur le CancerAustralian Research
+   Council [DP120103443]
+FX We grate fully acknowledge funding from ARC grant DP120103443.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   BLACK F, 1972, J BUS, V45, P444, DOI 10.1086/295472
+   Black F, 1976, P 1976 M AM STAT ASS, P177
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Busetti F, 2011, J FINANC ECONOMET, V9, P106, DOI 10.1093/jjfinec/nbq020
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   COBB L, 1983, J AM STAT ASSOC, V78, P124, DOI 10.2307/2287118
+   Conrad J, 2013, J FINANC, V68, P85, DOI 10.1111/j.1540-6261.2012.01795.x
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Dittmar RF, 2002, J FINANC, V57, P369, DOI 10.1111/1540-6261.00425
+   Embrechts P, 2003, HANDBOOKS FINANCE, P329, DOI 10.1016/B978-044450896-6.50010-8
+   ENGLE RF, 1990, J ECONOMETRICS, V45, P213, DOI 10.1016/0304-4076(90)90099-F
+   Fang H., 1997, FINANCIAL REV, V32, P293, DOI DOI 10.1111/J.1540-6288.1997.TB00426.X
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   FRIEND I, 1980, J FINANC, V35, P897, DOI 10.2307/2327208
+   Fry R, 2010, J BUS ECON STAT, V28, P423, DOI 10.1198/jbes.2010.06060
+   Fry-McKibbin R. A., 2013, OPEN ECON REV, V2013, P1
+   Fry-McKibbin R. A., 2015, 40 CAMA
+   Fry-McKibbin R, 2014, J BANK FINANC, V47, P296, DOI 10.1016/j.jbankfin.2014.05.002
+   Garcia R, 2011, J BANK FINANC, V35, P1954, DOI 10.1016/j.jbankfin.2011.01.003
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Gropp R, 2004, J INT MONEY FINANC, V23, P405, DOI 10.1016/j.jimonfin.2004.01.005
+   Gropp R, 2009, INT J CENT BANK, V5, P97
+   Harvey CR, 2000, J FINANC, V55, P1263, DOI 10.1111/0022-1082.00247
+   Hwang SS, 1999, INT J FINANC ECON, V4, P271, DOI 10.1002/(SICI)1099-1158(199910)4:4<271::AID-IJFE110>3.0.CO;2-M
+   KRAUS A, 1976, J FINANC, V31, P1085, DOI 10.2307/2326275
+   LINTNER J, 1965, REV ECON STAT, V47, P13, DOI 10.2307/1924119
+   LYE JN, 1993, J AM STAT ASSOC, V88, P261, DOI 10.2307/2290721
+   Martellini L, 2010, REV FINANC STUD, V23, P1467, DOI 10.1093/rfs/hhp099
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   SCOTT RC, 1980, J FINANC, V35, P915, DOI 10.2307/2327209
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Vaugirard V, 2007, J INT MONEY FINANC, V26, P403, DOI 10.1016/j.jimonfin.2006.11.005
+   Vayanos Dimitri, 2004, 10327 NBER
+NR 39
+TC 5
+Z9 5
+U1 3
+U2 8
+PU TAYLOR & FRANCIS INC
+PI PHILADELPHIA
+PA 530 WALNUT STREET, STE 850, PHILADELPHIA, PA 19106 USA
+SN 0747-4938
+EI 1532-4168
+J9 ECONOMET REV
+JI Econom. Rev.
+PY 2018
+VL 37
+IS 6
+BP 626
+EP 649
+DI 10.1080/07474938.2015.1122270
+PG 24
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA GD4VB
+UT WOS:000430499600004
+DA 2019-12-27
+ER
+
+PT J
+AU Ferrario, A
+   Guidolin, M
+   Pedio, M
+AF Ferrario, Andrea
+   Guidolin, Massimo
+   Pedio, Manuela
+TI Comparing in- and out-of-sample approaches to variance
+   decomposition-based estimates of network connectedness an application to
+   the Italian banking system
+SO QUANTITATIVE FINANCE AND ECONOMICS
+LA English
+DT Article
+DE networks; connectedness measures; vector autoregressions; generalized
+   variance decompositions; banking system; contagion and spillovers
+ID IMPULSE-RESPONSE ANALYSIS; FALSE DISCOVERY RATE; VOLATILITY SPILLOVERS;
+   MULTIVARIATE MODELS; RISK
+AB We use methods that exploit variance decompositions from standard (rolling window) estimates of VAR(p) models to obtain estimates of network connectedness and perform an empirical comparison of the results derived under two alternative approaches: To base the decompositions on in-sample forecast errors vs. out-of-sample forecast errors derived from a separation between estimation and forecast evaluation window. Using the intraday realized variance of bank stock return, we derive novel empirical results on the systemic risk of the Italian banking system, whose network connectedness turns out to be generally high, increasing over time especially during the Great Financial and the European sovereign debt crises. However, whether a few net exporters of systemic risk may be reliably estimated turns out to depend on the methodology adopted when computing rolling window variance decompositions.
+C1 [Ferrario, Andrea] Bocconi Univ, Via Roentgen 1, I-20136 Milan, Italy.
+   [Guidolin, Massimo; Pedio, Manuela] Bocconi Univ, Baffi CAREFIN Ctr, Via Roentgen 1, I-20136 Milan, Italy.
+   [Guidolin, Massimo; Pedio, Manuela] Bocconi Univ, Dept Finance, Via Roentgen 1, I-20136 Milan, Italy.
+RP Pedio, M (reprint author), Bocconi Univ, Baffi CAREFIN Ctr, Via Roentgen 1, I-20136 Milan, Italy.; Pedio, M (reprint author), Bocconi Univ, Dept Finance, Via Roentgen 1, I-20136 Milan, Italy.
+EM Manuela.pedio@unibocconi.it
+CR Ahelegbey DF, 2016, J APPL ECONOMET, V31, P357, DOI 10.1002/jae.2443
+   Alter A, 2014, J BANK FINANC, V42, P134, DOI 10.1016/j.jbankfin.2014.01.030
+   [Anonymous], 2016, ECONOMIST
+   Benjamini Y, 2001, ANN STAT, V29, P1165
+   Betz F, 2016, J FINANC STABIL, V25, P206, DOI 10.1016/j.jfs.2015.10.006
+   Borri N, 2014, ECON NOTES, V43, P21, DOI 10.1111/ecno.12015
+   Davies P. J, 2017, WALL STREET J
+   Demirer M, 2018, J APPL ECONOMET, V33, P1, DOI 10.1002/jae.2585
+   diBiase P, 2012, INT J EC FINANCE, V4, P152, DOI DOI 10.5539/IJEF.V4N11P152
+   Diebold F.X., 2015, FINANCIAL MACROECONO
+   Diebold FX, 2016, J FINANC ECONOMET, V14, P81, DOI 10.1093/jjfinec/nbv021
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Fengler MR, 2015, J INT MONEY FINANC, V51, P174, DOI 10.1016/j.jimonfin.2014.11.006
+   Friedman G, 2016, ITALY IS MOTHER ALL
+   GARMAN MB, 1980, J BUS, V53, P67, DOI 10.1086/296072
+   Gropp R, 2004, J INT MONEY FINANC, V23, P405, DOI 10.1016/j.jimonfin.2004.01.005
+   Guidolin M., 2018, ESSENTIALS TIME SERI
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Lutkepohl H, 2005, NEW INTRO MULTIPLE T
+   MacKinnon James G., 2009, HDB COMPUTATIONAL EC
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Pounds S, 2006, BIOINFORMATICS, V22, P1979, DOI 10.1093/bioinformatics/btl328
+NR 25
+TC 0
+Z9 0
+U1 0
+U2 1
+PU AMER INST MATHEMATICAL SCIENCES-AIMS
+PI SPRINGFIELD
+PA PO BOX 2604, SPRINGFIELD, MO 65801-2604 USA
+SN 2573-0134
+J9 QUANT FINANC ECON
+JI Quant. Financ. Econ.
+PY 2018
+VL 2
+IS 3
+BP 661
+EP 701
+DI 10.3934/QFE.2018.3.661
+PG 41
+WC Business, Finance
+SC Business & Economics
+GA GV0XT
+UT WOS:000445789300006
+OA DOAJ Gold
+DA 2019-12-27
+ER

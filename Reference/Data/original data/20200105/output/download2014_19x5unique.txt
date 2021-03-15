@@ -1,0 +1,527 @@
+
+PT J
+AU Creed, WED
+   Hudson, BA
+   Okhuysen, GA
+   Smith-Crowe, K
+AF Creed, W. E. Douglas
+   Hudson, Bryant Ashley
+   Okhuysen, Gerardo A.
+   Smith-Crowe, Kristin
+TI SWIMMING IN A SEA OF SHAME: INCORPORATING EMOTION INTO EXPLANATIONS OF
+   INSTITUTIONAL REPRODUCTION AND CHANGE
+SO ACADEMY OF MANAGEMENT REVIEW
+LA English
+DT Article
+ID MORAL EMOTIONS; TEMPERED RADICALISM; WORK; SELF; ORGANIZATIONS;
+   EMBARRASSMENT; EXPRESSION; INTERPLAY; IDENTITY; STIGMA
+AB We theorize the role in institutional processes of what we call the "shame nexus," a set of shame-related constructs: felt shame, systemic shame, sense of shame, and episodic shaming. As a discrete emotion, felt shame signals to a person that a social bond is at risk, and it catalyzes a fundamental motivation to preserve valued bonds. Systemic shame we conceptualize as a form of disciplinary power, animated by persons' sense of shame a mechanism of ongoing intersubjective surveillance and self-regulation. We theorize how the duo of systemic shame and sense of shame drives the self-regulation that underpins persons' conformity to institutional prescriptions and institutional reproduction. We conceptualize episodic shaming as a form of juridical power used by institutional guardians to elicit renewed conformity and reassert institutional prescriptions, and also explain how episodic shaming may have unintended effects, including institutional disruption and recreation, when it triggers sensemaking among targets and observers that can lead to the reassessment of the appropriateness of institutional prescriptions or the value of social bonds. We link the shame nexus to three broad categories of institutional work.
+C1 [Creed, W. E. Douglas] Univ Rhode Isl, Coll Business Adm, Kingston, RI 02881 USA.
+   [Hudson, Bryant Ashley] Florida Atlantic Univ, Boca Raton, FL 33431 USA.
+   [Okhuysen, Gerardo A.] Univ Calif Irvine, Paul Merage Sch Business, Irvine, CA USA.
+   [Smith-Crowe, Kristin] Univ Utah, David Eccles Sch Business, Dept Management, Salt Lake City, UT 84112 USA.
+RP Creed, WED (reprint author), Univ Rhode Isl, Coll Business Adm, Kingston, RI 02881 USA.
+EM w.e.douglas.creed@gmail.com; bhudson5@fau.edu; gerardo.okhuysen@uci.edu;
+   kristin.smith-crowe@business.utah.edu
+RI Hudson, Bryant/AAD-4545-2019
+CR Anteby M, 2013, MANUFACTURING MORALS
+   Barley SR, 1997, ORGAN STUD, V18, P93, DOI 10.1177/017084069701800106
+   Barrett LF, 2007, ANNU REV PSYCHOL, V58, P373, DOI 10.1146/annurev.psych.58.110405.085709
+   Battilana J, 2009, INSTITUTIONAL WORK: ACTORS AND AGENCY IN INSTITUTIONAL STUDIES OF ORGANIZATIONS, P31, DOI 10.1017/CBO9780511596605.002
+   Baumeister RF, 2007, PERS SOC PSYCHOL REV, V11, P167, DOI 10.1177/1088868307301033
+   Bechky BA, 2011, ORGAN SCI, V22, P1157, DOI 10.1287/orsc.1100.0603
+   BENSON JK, 1977, ADMIN SCI QUART, V22, P1, DOI 10.2307/2391741
+   Berger P. L., 1967, SOCIAL CONSTRUCTION
+   BLAIR RJR, 1995, COGNITION, V57, P1, DOI 10.1016/0010-0277(95)00676-P
+   BLUMER H, 1969, SOCIOL QUART, V10, P275, DOI 10.1111/j.1533-8525.1969.tb01292.x
+   Bourdieu P., 1977, OUTLINE THEORY PRACT
+   Bowring MA, 2000, J MANAGE INQUIRY, V9, P258, DOI 10.1177/105649260093003
+   BRICKLEY JA, 1990, J ACCOUNT ECON, V12, P251, DOI 10.1016/0165-4101(90)90050-E
+   CIALDINI RB, 1976, J PERS SOC PSYCHOL, V34, P366, DOI 10.1037//0022-3514.34.3.366
+   Cohen TR, 2011, J PERS SOC PSYCHOL, V100, P947, DOI 10.1037/a0022641
+   Combs DJY, 2010, BASIC APPL SOC PSYCH, V32, P128, DOI 10.1080/01973531003738379
+   Cooley C. H., 2004, ORG IDENTITY, P16
+   Cooley C. H., 1967, SYMB INTERACT, P169
+   Cooper D. J., 2008, SAGE HDB ORG I, P673, DOI DOI 10.4135/9781849200387
+   Creed W. E. D., 1997, ANN M ACAD MAN BOST
+   Creed W. E. D., 2006, HDB WORKPLACE DIVERS, P371
+   Creed WED, 2010, ACAD MANAGE J, V53, P1336, DOI 10.5465/AMJ.2010.57318357
+   Creed WED, 2000, J MANAGE INQUIRY, V9, P391, DOI 10.1177/105649260000900410
+   Creed WED, 2003, J MANAGE STUD, V40, P1503, DOI 10.1111/1467-6486.00389
+   CRITES S, 1971, J AM ACAD RELIG, V39, P291
+   Dacin MT, 2010, ACAD MANAGE J, V53, P1393, DOI 10.5465/AMJ.2010.57318388
+   Dacin P. A., 2008, SAGE HDB ORG I, P1
+   de Hooge IE, 2010, COGNITION EMOTION, V24, P111, DOI 10.1080/02699930802584466
+   De Sousa R., 1987, RATIONALITY EMOTION
+   DeJordy R., 2010, THESIS BOSTON COLLEG
+   DeJordy R., 2008, GROUP ORGAN MANAGE, V33, P504, DOI DOI 10.1177/1059601108324879
+   DiMaggio Paul, 1988, I PATTERNS ORG CULTU, P3
+   Douglas Mary, 2013, NATURAL SYMBOLS EXPL
+   Elfenbein HA, 2007, ACAD MANAG ANN, V1, P315, DOI 10.1080/078559812
+   ELSBACH KD, 1992, ACAD MANAGE J, V35, P699, DOI 10.2307/256313
+   Emirbayer M, 1998, AM J SOCIOL, V103, P962, DOI 10.1086/231294
+   FOUCAULT M, 1982, CRIT INQUIRY, V8, P777, DOI 10.1086/448181
+   Foucault M, 1980, POWER KNOWLEDGE SELE
+   Foucault Michel, 1990, HIST SEXUALITY INTRO
+   Friedland R, 2002, SOCIOL THEOR, V20, P381, DOI 10.1111/0735-2751.00169
+   Friedland R., 1991, NEW I ORG ANAL, P232
+   Friedland R. R., 2012, SPEECH GIVEN ORG I C
+   Friedland R, 2012, MANAGEMENT, V15, P583, DOI 10.3917/mana.155.0583
+   GARFINKEL H., 1967, STUDIES ETHNOMETHODO
+   Gausel N, 2012, J PERS SOC PSYCHOL, V102, P941, DOI 10.1037/a0027233
+   Gelfand MJ, 2011, SCIENCE, V332, P1100, DOI 10.1126/science.1197754
+   Goffman E., 1963, STIGMA NOTES MANAGEM
+   Goffman Erving, 1967, INTERACTION RITUAL E
+   Goffman Erving, 1959, PRESENTATION SELF EV
+   Gould D. B., 2002, MOBILIZATION, V7, P177
+   Gouldner A. W., 1954, PATTERNS IND BUREAUC
+   GRASMICK HG, 1991, ENVIRON BEHAV, V23, P233, DOI 10.1177/0013916591232006
+   Gray B, 2013, ACAD MANAGE REV, V38, P670, DOI 10.5465/amr.2012.0143
+   Greenwood R., 2008, SAGE HDB ORG I
+   Gutierrez B, 2010, ACAD MANAGE J, V53, P673, DOI 10.5465/AMJ.2010.52814362
+   Haidt J, 2003, SER AFFECTIVE SCI, P852
+   Hallett T, 2006, THEOR SOC, V35, P213, DOI 10.1007/s11186-006-9003-z
+   Hasselbladh H, 2000, ORGAN STUD, V21, P697, DOI 10.1177/0170840600214002
+   Hirsch PM, 1997, AM BEHAV SCI, V40, P406, DOI 10.1177/0002764297040004004
+   Hirschman Albert, 1970, EXIT VOICE LOYALTY R
+   Hoffmann EA, 2006, SOC FORCES, V84, P2313, DOI 10.1353/sof.2006.0093
+   Hudson BA, 2009, ORGAN SCI, V20, P134, DOI 10.1287/orsc.1080.0368
+   Hutcherson CA, 2011, J PERS SOC PSYCHOL, V100, P719, DOI 10.1037/a0022408
+   James W., 1984, MIND, V19, P188, DOI DOI 10.1093/MIND/OS-IX.34.188
+   Kraatz M., 2008, SAGE HDB ORG I, P243, DOI DOI 10.4135/9781849200387
+   Lawrence T. B., 2006, SAGE HDB ORG STUDIES, P215, DOI [DOI 10.4135/9781848608030.N7, DOI 10.4135/9781848608030]
+   Lawrence T. B., 2008, SAGE HDB ORG I, P170, DOI DOI 10.4135/9781849200387.N7
+   Lawrence T, 2011, J MANAGE INQUIRY, V20, P52, DOI 10.1177/1056492610387222
+   Lawrence TB, 2009, INSTITUTIONAL WORK: ACTORS AND AGENCY IN INSTITUTIONAL STUDIES OF ORGANIZATIONS, P1, DOI 10.1017/CBO9780511596605.001
+   Leary Mark R., 2000, FEELING THINKING ROL, P331
+   LEWIS M, 1992, SHAME EXPOSED SELF
+   Lok J, 2013, ACAD MANAGE J, V56, P185, DOI 10.5465/amj.2010.0688
+   Maguire S, 2009, ACAD MANAGE J, V52, P148, DOI 10.5465/AMJ.2009.36461993
+   Martens JP, 2012, COGNITION EMOTION, V26, P390, DOI 10.1080/02699931.2011.645281
+   MEYER JW, 1977, AM J SOCIOL, V83, P340, DOI 10.1086/226550
+   Meyerson D. E., 2001, TEMPERED RADICALS PE
+   MEYERSON DE, 1995, ORGAN SCI, V6, P585, DOI 10.1287/orsc.6.5.585
+   Nasaw D., 2002, WALL STREET J, pB1
+   OLIVER C, 1991, ACAD MANAGE REV, V16, P145, DOI 10.2307/258610
+   OLIVER C, 1992, ORGAN STUD, V13, P563, DOI 10.1177/017084069201300403
+   OREILLY CA, 1989, CORPORATIONS CULTURE
+   Panagopoulos C, 2011, J POLIT, V73, P707, DOI 10.1017/S0022381611000405
+   Pontikes E, 2010, AM SOCIOL REV, V75, P456, DOI 10.1177/0003122410368929
+   Powell W. W., 2008, SAGE HDB ORG I, P276, DOI DOI 10.4135/9781849200387.N11
+   PRINZ J., 2004, THINKING FEELING CON, P44
+   Rojas F, 2010, ACAD MANAGE J, V53, P1263, DOI 10.5465/AMJ.2010.57317832
+   Rozin P, 1999, J PERS SOC PSYCHOL, V76, P574, DOI 10.1037/0022-3514.76.4.574
+   Sayer A, 2005, SOCIOLOGY, V39, P947, DOI 10.1177/0038038505058376
+   Scheff T.J., 1990, RES AGENDAS SOCIOLOG, P281
+   Scheff TJ, 2005, SYMB INTERACT, V28, P147, DOI 10.1525/si.2005.28.2.147
+   Scheff TJ, 2000, SOCIOL THEOR, V18, P84, DOI 10.1111/0735-2751.00089
+   Scott W. R., 2007, I ORG
+   Seo MG, 2002, ACAD MANAGE REV, V27, P222, DOI 10.5465/AMR.2002.6588004
+   Sheikh S, 2010, PERS SOC PSYCHOL B, V36, P213, DOI 10.1177/0146167209356788
+   Shiltz R., 1988, BAND PLAYED POLITICS
+   Smith RW, 2002, SYR S PEACE, P138
+   Smith-Crowe K., ORG SCI IN PRESS
+   Sullivan A, 1996, NEW REPUBLIC, V214, P10
+   TANGNEY JP, 1992, J PERS SOC PSYCHOL, V62, P669, DOI 10.1037/0022-3514.62.4.669
+   Tangney JP, 2007, ANNU REV PSYCHOL, V58, P345, DOI 10.1146/annurev.psych.56.091103.070145
+   Toneguzzi M., 2002, CALGARY HERALD, pA1
+   Tracy JL, 2004, PSYCHOL INQ, V15, P103, DOI 10.1207/s15327965pli1502_01
+   Turner Jonathan H., 2005, SOCIOLOGY EMOTIONS
+   Voronov M, 2012, ACAD MANAGE REV, V37, P58, DOI 10.5465/amr.2010.0247
+   Warren DE, 2008, RES ORGAN BEHAV, V28, P81, DOI 10.1016/j.riob.2008.04.004
+   Wayne L., 2009, NY TIMES, pB3
+   Weber K, 2006, ORGAN STUD, V27, P1639, DOI 10.1177/0170840606068343
+   Willmott H, 2011, J MANAGE INQUIRY, V20, P67, DOI 10.1177/1056492610387224
+   Zhou J, 2001, ACAD MANAGE J, V44, P682, DOI 10.2307/3069410
+   Zietsma C, 2010, ADMIN SCI QUART, V55, P189, DOI 10.2189/asqu.2010.55.2.189
+   Zilber TB, 2002, ACAD MANAGE J, V45, P234, DOI 10.2307/3069294
+   ZUCKER LG, 1977, AM SOCIOL REV, V42, P726, DOI 10.2307/2094862
+NR 112
+TC 85
+Z9 85
+U1 4
+U2 99
+PU ACAD MANAGEMENT
+PI BRIARCLIFF MANOR
+PA PACE UNIV, PO BOX 3020, 235 ELM RD, BRIARCLIFF MANOR, NY 10510-8020 USA
+SN 0363-7425
+EI 1930-3807
+J9 ACAD MANAGE REV
+JI Acad. Manage. Rev.
+PD JUL
+PY 2014
+VL 39
+IS 3
+BP 275
+EP 301
+DI 10.5465/amr.2012.0074
+PG 27
+WC Business; Management
+SC Business & Economics
+GA AK4JC
+UT WOS:000338390000003
+DA 2019-12-28
+ER
+
+PT J
+AU Heydon, K
+AF Heydon, Kenneth
+TI Plurilateral Agreements and Global Trade Governance: A Lesson from the
+   OECD
+SO JOURNAL OF WORLD TRADE
+LA English
+DT Article
+AB A key lesson from failure at the Organization for Economic Cooperation and Development (OECD) to negotiate a multilateral agreement on investment is that attempts to reduce barriers to trade and investment will fail without broad-based domestic support for open markets. This article applies that lesson to the faltering Doha Round of multilateral trade negotiations and argues that the deadlock is due to the collective failure to make-the-case for liberalization rather than, as is commonly suggested, the systemic constraints of a 'single undertaking' or the ascendancy of emerging powers. Deadlock in the Doha Round has triggered the pursuit of alternatives to multilateral negotiation. The result is increased emphasis on plurilateral approaches and the further entrenchment at the centre of trade diplomacy of preferential trade agreements (PTAs) - such as those being negotiated across the Pacific and the Atlantic. This article outlines the powerful motivations behind PTAs but also the dangers, including of limited welfare gains, disincentives to non-discriminatory liberalization and increased complexity and discord in international rule making. Plurilateral agreements involve particular risks for developing countries, whether through marginalization from single-issue agreements or asymmetric pressure within multi-issue PTAs. This article concludes that an effective, first-best, multilateral response to the challenge of the political economy of trade will require that trade liberalization be placed more firmly within the framework of sound domestic economic policy and that top-down liberalization, including through the G20 process, be accompanied by more effective bottom-up advocacy of the gains from market opening.
+RP Heydon, K (reprint author), London Sch Econ, London, England.
+EM ken.heydon@gmail.com
+CR [Anonymous], WORLD TRAD REP 2011
+   Banks Gary, 2003, EC WIDE VIEW SPEECHE, P25
+   Bayne Nicholas, 2011, NEW EC DIPLOMACY DEC, P231
+   Bhagwati Jagdish, 2002, FREE TRADE TODAY, P48
+   Bosworth Malcolm, 2014, PROPOSED NONMFN PLUR
+   Brennan Geoffrey, 2007, ROUNDT P BEH EC PUBL, P131
+   Corden W. M., 1972, J POLITICAL EC, V80, P456
+   Croome John, 1999, RESHAPING WORLD TRAD, P207
+   Estevadeordal A., 2013, GLOBAL VALUE CHAINS
+   Estevadeordal A., 2008, 868 CEP LOND SCH EC, P37
+   European Parliament, 2013, COMP INT TRAD POL EU
+   Haftel YZ, 2004, INT STUD QUART, V48, P121, DOI 10.1111/j.0020-8833.2004.00294.x
+   Henderson David, 2000, MAI AFFAIR STORY ITS, P10
+   Heydon K, 2014, J WORLD TRADE, V48, P1039
+   Heydon Kenneth, 2012, POLITICAL EC INT TRA, P29
+   Heydon Kenneth, 2009, RISE BILATERALISM CO, P159
+   Hoekman B, 2005, J INT ECON LAW, V8, P405, DOI 10.1093/jielaw/jgi027
+   Horn Henrik, 2012, WORLD ECON, V33, P1565
+   Hufbauer G, 2012, ASHGATE RESEARCH COMPANION TO INTERNATIONAL TRADE POLICY, P423
+   Jackson JH, 2012, ASHGATE RESEARCH COMPANION TO INTERNATIONAL TRADE POLICY, P387
+   Kowalski Przemyslav, 2006, TRADING UP, P17
+   Mavroidis Petros C, 2002, POLITICAL EC INT TRA
+   Narlikar Amrita, 2012, OXFORD HDB WORLD TRA, P1
+   Odell John S., 2000, NEGOTIATING WORLD EC
+   OECD, 2001, DEV DIM TRAD, P73
+   OECD WTO and UNCTAD, 2013, G20 LEAD SUMM SAINT
+   Olsen M., 1982, RISE DECLINE NATIONS
+   Pareto V., 1971, MANUAL POLITICAL EC
+   Park I., 2009, CONSOLIDATION HARMON
+   PUTNAM RD, 1988, INT ORGAN, V42, P427, DOI 10.1017/S0020818300027697
+   Sally Razeen, 2014, E ASIA FORUM WEEKLY
+   Snape Richard, 1998, AUSTR TRADE POLICY 1, P371
+   Sutherland P., 2004, FUTURE WTO ADDRESSIN
+   Tinbergen Jan, 1956, EC POLICY PRINCIPLES
+   TOLLISON RD, 1979, INT ORGAN, V33, P425, DOI 10.1017/S0020818300032252
+   Wolfe R, 2008, OECD AND TRANSNATIONAL GOVERNANCE, P25
+   Woolcock S, 2012, ASHGATE RESEARCH COMPANION TO INTERNATIONAL TRADE POLICY, P47
+   Woolcock Stephen, 2013, 08 R SCHUM CTR ADV S
+NR 38
+TC 7
+Z9 7
+U1 0
+U2 9
+PU KLUWER LAW INT
+PI ALPHEN AAN DEN RIJN
+PA ZUIDPOOLSINGEL 2, PO BOX 316, 2400 AH ALPHEN AAN DEN RIJN, NETHERLANDS
+SN 1011-6702
+EI 2210-2795
+J9 J WORLD TRADE
+JI J. World Trade
+PD OCT
+PY 2014
+VL 48
+IS 5
+BP 1039
+EP 1055
+PG 17
+WC Economics; International Relations; Law
+SC Business & Economics; International Relations; Government & Law
+GA CA6XL
+UT WOS:000349060700006
+DA 2019-12-28
+ER
+
+PT S
+AU Stanton, R
+   Walden, J
+   Wallace, N
+AF Stanton, Richard
+   Walden, Johan
+   Wallace, Nancy
+BE Lo, AW
+   Merton, RC
+TI The Industrial Organization of the US Residential Mortgage Market
+SO ANNUAL REVIEW OF FINANCIAL ECONOMICS, VOL 6
+SE Annual Review of Financial Economics
+LA English
+DT Article; Book Chapter
+DE mortgage; securitization; network
+ID COMPETITION; CONSEQUENCES; FINANCE
+AB We show that the US residential single-family mortgage-origination market is highly concentrated once account is taken of the contractual coordination that arises from the correspondent-and warehouse-funding channels. We represent these channels as a network, using the flow of loans through three strata of the loan origination market: origination, aggregation, and securitization. We develop a network representation of the origination market and demonstrate that it is a small world, in that most nodes are close in the network. We then rank-order the interlinked aggregators and securitizers using ex post mortgage foreclosure rates as a proxy for performance. Our findings suggest that these significant interlinkages in the mortgage-origination network represent a previously underappreciated source of systemic risk. Many apparently atomistic mortgage underwriters are, in fact, coordinated to act in parallel because of their funding relationships with the large, too-big-to-fail bank holding companies.
+C1 [Stanton, Richard; Walden, Johan; Wallace, Nancy] Univ Calif Berkeley, Haas Sch Business, Berkeley, CA 94720 USA.
+RP Stanton, R (reprint author), Univ Calif Berkeley, Haas Sch Business, Berkeley, CA 94720 USA.
+EM stanton@haas.berkeley.edu; walden@haas.berkeley.edu;
+   wallace@haas.berkeley.edu
+CR Acharya V, 2011, TESTING MACROPRUDENT
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2011, WILEY FINANC SER, P87
+   Agarwal S, 2012, INCONSISTENT REGULAT
+   Allen F, 2004, J MONEY CREDIT BANK, V36, P453, DOI 10.1353/mcb.2004.0038
+   Beck T, 2010, BAILING OUT BANKS RE
+   Berger AN, 1999, J BANK FINANC, V23, P135, DOI 10.1016/S0378-4266(98)00125-3
+   Billio M, 2010, 477410 SLOAN SCH BUS
+   Brownlees V, 2012, VOLATILITIES CORRELA
+   Calomiris CW, 2006, AM ECON REV, V96, P170, DOI 10.1257/000282806777211685
+   Cetorelli N, 2006, J FINANC, V61, P437, DOI 10.1111/j.1540-6261.2006.00841.x
+   Claessens S., 2009, COMPETITION FINANCIA
+   Ding L, 2010, IMPACT FEDERAL PREEM
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Engle R., 2012, DYNAMIC CONDITIONAL
+   Friedkin NE, 1999, ADV GROUP, V16, P1
+   Jackson Matthew O., 2013, NETWORK SCIENCE, V1, P49, DOI DOI 10.1017/NWS.2012.7
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   Jayaratne J, 1998, J LAW ECON, V41, P239, DOI 10.1086/467390
+   KANE EJ, 1989, S L INSURANCE MESS D
+   Kroszner RS, 1999, Q J ECON, V114, P1437, DOI 10.1162/003355399556223
+   Loutskina E, 2009, J FINANC, V64, P861, DOI 10.1111/j.1540-6261.2009.01451.x
+   Mian A, 2011, REV FINANC STUD, V24, P1773
+   Mian A, 2009, Q J ECON, V124, P1449, DOI 10.1162/qjec.2009.124.4.1449
+   MILGRAM S, 1967, PSYCHOL TODAY, V1, P61
+   OCC, 1998, MORTG BANK COMPTR HD
+   Pahl C., 2007, 20072 FED RES BANK
+   Rosen R., 2005, EC PERSPECT, V29, P16
+   Rosen R. J., 2011, EC PERSPECT, V35, P2
+   Rosen RJ, 2003, J MONEY CREDIT BANK, V35, P967, DOI 10.1353/mcb.2003.0048
+   Scharfstein D, 2013, CONCENTRATION MORTGA
+   Schweitzer L, 2008, J BANKRUPTCY LAW MAY, P357
+   Shleifer A., 1999, GRABBING HAND GOVT P
+   Stanton R, 2013, SECURITIZATION NETWO
+   STIGLER GJ, 1971, BELL J ECON, V2, P3, DOI 10.2307/3003160
+   Tenenbaum HS, 2011, ENVIRON PLANN A, V43, P1761, DOI 10.1068/a43328
+NR 36
+TC 6
+Z9 6
+U1 0
+U2 12
+PU ANNUAL REVIEWS
+PI PALO ALTO
+PA 4139 EL CAMINO WAY, PO BOX 10139, PALO ALTO, CA 94303-0897 USA
+SN 1941-1367
+BN 978-0-8243-4806-9
+J9 ANNU REV FINANC ECON
+JI Annu. Rev. Financ. Econ.
+PY 2014
+VL 6
+BP 259
+EP 288
+DI 10.1146/annurev-financial-110613-034324
+PG 30
+WC Business, Finance; Economics
+SC Business & Economics
+GA BB9QA
+UT WOS:000348560900011
+DA 2019-12-28
+ER
+
+PT J
+AU Rahman, D
+AF Rahman, Dima
+TI Are banking systems increasingly fragile? Investigating financial
+   institutions' CDS returns extreme co-movements
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Bank fragility; Counterparty risk; Financial crisis; Conditional
+   correlation; Extreme co-movement; Monte Carlo simulation; Multivariate
+   GARCH; C1; C3; C15; C32; G2; G21; G22
+AB This paper investigates potential contagion among the major financial institutions in developed economies. Using Credit Default Swaps (CDS) premia as a measure of both credit and counterparty risks, our analysis focuses on the extreme co-movements of financial institutions' default swap contracts during the high level of stress undergone by the CDS markets in the aftermath of the 2007 sub-prime crisis. Our approach is twofold. First, under different tail dependence scenarios, we calibrate several multivariate linear models of constant correlation. Our Monte Carlo simulation study finds evidence of contagion for financial institutions, notably in the U.S., and captures a non-normal dependence structure in the tails for the traded contracts. Second, we estimate a multivariate Dynamic Conditional Correlation-GARCH (DCC-GARCH) model, and demonstrate significant ARCH and GARCH effects, as well as time-varying correlations in CDS spread variations. Our overall analysis rejects the assumption of constant correlation. More importantly, it advocates changing structures in the tail dependence for CDS returns series during times of financial turmoil as an important feature of banks' increased fragility.
+C1 Univ Paris Ouest Nanterre La Def, F-92001 Nanterre, Paris, France.
+RP Rahman, D (reprint author), Univ Paris Ouest Nanterre La Def, 200 Ave Republ, F-92001 Nanterre, Paris, France.
+EM dima.rahman@u-paris10.fr
+CR Anderson M, 2011, WORKING PAPER
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   [Anonymous], 2002, J EMPIR FINANC, V9, P171
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baig T., 1998, IMF WORKING PAPERS, V98/155
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Boyer B. H., 1999, 597 BOARD GOV FED RE
+   Brandes A. J., 2008, TAX NOTES, V120
+   Chesnay F., 2000, 73 BANQ FRANC
+   Cont R., 2009, TOO INTERCONNECTED F
+   Coudert V., 2008, WORKING PAPERS CEPII
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   Eberlein E., 1995, BERNOULLI, V1, P281, DOI DOI 10.2307/3318481
+   EICHENGREEN B, 2009, 14904 NBER
+   Elton EJ, 2004, J BANK FINANC, V28, P2747, DOI 10.1016/j.jbankfin.2004.06.008
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R, 2001, NBER WORKING PAPERS, V8554
+   European Central Bank, 2009, CRED DEF SWAPS COUNT
+   Fang KT, 1990, SYMMETRIC MULTIVARIA
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Haldane A, 2009, MARC EV C STRESS TES
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Haworth H, 2008, QUANT FINANC, V8, P669, DOI 10.1080/14697680701834614
+   International Monetary Fund, 2009, RESP FIN CRIS MEAS S
+   Jondeau E, 2007, SPRINGER FINANC, P3
+   Jorion P., 2009, J FINANC, V64, P2223
+   Jorion P., 2007, J FINANC ECON, V84, P2053
+   Kim T.-H., 2004, FINANC RES LETT, V1, P56, DOI DOI 10.1016/S1544-6123(03)00003-5
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Longstaff FA, 2005, J FINANC, V60, P2213, DOI 10.1111/j.1540-6261.2005.00797.x
+   Minderhoud K., 2003, MEB SERIES
+   MOORS JJA, 1988, J ROY STAT SOC D-STA, V37, P25, DOI 10.2307/2348376
+   Nelsen R. B, 2006, INTRO COPULAS
+   NELSON DB, 1992, J BUS ECON STAT, V10, P229, DOI 10.2307/1391681
+   Norden L., 2004, CFS WORKING PAPER SE
+   Ramchand L., 1998, J EMPIR FINANC, V5, P397, DOI DOI 10.1016/S0927-5398(98)00003-6
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Tang D.Y., 2007, LIQUIDITY CREDIT DEF
+   Tse YK, 2000, J ECONOMETRICS, V98, P107, DOI 10.1016/S0304-4076(99)00080-9
+NR 40
+TC 0
+Z9 0
+U1 1
+U2 11
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD MAY 4
+PY 2014
+VL 14
+IS 5
+BP 805
+EP 830
+DI 10.1080/14697688.2013.797593
+PG 26
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA AE9NO
+UT WOS:000334334700007
+DA 2019-12-27
+ER
+
+PT J
+AU Schmitt, N
+   Westerhoff, F
+AF Schmitt, Noemi
+   Westerhoff, Frank
+TI Speculative behavior and the dynamics of interacting stock markets
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article; Proceedings Paper
+CT CeNDEF Symposium
+CY OCT, 2013
+CL Amsterdam, NETHERLANDS
+SP CeNDEF
+DE Stock markets; Comovements; Cross-correlations; Technical and
+   fundamental analysis; Agent-based modeling; Simulation analysis
+ID ASSET-PRICING-MODELS; TRADING VOLUME; HETEROGENEOUS EXPECTATIONS; LONG
+   MEMORY; VOLATILITY; CONTAGION; RETURNS; BUBBLES; RISK
+AB We develop a simple agent-based financial market model in which heterogeneous speculators apply technical and fundamental analysis to trade in two different stock markets. Speculators' strategy/market selections are repeated at each time step and depend on predisposition effects, herding behavior and market circumstances. Simulations reveal that our model is able to explain a number of nontrivial statistical properties of and between international stock markets, including bubbles and crashes, fat-tailed return distributions, volatility clustering, persistent trading volume, coevolving stock prices and cross-correlated volatilities. Against this background, our model may be deemed to have been validated. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Schmitt, Noemi; Westerhoff, Frank] Univ Bamberg, Dept Econ, D-96045 Bamberg, Germany.
+RP Westerhoff, F (reprint author), Univ Bamberg, Dept Econ, Feldkirchenstr 21, D-96045 Bamberg, Germany.
+EM frank.westerhoff@uni-bamberg.de
+RI Westerhoff, Frank/F-2933-2015
+OI Westerhoff, Frank/0000-0003-1666-4103
+CR Alfarano S., 2005, Computational Economics, V26, P19, DOI 10.1007/s10614-005-6415-1
+   Baker M, 2006, J FINANC, V61, P1645, DOI 10.1111/j.1540-6261.2006.00885.x
+   Banerjee S, 2010, J FINANC, V65, P1268, DOI 10.1111/j.1540-6261.2010.01570.x
+   Barberis N, 2005, J FINANC ECON, V75, P283, DOI 10.1016/j.jfineco.2004.04.003
+   Barberis N, 2003, J FINANC ECON, V68, P161, DOI 10.1016/S0304-405X(03)00064-3
+   Bollerslev T, 1999, J BUS ECON STAT, V17, P9, DOI 10.2307/1392235
+   Boswijk HP, 2007, J ECON DYN CONTROL, V31, P1938, DOI 10.1016/j.jedc.2007.01.001
+   Brock WA, 2009, J ECON DYN CONTROL, V33, P1912, DOI 10.1016/j.jedc.2009.05.004
+   Brock WA, 1998, J ECON DYN CONTROL, V22, P1235, DOI 10.1016/S0165-1889(98)00011-6
+   Brock WA, 1996, REV ECON STAT, V78, P94, DOI 10.2307/2109850
+   Caccioli F., 2012, STABILITY ANAL FINAN
+   Chen SH, 2008, J ECON BEHAV ORGAN, V67, P702, DOI 10.1016/j.jebo.2006.11.006
+   Chiarella C, 2002, J ECON BEHAV ORGAN, V49, P173, DOI 10.1016/S0167-2681(02)00066-5
+   Chiarella C, 2007, J ECON BEHAV ORGAN, V62, P408, DOI 10.1016/j.jebo.2005.08.005
+   Chiarella C, 2013, ANN FINANC, V9, P185, DOI 10.1007/s10436-012-0215-0
+   Chiarella C, 2013, J EVOL ECON, V23, P609, DOI 10.1007/s00191-011-0233-5
+   Chiarella C, 2009, HANDB FINANC, P277, DOI 10.1016/B978-012374258-2.50009-9
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   Cont R, 2001, QUANT FINANC, V1, P223, DOI [10.1088/1469-7688/1/2/304, 10.1080/713665670]
+   Corona E, 2008, COMPUT ECON, V32, P99, DOI 10.1007/s10614-008-9135-5
+   Corsi F., 2013, MICRO PRUDENCE INCRE
+   DAY RH, 1990, J ECON BEHAV ORGAN, V14, P299, DOI 10.1016/0167-2681(90)90061-H
+   DeGrauwe P, 1993, EXCHANGE RATE THEORY
+   Dieci R, 2010, J ECON DYN CONTROL, V34, P743, DOI 10.1016/j.jedc.2009.11.002
+   Edwards S, 2001, J DEV ECON, V66, P505, DOI 10.1016/S0304-3878(01)00172-9
+   Farmer JD, 2002, J ECON BEHAV ORGAN, V49, P149, DOI 10.1016/S0167-2681(02)00065-3
+   Feldman T, 2010, J ECON BEHAV ORGAN, V75, P192, DOI 10.1016/j.jebo.2010.03.014
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Franke R, 2012, J ECON DYN CONTROL, V36, P1193, DOI 10.1016/j.jedc.2011.10.004
+   Franke R, 2010, J ECON DYN CONTROL, V34, P1140, DOI 10.1016/j.jedc.2010.02.002
+   Franke R, 2008, J ECON INTERACT COOR, V3, P201, DOI 10.1007/s11403-008-0042-6
+   GALLANT AR, 1992, REV FINANC STUD, V5, P199, DOI 10.1093/rfs/5.2.199
+   Gaunersdorfer A, 2007, LONG MEMORY EC, P265, DOI DOI 10.1007/978-3-540-34625-8_9
+   Gilli M, 2003, COMPUT STAT DATA AN, V42, P299, DOI 10.1016/S0167-9473(02)00214-1
+   Graham B, 1951, SECURITY ANAL
+   Guillaume D. M., 1997, FINANC STOCH, V1, P95, DOI DOI 10.1007/S007800050018
+   He XZ, 2007, J ECON DYN CONTROL, V31, P3396, DOI 10.1016/j.jedc.2006.11.008
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Hommes C, 2011, J ECON DYN CONTROL, V35, P1, DOI 10.1016/j.jedc.2010.10.003
+   Hommes C, 2009, HANDB FINANC, P217, DOI 10.1016/B978-012374258-2.50008-7
+   Huang W., 2014, MATH COMPUT SIMUL
+   Huang W., 2013, 201309 EGC NAN TECHN
+   Huang WH, 2014, J ECON BEHAV ORGAN, V99, P18, DOI 10.1016/j.jebo.2013.12.009
+   Huang WH, 2010, J ECON DYN CONTROL, V34, P1105, DOI 10.1016/j.jedc.2010.01.013
+   Karolyi GA, 2003, HANDB ECON, V21, P975
+   Karolyi GA, 1996, J FINANC, V51, P951, DOI 10.2307/2329228
+   KARPOFF JM, 1987, J FINANC QUANT ANAL, V22, P109, DOI 10.2307/2330874
+   Kindleberger C.P., 2000, MANIAS PANICS CRASHE
+   Kirman A, 2007, MACROECON DYN, V11, P102, DOI 10.1017/S1365100507060257
+   Lee BS, 2002, J BANK FINANC, V26, P51, DOI 10.1016/S0378-4266(00)00173-4
+   Lo A., 2010, REV FINANCIAL STUD, V13, P257
+   Lobato IN, 2000, J BUS ECON STAT, V18, P410, DOI 10.2307/1392223
+   LUX T, 1995, ECON J, V105, P881, DOI 10.2307/2235156
+   Lux T, 1999, NATURE, V397, P498, DOI 10.1038/17290
+   Lux T, 2007, J ECON DYN CONTROL, V31, P1808, DOI 10.1016/j.jedc.2007.01.010
+   Lux T, 2009, HANDB FINANC, P161, DOI 10.1016/B978-012374258-2.50007-5
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   Mantegna RN, 2000, INTRO ECONOPHYSICS
+   Manzan S, 2007, J ECON BEHAV ORGAN, V64, P111, DOI 10.1016/j.jebo.2006.08.005
+   Menkhoff L, 2007, J ECON LIT, V45, P936, DOI 10.1257/jel.45.4.936
+   Murphy J, 1999, TECHNICAL ANAL FINAN
+   Pape B., 2007, J ECON INTERACT COOR, V2, P163
+   Podobnik B, 2007, EUR PHYS J B, V56, P47, DOI 10.1140/epjb/e2007-00089-3
+   SHILLER RJ, 1989, J FINANC, V44, P719, DOI 10.2307/2328779
+   Shiller Robert J., 2005, IRRATIONAL EXUBERANC
+   Sornette D, 2003, WHY STOCK MARKETS CRASH: CRITICAL EVENTS IN COMPLEX FINANCIAL SYSTEMS, P1
+   TESAR LL, 1994, NAT BUR EC, P185
+   Tramontana F, 2010, J ECON BEHAV ORGAN, V74, P187, DOI 10.1016/j.jebo.2010.02.008
+   Wagner W, 2011, J FINANC, V66, P1141, DOI 10.1111/j.1540-6261.2011.01666.x
+   Westerhoff F, 2003, J ECON DYN CONTROL, V28, P493, DOI 10.1016/S0165-1889(02)00185-9
+   Westerhoff F, 2014, OUP HDB COMPUTATIONA
+   Westerhoff FH, 2006, J ECON DYN CONTROL, V30, P293, DOI 10.1016/j.jedc.2004.12.004
+   Westerhoff FH, 2004, MACROECON DYN, V8, P596, DOI 10.1017/S1365100504040040
+NR 73
+TC 17
+Z9 18
+U1 0
+U2 26
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD AUG
+PY 2014
+VL 45
+BP 262
+EP 288
+DI 10.1016/j.jedc.2014.05.009
+PG 27
+WC Economics
+SC Business & Economics
+GA AN6HC
+UT WOS:000340694600015
+DA 2019-12-27
+ER

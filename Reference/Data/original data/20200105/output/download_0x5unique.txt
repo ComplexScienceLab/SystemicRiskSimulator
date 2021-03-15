@@ -1,0 +1,510 @@
+
+PT J
+AU Escanciano, JC
+   Hualde, J
+AF Escanciano, Juan Carlos
+   Hualde, Javier
+TI Measuring Asset Market Linkages: Nonlinear Dependence and Tail Risk
+SO JOURNAL OF BUSINESS & ECONOMIC STATISTICS
+LA English
+DT Article; Early Access
+DE Expected shortfall; Market crashes; Nonlinear dependence; Tail risk
+ID NONPARAMETRIC MODEL CHECKS; TIME-SERIES; DISTANCE CORRELATION; TESTS;
+   BOOTSTRAP; SHORTFALL
+AB Traditional measures of dependence in time series are based on correlations or periodograms. These are adequate in many circumstances but, in others, especially when trying to assess market linkages and tail risk during abnormal times (e.g., financial contagion), they might be inappropriate. In particular, popular tail dependence measures based on exceedance correlations and marginal expected shortfall (MES) have large variances and also contain limited information on tail risk. Motivated by these limitations, we introduce the (tail-restricted) integrated regression function, and we show how it characterizes conditional dependence and persistence. We propose simple estimates for these measures and establish their asymptotic properties. We employ the proposed methods to analyze the dependence structure of some of the major international stock market indices before, during, and after the 2007-2009 financial crisis. Monte Carlo simulations and the application show that our new measures are more reliable and accurate than competing methods based on MES or exceedance correlations for testing tail dependence. for this article are available online.
+C1 [Escanciano, Juan Carlos] Univ Carlos III Madrid, Dept Econ, Madrid, Spain.
+   [Hualde, Javier] Univ Publ Navarra, Dept Econ, Pamplona, Spain.
+RP Escanciano, JC (reprint author), Univ Carlos III Madrid, Dept Econ, Calle Madrid 126, Getafe 20897, Spain.
+EM jescanci@eco.uc3m.es
+FU Spanish Plan Nacional de I+D+i [PGC2018-096732-B-I00]; 
+   [ECO2015-64330-P]
+FX Research funded by the Spanish Programa deGeneracion deConocimiento
+   (reference number PGC2018-096732-B-I00) and Spanish Plan Nacional de
+   I+D+i (reference number ECO2015-64330-P).
+CR Acharya V., 2010, WORKING PAPER
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Arcones M., 1995, J THEORETICAL PROBAB, V7, P47, DOI DOI 10.1007/BF02213360
+   AUESTAD B, 1990, BIOMETRIKA, V77, P669, DOI 10.2307/2337091
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Berentsen GD, 2014, STAT COMPUT, V24, P785, DOI 10.1007/s11222-013-9402-8
+   BIERENS HJ, 1982, J ECONOMETRICS, V20, P105, DOI 10.1016/0304-4076(82)90105-1
+   Brownlees C., 2012, WORKING PAPER
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   BUJA A, 1990, ANN STAT, V18, P1032, DOI 10.1214/aos/1176347739
+   Cai JJ, 2015, J R STAT SOC B, V77, P417, DOI 10.1111/rssb.12069
+   Christoffersen P, 2012, REV FINANC STUD, V25, P3711, DOI 10.1093/rfs/hhs104
+   Davidson J., 1994, STOCHASTIC LIMIT THE
+   Davis RA, 2018, J ECONOMETRICS, V205, P508, DOI 10.1016/j.jeconom.2018.01.009
+   Davis RA, 2018, BERNOULLI, V24, P3087, DOI 10.3150/17-BEJ955
+   Davis RA, 2009, BERNOULLI, V15, P977, DOI 10.3150/09-BEJ213
+   Dette H, 2015, BERNOULLI, V21, P781, DOI 10.3150/13-BEJ587
+   Doukhan P, 1994, LECT NOTES STAT
+   Escanciano J. C., 2017, 2017017 CAEPR
+   Escanciano JC, 2006, COMPUT STAT DATA AN, V51, P2278, DOI 10.1016/j.csda.2006.07.039
+   Escanciano JC, 2006, J ECONOMETRICS, V134, P151, DOI 10.1016/j.jeconom.2005.06.019
+   Escanciano JC, 2006, J AM STAT ASSOC, V101, P531, DOI 10.1198/016214505000001050
+   Escanciano JC, 2009, J ECONOMETRICS, V151, P140, DOI 10.1016/j.jeconom.2009.03.001
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gourieroux C, 2002, J TIME SER ANAL, V23, P127, DOI 10.1111/1467-9892.00259
+   Gourieroux C., 1999, PREPRINT
+   Granger C. W. J., 1991, J TIME SER ANAL, V12, P207
+   GRANGER CWJ, 1995, ECONOMETRICA, V63, P265, DOI 10.2307/2951626
+   Granger CWJ, 2003, OXFORD B ECON STAT, V65, P689, DOI 10.1046/j.0305-9049.2003.00094.x
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hoeffding W., 1940, COLLECTIVE WORKS W H
+   Hong YM, 1999, J AM STAT ASSOC, V94, P1201, DOI 10.2307/2669935
+   Koul HL, 1999, ANN STAT, V27, P204
+   KUNSCH HR, 1989, ANN STAT, V17, P1217, DOI 10.1214/aos/1176347265
+   Lacal V., 2018, J BUSINESS EC STAT
+   Lacal V, 2017, J TIME SER ANAL, V38, P51, DOI 10.1111/jtsa.12195
+   Linton O, 2007, J ECONOMETRICS, V141, P250, DOI 10.1016/j.jeconom.2007.01.004
+   Liu RY, 1992, EXPLORING LIMITS BOO, P225
+   Lo A. W., 1999, NONRANDOM WALK WALL
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Malevergne Y, 2006, EXTREME FINANCIAL RISKS: FROM DEPENDENCE TO RISK MANAGEMENT, P1
+   MCLEISH DL, 1974, ANN PROBAB, V2, P620, DOI 10.1214/aop/1176996608
+   Morgenstern O., 1959, INT FINANCIAL T BUSI
+   Oh DH, 2017, J BUS ECON STAT, V35, P139, DOI 10.1080/07350015.2015.1062384
+   Otneim H., 2018, PACKAGE LG
+   POLITIS DN, 1994, J AM STAT ASSOC, V89, P1303, DOI 10.2307/2290993
+   Politis DN, 1999, SUBSAMPLING
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Racine J. S., 2018, PACKAGE NP
+   Radulovic D, 1996, STOCH PROC APPL, V65, P259, DOI 10.1016/S0304-4149(96)00102-0
+   Robinson P. M., 1983, J TIME SER ANAL, V4, P185, DOI DOI 10.1111/J.1467-9892.1983.TB00368.X
+   SCAILLET O, 2005, INS RISK MANAGE J, V74, P639
+   SCHWEIZER B, 1981, ANN STAT, V9, P879, DOI 10.1214/aos/1176345528
+   Stute W, 1997, ANN STAT, V25, P613
+   Szekely GJ, 2009, ANN APPL STAT, V3, P1303, DOI 10.1214/09-AOAS312REJ
+   Terasvirta T., 2011, REV MODELLING NONLIN
+   van der Vaart A. W., 1996, WEAK CONVERGENCE EMP
+   WRIGHT R, 1987, THEOR DECIS, V22, P111, DOI 10.1007/BF00126386
+   Zhou Z, 2012, J TIME SER ANAL, V33, P438, DOI 10.1111/j.1467-9892.2011.00780.x
+NR 61
+TC 0
+Z9 0
+U1 6
+U2 6
+PU AMER STATISTICAL ASSOC
+PI ALEXANDRIA
+PA 732 N WASHINGTON ST, ALEXANDRIA, VA 22314-1943 USA
+SN 0735-0015
+EI 1537-2707
+J9 J BUS ECON STAT
+JI J. Bus. Econ. Stat.
+DI 10.1080/07350015.2019.1668797
+EA OCT 2019
+PG 13
+WC Economics; Social Sciences, Mathematical Methods; Statistics &
+   Probability
+SC Business & Economics; Mathematical Methods In Social Sciences;
+   Mathematics
+GA JH1PE
+UT WOS:000492543100001
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Schultz, MD
+   Seele, P
+AF Schultz, Mario D.
+   Seele, Peter
+TI Conceptualizing data-deliberation: The starry sky beetle, environmental
+   system risk, and Habermasian CSR in the digital age
+SO BUSINESS ETHICS-A EUROPEAN REVIEW
+LA English
+DT Article; Early Access
+ID CORPORATE SOCIAL-RESPONSIBILITY; INFECTIOUS-DISEASE SURVEILLANCE;
+   BIG-DATA; POLITICAL ACTIVITY; STAKEHOLDER THEORY; BUSINESS;
+   TRANSPARENCY; FIRM; CITIZENSHIP; PERSPECTIVE
+AB Building on an illustrative case of a systemic environmental threat and its multi-stakeholder response, this paper draws attention to the changing political impacts of corporations in the digital age. Political Corporate Social Responsibility (PCSR) theory suggests an expanded sense of politics and corporations, including impacts that may range from voluntary initiatives to overcome governance gaps, to avoiding state regulation via corporate political activity. Considering digitalization as a stimulus, we explore potential responsibilities of corporations toward public goods in contexts with functioning governments. We show that digitalization-in the form of transparency, surveillance, and data-sharing-offers corporations' scope for deliberative public participation. The starry sky beetle infestation endangering public and private goods is thereby used to illustrate the possibility of expanding the political role of corporations in the digital sphere. We offer a contribution by conceptualizing data-deliberation as a Habermasian variation of PCSR, defined as the (a) voluntary disclosure of corporate data and its transparent, open sharing with the public sector (b) along with the cooperation with governmental institutions on data analytics methods for examining large-scale datasets (c) thereby complying with existing national and international regulations on data protection, in particular with respect to privacy and personal data.
+C1 [Schultz, Mario D.; Seele, Peter] USI, Fac Commun Sci Corp Social Responsibil & Business, Via Buffi 13, CH-6900 Lugano, Switzerland.
+RP Schultz, MD (reprint author), USI, Fac Commun Sci Corp Social Responsibil & Business, Via Buffi 13, CH-6900 Lugano, Switzerland.
+EM mario.schultz@usi.ch
+OI Schultz, Mario D./0000-0002-5622-3188; Seele, Peter/0000-0002-6456-4003
+CR Ahammad MF, 2017, BRIT J MANAGE, V28, P629, DOI 10.1111/1467-8551.12228
+   Albu OB, 2019, BUS SOC, V58, P268, DOI 10.1177/0007650316659851
+   Anastasiadis S, 2018, BUS ETHICS, V27, P207, DOI 10.1111/beer.12180
+   Anastasiadis S, 2014, BUS SOC, V53, P260, DOI 10.1177/0007650313483495
+   Ball K., 2012, ROUTLEDGE HDB SURVEI
+   Bansal S, 2016, J INFECT DIS, V214, pS375, DOI 10.1093/infdis/jiw400
+   Baru C, 2018, NATURE, V561, P464, DOI 10.1038/d41586-018-06804-4
+   Bernstein ES, 2017, ACAD MANAG ANN, V11, P217, DOI 10.5465/annals.2014.0076
+   Bernstein ES, 2012, ADMIN SCI QUART, V57, P181, DOI 10.1177/0001839212453028
+   Berry D. M., 2006, Information Polity, V11, P21
+   Bulletin OEPP/EPPO, 1999, EPPO B, V29, P497
+   Bundesamt fur Umwelt, 2016, AS LAUBH
+   Bundesamt fur Umwelt, 2015, ALLG BETR DURCHS ISP
+   Camacho-Collados M, 2015, DECIS SUPPORT SYST, V75, P25, DOI 10.1016/j.dss.2015.04.012
+   Cattaneo L, 2018, FRONT PSYCHOL, V9, DOI 10.3389/fpsyg.2018.01171
+   Cavazos DE, 2018, BUS ETHICS, V27, P156, DOI 10.1111/beer.12179
+   Custers B, 2018, COMPUT LAW SECUR REV, V34, P234, DOI 10.1016/j.clsr.2017.09.001
+   den Hond F, 2014, J MANAGE STUD, V51, P790, DOI 10.1111/joms.12063
+   Doorey DJ, 2011, J BUS ETHICS, V103, P587, DOI 10.1007/s10551-011-0882-1
+   Dowell SF, 2016, NATURE, V540, P189, DOI 10.1038/540189a
+   Ehrnstrom-Fuentes M, 2016, J MANAGE STUD, V53, P433, DOI 10.1111/joms.12173
+   Eidgenossischer Pflanzenschutzdienst EPSD, 2013, LEITF ZUM UMG AS LAU
+   Enderle G, 2018, J BUS ETHICS, V150, P619, DOI 10.1007/s10551-016-3196-5
+   Etter M, 2019, J BUS ETHICS, V159, P935, DOI 10.1007/s10551-019-04212-w
+   Etzioni A, 2019, J BUS ETHICS, V156, P1, DOI 10.1007/s10551-017-3627-y
+   European Union, 2017, LONGH BEETL SURV EU
+   European Union, 2016, LONGH BEETL ANN SURV
+   Faugere C, 2017, BUS ETHICS, V26, P271, DOI 10.1111/beer.12138
+   Fernback J, 2013, TELEMAT INFORMAT, V30, P11, DOI 10.1016/j.tele.2012.03.003
+   Floridi L, 2014, 4 REVOLUTION INFOSPH
+   Floridi L, 2018, PHILOS T R SOC A, V376, DOI 10.1098/rsta.2018.0081
+   Flyverbom M, 2015, MANAGE COMMUN Q, V29, P385, DOI 10.1177/0893318915593116
+   Freeman E., 2018, MIT SLOAN MANAGE REV, V59, P1
+   Friedman M., 1962, CAPITALISM FREEDOM
+   Frynas JG, 2017, BRIT J MANAGE, V28, P559, DOI 10.1111/1467-8551.12253
+   Frynas JG, 2015, INT J MANAG REV, V17, P483, DOI 10.1111/ijmr.12049
+   George G, 2014, ACAD MANAGE J, V57, P321, DOI 10.5465/amj.2014.4002
+   Gonin M, 2012, BUS ETHICS, V21, P31, DOI 10.1111/j.1467-8608.2011.01643.x
+   Gross J, 2019, SCI ADV, V5, DOI 10.1126/sciadv.aau7296
+   Haack RA, 2010, ANNU REV ENTOMOL, V55, P521, DOI 10.1146/annurev-ento-112408-085427
+   Habermas J., 1987, THEORY COMMUNICATIVE, V2
+   Habermas J., 2001, POSTNATIONAL CONSTEL
+   Habermas J., 1996, CONTRIBUTIONS DISCOU
+   Harford T, 2014, SIGNIFICANCE, V11, P14, DOI DOI 10.1111/J.1740-9713.2014.00778.X
+   Heath T., 2016, THIS EMPLOYEE ID BAD
+   Helbing D., 2019, DIGITAL ENLIGHTENMEN
+   Helbing D, 2015, NATURE, V527, P33, DOI 10.1038/527033a
+   Hulme PE, 2009, J APPL ECOL, V46, P10, DOI 10.1111/j.1365-2664.2008.01600.x
+   Hussain W, 2018, J BUS ETHICS, V149, P519, DOI 10.1007/s10551-016-3027-8
+   Ingenhoff D, 2019, PUBLIC RELAT REV, V45, P348, DOI 10.1016/j.pubrev.2019.01.002
+   Jensen MC, 2002, BUS ETHICS Q, V12, P235, DOI 10.2307/3857812
+   Kamasak R, 2019, BUS ETHICS, V28, P305, DOI 10.1111/beer.12223
+   Kelly K, 2018, FORENSIC CHEM, V7, P10, DOI 10.1016/j.forc.2017.11.002
+   Kewell B, 2017, STRATEG CHANG, V26, P429, DOI 10.1002/jsc.2143
+   Lee EC, 2016, J INFECT DIS, V214, pS409, DOI 10.1093/infdis/jiw344
+   LfL Bayern, 2017, AS LAUBH BAYERN
+   Lock I, 2018, J PUBLIC AFF, V18, DOI 10.1002/pa.1667
+   Lock I, 2016, J MANAGE INQUIRY, V25, P415, DOI 10.1177/1056492616640379
+   Lyon D., 2007, SURVEILLANCE STUDIES
+   Lyon D., 2018, CULTURE SURVEILLANCE
+   Makinen J, 2012, BUS ETHICS Q, V22, P649, DOI 10.5840/beq201222443
+   Martin K, 2019, J BUS ETHICS, V156, P21, DOI 10.1007/s10551-018-3780-y
+   Martinez-Ferrero J, 2017, BUS ETHICS, V26, P223, DOI 10.1111/beer.12152
+   Mellahi K, 2016, J MANAGE, V42, P143, DOI 10.1177/0149206315617241
+   Moon J, 2005, BUS ETHICS Q, V15, P429, DOI 10.5840/beq200515329
+   Nowak DJ, 2001, J ECON ENTOMOL, V94, P116, DOI 10.1603/0022-0493-94.1.116
+   Oj L., 2015, OFFICIAL J EUROPEAN, V58, P16
+   Parris DL, 2016, MANAGE DECIS, V54, P222, DOI 10.1108/MD-07-2015-0279
+   Pimentel Samuel, 2011, Frontiers in Genetics, V2, P14, DOI 10.3389/fgene.2011.00014
+   Pirson M, 2016, BUS ETHICS, V25, P400, DOI 10.1111/beer.12131
+   Pysek P, 2010, ANNU REV ENV RESOUR, V35, P25, DOI 10.1146/annurev-environ-033009-095548
+   Rao-Nicholson R, 2019, BUS ETHICS, V28, P56, DOI 10.1111/beer.12206
+   Richter UH, 2017, BUS ETHICS, V26, P428, DOI 10.1111/beer.12164
+   Risse T, 2018, ANNU REV POLIT SCI, V21, P403, DOI 10.1146/annurev-polisci-041916-023610
+   Salathe M, 2016, J INFECT DIS, V214, pS399, DOI 10.1093/infdis/jiw281
+   Scherer AG, 2007, ACAD MANAGE REV, V32, P1096, DOI 10.5465/AMR.2007.26585837
+   Scherer AG, 2018, INT J MANAG REV, V20, P387, DOI 10.1111/ijmr.12137
+   Scherer AG, 2016, J MANAGE STUD, V53, P273, DOI 10.1111/joms.12203
+   Scherer AG, 2014, BUS SOC, V53, P143, DOI 10.1177/0007650313511778
+   Scherer AG, 2011, J MANAGE STUD, V48, P899, DOI 10.1111/j.1467-6486.2010.00950.x
+   Schultz M. D., 2019, HDB BUSINESS LEGITIM
+   Seele P, 2017, BUS STRATEG ENVIRON, V26, P239, DOI 10.1002/bse.1912
+   Seele P, 2016, J CLEAN PROD, V136, P65, DOI 10.1016/j.jclepro.2016.01.102
+   Simon P., 2014, POTHOLES BIG DATA CR
+   Simonsen L, 2016, J INFECT DIS, V214, pS380, DOI 10.1093/infdis/jiw376
+   Solon O., 2018, CAMBRIDGE ANAL CLOSI
+   Uber Technologies I, 2017, MOV LETS FIND SMART
+   Westermann-Behaylo MK, 2015, ACAD MANAGE PERSPECT, V29, P387, DOI 10.5465/amp.2013.0133
+   Whelan G, 2019, J BUS ETHICS, V156, P15, DOI 10.1007/s10551-018-3779-4
+   Whelan G, 2019, BUS SOC, V58, P42, DOI 10.1177/0007650317717701
+   Whelan G, 2013, J BUS ETHICS, V118, P777, DOI 10.1007/s10551-013-1960-3
+   Whelan G, 2012, BUS ETHICS Q, V22, P709, DOI 10.5840/beq201222445
+   Whiteman G, 2013, J MANAGE STUD, V50, P307, DOI 10.1111/j.1467-6486.2012.01073.x
+   Wible B, 2018, SCIENCE, V362, P1236, DOI 10.1126/science.aaw0911
+   Willke H, 2008, J BUS ETHICS, V81, P27, DOI 10.1007/s10551-007-9478-1
+   Young IM, 2004, J POLIT PHILOS, V12, P365, DOI 10.1111/j.1467-9760.2004.00205.x
+   Zeyen A, 2016, J BUS ETHICS, V135, P341, DOI 10.1007/s10551-014-2468-1
+   Zuboff S., 2019, AGE SURVEILLANCE CAP
+NR 98
+TC 0
+Z9 0
+U1 0
+U2 0
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0962-8770
+EI 1467-8608
+J9 BUS ETHICS
+JI Bus. Ethics
+DI 10.1111/beer.12256
+EA NOV 2019
+PG 11
+WC Business; Ethics
+SC Business & Economics; Social Sciences - Other Topics
+GA JQ4WR
+UT WOS:000498948400001
+DA 2019-12-28
+ER
+
+PT J
+AU Arduca, M
+   Koch-Medina, P
+   Munari, C
+AF Arduca, Maria
+   Koch-Medina, Pablo
+   Munari, Cosimo
+TI Dual representations for systemic risk measures based on acceptance sets
+SO MATHEMATICS AND FINANCIAL ECONOMICS
+LA English
+DT Article; Early Access
+DE Systemic risk; Macroprudential regulation; Risk measures; Dual
+   representations
+AB We establish dual representations for systemic risk measures based on acceptance sets in a general setting. We deal with systemic risk measures of both "first allocate, then aggregate" and "first aggregate, then allocate" type. In both cases, we provide a detailed analysis of the corresponding systemic acceptance sets and their support functions. The same approach delivers a simple and self-contained proof of the dual representation of utility-based risk measures for univariate positions.
+C1 [Arduca, Maria] Univ Milano Bicocca, Dept Stat & Quantitat Methods, Milan, Italy.
+   [Koch-Medina, Pablo; Munari, Cosimo] Univ Zurich, Ctr Finance & Insurance, Zurich, Switzerland.
+   [Koch-Medina, Pablo; Munari, Cosimo] Univ Zurich, Swiss Finance Inst, Zurich, Switzerland.
+RP Koch-Medina, P (reprint author), Univ Zurich, Ctr Finance & Insurance, Zurich, Switzerland.; Koch-Medina, P (reprint author), Univ Zurich, Swiss Finance Inst, Zurich, Switzerland.
+EM m.arduca@campus.unimib.it; pablo.koch@bf.uzh.ch; cosimo.munari@bf.uzh.ch
+CR Aliprantis C.D., 2006, INFINITE DIMENSIONAL
+   Ararat C, 2019, MATH FINANC ECON, DOI 10.1007/s11579-019-00249-7
+   Armenti Y, 2018, SIAM J FINANC MATH, V9, P90, DOI 10.1137/16M1087357
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Biagini F., 2019, FINANCE STOCH
+   Biagini F, 2019, MATH FINANC, V29, P329, DOI 10.1111/mafi.12170
+   Biagini S, 2009, OPTIMALITY AND RISK - MODERN TRENDS IN MATHEMATICAL FINANCE, P1, DOI 10.1007/978-3-642-02608-9_1
+   Burgert C, 2006, INSUR MATH ECON, V38, P289, DOI 10.1016/j.insmatheco.2005.08.008
+   Chen C, 2013, MANAGE SCI, V59, P1373, DOI 10.1287/mnsc.1120.1631
+   DELBAEN F., 2002, ADV FINANCE STOCHAST, P1
+   Delbaen F, 2019, POSITIVITY, V23, P1051, DOI 10.1007/s11117-019-00651-x
+   DIEUDONN.J, 1966, MATH ANN, V163, P1, DOI 10.1007/BF02052480
+   Edgar GA, 1992, STOPPING TIMES DIREC
+   Ekeland I, 2011, STATIST RISK MODEL, V28, P195, DOI 10.1524/stnd.2011.1099
+   Ekeland I, 2012, MATH FINANC, V22, P109, DOI 10.1111/j.1467-9965.2010.00453.x
+   FAN K, 1953, P NATL ACAD SCI USA, V39, P42, DOI 10.1073/pnas.39.1.42
+   Farkas W, 2015, MATH FINANC ECON, V9, P3, DOI 10.1007/s11579-014-0118-0
+   Feinstein Z, 2017, SIAM J FINANC MATH, V8, P672, DOI 10.1137/16M1066087
+   Follmer H., 2016, STOCHASTIC FINANCE I
+   Frittelli M, 2006, MATH FINANC, V16, P589, DOI 10.1111/j.1467-9965.2006.00285.x
+   Gao N., 2017, MATH OPER RES
+   Gao NS, 2019, STUD MATH, V249, P329, DOI 10.4064/sm180404-3-1
+   Gao NS, 2018, FINANC STOCH, V22, P395, DOI 10.1007/s00780-018-0357-7
+   Hamel AH, 2011, MATH FINANC ECON, V5, P1, DOI 10.1007/s11579-011-0047-0
+   Hamel AH, 2010, SIAM J FINANC MATH, V1, P66, DOI 10.1137/080743494
+   Jouini E, 2004, FINANC STOCH, V8, P531, DOI 10.1007/s00780-004-0127-6
+   Kromer E, 2016, MATH METHOD OPER RES, V84, P323, DOI 10.1007/s00186-016-0545-1
+   Leung D., 2018, ARXIV180806747
+   Meyer-Nieberg P., 1991, BANACH LATTICES
+   Molchanov I, 2016, MATH FINANC, V26, P867, DOI 10.1111/mafi.12078
+   Rockafellar RT, 2009, VARIATIONAL ANAL
+   ROCKAFELLAR RT, 1974, CONJUGATE DUALITY OP
+   Ruschendorf L, 2006, STATIST RISK MODEL, V24, P97, DOI 10.1524/stnd.2006.24.1.97
+   Zalinescu C., 2002, CONVEX ANAL GEN VECT
+NR 34
+TC 0
+Z9 0
+U1 0
+U2 0
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1862-9679
+EI 1862-9660
+J9 MATH FINANC ECON
+JI Math. Financ. Econ.
+DI 10.1007/s11579-019-00250-0
+EA NOV 2019
+PG 30
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA JO2LA
+UT WOS:000497413300001
+DA 2019-12-28
+ER
+
+PT J
+AU Lafuente, JA
+   Petit, N
+   Ruiz, J
+   Serrano, P
+AF Angel Lafuente, Juan
+   Petit, Nuria
+   Ruiz, Jesus
+   Serrano, Pedro
+TI Dissecting interbank risk using basis swap spreads
+SO WORLD ECONOMY
+LA English
+DT Article; Early Access
+DE basis swap; interbank risk; liquidity; particle filter; systemic risk
+ID TERM STRUCTURE; SYSTEMIC RISK; SOVEREIGN; DEFAULT; MARKET
+AB This paper analyses interbank risk using the information content of basis swap (BS) spreads, floating-to-floating interest rate swaps whose payments are associated with euro deposit rates for alternative tenors. To identify the impact of shocks affecting interbank risk, we propose an empirical model that decomposes BS quotes into their expected and unexpected components. These unobservable constituents of BS spreads are estimated by solving a signal extraction problem using a particle filter. We find that expected components covariate with aggregate liquidity and risk aversion while systemic risk arises as the main driver behind unexpected fluctuations. Our empirical findings suggest that macroprudential analysis emerges as a key device to ease asset pricing in a new multi-curve scenario.
+C1 [Angel Lafuente, Juan] Univ Jaume 1, Dept Finance & Accounting, Castellon De La Plana, Castellon, Spain.
+   [Petit, Nuria] Univ Complutense Madrid, Madrid, Spain.
+   [Ruiz, Jesus] Univ Complutense Madrid, Dept Quantitat Econ, Madrid, Spain.
+   [Ruiz, Jesus] Univ Complutense Madrid, ICAE, Madrid, Spain.
+   [Serrano, Pedro] Univ Carlos III, Dept Business Adm, Madrid, Spain.
+RP Serrano, P (reprint author), Univ Carlos III, Dept Business Adm, Madrid, Spain.
+EM pedrojose.serrano@uc3m.es
+FU Ministerio de Economia y CompetitividadSpanish Ministry of Economy &
+   Competitiveness [2016/00118/001, ECO2015-67305-P]; Generalitat
+   ValencianaGeneralitat Valenciana [PROMETEOII/2013/015]; Consejeria de
+   Economia, Innovacion, Ciencia y Empleo, Junta de AndaluciaJunta de
+   Andalucia [P12-SEJ-1733]; Fundacion Ramon Areces
+FX Ministerio de Economia y Competitividad, Grant/Award Number:
+   2016/00118/001 and ECO2015-67305-P; Generalitat Valenciana, Grant/Award
+   Number: PROMETEOII/2013/015; Consejeria de Economia, Innovacion, Ciencia
+   y Empleo, Junta de Andalucia, Grant/Award Number: P12-SEJ-1733;
+   Fundacion Ramon Areces
+CR Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Andolfatto D, 2008, J MONETARY ECON, V55, P406, DOI 10.1016/j.jmoneco.2007.07.004
+   Angelini P, 2011, J MONEY CREDIT BANK, V43, P923, DOI 10.1111/j.1538-4616.2011.00402.x
+   Beirne J, 2012, J INT MONEY FINANC, V31, P534, DOI 10.1016/j.jimonfin.2011.10.005
+   Burnside C, 2011, REV ECON STUD, V78, P523, DOI 10.1093/restud/rdq013
+   COCHRANE JH, 1994, Q J ECON, V109, P241, DOI 10.2307/2118434
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   Delatte AL, 2017, REV FINANC, V21, P363, DOI 10.1093/rof/rfw050
+   Diaz A, 2013, J INT MONEY FINANC, V37, P529, DOI 10.1016/j.jimonfin.2013.07.003
+   Diebold FX, 2006, J ECONOMETRICS, V130, P337, DOI 10.1016/j.jeconom.2005.03.005
+   Eisenschmidt J., 2009, LIQUIDITY RISK PREMI
+   Filipovic D, 2013, J FINANC ECON, V109, P707, DOI 10.1016/j.jfineco.2013.03.014
+   Greenwood R, 2014, REV FINANC STUD, V27, P663, DOI 10.1093/rfs/hht133
+   Greenwood R, 2010, AM ECON REV, V100, P585, DOI 10.1257/aer.100.2.585
+   Groba J, 2013, J BANK FINANC, V37, P2520, DOI 10.1016/j.jbankfin.2013.02.003
+   Henrard M, 2014, APPL QUANT FINANC, P1, DOI 10.1057/9781137374660
+   Hollo D., 2012, ECB WORKING PAPER SE, V1426
+   Hu GX, 2013, J FINANC, V68, P2341, DOI 10.1111/jofi.12083
+   Lafuente J., 2015, UC3M WORKING PAPERS
+   Longstaff FA, 2008, J FINANC, V63, P529, DOI 10.1111/j.1540-6261.2008.01330.x
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Lopez-Espinosa G, 2015, J BANK FINANC, V58, P471, DOI 10.1016/j.jbankfin.2015.05.004
+   McAndrews J, 2017, J BANK FINANC, V83, P135, DOI 10.1016/j.jbankfin.2016.12.011
+   Mercurio F, 2009, TECHNICAL REPORT QFR, V7, P22
+   Michaud F.-L., 2008, BIS Q REV, V3, P47
+   Olson E, 2012, J INT MONEY FINANC, V31, P1339, DOI 10.1016/j.jimonfin.2012.02.004
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Ramsay B. A., 2015, ECB WORKING PAPER SE, V1769
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Rubia A, 2016, J INT MONEY FINANC, V60, P223, DOI 10.1016/j.jimonfin.2015.04.006
+   Schwarz K., 2010, MIND GAP DISENTANGLI
+   WHITE H, 1980, ECONOMETRICA, V48, P817, DOI 10.2307/1912934
+NR 32
+TC 0
+Z9 0
+U1 0
+U2 0
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0378-5920
+EI 1467-9701
+J9 WORLD ECON
+JI World Econ.
+DI 10.1111/twec.12878
+EA NOV 2019
+PG 29
+WC Business, Finance; Economics; International Relations
+SC Business & Economics; International Relations
+GA JO5MV
+UT WOS:000497623600001
+DA 2019-12-28
+ER
+
+PT J
+AU Giesecke, K
+   Schwenkler, G
+   Sirignano, JA
+AF Giesecke, Kay
+   Schwenkler, Gustavo
+   Sirignano, Justin A.
+TI Inference for large financial systems
+SO MATHEMATICAL FINANCE
+LA English
+DT Article; Early Access
+DE computational efficiency; large interacting stochastic systems;
+   likelihood inference; statistical efficiency
+ID MAXIMUM-LIKELIHOOD ESTIMATOR; NONLINEAR PANEL MODELS;
+   DIFFUSION-PROCESSES; CREDIT CONTAGION; LARGE DEVIATIONS; BIAS REDUCTION;
+   TIME-SERIES; RISK; DERIVATIVES
+AB We treat the parameter estimation problem for mean-field models of large interacting financial systems such as the banking system and a pool of assets held by an institution or backing a security. We develop an asymptotic inference approach that addresses the scale and complexity of such systems. Harnessing the weak convergence results developed for mean-field financial systems in the literature, we construct an approximate likelihood for large systems. The approximate likelihood has a conditionally Gaussian structure, enabling us to design an efficient numerical method for its evaluation. We provide a representation of the corresponding approximate estimator in terms of a weighted least-squares estimator, and use it to analyze the large-system and large-sample behavior of the estimator. Numerical results for a mean-field model of systemic financial risk highlight the efficiency and accuracy of our estimator.
+C1 [Giesecke, Kay] Stanford Univ, Dept Management Sci & Engn, Stanford, CA 94305 USA.
+   [Schwenkler, Gustavo] Boston Univ, Questrom Sch Business, Dept Finance, Boston, MA 02215 USA.
+   [Sirignano, Justin A.] Univ Illinois, Dept Ind & Enterprise Syst Engn, Urbana, IL USA.
+RP Schwenkler, G (reprint author), Boston Univ, Questrom Sch Business, Dept Finance, Boston, MA 02215 USA.
+EM gas@bu.edu
+FU National Science FoundationNational Science Foundation (NSF) [1325031]
+FX National Science Foundation through Methodology, Measurement, and
+   Statistics, Grant/AwardNumber: 1325031
+CR Andersen TG, 2019, J ECONOMETRICS, V212, P4, DOI 10.1016/j.jeconom.2019.04.018
+   Andersen TG, 2015, ECONOMETRICA, V83, P1081, DOI 10.3982/ECTA10719
+   Arellano M, 2009, ECONOMETRICA, V77, P489, DOI 10.3982/ECTA6895
+   Bishwal J., 2011, APPL MATH, V2, P1154
+   Bo LJ, 2015, SIAM J FINANC MATH, V6, P386, DOI 10.1137/130937664
+   Bo LJ, 2014, FINANC STOCH, V18, P431, DOI 10.1007/s00780-013-0217-4
+   Bush N, 2011, SIAM J FINANC MATH, V2, P627, DOI 10.1137/100796777
+   Carmona R., 2014, COMMUNICATIONS MATH, V13, P911
+   Crisan D, 2014, ANN I H POINCARE-PR, V50, P946, DOI 10.1214/13-AIHP543
+   Cvitanic J, 2012, STOCH PROC APPL, V122, P2781, DOI 10.1016/j.spa.2012.04.003
+   Davis MHA, 2007, INT J THEOR APPL FIN, V10, P653, DOI 10.1142/S0219024907004378
+   DEMBO A, 1986, STOCH PROC APPL, V23, P91, DOI 10.1016/0304-4149(86)90018-9
+   Dembo A, 2012, FINANC STOCH, V1, P3
+   Diener N, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024912500112
+   Douc R, 2004, ANN STAT, V32, P2254, DOI 10.1214/009053604000000021
+   Douc R, 2011, ANN STAT, V39, P474, DOI 10.1214/10-AOS834
+   Duffie D, 2007, J FINANC ECON, V83, P635, DOI 10.1016/j.jfineco.2005.10.011
+   Fernandez B, 2000, BERNOULLI, V6, P91, DOI 10.2307/3318635
+   Fernandez-Val I, 2016, J ECONOMETRICS, V192, P291, DOI 10.1016/j.jeconom.2015.12.014
+   Fouque JP, 2013, SIAM J FINANC MATH, V4, P784, DOI 10.1137/110841096
+   Gagliardini P, 2014, ECONOMET THEOR, V30, P961, DOI 10.1017/S0266466614000024
+   Garnier J, 2013, SIAM J FINANC MATH, V4, P151, DOI 10.1137/12087387X
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P741, DOI 10.1016/j.jedc.2005.01.004
+   Giesecke K, 2018, J ECONOMETRICS, V204, P33, DOI 10.1016/j.jeconom.2017.11.011
+   Giesecke K, 2015, MATH FINANC, V25, P77, DOI 10.1111/mafi.12011
+   Giesecke K, 2013, ANN APPL PROBAB, V23, P348, DOI 10.1214/12-AAP845
+   Glasserman P, 2007, MATH FINANC, V17, P345, DOI 10.1111/j.1467-9965.2006.00307.x
+   Gordy MB, 2003, J FINANC INTERMED, V12, P199, DOI 10.1016/S1042-9573(03)00040-8
+   GOURIEROUX C, 1984, ECONOMETRICA, V52, P681, DOI 10.2307/1913471
+   GOURIEROUX C, 1993, J APPL ECONOM, V8, pS85, DOI 10.1002/jae.3950080507
+   Gourieroux C, 2010, J ECONOMETRICS, V157, P68, DOI 10.1016/j.jeconom.2009.10.024
+   Guay F., 2018, WORKING PAPER
+   Hahn J, 2004, ECONOMETRICA, V72, P1295, DOI 10.1111/j.1468-0262.2004.00533.x
+   Hahn J, 2011, ECONOMET THEOR, V27, P1152, DOI 10.1017/S0266466611000028
+   Hahn JY, 2002, ECONOMETRICA, V70, P1639, DOI 10.1111/1468-0262.00344
+   Horst U, 2007, J ECON BEHAV ORGAN, V63, P25, DOI 10.1016/j.jebo.2005.02.005
+   Jarrow RA, 2005, MATH FINANC, V15, P1, DOI 10.1111/j.0960-1627.2005.00208.x
+   KASONGA RA, 1990, SIAM J APPL MATH, V50, P865, DOI 10.1137/0150050
+   Kurtz TG, 1999, STOCH PROC APPL, V83, P103, DOI 10.1016/S0304-4149(99)00024-1
+   MCKEAGUE IW, 1984, J APPL PROBAB, V21, P511, DOI 10.2307/3213613
+   Nielsen SF, 2000, BERNOULLI, V6, P457, DOI 10.2307/3318671
+   OGATA Y, 1980, J APPL PROBAB, V17, P59, DOI 10.2307/3212924
+   Pra PD, 2009, STOCH PROC APPL, V119, P2913, DOI 10.1016/j.spa.2009.03.006
+   Pra PD, 2009, ANN APPL PROBAB, V19, P347, DOI 10.1214/08-AAP544
+   Protter P. E., 2004, STOCHASTIC INTEGRATI
+   SHEPP LA, 1966, ANN MATH STAT, V37, P321, DOI 10.1214/aoms/1177699516
+   Sirignano J, 2019, MANAGE SCI, V65, P107, DOI 10.1287/mnsc.2017.2947
+   Sirignano JA, 2016, OPER RES, V64, P1239, DOI 10.1287/opre.2016.1537
+   SMITH AA, 1993, J APPL ECONOM, V8, pS63, DOI 10.1002/jae.3950080506
+   Spiliopoulos K, 2014, STOCH PROC APPL, V124, P2322, DOI 10.1016/j.spa.2014.02.010
+   WHITE H, 1982, ECONOMETRICA, V50, P1, DOI 10.2307/1912526
+NR 51
+TC 0
+Z9 0
+U1 5
+U2 5
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0960-1627
+EI 1467-9965
+J9 MATH FINANC
+JI Math. Financ.
+DI 10.1111/mafi.12222
+EA JUL 2019
+PG 44
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA II3VW
+UT WOS:000475128100001
+DA 2019-12-27
+ER

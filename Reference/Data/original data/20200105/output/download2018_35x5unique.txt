@@ -1,0 +1,495 @@
+
+PT J
+AU Audzeyeva, A
+   Fuertes, AM
+AF Audzeyeva, Alena
+   Fuertes, Ana-Maria
+TI On the predictability of emerging market sovereign credit spreads
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Sovereign credit spreads; Emerging markets; Out-of-sample
+   predictability; Term structure; Macroeconomic uncertainty
+ID TERM STRUCTURE; BUSINESS CYCLES; DEBT; RISK; CONTAGION; DEFAULT; TRADE
+AB This paper examines the quarter-ahead out-of-sample predictability of Brazil, Mexico, the Philippines and Turkey credit spreads before and after the Lehman Brothers' default. A model based on the country-specific credit spread curve factors predicts no better than the random walk and slope regression benchmarks. Model extensions with the global yield curve factors and with both global and domestic uncertainty indicators notably outperform both benchmarks post-Lehman. The finding that bond prices better reflect fundamental information after the Lehman Brothers' failure indicates that this landmark of the recent global financial crisis had wake-up call effects on emerging market bond investors. (C) 2018 Elsevier Ltd. All rights reserved.
+C1 [Audzeyeva, Alena] Keele Univ, Keele Management, Keele, Staffs, England.
+   [Fuertes, Ana-Maria] City Univ London, Cass Business Sch, London, England.
+RP Fuertes, AM (reprint author), City Univ London, Cass Business Sch, Fac Finance, 106 Bunhill Row, London EC1Y 8TZ, England.
+EM a.audzeyeva@keele.ac.uk; a.fuertes@city.ac.uk
+OI Fuertes, Ana-Maria/0000-0001-6468-9845
+FU British Academy/Leverhulme Trust
+FX This research was financially supported by a British Academy/Leverhulme
+   Trust grant which we gratefully acknowledge. We thank the editor, Kees
+   Koedijk, an anonymous reviewer and participants at the 9th Computational
+   and Financial Econometrics conference, London, UK, 5th CEQURA Conference
+   on Advances in Financial and Insurance Risk Management, Munich, Germany,
+   22nd International Forecasting Financial Markets Conference, Rennes,
+   France, 21st Conference of the Society for Computational Economics,
+   Taipei, Taiwan, and 14th INFINITI Conference on International Finance,
+   Dublin, Ireland, as well as Orkun Saka and James Steeley for helpful
+   comments and suggestions. Any remaining errors are our responsibility
+   alone. We also acknowledge the technical assistance of Denis Dadimov.
+CR Aguiar M, 2006, J INT ECON, V69, P64, DOI 10.1016/j.jinteco.2005.05.005
+   Aguiar M, 2007, J POLIT ECON, V115, P69, DOI 10.1086/511283
+   Ahnert T, 2015, WAKE CALL THEORY CON, P294
+   Amato J., 2003, BIS Q REV, P51, DOI DOI 10.2139/SSRN.1968448
+   Ammer J., 2007, 912 FED RES BOARD IN
+   Ang A, 2003, J MONETARY ECON, V50, P745, DOI 10.1016/S0304-3932(03)00032-1
+   Arora V, 2001, IMF STAFF PAPERS, V48, P474
+   Baldacci E., 2008, 08259 IMF
+   Bank of America Merrill Lynch, 2012, 10 GEM
+   Baskaya YS, 2017, J INT ECON, V108, pS15, DOI 10.1016/j.jinteco.2016.12.003
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Boyer R., 2014, FINANCIAL STABILITY
+   BULOW J, 1989, AM ECON REV, V79, P43
+   Bussiere M., 2012, 396 BANQ FRANC
+   Caballero R, 2003, AM EC REV PAP P
+   Caceres C., 2010, 10120 IMF
+   Campbell J, 1991, REV ECON STUD, V58, P479
+   Chen YC, 2003, J INT ECON, V60, P133, DOI 10.1016/S0022-1996(02)00072-7
+   Ciarlone A., 2009, INT FINANCIAL MARKET, V19, P222, DOI DOI 10.1016/J.INTFIN.2007.11.003
+   Clark TE, 2007, J ECONOMETRICS, V138, P291, DOI 10.1016/j.jeconom.2006.05.023
+   Cochrane JH, 2005, AM ECON REV, V95, P138, DOI 10.1257/0002828053828581
+   Comelli F, 2012, 122012 IMF
+   Csonto Balazs, 2013, 13164 IMF
+   Diebold FX, 2006, J ECONOMETRICS, V130, P337, DOI 10.1016/j.jeconom.2005.03.005
+   DIEBOLD FX, 1995, J BUS ECON STAT, V13, P253, DOI 10.2307/1392185
+   Duffie D, 2003, J FINANC, V58, P119, DOI 10.1111/1540-6261.00520
+   Eichengreen B, 2012, J INT MONEY FINANC, V31, P1299, DOI 10.1016/j.jimonfin.2012.02.002
+   Elton EJ, 2001, J FINANC, V56, P247, DOI 10.1111/0022-1082.00324
+   FAMA EF, 1987, AM ECON REV, V77, P680
+   Ferrucci G., 2003, 205 BANK ENGL
+   Gibson R, 2005, WORKING PAPER
+   Goldstein M., 2000, ASSESSING FINANCIAL
+   Gonzalez-Rozada M, 2008, ECON J, V118, P1917, DOI 10.1111/j.1468-0297.2008.02196.x
+   Gray D., 2008, MACROFINANCIAL RISK
+   Hartelius K., 2008, 0810 IMF
+   Hicks J. R., 1939, VALUE CAPITAL
+   Hilscher J, 2010, REV FINANC, V14, P235, DOI 10.1093/rof/rfq005
+   Huang JZ, 2012, REV ASSET PRICING ST, V2, P153, DOI 10.1093/rapstu/ras011
+   IMF, 1991, WORLD EC OUTLOOK
+   IMF, 2014, GLOB FIN STAB REP MA
+   IMF, 2004, GLOB FIN STAB REP MA
+   Jaramillo M, 2011, 1144 IMF
+   Krishnan C., 2010, J FINANC INTERMED, V100, P304
+   Krishnan CNV, 2006, J MONEY CREDIT BANK, V38, P1545, DOI 10.1353/mcb.2006.0084
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Ludvigson SC, 2009, REV FINANC STUD, V22, P5027, DOI 10.1093/rfs/hhp081
+   Luengnaruemitchai P., 2007, 0765 IMF
+   Lutz FA, 1940, Q J ECON, V55, P36, DOI 10.2307/1881665
+   Mendoza EG, 1997, J DEV ECON, V54, P323, DOI 10.1016/S0304-3878(97)00046-1
+   MENDOZA EG, 1995, INT ECON REV, V36, P101, DOI 10.2307/2527429
+   Merton R., 2005, HARVARD BUS REV, V83, P34
+   Min H, 1998, 1899 WORLD BANK
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Mody Ashoka, 1998, 6408 NBER
+   Moench E, 2008, J ECONOMETRICS, V146, P26, DOI 10.1016/j.jeconom.2008.06.002
+   MUTH JF, 1961, ECONOMETRICA, V29, P315, DOI 10.2307/1909635
+   NELSON CR, 1987, J BUS, V60, P473, DOI 10.1086/296409
+   Neumeyer PA, 2005, J MONETARY ECON, V52, P345, DOI 10.1016/j.jmoneco.2004.04.011
+   Ongena S, 2015, IMF ECON REV, V63, P698, DOI 10.1057/imfer.2015.34
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Reinhart CM, 2002, WORLD BANK ECON REV, V16, P151, DOI 10.1093/wber/16.2.151
+   Roll R, 1970, BEHAV INTEREST RATES
+   Sachs Goldman, 2007, 153 GOLDM SACHS GLOB
+   Sargent Thomas J., 1972, J MONEY CREDIT BANK, V4, P74
+   Sueppel R., 2005, J FIXED INCOME, V15, P54
+   Svensson L, 1994, 48871 NBER
+   Uribe M, 2006, J INT ECON, V69, P6, DOI 10.1016/j.jinteco.2005.04.003
+NR 68
+TC 0
+Z9 0
+U1 0
+U2 11
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD NOV
+PY 2018
+VL 88
+BP 140
+EP 157
+DI 10.1016/j.jimonfin.2018.07.005
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA GS0AU
+UT WOS:000443144900007
+DA 2019-12-27
+ER
+
+PT J
+AU Gupta, M
+   Prakash, P
+AF Gupta, Manu
+   Prakash, Puneet
+TI Impact of underwriting insurance risk on bank holding company behavior
+SO JOURNAL OF RISK FINANCE
+LA English
+DT Article
+DE Loan loss provisions; Bank holding companies; Insurance underwriting
+ID EARNINGS MANAGEMENT; SYSTEMIC RISK; BANCASSURANCE; PERFORMANCE;
+   OWNERSHIP; INSURERS
+AB Purpose This paper aims to study differences in risk behavior between holding companies that undertake both banking activity and insurance underwriting (labeled financial holding companies or FHCs) and stand-alone bank holding companies (BHCs).
+   Design/methodology/approach The paper examines the discretionary accruals of FHCs to comparable BHCs and compares their bad loans-to-assets ratio in the future.
+   Findings FHCs have lower discretionary accruals (loan loss provisions and realized capital gains) than BHCs. FHCs fare better than BHCs in terms of bad loans-to-assets ratio. Insurance underwriting has a dampening effect on discretionary accruals of FHCs.
+   Research limitations/implications This study raises additional research questions. Do shared governance and insurance underwriting serve as substitutes or complements? Will regulatory environment affect this relation?
+   Practical implications When reported earnings do not match true earnings, the market participants lose the ability to price correctly, and the regulators lose the ability to effectively regulate banks. From the regulatory perspective, these findings suggest insurance underwriting by banks mitigate potential market distortions.
+   Originality/value This paper is the first to study the effect of underwriting insurance risk on earnings management behavior of BHCs and its link to risk governance.
+C1 [Gupta, Manu] Virginia Commonwealth Univ, Richmond, VA USA.
+   [Prakash, Puneet] Missouri State Univ, Springfield, MO 65897 USA.
+RP Prakash, P (reprint author), Missouri State Univ, Springfield, MO 65897 USA.
+EM PuneetPrakash@MissouriState.edu
+CR Acharya VV, 2006, J BUS, V79, P1355, DOI 10.1086/500679
+   Beatty AL, 2002, ACCOUNT REV, V77, P547, DOI 10.2308/accr.2002.77.3.547
+   Beatty A, 2011, J ACCOUNT ECON, V52, P1, DOI 10.1016/j.jacceco.2011.02.002
+   Burgstahler D, 1997, J ACCOUNT ECON, V24, P99, DOI 10.1016/S0165-4101(97)00017-7
+   Carow KA, 2001, J RISK INSUR, V68, P129, DOI 10.2307/2678134
+   Chang MS, 2015, APPL ECON, V47, P3559, DOI 10.1080/00036846.2015.1019032
+   Chen CR, 2017, J FINANC SERV RES, V51, P19, DOI 10.1007/s10693-015-0235-9
+   Chen H, 2014, J RISK INSUR, V81, P623, DOI 10.1111/j.1539-6975.2012.01503.x
+   Chi JX, 2009, J BANK FINANC, V33, P1652, DOI 10.1016/j.jbankfin.2009.03.014
+   Cummins JD, 2014, J RISK INSUR, V81, P489, DOI 10.1111/jori.12039
+   Dechow P. M., 2000, ACCOUNT HORIZ, V14, P235, DOI DOI 10.2308/ACCH.2000.14.2.235
+   DeYoung R., 2004, FINANCIAL REV, V39, P101, DOI DOI 10.1111/J.0732-8516.2004.00069.X
+   DeYoung R, 2009, J FINANC SERV RES, V36, P87, DOI 10.1007/s10693-009-0066-7
+   Eichengreen B., 2008, ORIGINS RESPONSES CR
+   Ellul A, 2013, J FINANC, V68, P1757, DOI 10.1111/jofi.12057
+   Elyasiani E, 2017, J FINANC RES, V40, P147, DOI 10.1111/jfir.12120
+   FAMA EF, 1983, J LAW ECON, V26, P301, DOI 10.1086/467037
+   Fields LP, 2007, J BANK FINANC, V31, P3646, DOI 10.1016/j.jbankfin.2007.01.014
+   Fields LP, 2007, J RISK INSUR, V74, P777
+   Fields LP, 2012, J RISK INSUR, V79, P931, DOI 10.1111/j.1539-6975.2012.01479.x
+   Fiordelisi F, 2013, J BANK FINANC, V37, P2000, DOI 10.1016/j.jbankfin.2013.01.004
+   Gibson J., 1998, SOA ANN M NEW YORK N
+   Gompers P, 2003, Q J ECON, V118, P107, DOI 10.1162/00335530360535162
+   Houston JF, 2010, J FINANC ECON, V96, P485, DOI 10.1016/j.jfineco.2010.02.008
+   Johnston J., 2000, FINANCIAL REV, VXXXV, P17, DOI DOI 10.1111/J.1540-6288.2000.TB01412.X
+   Jorion P, 2009, EUR FINANC MANAG, V15, P923, DOI 10.1111/j.1468-036X.2009.00507.x
+   Marrakchi C., 2001, WORKING PAPER, DOI 10. 2139/ssrn. 275053
+   Peng JL, 2017, J BANK FINANC, V80, P1, DOI 10.1016/j.jbankfin.2017.03.013
+   Stein V., 2016, J BUSINESS EC, V86, P813, DOI DOI 10.1007/s11573-016-0826-4
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   Stulz RM, 2008, J APPL CORP FINANC, V20, P39, DOI 10.1111/j.1745-6622.2008.00202.x
+   van Asselt MBA, 2011, J RISK RES, V14, P431, DOI 10.1080/13669877.2011.553730
+   Yang XL, 2017, Q REV ECON FINANC, V64, P238, DOI 10.1016/j.qref.2017.01.015
+   Yeager TJ, 2007, J ECON BUS, V59, P313, DOI 10.1016/j.jeconbus.2006.08.002
+NR 34
+TC 1
+Z9 1
+U1 3
+U2 3
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1526-5943
+EI 2331-2947
+J9 J RISK FINANC
+JI J. Risk Financ.
+PY 2018
+VL 19
+IS 4
+SI SI
+BP 343
+EP 360
+DI 10.1108/JRF-11-2017-0191
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA HC4OZ
+UT WOS:000451784400003
+DA 2019-12-28
+ER
+
+PT J
+AU Tantri, PL
+AF Tantri, Prasanna L.
+TI Contagious Effects of a Political Intervention in Debt Contracts:
+   Evidence Using Loan-Level Data
+SO REVIEW OF FINANCIAL STUDIES
+LA English
+DT Article
+ID SYSTEMIC RISK; CREDIT; ACCESS; FINANCE
+AB Using an unexpected government regulation that restricted the ability of microfinance institutions to recover loans in one Indian state, I examine whether this intervention affected bank loan performance. The bank loan delinquency rate significantly increased as a result. In response, the ex post bank credit supply declined by more than half. For identification, I compare loans from branches located in regions subject to this intervention with loans from nearby branches of the same bank located in regions not subject to the intervention. I conclude that political interventions in credit markets could have significant spillover effects.
+C1 [Tantri, Prasanna L.] Indian Sch Business, Hyderabad, India.
+RP Tantri, PL (reprint author), Indian Sch Business, Hyderabad, India.
+FU Center for Analytical Finance, Indian School of Business, Gachibowli,
+   Hyderabad, Telangana, India
+FX I thank the Editor, Philip E. Strahan, and two anonymous referees for
+   helpful suggestions. I thank Jeffereson Kaduvinal Abraham, Bhagwan
+   Choudhry, Yakshup Chopra, Maitresh Ghatak, Radhakrishna Gopalan, Ravi
+   Jagannathan, Saptarshi Mukherjee, N.R. Prabhala, Bhimasankaram
+   Pochiraju, Amit Seru, Swaminathan Sridharan, Krishnamurthy Subramanian,
+   and Suresh Sunderesan for their helpful comments. I thank Gautam
+   Kanthaswamy, Chitrarth Kaushik, Padma Priya, and Mohan Ramanath for
+   excellent research assistance. I thank the Center for Analytical
+   Finance, Indian School of Business, Gachibowli, Hyderabad, Telangana,
+   India for providing the data and necessary financial assistance for this
+   project. Any remaining errors are my own. Supplementary data can be
+   found on The Review of Financial Studies Web site.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya VV, 2012, WORLD ECON, V35, P19, DOI 10.1111/j.1467-9701.2011.01382.x
+   Agarwal S., 2016, J POLITICAL EC, V125, P654
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Alok S., 2016, WORKING PAPER
+   [Anonymous], 2015, HINDU
+   [Anonymous], 2012, M CRIL MICROFINANCE
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bandyopadhyay T., 2014, LIVEMINT        1019
+   Banerjee A, 2005, AM ECON REV, V95, P1190, DOI 10.1257/0002828054825574
+   Banerjee A, 2015, AM ECON J-APPL ECON, V7, P22, DOI 10.1257/app.20130533
+   Barrot JN, 2016, J FINANC, V71, P1975, DOI 10.1111/jofi.12371
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Bertrand M, 2004, Q J ECON, V119, P249, DOI 10.1162/003355304772839588
+   Bhowal S., 2014, WORKING PAPER
+   Bhue G., 2015, WORKING PAPER
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bolton P, 2002, J POLIT ECON, V110, P1103, DOI 10.1086/341867
+   Breza E., 2012, PEER EFFECTS LOAN RE
+   Breza E., 2016, UNPUB
+   Burgess R., 2011, UNPUB
+   Butler AW, 2011, J FINANC ECON, V99, P184, DOI 10.1016/j.jfineco.2010.08.009
+   Calonico S, 2014, ECONOMETRICA, V82, P2295, DOI 10.3982/ECTA11757
+   Cole S., AM EC J APPL EC, V1, P219
+   Cole S, 2009, REV ECON STAT, V91, P33, DOI 10.1162/rest.91.1.33
+   De S., 2014, WORKING PAPER
+   ET Bureau, 2015, INDIA TIMES     0520
+   Ghate P., 2008, MICROFINANCE INDIA S
+   Gine X, 2017, REV FINANC STUD, V30, P4081, DOI 10.1093/rfs/hhx110
+   Imbens G, 2012, REV ECON STUD, V79, P933, DOI 10.1093/restud/rdr043
+   Imbens GW, 2008, J ECONOMETRICS, V142, P615, DOI 10.1016/j.jeconom.2007.05.001
+   Kannan M., 2013, INT J CURRENT RES AC, V1, P78
+   Kanz M, 2016, AM ECON J-APPL ECON, V8, P66, DOI 10.1257/app.20130399
+   Kar S, 2013, AM ETHNOL, V40, P480, DOI 10.1111/amet.12034
+   Kaur Prabhjot, 2013, GLOBAL J MANAGEMENT, V3, P695
+   Khwaja AI, 2005, Q J ECON, V120, P1371, DOI 10.1162/003355305775097524
+   Kroszner Randall S., 2003, WORKING PAPER
+   Longhurst H., 2013, WORKING PAPER
+   Mayer C., 2009, AM ECON REV, V104, P2830
+   McCrary J, 2008, J ECONOMETRICS, V142, P698, DOI 10.1016/j.jeconom.2007.05.005
+   Melzer BT, 2011, Q J ECON, V126, P517, DOI 10.1093/qje/qjq009
+   Mian A., 2014, HOUSE DEBT THEY YOU
+   Mukherjee S., 2014, WORKING PAPER
+   Ponticelli J, 2016, Q J ECON, V131, P1365, DOI 10.1093/qje/qjw015
+   ROSENZWEIG MR, 1993, J POLIT ECON, V101, P223, DOI 10.1086/261874
+   RUCKER RR, 1987, AM ECON REV, V77, P724
+   Sane R., 2016, BE J ECON ANAL POLI, V16, P151
+   Shylendra H. S, 2006, ECON POLIT WEEKLY, VXLI, P1959
+   Singh N., 2003, WORKING PAPER
+   Tantri P., 2017, WORKING PAPER
+   Vig V, 2013, J FINANC, V68, P881, DOI 10.1111/jofi.12020
+NR 51
+TC 0
+Z9 0
+U1 3
+U2 12
+PU OXFORD UNIV PRESS INC
+PI CARY
+PA JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
+SN 0893-9454
+EI 1465-7368
+J9 REV FINANC STUD
+JI Rev. Financ. Stud.
+PD NOV
+PY 2018
+VL 31
+IS 11
+BP 4556
+EP 4592
+DI 10.1093/rfs/hhy001
+PG 37
+WC Business, Finance; Economics
+SC Business & Economics
+GA HB7VM
+UT WOS:000451289700010
+DA 2019-12-28
+ER
+
+PT J
+AU Anginer, D
+   Demirguc-Kunt, A
+   Huizinga, H
+   Ma, KB
+AF Anginer, Deniz
+   Demirguc-Kunt, Asli
+   Huizinga, Harry
+   Ma, Kebin
+TI Corporate governance of banks and financial stability
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Corporate governance; Bank insolvency; Systemic risk
+ID RISK-TAKING; EXECUTIVE-COMPENSATION; CEO COMPENSATION; BOARD STRUCTURE;
+   CRISIS; INCENTIVES; MANAGEMENT; FIRM; FAIL; TOO
+AB We find that shareholder-friendly corporate governance is associated with higher standalone and systemic risk in the banking sector. Specifically, shareholder-friendly corporate governance results in higher risk for larger banks and for banks that are located in countries with generous financial safety nets as banks try to shift risk toward taxpayers. We confirm our findings by comparing banks to nonfinancial firms and examining changes in bank risk around an exogenous regulatory change in governance. Our results underline the importance of the financial safety net and too-big-to-fail guarantees in thinking about corporate governance reforms at banks. (C) 2018 Published by Elsevier B.V.
+C1 [Anginer, Deniz; Demirguc-Kunt, Asli] World Bank, 1818 H St NW, Washington, DC 20433 USA.
+   [Huizinga, Harry] Tilburg Univ, POB 90153, NL-5000 LE Tilburg, Netherlands.
+   [Huizinga, Harry] Ctr Econ Policy Res, 33 Great Sutton St, London EC1V 0DX, England.
+   [Ma, Kebin] Univ Warwick, Warwick Business Sch, Coventry CV4 7AL, W Midlands, England.
+RP Huizinga, H (reprint author), Tilburg Univ, POB 90153, NL-5000 LE Tilburg, Netherlands.
+EM Huizinga@uvt.nl
+CR Acharya V., 2016, UNPUB
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2011, J FINANC ECON, V102, P150, DOI 10.1016/j.jfineco.2011.04.001
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Anginer D, 2016, J FINANC INTERMED, V26, P1, DOI 10.1016/j.jfi.2015.12.002
+   Armstrong CS, 2014, J FINANC ECON, V113, P383, DOI 10.1016/j.jfineco.2014.05.009
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   Bebchuk L, 2009, REV FINANC STUD, V22, P783, DOI 10.1093/rfs/hhn099
+   Becht M, 2011, OXFORD REV ECON POL, V27, P437, DOI 10.1093/oxrep/grr024
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Benoit S., 2013, UNPUB
+   Berger AN, 2016, J MONEY CREDIT BANK, V48, P729, DOI 10.1111/jmcb.12316
+   Bertay AC, 2013, J FINANC INTERMED, V22, P532, DOI 10.1016/j.jfi.2013.02.002
+   Bolton P, 2015, REV FINANC, V19, P2139, DOI 10.1093/rof/rfu049
+   Calomiris CW, 2016, J FINANC ECON, V119, P512, DOI 10.1016/j.jfineco.2016.01.025
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   Chen CR, 2006, J BANK FINANC, V30, P915, DOI 10.1016/j.jbankfin.2005.06.004
+   Chhaochharia V, 2009, J FINANC, V64, P231, DOI 10.1111/j.1540-6261.2008.01433.x
+   Demirguc-Kunt A, 2002, J MONETARY ECON, V49, P1373, DOI 10.1016/S0304-3932(02)00171-X
+   Demirguc-Kunt A., 2005, DEPOSIT INSURANCE WO
+   DeYoung R, 2013, J FINANC QUANT ANAL, V48, P165, DOI 10.1017/S0022109012000646
+   Duchin R, 2010, J FINANC ECON, V96, P195, DOI 10.1016/j.jfineco.2009.12.004
+   Ellul A, 2013, J FINANC, V68, P1757, DOI 10.1111/jofi.12057
+   Erkens DH, 2012, J CORP FINANC, V18, P389, DOI 10.1016/j.jcorpfin.2012.01.005
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   GILSON SC, 1993, J FINANC, V48, P425, DOI 10.2307/2328907
+   Hillegeist SA, 2004, REV ACC STUD, V9, P5, DOI 10.1023/B:RAST.0000013627.90884.b7
+   HOLMSTROM B, 1986, Q J ECON, V101, P835, DOI 10.2307/1884180
+   JENSEN MC, 1976, J FINANC ECON, V3, P305, DOI 10.1016/0304-405X(76)90026-X
+   John K, 2000, REV FINANC STUD, V13, P95, DOI 10.1093/rfs/13.1.95
+   John K, 1998, J BANK FINANC, V22, P371, DOI 10.1016/S0378-4266(98)00005-3
+   John K, 2008, J FINANC, V63, P1679, DOI 10.1111/j.1540-6261.2008.01372.x
+   Kelly B, 2016, AM ECON REV, V106, P1278, DOI 10.1257/aer.20120389
+   Kroszner RS, 2001, J FINANC ECON, V62, P415, DOI 10.1016/S0304-405X(01)00082-4
+   Laeven L, 2013, ANNU REV FINANC ECON, V5, P63, DOI 10.1146/annurev-financial-021113-074421
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Linck JS, 2008, J FINANC ECON, V87, P308, DOI 10.1016/j.jfineco.2007.03.004
+   Mehran H., 2012, CRISIS AFTERMATH NEW, P11
+   Merton R. C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Pathan S, 2009, J BANK FINANC, V33, P1340, DOI 10.1016/j.jbankfin.2009.02.001
+   Stulz Rene, 2016, FRBNY EC POLY REV, V22, P43
+NR 43
+TC 6
+Z9 6
+U1 6
+U2 51
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD NOV
+PY 2018
+VL 130
+IS 2
+BP 327
+EP 346
+DI 10.1016/j.jfineco.2018.06.011
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA GW6ZE
+UT WOS:000447112800006
+DA 2019-12-28
+ER
+
+PT J
+AU Buccioli, A
+   Kokholm, T
+AF Buccioli, Alice
+   Kokholm, Thomas
+TI Constant proportion portfolio insurance strategies in contagious markets
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE CPPI; Self-contagion; Hawkes processes; Gap risk; Liquidity; Risk
+   measures
+ID HAWKES PROCESSES; JUMP-DIFFUSIONS; POINT-PROCESSES; CONTINUOUS-TIME;
+   FINANCIAL DATA; RISK PREMIA; MODELS; OPTIONS; PRICES; SERIES
+AB Constant Proportion Portfolio Insurance (CPPI) strategies are popular as they allow to gear up the upside potential of a stock index while limiting its downside risk. From the issuer's perspective it is important to adequately assess the risks associated with the CPPI, both for correct 'gap' fee charging and for risk management. The literature on CPPI modelling typically assumes diffusive or Levy-driven dynamics for the risky asset underlying the strategy. In either case the self-contagious nature of asset prices is not taken into account. In order to account for contagion while preserving analytical tractability, we introduce self-exciting jumps in the underlying dynamics via Hawkes processes. Within this framework we derive the loss probability when trading is performed continuously. Moreover, we estimate measures of the risk involved in the practical implementation of discrete-time rebalancing rules governing the CPPI product. When rebalancing is performed on a frequency less than weekly, failing to take contagion into account will significantly underestimate the risks of the CPPI. Finally, in order to mimic a situation with low liquidity, we impose a daily trading cap on the risky asset and find that the Hawkes process driven models give rise to the highest risk measures even under daily rebalancing.
+C1 [Buccioli, Alice; Kokholm, Thomas] Aarhus Univ, Dept Econ & Business Econ, Fuglesangs Alle 4, DK-8210 Aarhus V, Denmark.
+RP Kokholm, T (reprint author), Aarhus Univ, Dept Econ & Business Econ, Fuglesangs Alle 4, DK-8210 Aarhus V, Denmark.
+EM thko@econ.au.dk
+OI Buccioli, Alice/0000-0001-7039-0399; Kokholm, Thomas/0000-0002-1402-4295
+CR Ait-Sahalia Y, 2016, J FINANC ECONOMET, V14, P1, DOI 10.1093/jjfinec/nbv024
+   Ait-Sahalia Y, 2015, J FINANC ECON, V117, P585, DOI 10.1016/j.jfineco.2015.03.002
+   Ait-Sahalia Y, 2014, J ECONOMETRICS, V183, P151, DOI 10.1016/j.jeconom.2014.05.006
+   Ait-Sahalia Y, 2009, ANN STAT, V37, P2202, DOI 10.1214/08-AOS640
+   Alfonsi A, 2016, FINANC STOCH, V20, P183, DOI 10.1007/s00780-015-0282-y
+   Andersen TG, 2002, J FINANC, V57, P1239, DOI 10.1111/1540-6261.00460
+   Avram F, 2009, STOCH ANAL APPL, V27, P770, DOI 10.1080/07362990902976611
+   Bacry E, 2013, QUANT FINANC, V13, P65, DOI 10.1080/14697688.2011.647054
+   Balder S, 2009, J ECON DYN CONTROL, V33, P204, DOI 10.1016/j.jedc.2008.04.013
+   Bamdorff-Nielsen O. E., 2006, J FINANCIAL ECONOMET, V4, P1, DOI DOI 10.1093/JJFINEC/NBI022
+   Bowsher CG, 2007, J ECONOMETRICS, V141, P876, DOI 10.1016/j.jeconom.2006.11.007
+   Branger N, 2010, INSUR MATH ECON, V46, P485, DOI 10.1016/j.insmatheco.2010.01.006
+   Bremaud P, 1996, ANN PROBAB, V24, P1563
+   Bremaud P, 1981, POINT PROCESSES QUEU
+   Broadie M, 2007, J FINANC, V62, P1453, DOI 10.1111/j.1540-6261.2007.01241.x
+   Carr P., 2005, FINANC RES LETT, V2, P125, DOI DOI 10.1016/J.FRL.2005.04.005
+   Chavez-Demoulin V, 2005, QUANT FINANC, V5, P227, DOI 10.1080/14697680500039613
+   Chavez-Demoulin V, 2012, J BANK FINANC, V36, P3415, DOI 10.1016/j.jbankfin.2012.08.011
+   Cont R, 2009, MATH FINANC, V19, P379, DOI 10.1111/j.1467-9965.2009.00377.x
+   Dassios A, 2012, INSUR MATH ECON, V51, P93, DOI 10.1016/j.insmatheco.2012.03.006
+   Dassios A, 2011, ADV APPL PROBAB, V43, P814
+   Duffie D, 2000, ECONOMETRICA, V68, P1343, DOI 10.1111/1468-0262.00164
+   Embrechts P, 2011, J APPL PROBAB, V48A, P367
+   Eraker B, 2004, J FINANC, V59, P1367, DOI 10.1111/j.1540-6261.2004.00666.x
+   Errais E, 2010, SIAM J FINANC MATH, V1, P642, DOI 10.1137/090771272
+   Hainaut D, 2016, QUANT FINANC, V16, P1203, DOI 10.1080/14697688.2015.1135251
+   HAWKES AG, 1971, BIOMETRIKA, V58, P83, DOI 10.2307/2334319
+   Herrera R, 2013, J EMPIR FINANC, V23, P33, DOI 10.1016/j.jempfin.2013.05.002
+   Hirsa A, 2010, ENCY QUANTITATIVE FI, P344
+   Jacod J., 2003, LIMIT THEOREMS STOCH
+   Jaisson T, 2015, ANN APPL PROBAB, V25, P600, DOI 10.1214/14-AAP1005
+   Jang J, 2013, INSUR MATH ECON, V53, P524, DOI 10.1016/j.insmatheco.2013.08.003
+   Jessen C, 2014, J DERIV, V21, P36, DOI 10.3905/jod.2014.21.3.036
+   Kallsen J, 2006, FROM STOCHASTIC CALCULUS TO MATHEMATICAL FINANCE: THE SHIRYAEV FESTSCHRIFT, P343, DOI 10.1007/978-3-540-30788-4_18
+   Kallsen J, 2010, STOCH PROC APPL, V120, P163, DOI 10.1016/j.spa.2009.10.012
+   Kelbert M, 2013, MATH COMMUN, V18, P393
+   Kokholm T, 2016, J BANK FINANC, V66, P19, DOI 10.1016/j.jbankfin.2016.01.012
+   Lalu A., 2015, TECHNICAL REPORT
+   LEWIS A. L., 2001, TECHNICAL REPORT
+   Nicolato E, 2003, MATH FINANC, V13, P445
+   Pan J, 2002, J FINANC ECON, V63, P3, DOI 10.1016/S0304-405X(01)00088-5
+   Pezier J, 2013, INSUR MATH ECON, V52, P263, DOI 10.1016/j.insmatheco.2013.01.001
+   Protter P. E., 2004, STOCHASTIC INTEGRATI
+   Stabile G, 2010, METHODOL COMPUT APPL, V12, P415, DOI 10.1007/s11009-008-9110-6
+   Todorov V, 2010, REV FINANC STUD, V23, P345, DOI 10.1093/rfs/hhp035
+   Weng CG, 2013, INSUR MATH ECON, V52, P508, DOI 10.1016/j.insmatheco.2013.03.001
+NR 46
+TC 1
+Z9 1
+U1 0
+U2 5
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PY 2018
+VL 18
+IS 2
+BP 311
+EP 331
+DI 10.1080/14697688.2017.1403157
+PG 21
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA GA5VS
+UT WOS:000428402600013
+DA 2019-12-27
+ER

@@ -1,0 +1,422 @@
+
+PT J
+AU Castellani, D
+   Vigano, L
+AF Castellani, Davide
+   Vigano, Laura
+TI Does willingness-to-pay for weather index-based insurance follow
+   covariant shocks?
+SO INTERNATIONAL JOURNAL OF BANK MARKETING
+LA English
+DT Article
+DE Weather insurance; Willingness to pay; Microinsurance
+ID CROP INSURANCE; BASIS RISK; INDIA; DETERMINANTS; ADOPTION; CULTURE
+AB Purpose - The purpose of this paper is to investigate the role that weather shocks can play in the livestock mortality microinsurance take-up when the insured risk has a prevalent covariant component.
+   Design/methodology/approach - The sample consists of 360 rural Ethiopian households. Data were collected in a panel-structure at the end of three agricultural seasons (2011-2013). In the questionnaire, a specific section on insurance was meant to collect information on the farmer's willingness-to-pay (WTP) for a set of insurance products, including livestock mortality insurance. Two OLS regression models and a quantile regression model were employed to estimate the impact of weather anomalies on the WTP for the insurance product.
+   Findings - The authors find that weather anomalies contribute to changes in the WTP to a large extent. Negative (positive) changes in precipitation (temperature) anomalies can lead to more than a 30 percent reduction in the WTP. This general finding is complemented with the analysis of the conditional distribution of the WTP, which shows that other elements can prevail for low values of the conditional distribution. In this case, the WTP seems to be represented more by the interviewee's age and basic knowledge of insurance, and village fixed-effects. Basic knowledge of insurance, in particular, can increase WTP by about 60 percent.
+   Practical implications - This paper has straightforward implications from a policy perspective. It suggests that farmers would prefer an insurance premium that follows the changes in the systemic component. On the contrary, insurance as well as reinsurance companies are usually reluctant to frequently revise their premiums. Financial education programs, farmer- driven design, trust building, and bundling insurance with other financial and non-financial products can increase the value proposition perceived by the farmers. From a marketing perspective, the overall findings suggest that continuous fine-tuning of the contract, transparency, and targeted information campaigns can contribute to increase and stabilize potential customers' WTP.
+   Originality/value - To the best of the authors' knowledge, this is the first paper that considers the impact of weather shocks on the WTP for a livestock mortality insurance product. Livestock is one of the most strategic assets of poor rural households in Africa. This study contributes to the theoretical and empirical literature on the determinants of weather insurance take-up in developing countries and, in particular, the role of spatiotemporal adverse selection and basis risk (e.g. Jensen et al., 2016).
+C1 [Castellani, Davide] Univ Bergamo, Bergamo, Italy.
+   [Vigano, Laura] Univ Bergamo, Dept Management Econ & Quantitat Methods, Bergamo, Italy.
+RP Castellani, D (reprint author), Univ Bergamo, Bergamo, Italy.
+EM davide.castellani@unibg.it
+CR Akter S, 2009, MITIG ADAPT STRAT GL, V14, P215, DOI 10.1007/s11027-008-9161-6
+   Alalwan AA, 2016, INT J BANK MARK, V34, P690, DOI 10.1108/IJBM-06-2015-0093
+   Araya N. S., 2011, IFAD C NEW DIR SMALL, V24, P1
+   Berg E., 2004, 86 SEM EUR ASS AGR E
+   Brimble M, 2013, J FINANC SERV MARK, V18, P207, DOI 10.1057/fsm.2013.16
+   Brown W., 2001, SMALL ENTERPRISE DEV, V12, P11
+   Carter M. R., 2010, IMPACT INTERLI UNPUB
+   Castellani D., 2013, PROMOTING MICROFINAN
+   Castellani D., 2015, SAVINGS DEV, V39, P1
+   Castellani D., 2014, J APPL BUSINESS RES, V30, P1671
+   Chantarat S, 2013, J RISK INSUR, V80, P205, DOI 10.1111/j.1539-6975.2012.01463.x
+   Churchill C., 2012, PROTECTING POOR MICR, VII
+   Clarke D., 2011, CSAE 25 ANN C 2011 E
+   Cole S, 2013, AM ECON J-APPL ECON, V5, P104, DOI 10.1257/app.5.1.104
+   Dalal A., 2010, 5 INT LAB OFF
+   Dejene A., 2004, SAVINGS DEV, V28, P179
+   Dejene A., 1993, 21 AERC
+   Dejene A., 2003, IDDIRS PARTICIPATION, P121
+   Dejene A., 2004, ETHIOPIAN J DEV RES, V26, P33
+   Dercon S., 2004, INSURANCE POVERTY, P465
+   Fafchamps M., 1999, RURAL POVERTY RISK D
+   FAO/ TCP, 2001, 2 FAOTCP
+   FRASER R, 1992, AUST J AGR ECON, V36, P83, DOI 10.1111/j.1467-8489.1992.tb00713.x
+   Fuchs A, 2011, AM J AGR ECON, V93, P505, DOI 10.1093/ajae/aaq137
+   Gautam M., 1994, POLICY REWORKING P
+   Gine X, 2008, WORLD BANK ECON REV, V22, P539, DOI 10.1093/wber/lhn015
+   Goodland A., 2011, INDEX BASED LIVESTOC
+   Gowanit C, 2016, INT J BANK MARK, V34, P110, DOI 10.1108/IJBM-04-2015-0063
+   Greatrex H., 2015, 14 CCAFS CGIAR RES P
+   Headey D, 2014, WORLD DEV, V56, P200, DOI 10.1016/j.worlddev.2013.10.015
+   Hess U, 2002, CLIMATE RISK WEATHER, P1
+   Hess U, 2003, 9 WORLD BANK AGR RUR
+   Hill R. V., 2011, FLEXIBLE INSURANCE H
+   Hill R. V., 2013, AGR EC, V44, P385
+   Hong JK, 2012, INT J BANK MARK, V30, P328, DOI 10.1108/02652321211247408
+   Hoogeveen J., 2004, GUIDE ANAL RISK VULN
+   Jensen ND, 2016, AM J AGR ECON, V98, P1450, DOI 10.1093/ajae/aaw046
+   KPMG, 2014, SECT REP INS AFR
+   KPMG, 2015, SECT REP INS AFR
+   Mahul O., 2007, POLICY REWORKING P
+   Matul M., 2013, 20 INT LAB OFF
+   Matul M., 2010, LANDSCAPE MICROINSUR
+   Maystadt JF, 2014, AM J AGR ECON, V96, P1157, DOI 10.1093/ajae/aau010
+   McIntosh C., 2013, AGR EC, V44, P385
+   Micro Insurance Centre, 2016, LANDSC MICR AFR 2015
+   Mosley P., 2001, SMALL ENTERPRISE DEV, V12
+   National Bank of Ethiopia, 2015, NAT BANK ETH ANN REP
+   National Bank of Ethiopia, 2005, NAT BANK ETH ANN REP
+   Norton M., 2011, ANN M AGR APPL EC AS
+   Norton MT, 2012, J RISK FINANC, V14, P20, DOI 10.1108/15265941311288086
+   Paluri RA, 2016, INT J BANK MARK, V34, P670, DOI 10.1108/IJBM-05-2015-0073
+   Parahoo SK, 2015, J FINANC SERV MARK, V20, P220, DOI 10.1057/fsm.2015.15
+   PATRICK GF, 1988, AUST J AGR ECON, V32, P37, DOI 10.1111/j.1467-8489.1988.tb00474.x
+   Patt A, 2009, MITIG ADAPT STRAT GL, V14, P737, DOI 10.1007/s11027-009-9196-3
+   Pearce D., 2002, EC VALUATION STATED
+   R4 Rural Resilience Initiative, 2016, Q REPORT
+   Sagarpa Segretaria de Agricultura. Ganaderia Desarollo Rural Pesca y Alimentacion, 2015, ESQ AS SEG CENTR PEC
+   Sakurai T, 1997, AM J AGR ECON, V79, P1193, DOI 10.2307/1244277
+   Sandmark T., 2013, EMERGENCE DEV AGR MI
+   Sarris A, 2013, AGR ECON-BLACKWELL, V44, P381, DOI 10.1111/agec.12022
+   Skees J., 2002, CAN FINANCIAL MARKET
+   Skees JR, 2008, AGRIC FINANCE REV, V68, P197, DOI 10.1108/00214660880001226
+   The Banker Database, 2016, FINANCIAL TIMES
+   Vigano L., 2002, MONEY FINANCE DEV EC, V5
+   Vigano L., 2007, RISK MANAGEMENT FINA
+   Volpi E., 2005, ANN M INT TASK FORC
+   Yaron J., 2004, CICA C SESS NAT RISK
+NR 67
+TC 2
+Z9 2
+U1 5
+U2 20
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 0265-2323
+EI 1758-5937
+J9 INT J BANK MARK
+JI Int. J. Bank Mark.
+PY 2017
+VL 35
+IS 3
+BP 516
+EP 539
+DI 10.1108/IJBM-10-2016-0155
+PG 24
+WC Business
+SC Business & Economics
+GA EW6QN
+UT WOS:000402635500010
+DA 2019-12-28
+ER
+
+PT J
+AU Cerchiello, P
+   Giudici, P
+   Nicola, G
+AF Cerchiello, Paola
+   Giudici, Paolo
+   Nicola, Giancarlo
+TI Twitter data models for bank risk contagion
+SO NEUROCOMPUTING
+LA English
+DT Article
+DE Bayesian models; Financial Contagion; Graphical Gaussian models
+ID INTERBANK MARKET; SYSTEMIC RISK
+AB A very important and timely area of research in finance is systemic risk modelling, which concerns the estimation of the relationships between different financial institutions, with the aim of establishing which of them are more contagious/subject to contagion. The aim of this paper is to develop a systemic risk model which, differently from existing ones, employs not only the information contained in financial market prices, but also big data coming from financial tweets. From a methodological viewpoint, we propose a new framework, based on graphical Gaussian models, that can estimate systemic risks with stochastic network models based on two different sources: financial markets and financial tweets, and suggest a way to combine them, using a Bayesian approach. From an applied viewpoint, we present the first systemic risk model based on big data, and show that such a model can help predicting the default probability of a bank, conditionally on the others. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Cerchiello, Paola; Giudici, Paolo; Nicola, Giancarlo] Univ Pavia, Dept Econ & Management, Pavia, Italy.
+RP Cerchiello, P (reprint author), Univ Pavia, Dept Econ & Management, Pavia, Italy.
+EM paola.cerchiello@unipv.it; giancarlo.nicola01@universitadipavia.it
+RI Giudici, Paolo Stefano/AAD-7430-2019
+OI Giudici, Paolo Stefano/0000-0002-4198-0127
+CR Acharya V, 2010, MEASURING SYSTEMIC R
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bollen J, 2011, J COMPUT SCI-NETH, V2, P1, DOI 10.1016/j.jocs.2010.12.007
+   Bordino I, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0040014
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Calabrese R, 2015, J OPER RES SOC, V66, P1783, DOI 10.1057/jors.2014.106
+   CARLIN BP, 2000, BAYES EMPIRICAL BAYE
+   CASELLA G, 1985, AM STAT, V39, P83, DOI 10.2307/2682801
+   Cerchiello P, 2016, QUAL QUANT, V50, P1695, DOI 10.1007/s11135-015-0229-6
+   Choi HY, 2012, ECON REC, V88, P2, DOI 10.1111/j.1475-4932.2012.00809.x
+   DAWID AP, 1993, ANN STAT, V21, P1272, DOI 10.1214/aos/1176349260
+   Diamond D. W., 1983, J POLITICAL EC, V91, P14
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Feldman R, 2013, COMMUN ACM, V56, P82, DOI 10.1145/2436256.2436274
+   Giudici P, 2016, J BUS ECON STAT, V34, P128, DOI 10.1080/07350015.2015.1017643
+   Giudici P, 1999, BIOMETRIKA, V86, P785, DOI 10.1093/biomet/86.4.785
+   Giudici P, 2001, APPL STOCH MODEL BUS, V17, P69, DOI 10.1002/asmb.425
+   Hu M., 2004, P ACM SIGKKD INT C K
+   Lauritzen S. L., 1996, GRAPHICAL MODELS
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Onnela JP, 2004, EUR PHYS J B, V38, P353, DOI 10.1140/epjb/e2004-00128-7
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Vasicek O.A., 1984, CREDIT VALUATION
+   Whittaker J. W., 1990, GRAPHICAL MODELS APP
+   Witten DM, 2011, J COMPUT GRAPH STAT, V20, P892, DOI 10.1198/jcgs.2011.11051a
+NR 27
+TC 7
+Z9 7
+U1 4
+U2 74
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0925-2312
+EI 1872-8286
+J9 NEUROCOMPUTING
+JI Neurocomputing
+PD NOV 15
+PY 2017
+VL 264
+SI SI
+BP 50
+EP 56
+DI 10.1016/j.neucom.2016.10.101
+PG 7
+WC Computer Science, Artificial Intelligence
+SC Computer Science
+GA FE6CP
+UT WOS:000408297900006
+DA 2019-12-27
+ER
+
+PT J
+AU Derbali, A
+AF Derbali, Abdelkader
+TI Systemic Risk in the Chinese Financial System: Measuring and Ranking
+SO CHINESE ECONOMY
+LA English
+DT Article
+DE Chinese financial institutions; DCC-GARCH; SRISK; systemic risk
+AB In this article, we try to analyze the systemic risk of the Chinese financial institutions following the subprime crisis of 2007. We use a sample of seventy Chinese financial institutions during the period from January 2, 2008 to June 30, 2015. We employ the SRISK as a measure of systemic risk. This measure is used to determine financial institutions activity default and its potential to become systemic in whole financial system. The SRISK measure indicates not only individual financial institutions vulnerability but also the default dependency structure between financial institutions and the Chinese financial market returns. Also, these measures can be moderately useful for identifying systematically important financial institutions. Besides, the empirical findings indicate that the systemic risk of the Chinese financial institutions is very important. The contribution of each financial institution to the risk of the whole financial system in China is very significant. We show that the dynamic conditional correlation between financial institutions and market return is the main factor of the systemic risk in China. The results of systemic risk decomposition show that the institution which has the higher level of debt contributes positively and extremely to systemic risk.
+C1 [Derbali, Abdelkader] Higher Inst Management Sousse, Dept Finance, Sousse, Tunisia.
+RP Derbali, A (reprint author), Higher Inst Management Sousse, Dept Finance, 22 St Zarkaa Al Yamama, Erriadh City, Sousse, Tunisia.
+EM derbaliabdelkader@outlook.fr
+RI Derbali, Abdelkader/O-1287-2019
+CR Acharya V. V., 2010, 1002 FED RES BANK CL
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Adrian T., 2011, FEDERAL RESERVE BANK, V348
+   Bailey W, 2011, J FINANC QUANT ANAL, V46, P1795, DOI 10.1017/S0022109011000433
+   Brownlees C. T, 2011, VOLATILITY CORRELATI, DOI [10.2139/ssrn.1611229, DOI 10.2139/SSRN.1611229]
+   Chen YB, 2014, MATH PROBL ENG, DOI 10.1155/2014/819371
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Derbali A, 2016, RES INT BUS FINANC, V37, P113, DOI 10.1016/j.ribaf.2015.10.013
+   Derbali A, 2015, AFR J ACCOUNT AUDIT, V4, P7, DOI 10.1504/AJAAF.2015.071751
+   Fenech JP, 2014, J INT FINANC MARK I, V31, P315, DOI 10.1016/j.intfin.2014.03.009
+   Financial Stability Board, 2010, RED MOR HAZ POS SYST
+   Gray D. F., 2008, 13607 NAT BUR EC RES
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Segoviano M. A., 2009, 0904 INT MON FUND
+   Urdinez F, 2015, CHIN ECON, V48, P155, DOI 10.1080/10971475.2015.993228
+   Wang Y., 2015, APPL MATH INFORM SCI, V9, P957
+   Zhang XX, 2014, CHIN ECON, V47, P5, DOI 10.2753/CES1097-1475470501
+NR 19
+TC 5
+Z9 5
+U1 4
+U2 8
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1097-1475
+EI 1558-0954
+J9 CHIN ECON
+JI Chin. Econ.
+PY 2017
+VL 50
+IS 1
+BP 34
+EP 58
+DI 10.1080/10971475.2016.1211904
+PG 25
+WC Economics
+SC Business & Economics
+GA EO4EX
+UT WOS:000396649300004
+DA 2019-12-28
+ER
+
+PT J
+AU Weber, S
+   Weske, K
+AF Weber, Stefan
+   Weske, Kerstin
+TI The joint impact of bankruptcy costs, fire sales and cross-holdings on
+   systemic risk in financial networks
+SO PROBABILITY UNCERTAINTY AND QUANTITATIVE RISK
+LA English
+DT Article
+DE Systemic risk; Financial contagion; Financial network; Cross-holdings;
+   Fire sales; Bankruptcy costs
+ID CONTAGION; OWNERSHIP; LIQUIDITY; PURCHASES; MARKETS; DEBT
+AB The paper presents a comprehensive model of a banking system that integrates network effects, bankruptcy costs, fire sales, and cross-holdings. For the integrated financial market we prove the existence of a price-payment equilibrium and design an algorithm for the computation of the greatest and the least equilibrium. The number of defaults corresponding to the greatest price-payment equilibrium is analyzed in several comparative case studies. These illustrate the individual and joint impact of interbank liabilities, bankruptcy costs, fire sales and cross-holdings on systemic risk. We study policy implications and regulatory instruments, including central bank guarantees and quantitative easing, the significance of last wills of financial institutions, and capital requirements.
+C1 [Weber, Stefan; Weske, Kerstin] Leibniz Univ Hannover, Inst Math Stochast, Welfengarten 1, D-30167 Hannover, Germany.
+RP Weber, S (reprint author), Leibniz Univ Hannover, Inst Math Stochast, Welfengarten 1, D-30167 Hannover, Germany.
+EM sweber@stochastik.uni-hannover.de
+OI Awiszus, Kerstin/0000-0003-1932-6185
+CR Amini H, 2013, SWISS FINANCE I RES
+   Amini H, 2016, OPER RES LETT, V44, P1, DOI 10.1016/j.orl.2015.10.005
+   Boucinha M, 2017, WORKING PAPER
+   BRIOSCHI F, 1989, J BANK FINANC, V13, P747, DOI 10.1016/0378-4266(89)90040-X
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Chen N, 2016, OPER RES, V64, P1089, DOI 10.1287/opre.2016.1497
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2016, MATH FINANC, V26, P835, DOI 10.1111/mafi.12071
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H, 2009, 156 OST NAT, V156
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Erdos P., 1959, PUBL MATH-DEBRECEN, V6, P290, DOI DOI 10.1234/12345678
+   FEDENIA M, 1994, REV FINANC STUD, V7, P61, DOI 10.1093/rfs/7.1.61
+   Feinstein Z, 2017, SIAM J FINANCIAL MAT
+   Feinstein Z, 2017, OPER RES LETT, V45, P109, DOI 10.1016/j.orl.2017.01.004
+   Fischer T, 2014, MATH FINANC, V24, P97, DOI 10.1111/j.1467-9965.2012.00526.x
+   Follmer H, 2015, ANNU REV FINANC ECON, V7, P301, DOI 10.1146/annurev-financial-111914-042031
+   Follmer H, 2011, STOCHASTIC FINANCEAN
+   Gai P., 2010, 383 BANK ENGL
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Jotikasthira C, 2012, J FINANC, V67, P2015, DOI 10.1111/j.1540-6261.2012.01780.x
+   Karl S, 2014, QUANT FINANC, V14, P1031, DOI 10.1080/14697688.2013.834377
+   Khandani AE, 2011, J FINANC MARK, V14, P1, DOI 10.1016/j.finmar.2010.07.005
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Staum J, 2013, HANDBOOK ON SYSTEMIC RISK, P512
+   Suzuki T, 2002, J OPER RES SOC JPN, V45, P123, DOI 10.15807/jorsj.45.123
+   Tarashev N., 2011, 342 BIS
+   Tarksi A., 1955, PAC J MATH, V5, P285, DOI DOI 10.2140/PJM.1955.5.285
+   Upper C, 2007, 234 BIS, V234
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 38
+TC 11
+Z9 11
+U1 4
+U2 12
+PU SPRINGER INTERNATIONAL PUBLISHING AG
+PI CHAM
+PA GEWERBESTRASSE 11, CHAM, CH-6330, SWITZERLAND
+SN 2367-0126
+J9 PROBAB UNCERTAIN QUA
+JI Probab. Uncertaint. Quant. Risk
+PD JUN 26
+PY 2017
+VL 2
+AR UNSP 9
+DI 10.1186/s41546-017-0020-9
+PG 38
+WC Statistics & Probability
+SC Mathematics
+GA FK3FD
+UT WOS:000413370100003
+OA DOAJ Gold, Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Menkveld, AJ
+AF Menkveld, Albert J.
+TI Crowded Positions: An Overlooked Systemic Risk for Central Clearing
+   Parties
+SO REVIEW OF ASSET PRICING STUDIES
+LA English
+DT Article
+AB Counterparty risk could hamper trade and worsen a financial crisis. A central clearing party (CCP) insures traders against counterparty default and thus benefits trade. Default of the CCP however becomes a new systemic risk. CCP risk management does not account for risks associated with crowded positions. This paper proposes a CCP exposure measure based on tail risk in trader portfolios. It identifies and measures crowded risk and assigns it to traders according to the polluter pays principle. CCP data show that crowded positions increase CCP exposure most (about one-third) on turbulent days, when exposure is high already.
+C1 [Menkveld, Albert J.] Vrije Univ Amsterdam, FEWEB, De Boelelaan 1105, NL-1081 HV Amsterdam, Netherlands.
+RP Menkveld, AJ (reprint author), Vrije Univ Amsterdam, FEWEB, De Boelelaan 1105, NL-1081 HV Amsterdam, Netherlands.
+EM albertjmenkveld@gmail.com
+FU VU University Amsterdam; NWONetherlands Organization for Scientific
+   Research (NWO)
+FX I thank Matthieu Bouvard, Johannes Breckenfelder, Hans Degryse, Darrell
+   Duffie, Thierry Foucault, Wenqian Huang, Vincent van Kervel, Peter
+   Kondor, Phillip Monin, Marco Pagano, Andreas Park, Michael Robles, Sasha
+   Rozenburg, Arnoud Siegmann, Wolf Wagner, Bart Yueshen, and Marius Zoican
+   and seminar/conference participants at ABN AMRO, French Prudential
+   Supervisory Authority at Banque de France, ABN AMRO, AFA, Dutch Central
+   Bank, Dutch Tax Administration, U.S. Commodity Futures Trading
+   Commission, Dutch Ministry of Finance, European Central Bank, EuroCCP,
+   U.S. Securities and Exchange Commission, and Society for Financial
+   Econometrics for comments. I am grateful to European Multilateral
+   Clearing Facility (EMCF) and to NYU V-Lab for making data available. I
+   further gratefully acknowledge VU University Amsterdam for a VU talent
+   grant and NWO for a Vidi grant.
+CR Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Amini H., 2015, SYSTEMIC RISK UNPUB
+   Amini H, 2016, OPER RES, V64, P1135, DOI 10.1287/opre.2015.1414
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Balakrishnan N., 2009, CONTINUOUS BIVARIATE
+   Bao J., 2016, FEDERAL RESERV UNPUB
+   Bernanke Ben S., 2011, COMMUNICATION, P2
+   Bignon V., 2016, FAILURE CLEARINGHOUS
+   BIS-IOSCO, 2004, REC CENTR COUN UNPUB
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Bliss R., 2006, DERIVATIVES CLEARING
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   Brunnermeier M. K., 2013, HDB EC FINANCE B, V2
+   Brunnermeier M.K., 2014, RISK TOPOGRAPHY SYST
+   Coffman Jr E.-G., 1996, APPROXIMATION ALGORI
+   Danielsson J., 2005, SUBADDITIVITY UNPUB
+   Denault M., 2001, COHERENT ALLOCATION
+   Duffie D., RISK TOPOGRAPHY SYST
+   Duffie D, 2015, J FINANC ECON, V116, P237, DOI 10.1016/j.jfineco.2014.12.006
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Ghamami S., 2016, DOES OTC DERIVATIVES
+   Giancarlo J. C., 2017, COMMUNICATION UNPUB
+   Glasserman P., 2016, HIDDEN ILLIQUIDITY M
+   Jorion P., 2007, VALUE RISK NEW BENCH
+   Lam K, 2004, J FUTURES MARKETS, V24, P117, DOI 10.1002/fut.10108
+   Lambert Lisa, 2017, REUTERS
+   Litterman R., 1994, HOT SPOTS HEDG UNPUB
+   Lopez J. A Cruz, J FINANCIAL IN PRESS
+   Menkveld A. J., 2016, SYSTEMIC RISK CENTRA
+   MERTON RC, 1993, J APPL CORPORATE FIN, V6, P16
+   Nabeya S., 1951, ANN I STAT MATH, V3, P2
+   Patrik G., 1999, USE RISK ADJUSTED CA
+   ROSENBAUM S, 1961, J ROY STAT SOC B, V23, P405
+   Spatt C. S, 2013, DESIGNING RELIABLE C
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Tarashev N., 2009, BIS Q REV, V6, P65
+   Tasche D, 2000, RISK CONTRIBUTIONS P
+   Tsanakas A, 2009, INSUR MATH ECON, V44, P268, DOI 10.1016/j.insmatheco.2008.03.007
+   Urban M., 2003, BLATTER DGVFM, V26, P389
+   Zhu S., 2011, NEDERLANDSCHE UNPUB
+NR 41
+TC 6
+Z9 6
+U1 0
+U2 1
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 2045-9920
+EI 2045-9939
+J9 REV ASSET PRICING ST
+JI Rev. Asset Pricing Stud.
+PD DEC
+PY 2017
+VL 7
+IS 2
+BP 209
+EP 242
+DI 10.1093/rapstu/rax016
+PG 34
+WC Business, Finance
+SC Business & Economics
+GA FP0DF
+UT WOS:000417268900002
+OA Bronze
+DA 2019-12-28
+ER

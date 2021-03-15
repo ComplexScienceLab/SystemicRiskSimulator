@@ -1,0 +1,3167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application 
+			progid="Excel.Sheet"
+		?>
+
+<Workbook xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="urn:schemas-microsoft-com:office:spreadsheet">
+<Styles>
+<Style ss:ID="s16" ss:Name="attribute_cell">
+<Borders>
+<Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+<Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+<Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+<Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+</Borders>
+</Style>
+<Style ss:ID="s17" ss:Name="attribute_header">
+<Borders>
+<Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+<Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+<Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+<Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+</Borders>
+<Font ss:Bold="1"/>
+</Style>
+</Styles>
+<Worksheet ss:Name="Freeplane Sheet">
+<Table>
+<Row>
+<Cell ss:Index="1">
+<Data ss:Type="String">谭春枝2018
+《基于复杂网络理论的银行间市场系统风险传染机制研究》
+文献综述</Data>
+<Comment>
+<ss:Data>
+<table style="border-bottom-width: 0; border-style: solid; border-top-width: 0; width: 80%; border-left-width: 0; border-right-width: 0" border="0">
+      <tr>
+        <td style="border-bottom-width: 1; border-style: solid; border-top-width: 1; width: 33%; border-left-width: 1; border-right-width: 1" valign="top">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            
+          </p>
+        </td>
+        <td style="border-bottom-width: 1; border-style: solid; border-top-width: 1; width: 33%; border-left-width: 1; border-right-width: 1" valign="top">
+          <p style="margin-top: 1; margin-right: 1; margin-bottom: 1; margin-left: 1">
+            
+          </p>
+        </td>
+      </tr>
+    </table>
+</ss:Data>
+</Comment>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="2">
+<Data ss:Type="String">银行间市场复杂网络结构的研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="3">
+<Data ss:Type="String">获取了银行同业双边实际数据</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Souma(2003)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Inaoka(2004)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">研究了日本银行网络结构的实证。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">发现了无标度特性。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Soramaki(2007)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Soram2007The</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Physica A-statistical Mechanics \&amp; Its Applications</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Soram{\"a}ki, Kimmo and Bech, Morten L. and Arnold, Jeffrey and Glass, Robert J. and Beyeler, Walter E.</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">The topology of interbank payment flows</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2007</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Becher (2008)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">分析了9000多家银行组成的FedWire系统。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">发现出度服从幂率指数为1.76的幂律分布。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Boss (2004a)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Cajueiro , Tabak (2008)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">分析了奥地利银行同业市场。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">观测2000——2003年的900家银行的数据，</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">结果显示银行间同业拆借市场分布服从幂率指数为1.85的幂律分布。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Muller (2006)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">研究的瑞士银行同业网络表明，一个大约有100家瑞士银行的相对较小的系统有一个比其他系统更偏态的分布，在其同业拆借市场中，只有两家大型银行占据主要地位，这意味着有一个小的幂律分布；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Edson , Cont (2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">调查表明</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">在2007年6月至2008年9月，巴西银行系统的600家银行间的内在联系呈现出幂律指数范围为2.23~3.37的幂律分布。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Becher (2008)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Iori (2008)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">更小规模的英国和意大利市场的银行系统也呈现出类似的无标度特征，即在银行连接的分布中，一些银行拥有大部分连接；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">Martinez Jaramillo S(2014)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">利用墨西哥银行双边同业数据进行实证研究，发现该国银行具有无标度特征。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="2">
+<Data ss:Type="String">银行间市场系统风险传染的研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="3">
+<Data ss:Type="String">相关理论的研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">从复杂网络的角度</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">先构建随机银行网络模型，再进行分析</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Aleksiejuk , Holyst (2001)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">构建有向随机网络。
+然后在此基础上研究银行倒闭而引起其他银行倒闭的数量。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">第一次将统计物理理论用于研究银行倒闭传染问题。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Nier (2007)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">构建了银行随机网络。
+网络集中度对银行倒闭风险传染的影响是非单调的。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Gai, Kapadia (2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">基于随机银行网络结构的传染模型。
+复杂金融系统有一种强健而脆弱的趋势。
+尽管更高程度的金融联系能降低传染的可能性，但若给定一个严重的传染性的违约，更高的复杂网络关联度将会导致广泛的传染。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">Eboli (2007)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8">
+<Data ss:Type="String">好像对不上文献？</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">Gai , Kapadia (2007)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">Battiston (2009)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">May , Arinaminpathy (2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">发现：较高的银行内在联系会增强破产的扩散。
+更高的联系又会使得破产的扩散程度下降。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">Ananda , Gai ,Kapadiac (2013)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8">
+<Data ss:Type="String">建立包含国内银行、外资银行的银行随机网络系统，还将与银行有业务往来的公司也纳入系统  ，研究了宏观经济波动，资产市场流动性及网络结构在决定总的信贷损失及危机传染方面的相互作用。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">张锋华、李红刚 (2013)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">张锋华李红刚2013</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">内蒙古大学学报(自然版)</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">张锋华 and 李红刚</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">多主体模型下的银行网络流动性转移</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2013</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8">
+<Data ss:Type="String">建立了有向有权随机银行网络和无向无权随机客户网络相耦合的复杂网络模型，结合客户与银行间的相互作用。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="9">
+<Data ss:Type="String">发现银行倒闭危机在耦合的复杂网络模型中会出现传播范围的迅速扩大的现象。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">基于无标度网络模型做理论研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">万阳松、陈忠 (2007)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">万阳松2007复杂银行网络的宏观结构模型及其分析</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">上海交通大学学报</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">万阳松 and 陈忠 and 陈晓荣</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">复杂银行网络的宏观结构模型及其分析</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2007</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">提出了双幂律无标度银行网络结构，然后做相关研究。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Andreas , Simone (2012)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Krause2012Interbank</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Journal of Economic Behavior &amp; Organization</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Krause, Andreas and Giansante, Simone</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Interbank lending and the spread of bank failures: A network model of systemic risk ☆</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2012</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">建立了有向无标度网络模型，研究了银行破产的传导机理，得出初始破产银行的规模 是否扩散是一个重要因素，但就扩散的范围而言，银行同业借贷网络的特征更为重要。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">比较不同的复杂网络模型的研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">李守伟、何建敏 (2012)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">通过构建银行间市场有向随机网络、小世界网络、无标度网络，探索不同网络结构中银行间传染风险特征及其差异。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">发现，小世界网络结构中造成的传染风险效应最大，无标度网络中最小。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Gai , Haldance , Kapadia (2011)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Gai2011Complexity</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Journal of Monetary Economics</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Gai, Prasanna and Haldane, Andrew and Kapadia, Sujit and Jmoneco, J.</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Complexity, concentration and contagion</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2011</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">分别构建了无标度银行网络和随机银行网络，分析了银行的融资流动性风险如何在银行网络内广泛传播。
+数值模拟发现，无担保银行间市场中，回购市场业务、编制冲击、流动性极聚很可能扩大危机的蔓延，并导致系统奔溃。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">从其他不同角度相结合的研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Thurner (2003)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Thurner2003Risk</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Quantitative Finance</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Thurner, Stefan and Hanel, Rudolf and Pichler, Stefan</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Risk trading, network topology and banking regulation</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2003</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">结合网络拓扑结构和博弈模型，研究银行间风险传染问题。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">发现若银行能找到一个愿与其签订风险分摊协议的邻居银行，则该银行可根据自身风险降低的需要来选择相应的交易策略。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">May (2008)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">May2008Complex</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Nature</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">May, Robert M, and Levin, Simon A, and George, Sugihara</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Complex systems: ecology for bankers</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2008</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Schweitzer (2009)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">凸显了利用网络理论和复杂系统文献的相关知识一起更多的综合技术来发展金融系统弹性模型的重要性</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Li (2011)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">研究了银行分层网络演化中网络结构与银行主体行为对传染风险的影响。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Benjamin , Marcelo (2014)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">对银行复杂网络的研究，认为有向的聚集系数能测度复杂网络中的系统性风险。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">张锋华，李红刚 (2013)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">张锋华李红刚2013</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">内蒙古大学学报(自然版)</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">张锋华 and 李红刚</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">多主体模型下的银行网络流动性转移</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2013</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">在有向有权随机网络的基础上构建了一个银行网络流动性动态配置的多主体模型，以模拟金融危机中银行网络流动性再分配过程。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">发现银行网络流动性转移效率与流动性冲击的大小呈负相关，与网络结构均匀程度及连接度正相关。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">从经济学的角度</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Allen , Gale (2000)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Allen2000Financial</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Journal of Political Economy</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Allen, Franklin and Gale, Douglas</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Financial Contagion</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2000</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">创新性地研究了风险在银行间市场的传染问题，奠定了该领域微观经济学基础。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">构建了三种包含四个银行的网络微观结构</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">发现如果银行间市场结构是</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">不完全市场</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8">
+<Data ss:Type="String">虽然可以实现最优风险分担，但在面临流动性冲击时更容易出现风险传染，从而使得系统更脆弱。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">完全市场</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8">
+<Data ss:Type="String">可以实现最优风险分担，可以弱化某个银行的初始流动冲击给系统带来的影响。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Freixas (2000)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Freixas2000Systemic</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Journal of Money Credit \&amp; Banking</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Freixas, Xavier and Parigi, Bruno M. and Rochet, Jean Charles</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Systemic Risk, Interbank Relations, and Liquidity Provision by the Central Bank</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2000</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">构建了一个具有资金中心银行的系统的中心型结构。该结构中处于外围的银行都与处于结构中心位置的银行存在同业业务往来，而外围银行之间不存在同业往来。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">研究得出结论在该系统中银行风险传染的概率依赖于模型的参数。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Seung Hwan Lee (2013)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Lee2013Systemic</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Social Science Electronic Publishing</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Lee, Seung Hwan</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Systemic liquidity shortages and interbank network structures ???</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2013</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">构建6种只包含4个银行的不同同业网络结构来分析流动性风险的系统性特征。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<ss:Data ss:Type="String">
+<p>
+      研究发现在一个<font color="#0000ff">中心——边缘网络结构</font>中，如果处于中心位置的银行出现赤字，那么该网络会引起一个更高水平的系统性流动性短缺，当银行间结构变得更不匹配时，对于流动性冲击，银行系统会变得更脆弱。
+    </p>
+</ss:Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">彭建刚，童磊 (2013)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">彭建刚2013同业拆借视角下银行业流动性风险传染效应研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">湖南社会科学</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">彭建刚 and 童磊</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">同业拆借视角下银行业流动性风险传染效应研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2013</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">将我国银行同业交易商分为四大类，根据Allen, Gale(2000)的研究建立了包括四类交易商的网络结构，采用压力测试的方法对我国银行间同业市场上分类交易商之间的流动性和风险传染效应进行了研究。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">发现：</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">大规模流动性冲击会导致流动性风险蔓延和同业市场交易量萎缩。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">小规模流动性冲击下，风险具有收敛性。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Diamond , Rajan (2001,2005)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">指出银行间市场是所有市场共同面临的流动性市场。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">发现</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">某银行流动性短缺可能会减少所有银行拥有的总流动性，从而会将流动性短缺传染给其他银行，而且这种传染会持续到系统奔溃。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Eisenberg , Noe (2001)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Eisenberg2001</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Management Science</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Eisenberg, Larry and Noe, Thomas</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Systemic Risk in Financial Systems</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2001</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Leitner (2001)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">类似地角度做了研究。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="3">
+<Data ss:Type="String">相关实证的研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">利用估算的双边风险敞口数据</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">最大熵原理（ME），从资产负债数据估算双边风险敞口数据，然后实证。
+他们都假定任意两个银行间有信用拆借关系，与实际有差距，因而研究结论也不太准确。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Upper, Worms (2004)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Upper2004Estimating</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">European Economic Review</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Upper, Christian and Worms, Andreas</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Estimating bilateral exposures in the German interbank market: Is there a danger of contagion?</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2004</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Elsinger (2006a)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">利用ME处理对角线元素为0的矩阵，估计银行同业双边风险敞口数据。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">李宗怡、李玉海（2005）</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">马君潞、范小云（2007）</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">马君潞2007中国银行间市场双边传染的风险估测及其系统性特征分析</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">经济研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">马君潞 and 范小云 and 曹元涛</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">中国银行间市场双边传染的风险估测及其系统性特征分析</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2007</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">周再清、谭盛中（2008）</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">彭寿康、陈超（2011）</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">利用ME结合我国各银行同业拆借额度估计银行双边交易数据，在此基础上进行相关的实证研究。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">结合资产负债表和其他信息源，然后实证。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Toivanen (2009)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Toivanen2009Financial</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Social Science Electronic Publishing</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Toivanen, Mervi</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Financial Interlinkages and Risk of Contagion in the Finnish Interbank Market</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2009</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">利用结算系统中的支付数据估算银行双边交易数据，然后实证。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Furine (2003)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Amundsen, Arnt (2005)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">基于银行同业拆解关系，用阈值法构建了银行有向网络模型，研究了随机性攻击和选择性攻击对银行网络最大弱成分的影响，进而分析了银行网络的稳定性，并对随机性攻击和选择性攻击对银行网络稳定性影响进行比较分析。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">李守伟、何建敏、庄亚明、施亚明 (2011)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">李守伟2011基于复杂网络的银行同业拆借市场稳定性研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">管理工程学报</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">李守伟 and 何建敏 and 庄亚明 and 施亚明</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">基于复杂网络的银行同业拆借市场稳定性研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2011</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">分析表明：银行网络对于随机性攻击具有较高稳定性，对于选择性攻击具有较低的稳定性。两种攻击方式对银行网络影响的差异大小与阈值有关。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">利用真实的同业双边数据</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Christoph Memmel , Ingrid Stein (2008)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">MemmeChristoph2008l</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Memmel, Christoph and Stein, Ingrid</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Contagion in the German interbank market</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2008</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">利用德国银行同业双边真实交易数据对德国金融系统的脆弱性进行了实证。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">研究表明：</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">银行同业传染的整体风险较低，但如果大银行倒闭，风险传染会发生；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">对于中等程度的同业贷款损失率，风险传染的结果很大程度上依赖于大银行的特征。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Hans Degrysa , Gregory Nguyen (2007)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">利用详细的银行同业风险暴露总额、大额双边同业风险暴露以及跨境银行间的风险暴露研究比利时银行系统在1993——2002年系统风险传染的演化及其决定因素，研究结果表明同业市场网络结构影响风险传染。当同业市场结构从完全市场结构向多重资金中心结构转变时，传染的风险及其影响会下降；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">跨境银行间风险暴露相对重要性的提高会降低局部风险传染。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Paolo Emilio Mistrulli (2011)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">key</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Mistrulli2011Assessingfinancialcontagionintheinterbankmarket</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">journal</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Journal of Banking &amp; Finance</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">authors</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Mistrulli, Paolo Emilio</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">title</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">Assessing financial contagion in the interbank market: Maximum entropy versus observed interbank lending patterns</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">year</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String">2011</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">利用意大利同业实际双边数据研究了意大利银行同业市场系统风险是如何传染的，</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">同时还将利用实际数据进行实证研究的结果与利用最大化熵方法估算双边同业数据所做的实证研究进行比较，得出最大化熵方法会高估风险传染的范围。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Chiristoph Memmela , Angelika Sachsb (2013)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">利用真实的同业双边数据对德国银行部门在2008年一季度到2011年底二季度的银行传染进行模拟，得出如下结果：</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">1. 对于该期间的银行直接传染，系统没有那么脆弱；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">2. 在没有很多信息损失的情况下，银行传染造成的每一时点的损失分布可以浓缩成一个指标，即银行倒闭数量的期望值；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8">
+<Data ss:Type="String">该指标的决定因素</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="9">
+<Data ss:Type="String">银行资本、</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="9">
+<Data ss:Type="String">银行间的借贷、</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="9">
+<Data ss:Type="String">给定的违约损失、</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="9">
+<Data ss:Type="String">银行对其他银行债权分布的平均程度；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="2">
+<Data ss:Type="String">银行系统风险管理的研究</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="3">
+<Data ss:Type="String">监管者的角度</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">微观监管</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">对次贷危机发生前的研究</Data>
+<Comment>
+<ss:Data>
+<p>
+      在2007年次贷危机发生以前，银行实现系统性风险的微观管理，是以《巴塞尔协议》为监管标准，通过对单个银行的风险防范，以防止系统性风险的发生。因此，其对银行系统性风险管理的研究可以从对单个银行的风险管理来阐述。
+    </p>
+</ss:Data>
+</Comment>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Ediz , Michael , Perraudin (1998)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">对1989——1995年英国银行业资本监管进行研究。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">GhoSh , Naehane , Narain (2003)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">对1997——1999年印度银行业的资本监管进行研究。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Heid , Prath , Stolz (2004)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">考察了1994——2002年德国存款银行对资本和风险资产的调整。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">研究发现实行对银行业资本的监管效果较佳，能够在不改变风险资产选择的基础上增强单个银行的稳定性。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Ludger , Hentschel (1997)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">认为人们在加强微观审慎监管时，容易忽略衍生品市场，事实证明金融衍生工具可能是系统性风险的重要源泉，衍生品市场的过度繁荣往往暗示着金融风险的过度积累。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Thurner (2003)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">从银行自身角度，研究了银行风险的管理，并指出银行可与邻居银行进行风险分摊交易以降低自身的风险。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">翟金林 (2001)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">汤凌霄 (2003)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">研究了银行业系统性风险的防范而建立金融安全网的相关作用。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">对次贷危机发生后的研究</Data>
+<Comment>
+<ss:Data>
+<p>
+      自从次贷危机发生后，人们开始审视银行监管出现的问题，发现对银行业的微观监管机理存在较大的漏洞。
+    </p>
+</ss:Data>
+</Comment>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Brown (2009)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">认为仅靠对银行业进行微观监管是无法防范系统性风险的。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Acharya , Zhou (2009,2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">研究了银行业微观监管失败的深层次原因，并认为微观监管将会加剧系统性风险。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">从《巴塞尔协议 II》对于银行资本的监管存在顺周期性的角度分析</Data>
+<Comment>
+<ss:Data>
+<p>
+      早在危机发生之前就对银行资本监管的顺周期性做研究，认为资本监管的顺周期性将会强化银行和金融体系的不稳定性。
+    </p>
+</ss:Data>
+</Comment>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">Altman , Saunders (2001)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">Tanaka (2002)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">Luc Laeven , Giovanni Majnoni (2002)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">温信祥 (2006)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">王邦胜、陈颖 (2008)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">李文泓 (2009)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="8" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">宏观监管</Data>
+<Comment>
+<ss:Data>
+<p>
+      原有的微观审慎监管措施对于系统风险的治理存在严重的不足和漏洞，人们提出了针对系统风险采用宏观审慎监管的理论。
+    </p>
+</ss:Data>
+</Comment>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Brunnermeier (2009)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Goodhart , Persaud (2008)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Acharya , Richardson (2009)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Squam Lake (2009)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Shin (2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">提出用宏观审慎监管的目标是为了防范系统风险。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Tarashev (2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">用 Shapley Value 方法分析了单个金融机构的系统重要性，根据对系统重要性的不同来进行风险分配方法的选择，进而满足不同的宏观审慎目标。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">董满章 (2005)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">通过对美国银行系统风险防范的研究，</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">得出，目前我国要降低系统性风险的危害，可以通过几个方面入手：</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">1. 对不良资产的处置；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">2. 防止经济泡沫的发生；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">3. 重视制度建设以构筑银行稳健运行的法制环境；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">李妍 (2009)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">总结了系统风险的新特征，提出了：</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">必须建立起宏观审慎监管框架才能有效地防范与控制系统性风险。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">巴曙松 (2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">认为在后危机时代，宏观审慎监管变得尤为重要，中国也应该探索宏观审慎监管的政策。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">李文泓 (2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">宏观审慎监管应构建系统风险的预警机理。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">于蓓 (2013)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">分析了银行系统风险的宏观审慎监管如何实现微观操作，通过构建分层指标体系，实现对宏观审慎监测，从而指导宏观审慎监管。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">宏观审慎监管与微观相结合</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">李建全 (2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">指出宏观审慎监管与微观审慎监管的目标一致，</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">要加强从宏观审慎角度对系统性风险的分析与评估，构建金融业宏观、微观全面的审慎监管机理。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">王书斌 (2011)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">提出管理银行系统风险的应急措施和中长期措施</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">应急措施：单个银行发生风险时，要防止其传染；</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">在中长期时要建立起防范与控制系统风险的安全体系，也就是将宏观审慎监管与微观审慎监管相结合。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">麦强盛 (2011)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">通过对比宏观审慎监管与微观审慎监管的异同后，根据系统性风险的特征，提出要实现银行体系的稳定、防范系统性风险就应该坚持宏观审慎和微观审慎并重的理念。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">胡丽琴 (2012)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">通过对我国商业银行的实证研究，发现我国宏观审慎与微观审慎监管并不协调，应继续这相互协调配合的机理。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">高国华 (2013)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">在总结及比较了危机后美国等发达国家针对系统风险提出的监管框架和监管方案后，提出要增强宏观审慎意识，为后危机时代中国建立宏观审慎与微观审慎紧密结合的监管框架体系提供借鉴。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="4">
+<Data ss:Type="String">宏观审慎监管与货币政策相结合</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">威廉怀特 (2008)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">认为货币政策不能替代宏观审慎监管，因为其不能完全起到金融稳定的作用。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">因此要建立一个两者相互协调的宏观金融稳定框架。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Angelini (2010)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">应用DSGE模型评估了货币政策与宏观审慎政策的相互关系。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">研究发现，在正常状态，若审慎资本监管政策与货币政策不能相互协调甚至产生政策抵消效果，则导致次优结果。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">Benes , Kumh , Vavra (2011)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">在DSGE框架下考察了新兴市场国家在贸易条件冲击、资产泡沫下，货币政策与宏观审慎政策的传导效应。</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="5">
+<Data ss:Type="String">逆周期资本</Data>
+<Comment>
+<ss:Data>
+<p>
+      在《巴塞尔协议 III》中，宏观审慎监管工具包括了逆周期资本，当经济受到外部冲击时，逆周期资本可以发挥显著的稳定作用。
+    </p>
+</ss:Data>
+</Comment>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="6">
+<Data ss:Type="String">Christensen , Meh , Moran (2011)</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Names</Data>
+</Cell>
+<Cell ss:StyleID="s17">
+<Data ss:Type="String">Values</Data>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7" ss:StyleID="s16">
+<Data ss:Type="String">文献</Data>
+</Cell>
+<Cell ss:StyleID="s16">
+<Data ss:Type="String"/>
+</Cell>
+</Row>
+<Row>
+<Cell ss:Index="7">
+<Data ss:Type="String">通过模型发现，逆周期资本的经济稳定作用的发挥与货币政策密切相关。</Data>
+</Cell>
+</Row>
+</Table>
+</Worksheet>
+</Workbook>

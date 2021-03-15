@@ -1,0 +1,401 @@
+
+PT J
+AU Occhino, F
+AF Occhino, Filippo
+TI Debt-overhang banking crises: Detecting and preventing systemic risk
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Multiple equilibria; Self-fulfilling expectations; Financial fragility;
+   Moral hazard; Macroprudential regulation
+ID CAPITAL REQUIREMENTS; MORAL HAZARD; EXPECTATIONS; MODEL
+AB This paper shows how the debt-overhang distortion on bank lending can generate a self-fulfilling expectations banking crisis accompanied by a plunge in the value of banks' assets and a contraction of bank lending and economic activity. Moral hazard in banking adds an additional channel that can generate multiple equilibria, worsen the debt-overhang distortion, and deepen the crisis. Some signals of systemic risk include: high volatility and the presence of two modes in the probability distribution functions of the returns on bank-issued bonds and on portfolios of bank-issued bonds and equities; and high correlation between the returns on bank-issued bonds. Macroprudential regulation should discourage the exposure of banks to the economic and financial cycle by raising the capital requirements for banks with more cyclical assets. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Occhino, Filippo] Fed Reserve Bank Cleveland, Res Dept, 1455 East 6th St, Cleveland, OH 44114 USA.
+RP Occhino, F (reprint author), Fed Reserve Bank Cleveland, Res Dept, 1455 East 6th St, Cleveland, OH 44114 USA.
+EM filippo.occhino@clev.frb.org
+OI Occhino, Filippo/0000-0003-0892-2723
+CR Acharya V., 2010, MEASURING SYSTEMIC R
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Adrian T., 2013, 18943 NBER
+   Adrian T., 2014, 348 FED RES BANK NEW
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2008, FINANCIAL CRISES
+   Allen F., 2011, LIQUIDITY AND CRISES
+   Arellano C., 2012, 466 FED RES BANK MIN
+   BERNANKE BS, 1983, AM ECON REV, V73, P257
+   Bhattacharya S, 2013, REV CORP FINANC STUD, V2, P29, DOI 10.1093/rcfs/cft001
+   Bordo MD, 2010, J MONETARY ECON, V57, P1, DOI 10.1016/j.jmoneco.2009.10.015
+   Brownlees C., 2015, CONDITIONAL CAPITAL
+   BULOW JI, 1985, J POLIT ECON, V93, P488, DOI 10.1086/261312
+   CHARI VV, 1988, J FINANC, V43, P749, DOI 10.2307/2328198
+   COOPER R, 1988, Q J ECON, V103, P441, DOI 10.2307/1885539
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Freixas X., 2008, MICROECONOMICS BANKI
+   Gomes J., 2013, 52 WHART SCH
+   Goodhart Charles, 2002, FINANCIAL CRISES CON
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Hellmann TF, 2000, AM ECON REV, V90, P147, DOI 10.1257/aer.90.1.147
+   Hull J. C., 2005, OPTIONS FUTURES OTHE
+   Kobayashi K., 2014, 876 KIER
+   Lagunoff R, 2001, J ECON THEORY, V99, P220, DOI 10.1006/jeth.2000.2733
+   Lamont O, 1995, AM ECON REV, V85, P1106
+   MYERS SC, 1977, J FINANC ECON, V5, P147, DOI 10.1016/0304-405X(77)90015-0
+   Occhino F, 2015, EUR ECON REV, V73, P58, DOI 10.1016/j.euroecorev.2014.11.003
+   Occhino F, 2014, BE J MACROECON, V14, P511, DOI 10.1515/bejm-2013-0113
+   Pagano M. S., 2014, WHAT IS RELATION SYS
+   Philippon T., 2009, 10 J POL ANN RES C H
+   Philippon T, 2013, J FINANC, V68, P1, DOI 10.1111/j.1540-6261.2012.01793.x
+   Repullo R, 2004, J FINANC INTERMED, V13, P156, DOI 10.1016/j.jfi.2003.08.005
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Sedunov J., 2013, WHAT IS SYSTEMIC RIS
+   Weller B., 2015, MEASURING TAIL RISKS
+   Wilson L., 2012, INT J MONET EC FINAN, V5, P395
+   Wilson L, 2010, FINANC MARK PORTFOLI, V24, P3, DOI 10.1007/s11408-009-0125-y
+NR 37
+TC 2
+Z9 2
+U1 0
+U2 2
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD JUN
+PY 2017
+VL 30
+BP 192
+EP 208
+DI 10.1016/j.jfs.2015.12.008
+PG 17
+WC Business, Finance; Economics
+SC Business & Economics
+GA FH0GS
+UT WOS:000410818200015
+DA 2019-12-28
+ER
+
+PT J
+AU Alexandra, J
+AF Alexandra, Jason
+TI Risks, Uncertainty and Climate Confusion in the Murray-Darling Basin
+   Reforms
+SO WATER ECONOMICS AND POLICY
+LA English
+DT Article
+DE Climate risk; climate normal; adaptative governance; water reform;
+   Murray-Darling Basin
+ID AUSTRALIAN WATER POLICY; GOVERNANCE; MANAGEMENT; POLITICS; SCIENCE;
+   FUTURE
+AB Risks and uncertainties arising from climate change are increasingly recognized as significant challenges for water governance. To support adaptive approaches, critical examinations of water policy practices and rationalities are needed. This paper focuses on the treatment of climate change in Australia's Murray-Darling Basin (MDB) reforms over the past decade. While the MDB faces potentially significant drying trends due to climate change no reductions in future water availability due to climate change were formalized in the 2012 Basin Plan - regulatory instrument agreed to by Australia's National Parliament. The background, key dimensions and possible reasons for this decision are examined. Possible reasons for not formally reducing water deemed available in the future include the complexity and uncertainty of climate science, the cultural construction of "climate normal" based on long-term averages, and institutional settings that reinforce dominant "hydro-logical" approaches and rationalities. Minimizing the political, legal and financial consequences of attributing reductions in water allocations to climate change are also potential reasons. The case of the MDB, as outlined in this paper, demonstrates some of the ways climate change is causing systemic challenges for adaptive water governance, and that innovative approaches need to be embraced, including better processes for institutionalizing science/policy integration.
+C1 [Alexandra, Jason] Charles Darwin Univ, Res Inst Environm & Livelihoods, Darwin, NT 0909, Australia.
+   [Alexandra, Jason] RMIT Univ, Sch Global Urban & Social Studies, Melbourne, Vic, Australia.
+   [Alexandra, Jason] Alexandra & Associates, 16 Homestead Rd Eltham, Eltham, Vic 3095, Australia.
+RP Alexandra, J (reprint author), Charles Darwin Univ, Res Inst Environm & Livelihoods, Darwin, NT 0909, Australia.; Alexandra, J (reprint author), RMIT Univ, Sch Global Urban & Social Studies, Melbourne, Vic, Australia.; Alexandra, J (reprint author), Alexandra & Associates, 16 Homestead Rd Eltham, Eltham, Vic 3095, Australia.
+EM jasonandmargalexandra@gmail.com
+CR ABC, 2015, CLIM REV PROM DISP T
+   Acharya A, 2015, INTERNATIONAL HANDBOOK OF POLITICAL ECOLOGY, P373
+   Alexandra J, 2014, DIFFICULT TRANSITION
+   Alexandra J, 2012, P 2 PRACT RESP CLIM, P494
+   Alexandra J, 2012, CROP PASTURE SCI, V63, P215, DOI 10.1071/CP11189
+   Allen J, 2011, AREA, V43, P154, DOI 10.1111/j.1475-4762.2011.01005.x
+   Allouche J, 2015, WATER ALTERN, V8, P610
+   Alston M, 2011, ENVIRON POLIT, V20, P899, DOI 10.1080/09644016.2011.617175
+   Appaduri A, 2013, FUTURE CULTURAL FACT
+   APSC, 2007, TACKL WICK PROBL PUB
+   APSC Australian public Service Commission, 2010, AH GAM BLUEPR REF AU
+   Arthur J. M, 2003, DEFAULT COUNTRY LEXI
+   Campbell A., 2010, MURRAY MURMURINGS RE
+   CAMPBELL A, 2005, KNOWLEDGE MANAGING A
+   Castree N., 2014, MAKING SENSE NATURE
+   Cathcart M, 2009, WATER DREAMERS REMAR
+   Chiew F., 2009, ADVICE DEFINING CLIM
+   COAG, 2004, INT AGR NAT WAT IN 2
+   Commonwealth of Australia, 2015, WAT ACT AM 2015
+   Commonwealth of Australia, 2009, WAT ACT 2007
+   Commonwealth of Australia, 2012, BAS PLAN 2012 2012 B
+   Connell D., 2014, TIME REGROUP REASSES
+   Connell D, 2011, WATER RESOUR MANAG, V25, P3993, DOI 10.1007/s11269-011-9897-8
+   CRASE L, 2009, WATER ALTERN, V2, P441
+   CSIRO, 2010, CLIM3CHANG VAR SE AU
+   CSIRO, 2012, SEACI PHAS 2 SYNTH R
+   *CSIRO, 2008, WAT AV MURR DARL BAS
+   Descola P., 2012, NATURE CULTURE
+   Dittmer J, 2014, PROG HUM GEOG, V38, P385, DOI 10.1177/0309132513501405
+   Donohue RJ, 2011, J HYDROL, V406, P234, DOI 10.1016/j.jhydrol.2011.07.003
+   Dore J, 2012, J HYDROL, P446
+   Dovers S., 2001, I SUSTAINABILITY
+   Dryzek J. S., 2005, POLITICS EARTH
+   DSE, 2009, NO REG SUST WAT STRA
+   EDO, 2012, LEG AN PROP MURR DAR
+   Elmahdi A, 2015, ROLE WATER AUSTRALIA
+   Ferguson J, 2014, BILLIONS DESALINATIO
+   Field C. B., 2012, INT PAN CLIM CHANG S
+   Gallant AJE, 2011, WATER RESOUR RES, V47, DOI 10.1029/2010WR009832
+   Hajer M., 1996, RISK ENV MODERNITY N
+   Hajer M., 2005, POLITICS ENV DISCOUR
+   Hart BT, 2015, INT J WATER RESOURCE
+   Head L, 2012, PROG HUM GEOG, V36, P699, DOI 10.1177/0309132512438162
+   Horne J, 2014, INT J WATER RESOUR D, V30, P152, DOI 10.1080/07900627.2013.787833
+   Horne J, 2013, INT J WATER RESOUR D, V29, P137, DOI 10.1080/07900627.2013.725537
+   Hulme M, 2011, OSIRIS, V26, P245, DOI 10.1086/661274
+   Hulme M, 2009, GEOFORUM, V40, P197, DOI 10.1016/j.geoforum.2008.09.010
+   Hussey K, 2006, J CONTEMP WAT RES ED, V135, P36, DOI 10.1111/j.1936-704X.2006.mp135001005.x
+   Ison R, 2014, ENVIRON PLANN C, V32, P623, DOI 10.1068/c11327
+   Kiem AS, 2013, AUSTRALAS J WAT RESO, V17, P126, DOI 10.7158/W13-015.2013.17.2
+   Larsen J, 2014, DAM HARD WATER STORA
+   Linton J., 2010, WHAT IS WATER HIST M
+   Linton J, 2014, GEOFORUM, V57, P170, DOI 10.1016/j.geoforum.2013.10.008
+   Low T, 2009, CLIMATE CHANGE WEEDS
+   Manning P, 2015, BORN RULE UNAUTHORIS
+   Marshall GR, 2016, WATER ALTERN, V9, P679
+   MDBA, 2012, PROP BAS PLAN
+   MDBA, 2012, HYDR MOD INF PROP BA, V17
+   MDBA, 2012, MDBA PUBL, V59
+   MDBA, 2010, GUID PROP BAS PLAN M
+   Miller C, 2001, SCI TECHNOL HUM VAL, V26, P478, DOI 10.1177/016224390102600405
+   Milly PCD, 2008, SCIENCE, V319, P573, DOI 10.1126/science.1151915
+   Molle F., 2009, Water Alternatives, V2, P328
+   Neave I, 2015, WATER J AUSTR WATER, V42, P102
+   Pahl-Wostl C, 2001, WATER RESOUR MANAG, DOI [10.1007/s11269-006-9040-4, DOI 10.1007/S11269-006-9040-4]
+   Pittock J, 2015, WATER, V42, P28
+   Rickards L, 2014, ENVIRON PLANN C, V32, P587, DOI 10.1068/c3204ed
+   Roderick ML, 2011, WATER RESOUR RES, V47, DOI 10.1029/2011WR010991
+   Sarewitz D, 2004, ENVIRON SCI POLICY, V7, P385, DOI 10.1016/j.envsci.2004.06.001
+   Scheffer M, 2001, NATURE, V413, P591, DOI 10.1038/35098000
+   Vervoort JM, 2015, FUTURES, V74, P62, DOI 10.1016/j.futures.2015.08.009
+   Wong P, 2008, 2 READING SPEECH WAT
+NR 72
+TC 10
+Z9 10
+U1 2
+U2 15
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 2382-624X
+EI 2382-6258
+J9 WATER ECON POLICY
+JI Water Econ. Policy
+PD JUL
+PY 2017
+VL 3
+IS 3
+SI SI
+AR UNSP 1650038
+DI 10.1142/S2382624X16500387
+PG 21
+WC Economics
+SC Business & Economics
+GA FB2SH
+UT WOS:000405993000002
+DA 2019-12-28
+ER
+
+PT J
+AU Corbet, S
+   Larkin, C
+AF Corbet, Shaen
+   Larkin, Charles
+TI Has the uniformity of banking regulation within the European Union
+   restricted rather than encouraged sectoral development?
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article
+DE Banking; Regulation; Financial markets; Cultural distance; European
+   Union
+ID BASEL CAPITAL REQUIREMENTS; RISK-TAKING; SYSTEMIC RISK; STRESS TESTS;
+   IMPACT; MARKET; SUPERVISION; PERFORMANCE; GOVERNANCE; STABILITY
+AB The recent international financial crisis exposed many of the frailties that existwithin the European banking sector. One major decision taken by the European Commission was to transition the powers of the Committee of European Banking Supervisors to that of the European Banking Authority (EBA). Our analysis focuses primarily on the differing behaviour by each European country's banking sector to major shocks, namely that in the form of bank closures. It is then necessary to investigate and further understand the role that the European Banking Authority now possesses with regards to releasing sensitive announcements based on the underlying currents of the European Banking system as measured by domestic banking sector stock returns. Finally, we investigate the cultural characteristics that can be uncovered by analysing the responses of domestic banking sectors to uniform regulation. We present three key findings. First, European countries with more local banking networks in the form of credit unions, public banks or savings banks, generate greater levels of volatility when compared to that of their commercial counterparts, particularly in countries with more monopolistic sectors. Secondly, the announcements of the European Banking Authority generate significant volatility effects for the European banking sector at large, with particular emphasis on stress testing results, but also announcements based on recapitalisation, regulation and transparency. Finally, cultural distance effects are identified, indicating that peripheral states are experiencing more substantial volatility effects to European Banking Authority decisions. These results indicate that uniformity of regulation may in fact be hindering and restricting the growth of some domestic and more peripheral and locally designed banking sectors in the form of rules designed for commercial banking operations. (C) 2017 Elsevier Inc. All rights reserved.
+C1 [Corbet, Shaen] Dublin City Univ, DCU Business Sch, Dublin 9, Ireland.
+   [Larkin, Charles] Trinity Coll Dublin, Trinity Business Sch, Dublin 2, Ireland.
+RP Corbet, S (reprint author), Dublin City Univ, DCU Business Sch, Dublin 9, Ireland.
+EM shaen.corbet@dcu.ie
+RI Larkin, Charles/AAE-7322-2019; Corbet, Shaen/B-4869-2017
+OI Larkin, Charles/0000-0002-0352-2504; Corbet, Shaen/0000-0001-7430-7417
+CR Acharya V, 2014, J MONETARY ECON, V65, P36, DOI 10.1016/j.jmoneco.2014.04.014
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Agoraki MEK, 2011, J FINANC STABIL, V7, P38, DOI 10.1016/j.jfs.2009.08.002
+   Allen B, 2012, INT REV FINANC ANAL, V25, P159, DOI 10.1016/j.irfa.2012.08.004
+   Alves C, 2015, APPL ECON, V47, P1213, DOI 10.1080/00036846.2014.993132
+   Andersen H, 2011, J FINANC STABIL, V7, P138, DOI 10.1016/j.jfs.2010.05.001
+   Angelini P, 2015, MANCH SCH, V83, P217, DOI 10.1111/manc.12056
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Barth JR, 2013, J FINAN ECON POLICY, V5, P111, DOI 10.1108/17576381311329661
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   Berger AN, 2016, J FINANC INTERMED, V26, P115, DOI 10.1016/j.jfi.2016.01.001
+   Blum JM, 2008, J BANK FINANC, V32, P1699, DOI 10.1016/j.jbankfin.2007.12.003
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Borio C, 2014, J FINANC STABIL, V12, P3, DOI 10.1016/j.jfs.2013.06.001
+   Bos JWB, 2007, J BANK FINANC, V31, P2081, DOI 10.1016/j.jbankfin.2006.12.004
+   Valverde SC, 2007, J BANK FINANC, V31, P2043, DOI 10.1016/j.jbankfin.2006.06.017
+   Carretta A, 2015, J BANK FINANC, V52, P180, DOI 10.1016/j.jbankfin.2014.09.015
+   Corbet S, 2016, ADV SUSTAINABILITY E, V3, P21
+   Dermine J., 2006, FINANCIAL MARKETS I, V15, P57
+   Dietrich A, 2011, J INT FINANC MARK I, V21, P307, DOI 10.1016/j.intfin.2010.11.002
+   Dong YZ, 2014, INT REV FINANC ANAL, V36, P120, DOI 10.1016/j.irfa.2014.03.009
+   Fiordelisi F, 2011, J BANK FINANC, V35, P1315, DOI 10.1016/j.jbankfin.2010.10.005
+   Fonteyne W., 2010, 1070 IMF
+   Gonzalez F, 2005, J BANK FINANC, V29, P1153, DOI 10.1016/j.jbankfin.2004.05.029
+   Goodhart C., 2008, OXFORD REV ECON POL, V20, P591
+   Hakenes H, 2015, REV FINANC, V19, P653, DOI 10.1093/rof/rfu003
+   Hakenes H, 2011, ECON LETT, V113, P256, DOI 10.1016/j.econlet.2011.07.008
+   Hasan I., 2015, CORPORATE FINANCE AC, V2, P1
+   Heid F, 2007, J BANK FINANC, V31, P3885, DOI 10.1016/j.jbankfin.2007.03.004
+   Hofstede G. H., 2001, CULTURES CONSEQUENCE
+   Iannotta G, 2007, J BANK FINANC, V31, P2127, DOI 10.1016/j.jbankfin.2006.07.013
+   Klomp J, 2012, J BANK FINANC, V36, P3197, DOI 10.1016/j.jbankfin.2011.10.006
+   KOGUT B, 1988, J INT BUS STUD, V19, P411, DOI 10.1057/palgrave.jibs.8490394
+   Konishi M, 2004, J BANK FINANC, V28, P215, DOI 10.1016/S0378-4266(02)00405-3
+   Krug S, 2015, QUANT FINANC, V15, P1917, DOI 10.1080/14697688.2014.999701
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Lo AW, 2009, J FINAN ECON POLICY, V1, P4, DOI 10.1108/17576380910962376
+   Lucey BM, 2014, COMP ECON STUD, V56, P295, DOI 10.1057/ces.2014.17
+   Lucey BM, 2010, EMERG MARK REV, V11, P62, DOI 10.1016/j.ememar.2009.11.003
+   Masciandaro D, 2011, J FINANC STABIL, V7, P204, DOI 10.1016/j.jfs.2011.03.001
+   Mesonnier JS, 2015, INT J CENT BANK, V11, P75
+   Park SK, 1997, J BANK FINANC, V21, P491, DOI 10.1016/S0378-4266(96)00050-7
+   Petrella G, 2013, J BANK FINANC, V37, P5406, DOI 10.1016/j.jbankfin.2013.01.005
+   Popov A, 2015, REV FINANC, V19, P1825, DOI 10.1093/rof/rfu046
+   Repullo R, 2004, J FINANC INTERMED, V13, P496, DOI 10.1016/j.jfi.2004.07.001
+   Repullo R, 2004, J FINANC INTERMED, V13, P156, DOI 10.1016/j.jfi.2003.08.005
+   Rossignolo AF, 2013, J BANK FINANC, V37, P1323, DOI 10.1016/j.jbankfin.2012.08.021
+   Schoenmaker D., 2015, LAW FINANCIAL MARKET, V6, P52
+   Schwerter S, 2011, J FINANC REGUL COMPL, V19, P337, DOI 10.1108/13581981111182947
+   SHRIEVES RE, 1992, J BANK FINANC, V16, P439, DOI 10.1016/0378-4266(92)90024-T
+   Van den End, 2012, APPL FINANCIAL EC, V22, P1233
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Yan ML, 2012, INT REV FINANC ANAL, V25, P73, DOI 10.1016/j.irfa.2012.06.009
+NR 54
+TC 2
+Z9 2
+U1 2
+U2 7
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD OCT
+PY 2017
+VL 53
+BP 48
+EP 65
+DI 10.1016/j.irfa.2017.08.007
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA FL4UU
+UT WOS:000414227800005
+DA 2019-12-28
+ER
+
+PT J
+AU Quentin, D
+AF Quentin, David
+TI RISK-MINING THE PUBLIC EXCHEQUER
+SO JOURNAL OF TAX ADMINISTRATION
+LA English
+DT Article
+AB Tax avoidance is commonly theorised on the hypothesis that, in any specific instance of it, its effectiveness or ineffectiveness is determinate, whereas in the vast majority of instances it succeeds by default without being subject to forensic scrutiny. This article offers a new theory of tax avoidance which treats indeterminacy of outcome, as at implementation, as being of its essence. It proceeds from existing tax industry discourse regarding tax risk management, and shows (using the case study of Amazon's former UK/Luxembourg tax structuring) how tax avoidance is a discrete category of tax risk management with a determinate institutional genealogy. It proceeds to consider how (on a systemic level) such behaviour yields unwarranted financial transfers out of the public exchequer, and does so notwithstanding the adequacy of tax risk mitigation in any given instance. It concludes with comments on the utility of the theory.
+C1 [Quentin, David] Queen Mary Univ London, Sch Business & Management, London, England.
+RP Quentin, D (reprint author), Queen Mary Univ London, Sch Business & Management, London, England.
+CR Bergin T., 2013, REUTERS
+   BP, 2016, BPS APPR TO TAX
+   Bracco G., 2016, BLOG POST
+   de Mik B., 2010, TAX RISK MANAGEMENT, P1
+   Devereux M. P., 2012, TAX AVOIDANCE
+   HM Revenue & Customs, LIT SETTL STRAT
+   Hoyng R., 2010, TAX RISK MANAGEMENT, P19
+   Marian Omri Y., 2017, HARVARD BUSINESS LAW, V7, DOI [10.2139/ssrn.2685642, DOI 10.2139/SSRN.2685642]
+   McTernan J., 2016, TELEGRAPH
+   OECD, 2011, GUID MULT
+   Quentin David, 2014, RISK MINING PUBLIC E
+   UK Parliament Public Accounts Committee, 2012, HM REV CUST ANN REP
+NR 12
+TC 0
+Z9 0
+U1 0
+U2 0
+PU UNIV EXETER BUSINESS SCH
+PI EXETER
+PA STREATHAM COURT RENNES DR, EXETER, EX4 4PU, ENGLAND
+SN 2059-190X
+J9 J TAX ADM
+JI J. Tax Adm.
+PD DEC
+PY 2017
+VL 3
+IS 2
+BP 22
+EP 35
+PG 14
+WC Business, Finance
+SC Business & Economics
+GA FX4ID
+UT WOS:000426035800003
+DA 2019-12-28
+ER
+
+PT J
+AU Srivastava, V
+AF Srivastava, Vikas
+TI Project finance bank loans and PPP funding in India: A risk management
+   perspective
+SO JOURNAL OF BANKING REGULATION
+LA English
+DT Article
+DE Public Private Partnerships; project finance; bank loans; risk
+   mitigation; leverage; debt service
+AB The objective of the research article is to critically analyse the risks involved in funding of Public Private Partnership (PPP) projects by project finance bank debt in economies like India. The article establishes that PPP structures in India cannot achieve the desired objective of optimal risk sharing and mitigation in the light of lack of suitably priced instruments to mitigate political, regulatory and legal risks. Thus, expected cash flows for repayment do not build up. This results in a problem of over-leverage and subsequent decline in the asset quality of the banking book. In the light of Basel II recommendations, project finance loans will carry a higher capital charge for projects in sub-investment grades. This will increase systemic risk to the banking system as infrastructure portfolios may start giving negative returns, if the loan quality of infrastructure projects declines.
+C1 [Srivastava, Vikas] Indian Inst Management Lucknow, Finance, Lucknow, Uttar Pradesh, India.
+RP Srivastava, V (reprint author), Indian Inst Management, Finance & Accounting Area Grp, Lucknow 226013, Uttar Pradesh, India.
+CR Bank for International Settlements, 2001, BCBS WORK PAP, V9
+   Chandra P., 2005, CTM TMH PROFESSIONAL
+   E& Y and FICCI, 2012, ACC PUBL PRIV PARTN
+   Estache A., 2004, BACKGR PAP BERL M PO
+   Esty B., 2005, OVERVIEW PROJECT FIN, P205
+   Finnerty J. D., 2007, PROJECT FINANCE ASSE
+   Ghemawat P, 2000, COMMITMENT DYNAMICS
+   International Monetary Fund (IMF), 2004, PUBLIC PRIVATE PARTN
+   Jones S., 2004, CONTRIBUTION INFRAST
+   MCCONNELL JJ, 1985, J FINANC ECON, V14, P399, DOI 10.1016/0304-405X(85)90006-6
+   Mehta A, 1999, POWER PLAY STUDY ENR
+   Moody's, 2014, PROJ FIN DEF STUD
+   Natraj G., 2007, 80 ADB
+   Nevitt P. K., 2000, PROJECT FINANCING
+   Noel M., 2004, 46 WORLD BANK
+   Reserve Bank of India, 2011, IMPL INT BAS APPR IR
+   Srivastava V, 2014, J STRUCT FINANC, V20, P81, DOI 10.3905/jsf.2014.20.2.081
+   World Bank, 1994, DEV REP INFR DEV
+NR 18
+TC 0
+Z9 0
+U1 2
+U2 26
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1745-6452
+EI 1750-2071
+J9 J BANK REGUL
+JI J. Bank Regul.
+PD JAN
+PY 2017
+VL 18
+IS 1
+BP 14
+EP 27
+DI 10.1057/jbr.2015.7
+PG 14
+WC Business, Finance
+SC Business & Economics
+GA EO0AA
+UT WOS:000396359500002
+DA 2019-12-28
+ER

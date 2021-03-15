@@ -1,0 +1,519 @@
+
+PT J
+AU Albuquerque, R
+   Cabral, L
+   Guedes, J
+AF Albuquerque, Rui
+   Cabral, Luis
+   Guedes, Jose
+TI Incentive Pay and Systemic Risk
+SO REVIEW OF FINANCIAL STUDIES
+LA English
+DT Article
+ID RELATIVE PERFORMANCE EVALUATION; DELEGATED PORTFOLIO MANAGEMENT;
+   EXECUTIVE-COMPENSATION; MORAL HAZARD; IMPACT; FIRMS; EXTERNALITIES
+AB We show that, in the presence of correlated investment opportunities across firms, risk sharing between firm shareholders and firm managers leads to compensation contracts that include relative performance evaluation. These contracts bias investment choices toward correlated investment opportunities, and thus create systemic risk. Furthermore, we show that leverage amplifies all such effects. In the context of the banking industry, we analyze recent policy recommendations for firm managerial pay and show how shareholders optimally undo the policies' intended effects.
+C1 [Albuquerque, Rui] Boston Coll, Chestnut Hill, MA 02167 USA.
+   [Cabral, Luis] NYU, New York, NY 10003 USA.
+   [Guedes, Jose] Catolica Lisbon Sch Business & Econ, Lisbon, Portugal.
+RP Albuquerque, R (reprint author), Boston Coll, Carroll Sch Management, 140 Commonwealth Ave, Chestnut Hill, MA 02467 USA.
+EM rui.albuquerque@bc.edu
+FU Portuguese Foundation for Science and Technology-FCTFundacao para a
+   Ciencia e a Tecnologia (FCT) [PTDC/IIM-FIN/2977/2014,
+   UID/GES/00407/2013, PTDC/EGE-OGE/30314/2017]
+FX For useful comments and suggestions, we thank Viral Acharya, Anat
+   Admati, David Dicks, Alex Edmans, Fabio Feriozzi, Angela Maddaloni,
+   Ernst Maug, Nadya Malenko, Uday Rajan, Nik Roussanov, Kathy Yuan, Jeff
+   Zwiebel, and seminar participants at Boston College (Finance), Boston
+   College (Economics), HEC Montreal, the 8th European Banking Center
+   Network Conference at Tilburg University, LBS, the 25th International
+   Rome Conference on Money, Banking and Finance, the 2017 ASU
+   SonoranWinter Finance Conference, the 2017 UBC Winter Finance
+   Conference, Notre Dame (Mendoza College of Business), the 2nd Annual
+   CEPR Symposium at Imperial College, the 2017 Cambridge Corporate Finance
+   Theory Symposium, the 2nd Annual CEPR Symposium (Imperial College), and
+   the Bank of Portugal conference on Bankers' Pay, Incentives and
+   Regulation. We also thank the editor and referees for various comments
+   and suggestions. The usual disclaimer applies. Albuquerque thanks the
+   support from the Portuguese Foundation for Science and Technology-FCT
+   [funding grant funding grant PTDC/IIM-FIN/2977/2014]. Guedes
+   acknowledges support from the Portuguese Foundation for Science and
+   Technology-FCT [funding grants UID/GES/00407/2013 and
+   PTDC/EGE-OGE/30314/2017]. Supplementary data can be found on The Review
+   of Financial Studies web site.
+CR Abudy M., 2017, WORKING PAPER
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Acharya VV, 2016, REV CORP FINANC STUD, V5, P36, DOI 10.1093/rcfs/cfv006
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2010, REV FINANC, V14, P1, DOI 10.1093/rof/rfp002
+   Albuquerque A, 2009, J ACCOUNT ECON, V48, P69, DOI 10.1016/j.jacceco.2009.04.001
+   Albuquerque AM, 2014, ACCOUNT REV, V89, P27, DOI 10.2308/accr-50574
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Barakova I, 2010, J FINAN ECON POLICY, V2, P214, DOI 10.1108/17576381011085430
+   BARRO JR, 1990, J LABOR ECON, V8, P448, DOI 10.1086/298230
+   Basak S, 2013, AM ECON REV, V103, P1728, DOI 10.1257/aer.103.5.1728
+   Bebchuk L. A., 2010, YALE J REGULATION, V27
+   Bhagal S, 2008, COLUMBIA LAW REV, V108, P1803
+   Bhagat S., 2013, WORKING PAPER
+   Bhattacharyya S., 2011, AFA 2012 CHIC
+   Brunnermeier M., 2012, WORKING PAPER
+   Buffa A., 2014, WORKING PAPER
+   Cadman B, 2012, J BUS FINAN ACCOUNT, V39, P997, DOI 10.1111/j.1468-5957.2012.02307.x
+   Cai J., 2010, COMPENSATION RISK IN
+   Celentani M, 2006, REV ECON DYNAM, V9, P525, DOI 10.1016/j.red.2006.04.001
+   Cheng I. H., 2011, WORKING PAPER
+   Cheng IH, 2015, J FINANC, V70, P839, DOI 10.1111/jofi.12225
+   Core J. E., 2010, WORKING PAPER
+   Crawford A. J., 1999, MANAGE FINANC, V25, P34
+   Cremers M, 2016, J FINANC ECON, V120, P539, DOI 10.1016/j.jfineco.2016.02.008
+   Cunat V, 2009, J BANK FINANC, V33, P495, DOI 10.1016/j.jbankfin.2008.09.003
+   De Angelis D, 2015, REV FINANC, V19, P619, DOI 10.1093/rof/rfu014
+   DeYoung R, 2013, J FINANC QUANT ANAL, V48, P165, DOI 10.1017/S0022109012000646
+   Dicks DL, 2012, REV FINANC STUD, V25, P1971, DOI 10.1093/rfs/hhs055
+   Dittmann I, 2011, J CORP FINANC, V17, P1200, DOI 10.1016/j.jcorpfin.2011.04.007
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Ferrarini G., 2015, WORKING PAPER
+   French KR, 2010, SQUAM LAKE REPORT: FIXING THE FINANCIAL SYSTEM, P1
+   Goldstein I, 2013, J FINANC ECON, V109, P566, DOI 10.1016/j.jfineco.2013.03.011
+   Grinblatt M, 1995, AM ECON REV, V85, P1088
+   Gumbel A, 2005, EUR ECON REV, V49, P599, DOI 10.1016/j.euroecorev.2003.08.009
+   Hagendorff J., 2016, WORKING PAPER
+   Hilscher J., 2016, WORKING PAPER
+   HOLMSTROM B, 1982, BELL J ECON, V13, P324, DOI 10.2307/3003457
+   HOLMSTROM B, 1987, ECONOMETRICA, V55, P303, DOI 10.2307/1913238
+   Ilic D., 2015, WORKING PAPER
+   ISS, 2016, US EX COMP POL
+   Kane EJ, 2010, ATLANTIC ECON J, V38, P251, DOI 10.1007/s11293-010-9233-3
+   Kim W., 1999, WORKING PAPER
+   Kleymenova A., 2015, WORKING PAPER
+   Kolasinski AC, 2018, J FINANC ECON, V128, P466, DOI 10.1016/j.jfineco.2017.03.010
+   LAKONISHOK J, 1992, J FINANC ECON, V32, P23, DOI 10.1016/0304-405X(92)90023-Q
+   Levit D, 2016, J FINANC, V71, P775, DOI 10.1111/jofi.12287
+   Martinez-Miera D., 2014, WORKING PAPER
+   Maug E, 2011, Q J FINANC, V1, P265, DOI 10.1142/S2010139211000092
+   Mirrlees JA, 1999, REV ECON STUD, V66, P3, DOI 10.1111/1467-937X.00075
+   Murphy K. J., 2009, WORKING PAPER
+   Murphy KJ, 2013, EUR FINANC MANAG, V19, P631, DOI 10.1111/j.1468-036X.2013.12024.x
+   Ozdenoren E, 2017, REV ECON STUD, V84, P1789, DOI 10.1093/restud/rdw058
+   Posner R.A., 2009, FAILURE CAPITALISM C
+   Raddatz C, 2013, J FINANC SERV RES, V43, P99, DOI 10.1007/s10693-012-0155-x
+   Tsomocos DP, 2007, ECON THEOR, V32, P381, DOI 10.1007/s00199-006-0190-7
+   Vives X., 2000, OLIGOPOLY PRICING OL
+   Wermers R, 1999, J FINANC, V54, P581, DOI 10.1111/0022-1082.00118
+   ZWIEBEL J, 1995, J POLIT ECON, V103, P1, DOI 10.1086/261973
+NR 61
+TC 0
+Z9 0
+U1 4
+U2 4
+PU OXFORD UNIV PRESS INC
+PI CARY
+PA JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
+SN 0893-9454
+EI 1465-7368
+J9 REV FINANC STUD
+JI Rev. Financ. Stud.
+PD NOV
+PY 2019
+VL 32
+IS 11
+BP 4304
+EP 4342
+DI 10.1093/rfs/hhz028
+PG 39
+WC Business, Finance; Economics
+SC Business & Economics
+GA JP1QS
+UT WOS:000498047300006
+DA 2019-12-28
+ER
+
+PT J
+AU Sui, P
+   Zhou, DD
+AF Sui, Peng
+   Zhou, Dandan
+TI Capital Regulation, Bailout and Banking Asset Correlation
+SO INTERNATIONAL REVIEW OF FINANCE
+LA English
+DT Article
+ID RISK-MANAGEMENT; MARKET; LIQUIDITY
+AB We study the effect of capital regulation on banking asset correlation. Banks are more efficient users of banking assets. This implies that it may be ex post optimal to bail out a failed bank. We show, under Basel 1 capital regulation, that the financial regulator is committed to a mixed bailout strategy in the state of systemic failure, which reduces banks' incentive to choose highly correlated assets. The mixed strategy is not creditable under mark-to-market capital regulation. In the subgame perfect equilibrium, banking asset correlation increases, resulting in a high probability of systemic failure. We then discuss social losses under different capital regulations.
+C1 [Sui, Peng; Zhou, Dandan] Shandong Univ, Ctr Econ Res, 27 Shanda Nanlu, Jinan 250100, Shandong, Peoples R China.
+RP Zhou, DD (reprint author), Shandong Univ, Ctr Econ Res, 27 Shanda Nanlu, Jinan 250100, Shandong, Peoples R China.
+EM zhoudandan@sdu.edu.cn
+FU NSSFC [15CJL007]
+FX Peng Sui would like to thank the financial support from NSSFC, grant no.
+   15CJL007.
+CR Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Alessandri P., 2009, FED RES BANK CHIC 12
+   Allen F, 1998, J FINANC, V53, P1245, DOI 10.1111/0022-1082.00052
+   ALLEN F, 1994, AM ECON REV, V84, P933
+   Barrell R, 2010, J BANK FINANC, V34, P2255, DOI 10.1016/j.jbankfin.2010.02.015
+   Bernanke B. S., 2008, FED RES BANK CHIC AN
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Dewatripont M., 1994, PRUDENTIAL REGULATIO
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   FROOT KA, 1993, J FINANC, V48, P1629, DOI 10.2307/2329062
+   Froot KA, 1998, J FINANC ECON, V47, P55, DOI 10.1016/S0304-405X(97)00037-8
+   Geneva Report by, 2009, FUNDAMENTAL PRINCIPL, V11
+   Hellwig M. F., 2010, PREPRINTS MAX PLANCK
+   Kashyap A. K., 2004, FEDERAL RESERVE BANK, V28, P18
+   Kashyap A. K., 2008, FED RES BANK KANS CI
+   Korinek A., 2011, 2011WP13 NETW FIN I, DOI 10.2139/ssrn.1838600
+   LELAND HE, 1977, J FINANC, V32, P371, DOI 10.2307/2326770
+   Miles D, 2013, ECON J, V123, P1, DOI 10.1111/j.1468-0297.2012.02521.x
+   Morris S., 2004, Review of Finance, V8, P1, DOI 10.1023/B:EUFI.0000022155.98681.25
+   Plantin G, 2008, J ACCOUNT RES, V46, P435, DOI 10.1111/j.1475-679X.2008.00281.x
+   Rajan RG, 2011, FAULT LINES HIDDEN F
+   Repullo R., 2008, WORKING PAPER
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   WILLIAMSON OE, 1988, J FINANC, V43, P567, DOI 10.2307/2328184
+NR 29
+TC 0
+Z9 0
+U1 2
+U2 3
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1369-412X
+EI 1468-2443
+J9 INT REV FINANC
+JI Int. Rev. Financ.
+PD MAR
+PY 2019
+VL 19
+IS 1
+BP 83
+EP 103
+DI 10.1111/irfi.12178
+PG 21
+WC Business, Finance
+SC Business & Economics
+GA HN3GX
+UT WOS:000460072900003
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Cerqueti, R
+   Giacalone, M
+   Panarello, D
+AF Cerqueti, Roy
+   Giacalone, Massimiliano
+   Panarello, Demetrio
+TI A Generalized Error Distribution Copula-based method for portfolios risk
+   assessment
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Econophysics; Portfolio theory; Conditional Value-at-Risk; Gaussian
+   Copula; Generalized Error Distribution; Generalized Correlation
+   Coefficient
+ID VALUE-AT-RISK; FAT-TAILED DISTRIBUTIONS; EXPECTED SHORTFALL; MODEL;
+   CONTAGION; OPTIMIZATION; STATISTICS; VOLATILITY; LIKELIHOOD; SELECTION
+AB In this paper, we deal with the evaluation of Conditional Value-at-Risk in the framework of portfolio theory by using a modified Gaussian Copula - where the modification is obtained by introducing the Generalized Correlation Coefficient - and by assuming a Generalized Error Distribution with properly estimated shape parameter p for the returns of the considered risky assets. In so doing, we add to the connection between standard Copula theory and financial risk assessment. A comparison analysis of our findings with those obtainable through a standard Gaussian Copula-based procedure in a set of real data is also presented. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Cerqueti, Roy] Univ Macerata, Dept Econ & Law, Via Crescimbeni 14, I-62100 Macerata, Italy.
+   [Giacalone, Massimiliano] Univ Naples Federico II, Dept Econ & Stat, Naples, Italy.
+   [Panarello, Demetrio] Parthenope Univ Naples, Dept Econ & Legal Studies, Naples, Italy.
+RP Cerqueti, R (reprint author), Univ Macerata, Dept Econ & Law, Via Crescimbeni 14, I-62100 Macerata, Italy.
+EM roy.cerqueti@unimc.it; massimiliano.giacalone@unina.it;
+   demetrio.panarello@uniparthenope.it
+OI Panarello, Demetrio/0000-0003-1667-1936
+CR Acerbi C, 2002, J BANK FINANC, V26, P1487, DOI 10.1016/S0378-4266(02)00283-2
+   Agro G, 1999, COMMUN STAT-THEOR M, V28, P1759
+   AGRO G, 1995, COMMUN STAT SIMULAT, V24, P523, DOI 10.1080/03610919508813255
+   Alexander GJ, 2004, MANAGE SCI, V50, P1261, DOI 10.1287/mnsc.1040.0201
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Ausloos M, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.046122
+   Berkowitz J, 2002, J FINANC, V57, P1093, DOI 10.1111/1540-6261.00455
+   Bottazzi G, 2011, IND CORP CHANGE, V20, P991, DOI 10.1093/icc/dtr036
+   Box G. E., 1973, BAYESIAN INFERENCE S
+   Caginalp C, 2018, PHYSICA A, V499, P457, DOI 10.1016/j.physa.2018.02.077
+   Caporin M, 2008, J RISK, V10, P79, DOI 10.21314/JOR.2008.172
+   Cerqueti R, 2018, ENTROPY-SWITZ, V20, DOI 10.3390/e20020134
+   Chang CL, 2015, J ECONOMETRICS, V187, P472, DOI 10.1016/j.jeconom.2015.02.032
+   Chen Q, 2012, COMPUT STAT DATA AN, V56, P3498, DOI 10.1016/j.csda.2010.06.018
+   Chen W, 2014, PHYSICA A, V398, P289, DOI 10.1016/j.physa.2013.12.016
+   Choe GH, 2015, QUANT FINANC, V15, P1571, DOI 10.1080/14697688.2014.976651
+   Ciliberti S, 2007, EUR PHYS J B, V57, P175, DOI 10.1140/epjb/e2007-00130-7
+   Demarta S, 2005, INT STAT REV, V73, P111
+   Dhesi G, 2016, CHAOS SOLITON FRACT, V88, P119, DOI 10.1016/j.chaos.2015.12.015
+   Domino K, 2015, PHYSICA A, V424, P142, DOI 10.1016/j.physa.2015.01.019
+   Duffie D., 1997, J DERIV, V4, P7, DOI [DOI 10.3905/JOD.1997.407971, DOI 10.3905/jod.1997.407971]
+   Ferraty F, 2016, ECONOMET REV, V35, P263, DOI 10.1080/07474938.2013.807107
+   Filiasi M, 2014, J STAT MECH-THEORY E, DOI 10.1088/1742-5468/2014/09/P09030
+   Frey R, 2002, J BANK FINANC, V26, P1317, DOI 10.1016/S0378-4266(02)00265-0
+   Geary RC, 1936, J ROYAL STATISTICAL, V3, P178
+   Giacalone M., 2006, STUDENT, V5, P235
+   Giacalone M., 1997, STUDENT, V2, P119
+   Giot P, 2003, ENERG ECON, V25, P435, DOI 10.1016/S0140-9883(03)00052-5
+   Glasserman P, 2014, QUANT FINANC, V14, P29, DOI 10.1080/14697688.2013.822989
+   Gonin R., 1987, STAT DATA ANAL BASED
+   Gonzalez-Pedraz C, 2015, QUANT FINANC, V15, P151, DOI 10.1080/14697688.2014.935463
+   Han YY, 2016, PHYSICA A, V444, P940, DOI 10.1016/j.physa.2015.10.088
+   HARTER HL, 1977, COMMUN STAT A-THEOR, V6, P829, DOI 10.1080/03610927708827534
+   He XB, 2009, J COMPUT APPL MATH, V223, P1066, DOI 10.1016/j.cam.2008.03.046
+   Huang DS, 2010, EUR J OPER RES, V203, P185, DOI 10.1016/j.ejor.2009.07.010
+   Inui K, 2005, J BANK FINANC, V29, P853, DOI 10.1016/j.jbankfin.2004.08.005
+   Jaworski P, 2010, COPULA THEORY ITS AP
+   Kendall MG, 1966, ADV THEORY STAT
+   Kim YS, 2012, ANN OPER RES, V201, P325, DOI 10.1007/s10479-012-1229-8
+   Koutmos G., 1998, J ECON BUS, V50, P277, DOI DOI 10.1016/S0148-6195(98)00004-6
+   Krause A, 2006, PHYSICA A, V368, P183, DOI 10.1016/j.physa.2005.12.038
+   Krokhmal P., 2002, J RISK, V4, P43, DOI DOI 10.21314/JOR.2002.057
+   Krzemienowski A, 2016, ANN OPER RES, V237, P219, DOI 10.1007/s10479-014-1625-3
+   Longerstaey J., 1996, RISKMETRICS TECHNICA
+   Malevergne Y, 2003, QUANT FINANC, V3, P231, DOI 10.1088/1469-7688/3/4/301
+   McNeil A. J., 2015, QUANTITATIVE RISK MA
+   Mineo A., 1989, LECT NOTES STAT STAT, P222
+   Mineo AM, 2005, J STAT SOFTW, V12, P1
+   Mineo AM, 2007, STATISTICA, V63, P109
+   MONEY AH, 1982, COMMUN STAT B-SIMUL, V11, P89, DOI 10.1080/03610918208812247
+   Nelsen R. B, 2006, INTRO COPULAS
+   Pafka S, 2001, PHYSICA A, V299, P305, DOI 10.1016/S0378-4371(01)00310-7
+   Rachev S.T., 2005, FAT TAILED SKEWED AS
+   Rockafellar RT, 2002, J BANK FINANC, V26, P1443, DOI 10.1016/S0378-4266(02)00271-6
+   Sklar M., 1959, FONCTIONS REPARTITIO, V8
+   So MKP, 2008, MATH COMPUT SIMULAT, V77, P96, DOI 10.1016/j.matcom.2007.02.008
+   SPOSITO VA, 1982, J AM STAT ASSOC, V77, P652, DOI 10.2307/2287729
+   Stoyanov SV, 2013, ANN OPER RES, V205, P169, DOI 10.1007/s10479-012-1142-1
+   Subbotin M., 1923, MATH SBORNIK
+   Sultan KS, 2007, COMMUN STAT-THEOR M, V36, P1409, DOI 10.1080/03610920601077188
+   TAGUCHI T, 1974, ANN I STAT MATH, V26, P175, DOI 10.1007/BF02479814
+   Viswanathan GM, 2003, PHYSICA A, V329, P273, DOI 10.1016/S0378-4371(03)00608-3
+   Yamai Y, 2005, J BANK FINANC, V29, P997, DOI 10.1016/j.jbankfin.2004.08.010
+   Yu WH, 2018, PHYSICA A, V490, P1423, DOI 10.1016/j.physa.2017.08.064
+   Zhang BZ, 2014, PHYSICA A, V416, P112, DOI 10.1016/j.physa.2014.08.043
+   Zhang TT, 2017, PHYSICA A, V483, P1, DOI 10.1016/j.physa.2017.04.036
+   Zhao SM, 2015, ANN OPER RES, V226, P727, DOI 10.1007/s10479-014-1654-y
+   Zhou WX, 2009, EPL-EUROPHYS LETT, V88, DOI 10.1209/0295-5075/88/28004
+NR 68
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD JUN 15
+PY 2019
+VL 524
+BP 687
+EP 695
+DI 10.1016/j.physa.2019.04.077
+PG 9
+WC Physics, Multidisciplinary
+SC Physics
+GA IL0DK
+UT WOS:000476966100054
+DA 2019-12-27
+ER
+
+PT J
+AU Chen, HM
+   Hua, SW
+   Liu, ZH
+   Zhang, M
+AF Chen, Hanmei
+   Hua, Shaowen
+   Liu, Zenghui
+   Zhang, Mei
+TI Audit fees, perceived audit risk, and the financial crisis of 2008
+SO ASIAN REVIEW OF ACCOUNTING
+LA English
+DT Article
+DE Financial crisis; Audit fees; Audit risk
+ID BUSINESS RISK; ASSESSMENTS; SERVICES; MODEL
+AB Purpose The purpose of this paper is to investigate how audit fees change in responding to the financial crisis of 2008. It also examines auditors' perceived risk and how they priced the risk in the financial crisis. Design/methodology/approach Using a sample of 20,930 firm-year observations, this paper examines the change of audit fees before, during and after the financial crisis, as well as the relationship between audit fees and restatements. Furthermore, this study investigates whether this relationship between audit fees and restatements strengthened during the financial crisis. Findings The paper finds that audit fees increase as a result of the macro-systemic risks from the crisis. It also finds that there is a significantly positive relationship between audit fees and restatements, which is a proxy of risk factors related to poor financial reporting quality and poor audit quality. However, the results show that there is no significant change of the fees-restatements relationship in the financial crisis period. Originality/value This paper contributes to the current literature by analyzing not only the impact of the financial crisis on audit fees, but also how the accounting profession views its own role in the financial crisis.
+C1 [Chen, Hanmei; Liu, Zenghui] Western Washington Univ, Dept Accounting, Bellingham, WA 98225 USA.
+   [Hua, Shaowen] La Salle Univ, Dept Accounting, Philadelphia, PA 19141 USA.
+   [Zhang, Mei] Rowan Univ, Rohrer Coll Business, Dept Accounting & Finance, Glassboro, NJ USA.
+RP Chen, HM (reprint author), Western Washington Univ, Dept Accounting, Bellingham, WA 98225 USA.
+EM Hanmei.Chen@wwu.edu
+CR Alexeyeva I, 2015, MANAG AUDIT J, V30, P302, DOI 10.1108/MAJ-04-2014-1025
+   American Institute of Certified Public Accountants (AICPA), 1996, AICPA PROF STAND
+   BABER WR, 1987, J ACCOUNTING RES, V25, P293, DOI 10.2307/2491019
+   Barron O, 2001, J ACCOUNTING RES, V39, P449, DOI 10.1111/1475-679X.00022
+   Bedard JC, 2004, ACCOUNT REV, V79, P277, DOI 10.2308/accr.2004.79.2.277
+   Bell TB, 2001, J ACCOUNTING RES, V39, P35, DOI 10.1111/1475-679X.00002
+   Cahan SF, 2006, ACCOUNT REV, V81, P49, DOI 10.2308/accr.2006.81.1.49
+   Charles SL, 2010, AUDITING-J PRACT TH, V29, P15, DOI 10.2308/aud.2010.29.1.15
+   Chen H., 2011, FINANCIAL DECISIONS, V23, P1
+   DANIEL SJ, 1988, AUDITING-J PRACT TH, V7, P174
+   Dao M, 2014, MANAG AUDIT J, V29, P490, DOI 10.1108/MAJ-07-2013-0906
+   Desai H, 2016, CONTEMP ACCOUNT RES, V33, P576, DOI 10.1111/1911-3846.12161
+   Doogar R, 2015, CONTEMP ACCOUNT RES, V32, P358, DOI 10.1111/1911-3846.12101
+   Dusenbury RB, 2000, AUDITING-J PRACT TH, V19, P105, DOI 10.2308/aud.2000.19.2.105
+   Elder R, 2009, J ACCOUNT AUDIT FINA, V24, P543, DOI 10.1177/0148558X0902400403
+   Essinger J., 2009, ACCOUNTANCY ICAEW, V143, P28
+   Hay DC, 2006, CONTEMP ACCOUNT RES, V23, P141, DOI 10.1506/4XR4-KT5V-E8CN-91GX
+   Houston RW, 2005, AUDITING-J PRACT TH, V24, P37, DOI 10.2308/aud.2005.24.1.37
+   Houston RW, 1999, ACCOUNT REV, V74, P281, DOI 10.2308/accr.1999.74.3.281
+   Humphrey C, 2009, ACCOUNT ORG SOC, V34, P810, DOI 10.1016/j.aos.2009.06.003
+   James L.K., 2011, TESTIMONY ROLE ACCOU
+   JIAMBALVO J, 1984, AUDITING-J PRACT TH, V3, P80
+   Krishnan GV, 2014, J ACCOUNT PUBLIC POL, V33, P279, DOI 10.1016/j.jaccpubpol.2014.02.004
+   Krishnan GV, 2013, AUDITING-J PRACT TH, V32, P147, DOI 10.2308/ajpt-50372
+   Mande V, 2013, AUDITING-J PRACT TH, V32, P119, DOI 10.2308/ajpt-50362
+   McCann D., 2010, CFO MAGAZINE
+   Messier WF, 2000, AUDITING-J PRACT TH, V19, P119, DOI 10.2308/aud.2000.19.2.119
+   National Bureau of Economic Research (NBER) Dating Committee, 2010, C CALL BUS CYCL
+   Reason T., 2010, CFO MAGAZINE
+   Sikka P, 2009, ACCOUNT ORG SOC, V34, P868, DOI 10.1016/j.aos.2009.01.004
+   SIMUNIC DA, 1980, J ACCOUNTING RES, V18, P161, DOI 10.2307/2490397
+   UK House of Commons Treasury Committee, 2009, BANK CRIS, VII
+   US Congress Committee on Banking Housing and Urban Affairs, 2011, EX ROL ACC PROF PREV, P112
+   US Department of the Treasury, 2013, FIN CRIS 5 YEARS LAT
+   Vandervelde SD, 2009, AUDITING-J PRACT TH, V28, P145, DOI 10.2308/aud.2009.28.2.145
+   Whitehouse T., 2010, CYTOTHERAPY, P1
+   Whitehouse T., 2010, COMPLIANCE WEEK, P30
+   Xu Y, 2013, ACCOUNT FINANC, V53, P301, DOI 10.1111/j.1467-629X.2011.00459.x
+   Zhang T., 2013, CHINA J ACCOUNTING S, V1, P47, DOI [10.1080/21697221.2013.781766, DOI 10.1080/21697221.2013.781766]
+NR 39
+TC 0
+Z9 0
+U1 1
+U2 4
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1321-7348
+EI 1758-8863
+J9 ASIAN REV ACCOUNT
+JI Asian Rev. Account.
+PD FEB 4
+PY 2019
+VL 27
+IS 1
+BP 97
+EP 111
+DI 10.1108/ARA-01-2017-0007
+PG 15
+WC Business, Finance
+SC Business & Economics
+GA HP2LH
+UT WOS:000461502600005
+DA 2019-12-28
+ER
+
+PT J
+AU Deng, Y
+   Zeng, Y
+   Li, ZR
+AF Deng, Yang
+   Zeng, Yan
+   Li, Zhirui
+TI Real estate prices and systemic banking crises
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Real estate price; Risk contagion; Financial network; Systemic risk;
+   Banking crisis
+ID FINANCIAL NETWORKS; MARKET LIQUIDITY; RISK; CONTAGION; STABILITY;
+   CREDIT; MODEL
+AB The collapse of real estate prices has historically jeopardized banking stability and triggered systemic banking crises. This paper studies risk contagion in a banking system in real estate price shock by adopting complex network theory. Modelling the real estate-related asset as a common exposure of banks to the real estate market, we propose a model that incorporates two main risk contagion channels, i.e., the financial network and asset fire sales, and reveal how the real estate price shock is transmitted and propagated across banks. We demonstrate that banking stability is highly sensitive to the real estate price shock. Moreover, due to the particularly low liquidity of the real estate market, the asset fire-sales of real estate assets overwhelms the financial network, playing the dominant role in risk contagion. Our model can be adopted by regulators to conduct stress testing and to forge effective risk management strategies.
+C1 [Deng, Yang] Huazhong Univ Sci & Technol, Sch Management, Wuhan 430074, Hubei, Peoples R China.
+   [Zeng, Yan] Sun Yat Sen Univ, Lingnan Univ Coll, Guangzhou 510275, Guangdong, Peoples R China.
+   [Li, Zhirui] Sun Yat Sen Univ, Sch Math, Guangzhou 510275, Guangdong, Peoples R China.
+RP Zeng, Y (reprint author), Sun Yat Sen Univ, Lingnan Univ Coll, Guangzhou 510275, Guangdong, Peoples R China.
+EM dengyang@hust.edu.cn; zengy36@mail.sysu.edu.cn; lizhr8@mail2.sysu.edu.cn
+OI Deng, Yang/0000-0002-9098-7130
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71701218, 71231005, 71571195, 71771220, 71721001];
+   Fok Ying Tung Eduction Foundation for Young Teachers in the Higher
+   Education Institutions of China [151081]; Guangdong Natural Science
+   Funds for Distinguished Young Scholars [2015A030306040]; GDUPS;
+   Fundamental Research Funds for the Central UniversitiesFundamental
+   Research Funds for the Central Universities [17wkzd08]
+FX We sincerely thank Prof. Sushanta Mallick and two anonymous reviewers
+   for their constructive comments and discussions that helped to improve
+   the paper. This research was supported by the National Natural Science
+   Foundation of China under Grant Nos. 71701218, 71231005, 71571195,
+   71771220, and 71721001; the Fok Ying Tung Eduction Foundation for Young
+   Teachers in the Higher Education Institutions of China (No. 151081); the
+   Guangdong Natural Science Funds for Distinguished Young Scholars (No.
+   2015A030306040); Project supported by GDUPS (2018); and the Fundamental
+   Research Funds for the Central Universities (No. 17wkzd08).
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Affinito M, 2017, J BANK FINANC, V80, P90, DOI 10.1016/j.jbankfin.2017.03.019
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anundsen AK, 2013, J HOUS ECON, V22, P192, DOI 10.1016/j.jhe.2013.07.001
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Baum A. E, 2011, GLOBAL PROPERTY INVE
+   Bouchouicha R, 2012, ECON MODEL, V29, P1820, DOI 10.1016/j.econmod.2012.05.034
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Buyukkarabacak B, 2010, J BANK FINANC, V34, P1247, DOI 10.1016/j.jbankfin.2009.11.022
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Chen N, 2016, OPER RES, V64, P1089, DOI 10.1287/opre.2016.1497
+   Davis EP, 2011, J INT MONEY FINANC, V30, P1, DOI 10.1016/j.jimonfin.2010.06.005
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gan J, 2004, J FINANC ECON, V73, P567, DOI 10.1016/j.jfineco.2003.07.004
+   Garleanu N, 2007, AM ECON REV, V97, P193, DOI 10.1257/aer.97.2.193
+   Giglio S, 2016, J FINANC ECON, V119, P457, DOI 10.1016/j.jfineco.2016.01.010
+   Glasserman P, 2016, MANAGE SCI, V54, P1
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   GOODHART C, 2007, HOUSE PRICES MACROEC
+   Gromb D, 2002, J FINANC ECON, V66, P361, DOI 10.1016/S0304-405X(02)00228-3
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hott C, 2011, J BANK FINANC, V35, P2429, DOI 10.1016/j.jbankfin.2011.02.001
+   Huang XQ, 2013, SCI REP-UK, V3, DOI 10.1038/srep01219
+   Hurd T. R, 2017, PLOS ONE, V2, P1
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Koetter M, 2010, J BANK FINANC, V34, P1129, DOI 10.1016/j.jbankfin.2009.11.010
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Liu M, 2010, OPER RES LETT, V38, P489, DOI 10.1016/j.orl.2010.07.007
+   Lustig HN, 2005, J FINANC, V60, P1167, DOI 10.1111/j.1540-6261.2005.00759.x
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Mezei J, 2018, ECON MODEL, V68, P41, DOI 10.1016/j.econmod.2017.04.016
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Paltalidis N., 2015, SSRN ELECT J, V61, P36
+   Pan HR, 2013, J BANK FINANC, V37, P1720, DOI 10.1016/j.jbankfin.2013.01.018
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Smerlak M, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0130948
+   Staum J, 2013, HANDBOOK ON SYSTEMIC RISK, P512
+NR 45
+TC 0
+Z9 0
+U1 19
+U2 19
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD AUG
+PY 2019
+VL 80
+BP 111
+EP 120
+DI 10.1016/j.econmod.2018.09.032
+PG 10
+WC Economics
+SC Business & Economics
+GA IE9JZ
+UT WOS:000472692000010
+DA 2019-12-27
+ER

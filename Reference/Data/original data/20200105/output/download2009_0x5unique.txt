@@ -1,0 +1,403 @@
+PT J
+AU Chulia, H
+   Climent, F
+   Soriano, P
+   Torro, H
+AF Chulia, Helena
+   Climent, Francisco
+   Soriano, Pilar
+   Torro, Hipolit
+TI Volatility transmission patterns and terrorist attacks
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Volatility modelling; International finance; International asset
+   pricing; GARCH models; Multivariate volatility; Risk management
+ID INTERNATIONAL EQUITY MARKETS; FINANCIAL CONTAGION; STOCK MARKETS;
+   TIME-SERIES; UNIT-ROOT; RETURNS; US; COINTEGRATION; COMOVEMENTS; JAPAN
+AB The objective of this study is to analyse volatility transmission between the US and Eurozone stock markets considering the financial market responses to the September 11, March 11 and July 7 terrorist attacks. In order to do this, we use a multivariate GARCH model and take into account the asymmetric volatility phenomenon, the non-synchronous trading problem and the turmoil periods themselves. Moreover, a graphical analysis of the Asymmetric Volatility Impulse-Response Functions (AVIRF) is introduced, which takes into consideration the financial market responses to the terrorist attacks. Results suggest that there is bidirectional and asymmetric volatility transmission and show the different impacts that terrorist attacks had on both markets.
+C1 [Climent, Francisco; Soriano, Pilar; Torro, Hipolit] Univ Valencia, Dept Econ Financera & Actuarial, Valencia 46022, Spain.
+   [Chulia, Helena] Univ Oberta Catalunya, Dept Econ & Business, Barcelona 08035, Spain.
+RP Soriano, P (reprint author), Univ Valencia, Dept Econ Financera & Actuarial, Av Tarongers S-N, Valencia 46022, Spain.
+EM pilar.soriano-felipe@uv.es
+RI Climent, Francisco/I-2846-2017; TORRO, HIPOLIT/K-3420-2017; Chulia,
+   Helena/D-6749-2014
+OI Climent, Francisco/0000-0003-2698-889X; TORRO,
+   HIPOLIT/0000-0002-2963-9276; Chulia, Helena/0000-0001-5020-0519
+FU Spanish Ministry of Education and ScienceMinistry of Education and
+   Science, Spain [SEJ2006-15401-C04-04/ECON]; Generalitat
+   ValencianaGeneralitat Valenciana [GV/2007/082]; Instituto Valenciano de
+   Investigaciones Economicas (IVIE); Catedra en Finanzas
+   Internacionales-Santander
+FX Financial support from the Spanish Ministry of Education and Science
+   (contract No. SEJ2006-15401-C04-04/ECON), Generalitat Valenciana
+   (contract No. GV/2007/082), Instituto Valenciano de Investigaciones
+   Economicas (IVIE), and Catedra en Finanzas Internacionales-Santander is
+   gratefully acknowledged. The authors also thank seminar participants at
+   the XIV Foro de Finanzas in Castelloand the 2006 EFMA Annual Meeting in
+   Madrid, several anonymous referees and the editor of this journal for
+   their helpful comments.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   [Anonymous], 2002, J EMPIR FINANC, V9, P171
+   Baba Y., 1989, MULTIVARIATE S UNPUB
+   Baele L, 2005, J FINANC QUANT ANAL, V40, P373, DOI 10.1017/S0022109000002350
+   Blunk SS, 2006, APPL ECON, V38, P363, DOI 10.1080/00036840500367930
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Brooks C, 2000, ECON MODEL, V17, P497, DOI 10.1016/S0264-9993(99)00035-8
+   Caporale G. M, 2005, J EMPIR FINANC, V12, P476, DOI DOI 10.1016/J.JEMPFIN.2004.02.005
+   Chen A.H., 2004, EUROPEAN J POLITICAL, V20, P349, DOI DOI 10.1016/J.EJPOLECO.2003.12.005
+   Choudhry T., 2005, APPL FINANCE EC, V15, P1227
+   Deb Partha, 1997, J FINANC RES, V20, P305, DOI DOI 10.1016/J.INTFIN.2006.05.001
+   DICKEY DA, 1981, ECONOMETRICA, V49, P1057, DOI 10.2307/1912517
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   Glaser M, 2005, REV FINANC, V9, P243, DOI DOI 10.1007/s10679-005-7592-4
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   HON M., 2004, J FINANC RES, V27, P95, DOI DOI 10.1111/J.1475-6803.2004.00079.X
+   Ito H, 2005, J ECON BUS, V57, P75, DOI 10.1016/j.jeconbus.2004.06.003
+   JOHANSEN S, 1988, J ECON DYN CONTROL, V12, P231, DOI 10.1016/0165-1889(88)90041-3
+   Johnston TH, 2006, CURR OPIN INVEST DR, V7, P25
+   Karolyi GA, 1996, J FINANC, V51, P951, DOI 10.2307/2329228
+   KAROLYI GA, 1995, J BUS ECON STAT, V13, P11
+   Kearney C., 2000, FINANCIAL REV, V41, P29, DOI DOI 10.1111/j.1540-6288.2000.tb01405.x
+   Kleimeier S, 2008, OXFORD B ECON STAT, V70, P493, DOI 10.1111/j.1468-0084.2008.00509.x
+   Koutmos G, 1995, J INT MONEY FINANC, V14, P747, DOI 10.1016/0261-5606(95)00031-3
+   Kroner KF, 1998, REV FINANC STUD, V11, P817, DOI 10.1093/rfs/11.4.817
+   LIN WL, 1997, J BUSINESS EC STAT, V15, P15
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Mackinnon JG, 1999, J APPL ECONOM, V14, P563, DOI 10.1002/(SICI)1099-1255(199909/10)14:5<563::AID-JAE530>3.3.CO;2-I
+   MACKINNON JG, 1991, LONG RUN EC RELATION
+   Martens M, 2001, J BANK FINANC, V25, P1805, DOI 10.1016/S0378-4266(00)00159-X
+   Meneu V, 2003, J FUTURES MARKETS, V23, P1019, DOI 10.1002/fut.10099
+   Mun CKC, 2005, GLOB FINANC J, V16, P48, DOI 10.1016/j.gfj.2005.05.002
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.2307/2336182
+   Poteshman AM, 2006, J BUS, V79, P1703, DOI 10.1086/503645
+   Ramchand L., 1998, J EMPIR FINANC, V5, P397, DOI DOI 10.1016/S0927-5398(98)00003-6
+   Wongswan J, 2006, REV FINANC STUD, V19, P1157, DOI 10.1093/rfs/hhj033
+NR 41
+TC 12
+Z9 12
+U1 0
+U2 12
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PY 2009
+VL 9
+IS 5
+BP 607
+EP 619
+DI 10.1080/14697680802637882
+PG 13
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 545VV
+UT WOS:000273766000009
+DA 2019-12-27
+ER
+
+PT J
+AU Ding, XW
+   Giesecke, K
+   Tomecek, PI
+AF Ding, Xiaowei
+   Giesecke, Kay
+   Tomecek, Pascal I.
+TI Time-Changed Birth Processes and Multiname Credit Derivatives
+SO OPERATIONS RESEARCH
+LA English
+DT Article
+ID VALUATION; CONTAGION
+AB A credit investor such as a bank granting loans to firms or an asset manager buying corporate bonds is exposed to correlated corporate default risk. A multiname credit derivative is a financial security that allows the investor to transfer this risk to the credit market. In this paper, we study the valuation and risk analysis of multiname derivatives. To capture the complex economic phenomena that drive the pricing of these securities, we introduce a time-changed birth process as a probabilistic model of correlated event timing. The self-exciting property of a time-changed birth process captures the feedback from events that is often observed in credit markets. The stochastic variation of arrival rates between events captures the exposure of firms to common economic risk factors. We derive a closed-form expression for the distribution of a time-changed birth process, and develop analytically tractable pricing relations for a range of multiname derivatives valuation problems. We illustrate our results by calibrating a tranche forward and option pricer to market rates of index and tranche swaps.
+C1 [Ding, Xiaowei; Giesecke, Kay] Stanford Univ, Dept Management Sci & Engn, Stanford, CA 94305 USA.
+   [Tomecek, Pascal I.] JP Morgan Secur Inc, Quantitat Res, New York, NY 10017 USA.
+RP Ding, XW (reprint author), Stanford Univ, Dept Management Sci & Engn, Stanford, CA 94305 USA.
+EM xding@stanford.edu; giesecke@stanford.edu; pascal.i.tomecek@jpmchase.com
+FU J.P. Morgan Chase's Academic Outreach Program
+FX This research was supported by a grant from J.P. Morgan Chase's Academic
+   Outreach Program, for which the authors are very grateful. They thank
+   Benjamin Armbruster, Mark Broadie, Peter Carr, Andreas Eckner, Bjorn
+   Flesaker, Lisa Goldberg, Igor Halperin, Robert Isreal, Andy Li, Jeremy
+   Staum, Nicholas Victoir, Jay Wang, and seminar participants at
+   Citigroup, J. P. Morgan, and Morgan Stanley for helpful discussions and
+   comments, and two anonymous referees for their insightful reviews.
+CR BRIGO D, 2006, CALIBRATION CDO TRAN
+   Carr P, 2004, J FINANC ECON, V71, P113, DOI 10.1016/S0304-405X(03)00171-5
+   CHEN LD, 2002, MATH FINANC, V14, P515
+   COLLINDUFRESNE P, 2003, ARE JUMPS CORPORATE
+   COX JC, 1976, J FINANC ECON, V3, P145, DOI 10.1016/0304-405X(76)90023-4
+   Das SR, 2007, J FINANC, V62, P93, DOI 10.1111/j.1540-6261.2007.01202.x
+   Davis M, 2001, MASTERING RISK, V2, P141
+   Duffie D, 2000, ECONOMETRICA, V68, P1343, DOI 10.1111/1468-0262.00164
+   Duffie D, 2001, FINANC ANAL J, V57, P41, DOI 10.2469/faj.v57.n1.2418
+   DUFFIE D, 2006, FRAILTY CORRELATED D
+   ERRAIS E, 2006, PRICING CREDIT TOP D
+   FELLER W, 1957, INTRO PROBABILITY TH, V1
+   Giesecke K, 2004, J BANK FINANC, V28, P3009, DOI 10.1016/j.jbankfin.2003.11.002
+   Giesecke K., 2005, DEPENDENT EVENTS CHA
+   Giesecke K, 2007, PROCEEDINGS OF THE 2007 WINTER SIMULATION CONFERENCE, VOLS 1-5, P946
+   Giesecke K, 2011, OPER RES, V59, P283, DOI 10.1287/opre.1100.0855
+   Harrison J. M., 1981, Stochastic Processes & their Applications, V11, P215, DOI 10.1016/0304-4149(81)90026-0
+   HARRISON JM, 1979, J ECON THEORY, V20, P381, DOI 10.1016/0022-0531(79)90043-7
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   KENDALL DG, 1948, ANN MATH STAT, V19, P1, DOI 10.1214/aoms/1177730285
+   Kou SC, 2003, ADV APPL PROBAB, V35, P641, DOI 10.1239/aap/1059486822
+   LEE RW, 2004, J COMPUT FINANC, V7, P51, DOI DOI 10.21314/JCF.2004.121
+   Leippold M, 2002, J FINANC QUANT ANAL, V37, P271, DOI 10.2307/3595006
+   Lewis A., 2001, SIMPLE OPTION FORMUL
+   Longstaff FA, 2008, J FINANC, V63, P529, DOI 10.1111/j.1540-6261.2008.01330.x
+   TAVELLA D, 2006, PRICING NTH TO DEFAU
+   Yule GU, 1925, PHILOS T R SOC LON B, V213, P21, DOI 10.1098/rstb.1925.0002
+NR 27
+TC 36
+Z9 37
+U1 0
+U2 15
+PU INFORMS
+PI CATONSVILLE
+PA 5521 RESEARCH PARK DR, SUITE 200, CATONSVILLE, MD 21228 USA
+SN 0030-364X
+J9 OPER RES
+JI Oper. Res.
+PD JUL-AUG
+PY 2009
+VL 57
+IS 4
+BP 990
+EP 1005
+DI 10.1287/opre.1080.0652
+PG 16
+WC Management; Operations Research & Management Science
+SC Business & Economics; Operations Research & Management Science
+GA 497CU
+UT WOS:000270032800015
+DA 2019-12-27
+ER
+
+PT J
+AU Pra, PD
+   Runggaldier, WJ
+   Sartori, E
+   Tolotti, M
+AF Pra, Paolo Dai
+   Runggaldier, Wolfgang J.
+   Sartori, Elena
+   Tolotti, Marco
+TI LARGE PORTFOLIO LOSSES: A DYNAMIC CONTAGION MODEL
+SO ANNALS OF APPLIED PROBABILITY
+LA English
+DT Article
+DE Credit contagion; credit crisis; interacting particle systems; large
+   deviations; large portfolio losses; mean field interaction;
+   nonreversible Markov processes; phase transition
+ID CREDIT RISK
+AB Using particle system methodologies we study the propagation of financial distress in a network of firms facing credit risk, We investigate the phenomenon of a credit crisis and quantify the losses that a bank may suffer in a large credit portfolio. Applying a large deviation principle we compute the limiting distributions of the system and determine the time evolution of the credit quality indicators of the firms, deriving moreover the dynamics of a global financial health indicator. We finally describe a suitable version of the "Central Limit Theorem" useful to study large portfolio losses. Simulation results are provided as well as applications to portfolio loss distribution analysis.
+C1 [Pra, Paolo Dai; Runggaldier, Wolfgang J.; Sartori, Elena] Univ Padua, Dipartimento Matemat Pura & Applicata, I-35121 Padua, Italy.
+   [Tolotti, Marco] Bocconi Univ, Ist Metodi Quantitat, I-20136 Milan, Italy.
+   [Tolotti, Marco] Scuola Normale Super Pisa, Pisa, Italy.
+   [Tolotti, Marco] Univ Venice, Dept Appl Math, I-30123 Venice, Italy.
+RP Pra, PD (reprint author), Univ Padua, Dipartimento Matemat Pura & Applicata, 63 Via Trieste, I-35121 Padua, Italy.
+EM daipra@math.unipd.it; runggal@math.unipd.it; esartori@math.unipd.it;
+   tolotti@unibocconi.it
+RI Tolotti, Marco/D-6189-2014
+OI Tolotti, Marco/0000-0002-7409-0825; Sartori, Elena/0000-0001-5678-9379
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   BOLTHAUSEN E, 1986, PROBAB THEORY REL, V72, P305, DOI 10.1007/BF00699109
+   Bremaud P, 1981, POINT PROCESSES QUEU
+   Brock WA, 2001, REV ECON STUD, V68, P235, DOI 10.1111/1467-937X.00168
+   Cetin U, 2004, ANN APPL PROBAB, V14, P1167, DOI 10.1214/105051604000000251
+   Christensen JHE, 2004, J BANK FINANC, V28, P2575, DOI 10.1016/j.jbankfin.2004.06.003
+   Collin-Dufresne R, 2003, IS CREDIT EVENT RISK
+   COMETS F, 1987, ANN I H POINCARE-PR, V23, P135
+   Cont R, 2000, MACROECON DYN, V4, P170
+   CONT R, 1999, SERIES ADV STAT MECH, V14, P47
+   Crouhy M, 2000, J BANK FINANC, V24, P59, DOI 10.1016/S0378-4266(99)00053-9
+   DAIPRA P, 1996, J STAT PHYS, V84, P735
+   Davis M., 2001, QUANTITATIVE FINANCE, V1, P382, DOI DOI 10.1080/713665832
+   Dembo A, 2004, FINANC STOCH, V8, P3, DOI 10.1007/s00780-003-0107-2
+   DEMBO A, 1993, LARGE DEVIATIONS TEC
+   DUFFIE D, 2006, FRAILTY CORRELATED D
+   Ethier S.N., 1986, MARKOV PROCESSES CHA
+   FOLLMER H, 1994, PHILOS T R SOC A, V347, P471, DOI 10.1098/rsta.1994.0057
+   Frey R, 2002, J BANK FINANC, V26, P1317, DOI 10.1016/S0378-4266(02)00265-0
+   FREY R, 2007, DYNAMIC HEDGING SYNT
+   FREY R, 2006, CREDIT DERIVATIVES M
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P741, DOI 10.1016/j.jedc.2005.01.004
+   Giesecke K, 2004, J BANK FINANC, V28, P3009, DOI 10.1016/j.jbankfin.2003.11.002
+   Giesecke K, 2011, OPER RES, V59, P283, DOI 10.1287/opre.1100.0855
+   Gordy MB, 2000, J BANK FINANC, V24, P119, DOI 10.1016/S0378-4266(99)00054-0
+   Horst U, 2007, J ECON BEHAV ORGAN, V63, P25, DOI 10.1016/j.jebo.2005.02.005
+   Jarrow RA, 2001, J FINANC, V53, P2225
+   Kiyotaki N., 1997, CREDIT CHAINS
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   PERKO L, 1991, TEXTS APPL MATH, V7
+   Pham H, 2007, LECT NOTES MATH, V1919, P190
+   SARTORI E, 2007, THESIS U PADOVA
+   SCHONBUCHER P, 2006, PORTFOLIO LOSSES TER
+   SCHONBUCHER P, 2003, INFORM DRIVEN DEFAUL
+   TOLOTTI M, 2007, THESIS SCUOLA NORMAL
+NR 35
+TC 33
+Z9 34
+U1 0
+U2 4
+PU INST MATHEMATICAL STATISTICS
+PI CLEVELAND
+PA 3163 SOMERSET DR, CLEVELAND, OH 44122 USA
+SN 1050-5164
+J9 ANN APPL PROBAB
+JI Ann. Appl. Probab.
+PD FEB
+PY 2009
+VL 19
+IS 1
+BP 347
+EP 394
+DI 10.1214/08-AAP544
+PG 48
+WC Statistics & Probability
+SC Mathematics
+GA 419VN
+UT WOS:000264247900013
+OA Bronze
+DA 2019-12-27
+ER
+
+PT J
+AU Lorenz, J
+   Battiston, S
+   Schweitzer, F
+AF Lorenz, J.
+   Battiston, S.
+   Schweitzer, F.
+TI Systemic risk in a unifying framework for cascading processes on
+   networks
+SO EUROPEAN PHYSICAL JOURNAL B
+LA English
+DT Article
+ID MODEL; DYNAMICS
+AB We introduce a general framework for models of cascade and contagion processes on networks, to identify their commonalities and differences. In particular, models of social and financial cascades, as well as the fiber bundle model, the voter model, and models of epidemic spreading are recovered as special cases. To unify their description, we define the net fragility of a node, which is the difference between its fragility and the threshold that determines its failure. Nodes fail if their net fragility grows above zero and their failure increases the fragility of neighbouring nodes, thus possibly triggering a cascade. In this framework, we identify three classes depending on the way the fragility of a node is increased by the failure of a neighbour. At the microscopic level, we illustrate with specific examples how the failure spreading pattern varies with the node triggering the cascade, depending on its position in the network and its degree. At the macroscopic level, systemic risk is measured as the final fraction of failed nodes, X*, and for each of the three classes we derive a recursive equation to compute its value. The phase diagram of X* as a function of the initial conditions, thus allows for a prediction of the systemic risk as well as a comparison of the three different model classes. We could identify which model class leads to a first-order phase transition in systemic risk, i.e. situations where small changes in the initial conditions determine a global failure. Eventually, we generalize our framework to encompass stochastic contagion models. This indicates the potential for further generalizations.
+C1 [Lorenz, J.; Battiston, S.; Schweitzer, F.] Swiss Fed Inst Technol, Chair Syst Design, CH-8032 Zurich, Switzerland.
+RP Lorenz, J (reprint author), Swiss Fed Inst Technol, Chair Syst Design, Kreuzpl 5, CH-8032 Zurich, Switzerland.
+EM jalorenz@ethz.ch
+RI battiston, stefano/M-1612-2017; Battiston, Stefano/I-2624-2012; Lorenz,
+   Jan/D-1806-2010; Schweitzer, Frank/B-2127-2012
+OI battiston, stefano/0000-0002-0051-973X; Battiston,
+   Stefano/0000-0002-0051-973X; Lorenz, Jan/0000-0002-5547-7848;
+   Schweitzer, Frank/0000-0003-1551-6491
+CR AVELLANEDA M, 2001, RISK, V14, P125
+   Battiston S, 2007, J ECON DYN CONTROL, V31, P2061, DOI 10.1016/j.jedc.2007.01.004
+   Bianconi G, 2004, PHYS REV E, V70, DOI 10.1103/PhysRevE.70.035105
+   Boguna M, 2003, PHYS REV LETT, V90, DOI 10.1103/PhysRevLett.90.028701
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Carreras BA, 2004, CHAOS, V14, P643, DOI 10.1063/1.1781391
+   Caruso F, 2006, EUR PHYS J B, V50, P243, DOI [10.1140/epjb/e2006-00110-5, 10.1140/epjb/e2006-00140-5]
+   Crucitti P, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.045104
+   Dodds PS, 2009, PHYS REV E, V79, DOI 10.1103/PhysRevE.79.066115
+   Dodds PS, 2004, PHYS REV LETT, V92, DOI 10.1103/PhysRevLett.92.218701
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Goh KI, 2003, PHYS REV LETT, V91, DOI 10.1103/PhysRevLett.91.148701
+   Gomez-Gardenes J, 2008, P NATL ACAD SCI USA, V105, P1399, DOI 10.1073/pnas.0707332105
+   GRANOVETTER M, 1978, AM J SOCIOL, V83, P1420, DOI 10.1086/226707
+   Jackson MO, 2007, BE J THEOR ECON, V7, DOI 10.1186/1472-6947-7-6
+   KAHNG B, 1988, PHYS REV B, V37, P7625, DOI 10.1103/PhysRevB.37.7625
+   Kim DH, 2005, PHYS REV LETT, V94, DOI 10.1103/PhysRevLett.94.025501
+   Kinney R, 2005, EUR PHYS J B, V46, P101, DOI 10.1140/epjb/e2005-00237-9
+   Konig MD, 2008, NETW HETEROG MEDIA, V3, P201
+   Kun F, 2000, EUR PHYS J B, V17, P269, DOI 10.1007/PL00011084
+   Lorenz J, 2008, NETW HETEROG MEDIA, V3, P185, DOI 10.3934/nhm.2008.3.185
+   Moreno Y, 2002, EUROPHYS LETT, V58, P630, DOI 10.1209/epl/i2002-00442-2
+   MORRIS S, 2008, BROOKINGS PANEL EC A, V229, P274
+   Motter AE, 2004, PHYS REV LETT, V93, DOI 10.1103/PhysRevLett.93.098701
+   Pastor-Satorras R, 2001, PHYS REV LETT, V86, P3200, DOI 10.1103/PhysRevLett.86.3200
+   Schweitzer F, 2009, EUR PHYS J B, V67, P301, DOI 10.1140/epjb/e2009-00001-3
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Schweitzer F, 2008, PLOS ONE, V3, DOI 10.1371/journal.pone.0001458
+   Sornette D, 1998, EUR PHYS J B, V1, P353, DOI 10.1007/s100510050194
+   SORNETTE D, 2009, INT J TERRA IN PRESS
+   Stark HU, 2008, PHYS REV LETT, V101, DOI 10.1103/PhysRevLett.101.018701
+   Vazquez A, 2002, PHYS REV E, V65, DOI 10.1103/PhysRevE.65.066130
+   Vespignani A, 1998, PHYS REV E, V57, P6345, DOI 10.1103/PhysRevE.57.6345
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+NR 34
+TC 83
+Z9 85
+U1 1
+U2 31
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1434-6028
+EI 1434-6036
+J9 EUR PHYS J B
+JI Eur. Phys. J. B
+PD OCT
+PY 2009
+VL 71
+IS 4
+BP 441
+EP 460
+DI 10.1140/epjb/e2009-00347-4
+PG 20
+WC Physics, Condensed Matter
+SC Physics
+GA 510LA
+UT WOS:000271088800002
+DA 2019-12-27
+ER
+
+PT J
+AU Hartulari, C
+   Galupa, A
+AF Hartulari, Carmen
+   Galupa, Angela
+TI A MULTILEVEL CYBERNETIC SYSTEM TO CONTROL THE RISK OF ENVIRONMENTAL
+   POLLUTION
+SO ECONOMIC COMPUTATION AND ECONOMIC CYBERNETICS STUDIES AND RESEARCH
+LA English
+DT Article
+DE Data warehouse; multidimensional model; cybernetic multilevel control
+   system; measure of risk; benefit function
+AB The authors present a cybernetic system to control the risk of environmental pollution at several levels, namely: at the level of each polluting economic unit, at the level of the region where these economic units act, and at the level of the whole country. A systemic approach is used in order to analyze all the systems implicated in environmental pollution, and to control all of these processes and prevent them. A data warehouse is used to obtain information about the environment pollution in a timely fashion, with the identification of place, of time, and of the factors which are responsible for these phenomena, using OLAP technology. The authors propose to assign a degree of pollution risk to each polluting economic unit, such that each of them can control its own optimal production, taking account also the degree of risk assigned to it. The decision-makers implicated at various hierarchical levels can better control their policies and the punishment measures applied to polluting economic units by also taking into account the degree of risk assigned to each polluting economic unit.
+C1 [Hartulari, Carmen; Galupa, Angela] Bucharest Acad Econ Studies, Dept Econ Cybernet, Bucharest, Romania.
+RP Hartulari, C (reprint author), Bucharest Acad Econ Studies, Dept Econ Cybernet, Bucharest, Romania.
+CR BADESCU AV, 2005, METODE CANTITATIVE F
+   Filip F. G., 2007, SISTEME SUPORT PENTR
+   Inmon William H., 2007, BUILDING DATA WAREHO
+   IORGULESCU F, 2008, VALUE RISK COMP ANAL
+   MARIN D, 2004, TEORIA EFECTELOR EXT
+   TURBAN E, 2007, DECISIONS SUPPORT BU
+   VALACIECH G, 2008, MODERN SYSTEM ANAL D
+NR 7
+TC 1
+Z9 1
+U1 0
+U2 0
+PU ACAD ECONOMIC STUDIES
+PI BUCHAREST
+PA 15-17 CALEA DOROBANTI, SECTOR 1, BUCHAREST, 00000, ROMANIA
+SN 0424-267X
+J9 ECON COMPUT ECON CYB
+JI Econ. Comput. Econ. Cybern. Stud.
+PY 2009
+VL 43
+IS 3
+BP 155
+EP 165
+PG 11
+WC Economics; Mathematics, Interdisciplinary Applications
+SC Business & Economics; Mathematics
+GA 480NR
+UT WOS:000268743100011
+DA 2019-12-28
+ER

@@ -1,0 +1,464 @@
+
+PT J
+AU Wendt, F
+AF Wendt, Froukelien
+TI Central counterparties: addressing their too-important-to-fail nature
+SO JOURNAL OF FINANCIAL MARKET INFRASTRUCTURES
+LA English
+DT Article
+DE central counterparties; interconnectedness; interdependencies; too
+   important to fail; recovery and resolution; risk waterfall
+AB Central counterparties (CCPs) can offer significant benefits to a market. However, CCPs are also highly interconnected with financial institutions and markets, and they are therefore "too important to fail". The increased volumes cleared through CCPs and their increasing global scope, in particular in the over-the-counter derivatives market, make it even more important that systemic risks related to CCPs are managed. This paper argues that the current set of international policy measures does partly address these risks, but alternative policy measures are needed to reduce the remaining systemic risks. For example, this paper recommends that network analysis be conducted by CCPs and authorities to gauge potential losses. It also suggests a common international approach to central bank services in order to help reduce the dependency of CCPs on services provided by commercial banks.
+C1 [Wendt, Froukelien] Int Monetary Fund, 700 19th St NW, Washington, DC 20431 USA.
+RP Wendt, F (reprint author), Int Monetary Fund, 700 19th St NW, Washington, DC 20431 USA.
+EM fwendt@imf.org
+OI Wendt, Froukelien/0000-0003-2087-8630
+CR [Anonymous], 2013, GLOB SYST IMP BANKS
+   Arregui N., 2013, 13199 INT MON FUND
+   Basel Committee on Banking Supervision, 2014, CAP REQ BANK EXP CEN
+   Chamorro-Courtland C., 2012, BROOKLYN J CORPORATE, V6, P433
+   Chande N., 2010, FINANCIAL SYSTEM REV
+   COMM. PAYMENT & SETTLEMENT SYSTEMS BANK FOR INT'L SETTLEMENTS, 2012, PRINC FIN MARK INFR
+   Committee on Global Financial System, 2011, 46 BANK INT SETTL
+   Committee on Payment and Settlement Systems-CPSS, 2008, INT PAYM SETTL SYST
+   Committee on Payments and Settlement Systems and theTechnical Committee of the International Organization of Securities Commissions, 2014, REC FIN MARK FIN MAR
+   Committee on the Global Financial System, 2010, CGFS PUBL, V36
+   Elliott D, 2013, 20 BANK ENGL
+   Financial Stability Board, 2014, KEY ATTR EFF RES REG
+   Financial Stability Board, 2013, OTC DER REF
+   Financial Stability Board, 2014, OTC DER REF
+   International Monetary Fund, 2010, GLOB FIN STAB REP
+   JPMorgan Chase, 2014, WHAT RES PLAN CCPS
+   Lin L., 2013, 133 INT MONT FUND
+   Murphy D., 2014, 29 BANK ENGL
+   Pirrong C., 2011, DISCUSSION PAPERS SE, V1
+   Ripatti K., 2004, 30 BANK FINL
+   Russo D., 2013, FINANCIAL STABILITY, V17
+   Singh M., 2014, 14203 INT MONT FUND
+   Steigerwald R., 2014, UNDERSTANDING DERIVA
+   Zickwolff M., 2010, ROLE CENTRAL COUNTER
+NR 24
+TC 0
+Z9 0
+U1 0
+U2 1
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2049-5404
+EI 2049-5412
+J9 J FINANC MARK INFRAS
+JI J. Financ. Mark. Infrastruct.
+PD SEP
+PY 2015
+VL 4
+IS 1
+BP 59
+EP 84
+PG 26
+WC Business, Finance
+SC Business & Economics
+GA V4I7H
+UT WOS:000218968400004
+DA 2019-12-28
+ER
+
+PT J
+AU Minoiu, C
+   Kang, CH
+   Subrahmanian, VS
+   Berea, A
+AF Minoiu, Camelia
+   Kang, Chanhyun
+   Subrahmanian, V. S.
+   Berea, Anamaria
+TI Does financial connectedness predict crises?
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE F47; G01; F36; Systemic risk; Banking crises; Early warning systems;
+   Financial networks
+ID BANKING CRISES; INTEGRATION; CYCLES; RULES; TRADE; RISK
+AB The global financial crisis has reignited interest in models of crisis prediction. It has also raised the question whether financial interconnectedness-a possible source of systemic risk-can serve as an early warning indicator of crises. In this paper, we examine the ability of connectedness in the global network of financial linkages to predict systemic banking crises during the 1978-2010 period. Our results indicate that increases in a country's own connectedness and decreases in its neighbours' connectedness are associated with a higher probability of banking crises after controlling for macroeconomic fundamentals. Our findings suggest that financial interconnectedness has early warning potential, especially for the 2007-2010 wave of systemic banking crises.
+C1 [Minoiu, Camelia] Int Monetary Fund, Res Dept, Washington, DC 20431 USA.
+   [Kang, Chanhyun] Univ Maryland, Dept Comp Sci, College Pk, MD 20742 USA.
+   [Subrahmanian, V. S.] Univ Maryland, Dept Comp Sci, UMIACS, Ctr Digital Int Govt, College Pk, MD 20742 USA.
+   [Subrahmanian, V. S.] Univ Maryland, Lab Computat Cultural Dynam, College Pk, MD 20742 USA.
+   [Berea, Anamaria] George Mason Univ, Volgenau Sch Engn, Ctr Excellence C4I, Fairfax, VA 22030 USA.
+RP Minoiu, C (reprint author), Int Monetary Fund, Res Dept, 700 19th St NW, Washington, DC 20431 USA.
+EM cminoiu@imf.org
+FU US Army Research Office under MURIMURI [11NF0910206, W911NF1160215,
+   W911NF1110344, W911NF-09-1-0525]
+FX We are grateful for helpful comments from Adrian Alter, Andrew Berg,
+   Charlie Brummit, Giovanni Di Iasio, Mathias Drehmann, Grzegorz Halaj,
+   Tom Hurd, Sergio Montagna, Andrea Presbitero and participants at the
+   'Interlinkages and Systemic Risk' Conference (Ancona, July 2013). We
+   thank Luis Catao for generously sharing his data on macroeconomic
+   variables. Some of the authors have leveraged research funded by the US
+   Army Research Office under grants 11NF0910206, W911NF1160215,
+   W911NF1110344 and W911NF-09-1-0525 (MURI). The views expressed in this
+   paper are those of the authors and do not represent those of funding
+   agencies, the IMF or IMF policies. All remaining errors are our own.
+CR Abiad A., 2003, 32 IMF
+   Acemoglu D., 2013, 18727 NBER
+   Agrawal R., 1993, SIGMOD Record, V22, P207, DOI 10.1145/170035.170072
+   Alessi L, 2011, EUR J POLIT ECON, V27, P520, DOI 10.1016/j.ejpoleco.2011.01.003
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Asquith P, 2010, J FINANC MARK, V13, P157, DOI 10.1016/j.finmar.2009.09.005
+   Baesens B, 2003, J OPER RES SOC, V54, P627, DOI 10.1057/palgrave.jors.2601545
+   Baldacci E, 2011, 100 IMF
+   Berg A, 1999, INT MONET FUND S PAP, V46, P107
+   Berg A, 2005, IMF STAFF PAPERS, V52, P462
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BIS, 2011, GUID INT LOC FIN STA
+   BIS, 2009, 49 BIS MON EC DEP
+   Blank S, 2010, REV INT ECON, V18, P289, DOI 10.1111/j.1467-9396.2010.00858.x
+   Blank S, 2007, COMP ECON STUD, V49, P389, DOI 10.1057/palgrave.ces.8100218
+   Bluedorn J. C., 2013, 13203 IMF
+   Bussiere M, 2013, 420 BANQ FRANC
+   Caballero J., 2012, 364 IDB
+   Caballero J., 2009, FRBSF EC LETT, V2009, P38
+   Catao LAV, 2014, J INT ECON, V94, P18, DOI 10.1016/j.jinteco.2014.05.003
+   Cerutti E., 2012, CHAPTER NBER SYSTEMI
+   Chinazzi M, 2013, J ECON DYN CONTROL, V37, P1692, DOI 10.1016/j.jedc.2013.01.010
+   Chui M, 2002, 171 BANK ENGL
+   Cleves MA, 2002, STATA J, V2, P301, DOI 10.1177/1536867X0200200307
+   Cont R., 2012, CHAPTER HDB SYSTEMIC
+   Creighton C, 2003, BIOINFORMATICS, V19, P79, DOI 10.1093/bioinformatics/19.1.79
+   Dabla-Norris E, 2014, WORLD DEV, V59, P360, DOI 10.1016/j.worlddev.2014.02.001
+   Demirguc-Kunt A, 1998, INT MONET FUND S PAP, V45, P81
+   Demirguc-Kunt A, 2005, NATL INST ECON REV, V192, P68, DOI 10.1177/002795010519200108
+   EDISON HJ, 2000, 675 BOARD GOV FED RE
+   Eichengreen B., 1995, ECON POLICY, P249, DOI DOI 10.2307/1344591
+   Ellis K, 2000, J FINANC QUANT ANAL, V35, P529, DOI 10.2307/2676254
+   Fagiolo G, 2007, PHYS REV E, V76, DOI 10.1103/PhysRevE.76.026107
+   Fagiolo G, 2010, J EVOL ECON, V20, P479, DOI 10.1007/s00191-009-0160-x
+   Fawcett T, 2006, PATTERN RECOGN LETT, V27, P861, DOI 10.1016/j.patrec.2005.10.010
+   Fricke D., 2014, COMPUT EC IN PRESS
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gourinchas PO, 2012, AM ECON J-MACROECON, V4, P226, DOI 10.1257/mac.4.1.226
+   Hale G., 2014, ECSBS MACR RES NETW
+   Hale G, 2012, J INT ECON, V88, P312, DOI 10.1016/j.jinteco.2012.01.011
+   Hattori M., 2007, CHAPTER RES GLOBAL F, V29, P16
+   International Monetary Fund (IMF), 2010, IMF FSB EARL WARN EX
+   Jorda O, 2013, 19506 NBER
+   Kalemli-Ozcan S, 2013, J FINANC, V68, P1179, DOI 10.1111/jofi.12025
+   Kaminsky G, 1998, INT MONET FUND S PAP, V45, P1
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Karabatak M, 2009, EXPERT SYST APPL, V36, P3465, DOI 10.1016/j.eswa.2008.02.064
+   Laeven L., 2012, 12163 IMF
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Lopez-Fernandez L., 2004, 26 INT C SOFTW ENG W
+   Lu H., 1998, P ACM SIGMOD WORKSH, P12
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Odders-White E., 2000, J FINANCIAL MARKETS, V3, P259
+   Reinhart C., 2009, 14321 NBER
+   Rodrik D, 2008, BROOKINGS PAP ECO AC, P365
+   Schiavo S, 2010, QUANT FINANC, V10, P389, DOI 10.1080/14697680902882420
+   Schularick M, 2012, AM ECON REV, V102, P1029, DOI 10.1257/aer.102.2.1029
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Stiglitz JE, 2010, AM ECON REV, V100, P388, DOI 10.1257/aer.100.2.388
+   Subrahmanian V., 2009, U.S. Patent, Patent No. [7 474 987, 7474987]
+   Subrahmanian V. S., 2013, COMPUTATIONAL ANAL T
+   Tabak BM, 2014, PHYSICA A, V394, P211, DOI 10.1016/j.physa.2013.09.010
+   Yellen J.L., 2013, COMMUNICATION
+NR 64
+TC 13
+Z9 13
+U1 5
+U2 39
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD APR 3
+PY 2015
+VL 15
+IS 4
+SI SI
+BP 607
+EP 624
+DI 10.1080/14697688.2014.968358
+PG 18
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA CD1HE
+UT WOS:000350824800003
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Bollen, B
+   Skully, M
+   Tripe, D
+   Wei, XT
+AF Bollen, Bernard
+   Skully, Michael
+   Tripe, David
+   Wei, Xiaoting
+TI The Global Financial Crisis and Its Impact on Australian Bank Risk
+SO INTERNATIONAL REVIEW OF FINANCE
+LA English
+DT Article
+ID DEPOSIT INSURANCE; MARKET DISCIPLINE; EMERGING MARKETS; REORGANIZATION;
+   SUPERVISION; LIQUIDITY; GUARANTEE; R-2
+AB This paper examines the global financial crisis (GFC) and its impact on Australian banking risk. An augmented market model is developed to identify changes in listed Australian bank systematic risk in relation to three key events: the GFC's start in August 2007, the market downturn in Australian and global share markets in January 2008, and the announcement of Australia's Deposit and Wholesale Funding Guarantee (DWFG) scheme on 12 October 2008. The study also examines changes in bank systemic risk during these event periods. The Australian market offers a unique opportunity to observe the impact of the introduction of the DWFG in that it lacked any explicit deposit insurance prior to the crisis. Initially, the crisis period had little impact on bank systematic risk while bank systemic risk increased considerably. The share market downturn caused a marked increase in both systematic and systemic risks for Australia's major internationally connected banks followed by a reduction in both systematic and systemic risks with the introduction of the guarantee scheme for all Australian banks.
+C1 [Bollen, Bernard] Univ New England, Armidale, NSW, Australia.
+   [Skully, Michael; Wei, Xiaoting] Monash Univ, Melbourne, Vic 3004, Australia.
+   [Tripe, David] Massey Univ, Palmerston North 4442, New Zealand.
+RP Tripe, D (reprint author), Massey Univ, Sch Econ & Finance, Private Bag 11222, Palmerston North 4442, New Zealand.
+EM d.w.tripe@massey.ac.nz
+OI Skully, Michael/0000-0002-4904-9003; Tripe, David/0000-0003-1461-0451
+CR ACHARYA S, 1989, J FINANC, V44, P1313, DOI 10.2307/2328644
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Allen E., 1998, J BANK FINANC, V17, P629
+   Anginer D, 2014, J BANK FINANC, V48, P312, DOI 10.1016/j.jbankfin.2013.09.013
+   Angkinand A, 2010, J INT MONEY FINANC, V29, P252, DOI 10.1016/j.jimonfin.2009.08.001
+   Australian Government Guarantee Scheme for Large Deposits and Wholesale Funding, 2008, STAT GUAR LIAB
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   BINDER JJ, 1985, RAND J ECON, V16, P167, DOI 10.2307/2555408
+   Black S, 2010, JASSA, P29
+   BUNDT TP, 1992, J BANK FINANC, V16, P1179, DOI 10.1016/0378-4266(92)90066-9
+   CHAN YS, 1992, J FINANC, V47, P227, DOI 10.2307/2329096
+   Chiang T. F., 2007, REV QUANTITATIVE FIN, V29, P2205
+   Demirguc-Kunt A, 2002, J MONETARY ECON, V49, P1373, DOI 10.1016/S0304-3932(02)00171-X
+   Demirguc-Kunt A, 2002, J ECON PERSPECT, V16, P175, DOI 10.1257/0895330027319
+   Dennis S. A., 1998, ACCOUNT FINANC, V38, P91
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Estrada J., 2002, EMERG MARK REV, V3, P365, DOI DOI 10.1016/S1566-0141(02)00042-0
+   Estrada J, 2007, FINANCE, V16, P169, DOI [10.1016/j.iref.2005.03.003, DOI 10.1016/J.IREF.2005.03.003]
+   Fries S, 1997, J BANK FINANC, V21, P441, DOI 10.1016/S0378-4266(96)00045-3
+   GOLDBERG LG, 1991, J FINANC RES, V14, P233, DOI 10.1111/j.1475-6803.1991.tb00660.x
+   Gropp R., 2004, Review of Finance, V8, P571, DOI 10.1093/rof/8.4.571
+   Gueyie J.-P., 2003, INT REV ECON FINANC, V12, P247
+   Haq M., 2009, J INT FINANC MARK I, V19, P274
+   HORVITZ PM, 1975, J FINANC QUANT ANAL, V10, P589, DOI 10.2307/2330605
+   Jin L, 2006, J FINANC ECON, V79, P257, DOI 10.1016/j.jfineco.2004.11.003
+   Karas A, 2013, J MONEY CREDIT BANK, V45, P179, DOI 10.1111/j.1538-4616.2012.00566.x
+   Merton R.C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   Morck R, 2000, J FINANC ECON, V58, P215, DOI 10.1016/S0304-405X(00)00071-4
+   Morck R, 2013, ANNU REV FINANC ECON, V5, P143, DOI 10.1146/annurev-financial-110112-120936
+   RONN EI, 1989, J BANK FINANC, V13, P21, DOI 10.1016/0378-4266(89)90016-2
+   Santos JAC, 2006, J ECON SURV, V20, P459, DOI 10.1111/j.0950-0804.2006.00286.x
+   Schich S., 2008, FINANCIAL MARKET TRE, V1, P55
+   Schich S., 2009, OECD J FINANCIAL MAR, V1, P89
+   Schwartz C., 2010, RESERVE BANK AUSTR B
+   Swan W., 2008, DEPUTY PRIME MINISTE
+   Swan W., 2010, DEPUTY PRIME MINISTE
+   Wagster JD, 2007, J MONEY CREDIT BANK, V39, P1651, DOI 10.1111/j.1538-4616.2007.00082.x
+   Wheelock D., 1994, FEDERAL RESERVE BANK, V76, P57
+   Yan X, 2014, INT REV FINANC, V14, P431, DOI 10.1111/irfi.12028
+   Yin HY, 2002, RES FINANCE, V19, P173
+NR 41
+TC 8
+Z9 8
+U1 0
+U2 15
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1369-412X
+EI 1468-2443
+J9 INT REV FINANC
+JI Int. Rev. Financ.
+PD MAR
+PY 2015
+VL 15
+IS 1
+BP 89
+EP 111
+DI 10.1111/irfi.12041
+PG 23
+WC Business, Finance
+SC Business & Economics
+GA CC8ZO
+UT WOS:000350657300004
+DA 2019-12-28
+ER
+
+PT J
+AU Flavin, TJ
+   Sheenan, L
+AF Flavin, Thomas J.
+   Sheenan, Lisa
+TI The role of US subprime mortgage-backed assets in propagating the
+   crisis: Contagion or interdependence?
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Financial crisis; Contagion; Subprime mortgage-backed securities;
+   Markov-switching VAR
+ID DETECTING SHIFT; RISK; CURRENCY; MARKETS; MODELS
+AB Though relatively small, the subprime mortgage-backed securities market is often identified as the source of the crisis that swept through the U.S. financial system from 2007 onwards. We investigate if its role in the propagation of the crisis was due to contagion or interdependence. Using a Markov-switching VAR with time-varying transition probabilities, we analyse the transmission of shocks across the financial system. We find little evidence of asset correlation changes between normal and crisis regimes and those that do occur are predominantly associated with liquidity variables. Otherwise, relationships are stable across market conditions, implying that the U.S. financial crisis was due to cross-market interdependencies rather than contagion. There is limited evidence that the deteriorating quality of the underlying assets can explain the transition from 'normal' market conditions to a high-volatility regime, although this is not consistent across model specifications. (C) 2015 Elsevier Inc. All rights reserved.
+C1 [Flavin, Thomas J.] Natl Univ Ireland Maynooth, Maynooth Univ, Dept Econ Finance & Accounting, Maynooth, Kildare, Ireland.
+   [Sheenan, Lisa] Cent Bank Ireland, Dublin 1, Ireland.
+RP Sheenan, L (reprint author), Cent Bank Ireland, Dublin 1, Ireland.
+EM thomas.flavin@nuim.ie; lisa.sheenan@centralbank.ie
+RI Flavin, Thomas/Q-3909-2019; Flavin, Thomas/C-1963-2017
+OI Flavin, Thomas/0000-0002-9469-5063; Flavin, Thomas/0000-0002-9469-5063
+CR Briere M, 2012, J INT MONEY FINANC, V31, P1729, DOI 10.1016/j.jimonfin.2012.03.010
+   Brunetti C., 2008, EMRGNG MARKTS REV, V9, P104, DOI DOI 10.1016/J.EMEMAR.2008.02.005
+   Brunnermeier Markus, 2008, 14612 NBER
+   Demyanyk Y, 2011, REV FINANC STUD, V24, P1848, DOI 10.1093/rfs/hhp033
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Dungey M., 2009, WP1014 IMF
+   Dungey M., 2010, TRANSMISSION FINANCI
+   Dungey M, 2013, OPEN ECON REV, V24, P5, DOI 10.1007/s11079-012-9254-4
+   Dwyer GP, 2009, J INT MONEY FINANC, V28, P1293, DOI 10.1016/j.jimonfin.2009.08.007
+   Fender I., 2008, BANK INT SETTLEMENTS
+   FILARDO AJ, 1994, J BUS ECON STAT, V12, P299, DOI 10.2307/1392086
+   Filardo AJ., 1998, 9809 RWP FED RES BAN
+   Flavin TJ, 2010, PAC ECON REV, V15, P401, DOI 10.1111/j.1468-0106.2010.00510.x
+   Forbes K., 2012, 18465 NBER
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gorton GB, 2009, 14649 NBER
+   Gravelle T, 2006, J INT ECON, V68, P409, DOI 10.1016/j.jinteco.2005.07.005
+   Guo F, 2011, INT REV ECON FINANC, V20, P95, DOI 10.1016/j.iref.2010.07.009
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   HAMILTON JD, 1990, J ECONOMETRICS, V45, P39, DOI 10.1016/0304-4076(90)90093-9
+   Hatemi A, 2011, ECON MODEL, V28, P2560, DOI 10.1016/j.econmod.2011.07.017
+   Hellwig MF, 2009, ECONOMIST-NETHERLAND, V157, P129, DOI 10.1007/s10645-009-9110-0
+   Jeanne O, 2000, J INT ECON, V50, P327, DOI 10.1016/S0022-1996(99)00007-0
+   KIM CJ, 1994, J ECONOMETRICS, V60, P1, DOI 10.1016/0304-4076(94)90036-1
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   MANZAN S, 2004, EMPIR ECON, V29, P901
+   Masson P, 1999, J INT MONEY FINANC, V18, P587, DOI 10.1016/S0261-5606(99)00016-9
+   Masson Paul, 1999, ASIAN FINANCIAL CRIS
+   Mian A, 2009, Q J ECON, V124, P1449, DOI 10.1162/qjec.2009.124.4.1449
+   Nit-Sahalia Y., 2009, WP09204 IMF
+   Park S. Y., 2010, WORKING PAPER
+   Peria MSM, 2002, EMPIR ECON, V27, P299
+   Shin HS, 2012, IMF ECON REV, V60, P155, DOI 10.1057/imfer.2012.6
+   Stanton R, 2011, REV FINANC STUD, V24, P3250, DOI 10.1093/rfs/hhr073
+   Van Wincoop E., 2011, 17686 NBER
+NR 36
+TC 9
+Z9 9
+U1 2
+U2 18
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD NOV
+PY 2015
+VL 34
+SI SI
+BP 167
+EP 186
+DI 10.1016/j.najef.2015.09.001
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA CY5IA
+UT WOS:000366440100009
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Vortelinos, DI
+   Lakshmi, G
+AF Vortelinos, Dimitrios I.
+   Lakshmi, Geeta
+TI Market risk of BRIC Eurobonds in the financial crisis period
+SO INTERNATIONAL REVIEW OF ECONOMICS & FINANCE
+LA English
+DT Article
+DE BRIC Eurobonds; Risk; Jumps; Bond pricing; Financial crisis
+ID REALIZED VOLATILITY; INFORMATION-CONTENT; IMPLIED VOLATILITY; JUMPS;
+   STOCK; EXCHANGE; RETURN; CONTAGION; MODELS; FINITE
+AB The market risk of returns for BRIC Eurobonds has not been thoroughly analyzed via nonparametric estimation methods. The significance of risk and jumps is examined in a monthly sampling frequency. A detailed comparison upon significance of risk and jumps between BRIC Eurobonds is provided. Comparison concerns risk and jumps during the international financial crisis period: February 2007 up to February 2010. Among the ERIC countries, Chinese Eurobonds are the most significant in terms of both risk and jumps. The most significant estimator is the monthly Yang & Zhang range across the set of BRIC Eurobonds. The shorter the expiry period, the higher is the significance of risk and jumps. This is evident in all BRIC Eurobonds. Risk and jump estimates are higher for theoretical prices rather than for actual prices according to all risk and jump significance measures. (C) 2015 Elsevier Inc. All rights reserved.
+C1 [Vortelinos, Dimitrios I.; Lakshmi, Geeta] Lincoln Univ, Lincoln Business Sch, Lincoln, England.
+RP Vortelinos, DI (reprint author), Lincoln Univ, Lincoln Business Sch, Lincoln, England.
+EM dvortelinos@lincoln.ac.uk; glakshmi@lincoln.ac.uk
+OI Lakshmi, Geeta/0000-0002-8351-719X
+CR Afonso A, 2014, COMPUT STAT DATA AN, V76, P20, DOI 10.1016/j.csda.2013.09.028
+   Ait-Sahalia Y, 2013, J FINANC ECON, V109, P224, DOI 10.1016/j.jfineco.2013.02.018
+   Ait-Sahalia Y, 2012, J ECONOMETRICS, V168, P207, DOI 10.1016/j.jeconom.2011.12.004
+   Ait-Sahalia Y, 2011, ANN STAT, V39, P1689, DOI 10.1214/11-AOS873
+   Ait-Sahalia Y, 2009, ANN STAT, V37, P184, DOI 10.1214/07-AOS568
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   An BJ, 2014, J FINANC, V69, P2279, DOI 10.1111/jofi.12181
+   Andersen TG, 1998, INT ECON REV, V39, P885, DOI 10.2307/2527343
+   Andersen TG, 2001, J AM STAT ASSOC, V96, P42, DOI 10.1198/016214501750332965
+   Andersen TG, 2010, J APPL ECONOMET, V25, P233, DOI 10.1002/jae.1105
+   Atak A, 2013, ECON LETT, V120, P224, DOI 10.1016/j.econlet.2013.03.051
+   Bamdorff-Nielsen O. E., 2006, J FINANCIAL ECONOMET, V4, P1, DOI DOI 10.1093/JJFINEC/NBI022
+   Bandi FM, 2008, ECONOMET REV, V27, P163, DOI 10.1080/07474930701870461
+   Bandi FM, 2008, J ECONOMETRICS, V147, P34, DOI 10.1016/j.jeconom.2008.09.002
+   Bannouh K, 2013, N AM J ECON FINANC, V26, P535, DOI 10.1016/j.najef.2013.02.020
+   Barndorff-Nielsen OE, 2011, J ECONOMETRICS, V160, P204, DOI 10.1016/j.jeconom.2010.03.031
+   Bekiros SD, 2014, INT REV FINANC ANAL, V33, P58, DOI 10.1016/j.irfa.2013.07.007
+   Bollerslev T, 2013, J FINANC ECON, V108, P409, DOI 10.1016/j.jfineco.2013.01.002
+   Busch T, 2011, J ECONOMETRICS, V160, P48, DOI 10.1016/j.jeconom.2010.03.014
+   Byun SJ, 2013, J EMPIR FINANC, V23, P142, DOI 10.1016/j.jempfin.2013.05.006
+   Cakir MY, 2013, ECON MODEL, V32, P190, DOI 10.1016/j.econmod.2013.02.010
+   Clements MP, 2008, J EMPIR FINANC, V15, P729, DOI 10.1016/j.jempfin.2007.12.001
+   Eraker B, 2003, J FINANC, V58, P1269, DOI 10.1111/1540-6261.00566
+   Fang CR, 2014, INT REV ECON FINANC, V29, P330, DOI 10.1016/j.iref.2013.06.005
+   GARMAN MB, 1980, J BUS, V53, P67, DOI 10.1086/296072
+   GIOT P, 2004, J EMPIR FINANC, V11, P379, DOI DOI 10.1016/J.JEMPF
+   Goodliffe G, 2012, INT SPECT, V47, P1, DOI 10.1080/03932729.2012.733181
+   Hansen PR, 2008, ECONOMET REV, V27, P79, DOI 10.1080/07474930701853640
+   Henderson BJ, 2006, J FINANC ECON, V82, P63, DOI 10.1016/j.jfineco.2005.08.004
+   Illueca M, 2006, J FUTURES MARKETS, V26, P923, DOI 10.1002/fut.20220
+   Jacquier E, 2014, J FINANC ECONOMET, V12, P544, DOI 10.1093/jjfinec/nbt017
+   Jiang GJ, 2005, REV FINANC STUD, V18, P1305, DOI 10.1093/rfs/hhi027
+   Julius D., 2005, HARVARD INT REV, V26, P14
+   Lee BS, 2015, INT REV ECON FINANC, V35, P214, DOI 10.1016/j.iref.2014.10.001
+   Louzis DP, 2013, J FORECASTING, V32, P561, DOI 10.1002/for.2249
+   Martens M, 2007, J ECONOMETRICS, V138, P181, DOI 10.1016/j.jeconom.2006.05.019
+   MCCULLOCH JH, 1971, J BUS, V44, P19, DOI 10.1086/295329
+   MCCULLOCH JH, 1975, J FINANC, V30, P811, DOI 10.2307/2326860
+   PARKINSON M, 1980, J BUS, V53, P61, DOI 10.1086/296071
+   Santos J., 2010, INT REV FINANC, V10, P149
+   Satchell S.E., 1991, ANN APPL PROBAB, V1, P504, DOI DOI 10.1214/AOAP/1177005835
+   Seo SW, 2015, J BANK FINANC, V50, P106, DOI 10.1016/j.jbankfin.2014.09.010
+   Sevi B, 2015, ECON MODEL, V44, P243, DOI 10.1016/j.econmod.2014.10.026
+   Steinbock D, 2012, AM FOREIGN POLICY IN, V34, P34, DOI 10.1080/10803920.2012.653719
+   Tauchen G, 2011, J ECONOMETRICS, V160, P102, DOI 10.1016/j.jeconom.2010.03.023
+   Todorov V, 2011, J BUS ECON STAT, V29, P356, DOI 10.1198/jbes.2010.08342
+   Wang T, 2008, J FUTURES MARKETS, V28, P993, DOI 10.1002/fut.20347
+   Yang D, 2000, J BUS, V73, P477, DOI 10.1086/209650
+   Zhang L, 2005, J AM STAT ASSOC, V100, P1394, DOI 10.1198/016214505000000169
+   Zhang L, 2011, J ECONOMETRICS, V160, P33, DOI 10.1016/j.jeconom.2010.03.012
+   Zhu SP, 2015, APPL MATH COMPUT, V250, P920, DOI 10.1016/j.amc.2014.10.050
+NR 51
+TC 0
+Z9 0
+U1 1
+U2 11
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1059-0560
+EI 1873-8036
+J9 INT REV ECON FINANC
+JI Int. Rev. Econ. Financ.
+PD SEP
+PY 2015
+VL 39
+BP 295
+EP 310
+DI 10.1016/j.iref.2015.04.012
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA CS5WG
+UT WOS:000362148400021
+OA Green Accepted
+DA 2019-12-27
+ER

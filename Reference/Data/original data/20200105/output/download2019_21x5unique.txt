@@ -1,0 +1,399 @@
+
+PT J
+AU Choi, YN
+AF Choi, Youngna
+TI BORROWING CAPACITY, FINANCIAL INSTABILITY, AND CONTAGION
+SO INTERNATIONAL JOURNAL OF THEORETICAL AND APPLIED FINANCE
+LA English
+DT Article
+DE Agent-based model; borrowing capacity; contagion; financial instability;
+   flow of funds; systemic risk
+ID SYSTEMIC RISK
+AB We use the case of the 2007 United States subprime mortgage crisis to investigate the impact of borrowing capacity limitations on financial instability and contagion. We divide an economy into agents that interact via flow of funds and express the financial instability level of each agent as a function of time derivatives of its wealth, cash inflows, and borrowing capacity. We show that among these factors, the borrowing capacity, which is determined by other economic constraints, has the largest impact on financial instability. It is suggested that borrowing capacity limitations could even cause contagion through feedback loop formed by flow of funds. We use historical time series of the integrated macroeconomic accounts of the United Stated from 1960 to 2017 to verify our conjecture by quantifying the financial instability levels of the agents under different levels of borrowing capacity and how they affect one another during the period of the subprime mortgage crisis. Finally, the constraints of data collecting practice outside the United States in assessing borrowing capacity is addressed, accompanied by partial, yet. compatible, results of selected Eurozone countries.
+C1 [Choi, Youngna] Montlcair State Univ, Dept Math Sci, 1 Normal Ave, Montclair, NJ 07043 USA.
+RP Choi, YN (reprint author), Montlcair State Univ, Dept Math Sci, 1 Normal Ave, Montclair, NJ 07043 USA.
+EM choiy@montclair.edu
+FU Laboratory of Excellence on Financial Regulation ("Labex ReFi")
+   [ANR-10-LABX-0095]; French government [ANR-11-IDEX-0006-02]
+FX This work was achieved through the Laboratory of Excellence on Financial
+   Regulation ("Labex ReFi") under the reference ANR-10-LABX-0095. The work
+   has benefited from a French government support managed by the National
+   Research Agency (Agence Nationale de la Recherche -ANR) in the project
+   Investissements d'Avenir Paris Nouveaux Mondes (investments for the
+   future Paris-New Worlds) under the reference ANR-11-IDEX-0006-02.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Amini H, 2016, OPER RES, V64, P1109, DOI 10.1287/opre.2016.1540
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Board of Governnors of the Federal Reserve System, 2017, FEDERAL RESERVE B, V103, P10
+   Castellacci G, 2015, J BANK FINANC, V50, P400, DOI 10.1016/j.jbankfin.2014.05.013
+   Castellacci G, 2014, QUANT FINANC, V14, P1243, DOI 10.1080/14697688.2014.890737
+   Choi YN, 2018, RISKS, V6, DOI 10.3390/risks6030065
+   Choi Y, 2013, HANDBOOK ON SYSTEMIC RISK, P453
+   Choi YN, 2012, QUANT FINANC, V12, P1351, DOI 10.1080/14697688.2011.627880
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Gadanecz B., 2009, IFC B, V31, P365
+   Minsky H. P., 1992, 74 J LEV EC I
+   The Federal Reserve Bank of New York, 2018, Q REP HOUS DEBT CRED, pQ4
+NR 13
+TC 0
+Z9 0
+U1 0
+U2 0
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 0219-0249
+EI 1793-6322
+J9 INT J THEOR APPL FIN
+JI Int. J. Theor. Appl. Financ.
+PD FEB
+PY 2019
+VL 22
+IS 1
+SI SI
+AR 1850060
+DI 10.1142/S0219024918500607
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA HO8VL
+UT WOS:000461237200002
+OA Bronze
+DA 2019-12-27
+ER
+
+PT J
+AU Yang, J
+   Yu, ZL
+   Ma, J
+AF Yang, Jian
+   Yu, Ziliang
+   Ma, Jun
+TI China's financial network with international spillovers: A first look
+SO PACIFIC-BASIN FINANCE JOURNAL
+LA English
+DT Article
+DE China's financial system; Shadow banking; Systemic risk; Macroprudential
+   regulation; Financial network
+ID STOCK-MARKET; SHOCKS EVIDENCE; SYSTEMIC RISK; TRANSMISSION; CRISIS
+AB Using a modified spillover index approach from the perspective of financial shocks transmission, this study is the first to explore China's financial institution (FI) network after the global financial crisis, allowing for interactions with the financial sectors of four major global economies. We document that: (1) although banks still dominate China's financial sector, nonbank FIs also bear considerable influence; (2) the market-oriented large commercial banks generally play a more pronounced role than the four state-owned megabanks in transmitting financial shocks; (3) China's financial sector exerts noticeable influence on the global financial sector, particularly that of Japan; and (4) monetary policy measures dominate in determining the overall influence from other FIs to a particular FI while firm-specific factors dominate in determining the influence of a particular FI on other FIs. These findings have important policy implications.
+C1 [Yang, Jian] Univ Colorado, Sch Business, Ctr China Financial Res, Denver, CO 80202 USA.
+   [Yu, Ziliang] Nankai Univ, Sch Finance, Tianjin, Peoples R China.
+   [Ma, Jun] Tsinghua Univ, Ctr Finance & Dev, Beijing, Peoples R China.
+RP Yang, J (reprint author), Univ Colorado, Sch Business, Ctr China Financial Res, Denver, CO 80202 USA.
+EM jian.yang@ucdenver.edu; yuziliang@nankai.edu.cn;
+   maj@pbcsf.tsinghua.edu.cn
+OI Yu, Ziliang/0000-0002-7506-7707
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71571106]; Fundamental Research Funds for the
+   Central UniversitiesFundamental Research Funds for the Central
+   Universities [63182068]; National Social Science Foundation of China
+   [11ZD016]
+FX The authors thank Mark Liu, an anonymous referee, session participants
+   at the annual meetings of the 2018 China International Risk Forum and
+   2018 China International Conference in Finance, and seminar participants
+   at the People's Bank of China (PBOC) for their helpful comments and
+   suggestions. Part of the work was completed when Jian Yang was a
+   visiting fellow and Jun Ma was the Chief Economist at the Research
+   Bureau, whose hospitality is greatly acknowledged. Jun Ma is also a
+   member of the PBOC monetary policy committee. An earlier abridged
+   version of this paper was published in Chinese as a PBOC working paper
+   (No. 2017-4), titled "Transmission of Financial Shocks among Chinese
+   Financial Institutions: A Global Perspective (R) in which Yandong Jio
+   also participated. The views expressed in this paper are those of the
+   authors and do not refelect the official positions of PBOC. Yang
+   acknowledges the support of the National Natural Science Foundation of
+   China (71571106). Yu acknowledge financial support from the Fundamental
+   Research Funds for the Central Universities (No. 63182068). The project
+   is also support by National Social Science Foundation of China
+   (11&ZD016).
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2005, J FINANC ECON, V77, P57, DOI 10.1016/j.jfineco.2004.06.010
+   Allen F., 2009, WORKING PAPER
+   Allen F., 2012, 17828 NBER
+   Alpanda S, 2014, J INT MONEY FINANC, V47, P21, DOI 10.1016/j.jimonfin.2014.04.007
+   Ayyagari M, 2010, REV FINANC STUD, V23, P3048, DOI 10.1093/rfs/hhq030
+   Bailey W, 2011, J FINANC QUANT ANAL, V46, P1795, DOI 10.1017/S0022109011000433
+   Ballester L, 2016, J EMPIR FINANC, V38, P394, DOI 10.1016/j.jempfin.2016.01.011
+   Benoit S., 2013, FIN20141030 HEC PAR
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Berger AN, 2009, J BANK FINANC, V33, P113, DOI 10.1016/j.jbankfin.2007.05.016
+   Bessler DA, 2003, J INT MONEY FINANC, V22, P261, DOI 10.1016/S0261-5606(02)00076-1
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Carpenter J.N., 2015, 20957 NBER
+   Carpenter JN, 2017, ANNU REV FINANC ECON, V9, P233, DOI 10.1146/annurev-financial-110716-032333
+   Cetorelli N, 2012, J FINANC, V67, P1811, DOI 10.1111/j.1540-6261.2012.01773.x
+   Chen XJ, 2010, PAC-BASIN FINANC J, V18, P403, DOI 10.1016/j.pacfin.2010.04.003
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Hakim J.-H., 2012, 17780 NBER
+   Hao XC, 2014, PAC-BASIN FINANC J, V30, P207, DOI 10.1016/j.pacfin.2014.10.004
+   Helwege J, 2016, REV FINANC, V20, P1321, DOI 10.1093/rof/rfv045
+   Huang TH, 2017, PAC-BASIN FINANC J, V41, P93, DOI 10.1016/j.pacfin.2016.12.008
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Imai M, 2011, AM ECON J-MACROECON, V3, P155, DOI 10.1257/mac.3.1.155
+   IMF, 2011, GLOB EC PROSP POL CH
+   IMF BIS FSB, 2009, GUID ASS SYST IMP FI
+   Jach A, 2017, J EMPIR FINANC, V43, P115, DOI 10.1016/j.jempfin.2017.06.004
+   Jarrow RA, 2001, J FINANC, V56, P1765, DOI 10.1111/0022-1082.00389
+   Kamber G, 2013, J MONEY CREDIT BANK, V45, P127, DOI 10.1111/jmcb.12073
+   Kilian L, 2017, THEME MOD ECONOMET, P1, DOI 10.1017/9781108164818
+   Lee CC, 2013, J FINANC SERV RES, V44, P87, DOI 10.1007/s10693-012-0151-1
+   Li XD, 2019, PAC-BASIN FINANC J, V57, DOI 10.1016/j.pacfin.2018.10.003
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Pang K, 2016, J INT MONEY FINANC, V65, P195, DOI 10.1016/j.jimonfin.2016.03.001
+   Peek J, 1997, AM ECON REV, V87, P495
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Schnabl P, 2012, J FINANC, V67, P897, DOI 10.1111/j.1540-6261.2012.01737.x
+   Tobin D., 2018, 825 AS DEP BANK I
+   Yang J, 2006, J APPL ECONOM, V21, P727, DOI 10.1002/jae.889
+   Yang J, 2013, MANAGE SCI, V59, P2343, DOI 10.1287/mnsc.2013.1706
+   Yang L, 2019, PAC-BASIN FINANC J, V57, DOI 10.1016/j.pacfin.2019.06.016
+NR 44
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0927-538X
+EI 1879-0585
+J9 PAC-BASIN FINANC J
+JI Pac.-Basin Financ. J.
+PD DEC
+PY 2019
+VL 58
+AR UNSP 101222
+DI 10.1016/j.pacfin.2019.101222
+PG 30
+WC Business, Finance
+SC Business & Economics
+GA JU1AL
+UT WOS:000501410200015
+DA 2019-12-28
+ER
+
+PT J
+AU Dastkhan, H
+   Gharneh, NS
+AF Dastkhan, Hossein
+   Gharneh, Naser Shams
+TI Simulation of Contagion in the Stock Markets Using Cross-Shareholding
+   Networks: A Case from an Emerging Market
+SO COMPUTATIONAL ECONOMICS
+LA English
+DT Article
+DE Contagion; Systemic risk; Simulation; Financial networks; Null models
+AB In recent years, simulation of contagion in financial markets is one of the main concerns of the economic and finance researchers and policy makers in order to analyze the effects of different shocks on the contagion. In this paper, we introduce a simulation model to analyze the contagion in financial markets based on the cross-shareholding network of firms. In order to validate the proposed model, we investigate the results of a real dataset from an emerging market. According to different kinds of idiosyncratic and aggregate shocks to the system, we analyze the probability and the extent of contagion. Moreover, to study the effect of market structure, the results of different null models are compared with the real network. The results show that the proposed simulation model and the cross-shareholding network are effectively appropriate in the analysis of contagion and systemic risk in the financial systems. The results of null models indicate that the structural characteristics of the financial networks have significant role in the spread of shocks and financial crisis. The results also reveal that for the networks with homogeneity for degree and weights underestimates the number of infected firms and overestimates the loss percents.
+C1 [Dastkhan, Hossein; Gharneh, Naser Shams] AmirKabir Univ Technol, Dept Ind Engn & Management Syst, Tehran Polytech, Hafez St, Tehran, Iran.
+RP Gharneh, NS (reprint author), AmirKabir Univ Technol, Dept Ind Engn & Management Syst, Tehran Polytech, Hafez St, Tehran, Iran.
+EM hdastkhan@aut.ac.ir; nshams@aut.ac.ir
+RI Gharneh, Naser Shams/N-2851-2018
+OI Gharneh, Naser Shams/0000-0003-4936-7797
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Batiz-Zuk E, 2015, J FINANCIAL STABILIT
+   Battiston S, 2004, PHYSICA A, V338, P107, DOI 10.1016/j.physa.2004.02.031
+   Boginski V, 2006, COMPUT OPER RES, V33, P3171, DOI 10.1016/j.cor.2005.01.027
+   Caggiano G, 2014, J BANK FINANC, V47, P258, DOI 10.1016/j.jbankfin.2014.07.002
+   Chen TQ, 2017, TECHNOL ECON DEV ECO, V23, P22, DOI 10.3846/20294913.2015.1095808
+   Chen TQ, 2015, COMPUT ECON, V46, P519, DOI 10.1007/s10614-014-9475-2
+   Dastkhan H, 2016, INT J FINANC STUD, V4, DOI 10.3390/ijfs4030013
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Karimi F, 2016, COMPUT ECON, V47, P49, DOI 10.1007/s10614-014-9478-z
+   Levy-Carciente S, 2015, J BANK FINANC, V59, P164, DOI 10.1016/j.jbankfin.2015.05.008
+   Li HJ, 2014, PHYSICA A, V415, P525, DOI 10.1016/j.physa.2014.08.035
+   LIU X. F., 2012, ACCOUNTING FINANCE R, V1, P1, DOI DOI 10.5430/AFR.V1N2P1
+   Lorenz J, 2009, EUR PHYS J B, V71, P441, DOI 10.1140/epjb/e2009-00347-4
+   Ma YY, 2011, PHYSICA A, V390, P749, DOI 10.1016/j.physa.2010.10.042
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Moussa A., 2011, THESIS
+   Onnela JP, 2003, PHYSICA A, V324, P247, DOI 10.1016/S0378-4371(02)01882-4
+   Paltalidis N, 2015, J BANKING FINANCE
+   Park YS, 2003, JPN WORLD ECON, V15, P331, DOI 10.1016/S0922-1425(03)00019-7
+   Pecora N, 2015, PHYSICA A, V434, P1, DOI 10.1016/j.physa.2015.04.011
+   Smaga P., 2014, CONCEPT SYSTEMIC RIS
+NR 22
+TC 2
+Z9 2
+U1 5
+U2 6
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0927-7099
+EI 1572-9974
+J9 COMPUT ECON
+JI Comput. Econ.
+PD MAR
+PY 2019
+VL 53
+IS 3
+BP 1071
+EP 1101
+DI 10.1007/s10614-017-9781-6
+PG 31
+WC Economics; Management; Mathematics, Interdisciplinary Applications
+SC Business & Economics; Mathematics
+GA HO0UF
+UT WOS:000460619800008
+DA 2019-12-27
+ER
+
+PT J
+AU Trabelsi, N
+AF Trabelsi, Nader
+TI Dynamic and frequency connectedness across Islamic stock indexes, bonds,
+   crude oil and gold
+SO INTERNATIONAL JOURNAL OF ISLAMIC AND MIDDLE EASTERN FINANCE AND
+   MANAGEMENT
+LA English
+DT Article
+DE Sukuk; Systemic risk; Connectedness; Islamic indexes; Spectral
+   decomposition
+ID VOLATILITY SPILLOVERS; EQUITY; CONTAGION; MARKETS; CRISES
+AB Purpose - This paper aims to investigate the connectedness of Islamic Stock Markets in five regional financial systems, namely, the United States, the United Kingdom, Europe (EU), GCC (Gulf Cooperation Council) and APAC (Asia-Pacific Countries), and across different asset classes (i.e. bonds, gold and crude oil).
+   Design/methodology/approach - This methodology is inspired by Diebold and Yilmaz (2012) and Barunlik and Krehlik (2017) for performing dynamic variance decomposition network and for studying time-frequency dynamics of connectedness at different frequencies.
+   Findings - Results show that the nature of connectedness over the past decade is time-frequency dynamics. The decomposition of the total volatility spillovers is mostly dominated by the long-run component. Furthermore, dominant regions are the largest contributors of spillover index, with the lowest contribution in the system coming from the GCC market. Results also reveal a slightly higher volatility spillover index of Islamic than conventional equity indexes. Finally, the system that encompasses commodities and Islamic finance instruments, generates the much lower volatility spillover.
+   Originality/value - The findings have significant implications for portfolio managers who are interested in being able to predict asset returns, as well as for policymakers who are concerned with market stability.
+C1 [Trabelsi, Nader] Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Coll Econ & Adm Sci, Dept Finance & Investment, Riyadh, Saudi Arabia.
+   [Trabelsi, Nader] LARTIGE, Higher Inst Comp Sci & Management Kairouan, Sfax, Tunisia.
+RP Trabelsi, N (reprint author), Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Coll Econ & Adm Sci, Dept Finance & Investment, Riyadh, Saudi Arabia.; Trabelsi, N (reprint author), LARTIGE, Higher Inst Comp Sci & Management Kairouan, Sfax, Tunisia.
+EM nadertrabelsi2003@yahoo.fr
+CR Abdullah AM, 2016, BORSA ISTANB REV, V16, P219, DOI 10.1016/j.bir.2015.12.002
+   Aftab M, 2015, CHIN MANAG STUD, V9, P333, DOI 10.1108/CMS-07-2014-0120
+   Ahmet S., 2015, WORKING PAPER SERIES, V28
+   Barunik J., 2017, MEASURING FREQUENCY
+   Belke A, 2018, ECON SYST, V42, P3, DOI 10.1016/j.ecosys.2017.07.001
+   Charles A., 2015, RES INT BUS FINANC, P35
+   Charles A., 2011, INT C FRENCH FIN ASS
+   Dewandaru G, 2015, J MULTINATL FINANC M, V29, P115, DOI 10.1016/j.mulfin.2014.11.006
+   Dewandaru G, 2014, EMERG MARK REV, V19, P106, DOI 10.1016/j.ememar.2014.04.006
+   Diebold F.X., 2015, FINANCIAL MACROECONO
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Guyot A., 2012, EMERG MARK FINANC TR, V47, P24
+   Herwany A., 2013, GLOBAL J BUS RES, V7, P35
+   Ho CSF, 2014, PAC-BASIN FINANC J, V28, P110, DOI 10.1016/j.pacfin.2013.09.002
+   Hussin M.Y.M., 2012, LABUAN E J MUAMALAT, V6, P1
+   Kenourgios D, 2016, ECON MODEL, V57, P36, DOI 10.1016/j.econmod.2016.04.014
+   Khan A., 2014, INCEIF 15 MAL FIN AS
+   Majdoub J, 2014, N AM J ECON FINANC, V29, P452, DOI 10.1016/j.najef.2014.06.011
+   Mensi W, 2018, FINANC RES LETT, V25, P230, DOI 10.1016/j.frl.2017.10.032
+   Mensi W, 2016, INT REV ECON FINANC, V42, P257, DOI 10.1016/j.iref.2015.11.005
+   Merdad HJ, 2015, PAC-BASIN FINANC J, V34, P293, DOI 10.1016/j.pacfin.2015.04.001
+   Metadjer W., 2018, J ISLAMIC EC, V10, P285
+   Nagayev R, 2016, ENERG ECON, V58, P125, DOI 10.1016/j.eneco.2016.06.011
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Rizvi SAR, 2015, PAC-BASIN FINANC J, V34, P315, DOI 10.1016/j.pacfin.2015.04.002
+   Shaista A., 2013, J ISLAM FINANC, V2, P1
+   Tiwari AK, 2018, Q REV ECON FINANC, V70, P194, DOI 10.1016/j.qref.2018.05.001
+   Trabelsi N, 2017, RES INT BUS FINANC, V42, P727, DOI 10.1016/j.ribaf.2017.07.013
+   Wang GJ, 2016, INT REV ECON FINANC, V46, P55, DOI 10.1016/j.iref.2016.08.004
+   Wang GJ, 2016, FINANC RES LETT, V18, P255, DOI 10.1016/j.frl.2016.04.025
+   Zhang B, 2016, ENERG ECON, V53, P305, DOI 10.1016/j.eneco.2014.03.011
+NR 31
+TC 0
+Z9 0
+U1 0
+U2 0
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1753-8394
+EI 1753-8408
+J9 INT J ISLAMIC MIDDLE
+JI Int.J. Islamic Middle Eastern Finance Manag.
+PY 2019
+VL 12
+IS 3
+BP 306
+EP 321
+DI 10.1108/IMEFM-02-2018-0043
+PG 16
+WC Business, Finance; Management
+SC Business & Economics
+GA JT4DC
+UT WOS:000500940800001
+DA 2019-12-27
+ER
+
+PT J
+AU Sato, AH
+   Tasca, P
+   Isogai, T
+AF Sato, Aki-Hiro
+   Tasca, Paolo
+   Isogai, Takashi
+TI Dynamic Interaction Between Asset Prices and Bank Behavior: A Systemic
+   Risk Perspective
+SO COMPUTATIONAL ECONOMICS
+LA English
+DT Article
+DE Banking system; Capital adequacy ratio (CAR); Procyclicality;
+   Agent-based model; Financial market; Balance sheets
+AB We propose a simple model to simulate an interaction between banks and a financial market. In our model, banks are exposed to two sources of risks: market risk from their investments in assets external to the banking system and credit risk from lending in the interbank market. By and large, both risks increase during severe financial turmoil. In this scenario, the paper shows the conditions under which individual and the systemic defaults tend to coincide. This paper attempts to conduct a numerical simulation of banking ecosystems by using the actual values of financial items extracted from 89 Japanese banks' balance sheets. From this numerical simulation, we confirm two points: (1) when financial market prices decrease due to crashes in a trend-followers-dominant market, banks lose their net worth coincidentally. Thus, the capital adequacy ratio decreases synchronously, and any bank may not provide other banks with money through the interbank markets. (2) In a contrarians-dominant or contrarians-predominant market, we observed mean-reverting fluctuations in market prices. Bankruptcies happen asynchronously, and market prices eventually decrease. However, other banks may provide the bank suffering from a shortage of assets with money through the interbank markets. We further compare the characteristics of the banking system in four types of market modes.
+C1 [Sato, Aki-Hiro] Kyoto Univ, Grad Sch Informat, Sakyo Ku, Yoshida Honmachi, Kyoto 6068501, Japan.
+   [Tasca, Paolo] Deutsch Bundesbank, Res Ctr, Cent Off, Wilhelm Epstein Str 14, D-60431 Frankfurt, Germany.
+   [Isogai, Takashi] Bank Japan, Financial Syst & Bank Examinat Dept, Chuo Ku, 2-1-1 Nihonbashi Hongokucho, Tokyo 1030021, Japan.
+RP Sato, AH (reprint author), Kyoto Univ, Grad Sch Informat, Sakyo Ku, Yoshida Honmachi, Kyoto 6068501, Japan.
+EM sato.akihiro.5m@kyoto-u.ac.jp
+FU KAKENHIMinistry of Education, Culture, Sports, Science and Technology,
+   Japan (MEXT)Japan Society for the Promotion of ScienceGrants-in-Aid for
+   Scientific Research (KAKENHI) [26282089]; Japan Science and Technology
+   Agency (JST) PRESTO Grant, JapanJapan Science & Technology Agency (JST)
+   [JPMJPR1504]
+FX This work was financially supported by a Grants-in-Aid for Scientific
+   Research (KAKENHI) (B) (#26282089). This work is also partially
+   supported by Japan Science and Technology Agency (JST) PRESTO Grant No.
+   JPMJPR1504, Japan.
+CR [Anonymous], 1950512012 ISOIEC
+   Bank for International Settlements, 2015, CONS BANK STAT
+   Basel Committee on Banking Supervision, 2011, BANK INT SETTL RES P, P5
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Bonanno G, 2004, EUR PHYS J B, V38, P363, DOI 10.1140/epjb/e2004-00129-6
+   Bouchaud JP, 2000, THEORY FINANCIAL RIS
+   Elizalde A., 2007, INT J CENT BANK, V3, P87
+   Farmer JD, 2005, P NATL ACAD SCI USA, V102, P2254, DOI 10.1073/pnas.0409157102
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Helbing D, 2013, NATURE, V497, P51, DOI 10.1038/nature12047
+   Huang XQ, 2013, SCI REP-UK, V3, DOI 10.1038/srep01219
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Isogai T, 2014, J COMPLEX NETW, V2, P557, DOI 10.1093/comnet/cnu023
+   Micciche S, 2002, PHYSICA A, V314, P756, DOI 10.1016/S0378-4371(02)01187-1
+   Montagna M., 2013, 1826 KIEL
+   OWEN J, 1983, J FINANC, V38, P745, DOI 10.2307/2328079
+   Preis T, 2006, EUROPHYS LETT, V75, P510, DOI 10.1209/epl/i2006-10139-0
+   Sato AH, 2012, ADV MATER RES-SWITZ, V452-453, P469, DOI 10.4028/www.scientific.net/AMR.452-453.469
+   Sornette D, 2003, WHY STOCK MARKETS CRASH: CRITICAL EVENTS IN COMPLEX FINANCIAL SYSTEMS, P1
+   Tasca P, 2016, QUANT FINANC, V16, P1219, DOI 10.1080/14697688.2015.1123817
+NR 22
+TC 0
+Z9 0
+U1 0
+U2 0
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0927-7099
+EI 1572-9974
+J9 COMPUT ECON
+JI Comput. Econ.
+PD DEC
+PY 2019
+VL 54
+IS 4
+SI SI
+BP 1505
+EP 1537
+DI 10.1007/s10614-018-9792-y
+PG 33
+WC Economics; Management; Mathematics, Interdisciplinary Applications
+SC Business & Economics; Mathematics
+GA JU1OR
+UT WOS:000501447200013
+DA 2019-12-28
+ER

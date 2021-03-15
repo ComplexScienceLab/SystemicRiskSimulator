@@ -1,0 +1,399 @@
+
+PT J
+AU Andor, L
+AF Andor, Laszlo
+TI Risks of a slow-motion EMU reform
+SO EUROPEAN JOURNAL OF ECONOMICS AND ECONOMIC POLICIES-INTERVENTION
+LA English
+DT Article
+DE European Union; Great Recession; eurozone crisis; divergence; EMU
+   reform; fiscal capacity
+AB The article provides a critical assessment of how the Economic and Monetary Union was designed, implemented and reformed in the European Union and discusses the risks of a slow-motion reform process. It is argued that the fact that the euro area economy has recovered in the last few years has become a source of complacency and delays. In particular, powerful forces continue to downplay the importance of systemic reconstruction and the risk of disintegration remains high despite the relative tranquillity of markets in the 2014-2018 period. Finally, the article evaluates competing paradigms about the eurozone crisis and the pros and cons of fiscal capacity building.
+C1 [Andor, Laszlo] Corvinus Univ Budapest, Budapest, Hungary.
+RP Andor, L (reprint author), Corvinus Univ Budapest, Budapest, Hungary.
+CR Andor L., 2018, INTERECONOMICS, V53, P215
+   Bibow J., 2018, 911 LEV EC I
+   Brunnermeier M. K., 2016, EURO BATTLE IDEAS
+   Dullien S., 2014, EUROPEAN UNEMPLOYMEN
+   Eichengreen B., 2018, CONVERSATION
+   Gros D, 2015, REINSURANCE NATL UNE
+   Legrain P., 2014, EUROPEAN SPRING WHY
+   Mody A., 2018, EUROTRAGEDY DRAMA 9
+   Pisani-Ferry J., 2018, VOX CEPR POLICY 1002
+   Sandbu M., 2016, EUROPES ORPHAN FUTUR
+   Stiglitz J. E., 2017, EURO COMMON CURRENCY
+   Watt A, 2017, DEEPENING EMU COMMIS
+   Wren-Lewis Simon, 2016, INTERECONOMICS, V51, P20
+   Wyplosz C., 2014, EC MARCHE J APPL EC, VXXXIII, P1
+NR 14
+TC 0
+Z9 0
+U1 1
+U2 1
+PU EDWARD ELGAR PUBLISHING LTD
+PI CHELTENHAM
+PA THE LYPIATTS, 15 LANSDOWN RD, CHELTENHAM, GLOS GL50 2JA, ENGLAND
+SN 2052-7764
+EI 2052-7772
+J9 EUR J ECON ECON POLI
+JI Eur. J. Econ. Econ. J. Policy-Interv.
+PD SEP
+PY 2019
+VL 16
+IS 2
+BP 226
+EP 237
+DI 10.4337/ejeep.2019.02.07
+PG 12
+WC Economics
+SC Business & Economics
+GA IX6RB
+UT WOS:000485810900007
+DA 2019-12-28
+ER
+
+PT J
+AU Rimsaite, L
+AF Rimsaite, Laura
+TI Corruption risk mitigation in energy sector: Issues and challenges
+SO ENERGY POLICY
+LA English
+DT Article
+DE Corruption; Energy; Public sector; Competition; Risk assessment;
+   Undertakings
+AB Background of the research is that corruption issues arising in the energy sector strongly depends on the location of the resources as well as the monopolistic nature of the undertakings or political decisions. The participation at the public procurement tenders result the information exchange between the competitors therefore lead to the market closure and increased prices for the end-users. Enforcement of anti-corruption laws have risen, including the imposition of huge fines for the enterprises, and prison sentences for offending corporate executives. The purpose of this article is to analyse and evaluate the factors resulting corruption actions in the energy sector and to reveal the intercourse between the competition law regulation and corruption regulation. The data collection, systemic review and other methods were used. Key findings reveal that corruption occurs due to the specifics of the sector as the resource location, politics, and public procurement. Significance of this research is high due to increased impact of the energy resources to daily life and the monopolistic undertakings resulting high prices to the consumers. Recommendations to minimise the corruption probability highlights the importance of the increased level of transparency and prevention mechanisms especially in the vulnerable areas.
+C1 [Rimsaite, Laura] Lithuanian Law Inst, Ankstoji Str 1A, LT-01109 Vilnius, Lithuania.
+RP Rimsaite, L (reprint author), Lithuanian Law Inst, Ankstoji Str 1A, LT-01109 Vilnius, Lithuania.
+EM rimsaitel@gmail.com
+CR [Anonymous], 2006, ANTICORRUPTION HDB B
+   Banks F. E., 2007, WORLD SCI SERIES ENE, V2
+   Bellis V. B., 2010, COMPETITION LAW EURO
+   Cameron Peter D., 2007, COMPETITION ENERGY M
+   Campos E., 2007, MANY FACES CORRUPTIO
+   Cooney J. P., 1998, NW MIN ASS ANN INT C
+   Coppens F., 2004, NATL BANK BELGIUM WO
+   Foster G. D., 2001, VITAL SPEECH DAY, V137, P361
+   Horizontal Cooperation guidelines, 2011, COMM COMM GUID APPL
+   International Energy Agency, 2016, WORLD EN OUTL
+   Jones Ch, 2012, EU ENERGY LAW
+   Kaiser Gordon, 2013, ENERGY L J, V34, P193
+   Lovei L., 2007, PUBLIC POLICY PRIVAT
+   Marques A., 2011, EXTERNAL DIMENSION S
+   Nejezchleb K., 2014, PROSECUTING CARTELS
+   Neuhoff K. K., 2004, UTI POLICY, V12
+   Nikpay A., 2007, EC LAW COMPETITION
+   Opinion, 2015, OP EUR EC SOC COMM F
+   Pieth M., 1999, MIDDLE E EXECUTIVE R, V22, P8
+   Rothkopf M., 2007, ELECT J, V20, P1040
+   Sandholtz W, 2000, INT STUD QUART, V44, P31, DOI 10.1111/0020-8833.00147
+   Spector Bertram I., 2005, FIGHTING CORRUPTION
+   Susanne Nies, 2008, OIL GAS DELIVERY EUR
+   Talus K., 2011, ENERGY ENV LAW POLIC, V18
+   Thomas SD, 2006, ENERGY, V31, P788, DOI 10.1016/j.energy.2005.02.012
+   Tidikis R., 2003, SOCIALINIQ MOKSLQ TY
+   Transparency International Report, 2014, TRANSP CORP REP ASS
+   Vogl F., 2000, TRANSPARENCY INT CAN
+   Woo CK, 2006, ENERGY, V31, P747, DOI 10.1016/j.energy.2005.03.002
+NR 29
+TC 2
+Z9 2
+U1 1
+U2 4
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0301-4215
+EI 1873-6777
+J9 ENERG POLICY
+JI Energy Policy
+PD FEB
+PY 2019
+VL 125
+BP 260
+EP 266
+DI 10.1016/j.enpol.2018.10.066
+PG 7
+WC Economics; Energy & Fuels; Environmental Sciences; Environmental Studies
+SC Business & Economics; Energy & Fuels; Environmental Sciences & Ecology
+GA HI9ER
+UT WOS:000456758600025
+DA 2019-12-28
+ER
+
+PT J
+AU Wang, XY
+   Liu, HF
+   Huang, SP
+   Lucey, B
+AF Wang, Xinya
+   Liu, Huifang
+   Huang, Shupei
+   Lucey, Brian
+TI Identifying the multiscale financial contagion in precious metal markets
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article
+DE Precious metals; Financial contagion; Multiscale
+ID WAVELET-BASED APPROACH; STOCK-MARKET; RISK-MANAGEMENT; TIME; VOLATILITY;
+   OIL; COHERENCE; RETURNS; GUIDE
+AB Precious metals matter to investors for their risk aversion and diversification potential. The aim of this paper is to examine the financial contagion from January 2000 to May 2018 in precious metal markets (gold, silver, platinum, and palladium) on different time scales by combining the wavelet-based approach and the GARCH-EVT-based value-at-risk (VaR) model. The results show that financial contagion existed in these four precious metal markets at all time scales. Gold and silver had the stronger contagion impact, and they had a unidirectional contagion effect on the other three precious metal markets at all time scales. Platinum had a relatively weak contagion impact, and there was not a contagion effect from platinum to gold and silver at some time scales. Palladium had the weakest contagion impact on other precious metals for most time scales, especially on gold. Moreover, a bidirectional financial contagion existed in all the precious markets when the time scales are 16 days and 32 days. However, no evidence of the financial contagion among these four precious metal markets during the extreme risk period was found for all time scales. These results also have potentially important implications in terms of risk management for portfolios that include precious metals.
+C1 [Wang, Xinya; Liu, Huifang; Huang, Shupei] China Univ Geosci, Sch Econ & Management, Beijing 100083, Peoples R China.
+   [Wang, Xinya; Huang, Shupei] Minist Land & Resources, Key Lab Carrying Capac Assessment Resource & Envi, Beijing 100083, Peoples R China.
+   [Lucey, Brian] Trinity Coll Dublin, Trinity Business Sch, Dublin 2, Ireland.
+RP Liu, HF (reprint author), China Univ Geosci, Sch Econ & Management, Beijing 100083, Peoples R China.
+EM ddliuhuifang@163.com
+OI Lucey, Brian/0000-0002-4052-8235
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [41801106]
+FX This research was supported by the National Natural Science Foundation
+   of China (Grant no. 41801106).
+CR Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   BALKEMA AA, 1974, ANN PROBAB, V2, P792, DOI 10.1214/aop/1176996548
+   Batten JA, 2015, APPL ECON LETT, V22, P466, DOI 10.1080/13504851.2014.950789
+   Berger T, 2015, PHYSICA A, V436, P338, DOI 10.1016/j.physa.2015.05.053
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Calvo S., 1996, PRIVATE CAPITAL FLOW, P1
+   Christoffersen P. F., 2001, INT ECON REV, V39, P841
+   Crowley PM, 2007, J ECON SURV, V21, P207, DOI 10.1111/j.1467-6419.2006.00502.x
+   Dar A. B, 2017, APPL ECON, V49, P1
+   Daskalaki C, 2011, J BANK FINANC, V35, P2606, DOI 10.1016/j.jbankfin.2011.02.022
+   Demiralay S, 2014, N AM J ECON FINANC, V30, P183, DOI 10.1016/j.najef.2014.10.002
+   ENGLE RF, 1987, ECONOMETRICA, V55, P391, DOI 10.2307/1913242
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gallegati M, 2012, COMPUT STAT DATA AN, V56, P3491, DOI 10.1016/j.csda.2010.11.003
+   Gencay R., 2002, WAVE RANDOM MEDIA, V12, P399, DOI DOI 10.1088/0959-7174/12/3/701
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Grinsted A, 2004, NONLINEAR PROC GEOPH, V11, P561, DOI 10.5194/npg-11-561-2004
+   Hammoudeh S, 2013, N AM J ECON FINANC, V25, P318, DOI 10.1016/j.najef.2012.06.012
+   Hillier D, 2006, FINANC ANAL J, V62, P98, DOI 10.2469/faj.v62.n2.4085
+   Holton G. A., 2003, VALUE AT RISK THEORY
+   Hon M. T., 2007, J INT FINANC MARK I, V17, P213, DOI DOI 10.1016/J.INTFIN.2005.08.005
+   Huang SP, 2016, ENERG ECON, V59, P70, DOI 10.1016/j.eneco.2016.07.025
+   JARQUE CM, 1987, INT STAT REV, V55, P163, DOI 10.2307/1403192
+   Jorion P., 1996, FINANCIAL ANAL J, V52, P47, DOI DOI 10.2469/faj.v52.n6.2039
+   Karmakar M, 2015, INT REV ECON FINANC, V35, P1, DOI 10.1016/j.iref.2014.09.001
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kupiec P.H., 1995, J DERIV, V3, P73, DOI DOI 10.3905/jod.1995.407942
+   Lucey BM, 2015, APPL ECON LETT, V22, P35, DOI 10.1080/13504851.2014.920471
+   Marimoutou V, 2009, ENERG ECON, V31, P519, DOI 10.1016/j.eneco.2009.02.005
+   McNeil A. J., 2000, J EMPIR FINANC, V7, P271, DOI DOI 10.1016/S0927-5398(00)00012-8
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   PICKANDS J, 1975, ANN STAT, V3, P119
+   Reboredo JC, 2014, INT REV ECON FINANC, V29, P145, DOI 10.1016/j.iref.2013.05.014
+   Roy RP, 2017, ECON MODEL, V67, P368, DOI 10.1016/j.econmod.2017.02.019
+   Rua A, 2009, J EMPIR FINANC, V16, P632, DOI 10.1016/j.jempfin.2009.02.002
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Torrence C, 1998, B AM METEOROL SOC, V79, P61, DOI 10.1175/1520-0477(1998)079<0061:APGTWA>2.0.CO;2
+   Vacha L, 2012, ENERG ECON, V34, P241, DOI 10.1016/j.eneco.2011.10.007
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+   ZAKOIAN JM, 1994, J ECON DYN CONTROL, V18, P931, DOI 10.1016/0165-1889(94)90039-6
+   Zhou ZB, 2018, ECON MODEL, V72, P333, DOI 10.1016/j.econmod.2018.02.010
+NR 42
+TC 0
+Z9 0
+U1 17
+U2 20
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD MAY
+PY 2019
+VL 63
+BP 209
+EP 219
+DI 10.1016/j.irfa.2019.04.003
+PG 11
+WC Business, Finance
+SC Business & Economics
+GA HZ7JT
+UT WOS:000469030800017
+DA 2019-12-27
+ER
+
+PT J
+AU Kolari, JW
+   Lopez-Iturriaga, FJ
+   Sanz, IP
+AF Kolari, James W.
+   Lopez-Iturriaga, Felix J.
+   Pastor Sanz, Ivan
+TI Predicting European bank stress tests: Survival of the fittest
+SO GLOBAL FINANCE JOURNAL
+LA English
+DT Article
+DE Banking; Early warning system; Financial condition; Systemic risk;
+   Stress test
+ID SUPPORT VECTOR MACHINES; NEURAL-NETWORKS; BANKRUPTCY PREDICTION;
+   DISCRIMINANT-ANALYSIS; FINANCIAL RATIOS; CREDIT RISK; ENSEMBLE;
+   LIBERALIZATION; CLASSIFIERS; REGRESSION
+AB This paper tests the hypothesis that stress tests are primarily a function of the fundamental financial condition and operating environment of individual banks, rather than alternative adverse economic and financial scenarios imposed by regulators. We develop a novel early warning system based on multiple strategy ensemble methods to predict whether European banks pass stress tests in 2010, 2011 and 2014. The model is able to identify over 98% of failing and passing banks in the training subsample and predict about 90% of banks in the test validation sample. Further analyses of predictor importance and robustness compared to other competing model approaches are conducted. Our evidence supports the conclusion that, regardless of different macroeconomic scenarios, surviving stress tests depends largely on the underlying risk dimensions of individual banks.
+C1 [Kolari, James W.] Texas A&M Univ, Dept Finance, Mays Business Sch, College Stn, TX 77843 USA.
+   [Lopez-Iturriaga, Felix J.; Pastor Sanz, Ivan] Univ Valladolid, Sch Business & Econ, Avda Valle Esgueva 6, E-47011 Valladolid, Spain.
+   [Lopez-Iturriaga, Felix J.] NRU Higher Sch Econ, Moscow, Russia.
+RP Kolari, JW (reprint author), Texas A&M Univ, Dept Finance, Mays Business Sch, College Stn, TX 77843 USA.
+EM j-kolari@tamu.edu; flopez@eco.uva.es; ivan.pastor@alumnos.uva.es
+RI Kolari, James/R-2498-2019
+CR Acharya V. V., 2009, RESTORING FINANCIAL, P283
+   Acharya V, 2014, J MONETARY ECON, V65, P36, DOI 10.1016/j.jmoneco.2014.04.014
+   Adrian T., 2011, 17454 NBER
+   Aghion P, 2010, J MONETARY ECON, V57, P246, DOI 10.1016/j.jmoneco.2010.02.005
+   Alfaro R., 2009, BIS Q REV, P29
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   ALTMAN EI, 1994, J BANK FINANC, V18, P505, DOI 10.1016/0378-4266(94)90007-8
+   Angelini E, 2008, Q REV ECON FINANC, V48, P733, DOI 10.1016/j.qref.2007.04.001
+   Atiya AF, 2001, IEEE T NEURAL NETWOR, V12, P929, DOI 10.1109/72.935101
+   Beck T, 2008, J MONEY CREDIT BANK, V40, P1379, DOI 10.1111/j.1538-4616.2008.00164.x
+   Begley J., 1996, REV ACCOUNT STUD, V1, P267, DOI DOI 10.1007/BF00570833
+   Bekaert G, 2005, J FINANC ECON, V77, P3, DOI 10.1016/j.jfineco.2004.05.007
+   Beltratti A, 2001, WORKING PAPER
+   Borio C, 2014, J FINANC STABIL, V12, P3, DOI 10.1016/j.jfs.2013.06.001
+   Breiman L, 1984, CLASSIFICATION REGRE
+   Breuer T, 2009, INT J CENT BANK, V5, P205
+   Chan-Lau J. A., 2010, FINANC MKTS I INSTRU, V19, P355, DOI DOI 10.2139/SSRN.1995499)
+   Cihak M, 2007, 0759 INT MON FUND
+   Claessens S, 2001, J BANK FINANC, V25, P891, DOI 10.1016/S0378-4266(00)00102-3
+   Conover W. J, 1980, PRACTICAL NONPARAMET
+   Covas FB, 2014, INT J FORECASTING, V30, P691, DOI 10.1016/j.ijforecast.2013.11.003
+   Demekas D. G, 2015, WP15146 INT MON FUND
+   Demsar J, 2006, J MACH LEARN RES, V7, P1
+   Drehmann Mathias, 2011, 355 BIS
+   Ecer F, 2013, EKONOMSKA
+   Espinoza RA, 2010, IMF WORKING PAPERS, V10, P224, DOI DOI 10.5089/9781455208890.001
+   Fethi MD, 2010, EUR J OPER RES, V204, P189, DOI 10.1016/j.ejor.2009.08.003
+   Foglia A, 2009, INT J CENT BANK, V5, P9
+   Freund Y., 1996, Machine Learning. Proceedings of the Thirteenth International Conference (ICML '96), P148
+   Glasserman P, 2016, J ALTERN INVEST, V18, P82, DOI 10.3905/jai.2016.18.4.082
+   Lopez CG, 2014, REV CONTAB, V17, P58, DOI 10.1016/j.rcsar.2013.08.004
+   Hand DJ, 2001, MACH LEARN, V45, P171, DOI 10.1023/A:1010920819831
+   Henry PB, 2003, AM ECON REV, V93, P91, DOI 10.1257/000282803321946868
+   Hsu C. W., 2001, PRACTICAL GUIDE SUPP
+   Huang Z, 2004, DECIS SUPPORT SYST, V37, P543, DOI 10.1016/S0167-9236(03)00086-1
+   Hyun J, 2016, CONTEMP ECON POLICY, V34, P729, DOI 10.1111/coep.12174
+   International Monetary Fund, 2016, FIN SYST SOUNDN
+   Jones M. T., 2004, 04127 INT MONT FUND
+   KAHNEMAN D, 1972, COGNITIVE PSYCHOL, V3, P430, DOI 10.1016/0010-0285(72)90016-3
+   Kapinos P., 2015, WORKING PAPER SERIES, V2015-07
+   Kapinos P, 2016, J FINANC SERV RES, V49, P229, DOI 10.1007/s10693-015-0228-8
+   Kim KJ, 2003, NEUROCOMPUTING, V55, P307, DOI 10.1016/S0925-2312(03)00372-2
+   Kim MJ, 2010, EXPERT SYST APPL, V37, P3373, DOI 10.1016/j.eswa.2009.10.012
+   KING RG, 1993, Q J ECON, V108, P717, DOI 10.2307/2118406
+   Kohavi R., 1995, IJCAI-95. Proceedings of the Fourteenth International Joint Conference on Artificial Intelligence, P1137
+   Kraft E, 2007, J FINANCIAL STABILIT, V2, P312
+   Kumar PR, 2007, EUR J OPER RES, V180, P1, DOI 10.1016/j.ejor.2006.08.043
+   Lelyveld I, 2009, INT J CENT BANK, V5, P1
+   Lim K. G, 2015, GLOBAL EC FINANCE J, V8, P1
+   Lin WY, 2012, IEEE T SYST MAN CY C, V42, P421, DOI 10.1109/TSMCC.2011.2170420
+   Loayza NV, 2006, J MONEY CREDIT BANK, V38, P1051, DOI 10.1353/mcb.2006.0060
+   Mager F, 2009, J RISK MODEL VALIDAT, V3, P27, DOI 10.21314/JRMV.2009.044
+   Martin D., 1977, J BANK FINANC, V1, DOI [DOI 10.1016/0378-4266(77)90022-X, 10.1016/0378-4266(77)90022-X]
+   Martinez I., 1996, INTELLIGENT SYSTEMS, P169
+   Miguel L. J., 1993, P 3 INT WORKSH ART I
+   Nanni L, 2009, EXPERT SYST APPL, V36, P3028, DOI 10.1016/j.eswa.2008.01.018
+   Nkusu M., 2011, 11161 INT MONT FUND
+   OHLSON JA, 1980, J ACCOUNTING RES, V18, P109, DOI 10.2307/2490395
+   Onder S, 2016, PROC ECON FINANC, V38, P17, DOI 10.1016/S2212-5671(16)30173-3
+   Paleologo G, 2010, EUR J OPER RES, V201, P490, DOI 10.1016/j.ejor.2009.03.008
+   Paliwal M, 2009, EXPERT SYST APPL, V36, P2, DOI 10.1016/j.eswa.2007.10.005
+   Papadimitriou T, 2013, INT J COMPUT ECON EC, V3, P83, DOI 10.1504/IJCEE.2013.056267
+   Petrella G, 2013, J BANK FINANC, V37, P5406, DOI 10.1016/j.jbankfin.2013.01.005
+   Platt JC, 1999, ADVANCES IN KERNEL METHODS, P185
+   Quagliariello M., 2009, STRESS TESTING BANKI
+   Ratha A, 2014, CONTEMP ECON POLICY, V32, P862, DOI 10.1111/coep.12057
+   Segoviano B. M., 2009, 094 INT MON FUND
+   Sorge M., 2004, 165 BIS
+   Sun J, 2011, EXPERT SYST APPL, V38, P9305, DOI 10.1016/j.eswa.2011.01.042
+   Tay FEH, 2001, OMEGA-INT J MANAGE S, V29, P309, DOI 10.1016/S0305-0483(01)00026-3
+   Tsai CF, 2008, EXPERT SYST APPL, V34, P2639, DOI 10.1016/j.eswa.2007.05.019
+   Tu JV, 1996, J CLIN EPIDEMIOL, V49, P1225, DOI 10.1016/S0895-4356(96)00002-9
+   Twala B, 2010, EXPERT SYST APPL, V37, P3326, DOI 10.1016/j.eswa.2009.10.018
+   Valencia F, 2008, 08224 INT MONT FUND, V08/224
+   Vellido A, 1999, EXPERT SYST APPL, V17, P51, DOI 10.1016/S0957-4174(99)00016-0
+   Virolainen K., 2004, 18 BANK FINL
+   Wang G, 2012, KNOWL-BASED SYST, V26, P61, DOI 10.1016/j.knosys.2011.06.020
+   Welch M, 2012, FEDERAL RESERVE BOAR, V2012-49
+   West D, 2005, COMPUT OPER RES, V32, P2543, DOI 10.1016/j.cor.2004.03.017
+   Zhang DF, 2010, EXPERT SYST APPL, V37, P7838, DOI 10.1016/j.eswa.2010.04.054
+   Zhang ZC, 2016, CONTEMP ECON POLICY, V34, P250, DOI 10.1111/coep.12105
+NR 81
+TC 1
+Z9 1
+U1 3
+U2 10
+PU JAI PRESS INC
+PI STAMFORD
+PA 100 PROSPECT ST, PO BOX 811, STAMFORD, CT 06901 USA
+SN 1044-0283
+EI 1873-5665
+J9 GLOB FINANC J
+JI Glob. Financ. J.
+PD FEB
+PY 2019
+VL 39
+SI SI
+BP 44
+EP 57
+DI 10.1016/j.gfj.2018.01.015
+PG 14
+WC Business, Finance
+SC Business & Economics
+GA HG4PU
+UT WOS:000454958200009
+DA 2019-12-28
+ER
+
+PT J
+AU Schumacher, D
+AF Schumacher, Dieter
+TI The integration of international financial markets: an attempt to
+   quantify contagion in an input-output-type analysis
+SO ECONOMIC SYSTEMS RESEARCH
+LA English
+DT Article
+DE Financial crises; international capital linkages; input-output analysis
+AB The increasing integration of international financial markets means that credit defaults in one country have to be covered by creditors in other countries. If the principle of creditor liability were applied systematically, the financial losses incurred by the financial institution that provided the credit and is thus directly affected by the default would be 'passed on' through its domestic and foreign shareholders and debt holders, as well as their creditors, to the original savers. In this paper, this contagion effect will be estimated by taking international capital linkages into account. Analogously to an input-output analysis of inter-industry linkages, savings used for investments in one country are traced back to the countries from which the funds originated. This also reveals the important role of international financial centers, which essentially serve as distributors of investment risks, while the financial losses are ultimately borne by larger countries with higher levels of savings.
+C1 [Schumacher, Dieter] DIW Berlin, Dept Int Econ, Berlin, Germany.
+   [Schumacher, Dieter] Europe Univ Viadrina, Dept Econ, Frankfurt, Oder, Germany.
+RP Schumacher, D (reprint author), DIW Berlin, Dept Int Econ, Berlin, Germany.; Schumacher, D (reprint author), Europe Univ Viadrina, Dept Econ, Frankfurt, Oder, Germany.
+EM dschumacher@diw.de
+CR Gourinchas PO, 2012, J INT ECON, V88, P266, DOI 10.1016/j.jinteco.2012.05.008
+   Klein L.R., 1983, LECT ECONOMETRICS
+   Kubelec Ch., 2010, 384 BANK ENGL
+   Leontief W., 1993, ECON SYST RES, V5, P225, DOI DOI 10.1080/09535319300000019
+   Milesi-Ferretti G.M., 2010, 10247 IMF
+   Schumann H., 2013, DER TAGESSPIEGEL
+   Stone R., 1966, REV INCOME WEALTH, V12, P1, DOI [DOI 10.1111/J.1475-4991.1966.TB00709.X, 10.1111/j.1475-4991.1966.tb00709.x]
+   Tsujimura K., 2003, ECON SYST RES, V15, P51, DOI [10.1080/0953531032000056936, DOI 10.1080/0953531032000056936]
+   Tsujimura M, 2011, ECON SYST RES, V23, P1, DOI 10.1080/09535314.2010.523414
+   Upper C., 2002, 0902 DTSCH BUND EC R
+NR 10
+TC 1
+Z9 1
+U1 1
+U2 1
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0953-5314
+EI 1469-5758
+J9 ECON SYST RES
+JI Econ. Syst. Res.
+PD JUL 3
+PY 2019
+VL 31
+IS 3
+BP 345
+EP 360
+DI 10.1080/09535314.2018.1517084
+PG 16
+WC Economics
+SC Business & Economics
+GA IT4PR
+UT WOS:000482843400004
+OA Bronze, Green Published
+DA 2019-12-27
+ER

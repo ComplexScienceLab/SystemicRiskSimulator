@@ -1,0 +1,490 @@
+
+PT J
+AU Andries, AM
+   Fischer, AM
+   Yesin, P
+AF Andries, Alin Marius
+   Fischer, Andreas M.
+   Yesin, Pinar
+TI The asymmetric effect of international swap lines on banks in emerging
+   markets
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Swap lines; Foreign currency loans; Bank stocks; Emerging markets
+ID SYSTEMIC RISK; FOREIGN BANKS; HOUSEHOLDS
+AB This paper investigates the effect of international swap lines on stock returns using data from banks in emerging markets. The analysis first shows that swap lines by the Swiss National Bank (SNB) had a positive impact on bank stocks in Central and Eastern Europe. It then highlights the importance of individual bank characteristics in identifying the asymmetric effect of swap lines on bank stocks. Bank level evidence suggests that stock prices of local and less-well capitalized banks as well as banks with high foreign currency exposures and high reliance on short-term funding responded more strongly to SNB swap lines. This new evidence is.consistent with the view that swap lines not only enhanced market liquidity but also reduced risks associated with micro-prudential issues. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Andries, Alin Marius] Alexandru Ioan Cuza Univ, Fac Econ & Business Adm, 22th Carol 1 Blvd, Iasi 700505, Romania.
+   [Fischer, Andreas M.; Yesin, Pinar] Swiss Natl Bank, CH-8022 Zurich, Switzerland.
+   [Fischer, Andreas M.] CEPR, CH-8022 Zurich, Switzerland.
+RP Andries, AM (reprint author), Alexandru Ioan Cuza Univ, Fac Econ & Business Adm, 22th Carol 1 Blvd, Iasi 700505, Romania.
+EM alin.andries@uaic.ro; andreas.fischer@snb.ch; pinar.yesin@snb.ch
+RI Andries, Alin Marius/B-5980-2011
+OI Andries, Alin Marius/0000-0002-4415-4197
+FU Romanian National Authority for Scientific Research and Innovation, CNCS
+   - UEFISCDI [PN-II-RU-TE-2014-4-0443]
+FX This paper was previously circulated under the title "The impact of
+   international swap lines on stock returns in emerging markets". We
+   thank, Renee Adams, Martin Brown, Gaston Gelos, Yesol Huh, Nadia
+   Massoud, Steven Ongena, Angelo Ranaldo, seminar participants at the
+   Swiss National Bank, IMF, University of New South Wales and the
+   University of St. Gallen as well as participants at presentations at
+   Second The Yale Program on Financial Stability (YPFS) Annual Conference,
+   New Haven; the 30th Annual Congress of the European Economic
+   Association, Mannheim; SNB-BIS-CEPR-FRBD Conference "Spillovers of
+   conventional and unconventional monetary policy: The role of real and
+   financial linkages", Zurich; 2015 FIRN "The Art of Finance" Annual
+   Conference, Palm Cove, Australia; 8th Edition International Risk
+   Management Conference, Luxembourg; The 13th INFINITI Conference on
+   International Finance, Ljubljana; 2015 Romanian Financial Supervisory
+   Authority Conference, Bucharest; 2015 Congress of the Swiss Society of
+   Economics and Statistics, Basel; 2016 Eastern Finance Association Annual
+   Meeting, Baltimore; 33rd International Symposium on Money, Banking and
+   Finance, Clermont-Ferrand; ERMAS 2016, Timiioara; for helpful comments.
+   We are grateful to the editor, Gary Gorton, and an anonymous referee for
+   their helpful comments and suggestions. Andries gratefully acknowledge
+   the financial support from the Romanian National Authority for
+   Scientific Research and Innovation, CNCS - UEFISCDI, project number
+   PN-II-RU-TE-2014-4-0443.
+CR Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Aizenman J, 2010, INT REV ECON FINANC, V19, P353, DOI 10.1016/j.iref.2009.10.009
+   Alfaro Laura, 2014, 15016 HARV BUS SCH
+   Altunbas Y., 2011, 1394 EUR CENTR BANK, V1394
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   Auer R, 2011, FED RESERVE BANK ST, V93, P409
+   Baba N., 2010, BIS Q REV, P29
+   Basso HS, 2011, J BANK FINANC, V35, P794, DOI 10.1016/j.jbankfin.2010.11.018
+   Bauer MD, 2014, J INT MONEY FINANC, V44, P24, DOI 10.1016/j.jimonfin.2013.12.007
+   BECK N, 1995, AM POLIT SCI REV, V89, P634, DOI 10.2307/2082979
+   Beer C, 2010, J BANK FINANC, V34, P2198, DOI 10.1016/j.jbankfin.2010.02.008
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Bertrand M, 2004, Q J ECON, V119, P249, DOI 10.1162/003355304772839588
+   Brown M, 2014, COMP ECON STUD, V56, P110, DOI 10.1057/ces.2013.9
+   Brown M, 2012, ECON POLICY, P57, DOI 10.1111/j.1468-0327.2011.00277.x
+   Brown M, 2011, J FINANC INTERMED, V20, P285, DOI 10.1016/j.jfi.2010.12.001
+   Bruno V, 2014, SCAND J ECON, V116, P128, DOI 10.1111/sjoe.12037
+   Chodorow-Reich G, 2014, BROOKINGS PAP ECO AC, P155
+   Claessens S, 2014, J MONEY CREDIT BANK, V46, P295, DOI 10.1111/jmcb.12092
+   Demirguc-Kunt A, 2013, J MONEY CREDIT BANK, V45, P1147, DOI 10.1111/jmcb.12047
+   Demirguc-Kunt A, 2010, J FINANC ECON, V98, P626, DOI 10.1016/j.jfineco.2010.06.004
+   European Central Bank, 2014, MONTHLY B        AUG, P65
+   European Investment Bank, BANK CENTR E EUR TUR
+   Everaert G, 2015, WP1515 IMF
+   Fidrmuc J, 2013, J BANK FINANC, V37, P1880, DOI 10.1016/j.jbankfin.2012.06.018
+   Fratzscher Marcel, 2013, EUROPEAN CENTRAL BAN, V1557
+   Goldberg Linda, 2011, EC POLICY REV, V17, P3, DOI DOI 10.1093/REEP/REQ017
+   Huang R, 2011, J FINANC INTERMED, V20, P248, DOI 10.1016/j.jfi.2010.06.003
+   International Monetary Fund, 2010, GLOB FIN STAB REP SO
+   Ivashina V, 2010, J FINANC ECON, V97, P319, DOI 10.1016/j.jfineco.2009.12.001
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Luca A, 2008, J BANK FINANC, V32, P858, DOI 10.1016/j.jbankfin.2007.06.003
+   Moessner R, 2013, J INT MONEY FINANC, V35, P167, DOI 10.1016/j.jimonfin.2013.03.003
+   Wooldridge JM, 2003, AM ECON REV, V93, P133, DOI 10.1257/000282803321946930
+   Yesin P, 2013, FED RESERVE BANK ST, V95, P219
+NR 36
+TC 0
+Z9 0
+U1 0
+U2 9
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD FEB
+PY 2017
+VL 75
+BP 215
+EP 234
+DI 10.1016/j.jbankfin.2016.11.021
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA EJ5FK
+UT WOS:000393242900015
+DA 2019-12-28
+ER
+
+PT J
+AU Lopez-Espinosa, G
+   Moreno, A
+   Rubia, A
+   Valderrama, L
+AF Lopez-Espinosa, German
+   Moreno, Antonio
+   Rubia, Antonio
+   Valderrama, Laura
+TI Sovereign tail risk
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Sovereign debt crisis; Exposure; Panel data analysis
+ID DEBT CRISIS; PUBLIC DEBT; EURO-AREA; CONTAGION; MARKETS; SPREADS;
+   QUALITY; GROWTH; FLIGHT; MODEL
+AB We provide a new measure of sovereign country risk exposure (SCRE) to global sovereign tail risk based on information incorporated in 5-year sovereign CDS spreads. Our panel regressions with quarterly data from 53 countries show that macro risks have strong explanatory power for SCRE. Results show that SCRE increases for countries with less fiscal space, higher interest rates, and financial stability concerns. Exposure sensitivity to public sector leverage is shown to increase non-linearly with public debt and to decrease with central banks' sovereign debt programs. Our results imply that good forward-looking macro-finance fundamentals, such as high expected GDP growth and low credit-to- GDP ratios protect countries against sovereign risk especially in times of global distress. (C) 2017 Elsevier Ltd. All rights reserved.
+C1 [Lopez-Espinosa, German; Moreno, Antonio] Univ Navarra, Business Dept, Pamplona, Spain.
+   [Rubia, Antonio] Univ Alicante, Financial Econ Dept, Alicante, Spain.
+   [Valderrama, Laura] Int Monetary Fund, Monetary & Capital Mkt Dept, Washington, DC USA.
+RP Moreno, A (reprint author), Univ Navarra, Business Dept, Pamplona, Spain.
+EM antmoreno@unav.es
+RI Lopez-Espinosa, German/C-8256-2017; Moreno, Antonio/P-7014-2017
+OI Lopez-Espinosa, German/0000-0003-4520-0789; Moreno,
+   Antonio/0000-0003-3244-3028; Valderrama, Laura/0000-0001-5968-6092
+FU Fundacion Ramon Areces Research Project Awards in Social Sciences;
+   Spanish Ministry of Economy and Competitiveness [ECO2012-33619,
+   ECO2016-78254, ECO2015-68815, ECO2014-58434-P]
+FX The authors thank an anonymous referee, participants in the 2015
+   Meetings of the North American Econometric Society in Boston and the
+   2015 European Economic Association Annual Meeting in Mannheim. They also
+   thank Stijn Claessens, Kristle Romero-Cortes and participants in the
+   2013 Foro de Finanzas in Segovia, the UNAV-UPNA-UPV 2014 Research
+   Workshop and in the 2014 Bank of Spain-Bank of Canada "International
+   Financial Markets" Workshop for insightful comments. They are very
+   grateful to Gerard Xing for excellent research assistance, Antonio Diaz
+   for insightful comments and Marina Balboa for threshold estimation
+   codes. They all acknowledge financial support from the Fundacion Ramon
+   Areces Research Project Awards in Social Sciences. Germa Loez-Espinosa
+   acknowledges funding from the Spanish Ministry of Economy and
+   Competitiveness through grants ECO2012-33619 and ECO2016-78254. Antonio
+   Moreno acknowledges funding from the Spanish Ministry of Economy and
+   Competitiveness through grant ECO2015-68815. Antonio Rubia acknowledges
+   funding from the Spanish Ministry of Economy and Competitiveness through
+   grant ECO2014-58434-P.
+CR Abbritti M, 2016, J FINANC ECONOMET, V14, P331, DOI 10.1093/jjfinec/nbv003
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Aizenman J, 2013, J INT MONEY FINANC, V34, P37, DOI 10.1016/j.jimonfin.2012.11.011
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Arslanalp S, 2014, 1439 IMF
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baele Lievan, 2013, 19095 NBER
+   Basel Committee on Banking Supervision, 2010, GUID NAT AUTH OP COU
+   Beber A, 2009, REV FINANC STUD, V22, P925, DOI 10.1093/rfs/hhm088
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   BERG A, 1988, J DEV ECON, V29, P271, DOI 10.1016/0304-3878(88)90046-6
+   BESLEY DA, 1980, REGRESSION DIAGNOSTI
+   Broner F, 2014, J MONETARY ECON, V61, P114, DOI 10.1016/j.jmoneco.2013.11.009
+   Broto C, 2015, J EMPIR FINANC, V32, P165, DOI 10.1016/j.jempfin.2015.03.010
+   Caballero RJ, 2008, J FINANC, V63, P2195, DOI 10.1111/j.1540-6261.2008.01394.x
+   CALVO GA, 1988, AM ECON REV, V78, P647
+   Calvo G, 2005, EMERGING CAPITAL MARKETS IN TURMOIL: BAD LUCK OR BAD POLICY?, P139
+   Caner M, 2004, ECONOMET THEOR, V20, P813, DOI 10.1017/S0266466604205011
+   Caporin M., 2013, 18741 NBER
+   CHAN KS, 1993, ANN STAT, V21, P520, DOI 10.1214/aos/1176349040
+   Cottarelli C, 2012, 12137 IMF
+   Csonto Balazs, 2013, 13164 IMF
+   DIAZALEJANDRO C, 1985, J DEV ECON, V19, P1, DOI 10.1016/0304-3878(85)90036-7
+   Draghi Mario, 2012, GLOB INV C 26 JUL 20
+   Duffie D, 2003, J FINANC, V58, P119, DOI 10.1111/1540-6261.00520
+   Ebeke C, 2015, 15141 IMF
+   EDWARDS S, 1984, AM ECON REV, V74, P726
+   EDWARDS S, 1986, EUR ECON REV, V30, P565, DOI 10.1016/0014-2921(86)90009-7
+   European Central Bank, 2017, OCCASIONAL PAPER SER, V185
+   Fernandez-Villaverde J, 2013, J ECON PERSPECT, V27, P145, DOI 10.1257/jep.27.3.145
+   Fitch Solutions, 2007, FITCH CDS IMPL RAT C
+   Fontana A., 2010, 1271 ECB
+   Ghosh AR, 2013, ECON J, V123, pF4, DOI 10.1111/ecoj.12010
+   Gray D., 2013, 13218 IMF
+   GREENWALD B, 1984, AM ECON REV, V74, P194
+   Hansen BE, 1999, J ECONOMETRICS, V93, P345, DOI 10.1016/S0304-4076(99)00025-1
+   Hansen BE, 2000, ECONOMETRICA, V68, P575, DOI 10.1111/1468-0262.00124
+   HAUSMAN JA, 1978, ECONOMETRICA, V46, P1251, DOI 10.2307/1913827
+   Heinz F., 2014, 1417 IMF
+   Herndon T, 2014, CAMB J ECON, V38, P257, DOI 10.1093/cje/bet075
+   Hong H, 2014, J FINANC STABIL, V15, P91, DOI 10.1016/j.jfs.2014.09.003
+   International Monetary Fund, 2014, SDN1409 IMF
+   International Monetary Fund, 2013, STAFF GUID NOT PUBL
+   King, 1990, REV FINANC STUD, V3, P5
+   Krishnamurthy A, 2010, AM ECON J-MACROECON, V2, P1, DOI 10.1257/mac.2.3.1
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Maddaloni A, 2011, REV FINANC STUD, V24, P2121, DOI 10.1093/rfs/hhr015
+   McKinnon Ronald I., 1996, CREDIBLE LIBERALIZAT
+   Mishkin F. S., 1996, 5600 NBER
+   Moody's, 2015, BANK RAT METH AN APP
+   Nicolini Juan Pablo, 2015, SOVEREIGN DEFAULT RO
+   Reinhart CM, 2010, AM ECON REV, V100, P573, DOI 10.1257/aer.100.2.573
+   Rubia A, 2016, J INT MONEY FINANC, V60, P223, DOI 10.1016/j.jimonfin.2015.04.006
+   Singh Manmohan, 2012, 1277 IMF
+   Stock J., 2015, IDENTIFICATION INFER, P80
+   Taylor J. B., 1993, CARNEGIE-ROCHESTER C, V39, P195, DOI DOI 10.1016/0167-2231(93)90009-L
+   Tong H., 1983, THRESHOLD MODELS NON
+   Tong H., 1990, NONLINEAR TIME SERIE
+   Van Riet A., 2017, 35 EUR SYST RISK BOA
+   WU DM, 1974, ECONOMETRICA, V42, P529, DOI 10.2307/1911789
+NR 63
+TC 2
+Z9 2
+U1 1
+U2 14
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD DEC
+PY 2017
+VL 79
+BP 174
+EP 188
+DI 10.1016/j.jimonfin.2017.09.011
+PG 15
+WC Business, Finance
+SC Business & Economics
+GA FJ8SJ
+UT WOS:000413038600009
+DA 2019-12-27
+ER
+
+PT J
+AU Mensi, W
+   Hammoudeh, S
+   Kang, SH
+AF Mensi, Walid
+   Hammoudeh, Shawkat
+   Kang, Sang Hoon
+TI Dynamic linkages between developed and BRICS stock markets: Portfolio
+   risk analysis
+SO FINANCE RESEARCH LETTERS
+LA English
+DT Article
+DE Stock markets; Correlations; Hedge; Downside risk; DCC-FIAPARCH
+ID GLOBAL FINANCIAL CRISIS; CONDITIONAL HETEROSKEDASTICITY; COMOVEMENTS;
+   CONTAGION; TRANSMISSION; EUROPE; MODELS; US
+AB This study examines the dynamic correlations and portfolio diversification between the major developed and BRICS stock markets. The results reveal a significant variability in the time-varying conditional correlations between these markets during upturn and downturn periods. We underline the importance of overweighting the optimal portfolios with stocks from the developed countries over those from the BRICS. Finally, we demonstrate the usefulness of using developed market stocks in the BRICS stock portfolio risk management. (C) 2016 Elsevier Inc. All rights reserved.
+C1 [Mensi, Walid] Univ Tunis El Manar, Dept Finance & Accounting, BP 248,CP 2092, Tunis, Tunisia.
+   [Mensi, Walid] IMSIU, Dept Finance & Investment, Coll Econ & Adm Sci, POB 5701, Riyadh, Saudi Arabia.
+   [Hammoudeh, Shawkat] Drexel Univ, Lebow Coll Business, Philadelphia, PA 19104 USA.
+   [Hammoudeh, Shawkat] Montpellier Business Sch, Energy & Sustainable Dev, Montpellier, France.
+   [Kang, Sang Hoon] Pusan Natl Univ, PNU Sch Business, Dept Business Adm, Busan 609735, South Korea.
+RP Kang, SH (reprint author), Pusan Natl Univ, PNU Sch Business, Dept Business Adm, Busan 609735, South Korea.
+EM walid.mensi@fsegt.rnu.tn; shawkat.hammoudeh@gmail.com;
+   sanghoonkang@pusan.ac.kr
+CR Abbas Q, 2013, EMERG MARK REV, V16, P66, DOI 10.1016/j.ememar.2013.04.004
+   Ahmad W, 2013, ECON MODEL, V33, P209, DOI 10.1016/j.econmod.2013.04.009
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Bhuyan R, 2016, INT REV ECON FINANC, V46, P180, DOI 10.1016/j.iref.2016.09.004
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Fiorentini G, 2003, J BUS ECON STAT, V21, P532, DOI 10.1198/073500103288619232
+   Geweke J., 1983, J TIME SER ANAL, V4, P221, DOI DOI 10.1111/J.1467-9892.1983.TB00371.X
+   Gjika D, 2013, ECON MODEL, V33, P55, DOI 10.1016/j.econmod.2013.03.015
+   Hammoudeh S, 2016, WORLD ECON, V39, P1703, DOI 10.1111/twec.12433
+   Kroner KF, 1998, REV FINANC STUD, V11, P817, DOI 10.1093/rfs/11.4.817
+   Mensi W, 2016, INT REV ECON FINANC, V42, P257, DOI 10.1016/j.iref.2015.11.005
+   Mensi W, 2014, EMERG MARK REV, V19, P1, DOI 10.1016/j.ememar.2014.04.002
+   Robinson PM, 1999, ECONOMET THEOR, V15, P299
+   Tse YK, 1998, J APPL ECONOMET, V13, P49
+   Yarovaya L, 2016, RES INT BUS FINANC, V37, P605, DOI 10.1016/j.ribaf.2016.01.023
+   Zhang B, 2013, N AM J ECON FINANC, V26, P725, DOI 10.1016/j.najef.2013.05.003
+NR 17
+TC 8
+Z9 8
+U1 1
+U2 12
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1544-6123
+EI 1544-6131
+J9 FINANC RES LETT
+JI Financ. Res. Lett.
+PD MAY
+PY 2017
+VL 21
+BP 26
+EP 33
+DI 10.1016/j.frl.2016.11.016
+PG 8
+WC Business, Finance
+SC Business & Economics
+GA ET4AE
+UT WOS:000400220500004
+DA 2019-12-27
+ER
+
+PT J
+AU Horvath, BL
+   Wagner, W
+AF Horvath, Balint L.
+   Wagner, Wolf
+TI The Disturbing Interaction between Countercyclical Capital Requirements
+   and Systemic Risk
+SO REVIEW OF FINANCE
+LA English
+DT Article
+DE Systemic risk; Regulation; Countercylical capital requirements
+ID MONETARY-POLICY; HABIT FORMATION; BANK
+AB We present a model in which flat (state-independent) capital requirements are undesirable because of shocks to bank capital. There is a rationale for countercyclical capital requirements that impose lower capital demands when aggregate bank capital is low. However, such capital requirements also have a cost as they increase systemic risk taking: by insulating banks against aggregate shocks (but not bankspecific ones), they create incentives to invest in correlated activities. As a result, the economy's sensitivity to shocks increases and systemic crises can become more likely. Capital requirements that directly incentivize banks to become less correlated dominate countercyclical policies as they reduce both systemic risk-taking and cyclicality.
+C1 [Horvath, Balint L.] Univ Bristol, Bristol, Avon, England.
+   [Wagner, Wolf] Rotterdam Sch Management, Rotterdam, Netherlands.
+   [Wagner, Wolf] CEPR, Washington, DC USA.
+RP Horvath, BL (reprint author), Univ Bristol, Bristol, Avon, England.
+OI Horvath, Balint/0000-0002-0240-4231
+CR ABEL AB, 1990, AM ECON REV, V80, P38
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya VV, 2011, REV FINANC STUD, V24, P2166, DOI 10.1093/rfs/hhq073
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F., 2000, COMP FINANCIAL SYSTE
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   BARZEL Y, 1973, AM ECON REV, V63, P621
+   BCBS, 2010, GUID NAT AUTH OP COU
+   BERGSTRAND JH, 1990, ECON J, V100, P1216, DOI 10.2307/2233969
+   Borio C., 2003, CESIFO ECON STUD, V49, P181
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Foos D, 2010, J BANK FINANC, V34, P2929, DOI 10.1016/j.jbankfin.2010.06.007
+   FURLONG FT, 1989, J BANK FINANC, V13, P883, DOI 10.1016/0378-4266(89)90008-3
+   Galati G, 2013, J ECON SURV, V27, P846, DOI 10.1111/j.1467-6419.2012.00729.x
+   Gertler M, 2010, HDB MACROECONOMICS, P547, DOI DOI 10.1016/13978-0-444-53238-1.00011-9
+   Gertler M, 2011, J MONETARY ECON, V58, P17, DOI 10.1016/j.jmoneco.2010.10.004
+   Gorton G., 2016, TECHNICAL REPORT
+   Greenawalt M, 1991, J FINANCIAL SERVICES, V5, P43, DOI DOI 10.1007/BF00127083
+   Kahn C. M., 2010, EFA 2005 MOSC UNPUB
+   Kashyap A. K., 2004, FEDERAL RESERVE BANK, V28, P18
+   Lettau M, 2000, REV ECON DYNAM, V3, P79, DOI 10.1006/redy.1998.0035
+   Malherbe F., 2013, OPTIMAL CAPITA UNPUB
+   Martin A., 2013, 642 FRB
+   Martinez-Miera D., 2012, 9134 CEPR
+   Perotti EC, 2002, EUR ECON REV, V46, P1599, DOI 10.1016/S0014-2921(02)00241-6
+   Repullo R, 2013, REV FINANC STUD, V26, P452, DOI 10.1093/rfs/hhs118
+   ROSEN HS, 1978, J POLIT ECON, V86, pS121, DOI 10.1086/260697
+   Schularick M, 2012, AM ECON REV, V102, P1029, DOI 10.1257/aer.102.2.1029
+   Segura A., 2011, CEPR DISCUSSION PAPE, V8324
+   Stein JC, 2012, Q J ECON, V127, P57, DOI 10.1093/qje/qjr054
+   Wagner W, 2011, J FINANC, V66, P1141, DOI 10.1111/j.1540-6261.2011.01666.x
+NR 33
+TC 5
+Z9 5
+U1 0
+U2 5
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1572-3097
+EI 1573-692X
+J9 REV FINANC
+JI Rev. Financ.
+PD JUL
+PY 2017
+VL 21
+IS 4
+BP 1485
+EP 1511
+DI 10.1093/rof/rfx001
+PG 27
+WC Business, Finance; Economics
+SC Business & Economics
+GA FH7YO
+UT WOS:000411409000004
+DA 2019-12-28
+ER
+
+PT J
+AU Ben Rejeb, A
+AF Ben Rejeb, Aymen
+TI On the volatility spillover between lslamic and conventional stock
+   markets: A quantile regression analysis
+SO RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE
+LA English
+DT Article
+DE Quantile regression; Financial fragility; Subprime crisis; Islamic stock
+   markets; Conventional stock markets
+ID PERFORMANCE; INDEXES; RISK; MODELS; DEPENDENCE
+AB This paper aims at analyzing the degree and structure of interdependencies in terms of volatility (transmission, contagion) between Islamic and conventional stock markets on calm periods and at times of financial fragility and crisis. We focused on the recent financial instability periods and used the Quantile Regression-based GARCH model. Main results lead to very interesting conclusions. First, it has been found that Islamic stock markets are not totally immune to the global financial crisis. Second, a very strong interdependence is sensed from the conventional to the Islamic stock markets, especially, from the conventional developed markets to the Islamic Emerging and Arab markets and to the Islamic developed markets. Finally, it has been proved that the interdependencies from conventional to Islamic markets are propagated between Islamic markets. Our findings suggest that the Islamic finance industry does not seem able to provide cushion against economic and financial shocks that affect conventional markets.
+C1 [Ben Rejeb, Aymen] Univ Sousse, High Inst Management Sousse, Sousse, Tunisia.
+   [Ben Rejeb, Aymen] Univ Sousse, ISG Sousse, LAMIDED, Sousse, Tunisia.
+RP Ben Rejeb, A (reprint author), Univ Sousse, High Inst Management Sousse, Sousse, Tunisia.
+EM benredjeb_aymen@yahoo.fr
+RI Rejeb, Aymen Ben/K-4565-2019
+CR Abdullah F, 2007, MANAG FINANC, V33, P142, DOI 10.1108/03074350710715854
+   Ahmed H, 2007, ELGAR ORIG REF, P144
+   Ajmi AN, 2014, J INT FINANC MARK I, V28, P213, DOI 10.1016/j.intfin.2013.11.004
+   Akhtar S.M., 2013, 1782220 SSRN
+   Al-Khazali O, 2014, PAC-BASIN FINANC J, V28, P29, DOI 10.1016/j.pacfin.2013.09.003
+   Al-Zoubi HA, 2007, INT J THEOR APPL FIN, V10, P235, DOI 10.1142/S0219024907004184
+   Albaity M, 2008, ASIAN ACAD MANAG J A, V4, P23
+   Atta H., 2000, THESIS
+   Bai J, 2003, J APPL ECONOMET, V18, P1, DOI 10.1002/jae.659
+   BAI J, 2006, ECONOMETRIC THEORY P, P212, DOI DOI 10.1017/CBO9781139164863
+   Bai JS, 1998, ECONOMETRICA, V66, P47, DOI 10.2307/2998540
+   Bala S., 2009, PRIMER ISLAMIC FINAN
+   Baur DG, 2013, J BANK FINANC, V37, P786, DOI 10.1016/j.jbankfin.2012.10.015
+   Bensafta KM, 2011, REV ECON-FR, V62, P277, DOI 10.3917/reco.622.0277
+   Boumediene A., 2009, 1524775 SSRN
+   Brack E, 2007, REV BANQUE, V696, P41
+   BUCHINSKY M, 1995, J ECONOMETRICS, V68, P303, DOI 10.1016/0304-4076(94)01652-G
+   Buchinsky M, 1999, REV ECON STAT, V81, P351, DOI 10.1162/003465399558210
+   Buchinsky M, 2010, J LABOR ECON, V28, P541, DOI 10.1086/651720
+   Chapra M. U, 2008, FOR GLOB FIN CRIS IS
+   CHAPRA MU, 1992, ISLAM EC CHALLENGE
+   Charles A, 2006, ECON MODEL, V23, P683, DOI 10.1016/j.econmod.2006.03.008
+   Chau F, 2014, J INT FINANC MARK I, V28, P1, DOI 10.1016/j.intfin.2013.10.008
+   Chuang CC, 2009, J BANK FINANC, V33, P1351, DOI 10.1016/j.jbankfin.2009.02.013
+   Dania A., 2013, J WEALTH MANAG, V16, P65
+   Dewi M., 2010, WORKING PAPER
+   Dridi J., 2010, 10201 INT MON FUND
+   Eide E, 1998, ECON LETT, V58, P345, DOI 10.1016/S0165-1765(97)00286-3
+   Eide ER, 1999, J HUM RESOUR, V34, P253, DOI 10.2307/146345
+   El Hawary D., 2004, 3227 NAT REG WORLD B
+   El-Gamal M., 2006, ISLAMIC FINANCE LAW
+   Engle R., 1994, HDB ECONOMETRICS, VIV, P2959, DOI DOI 10.1016/S1573-4412(05)80018-2
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Hakim S., 2002, WORKING PAPER
+   Hammoudeh S, 2014, PAC-BASIN FINANC J, V30, P189, DOI 10.1016/j.pacfin.2014.10.001
+   Haultfoeuille X., 2014, EC STAT, V471, P85
+   Hayat R, 2011, EMERG MARK REV, V12, P189, DOI 10.1016/j.ememar.2011.02.002
+   Ho CSF, 2014, PAC-BASIN FINANC J, V28, P110, DOI 10.1016/j.pacfin.2013.09.002
+   Hussein K. A., 2004, ISLAM EC STUD, V12, P21, DOI DOI 10.3905/J0I.2005.580557
+   Hussein K, 2005, J INVEST, V14, P105, DOI 10.3905/joi.2005.580557
+   Jorion P, 1996, FINANCIAL RISK MANAG
+   Kassab S., 2013, EUR J BANK FINANC, V10, P72
+   Khan T., 2001, 5 ISL RES TRAIN I
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R., 2005, QUANTILE REGRESSION
+   KOENKER RW, 1987, J R STAT SOC C-APPL, V36, P383
+   Lee BS, 2012, J BANK FINANC, V36, P2157, DOI 10.1016/j.jbankfin.2012.03.020
+   Majdoub J., 2014, N AM J EC FINANCE
+   Majid M. S. A., 2007, ISLAMIC EC, V20, P17
+   McKenzie D, 2011, ISLAMIC FINANCE
+   Milly M., 2012, BUILDING BRIDGES FIN, P334
+   Morillo D, 2000, PREPRINT
+   Nazlioglu S, 2015, APPL ECON, V47, P4996, DOI 10.1080/00036846.2015.1039705
+   Nguyen D. K., 2006, BANKERS MARKETS INVE, V84, P6
+   Nguyen D.K., 2008, FINANCIAL LIBERALIZA
+   Nikkinen J., 2008, INT REV FINANC ANAL, V17, P27, DOI DOI 10.1016/j.irfa.2006.12.002
+   Ramlall I., 2010, INT RES J FINANC EC, V39, P157
+   Saadaoui A., 2015, EMAJ EMERG MARK J, V5, P41
+NR 59
+TC 1
+Z9 1
+U1 2
+U2 3
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0275-5319
+EI 1878-3384
+J9 RES INT BUS FINANC
+JI Res. Int. Bus. Financ.
+PD DEC
+PY 2017
+VL 42
+BP 794
+EP 815
+DI 10.1016/j.ribaf.2017.07.017
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA FO6LK
+UT WOS:000416974400059
+DA 2019-12-27
+ER

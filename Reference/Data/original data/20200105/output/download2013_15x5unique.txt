@@ -1,0 +1,460 @@
+
+PT J
+AU Caceres, C
+   Unsal, DF
+AF Caceres, Carlos
+   Unsal, D. Filiz
+TI Sovereign Spreads and Contagion Risks in Asia
+SO ASIAN ECONOMIC JOURNAL
+LA English
+DT Article
+DE contagion; exchange rates; fiscal policy market price of risk; sovereign
+   spreads; E43; E44; G01; G10
+AB In the aftermath of the recent global financial turmoil, sovereign spreads have exhibited a significant degree of volatility. This paper explores how much of these movements in the spreads of Asian economies reflected shifts in global risk aversion or country-specific risks, directly from worsening fundamentals, or indirectly from spillovers originating in other sovereigns, or risks and uncertainty surrounding their exchange rates. This analysis finds that earlier in the crisis, the increase in market-implied contagion led to an increase of sovereign bond yields relative to the swaps. Higher-rated sovereign bonds in Asia benefited from the flight to quality that accompanied the increase in global risk aversion during this period. Once the systemic risks in the financial sectors worldwide were contained, the risk of sovereign spillovers eased, which, together with a fall in perceived currency-related risks, led to a fall in sovereign bond yields relative to swaps yields across the board. Comparing the situation to that of Europe, the present paper concludes that the debt crisis in the euro area has not affected the perception of sovereign risks of Asian economies. In fact, a fall in exchange rate and spillover risks, combined with stronger fundamentals, have led to a continued normalization of Asian sovereign spreads since the height of the financial crisis.
+C1 [Caceres, Carlos; Unsal, D. Filiz] Int Monetary Fund, Washington, DC 20431 USA.
+RP Caceres, C (reprint author), Int Monetary Fund, 700 19th St NW, Washington, DC 20431 USA.
+EM ccaceres@imf.org; dunsal@imf.org
+CR Baldacci E., 2008, 08259 IMF
+   Behar A., 2009, AUCO CZECH EC REV, V3, P69
+   Bellas D., 2010, 10281 IMF
+   Caceres C., 2010, 10120 IMF
+   Caceres C., 2009, 6 EUR INV BANK DEV E
+   Codogno L., 2003, ECON POLICY, V18, P505
+   Espinoza R., 2011, 1175 IMF
+   Geyer A., 2004, Review of Finance, V8, P171, DOI 10.1023/B:EUFI.0000035191.62455.32
+   Hartelius K., 2008, 0810 IMF
+   JOLLIFFEE IT, 2002, PRINCIPAL COMPONENT
+   Kamin S. B., 1999, 653 BANK INT SETTL
+   Kullback J., 1959, INFORM THEORY STAT
+   Min H, 1998, 1899 WORLD BANK
+   SCHUKNECHT L, 2010, 1152 EUR CENTR BANK
+   Segoviano M., 2006, 557 FIN MARK GROUP
+   Segoviano M., 2009, 094 IMF
+   Sgherri S., 2009, 09222 IMF
+NR 17
+TC 5
+Z9 5
+U1 0
+U2 12
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1351-3958
+J9 ASIAN ECON J
+JI Asian Econ. J.
+PD SEP
+PY 2013
+VL 27
+IS 3
+BP 219
+EP 243
+DI 10.1111/asej.12012
+PG 25
+WC Economics
+SC Business & Economics
+GA 210OK
+UT WOS:000323843000001
+DA 2019-12-27
+ER
+
+PT J
+AU Lopez-Espinosa, G
+   Rubia, A
+   Valderrama, L
+   Anton, M
+AF Lopez-Espinosa, German
+   Rubia, Antonio
+   Valderrama, Laura
+   Anton, Miguel
+TI Good for one, bad for all: Determinants of individual versus systemic
+   risk
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE CoVaR; Correlated risks; Financial regulation; Individual risk; Systemic
+   risk
+ID REGRESSION; LIQUIDITY
+AB We analyze a sample of large international banks in major advanced economies and examine the impact that bank-specific factors have on an institution's solvency risk and its contribution to systemic risk. We focus on the five categories that the Basel Committee on Banking Supervision has recently proposed as indicators of systemic importance. Our findings suggest that unstable funding is the main factor driving systemic risk. Furthermore, the combination of significant trading activities with global presence appears to exacerbate spillover risks to the global financial system. Interestingly, whereas trading activities contribute to the build-up of correlated or 'wrong-way' risk they help to mitigate individual solvency risk. Conversely, a decentralized approach to liquidity management seems to alleviate individual solvency risk but amplifies the transmission of financial distress across the financial system. This suggests that a macro-prudential approach to financial regulation should focus not only on scaling up micro-prudential measures but also on enabling the efficient transfer of risk between financial institutions. (c) 2013 Elsevier B.V. All rights reserved.
+C1 [Lopez-Espinosa, German] Univ Navarra, Sch Econ & Business Adm, E-31080 Pamplona, Spain.
+   [Rubia, Antonio] Univ Alicante, Dept Financial Econ, Alicante, Spain.
+   [Valderrama, Laura] Int Monetary Fund, Washington, DC 20431 USA.
+   [Anton, Miguel] Univ Navarra, IESE Business Sch, E-31080 Pamplona, Spain.
+RP Lopez-Espinosa, G (reprint author), Univ Navarra, Sch Econ & Business Adm, E-31080 Pamplona, Spain.
+EM glespinosa@unav.es; antonio.rubia@ua.es; LValderramaFerrando@imf.org;
+   MAnton@iese.edu
+RI Lopez-Espinosa, German/C-8256-2017
+OI Lopez-Espinosa, German/0000-0003-4520-0789; Valderrama,
+   Laura/0000-0001-5968-6092
+CR Acharya V. V., 2010, 1002 FED RES BANK CL
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T., 2011, COVAR
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Chernozhukov V, 2005, ANN STAT, V33, P806, DOI 10.1214/009053604000001165
+   Chernozhukov V., 2001, EMPIR ECON, V26, P271, DOI DOI 10.1007/S001810000062
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   Goodhart C, 2004, J FINANCIAL STABILIT, V1, P1
+   Hawkesby C., 2007, J FINANCIAL STABILIT, V2, P391
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Koenker R, 2005, ECONOMETRIC SOC MONO
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Lopez-Espinosa G., 2012, 12152 IMF
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Nier EW, 2011, NATL INST ECON REV, V216, pR1, DOI 10.1177/0027950111411375
+   Otker-Robe I., 2011, SDN1112 IMF STAFF
+   Rapach D.E., 2012, J FINANCE IN PRESS
+   Rubia A, 2013, INT J FORECASTING, V29, P202, DOI 10.1016/j.ijforecast.2012.09.001
+   Shin H. S., 2010, MACROPRUDENTIAL POLI
+   Taylor J., 1999, J DERIV, V7, P64
+NR 23
+TC 16
+Z9 17
+U1 2
+U2 39
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD SEP
+PY 2013
+VL 9
+IS 3
+BP 287
+EP 299
+DI 10.1016/j.jfs.2013.05.002
+PG 13
+WC Business, Finance; Economics
+SC Business & Economics
+GA 213GD
+UT WOS:000324042400004
+DA 2019-12-28
+ER
+
+PT J
+AU Chen, TQ
+   He, JM
+   Wang, JN
+AF Chen, Tingqiang
+   He, Jianmin
+   Wang, Jining
+TI BIFURCATION AND CHAOTIC BEHAVIOR OF CREDIT RISK CONTAGION BASED ON
+   FITZHUGH-NAGUMO SYSTEM
+SO INTERNATIONAL JOURNAL OF BIFURCATION AND CHAOS
+LA English
+DT Article
+DE Credit risk contagion; FHN model; nonlinear dynamics; Hopf bifurcation;
+   chaos
+ID GLOBAL COMPLICATED CHARACTER; DELAY-DIFFERENTIAL EQUATIONS; STOCHASTIC
+   RESONANCE; TOPOLOGICAL-STRUCTURE; EULER METHOD; MODEL; DYNAMICS;
+   MARKETS; NOISE; INVESTORS
+AB This work introduces a FitzHugh-Nagumo (FHN) model of credit risk contagion based on the FHN system, which contains time-delay, Gaussian white noise, delayed feedback, weak periodic signal, and nonlinear resistance. The model depicts the dynamics behavior characteristics of evolution of credit risk contagion through simulation experiments. Meanwhile, numerical simulations show that, in a financial market, the dynamics system stability of credit risk contagion is positively related to the nonlinear resistance among participants of credit activities and to the inherent recovery capability attributed to the after-credit risk impact on economic subjects. However, the dynamics system stability of credit risk contagion is negatively related to the time-delay of credit risk contagion, the strength of Gaussian white noise, and the weak-signal cycle. Furthermore, the dynamics system of credit risk contagion introduces a series of Hopf bifurcation, inverse bifurcation and different degrees of chaotic oscillation phenomena with changes in these parameters.
+C1 [Chen, Tingqiang; He, Jianmin] Southeast Univ, Sch Econ & Management, Nanjing 211189, Jiangsu, Peoples R China.
+   [Wang, Jining] Nanjing Univ Technol, Sch Econ & Management, Nanjing 210009, Jiangsu, Peoples R China.
+RP Chen, TQ (reprint author), Southeast Univ, Sch Econ & Management, Nanjing 211189, Jiangsu, Peoples R China.
+EM tingqiang88888888@163.com; nj.jian@public1.ptt.js.cn; wangjn163@126.com
+RI Chen, Tingqiang/F-3904-2014; Chen, Tingqiang/N-4473-2019; Chen,
+   Tingqiang/A-2244-2017
+OI Chen, Tingqiang/0000-0002-3013-243X; Chen, Tingqiang/0000-0002-3013-243X
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71071034, 71173103, 71201023]; Humanities and
+   Social Science Youth Foundation of the Ministry of Education of
+   ChinaMinistry of Education, China [12YJC630101]; Funding of Jiangsu
+   Innovation Program for Graduate Education [CXZZ12-0131]; Scientific
+   Research Foundation of Graduate School of Southeast University
+   [YBJJ1238]
+FX We wish to express our gratitude to the referees for their invaluable
+   comments. This work was supported by the National Natural Science
+   Foundation of China Grant (Nos. 71071034, 71173103, and 71201023), the
+   Humanities and Social Science Youth Foundation of the Ministry of
+   Education of China (No. 12YJC630101), the Funding of Jiangsu Innovation
+   Program for Graduate Education (No. CXZZ12-0131), and the Scientific
+   Research Foundation of Graduate School of Southeast University (No.
+   YBJJ1238).
+CR Aase K., 2000, FINANC STOCH, V4, P465
+   Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Barber BM, 2000, J FINANC, V55, P773, DOI 10.1111/0022-1082.00226
+   Barber BM, 2009, REV FINANC STUD, V22, P151, DOI 10.1093/rfs/hhn035
+   Berezansky YM, 2009, OPER THEOR, V190, P123, DOI 10.1007/978-3-7643-9919-1_7
+   BLACK F, 1986, J FINANC, V41, P529, DOI 10.2307/2328481
+   Chen G., 1998, CHAOS ORDER METHODOL
+   Chen TQ, 2013, DISCRETE DYN NAT SOC, DOI 10.1155/2013/206201
+   Chen WC, 2008, CHAOS SOLITON FRACT, V37, P1198, DOI 10.1016/j.chaos.2006.10.016
+   Chian ACL, 2006, CHAOS SOLITON FRACT, V29, P1194, DOI 10.1016/j.chaos.2005.08.218
+   DAY RH, 1982, AM ECON REV, V72, P406
+   Dowrick S., 2004, EC GROWTH MACROECONO
+   Ford NJ, 1999, J COMPUT APPL MATH, V111, P153, DOI 10.1016/S0377-0427(99)00139-9
+   Gao Q, 2009, NONLINEAR DYNAM, V58, P209, DOI 10.1007/s11071-009-9472-5
+   Gontis V, 2010, PHYSICA A, V389, P100, DOI 10.1016/j.physa.2009.09.011
+   Guckenheimer J, 1992, NONLINEAR OSCILLATIO
+   Guegan D, 2009, ANNU REV CONTROL, V33, P89, DOI 10.1016/j.arcontrol.2009.01.002
+   Hairer E, 1987, SOLVING ORDINARY DIF, VI
+   Heiligenthal S, 2011, PHYS REV LETT, V107, DOI 10.1103/PhysRevLett.107.234102
+   Hout K. I., 1998, BIT, V72, P72
+   HSIEH DA, 1989, J BUS, V62, P339, DOI 10.1086/296466
+   HSIEH DA, 1991, J FINANC, V46, P1839, DOI 10.2307/2328575
+   Hu DL, 2012, COMMUN NONLINEAR SCI, V17, P1031, DOI 10.1016/j.cnsns.2011.05.041
+   Janson NB, 2004, PHYS REV LETT, V93, DOI 10.1103/PhysRevLett.93.010601
+   Koto T, 2001, COMPUT MATH APPL, V42, P1597, DOI 10.1016/S0898-1221(01)00265-6
+   Krawiecki A, 2003, PHYSICA A, V317, P597, DOI 10.1016/S0378-4371(02)01375-4
+   Li SW, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500865
+   Ma JH, 2001, APPL MATH MECH-ENGL, V22, P1240, DOI 10.1023/A:1016313804297
+   Ma JH, 2001, APPL MATH MECH-ENGL, V22, P1375, DOI 10.1023/A:1022806003937
+   Mao XM, 2002, CHINESE PHYS, V11, P1106, DOI 10.1088/1009-1963/11/11/303
+   Odean T, 1999, AM ECON REV, V89, P1279, DOI 10.1257/aer.89.5.1279
+   Peng MS, 2004, CHAOS SOLITON FRACT, V22, P483, DOI 10.1016/j.chaos.2004.02.038
+   Puu T, 2004, CHAOS SOLITON FRACT, V19, P597, DOI 10.1016/S0960-0779(03)00132-2
+   Sato AH, 2008, EUR PHYS J B, V62, P373, DOI 10.1140/epjb/e2008-00158-1
+   Sato AH, 2006, EUR PHYS J B, V50, P137, DOI 10.1140/epjb/e2006-00125-x
+   Shleifer A., 2000, INEFFICIENT MARKETS
+   Son WS, 2011, CHAOS SOLITON FRACT, V44, P208, DOI 10.1016/j.chaos.2011.01.010
+   Sprott JC, 2003, CHAOS TIME SERIES AN
+   Tumarkin R, 2001, FINANC ANAL J, V57, P41, DOI 10.2469/faj.v57.n3.2449
+   Ucar A, 2003, CHAOS SOLITON FRACT, V16, P187, DOI 10.1016/S0960-0779(02)00160-1
+   Ucar A, 2002, INT J ENG SCI, V40, P251, DOI 10.1016/S0020-7225(01)00060-X
+   Ullner E, 2003, PHYS REV LETT, V91, DOI 10.1103/PhysRevLett.91.180601
+   Wang Y., 2010, INT J APPL MATH MECH, V6, P1
+   Wu D, 2008, PHYS LETT A, V372, P5299, DOI 10.1016/j.physleta.2008.06.015
+   Wu D, 2012, PHYSICA A, V391, P1032, DOI 10.1016/j.physa.2011.09.029
+   Wu WJ, 2009, CHAOS SOLITON FRACT, V39, P2340, DOI 10.1016/j.chaos.2007.07.016
+   Wu WJ, 2010, NONLINEAR DYNAM, V60, P615, DOI 10.1007/s11071-009-9619-4
+   Xin BG, 2010, DISCRETE DYN NAT SOC, DOI 10.1155/2010/405639
+   Xin BG, 2009, CHAOS SOLITON FRACT, V42, P2425, DOI 10.1016/j.chaos.2009.03.110
+   Yung KL, 2010, CHINESE PHYS B, V19, DOI 10.1088/1674-1056/19/1/010503
+   Zhang HQ, 2009, PHYSICA A, V388, P3017, DOI 10.1016/j.physa.2009.04.032
+   Zhang RY, 2012, J APPL MATH, DOI 10.1155/2012/316390
+NR 52
+TC 6
+Z9 6
+U1 0
+U2 35
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 0218-1274
+EI 1793-6551
+J9 INT J BIFURCAT CHAOS
+JI Int. J. Bifurcation Chaos
+PD JUL
+PY 2013
+VL 23
+IS 7
+AR 1350117
+DI 10.1142/S0218127413501174
+PG 15
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA 203KA
+UT WOS:000323290100009
+DA 2019-12-27
+ER
+
+PT J
+AU Gatfaoui, H
+AF Gatfaoui, Hayette
+TI Translating financial integration into correlation risk: A weekly
+   reporting's viewpoint for the volatility behavior of stock markets
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Conditional correlation; Contagion risk; Multivariate BEKK; Leverage
+   effect; Nonparametric regression; Systematic risk; Systemic risk;
+   Volatility spillover
+ID MAXIMUM-LIKELIHOOD-ESTIMATION; ASYMPTOTIC NORMALITY; ARCH MODELS;
+   TIME-SERIES; MULTIVARIATE; BANDWIDTH; INFERENCE; VARIANCE;
+   SYNCHRONIZATION; PERSISTENCE
+AB We apply the multivariate extension of GARCH-type models in order to assess the systematic and systemic risks as well as the joint volatility behaviors of the U.S. and three European financial markets (Andersen et al., 2010). Therefore, we can appraise the co-movements of the four previous financial markets as well as the joint behavior of their respective volatilities (i.e. systemic risk). Moreover, the resulting conditional variance and covariance metrics allow for handling volatility spillovers (i.e. contagion risk in terms of transmitting volatility shocks from one market place to another market place). Indeed, results highlight the unprecedented high systemic risk levels (i.e. joint increased volatility levels) as well as a high contagion risk (i.e. volatility spillover) during the subprime mortgage market crisis. The transmission process of volatility shocks reveals to be simultaneous across financial markets due to a strong arbitrage activity and electronic trading practices among others. Most importantly, the estimated conditional correlations exhibit an upward sloping trend, which underlines an increase in the correlation risk between financial markets in the late nineties or early 2000. Thus, our major findings are twofold. First, we characterize the dynamic correlation risk across financial markets. Second, we also confirm the increasing and nonlinear trend in the correlation risk, which we are able to quantify. (c) 2012 Elsevier B.V. All rights reserved.
+C1 Rouen Business Sch, Econ & Finance Dept, F-76825 Mont St Aignan, France.
+RP Gatfaoui, H (reprint author), Rouen Business Sch, Econ & Finance Dept, 1 Rue Marechal Juin,BP215, F-76825 Mont St Aignan, France.
+EM hayette.gatfaoui@rouenbs.fr
+RI Gatfaoui, Hayette/P-8744-2014
+OI Gatfaoui, Hayette/0000-0001-7491-6650
+CR Alexander C, 2008, J BANK FINANC, V32, P2220, DOI 10.1016/j.jbankfin.2007.12.041
+   Andersen T. G., 2006, HDB EC FORECASTING, V1, P778
+   Andersen TG, 1998, INT ECON REV, V39, P885, DOI 10.2307/2527343
+   Andersen TG, 2010, HANDB FINANC, P67, DOI 10.1016/B978-0-444-50897-3.50005-5
+   Arago V., 2004, J FINANC, V15, P2656
+   Baele L, 2004, OXFORD REV ECON POL, V20, P509, DOI 10.1093/oxrep/grh030
+   Bardet JM, 2009, ANN STAT, V37, P2730, DOI 10.1214/08-AOS674
+   Bates J., 2006, FINANCIAL INTELL NOV, P6
+   Bauwens L, 2006, J APPL ECONOM, V21, P79, DOI 10.1002/jae.842
+   Beine M, 2010, J BANK FINANC, V34, P184, DOI 10.1016/j.jbankfin.2009.07.014
+   BERNDT EK, 1974, ANN ECON SOC MEAS, V3, P653
+   Black F, 1976, P AM STAT ASS BUS EC, P177
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   BOLLERSLEV T, 1993, ECONOMETRICA, V61, P167, DOI 10.2307/2951782
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Bonti G., 2006, J CREDIT RISK, V2, P115
+   Boudt K, 2010, COMPUT STAT DATA AN, V54, P2459, DOI 10.1016/j.csda.2009.11.007
+   Brailsford TJ, 1996, J BANK FINANC, V20, P419, DOI 10.1016/0378-4266(95)00015-1
+   Brooks C, 2003, J FORECASTING, V22, P1, DOI 10.1002/for.841
+   Brownlees CT, 2010, J FINANC ECONOMET, V8, P29, DOI 10.1093/jjfinec/nbp009
+   Cameron A.C., 2005, MICROECONOMETRICS AP
+   Canarella G., 2007, INT REV EC, V54, P445
+   Caporin M., 2010, DO WE REALLY NEED BO
+   Christensen BJ, 1998, J FINANC ECON, V50, P125, DOI 10.1016/S0304-405X(98)00034-8
+   Claessens S, 2012, J INT ECON, V87, P178, DOI 10.1016/j.jinteco.2011.11.008
+   Claudia M., 2002, COMP EC STUDIES, V44, P46
+   CLEVELAND WS, 1979, J AM STAT ASSOC, V74, P829, DOI 10.2307/2286407
+   Comte F, 2003, J MULTIVARIATE ANAL, V84, P61, DOI 10.1016/S0047-259X(02)00009-X
+   DAVIDSON J, 2000, ECONOMETRIC THEORY
+   Degryse H., 2010, INT REV FINANC, V10, P209, DOI DOI 10.1111/J.1468-2443.2010.01109.X
+   Deutsche Bank Research, 2008, FIN MARK SPEC EU MON
+   Donders MWM, 1996, J BANK FINANC, V20, P1447, DOI 10.1016/S0378-4266(96)00011-8
+   Doran J.S., 2005, REV DERIV RES, V8, P177
+   Dowling S., 2005, REV FUTURES MARKETS, V14, P117, DOI DOI 10.2139/SSRN.500165
+   Dueker MJ, 1997, J BUS ECON STAT, V15, P26, DOI 10.2307/1392070
+   Dungey M., 2010, DETECTING CONTAGION
+   ECB, 2011, MON POL ECB 2011
+   EDERINGTON LH, 1995, J FINANC QUANT ANAL, V30, P117, DOI 10.2307/2331256
+   Eichengreen B, 2005, NEW FINANCIAL MARKET STRUCTURE FOR EAST ASIA, P84
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R., 1994, HDB ECONOMETRICS, VIV, P2959, DOI DOI 10.1016/S1573-4412(05)80018-2
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Engle RF, 2001, QUANT FINANC, V1, P237, DOI 10.1088/1469-7688/1/2/305
+   Epanechnikov V. A., 1969, TEOR VEROYA PRIMEN, V14, P156
+   Fan J, 1994, J COMPUTATIONAL GRAP, V3, P35
+   FAN JQ, 1992, ANN STAT, V20, P2057, DOI 10.1214/aos/1176348902
+   FAN JQ, 1995, J ROY STAT SOC B MET, V57, P371
+   Fiorentini G, 2003, J BUS ECON STAT, V21, P532, DOI 10.1198/073500103288619232
+   Fornari F, 2002, ECON MODEL, V19, P611, DOI 10.1016/S0264-9993(00)00073-0
+   Fratzscher M, 2002, INT J FINANC ECON, V7, P165, DOI 10.1002/ijfe.187
+   Frijns B, 2010, J FUTURES MARKETS, V30, P134, DOI 10.1002/fut.20405
+   Giovanni D.L., 2005, ADV ECONOMETRICS, V20, P33
+   Goncalves S, 2004, J ECONOMETRICS, V119, P199, DOI 10.1016/S0304-4076(03)00204-5
+   Guan W., 2002, J RISK, V4, P29
+   Hafner CM, 2008, METRIKA, V67, P219, DOI 10.1007/s00184-007-0130-y
+   Hafner Christian M., 1998, FINANCE, V19, P93
+   Hamilton D. L., 1994, HDB SOCIAL COGNITION, V1, P1
+   Hansen PR, 2006, J BUS ECON STAT, V24, P127, DOI 10.1198/073500106000000071
+   Hardie W. K, 2004, NONPARAMETRIC SEMIPA
+   Hardle W., 1991, SMOOTHING TECHNIQUES
+   HARVEY A, 1992, J ECONOMETRICS, V52, P129, DOI 10.1016/0304-4076(92)90068-3
+   Hendershott T., 2010, J FINANCE IN PRESS
+   Kalemli-Ozcan S, 2010, J INT ECON, V81, P75, DOI 10.1016/j.jinteco.2010.02.002
+   Keele L., 2008, SEMIPARAMETRIC REGRE
+   Kroner KF, 1998, REV FINANC STUD, V11, P817, DOI 10.1093/rfs/11.4.817
+   Llewellyn D.T, 2010, RES PAPERS CORPORATE
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   Lucchetti R., 2002, Computational Economics, V19, P133, DOI 10.1023/A:1015001204774
+   Lumsdaine RL, 1996, ECONOMETRICA, V64, P575, DOI 10.2307/2171862
+   MARRON JS, 1989, COMPUT STAT DATA AN, V8, P155, DOI 10.1016/0167-9473(89)90003-0
+   MARRON JS, 1988, STAT PROBABIL LETT, V7, P195, DOI 10.1016/0167-7152(88)90050-8
+   Martens M, 2001, J BANK FINANC, V25, P1805, DOI 10.1016/S0378-4266(00)00159-X
+   McAleer M, 2008, ECONOMET REV, V27, P10, DOI 10.1080/07474930701853509
+   McAleer M, 2008, J ECONOMETRICS, V147, P104, DOI 10.1016/j.jeconom.2008.09.032
+   McCullough BD, 1999, J ECON LIT, V37, P633, DOI 10.1257/jel.37.2.633
+   Mendoza EG, 2010, J MONETARY ECON, V57, P24, DOI 10.1016/j.jmoneco.2009.10.009
+   Mendoza EG, 2009, J POLIT ECON, V117, P371, DOI 10.1086/599706
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   NELSON DB, 1992, J ECONOMETRICS, V52, P61, DOI 10.1016/0304-4076(92)90065-Y
+   NELSON DB, 1990, J ECONOMETRICS, V45, P7, DOI 10.1016/0304-4076(90)90092-8
+   NELSON DB, 1990, ECONOMET THEOR, V6, P318, DOI 10.1017/S0266466600005296
+   Nelson DB, 1996, J ECONOMETRICS, V71, P1, DOI 10.1016/0304-4076(94)01679-8
+   Palmer M, 2009, J TRADING, V4, P30, DOI 10.3905/JOT.2009.4.3.030
+   Pesaran B, 2010, ECON MODEL, V27, P1398, DOI 10.1016/j.econmod.2010.07.012
+   SCHIMEK M, 2000, WILEY SERIES PROBABI
+   Schmidt RH, 1999, J FINANC INTERMED, V8, P36, DOI 10.1006/jfin.1998.0256
+   Scott D. W., 1992, MULTIVARIATE DENSITY
+   Silvennoinen A., 2009, HDB FINANCIAL TIME S, P201, DOI DOI 10.1007/978-3-540-71297-8_9
+   Silverman B. W., 1986, MONOGRAPHS STAT APPL, V26
+   Straumann D, 2006, ANN STAT, V34, P2449, DOI 10.1214/009053606000000803
+   Verhoeven P, 2004, MATH COMPUT SIMULAT, V64, P351, DOI 10.1016/S0378-4754(03)00101-0
+   Walti S, 2011, J INT MONEY FINANC, V30, P96, DOI 10.1016/j.jimonfin.2010.07.004
+   Wand MP, 1995, MONOGRAPHS STAT APPL, V60
+NR 95
+TC 6
+Z9 6
+U1 0
+U2 15
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD JAN
+PY 2013
+VL 30
+BP 776
+EP 791
+DI 10.1016/j.econmod.2012.09.043
+PG 16
+WC Economics
+SC Business & Economics
+GA 090TJ
+UT WOS:000315002600080
+DA 2019-12-28
+ER
+
+PT J
+AU Beirne, J
+   Fratzscher, M
+AF Beirne, John
+   Fratzscher, Marcel
+TI The pricing of sovereign risk and contagion during the European
+   sovereign debt crisis
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Sovereign risk; Contagion; Sovereign debt crisis; Bond spreads; CDS
+   spreads; Ratings
+AB The paper analyses the drivers of sovereign risk for 31 advanced and emerging economies during the European sovereign debt crisis. It shows that a deterioration in countries' fundamentals and fundamentals contagion - a sharp rise in the sensitivity of financial markets to fundamentals - are the main explanations for the rise in sovereign yield spreads and CDS spreads during the crisis, not only for euro area countries but globally. By contrast, regional spillovers and contagion have been less important, including for euro area countries. The paper also finds evidence for herding contagion - sharp, simultaneous increases in sovereign yields across countries - but this contagion has been concentrated in time and among a few markets. Finally, empirical models with economic fundamentals generally do a poor job in explaining sovereign risk in the pre-crisis period for European economies, suggesting that the market pricing of sovereign risk may not have been fully reflecting fundamentals prior to the crisis. (C) 2012 Elsevier Ltd. All rights reserved.
+C1 [Beirne, John; Fratzscher, Marcel] European Cent Bank, D-60311 Frankfurt, Germany.
+RP Fratzscher, M (reprint author), European Cent Bank, Kaiserstr 29, D-60311 Frankfurt, Germany.
+EM John.Beirne@ecb.int; Marcel.Fratzscher@ecb.int
+CR Afonso A., 2007, 711 ECB
+   Amadou S., 2001, 01165 IMF
+   Amato J. D., 2005, BIS Q REV        DEC, P55
+   Attinasi C., 2009, 1131 EC
+   Baldacci E., 2010, 10184 IMF
+   Bekaert B., 2010, N17121 NBER
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   CANTOR R, 1996, FRBNY EC POLICY REV, V2, P37
+   Cecchetti S., 2010, 30 BIS
+   Dell'Ariccia G, 2006, J MONEY CREDIT BANK, V38, P1689, DOI 10.1353/mcb.2006.0091
+   Doetz N., 2010, 112010 DTSCH BUND
+   EDWARDS S, 1984, AM ECON REV, V74, P726
+   Ferrucci G., 2003, 20 BANK ENGL
+   Gibson HD, 2012, J INT MONEY FINANC, V31, P498, DOI 10.1016/j.jimonfin.2011.10.009
+   Goldstein M., 1998, ASIAN FINANCIAL CRIS
+   Hauner D., 2009, 0611 IMF
+   Hauner D, 2010, OXFORD B ECON STAT, V72, P411, DOI 10.1111/j.1468-0084.2010.00589.x
+   Jinjarak Y, 2011, 17407 NBER
+   Manganelli S., 2007, 745 ECB
+   PACKER F, 2005, BIS Q REV, P89
+   Reinhart Carmen, 2011, 16827 NBER
+   Schuknecht L., 2010, 1152 ECB
+   Stein J.L., 2011, CATO JOURNAL, V31, P199
+NR 23
+TC 168
+Z9 170
+U1 7
+U2 75
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD APR
+PY 2013
+VL 34
+SI SI
+BP 60
+EP 82
+DI 10.1016/j.jimonfin.2012.11.004
+PG 23
+WC Business, Finance
+SC Business & Economics
+GA 113CS
+UT WOS:000316644400005
+OA Green Published
+DA 2019-12-27
+ER

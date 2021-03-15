@@ -1,0 +1,500 @@
+
+PT J
+AU Carletti, E
+   Leonello, A
+AF Carletti, Elena
+   Leonello, Agnese
+TI Credit Market Competition and Liquidity Crises
+SO REVIEW OF FINANCE
+LA English
+DT Article
+DE Systemic crises; Interbank market; Cash-in-the-market pricing; Price
+   volatility
+ID CAPITAL REQUIREMENTS; DEPOSIT INSURANCE; FINANCIAL CRISES;
+   MONETARY-POLICY; MORAL HAZARD; RISK-TAKING; BANKING; EQUILIBRIUM;
+   FRAGILITY; POWER
+AB We develop a model where banks invest in reserves and loans, and trade loans on the interbank market to deal with liquidity shocks. Two types of equilibria emerge, depending on the degree of credit market competition and the level of aggregate liquidity risk. In one equilibrium, all banks keep enough reserves and remain solvent. In the other, some banks default with positive probability. The latter equilibrium exists when competition is weak and large liquidity shocks are unlikely. The model delivers several implications concerning the relationship between competition, aggregate credit, and welfare.
+C1 [Carletti, Elena] Bocconi Univ, IGIER, Baffi Carefin Ctr, Milan, Italy.
+   [Carletti, Elena] Bocconi Univ, IGIER, CEPR, Milan, Italy.
+   [Leonello, Agnese] European Cent Bank, Frankfurt, Germany.
+RP Carletti, E (reprint author), Bocconi Univ, IGIER, Baffi Carefin Ctr, Milan, Italy.; Carletti, E (reprint author), Bocconi Univ, IGIER, CEPR, Milan, Italy.
+FU Baffi Carefin Center at Bocconi University
+FX The views expressed here are the authors' and do not necessarily reflect
+   those of the ECB and the Eurosystem. E.C. acknowledges the financial
+   support from Baffi Carefin Center at Bocconi University. We are grateful
+   to two anonimous referees, Franklin Allen, Thorsten Beck (editor),
+   Ettore Croci, Piero Gottardi, Florian Heider, Emanuela Iancu, Andreas
+   Irmen, Robert Marquez, Fernando Vega Redondo, and participants at the
+   48th Fed Chicago Conference on Bank Structure and Competition, the
+   Oxford Financial Intermediation Theory Conference, the CESifo/Bundesbank
+   conference on "The Banking Sector and the State," the EBC/Vanderbilt Law
+   School/SFI conference on Financial Regulation in Uncertain Times in
+   Lugano, the Konstanz Seminar for Monetary Theory and Policy, the Mofir
+   workshop in Ancona, the EEA meeting in Oslo, and the FIRS conference in
+   Quebec City.
+CR Acharya VV, 2012, AM ECON J-MACROECON, V4, P184, DOI 10.1257/mac.4.2.184
+   Acharya VV, 2008, REV FINANC STUD, V21, P2705, DOI 10.1093/rfs/hhm078
+   Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Allen F, 2004, J MONEY CREDIT BANK, V36, P453, DOI 10.1353/mcb.2004.0038
+   ALLEN F, 1994, AM ECON REV, V84, P933
+   Allen F, 2008, J ACCOUNT ECON, V45, P358, DOI 10.1016/j.jacceco.2007.02.005
+   Allen F, 2004, J EUR ECON ASSOC, V2, P1015, DOI 10.1162/1542476042813805
+   Allen F, 2011, REV FINANC STUD, V24, P983, DOI 10.1093/rfs/hhp089
+   Allen F, 2009, J MONETARY ECON, V56, P639, DOI 10.1016/j.jmoneco.2009.04.003
+   Allen Franklin, 2007, UNDERSTANDING FINANC
+   Beck T, 2006, J BANK FINANC, V30, P1581, DOI 10.1016/j.jbankfin.2005.05.010
+   Beck T. H. L., 2007, RISK FINANCIAL I, P194
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Boot A. W. A., 1992, CAPITAL MARKETS FINA, P262
+   Boyd JH, 2005, J FINANC, V60, P1329, DOI 10.1111/j.1540-6261.2005.00763.x
+   Carletti E., 2009, COMPETITION POLICY E, P260
+   Carletti E, 2007, J MONEY CREDIT BANK, V39, P1067, DOI 10.1111/j.1538-4616.2007.00058.x
+   Carletti E, 2008, HANDB FINANC, P449, DOI 10.1016/B978-044451558-2.50022-2
+   Castiglionesi F, 2019, MANAGE SCI, V65, P955, DOI 10.1287/mnsc.2017.2841
+   Cetorelli N, 2001, J FINANC, V56, P617, DOI 10.1111/0022-1082.00339
+   Degryse H., 2009, MICROECONOMETRICS BA
+   Di Patti EB, 2004, J MONEY CREDIT BANK, V36, P225, DOI 10.1353/mcb.2004.0011
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Flannery MJ, 1996, J MONEY CREDIT BANK, V28, P804, DOI 10.2307/2077922
+   Freixas X., 2015, BANKING COMPET UNPUB
+   Freixas X, 2008, J MONEY CREDIT BANK, V40, P1151, DOI 10.1111/j.1538-4616.2008.00152.x
+   Gale D, 2013, THEOR ECON, V8, P291, DOI 10.3982/TE1064
+   Goldstein I, 2005, J FINANC, V60, P1293, DOI 10.1111/j.1540-6261.2005.00762.x
+   Hellmann TF, 2000, AM ECON REV, V90, P147, DOI 10.1257/aer.90.1.147
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Malherbe F, 2014, J FINANC, V69, P947, DOI 10.1111/jofi.12063
+   Martinez-Miera D, 2017, ECONOMETRICA, V85, P351, DOI 10.3982/ECTA14057
+   Martinez-Miera D, 2010, REV FINANC STUD, V23, P3638, DOI 10.1093/rfs/hhq057
+   Matutes C, 1996, J FINANC INTERMED, V5, P184, DOI 10.1006/jfin.1996.0010
+   PETERSEN MA, 1995, Q J ECON, V110, P407, DOI 10.2307/2118445
+   Repullo R, 2004, J FINANC INTERMED, V13, P156, DOI 10.1016/j.jfi.2003.08.005
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Schaeck K, 2009, J MONEY CREDIT BANK, V41, P711, DOI 10.1111/j.1538-4616.2009.00228.x
+   Schularick M, 2012, AM ECON REV, V102, P1029, DOI 10.1257/aer.102.2.1029
+   SHAKED A, 1984, ECONOMETRICA, V52, P1351, DOI 10.2307/1913509
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+NR 43
+TC 0
+Z9 0
+U1 1
+U2 1
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1572-3097
+EI 1573-692X
+J9 REV FINANC
+JI Rev. Financ.
+PD SEP
+PY 2019
+VL 23
+IS 5
+BP 855
+EP 892
+DI 10.1093/rof/rfy026
+PG 38
+WC Business, Finance; Economics
+SC Business & Economics
+GA JI3MY
+UT WOS:000493370400001
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Brealey, RA
+   Cooper, IA
+   Kaplanis, E
+AF Brealey, Richard A.
+   Cooper, Ian A.
+   Kaplanis, Evi
+TI The effect of mergers on US bank risk in the short run and in the long
+   run
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Bank mergers; Bank risk; Bank regulation; Too big to fail;
+   Concentration-fragility
+ID SYSTEMIC RISK; CONSOLIDATION; MEGAMERGERS; INCENTIVES; FINANCE
+AB We examine changes in risk following US bank mergers in the period 1981-2014. Short-run increases in acquirer risk following mergers occur only in the first few mergers undertaken by the same acquirer, and only in systematic risk. The equity volatility of acquirers does not increase. Using a new approach to measure the long-run effect we find that these results persist, consistent with banks maintaining a constant level of total equity risk in the long run. Constant acquirer risk means that all diversification benefits of the mergers are dissipated. We measure the loss of diversification associated with mergers and find it to be 40% of the risk level in 1981. Almost all of this occurred prior to 2004. In addition, there has been a large increase in correlations between the largest banks, much of which has come from sources other than mergers. The results are inconsistent with these mergers being motivated by the 'too big to fail' put. They suggest that if one wanted to reduce the risk of the banking system by demerging major banks one would have to reach back to the structure that existed before 2004. Simply reversing recent mergers would not have much effect on stock market measures of risk. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Brealey, Richard A.; Cooper, Ian A.; Kaplanis, Evi] London Business Sch, Sussex Pl,Regents Pk, London NW1 4SA, England.
+RP Cooper, IA (reprint author), London Business Sch, Sussex Pl,Regents Pk, London NW1 4SA, England.
+EM icooper@london.edu
+CR Akhavein JD, 1997, REV IND ORGAN, V12, P95, DOI 10.1023/A:1007760924829
+   Amihud Y, 2002, J INT MONEY FINANC, V21, P857, DOI 10.1016/S0261-5606(02)00026-8
+   Baele L, 2007, J BANK FINANC, V31, P1999, DOI 10.1016/j.jbankfin.2006.08.003
+   Berger AN, 1995, BROOKINGS PAP ECO AC, P55
+   Bharath S.T, 2006, U MICHIGAN WORKING P
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Carbo-Valverde S, 2012, J MONEY CREDIT BANK, V44, P1609, DOI 10.1111/j.1538-4616.2012.00546.x
+   Craig B.R, 1997, 9619 FED RES BANK CL
+   DeLong GL, 2001, J FINANC ECON, V59, P221, DOI 10.1016/S0304-405X(00)00086-6
+   EMMONS WR, 2004, J FINANCIAL SERVICES, V25, P259, DOI DOI 10.1023/B:FINA.0000020665.54596.f6
+   Fahlenbrach R, 2012, J FINANC, V67, P2139, DOI 10.1111/j.1540-6261.2012.01783.x
+   Furfine CH, 2011, J CORP FINANC, V17, P832, DOI 10.1016/j.jcorpfin.2011.03.003
+   Goetz MR, 2016, J FINANC ECON, V120, P346, DOI 10.1016/j.jfineco.2016.01.020
+   Jayaratne J, 1996, Q J ECON, V111, P639, DOI 10.2307/2946668
+   JOHN K, 1991, J BANK FINANC, V15, P895, DOI 10.1016/0378-4266(91)90105-U
+   Kane EJ, 2000, J MONEY CREDIT BANK, V32, P671, DOI 10.2307/2601202
+   Knapp M, 2014, MANAG FINANC, V40, P51, DOI 10.1108/MF-03-2013-0052
+   Lepetit L, 2014, PRODUCT DIVERSIFICAT, DOI [10.2139/ssrn.873490, DOI 10.2139/SSRN.873490]
+   Campa JM, 2008, J FINANC SERV RES, V33, P127, DOI 10.1007/s10693-008-0027-6
+   Mercieca S, 2009, J FINANC SERV RES, V36, P137, DOI 10.1007/s10693-009-0060-0
+   Mishra S, 2005, J ECON BUS, V29, P84
+   Nucera F, 2016, INFORM SYSTEMIC RISK
+   Pan YH, 2015, REV FINANC STUD, V28, P1623, DOI 10.1093/rfs/hhv014
+   Sarin N, 2016, BROOK PAP EC ACT
+   Shaffer S, 1994, RES FINANC SERV, V6
+   Uhde A, 2009, J BANK FINANC, V33, P1299, DOI 10.1016/j.jbankfin.2009.01.006
+   Vallascas F, 2011, J BANK FINANC, V35, P902, DOI 10.1016/j.jbankfin.2010.09.001
+   Weiss GNF, 2014, J BANK FINANC, V40, P165, DOI 10.1016/j.jbankfin.2013.11.032
+   Winton A., 1999, DONT PUT ALL YOUR EG
+NR 29
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD NOV
+PY 2019
+VL 108
+AR UNSP 105660
+DI 10.1016/j.jbankfin.2019.105660
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA JN0OQ
+UT WOS:000496604300018
+DA 2019-12-28
+ER
+
+PT J
+AU Racicot, FE
+   Theoret, R
+AF Racicot, Francois-Eric
+   Theoret, Raymond
+TI Hedge fund return higher moments over the business cycle
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Hedge fund; Higher moments; Macroeconomic shocks; Markov
+   regime-switching model; EGARCH; Robust IV
+ID MACROECONOMIC UNCERTAINTY; TIME-SERIES; RISK; ESTIMATORS; MODELS;
+   VOLATILITY; PREFERENCE; SKEWNESS; ERRORS; REGRESSIONS
+AB We investigate how macroeconomic and financial uncertainty impacts the behavior of hedge fund strategy higher moments i.e., co-skewness and co-kurtosis-and their respective cross-sectional dispersions. Consistent with theoretical models, we find that strategy managers trade off these two higher moments when building optimal portfolios. Moreover, these trade-offs depend on the kind of strategy. Our experiments show that the VIX and its conditional variance are the most important factors affecting higher moment risk in the hedge fund industry. They also reveal that the behavior of hedge fund strategies is very asymmetric depending on the phase of the business cycle. In contrast to studies which rely on the mean-variance setting, we find that systemic risk as measured by the cross-sectional dispersions of higher moments tends to decrease in the low regime. The indicators of market volatility play a decisive role to explain this decline in systemic risk.
+C1 [Racicot, Francois-Eric] Univ Ottawa, Telfer Sch Management, 55 Laurier Ave East, Ottawa, ON, Canada.
+   [Racicot, Francois-Eric] IPAG Business Sch, Paris, France.
+   [Theoret, Raymond] Univ Quebec Montreal, Ecole Sci Gest, 315 Est Ste Catherine,R2915, Montreal, PQ, Canada.
+   [Theoret, Raymond] Univ Quebec Outaouais, ESG UQAM, Chaire Informat Financiere & Org, Gatineau, PQ, Canada.
+RP Racicot, FE (reprint author), Univ Ottawa, Telfer Sch Management, 55 Laurier Ave East, Ottawa, ON, Canada.
+EM racicot@telfer.uottawa.ca; raymond.theoret@uqam.ca
+FU WAG Business School
+FX We would like to thank the Editor Paresh Narayan and two anonymous
+   referees for their insightful comments. We also thank the seminar
+   participants at the 2015 Southern Finance Association Conference;
+   Claudia Champagne, Frank Coggins and seminar participants of the Midi
+   Conference held in May 2016 at University of Sherbrooke, and Herbert
+   Dawid for useful comments on previous versions of this article.
+   Financial support from the WAG Business School is gratefully
+   acknowledged.
+CR Agarwal V, 2004, REV FINANC STUD, V17, P63, DOI 10.1093/rfs/hhg044
+   Agarwal V, 2017, J FINANC ECON, V125, P610, DOI 10.1016/j.jfineco.2017.06.006
+   Agarwal V, 2017, J FINANC ECON, V125, P491, DOI 10.1016/j.jfineco.2017.06.015
+   Altken A., 1935, P ROY SOC EDINB, V55, P42
+   [Anonymous], 2009, J DERIVATIVES HEDGE, V15, P91, DOI DOI 10.1057/JDHF.2009.1
+   Asness C, 2001, J PORTFOLIO MANAGE, V28, P6, DOI 10.3905/jpm.2001.319819
+   Back K, 2014, ECON LETT, V125, P219, DOI 10.1016/j.econlet.2014.09.008
+   Bali TG, 2014, J FINANC ECON, V114, P1, DOI 10.1016/j.jfineco.2014.06.008
+   Baum CF, 2006, REV FINANC ECON, V15, P289, DOI 10.1016/j.rfe.2006.01.002
+   Baum CF, 2009, ECON LETT, V102, P87, DOI 10.1016/j.econlet.2008.11.019
+   Beaudry P, 2001, AM ECON REV, V91, P648, DOI 10.1257/aer.91.3.648
+   Bergh G., 2008, J DERIVATIVES HEDGE, V14, P102
+   Black F., 1976, P 1976 M AM STAT ASS, P177
+   Bloom N, 2014, J ECON PERSPECT, V28, P153, DOI 10.1257/jep.28.2.153
+   Bloom N, 2009, ECONOMETRICA, V77, P623, DOI 10.3982/ECTA6248
+   Brown SJ, 2012, REV ASSET PRICING ST, V2, P89, DOI 10.1093/rapstu/rar003
+   Caglayan M, 2016, J FINANC STABIL, V24, P27, DOI 10.1016/j.jfs.2016.04.008
+   Calmes C, 2014, J BANK FINANC, V40, P388, DOI 10.1016/j.jbankfin.2013.11.039
+   Capocci D, 2004, J EMPIR FINANC, V11, P55, DOI DOI 10.1016/J.JEMPFIN.2002.12.002
+   Chan N, 2005, WORKING PAPER
+   Cochrane JH, 2005, ASSET PRICING, P1
+   Dagenais MG, 1997, J ECONOMETRICS, V76, P193, DOI 10.1016/0304-4076(95)01789-5
+   Desmoulins-Lebeault F, 2006, MULTIMOMENT ASSET AL
+   Dittmar RF, 2002, J FINANC, V57, P369, DOI 10.1111/1540-6261.00425
+   Durbin J., 1954, REV INT STAT I, V22, P23, DOI [10.2307/1401917, DOI 10.2307/1401917]
+   Fang H., 1997, FINANCIAL REV, V32, P293, DOI DOI 10.1111/J.1540-6288.1997.TB00426.X
+   Ferrara L, 2018, J APPL ECONOMET, V33, P662, DOI 10.1002/jae.2624
+   Franses D. J, 2000, NONLINEAR TIME SERIE
+   Fuller WA, 1987, MEASUREMENT ERROR MO
+   Fung W, 1997, REV FINANC STUD, V10, P275, DOI 10.1093/rfs/10.2.275
+   Fung W, 2004, FINANC ANAL J, V60, P65, DOI 10.2469/faj.v60.n5.2657
+   Fung W, 2001, REV FINANC STUD, V14, P313, DOI 10.1093/rfs/14.2.313
+   Getmansky M, 2004, J FINANC ECON, V74, P529, DOI 10.1016/j.jfineco.2004.04.001
+   GOLDFELD S. M., 1973, J ECONOMETRICS, V1, P3, DOI DOI 10.1016/0304-4076(73)90002-X
+   Hamilton J. D, 2005, PALGRAVE DICT EC
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   Heuson A. J, 2016, WORKING PAPER
+   Hubner G, 2011, WORKING PAPER
+   HUIZINGA J, 1993, J MONEY CREDIT BANK, V25, P521, DOI 10.2307/2077721
+   Jawadi F, 2012, ECON MODEL, V29, P1003, DOI 10.1016/j.econmod.2012.02.003
+   Jurczenko E, 2006, MULTIMOMENT ASSET AL
+   KIM CJ, 1994, J ECONOMETRICS, V60, P1, DOI 10.1016/0304-4076(94)90036-1
+   Koutmos G, 1995, J INT MONEY FINANC, V14, P747, DOI 10.1016/0261-5606(95)00031-3
+   KRAUS A, 1976, J FINANC, V31, P1085, DOI 10.2307/2326275
+   Kritzman M, 2017, FINANC ANAL J, V73, P16, DOI 10.2469/faj.v73.n4.3
+   Lewbel A, 1997, ECONOMETRICA, V65, P1201, DOI 10.2307/2171884
+   LINTNER J, 1956, AM ECON REV, V46, P97
+   LUCAS RE, 1973, AM ECON REV, V63, P326
+   Malevergne Y, 2005, J PORTFOLIO MANAGE, V31, P49, DOI 10.3905/jpm.2005.570150
+   Marcucci J, 2009, J BANK FINANC, V33, P1624, DOI 10.1016/j.jbankfin.2009.03.010
+   MARKOWITZ H., 1959, PORTFOLIO SELECTION
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Markowitz H, 2012, AESTIMATIO, P8
+   Merton R.C., 1992, CONTINUOUS TIME FINA
+   Mills T. C, 1993, EC MODELLING FINANCI
+   Mitchell M, 2001, J FINANC, V56, P2135, DOI 10.1111/0022-1082.00401
+   Murray S., 2017, WORKING PAPER
+   NEFTCI SN, 1984, J POLIT ECON, V92, P307, DOI 10.1086/261226
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   PAGAN A, 1984, INT ECON REV, V25, P221, DOI 10.2307/2648877
+   PAGAN A, 1988, J APPL ECONOM, V3, P87, DOI 10.1002/jae.3950030202
+   PAGAN A, 1986, REV ECON STUD, V53, P517, DOI 10.2307/2297604
+   PAL M, 1980, J ECONOMETRICS, V14, P349, DOI 10.1016/0304-4076(80)90032-9
+   Quagliariello M, 2008, J BANK REGUL, V9, P102, DOI 10.1057/jbr.2008.4
+   Quagliariello M, 2009, APPL ECON, V41, P323, DOI 10.1080/00036840601007286
+   Racicot F. E, 1993, THESIS
+   Racicot FE, 2014, J DERIVATIVES HEDGE, V20, P207
+   Racicot FE, 2016, J BANK FINANC, V62, P41, DOI 10.1016/j.jbankfin.2015.10.004
+   Racicot FE, 2014, APPL ECON, V46, P1134, DOI 10.1080/00036846.2013.868591
+   Saunders A., 2014, FINANCIAL I MANAGEME
+   Schopflocher TP, 2005, BOUND-LAY METEOROL, V115, P341, DOI 10.1007/s10546-004-5642-7
+   SCOTT RC, 1980, J FINANC, V35, P915, DOI 10.2307/2327209
+   Shleifer A, 2010, AM ECON REV, V100, P46, DOI 10.1257/aer.100.2.46
+   Sichel D. E, 1987, WORKING PAPER
+   Stafylas D, 2018, INT REV FINANC ANAL, V56, P221, DOI 10.1016/j.irfa.2018.01.006
+   Stafylas D, 2017, GLOB FINANC J, V33, P69, DOI 10.1016/j.gfj.2016.08.001
+   Stuart A, 1994, KENDALLS ADV THEORY
+   Wagner W, 2008, J FINANC INTERMED, V17, P330, DOI 10.1016/j.jfi.2008.01.001
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Wilkins JE, 1944, ANN MATH STAT, V15, P333, DOI 10.1214/aoms/1177731243
+   Yu W, 2007, J ASSET MANAG, V8, P58, DOI 10.1057/palgrave.jam.2250060
+NR 82
+TC 0
+Z9 0
+U1 2
+U2 4
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD MAY
+PY 2019
+VL 78
+BP 73
+EP 97
+DI 10.1016/j.econmod.2018.08.016
+PG 25
+WC Economics
+SC Business & Economics
+GA HW6TS
+UT WOS:000466824100007
+DA 2019-12-28
+ER
+
+PT J
+AU Abascal, R
+   Gonzalez, F
+AF Abascal, Ramon
+   Gonzalez, Francisco
+TI Shareholder protection and bank executive compensation after the global
+   financial crisis
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Executive compensation; Banking crises; Bank risk; Bank performance;
+   Shareholder protection
+ID STOCK OPTION PORTFOLIOS; CEO COMPENSATION; MANAGERIAL INCENTIVES;
+   INVESTOR PROTECTION; RISK-TAKING; GOVERNANCE; PAY; SENSITIVITIES;
+   CREDIT; POLICY
+AB We use a hand-collected international database to analyze the change in the risk-taking incentives embedded in bank executive compensation after the onset of the global financial crisis. Our results reveal a reduction in both the risk sensitivity of stock option grants (vega) and total and cash pay-risk sensitivities in countries suffering systemic banking crises. This reduction is greater in countries with strong shareholder protection, especially in banks with good corporate governance, solvent banks, and banks that suffered a reduction in their specific investment opportunity set. The regressions control for government intervention, banking development, and crisis intensity. Our results confirm that the contracting hypothesis is more relevant in countries with stronger shareholder protection, and provide support for measures improving shareholder rights in the approval of bank executive compensation. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Abascal, Ramon; Gonzalez, Francisco] Univ Oviedo, Sch Business & Econ, Ave Cristo S-N, E-33071 Oviedo, Spain.
+RP Gonzalez, F (reprint author), Fac Econ & Empresa, Ave Cristo S-N, Oviedo 33071, Asturias, Spain.
+EM UO17051@uniovi.es; fgonzale@uniovi.es
+FU Spanish Ministry of Economy and Competitiveness
+   [MINECO-16-ECO2015-66184-R]
+FX We thank Carlos Fernandez, Victor Gonzalez, Susana Menendez, and two
+   anonymous referees for their helpful comments. We acknowledge financial
+   support from the Spanish Ministry of Economy and Competitiveness,
+   Project MINECO-16-ECO2015-66184-R.
+CR AGRAWAL A, 1987, J FINANC, V42, P823, DOI 10.1111/j.1540-6261.1987.tb03914.x
+   Bai G, 2013, J BANK FINANC, V37, P799, DOI 10.1016/j.jbankfin.2012.10.026
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Burns N, 2006, J FINANC ECON, V79, P35, DOI 10.1016/j.jfineco.2004.12.003
+   Cai J, 2007, J FINANC, V62, P1891, DOI 10.1111/j.1540-6261.2007.01260.x
+   Caprio G, 2007, J FINANC INTERMED, V16, P584, DOI 10.1016/j.jfi.2006.10.003
+   Cerasi V, 2015, INT J CENT BANK, V11, P241
+   Chen CR, 2006, J BANK FINANC, V30, P915, DOI 10.1016/j.jbankfin.2005.06.004
+   Cheng IH, 2015, J FINANC, V70, P839, DOI 10.1111/jofi.12225
+   Coles JL, 2006, J FINANC ECON, V79, P431, DOI 10.1016/j.jfineco.2004.09.004
+   Core J, 2002, J ACCOUNTING RES, V40, P613, DOI 10.1111/1475-679X.00064
+   CRAWFORD AJ, 1995, J BUS, V68, P231, DOI 10.1086/296662
+   Cunat V, 2009, J BANK FINANC, V33, P495, DOI 10.1016/j.jbankfin.2008.09.003
+   DEFUSCO RA, 1990, J FINANC, V45, P617, DOI 10.2307/2328674
+   Dermirguc-Kunt A., 2015, 7522 POL RES
+   DeYoung R, 2013, J FINANC QUANT ANAL, V48, P165, DOI 10.1017/S0022109012000646
+   Djankov S, 2007, J FINANC ECON, V84, P299, DOI 10.1016/j.jfineco.2006.03.004
+   Dong ZY, 2010, J BANK FINANC, V34, P2518, DOI 10.1016/j.jbankfin.2010.04.010
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Fenn GW, 2001, J FINANC ECON, V60, P45, DOI 10.1016/S0304-405X(01)00039-3
+   Financial Services Authority (FSA), 2009, 0910 FSA
+   Frydman C, 2010, ANNU REV FINANC ECON, V2, P75, DOI 10.1146/annurev-financial-120209-133958
+   Geczy CC, 2007, J FINANC, V62, P2405, DOI 10.1111/j.1540-6261.2007.01279.x
+   Gorton G, 2003, HANDB ECON, V21, P431
+   Guay WR, 1999, J FINANC ECON, V53, P43, DOI 10.1016/S0304-405X(99)00016-1
+   Hagendorff J, 2011, J CORP FINANC, V17, P1078, DOI 10.1016/j.jcorpfin.2011.04.009
+   Hall BJ, 1998, Q J ECON, V113, P653, DOI 10.1162/003355398555702
+   Houston JF, 1995, J MONETARY ECON, V36, P405, DOI 10.1016/0304-3932(95)01219-2
+   HUBBARD RG, 1995, J FINANC ECON, V39, P105, DOI 10.1016/0304-405X(94)00816-J
+   JENSEN MC, 1990, J POLIT ECON, V98, P225, DOI 10.1086/261677
+   John K, 2010, J CORP FINANC, V16, P383, DOI 10.1016/j.jcorpfin.2010.01.001
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Kleymenova A., 2016, 1607 CHIC BOOTH RES
+   Knopf JD, 2002, J FINANC, V57, P801, DOI 10.1111/1540-6261.00442
+   La Porta R, 2006, J FINANC, V61, P1, DOI 10.1111/j.1540-6261.2006.00828.x
+   La Porta R, 2000, J FINANC ECON, V58, P3, DOI 10.1016/S0304-405X(00)00065-9
+   Laeven L., 2012, WP12163 IMF
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Low A, 2009, J FINANC ECON, V92, P470, DOI 10.1016/j.jfineco.2008.05.004
+   MERTON RC, 1973, BELL J ECON, V4, P141, DOI 10.2307/3003143
+   MURPHY KJ, 1986, RAND J ECON, V17, P59, DOI 10.2307/2555628
+   Petersen MA, 2009, REV FINANC STUD, V22, P435, DOI 10.1093/rfs/hhn053
+   Shleifer A, 2002, J FINANC ECON, V66, P3, DOI 10.1016/S0304-405X(02)00149-6
+   SMITH CW, 1992, J FINANC ECON, V32, P263, DOI 10.1016/0304-405X(92)90029-W
+   SMITH CW, 1985, J FINANC QUANT ANAL, V20, P391, DOI 10.2307/2330757
+   Suntheim F., 2010, MANAGERIAL COMPENSAT
+   Zhou XM, 2003, J BUS, V76, P665, DOI 10.1086/377035
+NR 48
+TC 0
+Z9 0
+U1 4
+U2 13
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD FEB
+PY 2019
+VL 40
+BP 15
+EP 37
+DI 10.1016/j.jfs.2018.11.004
+PG 23
+WC Business, Finance; Economics
+SC Business & Economics
+GA HM9UX
+UT WOS:000459831600002
+DA 2019-12-28
+ER
+
+PT J
+AU Karkowska, R
+   Kravchuk, I
+AF Karkowska, Renata
+   Kravchuk, Igor
+TI Identification of global systemically important stock exchange
+SO EQUILIBRIUM-QUARTERLY JOURNAL OF ECONOMICS AND ECONOMIC POLICY
+LA English
+DT Article
+DE capital market; systemic risk; stock exchange; macroprudential policy;
+   financial stability
+ID MARKET; CONTAGION; RISK
+AB Research background: Increased regulations reducing systemic risk are essentially underpinned by the understanding of the global nature and sources of instability of the financial system. In the economic literature, there are many arguments presented by critical supporters and opponents of measuring and reporting global systemically important entities.
+   Purpose of the article: In response to the requirements of regulators, the article seeks to identify systematically important regulated stock markets for selected global stock exchanges by developing a composite ratio. Additionally, it provides empirical evidence concerning their risk exploration.
+   Methods: The proposed method uses weighted average values of indicators grouped in four categories: (1) market size, (2) cross-jurisdictional activity and interconnectedness, (3) substitutability, (4) complexity. The research covers stock exchanges, reported to WFE, spanning the period 2008-2017.
+   Findings & Value added: The study finds that the problem of systemic risk on global stock exchanges is growing despite numerous prudential regulations. In order to obtain a more complete assessment of market systemic sensitivity, regulators should take into account a wider range of indicators and calculations such as cross-jurisdictional activity and market complexity.
+C1 [Karkowska, Renata] Univ Warsaw, Ul Krakowskie Przedmiescie 26-28, PL-00927 Warsaw, Poland.
+   [Kravchuk, Igor] Ternopil Natl Econ Univ, Ternopol, Ukraine.
+RP Karkowska, R (reprint author), Univ Warsaw, Ul Krakowskie Przedmiescie 26-28, PL-00927 Warsaw, Poland.
+EM rkarkowska@wz.uw.edu.pl
+RI Karkowska, Renata/I-8296-2015; Kravchuk, Igor/G-6741-2017
+OI Karkowska, Renata/0000-0002-6335-2973; Kravchuk,
+   Igor/0000-0003-2556-8877
+CR Adrian T, 2011, 17454 NBER, DOI [10.3386/w17454, DOI 10.3386/W17454]
+   Barth J, 2012, J BANKING REGULATION, V13
+   Bijkerk W, 2012, 1 IOSCO
+   BIS, 2013, GLOB SYST IMP BANKS
+   BIS, 2014, G SIB ASS METH SCOR
+   Boss M, 2004, EMPIRICAL ANAL NETWO
+   CGFS, 2016, CGFS PAP, V57
+   Claessens S, 2014, 214 IMF, DOI [10.5089/9781484358115.001, DOI 10.5089/9781484358115.001]
+   Craig B, 2010, J FINANCIAL INTERMED, V23
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   ESRB, 2013, REC INT OBJ INSTR MA
+   Fang L, 2018, EMERGING MARKETS REV, V35
+   Fang LB, 2018, FINANC RES LETT, V24, P137, DOI 10.1016/j.frl.2017.08.002
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   FSB IMF and BIS, 2011, MACR POL TOOLS FRAM
+   FSB IMF & BIS, 2016, EL EFF MACR POL LESS
+   FSB & IOSCO, 2015, ASS METH ID NONB NON
+   Galati G, 2013, J ECON SURV, V27, P846, DOI 10.1111/j.1467-6419.2012.00729.x
+   Gravelle T, 2013, J BANK FINANC, V37, P2196, DOI 10.1016/j.jbankfin.2013.01.007
+   Hong Y, 2004, CHINA EC Q, V3
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   IMF BIS FSB, 2009, GUID ASS SYST IMP FI
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Iori G, 2008, J ECON DYN CONTROL, V32, DOI [10.2139/ssrn.841607, DOI 10.2139/SSRN.841607]
+   Kao WS, 2018, CHIN ECON, V51, P130, DOI 10.1080/10971475.2018.1447822
+   Kroszner R, 2011, AM EC REV, V101
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Morales L, 2012, J ASIAN ECON, V23, P616, DOI 10.1016/j.asieco.2012.09.002
+   Puhr C, 2012, CONTAGIOUSNESS VULNE
+   Roengpitya R, 2011, SYSTEMIC RISK BASEL, DOI [10.2139/ssrn.1773208, DOI 10.2139/SSRN.1773208]
+   Ryan S, 2008, ACCOUNTING REV, V83
+   Schoenmaker D., 2014, MACROPRUDENTIALISM
+   Walesiak M, 2009, STATYSTYCZNA ANALIZA
+   Yu HH, 2018, EMERG MARK REV, V34, P87, DOI 10.1016/j.ememar.2017.10.006
+NR 36
+TC 0
+Z9 0
+U1 0
+U2 0
+PU INST ECONOMIC RESEARCH-POLAND
+PI TORUN
+PA UL GAGARINA 13A, TORUN, 87100, POLAND
+SN 1689-765X
+EI 2353-3293
+J9 EQUILIBRIUM
+JI Equilibrium
+PD MAR
+PY 2019
+VL 14
+IS 1
+BP 31
+EP 51
+DI 10.24136/eq.2019.002
+PG 21
+WC Economics
+SC Business & Economics
+GA HW6YW
+UT WOS:000466837700002
+OA DOAJ Gold
+DA 2019-12-27
+ER

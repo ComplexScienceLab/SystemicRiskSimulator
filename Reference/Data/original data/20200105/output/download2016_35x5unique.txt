@@ -1,0 +1,549 @@
+
+PT J
+AU Elgammal, MM
+   Bas, T
+   Gough, O
+   Shah, N
+   van Dellen, S
+AF Elgammal, Mohammed M.
+   Bas, Tugba
+   Gough, Orla
+   Shah, Neeta
+   van Dellen, Stefan
+TI Do financial distress and liquidity crises affect value and size
+   premiums?
+SO APPLIED ECONOMICS
+LA English
+DT Article
+DE Default risk; value premium; size premium; liquidity crises
+ID BOOK-TO-MARKET; HEDGE FUND CONTAGION; STOCK RETURNS; TIME-SERIES; EQUITY
+   RETURNS; CROSS-SECTION; RISK; LEVERAGE; MODELS; VOLATILITY
+AB This study investigates the impact of liquidity crises on the relationship between stock (value and size) premiums and default risk in the US market. It first examines whether financial distress can explain value and size premiums, and then, subsequently, aims to determine whether liquidity crises increase the risk of value and size premium investment strategies. The study employs a time-varying approach and a sample of US stock returns for the period between January 1982 and March 2011, a period which includes the current liquidity crisis, so as to examine the relationship between default risk, liquidity crises and value and size premiums. The findings indicate that the default premium has explanatory power for value and size premiums, which affect firms with different characteristics. We also find that liquidity crises may actually increase the risks related to size and value premium strategies.
+C1 [Elgammal, Mohammed M.] Qatar Univ, Sch Business & Econ, Dept Finance & Econ, Doha, Qatar.
+   [Bas, Tugba; Gough, Orla; Shah, Neeta; van Dellen, Stefan] Univ Westminster, Westminster Business Sch, Dept Accounting Finance & Governance, London, England.
+RP Elgammal, MM (reprint author), Qatar Univ, Sch Business & Econ, Dept Finance & Econ, Doha, Qatar.
+EM m.elgammal@qu.edu
+RI Bas, Tugba/R-6034-2016; Elgammal, Mohammed/I-2167-2016
+OI Elgammal, Mohammed/0000-0002-1931-5534; van Dellen,
+   Stefan/0000-0002-7959-9567
+CR Akay O, 2013, J EMPIR FINANC, V22, P16, DOI 10.1016/j.jempfin.2013.02.005
+   Bali TG, 2010, J MONETARY ECON, V57, P377, DOI 10.1016/j.jmoneco.2010.03.002
+   BERNANKE BS, 1983, AM ECON REV, V73, P257
+   Black A. J., 2006, J ASSET MANAGEMENT, V32, P505, DOI [10.1108/03074350610666238, DOI 10.1057/PALGRAVE.JAM.2240072]
+   Black AJ, 2006, MANAG FINANC, V32, P505, DOI 10.1108/03074350610666238
+   BOLLERSLEV T, 1987, REV ECON STAT, V69, P542, DOI 10.2307/1925546
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Caballero RJ, 2009, AM ECON REV, V99, P584, DOI 10.1257/aer.99.2.584
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   Campbell John Y., 1997, ECONOMETRICS FINANCI
+   CHAN KC, 1991, J FINANC, V46, P1467, DOI 10.1111/j.1540-6261.1991.tb04626.x
+   CHRISTIE AA, 1982, J FINANC ECON, V10, P407, DOI 10.1016/0304-405X(82)90018-6
+   Cornett MM, 2011, J FINANC ECON, V101, P297, DOI 10.1016/j.jfineco.2011.03.001
+   Cukierman A, 2013, J FINANC STABIL, V9, P373, DOI 10.1016/j.jfs.2013.02.002
+   Darrat AF, 2011, J BUS RES, V64, P199, DOI 10.1016/j.jbusres.2010.02.008
+   Dick-Nielsen J, 2012, J FINANC ECON, V103, P471, DOI 10.1016/j.jfineco.2011.10.009
+   DICKEY DA, 1981, ECONOMETRICA, V49, P1057, DOI 10.2307/1912517
+   Elgammal M. M., STUDIES BUSINESS EC, V18, P33
+   Elgammal MM, 2014, J ASSET MANAG, V15, P48, DOI 10.1057/jam.2014.10
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Fama EF, 1998, J FINANC, V53, P1975, DOI 10.1111/0022-1082.00080
+   Fama EF, 1996, J FINANC, V51, P55, DOI 10.2307/2329302
+   FAMA EF, 1992, J FINANC, V47, P427, DOI 10.2307/2329112
+   Fama EF, 2007, FINANC ANAL J, V63, P44, DOI 10.2469/faj.v63.n6.4926
+   Fama EF, 2006, J FINANC, V61, P2163, DOI 10.1111/j.1540-6261.2006.01054.x
+   Garlappi L, 2011, J FINANC, V66, P789, DOI 10.1111/j.1540-6261.2011.01652.x
+   Giesecke K, 2014, J FINANC ECON, V111, P297, DOI 10.1016/j.jfineco.2013.10.014
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Griffin JM, 2002, J FINANC, V57, P2317, DOI 10.1111/1540-6261.00497
+   Hahn J, 2006, J FINANC QUANT ANAL, V41, P245, DOI 10.1017/S0022109000002052
+   Huang JZ, 2012, REV ASSET PRICING ST, V2, P153, DOI 10.1093/rapstu/ras011
+   Huang Y., 2013, APPL FINANCIAL EC, V23, P315, DOI [10.1080/09603107.2012.720010, DOI 10.1080/09603107.2012.720010]
+   Hull J, 2004, J BANK FINANC, V28, P2789, DOI 10.1016/j.jbankfin.2004.06.010
+   Ivaschenko I. V., 2003, 033 IMF
+   JARQUE CM, 1980, ECON LETT, V6, P255, DOI 10.1016/0165-1765(80)90024-5
+   LAKONISHOK J, 1994, J FINANC, V49, P1541, DOI 10.2307/2329262
+   Leledakis G. N., 2008, 492283 SSRN
+   LJUNG GM, 1978, BIOMETRIKA, V65, P297, DOI 10.2307/2335207
+   Mancini L, 2013, J FINANC, V68, P1805, DOI 10.1111/jofi.12053
+   Mohanram PS, 2005, REV ACCOUNT STUD, V10, P133, DOI 10.1007/s11142-005-1526-4
+   Molina CA, 2005, J FINANC, V60, P1427, DOI 10.1111/j.1540-6261.2005.00766.x
+   Nagel S, 2012, REV FINANC STUD, V25, P2005, DOI 10.1093/rfs/hhs066
+   Penman SH, 2007, J ACCOUNTING RES, V45, P427, DOI 10.1111/j.1475-679X.2007.00240.x
+   Piotroski JD, 2000, J ACCOUNTING RES, V38, P1, DOI 10.2307/2672906
+   RABEMANANJARA R, 1993, J APPL ECONOM, V8, P31, DOI 10.1002/jae.3950080104
+   Reinhart CM, 2008, AM ECON REV, V98, P339, DOI 10.1257/aer.98.2.339
+   Schwarz K., 2015, 1486240 SSRN
+   Vassalou M, 2004, J FINANC, V59, P831, DOI 10.1111/j.1540-6261.2004.00650.x
+NR 50
+TC 2
+Z9 2
+U1 1
+U2 11
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0003-6846
+EI 1466-4283
+J9 APPL ECON
+JI Appl. Econ.
+PD AUG
+PY 2016
+VL 48
+IS 39
+BP 3734
+EP 3751
+DI 10.1080/00036846.2016.1145345
+PG 18
+WC Economics
+SC Business & Economics
+GA DP8JS
+UT WOS:000378744900004
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Das, SR
+AF Das, Sanjiv Ranjan
+TI Matrix Metrics: Network-Based Systemic Risk Scoring
+SO JOURNAL OF ALTERNATIVE INVESTMENTS
+LA English
+DT Article
+ID CONTAGION
+C1 [Das, Sanjiv Ranjan] Santa Clara Univ, Finance, Santa Clara, CA 95053 USA.
+RP Das, SR (reprint author), Santa Clara Univ, Finance, Santa Clara, CA 95053 USA.
+EM srdas@scu.edu
+FU The Reserve Bank of India
+FX The Reserve Bank of India funded the implementation of this article on
+   real time data in India, and the research firm InnovAccer collected the
+   data and hosted the system. The author may be reached at srdas@scu.edu
+   or by phone at 408-554-2776.
+CR Acemoglu D., 2013, WORKING PAPER
+   Acharya V, 2011, WORKING PAPER
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Alter A., 2014, WORKING PAPER
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   Billio M., 2014, WORKING PAPER
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blume  L., 2011, P 12 ACM C EL COMM
+   BONACICH P, 1987, AM J SOCIOL, V92, P1170, DOI 10.1086/228631
+   Borovkova S., 2013, WORKING PAPER
+   Brin S, 1998, COMPUT NETWORKS ISDN, V30, P107, DOI 10.1016/S0169-7552(98)00110-X
+   Brownlees Christian, 2010, WORKING PAPER
+   Brunnermeier M, 2010, WORKING PAPER
+   Burdick D., 2011, IEEE DATA ENG B, V34, P60
+   Cabrales A., 2014, WORKING PAPER
+   Callaway DS, 2000, PHYS REV LETT, V85, P5468, DOI 10.1103/PhysRevLett.85.5468
+   Duffie D., 2011, SYSTEMIC RISK MACROM
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Engle R, 2012, WORKING PAPER
+   Espinosa-Vega M., 2010, WORKING PAPER
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Getmansky M., 2014, INTERCONNECTEDNESS C
+   Glasserman P., 2013, 0009 COL U
+   Huang X., 2011, SYSTEMIC RISK CONTRI
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P112, DOI 10.3905/jpm.2011.37.4.112
+   Levy-Carciente S, 2015, J BANK FINANC, V59, P164, DOI 10.1016/j.jbankfin.2015.05.008
+   Reyngold A, 2015, J ALTERN INVEST, V17, P58, DOI 10.3905/jai.2015.17.4.058
+   Vivier-Lirimont S., 2006, CONTAGION INTERBANK
+   Wachowski Andy, 1999, MATRIX
+NR 32
+TC 7
+Z9 7
+U1 0
+U2 0
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1520-3255
+EI 2168-8435
+J9 J ALTERN INVEST
+JI J. Altern. Invest.
+PD SPR
+PY 2016
+VL 18
+IS 4
+BP 33
+EP 51
+DI 10.3905/jai.2016.18.4.033
+PG 19
+WC Business, Finance
+SC Business & Economics
+GA FJ3LA
+UT WOS:000412632400004
+DA 2019-12-28
+ER
+
+PT J
+AU Ballester, L
+   Casu, B
+   Gonzalez-Urteaga, A
+AF Ballester, Laura
+   Casu, Barbara
+   Gonzalez-Urteaga, Ana
+TI Bank fragility and contagion: Evidence from the bank CDS market
+SO JOURNAL OF EMPIRICAL FINANCE
+LA English
+DT Article
+DE Credit default swaps; Contagion; GVAR; Spillover indices; Financial
+   stability
+ID RISK SPILLOVERS; VOLATILITY; EQUITY; SPREADS
+AB Understanding how contagion works among financial institutions is a top priority for regulators and policy makers who aim to foster financial stability and to prevent financial crises. Using bank credit default swap (CDS) data, we provide a framework for the evaluation of contagion among banks in different countries and regions during a period of prolonged financial distress. We measure contagion in terms of return spillovers, following a Generalized VAR (GVAR) approach. In addition, we propose an innovative framework to distinguish between two types of contagion: systematic (linked to global factors), and idiosyncratic (linked to bank specific factors). We find evidence of both types of contagion, although the spillover dynamics changed over time. Our measure of systematic contagion is always greater than the idiosyncratic component, thus highlighting the importance of common factors in the propagation of risk spillovers. This indicates that international linkages among banking markets are central to the transmission of shocks. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Ballester, Laura] Univ Valencia, Valencia, Spain.
+   [Casu, Barbara] City Univ London, Cass Business Sch, London, England.
+   [Gonzalez-Urteaga, Ana] Univ Publ Navarra, Pamplona, Spain.
+RP Ballester, L (reprint author), Univ Valencia, Valencia, Spain.
+EM Laura.Ballester@uv.es; b.casu@city.ac.uk; ana.gonzalezu@unavarra.es
+RI Miquel, Laura Ballester/T-8482-2017; Gonzalez-Urteaga, Ana/H-1834-2015
+OI Miquel, Laura Ballester/0000-0002-5882-6783; Gonzalez-Urteaga,
+   Ana/0000-0002-8256-8518
+FU Fundacion Ramon Areces; Cass Business School under the Pump Priming
+   Grant Scheme;  [ECO2012-34268];  [ECO2012-35946]
+FX This paper has been prepared while Laura Ballester and Ana
+   Gonzalez-Urteaga were visiting researchers at Cass Business School, City
+   University London. Laura Ballester and Ana Gonzalez-Urteaga would like
+   to express their gratitude for the funding received from Fundacion Ramon
+   Areces. Ana Gonzalez-Urteaga acknowledges financial support from
+   ECO2012-34268, ECO2012-35946 and from Cass Business School under the
+   Pump Priming Grant Scheme.
+CR Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Alter A, 2014, J BANK FINANC, V42, P134, DOI 10.1016/j.jbankfin.2014.01.030
+   Augustin Patrick, 2014, Foundations and Trends in Finance, V9, P1, DOI 10.1561/0500000040
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Berndt A, 2010, REV FINANC, V14, P189, DOI 10.1093/rof/rfq004
+   Blanco R, 2005, J FINANC, V60, P2255, DOI 10.1111/j.1540-6261.2005.00798.x
+   Broto C, 2015, J EMPIR FINANC, V32, P165, DOI 10.1016/j.jempfin.2015.03.010
+   CACERES C, 2010, WP10120 IMF
+   Caporin M., 2015, 103 SAFE
+   Cetorelli N, 2012, J FINANC, V67, P1811, DOI 10.1111/j.1540-6261.2012.01773.x
+   Chen K, 2011, ANAL CDS T IMPLICATI
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   Degryse H., 2010, INT REV FINANC, V10, P209, DOI DOI 10.1111/J.1468-2443.2010.01109.X
+   DeSantis G, 1997, J FINANC, V52, P1881, DOI 10.1111/j.1540-6261.1997.tb02745.x
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Eichengreen B, 2012, J INT MONEY FINANC, V31, P1299, DOI 10.1016/j.jimonfin.2012.02.002
+   Elyasiani E., 2015, J FINANCE S IN PRESS
+   EUN CS, 1989, J FINANC QUANT ANAL, V24, P241, DOI 10.2307/2330774
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gropp R, 2006, J MONEY CREDIT BANK, V38, P399, DOI 10.1353/mcb.2006.0032
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   Kaminsky GL, 2003, J ECON PERSPECT, V17, P51, DOI 10.1257/089533003772034899
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Lakepohl H., 2005, NEW INTRO MULTIPLE T
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   LUTKEPOHL H, 1990, REV ECON STAT, V72, P116, DOI 10.2307/2109746
+   Mayordomo S, 2014, EUR FINANC MANAG, V20, P677, DOI 10.1111/j.1468-036X.2013.12023.x
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Stulz RM, 2010, J ECON PERSPECT, V24, P73, DOI 10.1257/jep.24.1.73
+   Tonzer L, 2015, J FINANC STABIL, V18, P19, DOI 10.1016/J.JFS.2015.02.002
+   Yang J, 2013, MANAGE SCI, V59, P2343, DOI 10.1287/mnsc.2013.1706
+   Zhang BY, 2009, REV FINANC STUD, V22, P5099, DOI 10.1093/rfs/hhp004
+NR 39
+TC 13
+Z9 13
+U1 1
+U2 16
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0927-5398
+EI 1879-1727
+J9 J EMPIR FINANC
+JI J. Empir. Financ.
+PD SEP
+PY 2016
+VL 38
+BP 394
+EP 416
+DI 10.1016/j.jempfin.2016.01.011
+PN A
+PG 23
+WC Business, Finance; Economics
+SC Business & Economics
+GA DX4WY
+UT WOS:000384383000022
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Battiston, S
+   Caldarelli, G
+   May, RM
+   Roukny, T
+   Stiglitz, JE
+AF Battiston, Stefano
+   Caldarelli, Guido
+   May, Robert M.
+   Roukny, Tarik
+   Stiglitz, Joseph E.
+TI The price of complexity in financial networks
+SO PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF
+   AMERICA
+LA English
+DT Article
+DE financial contagion; financial networks; complexity; default
+   probability; systemic risk
+ID SYSTEMIC RISK; BANKING SYSTEMS; CONTAGION; MODEL; STABILITY
+AB Financial institutions form multilayer networks by engaging in contracts with each other and by holding exposures to common assets. As a result, the default probability of one institution depends on the default probability of all of the other institutions in the network. Here, we show how small errors on the knowledge of the network of contracts can lead to large errors in the probability of systemic defaults. From the point of view of financial regulators, our findings show that the complexity of financial networks may decrease the ability to mitigate systemic risk, and thus it may increase the social cost of financial crises.
+C1 [Battiston, Stefano] Univ Zurich, Dept Banking & Finance, FINEXUS Ctr Financial Networks & Sustainabil, CH-8032 Zurich, Switzerland.
+   [Caldarelli, Guido] IMT Sch Adv Studies, I-55100 Lucca, Italy.
+   [Caldarelli, Guido] CNR, Inst Complex Syst, I-00185 Rome, Italy.
+   [Caldarelli, Guido] London Inst Math Sci, London W1K 2XF, England.
+   [May, Robert M.] Univ Oxford, Oxford OX1 1HP, England.
+   [Roukny, Tarik] Univ Libre Bruxelles, Inst Rech Interdisciplinaires & Dev Intelligence, Ecole Polytech, B-1050 Brussels, Belgium.
+   [Roukny, Tarik] Univ Libre Bruxelles, Solvay Brussels Sch Econ & Management, B-1050 Brussels, Belgium.
+   [Roukny, Tarik] Fonds Natl Rech Sci, B-1000 Brussels, Belgium.
+   [Stiglitz, Joseph E.] Columbia Univ, New York, NY 10027 USA.
+RP Battiston, S (reprint author), Univ Zurich, Dept Banking & Finance, FINEXUS Ctr Financial Networks & Sustainabil, CH-8032 Zurich, Switzerland.
+EM stefano.battiston@uzh.ch
+RI battiston, stefano/M-1612-2017; Caldarelli, Guido/A-5274-2010
+OI battiston, stefano/0000-0002-0051-973X; Caldarelli,
+   Guido/0000-0001-9377-3616
+FU European CommissionEuropean Commission Joint Research Centre [SIMPOL
+   610704, DOLFINS 640772, MULTIPLEX 317532, SoBigData 654024]; Swiss
+   National Fund Professorship Grant [PP00P1-144689]; Fonds National de la
+   Recherche ScientifiqueFonds de la Recherche Scientifique - FNRS;
+   Institute for New Economic Thinking (INET)
+FX S.B. and G.C. acknowledge support from the European Commission's Global
+   Systems Science (GSS) initiative and the Future and Emerging
+   Technologies programme (FET) through the Grants SIMPOL 610704, DOLFINS
+   640772, MULTIPLEX 317532, and SoBigData 654024. S.B. acknowledges the
+   Swiss National Fund Professorship Grant PP00P1-144689. T.R. acknowledges
+   the support of Fonds National de la Recherche Scientifique. J.E.S. and
+   S.B. acknowledge the support of the grant on Financial Stability from
+   the Institute for New Economic Thinking (INET).
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Anand K, 2012, J ECON DYN CONTROL, V36, P1088, DOI 10.1016/j.jedc.2012.03.005
+   Anand K, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.045102
+   Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   Bank of England, 2013, FRAM STRESS TEST UK
+   Battiston S, 2016, STAT RISK M IN PRESS
+   Battiston S, 2013, NAT PHYS, V9, P123, DOI 10.1038/nphys2575
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Capponi A, 2015, REV ASSET PRICING ST, V5, P227, DOI 10.1093/rapstu/rav006
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Haldane A.G., 2009, RETHINKING FINANCIAL
+   Haldane AG, 2012, SPEECH DOG FRISBEE
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   International Monetary Fund, 2010, GLOB FIN STAB REP M
+   Lambert F.J., 2014, GLOB FIN STAB REP
+   Laubenbacher R, 2001, ADV APPL MATH, V26, P237, DOI 10.1006/aama.2000.0717
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Peltonen TA, 2014, J FINANC STABIL, V13, P118, DOI 10.1016/j.jfs.2014.05.004
+   Rochet J.-C., 2008, WHY ARE THERE SO MAN
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Stiglitz JE, 2010, AM ECON REV, V100, P388, DOI 10.1257/aer.100.2.388
+NR 32
+TC 39
+Z9 41
+U1 3
+U2 23
+PU NATL ACAD SCIENCES
+PI WASHINGTON
+PA 2101 CONSTITUTION AVE NW, WASHINGTON, DC 20418 USA
+SN 0027-8424
+J9 P NATL ACAD SCI USA
+JI Proc. Natl. Acad. Sci. U. S. A.
+PD SEP 6
+PY 2016
+VL 113
+IS 36
+BP 10031
+EP 10036
+DI 10.1073/pnas.1521573113
+PG 6
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA DV7CU
+UT WOS:000383094500034
+PM 27555583
+OA Green Published, Bronze, Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Swierczek, A
+AF Swierczek, Artur
+TI The "snowball effect" in the transmission of disruptions in supply
+   chains The role of intensity and span of integration
+SO INTERNATIONAL JOURNAL OF LOGISTICS MANAGEMENT
+LA English
+DT Article
+DE Risk management; Supply chain management
+ID GLOBAL FINANCIAL CRISIS; EMPIRICAL-EVALUATION; CLUSTER-ANALYSIS;
+   CONTAGION; RISK; NETWORKS; INTERDEPENDENCE; MARKETS; IMPACT; MODELS
+AB Purpose - The purpose of this paper is to explore the link between interorganizational integration with respect to its intensity and span, as well as the propagation and amplification of disruptions alongside a supply chain.
+   Design/methodology/approach - The paper opted for an exploratory study using a survey of companies. In order to extract the constructs manifesting the span and intensity of integration between companies in supply chains, the principal component analysis was employed. The obtained factor scores were then used as classification criteria in the cluster analysis. It enabled to include similar organizations in terms of intensity and span of supply chain integration. In order to validate the obtained results, the analysis of variance (ANOVA) was conducted and regression models were developed.
+   Findings - The findings of the study show that there is a relationship between the intensity and span of supply chain integration and the "snowball effect" in the transmission of disruptions. The obtained findings show that the span of supply chain integration is negatively associated with the strength of the "snowball effect" in the transmission of disruptions. In addition, the results suggest that more intense supply chain integration contributes to the "snowball effect" in material flows in the forward and backward transmission of disruptions.
+   Research limitations/implications - Although the current study investigates the intensity and span of integration within the basic, extended and ultimate supply chain structure, it still lacks the broader analysis of the "snowball effect" in the transmission of disruptions. The study investigates this phenomenon only within the basic supply chain structure, constituted by the primary members. Another challenge is to examine if the effects of external risk factors (e.g. natural disasters) may also be transferred to other links in the supply chain structure, and what are the similarities and differences (if any) between the mechanism of propagation and amplification of disruptions elicited by internal and external risk factors. Another future direction of study is to define other ways of identification and measurement of the "snowball effect" in order to make cross-industrial and international comparisons of disruptions amplified in the transmission more standardized and objective. In the current study, the phenomenon of the "snowball effect" is anchored in the subjective opinions of managers who may view the problem from different angles. Consequently, the study is limited to individual perceptions of the strength of disruptions affecting the solicited company, its customers and suppliers.
+   Practical implications - In practical terms, the findings provide crucial information for the framework of supply chain risk management and therefore enable its more efficient and effective implementation. The better the managers understand the nature of the "snowball effect" in the transmission of disruptions, the easier it is for them to allocate resources and apply necessary managerial tools to mitigate the negative consequences of risk more effectively. The deliverables of the study also confirm that the interorganizational exchange of information accompanying the supply chain integration enables to mitigate the strength of the "snowball effect" in the transmission of disruptions. Another important implication is the broadening of practical expertise concerning the use of integration not only as a means of obtaining and sustaining supply chain effectiveness and efficiency, but also as the way to mitigate the "snowball effect" in the transmission of disruptions. Therefore, nowadays the supply chain managers are facing another challenging task - namely, how to balance supply chain integration in terms of span and intensity to ensure profits from integration and mitigate the negative risk consequences transmitted among the links in supply chains.
+   Originality/value - The paper elaborates on the underestimated issue of the "snowball effect" in the transmission of disruptions and its drivers. In particular, the paper attempts at filling the gap in empirical studies concerning the relationships between the "snowball effect" in the transmission of disruptions and supply chain integration.
+C1 [Swierczek, Artur] Univ Econ Katowice, Dept Business Logist, Katowice, Poland.
+RP Swierczek, A (reprint author), Univ Econ Katowice, Dept Business Logist, Katowice, Poland.
+EM artur.swierczek@uekat.pl
+FU National Science Centre [DEC-2012/05/E/HS4/01598]
+FX The study was financed by the National Science Centre as a research
+   project no. DEC-2012/05/E/HS4/01598.
+CR Aczel Amir D., 1993, COMPLETE BUSINESS ST
+   Akintoye A, 2007, ENG CONSTR ARCHIT MA, V14, P597, DOI 10.1108/09699980710829049
+   ARMSTRONG JS, 1977, J MARKETING RES, V14, P396, DOI 10.2307/3150783
+   Barratt M, 2004, SUPPLY CHAIN MANAG, V9, P30, DOI 10.1108/13598540410517566
+   Bassetto S., 2005, THESIS
+   Bowersox D.J., 1992, STRATEGIC MARKETING
+   BOWERSOX D. J., 1986, LOGISTICAL MANAGEMEN
+   Bowersox D.J., 2003, SUPPLY CHAIN MANAG, V7, P18
+   Boyson S., 2009, BUILDING CYBER SUPPL, P1
+   Brass D.J., 2002, SOCIAL NETWORK UNPUB
+   Brookes N., 2009, P POMS 2009 ORL FL M, P1
+   CATTELL RB, 1962, PSYCHOL BULL, V59, P389, DOI 10.1037/h0048441
+   CATTELL RB, 1966, MULTIVAR BEHAV RES, V1, P245, DOI 10.1207/s15327906mbr0102_10
+   Cavinato J., 1990, DISTRIBUTION, V89, P74
+   Cavinato J. L., 2004, International Journal of Physical Distribution & Logistics Management, V34, P383, DOI 10.1108/09600030410545427
+   Celik S, 2012, ECON MODEL, V29, P1946, DOI 10.1016/j.econmod.2012.06.011
+   Cheng SK, 2008, J ENTERP INF MANAG, V21, P345, DOI 10.1108/17410390810888642
+   Choi TY, 2009, J SUPPLY CHAIN MANAG, V45, P8, DOI 10.1111/j.1745-493X.2009.03151.x
+   Choi TY, 2001, J OPER MANAG, V19, P351, DOI 10.1016/S0272-6963(00)00068-1
+   Chopra S, 2004, MIT SLOAN MANAGE REV, V46, P53
+   Christopher M., 2005, LOGISTICS SUPPLY CHA
+   Cohen S, 2005, STRATEGIC SUPPLY CHA
+   Cooper M.C., 1997, J BUSINESS LOGISTICS, V18, P67
+   Cox A., 2001, J SUPPLY CHAIN MANAG, V37, P28, DOI DOI 10.1111/J.1745-493X.2001.TB00097.X
+   de Leeuw S, 2009, INT J OPER PROD MAN, V29, P720, DOI 10.1108/01443570910971397
+   Edwards S., 2000, CONTAGION
+   Eichengreen B, 1996, SCAND J ECON, V98, P463, DOI 10.2307/3440879
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Ellram L.M., 1990, INT J LOGIST MANAG, V1, P1, DOI DOI 10.1108/95740939080001276
+   ETTLIE JE, 1992, ACAD MANAGE J, V35, P795, DOI 10.2307/256316
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Frohlich MT, 2001, J OPER MANAG, V19, P185, DOI 10.1016/S0272-6963(00)00055-3
+   George D, 2003, SPSS WINDOWS STEP ST
+   Glick R, 1999, J INT MONEY FINANC, V18, P603, DOI 10.1016/S0261-5606(99)00023-6
+   Golicic S.L., 2003, J BUSINESS LOGISTICS, V4, P57, DOI DOI 10.1002/J.2158-1592.2003.TB00032.X
+   Haile F, 2008, INT REV ECON FINANC, V17, P572, DOI 10.1016/j.iref.2007.05.005
+   Hair J., 1998, MULTIVARIATE DATA AN
+   HAKSTIAN AR, 1982, MULTIVAR BEHAV RES, V17, P193, DOI 10.1207/s15327906mbr1702_3
+   Hammer M., 2001, AGENDA WHAT EVERY BU
+   Hannah J., 1996, ASS PRESS DAYTO 0322
+   HATTIE J, 1985, APPL PSYCH MEAS, V9, P139, DOI 10.1177/014662168500900204
+   Hearnshaw EJS, 2013, INT J OPER PROD MAN, V33, P442, DOI 10.1108/01443571311307343
+   Helen P., 2004, LOGISTICS EUROPE, V12, P16
+   Hendricks KB, 2003, J OPER MANAG, V21, P501, DOI 10.1016/j.jom.2003.02.003
+   Hines P., 1996, PURCHASING SUPPL JAN, P4
+   Horvath L., 2001, SUPPLY CHAIN MANAG, V6, P205, DOI [10.1108/EUM0000000006039, DOI 10.1108/EUM0000000006039]
+   Humphries A., 2004, EUR J MARKETING, V37, P99
+   Humphries Andrew S, 2007, International Journal of Logistics Management, V18, P385, DOI 10.1108/09574090710835129
+   Jackson M. C., 2003, SYSTEMS THINKING CRE
+   Juttner U., 2005, INT J LOGIST MANAG, V16, P120, DOI DOI 10.1108/09574090510617385
+   Juttner U., 2003, INT J LOGIST-RES APP, V6, P197, DOI DOI 10.1080/13675560310001627016
+   Kampstra R. P., 2006, International Journal of Logistics Management, V17, P312, DOI 10.1108/09574090610717509
+   Kannan VR, 2010, SUPPLY CHAIN MANAG, V15, P207, DOI 10.1108/13598541011039965
+   Kazi IA, 2013, ECON MODEL, V30, P90, DOI 10.1016/j.econmod.2012.07.020
+   Keebler J. S., 2001, J BUSINESS LOGISTICS, V22, P1, DOI DOI 10.1002/J.2158-1592.2001.TB00001.X
+   Kersten W., 2007, 18 ANN POMS C 4 7 MA
+   Kersting W., 2012, P POMS M 2012 CHIC I, P1, DOI DOI 10.1109/TDC.2012.6281539
+   Ketchen DJ, 1996, STRATEGIC MANAGE J, V17, P441, DOI 10.1002/(SICI)1097-0266(199606)17:6<441::AID-SMJ819>3.0.CO;2-G
+   Khan O., 2007, INT J LOGIST MANAG, V18, P197, DOI DOI 10.1108/09574090710816931
+   Kim Y, 2011, J OPER MANAG, V29, P194, DOI 10.1016/j.jom.2010.11.001
+   Kolb W., 2011, FINANCIAL CONTAGION
+   Krieger AM, 1999, J CLASSIF, V16, P63, DOI 10.1007/s003579900043
+   Lai KH, 2010, IND MARKET MANAG, V39, P273, DOI 10.1016/j.indmarman.2008.08.002
+   LaLonde B.J., 1996, INT J LOGIST MANAG, V7, P1, DOI DOI 10.1108/09574099610805395
+   Lambert D. M., 1998, INT J LOGIST MANAG, V9, P1, DOI DOI 10.1108/09574099810805807
+   Lambert D. M, 1996, INT J LOGIST MANAG, V7, P1, DOI DOI 10.1108/09574099610805485
+   Lambert D.M., 2008, SUPPLY CHAIN MANAGEM
+   Lamming R, 2004, BRIT J MANAGE, V15, P291, DOI 10.1111/j.1467-8551.2004.00420.x
+   MALHOTRA N. K., 2001, PESQUISA MARKETING O
+   Mason-Jones R., 2008, I OPERATIONS MANAGEM, V24, P17
+   Masson P, 1999, J INT MONEY FINANC, V18, P587, DOI 10.1016/S0261-5606(99)00016-9
+   Mentzer J. T., 2004, International Journal of Physical Distribution & Logistics Management, V34, P606, DOI 10.1108/09600030410557758
+   Mentzer J.T., 2001, SUPPLY CHAIN MANAG, P1
+   Mentzer J.T., 2000, SUPPLY CHAIN MANAG, V5, P52
+   Morales L, 2012, J ASIAN ECON, V23, P616, DOI 10.1016/j.asieco.2012.09.002
+   Morales L, 2014, INT REV ECON FINANC, V29, P108, DOI 10.1016/j.iref.2013.05.010
+   Nishiguchi T, 1998, SLOAN MANAGE REV, V40, P49
+   Norrman A., 2004, International Journal of Physical Distribution & Logistics Management, V34, P434, DOI 10.1108/09600030410545463
+   O'Leary-Kelly SW, 2002, J OPER MANAG, V20, P221, DOI 10.1016/S0272-6963(02)00005-0
+   Oliva-Gonzalez S., 2011, REV AMBIENTE AGUA AN, V6, P27
+   Peck H., 2005, International Journal of Physical Distribution & Logistics Management, V35, P210, DOI 10.1108/09600030510599904
+   Podsakoff PM, 2003, J APPL PSYCHOL, V88, P879, DOI 10.1037/0021-9010.88.5.879
+   PRAHALAD CK, 1994, STRATEGIC MANAGE J, V15, P5, DOI 10.1002/smj.4250151002
+   Radjou N., 2002, ADAPTING SUPPLY NETW
+   RAFUSE ME, 1996, MANAGE DECIS, V34, P59, DOI DOI 10.1108/00251749610110346
+   Rao S, 2009, INT J LOGIST MANAG, V20, P97, DOI 10.1108/09574090910954864
+   Rapana P., 2009, CISC VIS NETW IND GL, P1
+   Sagan A., 2003, EXAMPLES ADV METHODS, P1
+   SAMARANAYAKE P, 2005, INT J SUPPLY CHAIN M, V10, P47, DOI DOI 10.1108/13598540510578379
+   Schmidt M. J., 2006, MARKETING RES INT AP
+   Senge P.M., 2004, 5 DISCIPLINE
+   Shen PL, 2015, ECON MODEL, V50, P193, DOI 10.1016/j.econmod.2015.06.017
+   Sodhi MS, 2007, J OPER RES SOC, V58, P1430, DOI 10.1057/palgrave.jors.2602410
+   Spekman R., 1995, BUSINESS MARKETING I, P157
+   Spekman R. E., 2004, International Journal of Physical Distribution & Logistics Management, V34, P414, DOI 10.1108/09600030410545454
+   Spekman R. E., 1998, SUPPLY CHAIN MANAG, V3, P53, DOI DOI 10.1108/13598549810215379
+   Svensson G, 2002, INT J LOGIST-RES APP, V5, P3
+   Svensson G., 2002, INT J PHYS DISTRIB, V32, P110, DOI DOI 10.1108/09600030210421723
+   Svensson G, 2000, INT J PHYS DISTRIB, V30, P731, DOI DOI 10.1108/09600030010351444
+   Swierczek A., 2012, J EC MANAGEMENT, V5, P28
+   Swierczek A., 2012, 23 ANN POMS C CHIC, P1
+   Swierczek A., 2013, J EC MANAGEMENT, V12, P83
+   Swierczek A, 2014, INT J PROD ECON, V157, P89, DOI 10.1016/j.ijpe.2013.08.010
+   Tang CS, 2006, INT J PROD ECON, V103, P451, DOI 10.1016/j.ijpe.2005.12.006
+   Tchankova Lubka, 2002, ENV MANAGEMENT HLTH, V13, P290, DOI DOI 10.1108/09566160210431088
+   Towill D.R., 1999, CONTROL, V25, P9
+   Tsai J, 2013, AUTON AGENT MULTI-AG, V27, P200, DOI 10.1007/s10458-013-9220-6
+   van Dorp JR, 1999, INT J PROD ECON, V58, P17, DOI 10.1016/S0925-5273(98)00081-4
+   Van Rijckehem C, 2001, J INT ECON, V54, P293, DOI 10.1016/S0022-1996(00)00095-7
+   Vilko J, 2014, INT J LOGIST MANAG, V25, P3, DOI 10.1108/IJLM-10-2012-0126
+   Wagner SM, 2008, J BUS LOGIST, V29, P307, DOI 10.1002/j.2158-1592.2008.tb00081.x
+   Waters D., 2007, SUPPLY CHAIN RISK MA
+   Wilding R., 2006, International Journal of Physical Distribution & Logistics Management, V36, P309, DOI 10.1108/09600030610672064
+   Zieleniewski J, 1972, ORG ZESPOLOW LUDZKIC
+NR 114
+TC 1
+Z9 1
+U1 6
+U2 20
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 0957-4093
+EI 1758-6550
+J9 INT J LOGIST MANAG
+JI Int. J. Logist. Manag.
+PY 2016
+VL 27
+IS 3
+BP 1002
+EP 1038
+DI 10.1108/IJLM-08-2015-0133
+PG 37
+WC Management
+SC Business & Economics
+GA EG0FP
+UT WOS:000390707100019
+DA 2019-12-27
+ER

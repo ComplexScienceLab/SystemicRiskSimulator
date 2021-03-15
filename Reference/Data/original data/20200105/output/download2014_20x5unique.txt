@@ -1,0 +1,432 @@
+
+PT J
+AU Cappiello, L
+   Gerard, B
+   Kadareja, A
+   Manganelli, S
+AF Cappiello, Lorenzo
+   Gerard, Bruno
+   Kadareja, Arjan
+   Manganelli, Simone
+TI Measuring Comovements by Regression Quantiles
+SO JOURNAL OF FINANCIAL ECONOMETRICS
+LA English
+DT Article
+DE dependence; conditional quantiles
+ID FINANCIAL CONTAGION; EQUITY MARKETS; STOCK MARKETS; RETURNS; TESTS;
+   CRISES; RISK
+AB This article develops an econometric framework to investigate the structure of dependence between random variables and to test whether it changes over time. Our approach is based on the computation-over both a test and a benchmark period-of the conditional probability that a random variable is lower than a given quantile, when another random variable is also lower than its corresponding quantile, for any set of prespecified quantiles. Time-varying conditional quantiles are modeled via regression quantiles. The conditional probability is estimated through a simple OLS regression. We illustrate the methodology by investigating the impact of the crises of the 1990s and 2000s on the major Latin American equity markets returns. Our results document significant increases in equity return comovements during crisis times.
+C1 [Cappiello, Lorenzo; Manganelli, Simone] European Cent Bank, D-60311 Frankfurt, Germany.
+   [Gerard, Bruno] Norwegian Sch Management BI, Oslo, Norway.
+   [Kadareja, Arjan] Bank Albania, Tirana, Albania.
+   [Kadareja, Arjan] European Univ Tirana, Tirana, Albania.
+RP Manganelli, S (reprint author), European Cent Bank, Kaiserstr 29, D-60311 Frankfurt, Germany.
+EM simone.manganelli@ecb.int
+CR Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Ball C. A., 2005, CONTAGION PRES UNPUB
+   Baur D., 2005, EMERG MARK REV, V6, P21, DOI DOI 10.1016/j.ememar.2004.10.001
+   Cappiello L., 2006, 598 ECB
+   Cappiello L, 2010, J FINANC QUANT ANAL, V45, P473, DOI 10.1017/S0022109010000086
+   Chakraborty B, 2003, J STAT PLAN INFER, V110, P109, DOI 10.1016/S0378-3758(01)00277-4
+   Chaudhuri P, 2013, J AM STAT ASSOC, V91, P862, DOI [10.2307/2291681, DOI 10.1080/01621459.1996.10476954]
+   Chernozhukov V, 2010, ECONOMETRICA, V78, P1093, DOI 10.3982/ECTA7880
+   Chollette L., 2006, 200610 NHH BERG
+   Chollette L., 2005, COMOVEMENT INT UNPUB
+   Ciccarelli M, 2007, J FINANC ECONOMET, V5, P285, DOI 10.1093/jjfinec/nbm003
+   CUMBY RE, 1987, J FINANC ECON, V19, P169, DOI 10.1016/0304-405X(87)90033-X
+   DAGOSTINO RB, 1990, AM STAT, V44, P316, DOI 10.2307/2684359
+   De Bandt O., 2000, 35 ECB
+   DeSantis G, 1997, J FINANC, V52, P1881, DOI 10.1111/j.1540-6261.1997.tb02745.x
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Eichengreen B, 1996, SCAND J ECON, V98, P463, DOI 10.2307/3440879
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Garcia R, 2011, J BANK FINANC, V35, P1954, DOI 10.1016/j.jbankfin.2011.01.003
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hong YM, 2007, REV FINANC STUD, V20, P1547, DOI 10.1093/rfs/hhl037
+   Karolyi A, 2003, INT FINANC, V6, P179, DOI DOI 10.1111/1468-2362.00114
+   Karolyi GA, 1996, J FINANC, V51, P951, DOI 10.2307/2329228
+   Kim T.-H., 2004, FINANC RES LETT, V1, P56, DOI DOI 10.1016/S1544-6123(03)00003-5
+   KING M, 1994, ECONOMETRICA, V62, P901, DOI 10.2307/2951737
+   Kleimeier Stefanie, 2003, INT FINANCIAL MARKET, V13, P171, DOI DOI 10.1016/S1042-4431(02)00043-4
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   MAMMEN E, 1991, ANN STAT, V19, P741, DOI 10.1214/aos/1176348118
+   Martens M, 2001, J BANK FINANC, V25, P1805, DOI 10.1016/S0378-4266(00)00159-X
+   Newey W.K., 1994, HDB ECONOMETRICS, VIV
+   Patton A., 2004, J FINANCIAL ECONOMET, V2, P130, DOI DOI 10.1093/JJFINEC/NBH006
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   White H., 2008, VOLATILITY TIME SERI
+   White H., 2012, WORKING PAPERS, V2012rwp-45
+   Yuan K, 2005, J FINANC, V60, P379, DOI 10.1111/j.1540-6261.2005.00733.x
+NR 42
+TC 10
+Z9 10
+U1 1
+U2 13
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1479-8409
+EI 1479-8417
+J9 J FINANC ECONOMET
+JI J. Financ. Econom.
+PD FAL
+PY 2014
+VL 12
+IS 4
+SI SI
+BP 645
+EP 678
+DI 10.1093/jjfinec/nbu009
+PG 34
+WC Business, Finance; Economics
+SC Business & Economics
+GA AP6XK
+UT WOS:000342221600004
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Pesa, AR
+   Festic, M
+AF Pesa, Anita Radman
+   Festic, Mejra
+TI Panel regression of stock market indices dynamics in south-eastern
+   European economies
+SO ECONOMIC RESEARCH-EKONOMSKA ISTRAZIVANJA
+LA English
+DT Article
+DE financial integration; stock exchange; panel regression; south-eastern
+   Europe (SEE)
+ID INSTRUMENTAL VARIABLES; SPECIFICATION; COINTEGRATION; COUNTRIES; TESTS
+AB We tested the hypothesis of pro-cyclicality of the stock exchanges indices regarding economic activity of south-eastern European countries (SEE) in the Two-Stage Least Squares (TSLS) model in order to demonstrate the degree and pace of integration of 'new' financial markets into larger ones (EU). Rising stock prices in the SEE countries may be the sign of economic growth in the region in the light of the financial integration process. Results of panel estimates support the hypothesis of pro-cyclicality in the period of transition of the SEE region and financial integration, due to the opening of the market economy and re-pricing of systematic risk followed by large capital inflows, GDP growth, trade liberalisation and increased industrial production as well as the implementation of reforms regarding EU integration. Also significant is the negative coefficient of government debt in the SEE group results could be interpreted as a 'contagion effect' of the recent global financial crisis that spread beyond national borders.
+C1 [Pesa, Anita Radman] Univ Zadar, Dept Econ, Zadar 23000, Croatia.
+   [Festic, Mejra] Bank Slovenia, Ljubljana 1505, Slovenia.
+RP Pesa, AR (reprint author), Univ Zadar, Dept Econ, Splitska 1, Zadar 23000, Croatia.
+EM apesa@unizd.hr
+OI Radman Pesa, Anita/0000-0003-3767-0676
+CR Adam K, 2002, ANAL COMPARE APPL AL, P1
+   Aizenman J., 2005, WORKING PAPER NO W11
+   AKAIKE H, 1987, PSYCHOMETRIKA, V52, P317, DOI 10.1007/BF02294359
+   Alam M., 2009, INTERNATIONAL JOURNA
+   Ali I, 2010, AFR J BUS MANAGE, V4, P312
+   Ashgar Z., 2007, PERFORMANCE OF LANG
+   Babetskii I., 2007, FINANC UVER, V57, P7
+   Babihuga R., 2007, WORKING PAPERS, V1-30
+   Baele Lieven, 2004, EUROPEAN CENTRAL BAN, P1
+   Baltagi B. H., 2001, ECONOMETRIC ANALYSIS
+   Baltzer M., 2008, EUROPEAN CENTRAL BAN, V81, P1
+   BOUND J, 1995, J AM STAT ASSOC, V90, P443, DOI 10.2307/2291055
+   Caporale G. M, 2005, J EMPIR FINANC, V12, P476, DOI DOI 10.1016/J.JEMPFIN.2004.02.005
+   Cappiello L, 2006, WORKING PAPER SERIES, V683
+   CHEN ZW, 1995, REV FINANC STUD, V8, P287, DOI 10.1093/rfs/8.2.287
+   Christiansen C., 2008, WORKING PAPER 2008 1
+   CRAGG JG, 1993, ECONOMET THEOR, V9, P222, DOI 10.1017/S0266466600007519
+   Cumhur E., 2005, APPL FINANCIAL EC, V15, P987
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Dvorak T., 2006, EMERG MARK REV, V7, P129, DOI DOI 10.1016/J.EMEMAR.2005.09.009
+   Egert B., 2007, EC SYSTEMS, V31, P184, DOI DOI 10.1016/J.ECOSYS.2006.12.004
+   Eicher T. S., 2009, INTERNATIONAL ECONOM
+   ENGLE RF, 1987, ECONOMETRICA, V55, P251, DOI 10.2307/1913236
+   Erdogan B., 2009, DISCUSSION PAPER
+   European Commission, 2011, EU CANDIDATE AND PRE
+   FAMA EF, 1981, AM ECON REV, V71, P545
+   Festic M, 2009, J BUS ECON MANAG, V10, P219, DOI 10.3846/1611-1699.2009.10.219-232
+   Gerard B., 2006, WORKING PAPER SERIES, V626
+   Hahn J, 2002, ECONOMETRICA, V70, P163, DOI 10.1111/1468-0262.00272
+   HAUSMAN JA, 1978, ECONOMETRICA, V46, P1251, DOI 10.2307/1913827
+   Ho C. S. F., 2009, INT J BANKING FINANC, V6, P1
+   Horobet A., 2007, MUNICH PERSONAL REPE
+   Hsiao C., 2003, ANALYSIS OF PANEL DA
+   Iwaisako T., 2004, J FINANC ECON, V3, P281
+   JOHANSEN S, 1988, J ECON DYN CONTROL, V12, P231, DOI 10.1016/0165-1889(88)90041-3
+   Kleibergen F., 2007, RANKTEST STATA MODUL
+   Kleibergen F, 2006, J ECONOMETRICS, V133, P97, DOI 10.1016/j.jeconom.2005.02.011
+   Loayza NV, 2007, WORLD BANK ECON REV, V21, P343, DOI 10.1093/wber/lhm017
+   Maddala G. S., 1999, OXFORD BULLETIN OF E
+   Menike S., 2006, SABARAGAMUWA U J, V6, P50
+   Mishkin FS, 1999, J BANK FINANC, V23, P675, DOI 10.1016/S0378-4266(98)00084-3
+   Mohammad B., 2009, MPRA PAPER 12741
+   Muradoglu G., 2009, THE UK CRISIS OF 200
+   Murray M. P., 2005, WORKING PAPER NO 843
+   Nasseh A., 2000, Q REV EC FINANCE, V40, P229, DOI DOI 10.1016/S1062-9769(99)00054-X
+   Onay C., 2007, THE BUSINESS REVIEW, V1, P119
+   Poghossian T., 2008, INT EC EC POLICY, V6, P259, DOI DOI 10.1007/S10368-009-0130-7
+   Razin A., 1999, WORKING PAPER NO 688
+   Savva S. C., 2007, EMPIR ECON, V39, P337
+   Sorsa P., 2006, WORKING PAPER
+   Staiger D, 1997, ECONOMETRICA ECONOME, V63, P557
+   Stavarek D, 2009, AMFITEATRU ECON, V11, P159
+   Stock J. H., 2005, HONOR THOMAS ROTHENB, P80
+   Syllignakis M., 2006, WORKING PAPER SERIES, V832
+   UniCredit CEE Quarterly, 2010, UNICREDIT CEE QUARTE
+   Western B, 1998, AM J POLIT SCI, V42, P1233, DOI 10.2307/2991856
+   Wooldridge JM, 2002, ECONOMETRIC ANALYSIS
+NR 57
+TC 4
+Z9 4
+U1 0
+U2 12
+PU JURAJ DOBRILA UNIVERSITY PULA
+PI PULA
+PA PRERADOVICEVA 1-1, PULA, 52 100, CROATIA
+SN 1331-677X
+EI 1848-9664
+J9 ECON-RES-EKON ISTRAZ
+JI Ekon. Istraz.
+PY 2014
+VL 27
+IS 1
+BP 673
+EP 688
+DI 10.1080/1331677X.2014.975515
+PG 16
+WC Economics
+SC Business & Economics
+GA AW8JI
+UT WOS:000346507600043
+OA DOAJ Gold, Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Chang, GD
+   Chen, CS
+AF Chang, Guang-Di
+   Chen, Chia-Shih
+TI Evidence of contagion in global REITs investment
+SO INTERNATIONAL REVIEW OF ECONOMICS & FINANCE
+LA English
+DT Article
+DE Contagion; REITs; Iterated cumulative sums of squares; Extreme value
+   theory
+ID ASSET MARKET LINKAGES; FINANCIAL-MARKETS; CRISIS; STABILITY; SHOCKS
+AB This study examines evidence of contagion in global REITs returns over 2006-2010 using daily REITs indices for 16 countries. We apply a correlation coefficient analysis to determine whether between-country REITs return co-movements increase significantly following a crisis. We use an extreme value analysis based on semiparametric and nonparametric estimators to measure global REITs returns with univariate country-specific value-at-risks and multivariate between-country contagion. Applying the iterated cumulative sums of squares to test the timing of market panics, we find significant evidence of contagion in global REITs returns worldwide during the 2007-2009 global financial crisis. (C) 2014 Elsevier Inc. All rights reserved.
+C1 [Chang, Guang-Di; Chen, Chia-Shih] Natl Taiwan Univ Sci & Technol, Grad Inst Finance, Taipei 106, Taiwan.
+RP Chang, GD (reprint author), Natl Taiwan Univ Sci & Technol, Grad Inst Finance, 43 Keelung Rd,Sec 4, Taipei 106, Taiwan.
+EM gchang@mail.ntust.edu.tw
+CR Bacchiocchi E., 2009, INT REV EC, V56, P105
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   Billio M, 2010, COMPUT STAT DATA AN, V54, P2443, DOI 10.1016/j.csda.2009.03.018
+   Bond SA, 2006, J REAL ESTATE FINANC, V32, P253, DOI 10.1007/s11146-006-6800-0
+   Caporale G. M, 2005, J EMPIR FINANC, V12, P476, DOI DOI 10.1016/J.JEMPFIN.2004.02.005
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Dungey M.H., 2012, INTERNATIONAL JOURNA, V10, P85
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Forbes K. J., 2001, INT FINANCIAL CONTAG, P43, DOI DOI 10.1007/978-1-4757-3314-3_
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Fry R, 2010, J BUS ECON STAT, V28, P423, DOI 10.1198/jbes.2010.06060
+   Gordon J., 1999, J REAL ESTATE PORTFO, V5, P161
+   GRUBEL HG, 1968, AM ECON REV, V58, P1299
+   Guo F, 2011, INT REV ECON FINANC, V20, P95, DOI 10.1016/j.iref.2010.07.009
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hartmann P, 2006, NBER CONF R, P133
+   Hatemi A, 2011, ECON MODEL, V28, P2560, DOI 10.1016/j.econmod.2011.07.017
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Huang X., 1992, STATISTICS OF BIVARI
+   INCLAN C, 1994, J AM STAT ASSOC, V89, P913, DOI 10.2307/2290916
+   Kaminsky GL, 2002, J DEV ECON, V69, P451, DOI 10.1016/S0304-3878(02)00096-2
+   LEVY H, 1970, AM ECON REV, V60, P668
+   Manner H, 2010, PAC ECON REV, V15, P364, DOI 10.1111/j.1468-0106.2010.00508.x
+   Mink M., 2009, DNB WORKING PAPER 23
+   Morales L, 2014, INT REV ECON FINANC, V29, P108, DOI 10.1016/j.iref.2013.05.010
+   Mun S.-Y, 2005, THESIS
+   Ostrup F, 2009, ASIAN ECON PAP, V8, P178, DOI 10.1162/asep.2009.8.3.178
+   Pais A, 2011, J BANK FINANC, V35, P681, DOI 10.1016/j.jbankfin.2010.05.012
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Seiler M. J., 1999, J REAL ESTATE LIT, V7, P163, DOI [10.1023/A:1008741320860, DOI 10.1023/A:1008741320860]
+   SOLNIK BH, 1974, J ECON THEORY, V8, P500, DOI 10.1016/0022-0531(74)90024-6
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Wang KM, 2013, QUANT FINANC, V13, P471, DOI 10.1080/14697688.2012.708776
+   Wilson P., 2004, J PROPERTY INVESTMEN, V22, P401
+   Yunus N, 2009, REAL ESTATE ECON, V37, P383, DOI 10.1111/j.1540-6229.2009.00246.x
+   Zurbruegg R, 2003, J REAL ESTATE LIT, V17, P257
+NR 38
+TC 10
+Z9 10
+U1 0
+U2 15
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1059-0560
+EI 1873-8036
+J9 INT REV ECON FINANC
+JI Int. Rev. Econ. Financ.
+PD MAY
+PY 2014
+VL 31
+BP 148
+EP 158
+DI 10.1016/j.iref.2013.12.005
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA AG1VA
+UT WOS:000335203100013
+DA 2019-12-27
+ER
+
+PT J
+AU Yamani, EA
+   Swanson, PE
+AF Yamani, Ehab A.
+   Swanson, Peggy E.
+TI Financial crises and the global value premium: Revisiting Fama and
+   French
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Financial crisis; Contagion; Financial integration; Global value
+   premium; GARCH
+ID MILD SEGMENTATION; RETURNS; CONTAGION; STOCKS; RISK; INTEGRATION; BONDS
+AB This paper examines the impact of financial contagion resulting from global financial crises based on analyses of the global value premium as represented by thirteen countries. We propose a new model that is a composite of the asymmetric GARCH model and the Fama-French two factor model. Then we investigate behavior of the value premium within crisis periods as well as behavior for pre-crisis, crisis and post-crisis periods. Results show that equity markets become more integrated after financial crises that exhibit global effects but less integrated after crises that exhibit regional effects. Overall findings support the risk story of the global value premium. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Yamani, Ehab A.] DeVry Univ, Coll Business & Management, Irving, TX 75063 USA.
+   [Yamani, Ehab A.] Tanta Univ, Coll Business, Tanta, Egypt.
+   [Swanson, Peggy E.] Univ Texas Arlington, Arlington, TX 76019 USA.
+RP Yamani, EA (reprint author), DeVry Univ, Coll Business & Management, Dallas Campus, Irving, TX 75063 USA.
+EM eyamani@devry.edu; Peswanson1@tx.rr.com
+RI Yamani, Ehab/AAG-3620-2019
+OI Yamani, Ehab/0000-0001-7702-0737
+CR Ahmad R, 2012, J INT MONEY FINANC, V31, P1574, DOI 10.1016/j.jimonfin.2012.02.016
+   Arghyrou MG, 2012, J INT FINANC MARK I, V22, P658, DOI 10.1016/j.intfin.2012.03.003
+   Bordo MD, 2012, J INT MONEY FINANC, V31, P2147, DOI 10.1016/j.jimonfin.2012.05.006
+   Bruner R. F., 2008, EMERG MARK REV, V9, P89
+   CAMPBELL JY, 1992, J FINANC, V47, P43, DOI 10.2307/2329090
+   Carhart MM, 1997, J FINANC, V52, P57, DOI 10.2307/2329556
+   DEBONDT WFM, 1985, J FINANC, V40, P793, DOI 10.1111/j.1540-6261.1985.tb05004.x
+   Demyanyk Y, 2011, REV FINANC STUD, V24, P1848, DOI 10.1093/rfs/hhp033
+   Driessen J, 2012, J FINANC ECON, V105, P37, DOI 10.1016/j.jfineco.2012.02.006
+   Edison Hali, 1995, EUROPEAN FINANCIAL M, V1, P61
+   Edwards FR, 1999, J ECON PERSPECT, V13, P189, DOI 10.1257/jep.13.2.189
+   ERRUNZA V, 1985, J FINANC, V40, P105, DOI 10.2307/2328050
+   ERRUNZA V, 1992, J BANK FINANC, V16, P949, DOI 10.1016/0378-4266(92)90034-W
+   Fama E., 1998, J FINANC, V1, P1975
+   FAMA EF, 1989, J FINANC ECON, V25, P23, DOI 10.1016/0304-405X(89)90095-0
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   FAMA EF, 1995, J FINANC, V50, P131, DOI 10.2307/2329241
+   Federal Deposit Insurance Corporation (FDIC), 1997, EX BANK CRIS 1980 EA, VI, P191
+   FERSON WE, 1993, REV FINANC STUD, V6, P527
+   Giavazzi F., 1989, LIMITING EXCHANGE RA
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Harris S., 2003, FINANC MANAGE, V32, P51
+   International Monetary Fund, 1998, WORLD EC FIN SURV IN
+   Kaminsky GL, 1999, J INT MONEY FINANC, V18, P537, DOI 10.1016/S0261-5606(99)00015-7
+   Katada S., 2001, BANKING STABILITY JA, P123
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   Koedijk C., 2002, J INT MONEY FINANC, V21, P905
+   Lafuente J. A., 2004, GLOBAL FINANCE J, V15, P125, DOI DOI 10.1016/J.GFJ.2004.02.002
+   LAKONISHOK J, 1994, J FINANC, V49, P1541, DOI 10.2307/2329262
+   Marcus Alan J., 1989, 3106 NAT BUR EC RES
+   Melvin M, 2009, J INT MONEY FINANC, V28, P1243, DOI 10.1016/j.jimonfin.2009.08.002
+   Michayluk D., 2006, J FINANC RES, VXXIX, P217
+   Mierau JO, 2013, J BANK FINANC, V37, P4765, DOI 10.1016/j.jbankfin.2013.08.025
+   Nitschka T, 2010, J INT MONEY FINANC, V29, P1406, DOI 10.1016/j.jimonfin.2010.04.002
+   Philippas D, 2013, J INT FINANC MARK I, V27, P161, DOI 10.1016/j.intfin.2013.09.008
+   Saffi PAC, 2011, REV FINANC STUD, V24, P821, DOI 10.1093/rfs/hhq124
+   Sander H., 2003, J INT FINANC MARK I, V13, P171
+   Sevilla C., 1995, WORKING PAPER
+   SHILLER RJ, 1984, BROOKINGS PAPERS EC, V2, P457
+   SOLNIK B, 1983, J FINANC, V38, P449, DOI 10.2307/2327978
+   Tuluca SA, 2001, FINANCIAL REV, V36, P125, DOI DOI 10.1111/j.1540-6288.2001.tb00007.x
+   Wu H., 2008, INT RES J FINANCE EC, V15, P175
+   You L., 2006, INT J FINANCE, V18, P4161
+NR 43
+TC 3
+Z9 3
+U1 1
+U2 6
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD NOV
+PY 2014
+VL 33
+BP 115
+EP 136
+DI 10.1016/j.intfin.2014.07.012
+PG 22
+WC Business, Finance; Economics
+SC Business & Economics
+GA AY2GL
+UT WOS:000347406800006
+DA 2019-12-27
+ER
+
+PT J
+AU Sensoy, A
+   Soytas, U
+   Yildirim, I
+   Hacihasanoglu, E
+AF Sensoy, Ahmet
+   Soytas, Ugur
+   Yildirim, Irem
+   Hacihasanoglu, Erk
+TI Dynamic relationship between Turkey and European countries during the
+   global financial crisis
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Eurozone crisis; Sub-prime crisis; CDS; Dynamic conditional correlation;
+   Penalized contrast function
+ID CONTAGION; INTEGRATION
+AB This study examines the relationship between time-varying risk perceptions of investors towards major European countries and Turkey. In that manner, we first obtain the dynamic conditional correlations between the credit default spreads (CDSs) of Turkey and 13 European countries from September 2004 to April 2013. Next, we endogenously detect the shifts in these dynamic correlation levels using a penalized contrast methodology. Accordingly, we find positive level shifts in all correlations following the US crisis. The upward trend in all CDS correlations holds during the eurozone debt crisis, but positive changes in correlations are not flagged as level shifts by the model, except in a few cases. The results suggest that Turkey is not immune to global financial conditions and there is integration between Turkey and the major European economies in terms of risk perception after the global financial crisis. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Sensoy, Ahmet; Hacihasanoglu, Erk] Borsa Istanbul, Res Dept, TR-34467 Istanbul, Turkey.
+   [Soytas, Ugur] Middle E Tech Univ, Dept Business Adm, TR-06531 Ankara, Turkey.
+   [Yildirim, Irem] Cent Bank Republ Turkey, Markets Dept, TR-06100 Ankara, Turkey.
+   [Hacihasanoglu, Erk] Borsa Istanbul, Business & Prod Dev Dept, TR-34467 Istanbul, Turkey.
+RP Sensoy, A (reprint author), Borsa Istanbul, Res Dept, TR-34467 Istanbul, Turkey.
+EM ahmet.sensoy@borsaistanbul.com
+RI Soytas, Ugur/A-5498-2010
+OI Soytas, Ugur/0000-0002-6143-289X; Sensoy, Ahmet/0000-0001-7967-5171
+CR Aielli GP, 2013, J BUS ECON STAT, V31, P282, DOI 10.1080/07350015.2013.771027
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Capiello L., 2006, J FINANC ECON, V25, P537
+   Chen Y.H., 2009, APPL ECON, V43, P1399
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Guesmi K, 2011, ECON MODEL, V28, P2517, DOI 10.1016/j.econmod.2011.07.006
+   Kenourgios D, 2012, J MULTINATL FINANC M, V22, P24, DOI 10.1016/j.mulfin.2012.01.002
+   Kenourgios D, 2011, RES INT BUS FINANC, V25, P296, DOI 10.1016/j.ribaf.2011.02.004
+   Lavielle M, 2005, SIGNAL PROCESS, V85, P1501, DOI 10.1016/j.sigpro.2005.01.012
+   Lavielle M., 2007, LONG MEMORY EC
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Morgan J.P., 2000, J P MORGAN GUIDE CRE, P8
+NR 14
+TC 9
+Z9 9
+U1 0
+U2 20
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD JUN
+PY 2014
+VL 40
+BP 290
+EP 298
+DI 10.1016/j.econmod.2014.04.024
+PG 9
+WC Economics
+SC Business & Economics
+GA AJ7BP
+UT WOS:000337852400030
+DA 2019-12-27
+ER

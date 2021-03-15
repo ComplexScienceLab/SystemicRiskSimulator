@@ -1,0 +1,389 @@
+
+PT J
+AU Dewandaru, G
+   Bacha, OI
+   Masih, AMM
+   Masih, R
+AF Dewandaru, Ginanjar
+   Bacha, Obiyathulla Ismath
+   Masih, A. Mansur M.
+   Masih, Rumi
+TI Risk-return characteristics of Islamic equity indices: Multi-timescales
+   analysis
+SO JOURNAL OF MULTINATIONAL FINANCIAL MANAGEMENT
+LA English
+DT Article
+DE Shariah-compliant stocks; Risk return profile; Systemic risk; Wavelet
+   analysis; Islamic finance
+ID SYSTEMATIC-RISK; MARKET EQUILIBRIUM; WAVELET ANALYSIS; SIZE; MOMENTUM;
+   LEVERAGE; PRICES; MODEL
+AB This paper is motivated by the heightened interest in investing in Islamic equities. The paper is the first attempt at analysing the risk-return characteristics of Islamic indices at different timescales by applying a relatively new approach in finance known as wavelet analysis. We analyze the Dow Jones indices of 11 countries, mostly emerging markets, and 10 global sectors between 2008 and 2012. We focus on exploring the multi-horizon nature of systemic risk (market beta), average return, volatility, and correlation. We find that the differences in betas between Islamic and conventional indices at most of the timescales are not statistically significant. A few exceptions show equal returns with lower risks for Islamic indices mostly at higher time scales (longer horizons) in some countries as well as 6 out of 10 sectors.
+   We also find lower correlations for some Islamic sector-pairs (financials, utilities and consumer services) at lower time scales (shorter horizons). (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Dewandaru, Ginanjar] Gen Council Islamic Banks & Financial Inst CIBAFI, Manama, Bahrain.
+   [Bacha, Obiyathulla Ismath; Masih, A. Mansur M.] Global Univ Islamic Finance INCEIF, Lorong Univ A, Kuala Lumpur 59100, Malaysia.
+   [Masih, Rumi] Bank New York Mellon Asset Management, New York, NY 10286 USA.
+RP Dewandaru, G (reprint author), Gen Council Islamic Banks & Financial Inst CIBAFI, Manama, Bahrain.
+EM gdewandaru@yahoo.com; obiya@inceif.org; mansurmasih@gmail.com;
+   Masih@BNYMellon.com
+CR Abdullah F, 2007, MANAG FINANC, V33, P142, DOI 10.1108/03074350710715854
+   Al-Zoubi HA, 2007, INT J THEOR APPL FIN, V10, P235, DOI 10.1142/S0219024907004184
+   Almasri A, 2003, J APPL STAT, V30, P571, DOI 10.1080/0266476032000053682
+   Asness CS, 2013, J FINANC, V68, P929, DOI 10.1111/jofi.12021
+   Beck T, 2013, J BANK FINANC, V37, P433, DOI 10.1016/j.jbankfin.2012.09.016
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   Black F., 1972, STUDIES THEORY CAPIT
+   Black F., 1976, P 1976 M AM STAT ASS, P177
+   Cakici N, 2013, EMERG MARK REV, V16, P46, DOI 10.1016/j.ememar.2013.03.001
+   Ceria S., 2012, J PORTF MANAG
+   CHEUNG YW, 1992, J FINANC, V47, P1985, DOI 10.2307/2329006
+   CHRISTIE AA, 1982, J FINANC ECON, V10, P407, DOI 10.1016/0304-405X(82)90018-6
+   COHEN KJ, 1980, J FINANC, V35, P249, DOI 10.2307/2327381
+   Derigs U, 2008, INT J ISLAMIC MIDDLE, V1, P285, DOI 10.1108/17538390810919600
+   Diacogiannis G., 2008, INT RES J FINANC EC, V13, P108
+   Elfakhani S., 2005, 12 EC RES FOR C DEC
+   FAMA EF, 1973, J POLIT ECON, V81, P607, DOI 10.1086/260061
+   Fernandez V., 2006, INT REV FINANC ANAL, V15, P203, DOI DOI 10.1016/J.IRFA.2005.02.004
+   Gallegati M., 2005, WAVELET ANAL MENA ST
+   Gencay R, 2005, J INT MONEY FINANC, V24, P55, DOI 10.1016/j.jimonfin.2004.10.003
+   Gencay R, 2003, QUANT FINANC, V3, P108, DOI 10.1088/1469-7688/3/2/305
+   Gencay R, 2001, PHYSICA A, V289, P249, DOI 10.1016/S0378-4371(00)00456-8
+   Gencay R., 2002, INTRO WAVELETS OTHER
+   Girard E., 2005, FMA PAPERS
+   Hakim S., 2002, 11 EC RES FOR ANN C
+   HAMADA RS, 1972, J FINANC, V27, P435, DOI 10.2307/2978486
+   HANDA P, 1993, J FINANC, V48, P1543, DOI 10.2307/2329051
+   HANDA P, 1989, J FINANC ECON, V23, P79, DOI 10.1016/0304-405X(89)90006-8
+   Hassan A., 2006, ISLAMIC BANKING FINA
+   Hassan A., 2005, ISLAM EC STUD, V12, P67
+   Hassan M. K., 2005, SPECULATIVE BUBBLES
+   Hoepner AGF, 2011, EUR J FINANC, V17, P829, DOI 10.1080/1351847X.2010.538521
+   Hussein K. A., 2005, 6 INT C ISL BANK FIN
+   Hussein K. A., 2004, ISLAM EC STUD, V12, P21, DOI DOI 10.3905/J0I.2005.580557
+   Hussein K, 2005, J INVEST, V14, P105, DOI 10.3905/joi.2005.580557
+   Kamil N. K. M., 2013, PACIFIC BASIN FINANC
+   Khamis M.M.Y., 2010, IMPACT GLOBAL FINANC
+   Kim S., 2005, J EMPIR FINANC, V12, P435, DOI DOI 10.1016/J.JEMPFIN.2004.04.008
+   LINTNER J, 1965, J FINANC, V20, P587, DOI 10.2307/2977249
+   Malkiel B., 2006, WORKING PAPER
+   MANDELKER GN, 1984, J FINANC QUANT ANAL, V19, P45, DOI 10.2307/2331000
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Masih A. M. M., 2010, INT REV FINANC ANAL, V19, P10, DOI [DOI 10.1016/j.irfa.2009.12.001, 10.1016/j.irfa.2009.12.001]
+   MERTON RC, 1987, J FINANC, V42, P483, DOI 10.2307/2328367
+   Norsworthy J., 2000, P 2000 IEEE INT ENG
+   Ramsey JB, 1998, STUD NONLINEAR DYN E, V3, P23, DOI 10.2202/1558-3708.1039
+   RUBINSTEIN ME, 1973, J FINANC, V28, P167, DOI 10.1111/j.1540-6261.1973.tb01356.x
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   Whitcher B, 2000, J GEOPHYS RES-ATMOS, V105, P14941, DOI 10.1029/2000JD900110
+NR 49
+TC 26
+Z9 26
+U1 2
+U2 8
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-444X
+EI 1873-1309
+J9 J MULTINATL FINANC M
+JI J. Multinatl. Financ. Manag.
+PD FEB
+PY 2015
+VL 29
+BP 115
+EP 138
+DI 10.1016/j.mulfin.2014.11.006
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA CM3YH
+UT WOS:000357620800006
+DA 2019-12-28
+ER
+
+PT J
+AU Hammoudeh, S
+   McAleer, M
+AF Hammoudeh, Shawkat
+   McAleer, Michael
+TI Advances in financial risk management and economic policy uncertainty:
+   An overview
+SO INTERNATIONAL REVIEW OF ECONOMICS & FINANCE
+LA English
+DT Article
+DE Financial risk management; Economic policy uncertainty; Financial
+   econometrics; Empirical finance
+AB Financial risk management is difficult at the best of times, but especially so in the presence of economic uncertainty and financial crises. The purpose of this special issue on "Advances in Financial Risk Management and Economic Policy Uncertainty" is to highlight some areas of research in which novel econometric, financial econometric and empirical finance methods have contributed significantly to the analysis of financial risk management when there is economic uncertainty, especially the power of print: uncertainty shocks, markets, and the economy, determinants of the banking spread in the Brazilian economy: the role of micro and macroeconomic factors, forecasting value-at-risk using block structure multivariate stochastic volatility models, the time-varying causality between spot and futures crude oil prices: a regime switching approach, a regime-dependent assessment of the information transmission dynamics between oil prices, precious metal prices and exchange rates, a practical approach to constructing price-based funding liquidity factors, realized range volatility forecasting: dynamic features and predictive variables, modeling a latent daily tourism financial conditions index, bank ownership, financial segments and the measurement of systemic risk: an application of CoVaR, model-free volatility indexes in the financial literature: a review, robust hedging performance and volatility risk in option markets: application to Standard and Poor's 500 and Taiwan index options, price cointegration between sovereign CDS and currency option markets in the global financial crisis, whether zombie lending should always be prevented, preferences of risk-averse and risk-seeking investors for oil spot and futures before, during and after the global financial crisis, managing financial risk in Chinese stock markets: option pricing and modeling under a multivariate threshold autoregression, managing systemic risk in The Netherlands, mean-variance portfolio methods for energy policy risk management, on robust properties of the SIML estimation of volatility under micro-market noise and random sampling, asymmetric large-scale (I)GARCH with hetero-tails, the economic fundamentals and economic policy uncertainty of Mainland China and their impacts on Taiwan and Hong Kong, prediction and simulation using simple models characterized by nonstationarity and seasonality, and volatility forecast of stock indexes by model averaging using high frequency data. (C) 2015 Published by Elsevier Inc.
+C1 [Hammoudeh, Shawkat] Drexel Univ, Lebow Coll Business, Philadelphia, PA 19104 USA.
+   [McAleer, Michael] Natl Tsing Hua Univ, Dept Quantitat Finance, Hsinchu 30013, Taiwan.
+   [McAleer, Michael] Erasmus Univ, Erasmus Sch Econ, Inst Econometr, NL-3000 DR Rotterdam, Netherlands.
+   [McAleer, Michael] Tinbergen Inst, Amsterdam, Netherlands.
+   [McAleer, Michael] Univ Complutense Madrid, Dept Quantitat Econ, E-28040 Madrid, Spain.
+   [McAleer, Michael] IPAG Business Sch, Paris, France.
+RP Hammoudeh, S (reprint author), Drexel Univ, Lebow Coll Business, Philadelphia, PA 19104 USA.
+EM hammousm@drexel.edu
+RI McAleer, Michael/A-2407-2008; McAleer, Michael/K-8780-2019
+FU Australian Research CouncilAustralian Research Council; National Science
+   Council, TaiwanNational Science Council of Taiwan
+FX The authors wish to thank the referees for their timely and helpful
+   comments and suggestions on the papers comprising the special issue. For
+   financial support the second author wishes to acknowledge the Australian
+   Research Council and the National Science Council, Taiwan.
+CR Alexopoulos M, 2015, INT REV ECON FINANC, V40, P8, DOI 10.1016/j.iref.2015.02.002
+   Almeida FD, 2015, INT REV ECON FINANC, V40, P29, DOI 10.1016/j.iref.2015.02.003
+   Asai M, 2015, INT REV ECON FINANC, V40, P40, DOI 10.1016/j.iref.2015.02.004
+   Balcilar M, 2015, INT REV ECON FINANC, V40, P72, DOI 10.1016/j.iref.2015.02.005
+   Balcilar M, 2015, INT REV ECON FINANC, V40, P51, DOI 10.1016/j.iref.2015.02.008
+   Bouwman K, 2015, INT REV ECON FINANC, V40, P90, DOI 10.1016/j.iref.2015.02.007
+   Caporin M, 2015, INT REV ECON FINANC, V40, P98, DOI 10.1016/j.iref.2015.02.021
+   Chang CL, 2015, INT REV ECON FINANC, V40, P113, DOI 10.1016/j.iref.2015.02.006
+   Drakos AA, 2015, INT REV ECON FINANC, V40, P127, DOI 10.1016/j.iref.2015.02.010
+   Gonzalez-Perez MT, 2015, INT REV ECON FINANC, V40, P141, DOI 10.1016/j.iref.2015.02.018
+   Han CH, 2015, INT REV ECON FINANC, V40, P160, DOI 10.1016/j.iref.2015.02.009
+   Hui C.-H., 2015, INT REV ECON FINANC, V40, P174
+   Jaskowski M, 2015, INT REV ECON FINANC, V40, P191, DOI 10.1016/j.iref.2015.02.023
+   Lean HH, 2015, INT REV ECON FINANC, V40, P204, DOI 10.1016/j.iref.2015.02.019
+   Li J. S. H., 2015, INT REV ECON FINANC, V40, P8
+   Liao S, 2015, INT REV ECON FINANC, V40, P231, DOI 10.1016/j.iref.2015.02.012
+   Marrero GA, 2015, INT REV ECON FINANC, V40, P246, DOI 10.1016/j.iref.2015.02.013
+   Misaki H, 2015, INT REV ECON FINANC, V40, P265, DOI 10.1016/j.iref.2015.02.024
+   Paolella MS, 2015, INT REV ECON FINANC, V40, P282, DOI 10.1016/j.iref.2015.02.025
+   Sin CY, 2015, INT REV ECON FINANC, V40, P298, DOI 10.1016/j.iref.2015.02.026
+   Swanson NR, 2015, INT REV ECON FINANC, V40, P312, DOI 10.1016/j.iref.2015.02.027
+   Wang CY, 2015, INT REV ECON FINANC, V40, P324, DOI 10.1016/j.iref.2015.02.014
+NR 22
+TC 14
+Z9 14
+U1 13
+U2 154
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1059-0560
+EI 1873-8036
+J9 INT REV ECON FINANC
+JI Int. Rev. Econ. Financ.
+PD NOV
+PY 2015
+VL 40
+BP 1
+EP 7
+DI 10.1016/j.iref.2015.02.001
+PG 7
+WC Business, Finance; Economics
+SC Business & Economics
+GA CZ4ZK
+UT WOS:000367111500001
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU De Angelis, L
+   Gardini, A
+AF De Angelis, Luca
+   Gardini, Attilio
+TI DISEQUILIBRIA AND CONTAGION IN FINANCIAL MARKETS: EVIDENCE FROM A NEW
+   TEST
+SO JOURNAL OF APPLIED ECONOMICS
+LA English
+DT Article
+DE financial contagion; risk premium disequilibrium; cross-country return
+   correlations; financial crises; DCC-GARCH model; C-CAPM
+ID MODELS; INTERDEPENDENCE; STOCK
+AB This paper provides an analysis of contagion by measuring disequilibria in risk premium dynamics. We propose to test financial contagion using an econometric procedure where we first estimate the preference parameters of the consumption-based asset pricing model (C-CAPM) to measure the equilibrium risk premia in different countries and then we consider the difference between empirical and equilibrium risk premia to test cross-country disequilibrium episodes due to contagion. Disequilibrium in financial markets is modeled by the multivariate DCC-GARCH model including a deterministic crisis variable. Our approach allows to identify the disequilibria generated by increases in volatility that is not explained by fundamentals but is endogenous to financial markets and to evaluate the existence of contagion effects defined by exogenous shifts in cross-country return correlations during crisis periods. Our results show evidence of contagion from the U.S. to U.K., Japan, France, and Italy during the crisis started in 2007-08.
+C1 [De Angelis, Luca; Gardini, Attilio] Univ Bologna, Dept Stat Sci, I-40124 Bologna, Italy.
+RP De Angelis, L (reprint author), Univ Bologna, Dept Stat Sci, Via Belle Arti 41, I-40124 Bologna, Italy.
+EM l.deangelis@unibo.it; attilio.gardini@unibo.it
+FU Italian PRIN grant "Multivariate statistical models for risk assessment"
+FX Financial support from Italian PRIN 2010-2011 grant "Multivariate
+   statistical models for risk assessment" is gratefully acknowledged.
+CR Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Bai J, 2003, J APPL ECONOMET, V18, P1, DOI 10.1002/jae.659
+   Billio M., 2003, J ECON BUS, V55, P405
+   Boyer B.H., 1999, 597R FED RES BOARD
+   Brandt MW, 2003, J MONETARY ECON, V50, P1457, DOI 10.1016/j.jmoneco.2003.08.001
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Cipriani M, 2013, J BANK FINANC, V37, P4310, DOI 10.1016/j.jbankfin.2013.06.005
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Crucini MJ, 2011, REV ECON DYNAM, V14, P156, DOI 10.1016/j.red.2010.09.001
+   Dodge Y, 2001, AM STAT, V55, P51, DOI 10.1198/000313001300339932
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Giancarlo Corsetti, 2001, EC WORKING PAPERS BA, V408
+   HANSEN LP, 1982, ECONOMETRICA, V50, P1269, DOI 10.2307/1911873
+   Lee HY, 2007, RES INT BUS FINANC, V21, P281, DOI 10.1016/j.ribaf.2006.05.001
+   MEHRA R, 1985, J MONETARY ECON, V15, P145, DOI 10.1016/0304-3932(85)90061-3
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Stock JH, 2000, ECONOMETRICA, V68, P1055, DOI 10.1111/1468-0262.00151
+   Yang J, 2010, MANAGE SCI, V56, P2031, DOI 10.1287/mnsc.1100.1237
+NR 21
+TC 1
+Z9 1
+U1 0
+U2 6
+PU UNIV CEMA
+PI BUENOS AIRES
+PA AV CORDOBA 374, BUENOS AIRES, C1054AAP, ARGENTINA
+SN 1514-0326
+EI 1667-6726
+J9 J APPL ECON
+JI J. Appl. Econ.
+PD NOV
+PY 2015
+VL 18
+IS 2
+BP 247
+EP 265
+DI 10.1016/S1514-0326(15)30011-8
+PG 19
+WC Economics
+SC Business & Economics
+GA DA8QJ
+UT WOS:000368070400003
+DA 2019-12-27
+ER
+
+PT J
+AU Chan-Lau, JA
+AF Chan-Lau, Jorge A.
+TI Structural Market-Based Top-Down Stress Tests of the Banking System
+SO GLOBAL CREDIT REVIEW
+LA English
+DT Article
+DE Stress tests; banks; default risk; systemic risk; structural models;
+   market prices
+ID RISK
+C1 [Chan-Lau, Jorge A.] Int Monetary Fund, 700 19th St NW, Washington, DC 20431 USA.
+   [Chan-Lau, Jorge A.] Natl Univ Singapore, Risk Management Inst, Singapore, Singapore.
+RP Chan-Lau, JA (reprint author), Int Monetary Fund, 700 19th St NW, Washington, DC 20431 USA.
+EM jchanlau@imf.org
+CR Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Altman E.I., 2006, CORPORATE FINANCIAL
+   Basel Committee on Banking Supervision (BCBS), 2009, REV BAS 2 MARK RISK
+   Bielecki T. R., 2002, SPRINGER FINANCE
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Board of Governors of the Federal Reserve System, 2009, SUP CAP ASS PROGR DE
+   Bohn J., 2003, MODELING DEFAULT RIS
+   Bohn JR, 2009, WILEY FINANC SER, P1, DOI 10.1002/9781118266830
+   Burrows O., 2012, 17 RAMSI
+   Canatta F., 2009, STRESS TESTING BANKI
+   Chan-Lau JA, 2013, SYSTEMIC RISK ASSESS
+   Chan-Lau JA, 2007, J BANK REGUL, V9, P14, DOI 10.1057/palgrave.jbr.2350056
+   Darrell D, 2003, PRINC SER FINANC, P1
+   Duan J. C., 2004, EQUIVALENCE KMV MAXI
+   Duan J. C., 1994, MATH FINANC, V10, P155, DOI DOI 10.1111/J.1467-9965.1994.TB00055.X
+   DUAN JC, 2003, ESTIMATING MERTONS M
+   Ferry D. H., 2012, MODELING METHODOLOGY
+   Ferry DH, 2012, STRESSED EDF CREDIT
+   Foglia A, 2009, INT J CENT BANK, V5, P9
+   Glasserman P., 2012, STRESS SCENARIO SELE
+   Greenlaw D., 2012, 1208 U CHIC BOOTH SC
+   Hamerle A., 2008, STRESS TESTING FINAN
+   IMF, 2005, FIN SECT ASS HDB
+   International Monetary Fund (IMF), 2012, MACR STREES TEST PRI
+   Lando D., 2004, CREDIT RISK MODELING
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Peristian S., 2010, 460 FED RES BANK NEW
+   Quagliarello M., 2009, STRESS TESTING BANKI
+   Rosch D., 2008, STRESS TESTING FINAN
+   Wilson T.C., 1997, RISK, V10, P111
+   Wilson T.C., 1997, RISK, V10, P56
+   Zandi M, 2011, MOODYS ANAL US MACRO
+   Zhang Jing., 2013, CCAR CAPITAL ASSESSM
+NR 33
+TC 0
+Z9 0
+U1 0
+U2 3
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 2010-4936
+EI 2301-3966
+J9 GLOB CREDIT REV
+JI Glob. Credit Rev.
+PY 2015
+VL 5
+IS 1
+BP 35
+EP 48
+DI 10.1142/S2010493615500038
+PG 14
+WC Business, Finance
+SC Business & Economics
+GA V1B9D
+UT WOS:000216763200004
+DA 2019-12-28
+ER
+
+PT J
+AU Liao, S
+   Sojli, E
+   Tham, WW
+AF Liao, Shuyu
+   Sojli, Elvira
+   Tham, Wing Wah
+TI Managing systemic risk in The Netherlands
+SO INTERNATIONAL REVIEW OF ECONOMICS & FINANCE
+LA English
+DT Article
+DE Systemic risk; Macroprudential banking regulation; Financial stability
+ID MANAGEMENT
+AB The paper investigates the effects on systemic risk of macroprudential capital requirements, which require banks to hold capital that is proportional to their contribution to systemic risk. We use a panel of correlated Merton balance sheet models combined with a network clearing algorithm, to measure systemic risk and how it changes with bank capital. The model explicitly incorporates the possibility of default through common exposures to macroeconomic factors and interbank linkages. We use five risk allocation mechanisms to allocate systemic risk to individual banks. Using a sample of Dutch banks, we find that macroprudential capital requirements deviate from the current observed capital levels by as much as 40% and they are positively related to bank size and interbank exposure. Furthermore, macroprudential capital requirements can reduce individual and multiple banks default probabilities by up to 26%. The results suggest that financial stability can be substantially improved by implementing macroprudential regulations for the banking system. (C) 2015 Elsevier Inc. All rights reserved.
+C1 [Liao, Shuyu; Sojli, Elvira; Tham, Wing Wah] Erasmus Univ, NL-3000 DR Rotterdam, Netherlands.
+   [Tham, Wing Wah] Tinbergen Inst, Amsterdam, Netherlands.
+RP Sojli, E (reprint author), Erasmus Univ, Rotterdam Sch Management T8 44, POB 1738, NL-3000 DR Rotterdam, Netherlands.
+EM liaoshuyukylie@gmail.com; esojli@rsm.nl; tham@ese.eur.nl
+RI Sojli, Elvira/R-1789-2019
+OI Sojli, Elvira/0000-0002-1567-8901; Tham, Wing Wah/0000-0002-1169-0073
+CR Acharya VV, 2010, TECHNICAL REPORT
+   Adrian T., 2008, 348 FED RES BANK NEW
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Berry R., 2000, 7 SERIES ARTICLES EX
+   Bisias D., 2012, 0001 OFF FIN RES
+   Borio C., 2003, CESIFO ECON STUD, V49, P181
+   Chang CL, 2013, N AM J ECON FINANC, V25, P151, DOI 10.1016/j.najef.2012.06.011
+   Crockett A., 2000, COMMUNICATION   0921
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   French KR, 2010, SQUAM LAKE REPORT: FIXING THE FINANCIAL SYSTEM, P1
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Gorea D, 2014, INT REV ECON FINANC, V30, P78, DOI 10.1016/j.iref.2013.10.003
+   Hammoudeh S, 2013, N AM J ECON FINANC, V25, P318, DOI 10.1016/j.najef.2012.06.012
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Ho CL, 2014, INT REV ECON FINANC, V30, P57, DOI 10.1016/j.iref.2013.10.002
+   JAMES C, 1991, J FINANC, V46, P1223, DOI 10.2307/2328857
+   Jorion P., 2007, VALUE RISK NEW BENCH
+   McAleer M, 2013, INT REV ECON FINANC, V27, P97, DOI 10.1016/j.iref.2012.09.006
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Moussa A., 2011, CONTAGION SYSTEMIC R
+   Shapley L. S., 1953, ANN MATH STUD, V28, p[307, 307]
+   Tarashev N, 2010, 308 BANK INT SETTL
+NR 24
+TC 6
+Z9 6
+U1 1
+U2 14
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1059-0560
+EI 1873-8036
+J9 INT REV ECON FINANC
+JI Int. Rev. Econ. Financ.
+PD NOV
+PY 2015
+VL 40
+BP 231
+EP 245
+DI 10.1016/j.iref.2015.02.012
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA CZ4ZK
+UT WOS:000367111500017
+DA 2019-12-28
+ER

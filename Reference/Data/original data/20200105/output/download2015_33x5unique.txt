@@ -1,0 +1,455 @@
+
+PT J
+AU Fiedor, P
+AF Fiedor, Pawel
+TI Granger-causal nonlinear financial networks
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE asset networks; Granger causality; lead-lag effect; information theory;
+   transfer entropy
+ID MARKET INDEXES; INFORMATION; ENTROPY; RETURNS; CONNECTEDNESS; CONTAGION;
+   PRICES; WALKS; TREES; RISK
+AB Numerous attempts at studying the lead-lag effect in financial markets can be found in the literature, with recent attempts often using information and network theories. The methodology of these studies, based on Pearson's correlation coefficients or information-theoretic mutual information, approaches the concept of the lead-lag effect in a naive way. In this paper, we further investigate the lead-lag effect in financial markets, this time treating them as causal (in the Granger sense) effects, using transfer entropy. This way, we are able to produce networks of stocks in which directed links represent causal relationships for a specific time lag. We apply this procedure to stocks belonging to the Standard & Poor's 100 index for various time lags in order to investigate the short-term causality on this market. We find that causal relationships are more prevalent than lagged synchronization relationships in New York's market. We also observe that the number of statistically significant links dissipates quickly with increasing time lag. While networks of Granger-causal relationships on the studied market are not scale free, we find the distributions of significant transfer entropy values to be strongly fat tailed.
+C1 [Fiedor, Pawel] Cracow Univ Econ, Rakowicka 27, PL-31510 Krakow, Poland.
+RP Fiedor, P (reprint author), Cracow Univ Econ, Rakowicka 27, PL-31510 Krakow, Poland.
+EM Pawel.F.Fiedor@ieee.org
+CR Abhyankar A, 1997, J BUS ECON STAT, V15, P1, DOI 10.2307/1392068
+   ABHYANKAR A, 1995, ECON J, V105, P864, DOI 10.2307/2235155
+   Ammermann P. A., 2003, PACIFIC BASIN FINANC, V11, P175
+   Aste T, 2010, NEW J PHYS, V12, DOI 10.1088/1367-2630/12/8/085009
+   Baek S. K., 2005, PREPRINT
+   Beirlant J, 1997, INT J MATH STAT SCI, V6, P17
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bonachela JA, 2008, J PHYS A-MATH THEOR, V41, DOI 10.1088/1751-8113/41/20/202001
+   Bonanno G, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.046130
+   Bonanno G., 2001, Quantitative Finance, V1, P96, DOI 10.1088/1469-7688/1/1/306
+   Brock WA, 1991, NONLINEAR DYNAMICS C
+   Brownlees C, 2014, WORKING PAPER
+   CHEN P., 1996, STUDIES NONLINEAR DY, V1, P87
+   Chicharro D, 2012, PHYS REV E, V86, DOI 10.1103/PhysRevE.86.041901
+   Chris Brooks, 1996, APPL FINANCIAL EC, V6, P307, DOI DOI 10.1080/096031096334105
+   Cizeau P, 2001, QUANT FINANC, V1, P217, DOI [10.1080/713665669, 10.1088/1469-7688/1/2/303]
+   Cover T.M., 1991, ELEMENTS INFORM THEO
+   Curme C., 2014, ARXIV14010462
+   Darbellay GA, 1999, IEEE T INFORM THEORY, V45, P1315, DOI 10.1109/18.761290
+   Daub CO, 2004, BMC BIOINFORMATICS, V5, DOI 10.1186/1471-2105-5-118
+   Dawy Z, 2006, IEEE ACM T COMPUT BI, V3, P47, DOI 10.1109/TCBB.2006.9
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Dimpfl T., 2012, 649 SFB HUMB U BERL
+   Efron B, 1993, INTRO BOOTSTRAP
+   Fenn DJ, 2011, PHYS REV E, V84, DOI 10.1103/PhysRevE.84.026109
+   Fiedor P, 2014, IEEE C COMP INTEL FI, P247, DOI 10.1109/CIFEr.2014.6924080
+   Fiedor P, 2014, EUR PHYS J B, V87, DOI 10.1140/epjb/e2014-50108-3
+   Fiedor P, 2014, PHYS REV E, V89, DOI 10.1103/PhysRevE.89.052801
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Franses PH, 1996, J FORECASTING, V15, P229, DOI 10.1002/(SICI)1099-131X(199604)15:3<229::AID-FOR620>3.3.CO;2-V
+   Frenzel S, 2007, PHYS REV LETT, V99, DOI 10.1103/PhysRevLett.99.204101
+   Goebel B, 2005, IEEE ICC, P1102
+   Hlavackova-Schindler K, 2007, PHYS REP, V441, P1, DOI 10.1016/j.physrep.2006.12.004
+   HSIEH DA, 1989, J BUS, V62, P339, DOI 10.1086/296466
+   Huth N, 2014, J EMPIR FINANC, V26, P41, DOI 10.1016/j.jempfin.2014.01.003
+   Junior L. S., 2013, STRUCTURE CAUSALITY
+   Kadanoff L. P., 1971, Simulation, V16, P261, DOI 10.1177/003754977101600603
+   Kenett DY, 2012, EPL-EUROPHYS LETT, V99, DOI 10.1209/0295-5075/99/38001
+   Kenett DY, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0015032
+   Kwon O, 2008, EPL-EUROPHYS LETT, V82, DOI 10.1209/0295-5075/82/68003
+   Laloux L, 2000, INT J THEOR APPL FIN, V03, P391, DOI DOI 10.1142/S0219024900000255
+   Li JP, 2013, ENTROPY-SWITZ, V15, P5549, DOI 10.3390/e15125549
+   Lo AW, 1988, REV FINANC STUD, V1, P41, DOI 10.1093/rfs/1.1.41
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   MANTEGNA RN, 1991, PHYSICA A, V179, P232
+   Marschinski R., 2001, FINANCIAL MARKETS CO
+   McMillan D. G., 2001, INT REV ECON FINANC, V10, P353
+   MEESE RA, 1991, REV ECON STUD, V58, P603, DOI 10.2307/2298014
+   Munnix MC, 2010, PHYSICA A, V389, P4828, DOI 10.1016/j.physa.2010.06.037
+   Navet N, 2008, STUD COMP INTELL, V100, P197
+   Nemenman I, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.056111
+   Oh KJ, 2002, EXPERT SYST APPL, V22, P249, DOI 10.1016/S0957-4174(01)00058-6
+   Onnela JP, 2003, PHYSICA A, V324, P247, DOI 10.1016/S0378-4371(02)01882-4
+   Paninski L, 2003, NEURAL COMPUT, V15, P1191, DOI 10.1162/089976603321780272
+   Podobnik B, 2008, PHYS REV LETT, V100, DOI 10.1103/PhysRevLett.100.084102
+   Qi M, 1999, J BUS ECON STAT, V17, P419, DOI 10.2307/1392399
+   QI M, 2003, J EMPIR FINANC, V10, P623, DOI DOI 10.1016/S0927-5398(03)00008-2
+   Reddy YV, 2009, J ALTERN INVEST, V11, P85, DOI 10.3905/JAI.2009.11.3.085
+   SAMUELSON PA, 1965, IMR-IND MANAG REV, V6, P41
+   Schurmann T, 1996, CHAOS, V6, P414, DOI 10.1063/1.166191
+   SHANNON CE, 1948, BELL SYST TECH J, V27, P623, DOI 10.1002/j.1538-7305.1948.tb00917.x
+   Shmilovici A., 2003, Computational Economics, V22, P273, DOI 10.1023/A:1026198216929
+   Sornette D, 2002, INT J MOD PHYS C, V13, P171, DOI 10.1142/S0129183102003085
+   Steuer R, 2001, EUR PHYS J B, V19, P265, DOI 10.1007/s100510170335
+   Tobin James, 1969, J MONEY CREDIT BANK, V1, P15, DOI DOI 10.2307/1991374
+   Tumminello M, 2007, EUR PHYS J B, V55, P209, DOI 10.1140/epjb/e2006-00414-4
+   Tumminello M, 2005, P NATL ACAD SCI USA, V102, P10421, DOI 10.1073/pnas.0500298102
+   Tumminello M, 2007, INT J BIFURCAT CHAOS, V17, P2319, DOI 10.1142/S0218127407018415
+NR 69
+TC 3
+Z9 3
+U1 0
+U2 0
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD JUN
+PY 2015
+VL 1
+IS 2
+BP 53
+EP 82
+PG 30
+WC Business, Finance
+SC Business & Economics
+GA V3S6L
+UT WOS:000218550200003
+DA 2019-12-27
+ER
+
+PT J
+AU Bo, LJ
+   Capponi, A
+AF Bo, Lijun
+   Capponi, Agostino
+TI Systemic Risk in Interbanking Networks
+SO SIAM JOURNAL ON FINANCIAL MATHEMATICS
+LA English
+DT Article
+DE interacting jump diffusions; interbanking lending; weak convergence;
+   systemic indicators; time varying square root diffusions
+ID MODEL
+AB We develop a mean field model of interbanking borrowing and lending activities. Each bank borrows from or lends to other counterparties at an idiosyncratic rate and is exposed to sudden shocks affecting the level of its monetary reserves. Using weak convergence analysis, we provide an explicit characterization of the measure-valued process associated with a large interbanking system. We use the limit process to construct law of large number (LLN) approximations for systemic indicators assessing average distance to default and measuring the total volume of interbanking activities. We illustrate the predictive power and accuracy of our framework via a detailed numerical analysis, showing that indicators are sensitive to lending preferences, volatility, and occurrences of negative events.
+C1 [Bo, Lijun] Univ Sci & Technol China, Sch Math Sci, Hefei 230026, Anhui, Peoples R China.
+   [Capponi, Agostino] Columbia Univ, Dept Ind Engn & Operat Res, New York, NY 10027 USA.
+RP Bo, LJ (reprint author), Univ Sci & Technol China, Sch Math Sci, Hefei 230026, Anhui, Peoples R China.
+EM lijunbo@ustc.edu.cn; ac3827@columbia.edu
+RI Bo, Lijun/I-8224-2019
+OI Bo, Lijun/0000-0003-4914-6150
+FU NSFCNational Natural Science Foundation of China [11471254]; Institute
+   for New Economic Thinking (INET) [IN013-00015];  [NCET-12-0914]
+FX The research of this author was partially supported by NCET-12-0914 and
+   NSFC 11471254.; The research of this author was partially supported by
+   Institute for New Economic Thinking (INET) grant IN013-00015.
+CR Abate J, 2006, INFORMS J COMPUT, V18, P408, DOI 10.1287/ijoc.1050.0137
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Andersen L., 2000, APPL MATH FINANCE, V7, P1, DOI DOI 10.1080/135048600450275
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bo LJ, 2014, FINANC STOCH, V18, P431, DOI 10.1007/s00780-013-0217-4
+   Capponi A., 2013, PREPRINT
+   Capponi A, 2013, HANDBOOK ON SYSTEMIC RISK, P485
+   Carmona R., 2013, COMM MATH S IN PRESS
+   COX JT, 1995, PROBAB THEORY REL, V103, P165, DOI 10.1007/BF01204213
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Ethier S.N., 1986, MARKOV PROCESSES CHA
+   FELLER W, 1951, ANN MATH, V54, P173, DOI 10.2307/1969318
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P444
+   Fouque JP, 2013, SIAM J FINANC MATH, V4, P784, DOI 10.1137/110841096
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garnier J, 2013, SIAM J FINANC MATH, V4, P151, DOI 10.1137/12087387X
+   Giesecke K, 2015, MATH FINANC, V25, P77, DOI 10.1111/mafi.12011
+   Giesecke K, 2013, ANN APPL PROBAB, V23, P348, DOI 10.1214/12-AAP845
+   Ichiba T., 2013, PREPRINT
+   Ikeda N, 1981, N HOLLAND MATH LIB, V24
+   Karatzas I, 1991, BROWNIAN MOTION STOC
+   Pra PD, 2009, ANN APPL PROBAB, V19, P347, DOI 10.1214/08-AAP544
+   Saldias M, 2013, J FINANC STABIL, V9, P498, DOI 10.1016/j.jfs.2013.07.003
+   Shirakawa H., 2002, ASIA PAC FINANC MARK, V9, P169
+   Staum J, 2013, HANDBOOK ON SYSTEMIC RISK, P512
+NR 25
+TC 8
+Z9 9
+U1 2
+U2 16
+PU SIAM PUBLICATIONS
+PI PHILADELPHIA
+PA 3600 UNIV CITY SCIENCE CENTER, PHILADELPHIA, PA 19104-2688 USA
+SN 1945-497X
+J9 SIAM J FINANC MATH
+JI SIAM J. Financ. Math.
+PY 2015
+VL 6
+IS 1
+BP 386
+EP 424
+DI 10.1137/130937664
+PG 39
+WC Business, Finance; Mathematics, Interdisciplinary Applications; Social
+   Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA CZ3OD
+UT WOS:000367013000015
+DA 2019-12-28
+ER
+
+PT J
+AU De Jonghe, O
+   Diepstraten, M
+   Schepens, G
+AF De Jonghe, Olivier
+   Diepstraten, Maaike
+   Schepens, Glenn
+TI Banks' size, scope and systemic risk: What role for conflicts of
+   interest?
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Systemic risk; Diversification; Innovation; Conflicts of interest;
+   Global sample
+ID DIVERSIFICATION DISCOUNT; DARK SIDE; TOO BIG; PERFORMANCE; COST; FAIL
+AB We show that the effect of non-interest income on systemic risk exposures varies with bank size and a country's institutional setting. Non-interest income reduces large banks' systemic risk exposures, whereas it increases that of small banks. However, exploiting heterogeneity in countries' institutional setting, we show that the bright side of innovation by large banks (lower systemic risk exposure for diversified banks) disappears in countries with more private and asymmetric information, more corruption and in concentrated banking markets. These empirical findings provide support for Saunders and Cornett (2014) who hypothesize which institutional features make the materialization of conflicts of interest more likely. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [De Jonghe, Olivier] Tilburg Univ, European Banking Ctr, CentER, NL-5000 LE Tilburg, Netherlands.
+   [Diepstraten, Maaike] Tilburg Univ, NL-5000 LE Tilburg, Netherlands.
+   [Schepens, Glenn] Univ Ghent, Natl Bank Belgium, B-9000 Ghent, Belgium.
+   [Schepens, Glenn] Univ Ghent, Dept Financial Econ, B-9000 Ghent, Belgium.
+RP De Jonghe, O (reprint author), Room K 939,POB 90153, NL-5000 LE Tilburg, Netherlands.
+EM o.dejonghe@tilburguniversity.edu; m.diepstra-ten@tilburguniversity.edu;
+   glenn.schepens@nbb.be
+FU European Banking Center; Fund for Scientific Research (Flanders) under
+   FWO project [G.0028.08N]; Center for Applied Research in Finance
+   (CAREFIN) of Bocconi University
+FX The authors would like to thank Fabio Castiglionesi, Hans Degryse,
+   Manthos Delis (guest editor), Bob DeYoung (discussant), Iftekhar Hasan,
+   Michael Koetter, Lev Ratnovski, John Wilson (discussant), the editor
+   (Ike Mathur), two anonymous referees and seminar participants at Tilburg
+   University, the LAPE-FINEST workshop on The Never Ending Crisis at the
+   University of Limoges, the Fifth Financial Stability conference
+   organized by the European Banking Center (Tilburg) and the CEPR, the
+   National Bank of Belgium, the Chicago Fed Bank Structure conference,
+   FMA-Europe (Maastricht), IFABS (Lisbon) and the Financial Engineering
+   and Banking Society (FEBS-Surrey) for interesting discussions and
+   helpful comments. The authors gratefully acknowledge the financial
+   support of the Center for Applied Research in Finance (CAREFIN) of
+   Bocconi University. Glenn Schepens acknowledges support from the Fund
+   for Scientific Research (Flanders) under FWO project G.0028.08N. Maaike
+   Diepstraten acknowledges support from the European Banking Center.
+CR ACHARYA V. V., 2012, CEPR DISCUSSION PAPE, V8824
+   Adrian T., 2011, 17454 NBER
+   Baele L, 2007, J BANK FINANC, V31, P1999, DOI 10.1016/j.jbankfin.2006.08.003
+   Barth A, 2013, ECON POLICY, V28, P335, DOI 10.1111/1468-0327.12007
+   Barth JR, 2013, J FINAN ECON POLICY, V5, P111, DOI 10.1108/17576381311329661
+   Barth JR, 2009, J FINANC ECON, V91, P361, DOI 10.1016/j.jfineco.2008.04.003
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Beck T, 2006, J MONETARY ECON, V53, P1861, DOI 10.1016/j.jmoneco.2005.10.014
+   Brunnermeier M., 2012, BANKS NONINTEREST IN
+   Calomiris CW, 2014, J FINANC INTERMED, V23, P400, DOI 10.1016/j.jfi.2014.05.002
+   Cerasi V, 2000, EUR ECON REV, V44, P1701, DOI 10.1016/S0014-2921(99)00008-2
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   DeLong GL, 2001, J FINANC ECON, V59, P221, DOI 10.1016/S0304-405X(00)00086-6
+   Demirguc-Kunt A, 2013, J BANK FINANC, V37, P875, DOI 10.1016/j.jbankfin.2012.10.010
+   Demsetz RS, 1997, J MONEY CREDIT BANK, V29, P300, DOI 10.2307/2953695
+   Dewatripont M., 2005, RISK TAKING FINANCIA
+   DeYoung R, 2013, J FINANC INTERMED, V22, P397, DOI 10.1016/j.jfi.2013.01.001
+   Elsas R, 2010, J BANK FINANC, V34, P1274, DOI 10.1016/j.jbankfin.2009.11.024
+   Engle R. F., 2012, PICK YOUR POIS UNPUB
+   Fahlenbrach R, 2012, J FINANC, V67, P2139, DOI 10.1111/j.1540-6261.2012.01783.x
+   Flannery MJ, 2004, J FINANC ECON, V71, P419, DOI 10.1016/S0304-405X(03)00185-5
+   Freixas X, 2007, J FINANC INTERMED, V16, P479, DOI 10.1016/j.jfi.2007.03.004
+   Goddard J, 2008, J BANK FINANC, V32, P1836, DOI 10.1016/j.jbankfin.2007.12.015
+   Hughes JP, 1998, REV ECON STAT, V80, P314, DOI 10.1162/003465398557401
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   KROSZNER RS, 1994, AM ECON REV, V84, P810
+   Laeven L, 2007, J FINANC ECON, V85, P331, DOI 10.1016/j.jfineco.2005.06.001
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Lee CC, 2014, JPN WORLD ECON, V29, P18, DOI 10.1016/j.japwor.2013.11.002
+   Mehran H, 2007, J FINANC ECON, V85, P267, DOI 10.1016/j.jfineco.2006.11.001
+   Milbourn TT, 1999, J BANK FINANC, V23, P195, DOI 10.1016/S0378-4266(98)00079-X
+   Puri M, 1996, J FINANC ECON, V40, P373, DOI 10.1016/0304-405X(95)00855-9
+   Puri M, 2007, BANKS CAPITAL MARKET, P189
+   Rajan R, 2000, J FINANC, V55, P35, DOI 10.1111/0022-1082.00200
+   Ratnovski L., 2013, 12238 IMF
+   Saunders A., 2014, FINANCIAL I MANAGEME
+   Scharfstein DS, 2000, J FINANC, V55, P2537, DOI 10.1111/0022-1082.00299
+   Stiroh KJ, 2006, J MONEY CREDIT BANK, V38, P1351, DOI 10.1353/mcb.2006.0075
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   van Oordt M. R. C., 2013, J FINANCIAL IN PRESS
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 41
+TC 27
+Z9 27
+U1 1
+U2 22
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD DEC
+PY 2015
+VL 61
+SU 1
+SI SI
+BP S3
+EP S13
+DI 10.1016/j.jbankfin.2014.12.024
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA DB0OD
+UT WOS:000368206500002
+DA 2019-12-28
+ER
+
+PT J
+AU Magerle, J
+   Nellen, T
+AF Maegerle, Juerg
+   Nellen, Thomas
+TI Interoperability between central counterparties
+SO JOURNAL OF FINANCIAL MARKET INFRASTRUCTURES
+LA English
+DT Article
+DE interoperability between central counterparties; financial network;
+   systemic risk; multilateral netting; netting efficiency
+AB This paper analyzes the risk management and regulation of financial exposures resulting from links between central counterparties (CCPs). Interoperability is shown to enable a fragmented clearing system to reduce exposures between CCPs and their participants to the optimal benchmark of a single CCP. This comes at the cost of newly established exposures between CCPs. Due to concerns about the systemic risk implications of a formerly applied cross-CCP risk management model of European cash equity CCPs, responsible regulators have issued guidelines to eliminate systemic risk. These guidelines are shown to come at the cost of collateral requirements exceeding the optimal level. Two approaches are investigated that help to reduce collateral requirements while containing systemic risk.
+C1 [Maegerle, Juerg; Nellen, Thomas] Swiss Natl Bank, Bundespl 1,POB, CH-3003 Bern, Switzerland.
+RP Magerle, J (reprint author), Swiss Natl Bank, Bundespl 1,POB, CH-3003 Bern, Switzerland.
+EM juerg.maegerle@snb.ch; thomas.nellen@snb.ch
+CR Acharya V, 2014, J ECON THEORY, V149, P153, DOI 10.1016/j.jet.2013.07.001
+   Anderson S., 2013, J FINANCIAL MARKET I, V1, P3
+   Biais B, 2012, IMF ECON REV, V60, P193, DOI 10.1057/imfer.2012.8
+   Chan D., 2012, NORD BACK OFF C MAY
+   Coeure B., 2015, EUR SYST RISK BOARD
+   Committee on the Global Financial System, 2011, 46 BANK INT SETTL CO
+   Cox N., 2013, RDP201312 RES BANK A
+   CPMI and IOSCO, 2014, REC FIN MARK INFR
+   CPMI IOSCO, 2012, PRINC FIN MARK INFR
+   Duffie D, 2010, 424 FED RES BANK NEW
+   Duffie D, 2015, J FINANC ECON, V116, P237, DOI 10.1016/j.jfineco.2014.12.006
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   European Commission Internal Market and Services DG Financial Services Policy and Financial Markets Financial Markets Infrastructure, 2009, COD COND CLEAR SETTL
+   Financial Stability Board, 2014, KEY ATTR EFF RES REG
+   Koeppl T, 2012, J FINANC ECON, V103, P189, DOI 10.1016/j.jfineco.2011.08.008
+   Magerle J., 2011, 201112 SWISS NAT BAN
+   Monnet C., 2014, 201404 SWISS NAT BAN
+   Sidanius C, 2012, 18 BANK ENGL
+NR 18
+TC 2
+Z9 2
+U1 0
+U2 0
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2049-5404
+EI 2049-5412
+J9 J FINANC MARK INFRAS
+JI J. Financ. Mark. Infrastruct.
+PD DEC
+PY 2015
+VL 4
+IS 2
+BP 49
+EP 71
+PG 23
+WC Business, Finance
+SC Business & Economics
+GA V4I7Z
+UT WOS:000218970200004
+DA 2019-12-28
+ER
+
+PT J
+AU Di Bernardino, E
+   Fernandez-Ponce, JM
+   Palacios-Rodriguez, F
+   Rodriguez-Grinolo, MR
+AF Di Bernardino, E.
+   Fernandez-Ponce, J. M.
+   Palacios-Rodriguez, F.
+   Rodriguez-Grinolo, M. R.
+TI On multivariate extensions of the conditional Value-at-Risk measure
+SO INSURANCE MATHEMATICS & ECONOMICS
+LA English
+DT Article
+DE Copulas and dependence; Level sets of distribution functions;
+   Multivariate risk measures; Stochastic orders; Value-at-Risk
+ID LEVEL SETS; DISTRIBUTIONS; FAMILIES; COPULAS; MODELS; COVAR
+AB CoVaR is a systemic risk measure proposed by Adrian and Brunnermeier (2011) able to measure a financial institution's contribution to systemic risk and its contribution to the risk of other financial institutions. CoVaR stands for conditional Value-at-Risk, i.e. it indicates the Value at Risk for a financial institution that is conditional on a certain scenario. In this paper, two alternative extensions of the classic univariate Conditional Value-at-Risk are introduced in a multivariate setting. The two proposed multivariate CoVaRs are constructed from level sets of multivariate distribution functions (resp. of multivariate survival distribution functions). These vector-valued measures have the same dimension as the underlying risk portfolio. Several characterizations of these new risk measures are provided in terms of the copula structure and stochastic orderings of the marginal distributions. Interestingly, these results are consistent with existing properties on univariate risk measures. Furthermore, comparisons between existent risk measures and the proposed multivariate CoVaR are developed. Illustrations are given in the class of Archimedean copulas. Estimation procedure for the multivariate proposed CoVaRs is illustrated in simulated studies and insurance real data. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Di Bernardino, E.] CNAM, Dept IMATH, Lab Cedr EA4629, Paris 03, France.
+   [Fernandez-Ponce, J. M.; Palacios-Rodriguez, F.] Univ Seville, Dept Estadist & Invest Operat, E-41012 Seville, Spain.
+   [Rodriguez-Grinolo, M. R.] Univ Pablo de Olavide, Dept Econ Metodos Cuantitat & Hist Econ, Seville 41013, Spain.
+RP Fernandez-Ponce, JM (reprint author), Univ Seville, Dept Estadist & Invest Operat, Calle Tarfia Sin, E-41012 Seville, Spain.
+EM ferpon@us.es
+RI Rodriguez-Grinolo, Rosario/M-2453-2014
+OI Rodriguez-Grinolo, Rosario/0000-0002-3312-0848
+FU Junta de Andalucia (Spain)Junta de Andalucia [FQM-328(2012/00001086)];
+   "V Plan Propio de Investigacion" of the University of Seville
+FX The authors wish to thank the editor and the two anonymous referees
+   whose comments helped to improve a previous version of this paper. This
+   work was partly supported by a grant from Junta de Andalucia (Spain) for
+   research group FQM-328(2012/00001086) and by a pre-doctoral contract
+   (Palacios Rodriguez, F.) from the "V Plan Propio de Investigacion" of
+   the University of Seville.
+CR Adrian T., 2011, NBER WORKING PAPERS
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Barbe P, 1996, J MULTIVARIATE ANAL, V58, P197, DOI 10.1006/jmva.1996.0048
+   Bellini F., 2013, J APPL PROBAB, V42, P810
+   Cousin A, 2014, INSUR MATH ECON, V55, P272, DOI 10.1016/j.insmatheco.2014.01.013
+   Cousin A, 2013, J MULTIVARIATE ANAL, V119, P32, DOI 10.1016/j.jmva.2013.03.016
+   Cuevas A, 2006, AUST NZ J STAT, V48, P7, DOI 10.1111/j.1467-842X.2006.00421.x
+   Danielsson J, 2013, J ECONOMETRICS, V172, P283, DOI 10.1016/j.jeconom.2012.08.011
+   Daouia A, 2013, BERNOULLI, V19, P2557, DOI 10.3150/12-BEJ466
+   Denuit M, 2005, ACTUARIAL THEORY FOR DEPENDENT RISKS: MEASURES, ORDERS AND MODELS, P1, DOI 10.1002/0470016450
+   Di Bernardino E., 2011, ESAIM PROBABILITY ST
+   Embrechts P, 2006, J MULTIVARIATE ANAL, V97, P526, DOI 10.1016/j.jmva.2005.04.001
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Embrechts P., 2013, STAT QUANTITATIVE RI
+   Frees E.W., 1998, N AM ACTUARIAL J, V2, P1, DOI DOI 10.1080/10920277.1998.10595667
+   GENEST C, 1995, BIOMETRIKA, V82, P543, DOI 10.1093/biomet/82.3.543
+   Genest C, 2001, STAT PROBABIL LETT, V53, P391, DOI 10.1016/S0167-7152(01)00047-5
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Gneiting T, 2011, J AM STAT ASSOC, V106, P746, DOI 10.1198/jasa.2011.r10138
+   Joe H., 1997, MULTIVARIATE MODELS
+   Jouini E, 2004, FINANC STOCH, V8, P531, DOI 10.1007/s00780-004-0127-6
+   Mainik G, 2014, STATIST RISK MODEL, V31, P49, DOI 10.1515/strm-2013-1164
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   McNeil AJ, 2009, ANN STAT, V37, P3059, DOI 10.1214/07-AOS556
+   Muller A, 1997, INSUR MATH ECON, V21, P219, DOI 10.1016/S0167-6687(97)00032-2
+   Muller A., 2002, WILEY SERIES PROBABI
+   MUNOZPEREZ J, 1990, STAT PROBABIL LETT, V10, P235, DOI 10.1016/0167-7152(90)90080-Q
+   Nappo G, 2009, INFORM SCIENCES, V179, P2878, DOI 10.1016/j.ins.2009.02.007
+   Nelsen RB, 2006, SPRINGER SERIES STAT
+   Prekopa A, 2012, ANN OPER RES, V193, P49, DOI 10.1007/s10479-010-0790-2
+   Puccetti G, 2010, J MULTIVARIATE ANAL, V101, P291, DOI 10.1016/j.jmva.2009.08.003
+   Resnick SI, 2007, SPRINGER SER OPER RE, P1, DOI 10.1007/978-0-387-45024-7
+   Resnick SI, 2008, EXTREME VALUES REGUL
+   Segoviano M.A., 2009, IMF WORKING PAPERS, V9, P1
+   SERFLING R. J., 1980, APPROXIMATION THEORE
+   Shaked M, 2007, SPRINGER SER STAT, P3
+   Wang A, 2008, STAT PROBABIL LETT, V78, P2578, DOI 10.1016/j.spl.2008.07.018
+   Wei G, 2002, STAT PROBABIL LETT, V57, P375, DOI 10.1016/S0167-7152(02)00094-9
+   Weng CG, 2012, J MULTIVARIATE ANAL, V106, P178, DOI 10.1016/j.jmva.2011.12.001
+   Ziegel J., 2014, ARXIV13031690V3
+NR 40
+TC 15
+Z9 15
+U1 0
+U2 27
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-6687
+EI 1873-5959
+J9 INSUR MATH ECON
+JI Insur. Math. Econ.
+PD MAR
+PY 2015
+VL 61
+BP 1
+EP 16
+DI 10.1016/j.insmatheco.2014.11.006
+PG 16
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA CF6JN
+UT WOS:000352663100001
+DA 2019-12-28
+ER

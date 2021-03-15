@@ -1,0 +1,489 @@
+
+PT J
+AU Alter, A
+   Beyer, A
+AF Alter, Adrian
+   Beyer, Andreas
+TI The dynamics of spillover effects during the European sovereign debt
+   turmoil
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Credit default swaps; Contagion; Sovereign debt; Systemic risk; Impulse
+   responses
+ID IMPULSE-RESPONSE ANALYSIS; VOLATILITY SPILLOVERS; MULTIVARIATE MODELS;
+   CREDIT RISK; CONTAGION; CRISIS
+AB In this paper we modify and extend the framework of Diebold and Yilmaz (2011) to quantify spillovers between sovereign credit markets and banks in the euro area. Spillovers are estimated recursively from a vector autoregressive model of daily changes in credit default swap (CDS) spreads with exogenous common factors. We account for interdependencies between sovereign and bank CDS spreads and derive generalized impulse response functions. Specifically, we assess the systemic effect of an unexpected shock to the creditworthiness of a sovereign or country-specific bank index on other sovereigns and bank CDSs between October 2009 and July 2012. Channels of shock transmission from or to sovereigns and banks are summarized in a Contagion Index and its four components: (i) among sovereigns, (ii) among banks, (iii) from sovereigns to banks, and (iv) from banks to sovereigns. We also highlight the impact of policy-related events on the Contagion Index. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Alter, Adrian] Int Monetary Fund, Washington, DC 20431 USA.
+   [Beyer, Andreas] European Cent Bank, D-60311 Frankfurt, Germany.
+   [Beyer, Andreas] Ctr Financial Studies, Frankfurt, Germany.
+RP Alter, A (reprint author), Int Monetary Fund, 700 19th St NW, Washington, DC 20431 USA.
+EM AAlter@imf.org; Andreas.Beyer@ecb.int
+RI Alter, Adrian/V-3875-2019
+OI Alter, Adrian/0000-0003-4752-4808
+CR Acharya V., 2012, PYRRHIC VICTORY BANK
+   Acharya V., 2010, 2 FED RES BANK CLEV
+   Adrian T., 2011, WORKING PAPER
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Ang A., 2011, 16982 NBER
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Berndt A, 2010, REV FINANC, V14, P189, DOI 10.1093/rof/rfq004
+   Bicu A., 2012, MAASTRICHT U WORKING, VRM/12/033
+   BIS, 2011, IMP SOV CRED RISK BA, V43
+   Caporin M., 2012, 201205 NORG BANK
+   Claeys P., 2012, WORKING PAPER
+   Constancio V., 2012, FINANCIAL STABILITY, P109
+   De Bandt O., 2009, OXFORD HDB BANKING, P633
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   DE SANTIS R., 2012, 1419 ECB
+   De Socio A., 2011, 819 BANC IT
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Diebold FX, 2011, 11031 PIER
+   Dombusch R., 2000, WORLD BANK RES OBSER, V15, P177
+   Donati P., 2011, MODELLING SPIL UNPUB
+   Dungey M., 2004, WP0478 IMF, P1
+   Ejsing J, 2011, ECON LETT, V110, P28, DOI 10.1016/j.econlet.2010.10.001
+   European Central Bank, 2009, CONC SYST RISK, P134
+   European Central Bank, 2005, FIN MARK CONT SPEC, P142
+   European Central Bank, 2010, AN MOD TOOLS ID ASS, P138
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Fontana A, 2010, ECB WORKING PAPER SE, V1271
+   Forbes K, 2012, 497012 MIT
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gross M, 2013, 1570 ECB
+   Hartmann P., 2005, ECB WORKING PAPER SE, V527
+   Huang X., 2009, 281 BIS
+   Kalbaska A, 2012, J ECON BEHAV ORGAN, V83, P657, DOI 10.1016/j.jebo.2012.05.010
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Lutkepohl H., 2007, NEW INTRO MULTIPLE T
+   Merler S., 2012, BANQUE FRANCE FINANC
+   Palladini G., 2011, 17586 NBER, P1
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Segoviano M., 2010, SOVEREIGN SPREADS GL
+   Segoviano M., 2006, 557 FIN MARK GROUP
+   Zhang X., 2011, 111762DSF29 TI
+NR 44
+TC 78
+Z9 78
+U1 1
+U2 33
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD MAY
+PY 2014
+VL 42
+BP 134
+EP 153
+DI 10.1016/j.jbankfin.2014.01.030
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA AE6GR
+UT WOS:000334089100011
+DA 2019-12-28
+ER
+
+PT J
+AU Raffestin, L
+AF Raffestin, Louis
+TI Diversification and systemic risk
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Systemic risk; Diversification; Circulant network; Circulant matrix;
+   Fire sales
+ID CONTAGION
+AB Portfolio diversification makes investors individually safer but creates connections between them through common asset holdings. Such connections create "endogenous covariances" between assets and investors, and enhance systemic risk by propagating shocks swiftly through the system. We provide a theoretical model in which shocks spread through constrained selling from N diversified portfolio investors in a network of asset holdings with home bias, and study the desirability of diversification by comparing the multivariate distribution of implied losses for every level of diversification. There may be a region on the parameter set for which the propagation effect dominates the individually safer one. We derive analytically the general element of the covariance between two assets i and j. We find agents may minimize their exposure to endogenous risk by spreading their wealth across more and More distant assets. The resulting network enhances systemic stability. (C) 2014 Elsevier B.V. All rights reserved.
+C1 Montesquieu Bordeaux IV Univ, LAREFI, F-33608 Pessac, France.
+RP Raffestin, L (reprint author), Montesquieu Bordeaux IV Univ, LAREFI, Ave Leon Duguit, F-33608 Pessac, France.
+EM raffestl@tcd.ie
+CR Adrian T., 2011, 17454 COVAR NBER
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F., 2010, 16177 NBER
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   Andersen TG, 2001, J FINANC ECON, V61, P43, DOI 10.1016/S0304-405X(01)00055-1
+   BERNANKE BS, 1983, AM ECON REV, V73, P257
+   Caccioli F., 2012, ARXIV12105987
+   Calvo GA, 2000, J INT ECON, V51, P79, DOI 10.1016/S0022-1996(99)00038-0
+   Cont R, 2012, FIRE SALES FORENSICS
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   Danielsson J., 2011, FMG DISCUSSION PAPER
+   Danielsson J., 2011, 12054 NBER
+   EVANS JL, 1968, J FINANC, V23, P761, DOI 10.2307/2325905
+   Financial Stability Board, 2009, GUID ASS SYST IMP FI
+   Fiordelisi F, 2013, J BANK FINANC, V37, P2000, DOI 10.1016/j.jbankfin.2013.01.004
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Graham B, 2003, INTELLIGENT INVESTOR
+   Greenwood R., 2012, 18537 NBER WP
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Jiao J, 2013, J BANK FINANC, V37, P3435, DOI 10.1016/j.jbankfin.2013.04.028
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Lagunoff R, 1999, J MONEY CREDIT BANK, V31, P531, DOI 10.2307/2601071
+   LANE P, 2004, 04134 IMF
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   MERTON RC, 1987, J FINANC, V42, P483, DOI 10.2307/2328367
+   Naoui K, 2010, INT J EC FINANC, V2, P85, DOI DOI 10.5539/IJEF.V2N3P85
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   SAMUELSON PA, 1967, J FINANC QUANT ANAL, V2, P1, DOI 10.2307/2329779
+   Schinasi GJ, 2000, IMF STAFF PAPERS, V47, P159
+   Shaffer S, 1994, RES FINANCIAL SERVIC, V6, P249
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Tarashev Nikola, 2010, 308 BIS
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 33
+TC 10
+Z9 11
+U1 2
+U2 17
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD SEP
+PY 2014
+VL 46
+BP 85
+EP 106
+DI 10.1016/j.jbankfin.2014.05.014
+PG 22
+WC Business, Finance; Economics
+SC Business & Economics
+GA AO0EL
+UT WOS:000340981800007
+DA 2019-12-28
+ER
+
+PT J
+AU Squire, R
+AF Squire, Richard
+TI CLEARINGHOUSES AS LIQUIDITY PARTITIONING
+SO CORNELL LAW REVIEW
+LA English
+DT Article
+ID CREDIT DEFAULT SWAPS; FINANCIAL CRISIS; SYSTEMIC RISK;
+   DERIVATIVES-CLEARINGHOUSES; BANKRUPTCY
+AB To reduce the risk of another financial crisis, the Dodd-Frank Act requires that trading in certain derivatives be backed by clearinghouses. Critics mount two main objections: a clearinghouse shifts risk instead of reducing it; and a clearinghouse could fail, requiring a bailout. This Article's observation that clearinghouses engage in liquidity partitioning answers both. Liquidity partitioning means that when one of its member firms becomes bankrupt, a clearinghouse keeps a portion of the firm's most liquid assets, and a matching portion of its short-term debt, out of the bankruptcy estate. The clearinghouse then applies the first toward immediate repayment of the second. Economic value is created because creditors within the clearinghouse are paid much more quickly, and other creditors are paid no less quickly, than they would be otherwise. The rapid cash payouts for clearinghouse members reduce illiquidity and uncertainty in the financial sector, the main causes of contagion in a crisis. And because the clearinghouse holds only liquid assets, it avoids the maturity mismatch between short-term liabilities and long-term assets that characterizes the balance sheets of many financial institutions. A clearinghouse therefore is much less likely than its members to fail during a crisis. To ensure that clearinghouses remain stable and systemically valuable, rulemakers should require clearing of a wide variety of derivatives contracts, but should limit clearinghouse membership to dealer firms.
+C1 Fordham Univ, Sch Law, Bronx, NY 10458 USA.
+RP Squire, R (reprint author), Fordham Univ, Sch Law, Bronx, NY 10458 USA.
+CR Acworth Will, 2009, FUTURES IND     JAN, P36
+   Allen JL, 2012, STANFORD LAW REV, V64, P1079
+   Allen Julia Lees, 2012, STANFORD LAW REV, V64, P1103
+   [Anonymous], FED RES BANK NY
+   [Anonymous], 2012, FED REGISTER, V77, P74
+   [Anonymous], 1982, 97420 HR, P1
+   [Anonymous], 2012, FED REGISTER, V77, P74
+   [Anonymous], 2010, 111176 S, P5
+   [Anonymous], 2012, FED REGISTER, V77, P74
+   [Anonymous], FED REG, V77, P74
+   [Anonymous], 2010, DROP, P33
+   [Anonymous], 2008, CNBC            0915
+   [Anonymous], FED REG, V77, P74
+   [Anonymous], FED REG, V77, P74
+   [Anonymous], 2010, DROP, P29
+   [Anonymous], 2010, DROP, P32
+   [Anonymous], FED REG, V77, P74
+   [Anonymous], 2013, S P CASE SHILLER 20
+   [Anonymous], FED REG, V77, P74
+   [Anonymous], FED REG, V77, P74
+   [Anonymous], 2012, FED REGISTER, V77, P74
+   [Anonymous], 2012, FIN STAB FACTS TARP
+   [Anonymous], 2007, DEALBOOK        1220
+   Ayotte K, 2013, U CHICAGO LAW REV, V80, P1557
+   Ayotte Kenneth, 2013, U CHICAGO LAW REV, V80, P1589
+   Baird DG, 2003, STANFORD LAW REV, V56, P673
+   Baird Douglas G., 2011, AM BANKR I L REV, V19, P296
+   Baird Douglas G., 2003, STANFORD LAW REV, V56, P678
+   Baird Douglas G., 2011, AM BANKR I L REV, V19, P287
+   BANK FOR INT'L SETTLEMENTS, 2013, STAT REL OTC DER STA, P2
+   Bear Sterns: No Picnic, 2008, ECONOMIST, P95
+   Berrospide Jose, 2012, BANK INT SETTLEM APR, P3
+   Boughey Simon, 2008, EUROWEEK        0613, P64
+   BREALEY RICHARD A., 2000, PRINCIPLES CORPORATE, P827
+   Bullard J, 2009, FED RESERVE BANK ST, V91, P403
+   CARNELL RICHARD SCOTT, 2013, LAW FINANCIAL I, P40
+   CHANDER A, 2010, CHI J INT L, V10, P639
+   Chander Anupam, 2010, CHI J INT L, V10, P651
+   Checkler Joseph, 2012, WALL ST J
+   CHI. MERCANTILE EXCH, 2006, INTRO FUTURES OPTION, P7
+   Chiotakis Steve, 2010, MARKETPLACE     1001
+   CME GRP, 2012, CME CLEAR FIN SAF, P7
+   COMM. ON PAYMENT & SETTLEMENT SYS. TECHNICAL COMM. OF THE INT'L ORG. OF SEC. COMM'N, 2004, TORT PROX INT DOM LA, P5
+   Darila Michal, 2012, WBP ONLINE      0911
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   DOWNES JOHN, 1995, DICT FINANCE INVESTM, P78
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Duffle Darrell, 2012, BANKRUPTCY NOT BAILO, p[133, 165]
+   Edwards Franklin R., 2005, YALE J REGUL, V22, P91
+   Ellis David, 2008, CNNMONEY        0317
+   Federal Deposit Insurance Corporation, 2013, FED REGISTER, V78, P76614
+   Finnerty John D., 2011, FORDHAM J CORP FIN L, V16, P73
+   Finnerty John D., 2011, FORDHAM J CORP FIN L, V16, P82
+   French KR, 2010, SQUAM LAKE REPORT: FIXING THE FINANCIAL SYSTEM, P1
+   Goldstein Matthew, 2008, BLOOMBERG BUSINESSWE
+   Goralnik N, 2012, YALE LAW J, V122, P460
+   Goralnik Nathan, 2012, YALE LAW J, V122, P503
+   Gordon Gary, 2010, BROOKINGS PAP ECO AC, P269
+   Gorton G., 2010, SLAPPED INVISIBLE HA
+   Griffith J., 2012, EMORY LJ, V61, P1182
+   Griffith Sean J., 2012, SUBSTITUTED CO UNPUB, P37
+   Griffith Sean J., 2012, EMORY LJ, V61, P1153
+   Hansmann H, 2000, YALE LAW J, V110, P387, DOI 10.2307/797521
+   Hansmann Henry, 2006, HARVARD LAW REV, V119, P1346
+   Hansmann Henry, 2006, HARVARD LAW REV, V119, P1335
+   Harris Andrew, 2013, BLOOMBERG
+   Henderson MT, 2009, CONN INSUR LAW J, V16, P1
+   Hynes Richard M., 2010, WASH LEE L REV, V67, P1050
+   Hynes Richard M., 2010, WASH LEE L REV, V67, P985
+   Judge K, 2014, CORNELL LAW REV, V99, P795
+   Judge K, 2013, UCLA LAW REV, V60, P1262
+   Judge K, 2012, STANFORD LAW REV, V64, P657
+   Judge Kathryn, 2014, CORNELL LAW REV, V99, P817
+   Judge Kathryn, 2012, STANFORD LAW REV, V64, P663
+   Kaufman G. G., 2003, INDEP REV, V7, P371
+   Kress JC, 2011, HARVARD J LEGIS, V48, P49
+   Kroszner RS, 1999, J MONEY CREDIT BANK, V31, P596, DOI 10.2307/2601077
+   Lehman Bros. Holdings Inc., 2008, CURR REP FORM 8K, P2
+   Levitin AJ, 2013, GEORGETOWN LAW J, V101, P445
+   Linda Sandler Lehman, 2012, BLOOMBERG
+   Lubben Stephen.J., 2010, AM BANKR I L REV, V18, P321
+   Lubben Stephen J., 2010, AM BANKR I L REV, V18, P319
+   Luhby Tami, 2008, CNNMONEY        0917
+   Macey Jonathan, 2011, STAN J L BUS FIN, V17, P131
+   Macey Jonathan, 2011, STAN JL BUS FIN, V17, P165
+   McCoid II John C., 1989, VA LAW REV, V75, P32
+   MCCOID JC, 1989, VA LAW REV, V75, P15, DOI 10.2307/1073217
+   Onaran Yalman, 2008, BLOOMBERG       0402
+   Pirrong C, 2012, J APPL CORP FINANC, V24, P67, DOI 10.1111/j.1745-6622.2012.00366.x
+   PIRRONG CRAIG, 2010, POLICY ANAL, P9
+   Pirrong Craig, 2010, J APPL CORP FIN SUMM, V22, P50
+   Pirrong Craig, 2009, WORKING PAPER, P26
+   Pirrong Craig, 2008, REGULATION, P47
+   POSNER RA, 1976, U CHICAGO LAW REV, V43, P499, DOI 10.2307/1599230
+   Posner Richard A., 1976, U CHICAGO LAW REV, V43, P509
+   POSNER RICHARD A., 2010, CRISIS CAPITALIST DE, P251
+   Randazzo Sara, 2012, AM LAW DAILY    1031
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Roe Mark, 2011, STANFORD LAW REV, V63, P586
+   Roe MJ, 2013, CALIF LAW REV, V101, P1641
+   Roe MJ, 2011, STANFORD LAW REV, V63, P539
+   Roe Mark J., 2011, STANFORD LAW REV, V63, P541
+   Romano Roberta, 2013, 452 YAL LAW EC, P77
+   SCHWARCZ SL, 2008, GEORGETOWN LAW J, V97, P199
+   Schwarcz SL, 2008, GEORGETOWN LAW J, V97, P193
+   Scott Kenneth, 2012, DODD FRANK RES UNPUB, P1
+   SemCrude L.P., 2009, BR, V399, P393
+   SemCrude L.P., 2009, BR, V399, P388
+   Shadab Houman B., 2010, ENTREPRENEURIAL BUS, V4, P431
+   Shadab Houman B., 2010, ENTREPRENEURIAL BUS, V4, P407
+   Shleifer Andrei, 2010, BROOKINGS PAPERS EC, P298
+   SIDEL R, 2008, WALL ST J       0926, pA1
+   Simkovic M, 2009, AM BANKRUPT LAW J, V83, P253
+   Simkovic Michael, 2009, AM BANKR LJ, V83, P279
+   Skeel DA, 2012, COLUMBIA LAW REV, V112, P152
+   Skeel Jr David A., 2012, COLUMBIA LAW REV, V112, P189
+   Squire R, 2010, HARVARD LAW REV, V123, P1151
+   Squire R, 2009, YALE LAW J, V118, P806
+   Squire Richard, 2013, CRISI FINANZIARIA RI, P93
+   Squire Richard, 2009, YALE LAW J, V118, P836
+   Squire Richard, 2010, HARVARD LAW REV, V123, P1184
+   Stulz RM, 2010, J ECON PERSPECT, V24, P73, DOI 10.1257/jep.24.1.73
+   Stulz Rene M., 2010, J EC PERSP, V24, P82
+   U.S. DEP'T OF THE TREASURY OFFICE OF FIN. STABILITY, 2013, TROUBL ASS REL PROGR, p[1, 6, 8]
+   U.S. GOV'T ACCOUNTABILITY OFFICE, 2009, GAO09574, P20
+   Walsh Mary Williams, 2009, NY TIMES, p[A1, A14]
+NR 126
+TC 11
+Z9 11
+U1 0
+U2 3
+PU CORNELL LAW REVIEW
+PI ITHACA
+PA CORNELL LAW SCHOOL, ITHACA, NY 14853-4901 USA
+SN 0010-8847
+J9 CORNELL LAW REV
+JI Cornell Law Rev.
+PD MAY
+PY 2014
+VL 99
+IS 4
+BP 857
+EP 923
+PG 67
+WC Law
+SC Government & Law
+GA AR1ET
+UT WOS:000343327400004
+DA 2019-12-27
+ER
+
+PT J
+AU Sachs, A
+AF Sachs, Angelika
+TI Completeness, interconnectedness and distribution of interbank
+   exposures-a parameterized analysis of the stability of financial
+   networks
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Domino effects; Interbank lending; Financial stability; Contagion
+ID SYSTEMIC RISK; CONTAGION; MARKET; TOPOLOGY
+AB This paper assesses the impact of a certain structure of interbank exposures on the stability of a stylized financial system. Given a certain balance sheet structure of financial institutions, a large number of valid matrices of interbank exposures is created by a random generator. Assuming a certain loss given default, domino effects are simulated. The main results are, first, that financial stability depends not only on the completeness and interconnectedness of the network, but also on the distribution of interbank exposures within the system (measured by entropy). Second, looking at random graphs, the sign of the correlation between the degree of equality of the distribution of claims and financial stability depends on the connectivity of the financial system as well as on additional parameters that affect the vulnerability of the system to interbank contagion. Third, the more concentrated the assets are within a money center model, the less stable it is. Fourth, a money center model with asset concentration among core banks is less stable than a random graph with banks of homogeneous size.
+C1 Univ Munich, Dept Econ, Munich, Germany.
+RP Sachs, A (reprint author), Univ Munich, Dept Econ, Munich, Germany.
+EM angelika.sachs@lrz.uni-muenchen.de
+CR Aikman D., 2009, 372 BANK ENGL
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2009, NETWORK CHALLENGE
+   BCBS, 2011, GLOB SYST IMP BANKS
+   BLIEN U, 1991, JAHRB NATL STAT, V208, P399
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Chan-Lau J., 2010, 10107 IMF
+   Chan-Lau J. A., 2010, FINANC MKTS I INSTRU, V19, P355, DOI DOI 10.2139/SSRN.1995499)
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Craig B., 2010, 322 BIS
+   Degryse H., 2007, INT J CENT BANK, V3, P132
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Espinosa-Vega M., 2010, 10105 IMF
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Haldane A. G., 2009, COMMUNICATION
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   UPPER C, 2007, 234 BIS
+   VANLELYVELD I, 2006, INT J CENT BANK, V2, P99
+   Wells S., 2004, 230 BANK ENGL
+NR 27
+TC 17
+Z9 17
+U1 0
+U2 26
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD SEP
+PY 2014
+VL 14
+IS 9
+BP 1677
+EP 1692
+DI 10.1080/14697688.2012.749421
+PG 16
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA AO0NY
+UT WOS:000341008100014
+DA 2019-12-27
+ER
+
+PT J
+AU Cousin, A
+   Di Bernardino, E
+AF Cousin, Areski
+   Di Bernardino, Elena
+TI On multivariate extensions of Conditional-Tail-Expectation
+SO INSURANCE MATHEMATICS & ECONOMICS
+LA English
+DT Article
+DE Multivariate risk measures; Level sets of distribution functions;
+   Multivariate probability integral transformation; Stochastic orders;
+   Copulas and dependence
+ID NONPARAMETRIC-ESTIMATION; RISK MEASURES; LEVEL SETS
+AB In this paper, we introduce two alternative extensions of the classical univariate Conditional-Tail-Expectation (CTE) in a multivariate setting. The two proposed multivariate CTEs are vector-valued measures with the same dimension as the underlying risk portfolio. As for the multivariate Value-at-Risk measures introduced by Cousin and Di Bernardino (2013), the lower-orthant CTE (resp. the upper-orthant CTE) is constructed from level sets of multivariate distribution functions (resp. of multivariate survival distribution functions). Contrary to allocation measures or systemic risk measures, these measures are also suitable for multivariate risk problems where risks are heterogeneous in nature and cannot be aggregated together. Several properties have been derived. In particular, we show that the proposed multivariate CTEs satisfy natural extensions of the positive homogeneity property, the translation invariance property and the comonotonic additivity property. Comparison between univariate risk measures and components of multivariate CTE is provided. We also analyze how these measures are impacted by a change in marginal distributions, by a change in dependence structure and by a change in risk level. Sub-additivity of the proposed multivariate CTE-s is provided under the assumption that all components of the random vectors are independent. Illustrations are given in the class of Archimedean copulas. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Cousin, Areski] Univ Lyon 1, ISFA, Lab SAF, F-69366 Lyon, France.
+   [Di Bernardino, Elena] CNAM, Dept IMATH, Lab Cedr EA4629, Paris 03, France.
+RP Di Bernardino, E (reprint author), CNAM, Dept IMATH, Lab Cedr EA4629, 292 Rue St Martin, Paris 03, France.
+EM areski.cousin@univ-lyon1.fr; elena.di_bernardino@cnam.fr
+FU French research national agency (ANR)French National Research Agency
+   (ANR) [ANR-08BLAN-0314-01]; MIRACCLE-GICC project
+FX The authors thank an anonymous referee for constructive remarks to
+   improve the paper. This work has been partially supported by the French
+   research national agency (ANR) under the reference ANR-08BLAN-0314-01.
+   Part of this work also benefit from the support of the MIRACCLE-GICC
+   project.
+CR Acharya V., 2010, WORKING PAPER
+   Adrian T., 2011, WORKING PAPER
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Barges M, 2009, INSUR MATH ECON, V45, P348, DOI 10.1016/j.insmatheco.2009.08.002
+   Brownlees C., 2012, WORKING PAPER
+   Burgert C, 2006, INSUR MATH ECON, V38, P289, DOI 10.1016/j.insmatheco.2005.08.008
+   Cai J, 2005, J APPL PROBAB, V42, P810, DOI 10.1239/jap/1127322029
+   Cai J.-J., 2013, 2012080 CENTER, P2012
+   Cascos I, 2007, FINANC STOCH, V11, P373, DOI 10.1007/s00780-007-0043-7
+   Chakak A, 2000, COMMUN STAT-SIMUL C, V29, P175, DOI 10.1080/03610910008813608
+   Chaouch M, 2009, J SFDS, V150, P1
+   Chauvigny M, 2011, EUR ACTUAR J, V1, P131, DOI 10.1007/s13385-011-0034-0
+   Cousin A, 2013, J MULTIVARIATE ANAL, V119, P32, DOI 10.1016/j.jmva.2013.03.016
+   Denuit M, 2005, ACTUARIAL THEORY FOR DEPENDENT RISKS: MEASURES, ORDERS AND MODELS, P1, DOI 10.1002/0470016450
+   Denuit M., 2004, ECONOMICA
+   Di Bernardino E, 2013, ESAIM-PROBAB STAT, V17, P236, DOI 10.1051/ps/2011161
+   Ekeland I, 2012, MATH FINANC, V22, P109, DOI 10.1111/j.1467-9965.2010.00453.x
+   Embrechts P, 2006, J MULTIVARIATE ANAL, V97, P526, DOI 10.1016/j.jmva.2005.04.001
+   Hamel AH, 2010, SIAM J FINANC MATH, V1, P66, DOI 10.1137/080743494
+   Imlahi L, 1999, REV R ACAD CIENC EXA, V93, P241
+   Jouini E, 2004, FINANC STOCH, V8, P531, DOI 10.1007/s00780-004-0127-6
+   Koltchinskii VI, 1997, ANN STAT, V25, P435, DOI 10.1214/aos/1031833659
+   LANDSMAN Z.M., 2003, N AM ACTUARIAL J, V7, P55, DOI DOI 10.1080/10920277.2003.10596118
+   Lee J, 2013, ANN OPER RES, V211, P225, DOI 10.1007/s10479-013-1482-5
+   Mainik G., 2012, WORKING PAPER
+   MASSE JC, 1994, J MULTIVARIATE ANAL, V48, P188, DOI 10.1006/jmva.1994.1002
+   Nappo G, 2009, INFORM SCIENCES, V179, P2878, DOI 10.1016/j.ins.2009.02.007
+   Nelsen R. B., 1999, LECT NOTES STAT, P139
+   Prekopa A, 2012, ANN OPER RES, V193, P49, DOI 10.1007/s10479-010-0790-2
+   Puccetti G, 2010, J MULTIVARIATE ANAL, V101, P291, DOI 10.1016/j.jmva.2009.08.003
+   Rossi C., 1973, GIORNALE I ITALIANO, V36, P87
+   Ruschendorf L, 2006, STATIST RISK MODEL, V24, P97, DOI 10.1524/stnd.2006.24.1.97
+   Scaillet O, 2004, MATH FINANC, V14, P115, DOI 10.1111/j.0960-1627.2004.00184.x
+   Serfling R, 2002, STAT NEERL, V56, P214, DOI 10.1111/1467-9574.00195
+   Tasche D, 2008, QUANT FINANC SER, P169, DOI 10.1016/B978-075068158-2.50014-7
+   Tibiletti L., 1991, ATT 15 CONV AMASES, P503
+   TIBILETTI L., 1995, RATIO MATH, V9, P27
+NR 37
+TC 16
+Z9 16
+U1 1
+U2 12
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-6687
+EI 1873-5959
+J9 INSUR MATH ECON
+JI Insur. Math. Econ.
+PD MAR
+PY 2014
+VL 55
+BP 272
+EP 282
+DI 10.1016/j.insmatheco.2014.01.013
+PG 11
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA AG5AS
+UT WOS:000335432100024
+DA 2019-12-28
+ER

@@ -1,0 +1,513 @@
+
+PT J
+AU Rocco, M
+AF Rocco, Marco
+TI EXTREME VALUE THEORY IN FINANCE: A SURVEY
+SO JOURNAL OF ECONOMIC SURVEYS
+LA English
+DT Article
+DE Extreme value theory; Risk management; Fat-tailed distributions;
+   Value-at-risk; Systemic risk; Asset allocation
+ID VALUE-AT-RISK; OPERATIONAL RISK; VALUE DEPENDENCE; MARKETS; INDEX; TAIL;
+   IDENTIFICATION; RETURNS; CHOICE; PERFORMANCE
+AB Extreme value theory is concerned with the study of the asymptotic distribution of extreme events, that is to say events which are rare in frequency and huge in magnitude with respect to the majority of observations. Statistical methods derived from it have been employed increasingly in finance, especially for risk measurement. This paper surveys some of those main applications, namely for testing different distributional assumptions for the data, for Value-at-Risk and Expected Shortfall calculations, for asset allocation under safety-first type constraints, and for the study of contagion and dependence across markets under conditions of stress.
+C1 Bank Italy, Financial Stabil Unit, Rome, Italy.
+RP Rocco, M (reprint author), Bank Italy, Financial Stabil Unit, Rome, Italy.
+CR Abbate D., 2008, WORKING PAPER
+   Acerbi C, 2002, J BANK FINANC, V26, P1487, DOI 10.1016/S0378-4266(02)00283-2
+   Acerbi C., 2004, RISK MEASURES 21 CEN, P147
+   Acerbi C., 2001, WORKING PAPER
+   Allen L, 2007, J BANK FINANC, V31, P1191, DOI 10.1016/j.jbankfin.2006.10.007
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   ARZAC ER, 1977, J FINANC ECON, V4, P277, DOI 10.1016/0304-405X(77)90003-4
+   Bali TG, 2003, J BUS, V76, P83, DOI 10.1086/344669
+   Bali TG, 2007, J MONEY CREDIT BANK, V39, P1613, DOI 10.1111/j.1538-4616.2007.00081.x
+   BALKEMA AA, 1974, ANN PROBAB, V2, P792, DOI 10.1214/aop/1176996548
+   Bao Y, 2006, J FORECASTING, V25, P101, DOI 10.1002/for.977
+   Barone-Adesi G, 1998, RISK, P100
+   Beirlant J., 2004, STAT EXTREMES THEORY
+   Bekiros S. D., 2008, APPL FINANC EC, V18, P239
+   BEKIROS SD, 2005, INT FINAN MARKETS I, V15, P209
+   Bekiros SD, 2008, J MULTINATL FINANC M, V18, P197, DOI 10.1016/j.mulfin.2007.08.003
+   Bensalah Y., 2002, 20022 BANK CAN
+   Berkowitz J, 2001, J BUS ECON STAT, V19, P465, DOI 10.1198/07350010152596718
+   Blanco C, 1998, FINANCIAL ENG NEWS, P1
+   Bradley B. O., 2004, INT J THEORETICAL AP, V7, P1031, DOI DOI 10.1142/S0219024904002815
+   Bradley BO, 2004, QUANT FINANC, V4, P619, DOI 10.1080/14697680400008635
+   BROOKS C., 2005, J EMPIR FINANC, V12, P339, DOI DOI 10.1016/J.JEMPFIN.2004.01.004
+   Bystrom H., 2005, INT REV ECON FINANC, V14, P41, DOI DOI 10.1016/51059-0560(03)00032-7
+   BYSTROM H, 2006, EUROPEAN J FINANCE, V12, P303
+   Bystrom HNE, 2007, J FUTURES MARKETS, V27, P85, DOI 10.1002/fut.20234
+   Caddie J, 2000, PACIFIC BASIN FINANC, V8, P249, DOI DOI 10.1016/S0927-538X(00)00008-1
+   Chan F, 2006, INT J FORECASTING, V22, P283, DOI 10.1016/j.ijforecast.2005.10.002
+   Chan-Lau J. A., 2007, WP0774 IMF
+   Chapelle A, 2008, J BANK FINANC, V32, P1049, DOI 10.1016/j.jbankfin.2007.09.017
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   CJrotter J., 2007, 3536 MPRA U LIB MUN
+   Coles S., 2001, INTRO STAT MODELING
+   Consigli G, 2002, J BANK FINANC, V26, P1355, DOI 10.1016/S0378-4266(02)00267-4
+   Cotter J, 2001, J BANK FINANC, V25, P1475, DOI 10.1016/S0378-4266(00)00137-0
+   Crnkovic C., 1995, UNIVERSAL TOOL DISCR
+   Crnkovic C., 1996, RISK, V9, P139
+   Danielsson J, 2002, J BANK FINANC, V26, P1273, DOI 10.1016/S0378-4266(02)00263-7
+   Danielsson J., 2000, ANN EC STAT, V60, P239, DOI DOI 10.2307/20076262
+   Danielsson J, 1997, EXTREMES INTEGRATED, P85
+   Danielsson J, 2011, WORKING PAPER
+   DANIELSSON J., 1997, J EMPIR FINANC, V4, P241, DOI DOI 10.1016/S0927-5398(97)00008-X
+   de Haan L., 2006, SPRING S OPERAT RES
+   Dewachter H, 1999, APPL FINANCIAL EC, V9, P173, DOI DOI 10.1080/096031099332438
+   Diebold F. X., 1998, ADV COMPUTATIONAL FI, P3
+   Dowd K., 2002, MEASURING MARKET RIS
+   Dowd K., 1998, VALUE RISK NEW SCI R
+   Duffie D, 1997, J DERIV, V4, P7, DOI [DOI 10.3905/JOD.1997.407971, DOI 10.3905/jod.1997.407971]
+   DUMOUCHEL WH, 1983, ANN STAT, V11, P1019, DOI 10.1214/aos/1176346318
+   Dutta K., 2006, WORKING PAPERS FEDER
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Engle R. F., 1999, 7341 NBER
+   Falk M., 2004, LAWS SMALL NUMBERS E
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   FAMA EF, 1963, J BUS, V36, P420, DOI 10.1086/294633
+   Finkenstadt B, 2004, EXTREME VALUES FINAN
+   Fisher RA, 1928, P CAMB PHILOS SOC, V24, P180, DOI 10.1017/S0305004100015681
+   Galambos J., 1987, ASYMPTOTIC THEORY EX
+   Garita G., 2009, DNB WORKING PAPERS
+   Gencay R, 2004, INT J FORECASTING, V20, P287, DOI 10.1016/j.ijforecast.2004.09.005
+   Gnedenko B, 1943, ANN MATH, V44, P423, DOI 10.2307/1968974
+   Haile F, 2008, INT REV ECON FINANC, V17, P572, DOI 10.1016/j.iref.2007.05.005
+   Haile FD, 2006, REV INT ECON, V14, P554, DOI DOI 10.1111/ROIE.2006.14.ISSUE-4
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hartmann P., 2005, WORKING PAPER SERIES, V0527
+   Hauksson H. A., 2001, Quantitative Finance, V1, P79, DOI 10.1088/1469-7688/1/1/305
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Ho TK, 2008, APPL ECON, V40, P1175, DOI 10.1080/00036840600771221
+   Huang X, 1992, TINBERGEN I RES SERI
+   Hyung N, 2005, J FINANC ECON, V3, P107
+   Hyung N., 2007, J EMPIR FINANC, V14, P383
+   Jansen D.W., 2000, J EMPIR FINANC, V7, P247
+   JANSEN DW, 1991, REV ECON STAT, V73, P18, DOI 10.2307/2109682
+   JENKINSON AF, 1955, Q J ROY METEOR SOC, V81, P158, DOI 10.1002/qj.49708134804
+   Jobst A., 2007, IMF WORKING PAPERS
+   Jorion P., 1997, VALUE RISK NEW BENCH
+   KOEDIJK KG, 1990, J INT ECON, V29, P93, DOI 10.1016/0022-1996(90)90065-T
+   Kotz S., 2000, EXTREME VALUE DISTRI
+   Krehbiel T, 2005, J FUTURES MARKETS, V25, P309, DOI 10.1002/fut.20150
+   Kuester K., 2006, J FINANCIAL ECONOMET, V4, P53, DOI [DOI 10.1093/JJFINEC/NBJ002, 10.1093/jjfinec/nbj002]
+   Kupiec P.H., 1995, J DERIV, V3, P73, DOI DOI 10.3905/jod.1995.407942
+   Leadbetter M. R., 1983, EXTREMES RELATES PRO
+   Ledford AW, 1996, BIOMETRIKA, V83, P169, DOI 10.1093/biomet/83.1.169
+   Lee TH, 2002, JPN WORLD ECON, V14, P63, DOI 10.1016/S0922-1425(01)00080-9
+   Lestano, 2007, INT J FINANC ECON, V12, P371, DOI 10.1002/ijfe.316
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Longin F, 2005, J BANK FINANC, V29, P1017, DOI 10.1016/j.jbankfin.2004.08.011
+   Longin FM, 2000, J BANK FINANC, V24, P1097, DOI 10.1016/S0378-4266(99)00077-1
+   Longin FM, 1999, J FUTURES MARKETS, V19, P127, DOI 10.1002/(SICI)1096-9934(199904)19:2<127::AID-FUT1>3.0.CO;2-M
+   Lopez AJ, 1998, FEDERAL RESERVE BANK, V4, P3
+   Lopez J. A., 1999, J RISK, V1, P37, DOI DOI 10.21314/J0R.1999.005)
+   Loretan M., 1994, J EMPIR FINANC, V1, P211, DOI DOI 10.1016/0927-5398(94)90004-3
+   Lux T, 2000, EMPIR ECON, V25, P641
+   LUX T, 2001, APPL FINANCIAL EC, V11, P299, DOI DOI 10.1080/096031001300138708
+   Lux Thomas, 1996, APPL FINANCIAL EC, V6, P463, DOI DOI 10.1080/
+   MANDELBROT B, 1967, J BUS, V40, P393, DOI 10.1086/295006
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   Manganelli S., 2004, RISK MEASURES 21 CEN
+   Marimoutou V, 2009, ENERG ECON, V31, P519, DOI 10.1016/j.eneco.2009.02.005
+   Markose S., 2005, DISCUSSION PAPERS U
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   McNeil A. J., 2000, J EMPIR FINANC, V7, P271, DOI DOI 10.1016/S0927-5398(00)00012-8
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   Moscadelli M, 2004, TEMI DISCUSSIONE SER, V517
+   Neftci S.N., 2000, J DERIV, V7, P23, DOI DOI 10.3905/jod.2000.319126
+   Pais A., 2009, WORKING PAPER
+   Panaretos J., 2003, 6390 MPRA U LIB MUN
+   Pearson N. D., 2002, REV FINANCIAL EC, V11, P175
+   PICKANDS J, 1975, ANN STAT, V3, P119
+   Pontines V, 2008, INT REV ECON FINANC, V17, P345, DOI 10.1016/j.iref.2006.10.001
+   Pontines V, 2007, JPN WORLD ECON, V19, P214, DOI 10.1016/j.japwor.2005.10.002
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Pownall RAJ, 1999, J INT MONEY FINANC, V18, P853, DOI 10.1016/S0261-5606(99)00040-6
+   Pozo S, 2003, J INT MONEY FINANC, V22, P591, DOI 10.1016/S0261-5606(03)00024-X
+   Rachev S, 2008, ADV STOCHASTIC MODEL
+   Rachev ST, 2003, HDB HEAVY TAILED DIS
+   REISS RD, 1997, STAT ANAL EXTREME VA
+   Resnick SI, 2007, SPRINGER SER OPER RE, P1, DOI 10.1007/978-0-387-45024-7
+   Resnick S. I., 1987, EXTREME VALUES REGUL
+   Roy AD, 1952, ECONOMETRICA, V20, pA431
+   Serguieva A., 2009, WORKING PAPER
+   Sundmacher M., 2007, WORKING PAPER
+   Susmel R, 2001, J INT MONEY FINANC, V20, P971, DOI 10.1016/S0261-5606(01)00014-6
+   Tolikas K, 2007, EUR J FINANC, V13, P373, DOI 10.1080/13518470600763737
+   Vilasuso J, 2000, J APPL STAT, V27, P119, DOI 10.1080/02664760021880
+   Werner T, 2004, J FUTURES MARKETS, V24, P387, DOI 10.1002/fut.10120
+   White H, 2000, ECONOMETRICA, V68, P1097, DOI 10.1111/1468-0262.00152
+NR 126
+TC 28
+Z9 28
+U1 2
+U2 38
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0950-0804
+EI 1467-6419
+J9 J ECON SURV
+JI J. Econ. Surv.
+PD FEB
+PY 2014
+VL 28
+IS 1
+BP 82
+EP 108
+DI 10.1111/j.1467-6419.2012.00744.x
+PG 27
+WC Economics
+SC Business & Economics
+GA 268FD
+UT WOS:000328153900005
+DA 2019-12-28
+ER
+
+PT J
+AU Videira, N
+   Schneider, F
+   Sekulova, F
+   Kallis, G
+AF Videira, Nuno
+   Schneider, Francois
+   Sekulova, Filka
+   Kallis, Giorgos
+TI Improving understanding on degrowth pathways: An exploratory study using
+   collaborative causal models
+SO FUTURES
+LA English
+DT Article
+DE Degrowth; Systems thinking; Causal loop diagrams; Pathways;
+   Participatory modelling
+ID SYSTEM DYNAMICS; SUSTAINABLE DEVELOPMENT; ECONOMICS; GROWTH
+AB Degrowth has been put forward as a transition pathway towards a socially and ecologically sustainable future. Many diverse actions have been proposed in the context of degrowth. To the outsider the debate might seem somewhat unfocussed. This article reveals the links and complementarities between emblematic degrowth proposals, and provides a toolkit for developing a more coherent picture on how overdeveloped societies may make a transition to more frugal and convivial futures. We use the method of Causal Loop Diagramming in a collaborative setting involving researchers and activists engaged with degrowth issues. First we derive collaboratively the dominant feedback processes in the current social, ecological and economic systems and we identify leverage points for systemic interventions to facilitate degrowth. By explicitly representing the main causal chains of effects it is possible to reveal insights on the consequences of a given proposal and explore "what-if?" questions and future pathways. In addition we construct a compatibility matrix to identify the possible synergies between emblematic degrowth proposals. The results from these two exercises are integrated to provide plausible pathways for the implementation of degrowth policies, with a systemic identification of risks, uncertainties and leverage points of intervention. Participatory systems thinking tools have much to offer in envisioning contractional, macro-pathways towards sustainability. (C) 2013 Elsevier Ltd. All rights reserved.
+C1 [Videira, Nuno] Univ Nova Lisboa, Fac Ciencias & Tecnol, CENSE Ctr Environm & Sustainabil Res, Dept Environm Sci & Engn, P-2829516 Caparica, Portugal.
+   [Schneider, Francois; Sekulova, Filka; Kallis, Giorgos] Res & Degrowth Spain France, Barcelona 08002, Spain.
+   [Schneider, Francois; Sekulova, Filka; Kallis, Giorgos] Univ Autonoma Barcelona, ETSE, ICTA, E-08193 Barcelona, Spain.
+   [Kallis, Giorgos] Univ Autonoma Barcelona, ETSE, ICREA, E-08193 Barcelona, Spain.
+RP Videira, N (reprint author), Univ Nova Lisboa, Fac Ciencias & Tecnol, CENSE Ctr Environm & Sustainabil Res, Dept Environm Sci & Engn, P-2829516 Caparica, Portugal.
+EM nmvc@fct.unl.pt
+RI KALLIS, GIORGOS/B-9448-2015; Videira, Nuno/M-5863-2013
+OI KALLIS, GIORGOS/0000-0003-0688-9552; Videira, Nuno/0000-0002-4514-1996;
+   Schneider, Francois/0000-0002-3480-730X
+FU ICREAICREA
+CR Andersen DF, 2007, J OPER RES SOC, V58, P691, DOI 10.1057/palgrave.jors.2602339
+   Antunes P, 2006, LAND USE POLICY, V23, P44, DOI 10.1016/j.landusepol.2004.08.014
+   Bayon Denis, 2010, DECROISSANCE 10 QUES
+   Beck M., 2012, UZH BUSINESS WORKING
+   Cattaneo C, 2012, FUTURES, V44, P515, DOI 10.1016/j.futures.2012.03.012
+   Dietz R, 2013, ENOUGH IS ENOUGH
+   Forrester J. W., 1971, WORLD DYNAMICS
+   Fournier V, 2008, INT J SOCIOL SOC POL, V28, P528, DOI 10.1108/01443330810915233
+   FUNTOWICZ SO, 1993, FUTURES, V25, P739, DOI 10.1016/0016-3287(93)90022-L
+   GORDON TJ, 1968, FUTURES, V1, P100, DOI 10.1016/S0016-3287(68)80003-5
+   Heinberg R., 2011, ENG GROWTH ADAPTING
+   HELMER O, 1981, FUTURES, V13, P389, DOI 10.1016/0016-3287(81)90124-5
+   Hjorth P, 2006, FUTURES, V38, P74, DOI 10.1016/j.futures.2005.04.005
+   JACKSON T, 2009, PROSPERITY GROWTH
+   Kallis G, 2012, ECOL ECON, V84, P172, DOI 10.1016/j.ecolecon.2012.08.017
+   Kallis G, 2011, ECOL ECON, V70, P873, DOI 10.1016/j.ecolecon.2010.12.007
+   Kaner S., 2003, FACILITATORS GUIDE P
+   Kosoy N, 2013, SUSTAINABILITY, V5
+   Lane DC, 2008, SYST RES BEHAV SCI, V25, P3, DOI 10.1002/sres.826
+   LANE DC, 1992, EUR J OPER RES, V59, P64, DOI 10.1016/0377-2217(92)90007-V
+   Latouche S, 2009, FAREWELL TO GROWTH
+   Latouche S, 2010, J CLEAN PROD, V18, P519, DOI 10.1016/j.jclepro.2010.02.003
+   Martinez-Alier J, 2010, ECOL ECON, V69, P1741, DOI 10.1016/j.ecolecon.2010.04.017
+   Meadows D., 1999, LEVERAGE POINTS PLAC
+   Meadows D., 2004, LIMITS GROWTH 30 YEA
+   Meadows D. H., 1972, LIMITS GROWTH
+   Meadows Donella H., 1992, LIMITS CONFRONTING G
+   RICHARDSON G, 1981, INTRO SYSTEM DYNAMIC
+   RICHARDSON GP, 1995, SYST DYNAM REV, V11, P113, DOI 10.1002/sdr.4260110203
+   Rouwette EAJA, 2006, SYST RES BEHAV SCI, V23, P451, DOI 10.1002/sres.772
+   Schneider F, 2010, J CLEAN PROD, V18, P511, DOI 10.1016/j.jclepro.2010.01.014
+   Schuster R., 2003, THESIS U CALIFORNIA
+   Sedlacko M., 2012, ISEE 2012 C EC EC RI
+   Sekulova F, 2013, J CLEAN PROD, V38, P1, DOI 10.1016/j.jclepro.2012.06.022
+   Senge P., 2006, 5 DISCIPLINE ART PRA
+   Stave KA, 2002, SYST DYNAM REV, V18, P139, DOI 10.1002/sdr.237
+   Sterman J., 2000, BUSINESS DYNAMICS SY
+   van den Belt M, 2004, MEDIATED MODELING SY
+   van den Belt M, 2000, THESIS U MARYLAND
+   van den Belt M, 2010, ANN NY ACAD SCI, V1185, P196, DOI 10.1111/j.1749-6632.2009.05164.x
+   van den Bergh JCJM, 2011, ECOL ECON, V70, P881, DOI 10.1016/j.ecolecon.2010.09.035
+   Vennix J., 1996, GROUP MODEL BUILDING
+   Vester F, 1988, SYST PRACT ACT RES, V1, P399, DOI DOI 10.1007/BF01066582
+   Victor P.A, 2008, MANAGING GROWTH SLOW
+   Videira N, 2009, ECOL ECON, V68, P965, DOI 10.1016/j.ecolecon.2008.11.008
+   Videira N, 2012, SYST RES BEHAV SCI, V29, P596, DOI 10.1002/sres.2141
+   Weimer-Jehle W., 2010, INTRO QUALITATIVE SY
+   Whitehead M, 2013, ENVIRON VALUE, V22, P141, DOI 10.3197/096327113X13581561725077
+NR 48
+TC 42
+Z9 42
+U1 3
+U2 43
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0016-3287
+EI 1873-6378
+J9 FUTURES
+JI Futures
+PD JAN
+PY 2014
+VL 55
+BP 58
+EP 77
+DI 10.1016/j.futures.2013.11.001
+PG 20
+WC Economics; Regional & Urban Planning
+SC Business & Economics; Public Administration
+GA AB3FX
+UT WOS:000331677800005
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Kobayashi, T
+AF Kobayashi, Teruyoshi
+TI A model of financial contagion with variable asset returns may be
+   replaced with a simple threshold model of cascades
+SO ECONOMICS LETTERS
+LA English
+DT Article
+DE Financial network; Cascades; Financial contagion; Systemic risk
+ID NETWORKS
+AB I show the equivalence between a model of financial contagion and the threshold model of global cascades proposed by Watts (2002). The model financial network comprises banks that hold risky external assets as well as interbank assets. It is shown that a simple threshold model can replicate the size and the frequency of financial contagion without using information about individual balance sheets. (C) 2014 The Author. Published by Elsevier B.V. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/3.0/).
+C1 Kobe Univ, Grad Sch Econ, Nada Ku, Kobe, Hyogo 6578501, Japan.
+RP Kobayashi, T (reprint author), Kobe Univ, Grad Sch Econ, Nada Ku, 2-1 Rokkodai, Kobe, Hyogo 6578501, Japan.
+EM kobayashi@econ.kobe-u.ac.jp
+OI Kobayashi, Teruyoshi/0000-0002-3135-9038
+CR Dodds PS, 2004, PHYS REV LETT, V92, DOI 10.1103/PhysRevLett.92.218701
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gleeson JP, 2013, PHYS REV X, V3, DOI 10.1103/PhysRevX.3.021004
+   Gleeson JP, 2007, PHYS REV E, V75, DOI 10.1103/PhysRevE.75.056103
+   Kobayashi T, 2014, SCI REP-UK, V4, DOI 10.1038/srep03834
+   Kobayashia T, 2013, EUR PHYS J B, V86, DOI 10.1140/epjb/e2013-40072-9
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Lorenz J, 2009, EUR PHYS J B, V71, P441, DOI 10.1140/epjb/e2009-00347-4
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+   Watts DJ, 2007, J CONSUM RES, V34, P441, DOI 10.1086/518527
+NR 14
+TC 2
+Z9 2
+U1 0
+U2 16
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0165-1765
+EI 1873-7374
+J9 ECON LETT
+JI Econ. Lett.
+PD JUL
+PY 2014
+VL 124
+IS 1
+BP 113
+EP 116
+DI 10.1016/j.econlet.2014.05.003
+PG 4
+WC Economics
+SC Business & Economics
+GA AK7HS
+UT WOS:000338599900026
+OA Green Accepted, Other Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Podobnik, B
+   Horvatic, D
+   Bertella, MA
+   Feng, L
+   Huang, X
+   Li, B
+AF Podobnik, B.
+   Horvatic, D.
+   Bertella, M. A.
+   Feng, L.
+   Huang, X.
+   Li, B.
+TI Systemic risk in dynamical networks with stochastic failure criterion
+SO EPL
+LA English
+DT Article
+ID FINANCIAL NETWORKS; MODEL; CONTAGION; TOPOLOGY
+AB Complex non-linear interactions between banks and assets we model by two time-dependent Erdos-Renyi network models where each node, representing a bank, can invest either to a single asset (model I) or multiple assets (model II). We use a dynamical network approach to evaluate the collective financial failure -systemic risk- quantified by the fraction of active nodes. The systemic risk can be calculated over any future time period, divided into sub-periods, where within each sub-period banks may contiguously fail due to links to either i) assets or ii) other banks, controlled by two parameters, probability of internal failure p and threshold T-h ("solvency" parameter). The systemic risk decreases with the average network degree faster when all assets are equally distributed across banks than if assets are randomly distributed. The more inactive banks each bank can sustain (smaller T-h), the smaller the systemic risk -for some Th values in I we report a discontinuity in systemic risk. When contiguous spreading becomes stochastic ii) controlled by probability p(2) -a condition for the bank to be solvent (active) is stochasticthe- systemic risk decreases with decreasing p(2). We analyse the asset allocation for the U.S. banks. Copyright (C) EPLA, 2014
+C1 [Podobnik, B.] Univ Rijeka, Fac Civil Engn, Rijeka 51000, Croatia.
+   [Podobnik, B.] Zagreb Sch Econ & Management, Zagreb 10000, Croatia.
+   [Podobnik, B.] Univ Ljubljana, Fac Econ, Ljubljana 1000, Slovenia.
+   [Horvatic, D.] Univ Zagreb, Fac Sci, Zagreb 10000, Croatia.
+   [Bertella, M. A.] Sao Paulo State Univ UNESP Araraquara, Dept Econ, BR-14800901 Sao Paulo, Brazil.
+   [Feng, L.; Li, B.] Natl Univ Singapore, Dept Phys, Singapore 117546, Singapore.
+   [Feng, L.; Li, B.] Natl Univ Singapore, Ctr Computat Sci & Engn, Singapore 117546, Singapore.
+   [Huang, X.] Boston Univ, Dept Phys, Boston, MA 02215 USA.
+   [Li, B.] Tongji Univ, Sch Phys Sci & Engn, Ctr Phonon & Thermal Energy Sci, Shanghai 200092, Peoples R China.
+RP Podobnik, B (reprint author), Univ Rijeka, Fac Civil Engn, Rijeka 51000, Croatia.
+EM bp@phy.hr
+RI Podobnik, Boris/S-4583-2018; Horvatic, Davor/J-4176-2012; Li,
+   Baowen/G-3003-2011
+OI Podobnik, Boris/0000-0003-4270-1756; Horvatic,
+   Davor/0000-0002-0411-8474; Li, Baowen/0000-0002-8728-520X; Bertella,
+   Mario/0000-0003-3237-0455
+CR Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   Bashan A, 2012, NAT COMMUN, V3, DOI 10.1038/ncomms1705
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Caccioli F, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500580
+   Cohen R, 2000, PHYS REV LETT, V85, P4626, DOI 10.1103/PhysRevLett.85.4626
+   Delpini D, 2013, SCI REP-UK, V3, DOI 10.1038/srep01626
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   EBERHART AC, 1990, J FINANC, V45, P1457, DOI 10.2307/2328745
+   Elliott M., AM EC REV IN PRESS
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gale DM, 2007, AM ECON REV, V97, P99, DOI 10.1257/aer.97.2.99
+   Garlaschelli D, 2003, NATURE, V423, P165, DOI 10.1038/nature01604
+   Holme P, 2012, PHYS REP, V519, P97, DOI 10.1016/j.physrep.2012.03.001
+   Huang XQ, 2013, SCI REP-UK, V3, DOI 10.1038/srep01219
+   Lorenz J, 2009, EUR PHYS J B, V71, P441, DOI 10.1140/epjb/e2009-00347-4
+   Majdandzic A, 2014, NAT PHYS, V10, P34, DOI [10.1038/NPHYS2819, 10.1038/nphys2819]
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Meng H, 2014, SCI REP-UK, V4, DOI 10.1038/srep03655
+   Parshani R, 2011, P NATL ACAD SCI USA, V108, P1007, DOI 10.1073/pnas.1008404108
+   Pastor-Satorras R, 2001, PHYS REV LETT, V86, P3200, DOI 10.1103/PhysRevLett.86.3200
+   Podobnik B, 2014, PHYS REV E, V89, DOI 10.1103/PhysRevE.89.042807
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Zheng ZY, 2012, SCI REP-UK, V2, DOI 10.1038/srep00888
+NR 29
+TC 8
+Z9 8
+U1 0
+U2 25
+PU EPL ASSOCIATION, EUROPEAN PHYSICAL SOCIETY
+PI MULHOUSE
+PA 6 RUE DES FRERES LUMIERE, MULHOUSE, 68200, FRANCE
+SN 0295-5075
+EI 1286-4854
+J9 EPL-EUROPHYS LETT
+JI EPL
+PD JUN
+PY 2014
+VL 106
+IS 6
+AR 68003
+DI 10.1209/0295-5075/106/68003
+PG 6
+WC Physics, Multidisciplinary
+SC Physics
+GA AL8YT
+UT WOS:000339426500026
+DA 2019-12-27
+ER
+
+PT J
+AU Castro, C
+   Ferrari, S
+AF Castro, Carlos
+   Ferrari, Stijn
+TI Measuring and testing for the systemically important financial
+   institutions
+SO JOURNAL OF EMPIRICAL FINANCE
+LA English
+DT Article
+DE Systemic risk; SIFIs; Quantile regression; Stochastic dominance test
+ID QUANTILE REGRESSION; CRITICAL-VALUES; BESSEL PROCESS; RISK; INFERENCE;
+   MODELS; COVAR
+AB This paper analyzes Delta CoVaR proposed by Adrian and Brunnermeier (2011) as a tool for identifying/ranking systemically important institutions. We develop a test of significance of Delta CoVaR that allows determining whether or not a financial institution can be classified as being systemically important on the basis of the estimated systemic risk contribution, as well as a test of dominance aimed at testing whether or not, according to Delta CoVaR, one financial institution is more systemically important than another. We provide an empirical application on a sample of 26 large European banks to show the importance of statistical testing when using Delta CoVaR, and more generally also other market-based systemic risk measures, in this context. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Castro, Carlos] Univ Rosario, Fac Econ, Bogota, Colombia.
+   [Ferrari, Stijn] Natl Bank Belgium, Brussels, Belgium.
+RP Castro, C (reprint author), Univ Rosario, Fac Econ, Bogota, Colombia.
+EM carlos.castro@urosario.edu.co; Stijn.Ferrari@nbb.be
+RI Castro, Carlos/F-8001-2016
+OI Castro, Carlos/0000-0003-2796-2368
+CR Abadie A, 2002, J AM STAT ASSOC, V97, P284, DOI 10.1198/016214502753479419
+   ACHARYA VV, 2010, MEASURING SYST UNPUB
+   Adams Z., 2012, J FINANC QU IN PRESS
+   Adrian T., 2011, FEDERAL RESERVE BANK, V348
+   Anatolyev S, 2012, ECONOMET THEOR, V28, P239, DOI 10.1017/S0266466611000314
+   Andrews DWK, 2003, ECONOMETRICA, V71, P395, DOI 10.1111/1468-0262.00405
+   ANDREWS DWK, 1993, ECONOMETRICA, V61, P821, DOI 10.2307/2951764
+   BASSETT G, 1982, J AM STAT ASSOC, V77, P407
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brownlees CT, 2012, VOLATILITY COR UNPUB
+   Brunnermeier M.K., 2012, BANKS NONINTER UNPUB
+   Chan-Lau J., 2009, BANKING CRISIS HDB
+   Chan-Lau J., 2010, WP1098 IMF
+   Chemozhukov V., 2000, THESIS STANDFORD
+   Chernozhukov V., 2005, INDIAN J STAT, V67, P253
+   Chernozhukov V., 2001, EMPIR ECON, V26, P271, DOI DOI 10.1007/S001810000062
+   Danielsson Jon, 2011, MODEL RISK SYS UNPUB
+   DELONG DM, 1981, COMMUN STAT A-THEOR, V10, P2197, DOI 10.1080/03610928108828182
+   Deutsche Bundesbank, 2010, FINANC STAB REV  NOV, P31
+   Drehmann M., 2013, J FINANC IN IN PRESS
+   Elsinger H., 2006, INT EC EC POLICY, V3, P73
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Estrella A, 2003, ECONOMET THEOR, V19, P1128, DOI 10.1017/S0266466603196107
+   European Systemic Risk Board, 2012, ESRB RISK DASHB
+   Fong T., 2011, REV FUTURES MARKETS, V20, P7
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Hautsch N., 2012, FINANCIAL NETW UNPUB
+   Hong K., 2011, ANAL COVAR UNPUB
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   International Monetary Fund, 2009, GLOB FIN STAB REP, P74
+   Jaeger-Ambrozewicz M., 2012, CLOSED FORM SO UNPUB
+   Koenker R, 2002, ECONOMETRICA, V70, P1583, DOI 10.1111/1468-0262.00342
+   Koenker R, 1999, J AM STAT ASSOC, V94, P1296, DOI 10.2307/2669943
+   Koenker R, 2005, ECONOMETRIC SOC MONO
+   Linton O, 2005, REV ECON STUD, V72, P735, DOI 10.1111/j.1467-937X.2005.00350.x
+   Loeffler G., 2013, 042013 BUND
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Parzen E, 2004, STAT SCI, V19, P652, DOI 10.1214/088342304000000387
+   PARZEN E, 1979, J AM STAT ASSOC, V74, P105, DOI 10.2307/2286734
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Roengpitya R., 2011, MEASURING SYST UNPUB
+   Sedunov J., 2013, WHAT IS SYSTEM UNPUB
+   Segoviano M. A., 2009, WP094 IMF
+   Tarashev Nicola, 2009, BIS Q REV, P75
+   White H., 2013, VAR VAR MEASUR UNPUB
+   Zhou C., 2011, 281 DNB
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 49
+TC 28
+Z9 29
+U1 5
+U2 36
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0927-5398
+EI 1879-1727
+J9 J EMPIR FINANC
+JI J. Empir. Financ.
+PD JAN
+PY 2014
+VL 25
+BP 1
+EP 14
+DI 10.1016/j.jempfin.2013.10.009
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA AF1MZ
+UT WOS:000334479300001
+OA Green Published
+DA 2019-12-28
+ER

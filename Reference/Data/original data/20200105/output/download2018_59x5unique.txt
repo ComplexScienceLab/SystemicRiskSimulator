@@ -1,0 +1,472 @@
+
+PT J
+AU Huang, X
+AF Huang, Xin
+TI Macroeconomic news announcements, systemic risk, financial market
+   volatility, and jumps
+SO JOURNAL OF FUTURES MARKETS
+LA English
+DT Article
+DE disagreement and uncertainty; financial systemic risk; jumps;
+   macroeconomic news announcements; realized variance
+ID TIME PRICE DISCOVERY; FOREIGN-EXCHANGE; ECONOMIC-NEWS; STOCK-PRICES;
+   INFORMATION; RATES; BOND
+AB I study the second-moment response to macroeconomic news announcements in financial markets. Responses can be decomposed into contributions from continuous volatility and discrete jumps. Disagreement and uncertainty are introduced to measure the second moments of market forecasts. Two decades of high frequency equity and bond futures data are examined including the global financial crisis. I report evidence that uncertainty has a stronger effect on the second-moment response than disagreement and the second-moment response is influenced by the level of financial stress and monetary policy regime. The zero-lower-bound interest rate policy constrains second-moment responses in the bond market.
+C1 [Huang, Xin] Fed Reserve Board, Risk Anal Sect, Mail Stop K1-91,20th & C St NW, Washington, DC 20551 USA.
+RP Huang, X (reprint author), Fed Reserve Board, Risk Anal Sect, Mail Stop K1-91,20th & C St NW, Washington, DC 20551 USA.
+EM xin.huang@frb.gov
+FU International Finance and Banking Society; College of Arts and Sciences
+   at the University of Oklahoma
+FX I thank Tim Bollerslev, Kevin Evans, Rene Garcia, Clara Vega, Min Wei,
+   Jon Wongswan, Jonathan H. Wright, and Hao Zhou, as well as participants
+   of 2006 NBER-NSF Time Series Conference, the 2007 Conference on
+   Volatility and High Frequency Data at the University of Chicago, 2008
+   North American Summer Meeting of the Econometric Society, Federal
+   Reserve Board MFMA seminar, the 19th Annual Conference of the Swiss
+   Society for Financial Market Research, International Finance and Banking
+   Society 2016 Barcelona Conference, European Financial Management
+   Association 2016 Annual Meeting, 2016 World Finance Conference in New
+   York and Bowles Symposium 2016 at Georgia State University for many
+   helpful discussions of this paper. I am grateful to the editor, Bob
+   Webb, for his helpful suggestions. Will Kuchinski and Drew Pinta kindly
+   provided assistance on news announcement release and survey data. I also
+   thank David Jenkins for valuable editing assistance. The analysis and
+   conclusions set forth are those of the author and do not indicate
+   concurrence by other members of the research staff or the Board of
+   Governors. An earlier version of this paper, titled "Macroeconomic News
+   Announcements, Financial Market Volatility and Jumps" (June 2008),
+   utilized data obtained with funding from the Faculty Enrichment Grant
+   provided by the College of Arts and Sciences at the University of
+   Oklahoma.
+CR Andersen TG, 1998, J FINANC, V53, P219, DOI 10.1111/0022-1082.85732
+   Andersen TG, 2003, AM ECON REV, V93, P38, DOI 10.1257/000282803321455151
+   Andersen TG, 2007, J INT ECON, V73, P251, DOI 10.1016/j.jinteco.2007.02.004
+   Andersen TG, 2007, REV ECON STAT, V89, P701, DOI 10.1162/rest.89.4.701
+   Balduzzi P, 2001, J FINANC QUANT ANAL, V36, P523, DOI 10.2307/2676223
+   Bamdorff-Nielsen O. E., 2004, J FINANCIAL ECONOMET, V2, P1, DOI DOI 10.1093/JJFINEC/NBH001
+   Barndorff-Nielsen O. E., 2006, J FINANCIAL ECONOMET, V4, P1, DOI DOI 10.1093/JJFINEC/NBI022
+   Chen J, 2016, J FUTURES MARKETS, V36, P240, DOI 10.1002/fut.21727
+   Dacorogna M.M., 2001, INTRO HIGH FREQUENCY
+   Dungey M, 2009, J EMPIR FINANC, V16, P430, DOI 10.1016/j.jempfin.2008.12.002
+   EDERINGTON LH, 1993, J FINANC, V48, P1161, DOI 10.2307/2329034
+   Evans KP, 2011, J BANK FINANC, V35, P2511, DOI 10.1016/j.jbankfin.2011.02.018
+   Gadanecz Blaise, 2007, BIS Q REV, P69
+   Goldberg L. S., 2013, 19523 NBER
+   Gurkaynak R. S., 2006, W11929 NBER
+   Huang X., 2005, J FINANCIAL ECONOMET, V3, P456, DOI DOI 10.1093/JJFINEC/NBI025
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   JAIN PC, 1988, J BUS, V61, P219, DOI 10.1086/296429
+   Jiang GJ, 2011, J FINANC QUANT ANAL, V46, P527, DOI 10.1017/S0022109010000785
+   KAWALLER IG, 1987, J FINANC, V42, P1309, DOI 10.2307/2328529
+   Lahaye J, 2011, J APPL ECONOMET, V26, P893, DOI 10.1002/jae.1149
+   Lee SS, 2012, REV FINANC STUD, V25, P439, DOI 10.1093/rfs/hhr084
+   MCQUEEN G, 1993, REV FINANC STUD, V6, P683, DOI 10.1093/rfs/6.3.683
+   Swanson ET, 2014, AM ECON REV, V104, P3154, DOI 10.1257/aer.104.10.3154
+   WASSERFALLEN W, 1985, J BANK FINANC, V9, P55, DOI 10.1016/0378-4266(85)90062-7
+   Wongswan J, 2006, REV FINANC STUD, V19, P1157, DOI 10.1093/rfs/hhj033
+NR 28
+TC 2
+Z9 2
+U1 3
+U2 23
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0270-7314
+EI 1096-9934
+J9 J FUTURES MARKETS
+JI J. Futures Mark.
+PD MAY
+PY 2018
+VL 38
+IS 5
+BP 513
+EP 534
+DI 10.1002/fut.21898
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA GC1OJ
+UT WOS:000429551200001
+DA 2019-12-28
+ER
+
+PT J
+AU Hayakawa, H
+AF Hayakawa, Hitoshi
+TI Does a central clearing counterparty reduce liquidity needs?
+SO JOURNAL OF ECONOMIC INTERACTION AND COORDINATION
+LA English
+DT Article; Proceedings Paper
+CT 20th Annual Conference on Economic Science with Heterogeneous
+   Interacting Agents (WEHIA)
+CY 2015
+CL Nice, FRANCE
+AB This study investigates whether and how central clearing influences the overall liquidity needs in a network of financial obligations. Utilizing the approach of flow network theory, we show that the effect of adding a central clearing counterparty (CCP) is decomposed into two effects: central routing, and central netting effects. Each effect can produce different liquidity needs according to different liquidity scenarios. The analysis indicates that adding a CCP in times of financial distress successfully reduces the overall liquidity needs if and only if the netting efficiency of the CCP is sufficiently high. Furthermore, once the economy is no longer in financial distress, higher netting efficiency of the CCP could conversely increase the overall liquidity needs. The results have implications for the effectiveness of CCPs in mitigating systemic risk in times of financial distress, and their operating costs once the distress has passed.
+C1 [Hayakawa, Hitoshi] Hokkaido Univ, Grad Sch Econ & Business Adm, Creat Res Inst, Kita Ku, Kita9 Nishi7, Sapporo, Hokkaido, Japan.
+RP Hayakawa, H (reprint author), Hokkaido Univ, Grad Sch Econ & Business Adm, Creat Res Inst, Kita Ku, Kita9 Nishi7, Sapporo, Hokkaido, Japan.
+EM hit.hayakawa@econ.hokudai.ac.jp
+FU JSPS KAKENHIMinistry of Education, Culture, Sports, Science and
+   Technology, Japan (MEXT)Japan Society for the Promotion of
+   ScienceGrants-in-Aid for Scientific Research (KAKENHI) [16H02009];
+   European Union Seventh Framework ProgrammeEuropean Union (EU)
+   [PIRSES-GA-2012-317767]
+FX I would like to thank the editor and the anonymous referees for their
+   careful reviews on an earlier version of this paper. This work was
+   partly supported by JSPS KAKENHI Grant Number 16H02009, and by the
+   European Union Seventh Framework Programme (FP7/2007-2013) under grant
+   agreement no. PIRSES-GA-2012-317767.
+CR Abruzzo N, 2016, J FINANC SERV RES, V49, P65, DOI 10.1007/s10693-014-0212-8
+   Ahuja R. K., 1993, NETWORK FLOWS
+   Bliss R. R., 2006, J FINANCIAL STABILIT, V2, P55, DOI DOI 10.1016/j.jfs.2005.05.001
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Domanski D., 2015, BIS Q REV
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Galbiati M, 2012, J ECON BEHAV ORGAN, V83, P609, DOI 10.1016/j.jebo.2012.05.013
+   Hayakawa H, 2014, COMPLEXITY PAYMENT N, DOI [10.2139/ssrn.2448552, DOI 10.2139/SSRN.2448552]
+   Hayakawa H, 2016, CHARACTERIZATION LOW, DOI [10.2139/ssrn.2659975, DOI 10.2139/SSRN.2659975]
+   Jackson J. P., 2007, 321 BANK ENGL
+   Miglietta A, 2015, BIS WORKING PAPERS
+   Murphy D, 2014, BANK ENGLAND FINANCI
+   Pirrong C., 2009, WORKING PAPER
+   Rennison J, 2016, FINANICAL TIMES 1117
+   Steigerwald Robert, 2006, EC PERSPECT Q, V4Q, P22
+   2013, GLOB FIN DEV REP, P1, DOI DOI 10.1596/978-0-8213-9635-3
+NR 16
+TC 1
+Z9 1
+U1 1
+U2 2
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1860-711X
+EI 1860-7128
+J9 J ECON INTERACT COOR
+JI J. Econ. Interact. Coord.
+PD APR
+PY 2018
+VL 13
+IS 1
+SI SI
+BP 9
+EP 50
+DI 10.1007/s11403-017-0208-1
+PG 42
+WC Economics
+SC Business & Economics
+GA GD2CN
+UT WOS:000430307800002
+OA Other Gold, Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Hoffmann, H
+   Meyer-Brandis, T
+   Svindland, G
+AF Hoffmann, Hannes
+   Meyer-Brandis, Thilo
+   Svindland, Gregor
+TI Strongly consistent multivariate conditional risk measures
+SO MATHEMATICS AND FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Multivariate risk measures; Strong consistency; Law-invariance;
+   Conditional certainty equivalents; Systemic risk measures
+ID SYSTEMIC RISK; DISCRETE-TIME
+AB We consider families of strongly consistent multivariate conditional risk measures. We show that under strong consistency these families admit a decomposition into a conditional aggregation function and a univariate conditional risk measure as introduced Hoffmann et al. (Stoch Process Appl 126(7): 2014-2037, 2016). Further, in analogy to the univariate case in Follmer (Stat Risk Model 31(1): 79-103, 2014), we prove that under law-invariance strong consistency implies that multivariate conditional risk measures are necessarily multivariate conditional certainty equivalents.
+C1 [Hoffmann, Hannes; Meyer-Brandis, Thilo; Svindland, Gregor] Univ Munich, Dept Math, Theresienstr 39, D-80333 Munich, Germany.
+RP Svindland, G (reprint author), Univ Munich, Dept Math, Theresienstr 39, D-80333 Munich, Germany.
+EM hannes.hoffmann@math.lmu.de; meyer-brandis@math.lmu.de;
+   gregor.svindland@math.lmu.de
+CR Acciaio B, 2011, ADVANCED MATHEMATICAL METHODS FOR FINANCE, P1, DOI 10.1007/978-3-642-18412-3_1
+   Acharya V, 2010, MEASURING SYSTEMIC R
+   Adrian T., 2011, TECHNICAL REPORT
+   Bion-Nadal J, 2008, FINANC STOCH, V12, P219, DOI 10.1007/s00780-007-0057-1
+   Brunnermeier Markus K., 2014, MEASURING ALLOCATING
+   Chen C, 2013, MANAGE SCI, V59, P1373, DOI 10.1287/mnsc.1120.1631
+   Cheridito P, 2006, ELECTRON J PROBAB, V11, P57, DOI 10.1214/EJP.v11-302
+   Cheridito P, 2011, INT J THEOR APPL FIN, V14, P137, DOI 10.1142/S0219024911006292
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Detlefsen K, 2005, FINANC STOCH, V9, P539, DOI 10.1007/s00780-005-0159-6
+   Farkas W, 2015, MATH FINANC ECON, V9, P3, DOI 10.1007/s11579-014-0118-0
+   Follmer H, 2006, STATIST RISK MODEL, V24, P61, DOI 10.1524/stnd.2006.24.1.61
+   Follmer H, 2014, STATIST RISK MODEL, V31, P79, DOI 10.1515/strm-2013-5001
+   Follmer H., 2011, STOCHASTIC FINANCE I
+   Follmer H., 2014, STOCHASTIC ANAL APPL
+   Frittelli M, 2011, INT J THEOR APPL FIN, V14, P41, DOI 10.1142/S0219024911006255
+   Hoffmann H, 2016, STOCH PROC APPL, V126, P2014, DOI 10.1016/j.spa.2016.01.002
+   Kromer E, 2016, MATH METHOD OPER RES, V84, P323, DOI 10.1007/s00186-016-0545-1
+   Kromer E., 2014, DYNAMIC SYSTEMIC RIS
+   Kupper M, 2009, MATH FINANC ECON, V2, P189, DOI 10.1007/s11579-009-0019-9
+   Penner I., 2007, THESIS, VII
+   Revuz D., 1999, CONTINUOUS MARTINGAL, V293
+   Tutsch S., 2007, THESIS
+   Weber S, 2006, MATH FINANC, V16, P419, DOI 10.1111/j.1467-9965.2006.00277.x
+NR 24
+TC 2
+Z9 2
+U1 0
+U2 3
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1862-9679
+EI 1862-9660
+J9 MATH FINANC ECON
+JI Math. Financ. Econ.
+PD JUN
+PY 2018
+VL 12
+IS 3
+BP 413
+EP 444
+DI 10.1007/s11579-017-0210-3
+PG 32
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA GR4ZI
+UT WOS:000442630700005
+DA 2019-12-28
+ER
+
+PT J
+AU Ben Ameur, H
+   Jawadi, F
+   Louhichi, W
+   Cheffou, AI
+AF Ben Ameur, Hachmi
+   Jawadi, Fredj
+   Louhichi, Wael
+   Cheffou, Abdoulkarim Idi
+TI MODELING INTERNATIONAL STOCK PRICE COMOVEMENTS WITH HIGH-FREQUENCY DATA
+SO MACROECONOMIC DYNAMICS
+LA English
+DT Article
+DE Price Comovements; Systemic Risk; HFD; ADCC-GARCH; MES
+ID EQUITY MARKETS; ASYMMETRIC VOLATILITY; CONTAGION; RETURNS; RISK;
+   INTEGRATION; LIQUIDITY; US
+AB This paper studies stock price comovements in two key regions [the United States and Europe, which is represented by three major European developed countries (France, Germany, and the United Kingdom)]. Our paper uses recent high-frequency data (HFD) and investigates price comovements in the context of "normal times" and crisis periods. To this end, we applied a non-Gaussian Asymmetrical Dynamic Conditional Correlation (ADCC)-GARCH (Generalized Autoregressive Conditional Heteroscedasticity) model and the Marginal Expected Shortfall (MES) approach. This choice has three advantages: (i) With the development of high-frequency trading (HFT), it is more appropriate to use HFD to test price linkages for overlapping and nonoverlapping data. (ii) The ADCC-GARCH model captures further asymmetry in price comovements. (iii) The use of the MES enables to measure systemic risk contributions around the distribution tails. Accordingly, we offer two interesting findings. First, while the hypothesis of asymmetrical and time-varying stock return linkages is not rejected, the MES approach indicates that both European and US indices make a considerable contribution to each other's systemic risk, with significant input from Frankfurt to the French and US markets, especially following the collapse of Lehman Brothers. Second, we show that the propagation of systemic risk is higher during the crisis period and overlapping trading hours than during nonoverlapping hours. Thus, the MES test is recommended as an indicator to help monitor market exposure to systemic risk and to gauge expected losses for other markets.
+C1 [Ben Ameur, Hachmi] INSEEC Business Sch, 27 Ave Claude Vellefaux, F-75010 Paris, France.
+   [Jawadi, Fredj] Univ Evry, Evry, France.
+   [Louhichi, Wael] ESSCA Sch Management, Angers, France.
+   [Cheffou, Abdoulkarim Idi] EDC Paris Business Sch, Paris, France.
+RP Ben Ameur, H (reprint author), INSEEC Business Sch, 27 Ave Claude Vellefaux, F-75010 Paris, France.
+EM hbenameur@inseec.com
+CR Acharya V. V., 2010, AFA 2011 DENV M, DOI 10.2139/ssrn.1573171
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Ait-Sahalia Y, 2009, ANN APPL STAT, V3, P422, DOI 10.1214/08-AOAS200
+   Andersen TG, 2011, J ECONOMETRICS, V160, P220, DOI 10.1016/j.jeconom.2010.03.032
+   Arouri MEH, 2012, MACROECON DYN, V16, P232, DOI 10.1017/S136510051100037X
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Baele L, 2005, J FINANC QUANT ANAL, V40, P373, DOI 10.1017/S0022109000002350
+   Baur D, 2006, J INT MONEY FINANC, V25, P598, DOI 10.1016/j.jimonfin.2005.11.010
+   Bauwens L, 2005, J INT MONEY FINANC, V24, P1108, DOI 10.1016/j.jimonfin.2005.08.008
+   Bauwens L, 2006, J APPL ECONOM, V21, P79, DOI 10.1002/jae.842
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Bollerslev T., 2003, J EMPIR FINANC, V10, P533
+   Brownlees C. T., 2012, VOLATILITY CORRELATI
+   Calvo S., 1996, PRIVATE CAPITAL FLOW, P151
+   Cao Z., 2012, WORKING PAPER
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Chang CC, 2011, REV QUANT FINANC ACC, V36, P355, DOI 10.1007/s11156-010-0181-4
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Chlibi S, 2016, STUDIES NONLINEAR DY, V21, P1
+   Chlibi S, 2016, OPEN ECON REV, V27, P541, DOI 10.1007/s11079-015-9381-9
+   Dobrev D, 2010, NON TRADITIONAL REF
+   Engle R.F, 2001, 8554 NAT BUR EC RES
+   Engle R.F, 2008, FIN07046 NYU
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Girardin E, 2007, CHINA ECON REV, V18, P354, DOI 10.1016/j.chieco.2007.02.009
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   Hardle W, 2008, APPL QUANTITATIVE FI, P275
+   HARRIS L, 1986, J FINANC ECON, V16, P99, DOI 10.1016/0304-405X(86)90044-9
+   Hendershott T, 2009, 0908 NET I
+   Hendershott T, 2011, J FINANC, V66, P1, DOI 10.1111/j.1540-6261.2010.01624.x
+   Hussain S.M., 2011, GLOB FINANC J, V25, P183
+   JAFFE J, 1985, J FINANC, V40, P433, DOI 10.2307/2327894
+   Jawadi F., 2009, EC B, V29, P162
+   Jawadi F, 2015, J FINANC MARK, V26, P64, DOI 10.1016/j.finmar.2015.09.004
+   Jawadi F, 2015, APPL ECON, V47, P3633, DOI 10.1080/00036846.2015.1021459
+   Jawadi F, 2013, APPL ECON LETT, V20, P499, DOI 10.1080/13504851.2012.714064
+   Kalev PS, 2004, J BANK FINANC, V28, P1441, DOI 10.1016/S0378-4266(03)00126-2
+   Koutmos G, 1995, J INT MONEY FINANC, V14, P747, DOI 10.1016/0261-5606(95)00031-3
+   Koutmos G., 1996, J BUSINESS FINANCE A, V23, P975, DOI DOI 10.1111/JBFA.1996.23.ISSUE-7
+   Krause J, 2014, ECONOMETRICS, V2, P98, DOI 10.3390/econometrics2020098
+   Kuester K., 2006, J FINANCIAL ECONOMET, V4, P53, DOI [DOI 10.1093/JJFINEC/NBJ002, 10.1093/jjfinec/nbj002]
+   Lee SJ, 2009, APPL ECON LETT, V16, P501, DOI 10.1080/13504850601018700
+   Louhichi W, 2011, INT REV FINANC ANAL, V20, P200, DOI 10.1016/j.irfa.2011.03.001
+   Nam J. H., 2008, APPL FINANCIAL EC, V18, P639, DOI [10.1080/09603100701222275, DOI 10.1080/09603100701222275]
+   Ng A, 2000, J INT MONEY FINANC, V19, P207, DOI 10.1016/S0261-5606(00)00006-1
+   SCAILLET O, 2005, INS RISK MANAGE J, V74, P639
+   Schwert G.W, 1998, 6381 NBER
+   SUSMEL R, 1994, J INT MONEY FINANC, V13, P3, DOI 10.1016/0261-5606(94)90021-3
+   TAYLOR SJ, 1997, J EMPIR FINANC, V4, P317, DOI DOI 10.1016/S0927-5398(97)00010-8
+NR 53
+TC 0
+Z9 0
+U1 0
+U2 7
+PU CAMBRIDGE UNIV PRESS
+PI NEW YORK
+PA 32 AVENUE OF THE AMERICAS, NEW YORK, NY 10013-2473 USA
+SN 1365-1005
+EI 1469-8056
+J9 MACROECON DYN
+JI Macroecon. Dyn.
+PD OCT
+PY 2018
+VL 22
+IS 7
+SI SI
+BP 1875
+EP 1903
+DI 10.1017/S1365100516000924
+PG 29
+WC Economics
+SC Business & Economics
+GA GS7SD
+UT WOS:000443902600010
+DA 2019-12-28
+ER
+
+PT J
+AU Leon, C
+   Machado, C
+   Sarmiento, M
+AF Leon, Carlos
+   Machado, Clara
+   Sarmiento, Miguel
+TI Identifying central bank liquidity super-spreaders in interbank funds
+   networks
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Interbank markets; Networks; Super-spreaders; Central bank liquidity;
+   Financial stability
+ID POWER-LAW DISTRIBUTIONS; SYSTEMIC RISK; MONEY MARKET; TOPOLOGY;
+   EXPOSURES; CONTAGION
+AB We model the allocation of central bank liquidity among the participants of the interbank market by using network analysis' metrics. Our analytical framework considers that a super-spreader simultaneously excels at borrowing and lending central bank's liquidity for the whole network, as measured by financial institutions' hub centrality and authority centrality, respectively. Evidence suggests that the Colombian interbank funds market exhibits an inhomogeneous and hierarchical network structure, akin to a core periphery organization, in which a few financial institutions fulfill the role of central bank's liquidity super spreaders. Our results concur with evidence from other interbank markets and other financial networks regarding the flaws of traditional direct financial contagion models based on homogeneous and non-hierarchical networks. Also, concurrent with literature on lending relationships in interbank markets, we confirm that the probability of being a super-spreader is mainly determined by financial institutions' size, but leverage and lending concentration as well. We provide additional elements for the implementation of monetary policy and for safeguarding financial stability. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Leon, Carlos; Machado, Clara] Banco Republ, Financial Infrastruct Oversight Dept, Bogota, Colombia.
+   [Sarmiento, Miguel] Banco Republ, Financial Stabil Dept, Bogota, Colombia.
+   [Leon, Carlos; Sarmiento, Miguel] Tilburg Univ, CentER, Tilburg, Netherlands.
+   [Leon, Carlos; Sarmiento, Miguel] Tilburg Univ, European Banking Ctr, Tilburg, Netherlands.
+RP Sarmiento, M (reprint author), Carrera 7 14-78, Bogota, Colombia.
+EM cleonrin@banrep.gov.co; cmachafr@banrep.gov.co; nsarmipa@banrep.gov.co
+RI Sarmiento, Miguel/AAB-8096-2019
+OI Sarmiento, Miguel/0000-0001-8069-808X; Leon, Carlos/0000-0001-5357-0216
+CR Acharya VV, 2012, AM ECON J-MACROECON, V4, P184, DOI 10.1257/mac.4.2.184
+   Afonso G., 2013, FEDERAL RESERVE BANK, V620
+   Afonso G, 2011, J FINANC, V66, P1109, DOI 10.1111/j.1540-6261.2011.01670.x
+   Albert R, 2002, REV MOD PHYS, V74, P47, DOI 10.1103/RevModPhys.74.47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2009, J MONETARY ECON, V56, P639, DOI 10.1016/j.jmoneco.2009.04.003
+   Angelini P, 2011, J MONEY CREDIT BANK, V43, P923, DOI 10.1111/j.1538-4616.2011.00402.x
+   Baltagi B. H., 2013, ECONOMETRIC ANAL PAN
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Beltran D. O., 2015, FINANCE EC DISCUSSIO
+   Bertay AC, 2013, J FINANC INTERMED, V22, P532, DOI 10.1016/j.jfi.2013.02.002
+   Bjelland J, 2008, TELEKTRONIKK, V1, P95
+   Board of Directors of Banco de la Republica-BDBR, 2003, REP C BOARD DIR
+   BONACICH P, 1972, J MATH SOCIOL, V2, P113, DOI 10.1080/0022250X.1972.9989806
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brauning F., 2016, REV FINANCE
+   Cajueiro DO, 2008, PHYSICA A, V387, P6825, DOI 10.1016/j.physa.2008.08.031
+   Campbell S, 2011, J MONETARY ECON, V58, P518, DOI 10.1016/j.jmoneco.2011.05.003
+   Capera-Romero L., 2013, TEMAS ESTABILIDAD FI, P77
+   Cardozo P., 2011, BORRADORES EC, P673
+   Castiglionesi F, 2013, J FINANC INTERMED, V22, P177, DOI 10.1016/j.jfi.2012.07.002
+   Christensen J. H. E., 2009, DO CENTRAL BANK LIQU
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   Cleves MA, 2002, STATA J, V2, P301, DOI 10.1177/1536867X0200200307
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Cohen R, 2003, PHYS REV LETT, V90, DOI 10.1103/PhysRevLett.90.058701
+   Comelli F., 2014, WP1465 IMF
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Craig BR, 2015, J BANK FINANC, V53, P99, DOI 10.1016/j.jbankfin.2014.12.022
+   Duygan-Bump B, 2013, J FINANC, V68, P715, DOI 10.1111/jofi.12011
+   Erdos P., 1960, PUBL MATH I HUNG, V5, P17, DOI DOI 10.2307/1999405
+   Estrada D., 2008, STABILITY, V35, P75
+   Fecht F, 2011, J FINANC ECON, V102, P344, DOI 10.1016/j.jfineco.2011.05.015
+   Fiaschi D., 2013, INTERRUPTED PO UNPUB
+   Fleming M. J., 2012, 563 FRB, P563
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Freixas X, 2011, REV FINANC STUD, V24, P2656, DOI 10.1093/rfs/hhr018
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Furfine CH, 2001, J BUS, V74, P33, DOI 10.1086/209662
+   Gabaix X, 2003, NATURE, V423, P267, DOI 10.1038/nature01624
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gale D, 2013, THEOR ECON, V8, P291, DOI 10.3982/TE1064
+   Georg C.P., 2010, JENA EC RES PAPERS
+   Gonzalez C., 2013, BORRADORES EC, P790
+   Haldane A. G., 2009, COMMUNICATION
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Inaoka H., 2004, BANK JAPAN WORKING P, V04
+   International Monetary Fund, 2014, GLOB FIN STAB REP, P101
+   Kambhu J., 2007, EC POLICY REV, V13, P2
+   Kleinberg J. M., 1998, P ACM SIAM S DISCR A
+   Kolaczyk ED, 2009, SPRINGER SER STAT, P1, DOI 10.1007/978-0-387-88146-1_1
+   Leon C, 2014, J FINANCIAL MARKET I, V2, P67
+   Leon C., 2014, SCALE FREE TAILS COL, P812
+   Leon C., 2012, DIAGNOSTICS FINANCIA
+   Leon C, 2014, J FINANC STABIL, V15, P241, DOI 10.1016/j.jfs.2014.10.006
+   Markose S.M., 2012, WP12282 IMF
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Martinez C, 2016, J FINANC STABIL, V25, P193, DOI 10.1016/j.jfs.2015.10.003
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   Memmel C, 2013, J FINANC STABIL, V9, P46, DOI 10.1016/j.jfs.2013.01.001
+   Minoiu C., 2013, WP13267 IMF
+   Newman M, 2010, NETWORKS INTRO
+   Newman MEJ, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.066133
+   Propper M., 2008, 177 DNB
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Sarmiento M., 2015, 2015036 CENTER
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Soramaki K, 2013, ECONOMICS-KIEL, V7, DOI 10.5018/economics-ejournal.ja.2013-28
+   Straffin PD., 1980, MATH MAG, V5, P269
+   Strogatz S., 2003, NATURE DAILY LIFE
+   Stumpf MPH, 2012, SCIENCE, V335, P665, DOI 10.1126/science.1216142
+   Tabak B. M., 2013, WORKING PAPER SERIES, V318
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Vargas H., 2008, BIS PAPERS, V44, P153
+   Yellen J.L., 2013, COMMUNICATION
+NR 81
+TC 6
+Z9 6
+U1 1
+U2 8
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD APR
+PY 2018
+VL 35
+BP 75
+EP 92
+DI 10.1016/j.jfs.2016.10.008
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA GD1ME
+UT WOS:000430263200006
+DA 2019-12-28
+ER

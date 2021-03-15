@@ -1,0 +1,454 @@
+
+PT J
+AU Vallascas, F
+   Keasey, K
+AF Vallascas, Francesco
+   Keasey, Kevin
+TI Bank resilience to systemic shocks and the stability of banking systems:
+   Small is beautiful
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Banking risk; Microprudential regulation; Macroprudential regulation;
+   European banking
+ID RISK; EQUITY; DIVERSIFICATION; PERFORMANCE; CONTAGION; BENEFITS;
+   LEVERAGE; SCALE; COSTS; SIZE
+AB Utilising a novel empirical approach and an extensive sample of listed European banks, we identify which bank characteristics offer a shelter from systemic shocks and compare the relative effects of several hypothetical prudential rules on a bank's risk exposure. While the results show that restrictions on a bank's leverage ratio and the imposition of liquidity requirements, as in the Basel III Accord, may improve the resilience of a bank to systemic events, they also demonstrate that bank size, the share of non-interest income and asset growth (none of which are at the centre of the new regulatory landscape) are key determinants of a bank's risk exposure. In particular, the introduction of a cap on bank absolute size appears the most effective tool, ceteris paribus, to reduce the default risk of a bank given systemic events. Furthermore, in spite of the integration process of the financial industry in Europe, the analysis presented here shows that such a cap should be country-specific with smaller economies requiring smaller banks. Finally, we show that the strengthening of individual bank stability obtained via size restrictions is accompanied by a reduction of the contribution to systemic risk for banks which are relatively large compared to the domestic economy. (C) 2012 Elsevier Ltd. All rights reserved.
+C1 [Vallascas, Francesco] Univ Leeds, Sch Business, Leeds LS2 9JT, W Yorkshire, England.
+RP Vallascas, F (reprint author), Univ Leeds, Sch Business, Maurice Keyworth Bldg, Leeds LS2 9JT, W Yorkshire, England.
+EM fv@lubs.leeds.ac.uk
+CR Acharya V.V., 2011, DARK SIDE LIQU UNPUB
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2011, J FINANC, V66, P99, DOI 10.1111/j.1540-6261.2010.01627.x
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   ACHARYA VV, 2010, MEASURING SYST UNPUB
+   Adams Z., 2010, MODELING SPILLOVER E
+   Adrian T., 2011, NBER WORKING PAPER S
+   Akhigbe A., 2007, J FINANC RES, V1, P147
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baele L, 2007, J BANK FINANC, V31, P1999, DOI 10.1016/j.jbankfin.2006.08.003
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Basel Committee on Banking Supervision, 2011, SYST IMP BANKS ASS M
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Berger AN, 2009, REV FINANC STUD, V22, P3779, DOI 10.1093/rfs/hhn104
+   Berger AN, 1997, J BANK FINANC, V21, P895, DOI 10.1016/S0378-4266(97)00010-1
+   Bernoth K, 2011, J BANK FINANC, V35, P807, DOI 10.1016/j.jbankfin.2010.10.024
+   Bhattacharya S., 1993, J FINANCIAL INTERMED, V3, P2, DOI DOI 10.1006/JFIN.1993.1001
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   BOYD JH, 1993, J MONETARY ECON, V31, P47, DOI 10.1016/0304-3932(93)90016-9
+   BOYSON N, 2010, CRISES LIQUIDI UNPUB
+   Brown CO, 2011, REV FINANC STUD, V24, P1378, DOI 10.1093/rfs/hhp039
+   Brunnermeier Markus, 2009, GENEVA REPORTS WORLD, P11
+   Brunnermeir M., 2011, BANKS NONINTER UNPUB
+   Carlson M.A., 2008, FINANCE EC DISCUSSIO, P2008
+   Cerasi V, 2000, EUR ECON REV, V44, P1701, DOI 10.1016/S0014-2921(99)00008-2
+   Curry TJ, 2008, J BANK FINANC, V32, P1297, DOI 10.1016/j.jbankfin.2007.11.009
+   De Bandt O., 2000, WORKING PAPER SERIES, V35
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Demirguc-Kunt A, 2011, DO WE NEED BIG BANKS
+   DENICOLO G, 2004, FINANCIAL MARKETS I, V13, P173, DOI DOI 10.1111/FMII.2004.13.ISSUE-4
+   Dermine J., 2010, FINANCIAL MARKETS I, V19, P1
+   DeYoung R, 2001, J FINANC INTERMED, V10, P54, DOI 10.1006/jfin.2000.0305
+   European Central Bank, 2005, MONTHLY BULLETIN FEB
+   Financial Stability Board, 2009, GUID ASS SYST IMP FI
+   Foos D, 2010, J BANK FINANC, V34, P2929, DOI 10.1016/j.jbankfin.2010.06.007
+   Gatev E, 2009, REV FINANC STUD, V22, P995, DOI 10.1093/rfs/hhm060
+   Geyfman V, 2009, J MONEY CREDIT BANK, V41, P1649, DOI 10.1111/j.1538-4616.2009.00266.x
+   Goddard J, 2007, J BANK FINANC, V31, P1911, DOI 10.1016/j.jbankfin.2007.01.002
+   Gropp R, 2006, J MONEY CREDIT BANK, V38, P399, DOI 10.1353/mcb.2006.0032
+   Gropp R, 2004, J INT MONEY FINANC, V23, P405, DOI 10.1016/j.jimonfin.2004.01.005
+   Gropp R., 2010, EUROPE EURO, P219
+   Gropp R, 2010, REV FINANC, V14, P587, DOI 10.1093/rof/rfp030
+   Heffernan S.A., 2003, HDB INT BANKING
+   Hellwig M.F., 2010, WORKING PAPER SERIES
+   Hoshi T, 2010, J FINANC ECON, V97, P398, DOI 10.1016/j.jfineco.2010.02.005
+   Huang R, 2011, J FINANC INTERMED, V20, P248, DOI 10.1016/j.jfi.2010.06.003
+   Huang X., 2010, BIS WOKING PAPERS
+   Hughes JP, 2001, J BANK FINANC, V25, P2169, DOI 10.1016/S0378-4266(01)00190-X
+   Hutton AP, 2009, J FINANC ECON, V94, P67, DOI 10.1016/j.jfineco.2008.10.003
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Kashyap AK, 2002, J FINANC, V57, P33, DOI 10.1111/1540-6261.00415
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Keys BJ, 2009, J MONETARY ECON, V56, P700, DOI 10.1016/j.jmoneco.2009.04.005
+   Knaup M., 2010, MEASURING TAIL RISKS
+   Koenker R, 2001, J ECON PERSPECT, V15, P143, DOI 10.1257/jep.15.4.143
+   KRASA S, 1992, OXFORD ECON PAP, V44, P725, DOI 10.1093/oxfordjournals.oep.a042072
+   Lepetit L, 2008, J BANK FINANC, V32, P1452, DOI 10.1016/j.jbankfin.2007.12.002
+   Mercieca S, 2007, J BANK FINANC, V31, P1975, DOI 10.1016/j.jbankfin.2007.01.004
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Morris S., 2008, BROOKING PAPERS EC A
+   Moshirian F, 2009, J INT FINANC MARK I, V19, P351, DOI DOI 10.1016/J.INTFIN.2008.02.002
+   Ng J, 2011, BANKS SURVIVAL UNPUB
+   Pais A., EUROPEAN FI IN PRESS
+   Saunders A, 2001, J FINANC SERV RES, V19, P185, DOI 10.1023/A:1011163522271
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   Stern G.H., 2009, REGION, P8
+   Stiroh K., 2004, J FINANCIAL SERVICES, V25, P135, DOI DOI 10.1023/B:FINA.0000020657.59334.76
+   Stiroh KJ, 2006, J MONEY CREDIT BANK, V38, P1351, DOI 10.1353/mcb.2006.0075
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   Vassalou M, 2004, J FINANC, V59, P831, DOI 10.1111/j.1540-6261.2004.00650.x
+   Veronesi P, 2010, J FINANC ECON, V97, P339, DOI 10.1016/j.jfineco.2010.03.011
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Wheelock DC, 2012, J MONEY CREDIT BANK, V44, P171, DOI 10.1111/j.1538-4616.2011.00472.x
+   ZAMBRANA M.S., 2010, 1005 FED RES BANK CL
+NR 77
+TC 35
+Z9 35
+U1 1
+U2 50
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD OCT
+PY 2012
+VL 31
+IS 6
+BP 1745
+EP 1776
+DI 10.1016/j.jimonfin.2012.03.011
+PG 32
+WC Business, Finance
+SC Business & Economics
+GA 971ZP
+UT WOS:000306246600022
+DA 2019-12-27
+ER
+
+PT J
+AU Wang, LF
+   Wang, SS
+AF Wang, Lanfang
+   Wang, Susheng
+TI Endogenous networks in investment syndication
+SO JOURNAL OF CORPORATE FINANCE
+LA English
+DT Article
+DE Investment syndication; Endogenous network; Investment risk; Risk
+   aversion; Project productivity
+ID VENTURE CAPITAL INVESTMENTS; SYSTEMIC RISK; DISCLOSURE; CONTAGION;
+   FIRMS; PERFORMANCE; INVESTORS; INDUSTRY; MODEL
+AB As an effective investment strategy, investors often invest jointly in a company by forming a syndicate. The unique feature of this paper is that it endogenizes the formation of an investment syndicate. We provide a theory on the endogenous formation of networks in investment syndication and analyze how several key factors such as risk aversion, productivity, risk and cost affect incentive and syndicated investment. We also apply the theory to venture capital investment and identify empirical evidence in support of it. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Wang, Susheng] Hong Kong Univ Sci & Technol, Dept Econ, Hong Kong, Hong Kong, Peoples R China.
+   [Wang, Lanfang] Shanghai Univ Finance & Econ, Inst Accounting & Finance, Shanghai, Peoples R China.
+RP Wang, SS (reprint author), Hong Kong Univ Sci & Technol, Dept Econ, Hong Kong, Hong Kong, Peoples R China.
+EM wang.lanfang@mail.shufe.edu.cn; s.wang@ust.hk
+CR ADMATI AR, 1994, J FINANC, V49, P371, DOI 10.1111/j.1540-6261.1994.tb05146.x
+   Afonso G.M., 2007, SYSTEMIC RISK LIQUID
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   AMIT R, 1990, MANAGE SCI, V36, P1232
+   Babus A., 2009, FORMATION FINANCIAL
+   Botosan CA, 1997, ACCOUNT REV, V72, P323
+   Bottazzi L, 2008, J FINANC ECON, V89, P488, DOI 10.1016/j.jfineco.2007.09.003
+   Brander JA, 2002, J ECON MANAGE STRAT, V11, P423, DOI 10.1111/j.1430-9134.2002.00423.x
+   Bundesverband deutscher Kapitalanlagegesellschaften (BVK), 2005, DESIGN SYNDICATES VE
+   BYGRAVE WD, 1987, J BUS VENTURING, V2, P139, DOI 10.1016/0883-9026(87)90004-8
+   Casamatta C, 2007, J FINANC INTERMED, V16, P368, DOI 10.1016/j.jfi.2007.03.003
+   Castiglionesi F., 2008, OPTIMAL FRAGILE FINA
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cochrane JH, 2005, J FINANC ECON, V75, P3, DOI 10.1016/j.jfineco.2004.03.006
+   Cumming DJ, 2003, J BANK FINANC, V27, P511, DOI 10.1016/S0378-4266(02)00389-8
+   Cumming D, 2010, J INT BUS STUD, V41, P727, DOI 10.1057/jibs.2009.62
+   Cummins D.J., 2002, J BANK FINANC, V26, P557
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   De Clercq D., 2004, EXPLAINING VENTURE C
+   Dorobantu F.A., 2006, SYNDICATION PARTIAL
+   Du Q., 2009, BIRDS FEATHER CELEBR
+   Dushnitsky G, 2009, STRATEGIC MANAGE J, V30, P1045, DOI 10.1002/smj.781
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Fluck Zsuzsanna, 2006, VENTURE CAPITAL CONT
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gai P., 2007, CONTAGION FINANCIAL
+   GOMPERS PA, 1995, J FINANC, V50, P1461, DOI DOI 10.2307/2329323
+   Gulati R, 1999, STRATEGIC MANAGE J, V20, P397, DOI 10.1002/(SICI)1097-0266(199905)20:5<397::AID-SMJ35>3.0.CO;2-K
+   GUPTA AK, 1992, J BUS VENTURING, V7, P347, DOI 10.1016/0883-9026(92)90012-G
+   HART O, 1990, J POLIT ECON, V98, P1119, DOI 10.1086/261729
+   Hellmann T, 2008, REV FINANC STUD, V21, P513, DOI 10.1093/rfs/hhm080
+   Hochberg YV, 2007, J FINANC, V62, P251, DOI 10.1111/j.1540-6261.2007.01207.x
+   Hochberg YV, 2010, J FINANC, V65, P829, DOI 10.1111/j.1540-6261.2010.01554.x
+   Huang HZ, 2003, ECON LETT, V80, P141, DOI 10.1016/S0165-1765(03)00087-9
+   Jackson M. O., 2010, HDB SOCIAL EC
+   Jackson MO, 2005, GROUP FORMATION IN ECONOMICS: NETWORKS, CLUBS, AND COALITIONS, P11, DOI 10.1017/CBO9780511614385.002
+   Lagunoff R, 2001, J ECON THEORY, V99, P220, DOI 10.1006/jeth.2000.2733
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Leone AJ, 2007, J ACCOUNTING RES, V45, P111, DOI 10.1111/j.1475-679X.2006.00229.x
+   LERNER J, 1994, FINANC MANAGE, V23, P16, DOI 10.2307/3665618
+   MYERS SC, 1984, J FINANC ECON, V13, P187, DOI 10.1016/0304-405X(84)90023-0
+   Nahata R, 2008, J FINANC ECON, V90, P127, DOI 10.1016/j.jfineco.2007.11.008
+   NORTON E, 1993, J BUS VENTURING, V8, P431, DOI 10.1016/0883-9026(93)90023-X
+   Ozdemir S.Z., 2006, GO SOLO SYNDICATE DE
+   Pichler P, 2001, J FINANC, V56, P2237, DOI 10.1111/0022-1082.00404
+   Piotroski J., 1999, IMPACT REPORTED SEGM
+   SAH RK, 1986, AM ECON REV, V76, P716
+   Seppa T., 2003, RICH BECOME RICHER V
+   Smith D.G., 2001, EARLY STAGE ENTREPRE
+   Sorensen M, 2007, J FINANC, V62, P2725, DOI 10.1111/j.1540-6261.2007.01291.x
+   Sorenson O, 2001, AM J SOCIOL, V106, P1546, DOI 10.1086/321301
+   Sorenson O, 2008, ADMIN SCI QUART, V53, P266, DOI 10.2189/asqu.53.2.266
+   Thisse J.-F., 2004, HDB REGIONAL URBAN E, V4
+   Tykvova T, 2007, REV FINANC ECON, V16, P5, DOI 10.1016/j.rfe.2005.10.001
+   Wang SS, 2004, J CORP FINANC, V10, P131, DOI 10.1016/S0929-1199(02)00045-7
+   Wang SS, 2009, REV FINANC, V13, P727, DOI 10.1093/rof/rfn024
+   WHITE H, 1980, ECONOMETRICA, V48, P817, DOI 10.2307/1912934
+   WILSON R, 1968, ECONOMETRICA, V36, P119, DOI 10.2307/1909607
+   Wright M, 2003, J MANAGE STUD, V40, P2073, DOI 10.1046/j.1467-6486.2003.00412.x
+NR 60
+TC 10
+Z9 10
+U1 0
+U2 26
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0929-1199
+EI 1872-6313
+J9 J CORP FINANC
+JI J. Corp. Financ.
+PD JUN
+PY 2012
+VL 18
+IS 3
+BP 640
+EP 663
+DI 10.1016/j.jcorpfin.2012.03.004
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA 937WD
+UT WOS:000303692900013
+DA 2019-12-28
+ER
+
+PT J
+AU Koopman, SJ
+   Lucas, A
+   Schwaab, B
+AF Koopman, Siem Jan
+   Lucas, Andre
+   Schwaab, Bernd
+TI Dynamic Factor Models With Macro, Frailty, and Industry Effects for U.S.
+   Default Counts: The Credit Crisis of 2008
+SO JOURNAL OF BUSINESS & ECONOMIC STATISTICS
+LA English
+DT Article
+DE Credit portfolio models; Default risk; Financial crisis;
+   Frailty-correlated defaults; State space methods
+ID CORRELATED DEFAULT; CONTAGION; RISK
+AB We develop a high-dimensional, nonlinear, and non-Gaussian dynamic factor model for the decomposition of systematic default risk conditions into latent components for (1) macroeconomic/financial risk, (2) autonomous default dynamics (frailty), and (3) industry-specific effects. We analyze discrete U.S. corporate default counts together with macroeconomic and financial variables in one unifying framework. We find that approximately 35% of default rate variation is due to systematic and industry factors. Approximately one-third of this systematic variation is captured by the macroeconomic and financial factors. The remainder is captured by frailty (40%) and industry (25%) effects. The default-specific effects are particularly relevant before and during times of financial turbulence. We detect a build-up of systematic risk over the period preceding the 2008 credit crisis. This article has online supplementary material.
+C1 [Koopman, Siem Jan] Vrije Univ Amsterdam, Dept Econometr, NL-1081 HV Amsterdam, Netherlands.
+   [Koopman, Siem Jan; Lucas, Andre] Tinbergen Inst, NL-1082 MS Amsterdam, Netherlands.
+   [Lucas, Andre] Vrije Univ Amsterdam, Dept Finance, NL-1081 HV Amsterdam, Netherlands.
+   [Lucas, Andre] Duisenberg Sch Finance, NL-1082 MS Amsterdam, Netherlands.
+   [Schwaab, Bernd] European Cent Bank, Financial Res Div, Frankfurt, Germany.
+RP Koopman, SJ (reprint author), Vrije Univ Amsterdam, Dept Econometr, De Boelelaan 1105, NL-1081 HV Amsterdam, Netherlands.
+EM s.j.koopman@vu.nl; a.lucas@vu.nl; bernd.schwaab@ecb.int
+RI Koopman, S.J./M-7814-2019; Lucas, Andre/E-4054-2018; Koopman, Siem
+   Jan/E-1838-2011
+OI Koopman, S.J./0000-0002-4440-9524; Lucas, Andre/0000-0003-2807-1102;
+   Koopman, Siem Jan/0000-0002-4440-9524
+FU European Central Bank; Swedish National Bank; Tinbergen Institute;
+   University of Amsterdam; Dutch National Science Foundation
+   (NWO)Netherlands Organization for Scientific Research (NWO)
+FX We thank the editor and the referees for their insightful comments. The
+   article has improved considerably as a result. We also thank Arthur
+   Korteweg (discussant at 2011 AFA meeting in Denver), Kasper Roszbach
+   (discussant at Atlanta Fed's day ahead conference), Alexandre Adam
+   (discussant at 2009 CREDIT conference in Venice), and participants at
+   2009 SoFiE credit risk conference in Chicago. We finally thank seminar
+   participants at European Central Bank, Swedish National Bank, Tinbergen
+   Institute, and University of Amsterdam, as well as Robert Engle, Kay
+   Giesecke, Philipp Hartmann, David Lando, and Michel van der Wel. Andre
+   Lucas thanks the Dutch National Science Foundation (NWO) for financial
+   support.
+CR Azizpour S., 2010, WORKING PAPER SERIES, P526
+   Bai JS, 2002, ECONOMETRICA, V70, P191, DOI 10.1111/1468-0262.00273
+   Basel Committee on Banking Supervision, 2004, 107 BAS COMM BANK SU, P527
+   Cameron AC, 1997, J ECONOMETRICS, V77, P329
+   CEBS, 2010, COMM EUR BANK SUP SU
+   Das SR, 2007, J FINANC, V62, P93, DOI 10.1111/j.1540-6261.2007.01202.x
+   Duffie D, 2007, J FINANC ECON, V83, P635, DOI 10.1016/j.jfineco.2005.10.011
+   Duffie D, 2009, J FINANC, V64, P2089, DOI 10.1111/j.1540-6261.2009.01495.x
+   Durbin J., 2001, TIME SERIES ANAL STA
+   FIGLEWSKI S, 2008, MODELING EFFECT MACR
+   Frey R, 2002, J BANK FINANC, V26, P1317, DOI 10.1016/S0378-4266(02)00265-0
+   Giesecke K, 2004, J BANK FINANC, V28, P1521, DOI 10.1016/S0378-4266(03)00129-8
+   Giesecke K., 2008, WORKING PAPER SERIES
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   Koopman SJ, 2008, J ECONOMETRICS, V142, P399, DOI 10.1016/j.jeconom.2007.07.001
+   Koopman SJ, 2008, J BUS ECON STAT, V26, P510, DOI 10.1198/073500108000000051
+   Koopman SJ, 2009, J EMPIR FINANC, V16, P42, DOI 10.1016/j.jempfin.2008.07.002
+   LANDO D, 2009, CORRELATION CORPORAT
+   LANG LHP, 1992, J FINANC ECON, V32, P45, DOI 10.1016/0304-405X(92)90024-R
+   Lown C, 2006, J MONEY CREDIT BANK, V38, P1575, DOI 10.1353/mcb.2006.0086
+   Maddaloni A., 2011, REV FINANC STUD, V1248, P1
+   McNeil A., 2007, J EMPIR FINANC, V14, P131, DOI DOI 10.1016/J.JEMPFIN.2006.05.002
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   Pesaran H, 2006, J MONEY CREDIT BANK, V38, P1211
+   Stock JH, 2002, J BUS ECON STAT, V20, P147, DOI 10.1198/073500102317351921
+   Tarullo D. K., 2010, EQUIPPING FINANCIAL
+NR 27
+TC 18
+Z9 18
+U1 0
+U2 18
+PU AMER STATISTICAL ASSOC
+PI ALEXANDRIA
+PA 732 N WASHINGTON ST, ALEXANDRIA, VA 22314-1943 USA
+SN 0735-0015
+J9 J BUS ECON STAT
+JI J. Bus. Econ. Stat.
+PD OCT
+PY 2012
+VL 30
+IS 4
+BP 521
+EP 532
+DI 10.1080/07350015.2012.700859
+PG 12
+WC Economics; Social Sciences, Mathematical Methods; Statistics &
+   Probability
+SC Business & Economics; Mathematical Methods In Social Sciences;
+   Mathematics
+GA 024UT
+UT WOS:000310135400004
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU van den End, JW
+   Tabbae, M
+AF van den End, Jan Willem
+   Tabbae, Mostafa
+TI When liquidity risk becomes a systemic issue: Empirical evidence of bank
+   behaviour
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Banking; Financial stability; Stress-tests; Liquidity risk
+AB This article provides empirical evidence of behavioural responses by banks in the recent crisis. Using firm-specific balance sheet data, we construct aggregate indicators of systemic risk. Measures of size and herding show that balance sheet adjustments have been pro-cyclical in the crisis, while responses became increasingly dependent across banks and concentrated on certain market segments. Banks reacted less according to a pecking order, as an indication of reduced flexibility in their risk management opportunities. The behavioural indicators are useful tools for monetary and macro prudential analyses and can contribute to the micro foundations of financial stability models. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [van den End, Jan Willem; Tabbae, Mostafa] De Nederlandsche Bank, Econ & Res & Financial Stabil Div, NL-1000 AB Amsterdam, Netherlands.
+RP van den End, JW (reprint author), De Nederlandsche Bank, Econ & Res & Financial Stabil Div, POB 98, NL-1000 AB Amsterdam, Netherlands.
+EM w.a.van.den.end@dnb.nl
+OI van den End, W.A./0000-0003-3580-5127
+CR Aikman D., 2009, 372 BANK ENGL
+   Allen F, 1998, J FINANC, V53, P1245, DOI 10.1111/0022-1082.00052
+   [Anonymous], 2009, REPORT HIGH LEVEL GR
+   Bikhchandani S., 2001, 47 IMF, P3
+   BIS, 2009, 79 BIS
+   Borio C.E.V., 2006, MACROPRUDENTIAL APPR
+   Borio C. E. V., 2009, BIS WORKING PAPERS, V284
+   Borio C.E.V., 2010, BIS WORKING PAPERS, V308
+   Cifuentes, 2005, J EUROPEAN EC ASS, V3, P556
+   DNB De Nederlandsche Bank, 2003, CRED SYST SUP MAN AR
+   Drehmann M., 2010, BIS WORKING PAPERS, V316
+   ECB European Central Bank, 2009, MON POL LOAN SUPPL E
+   Gonzalez-Paramo J.M., 2009, COMMUNICATION   0116
+   ICMA International Capital Market Association, 2009, SURV EUR REP MARK RE
+   International Monetary Fund (IMF), 2008, FIN SOUNDN IND
+   JAIN AK, 1987, J MONEY CREDIT BANK, V19, P78, DOI 10.2307/1992247
+   Lakonishok, 1992, J FINANC ECON, V32, P23
+   Matz L, 2007, LIQUIDITY RISK MEASU
+   MYERS SC, 1984, J FINANC ECON, V13, P187, DOI 10.1016/0304-405X(84)90023-0
+   Nakagawa H., 2007, 257 CTR JAP EC BUS
+   van den End JW, 2010, CESIFO ECON STUD, V56, P38, DOI 10.1093/cesifo/ifp005
+NR 21
+TC 23
+Z9 23
+U1 2
+U2 35
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD APR
+PY 2012
+VL 8
+IS 2
+BP 107
+EP 120
+DI 10.1016/j.jfs.2011.05.003
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA 925RP
+UT WOS:000302779200005
+DA 2019-12-28
+ER
+
+PT J
+AU Knaup, M
+   Wagner, W
+AF Knaup, Martin
+   Wagner, Wolf
+TI Forward-Looking Tail Risk Exposures at U.S. Bank Holding Companies
+SO JOURNAL OF FINANCIAL SERVICES RESEARCH
+LA English
+DT Article
+DE Tail risk; Forward-looking; Banks; Systemic crisis
+ID RETURNS
+AB This paper develops a simple method for quantifying banks' exposures to large (negative) shocks in a forward-looking manner. The method is based on estimating banks' share prices sensitivities to (market) put options and does not require the actual observation of tail risk events. We find that estimated (excess) tail risk exposures for U.S. Bank Holding Companies are negatively correlated with their share price beta, suggesting that banks which appear safer in normal periods are actually more crisis prone than their beta would suggest. We also study the determinants of banks' tail risk exposures and find that their key drivers are uninsured deposits and non-traditional activities that leave assets on banks' balance sheets.
+C1 [Wagner, Wolf] Tilburg Univ, CentER, European Banking Ctr, TILEC, NL-5000 LE Tilburg, Netherlands.
+   [Knaup, Martin; Wagner, Wolf] Tilburg Univ, Dept Econ, NL-5000 LE Tilburg, Netherlands.
+   [Wagner, Wolf] Duisenberg Sch Finance, Amsterdam, Netherlands.
+RP Wagner, W (reprint author), Tilburg Univ, CentER, European Banking Ctr, TILEC, NL-5000 LE Tilburg, Netherlands.
+EM m.knaup@uvt.nl; wagner@uvt.nl
+CR Acharya VV, 2009, RESTORING FINANCIAL
+   Adrian T., 2009, COVAR UNPUB
+   Agarwal V, 2004, REV FINANC STUD, V17, P63, DOI 10.1093/rfs/hhg044
+   Ang A, 2006, J FINANC, V61, P259, DOI 10.1111/j.1540-6261.2006.00836.x
+   Brent A, 2005, J FINANC SERV RES, V28, P113
+   Bushman R, 2009, ACCOUNTING DIS UNPUB
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Demirguc-Kunt A, 2010, J FINANC ECON, V98, P626, DOI 10.1016/j.jfineco.2010.06.004
+   Flannery MJ, 1998, J MONEY CREDIT BANK, V30, P273, DOI 10.2307/2601102
+   Flannery MJ, 2001, J FINANC SERV RES, V20, P107, DOI 10.1023/A:1012455806431
+   Foos D, 2009, LOAN GROWTH RISKINES
+   Franke G, 2007, RISKS FINANCIAL I
+   Hasan I., 2004, FINANCIAL REV, V39, P129, DOI [10.1111/j.0732-8516.2004.00070.x, DOI 10.1111/J.0732-8516.2004.00070.X]
+   Hovakimian A, 2000, J FINANC, V55, P451, DOI 10.1111/0022-1082.00212
+   Huizinga H., 2009, WP09207 IMF
+   JORION P, 2006, VALUE AT RISK
+   Laeven L, 2003, J FINANC INTERMED, V12, P178, DOI 10.1016/S1042-9573(03)00016-0
+   Standard and Poor's, 2005, CHAS THEIR TAILS BAN
+   Stiroh KJ, 2006, J FINANC SERV RES, V30, P237, DOI DOI 10.1007/S10693-006-0418-5
+   Wall L., 2000, FEDERAL RESERVE BANK, V85, P1
+   Wu DM, 2011, J FINANC SERV RES, V39, P95, DOI 10.1007/s10693-010-0092-5
+   Zhu H., 2010, SYSTEMIC RISK CONTRI
+NR 22
+TC 5
+Z9 5
+U1 0
+U2 9
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0920-8550
+J9 J FINANC SERV RES
+JI J. Financ. Serv. Res.
+PD OCT
+PY 2012
+VL 42
+IS 1-2
+SI SI
+BP 35
+EP 54
+DI 10.1007/s10693-012-0131-5
+PG 20
+WC Business, Finance
+SC Business & Economics
+GA 975XV
+UT WOS:000306546000004
+OA Other Gold
+DA 2019-12-28
+ER

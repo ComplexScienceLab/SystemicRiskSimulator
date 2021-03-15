@@ -1,0 +1,676 @@
+
+PT J
+AU Mlachila, M
+   Sanya, S
+AF Mlachila, Montfort
+   Sanya, Sarah
+TI Post-crisis bank behavior: lessons from Mercosur
+SO INTERNATIONAL JOURNAL OF EMERGING MARKETS
+LA English
+DT Article
+DE Mercosur; Convergence; Bank behaviour; Bank crisis
+ID GLOBAL FINANCIAL CRISIS; ECONOMIC-GROWTH; LATIN-AMERICA; CONVERGENCE;
+   EFFICIENCY; COUNTRIES; REAL
+AB Purpose - The purpose of this paper is to answer one important question: in the aftermath of a systemic banking crisis, can the expected deviations in credit supply, liquidity, and other bank characteristics become entrenched in that they do not converge back to "normal"?
+   Design/methodology/approach - Using a panel data set of commercial banks in the Mercosur during the period 1990-2006, the authors analyze the impact of crises on four sets of financial indicators of bank behavior and outcomes - profitability, maturity preference, credit supply, and risk taking. The authors employ convergence methodology - which is often used in the growth literature - to identify the evolution of bank behavior in the region after crises.
+   Findings - A key finding of the paper is that bank risk-taking behavior is significantly modified leading to prolonged reduction of intermediation to the private sector in favor of less risky government securities and preference for high levels excess liquidity well after the crisis. This can be attributed to the role played by macroeconomic and institutional volatility that has nurtured a relatively high level of risk aversion in banks in the Mercosur.
+   Originality/value - To the best of the authors' knowledge, using convergence methodology is a relatively novel approach in this area. An added advantage of using this approach over others currently used in the literature is that the authors can empirically quantify the rate of convergence and the institutional and macroeconomic factors that condition the convergence. Moreover, the methodology allows one to identify - in some hierarchical order - factors that condition persistent deviation from "normality." The lessons learned from the Mercosur case study are useful for countries that suffered systemic banking crises in the aftermath of the global financial crisis.
+C1 [Mlachila, Montfort; Sanya, Sarah] Int Monetary Fund, Washington, DC 20431 USA.
+RP Mlachila, M (reprint author), Int Monetary Fund, Washington, DC 20431 USA.
+EM mmlachila@imf.org
+CR Akalin GI, 2015, J CENT BANK THEOR PR, V4, P5, DOI 10.1515/jcbtp-2015-0006
+   Andreano MS, 2013, J POLICY MODEL, V35, P669, DOI 10.1016/j.jpolmod.2013.02.005
+   BARRO RJ, 1991, Q J ECON, V106, P407, DOI 10.2307/2937943
+   BARRO RJ, 1992, J POLIT ECON, V100, P223, DOI 10.1086/261816
+   Bleaney M, 2008, J INT MONEY FINANC, V27, P695, DOI 10.1016/j.jimonfin.2008.04.004
+   Caprio G., 2008, BANK REGULATION SUPE
+   Cardim de Carvalho F. J, 1998, BANCA NAZL LAVORO Q, V51, P206
+   Chortareas GE, 2012, INT REV FINANC ANAL, V24, P93, DOI 10.1016/j.irfa.2012.08.006
+   Claessens S., 2014, 14197 IMF
+   Cukierman A, 2013, J FINANC STABIL, V9, P373, DOI 10.1016/j.jfs.2013.02.002
+   Cull R, 2013, J BANK FINANC, V37, P4861, DOI 10.1016/j.jbankfin.2013.08.017
+   Dalgaard CJ, 2001, ECON LETT, V70, P283, DOI 10.1016/S0165-1765(00)00368-2
+   De Haas R, 2014, J MONEY CREDIT BANK, V46, P333, DOI 10.1111/jmcb.12094
+   Dell'Ariccia G, 2008, J FINANC INTERMED, V17, P89, DOI 10.1016/j.jfi.2007.06.001
+   Demirguc-Kunt A, 1998, INT MONET FUND S PAP, V45, P81
+   Demirguc-Kunt A., 1997, 1828 WORLD BANK GROU
+   Demirguc-Kunt A, 2006, J INT MONEY FINANC, V25, P702, DOI 10.1016/j.jimonfin.2006.04.004
+   Demirguc-Kunt A, 2005, NATL INST ECON REV, V192, P68, DOI 10.1177/002795010519200108
+   Eken M. H., 2012, ACRN J FINANCE RISK, V1, P17
+   Fung MK, 2006, J BANK FINANC, V30, P2857, DOI 10.1016/j.jbankfin.2005.11.004
+   Gelos R, 2006, 0644 IMF
+   Gerard Caprio, 2003, EPISODES SYSTEMIC BO
+   Goldfajn I., 2000, 422 PONT U CAT
+   Gupta P, 2005, J INT MONEY FINANC, V24, P675, DOI 10.1016/j.jimonfin.2005.03.001
+   Hassan K. M., 2006, 2006WP13 NFI
+   *HER FDN, 2008, 2008 IND EC FREED
+   ISLAM N, 1995, Q J ECON, V110, P1127, DOI 10.2307/2946651
+   Ize A., 2003, 3116 WB
+   Jara A., 2009, BIS Q REV, P53
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kaufmann D, 2008, 4654 WORLD BANK
+   King A, 2015, ECON MODEL, V49, P212, DOI 10.1016/j.econmod.2015.04.008
+   Lucke B, 2008, ECON LETT, V99, P439, DOI 10.1016/j.econlet.2007.09.017
+   Luttrell D., 2013, ECON LETT
+   MAMATZAKIS E, 2007, INT REV FINANC ANAL, V17, P1156
+   MANKIW NG, 1992, Q J ECON, V107, P407, DOI 10.2307/2118477
+   Mlachila M., 2009, PARAGUAY ADDRESSING, P43
+   Montoro C., 2012, 370 BIS
+   Odesanmi S., 2008, OWNERSHIP STRU UNPUB
+   Pangestu M., 2003, DISCUSSION PAPER SER, V23
+   PAULA LF, 2003, BNL Q REV, P337
+   Reinhart C. M., 2015, 21350 NBER
+   Reinhart CM, 2013, J BANK FINANC, V37, P4557, DOI 10.1016/j.jbankfin.2013.03.005
+   Rodriguez-Gonzalez C, 2014, INTERECONOMICS, V49, P81
+   Rodrik D, 2013, Q J ECON, V128, P165, DOI 10.1093/qje/qjs047
+   Sala-i-Martin X. X., 1996, ECON J, V106, P1019
+   Schoenmaker D., 2015, CBI CEPR IMF C IR LE
+   SERRA M. I., 2006, 06125 IMF
+   Spivey M. F., 2008, J I FINANCIAL MARKET, V18, P161
+   Tabak BM, 2007, RES INT BUS FINANC, V21, P188, DOI 10.1016/j.ribaf.2006.03.002
+   Tressel T, 2006, 06242 IMF
+   Wild J, 2016, RES INT BUS FINANC, V36, P196, DOI 10.1016/j.ribaf.2015.09.015
+NR 52
+TC 2
+Z9 2
+U1 0
+U2 2
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1746-8809
+EI 1746-8817
+J9 INT J EMERG MARK
+JI Int. J. Emerg. Mark.
+PY 2016
+VL 11
+IS 4
+BP 584
+EP 606
+DI 10.1108/IJoEM-06-2015-0116
+PG 23
+WC Business; Economics; Management
+SC Business & Economics
+GA EL1PJ
+UT WOS:000394392100007
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Le, CHA
+   Dickinson, DG
+AF Le, Chau H. A.
+   Dickinson, David G.
+TI The Systemic Risk of Cross-Border Banking: Evidence from the Sudden Stop
+   and Interbank Stress Contagion in East Asia
+SO EMERGING MARKETS FINANCE AND TRADE
+LA English
+DT Article
+DE cross-border banking; international lending; systematic risk; sudden
+   stop; interbank market tension
+ID EMPIRICAL-EVIDENCE; MARKET; CLAIMS; FLIGHT
+AB This article investigates the systemic risk of cross-border banking in East Asia. Using the recursive bivariate probit model, we jointly test the probability of the sudden stop in international lending and its simultaneous effect on the host countries' interbank markets. The empirical results suggest that the risk of a sudden stop is associated with global liquidity shock; host country productivity shock; and the common lender contagion effect. This facilitates the transmission of interbank stress from advanced economies to emerging markets. However, the tension is mitigated by the flight-home effect caused by domestic investors' repatriation. The sudden stop is more likely to occur in countries with lower financial openness but higher financial risk. Lending flows to the banking sectors are more sensitive to shocks than the flows to the non-bank private sectors.
+C1 [Le, Chau H. A.] Banking Univ HCMC, Res & Technol Inst, Ho Chi Minh City, Vietnam.
+   [Dickinson, David G.] Univ Birmingham, Birmingham Business Sch, Dept Econ, Birmingham, W Midlands, England.
+RP Le, CHA (reprint author), Banking Univ HCMC, Res & Technol Inst, 36 Ton That Dam,Dist 1, Ho Chi Minh City, Vietnam.
+EM chaulha@buh.edu.vn
+RI fungsen, chan/H-1983-2016
+OI Le, Chau/0000-0001-6785-1262
+CR Alexis D., 2007, WORKING PAPER SERIES, V807
+   Baslevent C, 2009, EC B, V29, P554
+   BERNANKE B, 1989, AM ECON REV, V79, P14
+   Bernanke B, 1994, FINANCIAL ACCELERATO
+   Bruno Valentina, 2013, 19038 NBER
+   Caramazza F., 2000, WP0055 INT MON FUND
+   Claessens S., 2001, INT FINANCIAL CONTAG
+   Claessens S., 2006, 3854 WORLD BANK
+   De Haas R., 2010, 255 DNB
+   Derviz A., 2007, ECB WORKING PAPER SE, V807
+   Diamond Douglas W., 2001, CARNEGIE-ROCHESTER C, V54, P37
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Feyen E., 2012, WORLD BANK EC PREMIS, V79
+   Forbes KJ, 2012, J INT ECON, V88, P235, DOI 10.1016/j.jinteco.2012.03.006
+   Fung L., 2009, SSRN WORKING PAPER S
+   Gersl A, 2007, FINANC UVER, V57, P27
+   Giannetti M, 2012, J FINANC ECON, V104, P23, DOI 10.1016/j.jfineco.2011.12.006
+   Green WH, 1999, ECONOMETRIC ANAL
+   Herrmann S, 2013, ECON TRANSIT, V21, P479, DOI 10.1111/ecot.12019
+   Hesse Heiko, 2008, IMF WORKING PAPERS, P1
+   Hoggarth G., 2010, 8 BANK ENGL
+   Holmstrom B, 1997, Q J ECON, V112, P663, DOI 10.1162/003355397555316
+   Imakubo K., 2008, BANK JAPAN REV
+   International Monetary Fund (IMF), 2011, MAPP CROSS BORD FIN
+   Jeanneau S., 2002, BIS WORKING PAPERS
+   Jo GJ, 2014, EMERG MARK FINANC TR, V50, P237, DOI 10.2753/REE1540-496X5001S115
+   Kamil Herman, 2010, WP10102 IMF
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Law SH, 2014, EMERG MARK FINANC TR, V50, P210, DOI 10.2753/REE1540-496X500112
+   McGuire P., 2008, BIS Q REV, V12, P67
+   Mihaljek D., 2008, BIS PAPERS
+   Milesi-Ferretti GM, 2011, ECON POLICY, P285, DOI 10.1111/j.1468-0327.2011.00263.x
+   Mishkin F. S., 1999, 6390 NAT BUR EC RES
+   Papaioannou E., 2005, ECB WORKING PAPER SE, V437
+   Peek J, 2000, AM ECON REV, V90, P30, DOI 10.1257/aer.90.1.30
+   Peria MSM, 2005, IMF STAFF PAPERS, V52, P430
+   Pontines V., 2012, INT REV ECON FINANC, V29, P552
+   Popov A., 2010, ECB WORKING PAPER SE, V1203
+   Sachs Jeffrey D., 1984, THEORETICAL ISSUES I
+   Schoenmaker D., 2011, THESIS
+   Siregar R. Y., 2009, 14989 MPRA
+   van den End JW, 2012, J FINANC STABIL, V8, P107, DOI 10.1016/j.jfs.2011.05.003
+   Van den Heuvel S., 2002, EC POLICY REV, P259, DOI DOI 10.1016/J.JMONECO.2007.12.001
+   Van Rijckeghem C, 2003, J INT MONEY FINANC, V22, P483, DOI 10.1016/S0261-5606(03)00017-2
+NR 44
+TC 4
+Z9 4
+U1 1
+U2 12
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1540-496X
+EI 1558-0938
+J9 EMERG MARK FINANC TR
+JI Emerg. Mark. Financ. Trade
+PD JAN
+PY 2016
+VL 52
+IS 1
+BP 237
+EP 254
+DI 10.1080/1540496X.2015.1021643
+PG 18
+WC Business; Economics; International Relations
+SC Business & Economics; International Relations
+GA CY5AW
+UT WOS:000366421200018
+DA 2019-12-27
+ER
+
+PT J
+AU Skinner, CP
+AF Skinner, Christina Parajon
+TI MISCONDUCT RISK
+SO FORDHAM LAW REVIEW
+LA English
+DT Article
+ID REGULATING SYSTEMIC RISK; WALL-STREET; DODD-FRANK; BANKING; WORLD
+AB Financial misconduct and systemic risk are two critical issues in financial regulation today. However, for the past several years, financial misconduct and systemic risk have received markedly different treatment. After the global financial crisis, regulators responded to the traditional quantitative risks that banks pose-those found on their balance sheets and in their business models-with sweeping reforms on an internationally coordinated scale. Meanwhile, with respect to misconduct, regulators have reacted with a traditional enforcement approach-imposing fines and, in some cases, prosecuting individual malefactors. Yet misconduct is not only an isolated or idiosyncratic risk that can be spot treated with enforcement: misconduct can also be a significant source of risk to the financial system, particularly when it arises on an industry-wide basis.
+   This Article creates a framework for understanding how and under what circumstances misconduct imposes such broad social and economic costs: "misconduct risk." This Article explores three features of the banking industry that, in combination, can give rise to misconduct risk-deficient accountability systems, performance-based compensation, and a fluid and transient labor market. Drawing on this conceptual foundation, this Article argues that misconduct risk requires a holistic and preventive approach on par with regulators' efforts to reduce classic balance sheet risks. Specifically, this Article urges bank supervisors to design regulatory tools that proactively target these contagion mechanisms in order to combat misconduct risk. This Article proposes a novel supervisory tool" compliance stress testing"-and suggests how this tool can be incorporated into the existing international framework for regulating global banks.
+C1 [Skinner, Christina Parajon] Columbia Law Sch, Law, New York, NY 10027 USA.
+RP Skinner, CP (reprint author), Columbia Law Sch, Law, New York, NY 10027 USA.
+CR Acharya VV, 2009, CRIT REV, V21, P195, DOI 10.1080/08913810902952903
+   Anabtawi I, 2011, NOTRE DAME LAW REV, V86, P1349
+   [Anonymous], COMPL SEAT TABL HARD
+   [Anonymous], PILL 2 SUP REV PROC
+   [Anonymous], 2012, WHEATLEY REV LIBOR F, P61
+   [Anonymous], 2015, COMMUNICATION
+   [Anonymous], INT REG FRAM BANKS B
+   [Anonymous], 2015, FIN TIMES       0423
+   [Anonymous], DODD FRANK ACT STRES
+   [Anonymous], 2014, ECONOMIST, P11
+   [Anonymous], 2014, ECONOMIST
+   [Anonymous], 2014, FIN TIMES FASTF 0703
+   [Anonymous], BAILED OUT BANKS
+   [Anonymous], 2014, FORBES
+   [Anonymous], 2011, FIN CRIS INQ REP FIN, pxvi
+   [Anonymous], 2012, ECONOMIST
+   [Anonymous], 2009, PRINC SOUND STRESS T
+   [Anonymous], 2011, COR PRINC EFF BANK S, P10
+   [Anonymous], 2015, COMPL WEEK FOC 2015, P5
+   [Anonymous], 2013, ECONOMIST
+   [Anonymous], S SEA BUBBL SHORT HI
+   [Anonymous], 2012, HSBC EXP US FIN SYST
+   Appelbaum Binyamin, 2015, NY TIMES UPSHOT 0212
+   Armour J, 2014, J LEGAL ANAL, V6, P35, DOI 10.1093/jla/lau004
+   Arnold Martin, 2015, FIN TIMES       0112, P17
+   Arnold Martin, 2015, FIN TIMES       0310, P14
+   Awrey Dan, 2014, REV BANKING FIN L, V34, P183
+   Awrey Dan, 2014, REV BANKING FIN L, V34, P228
+   Awrey Dan, 2012, HARV BUS L REV, V2, P235, DOI DOI 10.2139/SSRN.1916649
+   Baer Justin, 2015, WALL STREET J
+   Baer MH, 2012, BOSTON U LAW REV, V92, P577
+   Baer Miriam H., 2012, BU L REV, V92, P585
+   Baer Miriam Hechler, 2009, BC L REV, V50, P949
+   Bainbridge Stephen M., 2009, J CORP L, V34, P981
+   Bainbridge Stephen M., 2009, J CORP L, V34, P967
+   BANK OF ENG, 2015, STRESS TESTING UK BA, P5
+   Baradaran M, 2014, VANDERBILT LAW REV, V67, P1247
+   Baradaran Mehrsa, 2014, VANDERBILT LAW REV, V67, P1279
+   Barbaro Michael, 2004, WASH POST, pE01
+   Barker Alex, 2012, FIN TIMES       0501, P2
+   Barzuza Michal, 2013, 201311 VA L EC
+   BASEL COMM. ON BANKING SUPERVISION, 2014, ASS BAS, P8
+   BASEL COMM. ON BANKING SUPERVISION, 2015, REV PILL
+   BASEL COMM. ON BANKING SUPERVISION, 2003, SOUND PRACT MAN SUP, P1
+   BASEL COMM. ON BANKING SUPERVISION, 2010, BAS 3 GLOB REG FRAM, P54
+   BASEL COMM. ON BANKING SUPERVISION, 2014, REV PILL 3 DISCL REQ, P81
+   BASEL COMM. ON BANKING SUPERVISION, 2003, COMPL FUNCT BANKS, P3
+   BASEL. COMM. ON BANKING SUPERVISION, 2004, INT CONV CAP MEAS CA, P644
+   BASEL COMM. ON BANKING SUPERVISION, 2011, OP RISK SUP GUID ADV
+   BASEL COMM. ON BANKING SUPERVISION, 2015, CORP GOV PRINC BANKS, P38
+   BASEL COMM. ON BANKING SUPERVISION, 2014, G SIB ASS METH SCOR
+   BASEL COMM. ON BANKING SUPERVISION BANK FOR INT'L SETTLEMENTS, 2014, BAS 3 LEV RAT FRAM D
+   Basel Committee on Banking Supervision, 2013, BAS 3 LIQ COV RAT LI, P1
+   Baxter Thomas C., 2015, COMPLIANCE SOME THOU
+   BD. OF GOVERNORS OF THE FED. RESERVE SYS, 2016, COMPR CAP AN REV 201, P15
+   BD. OF GOVERNORS OF THE FED. RESERVE SYS, 2013, COMPR CAP AN REV 201, P24
+   BD. OF GOVERNORS OF THE FED. RESERVE SYS, 2015, COMPR CAP AN REV 201, P7
+   BD. OF GOVERNORS OF THE FED. RESERVE SYS, 2013, DODD FRANK ACT STRES, P3
+   Bebchuk LA, 2010, GEORGETOWN LAW J, V98, P247
+   Bebchuk Lucian A., 2010, GEORGETOWN LAW J, V98, P265
+   Bennear L. S., 2006, LEVERAGING PRIVATE S, P51
+   Bernanke Ben S., 2012, SOME REFLECTIONS CRI
+   Bernanke Ben S., 2011, IMPLEMENTING MACROPR
+   Bhagat Sanjai, 2009, YALE J REGUL, V26, P359
+   Binham Caroline, 2015, FIN TIMES       0611
+   Bizjak J, 2009, REV FINANC STUD, V22, P4821, DOI 10.1093/rfs/hhn120
+   Blackburn ML, 2012, J HOUS ECON, V21, P151, DOI 10.1016/j.jhe.2012.04.003
+   Blackwell Rob, 2015, AM BANKER       0429
+   Borak Donna, 2012, AM BANKER       0925
+   Bradford A, 2007, HARVARD INT LAW J, V48, P383
+   Brass Daniel J., 1998, ACAD MANAGE REV, V23, P25
+   Brass DJ, 1998, ACAD MANAGE REV, V23, P14, DOI 10.2307/259097
+   Bray C, 2014, NY TIMES
+   Bray Chad, 2014, BBC NEWS
+   Bray Chad, 2011, WALL STREET J
+   Brummer C., 2015, SOFT LAW GLOBAL FINA
+   Brunnermeier Markus K., 2012, 18398 NAT BUR EC RES
+   Buell SW, 2006, NEW YORK U LAW REV, V81, P1971
+   Buell Samuel W., 2006, NEW YORK U LAW REV, V81, P1978
+   Burne Katy, 2015, WALL STREET J
+   Burrows Oliver, 2012, BANK ENGLAND Q B, V52, p[204, 204]
+   Calomiris Charles W., 2003, INT FINANCIAL MARKET, p[259, 270]
+   Caruana Jaime, 2010, SYSTEMIC RISK DEAL I
+   Castelow Ellen, S SEA BUBBLE
+   Chrispin Sebastian, 2015, BBC
+   Citigroup Inc, 2015, FORM 10 K
+   COASE RH, 1960, J LAW ECON, V3, P1, DOI 10.1086/466560
+   Coffee JC, 2012, CORNELL LAW REV, V97, P1019
+   Coffee JC, 2011, COLUMBIA LAW REV, V111, P795
+   Coglianese C, 2003, LAW SOC REV, V37, P691, DOI 10.1046/j.0023-9216.2003.03703001.x
+   Cohan William D., 2015, ATLANTIC
+   Cohn A, 2014, NATURE, V516, P86, DOI 10.1038/nature13977
+   Colchester Max, 2015, WALL STREET J
+   Colombo Jesse, 2014, FORBES
+   Corkery Michael, 2015, NY TIMES
+   Cumming Chris, 2015, AM BANKER       0528
+   DALE RICHARD, 2004, 1 CRASH LESSONS S SE, P49
+   De Ghenghi Luigi L., 2015, DAVIS POLK CAPITAL P
+   Dendrinou Viktoria, 2015, WALL STREET J
+   Dockery Stephen, 2016, WALL STREET J
+   Dolmetsch Chris, 2012, BLOOMBERG BUS   1010
+   Dudley William C., 2010, ASSET BUBBLES IMPLIC
+   Dudley William C., 2014, ENHANCING FINANCIAL
+   Dudley William C., 2014, WORKSH REF CULT BEH
+   Eavis Peter, 2015, NY TIMES
+   Ensign Rachel Louise, 2014, WALL STREET J
+   EUR. BANKING AUTH, 2014, MAIN FEAT 2014 EU WI
+   European Banking Authority, 2014, RES 2014 EU WID STRE
+   European Commission, 2015, EU WID STRESS TEST 2, P76
+   European Commission, 2015, REF AUTH TRANSS HAV, P3
+   Fairless Tom, 2014, WALL STREET J
+   FED. FINANCIAL ANALYTICS INC., 2015, WHAT HATH ALL RUL WR
+   FIN. CONDUCT AUTH, 2015, CP1522 FIN COND AUTH, P5
+   FIN. STABILITY BD, 2015, MEASURES REDUCE MISC
+   Flannery Mark J., 2015, INS SECS RISK ASSESS
+   Fracassi Cesare, MGMT SCI UNPUB, p[2, 24]
+   Gerding EF, 2007, WISC LAW REV, P977
+   Goldman Sachs Group Inc., 2015, FORM 10 K
+   Gorton G, 2013, J ECON PERSPECT, V27, P45, DOI 10.1257/jep.27.4.45
+   Gorton Gary, 2013, J EC PERSP, V27, P58
+   Greenhouse Steven, 2004, NY TIMES BUS FI 0623, pA1
+   Griffith Sean J., 2015, CORPORATE GOVE UNPUB
+   GRP. OF THIRTY, 2015, BANK COND CULT CALL, P43
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Hays Constance L., 2004, NY TIMES, pC2
+   Heltman John, 2015, AM BANKER       0318
+   Heltman John, 2015, AM BANKER       0824
+   Heltman John, 2015, AM BANKER       0626
+   Heltman John, 2015, AM BANKER       0612
+   Hill JA, 2012, INDIANA LAW J, V87, P645
+   HIRTLE BEVERLEY, 2009, 409 FED RES BANK NY, P1
+   Hirtle Beverly, 2011, WERE BASEL 3 MINIMUM
+   HIRTLE BEVERLY, 2014, 696 FED RES BANK, P18
+   HM TREASURY BANK OF ENG. FIN. CONDUCT AUTH., 2015, FAIR EFF MARK REV FI
+   Hockett Robert C., 2016, J FIN REG UNPUB, V2, P24
+   HOU DAVID, 2014, 667 FED RES BANK NY, P3
+   HSBC USA Inc, 2015, FORM 10 K
+   J. P. Morgan Chase & Co, 2015, FORM 10 K
+   Johnson Kristin N., 2011, U MICH J L REFORM, V45, P55
+   Johnson Kristin N., 2011, U MICH JL REFORM, V45, P92
+   JOINT COMM. EUR. SUPERVISORY AUTHS, 2015, JOINT COMM REP RISKS, P13
+   Judge K, 2013, UCLA LAW REV, V60, P1262
+   Judge K, 2012, STANFORD LAW REV, V64, P657
+   Judge Kathryn, 2012, STANFORD LAW REV, V64, P664
+   JUSTINIANO ALEJANDRO, 2015, 709 FED RES BANK NY
+   KADUSHIN CHARLES, 2012, UNDERSTANDING SOCIAL, P9
+   KAREN HO, 2009, LIQUIDATED ETHNOGRAP, P13
+   Kashyap AK, 2011, IMF ECON REV, V59, P145, DOI 10.1057/imfer.2011.4
+   Kennedy TJT, 2007, J GEN INTERN MED, V22, P1080, DOI 10.1007/s11606-007-0179-3
+   KILDUFF MARTIN, 2003, SOCIAL NETWORKS ORG, P59
+   Kim SH, 2005, FORDHAM LAW REV, V74, P983
+   KINDLEBERGER CHARLES P., 1984, FINANCIAL HIST W EUR, P76
+   Klein G, 2007, HARVARD BUS REV, V85, P18
+   Krawiec KD, 2009, ARIZ L REV, V51, P127
+   KRAWIEC KD, 2003, WASH U LQ, V81, P491
+   Krawiec Kimberly D., 2009, ARIZ L REV, V51, P157
+   Krawiec Kimberly D., 1995, ECONOMIST, P71
+   Krawiec Kimberly D., 2003, WASH U L Q, V81, P487, DOI DOI 10.2139/SSRN.448221
+   LAUER CHRIS, 2012, UNDERWATER OPTIONS Y, P152
+   Letzing John, 2015, WALL STREET J
+   Levine Matt, 2015, BLOOMBERG VIEW  0311
+   Levitan Adam J., 2012, GEORGETOWN LAW J, V100, P1181
+   Levitin AJ, 2012, GEORGETOWN LAW J, V100, P1177
+   LEWIS MICHAEL, 2010, BIG SHORT INSIDE DOO, P64
+   LONG SR ROBERT, 2013, STRESS TESTING MODEL, P5
+   Macey JR, 2013, CORNELL LAW REV, V98, P591
+   Manasfi JAD, 2013, WM MARY BUS L REV, V4, P181
+   Manasfi Julie A. D., 2013, WM MARY BUS L REV, V4, P205
+   Mark Broad, 2014, BBC NEWS
+   Mark Broad, 2015, BBC NEWS
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   Martinez-Jaramillo Serafin, 2010, J ECON DYN CONTROL, V34, P2359
+   McLaughlin David, 2015, BLOOMBERG BUS   0224
+   Mian Atif R., 2015, KREISMAN WORKING PAP, V21, P14
+   Michel Norbert J., 2015, GOVT POLICIES FINANC
+   Miller Geoffrey P., 2011, HARV JL PUB POLY, V33, P807
+   MILLER GEOFFREY P., 2014, LAW GOVERNANCE RISK
+   Miller Geoffrey P., 2011, HARV JL PUB POLY, V33, P808
+   Millman Gregory J., 2014, WALL STREET J
+   Mohamed S, 2015, YALE LAW J, V124, P1628
+   Mohamed Saira, 2015, YALE LAW J, V124, P1648
+   Morgan Stanley, 2015, FORM 10 K
+   Morrison Alan D., 2015, INVESTMENT BAN UNPUB
+   Musalem Alberto G., 2015, WHY FOCUS ON CULTURE
+   Mustoe Howard, 2014, BBC
+   Narron James, 2013, CRISIS CHRONICLES S
+   OFFICE OF FIN. RESEARCH, 2015, 2014 ANN REP, P31
+   Omarova ST, 2013, MINN LAW REV, V98, P265
+   Omarova ST, 2011, U PENN LAW REV, V159, P411
+   Omarova Saule T., 2013, MINN LAW REV, V98, P343
+   Omarova Saute T., 2011, U PENN LAW REV, V159, P416
+   PARLIAMENTARY COMM'N ON BANKING STANDARDS, 2013, CHANG BANK GOOD REP, P134
+   PARLIAMENTARY COMM'N ON BANKING STANDARDS, 2013, CHANG BANK GOOD REP, VI, P16
+   Pearce Will, 2015, HARV CORP L GOVERNAN
+   Pigou A.C., 1920, EC WELFARE
+   Pistor K, 2013, J COMP ECON, V41, P315, DOI 10.1016/j.jce.2013.03.003
+   Pistor Katharina, 2013, J COMP ECON, V41, P328
+   POSZAR ZOLTAN, 2010, 458 FED RES BANK NY, P1
+   PRICEWATERHOUSECOOPERS LLP, 2014, THREATS FIN SERV SEC, P16
+   Raice Shayndi, 2013, WALL STREET J
+   RAUTERBERG G, 2013, YALE J REGUL, V30, P1
+   Rauterberg Gabriel, 2013, YALE J REG, V30, P16
+   Romano Roberta, 2014, YALE J REGUL, V31, P1
+   Rosenbaum JR, 2004, AM J MED, V116, P402, DOI 10.1016/j.amjmed.2003.09.044
+   Rosengren Eric S., 2010, ASSET BUBBLES SYSTEM
+   Rubenfeld Samuel, 2015, WALL STREET J
+   Sabel Charles F., 2012, OXFORD HDB GOVERNANC, P169
+   Salmon Felix, 2010, ENORMOUS MORTGAGE BO
+   SARNA DAVID E. Y., 2010, HIST GREED FINANCIAL, P25
+   Schwarcz D, 2014, U CHICAGO LAW REV, V81, P1569
+   Schwarcz SL, 2008, GEORGETOWN LAW J, V97, P193
+   Schwarcz Steven L., 2012, REV BANKING FIN L, V31, P619
+   Schwarcz Steven L., 2012, REV BANKING FIN L, V31, P621
+   Schwarcz Steven L., 2008, GEORGETOWN LAW J, V97, P207
+   Schwarzman Stephen A., 2015, WALL STREET J, pA15
+   SCOTT HAL S., 2014, INT FINANCE T POLICY
+   Scott Hal S., 2014, INTERCONNECTEDNESS C
+   Sepe Simone M., 2012, 114 CORN L FAC, P3
+   SHEARMAN & STERLING LLP, 2015, IMPL ISS AR REV UK S, P2
+   Skinner Christina Parajon, 2016, NC L REV UNPUB, V94, P26
+   Slaughter AM, 2004, STANFORD J INT LAW, V40, P283
+   Squire R, 2010, HARVARD LAW REV, V123, P1151
+   Squire Richard, 2010, HARVARD LAW REV, V123, P1156
+   Sundmacher Maike, 2004, OPERATIONAL RI UNPUB
+   TALLEY ERIC L., 2014, FINANCIAL REGULATION, P33
+   Tarullo Daniel K., 2014, STRESS TESTING 5 YEA
+   Taylor JB, 2010, FED RESERVE BANK ST, V92, P165
+   Thomas Jr Landon, 2013, NY TIMES
+   Thompson RB, 2014, J INT ECON LAW, V17, P807, DOI 10.1093/jiel/jgu044
+   Thompson Robert B., 2014, INT EC L, V17, P808
+   Tracy Ryan, 2015, WALL STREET J
+   Treanor Jill, 2012, GUARDIAN
+   Tyler T. R., 2006, WHY PEOPLE OBEY LAW
+   U.S. SENATE PERMANENT SUBCOMM. ON INVESTIGATIONS. COMM. ON HOMELAND SEC. & GOVERNMENTAL AFFAIRS, 2011, WALL STREET FINANCIA, P330
+   Vaughan Liam, 2015, BLOOMBERG BUS   0914
+   Verdier Pierre-Hughes, 2011, HARV INT LJ, V52, P67
+   Verdier PH, 2011, HARVARD INT LAW J, V52, P55
+   Wallison Peter J., 2011, FANNIE FREDDIE CAUSE
+   Weber Robert F., 2013, U PA J BUS L, V15, P1005
+   Weber Robert F., 2013, U PA J BUS L, V15, P1027
+   Zaring D, 2014, VA LAW REV, V100, P1405
+   Zaring David, 2014, VA LAW REV, V100, P1450
+   Zaring David, 2013, WASH U L REV, V91, P59
+NR 243
+TC 5
+Z9 5
+U1 0
+U2 8
+PU FORDHAM UNIV SCHOOL LAW
+PI NEW YORK
+PA 140 W 62ND STREET, NEW YORK, NY 10023 USA
+SN 0015-704X
+J9 FORDHAM LAW REV
+JI Fordham Law Rev.
+PD MAR
+PY 2016
+VL 84
+IS 4
+BP 1559
+EP 1610
+PG 52
+WC Law
+SC Government & Law
+GA DG5HV
+UT WOS:000372109100012
+DA 2019-12-27
+ER
+
+PT J
+AU Batiz-Zuk, E
+   Lopez-Gallo, F
+   Martinez-Jaramillo, S
+   Solorzano-Margain, JP
+AF Batiz-Zuk, Enrique
+   Lopez-Gallo, Fabrizio
+   Martinez-Jaramillo, Serafin
+   Solorzano-Margain, Juan Pablo
+TI Calibrating limits for large interbank exposures from a system-wide
+   perspective
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article; Proceedings Paper
+CT Conference on Data Standards, Information and Financial Stability
+CY APR 11-12, 2014
+CL Loughborough Uni, Loughborough, ENGLAND
+HO Loughborough Uni
+DE Systemic risk; Financial contagion; Network models; Large exposures
+   limit; Systemically important banks (SIBs)
+ID RISK; CONTAGION; NETWORK; MARKET
+AB We examine the role of imposing tighter limits on interbank exposures in reducing contagion and aggregate losses. In our model contagion risk arises as a result of the individual idiosyncratic failure of each bank in the banking system. Following Guerrero-Gomez and Lopez-Gallo (2004), we use a sequential default algorithm that is useful for tracing the path of contagion from a trigger bank to other banks during several contagion rounds. We test different types of limits on inter-SIB (systematically important banks) exposures, SIB to non-SIB exposures, and non-SIB to all other banks; and we study three different assumptions about banks' behavioural responses under a stricter regulatory lending regime. We also "stress test" all banks within the banking system and extend the analysis on the benefits of using tighter limits in a fragile banking system. Calibrating the model to Mexican banking sector data, this network model shows that tighter limits for inter-SIB exposures are a useful tool for reducing contagion risk. Moreover, we find that tighter limits may lead to an increase in contagion risk under specific allocation assumptions. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Batiz-Zuk, Enrique; Lopez-Gallo, Fabrizio; Martinez-Jaramillo, Serafin] Banco Mexico, Mexico City, DF, Mexico.
+   [Solorzano-Margain, Juan Pablo] Tudor Investment Corp, Greenwich, CT USA.
+RP Martinez-Jaramillo, S (reprint author), Banco Mexico, Mexico City, DF, Mexico.
+EM ebatiz@banxico.org.mx; flopezd@banxico.org.mx; smartin@banxico.org.mx;
+   jpsolorz@sloan.mit.edu
+CR Affinito M., 2011, 826 BANC IT
+   Afonso G, 2013, STAFF REPORTS FEDERA
+   Aikman D., 2009, 372 BANK ENGL
+   Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anand K., 2014, QUANT FINANCE
+   Banco de Mexico, 2011, FIN SYST REP
+   Baral P., 2012, ESTIMATION BIL UNPUB
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   BCBS, 2013, 23 BCBS BIS
+   BCBS, 2014, STAND
+   BCBS, 2012, TECH REP
+   BCBS, 2015, LAB REP IN PRESS
+   BCBS, 2005, CONS DOC
+   BCBS, 2011, TECH REP
+   BCBS, 2010, BIS WORK PAP
+   BCBS, 2013, RUL TEXT
+   BCBS, 2011, RUL TEXT
+   BCBS, 2015, WORK PAP IN PRESS
+   BGFRS, 2012, REG YY FED REG PROP
+   Bhattacharya S, 1987, NEW APPROACHES MONET
+   Bisias Dimitrios, 2012, 0001 US DEP TREAS OF
+   Borgatti S. P., 2002, SOFTWARE SOCIAL NETW
+   Braining F., 2012, DISCUSSION PAPERS DT
+   Bravo-Benitez B., 2014, COMPUT ECON, P1
+   Canedo JMD, 2009, INTELL SYST ACCOUNT, V16, P87, DOI 10.1002/isaf.295
+   Cerutti E., 2011, WP11222 IMF
+   Chen YN, 1999, J POLIT ECON, V107, P946, DOI 10.1086/250086
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Craig B, 2013, 542013 DTSCH BUND
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Fricke D., 2012, KIEL WORKING PAPERS, V1759
+   FSA, 2012, CP121 FSA
+   FSB, 2012, REP G20 FIN MIN CENT
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gauthier C., 2010, 20104 BANK CAN
+   Gauthier C, 2010, 201029 BANK CAN
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Guerrero-Gomez S., 2004, INTERBANK EXPO UNPUB
+   Halaj G, 2013, WORKING PAPER SERIES, V1506
+   Haldane A.G., 2009, RETHINKING FINANCIAL
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Iori G, 2007, PHYSICA A, V376, P467, DOI 10.1016/j.physa.2006.10.053
+   Karas A., 2012, BANK NETWORKS INTERB
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Lopez-Castanon C, 2013, SIMULATION IN COMPUTATIONAL FINANCE AND ECONOMICS: TOOLS AND EMERGING APPLICATIONS, P181, DOI 10.4018/978-1-4666-2011-7.ch010
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   Mastrandrea R, 2014, NEW J PHYS, V16, DOI 10.1088/1367-2630/16/4/043022
+   Memmel C, 2012, INT J CENT BANK, V8, P177
+   Mistrulli Paolo, 2005, INTERBANK LEND UNPUB
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Solorzano-Margain JP, 2013, COMPUT MANAG SCI, V10, P125, DOI 10.1007/s10287-013-0167-5
+   Peydro J.-L., 2005, EFA 2005 MOSC M
+   Satinover J., 2010, 1034 SWISS FIN I
+   Sieczka P, 2011, EUR PHYS J B, V82, P257, DOI 10.1140/epjb/e2011-10757-2
+   Solis-Montes M. P., 2012, STRUCTURE MEXI UNPUB
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Van Lelyveld Iman, 2006, INT J CENT BANK, V2, P99
+   Wells S., 2004, 230 BANK ENGL
+NR 67
+TC 5
+Z9 5
+U1 0
+U2 10
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2016
+VL 27
+BP 198
+EP 216
+DI 10.1016/j.jfs.2015.04.007
+PG 19
+WC Business, Finance; Economics
+SC Business & Economics
+GA EG0RO
+UT WOS:000390740100014
+DA 2019-12-27
+ER
+
+PT J
+AU Battiston, S
+   D'Errico, M
+   Gurciullo, S
+AF Battiston, Stefano
+   D'Errico, Marco
+   Gurciullo, Stefano
+TI DebtRank and the Network of Leverage
+SO JOURNAL OF PRIVATE EQUITY
+LA English
+DT Article
+ID SYSTEMIC RISK; EXPOSURES; CONTAGION; MARKET
+C1 [Battiston, Stefano; D'Errico, Marco] Univ Zurich, Dept Banking & Finance, Zurich, Switzerland.
+   [Gurciullo, Stefano] UCL, Sch Publ Policy, London, England.
+RP Battiston, S (reprint author), Univ Zurich, Dept Banking & Finance, Zurich, Switzerland.
+EM stefano.battiston@uzh.ch; marco.derrico@uzh.ch;
+   stefano.gurciullo.11@ucl.ac.uk
+RI battiston, stefano/I-2624-2012
+OI battiston, stefano/0000-0002-0051-973X
+FU FET Project SIMPOL [610704]; FET project DOLFINS [640772]; ERC project
+   RMAC [249415]; Swiss National Fund Professorship [PP00P1-144689]
+FX Stefano Battiston and Marco D'Errico acknowledge support from FET
+   Project SIMPOL no. 610704, FET project DOLFINS no. 640772, ERC project
+   RMAC no. 249415, and the Swiss National Fund Professorship grant no.
+   PP00P1-144689.
+CR Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Anand K., 2014, 022014 DTSCH BUND
+   Basel Committee on Banking Supervision, 2011, TECHNICAL REPORT
+   Battiston S., 2013, MPRA PAPERS, V52141
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias Dimitrios, 2012, 0001 US DEP TREAS OF
+   Bureau Van Dijk, 2016, BANKSC DAT
+   Caldarelli G, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.258702
+   Caldarelli G., 2012, SCI REPORTS
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R., 2010, SSRN ELIBRARY
+   Crosbie P. J., 2003, WORKING PAPER
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Fink K., 2014, PRICE INTERCONNECTED
+   Fujiwara Y., 2013, 13E087 IDEAS
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Lo A. W, 2015, 515315 MIT
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Miranda R., 2013, TECHNICAL REPORT
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Montagna M., 2014, WORKING PAPER
+   Musmeci N, 2013, J STAT PHYS, V151, P720, DOI 10.1007/s10955-013-0720-1
+   Poledna S., 2014, ELIMINATION SYSTEMIC
+   Puliga M., 2014, SCI REPORTS
+   Roukny T, 2013, SCI REPORTS
+   Tabak B.M., 2013, WORKING PAPER
+   Tasca P, 2016, QUANT FINANC, V16, P1219, DOI 10.1080/14697688.2015.1123817
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+NR 35
+TC 0
+Z9 0
+U1 0
+U2 1
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1096-5572
+EI 2168-8508
+J9 J PRIV EQUITY
+JI J. Priv. Equity
+PD WIN
+PY 2016
+VL 20
+IS 1
+BP 58
+EP 71
+DI 10.3905/jpe.2016.20.1.058
+PG 14
+WC Business, Finance
+SC Business & Economics
+GA FQ9WC
+UT WOS:000418711400008
+DA 2019-12-28
+ER

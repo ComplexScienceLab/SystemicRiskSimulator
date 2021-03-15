@@ -1,0 +1,425 @@
+
+PT J
+AU Mensah, JO
+   Premaratne, G
+AF Mensah, Jones Odei
+   Premaratne, Gamini
+TI Dependence patterns among Asian banking sector stocks: A copula approach
+SO RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE
+LA English
+DT Article
+DE Asia banking sector; International correlation; Dependence; Copula model
+ID INTERNATIONAL EQUITY MARKETS; REGRESSION RESIDUALS; SERIAL INDEPENDENCE;
+   EFFICIENT TESTS; INTEGRATION; HOMOSCEDASTICITY; NORMALITY; MODEL
+AB Asian banks have recorded 22 banking crisis between 1945 and 2008 and its total share of years in a banking crisis since 1945 is 12.4%, the highest compared to all regions. Interestingly, most of the financial institutions in the region remained largely unscathed during the recent global financial crisis, mainly due to their strong liquidity and capital buffers. Yet, given the episodes of past crisis, the rapid increase in regional corporations and cross-border flows in the region, as well as the paramount importance of the banking sector in the Asian region, it is interesting to study how the banking sectors in the various economies co-move with each other. Against this backdrop, we examine the dependence structure between banking sectors in the region using copula functions. Several findings are documented. First, average dependence generally remain at moderate levels, though dependence between the banking sectors of the developed Asian markets are relatively higher than the emerging markets. Second, we find evidence of asymmetric dependence, suggesting that banking sector returns co-movement varies in bearish and bullish markets. Third, our results show a mild increase in the bivariate dynamic correlations during crisis periods, indicating very limited risk of contagion. Our results provide significant implications for portfolio managers and policymakers.
+C1 [Mensah, Jones Odei] Univ Witwatersrand, Wits Business Sch, 2 St Davids Pl, ZA-2193 Johannesburg, South Africa.
+   [Premaratne, Gamini] Univ Brunei Darussalam, Sch Business & Econ, Jalan Tungku Link, BE-1410 Gadong, Brunei.
+RP Premaratne, G (reprint author), Univ Brunei Darussalam, Sch Business & Econ, Jalan Tungku Link, BE-1410 Gadong, Brunei.
+EM jones.mensah@wits.ac.za; gamini.premaratne@ubd.edu.bn
+RI Mensah, Jones/H-5720-2013
+OI Mensah, Jones/0000-0002-7086-0298
+CR Alexandrou G, 2011, RES INT BUS FINANC, V25, P1, DOI 10.1016/j.ribaf.2010.05.001
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   [Anonymous], 2016, FINANCIAL STABILITY
+   Bank Negara Malaysia, 2015, FIN STAB PAYM SYST R
+   BERA AK, 1981, ECON LETT, V7, P313, DOI 10.1016/0165-1765(81)90035-5
+   Bhatti MI, 2012, J INT FINANC MARK I, V22, P622, DOI 10.1016/j.intfin.2012.02.004
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   BOLLERSLEV T, 1987, REV ECON STAT, V69, P542, DOI 10.2307/1925546
+   Bouvatier V, 2015, EUR ECON REV, V80, P354, DOI 10.1016/j.euroecorev.2015.10.004
+   BREUSCH TS, 1978, AUST ECON PAP, V17, P334, DOI 10.1111/j.1467-8454.1978.tb00635.x
+   Claus E, 2012, RES INT BUS FINANC, V26, P137, DOI 10.1016/j.ribaf.2011.09.002
+   Creehan S., 2016, WHAT IS ASIAS MOST S
+   Das SR, 2004, J FINANC, V59, P2809, DOI 10.1111/j.1540-6261.2004.00717.x
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Erb C.B., 1994, FINANC ANAL J, V50, P32, DOI DOI 10.2469/FAJ.V50.N6.32
+   Financial Stability Board, 2015, 2015 UPD LIST GLOB S
+   Glasserman P., 2015, COMPARISON US INT GL
+   Hammoudeh S, 2014, EMERG MARK REV, V21, P183, DOI 10.1016/j.ememar.2014.09.002
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Hashmi A. R, 2012, HDB VOLATILITY MODEL, P127
+   Heinen A., 2012, HDB VOLATILITY MODEL, P293
+   Hong Kong Monetary Authority, 2016, HALF YEARL MON FIN S
+   International Monetary Fund, 2014, REGIONAL EC OUTLOOK
+   JARQUE CM, 1980, ECON LETT, V6, P255, DOI 10.1016/0165-1765(80)90024-5
+   Joe H, 1997, MULTIVARIATE MODELS
+   Jokipii T., 2007, ECON SYST, V31, P71
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Kim T.-H., 2004, FINANC RES LETT, V1, P56, DOI DOI 10.1016/S1544-6123(03)00003-5
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Ludwig A, 2014, ECON LETT, V125, P451, DOI 10.1016/j.econlet.2014.10.010
+   Maghyereh AI, 2012, RES INT BUS FINANC, V26, P181, DOI 10.1016/j.ribaf.2011.10.001
+   Mensah JO, 2017, ECON MODEL, V60, P1, DOI 10.1016/j.econmod.2016.08.022
+   Monetary Authority of Singapore, 2015, FIN STAB REV NOV 201
+   Patton A., 2004, J FINANCIAL ECONOMET, V2, P130, DOI DOI 10.1093/JJFINEC/NBH006
+   Patton A.J., 2012, HDB EC FORECASTING, V2
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2012, J MULTIVARIATE ANAL, V110, P4, DOI 10.1016/j.jmva.2012.02.021
+   Premaratne G., 2000, 00123 ILL RES REF
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Reserve Bank of India, 2016, FINANCIAL STABILITY
+   Shriber T., 2015, SIGNIFICANCE BANKING
+   Sklar A., 1959, PUBL I STAT U PARIS, V8, P229
+   The People's Bank of China, 2016, CHIN FIN STAB REP
+   Wang LH, 2014, J INT FINANC MARK I, V28, P182, DOI 10.1016/j.intfin.2013.11.003
+   Yu IW, 2010, J BANK FINANC, V34, P2874, DOI 10.1016/j.jbankfin.2010.02.010
+   Yu S, 2017, RES INT BUS FINANC, V39, P68, DOI 10.1016/j.ribaf.2016.07.033
+NR 47
+TC 2
+Z9 2
+U1 0
+U2 4
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0275-5319
+EI 1878-3384
+J9 RES INT BUS FINANC
+JI Res. Int. Bus. Financ.
+PD OCT
+PY 2017
+VL 41
+BP 516
+EP 546
+DI 10.1016/j.ribaf.2017.05.001
+PG 31
+WC Business, Finance
+SC Business & Economics
+GA FO6JV
+UT WOS:000416970200043
+DA 2019-12-27
+ER
+
+PT J
+AU Di Maggio, M
+   Kermani, A
+   Song, ZG
+AF Di Maggio, Marco
+   Kermani, Amir
+   Song, Zhaogang
+TI The value of trading relations in turbulent times
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Corporate bond; Dealer network; Intermediation chain; Over-the-counter
+   financial market; Trading relationship
+ID THE-COUNTER MARKETS; ASYMMETRIC INFORMATION; FINANCIAL NETWORKS;
+   SYSTEMIC RISK; BOND ISSUES; LIQUIDITY; COSTS; INTERMEDIATION;
+   TRANSPARENCY; AFTERMARKET
+AB This paper investigates how dealers' trading relations shape their trading behavior in the corporate bond market. Dealers charge lower spreads to dealers with whom they have the strongest ties and more so during periods of market turmoil. Systemically important dealers exploit their connections at the expense of peripheral dealers as well as clients, charging higher markups than to other core dealers. Also, intermediation chains lengthened by 20% following the collapse of a flagship dealer in 2008 and even more for institutions strongly connected to this dealer. Finally, dealers drastically reduced their inventory during the crisis. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Di Maggio, Marco] Harvard Sch Business, Baker Lib 265,Soldiers Field, Boston, MA 02163 USA.
+   [Di Maggio, Marco; Kermani, Amir] Natl Bur Econ Res, Cambridge, MA 02138 USA.
+   [Kermani, Amir] Univ Calif Berkeley, 545 Student Serv Bldg 1900, Berkeley, CA 94720 USA.
+   [Song, Zhaogang] John Hopkins Carey Business Sch, 100 Int Dr, Baltimore, MD 21202 USA.
+RP Di Maggio, M (reprint author), Harvard Sch Business, Baker Lib 265,Soldiers Field, Boston, MA 02163 USA.
+EM mdimaggio@hbs.edu; kermani@berkeley.edu; zsong8@jhu.edu
+RI Song, Zhaogang/O-4481-2019
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Afonso G., 2013, NY STAFF REPORTS
+   Afonso G, 2015, ECONOMETRICA, V83, P263, DOI 10.3982/ECTA10586
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Ang A, 2013, REV FINANC STUD, V26, P2985, DOI 10.1093/rfs/hht053
+   Atkeson AG, 2015, ECONOMETRICA, V83, P2231, DOI 10.3982/ECTA11477
+   Babus A, 2013, TRADING INFORM DIFFU
+   Babus A, 2016, RAND J ECON, V47, P239, DOI 10.1111/1756-2171.12126
+   Battalio R, 2007, J FINANC, V62, P1243, DOI 10.1111/j.1540-6261.2007.01235.x
+   BENVENISTE LM, 1992, J FINANC ECON, V32, P61, DOI 10.1016/0304-405X(92)90025-S
+   Bessembinder H, 2006, J FINANC ECON, V82, P251, DOI 10.1016/j.jfineco.2005.10.002
+   BIAIS B, 1993, J FINANC, V48, P157, DOI 10.2307/2328885
+   Carlin BI, 2007, J FINANC, V62, P2235, DOI 10.1111/j.1540-6261.2007.01274.x
+   Choi J., 2013, DID LIQUIDITY PROVID
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Di Maggio M., 2016, RELEVANCE BROKER NET
+   Duffie D, 2005, ECONOMETRICA, V73, P1815, DOI 10.1111/j.1468-0262.2005.00639.x
+   Duffie D, 2007, REV FINANC STUD, V20, P1865, DOI 10.1093/rfs/hhm037
+   Edwards AK, 2007, J FINANC, V62, P1421, DOI 10.1111/j.1540-6261.2007.01240.x
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Farboodi M., 2014, INTERMEDIATION VOLUN, DOI 10.2139/ssrn.2535900
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gabrieli S, 2014, NETWORK VIEW INTERBA
+   Glode V, 2016, AM ECON REV, V106, P2699, DOI 10.1257/aer.20140662
+   Green RC, 2007, J FINANC ECON, V86, P643, DOI 10.1016/j.jfineco.2006.10.004
+   Green RC, 2007, J FINANC, V62, P1529, DOI 10.1111/j.1540-6261.2007.01250.x
+   Green RC, 2007, REV FINANC STUD, V20, P275, DOI 10.1093/rfs/hhl012
+   Green RC, 2010, J FINANC, V65, P1669, DOI 10.1111/j.1540-6261.2010.01590.x
+   Hendershott T., 2016, RELATIONSHIP TRADING
+   Hendershott T, 2015, J FINANC, V70, P419, DOI 10.1111/jofi.12164
+   Henderson BJ, 2012, MANAGE SCI, V58, P2272, DOI 10.1287/mnsc.1120.1553
+   Hugonnier J., 2014, HETEROGENEITY DECENT
+   Kohn D. L, 2008, CONDITION BANKING SY
+   Li D., 2014, DEALER NETWORKS
+   Mitchell M, 2012, J FINANC ECON, V104, P469, DOI 10.1016/j.jfineco.2011.09.002
+   PAGANO M, 1992, EUR ECON REV, V36, P613, DOI 10.1016/0014-2921(92)90119-H
+   Schultz P, 2001, J FINANC, V56, P677, DOI 10.1111/0022-1082.00341
+   SEPPI DJ, 1990, J FINANC, V45, P73, DOI 10.2307/2328810
+   Shen J., 2015, FINANCIAL INTERMEDIA
+   Stanton R., 2014, SECURITIZATION NETWO
+   Weill PO, 2007, REV ECON STUD, V74, P1329, DOI 10.1111/j.1467-937X.2007.00451.x
+   Weller B., 2014, INTERMEDIATION UNPUB
+NR 42
+TC 18
+Z9 18
+U1 5
+U2 19
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD MAY
+PY 2017
+VL 124
+IS 2
+BP 266
+EP 284
+DI 10.1016/j.jfineco.2017.01.003
+PG 19
+WC Business, Finance; Economics
+SC Business & Economics
+GA EU0SK
+UT WOS:000400721400003
+DA 2019-12-28
+ER
+
+PT J
+AU Sousa, VGCE
+AF Costa e Sousa, Virginia Granate
+TI From the financial crisis to the Balance Sheet recession: an empirical
+   analysis based on the National Accounts
+SO REVISTA CONTABILIDADE E CONTROLADORIA-RC C
+LA English
+DT Article
+DE Macroeconomic Imbalances; Systemic risk; liquidity crisis; financial
+   stability; governance
+AB The crisis entitled as systemic, financial, sovereign debt or the balance sheet recession, seems to be prepared to survive, assuming several forms and dynamics. In fact, the actual systemic crisis makes clear the interconnections of all institutional sectors (mainly between the financial and the general governments sector) and highlights the relevance of the system of macro accounting (European System of Accounts - ESA) to be used for several purposes: as a system of information for analysing the economic and the financial context, to prevent the fiscal distress and as a framework to make possible the national and the supranational governance and regulation. The systemic nature of the financial crisis and its dynamics are the fundamentals of this paper and the observation framework, applied to five countries of the Euro Area, is sustained by the (ESA2010) and by the supplementary tables for reporting government interventions to support financial institutions. The ratios construction and analysis is supported by the supranational governance framework point of view for macroeconomic imbalances procedure (MIP). In fact, the MIP framework, designed with several and diversified indicators is, in crisis time, fundamental for the construction of the financial stability, the growth and the employment. In this paper it is underlined the fragility of some Euro Area Member States, mostly when in the absence of the European Central Bank as a lender of last resort. I conclude with two remarks: the so called "deadly embrace" between the general government and the financial sector is, nowadays, in a financial systemic crisis context, accompanied by a balance sheet recession, concerning all the institutional sectors of a country and its interactions with the Rest of the World; and the national and international governance strategies must be guided by the concern that all the sectors are too big to fall.
+C1 [Costa e Sousa, Virginia Granate] Univ Aveiro, ISCA, Rua Assoc Humanitaria Bombeiros Aveiro, P-3810500 Aveiro, Portugal.
+RP Sousa, VGCE (reprint author), Univ Aveiro, ISCA, Rua Assoc Humanitaria Bombeiros Aveiro, P-3810500 Aveiro, Portugal.
+EM virginiagranate@ua.pt
+FU research unit on Governance, Competitiveness and Public Policy - FEDER
+   funds through COMPETE2020 - Programa Operacional Competitividade e
+   Internacionalizacao (POCI) [POCI-01-0145-FEDER-006939]; FCT - Fundacao
+   para a Ciencia e a TecnologiaFundacao para a Ciencia e a Tecnologia
+   (FCT)
+FX This work was financially supported by the research unit on Governance,
+   Competitiveness and Public Policy (project POCI-01-0145-FEDER-006939),
+   funded by FEDER funds through COMPETE2020 - Programa Operacional
+   Competitividade e Internacionalizacao (POCI) - and by national funds
+   through FCT - Fundacao para a Ciencia e a Tecnologia.
+CR Compilation of chemical indicators, 2016, STAT WORKING PAPERS
+   De Nederlandsche Bank, 2014, SUP STRAT 2014 2018
+   European Comission, 2015, EUROPEAN COMMISSION, V222
+   European Commission, 2016, REP COMM AL MECH REP
+   European Commission Directorate General Economic and Financial Affairs, 2015, ASS 2015 STAB PROGR
+   European Commission Directorate General for Economic and Financial Affaires, 2014, EUR EC OCC PAP, V176
+   European Commission Directorate General for Economic and Financial Affairs, 2015, EUR EC OCC PAP, V228
+   European Commission Economic and Financial Afairs, 2016, 019 EUR EC EUR COMM
+   European Commission Economic and Financial Affairs, 2015, 006 EUR EC EUR COMM
+   European Union, 2016, MACR IMB PROC CHANG
+   Eurostat, 2013, EUR SYST ACC ESA 201
+   Eurostat, 2016, SUPPL TABL REP GOV I
+   Grauwe P. d., 2013, LSE EUROPE QUESTION, V491, P1
+   International Monetary Fund, 2009, BAL PAYM INT INV POS
+   Nowotny E., 2010, CENTRAL BANKING CRIS
+   Osterreichische National Bank -ONB, 2015, 30 ONB
+   Osterreichische National Bank -ONB, 2015, FACTS AUSTR ITS BANK
+   Praet P., 2016, CAP MARK REG C LEND
+   Sousa V. G., 2011, SISTEMA EUROPEU CONT
+   Sousa V. G., 2012, REV ESTUDOS ISCA, VIV
+NR 20
+TC 0
+Z9 0
+U1 0
+U2 0
+PU UNIV FEDERAL PARANA
+PI PARANA
+PA AV MAYOR LOTHARIO MEISSNER, 632 CAMPUS III, CURITIBA BOTANICAL GARDEN,
+   PARANA, CEP80210-170, BRAZIL
+SN 1984-6266
+J9 REV CONTAB CONTROL-R
+JI Rev. Contab. Control.-RC C
+PD SEP-DEC
+PY 2017
+VL 9
+IS 3
+BP 8
+EP 27
+DI 10.5380/rcc.v9i3.51434
+PG 20
+WC Business, Finance
+SC Business & Economics
+GA VI5DG
+UT WOS:000492054100002
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Entrop, O
+   von la Hausse, L
+   Wilkens, M
+AF Entrop, O.
+   von la Hausse, L.
+   Wilkens, M.
+TI Looking beyond banks' average interest rate risk: Determinants of high
+   exposures
+SO QUARTERLY REVIEW OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Interest rate risk; Banks; Tail exposures; Financial crisis
+ID DERIVATIVES; MANAGEMENT; ALLOCATION; MARKETS; POLICY
+AB This paper studies the magnitude and determinants of interest rate risk (IRR) of listed U.S. bank holding companies. As our first contribution, we test whether banks avoid exposures to IRR as prescribed in classic bank hedging literature. To do so, we use a state space model and Kalman filter techniques to estimate time-series of interest rate betas from bank stock returns. While the interest rate exposures of banks average close to zero, we find that individual banks at times exhibit high and significant exposures to interest rate risk. As our second contribution, we relate these high betas to lagged bank characteristics from accounting data, applying logit regressions and unconditional quantile regressions. We find that high exposures are partly systemic and comove with bank characteristics like size or leverage. This has implications for the monitoring of interest rate risk by regulators and investors as well as for the ongoing debates on the appropriate capitalization of banks. (C) 2016 Board of Trustees of the University of Illinois. Published by Elsevier Inc. All rights reserved.
+C1 [Entrop, O.] Univ Passau, Fac Business Adm & Econ, D-94032 Passau, Germany.
+   [von la Hausse, L.; Wilkens, M.] Univ Augsburg, Sch Business & Econ, D-86159 Augsburg, Germany.
+RP von la Hausse, L (reprint author), Univ Augsburg, Sch Business & Econ, Finance & Banking, Univ Str 16, D-86159 Augsburg, Germany.
+EM oliver.entrop@uni-passau.de; ludwig.vlh@gmx.de;
+   marco.wilkens@wiwi.uni-augsburg.de
+OI Wilkens, Marco/0000-0003-1939-5914
+CR Allen F, 1997, J BANK FINANC, V21, P1461, DOI 10.1016/S0378-4266(97)00032-0
+   Begenau J., 2013, WORKING PAPER
+   Bessler W, 2014, J FINANC STABIL, V13, P151, DOI 10.1016/j.jfs.2014.06.003
+   Black L., 2007, 200765 FEDS FED RES
+   Brunnermeier MK, 2013, J FINANC, V68, P483, DOI 10.1111/jofi.12005
+   Brunnermier M. K., 2012, WORKING PAPER
+   Choi JJ, 1997, J FINANC SERV RES, V12, P267, DOI 10.1023/A:1007982921374
+   Choudhry T, 2008, J FORECASTING, V27, P670, DOI 10.1002/for.1096
+   COTTARELLI C, 1994, INT MONET FUND S PAP, V41, P587
+   Demsetz RS, 1997, J MONEY CREDIT BANK, V29, P300, DOI 10.2307/2953695
+   DESHMUKH SD, 1983, J FINANC, V38, P141, DOI 10.2307/2327643
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Elliott G, 2006, REV ECON STUD, V73, P907, DOI 10.1111/j.1467-937X.2006.00402.x
+   English W. B, 2012, 201226 FEDS
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Faulkender M, 2005, J FINANC, V60, P931, DOI 10.1111/j.1540-6261.2005.00751.x
+   Federal Reserve Board of Governors, 2010, ADV INT RAT RISK MAN
+   Firpo S, 2009, ECONOMETRICA, V77, P953, DOI 10.3982/ECTA6822
+   FLANNERY MJ, 1984, J FINANC, V39, P1141, DOI 10.2307/2327618
+   Froot KA, 1998, J FINANC ECON, V47, P55, DOI 10.1016/S0304-405X(97)00037-8
+   Gatev E, 2009, REV FINANC STUD, V22, P995, DOI 10.1093/rfs/hhm060
+   Gropp R, 2014, Q J FINANC, V4, DOI 10.1142/S2010139214500141
+   Guckaynak R. S., 2006, 200628 FEDS
+   Hanson S. G., 2014, 201415 FEDS
+   HELLWIG M, 1994, EUR ECON REV, V38, P1363, DOI 10.1016/0014-2921(94)90015-9
+   Hellwig M, 1998, J INST THEOR ECON, V154, P328
+   Hirtle BJ, 1997, J FINANC SERV RES, V12, P243, DOI 10.1023/A:1007930904536
+   Ince O., 2006, J FINANC RES, V29, P463, DOI DOI 10.1111/J.1475-6803.2006.00189.X
+   Jagannathan R, 1996, J FINANC, V51, P3, DOI 10.2307/2329301
+   KANE EJ, 1990, J FINANC, V45, P113, DOI 10.2307/2328812
+   KANE EJ, 1988, J FINANC SERV RES, V1, P207, DOI 10.1007/BF00114851
+   Karagiannis S, 2010, J POLICY MODEL, V32, P323, DOI 10.1016/j.jpolmod.2010.02.006
+   Kashyap AK, 2002, J FINANC, V57, P33, DOI 10.1111/1540-6261.00415
+   Kwan S. H., 1991, J FINANCIAL SERVICES, V5, P61
+   Mamaysky H, 2008, REV FINANC STUD, V21, P233, DOI 10.1093/rfs/hhm049
+   Mergner S, 2008, EUR J FINANC, V14, P771, DOI 10.1080/13518470802173396
+   Patton AJ, 2012, REV FINANC STUD, V25, P2789, DOI 10.1093/rfs/hhs073
+   Purnanandam A, 2007, J MONETARY ECON, V54, P1769, DOI 10.1016/j.jmoneco.2006.07.009
+   Reserve Board of Governors, 2015, BANK HOLD CO SUP MAN
+   SAUNDERS A, 1990, J ECON BUS, V42, P171, DOI 10.1016/0148-6195(90)90033-9
+   Schaeck K, 2014, FINANC MANAGE, V43, P215, DOI 10.1111/fima.12010
+   Schrand C, 1998, J FINANC, V53, P979, DOI 10.1111/0022-1082.00041
+   Schrand CM, 1997, ACCOUNT REV, V72, P87
+   Staikouras S. K., 2006, FINANCIAL MARKETS I, V15, P225, DOI DOI 10.1111/J.1468-0416.2006.00118.X
+   STONE BK, 1974, J FINANC QUANT ANAL, V9, P709, DOI 10.2307/2329656
+   Stulz RM, 2010, J ECON PERSPECT, V24, P73, DOI 10.1257/jep.24.1.73
+   Stulz RM, 2004, J ECON PERSPECT, V18, P173, DOI 10.1257/0895330042162359
+   Whited TM, 2006, REV FINANC STUD, V19, P531, DOI 10.1093/rfs/hhj012
+   Zagonov M, 2011, WORKING PAPER
+NR 49
+TC 0
+Z9 0
+U1 0
+U2 1
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1062-9769
+EI 1878-4259
+J9 Q REV ECON FINANC
+JI Q. Rev. Econ. Financ.
+PD FEB
+PY 2017
+VL 63
+BP 204
+EP 218
+DI 10.1016/j.qref.2016.04.008
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA FW0LF
+UT WOS:000424985900018
+DA 2019-12-28
+ER
+
+PT J
+AU Dimitriou, D
+   Kenourgios, D
+   Simos, T
+AF Dimitriou, Dimitrios
+   Kenourgios, Dimitris
+   Simos, Theodore
+TI Financial crises, exchange rate linkages and uncovered interest parity:
+   Evidence from G7 markets
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Exchange rates; Uncovered interest-rate parity; Contagion; Financial
+   crises; Dynamic conditional correlation
+ID DYNAMIC LINKAGES; VOLATILITY; CONTAGION; COUNTRIES; RETURN; STOCK; EURO
+AB This paper examines the dynamic linkages among major exchange rates during the Global Financial Crisis and Eurozone Sovereign Debt Crisis. We extend the previous literature on volatility spillover linkages among the currencies by taking into account the uncovered interest-rate parity hypothesis for 2004-2015. The results indicate that the Canadian Dollar and Great British Pound were affected mainly by the US Dollar across the two crises due to strong financial and economic ties among the three economies, while the Japanese Yen shows evidence of a safe-haven currency. We also provide evidence of varying vulnerability of currencies to both crises, implying increased portfolio diversification benefits, since holding a portfolio with diverse currencies is less subject to systematic risk. These results show that the policy makers need to adopt a stricter form of monetary policy coordination among central banks, since the different vulnerability of currencies across turbulent periods reveals possible non-cooperative monetary policies.
+C1 [Dimitriou, Dimitrios; Kenourgios, Dimitris] Univ Athens, Dept Econ, 1 Sofokleous Str, Athens 10559, Greece.
+   [Simos, Theodore] Univ Ioannina, Dept Econ, Univ Campus, Ioannina 45110, Greece.
+RP Simos, T (reprint author), Univ Ioannina, Dept Econ, Univ Campus, Ioannina 45110, Greece.
+EM tsimos@cc.uoi.gr
+RI Simos, Theodore/H-6033-2011
+CR Antonakakis N, 2012, J INT FINANC MARK I, V22, P1091, DOI 10.1016/j.intfin.2012.05.009
+   Bank for International Settlements, 2009, INT FIN CRIS TIM IMP
+   Baur DG, 2012, J BANK FINANC, V36, P2680, DOI 10.1016/j.jbankfin.2011.05.019
+   Bekaert G, 2007, J INT MONEY FINANC, V26, P1038, DOI 10.1016/j.jimonfin.2007.05.004
+   Beyaert A, 2007, ECON MODEL, V24, P189, DOI 10.1016/j.econmod.2006.06.010
+   Bhatti RH, 2014, ECON MODEL, V40, P227, DOI 10.1016/j.econmod.2014.04.002
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Cover JP, 2012, J INT MONEY FINANC, V31, P1627, DOI 10.1016/j.jimonfin.2012.03.004
+   De Bock R, 2015, J INT MONEY FINANC, V53, P218, DOI 10.1016/j.jimonfin.2014.12.009
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   Dimitriou D, 2013, J INT FINANC MARK I, V26, P319, DOI 10.1016/j.intfin.2013.07.008
+   Dua P, 2016, ECON MODEL, V59, P249, DOI 10.1016/j.econmod.2016.07.013
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Federal Reserve Board of St Louis, 2009, FIN CRIS TIM EV POL
+   Fisher I., 1930, THEORY INTEREST
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Kenourgios D, 2016, ECON MODEL, V57, P36, DOI 10.1016/j.econmod.2016.04.014
+   Kenourgios D, 2014, INT REV FINANC ANAL, V34, P21, DOI 10.1016/j.irfa.2014.05.001
+   Kitamura Y, 2010, RES INT BUS FINANC, V24, P158, DOI 10.1016/j.ribaf.2009.11.002
+   Lothian JR, 2011, J INT MONEY FINANC, V30, P448, DOI 10.1016/j.jimonfin.2011.01.005
+   McLeod A. I., 1983, J TIME SER ANAL, V4, P269, DOI DOI 10.1111/J.1467-9892.1983.TB00373.X
+   Nikkinen J., 2006, J INT FINANC MARK I, V16, P87, DOI DOI 10.1016/J.INTFIN.2004.12.007
+   Ranaldo A, 2010, REV FINANC, V14, P385, DOI 10.1093/rof/rfq007
+   Tang KB, 2011, ECON MODEL, V28, P568, DOI 10.1016/j.econmod.2010.06.015
+NR 26
+TC 12
+Z9 12
+U1 0
+U2 23
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD NOV
+PY 2017
+VL 66
+BP 112
+EP 120
+DI 10.1016/j.econmod.2017.06.003
+PG 9
+WC Economics
+SC Business & Economics
+GA FH9OU
+UT WOS:000411542400008
+DA 2019-12-27
+ER

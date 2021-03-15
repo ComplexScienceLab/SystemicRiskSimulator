@@ -1,0 +1,559 @@
+
+PT S
+AU Thakor, AV
+AF Thakor, Anjan V.
+BE Lo, AW
+   Merton, RC
+TI Bank Capital and Financial Stability: An Economic Trade-Off or a
+   Faustian Bargain?
+SO ANNUAL REVIEW OF FINANCIAL ECONOMICS, VOL 6
+SE Annual Review of Financial Economics
+LA English
+DT Article; Book Chapter
+DE financial stability; bank capital; systemic risk
+ID DEPOSIT INSURANCE; MORAL HAZARD; AGENCY COSTS; MARKET POWER;
+   RISK-TAKING; MODEL; REQUIREMENTS; INTERMEDIATION; INFORMATION; FRAGILITY
+AB Financial crises impose large and persistent social costs, making banking stability important. This article reviews the central issues surrounding the role bank capital plays in financial stability. Because the socially efficient capital level may exceed banks' privately optimal capital levels, regulatory capital requirements become germane. But such requirements may entail various bank-level and social costs. Thus, despite agreement that higher capital would enhance banking stability, recognition of these costs has generated theoretical disagreement over whether capital requirements should be higher. Empirical evidence reveals that, in the cross section of banks, higher capital is associated with higher lending, higher liquidity creation, higher bank values, and higher probabilities of surviving crises. Moreover, increases in capital requirements are met with modest declines in lending. The overarching message from research is that lower capital in banking leads to higher systemic risk and a higher probability of a government-funded bailout that may elevate government debt and trigger a sovereign debt crisis. Thus, capital regulation reform, as well as tax policy, should seek to increase bank capital. This article discusses the contemporary thinking on these issues and concludes with open research questions.
+C1 Washington Univ, John M Olin Sch Business, St Louis, MO 63130 USA.
+RP Thakor, AV (reprint author), Washington Univ, John M Olin Sch Business, St Louis, MO 63130 USA.
+EM thakor@wustl.edu
+CR Acharya V, 2013, PYRRHIC VICTORY BANK
+   Acharya V, 2012, FED RESERVE BANK N Y, V18-3
+   Acharya V, 2013, DARK SIDE LIQUIDITY
+   Acharya V., 2013, CAUGHT SCYLLA CHARYB
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2008, REV FINANC STUD, V21, P2705, DOI 10.1093/rfs/hhm078
+   Admati A., 2010, FALLACIES IRRELEVANT
+   Admati A. R., 2013, BANKERS NEW CLOTHES
+   Admati A. R., 2014, LEVERAGE RATCHET EFF
+   Aiyar S., 2012, 17822 NBER
+   Allen F, 1997, J BANK FINANC, V21, P1461, DOI 10.1016/S0378-4266(97)00032-0
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2011, REV FINANC STUD, V24, P983, DOI 10.1093/rfs/hhp089
+   Allen Franklin, 2013, DEPOSITS BANK CAPITA
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Baker M, 2013, FIN13003 NBER
+   Becker B, 2014, REGULATORY REFORM RI
+   Beltratti A, 2009, 200912 CHARL A DIC C
+   Berg T., 2014, DOES CONTINGENT CAPI
+   Berger AN, 2008, J FINANC SERV RES, V34, P123, DOI 10.1007/s10693-008-0044-5
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Berger AN, 2009, REV FINANC STUD, V22, P3779, DOI 10.1093/rfs/hhn104
+   BERGER AN, 1995, J MONEY CREDIT BANK, V27, P432, DOI 10.2307/2077877
+   Besanko D, 1996, J FINANC INTERMED, V5, P160, DOI 10.1006/jfin.1996.0009
+   Bhattacharya S, 1998, J MONEY CREDIT BANK, V30, P745, DOI 10.2307/2601127
+   Bhattacharya S., 1993, J FINANCIAL INTERMED, V3, P2, DOI DOI 10.1006/JFIN.1993.1001
+   Bhattacharyya S, 2011, RISK TAKING BANKS WH
+   Biais B, 1999, J FINANC, V54, P1291, DOI 10.1111/0022-1082.00147
+   BLUM J, 1995, EUR ECON REV, V39, P739, DOI 10.1016/0014-2921(94)00081-A
+   Bolton P, 2014, 417 COL U
+   Boot A., 1993, CAPITAL MARKETS FINA, P262
+   BOOT AWA, 1993, AM ECON REV, V83, P1165
+   BOOT AWA, 1994, INT ECON REV, V35, P899, DOI 10.2307/2527003
+   BOOT AWA, 1993, J FINANC, V48, P1349, DOI 10.1111/j.1540-6261.1993.tb04757.x
+   Boot AWA, 2000, J FINANC, V55, P679, DOI 10.1111/0022-1082.00223
+   Brun Matthieu, 2013, REAL EFFECTS BANK CA
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   BRYANT J, 1980, J BANK FINANC, V4, P335, DOI 10.1016/0378-4266(80)90012-6
+   Bulow J, 2013, 15 ROCK CTR CORP GOV
+   Calem P, 1999, J FINANC INTERMED, V8, P317, DOI 10.1006/jfin.1999.0276
+   Calomiris C., 2011, WHY DESIGN CONTINGEN
+   Calomiris C.W., 2001, PRUDENTIAL SUPERVISI, P147
+   Calomiris CW, 2010, OXFORD REV ECON POL, V26, P540, DOI 10.1093/oxrep/grq020
+   Calomiris CW, 2004, J BUS, V77, P421, DOI 10.1086/386525
+   Calomiris CW, 2003, AM ECON REV, V93, P937, DOI 10.1257/000282803322157188
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Carrasco V, 2014, J FINANC INTERMED, V23, P129, DOI 10.1016/j.jfi.2013.06.001
+   CHAN YS, 1992, J FINANC, V47, P227, DOI 10.2307/2329096
+   CHARI VV, 1988, J FINANC, V43, P749, DOI 10.2307/2328198
+   Cooke JB, 2014, EC LETT, V9
+   Coval JD, 2005, J FINANC ECON, V75, P535, DOI 10.1016/j.jfineco.2004.02.005
+   DeAngelo H, 2014, J FINANC EC IN PRESS
+   Decamps JP, 2004, J FINANC INTERMED, V13, P132, DOI 10.1016/j.jfi.2003.06.003
+   Dewatripont M, 2012, J MONEY CREDIT BANK, V44, P237, DOI 10.1111/j.1538-4616.2012.00559.x
+   Diamond DW, 2000, J FINANC, V55, P2431, DOI 10.1111/0022-1082.00296
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Duffie Darrell, 2011, BIG BANKS FAIL WHAT
+   Edmans A, 2010, REV FINANC, V15, P1
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Flannery M., 2005, ENDING GOVT BAILOUTS
+   Flannery MJ, 2008, REV FINANC, V12, P391, DOI 10.1093/rof/rfm007
+   French KR, 2010, SQUAM LAKE REPORT: FIXING THE FINANCIAL SYSTEM, P1
+   FURLONG FT, 1989, J BANK FINANC, V13, P883, DOI 10.1016/0378-4266(89)90008-3
+   Gale D, 2010, INT J CENT BANK, V6, P187
+   Garmaise MJ, 2006, J FINANC, V61, P495, DOI 10.1111/j.1540-6261.2006.00847.x
+   Glasserman P., 2012, MARKET TRIGGERED CHA
+   Goel A, 2014, J FINANC IN IN PRESS
+   Gornall W, 2013, 166 ROCK CTR STANF U
+   GORTON G, 1990, J FINANC, V45, P49, DOI 10.2307/2328809
+   GORTON G, 1988, OXFORD ECON PAP, V40, P751, DOI 10.1093/oxfordjournals.oep.a041885
+   Greenbaum S. I., 2007, CONT FINANCIAL INTER
+   Han JH, 2014, J FINANC, DOI [10.1111/jofi.12157, DOI 10.1111/J0FI.12157]
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Hart O, 2011, AM LAW ECON REV, V13, P453, DOI 10.1093/aler/ahr001
+   Hellmann TF, 2000, AM ECON REV, V90, P147, DOI 10.1257/aer.90.1.147
+   HELLWIG M, 1994, EUR ECON REV, V38, P1363, DOI 10.1016/0014-2921(94)90015-9
+   Hellwig MF, 2009, J FINANC INTERMED, V18, P495, DOI 10.1016/j.jfi.2007.09.001
+   Holmstrom B, 1997, Q J ECON, V112, P663, DOI 10.1162/003355397555316
+   Huang R., 2010, 1025 RES DEP FED RES
+   Jayaraman S, 2013, EFFECT CREDITORS RIG
+   JENSEN MC, 1986, AM ECON REV, V76, P323
+   JENSEN MC, 1976, J FINANC ECON, V3, P305, DOI 10.1016/0304-405X(76)90026-X
+   Kashyap AK, 2002, J FINANC, V57, P33, DOI 10.1111/1540-6261.00415
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Kisin R, 2013, SHADOW COST BANK CAP
+   Kotlikoff L., 2011, J STEWART IS DEAD EN
+   Krishnamurthy A, 2010, AGGREGATE DEMAND TRE
+   Kupiec PH, 2013, J FINANC INTERMED, V22, P285, DOI 10.1016/j.jfi.2012.09.005
+   Lo AW, 2012, J ECON LIT, V50, P151, DOI 10.1257/jel.50.1.151
+   Luttrell D, 2013, EC LETT, V8
+   Mehran H, 2012, ANNU REV FINANC ECON, V4, P215, DOI 10.1146/annurev-financial-110311-101821
+   Mehran H, 2011, REV FINANC STUD, V24, P1019, DOI 10.1093/rfs/hhq022
+   Merton R. C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   Merton R. C., 1993, CARNEGIE-ROCHESTER C, P1
+   Mian Atif, 2014, HOUSE DEBT
+   MILLER MH, 1995, J BANK FINANC, V19, P483, DOI 10.1016/0378-4266(94)00134-O
+   MILLON MH, 1985, J FINANC, V40, P1403, DOI 10.2307/2328121
+   MODIGLIANI F, 1958, AM ECON REV, V48, P261
+   MODIGLIANI F, 1963, AM ECON REV, V53, P433
+   MYERS SC, 1977, J FINANC ECON, V5, P147, DOI 10.1016/0304-405X(77)90015-0
+   MYERS SC, 1984, J FINANC ECON, V13, P187, DOI 10.1016/0304-405X(84)90023-0
+   Peek J, 1997, AM ECON REV, V87, P495
+   Pennacchi G, 2014, J FINANC QUANT ANAL
+   Pennacchi G, 2012, ANNU REV FINANC ECON, V4, P141, DOI 10.1146/annurev-financial-110311-101758
+   Pfleiderer P, 2012, NORG BANK MACR WORKS
+   Pollock A., 1992, CHALLENGE, V35, P62
+   Purnanandam A, 2011, REV FINANC STUD, V24, P1881, DOI 10.1093/rfs/hhq106
+   Rajan R. G., 1998, DO WE STILL NEED COM
+   RAMAKRISHNAN RTS, 1984, REV ECON STUD, V51, P415, DOI 10.2307/2297431
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Repullo R, 2004, J FINANC INTERMED, V13, P156, DOI 10.1016/j.jfi.2003.08.005
+   Ricks M, 2012, VANDERBILT LAW REV, V65, P1289
+   RONN EI, 1986, J FINANC, V41, P871, DOI 10.2307/2328234
+   Schandlbauer A., 2014, DO FINANCIAL I REACT
+   Schepens G., 2014, TAXES BANK CAPITAL S
+   Sengupta R, 2014, J FINANC INTERMED, V23, P101, DOI 10.1016/j.jfi.2013.07.001
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Song F, 2007, REV FINANC STUD, V20, P2129, DOI 10.1093/rfs/hhm015
+   Song F, 2013, WORLD BANK ECON REV, V27, P491, DOI 10.1093/wber/lhs011
+   Song FH, 2010, ECON J, V120, P1021, DOI 10.1111/j.1468-0297.2009.02345.x
+   Stulz R.M., 2008, J APPL CORPORATE FIN, V20, P58
+   Sundaresan S, 2014, J FINANCE IN PRESS
+   Thakor A., 2013, SUCCESS DRIVEN SKILL
+   Thakor A., 2014, DIVIDING RENTS LABOR
+   Thakor A., 2014, FINANCIAL CRISIS 200
+   Thakor AV, 2015, J FINANC INTERMED, V24, P131, DOI 10.1016/j.jfi.2013.12.001
+   Thakor AV, 2012, J FINANC ECON, V103, P130, DOI 10.1016/j.jfineco.2011.03.026
+   Thakor AV, 2005, J MONEY CREDIT BANK, V37, P1067, DOI 10.1353/mcb.2006.0009
+   THAKOR AV, 1994, J MONEY CREDIT BANK, V26, P679, DOI 10.2307/2077998
+   Thakor AV, 1996, J FINANC, V51, P279, DOI 10.2307/2329310
+   Tirole J, 2012, AM ECON REV, V102, P29, DOI 10.1257/aer.102.1.29
+   Turk Ariss R, 2010, 201073 PAOL BAFF CTR
+   von Thadden EL, 1998, J FINANC INTERMED, V7, P177, DOI 10.1006/jfin.1998.0239
+NR 136
+TC 28
+Z9 28
+U1 0
+U2 34
+PU ANNUAL REVIEWS
+PI PALO ALTO
+PA 4139 EL CAMINO WAY, PO BOX 10139, PALO ALTO, CA 94303-0897 USA
+SN 1941-1367
+BN 978-0-8243-4806-9
+J9 ANNU REV FINANC ECON
+JI Annu. Rev. Financ. Econ.
+PY 2014
+VL 6
+BP 185
+EP 223
+DI 10.1146/annurev-financial-110613-034531
+PG 39
+WC Business, Finance; Economics
+SC Business & Economics
+GA BB9QA
+UT WOS:000348560900008
+DA 2019-12-28
+ER
+
+PT J
+AU Castren, O
+   Rancan, M
+AF Castren, Olli
+   Rancan, Michela
+TI Macro-Networks: An application to euro area financial accounts
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Financial networks; Balance sheet contagion; Flow of funds; Cross-border
+   exposures; Counterparty risk; Financial crisis
+ID RISK
+AB This paper develops a financial network, designated the "Macro-Network", that depicts the connections between the main financial and non-financial sectors of the economy in the various financial instruments of the euro area. The Macro-Network comprises of linkages across financial and non-financial Sectors in each country. These country-level sector networks are then connected by the cross-border links between the individual banking sectors. Using the Macro-Network to simulate financial shocks, we find that the propagation effects depend on the underlying network structure, which evolves overtime. After the financial crisis, bilateral linkages contracted sharply, reflecting the surge in counterparty risk and the de-leveraging processes. Nonetheless, our analysis suggests that even after this process, vulnerabilities remained in the euro area financial system, while a more diversified portfolio of cross-border exposures might mitigate the shock effects. We identify sectors which are most relevant for the propagation of financial shocks in the Macro-Network. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Castren, Olli] European Cent Bank, Frankfurt, Germany.
+   [Rancan, Michela] European Univ Inst, Robert Schuman Ctr Adv Studies, I-50014 Fiesole, Italy.
+RP Rancan, M (reprint author), European Univ Inst, Robert Schuman Ctr Adv Studies, Via Palazzine 17-19, I-50014 Fiesole, Italy.
+EM michela.rancan@eui.eu
+CR Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2011, CROSS BORDER BANKING
+   Barrat A, 2004, P NATL ACAD SCI USA, V101, P3747, DOI 10.1073/pnas.0400087101
+   Battiston S., 2012, J ECON DYN CONTROL, V31, P2061
+   Cabrales A., 2013, RISK SHARING CONTAGI
+   Castren O, 2013, HANDBOOK ON SYSTEMIC RISK, P775
+   Craig B., 2014, J FINANCIAL IN PRESS
+   Degryse, 2007, INT J CENT BANK, V3, P23
+   Degryse H., 2010, INT REV FINANC, V10, P209, DOI DOI 10.1111/J.1468-2443.2010.01109.X
+   Dudley W.C., 2009, I INT BANK MEMB LUNC
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M., 2013, WORKING PAPER
+   European Central Bank, 2012, FIN INT EUR
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Markose S.M., 2012, IMF WORKING PAPERS
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Opsahl T, 2010, SOC NETWORKS, V32, P245, DOI 10.1016/j.socnet.2010.03.006
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Stiglitz J., 2008, MAK GLOB WORK GLOB F
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   van Lelyveld I., 2012, DNB WORKING PAPERS, V348
+   Van Lelyveld Iman, 2006, INT J CENT BANK, V2, P99
+NR 29
+TC 14
+Z9 15
+U1 1
+U2 21
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD SEP
+PY 2014
+VL 46
+BP 43
+EP 58
+DI 10.1016/j.jbankfin.2014.04.027
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA AO0EL
+UT WOS:000340981800004
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Petrov, N
+   Lipman, M
+   Hale, HE
+AF Petrov, Nikolay
+   Lipman, Maria
+   Hale, Henry E.
+TI Three dilemmas of hybrid regime governance: Russia from Putin to Putin
+SO POST-SOVIET AFFAIRS
+LA English
+DT Article
+DE hybrid regimes; Russia; elections; mass media; state; governance;
+   democracy; authoritarianism; cash-for-benefits reform; Khimki Forest;
+   public protest; substitution
+ID DEMOCRACY
+AB This article investigates how hybrid regimes supply governance by examining a series of dilemmas (involving elections, the mass media, and state institutions) that their rulers face. The authors demonstrate how regime responses to these dilemmas - typically efforts to maintain control while avoiding outright repression and societal backlash - have negative outcomes, including a weakening of formal institutions, proliferation of substitutions (e.g., substitutes for institutions), and increasing centralization and personalization of control. Efforts by Russian leaders to disengage society from the sphere of decision-making entail a significant risk of systemic breakdown in unexpected ways. More specifically, given significantly weakened institutions for interest representation and negotiated compromise, policy-making in the Russian system often amounts to the leadership's best guess (ad hoc manual policy adjustments) as to precisely what society will accept and what it will not, with a significant possibility of miscalculation. Three case studies of the policy-making process are presented: the 2005 cash-for-benefits reform, plans for the development of the Khimki Forest, and changes leading up to and following major public protests in 2011-2012.
+C1 [Petrov, Nikolay] Higher Sch Econ, Dept Polit Sci, Moscow, Russia.
+   [Lipman, Maria] Carnegie Moscow Ctr, Soc Program, Moscow, Russia.
+   [Hale, Henry E.] George Washington Univ, Dept Polit Sci, Washington, DC 20052 USA.
+RP Hale, HE (reprint author), George Washington Univ, Dept Polit Sci, Washington, DC 20052 USA.
+EM hhale@email.gwu.edu
+CR BAKER P, 2005, KREMLIN RISING VLADI
+   Cameron DR, 2012, POST-SOV AFF, V28, P1, DOI 10.2747/1060-586X.28.1.1
+   Carothers T, 2006, FOREIGN AFF, V85, P55, DOI 10.2307/20031911
+   Carothers T, 2002, J DEMOCR, V13, P5, DOI 10.1353/jod.2002.0003
+   Colton T., 2006, STATE COMMUNISM GOVE
+   Colton TJ, 2009, SLAVIC REV, V68, P473, DOI 10.1017/S0037677900019690
+   FISH MS, 2005, DEMOCRACY DERAILED R
+   Gel'man V, 2005, POST-SOV AFF, V21, P226, DOI 10.2747/1060-586X.21.3.226
+   Gel'man Vladimir, 2012, PRO CONTRA
+   Gelman V. Ya, 2013, IZ OGNYA POLYMYA ROS
+   Gessen Masha, 2012, MAN FACE UNLIKELY RI
+   Gill G, 2012, POST-SOV AFF, V28, P449, DOI 10.2747/1060-586X.28.4.449
+   Goldstone JA, 2010, AM J POLIT SCI, V54, P190, DOI 10.1111/j.1540-5907.2009.00426.x
+   Golosov GV, 2012, PROBL POST-COMMUNISM, V59, P3, DOI 10.2753/PPC1075-8216590601
+   Hale H., 2011, RUSSIAN ANAL DIGEST, V106, P2
+   Hale Henry, 2006, WHY NOT PARTIES RUSS
+   Hale Henry E., 2011, DYNAMICS DEMOCRATIZA, P23
+   Herszenhorn David, 2013, NY TIMES
+   Hill Fiona, 2013, PUTIN OPERATIVE KREM
+   Huntington S.P., 1991, 3 WAVE DEMOCRATIZATI
+   Huntington Samuel P., 1966, POLITICAL ORDER CHAN
+   Ivanchenko A. V., 2006, RUSSIYSKIYE VYBORY O
+   JAVELINE D, 2003, PROTEST POLITICS BLA
+   Kaufmann D, 2004, GLOBAL COMPETITIVENE, P137
+   Kenyon T, 2010, COMP POLIT STUD, V43, P486, DOI 10.1177/0010414009355267
+   Kholyavko Yevgeniy, 2008, NOVYYE IZVESTIY 0811
+   Koesel KJ, 2012, POST-SOV AFF, V28, P403, DOI 10.2747/1060-586X.28.4.403
+   Konitzer A., 2005, VOTING RUSSIAS GOVER
+   Kynev Aleksandr, 2006, NEPRIKOSNOVENNYY ZAP, V50
+   Levada Center, 2009, PREDST ROSS DEM
+   Levada Center, 2012, OBSHCH MNEN 2012
+   Levitsky Steven, 2010, COMPETITIVE AUTHORIT
+   Lipman Maria, 2010, OBSHCHESTVO GRAZHDAN
+   McFaul Michael, 2004, DICTATORSHIP DEMOCRA
+   Mendras Marie, 2012, RUSSIAN POLITICS PAR
+   Migdal J. S., 1988, STRONG SOC WEAK STAT
+   Morar' Natalia, 2007, NOVOE VREMIA    1210, P18
+   Orttung Robert W., 2013, NATIONS TRANSIT 2012, P457
+   Orttung Robert W., 2010, DC AR POSTC POL SOC
+   Ottaway M., 2003, DEMOCRACY CHALLENGED
+   Petrov N., 2010, 106 CARN END INT PEA
+   Putin Vladimir, 2013, PRYAMAYA LINIYA VLAD
+   Richter J, 2009, POST-SOV AFF, V25, P39, DOI 10.2747/1060-586X.24.1.39
+   Robertson Graeme B., 2011, POLITICS PROTEST HYB
+   Schedler A., 2006, ELECTORAL AUTHORITAR
+   Sen A, 1999, J DEMOCR, V10, P3, DOI 10.1353/jod.1999.0055
+   Shevtsova L, 2013, RUSSIA 21 LOGIC SUIC
+   Shmelev Aleksandr, 2007, OTECHESTVENNYE ZAPIS, P41
+   Shpil'kin Sergey, 2012, GAZETA RU       0306, P59
+   Sidorenko Aleksey, 2010, ROSSIYSKOYE INFORMAT
+   Treisman Daniel, 2011, RETURN RUSSIAS JOURN
+   Tucker J. A, 2007, PERSPECTIVES POLITIC, V5, P537, DOI DOI 10.1017/S1537592707071538
+   Walker Christopher, 2009, UNDERMINING DEMOCRAC
+   Wilson Andrew, 2005, VIRTUAL POLITICS FAK
+   Zakaria F, 1997, FOREIGN AFF, V76, P22, DOI 10.2307/20048274
+NR 55
+TC 49
+Z9 51
+U1 0
+U2 40
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1060-586X
+EI 1938-2855
+J9 POST-SOV AFF
+JI Post-Sov. Aff.
+PD JAN 2
+PY 2014
+VL 30
+IS 1
+BP 1
+EP 26
+DI 10.1080/1060586X.2013.825140
+PG 26
+WC Area Studies; Economics; Political Science
+SC Area Studies; Business & Economics; Government & Law
+GA 288HY
+UT WOS:000329603800001
+DA 2019-12-28
+ER
+
+PT J
+AU Ben Rejeb, A
+   Boughrara, A
+AF Ben Rejeb, Aymen
+   Boughrara, Adel
+TI The relationship between financial liberalization and stock market
+   volatility: the mediating role of financial crises
+SO JOURNAL OF ECONOMIC POLICY REFORM
+LA English
+DT Article
+DE financial crises; emerging stock markets; stock market volatility;
+   treatment effects model; GARCH; financial liberalization
+ID RISK; CONTAGION; RETURNS; BANKING
+AB This paper aims at comparing the effects of financial liberalization on emerging stock markets' volatility at normal times to the ones in periods of financial crises. To this purpose, a treatment effects model for 13 emerging economies is estimated over January 1986 to December 2008. Three types of financial crises are considered, i.e. banking, currency and twin crises. It has been found that financial liberalization does not lead to excessive volatility in emerging markets and that volatility decreases gradually along with financial liberalization effect on the probability of crises. Moreover, volatility reduction has been found to depend necessarily on several internal characteristics.
+C1 [Ben Rejeb, Aymen] Univ Monastir, Fac Econ & Management Mahdia, Monastir, Tunisia.
+   [Ben Rejeb, Aymen] Univ Sousse, Lab Management Innovat & Sustainable Dev LAMIDED, Sousse, Tunisia.
+   [Boughrara, Adel] Univ Sousse, Res Lab Econ Management & Quantitat Finance LaREM, Sousse, Tunisia.
+RP Ben Rejeb, A (reprint author), Univ Monastir, Fac Econ & Management Mahdia, Monastir, Tunisia.
+EM Aymen.Benrejeb@fsegma.rnu.tn
+RI Rejeb, Aymen Ben/K-4565-2019
+CR Aggarwal R, 1999, J FINANC QUANT ANAL, V34, P33, DOI 10.2307/2676245
+   Aka B. E., 2006, EMERG MARK REV, V7, P147
+   Ang A, 2004, FINANC ANAL J, V60, P86, DOI 10.2469/faj.v60.n2.2612
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   Bekaert G, 2000, J FINANC, V55, P565, DOI 10.1111/0022-1082.00220
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bekaert G, 1997, J FINANC ECON, V43, P29, DOI 10.1016/S0304-405X(96)00889-6
+   BEKAERT G, 2001, J FINANC ECON, V77, P3
+   BEKAERT G, 2003, J EMPIR FINANC, V10, P3, DOI DOI 10.1016/S0927-5398(02)00054-3
+   Bekaert G, 2006, J INT MONEY FINANC, V25, P370, DOI 10.1016/j.jimonfin.2006.01.003
+   Bekaert G, 2010, ECON POLICY, P755, DOI 10.1111/j.1468-0327.2010.00253.x
+   Ben Rejeb A, 2013, ECON BULL, V33, P56
+   Ben Rejeb A, 2013, MACROECON FINANC EME, V6, P146, DOI 10.1080/17520843.2012.698630
+   Bisat A., 1999, SEQUENCING FINANCIAL, P95
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   BUCKBERG E, 1995, WORLD BANK ECON REV, V9, P51, DOI 10.1093/wber/9.1.51
+   Cartapanis A., 1998, INT EC, V76, P69
+   Chari A, 2004, J FINANC, V59, P1295, DOI 10.1111/j.1540-6261.2004.00663.x
+   Charles A, 2006, ECON MODEL, V23, P683, DOI 10.1016/j.econmod.2006.03.008
+   Chow G., 1999, FINANCIAL ANAL J, V55, P65, DOI DOI 10.2469/FAJ.V55.N3.2273
+   CLAESSENS S, 1995, WORLD BANK ECON REV, V9, P153, DOI 10.1093/wber/9.1.153
+   Cong R., 2000, STATA TECHNICAL B, V55, P25
+   CUNADO J, 2006, EMERG MARK REV, V7, P261, DOI DOI 10.1016/J.EMEMAR.2006.01.004
+   Currie Carolyn, 2006, J SOCIO-ECON, V35, P48
+   De Santis G., 1993, PORTFOLIO INVESTMENT, P145
+   Dell'Ariccia G, 2012, J MONEY CREDIT BANK, V44, P367, DOI 10.1111/j.1538-4616.2011.00491.x
+   DeSantis G, 1997, J INT MONEY FINANC, V16, P561, DOI 10.1016/S0261-5606(97)00020-X
+   DICKEY DA, 1981, ECONOMETRICA, V49, P1057, DOI 10.2307/1912517
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   ERRUNZA V, 2001, REV INT ECON, V9, P703, DOI DOI 10.1111/1467-9396.00308
+   Giannetti M, 2007, J FINANC INTERMED, V16, P32, DOI 10.1016/j.jfi.2006.04.001
+   Glick R, 2006, REV ECON STAT, V88, P698, DOI 10.1162/rest.88.4.698
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   HARVEY CR, 1995, REV FINANC STUD, V8, P773, DOI 10.1093/rfs/8.3.773
+   Hodder LD, 2006, ACCOUNT REV, V81, P337, DOI 10.2308/accr.2006.81.2.337
+   Jayasuriya S., 2005, EMERG MARK REV, V6, P170
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kassimatis K., 2002, APPL FINANCIAL EC, V12, P389
+   Kearney C., 1998, APPL FINANCIAL EC, V8, P597, DOI DOI 10.1080/096031098332637
+   Kibritcioglu A, 2003, ARAB BANK REV, V5, P51
+   Kim EH, 2000, J BUS, V73, P25
+   Luo J, 2007, J ECON POLICY REFORM, V10, P283, DOI 10.1080/17487870701551972
+   Maddala G., 1983, LTD DEPENDENT QUALIT
+   Maeda K, 2008, ELECT STUD, V27, P723, DOI 10.1016/j.electstud.2008.06.003
+   McKinnon R., 1993, ORDER EC LIBERALIZAT
+   Menkhoff L, 2007, J ASIAN ECON, V18, P4, DOI 10.1016/j.asieco.2006.12.002
+   Nelson DB, 1996, J ECONOMETRICS, V71, P1, DOI 10.1016/0304-4076(94)01679-8
+   Nguyen D. K., 2008, EC SERIES
+   Nguyen D. K., 2006, BANKERS MARKETS INVE, V84, P6
+   Nguyen D.K., 2010, EC PREVISION, V192, P65
+   Nikkinen J., 2008, INT REV FINANC ANAL, V17, P27, DOI DOI 10.1016/j.irfa.2006.12.002
+   Noy I., 2004, EMERG MARK REV, V5, P341, DOI DOI 10.1016/J.EMEMAR.2004.05.001
+   Ramlall I., 2010, INT RES J FINANC EC, V39, P157
+   Ranciere R, 2006, J BANK FINANC, V30, P3331, DOI 10.1016/j.jbankfin.2006.05.019
+   WILLIAMMILES, 2002, Journal of Economic Development, V27, P113
+NR 55
+TC 3
+Z9 3
+U1 0
+U2 3
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1748-7870
+EI 1748-7889
+J9 J ECON POLICY REFORM
+JI J. Econ. Policy Reform.
+PD JAN 2
+PY 2014
+VL 17
+IS 1
+BP 46
+EP 70
+DI 10.1080/17487870.2013.827967
+PG 25
+WC Development Studies; Economics
+SC Development Studies; Business & Economics
+GA AF4ZJ
+UT WOS:000334723200004
+DA 2019-12-27
+ER
+
+PT J
+AU Fischer, T
+   Riedler, J
+AF Fischer, Thomas
+   Riedler, Jesper
+TI Prices, debt and market structure in an agent-based model of the
+   financial market
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Agent-based model; Financial markets; Leverage; Systemic risk; Credit
+   frictions
+ID NETWORK; HETEROGENEITY; EQUILIBRIUM; CONTAGION; RISK
+AB We develop an agent-based model in which heterogeneous and boundedly rational agents interact by trading a risky asset at an endogenously set price. Agents are endowed with balance sheets comprising the risky asset as well as cash on the asset side and equity capital as well as debt on the liabilities side. A number of findings emerge when simulating the model: we find that the empirically observable log-normal distribution of bank balance sheet size naturally emerges and that higher levels of leverage lead to a greater inequality among agents. Furthermore, greater leverage increases the frequency of bankruptcies and systemic events. Credit frictions, which we define as the stickiness of debt adjustments, are able to explain a key difference in the relation between leverage and assets observed for different bank types. Lowering credit frictions leads to an increasingly procyclical behavior of leverage, which is typical for investment banks. Nevertheless, the impact of credit frictions on the fragility of the model financial system is complex. Lower frictions do increase the stability of the system most of the time, while systemic events become more probable. In particular, we observe an increasing frequency of severe liquidity crises that can lead to the collapse of the entire model financial system. (c) 2014 Elsevier B.V. All rights reserved.
+C1 [Fischer, Thomas] Tech Univ Darmstadt, Darmstadt, Germany.
+   [Riedler, Jesper] Ctr European Econ Res ZEW, Mannheim, Germany.
+RP Riedler, J (reprint author), Ctr European Econ Res ZEW, Mannheim, Germany.
+EM riedler@zew.de
+CR Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Axtell RL, 2001, SCIENCE, V293, P1818, DOI 10.1126/science.1062081
+   BERNANKE B, 1989, AM ECON REV, V79, P14
+   Chiarella C, 2006, J ECON DYN CONTROL, V30, P1729, DOI 10.1016/j.jedc.2005.08.014
+   Chiarella C, 2009, HANDB FINANC, P277, DOI 10.1016/B978-012374258-2.50009-9
+   Colander D., 2009, FINANCIAL CRISIS SYS
+   Cont R, 2001, QUANT FINANC, V1, P223, DOI [10.1088/1469-7688/1/2/304, 10.1080/713665670]
+   Cowell FA, 2000, HANDB ECON, V16, P87
+   Curdia V, 2010, J MONEY CREDIT BANK, V42, P3, DOI 10.1111/j.1538-4616.2010.00328.x
+   Diamond Douglas W., 2001, CARNEGIE-ROCHESTER C, V54, P37
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Ennis H.M., 2001, EC Q, P1
+   Evans M., 2000, STAT DISTRIBUTIONS
+   Fagiolo G., 2012, REV OFCE, V124, P67, DOI DOI 10.3917/RE0F.124.0067
+   Farmer JD, 2009, COMPLEXITY, V14, P11, DOI 10.1002/cplx.20261
+   Fisher I, 1933, ECONOMETRICA, V1, P337, DOI 10.2307/1907327
+   Friedman M., 2000, ESSAYS POSITIVE EC
+   Friedman M., 1953, ESSAYS POSITIVE EC
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Geanakoplos J, 2009, COWLES FDN DISCUSSIO, V1715
+   Georg C.-P., 2010, GLOBAL FINANCIAL MAR, V12-2010
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Gertler M. L, 2010, HDB MACROECONOMICS, V3, P547, DOI DOI 10.1016/13978-0-444-53238-1.00011-9
+   Goodhart C.A.E., 2011, IMES DISCUSSION PAPE, V11 E 23
+   Gropp R, 2010, REV FINANC, V14, P587, DOI 10.1093/rof/rfp030
+   He XZ, 2007, J ECON DYN CONTROL, V31, P3396, DOI 10.1016/j.jedc.2006.11.008
+   Hommes C, 2009, HANDB FINANC, P217, DOI 10.1016/B978-012374258-2.50008-7
+   Hommes CH, 2006, HANDB ECON, V13, P1109
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Janicki H., 2006, FRB RICHMOND EC Q, V92, P291
+   Kirman A, 2010, CESIFO ECON STUD, V56, P498, DOI 10.1093/cesifo/ifq017
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   LeBaron B, 1999, J ECON DYN CONTROL, V23, P1487, DOI 10.1016/S0165-1889(98)00081-5
+   LeBaron B., 2010, WORKING PAPERS, V10
+   Lebaron B, 2006, HANDB ECON, V13, P1187
+   Lengnick M, 2013, J ECON INTERACT COOR, V8, P1, DOI 10.1007/s11403-012-0100-y
+   Lo AW, 2000, J FINANC, V55, P1705, DOI 10.1111/0022-1082.00265
+   Lux T, 2000, INT J THEOR APPL FIN, V3, P675, DOI DOI 10.1142/S0219024900000826
+   Lux T, 2009, HANDB FINANC, P161, DOI 10.1016/B978-012374258-2.50007-5
+   Manski CF, 1981, STRUCTURAL ANAL DISC
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Menkhoff L, 2007, J ECON LIT, V45, P936, DOI 10.1257/jel.45.4.936
+   Minsky H. P., 1986, STABILIZING UNSTABLE
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Raberto M, 2012, ECONOMICS-KIEL, V6, DOI 10.5018/economics-ejournal.ja.2012-27
+   Scheffknecht L., 2011, DISCUSSION PAPER 37
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Sornette D., 2007, ARXIV07072194
+   Stiglitz JE, 2011, J EUR ECON ASSOC, V9, P591, DOI 10.1111/j.1542-4774.2011.01030.x
+   Sutton J, 1997, J ECON LIT, V35, P40
+   Tasca P., 2013, WORKING PAPERS
+   Thurner S, 2012, QUANT FINANC, V12, P695, DOI 10.1080/14697688.2012.674301
+   Westerhoff E, 2011, TECHNICAL REPORT
+   Westerhoff FH, 2006, J ECON DYN CONTROL, V30, P293, DOI 10.1016/j.jedc.2004.12.004
+   Westerhoff FH, 2008, JAHRB NATL STAT, V228, P195
+   Winker P., 2007, J ECON INTERACT COOR, V2, P125, DOI DOI 10.1007/S11403-007-0020-4
+   Zigrand J.-P., 2010, FMG DISCUSSION PAPER, Vdp647
+NR 58
+TC 10
+Z9 11
+U1 1
+U2 50
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD NOV
+PY 2014
+VL 48
+BP 95
+EP 120
+DI 10.1016/j.jedc.2014.08.013
+PG 26
+WC Economics
+SC Business & Economics
+GA AT8JG
+UT WOS:000345179200006
+DA 2019-12-27
+ER

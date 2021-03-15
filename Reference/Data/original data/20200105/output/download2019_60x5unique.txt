@@ -1,0 +1,514 @@
+
+PT J
+AU Brancati, E
+   Macchiavelli, M
+AF Brancati, Emanuele
+   Macchiavelli, Marco
+TI The information sensitivity of debt in good and bad times
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Financial crisis; CDS spreads; Information sensitivity
+ID BANK RUNS; DYNAMIC-MODELS; CONTAGION; PANICS; FAILURES; CRISIS
+AB We empirically show the dynamics of information production and information sensitivity of bank debt around the Great Recession. As more precise information is produced at the onset of the crisis, bank debt becomes informationally sensitive, along two separate dimensions. First, precise information amplifies the effect of market expectations on default risk; second, for banks that are already expected to perform poorly, more precise information further increases default risk. Both effects are muted in good times. Overall, our findings are consistent with information-based models of financial crises. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Brancati, Emanuele] Univ Naples Parthenope, Dipartimento Studi Econ & Ciudiziari, Via Gen Parisi 13, I-80132 Naples, Italy.
+   [Macchiavelli, Marco] Fed Reserve Board, 20th St & Constitut Ave NW, Washington, DC 20551 USA.
+RP Macchiavelli, M (reprint author), Fed Reserve Board, 20th St & Constitut Ave NW, Washington, DC 20551 USA.
+EM marco.macchiavelli@frb.gov
+CR Adelino M, 2016, REV FINANC STUD, V29, P1635, DOI 10.1093/rfs/hhw018
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Angeletos GM, 2006, AM ECON REV, V96, P1720, DOI 10.1257/aer.96.5.1720
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Armantier O, 2015, J FINANC ECON, V118, P317, DOI 10.1016/j.jfineco.2015.08.006
+   Bai JS, 2010, J ECONOMETRICS, V157, P78, DOI 10.1016/j.jeconom.2009.10.020
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   Brancati E, 2018, FINANC MANAGE, P1, DOI [10.1111/fima.12250, DOI 10.1111/FIMA.12250]
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   CALOMIRIS CW, 1991, NAT BUR EC, P109
+   Calomiris CW, 1997, AM ECON REV, V87, P863
+   Calomiris CW, 2003, AM ECON REV, V93, P1615, DOI 10.1257/000282803322655473
+   Chen Q, 2010, J FINANC ECON, V97, P239, DOI 10.1016/j.jfineco.2010.03.016
+   Copeland A, 2014, J FINANC, V69, P2343, DOI 10.1111/jofi.12205
+   Covitz D, 2013, J FINANC, V68, P815, DOI 10.1111/jofi.12023
+   Dang T. V, 2015, IGNORANCE DEBT FINAN
+   Foley-Fisher N., 2015, SELF FULFILLING RUNS, V2015-032
+   GODFREY LG, 1994, REV ECON STAT, V76, P550, DOI 10.2307/2109979
+   Goldstein I, 2005, J FINANC, V60, P1293, DOI 10.1111/j.1540-6261.2005.00762.x
+   GORTON G, 1985, J ECON HIST, V45, P277, DOI 10.1017/S0022050700033957
+   GORTON G, 1988, OXFORD ECON PAP, V40, P751, DOI 10.1093/oxfordjournals.oep.a041885
+   Gorton G, 2015, ECONOMETRIC CHRONOLO
+   Gorton G, 2016, FIGHTING CRISES
+   Gorton G, 2014, AM ECON REV, V104, P343, DOI 10.1257/aer.104.2.343
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Iachan FS, 2015, J ECON THEORY, V158, P739, DOI 10.1016/j.jet.2014.03.005
+   Iyer R, 2012, AM ECON REV, V102, P1414, DOI 10.1257/aer.102.4.1414
+   Iyer R, 2011, REV FINANC STUD, V24, P1337, DOI 10.1093/rfs/hhp105
+   Kelly M, 2000, AM ECON REV, V90, P1110, DOI 10.1257/aer.90.5.1110
+   Minsky H, 1982, CAN IT HAPPEN AGAIN
+   Morris S, 2004, EUR ECON REV, V48, P133, DOI 10.1016/S0014-2921(02)00239-8
+   NICKELL S, 1981, ECONOMETRICA, V49, P1417, DOI 10.2307/1911408
+   Perignon C, 2018, J FINANC, V73, P575, DOI 10.1111/jofi.12592
+   Prati A, 2010, J MONETARY ECON, V57, P668, DOI 10.1016/j.jmoneco.2010.05.013
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Saunders A, 1996, J FINANC INTERMED, V5, P409, DOI 10.1006/jfin.1996.0022
+   Schmidt L, 2016, AM ECON REV, V106, P2625, DOI 10.1257/aer.20140678
+   Schumacher L, 2000, J MONETARY ECON, V46, P257, DOI 10.1016/S0304-3932(00)00022-2
+   Dang TV, 2017, AM ECON REV, V107, P1005, DOI 10.1257/aer.20140782
+   Vives X, 2014, REV FINANC STUD, V27, P3547, DOI 10.1093/rfs/hhu064
+   Ziebarth N, 2013, RADIO BANK DISTRESS
+NR 41
+TC 0
+Z9 0
+U1 17
+U2 17
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD JUL
+PY 2019
+VL 133
+IS 1
+BP 99
+EP 112
+DI 10.1016/j.jfineco.2019.01.002
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA ID0EX
+UT WOS:000471357600006
+DA 2019-12-27
+ER
+
+PT J
+AU Mazzarisi, P
+   Lillo, F
+   Marmi, S
+AF Mazzarisi, Piero
+   Lillo, Fabrizio
+   Marmi, Stefano
+TI When panic makes you blind: A chaotic route to systemic risk
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Systemic risk; Backward-looking expectations; Leverage cycles; Financial
+   innovations; Autoregressive dynamics; Random dynamical systems
+ID RATIONAL ROUTE; LEVERAGE; EXPECTATIONS; DYNAMICS; MODELS; STABILITY;
+   MARKETS
+AB We present an analytical model to study the role of expectation feedbacks and overlapping portfolios on systemic stability of financial systems. Building on Corsi et al. (2016), we model a set of financial institutions having Value-at-Risk capital requirements and investing in a portfolio of risky assets, whose prices evolve stochastically in time and are endogenously driven by the trading decisions of financial institutions. Assuming that they use adaptive expectations of risk, we show that the evolution of the system is described by a slow-fast random dynamical system, which can be studied analytically in some regimes. The model shows how the risk expectations play a central role in determining the systemic stability of the financial system and how wrong risk expectations may create panic induced reduction or over-optimistic expansion of balance sheets. Specifically, when investors are myopic in estimating the risk, the fixed point equilibrium of the system breaks into leverage cycles and financial variables display a bifurcation cascade eventually leading to chaos. We discuss the role of financial policy and the effects of some market frictions, as the cost of diversification and financial transaction taxes, in determining the stability of the system in the presence of adaptive expectations of risk. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Mazzarisi, Piero; Marmi, Stefano] Scuola Normale Super Pisa, Pisa, Italy.
+   [Mazzarisi, Piero; Lillo, Fabrizio] Univ Bologna, Dept Math, Bologna, Italy.
+RP Mazzarisi, P (reprint author), Univ Bologna, Dept Math, Bologna, Italy.
+EM piero.mazzarisi@sns.it; fabrizio.lillo@unibo.it; stefano.marmi@sns.it
+FU UniCredit Bank R&D group through the "Dynamics and Information Theory
+   Research Institute" at the Scuola Normale Superiore
+FX We thank Fulvio Corsi for the useful discussions and we are grateful for
+   suggestions we have received from participants to the 18th Workshop in
+   Quantitative Finance in Milan and the 29th Annual Conference of the
+   European Association for Evolutionary Political Economy in Budapest.
+   Finally, we are grateful to UniCredit Bank R&D group for financial
+   support through the "Dynamics and Information Theory Research Institute"
+   at the Scuola Normale Superiore.
+CR Adrian T, 2014, REV FINANC STUD, V27, P373, DOI 10.1093/rfs/hht068
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Aymanns C, 2016, J FINANC STABIL, V27, P263, DOI 10.1016/j.jfs.2016.02.004
+   Aymanns C, 2015, J ECON DYN CONTROL, V50, P155, DOI 10.1016/j.jedc.2014.09.015
+   Bao T, 2013, EUR ECON REV, V61, P186, DOI 10.1016/j.euroecorev.2013.04.003
+   Bao T, 2012, J ECON DYN CONTROL, V36, P1101, DOI 10.1016/j.jedc.2012.03.006
+   Bauwens L, 2006, J APPL ECONOM, V21, P79, DOI 10.1002/jae.842
+   Bhattacharya R, 2003, ECON THEOR, V23, P13, DOI 10.1007/s00199-003-0357-4
+   Bis. org, 2016, BASEL 3 GLOB REG FRA
+   Brock WA, 2009, J ECON DYN CONTROL, V33, P1912, DOI 10.1016/j.jedc.2009.05.004
+   Brock WA, 1997, ECONOMETRICA, V65, P1059, DOI 10.2307/2171879
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Castellacci G, 2015, J BANK FINANC, V50, P400, DOI 10.1016/j.jbankfin.2014.05.013
+   Chiarella C, 2003, MACROECON DYN, V7, P503, DOI 10.1017/S1365100502020114
+   Choi YN, 2012, QUANT FINANC, V12, P1351, DOI 10.1080/14697688.2011.627880
+   CONSTANTINIDES GM, 1986, J POLIT ECON, V94, P842, DOI 10.1086/261410
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   Corsi F, 2016, OPER RES, V64, P1073, DOI 10.1287/opre.2015.1464
+   CRAWFORD JD, 1991, REV MOD PHYS, V63, P991, DOI 10.1103/RevModPhys.63.991
+   Danielsson J, 2004, J BANK FINANC, V28, P1069, DOI 10.1016/S0378-4266(03)00113-4
+   Danielsson J., 2012, QUANTIFYING SYSTEMIC, P73
+   Danielsson J, 2012, ANNU REV ECON, V4, P111, DOI 10.1146/annurev-economics-080511-110930
+   Devaney R. L., 2008, INTRO CHAOTIC DYNAMI
+   Di Gangi D, 2018, J ECON DYN CONTROL, V94, P117, DOI 10.1016/j.jedc.2018.07.001
+   Dolgopyat D., 2004, STOCHASTICS DYN, V4, P265
+   Dolgopyat D, 2005, INTRO AVERAGING
+   Eckmann J-P, 1985, THEORY CHAOTIC ATTRA, P273
+   Eisenbach T, 2015, FIRE SALE SPILLOVERS
+   Engle R. F., 1986, ECONOMET REV, V5, P1, DOI DOI 10.1080/07474938608800095
+   Farmer JD, 2012, EUR PHYS J-SPEC TOP, V214, P295, DOI 10.1140/epjst/e2012-01696-9
+   FEIGENBAUM MJ, 1978, J STAT PHYS, V19, P25, DOI 10.1007/BF01020332
+   Geanakoplos J, 2010, NBER MACROECON ANNU, V24, P1
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Guegan D, 2009, ANNU REV CONTROL, V33, P89, DOI 10.1016/j.arcontrol.2009.01.002
+   Halling M, 2016, J FINANC ECON, V122, P21, DOI 10.1016/j.jfineco.2016.07.001
+   Heemeijer P, 2009, J ECON DYN CONTROL, V33, P1052, DOI 10.1016/j.jedc.2008.09.009
+   Hommes C, 1998, MACROECON DYN, V2, P287, DOI 10.1017/S1365100598008013
+   Hommes C, 2005, J ECON DYN CONTROL, V29, P1043, DOI 10.1016/j.jedc.2004.08.003
+   Hommes C, 2000, OPTIMIZATION DYNAMICS AND ECONOMIC ANALYSIS, P134
+   Hommes C., 2013, BEHAV RATIONALITY HE
+   Hommes C. H., 2009, HDB RES COMPLEXITY, P87
+   Hommes C, 2007, MACROECON DYN, V11, P8, DOI 10.1017/S1365100507060208
+   Hommes C, 2012, MACROECON DYN, V16, P335, DOI 10.1017/S136510051000060X
+   Hommes C, 2011, J ECON DYN CONTROL, V35, P1, DOI 10.1016/j.jedc.2010.10.003
+   Hommes C, 2008, J ECON BEHAV ORGAN, V67, P116, DOI 10.1016/j.jebo.2007.06.006
+   HOMMES CH, 1994, J ECON BEHAV ORGAN, V24, P315, DOI 10.1016/0167-2681(94)90039-6
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Kifer Y, 2014, ANN I H POINCARE-PR, V50, P236, DOI 10.1214/12-AIHP514
+   Kuehn C, 2011, PHYSICA D, V240, P1020, DOI 10.1016/j.physd.2011.02.012
+   Longerstaey J., 1996, RISKMETRICSTM TECHNI
+   Masciandaro D, 2013, J BANK FINANC, V37, P587, DOI 10.1016/j.jbankfin.2012.09.020
+   Matheson T, 2012, INT TAX PUBLIC FINAN, V19, P884, DOI 10.1007/s10797-012-9212-5
+   MAY RM, 1976, NATURE, V261, P459, DOI 10.1038/261459a0
+   Poledna S, 2014, J BANK FINANC, V42, P199, DOI 10.1016/j.jbankfin.2014.01.038
+   Tasca P, 2016, QUANT FINANC, V16, P1219, DOI 10.1080/14697688.2015.1123817
+   Tsay R. S., 2005, ANAL FINANCIAL TIME, V543
+   Wagner W, 2008, J FINANC INTERMED, V17, P330, DOI 10.1016/j.jfi.2008.01.001
+   WOLF A, 1985, PHYSICA D, V16, P285, DOI 10.1016/0167-2789(85)90011-9
+NR 59
+TC 0
+Z9 0
+U1 3
+U2 6
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD MAR
+PY 2019
+VL 100
+BP 176
+EP 199
+DI 10.1016/j.jedc.2018.12.009
+PG 24
+WC Economics
+SC Business & Economics
+GA HR7AF
+UT WOS:000463303600010
+DA 2019-12-28
+ER
+
+PT J
+AU Bardoscia, M
+   Bianconi, G
+   Ferrara, G
+AF Bardoscia, Marco
+   Bianconi, Ginestra
+   Ferrara, Gerardo
+TI Multiplex network analysis of the UK over-the-counter derivatives market
+SO INTERNATIONAL JOURNAL OF FINANCE & ECONOMICS
+LA English
+DT Article; Proceedings Paper
+CT 4th Symposium on Quantitative Finance and Risk Analysis (QFRA)
+CY JUN, 2018
+CL GREECE
+DE clearing house (CCP); financial networks; liquidity shock; multiplex
+   networks; systemic risk
+ID SYSTEMIC RISK
+AB In this paper, we analyse the network of exposures constructed by using the UK trade repository data for three different categories of contracts: interest rate, credit, and foreign exchange derivatives. We study how liquidity shocks related to variation margins propagate across the network and translate into payment deficiencies across different derivative markets. A key finding of the paper is that, in extreme theoretical scenarios where liquidity buffers are small, a handful of institutions may experience significant spillover effects due to the directionality of their portfolios. Additionally, we show that two novel multiplex centrality measures, the Functional Multiplex Eigenvector Centrality and the Functional Multiplex PageRank, can be used as a proxy for the vulnerability of financial institutions, with the Functional Multiplex PageRank improving on the results that can be obtained using the Functional Multiplex Eigenvector Centrality.
+C1 [Bardoscia, Marco; Ferrara, Gerardo] Bank England, London, England.
+   [Bianconi, Ginestra] Queen Mary Univ London, Sch Math Sci, London, England.
+   [Bianconi, Ginestra] British Lib, Alan Turing Inst, London, England.
+RP Ferrara, G (reprint author), Bank England, London, England.
+EM Gerardo.Ferrara@bankofengland.co.uk
+CR Aguiar A, 2016, J FINANC MARK INFRAS, V5, P1, DOI 10.21314/JFMI.2016.069
+   Alfranseder E., 2018, INDICATORS MONITORIN
+   Alter A, 2015, INT J CENT BANK, V11, P329
+   Bank for International Settlements, 2018, AN CENTR CLEAR INT
+   Bardoscia M, 2017, NAT COMMUN, V8, DOI 10.1038/ncomms14416
+   Bardoscia M, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0130406
+   Bargigli L, 2015, QUANT FINANC, V15, P673, DOI 10.1080/14697688.2014.968356
+   Berndsen R. J., 2016, J FINANC STABIL, V35, P120
+   Bianconi G, 2018, MULTILAYER NETWORKS: STRUCTURE AND FUNCTION, DOI 10.1093/oso/9780198753919.001.0001
+   Bianconi G, 2013, PHYS REV E, V87, DOI 10.1103/PhysRevE.87.062806
+   Boccaletti S, 2014, PHYS REP, V544, P1, DOI 10.1016/j.physrep.2014.07.001
+   Bookstaber R, 2016, OFR BRIEF, V16, P6
+   Cerezetti F., 2017, 643 CCPS BANK ENGL, V643
+   De Domenico M, 2015, NAT COMMUN, V6, DOI 10.1038/ncomms7868
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Gould D. M., 2018, 8438 WORLD BANK, P8438
+   Heath A, 2016, J FINANC STABIL, V27, P217, DOI 10.1016/j.jfs.2015.12.004
+   Iacovacci J, 2016, EPL-EUROPHYS LETT, V116, DOI 10.1209/0295-5075/116/28004
+   Jankowitsch R, 2011, J BANK FINANC, V35, P343, DOI 10.1016/j.jbankfin.2010.08.016
+   Khwaja A, 2016, CCP DISCLOSURES 2Q 2
+   Korniyenko Y., 2018, 18113 INT MON FUND W, V18
+   LANGVILLE AN, 2004, INTERNET MATH, V1, P335, DOI DOI 10.1080/15427951.2004.10129091
+   Markose S.M, 2017, FINANC STAB REV, V21, P111
+   Menichetti G, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0097857
+   Molina-Borboa JL, 2014, J NETW THEORY FINANC, V1, P99
+   Paddrik M., 2016, 1612 OFF FIN RES, P16
+   Paddrik M., 2017, SAFE ARE CENTRAL COU
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Rahmede C, 2018, J COMPLEX NETW, V6, P733, DOI 10.1093/comnet/cnx050
+   Sanchez-de-la-Torre A, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0159207
+   Siebenbrunner C., 2017, CLEARING ALGORITHMS
+NR 31
+TC 0
+Z9 0
+U1 0
+U2 0
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1076-9307
+EI 1099-1158
+J9 INT J FINANC ECON
+JI Int. J. Financ. Econ.
+PD OCT
+PY 2019
+VL 24
+IS 4
+BP 1520
+EP 1544
+DI 10.1002/ijfe.1745
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA JL7UJ
+UT WOS:000495734300008
+OA Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Leventides, J
+   Loukaki, K
+   Papavassiliou, VG
+AF Leventides, John
+   Loukaki, Kalliopi
+   Papavassiliou, Vassilios G.
+TI Simulating financial contagion dynamics in random interbank networks
+SO JOURNAL OF ECONOMIC BEHAVIOR & ORGANIZATION
+LA English
+DT Article
+DE Interbank contagion; Random networks; Financial stability;
+   Interconnectedness; Systemic risk
+ID SYSTEMIC RISK; MARKET; EXPOSURES; TOPOLOGY; MODEL
+AB The purpose of this study is to assess the resilience of financial systems to exogenous shocks using techniques drawn from the theory of complex networks. We investigate by means of Monte Carlo simulations the fragility of several network topologies using a simple default model of contagion applied on interbank networks of varying sizes. We trigger a series of banking crises by exogenously failing each bank in the system and observe the propagation mechanisms that take effect within the system under different scenarios. Finally, we add to the existing literature by analyzing the interplay of several crucial drivers of interbank contagion, such as network topology, leverage, interconnectedness, heterogeneity and homogeneity across bank sizes and interbank exposures. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Leventides, John; Loukaki, Kalliopi] Univ Athens, Dept Economics, Athens, Greece.
+   [Papavassiliou, Vassilios G.] Univ Coll Dublin, UCD Michael Smurfit Grad Business Sch, Carysfort Ave, Blackrock, Dublin, Ireland.
+RP Papavassiliou, VG (reprint author), Univ Coll Dublin, UCD Michael Smurfit Grad Business Sch, Carysfort Ave, Blackrock, Dublin, Ireland.
+EM vassilios.papavassiliou@ucd.ie
+OI Papavassiliou, Vassilios/0000-0003-4915-3297
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2003, 0807 WHART FIN I CTR
+   Alves I., 2013, ESRB OCCASIONAL PAPE, V3
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Bargigli L, 2015, QUANT FINANC, V15, P673, DOI 10.1080/14697688.2014.968356
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Boss M., 2004, 7 OENB
+   Caccioli F, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500580
+   Chinazzi M., 2015, ANNA LEM WORKING PAP
+   Estrada E., 2011, STRUCTURE COMPLEX NE
+   Fink K, 2016, J FINANC STABIL, V25, P83, DOI 10.1016/j.jfs.2016.06.002
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gabrieli S., 2010, 158 CEIS TOR VERG U
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg G., 2010, SYSTEMIC RISK NETWOR
+   Georgescu OM, 2015, J FINANC STABIL, V18, P1, DOI 10.1016/J.JFS.2015.02.003
+   Gutman I., 1987, MATH CONCEPTS ORGANI
+   Inaoka H., 2004, BANK JAPAN WORKING P
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Krause A, 2012, J ECON BEHAV ORGAN, V83, P583, DOI 10.1016/j.jebo.2012.05.015
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Memmel C, 2013, J FINANC STABIL, V9, P46, DOI 10.1016/j.jfs.2013.01.001
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Pegoraro S., 2012, FINANCIAL FRAGILITY
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Tonzer L, 2015, J FINANC STABIL, V18, P19, DOI 10.1016/J.JFS.2015.02.002
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wooldridge J. M., 2003, INTRO ECONOMETRICS M
+NR 36
+TC 0
+Z9 0
+U1 4
+U2 8
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-2681
+EI 1879-1751
+J9 J ECON BEHAV ORGAN
+JI J. Econ. Behav. Organ.
+PD FEB
+PY 2019
+VL 158
+BP 500
+EP 525
+DI 10.1016/j.jebo.2018.12.017
+PG 26
+WC Economics
+SC Business & Economics
+GA HO5XN
+UT WOS:000461002700029
+DA 2019-12-27
+ER
+
+PT J
+AU Qu, Y
+   Dassios, A
+   Zhao, HB
+AF Qu, Yan
+   Dassios, Angelos
+   Zhao, Hongbiao
+TI EFFICIENT SIMULATION OF LEVY-DRIVEN POINT PROCESSES
+SO ADVANCES IN APPLIED PROBABILITY
+LA English
+DT Article
+DE Contagion risk; portfolio risk management; Monte Carlo simulation; exact
+   simulation; exact decomposition; self-exciting jump process with
+   non-Gaussian Ornstein-Ublenbeck intensity; point process; branching
+   process; stochastic intensity model; non-Gaussian Ornstein-Ublenbeck
+   process; gamma process; inverse Gaussian subordinator; tempered stable
+   subordinator
+ID STOCHASTIC VOLATILITY; FINANCIAL CONTAGION; RISK; JUMPS; SPECTRA;
+   MODELS; LIQUIDITY; STABILITY; TIME
+AB In this paper, we introduce a new large family of Levy-driven point processes with (and without) contagion, by generalising the classical self-exciting Hawkes process and doubly stochastic Poisson processes with non-Gaussian Levy-driven Ornstein-Uhlenbeck-type intensities. The resulting framework may possess many desirable features such as skewness, leptokurtosis, mean-reverting dynamics. and more importantly, the 'contagion' or feedback effects, which could be very useful for modelling event arrivals in finance, economics, insurance, and many other fields. We characterise the distributional properties of this new class of point processes and develop an efficient sampling method for generating sample paths exactly. Our simulation scheme is mainly based on the distributional decomposition of the point process and its intensity process. Extensive numerical implementations and tests are reported to demonstrate the accuracy and effectiveness of our scheme. Moreover, we use portfolio risk management as an example to show the applicability and flexibility of our algorithms.
+C1 [Qu, Yan; Dassios, Angelos] London Sch Econ & Polit Sci, Dept Stat, Houghton St, London WC2A 2AE, England.
+   [Zhao, Hongbiao] Shanghai Univ Finance & Econ, Sch Stat & Management, 777 Guoding Rd, Shanghai 200433, Peoples R China.
+   [Zhao, Hongbiao] Shanghai Inst Int Finance & Econ, 777 Guoding Rd, Shanghai 200433, Peoples R China.
+RP Qu, Y (reprint author), London Sch Econ & Polit Sci, Dept Stat, Houghton St, London WC2A 2AE, England.
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71401147]; Shanghai University of Finance and
+   Economics and Shanghai Institute of International Finance and Economics
+FX The authors would like to thank all reviewers for very helpful and
+   constructive comments and suggestions. The corresponding author Hongbiao
+   Zhao would like acknowledge the financial support from the National
+   Natural Science Foundation of China (#71401147) and the research funds
+   provided by Shanghai University of Finance and Economics and Shanghai
+   Institute of International Finance and Economics.
+CR Acharya VV, 2011, AM ECON REV, V101, P2955, DOI 10.1257/aer.101.7.2955
+   Ahnert T, 2017, REV FINANC STUD, V30, P2130, DOI 10.1093/rfs/hhw098
+   Ait-Sahalia Y., 2014, HIGH FREQUENCY FINAN
+   Ait-Sahalia Y, 2015, J FINANC ECON, V117, P585, DOI 10.1016/j.jfineco.2015.03.002
+   Ait-Sahalia Y, 2014, J ECONOMETRICS, V183, P151, DOI 10.1016/j.jeconom.2014.05.006
+   Ait-Sahalia Y, 2011, ANN STAT, V39, P1689, DOI 10.1214/11-AOS873
+   Ait-Sahalia Y, 2009, ANN STAT, V37, P2202, DOI 10.1214/08-AOS640
+   Asmussen S., 2007, STOCHASTIC SIMULATIO
+   Azizpour S, 2018, J FINANC ECON, V129, P154, DOI 10.1016/j.jfineco.2018.04.008
+   Bacry E, 2013, QUANT FINANC, V13, P65, DOI 10.1080/14697688.2011.647054
+   Barndorff-Nielsen O., 1998, FINANC STOCH, V2, P41
+   Barndorff-Nielsen OE, 2001, J R STAT SOC B, V63, P167, DOI 10.1111/1467-9868.00282
+   Barndorff-Nielsen OE, 2003, SCAND J STAT, V30, P277, DOI 10.1111/1467-9469.00331
+   Barndorff-Nielsen OE, 2003, BERNOULLI, V9, P243, DOI 10.3150/bj/1068128977
+   Barndorff-Nielsen OE, 2002, J ROY STAT SOC B, V64, P253, DOI 10.1111/1467-9868.00336
+   Barndorff-Nielsen OE, 2001, LEVY PROCESSES: THEORY AND APPLICATIONS, P283
+   Barndorff-Nielsen OE, 1998, ADV APPL PROBAB, V30, P989, DOI 10.1239/aap/1035228204
+   Barndorff-Nielsen OE, 2000, THEOR PROBAB APPL+, V45, P175
+   BarndorffNielsen OE, 1997, SCAND J STAT, V24, P1, DOI 10.1111/1467-9469.00045
+   Bowsher CG, 2007, J ECONOMETRICS, V141, P876, DOI 10.1016/j.jeconom.2006.11.007
+   Bremaud P, 2002, ADV APPL PROBAB, V34, P205, DOI 10.1017/S0001867800011460
+   Bremaud P, 1996, ANN PROBAB, V24, P1563
+   Brix A, 1999, ADV APPL PROBAB, V31, P929, DOI 10.1017/S0001867800009538
+   Broadie M, 2006, OPER RES, V54, P217, DOI 10.1287/opre.1050.0247
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Cai N, 2017, OPER RES, V65, P931, DOI 10.1287/opre.2017.1617
+   Carr P, 2003, MATH FINANC, V13, P345, DOI 10.1111/1467-9965.00020
+   Centanni S, 2006, J AM STAT ASSOC, V101, P1582, DOI 10.1198/016214506000000276
+   Chen N, 2013, MATH OPER RES, V38, P591, DOI 10.1287/moor.2013.0585
+   Chen ZS, 2012, ACM T MODEL COMPUT S, V22, DOI 10.1145/2331140.2331142
+   Chhikara R., 1989, INVERSE GAUSSIAN DIS
+   Cont R., 2004, FINANCIAL MODELLING
+   Cont R, 2016, MATH FINANC, V26, P835, DOI 10.1111/mafi.12071
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   Cont R, 2001, QUANT FINANC, V1, P223, DOI [10.1088/1469-7688/1/2/304, 10.1080/713665670]
+   Corsi F, 2016, OPER RES, V64, P1073, DOI 10.1287/opre.2015.1464
+   COX DR, 1955, J ROY STAT SOC B, V17, P129
+   COX DR, 1972, J R STAT SOC B, V34, P187
+   Crane R, 2008, P NATL ACAD SCI USA, V105, P15649, DOI 10.1073/pnas.0803685105
+   Daley D.J., 2003, INTRO THEORY POINT P, VI
+   Das SR, 2007, J FINANC, V62, P93, DOI 10.1111/j.1540-6261.2007.01202.x
+   DASSIOS A., 1989, STOCH MODELS, V5, P181, DOI DOI 10.1080/15326348908807105
+   Dassios A, 2018, ACM T MODEL COMPUT S, V28, DOI 10.1145/3184453
+   Dassios A, 2017, OPER RES, V65, P1494, DOI 10.1287/opre.2017.1640
+   Dassios A, 2017, INT J THEOR APPL FIN, V20, DOI 10.1142/S0219024917500030
+   Dassios A, 2013, ELECTRON COMMUN PROB, V18, P1, DOI 10.1214/ECP.v18-2717
+   Dassios A, 2011, ADV APPL PROBAB, V43, P814
+   Davis M. H. A., 1993, MARKOV MODELS OPTIMI
+   DAVIS MHA, 1984, J ROY STAT SOC B MET, V46, P353
+   Devroye L, 2009, ACM T MODEL COMPUT S, V19, DOI 10.1145/1596519.1596523
+   Duffie D, 2003, ANN APPL PROBAB, V13, P984
+   Duffie D, 2001, FINANC ANAL J, V57, P41, DOI 10.2469/faj.v57.n1.2418
+   Duffie D, 2009, J FINANC, V64, P2089, DOI 10.1111/j.1540-6261.2009.01495.x
+   Eberlein E., 2013, APPL MATH FINANCE, V20, P461
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Embrechts P, 2011, J APPL PROBAB, V48A, P367
+   Errais E, 2010, SIAM J FINANC MATH, V1, P642, DOI 10.1137/090771272
+   GENCAY R., 2001, INTRO HIGH FREQUENCY
+   Giesecke K, 2011, OPER RES, V59, P1233, DOI 10.1287/opre.1110.0962
+   Giesecke K, 2011, J FINANC ECON, V102, P233, DOI 10.1016/j.jfineco.2011.01.011
+   Glasserman P, 2003, MONTE CARLO METHODS
+   Glasserman P, 2010, OPER RES, V58, P1611, DOI 10.1287/opre.1100.0837
+   Gordy MB, 2003, J FINANC INTERMED, V12, P199, DOI 10.1016/S1042-9573(03)00040-8
+   Gordy MB, 2000, J BANK FINANC, V24, P119, DOI 10.1016/S0378-4266(99)00054-0
+   Hainaut D, 2008, INSUR MATH ECON, V42, P409, DOI 10.1016/j.insmatheco.2007.05.007
+   HAWKES AG, 1971, J ROY STAT SOC B, V33, P438
+   HAWKES AG, 1971, BIOMETRIKA, V58, P83, DOI 10.2307/2334319
+   HAWKES AG, 1974, J APPL PROBAB, V11, P493, DOI 10.2307/3212693
+   Hofert M, 2011, ACM T MODEL COMPUT S, V22, DOI 10.1145/2043635.2043638
+   Kang C, 2017, OPER RES, V65, P1190, DOI 10.1287/opre.2017.1636
+   Krishnamurthy A, 2010, J ECON PERSPECT, V24, P3, DOI 10.1257/jep.24.1.3
+   Kyprianou AE, 2006, UNIVERSITEXT, P1
+   Large J, 2007, J FINANC MARK, V10, P1, DOI 10.1016/j.finmar.2006.09.001
+   Lee SS, 2010, J FINANC ECON, V96, P271, DOI 10.1016/j.jfineco.2009.12.009
+   LEWIS PAW, 1979, NAV RES LOG, V26, P403, DOI 10.1002/nav.3800260304
+   Li HT, 2008, REV FINANC STUD, V21, P2345, DOI 10.1093/rfs/hhl036
+   Li LF, 2014, MATH FINANC, V24, P289, DOI 10.1111/mafi.12003
+   Longstaff FA, 2008, J FINANC, V63, P529, DOI 10.1111/j.1540-6261.2008.01330.x
+   Madan D., 1998, EUROPEAN FINANCE REV, V2, P79, DOI DOI 10.1023/A:1009703431535
+   MADAN DB, 1990, J BUS, V63, P511, DOI 10.1086/296519
+   MICHAEL JR, 1976, AM STAT, V30, P88, DOI 10.2307/2683801
+   Morris S., 2004, Review of Finance, V8, P1, DOI 10.1023/B:EUFI.0000022155.98681.25
+   Nicolato E, 2003, MATH FINANC, V13, P445
+   POTERBA JM, 1988, J FINANC ECON, V22, P27, DOI 10.1016/0304-405X(88)90021-9
+   QU Y., 2019, WORKING PAPER
+   Rosinski J, 2001, LEVY PROCESSES: THEORY AND APPLICATIONS, P401
+   Rosinski J, 2007, STOCH PROC APPL, V117, P677, DOI 10.1016/j.spa.2006.10.003
+   RYDBERG T. H., 2000, ISAAC NEWTON I SERIE
+   Sato K., 1999, LEVY PROCESSES INFIN
+   SCHOUTENS W., 2010, LEVY PROCESSES CREDI
+NR 93
+TC 0
+Z9 0
+U1 3
+U2 3
+PU APPLIED PROBABILITY TRUST
+PI SHEFFIELD
+PA THE UNIVERSITY, SCHOOL MATHEMATICS STATISTICS, SHEFFIELD S3 7RH, ENGLAND
+SN 0001-8678
+EI 1475-6064
+J9 ADV APPL PROBAB
+JI Adv. Appl. Probab.
+PD DEC
+PY 2019
+VL 51
+IS 4
+BP 927
+EP 966
+DI 10.1017/apr.2019.44
+PG 40
+WC Statistics & Probability
+SC Mathematics
+GA JN5WN
+UT WOS:000496968500001
+DA 2019-12-27
+ER

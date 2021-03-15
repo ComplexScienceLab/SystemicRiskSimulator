@@ -1,0 +1,319 @@
+
+PT J
+AU Gai, P
+   Haldane, A
+   Kapadia, S
+AF Gai, Prasanna
+   Haldane, Andrew
+   Kapadia, Sujit
+TI Complexity, concentration and contagion
+SO JOURNAL OF MONETARY ECONOMICS
+LA English
+DT Article
+ID SYSTEMIC RISK; LIQUIDITY; NETWORKS; MARKETS; CRISIS
+AB This paper develops a network model of interbank lending in which unsecured claims, repo activity and shocks to the haircuts applied to collateral assume centre stage. We show how systemic liquidity crises of the kind associated with the interbank market collapse of 2007-2008 can arise within such a framework, with funding contagion spreading widely through the web of interlinkages. Our model illustrates how greater complexity and concentration in the financial network may amplify this fragility. The analysis suggests how a range of policy measures - including tougher liquidity regulation, macro-prudential policy, and surcharges for systemically important financial institutions could make the financial system more resilient. (C) 2011 Bank of England. Published by Elsevier B.V. All rights reserved.
+C1 [Haldane, Andrew; Kapadia, Sujit] Bank England, London EC2R 8AH, England.
+   [Gai, Prasanna] Univ Auckland, Dept Econ, Auckland 1142, New Zealand.
+RP Kapadia, S (reprint author), Bank England, Threadneedle St, London EC2R 8AH, England.
+EM p.gai@auckland.ac.nz; andy.haldane@bankofengland.co.uk;
+   sujit.kapadia@bankofengland.co.uk
+RI Gai, Prasanna/R-2911-2019
+OI Gai, Prasanna/0000-0002-1664-3946
+CR Acharya V. V., J FINANCE IN PRESS
+   Adrian T, 2010, ANNU REV ECON, V2, P603, DOI 10.1146/annurev.economics.102308.124420
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Alessandri P., 2009, FED RES BANK CHIC WO
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST
+   Allen F, 2009, J MONETARY ECON, V56, P639, DOI 10.1016/j.jmoneco.2009.04.003
+   Anderson R.M., 1991, INFECT DIS HUMANS DY
+   [Anonymous], 2009, ROL MACR POL
+   Bolton P, 2011, Q J ECON, V126, P259, DOI 10.1093/qje/qjq007
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brusco S, 2007, J FINANC, V62, P2275, DOI 10.1111/j.1540-6261.2007.01275.x
+   Caballero R., 2010, FIRE SALES MOD UNPUB
+   Caballero RJ, 2008, J FINANC, V63, P2195, DOI 10.1111/j.1540-6261.2008.01394.x
+   CGFS, 2010, 36 CGFS
+   Craig B, 2010, 322 BANK INT SETTL
+   DIAMOND DW, Q J EC IN PRESS
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   GAI P, 2011, LIQUIDITY HOAR UNPUB
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garratt R.J., 2011, 413 BANK ENGL
+   GEANAKOPLOS J, 2010, FEDERAL RESERVE  AUG, V16
+   Gorton G, 2010, FED RESERVE BANK ST, V92, P507
+   Haldane A., 2009, FIN STUD ASS AMST 28
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   King M., 2010, 2 BAG LECT BUTT GATH
+   Krishnamurthy A, 2010, J ECON PERSPECT, V24, P3, DOI 10.1257/jep.24.1.3
+   Kubelec Ch., 2010, 384 BANK ENGL
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Newman MEJ, 2001, PHYS REV E, V64, DOI 10.1103/PhysRevE.64.026118
+   SHIN HS, 2009, 8 BIS ANN C JUN
+   Simon Herbert A., 1962, P AM PHILOS SOC, V106, P467, DOI DOI 10.2307/985254
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   von Peter G, 2007, BIS Q REV        DEC
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+   WEITZMAN ML, 1974, REV ECON STUD, V41, P477, DOI 10.2307/2296698
+NR 44
+TC 227
+Z9 234
+U1 11
+U2 109
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0304-3932
+J9 J MONETARY ECON
+JI J. Monetary Econ.
+PD JUL
+PY 2011
+VL 58
+IS 5
+BP 453
+EP 470
+DI 10.1016/j.jmoneco.2011.05.005
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA 852YR
+UT WOS:000297393900005
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Kovalchuk, NP
+AF Kovalchuk, N. P.
+TI ECONOMIC RISKS: CLASSIFICATION, PRINCIPLES AND WAYS OF ESTIMATION
+SO ACTUAL PROBLEMS OF ECONOMICS
+LA Russian
+DT Article
+DE riskology; systemic risks; economic risks; monitoring of risks;
+   VAR-model; risks minimization
+AB The article studies the essence, causes and ways of the macroeconomic risks' minimization. Classification of risks is carried out; principles and methods of the economic risks estimation are determined.
+C1 Open Int Univ Human Dev, UA-04071 Kiev, Ukraine.
+RP Kovalchuk, NP (reprint author), Open Int Univ Human Dev, 4 G Khoryva St, UA-04071 Kiev, Ukraine.
+CR CHEPURKO VV, 2001, THESIS
+   EKUSHOV AI, 1999, BANKOVSKIE TEKHNOLOG, P17
+   GRINSEN A, 2009, EPOKHA POTRESANIY PR
+   KAMINSKY AB, 2007, THESIS
+   KOVALENKO V, 2011, NAUKOVY ZAPYSKY INST, P83
+   KOVALENKO V, 2011, PRAVO UKRAINY, P304
+   KOVALENKO V, 2011, YURIDICHNA UKRAINA, P37
+   KOVALENKO V, 2011, FINANSOVI RYZKY SHLY
+   NAUMENKOVA SV, 2010, SYSTEMY REGULIROV RY
+   SMAGIN V, 2009, RYNOK TSINYKH PAPERI, P3
+   VASYUTOVICH A, 1988, BANKOVSKIE TEKHNOLOG, P32
+   VITLINSKY VV, 2004, RYZYKOLOGIYA EKONOM
+   VITLINSKY VV, 2008, RYZYKOLOGIYA ZOVNINN
+   VOLKOV SN, SOVR RISK MENEDZHM I
+   2011, MODERNIZATSIYA UKRAI
+NR 15
+TC 0
+Z9 0
+U1 0
+U2 0
+PU NATIONAL ACAD MANAGEMENT
+PI KYIV
+PA VUL PANASA MYMOGO 26, KYIV, 01011, UKRAINE
+SN 1993-6788
+J9 ACTUAL PROBL ECON
+JI Actual Probl. Econ.
+PY 2011
+IS 124
+BP 31
+EP 37
+PG 7
+WC Economics
+SC Business & Economics
+GA 850IF
+UT WOS:000297187600004
+DA 2019-12-28
+ER
+
+PT J
+AU Galupa, A
+   Albu, C
+   Hartulari, C
+AF Galupa, Angela
+   Albu, Crisan
+   Hartulari, Carmen
+TI EXPERIMENTAL RESULTS CONCERNING THE RISK OF POLLUTION IN AIR USING DATA
+   WAREHOUSES
+SO ECONOMIC COMPUTATION AND ECONOMIC CYBERNETICS STUDIES AND RESEARCH
+LA English
+DT Article
+DE Data warehouse; multidimensional model; cybernetic multilevel system;
+   measure of risk
+AB In this paper, the authors present the experimental results obtained, based on a systemic approach, to quantify the polluting phenomena in the air and various measures of risk to quantify it. The systemic approach takes into account all the factors involved in this phenomenon (polluting or economic agent responsible to control and adjust the polluting phenomena). The authors propose different measures of risk to analyze this phenomenon and also a degree of risk associated to each polluting enterprise, which allows applying measures of punishment or stimulation to each economic polluting agent. The factors of decision involved in this process can better establish their decisions, taking into account also the historical information for a period of 1 /3 years, using for this propose, the information available in data warehouses. The results of this analysis allow the economic agent and also the control unit to adjust their economic policies concerning the environmental pollution.
+C1 [Galupa, Angela; Albu, Crisan; Hartulari, Carmen] Bucharest Acad Econ Studies, Dept Econ Cybernet, Bucharest, Romania.
+RP Galupa, A (reprint author), Bucharest Acad Econ Studies, Dept Econ Cybernet, Bucharest, Romania.
+CR ALEXANDRU A, 2010, B UASVM HORTICULTURE, V67
+   BADESCU AV, 2005, METODE CANTITATIVE F
+   BROTONS JM, 2010, EC COMPUTATION EC CY, V1
+   Dragota V, 2009, ECON COMPUT ECON CYB, V43, P69
+   EZZATI M, COMP QUANTIFICATION, P2167
+   Filip F. G., 2007, SISTEME SUPORT PENTR
+   HARTULARI C, 2009, EC COMPUTATION EC CY, V3
+   IORGULESCU F, 2008, EC COMPUTATION EC CY, V3
+   Krewski D., 2000, REANALYSIS HARVARD 6
+   RAMESH S, 2010, DECISIONS SUPPORT BU
+   VALACIECH, 2008, MODERN SYSTEM ANAL D
+NR 11
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ACAD ECONOMIC STUDIES
+PI BUCHAREST
+PA 15-17 CALEA DOROBANTI, SECTOR 1, BUCHAREST, 00000, ROMANIA
+SN 0424-267X
+J9 ECON COMPUT ECON CYB
+JI Econ. Comput. Econ. Cybern. Stud.
+PY 2011
+VL 45
+IS 3
+BP 85
+EP 100
+PG 16
+WC Economics; Mathematics, Interdisciplinary Applications
+SC Business & Economics; Mathematics
+GA 818LA
+UT WOS:000294752000006
+DA 2019-12-28
+ER
+
+PT J
+AU Mansor, IH
+AF Mansor, Ibrahim H.
+TI FINANCIAL MARKET RISK AND GOLD INVESTMENT IN AN EMERGING MARKET: THE
+   CASE OF MALAYSIA
+SO ROMANIAN JOURNAL OF ECONOMIC FORECASTING
+LA English
+DT Article
+DE gold investment; market return; correlations; market risk
+ID CONTAGION
+AB The present paper examines the relation between gold return and stock market return and whether its relation changes in times of consecutive negative market returns for an emerging market, Malaysia. We find a significant positive but low correlation between gold and once-lagged stock returns. Moreover, consecutive negative market returns do not seem to intensify the co-movement between the gold and stock markets as normally documented among national stock markets in times of financial turbulences. Indeed, there is some evidence that the gold market surges when faced with consecutive market declines. Based on these results, there are potential benefits of gold investment during periods of stock market slumps.
+C1 Univ Putra Malaysia, Fac Econ & Management, Dept Econ, Serdang Upm Selangor 43400, Malaysia.
+RP Mansor, IH (reprint author), Univ Putra Malaysia, Fac Econ & Management, Dept Econ, Serdang Upm Selangor 43400, Malaysia.
+EM mansorhi@econ.upm.edu.my
+CR Bahng J.S., 2003, J ASIAN EC, V14, P541
+   Baur DG, 2010, FINAN REV, V45, P217, DOI 10.1111/j.1540-6288.2010.00244.x
+   Baur DG, 2010, J BANK FINANC, V34, P1886, DOI 10.1016/j.jbankfin.2009.12.008
+   Capie F, 2005, J INT FINANC MARK IN, V15, P343, DOI DOI 10.1016/J.INTFIN.2004.07.002
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Hasman A, 2008, J BANK FINANC, V32, P2136, DOI 10.1016/j.jbankfin.2007.12.033
+   Hillier D, 2006, FINANC ANAL J, V62, P98, DOI 10.2469/faj.v62.n2.4085
+   Koutmos G, 2003, J INT MONEY FINANC, V22, P365, DOI 10.1016/S0261-5606(03)00012-3
+   Lobo B.J., 2000, FINANCIAL REV, V35, P125, DOI DOI 10.1111/FIRE.2000.35.ISSUE-3
+   Markwat T, 2009, J BANK FINANC, V33, P1996, DOI 10.1016/j.jbankfin.2009.05.008
+   Nam K, 2005, J BANK FINANC, V29, P391, DOI 10.1016/j.jbankfin.2004.05.012
+   Pagan J.A, 2001, INT REV FINANC ANAL, V10, P175
+   2001, NEWS STRAIT TIM 0626
+NR 13
+TC 3
+Z9 3
+U1 0
+U2 0
+PU INST ECONOMIC FORECASTING
+PI BUCHAREST
+PA CASA ACADEMIEI, CALEA 13 SEPTEMBRIE NR 13, SECTOR 5, BUCHAREST, 050711,
+   ROMANIA
+SN 1582-6163
+J9 ROM J ECON FORECAST
+JI Rom. J. Econ. Forecast
+PY 2011
+VL 14
+IS 4
+BP 79
+EP 89
+PG 11
+WC Economics
+SC Business & Economics
+GA 874PV
+UT WOS:000298971500006
+DA 2019-12-27
+ER
+
+PT J
+AU Liu, XW
+   Mello, AS
+AF Liu, Xuewen
+   Mello, Antonio S.
+TI The fragile capital structure of hedge funds and the limits to arbitrage
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Limits to arbitrage; Coordination risk; Fragile capital structure;
+   Market liquidity
+ID CONTAGION; LIQUIDITY; EQUILIBRIUM; MARKETS; CRISES; MODEL; DEBT; RISK
+AB During a financial crisis, when investors are most in need of liquidity and accurate prices, hedge funds cut their arbitrage positions and hoard cash. The paper explains this phenomenon. We argue that the fragile nature of the capital structure of hedge funds, combined with low market liquidity, creates a risk of coordination in redemptions among hedge fund investors that severely limits hedge funds' arbitrage capabilities. We present a model of hedge funds' optimal asset allocation in the presence of coordination risk among investors. We show that hedge fund managers behave conservatively and even abstain from participating in the market once coordination risk is factored into their investment decisions. The model suggests a new source of limits to arbitrage. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [Liu, Xuewen] Hong Kong Univ Sci & Technol, Hong Kong, Hong Kong, Peoples R China.
+   [Mello, Antonio S.] Univ Wisconsin, Madison, WI 53706 USA.
+RP Liu, XW (reprint author), Hong Kong Univ Sci & Technol, Hong Kong, Hong Kong, Peoples R China.
+EM Xuewenliu@ust.hk
+RI MISHRA, AJAY/H-3875-2011
+CR Abreu D, 2002, J FINANC ECON, V66, P341, DOI 10.1016/S0304-405X(02)00227-1
+   Abreu D, 2003, ECONOMETRICA, V71, P173, DOI 10.1111/1468-0262.00393
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Brunnermeier M.K., 2009, REV FINANC STUD, V22, P2199
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Chen Q, 2010, J FINANC ECON, V97, P239, DOI 10.1016/j.jfineco.2010.03.016
+   Corsetti G, 2004, REV ECON STUD, V71, P87, DOI 10.1111/0034-6527.00277
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   Diamond DW, 2000, J FINANC, V55, P2431, DOI 10.1111/0022-1082.00296
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Goldstein I, 2005, J FINANC, V60, P1293, DOI 10.1111/j.1540-6261.2005.00762.x
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Gorton G, 2003, HANDB ECON, V21, P431
+   GORTON G, 2008, FED RES BANK KANS CI
+   Gromb D, 2002, J FINANC ECON, V66, P361, DOI 10.1016/S0304-405X(02)00228-3
+   Krishnamurthy A, 2010, J ECON PERSPECT, V24, P3, DOI 10.1257/jep.24.1.3
+   Mitchell M., J FINANCIAL IN PRESS
+   Morris S., 2004, Review of Finance, V8, P1, DOI 10.1023/B:EUFI.0000022155.98681.25
+   Morris S, 1998, AM ECON REV, V88, P587
+   Morris S., 2009, ILLIQUIDITY CO UNPUB
+   Morris S., 2008, BROOK PAP C
+   Morris S., 2003, ADV EC ECONOMETRICS, V1, P56
+   Plantin G, 2008, J ACCOUNT RES, V46, P435, DOI 10.1111/j.1475-679X.2008.00281.x
+   Plantin G, 2009, REV ECON STUD, V76, P395, DOI 10.1111/j.1467-937X.2008.00526.x
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Stein JC, 2005, Q J ECON, V120, P247, DOI 10.1162/qjec.2005.120.1.247
+NR 29
+TC 15
+Z9 15
+U1 1
+U2 37
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD DEC
+PY 2011
+VL 102
+IS 3
+BP 491
+EP 506
+DI 10.1016/j.jfineco.2011.06.005
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA 842KO
+UT WOS:000296598500002
+DA 2019-12-27
+ER

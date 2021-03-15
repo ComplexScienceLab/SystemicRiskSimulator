@@ -1,0 +1,403 @@
+
+PT J
+AU Trabelsi, N
+AF Trabelsi, Nader
+TI Tail dependence between oil and stocks of major oil-exporting countries
+   using the CoVaR approach
+SO BORSA ISTANBUL REVIEW
+LA English
+DT Article
+DE Oil price shocks; Oil-exporting countries; Conditional VaR
+ID SYSTEMIC RISK; GAS COMPANIES; CANADIAN OIL; PRICES; RETURNS; MARKETS;
+   SPILLOVERS; VOLATILITY; SHOCKS; IMPACT
+AB This paper investigates the negative tail risk dependence between oil shocks and stock indices (at aggregated and desegregated levels) for Saudi Arabia (KSA), United Arab Emirates (UAE) and Russia, over the period between 2007 and 2016. DCC-MGARCH approach and CoVaR measure are employed to assess the oil shock exposure. The results show that the tail dependence is significant and depends on the origin of the oil shocks, with intensity that varies across countries and sectors. Copyright (c) 2017, Borsa Istanbul Anonim Sirketi. Production and hosting by Elsevier B. V. This is an open access article under the CC BY-NCND license
+C1 [Trabelsi, Nader] Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Coll Econ & Adm Sci, Dept Finance & Investment, POB 5701, Riyadh, Saudi Arabia.
+   [Trabelsi, Nader] Univ Sfax, Fac Econ & Management FSEG Sfax, BP 3018, Sfax, Tunisia.
+RP Trabelsi, N (reprint author), Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Coll Econ & Adm Sci, Dept Finance & Investment, POB 5701, Riyadh, Saudi Arabia.
+EM nhtrabelsi@imamu.edu.sa
+CR Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Arouri M, 2010, 2934 CESIFO
+   Arouri ME, 2011, J INT MONEY FINANC, V30, P1387, DOI 10.1016/j.jimonfin.2011.07.008
+   Arouri MEH, 2010, ENERG POLICY, V38, P4528, DOI 10.1016/j.enpol.2010.04.007
+   Awartani B, 2013, ENERG ECON, V36, P28, DOI 10.1016/j.eneco.2012.11.024
+   Bhar R, 2010, SCOT J POLIT ECON, V57, P169, DOI 10.1111/j.1467-9485.2010.00512.x
+   Boyer MM, 2007, ENERG ECON, V29, P428, DOI 10.1016/j.eneco.2005.12.003
+   Chang CL, 2013, N AM J ECON FINANC, V25, P116, DOI 10.1016/j.najef.2012.06.002
+   El-Sharif I, 2005, ENERG ECON, V27, P819, DOI 10.1016/j.eneco.2005.09.002
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Faff R.W., 1999, J ENERGY FINANCE DEV, V4, P69, DOI DOI 10.1016/S1085-7443(99)00005-8
+   Fayyad A, 2011, EMERG MARK REV, V12, P61, DOI 10.1016/j.ememar.2010.12.001
+   Filis G, 2011, INT REV FINANC ANAL, V20, P152, DOI 10.1016/j.irfa.2011.02.014
+   Fouquau J., 2009, EC B, V29, P795
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Hamilton J. D., 2009, BROOKINGS PAPERS EC, V40
+   Hamma W, 2014, PROC ECON FINANC, V13, P109, DOI 10.1016/S2212-5671(14)00434-1
+   Hammoudeh S, 2005, J ECON BUS, V57, P1, DOI 10.1016/j.jeconbus.2004.08.002
+   Hammoudeh S, 2006, RES INT BUS FINANC, V20, P22, DOI 10.1016/j.ribaf.2005.05.008
+   Jouini J, 2013, J POLICY MODEL, V35, P1124, DOI 10.1016/j.jpolmod.2013.08.003
+   Kilian L, 2008, REV ECON STAT, V90, P216, DOI 10.1162/rest.90.2.216
+   Kilian L, 2009, INT ECON REV, V50, P1267, DOI 10.1111/j.1468-2354.2009.00568.x
+   Lippi Francesco, 2009, 6830 CEPR
+   Maghyereh A, 2007, MANAG FINANC, V33, P449, DOI 10.1108/03074350710753735
+   Malik F., 2009, INT REV FINANC AB, V18, P95, DOI DOI 10.1016/J.IRFA.2009.03.003
+   MALIK F, 2007, INT REV ECON FINANC, V16, P357, DOI DOI 10.1016/J.IREF.2005.05.005
+   Mensi W, 2017, J BANK FINANC, V75, P258, DOI 10.1016/j.jbankfin.2016.11.017
+   Nandha M, 2008, ENERG ECON, V30, P986, DOI 10.1016/j.eneco.2007.09.003
+   Narayan PK, 2011, J BANK FINANC, V35, P3253, DOI 10.1016/j.jbankfin.2011.05.010
+   Reboredo JC, 2014, INT REV ECON FINANC, V29, P145, DOI 10.1016/j.iref.2013.05.014
+   Sadorsky P, 2001, ENERG ECON, V23, P17, DOI 10.1016/S0140-9883(00)00072-4
+   Trabelsi N., 2017, J EC ASYMMETRIES
+   Wakeford J. J., 2006, SARB C 2006
+   Zarour B. A, 2006, INT J OPERATION RES, V6, P145, DOI DOI 10.1007/BF02941229
+NR 34
+TC 3
+Z9 3
+U1 0
+U2 4
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 2214-8450
+EI 2214-8469
+J9 BORSA ISTANB REV
+JI Borsa Istanb. Rev.
+PD DEC
+PY 2017
+VL 17
+IS 4
+BP 228
+EP 237
+DI 10.1016/j.bir.2017.07.001
+PG 10
+WC Business, Finance; Economics
+SC Business & Economics
+GA FW0VQ
+UT WOS:000425014400003
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Zakaria, F
+   Fatine, FA
+AF Zakaria, Firano
+   Fatine, Filali A.
+TI Determinants of The Application of Macro Prudential Instruments
+SO COMPARATIVE ECONOMIC RESEARCH-CENTRAL AND EASTERN EUROPE
+LA English
+DT Article
+DE financial stability; macro prudential; systemic risk
+AB The use of macro prudential instruments today gives rise to a major debate within the walls of central banks and other authorities in charge of financial stability. Contrary to micro prudential instruments, whose effects remain limited, macro prudential instruments are different in nature and can affect the stability of the financial system. By influencing the financial cycle and the financial structure of financial institutions, the use of such instruments should be conducted with great vigilance as well as macroeconomic and financial expertise. But the experiences of central banks in this area are sketchy, and only some emerging countries have experience using these types of instruments in different ways. This paper presents an analysis of instruments of macro prudential policy and attempts to empirically demonstrate that these instruments should be used only in specific economic and financial situations. Indeed, the results obtained, using modeling bivariate panel, confirm that these instruments are more effective when used to mitigate the euphoria of financial and economic cycles. In this sense, the output gap, describing the economic cycle, and the Z-score are the intermediate variables for the activation of capital instruments. Moreover, the liquidity ratio and changes in bank profitability are the two early warning indicators for activation of liquidity instruments.
+C1 [Zakaria, Firano] Univ Mohammed 5 Rabat, Fac Law Econ & Socials Sci Agdal, Finance & Econ, Rabat, Morocco.
+   [Fatine, Filali A.] Univ Mohammed 5 Rabat, Fac Law Econ & Socials Sci Agdal, Econ, Rabat, Morocco.
+RP Zakaria, F (reprint author), Univ Mohammed 5 Rabat, Fac Law Econ & Socials Sci Agdal, Finance & Econ, Rabat, Morocco.
+EM firanou@yahoo.fr; filaliadib@live.fr
+CR [Anonymous], 2009, ROL MACR POL
+   Bank of England, 2011, INSTR MACR POL DISC
+   Behn M., 2013, ECB WORKING PAPER SE, V1604
+   Berge TJ, 2011, AM ECON J-MACROECON, V3, P246, DOI 10.1257/mac.3.2.246
+   Claessens S., 2011, WP1176 IMF
+   Crowe Christopher, 2011, WP1191 IMF
+   Dell'Ariccia G, 2012, IMF STAFF DISCUSS N, DOI 10.5089/9781475504743.006
+   Drehmann M., 2010, 317 BIS
+   Drehmann M., 2010, 317 BIS, V317
+   Drehmann M., 2011, INT J CENTRAL BANKIN, V7
+   Drehmann Mathias, 2012, BIS Q REV, P21
+   Galati G., 2011, MACROPRUDENTIAL POLI
+NR 12
+TC 0
+Z9 0
+U1 0
+U2 4
+PU LODZ UNIV PRESS
+PI LODZ
+PA UL LINDLEYA 8, LODZ, 90-131, POLAND
+SN 1508-2008
+EI 2082-6737
+J9 COMP ECON RES
+JI Comp. Econ. Res.
+PD SEP
+PY 2017
+VL 20
+IS 3
+BP 117
+EP 136
+DI 10.1515/cer-2017-0023
+PG 20
+WC Economics
+SC Business & Economics
+GA FM7JT
+UT WOS:000415253300007
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Jaggia, S
+   Thosar, S
+AF Jaggia, Sanjiv
+   Thosar, Satish
+TI Pay-for-performance incentives in the finance sector and the financial
+   crisis
+SO MANAGERIAL FINANCE
+LA English
+DT Article
+DE Financial crisis; Executive compensation; Pay for performance
+ID EXECUTIVE-COMPENSATION; RISK-TAKING; OWNERSHIP STRUCTURE; CEO PAY;
+   INDUSTRY; SENSITIVITY; SIZE; FIRM
+AB Purpose - The purpose of this paper is to investigate executive compensation in the finance sector during the periods surrounding the crisis with a view to determining whether compensation incentives were associated with excessive risk taking.
+   Design/methodology/approach - The authors compare pay-for-performance sensitivity (PFPS) parameters for the finance sector before, during, and after the financial crisis. The authors also employ the technology sector as a comparison benchmark.
+   Findings - The authors find that CEO compensation is strongly associated with the accounting-based return on assets performance measure in the finance sector particularly in the pre-crisis period; the relationship is amplified in larger firms. In contrast, the technology sector exhibits PFPS only for the market-based stockholder return measure with smaller firms displaying greater sensitivity.
+   Originality/value - From a public policy perspective, it is desirable that PFPS for senior executives in the finance sector is muted. This is due to the risk-shifting incentives specific to the sector whereby profits flow to managers/stockholders while catastrophic losses can be socialized through taxpayer funded bailouts. The findings imply that compensation practices in the finance sector remain a potential concern for systemic stability. In addition to academics and practitioners, the paper may be of interest to financial regulators. In the authors opinion they should consider monitoring PFPS in addition to capital ratios, credit default swap spreads, and other metrics in their risk containment strategies.
+C1 [Jaggia, Sanjiv] Calif Polytech State Univ San Luis Obispo, Orfalea Coll Business, San Luis Obispo, CA 93407 USA.
+   [Thosar, Satish] Univ Redlands, Sch Business, Redlands, CA 92373 USA.
+RP Thosar, S (reprint author), Univ Redlands, Sch Business, Redlands, CA 92373 USA.
+EM satish_thosar@redlands.edu
+CR Anderson MC, 2000, MANAGE SCI, V46, P530, DOI 10.1287/mnsc.46.4.530.12055
+   Bebchuk L. A., 2004, PAY PERFORMANCE UNFU
+   Bell B, 2014, ECON J, V124, pF1, DOI 10.1111/ecoj.12101
+   Besley T, 2008, AM ECON REV, V98, P206, DOI 10.1257/aer.98.2.206
+   Bolton P., 2010, FEDERAL RESERVE BANK
+   Branson P., 1997, WALL STREET J, pA18
+   Chance DM, 2000, J FINANC ECON, V57, P129, DOI 10.1016/S0304-405X(00)00053-2
+   Chen CR, 2006, J BANK FINANC, V30, P915, DOI 10.1016/j.jbankfin.2005.06.004
+   Core J, 1999, J ACCOUNT ECON, V28, P151, DOI 10.1016/S0165-4101(99)00019-1
+   Core J.E., 2003, EC POLICY REV, V9, P27
+   Crawford J., 1995, J BUS, V68, P231
+   DeYoung R, 2013, J FINANC QUANT ANAL, V48, P165, DOI 10.1017/S0022109012000646
+   Faria P., 2014, WORKING PAPER
+   Fox J, 1997, FORTUNE, V136, P52
+   Gabaix X, 2008, Q J ECON, V123, P49, DOI 10.1162/qjec.2008.123.1.49
+   Gabaix X, 2014, ECON J, V124, pF40, DOI 10.1111/ecoj.12084
+   JENSEN MC, 1990, J POLIT ECON, V98, P225, DOI 10.1086/261677
+   John K, 2000, REV FINANC STUD, V13, P95, DOI 10.1093/rfs/13.1.95
+   JOHN K, 2003, FRBNY EC POLICY REV, V9, P109
+   Ke B, 1999, J ACCOUNT ECON, V28, P185, DOI 10.1016/S0165-4101(99)00021-X
+   Knopf JD, 1996, J BANK FINANC, V20, P1329, DOI 10.1016/0378-4266(96)00010-6
+   McCormack J, 2010, J APPL CORP FINANC, V22, P65, DOI 10.1111/j.1745-6622.2010.00291.x
+   Minnick K, 2011, REV FINANC STUD, V24, P439, DOI 10.1093/rfs/hhq107
+   Murphy K., 1999, HDB LABOR EC B, V3b, P2485, DOI DOI 10.1016/S1573-4463(99)30024-9
+   Murphy K.J., 2013, HDB EC FINANCE A, V2, P211
+   MURPHY KJ, 1985, J ACCOUNT ECON, V7, P11, DOI 10.1016/0165-4101(85)90026-6
+   Philippon T, 2012, Q J ECON, V127, P1551, DOI 10.1093/qje/qjs030
+   Rajan R. G, 2005, 11728 NAT BUR EC RES
+   Sarin N., 2016, BPEA C WASH IN PRESS
+   SAUNDERS A, 1990, J FINANC, V45, P643, DOI 10.2307/2328676
+   Schaefer S, 1998, REV ECON STAT, V80, P436, DOI 10.1162/003465398557537
+   Sherman Matthew, 2009, SHORT HIST FINANCIAL
+   Toyne M. F., 2000, J CORP FINANC, V6, P291
+NR 33
+TC 1
+Z9 1
+U1 1
+U2 3
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 0307-4358
+EI 1758-7743
+J9 MANAG FINANC
+JI Manag. Financ.
+PY 2017
+VL 43
+IS 6
+BP 646
+EP 662
+DI 10.1108/MF-05-2016-0160
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA EZ6TZ
+UT WOS:000404852800002
+DA 2019-12-28
+ER
+
+PT J
+AU Soedarmono, W
+   Sitorus, D
+   Tarazi, A
+AF Soedarmono, Wahyoe
+   Sitorus, Djauhari
+   Tarazi, Amine
+TI Abnormal loan growth, credit information sharing and systemic risk in
+   Asian banks
+SO RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE
+LA English
+DT Article
+DE Abnormal loan growth; Systemic risk; Credit reporting system; Asian
+   banks
+ID MARKET POWER; COMPETITION; MODELS; INTERMEDIATION; PERFORMANCE;
+   INSURANCE; COUNTRIES; SECTORS; SAMPLE; CRISIS
+AB This paper investigates the interplay of abnormal loan growth, credit reporting system and systemic risk in banking. Based on a sample of publicly traded banks in Asia from 1998 to 2012, higher abnormal loan growth leads to higher systemic risk one year ahead. A closer investigation further suggests that better credit information coverage and private credit bureaus can mitigate the buildup of bank systemic risk one year ahead due to higher abnormal loan growth. Eventually, this paper offers some support to strengthen macroprudential regulation to limit abnormal loan growth. This paper also advocates the importance of strengthening credit information coverage and the role of private credit bureaus in Asian countries to mitigate the negative impact of abnormal loan growth on bank systemic stability.
+C1 [Soedarmono, Wahyoe] Sampoerna Univ, Jakarta, Indonesia.
+   [Sitorus, Djauhari] World Bank Grp, Washington, DC USA.
+   [Tarazi, Amine] Univ Limoges, LAPE, 5 Rue Felix Eboue, F-87031 Limoges, France.
+RP Tarazi, A (reprint author), Univ Limoges, LAPE, 5 Rue Felix Eboue, F-87031 Limoges, France.
+EM wahyoe.soedarmono@sampoernauniversity.ac.id; dsitorus@worldbank.org;
+   amine.tarazi@unilim.fr
+OI Tarazi, Amine/0000-0001-8385-2994; Soedarmono,
+   Wahyoe/0000-0002-5658-8929
+CR Acharya V., 2010, AFA 2011 DENV M PAP
+   Adrian T., 2011, 17454 NBER
+   Agusman A., 2008, J BANK FINANC, V32, P480
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Angklomkliew S, 2009, BIS Q REV
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Ariss RT, 2010, J BANK FINANC, V34, P765, DOI 10.1016/j.jbankfin.2009.09.004
+   Arnold B, 2012, J BANK FINANC, V36, P3125, DOI 10.1016/j.jbankfin.2012.07.023
+   Baltagi B.H., 2005, ECONOMETRIC ANAL PAN
+   Bautista C, 2008, REV ECON-FR, V59, P1215, DOI 10.3917/reco.596.1215
+   Beck T., 2006, 3920 WORLD BANK POL
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Bekaert G., 2009, WORKING PAPER
+   Ben Naceur S, 2011, EMERG MARK REV, V12, P1, DOI 10.1016/j.ememar.2010.08.002
+   Ben Naceur S, 2009, J ECON BUS, V61, P70, DOI 10.1016/j.jeconbus.2007.12.001
+   Berger AN, 2004, J FINANC INTERMED, V13, P458, DOI 10.1016/j.jfi.2004.06.006
+   Bikker J. A., 2005, J INT FINANC MARK I, V15, P141, DOI DOI 10.1016/J.INTFIN.2004.03.004
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   Borio C., 2001, BIS PAPERS, V1, P1
+   BOUVATIER V, 2008, J INT FINANC MARK I, V18, P513, DOI DOI 10.1016/J.INTFIN.2007.07.004
+   Bouvatier V., 2012, INT EC, V132, P91, DOI DOI 10.1016/S2110-7017(13)60059-1
+   Brown M, 2009, J FINANC INTERMED, V18, P151, DOI 10.1016/j.jfi.2008.04.002
+   Craig R.S., 2006, IMF WORKING PAPER
+   De Nicolo G, 2002, J BANK FINANC, V26, P861, DOI 10.1016/S0378-4266(02)00211-X
+   Dell'Ariccia G., 2008, 08106 IMF
+   Demyanyk Y, 2011, REV FINANC STUD, V24, P1848, DOI 10.1093/rfs/hhp033
+   Engle R, 2002, J APPL ECONOM, V17, P425, DOI 10.1002/jae.683
+   Festic M, 2011, J BANK FINANC, V35, P310, DOI 10.1016/j.jbankfin.2010.08.007
+   Focus Asia, 2011, CREDIT BUREAUS ASIA
+   Foos D, 2010, J BANK FINANC, V34, P2929, DOI 10.1016/j.jbankfin.2010.06.007
+   Fu XQ, 2014, J BANK FINANC, V38, P64, DOI 10.1016/j.jbankfin.2013.09.012
+   GORTON G., 2009, AM ECON REV, V99, P567, DOI [10.1257/aer.99.2.567, DOI 10.1257/AER.99.2.567]
+   Greenawalt M, 1991, J FINANCIAL SERVICES, V5, P43, DOI DOI 10.1007/BF00127083
+   Haq M., 2013, HAL00955135 LAPE U L
+   Haq M, 2012, J INT FINANC MARK I, V22, P696, DOI 10.1016/j.intfin.2012.04.003
+   Hess K, 2009, ECON REC, V85, P331, DOI 10.1111/j.1475-4932.2009.00551.x
+   Houston JF, 2010, J FINANC ECON, V96, P485, DOI 10.1016/j.jfineco.2010.02.008
+   Jappelli T, 2002, J BANK FINANC, V26, P2017, DOI 10.1016/S0378-4266(01)00185-6
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Kraft E, 2005, J BANK FINANC, V29, P105, DOI 10.1016/j.jbankfin.2004.06.025
+   Laeven L, 2003, J FINANC INTERMED, V12, P178, DOI 10.1016/S1042-9573(03)00016-0
+   Lee CC, 2013, J INT MONEY FINANC, V32, P251, DOI 10.1016/j.jimonfin.2012.04.013
+   Love I., 2003, 3142 WORLD BANK POL
+   Mishkin F, 1991, 3400 NBER
+   Packer F., 2012, 375 BIS
+   Padilla AJ, 2000, EUR ECON REV, V44, P1951, DOI 10.1016/S0014-2921(00)00055-6
+   PAGANO M, 1993, J FINANC, V48, P1693
+   Patro DK, 2013, J FINANC STABIL, V9, P105, DOI 10.1016/j.jfs.2012.03.002
+   Pukthuanthong K, 2009, J FINANC ECON, V94, P214, DOI 10.1016/j.jfineco.2008.12.004
+   Sachs J., 2000, ASIAN FINANCIAL CRIS
+   Salas V., 2002, J FINANCIAL SERVICES, V22, P203, DOI DOI 10.1023/A:1019781109676
+   Sau L, 2003, J POST KEYNESIAN EC, V25, P493
+   Soedarmono W, 2013, J ASIAN ECON, V29, P91, DOI 10.1016/j.asieco.2013.09.003
+   Soedarmono W, 2013, J INT FINANC MARK I, V23, P196, DOI 10.1016/j.intfin.2012.09.009
+   Tsai HP, 2011, J BANK FINANC, V35, P588, DOI 10.1016/j.jbankfin.2010.05.016
+   Windmeijer F, 2005, J ECONOMETRICS, V126, P25, DOI 10.1016/j.jeconom.2004.02.005
+NR 57
+TC 3
+Z9 3
+U1 1
+U2 4
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0275-5319
+EI 1878-3384
+J9 RES INT BUS FINANC
+JI Res. Int. Bus. Financ.
+PD DEC
+PY 2017
+VL 42
+BP 1208
+EP 1218
+DI 10.1016/j.ribaf.2017.07.058
+PG 11
+WC Business, Finance
+SC Business & Economics
+GA FO6LK
+UT WOS:000416974400092
+DA 2019-12-28
+ER
+
+PT J
+AU Cerutti, E
+   Claessens, S
+AF Cerutti, Eugenio
+   Claessens, Stijn
+TI The Great Cross-Border Bank Deleveraging: Supply Constraints and
+   Intra-Group Frictions*
+SO REVIEW OF FINANCE
+LA English
+DT Article
+ID INTERNATIONAL SHOCK TRANSMISSION; CAPITAL REQUIREMENTS; SYSTEMIC RISK;
+   GLOBAL BANKS
+AB International banks greatly reduced direct cross-border and local affiliates' lending as the global financial crisis strained their balance sheets, lowered borrower demand, and altered government policies. Using bilateral lender-borrower data and controlling for demand, we show that reductions largely varied in line with markets' prior assessments of banks' vulnerabilities, with financial statements' and lender borrower data playing minor roles. Those banking systems subject to less market discipline, however, were less sensitive to markets' perceptions. Moving resources within banking groups became more restricted as drivers of reductions in direct cross-border loans differed from those for local affiliates' lending, especially for more impaired banking systems.
+C1 [Cerutti, Eugenio] Int Monetary Fund, Washington, DC 20431 USA.
+   [Claessens, Stijn] Fed Reserve Syst, Board Governors, Washington, DC 20551 USA.
+RP Cerutti, E (reprint author), Int Monetary Fund, Washington, DC 20431 USA.
+CR Acharya VV, 2011, WILEY FINANC SER, P87
+   Aiyar S, 2014, J FINANC ECON, V113, P368, DOI 10.1016/j.jfineco.2014.05.003
+   Aiyar S, 2014, ECON POLICY, V29, P45, DOI 10.1111/1468-0327.12026
+   Barth J. R., 2013, 18733 NAT BUR EC RES
+   Bremus F, 2015, J INT MONEY FINANC, V52, P32, DOI 10.1016/j.jimonfin.2014.11.012
+   Cerutti E, 2015, J BANK FINANC, V55, P340, DOI 10.1016/j.jbankfin.2014.08.021
+   Cerutti E, 2015, J INT MONEY FINANC, V52, P60, DOI 10.1016/j.jimonfin.2014.11.013
+   Cerutti E, 2014, J FINANC STABIL, V11, P1, DOI 10.1016/j.jfs.2013.10.003
+   Cerutti Eugenio, 2014, SYSTEMIC RISK MACROM, P235
+   Cetorelli N, 2012, J INT ECON, V88, P299, DOI 10.1016/j.jinteco.2012.05.001
+   Cetorelli N, 2012, J FINANC, V67, P1811, DOI 10.1111/j.1540-6261.2012.01773.x
+   Cetorelli N, 2011, IMF ECON REV, V59, P41, DOI 10.1057/imfer.2010.9
+   Chor D, 2012, J INT ECON, V87, P117, DOI 10.1016/j.jinteco.2011.04.001
+   Claessens S., 2015, 14197 IMF
+   Claessens S., 2013, J FINANCIAL PERSPECT, V1, P1
+   Claessens S, 2014, J MONEY CREDIT BANK, V46, P295, DOI 10.1111/jmcb.12092
+   Cull Robert, 2012, 6195 WORLD BANK POL
+   D'Hulster K., 2014, RING FENCING CROSS B
+   De Haas R, 2014, J MONEY CREDIT BANK, V46, P333, DOI 10.1111/jmcb.12094
+   De Haas R, 2013, REV FINANC STUD, V26, P244, DOI 10.1093/rfs/hhs113
+   De Haas R, 2012, AM ECON REV, V102, P231, DOI 10.1257/aer.102.3.231
+   de Haas R, 2010, J FINANC INTERMED, V19, P1, DOI 10.1016/j.jfi.2009.02.001
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Giannetti M, 2012, J FINANC ECON, V104, P23, DOI 10.1016/j.jfineco.2011.12.006
+   Hale G., 2014, CONCL C MACR RES MAR
+   Idier J, 2014, J BANK FINANC, V47, P134, DOI 10.1016/j.jbankfin.2014.06.022
+   Ivashina V, 2010, J FINANC ECON, V97, P319, DOI 10.1016/j.jfineco.2009.12.001
+   Kamil H., 2010, 1002 IMF
+   Kapan T., 2013, 13102 IMF
+   Kerl C., 2014, STAFF REPORTS FEDERA
+   Khwaja AI, 2008, AM ECON REV, V98, P1413, DOI 10.1257/aer.98.4.1413
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Mc Guire P, 2009, BIS Q REV, P47
+   Ongena S., 2013, 385 NED BANK
+   Van Rijckeghem Caroline, 2014, 10139 CEPR
+   World Bank, 2009, GLOB DEV FIN CHART G
+NR 37
+TC 10
+Z9 10
+U1 0
+U2 3
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1572-3097
+EI 1573-692X
+J9 REV FINANC
+JI Rev. Financ.
+PD MAR
+PY 2017
+VL 21
+IS 1
+SI SI
+BP 201
+EP 236
+DI 10.1093/rof/rfw002
+PG 36
+WC Business, Finance; Economics
+SC Business & Economics
+GA EP0PV
+UT WOS:000397090100007
+OA Green Published
+DA 2019-12-28
+ER

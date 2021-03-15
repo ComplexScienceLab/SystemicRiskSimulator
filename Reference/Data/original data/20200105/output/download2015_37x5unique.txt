@@ -1,0 +1,423 @@
+
+PT J
+AU Haldane, AG
+AF Haldane, Andrew G.
+TI Multi-Polar Regulation
+SO INTERNATIONAL JOURNAL OF CENTRAL BANKING
+LA English
+DT Article; Proceedings Paper
+CT Policies for Macroeconomic and Financial Stability
+CY SEP 26-27, 2014
+CL Fed Reserve Bank Philadelphia, Philadelphia, PA
+HO Fed Reserve Bank Philadelphia
+ID SYSTEMIC RISK; LIQUIDITY
+AB The financial crisis has brought about a fundamental rethink of both the source and scale of systemic risk in the financial system and the regulatory framework needed to guard against them. The papers by Alter, Craig, and Raupach (this issue) and Kharroubi (this issue) speak to some of the risks and the regulatory response that might be most appropriate to mitigate them. But underlying both is a more fundamental question about the emerging framework for regulatory policy-multi-polar regulation. This commentary considers the impact and cumulative consequences of multiple regulatory constraints on banks' asset allocation. Using a simple framework, these effects are shown to be complex and interconnected. The impact of this regime shift, on analytical models and real-world behavior, remains largely uncharted territory. This defines a whole new, and exciting, research frontier.
+C1 Bank England, London, England.
+RP Haldane, AG (reprint author), Bank England, London, England.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Admati A. R., 2013, BANKERS NEW CLOTHES
+   Afonso G., 2014, EC POLICY REV, V20, P41
+   Aikman D., 2014, 28 BANK ENGLAND
+   Bank of England, 2014, FIN POL COMM REV LEV
+   Basel Committee on Banking Supervision, 2009, BAS 3 GLOB REG FRAM
+   Basel Committee on Banking Supervision, 2013, GLOB SYST IMP BANKS
+   Brunnermeier Markus, 2009, GENEVA REPORTS WORLD, P11
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Duffie D., 2013, CAPITAL REQUIREMENTS
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   FINANCIAL POLICY COMMITTEE, 2014, FIN POL COMM POW SUP
+   Financial Stability Board, 2014, AD LOSS ABS CAP GLOB
+   Financial Stability Board, 2014, KEY ATTR EFF RES REG
+   Gai P, 2013, LIQUIDITY FUNDING MA, P237
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gennaioli N., 2015, AM EC REV IN PRESS
+   Gigerenzer G., 2011, HEURISTICS FDN ADAPT
+   Haldane A., 2013, SPEECH GIVEN I EC AF
+   Haldane A., 2012, SPEECH GIVEN FEDERAL
+   Haldane A.G., 2009, RETHINKING FINANCIAL
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hansen LP, 2007, ROBUSTNESS
+   Laeven L, 2010, 10146 IMF
+   Smets F, 2014, INT J CENT BANK, V10, P263
+   Tinbergen J., 1952, THEORY EC POLICY
+NR 28
+TC 4
+Z9 4
+U1 0
+U2 4
+PU ASSOC INTERNATIONAL JOURNAL CENTRAL BANKING
+PI FRANKFURT
+PA POSTFACH 16 03 19, FRANKFURT, 60066, GERMANY
+SN 1815-4654
+EI 1815-7556
+J9 INT J CENT BANK
+JI Int. J. Cent. Bank.
+PD JUN
+PY 2015
+VL 11
+IS 3
+SI SI
+BP 385
+EP 401
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA CR4KN
+UT WOS:000361301000016
+DA 2019-12-28
+ER
+
+PT J
+AU Aymanns, C
+   Georg, CP
+AF Aymanns, Christoph
+   Georg, Co-Pierre
+TI Contagious synchronization and endogenous network formation in financial
+   networks
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Social learning; Endogenous financial networks; Multi-agent simulations;
+   Systemic risk
+ID SOCIAL NETWORKS; HERD BEHAVIOR; SYSTEMIC RISK; MODEL; MARKET; CASCADES;
+   BANK
+AB When banks choose similar investment strategies the financial system becomes vulnerable to common shocks. We model a simple financial system in which banks decide about their investment strategy based on a private belief about the state of the world and a social belief formed from observing the actions of peers. Observing a larger group of peers conveys more information and thus leads to a stronger social belief. Extending the standard model of Bayesian updating in social networks, we show that the probability that banks synchronize their investment strategy on a state non-matching action critically depends on the weighting between private and social belief. This effect is alleviated when banks choose their peers endogenously in a network formation process, internalizing the externalities arising from social learning. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Aymanns, Christoph] Univ Oxford, Math Inst, Oxford OX1 2JD, England.
+   [Aymanns, Christoph] Oxford Martin Sch, Inst New Econ Thinking, Oxford, England.
+   [Georg, Co-Pierre] Univ Cape Town, Grad Sch Business, ZA-7700 Rondebosch, South Africa.
+EM aymanns@maths.ox.ac.uk; co-pierre.georg@bundesbank.de
+FU Engineering and Physical Sciences Research CouncilEngineering & Physical
+   Sciences Research Council (EPSRC) [1236654]
+CR Acemoglu D, 2014, THEOR ECON, V9, P41, DOI 10.3982/TE1204
+   Acemoglu D, 2011, REV ECON STUD, V78, P1201, DOI 10.1093/restud/rdr004
+   Alevy JE, 2007, J FINANC, V62, P151, DOI 10.1111/j.1540-6261.2007.01204.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Bala V, 2000, ECONOMETRICA, V68, P1181, DOI 10.1111/1468-0262.00155
+   BANERJEE AV, 1992, Q J ECON, V107, P797, DOI 10.2307/2118364
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bernhardt D, 2006, J FINANC ECON, V80, P657, DOI 10.1016/j.jfineco.2005.07.006
+   BIKHCHANDANI S, 1992, J POLIT ECON, V100, P992, DOI 10.1086/261849
+   Bluhm M., 2013, 12 SAFE GOETH U FRAN
+   Caballero R., 2012, TCMB C 2012 TURK CUM
+   Chang EC, 2000, J BANK FINANC, V24, P1651, DOI 10.1016/S0378-4266(99)00096-5
+   Chiang TC, 2010, J BANK FINANC, V34, P1911, DOI 10.1016/j.jbankfin.2009.12.014
+   Cipriani M, 2014, AM ECON REV, V104, P224, DOI 10.1257/aer.104.1.224
+   Craig B., J FINANCIAL IN PRESS
+   DEGROOT MH, 1974, J AM STAT ASSOC, V69, P118, DOI 10.2307/2285509
+   DeMarzo PM, 2003, Q J ECON, V118, P909, DOI 10.1162/00335530360698469
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gale D, 2003, GAME ECON BEHAV, V45, P329, DOI 10.1016/S0899-8256(03)00144-1
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Goyal S., 1998, REV ECON STUD, V65, P559
+   Haldane Andrew G., 2012, FED RES BANK KANS CI
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Jackson MO, 1996, J ECON THEORY, V71, P44, DOI 10.1006/jeth.1996.0108
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   Navarro N., 2007, 2007100 CENTER TILB
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Peydr J. L, 2009, OXFORD HDB BANKING
+   Poledna S, 2014, J BANK FINANC, V42, P199, DOI 10.1016/j.jbankfin.2014.01.038
+NR 29
+TC 9
+Z9 11
+U1 1
+U2 28
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JAN
+PY 2015
+VL 50
+BP 273
+EP 285
+DI 10.1016/j.jbankfin.2014.06.030
+PG 13
+WC Business, Finance; Economics
+SC Business & Economics
+GA AY3UD
+UT WOS:000347506900020
+DA 2019-12-28
+ER
+
+PT J
+AU Han, LY
+   Zhou, YM
+   Yin, LB
+AF Han, Liyan
+   Zhou, Yimin
+   Yin, Libo
+TI Exogenous impacts on the links between energy and agricultural commodity
+   markets
+SO ENERGY ECONOMICS
+LA English
+DT Article
+DE Energy; Agricultural commodities; Multivariate normal mixture model;
+   Financialization; Biofuel policy; Food crisis; Global financial crisis
+ID OIL PRICE SHOCKS; STOCK-MARKET; INTEREST-RATES; FOOD; VOLATILITY;
+   BIOFUELS; CRISIS; REGIME; FINANCIALIZATION; CONTAGION
+AB The main purpose of this paper is to identify the effects of exogenous factors, which have been somewhat controversial, on the price links between the energy and agricultural commodity markets. Our study differs from other studies by employing multivariate normal mixture models to capture the structural properties of the price dependencies in the underlying states. This paper investigates price dependencies from both quantitative and structural perspectives. By analyzing the overall dependencies and structural heterogeneity in the empirical results, we conclude that the global financial crisis is the most influential shock on the price links between energy and agricultural commodities. Because price links are vulnerable to financial shocks, our results also suggest introducing state-based analysis to risk management and portfolio diversification across the energy and agriculture markets during times of turmoil. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Han, Liyan; Zhou, Yimin] Beihang Univ, Sch Econ & Management, Beijing 100191, Peoples R China.
+   [Yin, Libo] Cent Univ Finance & Econ, Sch Finance, Beijing, Peoples R China.
+RP Yin, LB (reprint author), 39 South Coll RD, Beijing 100081, Peoples R China.
+EM hanly1@163.com; zhouymmt@126.com; yinlibowsxbb@126.com
+RI Yin, Libo/Q-7525-2017
+OI Yin, Libo/0000-0003-0193-6735
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71401193, 71371022]
+FX This research is financially supported by the National Natural Science
+   Foundation of China under projects No. 71401193 and No. 71371022.
+CR Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Apergis N, 2014, ENERG ECON, V45, P485, DOI 10.1016/j.eneco.2014.07.025
+   Baffes J., 2010, WORKING PAPER
+   Baffes J, 2010, APPL ECON LETT, V17, P1555, DOI 10.1080/13504850903120683
+   Banse M, 2008, EUR REV AGRIC ECON, V35, P117, DOI 10.1093/erae/jbn023
+   Buyuksahin B, 2014, J INT MONEY FINANC, V42, P38, DOI 10.1016/j.jimonfin.2013.08.004
+   Chang TH, 2010, ENERGY, V35, P2807, DOI 10.1016/j.energy.2010.03.006
+   Ciaian P, 2011, RESOUR ENERGY ECON, V33, P326, DOI 10.1016/j.reseneeco.2010.07.004
+   DEMPSTER AP, 1977, J ROY STAT SOC B MET, V39, P1
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gray SF, 1996, J FINANC ECON, V42, P27, DOI 10.1016/0304-405X(96)00875-6
+   HAMILTON JD, 1988, J ECON DYN CONTROL, V12, P385, DOI 10.1016/0165-1889(88)90047-4
+   Janda K, 2012, AGR ECON-CZECH, V58, P372, DOI 10.17221/124/2011-AGRICECON
+   Jebabli I, 2014, ENERG ECON, V45, P66, DOI 10.1016/j.eneco.2014.06.008
+   Ji Q, 2012, APPL ENERG, V89, P273, DOI 10.1016/j.apenergy.2011.07.038
+   Kristoufek L, 2014, BIOFUEL BIOPROD BIOR, V8, P362, DOI 10.1002/bbb.1464
+   Kristoufek L, 2012, ENERG ECON, V34, P1380, DOI 10.1016/j.eneco.2012.06.016
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Mallory ML, 2012, ENERG ECON, V34, P2157, DOI 10.1016/j.eneco.2012.03.011
+   Mensi W, 2014, ENERG ECON, V42, P343, DOI 10.1016/j.eneco.2013.11.005
+   Nazlioglu S, 2013, ENERG ECON, V36, P658, DOI 10.1016/j.eneco.2012.11.009
+   Patton A.J., 2001, 0109 UCSD
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2006, J APPL ECONOM, V21, P147, DOI 10.1002/jae.865
+   Pearson K., 1894, Philosophical Transactions, V185a, P71, DOI 10.1098/rsta.1894.0003
+   Reboredo JC, 2012, ENERG POLICY, V49, P456, DOI 10.1016/j.enpol.2012.06.035
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Sari R, 2011, ENERG ECON, V33, P515, DOI 10.1016/j.eneco.2010.12.006
+   SCHMIDHUBER J, 2007, BIOFUELS EMERGING TH
+   Serra T, 2011, ENERG ECON, V33, P1155, DOI 10.1016/j.eneco.2011.04.003
+   Silvennoinen A, 2013, J INT FINANC MARK I, V24, P42, DOI 10.1016/j.intfin.2012.11.007
+   Tang K, 2012, FINANC ANAL J, V68, P54, DOI 10.2469/faj.v68.n6.5
+   Tyner WE, 2008, REV AGR ECON, V30, P387, DOI 10.1111/j.1467-9353.2008.00412.x
+   Tyner WE, 2010, AGR ECON-BLACKWELL, V41, P193, DOI 10.1111/j.1574-0862.2010.00500.x
+   Vacha L, 2013, ENERG ECON, V40, P233, DOI 10.1016/j.eneco.2013.06.015
+   Wang YD, 2014, ENERG ECON, V44, P22, DOI 10.1016/j.eneco.2014.03.016
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+NR 37
+TC 13
+Z9 13
+U1 4
+U2 30
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD MAY
+PY 2015
+VL 49
+BP 350
+EP 358
+DI 10.1016/j.eneco.2015.02.021
+PG 9
+WC Economics
+SC Business & Economics
+GA CL2CW
+UT WOS:000356752200033
+DA 2019-12-27
+ER
+
+PT J
+AU Kilic, E
+   Ulusoy, V
+AF Kilic, Erdem
+   Ulusoy, Veysel
+TI Evidence for Financial Contagion in Endogenous Volatile Periods
+SO REVIEW OF DEVELOPMENT ECONOMICS
+LA English
+DT Article
+ID EMPIRICAL-EVIDENCE; INTERDEPENDENCE; MARKETS; GLOBALIZATION;
+   UNCERTAINTY; INVESTMENT; STABILITY; CRISES
+AB The objective of this study is to analyze cross-border contagious dynamics in both foreign exchange markets and stock exchange markets. Propagation is analyzed with respect to the transmission of excessive volatility that is endogenously determined. The contagion process is discussed in the context of financial systems, foreign direct investments and trade. Implementing a vector autoregressive-multivariate generalized autoregressive conditional heteroskedasticity (VAR-MGARCH) model, we show that country-specific turbulence in financial markets is able to create unanticipated financial contagion across countries. Diversified trade and financial relations decrease the risk of exposure to contagion from external markets. The world's largest economies, however, play a price-setter role, and diversification is of secondary importance. Asymmetric transmission of the empirically predicted contagion prevails in the latter case.
+C1 [Kilic, Erdem] MEF Univ, Dept Econ, TR-34396 Istanbul, Turkey.
+   [Ulusoy, Veysel] Yeditepe Univ, Ticari Bilimler Fak, TR-34755 Atasehir, Turkey.
+RP Kilic, E (reprint author), MEF Univ, Dept Econ, Maslak Ayazaga Cad 4, TR-34396 Istanbul, Turkey.
+EM kilice@mef.edu.tr
+RI Library, MEF/O-1457-2019; Ulusoy, Veysel/V-3977-2017
+OI Ulusoy, Veysel/0000-0001-7227-894X
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen Franklin, 2008, BIS WORKING PAPERS, V257
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Billio M, 2010, COMPUT STAT DATA AN, V54, P2443, DOI 10.1016/j.csda.2009.03.018
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Bredin D, 2009, REV DEV ECON, V13, P215, DOI 10.1111/j.1467-9361.2009.00508.x
+   Calvo GA, 2000, AM ECON REV, V90, P59, DOI 10.1257/aer.90.2.59
+   Chui M, 2002, ECON J, V112, pF566, DOI 10.1111/1468-0297.00083
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   De Grauwe P, 2008, REV DEV ECON, V12, P530, DOI 10.1111/j.1467-9361.2008.00470.x
+   Dungey M., 2001, TESTING CONTAGION US
+   Eichengreen B, 1994, 4898 NBER
+   Eichler S, 2011, REV DEV ECON, V15, P223, DOI 10.1111/j.1467-9361.2011.00604.x
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   Escaleras M, 2008, REV DEV ECON, V12, P372, DOI 10.1111/j.1467-9361.2007.00378.x
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Frankel Jeffrey A, 1998, ECON J, V108, P1000
+   GRUBEL HG, 1971, J FINANC, V26, P89, DOI 10.2307/2325743
+   Kenen P., 1969, MONETARY PROBLEMS IN
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   KRUGMAN P, 1995, Q J ECON, V110, P857, DOI 10.2307/2946642
+   MCANDREWS JJ, 1995, J FINANC INTERMED, V4, P305, DOI 10.1006/jfin.1995.1013
+   McKinnon R., 2004, REV DEV ECON, V8, P331, DOI DOI 10.1111/J.1467-9361.2004.00237.X
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Poon JPH, 2000, T I BRIT GEOGR, V25, P427, DOI 10.1111/j.0020-2754.2000.00427.x
+   Rodrik D, 1997, FOREIGN POLICY, P19, DOI 10.2307/1149330
+   Roubini Nouriel, 2001, 8634 NBER
+   Taimur Baig, 1999, 98155 IMF, DOI International Monetary Fund
+   Van Rijckeghem Caroline, 2000, 88 IMF
+   Xekalaki E., 2010, ARCH MODELS FINANCIA
+NR 31
+TC 3
+Z9 3
+U1 0
+U2 7
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1363-6669
+EI 1467-9361
+J9 REV DEV ECON
+JI Rev. Dev. Econ.
+PD FEB
+PY 2015
+VL 19
+IS 1
+BP 62
+EP 74
+DI 10.1111/rode.12126
+PG 13
+WC Development Studies; Economics
+SC Development Studies; Business & Economics
+GA CA4LD
+UT WOS:000348874700005
+DA 2019-12-27
+ER
+
+PT J
+AU Sayim, M
+   Rahman, H
+AF Sayim, Mustafa
+   Rahman, Hamid
+TI An examination of U.S. institutional and individual investor sentiment
+   effect on the Turkish stock market
+SO GLOBAL FINANCE JOURNAL
+LA English
+DT Article
+DE Investor sentiment; ISE; VAR model
+ID AUTOREGRESSIVE TIME-SERIES; ASSET PRICES; RETURNS; RISK; EQUILIBRIUM;
+   VOLATILITY; INFLATION; EARNINGS
+AB This study examines the effect of rational and irrational components of U.S. institutional and individual investor sentiment on Istanbul Stock Market (ISE) return and volatility. The results showthat there is a significant spillover effect of U.S. investor sentiment on stock return and volatility of ISE. A breakdown of sentiment by the type of investor shows that the impact of institutional sentiment is greater than that of individual sentiment. A breakdown of sentiment by rationality shows that the effect of rational sentiment on ISE return is faster though not necessarily greater than that of irrational sentiment. The conclusion fromthese results is that the effect of U.S. investor sentiment is systemic and cannot be diversified away. U.S. investor sentiment, therefore, constitutes a priced risk factor and must be accounted for accordingly in international asset pricing models. The findings also provide some evidence of a negative relationship between U.S. investor sentiment and ISE return volatility. (C) 2015 Elsevier Inc. All rights reserved.
+C1 [Sayim, Mustafa; Rahman, Hamid] Alliant Int Univ, Alliant Sch Management, 10455 Pomerado Rd, San Diego, CA 92131 USA.
+RP Rahman, H (reprint author), Alliant Int Univ, Alliant Sch Management, 10455 Pomerado Rd, San Diego, CA 92131 USA.
+EM msayim@alliant.edu; hrahman@alliant.edu
+CR Andersen TG, 2007, J INT ECON, V73, P251, DOI 10.1016/j.jinteco.2007.02.004
+   Baker M, 2007, J ECON PERSPECT, V21, P129, DOI 10.1257/jep.21.2.129
+   Baker M, 2006, J FINANC, V61, P1645, DOI 10.1111/j.1540-6261.2006.00885.x
+   Barberis N, 1998, J FINANC ECON, V49, P307, DOI 10.1016/S0304-405X(98)00027-0
+   Barberis N., 2003, SURVEY BEHAV FINANCE
+   BECKER KG, 1995, J BANK FINANC, V19, P1191, DOI 10.1016/0378-4266(94)00079-I
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   BLACK F, 1986, J FINANC, V41, P529, DOI 10.2307/2328481
+   Brown G. W., 2004, J EMPIR FINANC, V11, P1, DOI DOI 10.1016/J.JEMPFIN.2002.12.001
+   Brown GW, 2005, J BUS, V78, P405, DOI 10.1086/427633
+   Calafiore P.J., 2010, 2 ESSAYS IMPACT RATI
+   CAMPBELL JY, 1991, ECON J, V101, P157, DOI 10.2307/2233809
+   CAMPBELL JY, 1988, J FINANC, V43, P661, DOI 10.2307/2328190
+   CAMPBELL JY, 1993, REV ECON STUD, V60, P1, DOI 10.2307/2297810
+   Clarke R. G., 1998, FINANCIAL ANAL J, V54, P63
+   D'Avolio G, 2002, J FINANC ECON, V66, P271, DOI 10.1016/S0304-405X(02)00206-4
+   DELONG JB, 1990, J POLIT ECON, V98, P703, DOI 10.1086/261703
+   DICKEY DA, 1981, ECONOMETRICA, V49, P1057, DOI 10.2307/1912517
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Dumas B., 2006, WHAT CAN RATIONAL IN
+   ELTON E. J., 1991, MODERN PORTFOLIO THE
+   Elton EJ, 1998, J BUS, V71, P477, DOI 10.1086/209754
+   FAMA EF, 1990, J MONETARY ECON, V25, P59, DOI 10.1016/0304-3932(90)90045-6
+   FAMA EF, 1988, J POLIT ECON, V96, P246, DOI 10.1086/261535
+   FAMA EF, 1977, J FINANC ECON, V5, P115, DOI 10.1016/0304-405X(77)90014-9
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   FAMA EF, 1970, J FINANC, V25, P383, DOI 10.2307/2325486
+   FISHER K, 2000, FINANCIAL ANAL J, V56, P16, DOI DOI 10.2469/FAJ.V56.N2.2340
+   Hakkio M.S., 1984, AUTOREGRESSIONS USER
+   Hirshleifer D, 2006, J FINANC ECON, V81, P311, DOI 10.1016/j.jfineco.2005.05.006
+   Hull J. C., 2007, FUNDAMENTALS FUTURES
+   JEGADEESH N, 1993, J FINANC, V48, P65, DOI 10.1111/j.1540-6261.1993.tb04702.x
+   Kogan L, 2006, J FINANC, V61, P195, DOI 10.1111/j.1540-6261.2006.00834.x
+   Kumar A, 2006, J FINANC, V61, P2451, DOI 10.1111/j.1540-6261.2006.01063.x
+   KYLE AS, 1985, ECONOMETRICA, V53, P1315, DOI 10.2307/1913210
+   LEE CMC, 1991, J FINANC, V46, P75, DOI 10.1111/j.1540-6261.1991.tb03746.x
+   Lee WY, 2002, J BANK FINANC, V26, P2277, DOI 10.1016/S0378-4266(01)00202-3
+   Lemmon M, 2006, REV FINANC STUD, V19, P1499, DOI 10.1093/rfs/hhj038
+   LEWELLEN WG, 1977, J BUS, V50, P296, DOI 10.1086/295947
+   Li Q., 2005, J EMPIR FINANC, V12, P650, DOI DOI 10.1016/J.JEMPFIN.2005.03.001
+   LINTNER J, 1965, J FINANC, V20, P587, DOI 10.2307/2977249
+   Litterman R. S., 1983, Q REV FEDERAL RESERV, V1, P10
+   Meric G., 2001, INT REV FINANC ANAL, V10, P219
+   Neal R, 1998, J FINANC QUANT ANAL, V33, P523, DOI 10.2307/2331130
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   POTERBA JM, 1988, J FINANC ECON, V22, P27, DOI 10.1016/0304-405X(88)90021-9
+   Qiu L.X, 2006, INVESTOR SENTIMENT M
+   RATANAPAKORN O, 2002, REV FINANC EC, V11, P91, DOI DOI 10.1016/S1059-0560(02)00103-X
+   Schmeling M, 2009, J EMPIR FINANC, V16, P394, DOI 10.1016/j.jempfin.2009.01.002
+   Sharpe SA, 2002, REV ECON STAT, V84, P632, DOI 10.1162/003465302760556468
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   SHEFRIN H, 1994, J FINANC QUANT ANAL, V29, P323, DOI 10.2307/2331334
+   Shiller RJ, 1996, REV ECON STAT, V78, P156, DOI 10.2307/2109855
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   SHLEIFER A, 1990, J ECON PERSPECT, V4, P19, DOI 10.1257/jep.4.2.19
+   Sias R.W., 2001, J FINANC RES, V24, P311
+   SIMS CA, 1980, ECONOMETRICA, V48, P1, DOI 10.2307/1912017
+   Solt M. E., 1988, FINANCIAL ANAL J, V44, P45, DOI DOI 10.2469/FAJ.V44.N5.45
+   Soydemir G., 2002, APPL FINANCIAL EC, V12, P77
+   Statman M, 2006, REV FINANC STUD, V19, P1531, DOI 10.1093/rfs/hhj032
+   Swaminathan B, 1996, REV FINANC STUD, V9, P845, DOI 10.1093/rfs/9.3.845
+   TANDON K, 1987, J INT MONEY FINANC, V6, P71, DOI 10.1016/0261-5606(87)90014-3
+   TRUEMAN B, 1988, J FINANC, V43, P83, DOI 10.2307/2328324
+   Verma R., 2006, J BEHAV FINANC, V7, P128, DOI DOI 10.1207/S15427579JPFM0703_2
+   Verma R., 2008, APPL FINANCIAL EC, V18, p[16, 1303], DOI DOI 10.1080/09603100701704272
+   Webb R., 1999, FEDERAL RESERVE BANK, V85, P23
+   Whitelaw RF, 2000, REV FINANC STUD, V13, P521, DOI 10.1093/rfs/13.3.521
+   Wongswan J, 2006, REV FINANC STUD, V19, P1157, DOI 10.1093/rfs/hhj033
+NR 68
+TC 6
+Z9 6
+U1 1
+U2 9
+PU JAI PRESS INC
+PI STAMFORD
+PA 100 PROSPECT ST, PO BOX 811, STAMFORD, CT 06901 USA
+SN 1044-0283
+EI 1873-5665
+J9 GLOB FINANC J
+JI Glob. Financ. J.
+PD MAY
+PY 2015
+VL 26
+BP 1
+EP 17
+DI 10.1016/j.gfj.2015.01.001
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA DM0NC
+UT WOS:000376041400001
+DA 2019-12-28
+ER

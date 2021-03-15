@@ -1,0 +1,526 @@
+
+PT J
+AU Battiston, S
+   Caldarelli, G
+   D'Errico, M
+   Gurciullo, S
+AF Battiston, Stefano
+   Caldarelli, Guido
+   D'Errico, Marco
+   Gurciullo, Stefano
+TI Leveraging the network: A stress-test framework based on DebtRank
+SO STATISTICS & RISK MODELING
+LA English
+DT Article
+DE Systemic risk; leverage network; stress-test
+ID MOVES STOCK-PRICES; SYSTEMIC RISK; FINANCIAL NETWORKS; INTERBANK
+   NETWORKS; DEFAULT CASCADES; MARKET; STABILITY; CONTAGION; MODEL
+AB We develop a novel stress-test framework to monitor systemic risk in financial systems. The modular structure of the framework allows to accommodate for a variety of shock scenarios, methods to estimate interbank exposures and mechanisms of distress propagation. The main features are as follows. First, the framework allows to estimate and disentangle not only first-round effects (i.e. shock on external assets) and second-round effects (i.e. distress induced in the interbank network), but also third-round effects induced by possible fire sales. Second, it allows to monitor at the same time the impact of shocks on individual or groups of financial institutions as well as their vulnerability to shocks on counterparties or certain asset classes. Third, it includes estimates for loss distributions, thus combining network effects with familiar risk measures such as VaR and CVaR. Fourth, in order to perform robustness analyses and cope with incomplete data, the framework features a module for the generation of sets of networks of interbank exposures that are coherent with the total lending and borrowing of each bank. As an illustration, we carry out a stress-test exercise on a dataset of listed European banks over the years 2008-2013. We find that second-round and third-round effects dominate first-round effects, therefore suggesting that most current stress-test frameworks might lead to a severe underestimation of systemic risk.
+C1 [Battiston, Stefano; D'Errico, Marco] Univ Zurich, Dept Banking & Finance, Plattenstr 14, CH-8032 Zurich, Switzerland.
+   [Caldarelli, Guido] ISC CNR, IMT Alti Studi Lucca, Rome, Italy.
+   [Caldarelli, Guido] LIMS London, London, England.
+   [Gurciullo, Stefano] UCL, Sch Publ Policy, London, England.
+RP Battiston, S (reprint author), Univ Zurich, Dept Banking & Finance, Plattenstr 14, CH-8032 Zurich, Switzerland.
+EM stefano.battiston@bf.uzh.ch; guido.caldarelli@imtlucca.it;
+   marco.derrico@uzh.ch; stefano.gurciullo.11@ucl.ac.uk
+RI battiston, stefano/I-2624-2012; Caldarelli, Guido/A-5274-2010
+OI battiston, stefano/0000-0002-0051-973X; Caldarelli,
+   Guido/0000-0001-9377-3616
+FU European Commission FET Open project SIMPOL [610704]; European
+   Commission FET Open DOLFINS [640772]; European Commission ERC grant RMAC
+   [249415]; Swiss National Science Foundation (SNF)Swiss National Science
+   Foundation (SNSF) [PP00P1-144689]
+FX SB and MD acknowledge support from the European Commission FET Open
+   project SIMPOL nr. 610704, the European Commission FET Open DOLFINS nr.
+   640772, the European Commission ERC grant RMAC nr. 249415, and the Swiss
+   National Science Foundation (SNF) Professorship grant no. PP00P1-144689.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Anand K., 2014, 2 DTSCH BUND
+   Aoyama H., 2013, 13E087 RIETI
+   Bank of England, 2013, FRAM STRESS TEST UK
+   Basel Committee on Banking Supervision, 2011, TECHNICAL REPORT
+   Basel Committee on Banking Supervision, 2013, LIQ STRESS TEST SURV
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Basel Committee on Banking Supervision, 2015, REV CRED VAL ADJ RIS
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Bordo M., 1995, 5371 NAT BUR EC RES
+   Borio C., 2003, CESIFO ECON STUD, V49, P181
+   Brock WA, 2009, J ECON DYN CONTROL, V33, P1912, DOI 10.1016/j.jedc.2009.05.004
+   Caccioli F., 2013, PREPRINT
+   Caldarelli G, 2007, SCALE FREE NETWORKS
+   Caldarelli G, 2013, NAT PHYS, V9, P125, DOI 10.1038/nphys2580
+   Cimini G, 2015, SCI REP-UK, V5, DOI 10.1038/srep15758
+   Cimini G, 2015, PHYS REV E, V92, DOI 10.1103/PhysRevE.92.040802
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Cornell B, 2013, J PORTFOLIO MANAGE, V39, P32, DOI 10.3905/jpm.2013.39.3.032
+   Crosbie P. J., 2003, WORKING PAPER
+   CUTLER DM, 1989, J PORTFOLIO MANAGE, V15, P4, DOI 10.3905/jpm.1989.409212
+   Danielsson J., 2013, QUANTIFYING SYSTEMIC, P73
+   deMasi G., 2006, PHYS REV E, V74
+   Di G. Iasio, 2013, 52141 U LIB MUN
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   European Central Bank, 2014, TECHNICAL REPORT
+   Fink K., 2014, PRICE INTERCONNECTED
+   Follmer H., 2011, STOCHASTIC FINANCE I
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Geanakoplos J, 2012, AM ECON REV, V102, P53, DOI 10.1257/aer.102.3.53
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Halaj G, 2015, QUANT FINANC, V15, P653, DOI 10.1080/14697688.2014.968357
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Huang XQ, 2013, SCI REP-UK, V3, DOI 10.1038/srep01219
+   Hurd T. R., 2011, SOCIAL SCI RES NETWO
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Kolb R. W., 2010, LESSONS FINANCIAL CR
+   Krugman P., 1991, RISK EC CRISIS, P85
+   Loepfe L, 2013, PLOS ONE, V8, DOI 10.1371/journal.pone.0077526
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Martinez-Jaramillo S., 2012, J ECON DYN CONTROL, V40, P242
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   McNeil A. J., 2010, QUANTITATIVE RISK MA
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Miranda R., 2013, TECHNICAL REPORT
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Montagna M., 2014, 1937 KIEL I WORLD EC
+   Musmeci N, 2013, J STAT PHYS, V151, P720, DOI 10.1007/s10955-013-0720-1
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Patzelt F, 2013, SCI REP-UK, V3, DOI 10.1038/srep02784
+   Poledna S., 2014, PREPRINT
+   Puliga M, 2014, SCI REP-UK, V4, DOI 10.1038/srep06822
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Roukny T., 2014, 22 DTSCH BUND
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   SAVAGE IR, 1960, ECONOMETRICA, V28, P551, DOI 10.2307/1910131
+   Squartini T, 2013, SCI REP-UK, V3, DOI 10.1038/srep03357
+   Stiglitz JE, 2010, AM ECON REV, V100, P388, DOI 10.1257/aer.100.2.388
+   Tabak B.M., 2013, WORKING PAPER
+   Tasca P., 2013, 45156 MPRA
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+NR 65
+TC 14
+Z9 15
+U1 2
+U2 7
+PU WALTER DE GRUYTER GMBH
+PI BERLIN
+PA GENTHINER STRASSE 13, D-10785 BERLIN, GERMANY
+SN 2193-1402
+EI 2196-7040
+J9 STATIST RISK MODEL
+JI Statist. Risk Model.
+PD DEC
+PY 2016
+VL 33
+IS 3-4
+SI SI
+BP 117
+EP 138
+DI 10.1515/strm-2015-0005
+PG 22
+WC Statistics & Probability
+SC Mathematics
+GA EG8FI
+UT WOS:000391290900003
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Giordana, GA
+AF Giordana, Gaston Andres
+TI WELFARE AND STOCHASTIC DOMINANCE FOR THE MEASUREMENT OF BANKS' DOMESTIC
+   SYSTEMIC IMPORTANCE: ANALYTICAL FRAMEWORK AND APPLICATION
+SO INTERNATIONAL JOURNAL OF FINANCE & ECONOMICS
+LA English
+DT Article
+DE systemically important banks; banking regulation; stochastic dominance;
+   welfare; Basel III; Luxembourg
+ID POVERTY
+AB This paper proposes an analytical framework to rank alternative measures of banks' systemic importance in terms of their welfare impact. The advantage of our approach is that it does not require knowing the exact mathematical form of the underlying welfare function in the absence of a widely accepted model of systemic risk. The framework consists of two pillars. First, economic welfare is linked to the measured degree of systemic importance of banks. Second, the association between the concepts of stochastic and welfare dominance of distributions of the measured degree of systemic importance is defined. Then, the alternative measures can be welfare-ranked by just establishing stochastic dominance relationships. An illustration is presented using Luxembourg data. Copyright (C) 2015 John Wiley & Sons, Ltd
+C1 [Giordana, Gaston Andres] Banque Cent Luxembourg, Luxembourg, Luxembourg.
+RP Giordana, GA (reprint author), Banque Cent Luxembourg, Luxembourg, Luxembourg.
+EM gaston_andres.giordana@bcl.lu
+OI Giordana, Gaston/0000-0003-3254-1787
+CR Adrian T., 2011, W17454 NAT BUR EC RE
+   ATKINSON AB, 1987, ECONOMETRICA, V55, P749, DOI 10.2307/1911028
+   BCBS, 2011, GLOB SYST IMP BANKS
+   BCBS, 2012, FRAM DEAL DOM SYST I
+   BLACKORBY C, 1982, INT ECON REV, V23, P249, DOI 10.2307/2526436
+   Davidson R, 2000, ECONOMETRICA, V68, P1435, DOI 10.1111/1468-0262.00167
+   Decancq K, 2013, ECONOMET REV, V32, P7, DOI 10.1080/07474938.2012.690641
+   Drehmann Mathias, 2011, BIS Q REV, P25
+   DUCLOS JY, 2004, J PUBLIC ECON THEORY, V6, P145
+   Foster J. E., 2005, J HUMAN DEV CAPABILI, V6, P5, DOI DOI 10.1080/1464988052000342220
+   FOSTER JE, 1988, SOC CHOICE WELFARE, V5, P179, DOI 10.1007/BF00735760
+   FOSTER JE, 1988, ECONOMETRICA, V56, P173, DOI 10.2307/1911846
+   Freixas X, 2015, SYSTEMIC RISK, CRISES, AND MACROPRUDENTIAL REGULATION
+   Giordana GA, 2013, FINANCIAL STABILITY, P136
+   Jenkins SP, 1997, OXFORD ECON PAP, V49, P317, DOI 10.1093/oxfordjournals.oep.a028611
+   KOLM SC, 1976, J ECON THEORY, V13, P82, DOI 10.1016/0022-0531(76)90068-5
+   MAASOUMI E, 1986, ECONOMETRICA, V54, P991, DOI 10.2307/1912849
+   Moore K, 2013, 45589 MPRA U LIB MUN
+   Segoviano M. A., 2009, WP094 IMF
+   Seth S, 2013, J ECON INEQUAL, V11, P133, DOI 10.1007/s10888-011-9210-3
+   SHORROCKS AF, 1983, ECONOMICA, V50, P3, DOI 10.2307/2554117
+   SHORROCKS AF, 1987, REV ECON STUD, V54, P485, DOI 10.2307/2297571
+   Tarashev N, 2010, 308 BIS
+   Tarashev Nicola, 2009, BIS Q REV, P75
+   WOLAK FA, 1989, J ECONOMETRICS, V41, P205, DOI 10.1016/0304-4076(89)90094-8
+   Xisong J, 2013, 82 BANQ CENTR LUX
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 27
+TC 1
+Z9 1
+U1 0
+U2 5
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1076-9307
+EI 1099-1158
+J9 INT J FINANC ECON
+JI Int. J. Financ. Econ.
+PD APR
+PY 2016
+VL 21
+IS 2
+BP 192
+EP 208
+DI 10.1002/ijfe.1542
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA DI8RY
+UT WOS:000373770100006
+DA 2019-12-28
+ER
+
+PT J
+AU Acharya, VV
+   Thakor, AV
+AF Acharya, Viral V.
+   Thakor, Anjan V.
+TI The dark side of liquidity creation: Leverage and systemic risk
+SO JOURNAL OF FINANCIAL INTERMEDIATION
+LA English
+DT Article
+DE Micro-prudential regulation; Macro-prudential regulation; Market
+   discipline; Contagion; Lender of last resort; Bailout; Capital
+   requirements
+ID MANAGERIAL AUTONOMY; FINANCIAL CRISES; BANK REGULATION; MORAL HAZARD;
+   INFORMATION; POLICY
+AB We consider a model in which the threat of bank liquidations by creditors as well as equity-based compensation incentives both discipline bankers, but with different consequences. Greater use of equity leads to lower ex-ante bank liquidity, whereas greater use of debt leads to a higher probability of inefficient bank liquidation. The bank's privately-optimal capital structure trades off these two costs. With uncertainty about aggregate risk, bank creditors learn from other banks' liquidation decisions. Such inference can lead to contagious liquidations, some of which are inefficient; this is a negative externality that is ignored in privately-optimal bank capital structures. Thus, under plausible conditions, banks choose excessive leverage relative to the socially optimal level, providing a rationale for bank capital regulation. While a blanket regulatory forbearance policy can eliminate contagion, it also eliminates all market discipline. However, a regulator generating its own information about aggregate risk, rather than relying on market signals, can restore efficiency and market discipline by intervening selectively. (C) 2016 Published by Elsevier Inc.
+C1 [Acharya, Viral V.] NYU, Stern Sch Business, Econ, 44 West Fourth St,P-84, New York, NY 10012 USA.
+   [Acharya, Viral V.] NBER, 44 West Fourth St,P-84, New York, NY 10012 USA.
+   [Acharya, Viral V.] CEPR, 44 West Fourth St,P-84, New York, NY 10012 USA.
+   [Thakor, Anjan V.] Washington Univ, Olin Business Sch, Finance, One Brookings Dr, St Louis, MO 63130 USA.
+   [Thakor, Anjan V.] European Corp Governance Inst, One Brookings Dr, St Louis, MO 63130 USA.
+RP Acharya, VV (reprint author), NYU, Stern Sch Business, Econ, 44 West Fourth St,P-84, New York, NY 10012 USA.; Acharya, VV (reprint author), NBER, 44 West Fourth St,P-84, New York, NY 10012 USA.; Acharya, VV (reprint author), CEPR, 44 West Fourth St,P-84, New York, NY 10012 USA.
+EM vacharya@stern.nyu.edu; thakor@wustl.edu
+CR Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2016, REV CORP FINANC STUD, V5, P36, DOI 10.1093/rcfs/cfv006
+   Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Acharya VV, 2011, J FINANC, V66, P99, DOI 10.1111/j.1540-6261.2010.01627.x
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya Viral V., 2013, 16896 NBER
+   Admati A. R., 2013, FALLACIES IRRELEVANT
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Bagehot W., 1873, LOMBARD STREET
+   Bhattacharya S, 1998, J MONEY CREDIT BANK, V30, P745, DOI 10.2307/2601127
+   Boot AWA, 2008, J FINANC, V63, P2013, DOI 10.1111/j.1540-6261.2008.01380.x
+   Boot AWA, 2011, REV FINANC STUD, V24, P3434, DOI 10.1093/rfs/hhr045
+   Boot AWA, 2006, J FINANC, V61, P803, DOI 10.1111/j.1540-6261.2006.00855.x
+   Brunnermeier Markus, 2016, I THEORY MONEY
+   BUSER SA, 1981, J FINANC, V36, P51, DOI 10.2307/2327463
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Calomiris CW, 2016, J FINANC INTERMED, V28, P48, DOI 10.1016/j.jfi.2016.09.002
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   CHARI VV, 1988, J FINANC, V43, P749, DOI 10.2307/2328198
+   Dewatripont M., 1994, PRUDENTIAL REGULATIO
+   Diamond DW, 2012, J POLIT ECON, V120, P552, DOI 10.1086/666669
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Garmaise MJ, 2006, J FINANC, V61, P495, DOI 10.1111/j.1540-6261.2006.00847.x
+   Goel AM, 2014, J FINANC INTERMED, V23, P471, DOI 10.1016/j.jfi.2014.08.002
+   Goodhart C. A. E., 1975, PAPERS MONETARY EC
+   HART O, 1995, AM ECON REV, V85, P567
+   Hart O., 2009, NEW CAPITAL REGULATI
+   Huang R, 2011, J FINANC INTERMED, V20, P248, DOI 10.1016/j.jfi.2010.06.003
+   JENSEN MC, 1986, AM ECON REV, V76, P323
+   Kane EJ, 2010, ATLANTIC ECON J, V38, P251, DOI 10.1007/s11293-010-9233-3
+   LUCAS RE, 1976, CARN ROCH CONF SERIE, V1, P19, DOI 10.1016/S0167-2231(76)80003-6
+   Mehran H, 2011, REV FINANC STUD, V24, P1019, DOI 10.1093/rfs/hhq022
+   Merton R.C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   Mian A, 2011, AM ECON REV, V101, P2132, DOI 10.1257/aer.101.5.2132
+   RAMAKRISHNAN RTS, 1984, REV ECON STUD, V51, P415, DOI 10.2307/2297431
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   Thakor A, 2015, AM ECON REV, V105, P305, DOI 10.1257/aer.p20151090
+   Thakor AV, 2016, J FINANC INTERMED, V25, P1, DOI 10.1016/j.jfi.2015.06.003
+   Thakor AV, 2012, J FINANC ECON, V103, P130, DOI 10.1016/j.jfineco.2011.03.026
+   Van den Steen E, 2010, AM ECON REV, V100, P466, DOI 10.1257/aer.100.1.466
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Winton A, 1997, J FINANC INTERMED, V6, P307, DOI 10.1006/jfin.1997.0226
+NR 46
+TC 8
+Z9 8
+U1 1
+U2 30
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1042-9573
+EI 1096-0473
+J9 J FINANC INTERMED
+JI J. Financ. Intermed.
+PD OCT
+PY 2016
+VL 28
+SI SI
+BP 4
+EP 21
+DI 10.1016/j.jfi.2016.08.004
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA EF8XR
+UT WOS:000390615800002
+DA 2019-12-27
+ER
+
+PT J
+AU Engle, RF
+AF Engle, Robert F.
+TI Dynamic Conditional Beta
+SO JOURNAL OF FINANCIAL ECONOMETRICS
+LA English
+DT Article
+DE DCC; GARCH; multivariate GARCH; multi-factor asset pricing; non-nested
+   tests; SRISK; systemic risk; time varying parameters
+ID ASSET PRICING MODEL; TESTS; NEWS
+AB Dynamic conditional beta is an approach to estimating regressions with time varying parameters. The conditional covariance matrices of the exogenous and dependent variable for each time period are used to formulate the dynamic beta. Joint estimation of the covariance matrices and other regression parameters is developed. Tests of the hypothesis that betas are constant are non-nested tests and several approaches are developed including a novel nested model. The methodology is applied to industry multifactor asset pricing and to global systemic risk estimation with non-synchronous prices.
+C1 [Engle, Robert F.] NYU, Stern Sch Business, Volatil Inst, New York, NY 10012 USA.
+RP Engle, RF (reprint author), NYU, Stern Sch Business, Volatil Inst, New York, NY 10012 USA.
+EM rengle@stern.nyu.edu
+FU Sloan FoundationAlfred P. Sloan Foundation; Armellino Foundation;
+   NASDAQ; Deutsche Bank; Blackrock; A.I.G.
+FX He thanks many people for comments and suggestions on this paper,
+   particularly participants at Oxford's Launch of EMoD, SoFiE Singapore,
+   EC<SUP>2</SUP>, the San Francisco FED, and the University of Chicago
+   Booth Seminar. Particular thanks go to Viral Acharya, Turan Bali, Niel
+   Ericsson, Gene Fama, Eric Ghysels, Jim Hamilton, David Hendry, Alain
+   Monfort, Matt Richardson, Jeff Wooldridge, Rob Capellini, Hahn Le, and
+   Emil Siriwardane. Generous support from the Sloan Foundation, the
+   Armellino Foundation, NASDAQ, Deutsche Bank, Blackrock, and A.I.G. are
+   gratefully acknowledged.
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2011, WILEY FINANC SER, P1
+   Acharya VV, 2010, TECHNICAL REPORT
+   Andersen TG, 2006, ADV ECONOMETRICS, V20, P1, DOI 10.1016/S0731-9053(05)20020-8
+   ATKINSON AC, 1970, J ROY STAT SOC B, V32, P323
+   Bali Turan, 2012, DYNAMIC CONDIT UNPUB
+   Bali TG, 2010, J MONETARY ECON, V57, P377, DOI 10.1016/j.jmoneco.2010.03.002
+   Bera AK, 1993, J ECON SURV, V7, P305, DOI DOI 10.1111/J.1467-6419.1993.TB00170.X
+   Beta A.K., 1997, SANKHYA, V59, P346
+   BOLLERSLEV T, 1988, J POLIT ECON, V96, P116, DOI 10.1086/261527
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   Bollerslev T., 2004, HDB ECONOMETRICS, VIV, P2961
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   BRAUN PA, 1995, J FINANC, V50, P1575, DOI 10.2307/2329327
+   Brownlees C.T., 2016, REV FINANCI IN PRESS
+   Burns P, 1998, J DERIV, V5, P7
+   CECCHETTI SG, 1988, REV ECON STAT, V70, P623, DOI 10.2307/1935825
+   Cox D. R., 1961, P 4 BERK S MATH STAT, V1, P105
+   COX DR, 1962, J ROY STAT SOC B, V24, P406
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R., 2014, ESSAYS NONLINEAR TIM, P269
+   ENGLE RF, 1983, ECONOMETRICA, V51, P277, DOI 10.2307/1911990
+   Engle RF, 2009, ECON INST LECT SER, P1
+   Fama EF, 2004, J ECON PERSPECT, V18, P25, DOI 10.1257/0895330042162430
+   FAMA EF, 1992, J FINANC, V47, P427, DOI 10.2307/2329112
+   French K., 2014, CURRENT RES RETURNS
+   KRONER KF, 1993, J FINANC QUANT ANAL, V28, P535, DOI 10.2307/2331164
+   Lien D, 2002, J ECON SURV, V16, P357, DOI 10.1111/1467-6419.00172
+   PAGAN A, 1984, INT ECON REV, V25, P221, DOI 10.2307/2648877
+   Pakel C, 2014, FITTING VAST D UNPUB
+   Patton AJ, 2012, REV FINANC STUD, V25, P2789, DOI 10.1093/rfs/hhs073
+   Rivers D., 2002, ECONOMET J, V5, P1, DOI DOI 10.1111/1368-423X.T01-1-00071
+   Tse YK, 2002, J BUS ECON STAT, V20, P351, DOI 10.1198/073500102288618496
+   VUONG QH, 1989, ECONOMETRICA, V57, P307, DOI 10.2307/1912557
+   Wooldridge J.M., 2002, ECONOMETRIC ANAL CRO
+NR 35
+TC 9
+Z9 10
+U1 3
+U2 14
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1479-8409
+EI 1479-8417
+J9 J FINANC ECONOMET
+JI J. Financ. Econom.
+PD FAL
+PY 2016
+VL 14
+IS 4
+BP 643
+EP 667
+DI 10.1093/jjfinec/nbw006
+PG 25
+WC Business, Finance; Economics
+SC Business & Economics
+GA DY7YL
+UT WOS:000385345100001
+DA 2019-12-28
+ER
+
+PT S
+AU Calomiris, CW
+   Jaremski, M
+AF Calomiris, Charles W.
+   Jaremski, Matthew
+BE Lo, AW
+   Merton, RC
+TI Deposit Insurance: Theories and Facts
+SO ANNUAL REVIEW OF FINANCIAL ECONOMICS, VOL 8
+SE Annual Review of Financial Economics
+LA English
+DT Article; Book Chapter
+DE market discipline; political economy; mortgage lending
+ID MARKET DISCIPLINE; FINANCIAL INTERMEDIATION; BANK RISK; COMPETITION;
+   PANICS; IMPACT; RUNS
+AB Economic theories posit that bank liability insurance is designed to serve the public interest by mitigating systemic risk in the banking system through the reduction of liquidity risk. Political theories, however, see liability insurance as serving the private interests of banks, bank borrowers, and depositors, potentially at the expense of the public interest. Empirical evidence-both historical and contemporary-supports the private-interest approach, as liability insurance has been associated with increases, rather than decreases, in systemic risk. Exceptions to this rule are rare and reflect design features that prevent moral hazard and adverse selection. Prudential regulation of insured banks has generally not been a very effective tool in limiting the systemic risk increases associated with liability insurance. This likely reflects purposeful failures in regulation; if liability insurance is motivated by private interests, then there would be little point to removing the subsidies it creates through strict regulation. The same logic explains why more effective policies for addressing systemic risk are not employed in place of liability insurance. The politics of liability insurance thus should not be narrowly construed to encompass only the vested interests of bankers. Indeed, in many countries, liability insurance has been installed as a pass-through subsidy targeted to particular classes of bank borrowers.
+C1 [Calomiris, Charles W.] Columbia Univ, Columbia Business Sch, New York, NY 10027 USA.
+   [Calomiris, Charles W.; Jaremski, Matthew] Natl Bur Econ Res, Cambridge, MA 02138 USA.
+   [Jaremski, Matthew] Colgate Univ, Dept Econ, Hamilton, NY 13346 USA.
+RP Calomiris, CW (reprint author), Columbia Univ, Columbia Business Sch, New York, NY 10027 USA.; Calomiris, CW (reprint author), Natl Bur Econ Res, Cambridge, MA 02138 USA.
+EM cc374@columbia.edu; mjaremski@colgate.edu
+CR Acharya V, 2016, J FINANC IN IN PRESS
+   Adrian T, 2009, 360 FED RES BANK
+   Anginer D, 2014, J BANK FINANC, V48, P312, DOI 10.1016/j.jbankfin.2013.09.013
+   Bagehot W., 1873, LOMBARD STREET DESCR
+   Barth J.R., 2006, RETHINKING BANK REGU
+   BECKER GS, 1983, Q J ECON, V98, P371, DOI 10.2307/1886017
+   Bergbrant M, 2014, DOES DEPOSIT INSURAN
+   Bodenhorn H., 2007, POLITICAL EC REFORM
+   Bodenhorn H., 2000, HIST BANKING ANTEBEL
+   Bodenhorn Howard, 2003, STATE BANKING EARLY
+   Bodenhorn Howard, 2006, CORRUPTION REFORM LE, P231
+   BREWER E, 1995, J FINANC SERV RES, V9, P65, DOI 10.1007/BF01051964
+   Brown CO, 2005, Q J ECON, V120, P1413, DOI 10.1162/003355305775097506
+   Calomiris C., 1994, REGULATED EC HIST AP, P145
+   Calomiris C, 2014, FRAGILE DESIGN POLIT
+   Calomiris C, 2000, US BANK DEREGULATION
+   Calomiris C.W., 2001, PRUDENTIAL SUPERVISI, P147
+   Calomiris C.W., 1989, EC PERSPECTIVES, V13, P10
+   Calomiris CW, 2016, J FINANC INTERMED, V28, P48, DOI 10.1016/j.jfi.2016.09.002
+   Calomiris CW, 2016, J FINANC ECON, V119, P512, DOI 10.1016/j.jfineco.2016.01.025
+   Calomiris CW, 2015, J ECON PERSPECT, V29, P53, DOI 10.1257/jep.29.2.53
+   Calomiris CW, 2013, EXPLOR ECON HIST, V50, P526, DOI 10.1016/j.eeh.2013.07.006
+   Calomiris CW, 2010, OXFORD REV ECON POL, V26, P540, DOI 10.1093/oxrep/grq020
+   CALOMIRIS CW, 1990, J ECON HIST, V50, P283, DOI 10.1017/S0022050700036433
+   CALOMIRIS CW, 1991, NAT BUR EC, P109
+   Calomiris CW, 2004, J BUS, V77, P421, DOI 10.1086/386525
+   Calomiris CW, 2003, AM ECON REV, V93, P1615, DOI 10.1257/000282803322655473
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   CALOMIRIS CW, 1991, J ECON HIST, V51, P807, DOI 10.1017/S0022050700040122
+   CALOMIRIS CW, 1988, OXFORD ECON PAP, V40, P719, DOI 10.1093/oxfordjournals.oep.a041884
+   Calomiris CW, 2008, POLITICAL EC BANK EN
+   Calomiris CW, 1992, IF TEXAS WERE CHILE, P237
+   Calomiris CW, 2016, SPREAD DEPOSIT INSUR
+   Calomiris CW, 2016, 535 BIS
+   Calomiris CW, 2015, 1439 COL U COL BUS S
+   Calomiris CW, 2016, 1624 COL U COL BUS S
+   Carr J, 1994, ENSURING FAILURE FIN
+   Chernykh L, 2011, J BANK FINANC, V35, P388, DOI 10.1016/j.jbankfin.2010.08.014
+   Coase R.H., 1960, PROBLEM SOCIAL COST
+   Cooke T, 1910, Q J ECON, V24, P327, DOI 10.2307/1883561
+   Cournede B, 2015, 1223 OECD EC DEP
+   Cull R, 2005, J MONEY CREDIT BANK, V37, P43, DOI 10.1353/mcb.2005.0004
+   Dang TV, 2014, 20255 NBER MA
+   Demirguc-Kunt A, 2004, J MONETARY ECON, V51, P375, DOI 10.1016/j.jmoneco.2003.04.001
+   Demirguc-Kunt A, 2002, J MONETARY ECON, V49, P1373, DOI 10.1016/S0304-3932(02)00171-X
+   Demirguc-Kunt A., 2014, 14118 IMF
+   Demirguc-Kunt A, 2008, J FINANC INTERMED, V17, P407, DOI 10.1016/j.jfi.2007.03.009
+   DemirgucKunt A, 2008, DEPOSIT INSURANCE AROUND THE WORLD: ISSUES OF DESIGN AND IMPLEMENTATION, P1
+   Dewenter KL, 2014, I DEPOSIT INSURANCE
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2009, 14925 NBER
+   Economides N, 1996, J LAW ECON, V39, P667, DOI 10.1086/467362
+   Fleitas S, 2015, FORBEARANCE CONTRACT
+   FOLKERTSLANDAU D, 1998, FRAMEWORK FINANCIAL
+   Garcia G., 1999, 9954 IMF
+   Golembe C, 1958, INSURANCE BANK OBLIG
+   Goodspeed T., 2015, SKIN GAME LIABILITY
+   GORTON G, 1990, J FINANC, V45, P49, DOI 10.2307/2328809
+   Gropp R, 2014, REV FINANC, V18, P457, DOI 10.1093/rof/rft014
+   Haber S, 2005, J BANK FINANC, V29, P2325, DOI 10.1016/j.jbankfin.2005.03.017
+   Haber S, 2008, DEPOSIT INSURANCE AROUND THE WORLD: ISSUES OF DESIGN AND IMPLEMENTATION, P219
+   Holmstrom B, 1997, Q J ECON, V112, P663, DOI 10.1162/003355397555316
+   Honohan P, 2008, DEPOSIT INSURANCE AROUND THE WORLD: ISSUES OF DESIGN AND IMPLEMENTATION, P335
+   Ioannidou VP, 2010, J FINANC INTERMED, V19, P95, DOI 10.1016/j.jfi.2009.01.002
+   JACKLIN CJ, 1988, J POLIT ECON, V96, P568, DOI 10.1086/261552
+   JACKLIN CJ, 1987, CONTRACTUAL ARRANGEM, P26
+   James J., 1978, MONEY CAPITAL MARKET
+   Jorda O, 2015, J MONETARY ECON, V76, P1, DOI DOI 10.1016/j.jmoneco.2015.08.005
+   Jorda O, 2014, 20501 NBER
+   Kane E, 2000, J MONEY CREDIT BANK, V30, P51
+   Karas A, 2013, J MONEY CREDIT BANK, V45, P179, DOI 10.1111/j.1538-4616.2012.00566.x
+   King RG, 1997, J MONETARY ECON, V32, P513
+   Klingebiel D, 2005, SYSTEMIC FINANCIAL C, P25
+   KRASA S, 1992, J ECON THEORY, V57, P197, DOI 10.1016/S0022-0531(05)80048-1
+   Kroszner R., 2001, PRUDENTIAL SUPERVISI, P233
+   Kroszner RS, 1999, Q J ECON, V114, P1437, DOI 10.1162/003355399556223
+   Laeven L, 2002, WORLD BANK ECON REV, V16, P109, DOI 10.1093/wber/16.1.109
+   LAEVEN L, 2004, J FINANCIAL SERVICES, V26, P201, DOI DOI 10.1023/B:FINA.0000040049.53563.E1
+   Laeven L., 2012, 12163 IMF
+   Levine R, 1997, J ECON LIT, V35, P688
+   Martinez-Peria M. S., 2001, J FINANC, V56, P1029
+   Merton R. C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   Mitchener K, 2015, CURRENT FEDERAL RESE, P217
+   Nier E, 2006, J FINANC INTERMED, V15, P332, DOI 10.1016/j.jfi.2006.03.001
+   Peltzman S., 1976, J LAW ECON, V19, P109
+   Prins N, 2009, IT TAKES PILLAGE BAI
+   Robb Thomas Bruce, 1921, GUARANTY BANK DEPOSI
+   Schwartz AJ, 1947, J POLIT ECON, V55, P417, DOI 10.1086/256580
+   SCHWEIKART L, 1987, BANKING AM S AGE JAC
+   STIGLER GJ, 1971, BELL J ECON, V2, P3, DOI 10.2307/3003160
+   Wagster JD, 2007, J MONEY CREDIT BANK, V39, P1651, DOI 10.1111/j.1538-4616.2007.00082.x
+   Warburton C., 1959, EPOSIT INSURANCE 8 S
+   WHITE EN, 1981, J ECON HIST, V41, P537, DOI 10.1017/S0022050700044326
+   WHITE EN, 1985, SOUTHERN ECON J, V51, P1084, DOI 10.2307/1058379
+   White Eugene N., 2014, HOUSING MORTGAGE MAR
+   Yan X, 2014, INT REV FINANC, V14, P431, DOI 10.1111/irfi.12028
+NR 98
+TC 9
+Z9 9
+U1 0
+U2 14
+PU ANNUAL REVIEWS
+PI PALO ALTO
+PA 4139 EL CAMINO WAY, PO BOX 10139, PALO ALTO, CA 94303-0897 USA
+SN 1941-1367
+BN 978-0-8243-4808-3
+J9 ANNU REV FINANC ECON
+JI Annu. Rev. Financ. Econ.
+PY 2016
+VL 8
+BP 97
+EP 120
+DI 10.1146/annurev-financial-111914-041923
+PG 24
+WC Business, Finance; Economics
+SC Business & Economics
+GA BG5NL
+UT WOS:000389584100005
+OA Green Published
+DA 2019-12-28
+ER

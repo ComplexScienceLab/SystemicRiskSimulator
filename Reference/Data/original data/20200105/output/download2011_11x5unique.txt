@@ -1,0 +1,434 @@
+
+PT J
+AU Hua, ZS
+   Sun, YH
+   Xu, XY
+AF Hua, Zhongsheng
+   Sun, Yanhong
+   Xu, Xiaoyan
+TI Operational causes of bankruptcy propagation in supply chain
+SO DECISION SUPPORT SYSTEMS
+LA English
+DT Article
+DE Supply chain; Multi-agent systems; Bankruptcy propagation; Operational
+   decision; Financial decision
+ID BUSINESS FLUCTUATIONS; COMPETING RETAILERS; FINANCIAL DISTRESS;
+   CONTAGION; RISK; COORDINATION; MANAGEMENT; NETWORKS; DESIGN
+AB With the increasing interdependence among supply chain members, bankruptcy of a supply chain member may be caused by operational decisions of other members. To investigate how bankruptcy occurs and propagates in supply chain networks, we build a multi-agent simulation model for a two-stage supply chain that consists of multiple upstream manufacturers and multiple downstream retailers. Based on the developed simulation model, we study impacts of various operational parameters and decisions, such as horizontal competition among retailers, order allocation strategies of retailers, wholesale price of manufacturers, characteristics of market demand and number of retailers, on bankruptcy propagation. Since many operational decisions of a firm are made under financial constraints, we also investigate the linkage between firm's operational risks and financial decisions (e.g., the maximal risk of cash flow that a member is willing to take, and the up-front payment proportion of retailers in a two-period payment policy). Experimental results reveal that operational interactions between supply chain members and operational decisions made by supply chain members are important causes of bankruptcy propagation, but impacts of these operational parameters and decisions depend on financial decisions. These observations indicate that supply chain members can moderately hedge their operational risk through financial decisions. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [Hua, Zhongsheng; Sun, Yanhong; Xu, Xiaoyan] Univ Sci & Technol China, Sch Management, Hefei 230026, Anhui, Peoples R China.
+RP Hua, ZS (reprint author), Univ Sci & Technol China, Sch Management, Hefei 230026, Anhui, Peoples R China.
+EM zshua@ustc.edu.cn; yahosun@mail.ustc.edu.cn; xxy204@ustc.edu.cn
+OI Sun, Yanhong/0000-0002-2038-0026
+FU NSFCNational Natural Science Foundation of China [70725001, 70821001,
+   70772025, 71090401/71090400]
+FX The authors would like to thank the anonymous referees and the editors
+   for their insightful comments and suggestions, which significantly
+   improved the paper. This research was supported by NSFC under Grants
+   Nos. 70725001, 70821001, 70772025 and NSFC major program (Grant No.
+   71090401/71090400).
+CR Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Andrade G, 1998, J FINANC, V53, P1443, DOI 10.1111/0022-1082.00062
+   Babich V, 2004, MANAGE SCI, V50, P935, DOI 10.1287/mnsc.1040.0252
+   Babich V, 2007, M&SOM-MANUF SERV OP, V9, P123, DOI 10.1287/msom.1060.0122
+   Battiston S, 2007, J ECON DYN CONTROL, V31, P2061, DOI 10.1016/j.jedc.2007.01.004
+   Benjaafar S, 2007, MANAGE SCI, V53, P241, DOI 10.1287/mnsc.1060.0612
+   Bernstein F, 2005, MANAGE SCI, V51, P18, DOI 10.1287/mnsc.1040.0218
+   Bernstein F, 2003, OPER RES, V51, P409, DOI 10.1287/opre.51.3.409.14957
+   BOISSAY F, 2006, CREDIT CHAINS PROPAG, V573
+   Bradley D., 2002, TRADE CREDIT S UNPUB
+   Dada M, 2007, M&SOM-MANUF SERV OP, V9, P9, DOI 10.1287/msom.1060.0128
+   DARYL C, 2004, APPL ECON, V36, P2461
+   Fang K. T., 2001, ORTHOGONAL UNIFORM E
+   Fujiwara Y, 2008, ADV COMPLEX SYST, V11, P703, DOI 10.1142/S0219525908001994
+   Gatti DD, 2005, J ECON BEHAV ORGAN, V56, P489, DOI 10.1016/j.jebo.2003.10.012
+   GATTI DD, 2008, FINANCIALLY CONSTRAI
+   Gatti DD, 2006, PHYSICA A, V370, P68, DOI 10.1016/j.physa.2006.04.115
+   Gestel T. V., 2005, EUR J OPER RES, V172, P979, DOI DOI 10.1016/J.EJOR.2004.11.009
+   Gottlich S, 2010, EUR J OPER RES, V202, P456, DOI 10.1016/j.ejor.2009.05.028
+   Helliar C.V., 2002, J INT ACCOUNTING AUD, V11, P165
+   Hertzel MG, 2008, J FINANC ECON, V87, P374, DOI 10.1016/j.jfineco.2007.01.005
+   Kiyotaki N, 2002, AM ECON REV, V92, P46, DOI 10.1257/000282802320188989
+   LEE HL, 1993, OPER RES, V41, P835, DOI 10.1287/opre.41.5.835
+   Leung YW, 2000, IEEE T SYST MAN CY C, V30, P293, DOI 10.1109/5326.885111
+   Li LD, 2008, MANAGE SCI, V54, P1467, DOI 10.1287/mnsc.1070.0851
+   Liang WY, 2006, DECIS SUPPORT SYST, V42, P390, DOI 10.1016/j.dss.2005.01.009
+   Lin F, 2000, IEEE T SYST MAN CY A, V30, P380, DOI 10.1109/3468.844361
+   Lin FR, 2008, DECIS SUPPORT SYST, V45, P795, DOI 10.1016/j.dss.2008.02.001
+   Nahmias S., 2005, PRODUCTION OPERATION
+   Parunak HV, 1998, LECT NOTES ARTIF INT, V1534, P10
+   Purnanandam A, 2008, J FINANC ECON, V87, P706, DOI 10.1016/j.jfineco.2007.04.003
+   Rassenti S, 2000, J ECON BEHAV ORGAN, V41, P117, DOI 10.1016/S0167-2681(99)00090-6
+   Rijckeghem C. V., 2001, J INT ECON, V54, P293
+   *SCC, SAP SUPPL CHAIN PERF
+   Tsai CY, 2008, DECIS SUPPORT SYST, V44, P1031, DOI 10.1016/j.dss.2007.12.006
+   Valluri A, 2005, DECIS SUPPORT SYST, V39, P219, DOI 10.1016/j.dss.2003.10.008
+   Xu XY, 2010, IEEE T SYST MAN CY C, V40, P201, DOI 10.1109/TSMCC.2009.2031092
+   2010, UNIFORM DESIGN
+NR 39
+TC 23
+Z9 24
+U1 4
+U2 36
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-9236
+J9 DECIS SUPPORT SYST
+JI Decis. Support Syst.
+PD JUN
+PY 2011
+VL 51
+IS 3
+BP 671
+EP 681
+DI 10.1016/j.dss.2011.03.007
+PG 11
+WC Computer Science, Artificial Intelligence; Computer Science, Information
+   Systems; Operations Research & Management Science
+SC Computer Science; Operations Research & Management Science
+GA 775JD
+UT WOS:000291454700029
+DA 2019-12-27
+ER
+
+PT J
+AU Nijskens, R
+   Wagner, W
+AF Nijskens, Rob
+   Wagner, Wolf
+TI Credit risk transfer activities and systemic risk: How banks became less
+   risky individually but posed greater risks to the financial system at
+   the same time
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Securitization; Credit derivatives; Systemic risk; Subprime crisis
+ID DERIVATIVES; SECURITIZATION; INVESTMENT; MANAGEMENT; POLICIES
+AB A main cause of the crisis of 2007-2009 is the various ways through which banks have transferred credit risk in the financial system. We study the systematic risk of banks before the crisis, using two samples of banks respectively trading Credit Default Swaps (CDS) and issuing Collateralized Loan Obligations (CLOs). After their first usage of either risk transfer method, the share price beta of these banks increases significantly. This suggests the market anticipated the risks arising from these methods, long before the crisis. We additionally separate this beta effect into a volatility and a market correlation component. Quite strikingly, this decomposition shows that the increase in the beta is solely due to an increase in banks' correlations. Thus, while banks may have shed their individual credit risk, they actually posed greater systemic risk. This creates a challenge for financial regulation, which has typically focused on individual institutions. (C) 2010 Elsevier B.V. All rights reserved.
+C1 [Wagner, Wolf] Tilburg Univ, TILEC, European Banking Ctr, NL-5000 LE Tilburg, Netherlands.
+   [Nijskens, Rob; Wagner, Wolf] Tilburg Univ, Dept Econ, NL-5000 LE Tilburg, Netherlands.
+RP Wagner, W (reprint author), Tilburg Univ, TILEC, European Banking Ctr, Postbus 90153, NL-5000 LE Tilburg, Netherlands.
+EM r.g.m.nijskens@uvt.nl; wagner@uvt.nl
+CR Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Adrian T., 2008, 348 FED RES BANK NEW
+   *BIS, 2004, CRED RISK TRANSF
+   Calmes C, 2010, J BANK FINANC, V34, P1719, DOI 10.1016/j.jbankfin.2010.03.017
+   Cardone-Riportella C, 2010, J BANK FINANC, V34, P2639, DOI 10.1016/j.jbankfin.2010.05.003
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Foos D, 2010, J BANK FINANC, V34, P2929, DOI 10.1016/j.jbankfin.2010.06.007
+   Franke G, 2007, RISKS FINANCIAL I
+   FROOT KA, 1993, J FINANC, V48, P1629, DOI 10.2307/2329062
+   Goderis B., 2007, 4 BANK FINL
+   Hansel D., 2007, DOES CREDIT SECURITI
+   Hirtle B, 2009, J FINANC INTERMED, V18, P125, DOI 10.1016/j.jfi.2008.08.001
+   IAIS, 2003, CRED RISK TRANSF INS
+   Instefjord N, 2005, J BANK FINANC, V29, P333, DOI 10.1016/j.jbankfin.2004.05.008
+   Jiangli W., 2008, P MAY, P377
+   Keys BJ, 2010, Q J ECON, V125, P307, DOI 10.1162/qjec.2010.125.1.307
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   MARSH IW, 2006, RES DISCUSSION PAPER, V31
+   MINTON BA, 2005, NBER WORKING PAPERS
+   Morrison AD, 2005, J BUS, V78, P621, DOI 10.1086/427641
+   Uhde A, 2010, J BANK FINANC, V34, P3061, DOI 10.1016/j.jbankfin.2010.07.012
+   Wagner W, 2008, J FINANC INTERMED, V17, P330, DOI 10.1016/j.jfi.2008.01.001
+   Wagner W, 2007, J BANK FINANC, V31, P121, DOI 10.1016/j.jbankfin.2005.07.019
+   Wagner W, 2009, INT J CENT BANK, V5, P75
+NR 24
+TC 56
+Z9 57
+U1 5
+U2 60
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JUN
+PY 2011
+VL 35
+IS 6
+BP 1391
+EP 1398
+DI 10.1016/j.jbankfin.2010.10.001
+PG 8
+WC Business, Finance; Economics
+SC Business & Economics
+GA 761TI
+UT WOS:000290423500005
+DA 2019-12-28
+ER
+
+PT J
+AU Chiesa, V
+   Frattini, F
+AF Chiesa, Vittorio
+   Frattini, Federico
+TI Commercializing Technological Innovation: Learning from Failures in
+   High-Tech Markets
+SO JOURNAL OF PRODUCT INNOVATION MANAGEMENT
+LA English
+DT Article
+ID LAUNCH STRATEGIES; SOCIAL CONTAGION; NETWORK EXTERNALITIES; PRODUCT
+   PERFORMANCE; DIFFUSION; INDUSTRIAL; CONSUMER; ADOPTION; SUCCESS;
+   PREFERENCES
+AB Commercialization is known to be a critical stage of the technological innovation process, mainly because of the high risks and costs that it entails. Despite this, many scholars consider it to be often the least well managed phase of the entire innovation process, and there is ample empirical evidence corroborating this belief. In high-tech markets, the difficulties encountered by firms in commercializing technological innovation are exacerbated by the volatility, interconnectedness, and proliferation of new technologies that characterize such markets. This is clearly evinced by the abundance of new high-tech products that fail on the market chiefly due to poor commercialization. Yet there is no clear understanding, in management theory and practice, of how commercialization decisions influence the market failure of new high-tech products.
+   Drawing on research in innovation management, diffusion of innovation, and marketing, this article shows how commercialization decisions can influence consumer acceptance of a new high-tech product in two major ways: (i) by affecting the extent to which the players in the innovation's adoption network support the new product; (ii) by affecting the post-purchase attitude early adopters develop toward the innovation, and hence the type of word-of-mouth (positive or negative) they disseminate among later adopters. Lack of support from the adoption network is found to be an especially critical cause of failure for systemic innovations, while a negative post-purchase attitude of early adopters is a more significant determinant of market failure for radical innovations.
+   There follows a historical analysis of eight innovations launched on consumer high-tech markets (Apple Newton, IBM PC-Junior, Tom Tom GO, Sony Walkman, 3DO Interactive Multiplayer, Sony MiniDisc, Palm Pilot, and Nintendo NES), which illustrates how commercialization decisions (i.e., timing, targeting and positioning, inter-firm relationships, product configuration, distribution, advertising, and pricing) can determine lack of support from the innovation's adoption network and a negative post-purchase attitude of early adopters.
+   The results of this work provide useful insights for improving the commercialization decisions of product and marketing managers operating in high-technology markets, helping them avoid errors that are precursors of market failure. It is also hoped the article will inform further research aimed at identifying, theoretically and empirically, other possible causes of poor customer acceptance in high-tech markets.
+C1 [Frattini, Federico] Politecn Milan, Dept Management Econ & Ind Engn, I-20133 Milan, Italy.
+RP Frattini, F (reprint author), Politecn Milan, Dept Management Econ & Ind Engn, Piazza L da Vinci 32, I-20133 Milan, Italy.
+EM federico.frattini@polimi.it
+CR Alexander DL, 2008, J MARKETING RES, V45, P307, DOI 10.1509/jmkr.45.3.307
+   Balachandra R, 1997, IEEE T ENG MANAGE, V44, P276, DOI 10.1109/17.618169
+   BAYUS BL, 1994, J PROD INNOVAT MANAG, V11, P300, DOI 10.1111/1540-5885.1140300
+   Beard C, 1996, IND MARKET MANAG, V25, P87, DOI 10.1016/0019-8501(95)00037-2
+   Borrus M., 1997, IND INNOV, V4, P141
+   BURT RS, 1987, AM J SOCIOL, V92, P1287, DOI 10.1086/228667
+   Chakravorti B, 2004, HARVARD BUS REV, V82, P58
+   CHAKRAVORTI B, 2003, SLOW PACE FAST CHANG
+   CHURCHILL GA, 1982, J MARKETING RES, V19, P14
+   Cierpicki Steven, 2000, J EMPIRICAL GEN MARK, V5, P771
+   COOPER RG, 1987, J PROD INNOVAT MANAG, V4, P169, DOI 10.1016/0737-6782(87)90002-6
+   CZEPIEL JA, 1975, ACAD MANAGE J, V18, P6, DOI 10.2307/255621
+   Davies W, 1997, IND MARKET MANAG, V26, P1, DOI 10.1016/S0019-8501(96)00073-9
+   Deroian F, 2002, RES POLICY, V31, P835, DOI 10.1016/S0048-7333(01)00147-0
+   Di Benedetto A, 1999, J PROD INNOVAT MANAG, V16, P530
+   Easingwood C, 2002, TECHNOVATION, V22, P657, DOI 10.1016/S0166-4972(02)00097-4
+   EASINGWOOD C, 1989, IND MARKET MANAG, V18, P125, DOI 10.1016/0019-8501(89)90029-1
+   Eisenhardt KM, 2007, ACAD MANAGE J, V50, P25, DOI 10.5465/AMJ.2007.24160888
+   ELIASHBERG J, 1988, J MARKETING RES, V25, P282, DOI 10.2307/3172530
+   Eveland J. D., 1990, PROCESSES TECHNOLOGI, P117
+   Festinger L., 1957, THEORY COGNITIVE DIS
+   Fishbein M., 1975, BELIEF ATTITUDE INTE
+   Geroski PA, 2000, RES POLICY, V29, P603, DOI 10.1016/S0048-7333(99)00092-X
+   Ginter James L., 1972, J ADVERTISING, V1, P33
+   GOLDER PN, 1993, J MARKETING RES, V30, P158, DOI 10.2307/3172825
+   Gottschalk Louis Reichenthal, 1969, UNDERSTANDING HIST P
+   Gourville JT, 2006, HARVARD BUS REV, V84, P98
+   GRIFFIN A, 1993, J PROD INNOVAT MANAG, V10, P291
+   Hall Bronwyn H., 2005, OXFORD HDB INNOVATIO, P459
+   Hartley RH, 2005, MARKETING MISTAKES S
+   HILL DJ, 1986, ADV CONSUM RES, V13, P311
+   Hoeffler S, 2003, J MARKETING RES, V40, P406, DOI 10.1509/jmkr.40.4.406.19394
+   Hovland CI, 1961, SOCIAL JUDGEMENT ASS
+   Hultink EJ, 1997, J PROD INNOVAT MANAG, V14, P243, DOI 10.1111/1540-5885.1440243
+   Hultink EJ, 1999, J PROD INNOVAT MANAG, V16, P545, DOI 10.1111/1540-5885.1660029
+   Hultink EJ, 2000, J PROD INNOVAT MANAG, V17, P5, DOI 10.1111/1540-5885.1710005
+   Hultink EJ, 1998, INT J RES MARK, V15, P269
+   KATZ ML, 1986, J POLIT ECON, V94, P822, DOI 10.1086/261409
+   KATZ ML, 1992, J IND ECON, V40, P55, DOI 10.2307/2950627
+   Kempf DS, 1999, PSYCHOL MARKET, V16, P35, DOI 10.1002/(SICI)1520-6793(199901)16:1<35::AID-MAR3>3.3.CO;2-L
+   Korgaonkar P. K., 1982, J ADVERTISING, V11, P32, DOI DOI 10.1080/00913367.1982.10672810
+   LEONARDBARTON D, 1985, J CONSUM RES, V11, P914, DOI 10.1086/209026
+   Lilly B, 1997, J PROD INNOVAT MANAG, V14, P4, DOI 10.1111/1540-5885.1410004
+   McDade SR, 2002, IND MARKET MANAG, V31, P441, DOI 10.1016/S0019-8501(01)00160-2
+   MCKENNA R, 1985, REGIS TOUCH
+   MONTOYAWEISS MM, 1994, J PROD INNOVAT MANAG, V11, P397, DOI 10.1016/0737-6782(94)90029-9
+   Moore G., 1991, CROSSING CHASM MARKE
+   NEVENS TM, 1990, HARVARD BUS REV, V68, P154
+   NEVETT T, 1991, J MARKETING, V55, P13, DOI 10.2307/1252144
+   Patterson P.G., 1993, PSYCHOL MARKET, V10, P449, DOI DOI 10.1002/MAR.4220100507
+   RICHINS ML, 1984, ADV CONSUM RES, V11, P697
+   Rogers E., 2003, DIFFUSION INNOVATION
+   Rohlfs J. H., 2001, BANDWAGON EFFECTS HI
+   Schilling M. A., 2005, STRATEGIC MANAGEMENT
+   Siggelkow N, 2007, ACAD MANAGE J, V50, P20
+   SMITH RE, 1993, J MARKETING RES, V30, P204, DOI 10.2307/3172828
+   TEECE DJ, 1984, CALIF MANAGE REV, V26, P87, DOI 10.2307/41165082
+   TURNBULL PW, 1980, EUR J MARKETING, V14, P3, DOI 10.1108/EUM0000000004893
+   Van den Bulte C, 2004, MARKET SCI, V23, P530, DOI 10.1287/mksc.1040.0054
+   Van den Bulte C, 2001, AM J SOCIOL, V106, P1409, DOI 10.1086/320819
+   Veryzer RW, 1998, J PROD INNOVAT MANAG, V15, P136, DOI 10.1111/1540-5885.1520136
+   Wasson C. R., 1970, CONSUMER BEHAV THEOR, P252
+   Weber R. P., 1990, BASIC CONTENT ANAL
+   WIND J, 1987, J PROD INNOVAT MANAG, V4, P43, DOI 10.1111/1540-5885.410043
+   Yin R.K., 2003, CASE STUDY RES DESIG
+   Yoffie D. B, 1997, COMPETING AGE DIGITA
+   Zanna M. P., 1982, CONSISTENCY SOCIAL B, V2, P283
+NR 67
+TC 67
+Z9 68
+U1 0
+U2 143
+PU WILEY-BLACKWELL
+PI MALDEN
+PA COMMERCE PLACE, 350 MAIN ST, MALDEN 02148, MA USA
+SN 0737-6782
+J9 J PROD INNOVAT MANAG
+JI J. Prod. Innov. Manage.
+PD JUL
+PY 2011
+VL 28
+IS 4
+BP 437
+EP 454
+DI 10.1111/j.1540-5885.2011.00818.x
+PG 18
+WC Business; Engineering, Industrial; Management
+SC Business & Economics; Engineering
+GA 762CC
+UT WOS:000290448900002
+DA 2019-12-28
+ER
+
+PT J
+AU Wlodarczyk, J
+   Reid, CM
+   Pater, G
+AF Wlodarczyk, John
+   Reid, Christopher M.
+   Pater, Glen
+TI Funding Linked to Ongoing Research: Impact of the Bosentan Patient
+   Registry on Pricing in Australia
+SO VALUE IN HEALTH
+LA English
+DT Article
+DE bosentan; pharmaceutical funding; risk-share agreement
+ID PULMONARY ARTERIAL-HYPERTENSION; RISK-SHARING AGREEMENTS; REIMBURSEMENT
+   SCHEMES; SYSTEMIC-SCLEROSIS; COST-EFFECTIVENESS; SURVIVAL; COVERAGE;
+   OUTCOMES
+AB Objectives: Bosentan, a dual endothelin receptor antagonist (ERA), was the first oral drug approved for the treatment of pulmonary arterial hypertension (PAH), a rare disease with poor prognosis. In 2004 the Australian Department of Health agreed to fund bosentan on the pharmaceutical benefits scheme (PBS) on the condition that a registry was established to monitor mortality: if the observed mortality rate was higher than that claimed in the original funding submission then the price of bosentan would be reduced to maintain the original incremental cost-effectiveness ratio (ICER). This article presents the economic implications of the bosentan patient registry (BPR). Methods: An existing economic model was updated using the results of the BPR. Results: Participation rates were high and the BPR collected 821 patient years of follow-up on 528 patients. Based on the observed raw mortality a 23.7% price reduction would have been needed to maintain the original ICER in idiopathic PAH patients. After allowing for the higher risk patients actually treated in Australia, a 13.5% reduction in bosentan price would have been required. In 2008, however, sitaxentan, a new oral ERA PAH treatment was listed on the PBS at a 15% discount to bosentan. On the basis of cost-minimization, bosentan was forced to reduce its price to that of sitaxentan. After this price reduction the ICER for bosentan was similar to that originally proposed and hence, no additional price reduction was sought by the Pharmaceutical Benefits Advisory Committee (PBAC). Conclusions: The bosentan PAH registry provided a useful mechanism for monitoring the cost-effectiveness of bosentan after funding approval.
+C1 [Wlodarczyk, John] John Wlodarczyk Consulting Serv, New Lambton, NSW, Australia.
+   [Reid, Christopher M.] Monash Univ, Clin Informat & Data Management Unit, Sch Publ Hlth & Preventat Med, Melbourne, Vic 3004, Australia.
+   [Pater, Glen] Actel Australia, Belrose, NSW, Australia.
+RP Wlodarczyk, J (reprint author), 10 Mirral Crescent, New Lambton, NSW 2305, Australia.
+EM john@jwcs.com.au
+OI Reid, Christopher/0000-0001-9173-3944
+FU Actelion Pharmaceuticals
+FX No funding or support has been received for this manuscript. The
+   original bosentan model and bosentan registry was sponsored by Actelion
+   Pharmaceuticals. Glen Pater is employed by Actelion Pharmaceuticals
+   Australia. John Wlodarczyk has worked as a consultant for Actelion
+   Pharmaceuticals. Christopher M Reid is employed by Monash University;
+   the university was contracted to manage the BPR. He does not have a
+   financial arrangement with Actelion Pharmaceuticals.
+CR Australian National Audit Office, 2006, SEL MEAS MAN SUBS DR
+   Carlson JJ, 2010, HEALTH POLICY, V96, P179, DOI 10.1016/j.healthpol.2010.02.005
+   Carlson JJ, 2009, J MANAGE CARE PHARM, V15, P683, DOI 10.18553/jmcp.2009.15.8.683
+   Channick RN, 2001, LANCET, V358, P1119, DOI 10.1016/S0140-6736(01)06250-X
+   Cook JP, 2008, PHARMACOECONOMICS, V26, P551, DOI 10.2165/00019053-200826070-00002
+   Kawut SM, 2003, CHEST, V123, P344, DOI 10.1378/chest.123.2.344
+   Keogh A, 2011, INTERN MED J, V41, P227, DOI 10.1111/j.1445-5994.2009.02139.x
+   Koh ET, 1996, BRIT J RHEUMATOL, V35, P989
+   McLaughlin VV, 2006, EUR J CLIN INVEST, V36, P10, DOI 10.1111/j.1365-2362.2006.01688.x
+   Medical Services Advisory Committee (MSAC), 2007, MSAC BROCH
+   Medicare Services Advisory Committee, 2006, END GRAFT ABD AORT A
+   Mohr PE, 2010, PHARMACOECONOMICS, V28, P153, DOI 10.2165/11531050-000000000-00000
+   Owen Aj, 2008, J Med Econ, V11, P235, DOI 10.3111/13696990802034525
+   POLLACK A, 2007, NY TIMES        0714
+   Rubin LJ, 2002, NEW ENGL J MED, V346, P896, DOI 10.1056/NEJMoa012212
+   Towse A, 2010, PHARMACOECONOMICS, V28, P93, DOI 10.2165/11314080-000000000-00000
+   Trueman P, 2010, INT J TECHNOL ASSESS, V26, P79, DOI 10.1017/S0266462309990882
+   Wlodarczyk JH, 2006, PHARMACOECONOMICS, V24, P903, DOI 10.2165/00019053-200624090-00007
+NR 18
+TC 8
+Z9 8
+U1 0
+U2 9
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1098-3015
+J9 VALUE HEALTH
+JI Value Health
+PD SEP-OCT
+PY 2011
+VL 14
+IS 6
+BP 961
+EP 963
+DI 10.1016/j.jval.2011.02.1177
+PG 3
+WC Economics; Health Care Sciences & Services; Health Policy & Services
+SC Business & Economics; Health Care Sciences & Services
+GA 876BJ
+UT WOS:000299081600022
+PM 21914519
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Brunetti, C
+   di Filippo, M
+   Harris, JH
+AF Brunetti, Celso
+   di Filippo, Mario
+   Harris, Jeffrey H.
+TI Effects of Central Bank Intervention on the Interbank Market During the
+   Subprime Crisis
+SO REVIEW OF FINANCIAL STUDIES
+LA English
+DT Article
+DE G01; G21; G28
+ID TIME PRICE DISCOVERY; FOREIGN-EXCHANGE; MONETARY-POLICY; LIQUIDITY;
+   ANNOUNCEMENTS; VOLATILITY; STOCK; MODEL
+AB We explore whether central bank intervention improves liquidity in the interbank market during the current subprime crisis with unique trade and quote data from the e-MID, the only regulated electronic interbank market in the world. Central bank intervention consistently creates greater uncertainty in the interbank market. Prior to the crisis, the cover-to-bid ratio effectively conveys good and bad news from the central bank, but this link is broken during the crisis, suggesting that standard (and special) interventions that do not specifically target interbank asymmetric information fail to improve market liquidity. Our results suggest that the central bank should release stress tests for individual banks, provide interbank loan guarantees, or engage in direct asset purchases rather than simply providing more capital when counterparty risk poses systemic risk to the interbank market.
+C1 [Brunetti, Celso] Johns Hopkins Univ, Carey Business Sch, Baltimore, MD 21202 USA.
+   [di Filippo, Mario] Catholic Univ Milan, Milan, Italy.
+   [Harris, Jeffrey H.] Univ Delaware, Newark, DE 19716 USA.
+RP Brunetti, C (reprint author), Johns Hopkins Univ, Carey Business Sch, 100 Int Dr, Baltimore, MD 21202 USA.
+EM celsob@jhu.edu
+RI Harris, Jeffrey/F-2395-2010
+CR Acharya V., 2009, PRECAUTIONARY HOARDI
+   ACHARYA VV, 2008, IMPERFECT COMPETITIO
+   Allen F., 2008, INTERBANK MARKET LIQ
+   Andersen T. G., 1999, REALIZED VOLATILITY
+   Andersen TG, 1998, J FINANC, V53, P219, DOI 10.1111/0022-1082.85732
+   Andersen TG, 2003, AM ECON REV, V93, P38, DOI 10.1257/000282803321455151
+   Andersen TG, 2007, J INT ECON, V73, P251, DOI 10.1016/j.jinteco.2007.02.004
+   Angelini P., 2009, INTERBANK MARKET AUG
+   Bandi FM, 2006, J FINANC ECON, V79, P655, DOI 10.1016/j.jfineco.2005.01.005
+   Blanchard O., 2009, CRISIS BASIC MECH AP
+   Brandt MW, 2006, J BUS, V79, P61, DOI 10.1086/497405
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Demiralp S., 2002, EC POLICY REV, V8, P1
+   Drehmann M., 2009, ECB WORKING PAPER SE, V1024
+   Ehrmann M., 2005, ECB WORKING PAPER SE
+   Ehrmann M., 2005, ECB WORKING PAPER SE
+   Eisenschmidt J., 2009, ECB WORKING PAPER SE
+   Fleming M. J., 2010, 426 FRB NEW YORK
+   Fleming MJ, 1999, J FINANC, V54, P1901, DOI 10.1111/0022-1082.00172
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Freixas X, 2008, J MONEY CREDIT BANK, V40, P1151, DOI 10.1111/j.1538-4616.2008.00152.x
+   Gabrieli S., 2009, FUNCTIONING EURO ARE
+   Gorton G., 2009, FED RES BANK ATL 200
+   Hamilton JD, 1996, J POLIT ECON, V104, P26, DOI 10.1086/262016
+   Hayek FA, 1945, AM ECON REV, V35, P519
+   Heider F., 2009, LIQUIDITY HOARDING I
+   Holmstrom B, 1996, AM ECON REV, V86, P187
+   McAndrews J., 2008, 335 FED RES BANK NEW
+   POOLE W, 1968, J FINANC, V23, P769, DOI 10.2307/2325906
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Schwarz K., 2009, MIND GAP DISENTANGLI
+   Stroebel J. C., 2009, 15626 NBER
+   Sundaresan S, 2009, REV FINANC STUD, V22, P1021, DOI 10.1093/rfs/hhn005
+   Taylor JB, 2009, AM ECON J-MACROECON, V1, P58, DOI 10.1257/mac.1.1.58
+NR 34
+TC 32
+Z9 32
+U1 0
+U2 41
+PU OXFORD UNIV PRESS INC
+PI CARY
+PA JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
+SN 0893-9454
+EI 1465-7368
+J9 REV FINANC STUD
+JI Rev. Financ. Stud.
+PD JUN
+PY 2011
+VL 24
+IS 6
+BP 2053
+EP 2083
+DI 10.1093/rfs/hhq123
+PG 31
+WC Business, Finance; Economics
+SC Business & Economics
+GA 766WQ
+UT WOS:000290817700011
+DA 2019-12-28
+ER

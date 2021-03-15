@@ -1,0 +1,490 @@
+
+PT J
+AU Ji, H
+   Wang, H
+   Liseo, B
+AF Ji, Hao
+   Wang, Hao
+   Liseo, Brunero
+TI PORTFOLIO DIVERSIFICATION STRATEGY VIA TAIL-DEPENDENCE CLUSTERING AND
+   ARMA-GARCH VINE COPULA APPROACH
+SO AUSTRALIAN ECONOMIC PAPERS
+LA English
+DT Article
+ID FINANCIAL-MARKETS; SPATIAL CONTAGION; MODEL; RISK
+AB This study proposes a diversified portfolio construction method based on the tail dependence between the financial assets and adopting both market prior information and the exports' subject views. In this paper, tail-dependence clustering was applied to divide candidate assets into different groups according to their tail dependence during the crisis period and the ARMA-GARCH vine copula-opinion pooling approach was applied to select the minimum Conditional Value-at-Risk portfolio according to the clustering results. The daily closed prices of the components of DAX 20 from 3 January 2006 to 20 December 2014 were studied to illustrate the methodology. The results reveal that more than 90% of 450 possible portfolios are modelled by D-vine structure and Student's t-copula dominates almost all the cases for pair copula selection. As Student's t-copula captures the symmetric tail dependence, the 450 possible portfolios do not show stronger lower tail dependence than upper tail dependence. This study contributes by combining cluster analysis with portfolios selection. It uses vine copula to capture the dependence structure among assets. Finally, it offers a flexible method to describe market and offers a strategy to construct diversified portfolios by adding the investors' information into portfolio selection procedure at the 1-day forecast horizon.
+C1 [Ji, Hao] Northwest A&F Univ, Xianyang, Shaanxi, Peoples R China.
+   [Wang, Hao] Jilin Univ, Changchun, Jilin, Peoples R China.
+   [Liseo, Brunero] Sapienza Univ Rome, Rome, Italy.
+RP Wang, H (reprint author), Jilin Univ, Sch Econ, Changchun 130012, Jilin, Peoples R China.
+EM haowang@jlu.edu.cn
+FU National Nature Science Foundation of ChinaNational Natural Science
+   Foundation of China [71703123]; Youth Foundation of Northwest AF
+   University [2452016160]; National Social Science Foundation of China
+   [2015ZDA017]; China Postdoctoral Science FoundationChina Postdoctoral
+   Science Foundation [2016M601366]; Major Program of Key Research
+   institute of Philosophy and Social Science in Jilin University
+   [2017XXJD11]; Italian Ministry of Instruction and University (MIUR)
+   [2013-C26A13BBCB]
+FX The first author acknowledges the support of the National Nature Science
+   Foundation of China (Grant No.: 71703123) and the Youth Foundation of
+   Northwest A&F University (Grant No.: 2452016160). The second author
+   acknowledges the support of the National Social Science Foundation of
+   China (Grant No.: 2015ZDA017), the China Postdoctoral Science Foundation
+   Funded Project (Grant No.: 2016M601366) and the Major Program of Key
+   Research institute of Philosophy and Social Science in Jilin University
+   (Grant No.: 2017XXJD11). The third author acknowledges the support of
+   the Italian Ministry of Instruction and University (MIUR) (Grant No.:
+   2013-C26A13BBCB).
+CR Aas K, 2009, INSUR MATH ECON, V44, P182, DOI 10.1016/j.insmatheco.2007.02.001
+   Bedford T, 2002, ANN STAT, V30, P1031
+   Black F., 1992, FINANCIAL ANAL J, V48, P28, DOI DOI 10.2469/FAJ.V48.N5.28
+   Black F., 1991, J FIXED INCOME, V1, P7, DOI DOI 10.3905/JFI.1991.408013
+   Bradley BO, 2003, HANDBOOKS FINANCE, P35, DOI 10.1016/B978-044450896-6.50004-2
+   Bradley BO, 2005, FINANCE LETT, V3, P64
+   Czado C, 2010, LECT NOTES STAT, P93
+   De Luca G, 2011, ADV DATA ANAL CLASSI, V5, P323, DOI 10.1007/s11634-011-0098-3
+   Dobric J, 2013, DEPEND MODEL, V1, P94, DOI 10.2478/demo-2013-0005
+   Durante F, 2014, EXPERT SYST APPL, V41, P4023, DOI 10.1016/j.eswa.2013.12.020
+   Durante F, 2010, APPL STOCH MODEL BUS, V26, P551, DOI 10.1002/asmb.799
+   Humphrey JE, 2015, PAC-BASIN FINANC J, V35, P521, DOI 10.1016/j.pacfin.2015.09.003
+   Ji H, 2015, WORKING PAPER
+   Joe H., 1996, DISTRIBUTIONS FIXED, V28, P120, DOI DOI 10.1214/LNMS/1215452614
+   Joe H, 2010, J MULTIVARIATE ANAL, V101, P252, DOI 10.1016/j.jmva.2009.08.002
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Juri A, 2002, INSUR MATH ECON, V30, P405, DOI 10.1016/S0167-6687(02)00121-X
+   Kaufman L., 2009, FINDING GROUPS DATA, V344
+   Kurowicka D., 2011, DEPENDENCE MODELING
+   Low RKY, 2018, ACCOUNT FINANC, V58, P423, DOI 10.1111/acfi.12274
+   Low RKY, 2016, J ECON BUS, V85, P49
+   Low RKY, 2013, J BANK FINANC, V37, P3085, DOI 10.1016/j.jbankfin.2013.02.036
+   Mankert C, 2006, THESIS
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Meucci A., 2006, RISK, V19, P114
+   Meucci A., 2006, RISK, P87
+   Mirkin B., 2012, CLUSTERING DATA RECO
+   Nelsen R. B, 2006, INTRO COPULAS
+   Rad H, 2016, QUANT FINANC, V16, P1541, DOI 10.1080/14697688.2016.1164337
+   Rockafellar RT, 2002, J BANK FINANC, V26, P1443, DOI 10.1016/S0378-4266(02)00271-6
+   ROUSSEEUW PJ, 1987, J COMPUT APPL MATH, V20, P53, DOI 10.1016/0377-0427(87)90125-7
+   Schmid F, 2007, STAT PROBABIL LETT, V77, P407, DOI 10.1016/j.spl.2006.08.007
+   Sklar M., 1959, FONCTIONS REPARTITIO, V8, P229
+NR 33
+TC 1
+Z9 1
+U1 3
+U2 14
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0004-900X
+EI 1467-8454
+J9 AUST ECON PAP
+JI Aust. Econ. Pap.
+PD SEP
+PY 2018
+VL 57
+IS 3
+BP 265
+EP 283
+DI 10.1111/1467-8454.12126
+PG 19
+WC Economics
+SC Business & Economics
+GA GS3UA
+UT WOS:000443546900004
+DA 2019-12-27
+ER
+
+PT J
+AU Li, C
+AF Li, Cheng
+TI China's household balance sheet: Accounting issues, wealth accumulation,
+   and risk diagnosis
+SO CHINA ECONOMIC REVIEW
+LA English
+DT Article
+DE Balance sheet; Household sector; Wealth accumulation; Debt risks;
+   Financial deepening
+AB In this paper, we compile China's household balance sheet and apply this perspective to the analysis of household financial conditions. Specifically, we first address some technical issues on the balance sheet accounts, and detail the estimations of two important asset items, "dwellings" and "automobiles." Next, through reading the sheets, we provide an international comparative analysis, and show: (1) China's households are still on their early stage of wealth accumulation, and this trend is associated with a changing structure in favour of financial assets. (2) Although being subject to relatively low insolvency and liquidity risks, the sector has experienced, generally contrary to major developed or emerging countries, a climbing leverage cycle since the global financial crisis. These findings imply that China's policymakers should, on the one hand, make further efforts to help households accumulate wealth with an improved structure in terms of liquidity and risk diversification, and on the other hand, need to pay high attention to the increasing household financial stress and the potential risk contagion.
+C1 [Li, Cheng] Chinese Acad Social Sci, Inst Econ, Natl Inst Finance & Dev, Beijing, Peoples R China.
+RP Li, C (reprint author), 2 Yuetan Beixiaojie, Beijing 100836, Peoples R China.
+EM licheng@cass.org.cn
+FU Institute of Economics, Chinese Academy of Social Sciences
+FX This article is part of the research project "Analysis of China's
+   Macroeconomic Situation and Risk Warnings" funded by Institute of
+   Economics, Chinese Academy of Social Sciences.
+CR Ahrend R., 2012, 902 OECD EC DEP
+   AKERLOF GA, 1970, Q J ECON, V84, P488, DOI 10.2307/1879431
+   Allen M., 2002, WP02210 IMF
+   Amiti M., 2008, ANATOMY CHINAS EXPOR, V199, P1
+   Bai Chong-en, 2009, JINGJI YANJIU EC RES, V44, P27
+   Caballero RJ, 2008, AM ECON REV, V98, P1943, DOI 10.1257/aer.98.5.1943
+   Cao Y., 2012, CAIJING MAGAZINE
+   Chen C., 2014, EC RES J, V49, P72
+   China Association of Automobile Manufacturers, 2005, CHIN AUT IND YB
+   Dees S., 2017, STAMPE STRESS TEST A
+   Dickinson Frank, 1936, BALANCE SHEET NATION
+   Du J., 2015, GOVT BALANCE SHEET T
+   Eggertsson GB, 2012, Q J ECON, V127, P1469, DOI 10.1093/qje/qjs023
+   Goldsmith R., 1963, STUDIES NATL BALANCE
+   Goldsmith Raymond W., 1982, NATL BALANCE SHEET U
+   Gray D.F., 2007, 13607 NBER
+   Guiso Luigi, 2013, HDB EC FINANCE, P1397
+   Harding JP, 2007, J URBAN ECON, V61, P193, DOI 10.1016/j.jue.2006.07.007
+   He Zhiguo, 2010, 15919 NBER
+   Ho SPS, 2003, CHINA QUART, P681, DOI 10.1017/S0305741003000407
+   Kiyotaki N, 2002, AM ECON REV, V92, P46, DOI 10.1257/000282802320188989
+   Koo R. C., 2011, REAL WORLD EC REV, V58, P19
+   Li Y., 2012, EC RES J, V47, P4
+   Li Y., 2013, NATL BALANCE SHEET C
+   Li Y, 2015, ADV SOC SCI EDUC HUM, V39, P2015
+   Lima Juan Manuel, 2006, WP065 IMF
+   Liu X., 2009, J FINANC RES, V10, P107
+   Ma J., 2012, STUDY CHINAS NATL BA
+   Mathisen Johan, 2006, WP06100 IMF
+   *NAT BUR STAT CHIN, 2005, CHIN STAT YB
+   National Bureau of Statistics of China, 1997, METH COMP CHIN BAL S
+   Novokmet F, 2017, WID WORLD WORKING PA
+   Nuno G, 2017, AM ECON J-MACROECON, V9, P32, DOI 10.1257/mac.20140084
+   Organisation for Economic Co-operation and Development, 2014, UND NAT ACC
+   Paltalidis N, 2015, J BANK FINANC, V61, pS36, DOI 10.1016/j.jbankfin.2015.03.021
+   People's Bank of China (PBoC), 2010, CHIN FIN STAB REP CF
+   Piketty T, 2017, 23368 NBER
+   Piketty T, 2014, Q J ECON, V129, P1255, DOI 10.1093/qje/qju018
+   Piketty Thomas, 2014, CAPITAL 21 CENTURY
+   Reinhart CM, 2014, ANN ECON FINANC, V15, P1
+   Revell Jack, 1966, REV INCOME WEALTH, V12, P281
+   Rosenberg C, 2005, 240 IMF
+   Xie Y., 2017, CHINA FAMILY PANEL S
+   Xie Y., 2014, CHINA FAMILY PANEL S
+   Zhu XD, 2012, J ECON PERSPECT, V26, P103, DOI 10.1257/jep.26.4.103
+NR 45
+TC 0
+Z9 0
+U1 1
+U2 7
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1043-951X
+EI 1873-7781
+J9 CHINA ECON REV
+JI China Econ. Rev.
+PD OCT
+PY 2018
+VL 51
+BP 97
+EP 112
+DI 10.1016/j.chieco.2018.04.012
+PG 16
+WC Economics
+SC Business & Economics
+GA GZ0GG
+UT WOS:000449039100007
+DA 2019-12-27
+ER
+
+PT J
+AU Janovec, M
+AF Janovec, Michal
+TI Integrated Supervision of the Financial Market without the UK?
+SO INTERNATIONAL JOURNAL OF FINANCIAL STUDIES
+LA English
+DT Article
+DE integration; supervision; financial market; banking union; single
+   market; Brexit
+AB This paper analyses the integration of financial market supervision at international level, particularly focusing on EU law and the actual processes taking place in this area considering Brexit as its part. Current legislative action at EU level has a significant impact on legislation in all member countries of European Union. This paper seeks, among other things, to find the causes of the increasingly ongoing process of integration of financial market supervision and determine whether or not the direction in which the international integration is going is the right one. The objective of this paper is to determine whether or not the process of integration increases the efficiency of financial market supervision itself and helps to develop the European single market, while simultaneously reducing systemic risk to financial market stability.
+C1 [Janovec, Michal] Masaryk Univ, Law Fac, Brno 61180, Czech Republic.
+RP Janovec, M (reprint author), Masaryk Univ, Law Fac, Brno 61180, Czech Republic.
+EM michal.janovec@law.muni.cz
+OI Janovec, Michal/0000-0002-6565-4043
+CR Blessing M, 2013, STABILITY OF THE FINANCIAL SYSTEM: ILLUSION OR FEASIBLE CONCEPT?, P7
+   Council of the European Union, 2009, AGR COUNC CONCL STRE, P5
+   Emmenegger Susan, 2010, EUI WORKING PAPERS L, P7
+   European Commission, 2017, COM2017536 EUR PARL, P8
+   European Council, 2014, SINGL RES MECH
+   Ferran Eilis, 2013, 102013 U CAMBR FAC L
+   Ferran Eilis, 2011, 362011 U CAMBR FAC L, P30
+   Fredriksen HH, 2015, COMMON MKT LAW REV, V52, P629
+   Goldby Miriam, 2010, LAW FINANCIAL MARKET, V4, P51
+   House of Lords, 2009, FUTURE EU FINANCIAL, VI, P12
+   Kalman Janos, 2014, INT RELATIONS Q, V5, P9
+   Moloney N, 2011, EUR BUS ORGAN LAW RE, V12, P41, DOI 10.1017/S1566752911100026
+   Niknejad Mandana, 2014, EUROPEAN J LEGAL STU, V7, P92
+   Norges Bank, 2012, REP WORK GROUP CONS, P12
+   Nouy Daniele, 2015, SZ FIN DAY FRANKF FR
+   Oltermann Philip, 2015, COMMUNICATION
+   Pfaeltzer JJW, 2014, UTRECHT LAW REV, V10, P134, DOI 10.18352/ulr.261
+   Rodriguez Pablo Iglesias, 2009, COLUMBIA J EUROPEAN, V16, P1
+   Scholten Miroslava, 2017, LAW ENFORCEMENT EU A, P55
+   Tabellini G., 2008, WHY DID BANK SUPERVI, P45
+   Tomsik Vladimir, 2012, BANKING UNION ONE SI, P13
+   Verhelst Stijn, 2011, RENEWED FINANCIAL SU, P40
+   Veron Nicolas, 2015, BRUEGEL ESSAY LECT S, P10
+   Wyemersch Eddy, 2012, FINANCIAL LAW I WORK, P3
+NR 24
+TC 0
+Z9 0
+U1 0
+U2 2
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2227-7072
+J9 INT J FINANC STUD
+JI Int. J. Financ. Stud.
+PD MAR
+PY 2018
+VL 6
+IS 1
+AR 20
+DI 10.3390/ijfs6010020
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA GA7IO
+UT WOS:000428509800019
+OA DOAJ Gold, Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Kurowski, L
+   Smaga, P
+AF Kurowski, Lukasz
+   Smaga, Pawel
+TI MONETARY POLICY AND CYCLICAL SYSTEMIC RISK - FRIENDS OR FOES?
+SO PRAGUE ECONOMIC PAPERS
+LA English
+DT Article
+DE financial stability; macroprudential policy; monetary policy; financial
+   cycle
+ID PROCYCLICALITY
+AB We explore the procyclicality of monetary policy decisions towards the financial cycle in the 1995-2015 period on a sample of seven central banks. Using the real interest rate gap and the credit-to-GDP gap, we provide evidence that monetary policy procyclicality is a material issue occurring in more than 50% of observations in expansionary phase of financial cycle. It indicates that the central bank faces conflicting objectives of price and financial stability (as proxied by cyclical systemic risk). Nevertheless, taking into consideration all financial cycle phases, complementariness between price and financial stability is more frequent than cases with conflicting objectives in the UK, Euro Area and the US. The occurrence of potential procyclical behaviour of monetary policy (especially in the financial cycle expansion phases) underlines the need for proactive macroprudential policy.
+C1 [Kurowski, Lukasz; Smaga, Pawel] Warsaw Sch Econ, Finsen Inst, Warsaw, Poland.
+   [Kurowski, Lukasz; Smaga, Pawel] Natl Bank Poland, Warsaw, Poland.
+RP Smaga, P (reprint author), Warsaw Sch Econ, Finsen Inst, Warsaw, Poland.; Smaga, P (reprint author), Natl Bank Poland, Warsaw, Poland.
+EM lukaszkurowskisgh@gmail.com; psmaga@sgh.waw.pl
+RI Kurowski, Lukasz/R-3631-2019
+OI Kurowski, Lukasz/0000-0002-3306-4276
+FU statutory research grant at the Warsaw School of Economics in 2016
+   [KZIF/S/17/16]
+FX The paper was written as a part of statutory research grant at the
+   Warsaw School of Economics in 2016 (No. KZIF/S/17/16) entitled "Size and
+   Structure of Financial Sectors in Selected Central and Eastern European
+   Countries and Developed Countries. Convergence or Own Path?" prepared
+   under the guidance of M. Iwanicz-Drozdowska, to whom and to two
+   anonymous reviewers we are very grateful for helpful comments to the
+   early draft of the paper. We explicitly stress that the opinions
+   expressed herein are those of the authors and do not reflect those of
+   the associated institutions.
+CR Agur I, 2012, 1457 EUR CENTR BANK
+   Assenmacher-Wesche Katrin, 2010, FINANCIAL STRUCTURE
+   Athanasoglou PP, 2014, J ECON BUS, V72, P58, DOI 10.1016/j.jeconbus.2013.10.003
+   Bauer G, 2016, 38 BANK CAN
+   Baxa J, 2013, J FINANC STABIL, V9, P117, DOI 10.1016/j.jfs.2011.10.002
+   Beau D., 2012, MACROPRUDENTIAL POLI
+   Beyer A, 2017, OCCASIONAL PAPER SER, V191
+   Blanchard .O   Cerutti  E, 2015, WP15230 IMF, DOI [10.2139/ssrn.2689049, DOI 10.2139/SSRN.2689049]
+   Bordo M. D, 2012, 16 ANN C CENTR BANK
+   Borio C, 2009, Q REV            MAR
+   Borio C., 2016, 570 BANK INT SETTL
+   Borio C, 2016, 569 BANK INT SETTL, V569
+   Borio C, 2012, 380 BANK INT SETTL, V380
+   Borio C, 2010, 317 BANK INT SETTL, DOI [10.2139/ssrn.1648946, DOI 10.2139/SSRN.1648946]
+   Borio C, 2014, J BANK FINANC, V45, P182, DOI 10.1016/j.jbankfin.2013.07.031
+   BSCB, 2010, WORKING PAPER
+   Calderon C, 2014, J DEV ECON, V109, P98, DOI 10.1016/j.jdeveco.2014.03.001
+   Claessens S, 2011, 1188 INT MON FUND
+   Delis MD, 2015, J FINANC STABIL, V16, P13, DOI 10.1016/j.jfs.2014.11.004
+   Drehmann M, 2011, INT J CENT BANK, V7, P189
+   ESRB, 2014, OCCASIONAL PAPER SER, V5
+   Fendoglu S, 2014, J ECON DYN CONTROL, V46, P271, DOI 10.1016/j.jedc.2014.06.008
+   Frait J, 2012, RES POLICY NOTES, V3
+   Frait J., 2016, WORKING PAPER SERIES, V6
+   Gersl A, 2015, EASTERN EUR ECON, V53, P439, DOI 10.1080/00128775.2015.1102602
+   Giammarioli N, 2004, J POLICY MODEL, V26, P641, DOI 10.1016/j.jpolmod.2004.01.007
+   Giese J, 2014, INT J FINANC ECON, V19, P25, DOI 10.1002/ijfe.1489
+   Hahm J -H, 2012, 17780 NBER, DOI [10.3386/w17780, DOI 10.3386/W17780]
+   Hiebert P., 2014, FINANCIAL STABILITY
+   Illing G, 2007, WORKING PAPER SERIES, V1971
+   IMF, 2013, INT MON MACR POL
+   Iwanicz-Drozdowska M, 2016, INT REV FINANC ANAL, V43, P146, DOI 10.1016/j.irfa.2015.11.010
+   Jimenez G, 2008, J ECONOMETRIC SOC, V82, P463, DOI [10.3982/ECTA10104, DOI 10.3982/ECTA10104]
+   Kaminsky G, 2004, 10780 NBER, DOI [10.3386/w10780, DOI 10.3386/W10780]
+   Kollintzas T., 2011, APPL FINANCIAL EC, V21, P1735, DOI DOI 10.1080/09603107.2011.583215
+   Laeven L., 2012, WP12163 INT MON FUND
+   Landier A, 2011, 11 TSE
+   loannidou V, 2008, 9 J POL ANN RES C
+   McGettigan D., 2013, 1396 IMF
+   Merrouche O, 2010, 10265 INT MON FUND, DOI [10.2139/ssrn.1735474, DOI 10.2139/SSRN.1735474]
+   Mohr M, 2005, 499 EUR CENTR BANK
+   Nicolo G. D, 2010, MONETARY POLICY BANK, DOI DOI 10.1080/1351847X.2014.983138
+   Olszak M, 2016, EUR J FINANC, V22, P965, DOI 10.1080/1351847X.2014.983138
+   Persson M, 2009, PAPERS, V46
+   Ross M, 2011, 1723 KIEL I
+   Shin H. S, 2008, WP13258 INT MON FUND
+   Smaga P, 2014, 5 SRC
+   Stremmel H., 2015, 1811 EUR CENTR BANK
+   Taylor JB, 2007, HOUSING MONETARY POL, DOI [10.3386/w13682, DOI 10.3386/W13682]
+NR 49
+TC 0
+Z9 0
+U1 0
+U2 0
+PU UNIV ECONOMICS-PRAGUE
+PI PRAGUE 3
+PA OECONOMICA PUBL, NAM W CHIRCHILLA 4, PRAGUE 3, CZ-130 67, CZECH REPUBLIC
+SN 1210-0455
+EI 2336-730X
+J9 PRAGUE ECON PAP
+JI Prague Econ. Pap.
+PD OCT
+PY 2018
+VL 27
+IS 5
+BP 522
+EP 540
+DI 10.18267/j.pep.667
+PG 19
+WC Economics
+SC Business & Economics
+GA GY7CP
+UT WOS:000448762000002
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Pelster, M
+   Irresberger, F
+   Weiss, GNF
+AF Pelster, Matthias
+   Irresberger, Felix
+   Weiss, Gregor N. F.
+TI Bank stock performance and bank regulation around the globe
+SO EUROPEAN JOURNAL OF FINANCE
+LA English
+DT Article
+DE bank stock performance; bank regulation; capital; implicit bailout
+   guarantee
+ID RISK-TAKING; FINANCIAL CRISIS; DEPOSIT INSURANCE; SYSTEMIC RISK; CAPITAL
+   ADEQUACY; GREAT-DEPRESSION; REQUIREMENTS; SUPERVISION; GOVERNANCE;
+   LIQUIDITY
+AB We analyze the effect of bank capital, regulation, and supervision on the annual stock performance of global banks during the period of 1999-2012. We study a large comprehensive panel of international banks and find that higher Tier 1 capital decreases a bank's stock performance over the whole sample period. However, during turbulent times stocks of more highly capitalized banks perform significantly better. Additionally, we find strong evidence that banks that are more likely to receive government bailout during financial distress realize smaller stock performance. In contrast, we find no convincing evidence that banks that generate higher non-interest income have a higher performance.
+C1 [Pelster, Matthias] Leuphana Univ Lueneburg, Inst Banking Finance & Accounting, Scharnhorststr 1, D-21335 Luneburg, Germany.
+   [Irresberger, Felix] TU Dortmund Univ, Finance, Otto Hahn Str 6, D-44227 Dortmund, Germany.
+   [Weiss, Gregor N. F.] Univ Leipzig, Chair Sustainable Finance & Banking, Grimmaische Str 12, D-04107 Leipzig, Germany.
+RP Pelster, M (reprint author), Leuphana Univ Lueneburg, Inst Banking Finance & Accounting, Scharnhorststr 1, D-21335 Luneburg, Germany.
+EM pelster@leuphana.de
+OI Pelster, Matthias/0000-0001-5740-2420
+FU Collaborative Research Center 'Statistical Modeling of Nonlinear Dynamic
+   Processes' of the German Research Foundation (DFG)German Research
+   Foundation (DFG) [SFB 823]; Collaborative Research Center 'Economic
+   Risk' of the German Research Foundation (DFG) [SFB 649]
+FX Support by the Collaborative Research Centers 'Statistical Modeling of
+   Nonlinear Dynamic Processes' (SFB 823) and 'Economic Risk' (SFB 649) of
+   the German Research Foundation (DFG) is gratefully acknowledged.
+CR Acharya V., 2010, WORKING PAPER
+   Acharya V, 2014, J MONETARY ECON, V65, P36, DOI 10.1016/j.jmoneco.2014.04.014
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya Viral V., 2014, WORKING PAPER
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Aebi V, 2012, J BANK FINANC, V36, P3213, DOI 10.1016/j.jbankfin.2011.10.020
+   Aiya S, 2012, 445 BANK ENGL
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   Anginer D., 2014, BANK CAPITAL SYSTEMI
+   Anginer D, 2014, J BANK FINANC, V48, P312, DOI 10.1016/j.jbankfin.2013.09.013
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Arnold B, 2012, J BANK FINANC, V36, P3125, DOI 10.1016/j.jbankfin.2012.07.023
+   Barth J. R., 2013, 18733 NBER
+   Barth J.R., 2006, RETHINKING BANK REGU
+   Barth JR, 2013, J BANK FINANC, V37, P2879, DOI 10.1016/j.jbankfin.2013.04.030
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   Beck T., 2013, LENDING CONCENTRATIO
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   BERNANKE BS, 1983, AM ECON REV, V73, P257
+   Bertay AC, 2013, J FINANC INTERMED, V22, P532, DOI 10.1016/j.jfi.2013.02.002
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Black L., 2012, WORKING PAPER
+   Blum J, 1999, J BANK FINANC, V23, P755, DOI 10.1016/S0378-4266(98)00113-7
+   Bostandzic D., 2014, WORKING PAPER
+   Boyd JH, 1998, J MONEY CREDIT BANK, V30, P426, DOI 10.2307/2601249
+   Brownlees CT, 2015, WORKING PAPER
+   Brunnermeier M., 2012, WORKING PAPER
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Buch CM, 2008, J FINANC STABIL, V4, P23, DOI 10.1016/j.jfs.2007.12.002
+   BUSER SA, 1981, J FINANC, V36, P51, DOI 10.2307/2327463
+   Calem P, 1999, J FINANC INTERMED, V8, P317, DOI 10.1006/jfin.1999.0276
+   Calomiris C., 2011, WORKING PAPER
+   Calomiris CW, 1997, AM ECON REV, V87, P863
+   Caprio G, 2014, J BANK FINANC, V44, P114, DOI 10.1016/j.jbankfin.2014.03.001
+   Chan-Lau J. A., 2010, IMF WORKING PAPERS, V19, P355
+   Cihak M., 2012, 6286 WORLD BANK
+   Cohen B. H., 2014, BISWORKING PAPERS
+   Cornett MM, 2002, J FINANC, V57, P501, DOI 10.1111/1540-6261.00430
+   Das S, 2012, 1236 IMF
+   Demirguc-Kunt A, 1998, INT MONET FUND S PAP, V45, P81
+   Demirguc-Kunt A, 2013, J MONEY CREDIT BANK, V45, P1147, DOI 10.1111/jmcb.12047
+   Demirguc-Kunt A, 2013, J BANK FINANC, V37, P875, DOI 10.1016/j.jbankfin.2012.10.010
+   DeYoung R, 2009, J FINANC SERV RES, V36, P87, DOI 10.1007/s10693-009-0066-7
+   Ellis L, 2014, J BANK FINANC, V45, P175, DOI 10.1016/j.jbankfin.2014.04.012
+   Engle R., 2014, REV FINANC, P1
+   Fahlenbrach R, 2012, J FINANC, V67, P2139, DOI 10.1111/j.1540-6261.2012.01783.x
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Gandhi P, 2015, J FINANC, V70, P733, DOI 10.1111/jofi.12235
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Gorton G., 2010, SLAPPED INVISIBLE HA
+   Han YF, 2011, REV FINANC STUD, V24, P1590, DOI 10.1093/rfs/hhq140
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Hart O, 2011, AM LAW ECON REV, V13, P453, DOI 10.1093/aler/ahr001
+   Hou KW, 2011, REV FINANC STUD, V24, P2527, DOI 10.1093/rfs/hhr013
+   Ince O., 2006, J FINANC RES, V29, P463, DOI DOI 10.1111/J.1475-6803.2006.00189.X
+   Jimenez G., 2014, 2012036 TILB U EUR B
+   Karolyi GA, 2012, J FINANC ECON, V105, P82, DOI 10.1016/j.jfineco.2011.12.008
+   Kashyap A., 2008, WORKING PAPER
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   KIM D, 1988, J FINANC, V43, P1219, DOI 10.2307/2328216
+   KOEHN M, 1980, J FINANC, V35, P1235, DOI 10.2307/2327096
+   Laeven L, 2012, IMF WORKING PAPER
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Le Lesle V., 2012, IMF WORKING PAPER
+   Li K, 2011, J INT BUS STUD, V42, P477, DOI 10.1057/jibs.2011.7
+   Mariathasan M., 2013, MANIPULATION BASEL R
+   Martin KD, 2007, ACAD MANAGE J, V50, P1401
+   Matutes C, 2000, EUR ECON REV, V44, P1, DOI 10.1016/S0014-2921(98)00057-9
+   Mercieca S, 2007, J BANK FINANC, V31, P1975, DOI 10.1016/j.jbankfin.2007.01.004
+   Ongena S, 2013, J FINANC ECON, V108, P727, DOI 10.1016/j.jfineco.2013.01.006
+   Rajan R, 2005, 11728 NBER
+   Santos Joao A. C., 2001, FINANCIAL MARKETS I, V10, P41, DOI DOI 10.1111/1468-0416.00042
+   Stiglitz J., 2008, CNN COMMENTARY PREVE
+   Thompson SB, 2011, J FINANC ECON, V99, P1, DOI 10.1016/j.jfineco.2010.08.016
+   Uhde A, 2009, J BANK FINANC, V33, P1299, DOI 10.1016/j.jbankfin.2009.01.006
+NR 77
+TC 0
+Z9 0
+U1 1
+U2 7
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1351-847X
+EI 1466-4364
+J9 EUR J FINANC
+JI Eur. J. Financ.
+PY 2018
+VL 24
+IS 2
+BP 77
+EP 113
+DI 10.1080/1351847X.2016.1226189
+PG 37
+WC Business, Finance
+SC Business & Economics
+GA FZ7AZ
+UT WOS:000427753200001
+DA 2019-12-28
+ER

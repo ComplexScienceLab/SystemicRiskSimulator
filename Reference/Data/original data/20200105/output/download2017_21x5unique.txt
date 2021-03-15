@@ -1,0 +1,459 @@
+
+PT J
+AU Nucera, F
+   Lucas, A
+   Schaumburg, J
+   Schwaab, B
+AF Nucera, Federico
+   Lucas, Andre
+   Schaumburg, Julia
+   Schwaab, Bernd
+TI Do negative interest rates make banks less safe?
+SO ECONOMICS LETTERS
+LA English
+DT Article
+DE Negative interest rates; Bank business model; Systemic risk;
+   Unconventional monetary policy measures
+AB We study the impact of increasingly negative central bank policy rates on banks' propensity to become undercapitalized in a financial crisis ('SRisk'). We find that the risk impact of negative rates depends on banks' business models: Large banks with diversified income streams are perceived as less risky, while smaller and more traditional banks are perceived as more risky. Policy rate cuts below zero trigger different SRisk responses than an earlier cut to zero. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Nucera, Federico] LUISS Guido Carli Univ, Rome, Italy.
+   [Lucas, Andre; Schaumburg, Julia] Vrije Univ Amsterdam, Amsterdam, Netherlands.
+   [Schaumburg, Julia] Tinbergen Inst, Amsterdam, Netherlands.
+   [Schwaab, Bernd] European Cent Bank, Financial Res, Frankfurt, Germany.
+RP Lucas, A (reprint author), Vrije Univ Amsterdam, FEWEB FIN, De Boelelaan 1105, NL-1081 HV Amsterdam, Netherlands.
+EM fnucera@luiss.it; a.lucas@vu.nl; j.schaumburg@vu.nl;
+   bernd.schwaab@ecb.int
+RI Lucas, Andre/E-4054-2018
+OI Lucas, Andre/0000-0003-2807-1102; Schaumburg, Julia/0000-0003-1832-0355
+FU Dutch National Science Foundation (NWO)Netherlands Organization for
+   Scientific Research (NWO) [VENI451-15-022]
+FX Schaumburg thanks the Dutch National Science Foundation (NWO, grant
+   VENI451-15-022) for financial support. The views expressed in this paper
+   are those of the authors and they do not necessarily reflect the views
+   or policies of the European Central Bank.
+CR Acharya V., 2017, MONETARY EASING FINA
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brunnermeier M.K, 2016, WORKING PAPER
+   Coeure B., 2014, ANN DINN ECBS MARK C
+   Dombret A., 2017, SPARK GESPRCHSF WITT
+   Hannoun H., 2015, BIS EUR HIGH LEV SEM
+   Heider F., 2017, WORKING PAPER
+   Lucas A., 2016, 0664 TINB I, P1
+   Rajan R., 2013, BIS A CROCKETT MEMOR
+   Reinhart CM, 2009, AM ECON REV, V99, P466, DOI 10.1257/aer.99.2.466
+NR 10
+TC 4
+Z9 4
+U1 5
+U2 14
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0165-1765
+EI 1873-7374
+J9 ECON LETT
+JI Econ. Lett.
+PD OCT
+PY 2017
+VL 159
+BP 112
+EP 115
+DI 10.1016/j.econlet.2017.07.014
+PG 4
+WC Economics
+SC Business & Economics
+GA FJ3HF
+UT WOS:000412620600027
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Foggitt, GM
+   Heymans, A
+   van Vuuren, GW
+   Pretorius, A
+AF Foggitt, Gregory M.
+   Heymans, Andre
+   van Vuuren, Gary W.
+   Pretorius, Anmar
+TI Measuring the systemic risk in the South African banking sector
+SO SOUTH AFRICAN JOURNAL OF ECONOMIC AND MANAGEMENT SCIENCES
+LA English
+DT Article
+AB Background: In the aftermath of the sub-prime crisis, systemic risk has become a greater priority for regulators, with the National Treasury (2011) stating that regulators should proactively monitor changes in systemic risk.
+   Aim: The aim is to quantify systemic risk as the capital shortfall an institution is likely to experience, conditional to the entire financial sector being undercapitalised.
+   Setting: We measure the systemic risk index (SRISK) of the South African (SA) banking sector between 2001 and 2013. Methods: Systemic risk is measured with the SRISK.
+   Results: Although the results indicated only moderate systemic risk in the SA financial sector over this period, there were significant spikes in the levels of systemic risk during periods of financial turmoil in other countries. Especially the stock market crash in 2002 and the subprime crisis in 2008. Based on our results, the largest contributor to systemic risk during quiet periods was Investec, the bank in our sample which had the lowest market capitalisation. However, during periods of financial turmoil, the contributions of other larger banks increased markedly.
+   Conclusion: The implication of these spikes is that systemic risk levels may also be highly dependent on external economic factors, in addition to internal banking characteristics. The results indicate that the economic fundamentals of SA itself seem to have little effect on the amount of systemic risk present in the financial sector. A more significant relationship seems to exist with the stability of the financial sectors in foreign countries. The implication therefore is that complying with individual banking regulations, such as Basel, and corporate governance regulations promoting ethical behaviour, such as King III, may not be adequate. It is therefore proposed that banks should always have sufficient capital reserves in order to mitigate the effects of a financial crisis in a foreign country. The use of worst-case scenario analyses (such as those in this study) could aid in determining exactly how much capital banks could need in order to be considered sufficiently capitalised during a financial crisis, and therefore safe from systemic risk.
+C1 [Foggitt, Gregory M.; Heymans, Andre; van Vuuren, Gary W.; Pretorius, Anmar] North West Univ, Dept Risk Management, Sch Econ, Potchefstroom, South Africa.
+RP Foggitt, GM (reprint author), North West Univ, Dept Risk Management, Sch Econ, Potchefstroom, South Africa.
+EM gregmf90@gmail.com
+RI Heymans, Andre/W-7520-2019
+OI Heymans, Andre/0000-0003-3879-6887
+FU North-West University School of Economics
+FX We gratefully acknowledge the support of the North-West University
+   School of Economics and the reviewers for their valuable feedback.
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Allen F., 2010, 16177 NAT BUR EC RES
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Bernanke B. S., 2009, TECHNICAL REPORT
+   BIS, 2009, 79 BIS
+   Borio C. E. V., 2009, BIS WORKING PAPERS, V284
+   Brownlees C. T., 2012, VOLATILITY CORRELATI
+   Caruana Jaime, 2010, SYSTEMIC RISK DEAL I
+   Christoffersen PF, 2012, ELEMENTS OF FINANCIAL RISK MANAGEMENT, 2ND EDITION, P1
+   Claessens S., 2013, DEALING CHALLENGES M, P91
+   Claessens S., 2010, 1044 INT MON FUND
+   De Bandt O., 2009, OXFORD HDB BANKING, P633
+   Engle R., 2015, SRISK CONDITIONAL CA
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Georg C. P., 2011, WORKING PAPERS GLOBA, V17
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Hansen L. P., 2012, 18505 NAT BUR EC RES
+   Hull J. C., 2015, RISK MANAGEMENT FINA
+   [International Monetary Fund (IMF) Bank for International Settlements (BIS) & Financial Stability Board (FSTB)], 2009, GUID ASS SYST IMP FI
+   International Monetary Fund (IMF), 2014, 14340 IMF
+   Kim JS, 2015, INVEST ANAL J, V44, P20, DOI 10.1080/10293523.2015.994442
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Mihet R., 2013, DEALING CHALLENGES M, P155
+   RABEMANANJARA R, 1993, J APPL ECONOM, V8, P31, DOI 10.1002/jae.3950080104
+   Ratnovski L., 2012, EXTERNALITIES MACROP
+   Skoglund J, 2015, FINANCIAL RISK MANAG
+   South Africa National Treasury, 2011, SAF FIN SECT SERV S
+   Taylor J.B., 2010, ENDING GOVT BAILOUTS, P33
+   Tong H., 2014, BANK SIZE SYSTEMIC R
+   World Bank, 2015, WORLD DEV IND
+NR 31
+TC 1
+Z9 1
+U1 0
+U2 3
+PU UNIV PRETORIA, DEPT ECONOMICS
+PI PRETORIA
+PA TUKKIEWERF 1-11, PRETORIA, 0002, SOUTH AFRICA
+SN 2222-3436
+J9 S AFR J ECON MANAG S
+JI S. Afr. J. Econ. Manag. Sci.
+PD OCT 24
+PY 2017
+VL 20
+IS 1
+AR a1619
+DI 10.4102/sajems.v20i1.1619
+PG 9
+WC Economics; Management
+SC Business & Economics
+GA GD9IQ
+UT WOS:000430826800001
+OA DOAJ Gold
+DA 2019-12-28
+ER
+PT J
+AU Marshall, D
+   Ruffini, I
+   Anene, D
+AF Marshall, David
+   Ruffini, Ivana
+   Anene, Dominic
+TI When do central counterparties enhance market stability?
+SO JOURNAL OF FINANCIAL MARKET INFRASTRUCTURES
+LA English
+DT Article
+DE financial market; liquidity; contagion; central counterparty (CCP)
+   clearing; bilateral market; market structure.
+ID SYSTEMIC RISK
+AB We conduct a head-to-head comparison of central and bilateral clearing to evaluate the impact of market structure on market stability. We introduce the concept of "allor-nothing" payouts, whereby counterparties are assumed to either discharge their obligations in full or not at all. We argue that this assumption appropriately reflects payout incentives in centrally cleared markets and, in times of market stress, could characterize bilateral markets as well. If this all-or-nothing assumption is made for both structures, we find that central clearing enhances network stability in the event of a severe shock. Our results are ambiguous for small shocks. In addition, wefind that the stability benefits of central clearing are higher for networks with large potential gains from multilateral netting. In contrast, when we replace the all-or-nothing assumption with the pro-rata payout assumption generally made in the literature, we find that the bilateral structure is more stable than the centrally cleared structure. Thus, our assessment of the relative benefits of central clearing depends on whether or not defaulters in the bilateral market are likely to make partial payments under stressed conditions.
+C1 [Marshall, David; Ruffini, Ivana; Anene, Dominic] Fed Reserve Bank Chicago, 230 South LaSalle St, Chicago, IL 60604 USA.
+RP Ruffini, I (reprint author), Fed Reserve Bank Chicago, 230 South LaSalle St, Chicago, IL 60604 USA.
+EM david.marshall@chi.frb.org; ivana.ruffini@chi.frb.org;
+   dominic.j.anene@chi.frb.org
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya V., 2010, WORKING PAPER
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   Anderson S., 2013, J FINANCIAL MARKET I, V1, P3
+   Bank for International Settlements, 2014, REG REF OV THE COUNT
+   Bolton P., 2011, WORKING PAPER
+   Borovkova S., 2013, 2334251 SOC SCI RES
+   Campbell S., 2014, WORKING PAPER
+   Capponi A., 2017, WORKING PAPER
+   Cecchetti S. G., 2009, Q REV
+   Chicago Mercantile Exchange, 2015, CME RUL
+   COMM. PAYMENT & SETTLEMENT SYSTEMS BANK FOR INT'L SETTLEMENTS, 2012, PRINC FIN MARK INFR
+   Cont R, 2014, STATIST RISK MODEL, V31, P3, DOI 10.1515/strm-2013-1161
+   Cox N., 2013, 12 RES BANK AUSTR
+   Duffie D, 2015, J FINANC ECON, V116, P237, DOI 10.1016/j.jfineco.2014.12.006
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Fricke D, 2015, EMPIR ECON, V49, P1463, DOI 10.1007/s00181-015-0919-x
+   Gai P., 2010, 383 BANK ENGL
+   Galbiati M, 2012, J ECON BEHAV ORGAN, V83, P609, DOI 10.1016/j.jebo.2012.05.013
+   Garratt R., 2016, WORKING PAPER
+   Ghamami S, 2016, 1607 OFF FIN RES
+   Group of Twenty, 2009, LEAD DECL PITTSB SUM
+   Haene P, 2009, 20097 SWISS NAT BANK
+   Haldane A.G., 2009, RETHINKING FINANCIAL
+   Heath A., 2015, 201502 RES BANK AUST
+   Heath A, 2016, J FINANC STABIL, V27, P217, DOI 10.1016/j.jfs.2015.12.004
+   Intercontinental Exchange Clear Credit Limited Liability Company, 2015, ICE CLEAR RUL
+   International Swaps and Derivatives Association, 2010, OTC DER INT COMP CLA
+   JPMorgan Chase Office of Regulatory Affairs, 2014, WHAT IS RES PLAN CCP
+   LCH. Clearnet, 2016, LCH CLEARN DEF HIST
+   LCH. Clearnet, 2014, LCH CLEARN RUL
+   Markose S., 2009, COMMUNICATION   1005
+   Marshall D., 2013, EC PERSPECTIVES, V37, P30
+   Murphy D, 2014, 30 BANK ENGL
+   O'Connor S., 2017, REGULATORY POLICY IN
+   Redd C. J., 2005, TREATMENT SECURITI 1
+   Roukny T, 2014, 222014 DTSCH BUND
+   US Securities and Exchange Commission, 2013, NETT CONTR LIM CROSS
+   Zubrow B., 2010, WRITTEN STATEMENT BA
+NR 41
+TC 0
+Z9 0
+U1 0
+U2 0
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2049-5404
+EI 2049-5412
+J9 J FINANC MARK INFRAS
+JI J. Financ. Mark. Infrastruct.
+PY 2017
+VL 6
+IS 2-3
+SI SI
+BP 131
+EP 162
+DI 10.21314/JFMI.2018.092
+PG 32
+WC Business, Finance
+SC Business & Economics
+GA FW9AY
+UT WOS:000425629300007
+DA 2019-12-27
+ER
+
+PT J
+AU Acharya, VV
+   Pedersen, LH
+   Philippon, T
+   Richardson, M
+AF Acharya, Viral V.
+   Pedersen, Lasse H.
+   Philippon, Thomas
+   Richardson, Matthew
+TI Measuring Systemic Risk
+SO REVIEW OF FINANCIAL STUDIES
+LA English
+DT Article
+ID EXPECTED SHORTFALL; FINANCIAL CRISIS; BANKING CRISES; LIQUIDITY;
+   INSURANCE; US; MANAGEMENT; RUNS
+AB We present an economic model of systemic risk in which undercapitalization of the financial sector as a whole is assumed to harm the real economy, leading to a systemic risk externality. Each financial institution's contribution to systemic risk can be measured as its systemic expected shortfall (SES), that is, its propensity to be undercapitalized when the system as a whole is undercapitalized. SES increases in the institution's leverage and its marginal expected shortfall (MES), that is, its losses in the tail of the system's loss distribution. We demonstrate empirically the ability of components of SES to predict emerging systemic risk during the financial crisis of 2007-2009.
+C1 [Acharya, Viral V.; Philippon, Thomas] NYU, Stern Sch Business, CEPR, New York, NY 10003 USA.
+   [Acharya, Viral V.; Philippon, Thomas; Richardson, Matthew] NBER, Cambridge, MA 02138 USA.
+   [Pedersen, Lasse H.] NYU, Copenhagen Business Sch, AQR Capital Management, New York, NY 10003 USA.
+   [Pedersen, Lasse H.] CEPR, London, England.
+   [Richardson, Matthew] NYU, Stern Sch Business, 44 West 4th St, New York, NY 10012 USA.
+RP Acharya, VV (reprint author), NYU, Stern Sch Business, 44 West 4th St, New York, NY 10012 USA.
+EM vacharya@stern.nyu.edu
+RI Pedersen, Lasse Heje/AAE-7552-2019
+OI Pedersen, Lasse Heje/0000-0001-7126-5530
+FU European Research Council (ERC)European Research Council (ERC) [312417];
+   FRIC Center for Financial Frictions [DNRF102]
+FX We would like to thank Rob Engle for many useful discussions. We are
+   grateful to Christian Brownlees, Farhang Farazmand, Hanh Le, and Tianyue
+   Ruan for excellent research assistance. We also received useful comments
+   from Tobias Adrian, Mark Carey, Matthias Drehman, Dale Gray, and Jabonn
+   Kim (discussants), Andrew Karolyi (editor), and seminar participants at
+   several central banks and universities where the current paper and
+   related systemic risk rankings at vlab.stern.nyu.edu/welcome/risk have
+   been presented. Pedersen gratefully acknowledges support from the
+   European Research Council (ERC grant no. 312417) and the FRIC Center for
+   Financial Frictions (grant no. DNRF102). Send correspondence to Viral
+   Acharya, New York University, Stern School of Business, 44 West 4th St.,
+   New York, NY 10012; telephone: (212) 998-0354. E-mail:
+   vacharya@stern.nyu.edu.
+CR Acharya Viral V, 2010, Foundations and Trends in Finance, V4, P247, DOI 10.1561/0500000025
+   Acharya V. V., 2015, DP10108 CEPR
+   Acharya V. V., 2009, RESTORING FINANCIAL, P283
+   Acharya V. V., 2016, EC REGULATION SYSTEM, P100
+   Acharya V, 2014, J MONETARY ECON, V65, P36, DOI 10.1016/j.jmoneco.2014.04.014
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya Viral V., 2009, RESTORING FINANCIAL, V1, P1
+   Adrian T., AM EC REV IN PRESS
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen Franklin, 2007, UNDERSTANDING FINANC
+   Allen L., 2002, CREDIT RISK MEASUREM
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Backus D., 2009, WORKING PAPER
+   Barro RJ, 2006, Q J ECON, V121, P823, DOI 10.1162/qjec.121.3.823
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D., 2012, 0001 OFF FIN RES
+   Borio C., 2009, BIS Q REV, P75
+   Borio C., 2009, BIS Q REV, P29
+   Bostandzic D., 2015, WORKING PAPER
+   Brownlees CT, 2015, WORKING PAPER
+   Brunnermeier M., 2011, WORKING PAPER
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   CAPRIO G, 1996, 1620 WORLD BANK
+   Chodorow-Reich G, 2014, Q J ECON, V129, P1, DOI 10.1093/qje/qjt031
+   Crockett A., 2000, MARRYING MICROMACROP
+   Cummins JD, 2014, WILEY FINANC SER, P85
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Duffie D., 2010, LARGE BANKS FAIL WHA
+   Engle R., REV FINANCI IN PRESS
+   Engle R. F., 2009, LONG RUN SKEWN UNPUB
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Farhi Emmanuel, 2009, WORKING PAPER
+   Flannery M. J., 2005, CAPITAL ADEQUACY BAS
+   Gabaix X, 2009, ANNU REV ECON, V1, P255, DOI 10.1146/annurev.economics.050708.142940
+   Garleanu N, 2007, AM ECON REV, V97, P193, DOI 10.1257/aer.97.2.193
+   Giesecke K, 2011, MANAGE SCI, V57, P1387, DOI 10.1287/mnsc.1110.1375
+   Goodhart C., 2009, WP094 IMF
+   Gray D., 2008, 09015 HARV BUS SCH
+   Gray D., TAIL DEPEND IN PRESS
+   Hansen L., 2014, RISK TOPOGRAPHY SYST, P15
+   Hoggarth G, 2002, J BANK FINANC, V26, P825, DOI 10.1016/S0378-4266(01)00268-0
+   Honohan P., 2000, 2441 WORLD BANK
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Inui K, 2005, J BANK FINANC, V29, P853, DOI 10.1016/j.jbankfin.2004.08.005
+   Kashyap A.K., 2008, KANS CIT S FIN STAB
+   Kelly B, 2014, REV FINANC STUD, V27, P2841, DOI 10.1093/rfs/hhu039
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   Pedersen LH, 2009, INT J CENT BANK, V5, P177
+   Raviv A., 2004, WORKING PAPER
+   Reinhart CM, 2008, AM ECON REV, V98, P339, DOI 10.1257/aer.98.2.339
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Segoviano M., 2009, 0904 IMF
+   Yamai Y, 2005, J BANK FINANC, V29, P997, DOI 10.1016/j.jbankfin.2004.08.010
+   Yorulmazer T., 2010, EC POLICY REV, V16, P89
+   Zingales L., 2009, WORKING PAPER
+NR 64
+TC 162
+Z9 166
+U1 23
+U2 127
+PU OXFORD UNIV PRESS INC
+PI CARY
+PA JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
+SN 0893-9454
+EI 1465-7368
+J9 REV FINANC STUD
+JI Rev. Financ. Stud.
+PD JAN
+PY 2017
+VL 30
+IS 1
+BP 2
+EP 47
+DI 10.1093/rfs/hhw088
+PG 46
+WC Business, Finance; Economics
+SC Business & Economics
+GA EP2SO
+UT WOS:000397233800002
+OA Bronze
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Boako, G
+   Alagidede, P
+AF Boako, Gideon
+   Alagidede, Paul
+TI Examining evidence of 'shift-contagion' in African stock markets: A
+   CoVaR-copula approach
+SO REVIEW OF DEVELOPMENT FINANCE
+LA English
+DT Article
+DE Shift-contagion; Decoupling; CoVaR-copula; Africa; Exchange rates; Stock
+   markets
+ID GLOBAL FINANCIAL CRISIS; SYSTEMIC RISK; INTERDEPENDENCE; TRANSMISSION;
+   TESTS; DEBT
+AB This paper examines for the first time contagion to African stock markets with particular attention to the quantification of, and testing for the impact of (extreme) downside movements in foreign exchange and developed stock markets on the (extreme) downside risks in Africa stock markets. Using data of weekly periodicity, the empirical analysis captured the pre, during (both turmoil and acute), and post periods of the 2007-2009 global financial crisis. We analyzed contagion by comparing (extreme) downside cumulative mean distribution conditional value-at-risk (CoVaR) values for African stock markets for successive periods and tested for significance of contagion using the Kolmogorov-Smirnoff (KS) bootstrap technique. We used the KS statistic to test the hypothesis of equality or no systemic impact between the conditional African stock market return quantiles (for different successive sub-samples). CoVaR values are computed from four copula specifications - Gaussian, Student-t, Gumbel and Rotated Gumbel. By situating the empirical analysis within the shift-contagion thesis, we found evidence of contagion from some exchange rate and developed equity markets to African stocks only in the acute and the post-crisis periods. The findings are consistent with the view that global shocks propagation to developing markets may stagger during crisis and intensify post-crisis. A practical implication from the results is that given the relatively scarce resources and levels of technological know-how available to African governments, efforts to wean the continents equity markets from adverse effects of global market crashes should be geared towards plans and programmes to mitigate the shocks not at the early stages but latter stages, where the effects to Africa could be pronouncedly felt. (C) 2017 Africagrowth Institute. Production and hosting by Elsevier B.V.
+C1 [Boako, Gideon; Alagidede, Paul] Univ Witwatersrand, Wits Business Sch, 2 St Davids Pl, ZA-2193 Johannesburg, South Africa.
+RP Alagidede, P (reprint author), Univ Witwatersrand, Wits Business Sch, 2 St Davids Pl, ZA-2193 Johannesburg, South Africa.
+EM paul.alagidede@wits.ac.za
+CR Abadie A, 2002, J AM STAT ASSOC, V97, P284, DOI 10.1198/016214502753479419
+   Adrian T., 2011, NBER WORKING PAPER S
+   Ahmed AD, 2014, ECON MODEL, V42, P1, DOI 10.1016/j.econmod.2014.05.040
+   Alagidede P., 2008, P AFR EC C, P26
+   Albuquerque R, 2009, J FINANC ECON, V94, P18, DOI 10.1016/j.jfineco.2008.06.008
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Beck T, 2009, 5020 WORLD BANK AFR, P1
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bekaert G, 2014, EMERGING EQUITY MARK
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Boako G, 2017, PHYSICA A, V468, P359, DOI 10.1016/j.physa.2016.10.088
+   Brambila-Macias J, 2010, AFR DEV REV, V22, P366, DOI 10.1111/j.1467-8268.2010.00251.x
+   Celik S, 2012, ECON MODEL, V29, P1946, DOI 10.1016/j.econmod.2012.06.011
+   Claessens S, 2010, ECON POLICY, P267
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Daryl C., 2002, J ECON BUS, V55, P285
+   Dooley M, 2009, J INT MONEY FINANC, V28, P1331, DOI 10.1016/j.jimonfin.2009.08.004
+   Dungey M, 2015, J BANK FINANC, V60, P271, DOI 10.1016/j.jbankfin.2015.08.007
+   Fitz-Gerald K., 2010, FRONTIERS EC GLOBALI, V9
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Forbes KJ, 2004, J INT ECON, V63, P59, DOI 10.1016/S0022-1996(03)00044-8
+   Giovannetti G, 2013, REV DEV FINANC, V3, P169, DOI 10.1016/j.rdf.2013.10.002
+   Gulko L, 2002, J PORTFOLIO MANAGE, V28, P59, DOI 10.3905/jpm.2002.319843
+   Hwang I., 2010, FIN CORP GOV C 2010
+   IMF, 2010, IMF REG EC OUTL REP
+   Joe H., 1997, MONOGRAPHS STAT PROB, V73
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Kasekende L., 2009, AFRICAN DEV BANK WOR, V96
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kodongo O, 2011, J BANK FINANC, V35, P2295, DOI 10.1016/j.jbankfin.2011.01.033
+   Louis K., 2009, WORKING PAPER SERIES, V96, P36
+   Mishkin F. S., 2011, J ECON PERSPECT, V25, P2920
+   Naoui K, 2010, INT J EC FINANC, V2, P85, DOI DOI 10.5539/IJEF.V2N3P85
+   Ncube M., 2014, WORKING PAPER SERIES, V198
+   Nelsen R. B, 2006, INTRO COPULAS
+   Pritsker M., 2000, CONT C
+   Pukthuanthong K, 2009, J FINANC ECON, V94, P214, DOI 10.1016/j.jfineco.2008.12.004
+   Pula G., 2009, EUROPEAN CENTRAL BAN, V993
+   Reboredo JC, 2016, J BANK FINANC, V62, P76, DOI 10.1016/j.jbankfin.2015.10.011
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Sheu HJ, 2012, J BUS ECON MANAG, V13, P895, DOI 10.3846/16111699.2011.620168
+   Simatele M., 2014, AFR GROWTH AGENDA, P18
+   Sugimoto K, 2014, EMERG MARK REV, V21, P201, DOI 10.1016/j.ememar.2014.09.004
+NR 43
+TC 2
+Z9 2
+U1 0
+U2 2
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1879-9337
+J9 REV DEV FINANC
+JI Rev. Dev. Financ.
+PD DEC
+PY 2017
+VL 7
+IS 2
+BP 142
+EP 156
+DI 10.1016/j.rdf.2017.09.001
+PG 15
+WC Business, Finance
+SC Business & Economics
+GA FQ9CU
+UT WOS:000418660800006
+OA DOAJ Gold
+DA 2019-12-27
+ER

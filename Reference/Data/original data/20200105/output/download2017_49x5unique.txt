@@ -1,0 +1,450 @@
+
+PT J
+AU Cerchiello, P
+   Giudici, P
+AF Cerchiello, Paola
+   Giudici, Paolo
+TI Categorical network models for systemic risk measurement
+SO QUALITY & QUANTITY
+LA English
+DT Article
+DE Financial risk management; Continuous and discrete graphical models;
+   Twitter data analysis
+ID SELECTION
+AB A very important area of financial risk management is systemic risk modelling, which concerns the estimation of the interrelationships between financial institutions, with the aim of establishing which of them are more central and, therefore, more contagious/subject to contagion. The aim of this paper is to develop a systemic risk model which, differently from existing ones, employs not only the information contained in financial market prices, but also big data coming from financial tweets. From a methodological viewpoint, we propose a new framework, based on categorical graphical models, that can estimate systemic risks with models based on two different sources: financial markets and financial tweets, and suggest a way to combine them, using a Bayesian approach. From an applied viewpoint, we present the first systemic risk model based on big data, and show that such a model can shed further light on the interrelationships between financial institutions. This can help predicting the level of returns of a bank, conditionally on the others, for example when a shock occurs in another bank.
+C1 [Cerchiello, Paola; Giudici, Paolo] Univ Pavia, DEMS, Pavia, Italy.
+RP Cerchiello, P (reprint author), Univ Pavia, DEMS, Pavia, Italy.
+EM paola.cerchiello@unipv.it
+RI Giudici, Paolo Stefano/AAD-7430-2019
+OI Giudici, Paolo Stefano/0000-0002-4198-0127
+CR Acharya V, 2010, MEASURING SYSTEMIC R
+   Adrian T., 2009, COVAR TECHNICAL REPO
+   Banerjee O, 2008, J MACH LEARN RES, V9, P485
+   Benoit S, 2015, FIN20151088 HEC
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bollen J, 2011, J COMPUT SCI-NETH, V2, P1, DOI 10.1016/j.jocs.2010.12.007
+   Bordino I, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0040014
+   Brownlees C., 2011, TECHNICAL REPORT
+   Choi HY, 2012, ECON REC, V88, P2, DOI 10.1111/j.1475-4932.2012.00809.x
+   Dawid A. P., 1993, HYPER MARKOV LAWS ST
+   Denev A., 2014, FINANCIAL NETWORKS D
+   Denev A., 2015, ANN STAT, V321, P1272
+   Feldman R, 2013, COMMUN ACM, V56, P82, DOI 10.1145/2436256.2436274
+   Giudici P, 2016, J BUS ECON STAT, V34, P128, DOI 10.1080/07350015.2015.1017643
+   Giudici P., 2003, APPL DATA MINING
+   Kenett DY, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0015032
+   Lauritzen S. L., 1996, GRAPHICAL MODELS
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Ravikumar P, 2010, ANN STAT, V38, P1287, DOI 10.1214/09-AOS691
+   Vasicek O.A., 1984, CREDIT VALUATION
+   Whittaker J. W., 1990, GRAPHICAL MODELS APP
+   Yang E., 2014, JMLR WORKSHOP C P, P1042
+NR 22
+TC 0
+Z9 0
+U1 1
+U2 15
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0033-5177
+EI 1573-7845
+J9 QUAL QUANT
+JI Qual. Quant.
+PD JUL
+PY 2017
+VL 51
+IS 4
+BP 1593
+EP 1609
+DI 10.1007/s11135-016-0354-x
+PG 17
+WC Social Sciences, Interdisciplinary; Statistics & Probability
+SC Social Sciences - Other Topics; Mathematics
+GA EX9KA
+UT WOS:000403575600010
+DA 2019-12-27
+ER
+
+PT J
+AU Grigat, D
+   Caccioli, F
+AF Grigat, Daniel
+   Caccioli, Fabio
+TI Reverse stress testing interbank networks
+SO SCIENTIFIC REPORTS
+LA English
+DT Article
+ID SYSTEMIC RISK; CONTAGION
+AB We reverse engineer dynamics of financial contagion to find the scenario of smallest exogenous shock that, should it occur, would lead to a given final systemic loss. This reverse stress test can be used to identify the potential triggers of systemic events, and it removes the arbitrariness in the selection of shock scenarios in stress testing. We consider in particular the case of distress propagation in an interbank market, and we study a network of 44 European banks, which we reconstruct using data collected from banks statements. By looking at the distribution across banks of the size of smallest exogenous shocks we rank banks in terms of their systemic importance, and we show the effectiveness of a policy with capital requirements based on this ranking. We also study the properties of smallest exogenous shocks as a function of the parameters that determine the endogenous amplification of shocks. We find that the size of smallest exogenous shocks reduces and that the distribution across banks becomes more localized as the system becomes more unstable.
+C1 [Grigat, Daniel; Caccioli, Fabio] UCL, Dept Comp Sci, London WC1E 6BT, England.
+   [Caccioli, Fabio] London Sch Econ, Syst Risk Ctr, London WC2A 2AE, England.
+RP Caccioli, F (reprint author), UCL, Dept Comp Sci, London WC1E 6BT, England.; Caccioli, F (reprint author), London Sch Econ, Syst Risk Ctr, London WC2A 2AE, England.
+EM f.caccioli@ucl.ac.uk
+FU Economic and Social Research Council (ESRC)Economic & Social Research
+   Council (ESRC) [ES/K002309/1]; Engineering and Physical Sciences
+   Research CouncilEngineering & Physical Sciences Research Council (EPSRC)
+   [EPSRC/EP/L015129/1]
+FX We thank J. Doyne Farmer and Pierpaolo Vivo for useful comments. F.C.
+   acknowledges support of the Economic and Social Research Council (ESRC)
+   in funding the Systemic Risk Centre (ES/K002309/1). D.G. acknowledges a
+   PhD scholarship of the Engineering and Physical Sciences Research
+   Council (EPSRC/EP/L015129/1).
+CR Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   BACHARACH M, 1965, INT ECON REV, V6, P294, DOI 10.2307/2525582
+   Bardoscia M, 2017, NAT COMMUN, V8, DOI 10.1038/ncomms14416
+   Bardoscia M, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0163825
+   Bardoscia M, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0130406
+   Barucca P., 2016, NETWORK VALUATION FI
+   Basel Committee on Banking Supervision (Basel), 2011, BAS 3 GLOB REG FRAM
+   Battiston S, 2016, STATIST RISK MODEL, V33, P117, DOI 10.1515/strm-2015-0005
+   Battiston S, 2016, J ALTERN INVEST, V18, P68, DOI 10.3905/jai.2016.18.4.068
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Birch A, 2014, J STAT PHYS, V156, P998, DOI 10.1007/s10955-014-1040-9
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Caccioli F, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500580
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cimini G, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0161642
+   Cimini G, 2015, SCI REP-UK, V5, DOI 10.1038/srep15758
+   Clerc L, 2016, EUROPEAN SYSTEMIC RI
+   Cont R, 2016, FIRE SALES INDIRECT
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Duarte F, 2015, 645 FRB NEW YORK STA
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   European Banking Authority, 2016, 2016 EU WID STRESS T
+   Financial Stability Board, 2015, 2015 UPD LIST GLOB S
+   Finger K, 2013, COMPUT MANAG SCI, V10, P187, DOI 10.1007/s10287-013-0171-9
+   Flood MD, 2015, QUANT FINANC, V15, P43, DOI 10.1080/14697688.2014.926018
+   Fricke D, 2013, TECH REP
+   Gai P, 2010, P ROYAL SOC LOND MAT
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Grundke P, 2015, 302015 BUND
+   Hackett A, 2016, PHYS REV X, V6, DOI 10.1103/PhysRevX.6.021002
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Liu YY, 2011, NATURE, V473, P167, DOI 10.1038/nature10011
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   McNeil AJ, 2012, INSUR MATH ECON, V50, P299, DOI 10.1016/j.insmatheco.2011.12.005
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Petrone D, 2016, ARXIV161000795
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   RBS, 2009, GROUP ANN REP 2008
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Squartini T, 2013, ARXIV13022063
+   Tedeschi G, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0052749
+   UBS, 2009, ANN REP 2008
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Visentin G., 2016, RETHINKING FINANCIAL
+NR 57
+TC 1
+Z9 1
+U1 1
+U2 3
+PU NATURE PUBLISHING GROUP
+PI LONDON
+PA MACMILLAN BUILDING, 4 CRINAN ST, LONDON N1 9XW, ENGLAND
+SN 2045-2322
+J9 SCI REP-UK
+JI Sci Rep
+PD NOV 15
+PY 2017
+VL 7
+AR 15616
+DI 10.1038/s41598-017-14470-1
+PG 11
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA FM7NO
+UT WOS:000415265800027
+PM 29142251
+OA DOAJ Gold, Green Accepted, Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Akimova, LM
+   Akimov, OO
+   Liakhovich, OO
+AF Akimova, L. M.
+   Akimov, O. O.
+   Liakhovich, O. O.
+TI STATE REGULATION OF FOREIGN ECONOMIC ACTIVITY
+SO SCIENTIFIC BULLETIN OF POLISSIA
+LA English
+DT Article
+DE risk; customs risk; customs risk management; customs risk management;
+   public administration; state regulation
+AB Urgency of the research. The article analyzes the mechanisms of state regulation of foreign economic activity, carried out under the influence of globalization trends, integration processes and modernized in the context of security.
+   Target setting. Strengthening the state as a public institution is accompanied by the development of its many functions, in particular economic. The study of mechanisms of state regulation of foreign economic activity proves that it is a multi-level and multifaceted phenomenon.
+   Actual scientific researches and issues analysis. The issues of research in risk management and customs administration are rather actively engaged in such Ukrainian scientists as Algin A. P., Berezhnyuk I. G., Pashko P. V., Tereshchenko S. S. and others.
+   Uninvestigated parts of general matters defining. At the same time, many theoretical and practical questions of the problems remain little studied in terms of complexity and systemic nature, which gives grounds to assert that it is necessary to study the experience of mechanisms of state regulation of foreign economic activity.
+   The research objective. It consists in the substantiation of theoretical, methodological and applied provisions for the improvement of mechanisms of state regulation of foreign economic activity.
+   The statement of basic materials. The uniqueness of customs is that by keeping balance on interstate borders, it provides protection from external threats to national customs interests and security by implementing a balanced state customs policy in accordance with strategic priorities in the field of state customs.
+   Conclusions. One of the tasks solved within the framework of management in the customs system, as an element or subsystem of public administration in general, is the administration of customs risks. Therefore, the customs authorities should manage their risks, while the administration of risks should be viewed not as a specific separate or independent direction of work, but as an integral part of the customs administration as a whole.
+C1 [Akimova, L. M.; Liakhovich, O. O.] Natl Univ Water & Environm Engn, Kiev, Ukraine.
+   [Akimov, O. O.] Vernadsky Taurida Natl Univ, Kiev, Ukraine.
+RP Akimova, LM (reprint author), Natl Univ Water & Environm Engn, Kiev, Ukraine.
+EM l_akimova@ukr.net; 1970aaa@ukr.net; o.o.liakhovych@nuwm.edu.ua
+RI Akimova Liudmyla .M., Акімова Людмила./A-9831-2017; Akimova,
+   Luidmyla/F-4027-2018; Akimov, O.O./AAD-4279-2019
+OI Akimova Liudmyla .M., Акімова Людмила./0000-0002-2747-2775; Akimov,
+   O.O./0000-0002-9557-2276
+CR [Anonymous], 2012, HDB BEST PRACTICES B
+   Berezhnyuk I. H., 2007, VISNYK AKAD MYTNOI S, V4, P8
+   Hintsa J., 2011, CUSTOMS RISK MANAGEM
+   Widdowson D., 2011, CORE BORDER MANAGEME
+   World Customs Organization, 2011, RISK MAN COMP
+NR 5
+TC 3
+Z9 3
+U1 0
+U2 6
+PU CHERNIHIV NATL UNIV TECHNOLOGY
+PI CHERNIHIV
+PA STRILETSKA STR, 1-112, CHERNIHIV, 140033, UKRAINE
+SN 2410-9576
+EI 2225-5508
+J9 SCI BULL POLISSIA
+JI Sci. Bull. Polissia
+PY 2017
+IS 4
+BP 98
+EP 103
+DI 10.25140/2410-9576-2017-1-4(12)-98-103
+PG 6
+WC Economics
+SC Business & Economics
+GA FW9HR
+UT WOS:000425646800015
+OA Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU IJtsma, P
+   Spierdijk, L
+   Shaffer, S
+AF IJtsma, Pieter
+   Spierdijk, Laura
+   Shaffer, Sherrill
+TI The concentration-stability controversy in banking: New evidence from
+   the EU-25
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article; Proceedings Paper
+CT 5th International Conference of the
+   Financial-Engineering-and-Banking-Society (FEBS)
+CY JUN 11-13, 2015
+CL Nantes, FRANCE
+SP Financial Engn & Banking Soc, Audencia Business Sch, Ctr Financial & Risk Management, French Finance Assoc, Journal Financial Stabil
+DE Banking concentration; Financial stability; Market structure; Systemic
+   risk
+ID FINANCIAL STABILITY; DEPOSIT INSURANCE; MARKET-POWER; INDUSTRY
+   STRUCTURE; RISK-TAKING; COMPETITION; INFORMATION; POLICY; CONSOLIDATION;
+   MODELS
+AB This study explores whether the concentration-stability relation is affected by the level of analysis; i.e., bank-level versus country-level stability. The diverging results in the literature suggest that we may indeed expect differences between the two levels. With the z-score as the measure of financial stability, our theoretical analysis confirms that we may find such differences. Yet our empirical analysis for the EU-25 during the 1998-2014 period finds no economically significant effect of concentration on either the bank-level or the country-level z-score. The finding that concentration hardly affects stability at both levels of analysis is an indication of robustness in the empirical concentration-stability relation not previously established in the literature. This finding further suggests that neither supervisory restructuring, nor normal market-driven mergers, are likely to be substantially harmful to financial stability. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [IJtsma, Pieter; Spierdijk, Laura] Univ Groningen, Fac Econ & Business, Dept Econ Econometr & Finance, POB 800, NL-9700 AV Groningen, Netherlands.
+   [Shaffer, Sherrill] Univ Wyoming, Dept Econ & Finance, 1000 East Univ Ave, Laramie, WY 82071 USA.
+   [Shaffer, Sherrill] Australian Natl Univ, CAMA, Canberra, ACT, Australia.
+RP IJtsma, P (reprint author), Univ Groningen, Fac Econ & Business, Dept Econ Econometr & Finance, POB 800, NL-9700 AV Groningen, Netherlands.
+EM p.a.ijtsma@rug.nl; l.spierdijk@rug.nl; Shaffer@uwyo.edu
+FU Vidi grant in the Vernieuwingsimpuls-program of the Netherlands
+   Organization for Scientific Research [452.11.007]
+FX Laura Spierdijk gratefully acknowledges financial support by a Vidi
+   grant (452.11.007) in the Vernieuwingsimpuls-program of the Netherlands
+   Organization for Scientific Research. The authors are grateful to Tom
+   Wansbeek, Lammert-Jan Dam and Eduard Suari Andreu for numerous helpful
+   suggestions. In addition, we thank the participants of the 5th
+   International Conference of the Financial Engineering and Banking
+   Society in Nantes and those of the SOM PhD Conference 2015 in Groningen
+   for helpful comments. We also express our gratitude to Andre Uhde for
+   helping us with obtaining the necessary data. Finally, we would like to
+   thank two anonymous referees and the editor Iftekhar Hasan for their
+   helpful suggestions.
+CR Allen F, 2004, J MONEY CREDIT BANK, V36, P453, DOI 10.1353/mcb.2004.0038
+   Allen F., 2000, COMP FINANCIAL SYSTE
+   Babyak MA, 2004, PSYCHOSOM MED, V66, P411, DOI 10.1097/01.psy.0000127692.23278.a9
+   BAUMOL WJ, 1982, AM ECON REV, V72, P1
+   Beck T, 2006, J BANK FINANC, V30, P1581, DOI 10.1016/j.jbankfin.2005.05.010
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Berger AN, 2009, J FINANC SERV RES, V35, P99, DOI 10.1007/s10693-008-0050-7
+   BERGER AN, 1995, J MONEY CREDIT BANK, V27, P404, DOI 10.2307/2077876
+   Bikker J., 2004, COMPETITION EFFICIEN
+   Bikker JA, 2012, REV ECON STAT, V94, P1025, DOI 10.1162/REST_a_00210
+   Boyd J., 2009, WORKING PAPER
+   Boyd J. H., 2010, WORKING PAPER
+   Boyd JH, 2005, J FINANC, V60, P1329, DOI 10.1111/j.1540-6261.2005.00763.x
+   BOYD JH, 1993, J BANK FINANC, V17, P43, DOI 10.1016/0378-4266(93)90079-S
+   BOYD JH, 1993, J MONETARY ECON, V31, P47, DOI 10.1016/0304-3932(93)90016-9
+   Cameron AC, 2008, REV ECON STAT, V90, P414, DOI 10.1162/rest.90.3.414
+   CHAN YS, 1986, J BANK FINANC, V10, P243, DOI 10.1016/0378-4266(86)90008-7
+   Cordella T, 2002, EUR ECON REV, V46, P471, DOI 10.1016/S0014-2921(01)00150-7
+   Corvoisier S, 2002, J BANK FINANC, V26, P2155, DOI 10.1016/S0378-4266(02)00204-2
+   Dam L, 2012, REV FINANC STUD, V25, P2343, DOI 10.1093/rfs/hhs056
+   De Nicolo G., 2009, WORKING PAPER
+   De Nicolo G., 2007, WORKING PAPER
+   De Nicolo G., 2000, SIZE CHARTER VALUE R
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   Demirguc-Kunt A, 2002, J MONETARY ECON, V49, P1373, DOI 10.1016/S0304-3932(02)00171-X
+   DEMSETZ H, 1973, J LAW ECON, V16, P1, DOI 10.1086/466752
+   DENICOLO G, 2004, FINANCIAL MARKETS I, V13, P173, DOI DOI 10.1111/FMII.2004.13.ISSUE-4
+   Duprey T., 2015, WORKING PAPER
+   Fiordelisi F, 2014, J INT MONEY FINANC, V45, P1, DOI 10.1016/j.jimonfin.2014.02.008
+   Fu XQ, 2014, J BANK FINANC, V38, P64, DOI 10.1016/j.jbankfin.2013.09.012
+   Granger CWJ, 1998, STAT NEERL, V52, P258, DOI 10.1111/1467-9574.00084
+   HANNAN TH, 1988, J MONEY CREDIT BANK, V20, P203, DOI 10.2307/1992111
+   Hauswald R, 2006, REV FINANC STUD, V19, P967, DOI 10.1093/rfs/hhj021
+   Im KS, 2003, J ECONOMETRICS, V115, P53, DOI 10.1016/S0304-4076(03)00092-7
+   Jimenez G, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.02.004
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Laeven L, 2003, J FINANC INTERMED, V12, P178, DOI 10.1016/S1042-9573(03)00016-0
+   Lepetit L, 2015, FINANC RES LETT, V13, P214, DOI 10.1016/j.frl.2015.01.001
+   Lepetit L, 2013, J INT FINANC MARK I, V25, P73, DOI 10.1016/j.intfin.2013.01.004
+   MARCUS AJ, 1984, J BANK FINANC, V8, P557, DOI 10.1016/S0378-4266(84)80046-1
+   Marquez R, 2002, REV FINANC STUD, V15, P901, DOI 10.1093/rfs/15.3.901
+   Mishkin FS, 1999, J BANK FINANC, V23, P675, DOI 10.1016/S0378-4266(98)00084-3
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Repullo R, 2004, J FINANC INTERMED, V13, P156, DOI 10.1016/j.jfi.2003.08.005
+   Rhoades SA, 1995, REV IND ORGAN, V10, P657, DOI 10.1007/BF01024300
+   Roy AD, 1952, ECONOMETRICA, V20, pA431
+   Saez L., 2004, J FINANCIAL SERVICES, V25, P5
+   Schaeck K, 2009, J MONEY CREDIT BANK, V41, P711, DOI 10.1111/j.1538-4616.2009.00228.x
+   SMIRLOCK M, 1985, J MONEY CREDIT BANK, V17, P69, DOI 10.2307/1992507
+   Stock JH, 2002, J BUS ECON STAT, V20, P518, DOI 10.1198/073500102288618658
+   Uhde A, 2009, J BANK FINANC, V33, P1299, DOI 10.1016/j.jbankfin.2009.01.006
+   Vives X, 2011, OXFORD REV ECON POL, V27, P479, DOI 10.1093/oxrep/grr021
+NR 52
+TC 8
+Z9 8
+U1 0
+U2 4
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2017
+VL 33
+BP 273
+EP 284
+DI 10.1016/j.jfs.2017.06.003
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA FO9DW
+UT WOS:000417189200018
+DA 2019-12-28
+ER
+
+PT J
+AU Jondeau, E
+   Khalilzadeh, A
+AF Jondeau, Eric
+   Khalilzadeh, Amir
+TI Collateralization, leverage, and stressed expected loss
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article; Proceedings Paper
+CT 5th International Conference of the
+   Financial-Engineering-and-Banking-Society (FEBS)
+CY JUN 11-13, 2015
+CL Nantes, FRANCE
+SP Financial Engn & Banking Soc, Audencia Business Sch, Ctr Financial & Risk Management, French Finance Assoc, Journal Financial Stabil
+DE Real business cycle; Capital shortfall; Systemic risk; Collateral;
+   Leverage
+ID LIQUIDITY PROVISION; MONETARY-POLICY; FIRE SALES; MODEL; CREDIT; COSTS;
+   RISK
+AB We describe a general equilibrium model with a banking system in which the deposit bank collects deposits from households and the merchant bank provides funds to firms. The merchant bank borrows collateralized short-term funds from the deposit bank. In an economic downturn, as the value of collateral decreases, the merchant bank must sell assets on short notice, reinforcing the crisis, and defaults if its cash buffer is insufficient. The deposit bank suffers from losses because of the depreciated assets. If the value of the deposit bank's assets is insufficient to cover deposits, it also defaults. Deposits are insured by the government, with a premium paid by the deposit bank equal to its expected loss on the deposits. We define the bank's capital shortfall in the crisis as the expected loss on deposits under stress. We calibrate the model on the U.S. economy and show how this measure of stressed expected loss behaves for different calibrations of the model. A 40% decline of the securities market would induce a loss of 12.5% in the ex-ante value of deposits. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Jondeau, Eric] Swiss Finance Inst, CH-1015 Lausanne, Switzerland.
+   [Jondeau, Eric; Khalilzadeh, Amir] Univ Lausanne, Fac Business & Econ, CH-1015 Lausanne, Switzerland.
+RP Jondeau, E (reprint author), Swiss Finance Inst, CH-1015 Lausanne, Switzerland.; Jondeau, E (reprint author), Univ Lausanne, Fac Business & Econ, CH-1015 Lausanne, Switzerland.
+EM Eric.Jondeau@unil.ch; Amir.Khalilzadeh@unil.ch
+RI Jondeau, Eric/D-2072-2018
+CR Acharya V., 2012, 8824 CERP
+   Acharya VV, 2007, J FINANC ECON, V85, P787, DOI 10.1016/j.jfineco.2006.05.011
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   ALLEN F, 1994, AM ECON REV, V84, P933
+   Angeloni I, 2013, J MONETARY ECON, V60, P311, DOI 10.1016/j.jmoneco.2013.01.003
+   AVRAHAM D, 2012, EC POLICY REV, V18, P65
+   Aymanns C, 2016, J FINANC STABIL, V27, P263, DOI 10.1016/j.jfs.2016.02.004
+   Begenau Juliane, 2015, WORKING PAPER
+   BERNANKE B, 1989, AM ECON REV, V79, P14
+   Bernanke BS, 1999, HBK ECON, V15, P1341
+   Bisias D., 2012, SURVEY SYSTEMIC RISK
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Carlstrom C., 1989, AM ECON REV, V87, P893
+   Christiano LJ, 2014, AM ECON REV, V104, P27, DOI 10.1257/aer.104.1.27
+   Christiano Lawrence J., 2010, 1192 ECB
+   de Walque G, 2010, ECON J, V120, P1234, DOI 10.1111/j.1468-0297.2010.02383.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Dib A., 2010, 201026 BANK CAN
+   Duarte F, 2013, 645 FED RES BANK NEW
+   Federal Reserve System, 2016, FIN NAT ACC US
+   Fostel A, 2008, AM ECON REV, V98, P1211, DOI 10.1257/aer.98.4.1211
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gerali A, 2010, J MONEY CREDIT BANK, V42, P107, DOI 10.1111/j.1538-4616.2010.00331.x
+   Gertler M, 2010, HDB MACROECONOMICS, P547, DOI DOI 10.1016/13978-0-444-53238-1.00011-9
+   Gertler M, 2011, J MONETARY ECON, V58, P17, DOI 10.1016/j.jmoneco.2010.10.004
+   Gilson SC, 1997, J FINANC, V52, P161, DOI 10.2307/2329560
+   He ZG, 2012, REV ECON STUD, V79, P735, DOI 10.1093/restud/rdr036
+   He ZG, 2013, AM ECON REV, V103, P732, DOI 10.1257/aer.103.2.732
+   He ZG, 2010, IMF ECON REV, V58, P118, DOI 10.1057/imfer.2010.6
+   He Zhiguo, 2014, 19885 NBER
+   Holmstrom B, 1998, J POLIT ECON, V106, P1, DOI 10.1086/250001
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Koulischer F, 2014, J BANK FINANC, V49, P113, DOI 10.1016/j.jbankfin.2014.08.022
+   Kuhl M., 2014, 19 DTSCH BUND
+   Martinez-Miera D., 2014, WORKING PAPER
+   Martinez-Miera D., 2015, WORKING PAPER
+   Nuno G., 2013, 1524 ECB
+   Pozsar Zoltan, 2012, 458 FED RES BANK NEW
+   Rubio M, 2016, J FINANC STABIL, V26, P294, DOI 10.1016/j.jfs.2016.07.012
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Smets F, 2003, J EUR ECON ASSOC, V1, P1123, DOI 10.1162/154247603770383415
+   Xiong W, 2001, J FINANC ECON, V62, P247, DOI 10.1016/S0304-405X(01)00078-2
+NR 48
+TC 2
+Z9 2
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2017
+VL 33
+BP 226
+EP 243
+DI 10.1016/j.jfs.2017.01.005
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA FO9DW
+UT WOS:000417189200015
+DA 2019-12-28
+ER

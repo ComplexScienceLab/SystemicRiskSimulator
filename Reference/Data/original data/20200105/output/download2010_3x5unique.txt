@@ -1,0 +1,484 @@
+
+PT J
+AU Castellano, G
+AF Castellano, Giuliano
+TI Governing Ignorance: Emerging Catastrophic Risks-Industry Responses and
+   Policy Frictions
+SO GENEVA PAPERS ON RISK AND INSURANCE-ISSUES AND PRACTICE
+LA English
+DT Article; Proceedings Paper
+CT 13th Joint Seminar of the
+   International-Association-for-the-Study-of-Insurance-Economics/European-
+   Association-of-Law-and-Economics
+CY MAY 11-12, 2009
+CL Milan, ITALY
+SP Bocconi Univ, Dept Law
+DE emerging catastrophic risks; new risks; pooling; precautionary
+   principle; antitrust; Block Exemption Regulation
+ID INSURANCE
+AB The growing interconnections between people, markets and networks together with the development of new technologies have increased the frequency and impact of large-scale disasters around the globe. Many of these events, defined as emerging catastrophic (or systemic) risks, have no previous record. At the same time there is a strong probability that their frequency and impact will increase in the future. This paper takes a governance perspective by assuming that policy actions should be designed to cope with ignorance and large-scale losses, being the primary features characterising such emerging catastrophic risks. Precisely, the governance activity should aim both at expanding the industries' capacity to absorb losses and at acquiring more information about frequency and impact of such losses. However, it appears that some solutions may conflict with policy objectives. In particular, direct governmental interventions to compensate victims and stringent antitrust policy goals might block the development of a market for first-party property insurance for emerging systemic risks. This paper elicits crucial points that require further elaboration by policy-makers, thereby stressing the importance of providing a workable legal definition of such line of risk that embraces the precautionary principle. The Geneva Papers (2010) 35, 391-415. doi:10.1057/gpp.2010.11
+C1 [Castellano, Giuliano] Ecole Polytech, F-75739 Paris 15, France.
+   [Castellano, Giuliano] PREG CRG ENSTA, Int Univ Coll Turin, F-75739 Paris 15, France.
+RP Castellano, G (reprint author), Ecole Polytech, 32 Blvd Victor, F-75739 Paris 15, France.
+EM giuliano.castellano@polytechnique.edu
+RI Castellano, Giuliano G./O-6693-2019; Castellano, Giuliano/H-3002-2015
+OI Castellano, Giuliano G./0000-0002-4752-8959; Castellano,
+   Giuliano/0000-0002-4752-8959
+CR AKERLOF GA, 1970, Q J ECON, V84, P488, DOI 10.2307/1879431
+   Baker T., 2002, 4 U CONN SCH LAW
+   Baker Tom, 2002, EMBRACING RISK CHANG
+   *BIPAR, 2009, CONS DRAFT NEW INS B
+   Bordo M., 2001, ECON POLICY, P53
+   Browne MJ, 2000, J RISK UNCERTAINTY, V20, P291, DOI 10.1023/A:1007823631497
+   Buchanan J.M., 1975, ALTRUISM MORALITY EC
+   Calabresi G, 1970, COST ACCIDENTS LEGAL
+   Cooter Robert, 2000, LAW EC
+   Crichton D, 2008, GENEVA PAP R I-ISS P, V33, P117, DOI 10.1057/palgrave.gpp.2510151
+   Dacy D. D., 1969, EC NATURAL DISASTER
+   Fairgrieve Duncan, 2007, MOD LAW REV, V70, P962
+   FAURE M, 2002, C GLOB ISS INS REG L
+   FAURE M, 2006, TORT INSURANCE LAW, V14
+   FAURE M, 2003, EC ANAL ENV POLICY L
+   Faure M., 1991, GENEVA PAP RISK INS, V16, P39
+   Faure MG, 1990, INT REV LAW ECON, V10, P241
+   *FERMA, 2009, PUBL CONS REV COMP R
+   Grossi P, 2005, HUEBNER INT SER RISK, V25, P1, DOI 10.1007/b100669
+   HAVENS CW, 1985, ANTITRUST LJ, V54, P1299
+   *IAIS, 2009, DEV REINS SEC
+   Jaffee DM, 1997, J RISK INSUR, V64, P205, DOI 10.2307/253729
+   LANE M, 2002, ALTERNATIVE RISK STR
+   MICHELKERJAN E, 2008, J REINSURANCE, V15, P1
+   MICHELKERJAN E, 2008, IRR EC C 4 5 DEC
+   MICHELKERJAN E, 2005, REGULATION MAGAZINE
+   MONTI A, 2008, OECD POLICY ISSUES I, V12
+   MONTI A, 2009, W NW J ENV LAW POLIC, V15, P151
+   MONTI A, 2006, FINANCIAL COMPENSATI
+   O'Malley Pat., 2004, BLACKWELL COMPANION, P292
+   Organization for Economic Cooperation and Development (OECD), 2003, EM SYST RISKS 21 CEN
+   POSNER RICHARD A., 2004, CATASTROPHE RISK RES
+   REJDA EG, 1998, PRINCIPLES RISK MANA
+   Schwarze Reimund, 2007, European Environment, V17, P403, DOI 10.1002/eet.456
+   SCOTT S, 2008, INT FINANCE TRANSACT
+   Shavell S., 2004, FDN EC ANAL LAW
+   SISK M, 2002, US BANKER        AUG, P36
+   Skipper HD, 2007, RISK MANAGEMENT INSU
+   Skogh G, 2005, J RISK UNCERTAINTY, V31, P35, DOI 10.1007/s11166-005-2929-0
+   SKOGH G, 2009, 13 JOINT SEM EUR ASS
+   Taylor Simon, 1999, INT COMP LAW Q, V48, P419
+   *US GOV ACC OFF, 2005, CAT RISK US EUR APPR
+   VANBOOM WH, 2007, TORT INSURANCE LAW, V22
+   VANDENBERGH R, 2006, TORT INSURANCE LAW, V14
+   WAGNER G, 2007, TORT INSURANCE LAW, V22
+   *WAT INF SYST EUR, 2008, EUR FLOOD ACT PROGR
+   WEF, 2009, CONV INS CAP MARK
+NR 47
+TC 7
+Z9 7
+U1 0
+U2 7
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1018-5895
+J9 GENEVA PAP R I-ISS P
+JI Geneva Pap. Risk Insur.-Issues Pract.
+PD JUL
+PY 2010
+VL 35
+IS 3
+BP 391
+EP 415
+DI 10.1057/gpp.2010.11
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA 637AH
+UT WOS:000280786100004
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Sapir, J
+AF Sapir, Jacques
+TI What Should Russian Monetary Policy Be?
+SO POST-SOVIET AFFAIRS
+LA English
+DT Article
+ID INFLATION; INFORMATION; PREFERENCE; REVERSALS; CONSENSUS; CONTAGION;
+   MARKETS; RISK
+AB Just as the financial crisis began to make its impact felt in Russia, the Russian Central Bank altered its monetary policy, switching to an inflation-fighting strategy that made the interest rate a major anti-inflation weapon but also targeted the exchange rate. This brought the bank's strategy into line with those of other central banks. This new policy, a result of the "New Monetary Consensus" of the late 1980s, is analyzed in this article in the context of the Russian Central Bank's response to the worldwide financial crisis and the need to focus on a range of issues including the country's economic development, currency stabilization, and banking sector development.
+C1 CEMI EHESS, EHESS, Paris, France.
+RP Sapir, J (reprint author), CEMI EHESS, EHESS, Paris, France.
+EM sapir@msh-paris.fr
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Andersen TM, 2001, KYKLOS, V54, P591, DOI 10.1111/1467-6435.00171
+   Arestis P, 2008, CAMB J ECON, V32, P761, DOI 10.1093/cje/ben004
+   ARTUS P, 2004, FLASH EC
+   ARTUS P, 2006, FLASH EC
+   Baker Dean, 2001, MONEY NOTHING INCREA
+   Bernanke Ben S, 1999, INFLATION TARGETING
+   Bernanke Ben S., 2002, DEFLATION MAKING SUR
+   Bernanke BS, 1997, J ECON PERSPECT, V11, P97, DOI 10.1257/jep.11.2.97
+   Bibow J., 2009, 583 LEV EC I BARD CO
+   Bini Smaghi L., 2009, LECT INT CTR MON BAN
+   Bivens Josh, 2007, 279 EPI
+   Buiter W., 2009, VOXEU
+   Calvo GA, 2000, J INT ECON, V51, P79, DOI 10.1016/S0022-1996(99)00038-0
+   CALVO GA, 1994, CONTEMP ECON POLICY, V12, P54, DOI 10.1111/j.1465-7287.1994.tb00434.x
+   *CBR, 2009, Q INFL REV 2009 Q1
+   *CBR, 2009, REF LEND TO CRED I I
+   *CBR, INFL NA POTR RYNK
+   *CBR, 2008, GUID SINGL STAT MON
+   *CBR, 2009, INFL POTR SKOM RYNK
+   *CBR, 2009, B BANKING STAT, V12
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Clarida R, 1998, EUR ECON REV, V42, P1033, DOI 10.1016/S0014-2921(98)00016-6
+   Coibion O., 2006, CONTRIBUTIONS MACROE, V6
+   Davig T., 2005, 11874 NBER
+   De Fiore F., 2008, WORKING PAPER SERIES, V889
+   DELONG JB, 1990, J POLIT ECON, V98, P703, DOI 10.1086/261703
+   DELUCIA C, 2009, 0921 BNP PAR
+   DELUCIA C, 2008, POLITIQUE MONETAIRE
+   DORNBUSCH R, 1998, PRINCETON ESSAYS INT, V207
+   EASTERLY W, 2005, HDB EC GROWTH A, V1
+   FAMA EF, 1988, J POLIT ECON, V96, P246, DOI 10.1086/261535
+   FAMA EF, 1970, J FINANC, V25, P383, DOI 10.2307/2325486
+   Feldstein M, 1999, FOREIGN AFF, V78, P93, DOI 10.2307/20049211
+   FELIPE LB, 2001, CAPITAL FLOWS CAPITA
+   Fongemie CA, 2005, J POST KEYNESIAN EC, V27, P621
+   FONTANA G, 2009, UNEMPLOYMENT PRESENT
+   Friedman M., 1969, OPTIMUM QUANTITY MON
+   Fuhrer JC, 1997, REV ECON STAT, V79, P573, DOI 10.1162/003465397557150
+   Fullwiler ST, 2007, J ECON ISSUES, V41, P485, DOI 10.1080/00213624.2007.11507037
+   GALBRAITH JK, 2008, COLLAPSE MONETARISM
+   Gallegati M, 2008, GLOB ECON J, V8, DOI 10.2202/1524-5861.1365
+   GERDESMEIER D, 2007, WORKING PAPER SERIES, V742
+   GERTLER M, 1988, J MONEY CREDIT BANK, V20, P559, DOI 10.2307/1992535
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Goodfriend M, 2007, J ECON PERSPECT, V21, P47, DOI 10.1257/jep.21.4.47
+   Goodhart C., 2007, IS THERE NEW CONSENS
+   GOODHART CAE, 2007, 2007EE04 U OXF OXF F
+   Goodyer IM, 2008, HEALTH TECHNOL ASSES, V12, P1
+   Greenspan A., 1999, WORLD BANK C REC TRE
+   GREENWALD B, 1989, AM ECON REV, V79, P364
+   GROSSMAN SJ, 1980, AM ECON REV, V70, P393
+   GROSSMAN SJ, 1976, AM ECON REV, V66, P246
+   HAHN FH, 1971, ECONOMICA, V38, P61, DOI 10.2307/2551751
+   HAHN FH, 1980, ECONOMICA, V47, P1, DOI 10.2307/2553164
+   HEMMING R, 2002, 02208 IMF FIS AFF DE
+   HUTCHISON M, 2002, EPRU WORKING PAPER S, V212
+   Kam E, 2004, J POST KEYNESIAN EC, V26, P679
+   Kim TW, 2007, J ADHES SCI TECHNOL, V21, P1, DOI 10.1163/156856107779976097
+   LAUBACH T, 2001, FINANCE ECONOMICS DI
+   le Heron E., 2006, MONEY FINANCIAL INST
+   LICHTENSTEIN S, 1971, J EXP PSYCHOL, V89, P46, DOI 10.1037/h0031207
+   LOUIS B, 2009, BLOOMBERG       0529
+   Mankiw NG, 2002, Q J ECON, V117, P1295, DOI 10.1162/003355302320935034
+   MANKIW NG, 2002, WHAT MEASURE INFLATI
+   MEDVEDEV DA, 2009, POSLANIYE FEDERALNOM
+   MESONNIER JS, 2004, 117 NER BANK FRANC
+   Meyer L.H., 2001, H JON MEM LECT WASH
+   MINSKY H, 1982, FINANCIAL CRISES THE
+   Minsky H. P., 1986, STABILIZING UNSTABLE
+   MINSKY HP, 1981, NEBR J ECON BUS, V20, P5
+   MINSKY HP, 1982, BANCA NAZL LAVORO Q, V143, P375
+   *MON PO, 2000, ECB MONTH B
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   NISHIYAMA SL, 2003, 2003E8 BANK JAP I MO
+   ORLOVA N, 2009, RUSSIAN EQUITY RES M
+   ORPHANIDES A, 2004, J JAPANESE INT EC, V14, P327
+   *REC FIND, 2002, ECB MONTHL B
+   Rodrik D., 1998, PRINCETON ESSAYS INT, V207
+   Rodrik Dani, 2006, International Economic Journal, V20, P253
+   Rodrik D, 2008, BROOKINGS PAP ECO AC, P365
+   SAPIR J, 2008, ROSSIYA GLOBALNOY PO, V2
+   SAPIR J, 2006, PROBLEMY PROGNOZIROV, V3, P11
+   SAPIR J, 2008, EVALUATION IMPACT HA
+   SAPIR J, 2007, EKSPERT         1217
+   SAPIR J, 2007, NOTES RECHERCHE CEMI
+   Shackle G., 1949, EXPECTATION EC
+   Shiller R. J., 2000, IRRATIONAL EXUBERANC
+   SLOVIC P, 1983, AM ECON REV, V73, P596
+   SPERANSKAIA T, 2008, INTERMEDIATION FINAN
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Stiglitz JE, 1999, AM ECON REV, V89, P75, DOI 10.1257/aer.89.2.75
+   SURICO P, 2003, WORKING PAPER SERIES, V229
+   Svensson LEO, 1999, J MONETARY ECON, V43, P607, DOI 10.1016/S0304-3932(99)00007-0
+   Sweeney R. J., 1997, CAPITAL CONTROLS EME
+   Taylor J. B., 1993, CARNEGIE-ROCHESTER C, V39, P195, DOI DOI 10.1016/0167-2231(93)90009-L
+   TVERSKY A, 1986, J BUS, V59, pS251, DOI 10.1086/296365
+   TVERSKY A, 2004, Q J ECON, V106, P1039
+   Tymoigne E., 2009, CENTRAL BANKING ASSE
+   TYMOIGNE E, 2006, 486 LEV EC I BARD CO
+   Vegh C., 2004, 10780 NBER
+   Weber AA, 2008, CAMB J ECON, V32, P49, DOI 10.1093/cje/bem018
+   Wray L.R., 2008, CHALLENGE, V51, P40, DOI DOI 10.2753/0577-
+   WYNNE MA, 1999, WORKING PAPER SERIES, V5
+NR 104
+TC 1
+Z9 1
+U1 0
+U2 9
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1060-586X
+EI 1938-2855
+J9 POST-SOV AFF
+JI Post-Sov. Aff.
+PD OCT-DEC
+PY 2010
+VL 26
+IS 4
+BP 342
+EP 372
+DI 10.2747/1060-586X.26.4.342
+PG 31
+WC Area Studies; Economics; Political Science
+SC Area Studies; Business & Economics; Government & Law
+GA 665QR
+UT WOS:000283051100003
+DA 2019-12-27
+ER
+
+PT J
+AU Wagner, W
+AF Wagner, Wolf
+TI Diversification at financial institutions and systemic crises
+SO JOURNAL OF FINANCIAL INTERMEDIATION
+LA English
+DT Article
+ID BANK; CONTAGION; RISK; FAIL
+AB It is widely believed that diversification at financial institutions benefits the stability of the financial system. This paper shows that it also entails a cost: even though diversification reduces each institution's individual probability of failure, it makes systemic crises more likely. When systemic crises induce additional costs (over and above individual failures), full diversification is no longer desirable as a result and the optimal degree of diversification may be arbitrarily low. We show that the analysis can be extended beyond diversification, such as to interbank insurance and financial integration. (C) 2009 Elsevier Inc. All rights reserved.
+C1 [Wagner, Wolf] Tilburg Univ, European Banking Ctr, TILEC, NL-5000 LE Tilburg, Netherlands.
+   [Wagner, Wolf] Tilburg Univ, Dept Econ, NL-5000 LE Tilburg, Netherlands.
+RP Wagner, W (reprint author), Tilburg Univ, European Banking Ctr, TILEC, Postbus 90153, NL-5000 LE Tilburg, Netherlands.
+EM wagner@uvt.nl
+CR Acharya V., 2001, THEORY SYSTEMI UNPUB
+   ACHARYA V, 2006, REV FINANCI IN PRESS
+   ACHARYA V, 2005, LTD LIABILITY UNPUB
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F., 2005, RISKS FINANCIAL I
+   Bank for International Settlements, 2001, REP CONS FIN SECT
+   Brusco S, 2007, J FINANC, V62, P2275, DOI 10.1111/j.1540-6261.2007.01275.x
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Gorton G, 2004, AM ECON REV, V94, P455, DOI 10.1257/0002828041464650
+   JAMES C, 1991, J FINANC, V46, P1223, DOI 10.2307/2328857
+   Kahn C. M., 2005, ENDOGENOUS FINANCIAL
+   Morris S., 2004, Review of Finance, V8, P1, DOI 10.1023/B:EUFI.0000022155.98681.25
+   Perotti EC, 2002, EUR ECON REV, V46, P1599, DOI 10.1016/S0014-2921(02)00241-6
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Schnabel I, 2004, J EUR ECON ASSOC, V2, P929, DOI 10.1162/1542476042813887
+   Shaffer S, 1994, RES FINANCIAL SERVIC, V6, P249
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Wagner W, 2008, J FINANC INTERMED, V17, P330, DOI 10.1016/j.jfi.2008.01.001
+NR 21
+TC 135
+Z9 136
+U1 2
+U2 30
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1042-9573
+J9 J FINANC INTERMED
+JI J. Financ. Intermed.
+PD JUL
+PY 2010
+VL 19
+IS 3
+SI SI
+BP 373
+EP 386
+DI 10.1016/j.jfi.2009.07.002
+PG 14
+WC Business, Finance
+SC Business & Economics
+GA 613HQ
+UT WOS:000278970400005
+DA 2019-12-27
+ER
+
+PT J
+AU Krishnamurthy, A
+AF Krishnamurthy, Arvind
+TI How Debt Markets Have Malfunctioned in the Crisis
+SO JOURNAL OF ECONOMIC PERSPECTIVES
+LA English
+DT Article
+ID RISK-MANAGEMENT; LIQUIDITY; ARBITRAGE; LIMITS
+AB The financial crisis that began in 2007 is especially a crisis in debt markets. A full understanding of what happened in the financial crisis requires investigation into the plumbing of debt markets. During a financial crisis, when funds often cannot be raised easily or quickly, the fundamental values for certain assets can become separated for a time from market prices, with consequences that can echo into the real economy. This article will explain in concrete ways how debt markets can malfunction, with deleterious consequences for the real economy. After a quick overview of debt markets, I discuss three areas that are crucial in all debt markets decisions: risk capital and risk aversion; repo financing and haircuts; and counterparty risk. In each of these areas, feedback effects can arise so that less liquidity and a higher cost for finance can reinforce each other in a contagious spiral. I will document the remarkable rise in the premium that investors placed on liquidity during the crisis. Next, I will show how these issues caused debt markets to break down; indeed, fundamental values and market values seemed to diverge across several markets and products that were far removed from the "toxic" subprime mortgage assets at the root of the crisis. Finally, I will discuss briefly four steps that the Federal Reserve took to ease the crisis and how each was geared to a specific systemic fault that arose during the crisis.
+C1 [Krishnamurthy, Arvind] Northwestern Univ, Kellogg Sch Management, Evanston, IL 60208 USA.
+   [Krishnamurthy, Arvind] Natl Bur Econ Res, Cambridge, MA 02138 USA.
+RP Krishnamurthy, A (reprint author), Northwestern Univ, Kellogg Sch Management, Evanston, IL 60208 USA.
+EM a-krishnamurthy@kellogg.northwestern.edu
+CR Bernanke Ben, 2008, FED RES BANK ATL FIN
+   Boyarchenko Nina, J FINANCIAL INTERMED
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Caballero RJ, 2008, J FINANC, V63, P2195, DOI 10.1111/j.1540-6261.2008.01394.x
+   Caballero RJ, 2009, AM ECON REV, V99, P584, DOI 10.1257/aer.99.2.584
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   EISFELDT A, 2008, FINANCING SHORTFALLS
+   *FED RES, 2007, FLOW FUNDS ACC US
+   FISHMAN M, 2009, VALUATION VOLA UNPUB
+   Gabaix X, 2007, J FINANC, V62, P557, DOI 10.1111/j.1540-6261.2007.01217.x
+   GARLEANU N, REV FINANCIAL STUDIE
+   Garleanu N, 2007, AM ECON REV, V97, P193, DOI 10.1257/aer.97.2.193
+   GORTON G, 1990, J FINANC, V45, P49, DOI 10.2307/2328809
+   GORTON G, 2009, 151223 NBER
+   Gorton G. B., 2009, SLAPPED FACE INVISIB
+   Greenwood R, 2008, BOND SUPPLY EXCESS B
+   Gromb D, 2002, J FINANC ECON, V66, P361, DOI 10.1016/S0304-405X(02)00228-3
+   HE ZG, 2009, W14517 NBER
+   HE ZG, 2009, DYNAMIC DEBT RUNS
+   HE ZG, 2009, MODEL CAPITAL CRISES
+   Holmstrom B, 1998, J POLIT ECON, V106, P1, DOI 10.1086/250001
+   HOLMSTROM B, 2008, MAINT STAB C IN PRES
+   HORDAHL P, 2008, BIS Q REV        DEC, P37
+   International Monetary Fund (IMF), 2008, GLOB FIN STAB REP
+   Krishnamurthy A, 2002, J FINANC ECON, V66, P463, DOI 10.1016/S0304-405X(02)00207-6
+   KRISHNAMURTHY A, AM EC J MAC IN PRESS
+   KRISHNAMURTHY A., 2008, AGGREGATE DEMAND TRE
+   Lo Andrew, 2008, HEDGE FUNDS SYSTEMIC
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Vayanos Dimitri, 2004, 10327 NBER
+NR 31
+TC 89
+Z9 89
+U1 0
+U2 13
+PU AMER ECONOMIC ASSOC
+PI NASHVILLE
+PA 2014 BROADWAY, STE 305, NASHVILLE, TN 37203 USA
+SN 0895-3309
+EI 1944-7965
+J9 J ECON PERSPECT
+JI J. Econ. Perspect.
+PD WIN
+PY 2010
+VL 24
+IS 1
+BP 3
+EP 28
+DI 10.1257/jep.24.1.3
+PG 26
+WC Economics
+SC Business & Economics
+GA 567HA
+UT WOS:000275435100001
+DA 2019-12-28
+ER
+
+PT J
+AU Wong, J
+   Wong, TC
+   Leung, P
+AF Wong, Jim
+   Wong, Tak-Chuen
+   Leung, Phyllis
+TI Predicting banking distress in the EMEAP economies
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Asia Pacific economies; Banking distress; Early warning systems;
+   Econometric models; Stress testing
+ID CROSS-VALIDATION; MODEL SELECTION; DEPOSIT INSURANCE; CRISES; CONTAGION;
+   DETERMINANTS; INDICATORS; REGRESSION; FRAGILITY
+AB This study develops a panel probit model to identify the leading indicators of banking distress and to estimate the banking distress probability for EMEAP economies. Macroeconomic fundamentals, currency crisis vulnerability, credit risks of banks and non-financial companies, asset price gaps, credit growth, and the occurrence of distress in other economies are found to be important leading indicators. The model is applied to stress test the Hong Kong banking sector. Simulation results suggest that compared with the period before the Asian financial crisis, the banking sector is currently more capable of withstanding shocks similar to those that occurred during the crisis. (C) 2010 Elsevier B.V. All rights reserved.
+C1 [Wong, Jim; Wong, Tak-Chuen; Leung, Phyllis] Hong Kong Monetary Author, Res Dept, Market Res Div, Int Finance Ctr 2, Hong Kong, Hong Kong, Peoples R China.
+RP Wong, TC (reprint author), Hong Kong Monetary Author, Res Dept, Market Res Div, Int Finance Ctr 2, 55-F,8 Finance St, Hong Kong, Hong Kong, Peoples R China.
+EM Jim_HY_Wong@hkma.gov.hk; Etcwong@hkma.gov.hk; Plyleung@hkma.gov.hk
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2000, ECON J, V110, P236, DOI 10.1111/1468-0297.00499
+   ALTMAN E, 2000, 72000 NEW YORK U
+   Baltagi B.H., 2001, ECONOMETRIC ANAL PAN
+   Barrella R., 2006, J FINANCIAL STABILIT, V2, P194
+   BAXTER M, 1995, MEASURING BUSINESS C, V5022
+   BELL J, 2000, LEADING INDICATOR MO
+   Bongini P, 2002, J BANK FINANC, V26, P1011, DOI 10.1016/S0378-4266(01)00264-3
+   Boss M., 2002, 4 OEST NAT
+   BREIMAN L, 1992, INT STAT REV, V60, P291, DOI 10.2307/1403680
+   CAPRIO G, 1997, ANN WORLD BANK C DEV, P51
+   Choi I, 2001, J INT MONEY FINANC, V20, P249, DOI 10.1016/S0261-5606(00)00048-6
+   Dabos M., 2004, REV ANAL ECON, V19, P31
+   Davis EP, 2008, J FINANC STABIL, V4, P89, DOI 10.1016/j.jfs.2007.12.004
+   DEMIRGFICKUNT A, 9883 INT MON FUND
+   Demirguc-Kunt A, 2002, J MONETARY ECON, V49, P1373, DOI 10.1016/S0304-3932(02)00171-X
+   Demirguc-Kunt A, 1998, INT MONET FUND S PAP, V45, P81
+   Demirguc-Kunt A, 2000, WORLD BANK ECON REV, V14, P287, DOI 10.1093/wber/14.2.287
+   Demirguc-Kunt A., 2005, 0596 INT MON FUND
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   DOMAC I, 2000, 2489 WORLD BANK POL
+   EFRON B, 1983, J AM STAT ASSOC, V78, P316, DOI 10.2307/2288636
+   EICHENGREEN B, 2000, WORKING PAPERS U CAL
+   Eichengreen Barry, 1996, 5681 NAT BUR EC RES
+   Eichengreen Barry, 1998, 6370 NAT BUR EC RES
+   Falcetti E, 2006, OXFORD B ECON STAT, V68, P445, DOI 10.1111/j.1468-0084.2006.00172.x
+   Garcia Gillian G. H., 2000, 197 INT MON FUND
+   GAYTAN A, 2002, 138 CENTR BANK CHIL
+   Gerard Caprio, 2003, EPISODES SYSTEMIC BO
+   GERLACH S, 1995, EUROPEAN J POLITICAL, V11, P45
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P741, DOI 10.1016/j.jedc.2005.01.004
+   Glick R., 1999, PB9907 CTR PAC BAS M
+   Goldstein M., 2000, ASSESSING FINANCIAL
+   Gonzalez-Hermosillo B, 1999, 9933 INT MON FUND
+   GONZALEZHERMOSI.B, 1996, 9612 INT MON FUND
+   Hardy D., 1998, 9891 INT MON FUND
+   Hardy DC, 1999, IMF STAFF PAPERS, V46, P247
+   HE F, 2002, THAIL DEV RES I
+   Hoelscher D. S., 2006, 251 INT MON FUND
+   Honohan P., 1997, 39 BANK INT SETTL
+   HURVICH CM, 1989, BIOMETRIKA, V76, P297, DOI 10.1093/biomet/76.2.297
+   Hutchison Ml, 1999, 7253 NAT BUR EC RES
+   IK KS, 2003, J ECONOMETRICS, V115, P53
+   International Monetary Fund, 1998, WORLD EC OUTL FIN CR
+   *JP MORG CO, 1995, RISKMETRICS TECHN DO
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   KAMINSKY GS, 1998, 629 BOARD GOV FED RE
+   LESTANO L, 2003, 200313 U GRON
+   LINDGREN C, 1996, BANK SOUNDNESS MACRO
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Oosterloo S., 2007, J FINANCIAL STABILIT, V2, P337
+   REISZ AS, 2007, J FINANC STABIL, V3, P85, DOI DOI 10.1016/J.JFS.2007.02.001)
+   Rodrik D, 2002, I INTEGRATION GEOGRA
+   ROJAS-SUAREZ L., 2001, RATING BANKS EMERGIN
+   Sachs J., 1996, 5576 NAT BUR EC RES
+   SHAO J, 1993, J AM STAT ASSOC, V88, P486, DOI 10.2307/2290328
+   Sorge M., 2006, J FINANCIAL STABILIT, V2, P113, DOI DOI 10.1016/J.JFS.2005.07.002
+   Sorge M., 2004, 165 BANK INT SETTL
+   Stock JH, 1999, J MONETARY ECON, V44, P293, DOI 10.1016/S0304-3932(99)00027-6
+   VILA A, 2000, C C PAP BANK INT SET
+   Wong J., 2008, J RISK MODEL VALIDAT, V2, P3
+   World Bank, 2000, GLOB EC PROSP DEV CO
+   ZHANG P, 1993, ANN STAT, V21, P299, DOI 10.1214/aos/1176349027
+NR 64
+TC 11
+Z9 11
+U1 0
+U2 21
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD SEP
+PY 2010
+VL 6
+IS 3
+BP 169
+EP 179
+DI 10.1016/j.jfs.2010.01.001
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA 649XQ
+UT WOS:000281809300005
+DA 2019-12-27
+ER

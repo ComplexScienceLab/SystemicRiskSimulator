@@ -1,0 +1,462 @@
+
+PT J
+AU Biagini, F
+   Fouque, JP
+   Frittelli, M
+   Meyer-Brandis, T
+AF Biagini, Francesca
+   Fouque, Jean-Pierre
+   Frittelli, Marco
+   Meyer-Brandis, Thilo
+TI A unified approach to systemic risk measures via acceptance sets
+SO MATHEMATICAL FINANCE
+LA English
+DT Article
+DE acceptance set; aggregation; systemic risk; risk measures
+ID CONTAGION; STABILITY; MODEL
+AB We specify a general methodological framework for systemic risk measures via multidimensional acceptance sets and aggregation functions. Existing systemic risk measures can usually be interpreted as the minimal amount of cash needed to secure the system after aggregating individual risks. In contrast, our approach also includes systemic risk measures that can be interpreted as the minimal amount of cash that secures the aggregated system by allocating capital to the single institutions before aggregating the individual risks. An important feature of our approach is the possibility of allocating cash according to the future state of the system (scenario-dependent allocation). We also provide conditions that ensure monotonicity, convexity, or quasi-convexity of our systemic risk measures.
+C1 [Biagini, Francesca; Meyer-Brandis, Thilo] Univ Munich, Dept Math, Theresienstr 39, D-80333 Munich, Germany.
+   [Fouque, Jean-Pierre] Univ Calif Santa Barbara, Dept Stat & Appl Probabil, Santa Barbara, CA 93106 USA.
+   [Frittelli, Marco] Univ Milan, Dipartimento Matemat, Milan, Italy.
+RP Biagini, F (reprint author), Univ Munich, Dept Math, Theresienstr 39, D-80333 Munich, Germany.
+EM francesca.biagini@math.lmu.de
+OI Frittelli, Marco/0000-0003-4340-4462
+FU NSFNational Science Foundation (NSF) [DMS-1107468, DMS-1409434]
+FX This work is supported by NSF Grants DMS-1107468 and DMS-1409434.
+CR Acharya V., 2010, WORKING PAPER
+   Adrian T., 2011, TECHNICAL REPORT
+   Amini H., 2014, WORKING PAPER
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Battiston S, 2013, J FINANC MANAGE MARK, P129, DOI [10.12831/75568, DOI 10.12831/75568]
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Black L., 2016, J BANK FINANC, V63, P1
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Boyd S, 2009, CONVEX OPTIMIZATION
+   Brunnermeier M. K., 2013, PREPRINT
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Carmona R, 2015, COMMUN MATH SCI, V13, P911, DOI 10.4310/CMS.2015.v13.n4.a4
+   Cerreia-Vioglio S, 2011, MATH FINANC, V21, P743, DOI 10.1111/j.1467-9965.2010.00450.x
+   Chen C, 2013, MANAGE SCI, V59, P1373, DOI 10.1287/mnsc.1120.1631
+   Cherny A, 2009, REV FINANC STUD, V22, P2571, DOI 10.1093/rfs/hhn081
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Detering N., 2016, PREPRINT
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Feinstein Z, 2017, SIAM J FINANC MATH, V8, P672, DOI 10.1137/16M1066087
+   Follmer H, 2002, FINANC STOCH, V6, P429, DOI 10.1007/s007800200072
+   Follmer H., 2004, STOCHASTIC FINANCE I
+   Fouque JP, 2013, SIAM J FINANC MATH, V4, P784, DOI 10.1137/110841096
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P1, DOI 10.1017/CBO9781139151184
+   Frittelli M, 2002, J BANK FINANC, V26, P1473, DOI 10.1016/S0378-4266(02)00270-4
+   Frittelli M, 2006, MATH FINANC, V16, P589, DOI 10.1111/j.1467-9965.2006.00285.x
+   Frittelli M, 2014, STATIST RISK MODEL, V31, P103, DOI 10.1515/strm-2013-1163
+   Gai P., 2010, BANK ENGLAND WORKING
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gleeson J. P., 2013, ADV NETWORK ANAL ITS, P27
+   Gordy MB, 2003, J FINANC INTERMED, V12, P199, DOI 10.1016/S1042-9573(03)00040-8
+   Hoffmann H, 2018, MATH FINANC ECON, V12, P413, DOI 10.1007/s11579-017-0210-3
+   Hoffmann H, 2016, STOCH PROC APPL, V126, P2014, DOI 10.1016/j.spa.2016.01.002
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Hurd T. R., 2014, ILLIQUIDITY INSOLVEN
+   Hurd T. R., 2016, CONTAGION SYSTEMIC R
+   Kley O., 2015, ADV MATH FINANCE, P133
+   Kromer E., 2013, PREPRINT
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Pastore M. C., 2014, THESIS
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Weber S, 2017, PROBAB UNCERTAIN QUA, V2, DOI 10.1186/s41546-017-0020-9
+NR 45
+TC 10
+Z9 10
+U1 3
+U2 4
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0960-1627
+EI 1467-9965
+J9 MATH FINANC
+JI Math. Financ.
+PD JAN
+PY 2019
+VL 29
+IS 1
+BP 329
+EP 367
+DI 10.1111/mafi.12170
+PG 39
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA HG8QP
+UT WOS:000455268800010
+OA Bronze
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Dong, Y
+   Wang, JP
+   Chen, TQ
+AF Dong, Yue
+   Wang, Jiepeng
+   Chen, Tingqiang
+TI Price Linkage Rumors in the Stock Market and Investor Risk Contagion on
+   Bilayer-Coupled Networks
+SO COMPLEXITY
+LA English
+DT Article
+AB Investor heterogeneities include investor risk preference, investor risk cognitive level, information value, and investor influence. From the perspective of the stock price linkage, this article constructs an SCIR contagion model of investor risk on a single-layer network. It digs out the investor risk caused by rumors in the stock market under the stock price linkage and its contagion mechanism. The function and influence of different mechanism probabilities and investor heterogeneities on the effects of risk contagion in the stock market are explored through computer simulation. Based on the SCIR contagion model of investor risk on single-layer network, we construct an SCI1I2R contagion model of investor risk on bilayer-coupled networks. Initially, the evolution mechanisms of investor risk contagion in the stock market are compared in single-layer and bilayer-coupled networks. Thereafter, the evolution characteristics and rules of investor risk contagion under different connection modes and heterogeneous mechanism probabilities are compared on bilayer-coupled networks. The results corroborate the following. (1) In the SCIR contagion model of investor risk on a single-layer network, immune failure probability and immune probability have the global effect. (2) Investor heterogeneities both have global effect and local effect on investor risk contagion. (3) Compared with the investor risk contagion on a single-layer network, bilayer-coupled networks can expand the investor risk contagion and have a global enhancement effect. (4) Among the three interlayer connection modes of the SCI1I2R model of investor risk contagion on bilayer-coupled networks, the assortative link has the effect of local enhancement, while the disassortative link has the effect of local inhibition. (5) In the SCI1I2R model of investor risk contagion on bilayer-coupled networks, heterogeneous mechanism probabilities have global effect and local effect. The research conclusion provides a theoretical basis for regulators to prevent financial risks from spreading among different investors, which is of high theoretical value and practical significance.
+C1 [Dong, Yue] Renmin Univ China, Sch Econ, Beijing, Peoples R China.
+   [Wang, Jiepeng; Chen, Tingqiang] Nanjing Tech Univ, Sch Econ & Management, Nanjing, Jiangsu, Peoples R China.
+RP Chen, TQ (reprint author), Nanjing Tech Univ, Sch Econ & Management, Nanjing, Jiangsu, Peoples R China.
+EM dongy66@126.com; jump@njtech.edu.cn; tingqiang88888888@163.com
+RI Chen, Tingqiang/N-4473-2019
+OI Chen, Tingqiang/0000-0002-3013-243X
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71871115, 71501094, 71501131]; Natural Science
+   Foundation of Jiangsu Province of ChinaNatural Science Foundation of
+   Jiangsu Province [BK20150961]; Key Project of Philosophy and Social
+   Science Research in Colleges and Universities in Jiangsu Province
+   [2017ZDIXM074]; Postgraduate Research & Practice Innovation Program of
+   Jiangsu Province [SJCX17-0275]; Innovation Team Project of Philosophy
+   and Social Sciences in Colleges and Universities in Jiangsu Province
+   [2017ZSTD005]
+FX This work was supported by the National Natural Science Foundation of
+   China (Nos. 71871115, 71501094, 71501131), the Natural Science
+   Foundation of Jiangsu Province of China (Nos. BK20150961), the Key
+   Project of Philosophy and Social Science Research in Colleges and
+   Universities in Jiangsu Province (No. 2017ZDIXM074), Postgraduate
+   Research & Practice Innovation Program of Jiangsu Province (No.
+   SJCX17-0275), and the Innovation Team Project of Philosophy and Social
+   Sciences in Colleges and Universities in Jiangsu Province (No.
+   2017ZSTD005).
+CR Andrei D, 2017, J FINANC ECON, V123, P617, DOI 10.1016/j.jfineco.2016.05.012
+   Baker M, 2004, J FINANC MARK, V7, P271, DOI 10.1016/j.finmar.2003.11.005
+   Boccaletti S, 2014, PHYS REP, V544, P1, DOI 10.1016/j.physrep.2014.07.001
+   Buldyrev SV, 2010, NATURE, V464, P1025, DOI 10.1038/nature08932
+   CAMPBELL J, 2002, JOURNAL OF FINANCE, V55, P1515
+   Chen TQ, 2019, PHYSICA A, V520, P458, DOI 10.1016/j.physa.2019.01.018
+   Chen TQ, 2018, COMPLEXITY, DOI 10.1155/2018/1843792
+   Chen TQ, 2017, COMPLEXITY, DOI 10.1155/2017/5724925
+   Clarkson PM, 2006, ACCOUNT FINANC, V46, P31, DOI 10.1111/j.1467-629X.2006.00160.x
+   Cozzo E, 2013, PHYS REV E, V88, DOI 10.1103/PhysRevE.88.050801
+   DALEY D. J., 1965, J I MATH APPL, V1, P42, DOI DOI 10.1093/IMAMAT/1.1.42
+   DiFonzo N., 2007, RUMOR PSYCHOL SOCIAL, DOI [10.4135/9781412956253, DOI 10.4135/9781412956253]
+   Egan D, 2014, J ECON BEHAV ORGAN, V107, P652, DOI 10.1016/j.jebo.2014.04.001
+   Felbert A. V., 2015, QUANTITATIVE FINANCE, V5, P1
+   GAO J, 2002, NATURE PHYS, V8, P40, DOI DOI 10.1038/NPHYS2180
+   Gao Y, 2012, REV QUANT FINANC ACC, V39, P485, DOI 10.1007/s11156-011-0262-z
+   Gomez S, 2013, PHYS REV LETT, V110, DOI 10.1103/PhysRevLett.110.028701
+   Granell C, 2013, PHYS REV LETT, V111, DOI 10.1103/PhysRevLett.111.128701
+   Griffin JM, 2007, REV FINANC STUD, V20, P905, DOI 10.1093/rfs/hhl019
+   GRINBLATT M, 2002, JOURNAL OF FINANCE, V56, P589
+   Jia JW, 2018, PHYSICA A, V491, P453, DOI 10.1016/j.physa.2017.09.063
+   Johansen A., 2001, INT J THEORETICAL AP, V4, P853, DOI [DOI 10.1142/S0219024901001218, 10.1142/S0219024901001218]
+   KAHNEMAN D, 1979, ECONOMETRICA, V47, P263, DOI 10.2307/1914185
+   Kivela M, 2014, J COMPLEX NETW, V2, P203, DOI 10.1093/comnet/cnu016
+   Kiymaz H., 2002, APPL FINANCIAL EC, V12, P469
+   KOSFELD M, 2000, JOURNAL OF MATHEMATI, V41, P646, DOI DOI 10.1016/J.JMATECO.2004.05.001
+   Linciano N, 2018, EUR J FINANC, V24, DOI 10.1080/1351847X.2017.1414069
+   Maki D.P., 1973, MATH MODELS APPL
+   Meissner G, 2013, J RISK, V16, P61, DOI 10.21314/JOR.2013.271
+   MILLER EM, 1977, J FINANC, V32, P1151, DOI 10.2307/2326520
+   Nekovee M, 2007, PHYSICA A, V374, P457, DOI 10.1016/j.physa.2006.07.017
+   Newman MEJ, 2002, PHYS REV E, V66, DOI 10.1103/PhysRevE.66.016128
+   Nofsinger JR, 1999, J FINANC, V54, P2263, DOI 10.1111/0022-1082.00188
+   POUND J, 1990, J BUS, V63, P291, DOI 10.1086/296508
+   Schindler M., 2007, RUMORS FINANCIAL MAR
+   Sole-Ribalta A, 2016, PHYS REV LETT, V116, DOI 10.1103/PhysRevLett.116.108701
+   VILLATORO F, 2002, JOURNAL OF BANKING F, V33, P2062, DOI DOI 10.1016/J.JBANKFIN.2009.04.018
+   Wang JW, 2014, PHYSICA A, V393, P535, DOI 10.1016/j.physa.2013.08.031
+   Wang J, 2019, PHYSICA A, V517, P21, DOI 10.1016/j.physa.2018.10.059
+   Xiong F, 2012, PHYS LETT A, V376, P2103, DOI 10.1016/j.physleta.2012.05.021
+   Xu R., 2013, INT J COMPUT SCI APP, V2, P1
+   Yu K, 2009, MOD PHYS LETT B, V23, P2497, DOI 10.1142/S0217984909020667
+   Zan YL, 2014, PHYSICA A, V405, P159, DOI 10.1016/j.physa.2014.03.021
+   Zhang XY, 2015, PHYS REV LETT, V114, DOI 10.1103/PhysRevLett.114.038701
+   Zhao LJ, 2012, PHYSICA A, V391, P2444, DOI 10.1016/j.physa.2011.12.008
+   Zouaoui M., 2011, FINANCIAL REVIEW, V46, P723
+NR 46
+TC 1
+Z9 1
+U1 5
+U2 12
+PU WILEY-HINDAWI
+PI LONDON
+PA ADAM HOUSE, 3RD FL, 1 FITZROY SQ, LONDON, WIT 5HE, ENGLAND
+SN 1076-2787
+EI 1099-0526
+J9 COMPLEXITY
+JI Complexity
+PY 2019
+AR 4727868
+DI 10.1155/2019/4727868
+PG 21
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA HU4MF
+UT WOS:000465248400001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Kusnetsov, M
+   Veraart, LAM
+AF Kusnetsov, Michael
+   Veraart, Luitgard Anna Maria
+TI Interbank Clearing in Financial Networks with Multiple Maturities
+SO SIAM JOURNAL ON FINANCIAL MATHEMATICS
+LA English
+DT Article
+DE systemic risk; default; multiple maturities; clearing; financial network
+ID SYSTEMIC RISK; CONTAGION
+AB We consider the problem of systemic risk assessment in interbank networks in which interbank liabilities can have multiple maturities. In particular, we allow for both short-term and long-term interbank liabilities. We develop a clearing mechanism for the interbank liabilities to deal with the default of one or more market participants. Our approach generalizes the clearing approach for the single maturity setting proposed by Eisenberg and Noe [Management Sci., 47 (2001), pp. 236-249]. Our clearing mechanism focuses on the vector of each bank's liquid assets at each maturity date and develops a fixed-point formulation of this vector for a given set of defaulted banks. Our formulation is consistent with the main stylized principles of insolvency law. We show that in the context of multiple maturities, specifying a set of defaulted banks is challenging. We propose two approaches to overcome this challenge: First, we propose an algorithmic approach for defining the default set and show that this approach leads to a well-defined liquid asset vector for all financial networks with multiple maturities. Second, we propose a simpler functional approach which leads to a functional liquid asset vector which need not exist but under a regularity condition does exist and coincides with the algorithmic liquid asset vector. Our analysis permits construction of simple dynamic models and furthermore demonstrates that systemic risk can be underestimated by single maturity models.
+C1 [Kusnetsov, Michael; Veraart, Luitgard Anna Maria] London Sch Econ & Polit Sci, Dept Math, Houghton St, London WC2A 2AE, England.
+RP Kusnetsov, M (reprint author), London Sch Econ & Polit Sci, Dept Math, Houghton St, London WC2A 2AE, England.
+EM m.kusnetsov@lse.ac.uk; l.veraart@lse.ac.uk
+FU EPSRC Centre for Doctoral Training in Financial Computing & Analytics -
+   Engineering and Physical Sciences Research Council (EPSRC), UK
+FX The first author gratefully acknowledges financial support by the EPSRC
+   Centre for Doctoral Training in Financial Computing & Analytics funded
+   by the Engineering and Physical Sciences Research Council (EPSRC), UK.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Amini H., 2015, 1334 SWISS FIN I
+   Banerjee T., 2018, PREPRINT
+   BARUCCA P., 2016, PREPRINT
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Capponi A, 2015, J ECON DYN CONTROL, V58, P152, DOI 10.1016/j.jedc.2015.06.008
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2014, STATIST RISK MODEL, V31, P3, DOI 10.1515/strm-2013-1161
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   David A, 2019, MANAGE SCI, V65, P2342, DOI 10.1287/mnsc.2017.2869
+   Duffie D, 2015, J FINANC ECON, V116, P237, DOI 10.1016/j.jfineco.2014.12.006
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   ELSINGER H., 2011, 156 OEST NAT
+   Elsinger H, 2013, HANDBOOK ON SYSTEMIC RISK, P287
+   FEINSTEIN Z., 2017, PREPRINT
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gandy A, 2019, J MULTIVARIATE ANAL, V172, P193, DOI 10.1016/j.jmva.2018.08.011
+   Gandy A, 2017, MANAGE SCI, V63, P4428, DOI 10.1287/mnsc.2016.2546
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Horn R A, 1991, TOPICS MATRIX ANAL
+   HURD T., 2016, CONTAGION SPREAD SYS
+   Karlin S, 1981, 2 COURSE STOCHASTIC
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   OTA T., 2016, 586 BANK ENGL
+   RAJAN S., 2014, PREPRINT
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   SONIN K., 2017, PREPRINT
+   STAUM J., 2012, IIE T, V48, P501
+   THE INSOLVENCY SERVICE, 2010, INS SERV TECHN MAN
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   VERAART L. A. M., 2017, PREPRINT
+   Weber S, 2017, PROBAB UNCERTAIN QUA, V2, DOI 10.1186/s41546-017-0020-9
+NR 36
+TC 0
+Z9 0
+U1 2
+U2 2
+PU SIAM PUBLICATIONS
+PI PHILADELPHIA
+PA 3600 UNIV CITY SCIENCE CENTER, PHILADELPHIA, PA 19104-2688 USA
+SN 1945-497X
+J9 SIAM J FINANC MATH
+JI SIAM J. Financ. Math.
+PY 2019
+VL 10
+IS 1
+BP 37
+EP 67
+DI 10.1137/18M1180542
+PG 31
+WC Business, Finance; Mathematics, Interdisciplinary Applications; Social
+   Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA HQ9XV
+UT WOS:000462782300002
+DA 2019-12-28
+ER
+
+PT J
+AU Gomez-Puig, M
+   Singh, MK
+   Sosvilla-Rivero, S
+AF Gomez-Puig, Marta
+   Singh, Manish K.
+   Sosvilla-Rivero, Simon
+TI The sovereign-bank nexus in peripheral euro area: Further evidence from
+   contingent claims analysis
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Sovereign risk; Bank risk; Sovereign-bank nexus; Contingent claims
+ID SYSTEMIC RISK; DEBT; MONEY; INTERDEPENDENCIES; CONNECTEDNESS;
+   SPILLOVERS; CAUSALITY; LINKAGES; DEFAULT; CRISIS
+AB New evidence is presented on the nexus between the sovereign and banking sector risk. Applying the contingent claims methodology to the peripheral euro area countries over the 2004Q4-2013Q2 period, we build indicators of sovereign and bank risk and assess their interconnection in comparison with existing market-based indicators of bank and sovereign distress. We use three different statistical measures of interdependence based on principal components analysis, Granger causality framework and Diebold-Yilmaz's connectedness index. The empirical results show strong interconnection and co-movement between country-level banking and sovereign risk indicators. We also find evidence of bi-directional bank-sovereign causal linkages only for Spain during the European sovereign debt crisis period. For the late crisis period, we detect weak interrelationship and more divergence across the various risk indicators. Our findings indicate that secondary and derivatives market indices are more driven by common underlying factors than are contingent claim based risk measures. Finally, our results also suggest that market participants risk appetite was the main channel of risk transmission between sovereigns and banks for the countries under study during the sample period.
+C1 [Gomez-Puig, Marta; Singh, Manish K.] Univ Barcelona, Dept Econ & Riskctr, Barcelona, Spain.
+   [Sosvilla-Rivero, Simon] Univ Complutense Madrid, Complutense Inst Econ Anal, Madrid, Spain.
+RP Sosvilla-Rivero, S (reprint author), Univ Complutense Madrid, Complutense Inst Econ Anal, Madrid, Spain.
+EM marta.gomezpuig@ub.edu; manish.singh@ub.edu; sosvilla@ccee.ucm.es
+RI Gomez-Puig, Marta/E-4408-2016
+OI Gomez-Puig, Marta/0000-0001-8349-2829
+FU Instituto de Estudios Fiscales [IEF 151/2017]; Bank of Spain
+   [PR71/15-20229]; Spanish Ministry of Economy and Competitiveness
+   [ECO2016-76203-C2-2-13]
+FX This work was supported by the Instituto de Estudios Fiscales [grant IEF
+   151/2017], the Bank of Spain [grant PR71/15-20229] and the Spanish
+   Ministry of Economy and Competitiveness [grant ECO2016-76203-C2-2-13].
+CR Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Acharya VV, 2015, J FINANC ECON, V115, P215, DOI 10.1016/j.jfineco.2014.11.004
+   Altavilla C, 2017, REV FINANC, V21, P2103, DOI 10.1093/rof/rfx038
+   Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Angelini P., 2014, OCCASIONAL PAPER 213
+   Ardagna S, 2014, AM ECON J-MACROECON, V6, P291, DOI 10.1257/mac.6.4.291
+   Attinasi M. -G., 2011, SOVEREIGN DEBT SAFET, P407
+   Augustin P, 2018, J MONEY CREDIT BANK, V50, P857, DOI 10.1111/jmcb.12497
+   Banerjee A, 2016, J INT FINANC MARK I, V41, P102, DOI 10.1016/j.intfin.2015.12.007
+   Battistini N, 2014, ECON POLICY, V29, P203, DOI 10.1111/1468-0327.12029
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Beltratti A., 2015, 21150 NAT BUR EC RES
+   Berges A., 2018, FUNCAS SEFO, V7, P15
+   Berges A., 2018, FUNCAS SEFO, V7, P29
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Brunnermeier MK, 2016, AM ECON REV, V106, P508, DOI 10.1257/aer.p20161107
+   Cline W. R., 2014, MANAGING EURO AREA D
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   De Grauwe P, 2012, AUST ECON REV, V45, P255, DOI 10.1111/j.1467-8462.2012.00691.x
+   De Marco F., 2016, 2016060 BOARD GOV FE
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Ejsing J, 2011, ECON LETT, V110, P28, DOI 10.1016/j.econlet.2010.10.001
+   Eser F, 2016, J FINANC ECON, V119, P147, DOI 10.1016/j.jfineco.2015.06.003
+   European Central Bank, 2012, FINANCIAL STABILITY, P147
+   Farhi E., 2017, REV EC STUDIES
+   Fratzscher M., 2018, REV FINANC, DOI [10.1093/rof/rfy024rfy024, DOI 10.1093/ROF/RFY024RFY024]
+   Gennaioli N, 2014, J FINANC, V69, P819, DOI 10.1111/jofi.12124
+   Goldstein M., 1998, ASIAN FINANCIAL CRIS
+   Gomez-Puig M, 2014, N AM J ECON FINANC, V30, P133, DOI 10.1016/j.najef.2014.09.003
+   Granger C. W. J., 1990, MODELLING EC TIME SE, P1
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Gray D., 2010, J INVESTMENT MANAGEM, V8, P90
+   Gray D., 2010, LESSONS FINANCIAL CR
+   Gray D., 2007, 13607 NAT BUR EC RES
+   Gray D., 2008, MACROFINANCIAL RISK
+   Harada K., 2010, 16182 NAT BUR EC RES
+   Hellwig M., 2017, ADEMU C MUCH FISC UN
+   Hoover K. D., 2001, CAUSALITY MACROECONO
+   Horvath B., 2015, 10661 CTR EC POL RES
+   HSIAO C, 1981, J MONETARY ECON, V7, P85, DOI 10.1016/0304-3932(81)90053-2
+   Kallestrup R, 2016, J EMPIR FINANC, V38, P374, DOI 10.1016/j.jempfin.2016.01.004
+   Klinger T, 2016, FINANC UVER, V66, P50
+   Lenarcic A., 2016, 1 EUR STAB MECH
+   Merton R.C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Muehlbronner K., 2015, MOODYS SECTOR DEPTH
+   Muirhead R.J., 1982, ASPECTS MULTIVARIATE
+   Obstfeld M., 2012, EC PAPERS EUROPEAN C
+   Ongena S., 2016, 505 NED BANK
+   Saldias M, 2013, J FINANC STABIL, V9, P498, DOI 10.1016/j.jfs.2013.07.003
+   Sgherri S., 2011, SOVEREIGN DEBT SAFET, P415
+   SIMS CA, 1972, AM ECON REV, V62, P540
+   Singh M. K., 2018, WORKING PAPERS I REC
+   Singh MK, 2016, J INT MONEY FINANC, V63, P137, DOI 10.1016/j.jimonfin.2016.01.003
+   Singh MK, 2015, J INT MONEY FINANC, V57, P161, DOI 10.1016/j.jimonfin.2015.07.014
+   Steinkamp S, 2014, ECON POLICY, V29, P495, DOI 10.1111/1468-0327.12036
+   THORNTON DL, 1985, J MONEY CREDIT BANK, V17, P164, DOI 10.2307/1992331
+   Yu S, 2017, RES INT BUS FINANC, V39, P68, DOI 10.1016/j.ribaf.2016.07.033
+   Zettelmeyer J, 2013, ECON POLICY, V28, P513, DOI 10.1111/1468-0327.12014
+NR 62
+TC 0
+Z9 0
+U1 6
+U2 6
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD JUL
+PY 2019
+VL 49
+BP 1
+EP 26
+DI 10.1016/j.najef.2019.03.021
+PG 26
+WC Business, Finance; Economics
+SC Business & Economics
+GA IL0DL
+UT WOS:000476966200001
+DA 2019-12-28
+ER
+
+PT J
+AU Vickers, J
+AF Vickers, John
+TI Safer, but Not Safe Enough
+SO JOURNAL OF RISK AND FINANCIAL MANAGEMENT
+LA English
+DT Article
+DE bank capital requirements; cost-benefit analysis; Basel III;
+   price-to-book ratios
+AB The great divide between official analyses and economists' views of optimal bank equity capital is not as wide as appears at first sight if the economics of risk is properly addressed. Adapting the BoE's analysis to take account of abnormal risk conditions, a less benign view of the effectiveness of resolution regimes in systemic crisis, an international rather than domestic perspective, and a consistent approach to risk, takes one a good distance towards the economists' view. The economic rationale for capital levels in the region of Basel III is left looking thin. It looks thinner still when, as now, price-to-book ratios are calling regulatory capital measures into question for some important banks
+C1 [Vickers, John] Univ Oxford, All Souls Coll, Oxford OX1 4AL, England.
+RP Vickers, J (reprint author), Univ Oxford, All Souls Coll, Oxford OX1 4AL, England.
+EM john.vickers@economics.ox.ac.uk
+OI Vickers, John/0000-0003-3962-4323
+CR Admati Anat R., 2010, FINANCIAL TIMES
+   Barro RJ, 2009, AM ECON REV, V99, P243, DOI 10.1257/aer.99.1.243
+   BCBS, 2010, ASS LONG TERM EC IMP
+   Brooke Martin, 2015, 35 BANK ENGL
+   Carney Mark, 2016, IIF G20 C SHANGH CHI
+   Gleeson Simon, 2018, GLEESON INT REGULATI
+   ICB (Independent Commission on Banking), 2011, FIN REP
+   ICB (Independent Commission on Banking), 2011, INT REP
+   IMF, 2018, GLOB FIN STAB REP
+   Liikanen Erkki, 2012, FINAL REPORT HIGH LE
+   Miles D., 2012, ECON J, V123, P1
+   Shin HS, 2009, ECON J, V119, P309, DOI 10.1111/j.1468-0297.2008.02239.x
+   Vickers J, 2016, J FINANC REGUL, V2, P264, DOI 10.1093/jfr/fjw011
+   Vlieghe Gertjan, 2017, SOC BUS EC ANN C LON
+NR 14
+TC 0
+Z9 0
+U1 0
+U2 0
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 1911-8066
+EI 1911-8074
+J9 J RISK FINANC MANAG
+JI J. Risk Financ. Manag.
+PD SEP
+PY 2019
+VL 12
+IS 3
+AR 152
+DI 10.3390/jrfm12030152
+PG 9
+WC Business, Finance
+SC Business & Economics
+GA JA6OZ
+UT WOS:000487963000034
+OA DOAJ Gold
+DA 2019-12-28
+ER

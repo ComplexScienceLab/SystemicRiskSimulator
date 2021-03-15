@@ -1,0 +1,515 @@
+
+PT J
+AU Kara, GI
+AF Kara, Gazi Ishak
+TI Systemic risk, international regulation, and the limits of coordination
+SO JOURNAL OF INTERNATIONAL ECONOMICS
+LA English
+DT Article
+DE Systemic risk; Macroprudential capital requirements; International
+   policy coordination
+ID REAL INTEREST-RATES; CAPITAL FLOW; MARKET; EQUILIBRIUM; LIQUIDITY;
+   CONSTRAINTS; COMPETITION; STABILITY; COUNTRIES; RICH
+AB This paper examines the incentives of national regulators to coordinate capital adequacy requirements in the presence of systemic risk in global financial markets. In a two-country model, correlated asset fire sales by banks generate systemic risk across national financial markets. Absent coordination, national regulators choose inefficiently low levels of macro-prudential regulation. Thus, symmetric countries always benefit from relinquishing their authority to a central regulator that establishes uniform regulations across countries. I also consider the separate case of asymmetric countries: while there is a limit to coordination when countries are sufficiently asymmetric in a single dimension, existence of asymmetries in multiple dimensions might actually relax this limit or even eliminate it. Published by Elsevier B.V.
+C1 [Kara, Gazi Ishak] Board Governors Fed Reserve Syst, Off Financial Stabil Policy & Res, 20th St & Constitut Ave NW, Washington, DC 20551 USA.
+RP Kara, GI (reprint author), Board Governors Fed Reserve Syst, Off Financial Stabil Policy & Res, 20th St & Constitut Ave NW, Washington, DC 20551 USA.
+EM Gazi.I.Kara@frb.gov
+CR Acharya V. V., 2001, EC NOTES, V30, P337
+   Acharya V, 2011, KOREAN ECON REV, V27, P163
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2008, REV FINANC STUD, V21, P2705, DOI 10.1093/rfs/hhm078
+   Acharya VV, 2003, J FINANC, V58, P2745, DOI 10.1046/j.1540-6261.2003.00621.x
+   Aguiar M, 2005, REV ECON STAT, V87, P439, DOI 10.1162/0034653054638319
+   Alfaro L, 2008, REV ECON STAT, V90, P347, DOI 10.1162/rest.90.2.347
+   Allen F, 1998, J FINANC, V53, P1245, DOI 10.1111/0022-1082.00052
+   ALLEN F, 1994, AM ECON REV, V84, P933
+   Almazan A, 2002, J FINANC INTERMED, V11, P87, DOI 10.1006/jfin.2001.0327
+   Amir R, 1996, GAME ECON BEHAV, V15, P132, DOI 10.1006/game.1996.0062
+   Barth J.R., 2006, RETHINKING BANK REGU
+   Bengui Julien, 2013, MACROPRUDENTIA UNPUB
+   BORCH K, 1962, ECONOMETRICA, V30, P424, DOI 10.2307/1909887
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Calvo G. A., 1999, CONTAGION EMER UNPUB
+   Cooper Richard N., 1985, HDB INT EC, VII, P1195
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   Cumby R.E., 1984, EXCHANGE RATE THEORY, P121
+   CUMBY RE, 1986, J INT MONEY FINANC, V5, P5, DOI 10.1016/0261-5606(86)90047-1
+   Dalen D. M., 2003, CESIFO WORKING PAPER, V971
+   Dell'Ariccia G, 2006, J FINANC ECON, V79, P401, DOI 10.1016/j.jfineco.2005.02.003
+   Devereux MB, 2010, J MONEY CREDIT BANK, V42, P71, DOI 10.1111/j.1538-4616.2010.00330.x
+   Fisher I, 1933, ECONOMETRICA, V1, P337, DOI 10.2307/1907327
+   Gai P, 2008, ECON J, V118, P401, DOI 10.1111/j.1468-0297.2007.02127.x
+   Geanakoplos John D, 1986, UNCERTAINTY INFORMAT, V3, P65, DOI DOI 10.1017/CBO9780511983566.007
+   GERTLER M, 1990, J MONETARY ECON, V26, P245, DOI 10.1016/0304-3932(90)90022-V
+   Gordon RH, 1996, AM ECON REV, V86, P1057
+   GREENWALD BC, 1986, Q J ECON, V101, P229, DOI 10.2307/1891114
+   HAMADA K, 1976, J POLIT ECON, V84, P677, DOI 10.1086/260471
+   Hamada K, 1974, NATIONAL MONETARY PO, P13
+   HART OD, 1975, J ECON THEORY, V11, P418, DOI 10.1016/0022-0531(75)90028-9
+   Holthausen C., 2004, ECB WORKING PAPER SE, V316
+   Kara G. I., 2015, BANK CAPITAL R UNPUB
+   Kara G. I., 2015, BANK REGULATIO UNPUB
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Korinek A, 2011, ECB WORKING PAPER SE, V1345
+   Krishnamurthy A, 2003, J ECON THEORY, V111, P277, DOI 10.1016/S0022-0531(03)00098-X
+   Krishnamurthy A, 2010, AM ECON J-MACROECON, V2, P1, DOI 10.1257/mac.2.3.1
+   Krugman P, 2000, NBER CONF R, P43
+   Krugman P., 2008, INT FINANCE MU UNPUB
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   LUCAS RE, 1990, AM ECON REV, V80, P92
+   MISHKIN FS, 1984, J FINANC, V39, P1345, DOI 10.2307/2327731
+   Morrison AD, 2009, J FINANC, V64, P1099, DOI 10.1111/j.1540-6261.2009.01460.x
+   Persson Torsten, 1995, HDB INT EC, V3, P1973
+   Pulvino T., 2002, J FINANC, V53, P939
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Stein JC, 2012, Q J ECON, V127, P57, DOI 10.1093/qje/qjr054
+   STIGLITZ JE, 1982, REV ECON STUD, V49, P241, DOI 10.2307/2297273
+   TOWNSEND RM, 1979, J ECON THEORY, V21, P265, DOI 10.1016/0022-0531(79)90031-0
+   White LJ, 1996, NBER CONF R, P207
+   WILLIAMSON OE, 1988, J FINANC, V43, P567, DOI 10.2307/2328184
+NR 53
+TC 2
+Z9 2
+U1 3
+U2 23
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0022-1996
+EI 1873-0353
+J9 J INT ECON
+JI J. Int. Econ.
+PD MAR
+PY 2016
+VL 99
+BP 192
+EP 222
+DI 10.1016/j.jinteco.2015.11.007
+PG 31
+WC Economics
+SC Business & Economics
+GA DI6ZF
+UT WOS:000373648100012
+DA 2019-12-28
+ER
+
+PT J
+AU Adrian, T
+   Brunnermeier, MK
+AF Adrian, Tobias
+   Brunnermeier, Markus K.
+TI CoVaR
+SO AMERICAN ECONOMIC REVIEW
+LA English
+DT Article
+ID SYSTEMIC RISK; REGRESSION QUANTILES; LIQUIDITY; CRISIS
+AB We propose a measure of systemic risk, Delta CoVaR, defined as the change in the value at risk of the financial system conditional on an institution being under distress relative to its median state. Our estimates show that characteristics such as leverage, size, maturity mismatch, and asset price booms significantly predict Delta CoVaR. We also provide out-of-sample forecasts of a countercyclical, forward-looking measure of systemic risk, and show that the 2006:IV value of this measure would have predicted more than one-third of realized Delta CoVaR during the 2007-2009 financial crisis.
+C1 [Adrian, Tobias] Fed Reserve Bank New York, Res & Stat Grp, 33 Liberty St, New York, NY 10045 USA.
+   [Brunnermeier, Markus K.] Princeton Univ, Dept Econ, Bendheim Ctr Finance, Princeton, NJ 08544 USA.
+   [Brunnermeier, Markus K.] NBER, CEPR, Cambridge, MA 02138 USA.
+   [Brunnermeier, Markus K.] CESIfo, Munich, Germany.
+RP Adrian, T (reprint author), Fed Reserve Bank New York, Res & Stat Grp, 33 Liberty St, New York, NY 10045 USA.
+EM tobias.adrian@ny.frb.org; markus@princeton.edu
+OI Adrian, Tobias/0000-0001-9379-9592
+FU Institute for Quantitative Investment Research Europe; Alfred P. Sloan
+   FoundationAlfred P. Sloan Foundation
+FX We thank Xiaoyang Dong, Evan Friedman, Daniel Green, Sam Langfield,
+   Hoai-Luu Nguyen, Daniel Stackman, and Christian Wolf for outstanding
+   research assistance. The authors also thank Paolo Angelini, Gadi
+   Barlevy, Rene Carmona, Stephen Brown, Robert Engle, Mark Flannery,
+   Xavier Gabaix, Paul Glasserman, Beverly Hirtle, Jon Danielson, John
+   Kambhu, Arvind Krishnamurthy, Burton Malkiel, Ulrich Muller, Maureen
+   O'Hara, Andrew Patton, Matt Pritsker, Matt Richardson, Jean-Charles
+   Rochet, Jose Scheinkman, Jeremy Stein, Kevin Stiroh, Rene Stulz, and
+   Skander Van den Heuvel for feedback, as well as participants at numerous
+   conferences as well as university and central bank seminars. We are
+   grateful for support from the Institute for Quantitative Investment
+   Research Europe. Brunnermeier acknowledges financial support from the
+   Alfred P. Sloan Foundation. The paper first appeared as Federal Reserve
+   Bank of New York Staff Report 348 on September 5, 2008. The views
+   expressed in this paper are those of the authors and do not necessarily
+   represent those of the Federal Reserve Bank of New York or the Federal
+   Reserve System.
+CR Acharya V, 2010, MEASURING SYSTEMIC R
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adams Z, 2014, J FINANC QUANT ANAL, V49, P575, DOI 10.1017/S0022109014000325
+   Adrian T, 2012, 567 FED RES BANK NEW
+   Adrian T, 2014, J FINANC, V69, P2557, DOI 10.1111/jofi.12189
+   Adrian T, 2010, ANNU REV ECON, V2, P603, DOI 10.1146/annurev.economics.102308.124420
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Adrian Tobias, 2016, AM EC REV
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Basel Committee on Banking Supervision (BCBS) & Financial Stability Board (FSB), 2013, GLOB SYST IMP BANKS
+   BASSETT G, 1978, J AM STAT ASSOC, V73, P618, DOI 10.2307/2286611
+   Bernardi M, 2013, BAYESIAN INFERENCE C
+   Bhattacharia S, 1987, NEW APPROACHES MONET, P69
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BORIO C, 2004, 158 BANK INT SETTL
+   Brady N. F, 1988, REPORT PRESIDENTIAL
+   Brownlees C. T, 2015, SRISK CONDITIONAL CA
+   Brunnermeier MK, 2015, AM ECON J-MACROECON, V7, P297, DOI 10.1257/mac.20140054
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Caballero RJ, 2004, J ECON THEORY, V119, P104, DOI 10.1016/S0022-0531(03)00227-8
+   Cao Z, 2013, MULTICOVAR SHAPLEY V
+   Castro C, 2014, J EMPIR FINANC, V25, P1, DOI 10.1016/j.jempfin.2013.10.009
+   Chernozhukov V, 2005, ANN STAT, V33, P806, DOI 10.1214/009053604000001165
+   Chernozhukov V., 2008, NEW PALGRAVE DICT EC, P271
+   Chernozhukov V., 2001, EMPIR ECON, V26, P271, DOI DOI 10.1007/S001810000062
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Claessens S., 2001, INT FINANCIAL CONTAG
+   Danielsson J., 2000, ANN EC STAT, V60, P239, DOI DOI 10.2307/20076262
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   Estrella A, 2004, J BANK FINANC, V28, P1469, DOI 10.1016/S0378-4266(03)00130-4
+   Fong Tom, 2011, REV FUTURES MARKETS
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Geanakoplos J, 1986, UNCERTAINTY INFORM C, VIII
+   Giglio Stefano, 2014, CREDIT DEFAULT SWAP
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Goodhart C. A. E., 2009, 094 INT MON FUND
+   Goodhart Charles A. E., 1975, PAPERS MONETARY EC, V1
+   Gordy MB, 2006, J FINANC INTERMED, V15, P395, DOI 10.1016/j.jfi.2005.12.002
+   Gorton G, 2010, FED RESERVE BANK ST, V92, P507
+   Gray D., 2007, 13607 NAT BUR EC RES
+   GRAY DF, 2007, J INVESTMENT MANAGEM, V5, P5
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Jorion P., 2007, VALUE RISK NEW BENCH
+   Kashyap A. K., 2004, FEDERAL RESERVE BANK, V28, P18
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R., 2005, QUANTILE REGRESSION
+   Korinek A., 2010, SYSTEMIC RISK TAKING
+   Kupiec P. H., 2002, RISK MANAGEMENT VALU, P76
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   Mainik G, 2012, DEPENDENCE CONSISTEN
+   Oh D.H., 2013, TIME VARYING SYSTEMI, P167
+   Rubin R., 1999, HEDGE FUNDS LEVERAGE
+   Stein JC, 2009, J FINANC, V64, P1517, DOI 10.1111/j.1540-6261.2009.01472.x
+   STIGLITZ JE, 1982, REV ECON STUD, V49, P241, DOI 10.2307/2297273
+   White H, 2015, J ECONOMETRICS, V187, P169, DOI 10.1016/j.jeconom.2015.02.004
+   Wong A., 2010, 032010 HONG KONG MON
+NR 62
+TC 257
+Z9 266
+U1 55
+U2 237
+PU AMER ECONOMIC ASSOC
+PI NASHVILLE
+PA 2014 BROADWAY, STE 305, NASHVILLE, TN 37203 USA
+SN 0002-8282
+EI 1944-7981
+J9 AM ECON REV
+JI Am. Econ. Rev.
+PD JUL
+PY 2016
+VL 106
+IS 7
+BP 1705
+EP 1741
+DI 10.1257/aer.20120555
+PG 37
+WC Economics
+SC Business & Economics
+GA DQ6UV
+UT WOS:000379341800005
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Poitras, G
+   Zanotti, G
+AF Poitras, Geoffrey
+   Zanotti, Giovanna
+TI Mortgage contract design and systemic risk immunization
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article; Proceedings Paper
+CT Surrey-Fordham Conference on Banking, Finance, Money and Institutions -
+   The Post Crisis Era
+CY NOV 02-03, 2013
+CL Univ Surrey, Guildford, ENGLAND
+SP Ctr Money, Banking & Inst, Ctr Res Contemporary Fin
+HO Univ Surrey
+DE Classical fixed income immunization theory; Mortgage contract design;
+   Systemic risk management
+ID YIELD CURVE SHIFTS; INTEREST-RATES; DEFAULT RISK; VALUATION; INSURANCE;
+   HOME; DURATION; CRISIS; MARKET
+AB This paper provides theoretical results for the design of contracts used in the market for residential household mortgages and mortgage securities. Critical elements in the problem of immunizing systemic risk through efficient contract design are identified. Using an extension of classical immunization theory, this paper demonstrates that systemic risk of long amortization mortgage contracts is reduced when term to maturity of the contract at origination is significantly less than the amortization period. In addition, incorporating prepayment and limited recourse default options into the mortgage contract increases systemic risk when compared with full recourse mortgage contracts having yield maintenance prepayment penalties. The theoretical results are used to evaluate the systemic risk management problems that have plagued the US mortgage funding system. (C) 2014 Elsevier Inc. All rights reserved.
+C1 [Poitras, Geoffrey] Simon Fraser Univ, Beedie Sch Business, Vancouver, BC V5A 1S6, Canada.
+   [Zanotti, Giovanna] Univ Bergamo, Dept Management Econ & Quantitat Methods, Via Salvecchio 19, I-24129 Bergamo, Italy.
+RP Poitras, G (reprint author), Simon Fraser Univ, Beedie Sch Business, Vancouver, BC V5A 1S6, Canada.
+EM poitras@sfu.ca
+CR Ambrose BW, 2012, REAL ESTATE ECON, V40, P536, DOI 10.1111/j.1540-6229.2011.00320.x
+   [Anonymous], 1856, AM LAW REGISTER, V4, P449
+   Benston George, 1986, ANAL CAUSES SAVINGS
+   Benston GJ, 1997, J ECON PERSPECT, V11, P139, DOI 10.1257/jep.11.3.139
+   Bullard J., 2009, FEDERAL RESERVE BANK, V403-417
+   Campbell JY, 2013, REV FINANC, V17, P1, DOI 10.1093/rof/rfs030
+   Canner G., 2002, FEDERAL RESERVE B, P469
+   CHANCE DM, 1990, J FINANC, V45, P265, DOI 10.2307/2328821
+   Chen MC, 2010, J RISK INSUR, V77, P399, DOI 10.1111/j.1539-6975.2009.01326.x
+   Chomsisengphet S., 2006, FEDERAL RESERVE BANK, V31-56
+   CLICKNER EK, 1967, J RISK INSUR, V34, P451, DOI 10.2307/250860
+   Daglish T, 2009, J BANK FINANC, V33, P681, DOI 10.1016/j.jbankfin.2008.11.012
+   Deng YH, 2006, J MONEY CREDIT BANK, V38, P1431, DOI 10.1353/mcb.2006.0079
+   Downing C, 2005, REAL ESTATE ECON, V33, P681, DOI 10.1111/j.1540-6229.2005.00135.x
+   ESKRIDGE WN, 1984, VA LAW REV, V70, P1083, DOI 10.2307/1072998
+   Fahey J. H., 1934, FEDERAL HOME LOAN BA, V1, P1
+   Federal National Mortgage Association, 2009, FORM 10 K
+   Federation International du Beton, 2007, FRP REINF RC STRUCT, p[3, 3]
+   FINDLAY MC, 1977, J MONEY CREDIT BANK, V9, P356
+   Fooladi IJ, 1997, J BANK FINANC, V21, P1, DOI 10.1016/S0378-4266(96)00018-0
+   Fortin R, 2007, FINANCIAL SERVICES R, V16, P197
+   FREDERIKSEN DM, 1894, J POLITICAL EC, V2, P203, DOI DOI 10.1086/250202
+   Giliberto S. M., 1989, J REAL ESTATE FINANC, V2, P285, DOI DOI 10.1007/BF00177949
+   Goodman L.S., 2004, J FIXED INCOME, V14, P6, DOI 10.3905/jfi.2004.439833
+   Government Accountability Office, 2009, FRAM CRAFT ASS PROP
+   Government Accountability Office, 2006, IMP DEF REM UNCL DIS
+   Green RK, 2005, J ECON PERSPECT, V19, P93, DOI 10.1257/089533005775196660
+   GREENSPAN A, 1995, C RISK MEAS SYST RIS
+   Guthmann HG, 1938, J LAND PUBLIC UTIL E, V14, P26, DOI 10.2307/3158603
+   Hancock D., 2010, ANAL GOVT GUARANTEES
+   Harrington SE, 2009, J RISK INSUR, V76, P785, DOI 10.1111/j.1539-6975.2009.01330.x
+   Hayre L., 2008, J FIXED INCOME, V17, P6, DOI DOI 10.3905/JFI.2008.705539
+   Himmelberg C, 2005, J ECON PERSPECT, V19, P67, DOI 10.1257/089533005775196769
+   Hirtle B, 2009, J FINANC INTERMED, V18, P125, DOI 10.1016/j.jfi.2008.08.001
+   Hurst E, 2004, J MONEY CREDIT BANK, V36, P985, DOI 10.1353/mcb.2005.0009
+   JAFFEE DM, 1989, J ECON PERSPECT, V3, P3, DOI 10.1257/jep.3.4.3
+   Jaffee DM, 2008, CALIF MANAGE REV, V51, P117, DOI 10.2307/41166472
+   Kalotay Andrew, 2008, APPL FINANCIAL EC LE, p[4, 141]
+   Kane J., 2010, ATLANTIC ECON J, V38, P51
+   KAU JB, 1994, J URBAN ECON, V35, P278, DOI 10.1006/juec.1994.1017
+   KAU JB, 1995, J REAL ESTATE FINANC, V11, P5, DOI 10.1007/BF01097934
+   Kiff J., 2009, WP09130 IMF
+   Kupiec P, 2004, J REAL ESTATE FINANC, V28, P123, DOI 10.1023/B:REAL.0000011150.20499.b1
+   Longstaff FA, 2008, J FINANC, V63, P529, DOI 10.1111/j.1540-6261.2008.01330.x
+   Mayer C, 2009, J ECON PERSPECT, V23, P27, DOI 10.1257/jep.23.1.27
+   McQuinn K, 2008, ECON MODEL, V25, P377, DOI 10.1016/j.econmod.2007.06.010
+   MUTH RF, 1962, J FINANC, V17, P63, DOI 10.2307/2977686
+   Ozeki T., 2009, J FIXED INCOME, P62
+   PEEK J, 1991, AREUEA J, V19, P353
+   Peristiani S., 2003, J FIXED INCOME, P33
+   Piskorski T, 2010, REV FINANC STUD, V23, P3098, DOI 10.1093/rfs/hhq031
+   Poitras G., 2007, INSURANCE RISK MANAG, V75, P323
+   Poitras G, 2013, ANN FINANC ECON, V8, DOI 10.1142/S2010495213500061
+   Rabinowitz JJ, 1945, U PENN LAW REV, V94, P94, DOI 10.2307/3309369
+   Redington F.M., 1952, J I ACTUARIES, V78, P286, DOI 10.1017/S0020268100052811
+   Reitano R., 1991, T SOC ACTUARIES, VXLIII, P393
+   Reitano Robert R., 1991, T SOC ACTUARIES, V43, P335
+   Reitano RR, 1996, J PORTFOLIO MANAGE, V22, P71, DOI 10.3905/jpm.1996.71
+   REITANO RR, 1992, J PORTFOLIO MANAGE, V18, P36, DOI 10.3905/jpm.1992.409410
+   Rose JD, 2011, J MONEY CREDIT BANK, V43, P1073, DOI 10.1111/j.1538-4616.2011.00418.x
+   Sack B. P., 2003, J FIXED INCOME, V13, P7, DOI DOI 10.3905/JFI.2003.319356
+   Sakolski Aaron Morton, 1932, GREAT AM LAND BUBBLE
+   Sanders A, 2008, J HOUS ECON, V17, P254, DOI 10.1016/j.jhe.2008.10.001
+   Saunders A, 2012, FINANC MARK PORTFOLI, V26, P39, DOI 10.1007/s11408-011-0175-9
+   Sharp NJ, 2008, J REAL ESTATE FINANC, V36, P307, DOI 10.1007/s11146-007-9055-5
+   Shiller RJ, 2013, J ECON BEHAV ORGAN, V85, P269, DOI 10.1016/j.jebo.2012.04.010
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Shin HS, 2009, ECON J, V119, P309, DOI 10.1111/j.1468-0297.2008.02239.x
+   SHIU ESW, 1987, INSUR MATH ECON, V6, P259, DOI 10.1016/0167-6687(87)90030-8
+   SHIU ESW, 1990, INSUR MATH ECON, V9, P171, DOI 10.1016/0167-6687(90)90030-H
+   Skilton RH, 1946, U PENN LAW REV, V95, P119, DOI 10.2307/3309679
+   VANDELL KD, 1978, J FINANC, V33, P1279, DOI 10.2307/2327266
+   VLR (Virginia Law Review), 1937, VLR VIRGINIA LA 1124, P44
+   Von Furstenberg G., 1969, J FINANC, V24, P459
+   Wetmore JL, 2006, J REAL ESTATE FINANC, V33, P75, DOI 10.1007/s11146-006-8275-4
+   Wilmarth Jr Arthur E., 2009, CONN L REV, V41, P963
+NR 76
+TC 2
+Z9 2
+U1 1
+U2 5
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD MAY
+PY 2016
+VL 45
+BP 320
+EP 331
+DI 10.1016/j.irfa.2014.10.011
+PG 12
+WC Business, Finance
+SC Business & Economics
+GA DL8WK
+UT WOS:000375922500028
+DA 2019-12-28
+ER
+
+PT J
+AU Xie, C
+   Liu, Y
+   Wang, GJ
+   Xu, Y
+AF Xie, Chi
+   Liu, Yang
+   Wang, Gang-Jin
+   Xu, Yan
+TI The Stability of Interbank Market Network: A Perspective on Contagion
+   and Risk Sharing
+SO ADVANCES IN MATHEMATICAL PHYSICS
+LA English
+DT Article
+ID SYSTEMIC RISK
+AB As an important part of the financial system, interbank market provides banks with liquidity and credit lending and also is the main channel for risk contagion. In this paper, we test the existence of systematic risk contagion within the Chinese interbank market. By building the networks of the Chinese interbank market for each year and using the measure of mutual information, we quantitatively detect the changes of interbank market networks and observe that the correlations between banks become increasingly tighter in recent years. With the bilateral risk exposure among Chinese listed commercial banks, we find that the possibility of systemic risk contagion in Chinese interbank market is fairly small. But of great concern on each individual bank, the matter is different. Our simulation shows that the failures of three special banks (i.e., Agricultural Bank of China and Bank of China and Industrial and Commercial Bank of China) most likely lead to systemic risk contagion. Furthermore, we test the antirisk ability of the Chinese interbank market from the perspective of risk sharing and discover that the interbank market is stable when the loss scale is lower than forty percent of banks' total core capital.
+C1 [Xie, Chi; Liu, Yang; Wang, Gang-Jin; Xu, Yan] Hunan Univ, Coll Business Adm, Changsha 410082, Hunan, Peoples R China.
+   [Xie, Chi; Wang, Gang-Jin; Xu, Yan] Hunan Univ, Ctr Finance & Investment Management, Changsha 410082, Hunan, Peoples R China.
+   [Wang, Gang-Jin] Boston Univ, Ctr Polymer Studies, Boston, MA 02215 USA.
+   [Wang, Gang-Jin] Boston Univ, Dept Phys, 590 Commonwealth Ave, Boston, MA 02215 USA.
+RP Xie, C (reprint author), Hunan Univ, Coll Business Adm, Changsha 410082, Hunan, Peoples R China.; Xie, C (reprint author), Hunan Univ, Ctr Finance & Investment Management, Changsha 410082, Hunan, Peoples R China.
+EM xiechi@hnu.edu.cn
+RI Wang, Gang-Jin/E-4749-2013
+OI Wang, Gang-Jin/0000-0002-2813-4356
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71373072, 71501066, 71521061]; Specialized Research
+   Fund for the Doctoral Program of Higher EducationSpecialized Research
+   Fund for the Doctoral Program of Higher Education (SRFDP)
+   [20130161110031]; China Scholarship CouncilChina Scholarship Council
+   [201506135022]; Social Science Foundation of Hunan Province of China
+   [13YBA068]; Natural Science Foundation of Hunan Province of ChinaNatural
+   Science Foundation of Hunan Province [2015JJ3045]
+FX The research is supported by the National Natural Science Foundation of
+   China under Grants nos. 71373072, 71501066, and 71521061, the
+   Specialized Research Fund for the Doctoral Program of Higher Education
+   under Grant no. 20130161110031, the China Scholarship Council under
+   Grant no. 201506135022, the Social Science Foundation of Hunan Province
+   of China under Grant no. 13YBA068, and the Natural Science Foundation of
+   Hunan Province of China under Grant no. 2015JJ3045.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Angelini P, 1996, J BANK FINANC, V20, P853, DOI 10.1016/0378-4266(95)00029-1
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Boss M., 2004, LECT NOTES COMPUTER, V3038, P1070
+   Camara A, 2012, J BANK FINANC, V36, P717, DOI 10.1016/j.jbankfin.2011.02.019
+   Campos RG, 2013, J ECON THEORY, V148, P1624, DOI 10.1016/j.jet.2013.04.007
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Embrechts P., 2011, MODELLING EXTREMAL E, P183
+   Galos P., 2005, EUROPEAN CENTRAL BAN, V508
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   Meng H, 2014, SCI REP-UK, V4, DOI 10.1038/srep03655
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Muller J., 2006, J FINANCIAL SERVICES, V29, P37, DOI DOI 10.1007/S10693-005-5107-2
+   Ortigueira S, 2013, J MONETARY ECON, V60, P650, DOI 10.1016/j.jmoneco.2013.05.007
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Song DM, 2011, PHYS REV E, V84, DOI 10.1103/PhysRevE.84.026108
+   Tasca P, 2014, J FINANC STABIL, V15, P43, DOI 10.1016/j.jfs.2014.08.006
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Wells S., 2004, 230 BANK ENGL SOC SC
+   Zheng ZY, 2012, SCI REP-UK, V2, DOI 10.1038/srep00888
+NR 21
+TC 4
+Z9 4
+U1 2
+U2 25
+PU HINDAWI LTD
+PI LONDON
+PA ADAM HOUSE, 3RD FLR, 1 FITZROY SQ, LONDON, W1T 5HF, ENGLAND
+SN 1687-9120
+EI 1687-9139
+J9 ADV MATH PHYS
+JI Adv. Math. Phys.
+PY 2016
+AR 1297832
+DI 10.1155/2016/1297832
+PG 8
+WC Physics, Mathematical
+SC Physics
+GA DF1GR
+UT WOS:000371088200001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Sui, C
+   Wang, ZY
+   Ye, RZ
+AF Sui, Cong
+   Wang, Zongyao
+   Ye, Renzhen
+TI A novel consensus based prediction strategy for data sensing
+SO NEUROCOMPUTING
+LA English
+DT Article
+DE Data sensing; Contagion; Consensus algorithm; Distributed system; Noise
+   models
+ID SYSTEMIC RISK; NETWORK TOPOLOGY; CRISIS; MODEL
+AB Financial contagion problems have been extensively studied in area of financial research. Most of the works focus on studying the contagion effect on the financial system. Contagion prediction is considered as one of the most important strategies to prevent contagion. But the prediction issue is seldom researched in the financial area. Traditional financial management uses a centralized method to predict contagion risk. But the central management cannot instantly acquire complete information of entire network. A decentralized method is needed to achieve a prediction in real time. This paper introduces a distributed risk contagion prediction strategy of the financial network. Firstly, consensus algorithm is used to distributively acquire contagion risk information of the entire financial network. This distributed strategy enables the system to instantly predict the risk of contagion. Secondly, the impact of the financial crisis could enormously influence the convergency of consensus algorithm. So a consensus based Kalman filter (CAF) is proposed to maintain the convergency of consensus and ensure the accuracy of the prediction. Finally, the strategy is tested in different kinds of financial systems which are impacted by different levels of the financial crisis. The simulation result shows that the strategy is robust, flexible and feasible for practical use. It also proves that the proposed strategy can provide an accurate prediction in any condition. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Sui, Cong] Dongbei Univ Finance & Econ, Sch Finance, Lab Expt Econ, Dalian 116025, Liaoning, Peoples R China.
+   [Wang, Zongyao] Dongbei Univ Finance & Econ, Surrey Int Inst, Artificial Intelligence Lab, Dalian 116025, Liaoning, Peoples R China.
+   [Ye, Renzhen] Huazhong Agr Univ, Coll Sci, Wuhan 430074, Hubei, Peoples R China.
+RP Ye, RZ (reprint author), Huazhong Agr Univ, Coll Sci, Wuhan 430074, Hubei, Peoples R China.
+EM yerenzhen@gmail.com
+FU National Nature Science Foundation of ChinaNational Natural Science
+   Foundation of China [61304180, 61300142]; Ministry of Education Research
+   of Social Sciences Youth funded projects [12YJCZH211]; central
+   government special funds [DUFE2014R12]
+FX This project is supported by National Nature Science Foundation of China
+   (Nos. 61304180 and 61300142), the Ministry of Education Research of
+   Social Sciences Youth funded projects (No. 12YJCZH211) and the central
+   government special funds to support the development of local colleges
+   and universities project (DUFE2014R12).
+CR Afonso G. M., 2008, TECHNICAL REPORT
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Becher C., 2008, TECHNICAL REPORT
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Ezeoha AE, 2011, J FINANC REGUL COMPL, V19, P33, DOI 10.1108/13581981111106158
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gambhir S., 2013, INT J SCI ENG RES, V4, P156
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Gerardi K, 2009, BE J ECON ANAL POLI, V9, DOI 10.2202/1935-1682.2232
+   GU DB, 2008, IEEE RSJ INT C INT R, P3286
+   Hsieh TJ, 2012, NEUROCOMPUTING, V82, P196, DOI 10.1016/j.neucom.2011.11.020
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Krause A, 2012, J ECON BEHAV ORGAN, V83, P583, DOI 10.1016/j.jebo.2012.05.015
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Liang WF, 2009, IEEE T WIREL COMMUN, V8, P5490, DOI 10.1109/TWC.2009.070602
+   Olfati-Saber R, 2006, IEEE T AUTOMAT CONTR, V51, P401, DOI 10.1109/TAC.2005.864190
+   PAPAGEORGIOU M, 1984, IEEE T AUTOMAT CONTR, V29, P482, DOI 10.1109/TAC.1984.1103573
+   Poddig T, 1996, NEUROCOMPUTING, V10, P251, DOI 10.1016/0925-2312(96)00049-5
+   Santos E. B., 2010, TECHNICAL REPORT
+   Soramaki K., 2006, TECHNICAL REPORT
+   Thurner S, 2003, QUANT FINANC, V3, P306, DOI 10.1088/1469-7688/3/4/307
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Wang ZY, 2012, IEEE T IND ELECTRON, V59, P3232, DOI 10.1109/TIE.2011.2146211
+   Yang Q, 2011, IEEE T IND INFORM, V7, P316, DOI 10.1109/TII.2011.2123903
+   Yu L, 2010, NEUROCOMPUTING, V73, P716, DOI 10.1016/j.neucom.2008.11.035
+NR 27
+TC 1
+Z9 1
+U1 1
+U2 10
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0925-2312
+EI 1872-8286
+J9 NEUROCOMPUTING
+JI Neurocomputing
+PD NOV 26
+PY 2016
+VL 215
+SI SI
+BP 175
+EP 183
+DI 10.1016/j.neucom.2015.05.145
+PG 9
+WC Computer Science, Artificial Intelligence
+SC Computer Science
+GA EB3WW
+UT WOS:000387300700019
+DA 2019-12-27
+ER

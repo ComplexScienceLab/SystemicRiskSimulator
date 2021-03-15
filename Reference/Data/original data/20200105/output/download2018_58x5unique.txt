@@ -1,0 +1,436 @@
+
+PT J
+AU Colletaz, G
+   Levieuge, G
+   Popescu, A
+AF Colletaz, Gilbert
+   Levieuge, Gregory
+   Popescu, Alexandra
+TI Monetary policy and long-run systemic risk-taking
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Monetary policy; Systemic risk-taking; Long run causality; SRisk
+ID INTEREST-RATES; LENDING BOOMS; TIME-SERIES; LEVERAGE; MODEL
+AB As an extension to the literature on the risk-taking channel of monetary policy, this paper studies the existence of a systemic risk-taking channel (SRTC) in the Eurozone, through an original macroeconomic perspective based on causality measures. Because the SRTC is effective after an "incubation period", we make a distinction between short and long-term causality, following the methodology proposed by Dufour and Taamouti (2010). We find that causality from monetary policy to systemic risk, while not significant in the very short term, robustly represents 75 to 100% of the total dependence between the two variables in the long run. Reverse causality is rejected: systemic risk did not influence the policy of the European Central Bank before the global financial crisis. However, central banks must be aware that a too loose monetary policy stance may be conducive to a build-up of systemic risk. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Colletaz, Gilbert; Levieuge, Gregory] Univ Orleans, CNRS, LEO, UMR 7322, F-45067 Orleans, France.
+   [Levieuge, Gregory] Banque France, DGEI DEMFI RECFIN 041 1391, 31 Rue Croix des Petits Champs, F-75049 Paris 01, France.
+   [Popescu, Alexandra] Univ Poitiers, CRIEF, 2 Rue Jean Carbonnier, F-86073 Poitiers, France.
+RP Levieuge, G (reprint author), Banque France, DGEI DEMFI RECFIN 041 1391, 31 Rue Croix des Petits Champs, F-75049 Paris 01, France.
+EM gregory.levieuge@banque-france.fr
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Adrian T, 2009, AM ECON REV, V99, P600, DOI 10.1257/aer.99.2.600
+   Afanasyeva E., 2016, BANK MARKET PO UNPUB
+   Allen F, 2009, C GLOB MARK INT FIN
+   Altunbas Y, 2014, INT J CENT BANK, V10, P95
+   Bekaert G, 2013, J MONETARY ECON, V60, P771, DOI 10.1016/j.jmoneco.2013.06.003
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Borio C, 2012, J FINANC STABIL, V8, P236, DOI 10.1016/j.jfs.2011.12.003
+   Brownlees C.T., 2017, TECHNICAL REPORT
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   Bruno V, 2017, J FINANC STABIL, V28, P183, DOI 10.1016/j.jfs.2016.04.001
+   Buch CM, 2014, J ECON DYN CONTROL, V43, P12, DOI 10.1016/j.jedc.2014.01.017
+   De Nicolo G., 2010, 1009 IMF STAFF
+   Delis MD, 2017, J MONEY CREDIT BANK, V49, P187, DOI 10.1111/jmcb.12372
+   Delis MD, 2011, J BANK FINANC, V35, P840, DOI 10.1016/j.jbankfin.2010.09.032
+   Dell'Ariccia G, 2006, J FINANC, V61, P2511, DOI 10.1111/j.1540-6261.2006.01065.x
+   Dell'Ariccia G, 2017, J FINANC, V72, P613, DOI 10.1111/jofi.12467
+   Dell'Ariccia G, 2014, J ECON THEORY, V149, P65, DOI 10.1016/j.jet.2013.06.002
+   Dewachter H, 2014, J ECON DYN CONTROL, V43, P241, DOI 10.1016/j.jedc.2014.03.004
+   Diamond DW, 2012, J POLIT ECON, V120, P552, DOI 10.1086/666669
+   Diamond DW, 2009, AM ECON REV, V99, P606, DOI 10.1257/aer.99.2.606
+   Drees B., 2013, EUR ECON REV, V62, P114
+   Dubecq S., 2015, INT J CENT BANK, V11, P72
+   Dufour JM, 1998, ECONOMETRICA, V66, P1099, DOI 10.2307/2999631
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Gambacorta L, 2009, BIS Q REV
+   Gambacorta L, 2011, ECON POLICY, P135, DOI 10.1111/j.1468-0327.2011.00261.x
+   Gertler M, 2012, J MONETARY ECON, V59, pS17, DOI 10.1016/j.jmoneco.2012.11.007
+   Gonzalez-Aguado C, 2015, J MONEY CREDIT BANK, V47, P445, DOI 10.1111/jmcb.12182
+   Hau H, 2016, J FINANC ECON, V120, P309, DOI 10.1016/j.jfineco.2016.01.014
+   He Zhaozhao, 2014, WORKING PAPER
+   Hofmann B, 2012, BIS Q REV
+   Holmstrom B, 1997, Q J ECON, V112, P663, DOI 10.1162/003355397555316
+   Ioannidou V, 2015, REV FINANC, V19, P95, DOI 10.1093/rof/rfu035
+   Kilian L, 1998, REV ECON STAT, V80, P218, DOI 10.1162/003465398557465
+   Kindleberger C., 1978, MANIAS PANICS CRASHE
+   Levieuge G., 2009, LOUVAIN EC REV, V75, P425, DOI DOI 10.1016/0047-259X(85)90027-2
+   Maddaloni A, 2011, REV FINANC STUD, V24, P2121, DOI 10.1093/rfs/hhr015
+   Molina CA, 2005, J FINANC, V60, P1427, DOI 10.1111/j.1540-6261.2005.00766.x
+   Paligorova T, 2017, J FINANC INTERMED, V30, P35, DOI 10.1016/j.jfi.2016.11.003
+   SIMS CA, 1990, ECONOMETRICA, V58, P113, DOI 10.2307/2938337
+   Taylor J. B., 1993, CARNEGIE-ROCHESTER C, V39, P195, DOI DOI 10.1016/0167-2231(93)90009-L
+   Thakor A, 2015, AM ECON REV, V105, P305, DOI 10.1257/aer.p20151090
+   Valencia F, 2014, J ECON DYN CONTROL, V47, P20, DOI 10.1016/j.jedc.2014.07.010
+   VONHAYEK F, 1939, PROFITS INTEREST INV
+NR 46
+TC 2
+Z9 2
+U1 1
+U2 7
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD JAN
+PY 2018
+VL 86
+BP 165
+EP 184
+DI 10.1016/j.jedc.2017.11.001
+PG 20
+WC Economics
+SC Business & Economics
+GA FT6EQ
+UT WOS:000423247500007
+DA 2019-12-28
+ER
+
+PT J
+AU Yan, YF
+   Guo, J
+AF Yan, Yifeng
+   Guo, Ju'e
+TI THE SOVEREIGN YIELD CURVE AND FISCAL BEHAVIOUR IN CHINA
+SO PACIFIC ECONOMIC REVIEW
+LA English
+DT Article; Proceedings Paper
+CT Conference on China's Financial Liberalization
+CY SEP 15-16, 2016
+CL Helsinki, FINLAND
+SP Bank Finland Inst Economies Transit, City Univ Hong Kong, Global Res Unit
+ID WEIGHTED SHAPLEY VALUES; SYSTEMIC RISK; FINANCIAL NETWORKS; CONTAGION;
+   EXPOSURES
+AB The present study aims to explore the relationship between the sovereign yield curve and fiscal behaviour in China. The Chinese Government is very powerful, and fiscal policy plays an important role in China's economy. A dynamic Nelson-Siegel model is adopted to estimate the level, slope and curvature factors of the yield curve. Three aspects of fiscal behaviour, including government spending, revenue and budget balance, are considered. Significant relationships between fiscal behaviour and the sovereign yield curve are found and described in the present study. Higher government expenditure raises the level and slope factors of the yield curve, while increasing government revenue reduces the level factor and enhances the slope factor. Furthermore, improved budget balance decreases the level and slope factors of the yield curve. Fiscal behaviour also interacts with the macroeconomy in China. Fiscal policy is insensitive to price surges in contrast to the strong responses of monetary policy to higher inflation. In addition, crowding-out effects of government spending are demonstrated in this study.
+C1 [Yan, Yifeng; Guo, Ju'e] Xi An Jiao Tong Univ, Xian, Shaanxi, Peoples R China.
+RP Yan, YF (reprint author), Xi An Jiao Tong Univ, Sch Management, 28 Xianning West Rd, Xian 710049, Peoples R China.
+EM yanyifeng0123@163.com
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya V, 2010, MEASURING SYSTEMIC R
+   Acharya VV, 2009, RESTORING FINANCIAL
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Benoit S., 2015, RISKS LIE SURVEY SYS
+   Cabrales Antonio, 2014, 4715 CESIFO
+   Cao Z, 2013, MULTICOVAR SHAPLEY V
+   Chinazzi M, 2015, SYSTEMIC RISK CONTAG
+   CHUN Y, 1991, INT J GAME THEORY, V20, P183, DOI 10.1007/BF01240278
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   De Bandt O., 2012, OXFORD HDB BANKING
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   ELSINGER H., 2011, 156 OEST NAT
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garratt R. J., 2012, WORKING PAPER
+   Gourieroux C, 2012, CAN J ECON, V45, P1273, DOI 10.1111/j.1540-5982.2012.01750.x
+   Gravelle T, 2013, J BANK FINANC, V37, P2196, DOI 10.1016/j.jbankfin.2013.01.007
+   Huang X., 2010, BIS WORKING PAPERS, V296
+   KALAI E, 1987, INT J GAME THEORY, V16, P205, DOI 10.1007/BF01756292
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Liu M., 2012, SYSTEMIC RISK COMPON
+   Memmel C., 2011, WORKING PAPER
+   NOWAK AS, 1995, GAME ECON BEHAV, V8, P389, DOI 10.1016/S0899-8256(05)80008-9
+   Shapley L.S., 1953, THESIS
+   Shapley L.S., 1977, P5872 RAND
+   Shapley L. S., 1953, ANN MATH STUD, V28, P307, DOI DOI 10.1515/9781400881970-018
+   Staum J, 2012, QUANT FINANC, V12, P651, DOI 10.1080/14697688.2012.664942
+   Tarashev Nikola, 2010, 308 BIS
+   Toivanen M., 2009, FINANCIAL INTERLINKA
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 34
+TC 1
+Z9 1
+U1 1
+U2 4
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1361-374X
+EI 1468-0106
+J9 PAC ECON REV
+JI Pac. Econ. Rev.
+PD MAY
+PY 2018
+VL 23
+IS 2
+SI SI
+BP 271
+EP 295
+DI 10.1111/1468-0106.12159
+PG 25
+WC Economics
+SC Business & Economics
+GA GF5RP
+UT WOS:000432025600009
+DA 2019-12-27
+ER
+
+PT J
+AU Molyneux, P
+AF Molyneux, Philip
+TI Developments in Banking Research and Areas for Future Study
+SO INTERNATIONAL JOURNAL OF THE ECONOMICS OF BUSINESS
+LA English
+DT Article
+DE Banks; Banking Crises; Regulation; Corporate Governance; Monetary Policy
+ID GOVERNMENT INTERVENTIONS; PERFORMANCE EVIDENCE; FINANCIAL SERVICES;
+   SYSTEMIC RISK; IMPACT; LIQUIDITY; BOARD; GOVERNANCE; INDUSTRY; SECTOR
+AB There has been an explosion of research into banking issues following the global financial crisis of 2007-08. What was once regarded as a somewhat esoteric subject area, nestled halfway between economics and finance, has now become mainstream attracting significant academic and policy attention. The following review aims to outline areas of topicality and highlight possibilities for future research. This paper covers recent empirical work on: bank capital; systemic risk; corporate governance; consumer protection and financial inclusion; size and diversification; and the impact of government intervention and unconventional monetary policy in banking.
+C1 [Molyneux, Philip] Univ Sharjah, Coll Business Adm, POB 27272, Sharjah, U Arab Emirates.
+RP Molyneux, P (reprint author), Univ Sharjah, Coll Business Adm, POB 27272, Sharjah, U Arab Emirates.
+EM pmolyneux@sharjah.ac.ae
+OI Molyneux, Philip/0000-0001-6210-7418
+CR Abedifar P, 2013, REV FINANC, V17, P2035, DOI 10.1093/rof/rfs041
+   Acharya V, 2014, J MONETARY ECON, V65, P36, DOI 10.1016/j.jmoneco.2014.04.014
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya VV, 2011, REV FINANC STUD, V24, P2166, DOI 10.1093/rfs/hhq073
+   Adams RB, 2012, J FINANC INTERMED, V21, P243, DOI 10.1016/j.jfi.2011.09.002
+   Adams RB, 2012, INT REV FINANC, V12, P7, DOI 10.1111/j.1468-2443.2011.01147.x
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Ait-Sahalia Y, 2012, J INT ECON, V87, P162, DOI 10.1016/j.jinteco.2011.12.001
+   Allen F, 2011, REV FINANC STUD, V24, P983, DOI 10.1093/rfs/hhp089
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Arteta C, 2016, 7791 WORLD BANK
+   Ball L., 2016, GENEVA REPORTS WORLD
+   BCBS, 2013, BAS 3 LIQ COV RAT LI
+   BCBS, 2010, BAS 3 INT FRAM LIQ R
+   Bebchuk Lucian, 2010, YALE J REGUL, V27, P257
+   Beccalli E, 2015, J BANK FINANC, V58, P232, DOI 10.1016/j.jbankfin.2015.04.014
+   Bech M., 2016, BIS Q REV, P31
+   Beck T, 2008, WORLD BANK ECON REV, V22, P397, DOI 10.1093/wber/lhn020
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Berger AN, 2016, J FINANC INTERMED, V26, P115, DOI 10.1016/j.jfi.2016.01.001
+   Berger AN, 2014, J CORP FINANC, V28, P48, DOI 10.1016/j.jcorpfin.2013.11.006
+   Berger AN, 2009, REV FINANC STUD, V22, P3779, DOI 10.1093/rfs/hhn104
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Boyarchenko Nina, J FINANCIAL INTERMED
+   Brauning F, 2017, ECB MONETARY POLICY
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Camara N., 2014, 1426 BBVA
+   Coleman Nicholas S., 2017, 1197 FED RES BOARD I
+   Cunat Vicente, 2010, 201008 FEDEA
+   Davies R, 2014, J MONEY CREDIT BANK, V46, P219, DOI 10.1111/jmcb.12088
+   de Andres P, 2008, J BANK FINANC, V32, P2570, DOI 10.1016/j.jbankfin.2008.05.008
+   De Jonghe O, 2015, J BANK FINANC, V61, pS3, DOI 10.1016/j.jbankfin.2014.12.024
+   De Jonghe O, 2015, J FINANC INTERMED, V24, P154, DOI 10.1016/j.jfi.2014.11.005
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Delis MD, 2011, REV FINANC, V15, P511, DOI 10.1093/rof/rfq035
+   DeLong Gayle L., 2010, OXFORD HDB BANKING, P508
+   Demirguec-Kunt A, 2013, BROOKINGS PAP ECO AC, P279
+   Demirguc-Kunt A, 2013, J MONEY CREDIT BANK, V45, P1147, DOI 10.1111/jmcb.12047
+   Demirguc-Kunt A, 2010, J FINANC ECON, V98, P626, DOI 10.1016/j.jfineco.2010.06.004
+   DeYoung R, 2013, J FINANC QUANT ANAL, V48, P165, DOI 10.1017/S0022109012000646
+   DeYoung R, 2013, J FINANC INTERMED, V22, P397, DOI 10.1016/j.jfi.2013.01.001
+   Dong G Nathan, 2012, AM FIN ASS 2012 CHIC
+   Eisenschmid Jens, 2017, KOC U TUSIAD EC RES
+   Ellul A, 2013, J FINANC, V68, P1757, DOI 10.1111/jofi.12057
+   Erkens DH, 2012, J CORP FINANC, V18, P389, DOI 10.1016/j.jcorpfin.2012.01.005
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Financial Services Authority FSA, 2009, REF REM PRACT FIN SE
+   Fiordelisi F, 2016, REV FINANC, V20, P2321, DOI 10.1093/rof/rfv053
+   Flannery MJ, 2008, REV FINANC, V12, P391, DOI 10.1093/rof/rfm007
+   Flannery MJ, 2015, J BANK FINANC, V59, P236, DOI 10.1016/j.jbankfin.2015.06.008
+   Gambacorta L., 2013, 412 BIS
+   Gertler M, 2015, AM ECON REV, V105, P2011, DOI 10.1257/aer.20130665
+   Giglio S, 2016, J FINANC ECON, V119, P457, DOI 10.1016/j.jfineco.2016.01.010
+   Gropp R, 2010, REV FINANC, V14, P587, DOI 10.1093/rof/rfp030
+   Haldane Andrew, 2013, HAVE WE SOLVED TOO B
+   Hasan I, 2015, J BANK FINANC, V50, P475, DOI 10.1016/j.jbankfin.2014.03.029
+   Heider F, 2017, LIFE ZERO BANK LENDI
+   Herring R., 2010, OXFORD HDB BANKING, P195
+   Hryckiewicz A, 2014, J BANK FINANC, V46, P246, DOI 10.1016/j.jbankfin.2014.05.009
+   Hughes JP, 2013, J FINANC INTERMED, V22, P559, DOI 10.1016/j.jfi.2013.06.004
+   Independent Commission on Banking, 2011, VICK REP FIN REP REC
+   Jacobs Michael, 2016, HDB POSTCRISIS FINAN, P110
+   Jiang Chao, 2013, U LIM LIM FRANC MAY
+   Kritzman M, 2010, FINANC ANAL J, V66, P30, DOI 10.2469/faj.v66.n5.3
+   Li Yuanzhenm, 2010, 478510 MIT
+   Liikanen Erkki, 2012, HIGH LEVEL EXPERT GR
+   Lumpkin Stephen, 2010, OECD J FINANCIAL MAR, V1, P117
+   Makaew Tanakorn, 2017, DO BUSINESS BORROWER
+   Mariathasan M, 2014, J FINANC INTERMED, V23, P300, DOI 10.1016/j.jfi.2014.04.004
+   Mehran H., 2012, CRISIS AFTERMATH NEW, P11
+   Memmel C, 2010, J FINANC INTERMED, V19, P509, DOI 10.1016/j.jfi.2009.10.002
+   Mester Loretta J., 2015, OXFORD HDB BANKING, P247
+   Minton BA, 2014, J FINANC QUANT ANAL, V49, P351, DOI 10.1017/S0022109014000283
+   Molyneux P, 2014, J INT MONEY FINANC, V49, P258, DOI 10.1016/j.jimonfin.2014.03.006
+   Moshirian Fariborz, 2014, 0152014 CIFR
+   Naceur S. B, 2015, WP1531 IMF
+   Oeztekin O, 2012, J FINANC ECON, V103, P88, DOI 10.1016/j.jfineco.2011.08.014
+   Olalla Myriam Garca, 2017, J ECON POLICY REFORM, V20, P1
+   Palvia A, 2015, J BUS ETHICS, V131, P577, DOI 10.1007/s10551-014-2288-3
+   Pasiouras Fotios, MANAGEMENT SCI
+   Pennathur A, 2014, J ECON BUS, V71, P22, DOI 10.1016/j.jeconbus.2013.08.002
+   Fonseca AR, 2010, J BANK FINANC, V34, P892, DOI 10.1016/j.jbankfin.2009.09.020
+   Tarullo Daniel K, 2012, FINANCIAL STABILITY
+   Tuna A. Irem, 2016, 1607 CHIC BOOTH
+   Vallascas F, 2013, REV FINANC, V17, P1947, DOI 10.1093/rof/rfs042
+   Veronesi P, 2010, J FINANC ECON, V97, P339, DOI 10.1016/j.jfineco.2010.03.011
+   Wehinger Gert, 2012, OECD J FINANCIAL MAR, V2, P79, DOI DOI 10.1787/fmt-2012-5k4bwnpkvk6f
+   Wheelock DC, 2012, J MONEY CREDIT BANK, V44, P171, DOI 10.1111/j.1538-4616.2011.00472.x
+   Williams B, 2016, J BANK FINANC, V73, P16, DOI 10.1016/j.jbankfin.2016.07.019
+   Wilson J. O. S., 2010, BRIT ACCOUNT REV, V42, P153, DOI DOI 10.1016/J.BAR.2010.05.003
+   World Bank, 2014, GLOB FINANC DEV REP, P1, DOI 10.1596/978-0-8213-9985-9
+   Zabai Anna, 2016, BANK FOR INTERNATION
+NR 92
+TC 0
+Z9 0
+U1 0
+U2 1
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1357-1516
+EI 1466-1829
+J9 INT J ECON BUS
+JI nt. J. Econ. Bus.
+PY 2018
+VL 25
+IS 1
+BP 167
+EP 179
+DI 10.1080/13571516.2017.1399654
+PG 13
+WC Business
+SC Business & Economics
+GA GJ5DA
+UT WOS:000435400200016
+DA 2019-12-28
+ER
+
+PT J
+AU Duport, N
+   Fina, E
+   Goyeau, D
+AF Duport, Noelle
+   Fina, Eric
+   Goyeau, Daniel
+TI DIVERSIFICATION AT FINANCIAL INSTITUTIONS AND SYSTEMIC RISK:
+   CONSIDERATION OF EXTREME TAIL RISKS
+SO REVUE ECONOMIQUE
+LA French
+DT Article
+DE financial diversification; systemic risk; prudential regulation;
+   regulatory capital
+ID CRISES
+AB This article examines the effects of diversification on systemic risk, and its implications for regulatory capital from a macro-prudential perspective. The systemic risk studied is that resulting from a common exposure of banking institutions: when the latter diversify their activities, the compositions of their assets converge, making them therefore susceptible to the same shocks. In this context, the contribution of this article is threefold: firstly, it analyzes the evolution of capital that would compensate for the increased risk of a generalized crisis; secondly, it assumes that the return on banking asset follows a Gumbel distribution, allowing for better modeling of extreme risks (especially on the left tail) than does a gaussian distribution; thirdly, it analyzes arbitrage in terms of regulatory capital for individual risk vs. systemic risk resulting from diversification. We point out that, in this context, the regulator cannot manage individual and systemic risks with a single instrument. Indeed, diversification allows a bank to reduce its individual risk and therefore, from a micro-prudential perspective, to reduce its level of regulatory capital. However, as this strategy leads to an increase in systemic risk, under the macro-prudential regulation, it should hold more. The prudential micro and macro objectives may thus diverge, and thus require two instruments of regulation.
+C1 [Duport, Noelle; Fina, Eric; Goyeau, Daniel] Univ Poitiers, CRIEF, EA 2249, Poitiers, France.
+RP Duport, N; Fina, E; Goyeau, D (reprint author), Batiment A1,2 Rue Jean Carbonnier,TSA 81100, F-86073 Poitiers 9, France.
+EM noelle.duport@univ-poitiers.fr; eric.fina.kamani@univ-poitiers.fr;
+   daniel.goyeau@univ-poitiers.fr
+CR Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian Tobias, 2010, 328 FED RES BANK NEW
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   HURLIN C., 2017, FIN20131005 HEC PAR
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   MASCIANDARO D., 2005, HDB CENTRAL BANKING
+   MASCIANDARO D., 2007, EUROPEAN J POLITICAL, V23, P285, DOI DOI 10.1016/J.EJPOLECO.2006.02.001
+   QUINTYN M., 2006, ALIGNING SUPER UNPUB
+   Shaffer S, 1994, RES FINANCIAL SERVIC, V6, P249
+   van Oordt MRC, 2014, J FINANC INTERMED, V23, P214, DOI 10.1016/j.jfi.2013.05.001
+   Wagner W, 2008, J FINANC INTERMED, V17, P330, DOI 10.1016/j.jfi.2008.01.001
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 14
+TC 1
+Z9 1
+U1 1
+U2 4
+PU PRESSES FOND NAT SCI POLIT
+PI PARIS 07
+PA 27 RUE SAINT-GUILLAUME, 75341 PARIS 07, FRANCE
+SN 0035-2764
+EI 1950-6694
+J9 REV ECON-FR
+JI Rev. Econ.
+PD MAY
+PY 2018
+VL 69
+IS 3
+BP 477
+EP 504
+DI 10.3917/reco.693.0477
+PG 28
+WC Economics
+SC Business & Economics
+GA GI3UH
+UT WOS:000434296500004
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Danilov, YA
+   Pivovarov, DA
+AF Danilov, Yuri A.
+   Pivovarov, Danil A.
+TI Financial structure in Russia: Conclusions for state policy
+SO VOPROSY EKONOMIKI
+LA Russian
+DT Article
+DE financial structure; financial development; economic growth; estimated
+   financial structure; systemic risks; financial inclusion; inequality;
+   financial strategies
+AB The article examines the financial structure of Russia. A retrospective analysis of the concept of financial development in the world economic science was conducted. To calculate the quantitative characteristics of Russia's financial structure, both the indicators from international practice and the original ones supplementing them were used. The analysis of the influence of the financial structure on economic growth was conducted, on the basis of which the conclusion was made about the need to implement state policy aimed at achieving an outstripping growth of the non-banking financial sector. The reasons for this conclusion are given in the discussion of the results.
+C1 [Danilov, Yuri A.; Pivovarov, Danil A.] Russian Presidential Acad Natl Econ & Publ Adm, Moscow, Russia.
+   [Danilov, Yuri A.; Pivovarov, Danil A.] Lomonosov Moscow State Univ, Fac Econ, Moscow, Russia.
+RP Danilov, YA (reprint author), Russian Presidential Acad Natl Econ & Publ Adm, Moscow, Russia.; Danilov, YA (reprint author), Lomonosov Moscow State Univ, Fac Econ, Moscow, Russia.
+EM ydanilov@rambler.ru
+RI Pivovarov, Danil/V-9173-2019; Danilov, Yuri/V-6074-2019; Danilov,
+   Yuri/C-2643-2019
+OI Danilov, Yuri/0000-0002-0005-651X; 
+CR Allen F., 2000, COMP FINANCIAL SYSTE
+   [Anonymous], 2017, GROWTH EC MIDT PROGR
+   Arcand J, 2012, WP12161 IMF
+   Cihak M., 2012, WPS6175 WORK BANK PO
+   Cournede B, 2015, 1223 OECD EC DEP
+   Cournede B., 2015, 14 OECD EC DEP
+   Danilov Yu, 2017, EKONOMICHESKOE RAZVI, P58
+   Danilov Yu, 2017, ROSSIYSKOE PREDPRINI, V18, P161
+   Danilov Yu. A., 2016, STRATEGIC PLANNING F
+   Danilov Y, 2017, VOPR EKON, P28, DOI 10.32609/0042-8736-2017-9-28-50
+   Demirguc-Kunt A, 2001, FINANCIAL STRUCTURE
+   Demirguc-Kunt A, 2008, 11 WORLD BANK
+   Demirguc-Kunt A., 2011, WPS5805 WORLD BANK P
+   Demirguc-Kunt A, 2004, FINANCIAL STRUCTURE, P3
+   Gould D. M., 2017, RISKS RETURNS MANAGI
+   KING RG, 1993, Q J ECON, V108, P717, DOI 10.2307/2118406
+   Langfield S., 2015, 1797 ECB
+   Pivovarov D. A., 2018, NAUCHNYE ISSLEDOVANI
+   Robinson J., 1952, RATE INTEREST OTHER
+   Sahay R., 2015, SDN1508 IMF
+   Schumpeter J.A., 1911, THEORY EC DEV
+   Vedev A. L., 2014, MAIN CHARACTERISTICS
+   Vedev A. L., 2012, FORECAST RF FINANCIA
+   Vedev A, 2014, EKONOMICHESKAYA POLI, P7
+NR 24
+TC 2
+Z9 2
+U1 1
+U2 2
+PU RUSSIAN ACAD SCIENCES, INST ECONOMICS
+PI MOSCOW
+PA NAKHIMOVSKII PROSPEKT 32, MOSCOW, 117218, RUSSIA
+SN 0042-8736
+J9 VOPR EKON
+JI Vopr. Ekon.
+PD MAR
+PY 2018
+IS 3
+BP 30
+EP 47
+DI 10.32609/0042-8736-2018-3-30-47
+PG 18
+WC Economics
+SC Business & Economics
+GA FY7UW
+UT WOS:000427070000002
+DA 2019-12-28
+ER

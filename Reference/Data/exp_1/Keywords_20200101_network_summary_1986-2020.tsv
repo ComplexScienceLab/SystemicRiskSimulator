@@ -1,0 +1,545 @@
+Freq	Burst	Degree	Centrality	Sigma	PageRank	Keyword	Author	Year	Title	Source	Vol	Page	Half-life	DOI	ClusterID
+962		28	0.00	1.00	0.00	systemic risk									
+722		39	0.00	1.00	0.00	contagion									
+450	3.61	21	0.00	1.00	0.00	risk									
+387		23	0.00	1.00	0.00	model									
+343	2.85	29	0.00	1.00	0.00	market									
+275	7.57	22	0.00	1.00	0.00	liquidity									
+245		17	0.00	1.00	0.00	financial crisis									
+180		27	0.00	1.00	0.00	volatility									
+158		32	0.00	1.00	0.00	return									
+155		12	0.00	1.00	0.00	crisis									
+141		24	0.00	1.00	0.00	bank									
+130		21	0.00	1.00	0.00	financial network									
+121	3.41	34	0.00	1.00	0.00	financial contagion									
+112		19	0.00	1.00	0.00	financial stability									
+104		36	0.00	1.00	0.00	stock market									
+101		12	0.00	1.00	0.00	impact									
+100		30	0.00	1.00	0.00	performance									
+100		35	0.00	1.00	0.00	determinant									
+94		18	0.00	1.00	0.00	network									
+92		24	0.00	1.00	0.00	stability									
+91	4.64	20	0.00	1.00	0.00	crise									
+90		29	0.00	1.00	0.00	interdependence									
+88		29	0.00	1.00	0.00	interbank market									
+88	8.93	26	0.00	1.00	0.00	information									
+88		20	0.00	1.00	0.00	diversification									
+87		18	0.00	1.00	0.00	banking									
+82		21	0.00	1.00	0.00	financial crise									
+82	6.50	29	0.00	1.00	0.00	deposit insurance									
+82		22	0.00	1.00	0.00	topology									
+81		17	0.00	1.00	0.00	debt									
+78		24	0.00	1.00	0.00	price									
+75		13	0.00	1.00	0.00	monetary policy									
+75		23	0.00	1.00	0.00	credit risk									
+73		28	0.00	1.00	0.00	dependence									
+70		22	0.00	1.00	0.00	exposure									
+70		31	0.00	1.00	0.00	time series									
+68	2.88	13	0.00	1.00	0.00	management									
+68		18	0.00	1.00	0.00	default									
+66		22	0.00	1.00	0.00	global financial crisis									
+66	8.71	10	0.00	1.00	0.00	connectedness									
+65		16	0.00	1.00	0.00	spillover									
+64		15	0.00	1.00	0.00	insurance									
+63		18	0.00	1.00	0.00	transmission									
+62		15	0.00	1.00	0.00	integration									
+60		29	0.00	1.00	0.00	copula									
+59		21	0.00	1.00	0.00	dynamics									
+59	3.55	23	0.00	1.00	0.00	test									
+59		33	0.00	1.00	0.00	competition									
+57		9	0.00	1.00	0.00	covar									
+57		25	0.00	1.00	0.00	credit									
+55		23	0.00	1.00	0.00	spread									
+54		29	0.00	1.00	0.00	stock									
+53		13	0.00	1.00	0.00	credit default swap									
+52		20	0.00	1.00	0.00	equilibrium									
+51	3.30	24	0.00	1.00	0.00	risk management									
+50		22	0.00	1.00	0.00	volatility spillover									
+47		11	0.00	1.00	0.00	leverage									
+45		15	0.00	1.00	0.00	emerging market									
+45		16	0.00	1.00	0.00	policy									
+44		30	0.00	1.00	0.00	firm									
+42		19	0.00	1.00	0.00	stock return									
+41		17	0.00	1.00	0.00	us									
+39		26	0.00	1.00	0.00	investment									
+39		21	0.00	1.00	0.00	cost									
+38		21	0.00	1.00	0.00	unit root									
+38		38	0.00	1.00	0.00	comovement									
+38		22	0.00	1.00	0.00	finance									
+37		19	0.00	1.00	0.00	shock									
+37		27	0.00	1.00	0.00	equity market									
+36		12	0.00	1.00	0.00	uncertainty									
+36		10	0.00	1.00	0.00	macroprudential policy									
+36		25	0.00	1.00	0.00	behavior									
+36		20	0.00	1.00	0.00	regulation									
+35		30	0.00	1.00	0.00	financial institution									
+35		10	0.00	1.00	0.00	financial market									
+35		35	0.00	1.00	0.00	linkage									
+35		30	0.00	1.00	0.00	corporate governance									
+35		21	0.00	1.00	0.00	complexity									
+35	9.20	16	0.00	1.00	0.00	capital shortfall									
+33		17	0.00	1.00	0.00	bond									
+33		22	0.00	1.00	0.00	banking crise									
+33		23	0.00	1.00	0.00	efficiency									
+33		24	0.00	1.00	0.00	equity									
+32		24	0.00	1.00	0.00	systemicrisk									
+30		12	0.00	1.00	0.00	sovereign risk									
+30		19	0.00	1.00	0.00	growth									
+30		20	0.00	1.00	0.00	complex network									
+29		19	0.00	1.00	0.00	regression									
+29		17	0.00	1.00	0.00	default risk									
+29		7	0.00	1.00	0.00	interconnectedness									
+29		22	0.00	1.00	0.00	sovereign debt crisis									
+29		21	0.00	1.00	0.00	exchange rate									
+28		15	0.00	1.00	0.00	dynamic conditional correlation									
+28		14	0.00	1.00	0.00	financial regulation									
+28		19	0.00	1.00	0.00	debt crisis									
+28		29	0.00	1.00	0.00	liquidity risk									
+28		27	0.00	1.00	0.00	cointegration									
+28		28	0.00	1.00	0.00	bank regulation									
+28		26	0.00	1.00	0.00	moral hazard									
+28		31	0.00	1.00	0.00	g21									
+28		11	0.00	1.00	0.00	panel data									
+28		19	0.00	1.00	0.00	early warning system									
+27		23	0.00	1.00	0.00	risk taking									
+27	3.93	19	0.00	1.00	0.00	institution									
+27		29	0.00	1.00	0.00	country									
+27		19	0.00	1.00	0.00	governance									
+27		17	0.00	1.00	0.00	fire sale									
+26		31	0.00	1.00	0.00	capital requirement									
+26		18	0.00	1.00	0.00	bank run									
+26		18	0.00	1.00	0.00	counterparty risk									
+25		26	0.00	1.00	0.00	oil price									
+25		13	0.00	1.00	0.00	valuation									
+25		23	0.00	1.00	0.00	impulse response analysis									
+25	2.96	18	0.00	1.00	0.00	system									
+25		28	0.00	1.00	0.00	business cycle									
+24		22	0.00	1.00	0.00	industry									
+24		28	0.00	1.00	0.00	value at risk									
+24		17	0.00	1.00	0.00	centrality									
+24		24	0.00	1.00	0.00	bank risk									
+24		12	0.00	1.00	0.00	interbank network									
+23		29	0.00	1.00	0.00	financial intermediation									
+23		21	0.00	1.00	0.00	basel iii									
+23		18	0.00	1.00	0.00	financial integration									
+23	4.78	31	0.00	1.00	0.00	credit contagion									
+23		13	0.00	1.00	0.00	cds spread									
+23		26	0.00	1.00	0.00	conditional heteroskedasticity									
+23		8	0.00	1.00	0.00	cd									
+23	3.08	20	0.00	1.00	0.00	interest rate									
+22		21	0.00	1.00	0.00	eurozone									
+22		12	0.00	1.00	0.00	network model									
+22		24	0.00	1.00	0.00	constraint									
+22		20	0.00	1.00	0.00	g01									
+21		30	0.00	1.00	0.00	distribution									
+21		12	0.00	1.00	0.00	tail dependence									
+21		21	0.00	1.00	0.00	macroprudential regulation									
+21	3.41	24	0.00	1.00	0.00	fragility									
+21	3.87	26	0.00	1.00	0.00	panics									
+21		21	0.00	1.00	0.00	failure									
+21		21	0.00	1.00	0.00	bankruptcy									
+20		28	0.00	1.00	0.00	run									
+20		17	0.00	1.00	0.00	supervision									
+20		27	0.00	1.00	0.00	rate									
+20		24	0.00	1.00	0.00	economy									
+20		13	0.00	1.00	0.00	investor sentiment									
+19		16	0.00	1.00	0.00	sector									
+19		13	0.00	1.00	0.00	portfolio									
+19		21	0.00	1.00	0.00	derivative									
+19		8	0.00	1.00	0.00	china									
+19		21	0.00	1.00	0.00	index									
+19	3.05	26	0.00	1.00	0.00	g28									
+18	3.37	9	0.00	1.00	0.00	fail									
+18		15	0.00	1.00	0.00	cross section									
+18		18	0.00	1.00	0.00	correlation									
+18		13	0.00	1.00	0.00	banking system									
+18		20	0.00	1.00	0.00	bailout									
+17		9	0.00	1.00	0.00	ownership									
+17		5	0.00	1.00	0.00	shadow banking									
+17		10	0.00	1.00	0.00	time									
+17		12	0.00	1.00	0.00	quantile regression									
+17		22	0.00	1.00	0.00	euro area									
+17		19	0.00	1.00	0.00	expected shortfall									
+17		6	0.00	1.00	0.00	agent-based model									
+17	3.03	19	0.00	1.00	0.00	risk spillover									
+17		25	0.00	1.00	0.00	trade									
+17		18	0.00	1.00	0.00	securitization									
+16		12	0.00	1.00	0.00	oil									
+16	3.63	22	0.00	1.00	0.00	inference									
+16		24	0.00	1.00	0.00	contagion risk									
+16	3.82	29	0.00	1.00	0.00	market discipline									
+16		11	0.00	1.00	0.00	selection									
+16		18	0.00	1.00	0.00	bubble									
+16		8	0.00	1.00	0.00	sovereign debt									
+15		17	0.00	1.00	0.00	value-at-risk									
+15		24	0.00	1.00	0.00	cycle									
+15	3.28	13	0.00	1.00	0.00	banking regulation									
+15		20	0.00	1.00	0.00	granger causality									
+15		5	0.00	1.00	0.00	network analysis									
+15		14	0.00	1.00	0.00	long memory									
+14		25	0.00	1.00	0.00	economics									
+14	4.12	18	0.00	1.00	0.00	announcement									
+14		12	0.00	1.00	0.00	sovereign									
+14		13	0.00	1.00	0.00	simulation									
+14		27	0.00	1.00	0.00	financial distress									
+14		18	0.00	1.00	0.00	power									
+14		10	0.00	1.00	0.00	network topology									
+13		17	0.00	1.00	0.00	complex system									
+13		13	0.00	1.00	0.00	decomposition									
+13		11	0.00	1.00	0.00	cascade									
+13		15	0.00	1.00	0.00	capital structure									
+13		19	0.00	1.00	0.00	diffusion									
+13		14	0.00	1.00	0.00	garch									
+13		15	0.00	1.00	0.00	stress test									
+13		23	0.00	1.00	0.00	variance									
+13		26	0.00	1.00	0.00	systematic risk									
+13		19	0.00	1.00	0.00	term structure									
+13		13	0.00	1.00	0.00	causality									
+13		8	0.00	1.00	0.00	stress testing									
+13		20	0.00	1.00	0.00	risk contagion									
+13	3.05	8	0.00	1.00	0.00	size									
+12		13	0.00	1.00	0.00	identification									
+12		21	0.00	1.00	0.00	autoregressive conditional heteroskedasticity									
+12	3.03	9	0.00	1.00	0.00	international transmission									
+12		8	0.00	1.00	0.00	hedge fund									
+12		15	0.00	1.00	0.00	currency crise									
+12	3.28	26	0.00	1.00	0.00	extreme value theory									
+12		6	0.00	1.00	0.00	economic growth									
+12		16	0.00	1.00	0.00	insurer									
+12		22	0.00	1.00	0.00	incentive									
+12	3.97	11	0.00	1.00	0.00	strategy									
+12		19	0.00	1.00	0.00	financial fragility									
+12		10	0.00	1.00	0.00	future									
+12		15	0.00	1.00	0.00	empirical evidence									
+11		7	0.00	1.00	0.00	contagion effect									
+11		24	0.00	1.00	0.00	asset price									
+11		16	0.00	1.00	0.00	marginal expected shortfall									
+11		22	0.00	1.00	0.00	crude oil									
+11		9	0.00	1.00	0.00	capital regulation									
+11		21	0.00	1.00	0.00	co movement									
+10		14	0.00	1.00	0.00	predictability									
+10		20	0.00	1.00	0.00	consolidation									
+10	3.54	23	0.00	1.00	0.00	bank failure									
+10		19	0.00	1.00	0.00	discipline									
+10		12	0.00	1.00	0.00	globalization									
+10		15	0.00	1.00	0.00	collateral									
+10		10	0.00	1.00	0.00	banking crisis									
+10		24	0.00	1.00	0.00	merger									
+10		21	0.00	1.00	0.00	bond market									
+10		18	0.00	1.00	0.00	tail									
+9		15	0.00	1.00	0.00	wavelet									
+9		10	0.00	1.00	0.00	asset allocation									
+9		21	0.00	1.00	0.00	variance decomposition									
+9		16	0.00	1.00	0.00	financialcrisis									
+9		14	0.00	1.00	0.00	business									
+9		8	0.00	1.00	0.00	market liquidity									
+9		10	0.00	1.00	0.00	too big									
+9		17	0.00	1.00	0.00	jump									
+9		29	0.00	1.00	0.00	bank capital									
+8		13	0.00	1.00	0.00	decision									
+8		11	0.00	1.00	0.00	illiquidity									
+8		15	0.00	1.00	0.00	money									
+8	3.20	21	0.00	1.00	0.00	law									
+8		10	0.00	1.00	0.00	currency									
+8		9	0.00	1.00	0.00	financial system									
+8		13	0.00	1.00	0.00	news									
+8		8	0.00	1.00	0.00	banking network									
+8		18	0.00	1.00	0.00	disclosure									
+8		14	0.00	1.00	0.00	multivariate model									
+8		8	0.00	1.00	0.00	skewness									
+8		10	0.00	1.00	0.00	entropy									
+8		14	0.00	1.00	0.00	eurozone crisis									
+8		16	0.00	1.00	0.00	implied volatility									
+8		12	0.00	1.00	0.00	crop insurance									
+8		18	0.00	1.00	0.00	credit rating									
+8		12	0.00	1.00	0.00	climate change									
+7		14	0.00	1.00	0.00	c32									
+7		12	0.00	1.00	0.00	operational risk									
+7		14	0.00	1.00	0.00	rating									
+7		7	0.00	1.00	0.00	macroprudential									
+7		17	0.00	1.00	0.00	downside risk									
+7		24	0.00	1.00	0.00	market power									
+7		15	0.00	1.00	0.00	distress									
+7		10	0.00	1.00	0.00	european debt crisis									
+7		5	0.00	1.00	0.00	shortfall									
+7		14	0.00	1.00	0.00	corporate debt									
+7		10	0.00	1.00	0.00	choice									
+7		13	0.00	1.00	0.00	asymmetric volatility									
+7	2.85	21	0.00	1.00	0.00	structural change									
+7		12	0.00	1.00	0.00	financialstability									
+7		6	0.00	1.00	0.00	central counterparty									
+7		11	0.00	1.00	0.00	convergence									
+7		9	0.00	1.00	0.00	event study									
+7		6	0.00	1.00	0.00	expectation									
+7		19	0.00	1.00	0.00	regime									
+7	2.85	18	0.00	1.00	0.00	parameter									
+7		10	0.00	1.00	0.00	financial stress									
+7		6	0.00	1.00	0.00	too									
+7		8	0.00	1.00	0.00	prediction									
+7		4	0.00	1.00	0.00	reinsurance									
+7		14	0.00	1.00	0.00	consumption									
+6		8	0.00	1.00	0.00	trade credit									
+6		8	0.00	1.00	0.00	vector autoregression									
+6		10	0.00	1.00	0.00	rollover risk									
+6		7	0.00	1.00	0.00	heteroskedasticity									
+6		3	0.00	1.00	0.00	private									
+6		5	0.00	1.00	0.00	quality									
+6		5	0.00	1.00	0.00	riskmanagement									
+6		4	0.00	1.00	0.00	financial stress index									
+6		8	0.00	1.00	0.00	inflation									
+6		16	0.00	1.00	0.00	component									
+6		17	0.00	1.00	0.00	co-movement									
+6		3	0.00	1.00	0.00	world									
+6		18	0.00	1.00	0.00	copula approach									
+6		12	0.00	1.00	0.00	instrumental variable									
+6	3.03	5	0.00	1.00	0.00	intermediation									
+6		16	0.00	1.00	0.00	asset									
+6		12	0.00	1.00	0.00	flight to liquidity									
+6		14	0.00	1.00	0.00	dodd-frank act									
+6		7	0.00	1.00	0.00	spillover effect									
+5		12	0.00	1.00	0.00	design									
+5		18	0.00	1.00	0.00	price shock									
+5		9	0.00	1.00	0.00	market structure									
+5		8	0.00	1.00	0.00	bank bailout									
+5		8	0.00	1.00	0.00	distance									
+5		19	0.00	1.00	0.00	international equity market									
+5		9	0.00	1.00	0.00	movement									
+5		8	0.00	1.00	0.00	up call contagion									
+5	2.81	19	0.00	1.00	0.00	agency									
+5		5	0.00	1.00	0.00	risk premia									
+5		3	0.00	1.00	0.00	portfolio optimization									
+5		7	0.00	1.00	0.00	yield spread									
+5		11	0.00	1.00	0.00	interdependency									
+5		5	0.00	1.00	0.00	federal funds market									
+5		8	0.00	1.00	0.00	earnings management									
+5		10	0.00	1.00	0.00	insolvency									
+5	2.81	17	0.00	1.00	0.00	great depression									
+5		11	0.00	1.00	0.00	market risk									
+5		14	0.00	1.00	0.00	non-performing loan									
+5		6	0.00	1.00	0.00	resolution									
+5		6	0.00	1.00	0.00	money market									
+5		11	0.00	1.00	0.00	tail risk									
+5		6	0.00	1.00	0.00	regression quantile									
+5		10	0.00	1.00	0.00	structural break									
+5		3	0.00	1.00	0.00	subprime crisis									
+5		9	0.00	1.00	0.00	bootstrap									
+5		7	0.00	1.00	0.00	bank performance									
+5		1	0.00	1.00	0.00	principal component analysis									
+5		7	0.00	1.00	0.00	losse									
+5		6	0.00	1.00	0.00	bond spread									
+5		2	0.00	1.00	0.00	financialregulation									
+5		8	0.00	1.00	0.00	interest rate risk									
+5		7	0.00	1.00	0.00	cyclicality									
+4		8	0.00	1.00	0.00	liquidity shock									
+4		9	0.00	1.00	0.00	developing country									
+4		8	0.00	1.00	0.00	regulatory capital									
+4		7	0.00	1.00	0.00	asset return									
+4		1	0.00	1.00	0.00	time-varying copula									
+4		7	0.00	1.00	0.00	regime switching									
+4		15	0.00	1.00	0.00	credit crisis									
+4		8	0.00	1.00	0.00	brics									
+4		3	0.00	1.00	0.00	heterogeneity									
+4		8	0.00	1.00	0.00	agency cost									
+4		8	0.00	1.00	0.00	emergingmarket									
+4		2	0.00	1.00	0.00	hawkes processe									
+4		5	0.00	1.00	0.00	neural network									
+4		6	0.00	1.00	0.00	pure									
+4		8	0.00	1.00	0.00	productivity									
+4		5	0.00	1.00	0.00	realized volatility									
+4		3	0.00	1.00	0.00	blockchain									
+4		8	0.00	1.00	0.00	limit									
+4		1	0.00	1.00	0.00	fintech									
+4		2	0.00	1.00	0.00	organization									
+4		5	0.00	1.00	0.00	europe									
+4		10	0.00	1.00	0.00	chinese stock market									
+4		6	0.00	1.00	0.00	information content									
+4		5	0.00	1.00	0.00	prudential regulation									
+4		9	0.00	1.00	0.00	structural model									
+4		10	0.00	1.00	0.00	exuberance									
+4		7	0.00	1.00	0.00	overnight money market									
+4		3	0.00	1.00	0.00	systemic risk measure									
+4		11	0.00	1.00	0.00	stock price									
+4		9	0.00	1.00	0.00	coordination									
+4		4	0.00	1.00	0.00	japan									
+4		2	0.00	1.00	0.00	debtrank									
+4		8	0.00	1.00	0.00	too big to fail									
+4		10	0.00	1.00	0.00	var									
+4		9	0.00	1.00	0.00	procyclicality									
+4		9	0.00	1.00	0.00	innovation									
+4		3	0.00	1.00	0.00	health									
+4		2	0.00	1.00	0.00	financialnetwork									
+4		10	0.00	1.00	0.00	dcc									
+4		8	0.00	1.00	0.00	transition									
+4		6	0.00	1.00	0.00	forecasting									
+4		5	0.00	1.00	0.00	commodity									
+4		4	0.00	1.00	0.00	risk factor									
+4		7	0.00	1.00	0.00	area									
+4		11	0.00	1.00	0.00	requirement									
+4		7	0.00	1.00	0.00	specification									
+4		5	0.00	1.00	0.00	united states									
+4		6	0.00	1.00	0.00	network structure									
+4		10	0.00	1.00	0.00	business fluctuation									
+4		3	0.00	1.00	0.00	financial development									
+4		7	0.00	1.00	0.00	executive compensation									
+4		10	0.00	1.00	0.00	dynamic copula									
+4		4	0.00	1.00	0.00	lesson									
+4		10	0.00	1.00	0.00	regulatory arbitrage									
+4		10	0.00	1.00	0.00	futures market									
+4		2	0.00	1.00	0.00	loan									
+4		7	0.00	1.00	0.00	social network									
+4		6	0.00	1.00	0.00	life insurance									
+4		2	0.00	1.00	0.00	fiscal policy									
+4		5	0.00	1.00	0.00	credit defaultswap									
+4		13	0.00	1.00	0.00	g32									
+4		12	0.00	1.00	0.00	stockmarket									
+4		6	0.00	1.00	0.00	overlapping portfolio									
+4		0	0.00	1.00	0.00	state regulation									
+4		10	0.00	1.00	0.00	business model									
+4		1	0.00	1.00	0.00	systemic importance									
+4		8	0.00	1.00	0.00	interbank									
+4		12	0.00	1.00	0.00	latin america									
+4		9	0.00	1.00	0.00	core periphery structure									
+4		9	0.00	1.00	0.00	nonparametric estimation									
+4		7	0.00	1.00	0.00	risk contribution									
+4		5	0.00	1.00	0.00	corporate bond									
+4		7	0.00	1.00	0.00	preference									
+4		5	0.00	1.00	0.00	return predictability									
+4		9	0.00	1.00	0.00	srisk									
+4		6	0.00	1.00	0.00	capital flow									
+4		5	0.00	1.00	0.00	panel									
+3		10	0.00	1.00	0.00	delta covar									
+3		4	0.00	1.00	0.00	commonality									
+3		10	0.00	1.00	0.00	community structure									
+3		4	0.00	1.00	0.00	european stock market									
+3		9	0.00	1.00	0.00	e44									
+3		5	0.00	1.00	0.00	balance sheet									
+3		5	0.00	1.00	0.00	power law									
+3		6	0.00	1.00	0.00	insurance industry									
+3		3	0.00	1.00	0.00	inequality									
+3		8	0.00	1.00	0.00	capitalism									
+3		8	0.00	1.00	0.00	c58									
+3		5	0.00	1.00	0.00	euro									
+3		10	0.00	1.00	0.00	basel									
+3		5	0.00	1.00	0.00	capital buffer									
+3		6	0.00	1.00	0.00	safe haven									
+3		6	0.00	1.00	0.00	core-periphery									
+3		5	0.00	1.00	0.00	bankruptcy prediction									
+3		9	0.00	1.00	0.00	conventional stock market									
+3		4	0.00	1.00	0.00	correlated default									
+3		13	0.00	1.00	0.00	market linkage									
+3		3	0.00	1.00	0.00	contract									
+3		5	0.00	1.00	0.00	hierarchical structure									
+3		6	0.00	1.00	0.00	default contagion									
+3		5	0.00	1.00	0.00	creditrisk									
+3		5	0.00	1.00	0.00	cluster analysis									
+3		8	0.00	1.00	0.00	ratio									
+3		10	0.00	1.00	0.00	crude oil market									
+3		9	0.00	1.00	0.00	compensation									
+3		7	0.00	1.00	0.00	depression									
+3		10	0.00	1.00	0.00	option									
+3		2	0.00	1.00	0.00	bitcoin									
+3		4	0.00	1.00	0.00	ccp									
+3		3	0.00	1.00	0.00	adoption									
+3		6	0.00	1.00	0.00	dynamic correlation									
+3		6	0.00	1.00	0.00	emerging stock market									
+3		7	0.00	1.00	0.00	contingent claims analysis									
+3		7	0.00	1.00	0.00	africa									
+3		6	0.00	1.00	0.00	credit spread									
+3		13	0.00	1.00	0.00	merton model									
+3		5	0.00	1.00	0.00	banking risk									
+3		3	0.00	1.00	0.00	challenge									
+3		7	0.00	1.00	0.00	corporate yield spread									
+3		7	0.00	1.00	0.00	asset pricing									
+3		8	0.00	1.00	0.00	distance to default									
+3		6	0.00	1.00	0.00	network theory									
+3		8	0.00	1.00	0.00	default swap spread									
+3		2	0.00	1.00	0.00	central counterparty (ccp)									
+3		6	0.00	1.00	0.00	conventional bank									
+3		7	0.00	1.00	0.00	energy									
+3		5	0.00	1.00	0.00	correlation network									
+3		8	0.00	1.00	0.00	conditional value-at-risk									
+3		6	0.00	1.00	0.00	investor									
+3		2	0.00	1.00	0.00	clearing									
+3		8	0.00	1.00	0.00	liberalization									
+3		4	0.00	1.00	0.00	emu									
+3		4	0.00	1.00	0.00	epidemic model									
+3		2	0.00	1.00	0.00	cryptocurrency									
+3		1	0.00	1.00	0.00	collateralized debt obligation									
+3		4	0.00	1.00	0.00	event									
+3		5	0.00	1.00	0.00	bayesian inference									
+3		10	0.00	1.00	0.00	oil price shock									
+3		3	0.00	1.00	0.00	hungary									
+3		5	0.00	1.00	0.00	disease									
+3		6	0.00	1.00	0.00	too-big-to-fail									
+3		4	0.00	1.00	0.00	central clearing									
+3		6	0.00	1.00	0.00	indicator									
+3		10	0.00	1.00	0.00	decision making									
+3		2	0.00	1.00	0.00	bail-in									
+3		7	0.00	1.00	0.00	behavioral finance									
+3		3	0.00	1.00	0.00	egarch									
+3		3	0.00	1.00	0.00	deregulation									
+2		8	0.00	1.00	0.00	commercial bank									
+2		8	0.00	1.00	0.00	central bank									
+2		6	0.00	1.00	0.00	chao									
+2		5	0.00	1.00	0.00	climate									
+2		3	0.00	1.00	0.00	ask									
+2		2	0.00	1.00	0.00	banking sector									
+2		5	0.00	1.00	0.00	crash									
+2		2	0.00	1.00	0.00	global economy									
+2		2	0.00	1.00	0.00	adverse selection									
+2		2	0.00	1.00	0.00	anticoagulation									
+2		2	0.00	1.00	0.00	capital control									
+2		10	0.00	1.00	0.00	payment									
+2		4	0.00	1.00	0.00	comonotonicity									
+2		6	0.00	1.00	0.00	econometric model									
+2		0	0.00	1.00	0.00	asset bubble									
+2		3	0.00	1.00	0.00	logit estimation									
+2		3	0.00	1.00	0.00	environment									
+2		1	0.00	1.00	0.00	contagion model									
+2		0	0.00	1.00	0.00	perception									
+2		6	0.00	1.00	0.00	archimedean copula									
+2		6	0.00	1.00	0.00	gro									
+2		5	0.00	1.00	0.00	g15									
+2		9	0.00	1.00	0.00	financialcrise									
+2		4	0.00	1.00	0.00	actuarial science									
+2		1	0.00	1.00	0.00	employment									
+1		0	0.00	1.00	0.00	risk-weighted asset									
+1		4	0.00	1.00	0.00	conventional									
+1		4	0.00	1.00	0.00	analytic hierarchy process (ahp)									
+1		5	0.00	1.00	0.00	environmental management									
+1		3	0.00	1.00	0.00	agricultural insurance									
+1		2	0.00	1.00	0.00	cybernetic multilevel controlsystem									
+1		3	0.00	1.00	0.00	defaultable security									
+1		4	0.00	1.00	0.00	asymptoticdependence									
+1		2	0.00	1.00	0.00	data warehouse									
+1		5	0.00	1.00	0.00	cat bond									
+1		2	0.00	1.00	0.00	benefit function									
+1		5	0.00	1.00	0.00	create									
+1		0	0.00	1.00	0.00	stresstesting									
+1		2	0.00	1.00	0.00	antithrombotic therapy									
+1		0	0.00	1.00	0.00	or in banking									
+1		5	0.00	1.00	0.00	catastrophe insurance									
+1		4	0.00	1.00	0.00	liquidation									
+1		5	0.00	1.00	0.00	capital market									
+1		4	0.00	1.00	0.00	liquidity risk management									
+1		4	0.00	1.00	0.00	biological farming system									
+1		5	0.00	1.00	0.00	catastrophe bond pricing									
+1		4	0.00	1.00	0.00	analytic hierarchy proce									
+1		5	0.00	1.00	0.00	conditional skewness									
+1		2	0.00	1.00	0.00	behaviour									
+1		2	0.00	1.00	0.00	economic model									
+1		4	0.00	1.00	0.00	betting									
+1		4	0.00	1.00	0.00	asymptotic independence									
+1		4	0.00	1.00	0.00	optimization									
+1		4	0.00	1.00	0.00	consequence									
+1		1	0.00	1.00	0.00	crisis contagion management									
+1		2	0.00	1.00	0.00	effectivenessmodel									
+1		5	0.00	1.00	0.00	cross-spectrum									
+1		4	0.00	1.00	0.00	hidden markov model									
+1		4	0.00	1.00	0.00	convolution									
+1		4	0.00	1.00	0.00	coefficient									
+1		5	0.00	1.00	0.00	disasterrisk									
+1		4	0.00	1.00	0.00	attraction									
+1		3	0.00	1.00	0.00	corn yield									
+1		4	0.00	1.00	0.00	conditional excess probability									
+1		4	0.00	1.00	0.00	aggregation									

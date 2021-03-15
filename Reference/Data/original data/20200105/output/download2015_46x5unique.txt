@@ -1,0 +1,531 @@
+
+PT J
+AU Poledna, S
+   Molina-Borboa, JL
+   Martinez-Jaramillo, S
+   van der Leij, M
+   Thurner, S
+AF Poledna, Sebastian
+   Luis Molina-Borboa, Jose
+   Martinez-Jaramillo, Serafin
+   van der Leij, Marco
+   Thurner, Stefan
+TI The multi-layer network nature of systemic risk and its implications for
+   the costs of financial crises
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Multiplex networks; Quantitative social science; Risk propagation;
+   Cascading failure; Systemic risk mitigation; Financial regulation
+ID TOPOLOGY; MARKET
+AB The inability to see and quantify systemic financial risk comes at an immense social cost. Systemic risk in the financial system arises to a large extent as a consequence of the interconnectedness of its institutions, which are linked through networks of different types of financial contracts, such as credit, derivatives, foreign exchange, and securities. The interplay of the various exposure networks can be represented as layers in a financial multi-layer network. In this work we quantify the daily contributions to systemic risk from four layers of the Mexican banking system from 2007 to 2013. We show that focusing on a single layer underestimates the total systemic risk by up to 90%. By assigning systemic risk levels to individual banks we study the systemic risk profile of the Mexican banking system on all market layers. This profile can be used to quantify systemic risk on a national level in terms of nation-wide expected systemic losses. We show that market-based systemic risk indicators systematically underestimate expected systemic losses. We find that expected systemic losses are up to a factor of four higher now than before the financial crisis of 2007-2008. We find that systemic risk contributions of individual transactions can be up to a factor of one thousand higher than the corresponding credit risk, which creates huge risks for the public. We find an intriguing non-linear effect whereby the sum of systemic risk of all layers underestimates the total risk. The method presented here is the first objective data-driven quantification of systemic risk on national scales that reveal its true levels. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Poledna, Sebastian; Thurner, Stefan] Med Univ Vienna, Sect Sci Complex Syst, A-1090 Vienna, Austria.
+   [Thurner, Stefan] Santa Fe Inst, Santa Fe, NM 87501 USA.
+   [Poledna, Sebastian; Thurner, Stefan] HASA, A-2361 Laxenburg, Austria.
+   [Luis Molina-Borboa, Jose; Martinez-Jaramillo, Serafin] Banco Mexico, Direcc Gen Estabilidad Financiera, Ciudad De Mexico, DF, Mexico.
+   [van der Leij, Marco] Univ Amsterdam, CeNDEF, NL-1018 XE Amsterdam, Netherlands.
+   [van der Leij, Marco] De Nederlandsche Bank, Res Dept, NL-1017 ZN Amsterdam, Netherlands.
+   [van der Leij, Marco] Tinbergen Inst, NL-1082 MS Amsterdam, Netherlands.
+RP Thurner, S (reprint author), Med Univ Vienna, Sect Sci Complex Syst, Spitalgasse 23, A-1090 Vienna, Austria.
+EM sebastian.poledna@meduniwien.ac.at; jmolina@banxico.org.mx;
+   smartin@banxico.org.mx; m.j.vanderLeij@uva.nl;
+   stefan.thurner@meduniwien.ac.at
+OI van der Leij, Marco/0000-0003-3591-9343
+FU ECEuropean Commission Joint Research CentreEuropean Community (EC)
+   [288501, 318132, 317532]; Netherlands Organisation for Scientific
+   Research (NWO)Netherlands Organization for Scientific Research (NWO)
+   [645.000.015]
+FX The views expressed here are those of the authors and do not represent
+   the views of De Nederlandsche Bank, Banco de Mexico or the Financial
+   Stability Directorate. We thank B. Fuchs, C. Chrysanthakopoulos and A.
+   Wanjek for help with the manuscript. We acknowledge financial support
+   from EC FP7 projects CRISIS, agreement no. 288501 (40%), LASAGNE,
+   agreement no. 318132 (30%) and MULTIPLEX, agreement no. 317532 (30%).
+   Marco van der Leij acknowledges support from the Netherlands
+   Organisation for Scientific Research (NWO), agreement no. 645.000.015.
+CR Acharya V., 2012, CEPR DISCUSSION PAPE
+   Adrian T., 2011, COVAR
+   ADRIAN T, 2008, 328 FED RES BANK NEW
+   Aikman D., 2013, FINANC STAB J BANK S, V24
+   Aymanns C, 2015, J ECON DYN CONTROL, V50, P155, DOI 10.1016/j.jedc.2014.09.015
+   Bank for International Settlements, 2010, BAS 3 GLOB REG FRAM
+   Bargigli L., 2013, ARXIV13114798
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bluhm M., 2014, 12 SAFE
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Boss M, 2004, LECT NOTES COMPUT SC, V3038, P1070
+   Brownlees C. T., 2012, VOLATILITY CORRELATI
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caballero J., 2012, IDB WORKING PAPER SE, VIDB-WP-364
+   Caccioli F., 2012, IMPACT ADJUSTED VALU
+   Cajueiro D.O., 2009, PHYS REV E, V79
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   de Bandt O., 2000, CEPR DISCUSSION PAPE
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Fostel A, 2008, AM ECON REV, V98, P1211, DOI 10.1257/aer.98.4.1211
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Geanakoplos J, 2010, NBER MACROECON ANNU, V24, P1
+   Georg C.-P., 2011, WORKING PAPERS GLOBA
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Hull J., 2001, J DERIV, V8, P12, DOI DOI 10.3905/J0D.2001.319153
+   Hull J., 2000, J DERIV, V8, P29, DOI DOI 10.3905/J0D.2000.319115)
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2015, J ECON DYN CONTROL, V50, P98, DOI 10.1016/j.jedc.2014.08.016
+   Kim JY, 2013, PHYS REV LETT, V111, DOI 10.1103/PhysRevLett.111.058702
+   Klimek P, 2015, J ECON DYN CONTROL, V50, P144, DOI 10.1016/j.jedc.2014.08.020
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   Leon C., 2014, EUROPEAN BANKING CTR
+   Liikanen Erkki, 2012, HIGH LEVEL EXPERT GR
+   Lopez-Castanon C, 2013, SIMULATION IN COMPUTATIONAL FINANCE AND ECONOMICS: TOOLS AND EMERGING APPLICATIONS, P181, DOI 10.4018/978-1-4666-2011-7.ch010
+   Markose S.M., 2012, WP12282 IMF
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   Maslov S, 2002, SCIENCE, V296, P910, DOI 10.1126/science.1065103
+   Minoiu C, 2013, DOES FINANCIAL CONNE
+   Minsky H., 1992, 74 J LEV EC I
+   Molina-Borboa JL, 2014, J NETW THEORY FINANC, V1, P99
+   Montagna M., 2013, MULTILAYERED INTERBA
+   Nicosia V, 2013, PHYS REV LETT, V111, DOI 10.1103/PhysRevLett.111.058701
+   Solorzano-Margain JP, 2013, COMPUT MANAG SCI, V10, P125, DOI 10.1007/s10287-013-0167-5
+   Poledna S., 2014, ELIMINATION SYSTEMIC
+   Poledna S, 2014, J BANK FINANC, V42, P199, DOI 10.1016/j.jbankfin.2014.01.038
+   Puhr C., 2012, 24 OENBS
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Szell M, 2010, P NATL ACAD SCI USA, V107, P13636, DOI 10.1073/pnas.1004008107
+   Thurner S, 2013, SCI REP-UK, V3, DOI 10.1038/srep01888
+   Thurner S, 2012, QUANT FINANC, V12, P695, DOI 10.1080/14697688.2012.674301
+   Upper C., 2002, 9 DTSCH BUND RES CTR
+   Vickers J. S, 2011, INDEPENDENT COMMISSI
+NR 59
+TC 54
+Z9 58
+U1 5
+U2 57
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD OCT
+PY 2015
+VL 20
+BP 70
+EP 81
+DI 10.1016/j.jfs.2015.08.001
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA CW2VN
+UT WOS:000364851300005
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Pierret, D
+AF Pierret, Diane
+TI Systemic Risk and the Solvency-Liquidity Nexus of Banks
+SO INTERNATIONAL JOURNAL OF CENTRAL BANKING
+LA English
+DT Article; Proceedings Paper
+CT Policies for Macroeconomic and Financial Stability
+CY SEP 26-27, 2014
+CL Fed Reserve Bank Philadelphia, Philadelphia, PA
+HO Fed Reserve Bank Philadelphia
+ID FAILURES
+AB This paper highlights the empirical interaction between solvency and liquidity risks of banks that make them particularly vulnerable to an aggregate crisis. In line with the literature explaining bank runs based on the quality of the bank's fundamentals, I find that banks lose their access to short-term funding when markets expect they will be insolvent in a crisis. This solvency-liquidity nexus is found to be strong under many robustness checks and to contain useful information for forecasting the short-term balance sheet of banks. The results suggest that capital not only acts as a loss-absorbing buffer, but it also ensures the confidence of creditors to continue to provide funding to the banks in a crisis.
+C1 [Pierret, Diane] Univ Lausanne, CH-1015 Lausanne, Switzerland.
+RP Pierret, D (reprint author), Univ Lausanne, Fac Business & Econ HEC Lausanne, CH-1015 Lausanne, Switzerland.
+EM diane.pierret@unil.ch
+FU Sloan foundationAlfred P. Sloan Foundation; BlackRock; Deutsche Bank;
+   Volatility Institute of the NYU Stern School of Business
+FX I am extremely grateful to Viral Acharya, Luc Bauwens, Robert Engle, and
+   Christian Hafner for their excellent guidance and continuous support. I
+   thank Tobias Adrian (discussant), Sophie Bereau, Stephen Cecchetti
+   (discussant), Stephen Figlewski, Harrison Hong, Eric Jondeau, Andres
+   Liberman, Matteo Luciani, Matthew Richardson, Anthony Saunders, Philipp
+   Schnabl, Sascha Steffen, David Veredas, Charles-Henri Weymuller
+   (discussant), research seminar participants at the Bank of Canada, the
+   Bank of England, the Board of Governors of the Federal Reserve, Bonn
+   University, the Federal Reserve of Boston, HEC Lausanne, Warwick
+   Business School, as well as participants of the 6th Annual Volatility
+   Institute Conference, the joint Banque de France - ACPR - SoFiE
+   conference, EFA 2014, AEA 2015, and the 2014 Annual Research Conference
+   of the International Journal of Central Banking for helpful comments. I
+   also thank Rob Capellini for providing me with V-Lab's measures of
+   systemic risk. I gratefully acknowledge financial support from the Sloan
+   foundation, BlackRock, Deutsche Bank, and supporters of the Volatility
+   Institute of the NYU Stern School of Business. All remaining errors are
+   my own. Author contact: Faculty of Business and Economics (HEC
+   Lausanne), University of Lausanne, CH-1015 Lausanne, Switzerland;
+   E-mail: diane.pierret@unil.ch, Tel: +41 21 692 61 28.
+CR Acharya V. V., 2009, 376 BANK ENGL
+   Acharya V. V., 2010, REGULATING WALL STRE
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2011, J FINANC, V66, P99, DOI 10.1111/j.1540-6261.2010.01627.x
+   Acharya VV, 2008, REV FINANC STUD, V21, P2705, DOI 10.1093/rfs/hhm078
+   Adrian T, 2010, 348 FED RES BANK NEW
+   Afonso G., 2011, 437 FED RES BANK NEW
+   Aikman D., 2009, 372 BANK ENGL
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2000, CARNEGIE-ROCHESTER C, V53, P177
+   Allen F., 1998, J FINANC, V53, P1246
+   [Anonymous], 2013, GLOB SYST IMP BANKS
+   Basel Committee on Banking Supervision, 2013, BAS 3 LIQ COV RAT LI
+   Basel Committee on Banking Supervision (Basel), 2011, BAS 3 GLOB REG FRAM
+   Brownlees Christian, 2011, WORKING PAPER
+   Carney M., 2013, COMMUNICATIONS  0828
+   Chudik A., 2013, 1317 U CAMBR
+   Cornett MM, 2011, J FINANC ECON, V101, P297, DOI 10.1016/j.jfineco.2011.03.001
+   Das S, 2012, 1236 IMF
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Drehmann M, 2013, J BANK FINANC, V37, P2173, DOI 10.1016/j.jbankfin.2012.01.002
+   Engle R, 2012, WORKING PAPER
+   Fontaine JS, 2012, REV FINANC STUD, V25, P1207, DOI 10.1093/rfs/hhr132
+   GORTON G, 1988, OXFORD ECON PAP, V40, P751, DOI 10.1093/oxfordjournals.oep.a041885
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Judson RA, 1999, ECON LETT, V65, P9, DOI 10.1016/S0165-1765(99)00130-5
+   Morris S, 2008, BROOKINGS PAP ECO AC, P229
+   Perotti E, 2011, INT J CENT BANK, V7, P3
+   Pesaran H.M., 2006, ECONOMETRICA, V74, P967, DOI DOI 10.1111/J.1468-0262.2006.00692.X
+   Pesaran MH, 2007, J APPL ECONOMET, V22, P265, DOI 10.1002/jae.951
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Tarullo Daniel K., 2013, COMMUNICATION
+NR 37
+TC 7
+Z9 7
+U1 0
+U2 12
+PU ASSOC INTERNATIONAL JOURNAL CENTRAL BANKING
+PI FRANKFURT
+PA POSTFACH 16 03 19, FRANKFURT, 60066, GERMANY
+SN 1815-4654
+EI 1815-7556
+J9 INT J CENT BANK
+JI Int. J. Cent. Bank.
+PD JUN
+PY 2015
+VL 11
+IS 3
+SI SI
+BP 193
+EP 227
+PG 35
+WC Business, Finance
+SC Business & Economics
+GA CR4KN
+UT WOS:000361301000009
+DA 2019-12-28
+ER
+
+PT J
+AU Bargigli, L
+   Di Iasio, G
+   Infante, L
+   Lillo, F
+   Pierobon, F
+AF Bargigli, L.
+   Di Iasio, G.
+   Infante, L.
+   Lillo, F.
+   Pierobon, F.
+TI The multiplex structure of interbank networks
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE E51; C49; G21; Network theory; Interbank market; Systemic risk
+ID TOPOLOGY; TRADE; RISK
+AB The interbank market has a natural multiplex network representation. We employ a unique database of supervisory reports on Italian banks to the Banca d'Italia that includes all bilateral exposures broken down by maturity and by the secured and unsecured nature of the contract. We find that layers have different topological properties and persistence over time. The presence of a link in a layer is not a good predictor of the presence of the same link in other layers. Maximum entropy models reveal different unexpected substructures, such as network motifs, in different layers. Using the total interbank network or focusing on a specific layer as representative of the other layers provides a poor representation of interlinkages in the interbank market and could lead to biased estimation of systemic risk.
+C1 [Bargigli, L.] Univ Florence, Dipartimento Sci Econ & Impresa, I-50127 Florence, Italy.
+   [Di Iasio, G.; Infante, L.] Bank Italy, Directorate Gen Econ Stat & Res, Rome, Italy.
+   [Lillo, F.] Scuola Normale Super Pisa, I-56126 Pisa, Italy.
+   [Lillo, F.] Univ Palermo, Dipartimento Fis & Chim, I-90128 Palermo, Italy.
+   [Lillo, F.] Santa Fe Inst, Santa Fe, NM 87501 USA.
+   [Pierobon, F.] Bank Italy, Banking & Financial Supervis, I-00184 Rome, Italy.
+RP Bargigli, L (reprint author), Univ Florence, Dipartimento Sci Econ & Impresa, Via Pandette 32, I-50127 Florence, Italy.
+EM leonardo.bargigli@unifi.it
+RI bargigli, leonardo/M-1810-2015
+OI bargigli, leonardo/0000-0002-7524-9148
+FU European UnionEuropean Union (EU) [CRISIS-ICT-2011-288501]; INET
+FX The views expressed in the article are those of the authors only and do
+   not involve the responsibility of the Bank of Italy. The research
+   leading to these results has received funding from the European Union,
+   Seventh Framework Programme FP7/2007-2013 under grant agreement
+   CRISIS-ICT-2011-288501 and from the INET-funded grant 'New tools in
+   Credit Network Modeling with Heterogeneous Agents'. L. Infante
+   contributed while visiting the NYU Department of Economics. All the
+   usual disclaimers apply.
+CR Abbassi P., 2013, NETWORK VIEW M UNPUB
+   Affinito M, 2012, J BANK FINANC, V36, P3163, DOI 10.1016/j.jbankfin.2011.11.016
+   Afonso G, 2011, J FINANC, V66, P1109, DOI 10.1111/j.1540-6261.2011.01670.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Bargigli L, 2014, J STAT PHYS, V155, P810, DOI 10.1007/s10955-014-0968-0
+   Bargigli L, 2011, J ECON BEHAV ORGAN, V78, P396, DOI 10.1016/j.jebo.2011.01.022
+   Battiston S, 2007, J ECON DYN CONTROL, V31, P2061, DOI 10.1016/j.jedc.2007.01.004
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bech M., 2008, STAFF REPORTS FEDERA
+   Borgatti SP, 1999, SOC NETWORKS, V21, P375
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Buldyrev SV, 2010, NATURE, V464, P1025, DOI 10.1038/nature08932
+   Caccioli F., 2011, ARXIV11091213V1
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Craig B. R., 2009, 0912 FED RES BANK CL
+   Fagiolo G, 2007, PHYS REV E, V76, DOI 10.1103/PhysRevE.76.026107
+   Fagiolo G, 2013, J ECON INTERACT COOR, V8, P75, DOI 10.1007/s11403-012-0104-7
+   Fricke D., 2013, KIEL WORKING PAPERS, V1819
+   Fricke D., 2013, KIEL WORKING PAPERS, V1830
+   Fricke D., 2012, KIEL WORKING PAPERS, V1759
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gao JX, 2011, PHYS REV LETT, V107, DOI 10.1103/PhysRevLett.107.195701
+   Garlaschelli D, 2008, PHYS REV E, V78, DOI 10.1103/PhysRevE.78.015101
+   Gomez S, 2013, PHYS REV LETT, V110, DOI 10.1103/PhysRevLett.110.028701
+   Iazzetta C., 2009, TOPOLOGY INTERBANK M
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Karrer B, 2011, PHYS REV E, V83, DOI 10.1103/PhysRevE.83.016107
+   Kuo D., 2013, FEDERAL RESERVE BANK
+   Lip S. Z. W., 2011, ARXIV E PRINTS
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   Mastromatteo I, 2012, J STAT MECH-THEORY E, DOI 10.1088/1742-5468/2012/03/P03011
+   Milo R, 2002, SCIENCE, V298, P824, DOI 10.1126/science.298.5594.824
+   Milo R., 2003, ARXIVCONDMAT0312028
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Montagna M., 2013, TECHNICAL REPORT
+   Musmeci N, 2013, J STAT PHYS, V151, P720, DOI 10.1007/s10955-013-0720-1
+   Park J, 2004, PHYS REV E, V70, DOI 10.1103/PhysRevE.70.066117
+   Schiavo S, 2010, QUANT FINANC, V10, P389, DOI 10.1080/14697680902882420
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Squartini T., 2013, ARXIV E PRINTS
+   Squartini T, 2011, NEW J PHYS, V13, DOI 10.1088/1367-2630/13/8/083001
+   Tedeschi G., 2012, PLOS ONE, V7, P111
+   Thurner S, 2003, QUANT FINANC, V3, P306, DOI 10.1088/1469-7688/3/4/307
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   van Lelyveld I., 2012, DNB WORKING PAPERS, V348
+NR 47
+TC 50
+Z9 52
+U1 2
+U2 38
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD APR 3
+PY 2015
+VL 15
+IS 4
+SI SI
+BP 673
+EP 691
+DI 10.1080/14697688.2014.968356
+PG 19
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA CD1HF
+UT WOS:000350824900001
+DA 2019-12-28
+ER
+
+PT J
+AU Ramady, MA
+AF Ramady, Mohamed Aly
+TI Effective regulatory regimes: a comparative analysis of GCC financial
+   regulators
+SO JOURNAL OF FINANCIAL REGULATION AND COMPLIANCE
+LA English
+DT Article
+DE Supervision; GCC; Compliance; Policy oversight; Islamic; Regulators
+AB Purpose - The purpose of this study is to investigate the effects of the global financial crisis on Gulf Cooperation Council (GCC) bank regulation and the impact on the region and the policies adopted by the regulators to avoid financial panic and contagion.
+   Design/methodology/approach - The author examines GCC countries' financial soundness indicators in terms of capital adequacy, non-performing loans and provisioning rates, including central bank liquidity support, deposit guarantees, capital injections and monetary easing and policies to mitigate risk assessment, and the monitoring and elimination of practices promoting excessive risk. GCC compliance regimes through multinational organizations and the exposure of the region to cross-border financial linkages to test for financial soundness are assessed.
+   Findings - Overall, results indicate that comprehensive regulatory oversight exists in the GCC in conformity with international standards, and Basel capital adequacy requirements, and that the GCC regulators have acted prudently to establish high coverage in all measures but that gaps exit concerning cross-border surveillance and a need for imposition of capital surcharges on banks deemed high systemic risk. The supervision of Islamic financial institutions and a lack of inter-GCC liquidity support mechanism for this segment are highlighted.
+   Practical implications - The paper shows that the GCC regulators need to address cross-border surveillance, as local banks branch internationally and foreign banks operate in the region.
+   Originality/value - The author is not aware of any similar work that compares the regulatory policies of the GCC.
+C1 [Ramady, Mohamed Aly] King Fahd Univ Petr & Minerals, Dept Finance & Econ, Finance & Econ, Dhahran, Saudi Arabia.
+RP Ramady, MA (reprint author), King Fahd Univ Petr & Minerals, Dept Finance & Econ, Finance & Econ, Dhahran, Saudi Arabia.
+EM ramadyma@kfupm.edu.sa
+FU King Fahd University of Petroleum and Minerals Deanship of Scientific
+   Research [IN 121032]
+FX The author wishes to acknowledge the support granted by King Fahd
+   University of Petroleum and Minerals Deanship of Scientific Research
+   under project number IN 121032 in the preparation of this research.
+CR Abdeen A., 1984, SAUDI FINANCIAL SYST
+   Ahmed M., 2010, INT EC B CARNEGIE EN
+   ALESINA A, 1993, J MONEY CREDIT BANK, V25, P151, DOI 10.2307/2077833
+   [Anonymous], 2013, SAUDI GAZETTE
+   [Anonymous], 2012, ARAB NEWS
+   [Anonymous], 2013, ARAB NEWS
+   [Anonymous], 2013, GULF TIMES
+   Assam H., 1997, EMERGING ARAB CAPITA
+   Balakrishnari R., 2009, TRANSMISSION FINANCI
+   Barth J., 1999, 2325 WORLD BANK
+   Bologna P., 2010, 1061 IMF
+   Boyd J. H., 1993, NBER MACROECON ANNU, V8, P319
+   Central Bank of Bahrain, 2012, CENTR BANK BAHR STAT
+   Central Bank of Kuwait, 2012, CENTR BANK KUW Q B J
+   Central Bank of Oman, 2011, CENTR BANK OM ANN RE
+   Central Bank of the United Arab Emirates, 2012, CENTR BANK UN AR EM
+   Chatham House, 2008, GULF GLOB FIN CTR GR
+   Chinn Menzie, 2008, J COMP POLICY ANAL, V10, P309, DOI DOI 10.1080/13876980802231123
+   Corrigan E.G., 1986, Q REV FEDERAL RE SPR, P1
+   Deutsche Bank, 2012, GCC FIN MARK LONG TE
+   Edwards S, 1999, J ECON PERSPECT, V13, P65, DOI 10.1257/jep.13.4.65
+   Friedman B., 1982, J MONEY CREDIT BANKI, V14
+   Friedman B. M., 1999, INT FINANC, V2, P321, DOI DOI 10.1111/1468-2362.00032
+   Hoening T.M, 1997, ECON REV, V82, P5010
+   Hussein M., 2007, INT J FINANCIAL SERV, V2, P214
+   IMF, 2011, 1101 IMF MIDDL E CEN
+   Jasser S., 2003, MONETARY POLICY INVE
+   Kane D., 1983, EFFECTS BANKING DERE
+   Khamis M., 2012, ANN M MIN FIN CENTR
+   Khamis M.M.Y., 2010, IMPACT GLOBAL FINANC
+   Knight M, 1998, WORLD DEV, V26, P1185, DOI 10.1016/S0305-750X(98)00038-2
+   OECD, 2002, REG POL OECD COUNTR
+   OECD, 2010, CRIS REC CAUS COURS
+   OECD, 2009, OECD COUNTR REV REG
+   OECD, 2009, 676 OECD EC DEP, P676
+   PELTZMAN S, 1976, J LAW ECON, V19, P211, DOI 10.1086/466865
+   Qatar Central Bank, 2011, 35 QAT CENTR BANK
+   Ramady MA, 2010, SAUDI ARABIAN ECONOMY: POLICIES, ACHIEVEMENTS, AND CHALLENGES, SECOND EDITION, P1, DOI 10.1007/978-1-4419-5987-4
+   Ramady MA, 2009, INT J ISLAMIC MIDDLE, V2, P235, DOI 10.1108/17538390910986353
+   Rose P.S, 1999, IMPACT GOVT POLICY R
+   SAMA, 2013, 48 SAMA
+   Sambidge A., 2013, ARABIANBUSINESS 0111
+   Spong K., 1994, BANKING REGULATION I
+   STIGLER GJ, 1971, BELL J ECON, V2, P3, DOI 10.2307/3003160
+   Sturm M., 2005, OCCASIONAL PAPER SER
+   Sturm M., 2008, OCCASIONAL PAPER SER, V92
+   Suhaimi J., 2002, BANKING IND EMERGING
+   Woertz E., 2011, PROSPECTS BANKING FI
+   Woodford M., 2001, S P EC POL INF AG FE
+   World Economic Forum, 2012, FIN DEV REP 2011
+NR 50
+TC 2
+Z9 2
+U1 2
+U2 3
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1358-1988
+EI 1740-0279
+J9 J FINANC REGUL COMPL
+JI J. Financ. Regul. Compliance
+PY 2015
+VL 23
+IS 1
+BP 2
+EP 17
+DI 10.1108/JFRC-09-2013-0032
+PG 16
+WC Business, Finance
+SC Business & Economics
+GA V74ZK
+UT WOS:000211814700001
+DA 2019-12-28
+ER
+
+PT J
+AU Jacobson, T
+   von Schedvin, E
+AF Jacobson, Tor
+   von Schedvin, Erik
+TI Trade Credit and the Propagation of Corporate Failure: An Empirical
+   Analysis
+SO ECONOMETRICA
+LA English
+DT Article
+DE Trade credit; credit chains; bankruptcy; contagion
+ID AGGREGATE FLUCTUATIONS; FINANCIAL DISTRESS; BANKRUPTCY; RISK; CONTAGION;
+   DEFAULTS; NETWORKS; ORIGINS; CHAINS; RATIOS
+AB Using an exhaustive data set on claims held by trade creditors (suppliers) on failed trade debtors (customers), we quantify the importance of trade credit chains for the propagation of corporate bankruptcy. We show that trade creditors experience significant trade credit losses due to trade debtor failures and that creditors' bankruptcy risks increase in the size of incurred losses. By exploring the roles of financial constraints and creditor-debtor dependences, we infer that the trade credit failure propagation mechanism is driven by both credit losses and demand shrinkage. Finally, we show that the documented propagation mechanism constitutes a significant part of the overall bankruptcy frequency, suggesting that it has measurable implications for the aggregate level.
+C1 [Jacobson, Tor; von Schedvin, Erik] Sveriges Riksbank, Div Res, SE-10337 Stockholm, Sweden.
+RP Jacobson, T (reprint author), Sveriges Riksbank, Div Res, SE-10337 Stockholm, Sweden.
+EM Tor.Jacobson@Riksbank.se; Erik.vonSchedvin@Riksbank.se
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   ASQUITH P, 1994, Q J ECON, V109, P625, DOI 10.2307/2118416
+   Battiston S, 2007, J ECON DYN CONTROL, V31, P2061, DOI 10.1016/j.jedc.2007.01.004
+   BERNANKE B, 1989, AM ECON REV, V79, P14
+   Biais B, 1997, REV FINANC STUD, V10, P903, DOI 10.1093/rfs/10.4.903
+   Boissay F., 2006, 573 EUR CENTR BANK
+   Boissay F, 2013, REV FINANC, V17, P1853, DOI 10.1093/rof/rfs045
+   Bradley D. B., 2002, TECHNICAL REPORT
+   Burkart M, 2004, AM ECON REV, V94, P569, DOI 10.1257/0002828041464579
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   Cardoso-Lecourtois M., 2004, EC SOC 2004 N AM SUM, P331
+   Cunat V., 2012, OXFORD HDB ENTREPREN
+   Cunat V, 2007, REV FINANC STUD, V20, P491, DOI 10.1093/rfs/hhl015
+   Das SR, 2007, J FINANC, V62, P93, DOI 10.1111/j.1540-6261.2007.01202.x
+   Franks J., 2005, Review of Finance, V9, P65, DOI 10.1007/s10679-005-2988-8
+   Gabaix X, 2011, ECONOMETRICA, V79, P733, DOI 10.3982/ECTA8769
+   Garcia-Appendini E., 2014, 201411 U ST GALL SCH
+   Giannetti M, 2011, REV FINANC STUD, V24, P1261, DOI 10.1093/rfs/hhn096
+   Giordani P, 2014, J FINANC QUANT ANAL, V49, P1071, DOI 10.1017/S0022109014000623
+   HECKMAN JJ, 1980, REV ECON STUD, V47, P47, DOI 10.2307/2297103
+   Hertzel MG, 2008, J FINANC ECON, V87, P374, DOI 10.1016/j.jfineco.2007.01.005
+   Jacobson T., 2015, ECONOMETRICA S, P83
+   Jacobson T, 2013, J EUR ECON ASSOC, V11, P945, DOI 10.1111/jeea.12020
+   Jacobson Tor, 2005, J FINANCIAL STABILIT, V64, P308, DOI DOI 10.1016/J.JFS.2005.02.011
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   Kiyotaki N., 1997, 118 ED SCH EC
+   McFadden D., 1973, FRONTIERS ECONOMETRI
+   Petersen MA, 1997, REV FINANC STUD, V10, P661, DOI 10.1093/rfs/10.3.661
+   Petersen MA, 2009, REV FINANC STUD, V22, P435, DOI 10.1093/rfs/hhn053
+   Raddatz C., 2006, J FINANC ECON, V80, P667
+   Raddatz C, 2010, REV ECON STAT, V92, P985, DOI 10.1162/REST_a_00042
+   Rajan RG, 1998, AM ECON REV, V88, P559
+   Shumway T, 2001, J BUS, V74, P101, DOI 10.1086/209665
+   SMITH JK, 1987, J FINANC, V42, P863, DOI 10.1111/j.1540-6261.1987.tb03916.x
+   Thorburn KS, 2000, J FINANC ECON, V58, P337, DOI 10.1016/S0304-405X(00)00075-1
+   Wilner BS, 2000, J FINANC, V55, P153, DOI 10.1111/0022-1082.00203
+   Wooldridge J., 2002, ECONOMETRIC ANAL CRO
+NR 41
+TC 22
+Z9 22
+U1 1
+U2 41
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0012-9682
+EI 1468-0262
+J9 ECONOMETRICA
+JI Econometrica
+PD JUL
+PY 2015
+VL 83
+IS 4
+BP 1315
+EP 1371
+DI 10.3982/ECTA12148
+PG 57
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA CN8WU
+UT WOS:000358727200004
+DA 2019-12-27
+ER

@@ -1,0 +1,569 @@
+
+PT J
+AU Ahmad, W
+   Mishra, AV
+   Daly, K
+AF Ahmad, Wasim
+   Mishra, Anil V.
+   Daly, Kevin
+TI Heterogeneous dependence and dynamic hedging between sectors of BRIC and
+   global markets
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article
+DE Spillover index; dynamic conditional correlation; dynamic hedging;
+   sectoral spillover
+ID BRIICKS STOCK MARKETS; US FINANCIAL CRISIS; VOLATILITY SPILLOVERS;
+   EQUITY RETURNS; DIVERSIFICATION OPPORTUNITIES; EMERGING MARKETS; ASSET
+   ALLOCATION; CONTAGION; MODELS; OIL
+AB This study examines the dynamic dependence structure via return and volatility spillovers between BRIC (Brazil, Russia, India, and China) and global markets (USA, Europe, and World) at sectoral level. Using directional spillover and dynamic conditional correlation models, we find that there is substantial evidence of heterogeneity across sample sectors within BRIC and between BRIC and global indices. The sectors that exhibit high inter-country spillovers are industrial metal & mining, banking, industrial transportation and oil & gas. The regional and global indices represented by Europe and World show better spillover mechanism than any other indices, implying that these global sectoral indices impact the sectoral indices returns of BRIC markets. The dynamic hedge ratios and portfolio weights suggest that among BRIC, the sectoral indices of China and India provide better opportunities for risk management than Brazil and Russia. We thus conclude that the heterogeneous dependence structure makes BRIC as a diverse asset class from strategic asset allocation perspective.
+C1 [Ahmad, Wasim] Indian Inst Technol Kanpur, Kanpur 208016, Uttar Pradesh, India.
+   [Mishra, Anil V.; Daly, Kevin] Western Sydney Univ, Sch Business, Locked Bag 1797, Penrith, NSW 2751, Australia.
+RP Daly, K (reprint author), Western Sydney Univ, Sch Business, Locked Bag 1797, Penrith, NSW 2751, Australia.
+EM wasimad@iitk.ac.in; A.Mishra@westernsydney.edu.au;
+   k.daly@westernsydney.edu.au
+CR Ahmad W, 2018, EMERGING MARKETS REV
+   Ahmad W, 2017, Q REV EC FINANCE
+   Ahmad W, 2017, RES INT BUS FINANC, V42, P376, DOI 10.1016/j.ribaf.2017.07.140
+   Ahmad W, 2015, INT J EMERG MARK, V10, P383, DOI 10.1108/IJoEM-02-2013-0022
+   Ahmad W, 2013, ECON MODEL, V33, P209, DOI 10.1016/j.econmod.2013.04.009
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Antonakakis N, 2015, INT REV FINANC ANAL, V41, P303, DOI 10.1016/j.irfa.2015.01.016
+   Balcilar M., 2018, EC SYSTEMS
+   Balcilar M, 2015, EMERG MARK REV, V24, P160, DOI 10.1016/j.ememar.2015.06.002
+   Balli F, 2013, J INT FINANC MARK I, V25, P33, DOI 10.1016/j.intfin.2013.01.001
+   Balli HO, 2013, INT REV FINANC, V13, P67, DOI 10.1111/j.1468-2443.2011.01143.x
+   Baur DG, 2012, J BANK FINANC, V36, P2680, DOI 10.1016/j.jbankfin.2011.05.019
+   Baur DG, 2009, J ASIAN ECON, V20, P353, DOI 10.1016/j.asieco.2009.04.008
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Bekiros SD, 2014, INT REV FINANC ANAL, V33, P58, DOI 10.1016/j.irfa.2013.07.007
+   Benjelloun H., 2009, INT J EC ISSUES, V2, P9
+   Bhar R, 2009, GLOB FINANC J, V19, P203, DOI 10.1016/j.gfj.2008.09.005
+   Bhuyan R, 2016, INT REV ECON FINANC, V46, P180, DOI 10.1016/j.iref.2016.09.004
+   Bianconi M, 2013, EMERG MARK REV, V14, P76, DOI 10.1016/j.ememar.2012.11.002
+   Boamah NA, 2017, RES INT BUS FINANC, V39, P433, DOI 10.1016/j.ribaf.2016.09.008
+   Bonga-Bonga L, 2018, Q REV ECON FINANC, V67, P36, DOI 10.1016/j.qref.2017.04.009
+   Bouri E, 2018, EMERG MARK REV, V34, P124, DOI 10.1016/j.ememar.2017.11.004
+   Brooks R., 2004, J EMPIR FINANC, V11, P659, DOI DOI 10.1016/J.JEMPFIN.2003.08.001
+   CBBC, 2011, CHIN INV BRAZ NEW PH
+   Celik S, 2012, ECON MODEL, V29, P1946, DOI 10.1016/j.econmod.2012.06.011
+   Chevallier J, 2018, J EMPIR FINANC, V46, P77, DOI 10.1016/j.jempfin.2017.12.006
+   Delcoure N, 2016, Q REV EC FINANCE
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Fernandez-Rodriguez F, 2015, INT REV ECON FINANC, V39, P337, DOI 10.1016/j.iref.2015.07.001
+   Forsberg L, 2007, J FINANC ECONOMET, V5, P31, DOI 10.1093/jjfinec/nbl010
+   Hammoudeh SM, 2009, Q REV ECON FINANC, V49, P829, DOI 10.1016/j.qref.2009.04.004
+   Hassan SA, 2007, Q REV ECON FINANC, V47, P470, DOI 10.1016/j.qref.2006.05.006
+   HESTON SL, 1995, J PORTFOLIO MANAGE, V21, P53, DOI 10.3905/jpm.1995.409523
+   HESTON SL, 1994, J FINANC ECON, V36, P3, DOI 10.1016/0304-405X(94)90028-0
+   IMF, 2014, MULT POL ISS REP 201
+   Jin XY, 2016, RES INT BUS FINANC, V36, P179, DOI 10.1016/j.ribaf.2015.09.019
+   Karafiath I., 1988, MULTINATL FINANC J, V23, P351, DOI [10.1111/j.1540-6288.1988.tb01273.x, DOI 10.17578/17-1/2-2]
+   Kenourgios D, 2015, ECON MODEL, V44, P283, DOI 10.1016/j.econmod.2014.10.048
+   Kocaarslan B, 2017, J COMMOD MARK, V7, P41, DOI 10.1016/j.jcomm.2017.08.001
+   Koval A, 2011, RUSSIAN ANAL DIGEST, V91, P8
+   Kraus T, 2001, 0184 IMF, P1
+   Kroner KF, 1998, REV FINANC STUD, V11, P817, DOI 10.1093/rfs/11.4.817
+   KRONER KF, 1993, J FINANC QUANT ANAL, V28, P535, DOI 10.2307/2331164
+   Lai Y, 2010, INT REV ECON FINANC, V19, P211, DOI 10.1016/j.iref.2009.10.004
+   LJUNG GM, 1978, BIOMETRIKA, V65, P297, DOI 10.2307/2335207
+   Lundgren AI, 2018, ENERG ECON, V72, P145, DOI 10.1016/j.eneco.2018.04.015
+   Mensi W, 2017, N AM J ECON FINANC, V41, P133, DOI 10.1016/j.najef.2017.03.006
+   Mensi W, 2016, INT REV ECON FINANC, V42, P257, DOI 10.1016/j.iref.2015.11.005
+   Metiu N, 2012, ECON LETT, V117, P35, DOI 10.1016/j.econlet.2012.04.074
+   Morales L, 2011, EC MANAGEMENT FINANC, V9, P67
+   Samarakoon LP, 2011, J INT FINANC MARK I, V21, P724, DOI 10.1016/j.intfin.2011.05.001
+   Scherrer W, 2007, ECONOMET THEOR, V23, P464, DOI 10.1017/S026646660707020X
+   Sehgal S, 2015, J ECON STUD, V42, P261, DOI 10.1108/JES-11-2012-0157
+   Sewraj D, 2018, J INT FINANCIAL MARK
+   Singh J, 2018, RESOURCES POLICY
+   Syriopoulos T, 2015, INT REV FINANC ANAL, V39, P7, DOI 10.1016/j.irfa.2015.01.015
+   World Bank, 2015, COMM MARK OUTL
+   Zhang B, 2014, ECON MODEL, V42, P413, DOI 10.1016/j.econmod.2014.07.013
+   Zhang B, 2013, N AM J ECON FINANC, V26, P725, DOI 10.1016/j.najef.2013.05.003
+NR 62
+TC 3
+Z9 3
+U1 0
+U2 10
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD OCT
+PY 2018
+VL 59
+BP 117
+EP 133
+DI 10.1016/j.irfa.2018.07.005
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA GT4YW
+UT WOS:000444513600009
+DA 2019-12-27
+ER
+
+PT J
+AU Emmert-Streib, F
+   Musa, A
+   Baltakys, K
+   Kanniainen, J
+   Tripathi, S
+   Yli-Harja, O
+   Jodlbauer, H
+   Dehmer, M
+AF Emmert-Streib, Frank
+   Musa, Aliyu
+   Baltakys, Kestutis
+   Kanniainen, Juho
+   Tripathi, Shailesh
+   Yli-Harja, Olli
+   Jodlbauer, Herbert
+   Dehmer, Matthias
+TI Computational analysis of structural properties of economic and
+   financial networks
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE economic networks; network science; social networks; economy;
+   econometrics; computational social science; financial networks
+ID SYSTEMIC RISK; SMALL-WORLD; INFORMATION-CONTENT; SOCIAL NETWORKS;
+   GRAPH-THEORY; CENTRALITY; TOPOLOGY; DYNAMICS; CONNECTEDNESS; STABILITY
+AB In recent years, methods from network science have been rapidly gaining traction in economics and finance. One reason for this is that, in a globalized world, it is crucial that we understand the interconnections between economic and financial entities; networks provide a natural framework for representing and studying such systems. In this paper, we survey the use of networks and network-based methods to study economy-related questions. We start with a brief overview of graph theory and some basic definitions. Then, we discuss descriptive network measures and network complexity measures for quantifying the structural properties of economic networks. Finally, we discuss different network and tree structures as well as their relevance to certain applications.
+C1 [Emmert-Streib, Frank; Musa, Aliyu; Tripathi, Shailesh] Tampere Univ Technol, Predict Med & Data Analyt Lab, Dept Signal Proc, Korkeakoulunkatu 3, Tampere 33720, Finland.
+   [Emmert-Streib, Frank; Musa, Aliyu; Yli-Harja, Olli] Tampere Univ Technol, Inst Biosci & Med Technol, Korkeakoulunkatu 3, Tampere 33720, Finland.
+   [Baltakys, Kestutis; Kanniainen, Juho] Tampere Univ Technol, Ind & Informat Management, Korkeakoulunkatu 3, Tampere 33720, Finland.
+   [Yli-Harja, Olli] Inst Syst Biol, 401 Terry Ave North, Seattle, WA 98109 USA.
+   [Jodlbauer, Herbert; Dehmer, Matthias] Univ Appl Sci Upper Austria, Inst Intelligent Prod, Fac Management, Steyr Campus,Wehrgrabengasse 1-3, A-4400 Steyr, Austria.
+   [Dehmer, Matthias] UMIT Hlth & Lifesci Univ, Dept Biomed Comp Sci & Mechatron, Eduard Wallnofer Zentrum 1, A-6060 Hall In Tirol, Austria.
+   [Dehmer, Matthias] Nankai Univ, Coll Comp & Control Engn, 38 Tongyan Rd, Tianjin 300350, Peoples R China.
+RP Emmert-Streib, F (reprint author), Tampere Univ Technol, Predict Med & Data Analyt Lab, Dept Signal Proc, Korkeakoulunkatu 3, Tampere 33720, Finland.; Emmert-Streib, F (reprint author), Tampere Univ Technol, Inst Biosci & Med Technol, Korkeakoulunkatu 3, Tampere 33720, Finland.
+EM v@bio-complexity.com; aliyu.musa@tut.fi; kestutis.baltakys@tut.fi;
+   juho.kanniainen@tut.fi; shailesh.tripathy@gmail.com;
+   olli.yli-harja@tut.fi; herbert.jodlbauer@fh-steyr.at;
+   matthias.dehmer@umit.at
+RI ; Emmert-Streib, Frank/G-8099-2011
+OI Herbert, Jodlbauer/0000-0002-0373-6625; Musa, Aliyu/0000-0003-1217-2638;
+   Emmert-Streib, Frank/0000-0003-0745-5641; Kanniainen,
+   Juho/0000-0001-7737-659X
+FU Austrian Science FundAustrian Science Fund (FWF) [P26142]; EU Horizon
+   2020 research and innovation programme [675044]
+FX Matthias Dehmer thanks the Austrian Science Fund for supporting this
+   work (project P26142). Juho Kanniainen received funding from the EU
+   Horizon 2020 research and innovation programme, under the Marie
+   Sklodowska-Curie grant agreement No 675044 "BigDataFinance".
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Adamic LA, 2000, SCIENCE, V287, DOI 10.1126/science.287.5461.2115a
+   Adamic L, 2017, ECONOMET J, V20, pS126, DOI 10.1111/ectj.12090
+   Ahern KR, 2017, J FINANC ECON, V125, P26, DOI 10.1016/j.jfineco.2017.03.009
+   Albert R, 2002, REV MOD PHYS, V74, P47, DOI 10.1103/RevModPhys.74.47
+   Allen EB, 2002, EIGHTH IEEE SYMPOSIUM ON SOFTWARE METRICS, PROCEEDINGS, P182, DOI 10.1109/METRIC.2002.1011337
+   Altomonte C., 2013, WORKING PAPER SERIES, V1554, DOI [10.2139/ssrn.2253222, DOI 10.2139/SSRN.2253222]
+   Amin SH, 2013, APPL MATH MODEL, V37, P4165, DOI 10.1016/j.apm.2012.09.039
+   Arnold J., 2006, 243 FED RES BANK NEW
+   Ballester C, 2006, ECONOMETRICA, V74, P1403, DOI 10.1111/j.1468-0262.2006.00709.x
+   Baltakys K, 2018, SCI REP-UK, V8, DOI 10.1038/s41598-018-26575-2
+   Bang-Jensen J., 2002, DIGRAPHS THEORY ALGO, DOI [10.1007/978-1-4471-3886-0, DOI 10.1007/978-1-4471-3886-0]
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Beaman L., 2016, OXFORD HDB EC NETWOR, P649
+   Bekiros S, 2017, EUR J OPER RES, V256, P945, DOI 10.1016/j.ejor.2016.06.052
+   Berge C., 1989, HYPERGRAPHS COMBINAT
+   Bhattacharya K, 2008, J STAT MECH-THEORY E, DOI 10.1088/1742-5468/2008/02/P02002
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bollabas B., 1998, GRADUATE TEXTS MATH, DOI [10.1007/978-1-4612-0619-4, DOI 10.1007/978-1-4612-0619-4]
+   BONACICH P, 1972, J MATH SOCIOL, V2, P113, DOI 10.1080/0022250X.1972.9989806
+   BONCHEV D, 2005, MATH COMPUTATIONAL C
+   Bonchev D., 1983, INFORM THEORETIC IND
+   BORNHOLDT S., 2003, HDB GRAPHS NETWORKS
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Bramoulle Y., 2015, WORKING PAPER
+   Brandes U., 2005, LECT NOTES COMPUTER, DOI [10.1007/b106453, DOI 10.1007/B106453]
+   BRANDSTADT A, 1999, SIAM MONOG DISCR MAT, pR9
+   Brinkmeier M, 2005, LECT NOTES COMPUT SC, V3418, P293
+   BUCKLEY F, 1990, DISTANCE GRAPHS
+   Calvo-Armengol A, 2007, J ECON THEORY, V132, P27, DOI 10.1016/j.jet.2005.07.007
+   CAYLEY A, 1875, ANAL FORMS CALLED TR, P257
+   CAYLEY A, 1857, PHILOS MAG, V13, P19, DOI DOI 10.1080/14786445708642238
+   CHAKRABARTI S., 2002, MINING WEB DISCOVERI
+   Chaney T., 2016, OXFORD HDB EC NETWOR, P754
+   Cimini G, 2015, SCI REP-UK, V5, DOI 10.1038/srep15758
+   Cormen T. H., 2001, INTRO ALGORITHMS
+   CVETKOVIC DM, 1997, SPECTRA GRAPHS THEOR
+   Davis G. F., 2003, Strategic Organization, V1, P301, DOI 10.1177/14761270030013002
+   Degryse H, 2004, 43 NAT BANK BELG
+   Dehmer Matthias, 2007, 2007 International Conference on Machine Learning; Models, Technologies & Applications (MLMTA'07), P113
+   DEHMER M, 2006, MULTIMEDIA TELEKOOPE
+   Dehmer M, 2008, COMPUT BIOL CHEM, V32, P131, DOI 10.1016/j.compbiolchem.2007.09.007
+   Dehmer M, 2008, CYBERNET SYST, V39, P825, DOI 10.1080/01969720802435925
+   Dehmer M, 2009, J CHEM INF MODEL, V49, P1655, DOI 10.1021/ci900060x
+   Devillers J., 1999, TOPOLOGICAL INDICES
+   Dhar V, 2014, INFORM SYST RES, V25, P264, DOI 10.1287/isre.2013.0510
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diestel R., 2000, GRAPH THEORY
+   Emmert-Streib F., 2008, ANAL MICROARRAY DATA, DOI [10.1002/9783527622818, DOI 10.1002/9783527622818]
+   Emmert-Streib F., 2007, PREPRINT
+   Emmert-Streib F, 2007, APPL MATH COMPUT, V190, P1783, DOI 10.1016/j.amc.2007.02.095
+   Emmert-Streib F, 2016, INFORM SCIENCES, V346, P180, DOI 10.1016/j.ins.2016.01.074
+   Emmert-Streib F, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0012884
+   Emmert-Streib F, 2010, COMPLEXITY, V16, P24, DOI 10.1002/cplx.20315
+   Erdos P., 1960, PUBL MATH I HUNG, V5, P17, DOI DOI 10.2307/1999405
+   Erdos P., 1959, PUBL MATH-DEBRECEN, V6, P290, DOI DOI 10.1234/12345678
+   EULER L, 1736, COMMENTARII ACAD SCI, V8, P128
+   Even S., 1979, GRAPH ALGORITHMS
+   Fagiolo G, 2009, PHYS REV E, V79, DOI 10.1103/PhysRevE.79.036115
+   FELSENSTEIN J, 2003, INFERRING PHYLOGENIE
+   Foulds L. R., 1992, GRAPHTHEORY APPL, DOI [10.1007/978-1-4612-0933-1, DOI 10.1007/978-1-4612-0933-1]
+   FREEMAN LC, 1979, SOC NETWORKS, V1, P215, DOI 10.1016/0378-8733(78)90021-7
+   FREEMAN LC, 1977, SOCIOMETRY, V40, P35, DOI 10.2307/3033543
+   GALLO G, 1993, DISCRETE APPL MATH, V42, P177, DOI 10.1016/0166-218X(93)90045-P
+   Garlaschelli D, 2005, PHYSICA A, V350, P491, DOI 10.1016/j.physa.2004.11.040
+   Giudici P, 2016, J BUS ECON STAT, V34, P128, DOI 10.1080/07350015.2015.1017643
+   GROSS JL, 2006, DISCRETE MATH ITS AP
+   Gualdi S, 2016, SCI REP-UK, V6, DOI 10.1038/srep39467
+   HAGE P, 1995, SOC NETWORKS, V17, P57, DOI 10.1016/0378-8733(94)00248-9
+   Hagstromer B., 2016, WORKING PAPER, DOI [10.2139/ssrn.2770313, DOI 10.2139/SSRN.2770313]
+   Hakeem M. M., 2017, AUSTR ACAD ACCOUNTIN, V1, P103
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Halin R, 1989, GRAPHENTHEORIE
+   Han B, 2013, MANAGE SCI, V59, P1444, DOI 10.1287/mnsc.1120.1678
+   HARARY F, 1959, SOCIOMETRY, V22, P23, DOI 10.2307/2785610
+   Harary F., 1969, GRAPH THEORY, DOI [10.21236/AD0705364, DOI 10.21236/AD0705364]
+   Harary F., 1967, GRAPH THEORY THEORET
+   Hartmann S, 2010, EUR J OPER RES, V207, P1, DOI 10.1016/j.ejor.2009.11.005
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   HEILEMAN MD, 1992, IND ENG, V24, P58
+   Hochberg YV, 2007, J FINANC, V62, P251, DOI 10.1111/j.1540-6261.2007.01207.x
+   Hopp W., 2011, FACTORY PHYS
+   IHRINGER T, 1994, DISKRETE MATH
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Jackson M., 2016, OXFORD HDB EC NETWOR, P71, DOI 10.2139/ssrn.2520284
+   Jackson MO, 2015, P NATL ACAD SCI USA, V112, P15277, DOI 10.1073/pnas.1520970112
+   Jackson MO, 1996, J ECON THEORY, V71, P44, DOI 10.1006/jeth.1996.0108
+   Jiang ZQ, 2010, PHYSICA A, V389, P4929, DOI 10.1016/j.physa.2010.07.024
+   Kalinowski K, 2014, ADV MATER RES-SWITZ, V837, P422, DOI 10.4028/www.scientific.net/AMR.837.422
+   KAUFFMAN SA, 1969, J THEOR BIOL, V22, P437, DOI 10.1016/0022-5193(69)90015-0
+   Kilbridge MD, 1961, J IND ENG, V12, P292
+   Kirman A, 1997, J EVOL ECON, V7, P339, DOI 10.1007/s001910050047
+   Konig MD, 2009, LECT NOTES ECON MATH, V613, P23
+   Kolmogorov A.N., 1965, Problems of Information Transmission, V1, P1
+   Konig M. D., 1936, THEORIE ENDLICHEN UN
+   Koschutzki D, 2005, LECT NOTES COMPUT SC, V3418, P16
+   Kuzubas TU, 2014, PHYSICA A, V405, P203, DOI 10.1016/j.physa.2014.03.006
+   MacLeod M. R., 2009, J CORPORATE CITIZENS, V34, P69, DOI DOI 10.9774/GLEAF.4700.2009.SU.00010
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Mason O, 2007, IET SYST BIOL, V1, P89, DOI 10.1049/iet-syb:20060038
+   Massara GP, 2017, J COMPLEX NETW, V5, P161, DOI 10.1093/comnet/cnw015
+   Mehler A., 2004, LECT NOTES COMPUTER, V3473, P136
+   MEHLER A, 2009, GENRES WEB COMPUTATI
+   Morelli SA, 2017, P NATL ACAD SCI USA, V114, P9843, DOI 10.1073/pnas.1702155114
+   Morinaga E., 2016, T I SYSTEMS CONTROL, V29, P408, DOI [10.5687/iscie.29.408, DOI 10.5687/ISCIE.29.408]
+   Musciotto F, 2016, CHAOS SOLITON FRACT, V88, P267, DOI 10.1016/j.chaos.2016.02.027
+   Musmeci N., 2015, J NETWORK THEORY FIN, V1, P1, DOI DOI 10.21314/JNTF.2015.005
+   Musmeci N, 2016, SCI REP-UK, V6, DOI 10.1038/srep36320
+   Newman MEJ, 2003, SIAM REV, V45, P167, DOI 10.1137/S003614450342480
+   Onnela JP, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.056110
+   Onnela JP, 2003, PHYSICA A, V324, P247, DOI 10.1016/S0378-4371(02)01882-4
+   Ozsoylev HN, 2014, REV FINANC STUD, V27, P1323, DOI 10.1093/rfs/hht065
+   Palsson BO, 2015, SYSTEMS BIOL PROPERT, DOI [10.1017/CBO9780511790515, DOI 10.1017/CBO9780511790515]
+   Pinedo ML, 2012, SCHEDULING: THEORY, ALGORITHMS, AND SYSTEMS, FOURTH EDITION, P1, DOI 10.1007/978-1-4614-2361-4
+   Qiu T, 2010, NEW J PHYS, V12, DOI 10.1088/1367-2630/12/4/043057
+   Rauch JE, 1999, J INT ECON, V48, P7, DOI 10.1016/S0022-1996(98)00009-9
+   Roberts F., 1989, IMA VOLUMES MATH ITS, DOI [10.1007/978-1-4684-6381-1_1, DOI 10.1007/978-1-4684-6381-1_1]
+   Roberts S. M., 1992, AACE INT T, V2, pU3
+   Roukny T., 2014, NETWORK ANAL EVOLUTI
+   SABIDUSSI G, 1966, PSYCHOMETRIKA, V31, P581, DOI 10.1007/BF02289527
+   Saracco F, 2016, SCI REP-UK, V6, DOI 10.1038/srep30286
+   SCOTT F, 2001, SOCIAL NETWORK ANAL
+   SEMPLE C, 2003, GRADUATE SERIES MATH
+   Serrano MA, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.015101
+   SHANNON CE, 1997, MATH THEORY COMMUNIC
+   Sharma K, 2017, SCI REP-UK, V7, DOI 10.1038/s41598-017-07758-9
+   Shuja A., 2016, THESIS
+   SKOROBOGATOV VA, 1988, MATCH-COMMUN MATH CO, V23, P105
+   Sommerfeld E., 1994, KOGNITIVE STRUKTUREN
+   Sommerfeld E., 1994, KNOWLEDGE STRUCTURES, P146, DOI DOI 10.1007/978-3-642-52064-8_5
+   Souma W, 2003, PHYSICA A, V324, P396, DOI [10.1016/S0378-4371(02)01858-7, 10.1016/S0378-4371(02)01859-7]
+   Temizsoy A, 2017, J FINANC STABIL, V33, P346, DOI 10.1016/j.jfs.2016.11.003
+   Trinajstic N., 1992, CHEM GRAPH THEORY
+   Tumminello M, 2005, P NATL ACAD SCI USA, V102, P10421, DOI 10.1073/pnas.0500298102
+   Tumminello M, 2012, NEW J PHYS, V14, DOI 10.1088/1367-2630/14/1/013041
+   van Noort V, 2004, EMBO REP, V5, P280, DOI 10.1038/sj.embor.7400090
+   Vitali S, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0104655
+   Vitali S, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0025995
+   Vitanyi P., 1997, INTRO KOLMOGOROV COM, DOI [10.1007/978-1-4757-2606-0, DOI 10.1007/978-1-4757-2606-0]
+   Wagner A, 2001, P ROY SOC B-BIOL SCI, V268, P1803, DOI 10.1098/rspb.2001.1711
+   Walden J., 2017, WORKING PAPER
+   Walker M. R., 1959, P E JOINT COMP C, P160, DOI DOI 10.1145/1460299.1460318
+   Wasserman S. S., 1994, SOCIAL NETWORK ANAL, DOI [DOI 10.1017/CBO9780511815478, 10.1017/CBO9780511815478]
+   Watts DJ, 1998, NATURE, V393, P440, DOI 10.1038/30918
+   Wilhelm T, 2003, MOL CELL PROTEOMICS, V2, P292, DOI 10.1074/mcp.M300005-MCP200
+NR 149
+TC 2
+Z9 2
+U1 1
+U2 7
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD SEP
+PY 2018
+VL 4
+IS 3
+BP 1
+EP 32
+DI 10.21314/JNTF.2018.043
+PG 32
+WC Business, Finance
+SC Business & Economics
+GA GT5JQ
+UT WOS:000444544100002
+DA 2019-12-28
+ER
+
+PT J
+AU Pulay, G
+   Lucza, A
+AF Pulay, Gyula
+   Lucza, Aniko
+TI Objective Corruption Risks - Subjective Controls Integrity of Publicly
+   Owned Business Associations, Methodology and Results of the Integrity
+   Survey
+SO PUBLIC FINANCE QUARTERLY-HUNGARY
+LA English
+DT Article
+DE integrity; corruption; publicly owned business associations
+AB In 2017, the State Audit Office of Hungary repeatedly surveyed the integrity of publicly owned business association. Survey data show that the degree of corruption risks at these companies depends essentially on objective factors such as company size, provision of public services, and the amount of public funds used. On the other hand, the strength of the integrity control systems put in place to prevent these risks primarily depends on the owner and/or management of the business association, i.e. on subjective factors. The business associations with the best level of integrity stood out from the rest by carrying out systemic risk analyses and risk management, which also included surveying corruption risks. The survey also confirmed that the level of integrity controls is significantly above average in companies with an independent internal audit function operating in accordance with the professional standards.
+EM szvpulay@uni-miskolc.hu
+CR BAGER G, 2011, PENZUGYI SZEMLE PUBL, V2011, P44
+   DOMOKOS L., 2015, POLGARI SZEMLE, V11, P13
+   DOMOKOS L, 2016, AZ INTEGRITAS KULTUR
+   IVANYOS J, 2018, ELEMZES KOZTULAJDONU
+   NEMETH E, 2018, PENZUGYI SZEMLE, V2018, P155
+   NEMETH E, 2017, KOZ GAZDASAG, V12, P57
+   PULAY GY, 2014, PENZUGYI SZEMLE, V2014, P133
+   PULAY GY, 2015, TANULMANY TOBBSEGI A
+   SZATMARI J, 2014, PENZUGYI SZEMLE, V2014, P164
+NR 9
+TC 2
+Z9 2
+U1 0
+U2 0
+PU STATE AUDIT OFFICE HUNGARY
+PI BUDAPEST
+PA BECSI U 5, BUDAPEST, 1052, HUNGARY
+SN 0031-496X
+J9 PUBLIC FINANC Q-HUNG
+JI Public Financ. Q.-Hung.
+PY 2018
+VL 63
+IS 4
+BP 490
+EP 510
+PG 21
+WC Business, Finance
+SC Business & Economics
+GA HJ2YO
+UT WOS:000457036800004
+DA 2019-12-28
+ER
+
+PT J
+AU Sobti, N
+AF Sobti, Neharika
+TI Domestic intermarket linkages: measuring dynamic return and volatility
+   connectedness among Indian financial markets
+SO DECISION
+LA English
+DT Article
+DE Connectedness; Intermarket linkages; Return; Volatility; India
+ID IMPULSE-RESPONSE ANALYSIS; INTERNATIONAL STOCK; BOND; INTEGRATION;
+   SPILLOVERS; INFORMATION; CONTAGION; RISK; DIVERSIFICATION; MOVEMENTS
+AB The dynamic functioning of the markets and increased economic and financial integration has made the world more vulnerable to systemic shocks emanating either domestically from cross-market connectedness or globally from cross-country connectedness. The study focuses on the former channel of transmission of shocks within a country (India) due to linkages among its five financial markets that areanalysed using awidely adopted Connectedness measure of Diebold and Yilmaz (J Econom 182(1):119-134, 2014) which is based on weighted and directed network analysis of variance decomposition in a generalized VAR framework which is an improvement of the Diebold and Yilmaz (Econ J 119(534): 158-171, 2009, Int J Forecast 28(1):57-66, 2012) method. An attempt has been made to analyse the return and volatility connectedness among five financial markets in India: stock, bond, money, foreign exchange and commodity markets from 2006to 2017. The purpose of this study is to examine the dynamic interrelationships among these five markets with an aim to demystify issues like which markets are major transmitters of shocks, which markets are more vulnerable to propagation of such shocks, which markets are ideal for hedging against these shocks and how to achieve portfolio diversification benefit withinIndia. The study reveals that stock markets and foreign exchange market are the largest transmitter of shocks to return, while volatilityconnectedness analyses reveals that commodity market is the largest net volatility transmitter to other asset marketsalong with forex and stock markets.The bond and money markets in India remain largely insulated from domestic connectedness effects. Dynamic connectedness measure highlights that Indian asset markets are more vulnerable to internal shocks as domestic connectedness amplifies the effects ofexternal shocks.
+C1 [Sobti, Neharika] Univ Delhi, Dept Financial Studies, New Delhi, India.
+RP Sobti, N (reprint author), Univ Delhi, Dept Financial Studies, New Delhi, India.
+EM neharika.sobti@gmail.com
+CR Abanomey W. S., 2001, J INVESTING, V10, P61, DOI [10.3905/joi.2001.319474, DOI 10.3905/JOI.2001.319474]
+   Acharya V., 2010, WORKING PAPER
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Andersen TG, 1996, J FINANC, V51, P169, DOI 10.2307/2329306
+   Andersen TG, 2006, NBER CONF R, P513
+   Ankrim Ernst M., 1993, FINANCIAL ANAL J, V49, P20, DOI DOI 10.2469/FAJ.V49.N3.20
+   Anson MJP, 1999, J PORTFOLIO MANAGE, V25, P86, DOI 10.3905/jpm.1999.319753
+   Antonakakis N., 2015, J REAL ESTATE PORTFO, V21, P53
+   Arshanapalli B., 2006, APPL FINANCIAL EC, V16, P377, DOI DOI 10.1080/09603100500511068
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Balli F, 2015, INT REV ECON FINANC, V39, P311, DOI 10.1016/j.iref.2015.04.013
+   Batten JA, 2010, RESOUR POLICY, V35, P65, DOI 10.1016/j.resourpol.2009.12.002
+   Becker K, 2000, WORKING PAPER
+   BEKAERT G, 1995, WORLD BANK ECON REV, V9, P75, DOI 10.1093/wber/9.1.75
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   Bekaert G., 2017, ACADEMIA, DOI [10.2139/ssrn.2344817, DOI 10.2139/SSRN.2344817]
+   Bekaert G., 2002, EMERG MARK REV, V3, P429, DOI DOI 10.1016/S1566-0141(02)00045-6
+   Bekaert G, 1996, EMERGING MARKET CAPI, P107
+   BEKAERT G., 2003, J FINANC RES, V26, P275, DOI DOI 10.1111/1475-6803.00059
+   Bernanke BS, 2005, J FINANC, V60, P1221, DOI 10.1111/j.1540-6261.2005.00760.x
+   Blondel VD, 2008, J STAT MECH-THEORY E, DOI 10.1088/1742-5468/2008/10/P10008
+   Bostanci G., 2015, CONNECTED IS GLOBAL, DOI 10.2139/ssrn.2647251
+   Brunetti C, 2015, FINANCE EC DISCUSSIO, V2015-090, DOI [10. 17016/FEDS. 2015. 090, DOI 10.17016/FEDS.2015.090]
+   Buigut S, 2011, INT J EC FINANCE, V3, P170, DOI [10.5539/ijef.v3n4p170, DOI 10.5539/IJEF.V3N4P170]
+   Buse R, 2019, INT J FORECASTING, V35, P25, DOI 10.1016/j.ijforecast.2018.07.010
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Cenedese G, 2016, J INT MONEY FINANC, V60, P94, DOI 10.1016/j.jimonfin.2015.05.001
+   Chambet A, 2008, J INT MONEY FINANC, V27, P654, DOI 10.1016/j.jimonfin.2008.02.007
+   Chen J., 2014, IMF WORKING PAPER
+   Cronin D, 2014, J MACROECON, V39, P185, DOI 10.1016/j.jmacro.2013.09.006
+   De Santis RA, 2018, J APPL ECONOMET, V33, P727, DOI 10.1002/jae.2627
+   Defond M., 1998, CONTEMP ACCOUNT RES, V15, P1, DOI DOI 10.1111/J.1911-3846.1998.TB00547.X
+   DeSantis G, 1997, J INT MONEY FINANC, V16, P561, DOI 10.1016/S0261-5606(97)00020-X
+   Diebold FX, 2016, J FINANC ECONOMET, V14, P81, DOI 10.1093/jjfinec/nbv021
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Ehrmann M, 2011, J APPL ECONOMET, V26, P948, DOI 10.1002/jae.1173
+   Engle R. F., 2009, DYNAMIC EQUICO UNPUB
+   Etesami J, 2017, 66 SRC LOND SCH EC P
+   Fallis A., 2013, J CHEM INF MODEL, V53, P1689, DOI [10.1017/CBO9781107415324.004, DOI 10.1017/CBO9781107415324.004]
+   Fleming J, 1998, J FINANC ECON, V49, P111, DOI 10.1016/S0304-405X(98)00019-1
+   Forbes K. J., 2001, INT FINANCIAL CONTAG, P43, DOI DOI 10.1007/978-1-4757-3314-3_
+   Georgiev Georgi, 2001, J ALTERNATIVE INVEST, V4, P40, DOI DOI 10.3905/JAI.2001.318997
+   Gounopoulos D, 2013, INT REV FINANC ANAL, V29, P271, DOI 10.1016/j.irfa.2012.04.001
+   Griffin JM, 2008, BUSINESS, DOI [10. 2139/ssrn. 1343854, DOI 10.2139/SSRN.1343854]
+   Hale G, 2018, MONITORING BANKING S
+   HESTON SL, 1995, J PORTFOLIO MANAGE, V21, P53, DOI 10.3905/jpm.1995.409523
+   In F, 2007, J INT MONEY FINANC, V26, P329, DOI 10.1016/j.jimonfin.2006.11.007
+   Kal SH, 2015, ECON SYST, V39, P592, DOI 10.1016/j.ecosys.2015.03.002
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Klossner S, 2014, ECON LETT, V124, P508, DOI 10.1016/j.econlet.2014.07.015
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Lane PR, 2007, INT FINANCIAL INTEGR
+   Lee HH, 2013, WORLD ECON, V36, P396, DOI 10.1111/twec.12030
+   LESSARD DR, 1973, J FINANC, V28, P619
+   Lim Kian-Ping, 2008, INT REV FINANC ANAL, V17, P571, DOI DOI 10.1016/J.IRFA.2007.03.001
+   Liow KH, 2012, REAL ESTATE ECON, V40, P97, DOI 10.1111/j.1540-6229.2011.00314.x
+   Malik S, 2017, INTERCONNECTEDNESS G
+   Panchenko V, 2009, J BANK FINANC, V33, P1014, DOI 10.1016/j.jbankfin.2008.10.016
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Raj J, 2008, INTEGRATION INDIAS S, V42, P202
+   Rigobon R, 2003, Q J ECON, V118, P639, DOI 10.1162/003355303321675473
+   ROSS SA, 1989, J FINANC, V44, P1, DOI 10.2307/2328272
+   Roy RP, 2017, ECON MODEL, V67, P368, DOI 10.1016/j.econmod.2017.02.019
+   Sahay R., 2014, 149 IMF, P1
+   Segoviano M, 2017, IMF WORKING PAPER
+   Sehgal S, 2014, 64078 MPRA
+   Solnik B., 1974, FINANCIAL ANAL J, V30, P48, DOI DOI 10.2469/FAJ.V30.N4.48
+   Sumner DA, 2009, AM J AGR ECON, V91, P1250, DOI 10.1111/j.1467-8276.2009.01292.x
+   TAI CS, 2007, EMERG MARK REV, V8, P264, DOI DOI 10.1016/J.EMEMAR.2006.09.011
+   Underwood S, 2009, J FINANC MARK, V12, P268, DOI 10.1016/j.finmar.2008.08.001
+   Vychytilova J, 2014, ACTA U AGR SILVICULT
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+   Wolf HC, 2000, REV ECON STAT, V82, P555, DOI 10.1162/003465300559046
+   Yang J, 2006, J APPL ECONOM, V21, P727, DOI 10.1002/jae.889
+   강상훈, 2013, Korea and the World Economy, V14, P121
+NR 78
+TC 0
+Z9 0
+U1 1
+U2 4
+PU SPRINGER INDIA
+PI NEW DELHI
+PA 7TH FLOOR, VIJAYA BUILDING, 17, BARAKHAMBA ROAD, NEW DELHI, 110 001,
+   INDIA
+SN 0304-0941
+EI 2197-1722
+J9 DECISION
+JI Decision
+PD DEC
+PY 2018
+VL 45
+IS 4
+BP 325
+EP 344
+DI 10.1007/s40622-018-0196-6
+PG 20
+WC Management
+SC Business & Economics
+GA HF3EQ
+UT WOS:000454118700005
+DA 2019-12-27
+ER
+
+PT J
+AU Kabanov, YM
+   Mokbel, R
+   El Bitar, K
+AF Kabanov, Yu M.
+   Mokbel, R.
+   El Bitar, Kh
+TI CLEARING IN FINANCIAL NETWORKS
+SO THEORY OF PROBABILITY AND ITS APPLICATIONS
+LA English
+DT Article
+DE systemic risk; financial networks; clearing; Knaster-Tarski theorem
+ID SYSTEMIC RISK; CONTAGION
+AB This paper is a survey of recent results on the clearing in financial systems. Mathematically, the principal questions of the reviewed studies are on the existence and uniqueness of solutions of specific nonlinear equations x = f(x), where f: R-d \ar=r\ R-d is a mapping defined via stochastic and substochastic matrices. Some algorithms of calculations of fixed points are discussed.
+C1 [Kabanov, Yu M.] Russian Acad Sci, Steklov Math Inst, Moscow, Russia.
+   [Mokbel, R.; El Bitar, Kh] Univ Franche Comte, Lab Math, Besancon, France.
+RP Kabanov, YM (reprint author), Russian Acad Sci, Steklov Math Inst, Moscow, Russia.
+EM ykabanov@univ-fcomte.fr; ritamokbel@hotmail.com;
+   khalilbitar_aw@hotmail.com
+FU Russian Science FoundationRussian Science Foundation (RSF) [15-11-30042]
+FX This research was funded by a grant of the Russian Science Foundation
+   (project 15-11-30042).
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Amini H, 2016, OPER RES, V64, P1135, DOI 10.1287/opre.2015.1414
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2016, MATH FINANC, V26, P835, DOI 10.1111/mafi.12071
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   [Эль Битар Халил El Bitar Khalil], 2017, [Информатика и ее применения, Informatika i ee primeneniya], P109, DOI 10.14357/1992264170110
+   ELSINGER H., 2009, ESTERREICHISCHE NATI, V156
+   Feinstein Z, 2017, OPER RES LETT, V45, P109, DOI 10.1016/j.orl.2017.01.004
+   Fischer T, 2014, MATH FINANC, V24, P97, DOI 10.1111/j.1467-9965.2012.00526.x
+   Horn R.A., 1985, MATRIX ANAL
+   MILGROM P, 1994, AM ECON REV, V84, P441
+   Presman E, 2011, STOCHASTICS, V83, P467, DOI 10.1080/17442508.2010.521243
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Shiryaev A. N., 1978, APPL MATH, V8
+   Sonin IM, 2006, From Stochastic Calculus to Mathematical Finance: The Shiryaev Festschrift, P609, DOI 10.1007/978-3-540-30788-4_30
+   Suzuki T, 2002, J OPER RES SOC JPN, V45, P123, DOI 10.15807/jorsj.45.123
+   Tarksi A., 1955, PAC J MATH, V5, P285, DOI DOI 10.2140/PJM.1955.5.285
+NR 17
+TC 0
+Z9 0
+U1 1
+U2 3
+PU SIAM PUBLICATIONS
+PI PHILADELPHIA
+PA 3600 UNIV CITY SCIENCE CENTER, PHILADELPHIA, PA 19104-2688 USA
+SN 0040-585X
+EI 1095-7219
+J9 THEOR PROBAB APPL+
+JI Theory Probab. Appl.
+PY 2018
+VL 62
+IS 2
+BP 252
+EP 277
+DI 10.1137/S0040585X97T988599
+PG 26
+WC Statistics & Probability
+SC Mathematics
+GA GF9UK
+UT WOS:000432324200005
+DA 2019-12-27
+ER

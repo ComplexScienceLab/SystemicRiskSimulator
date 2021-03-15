@@ -1,0 +1,498 @@
+
+PT J
+AU Liu, AQ
+   Mo, CYJ
+   Paddrik, ME
+   Yang, SY
+AF Liu, Anqi
+   Mo, Cheuk Yin Jeffrey
+   Paddrik, Mark E.
+   Yang, Steve Y.
+TI An Agent-Based Approach to Interbank Market Lending Decisions and Risk
+   Implications
+SO INFORMATION
+LA English
+DT Article
+DE interbank market; contagion risk; multi-agent system; reinforcement
+   learning agents
+ID FEDERAL-FUNDS MARKET; SYSTEMIC RISK; FINANCIAL NETWORKS; CONTAGION;
+   LIQUIDITY; TOPOLOGY; MODEL
+AB In this study, we examine the relationship of bank level lending and borrowing decisions and the risk preferences on the dynamics of the interbank lending market. We develop an agent-based model that incorporates individual bank decisions using the temporal difference reinforcement learning algorithm with empirical data of 6600 U.S. banks. The model can successfully replicate the key characteristics of interbank lending and borrowing relationships documented in the recent literature. A key finding of this study is that risk preferences at the individual bank level can lead to unique interbank market structures that are suggestive of the capacity with which the market responds to surprising shocks.
+C1 [Liu, Anqi] Cardiff Univ, Sch Math, Cardiff CF10 3AT, S Glam, Wales.
+   [Mo, Cheuk Yin Jeffrey; Yang, Steve Y.] Stevens Inst Technol, Sch Business, Hoboken, NJ 07030 USA.
+   [Paddrik, Mark E.] US Dept Treasury, Off Financial Res, 717 14th St NW, Washington, DC 20220 USA.
+RP Yang, SY (reprint author), Stevens Inst Technol, Sch Business, Hoboken, NJ 07030 USA.
+EM LiuA5@cardiff.ac.uk; cmo1@stevens.edu; Mark.Paddrik@ofr.treasury.gov;
+   syang14@stevens.edu
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Afonso G, 2011, J FINANC, V66, P1109, DOI 10.1111/j.1540-6261.2011.01670.x
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Angelini P, 2011, J MONEY CREDIT BANK, V43, P923, DOI 10.1111/j.1538-4616.2011.00402.x
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Berrospide J. M, 2013, 201303 FEDS BOARD GO
+   Bhattacharya S., 2011, LIQUIDITY AND CRISES, P35
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Gai P, 2010, P ROYAL SOC LOND MAT
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Gilbert N., 2000, MIND SOC, V1, P57, DOI DOI 10.1007/BF02512229
+   GODE DK, 1993, J POLIT ECON, V101, P119, DOI 10.1086/261868
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Heider F., 2009, 1126 ECB
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2015, J ECON DYN CONTROL, V50, P98, DOI 10.1016/j.jedc.2014.08.016
+   Iyer R, 2011, REV FINANC STUD, V24, P1337, DOI 10.1093/rfs/hhp105
+   Kok C., 2016, 1944 ECB
+   Krause J, 2016, 201617 SAID BUS SCH
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   Liu A., 2017, J BANK FINANC, DOI [10.1016/j.jbankfin.2017.08.008, DOI 10.1016/J.JBANKFIN.2017.08.008]
+   Lux T, 2015, J ECON DYN CONTROL, V52, pA11, DOI 10.1016/j.jedc.2014.09.038
+   Macal CM, 2010, J SIMUL, V4, P151, DOI 10.1057/jos.2010.3
+   Macy MW, 2002, ANNU REV SOCIOL, V28, P143, DOI 10.1146/annurev.soc.28.110601.141117
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Othman A., 2008, P 7 INT C AUT AG MUL, P879
+   Roukny T., 2014, NETWORK ANAL EVOLUTI
+   SUTTON R S, 1988, REINFORCEMENT LEARNI
+   TESAURO G, 1992, MACH LEARN, V8, P257, DOI 10.1007/BF00992697
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+NR 38
+TC 2
+Z9 2
+U1 0
+U2 7
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2078-2489
+J9 INFORMATION
+JI Information
+PD JUN
+PY 2018
+VL 9
+IS 6
+AR 132
+DI 10.3390/info9060132
+PG 18
+WC Computer Science, Information Systems
+SC Computer Science
+GA GK4RQ
+UT WOS:000436151900004
+OA DOAJ Gold, Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Bongini, P
+   Clemente, GP
+   Grassi, R
+AF Bongini, Paola
+   Clemente, Gian Paolo
+   Grassi, Rosanna
+TI Interconnectedness, G-SIBs and network dynamics of global banking
+SO FINANCE RESEARCH LETTERS
+LA English
+DT Article
+DE Network analysis; Cross-border banking; Systemic banks; Financial
+   interconnectedness
+ID SYSTEMIC RISK; DIVERSIFICATION
+AB This study shows that interconnections in the global banking network decreased due to the global financial crisis and subsequent regulatory initiatives. It also proves the effectiveness of the regulations of global systemically important banks in inducing these banks to contain their systemic nature.
+C1 [Bongini, Paola] Univ Milano Bicocca, Dept Business & Law, Milan, Italy.
+   [Clemente, Gian Paolo] Catholic Univ, Dept Math Finance & Econometr, Milan, Italy.
+   [Grassi, Rosanna] Univ Milano Bicocca, Dept Stat & Quantitat Methods, Via Bicocca Arcimboldi 8, Milan, Italy.
+RP Grassi, R (reprint author), Univ Milano Bicocca, Dept Stat & Quantitat Methods, Via Bicocca Arcimboldi 8, Milan, Italy.
+EM paola.bongini@unimib.it; gianpaolo.clemente@unicatt.it;
+   rosanna.grassi@unimib.it
+RI Clemente, Gian Paolo/Z-4672-2019; Grassi, Rosanna/AAE-6910-2019
+OI Clemente, Gian Paolo/0000-0001-6795-4595; bongini,
+   paola/0000-0003-2288-7442; Grassi, Rosanna/0000-0001-5292-1723
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   [Anonymous], 2016, WORLD DAY SAF HLTH W, P1
+   Bank of International Settlements, 2009, 49 BIS
+   Barrat A, 2004, P NATL ACAD SCI USA, V101, P3747, DOI 10.1073/pnas.0400087101
+   BASEL COMM. ON BANKING SUPERVISION, 2014, G SIB ASS METH SCOR
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bongini P, 2017, BRIT ACCOUNT REV, V49, P256, DOI 10.1016/j.bar.2016.08.002
+   Bongini P, 2015, J BANK FINANC, V50, P562, DOI 10.1016/j.jbankfin.2014.07.006
+   Borgatti SP, 1999, SOC NETWORKS, V21, P375
+   Brunetti J. H., 2015, FINANCE EC DISCUSSIO, V2015-090
+   Cetorelli N, 2011, IMF ECON REV, V59, P41, DOI 10.1057/imfer.2010.9
+   Chinazzi M, 2013, J ECON DYN CONTROL, V37, P1692, DOI 10.1016/j.jedc.2013.01.010
+   Cimini R, 2015, FINANC RES LETT, V14, P160, DOI 10.1016/j.frl.2015.05.003
+   Clemente GP, 2018, CHAOS SOLITON FRACT, V107, P26, DOI 10.1016/j.chaos.2017.12.007
+   Committee on the Global Financial System, 2018, 60 CGFS
+   Fagiolo G, 2007, PHYS REV E, V76, DOI 10.1103/PhysRevE.76.026107
+   Ferrari SLP, 2004, J APPL STAT, V31, P799, DOI 10.1080/0266476042000214501
+   Giudici P, 2017, J BANK FINANC, DOI [10.1016/j.jbankfin.2017.05.010, DOI 10.1016/J.JBANKFIN.2017.05.010]
+   Hale G, 2012, J INT ECON, V88, P312, DOI 10.1016/j.jinteco.2012.01.011
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Newman M, 2010, NETWORKS INTRO
+   Newman MEJ, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.208701
+   Schafer A., 2013, 9502 CTR EC POL RES
+   Schich S., 2014, OECD J, V1
+   Tabak BM, 2014, PHYSICA A, V394, P211, DOI 10.1016/j.physa.2013.09.010
+   Tasca P, 2017, J ECON DYN CONTROL, V82, P96, DOI 10.1016/j.jedc.2017.01.013
+   Ueda K., 2012, 12128 IMF
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 28
+TC 0
+Z9 0
+U1 1
+U2 6
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1544-6123
+EI 1544-6131
+J9 FINANC RES LETT
+JI Financ. Res. Lett.
+PD DEC
+PY 2018
+VL 27
+BP 185
+EP 192
+DI 10.1016/j.frl.2018.03.002
+PG 8
+WC Business, Finance
+SC Business & Economics
+GA HF8AC
+UT WOS:000454462300027
+DA 2019-12-28
+ER
+
+PT J
+AU Busch, D
+   van Rijn, MBJ
+AF Busch, Danny
+   van Rijn, Mirik B. J.
+TI Towards Single Supervision and Resolution of Systemically Important
+   Non-Bank Financial Institutions in the European Union
+SO EUROPEAN BUSINESS ORGANIZATION LAW REVIEW
+LA English
+DT Article
+DE Supervision; Regulation; Resolution; Systemically important financial
+   institutions; Non-bank SIFIs; Systemic risk; Regulatory arbitrage;
+   Cross-sectoral
+ID MONEY MARKET FUNDS; SHADOW BANKING; RISK; CRISIS
+AB The global financial crisis proved that banks are not the sole source of systemic risk to the financial system and the wider economy. Indeed, systemic risk emanating from non-bank financial institutions proved to be a key vulnerability of the financial system. Such risks occurred, above all, when leveraged non-bank financial institutions performed bank-like activities such as maturity and/or liquidity transformation. However, the increasingly blurred distinction between markets, financial institutions, services and products is not matched in the European Union by an integrated regulatory and supervisory approach. Instead, regulation was and remains largely organised along sectoral lines, with an emphasis on the banking sector. As the global financial crisis shows, this creates a risk of gaps in the coverage of regulation and supervision, leading to inconsistent regulatory treatment of equivalent products and/or services. This in turn causes an unlevel playing field and increases the potential for regulatory arbitrage. In consequence, risky activities migrate to less regulated or unregulated parts of the financial system, leading to a largely unchecked build-up of systemic risk. Drawing inspiration from the reforms in the United States, we propose that the EU' s system of financial regulation be complemented by a robust body charged with identifying and monitoring non-bank financial institutions that are systemically important. This EU authority should have the discretion to designate a non-bank financial institution as a Non-Bank Systemically Important Financial Institution (non-bank SIFT). A logical choice would be to confer such powers on the European Systemic Risk Board. Designated nonbank SIFIs should be placed under direct prudential supervision by an EU body. This EU supervisor would have to establish, on an individual or categorical basis, appropriate enhanced prudential requirements tailored to the nature, risks and activities of the relevant non-bank SIFI. Additionally, a single European resolution regime should be in place to ensure that non-bank SIFIs can fail without destabilising the financial system. This would avoid a possible 'Too-Big-To-Fail' status, remove implicit government guarantees and subject the institution to market discipline. Our proposal aims to ensure that non-bank SIFIs are brought within a regulatory perimeter and supervisory scrutiny consistent with the risk they pose to financial stability. Such a regime would (i) help to eliminate (national) supervisory and regulatory gaps, (ii) reduce regulatory arbitrage activities, and (iii) contribute to the stability of the financial system and a level playing field.
+C1 [Busch, Danny] Radboud Univ Nijmegen, Financial Law, Nijmegen, Netherlands.
+   [Busch, Danny] Radboud Univ Nijmegen, IFL, Nijmegen, Netherlands.
+   [Busch, Danny] Univ Genoa, Genoa, Italy.
+   [Busch, Danny] Univ Cattolica Sacro Cuore Milano, Milan, Italy.
+   [Busch, Danny] Dutch Banking Disciplinary Comm Tuchtcommissie Ba, Amsterdam, Netherlands.
+   [Busch, Danny] Klachteninst Financiele Dienstverlening KiFi, Dutch Complaint Inst Financial Serv, The Hague, Netherlands.
+   [van Rijn, Mirik B. J.] Radboud Univ Nijmegen, IFL, Financial Law, Nijmegen, Netherlands.
+RP Busch, D (reprint author), Radboud Univ Nijmegen, Financial Law, Nijmegen, Netherlands.; Busch, D (reprint author), Radboud Univ Nijmegen, IFL, Nijmegen, Netherlands.; Busch, D (reprint author), Univ Genoa, Genoa, Italy.; Busch, D (reprint author), Univ Cattolica Sacro Cuore Milano, Milan, Italy.; Busch, D (reprint author), Dutch Banking Disciplinary Comm Tuchtcommissie Ba, Amsterdam, Netherlands.; Busch, D (reprint author), Klachteninst Financiele Dienstverlening KiFi, Dutch Complaint Inst Financial Serv, The Hague, Netherlands.
+EM d.busch@jur.ru.nl; m.vanrijn@jur.ru.nl
+CR Abad J, 2017, WORKING PAPER SERIES, V40
+   ABN AMRO, 2015, PROSPECTUS
+   Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Acharya VV, 2011, J FINANC, V66, P1177, DOI 10.1111/j.1540-6261.2011.01669.x
+   Admati A, 2014, BANKERS NEW CLOTHES
+   Adrian T, 2015, OXFORD HDB BANKING, P378
+   Alexander K, 2015, LAW FINANC MATER REV, V9, P191, DOI 10.1080/17521440.2015.1084560
+   Anabtawi I, 2011, NOTRE DAME LAW REV, V86, P1349
+   [Anonymous], 2011, FDIC Q, V5, P1
+   [Anonymous], 2009, G20 LEAD STAT GLOB P
+   [Anonymous], 2012, FED REGISTER, V77, P21
+   Armour J, 2016, PRINCIPLES FINANCIAL
+   Avgouleas E, 2015, J FINANC REGUL, V1, P3, DOI 10.1093/jfr/fju009
+   Awrey D, 2016, SYSTEMIC RISK I DESI, P61
+   Baker D, 2009, CTR EC POLICY RES IS
+   Basel Committee on Banking Supervision, 2017, CONS DOC GUID ID MAN
+   Basel Committee on Banking Supervision, 2014, SUP FRAM MEAS CONTR
+   Bengtsson E, 2013, J INT MONEY FINANC, V32, P579, DOI 10.1016/j.jimonfin.2012.05.027
+   Bernanke BS, 2012, C RETH FIN PERSP CRI
+   Blinder A., 2013, MUSIC STOPPED FINANC
+   Brewer E, 2013, J FINANC SERV RES, V43, P1, DOI 10.1007/s10693-011-0119-6
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Busch D, 2015, EUROPEAN BANKING UNI
+   Busch D, 2018, SINGLE IS SINGLE RES
+   Busch D, 2018, CAPITAL MARKETS UNIO
+   Busch D, 2017, J FINANC REGUL, V3, P262, DOI 10.1093/jfr/fjx002
+   Busch Danny, 2018, CAPITAL MARKETS UNIO, P28
+   Carvajal A, 2009, SPN0907 INT MON FUND
+   Cetorelli Nicola, 2014, FEDERAL RESERVE BANK
+   Chernenko S, 2014, REV FINANC STUD, V27, P1717, DOI 10.1093/rfs/hhu025
+   Commissione della Societa Italiana di Cure Palliative, 2016, CONS DOC REV EU MACR, P1
+   Council of the European Union, 2008, PRES CONCL 15 16 OCT
+   De Larosiere J., 2009, HIGH LEVEL GROUP FIN
+   Deyoung R, 2015, OXFORD HDB BANKING, P825
+   Dizard J, 2017, FINANCIAL TIMES
+   Doyle N, 2016, EUROPEAN CENTRAL BAN, V174
+   Eichengreen B., 2015, HALL MIRRORS GREAT D
+   ESMA, 2016, ESMA2016596
+   European Banking Authority, 2014, EBAOP201412
+   European Banking Authority, 2016, EBAGL201520
+   European Banking Authority, 2015, EBACP201506
+   European Commission, 2014, COM20140279 EUR COMM
+   European Commission, 2017, PUBL CONS OP EUR SUP
+   European Commission, 2015, COM201563 EUR COMM
+   European Commission, 2013, COM2013614 EUR COMM
+   European Commission, 2015, COM2015468 EUR COMM, P468
+   European Systemic Risk Board, 2016, EU SHAD BANK MON 1
+   European Systemic Risk Board, 2017, EU SHAD BANK MON 2
+   European Systemic Risk Board, 2016, MACR POL BANK ESRB S
+   Everson M, 2015, OXFORD HDB FINANCIAL, P409
+   FDIC and FRB, 2011, FED REGISTER, V76, P67323
+   Federal Deposit Insurance Corporation, 2013, FED REGISTER, V78, P76614
+   Federal Reserve System, 2016, FED REGISTER, V81, P38631
+   Federal Reserve System, 2008, FIN HOLD CO PROJ
+   Ferran E, 2013, U CAMBRIDGE FACULTY, V10
+   Ferran E, 2015, OXFORD HDB FINANCIAL, P97
+   Financial Crisis Inquiry Commission, 2011, FIN CRIS INQ REP FIN
+   Financial Stability Board, 2015, CONS DOC 2 ASS METH
+   Financial Stability Board, 2013, OV PROGR IMPL G20 RE
+   Financial Stability Board, 2017, POL REC ADDR STRUCT
+   Financial Stability Board, 2017, ASS SHAD BANK ACT RI
+   Financial Stability Board, 2011, KEY ATTR EFF RES REG
+   Financial Stability Board, 2017, GLOB SHAD BANK MON R
+   Financial Stability Board, 2011, SHAD BANK STRENGTH O
+   Financial Stability Board, 2011, POL MEAS ADDR SYST I
+   Financial Stability Board, 2015, TRANSF SHAD BANK RES
+   Financial Stability Board, 2013, POL FRAM STRENGTH OV
+   FINANCIAL STABILITY BOARD, 2015, GLOB SHAD BANK MON R
+   Financial Stability Board, 2010, RED MOR HAZ POS SYST
+   Financial Stability Board, 2010, INT EFF SIFI SUP REC
+   Financial Stability Board, 2016, THEM REV IMPL FSB PO
+   Financial Stability Board, 2013, PROGR NEXT STEPS END
+   Financial Stability Oversight Council, 2016, BAS FIN STAB OV COUN
+   FLEMING M, 2014, FRBNY EC POLY REV, V20, P175
+   French KR, 2010, SQUAM LAKE REPORT: FIXING THE FINANCIAL SYSTEM, P1
+   G20 Leaders, 2009, G20 LEAD STAT PITTSB
+   Goodley S, 2016, GUARDIAN
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Gros D, 2008, FINANCIAL TIMES
+   Gruenberg MJ, 2015, PROGR REPORT RESOLUT
+   Huang RH, 2014, I STRUCTURE FINANCIA
+   Juncker JC, 2015, COMPLETING EUROPES E
+   Kacperczyk M, 2013, Q J ECON, V128, P1073, DOI 10.1093/qje/qjt010
+   Labaton Stephen, 2008, NY TIMES
+   Lane PR, 2012, J ECON PERSPECT, V26, P49, DOI 10.1257/jep.26.3.49
+   Lastra Rosa M, 2015, OXFORD HDB FINANCIAL, P309
+   Lew JJ, 2016, WALL STREET J
+   LOWENSTEIN ROGER, 2000, GENIUS FAILED RISE F
+   McCabe PE, 2012, FEDERAL RESERVE BANK
+   Merler S, 2012, BRUEGEL POLICY CONTR
+   Moloney N, 2014, COMMON MKT LAW REV, V51, P1609
+   Moloney Niamh, 2014, EU SECURITIES FINANC
+   Moore MJ, 2015, BIGGEST GLOBAL BANKS
+   Pacces AM, 2017, 339 EUR CORP GOV I
+   Pisani-Ferry J, 2012, BRUEGEL POLICY CONTR
+   Pozsar Z., 2010, FEDERAL RESERVE BANK, V458
+   Rajan RG, 2011, FAULT LINES HIDDEN F
+   Santos J., 2014, EC POLICY REV, V20, P29
+   Schillig Michael, 2016, RESOLUTION INSOLVENC
+   Schoenmaker D., 2013, GOVERNANCE INT BANKI
+   Schoenmaker D., 2016, BRUEGEL BLUEPRINT SE, V25
+   Schwarcz D, 2014, U CHICAGO LAW REV, V81, P1569
+   Schwarcz L., 2011, REV BANKING FIN L, V31, P619
+   Schwarcz SL, 2008, GEORGETOWN LAW J, V97, P193
+   Scott HS, 2010, J INT ECON LAW, V13, P763, DOI 10.1093/jiel/jgq027
+   Scott Hal S., 2016, CONNECTEDNESS CONTAG
+   Sender H, 2009, FINANCIAL TIMES
+   van Setten L, 2014, ALTERNATIVE INVESTME
+   Vernon N., 2014, EUROPES HALF BANKING
+   Veron N, 2013, S EUR PRIV EQ VENT C
+   Veron N, 2015, BRUEGEL ESSAY LECT S
+   Veron N, 2016, J FINANC REGUL, V2, P130, DOI 10.1093/jfr/fjw006
+   Wan JS, 2016, COLUMBIA LAW REV, V116, P805
+   Wolf M, 2014, SHIFTS SHOCKS WHAT W
+   Wymeersch E, 2014, 255 NAT BANK BELG
+   Zetzsche D, 2015, ALTERNATIVE INVESTME
+NR 116
+TC 0
+Z9 0
+U1 1
+U2 13
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1566-7529
+EI 1741-6205
+J9 EUR BUS ORGAN LAW RE
+JI Eur. Bus. Organ. Law Rev.
+PD JUN
+PY 2018
+VL 19
+IS 2
+BP 301
+EP 363
+DI 10.1007/s40804-018-0107-5
+PG 63
+WC Business; Law
+SC Business & Economics; Government & Law
+GA GH1CX
+UT WOS:000433141000004
+OA Other Gold, Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Di Clemente, A
+AF Di Clemente, Annalisa
+TI Estimating the Marginal Contribution to Systemic Risk by A CoVaR-model
+   Based on Copula Functions and Extreme Value Theory
+SO ECONOMIC NOTES
+LA English
+DT Article
+ID DISTRIBUTIONS; ASSOCIATION; DEPENDENCE
+AB In this paper, we quantify the contribution to systemic risk of a single financial institution by utilizing a analytical framework based on the principles of Extreme Value Theory (EVT) for modelling the marginal distributions and on the properties of copula functions for describing the dependence structure between the financial system and the single financial institution. Among the several systemic risk measures proposed nowadays by academics and estimated by public data, we choose to adopt as systemic risk metric the Conditional Value-at-Risk (CoVaR). We select a co-risk measure like the CoVaR because of its macro-dimension that allows us to integrate the dependence structure of the single financial institution and of the whole financial system in the systemic risk measurement. While the copula functions have been utilized in some pioneer studies on this area, the EVT principles have not yet been implemented in such a context of systemic risk contribution measurement.
+C1 [Di Clemente, Annalisa] Sapienza Univ Rome, Dept Social & Econ Sci, Rome, Italy.
+RP Di Clemente, A (reprint author), Sapienza Univ Rome, Dept Social & Econ Sci, Rome, Italy.
+EM annalisa.diclemente@uniroma1.it
+CR Adrian T., 2011, 348 FED RES BANK NEW
+   Basel Committee on Banking Supervision, 2010, AS MACR IMP TRANS ST
+   Basel Committee on Banking Supervision, 2013, GLOB SYST IMP BANKS
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   Bouye E, 2009, EUR J FINANC, V15, P721, DOI 10.1080/13518470902853491
+   CLAYTON DG, 1978, BIOMETRIKA, V65, P141, DOI 10.2307/2335289
+   COOK RD, 1981, J ROY STAT SOC B MET, V43, P210
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Financial Stability Board (FSB), 2015, TECHNICAL REPORT
+   Frank M. J., 1979, AEQUATIONES MATH, V19, P194, DOI [10.1007/BF02189866, DOI 10.1007/BF02189866]
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   GUMBEL EJ, 1960, J AM STAT ASSOC, V55, P698, DOI 10.2307/2281591
+   Hakwa B., 2015, COMMUN STOCH ANAL, V9, P131
+   HOUGAARD P, 1986, BIOMETRIKA, V73, P671, DOI 10.1093/biomet/73.3.671
+   Joe H., 1996, 166 U BRIT COL DEP S
+   Karimalis E. N, 2014, WORKING PAPER
+   Mainik G, 2014, STATIST RISK MODEL, V31, P49, DOI 10.1515/strm-2013-1164
+   McNeil A. J., 2000, J EMPIR FINANC, V7, P271, DOI DOI 10.1016/S0927-5398(00)00012-8
+   Nelsen RB, 1998, INTRO COPULAS
+   OAKES D, 1982, J ROY STAT SOC B MET, V44, P414
+   Sklar A, 1996, DISTRIBUTIONS FIXED, V28, P1, DOI DOI 10.1214/LNMS/1215452606
+   Sklar A., 1959, PUBL I STAT U PARIS, V8, P229, DOI 10.1007/978-3-642-33590-7
+   Yamai Y., 2002, COMP ANAL EXPECTED S, V20, P181
+NR 24
+TC 2
+Z9 2
+U1 2
+U2 12
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0391-5026
+EI 1468-0300
+J9 ECON NOTES
+JI Econ. Notes
+PD FEB
+PY 2018
+VL 47
+IS 1
+BP 69
+EP 112
+DI 10.1111/ecno.12095
+PG 44
+WC Economics
+SC Business & Economics
+GA FR7IM
+UT WOS:000419241200003
+DA 2019-12-28
+ER
+
+PT J
+AU Braverman, A
+   Minca, A
+AF Braverman, Anton
+   Minca, Andreea
+TI Networks of common asset holdings: aggregation and measures of
+   vulnerability
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE financial networks; mutual funds; contagion; liquidity; flow imbalance;
+   network vulnerability
+ID FINANCIAL NETWORKS; OVERLAPPING PORTFOLIOS; RETURN PREDICTABILITY;
+   CONTAGION; RISK; CONNECTEDNESS; STABILITY
+AB This paper quantifies the interrelations induced among financial institutions by common asset holdings. A network representation emerges in which nodes represent portfolios and edge weights aggregate the common asset holdings as well as the liquidity of these holdings. As a building block, we introduce a simple model of order imbalance that estimates price impacts caused by liquidity shocks. In our model, asset prices are set by a competitive risk-neutral market maker, and the arrival rates for buyers and sellers depend on the common asset holdings. We illustrate the relevance of our aggregation method and the resulting network representation using data on mutual fund asset holdings. We compare three related measures of vulnerability in the network and demonstrate a strong dependence between mutual fund returns and these measures.
+C1 [Braverman, Anton] Northwestern Univ, Kellogg Sch Management, 2211 Campus Dr, Evanston, IL 60208 USA.
+   [Minca, Andreea] Cornell Univ, Sch Operat Res & Informat Engn, 222 Rhodes Hall, Ithaca, NY 14853 USA.
+RP Minca, A (reprint author), Cornell Univ, Sch Operat Res & Informat Engn, 222 Rhodes Hall, Ithaca, NY 14853 USA.
+EM anton.braverman@kellogg.northwestern.edu; acm299@cornell.edu
+FU NSF CAREER AwardNational Science Foundation (NSF)NSF - Office of the
+   Director (OD) [1653354]
+FX Andreea Minca's research is partly funded by NSF CAREER Award #1653354.
+   The authors wish to thank Pam Moulton, Gala Nuno (discussant) and Rama
+   Cont for their helpful comments. This work was presented at the INFORMS
+   Annual Meeting 2013, the European Central Bank "Workshop on Using Big
+   Data for Forecasting and Statistics" (2014), the Newton Institute
+   Workshop "Monitoring Systemic Risk: Data, Models and Metrics" (2014),
+   the SIAM Conference on Financial Mathematics & Engineering (2014) and
+   the Bank of England Research Seminar 2017.
+CR Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Almgren R., 2005, RISK, V18, P57
+   Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   Amini H., 2015, WORKING PAPER
+   Amini H., 2013, ADV NETWORK ANAL ITS, V18, P3
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Barigozzi M., 2013, WORKING PAPER, DOI [10.2139/ssrn.2249909, DOI 10.2139/SSRN.2249909]
+   Barrat A, 2004, P NATL ACAD SCI USA, V101, P3747, DOI 10.1073/pnas.0400087101
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blocher J, 2016, J FINANC MARK, V30, P1, DOI 10.1016/j.finmar.2016.04.001
+   Blume L., 2011, P 12 ACM C EL COMM, P1, DOI DOI 10.1145/1993574.1993576
+   Cabrales A, 2017, REV FINANC STUD, V30, P3086, DOI 10.1093/rfs/hhx077
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Capponi A, 2015, REV ASSET PRICING ST, V5, P227, DOI 10.1093/rapstu/rav006
+   Cohen RB, 2005, J FINANC, V60, P1057, DOI 10.1111/j.1540-6261.2005.00756.x
+   Cohen-Cole E., 2011, 8332 CTR EC POL RES
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Duarte F., 2015, 645 FED RES BANK NEW
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gao GP, 2017, J FINANC INTERMED, V31, P45, DOI 10.1016/j.jfi.2016.07.004
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Gompers PA, 2001, Q J ECON, V116, P229, DOI 10.1162/003355301556392
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Gourieroux C, 2012, CAN J ECON, V45, P1273, DOI 10.1111/j.1540-5982.2012.01750.x
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Greenwood R, 2011, J FINANC ECON, V102, P471, DOI 10.1016/j.jfineco.2011.06.003
+   Guo WL, 2016, STATIST RISK MODEL, V33, P139, DOI 10.1515/strm-2015-0020
+   Hau H, 2017, REV FINANC, V21, P77, DOI 10.1093/rof/rfw023
+   Kara G. I., 2015, WORKING PAPER
+   Khandani AE, 2011, J FINANC MARK, V14, P1, DOI 10.1016/j.finmar.2010.07.005
+   Kyle AS, 2016, ECONOMETRICA, V84, P1345, DOI 10.3982/ECTA10486
+   KYLE AS, 1985, ECONOMETRICA, V53, P1315, DOI 10.2307/1913210
+   Lou D, 2012, REV FINANC STUD, V25, P3457, DOI 10.1093/rfs/hhs103
+   Musmeci N., 2015, J NETWORK THEORY FIN, V1, P1, DOI DOI 10.21314/JNTF.2015.005
+   Stavroglou SK, 2017, J NETW THEORY FINANC, V3, P17, DOI 10.21314/JNTF.2017.029
+   Zawadowski A, 2013, REV FINANC STUD, V26, P1291, DOI 10.1093/rfs/hht008
+NR 43
+TC 1
+Z9 1
+U1 1
+U2 2
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD SEP
+PY 2018
+VL 4
+IS 3
+BP 53
+EP 78
+DI 10.21314/JNTF.2018.045
+PG 26
+WC Business, Finance
+SC Business & Economics
+GA GT5JQ
+UT WOS:000444544100004
+DA 2019-12-27
+ER

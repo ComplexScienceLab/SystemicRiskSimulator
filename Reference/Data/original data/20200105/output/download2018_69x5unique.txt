@@ -1,0 +1,426 @@
+
+PT J
+AU Silva, TC
+   Alexandre, MD
+   Tabak, BM
+AF Silva, Thiago Christiano
+   Alexandre, Michel da Silva
+   Tabak, Benjamin Miranda
+TI Bank lending and systemic risk: A financial-real sector network approach
+   with feedback
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Systemic risk; Feedback; Financial accelerator; Financial network;
+   Transmission channel; Contagion
+ID BRAZILIAN INTERBANK MARKET; CONTAGION; INTERMEDIATION; LIQUIDITY; MODELS
+AB We simulate shocks to the real sector and evaluate how the financial system reacts and amplifies these events using unique Brazilian loan-level data between banks and banks and firms. Our analysis considers the feedback behavior that exists between the financial and real sectors through a micro-level financial accelerator. We find a strong "network effect" in which the network structure can either attenuate or amplify shocks from the real sector and thus plays a major role in contagion processes. We also find that government-owned banks are the most susceptible banks to receiving shocks from firms of any economic sector. There is empirical evidence to support the claim that more diversified portfolios of banks contribute to higher sector riskiness levels. Our results suggest that systemic risk models should account for the interconnectedness among economic agents such as the interbank and real and financial sector linkages in a multilayer approach. Overall, we show that the feedback between the real and financial sector matters in systemic risk estimation and most models that do not take into consideration could be severely underestimating systemic risk. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Silva, Thiago Christiano; Alexandre, Michel da Silva] Cent Bank Brazil, Res Dept, Brasilia, DF, Brazil.
+   [Silva, Thiago Christiano] Univ Sao Paulo, Fac Philosophy Sci & Literatures Ribeirao Preto, Dept Comp & Math, Sao Paulo, Brazil.
+   [Silva, Thiago Christiano] Univ Catolica Brasilia, Dept Law & Econ, Brasilia, DF, Brazil.
+   [Tabak, Benjamin Miranda] Getulio Vargas Fdn, Sch Publ Policy & Govt, Sao Paulo, SP, Brazil.
+RP Silva, TC (reprint author), Banco Cent Brasil, Andar 13,Setor Bancario SBS Quadra 3 Bloco B, BR-70074900 Brasilia, DF, Brazil.
+EM thiago.silva@bcb.gov.br; michel.alexandre@bcb.gov.br;
+   benjaminm.tabak@gmail.com
+RI Christiano, Thiago/B-8828-2012
+OI Christiano, Thiago/0000-0003-2631-4393
+FU CNPq foundationNational Council for Scientific and Technological
+   Development (CNPq) [302808/2015-9, 305427/2014-8]
+FX Thiago C. Silva (Grant No. 302808/2015-9) and Benjamin M. Tabak (Grant
+   No. 305427/2014-8) gratefully acknowledge financial support from the
+   CNPq foundation.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya VV, 2006, J BUS, V79, P1355, DOI 10.1086/500679
+   Aldasoro I, 2016, J FINANC STABIL, V27, P1, DOI 10.1016/j.jfs.2016.08.008
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anand K, 2018, J FINANC STABIL, V35, P107, DOI 10.1016/j.jfs.2017.05.012
+   Anand K, 2012, J ECON DYN CONTROL, V36, P1088, DOI 10.1016/j.jedc.2012.03.005
+   Aoyama H, 2013, 13E087 RES I EC
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Bardoscia M, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0130406
+   Batiz-Zuk E, 2016, J FINANC STABIL, V27, P198, DOI 10.1016/j.jfs.2015.04.007
+   Battiston S, 2013, 52141 MUN PERS REPEC
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   BCBS, 2015, NON TRADITIONAL REF
+   BCBS, 2014, NON TRADITIONAL REF
+   BCBS, 2014, NON TRADITIONAL REF
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Bernanke BS, 1999, HBK ECON, V15, P1341
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   Cajueiro DO, 2008, PHYSICA A, V387, P6825, DOI 10.1016/j.physa.2008.08.031
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   de Castro Miranda R. C, 2013, 322 CENTR BANK BRAZ
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Georgescu OM, 2015, J FINANC STABIL, V18, P1, DOI 10.1016/J.JFS.2015.02.003
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Leon C, 2018, J FINANC STABIL, V35, P75, DOI 10.1016/j.jfs.2016.10.008
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   RAMAKRISHNAN RTS, 1984, REV ECON STUD, V51, P415, DOI 10.2307/2297431
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Silva T. C, J EC BEHAV ORG
+   Silva TC, 2016, MACHINE LEARNING COM
+   Silva TC, 2016, EMERG MARK REV, V26, P130, DOI 10.1016/j.ememar.2015.12.004
+   Silva TC, 2017, J ECON DYN CONTROL, V76, P109, DOI 10.1016/j.jedc.2017.01.001
+   Silva TC, 2016, J NETW THEORY FINANC, V2, P1, DOI 10.21314/JNTF.2016.022
+   Silva TC, 2016, J FINANC STABIL, V25, P247, DOI 10.1016/j.jfs.2016.04.004
+   Souza SRS, 2015, PHYSICA A, V431, P140, DOI 10.1016/j.physa.2015.03.005
+   de Souza SRS, 2016, J ECON DYN CONTROL, V66, P54, DOI 10.1016/j.jedc.2016.03.003
+   Stomper A., 2004, MANAGE SCI, V52, P1618
+   Tabak BM, 2011, J BANK FINANC, V35, P3065, DOI 10.1016/j.jbankfin.2011.04.006
+   Winton A, 1999, 0016 WHART SCH CTR F
+   Xu T, 2016, PHYSICA A, V463, P131, DOI 10.1016/j.physa.2016.07.013
+NR 45
+TC 5
+Z9 5
+U1 4
+U2 23
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD OCT
+PY 2018
+VL 38
+BP 98
+EP 118
+DI 10.1016/j.jfs.2017.08.006
+PG 21
+WC Business, Finance; Economics
+SC Business & Economics
+GA GX4BL
+UT WOS:000447671800008
+DA 2019-12-27
+ER
+
+PT J
+AU Ye, XX
+   Douady, R
+AF Ye, Xingxing
+   Douady, Raphael
+TI Systemic Risk Indicators Based on Nonlinear PolyModel
+SO JOURNAL OF RISK AND FINANCIAL MANAGEMENT
+LA English
+DT Article
+DE systemic risk crisis; financial indicator; network; nonlinear
+   regression; PolyModel; validation
+AB The global financial market has become extremely interconnected as it demonstrates strong nonlinear contagion in times of crisis. As a result, it is necessary to measure financial systemic risk in a comprehensive and nonlinear approach. By establishing a large set of risk factors as the main bones of the financial market network and applying nonlinear factor analysis in the form of so-called PolyModel, this paper proposes two systemic risk indicators that can prognosticate the advent and trace the development of financial crises. Through financial network analysis, theoretical simulation, empirical data analysis and final validation, we argue that the indicators suggested in this paper are proved to be very effective in forecasting and tracing the financial crises from 1998 to 2017. The economic benefit of the indicator is evidenced by the enhancement of a protective put/covered call strategy on major stock markets.
+C1 [Ye, Xingxing; Douady, Raphael] SUNY Stony Brook, Dept Appl Math & Stat, Stony Brook, NY 11794 USA.
+RP Ye, XX; Douady, R (reprint author), SUNY Stony Brook, Dept Appl Math & Stat, Stony Brook, NY 11794 USA.
+EM yexingxingzj@gmail.com; rdouady@gmail.com
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Armentia Yannick, 2015, MULTIVARIATE SHORTFA
+   Balla E, 2014, J FINANC STABIL, V15, P195, DOI 10.1016/j.jfs.2014.10.002
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blancher N., 2013, 13168 IMF
+   Brownlees Christian, 2014, INTERDEPENDENT ARE S
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   Brunnermeier Markus K., 2014, MEASURING ALLOCATING
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Cherny A, 2010, FINANC STOCH, V14, P375, DOI 10.1007/s00780-009-0107-y
+   Coste C, 2011, J ALTERN INVEST, V13, P10, DOI 10.3905/jai.2011.13.3.010
+   Dhillon PS, 2013, J MACH LEARN RES, V14, P1505
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Gray D., 2013, 13218 IMF
+   Hansen Lars Peter, 2013, CHALLENGES IDENTIFYI
+   Hartmann Philipp, 2015, MELTING SYSTEMIC FIN
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Huser Anne-Caroline, 2015, SAFE WORKING PAPER S, V91
+   Langfield S, 2016, COMPUT ECON, V47, P3, DOI 10.1007/s10614-014-9443-x
+   Markovic Peta, 2011, EC ANN, V56, P188, DOI [10.2298/EKA1188062M, DOI 10.2298/EKA1188062M]
+   Moore Kyle, 2012, IDENTIFYING SYSTEMIC
+   Patro DK, 2013, J FINANC STABIL, V9, P105, DOI 10.1016/j.jfs.2012.03.002
+   Rama Cont Amal Moussa, 2009, LECT IMF
+   Raphael Douady, 2014, ANR10LABX0095
+   Schwaab Bernd, 2011, 1327 EUR CENTR BANK
+   Sorkin A, 2009, TOO BIG FAIL
+   Sornette D, 2006, INT J FORECASTING, V22, P153, DOI 10.1016/j.ijforecast.2005.02.004
+   Sornette D, 1996, J PHYS I, V6, P167, DOI 10.1051/jp1:1996135
+   Sornette D, 2002, INT J MOD PHYS C, V13, P171, DOI 10.1142/S0129183102003085
+   Sornette D., 2001, Quantitative Finance, V1, P452, DOI 10.1088/1469-7688/1/4/305
+   Sornette D, 1997, PHYSICA A, V245, P411, DOI 10.1016/S0378-4371(97)00318-X
+   Stoyanov Stoyan, 2016, REAL WORLD RISK I C
+   Stoyanov Stoyan V., 2010, J PORTFOLIO MANAGE
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 37
+TC 0
+Z9 0
+U1 1
+U2 1
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 1911-8066
+EI 1911-8074
+J9 J RISK FINANC MANAG
+JI J. Risk Financ. Manag.
+PD DEC 20
+PY 2018
+VL 12
+IS 1
+AR 2
+DI 10.3390/jrfm12010002
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA HU0ZD
+UT WOS:000465000100001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Chen, ZH
+   An, HZ
+   An, F
+   Guan, Q
+   Hao, XQ
+AF Chen, Zhihua
+   An, Haizhong
+   An, Feng
+   Guan, Qing
+   Hao, Xiaoqing
+TI Structural risk evaluation of global gas trade by a network-based
+   dynamics simulation model
+SO ENERGY
+LA English
+DT Article
+DE International gas trade; Gas supply security; Trade structural risk;
+   Complex network; Bootstrap percolation
+ID NATURAL-GAS; INTERNATIONAL-TRADE; FINANCIAL CONTAGION; OIL CRISIS;
+   EVOLUTION; TRANSMISSION; COMPETITION; PORTFOLIO; PATTERN; DEMAND
+AB The uneven distribution of natural gas in the world makes the gas trade between countries close, and the importance of natural gas for national economies leads to a high dependence of gas-importing countries on external natural gas resources. This dependency creates a potential structural risk in the global gas trade that can spread out along trade linkages when parts of the gas trade collapse. In this paper, we developed a simulation model for the diffusion of gas trade ruptures based on a modified bootstrap percolation network model. We used this model to detect the potential gas trade risk and observed the roles of gas trade participants in the risk transmission process. In the results, we found that Norway and Qatar have the greatest impact on price fluctuations in the risk simulation. While Russia's influence ranks lower in the global gas market, although it has larger trade partners. Meanwhile, the external gas supply risk for gas-importing countries varies greatly and shows regional characteristics (European countries are in a higher trade risk environment, while China and Japan have the largest gas supply risk in Asia). We also identified the diffusion paths of gas supply breaks and found that Singapore and India are likely to serve as the largest intermediaries, causing a wide range of trade collapse. (C) 2018 Elsevier Ltd. All rights reserved.
+C1 [Chen, Zhihua; An, Haizhong; An, Feng; Guan, Qing; Hao, Xiaoqing] China Univ Geosci, Sch Humanities & Econ Management, Beijing 100083, Peoples R China.
+   [Chen, Zhihua; An, Haizhong; An, Feng; Guan, Qing; Hao, Xiaoqing] Minist Land & Resources, Key Lab Carrying Capac Assessment Resource & Envi, Beijing 100083, Peoples R China.
+   [Chen, Zhihua; An, Haizhong; An, Feng; Guan, Qing; Hao, Xiaoqing] Minist Land & Resources, Key Lab Strateg Studies, Beijing 100812, Peoples R China.
+RP An, HZ (reprint author), 213,4th Bldg,29 Xueyuan Rd, Beijing 100083, Peoples R China.
+EM ahz369@163.com
+OI An, Haizhong/0000-0002-6141-5619
+FU Open Project of Key Laboratory of Carrying Capacity Assessment for
+   Resource and Environment, Ministry of Land and Resources [CCA2016.01];
+   China Scholarship CouncilChina Scholarship Council [201706400054];
+   Fundamental Research Funds for the Central UniversitiesFundamental
+   Research Funds for the Central Universities [2-9-2017-453]
+FX This research is supported by grants from the Open Project of Key
+   Laboratory of Carrying Capacity Assessment for Resource and Environment,
+   Ministry of Land and Resources (Grant No. CCA2016.01), the China
+   Scholarship Council (Grant No. 201706400054) and the Fundamental
+   Research Funds for the Central Universities (Grant No. 2-9-2017-453).
+   The authors would also like to thank AJE American Journal Experts for
+   their professional suggestions regarding the language usage, spelling,
+   and grammar of this paper. Last but not least, we are very grateful to
+   the anonymous referees for their insightful comments and helpful
+   suggestions to improve this paper.
+CR ADLER J, 1991, PHYSICA A, V171, P453, DOI 10.1016/0378-4371(91)90295-N
+   ADLER J, 1989, J PHYS A-MATH GEN, V22, pL297, DOI 10.1088/0305-4470/22/7/008
+   Amini H, 2016, OPER RES, V64, P1109, DOI 10.1287/opre.2016.1540
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Ball F, 2010, MATH BIOSCI, V224, P53, DOI 10.1016/j.mbs.2009.12.003
+   Baxter GJ, 2010, PHYS REV, V82, P8
+   Bhagwat PC, 2016, UTIL POLICY, V39, P13, DOI 10.1016/j.jup.2016.01.006
+   BP, 2016, BP EN OUTL
+   Cheewatrakoolpong K, 2014, ASIAN ECON PAP, V13, P84, DOI 10.1162/ASEP_a_00253
+   Chen ZH, 2016, J NAT GAS SCI ENG, V33, P769, DOI 10.1016/j.jngse.2016.06.022
+   Destek MA, 2016, ENERGY, V114, P1007, DOI 10.1016/j.energy.2016.08.076
+   Dong XC, 2016, J NAT GAS SCI ENG, V36, P97, DOI 10.1016/j.jngse.2016.10.028
+   Egging R, 2016, ENERG POLICY, V94, P468, DOI 10.1016/j.enpol.2016.02.016
+   Fan Y, 2014, ECON MODEL, V39, P71, DOI 10.1016/j.econmod.2014.02.027
+   FREEMAN LC, 1979, SOC NETWORKS, V1, P215, DOI 10.1016/0378-8733(78)90021-7
+   Geng JB, 2017, J CLEAN PROD, V151, P452, DOI 10.1016/j.jclepro.2017.03.053
+   Geng JB, 2014, APPL ENERG, V132, P23, DOI 10.1016/j.apenergy.2014.06.064
+   Goh KI, 2003, PHYS REV E, V67, DOI 10.1103/PhysRevE.67.017101
+   Goltsev AV, 2006, PHYS REV E, V73, DOI 10.1103/PhysRevE.73.056101
+   Haidar JI, 2012, ECON MODEL, V29, P151, DOI 10.1016/j.econmod.2011.09.001
+   Hao XQ, 2016, APPL ENERG, V162, P1515, DOI 10.1016/j.apenergy.2015.04.032
+   HERBERT JH, 1995, ENERG ECON, V17, P293, DOI 10.1016/0140-9883(95)00033-Q
+   Hoffler F, 2007, ENERG POLICY, V35, P5206, DOI 10.1016/j.enpol.2007.04.039
+   Hulshof D, 2016, ENERG POLICY, V94, P480, DOI 10.1016/j.enpol.2015.12.016
+   International Energy Agency (IEA), 2017, WORLD EN OUTL 2017
+   Ji Q, 2014, ENERG CONVERS MANAGE, V85, P856, DOI 10.1016/j.enconman.2013.12.072
+   Kali R, 2010, ECON INQ, V48, P1072, DOI 10.1111/j.1465-7295.2009.00249.x
+   Kuroiwa I, 2011, CHINA WORLD ECON, V19, P1, DOI 10.1111/j.1749-124X.2011.01263.x
+   Li JP, 2014, COMPUT OPER RES, V42, P108, DOI 10.1016/j.cor.2011.10.010
+   Misund B, 2016, ENERGY, V111, P178, DOI 10.1016/j.energy.2016.05.124
+   Rudiger M, 2014, HIST SOC RES, V39, P94
+   Tlusty T, 2009, J PHYS A-MATH THEOR, V42, DOI 10.1088/1751-8113/42/20/205004
+   Turk H, 2014, HIST SOC RES, V39, P209
+   van Moerkerk M, 2016, ENERG POLICY, V88, P148, DOI 10.1016/j.enpol.2015.10.015
+   Volz E, 2008, J MATH BIOL, V56, P293, DOI 10.1007/s00285-007-0116-4
+   Wan BH, 2012, ACTA PHYS SINICA, V61, P6
+   Wood DA, 2016, J NAT GAS SCI ENG, V33, pA1, DOI 10.1016/j.jngse.2016.06.042
+   Yamamoto S, 2014, N AM J ECON FINANC, V27, P88, DOI 10.1016/j.najef.2013.12.002
+   [张锋华 Zhang Fenghua], 2013, [北京师范大学学报. 自然科学版, Journal of Beijing Normal University. Natural Science], V49, P534
+   Zhong WQ, 2017, ENERGY, V123, P260, DOI 10.1016/j.energy.2017.02.033
+   Zhong WQ, 2014, PHYSICA A, V413, P42, DOI 10.1016/j.physa.2014.06.055
+   Zhou X, 2015, INT J MOD PHYS C, V26, DOI 10.1142/S0129183115500187
+NR 42
+TC 2
+Z9 2
+U1 9
+U2 41
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 0360-5442
+EI 1873-6785
+J9 ENERGY
+JI Energy
+PD SEP 15
+PY 2018
+VL 159
+BP 457
+EP 471
+DI 10.1016/j.energy.2018.06.166
+PG 15
+WC Thermodynamics; Energy & Fuels
+SC Thermodynamics; Energy & Fuels
+GA GR8KR
+UT WOS:000442973300038
+DA 2019-12-27
+ER
+
+PT J
+AU Barroso, JBRB
+   Silva, TC
+   de Souza, SRS
+AF Ribeiro Blanco Barroso, Joao Barata
+   Silva, Thiago Christiano
+   Stancato de Souza, Sergio Rubens
+TI Identifying systemic risk drivers in financial networks
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Network topology; Capital buffer; Systemic risk; Risk driver
+ID VULNERABILITY; STABILITY
+AB In this work, we propose a methodology to decompose drivers of systemic risk that arise due to insolvency contagion in evolving financial networks. There is an ongoing discussion on how network topology and capital buffer influence systemic risk. On the one hand, the network contagion literature tends to emphasize the influence of the network topology. On the other hand, policy works tend to discuss restrictions over the capital buffers of financial institutions. Systemic risk is usually a complex function of both risk drivers and thus isolating the contributive effects of each risk driver to systemic risk is not a trivial task. Our decomposition methodology permits to identify and isolate these effects and can be used for evaluating the effectiveness of policy issues that affect either the network topology or capital buffer of banks. We apply our methodology to the global banking network and find that the network topology explains most of the systemic risk measure's volatility. Additionally, we show that the capital buffer explains the persistent reduction in systemic risk buildup with effects concentrated around the global financial crisis. Our results attest the importance played by both risk drivers in measuring systemic risk. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Ribeiro Blanco Barroso, Joao Barata; Silva, Thiago Christiano; Stancato de Souza, Sergio Rubens] Cent Bank Brazil, Res Dept, Brasilia, DF, Brazil.
+   [Silva, Thiago Christiano] Univ Sao Paulo, Fac Philosophy Sci & Literatures Ribeirao Preto, Dept Comp & Math, Ribeirao Preto, Brazil.
+RP Silva, TC (reprint author), Banco Cent Brasil, Res Dept, SBS, Quadra 3 Bloco B Ed Sede, BR-70074900 Brasilia, DF, Brazil.
+EM joao.barroso@bcb.gov.br; thiago.silva@bcb.gov.br;
+   sergio.souza@bcb.gov.br
+RI Christiano, Thiago/B-8828-2012
+OI Christiano, Thiago/0000-0003-2631-4393
+FU CNPq foundation, BrazilNational Council for Scientific and Technological
+   Development (CNPq) [302808/2015-9]
+FX Thiago C. Silva (Grant no. 302808/2015-9) gratefully acknowledges
+   financial support from the CNPq foundation, Brazil.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya V, 2010, MEASURING SYSTEMIC R
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Bardoscia M, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0130406
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Brownlees Ch., 2010, VOLATILITY CORRELATI
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Estrada E, 2008, PHYS REV E, V77, DOI 10.1103/PhysRevE.77.036111
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gropp R, 2009, INT J CENT BANK, V5, P97
+   Guerra SM, 2016, PHYSICA A, V442, P329, DOI 10.1016/j.physa.2015.09.013
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Kuzubas TU, 2014, PHYSICA A, V405, P203, DOI 10.1016/j.physa.2014.03.006
+   Liu J, 2016, PHYSICA A, V452, P209, DOI 10.1016/j.physa.2016.02.049
+   Loepfe L, 2013, PLOS ONE, V8, DOI 10.1371/journal.pone.0077526
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Silva TC, 2017, J ECON DYN CONTROL, V76, P109, DOI 10.1016/j.jedc.2017.01.001
+   Silva TC, 2017, PHYSICA A, V471, P592, DOI 10.1016/j.physa.2016.12.063
+   Silva TC, 2016, CHAOS SOLITON FRACT, V88, P218, DOI 10.1016/j.chaos.2016.01.023
+   de Souza SRS, 2016, J FINANC STABIL, V25, P179, DOI 10.1016/j.jfs.2015.10.001
+   de Souza SRS, 2016, J ECON DYN CONTROL, V66, P54, DOI 10.1016/j.jedc.2016.03.003
+   Tabak BM, 2014, PHYSICA A, V394, P211, DOI 10.1016/j.physa.2013.09.010
+NR 24
+TC 2
+Z9 2
+U1 3
+U2 10
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD AUG 1
+PY 2018
+VL 503
+BP 650
+EP 674
+DI 10.1016/j.physa.2018.02.144
+PG 25
+WC Physics, Multidisciplinary
+SC Physics
+GA HC8ZE
+UT WOS:000452093900057
+DA 2019-12-27
+ER
+
+PT J
+AU Kryshevych, O
+   Terzi, O
+   Starytska, O
+AF Kryshevych, Olha
+   Terzi, Olena
+   Starytska, Olha
+TI KEY DEVELOPMENT FACTORS FOR THE UKRAINIAN ECONOMY
+SO BALTIC JOURNAL OF ECONOMIC STUDIES
+LA English
+DT Article
+DE factors; economy; economic sector; European integration; strategy
+AB The aim of the article is to reveal the key factors of economic development of Ukraine at the present stage. In order to achieve the goal, the following tasks are addressed: the main tendencies of Ukrainian economic development are revealed; the main factors of influence are substantiated; the prospects of economic development of the state are considered. The subject of the study is the key development factors of the Ukrainian economy. Methodology. The analysis of legal regulations of Ukraine and scientific literature enabled to examine the current economic situation, the status of Ukraine and to determine strategic priorities and goals of economic development of Ukraine; in addition, dialectical method, scientific abstraction method, methods of system analysis were used. The results of the study revealed the authors' perspective on the strategy, ways, and mechanisms to overcome the systemic crisis and to guide the country to the dynamic growth. The solution of socio-economic problems is linked with the protection and strengthening of demographic potential, priorities of human development, tasks of consolidation of the Ukrainian political nation and formation of an integral socio-humanistic space of Ukraine. Practical implications. The situation and important trends of economic, social, political, legal, and humanitarian development of Ukraine under threats and risks related to crisis processes in the modern world are analysed. The macroeconomic changes, transformations of the real economy, energy, and ecology insecurities are reflected. The issues of achieving effective public administration, overcoming the political crisis, stabilizing the financial sector, developing power - business - civil society dialogue, and transforming the socio-humanistic sphere are considered. Relevance/originality. The study revealed the state of affairs in the economic system of Ukraine, as well as perspective tendencies of the Ukrainian economy were further developed.
+C1 [Kryshevych, Olha; Starytska, Olha] Natl Acad Internal Affairs, Kiev, Ukraine.
+   [Terzi, Olena] Odessa Natl Med Univ, Odessa, Ukraine.
+RP Kryshevych, O (reprint author), Natl Acad Internal Affairs, Kiev, Ukraine.
+RI Starytska, Olga Oleksiivna/S-3923-2016
+OI Starytska, Olga Oleksiivna/0000-0002-5237-5889
+CR Dzhuzha O. M., 2007, ORHANIZOVANA ZLOCHYN
+   Heits V. M., 2015, INN UKR 2020 NATS DO
+   Hula L. F., 2015, NAUKOVYI VISNYK LVIV, V1, P365
+   Lazareva A., 2016, EKONOMIKO PRAVOVA PA
+   Mazaraki A. A., 2011, VISNYK KNTEU HERALDS, V2, P5
+   Melnykova V. I., 2011, NATSIONALNA EKONOMIK
+   Pavlenko S. O., 2017, P 2 INT SCI PRACT C
+   Pavlenko S. O, 2013, BOROTBA ORHANIZOVANO, V2, P279
+   Pavlenko S, 2017, SCI EDUC-UKRAINE, P142, DOI 10.24195/2414-4665-2017-6-22
+   Pohoretskyi M. A., 2007, BOROTBA ORHANIZOVANO, V16, P99
+   Savych O. V., 2015, EFEKTYVNA EKONOMIKA
+   Sevruk V. H., 2014, P ROUND TABL US SPEC
+   Sevruk V. H., 2017, P 2 INT SCI PRACT C
+   Shkurupii O. V., 2014, PROBLEMY EKONOMIKY, V2, P89
+   Stud Yu. S., 2018, 17 VSEUKR NAUK KONF
+   Yunin O, 2018, BALT J ECON STUD, V4, P358, DOI 10.30525/2256-0742/2018-4-3-358-365
+NR 16
+TC 0
+Z9 0
+U1 0
+U2 1
+PU BALTIC JOURNAL ECONOMIC STUDIES
+PI RIGA
+PA VALDEKU IELA 62-156, RIGA, LV-1058, LATVIA
+SN 2256-0742
+EI 2256-0963
+J9 BALT J ECON STUD
+JI Balt. J. Econ. Stud.
+PY 2018
+VL 4
+IS 4
+BP 194
+EP 201
+DI 10.30525/2256-0742/2018-4-4-194-201
+PG 8
+WC Economics
+SC Business & Economics
+GA HE5SV
+UT WOS:000453449100029
+OA DOAJ Gold
+DA 2019-12-28
+ER

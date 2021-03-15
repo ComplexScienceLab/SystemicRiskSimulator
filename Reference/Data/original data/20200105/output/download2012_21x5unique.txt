@@ -1,0 +1,405 @@
+
+PT J
+AU Bazan, RC
+   Montes, MPS
+AF Cermeno Bazan, Rodolfo
+   Solis Montes, M. Pavel
+TI Impact of Macroeconomic Surprises from Mexico and the United States on
+   the Mexican Stock Market
+SO ECONOMIA MEXICANA-NUEVA EPOCA
+LA Spanish
+DT Article
+DE GARCH models; systemic risk; information; macroeconomic surprises;
+   Mexican stock market
+ID CONDITIONAL HETEROSKEDASTICITY; FINANCIAL-MARKETS; VOLATILITY; NEWS;
+   EXCHANGE; RETURNS
+AB This paper studies the relationship between the arrival of news on macroeconomic performance and the Mexican stock market. We examine the reaction of daily excess returns of the stock price index, "Indice de precios y cotizaciones" (IPC), as well as of seven portfolios from the Mexican stock market, "Bolsa Mexicana de Valores" (BMV), to announcements on macroeconomic variables of Mexico and the US. We use GARCH models and focus on the unexpected or surprising component of the news about macroeconomic performance. The study covers the period 2003-2008. We find that the dynamics of daily returns in the Mexican stock market is linked to the arrival of new information (surprises) on macroeconomic fundamentals of both Mexico and the United States.
+C1 [Solis Montes, M. Pavel] Banco Mexico, Direcc Estabilidad Financiera, Mexico City, DF, Mexico.
+EM rodolfo.cermeno@cide.edu; msolis@banxico.org.mx
+CR Acosta J.A, 2003, THESIS CTR INVESTIGA
+   Albuquerque Rui, 2007, EC NEWS INT STOCK MA
+   Anderson R, 2005, STOCK RETURN AUTOCOR
+   Aslam M, 2005, THESIS B ZAKARIYA U
+   Avery C, 1998, AM ECON REV, V88, P724
+   Bailey W, 1995, J FINANC QUANT ANAL, V30, P541, DOI 10.2307/2331276
+   Balduzzi P, 2001, J FINANC QUANT ANAL, V36, P523, DOI 10.2307/2676223
+   Bekaert G, 1997, J FINANC ECON, V43, P29, DOI 10.1016/S0304-405X(96)00889-6
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Brenner M, 2006, FINANCIAL MARK UNPUB
+   Brenner M, 2009, J FINANC QUANT ANAL, V44, P1265, DOI 10.1017/S002210900999038X
+   CHEN NF, 1986, J BUS, V59, P383, DOI 10.1086/296344
+   De la Calle L. F, 1991, WORLD BANK ECON REV, V5, P405
+   Diebold F.X., 2008, 14269 NBER
+   Dopke J, 2008, FORECASTING STOCK MA
+   Doshi K., 2001, MARKET REVOLUTION LA
+   Engle R.F., 2008, EC SOURCES STO UNPUB
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   FAMA EF, 1970, J FINANC, V25, P383, DOI 10.2307/2325486
+   Feliz R. A, 1990, COLEGIO MEXICO, V5, P335
+   Fisher S, 1984, 1291 NBER
+   Hernandez N, 2003, RELATIONSHIPS UNPUB
+   Jones CM, 1998, J FINANC ECON, V47, P315, DOI 10.1016/S0304-405X(97)00047-0
+   Kariv S., 2003, DISTINGUISHING INFOR
+   Lopez Herrera F, 2002, REV LATINOAMERICANA, V29, P5
+   Lopez Herrera F, 2009, ANALISIS EC, V24, P129
+   Lopez Herrera F, 2006, CONTADURIA ADM, V219, P85
+   MERTON RC, 1973, ECONOMETRICA, V41, P867, DOI 10.2307/1913811
+   Nava Peralta N, 1996, THESIS ITESM CAMPUS
+   Navarro C, 2001, TEST APT MEXICAN STO
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   OFFICER RR, 1973, J BUS, V46, P434, DOI 10.1086/295551
+   Romer D, 1992, 4121 NBER
+   ROSS SA, 1976, J ECON THEORY, V13, P341, DOI 10.1016/0022-0531(76)90046-6
+   Rudebusch G.D., 2003, MACROFINANCE MODEL T
+   SCHWERT GW, 1989, J FINANC, V44, P1115, DOI 10.2307/2328636
+   Taboada E, 2003, ANALISIS EC UAM AZCA, V18, P141
+   Tsay RS, 2005, ANAL FINANCIAL TIME
+   WELCH I, 1992, J FINANC, V47, P695, DOI 10.2307/2329120
+NR 40
+TC 0
+Z9 0
+U1 0
+U2 0
+PU CENTRO DE INVESTIGACION Y DOCENCIA ECONOMICAS
+PI LOMAS DE SANTA FE
+PA CARRETERA MEXICO-TOLUCA 3655, LOMAS DE SANTA FE 01210 D F, MEXICO
+SN 1665-2045
+J9 ECON MEX
+JI Econ. Mex.-Nueva Epoca
+PY 2012
+VL 21
+IS 1
+BP 35
+EP 67
+PG 33
+WC Economics
+SC Business & Economics
+GA 862FJ
+UT WOS:000298074900002
+DA 2019-12-28
+ER
+
+PT J
+AU Arinaminpathy, N
+   Kapadia, S
+   May, RM
+AF Arinaminpathy, Nimalan
+   Kapadia, Sujit
+   May, Robert M.
+TI Size and complexity in model financial systems
+SO PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF
+   AMERICA
+LA English
+DT Article
+ID RISK; LIQUIDITY; TOPOLOGY
+AB The global financial crisis has precipitated an increasing appreciation of the need for a systemic perspective toward financial stability. For example: What role do large banks play in systemic risk? How should capital adequacy standards recognize this role? How is stability shaped by concentration and diversification in the financial system? We explore these questions using a deliberately simplified, dynamic model of a banking system that combines three different channels for direct transmission of contagion from one bank to another: liquidity hoarding, asset price contagion, and the propagation of defaults via counterparty credit risk. Importantly, we also introduce a mechanism for capturing how swings in "confidence" in the system may contribute to instability. Our results highlight that the importance of relatively large, well-connected banks in system stability scales more than proportionately with their size: the impact of their collapse arises not only from their connectivity, but also from their effect on confidence in the system. Imposing tougher capital requirements on larger banks than smaller ones can thus enhance the resilience of the system. Moreover, these effects are more pronounced in more concentrated systems, and continue to apply, even when allowing for potential diversification benefits that may be realized by larger banks. We discuss some tentative implications for policy, as well as conceptual analogies in ecosystem stability and in the control of infectious diseases.
+C1 [Arinaminpathy, Nimalan] Princeton Univ, Dept Ecol & Evolutionary Biol, Princeton, NJ 08540 USA.
+   [Kapadia, Sujit] Bank England, Macroprudential Strategy Div, London EC2R 8AH, England.
+   [May, Robert M.] Univ Oxford, Dept Zool, Oxford OX1 3PS, England.
+RP Arinaminpathy, N (reprint author), Princeton Univ, Dept Ecol & Evolutionary Biol, Princeton, NJ 08540 USA.
+EM nimpathy@princeton.edu; robert.may@zoo.ox.ac.uk
+OI Arinaminpathy, Nimalan/0000-0001-9502-6876
+FU National Institutes of HealthUnited States Department of Health & Human
+   ServicesNational Institutes of Health (NIH) - USA [R01 GM083983-01];
+   Bill and Melinda Gates FoundationGates Foundation
+FX We thank David Barr, Andy Haldane, Simon Hall, three reviewers, and
+   seminar participants at the Bank of England, Princeton University, and
+   the Geneva Finance Research Institute Conference on "Financial Networks"
+   (Geneva, June 10, 2011) for helpful comments. N.A. was supported by
+   National Institutes of Health Grant R01 GM083983-01 and by the Bill and
+   Melinda Gates Foundation. This article represents the views of the
+   authors and should not be thought to represent those of the Bank of
+   England or Financial Policy Committee members.
+CR Acharya VV, 2011, J MONETARY ECON, V58, P436, DOI 10.1016/j.jmoneco.2011.05.006
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F., 2009, NETWORK CHALLENGE ST
+   Anderson R. M., 1991, INFECT DIS HUMANS DY
+   Bank for International Settlements, 2011, GLOB SYST IMP BANKS
+   Bank of England, 2009, ROL MACR POL DISC PA
+   Bank of England, 2011, INSTR MACR POL DISC
+   Battiston S., 2009, NBER WORKING PAPER S, V15611
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Caballero RJ, 2008, J FINANC, V63, P2195, DOI 10.1111/j.1540-6261.2008.01394.x
+   Caccioli F, 2009, EUR PHYS J B, V71, P467, DOI 10.1140/epjb/e2009-00316-y
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   Drehmann Mathias, 2011, BIS Q REV, P25
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Haldane A. G., 2011, FINANCIAL TIMES
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Independent Commission on Banking, 2011, FIN REP
+   Ivashina V, 2010, J FINANC ECON, V97, P319, DOI 10.1016/j.jfineco.2009.12.001
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   Kapadia S., 2012, 456 BANK ENGL
+   KAREIVA P, 2003, IMPORTANCE SPECIES P
+   Kim HG, 2012, FED RES C MARCH 23 2
+   Kirman A, 2010, G SCHUMP LECT ROUTL
+   Lloyd-Smith JO, 2005, NATURE, V438, P355, DOI 10.1038/nature04153
+   Marsili M, 2010, EPIDEMICS RULES INFO
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   PAINE RT, 1966, AM NAT, V100, P65, DOI 10.1086/282400
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Strogatz SH, 2001, NATURE, V410, P268, DOI 10.1038/35065725
+   Switzerland State Secretariat for International Financial Matters, 2010, FIN REP COMM EXP LIM
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wagner W, 2011, J FINANC, V66, P1141, DOI 10.1111/j.1540-6261.2011.01666.x
+NR 38
+TC 55
+Z9 60
+U1 0
+U2 66
+PU NATL ACAD SCIENCES
+PI WASHINGTON
+PA 2101 CONSTITUTION AVE NW, WASHINGTON, DC 20418 USA
+SN 0027-8424
+J9 P NATL ACAD SCI USA
+JI Proc. Natl. Acad. Sci. U. S. A.
+PD NOV 6
+PY 2012
+VL 109
+IS 45
+BP 18338
+EP 18343
+DI 10.1073/pnas.1213767109
+PG 6
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA 038DZ
+UT WOS:000311156700032
+PM 23091020
+OA Green Published, Bronze
+DA 2019-12-27
+ER
+
+PT J
+AU Bayazitova, D
+   Shivdasani, A
+AF Bayazitova, Dinara
+   Shivdasani, Anil
+TI Assessing TARP
+SO REVIEW OF FINANCIAL STUDIES
+LA English
+DT Article
+ID ISSUANCES; VOLUNTARY; TESTS
+AB We study the government equity infusions into banks under the Capital Purchase Program (CPP) of the Troubled Asset Relief Program (TARP). Strong banks opted out of CPP, and equity infusions were provided to banks that posed systemic risk and faced high financial distress costs but had strong asset quality. Concerns over executive compensation led banks to reject CPP infusions and exit the program. CPP infusions did not have meaningful certification effects, but the subsequent stress tests conducted for the major banks had significant certification effects. CPP equity infusions increased investor expectations regarding future regulatory interventions in the banking sector. (JEL G18, G21, G28)
+C1 [Bayazitova, Dinara; Shivdasani, Anil] Univ N Carolina, Kenan Flagler Business Sch, Chapel Hill, NC 27599 USA.
+RP Shivdasani, A (reprint author), Univ N Carolina, Kenan Flagler Business Sch, Chapel Hill, NC 27599 USA.
+EM anil.shivdasani@unc.edu
+RI van Lent, Laurence/G-5298-2010
+OI van Lent, Laurence/0000-0002-9354-0932
+CR ACHARYA S, 1988, J FINANC, V43, P413, DOI 10.2307/2328468
+   CORNETT MM, 1994, J FINANC ECON, V35, P99, DOI 10.1016/0304-405X(94)90019-1
+   Cornett MM, 1998, J FINANC, V53, P2139, DOI 10.1111/0022-1082.00085
+   Diamond D. W, 2009, CREDIT CRISIS CONJEC
+   Diamond D. W, 2010, FEAR FIRE SALES CRED
+   Duchin R., 2010, TARP INVESTMENTS FIN
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Hoshi T, 2010, J FINANC ECON, V97, P398, DOI 10.1016/j.jfineco.2010.02.005
+   Ivashina V, 2010, J FINANC ECON, V97, P319, DOI 10.1016/j.jfineco.2009.12.001
+   John K, 2010, J CORP FINANC, V16, P383, DOI 10.1016/j.jcorpfin.2010.01.001
+   Krishnan CNV, 2010, J FINANC INTERMED, V19, P207, DOI 10.1016/j.jfi.2009.02.002
+   Lyon JD, 1999, J FINANC, V54, P165, DOI 10.1111/0022-1082.00101
+   Mehran H, REV FINANCIAL STUDIE
+   Veronesi P, 2010, J FINANC ECON, V97, P339, DOI 10.1016/j.jfineco.2010.03.011
+NR 14
+TC 104
+Z9 104
+U1 0
+U2 38
+PU OXFORD UNIV PRESS INC
+PI CARY
+PA JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
+SN 0893-9454
+EI 1465-7368
+J9 REV FINANC STUD
+JI Rev. Financ. Stud.
+PD FEB
+PY 2012
+VL 25
+IS 2
+BP 377
+EP 407
+DI 10.1093/rfs/hhr121
+PG 31
+WC Business, Finance; Economics
+SC Business & Economics
+GA 876GZ
+UT WOS:000299097000003
+DA 2019-12-28
+ER
+
+PT J
+AU Chatelain, JB
+   Ralf, K
+AF Chatelain, Jean-Bernard
+   Ralf, Kirsten
+TI THE FAILURE OF FINANCIAL MACROECONOMICS AND WHAT TO DO ABOUT IT
+SO MANCHESTER SCHOOL
+LA English
+DT Article
+ID MONETARY-POLICY
+AB The bargaining power of international banks is currently still very high as compared with what it was at the time of the Bretton Woods conference. As a consequence, systemic financial crises are likely to remain recurrent phenomena with large effects on macroeconomic aggregates. Mainstream macroeconomic models dealing with financial frictions failed to explain at least eight stylized facts of the ongoing crisis. We therefore suggest two complementary assumptions: (i) a systemic bankruptcy risk stable equilibrium may be feasible, and (ii) inefficient financial markets rarely ensure that the price of an asset is equal to its fundamental long-term value.
+C1 [Chatelain, Jean-Bernard] Univ Paris 01, CES, Paris Sch Econ, F-75231 Paris 05, France.
+RP Chatelain, JB (reprint author), Univ Paris 01, CES, Paris Sch Econ, F-75231 Paris 05, France.
+RI Chatelain, Jean-Bernard/B-8632-2012
+OI Chatelain, Jean-Bernard/0000-0001-7768-9369
+CR Allingham M.G., 1972, J PUBLIC ECON, V1, P323, DOI DOI 10.1016/0047-2727(72)90010-2
+   Amable B, 2002, J BANK FINANC, V26, P491, DOI 10.1016/S0378-4266(01)00231-X
+   Amable B, 2010, J ECON DYN CONTROL, V34, P1092, DOI 10.1016/j.jedc.2010.03.004
+   Azizi K., 2012, EUROPEAN J IN PRESS
+   BARRO RJ, 1974, J POLIT ECON, V82, P1095, DOI 10.1086/260266
+   Bernanke B. S, 2000, 7559 NBER
+   Bernanke BS, 1999, HBK ECON, V15, P1341
+   Bernanke BS, 2001, AM ECON REV, V91, P253, DOI 10.1257/aer.91.2.253
+   Bianchi Javier, 2010, 16091 NBER
+   Blanchard O. J., 1992, ADV MACROECONOMICS
+   Borio C. E. V., 2002, 114 BIS
+   BOX GEP, 1976, J AM STAT ASSOC, V71, P791, DOI 10.2307/2286841
+   BRYANT J, 1981, J MONEY CREDIT BANK, V13, P454, DOI 10.2307/1991935
+   BRYANT J, 1983, Q J ECON, V98, P525, DOI 10.2307/1886025
+   BURMEISTER E, 1973, ECONOMETRICA, V41, P79, DOI 10.2307/1913885
+   Caballero R., 2006, 12129 NBER
+   Caroll C. D., 1997, 6298 NBER
+   Carre E., 2011, LIMITS STANDAR UNPUB, P13
+   Cordoba JC, 2004, INT ECON REV, V45, P1011, DOI 10.1111/j.0020-6598.2004.00296.x
+   De Grauwe P, 2010, PUBLIC CHOICE, V144, P413, DOI 10.1007/s11127-010-9674-x
+   Del Negro M., 2011, FEDERAL RESERVE BANK, V520
+   Descartes R., 1644, PRINCIPIA PHILOS
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Driskill R., 2005, EUROPEAN EC REV, V50, P171
+   Duhem P., 1908, SAUVER APPARENCES SO
+   Fisher I, 1933, ECONOMETRICA, V1, P337, DOI 10.2307/1907327
+   Friedman M., 1953, ESSAYS POSITIVE EC
+   Gertler M, 2010, HDB MONETARY EC
+   Gilchrist S, 2002, J MONETARY ECON, V49, P75, DOI 10.1016/S0304-3932(01)00093-9
+   Gollier C., 2001, EC RISK TIME
+   HABERLER G, 1937, PROSPERITY DEPRESSIO
+   Hald A., 2003, WILEY SERIES PROBABI
+   HALKIN H, 1974, ECONOMETRICA, V42, P267, DOI 10.2307/1911976
+   HANSON NR, 1960, ISIS, V51, P150, DOI 10.1086/348869
+   Iacoviello M, 2005, AM ECON REV, V95, P739, DOI 10.1257/0002828054201477
+   Kamihigashi T, 2005, J ECON DYN CONTROL, V29, P1313, DOI 10.1016/j.jedc.2004.07.007
+   Kepler J, 1609, ASTRONOMIA NOVA
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Klein N, 2007, SHOCK DOCTRINE RISE
+   Koyre A., 1955, REV HIST SCI, V8, P19
+   Krugman P., 2002, EC POLICY INT EC ESS, P15
+   Kuhn T.S, 1962, STRUCTURE SCI REVOLU
+   Lucas R. E., 1976, STABILIZATION DOMEST, V1, P7
+   Lucas R.E., 1987, MODELS BUSINESS CYCL
+   Malkiel BG, 2003, J ECON PERSPECT, V17, P59, DOI 10.1257/089533003321164958
+   Matsuyama K, 2007, AM ECON REV, V97, P503, DOI 10.1257/aer.97.1.503
+   Miller M, 2010, ECON J, V120, P500, DOI 10.1111/j.1468-0297.2010.02357.x
+   Minsky H, 1982, CAN IT HAPPEN AGAIN
+   Newton Isaac, 1713, PHILOS NATURALIS PRI
+   Rajan RG, 2003, J FINANC ECON, V69, P5, DOI 10.1016/S0304-405X(03)00125-9
+   RALF K, 2012, SPURIOUS REGRE UNPUB
+   Ralf K., 2000, BUSINESS CYCLES
+   Ramsey FP, 1928, ECON J, V38, P543, DOI 10.2307/2224098
+   Ramus Petrus, 1569, SCHOLARUM MATH
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Scheinkman JA, 2003, J POLIT ECON, V111, P1183, DOI 10.1086/378531
+   Shiller RJ, 2003, J ECON PERSPECT, V17, P83, DOI 10.1257/089533003321164967
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   Shmueli G, 2010, STAT SCI, V25, P289, DOI 10.1214/10-STS330
+   Smets F, 2003, J EUR ECON ASSOC, V1, P1123, DOI 10.1162/154247603770383415
+   Spanos A, 2007, PHILOS SCI, V74, P1046, DOI 10.1086/525643
+   STADLER GW, 1994, J ECON LIT, V32, P1750
+   Thom R., 1993, PREDIRE NEST EXPLIQU
+   Vercelli A, 1991, METHODOLOGICAL FDN M
+NR 64
+TC 5
+Z9 5
+U1 0
+U2 14
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1463-6786
+EI 1467-9957
+J9 MANCH SCH
+JI Manch. Sch.
+PD SEP
+PY 2012
+VL 80
+SU 1
+SI SI
+BP 21
+EP 53
+DI 10.1111/j.1467-9957.2012.02327.x
+PG 33
+WC Economics
+SC Business & Economics
+GA 996PS
+UT WOS:000308104900002
+DA 2019-12-28
+ER
+
+PT J
+AU Mastromatteo, I
+   Zarinelli, E
+   Marsili, M
+AF Mastromatteo, Iacopo
+   Zarinelli, Elia
+   Marsili, Matteo
+TI Reconstruction of financial networks for robust estimation of systemic
+   risk
+SO JOURNAL OF STATISTICAL MECHANICS-THEORY AND EXPERIMENT
+LA English
+DT Article
+DE message-passing algorithms; financial instruments and regulation; risk
+   measure and management; network reconstruction
+AB In this paper we estimate the propagation of liquidity shocks through interbank markets when the information about the underlying credit network is incomplete. We show that techniques such as maximum entropy currently used to reconstruct credit networks severely underestimate the risk of contagion by assuming a trivial (fully connected) topology, a type of network structure which can be very different from the one empirically observed. We propose an efficient message-passing algorithm to explore the space of possible network structures and show that a correct estimation of the network degree of connectedness leads to more reliable estimations for systemic risk. Such an algorithm is also able to produce maximally fragile structures, providing a practical upper bound for the risk of contagion when the actual network structure is unknown. We test our algorithm on ensembles of synthetic data encoding some features of real financial networks (sparsity and heterogeneity), finding that more accurate estimations of risk can be achieved. Finally we find that this algorithm can be used to control the amount of information that regulators need to require from banks in order to sufficiently constrain the reconstruction of financial networks.
+C1 [Mastromatteo, Iacopo] Scuola Int Super Studi Avanzati, I-34014 Trieste, Italy.
+   [Zarinelli, Elia] CNRS, LPTMS, F-91405 Orsay, France.
+   [Zarinelli, Elia] Univ Paris 11, UMR8626, F-91405 Orsay, France.
+   [Marsili, Matteo] Abdus Salam Int Ctr Theoret Phys, I-34014 Trieste, Italy.
+RP Mastromatteo, I (reprint author), Scuola Int Super Studi Avanzati, Via Beirut 2-4, I-34014 Trieste, Italy.
+EM mastroma@sissa.it; elia.zarinelli@lptms.u-psud.fr;
+   marsili@ictp.trieste.it
+OI Marsili, Matteo/0000-0001-9437-6989
+FU GDRE 224 GREFI-MEFI CNRS-INdAM
+FX The authors wish to thank F Caccioli, F Krzakala, Y Sun and L Zdeborova
+   for very useful discussions. IM acknowledges support from GDRE 224
+   GREFI-MEFI CNRS-INdAM.
+CR Blavarg Martin, 2002, SVERIGES RIKSBANK EC, V2, P19
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Mezard M, 2009, INFORM PHYS COMPUTAT
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Pretti M, 2006, EUROPHYS LETT, V75, P8, DOI 10.1209/epl/i2006-10070-4
+   Schwarcz S. L., 2008, 163 DUK LAW SCH LEG
+   Squartini T, 2011, NEW J PHYS, V13, DOI 10.1088/1367-2630/13/8/083001
+   Upper C., 2007, BIS WORKING PAPERS, V234
+   van Lelyveld IPP, 2006, INT J CENT BANK, V2, P99
+   Wells S., 2004, 230 BANK ENGL
+   Zdeborova L, 2008, J STAT MECH-THEORY E, DOI 10.1088/1742-5468/2008/12/P12004
+NR 13
+TC 36
+Z9 37
+U1 1
+U2 26
+PU IOP PUBLISHING LTD
+PI BRISTOL
+PA TEMPLE CIRCUS, TEMPLE WAY, BRISTOL BS1 6BE, ENGLAND
+SN 1742-5468
+J9 J STAT MECH-THEORY E
+JI J. Stat. Mech.-Theory Exp.
+PD MAR
+PY 2012
+AR P03011
+DI 10.1088/1742-5468/2012/03/P03011
+PG 15
+WC Mechanics; Physics, Mathematical
+SC Mechanics; Physics
+GA 918JT
+UT WOS:000302246400014
+DA 2019-12-27
+ER

@@ -1,0 +1,387 @@
+
+PT J
+AU Bertin, S
+   Ohana, S
+   Strauss-Kahn, V
+AF Bertin, Sara
+   Ohana, Steve
+   Strauss-Kahn, Vanessa
+TI Revisiting the Link Between Political and Financial Crises in Africa
+SO JOURNAL OF AFRICAN ECONOMIES
+LA English
+DT Article
+DE political crises; financial crises; predictive power; Africa; F3; G01
+ID COUNTRY RISK; EMERGING MARKETS; SOVEREIGN DEBT; CAPITAL FLIGHT;
+   CIVIL-WAR; INSTABILITY; CONFLICT; DEFAULT; MODEL; PROBABILITY
+AB There is an important information deficit on political and financial risks in Africa. This article fills this gap by compiling a unique database of financial (sovereign, banking, currency and expropriation) and political crises (regime changes, ethnic and revolutionary wars, genocides and armed conflicts) covering fifty-three African countries between 1965 and 2008. We employ a new methodological framework to disentangle cross-crisis from temporal contagion effects. This allows us to extend to Africa a number of insights from the literature on financial crises (e.g., the mutual contagion effects between banking and currency meltdowns). Surprisingly, and critically for a study devoted to Africa, political upheavals are of modest relevance to predict financial crises. This last result may be reconciled with previous literature given our original focus on Africa and our event-based approach of financial and political risks.
+C1 [Bertin, Sara] AXA, Paris, France.
+   [Ohana, Steve] ESCP Europe, Finance, Paris, France.
+   [Strauss-Kahn, Vanessa] ESCP Europe, Econ, Paris, France.
+RP Strauss-Kahn, V (reprint author), ESCP Europe, Econ, Paris, France.
+EM vstrauss-kahn@escpeurope.eu
+CR Acemoglu D, 2001, AM ECON REV, V91, P1369, DOI 10.1257/aer.91.5.1369
+   Acemoglu D, 2003, J MONETARY ECON, V50, P49, DOI 10.1016/S0304-3932(02)00208-8
+   Asiedu E, 2006, WORLD ECON, V29, P63, DOI 10.1111/j.1467-9701.2006.00758.x
+   BALKAN EM, 1992, APPL ECON, V24, P999, DOI 10.1080/00036849200000077
+   Bates R.H., 2003, POLITICAL INSTABILIT
+   BERNANKE BS, 1995, J ECON PERSPECT, V9, P27, DOI 10.1257/jep.9.4.27
+   Blattman C, 2010, J ECON LIT, V48, P3, DOI 10.1257/jel.48.1.3
+   BREWER TL, 1990, J MONEY CREDIT BANK, V22, P357, DOI 10.2307/1992565
+   BULOW J, 1989, AM ECON REV, V79, P43
+   Caprio Gerard, 2005, SYSTEMIC FINANCIAL C
+   CHANG R, 1999, 7272 NBER
+   CITRON JT, 1987, J DEV ECON, V25, P385, DOI 10.1016/0304-3878(87)90092-7
+   Collier P, 2005, J CONFLICT RESOLUT, V49, P625, DOI 10.1177/0022002705277551
+   Collier P, 2004, OXFORD ECON PAP, V56, P563, DOI 10.1093/oep/gpf064
+   Cuadra G, 2008, J INT ECON, V76, P78, DOI 10.1016/j.jinteco.2008.05.001
+   DeHaan J, 1997, APPL ECON LETT, V4, P703, DOI 10.1080/758530653
+   Demirguc-Kunt A., 1999, P 1998 ANN WORLD BAN, P1
+   EATON J, 1981, REV ECON STUD, V48, P289, DOI 10.2307/2296886
+   EATON J, 1995, HDB INT EC, V3, P2032
+   Eichengreen B., 1995, ECON POLICY, V10, P249, DOI DOI 10.2307/1344591
+   Frankel JA, 1996, J INT ECON, V41, P351, DOI 10.1016/S0022-1996(96)01441-9
+   Gerard Caprio, 2003, EPISODES SYSTEMIC BO
+   Gleditsch NP, 2002, J PEACE RES, V39, P615, DOI 10.1177/0022343302039005007
+   Goldstone JA, 2010, AM J POLIT SCI, V54, P190, DOI 10.1111/j.1540-5907.2009.00426.x
+   GRANGER CWJ, 1995, J ECONOMETRICS, V67, P173, DOI 10.1016/0304-4076(94)01632-A
+   Guidolin M, 2007, AM ECON REV, V97, P1978, DOI 10.1257/aer.97.5.1978
+   Guidolin M, 2010, J PEACE RES, V47, P671, DOI 10.1177/0022343310381853
+   Gylfason Thorvaldur, 2011, 3353 CESIFO
+   Honohan P, 2005, SYSTEMIC FINANCIAL D
+   Huntington SP, 1968, POLITICAL ORDER CHAN
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   KOBRIN SJ, 1984, INT STUD QUART, V28, P329, DOI 10.2307/2600634
+   KOBRIN SJ, 1980, INT ORGAN, V34, P65, DOI 10.1017/S0020818300003970
+   Laeven L., 2012, 12163 IMF
+   Le QV, 2006, J INT MONEY FINANC, V25, P308, DOI 10.1016/j.jimonfin.2005.11.001
+   Lensink R, 2000, J INT MONEY FINANC, V19, P73, DOI 10.1016/S0261-5606(99)00034-0
+   Manasse P, 2009, J INT ECON, V78, P192, DOI 10.1016/j.jinteco.2008.12.002
+   Marshall M., 2009, PITF STATE FAILURE P
+   Minor M., 1994, J INT BUS STUD, V25, P273
+   Moore Barrington, 1966, SOCIAL ORIGINS DICTA
+   ODEDOKUN MO, 1995, SCOT J POLIT ECON, V42, P82, DOI 10.1111/j.1467-9485.1995.tb01147.x
+   Reinhart C., 2008, 14587 NBER
+   Reinhart C. M, 2008, 13882 NBER, V13882
+   Reinhart CM, 2011, AM ECON REV, V101, P1676, DOI 10.1257/aer.101.5.1676
+   Reinhart CM, 2002, WORLD BANK ECON REV, V16, P151, DOI 10.1093/wber/16.2.151
+   Rodrik D, 1999, J ECON GROWTH, V4, P385, DOI 10.1023/A:1009863208706
+   Rose Andrew K., 1999, INT FINANCE FINANCIA
+   Rotberg I., 2003, WHEN STATES FAIL
+   Roubini N., 2001, DEBT SUSTAINAB UNPUB
+   SLOVIC P, 1987, SCIENCE, V236, P280, DOI 10.1126/science.3563507
+   Swensson J., 1998, EUROPEAN EC REV, V42, P1317
+   Tomz M., 2010, NATURAL RESOURCES TR
+   VELASCO A, 1987, J DEV ECON, V27, P263, DOI 10.1016/0304-3878(87)90018-6
+   Warnholz J., 2008, CSAE WORKING PAPER S, V2008
+NR 54
+TC 0
+Z9 0
+U1 1
+U2 4
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 0963-8024
+EI 1464-3723
+J9 J AFR ECON
+JI J. Afr. Econ.
+PD JUN
+PY 2016
+VL 25
+IS 3
+BP 323
+EP 366
+DI 10.1093/jae/ejv025
+PG 44
+WC Economics
+SC Business & Economics
+GA DW2XQ
+UT WOS:000383506000001
+DA 2019-12-27
+ER
+
+PT J
+AU Chlibi, S
+   Jawadi, F
+   Sellami, M
+AF Chlibi, Souhir
+   Jawadi, Fredj
+   Sellami, Mohamed
+TI Analyzing Heterogeneous Stock Price Comovements Through Hybrid
+   Approaches
+SO OPEN ECONOMIES REVIEW
+LA English
+DT Article
+DE Stock price comovements; Diversification; BEKK-GARCH; Vector time series
+   and panel cointegration
+ID GLOBAL FINANCIAL CRISIS; MARKET INTEGRATION; MENA COUNTRIES; CONTAGION;
+   COINTEGRATION; GROWTH
+AB This paper studies the hypothesis of stock price comovements between the US market and four different regions (the G6, the BRICS, the MENA (Middle East North Africa) during calm and crisis periods. Using different econometric approaches (BEKK-GARCH model, cointegration tests, and panel cointegration tests), we checked the interdependence of these markets in the short and the long term. Our findings point to the importance of heterogeneity linked to the stock price adjustment process, inviting individual analysis to be carried out according to market specificities in the aim of identifying countries that are sources of investment opportunities. We also highlighted the presence of time-varying stock price comovements that significantly increased after the subprime crisis. This enabled us to specify periods and regions that can still provide promising diversification benefits. Investigation of this issue is of interest for investors and bankers in order to improve their portfolio choices, diversification strategies as well as risk management.
+C1 [Chlibi, Souhir] Univ Tunis El Manar, Tunis, Tunisia.
+   [Chlibi, Souhir; Jawadi, Fredj] Univ Evry, 2 Rue Facteur Cheval, F-91000 Evry, France.
+   [Sellami, Mohamed] EDC Paris Business Sch, Paris, France.
+RP Jawadi, F (reprint author), Univ Evry, 2 Rue Facteur Cheval, F-91000 Evry, France.
+EM fredj.jawadi@univ-evry.fr
+CR Alkulaib YA, 2009, J MULTINATL FINANC M, V19, P43, DOI 10.1016/j.mulfin.2008.03.002
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Arouri M. H., 2007, BRUSSELS EC REV, V50, P315
+   Arouri MEH, 2011, ECON BULL, V31, P960
+   Balli F, 2013, APPL ECON, V45, P3370, DOI 10.1080/00036846.2012.687099
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bekaert G., 2002, EMERG MARK REV, V3, P429, DOI DOI 10.1016/S1566-0141(02)00045-6
+   Chittedi K.R., 2010, INT REV APPL FINANC, P18
+   Dania A, 2011, INT J ACAD BUS WORLD, V5, P51
+   Dasgupta R, 2014, ASIAN EC FIN REV, V4, P715
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   ENGLE RF, 1987, ECONOMETRICA, V64, P813
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Forbes KJ, 2012, J INT ECON, V88, P235, DOI 10.1016/j.jinteco.2012.03.006
+   Girardin E, 2007, CHINA ECON REV, V18, P354, DOI 10.1016/j.chieco.2007.02.009
+   Graham M, 2013, J ECON BUS, V65, P86, DOI 10.1016/j.jeconbus.2012.09.005
+   Hurlin C., 2007, SYNTHESE TESTS COINT
+   Im KS, 2003, J ECONOMETRICS, V115, P53, DOI 10.1016/S0304-4076(03)00092-7
+   IMF, 2012, REG EC OUTL
+   Jawadi F., 2009, EC B, V29, P162
+   Jawadi F, 2010, INT J BUS, V15, P307
+   Jawadi F, 2010, APPL ECON LETT, V17, P1503, DOI 10.1080/13504850903035899
+   Jochem A, 2014, WHAT IMPACT DO GLOBA
+   JOHANSEN S, 1988, J ECON DYN CONTROL, V12, P231, DOI 10.1016/0165-1889(88)90041-3
+   Johnson R., 2003, EUROPEAN MANAGEMENT, V21, P364, DOI DOI 10.1016/S0263-2373(03)00050-1
+   JOHNSON R, 2003, J MULTINATL FINANC M, V13, P85, DOI DOI 10.1016/S1042-444X(02)00035-X
+   Kar M, 2011, ECON MODEL, V28, P685, DOI 10.1016/j.econmod.2010.05.015
+   Lagoarde-Segot T, 2007, J MULTINATL FINANC M, V17, P401, DOI 10.1016/j.mulfin.2007.01.001
+   Lence S, 2005, J INT MONEY FINANC, V24, P873, DOI 10.1016/j.jimonfin.2005.05.002
+   Malik A, 2013, WORLD DEV, V45, P296, DOI 10.1016/j.worlddev.2012.12.015
+   Mansourfar G, 2010, Q REV ECON FINANC, V50, P415, DOI 10.1016/j.qref.2010.06.007
+   MASIH AMM, 1997, APPL FINANCIAL EC, V7, P59, DOI DOI 10.1080/096031097333853
+   Morelli D, 2009, APPL FINANC EC, V19, P1043
+   Nashier T., 2015, INT J BUS MANAG INVE, V4, P65
+   OBSTFELD M, 1994, AM ECON REV, V84, P1310
+   Olusi O., 2008, APPL FINANCIAL EC, V18, P1451
+   Pedroni P, 1995, 2 IND U
+   Pedroni P, 1997, OXF B EC STAT, V61, P653
+   Phylaktis K., 2005, J INT FINANC MARK I, V15, P91, DOI DOI 10.1016/J.INTFIN.2004.03.001
+   TAYLOR MP, 1989, REV ECON STAT, V71, P332, DOI 10.2307/1926980
+   Turner P., 2014, 441 BIS
+NR 42
+TC 3
+Z9 3
+U1 0
+U2 9
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0923-7992
+EI 1573-708X
+J9 OPEN ECON REV
+JI Open Econ. Rev.
+PD JUL
+PY 2016
+VL 27
+IS 3
+BP 541
+EP 559
+DI 10.1007/s11079-015-9381-9
+PG 19
+WC Economics
+SC Business & Economics
+GA DO2EY
+UT WOS:000377593900006
+DA 2019-12-27
+ER
+
+PT J
+AU Kim, J
+   Park, YJ
+   Ryu, D
+AF Kim, Jungmu
+   Park, Yuen Jung
+   Ryu, Doojin
+TI Hawkes-diffusion process and the conditional probability of defaults in
+   the Eurozone
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Contagion effect; Hawkes-diffusion process; Credit default swap;
+   Top-down approach; Sovereign CDS
+ID POINT-PROCESSES; CREDIT RISK; SOVEREIGN; CONTAGION; DEBT
+AB This study examines market information embedded in the European sovereign CDS (credit default swap) market by analyzing the sovereign CDSs of 13 Eurozone countries from January 1, 2008, to February 29, 2012, which includes the recent Eurozone debt crisis period. We design the conditional probability of defaults for the CDS prices based on the Hawkes-diffusion process and obtain the theoretical prices of CDS indexes. To estimate the model parameters, we calibrate the model prices to empirical prices obtained from individual sovereign CDS term structure data. The estimated parameters clearly explain both cross-sectional and time-series data. Our empirical results show that the probability of a huge loss event sharply increased during the Eurozone debt crisis, indicating a contagion effect. Even countries with strong and stable economies, such as Germany and France, suffered from the contagion effect. We also find that the probability of small events is sensitive to the state of the economy, spiking several times due to the global financial crisis and the Greek government debt crisis. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Kim, Jungmu] Yeungnam Univ, Dept Business Adm, Gyeongbuk 38541, South Korea.
+   [Park, Yuen Jung] Hallym Univ, Dept Finance, Gangwon Do, South Korea.
+   [Ryu, Doojin] Sungkyunkwan Univ, Coll Econ, Seoul 03063, South Korea.
+RP Park, YJ (reprint author), Hallym Univ, Dept Finance, Gangwon Do, South Korea.; Ryu, D (reprint author), Sungkyunkwan Univ, Coll Econ, Seoul 03063, South Korea.
+EM yjpark@hallym.ac.kr; sharpjin@skku.edu
+OI Ryu, Doojin/0000-0002-0059-4887
+FU Hallym University [HRF-201411-006]
+FX The authors are grateful for helpful comments and suggestions from H.
+   Eugene Stanley (editor) and anonymous referees. Park was supported by
+   the Hallym University Research Fund, HRF-201411-006.
+CR Ait-Sahalia Y, 2015, J FINANC ECON, V117, P585, DOI 10.1016/j.jfineco.2015.03.002
+   Duffie D, 2003, J FINANC, V58, P119, DOI 10.1111/1540-6261.00520
+   Edwards S., 1984, LDCS FOREIGN BORROWI
+   Eichengreen Barry, 1998, WHAT EXPLAINS CHANGI
+   Embrechts P, 2011, J APPL PROBAB, V48A, P367
+   Errais E, 2010, SIAM J FINANC MATH, V1, P642, DOI 10.1137/090771272
+   Fierro R, 2015, J APPL PROBAB, V52, P37
+   Giesecke K, 2011, OPER RES, V59, P283, DOI 10.1287/opre.1100.0855
+   Guo B, 2015, J FUTURES MARKETS, V35, P1088, DOI 10.1002/fut.21699
+   HAWKES AG, 1971, BIOMETRIKA, V58, P83, DOI 10.2307/2334319
+   Jarrow RA, 2001, J FINANC, V56, P1765, DOI 10.1111/0022-1082.00389
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   Junge B., 2014, LIQUIDITY RISK CREDI, P13
+   Kaminsky G, 2002, WORLD BANK ECON REV, V16, P171, DOI 10.1093/wber/16.2.171
+   Kim JS, 2015, J DERIV, V23, P73, DOI 10.3905/jod.2015.23.1.073
+   Longstaff FA, 2008, J FINANC, V63, P529, DOI 10.1111/j.1540-6261.2008.01330.x
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Mitchell L, 2010, J PHYS A-MATH THEOR, V43, DOI 10.1088/1751-8113/43/4/045101
+   O'Kane D, 2011, MODELLING SINGLE NAM, V573
+   Rambaldi M, 2015, PHYS REV E, V91, DOI 10.1103/PhysRevE.91.012819
+NR 20
+TC 1
+Z9 1
+U1 0
+U2 11
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD MAY 1
+PY 2016
+VL 449
+BP 301
+EP 310
+DI 10.1016/j.physa.2015.12.087
+PG 10
+WC Physics, Multidisciplinary
+SC Physics
+GA DE8PF
+UT WOS:000370898000028
+DA 2019-12-27
+ER
+
+PT J
+AU Hui, ECM
+   Chen, J
+   Chan, KKK
+AF Hui, Eddie C. M.
+   Chen, Jia
+   Chan, Ka Kwan Kevin
+TI Are international securitized property markets converging or diverging?
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Recursive approach; Fractional cointegration; Securitized real estate
+   markets; Financial crisis
+ID REAL-ESTATE MARKETS; STOCK MARKETS; INCREASING CONVERGENCE; FINANCIAL
+   CRISIS; LONG-MEMORY; COINTEGRATION; VOLATILITY; TESTS; INTEGRATION;
+   CONTAGION
+AB This study establishes a new framework which combines the recursive model with the Fractionally Integrated Vector Error Correction Model (FIVECM) to investigate the cointegration relationship among 9 securitized real estate indices, which are divided into three groups: Asian, European and North American groups. Our new combined framework has the advantage of reflecting the changes in cointegration dynamics over a period of time instead of a single result for the whole period. The results show that the three groups of markets follow a similar cointegration trend: the cointegration relationship gradually increases before the global financial crisis, reaches a peak during the crisis, and dies down gradually after the crisis. However, cointegration among Asian and European countries occurs at a much later time than cointegration among North American countries does, showing that North America is the source of cointegration, while Asia and Europe are the recipients. This study has important implications to investors and related authorities that investors can adjust their portfolio according to the test results to reduce their risk, while related authorities can take appropriate measures to stabilize the economy and mitigate the effects of financial crises. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Hui, Eddie C. M.; Chen, Jia; Chan, Ka Kwan Kevin] Hong Kong Polytech Univ, Dept Bldg & Real Estate, ZN 744, Hong Kong, Hong Kong, Peoples R China.
+RP Hui, ECM (reprint author), Hong Kong Polytech Univ, Dept Bldg & Real Estate, ZN 744, Hong Kong, Hong Kong, Peoples R China.
+EM bscmhui@polyu.edu.hk; tal1897@163.com; ckkwyc@yahoo.com.hk
+RI Hui, Eddie Chi Man/L-2037-2016
+OI Hui, Eddie Chi Man/0000-0002-6974-891X
+CR Bollerslev T, 1996, J ECONOMETRICS, V73, P151, DOI 10.1016/0304-4076(95)01736-4
+   Bond SA, 2006, J REAL ESTATE FINANC, V32, P253, DOI 10.1007/s11146-006-6800-0
+   ENGLE RF, 1987, ECONOMETRICA, V55, P251, DOI 10.2307/1913236
+   Fry R, 2010, J BUS ECON STAT, V28, P423, DOI 10.1198/jbes.2010.06060
+   Gallo J.G., 2010, J REAL ESTATE FINANC, V40, P1
+   Gerlach R, 2006, J INT MONEY FINANC, V25, P974, DOI 10.1016/j.jimonfin.2006.07.002
+   Geweke J., 1983, J TIME SER ANAL, V4, P221, DOI DOI 10.1111/J.1467-9892.1983.TB00371.X
+   HOSKING JRM, 1981, BIOMETRIKA, V68, P165, DOI 10.2307/2335817
+   Hui ECM, 2006, J REAL ESTATE FINANC, V33, P299, DOI 10.1007/s11146-006-0335-2
+   Hui ECM, 2012, PHYSICA A, V391, P3951, DOI 10.1016/j.physa.2012.03.007
+   Hui ECM, 2014, PHYSICA A, V405, P216, DOI 10.1016/j.physa.2014.03.008
+   Hui ECM, 2012, CONSTR MANAG ECON, V30, P117, DOI 10.1080/01446193.2011.654130
+   Idzorek T., 2006, COMMERCIAL REAL ESTA
+   JOHANSEN S, 1990, OXFORD B ECON STAT, V52, P169, DOI 10.1111/j.1468-0084.1990.mp52002003.x
+   Johansen S., 1999, ECON J, V2, P306, DOI DOI 10.1111/1368-423X.00035
+   Lasak K, 2010, J ECONOMETRICS, V158, P67, DOI 10.1016/j.jeconom.2010.03.008
+   Liow K, 2005, J REAL ESTATE FINANC, V31, P283, DOI 10.1007/s11146-005-2790-6
+   Liow K. H., 2008, J PROPERTY RES, V25, P127, DOI DOI 10.1080/09599910802605400
+   Liow K. H., 2010, J REAL ESTATE LIT, V18, P283
+   Okunev J, 1997, REAL ESTATE ECON, V25, P487, DOI 10.1111/1540-6229.00724
+   OSTERWALDLENUM M, 1992, OXFORD B ECON STAT, V54, P461, DOI 10.1111/j.1468-0084.1992.tb00013.x
+   Perron P, 2010, J BUS ECON STAT, V28, P275, DOI 10.1198/jbes.2009.06171
+   Rangvid J, 2001, ECON LETT, V71, P383, DOI 10.1016/S0165-1765(01)00361-5
+   Ryan L, 2011, J PROP RES, V28, P97, DOI 10.1080/09599916.2010.502005
+   Serrano C, 2012, J REAL ESTATE FINANC, V44, P319, DOI 10.1007/s11146-009-9231-x
+   Wilson PJ, 2007, J PROP RES, V24, P123, DOI 10.1080/09599910701440081
+   WILSON PJ, 2002, BRIEFINGS REAL ESTAT, V1, P348
+   Xu YX, 2003, J BUS, V76, P613, DOI 10.1086/377033
+   Yunus N, 2012, J REAL ESTATE RES, V34, P127
+   Yunus N, 2007, J PROP RES, V24, P95, DOI 10.1080/09599910701439992
+   Yunus N, 2009, REAL ESTATE ECON, V37, P383, DOI 10.1111/j.1540-6229.2009.00246.x
+NR 31
+TC 2
+Z9 2
+U1 0
+U2 15
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD MAR 15
+PY 2016
+VL 446
+BP 1
+EP 10
+DI 10.1016/j.physa.2015.11.010
+PG 10
+WC Physics, Multidisciplinary
+SC Physics
+GA DC4LL
+UT WOS:000369192300001
+DA 2019-12-27
+ER
+
+PT J
+AU Hinchliffe, JM
+AF Hinchliffe, Jimi M.
+TI The death of one thousand flowers or the AMA reborn?
+SO Journal of Operational Risk
+LA English
+DT Article
+DE advanced measurement approach (AMA); standard measurement approach
+   (SMA); operational risk; regulatory capital; Basel II
+AB This paper explores the reasons for the pending demise of the advanced measurement approach (AMA) to operational risk, which was introduced through Basel II in 2004. The author identifies a number of drivers of the Basel Committee on Banking Supervision (BCBS) decision, and argues that, although the drivers of the BCBS decision to withdraw the AMA include failings on the part of banks, there have also been significant regulatory failures that have undermined the AMA. The author then considers the new standard measurement approach (SMA), which will replace the AMA (as well as the basic indicator approach (BIA) and the standardized approach (TSA)), and identifies potential benefits from the introduction of the SMA to those firms currently using the BIA or TSA. In relation to firms using the AMA, the author contends that there is a possibility that the SMA will unleash a new era of sophisticated analytics through Pillar 2; however, this will depend on the recalibration of the SMA as well as the proper use of Pillar 2 by supervisors. Nevertheless, the author concludes that if the calibration is not addressed, and if Pillar 2 is not applied correctly, the result will be a perfect storm scenario. This may present significant systemic risk, as large global systemically important financial institutions are incentivized to take more risk on the one hand and invest less in risk management on the other.
+C1 [Hinchliffe, Jimi M.] Flat 6,Beaufort House,8 Fairfax Mews, London E16 1TY, England.
+RP Hinchliffe, JM (reprint author), Flat 6,Beaufort House,8 Fairfax Mews, London E16 1TY, England.
+EM Info@njriskandreg.com
+CR BASEL COMM. ON BANKING SUPERVISION, 2011, OP RISK SUP GUID ADV
+   Basel Committee on Banking Supervision, 2016, STAND MEAS APPR OP R
+   Basel Committee on Banking Supervision, 2014, CAP FLOORS DES FRAM
+   Basel Committee on Banking Supervision, 2004, INT CONV CAP MEAS CA
+   Wills S, 2016, CAPITAL IMPACT SMA O
+NR 5
+TC 2
+Z9 2
+U1 0
+U2 2
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1744-6740
+EI 1755-2710
+J9 J OPER RISK
+JI J. Oper. Risk.
+PY 2016
+VL 11
+IS 4
+BP 79
+EP 91
+DI 10.21314/JOP.2016.190
+PG 13
+WC Business, Finance
+SC Business & Economics
+GA EE0CD
+UT WOS:000389240200006
+DA 2019-12-28
+ER

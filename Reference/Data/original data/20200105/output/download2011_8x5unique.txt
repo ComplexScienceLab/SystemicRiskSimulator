@@ -1,0 +1,446 @@
+
+PT J
+AU Christodoulakis, GA
+AF Christodoulakis, George A.
+TI The robustness of simulation-based Markovian transition probabilities
+   for ultra-small samples of non-performing credit
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Markov process; Transition; Probability; Credit risk; Non-performing
+   credit
+ID MONTE-CARLO; INTEGRATION
+AB The analysis of systemic credit risk by financial regulators is largely affected by the paucity of data. Supervisors receive reports on proportions of performing and non-performing aggregate loan classes of individual banks-corporate, mortgage and consumer-often with very short history. The transition to different proportions of aggregate credit qualities can be seen as a Markov process and Christodoulakis [J. Credit Risk, 2007, 3(3), 25-39] proposed a simulation-based method for the estimation of transition probabilities under non-negativity constraints, based on the work of Kloek and van Dijk [Econometrica, 1978, 46(1), 1-19] and van Dijk and Kloek [J. Econometrics, 1980, 14, 307-328]. This paper provides Monte Carlo robustness checks for the performance of this estimator in comparison to Least Squares and Restricted Least Squares (OLS-R) in the presence of ultra-small samples. When true transition probabilities are very large or very small, the least squares estimators severely violate non-negativity restrictions, leading to a spuriously small bias as compared to Monte Carlo integration (MCI). This result is intensified for low volatility regimes and small samples. The bias of MCI diminishes in higher volatility regimes and larger samples, irrespective of the number of Bayesian replications. Regarding the accuracy statistics, we observe that the variance of every estimator increases in smaller samples and lower volatility regimes. MCI is revealed as more accurate or at least equivalent to OLS-R in all cases. Our empirical applications with real US and European data on aggregate credit portfolios revealed significant violations of non-negativity constraints by least squares methods, which contribute to favourable conclusions for MCI.
+C1 Manchester Business Sch, Manchester M15 6PB, Lancs, England.
+RP Christodoulakis, GA (reprint author), Manchester Business Sch, Crawford House,Booth St W, Manchester M15 6PB, Lancs, England.
+EM george.christodoulakis@mbs.ac.uk
+CR Christodoulakis GA, 2010, ANN FINANC, V6, P405, DOI 10.1007/s10436-009-0129-7
+   Christodoulakis G.A., 2003, OPER RES INT J, V2, P123
+   Christodoulakis G. A., 2007, JOURNAL OF CREDIT RI, V3, P25
+   Hop J. P., 1992, Computer Science in Economics and Management, V5, P183, DOI 10.1007/BF00426760
+   Jones M. T., 2005, WP05219 IMF
+   Judge G. G., 1985, THEORY PRACTICE ECON
+   Kim T.H., 2005, J FINANCIAL ECONOMET, V3, P315
+   KLOEK T, 1978, ECONOMETRICA, V46, P1, DOI 10.2307/1913641
+   Lee T. C., 1970, ESTIMATING PARAMETER
+   MACRAE EC, 1977, ECONOMETRICA, V45, P183, DOI 10.2307/1913295
+   MILLER GA, 1952, PSYCHOMETRIKA, V17, P149
+   VANDIJK HK, 1980, J ECONOMETRICS, V14, P307, DOI 10.1016/0304-4076(80)90030-5
+NR 12
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1469-7688
+J9 QUANT FINANC
+JI Quant. Financ.
+PY 2011
+VL 11
+IS 12
+SI SI
+BP 1847
+EP 1864
+DI 10.1080/14697680903580080
+PG 18
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 886XM
+UT WOS:000299887800013
+DA 2019-12-28
+ER
+
+PT J
+AU Festic, M
+   Kavkler, A
+   Repina, S
+AF Festic, Mejra
+   Kavkler, Alenka
+   Repina, Sebastijan
+TI The macroeconomic sources of systemic risk in the banking sectors of
+   five new EU member states
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Cyclicality; Non-performing loans; Loan portfolio; Systemic risk;
+   Economic growth
+ID INSTRUMENTAL VARIABLES; WEAK INSTRUMENTS; SPECIFICATION; TRANSITION;
+   TESTS
+AB Rapid credit growth has been one of the most pervasive developments in recent years in Central and Eastern Europe. Our estimates support the hypothesis that the growth of credit and the amount of available finance might harm banking performance and deteriorate non-performing loans (NPL) dynamics, most probably due to the overheating of economies in the five NMSs. The procyclicality of banking sector performance and high economic activities growth is a signal of an economy overheating and therefore a slowdown in economic activity is likely to accelerate the growth of the NPL ratio. (C) 2010 Elsevier B.V. All rights reserved.
+C1 [Festic, Mejra; Kavkler, Alenka] Univ Maribor, Fac Econ & Business, SLO-2000 Maribor, Slovenia.
+   [Festic, Mejra; Kavkler, Alenka; Repina, Sebastijan] EIPF Econ Inst, Ljubljana, Slovenia.
+RP Festic, M (reprint author), Univ Maribor, Fac Econ & Business, SLO-2000 Maribor, Slovenia.
+EM mejra.festic@uni-mb.si; alenka.kavkler@uni-mb.si;
+   sebastijan.repina@eipf.si
+CR ADAHL M, 2006, BANKING BALTICS DEV
+   ALOUI R, 2010, J BANKING FINANCE
+   ARPA M, 2001, 12001 BIS
+   BABIHUGA R, 2007, 07115 IMF
+   BABOUCEK I, 2005, WORKING PAPER SERIES, V1
+   *BACA, 2009, INT DAT BAS
+   Backe P, 2008, J BANK FINANC, V32, P458, DOI 10.1016/j.jbankfin.2007.07.005
+   Berger AN, 2004, J MONEY CREDIT BANK, V36, P433, DOI 10.1353/mcb.2004.0040
+   Berglof E, 1995, J JPN INT ECON, V9, P354, DOI 10.1006/jjie.1995.1022
+   Blaschke W, 2001, 0188 IMF
+   Borio C. E. V., 2002, 114 BIS
+   CALVO AG, 2000, CAPITAL FLOWS EMERGI
+   Cihak M., 2007, CZECH J EC FINANCE, V10, P41
+   CRAGG JG, 1993, ECONOMET THEOR, V9, P222, DOI 10.1017/S0266466600007519
+   De Nicolo G., 2003, FINANC DEV, V40, P42
+   Dell'Ariccia G., 2006, J FINANC, V61, P1045
+   *EIPF, 2009, INT DAT BAS
+   Ferreira C, 2008, J ECON STUD, V35, P512, DOI 10.1108/01443580810916532
+   Fofack H., 2005, 3769 WORLD BANK
+   Gambera M., 2000, EMERGING ISSUE SERIE, V3
+   GERLACH S, 2005, 22 BIS
+   Gropp R., 2002, 150 ECB
+   Hahn J, 2002, ECONOMETRICA, V70, P163, DOI 10.1111/1468-0262.00272
+   HAUSMAN JA, 1978, ECONOMETRICA, V46, P1251, DOI 10.2307/1913827
+   Hoggarth G., 2005, BANK ENGLAND Q B, V45, P478
+   JAKUBIK P, 2007, CZECH J EC FINANCE, V10, P133
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   KISS G, 2006, 200610 HUNG NAT BANK
+   Kleibergen F., 2007, RANKTEST STATA MODUL
+   Kleibergen F, 2006, J ECONOMETRICS, V133, P97, DOI 10.1016/j.jeconom.2005.02.011
+   KOIVU T, 2002, 112002 BOFIT
+   Lutkepohl H., 2009, 2591 CESIFO
+   Mannasoo K, 2009, J BANK FINANC, V33, P244, DOI 10.1016/j.jbankfin.2008.07.016
+   Murray MP, 2006, J ECON PERSPECT, V20, P111, DOI 10.1257/jep.20.4.111
+   Pang JR, 2009, J BANK FINANC, V33, P810, DOI 10.1016/j.jbankfin.2008.09.015
+   Podpiera R, 2006, IMF STAFF PAPERS, V53, P306
+   QUAGLIARIELLO M., 2003, ARE MACROECONOMIC IN
+   SCHINASI JG, 2005, 362005 IMF
+   Sirtaine S., 2007, POLICY RES WORKING P, V4281
+   Staiger D, 1997, ECONOMETRICA, V65, P557, DOI 10.2307/2171753
+   Stock J. H, 2005, IDENTIFICATION INFER
+   Uhde A, 2009, J BANK FINANC, V33, P1299, DOI 10.1016/j.jbankfin.2009.01.006
+   ZEMAN J, 2008, 12008 SLOV NAT BANK
+NR 43
+TC 65
+Z9 66
+U1 4
+U2 27
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD FEB
+PY 2011
+VL 35
+IS 2
+BP 310
+EP 322
+DI 10.1016/j.jbankfin.2010.08.007
+PG 13
+WC Business, Finance; Economics
+SC Business & Economics
+GA 699JF
+UT WOS:000285659000006
+DA 2019-12-28
+ER
+
+PT J
+AU Upper, C
+AF Upper, Christian
+TI Simulation methods to assess the danger of contagion in interbank
+   markets
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Contagion; Interbank lending; Domino effects; Systemic risk
+ID SYSTEMIC RISK; FINANCIAL CONTAGION; BANK FAILURES; LIQUIDITY;
+   INFORMATION; STABILITY; EXPOSURES; PANICS; CRISES; MODEL
+AB Researchers increasingly turn to counterfactual simulations to estimate the danger of contagion owing to exposures in the interbank loan market. This paper summarises the findings of such simulations, provides a critical assessment of the modelling assumptions on which they are based, and discusses their use in financial stability analysis. On the whole, such simulations suggest that contagious defaults are unlikely but cannot be fully ruled out, at least in some countries. If contagion does take place, then it could lead to the breakdown of a substantial fraction of the banking system, thus imposing high costs to society. However, when interpreting these results, one has to bear in mind the potential bias caused by the very strong assumptions underlying the simulations. Robustness tests indicate that the models might be able to correctly predict whether or not contagion could be an issue and, possibly, also identify banks whose failure could give rise to contagion. They are, however, less suited for stress testing or for the analysis of policy options in crises, primarily due to their lack of behavioural foundations. (C) 2010 Elsevier B.V. All rights reserved.
+C1 Bank Int Settlements, Basel, Switzerland.
+RP Upper, C (reprint author), Bank Int Settlements, Basel, Switzerland.
+EM christian.upper@bis.org
+CR Acharya V., 2008, IMPERFECT COMP UNPUB
+   Acharya V. V., 2009, 376 BANK ENGL
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Acharya VV, 2008, REV FINANC STUD, V21, P2705, DOI 10.1093/rfs/hhm078
+   Aghion P, 2000, EUR ECON REV, V44, P713, DOI 10.1016/S0014-2921(00)00058-1
+   AHARONY J, 1983, J BUS, V56, P305, DOI 10.1086/296203
+   Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   AMELZADEH A, 2009, BANK FAILURE M UNPUB
+   AMUNDSEN E, 2005, 200525 DENM NAT BANK
+   Angelini P, 1996, J BANK FINANC, V20, P853, DOI 10.1016/0378-4266(95)00029-1
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bech M, 2006, 239 FED RES BANK NEW
+   Blavarg Martin, 2002, SVERIGES RIKSBANK EC, V2, P19
+   BLIEN U, 1991, JAHRB NATL STAT, V208, P399
+   BORIO C, 2009, RESOLVING FINA UNPUB
+   BOSS M, 2004, FINANCIAL STABILITY, V7, P84
+   Boss M., 2006, OENB FINANCIAL STABI, V11, P83
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caballero R.J., 2009, COMPLEXITY FINANCIAL
+   Chen YN, 1999, J POLIT ECON, V107, P946, DOI 10.1086/250086
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   COCCO JF, 2005, LENDING RELATI UNPUB
+   CRAIG B, 2009, INTERBANK TIER UNPUB
+   DASGUPTA A, 2004, J EUROPEAN EC ASS, V2, P1015
+   Davis E. P., 1995, DEBT FINANCIAL FRAGI
+   De Bandt O., 2001, FINANCIAL CRISIS CON, P249
+   De Bandt O, 2009, OXFORD HDB BANKING
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Demiralp S., 2004, OVERNIGHT INTE UNPUB
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Duffie D, 2010, J ECON PERSPECT, V24, P51, DOI 10.1257/jep.24.1.51
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Fecht F, 2004, J EUR ECON ASSOC, V2, P969, DOI 10.1162/1542476042813832
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Frisell L., 2007, STATE DEPENDEN UNPUB
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   GOODHART CAE, 1995, CENTRAL BANK FINANCI
+   GORTON G, 2009, SECURITIZED BA UNPUB
+   GROPP R, 2009, INT J CENTRAL BA MAR, P97
+   Guerrero-Gomez S., 2004, INTERBANK EXPO UNPUB
+   Hawkesby C., 2007, J FINANCIAL STABILIT, V2, P391
+   Humphrey D. B., 1986, TECHNOLOGY REGULATIO
+   IAZZETTA C, 1990, 711 BANC IT
+   IORI G, 2005, NETWORK ANA IN PRESS
+   IYER R, 2005, DOES SHOCK PRO UNPUB
+   IYER R, 2009, INTERBANK CONT UNPUB
+   JAMES C, 1991, J FINANC, V46, P223
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   Kacperczyk M., 2009, 15538 NBER
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Laeven Luc, 2008, WP08250 IMF
+   Lagunoff R, 2001, J ECON THEORY, V99, P220, DOI 10.1006/jeth.2000.2733
+   Laux C., 2009, 15515 NBER
+   Lubloy A., 2005, DOMINO EFFECT UNPUB
+   Miller RE, 1985, INPUT OUTPUT ANAL FD
+   Mistrulli Paolo, 2005, INTERBANK LEND UNPUB
+   MISTRULLI PE, 2007, 641 BANC IT SERV STU
+   Muller J., 2006, J FINANCIAL SERVICES, V29, P37, DOI DOI 10.1007/S10693-005-5107-2
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Northcott C. A., 2002, 200241 BANK CAN
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Rigobon R, 2003, J INT ECON, V61, P261, DOI 10.1016/S0022-1996(03)00007-2
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Temzelides T, 1997, J MONETARY ECON, V40, P163, DOI 10.1016/S0304-3932(97)00033-0
+   Toivanen M., 2009, 62009 BANK FINL
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   VANLELYVELD I, 2006, INT J CENT BANK, V2, P99
+   Wells S., 2002, FINANC STAB REV, V13, P175
+   Wells S., 2004, 230 BANK ENGL
+NR 77
+TC 205
+Z9 216
+U1 8
+U2 77
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD AUG
+PY 2011
+VL 7
+IS 3
+BP 111
+EP 125
+DI 10.1016/j.jfs.2010.12.001
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA 784RB
+UT WOS:000292174800001
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Chudik, A
+   Fratzscher, M
+AF Chudik, Alexander
+   Fratzscher, Marcel
+TI Identifying the global transmission of the 2007-2009 financial crisis in
+   a GVAR model
+SO EUROPEAN ECONOMIC REVIEW
+LA English
+DT Article; Proceedings Paper
+CT Conference on Advances in International Macroeconomics - Lessions from
+   the Crisis
+CY JUL 23-24, 2010
+CL Brussels, BELGIUM
+DE Liquidity; Risk; Financial crisis; Global transmission; Global VAR
+   (GVAR); Shocks; Modelling; US; Advanced economies; Emerging market
+   economies
+ID DYNAMIC-FACTOR MODEL; MONETARY-POLICY; STOCK-MARKET; CONTAGION;
+   LINKAGES; VOLATILITY; TIME; RISK; EURO
+AB The paper analyses and compares the role that the tightening in liquidity conditions and the collapse in risk appetite played for the global transmission of the financial crisis. Dealing with identification and the large dimensionality of the empirical exercise with a Global VAR approach, the findings highlight the diversity of the transmission process. While liquidity shocks have had a more severe impact on advanced economies, it was mainly the decline in risk appetite that affected emerging market economies. The tightening of financial conditions was a key transmission channel for advanced economies, whereas for emerging markets it was mainly the real side of the economy that suffered. Moreover, there are some striking differences also within types of economies, with Europe being more adversely affected by the fall in risk appetite than other advanced economies. (C) 2010 Elsevier B.V. All rights reserved.
+C1 [Chudik, Alexander; Fratzscher, Marcel] European Cent Bank, D-60311 Frankfurt, Germany.
+   [Chudik, Alexander] CIMF, D-60311 Frankfurt, Germany.
+RP Fratzscher, M (reprint author), European Cent Bank, Kaiserstr 29, D-60311 Frankfurt, Germany.
+EM alexander.chudik@ecb.int; Marcel.Fratzscher@ecb.int
+CR Adrian T, 2010, J FINANCIAL INTERMED, V19
+   ANDERSEN T, 2003, AM ECON REV, V39, P38
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Barro RJ, 2006, Q J ECON, V121, P823, DOI 10.1162/qjec.121.3.823
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   BEKAERT G, 2010, CONTAGION GLOB UNPUB
+   Borio C., 2009, 293 BIS
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   CALOMIRIS C, 2008, SUBPRIME TURMO UNPUB
+   Canova F, 2009, INT ECON REV, V50, P929, DOI 10.1111/j.1468-2354.2009.00554.x
+   CHUDIK A, J ECONOMETR IN PRESS
+   Chudik A, 2010, 1100 ECB
+   CHUDIK A, 2008, THESIS U CAMBRIDGE
+   Dees S, 2007, J APPL ECONOMET, V22, P1, DOI 10.1002/jae.932
+   DEGREGORIO J, 2001, CRISIS TRANSMISSION
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   DUNGEY M, 2004, QUANTITATIVE FINANCE, V5, P9
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   Ehrmann M, J APPL ECON IN PRESS
+   Ehrmann M., 2005, ECON J, V115, P930
+   ENGLE RF, 1987, ECONOMETRICA, V55, P391, DOI 10.2307/1913242
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Forbes KJ, 2004, REV ECON STAT, V86, P705, DOI 10.1162/0034653041811743
+   Forni M, 2004, J ECONOMETRICS, V119, P231, DOI 10.1016/S0304-4076(03)00196-9
+   Forni M, 2001, ECONOMET THEOR, V17, P1113, DOI 10.1017/S0266466601176048
+   Forni M, 2000, REV ECON STAT, V82, P540, DOI 10.1162/003465300559037
+   Fratzscher M, 2009, J INT MONEY FINANC, V28, P1390, DOI 10.1016/j.jimonfin.2009.08.008
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   *IMF, 2009, WORLD EC OUTLOOK APR
+   KAROLYI A, 2003, INT FINANC, V6, P179
+   Kose MA, 2003, AM ECON REV, V93, P1216, DOI 10.1257/000282803769206278
+   Pesaran MH, 2007, INT J FINANC ECON, V12, P55, DOI 10.1002/ijfe.312
+   Pesaran MH, 2006, J MONEY CREDIT BANK, V38, P1211, DOI 10.1353/mcb.2006.0074
+   Pesaran MH, 2004, J BUS ECON STAT, V22, P129, DOI 10.1198/073500104000000019
+   PESARAN MH, 2010, 1194 ECB
+   PESARAN MH, 2007, RISKS FINANCIAL I, pCH9
+   PESARAN MH, 2010, 2103 CESIFO
+   Rigobon R, 2004, J MONETARY ECON, V51, P1553, DOI 10.1016/j.jmoneco.2004.02.004
+   Rigobon R, 2003, Q J ECON, V118, P639, DOI 10.1162/003355303321675473
+   Stock JH, 2005, J EUR ECON ASSOC, V3, P968, DOI 10.1162/1542476054729446
+   Taylor J. B., 2009, 14631 NBER
+   Tirole J., 2010, 303 BIS
+   TONG H, REV FINANCI IN PRESS
+NR 43
+TC 64
+Z9 65
+U1 2
+U2 36
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0014-2921
+EI 1873-572X
+J9 EUR ECON REV
+JI Eur. Econ. Rev.
+PD APR
+PY 2011
+VL 55
+IS 3
+SI SI
+BP 325
+EP 339
+DI 10.1016/j.euroecorev.2010.12.003
+PG 15
+WC Economics
+SC Business & Economics
+GA 743OI
+UT WOS:000289027400003
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Bargigli, L
+   Gallegati, M
+AF Bargigli, Leonardo
+   Gallegati, Mauro
+TI Random digraphs with given expected degree sequences: A model for
+   economic networks
+SO JOURNAL OF ECONOMIC BEHAVIOR & ORGANIZATION
+LA English
+DT Article
+DE Diversification; Complex networks; Credit networks; Expected degree
+   model; Modularity; Community structure of networks
+ID RANDOM GRAPHS; CONTAGION; LIQUIDITY; RISK
+AB Building upon the growing interest for complex network theory, the main ambition of this paper is to contribute to a more effective application of network theory to economic phenomena, and particularly to financial networks. We depart from recent contributions on credit networks in two respects. In the first place, we constrain diversification with the out- and in-degree distribution of nodes, by adopting a suitable extension of the expected degree model for random weighted digraphs. In the second place, we focus on real networks by using this extension as null model for statistical analysis. With the help of statistical inference, we provide a rigorous answer to the following question: do real networks obey our null model? Further, we show that this answer is tightly connected to the existence of clusters or modules, as defined by Newman and Girvan (2004), within networks. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [Bargigli, Leonardo; Gallegati, Mauro] Univ Politecn Marche, Dept Econ, I-60121 Ancona, Italy.
+RP Gallegati, M (reprint author), Univ Politecn Marche, Dept Econ, Piazzale Martelli 8, I-60121 Ancona, Italy.
+EM mauro.gallegati@univpm.it
+RI GALLEGATI, MAURO/A-4091-2016; bargigli, leonardo/M-1810-2015
+OI bargigli, leonardo/0000-0002-7524-9148
+CR Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2010, NBER WORKING PAPERS
+   Arenas A, 2007, NEW J PHYS, V9, DOI 10.1088/1367-2630/9/6/176
+   Battiston S., 2009, 15611 NAT BUR EC RES
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   BUTLER S, 2006, SODA 06 P 17 ANN ACM, P1112
+   Censor Y.A., 1997, PARALLEL OPTIMIZATIO
+   CHERNOFF H, 1981, ANN PROBAB, V9, P533, DOI 10.1214/aop/1176994428
+   Chung F, 2002, P NATL ACAD SCI USA, V99, P15879, DOI 10.1073/pnas.252631999
+   Chung F, 2003, P NATL ACAD SCI USA, V100, P6313, DOI 10.1073/pnas.0937490100
+   CHUNG F, 2006, REGIONAL C SERIES MA, P107
+   Chung F., 2002, ANN COMB, V6, P125, DOI DOI 10.1007/PL00012580
+   Chung F. R. K., 1997, REGIONAL C SERIES MA
+   Chung Fan, 2003, ANN COMB, V7, P21, DOI DOI 10.1007/S000260300002
+   DEMASI G, 2009, 09012384ARXIVORG
+   Donetti L, 2005, AIP CONF PROC, V779, P104
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   European Central Bank, 2010, REC ADV MOD SYST RIS
+   Chung F, 2006, INTERNET MATH, V3, P79, DOI 10.1080/15427951.2006.10129115
+   Fortunato S, 2010, PHYS REP, V486, P75, DOI 10.1016/j.physrep.2009.11.002
+   Fujiwara Y., 2009, EC E J, V3
+   Fujiwara Y., 2008, EUROPEAN PHYS J B, V77, P565
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garlaschelli D, 2008, PHYS REV E, V78, DOI 10.1103/PhysRevE.78.015101
+   Garlaschelli D, 2009, PHYS REV LETT, V102, DOI 10.1103/PhysRevLett.102.038701
+   Greenwald B, 2003, NEW PARADIGM MONETAR
+   HOGBEN L, 2007, HDB LINEAR ALGEBRA
+   Kavonius I.K., 2009, WORKING PAPER SERIES, V1124
+   Mitrovic M, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.026123
+   Newman MEJ, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.036104
+   Newman MEJ, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.026113
+   ROTHBLUM UG, 1985, LINEAR ALGEBRA APPL, V66, P45, DOI 10.1016/0024-3795(85)90125-9
+   SELEE TM, 2010, ERGODICITY COE UNPUB
+   SENETA E, 1984, LINEAR ALGEBRA APPL, V60, P187, DOI 10.1016/0024-3795(84)90079-X
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Vega-Redondo Fernando, 2007, COMPLEX SOCIAL NETWO
+   WELLS S, 2004, BANK ENGLAND WORKING, V230
+NR 38
+TC 13
+Z9 13
+U1 0
+U2 10
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-2681
+EI 1879-1751
+J9 J ECON BEHAV ORGAN
+JI J. Econ. Behav. Organ.
+PD MAY
+PY 2011
+VL 78
+IS 3
+BP 396
+EP 411
+DI 10.1016/j.jebo.2011.01.022
+PG 16
+WC Economics
+SC Business & Economics
+GA 776AM
+UT WOS:000291506900014
+DA 2019-12-27
+ER

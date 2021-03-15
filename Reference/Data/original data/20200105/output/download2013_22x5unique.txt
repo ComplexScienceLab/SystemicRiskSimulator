@@ -1,0 +1,432 @@
+
+PT J
+AU Rogers, LCG
+   Veraart, LAM
+AF Rogers, L. C. G.
+   Veraart, L. A. M.
+TI Failure and Rescue in an Interbank Network
+SO MANAGEMENT SCIENCE
+LA English
+DT Article
+DE contagion; interbank network; bank failure; merger
+ID BANK BAILOUTS; RISK; CONTAGION; MARKET
+AB This paper is concerned with systemic risk in an interbank market, modelled as a directed graph of interbank obligations. This builds on the modelling paradigm of Eisenberg and Noe [Eisenberg L, Noe TH (2001) Systemic risk in financial systems. Management Sci. 47(2):236-249] by introducing costs of default if loans have to be called in by a failing bank. This immediately introduces novel and realistic effects. We find that, in general, many different clearing vectors can arise, among which there is a greatest clearing vector, arrived at by letting banks fail in succession until only solvent banks remain. Such a collapse should be prevented if at all possible. We then study situations in which consortia of banks may have the means and incentives to rescue failing banks. This again departs from the conclusions of the earlier work of Eisenberg and Noe, where in the absence of default losses there would be no incentive for solvent banks to rescue failing banks. We conclude with some remarks about how a rescue consortium might be constructed.
+C1 [Rogers, L. C. G.] Univ Cambridge, Stat Lab, Cambridge CB3 0WB, England.
+   [Veraart, L. A. M.] London Sch Econ, Dept Math, London WC2A 2AE, England.
+RP Rogers, LCG (reprint author), Univ Cambridge, Stat Lab, Cambridge CB3 0WB, England.
+EM l.c.g.rogers@statslab.cam.ac.uk; l.veraart@lse.ac.uk
+OI Veraart, Luitgard/0000-0003-1183-2227
+FU Cambridge Endowment for Research in Finance; Ministry of Science,
+   Research and Arts, Baden-Wurttemberg, Germany
+FX The authors thank the editor, the associate editor, and the referees for
+   their valuable remarks. Financial support by the Cambridge Endowment for
+   Research in Finance is gratefully acknowledged by both authors. The
+   second author also gratefully acknowledges funding by the Ministry of
+   Science, Research and Arts, Baden-Wurttemberg, Germany.
+CR Acharya V. V., 2011, REV FINANCIAL STUD, V24, P1773
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2008, REV FINANC STUD, V21, P2705, DOI 10.1093/rfs/hhm078
+   Aghion P, 1999, J INST THEOR ECON, V155, P51
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   Beyeler WE, 2007, PHYSICA A, V384, P693, DOI 10.1016/j.physa.2007.05.061
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2013, HDB SYSTEMI IN PRESS
+   Cordella T, 2003, J FINANC INTERMED, V12, P300, DOI 10.1016/S1042-9573(03)00046-9
+   De Bandt P., 2000, 35 EUR CENTR BANK
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Iyer R, 2011, REV FINANC STUD, V24, P1337, DOI 10.1093/rfs/hhp105
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Perotti EC, 2002, EUR ECON REV, V46, P1599, DOI 10.1016/S0014-2921(02)00241-6
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Staum JC, 2013, HDB SYSTEMI IN PRESS
+   Tarksi A., 1955, PAC J MATH, V5, P285, DOI DOI 10.2140/PJM.1955.5.285
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   UPPER C, 2007, 234 BIS
+NR 23
+TC 73
+Z9 77
+U1 2
+U2 49
+PU INFORMS
+PI CATONSVILLE
+PA 5521 RESEARCH PARK DR, SUITE 200, CATONSVILLE, MD 21228 USA
+SN 0025-1909
+EI 1526-5501
+J9 MANAGE SCI
+JI Manage. Sci.
+PD APR
+PY 2013
+VL 59
+IS 4
+BP 882
+EP 898
+DI 10.1287/mnsc.1120.1569
+PG 17
+WC Management; Operations Research & Management Science
+SC Business & Economics; Operations Research & Management Science
+GA 120TW
+UT WOS:000317196900009
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Drehmann, M
+   Tarashev, N
+AF Drehmann, Mathias
+   Tarashev, Nikola
+TI Measuring the systemic importance of interconnected banks
+SO JOURNAL OF FINANCIAL INTERMEDIATION
+LA English
+DT Article
+DE Systemic risk; Shapley value; Interbank network
+ID DEPOSIT INSURANCE; FAIR ALLOCATION; RISK
+AB We propose a method for measuring the systemic importance of interconnected banks. In order to capture contributions to system-wide risk, our measure accounts fully for the extent to which a bank (i) propagates shocks across the system and (ii) is vulnerable to propagated shocks. An empirical implementation of this measure and a popular alternative reveals that interconnectedness is a key driver of systemic importance. However, since the two measures reflect the impact of interbank borrowing and lending on system-wide risk differently, they can disagree substantially about the systemic importance of individual banks. (C) 2013 Elsevier Inc. All rights reserved.
+C1 [Drehmann, Mathias; Tarashev, Nikola] Bank Int Settlements, CH-4002 Basel, Switzerland.
+RP Tarashev, N (reprint author), Bank Int Settlements, Cent Bahnpl 2, CH-4002 Basel, Switzerland.
+EM mathias.drehmann@bis.org; nikola.tarashev@bis.org
+CR Acharya V., 2009, MEASURING SYSTEMIC R
+   Acharya Viral, 2010, EC POLICY REV FEDERA, V16, P89, DOI DOI 10.2139/ssrn.1678160
+   Adrian T., 2011, FEDERAL RESERVE BANK, V348
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE
+   Bank of England, 2013, FIN POL COMM POW SUP
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   Bech M., 2010, PHYSICA A, V389
+   Brownlees Ch., 2010, VOLATILITY CORRELATI
+   Chiang TF, 2007, REV QUANT FINANC ACC, V29, P205, DOI 10.1007/s11156-007-0029-8
+   Craig B., 2010, BIS WORKING PAPERS, V322
+   David A., 2011, WHY ARE BANKS HIGHLY
+   Denault M, 2001, J RISK, V4
+   Drehmann M, 2011, BIS Q REV
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   European Central Bank, 2005, FINANCIAL STABILITY
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Giesecke K, 2011, MANAGE SCI, V57, P1387, DOI 10.1287/mnsc.1110.1375
+   Gordy MB, 2003, J FINANC INTERMED, V12, P199, DOI 10.1016/S1042-9573(03)00040-8
+   Huang X., 2010, BIS WORKING PAPERS, V296
+   JAMES C, 1991, J FINANC, V46, P1223, DOI 10.2307/2328857
+   Liu M., 2010, SYSTEMIC RISK COMPON
+   Mas-Colell A., 1995, MICROECONOMIC THEORY
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Moulin H, 2007, REV ECON POLIT, V117, P7, DOI 10.3917/redp.171.0007
+   Navarro N, 2007, GAME ECON BEHAV, V58, P354, DOI 10.1016/j.geb.2006.03.010
+   Ni DB, 2007, GAME ECON BEHAV, V60, P176, DOI 10.1016/j.geb.2006.10.001
+   Pennacchi G, 2006, J MONETARY ECON, V53, P1, DOI 10.1016/j.jmoneco.2005.10.007
+   Shapley L. S., 1953, ANN MATH STUD, V2, P307, DOI DOI 10.1515/9781400881970-018
+   Squartini T, 2011, NEW J PHYS, V13, DOI 10.1088/1367-2630/13/8/083001
+   Staum J, 2012, QUANT FINANC, V12, P651, DOI 10.1080/14697688.2012.664942
+   Suh S, 2012, J FINANC INTERMED, V21, P341, DOI 10.1016/j.jfi.2011.10.003
+   Tarashev N., 2008, INT J CENTRAL BANKIN
+   Tarashev N., 2011, 342 BIS
+   Tarashev Nikola, 2010, 308 BIS
+   Tasche D., 2008, PILLAR 2 NEW BASEL A, P423
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Van Lelyveld Iman, 2006, INT J CENT BANK, V2, P99
+NR 39
+TC 51
+Z9 52
+U1 0
+U2 24
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1042-9573
+EI 1096-0473
+J9 J FINANC INTERMED
+JI J. Financ. Intermed.
+PD OCT
+PY 2013
+VL 22
+IS 4
+BP 586
+EP 607
+DI 10.1016/j.jfi.2013.08.001
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA 264ZA
+UT WOS:000327918300004
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Zhou, C
+AF Zhou, Chen
+TI The impact of imposing capital requirements on systemic risk
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Systemic risk; Capital requirement; macro-prudential regulation
+ID BANK; FRAGILITY
+AB This paper examines the impact of imposing capital requirements on systemic risk. We use a static model on financial institutions' risk-taking behavior to quantify the systemic risk in the cross-sectional dimension in both regulated and unregulated systems. Although imposing a capital requirement can lower individual risk, it simultaneously enhances systemic linkage within the system. By using a proper systemic risk measure combining both individual risk and systemic linkage, we show that systemic risk in a regulated system can be higher than that in an unregulated system. In addition, we analyze a sufficient condition under which the systemic risk in a regulated system is always lower. (c) 2013 Elsevier B.V. All rights reserved.
+C1 [Zhou, Chen] De Nederlandsche Bank, NL-1000 AB Amsterdam, Netherlands.
+   [Zhou, Chen] Erasmus Univ, NL-3000 DR Rotterdam, Netherlands.
+RP Zhou, C (reprint author), De Nederlandsche Bank, POB 98, NL-1000 AB Amsterdam, Netherlands.
+EM zhou@ese.eur.nl
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T., 2008, 348 FED RES BANK NEW
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2009, ANNU REV FINANC ECON, V1, P97, DOI 10.1146/annurev.financial.050808.114321
+   Blum J, 1999, J BANK FINANC, V23, P755, DOI 10.1016/S0378-4266(98)00113-7
+   Boot W. A., 1993, CAPITAL MARKETS FINA
+   Borio C., 2008, BIS WORKING PAPERS, V268
+   Borio CEV, 2001, BIS WORKING PAPERS, V1
+   Brunnermeier M. K., 2009, 11 WORLD EC
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   De Bandt O., 2001, FINANCIAL CRISIS CON, P249
+   de Haan L., 2006, EXTREME VALUE THEORY
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   FELLER W, 1971, INTRO PROBABILITY TH, V2
+   FLANNERY MJ, 1989, J MONETARY ECON, V24, P235, DOI 10.1016/0304-3932(89)90005-6
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hellmann TF, 2000, AM ECON REV, V90, P147, DOI 10.1257/aer.90.1.147
+   HSIEH DA, 1988, J INT ECON, V24, P129, DOI 10.1016/0022-1996(88)90025-6
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   JANSEN DW, 1991, REV ECON STAT, V73, P18, DOI 10.2307/2109682
+   KAHANE Y, 1977, J BANK FINANC, V1, P207, DOI DOI 10.1016/0378-4266(77)90007-3
+   KIM D, 1988, J FINANC, V43, P1219, DOI 10.2307/2328216
+   KOEHN M, 1980, J FINANC, V35, P1235, DOI 10.2307/2327096
+   Kopecky KJ, 2006, J BANK FINANC, V30, P2235, DOI 10.1016/j.jbankfin.2005.07.018
+   Lagunoff R, 2001, J ECON THEORY, V99, P220, DOI 10.1006/jeth.2000.2733
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   Segoviano M., 2009, 0904 IMF
+   Shin H., 2009, 304 PRINC U
+   Tarashev N., 2010, BIS WORKING PAPERS, V308
+   Tarashev Nicola, 2009, BIS Q REV, P75
+   VanHoose D, 2007, J BANK FINANC, V31, P3680, DOI 10.1016/j.jbankfin.2007.01.015
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+   Zhou C, 2010, INSUR MATH ECON, V46, P531, DOI 10.1016/j.insmatheco.2010.01.010
+   Zhu HB, 2008, INT J CENT BANK, V4, P165
+NR 38
+TC 7
+Z9 8
+U1 2
+U2 22
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD SEP
+PY 2013
+VL 9
+IS 3
+BP 320
+EP 329
+DI 10.1016/j.jfs.2013.06.002
+PG 10
+WC Business, Finance; Economics
+SC Business & Economics
+GA 213GD
+UT WOS:000324042400006
+DA 2019-12-28
+ER
+
+PT J
+AU Fungacova, Z
+   Jakubik, P
+AF Fungacova, Zuzana
+   Jakubik, Petr
+TI Bank Stress Tests as an Information Device for Emerging Markets: The
+   Case of Russia
+SO FINANCE A UVER-CZECH JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE stress testing; bank; Russia
+AB The recent financial crisis emphasized the need for effective financial stability analyses and tools for detecting systemic risk. This paper looks at the assessment of banking sector resilience through stress testing. We argue such analyses are valuable even in emerging economies, which suffer from limited data availability, short time series, and structural breaks. We propose a top-down stress test methodology that employs relatively limited information to overcome this data problem. Moreover, as credit growth in emerging economies tends to be rather volatile, we rely on a dynamic approach projecting key balance sheet items. The application of our proposed stress test framework to the Russian banking sector reveals high sensitivity of the capital adequacy ratio to the economic cycle. This shows up in both of the two-year macroeconomic scenarios considered: a baseline and an adverse one. Both scenarios indicate a need to increase the capital of the Russian banking sector. Furthermore, given that Russia's banking sector is small and fragmented by comparison with advanced economies, a loss of external financing could cause profound economic stress, especially for small and medium-sized enterprises. The Russian state has a low public debt-to-GDP ratio and plays a decisive role in the banking sector. These factors allow sufficient fiscal space for recapitalization of problematic banks under our proposed baseline and adverse scenarios.
+C1 [Fungacova, Zuzana] Charles Univ Prague, Bank Finland, Inst Econ Transit BOFIT, Prague, Czech Republic.
+   [Jakubik, Petr] Charles Univ Prague, Inst Econ Studies, Prague, Czech Republic.
+RP Fungacova, Z (reprint author), Charles Univ Prague, Bank Finland, Inst Econ Transit BOFIT, Prague, Czech Republic.
+EM zuzana.fungacova@bof.fi; Jakubik@fsv.cuni.cz
+OI Jakubik, Petr/0000-0001-5143-2610
+CR Bank of England, 2008, FIN STAB REP
+   Berkowitz J., 2000, J RISK, V2, P1
+   Blaschke W, 2001, 0188 IMF
+   Board of Governors of the Federal Reserve System, 2009, SUP CAP ASS PROGR DE
+   Board of Governors of the Federal Reserve System, 2009, SUP CAP ASS PROGR OV
+   Borio C., 2001, BIS PAPERS, V1, P1
+   Boss M, 2006, 11 OENB, P83
+   Boss M, 2009, 17 OEST NAT, P85
+   Central Bank of the Russian Federation, 2010, OBZ FIN RYNK, V69
+   Central Bank of the Russian Federation, 2011, BANK SUP REP 2010
+   Cihak C M., 2007, 0759 IMF
+   COMM. OF EUR. BANKING SUPERVISORS, 2010, AGGR OUTC 2010 EU WI
+   DREHMANN M, 2008, 339 BANK ENGL
+   European Banking Authority, 2011, 2011 EU WID STRESS T
+   Hamerle A, 2004, FORECASTING CREDIT 2
+   IMF, 2005, FIN SECT ASS HDB
+   Jakubik P, 2008, CZECH NATL BANK WORK, V9
+   Jakubik P, 2007, FINANC UVER, V57, P41
+   Jimenez G., 2006, INT J CENT BANK, V2, P65
+   Jokivuolle E., 2008, 17 BANK FINL
+   Jones M., 2004, 04127 IMF
+   Moody's, 2010, BANK SYST OUTL
+   Schmieder C., 2011, 1183 IMF
+   Upper C, 2002, 0902 BUND
+   van den End J. W, 2006, 119 NED BANK
+   Vernikov A., 2009, 24 BOFIT
+   Virolainen K, 2004, 12 BOFIT
+   Wilson T.C., 1997, RISK, V10, P111
+   Wilson T.C., 1997, RISK, V10, P56
+NR 29
+TC 9
+Z9 9
+U1 0
+U2 11
+PU CHARLES UNIV-PRAGUE
+PI PRAGUE 2
+PA C/O DATAKONEKT S R O, VINOHRADSKA 49, PO BOX 6, PRAGUE 2 120 00, CZECH
+   REPUBLIC
+SN 0015-1920
+J9 FINANC UVER
+JI Financ. Uver
+PY 2013
+VL 63
+IS 1
+BP 87
+EP 105
+PG 19
+WC Business, Finance
+SC Business & Economics
+GA 109NY
+UT WOS:000316376500006
+DA 2019-12-28
+ER
+
+PT J
+AU Heng, YK
+AF Heng, Yee-Kuang
+TI A Global City in an Age of Global Risks: Singapore's Evolving Discourse
+   on Vulnerability
+SO CONTEMPORARY SOUTHEAST ASIA
+LA English
+DT Article
+DE Singapore; global city; connectivity; global risks; vulnerability
+AB Singapore's post-independence leaders perceived the country's vulnerability in terms of its miniscule size, lack of resources and hinterland, fragile ethnic harmony and geo-strategic location surrounded by larger, and potentially hostile, neighbours. Given such odds, Singapore sought to become a global city by tapping into international flows of goods and trade. Becoming a core node in the global economy also enhanced Singapore's strategic relevance, upping major powers' interest in its survival. However, due to its global connectivity Singapore's exposure to rapidly spreading global risks, such as pandemics and financial crises, has become increasingly noticeable. This paper seeks to uncover a paradox in Singapore's ambition to become a global city as new vulnerabilities emerge from its highly globalized status. Through a discourse analysis of policy-makers' statements and speeches, it reveals that a recurrent theme of perceived vulnerability today relates to the extensive global maritime, aviation and financial flows on which Singapore's continued prosperity depends. The paper concludes that the critical infrastructure that underpin its global connectivity its airport, maritime port hub and financial centre can also unwittingly circulate and import global risks such as pandemics, Weapons of Mass Destruction proliferation, financial contagion and terrorist financing, adding a new dimension to how its leaders perceive vulnerability.
+C1 Natl Univ Singapore, Lee Kuan Yew Sch Publ Policy, Singapore 117548, Singapore.
+RP Heng, YK (reprint author), Natl Univ Singapore, Lee Kuan Yew Sch Publ Policy, Singapore 117548, Singapore.
+OI Heng, Yee-Kuang/0000-0003-1413-2429
+CR Acharya Amitav, 2007, SINGAPORES FOREIGN P, P2
+   Addley, 2003, GUARDIAN
+   Agence France Presse, AGENCE FRANCE PRESSE
+   [Anonymous], 2009, AGENCE FRANCE P 0217
+   [Anonymous], 2006, GLOBAL SECURITY 0207
+   [Anonymous], 1998, ASIAN WALL STRE 0804, P5
+   [Anonymous], 2011, STRAITS TIMES
+   [Anonymous], 2011, COMMUNICATION
+   [Anonymous], 2012, MON AUTH SING ANN RE
+   [Anonymous], 2011, SUNDAY TIMES
+   [Anonymous], 2009, STRAITS TIMES
+   [Anonymous], 2002, COMMUNICATION   0701
+   Barnes P, 2005, J INT MANAG, V11, P519, DOI DOI 10.1016/J.INTMAN.2005.09.008
+   Barr Michael, 2008, CONSTRUCTING SINGAPO, P20
+   Benjaathonsirikul Faith, 2009, FRAMING GLOBAL EC DO, P283
+   Brown D, 1998, AUST J INT AFF, V52, P35, DOI 10.1080/10357719808445236
+   Castells Manuel, 2000, RISE NETWORK SOC, p[377, 415]
+   Choong William, 2013, IISS VOICES     0315
+   da Cunha Derek, 2002, SINGAPORE NEW MILLEN, P135
+   Das Sanchita Basu, 2010, ROAD RECOVERY SINGAP, P54
+   Derudder B, 2010, URBAN STUD, V47, P1861, DOI 10.1177/0042098010372682
+   Faiola Anthony, 2009, WASHINGTON POST
+   Financial Action Task Force, 2008, MUT EV SING
+   Fong Tanya, 2011, TODAY SINGAPORE 0521
+   FP, 2007, FOREIGN POLICY
+   Ganesan N, 2005, POLIT ASIA, P1
+   Graham Stephen, 2001, CITY, V5, P412
+   Guan Ang Cheng, 2013, LK YEWS STRATEGIC TH, P98
+   Gunasingham A, 2011, STRAITS TIMES
+   Harris S. Ali, 2009, DISRUPTED CITIES, P109
+   Harris S. Ali, 2008, NETWORKED DIS EMERGI, P12
+   Harris S. All, 2006, URBAN STUD, V43, P505
+   Ho JH, 2006, ASIAN SURV, V46, P558, DOI 10.1525/as.2006.46.4.558
+   Hon Chua Chin, 2010, STRAITS TIMES
+   Huat Chua Beng, 2006, CULTURAL POLITICS, V2, P93
+   Huat Chua Beng, 1995, COMMUNITARIAN IDEOLO, P3
+   Huat Chua Beng, 1995, COMMUNITARIAN IDEOLO, P74
+   Hudson C, 2008, DIS APPL POL SOC CUL, V30, P163
+   Jayakumar S., 1997, SPEECHES 97 BIMONTHL, P50
+   Kelly Rachel, 2011, CHANNEL NEWS AS 0615
+   Kin Kwan Wang, 2010, STRAITS TIMES
+   Kwang Han Fook, 2011, LK YEW HARD TRUTHS K, P19
+   Latif Asad, 2004, SE ASIAN AFFAIRS, P228
+   Laudicina Paul, 2006, FOREIGN POLICY
+   Lee Grace O. M., 2008, POLITICAL EC SARS EP, P131
+   Leifer Michael, 2000, SINGAPORES FOREIGN P, P9
+   Long Joey, 2001, CONTEMP SE ASIA, V23, P504
+   Loong Lee Hseing, 2011, COMMUNICATION
+   Loong Lee Hsien, 2012, COMMUNICATION
+   Loong Lee Hsien, 2003, NETW C SING 3 MAY
+   Maritime and Port Authority Singapore, 2013, SING 2012 MAR PERF
+   Maritime Port Authority of Singapore, PREM HUB PORT
+   Maritime Port Authority of Singapore, OTH FACTS YOU MAY NO
+   Matsumoto Hidenobu, 2004, TRANSPORT RES E-LOG, V10, P241
+   Menon Ravi, 2011, COMMUNICATION   1027
+   Menon Ravi, 2003, COMMUNICATION
+   Menon Ravi, 2011, COMMUNICATION
+   Ministere de la Sante Cellule de Coordination du Comite Sectoriel de Lutte Contre le SIDA Institut National de Recherche en Sante Publique U.S. Centers for Disease Control and Prevention USA for ID, 2003, EST DEV PLAN EL SECT, P1
+   Nathan S.R., COMMUNICATION
+   Oswin N, 2010, MOBILITIES-UK, V5, P167, DOI 10.1080/17450101003665002
+   Port of Singapore Authority, 2010, SAG ADV PORTV 2Q NEW, P7
+   Port of Singapore Authority, OUR COR BUS
+   Prime Minister's Office Singapore, 2009, COMMUNICATION
+   Rahim LZ, 2009, ASIAS TRANSFORM, P1
+   Rajaratnam S., 1972, COMMUNICATION   0206, P2
+   Richardson Michael, 2004, TIME BOMB GLOBAL TRA, P2
+   Rimmer Peter J., 1998, GLOBALISATION WORLD, P462
+   Sassen Saskia, 2001, GLOBAL CITY, P347
+   Seng W.K, 2011, COMMUNICATION
+   Sheridan G., 2012, AUSTRALIAN
+   Short John Rennie, 2004, GLOBAL METROPOLITAN, P68
+   Sin Ng Sam, 2011, COMMUNICATION
+   Singapore Foreign Exchange Market Committee, 2013, SURV SING FOR EXCH V
+   Singapore International Water Week Pte. Ltd, WAT CONV SING PRIM M
+   Smith Shelly, 2009, BLOOMBERG NEWS
+   Suchao Yao, 2006, SINGAPORE STATE CULT, P30
+   Tong Goh Chok, 2011, COMMUNICATION
+   Tong Goh Chok, 2007, COMMUNICATION
+   Trocki Carl, 2006, SINGAPORE WEALTH POW, P107
+   Urry John, 2007, MOBILITIES, P150
+   Wijaya Megawati, 2008, ASIA TIMES
+   World Trade Organisation, 2013, TRAD PROF SING
+   Yew L. K., 2013, COMMUNICATION
+   Yew Lee Kuan, 2009, S RAJ LECT 9 APR
+   Ying-I Yong, 2009, COMMUNICATION
+   Yong G.-C., 2013, COMMUNICATION
+NR 86
+TC 3
+Z9 3
+U1 1
+U2 18
+PU INST SOUTHEAST ASIAN STUDIES-ISEAS
+PI PASIR PANJANG
+PA 30 HENG MUI KING TERACE, PASIR PANJANG, 119614, SINGAPORE
+SN 0129-797X
+EI 1793-284X
+J9 CONTEMP SE ASIA
+JI Contemp. Southeast Asia
+PD DEC
+PY 2013
+VL 35
+IS 3
+BP 423
+EP 446
+DI 10.1355/cs35-3e
+PG 24
+WC Area Studies; International Relations; Political Science
+SC Area Studies; International Relations; Government & Law
+GA AI8UE
+UT WOS:000337201700005
+DA 2019-12-27
+ER

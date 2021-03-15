@@ -1,0 +1,586 @@
+
+PT J
+AU Constantin, A
+   Peltonen, TA
+   Sarlin, P
+AF Constantin, Andreea
+   Peltonen, Tuomas A.
+   Sarlin, Peter
+TI Network linkages to predict bank distress
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Bank distress; Bank networks; Systemic risk
+ID MARKET; LIQUIDITY; FRAGILITY; MODELS; CRISES; TAIL; RISK
+AB Building on the literature on systemic risk and financial contagion, the paper introduces estimated network linkages into an early-warning model to predict bank distress among European banks. We use multivariate extreme value theory to estimate equity-based tail-dependence networks, whose links proxy for the markets' view of bank interconnectedness in case of elevated financial stress. The paper finds that early warning models including estimated tail dependencies consistently outperform bank specific benchmark models without networks. The results are robust to variation in model specification and also hold in relation to simpler benchmarks of contagion. Generally, this paper gives direct support for measures of interconnectedness in early-warning models, and moves toward a unified representation of cyclical and cross-sectional dimensions of systemic risk. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Constantin, Andreea] Univ Lausanne, Dept Finance, CH-1015 Lausanne, Switzerland.
+   [Peltonen, Tuomas A.] European Syst Risk Board, Sonnemannstr 22, D-60314 Frankfurt, Germany.
+   [Sarlin, Peter] Hanken Sch Econ, Arkadiankatu 22, Helsinki 00100, Finland.
+   [Sarlin, Peter] Arcada Univ Appl Sci, RiskLab Finland, Jan Magnus Janssons Plats 1, Helsinki 00560, Finland.
+RP Sarlin, P (reprint author), Hanken Sch Econ, Arkadiankatu 22, Helsinki 00100, Finland.
+EM andreea.piloiu@gmail.com; tuomas.peltonen@ecb.int; peter@risklab.fi
+CR Agarwal V, 2008, J BANK FINANC, V32, P1541, DOI 10.1016/j.jbankfin.2007.07.014
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Betz F, 2014, J BANK FINANC, V45, P225, DOI 10.1016/j.jbankfin.2013.11.041
+   Bongini P, 2002, J BANK FINANC, V26, P1011, DOI 10.1016/S0378-4266(01)00264-3
+   Borio C, 2002, BIS WORKING PAPERS
+   Brunnermeier M. K., 2008, TECHNICAL REPORT
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Coles S., 1999, EXTREMES, V2, P339, DOI [DOI 10.1023/A:1009963131610, 10.1023/A:1009963131610]
+   Demirguc-Kunt A, 1998, INT MONET FUND S PAP, V45, P81
+   Demirguc-Kunt A, 2000, WORLD BANK ECON REV, V14, P287, DOI 10.1093/wber/14.2.287
+   Diebold Francis X., 2014, J EC
+   Engle R, 2012, WORKING PAPER
+   Flannery MJ, 1998, J MONEY CREDIT BANK, V30, P273, DOI 10.2307/2601102
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Gonzalez-Hermosillo B., 1999, FINANC DEV, V36, P36
+   Gropp R, 2004, J INT MONEY FINANC, V23, P405, DOI 10.1016/j.jimonfin.2004.01.005
+   Gropp R., 2009, CROSS BORDER BANK CO
+   Hale G., 2014, CRISIS TRANSMISSION
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hartmann P., 2005, TECHNICAL REPORT
+   Hautsch N., 2014, REV FINANCE
+   Hautsch N., 2014, INT J FORECAST
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Huisman R, 2001, J BUS ECON STAT, V19, P208, DOI 10.1198/073500101316970421
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Laina P., 2015, REV FINANCIAL EC
+   Ledford AW, 1996, BIOMETRIKA, V83, P169, DOI 10.1093/biomet/83.1.169
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Loretan M., 1994, J EMPIR FINANC, V1, P211, DOI DOI 10.1016/0927-5398(94)90004-3
+   Milne A, 2014, J FINANC STABIL, V12, P26, DOI 10.1016/j.jfs.2013.05.005
+   Minoiu C., 2013, IMF WORKING PAPERS, V13
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Oet MV, 2013, J BANK FINANC, V37, P4510, DOI 10.1016/j.jbankfin.2013.02.016
+   Peltonen T., 2014, INTERCONNECTED UNPUB
+   Poghosyan T, 2011, J FINANC SERV RES, V40, P163, DOI 10.1007/s10693-011-0103-1
+   Poon S.-H., 2004, REV FINANCIAL STUD
+   Sarlin P., 2014, J FINANCIAL IN PRESS
+   Sarlin P, 2013, ECON LETT, V119, P1, DOI 10.1016/j.econlet.2012.12.030
+   Tirole J, 2011, J ECON LIT, V49, P287, DOI 10.1257/jel.49.2.287
+   Tjur T, 2009, AM STAT, V63, P366, DOI 10.1198/tast.2009.08210
+NR 47
+TC 3
+Z9 3
+U1 5
+U2 13
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD APR
+PY 2018
+VL 35
+BP 226
+EP 241
+DI 10.1016/j.jfs.2016.10.011
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA GD1ME
+UT WOS:000430263200015
+DA 2019-12-27
+ER
+
+PT J
+AU de Matos, JA
+   Mergulhao, J
+AF de Matos, Joao Amaro
+   Mergulhao, Joao
+TI Debt, information asymmetry and bankers on board
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE information asymmetry; debt level; social networks; corporate boards;
+   bankers
+ID EFFICIENT SEMIPARAMETRIC ESTIMATION; CORPORATE GOVERNANCE; FINANCIAL
+   NETWORKS; INTERBANK MARKET; SYSTEMIC RISK; EXCHANGE; DIRECTORS; FIRMS;
+   IDENTIFICATION; DETERMINANTS
+AB This paper contributes to the financial networks literature by providing evidence that well-connected bankers on the boards of directors of nonfinancial firms reduce information asymmetry between credit markets and firms. Although it is well known that the presence of bankers on these boards likely facilitates firms' capacity to increase their debt level, we clarify this statement in two different ways. First, we show that the impact of the presence of bankers on leverage is driven by firms with low levels of debt. For firms with high levels of debt this effect is not statistically significant. Second, the impact on the leverage ratio of the presence of bankers on the board is amplified the more connected these bankers are to the corporate world. In addition, the results are more pronounced for less transparent firms. Our findings suggest that the connectedness of bankers plays a key role in reducing information asymmetry.
+   Bankers on boards of nonfinancial firms are associated with higher leverage ratios.
+   The more connected the banker, the higher the leverage ratio.
+   The higher the information asymmetry, the greater the impact of the banker's connectedness.
+   Bankers facilitate the increase of leverage ratio only for low-debt firms.
+   The more connected the banker, the larger the impact on the leverage ratio.
+C1 [de Matos, Joao Amaro] Nova Sch Business & Econ, Campus Campolide, P-1099033 Lisbon, Portugal.
+   [Mergulhao, Joao] Moodys Analyt, One Canada Sq, London E14 5FA, England.
+RP de Matos, JA (reprint author), Nova Sch Business & Econ, Campus Campolide, P-1099033 Lisbon, Portugal.
+EM amatos@novasbe.pt; joao.mergulhao@moodys.com
+RI Amaro de Matos, Joao/H-8019-2016
+OI Amaro de Matos, Joao/0000-0002-5958-6283
+FU National Funds from FCT [UID/ECO/00124/2013]; POR Lisboa
+   [LISBOA-01-0145-FEDER-007722]
+FX Amaro de Matos acknowledges support by National Funds from FCT
+   (UID/ECO/00124/2013) and POR Lisboa (LISBOA-01-0145-FEDER-007722).
+CR Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   Amihud Y, 1997, J FINANC ECON, V45, P365, DOI 10.1016/S0304-405X(97)00021-4
+   Angrist JD, 1996, J AM STAT ASSOC, V91, P444, DOI 10.2307/2291629
+   Barak R, 2016, J NETW THEORY FINANC, V2, P53, DOI 10.21314/JNTF.2016.19
+   Battiston S, 2004, EUR PHYS J B, V38, P345, DOI 10.1140/epjb/e2004-00127-8
+   Battiston S, 2003, PHYSICA A, V322, P567, DOI 10.1016/S0378-4371(02)01930-1
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   BERGER AN, 1995, J BUS, V68, P351, DOI 10.1086/296668
+   Bharath ST, 2009, REV FINANC STUD, V22, P3211, DOI 10.1093/rfs/hhn076
+   Birch A, 2014, J STAT PHYS, V156, P998, DOI 10.1007/s10955-014-1040-9
+   Boone AL, 2007, J FINANC ECON, V85, P66, DOI 10.1016/j.jfineco.2006.05.004
+   Booth J. R., 1999, J CORP FINANC, V5, P227, DOI DOI 10.1016/S0929-1199(99)00004-8
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Bouwman C. H. S., 2010, 566 CAS W RES U HARV
+   Bouwman CHS, 2011, REV FINANC STUD, V24, P2358, DOI 10.1093/rfs/hhr034
+   Burt RS, 1997, ADMIN SCI QUART, V42, P339, DOI 10.2307/2393923
+   Butler AW, 2008, REV FINANC STUD, V21, P763, DOI 10.1093/rfs/hhn002
+   Byrd DT, 2005, J CORP FINANC, V11, P129, DOI 10.1016/j.jcorpfin.2003.09.002
+   Caldarelli G, 2004, PHYSICA A, V338, P98, DOI 10.1016/j.physa.2004.02.030
+   Cattaneo MD, 2010, J ECONOMETRICS, V155, P138, DOI 10.1016/j.jeconom.2009.09.023
+   Chiu PC, 2013, ACCOUNT REV, V88, P915, DOI 10.2308/accr-50369
+   Chuluun T, 2014, FINANC MANAGE, V43, P533, DOI 10.1111/fima.12047
+   Ciamarra E., 2012, FINANC MANAGE, V41, P665, DOI DOI 10.1111/J.1755-053X.2012.01191.X
+   Cohen L, 2008, J POLIT ECON, V116, P951, DOI 10.1086/592415
+   COOPER SK, 1985, J ECON BUS, V37, P19
+   De Masi G, 2012, EMPIR ECON, V43, P851, DOI 10.1007/s00181-011-0512-x
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   Dodds PS, 2003, P NATL ACAD SCI USA, V100, P12516, DOI 10.1073/pnas.1534702100
+   Engelberg J, 2012, J FINANC ECON, V103, P169, DOI 10.1016/j.jfineco.2011.08.003
+   Ferreira MA, 2012, REV FINANC STUD, V25, P2703, DOI 10.1093/rfs/hhs076
+   Firpo S, 2007, ECONOMETRICA, V75, P259, DOI 10.1111/j.1468-0262.2007.00738.x
+   Fracassi C, 2012, WORKING PAPER, DOI [10.2139/ssrn.1121503, DOI 10.2139/SSRN.1121503]
+   Frank M., 2008, HDB CORPORATE FINANC
+   FREEMAN LC, 1977, SOCIOMETRY, V40, P35, DOI 10.2307/3033543
+   Glattfelder JB, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.036104
+   Goldman E, 2009, REV FINANC STUD, V22, P2331, DOI 10.1093/rfs/hhn088
+   Gomes A, 2012, J FINANC INTERMED, V21, P619, DOI 10.1016/j.jfi.2012.03.001
+   Guner AB, 2008, J FINANC ECON, V88, P323, DOI 10.1016/j.jfineco.2007.05.009
+   IMBENS GW, 1994, ECONOMETRICA, V62, P467, DOI 10.2307/2951620
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2015, J ECON DYN CONTROL, V50, P98, DOI 10.1016/j.jedc.2014.08.016
+   JAMES C, 1987, J FINANC ECON, V19, P217, DOI 10.1016/0304-405X(87)90003-1
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R, 1999, J AM STAT ASSOC, V94, P1296, DOI 10.2307/2669943
+   Krakaw W., 1998, WORKING PAPER
+   Kroszner RS, 2001, J FINANC ECON, V62, P415, DOI 10.1016/S0304-405X(01)00082-4
+   Leduc MV, 2017, J ECON DYN CONTROL, V82, P44, DOI 10.1016/j.jedc.2017.05.010
+   Lin N, 1976, FDN SOCIAL RES
+   Linck JS, 2008, J FINANC ECON, V87, P308, DOI 10.1016/j.jfineco.2007.03.004
+   Lorsch W., 1989, PAWNS POTENTATES REA
+   Mace M. L., 1971, DIRECTORMYTH REALI
+   Mansi SA, 2011, REV ACCOUNT STUD, V16, P116, DOI 10.1007/s11142-010-9127-2
+   Maskara PK, 2011, J FINANC ECON, V101, P684, DOI 10.1016/j.jfineco.2011.03.019
+   Nahapiet J, 1998, ACAD MANAGE REV, V23, P242, DOI 10.2307/259373
+   NOHRIA N, 1992, NETWORKS ORG STRUCTU
+   PETERSEN MA, 1994, J FINANC, V49, P3, DOI 10.2307/2329133
+   PODOLNY JM, 1994, ADMIN SCI QUART, V39, P458, DOI 10.2307/2393299
+   Poledna S, 2016, QUANT FINANC, V16, P1599, DOI 10.1080/14697688.2016.1156146
+   ROLL R, 1984, J FINANC, V39, P1127, DOI 10.2307/2327617
+   ROSENBAUM PR, 1984, J AM STAT ASSOC, V79, P26, DOI 10.2307/2288329
+   SABIDUSSI G, 1966, PSYCHOMETRIKA, V31, P581, DOI 10.1007/BF02289527
+   Shane S, 2002, MANAGE SCI, V48, P364, DOI 10.1287/mnsc.48.3.364.7731
+   Simon Jan, 2016, J NETW THEORY FINANC, V2, P1
+   Stuart TE, 2010, J FINANC ECON, V97, P174, DOI 10.1016/j.jfineco.2010.03.012
+   Tasca P, 2017, J ECON DYN CONTROL, V82, P96, DOI 10.1016/j.jedc.2017.01.013
+   WILLIAMSON OE, 1988, J FINANC, V43, P567, DOI 10.2307/2328184
+NR 67
+TC 0
+Z9 0
+U1 0
+U2 3
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD MAR
+PY 2018
+VL 4
+IS 1
+BP 39
+EP 63
+DI 10.21314/JNTF.2018.038
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA GC9PJ
+UT WOS:000430130200003
+DA 2019-12-28
+ER
+
+PT J
+AU Kostyuchenko, N
+   Starinskyi, M
+   Tiutiunyk, I
+   Kobushko, I
+AF Kostyuchenko, Nadiya
+   Starinskyi, Mykola
+   Tiutiunyk, Inna
+   Kobushko, Iana
+TI Methodical Approach to the Assessment of Risks Connected With the
+   Legalization of the Proceeds of Crime
+SO MONTENEGRIN JOURNAL OF ECONOMICS
+LA English
+DT Article
+DE withdrawal of funds; money laundering; combating money laundering;
+   proceeds of crime; risk
+ID IMPACT
+AB The aim of the research is to develop a scientific and methodical approach, which consists in the timely identification of systemic risks connected with the legalization of the proceeds of crime, their formalization, assessing and monitoring in order to prevent these transactions occurrence. The article analyzes the state of the Ukrainian economy in terms of its level of shadow economy, the corruption index, and the amount of illegal withdrawal of funds from the country. The key ways and methods of money laundering in Ukraine are defined. The components of the process of illegal with-drawal of funds abroad have been studied as well as key drivers and methods of shadow economy have been identified. The theoretical foundations of the development of the of formalization and assessment model of systemic risks of hiding proceeds are high-lighted. A model for assessment of the risk occurrence probability of the legalization of proceeds of crime is developed. The risk occurrence probability of the legalization of proceeds with the participation of Ukraine and partner countries was assessed.
+C1 [Kostyuchenko, Nadiya] Sumy State Univ, Dept Int Econ Relat, Sumy City, Ukraine.
+   [Starinskyi, Mykola] Sumy State Univ, Sumy City, Ukraine.
+   [Starinskyi, Mykola] Dept Civil Law & Financial Law, Sumy City, Ukraine.
+   [Tiutiunyk, Inna] Sumy State Univ, Dept Finance & Entrepreneurship, Sumy City, Ukraine.
+   [Kobushko, Iana] Sumy State Univ, Dept Management, Sumy City, Ukraine.
+RP Kostyuchenko, N (reprint author), Sumy State Univ, Dept Int Econ Relat, Sumy City, Ukraine.
+EM n.kostyuchenko@fpkv.sumdu.edu.ua; n.starynskyi@uabs.sumdu.edu.ua;
+   i.karpenko@finance.sumdu.edu.ua; ianakobushko@managment.sumdu.edu.ua
+RI Tiutiunyk, Inna/G-7152-2018; Kostyuchenko, Nadiya/K-6526-2018
+FU Ministry of Education and Science of Ukraine [0117U003930]
+FX "This research was funded by the grant of the Ministry of Education and
+   Science of Ukraine (No. g/r 0117U003930)"
+CR Alikariev O. F. U., 2018, BUSINESS ETHICS LEAD, V2, P78, DOI [10.21272/bel.2(1).78-95.2018, DOI 10.21272/BEL.2(1).78-95.2018]
+   Angelko I. V., 2011, ECONOMICS, P1
+   [Anonymous], 2010, CLASSIFICATION TYPES
+   [Anonymous], 2003, REPORT MONEY LAUNDER
+   [Anonymous], 2016, NATL RISK ASSESSMENT
+   Ayodegi A., 2011, IMPACT MONEY LAUNDER
+   Bartlett L., 2002, NEGATIVE EFFECTS MON
+   Bhowmik D., 2018, FINANCIAL MARKETS I, V2, P58, DOI [10.21272/fmir.2(1).58-74.2018, DOI 10.21272/FMIR.2(1).58-74.2018]
+   Bobenic Hintosova A, 2018, J INT STUDIES, V11, P222, DOI [10.14254/2071-8330.2018/11-2/15, DOI 10.14254/2071-8330.2018/11-2/15]
+   Buriak A, 2015, PRAGUE ECON PAP, V24, P715, DOI 10.18267/j.pep.531
+   Dev K., 2011, ILLICIT FINANCIAL FL
+   Dheera-aumpon S, 2017, ECON SOCIOL, V10, P137, DOI 10.14254/2071-789X.2017/10-4/11
+   Gutmann P., 1982, EC CRIME PRACTICAL M
+   Koldovsky M. V., 2008, CURRENT CONDITIONS F, V1, P26
+   Lazanyi K, 2017, ACTA POLYTECH HUNG, V14, P35
+   Leonov SV, 2012, ACTUAL PROBL ECON, P75
+   Logan W., 2017, BUSINESS ETHICS LEAD, V1, P62, DOI [10.21272/bel.1(2).62-67.2017, DOI 10.21272/BEL.1(2).62-67.2017]
+   Lyeonov S.V., 2018, SCI B NATL MINING U, P138, DOI [10.29202/nvngu/2018-1/4, DOI 10.29202/NVNGU/2018-1]
+   Majerova I, 2016, OECON COPERNIC, V7, P339, DOI 10.12775/OeC.2016.020
+   Morscher C., 2017, FINANCIAL MARKETS I, V1, P22, DOI DOI 10.21272/FMIR.1(3).22-33.2017
+   Nelson E. M., 2017, SOCIOECONOMIC CHALLE, V1, P116
+   Nguedie Y. H. N., 2018, SOCIOECONOMIC CHALLE, V2, P63, DOI [10.21272/sec.2(1).63-68.2018, DOI 10.21272/SEC.2(1).63-68.2018]
+   Pietrzak MB, 2017, ECON SOCIOL, V10, P61, DOI 10.14254/2071-789X.2017/10-1/5
+   Polko P., 2016, FORUM SCI OECONOMIA, V4, P169
+   Schneider F., 2015, SIZE DEV SHADOW EC 3
+   Siemiatkowski P., 2017, J INT STUDIES, V10, P84, DOI [10.14254/2071-8330.2017/10-4/6, DOI 10.14254/2071-8330.2017/10-4/6]
+   Sroka W., 2018, FORUM SCI OECON, V6, P31, DOI [10.23762/FSO_VOL6NO1_18_, DOI 10.23762/FSO_VOL6NO1_18_]
+   Sysoyeva L., 2014, EC ANN, V2, P20
+   Tiutiunyk I. V., 2017, 7 INT SCI C SCI 21 C
+   Turchinov O. V., 1995, SHADOW EC THEORETICA
+   Vasylieva T, 2018, MONTENEGRIN J ECON, V14, P159, DOI 10.14254/1800-5845/2018.14-1.12
+   Vasylyeva ?.?., 2014, ACTUAL PROBL ECON, V8, P278
+   Vasylyeva T. A., 2014, ACTUAL PROBL ECON, P384
+   Yakubovskiy S. O., 2014, ACTUAL PROBLEMS INT, V121, P65
+NR 34
+TC 1
+Z9 1
+U1 0
+U2 0
+PU ECONOMIC LABORATORY TRANSITION RESEARCH PODGORICA-ELIT
+PI PODGORICA
+PA DZ VASINGTONA 4-5, PODGORICA, 00000, MONTENEGRO
+SN 1800-5845
+EI 1800-6698
+J9 MONTENEGRIN J ECON
+JI Montenegrin J. Econ.
+PY 2018
+VL 14
+IS 4
+BP 23
+EP 43
+DI 10.14254/1800-5845/2018.14-4.2
+PG 21
+WC Economics
+SC Business & Economics
+GA HL3XH
+UT WOS:000458648900002
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Dungey, M
+   Erdemlioglu, D
+   Matei, M
+   Yang, XY
+AF Dungey, Mardi
+   Erdemlioglu, Deniz
+   Matei, Marius
+   Yang, Xiye
+TI Testing for mutually exciting jumps and financial flights in high
+   frequency data
+SO JOURNAL OF ECONOMETRICS
+LA English
+DT Article
+DE Flight-to-safety; Flight-to-quality; Mutual excitation in jumps; High
+   frequency data; Stock bond comovement
+ID MARKET MICROSTRUCTURE NOISE; BOND RETURN RELATION; STOCK MARKETS;
+   INTERNATIONAL STOCK; CO-JUMPS; VOLATILITY; CONTAGION; LIQUIDITY; PRICE;
+   DYNAMICS
+AB We propose a new nonparametric test to identify mutually exciting jumps in high frequency data. We derive the asymptotic properties of the test statistics and show that the tests have good size and reasonable power in finite sample cases. Using our mutual excitation tests, we empirically characterize the dynamics of financial flights in forms of flight-to-safety and flight-to-quality. The results indicate that mutually exciting jumps and risk-off trades mostly occur in periods of high market stress. Flight-to safety episodes (from stocks to gold) arrive more frequently than do flight-to-quality spells (from stocks to bonds). We further find evidence that reverse cross-excitations or seeking-return-strategies exhibit significant asymmetry over the business cycle, reflecting the fact that investors appear to be selling gold rather than bonds to invest in stocks during good market conditions. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Dungey, Mardi; Matei, Marius] Univ Tasmania, Tasmanian Sch Business & Econ, Hobart, Tas, Australia.
+   [Erdemlioglu, Deniz] LEM, IESEG Sch Management, 3 Rue Digue, Lille, France.
+   [Erdemlioglu, Deniz] CNRS, Paris, France.
+   [Yang, Xiye] Rutgers State Univ, Dept Econ, New Brunswick, NJ USA.
+RP Dungey, M (reprint author), IESEG Sch Management, 3 Rue Digue, Lille, France.
+EM mardi.dungey@utas.edu.au; d.erdemlioglu@ieseg.fr;
+   Marius.Matei@utas.edu.au; xiyeyang@econ.rutgers.edu
+RI Matei, Marius/W-1102-2017
+OI Erdemlioglu, Deniz/0000-0002-8036-3930
+FU Australian Research CouncilAustralian Research Council [DP130100168]
+FX We thank the Editor (Yacine Ait-Sahalia), the Associate Editor and two
+   anonymous referees for excellent suggestions. We are also grateful to
+   Massimiliano Caporin, Pasquale Della Corte, Ozgur Demirtas, Dobrislav
+   Dobrev, Louis Eeckhoudt, Robert Engle, Neil R. Ericsson, Roland Fuss,
+   Andrew Harvey, David F. Hendry, Jerome Lahaye, Sebastien Laurent, Z.
+   Merrick Li, Simone Manganelli, Christopher J. Neely, Marc Paolella,
+   Andrew Patton, Rogier Quaedvlieg, Olivier Scaillet, Paul Schneider,
+   Victor Todorov, Giovanni Urga, Lars Winkelmann, Kamil Yilmaz and
+   participants at the 2017 NBER-NSF Time Series Conference, 70th European
+   Econometric Society Meeting, 9th Annual SoFiE Conference, 14th Paris
+   December Finance Meeting, IAAE 2016 Annual Conference, Federal Reserve
+   Bank of St. Louis Research Seminar, 16th Oxmetrics Financial
+   Econometrics Conference and Koc University Economics Seminar for
+   valuable comments and discussions. This paper has previously been
+   circulated under the title "Financial flights, stock market linkages and
+   jump excitation". Dungey and Matei acknowledge funding from Australian
+   Research Council grant (DP130100168).
+CR AIT-SAHALIA Y., 2016, J AM STAT A IN PRESS
+   Ait-Sahalia Y, 2016, J ECONOMETRICS, V194, P205, DOI 10.1016/j.jeconom.2016.05.002
+   Ait-Sahalia Y, 2016, J FINANC ECONOMET, V14, P1, DOI 10.1093/jjfinec/nbv024
+   Ait-Sahalia Y, 2015, J FINANC ECON, V117, P585, DOI 10.1016/j.jfineco.2015.03.002
+   Ait-Sahalia Y, 2014, J ECONOMETRICS, V183, P151, DOI 10.1016/j.jeconom.2014.05.006
+   Ait-Sahalia Y, 2012, J ECON LIT, V50, P1007, DOI 10.1257/jel.50.4.1007
+   Ait-Sahalia Y, 2012, J ECONOMETRICS, V168, P207, DOI 10.1016/j.jeconom.2011.12.004
+   Ait-Sahalia Y, 2009, ANN STAT, V37, P2202, DOI 10.1214/08-AOS640
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Andersen TG, 2007, J INT ECON, V73, P251, DOI 10.1016/j.jinteco.2007.02.004
+   Andersen TG, 2007, REV ECON STAT, V89, P701, DOI 10.1162/rest.89.4.701
+   Andersen TG, 2007, J ECONOMETRICS, V138, P125, DOI 10.1016/j.jeconom.2006.05.018
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baele L., 2014, 230 NAT BANK BELG
+   Baele L, 2010, REV FINANC STUD, V23, P2374, DOI 10.1093/rfs/hhq014
+   Bandi FM, 2016, J FINANC ECON, V119, P107, DOI 10.1016/j.jfineco.2015.05.007
+   Bansal N, 2014, J FINANC QUANT ANAL, V49, P699, DOI 10.1017/S0022109014000258
+   Baur DG, 2010, J BANK FINANC, V34, P1886, DOI 10.1016/j.jbankfin.2009.12.008
+   Beber A, 2009, REV FINANC STUD, V22, P925, DOI 10.1093/rfs/hhm088
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bibinger M, 2015, J ECONOMETRICS, V184, P361, DOI 10.1016/j.jeconom.2014.10.004
+   Bollerslev T, 2008, J ECONOMETRICS, V144, P234, DOI 10.1016/j.jeconom.2008.01.006
+   Bollerslev T, 2013, J ECONOMETRICS, V172, P307, DOI 10.1016/j.jeconom.2012.08.014
+   Boswijk H.P., 2017, WORKING PAPER
+   Boudt K, 2011, J EMPIR FINANC, V18, P353, DOI 10.1016/j.jempfin.2010.11.005
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caballero RJ, 2008, J FINANC, V63, P2195, DOI 10.1111/j.1540-6261.2008.01394.x
+   Calvo GA, 2000, J INT ECON, V51, P79, DOI 10.1016/S0022-1996(99)00038-0
+   Chan KF, 2011, J BANK FINANC, V35, P1415, DOI 10.1016/j.jbankfin.2010.10.022
+   Chang GD, 2016, ECON MODEL, V58, P219, DOI 10.1016/j.econmod.2016.05.014
+   Chordia T, 2005, REV FINANC STUD, V18, P85, DOI 10.1093/rfs/hhi010
+   Connolly R, 2005, J FINANC QUANT ANAL, V40, P161, DOI 10.1017/S0022109000001782
+   Corradi V., 2016, WORKING PAPER
+   Corradi V, 2012, J ECONOMETRICS, V170, P117, DOI 10.1016/j.jeconom.2012.03.003
+   Corradi Valentina, 2014, WORKING PAPER
+   Dewachter H, 2014, J INT MONEY FINANC, V43, P131, DOI 10.1016/j.jimonfin.2014.01.003
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   DIEBOLD FX, 1989, J APPL ECONOM, V4, P1, DOI 10.1002/jae.3950040102
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Dungey M, 2000, J APPL ECONOM, V15, P697, DOI 10.1002/jae.584
+   Dungey M, 2012, J BANK FINANC, V36, P1563, DOI 10.1016/j.jbankfin.2012.01.005
+   Dungey M, 2009, J EMPIR FINANC, V16, P430, DOI 10.1016/j.jempfin.2008.12.002
+   EDERINGTON LH, 1993, J FINANC, V48, P1161, DOI 10.2307/2329034
+   Engle R., 2012, FEDERAL RESERVE BANK, V590
+   Erdemlioglu D, 2015, J BANK FINANC, V61, pS256, DOI 10.1016/j.jbankfin.2015.09.014
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Fleming J, 1998, J FINANC ECON, V49, P111, DOI 10.1016/S0304-405X(98)00019-1
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Goyenko R, 2014, J FINANC QUANT ANAL, V49, P1227, DOI 10.1017/S0022109014000362
+   Guidolin M, 2006, J APPL ECONOMET, V21, P1, DOI 10.1002/jae.824
+   Guidolin M, 2007, J ECON DYN CONTROL, V31, P3503, DOI 10.1016/j.jedc.2006.12.004
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   HARVEY CR, 1991, REV FINANC STUD, V4, P543, DOI 10.1093/rfs/4.3.543
+   Hautsch N, 2013, J BUS ECON STAT, V31, P165, DOI 10.1080/07350015.2012.754313
+   Jacod J., 2011, DISCRETIZATION PROCE
+   Jacod J, 2010, ANN APPL PROBAB, V20, P1425, DOI 10.1214/09-AAP654
+   Jacod J, 2009, ANN STAT, V37, P1792, DOI 10.1214/08-AOS624
+   Jiang GJ, 2011, J FINANC QUANT ANAL, V46, P527, DOI 10.1017/S0022109010000785
+   Jing BY, 2012, J ECONOMETRICS, V166, P213, DOI 10.1016/j.jeconom.2011.09.036
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   KAROLYI GA, 1995, J BUS ECON STAT, V13, P11
+   Karolyi GA, 1996, J FINANC, V51, P951, DOI 10.2307/2329228
+   Kim SJ, 2006, J BANK FINANC, V30, P1507, DOI 10.1016/j.jbankfin.2005.05.007
+   KING M, 1994, ECONOMETRICA, V62, P901, DOI 10.2307/2951737
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Lahaye J, 2011, J APPL ECONOMET, V26, P893, DOI 10.1002/jae.1149
+   Lee SS, 2012, J ECONOMETRICS, V168, P396, DOI 10.1016/j.jeconom.2012.03.001
+   Lee SS, 2010, J FINANC ECON, V96, P271, DOI 10.1016/j.jfineco.2009.12.009
+   Lee SS, 2008, REV FINANC STUD, V21, P2535, DOI 10.1093/rfs/hhm056
+   Li J., 2016, WORKING PAPER
+   Li J, 2017, ECONOMETRICA, V85, P173, DOI 10.3982/ECTA12962
+   LIN WL, 1994, REV FINANC STUD, V7, P507, DOI 10.1093/rfs/7.3.507
+   Longstaff FA, 2004, J BUS, V77, P511, DOI 10.1086/386528
+   MAHIEU R, 1994, J EMPIR FINANC, V1, P279
+   Mancini C, 2012, ECONOMET THEOR, V28, P249, DOI 10.1017/S0266466611000326
+   Mykland PA, 2016, J ECONOMETRICS, V194, P242, DOI 10.1016/j.jeconom.2016.05.005
+   Panchenko V, 2009, J BANK FINANC, V33, P1014, DOI 10.1016/j.jbankfin.2008.10.016
+   Pelletier D, 2006, J ECONOMETRICS, V131, P445, DOI 10.1016/j.jeconom.2005.01.013
+   Phillips PCB, 2006, J BUS ECON STAT, V24, P202, DOI 10.1198/073500106000000116
+   Todorov V, 2011, J BUS ECON STAT, V29, P356, DOI 10.1198/jbes.2010.08342
+   Todorov V, 2010, J ECONOMETRICS, V154, P125, DOI 10.1016/j.jeconom.2009.06.009
+   Vayanos Dimitri, 2004, 10327 NBER
+   Winkelmann L, 2016, J APPL ECONOMET, V31, P613, DOI 10.1002/jae.2453
+   Xiu DC, 2014, J ECONOMETRICS, V179, P158, DOI 10.1016/j.jeconom.2014.01.003
+NR 85
+TC 2
+Z9 2
+U1 0
+U2 10
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-4076
+EI 1872-6895
+J9 J ECONOMETRICS
+JI J. Econom.
+PD JAN
+PY 2018
+VL 202
+IS 1
+BP 18
+EP 44
+DI 10.1016/j.jeconom.2017.09.002
+PG 27
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA FQ1GZ
+UT WOS:000418106300002
+DA 2019-12-27
+ER
+
+PT J
+AU Gaffeo, E
+   Molinari, M
+AF Gaffeo, Edoardo
+   Molinari, Massimo
+TI A functional perspective on financial networks
+SO JOURNAL OF ECONOMIC INTERACTION AND COORDINATION
+LA English
+DT Article; Proceedings Paper
+CT 20th Annual Conference on Economic Science with Heterogeneous
+   Interacting Agents (WEHIA)
+CY 2015
+CL Nice, FRANCE
+DE Money-center network; Functional perspective; Interbank distress
+ID OVERNIGHT MONEY MARKET; INTERBANK MARKET; SYSTEMIC RISK; CONTAGION;
+   MODEL; PERIPHERY; STABILITY; TOPOLOGY; CORE
+AB The financial sector is a critical component of any economic system, as it delivers key qualitative asset transformation services in terms of liquidity, maturity and volume. Although these functions could in principle be carried out separately by specialized actors, in the end it is their systemic co-evolution that determines how the aggregate economy performs and withstands disruptions. In this paper we argue that a functional perspective on financial intermediation can be usefully employed to investigate the functioning of financial networks. We do this in two steps. First, we use previously unreleased data to show that focusing on the economic functions performed over time by the different institutions exchanging funds in an interbank market can be informative, even if the underlying topological structure of their relations remains constant. Second, a set of alternative artificial histories are generated and stress-tested by using real data as a calibration base, with the aim of performing counterfactual welfare comparisons among different topological structures.
+C1 [Gaffeo, Edoardo] Univ Trento, Dept Econ & Management, Via Inama 5, I-38100 Trento, Italy.
+   [Molinari, Massimo] Bank Italy, Market Operat Directorate, Via Nazl 91, I-00184 Rome, Italy.
+RP Molinari, M (reprint author), Bank Italy, Market Operat Directorate, Via Nazl 91, I-00184 Rome, Italy.
+EM edoardo.gaffeo@unitn.it; massimo.molinari@bancaditalia.it
+OI MOLINARI, MASSIMO/0000-0001-8635-5053
+FU Fondazione Caritro; Sapienza University of RomeSapienza University Rome
+   [278/2016]
+FX This version of the paper has greatly benefited from the very
+   constructive comments of two anonymous referees. We are grateful to
+   Cassa Centrale Banca, in particular to Thomas Franchini, for the data
+   used in this study, and to SeungHwan Lee for having shared with us his
+   codes. We also wish to thank for helpful discussions and suggestions
+   Leonardo Bargigli, Pietro Battiston, Michele Catalano, Giovanni Cerulli,
+   GiorgioDiGiorgio, Matteo Falagiarda, Giovanni Ferri, Guido Germano,
+   Simone Giansante, Roberto Tamborini and the audiences at the
+   ECB-Monetary Analysis Division (Frankfurt am Main, Germany), the 25th
+   International Rome Conference on Money, Banking and Finance -Roma Tre
+   University, the 57th Annual Conference of the Italian Economic
+   Association, Bocconi University (Milano-Italy), the IWCEE15
+   -International Workshop on Computational Economics and Econometrics,
+   Rome (Italy), the 20th WEHIA Workshop -SKEMA Business School, Sophia
+   Antipolis (France) and the 5th International Workshop on Cooperative
+   Finance and Sustainable Development, University of Trento (Italy).
+   Massimo Molinari gratefully acknowledges the financial support of
+   Fondazione Caritro. Part of the research undertaken for this paper was
+   done when Massimo Molinari was at Sapienza University of Rome and
+   supported by the funding grant 278/2016 from the same institution. The
+   opinions expressed herein are those of the authors and do not
+   necessarily reflect the views of the Bank of Italy or the Eurosystem.
+CR Aguiar A, 2014, OFF FINANC RES WORK, V14, DOI [10.2139/ssrn.2475041, DOI 10.2139/SSRN.2475041]
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Anand K, 2013, J ECON BEHAV ORGAN, V85, P219, DOI 10.1016/j.jebo.2012.04.006
+   Babus A, 2016, RAND J ECON, V47, P239, DOI 10.1111/1756-2171.12126
+   Bala V, 2000, ECONOMETRICA, V68, P1181, DOI 10.1111/1468-0262.00155
+   Bargigli L, 2015, QUANT FINANC, V15, P673, DOI 10.1080/14697688.2014.968356
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bhattacharya S., 1993, J FINANCIAL INTERMED, V3, P2, DOI DOI 10.1006/JFIN.1993.1001
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Castiglionesi F, 2015, LIQUIDITY FLOWS INTE, P1
+   Chinazzi M, 2015, SYSTEMIC RISK CONTAG, DOI [10.2139/ssrn.2243504, DOI 10.2139/SSRN.2243504]
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Craig BR, 2015, J BANK FINANC, V53, P99, DOI 10.1016/j.jbankfin.2014.12.022
+   ECB, 2012, EUROPEAN CENTRAL BAN, V1, P59
+   Feri F, 2007, TECHNICAL REPORT
+   Finger K, 2013, COMPUT MANAG SCI, V10, P187, DOI 10.1007/s10287-013-0171-9
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Gaffeo E, 2016, J EVOL ECON, V26, P77, DOI 10.1007/s00191-015-0419-3
+   Gaffeo E, 2015, QUANT FINANC, V15, P637, DOI 10.1080/14697688.2014.968196
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Gorton G, 2003, HANDB ECON, V21, P431
+   Hatzopoulos V, 2015, QUANT FINANC, V15, P693, DOI 10.1080/14697688.2014.969889
+   Hojman DA, 2008, J ECON THEORY, V139, P295, DOI 10.1016/j.jet.2007.07.007
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Krause A, 2012, J ECON BEHAV ORGAN, V83, P583, DOI 10.1016/j.jebo.2012.05.015
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   Mancini L, 2016, REV FINANC STUD, V29, P1747, DOI 10.1093/rfs/hhv056
+   Manna M, 2009, 711 BANK IT EC RES I
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   Merton R. C., 2005, J INVEST MANAGE, V3, P6
+   Merton R.C., 1992, J APPL CORPORATE FIN, V4, P12, DOI DOI 10.1111/JACF.1992.4.ISSUE-4
+   MERTON RC, 1995, FINANC MANAGE, V24, P23, DOI 10.2307/3665532
+   Neveu AR, 2018, J ECON INTERACT COOR, V13, P241, DOI 10.1007/s11403-016-0182-z
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Shin H, 2010, RISK AND LIQUIDITY
+   Silva TC, 2016, J FINANC STABIL, V25, P247, DOI 10.1016/j.jfs.2016.04.004
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 43
+TC 2
+Z9 2
+U1 0
+U2 9
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1860-711X
+EI 1860-7128
+J9 J ECON INTERACT COOR
+JI J. Econ. Interact. Coord.
+PD APR
+PY 2018
+VL 13
+IS 1
+SI SI
+BP 51
+EP 79
+DI 10.1007/s11403-017-0210-7
+PG 29
+WC Economics
+SC Business & Economics
+GA GD2CN
+UT WOS:000430307800003
+DA 2019-12-27
+ER

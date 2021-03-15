@@ -1,0 +1,277 @@
+% This file was created with JabRef 2.7.1.
+% Encoding: UTF8
+
+@STRING{dke = {Data \& Knowledge Engineering}}
+
+@STRING{joop = {Journal of Object-Oriented Programming}}
+
+@STRING{lnai = {Lecture Notes in Artificial Intelligence}}
+
+@STRING{lncs = {Lecture Notes in Computer Science}}
+
+@STRING{mibi = {Medizinische Informatik und Bioinformatik}}
+
+@STRING{tkde = {IEEE Transactions on Knowledge and Data Engineering}}
+
+@STRING{tods = {ACM Transactions on Database Systems}}
+
+@STRING{tois = {ACM Transactions on Information Systems}}
+
+@ARTICLE{Allen2000Financial,
+  author = {Allen, Franklin and Gale, Douglas},
+  title = {Financial Contagion},
+  journal = {Journal of Political Economy},
+  year = {2000},
+  volume = {108},
+  pages = {1-33},
+  number = {1},
+  abstract = {Financial contagion is modeled as an equilibrium phenomenon. Because
+	liquidity preference shocks are imperfectly correlated across regions,
+	banks hold interregional claims on other banks to provide insurance
+	against liquidity preference shocks. When there is no aggregate uncertainty,
+	the first??ï¿½ï¿½??est allocation of risk sharing can be achieved. However,
+	this arrangement is financially fragile. A small liquidity preference
+	shock in one region can spread by contagion throughout the economy.
+	The possibility of contagion depends strongly on the completeness
+	of the structure of interregional claims. Complete claims structures
+	are shown to be more robust than incomplete structures.},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿????????????ï¿??????????????????/??????ï¿??????????????ï¿½ï¿½?ï¿½ï¿½??/Allen 2000 Financial Contagion.pdf:PDF},
+  keywords = {balanced-budget rules;monetary policy;fiscal theory of the price level}
+}
+
+@ARTICLE{Diamond2005Liquidity,
+  author = {Diamond, Douglas W. and Rajan, Raghuram G.},
+  title = {Liquidity Shortages and Banking Crises},
+  journal = {Journal of Finance},
+  year = {2005},
+  volume = {60},
+  pages = {615-647},
+  number = {2}
+}
+
+@ARTICLE{Eboli2010An,
+  author = {Eboli, Mario},
+  title = {An algorithm of propagation in weighted directed graphs with applications
+	to economics and finance},
+  journal = {International Journal of Intelligent Systems},
+  year = {2010},
+  volume = {25},
+  pages = {237-252},
+  number = {3},
+  abstract = {This paper puts forward an algorithm that computes the diffusion of
+	events and actions across networks of economic agents, an algorithm
+	that is applicable when such networks can be represented as weighted
+	directed graphs. The functioning of the algorithm is shown in three
+	applications. First, the algorithm is applied to a model of diffusion
+	of innovation driven by the agents' imitation of their neighbors'
+	behavior. Second, a graph-theoretic model of financial networks is
+	introduced, and the corresponding algorithm is used to compute the
+	so called domino effect, i.e., the diffusion of losses and insolvencies
+	caused by the initial default of one or more agents. Finally, the
+	algorithm is applied to the transfer of deposits operated by interbank
+	liquidity networks. ï¿???????????? 2010 Wiley Periodicals, Inc.},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿????????????ï¿??????????????????/??????ï¿??????????????ï¿½ï¿½?ï¿½ï¿½??/Eboli 2008 Analgorithmofpropagationinweighteddirectedgraphswithapplicationstoeconomicsandfinance.docx:Word;:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿????????????ï¿??????????????????/??????ï¿??????????????ï¿½ï¿½?ï¿½ï¿½??/Eboli 2008 An algorithm of propagation in weighted directed graphs with applications to economics and finance.pdf:PDF},
+  keywords = {Emotion;Emotion model;Conversation system;Discourse}
+}
+
+@ARTICLE{Eisenberg2001,
+  author = {Eisenberg, Larry and Noe, Thomas},
+  title = {Systemic Risk in Financial Systems},
+  journal = {Management Science},
+  year = {2001},
+  volume = {47},
+  pages = {236-249},
+  month = {02},
+  bdsk-url-1 = {https://doi.org/10.1287/mnsc.47.2.236.9835},
+  date-modified = {2019-03-02 04:10:42 +0000},
+  doi = {10.1287/mnsc.47.2.236.9835}
+}
+
+@ARTICLE{Eisenberg2001a,
+  author = {Eisenberg, Larry and Noe, Thomas},
+  title = {Systemic Risk in Financial Systems},
+  journal = {Management Science},
+  year = {2001},
+  volume = {47},
+  pages = {236-249},
+  month = {02},
+  bdsk-url-1 = {https://doi.org/10.1287/mnsc.47.2.236.9835},
+  date-modified = {2019-03-02 04:10:42 +0000},
+  doi = {10.1287/mnsc.47.2.236.9835}
+}
+
+@ARTICLE{Freixas2000Systemic,
+  author = {Freixas, Xavier and Parigi, Bruno M. and Rochet, Jean Charles},
+  title = {Systemic Risk, Interbank Relations, and Liquidity Provision by the
+	Central Bank},
+  journal = {Journal of Money Credit \& Banking},
+  year = {2000},
+  volume = {32},
+  pages = {611-638},
+  number = {3},
+  abstract = {We model systemic risk in an interbank market. Banks face liquidity
+	needs as consumers are uncertain about where they need to consume.
+	Interbank credit lines allow to cope with these liquidity shocks
+	while reducing the cost of maintaining reserves. However, the interbank
+	market exposes the system to a coordination failure (gridlock equilibrium)
+	even if all banks are solvent. When one bank is insolvent, the stability
+	of the banking system is affected in various ways depending on the
+	patterns of payments across locations. We investigate the ability
+	of the banking system to withstand the insolvency of one bank and
+	whether the closure of one bank generates a chain reaction on the
+	rest of the system. We analyze the coordinating role of the Central
+	bank in preventing payments systemic repercussions and we examine
+	the justification of the too-big-to-fail policy.},
+  keywords = {currency run;bank runs}
+}
+
+@ARTICLE{Gai2011Complexity,
+  author = {Gai, Prasanna and Haldane, Andrew and Kapadia, Sujit and Jmoneco,
+	J.},
+  title = {Complexity, concentration and contagion},
+  journal = {Journal of Monetary Economics},
+  year = {2011},
+  volume = {58},
+  pages = {453-470},
+  number = {5},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿???????????ï¿?????????????????/??????ï¿?????????????ï¿½ï¿½?ï¿½ï¿½??/Complexity, Concentration and Contagion_ A Comment.pdf:PDF}
+}
+
+@ARTICLE{Krause2012Interbank,
+  author = {Krause, Andreas and Giansante, Simone},
+  title = {Interbank lending and the spread of bank failures: A network model
+	of systemic risk ???},
+  journal = {Journal of Economic Behavior \& Organization},
+  year = {2012},
+  volume = {83},
+  pages = {583-608},
+  number = {3},
+  file = {\:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿???????????ï¿?????????????????/??????ï¿?????????????ï¿½ï¿½?ï¿½ï¿½??/Interbank Lending and the Spread of Bank Failures\\: A Network Model of Systemic Risk.pdf:PDF}
+}
+
+@ARTICLE{Lee2013Systemic,
+  author = {Lee, Seung Hwan},
+  title = {Systemic liquidity shortages and interbank network structures ???},
+  journal = {Social Science Electronic Publishing},
+  year = {2013},
+  volume = {9},
+  pages = {1-12},
+  number = {1},
+  abstract = {This paper aims to shed light on the systemic nature of liquidity
+	risk and to propose a method for calculating systemic liquidity shortages.
+	Our method incorporates not only direct liquidity shortages but also
+	indirect liquidity shortages due to the knock-on effects through
+	interbank linkages. We perform a simulation with a simple banking
+	system model and find that a deficit bank can mitigate a liquidity
+	shortage by holding more claims on a surplus bank. Meanwhile, a greater
+	imbalance in liquidity positions across banks tends to aggravate
+	the liquidity shortage of a deficit bank. According to comparative
+	analysis between different types of network structures, a core-periphery
+	network with a deficit money center bank gives rise to the highest
+	level of systemic liquidity shortage, and a banking system becomes
+	more vulnerable to liquidity shocks as its interbank network becomes
+	more ill-matched.},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿????????????ï¿??????????????????/??????ï¿??????????????ï¿½ï¿½?ï¿½ï¿½??/Seung Hwan Lee2012_CCMP_08_paper Systemic Liquidity Shortages and Interbank Network Structures.pdf:PDF},
+  keywords = {G01;G11;G21}
+}
+
+@ARTICLE{May2008Complex,
+  author = {May, Robert M, and Levin, Simon A, and George, Sugihara},
+  title = {Complex systems: ecology for bankers},
+  journal = {Nature},
+  year = {2008},
+  volume = {451},
+  pages = {893},
+  number = {7181},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿???????????ï¿?????????????????/??????ï¿?????????????ï¿½ï¿½?ï¿½ï¿½??/May_2008_Complex systems_ Ecology for bankers.pdf:PDF}
+}
+
+@ARTICLE{MemmeChristoph2008l,
+  author = {Memmel, Christoph and Stein, Ingrid},
+  title = {Contagion in the German interbank market},
+  year = {2008},
+  month = {01},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿???????????ï¿?????????????????/??????ï¿?????????????ï¿½ï¿½?ï¿½ï¿½??/Christoph Memmel et _ 2008 _ Contagion_in_the_German_interbank_market.pdf:PDF}
+}
+
+@ARTICLE{Mistrulli2011Assessingfinancialcontagionintheinterbankmarket,
+  author = {Mistrulli, Paolo Emilio},
+  title = {Assessing financial contagion in the interbank market: Maximum entropy
+	versus observed interbank lending patterns},
+  journal = {Journal of Banking \& Finance},
+  year = {2011},
+  volume = {35},
+  pages = {1114-1127},
+  number = {5},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿???????????ï¿?????????????????/??????ï¿?????????????ï¿½ï¿½?ï¿½ï¿½??/Paolo Emilio Mistrulli _ 2011 _ Assessing financial contagion in the interbank market Maximum entropy versus observed interbank lending patterns.pdf:PDF}
+}
+
+@ARTICLE{Soram2007The,
+  author = {Soram{\"a}ki, Kimmo and Bech, Morten L. and Arnold, Jeffrey and Glass,
+	Robert J. and Beyeler, Walter E.},
+  title = {The topology of interbank payment flows},
+  journal = {Physica A-statistical Mechanics \& Its Applications},
+  year = {2007},
+  volume = {379},
+  pages = {317-333},
+  number = {1},
+  __markedentry = {[ethan:]},
+  date-added = {2018-12-19 12:45:28 +0800},
+  date-modified = {2018-12-19 12:45:28 +0800},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿????????????ï¿??????????????????/??????ï¿??????????????ï¿½ï¿½?ï¿½ï¿½??/The Topology of Interbank Payment Flows _ Kimmo Soramaki.pdf.pdf:PDF},
+  owner = {ethan},
+  timestamp = {2018.12.21}
+}
+
+@ARTICLE{Thurner2003Risk,
+  author = {Thurner, Stefan and Hanel, Rudolf and Pichler, Stefan},
+  title = {Risk trading, network topology and banking regulation},
+  journal = {Quantitative Finance},
+  year = {2003},
+  volume = {3},
+  pages = {306-319},
+  number = {4},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿???????????ï¿?????????????????/??????ï¿?????????????ï¿½ï¿½?ï¿½ï¿½??/Stefan Thurner_2003_Risk trading, network topology, and banking regulation.pdf:PDF}
+}
+
+@ARTICLE{Toivanen2009Financial,
+  author = {Toivanen, Mervi},
+  title = {Financial Interlinkages and Risk of Contagion in the Finnish Interbank
+	Market},
+  journal = {Social Science Electronic Publishing},
+  year = {2009},
+  file = {:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿???????????ï¿?????????????????/??????ï¿?????????????ï¿½ï¿½?ï¿½ï¿½??/Mervi Toivanen _ 2009 _ Financial interlinkages and risk of contagion in the Finnish interbank market.pdf:PDF}
+}
+
+@ARTICLE{Upper2004Estimating,
+  author = {Upper, Christian and Worms, Andreas},
+  title = {Estimating bilateral exposures in the German interbank market: Is
+	there a danger of contagion?},
+  journal = {European Economic Review},
+  year = {2004},
+  volume = {48},
+  pages = {827-849},
+  number = {4},
+  file = {\:/Users/ethan/Documents/Ethan/CoreFiles/ReferencesFile/ï¿???????????ï¿?????????????????/??????ï¿?????????????ï¿½ï¿½?ï¿½ï¿½??/UpperWorms _ 2004 _ Estimating Bilateral Exposures in the German Interbank Market\\: Is there a Danger of Contagion.pdf:PDF}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
+@comment{jabref-meta: groupsversion:3;}
+
+@comment{jabref-meta: groupstree:
+0 AllEntriesGroup:;
+1 ExplicitGroup:link spam\;0\;;
+1 ExplicitGroup:content spam\;0\;;
+1 ExplicitGroup:competiror click fraud\;0\;;
+1 KeywordGroup:Norman\;0\;owner\;Norman\;1\;0\;;
+1 ExplicitGroup:ourpublications\;0\;;
+1 ExplicitGroup:test\;0\;;
+}
+

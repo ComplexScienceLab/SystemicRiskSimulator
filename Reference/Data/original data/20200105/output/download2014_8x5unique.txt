@@ -1,0 +1,456 @@
+
+PT J
+AU Balla, E
+   Ergen, I
+   Migueis, M
+AF Balla, Eliana
+   Ergen, Ibrahim
+   Migueis, Marco
+TI Tail dependence and indicators of systemic risk for large US
+   depositories
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Extreme value dependence; Systemic risk; Systemically important
+   financial institutions
+ID EXTREME-VALUE DEPENDENCE; EQUITY MARKETS; STATISTICS; BEHAVIOR; PRICES;
+   STOCKS
+AB In this study, we investigate the extreme loss tail dependence between stock returns of large US depository institutions. We find that stock returns exhibit strong loss dependence even in their limiting joint extremes. Motivated by this result, we derive extremal dependence-based systemic risk indicators. The proposed systemic risk indicators reflect downturns in the US financial industry very well. We also develop a set of firm-level average extremal dependence measures. We show that these firm-level measures could have been used to identify the firms that were more vulnerable to the 2007-2008 financial crisis. Additionally, we explore the performance of selected systemic risk indicators in predicting the crisis performance of large US depository institutions and find that the average stock return correlations are also good predictors of crisis period returns. Finally, we identify factors predictive of extremal dependence for the US depository institutions in a panel regression setting. Strength of extremal dependence increases with asset size and similarity of financial fundamentals. On the other hand, strength of extremal dependence decreases with capitalization, liquidity, funding stability and asset quality. We believe the proposed indicators have the potential to inform the prudential supervision of systemic risk. Published by Elsevier B.V.
+C1 [Balla, Eliana; Ergen, Ibrahim] Fed Reserve Bank Richmond, Richmond, VA USA.
+   [Migueis, Marco] Fed Reserve Board, Washington, DC USA.
+RP Migueis, M (reprint author), Fed Reserve Syst, Board Governors, Div Banking Supervis & Regulat, 20th & C St NW,Mail Stop 1809, Washington, DC 20551 USA.
+EM Eliana.Balla@rich.frb.org; ibrahim.Ergen@rich.frb.org;
+   mmigueis@gmail.com
+RI Migueis, Marco/D-8275-2017; ergen, ibrahim/R-4233-2019
+OI Migueis, Marco/0000-0002-9855-7944; 
+CR Achatya V., 2010, MEASURING SYSTEMIC R, P10
+   Adrian T., 2011, NBER WORKING PAPERS
+   Basel Committee, 2011, GLOBALLY SYSTEMICALL
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brownless C., 2012, VOLATILITY CORRELATI
+   Chan-Lau JA, 2004, IMF STAFF PAPERS, V51, P386
+   De Nicolo G, 2002, J BANK FINANC, V26, P861, DOI 10.1016/S0378-4266(02)00211-X
+   DiTraglia FJ, 2013, J BANK FINANC, V37, P305, DOI 10.1016/j.jbankfin.2012.08.022
+   Embrechts P., 1999, RISK, V12, P69
+   Ergen I, 2014, APPL ECON, V46, P2215, DOI 10.1080/00036846.2014.899678
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   Gnedenko B, 1943, ANN MATH, V44, P423, DOI 10.2307/1968974
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Ledford AW, 1998, ADV APPL PROBAB, V30, P197, DOI 10.1239/aap/1035228000
+   Ledford AW, 1996, BIOMETRIKA, V83, P169, DOI 10.1093/biomet/83.1.169
+   Ledford AW, 1997, J ROY STAT SOC B MET, V59, P475, DOI 10.1111/1467-9868.00080
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   McNeil A. J., 2000, J EMPIR FINANC, V7, P271, DOI DOI 10.1016/S0927-5398(00)00012-8
+   Moore K., 2012, DNB WORKING PAPER 34
+   Nelsen R., 2006, AN INTRODUCTION TO C
+   Patro DK, 2013, J FINANC STABIL, V9, P105, DOI 10.1016/j.jfs.2012.03.002
+   Poon SH, 2003, STAT SINICA, V13, P929
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   SIBUYA M, 1960, ANN I STAT MATH, V11, P195
+   STARICA C., 1999, J EMPIR FINANC, V6, P515
+   Trivedi P.K., 2005, FDN TRENDS ECONOMETR, V1, P1, DOI DOI 10.1561/0800000005
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 31
+TC 9
+Z9 9
+U1 1
+U2 16
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2014
+VL 15
+BP 195
+EP 209
+DI 10.1016/j.jfs.2014.10.002
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA AW1OW
+UT WOS:000346059800015
+OA Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Kohonen, A
+AF Kohonen, Anssi
+TI Transmission of government default risk in the eurozone
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE SVAR; Contagion; Interdependencies; Hypothesis testing; Sovereign
+   spreads
+ID SOVEREIGN DEBT CRISIS; FINANCIAL CONTAGION; MONETARY-POLICY;
+   INTERNATIONAL PROPAGATION; MARKET LINKAGES; STOCK-MARKET; SHOCKS;
+   INTERDEPENDENCE; IDENTIFICATION; RESIDUALS
+AB This paper analyzes the reasons behind the rising ten year government bond spreads in the eurozone during the recent euro debt crisis. We develop a structural vector autoregressive model that allows us to test whether the upsurges in the spreads reflect breaks in the instantaneous shock propagation mechanisms between the spreads (contagion), changing dynamical effects, or changing country specific risk factors. Especially, a new approach to test the stability of the instantaneous shock propagation mechanisms is introduced. Our results show that although contagion appears as the single most important reason for the increasing spreads, there are notable differences between the countries, for example and Ireland, Spain and Italy see statistically significant increases in their country specific risk factors. (C) 2014 Elsevier Ltd. All rights reserved.
+C1 [Kohonen, Anssi] Univ Helsinki, Dept Polit & Econ Studies, FIN-00014 Helsinki, Finland.
+   [Kohonen, Anssi] HECER, Helsinki, Finland.
+RP Kohonen, A (reprint author), Univ Helsinki, Dept Polit & Econ Studies, FIN-00014 Helsinki, Finland.
+EM anssi.kohonen@helsinki.fi
+CR Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Billio M, 2010, COMPUT STAT DATA AN, V54, P2443, DOI 10.1016/j.csda.2009.03.018
+   Caporale G. M, 2005, J EMPIR FINANC, V12, P476, DOI DOI 10.1016/J.JEMPFIN.2004.02.005
+   Caporale GM, 2005, J INT MONEY FINANC, V24, P39, DOI 10.1016/j.jimonfin.2004.10.005
+   Caporin M., 2013, 18741 NBER
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   De Santis RA, 2014, J EMPIR FINANC, V26, P150, DOI 10.1016/j.jempfin.2013.12.003
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Favero C, 2012, ECON POLICY, P231, DOI 10.1111/j.1468-0327.2012.00282.x
+   Forbes K., 2012, 18465 NBER
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Forbes Kristin, 2001, INT FINANCIAL CONTAG, P44
+   Kalliovirta L, 2012, ECONOMET J, V15, P358, DOI 10.1111/j.1368-423X.2011.00364.x
+   Kalliovirta Leena, 2010, RELIABLE RESID UNPUB
+   Lanne M, 2008, J MONEY CREDIT BANK, V40, P1131, DOI 10.1111/j.1538-4616.2008.00151.x
+   Lanne M, 2010, J BUS ECON STAT, V28, P159, DOI 10.1198/jbes.2009.06003
+   Lutkepohl H., 2007, NEW INTRO MULTIPLE T
+   Metiu N, 2012, ECON LETT, V117, P35, DOI 10.1016/j.econlet.2012.04.074
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Missio Sebastian, 2011, 3554 CES
+   Mody A, 2012, ECON POLICY, P199, DOI 10.1111/j.1468-0327.2012.00281.x
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   Pisani-Ferry J, 2013, J INT MONEY FINANC, V34, P6, DOI 10.1016/j.jimonfin.2012.11.002
+   Rigobon R, 2003, REV ECON STAT, V85, P777, DOI 10.1162/003465303772815727
+   Rigobon R, 2003, J INT ECON, V61, P261, DOI 10.1016/S0022-1996(03)00007-2
+   Rigobon R, 2003, Q J ECON, V118, P639, DOI 10.1162/003355303321675473
+   Rigobon R, 2002, J DEV ECON, V69, P423, DOI 10.1016/S0304-3878(02)00095-0
+NR 35
+TC 9
+Z9 10
+U1 0
+U2 11
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD OCT
+PY 2014
+VL 47
+BP 71
+EP 85
+DI 10.1016/j.jimonfin.2014.04.006
+PG 15
+WC Business, Finance
+SC Business & Economics
+GA AO6MZ
+UT WOS:000341467500004
+DA 2019-12-27
+ER
+
+PT J
+AU Whang, YK
+AF Whang, Yun-kyung
+TI Systemic innovation and outsourcing: the case of the mobile data
+   services in Korea
+SO ASIAN JOURNAL OF TECHNOLOGY INNOVATION
+LA English
+DT Article
+DE mobile handsets; mobile data services; market transaction;
+   co-specialization; Korea
+ID INDUSTRY; BOUNDARIES; FIRM
+AB This paper investigates the decision that the mobile operators in Korea outsourced the development and manufacture of handsets which are co-specialized with their proprietary data service offerings. This choice of a contractual approach through the market is contradict to what the conventional literature argues. The paper explores the resolution of this contradiction and concludes that operators' contracts were facilitated by handset producers' willingness to supply co-specialized assets due to their new strategy and, more importantly, the greater power of operators relative to handset producers, which made it easier to push handset producers to develop the products to support the services. These two factors reduced the cost of contracting and limited the potential risk of opportunism. The manufacturers' new strategy to facilitate cooperation and the sources of unusual operators' power are also discussed.
+C1 Daegu Gyeongbuk Inst Sci & Technol, Taegu, South Korea.
+RP Whang, YK (reprint author), Daegu Gyeongbuk Inst Sci & Technol, Taegu, South Korea.
+EM yw3200@dgist.ac.kr
+CR [Anonymous], 2001, BUSINESS KOREA
+   [Anonymous], 2005, KOREAN EC DAILY
+   Arrow Kenneth, 1963, INDIVIDUAL VALUES SO
+   Barney JB, 1999, SLOAN MANAGE REV, V40, P137
+   Dodgson M, 2008, RES POLICY, V37, P430, DOI 10.1016/j.respol.2007.12.005
+   FRANSMAN M, 2006, GLOBAL BROADBAND BAT
+   Fransman M., 2010, NEW ICT ECOSYSTEM IM
+   Funk JL, 2009, TELECOMMUN POLICY, V33, P4, DOI 10.1016/j.telpol.2008.09.002
+   Gawer A., 2002, PLATFORM LEADERSHIP
+   Henten A., 2003, CTI WORKING PAPERS
+   Jacobides MG, 2006, RES POLICY, V35, P1200, DOI 10.1016/j.respol.2006.09.005
+   LANGLOIS RN, 1988, J INST THEOR ECON, V144, P635
+   MOCIE (Ministry of Commerce Industry and Energy), 2005, E COMM KOR
+   Park C. S., 2007, MOBILE TELECOMMUNICA
+   Park J. H., 2004, ELECT TELECOMMUNICAT, V19, P67
+   PISANO GP, 1990, ADMIN SCI QUART, V35, P153, DOI 10.2307/2393554
+   RICHARDSON GB, 1972, ECON J, V82, P883, DOI 10.2307/2230256
+   Teece D., 1996, HARVARD BUS REV, V80, P5
+   TEECE DJ, 1984, CALIF MANAGE REV, V26, P87, DOI 10.2307/41165082
+   TEECE DJ, 1986, RES POLICY, V15, P285, DOI 10.1016/0048-7333(86)90027-2
+   Tripsas M, 1997, STRATEGIC MANAGE J, V18, P119, DOI 10.1002/(SICI)1097-0266(199707)18:1+<119::AID-SMJ921>3.3.CO;2-S
+   Whang Y.-K., 2009, THESIS U SUSSEX ENGL
+   Whang YK, 2011, WORLD DEV, V39, P1358, DOI 10.1016/j.worlddev.2011.01.002
+   Williamson O.E., 1985, EC I CAPITALISM
+   Yang H., 2003, WORKSH UB COMP ENV O
+   Yin R. K., 1994, CASE STUDY RES DESIG
+NR 26
+TC 0
+Z9 0
+U1 1
+U2 14
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1976-1597
+EI 2158-6721
+J9 ASIAN J TECHNOL INNO
+JI Asian J. Technol. Innov.
+PD JUN
+PY 2014
+VL 22
+IS 1
+BP 54
+EP 66
+DI 10.1080/19761597.2014.905231
+PG 13
+WC Business; Economics
+SC Business & Economics
+GA AJ3JM
+UT WOS:000337562400004
+DA 2019-12-28
+ER
+
+PT J
+AU Brummitt, CD
+   Sethi, R
+   Watts, DJ
+AF Brummitt, Charles D.
+   Sethi, Rajiv
+   Watts, Duncan J.
+TI Inside Money, Procyclical Leverage, and Banking Catastrophes
+SO PLOS ONE
+LA English
+DT Article
+ID FINANCIAL CONTAGION; MARKET LIQUIDITY; SYSTEMIC RISK; STABILITY;
+   NETWORKS; CASCADES; MODEL
+AB We explore a model of the interaction between banks and outside investors in which the ability of banks to issue inside money (short-term liabilities believed to be convertible into currency at par) can generate a collapse in asset prices and widespread bank insolvency. The banks and investors share a common belief about the future value of certain long-term assets, but they have different objective functions; changes to this common belief result in portfolio adjustments and trade. Positive belief shocks induce banks to buy risky assets from investors, and the banks finance those purchases by issuing new short-term liabilities. Negative belief shocks induce banks to sell assets in order to reduce their chance of insolvency to a tolerably low level, and they supply more assets at lower prices, which can result in multiple market-clearing prices. A sufficiently severe negative shock causes the set of equilibrium prices to contract (in a manner given by a cusp catastrophe), causing prices to plummet discontinuously and banks to become insolvent. Successive positive and negative shocks of equal magnitude do not cancel; rather, a banking catastrophe can occur even if beliefs simply return to their initial state. Capital requirements can prevent crises by curtailing the expansion of balance sheets when beliefs become more optimistic, but they can also force larger price declines. Emergency asset price supports can be understood as attempts by a central bank to coordinate expectations on an equilibrium with solvency.
+C1 [Brummitt, Charles D.] Univ Calif Davis, Dept Math, Davis, CA 95616 USA.
+   [Brummitt, Charles D.] Univ Calif Davis, Complex Sci Ctr, Davis, CA 95616 USA.
+   [Sethi, Rajiv] Columbia Univ, Dept Econ, Barnard Coll, New York, NY 10027 USA.
+   [Sethi, Rajiv] Santa Fe Inst, Santa Fe, NM 87501 USA.
+   [Watts, Duncan J.] Microsoft Res, New York, NY USA.
+RP Brummitt, CD (reprint author), Univ Calif Davis, Dept Math, Davis, CA 95616 USA.
+EM brummitt@gmail.com
+RI ; Brummitt, Charles/K-8148-2014
+OI Sethi, Rajiv/0000-0003-2631-5644; Brummitt, Charles/0000-0003-2553-8862
+FU Department of Defense through the National Defense Science and
+   Engineering Graduate Fellowship ProgramUnited States Department of
+   Defense; Microsoft Research
+FX This project began while C.D.B. and R.S. were visitors at Microsoft
+   Research (http://research.microsoft.com/en-us/), which provided funding.
+   CDB was partially supported by the Department of Defense through the
+   National Defense Science and Engineering Graduate Fellowship Program
+   (ndseg.asee.org). The funders had no role in study design, data
+   collection and analysis, decision to publish, or preparation of the
+   manuscript. The funder, Microsoft Research, provided support in the form
+   of salaries for authors C.D.B., R.S., and D.J.W. but did not have any
+   additional role in the study design, data collection and analysis,
+   decision to publish, or preparation of the manuscript. The specific
+   roles of these authors are articulated in the author contributions
+   section.
+CR Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Admati A. R., 2013, BANKERS NEW CLOTHES
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anand K, 2012, J ECON DYN CONTROL, V36, P1088, DOI 10.1016/j.jedc.2012.03.005
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bianchi J, 2011, AM ECON REV, V101, P3400, DOI 10.1257/aer.101.7.3400
+   Borio C. E. V., 2002, 114 BIS
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caballero RJ, 2009, 15479 NBER
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Committee on the Global Financial System, 2010, 36 COMM GLOB FIN SY
+   Crockett A., 2000, 11 INT C BANK SUP
+   Dang T. V., 2013, IGNORANCE DEBT UNPUB
+   Danielsson J, 2011, FINANCIAL MARKETS GR, V665
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Elliott M, 2012, FINANCIAL NETWORKS C
+   Fostel A, 2008, AM ECON REV, V98, P1211, DOI 10.1257/aer.98.4.1211
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Geanakaplos J., 2003, ECONOMETRIC SOC MONO, V2, P170
+   Geanakoplos J., 1997, EC EVOLVING COMPLEX, VXXVII, P285
+   Geanakoplos J, 2010, NBER MACROECON ANN
+   GENNOTTE G, 1990, AM ECON REV, V80, P999
+   Goodhart Charles A. E., 2010, FUTURE FINANCE LSE R, P165, DOI DOI 10.1111/J.1467-8330.2012.01045.X
+   Gorton G, 2014, AM ECON REV, V104, P343, DOI 10.1257/aer.104.2.343
+   Gorton GB., 2012, MISUNDERSTANDING FIN
+   Huang X, 2013, SCI REPORTS
+   Krishnamurthy A, 2012, TECHNICAL REPORT
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Minsky H.P., 1975, JM KEYNES
+   Minsky H. P., 1986, STABILIZING UNSTABLE
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Rosser J. B., 1991, CATASTROPHE CHAOS GE
+   Shin HS, 2010, RISK LIQUIDITY
+   Viegas E, 2013, COMPLEXITY, V19, P22, DOI 10.1002/cplx.21452
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+NR 38
+TC 6
+Z9 6
+U1 1
+U2 20
+PU PUBLIC LIBRARY SCIENCE
+PI SAN FRANCISCO
+PA 1160 BATTERY STREET, STE 100, SAN FRANCISCO, CA 94111 USA
+SN 1932-6203
+J9 PLOS ONE
+JI PLoS One
+PD AUG 19
+PY 2014
+VL 9
+IS 8
+AR e104219
+DI 10.1371/journal.pone.0104219
+PG 12
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA AN6XM
+UT WOS:000340742100021
+PM 25136959
+OA DOAJ Gold, Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Jobst, AA
+AF Jobst, Andreas A.
+TI Measuring systemic risk-adjusted liquidity (SRL)-A model approach
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Systemic risk; Liquidity risk; Net Stable Funding Ratio (NSFR); Extreme
+   value theory; Financial contagion; Macroprudential policy; Liquidity
+   regulation
+ID DEPOSIT INSURANCE; OPTIONS; VOLATILITY; DEPENDENCE; PRICES; BOND
+AB Little progress has been made so far in addressing in a comprehensive way the negative externalities caused by excessive maturity transformation and the implications for effective liquidity regulation of banks. The SRL model combines option pricing theory with market information and balance sheet data to generate probabilistic measure of systemic liquidity risk. It enhances price-based liquidity regulation by linking a bank's maturity mismatch impacting the stability of its funding with those characteristics of other banks, subject to individual changes in risk profiles and common changes in market conditions impacting funding and market liquidity risk. This approach can then be used (i) to quantify an individual institution's time-varying contribution to expected losses from system-wide liquidity shortfalls and (ii) to price insurance premia that provide incentives for banks to internalize the social cost of their individual funding decisions. (C) 2014 Elsevier B.V. All rights reserved.
+C1 Int Monetary Fund IMF, Washington, DC 20431 USA.
+RP Jobst, AA (reprint author), Int Monetary Fund IMF, 760 19th St NW, Washington, DC 20431 USA.
+EM ajobst@imf.org
+CR Acharya V., 2012, CEPR DISCUSSION PAPE
+   Acharya Viral V., 2010, ECONOMIC POLICY REVI
+   Acharya VV, 2011, WILEY FINANC SER, P1
+   Aikman David, 2009, WORKING PAPER NO 372
+   Allen Franklin, 2010, NBER WORKING PAPER N
+   Backus D., 2004, WORKING PAPER
+   Bakshi G, 1997, J FINANC, V52, P2003, DOI 10.1111/j.1540-6261.1997.tb02749.x
+   Basel Committee on Banking Supervision (BCBS), 2013, BCBS PUBLICATION, V238
+   Basel Committee on Banking Supervision (BCBS), 2011, BCBS PUBLICATION, V193
+   Basel Committee on Banking Supervision (BCBS), 2012, BASEL III LIQUIDITY
+   Basel Committee on Banking Supervision (BCBS), 2009, REVISIONS TO THE BAS
+   Basel Committee on Banking Supervision (BCBS), 2014, BCBS PUBLICATION, V271
+   Basel Committee on Banking Supervision (BCBS), 2010, BASEL III INTERNATIO
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Bohn Jeffrey R., 2003, MODELING DEFAULT RIS
+   Borwein JM, 2000, J COMPUT APPL MATH, V121, P247, DOI 10.1016/S0377-0427(00)00336-8
+   BREEDEN DT, 1978, J BUS, V51, P621, DOI 10.1086/296025
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Cao Jin, 2009, CESIFO WORKING PAPER
+   Chiu W.-C., 2014, WORKING PAPER
+   Coles S., 1999, EXTREMES, V2, P339, DOI [DOI 10.1023/A:1009963131610, 10.1023/A:1009963131610]
+   Committee on the Global Financial System (CGFS), 2011, CGFS PAPER NO 45
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   COX JC, 1979, J FINANC ECON, V7, P229, DOI 10.1016/0304-405X(79)90015-1
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Drehmann Mathias, 2011, BIS Q REV, P25
+   Dumas B, 1998, J FINANC, V53, P2059, DOI 10.1111/0022-1082.00083
+   Ellul Andrew, 2013, FORDHAM UNIVERSITY S
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Ericsson J, 2005, J BUS, V78, P707, DOI 10.1086/427644
+   Ericsson Jan, 2004, J FIXED INCOME, P38
+   Farhi E, 2009, REV ECON STUD, V76, P973, DOI 10.1111/j.1467-937X.2009.00540.x
+   Financial Stability Board (FSB), 2011, CONSULTATION PAPER B
+   Fisher RA, 1928, P CAMB PHILOS SOC, V24, P180, DOI 10.1017/S0305004100015681
+   Gnedenko B, 1943, ANN MATH, V44, P423, DOI 10.2307/1968974
+   Gobat Jeanne, IMF WORKING PAPER
+   Goodhart Charles, 2009, PRESENTED AT FINANCI
+   Gorton Gary B., 2009, NBER WORKING PAPER N
+   Gray D., 2010, J INVESTMENT MANAGEM, V8, P90
+   Gray Dale F., 2010, J INVESTMENT MANAGEM, V8, P23
+   Gray Dale F., 2011, SVERIGES RIKSBANK EC, P68
+   Gray Dale F., 2011, LESSONS FINANCIAL CR, P143
+   Hall P, 2000, BERNOULLI, V6, P835, DOI 10.2307/3318758
+   HESTON SL, 1993, REV FINANC STUD, V6, P327, DOI 10.1093/rfs/6.2.327
+   Heston SL, 2000, REV FINANC STUD, V13, P585, DOI 10.1093/rfs/13.3.585
+   Holmstrom B, 1997, Q J ECON, V112, P663, DOI 10.1162/003355397555316
+   IMF, 2012, WOR ECON FINANC, P1
+   IMF (International Monetary Fund), 2010, COUNTRY REPORT NO 10
+   IMF (International Monetary Fund), 2011, COUNTRY REPORT NO 11
+   International Monetary Fund (IMF), 2008, GLOBAL FINANCIAL STA
+   International Monetary Fund (IMF), 2010, GLOBAL FINANCIAL STA
+   International Monetary Fund (IMF), 2011, IMF COUNTRY REPORT 1
+   International Monetary Fund (IMF), 2011, THE UNITED STATES SP
+   International Monetary Fund (IMF), 2012, IMF COUNTRY REPORT 1
+   International Monetary Fund (IMF), 2009, GLOBAL FINANCIAL STA
+   Jacome Luis I., 2012, PROTECTING THE WHOLE, V49, P30
+   JENSEN MC, 1976, J FINANC ECON, V3, P305, DOI 10.1016/0304-405X(76)90026-X
+   Jobst AA, 2007, J OPER RISK, V2, P3, DOI 10.21314/JOP.2007.026
+   Jobst AA, 2013, INT REV FINANC ANAL, V28, P112, DOI 10.1016/j.irfa.2013.01.005
+   Jobst Andreas A., 2013, IMF WORKING PAPER NO
+   Jobst Andreas A., 2008, LATIN AM LINKAGES GL, p35f
+   Jobst Andreas A., 2011, GLOBAL FINANCIAL STA, P101
+   Jobst Andreas A., 2012, IMF WORKING PAPER NO
+   JONES EP, 1984, J FINANC, V39, P611, DOI 10.2307/2327919
+   Manconi A, 2012, J FINANC ECON, V104, P491, DOI 10.1016/j.jfineco.2011.05.011
+   Merrill Craig B., 2012, NBER WORKING PAPER N
+   MERTON RC, 1973, BELL J ECON, V4, P141, DOI 10.2307/3003143
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Perotti E., 2009, CEPR POLICY INSIGHT
+   Perotti E, 2011, INT J CENT BANK, V7, P3
+   Perotti Enrico, 2012, FINANC TIMES, P9
+   Pickands J, 1981, P 43 SESS INT STAT I, V49, P859
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Roe Mark, 2009, FINANCIAL TIMES
+   RONN EI, 1986, J FINANC, V41, P871, DOI 10.2307/2328234
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Shleifer Andrei, 2010, NBER WORKING PAPER N
+   Sondow Jonathan, 1998, MATH MAG, P219
+   Valderrama Laura, 2010, IMF WORKING PAPER NO
+   Vandewalle B, 2004, STAT IND TECHNOL, P367
+   Walter Ingo, REGULATING WALL STRE
+   Weistroffer C., 2011, IDENTIFYING SYSTEMIC
+   WEITZMAN ML, 1974, REV ECON STUD, V41, P477, DOI 10.2307/2296698
+NR 84
+TC 12
+Z9 12
+U1 2
+U2 47
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD AUG
+PY 2014
+VL 45
+BP 270
+EP 287
+DI 10.1016/j.jbankfin.2014.04.013
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA AL9IV
+UT WOS:000339455700020
+DA 2019-12-27
+ER

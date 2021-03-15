@@ -1,0 +1,454 @@
+
+PT J
+AU Liu, XC
+AF Liu, Xiaochun
+TI Measuring systemic risk with regime switching in tails
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Regime-switching CoVaR; Forward-looldng systemic risk; Systemically
+   important financial institutions; Stochastic dominance test;
+   Countercyclical macroprudential policy; Bank systemic risk index
+ID REGRESSION QUANTILES; FINANCIAL INSTITUTIONS; COVAR; INSURANCE; MODELS;
+   BANKS
+AB This paper motivates the importance of modeling nonlinearities in measuring systemic risk. I capitalize this motivation by generalizing the CoVaR approach proposed by Adrian and Brunnermeier (2016) to allow it switching between a high and a normal risk regime filtered from data.. Considering the U.S. large bank holding companies (BHCs), this paper shows that modeling regime changes in tails is capable of capturing both amplification and mean-reversion effects of an adverse shock to a bank's balance sheet on the banking system. Using the Kolmogorov Smirnov test statistics with and without bootstrapping, I perform the significance test to identify systemically important financial institutions (SIFIs), and the stochastic dominance test to rank the identified SIFIs. The stochastic dominance test raises the concern that the CoVaR measure underestimates systemic risk contributions for SIFIs but overestimates for non-SIFIs. Finally, applying the BHCs' characteristics and housing market price to forecast the regime-switching systemic risk out-of-sample, I obtain from 4 and 8-quarter-ahead horizons a desirable countercyclical, forward-looking measure of systemic risk.
+C1 [Liu, Xiaochun] Univ Alabama, Culverhouse Coll Commerce, Dept Econ Finance & Legal Studies, Tuscaloosa, AL 35487 USA.
+RP Liu, XC (reprint author), Univ Alabama, Culverhouse Coll Commerce, Dept Econ Finance & Legal Studies, Tuscaloosa, AL 35487 USA.
+EM xliu121@ua.edu
+CR Abadie A, 2002, J AM STAT ASSOC, V97, P284, DOI 10.1198/016214502753479419
+   Acharya V., 2010, WORKING PAPER
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Bauwens L, 2010, ECONOMET J, V13, P218, DOI 10.1111/j.1368-423X.2009.00307.x
+   Bernal O, 2014, J BANK FINANC, V47, P270, DOI 10.1016/j.jbankfin.2014.05.030
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Brownlees CT, 2015, WORKING PAPER
+   Brunnermeier M., 2012, WORKING PAPER
+   Brunnermeier M. K, 2013, HDB EC FINANCE
+   Castro C, 2014, J EMPIR FINANC, V25, P1, DOI 10.1016/j.jempfin.2013.10.009
+   Chib S, 2001, J AM STAT ASSOC, V96, P270, DOI 10.1198/016214501750332848
+   Danielsson J., 2011, MODEL RISK SYSTEMIC
+   Deutsche Bundesbank, 2010, FINANCIAL STABILITY, P31
+   Durbin J., 1973, DISTRIBUTION THEORY
+   Enders Walter, 2010, APPL ECONOMETRIC TIM
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   European Systemic Risk Board, 2012, ESRB RISK DASHB
+   Fong T., 2011, REV FUTURES MARKETS, V20, P7
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   International Monetary Fund, 2009, GLOB FIN STAB REP, P74
+   Koenker R, 2006, J AM STAT ASSOC, V101, P980, DOI 10.1198/016214506000000672
+   Liu X., 2015, WORKING PAPER
+   Liu XC, 2016, STAT NEERL, V70, P356, DOI 10.1111/stan.12091
+   Loeffler G., 2013, 042013 BUND
+   Lopez-Espinosa G, 2015, J BANK FINANC, V58, P471, DOI 10.1016/j.jbankfin.2015.05.004
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   MANSKI CF, 1993, REV ECON STUD, V60, P531, DOI 10.2307/2298123
+   Miao JJ, 2014, J MATH ECON, V53, P130, DOI 10.1016/j.jmateco.2014.06.002
+   Qu ZJ, 2008, J ECONOMETRICS, V146, P170, DOI 10.1016/j.jeconom.2008.08.006
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Roengiptya R, 2011, 022010 BANK THAIL
+   Sedunov J, 2016, J FINANC STABIL, V24, P71, DOI 10.1016/j.jfs.2016.04.005
+   Van Oordt M., 2010, WORKING PAPER
+   White H, 2015, J ECONOMETRICS, V187, P169, DOI 10.1016/j.jeconom.2015.02.004
+   Wong A., 2010, 032010 HONG KONG MON
+   Ye WY, 2016, INSUR MATH ECON, V67, P21, DOI 10.1016/j.insmatheco.2015.11.002
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 40
+TC 5
+Z9 5
+U1 2
+U2 10
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD OCT
+PY 2017
+VL 67
+BP 55
+EP 72
+DI 10.1016/j.econmod.2016.09.015
+PG 18
+WC Economics
+SC Business & Economics
+GA FO2NT
+UT WOS:000416616700006
+DA 2019-12-28
+ER
+
+PT J
+AU Kishan, RP
+   Opiela, TP
+AF Kishan, Ruby P.
+   Opiela, Timothy P.
+TI Risk pricing of wholesale funds and the behavior of retail deposit rates
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Risk-pricing/market discipline; Bertrand competition; Retail-market
+   competition; Rate contagion
+ID MONETARY-POLICY; BANKS; MARKET; DISCIPLINE; CHANNEL; TRANSMISSION;
+   COMPETITION; CDS
+AB We explore the relationship between bank risk and retail deposits. Predicted risk premiums on wholesale funds explain retail rate heterogeneity through two channels. First, increased bank risk premiums encourage the bank to substitute from wholesale funds to small certificates of deposits (CD) by increasing small CD rates. Second, increased rival risk premiums in a local market require the bank to increase small CD rates even more. Our results are consistent with risk encouraging the use of small CDs as a marginal source of funds and promoting local market competition for small CDs. As risk premiums rise, banks also reduce rates on other retail deposits. Our approach has implications for regulatory and monetary policies and financial stability.
+C1 [Kishan, Ruby P.] Texas State Univ, Dept Finance & Econ, San Marcos, TX 73786 USA.
+   [Opiela, Timothy P.] Depaul Univ, Kellstadt Grad Sch Business, Chicago, IL 60604 USA.
+   [Opiela, Timothy P.] Depaul Univ, Dept Econ, Chicago, IL 60604 USA.
+RP Kishan, RP (reprint author), Texas State Univ, Dept Finance & Econ, San Marcos, TX 73786 USA.
+EM rk02@txstate.edu
+FU Texas State University; DePaul University
+FX We acknowledge Rate Watch Inc. for our retail rate data. We thank
+   Christoffer Koch, T.C. Huang, Ewa Nikiel, and anonymous referees for
+   helpful comments. We also acknowledge financial supports from Texas
+   State University and DePaul University.
+CR Acharya VV, 2015, J FINANC, V70, P1, DOI 10.1111/jofi.12182
+   Berger AN, 2009, J FINANC SERV RES, V35, P99, DOI 10.1007/s10693-008-0050-7
+   BERNANKE BS, 1995, J ECON PERSPECT, V9, P27, DOI 10.1257/jep.9.4.27
+   Carlton D. W., 2005, MODERN IND ORG
+   COOPERMAN ES, 1992, J FINANC, V47, P919, DOI 10.2307/2328972
+   Cosimano T., 1999, EXAMINATION RETAIL D
+   Craig B., 2010, 201017S EUR BANK CTR
+   Egan M., 2014, DEPOSIT COMPETITION
+   ELLIS DM, 1992, J MONETARY ECON, V30, P481, DOI 10.1016/0304-3932(92)90008-P
+   Flannery M. J., 1995, P C BANK STRUCT COMP, P459
+   Flannery MJ, 1998, J MONEY CREDIT BANK, V30, P273, DOI 10.2307/2601102
+   Flannery MJ, 2004, Market Discipline Across Countries and Industries, P87
+   Gambacorta L, 2008, EUR ECON REV, V52, P792, DOI 10.1016/j.euroecorev.2007.06.022
+   Hannan T., 2004, BOARD GOVERNORS FEDE, V2004-38
+   Hannan T., 2004, COMPETITIVE IMPLICAT
+   Hannan TH, 2004, J BANK FINANC, V28, P1889, DOI 10.1016/j.jbankfin.2003.06.006
+   Jordan JS, 2000, NEW ENGL ECON REV, P15
+   Kashyap AK, 2000, AM ECON REV, V90, P407, DOI 10.1257/aer.90.3.407
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   Kiser E., 2003, MODELING WHOLE FIRM
+   Kishan RP, 2000, J MONEY CREDIT BANK, V32, P121, DOI 10.2307/2601095
+   KISHAN RP, 1993, J ECON BUS, V45, P393, DOI 10.1016/0148-6195(93)90037-O
+   Kishan RP, 2012, J MONEY CREDIT BANK, V44, P573, DOI 10.1111/j.1538-4616.2012.00502.x
+   Kopecky KJ, 2012, J MONEY CREDIT BANK, V44, P1185, DOI 10.1111/j.1538-4616.2012.00527.x
+   Maechler AM, 2006, J BANK FINANC, V30, P1871, DOI 10.1016/j.jbankfin.2005.07.010
+   MISHKIN FS, 1982, J POLIT ECON, V90, P22, DOI 10.1086/261038
+   PAGAN A, 1984, INT ECON REV, V25, P221, DOI 10.2307/2648877
+   Park K, 2009, REV FINANC STUD, V22, P1, DOI 10.1093/rfs/hhn051
+   Park S, 1998, J MONEY CREDIT BANK, V30, P347, DOI 10.2307/2601105
+   Sharpe SA, 1997, REV IND ORGAN, V12, P79, DOI 10.1023/A:1007748623012
+   Song F, 2007, REV FINANC STUD, V20, P2129, DOI 10.1093/rfs/hhm015
+NR 31
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD NOV
+PY 2017
+VL 42
+BP 668
+EP 681
+DI 10.1016/j.najef.2017.10.004
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA FO6WU
+UT WOS:000417010600043
+DA 2019-12-27
+ER
+
+PT J
+AU Carreno, JG
+   Cifuentes, R
+AF Carreno, Jose Gabriel
+   Cifuentes, Rodrigo
+TI Identifying complex core-periphery structures in the interbank market
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE financial network; interbank market; multiplex networks; stochastic
+   blockmodeling (SBM); core-periphery structure; systemic risk
+ID SYSTEMIC RISK
+AB This paper proposes a framework to identify the structure of a financial network and its evolution over time, and presents an application to an interbank market with complete actual data. The framework is based on a methodology popular in the social network literature - stochastic blockmodeling - which, we argue, is more general, transparent and rewarding in terms of results than other proposed methodologies. In particular, it allows us to identify the presence of multiple cores and peripheries as well as the different forms of interaction between them. We find that such a varied core-periphery structure exists in almost all periods for the different instruments analyzed. In the case of term deposits, which account for two-thirds of interbank exposures, we find that, far from being static, the structure underwent a transition in the period 2009-15, with the core increasing its size. We also show that facts revealed by our approach cannot be observed in the metrics commonly used to describe networks. Finally, we describe how the elements identified by our method can be used to single out sources and channels of transmission of systemic risk in a network of banks.
+C1 [Carreno, Jose Gabriel] Tilburg Univ, Dept Econ, Warandelaan 2, NL-5037 AB Tilburg, Netherlands.
+   [Cifuentes, Rodrigo] Cent Bank Chile, Financial Policy Div, Agustinas 1180, Santiago 8340454, Chile.
+RP Cifuentes, R (reprint author), Cent Bank Chile, Financial Policy Div, Agustinas 1180, Santiago 8340454, Chile.
+EM j.g.carreno@tilburguniversity.edu; rodrigo.cifuentes@bcentral.cl
+CR Abbe E, 2015, ANN IEEE SYMP FOUND, P670, DOI 10.1109/FOCS.2015.47
+   Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Aicher C, 2015, J COMPLEX NETW, V3, P221, DOI 10.1093/comnet/cnu026
+   Anand K., 2017, J FINANCIAL IN PRESS
+   Bargigli L, 2013, QUANT FINANC, V15, P673
+   Borgatti SP, 1999, SOC NETWORKS, V21, P375
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Carreno J., 2016, EC CHILENA, V19, P110
+   Central Bank of Chile, 2009, FINANCIAL STABILITY
+   Central Bank of Chile, 2010, FINANCIAL STABILITY
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   HOLLAND PW, 1983, SOC NETWORKS, V5, P109, DOI 10.1016/0378-8733(83)90021-7
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   Molina-Borboa JL, 2014, J NETW THEORY FINANC, V1, P99
+   Montagna M., 2013, MULTILAYERED INTERBA
+   Nowicki K, 2001, J AM STAT ASSOC, V96, P1077, DOI 10.1198/016214501753208735
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Propper M., 2008, 177 DNB
+   Silva TC, 2016, EMERG MARK REV, V26, P130, DOI 10.1016/j.ememar.2015.12.004
+   Soramaki K, 2006, 243 FED RES BANK NEW
+   Lopez MU, 2017, NEUROCOMPUTING, V264, P2, DOI 10.1016/j.neucom.2016.10.102
+   Yellen J.L., 2013, COMMUNICATION
+NR 27
+TC 1
+Z9 1
+U1 1
+U2 4
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD DEC
+PY 2017
+VL 3
+IS 4
+BP 49
+EP 75
+DI 10.21314/JNTF.2017.035
+PG 27
+WC Business, Finance
+SC Business & Economics
+GA FT7NE
+UT WOS:000423338600004
+DA 2019-12-28
+ER
+
+PT J
+AU Andriosopoulos, K
+   Chan, KK
+   Dontis-Charitos, P
+   Staikouras, SK
+AF Andriosopoulos, Kostas
+   Chan, Ka Kei
+   Dontis-Charitos, Panagiotis
+   Staikouras, Sotiris K.
+TI Wealth and risk implications of the Dodd-Frank Act on the US financial
+   intermediaries
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Banks; Financial institutions; Dodd-Frank Act; Event study; SUR
+ID GLASS-STEAGALL ACT; MARKET DISCIPLINE; SYSTEMIC RISK; BANKING;
+   DIVERSIFICATION; DEFAULT; IMPACT; EXPERIENCE; MERGER; FIRMS
+AB We contribute to the current regulatory debate by examining the wealth and risk effects of the Dodd Frank Act on U.S. financial institutions. We measure the effects of key legislative events of the Act by means of a multivariate regression model using the seemingly unrelated regression (SUR) framework. Our results indicate a mixed reaction by financial institutions during the various stages of the Act's legislative process. Further tests reveal that any positive reactions are driven by small and/or low risk institutions, while negative ones are consistent across subsets; except for investment banks. We also find market risk increases for most financial institutions that are dominated by small and/or low risk firms. The cross-section results reveal that large institutions fare better than their smaller counterparts and that large investment banks gain value at the expense of others. Overall, the Dodd-Frank Act may have redistributed value among financial institutions, while not necessarily reducing the industry's riskiness. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Andriosopoulos, Kostas; Dontis-Charitos, Panagiotis] ESCP Europe Business Sch, 527 Finchley Rd, London NW3 7BG, England.
+   [Andriosopoulos, Kostas; Dontis-Charitos, Panagiotis] Labex ReFi, 79 Ave Republ, F-75011 Paris, France.
+   [Chan, Ka Kei] Univ Westminster, Westminster Business Sch, 35 Marylebone Rd, London NW1 5LS, England.
+   [Staikouras, Sotiris K.] City Univ London, Cass Business Sch, 106 Bunhill Row, London EC1Y 8TZ, England.
+RP Dontis-Charitos, P (reprint author), ESCP Europe Business Sch, 527 Finchley Rd, London NW3 7BG, England.; Dontis-Charitos, P (reprint author), Labex ReFi, 79 Ave Republ, F-75011 Paris, France.
+EM kandriosopoulos@escpeurope.eu; k.chan1@westminster.ac.uk;
+   pdontischaritos@eescpeurope.eu; sks@city.ac.uk
+FU PRES heSam [ANR-10-LABX-0095]
+FX Former title: The wealth and risk effects of U.S. financial reform: The
+   case of financial institutions. We thank the editor (Iftekhar Hasan),
+   and two anonymous referees for their very useful comments and
+   suggestions. We are also grateful to Elena Kalotychou, Spyros Mesomeris
+   and Harilaos Harrisis for their insightful comments. The paper was
+   presented at the 2015 Financial Engineering and Banking Society
+   conference, and the 2015 Multinational Finance Society conference. We
+   would like to thank the session participants, and in particular, Jakob
+   Bosma, Artashes Karapetyan, George Leledakis, Charilaos Mertzanis, and
+   Shuxing Yin, for their feedback. This work was achieved through the
+   Laboratory of Excellence on Financial Regulation (Labex ReFi) supported
+   by PRES heSam under the reference ANR-10-LABX-0095. All errors are our
+   own.
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2011, WILEY FINANC SER, P1
+   Akhigbe A, 2016, REV QUANT FINANC ACC, V47, P395, DOI 10.1007/s11156-015-0506-4
+   ANG JS, 1994, J BANK FINANC, V18, P351, DOI 10.1016/0378-4266(94)00039-5
+   Baele L, 2007, J BANK FINANC, V31, P1999, DOI 10.1016/j.jbankfin.2006.08.003
+   Balasubramnian B, 2014, J BANK FINANC, V41, P155, DOI 10.1016/j.jbankfin.2014.01.021
+   BAUMOL WJ, 1982, AM ECON REV, V72, P1
+   Benston George J., 1990, SEPARATION COMMERCIA
+   BENSTON GJ, 1994, J ECON PERSPECT, V8, P121, DOI 10.1257/jep.8.3.121
+   Bharath ST, 2008, REV FINANC STUD, V21, P1339, DOI 10.1093/rfs/hhn044
+   Bhargava R, 1998, J BANK FINANC, V22, P447, DOI 10.1016/S0378-4266(98)00022-3
+   BLACK F, 1978, J BUS, V51, P379, DOI 10.1086/296005
+   Boot AWA, 2000, J FINANC INTERMED, V9, P240, DOI 10.1006/jfin.2000.0287
+   Bruner Robert F., 2007, PANIC 1907 LESSONS L
+   Brunnermeier M., 2012, AM FIN ASS ANN M CHI
+   Carow KA, 2001, J BANK FINANC, V25, P1553, DOI 10.1016/S0378-4266(00)00134-5
+   CAROW KA, 2002, Q REV EC FINANCE, V42, P439
+   CAROW KA, 2002, Q REV EC FINANCE, V42, P465, DOI DOI 10.1016/S1062-9769(01)00128-4
+   Casu B, 2016, EUR FINANC MANAG, V22, P235, DOI 10.1111/eufm.12061
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Eckles David L., 2000, EC POLICY REV, V6, P11
+   Elyasiani E, 2016, J RISK INSUR, V83, P681, DOI 10.1111/jori.12066
+   Fields LP, 2007, J RISK INSUR, V74, P777
+   Fier S. G., 2013, J INSURANCE ISSUES, V36, P1
+   Flannery M.J., 1985, DEREGULATING WALL ST
+   Flannery MJ, 1999, J FINANC SERV RES, V16, P101, DOI 10.1023/A:1008180106687
+   Gao Y., 2013, WORKING PAPER
+   Gart A, 1994, REGULATION DEREGULAT
+   Goodhart CAE, 2008, J FINANC STABIL, V4, P351, DOI 10.1016/j.jfs.2008.09.005
+   HERRING RJ, 1990, J FINANC SERV RES, V4, P471, DOI 10.1007/BF00122882
+   Hilt E., 2009, WALL STREETS 1 CORPO
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Johnston J., 2000, FINANCIAL REV, VXXXV, P17, DOI DOI 10.1111/J.1540-6288.2000.TB01412.X
+   KANE EJ, 1981, J FINANC, V36, P355, DOI 10.2307/2327018
+   KANE EJ, 1988, AM ECON REV, V78, P328
+   Kane EJ, 2000, J MONEY CREDIT BANK, V32, P671, DOI 10.2307/2601202
+   Krainer RE, 2012, J FINANC STABIL, V8, P121, DOI 10.1016/j.jfs.2011.05.001
+   KROSZNER RS, 1994, AM ECON REV, V84, P810
+   Mayer Brown, 2014, DOES VOLCK VICK LIIK
+   Mercieca S, 2007, J BANK FINANC, V31, P1975, DOI 10.1016/j.jbankfin.2007.01.004
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Molyneux P, 2014, J INT MONEY FINANC, V49, P258, DOI 10.1016/j.jimonfin.2014.03.006
+   Neale FR, 2005, J ECON BUS, V57, P317, DOI 10.1016/j.jeconbus.2004.11.006
+   Praet P, 2008, J FINANC STABIL, V4, P368, DOI 10.1016/j.jfs.2008.09.008
+   PURI M, 1994, J BANK FINANC, V18, P397, DOI 10.1016/0378-4266(94)00040-9
+   Sanders B.C., 2013, FINANCIAL REGULATORY
+   Saunders A., 1985, BUS REV
+   Saunders A., 1994, UNIVERSAL BANKING US
+   SCHIPPER K, 1985, J ACCOUNTING RES, V23, P408, DOI 10.2307/2490929
+   Staikouras S. K., 2011, FINANCIAL MARKETS I, V20, P1
+   Stein JC, 1997, J FINANC, V52, P111, DOI 10.2307/2329558
+   Stiroh KJ, 2006, J MONEY CREDIT BANK, V38, P1351, DOI 10.1353/mcb.2006.0075
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   Stiroh KJ, 2004, J MONEY CREDIT BANK, V36, P853, DOI 10.1353/mcb.2004.0076
+   Turk G., 2012, J BUS ECON RES, V10, P569
+   Vallascas F, 2011, J BANK FINANC, V35, P902, DOI 10.1016/j.jbankfin.2010.09.001
+   Vander Vennet R, 2002, J MONEY CREDIT BANK, V34, P254, DOI 10.1353/mcb.2002.0036
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Weiss GNF, 2014, J BANK FINANC, V40, P165, DOI 10.1016/j.jbankfin.2013.11.032
+   Yildirim HS, 2006, J BUS FINAN ACCOUNT, V33, P1629, DOI 10.1111/j.1468-5957.2006.00642.x
+NR 60
+TC 1
+Z9 1
+U1 1
+U2 8
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2017
+VL 33
+BP 366
+EP 379
+DI 10.1016/j.jfs.2016.09.006
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA FO9DW
+UT WOS:000417189200024
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Arnold, M
+AF Arnold, M.
+TI The impact of central clearing on banks' lending discipline
+SO JOURNAL OF FINANCIAL MARKETS
+LA English
+DT Article
+DE Credit Risk Transfer; Central Clearing; Lending Discipline
+ID CREDIT DEFAULT SWAPS; COUNTERPARTY RISK; LOAN SALES; DERIVATIVES;
+   MARKET; LIQUIDITY; INTERMEDIATION; ARRANGEMENTS; SECURITIES; CRISIS
+AB In this paper, I investigate the impact of central clearing in credit risk transfer markets on a loan-originating bank's lending behavior. Under the current market regulation, central clearing undermines banks' lending discipline. The regulatory design of the credit risk transfer market in terms of capital requirements, disclosure standards, risk retention, and access to uncleared credit risk transfer can mitigate this problem. I also show that the lending discipline channel is an essential element of the impact of central clearing on banks' loan default loss exposure, which is a first-order consideration for systemic risk analysis. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Arnold, M.] Unterer Graben 21, CH-9000 St Gallen, Switzerland.
+RP Arnold, M (reprint author), Unterer Graben 21, CH-9000 St Gallen, Switzerland.
+EM marc.arnold@unisg.ch
+CR Acharya V., 2009, FINANC MARKETS I INS, V18, P89, DOI DOI 10.1111/J.1468-0416.2009.00147_
+   Acharya V, 2014, J ECON THEORY, V149, P153, DOI 10.1016/j.jet.2013.07.001
+   Acharya VV, 2007, J FINANC ECON, V84, P110, DOI 10.1016/j.jfineco.2006.05.003
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Arentsen E, 2015, J FINANC, V70, P689, DOI 10.1111/jofi.12221
+   Arora N, 2012, J FINANC ECON, V103, P280, DOI 10.1016/j.jfineco.2011.10.001
+   Battalio R, 2011, J FINANC, V66, P2013, DOI 10.1111/j.1540-6261.2011.01700.x
+   Begley TA, 2017, REV FINANC STUD, V30, P120, DOI 10.1093/rfs/hhw056
+   Berndt A, 2009, J MONETARY ECON, V56, P725, DOI 10.1016/j.jmoneco.2009.04.002
+   Besanko D, 1996, J FINANC INTERMED, V5, P160, DOI 10.1006/jfin.1996.0009
+   BIS, 2016, BIS STAT B
+   BIS, 2012, CAP REQ BANK EXP CEN
+   BIS   Bank for International Settlements, 2011, BAS 3 GLOB REG FRAM
+   Biswas G., 2015, UNPUB
+   Bongaerts D, 2011, J FINANC, V66, P203, DOI 10.1111/j.1540-6261.2010.01630.x
+   CHO IK, 1987, Q J ECON, V102, P179, DOI 10.2307/1885060
+   DeMarzo PM, 2005, REV FINANC STUD, V18, P1, DOI 10.1093/rfs/hhi008
+   Du W., 2016, UNPUB
+   Duffee GR, 2001, J MONETARY ECON, V48, P25, DOI 10.1016/S0304-3932(01)00063-0
+   Duffie D., 2010, UNPUB
+   Duffie D, 2015, J FINANC ECON, V116, P237, DOI 10.1016/j.jfineco.2014.12.006
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Froot KA, 1998, J FINANC ECON, V47, P55, DOI 10.1016/S0304-405X(97)00037-8
+   FSB, 2015, OTC DER MARK REF
+   Garleanu N, 2011, REV FINANC STUD, V24, P1980, DOI 10.1093/rfs/hhr027
+   GORTON GB, 1995, J MONETARY ECON, V35, P389, DOI 10.1016/0304-3932(95)01199-X
+   Hartman-Glaser B., 2017, J FINANCIAL IN PRESS
+   Helwege J, 1999, J FINANC, V54, P1869, DOI 10.1111/0022-1082.00170
+   Hirtle B, 2009, J FINANC INTERMED, V18, P125, DOI 10.1016/j.jfi.2008.08.001
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Keys BJ, 2010, Q J ECON, V125, P307, DOI 10.1162/qjec.2010.125.1.307
+   Koeppl T, 2012, J FINANC ECON, V103, P189, DOI 10.1016/j.jfineco.2011.08.008
+   Kopecky KJ, 2006, J BANK FINANC, V30, P2235, DOI 10.1016/j.jbankfin.2005.07.018
+   LELAND HE, 1977, J FINANC, V32, P371, DOI 10.2307/2326770
+   Loon YC, 2014, J FINANC ECON, V112, P91, DOI 10.1016/j.jfineco.2013.12.001
+   Malherbe F, 2014, J FINANC, V69, P947, DOI 10.1111/jofi.12063
+   Moody's I.S, 2011, CORPORATE DEFA UNPUB
+   Morrison AD, 2005, J BUS, V78, P621, DOI 10.1086/427641
+   Nicolo A, 2008, J FINANC INTERMED, V17, P444, DOI 10.1016/j.jfi.2008.03.001
+   OCC, 2015, Q REP BANK DER ACT
+   Parlour CA, 2008, J FINANC, V63, P1291, DOI 10.1111/j.1540-6261.2008.01358.x
+   Parlour CA, 2013, J FINANC ECON, V107, P25, DOI 10.1016/j.jfineco.2012.08.004
+   Pirrong C, 2011, UNPUB
+   Purnanandam A, 2011, REV FINANC STUD, V24, P1881, DOI 10.1093/rfs/hhq106
+   Santa-Clara P, 2009, J FINANC MARK, V12, P391, DOI 10.1016/j.finmar.2009.01.002
+   Slive J., 2012, UNPUB
+   SPENCE M, 1973, Q J ECON, V87, P355, DOI 10.2307/1882010
+   Steigerwald Robert, 2006, EC PERSPECT Q, V4Q, P22
+   Stulz RM, 2010, J ECON PERSPECT, V24, P73, DOI 10.1257/jep.24.1.73
+   Subrahmanyam MG, 2014, REV FINANC STUD, V27, P2926, DOI 10.1093/rfs/hhu038
+   Sufi A, 2007, J FINANC, V62, P629, DOI 10.1111/j.1540-6261.2007.01219.x
+   Sundaresan S, 2015, J FINANC, V70, P881, DOI 10.1111/jofi.12134
+   Wang YH, 2014, REV FINANC STUD, V27, P2354, DOI 10.1093/rfs/hhu006
+   Zawadowski A, 2013, REV FINANC STUD, V26, P1291, DOI 10.1093/rfs/hht008
+NR 54
+TC 1
+Z9 1
+U1 1
+U2 3
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1386-4181
+EI 1878-576X
+J9 J FINANC MARK
+JI J. Financ. Mark.
+PD NOV
+PY 2017
+VL 36
+BP 91
+EP 114
+DI 10.1016/j.finmar.2017.06.001
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA FN0IO
+UT WOS:000415661700006
+DA 2019-12-28
+ER

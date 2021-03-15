@@ -1,0 +1,536 @@
+
+PT S
+AU Bisias, D
+   Flood, M
+   Lo, AW
+   Valavanis, S
+AF Bisias, Dimitrios
+   Flood, Mark
+   Lo, Andrew W.
+   Valavanis, Stavros
+BE Lo, AW
+   Merton, RC
+TI A Survey of Systemic Risk Analytics
+SO ANNUAL REVIEW OF FINANCIAL ECONOMICS, VOL 4
+SE Annual Review of Financial Economics
+LA English
+DT Article; Book Chapter
+DE systemic risk; financial institutions; liquidity; financial crises; risk
+   management
+ID FINANCE; LIQUIDITY; DECISION
+AB We provide a survey of 31 quantitative measures of systemic risk in the economics and finance literature, chosen to span key themes and issues in systemic risk measurement and management. We motivate these measures from the supervisory, research, and data perspectives in the main text and present concise definitions of each risk measure-including required inputs, expected outputs, and data requirements-in an extensive Supplemental Appendix. To encourage experimentation and innovation among as broad an audience as possible, we have developed an open-source Matlab (R) library for most of the analytics surveyed, which, once tested, will be accessible through the Office of Financial Research (OFR) at http://www.treasury.gov/initiatives/wsr/ofr/Pages/default.aspx.
+C1 [Bisias, Dimitrios] MIT, Ctr Operat Res, Cambridge, MA 02139 USA.
+   [Lo, Andrew W.] MIT, Sloan Sch Management, Cambridge, MA 02139 USA.
+   [Lo, Andrew W.; Valavanis, Stavros] MIT, Lab Financial Engn, Cambridge, MA 02139 USA.
+   [Lo, Andrew W.] MIT, Comp Sci & Artificial Intelligence Lab, Cambridge, MA 02139 USA.
+   [Flood, Mark] US Dept Treasury, Off Financial Res, Washington, DC 20220 USA.
+   [Lo, Andrew W.] AlphaSimplex Grp LLC, Cambridge, MA 02142 USA.
+RP Bisias, D (reprint author), MIT, Ctr Operat Res, Cambridge, MA 02139 USA.
+EM dbisias@mit.edu; mark.flood@treasury.gov; alo@mit.edu; svalavan@mit.edu
+OI Flood, Mark/0000-0002-6330-6168
+CR Abbe EA, 2012, AM ECON REV, V102, P65, DOI 10.1257/aer.102.3.65
+   Acharya VV, 2009, RESTORING FINANCIAL
+   Adrian T, 2010, 348 FED RES BANK NY
+   Adrian Tobias, 2009, BANQUE FRANCE FINANC, V13, P1
+   Aikman D., 2010, FINANCIAL STABILITY, P371
+   Alessi L., 2009, 1039 ECB
+   Alexander L, 2010, MEAS SYST RISK CHIC
+   Alfaro R., 2009, BIS Q REV, P29
+   [Anonymous], 2009, ROL MACR POL
+   Ashcraft A, 2008, 218 FED RES BANK NY
+   Axelrod R, 2006, HDB COMPUTATIONAL EC, V2, P1647
+   Axelrod R., 1997, COMPLEXITY COOPERATI
+   BCBS, 2011, GLOB SYST IMP BANKS
+   Benston GJ, 1997, J ECON PERSPECT, V11, P139, DOI 10.1257/jep.11.3.139
+   Bignon V., 2009, 200922 NORG BANK
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Board of Governors of the Federal Reserve (FRB), 2009, SUP CAP ASS PROGR OV
+   BOOT AWA, 1993, AM ECON REV, V83, P206
+   Bordo M. D., 1990, FEDERAL RESERVE BANK, V76, P18
+   Borio C., 2009, BIS Q REV, P29
+   Borio C, 2010, BIS HKMA RES C HONG
+   Borio C., 2009, 284 BIS
+   Bossaerts P, 2009, ANNU REV FINANC ECON, V1, P383, DOI 10.1146/annurev.financial.102708.141514
+   Bottega JA, 2011, CREATING LINCHPIN FI
+   Bouchaud JP, 2009, HANDB FINANC, P57, DOI 10.1016/B978-012374258-2.50006-3
+   BOYD JH, 1994, Q REV FEDERAL RESERV, P2
+   Breuer T, 2009, INT J CENT BANK, V5, P205
+   Brown CO, 2011, REV FINANC STUD, V24, P1378, DOI 10.1093/rfs/hhp039
+   Brunnermeier M, 2010, RISK TOPOGRAPHY
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier Markus K., 2009, 11 INT CTR MON BANK
+   Caballero R. J., 2009, 0932 MIT DEP EC
+   Capuano C., 2008, 08194 IMF
+   Caruana J, 2010, RES BANK AUSTR 50 AN, P53
+   Caruana J, 2010, PEOPL REP CHIN SEM M
+   CFTC-SEC, 2010, FIND REG MARK EV MAY
+   Chan N, 2006, NBER CONF R, P235
+   Chan Nicholas, 2006, FEDERAL RESERVE BANK, VQ4, P49
+   CLEMENT P, 2010, BIS Q REV, P59
+   Danielsson J, 2003, MODERN RISK MANAGEME, P297
+   de Bandt Olivier, 2000, 35 EUR CENT BANK, P10
+   Demirguc-Kunt A, 2008, J FINANC INTERMED, V17, P407, DOI 10.1016/j.jfi.2007.03.009
+   Duffie D, 2011, SYSTEMIC RISK EXPOSU
+   ECB, 2010, FINANC STAB REV, P129
+   Espinosa-Vega M, 2010, WP10105 IMF
+   Farmer JD, 2009, NATURE, V460, P685, DOI 10.1038/460685a
+   Feldman R, 2007, REGION, V2007, P6
+   Fender I., 2010, BIS Q REV, P57
+   Fender Ingo, 2010, BIS Q REV, P63
+   Fielding E, 2011, J INVESTMENT MANAGEM, V9, P18
+   Financ. Stab. Board (FSB), 2009, GUID ASS SYST IMP FI
+   Financial Stability Board/International Monetary Fund (FSB/IMF), 2010, FIN CRIS INF GAPS PR
+   Flood Mark, 1992, FEDERAL RESERVE BANK, P51
+   Geanakoplos J., 2010, FRBNY EC POLICY REV, P101
+   Getmansky M, 2004, J FINANC ECON, V74, P529, DOI 10.1016/j.jfineco.2004.04.001
+   Giesecke K, 2011, OPER RES, V59, P32, DOI 10.1287/opre.1100.0864
+   Gorton G, 2010, BROOKINGS PAP ECO AC, P261
+   Gray D, 2010, FIN CRIS SYST RISK S
+   Group of Ten, 2001, REP CONS FIN SECT
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Hirtle B, 2009, 409 FED RES BANK NY
+   Hu X, 2010, NOISE INFORM ILLIQUI
+   Huang X, 2009, FED RESERVE BOARD FI
+   Huizinga H, 2010, BANK VALUATION REGUL
+   IMF, 2012, WOR ECON FINANC, P1
+   International Monetary Fund, 2009, ASSESSING SYSTEMIC, P73
+   International Monetary Fund (IMF), 2009, RESP FIN CRIS MEAS S
+   KAHNEMAN D, 1979, ECONOMETRICA, V47, P263, DOI 10.2307/1914185
+   KANE EJ, 1989, S L INSURANCE MESS D
+   Kapadia S, 2009, LIQUIDITY RISK CASH
+   Khandani AE, 2012, J FINANC EC IN PRESS
+   Khandani AE, 2011, J FINANC MARK, V14, P1, DOI 10.1016/j.finmar.2010.07.005
+   Khandani AE, 2010, J BANK FINANC, V34, P2767, DOI 10.1016/j.jbankfin.2010.06.001
+   Kocherlakota N, 2010, REGION, P5
+   Kritzman M, 2010, REVERE STR WORK PAP
+   Kritzman M, 2010, FINANC ANAL J, V66, P30, DOI 10.2469/faj.v66.n5.3
+   KYLE AS, 1985, ECONOMETRICA, V53, P1315, DOI 10.2307/1913210
+   Lerner J, 2002, J FINANC, V57, P901, DOI 10.1111/1540-6261.00446
+   Lo A. W, 2011, HDB SYSTEMIC RISK
+   Lo AW, 2011, TEMPORAL AVERAGING N
+   Loutskina E, 2009, J FINANC, V64, P861, DOI 10.1111/j.1540-6261.2009.01451.x
+   Lucas D., 2010, MEASURING MANAGING F
+   LUCAS RE, 1976, CARN ROCH CONF SERIE, V1, P19, DOI 10.1016/S0167-2231(76)80003-6
+   Mantegna R., 2000, INTRO ECONOPHYSICS C
+   Merton R. C., 1993, CARNEGIE-ROCHESTER C, P1
+   MERTON RC, 1973, BELL J ECON, V4, P141, DOI 10.2307/3003143
+   Mishkin FS, 2007, BOARD GOV INT BANK C
+   Moussa A., 2011, THESIS COLUMBIA U
+   Office of Financial Research (OFR), 2010, FED REGISTER, V75, P74146
+   PELTZMAN S, 1975, J POLIT ECON, V83, P677, DOI 10.1086/260352
+   Pojarliev M, 2011, FINANC ANAL J, V67, P26, DOI 10.2469/faj.v67.n1.2
+   Pozsar Zoltan, 2010, 458 FED RES BANK NY
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Ricks M, 2010, 370 HARV U LAW SCH
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Rosengren ES, 2010, GLOB INT CENT C FIN
+   Sapra H, 2008, J ACCOUNT ECON, V45, P379, DOI 10.1016/j.jacceco.2007.10.002
+   Segoviano M. A., 2009, 627 LOND SCH EC POL
+   The Clearing House Association Institute of International Bankers (TCH&IIB), 2011, RE ASS METH APPL SUR
+   Vasicek O., 1991, LIMITING LOAN LOSS P
+NR 101
+TC 131
+Z9 132
+U1 9
+U2 84
+PU ANNUAL REVIEWS
+PI PALO ALTO
+PA 4139 EL CAMINO WAY, PO BOX 10139, PALO ALTO, CA 94303-0897 USA
+SN 1941-1367
+BN 978-0-8243-4804-5
+J9 ANNU REV FINANC ECON
+JI Annu. Rev. Financ. Econ.
+PY 2012
+VL 4
+BP 255
+EP 296
+DI 10.1146/annurev-financial-110311-101754
+PG 42
+WC Business, Finance; Economics
+SC Business & Economics
+GA BCV54
+UT WOS:000311572400011
+DA 2019-12-28
+ER
+
+PT J
+AU Wang, PF
+   Wen, Y
+AF Wang, Pengfei
+   Wen, Yi
+TI Speculative Bubbles and Financial Crises
+SO AMERICAN ECONOMIC JOURNAL-MACROECONOMICS
+LA English
+DT Article
+ID BUSINESS-CYCLE; EXCHANGE-RATES; INDETERMINACY; EQUILIBRIUM; CONSTRAINTS;
+   TULIPMANIA; ECONOMY; OUTPUT; DEBT
+AB Are asset prices unduly volatile and often detached from their fundamentals? Does the bursting of financial bubbles depress the real economy? This paper addresses these issues by constructing a DSGE model with speculative bubbles. We characterize conditions under which storable goods, regardless of their intrinsic values, can carry bubbles, and agents are willing to invest in such bubbles despite their positive probability of bursting. The results show that systemic risk, commonly perceived changes in the bubble's probability of bursting, can generate boom-bust cycles with hump-shaped output dynamics and produce asset price movements many times more volatile than the economy's fundamentals.
+C1 [Wang, Pengfei] Hong Kong Univ Sci & Technol, Dept Econ, Hong Kong, Hong Kong, Peoples R China.
+   [Wen, Yi] Fed Reserve Bank St Louis, Res Dept, St Louis, MO 63166 USA.
+RP Wang, PF (reprint author), Hong Kong Univ Sci & Technol, Dept Econ, Hong Kong, Hong Kong, Peoples R China.
+EM pfwang@ust.hk; yi.wen@stls.frb.org
+RI Wang, Pengfei/X-2272-2019; Wen, Yi/I-5756-2016
+OI Wang, Pengfei/0000-0002-8686-4787; Wen, Yi/0000-0001-5658-1578
+CR Angeletos GM, 2007, REV ECON DYNAM, V10, P1, DOI 10.1016/j.red.2006.11.001
+   Araujo Aloisio, 2005, 513 PUC RIO
+   AZARIADIS C, 1981, J ECON THEORY, V25, P380, DOI 10.1016/0022-0531(81)90038-7
+   BENHABIB J, 1994, J ECON THEORY, V63, P19, DOI 10.1006/jeth.1994.1031
+   Bewley T. F, 1980, MODELS MONETARY EC, P169
+   Caballero Ricardo J., 2006, RISK MANAGEMENT, V53, P35
+   CASS D, 1983, J POLIT ECON, V91, P193, DOI 10.1086/261139
+   COGLEY T, 1995, AM ECON REV, V85, P492
+   Dash M., 1999, TULIPOMANIA STORY WO
+   Farhi Emmanuel, 2008, 13955 NAT BUR EC RES
+   GARBER PM, 1990, J ECON PERSPECT, V4, P35, DOI 10.1257/jep.4.2.35
+   GARBER PM, 1989, J POLIT ECON, V97, P535, DOI 10.1086/261615
+   HANSEN GD, 1985, J MONETARY ECON, V16, P309, DOI 10.1016/0304-3932(85)90039-X
+   Hellwig C, 2009, ECONOMETRICA, V77, P1137, DOI 10.3982/ECTA6754
+   KAREKEN J, 1981, Q J ECON, V96, P207, DOI 10.2307/1882388
+   KING RG, 1992, J INT ECON, V32, P83, DOI 10.1016/0022-1996(92)90037-K
+   KING RG, 1999, HDB MACROECONOMICS B, V1, P927
+   Kiyotaki N, 2008, LIQUIDITY BUSINESS C
+   Kocherlakota N. R., 2009, BURSTING BUBBL UNPUB
+   Kocherlakota N, 2008, J ECON THEORY, V142, P218, DOI 10.1016/j.jet.2006.07.010
+   KOCHERLAKOTA NR, 1992, J ECON THEORY, V57, P245, DOI 10.1016/S0022-0531(05)80052-3
+   LUCAS RE, 1980, ECON INQ, V18, P203, DOI 10.1111/j.1465-7295.1980.tb00570.x
+   Mackay Charles, 1841, MEMOIRS EXTRAORDINAR
+   Pintus Patrick A., 2008, 2008014C FED RES BAN
+   SAMUELSON PA, 1958, J POLIT ECON, V66, P467, DOI 10.1086/258100
+   Santos MS, 1997, ECONOMETRICA, V65, P19, DOI 10.2307/2171812
+   Scheinkman J. A., 1977, NOTES ASSET PR UNPUB
+   Scheinkman J. A., 1988, MATH EC, P44
+   SCHEINKMAN JA, 1986, ECONOMETRICA, V54, P23, DOI 10.2307/1914155
+   Thompson EA, 2007, PUBLIC CHOICE, V130, P99, DOI 10.1007/s11127-006-9074-4
+   TIROLE J, 1985, ECONOMETRICA, V53, P1499, DOI 10.2307/1913232
+   Wang PF, 2008, J ECON THEORY, V143, P519, DOI 10.1016/j.jet.2007.01.021
+   Wang Pengfei, 2009, 2009022C FED RES BAN
+   Wang Pengfei, 2012, AM EC J MACROECONOMI
+   Wang Pengfei, 2009, 2007033C FED RES BAN
+   Wen Yi, 2009, 2009019B FED RES BAN
+   WOODFORD M, 1986, J ECON THEORY, V40, P128, DOI 10.1016/0022-0531(86)90011-6
+NR 37
+TC 23
+Z9 23
+U1 3
+U2 34
+PU AMER ECONOMIC ASSOC
+PI NASHVILLE
+PA 2014 BROADWAY, STE 305, NASHVILLE, TN 37203 USA
+SN 1945-7707
+J9 AM ECON J-MACROECON
+JI Am. Econ. J.-Macroecon.
+PD JUL
+PY 2012
+VL 4
+IS 3
+BP 184
+EP 221
+DI 10.1257/mac.4.3.184
+PG 38
+WC Economics
+SC Business & Economics
+GA 966LB
+UT WOS:000305838000007
+DA 2019-12-28
+ER
+
+PT J
+AU Favero, C
+   Missale, A
+AF Favero, Carlo
+   Missale, Alessandro
+TI Sovereign spreads in the eurozone: which prospects for a Eurobond?
+SO ECONOMIC POLICY
+LA English
+DT Article
+AB In this paper, we provide new evidence on the determinants of sovereign yield spreads and market sentiment effects in the eurozone in order to evaluate the rationale for a common Eurobond jointly guaranteed by eurozone Member States. We find that default risk is the main driver of yield spreads, suggesting small gains from greater liquidity. Fiscal fundamentals matter in the pricing of default risk but only as they interact with other countries yield spreads; that is, with the global risk that the market perceives. More importantly, the impact of this global risk variable is not constant over time, a clear sign of contagion driven by shifts in market sentiment. This evidence points to a discontinuity in the disciplinary role of financial markets. If markets can stay irrational longer than a country can stay solvent, then the role of yield spreads on national bonds as a fiscal discipline device is considerably weakened, and issuing Eurobonds can be economically justified.
+C1 [Favero, Carlo] Ruhr Univ Bochum, IGIER, Deutsch Bank Chair Asset Pricing & Quantitat Fina, Bochum, Germany.
+   Ruhr Univ Bochum, CEPR, Bochum, Germany.
+   Univ Milan, I-20122 Milan, Italy.
+RP Favero, C (reprint author), Ruhr Univ Bochum, IGIER, Deutsch Bank Chair Asset Pricing & Quantitat Fina, Bochum, Germany.
+OI FAVERO, CARLO AMBROGIO/0000-0002-1668-9426
+CR Acharya VV, 2005, J FINANC ECON, V77, P375, DOI 10.1016/j.jfineco.2004.06.007
+   Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   [Anonymous], 2000, COORD PUBL DEBT ISS
+   Attinasi M., 2010, PUBLIC FINANCE MANAG, V10, P595
+   Beber A, 2009, REV FINANC STUD, V20, P527
+   Beck Thorsten, 2011, INSULATING FINANCIAL
+   Becker W., 2010, CREATION COMMON EURO
+   Berrigan J., 2010, JOINT ISSURANCE EURO
+   Boonstra W., 2010, EMU CAN BE STRENGTHE
+   Brunnermeier Markus, 2011, FUTURE BANKING
+   De Grauwe Paul, 2011, EUROPEAN CENTRAL BAN
+   De Grauwe Paul, 2009, GAINS ALL PROPOSAL C
+   Dees S, 2007, J APPL ECONOMET, V22, P1, DOI 10.1002/jae.932
+   Delpla J., 2010, BLUE BONDS CREATING
+   Delpla J., 2011, BRUEGEL POLICY CONTR
+   Engle R. F., 2010, RESURRECTING CONDITI
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   Euro-nomics Group, 2011, EUR SAF BONDS ESBIES
+   European Commission, 2011, GREEN PAP FEAS INTR
+   European League for Economic Cooperation (ELEC), 2010, CREAT COMM EUR BOND
+   European Primary Dealers Association (EPDA), 2008, COMM EUR GOV BOND
+   Favero C. A., 2010, EURO AREA GOVERNANCE
+   Favero C, 2010, J FINANC QUANT ANAL, V45, P107, DOI 10.1017/S0022109009990494
+   Forbes K., 2002, J FINANC, V42, P2223
+   Goldschmidt P., 2009, REPLAY BOND ISSUING
+   Goodhart Charles, 2012, SOVEREIGN RATINGS DE
+   Gros D., 2009, BOND ISSUING EU STAB
+   Gros Daniel, 2010, SENIORITY CONUNDRUM
+   Gros Daniel, 2011, EUROBONDS WRONG SOLU
+   Issing Otmar, 2009, WHY COMMON EUROZONE
+   JUNCKER JC, 2010, FINANCIAL TIMES 1205
+   Majocchi A., 2005, ISSUING UNION BONDS, P5
+   Mayordomo S., 2009, 15353 NBER
+   Monti M., 2010, NEW STRATEGY SINGLE
+   Muellbauer J., 2011, 59 CEPR
+   Pesaran MH, 2004, J BUS ECON STAT, V22, P129, DOI 10.1198/073500104000000019
+   Stark J., 2011, EUROPEAN CENTRAL BAN
+   Sturzenegger Federico, 2006, DEBT DEFAULTS LESSON
+   Wagner Wolf, 2011, EUROBONDS ARE LIKELY
+   Wyplosz C., 2011, THEY STILL DONT GET
+   Wyplosz C, 2011, FAILSAFE WAY END EUR
+NR 41
+TC 61
+Z9 61
+U1 0
+U2 29
+PU WILEY-BLACKWELL
+PI MALDEN
+PA COMMERCE PLACE, 350 MAIN ST, MALDEN 02148, MA USA
+SN 0266-4658
+J9 ECON POLICY
+JI Econ. Policy
+PD APR
+PY 2012
+IS 70
+BP 231
+EP 273
+DI 10.1111/j.1468-0327.2012.00282.x
+PG 43
+WC Economics
+SC Business & Economics
+GA 919VU
+UT WOS:000302360000003
+DA 2019-12-27
+ER
+
+PT J
+AU McConnell, P
+   Blacker, K
+AF McConnell, Patrick
+   Blacker, Keith
+TI Systemic operational risk: the UK payment protection insurance scandal
+SO JOURNAL OF OPERATIONAL RISK
+LA English
+DT Article
+ID BANCASSURANCE
+AB May 2011 was a very bad month for UK banks. In the previous month, a long-running legal case was resolved when the UK High Court ruled against the British Bankers' Association, which had petitioned for a judicial review of regulatory action concerning mis-selling of payment protection insurance (PPI) products. Following the ruling, the four major UK banks announced provisions totaling over 6 pound billion to cover restitution to buyers of their PPI products. Some of the banks also decided to exit the PPI business. At first glance, PPI appears to be a standard insurance product. For an up-front or monthly premium, an insurer will sell protection to a borrower against being unable to make loan repayments, as a result of illness or unemployment, for example. Before the market collapsed, the main distributors/arrangers of PPI contracts were the largest UK banks, often using their affiliated insurance subsidiary as the insurer. The underlying problems that generated the so-called PPI scandal should not have come as a complete surprise to the banks. For several years prior to the ruling, consumer advocacy groups had been complaining loudly about banks selling PPI products to customers who did not fully understand the policies and, in many cases, did not need the protection provided. Yet, having seemingly taken on a life of its own, the practice of selling PPI policies continued and grew rapidly in all major banks. Various official inquiries found that the "people" involved, including frontline bank staff, lending managers and insurers, simply did not exercise the due diligence necessary to check the suitability of PPI for many customers. Prudence seems to have been diluted or even abandoned in a chase for increased product volume across the whole UK retail banking sector. This paper argues that the losses incurred as a result of the PPI scandal were, in most part, precipitated by systemic operational risk, particularly people-related risks. Using examples from official inquiries, this paper identifies some of the people risk that went unmanaged in this part of the UK retail banking sector system, until the PPI market seized up in 2011. The paper then suggests proactive approaches to people risk management that should help to detect and minimize the impact of similar scandals in the future. This topic is important as the demographic shift toward longer periods of retirement and the prevalence of the "universal banking model" means that nontraditional banking products such as insurance, pensions and investments will be increasingly sold through banks, raising the specter of further mis-selling scandals in the future.
+C1 [McConnell, Patrick] Macquarie Univ, Appl Finance Ctr, Sydney, NSW 2000, Australia.
+RP McConnell, P (reprint author), Macquarie Univ, Appl Finance Ctr, Level 3,10 Spring St, Sydney, NSW 2000, Australia.
+EM pjmcconnell@gmail.com; blacker.keith@btinternet.com
+CR Age Concern, 2010, FACT SHEET 65 EQ REL
+   AKERLOF GA, 1970, Q J ECON, V84, P488, DOI 10.2307/1879431
+   An L., 2009, 27 INT C SYST DYN SO
+   [Anonymous], 2008, NEWSLETTER
+   Ariely D, 2008, PREDICTABLY IRRATION
+   Ashby S., 2010, FIN SERV RES FOR NOT
+   Association of British Insurers, 2009, ABI COMP COMM HAS IG
+   AUGUSTINE NR, 1995, HARVARD BUS REV, V73, P147
+   Australian Prudential Regulation Authority, 2004, REP IRR CURR OPT TRA
+   Bank for International Settlements, 2010, TRIENN CENTR BANK SU
+   BARRETT R, 1998, LIBERATING CORPORATE
+   Basel Committee on Banking Supervision, 2011, BCBS 195 PRINC SOUND
+   Basel Committee on Banking Supervision, 2004, INT CONV CAP MEAS CA
+   Benoist G, 2002, GENEVA PAP R I-ISS P, V27, P295, DOI 10.1111/1468-0440.00172
+   Blacker K., 2001, THESIS BRUNEL U
+   Blacker K., 2004, WORKING PAPER
+   British Bankers' Association, 2011, PPI FACT SHEET WHY B
+   Brown B. M. J., 1992, ALLIFANZ LIMITS
+   Cecchetti S. G, 2009, INTEGRATING FINANCIA
+   Citizens Advice Bureau, 2009, ANN REP ACC REP CIT
+   Citizens Advice Bureau, 2005, PROT RACK
+   Coburn T., 2011, WALL STREET FINANCIA
+   Coleman J, 2001, CRIMINAL ELITE UNDER
+   Competition Commission, 2008, MARK INV PAYM PROT I
+   Competition Commission, 2008, PROF PPI WORK PAP
+   Consumer Financial Protection Bureau, 2011, BUILD CFPB
+   Council of Mortgage Lenders, 2006, MORTG PAYM PROT INS
+   Croucher K., 2003, PAYING MORTGAGE SYST
+   Crouhy M., 2008, WORKING PAPER
+   Cruz MG, 2002, MODELING MEASURING H
+   Durand R, 2003, STRATEGIC MANAGE J, V24, P821, DOI 10.1002/smj.339
+   Evans R., 2011, TELEGRAPH
+   Federal Reserve, 2006, RISK BAS CAP STAND A
+   Fields LP, 2007, J RISK INSUR, V74, P777
+   Financial Conduct Authority, 2011, APPR REG
+   Financial Crisis Inquiry Commission, 2011, FIN REP NAT COMM CAU
+   Financial Ombudsman Service, 2011, OMBUDSMAN NEWSLE JUN, V94
+   Financial Ombudsman Service, 2008, FIN DEC COMPL A FIN
+   Financial Services Authority, 2001, TREAT CUST FAIRL POI
+   Financial Services Authority, 2008, ALL LEIC PAY 7 MILL
+   Financial Services Authority, 2010, ASS REDR PAYM PROT I
+   Financial Services Authority, 2011, FSA FIN BARCKL 7 7 M
+   Financial Services Authority, 2011, PACK BANK ACC ICOBS
+   Financial Services Authority, 2005, SAL PAYM PROT INS RE
+   Financial Services Authority, 2002, 11 8 BILL COMP PENS
+   Financial Services Authority, 2006, SAL PAYM PROT INS RE
+   Financial Services Authority, 2007, SAL PAYM PROT INS TH
+   Financial Services Authority, 2008, FSA UPD ITS REV SAL
+   Financial Services Authority, 2009, FSA WANTS ALL FIRMS
+   Financial Services Authority, 2005, FSA UPD PAYM PROT IN
+   Financial Services Authority, 2006, TREAT CUST FAIRL FAI
+   Financial Services Authority, 2010, FSA ANN CFEB CHAIRM
+   Financial Services Authority and Office of Fair Trading, 2011, GC1126OFT1385 FIN SE
+   Ford J., 2000, FINANCE, V45
+   Garratt B., 1998, FISH ROTS HEAD
+   Gleick J., 1992, GENIUS R FEYNMAN MOD
+   Green S., 2009, GOOD VALUE REFLECTIO
+   Haldane A.G., 2009, RETHINKING FINANCIAL
+   Hancock Matthew, 2011, MASTERS NOTHING
+   Hutton W., 2010, THEM US CHANGING BRI
+   Independent Commission on Banking, 2011, INT REP CONS REF OPT
+   Independent Commission on Banking, 2010, ISS PAP CALL EV IND
+   Independent Commission on Banking, 2011, FIN REP REC IND COMM
+   International Monetary Fund, 2010, GLOB FIN STAB REP M
+   Janis I., 1971, CLASSICS ORG THEORY
+   Jobst AA, 2007, J FINANC REGUL COMPL, V15, P423, DOI 10.1108/13581980710835272
+   KAHNEMAN D, 1979, ECONOMETRICA, V47, P263, DOI 10.2307/1914185
+   Kempson E, 1997, BRIDING GAP SAFETY N
+   Krugman P., 2009, RETURN DEPRESSION EC
+   McConnell P. J., 2008, J RISK MANAGEMENT FI, V1, P370
+   McConnell P. J., 2006, PERFECT STORM WHY AR
+   McConnell P. J., 2005, WORKING PAPER
+   McConnell P. J., 2003, WORKING PAPER
+   McConnell P. J., 1998, INT J PROJECT BUSINE, V2, P59
+   McConnell P, 2011, J OPER RISK, V6, P65, DOI 10.21314/JOP.2011.095
+   Merricks W., 2008, FUTURE BANKING REGUL
+   Molyneux P., 1996, EFFICIENCY EUROPEAN
+   Money Advice Service, 2011, 2011 2012 BUS PLAN
+   Nyberg L., 2004, DO CONFLICTS INTERES
+   Nyberg L., 2011, MISJUDGING RISK CAUS
+   Office of Fair Trading, 2006, PAYM PROT INS REP MA
+   Office of Fair Trading, 2007, PAYM PROT INS OFTS
+   Ouseley D. B. W., 2011, JUDGEMENT JUDICIAL R
+   PricewaterhouseCoopers, 2004, PRICEWATERHOUSECOOPE
+   Reuters, 2011, TRIO BRIT BANKS TAK
+   Schiller R., 2008, SUBPRIME SOLUTION
+   Schwarcz S., 2008, 1632008 DUK LAW SCH
+   Securities and Exchange Commission, 2005, GLOB RES AN SETTL
+   Sergeant Carol, 2003, STRATEGIC APPROACH T
+   SIMON HA, 1990, ANNU REV PSYCHOL, V41, P1, DOI 10.1146/annurev.ps.41.020190.000245
+   SOROS G, 1997, ATLANTIC MONTHLY, V279, P45
+   Taleb N. N., 2007, BLACK SWAN IMPACT HI
+   Turner B., 1976, ADM SCI Q, V21, P387
+   Twomey T., 2009, SUBPRIME REVISITED R
+   UK Government, 2010, COAL OUR PROGR GOV F
+   UK Treasury, 2011, NEW APPR FIN REG
+   UK Treasury Subcommittee, 2005, SPEC REP SESS 2004 2
+   *US SEN, 2004, REP US INT COMM PREW
+   Wainer J., 2010, PREVALENCE FINANCIAL
+   Watchorn E., 2007, WORKING PAPER
+   Which?, 2011, PAYMENT PROTECTION I
+   Willman P., 2005, J MANAGE STUD, V43, P1357
+   Zhang P. G., 1995, BARINGS BANKRUPTCY F
+NR 103
+TC 6
+Z9 6
+U1 0
+U2 15
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1744-6740
+EI 1755-2710
+J9 J OPER RISK
+JI J. Oper. Risk.
+PD SPR
+PY 2012
+VL 7
+IS 1
+BP 79
+EP 139
+PG 61
+WC Business, Finance
+SC Business & Economics
+GA 125UK
+UT WOS:000317566700004
+DA 2019-12-28
+ER
+
+PT J
+AU Alekneviciene, V
+   Alekneviciute, E
+   Rinkeviciene, R
+AF Alekneviciene, Vilija
+   Alekneviciute, Egle
+   Rinkeviciene, Rasa
+TI Portfolio Size and Diversification Effect in Lithuanian Stock Exchange
+   Market
+SO INZINERINE EKONOMIKA-ENGINEERING ECONOMICS
+LA English
+DT Article
+DE portfolio diversification; diversification effect; number of stocks;
+   concentration index; naive portfolio; differently-weighted portfolio;
+   capitalization
+ID REDUCTION
+AB Recently scientists have increasingly focused on measuring the effect of diversification rather than portfolio efficiency evaluation, motivating that return is more variable economic phenomenon than the risk. Portfolios in different size financial markets are formed from different numbers of stocks in order to get the same non-systemic risk elimination effect. In most cases scientists agree about naive portfolio diversification effect. Scientific debates on the measurement of diversification effect of differently-weighted stocks portfolios are still in progress. Therefore, authors of the article solve the scientific problem assessing the possibilities for diversification when portfolios are made of different weight stocks and compare the diversification effect of naive and differently-weighted stocks portfolios. The research is done in Lithuanian Stock Exchange Market and based on daily stock market prices during 2009-2010.
+   The research methodology is original because the selection of shares to portfolios is carried out under the following criteria in order of priority: 1) the largest negative correlation coefficient values, 2) the quantitative characteristics of the negative correlations with the other stocks in pairs, and 3) stocks of companies from different industry sectors.
+   The diversification effect is evaluated by three indicators: percentage of diversifiable risk elimination, depending on the number of stocks in portfolio, regressions of standard deviations of portfolios against number and concentration of stocks. The results showed that in all cases greater diversification effect is obtained in naive portfolios.
+C1 [Alekneviciene, Vilija; Rinkeviciene, Rasa] Aleksandras Stulginskis Univ, LT-53361 Kauno R, Lithuania.
+   [Alekneviciute, Egle] Vytautas Magnus Univ, LT-44246 Kaunas, Lithuania.
+RP Alekneviciene, V (reprint author), Aleksandras Stulginskis Univ, Univ St 10, LT-53361 Kauno R, Lithuania.
+EM vilija.alekneviciene@lzuu.lt; egle.alekneviciute@gmail.com;
+   r.rinkeviciene@e-energija.lt
+CR Andersen T.G., 2004, PRACTICAL V IN PRESS, pF
+   Bera AK, 2008, ECONOMET REV, V27, P484, DOI 10.1080/07474930801960394
+   Best R.W., 1991, REV FINANC STUD, V4, P315
+   BOUCHAUD J. P., 1997, MISSING INFORM ASSET
+   Burnside D.J., 2004, AAII J, P16
+   Byrne J.P., 2000, 6 PRRES C SYDN AUSTR
+   Cheng P., 2007, J REAL ESTATE PORTFO, V13, P29
+   Chopra V.K., 1993, J PORTF MANAGE, V4, P6, DOI DOI 10.3905/JPM.1993.409440
+   Choueifaty Y, 2008, J PORTFOLIO MANAGE, V35, P40, DOI 10.3905/JPM.2008.35.1.40
+   COOLEY P, 2003, J FINANCIAL PLAN JAN, P74
+   Coyne T., 2008, ASSET ALLOCATION MET
+   DeMiguel V, 2009, REV FINANC STUD, V22, P1915, DOI 10.1093/rfs/hhm075
+   Dzikevicius A., 2005, PREKYBINIO PORTFELIO
+   EVANS JL, 1968, J FINANC, V23, P761, DOI 10.2307/2325905
+   FISHER L, 1970, J BUS, V43, P99, DOI 10.1086/295259
+   Fouque Jean-Pierre, 2000, DERIVATIVES FINANCIA
+   Frahm G., 2011, SEMINAR EC SOCIAL ST
+   Gibson R. C., 2004, J FINANCIAL PLANNING, V17, P58
+   Hight G., 2009, J INDEXES, P44
+   Jagannathan R, 2003, J FINANC, V58, P1651, DOI 10.1111/1540-6261.00580
+   Meucci A., 2009, RISK, V22, P74
+   Newbould G. D., 1993, FINANCIAL PRACTICE E, V3, P85
+   Sawant S., 2001, FORECASTING VOLATILI
+   Sharpe W., 1997, INVESTMENTS
+   STATMAN M, 1987, J FINANC QUANT ANAL, V22, P353, DOI 10.2307/2330969
+   Tang GYN, 2004, OMEGA-INT J MANAGE S, V32, P155, DOI 10.1016/j.omega.2003.10.002
+   Woerheide W., 1993, FINANCIAL SERVICES R, V2, P73, DOI DOI 10.1016/1057-0810(92)90003-U
+NR 27
+TC 5
+Z9 5
+U1 0
+U2 13
+PU KAUNAS UNIV TECHNOL
+PI KAUNAS
+PA LAISVES AL 55, KAUNAS, 44309, LITHUANIA
+SN 1392-2785
+J9 INZ EKON
+JI Inz. Ekon.
+PY 2012
+VL 23
+IS 4
+BP 338
+EP 347
+DI 10.5755/j01.ee.23.4.2565
+PG 10
+WC Economics
+SC Business & Economics
+GA 059NC
+UT WOS:000312711200002
+DA 2019-12-28
+ER

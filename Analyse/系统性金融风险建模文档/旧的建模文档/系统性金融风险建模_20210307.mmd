@@ -1,0 +1,946 @@
+# 系统性金融风险建模
+
+
+
+## 定义DSGE模型框架的变量
+
+TODO
+
+$\hat{\Box}$：相关变量的稳态值的比例；
+
+$λ_{\Box}$：居民成员角色中转换为普通居民的转换率（满足泊松过程）。其中下标为$e$表示企业家转换为普通居民的转换率，下标为$b$表示银行家转换为普通居民的转换率；
+
+$\gamma_{\Box}$：居民效用的跨期折现因子；
+
+$\alpha_{\Box}$：居民行为偏好参数；
+
+$C_{\Box}[i,t]$：居民$i$的大众消费于时期$t$；
+
+$H_{\Box}[i,t]$：居民$i$的住房消费于时期$t$；
+
+$\varepsilon_{c}[t]$：扰动项之于大众消费于时期$t$；
+
+$\varepsilon_{h}[t]$：扰动项之于住房消费于时期$t$；
+
+$w_{\Box}[i,t]$：居民$i$的单位时长工资于时期$t$；
+
+$h_{\Box}[i,t]$：居民$i$的工作时长于时期$t$；
+
+$t_{\Box}[i,t]$：居民$i$获得的转移支付于时期$t$；
+
+$\pi[t]$：通货膨胀率于时期$t$，定义为
+$$
+\pi[t] := \frac{P[t]}{P[t-1]}
+$$
+
+其中，
+$P[t]$：表示物价，在时期$t$；
+
+$C_{\Box}[i,t]$：投资和储蓄型居民$i$的大众消费于时期$t$；
+
+$p_{h}[t]$：住房价格,在时期$t$；
+
+$D_{\Box}[i,t]$：居民$i$在银行的储蓄；
+
+$w_{\Box}[i,t]$：居民$i$的单位工资于时期$t$；
+
+$w_{GI}[t]$：消费品中间品生产商对居民支付单位工资，在时期$t$；
+
+$h_{\Box}[i,t]$：居民$i$的劳动时长；
+
+$\chi_{p} \in[0,1]$ ：指数化程度参数，其为消费品中间品厂商为确定化其指数化价格所需；
+
+$A[t]$：全要素生产率；
+
+$K_{\Box}[i,t]$：生产商$i$的资本要素；
+
+$N_{\Box}[i,t]$：生产商$i$的劳动要素；
+
+$r_{GI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
+
+$P_{GF}[t]$：消费品最终品的价格，在时期$t$；
+
+$P_{GI}[j,t]$：制定的价格，其由具有制定价格能力的消费品中间品生产商$j$制定；
+
+$\tilde{P}_{GI}[t]$：相同的价格之消费品中间品生产商总体制定的，于定价阶段，在时期$t$；
+
+$\rho_{\Box}$：自回归过程的回归系数；
+
+其中，各下标表示含义如下：
+
+- $\rho_{A}$：全要素生产率$A[t]$对应的自回归过程的回归系数；
+
+$\varepsilon_{\Box}[t]$：自回归过程的扰动项；
+
+其中，各下标表示含义如下：
+
+- $\varepsilon_{A}$：全要素生产率$A[t]$对应的自回归过程的扰动项；
+
+$\theta_e$：消费品中间品生产商不同的产品的替代弹性；
+
+$\theta_{p}$：每一期，消费品中间品生产商未能重新定价的厂商$ k \in \{未参与制定价格的消费品中间品生产商\} $的数量的比例，意味着在该时期，$1-\theta_p$的比例数量的厂商$j \in \{可以参与制定价格的消费品中间品生产商\}$可以参与重新定价；
+
+~~$\Phi$：消费品中间品生产商的固定生产成本。在稳态条件下，其值被设定为产生0利润；~~
+
+$f_{PC}$：资本品生产商的资本生产函数；
+
+$I_{PC}$：资本品生产商的资本投资量；
+
+$P_{PC}$：资本品生产商的资本品再出售价格；
+
+$\delta$：资本品折旧率；
+
+$Y_{PE}[t]$：房地产开发商部门总产出，在时期$t$；
+
+$A_{PE}$
+
+
+
+
+
+## 假设之于DSGE模型框架
+
+假定
+
+TODO
+
+
+
+## DSGE模型框架的各部门描述
+
+#### 异质性的商业银行部门
+
+部门构成：
+
+- 银行家：
+    - 英文全名：Banker
+    - 
+
+##### 银行间市场
+
+- [ ] 
+
+#### 广义政府部门
+
+- [ ] 
+
+#### 居民部门
+
+居民部门构成：
+
+- 耐心居民：
+- 非耐心居民：
+
+  
+
+其中，成员的转换：
+
+> 参照
+> [[Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.]]
+> 的做法
+
+居民成员角色可相互转化，每期企业家和银行家的相互转化满足泊松过程，分别以固定的退出率（转换率）$1-\lambda_e , \lambda_e \in[0,1)$ 和 $1-\lambda_b , \lambda_b \in[0,1)$， 随机退出自己岗位转为其他角色。如果退出率为0，则居民成员的角色不相互转化。
+
+> 居民的设置参照
+>
+> [[方意, 2016. 宏观审慎政策有效性研究[J]. 世界经济, 39(08): 25–49.]]
+>
+> [[Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.]]
+
+假设：
+
+- 为了保证稳态时，借款型居民是经济体的净借款方，因此设借款型居民的贴现因子应小于投资和储蓄型居民的贴现因子$\gamma_{HB}<\gamma_{HI}$。
+- 居民个数为$N_{H}$，其中借款型居民个数为$N_{HB}$，储蓄与投资型居民个数为$N_{HI}$。
+
+
+
+
+
+##### 借款型居民
+
+一些文献描述借款型居民为非耐心居民。
+
+英文全名：Borrowing Household；
+
+变量名：household_borrowing；
+
+数学符号：$\Box_{HB}$；
+
+行为：
+- 向银行部门之零售贷款银行分支借款$L_{HB,t}$，以银行的贷款利率（等价于居民的借款利率）$r_{b,t}$；
+
+- 消费产品$C_{HB,t}$；
+
+目标：
+$$
+\mathbb{TG}_{HB}[i] :=
+\max \quad \mathbb{E_{i,t=0}} 
+\left[ \sum_{t=0}^{\infty} 
+(\gamma_{HB})^t \left(
+(1-\alpha_{HB}) \varepsilon_{c}[t] \log \left(C_{c,HB}[i,t]-\alpha_{HB} C_{c,HB}[t-1]\right) + \varepsilon_{h}[t] \log C_{h,HB}[i,t] - \frac{\left(h_{HB}[i,t]\right)^{1+\phi}}{1+\phi}
+ \right)
+\right]
+$$
+
+其中，
+$\gamma_{HB}$：借款型居民的居民的跨期折现因子；
+$\alpha_{HB}$：借款型居民的行为偏好参数；
+$C_{c,HB}[i,t]$：借款型居民$i$的大众消费于时期$t$；
+$C_{c,HB}[t-1]$：投资和储蓄型居民的大众消费加总于时期$t-1$；
+$C_{h,HB}[i,t]$：借款型居民$i$的住房消费于时期$t$；
+$\varepsilon_{c}[t]$：扰动项之于大众消费于时期$t$；
+$\varepsilon_{h}[t]$：扰动项之于住房消费于时期$t$；
+$h_{HB}[i,t]$：借款型居民$i$的工作时长于时期$t$；
+
+其中，上式的
+$$
+\varepsilon_{c}[t] \log \left(C_{c, H B}[i, t]-\alpha_{H B} C_{c, H B}[t-1]\right)=\log \frac{C_{c, H B}[i, t]^{\varepsilon_{c}[t]}}{\alpha_{H B} C_{c, H B}[t-1]^{\varepsilon_{c}[t]}}
+$$
+表示借款型居民$i$的大众消费需求。
+
+
+
+约束条件：
+
+- 预算约束：
+	$$
+C_{c,HB}[i,t] + p_{h}[t] \; \Delta C_{h,HB}[i,t] + \frac{\left(1 + r_{b,HB}[t]\right) B_{HB}[i,t-1]}{\pi[t]} = w_{HB}[i,t]  \; h_{HB}[i,t] + B_{HB}[i,t]+t_{HB}[i,t]
+	$$
+	其中，
+	$C_{c,HB}[i,t]$：借款型居民$i$的大众消费于时期$t$；
+	$p_{h}[t] \; \Delta C_{h,HB}[i,t]$：住房价格$p_{h}[t]$与借款型居民$i$的住房偿还贷款变动量$\Delta C_{h,HB}[i,t]$的乘积于时期$t$；
+	$\left(1 + r_{b,HB}[t]\right) B_{HB}[i,t-1] / \pi[t]$：借款型居民$i$偿还上一期的借款于本期，以借款利率$r_{b,HB}[t]$，考虑当前总通胀率$\pi[t]$的影响；
+	$w_{HB}[i,t] h_{HB}[i,t]$：借款型居民$i$的单位工资$w_{HB}[i,t]$与劳动时长$h_{HB}[i,t]$的乘积于时期$t$；
+	$(1+r_{d}[t-1]) D_{HB}[i,t-1] / \pi[t]$：借款型居民$i$的上一期存款$D_{HB}[i,t-1]$于本期提现以上一期的存款利率$r_{d}[t-1]$，考虑当前总通胀率$\pi[t]$的影响；
+	$B_{HB}[i,t]$：借款型居民$i$对银行的借款；
+	$t_{HB}[i,t]$：借款型居民$i$获得的转移支付于时期$t$；
+	
+
+  
+- 信贷抵押约束：
+    $$
+    \left(1+r_{b,HB}[t] \right) B_{HB}[i,t] \leq m_{HB}[t] \; \mathbb{E}_{i,t} \left[ p_{h}[t+1] \; \pi[t+1] \; C_{h,HB}[t] \right]
+    $$
+    - [ ] 其中，
+      $m_{HB}[t]$ ：针对贷款价值比例LTV于借款型居民用于抵押品。$(1-m_{HB}[t])$意味着如果发生违约，银行按此比例收回抵押品，从而借款型居民为此付出的成本；
+      $B_{HB}[i,t]$：借款型居民$i$对银行的借款；
+      $p_{h}[t+1] \; \pi[t+1] \; C_{h,HB}[t]$：；
+
+
+
+##### 投资和储蓄型居民
+
+一些文献描述投资和储蓄型居民为耐心居民。
+
+英文全名：Investment Household；
+
+变量名：household_investment；
+
+数学符号：$\Box_{HI}$；
+
+行为：
+- 向银行部门的银行零售银行存款分支存款$D_{HI}[i,t]$，以存款利率$r_{D,t}$；
+- 消费大众商品$C_{c,HI}[i,t]$；
+- 住房消费$C_{h,HI}[i,t]$；
+
+目标：
+$$
+\mathbb{TG}_{GI}[i]:=
+\max \mathbb{E}_{i,t=0} \left[ 
+\sum_{t=0}^{\infty}
+(\gamma_{HI})^t
+\left(
+(1-\alpha_{HI}) \; \varepsilon_{c}[t] \; \log \left(C_{c,HI}[i,t]-\alpha_{HI} \; C_{c,HI}[t-1]\right) + \varepsilon_{h}[t] \; \log h_{HI}[i,t]-\frac{(h_{HI}[i,t])^{1+\phi}}{1+\phi}
+\right)
+\right]
+$$
+其中，
+$\gamma_{HI}$：投资和储蓄型居民的居民的时期折现因子；
+$\alpha_{HI}$：投资和储蓄型居民的行为偏好参数；
+$C_{c,HI}[i,t]$：投资和储蓄型居民$i$的大众消费于时期$t$；
+$C_{c,HI}[t-1]$：投资和储蓄型居民的大众消费加总于时期$t-1$；
+$C_{h,HI}[i,t]$：投资和储蓄型居民$i$的住房消费于时期$t$；
+$\varepsilon_{c}[t]$：扰动项之于大众消费于时期$t$；
+$\varepsilon_{h}[t]$：扰动项之于住房消费于时期$t$；
+$h_{HI}[i,t]$：投资和储蓄型居民$i$的工作时长于时期$t$；
+
+上式中，
+$$
+\varepsilon_{c}[t] \log \left(C_{c, H I}[i, t]-\alpha_{H I} C_{c, H I}[t-1]\right)=\log \frac{C_{c, H I}[i, t]^{\varepsilon_{c}[t]}}{\alpha_{H I} C_{c, H I}[t-1]^{\varepsilon_{c}[t]}}
+$$
+表示投资和储蓄型居民$i$的大众消费需求。
+
+
+
+约束条件：
+
+- 对于投资和储蓄型居民$i$，存在预算约束：
+
+    $$
+  C_{c,HI}[i,t] + p_{h}[t] \Delta C_{h,HI}[i,t] + D_{HI}[i,t] = w_{HI}[i,t] C_{h,HI}[i,t] + (1+r_{d}[t-1]) D_{HI}[i,t-1] / \pi[t] + t_{HI}[i,t])
+  $$
+  其中，
+    $C_{c,HI}[i,t]$：投资和储蓄型居民$i$的大众消费于时期$t$；
+    $p_{h}[t] \Delta C_{h,HI}[i,t]$：住房价格$p_{h}[t]$与投资和储蓄型居民$i$的住房偿还贷款变动量$\Delta C_{h,HI}[i,t]$的乘积于时期$t$；
+    $D_{HI}[i,t]$：投资和储蓄型居民$i$在银行的储蓄；
+    $w_{HI}[i,t] h_{HI}[i,t]$：投资和储蓄型居民$i$的单位工资$w_{HI}[i,t]$与劳动时长$h_{HI}[i,t]$的乘积于时期$t$；
+    $(1+r_{d}[t-1]) D_{HI}[i,t-1] / \pi[t]$：投资和储蓄型居民$i$的上一期存款$D_{HI}[i,t-1]$于本期提现以上一期的存款利率$r_{d}[t-1]$，考虑当前总通胀率$\pi[t]$的影响；
+    $t_{HI}[i,t]$：投资和储蓄型居民$i$获得的转移支付于时期$t$；
+
+
+
+
+
+##### 企业家TODO
+
+TODO
+
+
+
+##### 银行家TODO
+
+TODO
+
+
+
+
+
+#### 生产部门
+
+生产部门的行为：
+
+生产部门通过外部融资、雇佣劳动生产最终产品，以提供居民部门消费，同时支付工资、利息。其外部融资方式主要为从商业银行和影子银行获得。生产最终产品的过程涉及到生产中间品、生产资本品。此外在研究中，为了考虑房地产的影响，我们将房地产开发商纳入到生产部门。
+
+
+
+生产部门构成：
+
+- 消费品生产商；
+  - 生产中间品的厂商；
+  - 生产最终品的厂商；
+- 资本品生产商；
+- 房地产开发商；
+
+
+
+生产部门分类：
+
+分类针对消费品厂商的生产最终品的厂商、房地产开发商；
+
+- 竞争力充足的厂商；
+- 竞争力不足的厂商；
+
+
+
+假设：
+
+- 生产消费品中间品的厂商之间不互相竞争；
+
+- 生产消费品最终品的厂商之间是充分竞争的；
+
+- 关于企业部门的建模时标准化的。假定经济中存在一系列连续的消费品中间品生产商$i \in [0,1]$连续统，意味着每一个消费品中间品生产商对该消费品中间品市场的影响都是无穷小的；
+
+- 生产消费品中间品的厂商的产品是同种类的，具有要素替代性；
+
+- 假定每一期消费品中间品生产商参与重新定价的厂商数量的比例为 $1-\theta_{p}$；
+
+- 所有参与重新定价的消费品中间品生产商厂商 $j \in \{需要重新定价的消费品中间品生产商\}$  都选择同样的价格 $\tilde{P}_{GI}[t] \equiv \tilde{P}_{GI}[j,t]$；
+
+- 未能参与重新定价的消费品中间品生产商的价格根据过去的通胀水平确定其指数化了的价格；
+
+- 假定对数形式的全要素生产率$A[t]$服从AR(1)过程；
+
+- 资本市场、劳动力市场是完全竞争的。则在消费品中间品生产商中的每一个都将接受给定的工资和资本租金水平；
+
+- 假设消费品中间品生产商$j$参与定价一次$\tilde {P}_{GI}[j,t]$之后，且之后不能最优地重新定价；
+
+- TODO
+
+- 在资本品生产部门中，资本品生产商具有竞争性；
+
+- 房地产开发商；
+
+- 
+
+  
+
+
+
+> 关于生产部门的划分，直接参考：
+>
+
+相关构成：
+
+~~企业家：~~
+
+- ~~英文全名：Entrepreneurs；~~
+- ~~变量名：entrepreneurs；~~
+- ~~数学符号：$\Box_{E}$；~~
+- ~~行为：；~~
+- ~~目标：~~
+- ~~满足的约束条件：~~
+
+
+
+
+
+##### 消费品生产商
+
+消费品生产商由消费品中间品生产商、消费品最终品生产商构成。
+
+> 本部分参考
+>
+> [[马勇, 2013. 植入金融因素的DSGE模型与宏观审慎货币政策规则[J]. 世界经济, (07 vo 36): 68–92.]]
+> [[马勇, 陈雨露, 2013. 宏观审慎政策的协调与搭配:基于中国的模拟分析[J]. 金融研究, (08): 57–69.]]
+>
+> 
+
+
+
+
+
+##### 消费品最终品生产商
+
+英文全名：Final Goods Producers；
+
+变量名：producers_final；
+
+数学符号：$\Box_{GF}$；
+
+行为：
+
+- 接收中间品生产商，生产最终品。
+
+决策目标：
+
+最大化利润，在给定消费品最终品价格$P_{GF}[t]$和中间品价格$P_{GI}[i,t]$时：
+$$
+TE_{GF}[t] := \max _{Y_{GI}[i,t]} P_{GF}[t] Y_{GF}[t] - \int_{0}^{1} P_{GI}[i, t] Y_{GI}[i, t] \; \mathbb{d} i
+$$
+
+
+
+其中，
+$Y_{GF}[t]$：消费品最终品产量；
+
+满足的约束条件：
+$$
+Y_{GF}[t] := \left(\int_{0}^{1} Y_{GI}[i,t]^{\frac{\theta_e-1}{\theta_e}} \; \mathbb{d} i\right)^{\frac{\theta_e}{\theta_e-1}}
+$$
+
+其中，
+$\theta_e$：消费品中间品生产商不同的产品的替代弹性；
+
+由上述式子可列出拉格朗日函数，通过一阶条件，求得消费品中间品生产商$i$的产出需求
+$$
+Y_{GI}[i, t] = \left(\frac{P_{GF}[t]}{P_{GI}[i, t]} \right)^{\theta_e} Y_{GF}[t]
+$$
+
+
+
+##### 消费品中间品生产商：
+
+英文全名：Intermediate Goods Producers；
+
+变量名：producers_intermediate；
+
+数学符号：$\Box_{GI}$；
+
+行为：
+
+- 生产$Y_{GI}[i,t]$单位的产品在$t$期，以供最终厂商生产最终品；
+
+
+
+分析行为：
+
+由于假设所有重新定价的厂商都选择同样的制定后的价格 $\tilde{P}_{GI}[t] \equiv \tilde{P}_{GI}[j,t]$，因此考虑最优化问题之于消费品中间品生产商 $j \in \{需要重新定价的消费品中间品生产商\}$ 之参与重新定价在时期$t$，可表示为企业预期的收益折现与预期的成本折现序列：
+
+$$
+\max _{\tilde{P}_{GI}[t]} \mathbb{E}_t \sum\limits_{t_s=0}^{\infty}
+\left(
+ 	(\beta_{GI})^{t_s} \; (\theta_p)^{t_s} \; Y_{GI}[j,t+t_s]
+ 	- P_{GF}[t+t_s]
+ 	\times
+ 	\min _{}
+ 	\left(
+ 		r_{GI,z}[t+t_s \; K_{GI}[j,t+t_s] + w_{GI,z}[t+t_s] \; N_{GI}[j, t+t_s]
+ 	\right) 
+\right)
+$$
+其中，
+$(\beta_{GI})^{t_s}$：消费品中间品生产商贴现；
+$(\theta_p)^{t_s}$：消费品中间品生产商未参与重新定价的数量所占比例$(\theta_{p})^{t_s}$在预期的$t_s$时期能够将其价格保持的概率；
+$Y_{GI}[j,t+t_s]$：产出之于消费品中间品生产商$j$其参与重新定价于时期$t+t_s$；
+$P_{GF}[t+t_s]$：定价之于消费品最终品生产商于时期$t+t_s$；
+$\min _{}
+ 	\left(
+ 		r_{GI,z}[t+t_s \; K_{GI}[j,t+t_s] + w_{GI,z}[t+t_s] \; N_{GI}[j, t+t_s]
+ 	\right) $：最小化成本问题：即资本和劳动力投入成本之于参与重新定价于时期$t+t_s$的消费品中间品生产商$j$；
+
+
+
+上述最优化问题对应的约束条件：
+
+$$
+\text { s. t. } \quad
+Y_{GI}[i, t+t_s] \triangleq A[t+t_s] \; K_{GI}[j,t+t_s]^{\alpha} \; N_{GI}[j,t+t_s]^{1-\alpha} = \left(\frac{P_{GF}[t+t_s]}{\tilde{P}_{GI}[j, t+t_s]} \right)^{\theta_e} Y_{GF}[t+t_s] 
+$$
+
+其中，
+$A[t]$：全要素生产率；
+
+由于上述最优化问题包含最大化收益和最小化成本问题，因此考虑分为两个阶段决策。
+
+决策目标分为两阶段：
+
+1. 所有的消费品中间品厂商最小化其总成本；
+1. 消费品中间品生产商其可以参与制定价格的，最大化其实际预期贴现利润；
+
+
+
+阶段1：所有的消费品中间品生产商$i \in \{消费品中间品生产商\}$最小化其总成本，于每个需要贴现的时期$t_s$，基于时期$t$，即时期$t+t_s, \quad t_s \in [t,\infty)$。这里为了简化表述，在阶段1，我们省略$t_s$，所以$t+t_s$用$t$表示。
+
+
+$$
+TC_{GI}[i,t] \equiv TC_{GI}[t] := \min _{N_{GI}[i,t] , K_{GI}[i,t]}  w_{GI}[t] \; N_{GI}[i,t] + r_{GI}[t] \; K_{GI}[i,t]
+$$
+其中，
+$w_{GI}[t]$：消费品中间品生产商对居民支付单位工资，在时期$t$；
+$N_{GI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
+$r_{GI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
+$K_{GI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
+
+  
+
+约束条件：
+
+生产函数之中间消费品
+$$
+Y_{GI}[i,t]=A[t] \; K_{GI}[i,t]^{\alpha} \; N_{GI}[i,t]^{1-\alpha}
+$$
+其中，
+$A[t]$：消费品领域生产的全要素生产率（技术）；
+$K_{GI}[i,t]$ ：消费品中间品生产商$i$的资本要素；
+$N_{GI}[i,t]$：消费品中间品生产商$i$的劳动要素；
+~~$\Phi$：消费品中间品生产商的固定生产成本。在稳态条件下，其值被设定为产生0利润；~~
+
+假定对数形式的全要素生产率 $A[t]$ 服从如下形式的一阶自回归AR(1)过程：
+$$
+\ln A[t] = \rho_{A} \ln A[t-1] + \varepsilon_{A}[t]
+$$
+
+最优化问题的一阶条件可以写成：
+$$
+\begin{align}
+& w_{GI}[t]=(1-\alpha) A[t] K_{GI}[i,t]^{\alpha} (N_{GI}[i,t])^{-\alpha} \\
+\Leftrightarrow \quad
+& w_{GI}[t]=(1-\alpha) \frac{Y_{GI}[i,t]}{N_{GI}[i,t]}
+\end{align}
+$$
+
+由此可求得消费品中间品生产商$i$的租金率$r_{GI}[t]$
+$$
+\begin{align}
+& r_{GI}[t] = \alpha \; A[t] \; K_{GI}[i,t]^{\alpha-1} \; N_{GI}[i,t]^{1-\alpha} \\
+\Leftrightarrow \quad 
+ & r_{GI}[t] = \alpha \; \frac{Y_{GI}[i,t]}{K_{GI}[i,t]}
+\end{align}
+$$
+可求得消费品中间品生产商$i$的资本$K_{GI}[i,t]$
+$$
+\begin{align}
+K_{GI}[i, t] & = \frac{Y_{GI}[i,t]}{A[t]} \left(\frac{r_{GI}[t]}{w_{GI}[t]} \cdot \frac{1-\alpha}{\alpha} \right) ^{\alpha - 1}
+\\
+& = \frac{\alpha}{1-\alpha} \; \frac{w_{GI}[t]}{r_{GI}[t]} \; N_{GI}[i,t]
+\end{align}
+$$
+
+可求得消费品中间品生产商$i$的劳动$N_{GI}[i,t]$
+$$
+\begin{align}
+N_{GI}[i, t] & = \frac{Y_{GI}[i,t]}{A[t]} \left(\frac{r_{GI}[t]}{w_{GI}[t]} \cdot \frac{1-\alpha}{\alpha} \right) ^{\alpha}
+\\
+& = \frac{1-\alpha}{\alpha} \; \frac{r_{GI}[t]}{w_{GI}[t]} \; K_{GI}[i,t] 
+\end{align}
+$$
+
+将$K_{GI}[i, t]$和$N_{GI}[i, t] $的表达式代入最小化总成本表达式，并且代入约束条件可得消费品中间品生产商$i$的实际总成本$TC_{GI}[t]$
+$$
+TC_{GI}[t]
+= \left( 1-\alpha \right)^{\alpha -1} \; \alpha^{-\alpha} \; \frac{Y_{GI}[t] \; w_{GI}[t]^{1-\alpha} \; r_{GI}[t]^{\alpha}}{A[t]}
+$$
+可求得消费品中间品生产商$i$共有的实际边际成本$MC_{GI}[t]$：
+$$
+MC_{GI}[t]
+:= \frac{TC_{GI}[t]}{Y_{GI}[t]}
+= \left( 1-\alpha \right)^{\alpha -1} \; \alpha^{-\alpha} \; \frac{w_{GI}[t]^{1-\alpha} \; r_{GI}[t]^{\alpha}}{A[t]}
+$$
+
+
+阶段2：消费品中间品生产商$j \in \{可以参与制定价格的消费品中间品生产商\}$，最大化其实际预期贴现利润。
+
+
+
+> 根据
+>
+> [[Calvo G A, 1983. Staggered prices in a utility-maximizing framework[J]. Journal of Monetary Economics, 12(3): 383–398.]]
+>
+> 设定中间厂商定价机制。
+
+消费品中间品生产商$ k \in \{未参与制定价格的消费品中间品生产商\} $其余厂商则根据过去的通胀水平确定其指数化价格，即
+$$
+P_{GI}[k,t]=\pi[t-1]^{\chi_{p}} \; P_{GI}[i,t-1]
+$$
+其中，
+$\chi_{p} \in[0,1]$ ：指数化程度参数；
+$\pi[\cdot]$：通货膨胀率于特定时期，定义为
+$$
+\pi[t] := \frac{P[t]}{P[t-1]}
+$$
+
+其中，
+$P[\cdot]$：表示物价于特定时期；
+
+
+
+因为对于未参与定价的消费品中间品生产商，价格之调整以总通货膨胀率为基准，所以消费品最终品生产商的定价规则为
+$$
+P_{GF}[t] = \theta_p \; \left( \pi[t+t_h-1]^{\chi_{p}} \; P_{GF}[t-1] \right)   + (1-\theta_p) \; P_{GI}[j,t]
+$$
+
+
+假设消费品中间品生产商$j$参与定价一次$\tilde {P}_{GI}[j,t]$之后，不能最优地重新定价，从而该消费品中间品生产商$j$的价格$P_{GI}[j,t+t_s]$在时期$t+t_s$为
+$$
+P_{GI}[j,t+t_s] = \prod_{t_h=1}^{t_s} 
+\left(
+	\pi[t+t_h-1]^{\chi_{p}} 
+\right)	
+\; \tilde{P}_{GI}[j,t]
+$$
+
+消费品中间品生产商面临的最大化问题是：
+
+$$
+\begin{align}
+\max _{\tilde{P}_{GI}[j,t]} 
+& \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\left(
+(\beta_{GI})^{t_s} \; (\theta_{p})^{t_s}
+\; Y_{GI}[j,t+t_s]
+	\; 
+	\left(
+		P_{GI}[j,t+t_s] 
+		- MC_{GI}[t + t_s]
+	\right)
+\right)
+\\
+= & \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\left(
+(\beta_{GI})^{t_s} \; (\theta_{p})^{t_s}
+\; \left(\frac{P_{GF}[t+t_s]}{P_{GI}[j, t+t_s]} \right)^{\theta_e} Y_{GF}[t+t_s]
+	\;
+	\left(
+		\prod_{t_h=1}^{t_s} 
+		\left(
+		\pi[t+t_h-1]^{\chi_{p}} 
+		\right)	
+		\; \frac{\tilde{P}_{GI}[j,t]}{P_{GF}[t + t_s]}
+		- MC_{GI}[t + t_s]
+	\right)
+\right)
+\\
+= & \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\left(
+(\beta_{GI})^{t_s} \; (\theta_{p})^{t_s}
+\; \left(\frac{P_{GF}[t+t_s]}{		
+			\prod_{t_h=1}^{t_s} 
+      \left(
+      \pi[t+t_h-1]^{\chi_{p}} 
+      \right)	
+			\; \tilde{P}_{GI}[j,t]
+    } \right)^{\theta_e} Y_{GF}[t+t_s]
+	\;
+	\left(
+		\prod_{t_h=1}^{t_s} 
+		\left(
+		\pi[t+t_h-1]^{\chi_{p}} 
+		\right)	
+		\; \tilde{P}_{GI}[j,t]
+		- MC_{GI}[t + t_s]
+	\right)
+\right)
+\end{align}
+$$
+
+其中，
+
+$\theta_{p}$：每一期，消费品中间品生产商中未能参与重新定价的厂商$k$的数量的比例；
+$Y_{GI}[j,t+t_s]$：表示为
+$$
+Y_{GI}[j, t+t_s] = \left(\frac{P_{GF}[t+t_s]}{P_{GI}[j, t+t_s]} \right)^{\theta_e} Y_{GF}[t+t_s]
+=
+\left(
+	\prod_{t_h=1}^{t_s} \left( \pi[t + t_h - 1] ^{\chi_{p}} \right) \frac{\tilde{P}_{GI}[t]}{P_{GF}[t+t_s]}
+\right)^{-\theta_e}
+\; Y_{GF}[t+t_s]
+$$
+
+其中，
+$\theta_e$：消费品中间品生产商不同的产品的替代弹性；
+
+
+
+上述最优化问题对应的约束条件是消费品中间品生产商$i$的产量：
+
+$$
+\text { s. t. } 
+\quad Y_{GI}[i,t+t_s] = \left(\frac{P_{GF}[t+t_s]}{P_{GI}[j, t+t_s]} \right)^{\theta_e} Y_{GF}[t+t_s]
+=
+\left(
+	\prod_{t_h=1}^{t_s} \left( \pi[t + t_h - 1] ^{\chi_{p}} \right) \frac{\tilde{P}_{GI}[t]}{P_{GF}[t+t_s]}
+\right)^{-\theta_e} 
+\; Y_{GF}[t+t_s]
+$$
+
+最优化问题的一阶条件：
+$$
+\tilde{P}_{GI}[t] = 
+\frac{\theta_e}{\theta_e-1} 
+\frac
+{
+\mathbb{E}_{t} 
+\sum \limits_{t_s=0}^{\infty}
+	\left(
+		\left(\beta_{GI} \; \theta_{p} \right)^{t_s} \; P_{GF}[t+t_s] \; MC_{GI}[t+t_s] \; Y_{GF}[i, t+t_s]
+	\right)
+}
+{
+\mathbb{E}_{t} \sum \limits_{t_s=0}^{\infty}
+	\left(
+		\left(\beta_{GI} \theta_{p} \right)^{t_s} 
+		\; \prod \limits_{t_h=1}^{t_s} 
+			\left(  
+				\pi[t+t_h-1]^{\chi_{p}} 
+			\right)  
+		\; Y_{GI}[i, t+t_s]
+	\right)
+}
+$$
+
+其中，
+$MC_{GI}[t+t_s]$：消费品中间品生产商的实际边际成本，表达式为
+$$
+MC_{GI}[t+t_s]
+= \left( 1-\alpha \right)^{\alpha -1} \; \alpha^{-\alpha} \; \frac{w_{GI}[t+t_s]^{1-\alpha} r_{GI,z}[t+t_s]^{\alpha}}{A[t+t_s]}
+$$
+
+。
+
+根据消费品中间品生产商的产量$Y_{GI}[i,t]$与$Y_{GF}[t]$的关系
+$$
+Y_{GI}[i, t] = \left(\frac{P_{GI}[i, t]}{P_{GF}[t]} \right)^{-\theta_e} Y_{GF}[t]
+$$
+，然后采用Uhlig提出的对数线性化的方法，进行一番变换，最终可得价格水平的时变表达式
+$$
+P_{GF}[t]^{1-\theta_e}
+=
+\theta_{p} \; \left(\pi[t-1]^{\chi_{p}} \; P[t-1] \right)^{1-\theta_e} + (1-\theta_{p}) \; \tilde{P}_{GI}[t]^{1-\theta_e}
+$$
+通过对数线性化上面两个式子，可以得到如下形式的混合型新凯恩斯菲利普斯曲线（hybrid NKPC）
+
+TODO
+$$
+\hat{\pi}[t] =
+\frac{\beta_{GI}}{1+\beta_{GI} \;\chi_{p}} \mathbb{E}_{t} \; \hat{\pi}[t+1]
++
+\frac{\chi_{p}}{1+\beta_{GI} \; \chi_{p}} \; \hat{\pi}[t-1]
++
+\frac
+{
+\left( 1-\theta_{p} \right) \; \left( 1-\beta_{GI} \theta_{p} \right)
+}{
+\theta_{p}\left(1+\beta_{GI} \theta_{p}\right)
+} 
+\; \hat{MC}_{GI}[t]
+$$
+其中，
+$ \hat{\Box} $：相应变量偏离比例之于其稳态值；
+
+特别地，当 $\chi_{p}=0$ 时，上式变成前瞻型的新凯恩斯菲利普斯曲线( forward-looking NKPC)。通过引入混合性的菲利普斯曲线,有利于更好地对真实的通货膨胀过程及其动态机制进行刻画。
+
+
+
+
+
+
+   > 上式的形式，其思想可参考《RBC之ABC》P172关于交错定价模型的部分式(10.4)
+
+   
+
+
+
+
+
+##### 资本品生产商
+
+英文全名：Capital Goods Producers；
+
+变量名：producers_capital；
+
+数学符号：$\Box_{PC}$；
+
+行为：
+
+- 具有竞争性的生产资本品生产商$i$利用投资和现有资本存量生产新的资本品，这样的生产将耗费一定的物质转换成本。
+
+
+
+
+
+> 资本品生产商的建模描述主要参考
+>
+> [[马勇, 2013. 植入金融因素的DSGE模型与宏观审慎货币政策规则[J]. 世界经济, (07 vo 36): 68–92.]]
+>
+> 
+
+分析行为：
+
+设定生产函数形式为CRS（具有一次齐次假设的）生产函数$f_{PC}$为
+$$
+f_{PC}\left[\frac{I_{GI}[t]}{K_{GI}[t]}\right]K_{GI}[t]
+$$
+则对应的时变的资本累积方程为
+$$
+K_{PC}[t+1]=(1-\delta) K_{PC}[t]+f_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] K_{PC}[t]
+$$
+决策目标：
+
+资本生产部门的决策问题：
+$$
+\max _{I_{PC}[t]} \quad P_{PC}[t] \; f_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] \; K_{PC}[t]-P_{GF}[t] \; I_{PC}[t]
+$$
+其中一阶条件：
+$$
+P_{PC}[t] \; f_{PC} ^{\prime} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]=P_{GF}[t]
+$$
+
+全要素生产率$A[t]$服从AR(1)过程：
+$$
+\ln A[t]=\rho_{a} \ln A[t-1]+\varepsilon_{t}^{a}
+$$
+
+其中，$\varepsilon_t^a$ 服从标准差为$\sigma_a$的i.i.d.冲击。
+
+相邻时期持有单位资本的名义总回报率$r_{PC,n}[t]$的计算如下，
+$$
+\begin{align}
+r_{PC,n}[t] & \triangleq r_{GI}[t] + P_{GF}[t] \; 
+\frac
+{
+	\partial \; K_{PC}[t+1]
+}{
+	\partial \; K_{PC}[t]
+}
+\\
+& = r_{GI}[t] + P_{GF}[t] \left((1-\delta) - f_{PC} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]   \; \frac{I_{PC}[t]}{K_{PC}[t]}+f_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]\right)
+\end{align}
+$$
+
+
+TODO：如何求得均衡条件？
+
+在均衡条件下，相邻时期持有单位资本的实际总回报率$r_{PC,e}[t]$将与银行从其贷款获得的实际总回报相等，即 :
+$$
+\frac{r_{PC,n}[t+1]}{P_{PC}[t]} \equiv \frac{r_{PC,e}[t+1]}{\pi[t+1]}
+$$
+
+
+##### 房地产商TODO
+
+TODO
+
+英文全名：Real Estate Producers；
+
+变量名：producers_estate；
+
+数学符号：$\Box_{PE}$；
+
+
+
+> 本部分参考
+>
+> [[郭娜, 马莹莹, 张宁, 2018. 我国影子银行对银行业系统性风险影响研究——基于内生化房地产商的DSGE模型分析[J]. 南方经济, (08): 29–46.]]
+>
+> 
+
+行为：
+
+通过融资，从商业银行获得贷款和影子银行部门，采用资本、劳动、土地进行房地产开发建设。
+
+生产函数：
+$$
+Y_{PE}[t] = A_{PE}[t] \; K_{t-1}^{h l_{k}} L_{t}^{h l_{l}} H_{t-1}^{1-l_{k}-l_{l}}
+$$
+其中，
+$Y_{PE}[t]$：房地产开发商的最终产出；
+$A_{PE}[t]$ 为技术水平; $K_{t-1}^{h}$ 和 $H_{t-1}$ 代表上一期的资本和房地产存量, $l_{k} 、 l_{l}$ 分别代表资本和家庭劳动的投入比例。
+
+生产函数符合规模报酬不变的特性。
+
+
+
+目标：
+
+最大化其消费
+$$
+\max E_{t} \sum_{t=0}^{\infty} \alpha_{t} \ln C_{t}^{h}
+$$
+其中, $C_{t}^{h}$ 为房地产开发商的消费; $\alpha$ 为贴现因子, $0<\alpha<1$ 。
+
+
+
+约束条件：
+
+房地产开发企业所受现金流的约束条件如下:
+$$
+Y_{PE}[t]+B_{t}^{h}+S H_{t}=C_{t}^{h}+q_{t}\left(H_{t}-H_{t-1}\right)+W_{t}^{h} L_{t}^{h}+\frac{R_{t-1}^{b} B_{t-1}^{h}}{\pi_{t}}+\frac{R_{t-1}^{s h} S H_{t-1}}{\pi_{t}}+I_{t}^{h}
+$$
+
+
+其中, $B_{t}^{h}$ 为房地产开发商从商业银行获取的贷款; $R_{t}^{b}$ 为商业银行贷款利率; $S H_{t}$ 为房地产开发商向影子银行融资的数量; $R_{t}^{s h}$ 为影子银行提供融资的利率; $I_{t}^{h}$ 为房地产开发商的投资，房地产开发企业总体信贷规模为 $B_{t}=S H_{t}+B_{t}^{h}$。
+房地产开发商的投资 $I_{t}^{h}$ 与资本存量 $K_{t}^{h}$ 之间存在如下关系:
+$$
+K_{t+1}^{h}=I_{t}^{h}+(1-\delta) K_{t}^{h}
+$$
+
+该式表示的是房地产开发商资本存量的积累情况, $\delta$ 表示资本折旧率。
+
+> 本文借鉴
+>
+> [[Christensen I, Dib A, 2008. The Financial Accelerator in an Estimated New Keynesian Model[J]. Review of Economic Dynamics, 11(1): 155–178. DOI:[10.1016/j.red.2007.04.006](https://doi.org/10.1016/j.red.2007.04.006).]]
+>
+> [[Iacoviello M, 2005. House Prices, Borrowing Constraints, and Monetary Policy in the Business Cycle[J]. American Economic Review, 95(3): 739–764. DOI:[10.1257/0002828054201477](https://doi.org/10.1257/0002828054201477).]]
+>
+>  的研究，引入信贷约束机制
+
+通过引入信贷约束机制，房地产开发商将其持有的房地产抵押给商业银行获得抵押贷款，但是其所获得的抵押贷款的数量取决于其还款期抵押品的预期价值。假设 $m^{h}$ 为房地产开发商信贷约束比例，需满足:
+
+
+$$
+B_{t}^{h} \leqslant m^{h} \frac{E_{t}\left(q_{t+1} H_{t} \pi_{t+1}\right)}{R^{b}}
+$$
+
+
+
+
+#### 市场出清TODO
+
+- [ ] 
+
+
+
+
+
+
+

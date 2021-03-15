@@ -1,0 +1,476 @@
+
+PT J
+AU Bonollo, M
+   Crimaldi, I
+   Flori, A
+   Gianfagna, L
+   Pammolli, F
+AF Bonollo, Michele
+   Crimaldi, Irene
+   Flori, Andrea
+   Gianfagna, Laura
+   Pammolli, Fabio
+TI Assessing financial distress dependencies in OTC markets: a new approach
+   using trade repositories data
+SO FINANCIAL MARKETS AND PORTFOLIO MANAGEMENT
+LA English
+DT Article
+DE Financial distress interdependence; Joint probability of distress;
+   Interest rate swaps; Systemic risk; Micro-founded trade repositories'
+   data
+AB In this paper, we study the relationships among financial market sub-segments as a way to identify potential financial distress through increased co-movements among them. To study how sub-markets are mutually co-dependent, we combine granular data on over-the-counter derivatives by trade repositories and the joint probability of distress (JPoD) approach introduced by the International Monetary Fund. We define an indicator that combines several distress drivers and observe that results on co-dependencies are similar to those that would be expected: similarities between financial and contractual terms seem to be responsible for stronger co-movements among sub-markets. However, high values for JPoD even in correspondence of quite dissimilar sub-markets suggest the presence of other drivers that should be investigated in future research. To the best of our knowledge, this is the first empirical study on systemic risk assessment based on micro-founded trade repositories' data on interest rate swaps.
+C1 [Bonollo, Michele] Iason Ltd, Milan, Italy.
+   [Crimaldi, Irene] IMT Sch Adv Studies Lucca, Stat, Lucca, Italy.
+   [Flori, Andrea; Gianfagna, Laura] IMT Sch Adv Studies Lucca, Econ, Lucca, Italy.
+   [Pammolli, Fabio] IMT Sch Adv Studies Lucca, Econ & Management, Lucca, Italy.
+RP Gianfagna, L (reprint author), IMT Sch Adv Studies Lucca, Econ, Lucca, Italy.
+EM michele.bonollo@imtlucca.it; irene.crimaldi@imtlucca.it;
+   andrea.flori@imtlucca.it; laura.gianfagna@imtlucca.it;
+   f.pammolli@imtlucca.it
+OI Flori, Andrea/0000-0002-9861-3598; Pammolli, Fabio/0000-0001-7056-1303
+FU Consiglio Nazionale delle Ricerche-Programma Nazionale della Ricerca,
+   Project CRISIS Lab
+FX The authors are grateful for financial support from Consiglio Nazionale
+   delle Ricerche-Programma Nazionale della Ricerca, Project CRISIS Lab.
+   They are also thankful for the very valuable comments, which greatly
+   improved the paper, made by the Editor and the anonymous referee. They
+   thank Iason Ltd for making the dataset available. Special thanks go to
+   A. Castagna for his precious collaboration. The usual disclaimer
+   applies.
+CR Acharya V. V., 2010, REGULATING WALL STRE, V608
+   Avellaneda M., 2010, TRANSPARENCY OVER TH
+   BIS (Bank for International Settlement), 2013, BAS COMM BANK SUP NO
+   Bisias D., 2012, SURVEY SYSTEMIC RISK
+   Bonollo M., 2014, EIC WORKING PAPER SE, V2
+   Bonollo M., 2015, CORP OWNERSHIP CONTR, V12
+   Brunnermeier MK, 2012, TECHNICAL REPORT
+   Cecchetti S. G., 2009, BIS Q REV
+   Corwin SA, 2012, J FINANC, V67, P719, DOI 10.1111/j.1540-6261.2012.01729.x
+   Deuskar P, 2011, J FINANC MARK, V14, P127, DOI 10.1016/j.finmar.2010.08.003
+   DTCC (Depository Trust and Clearing Corporation), 2014, DTCC DAT REP US LLC
+   DTCC (Depository Trust and Clearing Corporation), 2013, HOR WHIT PAP IND SYS
+   Duffie D., 2010, 424 FRB
+   Fleming M. J., 2012, 557 FRB
+   FSB (Financial Stability Board), 2015, 9 PROGR REP IMPL
+   FSB (Financial Stability Board), 2014, CONSULTATION PAPER
+   FSB (Financial Stability Board), 2010, REDU MOR HAZ POS SYS
+   Gehde-Trapp M, 2015, J BANK FINANC, V61, P184, DOI 10.1016/j.jbankfin.2015.08.024
+   Hull J, 2014, INT J FINANC ENG, V1, DOI 10.1142/S2345768614500214
+   IMF BIS FSB (International Monetary Fund BIS Bank for International Settlement and FSB Financial Stability Board), 2009, REP G 20 FIN MIN GOV
+   Mahfoud M., 2012, BIVARIATE ARCHIMEDEA
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Nelsen R.B., 2006, LECT NOTES STAT
+   Pallavicini A., 2013, INTEREST RATE MODELL
+   Russo D., 2010, FRS FINANCIAL, V101
+   Segoviano M., 2009, WP0904 IMF
+   Sklar M., 1959, FONCTIONS REPARTITIO, V8
+   Slive J., 2012, TECHNICAL REPORT
+   TRIVEDI PK, 2007, COPULA MODELING INTR
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Valiante D., 2010, ECMI RES REPORT
+NR 31
+TC 0
+Z9 0
+U1 0
+U2 0
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1575-0698
+EI 2385-4219
+J9 FINANC MARK PORTFOLI
+JI Illes Imper.
+PD NOV
+PY 2016
+VL 30
+IS 4
+BP 397
+EP 426
+DI 10.1007/s11408-016-0275-7
+PG 30
+WC Business, Finance
+SC Business & Economics
+GA VH5NB
+UT WOS:000453460700002
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Tian, GN
+   Li, JJ
+   Xue, Y
+   Hsu, S
+AF Tian, Guangning
+   Li, Jianjun
+   Xue, Ying
+   Hsu, Sara
+TI Systemic Risk in the Chinese Shadow Banking System: A Sector-Level
+   Perspective
+SO EMERGING MARKETS FINANCE AND TRADE
+LA English
+DT Article
+DE balance sheet contagion; network model; shadow banking; systemic risk
+ID INTERBANK MARKET
+AB We propose to measure the systemic risk in the shadow banking sector. Instead of testing how many institutions will fail due to the initial breakdown of one institution as extant network models do, we associate the systemic risk of one shadow banking sector with the total amount of unexpected losses it might generate both directly and indirectly. Our model focuses on balance sheet contagion and applies a loop algorithm to risk transfer. The result shows that trust companies were the main culprit of financial instability and commercial banks assumed the main risks over 2007-12 in the Chinese shadow banking system.
+C1 [Tian, Guangning] North China Elect Power Univ, Sch Econ & Management, Beijing, Peoples R China.
+   [Li, Jianjun] Cent Univ Finance & Econ Beijing, Sch Finance, Beijing 100081, Peoples R China.
+   [Xue, Ying] China Everbright Bank, Treasury Dept, Beijing, Peoples R China.
+   [Hsu, Sara] State Univ New York New Paltz, Dept Econ, New Paltz, NY USA.
+RP Li, JJ (reprint author), Cent Univ Finance & Econ Beijing, Sch Finance, CUFE, 39 South Coll Rd, Beijing 100081, Peoples R China.
+EM ljjlsh@126.com
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71173246]
+FX This article is sponsored by the National Natural Science Foundation of
+   China, Project Number 71173246.
+CR Acharya V. V., 2010, 1573171 SSRN
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Brownlees C. T., 2010, 1611229 SSRN
+   Financial Stability Board (FSB), 2011, SHAD BANK SCOP ISS
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   KAUFMAN GG, 1996, CATO J, V16, P17
+   Kavonius I. K., 2009, 1516167 SSRN
+   Kupiec P, 2004, J REAL ESTATE FINANC, V28, P123, DOI 10.1023/B:REAL.0000011150.20499.b1
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   LEONTIEF W, 1970, REV ECON STAT, V52, P262, DOI 10.2307/1926294
+   Lu SL, 2012, EMERG MARK FINANC TR, V48, P122, DOI 10.2753/REE1540-496X48S207
+   Muller J., 2006, J FINANCIAL SERVICES, V29, P37, DOI DOI 10.1007/S10693-005-5107-2
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Yu Liyong, 2004, J FINANCE EC, V30, P15
+NR 17
+TC 2
+Z9 2
+U1 4
+U2 69
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1540-496X
+EI 1558-0938
+J9 EMERG MARK FINANC TR
+JI Emerg. Mark. Financ. Trade
+PD FEB
+PY 2016
+VL 52
+IS 2
+BP 475
+EP 486
+DI 10.1080/1540496X.2016.1110465
+PG 12
+WC Business; Economics; International Relations
+SC Business & Economics; International Relations
+GA DB7KD
+UT WOS:000368693000014
+DA 2019-12-27
+ER
+
+PT J
+AU Martinez, C
+   Leon, C
+AF Martinez, Constanza
+   Leon, Carlos
+TI The cost of collateralized borrowing in the Colombian money market: Does
+   connectedness matter?
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article; Proceedings Paper
+CT 9th Conference on Risk, Financial Stability and Banking
+CY AUG 14-15, 2014
+CL Sao Paulo, BRAZIL
+SP Cent Bank Brazil, Bank Finland, Journal Financial Stabil
+DE Money market; Interbank; Collateral; Lending relationships; Spatial
+   econometrics
+ID INTERBANK; TOPOLOGY; RISK
+AB We estimate two standard spatial econometric models in order to study the cost of collateralized borrowing among Colombian financial institutions, and its relationship with traditional determinants (leverage, size, and borrowing concentration), and with the observed linkages among financial institutions (spatial variables). Our main findings indicate that (i) the selected models are able to capture the extent and significance to which linkages matter for money market's liquidity pricing in the form of a spatial dependence parameter; (ii) spatial effects play a significant role in the pricing of liquidity in the collateralized money market; (iii) direct and spill-over effects from financial institutions' size and the spatially lagged value of financial leverage and borrowing concentration most significantly determine the cost of collateralized borrowing; (iv) traditional determinants are of low explanatory power by themselves. Concurrent with contemporary lending relationships literature, our results emphasize the importance of connectedness among financial institutions, and are essential in the context of a macro-prudential perspective of financial stability and systemic risk. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Martinez, Constanza; Leon, Carlos] Banco Republ Cent Bank Colombia, Carrera 7 14-78, Bogota, Colombia.
+   [Leon, Carlos] Tilburg Univ, NL-5000 LE Tilburg, Netherlands.
+RP Martinez, C (reprint author), Banco Republ Cent Bank Colombia, Carrera 7 14-78, Bogota, Colombia.
+EM amartive@banrep.gov.co; carlosleonr@hotmail.com
+RI Martinez-Ventura, Constanza/G-3103-2017
+OI Martinez-Ventura, Constanza/0000-0001-6128-5095; Leon,
+   Carlos/0000-0001-5357-0216
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   ALLEN L, 1989, J BUS, V62, P501, DOI 10.1086/296475
+   ANSELIN L, 1991, GEOGR ANAL, V23, P112, DOI 10.1111/j.1538-4632.1991.tb00228.x
+   ANSELIN L, 1980, REGIONAL SCI DISSERT, V8
+   Anselin L, 1995, NEW DIRECTIONS SPATI, P21
+   Babus A., 2012, WORKING PAPER SERIES
+   Bagstad KJ, 2013, ECOSYST SERV, V5, pE27, DOI [10.13031/2013.2739, 10.1016/j.ecoser.2013.07.004, 10.2136/vzj2010.0073]
+   Barabasi Albert-LaszloA., 2003, LINKED
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Bertay AC, 2013, J FINANC INTERMED, V22, P532, DOI 10.1016/j.jfi.2013.02.002
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Cajueiro DO, 2008, PHYSICA A, V387, P6825, DOI 10.1016/j.physa.2008.08.031
+   Calomiris C., 2003, INT FINANCIAL MARKET
+   Cardozo P., 2011, BORRADORES EC BANCO, V673
+   Casti J., 1979, CONNECTIVITY COMPLEX
+   Castiglionesi F, 2013, J FINANC INTERMED, V22, P177, DOI 10.1016/j.jfi.2012.07.002
+   Choudhry M., 2006, INTRO REPO MARKETS
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Corrado L, 2012, J REGIONAL SCI, V52, P210, DOI 10.1111/j.1467-9787.2011.00726.x
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Elhorst JP, 2010, SPAT ECON ANAL, V5, P9, DOI 10.1080/17421770903541772
+   Fecht F, 2011, J FINANC ECON, V102, P344, DOI 10.1016/j.jfineco.2011.05.015
+   FRANZESE RJ, 2004, EMPIRICAL MODE UNPUB
+   French KR, 2010, SQUAM LAKE REPORT: FIXING THE FINANCIAL SYSTEM, P1
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gencay R, 2015, J BANK FINANC, V55, P157, DOI 10.1016/j.jbankfin.2015.02.007
+   Gibbons S, 2012, J REGIONAL SCI, V52, P172, DOI 10.1111/j.1467-9787.2012.00760.x
+   Gorton G., 2010, FEDERAL RESERVE  NOV
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Greene W.H., 2011, ECONOMETRIC ANAL
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hordahl P., 2008, BIS Q REV
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Inaoka H., 2004, BANK JAPAN WORKING P
+   International Monetary Fund, 2014, GLOB FIN STAB REP, P101
+   Kelejian H., 2010, REG SCI URBAN ECON, V37, P363
+   King TB, 2008, J MONEY CREDIT BANK, V40, P295, DOI 10.1111/j.1538-4616.2008.00114.x
+   Kovner G., 2013, FEDERAL RESERVE BANK, V620
+   Krugman P, 1996, SELF ORG EC
+   Leon C., 2012, BORRADORES EC, V743
+   Leon C., 2014, CENTER DISCUSSION PA
+   Leon C, 2016, INTELL SYST ACCOUNT, V23, P121, DOI 10.1002/isaf.1371
+   LeSage J, 2009, STAT TEXTB MONOGR, P1
+   MANSKI CF, 1993, REV ECON STUD, V60, P531, DOI 10.2307/2298123
+   Martinez-Jaramillo S., 2012, WORKING PAPERS
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Moreno R., 2002, INVESTIGACIONES REGI
+   Pinkse J, 2010, J REGIONAL SCI, V50, P103, DOI 10.1111/j.1467-9787.2009.00645.x
+   Quiry P., 2005, CORPORATE FINANCE TH
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Simon Herbert A., 1962, P AM PHILOS SOC, V106, P467, DOI DOI 10.2307/985254
+   SNEE RD, 1984, AM STAT, V38, P83, DOI 10.2307/2683239
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+NR 57
+TC 5
+Z9 5
+U1 0
+U2 10
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD AUG
+PY 2016
+VL 25
+BP 193
+EP 205
+DI 10.1016/j.jfs.2015.10.003
+PG 13
+WC Business, Finance; Economics
+SC Business & Economics
+GA DU5LD
+UT WOS:000382252300015
+DA 2019-12-28
+ER
+PT J
+AU Shahzad, SJH
+   Kumar, RR
+   Ali, S
+   Ameer, S
+AF Shahzad, Syed Jawad Hussain
+   Kumar, Ronald Ravinesh
+   Ali, Sajid
+   Ameer, Saba
+TI Interdependence between Greece and other European stock markets: A
+   comparison of wavelet and VMD copula, and the portfolio implications
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Wavelets; VMD copula; Portfolio; Contagion and interdependence; European
+   stock markets; Greece
+ID VARIATIONAL MODE DECOMPOSITION; EXTREME-VALUE THEORY; VALUE-AT-RISK;
+   FINANCIAL CONTAGION; COUNTERPARTY RISK; CO-MOVEMENTS; LONG MEMORY;
+   CRISIS; DEPENDENCE; VOLATILITY
+AB The interdependence of Greece and other European stock markets and the subsequent portfolio implications are examined in wavelet and variational mode decomposition domain. In applying the decomposition techniques, we analyze the structural properties of data and distinguish between short and long term dynamics of stock market returns. First, the GARCH-type models are fitted to obtain the standardized residuals. Next, different copula functions are evaluated, and based on the conventional information criteria and time varying parameter, Joe-Clayton copula is chosen to model the tail dependence between the stock markets. The short-run lower tail dependence time paths show a sudden increase in comovement during the global financial crises. The results of the long run dependence suggest that European stock markets have higher interdependence with Greece stock market. Individual country's Value at Risk (VaR) separates the countries into two distinct groups. Finally, the two-asset portfolio VaR measures provide potential markets for Greece stock market investment diversification. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Shahzad, Syed Jawad Hussain; Ameer, Saba] COMSATS Inst Informat Technol, VC, Islamabad, Pakistan.
+   [Shahzad, Syed Jawad Hussain; Ali, Sajid] Univ Malaysia Terengganu, Kuala Terengganu, Malaysia.
+   [Kumar, Ronald Ravinesh] Univ S Pacific, Suva, Fiji.
+   [Kumar, Ronald Ravinesh] Queensland Univ Technol, Brisbane, Qld 4001, Australia.
+   [Kumar, Ronald Ravinesh] Univ Bolton, Bolton Business Sch, Deane Rd, Bolton BL3 5AB, England.
+RP Shahzad, SJH (reprint author), COMSATS Inst Informat Technol, VC, Islamabad, Pakistan.
+EM jawadhussain@vcomsats.edu.pk; kumar_RN@usp.ac.fj; sajid.mahr@gmail.com;
+   sabaameer88@gmail.com
+RI Shahzad, Syed Jawad Hussain/D-1986-2019; Kumar, Ronald Ravinesh
+   R/H-4968-2015; Ali, Sajid/U-2822-2019
+OI Shahzad, Syed Jawad Hussain/0000-0003-3511-6057; Kumar, Ronald Ravinesh
+   R/0000-0001-9658-4896; Ali, Sajid/0000-0002-0784-2476
+CR Adrian T., 2008, 346 FRB
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Aloui C, 2015, PHYSICA A, V436, P62, DOI 10.1016/j.physa.2015.05.036
+   Aloui C, 2014, ECON MODEL, V36, P421, DOI 10.1016/j.econmod.2013.09.043
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Annaert J, 2013, J INT MONEY FINANC, V32, P444, DOI 10.1016/j.jimonfin.2012.05.029
+   Berger T., 2013, INT EC, V133, P93
+   Berger T, 2015, PHYSICA A, V436, P338, DOI 10.1016/j.physa.2015.05.053
+   Berger T, 2014, J RISK, V17, P51, DOI 10.21314/JOR.2014.294
+   Boubaker H, 2013, J BANK FINANC, V37, P361, DOI 10.1016/j.jbankfin.2012.09.006
+   Caballero R.J., 2006, W12136 NAT BUR EC RE
+   CALVO G, 1999, CONTAGION EMERGING M
+   Calvo GA, 2000, J INT ECON, V51, P79, DOI 10.1016/S0022-1996(99)00038-0
+   Caramazza F, 2004, J INT MONEY FINANC, V23, P51, DOI 10.1016/j.jimonfin.2003.10.001
+   CHAKRAVORTI S, 2003, FEDERAL RESERVE BANK
+   Coudert V, 2008, J EMPIR FINANC, V15, P167, DOI 10.1016/j.jempfin.2007.06.001
+   Coudert V, 2010, J INT FINANC MARK I, V20, P109, DOI 10.1016/j.intfin.2010.01.001
+   Das SR, 2004, J FINANC, V59, P2809, DOI 10.1111/j.1540-6261.2004.00717.x
+   Dewandaru G, 2014, ECON SYST, V38, P553, DOI 10.1016/j.ecosys.2014.05.003
+   Dewandaru G, 2015, PHYSICA A, V419, P241, DOI 10.1016/j.physa.2014.10.046
+   Diebold FX, 1998, INT ECON REV, V39, P863, DOI 10.2307/2527342
+   DONOHO DL, 1995, IEEE T INFORM THEORY, V41, P613, DOI 10.1109/18.382009
+   Dragomiretskiy K, 2014, IEEE T SIGNAL PROCES, V62, P531, DOI 10.1109/TSP.2013.2288675
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Fan YQ, 2010, ECONOMET THEOR, V26, P1305, DOI 10.1017/S0266466609990594
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gallegati M, 2012, COMPUT STAT DATA AN, V56, P3491, DOI 10.1016/j.csda.2010.11.003
+   Gencay R, 2003, INSUR MATH ECON, V33, P337, DOI 10.1016/j.insmatheco.2003.07.004
+   Gencay R, 2004, INT J FORECASTING, V20, P287, DOI 10.1016/j.ijforecast.2004.09.005
+   Gencay R, 2001, PHYSICA A, V289, P249, DOI 10.1016/S0378-4371(00)00456-8
+   Gencay R, 2001, PHYSICA A, V289, P543, DOI 10.1016/S0378-4371(00)00463-5
+   Gencay R, 2015, J ECONOMETRICS, V184, P62, DOI 10.1016/j.jeconom.2014.08.002
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Gromb D., 2010, W15821 NAT BUR EC RE
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Haven E, 2012, EUR J OPER RES, V222, P104, DOI 10.1016/j.ejor.2012.04.020
+   Hsu CP, 2012, REV QUANT FINANC ACC, V39, P447, DOI 10.1007/s11156-011-0261-0
+   Huang X, 2015, PHYSICA A, V428, P493, DOI 10.1016/j.physa.2015.02.028
+   In F, 2011, ECON MODEL, V28, P1489, DOI 10.1016/j.econmod.2011.02.028
+   Jammazi R, 2015, N AM J ECON FINANC, V33, P74, DOI 10.1016/j.najef.2015.03.005
+   Jammazi R, 2012, ENERGY, V44, P750, DOI 10.1016/j.energy.2012.05.017
+   Jarrow RA, 2001, J FINANC, V56, P1765, DOI 10.1111/0022-1082.00389
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Kumar M. S., 2002, INT FINANC, V5, P401
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Lahmiri S, 2015, PHYSICA A, V437, P130, DOI 10.1016/j.physa.2015.05.067
+   Loh LX, 2013, RES INT BUS FINANC, V29, P1, DOI 10.1016/j.ribaf.2013.01.001
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Murtagh F, 2004, DECIS SUPPORT SYST, V37, P475, DOI 10.1016/S0167-9236(03)00092-7
+   Nelsen R.B., 1999, INTRO COPULAS
+   Patton A., 2004, J FINANCIAL ECONOMET, V2, P130, DOI DOI 10.1093/JJFINEC/NBH006
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Reboredo JC, 2016, J BANK FINANC, V62, P76, DOI 10.1016/j.jbankfin.2015.10.011
+   Schnabel I, 2004, J EUR ECON ASSOC, V2, P929, DOI 10.1162/1542476042813887
+   Sharma S., 2000, IMF STAFF PAPERS, P279
+   Sklar M., 1959, FONCTIONS REPARTITIO, V8, P229
+   Vayanos D, 2004, W10327 NAT BUR EC RE
+   Xiong W, 2001, J FINANC ECON, V62, P247, DOI 10.1016/S0304-405X(01)00078-2
+   Xue Y, 2014, QUANT FINANC, V14, P1427, DOI 10.1080/14697688.2013.830320
+   ZAKOIAN JM, 1994, J ECON DYN CONTROL, V18, P931, DOI 10.1016/0165-1889(94)90039-6
+NR 61
+TC 9
+Z9 9
+U1 0
+U2 45
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD SEP 1
+PY 2016
+VL 457
+BP 8
+EP 33
+DI 10.1016/j.physa.2016.03.048
+PG 26
+WC Physics, Multidisciplinary
+SC Physics
+GA DM9NS
+UT WOS:000376693600002
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Gonzalez-Avella, JC
+   de Quadros, VH
+   Iglesias, JR
+AF Gonzalez-Avella, Juan Carlos
+   de Quadros, Vanessa Hoffmann
+   Iglesias, Jose Roberto
+TI Network topology and interbank credit risk
+SO CHAOS SOLITONS & FRACTALS
+LA English
+DT Article
+DE Interbank exposures; Contagion; Power laws; Systemic risk; Complex
+   networks; Financial crashes
+ID FINANCIAL SYSTEMS; MARKET; TRANSMISSION; ECONOMIES; CONTAGION; BANKS
+AB Modern financial systems are greatly entangled. They exhibit a complex interdependence, including a network of bilateral exposures in the interbank market. The most frequent interaction consists in operations where institutions with surplus liquidity lend to those with a liquidity shortage. These loans may be interpreted as links between the banks and the links display features in some way representative of scale-free networks. While the interbank market is responsible for efficient liquidity allocation, it also introduces the possibility for systemic risk via financial contagion. Insolvency of one bank can propagate through links leading to insolvency of other banks. In this paper, we explore the characteristics of financial contagion in interbank networks whose distribution of links approaches a power law, as well as we improve previous models by introducing a simple mechanism to describe banks' balance sheets, that are obtained from information on network connectivity. By varying the parameters for the creation of the network, several interbank networks are built, in which the concentration of debt and credit comes from the distribution of links. The results suggest that more connected networks that have a high concentration of credit are more resilient to contagion than other types of networks analyzed. (C) 2015 Elsevier Ltd. All rights reserved.
+C1 [Gonzalez-Avella, Juan Carlos] Pontificia Univ Catolica Rio de Janeiro, Dept Phys, Caixa Postal 38071, BR-22452970 Rio de Janeiro, RJ, Brazil.
+   [Gonzalez-Avella, Juan Carlos; de Quadros, Vanessa Hoffmann; Iglesias, Jose Roberto] Univ Fed Rio Grande do Sul, Inst Fis, Caixa Postal 15051, BR-90501970 Porto Alegre, RS, Brazil.
+   [Iglesias, Jose Roberto] Univ Nacl Mar del Plata, Inst Fis Mar del Plata, Dean Funes 3350, RA-7600 Mar Del Plata, Argentina.
+   [Iglesias, Jose Roberto] Univ Vale Rio dos Sinos, Programa Mestrado Econ, Av Unisinos 950, BR-93022000 Sao Leopoldo, RS, Brazil.
+   [Iglesias, Jose Roberto] Inst Nacl Ciencia & Tecnol Sistemas Complexos, Rio De Janeiro, Brazil.
+RP Iglesias, JR (reprint author), Univ Nacl Mar del Plata, Inst Fis Mar del Plata, Dean Funes 3350, RA-7600 Mar Del Plata, Argentina.
+EM avellaj@gmail.com; vhquadros@gmail.com; joseroberto.iglesias@gmail.com
+RI Iglesias, Jose Roberto/D-7011-2014
+OI Iglesias, Jose Roberto/0000-0002-0232-299X
+FU CNPq (Conselho Nacional de Investigaes Cientficas e Tecnolgicas, Brazil)
+FX JCGA and JRI acknowledge a CNPq (Conselho Nacional de Investigaes
+   Cientficas e Tecnolgicas, Brazil) fellowship. We thank Thomas Lux for
+   valuable suggestions.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   Balakrishnan R, 2011, EMERG MARK FINANC TR, V47, P40, DOI 10.2753/REE1540-496X4703S203
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bollobas B, 2003, SIAM PROC S, P132
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   Cont R, 2010, INTERCONNECTED FAIL
+   Cont R., 2010, NETWORK STRUCTURE SY
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Ennis HM, 2001, FED RESERVE BANK RIR, V87
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   IMF (International Monetary Fund), 2013, FIN SOUNDN IND
+   Inaoka H., 2004, BANK JAPAN WORKING P
+   Jo GJ, 2014, EMERG MARK FINANC TR, V50, P237, DOI 10.2753/REE1540-496X5001S115
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Montagna M, 2014, 8 KIEL U FINMAP
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 25
+TC 11
+Z9 11
+U1 0
+U2 26
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 0960-0779
+EI 1873-2887
+J9 CHAOS SOLITON FRACT
+JI Chaos Solitons Fractals
+PD JUL
+PY 2016
+VL 88
+SI SI
+BP 235
+EP 243
+DI 10.1016/j.chaos.2015.11.044
+PG 9
+WC Mathematics, Interdisciplinary Applications; Physics, Multidisciplinary;
+   Physics, Mathematical
+SC Mathematics; Physics
+GA DO4DD
+UT WOS:000377731100020
+DA 2019-12-27
+ER

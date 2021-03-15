@@ -1,0 +1,373 @@
+
+PT J
+AU Hong, YM
+   Liu, YH
+   Wang, SY
+AF Hong, Yongmiao
+   Liu, Yanhui
+   Wang, Shouyang
+TI Granger causality in risk and detection of extreme risk spillover
+   between financial markets
+SO JOURNAL OF ECONOMETRICS
+LA English
+DT Article; Proceedings Paper
+CT 1st Symposium on Econometric Theory and Applications (SETA)
+CY MAY 18-20, 2005
+CL Acad Sinica, Taipei, TAIWAN
+HO Acad Sinica
+DE Cross-spectrum; Extreme downside risk; Financial contagion; Granger
+   causality in risk; Nonlinear time series; Risk management; Value at Risk
+ID MAXIMUM LIKELIHOOD ESTIMATOR; INTERNATIONAL EQUITY MARKETS;
+   EXCHANGE-RATES; STOCK MARKETS; CONDITIONAL SKEWNESS; REGRESSION
+   QUANTILES; FOREIGN-EXCHANGE; VOLATILITY; RETURNS; VARIANCE
+AB Controlling and monitoring extreme downside market risk are important for financial risk management and portfolio/investment diversification. In this paper, we introduce a new concept of Granger causality in risk and propose a class of kernel-based tests to detect extreme downside risk spillover between financial markets, where risk is measured by the left tail of the distribution or equivalently by the Value at Risk (VaR). The proposed tests have a convenient asymptotic standard normal distribution under the null hypothesis of no Granger causality in risk. They check a large number of lags and thus can detect risk spillover that Occurs with a time lag or that has weak spillover at each lag but carries over a very long distributional lag. Usually, tests using a large number of lags may have low power against alternatives of practical importance, due to the loss of a large number of degrees of freedom. Such power loss is fortunately alleviated for our tests because our kernel approach naturally discounts higher order lags, which is consistent with the stylized fact that today's financial markets are often more influenced by the recent events than the remote past events. A simulation study shows that the proposed tests have reasonable size and power against a variety of empirically plausible alternatives in finite samples, including the spillover from the dynamics in mean, variance, skewness and kurtosis respectively. In particular, nonuniform weighting delivers better power than uniform weighting and a Granger-type regression procedure. The proposed tests are useful in investigating large comovements between financial markets such as financial contagions. An application to the Eurodollar and Japanese Yen highlights the merits of our approach. (c) 2009 Published by Elsevier B.V.
+C1 [Hong, Yongmiao] Cornell Univ, Dept Econ, Ithaca, NY 14853 USA.
+   [Hong, Yongmiao] Cornell Univ, Dept Stat Sci, Ithaca, NY 14853 USA.
+   [Hong, Yongmiao] Xiamen Univ, Wang Yanan Inst Studies Econ, Xiamen, Fujian, Peoples R China.
+   [Liu, Yanhui; Wang, Shouyang] Chinese Acad Sci, Acad Math & Syst Sci, Beijing, Peoples R China.
+RP Hong, YM (reprint author), Cornell Univ, Dept Econ, 424 Uris Hall, Ithaca, NY 14853 USA.
+EM yh20@cornell.edu
+CR Andersen T., 2000, MULTINATIONAL FINANC, V4, P159
+   ARTZNER P, 1999, N AM ACTUARIAL J, V3, P11, DOI DOI 10.1080/10920277.1999.10595795
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   BAHADUR RR, 1960, ANN MATH STAT, V31, P276, DOI 10.1214/aoms/1177705894
+   BAILLIE RT, 1989, J BUS ECON STAT, V7, P297, DOI 10.2307/1391527
+   BAILLIE RT, 1990, REV ECON STUD, V58, P565
+   Bali TG, 2000, J FINANC QUANT ANAL, V35, P191, DOI 10.2307/2676190
+   Basel Committee on Banking Supervision, 1996, AM CAP ACC INC MARK
+   Basel Committee on Banking Supervision, 2001, NEW BAS CAP ACC
+   Bollerslev T, 2001, J ECONOMETRICS, V100, P41, DOI 10.1016/S0304-4076(00)00052-X
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Box GE, 1970, J AM STAT ASSOC, V65, P1509, DOI DOI 10.2307/2284333
+   Campbell JY, 1999, J POLIT ECON, V107, P205, DOI 10.1086/250059
+   Chernozhukov V., 2001, EMPIR ECON, V26, P271, DOI DOI 10.1007/S001810000062
+   Cheung Y. W., 1990, REV FUTURES MARKETS, V9, P458
+   Cheung YW, 1996, J ECONOMETRICS, V72, P33, DOI 10.1016/0304-4076(94)01714-X
+   Christoffersen P., 2001, J EMPIR FINANC, V8, P325, DOI DOI 10.1016/S0927-5398(01)00025-1
+   Danielsson J., 2000, ANN EC STAT, V60, P239, DOI DOI 10.2307/20076262
+   Diebold FX, 1999, REV ECON STAT, V81, P661, DOI 10.1162/003465399558526
+   Duffie D., 1997, J DERIV, V4, P7, DOI [DOI 10.3905/JOD.1997.407971, DOI 10.3905/jod.1997.407971]
+   EMBRECHTS P, 1997, MODELING EXTREMAL EV
+   Engle R.F., 1990, ECONOMETRICA, V59, P524
+   ENGLE RF, 1993, J BUS ECON STAT, V11, P167, DOI 10.2307/1391368
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Engle Robert F., 1986, ECONOMET REV, V5, P1, DOI DOI 10.1080/07474938608800095
+   Gallant AR, 1996, ECONOMET THEOR, V12, P657, DOI 10.1017/S0266466600006976
+   Gallant R., 1991, NONPARAMETRIC SEMIPA, P199
+   Gourieroux C., 2001, FINANCIAL ECONOMETRI
+   Granger C.W.J., 1986, MODEL RELIABILITY, P1
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   GRANGER CWJ, 1980, J ECON DYN CONTROL, V2, P329, DOI 10.1016/0165-1889(80)90069-X
+   Hall P., 1980, MARTINGALE LIMIT THE
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   Hannan E. J., 1970, MULTIPLE TIME SERIES
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Harvey CR, 1999, J FINANC QUANT ANAL, V34, P465, DOI 10.2307/2676230
+   Harvey CR, 2000, J FINANC, V55, P1263, DOI 10.1111/0022-1082.00247
+   Hong YM, 2004, J BUS ECON STAT, V22, P457, DOI 10.1198/073500104000000433
+   Hong YM, 1996, BIOMETRIKA, V83, P615, DOI 10.1093/biomet/83.3.615
+   Hong YM, 2001, J ECONOMETRICS, V103, P183, DOI 10.1016/S0304-4076(01)00043-4
+   Hong YM, 2007, J ECONOMETRICS, V141, P736, DOI 10.1016/j.jeconom.2006.11.003
+   Jondeau E, 2003, J ECON DYN CONTROL, V27, P1699, DOI 10.1016/S0165-1889(02)00079-9
+   Jorion P, 2000, VALUE RISK
+   KING M, 1994, ECONOMETRICA, V62, P901, DOI 10.2307/2951737
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   LEE SW, 1994, ECONOMET THEOR, V10, P29, DOI 10.1017/S0266466600008215
+   LIN WL, 1994, REV FINANC STUD, V7, P507, DOI 10.1093/rfs/7.3.507
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Longin FM, 2000, J BANK FINANC, V24, P1097, DOI 10.1016/S0378-4266(99)00077-1
+   Lumsdaine RL, 1996, ECONOMETRICA, V64, P575, DOI 10.2307/2171862
+   Maheu JM, 2004, J FINANC, V59, P755, DOI 10.1111/j.1540-6261.2004.00648.x
+   Morgan JP, 1996, RISK METRICS TECHNIC
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Pierce David A., 1977, J ECONOMETRICS, V5, P265, DOI DOI 10.1016/0304-4076(77)90039-2
+   Priestley M.B., 1981, SPECTRAL ANAL TIME S
+   Roy AD., 1952, ECONOMETRICA, P431, DOI DOI 10.2307/1907413
+NR 58
+TC 76
+Z9 80
+U1 9
+U2 57
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-4076
+EI 1872-6895
+J9 J ECONOMETRICS
+JI J. Econom.
+PD JUN
+PY 2009
+VL 150
+IS 2
+BP 271
+EP 287
+DI 10.1016/j.jeconom.2008.12.013
+PG 17
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 459NN
+UT WOS:000267109800013
+DA 2019-12-27
+ER
+
+PT J
+AU Ye, K
+   Wang, SS
+   Yan, JQ
+   Wang, HQ
+   Miao, BQ
+AF Ye, Kang
+   Wang, Shanshan
+   Yan, Jiaqi
+   Wang, Huaiqing
+   Miao, Baiqi
+TI Ontologies for crisis contagion management in financial institutions
+SO JOURNAL OF INFORMATION SCIENCE
+LA English
+DT Article
+DE crisis contagion management; ontology; OWL; SWRL
+ID INFORMATION-SYSTEMS; KNOWLEDGE MANAGEMENT; RISK-MANAGEMENT; DESIGN;
+   TROPOS
+AB What makes crisis management in financial institutions fairly unique and particularly complex is the accompanying crisis contagion or systemic risk. The subprime mortgage crisis currently happening in the USA is a typical example. In order to further deepen our understanding of how crisis contagion occurs and enhance information interchange and knowledge sharing among related entities, ontologies for crisis contagion management in financial institutions are proposed in this study. Three categories of ontologies, which include static ontology, dynamic ontology, and social ontology, are developed to deal with different perspectives in this domain. The three types of ontology are then united in the Ontology Web Language ( OWL) and the Semantic Web Rules Languages (SWRL) framework, both of which are machine readable. Finally, the case of Long-Term Capital Management (LTCM) is offered to demonstrate how the proposed ontologies are used in financial institutions.
+C1 [Ye, Kang; Wang, Shanshan; Yan, Jiaqi; Wang, Huaiqing] City Univ Hong Kong, Dept Informat Syst, Kowloon, Hong Kong, Peoples R China.
+   [Ye, Kang; Wang, Shanshan; Yan, Jiaqi; Miao, Baiqi] Univ Sci & Technol China, Sch Management, Hefei, Peoples R China.
+RP Ye, K (reprint author), City Univ Hong Kong, Dept Informat Syst, 83 Tat Chee Ave, Kowloon, Hong Kong, Peoples R China.
+EM ye_kang@hotmail.com
+RI Wang, Huai/B-7562-2013
+OI Wang, Huai/0000-0002-5404-3140
+FU Hong Kong Government [CityU 120805]
+FX This research is supported by a research grant from Hong Kong Government
+   (no. CityU 120805).
+CR Bresciani P, 2004, AUTON AGENT MULTI-AG, V8, P203, DOI 10.1023/B:AGNT.0000018806.20944.ef
+   Brewster C, 2004, IEEE INTELL SYST, V19, P72, DOI 10.1109/MIS.2004.1265889
+   Bui TX, 2001, DECIS SUPPORT SYST, V31, P165, DOI 10.1016/S0167-9236(00)00129-9
+   Castro J, 2002, INFORM SYST, V27, P365, DOI 10.1016/S0306-4379(02)00012-1
+   Castro JFB, 2003, LECT NOTES COMPUT SC, V2681, P111
+   CHANDRASEKARAN JR, 1999, IEEE INTELL SYST APP, P20
+   Crockett A, 1997, MAINTAINING FINANCIA
+   Ding Y, 2002, J INFORM SCI, V28, P123, DOI 10.1177/0165551024234020
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Golbreich C, 2004, LECT NOTES COMPUT SC, V3323, P6
+   GRUBER TR, 1993, KNOWL ACQUIS, V5, P199, DOI 10.1006/knac.1993.1008
+   HILSENRATH J, 2008, WALL STREET J   0918
+   Horrocks I., 2004, SWRL SEMANTIC WEB RU
+   Jorion P., 2000, EUROPEAN FINANCIAL M, V6, P277, DOI DOI 10.1111/1468-036X.00125
+   Jorion P., 2001, VALUE RISK NEW BENCH
+   Jurisica I, 2004, KNOWL INF SYST, V6, P380, DOI 10.1007/s10115-003-0135-4
+   KAUFMAN G, 2000, EC PERSPECTIVES, P9
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Mak HY, 1999, DECIS SUPPORT SYST, V25, P209, DOI 10.1016/S0167-9236(99)00007-X
+   Noy NF, 1997, AI MAG, V18, P53
+   O'Leary DE, 1998, IEEE INTELL SYST APP, V13, P34, DOI 10.1109/5254.683180
+   Scholes MS, 2000, AM ECON REV, V90, P17, DOI 10.1257/aer.90.2.17
+   Selic B., 1998, USING UML MODELING C
+   Smith M K, 2004, OWL WEB ONTOLOGY LAN
+   SORKIN AR, 2008, NY TIMES        0317
+   Vickery BC, 1997, J INF SCI, V23, P277
+   Wand Y, 2002, INFORM SYST RES, V13, P363, DOI 10.1287/isre.13.4.363.69
+   WANG HQ, 1995, J INFORM SCI, V21, P232, DOI 10.1177/016555159502100309
+   Wang HQ, 2002, COMMUN ACM, V45, P83, DOI 10.1145/504729.504733
+   WHITE B, 2008, NY TIMES        0914
+NR 31
+TC 10
+Z9 10
+U1 0
+U2 24
+PU SAGE PUBLICATIONS LTD
+PI LONDON
+PA 1 OLIVERS YARD, 55 CITY ROAD, LONDON EC1Y 1SP, ENGLAND
+SN 0165-5515
+J9 J INF SCI
+JI J. Inf. Sci.
+PD OCT
+PY 2009
+VL 35
+IS 5
+BP 548
+EP 562
+DI 10.1177/0165551509105194
+PG 15
+WC Computer Science, Information Systems; Information Science & Library
+   Science
+SC Computer Science; Information Science & Library Science
+GA 494GX
+UT WOS:000269800900004
+DA 2019-12-27
+ER
+
+PT J
+AU Seybert, N
+   Bloomfield, R
+AF Seybert, Nicholas
+   Bloomfield, Robert
+TI Contagion of Wishful Thinking in Markets
+SO MANAGEMENT SCIENCE
+LA English
+DT Article
+DE wishful thinking; betting; desirability bias; unrealistic optimism;
+   motivated reasoning; contagion; markets; investors; investing; gambling;
+   information aggregation
+ID RATIONAL-EXPECTATIONS; INFORMATION; EFFICIENCY; DESIRABILITY; RISK;
+   AGGREGATION; PROBABILITY; INVESTMENT; PRICES
+AB Prior research provides only weak and controversial evidence that people overestimate the likelihood of desirable events (wishful thinking), but strong evidence that people bet more heavily on those events (wishful betting). Two experiments show that wishful betting contaminates beliefs in laboratory financial markets because wishful betters appear to possess more favorable information than they actually do. As a consequence, market interaction exacerbates rather than mitigates wishful thinking. This phenomenon, "contagion of wishful thinking," could be problematic in many settings where people infer others' beliefs from their behavior.
+C1 [Seybert, Nicholas] Univ Texas Austin, McCombs Sch Business, Austin, TX 78712 USA.
+   [Bloomfield, Robert] Cornell Univ, Johnson Grad Sch Management, Ithaca, NY 14853 USA.
+RP Seybert, N (reprint author), Univ Texas Austin, McCombs Sch Business, Austin, TX 78712 USA.
+EM nick.seybert@mccombs.utexas.edu; rjb9@cornell.edu
+CR Bailey W, 2008, MANAGE SCI, V54, P443, DOI 10.1287/mnsc.1070.0793
+   Benartzi S, 2001, J FINANC, V56, P1747, DOI 10.1111/0022-1082.00388
+   Bloomfield R, 1996, ACCOUNT REV, V71, P493
+   Bloomfield R, 1996, J FINANC, V51, P1791, DOI 10.2307/2329538
+   Bloomfield R, 1996, ORGAN BEHAV HUM DEC, V68, P287, DOI 10.1006/obhd.1996.0106
+   BLOOMFIELD R, 2009, REV FINANCI IN PRESS
+   Bradshaw MT, 2004, J ACCOUNTING RES, V42, P795, DOI 10.1111/j.1475-679X.2004.00157.x
+   Budescu D., 1995, THINK REASONING, V1, P71, DOI DOI 10.1080/13546789508256906
+   Budescu DV, 2005, MANAGE SCI, V51, P1829, DOI 10.1287/mnsc.1050.0426
+   BUDESCU DV, 1995, J BEHAV DECIS MAKING, V8, P109, DOI 10.1002/bdm.3960080204
+   CAMERER C, 1991, J BUS, V64, P463, DOI 10.1086/296548
+   CAMERER CF, 1987, AM ECON REV, V77, P981
+   Coval JD, 2001, J POLIT ECON, V109, P811, DOI 10.1086/322088
+   DANSEREU F, 1984, THEORY TESTING ORG B
+   DITTO PH, 1992, J PERS SOC PSYCHOL, V63, P568, DOI 10.1037/0022-3514.63.4.568
+   Edmans A, 2007, J FINANC, V62, P1967, DOI 10.1111/j.1540-6261.2007.01262.x
+   FORSYTHE R, 1992, AM ECON REV, V82, P1142
+   FORSYTHE R, 1990, ECONOMETRICA, V58, P309, DOI 10.2307/2938206
+   Gollier C, 1996, ECONOMETRICA, V64, P1109, DOI 10.2307/2171958
+   Hahn Robert W., 2006, INFORM MARKETS NEW W
+   HALES J, 2009, ORG BEHAV H IN PRESS
+   Hales J, 2007, J ACCOUNTING RES, V45, P607, DOI 10.1111/j.1475-679X.2007.00247.x
+   Hau H, 2001, J FINANC, V56, P1959, DOI 10.1111/0022-1082.00396
+   IRWIN FW, 1966, J EXP PSYCHOL, V71, P282, DOI 10.1037/h0022852
+   IRWIN FW, 1953, J PERS, V21, P329, DOI 10.1111/j.1467-6494.1953.tb01775.x
+   KIMBALL MS, 1993, ECONOMETRICA, V61, P589, DOI 10.2307/2951719
+   Krizan Z, 2007, PSYCHOL BULL, V133, P95, DOI 10.1037/0033-2909.133.1.95
+   KUNDA Z, 1990, PSYCHOL BULL, V108, P480, DOI 10.1037/0033-2909.108.3.480
+   LEDYARD JO, 2006, INFORM MARKETS NEW W
+   LINTNER J, 1965, REV ECON STAT, V47, P13, DOI 10.2307/1924119
+   LUNDHOLM RJ, 1991, ACCOUNT REV, V66, P486
+   OHARA M, 2004, MARKET MICROSTRUCTUR
+   Oliven K, 2004, MANAGE SCI, V50, P336, DOI 10.1287/mnsc.1040.0191
+   PLOTT CR, 1982, J POLIT ECON, V90, P663, DOI 10.1086/261084
+   PLOTT CR, 1988, ECONOMETRICA, V56, P1085, DOI 10.2307/1911360
+   RUSS R, 2006, J BEHAV FINANCE, V7, P2
+   Schnitzlein CR, 1996, J FINANC, V51, P613, DOI 10.2307/2329373
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   SLOVIC P, 1966, IEEE TRANS HUM FACT, VHFE7, P22, DOI 10.1109/THFE.1966.231980
+   Strong N, 2003, REV ECON STAT, V85, P307, DOI 10.1162/003465303765299837
+   Sunder S, 1995, HDB EXPT EC, P445
+   Wolfers J, 2004, J ECON PERSPECT, V18, P107, DOI 10.1257/0895330041371321
+NR 42
+TC 17
+Z9 17
+U1 1
+U2 20
+PU INFORMS
+PI CATONSVILLE
+PA 5521 RESEARCH PARK DR, SUITE 200, CATONSVILLE, MD 21228 USA
+SN 0025-1909
+EI 1526-5501
+J9 MANAGE SCI
+JI Manage. Sci.
+PD MAY
+PY 2009
+VL 55
+IS 5
+BP 738
+EP 751
+DI 10.1287/mnsc.1080.0973
+PG 14
+WC Management; Operations Research & Management Science
+SC Business & Economics; Operations Research & Management Science
+GA 444WQ
+UT WOS:000266011700004
+DA 2019-12-27
+ER
+
+PT J
+AU Kraft, H
+   Steffensen, M
+AF Kraft, Holger
+   Steffensen, Mogens
+TI Asset allocation with contagion and explicit bankruptcy procedures
+SO JOURNAL OF MATHEMATICAL ECONOMICS
+LA English
+DT Article
+DE Portfolio optimization; Liquidation; Reorganization; Default; Finite
+   state Markov chain
+ID CREDIT RISK; SECURITIES; MODELS; BONDS
+AB In tills paper, we consider the asset allocation problem of an investor allocating his funds between several corporate bonds and a money market account. In particular, we provide a realistic model of financial distress: firstly, we model Chapter 7 and Chapter 11 bankruptcies as different possible outcomes of financial distress. Secondly, we take into consideration that, in practice, "default" is not the end, but the beginning of financial distress, eventually leading to a reorganization or a liquidation of a distressed firm. Thirdly and most importantly, we are able to analyze the impact of contagion on an investor's demand for corporate bonds. Contagion is an important phenomenon, as it reduces the investor's ability to diversify his portfolio, and we show that the bond demand can change by more than 50%. (C) 2008 Elsevier B.V. All rights reserved.
+C1 [Kraft, Holger] Univ Frankfurt, Dept Finance, D-60054 Frankfurt, Germany.
+   [Steffensen, Mogens] Univ Copenhagen, Inst Math Sci, Lab Actuarial Math, DK-2100 Copenhagen O, Denmark.
+RP Kraft, H (reprint author), Univ Frankfurt, Dept Finance, D-60054 Frankfurt, Germany.
+EM holgerkraft@finance.uni-frankfurt.de; mogens@math.ku.dk
+FU Deutsche Forschungsgemeinschaft (DFG)German Research Foundation (DFG)
+FX We thank Jack Hughes, Francis Longstaff, and anonymous referees for
+   valuable comments and suggestions. All remaining errors are of course
+   our own. Holger Kraft gratefully acknowledges financial support by
+   Deutsche Forschungsgemeinschaft (DFG).
+CR Becherer D, 2005, ANN APPL PROBAB, V15, P1111, DOI 10.1214/105051604000000846
+   BERNDT A, 2004, MEASURING DEFAULT RI
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Brennan M. J., 2000, European Finance Review, V4, P197, DOI 10.1023/A:1009890514371
+   Brennan MJ, 1997, J ECON DYN CONTROL, V21, P1377, DOI 10.1016/S0165-1889(97)00031-6
+   BRIS A, 2005, COST BANKRUPTCY, pCH11
+   Collin-Dufresne R, 2003, IS CREDIT EVENT RISK
+   DELBAEN F, 1994, MATH ANN, V300, P463, DOI 10.1007/BF01450498
+   Duffie D, 1999, REV FINANC STUD, V12, P687, DOI 10.1093/rfs/12.4.687
+   Eom YH, 2004, REV FINANC STUD, V17, P499, DOI 10.1093/rfs/hhg053
+   Franks Julian, 2004, DO BANKRUPTCY CODES
+   GUO X, 2008, MATH FINANC IN PRESS
+   HARRISON JM, 1979, J ECON THEORY, V20, P381, DOI 10.1016/0022-0531(79)90043-7
+   HOU Y, 2003, INTEGRATING MARKET C
+   Jarrow RA, 1997, REV FINANC STUD, V10, P481, DOI 10.1093/rfs/10.2.481
+   Jarrow RA, 2005, MATH FINANC, V15, P1, DOI 10.1111/j.0960-1627.2005.00208.x
+   JARROW RA, 1995, J FINANC, V50, P53, DOI 10.2307/2329239
+   Jarrow RA, 2001, J FINANC, V56, P1765, DOI 10.1111/0022-1082.00389
+   JORION P, 2005, INTRAINDUSTRY CREDIT
+   Kraft H, 2008, J ECON DYN CONTROL, V32, P348, DOI 10.1016/j.jedc.2007.02.001
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Lando D., 1998, REV DERIV RES, V2, P99, DOI DOI 10.1007/BF01531332
+   Liu J, 2003, J FINANC, V58, P231, DOI 10.1111/1540-6261.00523
+   Longstaff FA, 2001, REV FINANC STUD, V14, P407, DOI 10.1093/rfs/14.2.407
+   MERTON RC, 1971, J ECON THEORY, V3, P373, DOI 10.1016/0022-0531(71)90038-X
+   MERTON RC, 1969, REV ECON STAT, V51, P247, DOI 10.2307/1926560
+   Merton RC, 1990, CONTINUOUS TIME FINA
+   MUNK C, 2005, J BANKING FINANCE
+   Norberg R., 2003, ASTIN BULL, V33, P265
+   Protter P.E., 2004, STOCHASTIC INTEGRATI
+   Samuelson P. A., 1991, MONEY MACROECONOMICS
+   Sorensen C, 1999, J FINANC QUANT ANAL, V34, P513, DOI 10.2307/2676232
+   Steffensen M., 2007, REV FINANC, V11, P209
+   Yu F, 2007, MATH FINANC, V17, P155, DOI 10.1111/j.1467-9965.2007.00298.x
+NR 34
+TC 15
+Z9 16
+U1 0
+U2 5
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-4068
+J9 J MATH ECON
+JI J. Math. Econ.
+PD JAN 20
+PY 2009
+VL 45
+IS 1-2
+BP 147
+EP 167
+DI 10.1016/j.jmateco.2008.08.006
+PG 21
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 395AJ
+UT WOS:000262494100012
+DA 2019-12-27
+ER

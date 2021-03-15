@@ -1,0 +1,451 @@
+
+PT J
+AU Barkauskaite, A
+   Lakstutiene, A
+   Witkowska, J
+AF Barkauskaite, Aida
+   Lakstutiene, Ausrine
+   Witkowska, Justyna
+TI Measurement of Systemic Risk in a Common European Union Risk-Based
+   Deposit Insurance System: Formal Necessity or Value-Adding Process?
+SO RISKS
+LA English
+DT Article
+DE risk-based; systemic risk; deposit insurance
+ID BANKS; CRISIS
+AB Scientific discussions have emphasized that the main problem with the current deposit insurance system is that the current system does not evaluate the risks that banks assume to calculate the deposit insurance premiums in many countries of the European Union (E.U.). Thus, the prevailing system does not safeguard a sufficient level of stability in the banking system. Scientific studies show that the deposit insurance system should consider not only the risk indicators for individual banks, but it must also consider the systemic risk of banks that affects the stability of the banking system. Hence, the question arises as to whether measurements of systemic risk in a common E.U. risk-based deposit insurance system are a formal necessity or if they are a value-adding process. Expanding the discussion of scientists, this article analyzes how contributions to insurance funds would change the banks of Lithuania following the introduction of the E.U.'s overall risk-based deposit insurance system and after taking into consideration the additional systemic risk. The research results that were obtained provide evidence that the introduction of a risk-based deposit insurance system would redistribute payments to the deposit insurance fund between banks operating in Lithuania, and, thereby, would contribute to a reduction in the negative effects of the deposit insurance system and would improve the stability in the financial system.
+C1 [Barkauskaite, Aida; Lakstutiene, Ausrine] Kaunas Univ Technol, Sch Econ & Business, LT-44249 Kaunas, Lithuania.
+   [Witkowska, Justyna] Univ Warmia & Mazury, Fac Econ Sci, PL-10719 Olsztyn, Poland.
+RP Barkauskaite, A (reprint author), Kaunas Univ Technol, Sch Econ & Business, LT-44249 Kaunas, Lithuania.
+EM aida.barkauskaite@ktu.edu; ausrine.lakstutiene@ktu.lt;
+   justyna.witkowska@uwm.edu.pl
+CR Acharya Viral, 2010, EC POLICY REV FEDERA, V16, P89, DOI DOI 10.2139/ssrn.1678160
+   Acharya Viral, 2011, AEA M, P1
+   Allen F, 2011, OXFORD REV ECON POL, V27, P464, DOI 10.1093/oxrep/grr022
+   Allen L, 2016, J FINANC STABIL, V26, P1, DOI 10.1016/j.jfs.2016.06.005
+   Altunbas Y, 2013, J INT FINANC MARK I, V27, P243, DOI 10.1016/j.intfin.2013.09.005
+   Andries AM, 2016, ECON LETT, V144, P59, DOI 10.1016/j.econlet.2016.04.031
+   Anginer D, 2014, J BANK FINANC, V48, P312, DOI 10.1016/j.jbankfin.2013.09.013
+   Bank for International Settlements, 2014, IADI COR PRINC EFF D, P1
+   Battaglia F, 2017, J INT FINANC MARK I, V46, P128, DOI 10.1016/j.intfin.2016.08.002
+   Bernet Beat, 2009, DESIGN STRUCTURE IMP, P1
+   Black L, 2016, J BANK FINANC, V63, P107, DOI 10.1016/j.jbankfin.2015.09.007
+   Boyle G, 2015, J FINANC INTERMED, V24, P590, DOI 10.1016/j.jfi.2015.02.001
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brownlees Christian T., 2011, VOLATILITY CORRELATI, P1
+   Cannas Giuseppina, 2014, UPDATED ESTIMATES EU, P1
+   De Jonghe O, 2015, J BANK FINANC, V61, pS3, DOI 10.1016/j.jbankfin.2014.12.024
+   Demirguc-Kunt A., 2014, WP14118 INT MON FUND, V14, P1
+   EBA Guidelines, 2015, GUIDELINES METHODS C
+   Ellis Diane, 2013, DEPOSIT INSURANCE FU, P1
+   Enkhbold E., 2013, ASIAN J FINANCE ACCO, V5, P104, DOI DOI 10.5296/ajfa.v5i1.3023
+   EUROPEAN UNION, 2009, PROT CAS CONTR STUD, P1
+   Frey R, 2018, RISKS, V6, DOI 10.3390/risks6020054
+   Galliani Clara, 2012, JRC TECHNICAL REPORT, P1
+   Gomez-Fernandez-Aguado P., 2013, WORKING PAPER SERIES, V13, P1
+   Gomez-Fernandez-Aguado P, 2014, APPL ECON, V46, P1547, DOI 10.1080/00036846.2013.877577
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Ioannidou VP, 2010, J FINANC INTERMED, V19, P95, DOI 10.1016/j.jfi.2009.01.002
+   Kanno M, 2015, J FINANC STABIL, V20, P105, DOI 10.1016/j.jfs.2015.08.006
+   Khan AH, 2011, EMPIR ECON, V41, P155, DOI 10.1007/s00181-010-0438-8
+   Kuzubas TU, 2016, PHYSICA A, V462, P358, DOI 10.1016/j.physa.2016.06.085
+   Laeven L, 2016, J BANK FINANC, V69, pS25, DOI 10.1016/j.jbankfin.2015.06.022
+   Laeven Luc, 2014, 1404 IMF SDN
+   Lakstutiene A, 2018, ECON RES-EKON ISTRAZ, V31, P73, DOI 10.1080/1331677X.2017.1421997
+   Lakstutiene A, 2017, TRANSFORM BUS ECON, V16, P147
+   Lakstutiene Ausrine, 2018, EURASIAN BUSINESS PE, V1, P105
+   Lee SC, 2015, J BANK FINANC, V51, P1, DOI 10.1016/j.jbankfin.2014.10.012
+   Londono Juan M., 2014, BOARD GOVERNORS FEDE, V1117, P1
+   Mensah JO, 2017, JPN WORLD ECON, V41, P17, DOI 10.1016/j.japwor.2016.12.004
+   Oordt Maarten R. C., 2015, 478 DNB, P1
+   Prean N, 2011, ECON SYST, V35, P496, DOI 10.1016/j.ecosys.2011.01.004
+   de Souza SRS, 2016, J ECON DYN CONTROL, V66, P54, DOI 10.1016/j.jedc.2016.03.003
+   Van De Leur MCW, 2017, J BANK FINANC, V78, P84, DOI 10.1016/j.jbankfin.2017.02.003
+   Varotto Simone, 2014, SYSTEMIC RISK BANK S, P1
+NR 43
+TC 0
+Z9 0
+U1 1
+U2 3
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2227-9091
+J9 RISKS
+JI Risks
+PD DEC
+PY 2018
+VL 6
+IS 4
+AR 137
+DI 10.3390/risks6040137
+PG 21
+WC Business, Finance
+SC Business & Economics
+GA HH3TM
+UT WOS:000455642400034
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Collet, J
+   Ielpo, F
+AF Collet, Jerome
+   Ielpo, Florian
+TI Sector spillovers in credit markets
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Credit spreads; Volatility spillovers; Credit sectors; Connectedness;
+   Systemic risk; Markov switching; VAR
+ID VOLATILITY SPILLOVERS; BUSINESS-CYCLE; BANKING CRISES; PERFORMANCE;
+   PORTFOLIO; CONTAGION; DYNAMICS; RETURNS; MODELS; RISK
+AB Cross-sector volatility spillovers can both threaten the financial stability of credit markets and the diversification of a credit bond portfolio. In this article, we measure cross-sector volatility spillovers, casting light on their intensity in the US-denominated investment grade bond universe. We find that volatility spillovers are high in the US credit market and that the insurance, goods and energy sectors have been net contributors to these shocks over the 1996-2017 period. A structural analysis of the spillover history based on a three-regime multivariate VAR Markov Switching model is then proposed. It highlights that with different volatility regimes come different volatility spillover structures: the insurance and goods sectors are volatility spillover sources during crisis periods. However, according to our estimates a large portion of spillovers are non-recurring and therefore difficult to anticipate. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Collet, Jerome] Lombard Odier Investment Managers, Ave Morgines 6, CH-1214 Petit Lancy, Switzerland.
+   [Ielpo, Florian] Univ Paris 1 Pantheon Sorbonne, CES, Maison Sci Econ,106-113 Blvd Hop, F-75013 Paris, France.
+   [Ielpo, Florian] Labex Refi, Paris, France.
+   [Ielpo, Florian] Unigestion, Ave Champel 8c, CH-1206 Geneva, Switzerland.
+RP Ielpo, F (reprint author), Univ Paris 1 Pantheon Sorbonne, CES, Maison Sci Econ,106-113 Blvd Hop, F-75013 Paris, France.; Ielpo, F (reprint author), Labex Refi, Paris, France.; Ielpo, F (reprint author), Unigestion, Ave Champel 8c, CH-1206 Geneva, Switzerland.
+EM j.collet@lombardodier.com; fielpo@unigestion.com
+FU PRES heSam [ANR10LABX0095]; French government [ANR111DEX000602]
+FX This work was achieved through the Laboratory of Excellence on Financial
+   Regulation (Labex ReFi) supported by PRES heSam under the reference
+   ANR10LABX0095. It benefited from a French government support managed by
+   the National Research Agency (ANR) within the project Investissements
+   d'Avenir Paris Nouveaux Mondes (investments for the future Paris New
+   Worlds) under the reference ANR111DEX000602.
+CR Alter A, 2014, J BANK FINANC, V42, P134, DOI 10.1016/j.jbankfin.2014.01.030
+   Bangia A, 2002, J BANK FINANC, V26, P445, DOI 10.1016/S0378-4266(01)00229-1
+   Bauwens L, 2014, J ECONOMETRICS, V178, P508, DOI 10.1016/j.jeconom.2013.08.017
+   Billio M., 2003, J ECON BUS, V55, P405
+   Billio M, 2010, COMPUT STAT DATA AN, V54, P2443, DOI 10.1016/j.csda.2009.03.018
+   Boon LN, 2014, J ALTERN INVEST, V16, P8, DOI 10.3905/jai.2014.16.4.008
+   Briere M, 2012, J INT MONEY FINANC, V31, P1729, DOI 10.1016/j.jimonfin.2012.03.010
+   Bubak V, 2011, J BANK FINANC, V35, P2829, DOI 10.1016/j.jbankfin.2011.03.012
+   Carling K., 2004, IS FIRM INTERDEPENDE
+   Chevallier J, 2013, APPL ECON LETT, V20, P1211, DOI 10.1080/13504851.2013.799748
+   CORNELL B, 1991, J FINANC, V46, P29, DOI 10.2307/2328688
+   da Fonseca J., 2012, COMOVEMENT CREDIT DE
+   Deitz Peter, 1981, J PORTFOL MANAG, V7, P37
+   Dell'Ariccia G, 2008, J FINANC INTERMED, V17, P89, DOI 10.1016/j.jfi.2007.06.001
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Ding ZX, 1996, J ECONOMETRICS, V73, P185, DOI 10.1016/0304-4076(95)01737-2
+   Egloff D, 2007, J BANK FINANC, V31, P2475, DOI 10.1016/j.jbankfin.2006.10.023
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   Engle Robert F., 1986, ECONOMET REV, V5, P1, DOI DOI 10.1080/07474938608800095
+   Fong Gifford, 1983, J PORTFOLIO MANAGE, V9, P46
+   Gatumel M, 2014, INT J THEOR APPL FIN, V17, DOI 10.1142/S021902491450040X
+   Gilchrist S, 2012, AM ECON REV, V102, P1692, DOI 10.1257/aer.102.4.1692
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   KAHN RN, 1991, J PORTFOLIO MANAGE, V18, P40, DOI 10.3905/jpm.1991.409382
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Kroszner RS, 2007, J FINANC ECON, V84, P187, DOI 10.1016/j.jfineco.2006.05.001
+   Laurent S, 2016, COMPUT STAT DATA AN, V100, P383, DOI 10.1016/j.csda.2014.05.015
+   Lutkepohl H, 2005, NEW INTRO MULTIPLE T
+   Maheu JM, 2012, J BUS ECON STAT, V30, P391, DOI 10.1080/07350015.2012.680412
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Pesaran MH, 2006, J MONEY CREDIT BANK, V38, P1211, DOI 10.1353/mcb.2006.0074
+   Raddatz C, 2010, REV ECON STAT, V92, P985, DOI 10.1162/REST_a_00042
+   Rosch D, 2005, INT J FORECASTING, V21, P37, DOI 10.1016/j.ijforecast.2004.04.001
+NR 35
+TC 3
+Z9 3
+U1 2
+U2 11
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD SEP
+PY 2018
+VL 94
+BP 267
+EP 278
+DI 10.1016/j.jbankfin.2018.07.011
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA GV7EU
+UT WOS:000446285600017
+DA 2019-12-27
+ER
+
+PT J
+AU Miyazaki, T
+   Hamori, S
+AF Miyazaki, Takashi
+   Hamori, Shigeyuki
+TI THE DETERMINANTS OF A SIMULTANEOUS CRASH IN GOLD AND STOCK MARKETS: AN
+   ORDERED LOGIT APPROACH
+SO ANNALS OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Gold market; stock market; simultaneous crash; ordered logit model;
+   probability response curve
+ID VOLATILITY SPILLOVERS; DETECTING SHIFT; SAFE HAVEN; CONTAGION;
+   COMMODITY; INTERDEPENDENCE; INVESTMENT; LINKAGES; CRISIS;
+   FINANCIALIZATION
+AB In this study, we identify the determinants of a simultaneous crash in gold and stock markets by employing an ordered logit model. We find that a default spread, among the various financial risk indicators, is a valid determinant and that changes in investors' beliefs, their uncertainties, and surprise changes in these uncertainties about gold and stock markets contain useful information for explaining the occurrence of a simultaneous crash in the two markets. Further, we recognize that the effect of some covariates on crash probability is state-dependent. In addition to these empirical results, a notable finding is that the occurrence of a crash in one market on a previous day does not raise the probability of the occurrence of a crash in another market the next day, implying that a joint crash occurs abruptly and not in a chain reaction. This finding reveals that diversification to gold is still beneficial to investors.
+C1 [Miyazaki, Takashi] Nikkei Inc, Japan Ctr Econ Res, Chiyoda Ku, Bldg 11F,1-3-7 Otemachi, Tokyo 1008066, Japan.
+   [Hamori, Shigeyuki] Kobe Univ, Grad Sch Econ, Nada Ku, 2-1 Rokkodai, Kobe, Hyogo 6578501, Japan.
+RP Hamori, S (reprint author), Kobe Univ, Grad Sch Econ, Nada Ku, 2-1 Rokkodai, Kobe, Hyogo 6578501, Japan.
+EM takashi.miyazaki@jcer.or.jp; hamori@econ.kobe-u.ac.jp
+RI Hamori, Shigeyuki/J-4877-2019
+OI Hamori, Shigeyuki/0000-0003-1498-0188
+FU JSPS KAKENHIMinistry of Education, Culture, Sports, Science and
+   Technology, Japan (MEXT)Japan Society for the Promotion of
+   ScienceGrants-in-Aid for Scientific Research (KAKENHI) [17H00983]
+FX This work was supported by JSPS KAKENHI Grant No. (A) 17H00983.
+CR Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baur DG, 2011, RESOUR POLICY, V36, P265, DOI 10.1016/j.resourpol.2011.03.003
+   Baur DG, 2010, FINAN REV, V45, P217, DOI 10.1111/j.1540-6288.2010.00244.x
+   Baur DG, 2010, J BANK FINANC, V34, P1886, DOI 10.1016/j.jbankfin.2009.12.008
+   Bhar R, 2011, INT REV ECON FINANC, V20, P469, DOI 10.1016/j.iref.2010.07.011
+   Billio M., 2003, J ECON BUS, V55, P405
+   Cameron A.C., 2005, MICROECONOMETRICS ME
+   Candelon B, 2005, J INT MONEY FINANC, V24, P1317, DOI 10.1016/j.jimonfin.2005.08.011
+   Caporale G. M, 2005, J EMPIR FINANC, V12, P476, DOI DOI 10.1016/J.JEMPFIN.2004.02.005
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Chan KF, 2011, J BANK FINANC, V35, P1415, DOI 10.1016/j.jbankfin.2010.10.022
+   Chauvet M., 2000, J EMPIR FINANC, V7, P87
+   Chevallier J, 2013, APPL ECON LETT, V20, P1211, DOI 10.1080/13504851.2013.799748
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Choi K, 2010, ENERG POLICY, V38, P4388, DOI 10.1016/j.enpol.2010.03.067
+   Christiansen C, 2009, J BANK FINANC, V33, P1048, DOI 10.1016/j.jbankfin.2008.10.014
+   Chudik A, 2011, EUR ECON REV, V55, P325, DOI 10.1016/j.euroecorev.2010.12.003
+   Cohen Gil, 2010, AM J SOCIAL MANAGEME, V1, P39, DOI DOI 10.5251/AJSMS.2010.1.1.39.43
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Domanski D, 2007, BIS Q REV, P53
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   Dungey M, 2010, J BANK FINANC, V34, P1008, DOI 10.1016/j.jbankfin.2009.11.006
+   Ehrmann M, 2011, J APPL ECONOMET, V26, P948, DOI 10.1002/jae.1173
+   Erb CB, 2006, FINANC ANAL J, V62, P69, DOI 10.2469/faj.v62.n2.4084
+   Estrella A, 1998, REV ECON STAT, V80, P45, DOI 10.1162/003465398557320
+   Flavin TJ, 2010, PAC ECON REV, V15, P401, DOI 10.1111/j.1468-0106.2010.00510.x
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Gorton G, 2006, FINANC ANAL J, V62, P47, DOI 10.2469/faj.v62.n2.4083
+   Gravelle T, 2006, J INT ECON, V68, P409, DOI 10.1016/j.jinteco.2005.07.005
+   Greene WH, 2011, ECONOMETRIC ANAL INT
+   Guo F, 2011, INT REV ECON FINANC, V20, P95, DOI 10.1016/j.iref.2010.07.009
+   Hammoudeh S, 2009, CONTEMP ECON POLICY, V27, P251, DOI 10.1111/j.1465-7287.2008.00126.x
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hillier D, 2006, FINANC ANAL J, V62, P98, DOI 10.2469/faj.v62.n2.4085
+   Hood M, 2013, REV FINANC ECON, V22, P47, DOI 10.1016/j.rfe.2013.03.001
+   Kleimeier Stefanie, 2003, INT FINANCIAL MARKET, V13, P171, DOI DOI 10.1016/S1042-4431(02)00043-4
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Kurov A, 2010, J BANK FINANC, V34, P139, DOI 10.1016/j.jbankfin.2009.07.010
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   Loretan M, 2000, INT FINANCE DISCUSSI
+   Manner H, 2010, PAC ECON REV, V15, P364, DOI 10.1111/j.1468-0106.2010.00508.x
+   Marais E., 2006, INT FINANCIAL MARKET, V16, P468
+   Markwat T, 2009, J BANK FINANC, V33, P1996, DOI 10.1016/j.jbankfin.2009.05.008
+   Mensi W, 2013, ECON MODEL, V32, P15, DOI 10.1016/j.econmod.2013.01.023
+   Miyazaki T., 2014, INT J FINANC RES, V5, P90, DOI DOI 10.5430/IJFR.V5N4P90
+   Miyazaki T., 2013, APPL FINANCIAL EC, V23, P27, DOI DOI 10.1080/09603107.2012.699184
+   Miyazaki T, 2012, ECON BULL, V32, P37
+   Naoui K, 2010, INT J EC FINANC, V2, P85, DOI DOI 10.5539/IJEF.V2N3P85
+   Ozoguz A, 2009, REV FINANC STUD, V22, P4377, DOI 10.1093/rfs/hhn097
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   Piplack J, 2010, PAC ECON REV, V15, P385, DOI 10.1111/j.1468-0106.2010.00509.x
+   Qadan M, 2012, APPL ECON LETT, V19, P363, DOI 10.1080/13504851.2011.579053
+   Silvennoinen A, 2013, J INT FINANC MARK I, V24, P42, DOI 10.1016/j.intfin.2012.11.007
+   Tang K, 2012, FINANC ANAL J, V68, P54, DOI 10.2469/faj.v68.n6.5
+   Wheelock DC, 2009, FED RESERVE BANK ST, V91, P419
+   Wooldridge JM, 2010, ECONOMETRIC ANALYSIS OF CROSS SECTION AND PANEL DATA, 2ND EDITION, P1
+NR 61
+TC 1
+Z9 1
+U1 0
+U2 0
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 2010-4952
+EI 2010-4960
+J9 ANN FINANC ECON
+JI Ann. Financ. Econ.
+PD MAR
+PY 2018
+VL 13
+IS 1
+AR 1850004
+DI 10.1142/S2010495218500045
+PG 25
+WC Economics
+SC Business & Economics
+GA GL7SC
+UT WOS:000437402200005
+OA Bronze
+DA 2019-12-27
+ER
+
+PT J
+AU Wu, L
+   Mei, XB
+   Sun, JG
+AF Wu, Liang
+   Mei, Xian-bin
+   Sun, Jian-guo
+TI A New Default Probability Calculation Formula an Its Application under
+   Uncertain Environments
+SO DISCRETE DYNAMICS IN NATURE AND SOCIETY
+LA English
+DT Article
+ID BLACK-SCHOLES FORMULA; FUZZY ENVIRONMENTS; EUROPEAN OPTIONS;
+   COUNTERPARTY RISK; MODEL; INTENSITY; SETS; SECURITIES; VALUATION; BONDS
+AB In the real world, corporate defaults will be affected by both external market shocks and counterparty risks. With this in mind, we propose a new default intensity model with counterparty risks based on both external shocks and the internal contagion effect. The effects of the external shocks and internal contagion on a company cannot, however, be observed, as uncertainty in the real world contains both randomness and fuzziness. This prevents us from determining the size of the shocks accurately. In this study, fuzzy set theory is utilized to study a looping default credit default swap (CDS) pricing model under uncertain environments. Following this, we develop a new fuzzy form pricing formula for CDS, the simulation analysis of which shows that all kinds of fuzziness in the market have a significant impact on credit spreads, and that the credit spreads, relative to the degree of external shock fuzziness, are much more sensitive. Nevertheless, for a certain degree of fuzziness in the market, credit spreads, relative to changes in counterparty risk, are much more sensitive. Using random analysis and fuzzy numbers, one can think of even more uncertain sources at play than the processes of looping default and investor subjective judgment on the financial markets, and this broadens the scope of possible credit spreads. Compared to the existing related literature, our new fuzzy form CDS pricing model with counterparty risk can consider more factors that influence default and is closer to the reality of the complexity of the dynamics of default. It can also employ the membership function to describe the fuzzy phenomenon, enable the fuzzy phenomenon to be estimated in two kinds of state, and can simultaneously reflect both the fuzziness and randomness in financial markets.
+C1 [Wu, Liang; Mei, Xian-bin] Henan Inst Sci & Technol, Postdoctoral Res Base, Xinxiang 453003, Henan, Peoples R China.
+   [Wu, Liang; Sun, Jian-guo] Henan Univ, Postdoctoral Res Stn, Kaifeng 475000, Peoples R China.
+RP Wu, L (reprint author), Henan Inst Sci & Technol, Postdoctoral Res Base, Xinxiang 453003, Henan, Peoples R China.; Wu, L (reprint author), Henan Univ, Postdoctoral Res Stn, Kaifeng 475000, Peoples R China.
+EM nidewuliang@163.com
+FU China Postdoctoral Science FoundationChina Postdoctoral Science
+   Foundation [2017M622325]
+FX The work was supported by the Project funded by China Postdoctoral
+   Science Foundation (no. 2017M622325).
+CR Agliardi E, 2011, OPER RES-GER, V11, P299, DOI 10.1007/s12351-010-0087-x
+   Agliardi E, 2009, FUZZY SET SYST, V160, P2597, DOI 10.1016/j.fss.2008.12.017
+   Bai Y. F., THESIS
+   Bai YF, 2007, APPL MATH MECH-ENGL, V28, P1643, DOI 10.1007/s10483-007-1211-9
+   Collin-Dufresne P, 2004, ECONOMETRICA, V72, P1377, DOI 10.1111/j.1468-0262.2004.00538.x
+   Duffie D, 1999, REV FINANC STUD, V12, P687, DOI 10.1093/rfs/12.4.687
+   Hao R, 2011, THESIS
+   Hassan MR, 2013, NEUROCOMPUTING, V104, P10, DOI 10.1016/j.neucom.2012.09.017
+   Jarrow RA, 2001, J FINANC, V56, P1765, DOI 10.1111/0022-1082.00389
+   KaufmannandM A., 1985, INTRO FUZZY ARITHMET
+   Lando D., 1998, REV DERIV RES, V2, P99, DOI DOI 10.1007/BF01531332
+   Leung KS, 2009, ASIA-PAC FINANC MARK, V16, P169, DOI 10.1007/s10690-009-9091-7
+   Leung S. Y., 2005, KYOTO EC REV, V74, P25
+   PURI ML, 1986, J MATH ANAL APPL, V114, P409, DOI 10.1016/0022-247X(86)90093-4
+   Shreve S. E., 2004, STOCHASTIC CALCULUS
+   Sun BQ, 2015, NEUROCOMPUTING, V151, P1528, DOI 10.1016/j.neucom.2014.09.018
+   Vassiliou PCG, 2013, FUZZY SET SYST, V223, P39, DOI 10.1016/j.fss.2013.02.016
+   Wang XD, 2014, J APPL MATH, DOI 10.1155/2014/875319
+   Wei Li, 2009, Proceedings of the 2009 Sixth International Conference on Fuzzy Systems and Knowledge Discovery (FSKD 2009), P399, DOI 10.1109/FSKD.2009.252
+   Wu HC, 2005, INT J INTELL SYST, V20, P89, DOI 10.1002/int.20055
+   Wu HC, 2004, COMPUT OPER RES, V31, P1069, DOI 10.1016/S0305-0548(03)00065-0
+   Wu HC, 2007, APPL MATH COMPUT, V185, P136, DOI 10.1016/j.amc.2006.07.015
+   Wu L., 2017, DISCRETE DYNAMICS NA, V2017
+   Wu L, 2016, INT J COMPUT INT SYS, V9, P340, DOI 10.1080/18756891.2016.1161345
+   Wu L, 2015, COMMUN NONLINEAR SCI, V22, P1169, DOI 10.1016/j.cnsns.2014.07.021
+   Wu Liang, MATH PROBLEMS ENG, V2015
+   Xu WD, 2009, INSUR MATH ECON, V44, P337, DOI 10.1016/j.insmatheco.2008.09.003
+   Yoshida Y, 2003, EUR J OPER RES, V145, P221, DOI 10.1016/S0377-2217(02)00209-6
+   Yoshida Y, 2006, FUZZY SET SYST, V157, P2614, DOI 10.1016/j.fss.2003.11.022
+   ZADEH LA, 1965, INFORM CONTROL, V8, P338, DOI 10.1016/S0019-9958(65)90241-X
+NR 30
+TC 0
+Z9 0
+U1 0
+U2 4
+PU HINDAWI LTD
+PI LONDON
+PA ADAM HOUSE, 3RD FLR, 1 FITZROY SQ, LONDON, W1T 5HF, ENGLAND
+SN 1026-0226
+EI 1607-887X
+J9 DISCRETE DYN NAT SOC
+JI Discrete Dyn. Nat. Soc.
+PY 2018
+AR 3481863
+DI 10.1155/2018/3481863
+PG 9
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA GQ3ER
+UT WOS:000441544500001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Gandica, Y
+   Geraci, MV
+   Bereau, S
+   Gnabo, JY
+AF Gandica, Yerali
+   Geraci, Marco Valerio
+   Bereau, Sophie
+   Gnabo, Jean-Yves
+TI Fragmentation, integration and macroprudential surveillance of the US
+   financial industry: Insights from network science
+SO PLOS ONE
+LA English
+DT Article
+ID CONNECTEDNESS; NEEDS
+AB Drawing on recent contributions inferring financial interconnectedness from market data, our paper provides new insights on the evolution of the US financial industry over a long period of time by using several tools coming from network science. Relying on a Time-Varying Parameter Vector AutoRegressive (TVP-VAR) approach on stock market returns to retrieve unobserved directed links among financial institutions, we reconstruct a fully dynamic network in the sense that connections are let to evolve through time. The financial system analysed consists of a large set of 155 financial institutions that are all the banks, broker-dealers, insurance and real estate companies listed in the Standard & Poors' 500 index over the 1993 +/- 2014 period. Looking alternatively at the individual, then sector-, community-and system-wide levels, we show that network sciences' tools are able to support well-known features of the financial markets such as the dramatic fall of connectivity following Lehman Brothers' collapse. More importantly, by means of less traditional metrics, such as sectoral interface or measurements based on contagion processes, our results document the co-existence of both fragmentation and integration phases between firms independently from the sectors they belong to, and doing so, question the relevance of existing macroprudential surveillance frameworks which have been mostly developed on a sectoral basis. Overall, our results improve our understanding of the US financial landscape and may have important implications for risk monitoring as well as macroprudential policy design.
+C1 [Gandica, Yerali; Geraci, Marco Valerio; Bereau, Sophie; Gnabo, Jean-Yves] Univ Namur, CeReFiM DeFiPP, Namur, Belgium.
+   [Gandica, Yerali; Bereau, Sophie; Gnabo, Jean-Yves] Univ Namur, Namur Ctr Complex Syst naXys, Namur, Belgium.
+   [Geraci, Marco Valerio] Univ Libre Bruxelles, ECARES, Brussels, Belgium.
+   [Bereau, Sophie] Catholic Univ Louvain, CORE, Louvain La Neuve, Belgium.
+RP Gandica, Y (reprint author), Univ Namur, CeReFiM DeFiPP, Namur, Belgium.; Gandica, Y (reprint author), Univ Namur, Namur Ctr Complex Syst naXys, Namur, Belgium.
+EM ygandica@gmail.com
+RI LOPEZ, YERALI C GANDICA/M-6261-2013
+OI LOPEZ, YERALI C GANDICA/0000-0002-6262-1801
+FU Communautee frangaise de Belgique under the ARC Grant [13/17-055]; Fonds
+   de la Recherche Scientifique de Belgique (F.R.S.-FNRS) [2.5020.11]
+FX Financial support was received from the Communautee frangaise de
+   Belgique under the ARC Grant No. 13/17-055.; Computational resources
+   have been provided by the Consortium des equipements de Calcul Intensif
+   (CBI), funded by the Fonds de la Recherche Scientifique de Belgique
+   (F.R.S.-FNRS) under Grant No. 2.5020.11. We also gratefully acknowledge
+   financial support from the Communautee francaise de Belgique under the
+   ARC Grant No. 13/17-055. We thank Renaud Lambiotte and Jean-Charles
+   Delvenne as well as the participants to the BeNet Conference in 2016 at
+   Louvain la Neuve as well as the participants to the research seminar at
+   Ecole Polytechnique (UCL) for their feedbacks. YG thanks to Mauro Faccin
+   and Timoteo Carletti for valuable discussions.
+CR Bianchi D, 2015, MODELING CONTAGION S
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blondel VD, 2008, J STAT MECH-THEORY E, DOI 10.1088/1742-5468/2008/10/P10008
+   Bouchaud JP, 2008, NATURE, V455, P1181, DOI 10.1038/4551181a
+   Calomiris CW, 1998, IS BANK MERGER WAVE
+   Cogley T, 2005, REV ECON DYNAM, V8, P262, DOI 10.1016/j.red.2004.10.009
+   Cohen-Cole E., 2011, DP8332 CEPR
+   Dai YH, 2016, EMPIR ECON, V51, P1501, DOI 10.1007/s00181-015-1057-1
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Farmer JD, 2009, NATURE, V460, P685, DOI 10.1038/460685a
+   Gandica Y, 2016, WORKSH 10 INT AAAI C, P16
+   Geraci M, 2017, J FINANCIAL IN PRESS
+   Koop G, 2010, J BUS ECON STAT, V28, P370, DOI 10.1198/jbes.2009.07335
+   Meng H, 2014, SCI REP-UK, V4, DOI 10.1038/srep03655
+   on Banking Supervision BC, 2013, TECH REP
+   Primiceri GE, 2005, REV ECON STUD, V72, P821, DOI 10.1111/j.1467-937X.2005.00353.x
+   Saracco F, 2016, SCI REP-UK, V6, DOI 10.1038/srep30286
+   Schaub Michael T, 2017, Appl Netw Sci, V2, P4, DOI 10.1007/s41109-017-0023-6
+   Song DM, 2011, PHYS REV E, V84, DOI 10.1103/PhysRevE.84.026108
+NR 19
+TC 0
+Z9 0
+U1 1
+U2 6
+PU PUBLIC LIBRARY SCIENCE
+PI SAN FRANCISCO
+PA 1160 BATTERY STREET, STE 100, SAN FRANCISCO, CA 94111 USA
+SN 1932-6203
+J9 PLOS ONE
+JI PLoS One
+PD APR 25
+PY 2018
+VL 13
+IS 4
+AR e0195110
+DI 10.1371/journal.pone.0195110
+PG 23
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA GD8ZI
+UT WOS:000430802400022
+PM 29694415
+OA DOAJ Gold, Green Published
+DA 2019-12-27
+ER

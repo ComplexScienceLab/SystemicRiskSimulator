@@ -1,0 +1,392 @@
+
+PT J
+AU Huang, X
+AF Huang, Xin
+TI Persistence of Bank Credit Default Swap Spreads
+SO RISKS
+LA English
+DT Article
+DE credit default swap spreads; unit root; cointegration
+ID UNIT-ROOT TESTS; TIME-SERIES; REGRESSION
+AB Credit default swap (CDS) spreads measure the default risk of the reference entity and have been frequently used in recent empirical papers. To provide a rigorous econometrics foundation for empirical CDS analysis, this paper applies the augmented Dickey-Fuller, Phillips-Perron, Kwiatkowski-Phillips-Schmidt-Shin, and Ng-Perron tests to study the unit root property of CDS spreads, and it uses the Phillips-Ouliaris-Hansen tests to determine whether they are cointegrated. The empirical sample consists of daily CDS spreads of the six large U.S. banks from 2001 to 2018. The main findings are that it is log, not raw, CDS spreads that are unit root processes, and that log CDS spreads are cointegrated. These findings imply that, even though the risks of individual banks may deviate from each other in the short run, there is a long-run relation that ties them together. As these CDS spreads are an important input for financial systemic risk, there are at least two policy implications. First, in monitoring systemic risk, policymakers should focus on long-run trends rather than short-run fluctuations of CDS spreads. Second, in controlling systemic risk, policy measures that reduce the long-run risks of individual banks, such as stress testing and capital buffers, are helpful in mitigating overall systemic risk.
+C1 [Huang, Xin] Fed Reserve Board, 20th & C St NW, Washington, DC 20551 USA.
+RP Huang, X (reprint author), Fed Reserve Board, 20th & C St NW, Washington, DC 20551 USA.
+EM Xin.Huang@frb.gov
+OI Huang, Xin/0000-0002-0993-4550
+CR Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Blanco R, 2005, J FINANC, V60, P2255, DOI 10.1111/j.1540-6261.2005.00798.x
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Elliott G, 1996, ECONOMETRICA, V64, P813, DOI 10.2307/2171846
+   ENGLE RF, 1987, ECONOMETRICA, V55, P251, DOI 10.2307/1913236
+   Galil K, 2014, J BANK FINANC, V41, P271, DOI 10.1016/j.jbankfin.2013.12.005
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   HANSEN BE, 1992, J ECONOMETRICS, V53, P87, DOI 10.1016/0304-4076(92)90081-2
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Ng S, 2001, ECONOMETRICA, V69, P1519, DOI 10.1111/1468-0262.00256
+   Perron P, 1996, REV ECON STUD, V63, P435, DOI 10.2307/2297890
+   PHILLIPS PCB, 1987, ECONOMETRICA, V55, P277, DOI 10.2307/1913237
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.1093/biomet/75.2.335
+   PHILLIPS PCB, 1990, ECONOMETRICA, V58, P165, DOI 10.2307/2938339
+   SARGAN JD, 1983, ECONOMETRICA, V51, P153, DOI 10.2307/1912252
+   Schwert GW, 2002, J BUS ECON STAT, V20, P5, DOI 10.1198/073500102753410354
+NR 19
+TC 1
+Z9 1
+U1 0
+U2 0
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+EI 2227-9091
+J9 RISKS
+JI Risks
+PD SEP
+PY 2019
+VL 7
+IS 3
+AR 90
+DI 10.3390/risks7030090
+PG 13
+WC Business, Finance
+SC Business & Economics
+GA JC3NO
+UT WOS:000489185600020
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Hamdi, B
+   Aloui, M
+   Alqahtani, F
+   Tiwari, A
+AF Hamdi, Besma
+   Aloui, Mouna
+   Alqahtani, Faisal
+   Tiwari, Aviral
+TI Relationship between the oil price volatility and sectoral stock markets
+   in oil-exporting economies: Evidence from wavelet nonlinear denoised
+   based quantile and Granger-causality analysis
+SO ENERGY ECONOMICS
+LA English
+DT Article
+DE Oil price volatility; Stock sector markets; Quantile regression
+   analysis; Frequency domain causality; Soft thresholding; GCC countries
+ID CRUDE-OIL; RETURNS EVIDENCE; CHINA EVIDENCE; CANADIAN OIL; RISK-FACTORS;
+   SHOCKS; IMPACTS; DEPENDENCE; FLUCTUATIONS; SPILLOVERS
+AB This paper examines the extent of volatility between oil price and sectoral indices in the Gulf Cooperation Council (GCC) countries by using quantile regression analysis (QRA) for the return's series and denoised series over the period 2006-2017. Four sectors are found to offer diversification opportunities during a high market (i.e., 90th quantile). All the sectors are found interdependent of oil price volatility; however, the bank and insurance sectors are insusceptible to oil price volatility during the 10th, 25th and 75th quantiles. In addition, QRA results for wavelet nonlinear denoising with a soft-thresholding series indicate that all the sectors are interdependent of oil price volatility but that the aggregate market index, transport and telecommunication sectors are insensitive to oil price volatility during the 75th and 90th quantiles. This highlights the usefulness of denoising the financial returns series when applying regression tools. Moreover, the contagion and interdependence between the oil price and stock returns sectors are estimated by frequency domain causality. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Hamdi, Besma; Aloui, Mouna] Univ Sfax, Fac Econ & Management, Sfax, Tunisia.
+   [Alqahtani, Faisal] Taibah Univ, Al Madinah, Saudi Arabia.
+   [Tiwari, Aviral] Montpellier Business Sch, Montpellier, France.
+RP Alqahtani, F (reprint author), Taibah Univ, Al Madinah, Saudi Arabia.
+EM fqahtani@taibahu.edu.sa
+RI Tiwari, Aviral Kumar/C-5556-2011
+OI Tiwari, Aviral Kumar/0000-0002-1822-9263; besma,
+   hamdi/0000-0003-1995-0228
+FU Europe Institute of the University of Auckland
+FX We are grateful to the Europe Institute of the University of Auckland
+   for their research support.
+CR Akoum I, 2012, Q REV ECON FINANC, V52, P385, DOI 10.1016/j.qref.2012.07.005
+   Akram QF, 2009, ENERG ECON, V31, P838, DOI 10.1016/j.eneco.2009.05.016
+   Aloui R, 2013, J INT MONEY FINANC, V32, P719, DOI 10.1016/j.jimonfin.2012.06.006
+   Alqahtani F, 2018, ECON SYST, V42, P346, DOI 10.1016/j.ecosys.2017.09.001
+   Alsalman Z, 2015, ENERG J, V36, P171, DOI 10.5547/01956574.36.3.zals
+   Arora V, 2013, ENERG ECON, V36, P546, DOI 10.1016/j.eneco.2012.11.001
+   Arouri M. E. H., 2009, 960 W DAV I
+   Arouri ME, 2012, ENERG ECON, V34, P611, DOI 10.1016/j.eneco.2011.08.009
+   Arouri ME, 2011, J INT MONEY FINANC, V30, P1387, DOI 10.1016/j.jimonfin.2011.07.008
+   Arouri ME, 2011, ECON MODEL, V28, P1815, DOI 10.1016/j.econmod.2011.03.012
+   Arouri MEH, 2010, ENERG POLICY, V38, P4528, DOI 10.1016/j.enpol.2010.04.007
+   BASHER SA, 2016, ENERGY EC ELSEVIER, V54, P235
+   Basher SA, 2006, GLOB FINANC J, V17, P224, DOI 10.1016/j.gfj.2006.04.001
+   Bastianin A, 2016, ENERG POLICY, V98, P160, DOI 10.1016/j.enpol.2016.08.020
+   Berument MH, 2014, ECON MODEL, V42, P243, DOI 10.1016/j.econmod.2014.07.019
+   Boyer MM, 2007, ENERG ECON, V29, P428, DOI 10.1016/j.eneco.2005.12.003
+   BP, 2015, STAT REV WORLD EN 20
+   Breitung J, 2006, J ECONOMETRICS, V132, P363, DOI 10.1016/j.jeconom.2005.02.004
+   Caporale GM, 2015, CHINA ECON REV, V34, P311, DOI 10.1016/j.chieco.2014.09.008
+   Chen P, 2015, ENERG POLICY, V87, P284, DOI 10.1016/j.enpol.2015.09.024
+   Chen SS, 2010, ENERG ECON, V32, P490, DOI 10.1016/j.eneco.2009.08.018
+   Christoffersen P, 2018, J BANK FINANC, V95, P5, DOI 10.1016/j.jbankfin.2017.07.004
+   Coad A., 2006, EC B, V15, P1
+   Degiannakis S, 2013, J INT FINANC MARK I, V26, P175, DOI 10.1016/j.intfin.2013.05.007
+   Ding ZH, 2017, APPL ENERG, V187, P27, DOI 10.1016/j.apenergy.2016.11.037
+   Dogah KE, 2018, ENERG ECON, V76, P228, DOI 10.1016/j.eneco.2018.09.014
+   DONOHO DL, 1994, BIOMETRIKA, V81, P425, DOI 10.1093/biomet/81.3.425
+   Donoho DL, 1995, J AM STAT ASSOC, V90, P1200, DOI 10.2307/2291512
+   EISHARIF I, 2005, ENERG ECON, V27, P819
+   Faff R.W., 1999, J ENERGY FINANCE DEV, V4, P69, DOI DOI 10.1016/S1085-7443(99)00005-8
+   Fang S, 2018, Q REV ECON FINANC, V68, P31, DOI 10.1016/j.qref.2017.11.010
+   Fayyad A, 2011, EMERG MARK REV, V12, P61, DOI 10.1016/j.ememar.2010.12.001
+   Gencay R., 2002, WAVE RANDOM MEDIA, V12, P399, DOI DOI 10.1088/0959-7174/12/3/701
+   GEWEKE J, 1982, J AM STAT ASSOC, V77, P304, DOI 10.2307/2287238
+   Gogineni S, 2010, FINAN REV, V45, P995, DOI 10.1111/j.1540-6288.2010.00282.x
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Hammoudeh S, 2004, CONTEMP ECON POLICY, V22, P250, DOI 10.1093/cep/byh018
+   Hammoudeh S., 2008, INT REV FINANC ANAL, V17, P47, DOI DOI 10.1016/j.irfa.2005.01.002
+   Huang SP, 2018, APPL ENERG, V227, P393, DOI 10.1016/j.apenergy.2017.08.242
+   Jouini J, 2013, J POLICY MODEL, V35, P1124, DOI 10.1016/j.jpolmod.2013.08.003
+   Kang SH, 2017, ENERG ECON, V62, P19, DOI 10.1016/j.eneco.2016.12.011
+   Khandelwal P., 2016, IMPACT OIL PRICES BA
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Lee BJ, 2012, ENERG ECON, V34, P1284, DOI 10.1016/j.eneco.2012.06.004
+   Li SF, 2012, ENERG ECON, V34, P1951, DOI 10.1016/j.eneco.2012.08.027
+   Maghyereh AI, 2017, ENERG ECON, V68, P440, DOI 10.1016/j.eneco.2017.10.025
+   Malik F., 2009, INT REV FINANC AB, V18, P95, DOI DOI 10.1016/J.IRFA.2009.03.003
+   MALIK F, 2007, INT REV ECON FINANC, V16, P357, DOI DOI 10.1016/J.IREF.2005.05.005
+   Mensi W, 2017, APPL ECON, V49, P1255, DOI 10.1080/00036846.2016.1217305
+   Mohanty SK, 2011, GLOB FINANC J, V22, P42, DOI 10.1016/j.gfj.2011.05.004
+   Mollick AV, 2013, ENERG ECON, V36, P1, DOI 10.1016/j.eneco.2012.11.021
+   Nandha M, 2008, ENERG ECON, V30, P986, DOI 10.1016/j.eneco.2007.09.003
+   Nandha M, 2009, REV QUANT FINANC ACC, V33, P393, DOI 10.1007/s11156-009-0120-4
+   Narayan PK, 2011, J BANK FINANC, V35, P3253, DOI 10.1016/j.jbankfin.2011.05.010
+   Park J, 2008, ENERG ECON, V30, P2587, DOI 10.1016/j.eneco.2008.04.003
+   Peng C, 2017, ECON MODEL, V61, P248, DOI 10.1016/j.econmod.2016.12.018
+   Sadorsky P, 2001, ENERG ECON, V23, P17, DOI 10.1016/S0140-9883(00)00072-4
+   Tiwari AK, 2019, RES INT BUS FINANC, V47, P304, DOI 10.1016/j.ribaf.2018.08.005
+   Tiwari AK, 2018, ENERG ECON, V72, P120, DOI 10.1016/j.eneco.2018.03.031
+   Trabelsi N., 2017, J EC ASYMMETRY, V16, P26, DOI DOI 10.1016/j.jeca.2017.05.001
+   Ulussever T, 2017, CENT BANK REV, V17, P77, DOI 10.1016/j.cbrev.2017.08.001
+   Wang X, 2014, ENERG POLICY, V68, P394, DOI 10.1016/j.enpol.2014.01.020
+   Wang YD, 2013, J COMP ECON, V41, P1220, DOI 10.1016/j.jce.2012.12.004
+   Xiao JH, 2018, ENERG ECON, V74, P777, DOI 10.1016/j.eneco.2018.07.026
+   Yu JS, 2008, Q REV ECON FINANC, V48, P482, DOI 10.1016/j.qref.2006.06.003
+   Zhu HM, 2016, ENERG ECON, V55, P30, DOI 10.1016/j.eneco.2015.12.027
+   Zhu HM, 2015, APPL ECON, V47, P6055, DOI 10.1080/00036846.2015.1064076
+NR 67
+TC 3
+Z9 3
+U1 10
+U2 10
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD MAY
+PY 2019
+VL 80
+BP 536
+EP 552
+DI 10.1016/j.eneco.2018.12.021
+PG 17
+WC Economics
+SC Business & Economics
+GA IH7JY
+UT WOS:000474681100041
+DA 2019-12-27
+ER
+
+PT J
+AU Feldman, GD
+   Formento, A
+AF David Feldman, German
+   Formento, Alejandro
+TI Foreign exchange regulatory framework and dynamics for the external
+   sector: An analysis of the recent Argentine case
+SO CUADERNOS DE ECONOMIA
+LA Spanish
+DT Article
+DE Central bank; foreign exchange market; foreign exchange regulation;
+   external constraint
+AB The present paper analyzes the institutional factors that have characterized the Argentine foreign exchange market throughout the post-convertibility era (2002-2017) and discusses their impact on the dynamics of the external sector. The revision of the different regulatory schemes adopted during this period, namely, the construction of the free and unified exchange market (2002-2011), the stage of foreign exchange controls (2012-2015), and the recent experience of financial deregulation (2016-2017), suggests that the structural reforms implemented by the new government have not reverted the tendency towards external imbalance observed since 2011. Indeed, such reforms have introduced larger systemic risks.
+C1 [David Feldman, German] Conicet Idaes Unsam, Av Pres Roque Saenz Pena 832,2o Piso,C1035AAQ, Buenos Aires, DF, Argentina.
+   [Formento, Alejandro] Univ Nacl Moreno, Derecho & Econ, Av Bartolome Mitre 1891,B1744OHC, Moreno, Buenos Aires, Argentina.
+RP Feldman, GD (reprint author), Conicet Idaes Unsam, Av Pres Roque Saenz Pena 832,2o Piso,C1035AAQ, Buenos Aires, DF, Argentina.
+EM gfeldman@unsam.edu.ar; alejandroformento2012@gmail.com
+OI Feldman, German David/0000-0003-1334-0103
+CR Braun O, 1973, COMERCIO INT IMPERIA
+   CANITROT A, 1975, DESARROLLO ECON, V15, P331, DOI 10.2307/3466477
+   De Gregorio J, 2012, ECON CHIL, V15, P90
+   Diamand M., 1985, CUADERNOS CTR ESTUDI, V1, P1
+   DIAMAND M, 1972, DESARROLLO ECON, V12, P25, DOI DOI 10.2307/3465991
+   Ho C., 2003, BIS WORKING PAPERS, V130
+   Hufner F, 2004, FOREIGN EXCHANGE INT
+   Mishkin F. S., 2001, 2684 WORLD BANK
+   PREBISCH R, 1986, DESARROLLO ECON, V26, P479, DOI 10.2307/3466824
+   Salter W.E.G., 1959, ECON REC, V35, P226, DOI DOI 10.1111/J.1475-4932.1959.TB00462.X
+   Sarno L, 2001, J ECON LIT, V39, P839, DOI 10.1257/jel.39.3.839
+   Tavares M. C., 2000, CELSO FURTADO BRASIL, P129
+   Thirlwall A. P., 1979, BANCA NAZ LAVO, V32, P45
+   Vernengo M., 2006, REV RADICAL POL ECON, V38, P551, DOI DOI 10.1177/0486613406293220
+   Wainer A, 2014, LAT AM RES REV, V49, P103, DOI 10.1353/lar.2014.0044
+NR 15
+TC 0
+Z9 0
+U1 0
+U2 0
+PU UNIV NAC COLOMBIA, FAC CIENCIAS ECONOMICAS, CUADERNOS ECONOMIA
+PI BOGOTA
+PA CARRERA 30 N 45-03., EDIFICIO 310, OFICINA 115, BOGOTA, 055051, COLOMBIA
+SN 0121-4772
+EI 2248-4337
+J9 CUAD ECON-BOGOTA
+JI Cuad. Econ.
+PD JUL-DEC
+PY 2019
+VL 38
+IS 77
+BP 631
+EP 654
+DI 10.15446/cuad.econ.v38n77.72127
+PG 24
+WC Economics
+SC Business & Economics
+GA IY8ET
+UT WOS:000486627600011
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Leon, C
+   Martinez, C
+   Cepeda, F
+AF Leon, Carlos
+   Martinez, Constanza
+   Cepeda, Freddy
+TI SHORT-TERM LIQUIDITY CONTAGION IN THE INTERBANK MARKET
+SO CUADERNOS DE ECONOMIA
+LA English
+DT Article
+DE Financial networks; contagion; default; liquidity; DebtRank
+ID SYSTEMIC RISK; TOPOLOGY
+AB We implement a modified version of DebtRank to recursively measure the contagion effects caused by the default of a selected financial institution. For this paper, contagion is a liquidity issue that is measured as the decrease in financial institutions' short-term liquidity position across the Colombian interbank network. We find that contagion negative effects are concentrated in a few financial institutions. However, as most of their impact is conditional on the occurrence of unlikely major widespread illiquidity events, and due to the subsidiary contribution of the interbank market to the local money market, their overall systemic importance is still to be confirmed.
+C1 [Leon, Carlos; Martinez, Constanza; Cepeda, Freddy] Banco Republ, Financial Infrastruct Oversight Dept, Bogota, Colombia.
+   [Leon, Carlos] Tilburg Univ, Cent Econ Res, NL-5000 LE Tilburg, Netherlands.
+RP Leon, C (reprint author), Banco Republ, Cerrera 7 14-7, Bogota, Colombia.
+EM cleonrin@banrep.gov.co; amartive@banrep.gov.co; fcepedlo@banrep.gov.co
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Banco de la Republica, 2015, REP SIST PAG
+   Basel Committee in Banking Supervision, 2013, BAS 3 LIQ COV RAT LI
+   Battiston S, 2016, STATIST RISK MODEL, V33, P117, DOI 10.1515/strm-2015-0005
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   BONACICH P, 1972, J MATH SOCIOL, V2, P113, DOI 10.1080/0022250X.1972.9989806
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brin S, 1998, COMPUT NETWORKS ISDN, V30, P107, DOI 10.1016/S0169-7552(98)00110-X
+   Capponi A., 2015, OPER RES, V64, P1121
+   Capponi A, 2015, REV ASSET PRICING ST, V5, P227, DOI 10.1093/rapstu/rav006
+   Capponi A, 2015, J ECON DYN CONTROL, V58, P152, DOI 10.1016/j.jedc.2015.06.008
+   Cepeda F., 2015, J FINANCIAL MARKET I, V3, P1
+   Cepeda F., 2008, BORRADORES EC, V513
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Furfine C., 1999, FINANCIAL MARKETS IN, V8, P24, DOI DOI 10.1111/1468-0416.00031
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Inaoka H., 2004, WORKING PAPER SERIES, V04- E04
+   Kleinberg J. M., 1998, P ACM SIAM S DISCR A
+   Leon C, 2018, J FINANC STABIL, V35, P75, DOI 10.1016/j.jfs.2016.10.008
+   León Carlos, 2016, Lect. Econ., V0, P91, DOI 10.17533/udea.le.n85a03
+   Leon C, 2014, J FINANC STABIL, V15, P241, DOI 10.1016/j.jfs.2014.10.006
+   Martinez C, 2015, J FINANC MARK INFRAS, V4, P21
+   Martinez- Jaramillo S., 2012, WORKING PAPERS, V2012-07
+   Muller J., 2006, J FINANCIAL SERVICES, V29, P37, DOI DOI 10.1007/S10693-005-5107-2
+   Newman M, 2010, NETWORKS INTRO
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Rogers L., 2013, MANAGE SCI, V59, P383
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Soramaki K, 2013, ECONOMICS-KIEL, V7, DOI 10.5018/economics-ejournal.ja.2013-28
+   Tabak B., 2013, WORKING PAPERS, V318
+   Thurner S, 2013, SCI REP-UK, V3, DOI 10.1038/srep01888
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 43
+TC 0
+Z9 0
+U1 0
+U2 2
+PU UNIV NAC COLOMBIA, FAC CIENCIAS ECONOMICAS, CUADERNOS ECONOMIA
+PI BOGOTA
+PA CARRERA 30 N 45-03., EDIFICIO 310, OFICINA 115, BOGOTA, 055051, COLOMBIA
+SN 0121-4772
+EI 2248-4337
+J9 CUAD ECON-BOGOTA
+JI Cuad. Econ.
+PD JAN-JUN
+PY 2019
+VL 38
+IS 76
+BP 51
+EP 80
+DI 10.15446/cuad.econ.v37n76.55758
+PG 30
+WC Economics
+SC Business & Economics
+GA HO1PO
+UT WOS:000460681700003
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Matkovskyy, R
+   Jalan, A
+AF Matkovskyy, Roman
+   Jalan, Akanksha
+TI From financial markets to Bitcoin markets: A fresh look at the contagion
+   effect
+SO FINANCE RESEARCH LETTERS
+LA English
+DT Article
+DE Financial markets; Bitcoin; Contagion; Regime switching skew-normal
+   model (RSSN)
+AB This article studies contagion effects between traditional financial markets, represented by five equity indices and the EUR, USD, GBP, and JPY centralized Bitcoin markets. We apply a regime switching skew-normal model of asset returns that distinguishes between linear and non-linear contagion and also structural breaks in the periods. We find significant contagion effects from financial to Bitcoin markets in terms of both correlation and co-skewness of market returns. Our results also indicate that during crisis periods, risk-averse investors tend to move away from risky Bitcoin markets towards safer financial markets.
+C1 [Matkovskyy, Roman; Jalan, Akanksha] Rennes Sch Business, Dept Finance & Accounting, 2 Rue Robert dArbrissel, F-35000 Rennes, France.
+RP Matkovskyy, R (reprint author), Rennes Sch Business, Dept Finance & Accounting, 2 Rue Robert dArbrissel, F-35000 Rennes, France.
+EM roman.matkovskyy@rennes-sb.com; akanksha.jalan@rennes-sb.com
+CR Back C., 2015, APPL ECON LETT, V22, P30
+   Bariviera AF, 2017, PHYSICA A, V484, P82, DOI 10.1016/j.physa.2017.04.159
+   Bouri E, 2017, ECONOMICS-KIEL, V11, DOI 10.5018/economics-ejournal.ja.2017-2
+   Chan JCC, 2019, STUD NONLINEAR DYN E, V23, DOI 10.1515/snde-2017-0001
+   Ciaian P, 2018, J INT FINANC MARK I, V52, P173, DOI 10.1016/j.intfin.2017.11.001
+   Corbet S., 2018, WORKING PAPER
+   Corbet S, 2018, ECON LETT, V172, P23, DOI 10.1016/j.econlet.2018.07.031
+   Corbet S, 2018, ECON LETT, V165, P28, DOI 10.1016/j.econlet.2018.01.004
+   Dyhrberg AH, 2016, FINANC RES LETT, V16, P85, DOI 10.1016/j.frl.2015.10.008
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Giudici P, 2019, FINANC RES LETT, V28, P309, DOI 10.1016/j.frl.2018.05.013
+   Hale G., 2018, FRBSF EC LETT, V2018-12
+   Kbehling G., 2018, FINANC RES LETT, DOI [10.2139/ssrn.3129624, DOI 10.2139/SSRN.3129624]
+   Koutmos D, 2018, ECON LETT, V173, P122, DOI 10.1016/j.econlet.2018.10.004
+   Matkovskyy R, 2019, Q REV ECON FINANC, V71, P270, DOI 10.1016/j.qref.2018.09.005
+   Sahu SK, 2003, CAN J STAT, V31, P129, DOI 10.2307/3316064
+   Urquhart A, 2016, ECON LETT, V148, P80, DOI 10.1016/j.econlet.2016.09.019
+NR 17
+TC 0
+Z9 0
+U1 1
+U2 1
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1544-6123
+EI 1544-6131
+J9 FINANC RES LETT
+JI Financ. Res. Lett.
+PD DEC
+PY 2019
+VL 31
+BP 93
+EP 97
+DI 10.1016/j.frl.2019.04.007
+PG 5
+WC Business, Finance
+SC Business & Economics
+GA JS9SX
+UT WOS:000500640600010
+DA 2019-12-27
+ER

@@ -1,0 +1,153 @@
+PT J
+AU Simaan, M
+   Gupta, A
+   Kar, K
+AF Simaan, Majeed
+   Gupta, Aparna
+   Kar, Koushik
+TI Filtering for risk assessment of interbank network
+SO EUROPEAN JOURNAL OF OPERATIONAL RESEARCH
+LA English
+DT Article
+DE OR in banking; Financial networks; Liquidity risk management; Systemic
+   risk; Hidden Markov models
+ID SYSTEMIC RISK; MARKET; CONTAGION; TOPOLOGY; DYNAMICS; MODEL
+AB Our paper contributes to the recent macroprudential policy addressing the resilience of financial systems in terms of their interconnectedness. We argue that beneath an interbank market, there is a fundamental latent network that affects the liquidity distributions among banks. To investigate the interbank market, we propose a framework that identifies such latent network using a statistical learning procedure. The framework reverse engineers overnight signals observed as banks conduct their reserve management on a daily basis. Our simulation-based results show that possible disruptions in funds supply are highly affected by the interconnectedness of the latent network. Hence, the proposed framework serves as an early warning system for regulators to monitor the overnight market and to detect ex-ante possible disruptions based on the inherent network characteristics. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Simaan, Majeed] Stevens Inst Technol, Sch Business, 1 Castle Point Terrace, Hoboken, NJ 07030 USA.
+   [Gupta, Aparna] Rensselaer Polytech Inst, Lally Sch Management, 110 8th St,Pittsburgh Bldg, Troy, NY 12180 USA.
+   [Gupta, Aparna] US Secur & Exchange Commiss, Div Econ & Risk Anal, 100 F St NE, Washington, DC 20549 USA.
+   [Kar, Koushik] Rensselaer Polytech Inst, Dept Elect Comp & Syst Engn, Jonsson Engn Ctr 6048, Troy, NY 12180 USA.
+RP Simaan, M (reprint author), Stevens Inst Technol, Sch Business, 1 Castle Point Terrace, Hoboken, NJ 07030 USA.
+EM msimaan@stevens.edu; guptaa@rpi.edu; koushik@ecse.rpi.edu
+OI Gupta, Aparna/0000-0002-5275-7756; Simaan, Majeed/0000-0002-7758-6965
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Adams Z, 2014, J FINANC QUANT ANAL, V49, P575, DOI 10.1017/S0022109014000325
+   Adrian T., 2011, TECHNICAL REPORT
+   Afonso G, 2015, ECONOMETRICA, V83, P263, DOI 10.3982/ECTA10586
+   Afonso G, 2011, J FINANC, V66, P1109, DOI 10.1111/j.1540-6261.2011.01670.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Bekiros S, 2017, EUR J OPER RES, V256, P945, DOI 10.1016/j.ejor.2016.06.052
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brunetti C., 2018, FINANCE EC DISCUSSIO, DOI [10.17016/FEDS.2018.063, DOI 10.17016/FEDS.2018.063]
+   Brunnermeier M. K., 2008, TECHNICAL REPORT
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Capponi A., 2015, OPERATIONS RES, V64
+   Castiglionesi F., 2017, TECHNICAL REPORT
+   Cordis AS, 2011, ECON LETT, V112, P198, DOI 10.1016/j.econlet.2011.05.005
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elton EJ, 2006, EUR FINANC MANAG, V12, P303, DOI 10.1111/j.1354-7798.2006.00322.x
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle Robert F., 1986, ECONOMET REV, V5, P1, DOI DOI 10.1080/07474938608800095
+   Furfine C., 1999, FINANCIAL MARKETS IN, V8, P24, DOI DOI 10.1111/1468-0416.00031
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gandy A, 2017, MANAGE SCI, V63, P4428, DOI 10.1287/mnsc.2016.2546
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Geraci M. V., 2017, J FINANCIAL QUANTITA
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Greene W., 2003, ECONOMETRIC ANAL
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   Heider F, 2015, J FINANC ECON, V118, P336, DOI 10.1016/j.jfineco.2015.07.002
+   HO TSY, 1985, J FINANC, V40, P977, DOI 10.1111/j.1540-6261.1985.tb05026.x
+   Kenett D. Y., 2015, MIND SOC, V14, P155, DOI DOI 10.1007/S11299-015-0167-Y
+   Leduc M., 2017, SYSTEMIC RISK MANAGE
+   Mankad S., 2017, P 3 INT WORKSH DAT S, P3
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Stiglitz J. E., 2010, TECHNICAL REPORT
+   Torri G, 2018, EUR J OPER RES, V270, P51, DOI 10.1016/j.ejor.2018.03.041
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 41
+TC 0
+Z9 0
+U1 17
+U2 17
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0377-2217
+EI 1872-6860
+J9 EUR J OPER RES
+JI Eur. J. Oper. Res.
+PD JAN
+PY 2020
+VL 280
+IS 1
+BP 279
+EP 294
+DI 10.1016/j.ejor.2019.06.049
+PG 16
+WC Management; Operations Research & Management Science
+SC Business & Economics; Operations Research & Management Science
+GA JC0VJ
+UT WOS:000488997600021
+DA 2019-12-27
+ER
+
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Feinstein, Z
+AF Feinstein, Zachary
+TI Capital regulation under price impacts and dynamic financial contagion
+SO EUROPEAN JOURNAL OF OPERATIONAL RESEARCH
+LA English
+DT Article
+DE Finance; Financial contagion; Fire sales; Risk-weighted assets; Stress
+   testing
+ID SYSTEMIC RISK; FIRE-SALES; OPTIMIZATION; LIQUIDATION
+AB We construct a continuous time model for price-mediated contagion precipitated by a common exogenous stress to the banking book of all firms in the financial system. In this setting, firms are constrained so as to satisfy a risk-weight based capital ratio requirement. We use this model to find analytical bounds on the risk-weights for assets as a function of the market liquidity. Under these appropriate risk-weights, we find existence and uniqueness for the joint system of firm behavior and the asset prices. We further consider an analytical bound on the firm liquidations, which allows us to construct exact formulas for stress testing the financial system with deterministic or random stresses. Numerical case studies are provided to demonstrate various implications of this model and analytical bounds. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Feinstein, Zachary] Stevens Inst Technol, Sch Business, Hoboken, NJ 07030 USA.
+RP Feinstein, Z (reprint author), Stevens Inst Technol, Sch Business, Hoboken, NJ 07030 USA.
+EM zfeinste@stevens.edu
+CR Amini H, 2016, OPER RES LETT, V44, P1, DOI 10.1016/j.orl.2015.10.005
+   Bichuch M, 2019, SIAM J FINANC MATH, V10, P68, DOI 10.1137/18M1195425
+   Braouezec Y, 2019, EUR J OPER RES, V274, P1180, DOI 10.1016/j.ejor.2018.11.012
+   Braouezec Y, 2018, REV FINANC, V22, P747, DOI 10.1093/rof/rfw067
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Capponi A, 2015, REV ASSET PRICING ST, V5, P227, DOI 10.1093/rapstu/rav006
+   Chen N, 2016, OPER RES, V64, P1089, DOI 10.1287/opre.2016.1497
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R., 2017, FIRE SALES INDIRECT
+   Cont R, 2016, MATH FINANC, V26, P835, DOI 10.1111/mafi.12071
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Feinstein Z., 2019, SIAM J FINANCIAL MAT
+   Feinstein Z, 2017, STATIST RISK MODEL, V34, P113, DOI 10.1515/strm-2015-0030
+   Feinstein Z, 2017, OPER RES LETT, V45, P109, DOI 10.1016/j.orl.2017.01.004
+   Gai P., 2010, BANK ENGLAND WORKING
+   Greenlaw D., 2012, STRESSED OUT MACROPR
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Weber S, 2017, PROBAB UNCERTAIN QUA, V2, DOI 10.1186/s41546-017-0020-9
+NR 20
+TC 0
+Z9 0
+U1 1
+U2 1
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0377-2217
+EI 1872-6860
+J9 EUR J OPER RES
+JI Eur. J. Oper. Res.
+PD MAR 1
+PY 2020
+VL 281
+IS 2
+BP 449
+EP 463
+DI 10.1016/j.ejor.2019.08.044
+PG 15
+WC Management; Operations Research & Management Science
+SC Business & Economics; Operations Research & Management Science
+GA JO5BC
+UT WOS:000497593000016
+DA 2019-12-27
+ER
+

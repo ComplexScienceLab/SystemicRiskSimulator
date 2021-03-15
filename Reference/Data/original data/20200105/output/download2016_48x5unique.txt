@@ -1,0 +1,466 @@
+
+PT J
+AU He, F
+   Chen, X
+AF He, Fang
+   Chen, Xi
+TI Credit networks and systemic risk of Chinese local financing platforms:
+   Too central or too big to fail? -based on different credit correlations
+   using hierarchical methods
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Chinese local financing platforms; Correlation networks; Systemic risk;
+   Credit similarity measure; Hierarchical methods
+ID ECONOMIC NETWORKS; COMPLEX NETWORKS; TOPOLOGY; MODEL; TAXONOMY; ECOLOGY;
+   FIRMS; LAW
+AB The accelerating accumulation and risk concentration of Chinese local financing platforms debts have attracted wide attention throughout the world. Due to the network of financial exposures among institutions, the failure of several platforms or regions of systemic importance will probably trigger systemic risk and destabilize the financial system. However, the complex network of credit relationships in Chinese local financing platforms at the state level remains unknown. To fill this gap, we presented the first complex networks and hierarchical cluster analysis of the credit market of Chinese local financing platforms using the "bottom up" method from firm-level data. Based on balance-sheet channel, we analyzed the topology and taxonomy by applying the analysis paradigm of subdominant ultra -metric space to an empirical data in 2013. It is remarked that we chose to extract the network of co-financed financing platforms in order to evaluate the effect of risk contagion from platforms to bank system. We used the new credit similarity measure by combining the factor of connectivity and size, to extract minimal spanning trees (MSTs) and hierarchical trees (HTs). We found that: (1) the degree distributions of credit correlation backbone structure of Chinese local financing platforms are fat tailed, and the structure is unstable with respect to targeted failures; (2) the backbone is highly hierarchical, and largely explained by the geographic region; (3) the credit correlation backbone structure based on connectivity and size is significantly heterogeneous; (4) key platforms and regions of systemic importance, and contagion path of systemic risk are obtained, which are contributed to preventing systemic risk and regional risk of Chinese local financing platforms and preserving financial stability under the framework of macro prudential supervision. Our approach of credit similarity measure provides a means of recognizing "systemically important" institutions and regions for a targeted policy with risk minimization which gives a flexible and comprehensive consideration to both aspects of "too big to fail" and "too central to fail". (C) 2016 The Author(s). Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license (http://creativecommons.orgilicenses/by-nc-nd/4.0/).
+C1 [He, Fang; Chen, Xi] Tongji Univ, Sch Econ & Management, Shanghai 200092, Peoples R China.
+RP Chen, X (reprint author), 1211 Tongji Bldg A,Siping Rd 1500, Shanghai 200092, Peoples R China.
+EM chenxi4731@sina.com
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71473179]; Peking University-Lincoln Institute Fund
+   [DS10-20150901-CX]
+FX We would like to thank the editor and anonymous reviewers for their
+   insightful comments that helped improve the paper. This work was
+   supported by the National Natural Science Foundation of China (Grant No.
+   71473179) and Peking University-Lincoln Institute Fund (Grant No.
+   DS10-20150901-CX). We are very grateful to SONG Rui, LI Yun, WANG Si-wei
+   and LIU Bing-yan for data collection.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Alstott J, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0085777
+   Amini H., 2010, STRESS TESTING RESIL
+   Ba S. S., 2010, FINANC MANAG RES, V8
+   Ba S. S., 2014, SW FINANC, V4, P3
+   Battiston S, 2007, J ECON DYN CONTROL, V31, P2061, DOI 10.1016/j.jedc.2007.01.004
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Battiston S, 2010, NETWORK SCIENCE: COMPLEXITY IN NATURE AND TECHNOLOGY, P131, DOI 10.1007/978-1-84996-396-1_7
+   Bernanke B., 2009, NATL MORTG NEWS, P1
+   Birch J., 2015, COMPUTATIONAL EC, V7, P1
+   Bonanno G, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.046130
+   Bonanno G, 2000, PHYS REV E, V62, pR7615, DOI 10.1103/PhysRevE.62.R7615
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Buldyrev SV, 2010, NATURE, V464, P1025, DOI 10.1038/nature08932
+   Caccioli F, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500580
+   Chan-Lau J. A., 2010, IMF WORKING PAPERS, V19, P355
+   Cohen R, 2001, PHYS REV LETT, V86, P3682, DOI 10.1103/PhysRevLett.86.3682
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   De Masi G., 2008, EVOL I EC REV, V7, P209
+   De Masi G., 2007, EMPIR ECON, V43, P1
+   De Masi G, 2007, NEW ECON WINDOWS, P159
+   Drehmann M., 2001, BIS Q REV
+   European Central Bank, 2010, FIN NETW FIN STAB SP
+   Everitt B., 2011, CLUSTER ANAL
+   Fujiwara Y, 2004, PHYSICA A, V337, P219, DOI 10.1016/j.physa.2004.01.037
+   Fujiwara Y, 2009, ECONOMICS-KIEL, V3
+   Gabaix X, 2003, NATURE, V423, P267, DOI 10.1038/nature01624
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Galbiati M, 2012, J ECON BEHAV ORGAN, V83, P609, DOI 10.1016/j.jebo.2012.05.013
+   Garlaschelli D, 2005, PHYSICA A, V350, P491, DOI 10.1016/j.physa.2004.11.040
+   Gatti DD, 2006, PHYSICA A, V370, P68, DOI 10.1016/j.physa.2006.04.115
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Huang XQ, 2013, SCI REP-UK, V3, DOI 10.1038/srep01219
+   [IMF BIS FSB], 2009, GUID ASS SYST IMP FI
+   International Monetary Fund, 2009, ASSESSING SYSTEMIC, P73
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2007, PHYSICA A, V376, P467, DOI 10.1016/j.physa.2006.10.053
+   Jang W, 2011, PHYSICA A, V390, P707, DOI 10.1016/j.physa.2010.10.028
+   Jiankui H., 2010, PHYS REV LETT, V105, P2673
+   Johnson N, 2011, NATURE, V469, P302, DOI 10.1038/469302a
+   Kruskal J.B., 1956, P AM MATH SOC, V7, P48, DOI [10.1090/S0002-9939-1956-0078686-7, DOI 10.1090/S0002-9939-1956-0078686-7]
+   Kwapien J, 2009, ACTA PHYS POL B, V40, P175
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Li SW, 2010, PHYSICA A, V389, P5587, DOI 10.1016/j.physa.2010.08.057
+   Liu K., 2009, J FINANC ECON, V07, P13
+   Liu Y. H., 2014, CHINESE J CONSTRUCTI, V2, P34, DOI DOI 10.3969/J.ISSN.1671-1238.2014.02.009
+   Liu Y. H., 2010, CHIN BANK, V6, P48
+   Mantegna R. N., 2010, INTRO ECONOPHYSICS C
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   Mizuno T, 2006, PHYSICA A, V364, P336, DOI 10.1016/j.physa.2005.08.079
+   Motter AE, 2002, PHYS REV E, V66, DOI 10.1103/PhysRevE.66.065102
+   Onnela JP, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.056110
+   Onnela JP, 2002, EUR PHYS J B, V30, P285, DOI 10.1140/epjb/e2002-00380-9
+   Papadimitriou T, 2013, PHYSICA A, V392, P4429, DOI 10.1016/j.physa.2013.05.013
+   Pastor-Satorras R, 2001, PHYS REV LETT, V86, P3200, DOI 10.1103/PhysRevLett.86.3200
+   PRIM RC, 1957, AT&T TECH J, V36, P1389, DOI 10.1002/j.1538-7305.1957.tb01515.x
+   Roukny T., 2013, SCI REP, V3, P759
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Sensoy A, 2013, PHYSICA A, V392, P5027, DOI 10.1016/j.physa.2013.06.046
+   Shen M. G., 2010, CHINA REFORM, V5, P38
+   Shi H. X., 2010, CHIN BANK, V3, P10
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Souma W, 2003, PHYSICA A, V324, P396, DOI [10.1016/S0378-4371(02)01858-7, 10.1016/S0378-4371(02)01859-7]
+   STIGLITZ J, 2003, NEW PARADIGM MONETAR
+   Watts D. J., 1999, SMALL WORLDS DYNAMIC
+   Wei J. N., 2010, CHINA FINANC, V16, P16
+   Xu C. G., 2010, NEW EC WKLY, V3, P17
+   Zhang Z. W., 2013, FINANC DEV REV, V10, P39
+   Zhou Q. R., 2011, CHINA MACH ELECT IND, V8, P28
+NR 71
+TC 5
+Z9 5
+U1 2
+U2 68
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD NOV 1
+PY 2016
+VL 461
+BP 158
+EP 170
+DI 10.1016/j.physa.2016.05.032
+PG 13
+WC Physics, Multidisciplinary
+SC Physics
+GA DS2LO
+UT WOS:000380601200016
+OA Other Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Peleckis, K
+AF Peleckis, Kestutis
+TI INTERNATIONAL BUSINESS NEGOTIATION STRATEGIES BASED ON BARGAINING POWER
+   ASSESSMENT: THE CASE OF ATTRACTING INVESTMENTS
+SO JOURNAL OF BUSINESS ECONOMICS AND MANAGEMENT
+LA English
+DT Article
+DE negotiations; bargaining power; atracting investment; bargaining power
+   assessment; strategic decisions; negotiation support
+ID MULTICRITERIA DECISION-MAKING; MATRIX GAMES; SEARCH; GAINS
+AB At present business solutions are used for development and implementation of negotiating strategies for international business, which are not universally suitable for business development in all situations in context of globalization, with current challenges, which are characterized by increasing risk, uncertainty and cultural differences. The purpose of the research is to provide a theoretical model for developing and implementing international business negotiation strategies, based on bargaining power assessment, as well as to conduct an experiment and test the suitability and adaptability of the developed model in an international business negotiation situation - in case of attracting investments. Research methods - scientific literature analysis, comparative, logical analysis and synthesis, comparative and generalisation methods, mathematical and statistic data analysis methods. According to the results, the developed model can be used to reinforce international business negotiations and electronic business negotiations, as an independent systemic unit of the negotiation process (a measure that is autonomous or requires only partial intervention of the negotiator).
+C1 [Peleckis, Kestutis] Vilnius Gediminas Tech Univ, Dept Int Econ & Business Management, Sauletekio Al 11, LT-10223 Vilnius, Lithuania.
+RP Peleckis, K (reprint author), Vilnius Gediminas Tech Univ, Dept Int Econ & Business Management, Sauletekio Al 11, LT-10223 Vilnius, Lithuania.
+EM k.peleckis@vgtu.lt
+CR Alexander P. G., 2012, EMERG MARK REV, V13, P210
+   Apynis A., 2007, LOSIMU TEORIJA
+   Azar OH, 2014, J BUS RES, V67, P1744, DOI 10.1016/j.jbusres.2014.02.021
+   Bivainis J., 2011, VADYBA STUDENTAMS MO
+   Cevikel AC, 2010, COMPUT MATH APPL, V60, P399, DOI 10.1016/j.camwa.2010.04.020
+   Chang YH, 2011, APPL MATH COMPUT, V218, P4075, DOI 10.1016/j.amc.2011.09.032
+   Ehtamo H, 2001, EUR J OPER RES, V130, P54, DOI 10.1016/S0377-2217(00)00019-9
+   Ginevicius R, 2014, PROCD SOC BEHV, V110, P952, DOI 10.1016/j.sbspro.2013.12.941
+   GINEVICIUS R, 2008, VERSLAS TEORIJA IR P, V9, P73, DOI DOI 10.3846/1648-0627.2008.9.73-80
+   GINEVICIUS R, 2008, VERSLAS TEORIJA IR P, V9, P81, DOI DOI 10.3846/1648-0627.2008.9.81-87
+   Ginevicius R, 2008, J CIV ENG MANAG, V14, P217, DOI 10.3846/1392-3730.2008.14.20
+   Kersuliene V., 2008, THESIS
+   Krishtal I., 2015, PROCEDIA SOCIAL BEHA, V166, P127
+   Lourenzutti R, 2014, EXPERT SYST APPL, V41, P4414, DOI 10.1016/j.eswa.2014.01.015
+   Lova A, 2000, EUR J OPER RES, V127, P408, DOI 10.1016/S0377-2217(99)00490-7
+   Mandow L, 2003, EUR J OPER RES, V150, P253, DOI 10.1016/S0377-2217(02)00517-9
+   Ramos JMM, 2010, EXPERT SYST APPL, V37, P3962, DOI 10.1016/j.eswa.2009.11.019
+   Panda A, 2014, APPL MATH COMPUT, V237, P411, DOI 10.1016/j.amc.2014.03.017
+   Pena J, 2014, J THEOR BIOL, V346, P23, DOI 10.1016/j.jtbi.2013.12.016
+   Simelyte A, 2014, INZ EKON, V25, P177, DOI 10.5755/j01.ee.25.2.4263
+   Soboleva Y. P., 2015, PROCEDIA EC FINANCE, V24, P666
+   Stewart TJ, 2013, OMEGA-INT J MANAGE S, V41, P679, DOI 10.1016/j.omega.2012.09.003
+   Tamosiunas L., 2011, THESIS
+   Tvaronaviciene M., 2011, J SECURITY SUSTAINAB, V1, P27
+   Wibowo S, 2013, COMPUT IND ENG, V66, P625, DOI 10.1016/j.cie.2013.09.015
+   Xu Y, 2012, KNOWL-BASED SYST, V32, P56, DOI 10.1016/j.knosys.2011.08.019
+   Zavadskas E. K., 2004, LOSIMU TEORIJA STATY
+   Zilinskas K., 2007, MATEMATINIS PROGRAMA
+NR 28
+TC 3
+Z9 3
+U1 0
+U2 21
+PU VILNIUS GEDIMINAS TECH UNIV
+PI VILNIUS
+PA SAULETEKIO AL 11, VILNIUS, LT-10223, LITHUANIA
+SN 1611-1699
+EI 2029-4433
+J9 J BUS ECON MANAG
+JI J. Bus. Econ. Manag.
+PD DEC
+PY 2016
+VL 17
+IS 6
+BP 882
+EP 900
+DI 10.3846/16111699.2016.1233511
+PG 19
+WC Business; Economics
+SC Business & Economics
+GA EJ3BJ
+UT WOS:000393085500004
+OA Other Gold, Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Leon, C
+   Machado, C
+   Murcia, A
+AF Leon, Carlos
+   Machado, Clara
+   Murcia, Andres
+TI ASSESSING SYSTEMIC IMPORTANCE WITH A FUZZY LOGIC INFERENCE SYSTEM
+SO INTELLIGENT SYSTEMS IN ACCOUNTING FINANCE & MANAGEMENT
+LA English
+DT Article
+DE financial stability; fuzzy logic; macroprudential; systemic importance;
+   systemic risk
+AB Three metrics are designed to assess Colombian financial institutions' size, connectedness and non-substitutability as the main drivers of systemic importance: (i) centrality as net borrower in the money market network; (ii) centrality as payments originator in the large-value payment system network; and (iii) asset value of core financial services. An aggregated systemic importance index is calculated based on expert knowledge by using a fuzzy logic inference system. We use principal component analysis to calculate a benchmark index for comparison purposes. Overall similarities between both indexes put forward that expert knowledge aggregation is consistent with that based on a purely quantitative standard approach. Specific non-negligible differences concur with the nonlinear features of an approach whose intention is to replicate human reasoning. Both indexes are complementary and provide a comprehensive relative assessment of each financial institution's systemic importance in the Colombian case, in which the choice of metrics pursues the macroprudential perspective of financial stability. Copyright (C) 2015 John Wiley & Sons, Ltd.
+C1 [Leon, Carlos; Machado, Clara; Murcia, Andres] Cent Bank Colombia, Monetary & Int Investment Div, Banco Republ, Bogota, Colombia.
+   [Leon, Carlos] Tilburg Univ, CentER, Tilburg, Netherlands.
+   [Murcia, Andres] Bank Int Settlements, Representat Off Amer, Mexico City, DF, Mexico.
+RP Leon, C (reprint author), Banco Republ, Monetary & Int Investment Div, Bogota, Colombia.
+EM cleonrin@banrep.gov.co
+RI Murcia, Andres/Q-8502-2019
+OI Murcia, Andres/0000-0002-3622-3754; Leon, Carlos/0000-0001-5357-0216
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2008, CORPORATE GOVERNANCE
+   Andriani P, 2009, ORGAN SCI, V20, P1053, DOI 10.1287/orsc.1090.0481
+   [Anonymous], 2013, GLOB SYST IMP BANKS
+   BAK P, 1996, NATURE WORKS
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Barabasi Albert-LaszloA., 2003, LINKED
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   Bech M, 2006, 239 FED RES BANK NEW
+   Bjelland J, 2008, TELEKTRONIKK, V1, P95
+   Bojadziev G., 2007, FUZZY LOGIC BUSINESS
+   BONACICH P, 1972, J MATH SOCIOL, V2, P113, DOI 10.1080/0022250X.1972.9989806
+   Borio C., 2003, BIS WORKING PAPERS
+   Bundesbank, 1999, BUND METH ASS CRED B
+   Campbell John Y., 1997, ECONOMETRICS FINANCI
+   Cardozo P, 2011, BORRADORES EC
+   Casti J., 1979, CONNECTIVITY COMPLEX
+   Cepeda F., 2008, BORRADORES EC
+   Chan-Lau J., 2010, WP10107 IMF
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   COMM. PAYMENT & SETTLEMENT SYSTEMS BANK FOR INT'L SETTLEMENTS, 2012, PRINC FIN MARK INFR
+   Condamin L., 2006, RISK QUANTIFICATION
+   Cook S., 2013, ECONOMICS-KIEL, V7, P2013
+   COX E, 1994, FUZZY SYSTEMS HDB
+   Cruz MG, 2002, MODELING MEASURING H
+   Dorogovtsev SN, 2002, PHYS REV E, V65, DOI 10.1103/PhysRevE.65.066122
+   Dowd K, 2005, MEASURING MARKET RIS
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Dudley WC., 2012, HARV LAW SCH S BUILD
+   European Central Bank, 2010, FINANCIAL STABILITY
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   French KR, 2010, SQUAM LAKE REPORT: FIXING THE FINANCIAL SYSTEM, P1
+   GALLATI RR, 2003, RISK MANAGEMENT CAPI
+   Garrat R, 2011, WORKING PAPER
+   Geneva Report by, 2009, FUNDAMENTAL PRINCIPL, V11
+   Haining R., 2004, SPATIAL DATA ANAL
+   Haldane A, 2009, COMMUNICATION    APR
+   Howard A, 2002, TSI PRESS S, V14, P579, DOI 10.1109/WAC.2002.1049499
+   Howard A, 2001, IEEE INT CONF ROBOT, P3067, DOI 10.1109/ROBOT.2001.933088
+   Howard A, 2000, 3 INT S INT AUT CONT
+   Hurlin C, 2013, FIN20131005 HEC
+   Inaoka H., 2004, BANK JAPAN WORKING P
+   International Monetary Fund Bank for International Settlements Financial Stability Board, 2009, GUID ASS SYST IMP FI
+   Kleinberg JM., 1998, P 9 ANN ACM SIAM S D, P668
+   Klir G. J., 1995, FUZZY SETS FUZZY LOG
+   Kodres L., 2009, WORLD BANK BANC ESP
+   Kolaczyk ED, 2009, SPRINGER SER STAT, P1, DOI 10.1007/978-0-387-88146-1_1
+   Krugman P., 1996, SELF ORGANIZING EC
+   Kyriakopoulos F, 2009, EUR PHYS J B, V71, P523, DOI 10.1140/epjb/e2009-00255-7
+   Leon C, 2014, J FINANCIAL MARKET I, V2, P67
+   Leon C, 2012, SCI MONOGRAPHS, P267
+   Leon C., 2013, J FINANC MARK INFRAS, V1, P77
+   Leon C, 2013, ODEON, V7, P125
+   Leon C, 2014, J FINANC STABIL, V15, P241, DOI 10.1016/j.jfs.2014.10.006
+   Mandelbrot B., 2004, MIS BEHAV MARKETS
+   Manning M., 2009, EC LARGE VALUE PAYME
+   Martinez C, 2016, J FINANC STABIL, V25, P193, DOI 10.1016/j.jfs.2015.10.003
+   McNeil AJ, 2005, PRINC SER FINANC, P1
+   McNeill MF, 1994, FUZZY LOGIC PRACTICA
+   Mezei J, 2014, ARXIV14125452
+   Newman M., 2010, NETWORKS
+   Newman MEJ, 2003, SIAM REV, V45, P167, DOI 10.1137/S003614450342480
+   Norman B, 2009, J PAYMENTS STRATEGY, V3, P267
+   otker-Robe I, 2011, 1112 IMF
+   Peak D., 1994, CHAOS CONTROL ART SC
+   Rebonato R, 2007, PLIGHT OF THE FORTUNE TELLERS: WHY WE NEED TO MANAGE FINANCIAL RISK DIFFERENTLY, P1
+   Reveiz A, 2010, J FINANCIAL TRANSFOR, V30, P141
+   Saunders A, 2009, RESTORING FINANCIAL
+   Seraji H., 2000, J ROBOTIC SYST, V17, P2006
+   Serrano N, 2007, IEEE INT CONF ROBOT, P4899, DOI 10.1109/ROBOT.2007.364234
+   Sivanandam S.N., 2007, INTRO FUZZY LOGIC US
+   Smith DJ, 2011, FINANC ANAL J, V67, P15, DOI 10.2469/faj.v67.n5.2
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Stein Jeremy C, 2013, FED RES BANK NEW YOR
+   Straffin PD., 1980, MATH MAG, V5, P269
+   Strogatz S., 2003, SYNC ORDER EMERGES C
+   Taleb N.N, 2007, BLACK SWAN
+   Tucker P., 2005, FINANCIAL STABILITY, P73
+   Tumpel-Gugerell G., 2009, RECENT ADV MODELING
+   Tunstel E, 2001, INTELLIGENT CONTROL
+   ZADEH LA, 1965, INFORM CONTROL, V8, P338, DOI 10.1016/S0019-9958(65)90241-X
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 82
+TC 5
+Z9 5
+U1 0
+U2 1
+PU JOHN WILEY & SONS LTD
+PI CHICHESTER
+PA THE ATRIUM, SOUTHERN GATE, CHICHESTER PO19 8SQ, W SUSSEX, ENGLAND
+SN 1055-615X
+EI 1099-1174
+J9 INTELL SYST ACCOUNT
+JI Intell. Syst. Account. Financ. Manag.
+PD JAN-JUN
+PY 2016
+VL 23
+IS 1-2
+SI SI
+BP 121
+EP 153
+DI 10.1002/isaf.1371
+PG 33
+WC Business, Finance
+SC Business & Economics
+GA FF9RN
+UT WOS:000409354800008
+DA 2019-12-28
+ER
+
+PT J
+AU Berger, D
+   Pukthuanthong, K
+AF Berger, Dave
+   Pukthuanthong, Kuntara
+TI Fragility, stress, and market returns
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Financial crises; Systemic risk; Market stress
+AB We propose a novel risk measure that relates to subsequent negative conditional stock market returns. Our risk measure considers both the fragility and stress of the market. Fragility is measured by the Fragility Index developed by Berger and Pukthuanthong (2012) and market stress is based on several economic variables. Results show that incorporating both market stress and fragility improves the information content of a risk measure. Our risk measure relates to poor subsequent monthly market returns. We show the risk measure contains predictive information in a purely ex-ante specification. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Berger, Dave] Oregon State Univ, Coll Business, Corvallis, OR 97331 USA.
+   [Pukthuanthong, Kuntara] Univ Missouri, Robert J Trulaske Sr Coll Business, Columbia, MO 65211 USA.
+RP Berger, D (reprint author), Oregon State Univ, Coll Business, Corvallis, OR 97331 USA.
+EM dave.berger@bus.oregonstate.edu; pukthuanthongk@missouri.edu
+FU Oregon State University College of Business
+FX Berger thanks the Oregon State University College of Business for a
+   summer research grant supporting this project.
+CR Andersen TG, 2001, J FINANC ECON, V61, P43, DOI 10.1016/S0304-405X(01)00055-1
+   Andersen TG, 2003, ECONOMETRICA, V71, P579, DOI 10.1111/1468-0262.00418
+   Aruoba SB, 2010, AM ECON REV, V100, P20, DOI 10.1257/aer.100.2.20
+   Baron M., 2014, WORKING PAPER
+   Berger D, 2012, J FINANC ECON, V105, P565, DOI 10.1016/j.jfineco.2012.03.009
+   Brandt MW, 1999, J FINANC, V54, P1609, DOI 10.1111/0022-1082.00162
+   CHEN NF, 1986, J BUS, V59, P383, DOI 10.1086/296344
+   Christiansen C, 2009, J BANK FINANC, V33, P1048, DOI 10.1016/j.jbankfin.2008.10.014
+   FAMA EF, 1989, J FINANC ECON, V25, P23, DOI 10.1016/0304-405X(89)90095-0
+   Gennaioli N, 2012, J FINANC ECON, V104, P452, DOI 10.1016/j.jfineco.2011.05.005
+   Gennaioli N, 2010, Q J ECON, V125, P1399, DOI 10.1162/qjec.2010.125.4.1399
+   Giglio S., 2012, SYSTEMIC RISK MACROE
+   Hakkio C.S., 2009, ECON REV, V2, P5
+   JOBSON JD, 1981, J FINANC, V36, P889, DOI 10.1111/j.1540-6261.1981.tb04891.x
+   Kim JB, 2011, J FINANC ECON, V100, P639, DOI 10.1016/j.jfineco.2010.07.007
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P112, DOI 10.3905/jpm.2011.37.4.112
+   Kritzman M, 2010, FINANC ANAL J, V66, P30, DOI 10.2469/faj.v66.n5.3
+   KUMAR M, 2003, J EMPIR FINANC, V10, P427, DOI DOI 10.1016/S0927-5398(02)00068-3
+   Ledoit O, 2008, J EMPIR FINANC, V15, P850, DOI 10.1016/j.jempfin.2008.03.002
+   Markwat T, 2009, J BANK FINANC, V33, P1996, DOI 10.1016/j.jbankfin.2009.05.008
+   Memmel C., 2003, FINANCE LETT, V1, P21
+   Phillips B, 2011, WISDOM CROWDS MUTUAL
+   POTERBA JM, 1986, AM ECON REV, V76, P1142
+   Pukthuanthong K, 2009, J FINANC ECON, V94, P214, DOI 10.1016/j.jfineco.2008.12.004
+NR 24
+TC 2
+Z9 2
+U1 0
+U2 15
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JAN
+PY 2016
+VL 62
+BP 152
+EP 163
+DI 10.1016/j.jbankfin.2015.11.003
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA CZ5EB
+UT WOS:000367124200011
+DA 2019-12-28
+ER
+
+PT J
+AU Admati, AR
+AF Admati, Anat R.
+TI THE MISSED OPPORTUNITY AND CHALLENGE OF CAPITAL REGULATION
+SO NATIONAL INSTITUTE ECONOMIC REVIEW
+LA English
+DT Article
+DE Banking regulation; capital regulations; banking; equity in banking;
+   capital structure; leverage; agency costs; leverage ratchet effect;
+   Basel; risk weights; TLAC
+AB Capital regulation is critical to address distortions and externalities from intense conflicts of interest in banking and from the failure of markets to counter incentives for recklessness. The approaches to capital regulation in Basel III and related proposals are based on flawed analyses of the relevant tradeoffs. The flaws in the regulations include dangerously low equity levels, a complex and problematic system of risk weights that exacerbates systemic risk and adds distortions, and unnecessary reliance on poor equity substitutes. The underlying problem is a breakdown of governance and lack of accountability to the public throughout the system, including policymakers and economists.
+C1 [Admati, Anat R.] Stanford Univ, Grad Sch Business, Stanford, CA 94305 USA.
+RP Admati, AR (reprint author), Stanford Univ, Grad Sch Business, Stanford, CA 94305 USA.
+EM admati@stanford.edu
+CR Admati A., 2013, WORKING PAPER
+   Admati A., 2015, WORKING PAPER
+   Admati A. R., 2013, BANKERS NEW CLOTHES
+   Admati Anat R., 2010, FINANCIAL TIMES
+   Advisory Scientific Committee, 2014, IS EUR OV
+   Bair S., 2012, BULL HORNS FIGHTING
+   Blundell-Wignall A., 2009, OECD J FINANCIAL MAR, V2, P11
+   Brooke Martin, 2015, 35 BANK ENGL
+   Brunnermeier MK, 2013, J FINANC, V68, P483, DOI 10.1111/jofi.12005
+   Carmassi J., 2014, WORKING PAPER
+   Dowd K, 2015, NO STRESS FLAWS BANK
+   Haldane A., 2011, COMMUNICATION
+   Haldane Andrew G., 2012, FED RES BANK KANS CI
+   Hansen L.P., 2013, 2012012 B FRIEDM I R
+   Heffernan M., 2012, WILLFULL BLINDNESSS
+   Hellwig M.F., 2014, OCCASIONAL SERIES, V12-7, P42
+   Hellwig Martin, 2010, 201031 M PLANCK I RE
+   Hoenig T., 2013, COMMUNICATION
+   Huizinga H, 2012, J FINANC ECON, V106, P614, DOI 10.1016/j.jfineco.2012.06.008
+   Kay J., 2015, OTHER PEOPLES MONEY
+   Kerr G., 2011, WORKING PAPER
+   Luyendijk J, 2015, SWIMMING SHARKS MY J
+   McMillan J, 2014, END BANKING MONEY CR
+   Pfleiderer P., 2014, WORKING PAPER
+   Pfleiderer P., 2015, WORKING PAPER
+   Shah A., 2015, WORKING PAPER
+   Skeel DA, 2012, COLUMBIA LAW REV, V112, P152
+   Turner JD, 2014, CAMB STUD ECON HIST, P1, DOI 10.1017/CBO9781139380874
+   Wilmarth A.E., 2015, GEORGIA LAW REV
+NR 29
+TC 10
+Z9 10
+U1 0
+U2 8
+PU SAGE PUBLICATIONS LTD
+PI LONDON
+PA 1 OLIVERS YARD, 55 CITY ROAD, LONDON EC1Y 1SP, ENGLAND
+SN 0027-9501
+EI 1741-3036
+J9 NATL INST ECON REV
+JI Natl. Inst. Econ. Rev.
+PD FEB
+PY 2016
+VL 235
+IS 1
+BP R4
+EP R14
+DI 10.1177/002795011623500110
+PG 11
+WC Economics
+SC Business & Economics
+GA DG5GI
+UT WOS:000372104400007
+DA 2019-12-28
+ER

@@ -1,0 +1,448 @@
+
+PT J
+AU Meegan, A
+   Corbet, S
+   Larkin, C
+AF Meegan, Andrew
+   Corbet, Shaen
+   Larkin, Charles
+TI Financial market spillovers during the quantitative easing programmes of
+   the global financial crisis (2007-2009) and the European debt crisis
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Financial contagion; Global financial crisis; Quantitative easing;
+   Volatility: EU monetary policy
+ID UNCONVENTIONAL MONETARY-POLICY; BACKED COMMERCIAL PAPER; CONTAGION;
+   INTERDEPENDENCE; INTEGRATION; VOLATILITY; CURRENCY; IMPACT; US
+AB During the recent international global financial and European debt crises, quantitative easing (QE) programmes were implemented, as the last line of defence, to mitigate the intensifying risks of system-wide financial collapse in a host of sovereign states. It has been widely identified that the multiple, and somewhat veiled, side-effects of such actions necessitate further research. We specifically investigate financial market spillovers that took place during the QE programmes of three central banks, namely: the US Federal Reserve, the Bank of England and the European Central Bank. We find evidence of significant idiosyncratic contagion transfer to a number of international financial markets, during each of the three respective QE programmes. The most significant contagion is found to be generated during the United States QE period, primarily with Western European financial markets. Strong internal and international idiosyncratic contagion is observed during the European QE programme. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Meegan, Andrew; Corbet, Shaen] Dublin City Univ, DCU Business Sch, Dublin 9, Ireland.
+   [Larkin, Charles] Trinity Coll Dublin, Trinity Business Sch, Aras Phiarsaigh, Dublin 2, Ireland.
+RP Corbet, S (reprint author), Dublin City Univ, DCU Business Sch, Dublin 9, Ireland.
+EM shaen.corbet@dcu.ie
+RI Larkin, Charles/AAE-7322-2019; Corbet, Shaen/B-4869-2017
+OI Larkin, Charles/0000-0002-0352-2504; Corbet, Shaen/0000-0001-7430-7417
+CR Acharya VV, 2010, IMF ECON REV, V58, P37, DOI 10.1057/imfer.2010.4
+   Alper C. E., 2004, EC SYSTEMS, V28, P353
+   Auer R., 2015, SNB Q B, V2015, pQ2
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bagus P, 2009, ECON AFFA, V29, P46, DOI 10.1111/j.1468-0270.2009.01893.x
+   Barroso JBRB, 2016, J INT MONEY FINANC, V67, P102, DOI 10.1016/j.jimonfin.2015.06.013
+   Baur DG, 2012, J BANK FINANC, V36, P2680, DOI 10.1016/j.jbankfin.2011.05.019
+   Beirne J., 2009, VOLATILITY SPILLOVER
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Benford J., 2009, BANK ENGLAND Q B, VQ2, P90
+   Blinder AS, 2010, FED RESERVE BANK ST, V92, P465
+   Breedon F, 2012, OXFORD REV ECON POL, V28, P702, DOI 10.1093/oxrep/grs033
+   Chen QY, 2016, J INT MONEY FINANC, V67, P62, DOI 10.1016/j.jimonfin.2015.06.011
+   Chiang MH, 2011, J ECONOMETRICS, V165, P175, DOI 10.1016/j.jeconom.2011.07.004
+   Cho D, 2014, SINGAP ECON REV, V59, DOI 10.1142/S0217590814500180
+   Christensen JHE, 2012, ECON J, V122, pF385, DOI 10.1111/j.1468-0297.2012.02554.x
+   Claessens S, 2010, ECON POLICY, P267
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Covitz D, 2013, J FINANC, V68, P815, DOI 10.1111/jofi.12023
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Dungey M, 2015, J BANK FINANC, V60, P271, DOI 10.1016/j.jbankfin.2015.08.007
+   Edwards S., 1998, W6756 NAT BUR EC RES
+   ENGLE RF, 1990, ECONOMETRICA, V58, P525, DOI 10.2307/2938189
+   Fawley BW, 2013, FED RESERVE BANK ST, V95, P51
+   Forbes K. J., 2001, INT FINANCIAL CONTAG, P43, DOI DOI 10.1007/978-1-4757-3314-3_
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Fratzscher M., 2012, WORKING PAPER
+   Fratzscher M, 2018, ECON J, V128, P330, DOI 10.1111/ecoj.12435
+   Gravelle T, 2006, J INT ECON, V68, P409, DOI 10.1016/j.jinteco.2005.07.005
+   Guiso L, 2004, ECON POLICY, P524
+   Habib M. M., 2013, 1609 ECB
+   Habib MM, 2012, J INT ECON, V87, P50, DOI 10.1016/j.jinteco.2011.12.005
+   Joyce M, 2012, ECON J, V122, pF271, DOI 10.1111/j.1468-0297.2012.02551.x
+   Joyce MAS, 2011, INT J CENT BANK, V7, P113
+   Kamil H., 2010, 102 INT MON FUND
+   KIMURA T, 2006, TOPICS MACROECONOMIC, V6, P1
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Krishnamurthy A., 2011, W17555 NAT BUR EC RE
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Lavigne R., 2014, BANK CANADA REV, P23
+   Lim J. J., 2014, 6820 WORLD BANK
+   Lyonnet V, 2012, INT REV FINANC ANAL, V25, P94, DOI 10.1016/j.irfa.2012.08.001
+   Marais E., 2006, INT FINANCIAL MARKET, V16, P468
+   Martin C, 2012, OXFORD REV ECON POL, V28, P750, DOI 10.1093/oxrep/grs029
+   Masson P, 1999, J INT MONEY FINANC, V18, P587, DOI 10.1016/S0261-5606(99)00016-9
+   McCauley R. N., 2012, BIS Q REV
+   Mishkin FS, 2011, J ECON PERSPECT, V25, P49, DOI 10.1257/jep.25.1.49
+   MURINDE V, 2004, REV INT ECON, V12, P693, DOI DOI 10.1111/J.1467-9396.2004.00476.X
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Ugai Hiroshi, 2007, MONETARY EC STUDIES, V25, P1
+   Weill L., 2009, J INT FINANC MARK I, V19, P818, DOI DOI 10.1016/J.INTFIN.2009.05.002
+   World Bank, 2015, WORLD BANK ANN REP
+NR 54
+TC 3
+Z9 3
+U1 1
+U2 12
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD SEP
+PY 2018
+VL 56
+BP 128
+EP 148
+DI 10.1016/j.intfin.2018.02.010
+PG 21
+WC Business, Finance; Economics
+SC Business & Economics
+GA GT9RW
+UT WOS:000444883300008
+DA 2019-12-27
+ER
+
+PT J
+AU Vehel, JL
+AF Vehel, J. Levy
+TI A simple isochore model evidencing regulation risk
+SO ANNALS OF ACTUARIAL SCIENCE
+LA English
+DT Article
+DE Regulation and systemic risk; Value at risk; Heavy-tailed processes
+ID PRICES
+AB In this note, we provide a simple example of regulation risk. The idea is that, in certain situations, the very prudential rules (or, rather, some of them) imposed by the regulator in the framework of the Basel II/III Accords or Solvency II directive are themselves the source of a systemic risk. The instance of regulation risk that we bring to light in this work can be summarised as follows: wrongly assuming that prices evolve in a continuous fashion when they may in fact display large negative jumps, and trying to minimise Value at Risk (VaR) under a constraint of minimal volume of activity leads in effect to behaviours that will maximise VaR. Although much stylised, our analysis highlights some pitfalls of model-based regulation.
+C1 [Vehel, J. Levy] Univ Nantes, INRIA Rennes, Anja Team, Lab Math Jean Leray, 2 Rue Houssiniere, F-44000 Nantes, France.
+RP Vehel, JL (reprint author), Univ Nantes, INRIA Rennes, Anja Team, Lab Math Jean Leray, 2 Rue Houssiniere, F-44000 Nantes, France.
+EM jacques.levy-vehel@inria.fr
+FU SMABTP
+FX The author is grateful to SMABTP for financial support. This work has
+   benefited from many stimulating exchanges of ideas with P. Desurmont, O.
+   Le Courtois, H. Rodarie and C. Walter.
+CR Aggarwal A, 2016, BRIT ACTUAR J, V21, P229, DOI 10.1017/S1357321715000276
+   Al-Darwish A., 2011, 11187 IMF
+   Bank of England, DISC PAP BANK ENGL P
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Bayraktar E, 2006, MATH OPER RES, V31, P789, DOI 10.1287/moor.1060.0202
+   BIS, 2014, BIS Q REV
+   Borio C., 2014, COMMUNICATION
+   Carr P, 2002, J BUS, V75, P305, DOI 10.1086/338705
+   Carr P., 2002, J FINANCE, VLVIII
+   Danelsson J., 2001, 394 LOND SCH EC FIN
+   Danelsson J., 2001, 393 LOND SCH EC FIN
+   Danielsson J., 2001, 130 LOND SCH EC FIN
+   Danielsson J., 2013, QUANTIFYING SYSTEMIC, P73
+   El Mekeddem H., 2013, 30 INT FRENCH FIN AS
+   Embrechts P., 1999, RISK MANAGEMENT VALU, P176
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   International Actuarial Association (IAA), 2010, IAA PAP
+   Khindanova I, 2001, MATH COMPUT MODEL, V34, P1223, DOI 10.1016/S0895-7177(01)00129-7
+   LeCourtois O, 2014, SER QUANT FINANC, V5, P1, DOI 10.1142/p907
+   Levy Vehel J., 2014, 49 ACT RES C SANT BA
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   MITTNIK S.R.S., 2002, ALLGEMEINES STAT ARC, V86, P53
+   Miyahara Y., 2009, RECENT ADV FINANCIAL, P119
+   Popovalina I., 1998, J DERIVATIVES, V5
+   Samorodnitsky G., 1994, STABLE NONGAUSSIAN R
+   Sato K.-i, 1999, LEVY PROCESSES INFIN
+   Sy W., 2006, COHERENCE VAR RISK M
+   Zhu L., 2010, N AM ACTUARIAL J, V16, P350
+NR 28
+TC 0
+Z9 0
+U1 0
+U2 0
+PU CAMBRIDGE UNIV PRESS
+PI CAMBRIDGE
+PA EDINBURGH BLDG, SHAFTESBURY RD, CB2 8RU CAMBRIDGE, ENGLAND
+SN 1748-4995
+EI 1748-5002
+J9 ANN ACTUAR SCI
+JI Ann. Actuar. Sci.
+PD SEP
+PY 2018
+VL 12
+IS 2
+BP 233
+EP 248
+DI 10.1017/S174849951800009X
+PG 16
+WC Economics
+SC Business & Economics
+GA GQ2BA
+UT WOS:000441448200004
+DA 2019-12-28
+ER
+
+PT J
+AU Lakstutiene, A
+   Barkauskaite, A
+   Witkowska, J
+AF Lakstutiene, Ausrine
+   Barkauskaite, Aida
+   Witkowska, Justyna
+TI The importance of systemic risk assessment in a risk-based common
+   European Union deposit insurance system: case of Lithuania
+SO ECONOMIC RESEARCH-EKONOMSKA ISTRAZIVANJA
+LA English
+DT Article
+DE Deposit insurance; risk-based; systemic risk
+ID OWNERSHIP; COVERAGE; CRISIS
+AB The financial crisis has shown that the deposit insurance system did not help to maintain depositors' confidence and financial stability for the whole banking sector. In order to ensure equal protection to depositors in all European Union countries, the European Commission presented the common European Union risk-based deposit insurance system model in 2015. In this model, the individual risk of each bank should be measured. However, there are discussions in scientific literature that the amount of systemic risk of the banks should be measured. In the current economy it is very important to measure the arising amount of systemic risk in the banking sector, but even the new E.U. common deposit insurance system model of 2015 does not take systemic risk assessment into account. The aim of the research is to evaluate the risk-based common European deposit insurance system impact on deposit insurance premiums to Lithuanian banks: not only individual banks' risks, but the systemic risk as well. The most appropriate systemic risk assessment method was selected according to different scientific researchers and strong Lithuanian banking sector concentration. The results showed that inclusion of the systemic risk assessment in risk-based deposit insurance system helps to have more accurate bank risk assessment.
+C1 [Lakstutiene, Ausrine; Barkauskaite, Aida] Kaunas Univ Technol, Sch Econ & Business, Kaunas, Lithuania.
+   [Witkowska, Justyna] Univ Warmia & Mazury, Fac Econ Sci, Olsztyn, Poland.
+RP Lakstutiene, A (reprint author), Kaunas Univ Technol, Sch Econ & Business, Kaunas, Lithuania.
+EM aida.barkauskaite@ktu.edu
+OI Witkowska, Justyna/0000-0001-8478-0769
+CR Acharya Viral, 2010, EC POLICY REV FEDERA, V16, P89, DOI DOI 10.2139/ssrn.1678160
+   Acharya Viral, 2011, AEA M, P1
+   Andries N, 2010, J BANK FINANC, V34, P3050, DOI 10.1016/j.jbankfin.2010.07.010
+   Anginer D, 2014, J BANK FINANC, V48, P312, DOI 10.1016/j.jbankfin.2013.09.013
+   Angkinand A, 2010, J INT MONEY FINANC, V29, P252, DOI 10.1016/j.jimonfin.2009.08.001
+   Bernet Beat, 2009, DESIGN STRUCTURE IMP, P1
+   Bijlsma M, 2015, APPL ECON, V47, P3439, DOI 10.1080/00036846.2015.1016208
+   Brownlees C., 2011, WIELAND TRANSFORMATI, P1
+   Cannas Giuseppina, 2014, UPDATED ESTIMATES EU, P1
+   Citadele Bank Information, 2015, CIT BANK AKC IS TARP
+   EBA guidelines, 2015, GUID METH CALC CONTR
+   European Commission, 2009, POSSIBLE MODELS RISK, P1
+   European Parliament and Council Directive, 2014, EUR PARL IR TAR DIR
+   Forssbaeck J, 2011, J BANK FINANC, V35, P2666, DOI 10.1016/j.jbankfin.2011.02.024
+   Gerhardt M., 2011, 4 EUR CRED RES I, P1
+   Gomez-Fernandez-Aguado P, 2014, APPL ECON, V46, P1547, DOI 10.1080/00036846.2013.877577
+   Huang X., 2011, SYSTEMIC RISK CONTRI, P1
+   Imai M, 2011, J JPN INT ECON, V25, P143, DOI 10.1016/j.jjie.2011.02.005
+   Laeven L., 2014, BANK SIZE SYSTEMIC R, P1
+   Lee SC, 2015, J BANK FINANC, V51, P1, DOI 10.1016/j.jbankfin.2014.10.012
+   Lin M. Y., 2015, APPL ECON LETT, P1
+   Londono Juan M., 2014, BOARD GOVERNORS FEDE, V1117, P1
+   Oordt Maarten R. C., 2015, 478 DNB, P1
+   Prean N, 2011, ECON SYST, V35, P496, DOI 10.1016/j.ecosys.2011.01.004
+   Staum J, 2012, QUANT FINANC, V12, P651, DOI 10.1080/14697688.2012.664942
+   Varotto Simone, 2014, SYSTEMIC RISK BANK S, P1
+NR 26
+TC 1
+Z9 1
+U1 0
+U2 10
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1331-677X
+EI 1848-9664
+J9 ECON RES-EKON ISTRAZ
+JI Ekon. Istraz.
+PD JAN 18
+PY 2018
+VL 31
+IS 1
+BP 73
+EP 86
+DI 10.1080/1331677X.2017.1421997
+PG 14
+WC Economics
+SC Business & Economics
+GA FU1PA
+UT WOS:000423620700003
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Goncharenko, R
+   Hledik, J
+   Pinto, R
+AF Goncharenko, Roman
+   Hledik, Juraj
+   Pinto, Roberto
+TI The dark side of stress tests: Negative effects of information
+   disclosure
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Information disclosure; General equilibrium; Systemic risk
+ID SOCIAL VALUE; PRIVATE; COSTS; FIRMS
+AB This paper studies the effect of information disclosure on banks' portfolio risk. We cast a simple banking system into a general equilibrium model with trading frictions. We find that the information disclosure lowers the expected risk-adjusted profits for a non-negligible fraction of banks. The magnitude of this effect depends on the structure of the banking system and, alarmingly, it is more pronounced for systemically important institutions. We connect these theoretical findings to the stress test procedure, where bank information is disclosed by the regulator. The 2011 and 2014 stress tests are used in an empirical study to further support our theoretical results. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Goncharenko, Roman; Hledik, Juraj; Pinto, Roberto] VGSF, Welthandelspl 1, Vienna, Austria.
+   [Goncharenko, Roman; Hledik, Juraj; Pinto, Roberto] WU Vienna Univ Econ & Business, Welthandelspl 1, Vienna, Austria.
+RP Hledik, J (reprint author), VGSF, Welthandelspl 1, Vienna, Austria.
+EM roman.goncharenko@wu.ac.at; juraj.hledik@wu.ac.at;
+   roberto.pinto@wu.ac.at
+OI Pinto, Roberto/0000-0003-3877-3001
+FU Austrian Science Fund (FWF)Austrian Science Fund (FWF)
+FX We are grateful to Rudiger Fahlenbrach, Rudiger Frey, Christian Laux,
+   Gyongyi Loranth, Alexander Murmann, Marco Pagano, Asad Rauf, Josef
+   Zechner, participants at the VGSF PhD Seminar, the 2015
+   Portsmouth-Fordham Conference on Banking and Finance as well as
+   participants of the 2016 IWFSAS conference for useful comments. The
+   authors kindly acknowledge the financial support of the Austrian Science
+   Fund (FWF) as well as the possibility to calibrate our model on data
+   provided by Austrian National Bank (OeNB). All errors are our own
+   responsibility.
+CR Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Admati AR, 2000, REV FINANC STUD, V13, P479, DOI 10.1093/rfs/13.3.479
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Alvarez Fernando, 2015, 21328 NBER
+   Andolfatto D, 2014, J ECON THEORY, V149, P128, DOI 10.1016/j.jet.2013.02.003
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Bernanke B., 2013, MAINT FIN STAB HOLD
+   Blackwell D, 1951, P 2 BERK S MATH STAT, P93
+   Bond P, 2015, J FINANC, V70, P2777, DOI 10.1111/jofi.12303
+   Boss M., 2003, QUANT FINANC, V4, P1
+   DIAMOND DW, 1985, J FINANC, V40, P1071, DOI 10.2307/2328395
+   Efing M., 2016, ARBITRAGING BASEL SE
+   Ellul A, 2013, J FINANC, V68, P1757, DOI 10.1111/jofi.12057
+   Elsinger H., 2006, INT J CENTRAL BANK, V2
+   Farboodi M., 2017, WORKING PAPER, P1
+   Frey R., 2014, WORKING PAPER SERIES
+   Fricke D., 2014, COMPUTATIONAL EC, P1
+   Gigler F, 2014, J ACCOUNT RES, V52, P357, DOI 10.1111/1475-679X.12043
+   Goldstein I., 2017, WORKING PAPER
+   Goldstein I, 2018, J ECON THEORY, V177, P34, DOI 10.1016/j.jet.2018.05.013
+   GROSSMAN SJ, 1981, J LAW ECON, V24, P461, DOI 10.1086/466995
+   GROSSMAN SJ, 1980, BELL J ECON, V11, P42, DOI 10.2307/3003400
+   HIRSHLEIFER J, 1971, AM ECON REV, V61, P561
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Korn E., 2003, J BUSINESS FINANCE A, V30, P1327
+   Leuz C, 2016, J ACCOUNT RES, V54, P525, DOI 10.1111/1475-679X.12115
+   Milgrom P., 2007, BELL J ECON, V12, P380
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Morris S, 2002, AM ECON REV, V92, P1521, DOI 10.1257/000282802762024610
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Prescott E.S, 2008, FEDERAL RESERVE BANK, V94, P1
+   Puhr C., 2012, CONTAGIOUSNESS VULNE
+   Roukny T., 2016, J FINANC STAB
+   Sapra H., 2014, FDN TRENDS FINANCE, V8, P1, DOI DOI 10.1561/0500000038
+   Schuermann T, 2014, INT J FORECASTING, V30, P717, DOI 10.1016/j.ijforecast.2013.10.003
+   Tarullo D., 2010, INT RES FOR MON POL
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 38
+TC 0
+Z9 0
+U1 1
+U2 5
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD AUG
+PY 2018
+VL 37
+BP 49
+EP 59
+DI 10.1016/j.jfs.2018.05.003
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA GO5AL
+UT WOS:000440029800004
+DA 2019-12-28
+ER
+
+PT J
+AU Oh, DH
+   Patton, AJ
+AF Oh, Dong Hwan
+   Patton, Andrew J.
+TI Time-Varying Systemic Risk: Evidence From a Dynamic Copula Model of CDS
+   Spreads
+SO JOURNAL OF BUSINESS & ECONOMIC STATISTICS
+LA English
+DT Article
+DE Correlation; DCC; Financial crises; Tail risk
+ID AUTOREGRESSIVE CONDITIONAL HETEROSKEDASTICITY; TAILS
+AB This article proposes a new class of copula-based dynamic models for high-dimensional conditional distributions, facilitating the estimation of a wide variety of measures of systemic risk. Our proposed models draw on successful ideas from the literature on modeling high-dimensional covariance matrices and on recent work on models for general time-varying distributions. Our use of copula-based models enables the estimation of the joint model in stages, greatly reducing the computational burden. We use the proposed new models to study a collection of daily credit default swap (CDS) spreads on 100 U.S. firms over the period 2006 to 2012. We find that while the probability of distress for individual firms has greatly reduced since the financial crisis of 2008-2009, the joint probability of distress (a measure of systemic risk) is substantially higher now than in the precrisis period. Supplementary materials for this article are available online.
+C1 [Oh, Dong Hwan] Fed Reserve Board, Quantitat Risk Anal Sect, Washington, DC 20551 USA.
+   [Patton, Andrew J.] NYU, Leonard N Stern Sch Business, 550 1St Ave, New York, NY 10012 USA.
+   [Patton, Andrew J.] Duke Univ, Dept Econ, Durham, NC 27708 USA.
+RP Oh, DH (reprint author), Fed Reserve Board, Quantitat Risk Anal Sect, Washington, DC 20551 USA.
+EM donghwan.oh@frb.gov; andrew.patton@duke.edu
+CR Acharya V.V., 2016, REV FINANCI IN PRESS
+   Adrian T., 2016, AM EC REV IN PRESS
+   Almeida C., 2012, WORKING PAPER
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Barclays Capital, 2010, STAND CORP CDS HDB
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Blasques F., 2014, 20140293 TINB I
+   Blasques F, 2014, ELECTRON J STAT, V8, P1088, DOI 10.1214/14-EJS924
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Brenner RJ, 1996, J FINANC QUANT ANAL, V31, P85, DOI 10.2307/2331388
+   Brownlees C.T., 2016, REV FINANCI IN PRESS
+   Carr P, 2011, REV FINANC STUD, V24, P473, DOI 10.1093/rfs/hhq129
+   Chen XH, 2006, J ECONOMETRICS, V135, P125, DOI 10.1016/j.jeconom.2005.07.027
+   Christoffersen P., 2013, 2314027 U TOR ROTM S
+   Christoffersen P, 2012, REV FINANC STUD, V25, P3711, DOI 10.1093/rfs/hhs104
+   Conrad J., 2011, WORKING PAPER
+   Creal D, 2013, J APPL ECONOMET, V28, P777, DOI 10.1002/jae.1279
+   Creal D, 2011, J BUS ECON STAT, V29, P552, DOI 10.1198/jbes.2011.10070
+   Creal DD, 2015, J ECONOMETRICS, V189, P335, DOI 10.1016/j.jeconom.2015.03.027
+   Creal DD, 2014, J BUS ECON STAT, V32, P430, DOI 10.1080/07350015.2014.902763
+   Darrell D, 2003, PRINC SER FINANC, P1
+   Davis RA, 2003, BIOMETRIKA, V90, P777, DOI 10.1093/biomet/90.4.777
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R.F, 2001, 8554 NAT BUR EC RES
+   Engle R.F., 1996, RISK, V9, P36
+   Engle RF, 1998, ECONOMETRICA, V66, P1127, DOI 10.2307/2999632
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Engle R, 2012, J BUS ECON STAT, V30, P212, DOI 10.1080/07350015.2011.652048
+   European Central Bank, 2010, FINANCIAL STABIL DEC, P147
+   Giesecke K, 2011, MANAGE SCI, V57, P1387, DOI 10.1287/mnsc.1110.1375
+   Giglio S, 2016, J FINANC ECON, V119, P457, DOI 10.1016/j.jfineco.2016.01.010
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Goncalves S., 2013, WORKING PAPER
+   Hafner CM, 2012, J APPL ECONOMET, V27, P269, DOI 10.1002/jae.1197
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Hartmann P, 2006, NBER CONF R, P133
+   Harvey A. C., 2013, ECONOMETRIC SOC MONO, V52
+   Harvey A, 2014, COMPUT STAT DATA AN, V76, P320, DOI 10.1016/j.csda.2013.09.022
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Hull J., 2012, RISK MANAGEMENT FINA
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Liu L.Y., 2014, WORKING PAPER
+   Lucas A, 2014, J BUS ECON STAT, V32, P271, DOI 10.1080/07350015.2013.873540
+   Manner H, 2011, INSUR MATH ECON, V48, P153, DOI 10.1016/j.insmatheco.2010.10.010
+   Markit Group, 2015, RES REPORT
+   Markit Group, 2009, RES REPORT
+   Nelsen R.B., 2006, INTRO COPULAS
+   Newey W. K., 1994, HDB ECONOMETRICS, V4, P2111, DOI DOI 10.1016/S1573-4412(05)80005-4
+   Oh D. H., 2016, J BUSINESS IN PRESS
+   Oh DH, 2013, J AM STAT ASSOC, V108, P689, DOI 10.1080/01621459.2013.785952
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton A, 2013, HBK ECON, P899, DOI 10.1016/B978-0-444-62731-5.00016-6
+   POLITIS DN, 1994, J AM STAT ASSOC, V89, P1303, DOI 10.2307/2290993
+   Remillard B., 2010, WORKING PAPER
+   Salvatierra IDL, 2015, J EMPIR FINANC, V30, P120, DOI 10.1016/j.jempfin.2014.11.008
+   Segioviano M.A., 2009, WP094 IMF
+   Shephard N., 2005, STOCHASTIC VOLATILIT
+   Stober J., 2012, WORKING PAPER
+   White H., 1994, ECONOMETRIC SOC MONO, V22
+NR 59
+TC 15
+Z9 15
+U1 6
+U2 22
+PU AMER STATISTICAL ASSOC
+PI ALEXANDRIA
+PA 732 N WASHINGTON ST, ALEXANDRIA, VA 22314-1943 USA
+SN 0735-0015
+EI 1537-2707
+J9 J BUS ECON STAT
+JI J. Bus. Econ. Stat.
+PY 2018
+VL 36
+IS 2
+BP 181
+EP 195
+DI 10.1080/07350015.2016.1177535
+PG 15
+WC Economics; Social Sciences, Mathematical Methods; Statistics &
+   Probability
+SC Business & Economics; Mathematical Methods In Social Sciences;
+   Mathematics
+GA GD7VB
+UT WOS:000430720200001
+DA 2019-12-28
+ER

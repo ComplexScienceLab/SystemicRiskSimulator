@@ -1,0 +1,456 @@
+
+PT J
+AU Smaga, P
+   Wilinski, M
+   Ochnicki, P
+   Arendarski, P
+   Gubiec, T
+AF Smaga, P.
+   Wilinski, M.
+   Ochnicki, P.
+   Arendarski, P.
+   Gubiec, T.
+TI Can banks default overnight? Modelling endogenous contagion on the O/N
+   interbank market
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Systemic risk; Agent-based modelling; Contagion; Complexity;
+   Macroprudential policy
+ID SYSTEMIC RISK; COMPLEX-SYSTEMS; STABILITY; EXPOSURES; NETWORKS
+AB We propose a new model of the liquidity-driven banking system focusing on overnight interbank loans. This significant branch of the interbank market is commonly neglected in the banking system modelling and systemic risk analysis. We construct a model where banks are allowed to use both the interbank and the securities markets to manage their liquidity demand and supply as driven by prudential requirements in a volatile environment. The network of interbank loans is dynamic and simulated every day. We show how the intrasystem cash fluctuations alone, without any external shocks, may lead to systemic defaults, and what may be a symptom of the self-organized criticality of the system. We also analyze the impact of different prudential regulations and market conditions on the interbank market resilience. We confirm that the central bank's asset purchase programmes, limiting the declines in government bond prices, can successfully stabilize banks' liquidity demands. The model can be used to analyze the interbank market impact of macroprudential tools.
+C1 [Smaga, P.] Warsaw Sch Econ, Warsaw, Poland.
+   [Smaga, P.] Natl Bank Poland, Warsaw, Poland.
+   [Wilinski, M.; Ochnicki, P.; Gubiec, T.] Univ Warsaw, Fac Phys, Warsaw, Poland.
+   [Arendarski, P.] Poznan Univ Econ & Business, Poznan, Poland.
+   [Gubiec, T.] Boston Univ, Ctr Polymer Studies, Boston, MA 02215 USA.
+RP Gubiec, T (reprint author), Univ Warsaw, Fac Phys, Warsaw, Poland.; Gubiec, T (reprint author), Boston Univ, Ctr Polymer Studies, Boston, MA 02215 USA.
+EM tomasz.gubiec@fuw.edu.pl
+RI Smaga, Pawel/C-2444-2018
+OI Smaga, Pawel/0000-0003-3913-0833; Gubiec, Tomasz/0000-0002-5184-9202;
+   Wilinski, Mateusz/0000-0002-8539-1586
+FU Foundation for Polish ScienceFoundation for Polish Science
+   [28/UD/SKILLS/2015]
+FX This work was supported by the Foundation for Polish Science [grant
+   number 28/UD/SKILLS/2015]. The opinions expressed herein are those of
+   the authors and do not reflect those of the associated institutions.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Aikman D, 2011, FINANCIAL STABILITY, P371
+   Akinci O, 2018, J FINANC INTERMED, V33, P33, DOI 10.1016/j.jfi.2017.04.001
+   Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Aldasoro I., 2015, J ECON BEHAV ORGAN, V142, P164
+   Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen Franklin, 2008, WORKING PAPER
+   Anand K, 2012, J ECON DYN CONTROL, V36, P1088, DOI 10.1016/j.jedc.2012.03.005
+   Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   Bardoscia M, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0130406
+   Battiston S, 2016, STATIST RISK MODEL, V33, P117, DOI 10.1515/strm-2015-0005
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Bech M. L., 2009, BANKS BANK SYSTEMS, V4, P48
+   Birch A, 2014, J STAT PHYS, V156, P998, DOI 10.1007/s10955-014-1040-9
+   Bluhm M., 2011, WORKING PAPER, V19
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   De Bandt O., 2000, SYSTEMIC RISK SURV, V35
+   De Bandt O., 2009, SYSTEMIC RISK BANKIN
+   Degryse H., 2004, INTERBANK EXPOSURE E, V4
+   Doyle JC, 2005, P NATL ACAD SCI USA, V102, P14497, DOI 10.1073/pnas.0501426102
+   ECB, 2010, FINANCIAL STABILITY
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   ESRB, 2015, ESBR REP
+   [方锦清 FANG Jinqing], 2007, [物理学进展, Progress in Physics], V27, P239
+   Farmer JD, 2009, NATURE, V460, P685, DOI 10.1038/460685a
+   Fourel V., 2013, WORKING PAPER, V432
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Fricke D, 2012, COMPUT ECON, V45, P359, DOI DOI 10.1007/S10614-014-9427-X
+   Furfine C., 1999, FINANCIAL MARKETS IN, V8, P24, DOI DOI 10.1111/1468-0416.00031
+   Gabrieli S., 2015, WORKING PAPER
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gatti DD, 2011, NEW ECON WINDOWS, P1, DOI 10.1007/978-88-470-1971-3
+   Gauthier C., 2010, TECHNICAL REPORT
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Grat-Osiska A., 2007, BANK KREDYT, V5, P53
+   Haaj G., 2005, BANK KREDYT, V10, P39
+   Haaj G., 2014, WORKING PAPER SERIES, V1646
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hausenblas V, 2015, ECON SYST, V39, P156, DOI 10.1016/j.ecosys.2014.07.001
+   Helbing D, 2013, NATURE, V497, P51, DOI 10.1038/nature12047
+   Holme P, 2012, PHYS REP, V519, P97, DOI 10.1016/j.physrep.2012.03.001
+   IMF, 2012, INT MON MACR POL
+   Iori G., 2003, MODELING COMPUTING M
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Karas A., 2008, LIQUIDITY MATTERS EV, V19
+   KNF, 2012, KNF REP
+   KNF, 2014, KNF REP
+   Krause A, 2012, J ECON BEHAV ORGAN, V83, P583, DOI 10.1016/j.jebo.2012.05.015
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   Leon C, 2018, J FINANC STABIL, V35, P75, DOI 10.1016/j.jfs.2016.10.008
+   Lubloy A., 2005, HUNG EC REV, V52, P377
+   Lu LY, 2011, PHYSICA A, V390, P1150, DOI 10.1016/j.physa.2010.11.027
+   Manna M., 2012, EXTERNALITIES INTERB, V893
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Memmel C, 2013, J FINANC STABIL, V9, P46, DOI 10.1016/j.jfs.2013.01.001
+   Montagna M., 2013, TECHNICAL REPORT
+   Montagna M, 2017, QUANT FINANC, V17, P101, DOI 10.1080/14697688.2016.1178855
+   Musmeci N, 2013, J STAT PHYS, V151, P720, DOI 10.1007/s10955-013-0720-1
+   NBP, 2011, NBP REP
+   NBP, 2014, NBP REP
+   NBP, 2013, NBP REP
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Perotti EC, 2002, EUR ECON REV, V46, P1599, DOI 10.1016/S0014-2921(02)00241-6
+   Puhr C., 2012, OESTERREICHISCHE NAT, V24
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Sachs A, 2014, QUANT FINANC, V14, P1677, DOI 10.1080/14697688.2012.749421
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Smaga P., 2014, CONCEPT SYSTEMIC RIS, V5
+   Steinbacher M, 2016, J ECON INTERACT COOR, V11, P95, DOI 10.1007/s11403-014-0143-3
+   Stiglitz Joseph E., 2010, J GLOBALIZATION DEV, V1, DOI DOI 10.2202/1948-1837.1126
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wells S., 2002, FINANC STAB REV, V13, P175
+   Yook SH, 2001, PHYS REV LETT, V86, P5835, DOI 10.1103/PhysRevLett.86.5835
+NR 82
+TC 0
+Z9 0
+U1 5
+U2 12
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD NOV 2
+PY 2018
+VL 18
+IS 11
+BP 1815
+EP 1829
+DI 10.1080/14697688.2018.1438641
+PG 15
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA GX9NI
+UT WOS:000448130500005
+DA 2019-12-28
+ER
+
+PT J
+AU Zhao, ZF
+   Zhang, ZJ
+   Chen, R
+AF Zhao, Zifeng
+   Zhang, Zhengjun
+   Chen, Rong
+TI Modeling maxima with autoregressive conditional Frechet model
+SO JOURNAL OF ECONOMETRICS
+LA English
+DT Article
+DE Extreme value theory; Dynamic modeling; Financial risk management; Value
+   at risk; High-frequency data; Generalized extreme value distribution
+ID FREQUENCY FINANCIAL DATA; TIME-SERIES; LIKELIHOOD-ESTIMATION; REGULAR
+   VARIATION; SYSTEMIC RISK; ASSET PRICES; TAIL RISK; MARKET;
+   CONNECTEDNESS; EQUILIBRIUM
+AB This paper introduces a novel dynamic generalized extreme value (GEV) framework for modeling the time-varying behavior of maxima in financial time series. Specifically, an autoregressive conditional Frechet (AcF) model is proposed in which the maxima are modeled by a Frechet distribution with time-varying scale parameter (volatility) and shape parameter (tail index) conditioned on past information. The AcF provides a direct and accurate modeling of the time-varying behavior of maxima and furthermore offers a new angle to study the tail risk dynamics in financial markets. Probabilistic properties of AcF are studied, and a maximum likelihood estimator is used for model estimation, with its statistical properties investigated. Simulations show the flexibility of AcF and confirm the reliability of its estimators. Two real data examples on cross-sectional stock returns and high-frequency foreign exchange returns are used to demonstrate the AcF modeling approach, where significant improvement over the static GEV has been observed for market tail risk monitoring and conditional VaR estimation. Empirical result of AcF is consistent with the findings of the dynamic peak-over-threshold (POT) literature that the tail index of financial markets varies through time. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Zhao, Zifeng] Univ Notre Dame, Dept Informat Technol Analyt & Operat, Mendoza Coll Business, Notre Dame, IN 46556 USA.
+   [Zhang, Zhengjun] Univ Wisconsin Madison, Dept Stat, Madison, WI 53706 USA.
+   [Chen, Rong] Rutgers State Univ, Dept Stat & Biostat, New Brunswick, NJ USA.
+RP Zhang, ZJ (reprint author), Univ Wisconsin Madison, Dept Stat, Madison, WI 53706 USA.
+EM zjz@stat.wisc.edu
+FU [DMS-1505367];  [CMMI-1536978];  [IIS-1741390];  [DMS-1737857]; 
+   [DMS-1513409]
+FX We thank Oliver Linton, Wolfgang Hardle, Chen Zhou, Qiwei Yao, Ruey
+   Tsay, and seminar participants at the 2016 Symposium on Financial
+   Engineering and Risk Management, the 2016 Annual Conference of the
+   Chinese Association of Quantitative Economics, the 1st International
+   Symposium on Big Data in Finance and Business, the 2017 Kansas
+   Econometrics Conference, and the 2017 Market Microstructure & High
+   Frequency Data Conference. The authors thank the partial research
+   support from DMS-1505367 and CMMI-1536978 for Zifeng Zhao and Zhengjun
+   Zhang and IIS-1741390, DMS-1737857, and DMS-1513409 for Rong Chen.
+CR Bai JS, 2002, ECONOMETRICA, V70, P191, DOI 10.1111/1468-0262.00273
+   Bali TG, 2007, J ECON DYN CONTROL, V31, P361, DOI 10.1016/j.jedc.2005.10.002
+   BALKEMA AA, 1974, ANN PROBAB, V2, P792, DOI 10.1214/aop/1176996548
+   Basrak B, 2002, ANN APPL PROBAB, V12, P908
+   Basrak B, 2009, STOCH PROC APPL, V119, P1055, DOI 10.1016/j.spa.2008.05.004
+   BILLINGSLEY P, 1961, P AM MATH SOC, V12, P788
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Boutahar M, 2008, COMPUT ECON, V31, P225, DOI 10.1007/s10614-007-9115-1
+   Bucher A, 2017, MAXIMUM LIKELIHOOD E
+   Bucher A, 2016, MAXIMUM LIKELIHOOD E
+   CHAN KS, 1994, J ROY STAT SOC B MET, V56, P301
+   Chavez-Demoulin V, 2014, J ECONOMETRICS, V181, P44, DOI 10.1016/j.jeconom.2014.02.007
+   Chen XH, 2006, J ECONOMETRICS, V135, P125, DOI 10.1016/j.jeconom.2005.07.027
+   Coles S., 2001, INTRO STAT MODELING
+   Creal D, 2013, J APPL ECONOMET, V28, P777, DOI 10.1002/jae.1279
+   Davis R.A, 2009, HDB FINANCIAL TIME S
+   DAVISON AC, 1990, J ROY STAT SOC B MET, V52, P393
+   Diebold F. X., 1998, ADV COMPUTATIONAL FI, P3
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Dombry C, 2015, BERNOULLI, V21, P420, DOI 10.3150/13-BEJ573
+   Drees H, 2015, EXTREMES, V18, P369, DOI 10.1007/s10687-015-0217-1
+   Embrechts P., 1999, N AM ACTUARIAL J, V3, P30, DOI DOI 10.1080/10920277.1999.10595797
+   Engle RF, 1998, ECONOMETRICA, V66, P1127, DOI 10.2307/2999632
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   Ferreira A, 2015, ANN STAT, V43, P276, DOI 10.1214/14-AOS1280
+   Francq C, 2004, BERNOULLI, V10, P605, DOI 10.3150/bj/1093265632
+   Geweke J., 1977, LATENT VARIABLES SOC
+   Hall S, 2016, MACROECON DYN, P1
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Harvey A, 2008, BETA T E GARCH DISCU
+   Harvey AC, 2013, DYNAMIC MODELS VOLAT
+   Kelly B, 2014, EXTREMES, V17, P557, DOI 10.1007/s10687-014-0193-x
+   Kelly B, 2014, REV FINANC STUD, V27, P2841, DOI 10.1093/rfs/hhu039
+   Kratz M, 2016, ARXIV161104851
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P112, DOI 10.3905/jpm.2011.37.4.112
+   Lam C, 2012, ANN STAT, V40, P694, DOI 10.1214/12-AOS970
+   Laurini F, 2009, ECONOMET REV, V28, P146, DOI 10.1080/07474930802387985
+   Leadbetter M. R., 1983, EXTREMES RELATED PRO
+   Lundbergh S, 2003, J BUS ECON STAT, V21, P104, DOI 10.1198/073500102288618810
+   MAKELAINEN T, 1981, ANN STAT, V9, P758, DOI 10.1214/aos/1176345516
+   Malinowski A, 2015, STAT INTERFACE, V8, P109, DOI 10.4310/SII.2015.v8.n1.a10
+   Massacci D, 2016, MANAGE SCI, P1
+   McNeil A. J., 2000, J EMPIR FINANC, V7, P271, DOI DOI 10.1016/S0927-5398(00)00012-8
+   MOSSIN J, 1966, ECONOMETRICA, V34, P768, DOI 10.2307/1910098
+   PICKANDS J, 1975, ANN STAT, V3, P119
+   Resnick S., 1987, SPRINGER SERIES OPER
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   Smith R, 2000, BAYESIAN RISK ANAL E
+   SMITH RL, 1985, BIOMETRIKA, V72, P67, DOI 10.2307/2336336
+   Stock J. H, 2011, OXFORD HDB EC FORECA
+   van Oordt MRC, 2016, J FINANC QUANT ANAL, V51, P685, DOI 10.1017/S0022109016000193
+   Zhang X., 2017, WORKING PAPER
+   Zhang ZJ, 2016, J ECONOMETRICS, V194, P231, DOI 10.1016/j.jeconom.2016.05.004
+NR 56
+TC 0
+Z9 0
+U1 3
+U2 9
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-4076
+EI 1872-6895
+J9 J ECONOMETRICS
+JI J. Econom.
+PD DEC
+PY 2018
+VL 207
+IS 2
+BP 325
+EP 351
+DI 10.1016/j.jeconom.2018.07.004
+PG 27
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA HA6GL
+UT WOS:000450377900004
+DA 2019-12-28
+ER
+
+PT J
+AU Brownlees, C
+   Cavaliere, G
+   Monti, A
+AF Brownlees, Christian
+   Cavaliere, Giuseppe
+   Monti, Alice
+TI EVALUATING THE ACCURACY OF TAIL RISK FORECASTS FOR SYSTEMIC RISK
+   MEASUREMENT
+SO ANNALS OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Systemic risk; conditional value-at-risk; marginal expected shortfall;
+   dcc model; forecasting; forecast evaluation; tick loss; loss functions
+ID AUTOREGRESSIVE CONDITIONAL HETEROSKEDASTICITY; VOLATILITY; GARCH;
+   QUANTILES; MODELS
+AB In this paper, we address how to evaluate tail risk forecasts for systemic risk (SRISK) measurement. We propose two loss functions, the Tail Tick Loss and the Tail Mean Square Error, to evaluate, respectively, Conditional Value-at-Risk (CoVaR) and MES forecasts. We then analyse CoVaR and MES forecasts for a panel of top US financial institutions between 2000 and 2012 constructed using a set of bivariate DCC-GARCH-type models. The empirical results highlight the importance of using an appropriate loss function for the evaluation of such forecasts. Among other findings, the analysis confirms that the DCC-GJR specification provides accurate predictions for both CoVaR and MES, in particular for the riskiest group of institutions in the panel (Broker-Dealers).
+C1 [Brownlees, Christian] Pompeu Fabra Univ, Dept Econ & Business, Ramon Trias Fargas 25-27, Barcelona, Spain.
+   [Cavaliere, Giuseppe; Monti, Alice] Univ Bologna, Dept Econ, Piazza Scaravilli 2, Bologna, Italy.
+RP Brownlees, C (reprint author), Pompeu Fabra Univ, Dept Econ & Business, Ramon Trias Fargas 25-27, Barcelona, Spain.
+EM christian.brownlees@upf.edu; giuseppe.cavaliere@unibo.it;
+   alice.monti@unipolsai.it
+CR Acharya V, 2010, MEASURING SYSTEMIC R
+   Adrian T., 2011, WORKING PAPER
+   Baillie RT, 1996, J ECONOMETRICS, V74, P3, DOI 10.1016/S0304-4076(95)01749-6
+   Benoit S., 2013, FIN20141030 HEC PAR
+   Berkowitz J, 2001, J BUS ECON STAT, V19, P465, DOI 10.1198/07350010152596718
+   Bisias D., 2012, SURVEY SYSTEMIC RISK
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brownlees CT, 2008, J FINANC ECONOMET, V6, P513, DOI 10.1093/jjfinec/nbn012
+   Cabrera W, 2014, COMPOSITE INDICATOR, V826
+   Cao Z, 2013, MULTICOVAR SHAPLEY V
+   Cheong CW, 2007, PHYSICA A, V373, P651, DOI 10.1016/j.physa.2006.05.050
+   Christoffersen P, 2008, J FINANC ECON, V90, P272, DOI 10.1016/j.jfineco.2007.12.003
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R.F., 1999, COINTEGRATION CAUSAL, P475
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Engle RF, 2008, REV FINANC STUD, V21, P1187, DOI 10.1093/rfs/hhn004
+   Escanciano JC, 2012, J BANK FINANC, V36, P2233, DOI 10.1016/j.jbankfin.2012.04.004
+   GALLANT AR, 1993, ECONOMETRICA, V61, P871, DOI 10.2307/2951766
+   Giacomini R, 2005, J BUS ECON STAT, V23, P416, DOI 10.1198/073500105000000018
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Guo H, 2008, ECON LETT, V99, P371, DOI 10.1016/j.econlet.2007.09.001
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Komunjer I, 2005, J ECONOMETRICS, V128, P137, DOI 10.1016/j.jeconom.2004.08.010
+   Kupiec P. H., 1995, J DERIVATIVES, V3
+   Li DD, 2012, INT REV ECON FINANC, V24, P167, DOI 10.1016/j.iref.2012.02.001
+   Patton AJ, 2011, J ECONOMETRICS, V160, P246, DOI 10.1016/j.jeconom.2010.03.034
+   Popescu A, 2014, WORKING PAPER
+   Pramor M, 2006, IMF WORKING PAPER
+   Sosvilla-Rivero S., 2012, APPL FINANC EC, V22, P1453
+   Yun J, 2014, PAC-BASIN FINANC J, V27, P94, DOI 10.1016/j.pacfin.2014.02.005
+NR 34
+TC 0
+Z9 0
+U1 0
+U2 6
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 2010-4952
+EI 2010-4960
+J9 ANN FINANC ECON
+JI Ann. Financ. Econ.
+PD JUN
+PY 2018
+VL 13
+IS 2
+AR 1850009
+DI 10.1142/S2010495218500094
+PG 25
+WC Economics
+SC Business & Economics
+GA GQ5RT
+UT WOS:000441748100005
+DA 2019-12-28
+ER
+
+PT J
+AU Machacek, M
+   Melecky, A
+   Sulganova, M
+AF Machacek, Martin
+   Melecky, Ales
+   Sulganova, Monika
+TI MACROECONOMIC DRIVERS OF NON-PERFORMING LOANS: A META-REGRESSION
+   ANALYSIS
+SO PRAGUE ECONOMIC PAPERS
+LA English
+DT Article
+DE aggregate credit risk; macroeconomic credit risk drivers; non-performing
+   loans ratio; meta-analysis; sub-samples analysis
+ID CREDIT RISK; BANKING SECTOR; INCOME ELASTICITY; MONEY DEMAND;
+   DETERMINANTS; METAANALYSIS; CYCLICALITY; QUALITY; MODEL
+AB Common exposure to macroeconomic risk factors across financial institutions is a source of a systemic risk that influences quality of banks' loan portfolios. This paper focuses on the growing literature on credit risk determinants. The aim of the paper is to provide more general information on effects of macroeconomic drivers with the use of quantitative meta analytic techniques. We consider five of the most common macroeconomic determinants of non-performing loans ratio. The meta-regression results suggest that there are some significant differences among studies, which could be identified. For instance, data specification, estimation method, number of countries and observations included in the model play a significant role. In some cases, e.g. inflation and exchange rate, the size of the effects presented in journals with impact factor are significantly different from other types of studies included in the analysis. The sub-sample analysis mostly confirms meta-regressions results.
+C1 [Machacek, Martin; Melecky, Ales; Sulganova, Monika] VSB Tech Univ Ostrava, Dept Econ, Ostrava, Czech Republic.
+RP Machacek, M (reprint author), VSB Tech Univ Ostrava, Dept Econ, Ostrava, Czech Republic.
+EM martin.machacek@vsb.cz; ales.melecky@vsb.cz; monika.sulganova@vsb.cz
+OI Melecky, Ales/0000-0002-4495-6296
+FU Czech Science FoundationGrant Agency of the Czech Republic [16-13784S];
+   Operational Programme Education for Competitiveness; European Social
+   FundEuropean Social Fund (ESF) [CZ.1.07/2.3.00/30.0016,
+   CZ.1.07/2.3.00/20.0296]
+FX This work has been supported by the Czech Science Foundation under Grant
+   No.16-13784S; Operational Programme Education for Competitiveness and
+   co-financed by the European Social Fund under Grant No.
+   CZ.1.07/2.3.00/30.0016 and Grant No. CZ.1.07/2.3.00/20.0296.
+CR AHMAD F, 2013, WORLD APPL SCI J, V22, P243, DOI DOI 10.5829/idosi.wasj.2013.22.02.1863
+   Alhassan AL, 2014, REV DEV FINANC, V4, P50, DOI 10.1016/j.rdf.2014.03.001
+   Babihuga R, 2007, 07115 INT MON FUND, DOI [10.5089/9781451866797.001, DOI 10.5089/9781451866797.001]
+   BABOUCEK I, 2005, WORKING PAPER SERIES, V1
+   Bofondi M, 2011, 89 BANC IT, DOI [10.2139/ssrn.1849872, DOI 10.2139/SSRN.1849872]
+   Bonfim D, 2009, J BANK FINANC, V33, P281, DOI 10.1016/j.jbankfin.2008.08.006
+   Borio K, 2003, 128 BIS, DOI [10.2139/ssrn.841306, DOI 10.2139/SSRN.841306]
+   Boss M, 2009, MODELING CREDIT RISK, V17, P85
+   Buncic D, 2013, J FINANC STABIL, V9, P347, DOI 10.1016/j.jfs.2012.11.003
+   Castro V, 2013, ECON MODEL, V31, P672, DOI 10.1016/j.econmod.2013.01.027
+   Choy I. W. T, 2014, MACAO MONETARY RES B, V30, P91
+   Cifter A, 2009, ECON MODEL, V26, P1382, DOI 10.1016/j.econmod.2009.07.014
+   Crespo Cuaresma J., 2011, FOCUS EUROPEAN EC Q, V4, P69
+   Demyanets A, 2012, 1271 INT MON FUND, DOI [10.5089/9781475502237.001, DOI 10.5089/9781475502237.001]
+   Espinoza R, 2010, 10224 INT MON FUND, DOI [10.5089/9781455208890.001, DOI 10.5089/9781455208890.001]
+   Festic M., 2010, BANKS BANK SYSTEMS, V5, P87
+   Festic M, 2008, PRAGUE ECON PAP, V17, P99, DOI 10.18267/j.pep.323
+   Festic M, 2009, J BUS ECON MANAG, V10, P219, DOI 10.3846/1611-1699.2009.10.219-232
+   Festic M, 2008, FINANC UVER, V58, P131
+   Fofack H. L., 2005, 3769 WORLD BANK, DOI [10.1596/1813-9450-3769, DOI 10.1596/1813-9450-3769]
+   Gerlach S., 2005, BIS PAPERS, V22
+   Greenidge K., 2010, J BUS FINANC EC EM E, V5, P80
+   Gremi E, 2013, RES J FINANCE ACCOUN, V4, P50
+   Guy K., 2011, ECON REV, V37, P77
+   Havranek T, 2014, POLIT EKON, V62, P366, DOI 10.18267/j.polek.956
+   Hoggarth G., 2005, 22 BIS
+   Jakubik P., 2013, OESTERREICHISCHE N Q, V3, P48
+   Jesus S., 2006, INT J CENT BANK, V2, P65
+   Kamau A. W, 2010, SAVINGS DEV, V34, P191
+   Kasselaki MT, 2014, ANN FINANC, V10, P623, DOI 10.1007/s10436-013-0233-6
+   Knell M, 2005, J ECON SURV, V19, P513, DOI 10.1111/j.0950-0804.2005.00257.x
+   Liu Y., 2010, INT J INFORM MANAGE, V21, P227
+   Louzis DP, 2012, J BANK FINANC, V36, P1012, DOI 10.1016/j.jbankfin.2011.10.012
+   Love I, 2014, J INT FINANC MARK I, V28, P158, DOI 10.1016/j.intfin.2013.10.006
+   Mancka A, 2012, J KNOWLEDGE MANAGEME, V2, P1
+   Marcucci J., 2008, J INT FINANC MARK I, V18, P46, DOI DOI 10.1016/J.INTFIN.2006.05.002
+   Melecky A, 2015, POLIT EKON, V63, P921, DOI 10.18267/j.polek.1045
+   Messai A., 2013, INT J EC FINANCIAL I, V3, P852
+   Moscone F, 2014, REG SCI URBAN ECON, V49, P129, DOI 10.1016/j.regsciurbeco.2014.08.003
+   Nkusu M., 2011, IMF WORKING PAPERS, V29, P32, DOI [10.5089/9781455297740.001, DOI 10.5089/9781455297740.001]
+   Novikov I, 2012, J MODERN ACCOUNTING, V8, P113
+   Podpiera R, 2006, IMF STAFF PAPERS, V53, P306
+   Saba I., 2012, ROMANIAN EC J, VXV, P141
+   Salas V., 2002, J FINANCIAL SERVICES, V22, P203, DOI DOI 10.1023/A:1019781109676
+   Shijaku H, 2011, 0629 BANK ALB
+   Shingjergji A., 2013, ACAD J INTERDISCIPLI, V9, P335, DOI [10.5901/ajis.2013.v2n9p335, DOI 10.5901/AJIS.2013.V2N9P335]
+   Shu Ch, 2002, 202002 HONG KONG MON
+   Skarica B., 2014, FINANC THEORY PRAC, V38, P37, DOI DOI 10.3326/FINTP.38.1.2
+   Vazquez F, 2012, J FINANC STABIL, V8, P69, DOI 10.1016/j.jfs.2011.05.002
+   VOGIAZAS SD, 2011, EC RES INT, P1
+   Vuillemey G, 2014, INT EC, V137, P32, DOI [10.1016/j.inteco.2013.10.004, DOI 10.1016/J.INTECO.2013.10.004]
+   Yurdakul F, 2014, PROCD SOC BEHV, V109, P784, DOI 10.1016/j.sbspro.2013.12.544
+   ZEMAN J., 2008, 12008 NAT BANK SLOV
+NR 53
+TC 0
+Z9 0
+U1 0
+U2 13
+PU UNIV ECONOMICS-PRAGUE
+PI PRAGUE 3
+PA OECONOMICA PUBL, NAM W CHIRCHILLA 4, PRAGUE 3, CZ-130 67, CZECH REPUBLIC
+SN 1210-0455
+EI 2336-730X
+J9 PRAGUE ECON PAP
+JI Prague Econ. Pap.
+PD JUN
+PY 2018
+VL 27
+IS 3
+BP 351
+EP 374
+DI 10.18267/j.pep.656
+PG 24
+WC Economics
+SC Business & Economics
+GA GL9KW
+UT WOS:000437554400006
+OA Bronze
+DA 2019-12-28
+ER

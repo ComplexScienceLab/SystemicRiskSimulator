@@ -1,0 +1,520 @@
+
+PT J
+AU Koppl, R
+   Kauffman, S
+   Felin, T
+   Longo, G
+AF Koppl, Roger
+   Kauffman, Stuart
+   Felin, Teppo
+   Longo, Giuseppe
+TI Economics for a creative world: a response to comments
+SO JOURNAL OF INSTITUTIONAL ECONOMICS
+LA English
+DT Article
+ID SYSTEMIC RISK
+AB In response to Pelikan, Witt, Foster, and Colander, we reiterate our main contributions: (1) our more careful demonstration of why mechanistic' models have limited application, (2) our account of novelty as a system-level phenomenon, and (3) our identification of novelty intermediation' as important to creative economic dynamics. We also address some of the criticisms raised by the commenters. Pavel Pelikan's idea of stochastic causality does not somehow eliminate unprestateable change. We do challenge certain strong notions of universal causation, as Ulrich Witt notes, but such notions are probably best abandoned. Although, we do not repudiate mathematical modeling as our paper suggested to John Foster, we may give less scope than Foster to such methods. Finally, we point out the extreme difficulty of implementing the sort of engineering vision Colander articulates.
+C1 [Koppl, Roger] Syracuse Univ, Whitman Sch Management, Syracuse, NY USA.
+   [Kauffman, Stuart] Inst Syst Biol, Seattle, WA USA.
+   [Felin, Teppo] Univ Oxford, Said Business Sch, Oxford, England.
+   [Longo, Giuseppe] CNRS, Coll France & Ecole Normale Superieure Superieure, Ctr Cavailles, Republ Savoirs, Paris, France.
+RP Koppl, R (reprint author), Syracuse Univ, Whitman Sch Management, Syracuse, NY 13210 USA.
+EM rkoppl@syr.edu; stukauffman@gmail.com; teppo.felin@sbs.ox.ac.uk;
+   Giuseppe.Longo@ens.fr
+OI Felin, Teppo/0000-0003-2044-0145
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Akerlof G, 2009, ANIMAL SPIRITS HUMAN
+   Beale N., 2011, INDIVIDUAL VERSUS SY
+   Bunge M, 1959, CAUSALITY PLACE CAUS
+   Caccioli F., 2011, HETEROGENEITY UNPUB
+   Cartwright N, 2006, J PHILOS, V103, P55, DOI 10.5840/jphil2006103227
+   Chaitin G, 2006, SCI AM, V294, P74, DOI 10.1038/scientificamerican0306-74
+   COLANDER D, 1992, J ECON PERSPECT, V6, P191, DOI 10.1257/jep.6.3.191
+   Earl PE, 2004, CAMB J ECON, V28, P619, DOI 10.1093/cje/28.4.619
+   Felin T., 2014, STRATEGIC ENTREPRENE
+   Felin T, 2011, J I ECON, V7, P231, DOI 10.1017/S1744137410000214
+   FILK T, 2009, MIND MATTER, V7, P59
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hazlitt H., 1983, CRITICS KEYNESIAN EC
+   Hodgson Geoffrey M, 2004, EVOLUTION I EC AGENC
+   Keynes J. N, 1917, SCOPE METHOD POLITIC
+   Koppl R., 2010, EPISTEMIC ENG
+   Koppl R, 2006, REV AUSTRIAN ECON, V19, P231, DOI 10.1007/s11138-006-9246-y
+   Longo G., 2012, PHYSICS
+   Nelson R., 1982, EVOLUTIONARY THEORY
+   Peirce C., 1992, REASONING LOGIC THIN
+   Potts J, 2012, SPATIAL MARKET PROCE, V16, DOI [10.1108/S1529-2134(2012)16, DOI 10.1108/S1529-2134(2012)16]
+   Reis R, 2013, J ECON PERSPECT, V27, P17, DOI 10.1257/jep.27.4.17
+   Suppes P., 1970, PROBABILISTIC THEORY
+   Yellen J., 2009, 18 ANN HP MINSKY C S
+   Yellen J. L., 2011, BUSINESS EC, V46, P3, DOI [10.1057/be.2010.35, DOI 10.1057/BE.2010.35]
+NR 27
+TC 0
+Z9 0
+U1 0
+U2 3
+PU CAMBRIDGE UNIV PRESS
+PI CAMBRIDGE
+PA EDINBURGH BLDG, SHAFTESBURY RD, CB2 8RU CAMBRIDGE, ENGLAND
+SN 1744-1374
+EI 1744-1382
+J9 J I ECON
+JI J. Inst. Econ.
+PD MAR
+PY 2015
+VL 11
+IS 1
+BP 61
+EP 68
+DI 10.1017/S1744137414000514
+PG 8
+WC Economics
+SC Business & Economics
+GA CB3MM
+UT WOS:000349532100006
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Reboredo, JC
+   Ugolini, A
+AF Reboredo, Juan C.
+   Ugolini, Andrea
+TI Downside/upside price spillovers between precious metals: A vine copula
+   approach
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Precious metals; Spillover; Downside/upside risk; Vine copula
+ID SYSTEMIC RISK; SAFE HAVEN; US DOLLAR; VOLATILITY DYNAMICS; GOLD; OIL;
+   HEDGE; DEPENDENCE; MANAGEMENT; INSURANCE
+AB We studied downside and upside price spillovers between four precious metals (gold, silver, platinum and palladium), characterizing the multivariate dependence structure using a vine copula model and computing downside and upside value-at-risk and conditional value-at-risk. We found that the dependence structure differed across precious metals, all of which displayed different average and tail dependence features. Gold and silver prices were highly dependent except at the upper tail, whereas silver prices were integrated with those for platinum and palladium except at the upper tail. The gold market was very little integrated with the platinum and palladium markets. We document asymmetric downside and upside price spillover effects that differed in magnitude across precious metals; silver, in particular, had a greater downside and upside price impact on gold. Our results, indicating that precious metals do not behave as a single asset class, have implications for risk management, trading and hedging strategies for portfolios that include precious metals. (C) 2015 Elsevier Inc. All rights reserved.
+C1 [Reboredo, Juan C.] Univ Santiago de Compostela, Dept Econ, Santiago De Compostela 15782, Spain.
+   [Ugolini, Andrea] Univ Florence, Dipartimento Stati Informat Apllicaz G Parenti, I-50121 Florence, Italy.
+RP Reboredo, JC (reprint author), Univ Santiago de Compostela, Dept Fundamentos Anal Econ, Avda Xoan 23 S-N, Santiago De Compostela 15782, Spain.
+EM juancarlos.reboredo@usc.es
+RI ugolini, andrea/N-3990-2019; ugolini, andrea/K-7206-2015; Reboredo, Juan
+   Carlos/I-3224-2015
+OI ugolini, andrea/0000-0002-0904-5665; ugolini,
+   andrea/0000-0002-0904-5665; Reboredo, Juan Carlos/0000-0003-3912-9410
+FU Xunta de GaliciaXunta de Galicia; FEDEREuropean Union (EU)
+   [GPC2013-045]; project MIUR PRIN MISURA - Multivariate Models for Risk
+   Assessment
+FX The authors wish to thank the Editor, Hamid Beladi, and two anonymous
+   referees for providing useful comments that improved the quality of the
+   paper. All remaining errors are our own. Juan C. Reboredo acknowledges
+   financial support provided by the Xunta de Galicia and FEDER under
+   research grant GPC2013-045. Andrea Ugolini acknowledges financial
+   support from the project MIUR PRIN MISURA - Multivariate Models for Risk
+   Assessment.
+CR Aas K, 2009, INSUR MATH ECON, V44, P182, DOI 10.1016/j.insmatheco.2007.02.001
+   Abadie A, 2002, J AM STAT ASSOC, V97, P284, DOI 10.1198/016214502753479419
+   Adrian T., 2011, NBER WORKING PAPER S
+   Ang A, 2006, REV FINANC STUD, V19, P1191, DOI 10.1093/rfs/hhj035
+   Antonakakis N., 2015, INT REV FINANCIAL AN
+   Arouri ME, 2012, Q REV ECON FINANC, V52, P207, DOI 10.1016/j.qref.2012.04.004
+   Batten JA, 2010, RESOUR POLICY, V35, P65, DOI 10.1016/j.resourpol.2009.12.002
+   Baur DG, 2010, FINAN REV, V45, P217, DOI 10.1111/j.1540-6288.2010.00244.x
+   Baur DG, 2010, J BANK FINANC, V34, P1886, DOI 10.1016/j.jbankfin.2009.12.008
+   Bedford T, 2002, ANN STAT, V30, P1031
+   Bedford T, 2001, ANN MATH ARTIF INTEL, V32, P245, DOI 10.1023/A:1016725902970
+   Bernal O, 2014, J BANK FINANC, V47, P270, DOI 10.1016/j.jbankfin.2014.05.030
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D., 2012, SURVEY SYSTEMIC RISK
+   Breymann W, 2003, QUANT FINANC, V3, P1, DOI 10.1088/1469-7688/3/1/301
+   Cheng WH, 2011, J EMPIR FINANC, V18, P160, DOI 10.1016/j.jempfin.2010.05.004
+   Christie-David R., 2000, J ECON BUS, V52, P405, DOI DOI 10.1016/S0148-6195(00)00029-1
+   Cochran SJ, 2012, J ECON BUS, V64, P287, DOI 10.1016/j.jeconbus.2012.03.001
+   Conover CM, 2009, J INVEST, V18, P75, DOI 10.3905/JOI.2009.18.1.075
+   Cromwell NO, 2000, APPL ECON LETT, V7, P243, DOI 10.1080/135048500351591
+   Czado C., 2013, SELECTION VINE COPUL, V213
+   Demiralay S, 2014, N AM J ECON FINANC, V30, P183, DOI 10.1016/j.najef.2014.10.002
+   Ding Z., 1993, J EMPIR FINANC, V1, P83, DOI DOI 10.1016/0927-5398(93)90006-D
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Haff IH, 2013, BERNOULLI, V19, P462, DOI 10.3150/12-BEJ413
+   Hammoudeh S, 2008, ENERG ECON, V30, P606, DOI 10.1016/j.eneco.2007.09.004
+   Hammoudeh S, 2011, Q REV ECON FINANC, V51, P435, DOI 10.1016/j.qref.2011.07.002
+   Hammoudeh S, 2013, N AM J ECON FINANC, V25, P318, DOI 10.1016/j.najef.2012.06.012
+   Hammoudeh SM, 2010, INT REV ECON FINANC, V19, P633, DOI 10.1016/j.iref.2010.02.003
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   HENTSCHEL L, 1995, J FINANC ECON, V39, P71, DOI 10.1016/0304-405X(94)00821-H
+   Hillier D, 2006, FINANC ANAL J, V62, P98, DOI 10.2469/faj.v62.n2.4085
+   Jensen GR, 2002, J PORTFOLIO MANAGE, V28, P100, DOI 10.3905/jpm.2002.319859
+   Joe H., 1996, 166 U BRIT COL DEP S
+   Joe H, 1996, DISTRIBUTIONS FIXED
+   Joe H., 1997, MONOGRAPHS STAT PROB, V73
+   Kurowicka D., 2006, UNCERTAINTY ANAL HIG
+   Nikoloulopoulos AK, 2012, COMPUT STAT DATA AN, V56, P3659, DOI 10.1016/j.csda.2010.07.016
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Reboredo JC, 2015, N AM J ECON FINANC, V32, P98, DOI 10.1016/j.najef.2015.02.002
+   Reboredo JC, 2015, ENERG ECON, V48, P32, DOI 10.1016/j.eneco.2014.12.009
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Reboredo JC, 2014, INT REV ECON FINANC, V34, P267, DOI 10.1016/j.iref.2014.07.005
+   Reboredo JC, 2014, ECON MODEL, V39, P168, DOI 10.1016/j.econmod.2014.02.038
+   Reboredo JC, 2013, J BANK FINANC, V37, P2665, DOI 10.1016/j.jbankfin.2013.03.020
+   Reboredo JC, 2013, RESOUR POLICY, V38, P130, DOI 10.1016/j.resourpol.2013.02.003
+   Sari R, 2010, ENERG ECON, V32, P351, DOI 10.1016/j.eneco.2009.08.010
+   Sensoy A, 2013, RESOUR POLICY, V38, P504, DOI 10.1016/j.resourpol.2013.08.004
+   Sklar A, 1959, PUBL I STAT U PARIS, V8, P229, DOI DOI 10.12691/IJEFM-3-2-3
+   Tully E, 2007, RES INT BUS FINANC, V21, P316, DOI 10.1016/j.ribaf.2006.07.001
+   Vivian A, 2012, J INT FINANC MARK I, V22, P395, DOI 10.1016/j.intfin.2011.12.003
+   Wang YS, 2013, ECON MODEL, V30, P792, DOI 10.1016/j.econmod.2012.09.052
+NR 52
+TC 13
+Z9 14
+U1 2
+U2 25
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD NOV
+PY 2015
+VL 34
+SI SI
+BP 84
+EP 102
+DI 10.1016/j.najef.2015.08.001
+PG 19
+WC Business, Finance; Economics
+SC Business & Economics
+GA CY5IA
+UT WOS:000366440100005
+DA 2019-12-28
+ER
+
+PT J
+AU Bushman, RM
+   Williams, CD
+AF Bushman, Robert M.
+   Williams, Christopher D.
+TI Delayed Expected Loss Recognition and the Risk Profile of Banks
+SO JOURNAL OF ACCOUNTING RESEARCH
+LA English
+DT Article
+DE bank; transparency; loan loss provisions; delayed loss recognition;
+   risk; systemic risk
+ID EARNINGS MANAGEMENT; MARKET LIQUIDITY; TRANSPARENCY; TRANSMISSION;
+   UNCERTAINTY; INFORMATION; CRISIS
+AB This paper investigates the extent to which delayed expected loan loss recognition (DELR) is associated with greater vulnerability of banks to three distinct dimensions of risk: (1) stock market liquidity risk, (2) downside tail risk of individual banks, and (3) codependence of downside tail risk among banks. We hypothesize that DELR increases vulnerability to downside risk by creating expected loss overhangs that threaten future capital adequacy and by degrading bank transparency, which increases financing frictions and opportunities for risk-shifting. We find that DELR is associated with higher correlations between bank-level illiquidity and both aggregate banking sector illiquidity and market returns (i.e., higher liquidity risks) during recessions, suggesting that high DELR banks as a group may simultaneously face elevated financing frictions and enhanced opportunities for risk-shifting behavior in crisis periods. With respect to downside risk, we find that during recessions DELR is associated with significantly higher risk of individual banks suffering severe drops in their equity values, where this association is magnified for banks with low capital levels. Consistent with increased systemic risk, we find that DELR is associated with significantly higher codependence between downside risk of individual banks and downside risk of the banking sector. We theorize that downside risk vulnerability at the individual bank level can translate into systemic risk by virtue of DELR creating a common source of risk vulnerability across high DELR banks simultaneously, which leads to risk codependence among banks and systemic effects from banks acting as part of a herd.
+C1 [Bushman, Robert M.] Univ N Carolina, Kenan Flagler Business Sch, Chapel Hill, NC 27599 USA.
+   [Williams, Christopher D.] Univ Michigan, Ross Sch Business, Ann Arbor, MI 48109 USA.
+RP Bushman, RM (reprint author), Univ N Carolina, Kenan Flagler Business Sch, Chapel Hill, NC 27599 USA.
+FU Kenan-Flagler Business School, University of North Carolina at Chapel
+   Hill; PriceWaterhouseCoopers-Norm Auerbach Faculty Fellowship
+FX Accepted by Philip Berger. We thank Ryan Ball, Mary Barth, Anne Beatty,
+   Christian Leuz, Mitch Petersen (discussant), an anonymous referee, and
+   workshop participants at Harvard, Seoul National University, University
+   of Michigan, University of Minnesota Empirical Conference, the JAR/NY
+   Fed Pre-Conference, JAR/NY Fed Conference, Rice University, and the Utah
+   Winter Accounting Conference for helpful comments. Bushman thanks
+   Kenan-Flagler Business School, University of North Carolina at Chapel
+   Hill, and Williams thanks the PriceWaterhouseCoopers-Norm Auerbach
+   Faculty Fellowship for financial support. We also thank Tianshu Qu for
+   valuable RA assistance.
+CR Acharya V., 2010, WORKING PAPER
+   Acharya VV, 2005, J FINANC ECON, V77, P375, DOI 10.1016/j.jfineco.2004.06.007
+   Adrian T., 2011, FED RESERVE BANK NEW
+   Afonso G, 2011, J FINANC, V66, P1109, DOI 10.1111/j.1540-6261.2011.01670.x
+   Ahmed AS, 1999, J ACCOUNT ECON, V28, P1, DOI 10.1016/S0165-4101(99)00017-8
+   Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   Amihud Y., 2005, FDN TRENDS FINANCE, V1, P269, DOI DOI 10.1561/0500000003
+   BEATTY A, 1995, J ACCOUNTING RES, V33, P231, DOI 10.2307/2491487
+   Beatty A, 2014, J ACCOUNT ECON, V58, P339, DOI 10.1016/j.jacceco.2014.08.009
+   Beatty A, 2011, J ACCOUNT ECON, V52, P1, DOI 10.1016/j.jacceco.2011.02.002
+   Berger AN, 2008, J FINANC SERV RES, V34, P123, DOI 10.1007/s10693-008-0044-5
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   BERNANKE BS, 1991, BROOKINGS PAP ECO AC, P205
+   Bisias D., 2012, 0001 OFF FIN RES
+   Blum JM, 2002, J BANK FINANC, V26, P1427, DOI 10.1016/S0378-4266(02)00282-0
+   Bolton P, 2006, REV FINANC STUD, V19, P829, DOI 10.1093/rfs/hhl002
+   BOYD JH, 1986, J ECON THEORY, V38, P211, DOI 10.1016/0022-0531(86)90115-8
+   Brunnermeier M., 2012, WORKING PAPER
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Bushman R. M., 2014, WORKING PAPER
+   Bushman RM, 2004, J ACCOUNTING RES, V42, P207, DOI 10.1111/j.1475-679X.2004.00136.x
+   Bushman RM, 2001, J ACCOUNT ECON, V32, P237, DOI 10.1016/S0165-4101(01)00027-1
+   BUSHMAN RM, 2003, FRBNY EC POLICY REV, V9, P65
+   Bushman RM, 2012, J ACCOUNT ECON, V54, P1, DOI 10.1016/j.jacceco.2012.04.002
+   Chen YN, 2006, J FINANC INTERMED, V15, P307, DOI 10.1016/j.jfi.2006.01.001
+   Cohen LJ, 2014, J MONEY CREDIT BANK, V46, P171, DOI 10.1111/jmcb.12101
+   Cordella T., 1998, 1886 CEPR
+   DeYoung R, 1998, J FINANC SERV RES, V13, P5, DOI 10.1023/A:1007965210067
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   Dou Y., 2014, WORKING PAPER
+   Duchin R, 2014, J FINANC ECON, V113, P1, DOI 10.1016/j.jfineco.2014.03.005
+   Dugan J., 2009, COMMUNICATION
+   *FIN STAB FOR, 2009, REP FIN STAB FOR ADD
+   Flannery MJ, 2013, J FINANC INTERMED, V22, P55, DOI 10.1016/j.jfi.2012.08.001
+   Flannery MJ, 2004, J FINANC ECON, V71, P419, DOI 10.1016/S0304-405X(03)00185-5
+   Flannery MJ, 2001, J FINANC SERV RES, V20, P107, DOI 10.1023/A:1012455806431
+   Foos D, 2010, J BANK FINANC, V34, P2929, DOI 10.1016/j.jbankfin.2010.06.007
+   Gallemore J., 2013, WORKING PAPER
+   Geneva Report by, 2009, FUNDAMENTAL PRINCIPL, V11
+   Goldsmith-Pinkham P, 2010, J FINANC SERV RES, V37, P83, DOI 10.1007/s10693-009-0079-2
+   Goldstein I, 2013, FDN TRENDS FINANCE, V8, P1
+   Goldstein I, 2018, J ECON THEORY, V177, P34, DOI 10.1016/j.jet.2018.05.013
+   Gorton G., 2013, W19540 NBER
+   Gorton G., 2014, WORKING PAPER
+   Gorton G, 2006, J MONETARY ECON, V53, P1613, DOI 10.1016/j.jmoneco.2005.05.015
+   Granja J., 2014, WORKING PAPER
+   Granja J, 2013, J ACCOUNT RES, V51, P1031, DOI 10.1111/1475-679X.12028
+   Gray D., 2009, WORKING PAPER
+   Gray D., 2008, 09015 HARV BUS SCH
+   Hameed A, 2010, J FINANC, V65, P257, DOI 10.1111/j.1540-6261.2009.01529.x
+   Hansen L., 2014, RISK TOPOGRAPHY SYST, P15
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Huang R, 2011, J FINANC INTERMED, V20, P248, DOI 10.1016/j.jfi.2010.06.003
+   Hutton AP, 2009, J FINANC ECON, V94, P67, DOI 10.1016/j.jfineco.2008.10.003
+   Jin L, 2006, J FINANC ECON, V79, P257, DOI 10.1016/j.jfineco.2004.11.003
+   Kashyap A.K., 1995, CARNEGIE-ROCHESTER C, V42, P151, DOI DOI 10.1016/0167-2231(95)00032-U
+   Kashyap AK, 2000, AM ECON REV, V90, P407, DOI 10.1257/aer.90.3.407
+   Laeven L, 2003, J FINANC INTERMED, V12, P178, DOI 10.1016/S1042-9573(03)00016-0
+   Laeven L, 2013, ANNU REV FINANC ECON, V5, P63, DOI 10.1146/annurev-financial-021113-074421
+   Lang M, 2011, J ACCOUNT ECON, V52, P101, DOI 10.1016/j.jacceco.2011.07.001
+   Lou XX, 2011, FINANC ANAL J, V67, P51, DOI 10.2469/faj.v67.n3.5
+   MEHRAN H., 2013, 3652013 ECGI
+   Morgan DP, 2002, AM ECON REV, V92, P874, DOI 10.1257/00028280260344506
+   Morris S, 2002, AM ECON REV, V92, P1521, DOI 10.1257/000282802762024610
+   Morrison AD, 2013, J FINANC ECON, V110, P642, DOI 10.1016/j.jfineco.2013.08.011
+   Naes R, 2011, J FINANC, V66, P139, DOI 10.1111/j.1540-6261.2010.01628.x
+   Nichols DC, 2009, REV ACCOUNT STUD, V14, P88, DOI 10.1007/s11142-008-9082-3
+   Pastor L, 2003, J POLIT ECON, V111, P642
+   Ratnovski L, 2013, J FINANC INTERMED, V22, P422, DOI 10.1016/j.jfi.2013.01.002
+   Rochet J.C., 2005, MONETARY EC STUDIES, P93
+   ROCHET JC, 1992, EUR ECON REV, V36, P1137, DOI 10.1016/0014-2921(92)90051-W
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Stephanou C., 2010, 5227 WORLD BANK
+   VandenHeuvel S, 2009, WORKING PAPER
+   Vayanos D, 2004, WORKING PAPER
+NR 75
+TC 35
+Z9 35
+U1 4
+U2 43
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0021-8456
+EI 1475-679X
+J9 J ACCOUNT RES
+JI J. Account. Res.
+PD JUN
+PY 2015
+VL 53
+IS 3
+BP 511
+EP 553
+DI 10.1111/1475-679X.12079
+PG 43
+WC Business, Finance
+SC Business & Economics
+GA CJ0FR
+UT WOS:000355151700002
+DA 2019-12-28
+ER
+
+PT J
+AU Capponi, A
+   Larsson, M
+AF Capponi, Agostino
+   Larsson, Martin
+TI DEFAULT AND SYSTEMIC RISK IN EQUILIBRIUM
+SO MATHEMATICAL FINANCE
+LA English
+DT Article
+DE default risk; systemic risk; equilibrium
+ID CONTAGION
+AB We develop a finite horizon continuous time market model, where risk-averse investors maximize utility from terminal wealth by dynamically investing in a risk-free money market account, a stock, and a defaultable bond, whose prices are determined via equilibrium. We analyze the endogenous interaction arising between the stock and the defaultable bond via the interplay between equilibrium behavior of investors, risk preferences and cyclicality properties of the default intensity. We find that the equilibrium price of the stock experiences a jump at default, despite that the default event has no causal impact on the underlying economic fundamentals. We characterize the direction of the jump in terms of a relation between investor preferences and the cyclicality properties of the default intensity. We conduct a similar analysis for the market price of risk and for the investor wealth process, and determine how heterogeneity of preferences affects the exposure to default carried by different investors.
+C1 [Capponi, Agostino] Purdue Univ, W Lafayette, IN 47906 USA.
+   [Larsson, Martin] Ecole Polytech Fed Lausanne, Swiss Finance Inst, CH-1015 Lausanne, Switzerland.
+RP Capponi, A (reprint author), Purdue Univ, Sch Ind Engn, N Grant St, W Lafayette, IN 47906 USA.
+EM capponi@purdue.edu
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Amini H., 2010, WORKING PAPER
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   Bhamra HS, 2009, REV FINANC STUD, V22, P2303, DOI 10.1093/rfs/hhm076
+   Bielecki T., 2006, COMPLETENESS GEN SEM, P83
+   Bielecki T., 2001, CREDIT RISK MODELING
+   Bielecki TR, 2006, STOCH MODELS, V22, P661, DOI 10.1080/15326340600878313
+   Chabakauri G., 2010, WORKING PAPER
+   Collin-Dufresne P., 2003, WORKING PAPER
+   CONSTANTINIDES GM, 1982, J BUS, V55, P253, DOI 10.1086/296163
+   Cvitani J., 2010, WORKING PAPER
+   Cvitani J, 2004, INTRO EC MATH FINANC
+   Cvitani J., 2011, STOCH PROC APPL, V122, P2781
+   Cvitanic J, 2012, REV FINANC, V16, P285, DOI 10.1093/rof/rfr018
+   Cvitanic J, 2010, BE J THEOR ECON, V10
+   Dumas B, 1989, REV FINANC STUD, V2, P157, DOI 10.1093/rfs/2.2.157
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Friedman A., 2008, PARTIAL DIFFERENTIAL
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P741, DOI 10.1016/j.jedc.2005.01.004
+   Hasler M., 2011, WORKING PAPER
+   HAUSSMANN UG, 1986, ANN PROBAB, V14, P1188, DOI 10.1214/aop/1176992362
+   HERBST I, 1991, PROBAB THEORY REL, V87, P275, DOI 10.1007/BF01312211
+   Hugonnier J, 2012, ECONOMETRICA, V80, P1249, DOI 10.3982/ECTA8783
+   Ikeda N., 1977, OSAKA J MATH, V14, P619
+   Janson S, 2006, B LOND MATH SOC, V38, P269, DOI 10.1112/S0024609306018194
+   Kusuoka S, 1999, ADVANCES IN MATHEMATICAL ECONOMICS, VOL 1, P69
+   Pra PD, 2009, ANN APPL PROBAB, V19, P347, DOI 10.1214/08-AAP544
+   Wang J, 1996, J FINANC ECON, V41, P75, DOI 10.1016/0304-405X(95)00854-8
+NR 28
+TC 1
+Z9 1
+U1 0
+U2 12
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0960-1627
+EI 1467-9965
+J9 MATH FINANC
+JI Math. Financ.
+PD JAN
+PY 2015
+VL 25
+IS 1
+BP 51
+EP 76
+DI 10.1111/mafi.12009
+PG 26
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA AZ2JR
+UT WOS:000348060500003
+DA 2019-12-28
+ER
+
+PT J
+AU Luo, CQ
+   Chi, X
+   Cong, Y
+   Yan, X
+AF Luo Changqing
+   Chi, Xie
+   Cong, Yu
+   Yan, Xu
+TI Measuring financial market risk contagion using dynamic MRS-Copula
+   models: The case of Chinese and other international stock markets
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Risk contagion; Lower tail dependency; Dynamic Markov Regime Switching
+   Copula; Dynamic correlation
+ID CONDITIONAL HETEROSKEDASTICITY; VOLATILITY SPILLOVERS;
+   STRUCTURAL-CHANGE; INTERDEPENDENCE; RETURNS; DEPENDENCE; ECONOMIES;
+   COMMODITY; CRISIS; US
+AB Considering the asymmetric dependency structure and regime switching process, we construct the dynamic Markov Regime Switching Copula (MRS-Copula) models to measure the financial risk contagion. The dynamic MRS-Copula models consist of the marginal model and dynamic MRS Rotated-Gumbel function, and they are examined by the goodness-of-fit test method. Using the dynamic MRS-Copula models, we calculate the daily lower tail dependency by adopting the international stock market index data from January 1997 to June 2015, and provide evidence of financial risk contagion effects between Chinese stock market and other international stock markets after the reform of the RMB exchange rate system in China, and this is particular the case after in the U.S. sub-prime mortgage crisis and the European debt crisis. When conducting robust tests with weekly and monthly data, the empirical result basically holds. As for the financial risk contagion channels in Chinese stock market, the fundamental economic linkages play a more important role than liquidity, information and other factors. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Luo Changqing; Chi, Xie; Cong, Yu; Yan, Xu] Hunan Univ, Coll Business Adm, Changsha 410082, Hunan, Peoples R China.
+   [Luo Changqing] Hunan Univ Commerce, Finance Sch, Changsha 410205, Hunan, Peoples R China.
+RP Chi, X (reprint author), Hunan Univ, Coll Business Adm, Lushan Nan Rd 2, Changsha 410082, Hunan, Peoples R China.
+EM Changqingluo@hnu.edu.cn; Xiechi@hnu.edu.cn; Yucong@163.com;
+   schuyan@hotmail.com
+OI Luo, Changqing/0000-0003-0936-0515
+FU innovative research groups of the National Natural Science Foundation of
+   ChinaNational Natural Science Foundation of China [71221001]; National
+   Natural Science Foundation of ChinaNational Natural Science Foundation
+   of China [71373072, 71503078]; Ministry of Education of Humanities and
+   Social Science Project [13YJCZH123]; program for Science and Technology
+   Innovative Research Team in Higher Educational Institutions of Hunan
+   Province [[2014]207]; program for Key Research Base of Philosophy and
+   Social Sciences in Higher Educational Institutions of Hunan Province
+   [[2014]228]
+FX We are grateful to the editors and the anonymous referees for their very
+   helpful comments and suggestions which greatly improved the previous
+   version of our paper. This work is supported by the innovative research
+   groups of the National Natural Science Foundation of China (grant no.
+   71221001), the National Natural Science Foundation of China (grant no.
+   71373072, no. 71503078), the Ministry of Education of Humanities and
+   Social Science Project (grant no. 13YJCZH123), the program for Science
+   and Technology Innovative Research Team in Higher Educational
+   Institutions of Hunan Province (grant no. [2014]207) and program for Key
+   Research Base of Philosophy and Social Sciences in Higher Educational
+   Institutions of Hunan Province (grant no. [2014]228). We are also
+   grateful for the suggestions and warm help from Dr. Gang-jin Wang.
+CR Alotaibi AR, 2015, ECON MODEL, V45, P38, DOI 10.1016/j.econmod.2014.10.052
+   Aloui C, 2014, ECON MODEL, V36, P421, DOI 10.1016/j.econmod.2013.09.043
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Awokuse TO, 2009, ECON MODEL, V26, P549, DOI 10.1016/j.econmod.2008.12.001
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   Barberis N, 2005, J FINANC ECON, V75, P283, DOI 10.1016/j.jfineco.2004.04.003
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   Celik S, 2012, ECON MODEL, V29, P1946, DOI 10.1016/j.econmod.2012.06.011
+   Chen W, 2014, PHYSICA A, V410, P550, DOI 10.1016/j.physa.2014.05.060
+   Chollete L, 2009, J FINANC ECONOMET, V7, P437, DOI 10.1093/jjfinec/nbp014
+   Das SR, 2004, J FINANC, V59, P2809, DOI 10.1111/j.1540-6261.2004.00717.x
+   Diebold FX, 1998, INT ECON REV, V39, P863, DOI 10.2307/2527342
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Dueker MJ, 1997, J BUS ECON STAT, V15, P26, DOI 10.2307/1392070
+   Durante F, 2013, INT J INTELL SYST, V28, P319, DOI 10.1002/int.21578
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Guo F, 2011, INT REV ECON FINANC, V20, P95, DOI 10.1016/j.iref.2010.07.009
+   HAMILTON JD, 1994, J ECONOMETRICS, V64, P307, DOI 10.1016/0304-4076(94)90067-1
+   He HB, 2015, FINANC RES LETT, V13, P125, DOI 10.1016/j.frl.2015.02.005
+   Hess M.K., 2003, INT REV FINANC ANAL, V12, P527, DOI DOI 10.1016/S1057-5219(03)00062-0
+   Hong Y., 2004, CHINA ECONOMIC Q, V3, P703
+   Huyghebaert N, 2010, CHINA ECON REV, V21, P98, DOI 10.1016/j.chieco.2009.11.001
+   Hwang E, 2013, ECON MODEL, V35, P338, DOI 10.1016/j.econmod.2013.07.021
+   Joe H., 1996, 166 U BRIT COL DEP S
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   LAMOUREUX CG, 1990, J BUS ECON STAT, V8, P225, DOI 10.2307/1391985
+   Lin SK, 2014, ECON MODEL, V38, P341, DOI 10.1016/j.econmod.2014.01.011
+   Carrion-i-Silvestre JL, 2009, ECONOMET THEOR, V25, P1754, DOI 10.1017/S0266466609990326
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Mensi W, 2013, ECON MODEL, V32, P15, DOI 10.1016/j.econmod.2013.01.023
+   Miao DWC, 2013, ECON MODEL, V31, P87, DOI 10.1016/j.econmod.2012.11.013
+   Morales L, 2012, J ASIAN ECON, V23, P616, DOI 10.1016/j.asieco.2012.09.002
+   Narayan P. K., 2015, PAC BASIN FINANC J
+   Narayan PK, 2015, J FUTURES MARKETS, V35, P868, DOI 10.1002/fut.21685
+   Narayan PK, 2015, INT REV FINANC ANAL, V39, P45, DOI 10.1016/j.irfa.2015.01.011
+   Narayan PK, 2014, J BANK FINANC, V41, P167, DOI 10.1016/j.jbankfin.2014.01.008
+   Narayan PK, 2013, J BANK FINANC, V37, P3878, DOI 10.1016/j.jbankfin.2013.07.009
+   Narayan PK, 2013, APPL ECON, V45, P721, DOI 10.1080/00036846.2011.610752
+   Narayan S, 2014, ECON MODEL, V39, P19, DOI 10.1016/j.econmod.2014.02.012
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2006, J APPL ECONOM, V21, P147, DOI 10.1002/jae.865
+   Peng Y, 2012, ANN FINANC, V8, P49, DOI 10.1007/s10436-011-0181-y
+   Sharma SS, 2015, REV PAC BASIN FINANC, V18, DOI 10.1142/S0219091515500095
+   Sklar A, 1959, PUBL I STAT U PARIS, V8, P229, DOI DOI 10.12691/IJEFM-3-2-3
+   Wang GJ, 2015, PHYSICA A, V424, P176, DOI 10.1016/j.physa.2015.01.025
+   Wang KM, 2013, QUAL QUANT, V47, P2143, DOI 10.1007/s11135-011-9647-2
+   [王永巧 Wang Yongqiao], 2011, [系统工程理论与实践, Systems Engineering-Theory & Practice], V31, P778
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+   Zhang E. H., 2010, WORLD ECON, V3, P95
+   Zhu HM, 2014, INT REV ECON FINANC, V29, P208, DOI 10.1016/j.iref.2013.05.015
+NR 54
+TC 13
+Z9 14
+U1 1
+U2 36
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD DEC
+PY 2015
+VL 51
+BP 657
+EP 671
+DI 10.1016/j.econmod.2015.09.021
+PG 15
+WC Economics
+SC Business & Economics
+GA CW3KW
+UT WOS:000364892200062
+DA 2019-12-27
+ER

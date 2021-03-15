@@ -1,0 +1,444 @@
+
+PT J
+AU Hsieh, MF
+   Lee, CC
+   Yang, SJ
+AF Hsieh, Meng-Fen
+   Lee, Chien-Chiang
+   Yang, Shih-Jui
+TI The Impact of Diversification on Performance in the Insurance Industry:
+   The Roles of Globalisation, Financial Reforms and Global Crisis
+SO GENEVA PAPERS ON RISK AND INSURANCE-ISSUES AND PRACTICE
+LA English
+DT Article
+DE insurance industry; diversification; performance; regulation; panel data
+   model
+ID PROMOTE ECONOMIC-GROWTH; LIFE-INSURANCE; SYSTEMIC RISK; CROSS-COUNTRY;
+   COMPETITION; PARTICIPATION; PROFITABILITY; DETERMINANTS; MANAGEMENT;
+   EFFICIENCY
+AB This paper builds on the diversity performance relation in the cross-country literature by examining the property-liability insurance industry across 62 countries. It is, to the best of our knowledge, the first paper to explore the heterogeneity across countries over time by utilising the dynamic panel generalised method of moments approach, thus connecting directly with the current debates on the diversity performance relation. The results show that a higher level of diversification leads to higher returns and insurers' risk, while intending to decrease the degree of leverage. Furthermore, globalisation and financial reforms have more significant impacts on performance in non-high-income countries. The results indicate that income diversity can improve an insurer's performance under the condition of financial reforms, but liberalisation with direct credit and interest rate control variables leads to higher competition and erodes an insurer's profitability. During global crisis periods, insurers in high-income countries that are well diversified are able to adjust their leverage ratio faster than insurers in non-high-income countries.
+C1 [Hsieh, Meng-Fen] Natl Taichung Univ Sci & Technol, Dept Finance, Taichung 40401, Taiwan.
+   [Lee, Chien-Chiang; Yang, Shih-Jui] Natl Sun Yat Sen Univ, Dept Finance, Kaohsiung 80424, Taiwan.
+RP Hsieh, MF (reprint author), Natl Taichung Univ Sci & Technol, Dept Finance, 129,Sec 3,Samin Rd, Taichung 40401, Taiwan.
+EM mfhsieh@nutc.edu.tw; cclee@cm.nsysu.edu.tw; mrytc@ms10.hinet.net
+OI Lee, Chien-Chiang/0000-0003-0037-4347
+FU Ministry of Science and Technology of TaiwanMinistry of Science and
+   Technology, Taiwan [NSC 102-2410-H-110-007-MY2]
+FX The authors would like to thank the Editor and two anonymous referees
+   for their highly constructive comments. We are also grateful to the
+   Ministry of Science and Technology of Taiwan for financial support
+   through grant NSC 102-2410-H-110-007-MY2. The usual disclaimer applies,
+   and views are the sole responsibility of the authors. Please address
+   correspondence to Professor Chien-Chiang Lee.
+CR Abiad A, 2010, IMF STAFF PAPERS, V57, P281, DOI 10.1057/imfsp.2009.23
+   Adiel R, 1996, J ACCOUNT ECON, V22, P207, DOI 10.1016/S0165-4101(96)00436-3
+   Amin A., 1997, GEOGRAPHIES EC, P147, DOI 10.1080/14747730500202230
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Arena M, 2008, J RISK INSUR, V75, P921, DOI 10.1111/j.1539-6975.2008.00291.x
+   Azman-Saini WNW, 2011, S AFR J ECON, V79, P111, DOI 10.1111/j.1813-6982.2011.01258.x
+   Baluch F, 2011, GENEVA PAP R I-ISS P, V36, P126, DOI 10.1057/gpp.2010.40
+   Barth James, 2006, FINANCIAL RESTRUCTUR
+   Beck T., 2009, 4943 WORLD BANK
+   Berger AN, 2003, J BANK FINANC, V27, P383, DOI 10.1016/S0378-4266(02)00386-2
+   Berry-Stolzle TR, 2013, J RISK INSUR, V80, P423, DOI 10.1111/j.1539-6975.2012.01470.x
+   Berry-Stolzle TR, 2012, J RISK INSUR, V79, P381, DOI 10.1111/j.1539-6975.2011.01423.x
+   Blundell R., 2000, ECONOMET REV, V19, P321, DOI DOI 10.1080/07474930008800475
+   Chang CH, 2012, GENEVA RISK INS REV, V37, P223, DOI 10.1057/grir.2011.10
+   Choi BP, 2005, J RISK INSUR, V72, P635, DOI 10.1111/j.1539-6975.2005.00142.x
+   Clark William C, 2000, GOVERNANCE GLOBALIZI, P86
+   Cummins JD, 2006, J MONEY CREDIT BANK, V38, P323, DOI 10.1353/mcb.2006.0029
+   Cummins JD, 2001, J RISK INSUR, V68, P51, DOI 10.2307/2678132
+   CUMMINS JD, 2008, RISK MANAGEMENT INSU, V11, P295, DOI DOI 10.1111/RMIR.2008.11.ISSUE-2
+   DeLong GL, 2001, J FINANC ECON, V59, P221, DOI 10.1016/S0304-405X(00)00086-6
+   Dreher A., 2008, MEASURING GLOBALISAT
+   Dreher A, 2006, APPL ECON, V38, P1091, DOI 10.1080/00036840500392078
+   Elango B, 2008, J RISK INSUR, V75, P567, DOI 10.1111/j.1539-6975.2008.00275.x
+   Eling M, 2010, J BANK FINANC, V34, P1497, DOI 10.1016/j.jbankfin.2009.08.026
+   Elsas R, 2010, J BANK FINANC, V34, P1274, DOI 10.1016/j.jbankfin.2009.11.024
+   Enz R., 2000, GENEVA PAP RISK INS, V25, P369
+   Esho N, 2004, J RISK INSUR, V71, P265, DOI 10.1111/j.0022-4367.2004.00089.x
+   GRABOWSKI H, 1989, J RISK INSUR, V56, P275, DOI 10.2307/252989
+   Han LY, 2010, GENEVA PAP R I-ISS P, V35, P183, DOI 10.1057/gpp.2010.4
+   HANSEN LP, 1982, ECONOMETRICA, V50, P1029, DOI 10.2307/1912775
+   Harrington SE, 2009, J RISK INSUR, V76, P785, DOI 10.1111/j.1539-6975.2009.01330.x
+   Hsieh MF, 2013, ASIA-PAC J FINANC ST, V42, P813, DOI 10.1111/ajfs.12032
+   IMF, 2012, WOR ECON FINANC, P1
+   Jobst AA, 2014, GENEVA PAP R I-ISS P, V39, P440, DOI 10.1057/gpp.2013.7
+   Jordan JL, 2000, J FINANC SERV RES, V18, P241, DOI 10.1023/A:1026551107342
+   JOSKOW PL, 1973, BELL J ECON, V4, P375, DOI 10.2307/3003047
+   Kaufmann D., 2009, 4978 WORLD BANK
+   Kessler D, 2008, J BANK FINANC, V32, P4, DOI 10.1016/j.jbankfin.2007.09.007
+   Lai GC, 2003, J RISK INSUR, V70, P735, DOI 10.1046/j.0022-4367.2003.00073.x
+   Lee CC, 2014, JPN WORLD ECON, V29, P18, DOI 10.1016/j.japwor.2013.11.002
+   Lee CC, 2014, J INT MONEY FINANC, V40, P204, DOI 10.1016/j.jimonfin.2013.09.001
+   Lee CC, 2013, J INT MONEY FINANC, V32, P251, DOI 10.1016/j.jimonfin.2012.04.013
+   Lee CC, 2013, J FINANC SERV RES, V44, P87, DOI 10.1007/s10693-012-0151-1
+   Lee CC, 2013, J INT MONEY FINANC, V32, P405, DOI 10.1016/j.jimonfin.2012.05.001
+   Lee CC, 2013, MACROECON DYN, V17, P235, DOI 10.1017/S1365100511000101
+   Lee CC, 2012, GENEVA PAP R I-ISS P, V37, P125, DOI 10.1057/gpp.2011.34
+   Liebenberg A.P., 2008, J INSURANCE ISSUES, V31, P98
+   Liebenberg AP, 2008, J RISK INSUR, V75, P893, DOI 10.1111/j.1539-6975.2008.00290.x
+   Lin J.Y., 2001, CATO J, V21, P13
+   Ma YL, 2013, GENEVA PAP R I-ISS P, V38, P43, DOI 10.1057/gpp.2012.20
+   Ma YL, 2012, J RISK INSUR, V79, P415, DOI 10.1111/j.1539-6975.2011.01438.x
+   Mattoo A., 1999, 2184 WORLD BANK
+   RAJAN RG, 1995, J FINANC, V50, P1421, DOI 10.2307/2329322
+   Raman V, 2004, GENEVA PAP R I-ISS P, V29, P582, DOI 10.1111/j.1468-0440.2004.00303.x
+   Roodman D., 2007, WORKING PAPER
+   Shim J, 2010, J BANK FINANC, V34, P2450, DOI 10.1016/j.jbankfin.2010.04.003
+   Sommer DW, 1996, J RISK INSUR, V63, P501, DOI 10.2307/253623
+   TITMAN S, 1988, J FINANC, V43, P1, DOI 10.2307/2328319
+   UrI T., 2000, 131 WIFO AUSTR I EC
+   Ward D, 2000, J RISK INSUR, V67, P489, DOI 10.2307/253847
+   Weiss MA, 2010, J RISK INSUR, V77, P597, DOI 10.1111/j.1539-6975.2010.01360.x
+   Xu X, 2013, GENEVA PAP R I-ISS P, V38, P495, DOI 10.1057/gpp.2013.15
+   Yin C.Y., 2010, J INSURANCE REGULATI, V29, P47
+   Yuan Y., 2011, ACAD BANKING STUDIES, V10, P53
+NR 64
+TC 0
+Z9 0
+U1 1
+U2 14
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1018-5895
+EI 1468-0440
+J9 GENEVA PAP R I-ISS P
+JI Geneva Pap. Risk Insur.-Issues Pract.
+PD OCT
+PY 2015
+VL 40
+IS 4
+BP 585
+EP 631
+DI 10.1057/gpp.2015.6
+PG 47
+WC Business, Finance
+SC Business & Economics
+GA CT8NL
+UT WOS:000363073200002
+DA 2019-12-28
+ER
+
+PT J
+AU Liu, AA
+   Hou, YX
+   Peng, L
+AF Liu, Aiai
+   Hou, Yanxi
+   Peng, Liang
+TI Interval estimation for a measure of tail dependence
+SO INSURANCE MATHEMATICS & ECONOMICS
+LA English
+DT Article
+DE Conditional Kendall's tau; Interval estimation; Jackknife empirical
+   likelihood; Tail dependence; Extreme events
+ID COEFFICIENT
+AB Systemic risk concerns extreme co-movement of several financial variables, which involves characterizing tail dependence. The coefficient of tail dependence was proposed by Ledford and Tawn (1996, 1997) to distinguish asymptotic independence and asymptotic dependence. Recently a new measure based on the conditional Kendall's tau was proposed by Asimit et al. (2015) to measure the tail dependence and to distinguish asymptotic independence and asymptotic dependence. For effectively constructing a confidence interval for this new measure, this paper proposes a smooth jackknife empirical likelihood method, which does not need to estimate any additional quantities such as asymptotic variance. A simulation study shows that the proposed method has a good finite sample performance. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Liu, Aiai] Tongji Univ, Sch Math, Shanghai, Peoples R China.
+   [Hou, Yanxi] Georgia Inst Technol, Sch Math, Atlanta, GA 30332 USA.
+   [Peng, Liang] Georgia State Univ, Dept Risk Management & Insurance, Atlanta, GA 30303 USA.
+RP Peng, L (reprint author), Georgia State Univ, Dept Risk Management & Insurance, Atlanta, GA 30303 USA.
+EM lpeng@gsu.edu
+RI Hou, Yanxi/K-3015-2017
+OI Hou, Yanxi/0000-0002-3065-8255
+FU Simons Foundation
+FX The authors thank a reviewer for his/her helpful comments. Peng's
+   research was partly supported by Simons Foundation.
+CR Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Asimit A., 2015, J ECONOMETR IN PRESS
+   Bisias D., 2012, 0001 OFF FIN RES
+   Chen H, 2014, J RISK INSUR, V81, P623, DOI 10.1111/j.1539-6975.2012.01503.x
+   Draisma G, 2004, BERNOULLI, V10, P251, DOI 10.3150/bj/1082380219
+   Dutang C, 2014, INSUR MATH ECON, V57, P46, DOI 10.1016/j.insmatheco.2014.05.003
+   Goegebeur Y, 2013, SCAND J STAT, V40, P174, DOI 10.1111/j.1467-9469.2012.00800.x
+   Haug S, 2011, J KOREAN STAT SOC, V40, P125, DOI 10.1016/j.jkss.2011.03.005
+   HOEFFDING W, 1948, ANN MATH STAT, V19, P293, DOI 10.1214/aoms/1177730196
+   Jing BY, 2009, J AM STAT ASSOC, V104, P1224, DOI 10.1198/jasa.2009.tm08260
+   Ledford AW, 1996, BIOMETRIKA, V83, P169, DOI 10.1093/biomet/83.1.169
+   Ledford AW, 1997, J ROY STAT SOC B MET, V59, P475, DOI 10.1111/1467-9868.00080
+   Li LJ, 2014, INSUR MATH ECON, V57, P77, DOI 10.1016/j.insmatheco.2014.05.002
+   Manner H, 2011, INSUR MATH ECON, V48, P153, DOI 10.1016/j.insmatheco.2010.10.010
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   Owen A. B., 2001, EMPIRICAL LIKELIHOOD
+   Peng L, 1999, STAT PROBABIL LETT, V43, P399, DOI 10.1016/S0167-7152(98)00280-6
+   Peng LA, 2010, TEST-SPAIN, V19, P514, DOI 10.1007/s11749-010-0184-4
+   QIN J, 1994, ANN STAT, V22, P300, DOI 10.1214/aos/1176325370
+   Serfling R.J., 1980, APPROXIMATION THEORE
+NR 20
+TC 1
+Z9 1
+U1 0
+U2 11
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-6687
+EI 1873-5959
+J9 INSUR MATH ECON
+JI Insur. Math. Econ.
+PD SEP
+PY 2015
+VL 64
+BP 294
+EP 305
+DI 10.1016/j.insmatheco.2015.05.014
+PG 12
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA CS5QU
+UT WOS:000362133800025
+DA 2019-12-28
+ER
+
+PT J
+AU Souza, SRS
+   Tabak, BM
+   Silva, TC
+   Guerra, SM
+AF Souza, Sergio R. S.
+   Tabak, Benjamin M.
+   Silva, Thiago C.
+   Guerra, Solange M.
+TI Insolvency and contagion in the Brazilian interbank market
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Systemic risk; Contagion; Interbank market; Networks; Financial
+   stability
+ID SYSTEMIC RISK; BANKING SYSTEMS; NETWORKS; FRAMEWORK; STABILITY
+AB This paper proposes a new way to model and analyze contagion in interbank networks. We use a unique dataset from the Brazilian financial system and include all active financial intermediaries. We show that the contagion chain has a short propagation path. We find that first-round contagion is generated only by banks and that medium-sized banks can generate contagion, which implies that size is not the sole determinant of importance within networks. Most vulnerable financial institutions are not banks. Finally, we compute a lower bound for the financial system expected losses in a 1-year horizon. The results contribute to the development of a financial stability-monitoring toolkit. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Souza, Sergio R. S.; Silva, Thiago C.; Guerra, Solange M.] Banco Cent Brasil, Res Dept, Belo Horizonte, MG, Brazil.
+   [Tabak, Benjamin M.] Univ Catolica Brasilia, Law & Econ & Banking, Brasilia, DF, Brazil.
+RP Tabak, BM (reprint author), Univ Catolica Brasilia, Law & Econ & Banking, Brasilia, DF, Brazil.
+EM sergio.souza@bcb.gov.br; benjaminm.tabak@gmail.com;
+   thiago.silva@bcb.gov.br; solange.guerra@bcb.gov.br
+RI Tabak, Benjamin/F-9952-2018; Christiano, Thiago/B-8828-2012
+OI Tabak, Benjamin/0000-0002-7935-3188; Christiano,
+   Thiago/0000-0003-2631-4393
+FU CNPQ FoundationNational Council for Scientific and Technological
+   Development (CNPq) [305427/2014-8]
+FX Benjamin M. Tabak gratefully acknowledges financial support from CNPQ
+   Foundation, grant number 305427/2014-8. The authors wish to thank
+   anonymous reviewers which have helped improve the paper. The opinions
+   expressed in this paper are those of the authors and do not necessarily
+   reflect those of the Central Bank of Brazil.
+CR Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Banco Central do Brasil, 2012, REL EST FIN, V11
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Blavy R., 2009, WP09109 IMF
+   Boss M, 2004, LECT NOTES COMPUT SC, V3038, P1070
+   Miranda RCC, 2014, J COMPLEX NETW, V2, P585, DOI 10.1093/comnet/cnu022
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Gray D., 2008, MACROFINANCIAL RISK
+   Jin XS, 2014, J EMPIR FINANC, V29, P343, DOI 10.1016/j.jempfin.2014.09.002
+   Kruskal J.B., 1956, P AM MATH SOC, V7, P48, DOI [10.1090/S0002-9939-1956-0078686-7, DOI 10.1090/S0002-9939-1956-0078686-7]
+   Kuzubas TU, 2014, PHYSICA A, V405, P203, DOI 10.1016/j.physa.2014.03.006
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Papadimitriou T, 2013, PHYSICA A, V392, P4429, DOI 10.1016/j.physa.2013.05.013
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Sorge M., 2006, J FINANCIAL STABILIT, V2, P113, DOI DOI 10.1016/J.JFS.2005.07.002
+   Souto M.R., 2009, WORKING PAPER SERIES, V189
+   Tabak BM, 2013, J BANK FINANC, V37, P3855, DOI 10.1016/j.jbankfin.2013.06.003
+NR 20
+TC 11
+Z9 11
+U1 0
+U2 15
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD AUG 1
+PY 2015
+VL 431
+BP 140
+EP 151
+DI 10.1016/j.physa.2015.03.005
+PG 12
+WC Physics, Multidisciplinary
+SC Physics
+GA CI2PJ
+UT WOS:000354589200013
+DA 2019-12-27
+ER
+
+PT J
+AU Shaikh, I
+   Padhi, P
+AF Shaikh, Imlak
+   Padhi, Puja
+TI On the Relationship of Ex-ante and Ex-post Volatility: A Sub-period
+   Analysis of S&P CNX Nifty Index Options
+SO JOURNAL OF EMERGING MARKET FINANCE
+LA English
+DT Article
+DE Implied volatility; realised volatility; ex-ante volatility; ex-post
+   volatility; sub-periods; distributed lag; information content
+ID IMPLIED VOLATILITY; REALIZED VOLATILITY; STANDARD DEVIATIONS;
+   INFORMATION-CONTENT; FINANCIAL CRISIS; MARKET; PRICES; CONTAGION
+AB In this article, the information content of implied volatility is studied at sub-periods (i.e., pre- and post-crises of 2007-09). The main objective is to judge the predictive power of implied volatility in the pre- and post-crises period, using at-the-money (ATM) non-overlapping monthly implied volatilities of Nifty Index options. A simple ordinary least squares (OLS) estimation is used to analyse the information content of implied volatility in sub-periods. An autoregressive-moving average (ARMA) structure is analysed for the assessment of times series pro-perty of ex-ante and ex-post volatility. An autoregressive distributed lag (ARDL) model is adopted to choose the most advantageous forecasting model for predicting the future volatility. The OLS estimation shows that implied volatility is more biased in the pre-crises period. The two-stage least squares (2SLS) estimation clearly explains that implied volatility is an unbiased estimate of the future realised volatility. An ARMA (1,1) and ARDL (1,0) is the best model of future volatility estimation. This study explains that for Indian derivative market, volatility estimates based on options are useful for the pricing of derivative instruments and portfolio risk management.
+C1 [Shaikh, Imlak] BITS Pilani, Birla Inst Technol & Sci, Dept Management, Pilani, Rajasthan, India.
+   [Padhi, Puja] Indian Inst Technol, Dept Humanities & Social Sci, Bombay, Maharashtra, India.
+RP Shaikh, I (reprint author), BITS Pilani, Dept Management, Pilani 333031, Rajasthan, India.
+EM imlak786@gmail.com
+CR Becker R., 2006, N AM J ECON FINANC, V17, P139, DOI DOI 10.1016/J.NAJEF.2005.10.002
+   BECKERS S, 1981, J BANK FINANC, V5, P363, DOI 10.1016/0378-4266(81)90032-7
+   Bharadia M., 1996, ADV FUTURES OPTIONS, V8, P15
+   BRENNER M., 1988, FINANCIAL ANAL J, V44, P80, DOI DOI 10.2469/FAJ.V44.N5.80
+   CANINA L, 1993, REV FINANC STUD, V6, P659, DOI 10.1093/rfs/6.3.659
+   Chance D. M., 1993, RISK, V6, P60
+   Chance D. M., 2003, FINANCIAL ENG NEWS, V7, P20
+   CHIRAS DP, 1978, J FINANC ECON, V6, P213, DOI 10.1016/0304-405X(78)90030-2
+   Choudhry T., 2007, INT REV FINANC ANAL, V16, P242
+   Christensen B., 2002, EUROPEAN J FINANCE, V8, P187, DOI DOI 10.1080/13518470110071209
+   Christensen BJ, 1998, J FINANC ECON, V50, P125, DOI 10.1016/S0304-405X(98)00034-8
+   Corrado C. J., 1996, RISK, V7, P49
+   Corrado CJ, 2005, J FUTURES MARKETS, V25, P339, DOI 10.1002/fut.20148
+   DAY TE, 1992, J ECONOMETRICS, V52, P267, DOI 10.1016/0304-4076(92)90073-Z
+   Ederington L, 2005, J BANK FINANC, V29, P1429, DOI 10.1016/j.jbankfin.2004.05.037
+   Filis G, 2009, J EMERG MARK FINANC, V8, P251, DOI 10.1177/097265270900800301
+   Fleming J., 1998, J EMPIR FINANC, V5, P317, DOI DOI 10.1016/S0927-5398(98)00002-4
+   Gwilym O. A., 1999, EUROPEAN J FINANCE, V5, P73
+   Hansen CS, 2001, ACCOUNT FINANC, V41, P197, DOI DOI 10.1111/1467-629X.00059
+   HARVEY CR, 1991, J FINANC, V46, P1551, DOI 10.2307/2328872
+   Jackwerth JC, 1996, J FINANC, V51, P1611, DOI 10.2307/2329531
+   JORION P, 1995, J FINANC, V50, P507, DOI 10.2307/2329417
+   Kenourgios D, 2012, J MULTINATL FINANC M, V22, P24, DOI 10.1016/j.mulfin.2012.01.002
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   Koopman S. J., 2005, J EMPIR FINANC, V12, P445, DOI DOI 10.1016/J.JEMPFIN.2004.04.009
+   Kumar S., 2008, DECISION, V35, P1
+   LAMOUREUX CG, 1993, REV FINANC STUD, V6, P293, DOI 10.1093/rfs/6.2.293
+   LATANE HA, 1976, J FINANC, V31, P369, DOI 10.2307/2326608
+   Li S, 2005, APPL MATH COMPUT, V170, P611, DOI 10.1016/j.amc.2004.12.034
+   Li S, 2009, REV QUANT FINANC ACC, V32, P405, DOI 10.1007/s11156-008-0099-2
+   Liu CY, 2012, INT REV FINANC ANAL, V21, P70, DOI 10.1016/j.irfa.2011.11.002
+   Mandelbrot B. B., 2004, FORECATING PRICES MA, P247
+   NEWEY WK, 1987, ECONOMETRICA, V55, P703, DOI 10.2307/1913610
+   Panda S. P., 2008, FRONTIERS FINANCE EC, V5, P85
+   Samarakoon LP, 2011, J INT FINANC MARK I, V21, P724, DOI 10.1016/j.intfin.2011.05.001
+   SCHWERT GW, 1990, REV FINANC STUD, V3, P77, DOI 10.1093/rfs/3.1.77
+   Shu J., 2003, WILMOTT MAGAZINE, V4, P83
+   Szakmary A, 2003, J BANK FINANC, V27, P2151, DOI 10.1016/S0378-4266(02)00323-0
+NR 38
+TC 0
+Z9 0
+U1 0
+U2 1
+PU SAGE PUBLICATIONS INDIA  PVT LTD
+PI NEW DELHI
+PA B-1-I-1 MOHAN CO-OPERATIVE INDUSTRIAL AREA, MATHURA RD, POST BAG NO 7,
+   NEW DELHI 110 044, INDIA
+SN 0972-6527
+EI 0973-0710
+J9 J EMERG MARK FINANC
+JI J. Emerg. Mark. Financ.
+PD AUG
+PY 2015
+VL 14
+IS 2
+BP 140
+EP 175
+DI 10.1177/0972652715584266
+PG 36
+WC Business, Finance
+SC Business & Economics
+GA VD4GS
+UT WOS:000436728600003
+DA 2019-12-27
+ER
+
+PT J
+AU Bongini, P
+   Nieri, L
+   Pelagatti, M
+AF Bongini, Paola
+   Nieri, Laura
+   Pelagatti, Matteo
+TI The importance of being systemically important financial institutions
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Systemic risk; Financial institutions; Event study; Regulatory reforms;
+   Capital adequacy
+ID TOO-BIG; EVENT; BANKS
+AB We investigate whether financial markets reacted to the regulatory changes implied by the publication of the list of systemically important financial institutions (SIFI) and the new rules designed to address the too-big-to-fail problem of systemic banks. By applying event study methodology to a sample of 70 of the world's largest banks, we assess whether the stock prices of SIFIs reacted significantly and differently from those of other large banks not deemed to be systemically important following the release of information regarding the methodology used to identify SIFIs and their new capital requirements; the disclosure of the first list of 29 SIFIs; and the publication of the updated list of 28 SIFIs. Overall, we determine that financial markets did not univocally react to the new regulation regarding SIFIs. However markets discriminated between high and low capitalized banks and they correctly estimated the probable effects of the additional capital requirements. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Bongini, Paola; Pelagatti, Matteo] Milan Bicocca Univ, Sch Econ & Stat, I-20126 Milan, Italy.
+   [Nieri, Laura] Univ Genoa, Dept Econ, Genoa, Italy.
+RP Bongini, P (reprint author), Milan Bicocca Univ, Sch Econ & Stat, Via Bicocca Arcimboldi 8, I-20126 Milan, Italy.
+EM paola.bongini@unimib.it; laura.nieri@unige.it;
+   matteo.pelagatti@unimib.it
+RI Pelagatti, Matteo/B-1451-2010
+OI Pelagatti, Matteo/0000-0002-1860-7535
+CR Abreu JF, 2013, J INT FINANC MARK I, V25, P49, DOI 10.1016/j.intfin.2013.01.003
+   Acharya V., 2010, WORKING PAPER
+   Admati Anat R., 2011, 86 STANF U ROCK CTR, P2
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   Binder J. J., 1998, REV QUANTITATIVE FIN, V11, P111, DOI DOI 10.1023/A:1008295500105
+   Bisias Dimitrios, 2012, 0001 US DEP TREAS OF
+   BOEHMER E, 1991, J FINANC ECON, V30, P253, DOI 10.1016/0304-405X(91)90032-F
+   Bongini P, 2014, ECON NOTES, V43, P39, DOI 10.1111/ecno.12013
+   Campbell CJ, 2010, J BANK FINANC, V34, P3078, DOI 10.1016/j.jbankfin.2010.07.016
+   Chan-Lau JA, 2009, 1098 INT MON FUND
+   CORNETT MM, 1990, J FINANC, V45, P95, DOI 10.2307/2328811
+   CORRADO CJ, 1989, J FINANC ECON, V23, P385, DOI 10.1016/0304-405X(89)90064-0
+   De Bandt O, 2000, 35 EUR CENTR BANK
+   Elliott D.J., 2011, WORKING PAPER
+   European Central Bank, 2010, EU BANK STRUCT
+   Hansen L.P., 2013, RISK TOPOGRAPHY SYST
+   International Monetary Fund, 2011, WORKING PAPER
+   Iwanicz-Drozdowska M., 2013, WORKING PAPER
+   Kohler M., 2014, J FINANCIAL IN PRESS
+   Kolari JW, 2010, REV FINANC STUD, V23, P3996, DOI 10.1093/rfs/hhq072
+   LAMDIN DJ, 2001, J ECON BUS, V53, P171, DOI DOI 10.1016/S0148-6195(01)00035-2
+   MacKinlay AC, 1997, J ECON LIT, V35, P13
+   Masciantonio S., 2013, OCCASIONAL PAPERS, V164
+   Mathur I., 1997, APPL FINANCIAL EC, V7, P703
+   OHARA M, 1990, J FINANC, V45, P1587, DOI 10.2307/2328751
+   okter-Robe I., 2010, SPN1016 INT MON FUND
+   Older-Robe I, 2011, SDN1112 INT MON FUND
+   Pelagatti M., 2013, 244 DEMS U MIL BIC
+   Petrella G, 2013, J BANK FINANC, V37, P5406, DOI 10.1016/j.jbankfin.2013.01.005
+   Schafer A., 2013, 9502 CTR EC POL RES
+   Schwert G.W., 1981, J LAW ECON, V33, P141
+   SHULL B., 2012, 709 LEV EC I
+   Slovik P., 2011, WORKING PAPERS OECD, V916
+   Stiroh K., 2010, OXFORD HDB BANKING, P146
+   Thomson J. B., 2009, 27 FED RES BANK CLEV
+   Ueda K., 2013, J BANK FINANC, V37, P3733
+   Walter I, 2012, Q REV ECON FINANC, V52, P114, DOI 10.1016/j.qref.2011.12.007
+   Zhou J., 2012, SDN1203 INT MON FUND
+NR 38
+TC 19
+Z9 19
+U1 1
+U2 23
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JAN
+PY 2015
+VL 50
+BP 562
+EP 574
+DI 10.1016/j.jbankfin.2014.07.006
+PG 13
+WC Business, Finance; Economics
+SC Business & Economics
+GA AY3UD
+UT WOS:000347506900040
+DA 2019-12-28
+ER

@@ -1,0 +1,447 @@
+
+PT J
+AU Durante, F
+   Pappada, R
+   Torelli, N
+AF Durante, Fabrizio
+   Pappada, Roberta
+   Torelli, Nicola
+TI Clustering of time series via non-parametric tail dependence estimation
+SO STATISTICAL PAPERS
+LA English
+DT Article
+DE Cluster analysis; Copula; Extreme-value theory; Risk management; Tail
+   dependence
+ID HIERARCHICAL STRUCTURE; FINANCIAL-MARKETS; SPATIAL CONTAGION;
+   PROXIMITIES; COPULAS
+AB We present a procedure for clustering time series according to their tail dependence behaviour as measured via a suitable copula-based tail coefficient, estimated in a non-parametric way. Simulation results about the proposed methodology together with an application to financial data are presented showing the usefulness of the proposed approach.
+C1 [Durante, Fabrizio; Pappada, Roberta] Free Univ Bozen Bolzano, Sch Econ & Management, I-39100 Bolzano, Italy.
+   [Pappada, Roberta] Univ Padua, Dept Stat Sci, Padua, Italy.
+   [Torelli, Nicola] Univ Trieste, Dept Econ Business Math & Stat Bruno De Finetti, Trieste, Italy.
+RP Durante, F (reprint author), Free Univ Bozen Bolzano, Sch Econ & Management, I-39100 Bolzano, Italy.
+EM fabrizio.durante@unibz.it; pappada@stat.unipd.it;
+   nicola.torelli@econ.units.it
+RI Durante, Fabrizio/F-3413-2011
+OI Durante, Fabrizio/0000-0002-4899-1080
+FU Free University of Bozen-Bolzano, School of Economics and Management
+FX The first and second author acknowledge the support of Free University
+   of Bozen-Bolzano, School of Economics and Management, via the project
+   MODEX. The second author would like to thank Claudia Czado and Eike
+   Brechmann (TU Munich, Germany) for useful comments and discussions.
+CR ABDOUS B, 1999, EXTREMES, V2, P245
+   Bastos JA, 2014, QUANT FINANC, V14, P2121, DOI 10.1080/14697688.2012.726736
+   Beirlant J, 2004, STAT EXTREMES WILEY
+   Bonanno G, 2004, EUR PHYS J B, V38, P363, DOI 10.1140/epjb/e2004-00129-6
+   Brechmann EC, 2014, CAN J STAT, V42, P78, DOI 10.1002/cjs.11204
+   Brida JG, 2010, EXPERT SYST APPL, V37, P3846, DOI 10.1016/j.eswa.2009.11.034
+   Caperaa P, 1997, BIOMETRIKA, V84, P567, DOI 10.1093/biomet/84.3.567
+   Cesarone F, 2013, ANN OPER RES, V205, P213, DOI 10.1007/s10479-012-1165-7
+   Czado C, 2010, LECT NOTES STAT, P93
+   De Luca G, 2013, MPRA WORKING PAPER S, V50129
+   De Luca G, 2011, ADV DATA ANAL CLASSI, V5, P323, DOI 10.1007/s11634-011-0098-3
+   De Luca G, 2010, INTELL SYST ACCOUNT, V17, P91, DOI 10.1002/isaf.315
+   Durante F, 2015, FUZZY SET SYST, V264, P22, DOI 10.1016/j.fss.2014.03.014
+   Durante F, 2014, ADV DATA ANAL CLASSI, V8, P359, DOI 10.1007/s11634-013-0160-4
+   Durante F, 2013, INT J INTELL SYST, V28, P319, DOI 10.1002/int.21578
+   Durante F, 2013, ADV INTELL SYST, V190, P313
+   Durante F, 2010, APPL STOCH MODEL BUS, V26, P551, DOI 10.1002/asmb.799
+   Durante F, 2010, METHODOL COMPUT APPL, V12, P681, DOI 10.1007/s11009-009-9134-6
+   Embrechts P, 1997, APPL MATH, V33
+   Frahm G, 2005, INSUR MATH ECON, V37, P80, DOI 10.1016/j.insmatheco.2005.05.008
+   Genest C, 2009, ANN STAT, V37, P2990, DOI 10.1214/08-AOS672
+   Gudendorf G., 2010, COPULA THEORY ITS AP, P127, DOI DOI 10.1007/978-3-642-12465-5_6
+   Hering C, 2010, J MULTIVARIATE ANAL, V101, P1428, DOI 10.1016/j.jmva.2009.10.005
+   HUBERT L, 1985, J CLASSIF, V2, P193, DOI 10.1007/BF01908075
+   Jaworski P, 2010, LECT NOTES STAT P, V198
+   Jaworski P, 2010, LECT NOTES STAT P, P161
+   Jaworski P., 2013, LECT NOTES STAT P, V213
+   Joe H., 1997, MONOGRAPHS STAT APPL, V73
+   Kaufman L, 1990, WILEY SERIES PROBABI
+   KRUSKAL JB, 1964, PSYCHOMETRIKA, V29, P1, DOI 10.1007/BF02289565
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Okhrin O, 2013, J ECONOMETRICS, V173, P189, DOI 10.1016/j.jeconom.2012.12.001
+   Otranto E, 2008, COMPUT STAT DATA AN, V52, P4685, DOI 10.1016/j.csda.2008.03.020
+   Pattarin F, 2004, COMPUT STAT DATA AN, V47, P353, DOI 10.1016/j.csda.2003.11.009
+   Patton AJ, 2013, HDB EC FORECASTING, V2
+   Patton AJ, 2012, J MULTIVARIATE ANAL, V110, P4, DOI 10.1016/j.jmva.2012.02.021
+   Piccolo D, 1990, J TIME SER ANAL, V11, P153
+   Pickands J, 1981, P 43 SESS INT STAT I, V49, P859
+   RAND WM, 1971, J AM STAT ASSOC, V66, P846, DOI 10.2307/2284239
+   Remillard B, 2010, GOODNESS OF FIT TEST
+   Salvadori G., 2007, WATER SCI TECHNOLOGY, V56
+   SHEPARD RN, 1962, PSYCHOMETRIKA, V27, P125, DOI 10.1007/BF02289630
+   SHEPARD RN, 1962, PSYCHOMETRIKA, V27, P219, DOI 10.1007/BF02289621
+   Tola V, 2008, J ECON DYN CONTROL, V32, P235, DOI 10.1016/j.jedc.2007.01.034
+NR 45
+TC 10
+Z9 10
+U1 0
+U2 7
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0932-5026
+EI 1613-9798
+J9 STAT PAP
+JI Stat. Pap.
+PD AUG
+PY 2015
+VL 56
+IS 3
+BP 701
+EP 721
+DI 10.1007/s00362-014-0605-7
+PG 21
+WC Statistics & Probability
+SC Mathematics
+GA CN1ZN
+UT WOS:000358219900008
+DA 2019-12-27
+ER
+
+PT J
+AU Glasserman, P
+   Young, BP
+AF Glasserman, Paul
+   Young, B. Peyton
+TI How likely is contagion in financial networks?
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Systemic risk; Contagion; Financial network
+ID SYSTEMIC RISK
+AB Interconnections among financial institutions create potential channels for contagion and amplification of shocks to the financial system. We estimate the extent to which interconnections increase expected losses and defaults under a wide range of shock distributions. In contrast to most work on financial networks, we assume only minimal information about network structure and rely instead on information about the individual institutions that are the nodes of the network. The key node-level quantities are asset size, leverage, and a financial connectivity measure given by the fraction of a financial institution's liabilities held by other financial institutions. We combine these measures to derive explicit bounds on the potential magnitude of network effects on contagion and loss amplification. Spillover effects are most significant when node sizes are heterogeneous and the originating node is highly leveraged and has high financial connectivity. Our results also highlight the importance of mechanisms that go beyond simple spillover effects to magnify shocks; these include bankruptcy costs, and mark-to-market losses resulting from credit quality deterioration or a loss of confidence. We illustrate the results with data on the European banking system. (C) 2014 Published by Elsevier B.V.
+C1 [Glasserman, Paul] Columbia Univ, Columbia Business Sch, New York, NY 10027 USA.
+   [Young, B. Peyton] Univ Oxford, Dept Econ, Oxford OX1 2JD, England.
+   [Young, B. Peyton] Oxford Martin Sch, Inst New Econ Thinking, Oxford, England.
+RP Glasserman, P (reprint author), Columbia Univ, Columbia Business Sch, New York, NY 10027 USA.
+EM pg20@columbia.edu; peyton.young@economics.ox.ac.uk
+CR Acharya V., 2010, WORKING PAPER
+   Adrian T., 2011, 17454 COVAR NAT BUR
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Bank of England, 2011, 29 BANK ENGL
+   Barlow RE, 1975, STAT THEORY RELIABIL
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Caccioli F., 2012, STABILITY ANAL FINA
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R., 2010, NETWORK STRUCTURE SY
+   Degryse H., 2004, WORKING PAPER
+   Demange Gabrielle, 2012, 201202 PAR SCH EC
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M., 2013, WORKING PAPER
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   European Banking Authority, 2011, EU WID STRESS TEST R
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Goodhart C, 2004, J FINANCIAL STABILIT, V1, P1
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Harris T. S., 2012, HDB SYSTEMIC RISK
+   International Monetary Fund, 2012, GLOB FIN STAB REP RE
+   Liu M., 2012, SYSTEMIC RISK COMPON
+   MARSHALL AW, 1974, ANN STAT, V2, P1189, DOI 10.1214/aos/1176342873
+   Morris S, 2000, REV ECON STUD, V67, P57, DOI 10.1111/1467-937X.00121
+   Newman MEJ, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.066133
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Office of Financial Research, 2012, ANN REPORT
+   Ramos Romer H. M., 2001, QUESTIIO, V25, P211
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Shin H., 2012, MUNDELL FLEMING LECT
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Summer M., 2013, ANNU REV FINANC ECON, V5, P111
+   Tahbaz-Salehi A., 2013, 18727 NAT BUR EC RES
+   Tasche D., 2008, VESICEK DISTRIBUTION
+   UPPER C, 2002, 09 DTSCH BUND
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wirch J. L., 1999, THESIS U WATERLOO WA
+   Yellen J., 2013, INTERCONNECTEDNESS S
+NR 43
+TC 122
+Z9 124
+U1 16
+U2 107
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JAN
+PY 2015
+VL 50
+BP 383
+EP 399
+DI 10.1016/j.jbankfin.2014.02.006
+PG 17
+WC Business, Finance; Economics
+SC Business & Economics
+GA AY3UD
+UT WOS:000347506900028
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Kerste, M
+   Gerritsen, M
+   Weda, J
+   Tieben, B
+AF Kerste, Marco
+   Gerritsen, Matthijs
+   Weda, Jarst
+   Tieben, Bert
+TI Systemic risk in the energy sector-Is there need for financial
+   regulation?
+SO ENERGY POLICY
+LA English
+DT Article
+DE Systemic risk; Contagion; Energy sector; OTC commodity derivatives; EMIR
+AB The credit crisis points at serious systemic risks in Over The Counter derivative trading. This has resulted in new financial regulation, covering both the financial sector and non-financial sectors. The actual extent to which non-financial companies trading on OTC markets contribute to systemic risk has hardly been the subject of research. This paper investigates the need for financial regulation in the energy sector, which shows a high use of OTC derivatives, by modeling systemic risk measured by the expected fraction of additional failing firms (EAF). Contagion risk within the energy sector and from the energy sector towards the banking sector is compared with that in other non-financial sectors. This paper adds to existing systemic risk literature by specifically looking at financial interdependence between a non-financial sector showing a high usage of OTC commodity derivatives and the banking sector, while contributing to the discussion on energy sector regulation with technical systemic risk analysis. Results indicate that contagion risk from the energy towards the banking sector is not relatively high compared to other non-financial sectors. Our results provide a first indication to question the need for generalized regulation of OTC derivative transactions, as recently introduced by the European Market Infrastructure Regulation (EMIR). (C) 2014 Elsevier Ltd. All rights reserved.
+C1 [Kerste, Marco; Gerritsen, Matthijs; Weda, Jarst; Tieben, Bert] SEO Econ Res, NL-1018 WB Amsterdam, Netherlands.
+RP Kerste, M (reprint author), SEO Econ Res, Roetersstr 29, NL-1018 WB Amsterdam, Netherlands.
+EM m.kerste@seo.nl; m.gerritsen@seo.nl; j.weda@seo.nl; b.tieben@seo.nl
+CR Acharya V. V., 2010, 1002 FED RES BANK CL
+   ACM, 2013, LIQ 2013 GROOTH GAS
+   Adrian T., 2011, 348 FED RES BANK NEW
+   Anabtawi I, 2011, NOTRE DAME LAW REV, V86, P1349
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BIS (Bank for International Settlements), 2014, STAT REL OTC DER STA
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Buhler W., 2010, SYSTEMIC RISK IS BAN
+   Dell'Ariccia G, 2008, J FINANC INTERMED, V17, P89, DOI 10.1016/j.jfi.2007.06.001
+   Eijffinger S., 2010, IPAECONFWC2009040C4
+   FSB IMF BIS, 2009, G20 FSB IMF BIS FIN
+   G-20, 2009, LEAD STAT PITTSB SUM
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Huang X., 1992, THESIS TINBERGEN I
+   Jouyet J. P., 2010, BANQUE FRANCE FINANC
+   Lautier D, 2012, ENERG J, V33, P215, DOI 10.5547/01956574.33.3.8
+   Miller R. E., 2009, INPUT OUTPUT ANAL FD
+   Muns S., 2011, 175 CPB
+   Pierret D., 2013, WORKING PAPER
+   Pindyck RS, 2004, J FUTURES MARKETS, V24, P1029, DOI 10.1002/fut.20120
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Schwarcz SL, 2008, GEORGETOWN LAW J, V97, P193
+   Sijm J., 2013, E13026 ECN
+   Tieben B., 2011, 201162 SEO
+   Zachmann G., 2013, ENERGY COMPETITIVENE, VXXI, P139
+NR 25
+TC 7
+Z9 7
+U1 2
+U2 11
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0301-4215
+EI 1873-6777
+J9 ENERG POLICY
+JI Energy Policy
+PD MAR
+PY 2015
+VL 78
+BP 22
+EP 30
+DI 10.1016/j.enpol.2014.12.018
+PG 9
+WC Economics; Energy & Fuels; Environmental Sciences; Environmental Studies
+SC Business & Economics; Energy & Fuels; Environmental Sciences & Ecology
+GA CB6IX
+UT WOS:000349731800003
+DA 2019-12-28
+ER
+
+PT J
+AU de Bandt, O
+   Heam, JC
+   Labonne, C
+   Tavolaro, S
+AF de Bandt, Olivier
+   Heam, Jean-Cyprien
+   Labonne, Claire
+   Tavolaro, Santiago
+TI MEASURING SYSTEMIC RISK AFTER THE FINANCIAL CRISIS
+SO REVUE ECONOMIQUE
+LA French
+DT Article
+ID INSURANCE; BANKING; MARKET
+AB In response to the very large number of quantitative indicators that have been put forward to measure the level of systemic risk since the start of the 2008 financial crisis, the paper surveys the different indicators available in the economic and financial literature. It distinguishes between (i) indicators related to institutions, based either on market data, accounting statements or supervisory information; (ii) indicators addressing risks in financial markets and infrastructures; (iii) indicators measuring interconnections and network effects, where research is currently very active; and (iv) comprehensive indicators. All these indicators are critically assessed and ways forward for a better understanding of systemic risk are suggested.
+C1 [de Bandt, Olivier; Heam, Jean-Cyprien; Labonne, Claire; Tavolaro, Santiago] Autor Controle Prudentiel & Resolut, 66-2770 Direct Etud,61 Rue Taitbout, F-75436 Paris 01, France.
+RP de Bandt, O (reprint author), Autor Controle Prudentiel & Resolut, 66-2770 Direct Etud,61 Rue Taitbout, F-75436 Paris 01, France.
+EM debandt@acpr.banque-france.fr; jean-cyprien.heam@acpr.banque-france.fr;
+   claire.labonne@acpr.banque-france.fr;
+   santiago.tavolaro@acpr.banque-france.fr
+CR ACHARYA V. V., 2012, CEPR DISCUSSION PAPE, V8824
+   ADRIAN T., 2014, 348 FRB NEW YORK STA
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Alves I., 2013, ESRB OCCASIONAL PAPE, V3
+   Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   BABECKY J., 2011, 1485 ECB
+   BANDT DE O., 2014, OXFORD HDB BANKING
+   BANQUE CENTRALE EUROPEENNE, 2012, RAPP DEUX PREM ANN R
+   BARONE-ADESI G., 2013, HDB SYSTEMIC RISK
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   BENOIT S., 2014, HEC PARIS RES PAPER
+   Berger AN, 2000, J MONEY CREDIT BANK, V32, P641, DOI 10.2307/2601200
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Borio C, 2014, J BANK FINANC, V45, P182, DOI 10.1016/j.jbankfin.2013.07.031
+   BROWNLEE C. T., 2011, VOLATILITY COR UNPUB
+   BRUNNERMEIER M. K., 2011, RISK TOPOGRAPHY
+   Carlson M, 2014, INT J FINANC ECON, V19, P59, DOI 10.1002/ijfe.1482
+   Castro C, 2014, J EMPIR FINANC, V25, P1, DOI 10.1016/j.jempfin.2013.10.009
+   CERUTTI E., 2012, 18531 NBER, V18531
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Curry TJ, 2008, J BANK FINANC, V32, P807, DOI 10.1016/j.jbankfin.2007.06.007
+   De Bandt O, 2000, 35 EUR CENTR BANK
+   De Bandt O., 2010, 295 BANQ FRANC
+   De Castro Miranda Rodrigo Cesar, 2013, 2013 Ninth International Conference on Signal-Image Technology & Internet-Based Systems, P561, DOI 10.1109/SITIS.2013.93
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   ENGLE R., 2015, REV FINANCE
+   Escanciano JC, 2011, J FINANC ECONOMET, V9, P132, DOI 10.1093/jjfinec/nbq021
+   European Central Bank, 2009, FINANCIAL STABIL DEC, P134
+   FAHRI E., 2011, AM EC REWIEW, V102, P60
+   FELLER J.-B., 2014, ANAL SYNTHESES, V39
+   FOUREL V., 2013, 432 BANQ FRANC
+   FREY L., 2013, ANAL SYNTHESES, V4
+   Furlong F., 2006, FED RESERV BANK SAN, P17
+   Gai P., 2011, P ROYAL SOC A, V466, P2401
+   Galbiati M, 2012, J ECON BEHAV ORGAN, V83, P609, DOI 10.1016/j.jebo.2012.05.013
+   Gourieroux C, 2012, CAN J ECON, V45, P1273, DOI 10.1111/j.1540-5982.2012.01750.x
+   Gourieroux C, 2013, ECONOMET THEOR, V29, P735, DOI 10.1017/S0266466612000680
+   GRAY D. F., 2011, SVERIGES RIKSBANK EC, V2
+   GREENWOOD R., 2012, VULNERABLE BAN UNPUB
+   Gropp R., 2004, EC POLICY REV    SEP, V10, P53
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   HANNOUN H., 2010, 45 SEACEN GOV C 26 2
+   HANSEN L., 2012, 18505 NBER
+   HARTMANN P., 2005, ECB WORKING PAPERS, V527
+   HAUTON G., 2014, ANAL SYNTHESES, V15
+   HOLLO D., 2012, ECB WORKING PAPERS, V1426
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   IDIER J., 2012, 348 BANQ FRANC
+   JAHN N., 2012, 272012 DTSCH BUND
+   JONES R., 2013, J RISK INSUR, V80, P239
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Karas A., 2012, BANK NETWORKS UNPUB
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P112, DOI 10.3905/jpm.2011.37.4.112
+   LEON C., 2013, AUTHORITY CENT UNPUB
+   LUCAS RE, 1976, CARN ROCH CONF SERIE, V1, P19, DOI 10.1016/S0167-2231(76)80003-6
+   MERTON RC, 1973, ECONOMETRICA, V41, P867, DOI 10.2307/1913811
+   Rochet J.-C., 2008, WHY ARE THERE SO MAN
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   SANTOS E.B., 2010, 219 BANC CENTR BRAS
+   SCHWAAB B., 2011, ECB WORKING PAPERS, V1327
+   Tahbaz-Salehi A., 2013, 18727 NAT BUR EC RES
+   TAVOLARO S., 2014, ANAL SYNTHESES, P10
+   TIROLE J., 2008, 1 TSE, V1
+   van den Brink R, 2000, SOC NETWORKS, V22, P141, DOI 10.1016/S0378-8733(00)00019-8
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 66
+TC 3
+Z9 3
+U1 0
+U2 0
+PU PRESSES FOND NAT SCI POLIT
+PI PARIS 07
+PA 27 RUE SAINT-GUILLAUME, 75341 PARIS 07, FRANCE
+SN 0035-2764
+EI 1950-6694
+J9 REV ECON-FR
+JI Rev. Econ.
+PD MAY
+PY 2015
+VL 66
+IS 3
+BP 481
+EP 500
+DI 10.3917/reco.663.0481
+PG 20
+WC Economics
+SC Business & Economics
+GA VH7EP
+UT WOS:000453992000002
+DA 2019-12-28
+ER
+
+PT J
+AU Cho, D
+   Choi, K
+AF Cho, Daehyoung
+   Choi, Kyongwook
+TI Time-varying Co-movements and Contagion Effects in Asian Sovereign CDS
+   Markets
+SO JOURNAL OF EAST ASIAN ECONOMIC INTEGRATION
+LA English
+DT Article
+DE Sovereign Credit Default Swap; Co-movement; Dynamic Conditional
+   Correlation; Generalized Variance Decomposition; Spillover Index
+ID DEFAULT SWAP SPREADS; VOLATILITY SPILLOVERS; CREDIT; MODELS; RETURN;
+   BONDS
+AB We investigate interconnectedness and the contagion effect of default risk in Asian sovereign CDS markets since the global financial crisis. Using dynamic conditional correlation analysis, we find that there are significant co-movements in Asian sovereign CDS markets; that such co-movements tend to be larger between developing countries than between developed and developing countries; and that in the co-movements intra-regional nature is stronger than inter-regional nature. With the Spillover Index model, we measure contagion probabilities of sovereign default risk in CDS markets of seven Asian countries and find evidence of contagion effects among six of them; Japan is the exception. In addition, we find that these six countries are affected more by cross-market spillovers than by their own-market spillovers. Furthermore, a rolling-sample analysis reveals that contagion in the Asian sovereign CDS markets expands during episodes of extreme economic and financial distress, such as the Lehman Brothers bankruptcy, the European financial crisis, and the US-credit downgrade.
+C1 [Cho, Daehyoung] Natl Assembly Res Serv, Finance & Fair Trade Team, Seoul, South Korea.
+   [Choi, Kyongwook] Univ Seoul, Econ, Seoul, South Korea.
+RP Choi, K (reprint author), Univ Seoul, Econ, Seoul, South Korea.
+EM dhcho@assembly.go.kr; kwchoi@uos.ac.kr
+CR Aielli GP, 2013, J BUS ECON STAT, V31, P282, DOI 10.1080/07350015.2013.771027
+   Alexander C, 2008, J BANK FINANC, V32, P1008, DOI 10.1016/j.jbankfin.2007.08.002
+   Ammer J., 2007, 912 BOARD GOV FED RE
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Antonakakis N, 2012, J INT FINANC MARK I, V22, P1091, DOI 10.1016/j.intfin.2012.05.009
+   Blanco R, 2005, J FINANC, V60, P2255, DOI 10.1111/j.1540-6261.2005.00798.x
+   BOLLERSLEV T, 1990, REV ECON STAT, V72, P498, DOI 10.2307/2109358
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Duffle D., 1999, FINANCIAL ANAL J, P73, DOI DOI 10.2469/FAJ.V55.N1.2243
+   Elton EJ, 2001, J FINANC, V56, P247, DOI 10.1111/0022-1082.00324
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Fonseca J. D., 2013, J FUTURES MARKETS, V33, P494
+   Glick R., 1998, 1947 CEPR
+   Gorton GB, 2008, REV ECON STUD, V75, P1181, DOI 10.1111/j.1467-937X.2008.00497.x
+   Gunduz Y., 2013, 082013 DTSCH BUND
+   Huang J. Z, 2003, MUCH CORPORATE TREAS
+   Hull J, 2004, J BANK FINANC, V28, P2789, DOI 10.1016/j.jbankfin.2004.06.010
+   Kearney C., 2000, FINANCIAL REV, V41, P29, DOI DOI 10.1111/j.1540-6288.2000.tb01405.x
+   Kolb Robert W., 2011, FINANCIAL CONTAGION
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Longstaff FA, 2005, J FINANC, V60, P2213, DOI 10.1111/j.1540-6261.2005.00797.x
+   Lown C, 2006, J MONEY CREDIT BANK, V38, P1575, DOI 10.1353/mcb.2006.0086
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Pires P., 2009, WORKING PAPER
+   Tse YK, 2002, J BUS ECON STAT, V20, P351, DOI 10.1198/073500102288618496
+   Yilmaz K., 2009, TUSIAD KOC U EC RES
+   Zhang BY, 2009, REV FINANC STUD, V22, P5099, DOI 10.1093/rfs/hhp004
+   Zhu H., 2006, J FINANCIAL SERVICES, V29, P211, DOI DOI 10.1007/S10693-006-7626-X
+NR 29
+TC 0
+Z9 0
+U1 0
+U2 2
+PU KOREA INST INT ECONOMIC POLICY
+PI SEJONG-SI
+PA 3RD FL, BLDG. C, SEJONG NATIONAL RESEARCH COMPLEX, 370, SICHEONG-DAERO,
+   SEJONG-SI, 339-007, SOUTH KOREA
+SN 2234-8867
+EI 2287-8793
+J9 J EAST ASIAN ECON IN
+JI J. East Asian Econ. Integr.
+PD DEC
+PY 2015
+VL 19
+IS 4
+BP 357
+EP 379
+PG 23
+WC Economics
+SC Business & Economics
+GA DK7WC
+UT WOS:000375136500002
+DA 2019-12-27
+ER

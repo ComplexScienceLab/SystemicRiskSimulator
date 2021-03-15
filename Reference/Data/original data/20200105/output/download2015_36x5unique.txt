@@ -1,0 +1,447 @@
+
+PT J
+AU Reboredo, JC
+   Ugolini, A
+AF Reboredo, Juan C.
+   Ugolini, Andrea
+TI Systemic risk in European sovereign debt markets: A CoVaR-copula
+   approach
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Value at risk; Conditional value at risk; Systemic risk; Copulas;
+   Eurozone debt crisis
+ID TIME-SERIES; UNIT-ROOT; FINANCIAL INSTITUTIONS; CRISIS; SPILLOVERS;
+   DEPENDENCE; SPREAD; MODELS; IMPACT; BANKS
+AB We studied systemic risk in European sovereign debt markets before and after the onset of the Greek debt crisis, taking the conditional value-at-risk (CoVaR) as a systemic risk measure, characterized and computed using copulas. We found that, before the debt crisis, sovereign debt markets were all coupled and systemic risk was similar for all countries. However, with the onset of the Greek crisis, debt markets decoupled and the systemic risk of the countries in crisis (excepting Spain) for the European debt market as a whole decreased, whereas that of the non-crisis countries increased to a small degree. The systemic risk of the Greek debt market for other countries in difficulties increased, especially for Portugal where systemic risk tripled after the onset of the crisis, whereas the systemic impact on the non-crisis countries decreased. (C) 2014 Elsevier Ltd. All rights reserved.
+C1 [Reboredo, Juan C.; Ugolini, Andrea] Univ Santiago de Compostela, Dept Econ, Santiago De Compostela 15782, Spain.
+RP Reboredo, JC (reprint author), Univ Santiago de Compostela, Dept Fundamentos Anal Econ, Avda Xoan 23 S-N, Santiago De Compostela 15782, Spain.
+EM juancarlos.reboredo@usc.es
+RI ugolini, andrea/N-3990-2019; ugolini, andrea/K-7206-2015; Reboredo, Juan
+   Carlos/I-3224-2015
+OI ugolini, andrea/0000-0002-0904-5665; ugolini,
+   andrea/0000-0002-0904-5665; Reboredo, Juan Carlos/0000-0003-3912-9410
+FU Xunta de GaliciaXunta de Galicia; FEDEREuropean Union (EU) [GPC2013-045]
+FX We gratefully thank an anonymous referee for helpful comments and
+   suggestions that have improved the quality of the paper. Financial
+   support provided by the Xunta de Galicia and FEDER under research grant
+   GPC2013-045 is gratefully acknowledged.
+CR Acharya V., 2010, WORKING PAPER
+   Adrian T., 2011, NBER WORKING PAPER S
+   Allen L, 2010, DOES SYSTEMIC RISK F
+   Alter A., 2012, 13 CFS
+   Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Arezki R., 2011, IMF STAFF PAPERS
+   Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Bhanot K, 2014, J BANK FINANC, V38, P51, DOI 10.1016/j.jbankfin.2013.09.015
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D., 2012, WORKING PAPER
+   Borgy Vladimir, 2011, FISCAL SUSTAINABILIT
+   Breymann W, 2003, QUANT FINANC, V3, P1, DOI 10.1088/1469-7688/3/1/301
+   Brownlees Christian, 2011, WORKING PAPER
+   Caporin M., 2013, 18741 NBER
+   Cherubini U., 2004, COPULA METHODS FINAN
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   De Santis RA, 2014, J EMPIR FINANC, V26, P150, DOI 10.1016/j.jempfin.2013.12.003
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Embrechts P., 2003, HDB HEAVY TAILED DIS
+   Favero CA, 2013, J ECONOMETRICS, V177, P343, DOI 10.1016/j.jeconom.2013.04.004
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Gravelle T, 2013, J BANK FINANC, V37, P2196, DOI 10.1016/j.jbankfin.2013.01.007
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Haugh D., 2009, WORKING PAPER
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Joe H., 1996, 166 U BRIT COL DEP S
+   Joe H., 1997, MONOGRAPHS STAT PROB, V73
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Mainik G., 2012, WORKING PAPER
+   Manganelli S, 2009, ECON POLICY, P191, DOI 10.1111/j.1468-0327.2009.00220.x
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Missio S., 2011, CES WORKING PAPERS
+   Nelsen R.B., 2006, INTRO COPULAS
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2006, J APPL ECONOM, V21, P147, DOI 10.1002/jae.865
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.1093/biomet/75.2.335
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Reboredo JC, 2013, J BANK FINANC, V37, P2665, DOI 10.1016/j.jbankfin.2013.03.020
+   Reboredo JC, 2012, J POLICY MODEL, V34, P419, DOI 10.1016/j.jpolmod.2011.10.005
+   Reboredo JC, 2011, ENERG ECON, V33, P948, DOI 10.1016/j.eneco.2011.04.006
+   Schuknecht L., 2010, WORKING PAPER SERIES, V1152
+   Segoviano M, 2009, WORKING PAPER
+   Sklar A., 1959, PUBL I STAT U PARIS, V8, P229, DOI 10.1007/978-3-642-33590-7
+   ZAKOIAN JM, 1994, J ECON DYN CONTROL, V18, P931, DOI 10.1016/0165-1889(94)90039-6
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 46
+TC 55
+Z9 55
+U1 8
+U2 58
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD MAR
+PY 2015
+VL 51
+BP 214
+EP 244
+DI 10.1016/j.jimonfin.2014.12.002
+PG 31
+WC Business, Finance
+SC Business & Economics
+GA CD8BO
+UT WOS:000351320400011
+DA 2019-12-28
+ER
+
+PT J
+AU Fricke, D
+   Lux, T
+AF Fricke, Daniel
+   Lux, Thomas
+TI Core-Periphery Structure in the Overnight Money Market: Evidence from
+   the e-MID Trading Platform
+SO COMPUTATIONAL ECONOMICS
+LA English
+DT Article
+DE Interbank market; Network models; Systemic risk; Financial crisis
+ID INTERBANK MARKET; NETWORK ANALYSIS; SYSTEMIC RISK; FINANCIAL CONTAGION;
+   TOPOLOGY; MODELS; CRISIS
+AB We explore the network topology arising from a dataset of the overnight interbank transactions on the e-MID trading platform from January 1999 to December 2010. In order to shed light on the hierarchical structure of the banking system, we estimate different versions of a core-periphery model. Our main findings are: (1) the identified core is quite stable over time in its size as well as in many structural properties, (2) there is also high persistence over time of banks' identified positions as members of the core or periphery, (3) allowing for asymmetric 'coreness' with respect to lending and borrowing considerably improves the fit and reveals a high level of asymmetry and relatively little correlation between banks' 'in-coreness' and 'out-coreness', and (4) we show that the identified core-periphery structure could not have been obtained spuriously from random networks. During the financial crisis of 2008, the reduction of interbank lending was mainly due to core banks reducing their numbers of active outgoing links.
+C1 [Fricke, Daniel] Univ Oxford, Inst New Econ Thinking, Oxford Martin Sch, Oxford OX1 1HP, England.
+   [Fricke, Daniel] Univ Oxford, Said Business Sch, CABDyN Complex Ctr, Oxford OX1 1HP, England.
+   [Fricke, Daniel; Lux, Thomas] Kiel Inst World Econ, D-24105 Kiel, Germany.
+   [Lux, Thomas] Univ Kiel, Dept Econ, D-24118 Kiel, Germany.
+   [Lux, Thomas] Univ Jaume 1, Banco Espana Chair Computat Econ, Castellon de La Plana 12071, Spain.
+RP Lux, T (reprint author), Kiel Inst World Econ, D-24105 Kiel, Germany.
+EM daniel.fricke@sbs.ox.ac.uk; lux@bwl.uni-kiel.de
+FU European UnionEuropean Union (EU) [288501, 612955]
+FX The article is part of a research initiative launched by the Leibniz
+   Community. We also acknowledge support by the European Union Seventh
+   Framework Programme FP7/2007-2013 under CRISIS-ICT-2011 grant agreement
+   no. 288501 and THEME-SSH-2013 grant agreement no. 612955. We are
+   grateful to the participants of the SNA Workshop 2011 at the Vrije
+   Universiteit Amsterdam, seminar participants at the Kiel Institute for
+   the World Economy, Karl Finger, Sheri Markose, Uli Stolzenburg, and two
+   anonymous referees for their helpful and detailed comments.
+CR Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Affinito M, 2012, J BANK FINANC, V36, P3163, DOI 10.1016/j.jbankfin.2011.11.016
+   Akram QF, 2013, COMPUT ECON, V41, P11, DOI 10.1007/s10614-011-9304-9
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Beaupain R, 2012, WORKING PAPER SERIES, V1500
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Boyd JP, 2010, SOC NETWORKS, V32, P125, DOI 10.1016/j.socnet.2009.09.003
+   Boyd JP, 2006, SOC NETWORKS, V28, P165, DOI 10.1016/j.socnet.2005.06.003
+   Braeuning F., 2011, RELATIONSHIP L UNPUB
+   Brede M, 2009, PHYS LETT A, V373, P3910, DOI 10.1016/j.physleta.2009.08.049
+   Brusco M, 2011, SOC NETWORKS, V33, P12, DOI 10.1016/j.socnet.2010.08.002
+   Caccioli F., 2011, ARXIV E PRINTS
+   Christley RM, 2005, AM J EPIDEMIOL, V162, P1024, DOI 10.1093/aje/kwi308
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Colander D, 2009, CRIT REV, V21, P249, DOI 10.1080/08913810902934109
+   Craig B., J FINANCIAL IN PRESS
+   De Bandt O., 2000, WORKING PAPER SERIES, V35
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   DOREIAN P, 2005, GEN BLOCKMODELLING
+   Everett MG, 1999, SOC NETWORKS, V21, P397
+   Finger K., 2014, EVOLUTION BANK UNPUB
+   Finger K, 2013, COMPUT MANAG SCI, V10, P187, DOI 10.1007/s10287-013-0171-9
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Fricke D., 2013, 1830 KIEL I WORLD EC
+   Fricke D, 2013, 1819 KIEL I WORLD EC
+   Muniz ASG, 2011, PAP REG SCI, V90, P111, DOI 10.1111/j.1435-5957.2010.00283.x
+   Goh KI, 2001, PHYS REV LETT, V87, DOI 10.1103/PhysRevLett.87.278701
+   Haldane A, 2009, COMMUNICATION    APR
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Inaoka H., 2004, BANK JAPAN WORKING P, V04-E-04, P1
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Kernighan B. W., 1970, Bell System Technical Journal, V49, P291
+   Langfield S., 2012, WORKING PAPER
+   Luo F, 2009, BMC BIOINFORMATICS, V10, DOI 10.1186/1471-2105-10-S4-S8
+   Markose S., 2010, EC DISCUSSION PAPERS, V683
+   Martinez-Jaramillo S., 2012, WORKING PAPERS BANCO, V2012-07
+   Mistrulli PE, 2007, EC WORKING PAPERS BA, V641
+   MULLINS NC, 1977, AM SOCIOL REV, V42, P552, DOI 10.2307/2094554
+   Muniz ASG, 2006, SOC NETWORKS, V28, P442, DOI 10.1016/j.socnet.2005.11.001
+   Netotea S, 2006, CELL IMMUNOL, V244, P80, DOI 10.1016/j.cellimm.2006.12.007
+   Persitz D., 2009, WORKING PAPERS FONDA, V2009.42
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Snijders TAB, 2001, SOCIOL METHODOL, V31, P361, DOI 10.1111/0081-1750.00099
+   Snijders TAB, 1996, J MATH SOCIOL, V21, P149, DOI 10.1080/0022250X.1996.9990178
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Stolzenburg U, 2011, EUR PHYS J B, V84, P521, DOI 10.1140/epjb/e2011-10986-3
+   Summer M, 2013, ANNU REV FINANC ECON, V5, P277, DOI 10.1146/annurev-financial-110112-120948
+   Trichet J., 2011, FINANCIAL STABILITY, V15, P139
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   van Lelyveld I., 2012, DNB WORKING PAPERS, V348
+   Vriend N. J., 1995, Computational Economics, V8, P205, DOI 10.1007/BF01298460
+   Wilhite A., 2001, Computational Economics, V18, P49, DOI 10.1023/A:1013814511151
+NR 55
+TC 77
+Z9 83
+U1 5
+U2 46
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0927-7099
+EI 1572-9974
+J9 COMPUT ECON
+JI Comput. Econ.
+PD MAR
+PY 2015
+VL 45
+IS 3
+BP 359
+EP 395
+DI 10.1007/s10614-014-9427-x
+PG 37
+WC Economics; Management; Mathematics, Interdisciplinary Applications
+SC Business & Economics; Mathematics
+GA CB4LE
+UT WOS:000349598400001
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Castellacci, G
+   Choi, YN
+AF Castellacci, Giuseppe
+   Choi, Youngna
+TI Modeling contagion in the Eurozone crisis via dynamical systems
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Multi-agent models; Dynamical systems; Bifurcation; Market instability
+   indicator; Sovereign credit; Systemic risk; Contagion
+ID PROSPECT-THEORY; DECISION; RISK
+AB We recently (Castellacci and Choi, 2013) formulated a theoretical framework for the modeling of financial instability contagion using the theories of dynamical systems. Here, our main goal is to model the Eurozone financial crisis within that framework. The underlying system comprises many economic agents that belong to several subsystems. In each instantiation of this framework, the hierarchy and nesting of the subsystems is dictated by the nature of the problem at hand. We describe in great detail how a suitable model can be set up for the Eurozone crisis. The dynamical system is defined by the evolution of the wealths of the individual agents and can be estimated by solving a nonlinear programming problem that incorporates features of prospect theory. Contagion is formulated in terms of how the market instability indicators for the different subsystems and the global system behave. We present several scenarios tailored to recent financial developments in the Eurozone and discussed within our model. These all point to the key role played by the elasticity coefficients of the wealth dynamical system. Accordingly, we put forward general recommendations on how regulators or other super-systemic agents may act to prevent and forestall the spreading of financial distress. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Castellacci, Giuseppe] NYU, New York, NY 10003 USA.
+   [Choi, Youngna] Montclair State Univ, Dept Math Sci, Montclair, NJ 07043 USA.
+RP Choi, YN (reprint author), Montclair State Univ, Dept Math Sci, Montclair, NJ 07043 USA.
+EM castel@alum.mit.edu; choiy@mail.montclair.edu
+CR [Anonymous], 2011, WALL STREET J
+   [Anonymous], 2012, FINANCIAL TIMES
+   BBC Timeline, 2012, BBC TIMELINE    0613
+   Castellacci G., 2013, QUANTITATIV IN PRESS
+   Choi Y, 2013, HANDBOOK ON SYSTEMIC RISK, P453
+   Choi YN, 2012, QUANT FINANC, V12, P1351, DOI 10.1080/14697688.2011.627880
+   Financial Times, 2011, FINANCIAL TIMES
+   Friedman M, 1948, J POLIT ECON, V56, P279, DOI 10.1086/256692
+   KAHNEMAN D, 1979, ECONOMETRICA, V47, P263, DOI 10.2307/1914185
+   Karolyi G., 2003, INT FINANC, V6
+   MarketWatch, 2011, MARKETWATCH     1026
+   Reinhart C. M., 2008, WORKING PAPER
+   Rieger MO, 2006, ECON THEOR, V28, P665, DOI 10.1007/s00199-005-0641-6
+   Riskdata, 2012, RISKDATA         APR
+   Straffin P., 1993, GAME THEORY STRATEGY
+   TVERSKY A, 1992, J RISK UNCERTAINTY, V5, P297, DOI 10.1007/BF00122574
+   Von Neumann J, 1944, THEORY GAMES EC BEHA
+   WEBER EU, 1994, PSYCHOL BULL, V115, P228, DOI 10.1037/0033-2909.115.2.228
+   Wikipedia, 2004, GREEK GOV DEBT CRIS
+NR 19
+TC 10
+Z9 10
+U1 0
+U2 0
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JAN
+PY 2015
+VL 50
+BP 400
+EP 410
+DI 10.1016/j.jbankfin.2014.05.013
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA AY3UD
+UT WOS:000347506900029
+DA 2019-12-27
+ER
+
+PT J
+AU Kleinow, J
+   Nell, T
+AF Kleinow, Jacob
+   Nell, Tobias
+TI Determinants of systemically important banks: the case of Europe
+SO JOURNAL OF FINANCIAL ECONOMIC POLICY
+LA English
+DT Article
+DE Banks; Economics of regulation
+ID RISK; SUBPRIME; CRISIS
+AB Purpose - This paper aims to investigate the drivers of systemic risk and contagion among European banks from 2007 to 2012. The authors explain why some banks are expected to contribute more to systemic events in the European financial system than others by analysing the tail co-movement of banks' security prices.
+   Design/methodology/approach - First, the authors derive a systemic risk measure from the concepts of marginal expected shortfall and conditional value at risk analysing tail co-movements of daily bank stock returns. The authors then run panel regressions for the systemic risk measure using idiosyncratic bank characteristics and a set of country and policy control variables.
+   Findings - The results comprise highly significant drivers of systemic risk in the European banking sector with important implications for research and banking regulation. Using a set of panel regressions, the authors identify bank size, asset and income structure, loss and liquidity coverage, profitability and several macroeconomic conditions as drivers of systemic risk.
+   Research limitations/implications - Analysing the tail co-movement of security prices excludes a number of "smaller" institutions without publicly listed securities. The other shortfall is that we do not assess the systemic impact of non-bank financial institutions.
+   Practical implications - Regulators have to consider a broad variety of indicators for assessing systemic risks. Existing microprudential-oriented rules are less effective, and policymakers may consider new measures like asset diversification to mitigate systemic risks in the banking system.
+   Originality/value - The authors contribute to existing empirical analyses in three ways. First, they propose a method to identify systemically important banks (SIBs). Second, they develop two measures to assess their potential negative impact on the system. Third, they contribute to the closing of the research gaps by analysing which macroprudential regulations for SIBs are most effective without hampering free market forces.
+C1 [Kleinow, Jacob] Univ Freiberg, Dept Finance, Freiberg, Germany.
+   [Nell, Tobias] Univ Freiberg, Dept Accounting, Freiberg, Germany.
+RP Kleinow, J (reprint author), Univ Freiberg, Dept Finance, Freiberg, Germany.
+EM jacob.kleinow@bwl.tu-freiberg.de
+CR Acharya Viral V., 2011, MEASURING SYSTEMIC R
+   Adrian T., 2011, NBER WORKING PAPERS
+   [Anonymous], 2013, GLOB SYST IMP BANKS
+   Bagehot W., 1873, LOMBARD STREET DESCR, P99
+   BAUM C. F., 2013, DISCUSSION PAPERS
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Benoit S., 2014, INT EC, V138, P1, DOI [10.1016/j.inteco.2013.11.004, DOI 10.1016/J.INTECO.2013.11.004]
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Black L., 2013, INT FINANCE DISCUSSI
+   Blundell-Wignall A., 2011, BANK COMPETITION FIN, P80
+   Bongini P, 2014, ECON NOTES, V43, P39, DOI 10.1111/ecno.12013
+   Bori N., 2012, CASMEF WORKING PAPER
+   Brownlees C., 2012, WORKING PAPER
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Carletti E., 2002, 146 EUR CENTR BANK
+   Chan-Lau J., 2010, 1098 IMF
+   De Jonghe O, 2015, J BANK FINANC, V61, pS3, DOI 10.1016/j.jbankfin.2014.12.024
+   de Mendonca HF, 2013, ECON MODEL, V33, P605, DOI 10.1016/j.econmod.2013.05.001
+   Demsetz R, 1996, FRBNY EC POLICY REV, V2, P1
+   Demsetz RS, 1997, J MONEY CREDIT BANK, V29, P300, DOI 10.2307/2953695
+   Dungey M., 2012, WORKING PAPER
+   Engle R., 2012, RES PAPER SERIES, V12-45
+   European Banking Authority, 2014, RES 2014 EU WID STRE
+   European Central Bank, 2014, LIST SIGN SUP ENT LI
+   Flannery MJ, 2013, J FINANC INTERMED, V22, P55, DOI 10.1016/j.jfi.2012.08.001
+   Fratianni M, 2013, J INT FINANC MARK I, V23, P240, DOI 10.1016/j.intfin.2012.08.004
+   Gropp R, 2014, REV FINANC, V18, P457, DOI 10.1093/rof/rft014
+   Guerra S., 2013, SYSTEMIC RISK MEASUR
+   Haq M, 2012, J INT FINANC MARK I, V22, P696, DOI 10.1016/j.intfin.2012.04.003
+   Hauptmann J, 2011, COMPUT RISK MANAG, P321, DOI 10.1007/978-3-642-19339-2_24
+   HAUSMAN JA, 1978, ECONOMETRICA, V46, P1251, DOI 10.2307/1913827
+   Hautsch N, 2014, INT J FORECASTING, V30, P781, DOI 10.1016/j.ijforecast.2013.09.004
+   Jobst A., 2013, 1354 IMF
+   Kaufman GG, 1995, RES FIN SERV, V7, P47
+   Kleinow J., 2014, APPL FINANCIAL EC, V24
+   Kleinow J., 2014, J GOVERNANCE REGULAT, V3
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Lee YH, 2014, GLOB FINANC J, V25, P17, DOI 10.1016/j.gfj.2014.03.003
+   Mishkin FS, 2011, J ECON PERSPECT, V25, P49, DOI 10.1257/jep.25.1.49
+   Molyneux P, 2014, J INT MONEY FINANC, V49, P258, DOI 10.1016/j.jimonfin.2014.03.006
+   Morgan D. P., 2005, STAFF REPORTS, V220
+   Murcia A., 2013, ODEON, V7, P127
+   Perotti E. C., 2011, 11188 IMF, V11
+   Prokopczuk M., 2009, THESIS
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Schmidt C. M., 2014, WIRTSCHAFTSDIENST, V94, P28, DOI [10.1007/s10273-014-1647-0, DOI 10.1007/S10273-014-1647-0]
+   Steffen S., 2014, HDB SYSTEMIC RISK, V37
+   Uhde A, 2009, J BANK FINANC, V33, P1299, DOI 10.1016/j.jbankfin.2009.01.006
+   Vallascas F, 2012, J INT MONEY FINANC, V31, P1745, DOI 10.1016/j.jimonfin.2012.03.011
+   Varotto S., 2014, SYSTEMIC RISK US EUR
+   Weiss GNF, 2014, J BANK FINANC, V41, P78, DOI 10.1016/j.jbankfin.2014.01.001
+   WHITE H, 1980, ECONOMETRICA, V48, P817, DOI 10.2307/1912934
+NR 53
+TC 4
+Z9 4
+U1 0
+U2 6
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1757-6385
+EI 1757-6393
+J9 J FINAN ECON POLICY
+JI J. Finan. Econ. Policy
+PY 2015
+VL 7
+IS 4
+BP 446
+EP +
+DI 10.1108/JFEP-07-2015-0042
+PG 32
+WC Economics
+SC Business & Economics
+GA V19NA
+UT WOS:000214824500009
+DA 2019-12-27
+ER
+
+PT J
+AU Wu, L
+   Zhuang, YM
+AF Wu, Liang
+   Zhuang, Yaming
+TI A reduced-form intensity-based model under fuzzy environments
+SO COMMUNICATIONS IN NONLINEAR SCIENCE AND NUMERICAL SIMULATION
+LA English
+DT Article
+DE Intensity-based model; Fuzzy environments; Derivative pricing
+ID BLACK-SCHOLES FORMULA; EUROPEAN OPTIONS; DEFAULTABLE BONDS; CREDIT-RISK;
+   RATES; SETS
+AB The external shocks and internal contagion are the important sources of default events. However, the external shocks and internal contagion effect on the company is not observed, we cannot get the accurate size of the shocks. The information of investors relative to the default process exhibits a certain fuzziness. Therefore, using randomness and fuzziness to study such problems as derivative pricing or default probability has practical needs. But the idea of fuzzifying credit risk models is little exploited, especially in a reduced-form model. This paper proposes a new default intensity model with fuzziness and presents a fuzzy default probability and default loss rate, and puts them into default debt and credit derivative pricing. Finally, the simulation analysis verifies the rationality of the model. Using fuzzy numbers and random analysis one can consider more uncertain sources in the default process of default and investors' subjective judgment on the financial markets in a variety of fuzzy reliability so as to broaden the scope of possible credit spreads. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Wu, Liang; Zhuang, Yaming] Southeast Univ, Sch Econ & Management, Nanjing 211189, Jiangsu, Peoples R China.
+   [Wu, Liang] Henan Inst Sci & Technol, Sch Math Sci, XinXiang 453003, Henan, Peoples R China.
+RP Wu, L (reprint author), Southeast Univ, Sch Econ & Management, Nanjing 211189, Jiangsu, Peoples R China.
+EM nidewuliang@163.com
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71171051]; Funding of Jiangsu Innovation Program
+   for Graduate Education [KYLX_0213]
+FX The authors are very grateful to the anonymous reviewers for their
+   insightful and constructive suggestions. The work is supported by the
+   National Natural Science Foundation of China (No. 71171051) and the
+   Funding of Jiangsu Innovation Program for Graduate Education (No.
+   KYLX_0213).
+CR Agliardi E, 2011, OPER RES-GER, V11, P299, DOI 10.1007/s12351-010-0087-x
+   Agliardi E, 2009, FUZZY SET SYST, V160, P2597, DOI 10.1016/j.fss.2008.12.017
+   Brody DC, 2007, APPL NUMER HARMON AN, P231, DOI 10.1007/978-0-8176-4545-8_13
+   Duffie D, 1999, REV FINANC STUD, V12, P687, DOI 10.1093/rfs/12.4.687
+   Duffie D, 2003, ANN APPL PROBAB, V13, P984
+   Fons J.S., 1994, FINANCIAL ANAL J, V50, P25, DOI DOI 10.2469/FAJ.V50.N5.25
+   Gupta, 1985, INTRO FUZZY ARITHMET
+   JARROW RA, 1995, J FINANC, V50, P53, DOI 10.2307/2329239
+   Lando D., 1998, REV DERIV RES, V2, P99, DOI DOI 10.1007/BF01531332
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   PURI ML, 1986, J MATH ANAL APPL, V114, P409, DOI 10.1016/0022-247X(86)90093-4
+   Simonelli MR, 2001, EUR J OPER RES, V135, P296, DOI 10.1016/S0377-2217(01)00041-8
+   Wu HC, 2005, INT J INTELL SYST, V20, P89, DOI 10.1002/int.20055
+   Wu HC, 2004, COMPUT OPER RES, V31, P1069, DOI 10.1016/S0305-0548(03)00065-0
+   Wu HC, 2007, APPL MATH COMPUT, V185, P136, DOI 10.1016/j.amc.2006.07.015
+   Xu WD, 2009, INSUR MATH ECON, V44, P337, DOI 10.1016/j.insmatheco.2008.09.003
+   Yoshida Y, 2003, EUR J OPER RES, V145, P221, DOI 10.1016/S0377-2217(02)00209-6
+   Yoshida Y, 2006, FUZZY SET SYST, V157, P2614, DOI 10.1016/j.fss.2003.11.022
+   ZADEH LA, 1965, INFORM CONTROL, V8, P338, DOI 10.1016/S0019-9958(65)90241-X
+NR 19
+TC 8
+Z9 8
+U1 0
+U2 35
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1007-5704
+EI 1878-7274
+J9 COMMUN NONLINEAR SCI
+JI Commun. Nonlinear Sci. Numer. Simul.
+PD MAY
+PY 2015
+VL 22
+IS 1-3
+BP 1169
+EP 1177
+DI 10.1016/j.cnsns.2014.07.021
+PG 9
+WC Mathematics, Applied; Mathematics, Interdisciplinary Applications;
+   Mechanics; Physics, Fluids & Plasmas; Physics, Mathematical
+SC Mathematics; Mechanics; Physics
+GA AU6GA
+UT WOS:000345700500087
+DA 2019-12-27
+ER

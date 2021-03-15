@@ -1,0 +1,210 @@
+
+PT J
+AU Gu, HY
+   Liu, ZX
+   Weng, YL
+AF Gu, Huaying
+   Liu, Zhixue
+   Weng, Yingliang
+TI Time-varying correlations in global real estate markets: A multivariate
+   GARCH with spatial effects approach
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Time-varying correlation; MGARCH; Spatial effects; Contagion effects;
+   Real estate markets
+ID DYNAMIC CONDITIONAL CORRELATION; FINANCIAL CRISIS; CONTAGION; MODEL;
+   SPILLOVERS; RETURNS; RATES
+AB The present study applies the multivariate generalized autoregressive conditional heteroscedasticity (MGARCH) with spatial effects approach for the analysis of the time-varying conditional correlations and contagion effects among global real estate markets. A distinguishing feature of the proposed model is that it can simultaneously capture the spatial interactions and the dynamic conditional correlations compared with the traditional MGARCH models. Results reveal that the estimated dynamic conditional correlations have exhibited significant increases during the global financial crisis from 2007 to 2009, thereby suggesting contagion effects among global real estate markets. The analysis further indicates that the returns of the regional real estate markets that are in close geographic and economic proximities exhibit strong co-movement. In addition, evidence of significantly positive leverage effects in global real estate markets is also determined. The findings have significant implications on global portfolio diversification opportunities and risk management practices. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Gu, Huaying; Liu, Zhixue; Weng, Yingliang] Huazhong Univ Sci & Technol, Sch Management, Wuhan 430074, Peoples R China.
+RP Gu, HY (reprint author), Huazhong Univ Sci & Technol, Sch Management, Wuhan 430074, Peoples R China.
+EM hygu@hust.edu.cn
+CR Aielli GP, 2013, J BUS ECON STAT, V31, P282, DOI 10.1080/07350015.2013.771027
+   Bauwens L, 2006, J APPL ECONOM, V21, P79, DOI 10.1002/jae.842
+   Bauwens L, 2016, COMPUT STAT DATA AN, V100, P17, DOI 10.1016/j.csda.2015.02.013
+   Bauwens L, 2016, J BUS ECON STAT, V34, P254, DOI 10.1080/07350015.2015.1037882
+   Bodnar T, 2016, J EMPIR FINANC, V36, P41, DOI 10.1016/j.jempfin.2015.12.002
+   BOLLERSLEV T, 1988, J POLIT ECON, V96, P116, DOI 10.1086/261527
+   Caporin M., 2013, ECON REV, V34, P559
+   CASE AC, 1993, J PUBLIC ECON, V52, P285, DOI 10.1016/0047-2727(93)90036-S
+   Chang GD, 2014, INT REV ECON FINANC, V31, P148, DOI 10.1016/j.iref.2013.12.005
+   Christoffersen P, 2014, INT J FORECASTING, V30, P807, DOI 10.1016/j.ijforecast.2014.01.001
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Gong P, 2016, PHYSICA A, V441, P173, DOI 10.1016/j.physa.2015.08.052
+   Hemche O, 2016, ECON MODEL, V52, P292, DOI 10.1016/j.econmod.2014.09.004
+   Kasch M, 2013, J FINANC ECONOMET, V11, P706, DOI 10.1093/jjfinec/nbs028
+   Kenett DY, 2015, QUANT FINANC, V15, P569, DOI 10.1080/14697688.2014.946660
+   Kenourgios D, 2014, PANOECONOMICUS, V61, P275, DOI 10.2298/PAN1403275K
+   Kotkatvuori-Ornberg J, 2013, INT REV FINANC ANAL, V28, P70, DOI 10.1016/j.irfa.2013.01.009
+   Mollah S, 2016, J INT FINANC MARK I, V41, P151, DOI 10.1016/j.intfin.2015.12.010
+   Munnix MC, 2014, QUANT FINANC, V14, P931, DOI 10.1080/14697688.2011.605075
+   Otranto E, 2016, J APPL STAT, V43, P604, DOI 10.1080/02664763.2015.1071343
+   Otranto E, 2010, COMPUT STAT DATA AN, V54, P1, DOI 10.1016/j.csda.2009.07.026
+   Reboredo JC, 2015, ECON SYST, V39, P474, DOI 10.1016/j.ecosys.2015.01.002
+   Rotta PN, 2016, APPL ECON, V48, P2367, DOI 10.1080/00036846.2015.1119794
+   Stosic D, 2015, PHYSICA A, V428, P13, DOI 10.1016/j.physa.2015.02.055
+   Tamakoshi G, 2014, INT REV ECON FINANC, V31, P105, DOI 10.1016/j.iref.2014.01.016
+   Tse CB, 2014, ECON MODEL, V37, P518, DOI 10.1016/j.econmod.2013.08.013
+   Tse YK, 2002, J BUS ECON STAT, V20, P351, DOI 10.1198/073500102288618496
+   Wang GJ, 2016, INT REV ECON FINANC, V46, P55, DOI 10.1016/j.iref.2016.08.004
+   Wang GJ, 2015, PHYSICA A, V424, P176, DOI 10.1016/j.physa.2015.01.025
+   Wang YD, 2016, EMPIR ECON, V50, P1481, DOI 10.1007/s00181-015-0983-2
+   Weng YL, 2016, EXPERT SYST APPL, V43, P175, DOI 10.1016/j.eswa.2015.09.002
+   Wheeler D.C., 2014, HDB REGIONAL SCI, P1435, DOI [DOI 10.1007/978-3-642-23430-9, 10. 1007/978-3-642-23430-9_77]
+   Yang M, 2016, PHYSICA A, V461, P92, DOI 10.1016/j.physa.2016.05.019
+   Zhu B, 2013, REAL ESTATE ECON, V41, P29, DOI 10.1111/j.1540-6229.2012.00337.x
+NR 34
+TC 3
+Z9 3
+U1 6
+U2 45
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD APR 1
+PY 2017
+VL 471
+BP 460
+EP 472
+DI 10.1016/j.physa.2016.12.056
+PG 13
+WC Physics, Multidisciplinary
+SC Physics
+GA EK2BX
+UT WOS:000393733300045
+DA 2019-12-27
+ER
+
+PT J
+AU Boffelli, S
+   Skintzi, VD
+   Urga, G
+AF Boffelli, Simona
+   Skintzi, Vasiliki D.
+   Urga, Giovanni
+TI High- and Low-Frequency Correlations in European Government Bond Spreads
+   and Their Macroeconomic Drivers
+SO JOURNAL OF FINANCIAL ECONOMETRICS
+LA English
+DT Article
+DE correlations; DECO; government bond spreads; high-frequency MIDAS
+   models; macroeconomic variables; volatilities
+ID AUTOREGRESSIVE CONDITIONAL HETEROSKEDASTICITY; STOCK-MARKET VOLATILITY;
+   SOVEREIGN DEBT; RISK PREMIA; DETERMINANTS; CONTAGION; LIQUIDITY;
+   VARIABLES; MODEL; FUNDAMENTALS
+AB We propose to adopt high-frequency DCC-MIDAS models to estimate high-and lowfrequency correlations in the 10-year government bond spreads for Belgium, France, Italy, the Netherlands, and Spain relative to Germany, from June 1, 2007 to May 31, 2012. The high-frequency component, reflecting financial market conditions, is evaluated at 15-minute frequency, while the low-frequency component, fixed through a month, depends on country-specific macroeconomic conditions. We find strong links between spreads volatility and worsening macroeconomic fundamentals; in presence of similar macroeconomic fundamentals relative spreads move together; the increasing correlation in spreads during the burst of the sovereign debt crisis cannot be entirely ascribed to macroeconomic factors but rather to changes in market liquidity. JEL: E44, G12, H63, C32, C58
+C1 Bergamo Univ, Bergamo, Italy.
+   Univ Peloponnese, Tripoli, Greece.
+   Cass Business Sch, London, England.
+RP Urga, G (reprint author), City Univ London, Cass Business Sch, Ctr Econometr Anal, Fac Finance, 106 Bunhill Row, London EC1Y 8TZ, England.
+EM g.urga@city.ac.uk
+OI Skintzi, Vasiliki/0000-0001-6995-3844
+FU Centre for Econometric Analysis, Cass Business School, City University
+   London, UK
+FX This article combines two closely related papers, one by Simona Boffeli
+   and Giovanni Urga previously circulated under the same title and one by
+   Vasiliki Skintzi previously circulated under the title "Dynamic
+   Component Correlation Models and Macroeconomic Determinants". We are
+   very grateful to the Editor, Eric Ghysels, for having sponsored and
+   encouraged us to merge the two contributions to produce a comprehensive
+   paper which fully explores a wide range of MIDAS models. We wish to
+   thank participants in the 24th (EC)2 Conference, The Econometrics
+   Analysis of Mixed Frequency Data (13-14 December 2013, University of
+   Cyprus, Nicosia, Cyprus) in particular Eric Ghysels and Rossen Valkanov;
+   in the 6th MAF Conference (22-24 April 2014, Lloyds Baia Hotel, Vietri
+   sul Mare, Italy); and in the 7th Annual Society for Financial
+   Econometrics-SoFIE-Conference (11-13 June 2014, Rotman School of
+   Management and the Global Risk Institute in Financial Services, Toronto,
+   Canada), in particular Andras Fulop, Eric Ghysels, and Robin Lumsdaine,
+   for very useful comments and suggestions. Special thanks to five
+   referees, an Associate Editor, and to Jan Novotny for having provided us
+   with very insightful and useful comments which greatly helped to improve
+   the article. The usual disclaimer applies. Special thanks to
+   Morningstar, in particular to Richard Barden, for having made available
+   the rich and unique data set used in this article. Simona Boffelli
+   acknowledges financial support from the Centre for Econometric Analysis,
+   Cass Business School, City University London, UK.
+CR Ait-Sahalia Y, 2010, J AM STAT ASSOC, V105, P1504, DOI 10.1198/jasa.2010.tm10163
+   Aizenman J, 2013, J INT MONEY FINANC, V34, P37, DOI 10.1016/j.jimonfin.2012.11.011
+   Allen F, 2009, ANNU REV FINANC ECON, V1, P97, DOI 10.1146/annurev.financial.050808.114321
+   Andreou E, 2013, J BUS ECON STAT, V31, P240, DOI 10.1080/07350015.2013.767199
+   Andreou E, 2010, J ECONOMETRICS, V158, P246, DOI 10.1016/j.jeconom.2010.01.004
+   Ang A, 2003, J MONETARY ECON, V50, P745, DOI 10.1016/S0304-3932(03)00032-1
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Aslanidis N, 2012, J EMPIR FINANC, V19, P454, DOI 10.1016/j.jempfin.2012.04.005
+   Attinasi M. G., 2011, SOVEREIGN DEBT SAFET
+   Baele L, 2010, REV FINANC STUD, V23, P2374, DOI 10.1093/rfs/hhq014
+   Bai J., 2012, EUROZONE SOVEREIGN B
+   Barndorff-Nielsen OE, 2011, J ECONOMETRICS, V162, P149, DOI 10.1016/j.jeconom.2010.07.009
+   Barrios S., 2009, 388 EUR COMM
+   Beber A, 2009, REV FINANC STUD, V22, P925, DOI 10.1093/rfs/hhm088
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Bikbov R, 2010, J ECONOMETRICS, V159, P166, DOI 10.1016/j.jeconom.2010.05.004
+   Boffelli S., 2014, MATH STAT METHODS AC, P35
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Boudt K, 2011, J EMPIR FINANC, V18, P353, DOI 10.1016/j.jempfin.2010.11.005
+   Brownlees CT, 2006, COMPUT STAT DATA AN, V51, P2232, DOI 10.1016/j.csda.2006.09.030
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Christiansen C, 2012, J APPL ECONOMET, V27, P956, DOI 10.1002/jae.2298
+   Colacito R, 2011, J ECONOMETRICS, V164, P45, DOI 10.1016/j.jeconom.2011.02.013
+   Conrad C, 2014, J EMPIR FINANC, V29, P26, DOI 10.1016/j.jempfin.2014.03.009
+   Diebold F.X., 2010, VOLATILITY TIME SERI, P97
+   Duffie D, 2007, REV FINANC STUD, V20, P1865, DOI 10.1093/rfs/hhm037
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R, 2012, J BUS ECON STAT, V30, P212, DOI 10.1080/07350015.2011.652048
+   Engle RF, 2013, REV ECON STAT, V95, P776, DOI 10.1162/REST_a_00300
+   FLEMING MJ, 2003, EC POLICY REV, V9, P83
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Friewald N, 2012, J FINANC ECON, V105, P18, DOI 10.1016/j.jfineco.2012.02.001
+   Galvao AB, 2013, INT J FORECASTING, V29, P395, DOI 10.1016/j.ijforecast.2012.10.006
+   Ghysels E, 2006, J ECONOMETRICS, V131, P59, DOI 10.1016/j.jeconom.2005.01.004
+   Ghysels E, 2005, J FINANC ECON, V76, P509, DOI 10.1016/j.jfineco.2004.03.008
+   Ghysels E., 2004, MIDAS TOUCH MIXED DA
+   Ghysels E, 2015, J ECONOMETR IN PRESS
+   Ghysels E, 2007, ECONOMET REV, V26, P53, DOI 10.1080/07474930600972467
+   Gros D, 2011, 243 CTR EUR POL STUD, P243
+   Hilscher J, 2010, REV FINANC, V14, P235, DOI 10.1093/rof/rfq005
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Lee SS, 2008, REV FINANC STUD, V21, P2535, DOI 10.1093/rfs/hhm056
+   Ludvigson SC, 2009, REV FINANC STUD, V22, P5027, DOI 10.1093/rfs/hhp081
+   Lustig H, 2014, J FINANC ECON, V111, P527, DOI 10.1016/j.jfineco.2013.12.005
+   Mody A, 2009, 108 IMF
+   Monfort A, 2014, REV FINANC, V18, P2103, DOI 10.1093/rof/rft049
+   Muller M, 2005, PHYS REV E, V71, DOI 10.1103/PhysRevE.71.046116
+   Paye BS, 2012, J FINANC ECON, V106, P527, DOI 10.1016/j.jfineco.2012.06.005
+   Rivers D., 2002, ECONOMET J, V5, P1, DOI DOI 10.1111/1368-423X.T01-1-00071
+   Schwert G. W., 1989, J FINANC, V44, P1207, DOI DOI 10.1111/J.1540-6261.1989.TB02647.X
+   Veronesi P, 1999, REV FINANC STUD, V12, P975, DOI 10.1093/rfs/12.5.975
+   von Hagen J, 2011, EUR J POLIT ECON, V27, P36, DOI 10.1016/j.ejpoleco.2010.07.002
+NR 53
+TC 0
+Z9 0
+U1 0
+U2 11
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1479-8409
+EI 1479-8417
+J9 J FINANC ECONOMET
+JI J. Financ. Econom.
+PD WIN
+PY 2017
+VL 15
+IS 1
+BP 62
+EP 105
+DI 10.1093/jjfinec/nbv023
+PG 44
+WC Business, Finance; Economics
+SC Business & Economics
+GA EO9ZX
+UT WOS:000397047700003
+OA Green Accepted
+DA 2019-12-27
+ER

@@ -1,0 +1,510 @@
+
+PT J
+AU Aboura, S
+AF Aboura, Sofiane
+TI Disentangling Crashes from Tail Events
+SO INTERNATIONAL JOURNAL OF FINANCE & ECONOMICS
+LA English
+DT Article
+DE Crash; volatility; risk management; contagion effect; systemic risk
+ID STOCK RETURNS; VOLATILITY; REGRESSION; INFERENCE; INDEX; RISK; NEWS
+AB The study of tail events has become a central preoccupation for academics, investors and policy makers, given the recent financial turmoil. However, the question on what differentiates a crash from a tail event remains unsolved. This article elaborates a new definition of stock market crash taking a risk management perspective based on an augmented extreme value theory methodology. An empirical test on the French stock market (1968-2008) indicates that it experienced only two crashes in 2007-2008 among the 12 identified over the whole period. Copyright (c) 2015John Wiley & Sons, Ltd.
+C1 Univ Paris 09, Dept Finance, DRM Finance, F-75775 Paris 16, France.
+RP Aboura, S (reprint author), Univ Paris 09, Dept Finance, DRM Finance, Pl Marechal de Lattre de Tassigny, F-75775 Paris 16, France.
+EM sofiane.aboura@dauphine.fr
+CR Balis TG, 2002, DISTURBING EXTREMAL
+   BALKEMA AA, 1974, ANN PROBAB, V2, P792, DOI 10.1214/aop/1176996548
+   Beirlants J, 2004, STAT EXTREMES THEORY
+   Beirlants J, 1996, PRACTICAL ANAL EXTRE
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   Black F., 1976, P 1976 M AM STAT ASS, P177
+   Breymann W, 2003, QUANT FINANC, V3, P1, DOI 10.1088/1469-7688/3/1/301
+   Brockmeijers J, 2011, MACROPRUDENTIAL POLI
+   CAMPBELL JY, 1992, J FINANC ECON, V31, P281, DOI 10.1016/0304-405X(92)90037-X
+   Christoffersens PF, 1998, HORIZON PROBLEMS EXT
+   Coless S, 2001, INTRO STAT MODELING
+   Dacorognas M, 1994, DISTRIBUTION EXTREMA
+   Dacorognas M, 2001, INTRO HIGH FREQUENCY
+   Danielsson J, 2001, J MULTIVARIATE ANAL, V76, P226, DOI 10.1006/jmva.2000.1903
+   Danielsson J., 2000, MONETARY EC STUDIES, V18, P25
+   DANIELSSON J., 1997, J EMPIR FINANC, V4, P241, DOI DOI 10.1016/S0927-5398(97)00008-X
+   De Sousa B, 2004, J COMPUT GRAPH STAT, V13, P974, DOI 10.1198/106186004X12335
+   Diebolds FX, 1999, ADV COMPUTATIONAL FI
+   Embrechtss P, 1997, MODELLING EXTREMAL E
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Gabaix X, 2003, NATURE, V423, P267, DOI 10.1038/nature01624
+   Gabaixs X, 2005, ARE STOCK MARKET CRA
+   Gallais-Hamonnos G, 2002, FINANCE, V2, P145
+   Gencay R, 2003, INSUR MATH ECON, V33, P337, DOI 10.1016/j.insmatheco.2003.07.004
+   Gettinby GD, 2006, INT J FINANC ECON, V11, P97, DOI 10.1002/ijfe.280
+   Gillis M, 2000, EXTREME VALUE THEORY
+   Gumbel EJ, 1941, ANN MATH STAT, V12, P163, DOI 10.1214/aoms/1177731747
+   Gumbels EJ, 1958, STAT EXTREMES
+   HALL P, 1985, ANN I STAT MATH, V37, P27, DOI 10.1007/BF02481078
+   Halls P., 1990, J MULTIVARIATE ANAL, V92, P177
+   Haultfoeuille D's X, 2010, REGRESSION QUANTILE
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   JONDEAU E, 2003, J EMPIR FINANC, V10, P559, DOI DOI 10.1016/S0927-5398(03)00005-7
+   Koenker R, 2001, J ECON PERSPECT, V15, P143, DOI 10.1257/jep.15.4.143
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Le Bris D, 2010, REV ECON-FR, V61, P421, DOI 10.3917/reco.613.0421
+   Le Briss D., 2008, WHAT IS STOCK MARKET
+   LeBarons B, 2004, EXTREME VALUE THEORY
+   Longin FM, 1996, J BUS, V69, P383, DOI 10.1086/209695
+   Longins F., 1993, BOOMS CRASHES APPL E
+   Longins F., 2001, TRADING REGULATION, V7, P197
+   Maheu JM, 2004, J FINANC, V59, P755, DOI 10.1111/j.1540-6261.2004.00648.x
+   Mandiras S, 2004, CHARACTERIZATION TAI
+   McNeil A. J., 2000, J EMPIR FINANC, V7, P271, DOI DOI 10.1016/S0927-5398(00)00012-8
+   McNeil A. J., 1997, ASTIN BULL, V27, P117, DOI DOI 10.2143/AST.27.1.563210
+   McNeils AJ, 1998, DEV SCENARIOS FUTURE
+   McNeils AJ, 1999, EXTREME VALUE THEORY
+   PICKANDS J, 1975, ANN STAT, V3, P119
+   ROSS SA, 1989, J FINANC, V44, P1, DOI 10.2307/2328272
+   Shillers RJ, 1988, PSYCHOL DIABETES PSY, P1
+   Tolikass K, 2005, DISTRIBUTION EXTREME
+NR 51
+TC 2
+Z9 2
+U1 0
+U2 4
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1076-9307
+EI 1099-1158
+J9 INT J FINANC ECON
+JI Int. J. Financ. Econ.
+PD JUL
+PY 2015
+VL 20
+IS 3
+BP 206
+EP 219
+DI 10.1002/ijfe.1510
+PG 14
+WC Business, Finance
+SC Business & Economics
+GA CN2QD
+UT WOS:000358265900002
+DA 2019-12-28
+ER
+
+PT J
+AU Greenwood, R
+   Landier, A
+   Thesmar, D
+AF Greenwood, Robin
+   Landier, Augustin
+   Thesmar, David
+TI Vulnerable banks
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Banks; Systemic risk; Fire sales; Price pressure; Contagion
+ID ASSET FIRE SALES; SYSTEMIC RISK; PURCHASES
+AB We present a model in which fire sales propagate shocks across bank balance sheets. When a bank experiences a negative shock to its equity, a natural way to return to target leverage is to sell assets. If potential buyers are limited, then asset sales depress prices, in which case one bank's sales impact other banks with common exposures. We show how this contagion effect adds up across the banking sector, and how it can be estimated empirically using balance sheet data. We compute bank exposures to system-wide deleveraging, as well as the spillovers induced by individual banks. Applying the model to European banks, we evaluate a variety of interventions to reduce their vulnerability to fire sales during the sovereign debt crisis. (C) 2015 Published by Elsevier B.V.
+C1 [Greenwood, Robin] Harvard Univ, Cambridge, MA 02138 USA.
+   [Greenwood, Robin] NBER, Cambridge, MA 02138 USA.
+   [Landier, Augustin] Toulouse Sch Econ, Toulouse, France.
+   [Thesmar, David] HEC Paris, Paris, France.
+   [Thesmar, David] CEPR, London, England.
+RP Landier, A (reprint author), Toulouse Sch Econ, Toulouse, France.
+FU JJ Laffont foundation; European Research Council under the European
+   Communitys [312503 SolSys]
+FX We are grateful to Tobias Adrian, Laurent Clerc, Fernando Duarte, Thomas
+   Eisenbach, Linda Goldberg, Sam Hanson, Anil Kashyap, Yueran Ma, Jamie
+   McAndrews, Thomas Philippon, Carmen Reinhart, Andrei Shleifer, Jeremy
+   Stein, Adi Sunderam, and seminar participants at the Federal Reserve
+   Bank of New York, Federal Reserve Board of Governors, the European
+   Central Bank, Toulouse School of Economics-Banque de France conference
+   in Paris, Harvard University, Sciences Po, University of Zurich, and the
+   National Bureau of Economic Research International Finance and
+   Macroeconomics and Risks of Financial Institutions meetings for their
+   input. We thank David Biery for research assistance. Landier aknowledges
+   financial support from a Scor Chair at the JJ Laffont foundation and
+   from the European Research Council under the European Communitys Seventh
+   Framework Programme (FP7/2007-2013) Grant Agreement no. 312503 SolSys.
+CR Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   ACHARYA VV, 2010, MEASURING SYST UNPUB
+   Adrian T, 2014, REV FINANC STUD, V27, P373, DOI 10.1093/rfs/hht068
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F., 2011, ASSET COMMONAL UNPUB
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Ang A., 2011, SYSTEMIC SOVER UNPUB
+   Ballester C, 2006, ECONOMETRICA, V74, P1403, DOI 10.1111/j.1468-0262.2006.00709.x
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brunnermeier MK, 2012, NBER MACROECON ANNU, V26, P149, DOI 10.1086/663991
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   Demange G., 2011, CONTAGION FINA UNPUB
+   Denbee E., 2012, NETWORKS KEY P UNPUB
+   Diebold F. X., 2011, NETWORK TOPOLO UNPUB
+   Drucker S, 2009, REV FINANC STUD, V22, P2835, DOI 10.1093/rfs/hhn067
+   Duarte F., 2014, FIRE SALE SPIL UNPUB
+   Duffie D., 2011, SYSTEMIC RISK UNPUB
+   Duffie D, 2010, J FINANC, V65, P1237, DOI 10.1111/j.1540-6261.2010.01569.x
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Ellul A, 2011, J FINANC ECON, V101, P596, DOI 10.1016/j.jfineco.2011.03.020
+   Feldhutter P, 2012, REV FINANC STUD, V25, P1155, DOI 10.1093/rfs/hhr093
+   Giglio S., 2013, CREDIT DEFAULT UNPUB
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Gourieroux C., 2012, LIQUIDATION EQ UNPUB
+   Greenwood R, 2005, J FINANC ECON, V75, P607, DOI 10.1016/j.jfineco.2004.03.007
+   Gromb D, 2007, FINANCIALLY CO UNPUB
+   Jotikasthira C, 2012, J FINANC, V67, P2015, DOI 10.1111/j.1540-6261.2012.01780.x
+   Kallestrup R., 2011, FINANCIAL SECT UNPUB
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Milbradt K, 2012, REV FINANC STUD, V25, P55, DOI 10.1093/rfs/hhr112
+   Newman Y., 2003, ILLIQUIDITY SP UNPUB
+   Pulvino TC, 1998, J FINANC, V53, P939, DOI 10.1111/0022-1082.00040
+   Schwarcz SL, 2008, GEORGETOWN LAW J, V97, P193
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Sorkin A, 2009, TOO BIG FAIL
+   Stein JC, 2012, Q J ECON, V127, P57, DOI 10.1093/qje/qjr054
+   Wagner W, 2011, J FINANC, V66, P1141, DOI 10.1111/j.1540-6261.2011.01666.x
+NR 38
+TC 71
+Z9 73
+U1 10
+U2 46
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD MAR
+PY 2015
+VL 115
+IS 3
+BP 471
+EP 485
+DI 10.1016/j.jfineco.2014.11.006
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA CD7DK
+UT WOS:000351250800003
+DA 2019-12-28
+ER
+
+PT J
+AU Capponi, A
+   Chen, PC
+AF Capponi, Agostino
+   Chen, Peng-Chu
+TI Systemic risk mitigation in financial networks
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Systemic risk; Financial networks; Default contagion; Mitigation
+   policies; Lender of last resort
+ID MARKET
+AB We propose a multi-period clearing framework, where the level of systemic risk is mitigated through the provision of liquidity assistance. The interbank liability network evolves stochastically over time, and assets of defaulted banks are sold to qualified banks within the network through a first-price sealed-bid auction. We find that policies targeting systemically important banks are more effective in core-periphery network structures, whereas those maximizing the total liquidity in the system are preferred in random network configurations. We assess sensitivity of systemic risk to variations in interbank liabilities as well as to their correlation structure. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Capponi, Agostino] Columbia Univ, Dept Ind Engn & Operat Res, New York, NY 10027 USA.
+   [Chen, Peng-Chu] Purdue Univ, Sch Ind Engn, W Lafayette, IN 47906 USA.
+RP Capponi, A (reprint author), Columbia Univ, Dept Ind Engn & Operat Res, New York, NY 10027 USA.
+EM ac3827@columbia.edu; chen621@purdue.edu
+FU Institute for New Economic Thinking (INET) [IN013-00015]
+FX The authors gratefully acknowledge the Institute for New Economic
+   Thinking (INET), who supported this research under the grant number
+   IN013-00015. We thank the participants at the Young Scholar Workshop
+   organized by INET in Hong Kong, and the conference participants at the
+   "Financial Stability Analysis: Using the Tools, Finding the Data"
+   conference, organized by the Office of Financial Research. We are also
+   very grateful to the discussant Kartik Anand, who provided very
+   constructive comments.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2008, 0807 WHART FIN I CTR
+   Angelini P, 1996, J BANK FINANC, V20, P853, DOI 10.1016/0378-4266(95)00029-1
+   BACHARACH M, 1965, INT ECON REV, V6, P294, DOI 10.2307/2525582
+   Bagehot W., 1873, LOMBARD STREET DESCR
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Blanchet J., 2012, WORKING PAPER
+   Caruana Jaime, 2010, SYSTEMIC RISK DEAL I
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Docherty P, 2010, J FINANC STABIL, V6, P103, DOI 10.1016/j.jfs.2009.08.004
+   EASLEY D., 2010, NETWORKS CROWDS MARK
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   European Central Bank, 2009, FINANCIAL STABILITY
+   Federal Deposit Insurance Corporation, 2013, FED DEP INS CORP RES
+   Financial Stability Board, 2011, POL MEAS ADDR SYST I
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P1, DOI 10.1017/CBO9781139151184
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   GILIBERTO SM, 1989, J FINANC, V44, P59, DOI 10.2307/2328275
+   Merton RC, 2013, FINANC ANAL J, V69, P22, DOI 10.2469/faj.v69.n2.5
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Staum J, 2012, WORKING PAPER
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+NR 24
+TC 15
+Z9 15
+U1 4
+U2 28
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD SEP
+PY 2015
+VL 58
+BP 152
+EP 166
+DI 10.1016/j.jedc.2015.06.008
+PG 15
+WC Economics
+SC Business & Economics
+GA CQ3PP
+UT WOS:000360515300008
+DA 2019-12-27
+ER
+
+PT J
+AU Kroeger, F
+AF Kroeger, Frens
+TI The development, escalation and collapse of system trust: From the
+   financial crisis to society at large
+SO EUROPEAN MANAGEMENT JOURNAL
+LA English
+DT Article
+DE System trust; Trust in expert systems; Confidence; Trust and modernity;
+   Trust crises; Financial crises
+ID INTERPERSONAL-TRUST; INTEGRATIVE MODEL; ORGANIZATIONS; RISK
+AB This theoretical outline sketches the development, escalation and collapse of trust in expert systems, using the recent financial crisis as an example, but aiming at the description of broader underlying mechanisms. After reviewing the literature on the genesis of system trust, it identifies spirals of system trust that escalate both "vertically" (actors placing too much trust in the system) and "horizontally" (wider and wider circles of actors placing trust in the system). Both the apparent stability and the potential for collapse inherent in these spirals results from the fact that system trust is typically more distant, and consequently lacks some of the safeguards present in interpersonal trust. Ironically, thus, attempts to eliminate the influence of trust by introducing impersonal rule systems may increase rather than reduce the risk posed to systemic stability. (C) 2015 Elsevier Ltd. All rights reserved.
+C1 [Kroeger, Frens] Coventry Univ, Ctr Trust Peace & Social Relat, Coventry, W Midlands, England.
+RP Kroeger, F (reprint author), Coventry Univ, Ctr Trust Peace & Social Relat, Coventry, W Midlands, England.
+EM frens.kroeger@coventry.ac.uk
+CR Acharya Viral V., 2009, RESTORING FINANCIAL, V1, P1
+   [Anonymous], 2013, GUARDIAN
+   [Anonymous], 2014, GUARDIAN
+   Armstrong A, 2012, NATL INST ECON REV, V221, pR4, DOI 10.1177/002795011222100111
+   Bachmann R, 2001, ORGAN STUD, V22, P337, DOI 10.1177/0170840601222007
+   BACHMANN R, 1998, TRUST ORG CONCEPTUAL, P298
+   Bachmann R, 2014, PUBLIC TRUST IN BUSINESS, P266
+   Baker HK, 2010, BEHAV FINANCE INVEST
+   Barr A, 2009, WHOM CAN WE TRUST GR, P65
+   Besson M, 2008, European Management Journal, V26, P11, DOI 10.1016/j.emj.2007.08.007
+   Bigley GA, 1998, ACAD MANAGE REV, V23, P405, DOI 10.2307/259286
+   Bollaert H, 2010, EUR MANAG J, V28, P362, DOI 10.1016/j.emj.2010.01.001
+   Braithwaite J., 1998, TRUST GOVERNANCE, P343
+   Braithwaite V.A., 1998, TRUST GOVERNANCE
+   Brunnermeier M, 2009, GENEVA REPORTS WORLD, V11
+   Burt R.S., 1996, TRUST ORG FRONTIERS, P68, DOI [DOI 10.4135/9781452243610.N5, DOI 10.4135/9781452243610.n5]
+   Carruthers B. G., 2009, WHOM CAN WE TRUST GR, P219
+   Cialdini R. B., 1993, INFLUENCE
+   Cook K.S., 2009, WHOM CAN WE TRUST GR
+   Cook Karen S., 2001, TRUST SOC, P148
+   Criado S., 2008, 0808 BANC ESP
+   Danielsson J, 2008, J FINANC STABIL, V4, P321, DOI 10.1016/j.jfs.2008.09.003
+   Deutschlandradio, 2014, BAYER LAND WUSST SIE
+   Edelman Trust Barometer, 2013, ED TRUST BAR 2013 EX
+   Edelman Trust Barometer, 2015, ED TRUST BAR 2015 GL
+   Epstein G. A., 2005, FINANCIALIZATION WOR
+   Farrell Henry, 2009, WHOM CAN WE TRUST GR, P127
+   Fergusson Adam, 2010, MONEY DIES NIGHTMARE
+   Format, 2013, BAYERNLB PROZ SCHIED
+   Gambetta D., 2005, STREETWISE TAXI DRIV
+   Giddens Anthony, 1990, CONSEQUENCES MODERNI
+   Gill J., 1996, EUROPEAN MANAGEMENT, V14, P81
+   Gillespie N., 2012, RESTORING TRUST ORG
+   Gillespie N, 2013, ELGAR ORIG REF, P177
+   Goffman Erving, 1959, PRESENTATION SELF EV
+   Goldin I, 2010, GLOB POLICY, V1, P4, DOI 10.1111/j.1758-5899.2009.00011.x
+   Gounaris K. M., 2009, J FINANCIAL SERVICE, V63, P75
+   Grover SL, 2014, EUR MANAG J, V32, P689, DOI 10.1016/j.emj.2014.01.002
+   Hardin R., 2002, TRUST TRUSTWORTHINES
+   Harris JD, 2014, PUBLIC TRUST IN BUSINESS, P1, DOI 10.1017/CBO9781139152389
+   Hensman A, 2011, EUR MANAG J, V29, P51, DOI 10.1016/j.emj.2010.08.006
+   Holland J., 1985, EUROPEAN MANAGEMENT, V3, P94
+   Josang A., 2007, LNCS, V2006, P209, DOI DOI 10.1007/978-3-540-74810-6
+   Khodyakov D, 2007, SOCIOLOGY, V41, P115, DOI 10.1177/0038038507072285
+   Kroeger F., CAMBRIDGE J IN PRESS
+   Kroeger F, 2013, ELGAR ORIG REF, P261
+   Kroeger F, 2012, ORGANIZATION, V19, P743, DOI 10.1177/1350508411420900
+   Lewicki RJ, 2006, J MANAGE, V32, P991, DOI 10.1177/0149206306294405
+   Luhmann N., 1979, TRUST POWER
+   Luhmann N., 1988, TRUST MAKING BREAKIN, P94
+   MacKenzie D. A., 2006, ENGINE NOT CAMERA FI
+   Mayer C, 2008, EUR FINANC MANAG, V14, P617, DOI 10.1111/j.1468-036X.2008.00454.x
+   MAYER RC, 1995, ACAD MANAGE REV, V20, P709, DOI 10.2307/258792
+   Mazumder MI, 2010, STUD ECON FINANC, V27, P110, DOI 10.1108/10867371011048616
+   McEvily B, 2003, ORGAN SCI, V14, P91, DOI 10.1287/orsc.14.1.91.12814
+   McEvily B, 2004, TRUST DISTRUST ORG, P189
+   Mcknight DH, 1998, ACAD MANAGE REV, V23, P473, DOI 10.5465/AMR.1998.926622
+   Mellewigt T, 2007, MANAG DECIS ECON, V28, P833, DOI 10.1002/mde.1321
+   Merton RK, 1940, SOC FORCES, V18, P560, DOI 10.2307/2570634
+   Meyerson D., 1996, TRUST ORG FRONTIERS, P166, DOI DOI 10.4135/9781452243610.N9
+   Mollering G, 2013, ELGAR ORIG REF, P285
+   Mollering G, 2006, HANDBOOK OF TRUST RESEARCH, P355
+   Noteboom B., 2002, TRUST FORMS FDN FUNC
+   Papakostas A., 2012, CIVILIZING PUBLIC SP
+   Perks H., 2003, EUROPEAN MANAGEMENT, V21, P338, DOI DOI 10.1016/S0263-2373(03)00049-5
+   Pixley J., 2004, EMOTIONS FINANCE DIS
+   Porter G., 2010, ORG TRUST CULTURAL P, P255
+   Reinhart CM, 2008, AM ECON REV, V98, P339, DOI 10.1257/aer.98.2.339
+   Ritzer G, 1996, MCDONALDIZATION SOC
+   Sabel C.F, 1993, EXPLORATIONS EC SOCI, P104
+   Sapienza Paola, 2009, 1 CREDIT MARKET TURM, P29
+   Schoorman FD, 2007, ACAD MANAGE REV, V32, P344
+   SHAPIRO SP, 1987, AM J SOCIOL, V93, P623, DOI 10.1086/228791
+   Shiller R. J., 2008, SUBPRIME SOLUTION TO
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Simmel Georg, 1990, PHILOS MONEY
+   Six FE, 2007, J MANAG GOV, V11, P285, DOI 10.1007/s10997-007-9030-9
+   Stevenson B, 2011, AM ECON REV, V101, P281, DOI 10.1257/aer.101.3.281
+   Sueddeutsche Zeitung, 2010, MIN BAYERNLB KRIS BE
+   SYDOW J, 1998, TRUST ORG CONCEPTUAL, P31
+   Sztompka P, 1999, TRUST SOCIOLOGICAL T
+   Teubner Gunther, 1987, JURIDIFICATION SOCIA
+   Walls J, 2004, HEALTH RISK SOC, V6, P133, DOI 10.1080/1369857042000219788
+   Weber Max, 1968, EC SOC OUTLINE INTER
+   Wicks AC, 2014, PUBLIC TRUST IN BUSINESS, P1
+   Williamson O., 1996, MECH GOVERNANCE
+   Williamson O.E., 1975, MARKETS HIERARCHIES
+   WILLIAMSON OE, 1993, J LAW ECON, V36, P453, DOI 10.1086/467284
+NR 88
+TC 6
+Z9 6
+U1 0
+U2 23
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0263-2373
+EI 1873-5681
+J9 EUR MANAG J
+JI Eur. Manag. J.
+PD DEC
+PY 2015
+VL 33
+IS 6
+BP 431
+EP 437
+DI 10.1016/j.emj.2015.08.001
+PG 7
+WC Business; Management
+SC Business & Economics
+GA DA0MX
+UT WOS:000367492300002
+DA 2019-12-28
+ER
+
+PT J
+AU Calluzzo, P
+   Dong, GN
+AF Calluzzo, Paul
+   Dong, Gang Nathan
+TI Has the financial system become safer after the crisis? The changing
+   nature of financial institution risk
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Banking risk; Financial institution; Systemic risk; Catastrophic risk
+ID GENERAL EQUILIBRIUM; MARKET-INFORMATION; INFERENCE; MODELS; POLICY;
+   BANKS
+AB Six years after the collapse of Lehman Brothers, the question of whether the U.S. financial system has become less risky remains unanswered. On the one side, new regulations including Dodd-Frank and Basel III have made improvements by requiring higher bank capital, and financial institutions themselves have reduced risk-taking activities. on the other side, it has been argued that "the fundamental risks remained and the efforts of regulators and politicians were simply rearranging the deckchairs on the Titanic." (Baily and Elliott, 2013) This paper highlights the changing nature of financial institution risk from 2005 to 2011. It finds that while these institutions have become less risky individually after the crisis, the financial market has become more vulnerable to systemic contagion. The causal inference that the crisis and the post-crisis legislation have gradually changed the nature of financial institution risk is drawn from a quasi-experimental design. This finding suggests that the ever more integrated financial system might experience more synchronized contractions in future crises, providing empirical support for the proposals of the inter-bank collective regulation of banks by Acharya (2009) in addition to the intra-bank collective regulations as in Froot and Stein (1998) and BIS (1996, 1999). (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Calluzzo, Paul] Queens Univ, Queens Sch Business, Kingston, ON K7L 2P3, Canada.
+   [Dong, Gang Nathan] Columbia Univ, Dept Hlth Policy & Management, New York, NY 10032 USA.
+RP Dong, GN (reprint author), Columbia Univ, Dept Hlth Policy & Management, 600 W 168th St, New York, NY 10032 USA.
+EM paul.calluzzo@queensu.ca; gd2243@columbia.edu
+CR Acharya V, 2010, MEASURING SYSTEMIC R
+   Acharya VV, 2011, J MONETARY ECON, V58, P436, DOI 10.1016/j.jmoneco.2011.05.006
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adams Z., 2010, MODELING SPILLOVER E
+   Adrian Tobias, 2008, FED RESERVE BANK NEW
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen L, 2007, J BANK FINANC, V31, P1191, DOI 10.1016/j.jbankfin.2006.10.007
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Angrist J. D., 2000, HDB LABOR EC A, V3, P1277, DOI DOI 10.1016/S1573-4463(99)03004-7
+   Baily Martin, 2013, 5 YEARS LEHMAN WERE
+   Bali TG, 2008, J RISK INSUR, V75, P411, DOI 10.1111/j.1539-6975.2008.00266.x
+   Bank for International Settlements (BIS), 1999, NEW CAP AD FRAM
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Billio M., 2010, 16223 NBER
+   BIS, 1996, AM CAP ACC INC MARK
+   Bisias Dimitrios, 2012, 20120001 US DEP TREA
+   Brownlees Ch., 2010, VOLATILITY CORRELATI
+   Brunnermeier Markus, 2012, NONINTEREST INCOME S
+   Chan-Lau J., 2010, 1098 IMF
+   Chernozhukov V, 2005, ANN STAT, V33, P806, DOI 10.1214/009053604000001165
+   Chernozhukov V, 2004, ECONOMETRICA, V72, P1445, DOI 10.1111/j.1468-0262.2004.00540.x
+   Chernozhukov V, 2011, REV ECON STUD, V78, P559, DOI 10.1093/restud/rdq020
+   Chichilnisky G., 2010, J PROBABILITY STAT
+   Chichilnisky G, 2006, J MATH ECON, V42, P499, DOI 10.1016/j.jmateco.2006.06.001
+   Curry TJ, 2008, J BANK FINANC, V32, P807, DOI 10.1016/j.jbankfin.2007.06.007
+   Curry Timothy J., 2007, J ECON BUS, V59, P538
+   Demirguc-Kunt A, 2013, J MONEY CREDIT BANK, V45, P1147, DOI 10.1111/jmcb.12047
+   Dewatripont Mathias, 1993, PRUDENTIAL REGULATIO
+   Distinguin Isabelle, 2006, J FINANCIAL SERVICES, V30, P151
+   Docking DS, 1997, J FINANC ECON, V43, P219, DOI 10.1016/S0304-405X(96)00895-1
+   DWYER G., 2009, WHAT IS SYSTEMIC RIS
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Flannery MJ, 1998, J MONEY CREDIT BANK, V30, P273, DOI 10.2307/2601102
+   Flannery MJ, 1996, J FINANC, V51, P1347, DOI 10.2307/2329397
+   Freixas X, 1998, J FINANC INTERMED, V7, P3, DOI 10.1006/jfin.1998.0230
+   Freixas X., 1997, MICROECONOMICS BANKI
+   Froot KA, 1998, J FINANC ECON, V47, P55, DOI 10.1016/S0304-405X(97)00037-8
+   Furlong Frederick T., 2006, ECON REV, P19
+   Gauthier C., 2010, 20104 BANK CAN
+   Giannone D, 2012, ECON J, V122, pF467, DOI 10.1111/j.1468-0297.2012.02553.x
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Harris Milton, 2012, 1255 CHIC BOOTH
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Jorion P, 2006, VALUE RISK NEW BENCH
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   Kaufman G. G., 2003, INDEP REV, V7, P371
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   KNIGHT K, 2001, EXTREMES, V4, P87, DOI DOI 10.1023/A:1013991808181
+   Koenker R., 2005, QUANTILE REGRESSION
+   Krainer J., 2003, ECON REV, P29
+   KUPIEC PH, 1998, J DERIV, V6, P7, DOI DOI 10.3905/JOD.1998.408008
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   MERTON RC, 1987, J FINANC, V42, P483, DOI 10.2307/2328367
+   MEYER BD, 1995, J BUS ECON STAT, V13, P151, DOI 10.2307/1392369
+   Petersen MA, 2009, REV FINANC STUD, V22, P435, DOI 10.1093/rfs/hhn053
+   PICKANDS J, 1975, ANN STAT, V3, P119
+   POSNER RICHARD A., 2004, CATASTROPHE RISK RES
+   Reichlin L, 2014, J MACROECON, V39, P387, DOI 10.1016/j.jmacro.2013.09.012
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   RUBIN DB, 1974, J EDUC PSYCHOL, V66, P688, DOI 10.1037/h0037350
+   RUBIN DB, 1978, ANN STAT, V6, P34, DOI 10.1214/aos/1176344064
+   Shaffer Sherrill, 1985, ATLANTIC ECON J, V13, P99
+   Shapiro A, 2002, REV FINANC STUD, V15, P97, DOI 10.1093/rfs/15.1.97
+   Slijkerman JF, 2013, J BANK FINANC, V37, P773, DOI 10.1016/j.jbankfin.2012.10.027
+   Tarashev N., 2010, BIS WORKING PAPERS, V308
+   United Nations, 2000, SOC CHOICE WELFARE, V14, P357
+   United Nations, 1997, SOC CHOICE WELFARE, V14, P357
+   Wong Alfred, 2010, 031003 HONG KONG MON
+   Zhou C., 2009, 232 DNB
+NR 70
+TC 12
+Z9 12
+U1 1
+U2 24
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD APR
+PY 2015
+VL 53
+BP 233
+EP 248
+DI 10.1016/j.jbankfin.2014.10.009
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA CE4JT
+UT WOS:000351797600016
+DA 2019-12-27
+ER

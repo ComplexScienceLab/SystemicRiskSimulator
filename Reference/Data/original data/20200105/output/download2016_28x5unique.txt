@@ -1,0 +1,442 @@
+
+PT J
+AU Cameron, CG
+   Synnott, PG
+   Pearson, SD
+   Dubois, RW
+   Ciarametaro, M
+   Ollendorf, DA
+AF Cameron, Christopher G.
+   Synnott, Patricia G.
+   Pearson, Steven D.
+   Dubois, Robert W.
+   Ciarametaro, Michael
+   Ollendorf, Daniel A.
+TI Evaluating the Importance of Heterogeneity of Treatment Effect:
+   Variation in Patient Utilities Can Influence Choice of the "Optimal"
+   Oral Anticoagulant for Atrial Fibrillation
+SO VALUE IN HEALTH
+LA English
+DT Article
+DE atrial fibrillation; benefit-harm assessment comparative effectiveness
+   research; efficacy; health-related quality of life; heterogeneity;
+   network meta-analysis; new oral anticoagulants
+ID NETWORK METAANALYSIS; COMPETING RISK; WARFARIN; INFORMATION; REGISTRY;
+   STROKE; SCORES; LEVEL
+AB Objectives: To investigate heterogeneity of treatment effect (HTE) for anticoagulants in atrial fibrillation across subgroups defined by 1) clinical characteristics and 2) variation in patient utilities for benefits and harms of treatment. Methods: We reanalyzed aggregate data from a published network meta-analysis that compared four anticoagulants for atrial fibrillation (apixaban, dabigatran, edoxaban, and rivaroxaban) as well as warfarin. Event rates for stroke/systemic embolism (SE) and major bleeding were generated for each agent across seven subgroups, and rankings were developed on the basis of clinical performance. Utilities were derived from a national catalog and then applied to generate summary measures of benefit. The choice between any two agents was examined across a range of plausible utility values, defined as the interquartile range for stroke/SE and major bleeding. Results: Little HTE was apparent in clinical and utility-adjusted analyses. Dabigatran 150 mg produced the lowest rates of stroke/SE, and edoxaban 30 mg had the lowest rate of major bleeding. Greater HTE was observed when utilities were varied across a plausible utility range. For example, among patients 75 years and older, dabigatran 150 mg would be preferred over edoxaban 30 mg when mean utility estimates are used. The preferred agent, however, would change at plausible utility thresholds of 0.6 and 0.7 for major bleeding and stroke/SE, respectively. Nearly 25% of all possible comparisons would see a change in preferred treatment within the plausible utility range. Conclusions: The optimal choice of anticoagulant in atrial fibrillation differs across subgroups defined by clinical characteristics and reasonable ranges of utilities.
+C1 [Cameron, Christopher G.] Cornerstone Res Grp, Burlington, ON, Canada.
+   [Synnott, Patricia G.; Pearson, Steven D.; Ollendorf, Daniel A.] Inst Clin & Econ Review, Two Liberty Sq,9th Floor, Boston, MA 02109 USA.
+   [Dubois, Robert W.; Ciarametaro, Michael] Natl Pharmaceut Council, Washington, DC USA.
+RP Ollendorf, DA (reprint author), Inst Clin & Econ Review, Two Liberty Sq,9th Floor, Boston, MA 02109 USA.
+EM dollendorf@icer-review.org
+CR Achana FA, 2014, BMC MED RES METHODOL, V14, DOI 10.1186/1471-2288-14-92
+   Ades AE, 2015, RES SYNTH METHODS, V6, P96, DOI 10.1002/jrsm.1130
+   Ades AE, 2010, VALUE HEALTH, V13, P976, DOI 10.1111/j.1524-4733.2010.00784.x
+   Brown S, 2014, SYST REV, V3, DOI 10.1186/2046-4053-3-110
+   Cameron C, 2014, BMJ OPEN, V4, DOI 10.1136/bmjopen-2013-004301
+   Connolly SJ, 2009, NEW ENGL J MED, V361, P1139, DOI 10.1056/NEJMoa0905561
+   Coyle D, 2013, VALUE HEALTH, V16, P498, DOI 10.1016/j.jval.2013.01.009
+   Dias S, 2013, MED DECIS MAKING, V33, P607, DOI 10.1177/0272989X12458724
+   Efthimiou O, 2014, STAT MED, V33, P2275, DOI 10.1002/sim.6117
+   Fink G, 2012, J DEV EFFECT, V6, P1
+   Fleurence RL, 2007, PHARMACOECONOMICS, V25, P3, DOI 10.2165/00019053-200725010-00002
+   Gage BF, 2001, JAMA-J AM MED ASSOC, V285, P2864, DOI 10.1001/jama.285.22.2864
+   Giugliano RP, 2013, NEW ENGL J MED, V369, P2093, DOI 10.1056/NEJMoa1310907
+   Granger CB, 2011, NEW ENGL J MED, V365, P981, DOI 10.1056/NEJMoa1107039
+   Jansen JP, 2012, RES SYNTH METHODS, V3, P177, DOI 10.1002/jrsm.1048
+   Kent DM, 2008, TRIALS, V9, DOI 10.1186/1745-6215-9-30
+   Kent DM, 2010, TRIALS, V11, DOI 10.1186/1745-6215-11-85
+   Kohler M, 2015, BMJ-BRIT MED J, V350, DOI 10.1136/bmj.h796
+   Lu GB, 2014, VALUE HEALTH, V17, P280, DOI 10.1016/j.jval.2013.12.006
+   Lyman Gary H, 2005, BMC Med Res Methodol, V5, P14, DOI 10.1186/1471-2288-5-14
+   Nikolakopoulou A, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0086754
+   Patel MR, 2011, NEW ENGL J MED, V365, P883, DOI 10.1056/NEJMoa1009638
+   Schmitz S, 2013, STAT MED, V32, P2935, DOI 10.1002/sim.5764
+   Sullivan PW, 2006, MED DECIS MAKING, V26, P401, DOI 10.1177/0272989X06290496
+   Sullivan PW, 2005, MED CARE, V43, P736, DOI 10.1097/01.mlr.0000172050.67085.4f
+   Sutton AJ, 2008, STAT MED, V27, P651, DOI 10.1002/sim.2916
+   Turner RM, 2012, INT J EPIDEMIOL, V41, P818, DOI 10.1093/ije/dys041
+   van Valkenhoef G, 2012, J CLIN EPIDEMIOL, V65, P394, DOI 10.1016/j.jclinepi.2011.09.005
+   Willke RJ, 2012, BMC MED RES METHODOL, V12, DOI 10.1186/1471-2288-12-185
+   Zhang J, 1998, JAMA-J AM MED ASSOC, V280, P1690, DOI 10.1001/jama.280.19.1690
+NR 30
+TC 2
+Z9 2
+U1 0
+U2 2
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1098-3015
+EI 1524-4733
+J9 VALUE HEALTH
+JI Value Health
+PD JUL-AUG
+PY 2016
+VL 19
+IS 5
+BP 661
+EP 669
+DI 10.1016/j.jval.2016.03.1835
+PG 9
+WC Economics; Health Care Sciences & Services; Health Policy & Services
+SC Business & Economics; Health Care Sciences & Services
+GA DU5MA
+UT WOS:000382254600021
+PM 27565284
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Kim, HY
+   Oh, G
+AF Kim, Ho-Yong
+   Oh, Gabjin
+TI Analysis of information flows among individual companies in the KOSDAQ
+   market
+SO JOURNAL OF THE KOREAN PHYSICAL SOCIETY
+LA English
+DT Article
+DE Information flows; Systemic risk; KOSDAQ
+ID SYSTEMIC RISK; CONNECTEDNESS; CONTAGION; SECTORS
+AB In this paper, we employ the variance decomposition method to measure the strength and the direction of interconnections among companies in the KOSDAQ (Korean Securities Dealers Automated Quotation) stock market. We analyze the 200 companies listed on the KOSDAQ market from January 2001 to December 2015. We find that the systemic risk, measured by using the interconnections, increases substantially during periods of financial crisis such as the bankruptcy of Lehman brothers and the European financial crisis. In particular, we find that the increases in the aggregated information flows can be used to predict the increment of the market volatility that may occur during a sub-prime financial crisis period.
+C1 [Kim, Ho-Yong; Oh, Gabjin] Chosun Univ, Div Business Adm, Coll Business, Gwangju 61452, South Korea.
+RP Oh, G (reprint author), Chosun Univ, Div Business Adm, Coll Business, Gwangju 61452, South Korea.
+EM phecogjoh@gmail.com
+FU Chosun University, Korea
+FX This study was supported by research funds from Chosun University,
+   Korea, 2015.
+CR Adrian T., 2009, 348 FED RES BANK
+   Bandt O. D., 2000, 35 EUR CENTR BANK
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H., 2006, INT EC EC POLICY, V3, P73
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   GARMAN MB, 1980, J BUS, V53, P67, DOI 10.1086/296072
+   Ma G., 2009, BIS WORKING PAPERS
+   Oh G, 2014, J KOREAN PHYS SOC, V65, P2140, DOI 10.3938/jkps.65.2140
+   Sugihara G, 2012, SCIENCE, V338, P496, DOI 10.1126/science.1227079
+   Wong AYT, 2011, EMERG MARK REV, V12, P432, DOI 10.1016/j.ememar.2011.06.004
+   Zhou C., 2010, INT J CENT BANK, V6, P4
+NR 14
+TC 3
+Z9 3
+U1 0
+U2 5
+PU KOREAN PHYSICAL SOC
+PI SEOUL
+PA 635-4, YUKSAM-DONG, KANGNAM-KU, SEOUL 135-703, SOUTH KOREA
+SN 0374-4884
+EI 1976-8524
+J9 J KOREAN PHYS SOC
+JI J. Korean Phys. Soc.
+PD AUG
+PY 2016
+VL 69
+IS 4
+BP 455
+EP 460
+DI 10.3938/jkps.69.455
+PG 6
+WC Physics, Multidisciplinary
+SC Physics
+GA DU6OV
+UT WOS:000382335400001
+DA 2019-12-27
+ER
+
+PT J
+AU Nucera, F
+   Schwaab, B
+   Koopman, SJ
+   Lucas, A
+AF Nucera, Federico
+   Schwaab, Bernd
+   Koopman, Siem Jan
+   Lucas, Andre
+TI The information in systemic risk rankings
+SO JOURNAL OF EMPIRICAL FINANCE
+LA English
+DT Article
+DE Systemic risk contribution; Risk rankings; Forecast combination;
+   Financial regulation; Banking supervision
+AB We propose to pool alternative systemic risk rankings for financial institutions using the method of principal components. The resulting overall ranking is less affected by estimation uncertainty and model risk. We apply our methodology to disentangle the common signal and the idiosyncratic components from a selection of key systemic risk rankings that have been proposed recently. We use a sample of 113 listed financial sector firms in the European Union over the period 2002-2013. The implied ranking from the principal components is less volatile than most individual risk rankings and leads to less turnover among the top ranked institutions. We also find that price-based rankings and fundamentals-based rankings deviated substantially and for a prolonged time in the period leading up to the financial crisis. We test the adequacy of our newly pooled systemic risk ranking by relating it to credit default swap premia. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Nucera, Federico] LUISS Guido Carli Univ, Viale Romania 32, I-00197 Rome, Italy.
+   [Schwaab, Bernd] European Cent Bank, Financial Res Div, Sonnemannstr 22, D-60314 Frankfurt, Germany.
+   [Koopman, Siem Jan; Lucas, Andre] Vrije Univ Amsterdam, De Boelelaan 1105, NL-1081 HV Amsterdam, Netherlands.
+   [Koopman, Siem Jan] Aarhus Univ, CREATES, Fuglesangs Alle 4, DK-8210 Aarhus, Denmark.
+   [Koopman, Siem Jan; Lucas, Andre] Tinbergen Inst, Gustave Mahlerpl 117, NL-1082 MS Amsterdam, Netherlands.
+RP Koopman, SJ (reprint author), Vrije Univ Amsterdam, Dept Econometr, De Boelelaan 1105, NL-1081 HV Amsterdam, Netherlands.
+EM fnucera@luiss.it; bernd.schwaab@ecb.int; s.j.koopman@vu.nl;
+   a.lucas@vu.nl
+RI Koopman, S.J./M-7814-2019; Koopman, Siem Jan/E-1838-2011; Lucas,
+   Andre/E-4054-2018
+OI Koopman, S.J./0000-0002-4440-9524; Koopman, Siem
+   Jan/0000-0002-4440-9524; Lucas, Andre/0000-0003-2807-1102; Nucera,
+   Federico/0000-0003-4692-8771
+FU CREATES, Aarhus University, Denmark; Danish National Research
+   FoundationDanmarks Grundforskningsfond [DNRF78]; European UnionEuropean
+   Union (EU) [320270 - SYRTO]; Dutch National Science Foundation
+   (NWO)Netherlands Organization for Scientific Research (NWO)
+   [VICI453-09-005]
+FX The support from CREATES, Aarhus University, Denmark, and funded by the
+   Danish National Research Foundation (DNRF78), is gratefully
+   acknowledged.; The support from the European Union Seventh Framework
+   Programme (FP7-SSH/2007-2013, grant agreement 320270 - SYRTO) is
+   gratefully acknowledged.; The support from the Dutch National Science
+   Foundation (NWO, grant VICI453-09-005) is gratefully acknowledged.
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2015, J FINANC ECON, V115, P215, DOI 10.1016/j.jfineco.2014.11.004
+   Adams Z, 2014, J FINANC QUANT ANAL, V49, P575, DOI 10.1017/S0022109014000325
+   Adrian T., 2014, FEDERAL RESERVE BANK, P348
+   Aiolfi M., 2010, FORECAST HDB, P175
+   BATES JM, 1969, OPER RES QUART, V20, P451, DOI 10.2307/3008764
+   Benoit S., 2013, UNPUB
+   Benoit S, 2015, UNPUB
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Boissay F., 2015, J POLIT EC IN PRESS
+   Borio C. E. V., 2010, BIS HKMA RES C FIN S
+   Breckenfelder J, 2015, UNPUB
+   Brownlees C.T, 2015, UNPUB
+   Brunnermeier M.K., 2015, AM EC REV IN PRESS
+   Castro C, 2014, J EMPIR FINANC, V25, P1, DOI 10.1016/j.jempfin.2013.10.009
+   Danielson J., 2015, TECHNICAL REPORT
+   Diebold F.X., 2014, UNPUB
+   Duffie D, 2009, J FINANC, V64, P2089, DOI 10.1111/j.1540-6261.2009.01495.x
+   ECB, 2009, FINANCIAL STABILITY
+   ECB, 2010, FINANCIAL STABILITY
+   ECB (European Central Bank), 2011, FINANCIAL STABILITY
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R., 2014, REV FINANC, P1
+   Engle R., 2012, UNPUB
+   Eser F., 2015, J FINANC EC IN PRESS
+   Fostel A, 2008, AM ECON REV, V98, P1211, DOI 10.1257/aer.98.4.1211
+   Freixas X, 2015, SYSTEMIC RISK, CRISES, AND MACROPRUDENTIAL REGULATION
+   Geanakoplos J., 2014, RISK TOPOGRAPHY SYST, P175
+   Giglio S., 2015, J FINANC EC IN PRESS
+   Hartmann P., 2009, SYSTEMIC RISK BANKIN
+   Hautsch N., 2014, EUR FINAN REV, V18, P154
+   He Z., 2014, UNPUB
+   IMF, 2009, GLOB FIN STAB REP
+   Kelly B.T., 2015, AM EC REV IN PRESS
+   Lawley D. N., 1971, FACTOR ANAL STAT MET
+   Lucas A, 2014, J BUS ECON STAT, V32, P271, DOI 10.1080/07350015.2013.873540
+   Moreno M.R., 2013, J BANK FINANC, V37
+   Stock JH, 2002, J BUS ECON STAT, V20, P147, DOI 10.1198/073500102317351921
+   Volz M, 2011, J EMPIR FINANC, V18, P195, DOI 10.1016/j.jempfin.2011.01.001
+   Wheelock DC, 2012, J MONEY CREDIT BANK, V44, P171, DOI 10.1111/j.1538-4616.2011.00472.x
+   White H, 2015, J ECONOMETRICS, V187, P169, DOI 10.1016/j.jeconom.2015.02.004
+   Zhou C., 2013, BIS Q REV
+NR 42
+TC 13
+Z9 13
+U1 0
+U2 8
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0927-5398
+EI 1879-1727
+J9 J EMPIR FINANC
+JI J. Empir. Financ.
+PD SEP
+PY 2016
+VL 38
+BP 461
+EP 475
+DI 10.1016/j.jempfin.2016.01.002
+PN A
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA DX4WY
+UT WOS:000384383000026
+DA 2019-12-28
+ER
+
+PT J
+AU Barth, JR
+   Wihlborg, C
+AF Barth, James R.
+   Wihlborg, Clas
+TI TOO BIG TO FAIL AND TOO BIG TO SAVE: DILEMMAS FOR BANKING REFORM
+SO NATIONAL INSTITUTE ECONOMIC REVIEW
+LA English
+DT Article
+DE financial crises; too big to fail; systemically important banks;
+   Dodd-Frank Act; Financial Stability Board; regulation and supervision
+AB Too big to fail' traditionally refers to a bank that is perceived to generate unacceptable risk to the banking system and indirectly to the economy as a whole if it were to default and be unable to fulfill its obligations. Such a bank generally has substantial liabilities to other banks through the payment system and other financial links, which can be sources of 'contagion' if a bank fails. The main objectives in this paper are to identify the different dimensions of too big to fail and evaluate various proposed reforms for dealing with this problem. In addition, we document the various dimensions of size and complexity, which may contribute to or reduce a bank's systemic risk. Furthermore, we provide an assessment of economic and political factors shaping the future of too big to fail.
+C1 [Barth, James R.] Auburn Univ, Finance, Auburn, AL 36849 USA.
+   [Barth, James R.] Milken Inst, Santa Monica, CA 90401 USA.
+   [Wihlborg, Clas] Chapman Univ, Int Business, Orange, CA USA.
+RP Barth, JR (reprint author), Auburn Univ, Finance, Auburn, AL 36849 USA.; Barth, JR (reprint author), Milken Inst, Santa Monica, CA 90401 USA.
+EM barthjr@auburn.edu; wihlborg@chapman.edu
+CR Admati A. R., 2013, BANKERS NEW CLOTHES
+   ADMATI A. R., 2010, 2063 GSB
+   Barth J., 2012, TRADING LOSSES LITTL
+   Barth J. R., 2012, GUARDIANS FINANCE MA
+   Barth J. R., 2015, DESIGNATING BANK SIF
+   Barth J. R., 2012, FINANCIAL MARKETS I, V21, P1
+   Barth J.R., 2006, RETHINKING BANK REGU
+   Barth J. R., 2015, 1 GREAT FINANCIAL CR
+   Barth James, 2009, RISE FALL US MORTGAG
+   Barth JR, 2012, J BANK REGUL, V13, P265, DOI 10.1057/jbr.2012.13
+   Beck T, 2014, J FINANC STABIL, V10, P50, DOI 10.1016/j.jfs.2013.03.005
+   Boot A. W. A., 2012, 12238 IMF
+   Brown CO, 2011, REV FINANC STUD, V24, P1378, DOI 10.1093/rfs/hhp039
+   Calomiris CW, 2013, J APPL CORP FINANC, V25, P39, DOI 10.1111/jacf.12015
+   Caprio Gerard, 2005, SYSTEMIC FINANCIAL C
+   Carmassi J., 2015, CORPORATE S IN PRESS
+   Carmassi J., 2013, J FINANCIAL EC POLIC, V5, P4
+   Carrington T., 1984, WALL STREET J
+   Chouinard E., 2013, ASSESSING SYSTEMIC I
+   Clearing House Association, 2011, UND EC LARG BANKS
+   Davis E. P., 1995, DEBT FINANCIAL FRAGI
+   deGroen W.P., 2012, REGULATION EUROPEAN
+   Goodhart CAE, 2014, INT REV FINANC ANAL, V36, P78, DOI 10.1016/j.irfa.2014.10.014
+   Haldane A. G., 2012, DOG FRISBEE
+   Hoenig T. M., 2012, COMMUNICATION
+   Honohan P, 2003, J BANK FINANC, V27, P1539, DOI 10.1016/S0378-4266(02)00276-5
+   Hughes J, 2011, WORKING PAPERS, V11-27
+   International Monetary Fund, 2014, GLOB FIN STAB REP
+   Johnson S, 2010, 13 BANKERS WALL STRE
+   Kashyap A. K., 2010, ANAL IMPACT SU UNPUB
+   Kaufman G., 2002, Q REV EC FINANCE, V42, P423
+   KROSZNER RS, 1994, AM ECON REV, V84, P810
+   Laeven L., 2014, SDN1404 IMF
+   Miles D., 2013, ECON J, V3, P1
+   Mullineux A, 2012, INT RES HDB BANKING
+   Prabha A., 2012, ENCY FINANCIAL GLOBA
+   Saunders A., 2010, FINANCIAL MARKETS PO, V24, P1
+   Schmid MM, 2009, J FINANC INTERMED, V18, P193, DOI 10.1016/j.jfi.2008.07.002
+   Shull B., 2010, 601 LEV EC I BRAD CO
+   Tarullo Daniel K., 2009, COMMUNICATION
+   Wheelock DC, 2012, J MONEY CREDIT BANK, V44, P171, DOI 10.1111/j.1538-4616.2011.00472.x
+   Wihlborg C., 2012, DEV DISTRESS RESOLUT
+NR 42
+TC 1
+Z9 1
+U1 1
+U2 9
+PU SAGE PUBLICATIONS LTD
+PI LONDON
+PA 1 OLIVERS YARD, 55 CITY ROAD, LONDON EC1Y 1SP, ENGLAND
+SN 0027-9501
+EI 1741-3036
+J9 NATL INST ECON REV
+JI Natl. Inst. Econ. Rev.
+PD FEB
+PY 2016
+VL 235
+IS 1
+BP R27
+EP R39
+DI 10.1177/002795011623500113
+PG 13
+WC Economics
+SC Business & Economics
+GA DG5GI
+UT WOS:000372104400009
+DA 2019-12-27
+ER
+
+PT J
+AU Hardie, WK
+   Wang, WN
+   Yu, LN
+AF Haerdie, Wolfgang Karl
+   Wang, Weining
+   Yu, Lining
+TI TENET: Tail-Event driven NETwork risk
+SO JOURNAL OF ECONOMETRICS
+LA English
+DT Article
+DE Systemic risk; Systemic risk network; Generalized quantile; Quantile
+   single-index regression; Value at risk; CoVaR; Lasso
+ID SYSTEMIC RISK; QUANTILE REGRESSION; CONNECTEDNESS
+AB CoVaR is a measure for systemic risk of the networked financial system conditional on institutions being under distress. The analysis of systemic risk is the focus of recent econometric analyses and uses tail event and network based techniques. Here, in this paper we bring tail event and network dynamics together into one context. In order to pursue such joint efforts, we propose a semiparametric measure to estimate systemic interconnectedness across financial institutions based on tail-driven spillover effects in a high dimensional framework. The systemically important institutions are identified conditional to their interconnectedness structure. Methodologically, a variable selection technique in a time series setting is applied in the context of a single-index model for a generalized quantile regression framework. We could thus include more financial institutions into the analysis to measure their tail event interdependencies and, at the same time, be sensitive to non-linear relationships between them. Network analysis, its behaviour and dynamics, allows us to characterize the role of each financial industry group in 2007-2012: the depositories received and transmitted more risk among other groups, the insurers were less affected by the financial crisis. The proposed TENET-Tail Event driven NETwork technique allows us to rank the Systemic Risk Receivers and Systemic Risk Emitters in the US financial market. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Haerdie, Wolfgang Karl; Wang, Weining] Humboldt Univ, CASE, Unter Linden 6, D-10099 Berlin, Germany.
+   [Wang, Weining] Kings Coll London, Dept Math, London WC2R 2LS, England.
+   [Yu, Lining] Humboldt Univ, CASE, IRTG 1792, Unter Linden 6, D-10099 Berlin, Germany.
+RP Yu, LN (reprint author), Humboldt Univ, CASE, IRTG 1792, Unter Linden 6, D-10099 Berlin, Germany.
+EM haerdle@wiwi.hu-berlin.de; wangwein@wiwi.hu-berlin.de;
+   yulining@wiwi.hu-berlin.de
+RI Hardle, Wolfgang K/C-5963-2013
+FU Deutsche Forschungsgemeinschaft (DFG)German Research Foundation (DFG)
+   [SFB 649]; IRTG [1792]; Sim Kee Boon Institute for Financial Economics,
+   Singapore Management University
+FX Financial support from the Deutsche Forschungsgemeinschaft (DFG) via SFB
+   649 "Okonomisches Risiko", IRTG 1792 "High-Dimensional Non-Stationary
+   Times Series" and Sim Kee Boon Institute for Financial Economics,
+   Singapore Management University are gratefully acknowledged.
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Belloni A, 2011, ANN STAT, V39, P82, DOI 10.1214/10-AOS827
+   Berkowitz J, 2011, MANAGE SCI, V57, P2213, DOI 10.1287/mnsc.1080.0964
+   Betz F., 2016, J FINANC STABIL
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Borisov I.S., 2009, SIBERIAN ADV MATH, V19, P1
+   Borke L., 2016, FRM FINANCI IN PRESS
+   Boss M., 2006, OENB FINANCIAL STABI, V11, P83
+   Brownlees C. T, 2015, SRISK CONDITIONAL CA
+   Brunnermeier M. K., 2011, STAFF REPORTS
+   CARROLL RJ, 1989, STAT PROBABIL LETT, V7, P315, DOI 10.1016/0167-7152(89)90114-4
+   Chan-Lau J., 2009, 2 IMF
+   Chao S. K., 2015, HDB FINANC EC STAT, P1467
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Fan JQ, 2001, J AM STAT ASSOC, V96, P1348, DOI 10.1198/016214501753382273
+   Fan Y., 2016, J BUS EC ST IN PRESS
+   Frank J, 2014, APPL NUMER HARMON AN, P1, DOI 10.1007/978-1-4614-9521-5_1
+   Gertler M, 2010, HDB MACROECONOMICS, P547, DOI DOI 10.1016/13978-0-444-53238-1.00011-9
+   Giglio S., 2012, SYSTEMIC RISK MACROE
+   Hardle W., 2004, NONPARAMETRIC SEMIPA
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   KOENKER R, 1994, BIOMETRIKA, V81, P673
+   Kong E, 2010, ECONOMET THEOR, V26, P1529, DOI 10.1017/S0266466609990661
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Li YJ, 2008, J COMPUT GRAPH STAT, V17, P163, DOI 10.1198/106186008X289155
+   Minsky H. P., 1977, FINANCIAL CRISES I M, P138
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   SCHWARZ G, 1978, ANN STAT, V6, P461, DOI 10.1214/aos/1176344136
+   Shi JB, 2000, IEEE T PATTERN ANAL, V22, P888, DOI 10.1109/34.868688
+   Tibshirani R, 1996, J ROY STAT SOC B MET, V58, P267
+   Wang H, 2007, BIOMETRIKA, V94, P553, DOI 10.1093/biomet/asm053
+   Wu TZ, 2010, J MULTIVARIATE ANAL, V101, P1607, DOI 10.1016/j.jmva.2010.02.003
+   Yu KM, 2003, J ROY STAT SOC D-STA, V52, P331, DOI 10.1111/1467-9884.00363
+   Zheng Q, 2013, J STAT PLAN INFER, V143, P1029, DOI 10.1016/j.jspi.2012.12.009
+   Zou H, 2006, J AM STAT ASSOC, V101, P1418, DOI 10.1198/016214506000000735
+NR 39
+TC 19
+Z9 20
+U1 10
+U2 44
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-4076
+EI 1872-6895
+J9 J ECONOMETRICS
+JI J. Econom.
+PD JUN
+PY 2016
+VL 192
+IS 2
+BP 499
+EP 513
+DI 10.1016/j.jeconom.2016.02.013
+PG 15
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA DL6HG
+UT WOS:000375739700013
+OA Green Accepted
+DA 2019-12-28
+ER

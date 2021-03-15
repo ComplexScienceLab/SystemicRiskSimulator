@@ -1,0 +1,414 @@
+
+PT J
+AU Garnett, P
+AF Garnett, Philip
+TI A tipping point in 300 years of banking? A conceptual simulation of the
+   British banking system
+SO NATURAL COMPUTING
+LA English
+DT Article
+DE Modelling; Simulation; Banks; Population
+ID FINANCIAL-MARKETS; MODEL; CONTAGION; NETWORK; RISK; BUBBLES; UML
+AB It has become popular to describe the behaviour of certain systems as "undergoing a tipping point''. This is normally used as a description of a system that has rapidly changed from an apparently stable state to a new state with little or no warning. A wide range of complex systems can display tipping point behaviour, from climate systems to populations of people. Here we present preliminary work of using the British banking sector from 1559 to 2012 as a case study for the modelling of complex systems that show tipping point behaviour. Currently implemented in a highly abstracted form, we present a description of a conceptual model of the British banking system that is able to reproduce the general features of the changing population of British banks. However, to do so requires interventions in the system, rather than emergent properties. We discuss what future alterations to the model could be made to overcome this limitation.
+C1 [Garnett, Philip] Univ Durham, Dept Anthropol, Durham DH1 3LE, England.
+RP Garnett, P (reprint author), Univ York, York Management Sch, Freboys Lane, York YO10 5GD, N Yorkshire, England.
+EM philip.garnett@york.ac.uk
+OI Garnett, Philip/0000-0001-6651-0220
+FU Leverhulme Trust as part of the Tipping Points Project
+FX We also thank Dr Simon Mollan and Prof. Ranald Michie for useful
+   discussions. This paper is based on an earlier conference paper (Garnett
+   2013). This work was supported by the Leverhulme Trust as part of the
+   Tipping Points Project.
+CR Andrews PS, 2010, YCS2010453 U YORK DE
+   Bentley RA, 2005, J ARCHAEOL SCI, V32, P1346, DOI 10.1016/j.jas.2005.03.008
+   Bikhchandani S, 2001, IMF STAFF PAPERS, V47, P279
+   Bonabeau E, 2002, P NATL ACAD SCI USA, V99, P7280, DOI 10.1073/pnas.082080899
+   Brock WA, 2004, THESIS U WISCONSIN
+   COLLINS M, 1989, ECON HIST REV, V42, P504
+   DIMAGGIO PJ, 1983, AM SOCIOL REV, V48, P147, DOI 10.2307/2095101
+   Droop A, 2011, P 2011 WORKSH COMPL, P79
+   Farmer JD, 2009, COMPLEXITY, V14, P11, DOI 10.1002/cplx.20261
+   FLOOD RP, 1986, J FINANC, V41, P831, DOI 10.2307/2328231
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garnett P, 2012, COMPLEX SYSTEMS SIMU, P27
+   Garnett P, 2013, P 2013 WORKSH COMPL, P61
+   Garnett P, 2010, P 2010 WORKSH COMPL, P9
+   Garnsworthy P, 2008, P 2008 WORKSH COMPL, P63
+   Gladwell M., 2000, TIPPING POINT LITTLE
+   Group OM, 2012, MAINTAINER UML STAND
+   Horsefield JK, 1944, ECONOMICA-NEW SER, V11, P180, DOI 10.2307/2549352
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   Mathias P., 1969, 1 IND NATION EC HIST
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   MUNN CW, 1988, BUS HIST, V30, P69, DOI 10.1080/00076798800000004
+   Neal Larry, 1998, FEDERAL RESERVE BANK, P53
+   Neo4J, 2014, WORLD LEAD GRAPH DAT
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Odell J, 2000, AG OR INF SYST WORKS, P3
+   Polack FAC, 2011, P 2011 WORKSH COMPL, P113
+   Read M, 2009, LECT NOTES COMPUT SC, V5666, P4, DOI 10.1007/978-3-642-03246-2_2
+   Robertson Duncan A., 2003, EMERGENCE, V5, P56, DOI DOI 10.1207/S15327000EM050207
+   Roux-Rouquie M., 2005, OBJECT ORIENTED MODE
+   Sornette D, 2003, WHY STOCK MARKETS CRASH: CRITICAL EVENTS IN COMPLEX FINANCIAL SYSTEMS, P1
+   Sornette D, 2002, INT J MOD PHYS C, V13, P171, DOI 10.1142/S0129183102003085
+   Sykes J, 1926, AMALGAMATION MOVEMEN
+   Taylor J., 2013, BOARDROOM SCANDAL CR
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Vallascas F, 2012, J INT MONEY FINANC, V31, P1745, DOI 10.1016/j.jimonfin.2012.03.011
+   Webb K, 2005, BIOSYSTEMS, V80, P283, DOI 10.1016/j.biosystems.2004.12.003
+   Yan WF, 2010, PHYSCS PROC, V3, P1641, DOI 10.1016/j.phpro.2010.07.004
+NR 41
+TC 2
+Z9 2
+U1 0
+U2 2
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 1567-7818
+EI 1572-9796
+J9 NAT COMPUT
+JI Nat. Comput.
+PD MAR
+PY 2015
+VL 14
+IS 1
+SI SI
+BP 25
+EP 37
+DI 10.1007/s11047-014-9467-0
+PN 1
+PG 13
+WC Computer Science, Artificial Intelligence; Computer Science,
+   Interdisciplinary Applications; Computer Science, Theory & Methods
+SC Computer Science
+GA CP8PF
+UT WOS:000360155600003
+DA 2019-12-27
+ER
+
+PT J
+AU Iqbal, J
+   Strobl, S
+   Vahamaa, S
+AF Iqbal, Jamshed
+   Strobl, Sascha
+   Vahamaa, Sami
+TI Corporate governance and the systemic risk of financial institutions
+SO JOURNAL OF ECONOMICS AND BUSINESS
+LA English
+DT Article
+DE Corporate governance; Boards; Systemic risk; Bank risk-taking; Financial
+   crisis
+ID BANK-HOLDING COMPANIES; PERFORMANCE EVIDENCE; BOARD COMPOSITION; CRISIS;
+   DIRECTORS
+AB This paper studies the relationship between corporate governance and the systemic risk of financial institutions. Specifically, using a sample of large U.S. financial institutions from 2005 to 2010, we examine whether the strength of corporate governance mechanisms can explain the cross-sectional variation in systemic risk around the recent financial crisis. Our empirical findings indicate that financial institutions with stronger and more shareholder-focused corporate governance structures and boards of directors are associated with higher levels of systemic risk. Thus, our results suggest that good corporate governance may encourage rather than constrain excessive risk-taking in the financial industry. (C) 2015 Elsevier Inc. All rights reserved.
+C1 [Iqbal, Jamshed; Strobl, Sascha; Vahamaa, Sami] Univ Vaasa, Dept Accounting & Finance, FI-65101 Vaasa, Finland.
+RP Vahamaa, S (reprint author), Univ Vaasa, Dept Accounting & Finance, POB 700, FI-65101 Vaasa, Finland.
+EM jiqbal@uva.fi; sstrobl@uva.fi; sami@uva.fi
+OI Vahamaa, Sami/0000-0003-2957-4780
+FU Academy of FinlandAcademy of Finland
+FX J. Iqbal and S. Vahamaa gratefully acknowledge the financial support of
+   the Academy of Finland. Part of this paper was written while S. Vahamaa
+   was visiting the University of Central Florida.
+CR Acharya V., 2010, WORKING PAPER
+   Acharya V, 2011, WORKING PAPER
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2010, REV FINANC, V14, P1, DOI 10.1093/rof/rfp002
+   Adams RB, 2012, J FINANC INTERMED, V21, P243, DOI 10.1016/j.jfi.2011.09.002
+   Adams RB, 2010, J ECON LIT, V48, P58, DOI 10.1257/jel.48.1.58
+   Adams RB, 2012, INT REV FINANC, V12, P7, DOI 10.1111/j.1468-2443.2011.01147.x
+   Aebi V, 2012, J BANK FINANC, V36, P3213, DOI 10.1016/j.jbankfin.2011.10.020
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Basel Committee on Banking Supervision, 2010, PRINC ENH CORP GOV
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Berger AN, 2014, J CORP FINANC, V28, P48, DOI 10.1016/j.jcorpfin.2013.11.006
+   Board of Governors of the Federal Reserve System, 2010, BANK HOLD CO SUP S38
+   Brownlees Christian, 2011, WORKING PAPER
+   Brunnermeier M., 2012, WORKING PAPER
+   Calluzzo P, 2015, J BANK FINANC, V53, P233, DOI 10.1016/j.jbankfin.2014.10.009
+   Caprio G, 2007, J FINANC INTERMED, V16, P584, DOI 10.1016/j.jfi.2006.10.003
+   Chhaochharia V, 2009, J FINANC INTERMED, V18, P405, DOI 10.1016/j.jfi.2008.10.001
+   de Andres P, 2008, J BANK FINANC, V32, P2570, DOI 10.1016/j.jbankfin.2008.05.008
+   de Haan J., 2015, J EC SURVEYS
+   Erkens DH, 2012, J CORP FINANC, V18, P389, DOI 10.1016/j.jcorpfin.2012.01.005
+   Ertugrul M, 2009, FINANC MANAGE, V38, P139, DOI 10.1111/j.1755-053X.2009.01031.x
+   Fahlenbrach R, 2012, J FINANC, V67, P2139, DOI 10.1111/j.1540-6261.2012.01783.x
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Fortin R, 2010, FINAN REV, V45, P891, DOI 10.1111/j.1540-6288.2010.00277.x
+   Jo H, 2012, J BUS ETHICS, V106, P53, DOI 10.1007/s10551-011-1052-1
+   Kirkpatrick G., 2009, WORKING PAPER
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Mayordomo S, 2014, J BANK FINANC, V45, P84, DOI 10.1016/j.jbankfin.2014.03.037
+   Mehran H., 2011, STAFF REPORT
+   MERTON RC, 1978, J BUS, V51, P439, DOI 10.1086/296007
+   Minton BA, 2014, J FINANC QUANT ANAL, V49, P351, DOI 10.1017/S0022109014000283
+   Pais A, 2013, EUR FINANC MANAG, V19, P429, DOI 10.1111/j.1468-036X.2010.00603.x
+   Pathan S, 2013, J BANK FINANC, V37, P1573, DOI 10.1016/j.jbankfin.2012.12.016
+   Pathan S, 2009, J BANK FINANC, V33, P1340, DOI 10.1016/j.jbankfin.2009.02.001
+   Peni E, 2013, J REAL ESTATE RES, V35, P313
+   Peni E, 2012, J FINANC SERV RES, V41, P19, DOI 10.1007/s10693-011-0108-9
+   Shleifer A, 1997, J FINANC, V52, P737, DOI 10.1111/j.1540-6261.1997.tb04820.x
+   Wang TW, 2013, J BANK FINANC, V37, P2042, DOI 10.1016/j.jbankfin.2013.01.027
+   Yeh YH, 2011, CORP GOV-OXFORD, V19, P437, DOI 10.1111/j.1467-8683.2011.00884.x
+NR 41
+TC 9
+Z9 9
+U1 3
+U2 15
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 0148-6195
+J9 J ECON BUS
+JI J. Econ. Bus.
+PD NOV-DEC
+PY 2015
+VL 82
+BP 42
+EP 61
+DI 10.1016/j.jeconbus.2015.06.001
+PG 20
+WC Business, Finance
+SC Business & Economics
+GA CW1XW
+UT WOS:000364786300004
+DA 2019-12-28
+ER
+
+PT J
+AU Kim, JS
+   Ryu, D
+   Seo, SW
+AF Kim, Jun Sik
+   Ryu, Doojin
+   Seo, Sung Won
+TI Corporate Vulnerability Index as a Fear Gauge? Exploring the Contagion
+   Effect between US and Korean Markets
+SO JOURNAL OF DERIVATIVES
+LA English
+DT Article
+ID LEAD-LAG RELATIONSHIP; STOCK INDEX; INFORMATION-CONTENT; INTERNATIONAL
+   TRANSMISSION; ERROR-CORRECTION; FUTURES MARKETS; VOLATILITY; PRICE;
+   DYNAMICS; CASH
+AB This study uses a newly launched Corporate Vulnerability Index (CVI) that measures the probabilities of default and credit risks of individual firms to present evidence of the contagion effect among international financial markets and examines how market credit risks are propagated from the U.S. financial market to the Korean financial market. The authors find that international financial market contagion is propagated mainly through direct foreign trading channels rather than correlated information channels. This study is pioneering in that it applies the CVI, a recently developed and informative, but not much analyzed, index, to examine the responses of the Korean financial market based on the unique dataset provided by the Korea Exchange. The authors report evidence that various Korean financial market indexes and indicators, such as the stock market index (KOSPI 200), index futures (KOSPI 200 futures), implied volatility index (VKOSPI), and net positions of investors in the index futures market, respond to the shocks in the CVI of the S&P 500 Index firms for the U.S. financial market. The empirical results indicate that there is a strong market linkage and contagion effect between the U.S. and Korean financial markets. The authors also suggest the applicability of the CVI as a fear gauge and trading indicator.
+C1 [Kim, Jun Sik] Incheon Natl Univ, Div Int Trade, Inchon, South Korea.
+   [Ryu, Doojin] Sungkyunkwan Univ, Coll Econ, Seoul, South Korea.
+   [Seo, Sung Won] Ajou Univ, Sch Business, Suwon 441749, South Korea.
+RP Ryu, D (reprint author), Sungkyunkwan Univ, Coll Econ, Seoul, South Korea.
+EM sharpjin@skku.edu
+OI Ryu, Doojin/0000-0002-0059-4887
+FU National Research Foundation of Korea Grant - Korean Government
+   [NRF-2014S1A5B8060964]
+FX The Corporate Vulnerability Index (CVI) data has been computed and
+   provided by the Risk Management Institute at the National University of
+   Singapore. This work was supported by the National Research Foundation
+   of Korea Grant funded by the Korean Government (NRF-2014S1A5B8060964).
+CR Ann HJ, 2008, J FUTURES MARKETS, V28, P1118, DOI 10.1002/fut.20369
+   ARSHANAPALLI B, 1993, J BANK FINANC, V17, P193, DOI 10.1016/0378-4266(93)90088-U
+   Asgharian H, 2011, J INT MONEY FINANC, V30, P22, DOI 10.1016/j.jimonfin.2010.06.006
+   Baekin Cha, 2000, INT REV ECON FINANC, V9, P299
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   Baig T., 2001, INT FINANCIAL CONTAG, P267
+   BAILEY W, 1990, J PORTFOLIO MANAGE, V16, P57, DOI 10.3905/jpm.1990.409287
+   Berben RP, 2005, J INT MONEY FINANC, V24, P832, DOI 10.1016/j.jimonfin.2005.04.001
+   Burki S. J., 1996, LATIN AM MEXICO QUIC
+   Byun SJ, 2013, J EMPIR FINANC, V23, P142, DOI 10.1016/j.jempfin.2013.05.006
+   Calvo GA, 2000, J INT ECON, V51, P79, DOI 10.1016/S0022-1996(99)00038-0
+   Calvo S., 1996, PRIVATE CAPITAL FLOW, P151
+   CHAN KL, 1992, REV FINANC STUD, V5, P123, DOI 10.1093/rfs/5.1.123
+   Chordia T, 2005, J FINANC ECON, V76, P271, DOI 10.1016/j.jfineco.2004.06.004
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Duan JC, 2012, J ECONOMETRICS, V170, P191, DOI 10.1016/j.jeconom.2012.05.002
+   Duan JC, 2012, J BANK FINANC, V36, P3239, DOI 10.1016/j.jbankfin.2012.03.012
+   Eichengreen B, 2012, J INT MONEY FINANC, V31, P1299, DOI 10.1016/j.jimonfin.2012.02.002
+   EUN CS, 1989, J FINANC QUANT ANAL, V24, P241, DOI 10.2307/2330774
+   Frankel Jeffrey A., 1998, MANAGING CAPITAL FLO, P232
+   Frijns B, 2010, J FUTURES MARKETS, V30, P134, DOI 10.1002/fut.20405
+   GHOSH A, 1993, J FUTURES MARKETS, V13, P193, DOI 10.1002/fut.3990130206
+   Giavazzi F., 2000, WORKING PAPER
+   Guo B, 2013, J FUTURES MARKETS, V33, P629, DOI 10.1002/fut.21563
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   Han C., APPL EC IN PRESS
+   HERBST AF, 1987, J FUTURES MARKETS, V7, P373, DOI 10.1002/fut.3990070403
+   HILLIARD JE, 1979, J FINANC, V34, P103, DOI 10.2307/2327147
+   Hon M. T., 2007, J INT FINANC MARK I, V17, P213, DOI DOI 10.1016/J.INTFIN.2005.08.005
+   Iihara Y, 1996, J FUTURES MARKETS, V16, P147, DOI 10.1002/(SICI)1096-9934(199604)16:2<147::AID-FUT2>3.0.CO;2-K
+   Jiang GJ, 2007, J DERIV, V14, P35, DOI 10.3905/jod.2007.681813
+   Jung WS, 2006, PHYSICA A, V361, P263, DOI 10.1016/j.physa.2005.06.081
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   Kim JS, 2015, EMERG MARK REV, V22, P43, DOI 10.1016/j.ememar.2014.11.001
+   Kim JS, 2015, INVEST ANAL J, V44, P20, DOI 10.1080/10293523.2015.994442
+   Kim M, 1999, J FUTURES MARKETS, V19, P475, DOI 10.1002/(SICI)1096-9934(199906)19:4<475::AID-FUT5>3.0.CO;2-V
+   Kim SW, 1995, J EMPIR FINANC, V2, P117
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Lee C, 2014, INVEST ANAL J, P29, DOI 10.1080/10293523.2014.11082566
+   Lee J, 2015, PAC-BASIN FINANC J, V33, P1, DOI 10.1016/j.pacfin.2015.02.001
+   LIN WL, 1994, REV FINANC STUD, V7, P507, DOI 10.1093/rfs/7.3.507
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   Mak S., 1992, APPL FINANCIAL EC, V2, P43
+   Morana C, 2008, J INT FINANC MARK I, V18, P31, DOI DOI 10.1016/J.INTFIN.2006.05.001
+   NEWEY WK, 1987, ECONOMETRICA, V55, P703, DOI 10.2307/1913610
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   RMI Staff, 2013, GLOB CREDIT REV, V3, P77, DOI 10.1142/S2010493613500074
+   Ryu D, 2015, J FUTURES MARKETS, V35, P201, DOI 10.1002/fut.21637
+   Ryu D, 2015, J FUTURES MARKETS, V35, P127, DOI 10.1002/fut.21618
+   Ryu D, 2013, EMERG MARK REV, V14, P110, DOI 10.1016/j.ememar.2012.11.005
+   Ryu D, 2012, APPL ECON LETT, V19, P541, DOI 10.1080/13504851.2011.587764
+   Ryu D, 2011, J FUTURES MARKETS, V31, P1142, DOI 10.1002/fut.20533
+   STOLL HR, 1990, J FINANC QUANT ANAL, V25, P441, DOI 10.2307/2331010
+   Taylor SJ, 2010, J BANK FINANC, V34, P871, DOI 10.1016/j.jbankfin.2009.09.015
+   TSE YK, 1995, J FORECASTING, V14, P553, DOI 10.1002/for.3980140702
+   WAHAB M, 1993, J FUTURES MARKETS, V13, P711, DOI 10.1002/fut.3990130702
+NR 58
+TC 31
+Z9 31
+U1 0
+U2 8
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1074-1240
+EI 2168-8524
+J9 J DERIV
+JI J. Deriv.
+PD FAL
+PY 2015
+VL 23
+IS 1
+BP 73
+EP 88
+DI 10.3905/jod.2015.23.1.073
+PG 16
+WC Business, Finance
+SC Business & Economics
+GA CR1US
+UT WOS:000361111200006
+DA 2019-12-27
+ER
+
+PT J
+AU Vicente, LABG
+   Cerezetti, FV
+   De Faria, SR
+   Iwashita, T
+   Pereira, OR
+AF Vicente, L. A. B. G.
+   Cerezetti, F. V.
+   De Faria, S. R.
+   Iwashita, T.
+   Pereira, O. R.
+TI Managing risk in multi-asset class, multimarket central counterparties:
+   The CORE approach
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Central counterparty; Risk management; Closeout risk; Liquidity risk;
+   Market risk
+ID PORTFOLIO SELECTION; OPTIMIZATION; EQUILIBRIUM; MANAGEMENT; MARKET
+AB Multi-asset class, multimarket central counterparties (CCPs) are becoming less uncommon as a result of merges between specialized (single-asset class, single market) CCPs and market demands for greater capital efficiency. Yet, traditional CCP risk management models often lack the necessary sophistication to estimate potential losses relative to the closeout process of a defaulter's portfolio in a multi-asset class, multimarket environment. As a result, multi-asset class, multimarket CCPs usually rely on a simplified silo approach for risk calculation which not only fails to deliver efficiency, but may also increase systemic risk. The CORE (Closeout Risk Evaluation) approach, on the other hand, provides conceptual and mathematical tools necessary for robust and efficient central counterparty risk evaluation in multi-asset class and multimarket environments, acknowledging the portfolio dynamics involved in the closeout process as well as important "real life" market frictions. (C) 2014 The Authors. Published by Elsevier B.V.
+C1 [Vicente, L. A. B. G.; Cerezetti, F. V.; De Faria, S. R.; Iwashita, T.; Pereira, O. R.] BM & FBovespa, Risk Management Dept, BR-01010901 Sao Paulo, Brazil.
+RP Cerezetti, FV (reprint author), BM & FBovespa, Risk Management Dept, Praca Antonio Prado 48, BR-01010901 Sao Paulo, Brazil.
+EM luis.vicente@moex.com; fcerezetti@bvmf.com.br; sifaria@bvmf.com.br;
+   tiwashita@bvmf.com.br; opereira@bvmf.com.br
+CR Acharya VV, 2011, WILEY FINANC SER, P1
+   Alexander S, 2006, J BANK FINANC, V30, P583, DOI 10.1016/j.jbankfin.2005.04.012
+   Avellaneda M., 2013, WORKING PAPER
+   Bangia A., 1999, WORKING PAPER
+   Bliss R. R., 2006, J FINANCIAL STABILIT, V2, P55, DOI DOI 10.1016/j.jfs.2005.05.001
+   BM&FBovespa, 2011, WORKING PAPER
+   CPSS/IOSCO, 2012, PRINCIPLES FOR FINAN
+   DUFFIE D, 1990, J ECON DYN CONTROL, V14, P21, DOI 10.1016/0165-1889(90)90003-Y
+   Duffie D., 1991, ANN APPL PROBAB, V1, P1, DOI DOI 10.1214/AOAP/1177005978
+   Duffie D, 1997, J DERIV, V4, P7, DOI [DOI 10.3905/JOD.1997.407971, DOI 10.3905/jod.1997.407971]
+   Duffle D., 2009, RESEARCH PAPER 2022
+   Gulpinar N, 2013, J BANK FINANC, V37, P2031, DOI 10.1016/j.jbankfin.2013.01.025
+   Hull J, 2012, J DERIV, V20, P26
+   Jorion P., 2007, VALUE AT RISK THE NE
+   Jorion P., 2003, FINANCIAL RISK MANAG
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Merton R., 1998, CONTINUOUS TIME FINA
+   Murthagh B. A., 1981, ADVANCED LINEAR OPTI
+   Norman P, 2011, THE RISK CONTROLLERS
+   Polak GG, 2010, EUR J OPER RES, V207, P409, DOI 10.1016/j.ejor.2010.04.025
+   Reinhart C., 2009, WORKING PAPER 14656
+   Rockafeller R.T., 2000, J RISK, V2, P21, DOI DOI 10.21314/JOR.2000.038
+   Russo D., 2002, OCCASIONAL PAPER SER, V5
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   TOBIN J, 1958, REV ECON STUD, V25, P65, DOI DOI 10.2307/2296205
+   WFE, 2014, 2013 WFE MARKET HIGH
+   Young MR, 1998, MANAGE SCI, V44, P673, DOI 10.1287/mnsc.44.5.673
+NR 27
+TC 9
+Z9 9
+U1 0
+U2 14
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD FEB
+PY 2015
+VL 51
+BP 119
+EP 130
+DI 10.1016/j.jbankfin.2014.08.016
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA CB3CW
+UT WOS:000349506800009
+OA Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Rehman, S
+AF Rehman, Scheherazade
+TI The Future of the European Union
+SO GLOBAL ECONOMY JOURNAL
+LA English
+DT Article
+AB The European Union (EU) currently comprised of 28 countries is heralded as the single most ambitious voluntary supra-national economic, trade and monetary arrangement in recent modern history. The initial impetus of this arrangement began in 1951 with The Coal and Steel Union amongst Germany, France, Belgium, Luxemburg, Netherlands, and Italy and it continues to evolve today. The most ambitious part of this arrangement is the economic and monetary union (EMU) of 19 EU members countries called the Eurozone. This grand experiment has recently faced its biggest stress test with a double dip recession - the 2008 global financial crisis and the 2010+ European sovereign debt crisis. While many experts focused on the lack of fiscal union to resolve the Eurozone's current problems, the issues are more complex. Systemic risk in Eurozone originates in part from three principal areas: political issues, lack of a fiscal discipline enforcement mechanism, and market failure.
+C1 [Rehman, Scheherazade] George Washington Univ, European Union Res Ctr, Washington, DC 20052 USA.
+RP Rehman, S (reprint author), George Washington Univ, European Union Res Ctr, Washington, DC 20052 USA.
+EM rehman@gwu.edu
+CR [Anonymous], 2015, WIND OPP EUR
+   [Anonymous], 2015, FINANCIAL TIMES
+   McMorrow Kieran, 2013, Q REPORT EURO AREA, V12, P7
+   Orwell G., 1946, ANIMAL FARM
+   Roeger Werner, 2014, DG ECFIN Q REPORT EU, V13, P23
+NR 5
+TC 3
+Z9 3
+U1 0
+U2 0
+PU WALTER DE GRUYTER GMBH
+PI BERLIN
+PA GENTHINER STRASSE 13, D-10785 BERLIN, GERMANY
+SN 1524-5861
+J9 GLOB ECON J
+JI Glob. Econ. J.
+PD JUL
+PY 2015
+VL 15
+IS 2
+BP 213
+EP 230
+DI 10.1515/gej-2015-0028
+PG 18
+WC Economics
+SC Business & Economics
+GA VF2DR
+UT WOS:000442236300003
+DA 2019-12-28
+ER

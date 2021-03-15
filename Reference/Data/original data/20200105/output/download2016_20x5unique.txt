@@ -1,0 +1,377 @@
+
+PT J
+AU Laeven, L
+   Ratnovski, L
+   Tong, H
+AF Laeven, Luc
+   Ratnovski, Lev
+   Tong, Hui
+TI Bank size, capital, and systemic risk: Some international evidence
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Banking crisis; Bank performance; Bank fragility; Systemic risk;
+   Financial regulation
+ID DIVERSIFICATION; GOVERNANCE; VALUATION
+AB This paper studies the significant variation in the cross-section of standalone and systemic risk of large banks during the recent financial crisis to identify bank specific factors that determine risk. We find that systemic risk grows with bank size and is inversely related to bank capital, and this effect exists above and beyond the effect of bank size and capital on standalone bank risk. Our results contribute to the ongoing debate on the merits of imposing systemic risk-based capital requirements on banks. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Laeven, Luc] European Cent Bank, Sonnemannstr 20, D-60314 Frankfurt, Germany.
+   [Laeven, Luc] Tilburg Univ, POB 90153, NL-5000 LE Tilburg, Netherlands.
+   [Laeven, Luc] CEPR, 77 Bastwick St, London EC1V 3PZ, England.
+   [Ratnovski, Lev; Tong, Hui] Int Monetary Fund, Washington, DC 20431 USA.
+RP Laeven, L (reprint author), European Cent Bank, Sonnemannstr 20, D-60314 Frankfurt, Germany.
+EM luc.laeven@ecb.europa.eu
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Adrian Tobias, 2012, COVAR UNPUB
+   Aiyar S, 2014, J MONEY CREDIT BANK, V46, P181, DOI 10.1111/jmcb.12086
+   Alessandri Piergiorgio, 2014, 463 CFS
+   Beck T., 2013, 6604 WORLD BANK
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bolton P, 2007, J FINANC ECON, V85, P297, DOI 10.1016/j.jfineco.2005.06.004
+   Boot A. W. A., 2012, 12238 IMF
+   Brownlees CT, 2012, VOLATILITY COR UNPUB
+   Brunnermeier Markus K., 2013, BANKS NONINTER UNPUB
+   Caprio G, 2007, J FINANC INTERMED, V16, P584, DOI 10.1016/j.jfi.2006.10.003
+   Demirguc-Kunt A, 2008, J FINANC INTERMED, V17, P407, DOI 10.1016/j.jfi.2007.03.009
+   Demirguc-Kunt A, 2010, J FINANC ECON, V98, P626, DOI 10.1016/j.jfineco.2010.06.004
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   French KR, 2010, SQUAM LAKE REPORT: FIXING THE FINANCIAL SYSTEM, P1
+   Gennaioli N, 2013, J FINANC, V68, P1331, DOI 10.1111/jofi.12031
+   Giglio S., 2013, SYSTEMIC RISK UNPUB
+   Goetz MR, 2013, REV FINANC STUD, V26, P1787, DOI 10.1093/rfs/hht021
+   Guntay L, 2014, WORKING PAPER
+   Hansen Lars Peter, 2014, RISK TOPOGRAPHY SYST
+   Houston J, 1997, J FINANC ECON, V46, P135, DOI 10.1016/S0304-405X(97)81511-5
+   Hovakimian A, 2000, J FINANC, V55, P451, DOI 10.1111/0022-1082.00212
+   Huang R, 2011, J FINANC INTERMED, V20, P248, DOI 10.1016/j.jfi.2010.06.003
+   Huang Rocco, 2009, 09152 IMF
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Huang Xin, 2012, J FINANC SERV RES, V42, P55
+   Hughes JP, 2013, J FINANC INTERMED, V22, P559, DOI 10.1016/j.jfi.2013.06.004
+   International Monetary Fund, 2010, GLOB FIN STAB REP
+   Kashyap A. K., 2010, WORKING PAPER
+   Kashyap AK, 2002, J FINANC, V57, P33, DOI 10.1111/1540-6261.00415
+   Kashyap Anil K., 2010, FED RES BANK KANS CI, P431
+   Laeven L, 2014, 1404 IMF
+   Laeven L, 2007, J FINANC ECON, V85, P331, DOI 10.1016/j.jfineco.2005.06.001
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Liikanen Erkki, 2012, HIGH LEVEL EXPERT GR
+   Puzanova N, 2013, J BANK FINANC, V37, P1243, DOI 10.1016/j.jbankfin.2012.11.017
+   Ratnovski Lev, 2013, 13233 IMF
+   SAUNDERS A, 1990, J FINANC, V45, P643, DOI 10.2307/2328676
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   Stanford Medicine X, 2013, COMMUNICATION
+   Tarashev N., 2010, WORKING PAPER
+   Vickers John, 2011, FINAL REPORT INDEPEN
+NR 45
+TC 47
+Z9 48
+U1 6
+U2 36
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD AUG
+PY 2016
+VL 69
+SU 1
+BP S25
+EP S34
+DI 10.1016/j.jbankfin.2015.06.022
+PG 10
+WC Business, Finance; Economics
+SC Business & Economics
+GA DR7LS
+UT WOS:000380081800003
+DA 2019-12-28
+ER
+
+PT J
+AU Hurd, TR
+   Cellai, D
+   Melnik, S
+   Shao, QH
+AF Hurd, T. R.
+   Cellai, Davide
+   Melnik, Sergey
+   Shao, Quentin H.
+TI DOUBLE CASCADE MODEL OF FINANCIAL CRISES
+SO INTERNATIONAL JOURNAL OF THEORETICAL AND APPLIED FINANCE
+LA English
+DT Article
+DE Systemic risk; banking network; contagion; random graph; default;
+   funding liquidity; liquidity hoarding
+ID SYSTEMIC RISK; CONTAGION; LIQUIDITY
+AB The scope of financial systemic risk research encompasses a wide range of interbank channels and effects, including asset correlation shocks, default contagion, illiquidity contagion, and asset fire sales. This paper introduces a financial network model that combines the default and liquidity stress mechanisms into a "double cascade mapping". The progress and eventual result of the crisis is obtained by iterating this mapping to its fixed point. Unlike simpler models, this model can therefore quantify how illiquidity or default of one bank influences the overall level of liquidity stress and default in the system. Large-network asymptotic cascade mapping formulas are derived that can be used for efficient network computations of the double cascade. Numerical experiments then demonstrate that these asymptotic formulas agree qualitatively with Monte Carlo results for large finite networks, and quantitatively except when the initial system is placed in an exceptional "knife-edge" configuration. The experiments clearly support the main conclusion that when banks respond to liquidity stress by hoarding liquidity, then in the absence of asset fire sales, the level of defaults in a financial network is negatively related to the strength of bank liquidity hoarding and the eventual level of stress in the network.
+C1 [Hurd, T. R.; Shao, Quentin H.] McMaster Univ, Math & Stat, 1280 Main St, West Hamilton, ON L8S 4L8, Canada.
+   [Cellai, Davide; Melnik, Sergey] Univ Limerick, Dept Math & Stat, MACSI, Limerick V94 T9PX, Ireland.
+RP Hurd, TR (reprint author), McMaster Univ, Math & Stat, 1280 Main St, West Hamilton, ON L8S 4L8, Canada.
+EM hurdt@mcmaster.ca; davide.cellai@gmail.com; sergey.melnik@ul.ie;
+   shaoq@math.mcmaster.ca
+FU Global Risk Institute for Financial Services in Toronto; Natural
+   Sciences and Engineering Research Council of CanadaNatural Sciences and
+   Engineering Research Council of Canada; Irish Research Council - Marie
+   Curie Actions under FP7 (INSPIRE fellowship); FET-Proactive project
+   PLEXMATH; Science Foundation IrelandScience Foundation Ireland
+   [11/PI/1026]; EUEuropean Union (EU)
+FX This project was germinated at the MITACS Canada International Focus
+   Period devoted to Advances in Network Analysis and its Applications,
+   organized by Evangelos Kranakis and held in Vancouver, Canada in July
+   2012. It was funded by awards from the Global Risk Institute for
+   Financial Services in Toronto (TRH), from the Natural Sciences and
+   Engineering Research Council of Canada (TRH), from the Irish Research
+   Council co-funded by Marie Curie Actions under FP7 (INSPIRE fellowship,
+   SM), from the FET-Proactive project PLEXMATH (DC), and from the Science
+   Foundation Ireland (11/PI/1026, DC and SM).; We are indebted to Lionel
+   Cassier of 'Ecole Polytechnique France, and Huibin Cheng, Matheus
+   Grasselli and Bernardo Costa Lima of McMaster University, Canada, who
+   were active in developing an early version of our model. We are grateful
+   to Grzegorz Halaj of the European Central Bank, for discussions about
+   the EU financial network.
+CR Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   BENDER EA, 1978, J COMB THEORY A, V24, P296, DOI 10.1016/0097-3165(78)90059-6
+   Bollobas B, 2003, SIAM PROC S, P132
+   Bollobas B, 1980, EUR J COMBINAT, V1, P311, DOI [10.1016/S0195-6698(80)80030-8, DOI 10.1016/S0195-6698(80)80030-8]
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Hurd TR, 2013, J COMPLEX NETW, V1, P25, DOI 10.1093/comnet/cnt003
+   Hurd T. R., 2011, ARXIV11104312QFINGN
+   Hurd TR, 2016, RECENT PROGR MODERN
+   Hurd TR, 2016, SPRINGERBRIEFS QUANT
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Tirole J., 2010, BIS WORKING PAPERS, V303
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+NR 26
+TC 2
+Z9 2
+U1 1
+U2 6
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 0219-0249
+EI 1793-6322
+J9 INT J THEOR APPL FIN
+JI Int. J. Theor. Appl. Financ.
+PD AUG
+PY 2016
+VL 19
+IS 5
+AR UNSP 1650041
+DI 10.1142/S0219024916500412
+PG 27
+WC Business, Finance
+SC Business & Economics
+GA DV3PR
+UT WOS:000382835800007
+DA 2019-12-28
+ER
+
+PT J
+AU Bosma, JJ
+AF Bosma, Jakob J.
+TI Dueling policies: Why systemic risk taxation can fail
+SO EUROPEAN ECONOMIC REVIEW
+LA English
+DT Article
+DE Systemic risk taxation; Ambiguity; Bailouts
+ID PROMPT CORRECTIVE ACTION; EQUILIBRIUM; DEBT
+AB Two policy instruments for the banking sector are investigated, namely systemic risk taxation and constructive ambiguity about bailout policy. Bailout expectations can induce moral hazard in the form of excessive risk taking by banks. Systemic risk taxation induces banks to prefer uncorrelated investments, leading to lower systemic risk formation. Constructive ambiguity generates uncertainty about bailout prospects. However, systemic risk taxation also may inform banks about the regulator's concern for financial stability and thereby its bailout policy. This result leads to a trade-off between systemic risk taxation and constructive ambiguity and highlights the need to consider interdependence across policies when evaluating their effectiveness. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Bosma, Jakob J.] Univ Groningen, Fac Econ & Business, POB 800, NL-9700 AV Groningen, Netherlands.
+RP Bosma, JJ (reprint author), Univ Groningen, Fac Econ & Business, POB 800, NL-9700 AV Groningen, Netherlands.
+EM j.j.bosma@rug.nl
+OI Bosma, Jakob/0000-0001-6263-0364
+CR Acharya V. V, 2011, AFA 2011 DENV M
+   Acharya V. V., 2009, J FINANC STABIL, V5, P300
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Adrian T., 2011, 348 FRB
+   Albuquerque R, 2010, J MONETARY ECON, V57, P117, DOI 10.1016/j.jmoneco.2009.11.004
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Angeletos GM, 2006, J POLIT ECON, V114, P452, DOI 10.1086/504901
+   [Anonymous], 2015, ECONOMIST, P61
+   BASEL COMMITTEE ON BANKING SUPERVISION, 2009, INT FRAM LIQ RISK MA
+   Basel Committee on Banking Supervision, 2009, STRENGTH RES BANK SE
+   Brown CO, 2005, Q J ECON, V120, P1413, DOI 10.1162/003355305775097506
+   CARLSSON H, 1993, ECONOMETRICA, V61, P989, DOI 10.2307/2951491
+   CHO IK, 1987, Q J ECON, V102, P179, DOI 10.2307/1885060
+   Chunyang W., 2013, EUR ECON REV, V64, P169
+   DRAZEN A, 2000, CARNEGIE-ROCHESTER C, V53, P303
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Freixas X, 2003, FINANCIAL SUPERVISION IN EUROPE, P102
+   Freixas X., 2011, WORKING PAPER
+   Freixas Xavier, 1999, 2238 CEPR
+   Kocherlakota NR, 2007, J MONEY CREDIT BANK, V39, P1107, DOI 10.1111/j.1538-4616.2007.00059.x
+   MAKSIMOVIC V, 1991, J FINANC, V46, P1619, DOI 10.1111/j.1540-6261.1991.tb04637.x
+   Mas-Colell A., 1995, MICROECONOMIC THEORY
+   Morris S, 1998, AM ECON REV, V88, P587
+   MORRIS S, 2001, NBER MACROECONOMICS
+   Morris S., 2003, ADV EC ECONOMETRICS
+   OHARA M, 1990, J FINANC, V45, P1587, DOI 10.2307/2328751
+   Panageas S, 2010, J MONETARY ECON, V57, P101, DOI 10.1016/j.jmoneco.2009.10.008
+   RAJAN RG, 1994, Q J ECON, V109, P399, DOI 10.2307/2118468
+   Shim I, 2011, J MONEY CREDIT BANK, V43, P1625, DOI 10.1111/j.1538-4616.2011.00461.x
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Steiner A, 2014, EUR ECON REV, V70, P126, DOI 10.1016/j.euroecorev.2014.04.005
+   Tinbergen J., 1952, THEORY EC POLICY
+   Zwart Sanne, 2007, J FINANCIAL STABILIT, V3, P149, DOI DOI 10.1016/J.JFS.2007.04.001
+NR 34
+TC 3
+Z9 3
+U1 0
+U2 6
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0014-2921
+EI 1873-572X
+J9 EUR ECON REV
+JI Eur. Econ. Rev.
+PD AUG
+PY 2016
+VL 87
+BP 132
+EP 147
+DI 10.1016/j.euroecorev.2016.05.002
+PG 16
+WC Economics
+SC Business & Economics
+GA DT0HM
+UT WOS:000381164400008
+DA 2019-12-28
+ER
+
+PT J
+AU Rehman, MU
+   Shah, SMA
+AF Rehman, Mobeen Ur
+   Shah, Syed Muhammad Amir
+TI DETERMINANTS OF RETURN'S CO-MOVEMENT FOR EFFECTIVE PORTFOLIO
+   DIVERSIFICATION AMONG REGIONAL STOCK MARKETS
+SO REVISTA EVIDENCIACAO CONTABIL & FINANCAS
+LA English
+DT Article
+DE Heterogeneous Panels; Frontier Markets; Equity Returns; Pooled Mean
+   Analysis
+ID INTERNATIONAL TRANSMISSION
+AB This paper investigates empirically the linkage between frontier and emerging markets of Asia with the developed markets of Unites States, Japan and Europe over the period of 15 years from January 2000 to December 2014. To deal with heterogeneous panels, we have made use of pooled mean group statistics suggested by Pesaran et al. (2001) for more reliable results. After testing for panel unit root and co-integration, both short and long term relationship were found among the included markets thereby supporting the feedback hypothesis. The direction of relationship is more important from developed to emerging and frontier markets than among the developing-emerging markets. Results suggest that integration is higher among EFA and Japanese markets than the EFA and US markets. These findings are in accordance with the view that level of stock market integration continues to increase. The finding of this paper has important implication for the researchers, practitioners and policy makers. Knowledge about the kind of relationship between EFA and developed markets can help governments of EFA markets to devise various strategies keeping in view their return sensitivity to the developed equity markets. This can help in predicting the return pattern of emerging and frontier markets over the period of short and long run. Furthermore, the relationship among EFA and developed markets enable investors to reap maximum diversification benefits and to minimize risks due to financial contagion or spillover phenomena.
+C1 [Rehman, Mobeen Ur] Shaheed Zulfikar Ali Bhutto Inst Sci & Technol, H-8-4, Islamabad, Pakistan.
+   [Shah, Syed Muhammad Amir] Allama Iqbal Open Univ, Islamabad, Pakistan.
+RP Rehman, MU (reprint author), Shaheed Zulfikar Ali Bhutto Inst Sci & Technol, H-8-4, Islamabad, Pakistan.
+EM mobeenrehman@live.com; dramirshah@aiou.edu.pk
+RI Rehman, Mobeen Ur/B-4368-2017
+OI Rehman, Mobeen Ur/0000-0002-8889-9051
+CR Agenor P. R., 2005, CTR GROWTH BUSINESS, V52
+   Aktar Ismail, 2009, INT RES J FINANCE EC, P203
+   Arshanapalli B, 1998, J PORTFOLIO MANAGE, V24, P10, DOI 10.3905/jpm.1998.409650
+   Bekaert G, 2006, J INT MONEY FINANC, V25, P370, DOI 10.1016/j.jimonfin.2006.01.003
+   Bekaert G, 2011, WORLD DEV, V39, P1, DOI 10.1016/j.worlddev.2010.06.016
+   Benkato O.M., 2003, J BUSINESS FINANCE A, V30, P1089
+   Berger D, 2011, J FINANC ECON, V101, P227, DOI 10.1016/j.jfineco.2011.02.009
+   CIARLONE A, 2009, J INT FINANC MARK I, V19, P222
+   Darrat A. F., 2000, FINANCIAL REV, V35, P105, DOI DOI 10.1111/J.1540-6288.2000.TB01423.X
+   Didier T, 2010, WORLD BANK POLICY RE
+   EUN CS, 1989, J FINANC QUANT ANAL, V24, P241, DOI 10.2307/2330774
+   Floros C, 2005, FINANC MARK PORTFOLI, V19, P169, DOI 10.1007/s11408-005-3384-2
+   Goh BH, 2005, BUILD ENVIRON, V40, P267, DOI 10.1016/j.buildenv.2004.07.012
+   Johnson R, 2002, J FINANC RES, V25, P141, DOI DOI 10.1111/1475-6803.00009
+   Karolyi GA, 1996, J FINANC, V51, P951, DOI 10.2307/2329228
+   Lee HS, 2004, APPL ECON LETT, V11, P197, DOI 10.1080/1350485042000203850
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Mahmood Y, 2013, PAKISTAN J COMMERCE, V7, P482
+   Mak S., 1992, APPL FINANCIAL EC, V2, P43
+   Masih A. M. M., 1997, Q REV EC FINANCE, V37, P859, DOI DOI 10.1016/S1062-9769(97)90008-9
+   Voronkova Svitlana, 2004, INT REV FINANC ANAL, V13, P633, DOI DOI 10.1016/J.IRFA.2004.02.017
+   Wang P, 2008, MANCH SCH, V76, P116, DOI 10.1111/j.1467-9957.2008.01083.x
+   YANG Y, 2006, ASIAN-PAC ECON LIT, V20, P40
+NR 23
+TC 3
+Z9 3
+U1 0
+U2 2
+PU UNIV FEDERAL PARAIBA
+PI JOAO PESSOA
+PA CIDADE UNIV, JOAO PESSOA, PB 58059-900, BRAZIL
+SN 2318-1001
+J9 Rev Evidenciacao Con
+JI Rev. Evidenciacao Contab. Financ.
+PD JAN-APR
+PY 2016
+VL 4
+IS 1
+BP 84
+EP 96
+DI 10.18405/RECFIN20160106
+PG 13
+WC Business, Finance
+SC Business & Economics
+GA DM0DB
+UT WOS:000376011900007
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Arkhipova, VV
+AF Arkhipova, V. V.
+TI INSTITUTIONAL SOURCES OF FINANCIAL INSTABILITY
+SO CONTEMPORARY EUROPE-SOVREMENNAYA EVROPA
+LA Russian
+DT Article
+DE institution; global financial system; reforming; financial "contagion"
+   effects; Belarus; Russia
+AB The purpose of this paper is to determinate the key global and cross-national (giving examples of Russia and Belarus) financial destabilizators that can be identified with sources of systemic risks and crises. The methodology of research employed in this work includes analysis of documents of G-20, statistical and comparative analysis based on data offered by national statistic agencies and world financial organizations, examining of quality changes in global and regional financial relations. Such approach gives an opportunity to estimate the level of vulnerability for global and national financial systems. The paper shows that the main financial risks concentrate in financial architecture, the net of systemically important financial institutions and the sphere of shadow finance. Additional financial threats are created by sanctions, "contagion" effects and building of "false stimulus" system of financial incentives. The research continues the author's papers devoted to analysis of negative financial effects in global economy and determines the channels of different types (wave, monsoonal, agent, cross-market) of financial "contagion" transmission through the world financial system to national financial sectors of Russia and Belarus. The article also investigates one of the most serious sources of systemic risks - the financial sanctions regime that influences the directions of cross border capital flows.
+C1 [Arkhipova, V. V.] Russian Acad Sci, Inst Econ, Moscow 117901, Russia.
+RP Arkhipova, VV (reprint author), Nakhimovsky Pr 32, Moscow 117218, Russia.
+EM q123zv@yandex.ru
+CR Anokhina M., 2014, IDENTIFYING SIFI DET
+   [Anonymous], 2015, GLOB LIQ IND STAT
+   Arkhipova V.V, 2014, INNOVATSII INVESTITS, P74
+   Barth J.R., 2013, GLOBAL RESPONSE 135
+   GFMA matrix, 2013, GLOB REG REF PROP SI
+   Kuntsevich V., 2005, VESTNIK BELORUSSKOGO, P53
+   Olsevich Y., 2014, FUNDAMENTALNAYA NEOP
+   Pashkevich A., 2013, BELORUSSKIJ VESTNIK, P27
+   WFEM, 2015, WORLD FED EXCH MEM S
+NR 9
+TC 0
+Z9 0
+U1 0
+U2 2
+PU ROSSIISKAYA AKAD NAUK, INST EVROPY
+PI MOSCOW
+PA MOKHOVAYA UL DOM 11, STR 3B, MOSCOW, 125993, RUSSIA
+SN 0201-7083
+J9 CONTEMP EUR
+JI Contemp. Eur.
+PD SEP-OCT
+PY 2016
+IS 5
+BP 103
+EP 114
+PG 12
+WC Area Studies
+SC Area Studies
+GA ER3YM
+UT WOS:000398736100010
+DA 2019-12-27
+ER

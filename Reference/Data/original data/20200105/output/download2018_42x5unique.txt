@@ -1,0 +1,473 @@
+
+PT J
+AU Uddin, GS
+   Hernandez, JA
+   Shahzad, SJH
+   Hedstrom, A
+AF Uddin, Gazi Salah
+   Hernandez, Jose Areola
+   Shahzad, Syed Jawad Hussain
+   Hedstrom, Axel
+TI Multivariate dependence and spillover effects across energy commodities
+   and diversification potentials of carbon assets
+SO ENERGY ECONOMICS
+LA English
+DT Article
+DE Carbon assets; Energy commodities; Tail dependence; Risk spillover
+ID EMISSION ALLOWANCE PRICES; TRADING SCHEME; SYSTEMIC RISK; MARKETS;
+   DYNAMICS; DECOMPOSITION; VOLATILITY; RETURNS; OIL
+AB In a first step, we model the multivariate tail dependence structure and spillover effects across energy commodities such as crude oil, natural gas, ethanol, heating oil, coal and gasoline using canonical vine (C-vine) copula and c-vine conditional Value-at-Risk (CoVaR). In the second step, we formulate portfolio strategies based on different performance measures to analyze the risk reduction and diversification potential of carbon assets for energy commodities. We identify greater exposure to losses arising from investments in heating oil and ethanol markets. We also find evidence of carbon asset providing diversification benefits to energy commodity investments. These findings motivate for regulatory adjustments in the trading and emission permits for the energy markets most strongly diversified by carbon assets. (C) 2018 Published by Elsevier B.V.
+C1 [Uddin, Gazi Salah; Hedstrom, Axel] Linkoping Univ, Dept Management & Engn, S-58183 Linkoping, Sweden.
+   [Hernandez, Jose Areola] Rennes Sch Business, Rennes, Brittany, France.
+   [Shahzad, Syed Jawad Hussain] Montpellier Business Sch, Montpellier, France.
+RP Uddin, GS (reprint author), Linkoping Univ, Dept Management & Engn, S-58183 Linkoping, Sweden.
+EM gazi.salah.uddin@liu.se; jose.arreola-hernandez@rennes-sb.com;
+   j.syed@montpellier-bs.com; axehe431@student.liu.se
+RI Uddin, Gazi Salah/L-6135-2019; Shahzad, Syed Jawad Hussain/D-1986-2019
+OI Shahzad, Syed Jawad Hussain/0000-0003-3511-6057; Hedstrom,
+   Axel/0000-0003-4729-8011
+FU Jan Wallander and Tom Hedelius Foundation
+FX Gazi Salah Uddin is thankful for the financial support provided by the
+   Jan Wallander and Tom Hedelius Foundation.
+CR Aas K, 2009, INSUR MATH ECON, V44, P182, DOI 10.1016/j.insmatheco.2007.02.001
+   Algieri B, 2017, ENERG ECON, V62, P312, DOI 10.1016/j.eneco.2017.01.006
+   Hernandez JA, 2017, APPL ECON, V49, P2409, DOI 10.1080/00036846.2016.1240346
+   Balcilar M, 2016, ENERG ECON, V54, P159, DOI 10.1016/j.eneco.2015.11.003
+   Benz E, 2009, ENERG ECON, V31, P4, DOI 10.1016/j.eneco.2008.07.003
+   Bredin D, 2011, ENERG ECON, V33, P353, DOI 10.1016/j.eneco.2010.06.009
+   Brunnermeier M., 2011, COVAR FEDERAL RESERV, P348
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Chevallier J, 2009, ENERG ECON, V31, P614, DOI 10.1016/j.eneco.2009.02.008
+   Creti A, 2017, ENERG POLICY, V107, P119, DOI 10.1016/j.enpol.2017.04.018
+   Czado C, 2010, LECT NOTES STAT, P93
+   DALES JH, 1968, POLLUTION PROPERTY P
+   Daskalakis G, 2009, J BANK FINANC, V33, P1230, DOI 10.1016/j.jbankfin.2009.01.001
+   Deeney P, 2016, ENERG POLICY, V88, P561, DOI 10.1016/j.enpol.2015.06.026
+   Dumitrescu E.l., 2012, FINANCE, V33, P1
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Hammoudeh S, 2015, ENERG ECON, V49, P149, DOI 10.1016/j.eneco.2015.02.013
+   Hammoudeh S, 2014, ENERG ECON, V46, P122, DOI 10.1016/j.eneco.2014.07.020
+   Hernandez JA, 2014, ENERG ECON, V45, P528, DOI 10.1016/j.eneco.2014.08.015
+   Hintermann B, 2010, J ENVIRON ECON MANAG, V59, P43, DOI 10.1016/j.jeem.2009.07.002
+   Joe H., 1997, MULTIVARIATE MODELS
+   Kanamura T, 2016, ENERG ECON, V54, P204, DOI 10.1016/j.eneco.2015.10.016
+   Kim JM, 2017, PHYSICA A, V465, P714, DOI 10.1016/j.physa.2016.08.036
+   Koop G, 2013, J EMPIR FINANC, V24, P166, DOI 10.1016/j.jempfin.2013.10.005
+   Kroner KF, 1998, REV FINANC STUD, V11, P817, DOI 10.1093/rfs/11.4.817
+   Mansanet-Bataller M, 2007, ENERG J, V28, P73
+   Mensi W, 2017, J BANK FINANC, V75, P258, DOI 10.1016/j.jbankfin.2016.11.017
+   Nelsen R.B., 2006, INTRO COPULAS
+   Oestreich AM, 2015, J BANK FINANC, V58, P294, DOI 10.1016/j.jbankfin.2015.05.005
+   Ortas E, 2016, J CLEAN PROD, V116, P40, DOI 10.1016/j.jclepro.2015.12.112
+   Paolella MS, 2008, J BANK FINANC, V32, P2022, DOI 10.1016/j.jbankfin.2007.09.024
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Reboredo JC, 2013, ENERG ECON, V36, P471, DOI 10.1016/j.eneco.2012.10.004
+   Rittler D, 2012, J BANK FINANC, V36, P774, DOI 10.1016/j.jbankfin.2011.09.009
+   Sanin ME, 2015, ENERG POLICY, V82, P321, DOI 10.1016/j.enpol.2015.02.024
+   Sklar M., 1959, FONCTIONS REPARTITIO, V8, P229
+   Tan XP, 2017, APPL ENERG, V190, P306, DOI 10.1016/j.apenergy.2016.12.116
+   Wen XQ, 2017, ECON MODEL, V62, P194, DOI 10.1016/j.econmod.2016.12.022
+   Zachmann G, 2013, ENERG ECON, V35, P5, DOI 10.1016/j.eneco.2012.06.019
+   Zheng ZY, 2015, PHYSICA A, V426, P9, DOI 10.1016/j.physa.2015.01.018
+NR 40
+TC 4
+Z9 4
+U1 9
+U2 26
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD MAR
+PY 2018
+VL 71
+BP 35
+EP 46
+DI 10.1016/j.eneco.2018.01.035
+PG 12
+WC Economics
+SC Business & Economics
+GA GE4BK
+UT WOS:000431159100003
+DA 2019-12-28
+ER
+PT J
+AU Horta, P
+   Lobao, J
+AF Horta, Paulo
+   Lobao, Julio
+TI Global and Extreme Dependence Between Investor Sentiment and Stock
+   Returns in European Markets
+SO JOURNAL OF BEHAVIORAL FINANCE
+LA English
+DT Article
+DE Behavioral finance; Investor sentiment; European stock markets; Copula
+   models; Global and extreme dependence
+ID CONSUMER CONFIDENCE; CONTAGION; RISK; CRISIS
+AB The authors investigate the global and extreme dependence structure between investor sentiment and stock returns in 7 European stock markets (Belgium, France, Germany, Greece, the Netherlands, Portugal, and the UK), over the period 1985-2015. Global dependence refers to the correlation of changes in sentiment and stock returns over the whole range of these 2 variables, and extreme dependence refers to the local correlation of high (i.e. asymptotic) changes in sentiment and high stock returns. Using copula models and a bootstrap procedure, 6 statistical tests are performed for this purpose. Among the results of the tests, the authors highlight those that provide evidence of contemporaneous lower extreme dependence and contemporaneous upper extreme independence between sentiment and returns. As policy implications, these results suggest that financial stability can be promoted if regulators consider the impact of their decisions on investor sentiment. Also, the results seem to support the arguments in favor of short selling ban during turmoil periods. Finally, overall, the results are relevant for both investors and regulators and reinforce the importance of considering investor sentiment to better understand the behavior of financial markets.
+C1 [Horta, Paulo] Portuguese Secur Market Commiss, Lisbon, Portugal.
+   [Lobao, Julio] Univ Porto, Porto, Portugal.
+RP Horta, P (reprint author), Portuguese Secur Market Commiss, Market Supervis Dept, Rua Laura Alves 4, P-1050138 Lisbon, Portugal.
+EM paulohorta@cmvm.pt
+RI Lobao, Julio/AAF-4837-2019
+OI Lobao, Julio/0000-0001-5896-9648
+CR Akhtar S, 2012, J BANK FINANC, V36, P3289, DOI 10.1016/j.jbankfin.2012.07.019
+   Baker M, 2007, J ECON PERSPECT, V21, P129, DOI 10.1257/jep.21.2.129
+   Baker M, 2006, J FINANC, V61, P1645, DOI 10.1111/j.1540-6261.2006.00885.x
+   Balvers R, 2000, J FINANC, V55, P745, DOI 10.1111/0022-1082.00225
+   Baumeister RF, 2001, REV GEN PSYCHOL, V5, P323, DOI DOI 10.1037/1089-2680.5.4.323
+   Brown GW, 2005, J BUS, V78, P405, DOI 10.1086/427633
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Corredor P, 2013, INT REV ECON FINANC, V27, P572, DOI 10.1016/j.iref.2013.02.001
+   Fernandes CMD, 2013, J BEHAV FINANC, V14, P253, DOI 10.1080/15427560.2013.848867
+   DELONG JB, 1990, J POLIT ECON, V98, P703, DOI 10.1086/261703
+   Dias A., 2004, THESIS SWISS FEDERAL
+   Embrechts P., 1999, RISK, V12, P69
+   Embrechts Paul, 2003, HDB HEAVY TAILED DIS, P331
+   Horta P., 2013, INVESTMENT MANAGEMEN, V10, P114
+   Horta P, 2016, QUANT FINANC, V16, P625, DOI 10.1080/14697688.2015.1033447
+   Horta P, 2014, INT REV FINANC ANAL, V35, P140, DOI 10.1016/j.irfa.2014.08.002
+   Horta P, 2010, PORT ECON J, V9, P115, DOI 10.1007/s10258-010-0056-6
+   Huang DS, 2015, REV FINANC STUD, V28, P791, DOI 10.1093/rfs/hhu080
+   Jansen WJ, 2003, ECON LETT, V79, P89, DOI 10.1016/S0165-1765(02)00292-6
+   Kadilli A, 2015, J FINANC STABIL, V21, P26, DOI 10.1016/j.jfs.2015.09.004
+   Lemmon M, 2006, REV FINANC STUD, V19, P1499, DOI 10.1093/rfs/hhj038
+   Loewenstein GF, 2001, PSYCHOL BULL, V127, P267, DOI 10.1037//0033-2909.127.2.267
+   Lu XF, 2012, J SYST SCI COMPLEX, V25, P529, DOI 10.1007/s11424-012-9332-0
+   Lutz C, 2016, MACROECON DYN, V20, P1477, DOI 10.1017/S1365100514000996
+   Medin D., 1997, COGNITIVE PSYCHOL
+   MILLER EM, 1977, J FINANC, V32, P1151, DOI 10.2307/2326520
+   Nelsen R. B, 2006, INTRO COPULAS
+   Rachev S.T., 2005, FAT TAILED SKEWED AS
+   Schmeling M, 2009, J EMPIR FINANC, V16, P394, DOI 10.1016/j.jempfin.2009.01.002
+   Schmidt T., 2006, COPULAS THEORY APPL, P3
+   SCHWARZ N, 2002, HEURISTICS BIASES PS, P103
+   Seligman M., 2006, LEARNED OPTIMISM
+   Shiller R. J., 2000, IRRATIONAL EXUBERANC
+   SHLEIFER A, 1990, J ECON PERSPECT, V4, P19, DOI 10.1257/jep.4.2.19
+   Sklar A, 1959, PUBL I STAT U PARIS, V8, P229, DOI DOI 10.12691/IJEFM-3-2-3
+   Trivedi P.K., 2006, FDN TRENDS EC, V1, P1, DOI DOI 10.1561/0800000005
+   TVERSKY A, 1973, COGNITIVE PSYCHOL, V5, P207, DOI 10.1016/0010-0285(73)90033-9
+   Verma R., 2008, APPL FINANCIAL EC, V18, p[16, 1303], DOI DOI 10.1080/09603100701704272
+NR 38
+TC 1
+Z9 1
+U1 1
+U2 9
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1542-7560
+EI 1542-7579
+J9 J BEHAV FINANC
+JI J. Behav. Financ.
+PY 2018
+VL 19
+IS 2
+BP 141
+EP 158
+DI 10.1080/15427560.2017.1373647
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA GG4AQ
+UT WOS:000432635200002
+DA 2019-12-27
+ER
+
+PT J
+AU Yu, HH
+   Du, DL
+   Fang, LB
+   Yan, PP
+AF Yu, Honghai
+   Du, Donglei
+   Fang, Libing
+   Yan, Panpan
+TI Risk contribution of crude oil to industry stock returns
+SO INTERNATIONAL REVIEW OF ECONOMICS & FINANCE
+LA English
+DT Article
+DE Crude oil market; Industry stock returns; Risk contribution; ADCC-Delta
+   CoVaR
+ID PRICE SHOCKS; SYSTEMIC RISK; US; MARKETS; IMPACT; DEPENDENCE; MOVEMENTS;
+   CHINA; TESTS
+AB Oil shock is an important source of risk and hence has a significant effect on the real economy and financial markets. The objective of this study is to explore the crude oil risk contribution to industry-level returns in the US stock market using the ADCC-ACoVaR model. We employ the Kolmogorov-Smirnov test to rank the contribution and then investigate the structural breakpoints using the Bai and Perron (2003) test. Our empirical results reveal that oil contributes the highest risk to the energy industry and the lowest risk to the Consumer Staples industry. We also find notable discrepancies between industries with regard to number of breakpoints and the break date. In particular, the rankings of the financial, materials, and utilities industries fluctuate dramatically across different sub-samples. In addition, the crude oil risk contribution was commonly larger across all these industries during the 2008 crisis period. Our findings are helpful to investors, market participants, and policy makers.
+C1 [Yu, Honghai; Fang, Libing; Yan, Panpan] Nanjing Univ, Sch Management & Engn, 22 Hankou Rd, Nanjing 210093, Jiangsu, Peoples R China.
+   [Du, Donglei] Univ New Brunswick, Business Adm, Fredericton, NB E3B 5A3, Canada.
+RP Fang, LB (reprint author), Nanjing Univ, Sch Management & Engn, 22 Hankou Rd, Nanjing 210093, Jiangsu, Peoples R China.
+EM hhyu@nju.edu.cn; ddu@unb.ca; lbfang@nju.edu.cn; cherry_yanpanpan@163.com
+RI fang, libing/W-6528-2019
+FU Natural Science Foundation of ChinaNational Natural Science Foundation
+   of China [71472085, 71401071, 71672081, 71771117]
+FX We acknowledge financial support from the Natural Science Foundation of
+   China under Grants Nos. 71472085, 71401071, 71672081 and 71771117.
+CR Abadie A, 2002, J AM STAT ASSOC, V97, P284, DOI 10.1198/016214502753479419
+   Acharya VV, 2013, REV FINANC, V17, P107, DOI 10.1093/rof/rfs022
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Agren M, 2006, WORKING PAPER
+   Anderson K, 2010, J EMPIR FINANC, V17, P345, DOI 10.1016/j.jempfin.2009.12.004
+   Apergis N, 2009, ENERG ECON, V31, P569, DOI 10.1016/j.eneco.2009.03.001
+   Arouri ME, 2011, ECON MODEL, V28, P1815, DOI 10.1016/j.econmod.2011.03.012
+   Arouri ME, 2012, INT J FINANC ECON, V17, P242, DOI 10.1002/ijfe.443
+   Arouri MEH, 2010, ENERG POLICY, V38, P4528, DOI 10.1016/j.enpol.2010.04.007
+   Bai J, 2003, J APPL ECONOMET, V18, P1, DOI 10.1002/jae.659
+   Basher SA, 2006, GLOB FINANC J, V17, P224, DOI 10.1016/j.gfj.2006.04.001
+   Bauwens L, 2005, J BUS ECON STAT, V23, P346, DOI 10.1198/073500104000000523
+   BROWN RL, 1975, J ROY STAT SOC B MET, V37, P149
+   Brownlees C. T., 2012, VOLATILITY CORRELATI
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Chen KH, 2016, ENG LET, V24, P268
+   CHOW GC, 1960, ECONOMETRICA, V28, P591, DOI 10.2307/1910133
+   Doidge C, 2013, J FINANC ECON, V110, P546, DOI 10.1016/j.jfineco.2013.08.008
+   Driesprong G, 2008, J FINANC ECON, V89, P307, DOI 10.1016/j.jfineco.2007.07.008
+   Du LM, 2015, ENERG ECON, V51, P455, DOI 10.1016/j.eneco.2015.08.007
+   Elyasiani E, 2011, ENERG ECON, V33, P966, DOI 10.1016/j.eneco.2011.03.013
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R. F., 2013, REV EC STAT, V95
+   Fan QB, 2012, INT REV ECON FINANC, V22, P112, DOI 10.1016/j.iref.2011.09.004
+   Fang CR, 2014, INT REV ECON FINANC, V29, P330, DOI 10.1016/j.iref.2013.06.005
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Gogineni S, 2010, FINAN REV, V45, P995, DOI 10.1111/j.1540-6288.2010.00282.x
+   Hammoudeh S., 2004, INT REV ECON FINANC, V13, P427, DOI DOI 10.1016/S1059-0560(03)00011-X
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Kang WS, 2015, J INT FINANC MARK I, V34, P41, DOI 10.1016/j.intfin.2014.11.002
+   Kilian L, 2008, REV ECON STAT, V90, P216, DOI 10.1162/rest.90.2.216
+   Kilian L, 2009, INT ECON REV, V50, P1267, DOI 10.1111/j.1468-2354.2009.00568.x
+   Lee BJ, 2012, ENERG ECON, V34, P1284, DOI 10.1016/j.eneco.2012.06.004
+   MALIK F, 2007, INT REV ECON FINANC, V16, P357, DOI DOI 10.1016/J.IREF.2005.05.005
+   McSweeney EJ, 2008, STUD ECON FINANC, V25, P131, DOI 10.1108/10867370810879447
+   Moya-Martinez P, 2014, ECON MODEL, V37, P280, DOI 10.1016/j.econmod.2013.11.014
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Park J, 2008, ENERG ECON, V30, P2587, DOI 10.1016/j.eneco.2008.04.003
+   Rapach DE, 2010, REV FINANC STUD, V23, P821, DOI 10.1093/rfs/hhp063
+   Reboredo JC, 2016, ENERG ECON, V54, P33, DOI 10.1016/j.eneco.2015.11.015
+   Reboredo JC, 2014, INT REV ECON FINANC, V29, P145, DOI 10.1016/j.iref.2013.05.014
+   Sadorsky P, 1999, ENERG ECON, V21, P449, DOI 10.1016/S0140-9883(99)00020-1
+   Salisu AA, 2015, ENERG ECON, V50, P1, DOI 10.1016/j.eneco.2015.03.031
+   Yu LA, 2008, ENERG ECON, V30, P2623, DOI 10.1016/j.eneco.2008.05.003
+   Zeileis A, 2003, COMPUT STAT DATA AN, V44, P109, DOI 10.1016/S0167-9473(03)00030-6
+   Zhu HM, 2016, ENERG ECON, V55, P30, DOI 10.1016/j.eneco.2015.12.027
+NR 46
+TC 6
+Z9 6
+U1 2
+U2 6
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1059-0560
+EI 1873-8036
+J9 INT REV ECON FINANC
+JI Int. Rev. Econ. Financ.
+PD NOV
+PY 2018
+VL 58
+BP 179
+EP 199
+DI 10.1016/j.iref.2018.03.009
+PG 21
+WC Business, Finance; Economics
+SC Business & Economics
+GA HD5MB
+UT WOS:000452573400012
+DA 2019-12-28
+ER
+
+PT J
+AU Burkholz, R
+   Herrmann, HJ
+   Schweitzer, F
+AF Burkholz, Rebekka
+   Herrmann, Hans J.
+   Schweitzer, Frank
+TI Explicit size distributions of failure cascades redefine systemic risk
+   on finite networks
+SO SCIENTIFIC REPORTS
+LA English
+DT Article
+ID FINANCIAL NETWORKS; COMPLEXITY; STABILITY; EMERGENCE; CONTAGION;
+   BUNDLES; MODEL
+AB How big is the risk that a few initial failures of nodes in a network amplify to large cascades that span a substantial share of all nodes? Predicting the final cascade size is critical to ensure the functioning of a system as a whole. Yet, this task is hampered by uncertain and missing information. In infinitely large networks, the average cascade size can often be estimated by approaches building on local tree and mean field approximations. Yet, as we demonstrate, in finite networks, this average does not need to be a likely outcome. Instead, we find broad and even bimodal cascade size distributions. This phenomenon persists for system sizes up to 10(7) and different cascade models, i.e. it is relevant for most real systems. To show this, we derive explicit closed-form solutions for the full probability distribution of the final cascade size. We focus on two topological limit cases, the complete network representing a dense network with a very narrow degree distribution, and the star network representing a sparse network with a inhomogeneous degree distribution. Those topologies are of great interest, as they either minimize or maximize the average cascade size and are common motifs in many real world networks.
+C1 [Burkholz, Rebekka] ETH, Comp Sci, CH-8092 Zurich, Switzerland.
+   [Herrmann, Hans J.] ETH, Computat Phys Engn Mat, IfB, CH-8093 Zurich, Switzerland.
+   [Herrmann, Hans J.] Univ Fed Ceara, Fis, BR-60451970 Fortaleza, Ceara, Brazil.
+   [Schweitzer, Frank] ETH, Management Technol & Econ, CH-8092 Zurich, Switzerland.
+RP Burkholz, R (reprint author), ETH, Comp Sci, CH-8092 Zurich, Switzerland.
+EM rburkholz@ethz.ch
+RI Schweitzer, Frank/B-2127-2012
+OI Schweitzer, Frank/0000-0003-1551-6491
+FU ETH48 project; EU-FET project MULTIPLEX [317532]
+FX RB acknowledges support by the ETH48 project. FS acknowledges support by
+   the EU-FET project MULTIPLEX 317532.
+CR Acemoglu D., 2015, 20931 NAT BUR EC RES
+   Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Bashan A, 2013, NAT PHYS, V9, P667, DOI 10.1038/NPHYS2727
+   Battiston S, 2016, P NATL ACAD SCI USA, V113, P10031, DOI 10.1073/pnas.1521573113
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Briand F., 1990, COMMUNITY FOOD WEBS
+   Burkholz R., 2017, FRAMEWORK CASCADE SI
+   Burkholz R., 2017, ARXIV170604451
+   Burkholz R., 2016, THESIS
+   Burkholz R, 2016, PHYSICA D, V323, P64, DOI 10.1016/j.physd.2015.10.004
+   Burkholz R, 2016, PHYS REV E, V93, DOI 10.1103/PhysRevE.93.042313
+   Contreras MGA, 2014, PHYS REV E, V90, DOI 10.1103/PhysRevE.90.062812
+   DANIELS HE, 1945, PROC R SOC LON SER-A, V183, P405, DOI 10.1098/rspa.1945.0011
+   Dobson I, 2005, PROBAB ENG INFORM SC, V19, P15, DOI 10.1017/S0269964805050023
+   Dorogovtsev SN, 2003, EVOLUTION NETWORKS B
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Gleeson JP, 2007, PHYS REV E, V75, DOI 10.1103/PhysRevE.75.056103
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Heesterbeek H, 2015, SCIENCE, V347, P1216, DOI 10.1126/science.aaa4339
+   Helbing D, 2013, NATURE, V497, P51, DOI 10.1038/nature12047
+   Hurd T., 2013, J COMPLEX NETW, V1, P1
+   Klimek P, 2015, SCI ADV, V1, DOI 10.1126/sciadv.1500522
+   Kondoh M, 2003, SCIENCE, V299, P1388, DOI 10.1126/science.1079154
+   Liu CR, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0112363
+   Lorenz J, 2009, EUR PHYS J B, V71, P441, DOI 10.1140/epjb/e2009-00347-4
+   Moreira AA, 2012, PHYS REV LETT, V109, DOI 10.1103/PhysRevLett.109.255701
+   Moreira AA, 2009, PHYS REV LETT, V102, DOI 10.1103/PhysRevLett.102.018701
+   Moreno Y, 2002, EUROPHYS LETT, V58, P630, DOI 10.1209/epl/i2002-00442-2
+   Motter AE, 2002, PHYS REV E, V66, DOI 10.1103/PhysRevE.66.065102
+   Pastor-Satorras R, 2015, REV MOD PHYS, V87, P925, DOI 10.1103/RevModPhys.87.925
+   Payne JL, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.026125
+   Pradhan S, 2010, REV MOD PHYS, V82, P499, DOI 10.1103/RevModPhys.82.499
+   Sampaio CIN, 2015, SCI REP-UK, V5, DOI 10.1038/srep09082
+   Schneider CM, 2013, SCI REP-UK, V3, DOI 10.1038/srep01969
+   Schneider CM, 2011, P NATL ACAD SCI USA, V108, P3838, DOI 10.1073/pnas.1009440108
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   SETHNA JP, 1993, PHYS REV LETT, V70, P3347, DOI 10.1103/PhysRevLett.70.3347
+   Stark HU, 2008, PHYS REV LETT, V101, DOI 10.1103/PhysRevLett.101.018701
+   Szpankowski W., 2001, INCLUSION EXCLUSION, P49, DOI [10.1002/9781118032770, DOI 10.1002/9781118032770]
+   Tessone CJ, 2013, J STAT PHYS, V151, P765, DOI 10.1007/s10955-013-0723-y
+   Verma T, 2016, NAT COMMUN, V7, DOI 10.1038/ncomms10441
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+   Watts DJ, 2007, J CONSUM RES, V34, P441, DOI 10.1086/518527
+NR 48
+TC 3
+Z9 3
+U1 0
+U2 5
+PU NATURE PUBLISHING GROUP
+PI LONDON
+PA MACMILLAN BUILDING, 4 CRINAN ST, LONDON N1 9XW, ENGLAND
+SN 2045-2322
+J9 SCI REP-UK
+JI Sci Rep
+PD MAY 2
+PY 2018
+VL 8
+AR 6878
+DI 10.1038/s41598-018-25211-3
+PG 8
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA GE4QZ
+UT WOS:000431203100007
+PM 29720624
+OA DOAJ Gold, Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Allen, F
+   Goldstein, I
+   Jagtiani, J
+AF Allen, Franklin
+   Goldstein, Itay
+   Jagtiani, Julapa
+TI The Interplay among Financial Regulations, Resilience, and Growth
+SO JOURNAL OF FINANCIAL SERVICES RESEARCH
+LA English
+DT Article
+DE Financial reform; Capital regulations; Liquidityregulations;
+   Too-big-to-fail; Living wills; Dodd-Frank Wall Street Reformand Consumer
+   Protection Act Financial stability; Interconnectedness
+ID BANK RUNS; DEPOSIT INSURANCE; SYSTEMIC RISK; LIQUIDITY; CONTAGION;
+   CRISES
+AB Interconnectedness has been an important source of market failures, leading to the recent financial crisis. Large financial institutions tend to have similar exposures and thus exert externalities on each other through various mechanisms. Regulators have responded by putting in place more regulations with many layers of regulatory complexity, leading to ambiguity and market manipulation. Mispricing risk in complex models and the arbitrage opportunities through the regulatory loopholes have provided incentives for certain activities to be more concentrated in the regulated entities and for other activities to leave the banking into new shadow banking areas. How can we design an effective regulatory framework that would perfectly rule out bank runs and TBTF and to do so without introducing incentives for financial firms to take excessive risk? It is important for financial regulations to be coordinated across regulatory entities and jurisdictions and for financial regulations to be forward looking, rather than aiming to address problems of the past.
+C1 [Allen, Franklin] Imperial Coll London, London, England.
+   [Goldstein, Itay] Univ Penn, Wharton Sch, Philadelphia, PA 19104 USA.
+   [Jagtiani, Julapa] Fed Reserve Bank Philadelphia, Supervis Regulat & Credit, Philadelphia, PA 19106 USA.
+RP Jagtiani, J (reprint author), Fed Reserve Bank Philadelphia, Supervis Regulat & Credit, Philadelphia, PA 19106 USA.
+EM julapa.jagtiani@phil.frb.org
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2000, ECON J, V110, P236, DOI 10.1111/1468-0297.00499
+   Allen F, 2017, WHARTON SCH IMPERIAL
+   Allen F, 2018, J FINANC SERV RES, V53, P233, DOI 10.1007/s10693-018-0296-7
+   Allen F, 2016, J FINANC SERV RES, V49, P133, DOI 10.1007/s10693-016-0253-2
+   Baker C, 2017, J FINANC REGUL COMPL, V25, P253, DOI 10.1108/JFRC-02-2017-0027
+   Basel Committee on Banking Supervision (Basel), 2011, BAS 3 GLOB REG FRAM
+   Bebchuk LA, 2011, REV FINANC STUD, V24, P3519, DOI 10.1093/rfs/hhr086
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Bhattacharya S, 1987, NEW APPROACHES MONET
+   Board of Governors of the Federal Reserve System and the Federal Deposit Insurance Corporation, 2016, RES PLAN ASS FRAM FI
+   Bond P, 2010, REV FINANC STUD, V23, P781, DOI 10.1093/rfs/hhp059
+   Bordo M, 2001, ECON POLICY, V16, P53, DOI DOI 10.1111/1468-0327.00070.(52-82)
+   Brewer E, 2013, J FINANC SERV RES, V43, P1, DOI 10.1007/s10693-011-0119-6
+   Brunnermeier Markus, 2009, GENEVA REPORTS WORLD, P11
+   BRYANT J, 1980, J BANK FINANC, V4, P335, DOI 10.1016/0378-4266(80)90012-6
+   Carney M, 2016, ROSC LECT LIV JOHN M
+   Chen Q, 2010, J FINANC ECON, V97, P239, DOI 10.1016/j.jfineco.2010.03.016
+   Crowe C., 2011, IMF WORKING PAPER
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenbeis RA, 2018, J FINANC SERV RES, V53, P163, DOI 10.1007/s10693-018-0297-6
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Falato A, 2015, STOCK MARKET BANK RI
+   Federal Reserve Bank of Minneapolis, 2016, MINN PLAN END TOO BI
+   Federal Reserve Bank of Minneapolis, 2018, END TOO BIG FAIL FIN
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Goldstein I, 2005, J FINANC, V60, P1293, DOI 10.1111/j.1540-6261.2005.00762.x
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Goldstein I, 2017, J FINANC ECON, V126, P592, DOI 10.1016/j.jfineco.2016.11.007
+   Gorton GB, 2008, SUBPRIME PANIC
+   Hakenes H, 2014, J MONEY CREDIT BANK, V46, P259, DOI 10.1111/jmcb.12090
+   Haldane AG, 2013, CTR RES SOC CULT CHA
+   Haldane Andrew G., 2012, FED RES BANK KANS CI
+   Hamilton J, 2016, WALL STREET J
+   Herring RJ, 2018, J FINANC SERV RES, V53, P183, DOI 10.1007/s10693-018-0295-8
+   Jagtiani J, 2016, EC PERSPECT, V40, P1
+   Jagtiani J, 2018, 2018 ANN AM EC ASS C
+   Jagtiani J., 2011, J FIXED INCOME, V20, P7
+   Kane EJ, 2018, J FINANC SERV RES, V53, P211, DOI 10.1007/s10693-017-0288-z
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Lambert F.J., 2014, GLOB FIN STAB REP
+   Merton R.C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   Onaran Y, 2017, TOO BIG FAIL BLOCK B
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Sundaresan S, 2015, J FINANC, V70, P881, DOI 10.1111/jofi.12134
+NR 45
+TC 2
+Z9 2
+U1 3
+U2 16
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0920-8550
+EI 1573-0735
+J9 J FINANC SERV RES
+JI J. Financ. Serv. Res.
+PD JUN
+PY 2018
+VL 53
+IS 2-3
+SI SI
+BP 141
+EP 162
+DI 10.1007/s10693-018-0291-z
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA GF1DW
+UT WOS:000431674000001
+DA 2019-12-27
+ER

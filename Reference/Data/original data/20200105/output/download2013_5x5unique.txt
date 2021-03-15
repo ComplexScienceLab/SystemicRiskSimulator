@@ -1,0 +1,411 @@
+
+PT J
+AU Patro, DK
+   Qi, M
+   Sun, X
+AF Patro, Dilip K.
+   Qi, Min
+   Sun, Xian
+TI A simple indicator of systemic risk
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Systemic risk; Correlation; Stock returns
+ID CREDIT DEFAULT SWAP; EQUITY VOLATILITY; HEDGE FUNDS; BOND YIELDS;
+   CONTAGION; FRAGILITY; MARKETS; SPREADS
+AB We examine the relevance and effectiveness of stock return correlations among financial institutions as an indicator of systemic risk. By analyzing the trends and fluctuations of daily stock return correlations and default correlations among the 22 largest bank holding companies and investment banks from 1988 to 2008, we find that daily stock return correlation is a simple, robust, forward-looking, and timely systemic risk indicator. There is an increasing trend in stock return correlation among banks, whereas there is no obvious correlation trend among non-banks. We also disaggregate the stock returns into systematic and idiosyncratic components and find that the correlation increases are largely driven by the increases in correlations between banks' idiosyncratic risks, which give rise to increasing systemic risk. Correlation spikes tend to predict or coincide with significant economic or market events, especially during the 2007-2008 financial crisis. Furthermore, we show that stock return correlations offer a perspective on the level of systemic risk in the financial sector that is not already captured by default correlations. Stock return correlations are not subject to data limitations or model specification errors that other potential systemic risk measures may face. Therefore, we recommend that regulators and businesses monitor daily stock return correlations among those large and highly leveraged financial institutions to track the level of systemic risk. Published by Elsevier B.V.
+C1 [Sun, Xian] Johns Hopkins Univ, Carey Business Sch, Baltimore, MD 21218 USA.
+RP Patro, DK (reprint author), 250 E St SW, Washington, DC 20219 USA.
+EM dilip.patro@occ.treas.gov; min.qi@occ.treas.gov; xian.sun@jhu.edu
+CR Acharya V., 2011, 1002 FED RES BANK CL
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Acharya VV, 2007, J FINANC ECON, V84, P110, DOI 10.1016/j.jfineco.2006.05.003
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   AHARONY J, 1983, J BUS, V56, P305, DOI 10.1086/296203
+   Allenspach N., 2006, INT INTEGRATION COMM
+   Ammer J, 1996, J FINANC, V51, P1743, DOI 10.2307/2329536
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Aspachs O, 2007, ANN FINANC, V3, P37, DOI 10.1007/s10436-006-0061-z
+   Avesani Renzo, 2006, 06105 IMF
+   Bartholomew PF, 1995, RES FIN SERV, V7, P3
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Bongini P, 2002, J BANK FINANC, V26, P1011, DOI 10.1016/S0378-4266(01)00264-3
+   Brunnermeier Markus K., 2009, COVAR
+   Campbell JY, 2003, J FINANC, V58, P2321, DOI 10.1046/j.1540-6261.2003.00607.x
+   CARRON AS, 1982, BROOKINGS PAPERS EC, V2, P395
+   Caruana Jaime, 2010, SYSTEMIC RISK DEAL I
+   Chan N, 2006, NBER CONF R, P235
+   Das SR, 2004, J FINANC, V59, P2809, DOI 10.1111/j.1540-6261.2004.00717.x
+   De Bandt O., 2000, 35 ECB
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   De Nicolo G, 2002, J BANK FINANC, V26, P861, DOI 10.1016/S0378-4266(02)00211-X
+   Di Cesare A., 2006, 593 BANK IT
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   Goldstein M, 1995, INT FINANCIAL UNPUB
+   Goodhart CAE, 2006, ECON THEOR, V27, P107, DOI 10.1007/s00199-004-0572-7
+   Goodhart CAE, 2005, ANN FINANC, V1, P197, DOI 10.1007/s10436-004-0006-3
+   Hull J, 2004, J BANK FINANC, V28, P2789, DOI 10.1016/j.jbankfin.2004.06.010
+   IMF, 2009, GLOB FIN STAB REP
+   [IMF BIS FSB], 2009, GUID ASS SYST IMP FI
+   Ito T., 2004, CESIFO WORKING PAPER, V1137
+   Jarrow R., 2005, RISK, P83
+   Jorion P., 2006, RISKS FINANCIAL I
+   KAMBHU J, 2007, NEW DIRECTIONS UNDER
+   Karolyis A, 1996, J FINANC, V51, P951, DOI DOI 10.1111/J.1540-6261.1996.TB02713.X
+   Kaufman GG, 1995, RES FIN SERV, V7, P47
+   King MR, 2009, J FINANC STABIL, V5, P283, DOI 10.1016/j.jfs.2009.02.002
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Lo Andrew, 2008, HEDGE FUNDS SYSTEMIC
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Norden L, 2009, EUR FINANC MANAG, V15, P529, DOI 10.1111/j.1468-036X.2007.00427.x
+   Rigobon R, 2003, J INT ECON, V61, P261, DOI 10.1016/S0022-1996(03)00007-2
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Segoviano M., 2009, 0904 IMF
+   Slovin MB, 1999, J FINANC ECON, V54, P197, DOI 10.1016/S0304-405X(99)00036-7
+   Thomson J. B., 2009, 27 FED RES BANK CLEV
+   ZAMBRANA M.S., 2010, 1005 FED RES BANK CL
+   Zhang BY, 2009, REV FINANC STUD, V22, P5099, DOI 10.1093/rfs/hhp004
+NR 48
+TC 26
+Z9 28
+U1 4
+U2 56
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD APR
+PY 2013
+VL 9
+IS 1
+BP 105
+EP 116
+DI 10.1016/j.jfs.2012.03.002
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA 101WW
+UT WOS:000315806100009
+DA 2019-12-27
+ER
+
+PT J
+AU Dimitriou, D
+   Kenourgios, D
+   Simos, T
+AF Dimitriou, Dimitrios
+   Kenourgios, Dimitris
+   Simos, Theodore
+TI Global financial crisis and emerging stock market contagion: A
+   multivariate FIAPARCH-DCC approach
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article
+DE Global financial crisis; Contagion; FIAPARCH-DCC model; BRICSs' emerging
+   markets
+ID CONDITIONAL HETEROSCEDASTICITY; INTERDEPENDENCE; VOLATILITY; MEMORY
+AB This paper empirically investigates the contagion effects of the global financial crisis in a multivariate Fractionally Integrated Asymmetric Power ARCH (FIAPARCH) dynamic conditional correlation (DCC) framework during the period 1997-2012. We focus on five most important emerging equity markets, namely Brazil, Russia, India, China and South Africa (BRIGS), as well as USA during different phases of the crisis. The length and the phases of the crisis are identified based on both an economic and a statistical approach. The empirical evidence does not confirm a contagion effect for most BRICS during the early stages of the crisis, indicating signs of isolation or decoupling. However, linkages reemerged (recoupled) after the Lehman Brothers collapse, suggesting a shift on investors' risk appetite. Moreover, correlations among all BRICS and USA are increased from early 2009 onwards, implying that their dependence is larger in bullish than in bearish markets. These findings do not show a pattern of contagion for all BRICSs' markets that could be attributed to their common trade and financial characteristics and provide important implications for international investors and policymakers. (C) 2013 Elsevier Inc. All rights reserved.
+C1 [Dimitriou, Dimitrios; Simos, Theodore] Univ Ioannina, Dept Econ, GR-45110 Ioannina, Greece.
+   [Kenourgios, Dimitris] Univ Athens, Fac Econ, Athens 10562, Greece.
+RP Kenourgios, D (reprint author), Univ Athens, Fac Econ, 5 Stadiou St, Athens 10562, Greece.
+EM dkenourg@econ.uoa.gr
+RI Simos, Theodore/H-6033-2011
+CR Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Baur DG, 2012, J BANK FINANC, V36, P2680, DOI 10.1016/j.jbankfin.2011.05.019
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   BIS, 2009, INT FIN CRIS TIM IMP
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Celik S, 2012, ECON MODEL, V29, P1946, DOI 10.1016/j.econmod.2012.06.011
+   Chan KF, 2011, J BANK FINANC, V35, P1415, DOI 10.1016/j.jbankfin.2010.10.022
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Chkili W, 2012, J INT FINANC MARK I, V22, P738, DOI 10.1016/j.intfin.2012.04.009
+   Conrad C., 2008, DISCUSSION PAPER SER, V472
+   Conrad C, 2011, J EMPIR FINANC, V18, P147, DOI 10.1016/j.jempfin.2010.05.001
+   Dooley M, 2009, J INT MONEY FINANC, V28, P1331, DOI 10.1016/j.jimonfin.2009.08.004
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Federal Reserve Board of St. Louis, 2009, FIN CRIS TIM EV POL
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Geweke J., 1983, J TIME SER ANAL, V4, P221, DOI DOI 10.1111/J.1467-9892.1983.TB00371.X
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   HOSKING JRM, 1980, J AM STAT ASSOC, V75, P602, DOI 10.2307/2287656
+   Kaminsky GL, 2003, J ECON PERSPECT, V17, P51, DOI 10.1257/089533003772034899
+   Kenourgios D, 2012, J MULTINATL FINANC M, V22, P24, DOI 10.1016/j.mulfin.2012.01.002
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   Kumar S.M., 2001, WP01134 IMF
+   LO AW, 1991, ECONOMETRICA, V59, P1279, DOI 10.2307/2938368
+   McLeod A. I., 1983, J TIME SER ANAL, V4, P269, DOI DOI 10.1111/J.1467-9892.1983.TB00373.X
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   ROBINSON PM, 1995, ANN STAT, V23, P1048, DOI 10.1214/aos/1176324636
+   Samarakoon LP, 2011, J INT FINANC MARK I, V21, P724, DOI 10.1016/j.intfin.2011.05.001
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Tse YK, 1998, J APPL ECONOMET, V13, P49
+   Tse YK, 2002, J BUS ECON STAT, V20, P351, DOI 10.1198/073500102288618496
+NR 31
+TC 110
+Z9 113
+U1 5
+U2 33
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD DEC
+PY 2013
+VL 30
+BP 46
+EP 56
+DI 10.1016/j.irfa.2013.05.008
+PG 11
+WC Business, Finance
+SC Business & Economics
+GA 285SQ
+UT WOS:000329415700005
+DA 2019-12-27
+ER
+
+PT J
+AU Anand, K
+   Gai, P
+   Kapadia, S
+   Brennan, S
+   Willison, M
+AF Anand, Kartik
+   Gai, Prasanna
+   Kapadia, Sujit
+   Brennan, Simon
+   Willison, Matthew
+TI A network model of financial system resilience
+SO JOURNAL OF ECONOMIC BEHAVIOR & ORGANIZATION
+LA English
+DT Article
+DE Contagion; Financial crises; Network models; Systemic risk
+ID CREDIT CONTAGION; PORTFOLIO LOSSES; RISK; DYNAMICS
+AB We examine the role of macroeconomic fluctuations, asset market liquidity, and network structure in determining contagion and aggregate losses in a stylized financial system. Systemic instability is explored in a financial network comprising three distinct, but interconnected, sets of agents - domestic banks, overseas banks, and firms. Calibrating the model to advanced country banking sector data, this preliminarily model generates broadly sensible aggregate loss distributions which are bimodal in nature. We demonstrate how systemic crises may occur and analyse how our results are influenced by firesale externalities and the feedback effects from curtailed lending in the macroeconomy. We also illustrate the resilience of our model financial system to stress scenarios with sharply rising corporate default rates and falling asset prices. (C) 2012 The Bank of England. Published by Elsevier B.V. All rights reserved.
+C1 [Anand, Kartik] Tech Univ Berlin, D-10623 Berlin, Germany.
+   [Gai, Prasanna] Univ Auckland, Dept Econ, Auckland 1142, New Zealand.
+   [Kapadia, Sujit; Brennan, Simon; Willison, Matthew] Bank England, London EC2R 8AH, England.
+   [Gai, Prasanna] Natl Univ Singapore, Risk Management Inst, Singapore 119613, Singapore.
+RP Anand, K (reprint author), Tech Univ Berlin, Sek H 52,Str 17,Juni 135, D-10623 Berlin, Germany.
+EM kartik.anand@tu-berlin.de
+RI Gai, Prasanna/R-2911-2019
+OI Gai, Prasanna/0000-0002-1664-3946
+CR Aikman D., 2009, 372 BANK ENGL
+   Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Allen F, 2005, J EUR ECON ASSOC, V3, P535, DOI 10.1162/1542476054473044
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2008, NETWORK BASED STRATE
+   Altman EI, 1996, FINANCIAL ANAL J, V52, P57, DOI DOI 10.2469/FAJ.V52.N6.2040
+   *BANK ENGL, 2007, FIN STAB REP
+   Bank for International Settlements, 2008, CONS BANK STAT
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   Bianconi G, 2009, PHYS REV E, V79, DOI 10.1103/PhysRevE.79.036114
+   Castiglionesi F., 2007, 2007100 TILB U
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   ECB, 2008, COMMUNICATION   0414
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Errais E, 2010, SIAM J FINANC MATH, V1, P642, DOI 10.1137/090771272
+   Foglia A, 2009, INT J CENT BANK, V5, P9
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gauthier C., 2010, 20104 BANK CAN
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P741, DOI 10.1016/j.jedc.2005.01.004
+   Giesecke K, 2004, J BANK FINANC, V28, P3009, DOI 10.1016/j.jbankfin.2003.11.002
+   Gordy MB, 2000, J BANK FINANC, V24, P119, DOI 10.1016/S0378-4266(99)00054-0
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hatchett JPL, 2009, QUANT FINANC, V9, P373, DOI 10.1080/14697680802464162
+   Horst U, 2007, J ECON BEHAV ORGAN, V63, P25, DOI 10.1016/j.jebo.2005.02.005
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   JAMES C, 1991, J FINANC, V46, P1223, DOI 10.2307/2328857
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Longstaff FA, 2008, J FINANC, V63, P529, DOI 10.1111/j.1540-6261.2008.01330.x
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Mitchell M, 2007, AM ECON REV, V97, P215, DOI 10.1257/aer.97.2.215
+   Mohammad-Djafari A., 1991, MAXIMUM ENTROPY BAYE, P221
+   Moody's, 2007, CORP DEF REC RAT 192
+   Morris S., 2009, ILLIQUIDITY CO UNPUB
+   Schuermann T., 2004, FEDERAL RESERVE BANK, V190
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   von Peter G., 2007, BIS Q REV, P33
+   Watts DJ, 1998, NATURE, V393, P440, DOI 10.1038/30918
+NR 40
+TC 33
+Z9 34
+U1 0
+U2 53
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-2681
+J9 J ECON BEHAV ORGAN
+JI J. Econ. Behav. Organ.
+PD JAN
+PY 2013
+VL 85
+BP 219
+EP 235
+DI 10.1016/j.jebo.2012.04.006
+PG 17
+WC Economics
+SC Business & Economics
+GA 077AC
+UT WOS:000313999300018
+DA 2019-12-27
+ER
+
+PT J
+AU Daher, A
+AF Daher, Antonio
+TI The real estate sector and economic crisis
+SO EURE-REVISTA LATINOAMERICANA DE ESTUDIOS URBANO REGIONALES
+LA Spanish
+DT Article
+DE economic crisis; real estate market
+AB The growing urbanization of the economy and the double concentration (economic and territorial) of the real estate and financial sectors within major metropolises provide the basis of the relation between real estate cycles, the economic crises brought on by bubbles on the real estate sector, the high degree of macroeconomic influence by the real estate sector, and the role of this sector as the mediator between the financial sector and the real economy. Before the latest financial crisis in 2008, financial institutions and transnational real estate investment funds found an efficient road to geographic diversification and mortgage risk distribution through financialization and securitizacion. Coincidentally, this was also the clearest pathway for the contagion of a crisis that was financially ubiquitous, although not socially or territorialy so. The subprime mortgages were granted to marginalized minorities in neighborhoods made up for the most part by Hispanics, African Americans, immigrants and lower-class populations: American social housing, having been financialized, infected the financial sector with real estate mortgage-backed securities, which ended up definancializing the international banking sector in a global crisis with dramatic social and political consequences.
+C1 Pontificia Univ Catolica Chile, Santiago, Chile.
+RP Daher, A (reprint author), Pontificia Univ Catolica Chile, Alameda 340, Santiago, Chile.
+EM adaher@uc.cl
+CR Agosin M., 2010, IMPACTOS CRISIS INT, P65
+   Attali J., 2009, DESPUES CRISIS QUE P
+   Banco Central de Chile, 2011, INFORM ESTABILIDAD F, P36
+   Belil M., 2012, CIUDADES ECUACION IM
+   Bellamy Foster J, 2009, GRAN CRISIS FINANCIE
+   Bernardos G., 2009, ICE, P23
+   Brown DT, 2000, J FINANC, V55, P469, DOI 10.1111/0022-1082.00213
+   Brueggemen W., 2004, REAL ESTATE FINANCE
+   Case KE, 2003, BROOKINGS PAP ECO AC, P299
+   Cassidy J., 2011, COMO MERCADOS QUEBRA
+   Cohen M, 2012, CIUDADES ECUACION IM, P35
+   Colom A., 2012, 13 JORN EC CRIT COST, P1314
+   Corpataux J, 2009, ECON GEOGR, V85, P313, DOI 10.1111/j.1944-8287.2009.01035.x
+   Cortes H., 2000, GLOBALIZACION, P183
+   Daher A., 2004, SANTIAGO GLOBALIZACI, P85
+   de Mattos Carlos, 2007, NUEVA SOC, V212, P82
+   Fernandez-Tabales A, 2013, EURE, V39, P5, DOI 10.4067/S0250-71612013000100001
+   Garcia J., 2008, QUIMERA INMOBILIARIA
+   Golub Ph., 2010, CAPITALES CAPITALISM, P25
+   Gonzalez M, 2011, EXTOIKOS, V3, P33
+   HARVEY D., 2012, CIUDADES ECUACION IM, P321
+   Harvey D., 2011, ENIGMA CAPITAL CRISE
+   Janoschka M., 2011, C MARC S METR CONSTR
+   Johnson R., 2006, J REAL ESTATE PORTFO, V12, P91
+   Jorion P., 2008, CRISE SUBPRIMES SEIS
+   Krugman P., 2010, VUELTA EC GRAN DEPRE
+   Laeven Luc, 2008, WP08224 IMF
+   Leiva P., 2010, IMPACTOS CRISIS INT
+   Liow KH, 2008, J PROP RES, V25, P127, DOI 10.1080/09599910802605400
+   Locussol A., 2007, KRACH 2007 VAGUE SCE
+   MALPEZZI S, 2005, J REAL ESTATE LIT, V13, P143
+   Marichal C., 2010, NUEVA HIST GRANDES C
+   Meen G, 1996, URBAN STUD, V33, P425, DOI 10.1080/00420989650011843
+   Mihm S., 2010, COMO SALIMOS ESTA
+   Ministerio de Vivienda, 2010, INFORM SITUACION SEC
+   Moyano E., 2010, IMPACTOS CRISIS INT, P129
+   Muga R., 2010, IMPACTOS CRISIS INT, P95
+   Naredo J.M., 2012, CIUDADES ECUACION IM, P65
+   Ortega Eloisa, 2012, 1201 BANC ESP
+   Rajan R., 2011, FINANZAS DESARROLLO, V48, P30
+   Ramonet I., 2009, CATASTROFE PERFECTA
+   Reinhart C., 2011, ESTA DISTINTO OCHO S
+   Reinhart CM, 2008, AM ECON REV, V98, P339, DOI 10.1257/aer.98.2.339
+   Shiller R., 2000, ESTALLIDO BURBUJA CO
+   Soros G., 2008, NUEVO PARADIGMA MERC
+   Stiglitz J., 2010, CAIDA LIBRE LIBRE ME
+   Sy A., 2011, FINANZAS DESARROLLO, V48, P34
+   Verges R., 2002, REV EC FINANZAS CAST, V6, P69
+   Wolff E., 2006, INT PERSPECTIVE HOUS
+   Zandi Mark, 2008, FINANCIAL SHOCK 360
+NR 50
+TC 23
+Z9 30
+U1 1
+U2 35
+PU PONTIFICIA UNIV CATOLICA CHILE, INST ESTUDIOS URBANOS TERRITORIALES
+PI SANTIAGO
+PA EL COMENDADOR 1916, SANTIAGO, 00000, CHILE
+SN 0250-7161
+EI 0717-6236
+J9 EURE
+JI Eure
+PD SEP
+PY 2013
+VL 39
+IS 118
+BP 47
+EP 75
+PG 29
+WC Urban Studies
+SC Urban Studies
+GA 212TG
+UT WOS:000324005100003
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Acharya, VV
+   Khandwala, H
+   Oncu, TS
+AF Acharya, Viral V.
+   Khandwala, Hemal
+   Oencue, T. Sabri
+TI The growth of a shadow banking system in emerging markets: Evidence from
+   India
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Shadow banking; Non-Bank financial corporations; Crisis; Systemic risk;
+   Government guarantees
+AB We study the determinants of the growth of those non-deposit taking non-bank financial corporations (NBFCs) which are regarded by the Reserve Bank of India as being systemically important and have grown substantially in India over the past decade. We document that bank lending to NBFCs (i) forms a significant proportion of the NBFC liabilities; (ii) fluctuates in line with bank allocation to priority lending sectors; (iii) decreases as the banks expand in the rural areas relative to urban areas; but, (iv) is virtually non-existent for the largest state-owned bank, namely State Bank of India (SBI) and its affiliates which have significant rural branch network. Starting with the financial crisis of Fall 2008, bank lending to NBFCs experienced a permanent contraction shock related to the shift of term deposits toward SBI away from other banks. These bank-NBFC linkages are present primarily for, and affect the credit growth of, those NBFCs that do loans or asset financing but not the investment companies. Overall, the findings suggest that in contrast to the prevailing views of shadow banking in the Western economies, lending to NBFCs in India is viewed by banks as a substitute for direct lending in the non-urban areas of the Indian economy, but this substitution is constrained by distortions in bank deposit flows due to the perceived differential government support of different banking groups. (C) 2013 Published by Elsevier Ltd.
+C1 [Acharya, Viral V.] NYU, Stern Sch Business, New York, NY 10003 USA.
+   [Acharya, Viral V.] NBER, Cambridge, MA 02138 USA.
+EM vacharya@stern.nyu.edu; hemalkhand@gmail.com;
+   sabrioncu.cafral@rbi.org.in
+CR Acharya V, 2013, WORKING PAPER
+   Acharya V.V., 2012, WORLD EC, V35
+   Acharya VV, 2013, INT J CENT BANK, V9, P291
+   Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Acharya VV, 2012, TEX LAW REV, V90, P1745
+   Acharya VV, 2011, WILEY FINANC SER, P1
+   Aziz J., 2008, NIPFPDEA RES PROGRAM
+   Claessens Stijn, 2013, WORKING PAPER
+   D'Arista J.W., 1993, 200 EC POL I, P1
+   Deosthalee Y.M., 2010, CONT BANKING INDIA, P294
+   Duggal Arun, 2012, CONT BANKING INDIA, P304
+   Ghosh S., 2012, CHASING SHADOWS SIGN, P1
+   Nisar S., 2004, SEM NONB FIN I ISL A
+   Pozsar Z., 2010, 458 FED RES BANK NEW
+   Thorat Usha, 2011, REPORT WORKING GROUP
+NR 15
+TC 15
+Z9 15
+U1 0
+U2 50
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD DEC
+PY 2013
+VL 39
+SI SI
+BP 207
+EP 230
+DI 10.1016/j.jimonfin.2013.06.024
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA 256CG
+UT WOS:000327286700010
+DA 2019-12-28
+ER

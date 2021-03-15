@@ -1,0 +1,352 @@
+
+PT J
+AU Aizenman, J
+   Binici, M
+   Hutchison, M
+AF Aizenman, Joshua
+   Binici, Mahir
+   Hutchison, Michael
+TI Credit ratings and the pricing of sovereign debt during the euro crisis
+SO OXFORD REVIEW OF ECONOMIC POLICY
+LA English
+DT Article
+DE CDS spreads; credit ratings; sovereign debt; eurozone
+ID CONTAGION; SPREADS; IMPACT; RISK
+AB This paper investigates the impact of credit rating changes on the sovereign spreads in the European Union and investigates the macro and financial factors that account for the time-varying effects of a given credit rating change. We find that changes of ratings are informative, economically important, and highly statistically significant in panel models, even after controlling for a host of domestic and global fundamental factors and investigating various functional forms, time and country groupings, and dynamic structures. Dynamic panel model estimates indicate that a credit rating upgrade decreases credit default swap (CDS) spreads by about 45 basis points, on average, for European Union (EU) countries. However, the association between credit rating changes and spreads shifted markedly between the pre-crisis and crisis periods. European countries had quite similar CDS responses to credit rating changes during the pre-crisis period, but large differences emerged during the crisis period between the now highly sensitive GIIPS group (Greece, Italy, Ireland, Portugal, Spain) and other European country groupings (EU and euro area excluding GIIPS, and the non-EU area). We also find a complicated non-linear pattern dependent on the level of the credit rating. The results are robust to the inclusion of credit outlook or watch signals by credit rating agencies. In addition, contagion from rating downgrades in GIIPS to other euro countries is not evident once own-country credit rating changes are taken into account.
+C1 [Aizenman, Joshua] NBER, Cambridge, MA 02138 USA.
+   [Binici, Mahir] Cent Bank Turkey, Ankara, Turkey.
+EM aizenman@usc.edu; mahir.binici@tcmb.gov.tr; hutch@ucsc.edu
+CR Aizenman J, 2013, J INT MONEY FINANC, V34, P37, DOI 10.1016/j.jimonfin.2012.11.011
+   Al-Sakka R, 2010, EMERG MARK REV, V11, P79, DOI 10.1016/j.ememar.2009.11.005
+   Alsakka R, 2013, J ECON BEHAV ORGAN, V85, P144, DOI 10.1016/j.jebo.2011.12.007
+   Alsakka R, 2010, J BANK FINANC, V34, P2614, DOI 10.1016/j.jbankfin.2010.05.001
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   Arghyrou MG, 2012, J INT FINANC MARK I, V22, P658, DOI 10.1016/j.intfin.2012.03.003
+   Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bergman M., 2013, EUROPEAN EC EC PAPER, V489
+   Cantor R, 1997, J BANK FINANC, V21, P1395, DOI 10.1016/S0378-4266(97)00024-1
+   Cantor R., 1994, FEDERAL RESERVE BANK, V12, P1
+   Davidson R., 2004, ECONOMETRIC THEORY M
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   EC, 2013, MEMO1313 EC
+   Greene W., 2003, ECONOMETRIC ANAL
+   GROSSMAN SJ, 1980, AM ECON REV, V70, P393
+   Ismailescu I, 2010, J BANK FINANC, V34, P2861, DOI 10.1016/j.jbankfin.2010.05.014
+   Kashyap AK, 2013, 18923 NBER
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Lucas A., 2013, WORKING PAPER SERIES, V269
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Morris S, 2001, NBER MACROECON ANN, V15, P139
+   Palladini G., 2011, 17586 NBER
+   Partnoy Frank, 1999, WASHINGTON U LAW Q, V77, P619, DOI DOI 10.2139/SSRN.167412
+   S&P, 2013, CRED RAT DEF FAQS
+   S&P, 2012, GLOB RAT PORT R 0313
+NR 26
+TC 13
+Z9 13
+U1 0
+U2 26
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 0266-903X
+EI 1460-2121
+J9 OXFORD REV ECON POL
+JI Oxf. Rev. Econ. Policy
+PD FAL
+PY 2013
+VL 29
+IS 3
+BP 582
+EP 609
+DI 10.1093/oxrep/grt036
+PG 28
+WC Economics
+SC Business & Economics
+GA 281XA
+UT WOS:000329133100006
+DA 2019-12-27
+ER
+
+PT J
+AU Baglioni, A
+   Cherubini, U
+AF Baglioni, Angelo
+   Cherubini, Umberto
+TI Within and between systemic country risk. Theory and evidence from the
+   sovereign crisis in Europe
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Marshall-Olkin distribution; Copula functions; Systemic risk; Financial
+   crisis; Country risk; Sovereign default
+ID LIQUIDITY
+AB We propose a hierarchical Marshall-Olkin model of countrywide systemic risk. At the lower level, we model the systemic risk of a crisis within the banking system (that we call "within" systemic risk) and at the higher level we model the probability of a joint default of the banking system and the public sector (that we call "between" systemic risk). We apply the model to four countries of Northern Europe and four of Southern Europe. In Northern Europe, Germany ranks third for soundness of the banking system but first for country safety. The opposite findings are obtained for Netherlands. In Southern Europe, the Italian banking system ranks first for soundness, quite above Spain, while Italy is aligned with Spain for countrywide risk. Differences in default time correlations between the banking and the public sectors explain these findings. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Baglioni, Angelo] Catholic Univ Milan, Milan, Italy.
+   [Cherubini, Umberto] Univ Bologna, Dept Stat, I-40126 Bologna, Italy.
+RP Cherubini, U (reprint author), Univ Bologna, Dept Stat, Viale Filopanti 5, I-40126 Bologna, Italy.
+EM umberto.cherubini@unibo.it
+OI CHERUBINI, UMBERTO/0000-0003-3437-3166
+CR Acharyia V., 2010, NYU WORKING PAPER
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Baglioni A, 2013, J INT MONEY FINANC, V32, P990, DOI 10.1016/j.jimonfin.2012.08.004
+   Bank for International Settlement (BIS), 2011, CGFS PAPERS
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Berndt A, 2010, REV FINANC, V14, P189, DOI 10.1093/rof/rfq004
+   BIS, 2009, BIS PAPERS, V48
+   Brunnermeier M, 2010, WORKING PAPER
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Cherubini U, 2008, CH CRC FINANC MATH, P115
+   CUADRAS CM, 1981, COMMUN STAT A-THEOR, V10, P339, DOI 10.1080/03610928108828042
+   Das SR, 2009, J ECON DYN CONTROL, V33, P1837, DOI 10.1016/j.jedc.2009.04.005
+   Duffle D., 2003, CREDIT RISK PRICING
+   Durante F, 2010, ENVIRONMETRICS, V21, P143, DOI 10.1002/env.988
+   Durante F., 2009, METHODOLOGY AND COMP
+   Dwyer D., 2010, MOODYS ANALYTICS REP
+   Ejsing J., 2009, THE JANUSHEADED SALV
+   Esposito M., 2002, EC NOTES, V31, P255
+   Gapen M., 2005, IMF WP 05 155
+   GENEST C, 1993, J AM STAT ASSOC, V88, P1034, DOI 10.2307/2290796
+   Gray D., 2006, NBER WP
+   Hering C, 2012, METRIKA, V75, P601, DOI 10.1007/s00184-011-0344-x
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Mai JF, 2009, J MULTIVARIATE ANAL, V100, P1567, DOI 10.1016/j.jmva.2009.01.010
+   MARSHALL AW, 1967, J AM STAT ASSOC, V62, P30, DOI 10.2307/2282907
+   Mittnik S., 2012, WORKING PAPER
+   Nelsen R.B., 2006, INTRO COPULAS
+   Segoviano M., 2009, IMF WORKING PAPER WP
+   Unicredit, 2010, CREDIT RESEARCH SECT
+NR 30
+TC 10
+Z9 10
+U1 3
+U2 19
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD AUG
+PY 2013
+VL 37
+IS 8
+SI SI
+BP 1581
+EP 1597
+DI 10.1016/j.jedc.2013.02.005
+PG 17
+WC Economics
+SC Business & Economics
+GA 177VJ
+UT WOS:000321403200010
+DA 2019-12-28
+ER
+
+PT J
+AU Chen, C
+   Iyengar, G
+   Moallemi, CC
+AF Chen, Chen
+   Iyengar, Garud
+   Moallemi, Ciamac C.
+TI An Axiomatic Approach to Systemic Risk
+SO MANAGEMENT SCIENCE
+LA English
+DT Article
+DE systemic risk; risk measures; contagion; risk attribution
+ID CAPITAL ALLOCATION
+AB Systemic risk refers to the risk of collapse of an entire complex system as a result of the actions taken by the individual component entities or agents that comprise the system. Systemic risk is an issue of great concern in modern financial markets as well as, more broadly, in the management of complex business and engineering systems. We propose an axiomatic framework for the measurement and management of systemic risk based on the simultaneous analysis of outcomes across agents in the system and over scenarios of nature. Our framework defines a broad class of systemic risk measures that accomodate a rich set of regulatory preferences. This general class of systemic risk measures captures many specific measures of systemic risk that have recently been proposed as special cases and highlights their implicit assumptions. Moreover, the systemic risk measures that satisfy our conditions yield decentralized decompositions; i.e., the systemic risk can be decomposed into risk due to individual agents. Furthermore, one can associate a shadow price for systemic risk to each agent that correctly accounts for the externalities of the agent's individual decision making on the entire system.
+C1 [Chen, Chen; Iyengar, Garud] Columbia Univ, Dept Ind Engn & Operat Res, New York, NY 10027 USA.
+   [Moallemi, Ciamac C.] Columbia Univ, Grad Sch Business, New York, NY 10027 USA.
+RP Chen, C (reprint author), Columbia Univ, Dept Ind Engn & Operat Res, New York, NY 10027 USA.
+EM cc3136@columbia.edu; garud@ieor.columbia.edu; ciamac@gsb.columbia.edu
+CR Acharya V., 2010, WORKING PAPER
+   Acharya Viral, 2010, EC POLICY REV FEDERA, V16, P89, DOI DOI 10.2139/ssrn.1678160
+   Adrian T., 2009, FEDERAL RESERVE BANK, V348, P1
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Aumann R. J., 1974, VALUES NONATOMIC GAM
+   Bertsekas D. P, 1999, NONLINEAR PROGRAMMIN
+   BILLERA LJ, 1982, MATH OPER RES, V7, P32, DOI 10.1287/moor.7.1.32
+   Buch A, 2008, INSUR MATH ECON, V42, P235, DOI 10.1016/j.insmatheco.2007.02.006
+   Castellani M, 2000, J GLOBAL OPTIM, V16, P393, DOI 10.1023/A:1008394516838
+   Cerreia-Vioglio S, 2011, MATH FINANC, V21, P743, DOI 10.1111/j.1467-9965.2010.00450.x
+   Cherny A, 2011, MATH FINANC, V21, P557, DOI 10.1111/j.1467-9965.2010.00441.x
+   Denault M., 2001, J RISK, V4, P1, DOI DOI 10.21314/JOR.2001.053
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Fischer T, 2003, INSUR MATH ECON, V32, P135, DOI 10.1016/S0167-6687(02)00209-3
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P1, DOI 10.1017/CBO9781139151184
+   Gauthier C., 2010, 20104 BANK CAN
+   Giesecke K, 2011, MANAGE SCI, V57, P1387, DOI 10.1287/mnsc.1110.1375
+   Haimanko O, 2001, J MATH ECON, V35, P445, DOI 10.1016/S0304-4068(01)00052-0
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   JORION P, 2006, VALUE AT RISK
+   Kou S, 2013, MATH OPER R IN PRESS
+   Kreps D.M., 1988, NOTES THEORY CHOICE
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Liu M, 2010, 201103 NW U
+   MERTENS JF, 1988, INT J GAME THEORY, V17, P1, DOI 10.1007/BF01240834
+   Schied A, 2006, STOCH MODELS, V22, P753, DOI 10.1080/15326340600878677
+   Staum JC, 2013, HDB SYSTEMI IN PRESS
+   Staum J, 2012, QUANT FINANC, V12, P651, DOI 10.1080/14697688.2012.664942
+   Tarashev N, 2010, 308 BANK INT SETTL
+   Tsanakas A, 2009, INSUR MATH ECON, V44, P268, DOI 10.1016/j.insmatheco.2008.03.007
+NR 30
+TC 40
+Z9 40
+U1 5
+U2 52
+PU INFORMS
+PI CATONSVILLE
+PA 5521 RESEARCH PARK DR, SUITE 200, CATONSVILLE, MD 21228 USA
+SN 0025-1909
+EI 1526-5501
+J9 MANAGE SCI
+JI Manage. Sci.
+PD JUN
+PY 2013
+VL 59
+IS 6
+BP 1373
+EP 1388
+DI 10.1287/mnsc.1120.1631
+PG 16
+WC Management; Operations Research & Management Science
+SC Business & Economics; Operations Research & Management Science
+GA 162VZ
+UT WOS:000320295400008
+DA 2019-12-27
+ER
+
+PT J
+AU Baglioni, A
+   Cherubini, U
+AF Baglioni, Angelo
+   Cherubini, Umberto
+TI Marking-to-market government guarantees to financial systems - Theory
+   and evidence for Europe
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Bank bail out; Government budget; Systemic risk; Financial crisis
+AB We propose a new index for measuring the systemic risk of default of the banking sector, which is based on a homogeneous version of multivariate intensity based models (Cuadras-Auge distribution). We compute the index for 10 European countries, exploiting the information incorporated in the CDS premia of 44 large banks over the period January 2007-September 2010. In this way, we provide a market based measure of the liability incurred by the Governments, due to the implicit bail-out guarantees they provide to the financial sector. We find that during the financial crisis the systemic component of the default risk in the banking sector has significantly increased in all countries, with the exception of Germany and the Netherlands. As a consequence, the Governments' liability implicit in the bail out guarantee amounts to a quite relevant share of GDP in several countries: it is huge for Ireland, lower but still important for the other PIIGS (Italy is the least affected within this group) and for the UK. Finally, our estimate is very close to the overall amount of money already committed in the rescue plans adopted in Europe between October 2008 and March 2010, despite strong cross-country differences: in particular, Germany and Ireland seem to have committed an amount of resources much larger than needed; to the contrary, the Italian Government has committed much less than it should. (C) 2012 Elsevier Ltd. All rights reserved.
+C1 [Baglioni, Angelo] Catholic Univ Milan, I-20123 Milan, Italy.
+   [Cherubini, Umberto] Univ Bologna, I-40126 Bologna, Italy.
+RP Baglioni, A (reprint author), Catholic Univ Milan, Largo Gemelli 1, I-20123 Milan, Italy.
+EM angelo.baglioni@unicatt.it; umberto.cherubini@unibo.it
+OI CHERUBINI, UMBERTO/0000-0003-3437-3166
+CR Berndt A, 2010, REV FINANC, V14, P189, DOI 10.1093/rof/rfq004
+   BIS, 2009, BIS PAPERS, V48
+   Cherubini U., 2012, JOHN WILEY FINANCE S
+   Choudhry M., 2006, CREDIT DEFAULT SWAP
+   CUADRAS CM, 1981, COMMUN STAT A-THEOR, V10, P339, DOI 10.1080/03610928108828042
+   Durante F., 2009, METHODOL COMPUT APPL
+   Ejsing J., 2009, EEA ANN C GLAS UNPUB
+   Esposito M., 2002, EC NOTES, V31, P255
+   EU, 2010, STAT AID SCOR
+   Gapen M. T., 2005, WP05155 IMF
+   Gray D., 2006, 12637 NBER WP
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Joe H., 1997, MULTIVARIATE MODELS
+   Lando D., 2004, CREDIT RISK MODELING
+   MARSHALL AW, 1967, J AM STAT ASSOC, V62, P30, DOI 10.2307/2282907
+   Nelsen R.B., 2006, INTRO COPULAS
+   Unicredit, 2010, STRESS TEST EU BANKS
+   Vasicek O., 1991, WORKING PAPER
+NR 18
+TC 5
+Z9 5
+U1 2
+U2 9
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD FEB
+PY 2013
+VL 32
+BP 990
+EP 1007
+DI 10.1016/j.jimonfin.2012.08.004
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA V38NL
+UT WOS:000209350000047
+DA 2019-12-28
+ER
+
+PT J
+AU Bertay, AC
+   Demirguc-Kunt, A
+   Huizinga, H
+AF Bertay, Ata Can
+   Demirguec-Kunt, Asli
+   Huizinga, Harry
+TI Do we need big banks? Evidence on performance, strategy and market
+   discipline
+SO JOURNAL OF FINANCIAL INTERMEDIATION
+LA English
+DT Article
+DE Bank size; Systemic risk; Market discipline
+ID DEPOSIT INSURANCE; RISK; DIVERSIFICATION; RETURNS; MERGERS
+AB For an international sample of banks, we construct measures of a bank's absolute size and its systemic size defined as size relative to the national economy. We then examine how a bank's risk and return on equity, its activity mix and funding strategy, and the extent to which it faces market discipline depend on both size measures. We show that bank returns increase with absolute size, yet decline with systemic size, while neither size measure is associated with bank risk as implicit in the Z-score. These results are consistent with the view that growing to a size that is systemic is not in the interest of bank shareholders. We also find that systemically large banks are subject to greater market discipline as evidenced by a higher sensitivity of their funding costs to risk proxies, consistent with the view that they can become too large to save. A bank's interest costs, however, are estimated to decline with bank systemic size for all banks apart from those with very low capitalization levels. This suggests that market discipline, exercised through funding costs, does not prevent banks from attaining larger systemic size. (C) 2013 Elsevier Inc. All rights reserved.
+C1 [Bertay, Ata Can; Huizinga, Harry] Tilburg Univ, NL-5000 LE Tilburg, Netherlands.
+   [Demirguec-Kunt, Asli] World Bank, Washington, DC 20433 USA.
+   [Huizinga, Harry] CEPR, London, England.
+RP Huizinga, H (reprint author), Tilburg Univ, NL-5000 LE Tilburg, Netherlands.
+EM A.Bertay@uvt.nl; Ademirguckunt@worldbank.org; Huizinga@uvt.nl
+RI Bertay, Ata Can/L-2839-2014
+OI Bertay, Ata Can/0000-0003-2945-7832
+CR Baker Dean, 2009, VALUE TOO BIG FAIL B
+   BENSTON GJ, 1995, J MONEY CREDIT BANK, V27, P777, DOI 10.2307/2077749
+   Berger AN, 1997, J BANK FINANC, V21, P895, DOI 10.1016/S0378-4266(97)00010-1
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Demirguc-Kunt A, 2004, J MONETARY ECON, V51, P375, DOI 10.1016/j.jmoneco.2003.04.001
+   Demirguc-Kunt A, 2013, J BANK FINANC, V37, P875, DOI 10.1016/j.jbankfin.2012.10.010
+   Demirguc-Kunt A, 2010, J FINANC ECON, V98, P626, DOI 10.1016/j.jfineco.2010.06.004
+   Demsetz RS, 1997, J MONEY CREDIT BANK, V29, P300, DOI 10.2307/2953695
+   Flannery MJ, 1996, J FINANC, V51, P1347, DOI 10.2307/2329397
+   Goldstein M, 2011, TOO BIG FAIL TRANSAT
+   Hellmann TF, 2000, AM ECON REV, V90, P147, DOI 10.1257/aer.90.1.147
+   Kane EJ, 2000, J MONEY CREDIT BANK, V32, P671, DOI 10.2307/2601202
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Krishnamurthy Arvind, 2012, 17768 NBER WP
+   Lustig Hanno, J FINANCE
+   Penas MF, 2004, J FINANC ECON, V74, P149, DOI 10.1016/j.jfineco.2003.05.004
+   Pens Martinez, 2001, J FINANC, V56
+   Roy AD., 1952, ECONOMETRICA, P431, DOI DOI 10.2307/1907413
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Wheelock DC, 2012, J MONEY CREDIT BANK, V44, P171, DOI 10.1111/j.1538-4616.2011.00472.x
+NR 20
+TC 71
+Z9 71
+U1 0
+U2 18
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1042-9573
+EI 1096-0473
+J9 J FINANC INTERMED
+JI J. Financ. Intermed.
+PD OCT
+PY 2013
+VL 22
+IS 4
+BP 532
+EP 558
+DI 10.1016/j.jfi.2013.02.002
+PG 27
+WC Business, Finance
+SC Business & Economics
+GA 264ZA
+UT WOS:000327918300002
+DA 2019-12-28
+ER

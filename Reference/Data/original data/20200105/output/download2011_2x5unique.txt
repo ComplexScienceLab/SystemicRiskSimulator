@@ -1,0 +1,401 @@
+
+PT J
+AU Guo, F
+   Chen, CR
+   Huang, YS
+AF Guo, Feng
+   Chen, Carl R.
+   Huang, Ying Sophie
+TI Markets contagion during financial crisis: A regime-switching approach
+SO INTERNATIONAL REVIEW OF ECONOMICS & FINANCE
+LA English
+DT Article
+DE Financial crisis; Credit default swap; Real estate market; Stock market;
+   Oil price; Markov regime-switching VAR
+ID MODEL; RISK
+AB Within a Markov regime-switching VAR framework, we investigate the contagion effects among the stock market, real estate market, credit default market, and energy market covering the most recent financial crisis period when markets experience regime shifts. The results demonstrate that the watershed of regimes occurs around the start of the subprime crisis in 2007, after which the "risky" regime dominates the evolution of market chaos. During the financial crisis, excluding their own shocks, stock market shock and oil price shock are the main driving forces behind the credit default market and stock market variations. respectively. The energy market also appears to be more responsive to the stock market movements than the shocks originating from housing and credit markets. However, the impacts from the credit default market on the real estate market are not significant as expected. (C) 2010 Elsevier Inc. All rights reserved.
+C1 [Huang, Ying Sophie] No Kentucky Univ, Dept Econ & Finance, Haile US Bank Coll Business, Highland Hts, KY 41099 USA.
+   [Chen, Carl R.] Univ Dayton, Dept Econ & Finance, Dayton, OH 45469 USA.
+   [Huang, Ying Sophie] No Kentucky Univ, Dept Accountancy Finance & Business Law, Highland Hts, KY 41099 USA.
+RP Huang, YS (reprint author), No Kentucky Univ, Dept Econ & Finance, Haile US Bank Coll Business, Highland Hts, KY 41099 USA.
+EM huangy1@nku.edu
+CR Acharya VV, 2005, J FINANC ECON, V77, P375, DOI 10.1016/j.jfineco.2004.06.007
+   Bystrom H., 2005, CREDIT DEFAULT SWAPS
+   CAMPBELL JY, 1991, NBER MACROECON ANN, V6, P141, DOI DOI 10.2307/3585053
+   DEMPSTER AP, 1977, J ROY STAT SOC B MET, V39, P1
+   Dungey M., 2001, PB0109 FED RES BANK
+   Ehrmann M, 2003, ECON LETT, V78, P295, DOI 10.1016/S0165-1765(02)00256-2
+   Guo F, 2010, INT REV ECON FINANC, V19, P452, DOI 10.1016/j.iref.2009.10.014
+   HAMILTON J, 1996, J MONETARY ECON, V38, P195, DOI DOI 10.1016/S0304-3932(96)01282-2
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   Hooker MA, 2002, J MONEY CREDIT BANK, V34, P540, DOI 10.1353/mcb.2002.0041
+   Kiyotaki N, 2002, AM ECON REV, V92, P62, DOI 10.1257/000282802320189014
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Krolzig HM, 1997, MARKOV SWITCHING VEC
+   LEVITIN AJ, 2011, GEORGETOWN IN PRESS
+   Ling DC, 1999, REAL ESTATE ECON, V27, P483, DOI 10.1111/1540-6229.00781
+   Longstaff FA, 2005, J FINANC, V60, P2213, DOI 10.1111/j.1540-6261.2005.00797.x
+   MCCULLOCH JH, 1975, J FINANC, V30, P811, DOI 10.2307/2326860
+   NORDEN L, 2007, EUROPEAN FINANCIAL M, V15, P529
+   Quan DC, 1999, REAL ESTATE ECON, V27, P183, DOI 10.1111/1540-6229.00771
+   TSATSARONIS K, 2004, BIS Q REV, P65
+   Van Deventer D.R., 1994, J FIXED INCOME, V4, P52, DOI DOI 10.3905/JFI.1994.408102
+NR 21
+TC 83
+Z9 83
+U1 0
+U2 27
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1059-0560
+EI 1873-8036
+J9 INT REV ECON FINANC
+JI Int. Rev. Econ. Financ.
+PD JAN
+PY 2011
+VL 20
+IS 1
+SI SI
+BP 95
+EP 109
+DI 10.1016/j.iref.2010.07.009
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA 691ZU
+UT WOS:000285122100009
+DA 2019-12-27
+ER
+
+PT J
+AU Ang, A
+   Gorovyy, S
+   van Inwegen, GB
+AF Ang, Andrew
+   Gorovyy, Sergiy
+   van Inwegen, Gregory B.
+TI Hedge fund leverage
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Capital structure; Long-short positions; Alternative investments;
+   Exposure; Hedging; Systemic risk
+ID STOCK RETURNS; LIQUIDITY; RISK; PERFORMANCE; INCENTIVES; STRATEGIES
+AB We investigate the leverage of hedge funds in the time series and cross-section. Hedge fund leverage is counter-cyclical to the leverage of listed financial intermediaries and decreases prior to the start of the financial crisis in mid-2007. Hedge fund leverage is lowest in early 2009 when the market leverage of investment banks is highest. Changes in hedge fund leverage tend to be more predictable by economy-wide factors than by fund-specific characteristics. In particular, decreases in funding costs and increases in market values both forecast increases in hedge fund leverage. Decreases in fund return volatilities predict future increases in leverage. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [Ang, Andrew; Gorovyy, Sergiy] Columbia Univ, New York, NY 10027 USA.
+   [Ang, Andrew] NBER, Cambridge, MA 02138 USA.
+   [van Inwegen, Gregory B.] Citi Private Bank, New York, NY USA.
+RP Gorovyy, S (reprint author), Columbia Univ, New York, NY 10027 USA.
+EM aa610@columbia.edu; sgorovyy14@gsb.columbia.edu;
+   greg.vaninwegen@citi.com
+CR Acharya VV, 2011, J FINANC, V66, P99, DOI 10.1111/j.1540-6261.2010.01627.x
+   Ackermann C, 1999, J FINANC, V54, P833, DOI 10.1111/0022-1082.00129
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Adrian T, 2009, AM ECON REV, V99, P600, DOI 10.1257/aer.99.2.600
+   AGARWAL V, 2010, INFERRING REPO UNPUB
+   Agarwal V, 2009, J FINANC, V64, P2221, DOI 10.1111/j.1540-6261.2009.01499.x
+   Ang A., 2008, J INVESTMENT MANAGEM, V6, P34
+   Ang A, 2010, FINANC MANAGE, V39, P1069, DOI 10.1111/j.1755-053X.2010.01104.x
+   BHANDARI LC, 1988, J FINANC, V43, P507, DOI 10.2307/2328473
+   Boehmer E., 2009, SHACKLING SHOR UNPUB
+   Bollen NPB, 2009, J FINANC, V64, P985, DOI 10.1111/j.1540-6261.2009.01455.x
+   Brown SJ, 1999, J BUS, V72, P91, DOI 10.1086/209603
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Brunnermeier MK, 2004, J FINANC, V59, P2013, DOI 10.1111/j.1540-6261.2004.00690.x
+   CARTER CK, 1994, BIOMETRIKA, V81, P541
+   Chan N, 2006, NBER CONF R, P235
+   Chevalier J, 1997, J POLIT ECON, V105, P1167, DOI 10.1086/516389
+   CHIB S, 1993, J ECONOMETRICS, V58, P275, DOI 10.1016/0304-4076(93)90046-8
+   Dai J., 2010, RISK MANAGEMEN UNPUB
+   DEFRANCE B, 2007, FINANCIAL STABILITY, V10
+   DUDLEY E, 2009, FUNDING RISK E UNPUB
+   DUFFIE D, 2008, LEVERAGE MANAG UNPUB
+   FAMA EF, 1992, J FINANC, V47, P427, DOI 10.2307/2329112
+   Financial Stability Forum, 2007, UPD FSF REP HIGHL LE
+   Fostel A, 2008, AM ECON REV, V98, P1211, DOI 10.1257/aer.98.4.1211
+   Fung W, 1997, REV FINANC STUD, V10, P275, DOI 10.1093/rfs/10.2.275
+   Fung W, 2001, REV FINANC STUD, V14, P313, DOI 10.1093/rfs/14.2.313
+   Getmansky M, 2004, J FINANC ECON, V74, P529, DOI 10.1016/j.jfineco.2004.04.001
+   GORTON G, 2009, HAIRCUTS UNPUB
+   Gromb D, 2002, J FINANC ECON, V66, P361, DOI 10.1016/S0304-405X(02)00228-3
+   HE Z, 2009, MODEL CAPITAL UNPUB
+   He Zhiguo, 2010, BALANCE SHEET UNPUB
+   Jagannathan R, 2010, J FINANC, V65, P217, DOI 10.1111/j.1540-6261.2009.01528.x
+   Kambhu J., 2007, FRNB EC POLICY REV, V13, P1
+   Khandani Amir E., 2007, J INVESTMENT MANAGEM, p[5, 5]
+   Li K., 2003, J EMPIR FINANC, V10, P57, DOI DOI 10.1016/S0927-5398(02)00027-0
+   Lo Andrew, 2008, HEDGE FUNDS SYSTEMIC
+   Malkiel BG, 2005, FINANC ANAL J, V61, P80, DOI 10.2469/faj.v61.n6.2775
+   MCGUIRE P, 2008, ESTIMATING HED UNPUB
+   President's Working Group on Financial Markets, 1999, HEDG FUNDS LEV LESS
+   Robert C. P., 1999, MONTE CARLO STAT MET
+   SCHNEEWEIS T, 2004, IMPACT LEVERAG UNPUB
+   SHARPE WF, 1992, J PORTFOLIO MANAGE, V18, P7, DOI 10.3905/jpm.1992.409394
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   Sinopoli B, 2004, IEEE T AUTOMAT CONTR, V49, P1453, DOI 10.1109/TAC.2004.834121
+   Sirri ER, 1998, J FINANC, V53, P1589, DOI 10.1111/0022-1082.00066
+   Stein JC, 2009, J FINANC, V64, P1517, DOI 10.1111/j.1540-6261.2009.01472.x
+   Welch I, 2004, J POLIT ECON, V112, P106, DOI 10.1086/379933
+NR 49
+TC 66
+Z9 66
+U1 3
+U2 43
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD OCT
+PY 2011
+VL 102
+IS 1
+BP 102
+EP 126
+DI 10.1016/j.jfineco.2011.02.020
+PG 25
+WC Business, Finance; Economics
+SC Business & Economics
+GA 818GX
+UT WOS:000294740900006
+DA 2019-12-28
+ER
+
+PT J
+AU Li, SW
+AF Li, Shouwei
+TI CONTAGION RISK IN AN EVOLVING NETWORK MODEL OF BANKING SYSTEMS
+SO ADVANCES IN COMPLEX SYSTEMS
+LA English
+DT Article
+DE Banking system; contagion risk; tiered structure; network evolution;
+   bank activity
+ID INTERBANK MARKET; FINANCIAL NETWORKS; LIQUIDITY; CRITICALITY; EXPOSURES
+AB This paper develops an analytical model of contagion risk in banking systems with tiered structure. It explores the respective effects of banking network structure and bank activity on contagion risk in banking network evolution. The findings suggest that increasing interbank connections is conducive to handling banking crisis and reducing the effect of contagion risk, but its positive effect is limited; raising bank reserve ratio will enhance the stability of individual banks to a certain extent, but it may immediately lead to liquidity problems for banks that have less excess reserves, causing the occurrence of contagion risk; an excessive drive for risk assets with high return may bring high risk to banks and lead to instability of banking systems; the bank risk preference is crucial to the stability of banking systems, and the radicalness of it may lead to greater systemic instability.
+C1 Southeast Univ, Sch Econ & Management, Nanjing 211189, Peoples R China.
+RP Li, SW (reprint author), Southeast Univ, Sch Econ & Management, Nanjing 211189, Peoples R China.
+EM lsw112488@sohu.com
+FU NSFCNational Natural Science Foundation of China [70671025, 71071034];
+   NBRR [2010CB328104-02]
+FX This research is supported by NSFC (No. 70671025 and No. 71071034) and
+   NBRR (No. 2010CB328104-02).
+CR Aleksiejuk A, 2002, INT J MOD PHYS C, V13, P333, DOI 10.1142/S0129183102003164
+   ALI MM, 1982, J AM STAT ASSOC, V77, P19, DOI 10.2307/2287765
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Arnt H, 2005, 292005 DANM NAT
+   Babus A, 2007, FORMATION FINANCIAL
+   Boss M, 2004, EMPIRICAL ANAL NETWO
+   Cajueiro DO, 2008, PHYSICA A, V387, P6825, DOI 10.1016/j.physa.2008.08.031
+   Canedo JMD, 2009, INTELL SYST ACCOUNT, V16, P87, DOI 10.1002/isaf.295
+   Cecchetti S. G., 2008, MONEY BANKING FINANC
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg C. P., 2010, JENA EC RES PAPERS, V4, P2010
+   Haldane A. G., 2009, COMMUNICATION
+   Herring R, 1999, REAL ESTATE BOOMS BA
+   Iori G, 2001, PHYSICA A, V299, P205, DOI 10.1016/S0378-4371(01)00297-7
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Kahn C. M., 2005, ENDOGENOUS FINANCIAL, DOI [10.2139/ssrn.680161, DOI 10.2139/SSRN.680161]
+   Kaminsky G, 1996, BANKING BALANCE PAYM
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   MANDELBROT B, 1962, Q J ECON, V76, P57, DOI 10.2307/1891131
+   Mishkin F. S., 2001, EC MONEY BANKING FIN
+   Muller J., 2006, J FINANCIAL SERVICES, V29, P37, DOI DOI 10.1007/S10693-005-5107-2
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   PRAETZ PD, 1972, J BUS, V45, P49, DOI 10.1086/295425
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Teteryatnikova M., 2009, RESILIENCE INTERBANK
+   TOIVANEN M, 2009, RES DISCUSSION PAPER
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   VANLELYVELD I, 2006, INT J CENT BANK, V2, P99
+   Vivier-Lirimont S., 2004, INTERBANK NETWORKS S
+   Wells S., 2004, 230 BANK ENGL
+NR 39
+TC 12
+Z9 14
+U1 1
+U2 31
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 0219-5259
+J9 ADV COMPLEX SYST
+JI Adv. Complex Syst.
+PD OCT
+PY 2011
+VL 14
+IS 5
+BP 673
+EP 690
+DI 10.1142/S0219525911003438
+PG 18
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA 842TZ
+UT WOS:000296624700002
+DA 2019-12-27
+ER
+
+PT J
+AU Aloui, R
+   Ben Aissa, MS
+   Nguyen, DK
+AF Aloui, Riadh
+   Ben Aiessa, Mohamed Safouane
+   Nguyen, Duc Khuong
+TI Global financial crisis, extreme interdependences, and contagion
+   effects: The role of economic structure?
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Extreme comovements; Copula approach; BRIC emerging markets; Global
+   financial crisis
+ID EQUITY MARKETS; STOCK MARKETS; DEPENDENCE; PORTFOLIOS; RETURNS; COPULAS;
+   MODELS; RISK
+AB The paper examines the extent of the current global crisis and the contagion effects it induces by conducting an empirical investigation of the extreme financial interdependences of some selected emerging markets with the US. Several copula functions that provide the necessary flexibility to capture the dynamic patterns of fat tail as well as linear and nonlinear interdependences are used to model the degree of cross-market linkages. Using daily return data from Brazil, Russia, India, China (BRIC) and the US, our empirical results show strong evidence of time-varying dependence between each of the BRIC markets and the US markets, but the dependency is stronger for commodity-price dependent markets than for finished-product export-oriented markets. We also observe high levels of dependence persistence for all market pairs during both bullish and bearish markets. (C) 2010 Elsevier B.V. All rights reserved.
+C1 [Nguyen, Duc Khuong] ISC Paris Sch Management, Dept Econ, F-75848 Paris 17, France.
+   [Aloui, Riadh; Ben Aiessa, Mohamed Safouane] Univ Tunis El Manar, LAREQUAD, Tunis 2092, Tunisia.
+   [Aloui, Riadh; Ben Aiessa, Mohamed Safouane] Univ Tunis El Manar, FSEGT, Tunis 2092, Tunisia.
+RP Nguyen, DK (reprint author), ISC Paris Sch Management, Dept Econ, 22 Blvd Ft Vaux, F-75848 Paris 17, France.
+EM riadh.aloui@isg.rnu.tn; safouane.benaissa@univ-med.fr;
+   dnguyen@groupeisc.com
+OI Nguyen, Duc Khuong/0000-0002-7796-8787
+CR Abad P, 2010, J BANK FINANC, V34, P2851, DOI 10.1016/j.jbankfin.2009.10.009
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Beine M, 2010, J BANK FINANC, V34, P184, DOI 10.1016/j.jbankfin.2009.07.014
+   Beine M, 2008, EUR J FINANC, V14, P663, DOI 10.1080/13518470802042112
+   Caillault C, 2005, QUANT FINANC, V5, P489, DOI 10.1080/14697680500147853
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Christiansen C, 2009, J BANK FINANC, V33, P1048, DOI 10.1016/j.jbankfin.2008.10.014
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   ERRUNZA V, 1977, J INT BUS STUD, V52, P83
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Fujii E., 2005, J INT FINANC MARK I, V15, P315
+   Gallo G. M., 2005, COMPUTATIONAL STAT D, V52, P3011
+   Genest C, 2009, INSUR MATH ECON, V44, P199, DOI 10.1016/j.insmatheco.2007.10.005
+   Genest C, 2008, ANN I H POINCARE-PR, V44, P1096, DOI 10.1214/07-AIHP148
+   Gilmore CG, 2008, Q REV ECON FINANC, V48, P605, DOI 10.1016/j.qref.2006.06.005
+   GRUBEL HG, 1968, AM ECON REV, V58, P1299
+   HARVEY CR, 1995, REV FINANC STUD, V8, P773, DOI 10.1093/rfs/8.3.773
+   HU J, 2008, DEPENDENCE STRUCTURE
+   Joe H., 1996, 166 U BRIT COL DEP S
+   Joe H, 1997, MULTIVARIATE MODELS
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Kupiec P., 1995, J DERIV, V3, P73, DOI [10.3905/jod.1995.407942, DOI 10.3905/JOD.1995.407942]
+   LEVY H, 1970, AM ECON REV, V60, P668
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   LOPEZ JA, 2001, J BANK FINANC, V25, P1635
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Mendes BVD, 2005, APPL STOCH MODEL BUS, V21, P483, DOI 10.1002/asmb.602
+   Nelsen R.B., 1999, INTRO COPULAS
+   PAIS A, J BANKING F IN PRESS, DOI DOI 10.1016/J.BANKFIN.2010.05.012
+   Patton A., 2004, J FINANCIAL ECONOMET, V2, P130, DOI DOI 10.1093/JJFINEC/NBH006
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Serban M, 2007, J TIME SER ANAL, V28, P763, DOI 10.1111/j.1467-9892.2007.00543.x
+   Solnik B., 1974, FINANCIAL ANAL J, V30, P48, DOI DOI 10.2469/FAJ.V30.N4.48
+   TEILETCHE J, 2008, DETERMINANTS EXTREME
+NR 38
+TC 213
+Z9 218
+U1 3
+U2 98
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JAN
+PY 2011
+VL 35
+IS 1
+BP 130
+EP 141
+DI 10.1016/j.jbankfin.2010.07.021
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA 682IE
+UT WOS:000284393800011
+DA 2019-12-27
+ER
+
+PT J
+AU Demirguc-Kunt, A
+   Detragiache, E
+AF Demirguec-Kunt, Asli
+   Detragiache, Enrica
+TI Basel Core Principles and bank soundness: Does compliance matter?
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Bank soundness; Regulation and supervision; Basel core principles
+AB This paper studies whether compliance with the Basel Core Principles for effective banking supervision (BCPs) is associated with bank soundness. Using data for over 3000 banks in 86 countries, we find that neither the overall index of BCP compliance nor its individual components are robustly associated with bank risk measured by individual bank Z-scores. We also fail to find a relationship between BCP compliance and systemic risk measured by a system-wide Z-score. (C) 2010 International Monetary Fund. Published by Elsevier B.V. All rights reserved.
+C1 [Demirguec-Kunt, Asli] World Bank, Financial & Private Sector, Dev Network & Dev Res Grp, Washington, DC USA.
+EM edetragiache@imf.org
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2009, RESTORING FINANCIAL
+   Barth J, 2006, RETHINKING BANK SUPE
+   Barth J, 2001, BROOKINGS WHARTON PA, P183
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   BOYD JH, 1993, J MONETARY ECON, V31, P47, DOI 10.1016/0304-3932(93)90016-9
+   BRUNNERMEIER M, 2009, FUNDAMENTAL PRINCIPA
+   CAPRIO G, 2009, 2007 MELTDOWN UNPUB
+   Cihak Martin, 2008, 08190 IMF
+   Das Udaibir S., 2005, 05173 IMF
+   DEMIRGUCKUNT A, 2009, ARE ALL SACRED UNPUB
+   DEMIRGUCKUNT A, 1998, IMF STAFF PAPERS, V451
+   Demirguc-Kunt A, 2008, J FINANC INTERMED, V17, P511, DOI 10.1016/j.jfi.2007.10.003
+   Financial Stability Forum, 2008, REP FIN STAB FOR ENH
+   *G 20, 2009, DECL STRENGTH FIN SY
+   Goodhart C., 2008, FINANCIAL TIMES 0604
+   Goodhart CAE, 2008, J FINANC STABIL, V4, P351, DOI 10.1016/j.jfs.2008.09.005
+   Goodhart C. A. E., 2008, WHAT G20 LEADERS MUS
+   Kashyap A. K., 2008, RETHINKING CAP UNPUB
+   Kaufmann D., 2003, GOVERNANCE MATTERS
+   Laeven Luc, 2008, BANK GOVERNANC UNPUB
+   PODPIERA R, 2004, 04240 IMF
+   Sundararajan V., 2001, 0162 IMF
+   Turner Review, 2009, TURN REV REG RESP GL
+   *US TREAS, 2009, FIN REG REF NEW FDN
+NR 25
+TC 44
+Z9 46
+U1 1
+U2 30
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2011
+VL 7
+IS 4
+BP 179
+EP 190
+DI 10.1016/j.jfs.2010.03.003
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA 830KN
+UT WOS:000295656000001
+DA 2019-12-28
+ER

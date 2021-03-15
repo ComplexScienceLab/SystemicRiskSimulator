@@ -1,0 +1,489 @@
+
+PT J
+AU Chernozhukov, V
+   Fernandez-Val, I
+AF Chernozhukov, Victor
+   Fernandez-Val, Ivan
+TI Inference for Extremal Conditional Quantile Models, with an Application
+   to Market and Birthweight Risks
+SO REVIEW OF ECONOMIC STUDIES
+LA English
+DT Article
+DE Quantile regression; Feasible inference; Extreme value theory; Market
+   risk; Birthweights; Stress testing; Systemic Risk; C21; C22; G32; I19
+ID REGRESSION QUANTILES; ECONOMETRIC-MODELS; STRUCTURAL MODELS;
+   DISTRIBUTIONS; STATISTICS; EFFICIENCY; BOOTSTRAP; DYNAMICS; SERIES
+AB Quantile regression (QR) is an increasingly important empirical tool in economics and other sciences for analysing the impact a set of regressors has on the conditional distribution of an outcome. Extremal QR, or QR applied to the tails, is of interest in many economic and financial applications, such as conditional value at risk, production efficiency, and adjustment bands in (S,s) models. This paper provides feasible inference tools for extremal conditional quantile models that rely on extreme value approximations to the distribution of self-normalized QR statistics. The methods are simple to implement and can be of independent interest even in the univariate (non-regression) case. We illustrate the results with two empirical examples analysing extreme fluctuations of a stock return and extremely low percentiles of live infant birthweight in the range between 250 and 1500 g.
+C1 [Chernozhukov, Victor] MIT, Cambridge, MA 02139 USA.
+   [Fernandez-Val, Ivan] Boston Univ, Boston, MA 02215 USA.
+RP Chernozhukov, V (reprint author), MIT, Cambridge, MA 02139 USA.
+RI Fernandez-Val, Ivan/G-3455-2016
+CR Abrevaya J, 2001, EMPIR ECON, V26, P247, DOI DOI 10.1007/S001810000052
+   BASSETT GW, 1982, J AM STAT ASSOC, V77, P407
+   Bertail P, 2004, J ECONOMETRICS, V120, P295, DOI 10.1016/S0304-4076(03)00215-X
+   BICKEL PJ, 1981, ANN STAT, V9, P1196, DOI 10.1214/aos/1176345637
+   Caballero RJ, 1999, ECONOMETRICA, V67, P783, DOI 10.1111/1468-0262.00053
+   Chernozhukov V, 2005, ANN STAT, V33, P806, DOI 10.1214/009053604000001165
+   Chernozhukov V, 2004, ECONOMETRICA, V72, P1445, DOI 10.1111/j.1468-0262.2004.00540.x
+   CHERNOZHUKOV V, 1998, NONPARAMETRIC UNPUB
+   Chernozhukov V., 2001, EMPIR ECON, V26, P271, DOI DOI 10.1007/S001810000062
+   Christoffersen P., 2001, J EMPIR FINANC, V8, P325, DOI DOI 10.1016/S0927-5398(01)00025-1
+   DEANGELIS D, 1993, J AM STAT ASSOC, V88, P1310
+   DEKKERS ALM, 1989, ANN STAT, V17, P1795, DOI 10.1214/aos/1176347396
+   DIEBOLD FX, 2000, J RISK FINANCE, V1, P30, DOI DOI 10.1108/EB043443
+   Donald SG, 2002, J ECONOMETRICS, V109, P305, DOI 10.1016/S0304-4076(02)00116-1
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   FEIGIN PD, 1994, STOCH PROC APPL, V51, P135, DOI 10.1016/0304-4149(94)90022-1
+   FLINN C, 1982, J ECONOMETRICS, V18, P115, DOI 10.1016/0304-4076(82)90097-5
+   GEYER C. J., 1996, ASYMPTOTICS CONVEX S
+   Gnedenko B, 1943, ANN MATH, V44, P423, DOI 10.2307/1968974
+   Hirano K, 2003, ECONOMETRICA, V71, P1307, DOI 10.1111/1468-0262.00451
+   Kiefer NM, 2000, ECONOMETRICA, V68, P695, DOI 10.1111/1468-0262.00128
+   KNIGHT K, 1999, EPI CONVERGENCE STOC
+   KNIGHT K, 2001, EXTREMES, V4, P87, DOI DOI 10.1023/A:1013991808181
+   Koenker R, 2001, J ECON PERSPECT, V15, P143, DOI 10.1257/jep.15.4.143
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R., 2005, ECONOMETRIC SOC MONO
+   Laplace P. S., 1995, THEORIE ANAL PROBABI
+   MANDELBROT M, 1963, J BUS, V36, P394
+   MEYER RM, 1973, ANN PROBAB, V1, P480, DOI 10.1214/aop/1176996941
+   Politis DN, 1999, SUBSAMPLING
+   Portnoy S., 1999, EXTREMES, V2, P227
+   POWELL JL, 1984, J ECONOMETRICS, V25, P303, DOI 10.1016/0304-4076(84)90004-6
+   Resnick S. I., 1987, EXTREME VALUES REGUL
+   Sen A., 1973, EC INEQUALITY
+   TIMMER CP, 1971, J POLIT ECON, V79, P776, DOI 10.1086/259787
+   White H., 2001, ASYMPTOTIC THEORY EC
+   Zipf G.K., 1949, HUMAN BEHAV PRINCIPL
+NR 38
+TC 25
+Z9 25
+U1 0
+U2 22
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 0034-6527
+EI 1467-937X
+J9 REV ECON STUD
+JI Rev. Econ. Stud.
+PD APR
+PY 2011
+VL 78
+IS 2
+BP 559
+EP 589
+DI 10.1093/restud/rdq020
+PG 31
+WC Economics
+SC Business & Economics
+GA 740NO
+UT WOS:000288801800005
+DA 2019-12-28
+ER
+
+PT J
+AU Nicholson, G
+   Kiel, G
+   Kiel-Chisholm, S
+AF Nicholson, Gavin
+   Kiel, Geoffrey
+   Kiel-Chisholm, Scott
+TI The Contribution of Social Norms to the Global Financial Crisis: A
+   Systemic Actor Focused Model and Proposal for Regulatory Change
+SO CORPORATE GOVERNANCE-AN INTERNATIONAL REVIEW
+LA English
+DT Article
+DE Corporate Governance; Legal Effectiveness; Governmental Protection; Hard
+   versus soft law
+ID INCENTIVES; GOVERNANCE; AGENCY; COMPENSATION; PERFORMANCE; COMMITMENT;
+   ASYMMETRY; ECONOMICS; DYNAMICS; SERVICES
+AB Manuscript Type: Conceptual
+   Research Question/Issue: Conventional regulatory reforms of the financial system focus on standard economic assumptions of self-interested, rational actors. The Global Financial Crisis (GFC) and similar financial failures highlight that there are limits to this approach. Instead we use a norm-based (or soft law) perspective to examine how the systemic problems underlying the GFC lay not so much in neo-classical economic assumptions of self-interest, but in unchecked financial innovation exploited by norms of buyer beware and ratings agency reliance among market participants. Fueled by sector-wide remuneration practices, these norms created information asymmetries that fundamentally undermined the integrity of the market.
+   Research Findings/Insights: We present a model that highlights how investment banks, as professional service firms, have superior information to their clients. This presents an information asymmetry problem whereby they can exploit the market norm of caveat emptor (buyer beware) when developing innovative financial transactions. We propose a model highlighting how flawed financial innovation can lead to widespread, systemic problems of assessing and pricing risk because market participants can actively develop and promote flawed transactions. This problem is exacerbated where there is an over-reliance on credit ratings agencies (due to the high information and search costs facing buyers) and a reduced emphasis on director fiduciary duties in financial Special Purpose Entities.
+   Theoretical/Academic Implications: Social norms that underpin financial markets are central to market regulation. Our approach provides a re-examination of the often unquestioned use of universal norms for differing market transactions in the financial sector. Researchers need to explore the interaction between social norms and market contexts (such as financial innovation) to better understand the behavior of financial markets. We contend that a mismatch between norms and market mechanisms can lead to significant unintended outcomes. Our approach of combining soft law (norms) and hard law (regulation) approaches to regulation provides added insights into agency, stewardship, and institutional theories.
+   Practitioner/Policy Implications: Regulators need to understand norms and financial market contexts to develop better legislative interventions. Specifically, differentiating between transaction types in financial markets will address the problems associated with information and search costs facing buyers of flawed financial innovation. We also provide proposals for policy makers seeking to embed accountability for risk taking across the key participants in the financial system to minimize market distortions in the majority of the financial sector.
+C1 [Nicholson, Gavin] Queensland Univ Technol, Sch Accountancy, Brisbane, Qld 4001, Australia.
+   [Kiel, Geoffrey] Univ Queensland, Brisbane, Qld 4072, Australia.
+   [Kiel-Chisholm, Scott] Queensland Univ Technol, Sch Law, Brisbane, Qld 4001, Australia.
+RP Nicholson, G (reprint author), Queensland Univ Technol, Sch Accountancy, GPO Box 2434, Brisbane, Qld 4001, Australia.
+EM g.nicholson@qut.edu.au
+OI Nicholson, Gavin/0000-0003-4091-9858
+CR Agnblad J., 2001, CONTROL CORPORATE EU, P228
+   Aguilar L. A., 2010, PREVENTING INVESTOR
+   Akerlof GA, 2005, J ECON PERSPECT, V19, P9, DOI 10.1257/0895330053147930
+   Akerlof GA, 2007, AM ECON REV, V97, P5, DOI 10.1257/aer.97.1.5
+   Alces Kelli A., 2009, J CORP L, V35, P239
+   Alchian AA, 1950, J POLIT ECON, V58, P211, DOI 10.1086/256940
+   Alm J, 1999, KYKLOS, V52, P141, DOI 10.1111/j.1467-6435.1999.tb01440.x
+   Australian New Zealand Shadow Financial Regulatory Committee, 2010, RET FIN PATH FORW ED
+   Australian Productivity Commission, 2007, PERF BENCHM AUSTR BU
+   Bainbridge S. M., 2008, CORPORATION LAW
+   Bandiera O, 2005, Q J ECON, V120, P917, DOI 10.1162/003355305774268192
+   Barro R. J., 2003, 9682 NBER
+   Baxt R., 2005, DUTIES RESPONSIBILIT
+   Bebchuk LA, 2003, J ECON PERSPECT, V17, P71, DOI 10.1257/089533003769204362
+   Bebchuk LA, 2010, GEORGETOWN LAW J, V98, P247
+   BESLEY T, 1995, J DEV ECON, V46, P1, DOI 10.1016/0304-3878(94)00045-E
+   Bhagat Sanjai, 2010, INVESTMENT BANKERS C
+   BLACK BS, 1992, UCLA LAW REV, V39, P811
+   Boytsun A, 2011, CORP GOV-OXFORD, V19, P41, DOI 10.1111/j.1467-8683.2010.00829.x
+   Butt P., 2004, CONCISE AUSTR LEGAL
+   Cassidy J., 2009, MARKETS FAIL
+   Christakis NA, 2008, NEW ENGL J MED, V358, P2249, DOI 10.1056/NEJMsa0706154
+   Christakis NA, 2007, NEW ENGL J MED, V357, P370, DOI 10.1056/NEJMsa066082
+   Clarke T, 2004, CORP GOV, V12, P153, DOI 10.1111/j.1467-8683.2004.00354.x
+   Coffee JC, 2001, U PENN LAW REV, V149, P2151, DOI 10.2307/3312908
+   Committee on the Global Financial System, 2008, CGFS PUBL, V32
+   Committee on the Global Financial System, 2005, ROL RAT STRUCT UNPUB
+   Conyon M., 2011, 2011002 ICS ILR SCH
+   Cukierman A, 2011, J FINANC STABIL, V7, P26, DOI 10.1016/j.jfs.2010.03.002
+   Davis JH, 1997, ACAD MANAGE REV, V22, P20, DOI 10.2307/259223
+   Davis K, 2010, FINANCIAL REGULATION
+   Davis K, 2010, GRIFFITH LAW REV, V19, P117, DOI 10.1080/10854672.2010.10854672
+   DavisPolk, 2010, SUMM DODDFR WALL STR
+   Dawson S, 2004, CORP GOV, V12, P130, DOI 10.1111/j.1467-8683.2004.00351.x
+   DeCambre M., 2009, NEW YORK POST   0618
+   DiPrete TA, 2010, AM J SOCIOL, V115, P1671, DOI 10.1086/652297
+   EISENHARDT KM, 1989, ACAD MANAGE REV, V14, P57, DOI 10.2307/258191
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Farrar J., 2005, CORPORATE GOVERNANCE
+   Farrar J., 2010, AUSTR J CORPORATE LA, V24, P227
+   Fehr E, 2004, TRENDS COGN SCI, V8, P185, DOI 10.1016/j.tics.2004.02.007
+   Fehr E, 1999, Q J ECON, V114, P817, DOI 10.1162/003355399556151
+   Ferguson N, 2008, ASCENT MONEY FINANCI
+   Festre A, 2010, J ECON SURV, V24, P511, DOI 10.1111/j.1467-6419.2009.00594.x
+   Financial Crisis Inquiry Commission, 2011, FIN CRIS INQ REP FIN
+   Finnemore D.L., 1996, CCH MACQUARIE DICT L
+   Fowler JH, 2010, P NATL ACAD SCI USA, V107, P5334, DOI 10.1073/pnas.0913149107
+   Fowler JH, 2008, BMJ-BRIT MED J, V337, DOI 10.1136/bmj.a2338
+   Freeman RB, 2010, INT LABOUR REV, V149, P163, DOI 10.1111/j.1564-913X.2010.00082.x
+   Friedman M, 1980, FREE CHOOSE
+   Gibbons R, 1998, J ECON PERSPECT, V12, P115, DOI 10.1257/jep.12.4.115
+   Gneezy U, 2000, J LEGAL STUD, V29, P1, DOI 10.1086/468061
+   Gneezy U, 2000, Q J ECON, V115, P791, DOI 10.1162/003355300554917
+   Guiso L, 2004, AM ECON REV, V94, P526, DOI 10.1257/0002828041464498
+   GUTH W, 1982, J ECON BEHAV ORGAN, V3, P367, DOI 10.1016/0167-2681(82)90011-7
+   HALL RH, 1967, ADMIN SCI QUART, V12, P461, DOI 10.2307/2391315
+   Harold G., 1938, AM BANKERS ASS BANKI, V27, P160
+   Hillery GA, 1955, RURAL SOCIOL, V20, P111
+   Hillman AJ, 2008, ORGAN SCI, V19, P441, DOI 10.1287/orsc.1080.0355
+   Hitt MA, 2001, ACAD MANAGE J, V44, P13, DOI 10.2307/3069334
+   Holmen M, 2004, J FINANC INTERMED, V13, P324, DOI 10.1016/j.jfi.2003.11.003
+   Hong H, 2004, J FINANC, V59, P137, DOI 10.1111/j.1540-6261.2004.00629.x
+   Ichino A, 2000, Q J ECON, V115, P1057, DOI 10.1162/003355300554890
+   Kahan DM, 2000, U CHICAGO LAW REV, V67, P607, DOI 10.2307/1600336
+   KANDORI M, 1992, REV ECON STUD, V59, P63, DOI 10.2307/2297925
+   Keister LA, 2002, ANNU REV SOCIOL, V28, P39, DOI 10.1146/annurev.soc.28.110601.140836
+   KERR S, 1975, ACAD MANAGE J, V18, P769, DOI 10.2307/255378
+   Keynes J. M., 1936, GEN THEORY EMPLOYMEN
+   Kirkbride J, 2004, CORP GOV, V12, P85, DOI 10.1111/j.1467-8683.2004.00345.x
+   Knack S, 1997, Q J ECON, V112, P1251, DOI 10.1162/003355300555475
+   Knyght R, 2011, J CHANG MANAG, V11, P45, DOI 10.1080/14697017.2010.516269
+   LaPorta R, 1997, J FINANC, V52, P1131, DOI 10.1111/j.1540-6261.1997.tb02727.x
+   Larson J., 2010, PROPUBLICA
+   LEIBENSTEIN H, 1966, AM ECON REV, V56, P392
+   LEVINE S, 2007, I NATURE PRICE BUBBL
+   Mankiw N. Gregory, 2008, PRINCIPLES EC
+   Masel G., 2010, LAWS AUSTR
+   McFadden D, 2006, AM ECON REV, V96, P5, DOI 10.1257/000282806776157542
+   Mellstrom C, 2008, J EUR ECON ASSOC, V6, P845, DOI 10.1162/JEEA.2008.6.4.845
+   MIZRUCHI MS, 1994, HDB EC SOCIOLOGY, P313
+   Moles P., 1997, OXFORD REFERENCE ONL
+   Murphy K., 1999, HDB LABOR EC B, V3b, P2485, DOI DOI 10.1016/S1573-4463(99)30024-9
+   Murphy K. J., 2009, 3409 FBE
+   Nasiripour Shahien, 2010, HUFFINGTON POST
+   NAYYAR PR, 1993, ACAD MANAGE J, V36, P28, DOI 10.2307/256511
+   North D., 1990, I I CHANGE EC PERFOR
+   NORTON JJ, 2005, INT LAWYER, V39, P15
+   Organization for Economic Cooperation and Development (OECD), 2010, CONS POL TOOLK
+   PARTNOY F, 2009, YALE J REGULATION, V26, P431
+   Partnoy F, 2007, U CINCI LAW REV, V75, P1019
+   Perton M., 2010, CONSUMERIST
+   Phillips M, 2010, WALL STREET J
+   Posner RA, 1997, AM ECON REV, V87, P365
+   Posner RA, 1998, STANFORD LAW REV, V50, P1551, DOI 10.2307/1229305
+   Quinn J., 2009, TELEGRAPH       0618
+   Roe MJ, 2002, J LEGAL STUD, V31, P233, DOI 10.1086/341989
+   Rost K, 2010, CORP GOV-OXFORD, V18, P212, DOI 10.1111/j.1467-8683.2010.00796.x
+   Schipper BC, 2009, J ECON DYN CONTROL, V33, P1981, DOI 10.1016/j.jedc.2009.06.003
+   Scott W.R., 1992, ORG RATIONAL NATURAL
+   Sharma A, 1997, ACAD MANAGE REV, V22, P758, DOI 10.2307/259412
+   Sharma N, 2000, INT J SERV IND MANAG, V11, P470, DOI 10.1108/09564230010360182
+   Smith A., 1776, INQUIRY NATURE CAUSE
+   Smith H. I., 2009, FINANCIAL DICT
+   Stafsudd A, 2009, CORP GOV, V17, P62, DOI 10.1111/j.1467-8683.2008.00721.x
+   Stiglitz J., 2010, FREEFALL AM FREE MAR
+   Story L., 2010, NY TIMES ON LINE EDI
+   Stulz RM, 2003, J FINANC ECON, V70, P313, DOI 10.1016/S0304-405X(03)00173-9
+   Suddaby R, 2007, ACCOUNT ORG SOC, V32, P333, DOI 10.1016/j.aos.2006.08.002
+   Swan W., 2010, TREASURERS EC NOTE
+   Tarr A. A., 1980, CANTERBURY LAW REV, V1, P98
+   Tarr JA, 2010, AUST BUS LAW REV, V38, P332
+   Taylor F. A., 1996, W MITCHELL LAW REV, V22, P1375
+   Titmuss R. M., 1970, GIFT RELATIONSHIP HU
+   Van Bekkum S., 2010, DOWNSIDE RISK AGENCY
+   Van den Bergh R., 2007, RILE WORKING PAPER S
+   Wade C. L., 1994, U CHICAGO LAW J, V25, P199
+   WALLACE JE, 1995, ADMIN SCI QUART, V40, P228, DOI 10.2307/2393637
+   Westbrook J., 2010, BANKS SHOULD DISCLOS
+   Williamson O.E., 1985, EC I CAPITALISM
+   Younkins E. W., 2008, CHAMPIONS FREE SOC I
+NR 120
+TC 11
+Z9 11
+U1 0
+U2 31
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0964-8410
+EI 1467-8683
+J9 CORP GOV-OXFORD
+JI Corp. Gov.
+PD SEP
+PY 2011
+VL 19
+IS 5
+BP 471
+EP 488
+DI 10.1111/j.1467-8683.2011.00883.x
+PG 18
+WC Business; Business, Finance; Management
+SC Business & Economics
+GA 841CJ
+UT WOS:000296489800006
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Kong, R
+   Turvey, CG
+   He, GW
+   Ma, JJ
+   Meagher, P
+AF Kong, Rong
+   Turvey, Calum G.
+   He, Guangwen
+   Ma, Jiujie
+   Meagher, Patrick
+TI Factors influencing Shaanxi and Gansu farmers' willingness to purchase
+   weather insurance
+SO CHINA AGRICULTURAL ECONOMIC REVIEW
+LA English
+DT Article; Proceedings Paper
+CT International Conference on Agricultural Risk and Food Security (ARFS)
+CY JUN 10-12, 2010
+CL Beijing, PEOPLES R CHINA
+SP Chinese Acad Agr Sci (CAAS), Agr Informat Inst, Minist Agr, Key Lab Digital Agr Early-Warning Technol, Int Food Policy Res Inst (IFPRI), UK Dept Int Dev (DFID)
+DE China; Agriculture; Insurance; Risk analysis; Weather insurance;
+   Willingness to pay
+ID CREDIT; RISK
+AB Purpose - China frequently suffers from weather-related natural disasters and weather risk is recognized as a source of wide-spread systemic risk throughout large swaths of China. During these periods farmers' crops are at risk and for a largely poor population few can afford the turmoil to livelihoods that goes along with drought. The purpose of this paper is to investigate the willingness of Shaanxi and Gansu farmers to purchase weather insurance.
+   Design/methodology/approach - This paper is based on surveyed results of 890 farm households in Shaanxi and Gansu provinces. The survey was designed specifically to extract willingness to pay for weather insurance. Factor affecting willingness to pay are explained using linear regression.
+   Findings - The authors find strong evidence that the demand for drought insurance is downward sloping and also believe from the analysis that the demand is fairly elastic. This suggests that price matters and the results suggest that in order for wide spread adoption of weather insurance farmers will require a substantial premium, perhaps in the order of 80 per cent, as is being applied to current crop insurance initiatives. The authors find, as expected, that crop producers would be willing to pay more for insurance than livestock producers, but also find, as one would expect, that the key indicator is risk. Using a Pert distribution, the authors constructed from information gathered from farmers the expected values and standard deviations of gross revenues and yields of the most prominent crop and constructed the coefficient of variation. It was found in both cases that the higher the CV the greater the willingness to pay.
+   Originality/value - The authors believe that this is the first willingness-to-pay study of weather insurance uptake in China. The authors used a unique "experimental" design and investigation technique to determine weather insurance demand.
+C1 [Turvey, Calum G.] Cornell Univ, Dyson Sch Appl Econ & Management, Ithaca, NY 14853 USA.
+   [Kong, Rong] NW A&F Univ, Coll Econ & Management, Yangling, Peoples R China.
+   [He, Guangwen] China Agr Univ, Coll Econ & Management, Beijing 100094, Peoples R China.
+   [Ma, Jiujie] Renmin Univ, Beijing, Peoples R China.
+   [Meagher, Patrick] Univ Maryland, Baltimore, MD 21201 USA.
+RP Turvey, CG (reprint author), Cornell Univ, Dyson Sch Appl Econ & Management, Ithaca, NY 14853 USA.
+EM cgt6@cornell.edu
+OI Turvey, Calum/0000-0001-5812-2957
+CR [Anonymous], 2009, CHINA STAT YB
+   Barrett C.B., 2008, 0702 IRI COL U
+   Boucher SR, 2008, AM J AGR ECON, V90, P409, DOI 10.1111/j.1467-8276.2007.01116.x
+   Carter M. R, 2008, 6 ANN C AG FRANC DEV
+   Chantarat S, 2009, WILLINGNESS PAY INDE
+   Chantarat S, 2008, AGRIC FINANCE REV, V68, P169, DOI 10.1108/00214660880001225
+   Chen Y., 2007, FINANCE THEORY PRACT, V1, P56
+   CIRC, 2010, AGR INS CHIN
+   CIRC, 2010, HEN PROV GOVT ISS TH
+   CPCCC, 2004, 1 OP SOM POL INCR FA
+   Gine X., 2007, 4408 WORLD BANK
+   Gine X, 2009, J DEV ECON, V89, P1, DOI 10.1016/j.jdeveco.2008.09.007
+   Hanson T. R., 2008, Agricultural and Resource Economics Review, V37, P27
+   Manuamorn Ornsaran, 2007, 36 WORLD BANK
+   Martin SW, 2001, J AGR RESOUR ECON, V26, P261
+   Musshoff O, 2008, AGRIC FINANCE REV, V68, P83, DOI 10.1108/00214660880001220
+   Pai JS, 2010, CHINA AGRIC ECON REV, V2, P148, DOI 10.1108/17561371011044270
+   Ran D, 2008, THESIS E CHINA NORMA
+   Richards T. J., 2004, American Journal of Agricultural Economics, V86, P1005, DOI 10.1111/j.0002-9092.2004.00649.x
+   Seth Rajiv, 2009, International Journal of Financial Markets and Derivatives, V1, P49, DOI 10.1504/IJFMD.2009.028944
+   Seth R, 2009, J RISK FINANC, V10, P54, DOI 10.1108/15265940910924490
+   Shaik S., 2008, Journal of Agricultural and Applied Economics, V40, P757
+   Shaik S., 2008, Agricultural and Resource Economics Review, V37, P41
+   Skees JR, 2008, AGRIC FINANCE REV, V68, P197, DOI 10.1108/00214660880001226
+   Turvey C. G., 2001, Review of Agricultural Economics, V23, P333, DOI 10.1111/1467-9353.00065
+   Turvey CG, 2005, AGRIC FINANCE REV, V65, P59, DOI 10.1108/00214660580001167
+   Turvey CG, 2008, AGRIC FINANCE REV, V68, P135, DOI 10.1108/00214660880001223
+   Turvey CG, 2010, CHINA AGR ECON REV, V2, P5, DOI 10.1108/17561371011017469
+   Wang HH, 2010, CHINA AGRIC ECON REV, V2, P212, DOI 10.1108/17561371011044315
+   World Bank, 2005, MAN AGR PROD RISK IN
+   Zhang L, 2008, THESIS U KENTUCKY
+NR 31
+TC 6
+Z9 6
+U1 1
+U2 31
+PU EMERALD GROUP PUBLISHING LIMITED
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1756-137X
+J9 CHINA AGR ECON REV
+JI China Agric. Econ. Rev.
+PY 2011
+VL 3
+IS 4
+BP 423
+EP 440
+DI 10.1108/17561371111192293
+PG 18
+WC Agricultural Economics & Policy; Economics
+SC Agriculture; Business & Economics
+GA 880HT
+UT WOS:000299398900002
+DA 2019-12-28
+ER
+
+PT J
+AU Bollen, NPB
+AF Bollen, Nicolas P. B.
+TI The financial crisis and hedge fund returns
+SO REVIEW OF DERIVATIVES RESEARCH
+LA English
+DT Article
+DE Hedge funds; Financial crisis; Systemic risk
+ID EARNINGS MANAGEMENT; RISK; PERFORMANCE; STRATEGIES
+AB The financial crisis has focused the lens of politicians and regulators on hedge funds as a source of systemic and operational risk in asset markets. We examine the extent to which available data can provide useful information regarding the impact of hedge funds on the financial system. Using data from January 1994 through September 2008, we find dramatic changes in the exposures of hedge funds to risk factors, accompanied by a significant and widespread increase in correlation between hedge fund and factor returns. Lastly, the discontinuity at zero in the cross-sectional distribution of hedge fund returns persists throughout the sample.
+C1 Vanderbilt Univ, Owen Grad Sch Management, Nashville, TN 37203 USA.
+RP Bollen, NPB (reprint author), Vanderbilt Univ, Owen Grad Sch Management, 401 21st Ave S, Nashville, TN 37203 USA.
+EM nick.bollen@owen.vanderbilt.edu
+CR Ackermann C, 1999, J FINANC, V54, P833, DOI 10.1111/0022-1082.00129
+   Agarwal V, 2004, REV FINANC STUD, V17, P63, DOI 10.1093/rfs/hhg044
+   Agarwal V., 2007, WHY IS SANTA SO KIND
+   Agarwal V, 2011, J EMPIR FINANC, V18, P175, DOI 10.1016/j.jempfin.2010.11.008
+   ANG A, 2009, LOCKED LOCKUP VALUIN
+   Asness C, 2001, J PORTFOLIO MANAGE, V28, P6, DOI 10.3905/jpm.2001.319819
+   Bai JS, 1998, ECONOMETRICA, V66, P47, DOI 10.2307/2998540
+   Bollen NPB, 2008, J FINANC QUANT ANAL, V43, P267, DOI 10.1017/S0022109000003525
+   Bollen NPB, 2009, J FINANC, V64, P985, DOI 10.1111/j.1540-6261.2009.01455.x
+   BOLLEN NPB, 2009, J FINANCE IN PRESS
+   Burgstahler D, 1997, J ACCOUNT ECON, V24, P99, DOI 10.1016/S0165-4101(97)00017-7
+   Dechow PM, 2003, REV ACC STUD, V8, P355, DOI 10.1023/A:1024481916719
+   Fung W, 1997, REV FINANC STUD, V10, P275, DOI 10.1093/rfs/10.2.275
+   Fung W, 2004, FINANC ANAL J, V60, P65, DOI 10.2469/faj.v60.n5.2657
+   Fung W, 2001, REV FINANC STUD, V14, P313, DOI 10.1093/rfs/14.2.313
+   Fung W, 2008, J FINANC, V63, P1777, DOI 10.1111/j.1540-6261.2008.01374.x
+   Getmansky M, 2004, J FINANC ECON, V74, P529, DOI 10.1016/j.jfineco.2004.04.001
+   Lowenstein Roger, 2000, GENIUS FAILED
+   Mitchell M, 2001, J FINANC, V56, P2135, DOI 10.1111/0022-1082.00401
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Silverman B., 1986, DENSITY ESTIMATION S
+NR 21
+TC 2
+Z9 2
+U1 0
+U2 12
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1380-6645
+EI 1573-7144
+J9 REV DERIV RES
+JI Rev. Deriv. Res.
+PD JUL
+PY 2011
+VL 14
+IS 2
+SI SI
+BP 117
+EP 135
+DI 10.1007/s11147-011-9064-7
+PG 19
+WC Business, Finance; Economics
+SC Business & Economics
+GA 784ON
+UT WOS:000292166700002
+DA 2019-12-28
+ER
+
+PT J
+AU Collin-Lange, V
+   Benediktsson, K
+AF Collin-Lange, Virgile
+   Benediktsson, Karl
+TI Entering the regime of automobility: car ownership and use by novice
+   drivers in Iceland
+SO JOURNAL OF TRANSPORT GEOGRAPHY
+LA English
+DT Article
+DE Automobility; Modal choice; Novice drivers; Iceland
+ID RISK; PARENTS; CHOICE; CITY
+AB This article investigates how young individuals access the regime of automobility. Instead of looking at the systemic nature of automobility, the article concentrates on its human component. Access to cars by young people in the greater Reykjavik area, and the shift in modal choice that occurs when they start driving, was investigated with a survey among high school students that yielded 553 answers. The results show that young residents in the capital area are fully aware of the costs of car-based automobility. Their near-universal move to cars when they enter driving age reflects the conditions of this regime. Yet they are also ambivalent about their position within the regime. While most previous studies of novice drivers have centred on road safety issues, this study shows the need to consider the cultural and social aspects of young people driving. This can lead to a deeper understanding of the modal shift that perpetuates car-based automobility, which is an important issue for transport planning. (C) 2010 Elsevier Ltd. All rights reserved.
+C1 [Collin-Lange, Virgile; Benediktsson, Karl] Univ Iceland, Dept Geog & Tourism, IS-101 Reykjavik, Iceland.
+RP Collin-Lange, V (reprint author), Univ Iceland, Dept Geog & Tourism, Sturlugata 7, IS-101 Reykjavik, Iceland.
+EM vrc1@hi.is; kben@hi.is
+OI Benediktsson, Karl/0000-0001-5383-9254
+CR Best A. L., 2006, FAST CARS COOL RIDES
+   BIANCHI A, 2003, GENETIC DRIVING BEHA, P655
+   Bohm Steffen, 2006, AUTOMOBILITY
+   *BORG REYKJ, 1988, AD REYKJ 1984 2004
+   *BORG REYKJ, 1997, AD REYKJ 1996 2016
+   BRIEM V, 2004, SALRAENIR PAETTIR UM
+   Dant T, 2004, THEOR CULT SOC, V21, P61, DOI 10.1177/0263276404046061
+   Deery HA, 1999, J SAFETY RES, V30, P225, DOI 10.1016/S0022-4375(99)00018-3
+   Edensor T, 2004, THEOR CULT SOC, V21, P101, DOI 10.1177/0263276404046063
+   Ferguson SA, 2001, ACCIDENT ANAL PREV, V33, P229, DOI 10.1016/S0001-4575(00)00036-1
+   *HAGST ISL, 2009, FOLKSB PR 1000 IB IN
+   *HAGST ISL, 2010, NAMSM ATV ATV VINN
+   *HAGST ISL, 2008, MANNFJ 1 JAN 2008
+   Hausmann R., 2007, GLOBAL GENDER GAP RE
+   Hellinga LA, 2007, J SAFETY RES, V38, P707, DOI 10.1016/j.jsr.2007.10.003
+   Kingham S, 2008, J TRANSP GEOGR, V16, P134, DOI 10.1016/j.jtrangeo.2007.04.002
+   Kingham S, 2004, J TRANSP GEOGR, V12, P301
+   Machin MA, 2008, ACCIDENT ANAL PREV, V40, P541, DOI 10.1016/j.aap.2007.08.010
+   McKnight AJ, 2003, ACCIDENT ANAL PREV, V35, P921, DOI 10.1016/S0001-4575(02)00100-8
+   MOGENSEN A, 2000, UNGIR OKUMENN YFIRLI
+   Muller S, 2008, J TRANSP GEOGR, V16, P342, DOI 10.1016/j.jtrangeo.2007.12.004
+   ODELL T, 2001, CAR CULTURE
+   *OECD OCMT TRANSP, 2006, YOUNG DRIV ROAD SAF
+   *RANNS GREIN, 2004, AHAETT UNGR OK NID R
+   Redshaw Sarah, 2008, CO CARS DRIVING SOCI
+   *REYKJ, 2010, HJ REYKJ
+   *REYKJ, 1966, AD REYK 1962 83
+   *REYKJ SKIP BYGG, 2001, AD REYKJ 2001 2024
+   Reynarsson B, 1999, Plan Perspect, V14, P49, DOI 10.1080/026654399364346
+   Sheller M, 2004, THEOR CULT SOC, V21, P221, DOI 10.1177/0263276404046068
+   Sheller M, 2000, INT J URBAN REGIONAL, V24, P737, DOI 10.1111/1468-2427.00276
+   Thrift N, 2004, THEOR CULT SOC, V21, P41, DOI 10.1177/0263276404046060
+   Urry J, 2004, THEOR CULT SOC, V21, P25, DOI 10.1177/0263276404046059
+   Wilson RJ, 2006, J SAFETY RES, V37, P325, DOI 10.1016/j.jsr.2006.05.002
+NR 34
+TC 14
+Z9 15
+U1 0
+U2 14
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0966-6923
+J9 J TRANSP GEOGR
+JI J. Transp. Geogr.
+PD JUL
+PY 2011
+VL 19
+IS 4
+BP 851
+EP 858
+DI 10.1016/j.jtrangeo.2010.10.012
+PG 8
+WC Economics; Geography; Transportation
+SC Business & Economics; Geography; Transportation
+GA 788EH
+UT WOS:000292427700039
+DA 2019-12-28
+ER

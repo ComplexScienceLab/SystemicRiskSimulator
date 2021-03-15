@@ -1,0 +1,569 @@
+
+PT J
+AU Silva, AF
+AF Silva, Andre F.
+TI Strategic Liquidity Mismatch and Financial Sector Stability
+SO REVIEW OF FINANCIAL STUDIES
+LA English
+DT Article
+ID SOCIAL INTERACTIONS; CAPITAL SHORTFALL; DEPOSIT INSURANCE; MORAL HAZARD;
+   PEER FIRMS; RISK; FRAGILITY; CREATION; BANKING; IDENTIFICATION
+AB This paper examines whether banks strategically incorporate their competitors' liquidity mismatch policies when determining their own and the impact of these collective decisions on financial stability. Using a novel identification strategy exploiting the presence of partially overlapping peer groups, I show that banks' liquidity transformation activity is driven by that of their peers. These correlated decisions are concentrated on the asset side of riskier banks and are asymmetric, with mimicking occurring only when competitors take more risk. Accordingly, this strategic behavior increases banks' default risk and overall systemic risk, highlighting the importance of regulating liquidity risk from a macroprudential perspective.
+C1 [Silva, Andre F.] Fed Reserve Board, Washington, DC USA.
+RP Silva, AF (reprint author), 20th St & Constitut Ave NW, Washington, DC 20551 USA.
+EM andre.f.silva@frb.gov
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya VV, 2016, J FINANC INTERMED, V28, P4, DOI 10.1016/j.jfi.2016.08.004
+   Acharya VV, 2016, REV CORP FINANC STUD, V5, P36, DOI 10.1093/rcfs/cfv006
+   Albuquerque A, 2009, J ACCOUNT ECON, V48, P69, DOI 10.1016/j.jacceco.2009.04.001
+   Albuquerque RL, REV FINANCIAL STUDIE
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2017, ACHIEVING FINANCIAL, V61, P135
+   Allen F, 2004, J EUR ECON ASSOC, V2, P1015, DOI 10.1162/1542476042813805
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Altonji JG, 2005, J POLIT ECON, V113, P151, DOI 10.1086/426036
+   Anginer D, 2017, J FINANC INTERMED, V29, P19, DOI 10.1016/j.jfi.2016.05.004
+   Bai J, 2018, J FINANC, V73, P51, DOI 10.1111/jofi.12591
+   BANERJEE AV, 1992, Q J ECON, V107, P797, DOI 10.2307/2118364
+   BCBS, 2014, BAS 3 NET STABL FUND
+   Beck T, 2018, WORKING PAPER
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   BENCIVENGA VR, 1991, REV ECON STUD, V58, P195, DOI 10.2307/2297964
+   Berger A.N, 2015, BANK LIQUIDITY CREAT
+   Berger AN, 2017, REV FINANC STUD, V30, P3416, DOI 10.1093/rfs/hhx038
+   Berger AN, 2017, J FINANC STABIL, V30, P139, DOI 10.1016/j.jfs.2017.05.001
+   Berger AN, 2017, J BANK FINANC, V81, P1, DOI 10.1016/j.jbankfin.2017.04.005
+   Berger AN, 2016, J FINANC INTERMED, V26, P115, DOI 10.1016/j.jfi.2016.01.001
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Berger AN, 2009, REV FINANC STUD, V22, P3779, DOI 10.1093/rfs/hhn104
+   Bikhchandani S, 1998, J ECON PERSPECT, V12, P151, DOI 10.1257/jep.12.3.151
+   Bizjak J, 2018, WORKING PAPER
+   Bizjak J, 2011, J FINANC ECON, V100, P538, DOI 10.1016/j.jfineco.2011.02.007
+   Blume LE, 2015, J POLIT ECON, V123, P444, DOI 10.1086/679496
+   Bonfim D, INT J CENTRAL BANKIN
+   Bramoulle Y, 2009, J ECONOMETRICS, V150, P41, DOI 10.1016/j.jeconom.2008.12.021
+   Brown CO, 2011, REV FINANC STUD, V24, P1378, DOI 10.1093/rfs/hhp039
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Cai J, 2018, J FINANC STABIL, V34, P105, DOI 10.1016/j.jfs.2017.12.005
+   Calomiris C. W, 2015, WORKING PAPER
+   Cerutti E, 2017, INT J CENT BANK, V13, P477
+   Cetorelli N, 2012, J INT ECON, V88, P299, DOI 10.1016/j.jinteco.2012.05.001
+   Cetorelli N, 2012, J FINANC, V67, P1811, DOI 10.1111/j.1540-6261.2012.01773.x
+   Claessens S, 2015, IMF ECON REV, V63, P868, DOI 10.1057/imfer.2015.38
+   Cornett MM, 2011, J FINANC ECON, V101, P297, DOI 10.1016/j.jfineco.2011.03.001
+   Dam L, 2012, REV FINANC STUD, V25, P2343, DOI 10.1093/rfs/hhs056
+   Davila E, 2018, WORKING PAPER
+   De Giorgi G, 2010, AM ECON J-APPL ECON, V2, P241, DOI 10.1257/app.2.2.241
+   Demirguc-Kunt A, 2015, J FINANC STABIL, V20, P155, DOI 10.1016/j.jfs.2015.08.005
+   Denbee E, 2018, WORKING PAPER
+   Dewatripont M, 2010, BALANCING THE BANKS: GLOBAL LESSONS FROM THE FINANCIAL CRISIS, P1
+   Diamond DW, 2016, HBK ECON, P2263, DOI 10.1016/bs.hesmac.2016.03.011
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Donaldson JR, 2018, J FINANC ECON, V129, P250, DOI 10.1016/j.jfineco.2018.04.011
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Gatev E, 2006, J FINANC, V61, P867, DOI 10.1111/j.1540-6261.2006.00857.x
+   Gatev E, 2009, REV FINANC STUD, V22, P995, DOI 10.1093/rfs/hhm060
+   Graham JR, 2001, J FINANC ECON, V60, P187, DOI 10.1016/S0304-405X(01)00044-7
+   Grennan J, 2019, J FINANC ECON, V131, P549, DOI 10.1016/j.jfineco.2018.01.012
+   Gropp R, 2011, REV FINANC STUD, V24, P2084, DOI 10.1093/rfs/hhq114
+   Hong H, 2014, J FINANC STABIL, V15, P91, DOI 10.1016/j.jfs.2014.09.003
+   Ilic D, 2017, WORKING PAPER
+   IMF, 2011, GLOB FIN STAB REP
+   Jorda O, 2017, WORKING PAPER
+   Kashyap AK, 2002, J FINANC, V57, P33, DOI 10.1111/1540-6261.00415
+   Kaustia M, 2015, J FINANC ECON, V117, P653, DOI 10.1016/j.jfineco.2015.06.006
+   Kleibergen F, 2006, J ECONOMETRICS, V133, P97, DOI 10.1016/j.jeconom.2005.02.011
+   Leary MT, 2014, J FINANC, V69, P139, DOI 10.1111/jofi.12094
+   MANSKI CF, 1993, REV ECON STUD, V60, P531, DOI 10.2307/2298123
+   Mehran H, 2011, REV FINANC STUD, V24, P1019, DOI 10.1093/rfs/hhq022
+   Morrison A, MANAGEMENT SCI
+   Morrison AD, 2005, AM ECON REV, V95, P1548, DOI 10.1257/000282805775014254
+   Ozdenoren E, 2017, REV ECON STUD, V84, P1789, DOI 10.1093/restud/rdw058
+   Phelan G, 2017, J FINANC, V72, P1253, DOI 10.1111/jofi.12493
+   RAJAN RG, 1994, Q J ECON, V109, P399, DOI 10.2307/2118468
+   Ratnovski L, 2009, J FINANC INTERMED, V18, P541, DOI 10.1016/j.jfi.2007.08.001
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Sanderson E, 2016, J ECONOMETRICS, V190, P212, DOI 10.1016/j.jeconom.2015.06.004
+   Segura A, 2017, REV FINANC STUD, V30, P3538, DOI 10.1093/rfs/hhx054
+   Song F, 2007, REV FINANC STUD, V20, P2129, DOI 10.1093/rfs/hhm015
+   Stock J. H, 2005, IDENTIFICATION INFER
+   Tirole J, 2011, J ECON LIT, V49, P287, DOI 10.1257/jel.49.2.287
+   Uchida H, 2007, J FINANC INTERMED, V16, P555, DOI 10.1016/j.jfi.2007.03.007
+   Vives X, 2014, REV FINANC STUD, V27, P3547, DOI 10.1093/rfs/hhu064
+NR 85
+TC 0
+Z9 0
+U1 0
+U2 0
+PU OXFORD UNIV PRESS INC
+PI CARY
+PA JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
+SN 0893-9454
+EI 1465-7368
+J9 REV FINANC STUD
+JI Rev. Financ. Stud.
+PD DEC
+PY 2019
+VL 32
+IS 12
+BP 4696
+EP 4733
+DI 10.1093/rfs/hhz044
+PG 38
+WC Business, Finance; Economics
+SC Business & Economics
+GA JU5UD
+UT WOS:000501740700004
+DA 2019-12-28
+ER
+
+PT J
+AU Antoch, J
+   Hanousek, J
+   Huskova, M
+   Tresl, J
+AF Antoch, Jaromir
+   Hanousek, Jan
+   Huskova, Marie
+   Tresl, Jiri
+TI Detection of Changes in Panel Data: Change in Fama-French Model
+   Parameters for Selected European Stocks During the Financial Crisis
+SO POLITICKA EKONOMIE
+LA Czech
+DT Article
+DE asset pricing; change point detection; Fama-French four-factor model;
+   sum-type test statistics; panel data
+ID CROSS-SECTION; STRUCTURAL-CHANGE; RISK; RETURNS; MOMENTUM; BREAKS; TESTS
+AB This study identifies systemic break points in a factor pricing model for firms traded on European stock markets around the financial crisis. The aim is to shed light on the systemic risk transfer in explaining average stock returns in the fragmented European exchanges. Our analysis takes advantage of recent development in econometrics and employs models which enable 'automatic" detection of factor model break points. We find that Western European exchanges are more closely integrated with American financial markets than Northern European stock exchanges and those in the United Kingdom. However, all exchanges were eventually affected by the systemic shock. The results of this study provide insight into immunisation strategies for portfolios created from European stocks.
+C1 [Antoch, Jaromir; Hanousek, Jan; Huskova, Marie; Tresl, Jiri] CEPR, Vvi, Spolecne Pracoviste UK Praze NHU AV CR, CERGE EI, London, England.
+   [Tresl, Jiri] Cent Michigan Univ, Mt Pleasant, MI 48859 USA.
+RP Tresl, J (reprint author), CEPR, Vvi, Spolecne Pracoviste UK Praze NHU AV CR, CERGE EI, London, England.; Tresl, J (reprint author), Cent Michigan Univ, Mt Pleasant, MI 48859 USA.
+EM antoch@karlin.mff.cuni.cz; jan.hanousek@cerge-ei.cz;
+   huskova@karlin.mff.cuni.cz; tresl1j@cmich.edu
+CR Andreou E., 2009, HDB FINANCIAL TIME S, P839, DOI DOI 10.1007/978-3-540-71297-8
+   ANDREWS DWK, 1993, ECONOMETRICA, V61, P821, DOI 10.2307/2951764
+   Antoch J., 2018, ECON REV, DOI [10.1080/07474938.2018.1454378.Vtisku, DOI 10.1080/07474938.2018.1454378.VTISKU]
+   Antoch J., 1995, J NONPARAMETR STAT, V5, P123, DOI DOI 10.1080/10485259508832639
+   Antoch J., 1998, NONPARAMETRICS ASYMP, P533
+   Antoch J, 2008, METRIKA, V68, P1, DOI 10.1007/s00184-007-0139-2
+   Antoch J, 2017, STATISTIKA, V97, P32
+   Antoch J, 2013, COMPUTATION STAT, V28, P2161, DOI 10.1007/s00180-013-0401-1
+   Asness CS, 2013, J FINANC, V68, P929, DOI 10.1111/jofi.12021
+   Baltagi BH, 2016, J ECONOMETRICS, V191, P176, DOI 10.1016/j.jeconom.2015.03.048
+   Banegas A, 2013, J FINANC ECON, V108, P699, DOI 10.1016/j.jfineco.2013.01.008
+   BANZ RW, 1981, J FINANC ECON, V9, P3, DOI 10.1016/0304-405X(81)90018-0
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Carhart MM, 1997, J FINANC, V52, P57, DOI 10.2307/2329556
+   CHAN LKC, 1991, J FINANC, V46, P1739, DOI 10.2307/2328571
+   Chiah M, 2016, INT REV FINANC, V16, P595, DOI 10.1111/irfi.12099
+   Chui ACW, 2010, J FINANC, V65, P361, DOI 10.1111/j.1540-6261.2009.01532.x
+   Chui M. K. F., 2010, BIS Q REV, P34
+   De Haas R, 2012, AM ECON REV, V102, P231, DOI 10.1257/aer.102.3.231
+   DEBONDT WFM, 1985, J FINANC, V40, P793, DOI 10.1111/j.1540-6261.1985.tb05004.x
+   Elbannan M, 2015, INT J EC FINANCE, V7, P216, DOI DOI 10.5539/IJEF.V7N1P216
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   Fama EF, 2004, J ECON PERSPECT, V18, P25, DOI 10.1257/0895330042162430
+   FAMA EF, 1992, J FINANC, V47, P427, DOI 10.2307/2329112
+   Fama EF, 2017, J FINANC ECON, V123, P441, DOI 10.1016/j.jfineco.2016.11.004
+   Fama EF, 2014, AM ECON REV, V104, P1467, DOI 10.1257/aer.104.6.1467
+   FRENCH KR, 1980, J FINANC ECON, V8, P55, DOI 10.1016/0304-405X(80)90021-5
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Griffin JM, 2003, J FINANC, V58, P2515, DOI 10.1046/j.1540-6261.2003.00614.x
+   Haldane A.G., 2009, RETHINKING FINANCIAL
+   Hansen BE, 2001, J ECON PERSPECT, V15, P117, DOI 10.1257/jep.15.4.117
+   Horvath L, 2017, ECONOMET THEOR, V33, P366, DOI 10.1017/S0266466615000468
+   Horvath L, 2014, TEST-SPAIN, V23, P219, DOI 10.1007/s11749-014-0368-4
+   Horvath L, 2012, J TIME SER ANAL, V33, P631, DOI 10.1111/j.1467-9892.2012.00796.x
+   Hsiao C, 2007, TEST-SPAIN, V16, P1, DOI 10.1007/s11749-007-0046-x
+   Jagannathan R, 1996, J FINANC, V51, P3, DOI 10.2307/2329301
+   JEGADEESH N, 1993, J FINANC, V48, P65, DOI 10.1111/j.1540-6261.1993.tb04702.x
+   Kao CW, 2012, ECONOMET REV, V31, P390, DOI 10.1080/07474938.2011.607991
+   LAKONISHOK J, 1994, J FINANC, V49, P1541, DOI 10.2307/2329262
+   REINGANUM MR, 1983, J FINANC ECON, V12, P89, DOI 10.1016/0304-405X(83)90029-6
+NR 44
+TC 0
+Z9 0
+U1 2
+U2 2
+PU VYSOKA SKOLA EKONOMICKA
+PI PRAGUE
+PA NAM W CHURCHILLA 4, PRAGUE 13067, CZECH REPUBLIC
+SN 0032-3233
+J9 POLIT EKON
+JI Polit. Ekon.
+PY 2019
+VL 67
+IS 1
+BP 3
+EP 19
+DI 10.18267/j.polek.1233
+PG 17
+WC Economics; Political Science
+SC Business & Economics; Government & Law
+GA HO6ON
+UT WOS:000461049500001
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Scharding, T
+AF Scharding, Tobey
+TI Structured Finance and the Social Contract: How Tranching Challenges
+   Contractualist Approaches to Financial Risk
+SO BUSINESS ETHICS QUARTERLY
+LA English
+DT Article
+DE contractualism; ethics of risk; systemic risks of ruin; third-party
+   risks; structured finance; collateralized debt obligations
+ID HYPOTHETICAL CONSENT; ETHICS; CRITERIA; LEVERAGE
+AB Many ethicists argue that contract theory offers the most promising strategy for regulating risks. I challenge the adequacy of the contractualist approach for evaluating the complicated, novel risks associated with some structured financial products, particularly focusing on risks to third parties. Structured financial products like collateralized debt obligations (CDOs) divide a pool of financial assets into risk tranches organized from least to most risky. Investors purchase various tranches based on their individual risk-and-return preferences. Whereas contract theory holds that investment risks are ethically permitted (roughly) when everyone-including both parties directly involved in the investments and third parties-consents to them, structured financial products like CDOs show that even risks to which everyone consents are ethically problematic when they involve systemic risks of ruin.
+C1 [Scharding, Tobey] Rutgers State Univ, New Brunswick, NJ 08901 USA.
+RP Scharding, T (reprint author), Rutgers State Univ, New Brunswick, NJ 08901 USA.
+CR Arnold DG, 2010, BUS ETHICS Q, V20, P559, DOI 10.5840/beq201020438
+   Audi R, 2007, BUS ETHICS Q, V17, P593, DOI 10.5840/beq20071741
+   Bennett Michael, 2011, N Y U J L BUS, V7, P811
+   Bentham Jeremy, 1843, WORKS J BENTHAM
+   Bernanke B. S, 2006, FED RES BANK ATL 200
+   Boatright JR, 2014, ETHICS IN FINANCE
+   Bowie N. E., 1999, BUSINESS ETHICS KANT
+   Brinkmann J, 2013, J BUS ETHICS, V112, P567, DOI 10.1007/s10551-012-1558-1
+   Chakrabarty S, 2015, J BUS ETHICS, V126, P487, DOI 10.1007/s10551-013-1963-0
+   Christoffersen PF, 2012, ELEMENTS OF FINANCIAL RISK MANAGEMENT, 2ND EDITION, P1
+   Donaldson T., 1999, TIES BIND SOCIAL CON
+   Donaldson T, 1986, BUSINESS PROFESSIONA, V5, P31, DOI [10.5840/bpej198653/42, DOI 10.5840/BPEJ198653/42]
+   Donaldson T, 2008, BUS ETHICS Q, V18, P405, DOI 10.5840/beq200818329
+   Enoch D, 2017, ETHICS, V128, P6, DOI 10.1086/692939
+   Fried Barbara H., 2012, J ETHICS, V16, P39, DOI DOI 10.1007/S10892-011-9113-3
+   Hansson SO, 2003, ERKENNTNIS, V59, P291, DOI 10.1023/A:1026005915919
+   Hansson SO, 2009, SYNTHESE, V168, P423, DOI 10.1007/s11229-008-9444-1
+   Harsanyi JC, 1955, J POLIT ECON, V63, P309, DOI 10.1086/257678
+   Hayenhjelm M, 2012, EUR J PHILOS, V20, pE26, DOI 10.1111/j.1468-0378.2011.00482.x
+   Hull J. C., 2015, RISK MANAGEMENT FINA
+   IMF, 2008, GLOB FIN STAB REP CO
+   James A, 2012, LEG THEOR, V18, P263, DOI 10.1017/S135232521200002X
+   KAMM FM, 1989, PHILOS STUD, V57, P227, DOI 10.1007/BF00372696
+   Knight F.H., 1921, RISK UNCERTAINTY PRO
+   Mian A., 2014, HOUSE DEBT THEY YOU
+   Mian A, 2010, IMF ECON REV, V58, P74, DOI 10.1057/imfer.2010.2
+   Nielsen RP, 2010, BUS ETHICS Q, V20, P299, DOI 10.5840/beq201020222
+   Nozick R., 1974, ANARCHY STATE UTOPIA
+   Oberdiek J, 2004, RUTGERS LAW J, V36, P199
+   Oberdiek J, 2009, LAW PHILOS, V28, P367, DOI 10.1007/s10982-008-9039-5
+   Petrick J. A., 2011, J BUS ETHICS, V99, P93, DOI DOI 10.1007/S10551-011-1157-6
+   RAWLS J, 1980, J PHILOS, V77, P515, DOI 10.2307/2025790
+   Ryan LV, 2010, BUS ETHICS Q, V20, P673, DOI 10.5840/beq201020442
+   Scalet S, 2012, J BUS ETHICS, V111, P477, DOI 10.1007/s10551-012-1212-y
+   Scanlon T.M., 1998, WHAT WE OWE EACH OTH
+   Scharding TK, 2015, BUS ETHICS Q, V25, P243, DOI 10.1017/beq.2015.17
+   Shiller R. J., 2012, FINANCE GOOD SOC
+   Smith A., 1759, THEORY MORAL SENTIME
+   Stark CA, 2000, J PHILOS, V97, P313, DOI 10.2307/2678406
+   US Government, 2010, FIN CRIS INQ REP FIN
+   Wallison P. J., 2011, FINANCIAL CRISIS INQ, P441
+NR 41
+TC 0
+Z9 0
+U1 2
+U2 9
+PU CAMBRIDGE UNIV PRESS
+PI NEW YORK
+PA 32 AVENUE OF THE AMERICAS, NEW YORK, NY 10013-2473 USA
+SN 1052-150X
+EI 2153-3326
+J9 BUS ETHICS Q
+JI Bus. Ethics Q.
+PD JAN
+PY 2019
+VL 29
+IS 1
+BP 1
+EP 24
+DI 10.1017/beq.2018.18
+PG 24
+WC Business; Ethics
+SC Business & Economics; Social Sciences - Other Topics
+GA HG3VF
+UT WOS:000454902300001
+DA 2019-12-28
+ER
+
+PT J
+AU Dorobantu, S
+   Mullner, J
+AF Dorobantu, Sinziana
+   Muellner, Jakob
+TI Debt-side governance and the geography of project finance syndicates
+SO JOURNAL OF CORPORATE FINANCE
+LA English
+DT Article
+DE Loan syndication; Governance; Project finance; Political risk; Systemic
+   risk; Geographic distance
+ID INTERNATIONAL EXPANSION; INFORMATION ASYMMETRY; ALLIANCE FORMATION;
+   CAPITAL STRUCTURE; ENTRY STRATEGIES; JAPANESE FIRMS; SYSTEMIC RISK;
+   FLIGHT HOME; DISTANCE; CONTRACTS
+AB We build on Williamson's (1988) emphasis on debt as a mechanism of governance to argue and show that the geographic composition of banking syndicates financing infrastructure investments is driven in part by the level of host-country (i.e. local) political risk and, in part, by the level of systemic risk in global financial markets. Geographically dispersed syndicates pool more external leverage over host-country stakeholders, allowing them to mitigate host-country political risk, but are also more difficult to reorganize internally if circumstances demand it. We therefore propose that the geographic composition of a syndicate reflects a trade-off between the syndicate's external political leverage and its ability to reorganize internally. Using data on 5928 large-scale infrastructure projects in 160 countries, we show that syndicates are more geographically dispersed when an investment is exposed to high levels of political risk in the host country. We also identify systemic risk in lending markets as an impediment to creating such debt-side governance, and show that syndicates are more geographically concentrated when they finance projects in years with increased systemic risk (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Dorobantu, Sinziana] NYU, Leonard N Stern Sch Business, 40 West Fourth St 707, New York, NY 10012 USA.
+   [Muellner, Jakob] Vienna Univ Econ & Business, Welthandelspl 1, A-1020 Vienna, Austria.
+RP Mullner, J (reprint author), Vienna Univ Econ & Business, Welthandelspl 1, A-1020 Vienna, Austria.
+EM sdoroban@stern.nyu.edu; jakob.muellner@wu.ac.at
+RI Mullner, Jakob/AAD-2698-2019
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Agarwal S, 2010, REV FINANC STUD, V23, P2757, DOI 10.1093/rfs/hhq001
+   Agmon T, 2006, J INT BUS STUD, V37, P575, DOI 10.1057/palgrave.jibs.8400222
+   Alexandre H, 2014, J FINANC SERV RES, V46, P99, DOI 10.1007/s10693-013-0172-4
+   [Anonymous], 2017, ECONOMIST
+   Asness CS, 2013, J FINANC, V68, P929, DOI 10.1111/jofi.12021
+   Bell GG, 2007, ORGAN SCI, V18, P955, DOI 10.1287/orsc.1070.0308
+   Bell RG, 2012, J INT BUS STUD, V43, P107, DOI 10.1057/jibs.2011.55
+   Benjamin Esty, 2001, J APPL CORPORATE FIN, V14, P80
+   Berry H, 2010, J INT BUS STUD, V41, P1460, DOI 10.1057/jibs.2010.28
+   Bonetti V, 2010, REV FINANC ECON, V19, P60, DOI 10.1016/j.rfe.2009.11.002
+   Bowe M, 2010, INT BUS REV, V19, P435, DOI 10.1016/j.ibusrev.2010.01.005
+   Brealey R.A., 1996, J APPL CORPORATE FIN, V9, P25, DOI DOI 10.1111/J.1745-6622.1996.TB00296.X
+   Buch Claudia M., 2005, REV INT ECON, V13, P787, DOI DOI 10.1111/11467-9396.2005.00537.X
+   Byoun S, 2014, J CORP FINANC, V26, P124, DOI 10.1016/j.jcorpfin.2014.03.003
+   Byoun S, 2013, J FINANC QUANT ANAL, V48, P549, DOI 10.1017/S0022109013000082
+   Cai J., 2017, DIVERSIFICATION SPEC
+   Chakrabarti A, 2013, ORGAN SCI, V24, P1805, DOI 10.1287/orsc.1120.0811
+   CHOWDHRY B, 1991, REV FINANC STUD, V4, P121, DOI 10.1093/rfs/4.1.121
+   Cihak M., 2012, POLICY REWORKING P
+   Cohen-Cole E., 2010, SYSTEMIC RISK NETWOR
+   Corielli F, 2010, J MONEY CREDIT BANK, V42, P1295, DOI 10.1111/j.1538-4616.2010.00342.x
+   De Bandt O., 2000, SYSTEMIC RISK SURVEY
+   Delios A, 2003, STRATEGIC MANAGE J, V24, P1153, DOI 10.1002/smj.355
+   Delios A, 2000, ACAD MANAGE J, V43, P305, DOI 10.2307/1556397
+   Djankov S, 2007, J FINANC ECON, V84, P299, DOI 10.1016/j.jfineco.2006.03.004
+   Ellmers B., 2016, EVOLVING NATURE DEV, P1
+   Esty B. C., 2000, WORKING PAPER
+   Esty B. C., 2004, EUROPEAN FINANCIAL M, V10, P213, DOI DOI 10.1111/J.1354-7798.2004.00247.X
+   Esty B. C., 2001, WORKING PAPER
+   Esty B. C., 2011, WORKING PAPER
+   Esty BC, 2003, J FINANC QUANT ANAL, V38, P37, DOI 10.2307/4126763
+   Fisman R, 2001, AM ECON REV, V91, P1095, DOI 10.1257/aer.91.4.1095
+   Fisman R, 2015, REV ECON STUD, V82, P1346, DOI 10.1093/restud/rdv020
+   Focarelli D, 2008, J MONETARY ECON, V55, P335, DOI 10.1016/j.jmoneco.2007.11.004
+   Francois P, 2007, FINAN REV, V42, P227, DOI 10.1111/j.1540-6288.2007.00169.x
+   Garcia-Canal E, 2002, J WORLD BUS, V37, P91, DOI 10.1016/S1090-9516(02)00069-X
+   Garcia-Herrero A, 2013, J BANK FINANC, V37, P2560, DOI 10.1016/j.jbankfin.2013.02.024
+   Gatti S, 2013, FINANC MANAGE, V42, P1, DOI 10.1111/j.1755-053X.2012.01210.x
+   Gerlach S., 2009, DEFINING MEASURING S
+   Giannetti M, 2012, AM ECON REV, V102, P219, DOI 10.1257/aer.102.3.219
+   Giannetti M, 2012, J FINANC ECON, V104, P23, DOI 10.1016/j.jfineco.2011.12.006
+   Giannetti M, 2012, MANAGE SCI, V58, P365, DOI 10.1287/mnsc.1110.1378
+   Grant M., 1997, JPN RAILWAY TRANSP R, P46
+   Gulamhussen MA, 2016, J BANK FINANC, V72, pS6, DOI 10.1016/j.jbankfin.2016.07.007
+   Gulati R, 1995, ADMIN SCI QUART, V40, P619, DOI 10.2307/2393756
+   Gulati R, 2000, STRATEGIC MANAGE J, V21, P203, DOI 10.1002/(SICI)1097-0266(200003)21:3<203::AID-SMJ102>3.0.CO;2-K
+   Gulati R, 1998, STRATEGIC MANAGE J, V19, P293, DOI 10.1002/(SICI)1097-0266(199804)19:4<293::AID-SMJ982>3.0.CO;2-M
+   Gulati R, 1998, ADMIN SCI QUART, V43, P781, DOI 10.2307/2393616
+   Guler I, 2010, ACAD MANAGE J, V53, P390, DOI 10.5465/AMJ.2010.49389027
+   Habib MA, 1999, J FINANC, V54, P693, DOI 10.1111/0022-1082.00122
+   Hainz C, 2006, PROJECT FINANCE RISK
+   Hainz C, 2003, WORKING PAPER
+   Hainz C, 2012, J FINANC INTERMED, V21, P287, DOI 10.1016/j.jfi.2011.10.002
+   HECKMAN JJ, 1979, ECONOMETRICA, V47, P153, DOI 10.2307/1912352
+   Henisz W. J., 2000, ECON POLIT-OXFORD, V12, P1, DOI DOI 10.1111/1468-0343.00066
+   Henisz WJ, 2000, J LAW ECON ORGAN, V16, P334, DOI 10.1093/jleo/16.2.334
+   Henisz WJ, 2011, GLOBAL PROJECTS I PO
+   Hoffman S. L, 2007, LAW BUSINESS INT PRO
+   Hofstede G., 1980, CULTURES CONSEQUENCE
+   IJGlobal, 2017, FULL YEAR 2016 GLOB
+   Ingram P, 2005, AM J SOCIOL, V111, P824, DOI 10.1086/497350
+   Inoue CFKV, 2013, ACAD MANAGE J, V56, P1775, DOI 10.5465/amj.2012.0406
+   James B. E., 2013, ACAD MANAG P, V2013, P15795, DOI [10.5465/AMBPP.2013.91, DOI 10.5465/AMBPP.2013.91]
+   KLEIN B, 1978, J LAW ECON, V21, P297, DOI 10.1086/466922
+   Krugman P., 1985, INT DEBT DEV COUNTRI, P79
+   Lavie D, 2008, ORGAN SCI, V19, P623, DOI 10.1287/orsc.1070.0341
+   Lee SW, 2004, FINANC MANAGE, V33, P107
+   LIPSON C, 1981, INT ORGAN, V35, P603, DOI 10.1017/S0020818300034251
+   Liu Y, 2016, ACAD MANAGE J, V59, P1407, DOI 10.5465/amj.2013.0835
+   Makino S, 1996, J INT BUS STUD, V27, P905, DOI 10.1057/palgrave.jibs.8490156
+   Mayer T., 2011, 25 CEPII
+   Meyer KE, 2009, STRATEGIC MANAGE J, V30, P61, DOI 10.1002/smj.720
+   Mian A, 2006, J FINANC, V61, P1465, DOI 10.1111/j.1540-6261.2006.00878.x
+   Mora N, 2015, J RISK INSUR, V82, P205, DOI 10.1111/jori.12020
+   Moran T. H., 2004, INT POLITICAL RISK M
+   Mullner J, 2016, J WORLD BUS, V51, P800, DOI 10.1016/j.jwb.2016.07.011
+   Nevitt P. K., 2000, PROJECT FINANCING
+   Orr RJ, 2008, J INT BUS STUD, V39, P562, DOI 10.1057/palgrave.jibs.8400370
+   Owen S, 2013, J BANK FINANC, V37, P3890, DOI 10.1016/j.jbankfin.2013.06.008
+   Paligorova T., 2015, NONBANK LOAN INVESTO
+   Perrings C, 2001, J REGIONAL SCI, V41, P23, DOI 10.1111/0022-4146.00205
+   Petersen MA, 2002, J FINANC, V57, P2533, DOI 10.1111/1540-6261.00505
+   Pichler P, 2001, J FINANC, V56, P2237, DOI 10.1111/0022-1082.00404
+   Presbitero AF, 2014, J MONEY CREDIT BANK, V46, P53, DOI 10.1111/jmcb.12078
+   Qian J, 2007, J FINANC, V62, P2803, DOI 10.1111/j.1540-6261.2007.01293.x
+   Ragozzino R, 2011, STRATEGIC MANAGE J, V32, P876, DOI 10.1002/smj.914
+   Reeb DN, 1998, J INT BUS STUD, V29, P263, DOI 10.1057/palgrave.jibs.8490036
+   Reuer JJ, 2014, ORGAN SCI, V25, P283, DOI 10.1287/orsc.1120.0805
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   Siegel J, 2007, ADMIN SCI QUART, V52, P621, DOI 10.2189/asqu.52.4.621
+   SKRONDAL A, 2004, INTER DISC, P1
+   Sorenson O, 2001, AM J SOCIOL, V106, P1546, DOI 10.1086/321301
+   Sorenson O, 2008, ADMIN SCI QUART, V53, P266, DOI 10.2189/asqu.53.2.266
+   Sufi A, 2007, J FINANC, V62, P629, DOI 10.1111/j.1540-6261.2007.01219.x
+   Swoboda A. K, 1985, INT DEBT DEV COUNTRI, P151
+   Vaaler PM, 2008, ASIA PAC J MANAG, V25, P25, DOI 10.1007/s10490-007-9045-4
+   Vaaler PM, 2009, J INT BUS STUD, V40, P621, DOI 10.1057/jibs.2008.104
+   Vernon R., 1981, MANAG INT RISK, P191
+   Vilanova L., 2005, FINANCIAL DISTRESS L
+   WILLIAMSON OE, 1988, J FINANC, V43, P567, DOI 10.2307/2328184
+   WOLF C, 1973, AM ECON REV, V63, P52
+   Woodhouse E.J., 2006, N Y U J INT LAW POLI, V38, P121
+   World Bank, 2016, SOV DEBT SER
+   Zaheer A, 2005, STRATEGIC MANAGE J, V26, P809, DOI 10.1002/smj.482
+   Zhu HJ, 2014, ADMIN SCI QUART, V59, P599, DOI 10.1177/0001839214545277
+NR 108
+TC 1
+Z9 1
+U1 11
+U2 11
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0929-1199
+EI 1872-6313
+J9 J CORP FINANC
+JI J. Corp. Financ.
+PD AUG
+PY 2019
+VL 57
+SI SI
+BP 161
+EP 179
+DI 10.1016/j.jcorpfin.2017.12.022
+PG 19
+WC Business, Finance
+SC Business & Economics
+GA IH7JH
+UT WOS:000474679400009
+DA 2019-12-28
+ER
+
+PT J
+AU Asimit, V
+   Peng, L
+   Wang, RD
+   Yu, A
+AF Asimit, Vali
+   Peng, Liang
+   Wang, Ruodu
+   Yu, Alex
+TI An efficient approach to quantile capital allocation and sensitivity
+   analysis
+SO MATHEMATICAL FINANCE
+LA English
+DT Article
+DE bootstrap; capital allocation; expected shortfall; nonparametric
+   estimation; sensitivity analysis; value-at-risk; G22; G32
+ID NONPARAMETRIC-ESTIMATION; LIKELIHOOD ESTIMATORS; AXIOMATIC APPROACH;
+   MODEL UNCERTAINTY; RISK; ROBUSTNESS; PORTFOLIOS; SHORTFALL
+AB In various fields of applications such as capital allocation, sensitivity analysis, and systemic risk evaluation, one often needs to compute or estimate the expectation of a random variable, given that another random variable is equal to its quantile at some prespecified probability level. A primary example of such an application is the Euler capital allocation formula for the quantile (often called the value-at-risk), which is of crucial importance in financial risk management. It is well known that classic nonparametric estimation for the above quantile allocation problem has a slower rate of convergence than the standard rate. In this paper, we propose an alternative approach to the quantile allocation problem via adjusting the probability level in connection with an expected shortfall. The asymptotic distribution of the proposed nonparametric estimator of the new capital allocation is derived for dependent data under the setup of a mixing sequence. In order to assess the performance of the proposed nonparametric estimator, AR-GARCH models are proposed to fit each risk variable, and further, a bootstrap method based on residuals is employed to quantify the estimation uncertainty. A simulation study is conducted to examine the finite sample performance of the proposed inference. Finally, the proposed methodology of quantile capital allocation is illustrated for a financial data set.
+C1 [Asimit, Vali] City Univ London, London, England.
+   [Peng, Liang; Yu, Alex] Georgia State Univ, Atlanta, GA 30303 USA.
+   [Wang, Ruodu] Univ Waterloo, Waterloo, ON, Canada.
+RP Peng, L (reprint author), Georgia State Univ, Dept Risk Management & Insurance, 35 Broad St, Atlanta, GA 30303 USA.
+EM lpeng@gsu.edu
+FU Simons Foundation; Natural Sciences and Engineering Research Council of
+   CanadaNatural Sciences and Engineering Research Council of Canada
+   [RGPIN-2018-03823/RGPAS-2018-522590]
+FX We thank two reviewers and the coeditor, Professor Vadim Linetsky, for
+   helpful comments. Peng's research was partly supported by the Simons
+   Foundation. Wang acknowledges financial support form the Natural
+   Sciences and Engineering Research Council of Canada
+   (RGPIN-2018-03823/RGPAS-2018-522590).
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   BCBS, 2016, STAND MIN CAP REQ MA
+   Berghaus B, 2017, BERNOULLI, V23, P743, DOI 10.3150/15-BEJ751
+   Bernard C, 2015, J BANK FINANC, V58, P166, DOI 10.1016/j.jbankfin.2015.03.007
+   Billingsley P., 1999, CONVERGENCE PROBABIL
+   Cai J, 2018, MATH FINANC, V28, P29, DOI 10.1111/mafi.12140
+   CAMBANIS S, 1981, J MULTIVARIATE ANAL, V11, P368, DOI 10.1016/0047-259X(81)90082-8
+   Chen C, 2013, MANAGE SCI, V59, P1373, DOI 10.1287/mnsc.1120.1631
+   Chen XH, 2006, J ECONOMETRICS, V130, P307, DOI 10.1016/j.jeconom.2005.03.004
+   Cheng MY, 2002, STAT SINICA, V12, P1043
+   Cont R, 2010, QUANT FINANC, V10, P593, DOI 10.1080/14697681003685597
+   Denault M., 2001, J RISK, V4, P1, DOI DOI 10.21314/JOR.2001.053
+   EIOPA, 2011, EIOPABOS11028
+   Embrechts P, 2015, FINANC STOCH, V19, P763, DOI 10.1007/s00780-015-0273-z
+   Embrechts P, 2014, RISKS, V2, P25, DOI 10.3390/risks2010025
+   Embrechts P, 2013, J BANK FINANC, V37, P2750, DOI 10.1016/j.jbankfin.2013.03.014
+   Emmer S, 2015, J RISK, V18, P31, DOI 10.21314/JOR.2015.318
+   Fermanian J-D, 2003, J RISK, V5, P25, DOI DOI 10.2139/SSRN.372142
+   Fermanian JD, 2005, J BANK FINANC, V29, P927, DOI 10.1016/j.jbankfin.2004.08.007
+   Fissler T, 2016, ANN STAT, V44, P1680, DOI 10.1214/16-AOS1439
+   Francq C, 2004, BERNOULLI, V10, P605, DOI 10.3150/bj/1093265632
+   Fu MC, 2009, MANAGE SCI, V55, P2019, DOI 10.1287/mnsc.1090.1090
+   Glasserman P, 2005, MANAGE SCI, V51, P1643, DOI 10.1287/mnsc.1050.0415
+   Glasserman P, 2005, J COMPUT FINANC, V9, P1
+   Gourieroux C., 2000, J EMPIR FINANC, V7, P225, DOI DOI 10.1016/S0927-5398(00)00011-6
+   HALL P, 1990, J MULTIVARIATE ANAL, V32, P177, DOI 10.1016/0047-259X(90)90080-2
+   Hong LJ, 2009, OPER RES, V57, P118, DOI 10.1287/opre.1080.0531
+   Hong LJ, 2009, MANAGE SCI, V55, P281, DOI 10.1287/mnsc.1080.0901
+   Huber P.J., 2009, WILEY SERIES PROBABI
+   IAIS, 2014, CONS DOC RISK BAS GL
+   Jiang GX, 2015, OPER RES, V63, P435, DOI 10.1287/opre.2015.1356
+   Kalkbrener M, 2005, MATH FINANC, V15, P425, DOI 10.1111/j.1467-9965.2005.00227.x
+   Kou S, 2016, OPER RES, V64, P1056, DOI 10.1287/opre.2016.1539
+   Kou S, 2013, MATH OPER RES, V38, P393, DOI 10.1287/moor.1120.0577
+   Kratschmer V, 2014, FINANC STOCH, V18, P271, DOI 10.1007/s00780-013-0225-4
+   LANDSMAN Z.M., 2003, N AM ACTUARIAL J, V7, P55, DOI DOI 10.1080/10920277.2003.10596118
+   Ling SQ, 2007, J ECONOMETRICS, V140, P849, DOI 10.1016/j.jeconom.2006.07.016
+   Liu GW, 2009, NAV RES LOG, V56, P511, DOI 10.1002/nav.20358
+   McNeil A. J., 2015, QUANTITATIVE RISK MA
+   Nelsen R.B., 2006, INTRO COPULAS
+   Pesenti SM, 2016, DEPEND MODEL, V4, P348, DOI 10.1515/demo-2016-0020
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Sandstrom A., 2010, HDB SOLVENCY ACTUARI
+   Scaillet O, 2004, MATH FINANC, V14, P115, DOI 10.1111/j.0960-1627.2004.00184.x
+   SCAILLET O, 2005, INS RISK MANAGE J, V74, P639
+   Siller T, 2013, QUANT FINANC, V13, P1915, DOI 10.1080/14697688.2012.742203
+   Sklar M., 1959, FONCTIONS REPARTITIO, V8, P229
+   Tasche D, 2009, QUANT FINANC, V9, P581, DOI 10.1080/14697680802620599
+   Tsanakas A, 2016, RISK ANAL, V36, P30, DOI 10.1111/risa.12434
+   Zhu K, 2011, ANN STAT, V39, P2131, DOI 10.1214/11-AOS895
+   Ziegel JF, 2016, MATH FINANC, V26, P901, DOI 10.1111/mafi.12080
+NR 53
+TC 1
+Z9 1
+U1 5
+U2 5
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0960-1627
+EI 1467-9965
+J9 MATH FINANC
+JI Math. Financ.
+PD OCT
+PY 2019
+VL 29
+IS 4
+BP 1131
+EP 1156
+DI 10.1111/mafi.12211
+PG 26
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA IW9BB
+UT WOS:000485287200005
+DA 2019-12-28
+ER

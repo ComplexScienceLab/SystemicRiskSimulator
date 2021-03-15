@@ -1,0 +1,434 @@
+
+PT J
+AU Hazama, M
+   Uesugi, I
+AF Hazama, Makoto
+   Uesugi, Iichiro
+TI Measuring the systemic risk in interfirm transaction networks
+SO JOURNAL OF ECONOMIC BEHAVIOR & ORGANIZATION
+LA English
+DT Article
+DE Interfirm networks; Trade credit; Default propagation
+ID AGGREGATE FLUCTUATIONS; KNOWLEDGE SPILLOVERS; PATENT CITATIONS;
+   PROPAGATION; CREDIT
+AB Using a unique and massive dataset that contains information on interfirm transaction relationships, this study examines default propagation in trade credit networks and provides direct and systematic evidence of the existence and relevance of such default propagation. Not only do we implement simulations in order to detect prospective defaulters, we also estimate the probabilities of actual firm bankruptcies and compare the predicted defaults and actual defaults. We find, first, that an economically sizable number of firms are predicted to fail when their customers default on their trade debt. Second, these prospective defaulters are indeed more likely to go bankrupt than other firms. Third, firms that have abundant external sources of financing or whose transaction partners have such abundant sources are less likely to go bankrupt even when they are predicted to default. This provides evidence for the existence and relevance of firms - called "deep pockets" by Kiyotaki and Moore (1997) - that can act as shock absorbers. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Hazama, Makoto] Cabinet Off, Chiyoda Ku, Nagatacho 1-6-1, Tokyo, Japan.
+   [Uesugi, Iichiro] Hitotsubashi Univ, Inst Econ Res, Naka 2-1, Kunitachi, Tokyo, Japan.
+RP Hazama, M (reprint author), Cabinet Off, Chiyoda Ku, Nagatacho 1-6-1, Tokyo, Japan.
+EM makoto.hazama.z6k@cao.go.jp; iuesugi@ier.hit-u.ac.jp
+RI Uesugi, Iichiro/R-1019-2019
+FU JSPS KAKEN Grant [25220502]
+FX This study is a product of the project "Design of Interfirm Networks to
+   Achieve Sustainable Economic Growth" under the program for Promoting
+   Social Science Research Aimed at Solutions of Near-Future Problems
+   conducted by the Japan Society for the Promotion of Science (JSPS). We
+   appreciate the financial support by JSPS KAKEN Grant #25220502.
+CR Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Battiston S, 2007, J ECON DYN CONTROL, V31, P2061, DOI 10.1016/j.jedc.2007.01.004
+   Beck T, 2006, J INT MONEY FINANC, V25, P932, DOI 10.1016/j.jimonfin.2006.07.005
+   Blien U, 1997, CLASSIFICATION DATA, P3
+   Boissay F., 2006, EUR CENT BANK WORK P, V573
+   Boissay F, 2013, REV FINANC, V17, P1853, DOI 10.1093/rof/rfs045
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Fang S. C., 1997, ENTROPY OPTIMIZATION
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Hazama M., 2016, HITOTSUBASHI PROJECT, V20
+   Horvath M, 2000, J MONETARY ECON, V45, P69, DOI 10.1016/S0304-3932(99)00044-6
+   Jacobson T, 2015, ECONOMETRICA, V83, P1315, DOI 10.3982/ECTA12148
+   JAFFE AB, 1993, Q J ECON, V108, P577, DOI 10.2307/2118401
+   Kiyotaki N., 1997, DISCUSSION PAPERS, P118
+   LONG JB, 1983, J POLIT ECON, V91, P39, DOI 10.1086/261128
+   Nakajima K., 2012, RIETI DISCUSS PAP SE
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Shea J, 2002, J MONEY CREDIT BANK, V34, P412, DOI 10.1353/mcb.2002.0046
+   Thompson P, 2005, AM ECON REV, V95, P450, DOI 10.1257/0002828053828509
+   Uchida H., 2015, INTERFIRM RELATIONSH
+NR 22
+TC 1
+Z9 1
+U1 3
+U2 13
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-2681
+EI 1879-1751
+J9 J ECON BEHAV ORGAN
+JI J. Econ. Behav. Organ.
+PD MAY
+PY 2017
+VL 137
+BP 259
+EP 281
+DI 10.1016/j.jebo.2017.02.009
+PG 23
+WC Economics
+SC Business & Economics
+GA EV2OQ
+UT WOS:000401595400016
+DA 2019-12-28
+ER
+
+PT J
+AU Batten, JA
+   Gannon, GL
+   Thuraisamy, KS
+AF Batten, Jonathan A.
+   Gannon, Gerard L.
+   Thuraisamy, Kannan S.
+TI Sovereign risk and the impact of crisis: Evidence from Latin America
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article; Proceedings Paper
+CT 14th INFINITI Conference on International Finance
+CY JUN 09-10, 2014
+CL Prato, ITALY
+SP INFINITI
+DE Argentine default; Global financial crisis; Latin America; Volatility;
+   Spillovers; Sovereign bond markets; Transmission
+ID MULTIVARIATE GARCH; VOLATILITY TRANSMISSION; MARKET CONTAGION; STOCK
+   RETURNS; BOND SPREADS; COUNTRY RISK; EQUITY; LINKAGES; DETERMINANTS;
+   PERFORMANCE
+AB We utilize the default by Argentina in 2001 and the Global Financial Crisis in 2008, as natural experiments, to monitor the complex interactions between sovereign bonds when subjected to endogenous and exogenous shocks. By forming pairs of Latin American sovereign bonds, bundled into similar maturity class, the analysis highlights the complex nature of risk shifting, and the temporal nature of the volatility transmission and sharing mechanisms in the lead up to, and after, a crisis period. The results show that shorter maturity groups and longer maturity groups behave in fundamentally different ways in terms of volatility transmission, while one or two leading countries act as regional benchmarks. The dynamics are consistent with temporal but segmented investor preferences, with the arrival of crisis contributing to a breakdown in the previous relationships. In addition, there is additional economic benefit from utilizing knowledge of the volatility structure underlying the historic transmission channels to improve the portfolio outcomes of market participants. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Batten, Jonathan A.] Monash Univ, Monash Business Sch, Dept Banking & Finance, Caulfield Campus,POB 197, Caulfield, Vic 3145, Australia.
+   [Thuraisamy, Kannan S.] Deakin Univ, Deakin Business Sch, Dept Finance, Ctr Financial Econometr, Burwood, Vic 3125, Australia.
+RP Batten, JA (reprint author), Monash Univ, Monash Business Sch, Dept Banking & Finance, Caulfield Campus,POB 197, Caulfield, Vic 3145, Australia.
+EM jonathan.batten@monash.edu; sivananthan.thuraisamy@deakin.edu.au
+RI Batten, Jonathan A/J-3838-2013
+OI Batten, Jonathan A/0000-0002-3871-7360; Thuraisamy,
+   Kannan/0000-0001-5164-5456
+CR Aiolfi M, 2011, J DEV ECON, V95, P212, DOI 10.1016/j.jdeveco.2010.04.003
+   Alexander C., 2001, MARKET MODELS GUIDE
+   Arouri ME, 2011, J INT MONEY FINANC, V30, P1387, DOI 10.1016/j.jimonfin.2011.07.008
+   Au-Yeung S.P., 2005, REV FUTURES MARKETS, V14, P283
+   Bank for International Settlements (BIS), 1999, Q REV
+   Batten J.A., 2006, APPL FINANCIAL EC, V16, P881, DOI DOI 10.1080/09603100600684757
+   Baumann R., 2008, LCBRSR190
+   Bauwens L, 2006, J APPL ECONOM, V21, P79, DOI 10.1002/jae.842
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   Berndt E. K., 1974, ANN ECON SOC MEAS, V81, P637
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P975, DOI 10.1016/j.jimonfin.2011.12.006
+   Bi HX, 2012, EUR ECON REV, V56, P389, DOI 10.1016/j.euroecorev.2011.11.001
+   Bissoondoyal-Bheenick E, 2014, J MULTINATL FINANC M, V25-26, P51, DOI 10.1016/J.MULFIN.2014.06.005
+   Bubak V, 2011, J BANK FINANC, V35, P2829, DOI 10.1016/j.jbankfin.2011.03.012
+   Bulkley G, 2015, J BANK FINANC, V58, P179, DOI 10.1016/j.jbankfin.2015.03.018
+   De-la-Hoz MC, 2016, EMERG MARK REV, V26, P197, DOI 10.1016/j.ememar.2015.12.001
+   Chadwick MG, 2015, ECON MODEL, V49, P120, DOI 10.1016/j.econmod.2015.03.011
+   CHAN K, 1991, REV FINANC STUD, V4, P657, DOI 10.1093/rfs/4.4.657
+   Chang CL, 2011, ENERG ECON, V33, P912, DOI 10.1016/j.eneco.2011.01.009
+   Chng MT, 2009, J BANK FINANC, V33, P958, DOI 10.1016/j.jbankfin.2008.10.006
+   Christopher R, 2012, J INT FINANC MARK I, V22, P1070, DOI 10.1016/j.intfin.2012.01.003
+   Chulia H, 2008, J FUTURES MARKETS, V28, P1066, DOI 10.1002/fut.20342
+   Cifarelli G, 2004, EMERG MARK REV, V5, P427
+   Claessens S, 1996, J FINANC QUANT ANAL, V31, P109, DOI 10.2307/2331389
+   Clements AE, 2015, J EMPIR FINANC, V32, P3, DOI 10.1016/j.jempfin.2014.12.002
+   Csonto B, 2014, EMERG MARK REV, V20, P58, DOI 10.1016/j.ememar.2014.05.003
+   Daugherty MS, 2015, J MULTINATL FINANC M, V32, P95, DOI 10.1016/j.mulfin.2015.10.003
+   Demyanyk Y, 2011, REV FINANC STUD, V24, P1848, DOI 10.1093/rfs/hhp033
+   Edwards S, 2003, REV ECON STAT, V85, P328, DOI 10.1162/003465303765299855
+   Eichengreen B, 2012, J INT MONEY FINANC, V31, P1299, DOI 10.1016/j.jimonfin.2012.02.002
+   Elton EJ, 1998, J FINANC, V53, P1533, DOI 10.1111/0022-1082.00064
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   ENGLE RF, 1990, ECONOMETRICA, V58, P525, DOI 10.2307/2938189
+   Ewing BT, 2005, J BANK FINANC, V29, P2655, DOI 10.1016/j.jbankfin.2004.10.002
+   Gande A, 2005, J FINANC ECON, V75, P691, DOI 10.1016/j.jfineco.2003.11.003
+   Gannon G., 2005, INT REV FINANC ANAL, V14, P326
+   Gonzalez M, 2012, EMERG MARK REV, V13, P626, DOI 10.1016/j.ememar.2012.09.003
+   Grammatikos T, 2012, J INT MONEY FINANC, V31, P517, DOI 10.1016/j.jimonfin.2011.10.004
+   Groslambert B., 2003, COUNTRY RISK ASSESSM
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   Hernandez L.F., 2001, WHAT DRIVES CONTAGIO
+   In F, 2007, J INT MONEY FINANC, V26, P329, DOI 10.1016/j.jimonfin.2006.11.007
+   Jacoby G, 2009, J FINANC QUANT ANAL, V44, P641, DOI 10.1017/S002210900999007X
+   Jovanovic B., 2001, EC PERSPECTIVES, V25, P17
+   Kaminsky G, 2002, WORLD BANK ECON REV, V16, P171, DOI 10.1093/wber/16.2.171
+   KAROLYI GA, 1995, J BUS ECON STAT, V13, P11
+   Kearney C., 2000, FINANCIAL REV, V41, P29, DOI DOI 10.1111/j.1540-6288.2000.tb01405.x
+   Kenourgios D, 2012, J MULTINATL FINANC M, V22, P24, DOI 10.1016/j.mulfin.2012.01.002
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kroner K., 1990, WORKING PAPER
+   Kroner KF, 1998, REV FINANC STUD, V11, P817, DOI 10.1093/rfs/11.4.817
+   Lafuente JA, 2015, J MULTINATL FINANC M, V30, P83, DOI 10.1016/j.mulfin.2015.03.003
+   Li MC, 2016, J INT FINANC MARK I, V41, P1, DOI 10.1016/j.intfin.2015.12.001
+   LIN WL, 1994, REV FINANC STUD, V7, P507, DOI 10.1093/rfs/7.3.507
+   LONGSTAFF FA, 1995, J FINANC, V50, P789, DOI 10.2307/2329288
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Maquieira CP, 2012, EMERG MARK REV, V13, P118, DOI 10.1016/j.ememar.2011.11.001
+   Martinez LB, 2013, EMERG MARK REV, V17, P60, DOI 10.1016/j.ememar.2013.08.004
+   Mink M, 2015, EMERG MARK REV, V22, P18, DOI 10.1016/j.ememar.2014.11.003
+   Mollah S, 2016, J INT FINANC MARK I, V41, P151, DOI 10.1016/j.intfin.2015.12.010
+   Narayan PK, 2007, ENERG POLICY, V35, P6549, DOI 10.1016/j.enpol.2007.07.020
+   Narayan PK, 2015, PAC-BASIN FINANC J, V35, P367, DOI 10.1016/j.pacfin.2015.02.007
+   Narayan PK, 2015, J INT FINANC MARK I, V34, P80, DOI 10.1016/j.intfin.2014.10.004
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Riedel C, 2013, EMERG MARK REV, V17, P209, DOI 10.1016/j.ememar.2013.03.002
+   Samargandi Nahla, 2016, J INT FINANCIAL MARK
+   Sharma SS, 2013, J ASIAN ECON, V28, P51, DOI 10.1016/j.asieco.2013.06.001
+   Sugimoto K, 2014, EMERG MARK REV, V21, P201, DOI 10.1016/j.ememar.2014.09.004
+   Le TH, 2015, ENERG ECON, V51, P261, DOI 10.1016/j.eneco.2015.06.019
+   Thuraisamy K, 2013, J INT FINANC MARK I, V23, P222, DOI 10.1016/j.intfin.2012.08.002
+   Tse YK, 2000, J ECONOMETRICS, V98, P107, DOI 10.1016/S0304-4076(99)00080-9
+   Wang LH, 2014, J INT FINANC MARK I, V28, P182, DOI 10.1016/j.intfin.2013.11.003
+   Wang SS, 2002, J INT MONEY FINANC, V21, P265, DOI 10.1016/S0261-5606(01)00039-0
+   Warnes I, 2014, J MULTINATL FINANC M, V28, P15, DOI 10.1016/j.mulfin.2014.08.001
+   Westerlund J., EMERGING MARKETS REV
+   Yunus N, 2013, J MULTINATL FINANC M, V23, P327, DOI 10.1016/j.mulfin.2013.06.003
+   Zinna G, 2014, EMERG MARK REV, V20, P1, DOI 10.1016/j.ememar.2014.05.002
+NR 77
+TC 1
+Z9 1
+U1 1
+U2 15
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD APR
+PY 2017
+VL 77
+BP 328
+EP 350
+DI 10.1016/j.jbankfin.2016.07.011
+PG 23
+WC Business, Finance; Economics
+SC Business & Economics
+GA ER2SF
+UT WOS:000398643400021
+DA 2019-12-27
+ER
+
+PT J
+AU Leduc, MV
+   Thurner, S
+AF Leduc, Matt V.
+   Thurner, Stefan
+TI Incentivizing resilience in financial networks
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Systemic risk; Interbank networks; Insolvency cascades; Network
+   formation; Matching markets; Transaction-specific tax
+ID SYSTEMIC RISK; STABILITY
+AB When banks extend loans to each other, they generate a negative externality in the form of systemic risk. They create a network of interbank exposures by which they expose other banks to potential insolvency cascades. In this paper, we show how a regulator can use information about the financial network to devise a transaction-specific tax based on a network centrality measure that captures systemic importance. Since different transactions have different impact on creating systemic risk, they are taxed differently. We call this tax a systemic risk tax (SRT). We use an equilibrium concept inspired by the matching markets literature to show analytically that this SRT induces a unique equilibrium matching of lenders and borrowers that is systemic-risk efficient, i.e. it minimizes systemic risk given a certain transaction volume. On the other hand, we show that without this SRT multiple equilibrium matchings exist, which are generally inefficient. This allows the regulator to effectively stimulate a 'rewiring' of the equilibrium interbank network so as to make it more resilient to insolvency cascades, without sacrificing transaction volume. Moreover, we show that a standard financial transaction tax (e.g. a Tobin-like tax) has no impact on reshaping the equilibrium financial network because it taxes all transactions indiscriminately. A Tobin-like tax is indeed shown to have a limited effect on reducing systemic risk while it decreases transaction volume. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Leduc, Matt V.; Thurner, Stefan] IIASA, Schlosspl 1, A-2361 Laxenburg, Austria.
+   [Thurner, Stefan] Med Univ Vienna, Inst Sci Complex Syst, Spitalgasse 23, A-1090 Vienna, Austria.
+   [Thurner, Stefan] Santa Fe Inst, 1399 Hyde Pk Rd, Santa Fe, NM 87501 USA.
+   [Thurner, Stefan] Complex Sci Hub Vienna, Josefstadterstr 39, A-1080 Vienna, Austria.
+RP Thurner, S (reprint author), IIASA, Schlosspl 1, A-2361 Laxenburg, Austria.; Thurner, S (reprint author), Med Univ Vienna, Inst Sci Complex Syst, Spitalgasse 23, A-1090 Vienna, Austria.; Thurner, S (reprint author), Santa Fe Inst, 1399 Hyde Pk Rd, Santa Fe, NM 87501 USA.; Thurner, S (reprint author), Complex Sci Hub Vienna, Josefstadterstr 39, A-1080 Vienna, Austria.
+EM mattvleduc@gmail.com; stefan.thurner@meduniwien.ac.at
+CR Abdulkadiroglu A, 2003, AM ECON REV, V93, P729, DOI 10.1257/000282803322157061
+   Alkan A, 2003, J ECON THEORY, V112, P289, DOI 10.1016/S0022-0531(03)00096-6
+   Amini H., 2013, MATH FINANCE
+   Anufriev M., 2016, RAND J EC
+   Baiou M, 2002, MATH OPER RES, V27, P485, DOI 10.1287/moor.27.3.485.310
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M., 2015, AM EC REV
+   Farboodi M., 2014, INTERMEDIATION VOLUN, DOI 10.2139/ssrn.2535900
+   Fleiner T., 2016, TRADING NETWORKS BIL
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P., 2010, P ROYAL SOC LOND MAT
+   GALE D, 1962, AM MATH MON, V69, P9, DOI 10.2307/2312726
+   Georg C.-P., 2011, WORKING PAPERS GLOBA
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Hatfield JW, 2013, J POLIT ECON, V121, P966, DOI 10.1086/673402
+   IRVING RW, 1994, DISCRETE APPL MATH, V48, P261, DOI 10.1016/0166-218X(92)00179-P
+   Jackson MO, 1996, J ECON THEORY, V71, P44, DOI 10.1006/jeth.1996.0108
+   Jackson MO, 2002, J ECON THEORY, V106, P265, DOI 10.1006/jeth.2001.2903
+   Leduc M. V., 2016, SYSTEMIC RISK MANAGE
+   Matheson T, 2012, INT TAX PUBLIC FINAN, V19, P884, DOI 10.1007/s10797-012-9212-5
+   McCulloch M., 2011, IDS RES REPORTS, V68, P1, DOI [DOI 10.1111/J2040-0217.2011.00068_2.X, 10.1111/j2040-0217.2011.00068_2.x]
+   Poledna S, 2017, J ECON DYN CONTROL, V77, P230, DOI 10.1016/j.jedc.2017.02.004
+   Poledna S, 2016, QUANT FINANC, V16, P1599, DOI 10.1080/14697688.2016.1156146
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Roth A. E., 1999, TECHNICAL REPORT
+   Roth AE, 2004, Q J ECON, V119, P457, DOI 10.1162/0033553041382157
+   ROTH AE, 1984, J POLIT ECON, V92, P991, DOI 10.1086/261272
+   Roth Alvin, 1992, 2 SIDED MATCHING STU
+   SUMMERS LH, 1989, J FINANC SERV RES, V3, P261, DOI 10.1007/BF00122806
+   Thurner S., 2013, SCI REP, V3
+   Tobin J., 1978, E ECON J, V4, P153
+   Zawadowski A, 2013, REV FINANC STUD, V26, P1291, DOI 10.1093/rfs/hht008
+NR 35
+TC 7
+Z9 7
+U1 2
+U2 12
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD SEP
+PY 2017
+VL 82
+BP 44
+EP 66
+DI 10.1016/j.jedc.2017.05.010
+PG 23
+WC Economics
+SC Business & Economics
+GA FH0YX
+UT WOS:000410867700003
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Wesselbaum, D
+AF Wesselbaum, Dennis
+TI CATASTROPHE THEORY AND THE FINANCIAL CRISIS
+SO SCOTTISH JOURNAL OF POLITICAL ECONOMY
+LA English
+DT Article
+ID MODEL
+AB This paper develops and estimates catastrophe-augmented models of the financial crisis. We employ catastrophe theory to explain discontinuous jumps in state variables of dynamic systems. We estimate an augmented bank failure model showing that the buildup of risk and an increase in the Federal Funds rate combined with low reserves (negative insurance effect) have been the main drivers of the financial crisis. Therefore, macroprudential policy and rating agencies play a key role in preventing the buildup of (systemic) risk and preventing the economy from entering a bifurcation area.
+C1 [Wesselbaum, Dennis] Univ Otago, Dunedin, New Zealand.
+   [Wesselbaum, Dennis] EABCN, Dunedin, New Zealand.
+RP Wesselbaum, D (reprint author), Univ Otago, Dunedin, New Zealand.; Wesselbaum, D (reprint author), EABCN, Dunedin, New Zealand.
+CR Arnold V.I., 1984, CATASTROPHE THEORY
+   Barunik J, 2009, J ECON DYN CONTROL, V33, P1824, DOI 10.1016/j.jedc.2009.04.004
+   Barunik J, 2015, QUANT FINANC, V15, P959, DOI 10.1080/14697688.2014.950319
+   BLAD MC, 1981, J MATH ECON, V8, P121, DOI 10.1016/0304-4068(81)90017-3
+   COBB L, 1981, BEHAV SCI, V26, P75, DOI 10.1002/bs.3830260107
+   COBB L, 1983, J AM STAT ASSOC, V78, P124, DOI 10.2307/2287118
+   Cobb L., 1980, MATH MODELLING, V1, P311, DOI DOI 10.1016/0270-0255(80)90041-X
+   Diks C, 2016, J ECON DYN CONTROL, V69, P68, DOI 10.1016/j.jedc.2016.05.008
+   FISCHER EO, 1986, REV ECON STAT, V68, P9, DOI 10.2307/1924922
+   Fletcher L., 1981, J BUSINESS FINANCE A, V8, P1
+   HELLWIG M., 2008, SYSTEMIC RISK FINANC, V43
+   HO T, 1980, J FINANC, V35, P1189, DOI 10.2307/2327093
+   Lorenz H.W., 1993, NONLINEAR DYNAMICAL
+   McDonald JF, 2013, J REAL ESTATE FINANC, V46, P437, DOI 10.1007/s11146-011-9329-9
+   OLIVA TA, 1987, BEHAV SCI, V32, P121, DOI 10.1002/bs.3830320205
+   Thom Rene, 1975, STRUCTURAL STABILITY
+   VARIAN HR, 1979, ECON INQ, V17, P14, DOI 10.1111/j.1465-7295.1979.tb00293.x
+   WOODCOCK A. E. R., 1979, CATASTROPHE THEORY
+   Zeeman E. C, 1977, CATASTROPHE THEORY S
+NR 19
+TC 1
+Z9 1
+U1 0
+U2 10
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0036-9292
+EI 1467-9485
+J9 SCOT J POLIT ECON
+JI Scott. J. Polit. Econ.
+PD SEP
+PY 2017
+VL 64
+IS 4
+BP 376
+EP 391
+DI 10.1111/sjpe.12133
+PG 16
+WC Economics; Political Science
+SC Business & Economics; Government & Law
+GA FF9TW
+UT WOS:000409361200003
+DA 2019-12-28
+ER
+
+PT J
+AU Aydin, NS
+AF Aydin, Nadi Serhan
+TI A quantitative framework for testing the resilience of Islamic finance
+   portfolios under IFSB and Basel capital rules
+SO INTERNATIONAL JOURNAL OF ISLAMIC AND MIDDLE EASTERN FINANCE AND
+   MANAGEMENT
+LA English
+DT Article
+DE Islamic finance; Backtesting risk models; Capital adequacy; IFSB and
+   Basel III; Model-based stress-testing; Second-round effects
+ID SCENARIO SELECTION; STRESS; RISK; CONTAGION; MODELS
+AB Purpose - This paper aims to introduce a model-based stress-testing methodology for Islamic finance products. The importance of stress testing was indeed clearly underlined by the adverse developments in the global finance industry. One of the key takeaways was the need to strengthen the coverage of the capital framework. Cognisant of this fact, Basel III encapsulates provisions to enhance the financial sector's ability to withstand shocks arising from possible stress events, thereby reducing adverse spillovers into the real economy. Similarly, the Islamic Financial Services Board requires Islamic financial institutions to run stress tests as part of capital planning.
+   Design/methodology/approach - The authors perform thorough backtests on Islamic and conventional portfolios under widely used risk models, which are characterised by an underlying conditional volatility framework and distribution, to identify the most suitable risk model specification. Associated with an appropriate initial shock and estimation window size, the paper also conducts a model-based stress test to examine whether the stress losses estimated by the selected models compare favourably to the historical shocks.
+   Findings - The results suggest that the model-based framework, when combined with an appropriate risk model and distribution, can successfully reproduce past stress periods. The conditional empirical risk model is the most effective one in both long and short portfolio cases - particularly when combined with a long-enough estimation window. The relative performance of normal vs heavy-tailed distributions and symmetric vs asymmetric risk models, on the other hand, is highly dependent on whether the portfolio is long or short. Finally, the authors find that the Islamic portfolio is generally associated with lower historical stress losses as compared to the conventional portfolio.
+   Originality/value - The model-based framework eliminates some of the key problems associated with traditional scenario-based approaches and is easily adaptable to Islamic finance.
+C1 [Aydin, Nadi Serhan] Middle East Tech Univ, Ankara, Turkey.
+RP Aydin, NS (reprint author), Middle East Tech Univ, Ankara, Turkey.
+EM serhan.aydin@metu.edu.tr
+RI Aydin, Nadi Serhan/X-8938-2018
+OI Aydin, Nadi Serhan/0000-0002-1453-0016
+CR Alexander C, 2008, J BANK FINANC, V32, P2220, DOI 10.1016/j.jbankfin.2007.12.041
+   Aragones J.R., 2001, DERIVATIVES Q, P44
+   Aydin N. S., 2010, ENERGY MARKET REGULA, V1, P121
+   Baba Y., 1991, 8957 U CAL DEP EC
+   Barone-Adesi G, 1998, RISK, P100
+   Basel Committee on Banking Supervision (BCBS), 2011, BAS 3 GLOB REG FRAM
+   BCBS, 2013, 24 BCBS BIS
+   BCBS, 2009, PRINC SOUND STRESS T
+   Berkowitz J., 1999, TECHNICAL REPORT
+   Berkowitz Jeremy, 2000, J RISK, V2, P2
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Buberkoku O., 1998, IKTISAT ISLET FINANS, V28, P81
+   CEBS, 2010, TECHNICAL REPORT
+   Chattha J. A., 2013, J ISLAMIC ACCOUNTING, V7, P112
+   Christensen JHE, 2015, J MONETARY ECON, V73, P26, DOI 10.1016/j.jmoneco.2015.03.007
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Cuffe SL, 2012, FINANC ANAL J, V68, P85, DOI 10.2469/faj.v68.n2.3
+   Dominguez J. M. F., 2004, INVESTMENT MANAGEMEN, V4, P62
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   Flood MD, 2015, QUANT FINANC, V15, P43, DOI 10.1080/14697688.2014.926018
+   Frey R., 1997, EFFECT GARCH TYPE VO
+   Gao Y, 2012, J COMPUT, V7, P1967, DOI 10.4304/jcp.7.8.1967-1973
+   Glasserman P, 2015, QUANT FINANC, V15, P25, DOI 10.1080/14697688.2014.926019
+   Grundke P, 2011, J RISK MODEL VALIDAT, V5, P71
+   Hall K., 2006, IMF EXP FOR ADV TECH
+   Hansen PR, 2005, J APPL ECONOM, V20, P873, DOI 10.1002/jae.800
+   Hassan MK, 2016, BORSA ISTANB REV, V16, P72, DOI 10.1016/j.bir.2016.04.001
+   Hoppe R., 1998, RISK, V11, P45
+   IFSB, 2010, TECHNICAL REPORT
+   IFSB, 2011, TECHNICAL REPORT
+   IFSB, 2012, TECHNICAL REPORT
+   IFSB, 2013, TECHNICAL REPORT
+   IFSB, 2005, TECHNICAL REPORT
+   Kenourgios D, 2016, ECON MODEL, V57, P36, DOI 10.1016/j.econmod.2016.04.014
+   Kupiec P.H., 1995, J DERIV, V3, P73, DOI DOI 10.3905/jod.1995.407942
+   KUPIEC PH, 1998, J DERIV, V6, P7, DOI DOI 10.3905/JOD.1998.408008
+   Kwiatkowski J., 2011, APPL MATH FINANCE, V18, P139
+   Levy-Carciente S, 2015, J BANK FINANC, V59, P164, DOI 10.1016/j.jbankfin.2015.05.008
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Orhan M, 2012, EXPERT SYST APPL, V39, P3582, DOI 10.1016/j.eswa.2011.09.048
+   Predescu O. M., 2011, EC COMPUTATION EC CY, V2, P190
+   Saiti B, 2016, EMERG MARK FINANC TR, V52, P1832, DOI 10.1080/1540496X.2015.1087784
+   Skoglund J, 2009, J RISK MODEL VALIDAT, V3, P61
+   van den End J.W., 2012, APPL FINANCIAL EC, V22, P1233
+   van den End JW, 2010, CESIFO ECON STUD, V56, P38, DOI 10.1093/cesifo/ifp005
+NR 45
+TC 0
+Z9 0
+U1 3
+U2 8
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1753-8394
+EI 1753-8408
+J9 INT J ISLAMIC MIDDLE
+JI Int.J. Islamic Middle Eastern Finance Manag.
+PY 2017
+VL 10
+IS 3
+BP 290
+EP 311
+DI 10.1108/IMEFM-03-2016-0036
+PG 22
+WC Business, Finance; Management
+SC Business & Economics
+GA FD6KB
+UT WOS:000407636300001
+DA 2019-12-27
+ER

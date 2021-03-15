@@ -1,0 +1,378 @@
+# 推导消费品中间品生产商较详细的过程
+
+
+
+TODO
+
+
+
+
+
+> 根据
+>
+> [[Calvo G A, 1983. Staggered prices in a utility-maximizing framework[J]. Journal of Monetary Economics, 12(3): 383–398.]]
+>
+> 设定中间厂商定价机制。
+
+
+
+#### 预分析
+
+假设消费品中间品生产商的个体$i_{GI}$构成的集合为$\mathbb{GI}$，数量为$N_{GI}$。
+
+为了简化分析，在这里，假设消费品中间品厂商的定价机制遵循Calvo定价机制。在第$t$期，随机以一定数量比例$(1 - \theta_{GI,p})$选择生产商$j \in \mathbb{GI_1}$，它们在本期参与制定价格为$\tilde{P}_{GI}[j,t]$。假设所有参与重新定价的消费品中间品生产商厂商$j$都选择同样的价格 $\tilde{P}_{GI}[t] \equiv \tilde{P}_{GI}[j,t]$。在当期，其未被选中能够参与制定最优价格之其余厂商个体$k$，构成厂商集合$\mathbb{GI_2}$，此时有$k \in \mathbb{GI_2}$。未被选中能够参与制定最优价格的厂商$k$则调整价格，其调整价格以总通货膨胀率为基准。
+
+首先考虑在时期$t$的最优化问题之于消费品中间品生产商$j$，其可以表示为企业预期的收益折现与预期的成本折现序列：
+$$
+\max _{\tilde{P}_{GI}[t]} \mathbb{E}_t \sum\limits_{t_s=0}^{\infty}
+\left(
+ 	(\gamma_{GI})^{t_s} \; (\theta_{GI,p})^{t_s} \; Y_{GI}[j,t+t_s]
+ 	- P_{GF}[t+t_s]
+ 	\times
+ 	\min _{}
+ 	\left(
+ 		r_{GI,z}[t+t_s] \; K_{GI}[j,t+t_s] + w_{GI,z}[t+t_s] \; L_{GI}[j, t+t_s]
+ 	\right) 
+\right)
+$$
+其中，
+$(\gamma_{GI})^{t_s}$：消费品中间品生产商贴现；
+$(\theta_{GI,p})^{t_s}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_2}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例，在预期的$t_s$时期能够将其价格保持的概率；
+$Y_{GI}[j,t+t_s]$：产出之于消费品中间品生产商$j$，其参与重新定价于时期$t+t_s$；
+$P_{GF}[t+t_s]$：定价之于消费品最终品生产商于时期$t+t_s$；
+
+上式的
+$$
+\min _{}
+\left(
+	r_{GI,z}[t+t_s] \; K_{GI}[j,t+t_s] + w_{GI,z}[t+t_s] \; L_{GI}[j, t+t_s]
+\right)
+$$
+表示最小化成本问题，即资本和劳动力投入成本之于参与重新定价于时期$t+t_s$的消费品中间品生产商$j$；
+
+
+
+上述最优化问题对应的约束条件：
+
+$$
+\text { s. t. } \quad
+Y_{GI}[i, t+t_s] := A_{GI}[t+t_s] \; K_{GI}[j,t+t_s]^{\alpha_{GI}} \; L_{GI}[j,t+t_s]^{1-\alpha_{GI}} = \left(\frac{P_{GF}[t+t_s]}{\tilde{P}_{GI}[j, t+t_s]} \right)^{\alpha_{GF}} Y_{GF}[t+t_s]
+$$
+
+其中，
+$A_{GI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
+$K_{GI}[j,t+t_s]$：参与重新定价的消费品中间品生产商$j$的资本，在时期$t+t_s$；
+$L_{GI}[j,t+t_s]$：参与重新定价的消费品中间品生产商$j$的劳动力要素，在时期$t+t_s$；
+
+
+
+
+
+此时中间品生产商的最优化问题中，即包含最大化收益，也包含最小化成本问题，因此分析时考虑分为两个阶段决策。
+
+消费品中间品生产商决策目标分为两阶段：
+
+1. 所有的消费品中间品厂商最小化其总成本；
+1. 消费品中间品生产商其可以参与制定价格的，最大化其实际预期贴现利润；
+
+
+
+#### 阶段1：最小化总成本
+
+基于时期$t$，所有的消费品中间品生产商$i$最小化其总成本于时期$t_s$，即时期$t+t_s, \quad t_s \in [t,\infty)$。这里为了简化表述，在阶段1，我们省略$t_s$，所以$t+t_s$用$t$表示。
+
+$$
+TC_{GI}[i,t] \equiv TC_{GI}[t] := \min _{L_{GI}[i,t] , K_{GI}[i,t]}  w_{GI}[t] \; L_{GI}[i,t] + r_{GI}[t] \; K_{GI}[i,t]
+$$
+其中，
+$w_{GI}[t]$：消费品中间品生产商对居民支付单位工资，在时期$t$；
+$L_{GI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
+$r_{GI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
+$K_{GI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
+
+  
+
+约束条件：
+
+生产函数之中间消费品
+$$
+F_{GI}[A_{GI}[t],K_{GI}[i,t],L_{GI}[i,t]] := Y_{GI}[i,t] := A_{GI}[t] \; K_{GI}[i,t]^{\alpha_{GI}} \; L_{GI}[i,t]^{1-\alpha_{GI}}
+$$
+其中，
+$A_{GI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
+$K_{GI}[i,t]$ ：消费品中间品生产商$i$的资本要素在时期$t$；
+$L_{GI}[i,t]$：消费品中间品生产商$i$的劳动要素在时期$t$；
+$\alpha_{GI}$：消费品中间品生产商的替代指数；
+
+~~$\Phi$：消费品中间品生产商的固定生产成本。在稳态条件下，其值被设定为产生0利润；~~
+
+假定对数形式的全要素生产率 $A_{GI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
+$$
+\ln A_{GI}[t] = \rho_{A,GI} \ln A_{GI}[t-1] + \varepsilon_{A,GI}[t]
+$$
+
+其中，
+$\rho_{A,GI}$：消费品中间品生产商的全要素生产率$A_{GI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{A,GI}[t]$：消费品中间品生产商的全要素生产率对$A_{GI}[t]$应的自回归过程的扰动项，服从均值为0，标准差为$\sigma_{A,GI}$的独立同分布的正态分布；
+
+
+
+最优化问题的一阶条件可以写成：
+$$
+\begin{align*}
+& w_{GI}[t]=(1-\alpha_{GI}) A_{GI}[t] K_{GI}[i,t]^{\alpha_{GI}} (L_{GI}[i,t])^{-\alpha_{GI}} \\
+\Leftrightarrow \quad
+& w_{GI}[t]=(1-\alpha_{GI}) \frac{Y_{GI}[i,t]}{L_{GI}[i,t]}
+\end{align*}
+$$
+
+
+由此可求得消费品中间品生产商$i$的租金率$r_{GI}[t]$
+$$
+\begin{align*}
+& r_{GI}[t] = \alpha_{GI} \; A_{GI}[t] \; K_{GI}[i,t]^{\alpha_{GI}-1} \; L_{GI}[i,t]^{1-\alpha_{GI}} \\
+\Leftrightarrow \quad 
+ & r_{GI}[t] = \alpha_{GI} \; \frac{Y_{GI}[i,t]}{K_{GI}[i,t]}
+\end{align*}
+$$
+可求得消费品中间品生产商$i$的资本$K_{GI}[i,t]$
+$$
+\begin{align*}
+K_{GI}[i, t] & = \frac{Y_{GI}[i,t]}{A_{GI}[t]} \left(\frac{r_{GI}[t]}{w_{GI}[t]} \cdot \frac{1-\alpha_{GI}}{\alpha_{GI}} \right) ^{\alpha_{GI} - 1}
+\\
+& = \frac{\alpha_{GI}}{1-\alpha_{GI}} \; \frac{w_{GI}[t]}{r_{GI}[t]} \; L_{GI}[i,t]
+\end{align*}
+$$
+
+可求得消费品中间品生产商$i$的劳动$L_{GI}[i,t]$
+$$
+\begin{align*}
+L_{GI}[i, t] & = \frac{Y_{GI}[i,t]}{A_{GI}[t]} \left(\frac{r_{GI}[t]}{w_{GI}[t]} \cdot \frac{1-\alpha_{GI}}{\alpha_{GI}} \right) ^{\alpha_{GI}}
+\\
+& = \frac{1-\alpha_{GI}}{\alpha_{GI}} \; \frac{r_{GI}[t]}{w_{GI}[t]} \; K_{GI}[i,t] 
+\end{align*}
+$$
+
+将$K_{GI}[i, t]$和$L_{GI}[i, t]$的表达式代入最小化总成本表达式，并且代入约束条件可得消费品中间品生产商$i$的实际总成本$TC_{GI}[t]$
+$$
+TC_{GI}[t]
+:= \left( 1-\alpha_{GI} \right)^{\alpha_{GI} -1} \; (\alpha_{GI})^{-\alpha_{GI}} \; \frac{Y_{GI}[t] \; w_{GI}[t]^{1-\alpha_{GI}} \; r_{GI}[t]^{\alpha_{GI}}}{A_{GI}[t]}
+$$
+可求得消费品中间品生产商$i$共有的实际边际成本$MC_{GI}[t]$：
+$$
+MC_{GI}[t]
+:= \frac{TC_{GI}[t]}{Y_{GI}[t]}
+= \left( 1-\alpha_{GI} \right)^{\alpha_{GI} -1} \; (\alpha_{GI})^{-\alpha_{GI}} \; \frac{w_{GI}[t]^{1-\alpha_{GI}} \; r_{GI}[t]^{\alpha_{GI}}}{A_{GI}[t]}
+$$
+
+
+
+
+
+
+
+#### 阶段2：制定最优价格以最大化总利润
+
+由于我们采用的Calvo定价规则，假设了在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_2}$当中，随机抽取所占比例为 $(1-\theta_{GI,p})$数量的厂商参与重新定价。此时意味着在时期$t$，被随机抽取中参与重新定价的厂商的数量占比为$(1 - \theta_{GI,p})$。
+
+基于时期$t$，参与制定最优价格的消费品中间品生产商$j \in \mathbb{GI_1}$，通过制定最优价格最大化其实际预期贴现利润于时期$t_s$，即时期$t+t_s, \quad t_s \in [t,\infty)$。
+
+另外，未能参与制定最优价格$\tilde{P}_{GI}[j,t]$之消费品中间品生产商$k \in \mathbb{GI_2}$根据过去的通货膨率$\pi[t-1]$确定其指数化价格为
+$$
+P_{GI}[k,t]=\pi[t-1]^{\chi_{p}} \; P_{GI}[i,t-1]
+$$
+其中，
+$\chi_{p} \in[0,1]$ ：指数化程度参数；
+$\pi[\cdot]$：通货膨胀率于特定时期，其定义为
+$$
+\pi[t] := \frac{P[t]}{P[t-1]}
+$$
+
+其中，
+$P[\cdot]$：表示物价于特定时期；
+
+
+
+因为对于未参与定价的消费品中间品生产商$k$，价格之调整以总通货膨胀率为基准，所以消费品最终品生产商的定价规则为
+$$
+P_{GF}[t] = \theta_{GI,p} \; \left( \pi[t+t_h-1]^{\chi_{p}} \; P_{GF}[t-1] \right)   + (1-\theta_{GI,p}) \; P_{GI}[j,t]
+$$
+
+
+
+假设消费品中间品生产商$j$参与定价一次$\tilde {P}_{GI}[j,t]$之后，之后不再参与被随机抽取，即之后不能最优地重新定价，从而该消费品中间品生产商$j$的价格$P_{GI}[j,t+t_s]$在时期$t+t_s$为
+$$
+P_{GI}[j,t+t_s] = \prod_{t_h=1}^{t_s} 
+\left(
+	\pi[t+t_h-1]^{\chi_{p}} 
+\right)	
+\; \tilde{P}_{GI}[j,t]
+$$
+
+消费品中间品生产商面临的最大化问题是：
+
+$$
+\begin{align*}
+\max _{\tilde{P}_{GI}[j,t]} 
+& \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\left(
+(\gamma_{GI})^{t_s} \; (\theta_{GI,p})^{t_s}
+\; Y_{GI}[j,t+t_s]
+	\; 
+	\left(
+		P_{GI}[j,t+t_s] 
+		- MC_{GI}[t + t_s]
+	\right)
+\right)
+\\
+\Leftrightarrow \quad & \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\left(
+(\gamma_{GI})^{t_s} \; (\theta_{GI,p})^{t_s}
+\; \left(\frac{P_{GF}[t+t_s]}{P_{GI}[j, t+t_s]} \right)^{\alpha_{GF}} Y_{GF}[t+t_s]
+	\;
+	\left(
+		\prod_{t_h=1}^{t_s} 
+		\left(
+		\pi[t+t_h-1]^{\chi_{p}} 
+		\right)	
+		\; \frac{\tilde{P}_{GI}[j,t]}{P_{GF}[t + t_s]}
+		- MC_{GI}[t + t_s]
+	\right)
+\right)
+\\
+\Leftrightarrow \quad & \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\left(
+(\gamma_{GI})^{t_s} \; (\theta_{GI,p})^{t_s}
+\; \left(\frac{P_{GF}[t+t_s]}{		
+			\prod_{t_h=1}^{t_s} 
+      \left(
+      \pi[t+t_h-1]^{\chi_{p}} 
+      \right)	
+			\; \tilde{P}_{GI}[j,t]
+    } \right)^{\alpha_{GF}} Y_{GF}[t+t_s]
+	\;
+	\left(
+		\prod_{t_h=1}^{t_s} 
+		\left(
+		\pi[t+t_h-1]^{\chi_{p}} 
+		\right)	
+		\; \tilde{P}_{GI}[j,t]
+		- MC_{GI}[t + t_s]
+	\right)
+\right)
+\end{align*}
+$$
+
+其中，
+$\gamma_{GI}$：消费品中间品生产商之效用贴现因子；
+$\theta_{GI,p}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_2}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例；
+$Y_{GI}[j,t+t_s]$：表示为
+$$
+Y_{GI}[j, t+t_s] = \left(\frac{P_{GF}[t+t_s]}{P_{GI}[j, t+t_s]} \right)^{\alpha_{GF}} Y_{GF}[t+t_s]
+= \left(
+	\prod_{t_h=1}^{t_s} \left( \pi[t + t_h - 1] ^{\chi_{p}} \right) \frac{\tilde{P}_{GI}[t]}{P_{GF}[t+t_s]}
+\right)^{-\alpha_{GF}}
+\; Y_{GF}[t+t_s]
+$$
+
+其中，
+$\alpha_{GF}$：消费品中间品生产商不同的产品的替代弹性；
+
+
+上述最优化问题对应的约束条件是消费品中间品生产商$i$的产量需求：
+
+$$
+\text { s. t. } 
+\quad Y_{GI}[i,t+t_s] = \left(\frac{P_{GF}[t+t_s]}{P_{GI}[j, t+t_s]} \right)^{\alpha_{GF}} Y_{GF}[t+t_s]
+= \left(
+	\prod_{t_h=1}^{t_s} \left( \pi[t + t_h - 1] ^{\chi_{p}} \right) \frac{\tilde{P}_{GI}[t]}{P_{GF}[t+t_s]}
+\right)^{-\alpha_{GF}} 
+\; Y_{GF}[t+t_s]
+$$
+
+产量需求的约束意味着消费品中间品生产商将在每一期中生产该期价格下所需求的全部产品。
+
+最优化问题对应的一阶条件：
+$$
+\tilde{P}_{GI}[t] =
+\frac{\alpha_{GF}}{\alpha_{GF}-1} 
+\frac
+{
+\mathbb{E}_{t} 
+\sum \limits_{t_s=0}^{\infty}
+	\left(
+		\left(\gamma_{GI} \; \theta_{GI,p} \right)^{t_s} \; P_{GF}[t+t_s] \; MC_{GI}[t+t_s] \; Y_{GF}[i, t+t_s]
+	\right)
+}
+{
+\mathbb{E}_{t} \sum \limits_{t_s=0}^{\infty}
+	\left(
+		\left(\gamma_{GI} \theta_{GI,p} \right)^{t_s} 
+		\; \prod \limits_{t_h=1}^{t_s} 
+			\left(  
+				\pi[t+t_h-1]^{\chi_{p}} 
+			\right)  
+		\; Y_{GI}[i, t+t_s]
+	\right)
+}
+$$
+
+其中，
+$MC_{GI}[t+t_s]$：消费品中间品生产商的实际边际成本，表达式为
+
+$$
+MC_{GI}[t+t_s]
+= \left( 1-\alpha_{GI} \right)^{\alpha_{GI} -1} \; (\alpha_{GI})^{-\alpha_{GI}} \; \frac{w_{GI}[t+t_s]^{1-\alpha_{GI}} r_{GI,z}[t+t_s]^{\alpha_{GI}}}{A_{GI}[t+t_s]}
+$$
+
+。
+
+根据消费品中间品生产商的产量$Y_{GI}[i,t]$与$Y_{GF}[t]$的关系
+$$
+Y_{GI}[i, t] = \left(\frac{P_{GI}[i, t]}{P_{GF}[t]} \right)^{-\alpha_{GF}} Y_{GF}[t]
+$$
+，然后采用Uhlig提出的对数线性化的方法，通过以下推导过程
+
+[推导消费品中间品生产商之价格水平的时变表达式](./推导消费品中间品生产商之价格水平的时变表达式.mmd)
+
+最终可得消费品中间品生产商之价格水平的时变表达式
+$$
+P_{GF}[t]^{1-\alpha_{GF}}
+= \theta_{GI,p} \; \left(\pi[t-1]^{\chi_{p}} \; P[t-1] \right)^{1-\alpha_{GF}} + (1-\theta_{GI,p}) \; \tilde{P}_{GI}[t]^{1-\alpha_{GF}}
+$$
+通过对数线性化上面两个式子，并采用差分方法消除对未来期望值的无穷加总项，通过以下推导过程
+
+[混合型新凯恩斯菲利普斯曲线（hybrid NKPC）的推导过程](./推导混合型新凯恩斯菲利普斯曲线.mmd)
+
+可以得到如下形式的混合型新凯恩斯菲利普斯曲线（hybrid NKPC）
+$$
+\hat{\pi}[t] =
+\frac{\gamma_{GI}}{1+\gamma_{GI} \;\chi_{p}} \mathbb{E}_{t} \; \hat{\pi}[t+1]
++
+\frac{\chi_{p}}{1+\gamma_{GI} \; \chi_{p}} \; \hat{\pi}[t-1]
++
+\frac
+{
+\left( 1-\theta_{GI,p} \right) \; \left( 1-\gamma_{GI} \theta_{GI,p} \right)
+}{
+\theta_{GI,p}\left(1+\gamma_{GI} \theta_{GI,p}\right)
+} 
+\; \hat{MC}_{GI}[t]
+$$
+
+其中，
+$\hat{\Box}$：上标带尖冒号表示相应变量偏离比例之于其稳态值；
+
+特别地，当 $\chi_{p}=0$ 时，上式变成前瞻型的新凯恩斯菲利普斯曲线( forward-looking NKPC)。通过引入混合性的菲利普斯曲线,有利于更好地对真实的通货膨胀过程及其动态机制进行刻画。
+
+
+
+> 关于混合型新凯恩斯菲利普斯曲线（hybrid NKPC）的推导过程，参考《RBC之ABC》p179-180的推导过程。
+>
+> 上式的形式，其思想可参考《RBC之ABC》：
+>
+> p172关于交错定价模型的部分式(10.4)；
+>
+> p189-190关于不能参与定价的企业的价格调整方式为按照总的通货膨胀率调整。
+
+   

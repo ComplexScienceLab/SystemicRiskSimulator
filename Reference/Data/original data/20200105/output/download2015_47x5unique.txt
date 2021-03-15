@@ -1,0 +1,489 @@
+
+PT J
+AU Pianeti, R
+   Giacometti, R
+AF Pianeti, R.
+   Giacometti, R.
+TI Estimating the probability of multiple EU sovereign defaults using CDS
+   and bond data
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE EU sovereign risk; Counterparty risk; Joint default probability; Early
+   warning signals; Credit default swaps; G32; G01
+ID RISK
+AB The ongoing EU sovereign debt crisis is causing great concern about the sustainability of national debt issued by the member states. In this paper, we propose a methodology to estimate the likelihood of the default of one or more countries in the Euro Area by extending the approach in Pianeti et al. [J. Fixed Income, 2012, 21, 44-58] to the case of multiple defaults. We provide an assessment of the marginal, the joint and the conditional default probabilities within the Euro Zone. The adopted measure of systemic risk is the probability of a joint default of the EU countries over a 5 year time horizon. We find evidence of increasing systemic risk and danger of contagion from early 2007 and more significantly from late 2011 onwards. We show that our measure has predictive ability with respect to the equity market.
+C1 [Pianeti, R.; Giacometti, R.] Univ Bergamo, Dept Management Econ & Quantitat Methods, Bergamo, Italy.
+   [Pianeti, R.] Cass Business Sch, CEA, London, England.
+RP Giacometti, R (reprint author), Univ Bergamo, Dept Management Econ & Quantitat Methods, Bergamo, Italy.
+EM rosella.giacometti@unibg.it
+OI Giacometti, Rosella/0000-0002-9761-3529
+FU Italian MIURMinistero dell' Istruzione, dell' Universita e della Ricerca
+   (MIUR); MIURMinistero dell' Istruzione, dell' Universita e della Ricerca
+   (MIUR) [GIAC02013]
+FX This research has been funded by Italian MIUR under grant PRIN
+   2010RHAHPL-MISURA (MultIvariate Statistical methods for Risk
+   Assessment), 2013-2015 and MIUR ex60% GIAC02013.
+CR Acharya V., 2010, WORKING PAPER
+   Adrian T., 2011, WORKING PAPER
+   Amadei L., 2011, I CREDIT DEFAULT SWA
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Bai J, 2013, CDS BOND BASIS
+   Cherubini U., 2004, WILEY FINANCE SERIES
+   Cousin A., 2012, QUANT FINANC, V1, P1
+   Davis M., 2001, QUANTITATIVE FINANCE, V1, P382, DOI DOI 10.1080/713665832
+   De Nicol G., 2011, WORKING PAPER
+   De Wit J., 2006, WORKING PAPER
+   Driessen J, 2005, REV FINANC STUD, V18, P165, DOI 10.1093/rfs/hhi009
+   Duffle D., 1999, FINANCIAL ANAL J, P73, DOI DOI 10.2469/FAJ.V55.N1.2243
+   European Central Bank, 2009, CRED DEF SWAPS COUNT
+   Fontana A, 2010, WORKING PAPER
+   Giglio S., 2011, WORKING PAPER
+   HODRICK RJ, 1992, REV FINANC STUD, V5, P357, DOI 10.1093/rfs/5.3.357
+   Hollo D., 2012, WORKING PAPER
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Hull J., 2001, J DERIV, V8, P12, DOI DOI 10.3905/J0D.2001.319153
+   JARROW RA, 1995, J FINANC, V50, P53, DOI 10.2307/2329239
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   O'Kane D., 2001, WORKING PAPER
+   Palladini G., 2011, WORKING PAPER
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Perraudin W, 2004, J BANK FINANC, V28, P2769, DOI 10.1016/j.jbankfin.2004.06.009
+   PIANETI R, 2012, J FIXED INCOME, V21, P44
+   Radev D., 2012, SYSTEMIC RISK BANKIN
+   Ravn MO, 2002, REV ECON STAT, V84, P371, DOI 10.1162/003465302317411604
+   Remolona E., 2008, J FIXED INCOME, P57, DOI DOI 10.3905/JFI.2008.705542
+   Schonbucher PJ, 2001, J RISK FINANCE, V3, P45, DOI DOI 10.1108/EB043482
+   Schwaab B., 2011, WORKING PAPER
+   Segoviano M. A., 2006, CONSISTENT INFORM MU
+   Segoviano M. A., 2009, 627 LOND SCH EC FIN
+   Trapp M., 2009, WORKING PAPER
+   Zhang X, 2012, CONDITIONAL PROBABIL
+   Zheng H., 2012, QUANT FINANC, V1, P1
+NR 38
+TC 6
+Z9 6
+U1 1
+U2 13
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD JAN 2
+PY 2015
+VL 15
+IS 1
+BP 61
+EP 78
+DI 10.1080/14697688.2014.932919
+PG 18
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA AW4KO
+UT WOS:000346250300005
+DA 2019-12-28
+ER
+
+PT J
+AU Fuerst, F
+   McAllister, P
+   Sivitanides, P
+AF Fuerst, Franz
+   McAllister, Patrick
+   Sivitanides, Petros
+TI Flight to quality? An investigation of changing price spreads in
+   commercial real estate markets
+SO STUDIES IN ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Commercial real estate; Investment markets; Real estate cycles;
+   Risk-return relationship
+AB Purpose - The purpose of this paper is to investigate the effect of the crisis on the pricing of asset quality attributes. This paper uses sales transaction data to examine whether flight from risk phenomena took place in the US office market during the financial crisis of 2007-2009.
+   Design/methodology/approach - Hedonic regression procedures are used to test the hypothesis that the spread between the pricing of low-quality and high-quality characteristics increased during the crisis period compared to the pre-crisis period.
+   Findings - The results of the hedonic regression models suggest that the price spread between Class A and other properties grew significantly during the downturn.
+   Research limitations/implications - Our results are consistent with the hypothesis of an increased price spread following a market downturn between Class A and non-Class A offices. The evidence suggests that the relationships between the returns on Class A and non-Class A assets changed during the period of market stress or crisis.
+   Practical implications - These findings have implications for real estate portfolio construction. If regime switches can be predicted and/or responded to rapidly, portfolios may be rebalanced. In crisis periods, portfolios might be reweighted towards Class A properties and in positive market periods, the reweighting would be towards non-Class A assets.
+   Social implications - The global financial crisis has demonstrated that real estate markets play a crucial role in modern economies and that negative developments in these markets have the potential to spillover and create contagion for the larger economy, thereby affecting jobs, incomes and ultimately people's livelihoods.
+   Originality/value - This is one of the first studies that address the flight to quality phenomenon in commercial real estate markets during periods of financial crisis and market turmoil.
+C1 [Fuerst, Franz] Univ Cambridge, Dept Land Econ, Cambridge, England.
+   [McAllister, Patrick] UCL, Bartlett Sch, London, England.
+   [Sivitanides, Petros] Neapolis Univ Pafos, Sch Land & Environm Sci, Paphos, Cyprus.
+RP Fuerst, F (reprint author), Univ Cambridge, Dept Land Econ, Cambridge, England.
+EM ff274@cam.ac.uk
+OI Fuerst, Franz/0000-0003-2780-938X
+FU Cambridge University Land Society (CULS)
+FX The authors wish to thank the CoStar Group for providing a large
+   database of property transactions to enable this research. Franz Fuerst
+   also wishes to acknowledge the generous support of the Cambridge
+   University Land Society (CULS).
+CR Baele Lieven, 2013, 19095 NAT BUR EC RES
+   Barrios S., 2009, EUROPEAN COMMISSION, V388
+   Collett D, 2003, REAL ESTATE ECON, V31, P205, DOI 10.1111/1540-6229.00063
+   Durand RB, 2010, ACCOUNT FINANC, V50, P281, DOI 10.1111/j.1467-629X.2009.00320.x
+   Fisher J, 2004, REAL ESTATE ECON, V32, P239, DOI 10.1111/j.1080-8620.2004.00091.x
+   Fisher J, 2003, REAL ESTATE ECON, V31, P269, DOI 10.1111/1540-6229.00066
+   Florance A., 2010, J REAL ESTATE PORTFO, V16, P101
+   Gatzlaff DH, 1997, J REAL ESTATE FINANC, V14, P33, DOI 10.1023/A:1007763816289
+   Gubareva M., 2013, 152013DEUECE WP TU L
+   GUILKEY D, 1989, AREUEA J, V17, P70
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Johnson K. H, 2007, J HOUSING RES, V16, P131
+   Ling DC, 2008, J REAL ESTATE FINANC, V36, P367, DOI 10.1007/s11146-007-9099-6
+   Pilpack J., 2010, PACIFIC EC REV, V15, P385
+   Scheff J., 2006, REAL DEAL NEW YO NOV
+   Shiller R., 1998, BROOKINGS WHARTON PA
+   Vayanos D, 2004, NBER WORKING PAPERS
+   Zheng L., 1998, WORKING PAPER
+NR 18
+TC 7
+Z9 7
+U1 1
+U2 1
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1086-7376
+EI 1755-6791
+J9 STUD ECON FINANC
+JI Stud. Econ. Financ.
+PY 2015
+VL 32
+IS 1
+BP 2
+EP +
+DI 10.1108/SEF-10-2013-0155
+PG 16
+WC Business, Finance
+SC Business & Economics
+GA V74CR
+UT WOS:000211755600001
+DA 2019-12-27
+ER
+
+PT J
+AU Grilli, R
+   Tedeschi, G
+   Gallegati, M
+AF Grilli, Ruggero
+   Tedeschi, Gabriele
+   Gallegati, Mauro
+TI Markets connectivity and financial contagion
+SO JOURNAL OF ECONOMIC INTERACTION AND COORDINATION
+LA English
+DT Article
+DE Systemic risk; Business cycle; Volatility; Network connectivity; Giant
+   component
+ID SYSTEMIC RISK; CYCLE; FIRM
+AB In this paper we investigate the sources of instability in credit and financial systems and the effect of credit linkages on the macroeconomic activity. By developing an agent-based model, we analyze the evolving dynamics of the economy as a complex, adaptive and interactive system, which allows us to explain some key events that occurred during the recent economic and financial crisis. In particular, we study the repercussions of inter-bank connectivity on banks' performances, bankruptcy waves and business cycle fluctuations. Interbank linkages, in fact, not only allow participants to share risk but also create potential for one bank's crisis to spread through the network. The purpose of the model is, therefore, to build up the dependence among agents at the micro-level and to estimate their impact on the macro stability.
+C1 [Grilli, Ruggero; Tedeschi, Gabriele; Gallegati, Mauro] Polytech Univ Marche, Ancona, Italy.
+RP Grilli, R (reprint author), Polytech Univ Marche, Ancona, Italy.
+EM ruggero.grilli@gmail.com; gabriele.tedeschi@gmail.com
+RI GALLEGATI, MAURO/A-4091-2016
+OI Tedeschi, Gabriele/0000-0003-2638-7373
+FU European UnionEuropean Union (EU) [CRISIS-ICT-2011-288501]
+FX For valuable comments and without implicating for any errors, we thank
+   participants at the 17th Workshop on Economics and Heterogeneous
+   Interacting Agents, June 21-23 2012, University of Pantheon-Assas, Paris
+   II. The research leading to these results has received funding from the
+   European Union, Seventh Framework Programme FP7/2007-2013 under Grant
+   Agreement No. CRISIS-ICT-2011-288501.
+CR Affinito M, 2012, J BANK FINANC, V36, P3163, DOI 10.1016/j.jbankfin.2011.11.016
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2000, ECON J, V110, P236, DOI 10.1111/1468-0297.00499
+   Angelini P, 1996, BANK ITALY WORKING P, V266
+   Ascari G, 2012, QUADERNI DIPARTIMENT, V157
+   Assenza T, 2012, CENDEF WORKING PAPER, V12-08
+   Bank for International Settlements (BIS), 1983, EC PAPERS, V8
+   Bargigli L, 2014, PHYSICA A, V399, P1, DOI 10.1016/j.physa.2013.12.029
+   Bartelsman E, 2005, IND CORP CHANGE, V14, P365, DOI 10.1093/icc/dth057
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Baum C. F., 2004, ECON MODEL, V25, P833
+   Berger AN, 1998, J BANK FINANC, V22, P613, DOI 10.1016/S0378-4266(98)00038-7
+   BERNANKE B, 1990, Q J ECON, V105, P87, DOI 10.2307/2937820
+   BERNANKE B, 1989, AM ECON REV, V79, P14
+   Bernanke BS, 1999, HBK ECON, V15, P1341
+   BERNANKE BS, 1995, J ECON PERSPECT, V9, P27, DOI 10.1257/jep.9.4.27
+   Burns AF., 1946, STUDIES BUSINESS CYC
+   Cassar G, 2004, J BUS VENTURING, V19, P261, DOI 10.1016/S0883-9026(03)00029-6
+   Castiglionesi F, 2007, DISCUSSION PAPERS TI
+   Cincotti S, 2010, ECONOMICS-KIEL, V4, DOI 10.5018/economics-ejournal.ja.2010-26
+   Cirillo P, 2013, METHODOL COMPUT APPL, V15, P821, DOI 10.1007/s11009-012-9281-z
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   Cont R, 1997, SCALING STOCK MARKET
+   Cont R., 2007, LONG MEMORY EC, P289
+   Di Guilmi C, 2004, PHYSICA A, V333, P325, DOI 10.1016/j.physa.2003.10.022
+   Di Guilmi C., 2005, INT J APPL ECONOMETR, V2, P5
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Ding Z., 1993, J EMPIR FINANC, V1, P83, DOI DOI 10.1016/0927-5398(93)90006-D
+   Ding ZX, 1996, J ECONOMETRICS, V73, P185, DOI 10.1016/0304-4076(95)01737-2
+   Dinger V, 2007, DISCUSSION PAPER SER, V223
+   Erdos P., 1959, PUBL MATH-DEBRECEN, V6, P290, DOI DOI 10.1234/12345678
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gatti DD, 2005, J ECON BEHAV ORGAN, V56, P489, DOI 10.1016/j.jebo.2003.10.012
+   Gatti DD, 2011, NEW ECON WINDOWS, P1, DOI 10.1007/978-88-470-1971-3
+   Gatti DD, 2012, J ECON BEHAV ORGAN, V83, P375, DOI 10.1016/j.jebo.2012.03.011
+   Ghosal V, 2000, REV ECON STAT, V82, P338, DOI 10.1162/003465300558722
+   GREENWALD BC, 1990, AM ECON REV, V80, P160
+   GREENWALD BC, 1993, Q J ECON, V108, P77, DOI 10.2307/2118496
+   Harding D, 2002, J MONETARY ECON, V49, P365, DOI 10.1016/S0304-3932(01)00108-8
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Hodrick RJ, 1997, J MONEY CREDIT BANK, V29, P1, DOI 10.2307/2953682
+   Humphrey D, 1986, TECHNOLOGY REGULATIO, P97
+   Iori G, 2001, PHYSICA A, V299, P205, DOI 10.1016/S0378-4371(01)00297-7
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   Krippner Greta, 2005, SOCIO-ECON REV, V3, P173, DOI [10.1093/SER/mwi008, DOI 10.1093/SER/MWI008]
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   LUX T, 2001, APPL FINANCIAL EC, V11, P299, DOI DOI 10.1080/096031001300138708
+   Minsky H. P., 1986, STABILIZING UNSTABLE
+   Mishkin Frederic S, 2011, 16755 NBER
+   MYERS SC, 1984, J FINANC ECON, V13, P187, DOI 10.1016/0304-405X(84)90023-0
+   Orhangazi O, 2008, CAMB J ECON, V32, P863, DOI 10.1093/cje/ben009
+   Riccetti L, 2011, DISES WORKING PAPERS
+   Rochet JC, 1996, J MONEY CREDIT BANK, V39, P5
+   Rochon LP, 2010, J POLIT ECON, V28, P832
+   Sornette D, 2011, NATURE, V471, P166, DOI 10.1038/471166a
+   Stanca L., 1999, IND CORP CHANGE, V8, P551
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Tedeschi G, 2009, EUR PHYS J B, V71, P489, DOI 10.1140/epjb/e2009-00337-6
+   Tedeschi G, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0052749
+   Thurner S, 2003, QUANT FINANC, V3, P306, DOI 10.1088/1469-7688/3/4/307
+   Trichet J-C, 2010, OP SPEECH ECB CENTR
+   Upper C, 2002, DISCUSSION PAPER SER, V1
+   Vitali S, 2013, IND CORP CHANGE, V22, P1069, DOI 10.1093/icc/dtt024
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 66
+TC 14
+Z9 14
+U1 1
+U2 46
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1860-711X
+EI 1860-7128
+J9 J ECON INTERACT COOR
+JI J. Econ. Interact. Coord.
+PD OCT
+PY 2015
+VL 10
+IS 2
+SI SI
+BP 287
+EP 304
+DI 10.1007/s11403-014-0129-1
+PG 18
+WC Economics
+SC Business & Economics
+GA CT7DA
+UT WOS:000362972600005
+DA 2019-12-27
+ER
+
+PT J
+AU Boubakri, S
+   Guillaumin, C
+AF Boubakri, Salem
+   Guillaumin, Cyriac
+TI Regional integration of the East Asian stock markets: An empirical
+   assessment
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Regional financial integration; East Asia; International capital asset
+   pricing model (ICAPM)
+ID FINANCIAL INTEGRATION; ONE PRICE; RISK; CONTAGION; PREMIUM; ASSETS;
+   PARITY; REAL; LAW; EMU
+AB The aim of this paper is to study the dynamics of regional financial integration in East Asia over the 1990:01-2012:08 period. To this end, we use the international capital asset pricing model (ICAPM) to assess the evolution of financial market integration through time and evaluate their risk premia. We also construct an Asian currency basket in order to obtain a reference currency in this area. Our empirical analysis is based on the multivariate GARCH-DCC approach with time-varying correlations. Our results show that the East Asian stock markets were partially segmented (except for Japan) within their region until approximately 2008. However, the last years are characterized by an upward trend in the regional integration of stock markets. Our findings also show that the risk premium related to regional stock markets is significant for all countries. (C) 2015 Elsevier Ltd. All rights reserved.
+C1 [Boubakri, Salem] Univ Paris 04, Abu Dhabi, U Arab Emirates.
+   [Guillaumin, Cyriac] Univ Grenoble Alpes, CREG, F-38040 Grenoble, France.
+RP Guillaumin, C (reprint author), Univ Grenoble Alpes, CREG, 1241 Rue Residences,BP 47, F-38040 Grenoble, France.
+EM cyriac.guillaumin@upmf-grenoble.fr
+CR ADLER M, 1983, J FINANC, V38, P925, DOI 10.2307/2328091
+   Aizenman J, 2010, INT REV ECON FINANC, V19, P353, DOI 10.1016/j.iref.2009.10.009
+   Allegret J.-P., 2012, INT EC, V132, P35
+   Allen F., 2012, 17828 NBER
+   Angeloni I., 2011, BLUEPRINT SERIES, V13
+   Baele L., 2004, ECB OCCASIONAL PAPER, V14
+   Baharumshah AZ, 2011, APPL ECON, V43, P1979, DOI 10.1080/00036840902902243
+   Bailliu J., 2003, BANK CANADA REV, V1, P17
+   Balvers RJ, 2014, J INT MONEY FINANC, V41, P214, DOI 10.1016/j.jimonfin.2013.12.002
+   Barr DG, 2004, J INT MONEY FINANC, V23, P71, DOI 10.1016/j.jimonfin.2003.10.005
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   Bekaert G, 1997, J FINANC ECON, V43, P29, DOI 10.1016/S0304-405X(96)00889-6
+   BENASSY-QUERE A., 2011, REFORMER SYSTEME MON
+   Capannelli G., 2009, 33 ADB
+   Carrieri F, 2007, J FINANC QUANT ANAL, V42, P915, DOI 10.1017/S0022109000003446
+   Cheung YW, 2011, PAC ECON REV, V16, P1, DOI 10.1111/j.1468-0106.2010.00531.x
+   Chi J, 2006, PAC ECON REV, V11, P513, DOI 10.1111/j.1468-0106.2006.00332.x
+   Chinn M, 2008, J COMP POLICY ANAL, V10, P309, DOI DOI 10.1080/13876980802231123
+   Christiansen C, 2007, EUR FINANC MANAG, V13, P923, DOI 10.1111/j.1468-036X.2007.00403.x
+   Coudert V., 2013, 201308 CEPII
+   Coudert V, 2013, J INT MONEY FINANC, V32, P491, DOI 10.1016/j.jimonfin.2012.05.025
+   De Santis G, 1998, J FINANC ECON, V49, P375, DOI 10.1016/S0304-405X(98)00029-4
+   DeSantis G, 1997, J FINANC, V52, P1881, DOI 10.1111/j.1540-6261.1997.tb02745.x
+   Devereux MB, 2011, ROUTL STUD MOD WORLD, V87, P1
+   DUMAS B, 1995, J FINANC, V50, P445, DOI 10.2307/2329415
+   Edwards S., 2003, EC FINANCIAL CRISES
+   Eichengreen B, 2005, NEW FINANCIAL MARKET STRUCTURE FOR EAST ASIA, P84
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ERRUNZA V, 1985, J FINANC, V40, P105, DOI 10.2307/2328050
+   FELDSTEIN M, 1980, ECON J, V90, P314, DOI 10.2307/2231790
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Fratzscher M, 2002, INT J FINANC ECON, V7, P165, DOI 10.1002/ijfe.187
+   Gan PT, 2014, ECON MODEL, V42, P208, DOI 10.1016/j.econmod.2014.07.003
+   Garcia-Solanes Jose, 2009, ECONOMICS-KIEL, V3, P1
+   Gerard B., 2003, J ECON BUS, V55, P585, DOI DOI 10.1016/S0148-6195(03)00055-9
+   Guillaumin C, 2009, J ASIAN ECON, V20, P314, DOI 10.1016/j.asieco.2009.02.002
+   Hardouvelis GA, 2006, J BUS, V79, P365, DOI 10.1086/497414
+   HARVEY CR, 1991, J FINANC, V46, P111, DOI 10.2307/2328691
+   Hinojales M, 2011, ROUTL STUD MOD WORLD, V87, P174
+   International Monetary Fund. (IMF), 2013, COORD PORTF INV SURV
+   International Monetary Fund (IMF), 2012, ANN REP EXCH ARR EXC
+   Jeon J., 2006, ASIAN ECON PAP, V5, P73, DOI DOI 10.1162/ASEP.2006.5.1.73
+   Karolyi A., 2002, HDB EC FINANCE, V1, P975
+   Karolyi GA, 2004, REV ECON STAT, V86, P670, DOI 10.1162/0034653041811699
+   Kim S., 2006, 695 MRPA
+   Kim S, 2012, REV INT ECON, V20, P332, DOI 10.1111/j.1467-9396.2012.01025.x
+   Kim S, 2011, WORLD ECON, V34, P23, DOI 10.1111/j.1467-9701.2010.01280.x
+   KOSE A, 2006, 06189 IMF
+   Lamont OA, 2003, J ECON PERSPECT, V17, P191, DOI 10.1257/089533003772034952
+   Lane PR, 2007, J INT ECON, V73, P223, DOI 10.1016/j.jinteco.2007.02.003
+   LINTNER J, 1965, REV ECON STAT, V47, P13, DOI 10.2307/1924119
+   Ma GN, 2011, J JPN INT ECON, V25, P23, DOI 10.1016/j.jjie.2010.09.002
+   Mitchener K. J., 2006, COUNTRY RISK CURRENC
+   Ng T. H, 2014, 135 ADB
+   OBSTFELD M, 1995, J ECON PERSPECT, V9, P73, DOI 10.1257/jep.9.4.73
+   Ogawa E, 2006, WORLD ECON, V29, P1691, DOI 10.1111/j.1467-9701.2006.00864.x
+   Park C.-Y., 2013, 351 ADB
+   Park C.-Y., 2011, ASIAN ECON POLICY R, V11, P122
+   Park YC, 2011, ASIAN ECON PAP, V10, P42, DOI 10.1162/ASEP_a_00100
+   Patnaik I., 2010, 204 ADBI
+   PHYLAKTIS K, 2004, EMERG MARK REV, V5, P317
+   Pippenger J, 2008, J INT MONEY FINANC, V27, P915, DOI 10.1016/j.jimonfin.2008.05.003
+   PLUMMER M, 2006, ECON INTEGRATION, V107, P59
+   Qi R., 2003, EMERGING EC REV, V4, P91
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Rey Helene, 2013, JACKS HOL S
+   Rigobon R, 2002, NBER CONF R, P269
+   Rogoff K, 1996, J ECON LIT, V34, P647
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   SHIRONO K., 2009, 093 IMF
+   Tai C. S., 2003, J INT FINANC MARK I, V13, P291
+   Thimann C., 2009, 1031 ECB
+   Tse YK, 2002, J BUS ECON STAT, V20, P351, DOI 10.1198/073500102288618496
+   WILLIAMSON J., 2005, POLICY BRIEFS INT EC
+   Yu IW, 2010, J BANK FINANC, V34, P2874, DOI 10.1016/j.jbankfin.2010.02.010
+NR 76
+TC 14
+Z9 14
+U1 2
+U2 34
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD OCT
+PY 2015
+VL 57
+BP 136
+EP 160
+DI 10.1016/j.jimonfin.2015.07.011
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA CR2KB
+UT WOS:000361157100007
+DA 2019-12-27
+ER
+
+PT J
+AU Mizuta, T
+   Kosugi, S
+   Kusumoto, T
+   Matsumoto, W
+   Izumi, K
+AF Mizuta, Takanobu
+   Kosugi, Shintaro
+   Kusumoto, Takuya
+   Matsumoto, Wataru
+   Izumi, Kiyoshi
+TI Effects of dark pools on financial markets' efficiency and price
+   discovery function: an investigation by multi-agent simulations
+SO EVOLUTIONARY AND INSTITUTIONAL ECONOMICS REVIEW
+LA English
+DT Article
+DE Dark pool; Market efficiency; Price discovery function; Artificial
+   market model; Multi-agent simulation
+ID SHORT-SELLING REGULATION; DESIGN; MODELS; LIMITS
+AB In financial stock markets, dark pools, in which order books or quotes are not provided, are becoming widely used. However, increasing the use of dark pools would raise regulatory concerns as it may ultimately affect the quality of the price discovery function in the lit markets, which are normal markets in which all order books are provided to investors. This may destabilize a market and heighten financial systemic risk. In this study, we investigated effects of a dark pool on financial markets' efficiency and the price discovery function by using an artificial market model. We found that the markets are made more efficient by raising the share of the trading value amount of the dark pool by a certain level. However, raising the share above the level makes the market significantly inefficient. This indicates that the dark pool has an optimal usage rate for market efficiency. The smart order routing (SOR) is transmitting market orders to the dark pool, and this leads the depth of limit orders to become thicker. The thicker limit orders absorb market orders, and thus a market price is still stable near a fundamental price. On the other hand, when too many waiting orders are stored in the dark pool, the orders absorb market orders in the lit market by SOR and prevent the market price converging to the fundamental price. This causes the market price to stay very different from the fundamental price and makes the lit market inefficient. We also discuss mechanisms by which a dark pool makes a market efficient or inefficient by using a simple equation model. The equations suggest that if the trading value amount is higher in dark pools than in lit markets, markets become inefficient. This suggests that when the usage rate of dark pools is low, dark pools rarely destroy the price discovery function even though a large buy-sell imbalance occurs. On the other hand, when the usage rate of dark pools is very high, dark pools very easily destroy the price discovery function by a very slight buy-sell imbalance. We also compared results of the equations with those of simulations and found similar tendencies.
+C1 [Mizuta, Takanobu] SPARX Asset Management Co Ltd, Tokyo, Japan.
+   [Kusumoto, Takuya; Matsumoto, Wataru] Nomura Secur Co Ltd, Tokyo, Japan.
+   [Izumi, Kiyoshi] Univ Tokyo, Sch Engn, Tokyo, Japan.
+   [Izumi, Kiyoshi] Japan Sci & Technol Agcy, CREST, Tokyo, Japan.
+RP Mizuta, T (reprint author), SPARX Asset Management Co Ltd, Tokyo, Japan.
+EM mizutata@gmail.com
+RI Mizuta, Takanobu/Y-8387-2019
+OI Mizuta, Takanobu/0000-0003-4329-0645
+CR Bowley A., 2014, AGREEMENT MIFID II R
+   Chen SH, 2012, KNOWL ENG REV, V27, P187, DOI 10.1017/S0269888912000136
+   Chiarella C., 2002, Quantitative Finance, V2, P346, DOI 10.1088/1469-7688/2/5/303
+   Cristelli M, 2014, COMPLEXITY FINANCIAL
+   European Commission, 2010, 8 EUR COMM
+   FRIEDMAN D, 1993, SFI S SCI C, V14, P3
+   Johnson Barry, 2010, ALGORITHMIC TRADING
+   Kobayashi S, 2011, EVOL INST ECON REV, V7, P355, DOI 10.14441/eier.7.355
+   Lebaron B, 2006, HANDB ECON, V13, P1187
+   Mizuta T, 2015, JPX WORKING PAPER
+   Mizuta T, 2013, JPX WORKING PAPER
+   Mizuta T, 2016, INTELL SYST ACCOUNT, V23, P97, DOI 10.1002/isaf.1374
+   Mizuta T, 2015, ELECTR COMMUN JPN, V98, P13, DOI 10.1002/ecj.11684
+   Mo SYK, 2013, IEEE C COMP INTEL FI, P19, DOI 10.1109/CIFEr.2013.6611692
+   SEC, 2010, FED REGISTER, V75, P3594
+   Sewell M., 2006, CHARACTERIZATION FIN
+   Stockl T, 2010, EXP ECON, V13, P284, DOI 10.1007/s10683-010-9241-9
+   Thurner S, 2012, QUANT FINANC, V12, P695, DOI 10.1080/14697688.2012.674301
+   Tokyo Stock Exchange, 2012, GUID TSE TRAD METH
+   VERHEYDEN T, 2013, REV BUS EC LIT, V58, P140
+   Westerhoff FH, 2008, JAHRB NATL STAT, V228, P195
+   Yagi I, 2010, EVOL INST ECON REV, V7, P113, DOI 10.14441/eier.7.113
+   Ye M, 2012, PRICE DISCOVERY T CO
+   Yeh CH, 2010, J ECON DYN CONTROL, V34, P2089, DOI 10.1016/j.jedc.2010.05.015
+NR 24
+TC 3
+Z9 3
+U1 0
+U2 4
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1349-4961
+EI 2188-2096
+J9 EVOL INST ECON REV
+JI Evol. Inst. Econ. Rev.
+PD DEC
+PY 2015
+VL 12
+IS 2
+BP 375
+EP 394
+DI 10.1007/s40844-015-0020-3
+PG 20
+WC Economics
+SC Business & Economics
+GA DD0MC
+UT WOS:000369613100011
+DA 2019-12-28
+ER

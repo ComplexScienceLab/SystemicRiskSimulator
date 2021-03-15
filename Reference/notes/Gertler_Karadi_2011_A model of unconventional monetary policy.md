@@ -1,0 +1,73 @@
+# A model of unconventional monetary policy
+
+![[Gertler2011-zotero#Metadata]]
+
+Other files:
+
+* Mdnotes File Name: [[Gertler2011]]
+* Metadata File Name: [[Gertler2011-zotero]]
+
+##  Zotero links
+
+* [Local library](zotero://select/items/1_LG2NB8NM)
+* [Cloud library](http://zotero.org/users/6240833/items/LG2NB8NM)
+
+## Notes
+
+- 
+
+# A model of unconventional monetary policy
+
+## Metadata
+
+* Item Type: [[Article]]
+* Authors: [[Mark Gertler]], [[Peter Karadi]]
+* Date: [[1/2011]]
+* Date Added: [[2020-11-13]]
+* URL: [https://linkinghub.elsevier.com/retrieve/pii/S0304393210001261](https://linkinghub.elsevier.com/retrieve/pii/S0304393210001261)
+* DOI: [10.1016/j.jmoneco.2010.10.004](https://doi.org/10.1016/j.jmoneco.2010.10.004)
+* Cite key: Gertler2011
+* Topics: [[货币政策]]
+* Related: [[MaYong2013]]
+  , #zotero, #literature-notes, #reference
+* PDF Attachments
+  - [Gertler_Karadi_2011_A model of unconventional monetary policy.pdf](zotero://open-pdf/library/items/8V8WIV8V)
+
+## Abstract
+
+We develop a quantitative monetary DSGE model with ﬁnancial intermediaries that face endogenously determined balance sheet constraints. We then use the model to evaluate the eﬀects of the central bank using unconventional monetary policy to combat a simulated ﬁnancial crisis. We interpret unconventional monetary policy as expanding central bank credit intermediation to oﬀset a disruption of private ﬁnancial intermediation. The primary advantage the central bank has over private intermediaries is that it can elastically obtain funds by issuing riskless government debt. During the crisis, the balance sheet constraints on private intermediaries tighten, raising the net beneﬁts from central bank intermediation. We ﬁnd that the welfare beneﬁts from this policy may be substantial if the relative eﬃciency costs of central bank intermediation are modest. Further, in a ﬁnancial crisis there are beneﬁts from credit policy even if the nominal interest has not reached the zero lower bound. In the event the zero lower bound constraint is binding, however, the next beneﬁts from credit policy may be signiﬁcantly enhanced.
+
+
+##  Zotero links
+
+* [Local library](zotero://select/items/1_LG2NB8NM)
+* [Cloud library](http://zotero.org/users/6240833/items/LG2NB8NM)
+
+## Highlights and Annotations
+
+- [[Gertler2011 - 摘要]]
+
+* Mdnotes File Name: [[Gertler2011]]
+
+# 摘要
+
+我们开发了一种金融金融中介机构的定量货币DSGE模型，该模型面临着内生确定的资产负债表约束。然后，我们使用该模型评估央行使用非常规货币政策应对模拟金融危机的影响。我们将非常规货币政策解释为扩大中央银行信贷中介以抵消私人金融中介的破坏。在我们的框架内，中央银行在放贷方面没有私人中介有效，但是它的优点是能够通过发行无风险的政府债务来灵活地获得资金。与私人中介不同，它不受资产负债表的约束。在危机期间，私人中介机构的资产负债表约束变紧，从而增加了央行中介机构的净收益。即使对名义利率的零下限约束没有约束力，这些收益也可能是可观的。如果此约束具有约束力，则这些净收益可能会得到显着增强。
+
+
+
+## 模型
+
+
+
+#### 家庭部门
+
+提供劳动力、消费、储蓄。
+
+
+
+#### 金融部门
+
+金融部门（金融中介、银行之类的金融部门）提供贷款其从储户来，至非金融公司。持有长期资产和基金
+
+
+

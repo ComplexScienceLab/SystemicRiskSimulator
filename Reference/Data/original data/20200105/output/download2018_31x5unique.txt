@@ -1,0 +1,572 @@
+
+PT J
+AU Ho, VH
+AF Ho, Virginia Harper
+TI Nonfinancial Risk Disclosure and the Costs of Private Ordering
+SO AMERICAN BUSINESS LAW JOURNAL
+LA English
+DT Article
+ID CORPORATE SOCIAL-RESPONSIBILITY; MANDATORY DISCLOSURE; SECURITIES
+   DISCLOSURE; SYSTEMIC RISK; PERFORMANCE; INFORMATION; GOVERNANCE;
+   MANAGEMENT; INNOVATION; SEC
+AB In 2016 the Securities and Exchange Commission (SEC) considered for the first time whether financial disclosure reform should address information on sustainability matters and other sources of nonfinancial risk. The resulting debate over these issues raised fundamental questions about how well the federal disclosure regime addresses emerging risks and about how well private ordering, through shareholder engagement, the work of private standard-setters, and corporate voluntary disclosure, can fill the gaps. This article argues that the current model of nonfinancial risk disclosure, based largely on private ordering, is ineffective and undermines the SEC's mission to protect investors, facilitate capital formation, and promote fair, orderly, and efficient markets. This conclusion rests on evidence that the current state of sustainability disclosure is inadequate for investment analysis and that these deficiencies are largely problems of comparability and quality that cannot readily be addressed by private ordering. This article also highlights the costs of agency inaction to investors and to public companies, which have been largely ignored in the debate over the future of financial reporting. It concludes by proposing avenues for disclosure reform.
+C1 [Ho, Virginia Harper] Univ Kansas, Law, Lawrence, KS 66045 USA.
+   [Ho, Virginia Harper] George Washington Univ, Sch Law, Washington, DC 20052 USA.
+RP Ho, VH (reprint author), Univ Kansas, Law, Lawrence, KS 66045 USA.; Ho, VH (reprint author), George Washington Univ, Sch Law, Washington, DC 20052 USA.
+CR Abbott K. W., 2009, VANDERBILT J TRANSNA, V42, P501
+   AHMAD FATIMA MARIA, 2017, HORIZON CORPORATE RE, P15
+   Allen Hilary J., 2018, J CORP L UNPUB
+   Anabtawi I, 2011, NOTRE DAME LAW REV, V86, P1349
+   Ang A, 2006, J FINANC, V61, P259, DOI 10.1111/j.1540-6261.2006.00836.x
+   Ang Andrew, 2006, J FINANC, V61, P260
+   [Anonymous], VANG RESP INV POL
+   [Anonymous], 2016, COMMUNICATION, P1
+   [Anonymous], DISCL EFF REV
+   [Anonymous], 2016, COMM SHEARM STERL LL
+   [Anonymous], DIV EC RISK AN
+   [Anonymous], 2012, FED REGISTER, V77, p[56, 274]
+   [Anonymous], AB THE TASK FORC
+   [Anonymous], DISCL EFF
+   [Anonymous], 2017, FED REGISTER, V82, P50988
+   [Anonymous], 2015, FED REGISTER, V80, P65
+   [Anonymous], ALIGNMENT
+   [Anonymous], 2017, FED REGISTER, V82, P9339
+   [Anonymous], CORP RESP REP PERF D
+   [Anonymous], 2009, STAFF LEGAL B E, V14E
+   [Anonymous], SIGN BAS AUM HITS 59
+   [Anonymous], 2016, RAT DIR PROP ENV SOC, P2
+   [Anonymous], 2018, FED REGISTER, V83, P8166
+   [Anonymous], 2018, SUST REP POL
+   [Anonymous], 2012, FED REGISTER, V77, P52274
+   [Anonymous], 2011, FED REGISTER, V76, P81762
+   [Anonymous], 2016, FED REGISTER, V81, P23916
+   [Anonymous], LIST RUL INT GUID
+   [Anonymous], 2017, COMMUNICATION
+   [Anonymous], 2012, MEMORANDUM RSFI OGC
+   [Anonymous], 2015, FED REGISTER, V80, P65136
+   [Anonymous], 2015, EXCH STRENGTH ESG GU
+   [Anonymous], 1989, FED REGISTER, V54, p[22, 427]
+   [Anonymous], COMM CONC REL BUS FI
+   [Anonymous], 2016, FED REGISTER, V81, P41652
+   [Anonymous], 2016, S70616 SEC
+   [Anonymous], IND GUID
+   [Anonymous], SUST REP ASS
+   [Anonymous], CORP CIT REP CHARTS
+   [Anonymous], 2013, INT AN INV AR ADDR E, p[11, 6]
+   [Anonymous], 2018, MAT ESG METR
+   Bainbridge SM, 2000, U CINCI LAW REV, V68, P1023
+   BARON RICHARD, 2014, EVOLUTION CORPORATE
+   BARTELS WIM, 2016, CARROTS STICKS GLOBA, p[10, 14]
+   Boiral O, 2013, ACCOUNT AUDIT ACCOUN, V26, P1036, DOI 10.1108/AAAJ-04-2012-00998
+   Boiral Olivier, 1051, ACCT AUDITING ACCOUN, V26, P1036
+   Bouslah K, 2013, J BANK FINANC, V37, P1258, DOI 10.1016/j.jbankfin.2012.12.004
+   BRUDNEY V, 1979, HARVARD LAW REV, V93, P322, DOI 10.2307/1340381
+   Brudney Victor, 1979, HARVARD LAW REV, V93, P336
+   BUSINESS ROUNDTABLE, 2016, PRINCIPLES CORPORATE, P2
+   Campbell JL, 2014, REV ACCOUNT STUD, V19, P396, DOI 10.1007/s11142-013-9258-3
+   CERES, 2014, COOL RESP SEC CORP C, P12
+   CFA INST, 2015, ENV SOC GOV ISS INV, P3
+   Clayton J, 2017, COMMUNICATION
+   CLEMENTS-HUNT PAUL, 2012, LENSES CLOCKS FINANC
+   Coates JC, 2015, YALE LAW J, V124, P882
+   COFFEE JC, 1984, VA LAW REV, V70, P717, DOI 10.2307/1073083
+   Coffee JC, 2009, VA LAW REV, V95, P707
+   Commission Guidance on the Use of Company Websites, 2008, FED REGISTER, V73, P45862
+   CONF. BOARD, 2015, SUST PRACT 2015 KEY, P8
+   CTR. FOR STRATEGY & EVALUATION SERVS, 2011, DISCL NONF INF COMP, P25
+   Davidoff Steven M., 2013, SEATTLE U L REV, V36, P599
+   Dhaliwal DS, 2011, ACCOUNT REV, V86, P59, DOI 10.2308/accr.00000005
+   Div. Corp. Fin, 2011, CF DISCL GUID TOP 2
+   Drupp Moritz A., 2015, 195 CTR CLIM CHANG E
+   EASTERBROOK FH, 1984, VA LAW REV, V70, P669, DOI 10.2307/1073082
+   El Ghoul S, 2011, J BANK FINANC, V35, P2388, DOI 10.1016/j.jbankfin.2011.02.007
+   ERNST & YOUNG, 2017, IS YOUR NONF PERF RE, p[6, 18]
+   Ferrell A, 2007, J LEGAL STUD, V36, P213, DOI 10.1086/511898
+   FIN. REPORTING COUNCIL, 2012, WHAT CONST EXPL COMP, P5
+   Fischel Daniel R, 1991, EC STRUCTURE CORPORA
+   Fox MB, 1999, VA LAW REV, V85, P1335, DOI 10.2307/1073870
+   FOX MB, 1997, MICH LAW REV, V95, P2498
+   Fox Merritt B., 1997, MICH LAW REV, V95, P2550
+   Freeman J, 2000, ADMIN LAW REV, V52, P813
+   Freeman J, 2000, NEW YORK U LAW REV, V75, P543
+   Freeman J, 2012, HARVARD LAW REV, V125, P1131
+   Friede G., 2015, J SUSTAIN FINANC INV, V5, P210, DOI [DOI 10.1080/20430795.2015.1118917, 10.1080/20430795.2015.1118917]
+   Georgiev GS, 2017, UCLA LAW REV, V64, P602
+   GIBSON DUNN, 2017, SHAR PROP DEV 2017 P
+   GILSON RJ, 1984, VA LAW REV, V70, P549, DOI 10.2307/1073080
+   GLOB, 2016, LINK G4 HKEX ESG REP
+   Global Reporting Initiative, GRI STAND
+   Godfrey PC, 2009, STRATEG MANAGE J, V30, P425, DOI 10.1002/smj.750
+   Goshen Z, 2006, DUKE LAW J, V55, P711
+   Goss A, 2011, J BANK FINANC, V35, P1794, DOI 10.1016/j.jbankfin.2010.12.002
+   GOVERNANCE & ACCOUNTABILITY INST, 2016, FLASH REP 81 S P 500
+   Guttentag Michael D., 2013, UC DAVIS BUS L J, V13, P207
+   Guttentag Michael D., 2013, UC DAVIS BUS LJ, V13, P224
+   Haan SC, 2016, YALE LAW J, V126, P262
+   Hahn R, 2014, J BUS ETHICS, V123, P401, DOI 10.1007/s10551-013-1801-4
+   HAUSER INST. FOR CIVIL SOC'Y HARV. KENNEDEY SCH, 2015, CORP SOC RESP DISCL
+   HAWLEY JAMES P., 2000, RISE FIDUCIARY CAPIT, p[3, 98]
+   Hirst Scott, 2018, HARV BUS L REV, V8
+   Ho Virginia Harper, 2018, COMMENTS REGUL UNPUB
+   Ho Virginia Harper, 2017, LEWIS CLARK L REV, V21, P317
+   Ho Virginia Harper, 2016, J CORP L, V41, P647
+   Ho Virginia Harper, 2016, J CORP L, V41, P668
+   Hong Harrison, 2016, 22890 NAT BUR EC RES
+   HONG KONG EXCHS. & CLEARING LTD, 2015, CONS CONCL REV ENV S
+   Hu HTC, 2012, TEX LAW REV, V90, P1601
+   Hu Henry T. C., 2012, TEX LAW REV, V90, P1713
+   Hu Henry T. C., 2014, YALE J REGUL, V31, P565
+   Hu Henry T. C., 1989, U PENN LAW REV, V138, P412
+   Hu Henry T.C, 2014, YALE J REGUL, V31, P636
+   HU HTC, 1989, U PENN LAW REV, V138, P333, DOI 10.2307/3312314
+   INT'L CORP. ACCOUTABILITY ROUNDTABLE, 2013, KNOW SHOW US US SEC, P16
+   INT'L CORP. GOV. NETWORK, 2016, GLOB STEW PRINC
+   International Organization for Standardization, POP STAND
+   IRRC INST, 2016, CORP RISK FACT DISCL
+   John C., 2015, YALE LAW J, V124, P919
+   Kauffmann Celine, 2012, OECD WORKING PAPERS, V2012, P13
+   Khan M, 2016, ACCOUNT REV, V91, P1697, DOI 10.2308/accr-51383
+   Koh PS, 2014, STRATEGIC MANAGE J, V35, P1464, DOI 10.1002/smj.2171
+   KPMG, 2017, ROAD AH KPMG SURV CO
+   Krueger P., 2015, 1540 SWISS FIN I
+   Langevoort, 2013, GEORGETOWN LAW J, V101, P375
+   Langevoort DC, 1997, U PENN LAW REV, V146, P101, DOI 10.2307/3312706
+   Langevoort DC, 2013, GEORGETOWN LAW J, V101, P337
+   Lin TCW, 2015, BOSTON U LAW REV, V95, P461
+   Lin Tom C. W., 2015, BU L REV, V95, P510
+   Lin Tom C.W., 2014, ALA L REV, V65, P572
+   Lin Tom C.W., 2014, ALA L REV, V65, P567
+   Lobel O, 2004, MINN LAW REV, V89, P342
+   Lowenstein L, 1996, COLUMBIA LAW REV, V96, P1335, DOI 10.2307/1123407
+   Lowenstein Louis, 1996, COLUMBIA LAW REV, V96, P1342
+   Luo XM, 2009, J MARKETING, V73, P198, DOI 10.1509/jmkg.73.6.198
+   MAHONEY PG, 1995, U CHICAGO LAW REV, V62, P1047, DOI 10.2307/1600055
+   Malkiel BG, 1997, J PORTFOLIO MANAGE, V23, P9, DOI 10.3905/jpm.1997.409608
+   MCALLISTER LK, 2014, MICH J ENV ADM L, V3, P291
+   Mufson Steven, 2017, WASH POST
+   OECD, 2017, INV GOV INT ENV SOC, P30
+   Oikonomou I, 2012, FINANC MANAGE, V41, P483, DOI 10.1111/j.1755-053X.2012.01190.x
+   Organisation for Economic Co-operation and Development, 2011, OECD GUID MULT ENT
+   Orlitzky M, 2003, ORGAN STUD, V24, P403, DOI 10.1177/0170840603024003910
+   Orlitzky M., 2001, BUSINESS SOC, V40, P369, DOI DOI 10.1177/000765030104000402
+   Orlitzky Marc, 2003, ORGAN STUD, V24, P424
+   Orlitzky Marc, 2003, ORGAN STUD, V24, P427
+   Orlitzky Marc, 2001, BUS SOC, V40, P387
+   Paredes TA, 2006, U ILLINOIS LAW REV, P975
+   Paredes Troy A., 2006, U ILL L REV, P1026
+   Paredes Troy A., 2006, U ILL L REV, V2006, P1010
+   Partnoy F, 1999, WASH U LQ, V77, p[619, 690f]
+   Partnoy Frank, 1999, WASHINGTON U LAW Q, V77, P619, DOI DOI 10.2139/SSRN.167412
+   Potoski M, 2009, VOLUNTARY PROGRAMS C, P17
+   PRINCIPLES FOR RESPONSIBLE INVESTMENT & UNEP FINANCE INITIATIVE, 2011, UN OWN WHY ENV EXT M
+   PWC, 2014, SUST GOES MAINSTR IN, P6
+   Rodrigues U, 2010, VA LAW REV, V96, P1
+   Romano R, 1998, YALE LAW J, V107, P2359, DOI 10.2307/797346
+   Sagy T, 2011, LAW SOC REV, V45, P923, DOI 10.1111/j.1540-5893.2011.00461.x
+   Sale HA, 2013, GEORGE WASH LAW REV, V81, P1012
+   Sale Hillary A., 2009, VA LAW REV, V95, P775
+   Schact Kurt N., 2016, COMMUNICATION
+   Schwarcz SL, 2004, U ILLINOIS LAW REV, P1
+   Schwarcz SL, 2002, NORTHWEST U LAW REV, V97, P319
+   Schwarcz SL, 2008, GEORGETOWN LAW J, V97, P193
+   Schwarcz Steven L., 2002, NORTHWEST U LAW REV, V97, P326
+   Schwarcz Steven L., 2008, GEORGETOWN LAW J, V97, P198
+   Scott HS, 2010, HARVARD J LAW PUBL P, V33, P671
+   Scott Hal S., 2010, HARV J L PUB POL Y, V33, P672
+   Sharfman MP, 2008, STRATEG MANAGE J, V29, P569, DOI 10.1002/smj.678
+   Shumsky Tatyana, 2016, WALL ST J
+   SUSTAINABILITY ACCOUNTING STANDARDS BD, 2016, STAT DISCL 2016 AN E, P4
+   Task Force on Climate- Related Fin. Disclosures, 2017, FIN REP REC TASK FOR
+   TASK FORCE ON CLIMATE-RELATED FINANCIAL DISCLOSURES, 2016, PHAS 1 REP TASK FORC, P7
+   TASK FORCE ON CLIMATE-RELATED FINANCIAL DISCLOSURES, 2017, ANN IMPL REC TASK FO
+   TASK FORCE ON CLIMATE-RELATED FINANCIAL DISCLOSURES, 2017, TECHN SUPPL US SCEN
+   TECH. COMM. OF THE INT'L ORG. OF SEC. COMM'NS, 2011, MIT SYST RISK ROL SE
+   THACHER SIMPSON, 2016, MEM SER 2016 PROX SE
+   The World Business Council for Sustainable Development, 2017, SUST ENT RISK MAN 1
+   Trubek L., 2007, COLUM J EUR L, V13, P539
+   U. S. SEC. & EXCH. COMM'N, 2016, REP MOD SIMPL REG S
+   U. S. SEC. & EXCH. COMM'N, 2013, REP REV DISCL REQ RE
+   UNEP FINANCE INITIATIVE, 2005, LEG FRAM INT ENV SOC, P13
+   UNITED NATIONS, 2011, HUM RIGHTS GUID PRIN
+   UNITED NATIONS CONFERENCE ON TRADE & DEV, 2014, BEST PRACT GUID POL, P5
+   UNITED NATIONS: SUSTAINABLE STOCK EXCH. (SSE), 2015, MOD GUID REP ESG INF
+   Unruh Gregory, 2016, MIT SLOAN MGMT 0511
+   US SIF US SIF FOUNDATION BIENNIAL REPORT ON U.S. SUSTAINABLE, US SIF FDN BIENN REP
+   Vandenbergh MP, 2013, CORNELL LAW REV, V99, P129
+   Viehs M, 2015, STOCKHOLDER STAKEHOL
+   Viscuso Michael J., 2007, DEL J CORP L, V32, P879
+   Viscuso Michael J., 2007, DEL J CORP L, V32, P890
+NR 183
+TC 3
+Z9 3
+U1 0
+U2 4
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0002-7766
+EI 1744-1714
+J9 AM BUS LAW J
+JI Am. Bus. Law J.
+PD FAL
+PY 2018
+VL 55
+IS 3
+BP 407
+EP 474
+PG 68
+WC Business; Law
+SC Business & Economics; Government & Law
+GA GP2GH
+UT WOS:000440645000001
+DA 2019-12-28
+ER
+
+PT J
+AU Frey, R
+   Hledik, J
+AF Frey, Ruediger
+   Hledik, Juraj
+TI Diversification and Systemic Risk: A Financial Network Perspective
+SO RISKS
+LA English
+DT Article
+DE systemic risk; financial network; diversification
+ID CONTAGION; MARKET; STABILITY
+AB In this paper, we study the implications of diversification in the asset portfolios of banks for financial stability and systemic risk. Adding to the existing literature, we analyse this issue in a network model of the interbank market. We carry out a simulation study that determines the probability of a systemic crisis in the banking network as a function of both the level of diversification, and the connectivity and structure of the financial network. In contrast to earlier studies we find that diversification at the level of individual banks may be beneficial for financial stability even if it does lead to a higher asset return correlation across banks.
+C1 [Frey, Ruediger; Hledik, Juraj] Vienna Univ Econ & Business, Dept Finance Accounting & Stat, A-1020 Vienna, Austria.
+RP Frey, R (reprint author), Vienna Univ Econ & Business, Dept Finance Accounting & Stat, A-1020 Vienna, Austria.
+EM ruediger.frey@wu.ac.at; hledik.juraj@gmail.com
+FU Austrian Science Fund FWF via the Vienna Graduate School in Finance VGSF
+FX Financial support from the Austrian Science Fund FWF via the Vienna
+   Graduate School in Finance VGSF is gratefully acknowledged.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Ali Robleh, 2016, SYSTEMIC RISK DERIVA
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Bramoulle Y, 2014, AM ECON REV, V104, P898, DOI 10.1257/aer.104.3.898
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Frey R., 2003, J RISK, V6, P59, DOI DOI 10.21314/J0R.2003.089)
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Greenspan Alan, 2002, SPEECH COUNCIL FOREI
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hurd T. R., 2011, ARXIV11104312
+   Hurd Tom, 2014, ARXIV13106873
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Soramaki Kimmo, 2006, FEDERAL RESERVE BANK, P243
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 26
+TC 2
+Z9 2
+U1 0
+U2 1
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2227-9091
+J9 RISKS
+JI Risks
+PD JUN
+PY 2018
+VL 6
+IS 2
+AR 54
+DI 10.3390/risks6020054
+PG 11
+WC Business, Finance
+SC Business & Economics
+GA GK8WP
+UT WOS:000436512300031
+OA DOAJ Gold, Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Qin, FM
+   Zhang, JR
+   Zhang, ZY
+AF Qin, Fengming
+   Zhang, Junru
+   Zhang, Zhaoyong
+TI RMB Exchange Rates and Volatility Spillover across Financial Markets in
+   China and Japan
+SO RISKS
+LA English
+DT Article
+DE Chinese RMB; stock markets; volatility; spillover effects
+ID INTERNATIONAL SPILLOVERS; ASYMPTOTIC THEORY; RATE EXPOSURE; STOCK;
+   MODEL; OIL; CONSTRAINTS; CONTAGION; RENMINBI; STRESS
+AB This study examines empirically the volatility spillover effects between the RMB foreign exchange markets and the stock markets by employing daily returns of the Chinese RMB exchange rates and the stock markets in China and Japan during the period in 1998-2018. We find evidence that there exist co-volatility effects among the financial markets in China and Japan, and the volatility of RMB exchange rates contribute to the co-volatility spillovers across the financial markets. Reversely, the return shock from the stock markets can also generate co-volatility spillover to the foreign exchange markets. The bidirectional relationship reveals that both the fundamental hypothesis and the investor-induced hypothesis are valid. Our estimates also show that the spillover effects led by the stock market in Japan are stronger than that from the foreign exchange markets and the Chinese stock markets, implying that market with higher accessibility has greater spillover effects onto other markets. We also found that the average co-volatility spillover effects among the RMB exchange markets and the stock markets in Japan and China are generally negative. These findings have important policy implications for risk management and hedging strategies.
+C1 [Qin, Fengming] Shandong Univ, Sch Econ, Jinan 250100, Shandong, Peoples R China.
+   [Zhang, Junru; Zhang, Zhaoyong] Edith Cowan Univ, Sch Business & Law, Joondalup, WA 6027, Australia.
+RP Zhang, ZY (reprint author), Edith Cowan Univ, Sch Business & Law, Joondalup, WA 6027, Australia.
+EM fmqin@sdu.edu.cn; j.zhang@ecu.edu.au; zhaoyong.zhang@ecu.edu.au
+RI Zhang, Zhaoyong/D-5100-2013
+OI Zhang, Zhaoyong/0000-0001-9596-2648
+FU Sumitomo Foundation
+FX The third author wishes to acknowledge the financial support from the
+   Sumitomo Foundation.
+CR Abdalla I, 1997, APPL FINANCIAL EC, V7, P25, DOI DOI 10.1080/096031097333826
+   Ahmed Amira A., 2017, APPL EC FINANCE, V5, P14, DOI [10.11114/aef.v5i1.2842, DOI 10.11114/AEF.V5I1.2842]
+   AJAYI RA, 1996, J FINANC RES, V19, P193, DOI DOI 10.1111/J.1475-6803.1996.TB00593.X
+   Apostolakis G, 2016, INT REV ECON FINANC, V43, P542, DOI 10.1016/j.iref.2016.02.002
+   Baker M, 2007, J ECON PERSPECT, V21, P129, DOI 10.1257/jep.21.2.129
+   Black SW, 2015, REV INT ECON, V23, P379, DOI 10.1111/roie.12167
+   BOLLERSLEV T, 1990, REV ECON STAT, V72, P498, DOI 10.2307/2109358
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Cao LL, 2018, INT BUS REV, V27, P543, DOI 10.1016/j.ibusrev.2017.10.005
+   Caporin M, 2012, J ECON SURV, V26, P736, DOI 10.1111/j.1467-6419.2011.00683.x
+   Carpenter JN, 2017, ANNU REV FINANC ECON, V9, P233, DOI 10.1146/annurev-financial-110716-032333
+   Chang CL, 2019, FINANC RES LETT, V28, P11, DOI 10.1016/j.frl.2018.03.008
+   Chang CL, 2018, RENEW SUST ENERG REV, V81, P1002, DOI 10.1016/j.rser.2017.07.024
+   Chang CL, 2010, ENERG ECON, V32, P1445, DOI 10.1016/j.eneco.2010.04.014
+   Chang TH, 2010, ENERGY, V35, P2807, DOI 10.1016/j.energy.2010.03.006
+   Chkili W, 2016, RES INT BUS FINANC, V38, P22, DOI 10.1016/j.ribaf.2016.03.005
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Dobson W, 2009, CHINA ECON REV, V20, P124, DOI 10.1016/j.chieco.2008.05.005
+   DORNBUSCH R, 1980, AM ECON REV, V70, P960
+   Engle III Robert F., 1988, NATL BUREAU EC RES, V58, P525
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Funke M, 2015, J INT MONEY FINANC, V59, P245, DOI 10.1016/j.jimonfin.2015.07.008
+   Granger C. W. J., 2000, Q REV EC FINANCE, V40, P337, DOI DOI 10.1016/S1062-9769(00)00042-9
+   Ho KY, 2018, N AM J ECON FINANC, V46, P168, DOI 10.1016/j.najef.2018.04.005
+   Ho KY, 2017, INT REV ECON FINANC, V52, P302, DOI 10.1016/j.iref.2017.01.016
+   Hong H, 2003, REV FINANC STUD, V16, P487, DOI 10.1093/rfs/hhg006
+   Hussain H., 2005, EC B, V7, P1
+   Ito T, 2016, J JPN INT ECON, V41, P17, DOI 10.1016/j.jjie.2016.05.001
+   Jayasinghe P, 2014, ECON MODEL, V42, P128, DOI 10.1016/j.econmod.2014.06.003
+   JORION P, 1990, J BUS, V63, P331, DOI 10.1086/296510
+   Kesik A., 2016, J EC FINANCE ACCOUNT, V3, P166
+   Khalfaoui R, 2015, ENERG ECON, V49, P540, DOI 10.1016/j.eneco.2015.03.023
+   Kim K., 2003, REV FINANCIAL EC, V12, P301, DOI [10.1016/S1058-3300(03)00026-0, DOI 10.1016/S1058-3300(03)00026-0]
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Lien D, 2013, J FUTURES MARKETS, V33, P696, DOI 10.1002/fut.21609
+   Ling SQ, 2003, ECONOMET THEOR, V19, P280, DOI 10.1017/S0266466603192092
+   Liow KH, 2018, ECON MODEL, V68, P96, DOI 10.1016/j.econmod.2017.06.012
+   Liu C., 2008, WORLD ECON, V5, P30
+   Maghyereh AI, 2017, ENERG ECON, V68, P440, DOI 10.1016/j.eneco.2017.10.025
+   McAleer M, 2005, ECONOMET THEOR, V21, P232, DOI 10.1017/S0266466605050140
+   McAleer M, 2014, ECONOMETRICS, V2, P92, DOI 10.3390/econometrics2020092
+   McAleer M, 2009, ECONOMET REV, V28, P422, DOI 10.1080/07474930802467217
+   McAleer M, 2008, J ECONOMETRICS, V147, P104, DOI 10.1016/j.jeconom.2008.09.032
+   Morales-Zumaquero A, 2018, Q REV ECON FINANC, V70, P121, DOI 10.1016/j.qref.2018.04.013
+   Nishimura Y, 2018, ECON MODEL, V69, P237, DOI 10.1016/j.econmod.2017.09.023
+   PERRON P, 1989, ECONOMETRICA, V57, P1361, DOI 10.2307/1913712
+   Rafiq Sara, 2017, GLOBAL J EC BUSINESS, V3, P301, DOI [10.12816/0048119, DOI 10.12816/0048119]
+   Rashid A, 2007, J ASIAN ECON, V18, P595, DOI 10.1016/j.asieco.2007.03.003
+   Reboredo JC, 2018, ENERG ECON, V74, P38, DOI 10.1016/j.eneco.2018.05.030
+   Ren YH, 2018, EMERG MARK FINANC TR, V54, P3099, DOI 10.1080/1540496X.2018.1429262
+   Rojec M, 2018, J ECON SURV, V32, P579, DOI 10.1111/joes.12207
+   Sato Kiyotaka, 2018, INT USE RENMINBI INV
+   Spantig K, 2015, ASIA EUR J, V13, P459, DOI 10.1007/s10308-015-0415-0
+   Umar Z, 2017, RISKS, V5, DOI 10.3390/risks5020022
+   Wangs P, 2004, J INT FINANC MARK I, V14, P367
+   Wong CY, 2017, J INT TRADE ECON DEV, V26, P955, DOI 10.1080/09638199.2017.1325071
+   Wu F, 2011, J FUTURES MARKETS, V31, P1052, DOI 10.1002/fut.20499
+   Xiang Jia, 2018, ADV MANAGEMENT APPL, V8, P1
+   Xie C, 2017, FLUCT NOISE LETT, V16, DOI 10.1142/S0219477517500043
+   Xu HC, 2017, J INT FINANC MARK I, V49, P173, DOI 10.1016/j.intfin.2017.05.001
+   Yao DQ, 2016, WORLD ECON, V39, P2, DOI 10.1111/twec.12364
+   Yarovaya L, 2017, INT REV FINANC ANAL, V53, P94, DOI 10.1016/j.irfa.2017.07.007
+   Yau HY, 2006, J ASIAN ECON, V17, P535, DOI 10.1016/j.asieco.2006.04.006
+   Yuan K, 2005, J FINANC, V60, P379, DOI 10.1111/j.1540-6261.2005.00733.x
+   Zhang F, 2017, EMERG MARK FINANC TR, V53, P2845, DOI 10.1080/1540496X.2017.1382346
+   Zhao H, 2010, RES INT BUS FINANC, V24, P103, DOI 10.1016/j.ribaf.2009.09.001
+NR 70
+TC 1
+Z9 1
+U1 4
+U2 7
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2227-9091
+J9 RISKS
+JI Risks
+PD DEC
+PY 2018
+VL 6
+IS 4
+AR 120
+DI 10.3390/risks6040120
+PG 26
+WC Business, Finance
+SC Business & Economics
+GA HH3TM
+UT WOS:000455642400017
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Arnold, IJM
+   Soederhuizen, B
+AF Arnold, Ivo J. M.
+   Soederhuizen, Beau
+TI Sovereign bond holdings and monetary policy operations in the euro area
+SO JOURNAL OF POLICY MODELING
+LA English
+DT Article
+DE Monetary policy; Sovereign bonds; Banking system; Euro crisis
+ID RISK SPILLOVERS; SYSTEMIC RISK; CREDIT RISK; BANKS; EXPOSURES; DEFAULT
+AB This paper investigates the relationship between sovereign bond holdings of banks and refinancing operations by the ECB for countries in the euro area. We use data collected by Bruegel as well as a new dataset compiled from the annual statements of national central banks to estimate panel regression models. Our findings support the hypothesis that the ECB's refinancing operations have increased resident banks' exposure to domestic sovereign bonds. This is in line with the moral suasion theory advanced in the literature. These results strengthen the case for regulatory changes aimed at reducing the sensitivity of banks to sovereign risk. (C) 2018 The Society for Policy Modeling. Published by Elsevier Inc. All rights reserved.
+C1 [Arnold, Ivo J. M.] Erasmus Univ, Erasmus Sch Econ, POB 1738, NL-3000 DR Rotterdam, Netherlands.
+   [Arnold, Ivo J. M.; Soederhuizen, Beau] Nyenrode Business Univ, Staatweg 25, NL-3621 BG Breukelen, Netherlands.
+RP Arnold, IJM (reprint author), Erasmus Univ, Erasmus Sch Econ, POB 1738, NL-3000 DR Rotterdam, Netherlands.; Arnold, IJM (reprint author), Nyenrode Business Univ, Staatweg 25, NL-3621 BG Breukelen, Netherlands.
+EM arnold@eur.ese.nl; b.soederhuizen@nyenrode.nl
+CR Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Acharya VV, 2015, J FINANC ECON, V115, P215, DOI 10.1016/j.jfineco.2014.11.004
+   Allegret JP, 2017, J BANK FINANC, V74, P24, DOI 10.1016/j.jbankfin.2016.10.004
+   Alter A, 2014, J BANK FINANC, V42, P134, DOI 10.1016/j.jbankfin.2014.01.030
+   Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Andritzky J., 2016, EUROPEAN EC, P139
+   Arnold I.J.M., 2001, INT FINANC, V4, P101
+   Arnold IJM, 2012, J POLICY MODEL, V34, P906, DOI 10.1016/j.jpolmod.2012.05.016
+   Battistini N, 2014, ECON POLICY, V29, P203, DOI 10.1111/1468-0327.12029
+   Betz F, 2016, J FINANC STABIL, V25, P206, DOI 10.1016/j.jfs.2015.10.006
+   Bocola L, 2016, J POLIT ECON, V124, P879, DOI 10.1086/686734
+   Bolton P, 2011, IMF ECON REV, V59, P162, DOI 10.1057/imfer.2011.5
+   Brunnermeier MK, 2016, AM ECON REV, V106, P508, DOI 10.1257/aer.p20161107
+   Chan-Lau JA, 2015, J FINANC STABIL, V16, P164, DOI 10.1016/j.jfs.2014.07.003
+   Correa R, 2014, J MONEY CREDIT BANK, V46, P93, DOI 10.1111/jmcb.12080
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   Drechsler I, 2016, J FINANC, V71, P1933, DOI 10.1111/jofi.12421
+   Ejsing J, 2011, ECON LETT, V110, P28, DOI 10.1016/j.econlet.2010.10.001
+   ESRB, 2015, ESRB REP REG TREATM
+   European Commission, 2017, FURTH STEPS COMPL EU
+   Gennaioli N, 2014, J FINANC, V69, P819, DOI 10.1111/jofi.12124
+   Gerlach S., 2010, DISCUSSION PAPER SER, V2010,09
+   Goodhart Charles A. E., 1998, EUROPEAN J POLITICAL, V14, P407, DOI DOI 10.1016/S0176-2680(98)00015-9
+   Gross M, 2013, 1570 ECB
+   Handelsblatt, 2015, HANDELSBLATT
+   Malinvaud Edmond, 1991, ECON POLICY, V6, P341, DOI DOI 10.2307/1344630
+   Merler S., 2012, WHOS AFRAID SOVEREIG
+   Mody A, 2012, ECON POLICY, P199, DOI 10.1111/j.1468-0327.2012.00281.x
+   Pisani-Ferry J, 2012, PROPPING EUROPE BRUE
+   Soederhuizen B, 2017, DISAGGREGATED UNPUB
+   Van Riet A, 2016, ADDRESSING SAF UNPUB
+NR 31
+TC 1
+Z9 1
+U1 0
+U2 1
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 0161-8938
+EI 1873-8060
+J9 J POLICY MODEL
+JI J. Policy Model.
+PD NOV-DEC
+PY 2018
+VL 40
+IS 6
+BP 1243
+EP 1254
+DI 10.1016/j.jpolmod.2018.05.004
+PG 12
+WC Economics
+SC Business & Economics
+GA HC0NO
+UT WOS:000451495300009
+DA 2019-12-28
+ER
+
+PT J
+AU Huerta-Sanchez, D
+   Escobari, D
+AF Huerta-Sanchez, Daniel
+   Escobari, Diego
+TI Changes in sentiment on REIT industry excess returns and volatility
+SO FINANCIAL MARKETS AND PORTFOLIO MANAGEMENT
+LA English
+DT Article
+DE REITs; Investor sentiment; Noise traders; Volatility; GARCH-M
+ID COMMON RISK-FACTORS; INVESTOR SENTIMENT; STOCK-MARKET; REAL-ESTATE;
+   CROSS-SECTION; PRICES; BONDS; NOISE
+AB REIT characteristics pose unique risks and benefits to investors who seek liquid diversification and hedging vehicles to complement their portfolios. This paper tests for the asymmetric effect of individual and institutional investor sentiment on REIT industry returns and conditional volatility. We simultaneously model the impact of two markedly different groups of investors on the return generating process of the REIT industry. Our findings suggest that noise trading imposes significant systemic risk on the realization of REIT industry returns. Interestingly, corrections in institutional investor expectations have a larger effect on REIT industry returns and volatility than changes in individual investor expectations. More specifically, bearish shifts in institutional investor expectations of future market conditions have a significantly larger impact on returns and volatility than bullish shifts. Results align with the overreaction to negative information and loss aversion hypotheses.
+C1 [Huerta-Sanchez, Daniel] Coll Charleston, Sch Business, Dept Finance, Beatty Ctr, 5 Liberty St, Charleston, SC 29424 USA.
+   [Escobari, Diego] Univ Texas Rio Grande Valley, Dept Econ & Finance, 1201 West Univ Dr, Edinburg, TX 78539 USA.
+RP Huerta-Sanchez, D (reprint author), Coll Charleston, Sch Business, Dept Finance, Beatty Ctr, 5 Liberty St, Charleston, SC 29424 USA.
+EM huertade@cofc.edu; diego.escobari@utrgv.edu
+OI Huerta, Daniel/0000-0002-1542-0951; Escobari, Diego/0000-0003-4532-8563
+CR Baker M, 2007, J ECON PERSPECT, V21, P129, DOI 10.1257/jep.21.2.129
+   Baker M, 2006, J FINANC, V61, P1645, DOI 10.1111/j.1540-6261.2006.00885.x
+   Barkham R.J, 1999, J REAL ESTATE RES, V8, P291
+   BLACK F, 1986, J FINANC, V41, P529, DOI 10.2307/2328481
+   Brown G. W., 1999, FINANCIAL ANAL J, V55, P82, DOI DOI 10.2469/FAJ.V55.N2.2263
+   Brown G. W., 2004, J EMPIR FINANC, V11, P1, DOI DOI 10.1016/J.JEMPFIN.2002.12.001
+   Brown GW, 2005, J BUS, V78, P405, DOI 10.1086/427633
+   Buttimer BJ, 2005, REAL ESTATE ECON, V33, P51
+   CHAN KC, 1990, AREUEA J, V18, P431
+   Chan S. H., 2003, REAL ESTATE INVESTME
+   Chan SH, 2005, REAL ESTATE ECON, V33, P89, DOI 10.1111/j.1080-8620.2005.00113.x
+   Chiang KCH, 2010, J REAL ESTATE FINANC, V41, P320, DOI 10.1007/s11146-009-9168-0
+   Clayton J., 2001, EXPLAINING DISCOUNT
+   Das PK, 2015, J REAL ESTATE FINANC, V51, P160, DOI 10.1007/s11146-014-9490-z
+   DEBONDT WFM, 1985, J FINANC, V40, P793, DOI 10.1111/j.1540-6261.1985.tb05004.x
+   DELONG JB, 1990, J POLIT ECON, V98, P703, DOI 10.1086/261703
+   Devos E., 2012, J REAL ESTATE FINANC, V47, P1
+   Downs DH, 1998, REAL ESTATE ECON, V26, P613, DOI 10.1111/1540-6229.00759
+   Escobari D, 2014, EMPIR ECON, V47, P1, DOI 10.1007/s00181-013-0725-2
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   FAMA EF, 1992, J FINANC, V47, P427, DOI 10.2307/2329112
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   Freybote J, 2017, REAL ESTATE ECON, V45, P154, DOI 10.1111/1540-6229.12132
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Han J., 1995, J REAL ESTATE RES, V10, P235
+   Johnk DW, 2015, J BEHAV FINANC, V16, P105, DOI 10.1080/15427560.2015.1034856
+   Lee ML, 2008, J REAL ESTATE FINANC, V36, P165, DOI 10.1007/s11146-007-9058-2
+   Lee S., 2005, J REAL ESTATE PORTFO, V11, P55
+   Lee WY, 2002, J BANK FINANC, V26, P2277, DOI 10.1016/S0378-4266(01)00202-3
+   Lin CY, 2009, J REAL ESTATE FINANC, V39, P450, DOI 10.1007/s11146-008-9115-5
+   Liu SM, 2015, J BEHAV FINANC, V16, P51, DOI 10.1080/15427560.2015.1000334
+   Neal R, 1998, J FINANC QUANT ANAL, V33, P523, DOI 10.2307/2331130
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Oikarinen E, 2011, J REAL ESTATE RES, V33, P73
+   Pagliari JL, 2005, REAL ESTATE ECON, V33, P147, DOI 10.1111/j.1080-8620.2005.00115.x
+   Peterson JD, 1997, REAL ESTATE ECON, V25, P321, DOI 10.1111/1540-6229.00717
+   Ro S, 2011, J REAL ESTATE FINANC, V42, P68, DOI 10.1007/s11146-009-9189-8
+   Verma R, 2009, Q REV ECON FINANC, V49, P1129, DOI 10.1016/j.qref.2008.11.001
+NR 38
+TC 0
+Z9 0
+U1 0
+U2 2
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1575-0698
+EI 2385-4219
+J9 FINANC MARK PORTFOLI
+JI Illes Imper.
+PD AUG
+PY 2018
+VL 32
+IS 3
+BP 239
+EP 274
+DI 10.1007/s11408-018-0312-9
+PG 36
+WC Business, Finance
+SC Business & Economics
+GA GV9WB
+UT WOS:000446511300001
+OA DOAJ Gold
+DA 2019-12-28
+ER

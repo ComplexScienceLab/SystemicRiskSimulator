@@ -1,0 +1,1634 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass paper
+\begin_preamble
+%\usepackage{fontspec}
+%\setromanfont{AR PL ShanHeiSun Uni}%字体来自Adobe Reader 8.0 OpenType，可以选用任何系统已有的字体
+%中文断行 
+%\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt 
+\usepackage{ifxetex}
+\ifxetex
+\usepackage{xeCJK}
+\fi
+\end_preamble
+\options CJK
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\font_cjk gbsn
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement th
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "The LyX Tutorial"
+\pdf_author "LyX Team"
+\pdf_subject "LyX-documentation Tutorial"
+\pdf_keywords "LyX, documentation"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref section
+\pdf_pdfusetitle false
+\pdf_quoted_options "linkcolor=black, citecolor=black, urlcolor=blue, filecolor=blue,pdfpagelayout=OneColumn, pdfnewwindow=true,pdfstartview=XYZ, plainpages=false"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index 索引
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+银行间市场系统风险传染相关综述
+\end_layout
+
+\begin_layout Abstract
+加强与银行系统风险传染相关的研究，要利用复杂性理论，在复杂网络的基础上对银行系统风险传染及其管理进行研究，这对于银行业的健康发展具有重要的现实意义。以下内容将从
+银行系统风险传染相关的理论和基于复杂网络的角度的研究几部分展开。
+\end_layout
+
+\begin_layout Keywords
+银行系统；风险传染；复杂网络；综述
+\end_layout
+
+\begin_layout Section
+引言
+\end_layout
+
+\begin_layout Standard
+金融系统是一个开放复杂的巨系统，是人类创造的最为复杂的系统之一。自20世纪70年代中后期以来，历次金融危机无不表现为流动性冲击的过程，同时伴随着流动性风险在不同
+的经济主体、市场和国家之间的扩散和传染。
+\end_layout
+
+\begin_layout Standard
+银行系统作为金融系统的子系统，随着信用链的延长及其内部交易的激增，呈现出高度的复杂度、集中度、关联度。银行间的债权债务关系网因此变成了一个高度关联的网络。在复杂
+的债权债务网络中，银行系统风险的传染速度越发加快，传染范围更为广泛，传染机制也更为复杂。因此，加强与银行系统风险传染相关的研究，要利用复杂性理论，在复杂网络的基
+础上对银行系统风险传染及其管理进行研究，这对于银行业的健康发展具有重要的现实意义。
+\end_layout
+
+\begin_layout Standard
+以下内容将从银行系统风险传染相关的理论和基于复杂网络的角度的研究几部分展开。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+银行间市场系统风险传染的基于复杂网络的研究有相关理论的研究和相关实证的研究。
+\end_layout
+
+\begin_layout Plain Layout
+相关理论的研究有从经济学的角度、实证角度和基于复杂网络理论的角度。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+银行系统传染相关的理论
+\end_layout
+
+\begin_layout Standard
+本节从经济学角度讨论银行系统风险传染相关的理论。
+\end_layout
+
+\begin_layout Standard
+银行系统的风险传染现象会加速银行破产或增加银行破产的概率，至少会提高银行的资金成本并减少利润，从而增大银行系统的脆弱性。由于银行是金融系统中的中心，是对冲基金的
+主要经济商，并且从事跨国融资，因此其传染问题可以蔓延至大量金融中介机构。
+\end_layout
+
+\begin_layout Standard
+关于揭示系统风险的内生性问题的相关理论有银行体系脆弱性理论、银行挤兑理论、信息不对称理论、逆向选择理论等。我们接下来将介绍一下银行体系的银行挤兑理论，重点阐述基
+于该理论的后续研究之一，即流动性偏好模型。
+\end_layout
+
+\begin_layout Subsection
+D-D挤兑模型
+\end_layout
+
+\begin_layout Standard
+银行挤兑理论最早源于Diamond和Dybvig(1983)提出的D-D银行挤兑模型
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Diamond1983"
+literal "false"
+
+\end_inset
+
+，后续的相关研究都是基于此模型的基础上进行的。D-D模型在一个动态的三期范围内，从银行资产负载业务所具有的内在缺陷——“银行在进行流动性转换的同时也产生了非流动
+性资产对应流动性负债”的角度揭示了银行系统风险内生性的根源。该模型认为，银行负债主要是分散的、短期资金，可以随时被赎回，存款者对流动性的要求不确定，而银行资产是
+非流动性的，当前无流动性需求的存款人如果认为银行的经营面临困境而有可能破产从而威胁到他们自身资金安全时，他们会提前提现，当更多存款人加入提现队列从而出现过度的挤
+兑行为时，该银行将会面临被清算的结局。该模型最后指出：对于一个当前无流动需求的存款人而言，银行挤兑是存款人基于预期与银行进行一个不理想的博弈的均衡结果。
+\end_layout
+
+\begin_layout Standard
+D-D模型中，所有存款者在 
+\begin_inset Formula $t=0$
+\end_inset
+
+ 时是完全相同的，每人都面临一种只有自身能观察到的、属于第一类（不耐心）或者第二类（耐心）类型的未保险风险。在 
+\begin_inset Formula $t=1$
+\end_inset
+
+ 时，每位存款者才明白其所属类型。假设在时点 0 给予每位存款人 1 单位捐款，他们将其投资于生产技术。如果存款人在 
+\begin_inset Formula $t=1$
+\end_inset
+
+ 时发现自己是类型1，则只能获得原始投资用于消费，即
+\begin_inset Formula $C_{1}^{1}=1$
+\end_inset
+
+（
+\begin_inset Formula $C_{k}^{i}$
+\end_inset
+
+为一位类型
+\begin_inset Formula $i$
+\end_inset
+
+的存款人在时期
+\begin_inset Formula $k$
+\end_inset
+
+的消费）。若存款人发现自己属于类型2，则可以等到投资周期的完成，获得 R的收益用于消费，即
+\begin_inset Formula $C_{2}^{2}=R$
+\end_inset
+
+。 由于存款人事先并不知道自己属于何种类型（或者是否在 t=1 面临流动性冲击），因此，所有的存款人在
+\begin_inset Formula $t=0$
+\end_inset
+
+都面临同样的只能获得原始价值用于消费的风险。以上描述如公式
+\begin_inset CommandInset label
+LatexCommand label
+name "eq:D-D模型的获得的收益"
+
+\end_inset
+
+所述。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\text{V}=\begin{cases}
+-1 & t=0\\
+\begin{cases}
+0 & \text{短期存款人}\\
+1 & \text{长期存款人}
+\end{cases} & \text{}\\
+\begin{cases}
+R & \text{短期存款人}\\
+0 & \text{长期存款人}
+\end{cases} & t=2
+\end{cases}t=1
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+相比上述没有银行存在时的结果，银行的引入能为模型中的存款人提供一种有保险意义的产品——活期存款契约。银行的活期存款契约产品的保险意义表现在，它能分别为类型
+ 1 的存款人和类型 2 的存款人提供
+\begin_inset Formula $1<R′<R$
+\end_inset
+
+的消费水平。由于存款人在事前并不知道自己的类型，因此这样的收益安排就在存款人中建立了一种风险共担、收益共享的规则。由于存款人都是风险厌恶者，因此大家都愿意与银行
+建立这样一种契约关系。模型进一步假设银行活期存款契约为每位类型1的存款人承诺固定的收益
+\begin_inset Formula $r_{1}(r_{1}>1)$
+\end_inset
+
+。由于银行受连续服务约束，即银行须满足存款人的取款需求直至银行耗尽所有资产，因此银行对存款人的回报还取决于存款人取款时所在的位置。设
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ 为时期类型1的存款人取走的每单位存款的回报，它取决于
+\begin_inset Formula $t=1$
+\end_inset
+
+时该存款人在队伍中所在位置。
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ 为没有在
+\begin_inset Formula $t=1$
+\end_inset
+
+取走的每单位存款时期 2 的回报，它取决于在 
+\begin_inset Formula $t=1$
+\end_inset
+
+ 时的总存款。 以上描述如公式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:D-D模型的回报公式"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+和公式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:D-D模型的回报公式：第二期"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+所述。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+V_{1}[f_{j},r_{1}] & =\begin{cases}
+r_{1} & f_{j}<\frac{1}{r_{1}}\\
+0 & f_{j}\ge\frac{1}{r_{1}}
+\end{cases}\label{eq:D-D模型的回报公式}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{2}[f,r_{1}]=\max\left[R\frac{1-r_{1}f}{1-f},0\right]\label{eq:D-D模型的回报公式：第二期}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中，
+\begin_inset Formula $f_{j}$
+\end_inset
+
+表示在第
+\begin_inset Formula $j$
+\end_inset
+
+位存款人取款之前的取款比例，是活期存款总量的一部分；
+\begin_inset Formula $f$
+\end_inset
+
+表示
+\begin_inset Formula $t=1$
+\end_inset
+
+被取走的活期存款的总比例。
+\end_layout
+
+\begin_layout Standard
+在D-D模型中，一个类型 1 存款人在
+\begin_inset Formula $t=1$
+\end_inset
+
+取款和类型 2 存款人 在
+\begin_inset Formula $t=1$
+\end_inset
+
+，这种好的均衡实现了最佳风险分散，不仅使存款人福利提高，而且社会资源也得到更合理配置，这正是在自给自足的经济中引入银行的意义所在。 
+\end_layout
+
+\begin_layout Standard
+另一方面，活期存款契约也有可能引起存款人对银行的挤兑。大部分挤兑行为的发生都与银行是否健全密切相关。作为一种金融中介机构，银行从储户那里获得资金，然后将资金贷给
+信用良好的客户，由于银行债务主要是短期资金，而其向企业及个人发放的贷款主要是中长期贷款，因此这种经营模式极易使得银行遭受挤兑。如果某银行的贷款损失较大，该银行的
+清债能力会大幅下降；如果某银行的贷款损失超过其资本时，该银行甚至因为清债能力不足而处于破产的境地。若存款人知晓甚至是怀疑银行面临的困境时，他们就会进行挤兑，若银
+行存款没有参与保险，那么银行的困境就会触发严重的挤兑现象。由于预期的作用，这种挤兑甚至会传染到其他健康银行。
+\end_layout
+
+\begin_layout Standard
+虽然大部分挤兑与银行是否健全密切相关，但是也有部分引发存款人挤兑的因素与银行系统是否健全无关。比如说存款人因为信息不对称，而对健康银行产生错误的判断。银行预存款
+者对银行经营情况存在着很强的信息不对称性，存款者处于劣势地位。因为信息成本的存在，所以存款人会根据有限的信息作出相应的行动。由于不同的存款人各自掌握的信息量不一
+样，因此他们对市场的各种信息存在敏感性，任何一个新信息的出现，都会影响存款人的心理预期。每个存款人都拥有各自的信息，他们之间直接分享信息的可能性不大，因此他们主
+要通过观察别人的行动以间接获取别人的信息，从而使得模仿他人的行为变成了一种看似理性的行为。因此，即使银行健全，但是由于银行的存款人在看到其他存款人提现的行为之后
+，也可能加入提现的行列，从而引发该银行的挤兑，如果大量的存款人都将该银行遭受的挤兑看成是其它健康的银行即将遭受挤兑的前兆时，会由于羊群效应，演变成多个银行遭受挤
+兑，甚至会出现整个银行业的恐慌，并最终引发银行业危机。
+\end_layout
+
+\begin_layout Subsection
+基于D-D模型的流动性偏好模型
+\end_layout
+
+\begin_layout Standard
+Allen(2000)在D-D模型的基础上，提出了基于D-D模型的流动性偏好模型
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Allen2000"
+literal "false"
+
+\end_inset
+
+。该模型创新性地研究了风险在银行间市场的传染问题，奠定了该领域微观经济学基础。其主要内容是提出了流动性偏好模型，然后根据受激励约束的规划问题来描述最优风险分担，
+以此说明激励有效分配实际上与最优分配是等价的，而后通过描述几种不同的市场结构来展示如何通过具有存款银行间市场的竞争性银行系统来分散最佳分配。
+\end_layout
+
+\begin_layout Standard
+在货币危机的研究中，已经有研究表明了危机中银行系统和货币市场的相互作用。该文则在货币市场在金融传染的作用进行了进一步研究。
+\end_layout
+
+\begin_layout Standard
+其主要思想是在金融系统中，金融传染被建模为均衡现象。由于各地区的流动性偏好冲击不完全相关，银行对其他银行提出区域间债权，以提供流动性偏好冲击的保险。当没有总体不
+确定性时，可以实现风险分担的最佳分配。但是，这种安排在财务上很脆弱。一个地区的小流动性偏好冲击可能会在整个经济中蔓延。传染的可能性很大程度上取决于地区间索赔结构
+的完整性。完整的索赔结构显示出比不完整的结构更强大。
+\end_layout
+
+\begin_layout Standard
+该文认为，经济由许多地区组成。每个地区的短期和长期消费者数量随机波动，但流动性的总需求量不变。这允许区域间保险，因为流动性过剩的地区为流动性短缺的地区提供流动性
+。提供保险可以通过银行间存款市场进行组织。假设当区域B具有较少数量的短期消费者时，区域A具有大量短期消费者，反之亦然。由于A区和B区在其他方面相同，因此它们的保
+证金是完美的替代品。银行在观察流动性冲击之前的第一天交换存款。如果区域A在时期1的短期消费者数量高于平均水平，那么A区的银行可以通过清算区域银行的部分存款来履行
+其义务。区域B很乐意承担义务，因为它有一个短期资产形式的流动性供应过剩。在最后的时期，该过程被逆转，因为B区的银行清算他们在A区持有的存款，以满足B区晚期消费者
+的高于平均水平的需求。 
+\end_layout
+
+\begin_layout Standard
+通过数学模型描述如下：
+\end_layout
+
+\begin_layout Standard
+在时间的假设上，存在三个离散时期（本质上是离散时间点）
+\begin_inset Formula $t=\{0,1,2\}$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+在资产的假设上，存在短期资产和长期资产两种类型。短期资产又称为流动资产。在时期
+\begin_inset Formula $t(t=\{0,1\})$
+\end_inset
+
+将存储到银行用于投资的1单位消费品在时期
+\begin_inset Formula $t+1$
+\end_inset
+
+产生一个单位的消费品。该资产的回报在一个时期后结束，然后可提现返回短期投资者（短期消费者）。长期资产又称非流动性资产，其回报率
+\begin_inset Formula $R(R>1)$
+\end_inset
+
+较高，但需要更多时间（时期
+\begin_inset Formula $t_{2}$
+\end_inset
+
+）才能成熟。
+\end_layout
+
+\begin_layout Standard
+经济被划分为四个事前相同的区域，分别为A,B,C,D。区域结构是一个笼统的空间概念，可以通过多种方式进行解释。在分析中，划分区域的重要依据是，不同地区会受到不同
+的流动性冲击。任何能够激发不同（银行集团）冲击的事件都可能是对区域结构的解释。一个地区可以对应一个银行，一个国家内的地理区域或整个国家，它也可以对应于银行业内的
+专业部门。
+\end_layout
+
+\begin_layout Standard
+每个地区都包含一系列在模型启动之前类型相同且暂时未确定的消费者（存款者）。消费者的出资量等于消费品在时期
+\begin_inset Formula $t_{0}$
+\end_inset
+
+（初始时间）的一个单位，而在时期
+\begin_inset Formula $t_{1}$
+\end_inset
+
+和时期
+\begin_inset Formula $t_{2}$
+\end_inset
+
+消费者的数量在时期
+\begin_inset Formula $t_{0}$
+\end_inset
+
+得到确定，在整个时期都恒定不变。消费者的行为被假定具有D-D挤兑属性：概率
+\begin_inset Formula $ω$
+\end_inset
+
+对应的是短期消费者占所有消费者的比例，短期消费者仅在时期
+\begin_inset Formula $t_{1}$
+\end_inset
+
+产生消费
+\begin_inset Formula $c_{1}$
+\end_inset
+
+；概率
+\begin_inset Formula $1-ω$
+\end_inset
+
+对应的是长期消费者。长期消费者仅在时期
+\begin_inset Formula $t_{2}$
+\end_inset
+
+产生消费
+\begin_inset Formula $c_{2}$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+对于单个消费者来说，其效用偏好
+\begin_inset Formula $U[c_{1},c_{2}]$
+\end_inset
+
+由下式给出：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U[c_{1},c_{2}]=\begin{cases}
+u[c_{1}] & \text{概率为\ensuremath{\omega}}\\
+u[c_{2}] & \text{概率为1-\ensuremath{\omega}}
+\end{cases}\label{eq:单个消费者的效用偏好}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+存在2种由各区域的不同的消费者的结构组成的等可能的状态（同时也是初始状态）
+\begin_inset Formula $S_{i},i=\{1,2\}$
+\end_inset
+
+。对于这2种等可能状态，在不同区域的表示如表格
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "各区域各状态的消费者结构的概率表格"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+所示：
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega_{H}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega_{H}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega_{H}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega_{H}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "各区域各状态的消费者结构的概率表格"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在表中，概率
+\begin_inset Formula $\omega$
+\end_inset
+
+是以比例的形式进行描述的，
+\begin_inset Formula $\omega_{L}$
+\end_inset
+
+和
+\begin_inset Formula $\text{\ensuremath{\omega_{H}}}$
+\end_inset
+
+分别是其两个取值，满足关系式
+\begin_inset Formula $0<\omega_{L}<\omega_{H}<1$
+\end_inset
+
+，且
+\begin_inset Formula $\omega$
+\end_inset
+
+的取值的实现取决于自然状态
+\begin_inset Formula $S$
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+接下来描述最大化消费者期望效用。首先描述规划者在所有区域范围内做的全局统筹问题，假设规划者可以识别短期和长期消费者。由于没有总体不确定性，最优消费分配在不同状态
+间是独立的。由于一个地区的消费者与另一地区的消费者完全相同，因此所有消费者都会受到同等对待。在不失一般性的情况下，我们可以假设每个早期消费者都接受消费
+\begin_inset Formula $c_{1}$
+\end_inset
+
+，并且每个晚期消费者都接受
+\begin_inset Formula $c_{2}$
+\end_inset
+
+，而与该地区和自然状态无关。在时期
+\begin_inset Formula $t_{0}$
+\end_inset
+
+，计划者根据可行性约束选择投资组合
+\begin_inset Formula $\text{<x,y>\ensuremath{\geq0}}$
+\end_inset
+
+，该投资组合满足以下三个约束条件：
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+x+y\leq1\label{eq:投资组合第一个约束条件}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\gamma c_{1}\leq y\label{eq:投资组合第二个约束条件}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(1-\gamma)c_{2}\leq Rx\label{eq:投资组合第三个约束条件}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+在式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:投资组合第一个约束条件"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+中，
+\begin_inset Formula 
+\[
+\text{\ensuremath{\gamma}}=\frac{\omega_{H}+\omega_{L}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+表示在高、低的取值下，短期消费者所占总消费者的平均比例。
+\end_layout
+
+\begin_layout Standard
+由于在
+\begin_inset Formula $t_{0}$
+\end_inset
+
+，每个消费者都有相同的概率成为短期或长期消费者，所以事先估计的目标期望效用为
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f=\gamma u[c_{1}]+(1-\gamma)u[c_{2}]\label{eq:投资组合的目标期望效用}
+\end{equation}
+
+\end_inset
+
+。同时，加入激励约束
+\begin_inset Formula 
+\begin{equation}
+c_{1}\leq c_{2}\label{eq:投资组合的激励约束}
+\end{equation}
+
+\end_inset
+
+约束项式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:投资组合第一个约束条件"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:投资组合第二个约束条件"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:投资组合第三个约束条件"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:投资组合的激励约束"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+和目标期望效用式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:投资组合的目标期望效用"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+，用于共同求解目标方程最优化。
+\end_layout
+
+\begin_layout Standard
+为了实现最优，需要在不同的划分区域之间转移资源。以下以表格
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "各区域各状态的消费者结构的概率表格"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+所示的状态
+\begin_inset Formula $S_{1}$
+\end_inset
+
+为例说明。区域A和C中存在
+\begin_inset Formula $ω_{H}$
+\end_inset
+
+短期消费者，区域B和D中存在
+\begin_inset Formula $ω_{L}$
+\end_inset
+
+短期消费者。每个区域有
+\begin_inset Formula $γc_{1}$
+\end_inset
+
+的短期资产，每个区域具有在
+\begin_inset Formula $t_{1}$
+\end_inset
+
+提供
+\begin_inset Formula $γc_{1}$
+\end_inset
+
+的消费能力。区域A和C各自对
+\begin_inset Formula $(ω_{H}-γ)c_{1}$
+\end_inset
+
+消耗单位有过量需求，而区域B和D各自具有过量供应的
+\begin_inset Formula $(γ-ω_{L})c_{1}=(ω_{H}-γ)c_{2}$
+\end_inset
+
+单位消耗。通过重新分配这种消耗，规划者可以满足每个地区的需求。在
+\begin_inset Formula $t_{2}$
+\end_inset
+
+，分配的转移方向以相反的方向流动，因为区域B和D各自具有
+\begin_inset Formula $(ω_{H}-γ)c_{2}$
+\end_inset
+
+单位的过量需求，并且区域A和C各自具有
+\begin_inset Formula $(ω_{H}-γ)c_{2}$
+\end_inset
+
+单位的过量供应。 
+\end_layout
+
+\begin_layout Standard
+在不失一般性的情况下，可以假设每个消费者在其所在区域
+\begin_inset Formula $i$
+\end_inset
+
+的银行中存放1个单位的消费品作为存款。银行将存款以投资组合
+\begin_inset Formula $<x^{i},y^{i}>\geq0$
+\end_inset
+
+进行投资和交易，提供存款合同 
+\begin_inset Formula $<c_{1}^{i},c_{2}^{i}>$
+\end_inset
+
+。存款合同规定了允许存款人在
+\begin_inset Formula $t_{1}$
+\end_inset
+
+提现
+\begin_inset Formula $c_{1}^{i}$
+\end_inset
+
+单位的存款，在
+\begin_inset Formula $t_{2}$
+\end_inset
+
+提现
+\begin_inset Formula $c_{2}^{i}$
+\end_inset
+
+单位的存款。我们分别令
+\begin_inset Formula $<c_{1},c_{2}>=<c_{1}^{i},c_{2}^{i}>$
+\end_inset
+
+和 
+\begin_inset Formula $<x,y>=<x^{i},y^{i}>$
+\end_inset
+
+，以实现划分了的银行区域的最优分配
+\begin_inset Formula $<x,y,c_{1},c_{2}>$
+\end_inset
+
+。上述的过程问题在于，虽然投资组合在
+\begin_inset Formula $t_{1}$
+\end_inset
+
+满足银行的预算约束
+\begin_inset Formula $x+y\leq1$
+\end_inset
+
+，但它不会满足
+\begin_inset Formula $t_{2}$
+\end_inset
+
+的预算约束。规划者可以在区域之间移动消费，因此他只需要满足平均约束
+\begin_inset Formula $γ*c1\leq y$
+\end_inset
+
+。另一方面，银行必须面对其所在地区的短期消费者的比例可能高于平均水平
+\begin_inset Formula $ω_{H}>γ$
+\end_inset
+
+的可能，在这种情况下，它需要超过
+\begin_inset Formula $y$
+\end_inset
+
+来满足短期消费者的需求。它可以通过清偿一些长期资产来满足这种超额需求，但是没有足够的消费来满足在
+\begin_inset Formula $t_{2}$
+\end_inset
+
+的长期消费者的需求。事实上，如果
+\begin_inset Formula $r$
+\end_inset
+
+足够小，银行可能无法履约回报长期消费者，甚至连支付
+\begin_inset Formula $c_{1}$
+\end_inset
+
+给长期消费者也难以兑现。因为担心这类情况的发生，所以消费者宁愿在
+\begin_inset Formula $t_{1}$
+\end_inset
+
+提现，该行为将引发挤兑。 因此得出结论：流动性总量并没有变少，只是分布不均。允许银行克服财富流动性分布不均的一种方法是在存款中引入银行间市场。
+\end_layout
+
+\begin_layout Standard
+后续通过分别构建和阐述三种包含四个划分区域代表性的银行的网络微观结构（完整的银行间存款市场、较不完整的银行间存款市场、不完整的银行间存款市场），实现最优分配的过
+程和揭示金融脆弱性和传染问题。限于篇幅，本文仅以完整的银行间存款市场为例，
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename 材料/完整的银行间存款市场.jpg
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+完整的银行间存款市场结构
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+资源调度先考虑时期
+\begin_inset Formula $t_{1}$
+\end_inset
+
+。此时分作两种情况分析：
+\end_layout
+
+\begin_layout Standard
+情况1：如果该地区
+\begin_inset Formula $i$
+\end_inset
+
+对流动性的需求较高，即
+\begin_inset Formula $ω^{i}=ω_{H}$
+\end_inset
+
+，则会清偿在其他地区的所有存款。 考虑一个对流动性要求较高的地区的银行的预算约束。它必须在
+\begin_inset Formula $t_{1}$
+\end_inset
+
+向在本区域的短期消费者
+\begin_inset Formula $ω_{H}$
+\end_inset
+
+支付
+\begin_inset Formula $c_{1}$
+\end_inset
+
+存款作为回报，并且还需要偿还其它高需求区域的存款。
+\begin_inset Formula $z^{j}=(\omega_{H}-\gamma)/2$
+\end_inset
+
+，因此要偿还的总量是
+\begin_inset Formula $(\omega_{H}+(\omega_{H}-\gamma)/2)c_{1}$
+\end_inset
+
+。另一方面，该银行自身在该时期的可支配存款情况是有
+\begin_inset Formula $y$
+\end_inset
+
+个单位的短期资产，并在其它三个区域有存款
+\begin_inset Formula $3z^{i}=3(\omega_{H}-\gamma)/2$
+\end_inset
+
+，因此必须满足的预算约束是
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{ \ensuremath{\left(\omega_{H}+\frac{\omega_{H}-\gamma}{2}\right)}}c_{1}=y+\frac{3\left(\omega_{H}-\gamma\right)}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+化简后得到
+\begin_inset Formula 
+\begin{equation}
+\text{\ensuremath{\gamma c_{1}=y}}\label{eq:时期t_1资源调度的流动性需求}
+\end{equation}
+
+\end_inset
+
+。
+\end_layout
+
+\begin_layout Standard
+情况2：如果该地区对流动性的需求较低，即
+\begin_inset Formula $ω^{i}=ω_{L}$
+\end_inset
+
+，则会保留持有的存款在其他地区直到最后时期为止。在流动性需求较低的区域的银行必须向其本区域的短期消费者
+\begin_inset Formula $ω_{L}$
+\end_inset
+
+支付
+\begin_inset Formula $c_{1}$
+\end_inset
+
+，并从流动性需求较高的区域的银行中赎回存款
+\begin_inset Formula $2z^{i}=\omega_{H}-\gamma$
+\end_inset
+
+。它有
+\begin_inset Formula $y$
+\end_inset
+
+个单位的短期资产来应付这些需求，因此必须满足的预算约束是
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\omega_{L}+(\omega_{H}-\gamma)\right)c_{1}=y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+最终化简后得到与式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:时期t_1资源调度的流动性需求"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+一致的结果。
+\end_layout
+
+\begin_layout Standard
+得到结论：在上述两种情况下，交替持有的存款都可以让银行满足不同地区的存款人的需求而无需清算长期资产。
+\end_layout
+
+\begin_layout Standard
+资源调度先考虑时期
+\begin_inset Formula $t_{2}$
+\end_inset
+
+。在该时期，所有银行都清算其剩余资产，调度分两种情况分析：
+\end_layout
+
+\begin_layout Standard
+情况1：对于在
+\begin_inset Formula $t_{1}$
+\end_inset
+
+具有高流动性偏好的区域，在
+\begin_inset Formula $t_{2}$
+\end_inset
+
+的预算约束将是
+\begin_inset Formula 
+\[
+\left((1-\omega_{H})+(\omega_{H}-\gamma)\right)c_{2}=Rx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+化简得到
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(1-\gamma)c_{2}=Rx\label{eq:时期t_2资源调度的流动性需求最终结果}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+情况2：对于在
+\begin_inset Formula $t_{2}$
+\end_inset
+
+具有低流动性偏好的区域，在时期2的预算约束将是： 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{ \ensuremath{\left(\left(1-\omega_{L}\right)+\frac{\omega_{H}-\gamma}{2}\right)}}c_{2}=Rx+\frac{3\left(\omega_{H}-\gamma\right)}{2}c_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+最终化简得到与式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:时期t_2资源调度的流动性需求最终结果"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+一致的结果。
+\end_layout
+
+\begin_layout Standard
+通过构建上述三种包含四个划分区域代表性的银行的网络微观结构，发现如果银行间市场结构是不完全市场，虽然可以实现最优风险分担，但在面临流动性冲击时更容易出现风险传染
+，从而使得系统更脆弱。而完全市场可以实现最优风险分担，可以弱化某个银行的初始流动冲击给系统带来的影响。
+\end_layout
+
+\begin_layout Standard
+由于Allen,Gale(2000)创新性地研究了风险在银行间市场的传染问题，奠定了该领域微观经济学基础。后续研究者，如Freixas (2000)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Freixas2000"
+literal "false"
+
+\end_inset
+
+构建了一个具有资金中心银行的系统的中心型结构。该结构中处于外围的银行都与处于结构中心位置的银行存在同业业务往来，而外围银行之间不存在同业往来。研究得出结论在该系
+统中银行风险传染的概率依赖于模型的参数。Lee , Seung Hwan等人(2013)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lee2013"
+literal "false"
+
+\end_inset
+
+在
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Allen2000,Freixas2000"
+literal "false"
+
+\end_inset
+
+的基础上构建了6种只包含4个银行的不同同业网络结构来分析流动性风险的系统性特征。研究发现在一个中心——边缘网络结构中，如果处于中心位置的银行出现赤字，那么该网络
+会引起一个更高水平的系统性流动性短缺，当银行间结构变得更不匹配时，对于流动性冲击，银行系统会变得更脆弱。彭建刚，童磊(2013)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PengJianGangTongLei2013"
+literal "false"
+
+\end_inset
+
+根据
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Allen2000"
+literal "false"
+
+\end_inset
+
+的研究，将我国银行同业交易商分为四大类，建立了包括四类交易商的网络结构，采用压力测试的方法对我国银行间同业市场上分类交易商之间的流动性和风险传染效应进行了研究。
+研究发现大规模流动性冲击会导致流动性风险蔓延和同业市场交易量萎缩。小规模流动性冲击下，风险具有收敛性。 Diamond , Rajan (2001,2005)
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Diamond2005Liquidity"
+literal "false"
+
+\end_inset
+
+指出银行间市场是所有市场共同面临的流动性市场。发现某银行流动性短缺可能会减少所有银行拥有的总流动性，从而会将流动性短缺传染给其他银行，而且这种传染会持续到系统奔
+溃。Eisenberg , Noe (2001) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eisenberg2001"
+literal "false"
+
+\end_inset
+
+在类似角度做了研究。
+\end_layout
+
+\begin_layout Section
+基于复杂网络的银行系统传染的理论
+\end_layout
+
+\begin_layout Standard
+复杂网络是复杂系统的高度抽象，是一个包含了大量个体及个体之间相互作用的网络。现阶段人们所认识的复杂网络主要分为规则网络、随机网络、小世界网络、无标度网络几大类。
+许多学者在复杂网络的基础上对与银行系统风险传染相关的问题展开了许多研究，也在研究的基础上探讨如何防控系统风险的传染。大部分研究者首先根据银行系统的运作机制，构建
+银行网络模型，再进行分析。Aleksiejuk , Holyst (2001) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aleksiejuk2001"
+literal "false"
+
+\end_inset
+
+构建有向随机网络。然后在此基础上研究银行倒闭而引起其他银行倒闭的数量。 首次从统计物理学的角度利用复杂网络理论研究银行倒闭传染问题。 Nier
+ (2007) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nier2007Network"
+literal "false"
+
+\end_inset
+
+构建了银行随机网络。网络集中度对银行倒闭风险传染的影响是非单调的。Gai, Kapadia (2010) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gai2010"
+literal "false"
+
+\end_inset
+
+基于随机银行网络结构的传染模型。 复杂金融系统有一种强健而脆弱的趋势。 尽管更高程度的金融联系能降低传染的可能性，但若给定一个严重的传染性的违约，更高的复杂网络
+关联度将会导致广泛的传染。Ananda , Gai ,Kapadiac (2013)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Anand2013"
+literal "false"
+
+\end_inset
+
+ 建立包含国内银行、外资银行的银行随机网络系统，还将与银行有业务往来的公司也纳入系统，研究了宏观经济波动、资产市场流动性及网络结构在决定总的信贷损失及危机传染方
+面的相互作用。 张锋华、李红刚 (2013)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ZhangFengHuaLiHongGang2013"
+literal "false"
+
+\end_inset
+
+通过设定银行间资产的清偿顺序的过程，设定资产负债表，结合客户与银行间的相互作用建立起银行遭遇流动性冲击时的银行间资产的变动过程，构建有向有权随机银行网络和无向无
+权随机客户网络相耦合的复杂网络模型。通过平均度等几个指标分析银行网络流动性转移效率。研究得出如下结论：无论随机网络还是无标度网络，银行网络流动性转移效率都随着平
+均度的增大而提高，并在平均度达到一定值后呈现较为平稳的状态；同时，在初始冲击逐渐增大的情况下，平均度的增大对网络流动性转移效率的改善幅度却在减小。这表明银行间连
+接度的增加可以提高银行网络流动性转移的效率，但在连接度达到一定阈值后网络的流动性转移效率会变得很平稳，提升的空间则比较小。银行网络流动性转移效率与流动性冲击的大
+小呈负相关，与网络结构均匀程度及连接度正相关。
+\end_layout
+
+\begin_layout Standard
+在基于无标度复杂网络模型进行的理论研究方面，万阳松、陈忠(2007)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "WanYangSong2007"
+literal "false"
+
+\end_inset
+
+提出了双幂律无标度银行网络结构，然后做相关研究。 Andreas , Simone (2012) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Krause2012Interbank"
+literal "false"
+
+\end_inset
+
+建立了有向无标度网络模型，研究了银行破产的传导机理，得出初始破产银行的规模是否扩散是一个重要因素，但就扩散的范围而言，银行同业借贷网络的特征更为重要。
+ 
+\end_layout
+
+\begin_layout Standard
+比较不同的复杂网络模型的研究 Gai , Haldance , Kapadia (2011) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gai2011Complexity"
+literal "false"
+
+\end_inset
+
+分别构建了无标度银行网络和随机银行网络，分析了银行的融资流动性风险如何在银行网络内广泛传播。 数值模拟发现，无担保银行间市场中，回购市场业务、编制冲击、流动性极
+聚很可能扩大危机的蔓延，并导致系统奔溃。 李守伟、何建敏 (2012) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LiShouWeiHeJianMin2012"
+literal "false"
+
+\end_inset
+
+通过假设银行资产负债表中资产项由银行的投资、流动性资产和银行间贷款组成，负债项由银行间借款、储户存款和银行资产净值组成，确定各个银行的资产负债表，并且设立了银行
+遭遇损失的清偿顺序、银行吸收损失的过程、传染风险形成的流程，构建起银行间市场有向随机网络、小世界网络、无标度网络三种不同类型的网络，探索不同网络结构中银行间传染
+风险特征及其差异。通过模拟分析得出以下结论，随机性冲击和选择性冲击造成的传染风险效应与银行间市场网络结构相关，在不同的网络结构下呈现出不同的特征。在三种网络结构
+下，冲击在小世界网络中造成的传染风险效应最大，在无标度网络中最小。说明在此三种银行间市场网络下, 无标度银行间市场面临冲击时稳定性最强, 而小世界银行间网络承受
+冲击能力最弱。在随机网络中, 当遭受冲击银行数目较小时，随机性冲击和选择性冲击造成的传染风险效应基本相同，但随着遭受冲击银行数目增加，选择性冲击造成的传染风险效
+应较高；在小世界网络中, 随机性冲击造成的传染风险效应高于选择性冲击；在无标度网络中, 当遭受冲击银行数目较小时，随机性冲击造成的传染风险效应大于选择性冲击，而
+遭受冲击银行数目增加到一定程度之后，两种冲击造成的传染风险效应基本相同。另外, 上述的结论与银行是同质和异质无关。
+\end_layout
+
+\begin_layout Standard
+从其他不同角度相结合的研究上，Thurner (2003) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Thurner2003Risk"
+literal "false"
+
+\end_inset
+
+结合网络拓扑结构和博弈模型，研究银行间风险传染问题。发现若银行能找到一个愿与其签订风险分摊协议的邻居银行，则该银行可根据自身风险降低的需要来选择相应的交易策略。
+ 张锋华，李红刚 (2013)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ZhangFengHuaLiHongGang2013"
+literal "false"
+
+\end_inset
+
+在有向有权随机网络的基础上构建了一个银行网络流动性动态配置的多主体模型，以模拟金融危机中银行网络流动性再分配过程。 发现银行网络流动性转移效率与流动性冲击的大小
+呈负相关，与网络结构均匀程度及连接度正相关。 
+\end_layout
+
+\begin_layout Standard
+在相关实证的研究中，通常用真实的同业双边数据的方面进行研究两类。相关的研究有如下。Christoph Memmel , Ingrid Stein
+ (2008) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MemmeChristoph2008"
+literal "false"
+
+\end_inset
+
+利用德国银行同业双边真实交易数据对德国金融系统的脆弱性进行了实证。 研究表明： 尽管银行同业传染的整体风险较低，但如果大银行倒闭，风险传染仍会发生；此外，对于中
+等程度的同业贷款损失率，风险传染的结果很大程度上依赖于大银行的特征。更进一步，Chiristoph Memmela等人
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Memmel2013Contagion"
+literal "false"
+
+\end_inset
+
+还利用真实的同业双边数据对德国银行部门在2008年一季度到2011年底二季度的银行传染进行模拟，得出结果：对于该期间的银行直接传染，系统没有那么脆弱；另外在没有
+很多信息损失的情况下，银行传染造成的每一时点的损失分布可以浓缩成一个指标，即银行倒闭数量的期望值。该指标的决定因素 银行资本、银行间的借贷、给定的违约损失、
+ 银行对其他银行债权分布的平均程度。Paolo Emilio Mistrulli (2011) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mistrulli2011AssessingFinancialContagionInTheInterbankMarket"
+literal "false"
+
+\end_inset
+
+利用意大利同业实际双边数据研究了意大利银行同业市场系统风险是如何传染的，同时还将利用实际数据进行实证研究的结果与利用最大化熵方法估算双边同业数据所做的实证研究进
+行比较，得出最大化熵方法会高估风险传染的范围。
+\end_layout
+
+\begin_layout Standard
+由于一些银行双边交易数据难以获取，因此通过其他数据近似代替银行双边交易数据进行实证研究。如有学者利用估算的双边风险敞口数据，通过最大熵原理（ME），从资产负债数
+据估算双边风险敞口数据，然后实证。由于该方法假定任意两个银行间有信用拆借关系，与实际有差距，因而研究结论也不如有获取银行双边交易数据的研究准确。
+ Upper, Worms (2004)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Upper2004Estimating"
+literal "false"
+
+\end_inset
+
+利用ME处理对角线元素为0的矩阵，估计银行同业双边风险敞口数据。 马君潞、范小云（2007）
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MaJunLu2007"
+literal "false"
+
+\end_inset
+
+利用ME结合我国各银行同业拆借额度估计银行双边交易数据，在此基础上进行相关的实证研究。在结合资产负债表和其他信息源，然后做实证的实证。Toivanen(2009
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Toivanen2009Financial"
+literal "false"
+
+\end_inset
+
+利用结算系统中的支付数据估算银行双边交易数据，然后实证。李守伟、何建敏、庄亚明、施亚明 (2011)通过研究银行网络结构对随机性攻击和选择性攻击的承受能力来分析
+银行同业拆借市场的稳定性。研究结果表明，银行网络对于随机性攻击具有较高的稳定性，对于选择性攻击具有较低的稳定性。一些随机性事件对银行同业拆借市场不会造成至关重要
+的影响，在银行同业拆借市场在处于核心地位的银行一旦在一些特殊冲击下出现危机，将对银行同业拆借市场产生不利的影响，威胁银行同业拆借市场的稳定，甚至有可能造成多米诺
+骨牌效应，引发金融危机。因此，避免银行同业拆借市场中那些关键的银行出现危机，有助于提高银行同业拆借市场的抗风险能力，维护银行同业拆借市场的稳定，确保银行系统健全
+的运行。
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "FinancialRisk"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

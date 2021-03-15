@@ -1,0 +1,549 @@
+
+PT J
+AU Bekiros, S
+   Hammoudeh, S
+   Jammazi, R
+   Nguyen, DK
+AF Bekiros, Stelios
+   Hammoudeh, Shawkat
+   Jammazi, Rania
+   Duc Khuong Nguyen
+TI Sovereign bond market dependencies and crisis transmission around the
+   eurozone debt crisis: a dynamic copula approach
+SO APPLIED ECONOMICS
+LA English
+DT Article
+DE Sovereign debt crisis; government bonds; dynamic copulas; stochastic
+   dependence; C58; E44; G12; H63
+ID FINANCIAL CRISIS; STOCK-MARKET; YIELD SPREADS; CONTAGION; MODELS; RISK;
+   CHANNELS
+AB We examine the dependency between the European government bond markets around the recent sovereign debt crisis. A dynamic copula approach is used to model the time-varying dependence structure of those government bond markets, evaluate the nature and strength of their dependencies over time, and gauge the transmission of the crisis shocks. Our results can be summarized as follows: i) the eurozone sovereign bond markets under consideration have a significant and positive dependence with the Greek and the EMU benchmark sovereign bond markets; ii) the dynamic-BB7 copula function best describes the dependence structure between these sovereign bond markets and provides evidence of asymmetric tail dependence; iii) the conditional probability of crisis transmission from Greece to other eurozone countries is higher than the other way around; and iv) Greece is the most vulnerable country when the eurozone entered into the sovereign debt crisis.
+C1 [Bekiros, Stelios] European Univ Inst, Florence, Italy.
+   [Bekiros, Stelios] AUEB, Athens, Greece.
+   [Bekiros, Stelios; Duc Khuong Nguyen] IPAG Business Sch, 184 Blvd St Germain, F-75006 Paris, France.
+   [Hammoudeh, Shawkat] Drexel Univ, Lebow Coll Business, Philadelphia, PA 19104 USA.
+   [Hammoudeh, Shawkat] Montpellier Business Sch, Montpellier, France.
+   [Jammazi, Rania] Univ Sousse, Sousse, Tunisia.
+   [Duc Khuong Nguyen] Indiana Univ, Sch Publ & Environm Affairs, Bloomington, IN USA.
+RP Nguyen, DK (reprint author), IPAG Business Sch, 184 Blvd St Germain, F-75006 Paris, France.
+EM duc.nguyen@ipag.fr
+OI Nguyen, Duc Khuong/0000-0002-7796-8787
+CR Abad P, 2010, J BANK FINANC, V34, P2851, DOI 10.1016/j.jbankfin.2009.10.009
+   Allen F., 2012, WORKING PAPER
+   Aloui R, 2013, ENERG ECON, V39, P208, DOI 10.1016/j.eneco.2013.04.012
+   Amisano G, 2011, J ECON DYN CONTROL, V35, P2167, DOI 10.1016/j.jedc.2011.08.003
+   Arghyrou MG, 2012, J INT FINANC MARK I, V22, P658, DOI 10.1016/j.intfin.2012.03.003
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   Bekiros SD, 2014, INT REV FINANC ANAL, V33, P58, DOI 10.1016/j.irfa.2013.07.007
+   Berger T., 2013, INT EC, V133, P93
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P639, DOI 10.1016/j.jimonfin.2011.10.006
+   Calice G, 2013, J ECON BEHAV ORGAN, V85, P122, DOI 10.1016/j.jebo.2011.10.013
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Creal DD, 2015, J ECONOMETRICS, V189, P335, DOI 10.1016/j.jeconom.2015.03.027
+   Delatte AL, 2012, J INT MONEY FINANC, V31, P481, DOI 10.1016/j.jimonfin.2011.10.008
+   Dewachter H, 2015, J BANK FINANC, V50, P308, DOI 10.1016/j.jbankfin.2014.03.011
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Fong TPW, 2012, ECON LETT, V115, P496, DOI 10.1016/j.econlet.2011.12.112
+   GENEST C, 1995, BIOMETRIKA, V82, P543, DOI 10.2307/2337532
+   Genest C, 2006, SCAND J STAT, V33, P337, DOI 10.1111/j.1467-9469.2006.00470.x
+   Genest C, 2011, AUST NZ J STAT, V53, P157, DOI 10.1111/j.1467-842X.2011.00622.x
+   Giacomini E, 2009, J BUS ECON STAT, V27, P224, DOI 10.1198/jbes.2009.0016
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Grundke P, 2012, EUR J OPER RES, V223, P518, DOI 10.1016/j.ejor.2012.06.024
+   Haile F, 2008, INT REV ECON FINANC, V17, P572, DOI 10.1016/j.iref.2007.05.005
+   Heinen A., 2008, 69 CORE
+   Jayech S, 2016, EUR J OPER RES, V249, P631, DOI 10.1016/j.ejor.2015.08.061
+   Joe H, 1997, MULTIVARIATE MODELS
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Kalbaska A, 2012, J ECON BEHAV ORGAN, V83, P657, DOI 10.1016/j.jebo.2012.05.010
+   Kraussl R, 2016, J EMPIR FINANC, V38, P363, DOI 10.1016/j.jempfin.2016.04.005
+   Lane PR, 2012, J ECON PERSPECT, V26, P49, DOI 10.1257/jep.26.3.49
+   Maltritz D, 2012, J INT MONEY FINANC, V31, P657, DOI 10.1016/j.jimonfin.2011.10.010
+   Nelsen R. B., 1999, SPRINGER SERIES STAT, V139
+   Patton A., 2004, J FINANCIAL ECONOMET, V2, P130, DOI DOI 10.1093/JJFINEC/NBH006
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Philippas D, 2013, J INT FINANC MARK I, V27, P161, DOI 10.1016/j.intfin.2013.09.008
+   Pragidis IC, 2015, J FINANC STABIL, V18, P127, DOI 10.1016/j.jfs.2015.04.001
+   Reboredo JC, 2014, ECON MODEL, V39, P168, DOI 10.1016/j.econmod.2014.02.038
+   Sarafrazi S, 2014, J INT FINANC MARK I, V32, P368, DOI 10.1016/j.intfin.2014.06.008
+   Sklar A., 1959, PUBL I STAT U PARIS, V8, P229
+   Tsay R.S., 2010, ANAL FINANCIAL TIME
+   Wang YC, 2013, J BANK FINANC, V37, P1706, DOI 10.1016/j.jbankfin.2013.01.001
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+   Ye WY, 2012, EUR J OPER RES, V222, P96, DOI 10.1016/j.ejor.2012.04.004
+   Zhang DL, 2014, INT REV FINANC ANAL, V36, P46, DOI 10.1016/j.irfa.2014.02.011
+NR 46
+TC 0
+Z9 0
+U1 1
+U2 3
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0003-6846
+EI 1466-4283
+J9 APPL ECON
+JI Appl. Econ.
+PY 2018
+VL 50
+IS 47
+BP 5029
+EP 5047
+DI 10.1080/00036846.2018.1470313
+PG 19
+WC Economics
+SC Business & Economics
+GA GQ5MV
+UT WOS:000441729900001
+DA 2019-12-27
+ER
+
+PT J
+AU Donaldson, JR
+   Micheler, E
+AF Donaldson, Jason Roderick
+   Micheler, Eva
+TI Resaleable debt and systemic risk
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Resaleable debt; Systemic risk; Bankruptcy; Repos; Securities law
+ID FINANCIAL NETWORKS; CONTAGION; BANKRUPTCY; MARKETS; REPO
+AB Many debt claims, such as bonds, are resaleable; others, such as repos, are not. There was a fivefold increase in repo borrowing before the 2008-2009 financial crisis. Why? Did banks' dependence on non-resaleable debt precipitate the crisis? In this paper, we develop a model of bank lending with credit frictions. The key feature of the model is that debt claims are heterogenous in their resaleability. We find that decreasing credit market frictions leads to an increase in borrowing via non-resaleable debt. Such borrowing has a dark side: It causes credit chains to form, because, if a bank makes a loan via non resaleable debt and needs liquidity, it cannot sell the loan but must borrow via a new contract. These credit chains are a source of systemic risk, as one bank's default harms not only its creditors but also its creditors' creditors. Overall, our model suggests that reducing credit market frictions may have an adverse effect on the financial system and even lead to the failures of financial institutions. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Donaldson, Jason Roderick] Washington Univ, Olin Business Sch, 1 Brookings Dr, St Louis, MO 63130 USA.
+   [Donaldson, Jason Roderick] CEPR, 3 Great Sutton St, London EC1V 0DX, England.
+   [Micheler, Eva] London Sch Econ & Polit Sci, Houghton St, London WC2A 2AE, England.
+RP Donaldson, JR (reprint author), Washington Univ, Olin Business Sch, 1 Brookings Dr, St Louis, MO 63130 USA.
+EM j.r.donaldson@wustl.edu
+FU Economic and Social Research Council (ESRC)Economic & Social Research
+   Council (ESRC) [ES/K002309/1]
+FX The support of the Economic and Social Research Council (ESRC) in
+   funding the Systemic Risk Centre is gratefully acknowledged [grant
+   number ES/K002309/1]. Thanks to Gaetano Antinolfi, Bruno Biais, Jen
+   Dlugosz, Armando Gomes, Radha Gopalan, Dalida Kadyrzhanova, Mina Lee,
+   Giorgia Piacentino, Adriano Rampini, Matt Ringgenberg, Edmund Schuster,
+   Ngoc-Khanh Tran, Ed Van Wesep, and Jean-Pierre Zigrand for comments.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Antinolfi G, 2015, REV ECON DYNAM, V18, P21, DOI 10.1016/j.red.2014.06.002
+   Bai J, 2016, J FINANC ECON, V122, P625, DOI 10.1016/j.jfineco.2016.08.005
+   Bank for International Settlements, 2013, BANK INT SETTL PUBL, V49
+   Bliss R. R., 2006, J FINANCIAL STABILIT, V2, P55, DOI DOI 10.1016/j.jfs.2005.05.001
+   Bluhm M., 2013, 12 SAFE
+   Bolton P, 2015, J FINANC, V70, P2353, DOI 10.1111/jofi.12201
+   Cabrales A, 2017, REV FINANC STUD, V30, P3086, DOI 10.1093/rfs/hhx077
+   Comotto R, 2015, EUROPEAN REPO MARKET
+   Comotto R, 2014, ICMA EUROPEAN REPO C
+   Copeland A, 2014, J FINANC, V69, P2343, DOI 10.1111/jofi.12205
+   Duffle D., 2006, DIALOGUE COSTS BENEF
+   Edwards Franklin R., 2005, YALE J REGUL, V22, P91
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Gale DM, 2007, AM ECON REV, V97, P99, DOI 10.1257/aer.97.2.99
+   Glode V, 2016, AM ECON REV, V106, P2699, DOI 10.1257/aer.20140662
+   GORTON G, 1990, J FINANC, V45, P49, DOI 10.2307/2328809
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Gorton G, 2010, FED RESERVE BANK ST, V92, P507
+   Greenwood J, 2013, REV ECON DYNAM, V16, P194, DOI 10.1016/j.red.2012.07.003
+   Gu C, 2013, REV ECON STUD, V80, P636, DOI 10.1093/restud/rds037
+   Hart O, 1998, Q J ECON, V113, P1, DOI 10.1162/003355398555496
+   Homquist E., 2014, FEDS NOTES
+   Homstrom B., 2011, INSIDE OUTSIDE LIQUI
+   Infante S, 2015, FEDERAL RESERVE BOAR
+   Jones CM., 2002, UNPUB
+   Kahn C. M., 2015, UNPUB
+   Kahn CM, 2007, J MONETARY ECON, V54, P955, DOI 10.1016/j.jmoneco.2006.06.005
+   Kiyotaki N, 2005, J EUR ECON ASSOC, V3, P701, DOI 10.1162/1542476054472964
+   Kiyotaki N, 2002, AM ECON REV, V92, P62, DOI 10.1257/000282802320189014
+   Kiyotaki N., 2001, DISCUSSION PAPER SER, V110
+   Kiyotaki N., 2000, UNPUB
+   Kiyotaki N., 2001, DISCUSSION PAPER SER, V111
+   Kiyotaki N., 2012, 17934 NAT BUR EC RES
+   Krishnamurthy A, 2014, J FINANC, V69, P2381, DOI 10.1111/jofi.12168
+   La Porta R, 2006, J FINANC, V61, P1, DOI 10.1111/j.1540-6261.2006.00828.x
+   Lee J, 2017, UNPUB
+   Lubben Stephen J., 2009, U PA J BUS L, V12, P61
+   Madhavan A., 2001, INT FINANC, V4, P221, DOI [10.1111/1468-2362.00072, DOI 10.1111/1468-2362.00072]
+   Morrison ER, 2014, BUS LAWYER, V69, P1015
+   Rahi R., 2013, 2 SYST RISK CTR LOND
+   Roe MJ, 2011, STANFORD LAW REV, V63, P539
+   Singh M, 2010, 11256 INT MON FUND
+   Singh Manmohan, 2010, 10172 INT MON FUND
+   Skeel DA, 2012, COLUMBIA LAW REV, V112, P152
+   Stulz Rene, 2009, MILKEN I REV, P58
+   Tirole J, 2006, THEORY OF CORPORATE FINANCE, P1
+   Townsend R., 2001, CONTRACTUAL ARRANGEM, P105
+   Dang TV, 2017, AM ECON REV, V107, P1005, DOI 10.1257/aer.20140782
+   Zawadowski A, 2013, REV FINANC STUD, V26, P1291, DOI 10.1093/rfs/hht008
+NR 52
+TC 0
+Z9 0
+U1 14
+U2 34
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD MAR
+PY 2018
+VL 127
+IS 3
+BP 485
+EP 504
+DI 10.1016/j.jfineco.2017.12.005
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA FZ1KQ
+UT WOS:000427335900004
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Battiston, S
+   Martinez-Jaramillo, S
+AF Battiston, Stefano
+   Martinez-Jaramillo, Serafin
+TI Financial networks and stress testing: Challenges and new research
+   avenues for systemic risk analysis and financial stability implications
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Financial networks; Systemic risk; Financial contagion; Financial
+   stability
+ID CORE-PERIPHERY STRUCTURE; INTERBANK MARKET; FIRE SALES; CONTAGION;
+   DEFAULT; MODEL; BANK; LIQUIDITY; INFORMATION; COMPLEXITY
+AB Network models, stress testing methods and early warning systems are attracting growing interest both among scholars and practitioners. In this short paper, we illustrate some of the insights they have to offer both in terms of new fundamental scientific understanding of the emergence systemic risk and in terms of concrete applications to the policy areas of financial stability and macro-prudential policy. Finally, we discuss new research pathways to address the challenging questions still open, including multiplex networks, big financial data, and climate-finance. (c) 2018 Elsevier B.V. All rights reserved.
+C1 [Martinez-Jaramillo, Serafin] Univ Zurich, FINEXUS Ctr Financial Networks & Sustainabil, Dept Banking & Finance, Zurich, Switzerland.
+   Banco Mexico, Financial Syst Risk Anal, Mexico City, DF, Mexico.
+RP Martinez-Jaramillo, S (reprint author), Univ Zurich, FINEXUS Ctr Financial Networks & Sustainabil, Dept Banking & Finance, Zurich, Switzerland.
+EM smartin@anxico.org.mx
+RI Li, Wang/M-1612-2019
+FU European FET project SIMPOL at the University of Zurich [610704]; Swiss
+   National Science Foundation ProfessorshipSwiss National Science
+   Foundation (SNSF) [PP00P1-144689]
+FX The authors would like to dedicate this paper and also the special issue
+   to our friend, colleague and contributor Ivan Alves. The authors are
+   grateful to all the participants to the First Conference on Network
+   Models and Stress-testing for Financial Stability, held in Mexico City
+   on November 11-12, 2015 for their valuable contributions as speakers and
+   discussants or for their comments as attendees. In particular, they
+   would like to thank Sanjeev Goyal and Xavier Freixas for their
+   stimulating keynote speeches and Manuel Ramos-Francia for his
+   encouraging welcoming speech to open the conference. Additionally, the
+   authors are grateful to Thomas Lux for his comments on an earlier
+   version of this paper. The conference organizers are grateful to the
+   CEMLA and the Banco de Mexico for supporting and hosting the conference,
+   and they acknowledge the support of the European FET project SIMPOL
+   (grant no. 610704) coordinated by S.B. at the University of Zurich. S.B.
+   acknowledges also the financial support of the Swiss National Science
+   Foundation Professorship (grant no. PP00P1-144689).
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2013, REV FINANC, V17, P107, DOI 10.1093/rof/rfs022
+   Adrian T., 2008, STAFF REPORTS FEDERA
+   Ahnert T, 2018, J FINANC STABIL, V35, P159, DOI 10.1016/j.jfs.2017.05.009
+   Aldasoro I, 2018, J FINANC STABIL, V35, P17, DOI 10.1016/j.jfs.2016.12.008
+   Alessi L, 2018, J FINANC STABIL, V35, P215, DOI 10.1016/j.jfs.2017.06.005
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   Anand K., 2018, MISSING LINKS AGLOBA
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Anand K, 2012, J ECON DYN CONTROL, V36, P1088, DOI 10.1016/j.jedc.2012.03.005
+   Barabasi A., 2011, NATURE PHYS, V8, P14, DOI DOI 10.1038/NPHYS2188
+   Bardoscia M, 2017, NAT COMMUN, V8, DOI 10.1038/ncomms14416
+   Bardoscia M, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0163825
+   Bardoscia M, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0134888
+   Bargigli L, 2015, QUANT FINANC, V15, P673, DOI 10.1080/14697688.2014.968356
+   Barrat A., 2008, DYNAMICAL PROCESSES
+   Barucca P., 2016, NETWORK VALUATION FI
+   Basel Committee on Banking Supervision (BCBS), 2015, 29 BCBS
+   Batiz-Zuk E, 2016, J FINANC STABIL, V27, P198, DOI 10.1016/j.jfs.2015.04.007
+   Battiston F., 2017, EUR PHYS J SPEC TOP
+   Battiston S., 2018, EC INFORM F IN PRESS
+   Battiston S., 2016, P NATL ACAD SCI US
+   Battiston S., 2012, J EC
+   Battiston S, 2013, 52141 MPRA
+   Battiston S, 2017, NAT CLIM CHANGE, V7, P283, DOI [10.1038/nclimate3255, 10.1038/NCLIMATE3255]
+   Battiston S, 2016, STATIST RISK MODEL, V33, P117, DOI 10.1515/strm-2015-0005
+   Battiston S, 2016, J ALTERN INVEST, V18, P68, DOI 10.3905/jai.2016.18.4.068
+   Battiston S, 2016, UNDERST COMPLEX SYST, P195, DOI 10.1007/978-3-319-23947-7_12
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   BCBS, 2013, TECHNICAL REPORT
+   BCBS, 2013, MACR IMP ASS OTC DER
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Berndsen RJ, 2018, J FINANC STABIL, V35, P120, DOI 10.1016/j.jfs.2016.12.007
+   Blasques F., 2018, J EC DYN CO IN PRESS
+   Bookstaber R., 2016, BRIEF SERIES OFFICE
+   Borio C, 2012, J FINANC STABIL, V8, P236, DOI 10.1016/j.jfs.2011.12.003
+   Bravo-Benitez B., 2016, COMPUT ECON, P1
+   Buldyrev SV, 2010, NATURE, V464, P1025, DOI 10.1038/nature08932
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Caccioli F., 2014, J BANK FINANCE, V46
+   Caldarelli G, 2007, SCALE FREE NETWORKS
+   Carvalho V. M, 2016, WORKING PAPER
+   Carvalho VM, 2014, J ECON PERSPECT, V28, P23, DOI 10.1257/jep.28.4.23
+   Castren O, 2014, J BANK FINANC, V46, P43, DOI 10.1016/j.jbankfin.2014.04.027
+   Cetina J, 2018, J FINANC STABIL, V35, P38, DOI 10.1016/j.jfs.2016.10.012
+   Cimini G, 2015, SCI REP-UK, V5, DOI 10.1038/srep15758
+   Cimini G, 2015, PHYS REV E, V92, DOI 10.1103/PhysRevE.92.040802
+   Constantin A, 2018, J FINANC STABIL, V35, P226, DOI 10.1016/j.jfs.2016.10.011
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   D'Errico M, 2018, J FINANC STABIL, V35, P53, DOI 10.1016/j.jfs.2017.05.007
+   DAgostino G., 2016, UNDERSTING COMPLE
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   Dorogovtsev S. N., 2003, EVOLUTION NETWORKS B
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Fink K, 2016, J FINANC STABIL, V25, P83, DOI 10.1016/j.jfs.2016.06.002
+   Fourel V., 2013, DOMINO EFFECTS BANKS
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   FSB, 2009, G20 FSB
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Galbiati M., 2010, LIQUIDITY SAVING MEC
+   Galbiati M, 2013, NAT PHYS, V9, P126, DOI 10.1038/nphys2581
+   Galeotti A., 2010, TECHNICAL REPORT
+   Georg C.-P., 2013, J BANK FINANCE
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Goyal S, 2005, GAME ECON BEHAV, V50, P178, DOI 10.1016/j.geb.2004.01.005
+   Halaj G, 2018, J FINANC STABIL, V35, P136, DOI 10.1016/j.jfs.2016.10.009
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Jackson MO, 2002, J ECON THEORY, V106, P265, DOI 10.1006/jeth.2001.2903
+   Kivela M, 2014, J COMPLEX NETW, V2, P203, DOI 10.1093/comnet/cnu016
+   Kiyotaki N, 2002, AM ECON REV, V92, P46, DOI 10.1257/000282802320188989
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   Leon C, 2018, J FINANC STABIL, V35, P75, DOI 10.1016/j.jfs.2016.10.008
+   Luu D. T., 2018, COLLATERAL UNCHAINED
+   Lux T, 2016, J ECON DYN CONTROL, V66, P36, DOI 10.1016/j.jedc.2016.03.002
+   Lux T, 2015, J ECON DYN CONTROL, V52, pA11, DOI 10.1016/j.jedc.2014.09.038
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Martinez JF, 2018, J FINANC STABIL, V35, P192, DOI 10.1016/j.jfs.2016.10.010
+   Martinez-Jaramillo S., 2014, J EC DYN CONTROL, V40
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Molina-Borboa JL, 2014, J NETW THEORY FINANC, V1, P99
+   Monasterolo I, 2017, CLIMATIC CHANGE, V145, P495, DOI 10.1007/s10584-017-2095-9
+   Montagna M., 2013, 1873 KIEL I WORLD EC
+   Montagna M, 2017, QUANT FINANC, V17, P101, DOI 10.1080/14697688.2016.1178855
+   Musmeci N., 2016, MULTIPLEX DEPE UNPUB
+   Musmeci N, 2013, J STAT PHYS, V151, P720, DOI 10.1007/s10955-013-0720-1
+   NALEBUFF BJ, 1983, AM ECON REV, V73, P278
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Poledna S, 2016, QUANT FINANC, V16, P1599, DOI 10.1080/14697688.2016.1156146
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Puliga M, 2014, SCI REP-UK, V4, DOI 10.1038/srep06822
+   Ramos-Francia M, 2018, J FINANC STABIL, V35, P172, DOI 10.1016/j.jfs.2017.02.005
+   Rancan M., 2015, INTERCONNECTEDNESS B
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Roukny T, 2018, J FINANC STABIL, V35, P93, DOI 10.1016/j.jfs.2016.12.003
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   SCHEINKMAN JA, 1994, AM ECON REV, V84, P417
+   Silva T. C., 2017, J FINANC STAB
+   Solorzano-Margain J. P., 2013, FINANCIAL CONTAGION
+   Stiglitz JE, 2000, Q J ECON, V115, P1441, DOI 10.1162/003355300555015
+   Stolbova V., 2017, FINANCIAL MACRONETWO
+   Tabak B. M., 2013, WORKING PAPER SERIES
+   Tasca P, 2016, QUANT FINANC, V16, P1219, DOI 10.1080/14697688.2015.1123817
+   Thurner S, 2013, SCI REP-UK, V3, DOI 10.1038/srep01888
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Usi Lopez M., 2017, NEUROCOMPUTING
+   Visentin G, 2016, 2831143 SSRN
+NR 118
+TC 5
+Z9 5
+U1 13
+U2 48
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD APR
+PY 2018
+VL 35
+BP 6
+EP 16
+DI 10.1016/j.jfs.2018.03.010
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA GD1ME
+UT WOS:000430263200002
+DA 2019-12-28
+ER
+
+PT J
+AU Frahm, G
+AF Frahm, Gabriel
+TI How often is the financial market going to collapse?
+SO QUANTITATIVE FINANCE AND ECONOMICS
+LA English
+DT Article
+DE copula theory; extremal dependence; extreme value theory; ruin; tail
+   dependence
+ID ELLIPTICALLY CONTOURED DISTRIBUTIONS; DEPENDENCE COEFFICIENT; EXTREMAL
+   DEPENDENCE; TAIL-DEPENDENCE; MULTIVARIATE; SCATTER; RISK; VARIANCE;
+   LOCATION; RETURNS
+AB Copula theory is used to investigate the phenomenon of extremal dependence. An analytical expression for the extremal-dependence coefficient (EDC) of regularly varying elliptically distributed random vectors is derived. The EDC represents a natural measure of systemic risk. Extreme value theory is applied in order to estimate the systemic risk of the G-7 countries. The given results are quite sensitive to the tail index of asset returns and thus a scenario analysis is conducted. In the worst case, the probability that the entire market crashes during 10 years exceeds 50%. Hence, we must not neglect the risk of a financial collapse during a relatively short period of time.
+C1 [Frahm, Gabriel] Helmut Schmidt Univ, Dept Math & Stat, Holstenhofweg 85, D-22043 Hamburg, Germany.
+RP Frahm, G (reprint author), Helmut Schmidt Univ, Dept Math & Stat, Holstenhofweg 85, D-22043 Hamburg, Germany.
+EM frahm@hsu-hh.de
+CR Adrover JG, 1998, ANN STAT, V26, P2301
+   Aeschliman C, 2010, LECT NOTES COMPUT SC, V6312, P594, DOI 10.1007/978-3-642-15552-9_43
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   BARNDORFFNIELSEN O, 1982, INT STAT REV, V50, P145, DOI 10.2307/1402598
+   Bingham N. H., 2002, Quantitative Finance, V2, P241, DOI 10.1088/1469-7688/2/4/201
+   Bouchaud JP, 1997, SCALE INVARIANCE
+   Breymann W, 2003, QUANT FINANC, V3, P1, DOI 10.1088/1469-7688/3/1/301
+   CAMBANIS S, 1981, J MULTIVARIATE ANAL, V11, P368, DOI 10.1016/0047-259X(81)90082-8
+   Cont R, 2001, QUANT FINANC, V1, P223, DOI [10.1088/1469-7688/1/2/304, 10.1080/713665670]
+   Ding Z., 1993, J EMPIR FINANC, V1, P83, DOI DOI 10.1016/0927-5398(93)90006-D
+   Dobric J, 2013, DEPEND MODEL, V1, P94, DOI 10.2478/demo-2013-0005
+   Dumbgen L, 2005, SCAND J STAT, V32, P247, DOI 10.1111/j.1467-9469.2005.00425.x
+   Eberlein E., 1995, BERNOULLI, V1, P281, DOI DOI 10.2307/3318481
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   Fang KT, 1990, SYMMETRIC MULTIVARIA
+   Ferreira H, 2012, KYBERNETIKA, V48, P988
+   Frahm G, 2005, INSUR MATH ECON, V37, P80, DOI 10.1016/j.insmatheco.2005.05.008
+   Frahm G, 2003, STAT PROBABIL LETT, V63, P275, DOI 10.1016/S0167-7152(03)00092-0
+   Frahm G., 2004, THESIS
+   Frahm G., 2015, MODERN NONPARAMETRIC, P289
+   Frahm G, 2006, STAT PROBABIL LETT, V76, P1470, DOI 10.1016/j.spl.2006.03.006
+   Frahm G, 2010, COMPUT STAT DATA AN, V54, P374, DOI 10.1016/j.csda.2009.08.019
+   Frahm G, 2009, J MULTIVARIATE ANAL, V100, P1329, DOI 10.1016/j.jmva.2008.11.007
+   Hettmansperger TP, 2002, BIOMETRIKA, V89, P851, DOI 10.1093/biomet/89.4.851
+   Hult H, 2002, ADV APPL PROBAB, V34, P587, DOI 10.1239/aap/1033662167
+   Joe H., 1997, MULTIVARIATE MODELS
+   JORION P, 1985, J BUS, V58, P259, DOI 10.1086/296296
+   Junker M, 2005, ECONOMET J, V8, P428, DOI 10.1111/j.1368-423X.2005.00173.x
+   KELKER D, 1970, SANKHYA SER A, V32, P419
+   Kent J. T., 1988, J APPL STAT, V15, P247, DOI DOI 10.1080/02664768800000029
+   KENT JT, 1991, ANN STAT, V19, P2102, DOI 10.1214/aos/1176348388
+   Laub Patrick J, 2015, ARXIV150702822
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   Mikosch T, 2003, EXTREME VALUES FINAN
+   Nelsen R.B., 2006, INTRO COPULAS
+   Paindaveine D, 2008, STAT PROBABIL LETT, V78, P2240, DOI 10.1016/j.spl.2008.01.094
+   Rachev S., 2000, STABLE PARETIAN MODE
+   Rivieccio G, 2012, ADV STAT METHODS ANA, P287
+   Schmidt R, 2002, MATH METHOD OPER RES, V55, P301, DOI 10.1007/s001860200191
+   Shorrocks A., 2017, GLOBAL WEALTH DATABO
+   Sklar A., 1959, FONCTIONS REPARTITIO
+   TYLER DE, 1987, ANN STAT, V15, P234, DOI 10.1214/aos/1176350263
+   TYLER DE, 1987, BIOMETRIKA, V74, P579, DOI 10.1093/biomet/74.3.579
+   TYLER DE, 1983, BIOMETRIKA, V70, P411
+   YOHAI VJ, 1990, COMMUN STAT THEORY, V19, P3925
+NR 49
+TC 0
+Z9 0
+U1 0
+U2 1
+PU AMER INST MATHEMATICAL SCIENCES-AIMS
+PI SPRINGFIELD
+PA PO BOX 2604, SPRINGFIELD, MO 65801-2604 USA
+SN 2573-0134
+J9 QUANT FINANC ECON
+JI Quant. Financ. Econ.
+PY 2018
+VL 2
+IS 3
+BP 590
+EP 614
+DI 10.3934/QFE.2018.3.590
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA GV0XT
+UT WOS:000445789300003
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Escalera, M
+   Tarrant, W
+AF Escalera, Morgan
+   Tarrant, Wayne
+TI Sovereign Adaptive Risk Modeling and Implications for the Eurozone
+   GREXIT Case
+SO INTERNATIONAL JOURNAL OF FINANCIAL STUDIES
+LA English
+DT Article
+DE systemic risk; sovereign default; GREXIT
+AB In the wake of the 2008 financial crisis, the Financial Stability Board (FSB) and the Basel Committee on Banking Supervision (BCBS) created a list of systemically important financial institutions (SIFIs) with the intention of determining which financial institutions were important enough to the global market that their failure would result in systemic collapse. In this work, we create a model that modifies the BCBS's five indicators of size, interconnectedness, cross-jurisdictional activities, complexity, and substitutability and apply these measures of systemic stress to governments. Although the cross-jurisdictional activities and size were almost identical to the SIFI calculations, the others had to be adapted to mirror the intent of the BCBS. Interconnectedness is calculated by simulation of what would happen to nearby countries if a country defaulted. Substitutability is estimated by the number of services that would no longer be provided if the government ceased to exist. Complexity is market-based and is derived from credit default swap (CDS) spreads. The original application of the model was to track the systemic interdependence of the Eurozone, with particular emphasis on the case of Greece. We anticipate that this model can be used in regional fiscal situations beyond the Eurozone.
+C1 [Escalera, Morgan; Tarrant, Wayne] Rose Hulman Inst Technol, Terre Haute, IN 47803 USA.
+RP Tarrant, W (reprint author), Rose Hulman Inst Technol, Terre Haute, IN 47803 USA.
+EM escaleramorgan@gmail.com; tarrant@rose-hulman.edu
+CR Aizenman J, 2013, J INT MONEY FINANC, V34, P37, DOI 10.1016/j.jimonfin.2012.11.011
+   Alter A, 2014, J BANK FINANC, V42, P134, DOI 10.1016/j.jbankfin.2014.01.030
+   Banco D'ESpana Eurostema, 2015, ANNUAL REPORT 2014
+   Banco De Portugal, 2015, ANNUAL REPORT 2014
+   Bank of Finland, 2015, ANNUAL REPORT 2014
+   Bank of Greece Eurosystem, 2015, ANNUAL REPORT 2014
+   Bank of Italy, 2015, RELAZIONE ANN 2014
+   Banque de France, 2014, ANNUAL REPORT 2013
+   Banque de Luxembourg Eurosystem, 2015, ANNUAL REPORT 2014
+   Basel Committee on Banking Supervision, 2013, GLOBAL SYSTEMICALLY
+   Basel Committee on Banking Supervision, 2014, INSTRUCTIONS FOR THE
+   Central Bank of Cyprus Eurosystem, 2015, ANNUAL REPORT 2014
+   Central Bank of Ireland Eurosystem, 2015, ANNUAL REPORT 2014
+   Central Bank of Lithuania Eurosystem, 2015, ANN REPORT OF THE BA
+   Central Bank of Malta Eurosystem, 2015, ANNUAL REPORT 2014
+   Central Intelligence Agency World Factbook, 2015, CENTRAL INTELLIGENCE
+   De Nederlandsche Bank, 2014, ANNUAL REPORT 2013
+   Deutsche Bundesbank Eurosystem, 2015, ANNUAL REPORT 2014
+   Eesti Pank Eurosystem, 2015, ANNUAL REPORT 2014
+   European Central Bank Eurosystem, 2015, TARGET2 ANN REPORT 2
+   European Central Bank Eurosystem, 2015, CAPITAL SUBSCRIPTION
+   European Financial Stability Facility, 2015, EFSF FAQ
+   IMF, 2015, IMF MEMBERS QUOTAS A
+   Latvijas Banka, 2015, ANNUAL REPORT 2014
+   Lucas A, 2014, J BUS ECON STAT, V32, P271, DOI 10.1080/07350015.2013.873540
+   Narodna Banka Slovenska, 2015, ANNUAL REPORT 2014
+   National Bank of Belgium, 2015, 2014 CORPORTE REPORT
+   Oesterreichische Nationalbank Eurosystem, 2015, ANNUAL REPORT 2014
+   World Bank, 2015, INDICATORS THE WORLD
+NR 29
+TC 0
+Z9 0
+U1 0
+U2 0
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2227-7072
+J9 INT J FINANC STUD
+JI Int. J. Financ. Stud.
+PD JUN
+PY 2018
+VL 6
+IS 2
+AR 48
+DI 10.3390/ijfs6020048
+PG 11
+WC Business, Finance
+SC Business & Economics
+GA GK8SD
+UT WOS:000436496800015
+OA DOAJ Gold
+DA 2019-12-28
+ER

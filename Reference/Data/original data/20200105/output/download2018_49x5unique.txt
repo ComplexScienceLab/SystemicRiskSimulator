@@ -1,0 +1,462 @@
+
+PT J
+AU Chen, K
+   Vitiello, L
+   Hyde, S
+   Poon, SH
+AF Chen, Ke
+   Vitiello, Luiz
+   Hyde, Stuart
+   Poon, Ser-Huang
+TI The reality of stock market jumps diversification
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Asset allocation; International portfolio diversification; Home bias;
+   Systemic and idiosyncratic jumps; Jump news
+ID HOME BIAS; ASSET ALLOCATION; PORTFOLIO ALLOCATION; RETURNS; VOLATILITY;
+   MODEL; RISK
+AB We propose a non-parametric procedure for estimating systemic co-jumps and independent idiosyncratic jumps for 35 stock markets, and study news associated with these jumps as reported in Factiva and Bloomberg from 1988 to 2014. Our results suggest that it is important to distinguish between systemic co-jumps and idiosyncratic jumps. We find both types of jumps have important implications for home-bias investors, while idiosyncratic jumps have economically significant impact on portfolio weights for emerging markets. Our news analysis suggests systemic jumps are typically caused by currency crises, sectoral failure, liquidity issues, and deteriorating economic climate, while idiosyncratic jumps are usually caused by political unrest, currency instability, and large firm effects on small economies. In fact, many of the idiosyncratic jumps share the same origin although different stock markets experienced the impact differently at different times. (C) 2018 Elsevier Ltd. All rights reserved.
+C1 [Chen, Ke; Hyde, Stuart; Poon, Ser-Huang] Univ Manchester, Alliance Manchester Business Sch, Crawford House,Oxford Rd, Manchester M13 9PL, Lancs, England.
+   [Vitiello, Luiz] Univ Essex, Essex Business Sch, Wivenhoe Pk, Colchester CO4 3SQ, Essex, England.
+RP Poon, SH (reprint author), Univ Manchester, Alliance Manchester Business Sch, Crawford House,Oxford Rd, Manchester M13 9PL, Lancs, England.
+EM ke.chen@postgrad.mbs.ac.uk; lrviti@essex.ac.uk;
+   stuart.hyde@manchester.ac.uk; ser-huang.poon@manchester.ac.uk
+OI Hyde, Stuart/0000-0003-0224-5442
+CR Aggarwal R, 1999, J FINANC QUANT ANAL, V34, P33, DOI 10.2307/2676245
+   Ait-Sahalia Y., 2009, ANN APPL PROBAB, V9, P356
+   Asgharian H., 2006, J FINANCIAL ECONOMET, V4, P167, DOI DOI 10.1093/JJFINEC/NBJ005
+   Asgharian H, 2011, J INT MONEY FINANC, V30, P22, DOI 10.1016/j.jimonfin.2010.06.006
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baele L, 2007, J INT MONEY FINANC, V26, P606, DOI 10.1016/j.jimonfin.2007.03.007
+   Bekaert G, 1998, J PORTFOLIO MANAGE, V24, P102, DOI 10.3905/jpm.24.2.102
+   Bodnaruk A, 2009, REV FINANC, V13, P629, DOI 10.1093/rof/rfp014
+   Caporin M, 2017, J FINANC ECON, V126, P563, DOI 10.1016/j.jfineco.2017.06.016
+   CARLIN BP, 1992, J AM STAT ASSOC, V87, P493, DOI 10.2307/2290282
+   Chatrath A, 2014, J INT MONEY FINANC, V40, P42, DOI 10.1016/j.jimonfin.2013.08.018
+   COOPER I, 1994, REV FINANC STUD, V7, P45, DOI 10.1093/rfs/7.1.45
+   Coval JD, 1999, J FINANC, V54, P2045, DOI 10.1111/0022-1082.00181
+   Das SR, 2004, J FINANC, V59, P2809, DOI 10.1111/j.1540-6261.2004.00717.x
+   Eraker B, 2004, J FINANC, V59, P1367, DOI 10.1111/j.1540-6261.2004.00666.x
+   Eraker B, 2003, J FINANC, V58, P1269, DOI 10.1111/1540-6261.00566
+   Goetzmann WN, 2005, J BUS, V78, P1, DOI 10.1086/426518
+   Guidolin M, 2008, REV FINANC STUD, V21, P855, DOI 10.1093/rfs/hhn006
+   Jondeau E, 2006, EUR FINANC MANAG, V12, P29, DOI 10.1111/j.1354-7798.2006.00309.x
+   Karolyi A, 2003, INT FINANC, V6, P179, DOI DOI 10.1111/1468-2362.00114
+   KIM MJ, 1994, J FINANC QUANT ANAL, V29, P609, DOI 10.2307/2331112
+   Kou SG, 2002, MANAGE SCI, V48, P1086, DOI 10.1287/mnsc.48.8.1086.166
+   Lahaye J, 2011, J APPL ECONOMET, V26, P893, DOI 10.1002/jae.1149
+   Lee SS, 2012, REV FINANC STUD, V25, P439, DOI 10.1093/rfs/hhr084
+   Li K, 2004, J FINANC QUANT ANAL, V39, P47, DOI 10.1017/S0022109000003884
+   Liu J, 2003, J FINANC, V58, P231, DOI 10.1111/1540-6261.00523
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Martellini L, 2010, REV FINANC STUD, V23, P1467, DOI 10.1093/rfs/hhp099
+   Pukthuanthong K, 2015, REV ASSET PRICING ST, V5, P92, DOI 10.1093/rapstu/rau009
+   TESAR LL, 1995, J INT MONEY FINANC, V14, P467, DOI 10.1016/0261-5606(95)00023-8
+   Thapa C, 2012, J INT MONEY FINANC, V31, P189, DOI 10.1016/j.jimonfin.2011.10.011
+   WU L, 2003, REV QUANTITATIVE FIN, V20, P207, DOI DOI 10.1023/A:1023699711805
+NR 32
+TC 1
+Z9 1
+U1 1
+U2 13
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD SEP
+PY 2018
+VL 86
+BP 171
+EP 188
+DI 10.1016/j.jimonfin.2018.04.008
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA GI0YD
+UT WOS:000434095400009
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Calcagnile, LM
+   Bormetti, G
+   Treccani, M
+   Marmi, S
+   Lillo, F
+AF Calcagnile, Lucio Maria
+   Bormetti, Giacomo
+   Treccani, Michele
+   Marmi, Stefano
+   Lillo, Fabrizio
+TI Collective synchronization and high frequency systemic instabilities in
+   financial markets
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Systemic risk; Hawkes processes; Flash Crash; Macroeconomic news
+ID CONTINUOUS-TIME; JUMPS; MODELS
+AB We present some empirical evidence on the dynamics of price instabilities in financial markets and propose a new Hawkes modelling approach. Specifically, analysing the recent high frequency dynamics of a set of US stocks, we find that since 2001 the level of synchronization of large price movements across assets has significantly increased. We find that only a minor fraction of these systemic events can be connected with the release of pre-announced macroeconomic news. Finally, the larger is the multiplicity of the event-i.e. how many assets have swung together-the larger is the probability of a new event occurring in the near future, as well as its multiplicity. To reproduce these facts, due to the self- and cross-exciting nature of the event dynamics, we propose an approach based on Hawkes processes. For each event, we directly model the multiplicity as a multivariate point process, neglecting the identity of the specific assets. This allows us to introduce a parsimonious parametrization of the kernel of the process and to achieve a reliable description of the dynamics of large price movements for a high-dimensional portfolio.
+C1 [Calcagnile, Lucio Maria; Treccani, Michele] LIST SpA, Via Pietrasantina 123, I-56122 Pisa, Italy.
+   [Calcagnile, Lucio Maria; Bormetti, Giacomo; Treccani, Michele; Lillo, Fabrizio] QUANTLab, Via Pietrasantina 123, I-56122 Pisa, Italy.
+   [Bormetti, Giacomo; Lillo, Fabrizio] Univ Bologna, Dept Math, Piazza Porta San Donato 5, I-40126 Bologna, Italy.
+   [Marmi, Stefano; Lillo, Fabrizio] Scuola Normale Super Pisa, Fac Math & Nat Sci, Piazza Cavalieri 7, I-56126 Pisa, Italy.
+   [Marmi, Stefano] CNRS, Lab Fibonacci, UMI 3483, Piazza Cavalieri 7, I-56126 Pisa, Italy.
+   [Treccani, Michele] Mediobanca SpA, Piazzetta E Cuccia 1, I-20121 Milan, Italy.
+RP Calcagnile, LM (reprint author), LIST SpA, Via Pietrasantina 123, I-56122 Pisa, Italy.; Calcagnile, LM (reprint author), QUANTLab, Via Pietrasantina 123, I-56122 Pisa, Italy.
+EM l.calcagnile@list-group.com
+OI Bormetti, Giacomo/0000-0003-3542-2505
+FU European Commission H Program [INFRAIA-1- 2014-2015, 654024]; Scuola
+   Normale Superiore [SNS14BBORMETTI];  [SNS13LILLB]
+FX FL was partially supported by the 'Systemic risk in financial markets
+   across time scales' [grant number SNS13LILLB]; the European Commission
+   H2020 Program under the scheme [INFRAIA-1- 2014-2015]: Research
+   Infrastructures [grant agreement number 654024] SoBigData: Social Mining
+   & Big Data Ecosystem. GB research was supported by the Scuola Normale
+   Superiore [grant number SNS14BBORMETTI].
+CR Andersen TG, 2007, J ECONOMETRICS, V138, P125, DOI 10.1016/j.jeconom.2006.05.018
+   Andersen TG, 2010, J APPL ECONOMET, V25, P233, DOI 10.1002/jae.1105
+   Bacry E, 2013, QUANT FINANC, V13, P65, DOI 10.1080/14697688.2011.647054
+   Bacry E, 2015, MARK MICROSTRUCT LIQ, V1, DOI 10.1142/S2382626615500057
+   Bajgrowicz P, 2016, MANAGE SCI, V62, P2198, DOI 10.1287/mnsc.2015.2234
+   Bamdorff-Nielsen O. E., 2004, J FINANCIAL ECONOMET, V2, P1, DOI DOI 10.1093/JJFINEC/NBH001
+   Bauwens L., 2009, HDB FINANCIAL TIME S, P953, DOI DOI 10.1007/978-3-540-71297-8_41
+   Bollerslev T, 2008, J ECONOMETRICS, V144, P234, DOI 10.1016/j.jeconom.2008.01.006
+   Bollerslev T, 2013, J ECONOMETRICS, V172, P307, DOI 10.1016/j.jeconom.2012.08.014
+   Bormetti G, 2015, QUANT FINANC, V15, P1137, DOI 10.1080/14697688.2014.996586
+   Bowsher CG, 2007, J ECONOMETRICS, V141, P876, DOI 10.1016/j.jeconom.2006.11.007
+   Commodity Futures Trading Commission (CFTC) and Securities and Exchange Commission (SEC) Joint Report, 2010, REP STAFFS CFTC SEC
+   Corsi F, 2010, J ECONOMETRICS, V159, P276, DOI 10.1016/j.jeconom.2010.07.008
+   Daley D., 2003, INTRO THEORY POINT P, VI
+   Dumitru AM, 2012, J BUS ECON STAT, V30, P242, DOI 10.1080/07350015.2012.663250
+   Filimonov V, 2012, PHYS REV E, V85, DOI 10.1103/PhysRevE.85.056108
+   Gerig A., 2013, HIGH FREQUENCY TRADI
+   Gilder D, 2014, J BANK FINANC, V40, P443, DOI 10.1016/j.jbankfin.2013.04.025
+   Golub A., 2012, ARXIV12116667
+   Gomber P, 2011, HIGH FREQUENCY TRADI
+   Hardiman SJ, 2013, EUR PHYS J B, V86, DOI 10.1140/epjb/e2013-40107-3
+   HAWKES AG, 1971, BIOMETRIKA, V58, P83, DOI 10.2307/2334319
+   Johnson N, 2013, SCI REP-UK, V3, DOI 10.1038/srep02627
+   JOULIN A, 2008, WILMOTT MAGAZINE, P1
+   Kirilenko A, 2017, J FINANC, V72, P967, DOI 10.1111/jofi.12498
+   Labys P., 2000, RISK, V13, P105
+   Lee SS, 2012, REV FINANC STUD, V25, P439, DOI 10.1093/rfs/hhr084
+   Lee SS, 2008, REV FINANC STUD, V21, P2535, DOI 10.1093/rfs/hhm056
+   Lewis M., 2014, FLASH BOYS WALL STRE
+   MacIntosh J. G, 2013, HIGH FREQUENCY TRADE, P391
+   OGATA Y, 1988, J AM STAT ASSOC, V83, P9, DOI 10.2307/2288914
+   Petersen AM, 2010, PHYS REV E, V82, DOI 10.1103/PhysRevE.82.036114
+   Petersen AM, 2010, PHYS REV E, V81, DOI 10.1103/PhysRevE.81.066121
+   Rambaldi M, 2017, QUANT FINANC, V17, P999, DOI 10.1080/14697688.2016.1260759
+   Rambaldi M, 2015, PHYS REV E, V91, DOI 10.1103/PhysRevE.91.012819
+   Reno R., 2016, J FINANC EC IN PRESS
+   Toke IM, 2012, ECONOMICS-KIEL, V6, DOI 10.5018/economics-ejournal.ja.2012-22
+   Toke IM, 2011, NEW ECON WINDOWS, P49
+   VEREJONE.D, 1970, J ROY STAT SOC B, V32, P1
+   VEREJONES D, 1982, ANN I STAT MATH, V34, P189, DOI 10.1007/BF02481022
+NR 40
+TC 2
+Z9 2
+U1 0
+U2 8
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PY 2018
+VL 18
+IS 2
+BP 237
+EP 247
+DI 10.1080/14697688.2017.1403141
+PG 11
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA GA5VS
+UT WOS:000428402600008
+DA 2019-12-28
+ER
+
+PT J
+AU Herrera, R
+   Gonzalez, S
+   Clements, A
+AF Herrera, Rodrigo
+   Gonzalez, Sergio
+   Clements, Adam
+TI Mutual excitation between OECD stock and oil markets: A conditional
+   intensity extreme value approach
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Extreme value theory; Financial markets; Oil markets; Value at risk;
+   Interdependence
+ID PRICE SHOCKS; RISK-MANAGEMENT; FINANCIAL CRISIS; COPULA APPROACH;
+   DISTRIBUTIONS; STATISTICS; DEPENDENCE; QUANTILES; CONTAGION; COUNTRIES
+AB We analyze the degree of mutual excitation that exists between extreme events across the stock markets of OECD member nations and the Brent and WTI crude oil markets. For this analysis, marked point process models are proposed which are able to capture the dynamics of the intensity of occurrence and comovement during periods of crisis. The results show a significant, negative interdependence between most OECD markets, especially those of the USA, Japan and France. These major oil importing countries display links between equity market losses and positive returns in both oil markets. However, positive interdependence is not observed between any of the OECD countries except for South Korea. The great advantage of this methodology is that, apart from using the size distribution of extreme events, it also uses the occurrence times of extreme events as a source of information. With this information, these models are better able to capture the stylized facts of extreme events in financial markets such as clustering behavior and cross-excitation.
+C1 [Herrera, Rodrigo] Univ Talca, Fac Econ & Negocios, Talca, Chile.
+   [Gonzalez, Sergio] Univ Talca, Fac Ingn, Talca, Chile.
+   [Clements, Adam] Queensland Univ Technol, Sch Econ & Finance, Brisbane, Qld, Australia.
+RP Herrera, R (reprint author), Univ Talca, Fac Econ & Negocios, Talca, Chile.
+EM rodriherrera@utalca.cl
+OI herrera, rodrigo/0000-0002-4604-0396; Clements, Adam/0000-0002-4232-0323
+FU Chilean Agency CONICYTComision Nacional de Investigacion Cientifica y
+   Tecnologica (CONICYT)CONICYT FONDECYT [FONDECYT 1150349]
+FX Both authors would like to thank the anonymous referee for the comments
+   and suggestions on an earlier draft of this discussion paper. The first
+   author thanks the Chilean Agency CONICYT (FONDECYT 1150349) for
+   financial support.
+CR Ait-Sahalia Y, 2015, J FINANC ECON, V117, P585, DOI 10.1016/j.jfineco.2015.03.002
+   Ait-Sahalia Y, 2014, J ECONOMETRICS, V183, P151, DOI 10.1016/j.jeconom.2014.05.006
+   Aloui R, 2013, ENERG ECON, V39, P208, DOI 10.1016/j.eneco.2013.04.012
+   Bacry E, 2012, EUR PHYS J B, V85, DOI 10.1140/epjb/e2012-21005-8
+   Bacry E, 2013, QUANT FINANC, V13, P65, DOI 10.1080/14697688.2011.647054
+   BIRNBAUM ZW, 1969, J APPL PROBAB, V6, P319, DOI 10.2307/3212003
+   Chavez-Demoulin V, 2004, J RISK INSUR, V71, P183, DOI 10.1111/j.0022-4367.2004.00085.x
+   Chavez-Demoulin V, 2012, J BANK FINANC, V36, P3415, DOI 10.1016/j.jbankfin.2012.08.011
+   Chavez-Demoulin V., 1999, THESIS
+   Ciner C, 2001, STUD NONLINEAR DYN E, V5, P203, DOI 10.1162/10811820160080095
+   Cologni A, 2009, ECON MODEL, V26, P1, DOI 10.1016/j.econmod.2008.05.006
+   Daley D, 2003, INTRO THEORY POINT P
+   DAVISON AC, 1990, J ROY STAT SOC B MET, V52, P393
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   Giesecke K, 2013, MATH FINANC, V23, P742, DOI 10.1111/j.1467-9965.2011.00512.x
+   Grothe O, 2014, J ECONOMETRICS, V182, P269, DOI 10.1016/j.jeconom.2014.03.011
+   Hall AD, 2006, EMPIR ECON, V30, P973, DOI 10.1007/s00181-005-0008-7
+   Hammoudeh S., 2004, INT REV ECON FINANC, V13, P427, DOI DOI 10.1016/S1059-0560(03)00011-X
+   Hammoudeh S, 2013, N AM J ECON FINANC, V25, P318, DOI 10.1016/j.najef.2012.06.012
+   Hautsch N., 2015, APPL ECONOMETRICS
+   Herrera R, 2014, N AM J ECON FINANC, V29, P218, DOI 10.1016/j.najef.2014.06.013
+   Herrera R, 2013, ENERG ECON, V38, P64, DOI 10.1016/j.eneco.2013.03.003
+   Jones CM, 1996, J FINANC, V51, P463, DOI 10.2307/2329368
+   Kehrle K, 2013, J BANK FINANC, V37, P1629, DOI 10.1016/j.jbankfin.2012.12.011
+   Kwok SMS, 2008, CAN J STAT, V36, P561, DOI 10.1002/cjs.5550360405
+   Mollick AV, 2013, ENERG ECON, V36, P1, DOI 10.1016/j.eneco.2012.11.021
+   Narayan PK, 2010, APPL ENERG, V87, P356, DOI 10.1016/j.apenergy.2009.05.037
+   Ono S, 2011, EUR J COMP ECON, V8, P29
+   Papapetrou E, 2001, ENERG ECON, V23, P511, DOI 10.1016/S0140-9883(01)00078-0
+   Park J, 2008, ENERG ECON, V30, P2587, DOI 10.1016/j.eneco.2008.04.003
+   PICKANDS J, 1975, ANN STAT, V3, P119
+   PRENTICE RL, 1974, BIOMETRIKA, V61, P539, DOI 10.1093/biomet/61.3.539
+   Ready R. C, 2016, REV FINANC, V2016, P1
+   Russell J. R., 1999, ECONOMETRIC MODELING
+   Sadorsky P, 1999, ENERG ECON, V21, P449, DOI 10.1016/S0140-9883(99)00020-1
+   Santos PA, 2013, N AM J ECON FINANC, V26, P487, DOI 10.1016/j.najef.2013.02.017
+   SMITH RL, 1987, ANN STAT, V15, P1174, DOI 10.1214/aos/1176350499
+   STACY EW, 1962, ANN MATH STAT, V33, P1187, DOI 10.1214/aoms/1177704481
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+   Zhu HM, 2014, INT REV ECON FINANC, V29, P208, DOI 10.1016/j.iref.2013.05.015
+NR 40
+TC 0
+Z9 0
+U1 3
+U2 10
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD NOV
+PY 2018
+VL 46
+BP 70
+EP 88
+DI 10.1016/j.najef.2018.03.010
+PG 19
+WC Business, Finance; Economics
+SC Business & Economics
+GA GZ0FY
+UT WOS:000449038300005
+DA 2019-12-27
+ER
+
+PT J
+AU Fang, LB
+   Sun, BY
+   Li, HJ
+   Yu, HH
+AF Fang, Libing
+   Sun, Boyang
+   Li, Huijing
+   Yu, Honghai
+TI Systemic risk network of Chinese financial institutions
+SO EMERGING MARKETS REVIEW
+LA English
+DT Article
+DE Systemic risk contribution; Tail risk network; Firm-specific risk; VaR
+ID COVAR; CONTAGION; MARKETS; FIRMS
+AB The Chinese stock market crash in June 2015 has demonstrated necessary to improve understanding of systemic risk from the perspective of financial network. This study constructs a tail risk network to present overall systemic risk of Chinese financial institutions, given the macroeconomic and market externalities. Employing the Least Absolute Shrinkage and Selection Operator (LASSO) method of high-dimensional models, our results show that firm's idiosyncratic risk can be affected by its connectedness with other institutions. The risk spillover effect from other companies is the main driving factor of firm-specific risk, comparing with macroeconomic state, firm characteristics and historical price movement. The number of connections between institutions significantly increases during June 2014 to June 2016. Moreover, we utilize the Kolmogorov-Smimov statistic to test significance of systemic risk beta based on tail risk and further rank the systemic risk contribution. Finally, we test the determinants of systemic risk contribution in a forward-looking way. Regulators could detect those firms that are most threatening to the stability of system. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Fang, Libing; Sun, Boyang; Yu, Honghai] Nanjing Univ, Sch Management & Engn, Nanjing, Jiangsu, Peoples R China.
+   [Li, Huijing] Univ Manitoba, IH Asper Sch Business, Winnipeg, MB, Canada.
+RP Yu, HH (reprint author), 22 Hankou Rd, Nanjing 210093, Jiangsu, Peoples R China.
+EM hhyu@nju.edu.cn
+RI fang, libing/W-6528-2019
+FU National Science Foundation of ChinaNational Natural Science Foundation
+   of China [71472085, 71401071, 71672081, 71771117, 717201070011]
+FX We are grateful to the editors and anonymous reviewers for their helpful
+   comments, which greatly improved the earlier draft. This work was
+   supported by the National Science Foundation of China [grant numbers
+   71472085, 71401071, 71672081, 71771117 and 717201070011.
+CR Abadie A, 2002, J AM STAT ASSOC, V97, P284, DOI 10.1198/016214502753479419
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Barigozzi M., 2016, WORKING PAPER
+   Baur D., 2005, EMERG MARK REV, V6, P21, DOI DOI 10.1016/j.ememar.2004.10.001
+   Bemanke B., 2009, COMMUNICATION
+   Bernal O, 2014, J BANK FINANC, V47, P270, DOI 10.1016/j.jbankfin.2014.05.030
+   Bluhm M, 2014, J FINANC STABIL, V13, P75, DOI 10.1016/j.jfs.2014.04.002
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Drakos AA, 2015, INT REV ECON FINANC, V40, P127, DOI 10.1016/j.iref.2015.02.010
+   Dumontaux N, 2013, J FINANC STABIL, V9, P269, DOI 10.1016/j.jfs.2013.04.001
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Hardie WK, 2016, J ECONOMETRICS, V192, P499, DOI 10.1016/j.jeconom.2016.02.013
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Hautsch N, 2014, INT J FORECASTING, V30, P781, DOI 10.1016/j.ijforecast.2013.09.004
+   Huang WQ, 2016, PHYSICA A, V456, P183, DOI 10.1016/j.physa.2016.03.034
+   Kupiec P., 1995, J DERIV, V3, P73, DOI [10.3905/jod.1995.407942, DOI 10.3905/JOD.1995.407942]
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Ronnqvist S, 2015, QUANT FINANC, V15, P1619, DOI 10.1080/14697688.2015.1071076
+   Sieczka P, 2011, EUR PHYS J B, V82, P257, DOI 10.1140/epjb/e2011-10757-2
+   TAI CS, 2007, EMERG MARK REV, V8, P264, DOI DOI 10.1016/J.EMEMAR.2006.09.011
+   Wang GJ, 2018, EMERG MARK REV, V35, P1, DOI 10.1016/j.ememar.2017.12.001
+   Yu HH, 2018, EMERG MARK REV, V34, P87, DOI 10.1016/j.ememar.2017.10.006
+   Zhang BY, 2009, REV FINANC STUD, V22, P5099, DOI 10.1093/rfs/hhp004
+   Zhou C., 2009, WORKING PAPER
+NR 28
+TC 3
+Z9 3
+U1 11
+U2 40
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1566-0141
+EI 1873-6173
+J9 EMERG MARK REV
+JI Emerg. Mark. Rev.
+PD JUN
+PY 2018
+VL 35
+BP 190
+EP 206
+DI 10.1016/j.ememar.2018.02.003
+PG 17
+WC Business, Finance; Economics
+SC Business & Economics
+GA GL1WJ
+UT WOS:000436903100012
+DA 2019-12-27
+ER
+
+PT J
+AU Urionabarrenetxea, S
+   Garcia-Merino, JD
+   San-Jose, L
+   Retolaza, JL
+AF Urionabarrenetxea, Sara
+   Domingo Garcia-Merino, Jose
+   San-Jose, Leire
+   Luis Retolaza, Jose
+TI Living with zombie companies: Do we know where the threat lies?
+SO EUROPEAN MANAGEMENT JOURNAL
+LA English
+DT Article
+DE Equity; Leverage; Risk; Corporate management; Responsibility; Decisions
+ID CAPITAL STRUCTURE; FINANCIAL STRUCTURE; DETERMINANTS; JAPAN; FIRMS;
+   INVESTMENT; EQUITY; COST; SMES
+AB This paper shows the existence of extreme types of zombie firm, i.e. companies with negative equity that continue to do business despite having lost their entire equity. We explain how these firms are measured and how the riskier ones are defined with different determinants. Using a Spanish sample from 2010 to 2014 an index called the EZlndex is developed that includes four dimensions of the extreme zombie problem: extension, contagion, recovery signs and immediacy. The paper contributes to zombie theory on the one hand by developing a method for ranking zombie firms based on risks and changes over time, and on the other hand by using a log-linear model to detect the riskiest corporate profiles out of all these risky firms. It demonstrates significant implications that need to be considered by the competent authorities not only in terms of their impact as a whole but also in regard to the particular profile of extreme zombie firms: they are less regulated, large and located in regions with large business fabrics. (C) 2017 Elsevier Ltd. All rights reserved.
+C1 [Urionabarrenetxea, Sara; Domingo Garcia-Merino, Jose; San-Jose, Leire] Univ Basque Country, ECRI Res Grp, UPV EHU, Leioa, Spain.
+   [Luis Retolaza, Jose] ECRI, Deusto Business Sch, Bilbao, Spain.
+RP San-Jose, L (reprint author), Univ Basque Country, ECRI Res Grp, UPV EHU, Leioa, Spain.
+EM leire.sanjose@ehu.eus
+RI Retolaza, Jose Luis/AAA-6784-2019; SAN-JOSE, LEIRE/D-9125-2011
+OI Retolaza, Jose Luis/0000-0001-7089-4861; GARCIA MERINO, JOSE
+   DOMINGO/0000-0003-3502-9893; SAN-JOSE, LEIRE/0000-0003-2760-3285
+FU UPV/EHUUniversity of Basque Country [GIU 15/10]; FESIDE
+FX This work is part of the research group ECRI Ethics in Finance and
+   Social Value, and supported by UPV/EHU (GIU 15/10) and FESIDE.
+CR Ahearne A., 2005, INT EC EC POLICY, V2, P363
+   [Anonymous], 2010, ZOMB HOT AR IR REC E
+   Asanuma D., 2015, INT BUSINESS MANAGEM, V9, P719
+   Bingham L, 2014, ZOMBIE BUSINESSES PH
+   Booth L, 2001, J FINANC, V56, P87, DOI 10.1111/0022-1082.00320
+   Caballero RJ, 2008, AM ECON REV, V98, P1943, DOI 10.1257/aer.98.5.1943
+   Caballero RJ, 2005, REV ECON STUD, V72, P313, DOI 10.1111/j.1467-937X.2005.00334.x
+   Correa A, 2003, REV CONTAB, V12, P47
+   de Jong A, 2008, J BANK FINANC, V32, P1954, DOI 10.1016/j.jbankfin.2007.12.034
+   Faulkender M, 2006, REV FINANC STUD, V19, P45, DOI 10.1093/rfs/hhj003
+   FERRI MG, 1979, J FINANC, V34, P631, DOI 10.1111/j.1540-6261.1979.tb02130.x
+   Flynn B. B., 1990, J OPERATIONS MANAGEM, V9, P250, DOI DOI 10.1016/0272-6963(90)90098-X
+   Freudenberg M., 2003, OECD SCI TECHNOLOGY, V1-34
+   Fukuda S, 2011, WORLD ECON, V34, P1124, DOI 10.1111/j.1467-9701.2011.01368.x
+   Garcia-Meca E., 2007, REV AECA, V78, P10
+   Herce J. A., 2014, CUADERNOS INFORM EC, V243, P41
+   Holland M., 1990, MACHINE STOPPED
+   Hoshi T, 2006, JPN ECON REV, V57, P30, DOI 10.1111/j.1468-5876.2006.00354.x
+   Hurley AE, 1997, J ORGAN BEHAV, V18, P667, DOI 10.1002/(SICI)1099-1379(199711)18:6<667::AID-JOB874>3.0.CO;2-T
+   Imai K, 2016, J JPN INT ECON, V39, P91, DOI 10.1016/j.jjie.2015.12.001
+   International Monetary Fund, 2015, WORLD EC OUTLOOK
+   Sanchez-Vidal FJ, 2014, ECON MODEL, V36, P455, DOI 10.1016/j.econmod.2013.08.043
+   Jobson J. D., 1992, APPL MULTIVARIATE DA, VII
+   KAPLAN SN, 1989, J FINANC ECON, V25, P191, DOI 10.1016/0304-405X(89)90081-0
+   Kayo EK, 2011, J BANK FINANC, V35, P358, DOI 10.1016/j.jbankfin.2010.08.015
+   Luo Q, 2015, INT REV ECON FINANC, V36, P99, DOI 10.1016/j.iref.2014.11.010
+   MacKay P, 2005, REV FINANC STUD, V18, P1433, DOI 10.1093/rfs/hhi032
+   Mendez R, 2011, AN GEOGR UNIV COMPLU, V31, P139, DOI 10.5209/rev_AGUC.2011.v31.n2.37022
+   Mohrman MB, 2014, ACCOUNT EDUC, V23, P386, DOI 10.1080/09639284.2014.910814
+   Nardo M., 2005, HDB CONSTRUCTING COM
+   OCDE, 2008, HDB CONSTR COMP IND
+   Palacin-Sanchez MJ, 2013, SMALL BUS ECON, V41, P503, DOI 10.1007/s11187-012-9439-7
+   Papworth T., 2013, TRADING DEAD ZOMBIE
+   Prada P, 2010, WALL STREET J
+   Ramalho JJS, 2009, QUANT FINANC, V9, P621, DOI 10.1080/14697680802448777
+   Recio M. L., 2011, ECONOMISTAS, V126, P272
+   Retolaza J. L., 2016, RAMON LLULL J APPL E, V7, P143
+   Salas-Fumas V., 2014, RETOS FINANCIACION S, P43
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Simerly RL, 2000, STRATEGIC MANAGE J, V21, P31, DOI 10.1002/(SICI)1097-0266(200001)21:1<31::AID-SMJ76>3.0.CO;2-T
+   Tan YY, 2016, ASIAN ECON PAP, V15, P32, DOI 10.1162/ASEP_a_00474
+   Tavakol M, 2011, INT J MED EDUC, V2, P53, DOI 10.5116/ijme.4dfb.8dfd
+   Urionabarrenetxea S., 2016, BUSINESS THEORY PRAC, V17, P307
+   Valverde SC, 2003, REG STUD, V37, P227, DOI 10.1080/0034340032000065398
+NR 44
+TC 3
+Z9 3
+U1 5
+U2 18
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0263-2373
+EI 1873-5681
+J9 EUR MANAG J
+JI Eur. Manag. J.
+PD JUN
+PY 2018
+VL 36
+IS 3
+BP 408
+EP 420
+DI 10.1016/j.emj.2017.05.005
+PG 13
+WC Business; Management
+SC Business & Economics
+GA GH9PK
+UT WOS:000434001100010
+OA Green Accepted
+DA 2019-12-27
+ER

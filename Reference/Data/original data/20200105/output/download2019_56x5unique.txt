@@ -1,0 +1,385 @@
+
+PT J
+AU Shahzad, SJH
+   Hoang, THV
+   Arreola-Hernandez, J
+AF Shahzad, Syed Jawad Hussain
+   Thi Hong Van Hoang
+   Arreola-Hernandez, Jose
+TI Risk spillovers between large banks and the financial sector: Asymmetric
+   evidence from Europe
+SO FINANCE RESEARCH LETTERS
+LA English
+DT Article
+DE Cross-quantilogram; Large banks; Financial sector; Risk spillovers;
+   Asymmetry; Europe
+ID SYSTEMIC RISK; CONTAGION
+AB We investigate the interaction between large banks and the financial sector in Europe using the cross-quantilogram approach of Han et al. (2016). We find evidence of asymmetry in the character of the spillovers between the largest European banks and the European financial sector that are dependent on the market state. Specifically, in bearish markets, the financial sector spillovers on large banks, whereas the reverse occurs during bullish markets. The time-varying analysis confirms the asymmetric character of the network structure.
+C1 [Shahzad, Syed Jawad Hussain; Thi Hong Van Hoang] Montpellier Business Sch, Montpellier, France.
+   [Arreola-Hernandez, Jose] Rennes Sch Business, Rennes, Brittany, France.
+RP Shahzad, SJH; Hoang, THV (reprint author), Montpellier Business Sch, Montpellier, France.; Arreola-Hernandez, J (reprint author), Rennes Sch Business, Rennes, Brittany, France.
+EM j.syed@montpellier-bs.com; thv.hoang@montpellier-bs.com;
+   jose.arreola-hernandez@rennes-sb.com
+RI Shahzad, Syed Jawad Hussain/D-1986-2019
+OI Shahzad, Syed Jawad Hussain/0000-0003-3511-6057
+CR Adachi-Sato M, 2017, INT REV FINANC ANAL, V50, P151, DOI 10.1016/j.irfa.2017.02.008
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Alter A, 2014, J BANK FINANC, V42, P134, DOI 10.1016/j.jbankfin.2014.01.030
+   BCBS, 2011, TECHNICAL REPORT, P1
+   Betz F, 2016, J FINANC STABIL, V25, P206, DOI 10.1016/j.jfs.2015.10.006
+   Black L, 2016, J BANK FINANC, V63, P107, DOI 10.1016/j.jbankfin.2015.09.007
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   De Nicolo G, 2002, J BANK FINANC, V26, P861, DOI 10.1016/S0378-4266(02)00211-X
+   European Central Bank, 2009, FIN STAB REV
+   Han H, 2016, J ECONOMETRICS, V193, P251, DOI 10.1016/j.jeconom.2016.03.001
+   Karimalis E.N, 2017, EUR J FINANC, P1
+   Kleinow J, 2017, FINANC RES LETT, V21, P40, DOI 10.1016/j.frl.2017.01.003
+   Kontolaimou A, 2010, J BANK FINANC, V34, P1946, DOI 10.1016/j.jbankfin.2010.01.003
+   Kryzanowski L, 2017, FINANC RES LETT, V20, P13, DOI 10.1016/j.fr1.2016.06.011
+   Laeven L, 2016, J BANK FINANC, V69, pS25, DOI 10.1016/j.jbankfin.2015.06.022
+   Lau S.T, 2003, FINANC REV, V38, P151
+   Lucey BM, 2018, INT REV FINANC ANAL, V55, P35, DOI 10.1016/j.irfa.2017.10.008
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Paltalidis N, 2015, J BANK FINANC, V61, pS36, DOI 10.1016/j.jbankfin.2015.03.021
+   Pellegrini CB, 2017, FINANC RES LETT, V21, P163, DOI 10.1016/j.frl.2017.02.002
+   POLITIS DN, 1994, J AM STAT ASSOC, V89, P1303, DOI 10.2307/2290993
+   Shahzad S. J. H, 2017, FINANCE RES LETT
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Van Rijckeghem C, 2003, J INT MONEY FINANC, V22, P483, DOI 10.1016/S0261-5606(03)00017-2
+NR 24
+TC 0
+Z9 0
+U1 4
+U2 7
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1544-6123
+EI 1544-6131
+J9 FINANC RES LETT
+JI Financ. Res. Lett.
+PD MAR
+PY 2019
+VL 28
+BP 153
+EP 159
+DI 10.1016/j.frl.2018.04.008
+PG 7
+WC Business, Finance
+SC Business & Economics
+GA HQ2WZ
+UT WOS:000462265500023
+DA 2019-12-27
+ER
+
+PT J
+AU Baumohl, E
+   Shahzad, SJH
+AF Baumohl, Eduard
+   Shahzad, Syed Jawad Hussain
+TI Quantile coherency networks of international stock markets
+SO FINANCE RESEARCH LETTERS
+LA English
+DT Article
+DE Quantile coherency; Networks; Stock markets; Extreme negative returns;
+   Financial crisis
+ID VOLATILITY SPILLOVERS; EQUITY MARKETS; INTERDEPENDENCE; CONNECTEDNESS;
+   DEPENDENCE; CONTAGION; EVOLUTION; TOPOLOGY
+AB This paper uses the novel quantile coherency approach to examine the tail dependence network of 49 international stock markets in the frequency domain. We find that geographical proximity and state of market development are important factors in stock markets networks. Both the short-and long-run connectedness significantly increased after the global financial crisis and spillover is higher during bearish market states, highlighting the possibility of contagion effect mainly among developed markets. Frontier and emerging markets are relatively less connected. These findings have implications for international equity market diversification and risk management.
+C1 [Baumohl, Eduard] Univ Econ Bratislava, Inst Econ & Management, Bratislava, Slovakia.
+   [Baumohl, Eduard] Masaryk Univ, Inst Financial Complex Syst, Brno, Czech Republic.
+   [Baumohl, Eduard] Librade Ltd, London, England.
+   [Shahzad, Syed Jawad Hussain] Ton Duc Thang Univ, Dept Management Sci & Technol Dev, Ho Chi Minh City, Vietnam.
+   [Shahzad, Syed Jawad Hussain] Ton Duc Thang Univ, Fac Finance & Banking, Ho Chi Minh City, Vietnam.
+   [Shahzad, Syed Jawad Hussain] Montpellier Business Sch, Montpellier, France.
+RP Shahzad, SJH (reprint author), Ton Duc Thang Univ, Dept Management Sci & Technol Dev, Ho Chi Minh City, Vietnam.; Shahzad, SJH (reprint author), Ton Duc Thang Univ, Fac Finance & Banking, Ho Chi Minh City, Vietnam.; Shahzad, SJH (reprint author), Montpellier Business Sch, Montpellier, France.
+EM eduard.baumohl@euba.sk; syed.jawad.hussain.shahzad@tdtu.edu.vn
+FU Slovak Grant Agency (VEGA projects) [1/0406/17, 1/0257/18]
+FX Authors are thankful to Editor-in-chief Dr. Samuel Vigne, Associate
+   Editor Prof. Sabri Boubaker and two anonymous referees for their helpful
+   comments and suggestions. Those suggestions have helped us to improve
+   this paper. Any remaining errors are our own. This work is supported by
+   the Slovak Grant Agency (VEGA projects 1/0406/17 and 1/0257/18).
+CR Barunik J, 2019, ECONOMET J, V22, P131, DOI 10.1093/ectj/utz002
+   Baumohl E., 2019, FINANC RES LETT, DOI [10.1016/j.fr1.2018.09.002, DOI 10.1016/J.FR1.2018.09.002]
+   Baumohl E, 2018, PHYSICA A, V490, P1555, DOI 10.1016/j.physa.2017.08.123
+   Bollerslev T, 2013, J ECONOMETRICS, V172, P307, DOI 10.1016/j.jeconom.2012.08.014
+   Boubaker S, 2016, Q REV ECON FINANC, V61, P14, DOI 10.1016/j.qref.2015.11.001
+   Boubaker S, 2014, N AM J ECON FINANC, V29, P322, DOI 10.1016/j.najef.2014.06.004
+   Coelho R, 2007, PHYSICA A, V376, P455, DOI 10.1016/j.physa.2006.10.045
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   FRUCHTERMAN TMJ, 1991, SOFTWARE PRACT EXPER, V21, P1129, DOI 10.1002/spe.4380211102
+   Kara G., 2015, FEDS NOTES, DOI [10.17016/2380-7172.1569, DOI 10.17016/2380-7172.1569]
+   Li WW, 2018, FINANC RES LETT, V27, P105, DOI 10.1016/j.frl.2018.02.016
+   Marti G., 2017, REV 2 DECADES CORREL
+   Mensi W, 2018, FINANC RES LETT, V25, P230, DOI 10.1016/j.frl.2017.10.032
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Shahzad SJH, 2018, PHYSICA A, V492, P2136, DOI 10.1016/j.physa.2017.11.132
+   Wang GJ, 2018, COMPUT ECON, V51, P607, DOI 10.1007/s10614-016-9627-7
+   Wen FH, 2019, INT J FINANC ECON, V24, P558, DOI 10.1002/ijfe.1679
+NR 19
+TC 0
+Z9 0
+U1 1
+U2 1
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1544-6123
+EI 1544-6131
+J9 FINANC RES LETT
+JI Financ. Res. Lett.
+PD DEC
+PY 2019
+VL 31
+BP 119
+EP 129
+DI 10.1016/j.frl.2019.04.022
+PG 11
+WC Business, Finance
+SC Business & Economics
+GA JS9SX
+UT WOS:000500640600014
+DA 2019-12-27
+ER
+
+PT J
+AU Pino, G
+   Herrera, R
+   Rodriguez, A
+AF Pino, Gabriel
+   Herrera, Rodrigo
+   Rodriguez, Alejandro
+TI Geographical spillovers on the relation between risk-taking and market
+   power in the US banking sector
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Transmission; Risk taking; Market power; Spatial autoregressive model
+ID FINANCIAL INTERMEDIATION; DEPOSIT INSURANCE; SYSTEMIC RISK; COMPETITION;
+   INFORMATION; CONTAGION; EXPOSURES; DISTANCE; IMPACT; RUNS
+AB This paper investigates the relation between risk taking and market power in the US banking sector by introducing the effect of geographical spillovers caused by the transmission of risk taking among banks. For this purpose, we use spatial econometrics. Our results support a negative relation between risk taking and market power. The transmission of risk taking causes significant geographical spillovers, which increases the magnitude of the relation under analysis here. Moreover, the spillover effect is found to be stronger during the Subprime-crisis period when we noted an increased in the transmission of risk taking of banks.
+C1 [Pino, Gabriel; Herrera, Rodrigo] Univ Talca, Fac Econ & Negocios, Ave Lircay S-N, Talca, Chile.
+   [Rodriguez, Alejandro] Univ Talca, Fac Ingn, Dept Ingn Ind, Camino Niches Km 1, Curico, Chile.
+RP Pino, G (reprint author), Univ Talca, Fac Econ & Negocios, Ave Lircay S-N, Talca, Chile.
+EM gpino@utalca.cl
+OI herrera, rodrigo/0000-0002-4604-0396
+CR AHARONY J, 1983, J BUS, V56, P305, DOI 10.1086/296203
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2006, NBER CONF R, P341
+   Babus A., 2007, 0609 TINB I
+   Bagstad KJ, 2013, ECOSYST SERV, V5, pE27, DOI [10.13031/2013.2739, 10.2136/vzj2010.0073, 10.1016/j.ecoser.2013.07.004]
+   Blasques F, 2016, J ECONOMETRICS, V195, P211, DOI 10.1016/j.jeconom.2016.09.001
+   Boyd JH, 2005, J FINANC, V60, P1329, DOI 10.1111/j.1540-6261.2005.00763.x
+   Boyson N. M., 2008, 14068 NAT BUR EC RES
+   CHAN YS, 1986, J BANK FINANC, V10, P243, DOI 10.1016/0378-4266(86)90008-7
+   CHARI VV, 1988, J FINANC, V43, P749, DOI 10.2307/2328198
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cornett MM, 2005, J ECON BUS, V57, P411, DOI 10.1016/j.jeconbus.2005.01.002
+   Degryse H, 2005, J FINANC, V60, P231, DOI 10.1111/j.1540-6261.2005.00729.x
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Demsetz R, 1996, FRBNY EC POLICY REV, V2, P1
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Fingleton B, 1999, J REGIONAL SCI, V39, P1, DOI 10.1111/1467-9787.00121
+   Iyer R, 2012, AM ECON REV, V102, P1414, DOI 10.1257/aer.102.4.1414
+   Jayaratne J, 1998, J LAW ECON, V41, P239, DOI 10.1086/467390
+   Jimenez G, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.02.004
+   Kanas A, 2005, J APPL ECON, V8, P101, DOI 10.1080/15140326.2005.12040620
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   Laeven L, 2016, J BANK FINANC, V69, pS25, DOI 10.1016/j.jbankfin.2015.06.022
+   LeSage J, 2009, STAT TEXTB MONOGR, P1
+   Levine R, 1997, J ECON LIT, V35, P688
+   Madura Jeff, 1991, APPLIED FINANCIAL EC, V1, P89
+   Marquez R, 2002, REV FINANC STUD, V15, P901, DOI 10.1093/rfs/15.3.901
+   Oliver AM, 2006, ECON LETT, V93, P450, DOI 10.1016/j.econlet.2006.06.021
+   Mur J, 2003, INT REGIONAL SCI REV, V26, P289, DOI 10.1177/0160017603253790
+   PANZAR JC, 1987, J IND ECON, V35, P443, DOI 10.2307/2098582
+   Pino G., 2018, J MONEY CREDIT BANKI
+   Pino G, 2013, EMERG MARK FINANC TR, V49, P98, DOI 10.2753/REE1540-496X490405
+   Presbitero AF, 2014, J INT DEV, V26, P91, DOI 10.1002/jid.2901
+   Roy AD, 1952, ECONOMETRICA, V20, pA431
+   Sachs A, 2014, QUANT FINANC, V14, P1677, DOI 10.1080/14697688.2012.749421
+   Salas V, 2003, EUR ECON REV, V47, P1061, DOI 10.1016/S0014-2921(02)00230-1
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Thakor A., 1993, RELATIONSHIP BANKING
+   Tonzer L, 2015, J FINANC STABIL, V18, P19, DOI 10.1016/J.JFS.2015.02.002
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   WILLIAMSON SD, 1986, J MONETARY ECON, V18, P159, DOI 10.1016/0304-3932(86)90074-7
+   Yeyati EL, 2007, J BANK FINANC, V31, P1633, DOI 10.1016/j.jbankfin.2006.11.003
+   Zedda S., 2014, MATH STAT METHODS AC, P303
+   Zhao T., 2016, J ECON GEOGR, V17, P791
+NR 46
+TC 0
+Z9 0
+U1 0
+U2 3
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD JAN
+PY 2019
+VL 47
+BP 351
+EP 364
+DI 10.1016/j.najef.2018.05.005
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA HK1LF
+UT WOS:000457665700023
+DA 2019-12-27
+ER
+
+PT J
+AU Pentecost, EJ
+   Du, WT
+   Bird, G
+   Willett, T
+AF Pentecost, Eric J.
+   Du, Wenti
+   Bird, Graham
+   Willett, Thomas
+TI Contagion from the crises in the Euro-zone: where, when and why?
+SO EUROPEAN JOURNAL OF FINANCE
+LA English
+DT Article
+DE Contagion; extreme values; M-eGARCH models; quantile regression; G01;
+   G15; C58
+ID CONDITIONAL HETEROSKEDASTICITY; MARKETS
+AB The prevalence of contagion between the Euro-zone countries and other European countries since the Greek crisis of 2009 is now well - known, but the factors that influence the pattern of this contagion are not well understood. We investigate this question both within Europe and beyond to the USA and Japan, using an asymmetric M-GARCH model that focuses on extreme values of the risk premia on government bonds. We compare these extreme values with news of major events and find that they are highly correlated. We find a different pattern of contagion emanating from Ireland compared to the other crisis countries of Greece, Italy, Portugal and Spain. We also examine the factors that have made countries vulnerable to contagion and find that financial factors are more important than trade ones. However, intra-Euro-zone trade has also been a significant factor between the major Euro-zone economies. There is little evidence that global factors affect contagion between EU member states, but some evidence that nominal exchange rate movements offer a degree of insulation from contagion for the non-Euro zone states.
+C1 [Pentecost, Eric J.] Loughborough Univ, Sch Business & Econ, Loughborough, Leics, England.
+   [Du, Wenti] Akita Int Univ, Global Business Program, Yuwa, Japan.
+   [Pentecost, Eric J.; Du, Wenti; Bird, Graham; Willett, Thomas] Claremont Grad Univ, Div Polit & Econ, Claremont, CA 91711 USA.
+RP Pentecost, EJ (reprint author), Loughborough Univ, Sch Business & Econ, Loughborough, Leics, England.; Pentecost, EJ (reprint author), Claremont Grad Univ, Div Polit & Econ, Claremont, CA 91711 USA.
+EM e.j.pentecost@lboro.ac.uk
+CR Aielli GP, 2013, J BUS ECON STAT, V31, P282, DOI 10.1080/07350015.2013.771027
+   Aizenman J., 2012, 18028 NBER
+   Bird G, 2017, WORLD ECON, V40, P2530, DOI 10.1111/twec.12553
+   Bird G, 2017, OPEN ECON REV, V28, P273, DOI 10.1007/s11079-017-9436-1
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Cronin D, 2016, ECON LETT, V143, P5, DOI 10.1016/j.econlet.2016.02.031
+   Ding Z., 1993, J EMPIR FINANC, V1, P83, DOI DOI 10.1016/0927-5398(93)90006-D
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ENGLE RF, 1993, J FINANC, V48, P1749, DOI 10.2307/2329066
+   Forbes K. J., 2012, CHANGING POLICY LAND, P23
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   HIGGINS ML, 1992, INT ECON REV, V33, P137, DOI 10.2307/2526988
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   Koenker R, 2001, J ECON PERSPECT, V15, P143, DOI 10.1257/jep.15.4.143
+   Kosmidou K, 2019, EUR J FINANC, V25, P632, DOI 10.1080/1351847X.2018.1552171
+   Ludwig A, 2014, J INT MONEY FINANC, V48, P125, DOI 10.1016/j.jimonfin.2014.07.008
+   Metiu N, 2012, ECON LETT, V117, P35, DOI 10.1016/j.econlet.2012.04.074
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Missio S., 2011, 3554 CESIFO
+   Muratori U., 2014, SOCIAL SCI, V4, P66, DOI DOI 10.3390/socsci4010066
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Obstfeld M., 2017, WP17130 IMF
+   Philippas D, 2013, J INT FINANC MARK I, V27, P161, DOI 10.1016/j.intfin.2013.09.008
+   Pragidis IC, 2015, J FINANC STABIL, V18, P127, DOI 10.1016/j.jfs.2015.04.001
+   Stracca L, 2015, EUR ECON REV, V74, P1, DOI 10.1016/j.euroecorev.2014.10.009
+   ZAKOIAN JM, 1994, J ECON DYN CONTROL, V18, P931, DOI 10.1016/0165-1889(94)90039-6
+NR 29
+TC 0
+Z9 0
+U1 9
+U2 9
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1351-847X
+EI 1466-4364
+J9 EUR J FINANC
+JI Eur. J. Financ.
+PD SEP 22
+PY 2019
+VL 25
+IS 14
+BP 1309
+EP 1327
+DI 10.1080/1351847X.2019.1589552
+PG 19
+WC Business, Finance
+SC Business & Economics
+GA IH8FI
+UT WOS:000474740200004
+DA 2019-12-27
+ER
+
+PT J
+AU Dissem, S
+AF Dissem, Sonia
+TI Asset commonality of European banks
+SO JOURNAL OF BANKING REGULATION
+LA English
+DT Article
+DE Asset commonality; Bank regulation; Systemic risk
+ID SYSTEMIC RISK
+AB In this paper, we investigate the notion of asset commonality. We describe the evolution of asset commonality, for 43 European banks over 15 countries, by comparing the 2011 and 2016 EU-wide stress test reporting. We determine the main variables that influence asset commonality and its evolution. We notice that asset commonality can be used as a complementary measure to other market systemic risk measures. Furthermore, we find that asset commonality can influence the returns negatively and the volatility of the bank positively. We also find that some banks, which have no funding problems or fire sales, have experienced a decrease in their performance. Asset commonality can be seen as an interesting tool than can be used by regulators.
+C1 [Dissem, Sonia] Univ Lille, LSMRC EA 4112, F-59000 Lille, France.
+   [Dissem, Sonia] Skema Business Sch Lille, Ave Willy Brandt, F-59777 Euralille, France.
+RP Dissem, S (reprint author), Univ Lille, LSMRC EA 4112, F-59000 Lille, France.; Dissem, S (reprint author), Skema Business Sch Lille, Ave Willy Brandt, F-59777 Euralille, France.
+EM sonia.dissem@univ-lille2.fr
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya V., 2005, 445 IFA
+   Acharya V. V., 2010, 1002 FED RES BANK CL
+   Acharya V, 2014, J MONETARY ECON, V65, P36, DOI 10.1016/j.jmoneco.2014.04.014
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Adachi-Sato M, 2017, INT REV FINANC ANAL, V50, P151, DOI 10.1016/j.irfa.2017.02.008
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Beck T., 2003, POLICY RES WORKING P, V3041
+   Bernanke Ben S., 2013, REM 49 ANN C BANK ST
+   Blei S., 2014, 20143 FED RES BANK R
+   Brownlees C., 2016, SRISK CONDITIO UNPUB
+   Cai J., 2017, SYNDICATION IN UNPUB
+   Chen Y., 2016, 201643 BAFFI CAREFIN
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Gai P., 2010, 383 BANK ENGL
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Hellwig MF, 2009, ECONOMIST-NETHERLAND, V157, P129, DOI 10.1007/s10645-009-9110-0
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Paltalidis N, 2015, J BANK FINANC, V61, pS36, DOI 10.1016/j.jbankfin.2015.03.021
+   Shaffer S, 1994, POOLING INTENSIFIES, P6
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 27
+TC 0
+Z9 0
+U1 1
+U2 2
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1745-6452
+EI 1750-2071
+J9 J BANK REGUL
+JI J. Bank Regul.
+PD MAR
+PY 2019
+VL 20
+IS 1
+BP 1
+EP 33
+DI 10.1057/s41261-018-0064-5
+PG 33
+WC Business, Finance
+SC Business & Economics
+GA HU3EP
+UT WOS:000465155300001
+DA 2019-12-28
+ER

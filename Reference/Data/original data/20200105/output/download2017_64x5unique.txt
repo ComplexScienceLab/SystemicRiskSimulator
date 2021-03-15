@@ -1,0 +1,447 @@
+
+PT J
+AU Siebenbrunner, C
+   Sigmund, M
+   Kerbl, S
+AF Siebenbrunner, Christoph
+   Sigmund, Michael
+   Kerbl, Stefan
+TI Can bank-specific variables predict contagion effects?
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Systemic risk; Financial stability; Financial contagion
+ID SYSTEMIC RISK; FINANCIAL NETWORKS; INTERBANK MARKET; CORPORATE-DEBT;
+   PANEL-DATA; BASEL III; UNIT-ROOT; LIQUIDITY; ECONOMETRICS; TOPOLOGY
+AB Assessing the systemic risk a bank poses to the system has become a central part in regulating its capital requirements (e.g. the buffer for global or domestic systemically important banks). As with conventional risk types, systemic risks need to be quantified. Currently, global regulators propose a range of bank-specific indicators that measure size and interconnectedness to proxy systemic risk. In this study, we gauge the capacity of such indicators to explain contagion losses triggered by realizations of sizeable idiosyncratic shocks. We study contagion impact through different channels, separating these effects into first-round, nth-round, asset fire sale and mark-to-market losses. We evaluate the predictive power of models selected by best-subset selection and Lasso by applying 10-fold panel cross validation. We provide constructive proofs for the existence of clearing payment vectors and associated market equilibria for these contagion channels in a model of interlinked balance sheets. We provide algorithms that converge to the greatest market equilibrium in a finite number of steps. Our empirical results suggest that the Basel III indicator set performs well in comparison to alternative data-sets of bank-specific indicators. We also find, however, that the proposed data-sets without bank dummies do not perform well in capturing the relevance of the average network position for predicting contagion effects.
+C1 [Siebenbrunner, Christoph] Univ Oxford, Math Inst, Woodstock Rd, Oxford OX2 6GG, England.
+   [Sigmund, Michael; Kerbl, Stefan] Oesterreich Natl Bank OeNB, Otto Wagner Pl 3, A-1090 Vienna, Austria.
+RP Siebenbrunner, C (reprint author), Univ Oxford, Math Inst, Woodstock Rd, Oxford OX2 6GG, England.
+EM christoph.siebenbrunner@maths.ox.ac.uk
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2010, TECHNICAL REPORT
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Ahelegbey D. F, 2014, DEM WORKING PAPER SE
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anand K, 2015, BCBS RES TASK FORCE
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Angelini P, 1996, J BANK FINANC, V20, P853, DOI 10.1016/0378-4266(95)00029-1
+   Angelini P, 2015, MANCH SCH, V83, P217, DOI 10.1111/manc.12056
+   Arlot S, 2010, STAT SURV, V4, P40, DOI 10.1214/09-SS054
+   Banulescu GD, 2015, J BANK FINANC, V50, P575, DOI 10.1016/j.jbankfin.2014.01.037
+   Bargigli L, 2013, QUANT FINANC, V15, P673
+   Barucca P, 2016, ARXIV160605164
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Betz F, 2016, J FINANC STABIL, V25, P206, DOI 10.1016/j.jfs.2015.10.006
+   Betz F, 2014, J BANK FINANC, V45, P225, DOI 10.1016/j.jbankfin.2013.11.041
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BIS, 2013, GLOB SYST IMP BANKS
+   BIS, 2012, FRAM DEAL DOM SYST I
+   Bluhm M, 2014, J FINANC STABIL, V13, P75, DOI 10.1016/j.jfs.2014.04.002
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   BREUSCH TS, 1980, REV ECON STUD, V47, P239, DOI 10.2307/2297111
+   Brownlees C. T, 2017, WORKING PAPER
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Cerchiello P, 2016, EXPERT SYST APPL, V43, P165, DOI 10.1016/j.eswa.2015.08.047
+   Choi I, 2001, J INT MONEY FINANC, V20, P249, DOI 10.1016/S0261-5606(00)00048-6
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Croissant Y, 2008, J STAT SOFTW, V27, P1
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Denev A., 2015, PROBABILISTIC GRAPHI
+   Derviz A., 2013, ECB WORKING PAPER SE, V1551
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H., 2009, WORKING PAPERS, V156
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   FED, 2015, CAL GSIB SURCH
+   Fischer T, 2014, MATH FINANC, V24, P97, DOI 10.1111/j.1467-9965.2012.00526.x
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   FURNIVAL GM, 1974, TECHNOMETRICS, V16, P499, DOI 10.2307/1267601
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg C., 2011, U JENA WORKING PAPER, V17
+   Giudici P., 2016, CORISK MEASURING SYS
+   Glasserman  P., 2015, CONTAGION FINANCIAL
+   Halaj G, 2015, QUANT FINANC, V15, P653, DOI 10.1080/14697688.2014.968357
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Hastie T, 2009, ELEMENTS STAT LEARNI
+   HAUSMAN JA, 1978, ECONOMETRICA, V46, P1251, DOI 10.2307/1913827
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Hautsch N, 2014, INT J FORECASTING, V30, P781, DOI 10.1016/j.ijforecast.2013.09.004
+   HONDA Y, 1985, REV ECON STUD, V52, P681, DOI 10.2307/2297739
+   Honohan P., 2000, POLICY RES WORKING P, V2441
+   Im KS, 2003, J ECONOMETRICS, V115, P53, DOI 10.1016/S0304-4076(03)00092-7
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Krug S, 2015, QUANT FINANC, V15, P1917, DOI 10.1080/14697688.2014.999701
+   Laeven L, 2010, 10146 IMF
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Loffler G., J FINAN QUA IN PRESS
+   Mastrandrea R, 2014, NEW J PHYS, V16, DOI 10.1088/1367-2630/16/4/043022
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Minoiu C, 2015, QUANT FINANC, V15, P607, DOI 10.1080/14697688.2014.968358
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Peltonen T. A., 2015, WORKING PAPER SERIES
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.1093/biomet/75.2.335
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Siebenbrunner C., 2015, FIN RISK NETW THEOR
+   Spelta A., 2016, MULTIVARIATE NATURE
+   Suzuki T, 2002, J OPER RES SOC JPN, V45, P123, DOI 10.15807/jorsj.45.123
+   Teteryatnikova M, 2014, J ECON DYN CONTROL, V47, P186, DOI 10.1016/j.jedc.2014.08.007
+   Thurner S, 2003, QUANT FINANC, V3, P306, DOI 10.1088/1469-7688/3/4/307
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 80
+TC 3
+Z9 3
+U1 0
+U2 7
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PY 2017
+VL 17
+IS 12
+BP 1805
+EP 1832
+DI 10.1080/14697688.2017.1357974
+PG 28
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA FS6DX
+UT WOS:000419889200004
+DA 2019-12-28
+ER
+
+PT J
+AU Manicaro, C
+   Falzon, J
+AF Manicaro, Christian
+   Falzon, Joseph
+TI Hedge funds risk and connectedness
+SO JOURNAL OF ASSET MANAGEMENT
+LA English
+DT Article
+DE Hedge funds; volatility spillovers; parametric value-at-risk; GARCH
+   modelling
+ID CONTAGION; LIQUIDITY; VARIANCE
+AB This paper focused on measuring the volatility spillovers and parametric Valueat- Risk (VaR) models for hedge fund strategies. In reference to the first, a volatility spillover index was created to measure the connectedness and relationships between strategies. Results suggest that during periods of distress, volatility spillovers tend to increase across strategies. Equity-Hedge and Event-Driven strategies seem to be the most connected, while the Equity-Market-Neutral strategy exhibits the least connectedness with other strategies. With regard the second, unconditional and conditional parametric VaR models under Gaussian and t-distributions were measured. In general, conditional GARCH-type models outperform their unconditional counterparts, particularly at the onset of the recent financial crisis. This suggests that GARCH-type VaRs are better in protecting against downside risk. Moreover, conditional Gaussian models are more suitable for mild periods, while those under the tdistribution effectively capture risk in extremely volatile period. Finally, to unravel the connection between the two measures, common hits between hedge fund strategies were examined. The results validate the results of the volatility spillover index.
+C1 [Manicaro, Christian] Univ Malta, Msida, Malta.
+   [Manicaro, Christian] Malta Competit Author, Msida, Malta.
+   [Falzon, Joseph] Univ Malta, Dept Banking & Finance, Msida, Malta.
+   [Falzon, Joseph] Univ Malta, Fac Econ Management & Accountancy, Msida, Malta.
+   [Falzon, Joseph] Minist Finance, Msida, Malta.
+   [Falzon, Joseph] Minist Econ Serv, Msida, Malta.
+   [Falzon, Joseph] Econ Policy Div, Msida, Malta.
+   [Falzon, Joseph] Cent Bank Malta, Msida, Malta.
+   [Falzon, Joseph] Off Fair Competit, Msida, Malta.
+   [Falzon, Joseph] MCESD, Msida, Malta.
+   [Falzon, Joseph] Malta Stock Exchange, Msida, Malta.
+RP Manicaro, C (reprint author), Univ Malta, Msida, Malta.
+EM cmani01@um.edu.mt
+CR Adrian T., 2011, WORKING PAPER
+   Adrian Tobias, 2007, CURRENT ISSUES EC FI, V13, P1
+   Agarwal V, 2004, REV FINANC STUD, V17, P63, DOI 10.1093/rfs/hhg044
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   BROOKS C, 2003, J RISK FINANCE, V4, P29, DOI DOI 10.1108/EB022959
+   Brooks C., 2001, WORKING PAPER
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Chan N, 2006, NBER CONF R, P235
+   Connor G., 2004, 477 LOND SCH EC POL
+   Darbyshire P., 2011, HEDGE FUND MODELING
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Dowd K, 2005, MEASURING MARKET RIS
+   Dudley E, 2011, J FINANC QUANT ANAL, V46, P1227, DOI 10.1017/S0022109011000342
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Favre L., 2002, J ALTERNATIVE INVEST, V5, P21, DOI [10.3905/jai.2002.319052, DOI 10.3905/JAI.2002.319052]
+   Fuss R., 2007, J DERIVATIVES HEDGE, V13, P2, DOI DOI 10.1057/PALGRAVE.JDHF.1850048
+   Ineichen A. M., 2003, ABSOLUTE RETURNS RIS
+   Khanniche S., 2004, U PARIS W ECONOMIX W, V1/2009
+   Laube F., 2011, J DERIVATIVES HEDGE, V17, P63, DOI DOI 10.1057/JDHF.2011.3
+   Lhabitant F.S., 2004, HEDGE FUNDS QUANTITA
+   Monteiro P., 2004, FORECASTING HEDGE FU
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Sabbaghi O., 2012, MANAGE FINANC, V38, P101
+NR 24
+TC 0
+Z9 0
+U1 1
+U2 5
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1470-8272
+EI 1479-179X
+J9 J ASSET MANAG
+JI J. Asset Manag.
+PD JUL
+PY 2017
+VL 18
+IS 4
+BP 295
+EP 316
+DI 10.1057/s41260-016-0025-4
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA FH9HE
+UT WOS:000411520800004
+DA 2019-12-27
+ER
+
+PT J
+AU Yue, MWC
+   Pei, PG
+   Yee, LX
+AF Yue, Max Wong Chan
+   Pei, Patrick Ge
+   Yee, Lam Xin
+TI A network model for central counterparty liquidity risk stress testing
+   under incomplete information
+SO JOURNAL OF FINANCIAL MARKET INFRASTRUCTURES
+LA English
+DT Article
+DE liquidity risk; stress testing; central counterparties; network model;
+   margin requirement; spillover effect
+ID OVERLAPPING PORTFOLIOS; STABILITY; CONTAGION
+AB Most network models in the literature are academic in nature and assume perfect knowledge of nodes and linkages; the result is often simulations that do not reflect the limitations of real-world data. Such research can often make generic statements about the behavior of the entire system, but it is less useful in terms of risk management for a single institution that is part of the network. In practice, a central counterparty (CCP) ecosystem has a simpler network than the interbank network, because many bilateral linkages are replaced by direct many-to-one linkages to the CCP as the central clearer. In addition, the CCP is often the regulator in the ecosystem and thus has information visibility (of both exposures and financial resources) of all the participants. We put forth a realistic network model that maximizes the use of data available to a CCP in order to simulate credit default contagion. We study the resulting liquidity needs of the CCP required to avert the default of the CCP itself. This model combines default simulations and a bipartite network to give a loss distribution that is conditional on a stress state. This risk-based approach has many advantages over the Cover 2 standard approach of the CCP industry.
+C1 [Yue, Max Wong Chan; Pei, Patrick Ge] Risk Management Singapore Exchange, 11 North Buona Vista Dr,06-07 Metropolis Tower 2, Singapore 138589, Singapore.
+   [Yee, Lam Xin] Natl Univ Singapore, Block S17,10 Lower Kent Ridge Rd, Singapore 119076, Singapore.
+RP Yue, MWC (reprint author), Risk Management Singapore Exchange, 11 North Buona Vista Dr,06-07 Metropolis Tower 2, Singapore 138589, Singapore.
+EM max.wong@sgx.com; patrick.ge@sgx.com; a0074534@u.nus.edu
+CR Aas K, 2009, INSUR MATH ECON, V44, P182, DOI 10.1016/j.insmatheco.2007.02.001
+   Avellaneda M., 2013, PREPRINT
+   Barker R., 2017, RISK, V30, P91
+   Basel Committee on Banking Supervision (BCBS), 2010, BAS 3 GLOB REGUL FRA
+   Basel Committee on Banking Supervision (BCBS), 2006, INT CONV CAP MEAS CA
+   Borovkova S., 2013, SOCIAL SCI RES NETWO
+   Boss M, 2006, SYSTEMIC RISK MONITO
+   Breuer T, 2009, INT J CENT BANK, V5, P205
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Committee on Payments and Market Infrastructures (CPMI) and Board of the International Organization of Securities Commissions (IOSCO), 2016, RES REC CENTR COUNT
+   Commodity Futures Trading Commission (CFTC), 2016, SUP STRESS TEST CLE
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   CPSS and IOSCO, 2012, PRINC FIN MARK INFR
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   European Securities and Markets Authority (ESMA), 2017, METH FRAM 2017 EU WI
+   Garratt R., 2015, 717 FED RES BANK NEW
+   Giddens J. W., 2012, REPOT TRUSTEES INVES
+   Glasserman P, 2015, QUANT FINANC, V15, P25, DOI 10.1080/14697688.2014.926019
+   Gordy MB, 2013, INT J CENT BANK, V9, P33
+   Heath A, 2016, J FINANC STABIL, V27, P217, DOI 10.1016/j.jfs.2015.12.004
+   Huang XQ, 2013, SCI REP-UK, V3, DOI 10.1038/srep01219
+   Korenko G., 2013, 5 OFF FIN RES
+   Laurent J.-P., 2015, WORKING PAPER
+   Levy-Carciente S, 2015, J BANK FINANC, V59, P164, DOI 10.1016/j.jbankfin.2015.05.008
+   Lopez J. C., 2016, J FINANCIAL IN PRESS
+   Lopez J. C., 2011, REV FUTURES MARKETS, V19, P39
+   Manning MJ, 2016, J FINANC MARK INFRAS, V4, P1
+   Murphy D, 2014, 30 BANK ENGL
+   Sorge M., 2004, 165 BANK INT SETTL
+   Vasicek O, 2002, RISK, V15, P160
+NR 31
+TC 0
+Z9 0
+U1 0
+U2 3
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2049-5404
+EI 2049-5412
+J9 J FINANC MARK INFRAS
+JI J. Financ. Mark. Infrastruct.
+PD MAR
+PY 2017
+VL 5
+IS 3
+BP 25
+EP 55
+DI 10.21314/JFMI.2017.074
+PG 31
+WC Business, Finance
+SC Business & Economics
+GA ER4BW
+UT WOS:000398745000003
+DA 2019-12-27
+ER
+
+PT J
+AU Phelan, G
+AF Phelan, Gregory
+TI Correlated Default and Financial Intermediation
+SO JOURNAL OF FINANCE
+LA English
+DT Article
+ID DEBT RESTRUCTURINGS; INFORMATION-CONTENT; OPTIMAL-CONTRACTS; MORAL
+   HAZARD; SMALL BANKS; SIZE; DIVERSIFICATION; REORGANIZATION; ENFORCEMENT;
+   COMMITMENT
+AB Financial intermediation naturally arises when knowing how loan payoffs are correlated is valuable for managing investments but lenders cannot easily observe that relationship. I show this result using a costly enforcement model in which lenders need ex post incentives to enforce payments from defaulted loans and borrowers' payoffs are correlated. When projects have correlated outcomes, learning the state of one project (via enforcement) provides information about the states of other projects. A large correlated portfolio provides ex post incentives for enforcement. Thus, intermediation dominates direct lending, and intermediaries are financed with risk-free deposits, earn positive profits, and hold systemic default risk.
+C1 [Phelan, Gregory] Williams Coll, Dept Econ, Williamstown, MA 01267 USA.
+RP Phelan, G (reprint author), Williams Coll, Dept Econ, Williamstown, MA 01267 USA.
+CR Acharya VV, 2007, J FINANC ECON, V85, P787, DOI 10.1016/j.jfineco.2006.05.011
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Anderson Ronald W., 2012, DP9146 CEPR
+   Bastos JA, 2010, J BANK FINANC, V34, P2510, DOI 10.1016/j.jbankfin.2010.04.011
+   BENPORATH E, 1992, J ECON THEORY, V57, P36, DOI 10.1016/S0022-0531(05)80039-0
+   Berger AN, 2005, J FINANC ECON, V76, P237, DOI 10.1016/j.jfineco.2004.06.003
+   Berger AN, 1998, J FINANC SERV RES, V14, P117, DOI 10.1023/A:1008011312729
+   Bernstein Shai, 2016, CESWP1613 US CENS BU
+   Botsch M., 2015, WORKING PAPER
+   Boyd J. H., 1985, 87 FED RES BANK MINN
+   Bris A, 2006, J FINANC, V61, P1253, DOI 10.1111/j.1540-6261.2006.00872.x
+   Bruche M, 2010, J BANK FINANC, V34, P754, DOI 10.1016/j.jbankfin.2009.04.009
+   CAMPBELL TS, 1980, J FINANC, V35, P863, DOI 10.2307/2327206
+   Cerasi V, 2000, EUR ECON REV, V44, P1701, DOI 10.1016/S0014-2921(99)00008-2
+   Chatterjee S, 1996, FINANC MANAGE, V25, P5, DOI 10.2307/3665899
+   Chen B, 2012, J MATH ECON, V48, P133, DOI 10.1016/j.jmateco.2012.02.003
+   Cole RA, 2004, J FINANC QUANT ANAL, V39, P227, DOI 10.1017/S0022109000003057
+   Dang T., 2014, 20255 NBER
+   DeYoung R, 2001, J MONEY CREDIT BANK, V33, P900, DOI 10.2307/2673928
+   DeYoung Robert, 2008, HDB FINANCIAL INTERM, V1, P347
+   Diamond DW, 2000, J FINANC, V55, P2431, DOI 10.1111/0022-1082.00296
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   Djankov S, 2008, J POLIT ECON, V116, P1105, DOI 10.1086/595015
+   Eisfeldt AL, 2009, REV FINANC STUD, V22, P1621, DOI 10.1093/rfs/hhn026
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   GALE D, 1985, REV ECON STUD, V52, P647, DOI 10.2307/2297737
+   Garleanu Nicolae, 2013, TECHNICAL REPORT
+   GILSON SC, 1990, J FINANC ECON, V27, P315, DOI 10.1016/0304-405X(90)90059-9
+   GORTON G, 1990, J FINANC, V45, P49, DOI 10.2307/2328809
+   GORTON G, 2003, HDB EC FINANCE, V1, P431, DOI DOI 10.1016/S1574-0102(03)01012-4
+   Gupton G, 2000, BANK LOAN LOSS GIVEN
+   Haggard K. S., 2012, INT REV ACCOUNTING B, V4, P51
+   Hellwig M, 1998, WORKING PAPER
+   HIRSHLEIFER J, 1971, AM ECON REV, V61, P561
+   Hughes JP, 2013, J FINANC INTERMED, V22, P559, DOI 10.1016/j.jfi.2013.06.004
+   IANNOTTA G, 2006, J FINANCIAL SERVICES, V30, P287, DOI DOI 10.1007/S10693-006-0420-Y
+   Kahn C, 2004, J FINANC, V59, P2531, DOI 10.1111/j.1540-6261.2004.00708.x
+   Khalil F, 1998, INT ECON REV, V39, P135, DOI 10.2307/2527234
+   Khalil F, 2007, J ECON THEORY, V135, P35, DOI 10.1016/j.jet.2005.08.010
+   KRASA S, 1992, OXFORD ECON PAP, V44, P725, DOI 10.1093/oxfordjournals.oep.a042072
+   Krasa S, 2000, ECONOMETRICA, V68, P119, DOI 10.1111/1468-0262.00095
+   KRASA S, 1992, J ECON THEORY, V57, P197, DOI 10.1016/S0022-0531(05)80048-1
+   Laeven Luc, 2014, 144 INT MON FUND
+   Li W., 2009, 15472 NBER
+   Lubben Stephen J., 2013, U CINCI LAW REV, V81, P1
+   MELUMAD ND, 1989, RAND J ECON, V20, P139, DOI 10.2307/2555686
+   Mian A, 2015, J FINANC, V70, P2587, DOI 10.1111/jofi.12310
+   MOOKHERJEE D, 1989, Q J ECON, V104, P399, DOI 10.2307/2937855
+   Morgan DP, 2002, AM ECON REV, V92, P874, DOI 10.1257/00028280260344506
+   Nakamura Leonard, 1991, 921 FED RES BANK PHI
+   Strahan Philip E., 2008, HDB FINANCIAL INTERM, V1, P107
+   TOWNSEND RM, 1979, J ECON THEORY, V21, P265, DOI 10.1016/0022-0531(79)90031-0
+   Van Nieuwerburgh S, 2010, REV ECON STUD, V77, P779, DOI 10.1111/j.1467-937X.2009.00583.x
+   Varma P., 2005, J FIXED INCOME, P29
+   WILLIAMSON SD, 1986, J MONETARY ECON, V18, P159, DOI 10.1016/0304-3932(86)90074-7
+   Woo Sarah Pei, 2009, FORDHAM J CORPORATE, V15, P617
+   Zhao RR, 2008, AM ECON REV, V98, P1619, DOI 10.1257/aer.98.4.1619
+NR 57
+TC 2
+Z9 2
+U1 0
+U2 26
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-1082
+EI 1540-6261
+J9 J FINANC
+JI J. Financ.
+PD JUN
+PY 2017
+VL 72
+IS 3
+BP 1253
+EP 1284
+DI 10.1111/jofi.12493
+PG 32
+WC Business, Finance; Economics
+SC Business & Economics
+GA EW7DZ
+UT WOS:000402671300008
+DA 2019-12-28
+ER
+
+PT J
+AU Feinstein, Z
+AF Feinstein, Zachary
+TI Financial contagion and asset liquidation strategies
+SO OPERATIONS RESEARCH LETTERS
+LA English
+DT Article
+DE Systemic risk; Financial contagion; Fire sales; Financial network
+ID SYSTEMIC RISK; NETWORKS
+AB This paper provides a framework for modeling the financial system with multiple illiquid assets during a crisis. This work generalizes the paper by Amini et al. (2016) by allowing for differing liquidation strategies. The main result is a proof of sufficient conditions for the existence of an equilibrium liquidation strategy with corresponding unique clearing payments and liquidation prices. An algorithm for computing the maximal clearing payments and prices is provided. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Feinstein, Zachary] Washington Univ, ESE, St Louis, MO 63130 USA.
+RP Feinstein, Z (reprint author), Washington Univ, ESE, St Louis, MO 63130 USA.
+EM zfeinstein@ese.wustl.edu
+OI Feinstein, Zachary/0000-0002-6733-5724
+CR Aliprantis Charalambos D., 2007, INFINITE DIMENSIONAL
+   Amini H., 2015, 1334 SWISS FIN I
+   Amini H, 2016, OPER RES LETT, V44, P1, DOI 10.1016/j.orl.2015.10.005
+   Aubin Jean Pierre, 1990, SYSTEMS CONTROL
+   Awiszus Kerstin, 2016, WORKING PAPER
+   Capponi A, 2016, OPER RES, V64, P1121, DOI 10.1287/opre.2015.1402
+   Capponi A, 2015, REV ASSET PRICING ST, V5, P227, DOI 10.1093/rapstu/rav006
+   Chen N, 2016, OPER RES, V64, P1089, DOI 10.1287/opre.2016.1497
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2016, MATH FINANC, V26, P835, DOI 10.1111/mafi.12071
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Elsinger Helmut, 2009, 156 OST NAT, P156
+   Feinstein Z., 2016, WORKING PAPER
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Karlin S., 1959, MATH METHODS THEORY
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   ROSEN JB, 1965, ECONOMETRICA, V33, P520, DOI 10.2307/1911749
+   SCARF H, 1967, SIAM J APPL MATH, V15, P1328, DOI 10.1137/0115116
+   Staum J, 2013, HANDBOOK ON SYSTEMIC RISK, P512
+   Sundaram R.K., 1996, 1 COURSE OPTIMIZATIO
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 27
+TC 14
+Z9 16
+U1 1
+U2 5
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-6377
+EI 1872-7468
+J9 OPER RES LETT
+JI Oper. Res. Lett.
+PD MAR
+PY 2017
+VL 45
+IS 2
+BP 109
+EP 114
+DI 10.1016/j.orl.2017.01.004
+PG 6
+WC Operations Research & Management Science
+SC Operations Research & Management Science
+GA EP4NF
+UT WOS:000397356500002
+DA 2019-12-27
+ER

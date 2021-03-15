@@ -1,0 +1,426 @@
+
+PT J
+AU Arouri, ME
+   Ben Ameur, H
+   Jawadi, N
+   Jawadi, F
+   Louhichi, W
+AF Arouri, M. E.
+   Ben Ameur, H.
+   Jawadi, N.
+   Jawadi, F.
+   Louhichi, W.
+TI Are Islamic finance innovations enough for investors to escape from a
+   financial downturn? Further evidence from portfolio simulations
+SO APPLIED ECONOMICS
+LA English
+DT Article
+DE Islamic finance; portfolio simulations; financial crisis
+ID TO-INCOME RATIO; FISCAL-POLICY; TIME-SERIES; UNIT-ROOT; EURO AREA
+AB Does Islamic finance constitute a promising solution for the current global financial crisis and are Islamic financial innovations enough to reassure investors, stabilize financial systems and provide them with a means of escaping from financial downturns? This article addresses these questions while investigating the dynamics of Islamic and conventional stock prices over the last few years. In particular, we apply Multivariate Vector Autoregressive (VAR) tools to test the interaction between conventional and Islamic financial products, and implement the Granger causality test to specify the dependence orientation of feedback between Islamic and conventional stock prices. Our article differs from previous work on the topic in that it develops portfolio simulations to determine whether Islamic finance can supplant conventional finance by generating investment and diversification opportunities during periods of crisis. In addition, we develop optimal portfolio strategies and investment proportions for conventional and Islamic funds to ensure the best resource allocation. Our main findings are: (i) the impact of the current crisis on the Islamic finance industry is less marked than on conventional finance, (ii) investment in Islamic products generates high returns, (iii) portfolios that include Islamic products reduce systemic risk and generate significant diversification benefits, (iv) the US crisis has led to significant changes in resource allocation through changes in investment choices.
+C1 [Jawadi, F.] Univ Evry Val dEssonne, Amiens Sch Management, F-91025 Evry, France.
+   [Arouri, M. E.] EDHEC Business Sch, Paris, France.
+   [Ben Ameur, H.] Amiens Sch Management, Amiens, France.
+   [Jawadi, N.] IPAG Business Sch, Ipag Lab, Paris, France.
+   [Louhichi, W.] IGR IAE Rennes, CREM Rennes, UMR CNRS 6211, F-35000 Rennes, France.
+RP Jawadi, F (reprint author), Univ Evry Val dEssonne, Amiens Sch Management, 2 Rue Facteur Cheval, F-91025 Evry, France.
+EM fredj.jawadi@univ-evry.fr
+CR Abderrezak F, 2008, PERFORMANCE IS UNPUB
+   Afonso A, 2012, APPL ECON, V44, P4439, DOI 10.1080/00036846.2011.591732
+   Afonso A, 2011, ECON MODEL, V28, P1871, DOI 10.1016/j.econmod.2011.03.018
+   Aglietta M, 2009, CRISE
+   Aglietta M., 2009, CRISE RENOVATION FIN
+   Agnello L., 2012, B EC RES IN PRESS
+   Agnello L., 2012, J MACROECON IN PRESS
+   Agnello L, 2011, REV ECON-FR, V62, P1045, DOI 10.3917/reco.626.1045
+   Arouri M., 2011, MACROECONOM IN PRESS
+   Causse G, 2010, REV FINANCIER, V183, P23
+   Causse G, 2009, FINANCE ISLAMIQUE
+   Causse G, 2010, REV FINANCIER, V182, P166
+   DICKEY DA, 1981, ECONOMETRICA, V49, P1057, DOI 10.2307/1912517
+   Elfakhani S., 2005, 12 EC RES FOR
+   Fikriyah A., 2007, MANAGE FINANC, V3, P142
+   Foster JB, 2009, GREAT FINANCIAL CRIS
+   Jawadi F., 2001, 11013 IPAG
+   Jouini E., 2009, FINANCE ISLAMIQUE SO
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.1093/biomet/75.2.335
+   Raphie H, 2006, THESIS FREE U AMSTER
+   Shiller R. J., 2008, SUBPRIME SOLUTION TO
+   SIMS CA, 1980, ECONOMETRICA, V48, P1, DOI 10.2307/1912017
+   Sousa R. M., 2012, B EC RES IN PRESS
+   Sousa R. M., 2012, EUROPEAN J IN PRESS
+   SOUSA R. M., 2012, QUANTITATIV IN PRESS
+   Sousa RM, 2012, APPL ECON LETT, V19, P1085, DOI 10.1080/13504851.2011.613751
+   Sousa RM, 2012, APPL ECON LETT, V19, P619, DOI 10.1080/13504851.2011.591723
+   Sousa RM, 2010, N AM J ECON FINANC, V21, P88, DOI 10.1016/j.najef.2009.11.006
+   SRAIRI S, 2009, BANKERS MARKETS INVE, V98, P16
+NR 29
+TC 31
+Z9 31
+U1 2
+U2 30
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 0003-6846
+J9 APPL ECON
+JI Appl. Econ.
+PY 2013
+VL 45
+IS 24
+BP 3412
+EP 3420
+DI 10.1080/00036846.2012.707776
+PG 9
+WC Economics
+SC Business & Economics
+GA 012XZ
+UT WOS:000309271300003
+DA 2019-12-28
+ER
+
+PT J
+AU McCabe, PE
+   Cipriani, M
+   Holscher, M
+   Martin, A
+AF McCabe, Patrick E.
+   Cipriani, Marco
+   Holscher, Michael
+   Martin, Antoine
+TI The Minimum Balance at Risk: A Proposal to Mitigate the Systemic Risks
+   Posed by Money Market Funds
+SO BROOKINGS PAPERS ON ECONOMIC ACTIVITY
+LA English
+DT Article
+AB This paper introduces a proposal for money market fund (MMF) reform to mitigate the systemic risk and externalities that arise from the funds' vulnerability to runs and to protect shareholders who do not redeem quickly when runs occur. Our proposal would require that a small fraction of each MMF shareholder's recent balances, called the "minimum balance at risk" (MBR), be available for redemption only with a delay of 30 days. Most regular transactions in the fund would be unaffected; the requirement would only affect redemptions of the shareholder's MBR. In addition, in the rare event that a fund suffers losses, the MBRs of investors who have recently made large redemptions would absorb losses before those of nonredeeming investors. This subordination of redeeming investors' MBRs would create a disincentive to redeem if the fund is likely to have losses, but would have little effect on incentives when the risk of loss is remote. We use empirical evidence, including a novel data set from the U.S. Treasury and the U.S. Securities and Exchange Commission on MMF losses in 2008, to calibrate an MBR rule that would reduce the vulnerability of MMFs to runs.
+C1 [McCabe, Patrick E.] Board Governors Fed Reserve Syst, Washington, DC USA.
+   [Cipriani, Marco; Holscher, Michael; Martin, Antoine] Fed Reserve Bank New York, New York, NY USA.
+RP McCabe, PE (reprint author), Board Governors Fed Reserve Syst, Washington, DC USA.
+CR Chernenko Sergey, 2013, WORKING PAPER
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Hanson Samuel, 2013, WORKING PAPER
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Kacperczyk Marcin, Q J EC IN PRESS
+   Vasicek O, 2002, RISK, V15, P160
+NR 7
+TC 3
+Z9 3
+U1 0
+U2 16
+PU BROOKINGS INST PRESS
+PI WASHINGTON
+PA 1775 MASSACHUSETTS AVE NW, WASHINGTON, DC 20036 USA
+SN 0007-2303
+EI 1533-4465
+J9 BROOKINGS PAP ECO AC
+JI Brook. Pap. Econ. Act.
+PD SPR
+PY 2013
+BP 211
+EP 278
+PG 68
+WC Economics
+SC Business & Economics
+GA 252IQ
+UT WOS:000326998800004
+DA 2019-12-28
+ER
+
+PT J
+AU Sarlin, P
+   Peltonen, TA
+AF Sarlin, Peter
+   Peltonen, Tuomas A.
+TI Mapping the state of financial stability
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Mapping techniques; Self Organizing Financial Stability Map (SOFSM);
+   Systemic financial crisis; Systemic risk; Visualization; Prediction
+ID SOVEREIGN DEBT CRISES; EARLY WARNING SYSTEMS; CURRENCY CRISES;
+   INDICATORS
+AB The aim of this paper is to introduce modern mapping techniques to the finance community. Mapping techniques provide means for representing high-dimensional data on low-dimensional displays. This paper lays out a methodology called the Self-Organizing Financial Stability Map (SOFSM) based upon data and dimensionality reduction that can be used for mapping the state of financial stability and visualizing potential sources of systemic risks. Besides of its visualization capabilities, the SOFSM can be used as an early-warning model that can be calibrated according to policymakers' preferences between missing systemic financial crises and issuing false alarms. An application of the SOFSM to the recent global financial crisis shows that it performs on par with a statistical benchmark model and correctly calls the crises that started in 2007 in the United States and the euro area. (C) 2013 Elsevier B. V. All rights reserved.
+C1 [Sarlin, Peter] Abo Akad Univ, Turku Ctr Comp Sci, FIN-20520 Turku, Finland.
+   [Peltonen, Tuomas A.] European Cent Bank, Frankfurt, Germany.
+RP Sarlin, P (reprint author), Abo Akad Univ, Dept Informat Technol, Turku Ctr Comp Sci, Joukahaisenkatu 3-5, FIN-20520 Turku, Finland.
+EM psarlin@abo.fi; tuomas.peltonen@ecb.europa.eu
+CR Alessi L, 2011, EUR J POLIT ECON, V27, P520, DOI 10.1016/j.ejpoleco.2011.01.003
+   Balakrishnan R., 2009, IMF WORKING PAPER WP
+   Berg A, 2005, IMF STAFF PAPERS, V52, P462
+   Berg A, 1999, J INT MONEY FINANC, V18, P561, DOI 10.1016/S0261-5606(99)00024-8
+   Borio C., 2004, BIS WORKING PAPERS N
+   Borio C., 2002, BIS WORKING PAPERS N
+   Bussiere M, 2006, J INT MONEY FINANC, V25, P953, DOI 10.1016/j.jimonfin.2006.07.007
+   Bystrom H. N., 2004, J INT FINANC MARK I, V14, P419
+   Cardarelli R, 2011, J FINANC STABIL, V7, P78, DOI 10.1016/j.jfs.2010.01.005
+   Cox T., 2001, MULTIDIMENSIONAL SCA
+   Dattels P., 2010, IMF WORKING PAPER WP
+   Deboeck G., 1998, VISUAL EXPLORATIONS, P201
+   Deboeck G.J, 1998, VISUAL EXPLORATIONS, P179
+   Demirguc-Kunt A, 2000, WORLD BANK ECON REV, V14, P287, DOI 10.1093/wber/14.2.287
+   Demyanyk Y, 2010, OMEGA-INT J MANAGE S, V38, P315, DOI 10.1016/j.omega.2009.09.007
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Eklund T, 2008, J EMERG TECHNOL ACCO, V5, P109, DOI 10.2308/jeta.2008.5.1.109
+   Fioramanti M, 2008, J FINANC STABIL, V4, P149, DOI 10.1016/j.jfs.2008.01.001
+   Fort J.-C., 2002, 10th European Symposium on Artificial Neural Networks. ESANN'2002. Proceedings, P223
+   Fuertes AM, 2006, COMPUT STAT DATA AN, V51, P1420, DOI 10.1016/j.csda.2006.08.023
+   Hakkio C.S., 2009, ECON REV, V2, P5
+   Harrower M, 2003, CARTOGR J, V40, P27, DOI 10.1179/000870403235002042
+   Hollo D., 2012, ECB WORKING PAPER NO
+   Illing M., 2006, J FINANCIAL STABILIT, V2, P243, DOI DOI 10.1016/j.jfs.2006.06.002
+   Kaminsky G, 1998, INT MONET FUND S PAP, V45, P1
+   Kaski S., 2000, Australian Journal of Intelligent Information Processing Systems, V6, P82
+   Kindleberger C., 1996, MANIACS PANICS AND C
+   KOHONEN T, 1982, BIOL CYBERN, V43, P59, DOI 10.1007/BF00337288
+   Kohonen T, 2001, SELF ORGANIZING MAPS
+   Lo Duca M, 2013, J BANK FINANC, V37, P2183, DOI 10.1016/j.jbankfin.2012.06.010
+   Marghescu D., 2007, PROCEEDINGS OF 13TH
+   Marghescu D, 2010, INTELL SYST ACCOUNT, V17, P143, DOI 10.1002/isaf.317
+   Marina R, 2012, APPLICATIONS OF SELF, P1
+   MATTHEWS BW, 1975, BIOCHIM BIOPHYS ACTA, V405, P442, DOI 10.1016/0005-2795(75)90109-9
+   Minsky H, 1982, CAN IT HAPPEN AGAIN
+   Moehrmann J, 2011, LECT NOTES COMPUT SC, V6731, P178, DOI 10.1007/978-3-642-21566-7_18
+   Peltonen T.A., 2006, ECB WORKING PAPER NO
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Polla M., 2009, TKK REPORTS IN INFOR
+   Resta M., 2012, COMPUTATIONAL INTELL, V6, P535
+   Resta M, 2009, P 2009 C NEW DIR NEU, P176
+   Rueda IEA, 2009, INTELL DATA ANAL, V13, P261, DOI 10.3233/IDA-2009-0367
+   SAMMON JW, 1969, IEEE T COMPUT, VC 18, P401, DOI 10.1109/T-C.1969.222678
+   Sarlin P., 2011, Proceedings 2011 IEEE Symposium on Computational Intelligence and Data Mining (CIDM 2011), P357, DOI 10.1109/CIDM.2011.5949433
+   Sarlin P., 2012, TUCS TECHNICAL REPOR
+   Sarlin P., 2013, PATTERN RECOGNITION
+   Sarlin P, 2013, ENG APPL ARTIF INTEL, V26, P1532, DOI 10.1016/j.engappai.2013.01.002
+   Sarlin P, 2013, ECON LETT, V119, P1, DOI 10.1016/j.econlet.2012.12.030
+   Sarlin P, 2011, INTELL SYST ACCOUNT, V18, P15, DOI 10.1002/isaf.321
+   Venna J, 2001, LECT NOTES COMPUT SC, V2130, P485
+   Vesanto J, 2000, IEEE T NEURAL NETWOR, V11, P586, DOI 10.1109/72.846731
+   WARD JH, 1963, J AM STAT ASSOC, V58, P236, DOI 10.2307/2282967
+NR 52
+TC 27
+Z9 27
+U1 2
+U2 36
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD OCT
+PY 2013
+VL 26
+BP 46
+EP 76
+DI 10.1016/j.intfin.2013.05.002
+PG 31
+WC Business, Finance; Economics
+SC Business & Economics
+GA 219XF
+UT WOS:000324544300003
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Desai, R
+   Roberts, R
+AF Desai, Renu
+   Roberts, Robin
+TI Deficiencies in the Code of Conduct: The AICPA Rhetoric Surrounding the
+   Tax Return Preparation Outsourcing Disclosure Rules
+SO JOURNAL OF BUSINESS ETHICS
+LA English
+DT Article
+DE Tax return preparation; Outsourcing; Professional ethics; Public
+   interest; Code of conduct; Disclosure
+ID ACCOUNTANCY; PROFESSION
+AB In this article, we examine the American Institute of Certified Public Accountants' (AICPA) efforts to conceal the offshoring of tax return preparation services by U.S. Certified Public Accountants (CPAs) through recommending an inadequate disclosure format for this type of work. We draw on Giddens' theory of trust and expert systems, the professionalism literature, and Flyvbjerg's concept of power to analyze the underlying agenda behind the revised ethics rulings (AICPA Ethics Ruling No. 112 under Rule 102, No. 12 under Rule 201, and No. 1 under Rule 301). Specifically, we examine (1) the AICPA leadership's stated professional justifications for outsourcing and its recommended client disclosures, (2) risks associated with outsourcing tax return preparation work overseas and the trust issues that result, and (3) the resistance to the AICPA leadership's recommended outsourcing disclosure rules within the rank and file of the CPA profession. We argue that our analysis reveals the AICPA's on-going promotion of their private interests, thus continuing to raise systemic concerns regarding the public's trust in the U.S. public accounting profession.
+C1 [Desai, Renu] Nova SE Univ, Davie, FL 33314 USA.
+   [Roberts, Robin] Univ Cent Florida, Kenneth G Dixon Sch Accounting, Orlando, FL 32816 USA.
+RP Desai, R (reprint author), Nova SE Univ, 3301 Coll Ave, Davie, FL 33314 USA.
+EM rdesai@nova.edu; rroberts@bus.ucf.edu
+CR Abbott A., 1988, SYSTEM PROFESSIONS
+   American Institute of Certified Public Accountants, 2004, EXP DRAFT OMN PROP P
+   American Institute of Certified Public Accountants, 2004, PROF ETH
+   American Institute of Certified Public Accountants, 2006, AICPA URG IRS REC PR
+   American Institute of Certified Public Accountants, 2004, COMM LETT RESP ETH D
+   BARBER B, 1965, PROFESSIONS AM
+   Barrett M., 2006, ACCOUNTING AUDITING, V19, P631, DOI DOI 10.1108/09513570610689640
+   Bierce W. B., 2004, JUMPSTARTING AM JOBS
+   Bierce W. B., 2004, TAX PREPARATION SERV
+   Committee on Ways and Means, 2006, HEARING ARCH
+   Committee on Ways and Means, 2004, HEARING ARCH
+   Coombes A., 2006, IRS WANTS OUTSOURCIN
+   Coulter J. M., 2006, CPA J, V76, P66
+   Denzin N. K., 1978, RES ACT
+   Desai R, 2010, CURRENTS INT TRADE L, V18, P22
+   Desai R., 2010, CPA J, V80, P56
+   Federal Deposit Insurance Corporation, 2004, OFFSHORE OUTSOURCING
+   Flyvbjerg B., 1998, RATIONALITY POWER
+   Fogarty TJ, 2006, ACCOUNT ORG SOC, V31, P1, DOI 10.1016/j.aos.2004.07.004
+   FREIDSON E, 1984, ANNU REV SOCIOL, V10, P1
+   Freidson E., 2001, PROFESSIONALISM 3 LO
+   Gendron Y, 2004, CONTEMP ACCOUNT RES, V21, P563, DOI 10.1506/H1C0-EU27-UU2K-8EC8
+   Gendron Y, 2009, CONTEMP ACCOUNT RES, V26, P987, DOI 10.1506/car.26.4.1
+   Giddens Anthony, 1990, CONSEQUENCES MODERNI
+   Government Accountability Office, 2005, OFFSHORING SERVICES
+   Hanlon G., 1994, COMMERCIALIZATION AC
+   Harrington J. J., 2006, TENNESSE CPA J   FEB
+   Internal Revenue Service, 2006, INT REV B, P2006
+   Jamouneau G., 2009, TAX ADVISOR, P84
+   Kornberger M, 2011, ACCOUNT ORG SOC, V36, P514, DOI 10.1016/j.aos.2011.07.007
+   Lincoln SY, 1985, NATURALISTIC INQUIRY
+   Macdonald E., 2002, FORBES
+   Melancon B., 2009, ACCOUNTING TOMORROW
+   Pentland BT, 1993, ACCOUNT ORG SOC, V18, P605, DOI 10.1016/0361-3682(93)90045-8
+   Power MK, 2003, ACCOUNT ORG SOC, V28, P379, DOI 10.1016/S0361-3682(01)00047-2
+   PRESTON AM, 1995, ACCOUNT ORG SOC, V20, P507, DOI 10.1016/0361-3682(94)00033-R
+   Privacy Rights Clearing House, 2006, STAT OUTS PRIV RIGHT
+   RADCLIFFE V, 1994, ACCOUNT ORG SOC, V19, P601, DOI 10.1016/0361-3682(94)90026-4
+   Reeves J. F., 2004, ACCOUNTING TECHNOLOG, V20, P15
+   Roberts R. W., 2001, CRIT PERSPECT, V12, P589
+   Robertson J., 2004, CPA J, V75, P54
+   Shafer W., 2005, ACCOUNTING AUDITING, V18, P453, DOI DOI 10.1108/09513570510609324
+   Shamis G.S., 2005, J ACCOUNTANCY, V199, P57
+   Soled J., 2005, CPA J, V75, P14
+   Van M., 1988, TALES FIELD
+   WILLMOTT H, 1986, ACCOUNT ORG SOC, V11, P555, DOI 10.1016/0361-3682(86)90036-X
+   Woehlke J. A., 2002, TRUSTED PROFESSIONAL
+NR 47
+TC 3
+Z9 3
+U1 1
+U2 12
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0167-4544
+EI 1573-0697
+J9 J BUS ETHICS
+JI J. Bus. Ethics
+PD MAY
+PY 2013
+VL 114
+IS 3
+BP 457
+EP 471
+DI 10.1007/s10551-012-1329-z
+PG 15
+WC Business; Ethics
+SC Business & Economics; Social Sciences - Other Topics
+GA 156IF
+UT WOS:000319814600006
+DA 2019-12-28
+ER
+
+PT J
+AU Amengual, D
+   Fiorentini, G
+   Sentana, E
+AF Amengual, Dante
+   Fiorentini, Gabriele
+   Sentana, Enrique
+TI Sequential estimation of shape parameters in multivariate dynamic models
+SO JOURNAL OF ECONOMETRICS
+LA English
+DT Article
+DE Confidence intervals; Elliptical distributions; Efficient estimation;
+   Global systematically important banks; Systemic risk; Risk management
+ID SAMPLE PROPERTIES; MOMENTS; DISTRIBUTIONS; REGRESSION; SKEWNESS;
+   KURTOSIS
+AB Sequential maximum likelihood and GMM estimators of distributional parameters obtained from the standardised innovations of multivariate conditionally heteroskedastic dynamic regression models evaluated at Gaussian PML estimators preserve the consistency of mean and variance parameters while allowing for realistic distributions. We assess their efficiency, and obtain moment conditions leading to sequential estimators as efficient as their joint ML counterparts. We also obtain standard errors for VaR and CoVaR, and analyse the effects on these measures of distributional misspecification. Finally, we illustrate the small sample performance of these procedures through simulations and apply them to analyse the risk of large eurozone banks. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Amengual, Dante; Sentana, Enrique] CEMFI, E-28014 Madrid, Spain.
+   [Fiorentini, Gabriele] Univ Florence, I-50134 Florence, Italy.
+   [Fiorentini, Gabriele] RCEA, Rimini, Italy.
+RP Sentana, E (reprint author), CEMFI, Casado Alisal 5, E-28014 Madrid, Spain.
+EM amengual@cemfi.es; fiorentini@disia.unifi.it; sentana@cemfi.es
+FU Spanish Ministry of Science and InnovationMinistry of Science and
+   Innovation, Spain (MICINN)Ministry of Education and Science, Spain [ECO
+   2008-00280, 2011-26342]; MIUR PRIN MISURA - Multivariate models for risk
+   assessment
+FX We would like to thank Manuel Arellano, Christian Bontemps, Antonio Diez
+   de los Rios, Olivier Faugeras, Javier Mencia, Francisco Penaranda ,
+   Marcos Sanso, David Veredas and audiences at the Bank of Canada, CEMFI,
+   Chicago Booth, CREST, ECARES ULB, Koc, Princeton, Rimini, Toulouse, the
+   Finance Forum (Granada, 2011), the Symposium of the Spanish Economic
+   Association (Malaga, 2011) and the Conference in honour of M. Hashem
+   Pesaran (Cambridge, 2011) for useful comments and suggestions. We also
+   thank the editors and two anonymous referees for valuable feedback. Luca
+   Repetto provided able research assistance for the empirical application.
+   Of course, the usual caveat applies. Amengual and Sentana gratefully
+   acknowledge financial support from the Spanish Ministry of Science and
+   Innovation through grants ECO 2008-00280 and 2011-26342 while Fiorentini
+   acknowledges funding from MIUR PRIN MISURA - Multivariate models for
+   risk assessment.
+CR ABRAMOWITZ M, 1964, HDB MATH FUNCTIONS, V55
+   Acharya V. V., 2010, 1002 FED RES BANK CL
+   Adrian T., 2011, COVAR UNPUB
+   Amengual D, 2011, INFERENCE MULT UNPUB
+   Basel Committee on Banking Supervision, 2011, BAS 3 GLOB REG UNPUB
+   BERKANE M, 1986, STAT PROBABIL LETT, V4, P333, DOI 10.1016/0167-7152(86)90054-4
+   BICKEL PJ, 1982, ANN STAT, V10, P647, DOI 10.1214/aos/1176345863
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Bontemps C, 2012, J APPL ECONOMET, V27, P978, DOI 10.1002/jae.1250
+   Brownlees C., 2011, VOLATILITY COR UNPUB
+   CHAMBERLAIN G, 1983, J ECON THEORY, V29, P185, DOI 10.1016/0022-0531(83)90129-1
+   Dominicy Y, 2013, J ECONOMETRICS, V172, P235, DOI 10.1016/j.jeconom.2012.08.010
+   DURBIN J, 1970, ECONOMETRICA, V38, P410, DOI 10.2307/1909547
+   Fang KT, 1990, SYMMETRIC MULTIVARIA
+   Fiorentini G, 2003, J BUS ECON STAT, V21, P532, DOI 10.1198/073500103288619232
+   Fiorentini G., 2010, EFFICIENCY CON UNPUB
+   GOURIEROUX C, 2009, HDB FINANCIAL ECONOM
+   Guidolin M, 2007, J ECON DYN CONTROL, V31, P3503, DOI 10.1016/j.jedc.2006.12.004
+   HANSEN LP, 1982, ECONOMETRICA, V50, P1029, DOI 10.2307/1912775
+   Hansen LP, 1996, J BUS ECON STAT, V14, P262, DOI 10.2307/1392442
+   Hodgson DJ, 2003, J BUS ECON STAT, V21, P269, DOI 10.1198/073500103288618954
+   Jondeau E, 2003, J ECON DYN CONTROL, V27, P1699, DOI 10.1016/S0165-1889(02)00079-9
+   Koenker R, 2005, ECONOMETRIC SOC MONO
+   Kotz S, 1975, STATISTICAL DISTRIBU, V1, P247
+   Ling SQ, 2003, ECONOMET THEOR, V19, P280, DOI 10.1017/S0266466603192092
+   LINTON O, 1993, ECONOMET THEOR, V9, P539, DOI 10.1017/S0266466600007970
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Lopez J.A., 1999, FEDERAL RESERVE BANK, V2, P3, DOI DOI 10.1086/250095
+   MARDIA KV, 1970, BIOMETRIKA, V57, P519, DOI 10.1093/biomet/57.3.519
+   Maruyama Y., 2003, J JAPAN STAT SOC, V33, P215
+   Mencia J, 2009, J ECONOMETRICS, V153, P105, DOI 10.1016/j.jeconom.2009.05.001
+   Newey W. K., 1998, 2 STEP ESTIMAT UNPUB
+   NEWEY WK, 1984, ECON LETT, V14, P201, DOI 10.1016/0165-1765(84)90083-1
+   NEWEY WK, 1985, ECONOMETRICA, V53, P1047, DOI 10.2307/1911011
+   Newey WK, 1997, ECONOMETRICA, V65, P587, DOI 10.2307/2171754
+   OWEN J, 1983, J FINANC, V38, P745, DOI 10.2307/2328079
+   PAGAN A, 1986, REV ECON STUD, V53, P517, DOI 10.2307/2297604
+   Pesaran B, 2010, ECON MODEL, V27, P1398, DOI 10.1016/j.econmod.2010.07.012
+   Pesaran MH, 2009, J EMPIR FINANC, V16, P280, DOI 10.1016/j.jempfin.2008.08.001
+   SENTANA E, 1995, REV ECON STUD, V62, P639, DOI 10.2307/2298081
+   TAUCHEN G, 1985, J ECONOMETRICS, V30, P415, DOI 10.1016/0304-4076(85)90149-6
+NR 41
+TC 6
+Z9 6
+U1 0
+U2 25
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-4076
+EI 1872-6895
+J9 J ECONOMETRICS
+JI J. Econom.
+PD DEC
+PY 2013
+VL 177
+IS 2
+BP 233
+EP 249
+DI 10.1016/j.jeconom.2013.04.010
+PG 17
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 260AL
+UT WOS:000327567300008
+DA 2019-12-28
+ER

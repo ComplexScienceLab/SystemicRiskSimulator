@@ -1,0 +1,540 @@
+
+PT J
+AU Jiang, SS
+   Fan, H
+AF Jiang, Shanshan
+   Fan, Hong
+TI Credit risk contagion coupling with sentiment contagion
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Complex network; Credit risk; Risk contagion; Sentiment contagion
+ID INVESTOR SENTIMENT; SYSTEMIC RISK; MARKET SENTIMENT; NETWORK MODEL;
+   SUBPRIME CRISIS; INTENSITY; LIQUIDITY; FAIL
+AB The contagion law of credit risk is very important for financial market supervision. In the financial market, the interaction between credit risk holders' sentiment and credit risk is the important factor of credit risk contagion. The existing credit risk contagion models based on complex network theory assume that the credit risk contagion is exogenous, and only analyze the proportion of the individuals infected by the credit risk from a macro perspective. However, existing models cannot explain the coupling relationship between credit risk contagion and emotional contagion, and how individuals are infected from a microscopic perspective is not clear. In this work, the theory of propagation dynamics in complex networks is introduced into the study of coupling relationship between credit risk contagion and sentiment contagion, which can reflect the endogenous problem of credit default in the process of credit risk contagion. The model can analyze the evolution process of individual risk contagion and sentiment contagion in the network, and can effectively reflect the risk contagion degree of individual. The proposed model further analyzes the influence of network structure, individual risk attitude, individual risk resisting ability, and financial market supervision on credit risk contagion and sentiment contagion. The correctness of the model is verified by theoretical deduction and numerical simulation. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Jiang, Shanshan; Fan, Hong] Donghua Univ, Glorious Sun Sch Business & Management, Shanghai 200051, Peoples R China.
+RP Fan, H (reprint author), Donghua Univ, Glorious Sun Sch Business & Management, Shanghai 200051, Peoples R China.
+EM hongfan@dhu.edu.cn
+FU National Natural Science Foundation of PR ChinaNational Natural Science
+   Foundation of China [71371046]; Natural Science Foundation of Jiangsu
+   ProvinceJiangsu Planned Projects for Postdoctoral Research FundsNatural
+   Science Foundation of Jiangsu Province [BK20161533]
+FX This work is supported in part by the National Natural Science
+   Foundation of PR China (71371046), the Natural Science Foundation of
+   Jiangsu Province (BK20161533).
+CR Acemoglu D, 2013, NBER WORKING PAPERS, V19746
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Aristei D, 2014, J ECON BUS, V76, P55, DOI 10.1016/j.jeconbus.2014.08.001
+   Asem E, 2016, INT J MANAG FINANC, V12, P25, DOI 10.1108/IJMF-10-2013-0106
+   Baker M, 2012, J FINANC ECON, V104, P272, DOI 10.1016/j.jfineco.2011.11.002
+   Bao QF, 2012, ECON MODEL, V29, P471, DOI 10.1016/j.econmod.2011.12.002
+   Bedendo M, 2012, J BANK FINANC, V36, P3260, DOI 10.1016/j.jbankfin.2012.07.011
+   Bekiros S, 2017, N AM J ECON FINANC, V42, P107, DOI 10.1016/j.najef.2017.07.005
+   Blau BM, 2017, APPL ECON, V49, P812, DOI 10.1080/00036846.2016.1205727
+   Chau F, 2016, INT REV FINANC ANAL, V48, P221, DOI 10.1016/j.irfa.2016.10.003
+   Chen TY, 2017, TECHNOL ECON DEV ECO, V23, P1, DOI 10.3846/20294913.2016.1209249
+   Chen TQ, 2015, COMPUT ECON, V46, P519, DOI 10.1007/s10614-014-9475-2
+   Eboli M., 2013, ADV DYNAMIC MODELING
+   Edirisinghe C, 2015, J BANK FINANC, V60, P209, DOI 10.1016/j.jbankfin.2015.08.015
+   Elliott RJ, 2015, ANN FINANC, V11, P319, DOI 10.1007/s10436-015-0259-z
+   Gabrieli S., 2011, SSRN ELECT J, V9, P1
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garas A, 2010, NEW J PHYS, V12, DOI 10.1088/1367-2630/12/11/113043
+   Haldane A., 2013, RETHINKING FINANCIAL
+   Hatchett JPL, 2009, QUANT FINANC, V9, P373, DOI 10.1080/14697680802464162
+   He F, 2016, PHYSICA A, V461, P158, DOI 10.1016/j.physa.2016.05.032
+   He JM, 2016, PHYSICA A, V441, P1, DOI 10.1016/j.physa.2015.08.028
+   He XZ, 2017, QUANT FINANC, V17, P455, DOI 10.1080/14697688.2016.1203071
+   Huser AC, 2015, J NETW THEORY FINANC, V1, P1
+   Kuzubas TU, 2016, PHYSICA A, V462, P358, DOI 10.1016/j.physa.2016.06.085
+   Lee S, 2013, PHYSICA A, V392, P2060, DOI 10.1016/j.physa.2012.12.027
+   Lee YH, 2014, GLOB FINANC J, V25, P17, DOI 10.1016/j.gfj.2014.03.003
+   Li JF, 2017, N AM J ECON FINANC, V42, P504, DOI 10.1016/j.najef.2017.08.006
+   Li SW, 2011, ADV COMPLEX SYST, V14, P673, DOI 10.1142/S0219525911003438
+   Liu SM, 2015, J BEHAV FINANC, V16, P51, DOI 10.1080/15427560.2015.1000334
+   Ma QT, 2018, PHYSICA A, V492, P2273, DOI 10.1016/j.physa.2017.11.141
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Seo SW, 2015, J BANK FINANC, V50, P106, DOI 10.1016/j.jbankfin.2014.09.010
+   Staum J, 2016, IIE TRANS, V48, P501, DOI 10.1080/0740817X.2015.1110650
+   Szu W.-M., 2015, MANAGE FINANC, V41, P437
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Virlics A, 2013, PROCD SOC BEHV, V92, P1011, DOI 10.1016/j.sbspro.2013.08.792
+   Vivier S., 2012, GIORNALE ITALIANO CA, V2012, P36
+   Wosnitza JH, 2014, PHYSICA A, V393, P427, DOI 10.1016/j.physa.2013.08.072
+   Xu T, 2016, PHYSICA A, V463, P131, DOI 10.1016/j.physa.2016.07.013
+   Yang CX, 2016, PHYSICA A, V444, P601, DOI 10.1016/j.physa.2015.10.058
+   Yang Y, 2016, ENVIRON RES, V148, P582, DOI 10.1016/j.envres.2015.12.024
+   Zhang MH, 2018, PHYSICA A, V493, P203, DOI 10.1016/j.physa.2017.09.070
+NR 44
+TC 1
+Z9 1
+U1 4
+U2 31
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD DEC 15
+PY 2018
+VL 512
+BP 186
+EP 202
+DI 10.1016/j.physa.2018.08.116
+PG 17
+WC Physics, Multidisciplinary
+SC Physics
+GA GV5OE
+UT WOS:000446151000016
+DA 2019-12-27
+ER
+
+PT J
+AU Liow, K
+   Ye, Q
+AF Liow, KimHiang
+   Ye, Qing
+TI Volatility causality and contagion in international securitized real
+   estate markets: Evidence from Markov-switching analysis
+SO JOURNAL OF EUROPEAN REAL ESTATE RESEARCH
+LA English
+DT Article
+DE Markov-switching
+ID FINANCIAL CRISIS; STOCK MARKETS; INTERDEPENDENCE; TRANSMISSION; PRICES;
+   SHOCKS; TIME; PERFORMANCE; MODEL; ASIA
+AB Purpose This paper aims to investigate volatility causality and return contagion on nine international securitized real estate markets by appealing to Markov-switching (MS) regime approach, from July 1992 to June 2014.
+   Design/methodology/approach An MS causality interaction model (Psaradakis et al., 2005), an MS vector auto-regression mode (Krolzig, 1997) and a multivariate return contagion model (Dungey et al., 2005) were used to implement the empirical investigations.
+   Findings There exist regime shifts in the volatility causality pattern, with the volatility causality effects more pronounced during high volatility periods. During high volatility period, real estate markets' causality interactions and inter-linkages contribute to strong spillover effect that leads to extreme volatility. However, there is relatively limited return contagion evidence in the securitized real estate markets examined. As such, the US financial crisis might probably be due to cross-market interdependence rather than contagion.
+   Research limitations/implications Because international investors incorporate into their portfolio allocation not only the long-run price relationship but also the short-run market volatility connectedness and return correlation structure, the results of this MS causality and contagion study have provided valuable information on the evaluation of regime-dependent securitized real estate market risk, as well as useful guidance on asset allocation and portfolio management decisions for institutional investors.
+   Practical implications Financial crisis is one of the key determinants of cross-market volatility interactions. Portfolio managers should be alerted of the observation that the US and the other developed securitized real estate markets are increasingly sharing common market cycles in recent years, thereby diminishing the diversification benefits. For policymakers, this research indicates that the volatilities of the US securitized real estate market could be helpful to predict those of other developed markets. It is also important for them to pay attention to those potential risk factors behind the amplified causality, contagion and volatility spillover at times of crisis. Finally, a wider implication for policymakers is to manage the transmission channels through which global stock market return and volatility shocks can affect the local economies and domestic financial markets, including securitized real estate markets.
+   Originality/value Real estate investments have emerged to show low correlation with stocks and bonds and contributed to portfolio optimization. With real estate that can serve as a type of consumption commodity and an investment tool, the risk-return profile of real estate is different from that of the underlying stock markets. Therefore, the performance and investment dynamics and real estate-stock link are not theoretically expected to be similar, that requires separate empirical investigations. This paper aims to stand out from the many papers on the same or similar topics in the application of the three MS methodologies to regime-dependent real estate market integration.
+C1 [Liow, KimHiang] Natl Univ Singapore, Real Estate, Singapore, Singapore.
+   [Ye, Qing] Private Sect, Shanghai, Peoples R China.
+RP Liow, K (reprint author), Natl Univ Singapore, Real Estate, Singapore, Singapore.
+EM rstlkh@nus.edu.sg
+CR Baele L., 2005, J FINANCIAL QUANTITA, V40, P2
+   Barberis N, 2005, J FINANC ECON, V75, P283, DOI 10.1016/j.jfineco.2004.04.003
+   Bond SA, 2006, J REAL ESTATE FINANC, V32, P253, DOI 10.1007/s11146-006-6800-0
+   Calvet LE, 2006, J ECONOMETRICS, V131, P179, DOI 10.1016/j.jeconom.2005.01.008
+   Case B, 2014, REAL ESTATE ECON, V42, P279, DOI 10.1111/1540-6229.12025
+   Chandrashekaran V., 1999, J REAL ESTATE RES, V17, P91
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Dungey M., 2001, 200109 FED RES BANK
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   Dungey M, 2014, ECON SYST, V38, P161, DOI 10.1016/j.ecosys.2013.10.003
+   Dungey M, 2010, J BANK FINANC, V34, P1008, DOI 10.1016/j.jbankfin.2009.11.006
+   Eichholtz P. M. A., 1996, FINANCIAL ANAL J, V52, P56, DOI [10.2469/faj.v52.n1.1967, DOI 10.2469/FAJ.V52.N1.1967]
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Flavin TJ, 2015, N AM J ECON FINANC, V34, P167, DOI 10.1016/j.najef.2015.09.001
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Forbes KJ, 2004, J INT ECON, V63, P59, DOI 10.1016/S0022-1996(03)00044-8
+   Fry R, 2010, J BUS ECON STAT, V28, P423, DOI 10.1198/jbes.2010.06060
+   Gallo GM, 2009, INT J FINANC ECON, V14, P24, DOI 10.1002/ijfe.382
+   Gerlach R, 2006, J INT MONEY FINANC, V25, P974, DOI 10.1016/j.jimonfin.2006.07.002
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   Hoesli M, 2013, J REAL ESTATE FINANC, V47, P1, DOI 10.1007/s11146-011-9346-8
+   Huang Bwo-Nung, 2000, INT REV FINANC ANAL, V9, P281, DOI DOI 10.1016/S1057-5219(00)00031-4
+   Hui ECM, 2012, INT J STRATEG PROP M, V16, P219, DOI 10.3846/1648715X.2011.645904
+   Hui ECM, 2012, APPL ECON, V44, P2985, DOI 10.1080/00036846.2011.568409
+   Kallberg J. G., 2002, REAL ESTATE ECON, V24, P359
+   KAWALLER IG, 1990, J BANK FINANC, V14, P373, DOI 10.1016/0378-4266(90)90055-7
+   Krolzig H.M, 1997, LECT NOTES EC MATH S
+   Kuhle J., 1987, J REAL ESTATE RES, V2, P1
+   Le C, 2014, EURASIAN ECON REV, V4, P133, DOI 10.1007/s40822-014-0009-y
+   Ling DC, 2002, J REAL ESTATE FINANC, V24, P119, DOI 10.1023/A:1013938506550
+   Liow KH, 2008, J PROP RES, V25, P127, DOI 10.1080/09599910802605400
+   Liow KH, 2012, REAL ESTATE ECON, V40, P97, DOI 10.1111/j.1540-6229.2011.00314.x
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Mandilaras A, 2010, J INT MONEY FINANC, V29, P1062, DOI 10.1016/j.jimonfin.2010.03.001
+   Okunev J, 2000, J REAL ESTATE FINANC, V21, P251, DOI 10.1023/A:1012051719424
+   Psaradakis Z, 2005, J APPL ECONOM, V20, P665, DOI 10.1002/jae.819
+   Ross S. A., 1991, J REAL ESTATE FINANC, V4, P175
+   Schindler F, 2009, J PROP INVEST FINANC, V27, P579, DOI 10.1108/14635780910993177
+   Serwa D., 2005, EC SYSTEMS, V29, P344, DOI DOI 10.1016/j.ecosys.2005.05.003
+   Simo-Kengne BD, 2013, ECON MODEL, V32, P161, DOI 10.1016/j.econmod.2013.02.006
+   Tamakoshi G, 2011, ECON BULL, V31, P3339
+   Wilson P., 2004, J PROPERTY INVESTMEN, V22, P401
+   Zheng TG, 2013, N AM J ECON FINANC, V26, P643, DOI 10.1016/j.najef.2013.05.001
+NR 44
+TC 1
+Z9 1
+U1 0
+U2 2
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1753-9269
+J9 J EUR REAL ESTATE RE
+JI J. Eur. Real Estate Res.
+PY 2018
+VL 11
+IS 2
+BP 144
+EP 168
+DI 10.1108/JERER-11-2017-0042
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA GQ7GT
+UT WOS:000441905300006
+DA 2019-12-27
+ER
+
+PT J
+AU Isa, MYM
+   Choong, YV
+   Fie, DYG
+   Rashid, MZHA
+AF Isa, Mohd Yaziz Mohd
+   Choong, Yap Voon
+   Fie, David Yong Gun
+   Rashid, Md Zabid Hj Abdul
+TI Determinants of loan loss provisions of commercial banks in Malaysia
+SO JOURNAL OF FINANCIAL REPORTING AND ACCOUNTING
+LA English
+DT Article
+DE Banking; Financial reporting; Corporate finance; Financial institution
+ID EARNINGS MANAGEMENT; ISLAMIC BANKS; CAPITAL MANAGEMENT; RISK; CRISIS;
+   DEBT; DISCLOSURES; EFFICIENCY; BEHAVIOR; RATINGS
+AB Purpose - This paper aims to derive determinants of loan loss provisions (LLPs) of commercial banks in Malaysia.
+   Design/methodology/approach - A single-stage panel data analysis multiple regression model that contains a mixture of quantitative and qualitative elements is used. The LLPs is a dependent variable or regressor, and non-performing loan (NPL), interest income, net profit, loans and advances and gross domestic product (GDP) are the independent variables or regressor/explanatory variables. The moderating variable is "credit risk management" (CRM) and the intervening variable is "relevance and faithful representation".
+   Findings - This paper suggests in LLPs, NPLs, interest income, loans and advances, net profit and GDP, as well as the moderating effect of CRM and the intervening effect of relevance and faithful representation, are determinants of the LLPs. The moderating variable CRM strengthens the relationship between the independent variables and the dependent variable. The intervening variable "relevance and faithful representation" brings about a more accurate reporting on the levels of the LLPs.
+   Practical implications - The acsociation of the factors is investigated further to detect possible effort of multicollinearity and re arch to better understand how banks manage their risk as the current investigation is limited to banks in Malaysia.
+   Social implications - Loan loss provisioning issues of commercial banks in Malaysia are challenges for both regulators and the banking industry owing to the implementation of several new measures, the convergence with internationally accepted accounting standards and differences in loan grading and applications of different loan loss provisioning standards. Because of these challenges, Bank Negara Malaysia (the Central Bank of Malaysia) has tightened its supervision of commercial banks to ensure that banks are sufficiently and adequately provisioned. The banking sector plays a significant role, and it is important that it is resilient in the face of potential sources of systemic risk. And, like in other major ASEAN economies, the Malaysian's financial system remains largely bank-dominated.
+   Originality/value - This study discovers whether Malaysian banks are sufficiently provisioned for the regional financial integration under the ASEAN Capital Markets Forum (ACMF) by the end of 2015, where several initiates have been initiated, including the harmonization of standards to encourage greater intra-regional investment flows and transactions and continued provisions of the much needed funds by the region's private sectors.
+C1 [Isa, Mohd Yaziz Mohd] Univ Tun Abdul Razak, Bank Rakyat Sch Business, Kuala Lumpur, Malaysia.
+   [Choong, Yap Voon] Multimedia Univ, FOM, Kuala Lumpur, Malaysia.
+   [Fie, David Yong Gun] Multimedia Univ, Kuala Lumpur, Malaysia.
+   [Rashid, Md Zabid Hj Abdul] Univ Tun Abdul Razak, Kuala Lumpur, Malaysia.
+RP Isa, MYM (reprint author), Univ Tun Abdul Razak, Bank Rakyat Sch Business, Kuala Lumpur, Malaysia.
+EM mohd_yaziz@unirazak.edu.my
+CR Abraham A, 2008, ASIAN REV ACCOUNT, V16, P4, DOI 10.1108/13217340810872445
+   Abu Hussain H, 2012, J RISK FINANC, V13, P215, DOI 10.1108/15265941211229244
+   Ahmed AS, 1999, J ACCOUNT ECON, V28, P1, DOI 10.1016/S0165-4101(99)00017-8
+   Alao O, 2011, HUMANOMICS, V27, P201, DOI 10.1108/08288661111165231
+   Anandarajan A., 2006, 232006 MON POL RES D, P1
+   Balla E., 2009, EC Q, V95, P383
+   Basel Committee on Banking Supervision, 2006, SOUND CRED RISK ASS, P1
+   BEATTY A, 1995, J ACCOUNTING RES, V33, P231, DOI 10.2307/2491487
+   Beck R., 2013, 1515 EUR CENTR BANK
+   Bhat V., 1996, APPL FINANCIAL EC, V6, P505, DOI [10.1080/096031096333953, DOI 10.1080/096031096333953]
+   BIS, 2004, 13 BANK INT SETTL, P1
+   Boudriga A, 2009, J FINAN ECON POLICY, V1, P286, DOI 10.1108/17576380911050043
+   Cholopichien J., 2008, THESIS
+   Coleman RE, 2000, PET IN CLINICAL ONCOLOGY, P1
+   COLLINS JH, 1995, J ACCOUNTING RES, V33, P263, DOI 10.2307/2491488
+   Consiglio A, 2015, J RISK FINANC, V16, P2, DOI 10.1108/JRF-09-2014-0129
+   Currie L, 2004, J ECON STUD, V31, P244
+   Dermine J., 2006, BANK LOAN LOSS UNPUB, P1
+   ELLIOTT JA, 1991, ACCOUNT REV, V66, P847
+   Forbes WP, 2015, J RISK FINANC, V16, P284, DOI 10.1108/JRF-10-2014-0157
+   Ghosh S, 2015, INT J LAW MANAG, V57, P167, DOI 10.1108/IJLMA-02-2014-0008
+   Gorton G., 1995, J FINANC, V50, P509
+   Hasan I., 2004, FINANCIAL REV, V39, P129, DOI [10.1111/j.0732-8516.2004.00070.x, DOI 10.1111/J.0732-8516.2004.00070.X]
+   Hmili R., 2015, EXPERT J FINANCE, V3, P1
+   Ho C.-T, 2004, INT J PRODUCTIVITY P, V53, P425
+   Ismail AGB, 2005, J FINANC REPORT ACCO, V3, P41, DOI 10.1108/19852510580000336
+   Ismail F, 2013, J FINANC REPORT ACCO, V11, P92, DOI 10.1108/JFRA-03-2013-0011
+   Jean-Pierre L, 2011, COURRIER STAT, P1
+   Jiajia Jin, 2012, Grey Systems: Theory and Application, V2, P385, DOI 10.1108/20439371211273267
+   Jimenez G., 2005, WORKING PAPER, P1
+   Kabir MH, 2011, ACCOUNT RES J, V24, P268, DOI 10.1108/10309611111187000
+   Kighir AE, 2015, J FINANC REPORT ACCO, V13, P2, DOI 10.1108/JFRA-09-2013-0072
+   King M, 2013, FPL, P1
+   Leathers CG, 2015, INT J SOC ECON, V42, P340, DOI 10.1108/IJSE-12-2013-0282
+   Leventis S, 2012, J ECON STUD, V39, P604, DOI 10.1108/01443581211259509
+   Lin P. W.-S., 2006, INT J BENCHMARKING, V13, P1
+   Liu CC, 1997, ACCOUNT REV, V72, P133
+   Liu CH, 2014, REV ACCOUNT FINANC, V13, P134, DOI 10.1108/RAF-10-2012-0098
+   Maffei M, 2014, MANAG AUDIT J, V29, P621, DOI 10.1108/MAJ-11-2013-0964
+   Matemilola BT, 2013, MANAG FINANC, V39, P1124, DOI 10.1108/MF-08-2012-0187
+   Matousek R, 2009, J FINANC REGUL COMPL, V17, P146, DOI 10.1108/13581980910952586
+   MOYER SE, 1990, J ACCOUNT ECON, V13, P123, DOI 10.1016/0165-4101(90)90027-2
+   Mullineux A, 2002, J FINANCIAL REGULATI, V10, P162
+   MUSUMECI JJ, 1990, J MONEY CREDIT BANK, V22, P370, DOI 10.2307/1992566
+   Muttakin MB, 2015, MANAG AUDIT J, V30, P277, DOI 10.1108/MAJ-02-2014-0997
+   Ofoeda I, 2012, J FINANC REGUL COMPL, V20, P433, DOI 10.1108/13581981211279372
+   Ojo M, 2010, J RISK FINANC, V11, P249, DOI 10.1108/15265941011043639
+   Osei-Assibey E., 2015, J FINANCIAL EC POLIC, V7
+   Packer F., 2012, 375 BIS, P1
+   Pacter P., 2011, DEV ACCOUNTING STAND, P1
+   Perez D, 2008, EUR ACCOUNT REV, V17, P423, DOI 10.1080/09638180802016742
+   Raghunandan K., 2007, ACCOUNT HORIZ, V21, P265, DOI DOI 10.2308/ACCH.2007.21.3.265
+   Rendon D. Q., 2001, J INTERNAL BANKING R, V2, P1
+   Rottke NB, 2008, J PROP INVEST FINANC, V26, P59, DOI 10.1108/14635780810845163
+   Sarath D, 2015, J ECON STUD, V42, P861, DOI 10.1108/JES-08-2014-0140
+   SHARMA S, 1981, J MARKETING RES, V18, P291, DOI 10.2307/3150970
+   Taktak NB, 2010, J ISLAMIC ACCOUNT BU, V1, P114, DOI 10.1108/17590811011086714
+   Nguyen TPT, 2015, MANAG FINANC, V41, P507, DOI 10.1108/MF-12-2013-0354
+   Tong S., 2013, P POWERTECH, P1
+   Vafeas N, 1999, J FINANC ECON, V53, P113, DOI 10.1016/S0304-405X(99)00018-5
+   van Loon E, 2015, J RISK FINANC, V16, P220, DOI 10.1108/JRF-11-2014-0161
+   WAHLEN JM, 1994, ACCOUNT REV, V69, P455
+   Walter C, 2008, MCKINSEY Q, P1
+   Wasiuzzaman S, 2015, REV ACCOUNT FINANC, V14, P324, DOI 10.1108/RAF-07-2014-0075
+   Yunos R, 2011, THESIS, P1
+   Zainol Z, 2012, J ISLAMIC ACCOUNT BU, V3, P121, DOI 10.1108/17590811211265948
+   Zoubi TA, 2007, MANAG FINANC, V33, P500, DOI 10.1108/03074350710753771
+NR 67
+TC 0
+Z9 0
+U1 3
+U2 4
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1985-2517
+EI 2042-5856
+J9 J FINANC REPORT ACCO
+JI J. Financ. Report Accoount.
+PY 2018
+VL 16
+IS 1
+BP 24
+EP 48
+DI 10.1108/JFRA-03-2015-0044
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA GQ5NQ
+UT WOS:000441732600002
+DA 2019-12-28
+ER
+
+PT J
+AU Low, RKY
+AF Low, Rand Kwong Yew
+TI Vine copulas: modelling systemic risk and enhancing higher-moment
+   portfolio optimisation
+SO ACCOUNTING AND FINANCE
+LA English
+DT Article
+DE portfolio management; behavioural finance; vine copula; Clayton copula;
+   asymmetric dependence
+ID FULL-SCALE OPTIMIZATION; STOCK INDEX FUTURES; MEAN-VARIANCE; FUND
+   PERFORMANCE; LOSS AVERSION; RETURNS; EQUITY; DEPENDENCE;
+   DIVERSIFICATION; CONSTRUCTION
+AB Asymmetric dependence in equities markets has been shown to have detrimental effects on portfolio diversification as assets within the portfolio exhibit greater correlations during market downturns compared to market upturns. By applying the Clayton canonical vine copula (CVC) to model asymmetric dependence, we produce a measure of systemic risk across a portfolio of assets. In addition, we use the Clayton CVC to produce estimates of expected returns in an application to higher-moment portfolio optimisation and find evidence of an improvement in performance across a range of risk-adjusted return measures and the indices of acceptability.
+C1 [Low, Rand Kwong Yew] Univ Queensland, UQ Business Sch, Brisbane, Qld, Australia.
+RP Low, RKY (reprint author), Univ Queensland, UQ Business Sch, Brisbane, Qld, Australia.
+RI Low, Rand/L-1318-2015
+OI Low, Rand/0000-0002-0290-7840
+FU Australia Awards Endeavour Research FellowshipAustralian
+   GovernmentDepartment of Industry, Innovation and Science; Australian
+   Institute for Business and Economics (AIBE); Accounting & Finance
+   Association of Australia and New Zealand (AFAANZ); UQ Postdoctoral
+   Research Grant entitled 'Portfolio optimization and risk management
+   techniques for financial crises'; Australian Research CouncilAustralian
+   Research Council [DP0770081]
+FX The author is grateful for the advice and feedback received on earlier
+   versions of this manuscript from Nicholas Bollen, Massimiliano Barbi,
+   Kjersti Aas, Stephen Gray, Tom Smith, Timothy Adler, Mark Kritzman,
+   David Turkington, Yuanzhen Li, Cel Kulasekaran and Richard Goozee; as
+   well as anonymous participants at the following presentations: 6th
+   International Accounting & Finance Doctoral Symposium, Universita' id
+   Bologna; Windham Capital Management; State Street Associates; Northport
+   Commodities; Adam Smith School of Economics and Finance (University of
+   Glasgow); and Accounting and Finance Association of Australian and New
+   Zealand (AFAANZ) Conference. The author also acknowledges the
+   computational resources and support of the high-performance computing
+   team within the Research Computing Centre at the University of
+   Queensland. He acknowledges funding from (i) the Australia Awards
+   Endeavour Research Fellowship and (ii) the Australian Institute for
+   Business and Economics (AIBE) in support of Dr Rand K.Y. Low at the
+   Stern School of Business, New York University, and also financial
+   support for this research from the following funding bodies: (i)
+   Accounting & Finance Association of Australia and New Zealand (AFAANZ)
+   2013/2014 research grants, (ii) UQ Postdoctoral Research Grant entitled
+   'Portfolio optimization and risk management techniques for financial
+   crises' and (iii) Australian Research Council Grant (DP0770081).
+CR Aas K, 2009, INSUR MATH ECON, V44, P182, DOI 10.1016/j.insmatheco.2007.02.001
+   Acar EF, 2012, J MULTIVARIATE ANAL, V110, P74, DOI 10.1016/j.jmva.2012.02.001
+   Adler T, 2007, J ASSET MANAG, V7, P302, DOI 10.1057/palgrave.jam.2250042
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   ARDITTI FD, 1971, J FINANC QUANT ANAL, V6, P909, DOI 10.2307/2329910
+   ARDITTI FD, 1975, J FINANC, V30, P797, DOI 10.2307/2326859
+   ARDITTI FD, 1967, J FINANC, V22, P19, DOI 10.2307/2977297
+   Balduzzi P, 1999, J FINANC ECON, V52, P47, DOI 10.1016/S0304-405X(99)00004-5
+   Bedford T, 2002, ANN STAT, V30, P1031
+   BENARTZI S, 1995, Q J ECON, V110, P73, DOI 10.2307/2118511
+   Benson K, 2008, AUST J MANAGE, V32, P445, DOI 10.1177/031289620803200304
+   Benson KL, 2007, AUST J MANAGE, V32, P271, DOI 10.1177/031289620703200206
+   Berkman H, 2005, J BANK FINANC, V29, P565, DOI 10.1016/j.jbankfin.2004.05.019
+   BRANDS S, 2005, ACCOUNT FINANC, V45, P185, DOI DOI 10.1111/J.1467-629X.2004.00130.X
+   Brands S, 2006, ACCOUNT FINANC, V46, P169, DOI 10.1111/j.1467-629X.2006.00163.x
+   Brechmann EC, 2012, CAN J STAT, V40, P68, DOI 10.1002/cjs.10141
+   Brechmann E, 2014, J BANK FINANC, V40, P271, DOI 10.1016/j.jbankfin.2013.11.040
+   Brechmann EC, 2013, STATIST RISK MODEL, V30, P307, DOI 10.1524/strm.2013.2002
+   CHAN LKC, 1993, J FINANC ECON, V33, P173, DOI 10.1016/0304-405X(93)90003-T
+   Cherny A, 2009, REV FINANC STUD, V22, P2571, DOI 10.1093/rfs/hhn081
+   Chiang KCH, 2009, ACCOUNT FINANC, V49, P481, DOI 10.1111/j.1467-629X.2009.00300.x
+   Chua DB, 2009, J PORTFOLIO MANAGE, V36, P26, DOI 10.3905/JPM.2009.36.1.026
+   Cremers J., 2003, TECHNICAL REPORT
+   Czado C, 2012, STAT MODEL, V12, P229, DOI 10.1177/1471082X1101200302
+   DeMiguel V, 2009, REV FINANC STUD, V22, P1915, DOI 10.1093/rfs/hhm075
+   Dissmann J, 2013, COMPUT STAT DATA AN, V59, P52, DOI 10.1016/j.csda.2012.08.010
+   DUECK G, 1990, J COMPUT PHYS, V90, P161, DOI 10.1016/0021-9991(90)90201-B
+   Durand RB, 2010, ACCOUNT FINANC, V50, P281, DOI 10.1111/j.1467-629X.2009.00320.x
+   Eberlein E, 2009, INT J THEOR APPL FIN, V12, P267, DOI 10.1142/S0219024909005282
+   El-Hassan Nadima, 2003, AUSTR J MANAGEMENT, V28, P183
+   Embrechts P., 2013, MODELLING EXTREMAL E, V33
+   Embrechts P., 1999, N AM ACTUARIAL J, V3, P30, DOI DOI 10.1080/10920277.1999.10595797
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Fletcher J, 2011, INT REV FINANC ANAL, V20, P375, DOI 10.1016/j.irfa.2011.07.002
+   Gerrans P, 2015, ACCOUNT FINANC, V55, P165, DOI 10.1111/acfi.12053
+   Gerrans P, 2006, ACCOUNT FINANC, V46, P605, DOI 10.1111/j.1467-629x.2006.00185.x
+   GILLI M, 2008, HDB INFORM TECHNOLOG, P635, DOI DOI 10.1007/978-3-540-49487-4
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Haff IH, 2010, J MULTIVARIATE ANAL, V101, P1296, DOI 10.1016/j.jmva.2009.12.001
+   Hagstromer B, 2008, MANCH SCH, V76, P134, DOI 10.1111/j.1467-9957.2008.01084.x
+   Hagstromer B, 2009, APPL FINANCIAL EC, V19, P1559, DOI DOI 10.1080/09603100903018778
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Harvey CR, 2010, QUANT FINANC, V10, P469, DOI 10.1080/14697681003756877
+   Hatherley A, 2007, ACCOUNT FINANC, V47, P447, DOI 10.1111/j.1467-629x.2007.00219.x
+   Heinen A., 2009, ASYMMETRIC CAPM DEPE
+   Hoffmann AOI, 2017, ACCOUNT FINANC, V57, P759, DOI 10.1111/acfi.12169
+   Holland J.H., 1975, ADAPTATION NATURAL A
+   Hong YM, 2007, REV FINANC STUD, V20, P1547, DOI 10.1093/rfs/hhl037
+   Joe H., 1997, MULTIVARIATE MODELS
+   KAHNEMAN D, 1979, ECONOMETRICA, V47, P263, DOI 10.2307/1914185
+   Keating C., 2002, INTRO OMEGA
+   KIRKPATRICK S, 1983, SCIENCE, V220, P671, DOI 10.1126/science.220.4598.671
+   Konno H., 2005, ESSAYS SURVEYS GLOBA, P195
+   Kritzman M., 2010, FINANC ANAL J, V66, P1
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P3, DOI 10.3905/jpm.2011.37.2.003
+   LEVY H, 1969, J FINANC, V24, P715, DOI 10.1111/j.1540-6261.1969.tb00395.x
+   Litterman Robert B, 2003, MODERN INVESTMENT MA
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Low RKY, 2016, J ECON BUS, V85, P49
+   Low RKY, 2013, J BANK FINANC, V37, P3085, DOI 10.1016/j.jbankfin.2013.02.036
+   Madan DB, 2011, MATH FINANC ECON, V4, P87, DOI 10.1007/s11579-011-0038-1
+   Madan DB, 2010, QUANT FINANC, V10, P607, DOI 10.1080/14697680902878113
+   Meucci A., 2006, RISK ASSET ALLOCATIO
+   Doan MP, 2014, ACCOUNT FINANC, V54, P779, DOI 10.1111/acfi.12022
+   Nelsen R.B., 2006, INTRO COPULAS
+   Nikoloulopoulos AK, 2012, COMPUT STAT DATA AN, V56, P3659, DOI 10.1016/j.csda.2010.07.016
+   Odean T, 1998, J FINANC, V53, P1775, DOI 10.1111/0022-1082.00072
+   Patton A., 2004, J FINANCIAL ECONOMET, V2, P130, DOI DOI 10.1093/JJFINEC/NBH006
+   Pinnuck M, 2004, ACCOUNT FINANC, V44, P97
+   Qiao Z, 2014, ACCOUNT FINANC, V54, P251, DOI 10.1111/j.1467-629X.2012.00508.x
+   SAMUELSON PA, 1970, REV ECON STUD, V37, P537, DOI 10.2307/2296483
+   SCOTT RC, 1980, J FINANC, V35, P915, DOI 10.2307/2327209
+   SORTINO FA, 1991, J PORTFOLIO MANAGE, V17, P27, DOI 10.3905/jpm.1991.409343
+   Storn R, 1997, J GLOBAL OPTIM, V11, P341, DOI 10.1023/A:1008202821328
+   Thaler RH, 1997, Q J ECON, V112, P647, DOI 10.1162/003355397555226
+   TOBIN J, 1957, REV ECON STUD, V25, P65
+   Tu J., 2011, J FINANCIAL EC, V99
+   vonsNeumann J, 1953, THEORY GAMES EC BEHA
+   Wang ZG, 2010, REV FINANC, V14, P409, DOI 10.1093/rof/rfp015
+   Weiss GNF, 2013, J BANK FINANC, V37, P3334, DOI 10.1016/j.jbankfin.2013.05.013
+   Zhang BZ, 2014, PHYSICA A, V416, P112, DOI 10.1016/j.physa.2014.08.043
+NR 82
+TC 7
+Z9 7
+U1 3
+U2 4
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0810-5391
+EI 1467-629X
+J9 ACCOUNT FINANC
+JI Account . Financ.
+PD NOV
+PY 2018
+VL 58
+SU 1
+SI SI
+BP 423
+EP 463
+DI 10.1111/acfi.12274
+PG 41
+WC Business, Finance
+SC Business & Economics
+GA GX5ZG
+UT WOS:000447834600015
+DA 2019-12-28
+ER
+
+PT J
+AU Alekneviciene, V
+   Stareviciute, B
+   Alekneviciute, E
+AF Alekneviciene, Vilija
+   Stareviciute, Birute
+   Alekneviciute, Egle
+TI Evaluation of the efficiency of European Union farms: a risk-adjusted
+   return approach
+SO AGRICULTURAL ECONOMICS-ZEMEDELSKA EKONOMIKA
+LA English
+DT Article
+DE excess return; farm efficiency; Sharpe ratio; systemic risk; total risk;
+   Treynor ratio
+AB The aim of this study was to assess the efficiency of EU member-state farms using a risk-adjusted return approach and to determine the impact of subsidies on the efficiency of EU farms. Farm efficiency was analysed by the member-state and by the type of farming and was based on the calculation of Sharpe and Treynor ratios. Systemic risk was expressed by standard deviation in order to estimate the share of systemic risk in the total risk. The change in Sharpe ratios was assessed to determine the impact of subsidies on EU farm efficiency. The results of the risk-adjusted return analysis reveal that farms in the EU-15 were more efficient than farms in the EU-12 in 2004-2013, possibly due to being more experienced in risk management. Nevertheless, the EU-15 did not undertake a bigger share of systemic risk when compared to the EU-12 farms. The impact of financial support on the efficiency of the EU-12 farms was also not stronger when compared to the EU-15 farms.
+C1 [Alekneviciene, Vilija; Stareviciute, Birute] Aleksandras Stulginskis Univ, Inst Econ Accounting & Finance, Kaunas, Lithuania.
+   [Alekneviciute, Egle] Vytautas Magnus Univ, Dept Finance, Kaunas, Lithuania.
+RP Alekneviciene, V (reprint author), Aleksandras Stulginskis Univ, Inst Econ Accounting & Finance, Kaunas, Lithuania.
+EM vilija.alekneviciene@asu.lt
+OI Alekneviciene, Vilija/0000-0002-6501-8792
+CR Alekneviciene V., 2010, Economics and Rural Development, V6, P7
+   Backus GBC, 1997, NETH J AGR SCI, V45, P307
+   Beukes P. C., 2005, Proceedings of the New Zealand Grassland Association, V67, P103
+   Bowman RG, 2006, J APPL FINANCE, V16, P71
+   Damodaran A., 2001, CORPORATE FINANCE TH
+   Ellahie A., 2014, FIRM FUNDAMENTALS SE
+   Erb CB, 2006, FINANC ANAL J, V62, P69, DOI 10.2469/faj.v62.n2.4084
+   Erwin Wauters E, 2011, EAAE 2011 C CHANG UN
+   Eves C, 2007, J REAL ESTATE PORTFO, V13, P317
+   Eves C, 2010, AUSTRALAS AGRIBUS RE, V18, P85
+   Gomez-Limon JA, 2003, EUR J OPER RES, V151, P569, DOI 10.1016/S0377-2217(02)00625-2
+   Hardaker J. B., 2007, COPING RISK AGR
+   Hardaker J. B., 2005, WORMBOOK, P1
+   HARWOOD J, 1999, 774 USDA
+   Lambert M, 2013, J EMPIR FINANC, V23, P191, DOI 10.1016/j.jempfin.2013.07.001
+   Leblois A, 2013, METEOROL APPL, V20, P1, DOI 10.1002/met.303
+   LUMBY S, 1994, INVESTMENT APPRAISAL
+   Macdonald J. M., 2009, USDA EC RES SERVICE, V43
+   Manfredo M. R., 2003, AM AGR EC ASS ANN M
+   Martins MB, 2007, EUR J OPER RES, V177, P556, DOI 10.1016/j.ejor.2005.06.068
+   Matthews A., 2014, FADN DATA HIGHLIGHTS
+   Neal M., 2005, P ANN AUSTR AGR RES, P1
+   Nydene C, 1999, AM AGR EC ASS ANN M
+   Pannell DJ, 2000, AGR ECON-BLACKWELL, V23, P69, DOI 10.1111/j.1574-0862.2000.tb00084.x
+   Roe J. D., 2005, VALUE ADDED WHAT HOR
+   Rubio G., 1993, INVESTIGACIONES EC, VXVII
+   Sipilainen T., 2007, EFFICIENCY AGR PRODU
+   Suryani A, 2015, PROCD SOC BEHV, V211, P634, DOI 10.1016/j.sbspro.2015.11.087
+   Vedenov DV, 2004, J AGR RESOUR ECON, V29, P387
+   WILKENS K, 2001, J ALTERNATIVE INVEST, V4, P9
+   Zgajnar J, 2010, BULG J AGRIC SCI, V16, P500
+NR 31
+TC 3
+Z9 3
+U1 0
+U2 14
+PU CZECH ACADEMY AGRICULTURAL SCIENCES
+PI PRAGUE
+PA TESNOV 17, PRAGUE, 117 05, CZECH REPUBLIC
+SN 0139-570X
+EI 1805-9295
+J9 AGR ECON-CZECH
+JI Agric. Econ.
+PY 2018
+VL 64
+IS 6
+BP 241
+EP 255
+DI 10.17221/272/2016-AGRICECON
+PG 15
+WC Agricultural Economics & Policy; Economics
+SC Agriculture; Business & Economics
+GA GJ7MO
+UT WOS:000435571400001
+OA DOAJ Gold
+DA 2019-12-28
+ER

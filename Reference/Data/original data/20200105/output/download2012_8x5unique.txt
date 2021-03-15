@@ -1,0 +1,420 @@
+
+PT J
+AU Hertzel, MG
+   Officer, MS
+AF Hertzel, Michael G.
+   Officer, Micah S.
+TI Industry contagion in loan spreads
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Bankruptcy; Financial distress; Contagion; Loan spreads
+ID BANK LOANS; FINANCIAL CONTRACTS; CREDIT CONTAGION; RISK; BANKRUPTCY;
+   DEBT; COVENANTS; TAKEOVER; DEFAULT; BONDS
+AB Spreads on new and renegotiated corporate loans are significantly higher when the loan originates (or is renegotiated) in the two years surrounding bankruptcy filings by industry rivals. This industry-specific contagion is particularly severe in the middle of industry bankruptcy waves. Furthermore, this contagion in loan spreads is mitigated in concentrated industries, consistent with the hypothesis and evidence in Lang and Stulz (1992) that bankruptcy filings in concentrated industries can have positive consequences for rivals (increased market share and/or power). There is also some evidence that contagion affects non-spread terms in loan contracts. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [Officer, Micah S.] Loyola Marymount Univ, Coll Business Adm, Hilton Ctr Business, Los Angeles, CA 90045 USA.
+   [Hertzel, Michael G.] Arizona State Univ, WP Carey Sch Business, Tempe, AZ 85287 USA.
+RP Officer, MS (reprint author), Loyola Marymount Univ, Coll Business Adm, Hilton Ctr Business, 1 LMU Dr, Los Angeles, CA 90045 USA.
+EM micah.officer@lmu.edu
+CR ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   Asquith P, 2005, J ACCOUNT ECON, V40, P101, DOI 10.1016/j.jacceco.2004.09.005
+   Bae KH, 2009, J FINANC, V64, P823, DOI 10.1111/j.1540-6261.2009.01450.x
+   Benmelech E, 2005, Q J ECON, V120, P1121, DOI 10.1162/003355305774268200
+   Benmelech E, 2011, J FINANC, V66, P337, DOI 10.1111/j.1540-6261.2010.01636.x
+   BERGER AN, 1990, J MONETARY ECON, V25, P21, DOI 10.1016/0304-3932(90)90042-3
+   Bharath ST, 2008, REV FINANC STUD, V21, P1339, DOI 10.1093/rfs/hhn044
+   BOOTH JR, 1992, J FINANC ECON, V31, P25, DOI 10.1016/0304-405X(92)90010-U
+   Bradley M., 2004, STRUCTURE PRIC UNPUB
+   Brav A, 2002, REV FINANC STUD, V15, P575, DOI 10.1093/rfs/15.2.575
+   Carey M, 1998, J FINANC, V53, P845, DOI 10.1111/0022-1082.00037
+   Carey M., 1999, CREDIT FLOW RI UNPUB
+   CROSBIE P, 2003, MODELING DEFAU UNPUB
+   Davydenko SA, 2007, J FINANC, V62, P2633, DOI 10.1111/j.1540-6261.2007.01288.x
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   Graham JR, 2008, J FINANC ECON, V89, P44, DOI 10.1016/j.jfineco.2007.08.005
+   Harford J, 2005, J FINANC ECON, V77, P529, DOI 10.1016/j.jfineco.2004.05.004
+   Hertzel MG, 2008, J FINANC ECON, V87, P374, DOI 10.1016/j.jfineco.2007.01.005
+   Hubbard RG, 2002, J BUS, V75, P559, DOI 10.1086/341635
+   Ivashina V, 2009, J FINANC ECON, V92, P300, DOI 10.1016/j.jfineco.2008.06.003
+   Jimenez G, 2006, J FINANC ECON, V81, P255, DOI 10.1016/j.jfineco.2005.06.003
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   LANG LHP, 1992, J FINANC ECON, V32, P45, DOI 10.1016/0304-405X(92)90024-R
+   Massa M, 2007, J FINANC ECON, V84, P624, DOI 10.1016/j.jfineco.2006.02.006
+   MATSUSAKA JG, 1993, RAND J ECON, V24, P357, DOI 10.2307/2555963
+   MELNIK A, 1986, J FINANC, V41, P425, DOI 10.2307/2328445
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Mitchell ML, 1996, J FINANC ECON, V41, P193, DOI 10.1016/0304-405X(95)00860-H
+   Qian J, 2007, J FINANC, V62, P2803, DOI 10.1111/j.1540-6261.2007.01293.x
+   RAJAN R, 1995, J FINANC, V50, P1113, DOI 10.2307/2329346
+   Roberts MR, 2009, J FINANC ECON, V93, P159, DOI 10.1016/j.jfineco.2008.08.005
+   Santos JAC, 2008, J FINANC, V63, P1315, DOI 10.1111/j.1540-6261.2008.01359.x
+   SMITH CW, 1979, J FINANC ECON, V7, P117, DOI 10.1016/0304-405X(79)90011-4
+   Strahan P., 1999, BORROWER RISK UNPUB
+   Sufi A, 2007, J FINANC, V62, P629, DOI 10.1111/j.1540-6261.2007.01219.x
+NR 36
+TC 25
+Z9 26
+U1 1
+U2 26
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD MAR
+PY 2012
+VL 103
+IS 3
+BP 493
+EP 506
+DI 10.1016/j.jfineco.2011.10.012
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA 878HP
+UT WOS:000299246400004
+DA 2019-12-27
+ER
+
+PT J
+AU Engle, RF
+   Gallo, GM
+   Velucchi, M
+AF Engle, Robert F.
+   Gallo, Giampiero M.
+   Velucchi, Margherita
+TI VOLATILITY SPILLOVERS IN EAST ASIAN FINANCIAL MARKETS: A MEM-BASED
+   APPROACH
+SO REVIEW OF ECONOMICS AND STATISTICS
+LA English
+DT Article
+ID CURRENCY CRISES; REALIZED VOLATILITY; EQUITY MARKETS; CONTAGION; MODELS;
+   RETURN
+AB We model the interrelations of equity market volatility in eight East Asian countries before, during, and after the Asian currency crisis. Using a new class of asymmetric volatility multiplicative error models based on the daily range, we find that dynamic propagation of volatility shocks occurs through a network of interdependencies, and shocks originating in Hong Kong may be amplified in their transmission throughout the system, posing greater risks to the region than shocks originating elsewhere. Although this partly explains the severity of the currency crisis, we also find evidence that parameters shifted, making the system more unstable during the crisis.
+C1 [Engle, Robert F.] NYU, Stern Sch Business, New York, NY 10003 USA.
+   [Gallo, Giampiero M.; Velucchi, Margherita] Univ Florence, I-50121 Florence, Italy.
+RP Engle, RF (reprint author), NYU, Stern Sch Business, New York, NY 10003 USA.
+RI Gallo, Giampiero/X-6025-2019
+OI GALLO, GIAMPIERO MARIA/0000-0003-3556-0238; VELUCCHI,
+   Margherita/0000-0002-1841-0484
+CR Alizadeh S, 2002, J FINANC, V57, P1047, DOI 10.1111/1540-6261.00454
+   Andersen TG, 2003, ECONOMETRICA, V71, P579, DOI 10.1111/1468-0262.00418
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   Barndorff-Nielsen OE, 2002, J ROY STAT SOC B, V64, P253, DOI 10.1111/1467-9868.00336
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Brownlees CT, 2010, J FINANC ECONOMET, V8, P29, DOI 10.1093/jjfinec/nbp009
+   Caramazza F, 2004, J INT MONEY FINANC, V23, P51, DOI 10.1016/j.jimonfin.2003.10.001
+   Cipollini F., 2006, W12690 NBER
+   Classens S, 2001, INT FINANCIAL CONTAG
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Dungey M., 2005, IDENTIFYING INT FINA
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   Edwards S, 2003, REV ECON STAT, V85, P328, DOI 10.1162/003465303765299855
+   Edwards S, 2001, J DEV ECON, V66, P505, DOI 10.1016/S0304-3878(01)00172-9
+   Eichengreen B, 1996, SCAND J ECON, V98, P463, DOI 10.2307/3440879
+   Engle R, 2002, J APPL ECONOM, V17, P425, DOI 10.1002/jae.683
+   Engle RF, 2006, J ECONOMETRICS, V131, P3, DOI 10.1016/j.jeconom.2005.01.018
+   ENGLE RF, 1990, ECONOMETRICA, V58, P525, DOI 10.2307/2938189
+   Forbes K. J., 2001, INT FINANCIAL CONTAG, P43, DOI DOI 10.1007/978-1-4757-3314-3_
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Forbes KJ, 2004, J INT ECON, V63, P59, DOI 10.1016/S0022-1996(03)00044-8
+   Fratzscher M, 2003, INT J FINANC ECON, V8, P109, DOI 10.1002/ijfe.203
+   GALLANT AR, 1993, ECONOMETRICA, V61, P871, DOI 10.2307/2951766
+   Gallo G. M., 2007, APPL FINANCIAL EC, V17, P659
+   GALLO GM, 2001, AUST ECON PAP, V40, P567
+   Hill H, 2007, ASIAN ECON POLICY R, V2, P123, DOI 10.1111/j.1748-3131.2007.00058.x
+   IN F, 2001, INT REV FINANC ANAL, V10, P87
+   Ito T, 2007, ASIAN ECON POLICY R, V2, P1, DOI 10.1111/j.1748-3131.2007.00045.x
+   Ito T, 2007, ASIAN ECON POLICY R, V2, P16, DOI 10.1111/j.1748-3131.2007.00046.x
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kaminsky Graciela, 1999, FED INT FINANCE DISC
+   Kaminsky Graciela, 1998, IMF STAFF PAPER, P11
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Lafuente J. A., 2004, GLOBAL FINANCE J, V15, P125, DOI DOI 10.1016/J.GFJ.2004.02.002
+   PARKINSON M, 1980, J BUS, V53, P61, DOI 10.1086/296071
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   soglu Celia Pazarba, 1998, IMF WORKING PAPERS
+   Van Rijckehem C, 2001, J INT ECON, V54, P293, DOI 10.1016/S0022-1996(00)00095-7
+NR 38
+TC 31
+Z9 32
+U1 3
+U2 27
+PU MIT PRESS
+PI CAMBRIDGE
+PA 55 HAYWARD STREET, CAMBRIDGE, MA 02142 USA
+SN 0034-6535
+J9 REV ECON STAT
+JI Rev. Econ. Stat.
+PD FEB
+PY 2012
+VL 94
+IS 1
+BP 222
+EP 233
+DI 10.1162/REST_a_00167
+PG 12
+WC Economics; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematical Methods In Social Sciences
+GA 892YD
+UT WOS:000300320600015
+DA 2019-12-27
+ER
+
+PT J
+AU Battiston, S
+   Gatti, DD
+   Gallegati, M
+   Greenwald, B
+   Stiglitz, JE
+AF Battiston, Stefano
+   Gatti, Domenico Delli
+   Gallegati, Mauro
+   Greenwald, Bruce
+   Stiglitz, Joseph E.
+TI Default cascades: When does risk diversification increase stability?
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Systemic risk; Network models; Contagion; Financial crisis
+ID SYSTEMIC RISK; LIQUIDITY
+AB We explore the dynamics of default cascades in a network of credit interlink-ages in which each agent is at the same time a borrower and a lender. When some counterparties of an agent default, the loss she experiences amounts to her total exposure to those counterparties. A possible conjecture in this context is that individual risk diversification across more numerous counterparties should make also systemic defaults less likely. We show that this view is not always true. In particular, the diversification of credit risk across many borrowers has ambiguous effects on systemic risk in the presence of mechanisms of loss amplifications such as in the presence of potential runs among the short-term lenders of the agents in the network. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Battiston, Stefano] ETH, Zurich, Switzerland.
+   [Gatti, Domenico Delli] Catholic Univ, Milan, Italy.
+   [Gallegati, Mauro] Polit Univ Marche, Ancona, Italy.
+   [Greenwald, Bruce; Stiglitz, Joseph E.] Columbia Univ, New York, NY USA.
+RP Battiston, S (reprint author), ETH, Zurich, Switzerland.
+EM sbattiston@ethz.ch
+RI GALLEGATI, MAURO/A-4091-2016; battiston, stefano/I-2624-2012
+OI battiston, stefano/0000-0002-0051-973X; Delli Gatti,
+   Domenico/0000-0001-8819-090X
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2010, EC WORKING PAPERS, VECO2010/26
+   Amini H., 2010, STRESS TESTING RESIL
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Battiston S., 2009, W15611 NBER
+   Boss M, 2004, LECT NOTES COMPUT SC, V3038, P1070
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Callaway DS, 2000, PHYS REV LETT, V85, P5468, DOI 10.1103/PhysRevLett.85.5468
+   Castiglionesi F., 2010, SSRN WORKING PAPER S
+   Cont R., 2010, NETWORK STRUCTURE SY
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Frey R., 2003, J RISK, V6, P59, DOI DOI 10.21314/J0R.2003.089)
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P., 2010, BANK ENGLAND WORKING
+   HALDANE A, 2009, WHY BANKS FAILED STR
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Kleinberg J, 2007, ALGORITHMIC GAME THEORY, P613
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Stiglitz J. E., 2010, RISK GLOBAL EC ARCHI
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 25
+TC 91
+Z9 96
+U1 3
+U2 66
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD SEP
+PY 2012
+VL 8
+IS 3
+BP 138
+EP 149
+DI 10.1016/j.jfs.2012.01.002
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA 968BE
+UT WOS:000305951200002
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Sheu, HJ
+   Cheng, CL
+AF Sheu, Her-Jiun
+   Cheng, Chien-Ling
+TI SYSTEMIC RISK IN TAIWAN STOCK MARKET
+SO JOURNAL OF BUSINESS ECONOMICS AND MANAGEMENT
+LA English
+DT Article
+DE value at risk; Conditional VaR; systemic risk; idiosyncratic risk;
+   financial crisis; spill over; systemic importance
+ID EQUITY RETURNS; VOLATILITY; REGRESSION; MODELS
+AB Recent financial crises resulted from systemic risk caused by idiosyncratic distress. In this research, taking Taiwan stock market as an example and collecting data from 2000 to 2010 which contained the 2001 dot-corn bubble and the 2007-2009 financial crisis, we adopt the CoVaR model to empirically explore the impact of sector-specific idiosyncratic risk on the systemic risk of the system and attempt to investigate the links between financial crises, systemic risk and the idiosyncratic risk of a sector-specific anomaly. The result showed sector-specific marginal CoVaR, i.e., Delta CoVaR, perfectly explained Taiwan stock market disturbance during the 2001 dot-corn bubble and 2007-2008 financial crisis. Thus, by identifying the larger Delta CoVaR sectors, i.e. the systemic importance sectors, and by exploring the risk indicators, independent variables, of these systemic importance sectors, investors could practically employ the sector-specific Delta CoVaR measure to deepen the systemic risk scrutiny from a macro into a micro prudential perspective.
+C1 [Cheng, Chien-Ling] Natl Chiao Tung Univ, Inst Business & Management, Taipei 100, Taiwan.
+   [Sheu, Her-Jiun] Natl Chi Nan Univ, Dept Banking & Finance, Puli 54561, Nantou County, Taiwan.
+RP Cheng, CL (reprint author), Natl Chiao Tung Univ, Inst Business & Management, 118,Chung Hsiao W Rd,Sec 1, Taipei 100, Taiwan.
+EM hjsheu@ncnu.edu.tw; marscheng@scsb.com.tw
+CR Acharya V., 2010, QUANTIFYING IN PRESS
+   Acharya V, 2009, TECHNICAL REPORT
+   Adrian T, 2008, COVAR
+   Adrian T, 2010, ANNU REV ECON, V2, P603, DOI 10.1146/annurev.economics.102308.124420
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Aktan B, 2010, J BUS ECON MANAG, V11, P511, DOI 10.3846/jbem.2010.25
+   Allen F., 2009, FINANCIAL CRISES THE
+   Ang A, 2006, J FINANC, V61, P259, DOI 10.1111/j.1540-6261.2006.00836.x
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Bekaert G, 1997, J FINANC ECON, V43, P29, DOI 10.1016/S0304-405X(96)00889-6
+   Birz G., 2008, EFFECT MACROECONOMIC
+   Boyson N., 2008, HEDGE FUND CONTAGION
+   Brady N. F, 1988, REPORT PRESIDENTIAL
+   Brunnermeier M, 2009, GENEVA REPORTS WORLD, V11
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   Cenesizoglu T, 2008, IS DISTRIBUTION STOC
+   Chan-Lau J. A., 2008, DEFAULT RISK CODEPEN
+   Chemozhukov V., 2001, EMPIR ECON, V26, P271
+   Chen M. Y., 2002, REV FINANCIAL RISK M, V1, P1
+   CHEN NF, 1986, J BUS, V59, P383, DOI 10.1086/296344
+   Chernozhukov V., 2008, NEW PALGRAVE DICT EC
+   Coroneo L., 2008, INTRADAILY SEASONALI
+   De Nicolo G, 2002, J BANK FINANC, V26, P861, DOI 10.1016/S0378-4266(02)00211-X
+   Embrechts P., 2000, DERIVATIVES USE TRAD, V6, P449
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   Festic M, 2009, J BUS ECON MANAG, V10, P219, DOI 10.3846/1611-1699.2009.10.219-232
+   Fong T. P. W., 2009, MEASURING INTERDEPEN
+   Fu FJ, 2009, J FINANC ECON, V91, P24, DOI 10.1016/j.jfineco.2008.02.003
+   Gaglianone WP, 2011, J BUS ECON STAT, V29, P150, DOI 10.1198/jbes.2010.07318
+   Glasserman P, 2005, J COMPUT FINANC, V9, P1
+   Goetzmann WN, 2005, J BUS, V78, P1, DOI 10.1086/426518
+   Gokcan S, 2000, J FORECASTING, V19, P499, DOI 10.1002/1099-131X(200011)19:6<499::AID-FOR745>3.0.CO;2-P
+   HALLERBACH W, 2002, J RISK, V5, P1
+   Hawkesby C., 2007, J FINANCIAL STABILIT, V2, P391
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Jin YB, 2006, J FINANC, V61, P893, DOI 10.1111/j.1540-6261.2006.00858.x
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   Junior L. S., 2011, CORRELATION FINANCIA
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koyluoglu H. U., 2002, RISK, V5, P90
+   Kurth A, 2003, RISK, P84
+   Li B., 2010, J FINANCE EC, V51, P133
+   Ludvigson SC, 2007, J FINANC ECON, V83, P171, DOI 10.1016/j.jfineco.2005.12.002
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Martens M, 2001, J BANK FINANC, V25, P1805, DOI 10.1016/S0378-4266(00)00159-X
+   Michelfelder RA, 2005, MANAG FINANC, V31, P66, DOI 10.1108/03074350510769505
+   Ou S., 2010, 2010 3 INT C BUS INT
+   Petkova R, 2006, J FINANC, V61, P581, DOI 10.1111/j.1540-6261.2006.00849.x
+   Praschnik J., 2001, RISK, P25
+   Rubin R., 1999, HEDGE FUNDS LEVERAGE
+   Schaumburg J., 2010, PREDICTING EXTREME V
+   Scheicher M, 2001, INT J FINANC ECON, V6, P27, DOI 10.1002/ijfe.141
+   Sheu H. J., 2011, AFRICA J BUSINESS MA, V5, P5222
+   Suhobokov A, 2007, J BUS ECON MANAG, V8, P165, DOI 10.3846/16111699.2007.9636165
+   Tarashev N., 2010, ATTRIBUTING SYSTEMIC
+   Vassalou M, 2003, J FINANC ECON, V68, P47, DOI 10.1016/S0304-405X(02)00248-9
+   Wong A., 2010, ANAL INTERCONNECTIVI
+   Worthington A, 2004, INT J FINANC ECON, V9, P71, DOI 10.1002/ijfe.222
+NR 59
+TC 7
+Z9 7
+U1 0
+U2 27
+PU VILNIUS GEDIMINAS TECH UNIV
+PI VILNIUS
+PA SAULETEKIO AL 11, VILNIUS, LT-10223, LITHUANIA
+SN 1611-1699
+J9 J BUS ECON MANAG
+JI J. Bus. Econ. Manag.
+PD NOV
+PY 2012
+VL 13
+IS 5
+BP 895
+EP 914
+DI 10.3846/16111699.2011.620168
+PG 20
+WC Business; Economics
+SC Business & Economics
+GA 019JP
+UT WOS:000309736100005
+OA Other Gold, Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Alter, A
+   Schuler, YS
+AF Alter, Adrian
+   Schueler, Yves S.
+TI Credit spread interdependencies of European states and banks during the
+   financial crisis
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Private-to-public risk transfer; Bank bailout; Generalized impulse
+   responses
+AB We investigate the interdependence of the default risk of several Eurozone countries (France, Germany, Italy, Ireland, the Netherlands, Portugal, and Spain) and their domestic banks during the period between June 2007 and May 2010, using daily credit default swaps (CDS). Bank bailout programs changed the composition of both banks' and sovereign balance sheets and, moreover, affected the linkage between the default risk of governments and their local banks. Our main findings suggest that in the period before bank bailouts the contagion disperses from bank credit spreads into the sovereign CDS market. After bailouts, a financial sector shock affects sovereign CDS spreads more strongly in the short run. However, the impact becomes insignificant in the long term. Furthermore, government CDS spreads become an important determinant of banks' CDS series. The interdependence of government and bank credit risk is heterogeneous across countries, but homogeneous within the same country. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Alter, Adrian; Schueler, Yves S.] Univ Constance, Dept Econ, D-78457 Constance, Germany.
+RP Alter, A (reprint author), Univ Constance, Dept Econ, Box D 147, D-78457 Constance, Germany.
+EM adrian.alter@uni-konstanz.de; yves.stephan.schueler@uni-konstanz.de
+RI Alter, Adrian/V-3875-2019
+OI Alter, Adrian/0000-0003-4752-4808
+CR Acharya V., 2011, NBER WORKING PAPER S, V17136
+   Attinasi M, 2009, 1131 ECB
+   Berndt A, 2010, REV FINANC, V14, P189, DOI 10.1093/rof/rfq004
+   BIS, 2008, Q REV
+   BIS, 2009, 79 BIS
+   BIS, 2011, IMP SOV CRED RISK BA, V43
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   Demirguc-Kunt A., 2010, CEPR DISCUSSION PAPE
+   Dieckmann S., 2011, REV FINANC, P1
+   Dolado J.J., 1996, ECONOMET REV, V15, P386
+   Dotz N., 2010, 11 DTSCH BUND
+   Ejsing J, 2011, ECON LETT, V110, P28, DOI 10.1016/j.econlet.2010.10.001
+   Fontana A., 2010, 1271 ECB
+   Forte S, 2009, J BANK FINANC, V33, P2013, DOI 10.1016/j.jbankfin.2009.04.015
+   Gerlach S., 2010, 09 DTSCH BUND
+   Goncalves S, 2004, J ECONOMETRICS, V123, P89, DOI 10.1016/j.jeconom.2003.10.030
+   Gray D.F., 2008, NBER WORKING PAPERS
+   Gray DE, 2009, ANNU REV FINANC ECON, V1, P117, DOI 10.1146/annurev.financial.050808.114316
+   Hansen P., 1998, WORKBOOK COINTEGRATI
+   Hull J, 2004, J BANK FINANC, V28, P2789, DOI 10.1016/j.jbankfin.2004.06.010
+   IMF (International Montetary Fund), 2010, GLOB FIN STAB REP SO
+   Johansen S., 1999, ECON J, V2, P306, DOI DOI 10.1111/1368-423X.00035
+   Lutkepohl H., 2007, NEW INTRO MULTIPLE T
+   MERTON RC, 1973, BELL J ECON, V4, P141, DOI 10.2307/3003143
+   Norden L, 2004, J BANK FINANC, V28, P2813, DOI 10.1016/j.jbankfin.2004.06.011
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Schweikhard F., 2009, IMPACT GOVT INTERVEN
+   Stolz S.M., 2010, 13 DTSCH BUND 1
+NR 29
+TC 108
+Z9 108
+U1 0
+U2 48
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD DEC
+PY 2012
+VL 36
+IS 12
+BP 3444
+EP 3468
+DI 10.1016/j.jbankfin.2012.08.002
+PG 25
+WC Business, Finance; Economics
+SC Business & Economics
+GA 027ZZ
+UT WOS:000310393900024
+DA 2019-12-27
+ER

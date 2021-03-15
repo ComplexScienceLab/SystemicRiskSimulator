@@ -1,0 +1,489 @@
+
+PT J
+AU Longinidis, P
+   Georgiadis, MC
+AF Longinidis, Pantelis
+   Georgiadis, Michael C.
+TI Managing the trade-offs between financial performance and credit
+   solvency in the optimal design of supply chain networks under economic
+   uncertainty
+SO COMPUTERS & CHEMICAL ENGINEERING
+LA English
+DT Article
+DE Supply chain network design; Economic uncertainty; Financial
+   performance; Credit solvency; Economic value added (EVA (TM)); Altman's
+   Z-score; Weighted average cost of capital (WACC)
+ID STOCHASTIC-PROGRAMMING APPROACH; MULTIOBJECTIVE OPTIMIZATION;
+   MANAGEMENT; IMPACT; MODEL; DECISIONS; LOCATION; REDESIGN; DEMANDS; FUZZY
+AB Inherent uncertainties and risks in the economic environment are diffused to all vital operations of a supply chain network (SCN). However, the great impact of this contagion is on the financial operation due to its interdependence with financial markets and business conditions. Economic uncertainty poses uncertainty in the financial status of SCNs and this in turns leads to sustainability and growth risks. Financial performance and credit solvency are two essential pillars of financial status capable of providing the necessary capitals to a SCN. As each of these pillars focuses on a different aspect of investment attractiveness, underlined trade-offs exist, under various economic conditions, and challenge further investigation. This paper aims to enrich the SCN design literature by introducing a mathematical model that integrates financial performance and credit solvency modelling with SCN design decisions under economic uncertainty. The proposed multi-objective mixed integer non linear programming (moMINLP) model enchases financial performance through economic value added (EVA (TM)) and credit solvency through a valid credit scoring model (Altman's Z-score). The applicability of the model is illustrated by using a real case study. The model could be used as an effective strategic decision tool by managers responsible for strategic SCN design. (c) 2012 Elsevier Ltd. All rights reserved.
+C1 [Longinidis, Pantelis; Georgiadis, Michael C.] Univ Western Macedonia, Dept Engn Informat & Telecommun, Kozani 50100, Greece.
+RP Georgiadis, MC (reprint author), Univ Western Macedonia, Dept Engn Informat & Telecommun, Karamanli & Lygeris St, Kozani 50100, Greece.
+EM logggas@gmail.com; mgeorg@otenet.gr
+RI Longinidis, Pantelis/F-7953-2013; Georgiadis, Michael C/A-4472-2013
+OI Georgiadis, Michael C/0000-0002-2016-5131; Longinidis,
+   Pantelis/0000-0003-2227-243X
+FU Alexander S. Onassis Public Benefit Foundation [G ZD 037-2/2011-2012];
+   European Union (European Social Fund - ESF)European Union (EU)European
+   Social Fund (ESF); Greek national funds through the Operational Program
+   "Education and Lifelong Learning" of the National Strategic Reference
+   Framework (NSRF) - Research Funding Program: Thales. Investing in
+   knowledge society through the European Social Fund
+FX Pantelis Longinidis gratefully acknowledges financial support from the
+   "Alexander S. Onassis Public Benefit Foundation" under the fellowship
+   code G ZD 037-2/2011-2012. This research has been co-financed by the
+   European Union (European Social Fund - ESF) and Greek national funds
+   through the Operational Program "Education and Lifelong Learning" of the
+   National Strategic Reference Framework (NSRF) - Research Funding
+   Program: Thales. Investing in knowledge society through the European
+   Social Fund.
+CR Al-Othman WBE, 2008, EUR J OPER RES, V189, P822, DOI 10.1016/j.ejor.2006.06.081
+   Altman E.I., 2006, CORPORATE FINANCIAL
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   Azaron A, 2008, INT J PROD ECON, V116, P129, DOI 10.1016/j.ijpe.2008.08.002
+   Bidhandi HM, 2011, APPL MATH MODEL, V35, P2618, DOI 10.1016/j.apm.2010.11.042
+   Bidhandi HM, 2009, EUR J OPER RES, V198, P121, DOI 10.1016/j.ejor.2008.07.034
+   CARMICHAEL DG, 1980, INT J NUMER METH ENG, V15, P925, DOI 10.1002/nme.1620150610
+   Chen CL, 2007, J CHIN INST CHEM ENG, V38, P393, DOI 10.1016/j.jcice.2007.08.001
+   Chen CL, 2004, COMPUT CHEM ENG, V28, P1131, DOI 10.1016/j.compchemeng.2003.09.014
+   Chen IJ, 2004, J OPER MANAG, V22, P505, DOI 10.1016/j.jom.2004.06.002
+   Corsano G, 2011, COMPUT CHEM ENG, V35, P149, DOI 10.1016/j.compchemeng.2010.06.008
+   Georgiadis MC, 2011, OMEGA-INT J MANAGE S, V39, P254, DOI 10.1016/j.omega.2010.07.002
+   Salema MIG, 2007, EUR J OPER RES, V179, P1063, DOI 10.1016/j.ejor.2005.05.032
+   Salema MIG, 2010, EUR J OPER RES, V203, P336, DOI 10.1016/j.ejor.2009.08.002
+   Salema MIG, 2009, OR SPECTRUM, V31, P573, DOI 10.1007/s00291-008-0160-5
+   Guillen G, 2005, CHEM ENG SCI, V60, P1535, DOI 10.1016/j.ces.2004.10.023
+   Guillen-Gosalbez G, 2009, AICHE J, V55, P99, DOI 10.1002/aic.11662
+   Gumus AT, 2009, EXPERT SYST APPL, V36, P12570, DOI 10.1016/j.eswa.2009.05.034
+   Gupta S, 2011, EUR J OPER RES, V211, P47, DOI 10.1016/j.ejor.2010.11.005
+   HAIMES YY, 1971, IEEE T SYST MAN CYB, VSMC1, P296
+   Hammami R, 2008, INT J PROD ECON, V113, P641, DOI 10.1016/j.ijpe.2007.10.016
+   Harrison TP, 2001, INFORM SYST FRONT, V3, P413, DOI 10.1023/A:1012820719986
+   Hofmann E, 2009, PROD PLAN CONTROL, V20, P68, DOI 10.1080/09537280802685272
+   Javid AA, 2010, TRANSPORT RES E-LOG, V46, P582, DOI 10.1016/j.tre.2009.06.005
+   Kim J, 2011, COMPUT CHEM ENG, V35, P1738, DOI 10.1016/j.compchemeng.2011.02.008
+   Kleiman R., 1999, J APPL CORPORATE FIN, V12, P80
+   Klibi W, 2010, EUR J OPER RES, V203, P283, DOI 10.1016/j.ejor.2009.06.011
+   Lainez JM, 2007, IND ENG CHEM RES, V46, P7739, DOI 10.1021/ie070181e
+   Lee JH, 2010, INT J PROD RES, V48, P3957, DOI 10.1080/00207540902922851
+   Li SH, 2006, OMEGA-INT J MANAGE S, V34, P107, DOI 10.1016/j.omega.2004.08.002
+   Liu SS, 2013, OMEGA-INT J MANAGE S, V41, P369, DOI 10.1016/j.omega.2012.03.007
+   Liu ZG, 2012, INT J PROD ECON, V137, P55, DOI 10.1016/j.ijpe.2012.01.012
+   Longinidis P, 2011, INT J PROD ECON, V129, P262, DOI 10.1016/j.ijpe.2010.10.018
+   LOVATA LM, 2002, MANAGEMENT ACCOUNTIN, V13, P215, DOI DOI 10.1006/MARE.2002.0181
+   Melo MT, 2009, EUR J OPER RES, V196, P401, DOI 10.1016/j.ejor.2008.05.007
+   Miettinen K., 1999, NONLINEAR MULTIOBJEC
+   Lainez JM, 2010, COMPUT CHEM ENG, V34, P2107, DOI 10.1016/j.compchemeng.2010.07.018
+   Mula J, 2010, EUR J OPER RES, V204, P377, DOI 10.1016/j.ejor.2009.09.008
+   Myers SC, 2004, FUNDAMENTALS CORPORA
+   Nagurney A, 2010, INT J PROD ECON, V128, P200, DOI 10.1016/j.ijpe.2010.07.020
+   Naraharisetti PK, 2008, COMPUT CHEM ENG, V32, P3153, DOI 10.1016/j.compchemeng.2008.05.008
+   Nickel S, 2012, OMEGA-INT J MANAGE S, V40, P511, DOI 10.1016/j.omega.2011.09.006
+   Ogier T., 2004, REAL COST CAPITAL BU
+   Pan F, 2010, COMPUT OPER RES, V37, P668, DOI 10.1016/j.cor.2009.06.017
+   Papageorgiou LG, 2009, COMPUT CHEM ENG, V33, P1931, DOI 10.1016/j.compchemeng.2009.06.014
+   Park S, 2010, TRANSPORT RES E-LOG, V46, P563, DOI 10.1016/j.tre.2009.12.004
+   Pishvaee MS, 2011, APPL MATH MODEL, V35, P637, DOI 10.1016/j.apm.2010.07.013
+   Puigjaner L, 2008, COMPUT CHEM ENG, V32, P2582, DOI 10.1016/j.compchemeng.2007.10.003
+   Puigjaner L, 2009, IND ENG CHEM RES, V48, P9556, DOI 10.1021/ie801973n
+   Qi L, 2007, NAV RES LOG, V54, P829, DOI 10.1002/nav.20255
+   Romeijn HE, 2007, EUR J OPER RES, V178, P449, DOI 10.1016/j.ejor.2006.02.016
+   Rosenthal R. E., 2008, GAMS USERS GUIDE
+   ROSENTHAL RE, 1985, DECISION SCI, V16, P133, DOI 10.1111/j.1540-5915.1985.tb01479.x
+   Ross S. A., 2006, CORPORATE FINANCE FU
+   Sabri EH, 2000, OMEGA-INT J MANAGE S, V28, P581, DOI 10.1016/S0305-0483(99)00080-8
+   Santoso T, 2005, EUR J OPER RES, V167, P96, DOI 10.1016/j.ejor.2004.01.046
+   Shapiro JF, 2004, COMPUT CHEM ENG, V28, P855, DOI 10.1016/j.compchemeng.2003.09.013
+   Stewart III G B, 1994, J APPL CORPORATE FIN, V7, P71, DOI DOI 10.1111/J.1745
+   Tabucanon M. T., 1996, MATH PROGRAMMING IND, P487
+   Talluri S, 2002, EUR J OPER RES, V141, P544, DOI 10.1016/S0377-2217(01)00277-6
+   Tan KC, 1999, INT J OPER PROD MAN, V19, P1034, DOI 10.1108/01443579910287064
+   Tracey M, 2005, SUPPLY CHAIN MANAG, V10, P179, DOI 10.1108/13598540510606232
+   Tsiakis P, 2001, IND ENG CHEM RES, V40, P3585, DOI 10.1021/ie0100030
+   Tsiakis P, 2008, INT J PROD ECON, V111, P468, DOI 10.1016/j.ijpe.2007.02.035
+   You FQ, 2008, COMPUT CHEM ENG, V32, P3090, DOI 10.1016/j.compchemeng.2008.05.004
+   You FQ, 2010, AICHE J, V56, P419, DOI 10.1002/aic.12010
+   Young D., 1997, EUROPEAN MANAGEMENT, V15, P335
+   Zitzler E., 2004, METAHEURISTICS MULTI, V535, P3, DOI DOI 10.1007/978-3-642-17144-4_1
+NR 68
+TC 21
+Z9 24
+U1 0
+U2 57
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 0098-1354
+EI 1873-4375
+J9 COMPUT CHEM ENG
+JI Comput. Chem. Eng.
+PD JAN 10
+PY 2013
+VL 48
+BP 264
+EP 279
+DI 10.1016/j.compchemeng.2012.09.019
+PG 16
+WC Computer Science, Interdisciplinary Applications; Engineering, Chemical
+SC Computer Science; Engineering
+GA 048CH
+UT WOS:000311887300024
+DA 2019-12-27
+ER
+
+PT J
+AU Oet, MV
+   Bianco, T
+   Gramlich, D
+   Ong, SJ
+AF Oet, Mikhail V.
+   Bianco, Timothy
+   Gramlich, Dieter
+   Ong, Stephen J.
+TI SAFE: An early warning system for systemic banking risk
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article; Proceedings Paper
+CT 24th Australasian Finance and Banking Conference
+CY DEC, 2011
+CL UNSW, Inst Global Finance, Sydney, AUSTRALIA
+SP UNSW, Sch Banking & Finance, Reserve Bank Australia, Australian Securities Exchange, BlackRock
+HO UNSW, Inst Global Finance
+DE Systemic risk; Early warning system; Financial stress index;
+   Microprudential; Macroprudential; Liquidity feedback
+ID CRISES; LIQUIDITY
+AB This paper builds on existing microprudential and macroprudential early warning systems (EWSs) to develop a new, hybrid class of models for systemic risk that incorporates the structural characteristics of the financial system and a feedback amplification mechanism. The models explain financial stress using both public and proprietary supervisory data from systemically important institutions, regressing institutional imbalances using an optimal lag method. The Systemic Assessment of Financial Environment (SAFE) EWS monitors microprudential information from the largest bank holding companies to anticipate the buildup of macroeconomic stresses in the financial markets. To mitigate inherent uncertainty, SAFE develops a set of medium-term forecasting specifications that gives policymakers enough time to take ex-ante policy action and a set of short-term forecasting specifications for verification and adjustment of supervisory actions. This paper highlights the application of these models to stress testing and policy. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Oet, Mikhail V.; Bianco, Timothy; Ong, Stephen J.] Fed Reserve Bank Cleveland, Cleveland, OH USA.
+   [Oet, Mikhail V.] Case Western Reserve Univ, Cleveland, OH 44106 USA.
+RP Oet, MV (reprint author), Fed Reserve Bank Cleveland, Cleveland, OH USA.
+EM mikhail.v.oet@clev.frb.org; timothy.bianco@clev.frb.org;
+   gramlich@dhbw-heidenheim.de; stephen.ong@clev.frb.org
+CR Adrian T., 2008, 348 FED RES BANK NEW
+   Bernstein J., 2010, SUBSIDY HANDFUL MERR
+   Bianco T., 2012, EC COMMENTARY   0321
+   Bijlsma M., 2010, SYSTEMIC RISK FINANC
+   Blavarg M., 2002, ECON REV, V2, P19
+   Bordo M.D., 2000, 2000005B FED RES BAN
+   Borio C., 2002, BIS Q REV, V7, P43
+   BORIO C, 2002, 114 BANK INT SETTL
+   Borio C., 2009, BIS Q REV, P29
+   Borio C., 2004, 157 BANK INT SETTL
+   BORIO CEV, 1994, BIS EC PAPERS, V40
+   Brave S., 2011, FEDERAL RESERVE BA Q, VQ1, P22
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Carlson M.A., 2012, 201202 FEDS
+   Degryse H., 2004, RES SERIES NATL BANK, V200403
+   Demirguc-Kunt A, 1998, INT MONET FUND S PAP, V45, P81
+   Edison HJ, 2003, INT J FINANC ECON, V8, P11, DOI 10.1002/ijfe.197
+   Federal Reserve Board, 2005, SUP REG STAT ASS BAN
+   Frye J., 2008, 200803 WP FED RES BA
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gaytan A., 2002, 183 CENTR BANK CHIL
+   Gramlich D., 2010, BANKS BANK SYSTEMS, V5, P199
+   Gramlich D., 2012, J FINANC MANAG ANAL, V25, P1
+   Gramlich D, 2011, J RISK FINANC, V12, P270, DOI 10.1108/15265941111158460
+   Group of Ten, 2001, REP CONS FIN SECT
+   Hakkio C.S., 2009, ECON REV, V2, P5
+   Hanschel E., 2005, BIS PAPERS, V22, P431
+   Hatzius J., 2010, NBER WORKING PAPER S, Vw16150
+   Hendricks D., 2007, FEDERAL RESERVE BANK, V13, P65
+   Hollo D., 2012, 1426 ECB
+   Honohan P, 2003, J BANK FINANC, V27, P1539, DOI 10.1016/S0378-4266(02)00276-5
+   Illing M., 2006, J FINANCIAL STABILIT, V2, P243, DOI DOI 10.1016/j.jfs.2006.06.002
+   Illing Mark, 2003, 200314 BANK CAN
+   *IMF, 2009, GLOB FIN STAB REP RE
+   Jagtiani J., 2003, FEDERAL RESERVE BANK, V27, P49
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kapadia S., 2012, QUANTIFYING SYSTEMIC
+   King TB, 2006, FED RESERVE BANK ST, V88, P57
+   Kliesen K. L., 2010, MEASURING FINANCIAL
+   Krishnamurthy A, 2010, AM ECON J-MACROECON, V2, P1, DOI 10.1257/mac.2.3.1
+   Lewis M, 2010, BIG SHORT INSIDE DOO
+   Mishkin F. S., 1992, EC MONEY BANKING FIN
+   Mitchell W.C., 1923, BUSINESS CYCLES UNEM
+   MOSHIRIAN F, 2009, J INT FINANC MARK I, V19, P351, DOI DOI 10.1016/J.INTFIN.2008.02.002
+   Oet M., 2009, FINANCIAL STRE UNPUB
+   Oet M. V, 2011, 1130 FED RES BANK CL
+   Oet MV, 2013, HANDBOOK ON SYSTEMIC RISK, P791
+   Rajan RG, 1996, J MONEY CREDIT BANK, V28, P763, DOI 10.2307/2077919
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Shiller R. J., 2008, NY TIMES
+   Standard & Poor's, 2009, S P CAS SHILL HOM PR
+   Stinchcombe A., 1968, CONSTRUCTING SOCIAL
+   Thomson J. B., 2009, 27 FED RES BANK CLEV
+   Tustin A., 1952, SCI AM           SEP, V9, P48
+   TUSTIN A, 1953, MECH EC SYSTEMS APPR
+   Wiener N., 1948, CYBERNETICS CONTROL
+NR 56
+TC 10
+Z9 10
+U1 0
+U2 36
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD NOV
+PY 2013
+VL 37
+IS 11
+BP 4510
+EP 4533
+DI 10.1016/j.jbankfin.2013.02.016
+PG 24
+WC Business, Finance; Economics
+SC Business & Economics
+GA 242BJ
+UT WOS:000326212100038
+DA 2019-12-28
+ER
+
+PT J
+AU Polanski, A
+   Stoja, E
+   Zhang, R
+AF Polanski, Arnold
+   Stoja, Evarist
+   Zhang, Ren
+TI Multidimensional risk and risk dependence
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Multiple sources of risk; Multidimensional value at risk; Risk
+   distribution; Dependence in risk; Systemic risk
+ID FORECAST DENSITIES; INTERVAL FORECASTS; EQUITY MARKETS; MODELS;
+   MANAGEMENT; RETURNS; DISTRIBUTIONS; TESTS
+AB Evaluating multiple sources of risk is an important problem with many applications in finance and economics. In practice this evaluation remains challenging. We propose a simple non-parametric framework with several economic and statistical applications. In an empirical study, we illustrate the flexibility of our technique by applying it to the evaluation of multidimensional density forecasts, multidimensional Value at Risk and dependence in risk. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Polanski, Arnold; Zhang, Ren] Univ E Anglia, Norwich NR4 7TJ, Norfolk, England.
+   [Stoja, Evarist] Univ Bristol, Sch Econ Finance & Management, Bristol BS8 1TN, Avon, England.
+RP Polanski, A (reprint author), Univ E Anglia, Norwich Res Pk, Norwich NR4 7TJ, Norfolk, England.
+EM A.Polanski@uea.ac.uk; e.stoja@bristol.ac.uk; Ren.Zhang@uea.ac.uk
+CR Adrian Tobias, 2009, WORKING PAPER
+   Bai J, 2003, REV ECON STAT, V85, P531, DOI 10.1162/003465303322369704
+   Bai JS, 2008, J ECONOMETRICS, V143, P19, DOI 10.1016/j.jeconom.2007.08.012
+   *BAS COMM BANK SUP, 1996, OV AM CAP ACC INC MA
+   BIRCH MW, 1964, ANN MATH STAT, V35, P817, DOI 10.1214/aoms/1177703581
+   Brock WA, 1991, NONLINEAR DYNAMICS C
+   Chan LKC, 1998, J FINANC QUANT ANAL, V33, P159, DOI 10.2307/2331306
+   CHATFIELD C, 1993, J BUS ECON STAT, V11, P121, DOI DOI 10.2307/1391361
+   Chollete L, 2011, J BANK FINANC, V35, P403, DOI 10.1016/j.jbankfin.2010.08.020
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Clements MP, 2000, J FORECASTING, V19, P255, DOI 10.1002/1099-131X(200007)19:4<255::AID-FOR773>3.0.CO;2-G
+   Clements MP, 2002, INT J FORECASTING, V18, P397, DOI 10.1016/S0169-2070(01)00126-1
+   CORRADI V., 2006, HDB EC FORECASTING
+   Crouhy M, 2001, RISK MANAGEMENT
+   Diebold FX, 1999, REV ECON STAT, V81, P661, DOI 10.1162/003465399558526
+   Diebold FX, 1998, INT ECON REV, V39, P863, DOI 10.2307/2527342
+   DIEBOLD FX, 1995, J BUS ECON STAT, V13, P253, DOI 10.2307/1392185
+   Embrechts P, 2006, J MULTIVARIATE ANAL, V97, P526, DOI 10.1016/j.jmva.2005.04.001
+   Embrechts P., 2002, RISK MANAGEMENT VALU
+   FERSON WE, 1994, J BANK FINANC, V18, P775, DOI 10.1016/0378-4266(93)00020-P
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gopikrishnan P, 1998, EUR PHYS J B, V3, P139, DOI 10.1007/s100510050292
+   Gorton G. B., 2010, 15787 NBER
+   Gourieroux C, 2010, HANDB FINANC, P553, DOI 10.1016/B978-0-444-50897-3.50013-4
+   Harris RDF, 2007, J FUTURES MARKETS, V27, P575, DOI 10.1002/fut.20262
+   Jorion P., 2001, VALUE RISK BENCHMARK
+   KHMALADZE EV, 1981, THEOR PROBAB APPL+, V26, P240, DOI 10.1137/1126027
+   Kupiec P, 1995, J DERIV, V3, P73, DOI [10.3905/jod.1995.407942, DOI 10.3905/JOD.1995.407942]
+   Kuritzkes A., 2003, BROOKINGS WHARTON PA
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Lopez JA, 2000, J BANK FINANC, V24, P151, DOI 10.1016/S0378-4266(99)00055-2
+   Nijskens R, 2011, J BANK FINANC, V35, P1391, DOI 10.1016/j.jbankfin.2010.10.001
+   Noceti P, 2003, J FORECASTING, V22, P447, DOI 10.1002/for.876
+   Patton A., 2004, J FINANCIAL ECONOMET, V2, P130, DOI DOI 10.1093/JJFINEC/NBH006
+   Patton AJ, 2009, REV FINANC STUD, V22, P2495, DOI 10.1093/rfs/hhn113
+   Rosenberg JV, 2006, J FINANC ECON, V79, P569, DOI 10.1016/j.jfineco.2005.03.001
+   ROSENBLATT M, 1952, ANN MATH STAT, V23, P470, DOI 10.1214/aoms/1177729394
+   Szego G, 2002, J BANK FINANC, V26, P1253, DOI 10.1016/S0378-4266(02)00262-5
+   Tay A. S., 2000, J FORECASTING, V19, P165
+   Watson G. S., 1958, J ROYAL STAT SOC B, V201, P44
+NR 40
+TC 1
+Z9 1
+U1 0
+U2 0
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD AUG
+PY 2013
+VL 37
+IS 8
+BP 3286
+EP 3294
+DI 10.1016/j.jbankfin.2013.04.022
+PG 9
+WC Business, Finance; Economics
+SC Business & Economics
+GA 171ZO
+UT WOS:000320969600045
+DA 2019-12-28
+ER
+
+PT J
+AU Hughes, JP
+   Mester, LJ
+AF Hughes, Joseph P.
+   Mester, Loretta J.
+TI Who said large banks don't experience scale economies? Evidence from a
+   risk-return-driven cost function
+SO JOURNAL OF FINANCIAL INTERMEDIATION
+LA English
+DT Article
+DE Banking; Production; Risk; Scale economies; Too big to fail
+ID MANAGEMENT
+AB The Great Recession focused attention on large financial institutions and systemic risk. We investigate whether large size provides any cost advantages to the economy and, if so, whether these cost advantages are due to technological scale economies or too-big-to-fail subsidies. Estimating scale economies is made more complex by risk-taking. Better diversification resulting from larger scale generates scale economies but also incentives to take more risk. When this additional risk-taking adds to cost, it can obscure the underlying scale economies and engender misleading econometric estimates of them. Using data pre- and post-crisis, we estimate scale economies using two production models. The standard model ignores endogenous risk-taking and finds little evidence of scale economies. The model accounting for managerial risk preferences and endogenous risk-taking finds large scale economies, which are not driven by too-big-to-fail considerations. We evaluate the costs and competitive implications of breaking up the largest banks into smaller banks. (C) 2013 Elsevier Inc. All rights reserved.
+C1 [Hughes, Joseph P.] Rutgers State Univ, Dept Econ, New Brunswick, NJ 08901 USA.
+   [Mester, Loretta J.] Fed Reserve Bank Philadelphia, Res Dept, Philadelphia, PA 19106 USA.
+   [Mester, Loretta J.] Univ Penn, Wharton Sch, Dept Finance, Philadelphia, PA 19104 USA.
+RP Hughes, JP (reprint author), Rutgers State Univ, Dept Econ, New Brunswick, NJ 08901 USA.
+EM jphughes@rci.rutgers.edu; Loretta.Mester@phil.frb.org
+CR Berger AN, 2008, J FINANC SERV RES, V34, P123, DOI 10.1007/s10693-008-0044-5
+   Berger AN, 1997, J BANK FINANC, V21, P895, DOI 10.1016/S0378-4266(97)00010-1
+   Bossone B, 2004, IMF STAFF PAPERS, V51, P19
+   Boyd J. H., 2012, WORKING PAPER
+   Boyd JH, 2009, ECON VOICE, V6
+   BRAEUTIGAM RR, 1983, ECON LETT, V11, P25, DOI 10.1016/0165-1765(83)90157-X
+   Brewer E., 2009, 0934 FED RES BANK PH
+   Davies R., J MONEY CREDIT BANKI
+   DEATON A, 1980, AM ECON REV, V70, P312
+   Demsetz RS, 1997, J MONEY CREDIT BANK, V29, P300, DOI 10.2307/2953695
+   Erel Isil, 2011, 17269 NBER
+   Feng GH, 2010, J BANK FINANC, V34, P127, DOI 10.1016/j.jbankfin.2009.07.009
+   Greenspan A, 2010, BROOKINGS PAP ECO AC, P201
+   Habib MA, 2005, J BUS, V78, P2053, DOI 10.1086/497040
+   Hughes J, 1999, POETRY WALES, V35, P27
+   Hughes J. P., ROLE CENTRAL BANKS F
+   Hughes J. P, 1997, 982 FED RES BANK PHI
+   Hughes J. P., 2010, OXFORD HDB BANKING
+   Hughes JP, 1996, J MONEY CREDIT BANK, V28, P1045, DOI 10.2307/2077940
+   Hughes JP, 1998, REV ECON STAT, V80, P314, DOI 10.1162/003465398557401
+   Hughes JP, 2001, J BANK FINANC, V25, P2169, DOI 10.1016/S0378-4266(01)00190-X
+   Hughes JP, 2000, J FINANC SERV RES, V18, P5, DOI 10.1023/A:1026554922476
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   MARCUS AJ, 1984, J BANK FINANC, V8, P557, DOI 10.1016/S0378-4266(84)80046-1
+   MesMr L.J., 2010, SCALE EC BANKING FIN, P10
+   MESTER LJ, 1992, J BANK FINANC, V16, P545, DOI 10.1016/0378-4266(92)90044-Z
+   Tufano P, 1996, J FINANC, V51, P1097, DOI 10.2307/2329389
+   Wheelock DC, 2012, J MONEY CREDIT BANK, V44, P171, DOI 10.1111/j.1538-4616.2011.00472.x
+NR 28
+TC 71
+Z9 71
+U1 1
+U2 14
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1042-9573
+EI 1096-0473
+J9 J FINANC INTERMED
+JI J. Financ. Intermed.
+PD OCT
+PY 2013
+VL 22
+IS 4
+BP 559
+EP 585
+DI 10.1016/j.jfi.2013.06.004
+PG 27
+WC Business, Finance
+SC Business & Economics
+GA 264ZA
+UT WOS:000327918300003
+DA 2019-12-28
+ER
+
+PT J
+AU Reboredo, JC
+   Rivera-Castro, MA
+AF Reboredo, Juan C.
+   Rivera-Castro, Miguel A.
+TI A wavelet decomposition approach to crude oil price and exchange rate
+   dependence
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Wavelet decomposition; Oil prices; US dollar exchange rate; Dependence
+ID STRUCTURAL-CHANGE; CO-MOVEMENT; MARKET; TESTS; UNDERREACTION;
+   OVERREACTION; PARAMETER; RISK
+AB This paper studies the relationship between oil prices and US dollar exchange rates using wavelet multi-resolution analysis. We characterized the oil price-exchange rate relationship for different timescales in an attempt to disentangle the possible existence of contagion and interdependence during the global financial crisis and analyze possible lead and lag effects. For crude oil prices and a range of currencies, we show that oil prices and exchange rates were not dependent in the pre-crisis period; however, we did find evidence of contagion and negative dependence after the onset of the crisis. Additionally, we found that oil prices led exchange rates and vice versa in the crisis period but not in the pre-crisis period. These findings have important implications for risk management, monetary policies to control oil inflationary pressures and fiscal policy in oil-exporting countries. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Reboredo, Juan C.; Rivera-Castro, Miguel A.] Univ Santiago de Compostela, Dept Econ, Santiago De Compostela 15782, Spain.
+RP Rivera-Castro, MA (reprint author), Univ Santiago de Compostela, Dept Econ, Avda Xoan 23 S-N, Santiago De Compostela 15782, Spain.
+EM juancarlos.reboredo@usc.es; marc@ufba.br
+RI Reboredo, Juan Carlos/I-3224-2015
+OI Reboredo, Juan Carlos/0000-0003-3912-9410
+CR Akram Q. F., 2004, THE ECONOMETRICS JOU, V7, P476
+   Akram QF, 2009, ENERG ECON, V31, P838, DOI 10.1016/j.eneco.2009.05.016
+   Alquist R, 2011, INT FINANCE DISCUSSI, V1022
+   Amano RA, 1998, J INT MONEY FINANC, V17, P299, DOI 10.1016/S0261-5606(98)00004-7
+   ANDREWS DWK, 1994, ECONOMETRICA, V62, P1383, DOI 10.2307/2951753
+   ANDREWS DWK, 1993, ECONOMETRICA, V61, P821, DOI 10.2307/2951764
+   Anshasy A. E., 2011, J POLICY MODELING
+   Barberis N, 1998, J FINANC ECON, V49, P307, DOI 10.1016/S0304-405X(98)00027-0
+   Beine M, 2004, J BANK FINANC, V28, P1385, DOI 10.1016/S0378-4266(03)00124-9
+   Benhmad F, 2012, ECON MODEL, V29, P1505, DOI 10.1016/j.econmod.2012.01.003
+   Bollino CA, 2007, J POLICY MODEL, V29, P729, DOI 10.1016/j.jpolmod.2007.06.009
+   Camarero M, 2002, J POLICY MODEL, V24, P591, DOI 10.1016/S0161-8938(02)00128-X
+   Chemingui MA, 2008, J POLICY MODEL, V30, P491, DOI 10.1016/j.jpolmod.2007.09.005
+   Chen SS, 2007, ENERG ECON, V29, P390, DOI 10.1016/j.eneco.2006.08.003
+   Cifarelli G, 2010, ENERG ECON, V32, P363, DOI 10.1016/j.eneco.2009.08.014
+   Daniel K., 1998, J FINANC, V56, P921
+   Gallegati M, 2012, COMPUT STAT DATA AN, V56, P3491, DOI 10.1016/j.csda.2010.11.003
+   Gencay R, 2005, J INT MONEY FINANC, V24, P55, DOI 10.1016/j.jimonfin.2004.10.003
+   Gencay R., 2002, INTRO WAVELETS OTHER
+   GOLUB SS, 1983, ECON J, V93, P576, DOI 10.2307/2232396
+   Hansen BE, 1997, J BUS ECON STAT, V15, P60, DOI 10.2307/1392074
+   Hong H, 1999, J FINANC, V54, P2143, DOI 10.1111/0022-1082.00184
+   Huang Y, 2007, CHINA ECON REV, V18, P403, DOI 10.1016/j.chieco.2006.02.003
+   Indjehagopian JP, 2000, ENERG ECON, V22, P225, DOI 10.1016/S0140-9883(99)00034-1
+   Kim S., 2005, J EMPIR FINANC, V12, P435, DOI DOI 10.1016/J.JEMPFIN.2004.04.008
+   Krichene N., 2005, IMF WORKING PAPERS
+   Krugman P, 1983, EC INTERDEPENDENCE F
+   Lizardo RA, 2010, ENERG ECON, V32, P399, DOI 10.1016/j.eneco.2009.10.005
+   MACKINNON JG, 1989, EMPIR ECON, V14, P77
+   Marimoutou V, 2009, ENERG ECON, V31, P519, DOI 10.1016/j.eneco.2009.02.005
+   Naccache T, 2011, ENERG ECON, V33, P338, DOI 10.1016/j.eneco.2010.12.001
+   Percival D.B., 2000, WAVELET METHODS TIME
+   Poteshman AM, 2001, J FINANC, V56, P851, DOI 10.1111/0022-1082.00348
+   Reboredo JC, 2012, J POLICY MODEL, V34, P419, DOI 10.1016/j.jpolmod.2011.10.005
+   Reboredo JC, 2011, ENERG ECON, V33, P948, DOI 10.1016/j.eneco.2011.04.006
+   Sadeghi M, 2006, ENERG POLICY, V34, P3367, DOI 10.1016/j.enpol.2005.07.004
+   Sadorsky P., 2000, ENERGY EC, V22, P253
+   Salmon M., 2007, WORKING PAPERS FINAN
+   STEIGUM E, 1995, J POLICY MODEL, V17, P427, DOI 10.1016/0161-8938(95)00018-O
+   Vacha L, 2012, ENERG ECON, V34, P241, DOI 10.1016/j.eneco.2011.10.007
+   Wu CC, 2012, ENERG ECON, V34, P270, DOI 10.1016/j.eneco.2011.07.007
+   Yousefi A, 2004, ENERG ECON, V26, P783, DOI 10.1016/j.eneco.2004.06.001
+   Zhang YJ, 2008, J POLICY MODEL, V30, P973, DOI 10.1016/j.jpolmod.2008.02.002
+NR 43
+TC 81
+Z9 82
+U1 0
+U2 57
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD MAY
+PY 2013
+VL 32
+BP 42
+EP 57
+DI 10.1016/j.econmod.2012.12.028
+PG 16
+WC Economics
+SC Business & Economics
+GA 153WG
+UT WOS:000319632600007
+DA 2019-12-27
+ER

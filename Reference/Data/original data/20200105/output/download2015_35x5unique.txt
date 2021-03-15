@@ -1,0 +1,404 @@
+
+PT J
+AU Staum, J
+AF Staum, Jeremy
+TI Nonnegative risk components
+SO JOURNAL OF RISK
+LA English
+DT Article
+DE cost allocation; cost attribution; risk allocation; risk attribution;
+   risk components; systemic risk
+ID AXIOMATIC APPROACH
+AB We propose two new methods for attributing the risk of a portfolio or system to its components, in particular when it is required to produce nonnegative risk components that sum to the risk of the portfolio or system as a whole. The first method attributes risk entirely to losses, taking profits for granted. The second method allows profits in some scenarios to offset losses in other scenarios to a certain extent, but not in a way that could yield a negative risk component. We illustrate these methods by applying them to an example in which we attribute a firm's expected shortfall to business units within the firm and an example in which we attribute systemic risk to banks. We prove that, under appropriate conditions, the methods proposed have some game-theoretic properties that are desirable for risk attribution.
+C1 [Staum, Jeremy] Northwestern Univ, Robert R McCormick Sch Engn & Appl Sci, Dept Ind Engn & Management Sci, Evanston, IL 60208 USA.
+RP Staum, J (reprint author), Northwestern Univ, Robert R McCormick Sch Engn & Appl Sci, Dept Ind Engn & Management Sci, Evanston, IL 60208 USA.
+EM j-staum@northwestern.edu
+RI Staum, Jeremy/B-7494-2009
+CR Boonen T., 2012, 2012091 CENTER TILB
+   Chen C, 2013, MANAGE SCI, V59, P1373, DOI 10.1287/mnsc.1120.1631
+   Cont R, 2013, STATIST RISK MODEL, V30, P133, DOI 10.1524/strm.2013.1132
+   Denault M., 2001, J RISK, V4, P1, DOI DOI 10.21314/JOR.2001.053
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Friedman E, 1999, J ECON THEORY, V87, P275, DOI 10.1006/jeth.1999.2534
+   Haimanko O, 2001, J MATH ECON, V35, P445, DOI 10.1016/S0304-4068(01)00052-0
+   Kalkbrener M, 2005, MATH FINANC, V15, P425, DOI 10.1111/j.1467-9965.2005.00227.x
+   Koch-Medina P., 2013, 1403 SWISS FIN I
+   Koster M, 1998, MATH SOC SCI, V36, P229, DOI 10.1016/S0165-4896(98)00040-7
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   MERTENS JF, 1988, INT J GAME THEORY, V17, P1, DOI 10.1007/BF01240834
+   Moulin H, 2007, REV ECON POLIT, V117, P7, DOI 10.3917/redp.171.0007
+   Rockafellar R. T, 1970, CONVEX ANAL
+   Rockafellar RT, 2006, FINANC STOCH, V10, P51, DOI 10.1007/s00780-005-0165-8
+   Ruszczynski A, 2006, MATH OPER RES, V31, P433, DOI 10.1287/moor.1050.0186
+   Staum J., 2011, 201103 CTR FIN RES F
+   Staum J, 2013, OPER RES LETT, V41, P47, DOI 10.1016/j.orl.2012.11.004
+   Staum J, 2012, QUANT FINANC, V12, P651, DOI 10.1080/14697688.2012.664942
+   TASCHE D, 2004, EC CAPITAL PRACTITIO, P275
+   Tasche D., 2008, ARXIV07082542V3
+   Tasche D., 1999, WORKING PAPER
+NR 22
+TC 1
+Z9 1
+U1 0
+U2 3
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1465-1211
+EI 1755-2842
+J9 J RISK
+JI J. Risk
+PY 2015
+VL 18
+IS 2
+BP 1
+EP 29
+PG 29
+WC Business, Finance
+SC Business & Economics
+GA CY3UQ
+UT WOS:000366335800002
+DA 2019-12-28
+ER
+
+PT J
+AU Clark, E
+   Jokung, O
+AF Clark, Ephraim
+   Jokung, Octave
+TI The role of regulatory credibility in effective bank regulation
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Systemic risk; Micro-prudential regulation; Procyclicality; Regulated
+   Brownian motion; Endogenous expectations
+ID FINANCIAL CONTAGION; SYSTEMIC RISK; FRAGILITY; MODEL
+AB This paper develops a model of regulated Brownian motion with an endogenous profit term to analyze the role of regulatory credibility on the stability and productivity of the banking system. We show that when regulatory intervention is perfect and costless, the volatility of the system can be substantially reduced with no loss of productivity. In fact, perfect credibility can actually reduce the volatility of intrinsically risky banking systems below the volatility of intrinsically less risky systems as banks anticipate intervention and mitigate their investment behaviour accordingly. However, when the credibility of the regime is weakened because of increased uncertainty stemming from regulation, such as random costs or imperfect timing of regulatory intervention, both the stability and productivity of the financial system are impaired. Importantly, we find that in the presence of regulatory costs and imperfect credibility, there is no universal optimal intervention policy rule. The optimal regulatory system depends on the regulator's level of absolute risk aversion. (C) 2014 The Authors. Published by Elsevier B.V.
+C1 [Clark, Ephraim] Middlesex Univ, Sch Business, London N17 8HR, England.
+   [Jokung, Octave] EDHEC Business Sch, Lille, France.
+RP Clark, E (reprint author), Middlesex Univ, Sch Business, London N17 8HR, England.
+EM e.clark@mdx.ac.uk
+FU Economic and Social Research CouncilEconomic & Social Research Council
+   (ESRC) [ES/H00596X/1]
+CR Acharya V., 2009, NYU STERN REPORT RES
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T., 2008, 348 COVAR FED RES BA
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2009, ANNU REV FINANC ECON, V1, P97, DOI 10.1146/annurev.financial.050808.114321
+   Borio C., 2008, BIS WORKING PAPERS, V268
+   Brunnermeier M. K., 2009, 11 WORLD EC
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   De Bandt O., 2001, FINANCIAL CRISIS CON, P249
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Hellwig M., 2008, 200843 M PALNCK I RE
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Lagunoff R, 2001, J ECON THEORY, V99, P220, DOI 10.1006/jeth.2000.2733
+   Pratt J., 1964, ECONOMETRICA, V32, P217
+   Segoviano M., 2009, 0904 IMF
+   Shin Hyun Song, 2009, 8 BIS ANN C
+   Tarashev N., 2009, BIS Q REV
+   Tarashev Nikola, 2009, BIS WORKING PAPERS
+   Volker P., 2009, GROUP 30 FIN REF FRA
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Zhou C., 2010, WHY MICROPRUDENTIAL
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 23
+TC 4
+Z9 4
+U1 0
+U2 15
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JAN
+PY 2015
+VL 50
+BP 506
+EP 513
+DI 10.1016/j.jbankfin.2014.03.018
+PG 8
+WC Business, Finance; Economics
+SC Business & Economics
+GA AY3UD
+UT WOS:000347506900036
+OA Green Accepted, Other Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Strahan, PE
+   Tanyeri, B
+AF Strahan, Philip E.
+   Tanyeri, Basak
+TI Once Burned, Twice Shy: Money Market Fund Responses to a Systemic
+   Liquidity Shock
+SO JOURNAL OF FINANCIAL AND QUANTITATIVE ANALYSIS
+LA English
+DT Article
+ID COMMERCIAL PAPER; SAFE
+AB After Lehman's collapse in 2008, investors ran from risky money market funds. In 27 funds, outflows overwhelmed cash inflows, thus forcing asset sales. These funds sold their safest and most liquid holdings. Funds were thus left with riskier and longer maturity assets. Over the subsequent quarter, however, the hard-hit funds reduced risk more than other funds. In contrast, money funds hit by idiosyncratic liquidity shocks before Lehman did not alter portfolio risk. The result suggests that moral hazard concerns with the Treasury Guarantee of investor claims did not increase risk taking. Funds that benefited most from the government bailout reduced risk.
+C1 [Strahan, Philip E.] Boston Coll, Carroll Sch Management, Chestnut Hill, MA 02467 USA.
+   [Tanyeri, Basak] Bilkent Univ, Fac Business Adm, TR-06800 Ankara, Turkey.
+RP Strahan, PE (reprint author), Boston Coll, Carroll Sch Management, Chestnut Hill, MA 02467 USA.
+EM philip.strahan@bc.edu; basak@bilkent.edu.tr
+RI Tanyeri, Basak/D-2364-2013
+OI Tanyeri, Basak/0000-0002-9354-2639
+CR Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Brady S. A., 2012, WORKING PAPER
+   Chen Q, 2010, J FINANC ECON, V97, P239, DOI 10.1016/j.jfineco.2010.03.016
+   Chernenko S, 2014, REV FINANC STUD, V27, P1717, DOI 10.1093/rfs/hhu025
+   Duygan-Bump B, 2013, J FINANC, V68, P715, DOI 10.1111/jofi.12011
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Gorton Gary B., 2012, 17777 NBER
+   Kacperczyk M, 2013, Q J ECON, V128, P1073, DOI 10.1093/qje/qjt010
+   Kacperczyk M, 2010, J ECON PERSPECT, V24, P29, DOI 10.1257/jep.24.1.29
+   Krishnamurthy A, 2014, J FINANC, V69, P2381, DOI 10.1111/jofi.12168
+   Kroszner R. S., 2006, REGULATION, P485
+   Kroszner RS, 2011, AM ECON REV, V101, P242, DOI 10.1257/aer.101.3.242
+   McCabe P. E., 2010, WORKING PAPER
+   Schmidt L., 2013, WORKING PAPER
+   Tanyeri B., 2011, ADVERSE INFORM MUTUA
+NR 15
+TC 9
+Z9 9
+U1 0
+U2 16
+PU CAMBRIDGE UNIV PRESS
+PI NEW YORK
+PA 32 AVENUE OF THE AMERICAS, NEW YORK, NY 10013-2473 USA
+SN 0022-1090
+EI 1756-6916
+J9 J FINANC QUANT ANAL
+JI J. Financ. Quant. Anal.
+PD APR
+PY 2015
+VL 50
+IS 1-2
+BP 119
+EP 144
+DI 10.1017/S0022109015000101
+PG 26
+WC Business, Finance; Economics
+SC Business & Economics
+GA CK1AB
+UT WOS:000355936200005
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Straetmans, S
+   Chaudhry, SM
+AF Straetmans, Stefan
+   Chaudhry, Sajid M.
+TI Tail risk and systemic risk of US and Eurozone financial institutions in
+   the wake of the global financial crisis
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Banking; Systemic risk; Asymptotic dependence; Multivariate extreme
+   value theory
+ID LIQUIDITY PROVISION; BANK; CONTAGION; INDEPENDENCE; PERSPECTIVE;
+   DEPENDENCE; BOOTSTRAP; RETURNS; MARKETS; PRICES
+AB We evaluate multiple market-based measures for US and eurozone individual bank tail risk and bank systemic risk. We apply statistical extreme value analysis to the tails of bank equity capital losses to estimate the likelihood of individual institutions' financial distress as well as individual banks' exposure to each other ("spillover risk") and to global shocks ("extreme" systematic risk). The estimation procedure presupposes that bank equity returns are "heavy tailed" and "tail dependent" as identifying assumption. Using both US and eurozone banks allows one to make a cross-Atlantic comparison of tail risks and systemic stability. We also assess to what extent magnitudes of tail risk and systemic risk have been altered by the global financial crisis. The results suggest that both tail risk and systemic risk in the US are higher than in the eurozone regardless of the considered sample period. (C) 2015 Elsevier Ltd. All rights reserved.
+C1 [Straetmans, Stefan] Maastricht Univ, Sch Business & Econ, NL-6200 MD Maastricht, Netherlands.
+   [Chaudhry, Sajid M.] Univ Birmingham, Birmingham Business Sch, Birmingham B15 2TT, W Midlands, England.
+RP Straetmans, S (reprint author), Maastricht Univ, Sch Business & Econ, NL-6200 MD Maastricht, Netherlands.
+EM s.straetmans@maastrichtuniversity.nl
+OI Chaudhry, Sajid/0000-0001-8769-8920
+CR Acharya V, 2010, MEASURING SYSTEMIC R
+   Adrian Tobias, 2014, COVAR
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bali T.G., 2003, J EMPIR FINANC, V10, P455
+   Bali TG, 2003, J BUS, V76, P83, DOI 10.1086/344669
+   Bali TG, 2008, J BANK FINANC, V32, P269, DOI 10.1016/j.jbankfin.2007.03.009
+   Bali TG, 2007, ANN OPER RES, V151, P241, DOI 10.1007/s10479-006-0118-4
+   Beirlant J., 1999, EXTREMES, V2, P177
+   Berger AN, 2003, J BANK FINANC, V27, P383, DOI 10.1016/S0378-4266(02)00386-2
+   BIS (Bank for International Settlements), 2001, REP CONS FIN SECT
+   Bisias Dimitrios, 2012, 0001 US DEP TREAS OF
+   Brownlees C. T, 2015, SRISK CONDITIONAL CA
+   Calomiris C, 2000, 7919 NBER
+   Calomiris CW, 1997, AM ECON REV, V87, P863
+   Chan-Lau A., 2009, WORKING PAPER
+   Danielsson J, 2001, J MULTIVARIATE ANAL, V76, P226, DOI 10.1006/jmva.2000.1903
+   DANIELSSON J., 1997, J EMPIR FINANC, V4, P241, DOI DOI 10.1016/S0927-5398(97)00008-X
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   De Nicolo G, 2002, J BANK FINANC, V26, P861, DOI 10.1016/S0378-4266(02)00211-X
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   Degryse H. A., 2007, INT J CENT BANK, P123
+   DEHAAN L, 1994, EXTREME VALUE THEORY, P471
+   DEKKERS ALM, 1989, ANN STAT, V17, P1795, DOI 10.1214/aos/1176347396
+   Draisma G, 2004, BERNOULLI, V10, P251, DOI 10.3150/bj/1082380219
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   GOLDIE CM, 1987, Q J MATH, V38, P45, DOI 10.1093/qmath/38.1.45
+   GORTON G, 1988, OXFORD ECON PAP, V40, P751, DOI 10.1093/oxfordjournals.oep.a041885
+   Gropp R, 2009, INT J CENT BANK, V5, P97
+   HAEUSLER E, 1985, ANN STAT, V13, P743, DOI 10.1214/aos/1176349551
+   HALL P, 1995, BIOMETRIKA, V82, P561
+   Hartmann P, 2003, ASSET PRICE BUBBLES: THE IMPLICATIONS FOR MONETARY, REGULATORY, AND INTERNATIONAL POLICIES, P361
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hartmann P., 2003, CTR FIN STUD WHART S
+   Hartmann P, 2006, NBER CONF R, P133
+   HELLWIG M, 1994, EUR ECON REV, V38, P1363, DOI 10.1016/0014-2921(94)90015-9
+   Heuchemer S, 2009, COMP ECON STUD, V51, P467, DOI 10.1057/ces.2009.9
+   Hill MB., 1975, ANN STAT, V3, P1163, DOI DOI 10.1214/AOS/1176343247
+   Huang X, 1992, TINBERGEN I RES SERI, V22
+   JANSEN DW, 1991, REV ECON STAT, V73, P18, DOI 10.2307/2109682
+   Kho BC, 2000, AM ECON REV, V90, P28, DOI 10.1257/aer.90.2.28
+   Ledford AW, 1996, BIOMETRIKA, V83, P169, DOI 10.1093/biomet/83.1.169
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Longin FM, 1996, J BUS, V69, P383, DOI 10.1086/209695
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   Mistrulli P.E., 2005, INTERBANK LENDING PA
+   Neftci N. S, 2000, J DERIVAT, V7, P23
+   Pais A, 2011, J BANK FINANC, V35, P681, DOI 10.1016/j.jbankfin.2010.05.012
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Quintos C, 2001, REV ECON STUD, V68, P633, DOI 10.1111/1467-937X.00184
+   Slovin MB, 1999, J FINANC ECON, V54, P197, DOI 10.1016/S0304-405X(99)00036-7
+   SMIRLOCK M, 1987, J BUS, V60, P347, DOI 10.1086/296401
+   Straetmans S., 1998, TINBERGEN I RES SERI, V181
+   Straetmans S., 2000, EXTREMES INTEGRATED, P187
+   Straetmans STM, 2008, J APPL ECONOM, V23, P17, DOI 10.1002/jae.973
+   Upper A., 2004, EUROPEAN EC REV, V48, P827
+   VANLELYVELD I, 2006, INT J CENT BANK, V2, P99
+   WALL LD, 1990, J MONETARY ECON, V26, P77, DOI 10.1016/0304-3932(90)90032-Y
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 61
+TC 5
+Z9 6
+U1 2
+U2 25
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD NOV
+PY 2015
+VL 58
+BP 191
+EP 223
+DI 10.1016/j.jimonfin.2015.07.003
+PG 33
+WC Business, Finance
+SC Business & Economics
+GA CU2MT
+UT WOS:000363358300010
+OA Green Published, Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Westphal, A
+AF Westphal, Annika
+TI Systemic Risk in the European Union: A Network Approach to Banks'
+   Sovereign Debt Exposures
+SO INTERNATIONAL JOURNAL OF FINANCIAL STUDIES
+LA English
+DT Article
+DE contagion; sovereign risk; European debt; European banks; stress tests
+ID COMPLEX NETWORKS; MARKETS; CRISIS; CONNECTEDNESS; STABILITY; CONTAGION
+AB This paper draws on network theory to investigate European banks' sovereign debt exposures. Banks' holdings of sovereign debt build a network of financial linkages with European countries that exhibits a long-tail distribution of node degrees. A highly connected network core of 15 banks is identified. These banks accounted for the majority of sovereign debt investments between December 2010 and December 2013 but exhibited only average and sometimes even below average capitalizations. Consequently, they constituted a potential source and transmission channel of systemic risk, especially due to their proneness to portfolio contagion. In a complementary regression analysis, the effect of counterparty risk on Credit Default Swap (CDS) spreads of 15 EU sovereigns is investigated. Among the banks exposed to the debt of a particular issuer, the biggest institutions in terms of their own asset sizes are identified and some of their balance sheet characteristics included into the regression. The analysis finds that the banks' implied volatilities had a significant and increasing effect on CDS spreads during the recent crisis years, providing evidence of the presence of counterparty risk and its effect on EU sovereign debt pricing. Furthermore, the role of the domestic financial sectors is assessed and found to have affected the CDS spreads.
+C1 Univ Bologna, Sch Econ Management & Stat, I-40126 Bologna, Italy.
+RP Westphal, A (reprint author), Univ Bologna, Sch Econ Management & Stat, I-40126 Bologna, Italy.
+EM annika.westphal@studio.unibo.it
+CR Abascal M., 2015, SPAN REV FINANC EC, V13, P20
+   Acharya V, 2013, 19039 NBER
+   Agliardi E, 2012, J EMPIR FINANC, V19, P741, DOI 10.1016/j.jempfin.2012.08.003
+   Albert R, 2002, REV MOD PHYS, V74, P47, DOI 10.1103/RevModPhys.74.47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Angeloni Ch., 2012, 201207 BRUEG
+   Bank for International Settlements, 2011, GLOB SYST IMP BANKS
+   Bank for International Settlements, 2013, BIS Q REV, p[10, 1]
+   Battistini N., 2013, EUROPEAN EC EC PAPER
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blundell-Wignall A., 2010, OECD WORKING PAPERS
+   Brandes U., 2013, VISONE VERSION 2 7 3
+   Brock WA, 2009, J ECON DYN CONTROL, V33, P1912, DOI 10.1016/j.jedc.2009.05.004
+   Caccioli F, 2009, EUR PHYS J B, V71, P467, DOI 10.1140/epjb/e2009-00316-y
+   CGFS, 2011, CGFS PAP
+   Codogno L, 2003, ECON POLICY, P503
+   Committee of European Banking Supervisors, 2010, QUEST ANSW 2010 EU W
+   Constancio V., 2015, SPAN REV FINANC EC, V13, P1
+   Correa R., 2014, 1104 BOARD GOV FED R
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   De Marco F., 2014, SSRN WORKING PAPER S
+   Demirguc-Kunt A, 2013, J BANK FINANC, V37, P875, DOI 10.1016/j.jbankfin.2012.10.010
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Dieckmann S, 2012, REV FINANC, V16, P903, DOI 10.1093/rof/rfr015
+   EEAG, 2012, EEAG REP EUR EC
+   Eliasson, 2014, SVER RIKSBANK EC REV, V2, P23
+   EU Commission, 2013, BAIL IN TOOL COMP AN
+   European Banking Authority, 2011, CAP BUFF ADDR MARK S
+   European Banking Authority, 2011, EBAREC20111
+   European Banking Authority, 2011, 2011 EU WID STRESS T
+   European Banking Authority, 2014, RES 2014 EU WID STRE
+   FRENCH KR, 1991, AM ECON REV, V81, P222
+   Gai P., 2009, WORKING PAPER
+   GARDNER MR, 1970, NATURE, V228, P784, DOI 10.1038/228784a0
+   Geyer A., 2004, Review of Finance, V8, P171, DOI 10.1023/B:EUFI.0000035191.62455.32
+   Goodhart C., 2011, DSF POLICY PAPER SER, V18
+   Haldane A, 2009, FIN STUD ASS AMST NE
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Heinz F.F., 2014, INT MONETARY FUND WO, VWP/14/17
+   Hu C.C., 2015, NORDIC EUROPEAN CO L, V15-04
+   International Monetary Fund, 2010, GLOB FIN STAB REP M
+   Klimek P, 2015, J ECON DYN CONTROL, V50, P144, DOI 10.1016/j.jedc.2014.08.020
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Manzo G., 2015, SSRN WORKING PAPER S
+   Maudos J., 2015, SPAN REV FINANC EC, V13, P11
+   MAY RM, 1972, NATURE, V238, P413, DOI 10.1038/238413a0
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Newman MEJ, 2003, SIAM REV, V45, P167, DOI 10.1137/S003614450342480
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Obstfeld M, 2001, NBER MACROECON ANN, V15, P339
+   Propper M., 2008, 177 DNB
+   Reinhart C., 2010, AM EC ASS PAPERS P, V100, P1
+   Reinhart CM, 2011, AM ECON REV, V101, P1676, DOI 10.1257/aer.101.5.1676
+   Sgherri S., 2009, INT MONETARY FUND WO
+   Signori D., 2007, SSRN WORKING PAPER S
+   Soramaki K, 2006, 243 FED RES BANK NEW
+   Stiglitz JE, 2010, 15718 NBER
+   TESAR LL, 1995, J INT MONEY FINANC, V14, P467, DOI 10.1016/0261-5606(95)00023-8
+   Vitali S, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0025995
+NR 63
+TC 3
+Z9 3
+U1 1
+U2 13
+PU MDPI AG
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2227-7072
+J9 INT J FINANC STUD
+JI Int. J. Financ. Stud.
+PD SEP
+PY 2015
+VL 3
+IS 3
+BP 244
+EP 279
+DI 10.3390/ijfs3030244
+PG 36
+WC Business, Finance
+SC Business & Economics
+GA CV0UK
+UT WOS:000363968700004
+OA DOAJ Gold
+DA 2019-12-27
+ER

@@ -1,0 +1,490 @@
+
+PT J
+AU Biondi, Y
+AF Biondi, Yuri
+TI Banking, Money and Credit: A Systemic Perspective
+SO ACCOUNTING ECONOMICS AND LAW-A CONVIVIUM
+LA English
+DT Article
+DE banking; financial regulation; money; credit
+AB Contemporaneous banking theories appear to understand financial institutions as intermediaries, relegating bank money creation through money multiplication outside the core of banking activity. This article takes a different systemic perspective, pointing to the dynamic and collective features that generate a banking system within and across financial institutions. Classic features such as bank credit creation, as well as classic issues such as bank runs, are reconsidered under the notion of a 'banking system' requiring coordination over time and circumstances.
+   Our conceptual framework develops a heuristic model of the basic mechanisms on which bank money creation lays upon. This model disentangles the link between functional and institutional dimensions of the money system, aiming to include minimal institutions in economic theory and economic analysis of money. These basic mechanisms include: monetary financial institutions (bank entities) issue claims which function as money; they facilitate payments across agents in the economy over time and space; they increase the money base through credit creation; they hold fractional reserves and lend to each other. Ongoing bank activity involves cash and non-cash (accrual) processes occurring within each bank entity and across them. Each bank keeps currency money in bank deposits on behalf of other agents. But the bank activity is further characterised by the capacity or privilege to use these deposits, although the latter remain available for payment and redemption at will and at par. Moreover, the bank can create deposit by granting a loan to, or buy a security from a borrower. This bank capacity or privilege involves money generation that enables the bank credit manufacturing process. In this way, all the banks become interdependent on the flow of payments that are performed across them, generating the 'banking system'. Since each bank is structurally unbalanced due to money generation, inter-bank coordination is required to maintain the banking system in operation over time and circumstances. Both inter-bank clearing and credit arrangements provide this coordination at the inter-bank level, which is effectuated through central bank intervention, clearing houses and the money market.
+   From this systemic perspective, 'systemic risk' and 'macro-prudential' management and regulation are new labels for recurrent concerns of systemic coordination. A careful combination of design and policy is therefore required to reach coordination in view to prevent or respond to local and systemic crises. Drawing upon this conceptual framework, this article develops institutional economic analysis and implications for shadow banking; systemic risk, interdependency and interconnectedness; the relationship between money and credit and the real economy; and the systemic consistency between functions and institutions in monetary regimes.
+C1 [Biondi, Yuri] Univ Paris Dauphine PSL, CNRS, IRISSO, UMR7170, Paris, France.
+   [Biondi, Yuri] Labex ReFi, Financial Regulat Res Lab, Paris, France.
+RP Biondi, Y (reprint author), Univ Paris Dauphine PSL, CNRS, IRISSO, UMR7170, Paris, France.; Biondi, Y (reprint author), Labex ReFi, Financial Regulat Res Lab, Paris, France.
+EM yuri.biondi@gmail.com
+RI Biondi, Yuri/J-8820-2012
+OI Biondi, Yuri/0000-0002-5545-5550
+CR Admati A. R., 2013, 132 STANF U ROCK CTR
+   Adrian T., 2018, BANQUE FRANCE FINANC, V22, P13
+   Adrian Tobias, 2009, BANQUE FRANCE FINANC, V13, P1
+   Aikman D, 2015, ECON J, V125, P1072, DOI 10.1111/ecoj.12113
+   Amaduzzi A., 1961, LOGICA OPERARE BANCA
+   [Anonymous], 2016, WALL STREET J W 0217
+   Anthony R. N., 2004, RETHINKING RULES FIN
+   Barrdear John, 2016, 605 BANK ENGL
+   Bavoso V, 2017, ACCOUNT ECON LAW, V7, DOI 10.1515/ael-2016-0008
+   Biondi Y., 2016, GLOBAL ENCY PUBLIC A, DOI [10.1007/978-3-319-31816-5_2269-1, DOI 10.1007/978-3-319-31816-5_2269-1]
+   Biondi Y., 2017, BANK ENGL C HON OSW
+   Biondi Y, 2005, 46 U STUD BRESC, DOI [10.2139/ssrn.774764, DOI 10.2139/SSRN.774764]
+   Biondi Y, 2008, ECON SOC, V37, P525, DOI 10.1080/03085140802357927
+   Biondi Y, 2018, ACCOUNT ECON LAW, V8, DOI 10.1515/ael-2018-0003
+   Biondi Y, 2016, ACCOUNT ECON LAW, V6, P79, DOI 10.1515/ael-2016-0004
+   Biondi Y, 2013, ACCOUNT ECON LAW, V3, P141, DOI 10.1515/ael-2013-0045
+   Biondi Y, 2010, BOCCONI MANAGE, P34
+   BLACK F, 1970, J BANK RES, V1, P8
+   Blair Margaret M., 2013, SEATTLE U LAW REV, V36, P417
+   Buiter WH, 2009, N AM J ECON FINANC, V20, P213, DOI 10.1016/j.najef.2009.10.001
+   Calorimis C. W., 1991, AM ECON REV, V81, P3
+   Caprara U., 1946, BANCA PRINCIPII EC A
+   Castellino G., 1965, LINEAMENTI EC BANCAR
+   Cecchetti S, 2008, ASSET PRICES MONETAR, P9
+   Desan C, 2005, LAW SOCIAL INQUIRY, V30, P1
+   DESAN Christine, 2014, MAKING MONEY COIN CU
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Domanski D., 2018, FINANCIAL STABILITY, V22, P155
+   European Central Bank (ECB), 2015, REP FIN STRUCT
+   Fama E. F., 1970, J MONETARY ECON, V6, P39
+   Fantacci L, 2013, FINANCIAL CRISES AND THE NATURE OF CAPITALIST MONEY: MUTUAL DEVELOPMENTS FROM THE WORK OF GEOFFREY INGHAM, P124
+   FSB, 2015, GLOB SHAD BANK MON R
+   FSOC-Financial Stability Oversight Council, 2016, ANN REPORT
+   Gabor D, 2016, JCMS-J COMMON MARK S, V54, P617, DOI 10.1111/jcms.12309
+   Goodhart C., 2016, MACROMODELLING DEFAU
+   Gorton G. B., 2010, SLAPPED FACE INVISIB
+   Gorton G. B., 1990, J FINANCE, V45
+   Hawtrey R. G, 1923, MONETARY RECONSTRUCT
+   Hawtrey R. G., 1932, ART CENTRAL BANKING
+   Hockett R. C., 2017, CORNELL LAW REV
+   Innes A. M, 1914, BANKING LAW J, P151
+   Innes A. M., 1913, BANKING LAW J    MAY, V30, P377
+   Jakab Zoltan, 2015, BANKS ARE NOT INTERM
+   Johnsen G., 2014, BRINGING BANKING SYS
+   Kerr G., 2011, LAW OPPOSITES ILLUSO
+   KETTERING KC, 2008, CARDOZO L REV, V29, P1553
+   Keynes J. M, 1973, GEN THEORY EMPLOYMEN
+   Keynes J. M, 1930, A TREATISE ON MONEY, V1
+   Keynes John Maynard, 1930, A TREATISE ON MONEY, V2
+   Kindleberger CP, 2005, MANIAS, PANICS AND CRASHES: A HISTORY OF FINANCIAL CRISES, 5TH EDITION, P1, DOI 10.1057/9780230628045
+   KPMG, 2015, MON ISS ALT MON SYS
+   Krishnamurthy A, 2012, J POLIT ECON, V120, P233, DOI 10.1086/666526
+   Manning Dacey W., 1951, BRIT BANKING MECH
+   Pistor K., 2013, J COMP ECON, V41, P2, DOI [10.2139/ssrn.2262936, DOI 10.2139/SSRN.2262936]
+   Pozsar Z., 2013, EC POLICY REV, V19, P1, DOI DOI 10.2139/SSRN.1645337
+   Riksbank S., 2017, 1 RIKSB S, P44
+   Robertson D. H., 1922, MONEY
+   Roca R., 2017, BANCA ITALIA OCCASIO
+   Ryan SG, 2016, ACCOUNT REV, V91, P649, DOI 10.2308/accr-51230
+   Saraceno P., 1957, LATTIVITA BANCARIA
+   Sayers R. S., 1938, MODERN BANKING
+   Schumpeter J., 1934, THEORY EC DEV INQUIR
+   Schumpeter J. A., 1954, HIST EC ANAL
+   Schumpeter Joseph A., 1917, ARCH SOZIALWISSENSCH
+   SCHWARCZ SL, 1994, STAN JL BUS FIN, V1, P133
+   Schwarz C, 2015, ACCOUNT ECON LAW, V5, P1, DOI 10.1515/ael-2014-0023
+   Shubik M, 2016, GUIDANCE ENTERPRISE
+   Shubik M, 2011, ACCOUNT ECON LAW, V1, DOI 10.2202/2152-2820.1012
+   Singh M, 2014, COLLATERAL FINANCIAL
+   Singh Manmohan, 2012, WP1295 IMF
+   Stout LA, 2011, ACCOUNT ECON LAW, V1, DOI 10.2202/2152-2820.1004
+   Thiemann M, 2012, COMPET CHANG, V16, P37, DOI 10.1179/1024529411Z.0000000003
+   Thornton Henry, 1802, ENQUIRY NATURE EFFEC
+   Tobin J, 1963, BANKING MONETARY STU, P408
+   Tucker P., 2012, EUR COMM HIGH LEV C
+   Tucker P., 2017, OEST NAT C VIENN 29
+   Turner A., 2015, DEBT DEVIL MONEY CRE
+   Werner RA, 2014, INT REV FINANC ANAL, V36, P71, DOI 10.1016/j.irfa.2014.10.013
+   Werner RA, 2014, INT REV FINANC ANAL, V36, P1, DOI 10.1016/j.irfa.2014.07.015
+   Withers H., 1910, THE MEANING OF MONEY
+NR 81
+TC 1
+Z9 1
+U1 0
+U2 8
+PU WALTER DE GRUYTER GMBH
+PI BERLIN
+PA GENTHINER STRASSE 13, D-10785 BERLIN, GERMANY
+SN 2194-6051
+EI 2152-2820
+J9 ACCOUNT ECON LAW
+JI Account. Econ. Law
+PD JUL
+PY 2018
+VL 8
+IS 2
+AR 20170047
+DI 10.1515/ael-2017-0047
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA GN2JC
+UT WOS:000438823200003
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Altawalbeh, SM
+   Alshogran, OY
+   Smith, KJ
+AF Altawalbeh, Shoroq M.
+   Alshogran, Osama Y.
+   Smith, Kenneth J.
+TI Cost-Utility Analysis of Apixaban versus Warfarin in Atrial Fibrillation
+   Patients with Chronic Kidney Disease
+SO VALUE IN HEALTH
+LA English
+DT Article
+DE apixaban; atrial fibrillation; cost-utility; kidney disease; warfarin
+ID ANTAGONIST ORAL ANTICOAGULANTS; VITAMIN-K ANTAGONISTS; STROKE
+   PREVENTION; RENAL-INSUFFICIENCY; EFFICACY; RISK; SAFETY;
+   THROMBOEMBOLISM; METAANALYSIS; RIVAROXABAN
+AB Background: Warfarin use for stroke prevention in atrial fibrillation (AF) patients with chronic kidney disease is debated. Apixaban was shown to be safer than warfarin, with superior reduction in the risk of stroke, systemic embolism, mortality, and major bleeding irrespective of kidney function. Objectives: To evaluate the cost-utility of apixaban compared with warfarin in AF patients at different levels of kidney function. Methods: A Markov model was used to estimate the cost effectiveness of apixaban compared with warfarin in AF patients at three levels of kidney function: estimated glomerular filtration rate (eGFR) of more than 80 ml/min, 50 to 80 ml/min, and 50 ml/min or less. Event rates and associated utilities were obtained from previous literature. The model adopted the US health care system perspective, with hospitalization costs extracted from the Healthcare and Utilization Project. Treatment costs were obtained from official price lists. Univariate and probabilistic sensitivity analyses were performed to evaluate the robustness of results. Results: Apixaban was a dominant treatment strategy compared with warfarin in AF patients with eGFR levels of 50 ml/min or less and 50 to 80 ml/min. In patients with an eGFR of more than 80 ml/min, apixaban was cost-effective compared with warfarin, costing $6307 per quality-adjusted life-year gained. Results were consistent assuming anticoagulant discontinuation after major bleeding events. Compared with dabigatran and rivaroxaban, apixaban was the only cost-effective anticoagulant strategy relative to warfarin in both mild and moderate renal impairment settings. Conclusions: Apixaban is a favorably cost-effective alternative to warfarin in AF patients with normal kidney function and potentially cost-saving in those with renal impairment.
+C1 [Altawalbeh, Shoroq M.; Alshogran, Osama Y.] Jordan Univ Sci & Technol, Dept Clin Pharm, Fac Pharm, POB 3030, Irbid 22110, Jordan.
+   [Smith, Kenneth J.] Univ Pittsburgh, Sch Med, Ctr Res Hlth Care, Sect Decis Sci, Pittsburgh, PA USA.
+RP Altawalbeh, SM (reprint author), Jordan Univ Sci & Technol, Dept Clin Pharm, Fac Pharm, POB 3030, Irbid 22110, Jordan.
+EM smaltawalbeh@just.edu.jo
+FU Jordan University of Science and Technology [87/2017]
+FX This project was supported by the Deanship of Scientific Research at
+   Jordan University of Science and Technology (grant no. 87/2017).
+CR Ademi Z, 2015, EUR J PREV CARDIOL, V22, P344, DOI 10.1177/2047487313514019
+   Agency for Healthcare Research and Quality, NAT REG EST HOSP US
+   Albers GW, 2005, JAMA-J AM MED ASSOC, V293, P690
+   Amin A, 2017, CURR MED RES OPIN, V33, P1595, DOI 10.1080/03007995.2017.1345729
+   Athanasakis K, 2017, AM J CARDIOVASC DRUG, V17, P123, DOI 10.1007/s40256-016-0204-1
+   Vega LB, 2017, NEFROLOGIA, V37, P244, DOI 10.1016/j.nefro.2016.08.006
+   Buckley LF, 2017, CLIN CARDIOL, V40, P46, DOI 10.1002/clc.22591
+   Camm AJ, 2010, EUR HEART J, V31, P2369, DOI 10.1093/eurheartj/ehq278
+   Chan KE, 2016, J AM COLL CARDIOL, V67, P2888, DOI 10.1016/j.jacc.2016.02.082
+   Charytan DM, 2016, CLIN J AM SOC NEPHRO, V11, P721, DOI 10.2215/CJN.09350915
+   Deitelzweig S, 2018, CLIN APPL THROMB-HEM, V24, P602, DOI 10.1177/1076029617750269
+   Dorian P, 2014, EUR HEART J, V35, P1897, DOI 10.1093/eurheartj/ehu006
+   Drummond MF, 2005, METHODS EC EVALUATIO
+   Fox KAA, 2011, EUR HEART J, V32, P2387, DOI 10.1093/eurheartj/ehr342
+   Garcia D, 2010, BLOOD, V115, P15, DOI 10.1182/blood-2009-09-241851
+   Giorgi Mariano Anibal, 2015, Health Econ Rev, V5, P52, DOI 10.1186/s13561-015-0052-8
+   Go AS, 2009, CIRCULATION, V119, P1363, DOI 10.1161/CIRCULATIONAHA.108.816082
+   Gold MR, 1996, COST EFFECTIVENESS H
+   Granger CB, 2014, CIRCULATION, V129, P1190, DOI 10.1161/CIRCULATIONAHA.113.007549
+   Hallinen T, 2016, SPRINGERPLUS, V5, DOI 10.1186/s40064-016-3024-5
+   Harel Z, 2017, CAN J CARDIOL, V33, P737, DOI 10.1016/j.cjca.2017.02.004
+   Harel Z, 2014, J AM SOC NEPHROL, V25, P431, DOI 10.1681/ASN.2013040361
+   Hart RG, 2013, CAN J CARDIOL, V29, pS71, DOI 10.1016/j.cjca.2013.04.005
+   Hattori N, 2012, NEUROL MED-CHIR, V52, P175, DOI 10.2176/nmc.52.175
+   Hernandez I, 2017, THROMB RES, V150, P123, DOI 10.1016/j.thromres.2016.10.006
+   Hijazi Z, 2016, JAMA CARDIOL, V1, P451, DOI 10.1001/jamacardio.2016.1170
+   Hijazi Z, 2014, CIRCULATION, V129, P961, DOI 10.1161/CIRCULATIONAHA.113.003628
+   Hohnloser SH, 2012, EUR HEART J, V33, P2821, DOI 10.1093/eurheartj/ehs274
+   Kamel H, 2012, NEUROLOGY, V79, P1428, DOI 10.1212/WNL.0b013e31826d5fe8
+   Kansal AR, 2013, BEST PRACT RES CL HA, V26, P225, DOI 10.1016/j.beha.2013.07.012
+   Krumholz HM, 2009, CIRC-CARDIOVASC QUAL, V2, P407, DOI 10.1161/CIRCOUTCOMES.109.883256
+   Lanitis T, 2014, THROMB RES, V134, P278, DOI 10.1016/j.thromres.2014.05.027
+   Lau YC, 2016, J AM COLL CARDIOL, V68, P1452, DOI 10.1016/j.jacc.2016.06.057
+   Lee SL, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0045512
+   Li XK, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0160026
+   Lutz J, 2017, INT J NEPHROL RENOV, V10, P135, DOI 10.2147/IJNRD.S105771
+   Neumann PJ, 2014, NEW ENGL J MED, V371, P796, DOI 10.1056/NEJMp1405158
+   Ntaios G, 2017, INT J STROKE, V12, P589, DOI 10.1177/1747493017700663
+   Pelliccia F, 2016, INT J CARDIOL, V225, P77, DOI 10.1016/j.ijcard.2016.09.129
+   Pinyol C, 2016, CARDIOL THER, V5, P171, DOI 10.1007/s40119-016-0066-2
+   Qamar A, 2016, CIRCULATION, V133, P1512, DOI 10.1161/CIRCULATIONAHA.115.018549
+   Qureshi W, 2014, AM J CARDIOL, V113, P662, DOI 10.1016/j.amjcard.2013.10.044
+   Roche Diagnostics and American Medical Association, 2015, MED REIMB HDB HEALTH
+   Sardar P, 2014, CAN J CARDIOL, V30, P888, DOI 10.1016/j.cjca.2014.04.015
+   Schirmer SH, 2010, J AM COLL CARDIOL, V56, P2067, DOI 10.1016/j.jacc.2010.09.017
+   Shah A, 2016, STROKE, V47, P1555, DOI 10.1161/STROKEAHA.115.012325
+   Smit Marcelle D, 2017, Evid Based Med, V22, P107, DOI 10.1136/ebmed-2017-110694
+   Soliman EZ, 2010, AM HEART J, V159, P1102, DOI 10.1016/j.ahj.2010.03.027
+   Stevanovic J, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0103974
+   Sullivan PW, 2005, MED CARE, V43, P736, DOI 10.1097/01.mlr.0000172050.67085.4f
+   Wisloff T, 2014, PHARMACOECONOMICS, V32, P601, DOI 10.1007/s40273-014-0152-z
+   WOLF PA, 1978, NEUROLOGY, V28, P973, DOI 10.1212/WNL.28.10.973
+NR 52
+TC 0
+Z9 1
+U1 0
+U2 3
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1098-3015
+EI 1524-4733
+J9 VALUE HEALTH
+JI Value Health
+PD DEC
+PY 2018
+VL 21
+IS 12
+BP 1365
+EP 1372
+DI 10.1016/j.jval.2018.06.009
+PG 8
+WC Economics; Health Care Sciences & Services; Health Policy & Services
+SC Business & Economics; Health Care Sciences & Services
+GA HC2LE
+UT WOS:000451632700003
+PM 30502779
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Chen, L
+   Gaver, JJ
+   Pottier, SW
+AF Chen, Leon
+   Gaver, Jennifer J.
+   Pottier, Steven W.
+TI An Investigation of the Short-Run and Long-Run Stock Returns Surrounding
+   Insurer Rating Changes
+SO JOURNAL OF RISK AND INSURANCE
+LA English
+DT Article
+ID PROPERTY-LIABILITY; SYSTEMIC RISK; INSURANCE; MARKET; BOND
+AB We find that stock returns move in the direction of insurer rating changes in the 12-month period prior to the announcement. There is an additional stock price response following the announcement of a downgrade, but no response to upgrade announcements. The reaction to a downgrade is more pronounced when it involves a smaller insurer, when it spans multiple levels, or when it is a threshold downgrade. Returns are significantly more negative during the 12 months leading up to a downgrade announcement during the financial crisis (2008 and 2009) compared to other sample years.
+C1 [Chen, Leon] Minnesota State Univ, Dept Finance, Coll Business, Mankato, MN 56001 USA.
+   [Gaver, Jennifer J.] Univ Georgia, Terry Coll Business, JM Tull Sch Accounting, Athens, GA 30602 USA.
+   [Pottier, Steven W.] Univ Georgia, Terry Coll Business, Dept Insurance Legal Studies & Real Estate, Athens, GA 30602 USA.
+RP Chen, L (reprint author), Minnesota State Univ, Dept Finance, Coll Business, Mankato, MN 56001 USA.
+EM yilin.chen@mnsu.edu; jgaver@uga.edu; spottier@.uga.edu
+CR A. M. Best, 1996, BESTS INS REP PROP C
+   A. M. Best, 1996, BESTS KEY RAT GUID L
+   A. M. Best, 1996, BESTS KEY RAT GUID P
+   A. M. Best, 1996, BESTS INS REP LIF HL
+   Berger AN, 1998, J FINANC SERV RES, V14, P117, DOI 10.1023/A:1008011312729
+   BERNARD VL, 1989, J ACCOUNTING RES, V27, P1, DOI 10.2307/2491062
+   Berry-Stolzle TR, 2014, J RISK INSUR, V81, P529, DOI 10.1111/jori.12042
+   BHUSHAN R, 1989, J ACCOUNT ECON, V11, P255, DOI 10.1016/0165-4101(89)90008-6
+   Campbell John Y., 1997, ECONOMETRICS FINANCI
+   Cowan A. R., 2007, EVENTUS 8 0 USERS GU
+   Cummins JD, 2014, J RISK INSUR, V81, P489, DOI 10.1111/jori.12039
+   Cummins JD, 1996, J BANK FINANC, V20, P1069
+   Dichev LD, 2001, J FINANC, V56, P173, DOI 10.1111/0022-1082.00322
+   DOHERTY NA, 2002, J FINANCIAL SERVICES, V21, P55
+   Doherty NA, 2012, J FINANC ECON, V106, P308, DOI 10.1016/j.jfineco.2012.05.012
+   Eckles D. L., 2012, DETERMINANTS ABNORMA
+   Epermanis K, 2006, J MONEY CREDIT BANK, V38, P1515, DOI 10.1353/mcb.2006.0081
+   Fama EF, 1998, J FINANC ECON, V49, P283, DOI 10.1016/S0304-405X(98)00026-9
+   FAMA EF, 1992, J FINANC, V47, P427, DOI 10.2307/2329112
+   Federal Reserve Bank of St. Louis, 2015, MOOD SEAS BAA CORP B
+   Gilchrist S, 2012, AM ECON REV, V102, P1692, DOI 10.1257/aer.102.4.1692
+   Goh JC, 1999, Q REV EC FINANCE, V39, P101, DOI DOI 10.1016/S1062-9769(99)80006-4
+   Halek M, 2010, J RISK INSUR, V77, P801, DOI 10.1111/j.1539-6975.2010.01368.x
+   HAND JRM, 1992, J FINANC, V47, P733, DOI 10.2307/2329121
+   Harrington SE, 2009, J RISK INSUR, V76, P785, DOI 10.1111/j.1539-6975.2009.01330.x
+   HOLTHAUSEN RW, 1986, J FINANC ECON, V17, P57, DOI 10.1016/0304-405X(86)90006-1
+   Keenan S. C., 1998, HIST DEFAULT RATES C
+   Kim Y, 2007, J BANK FINANC, V31, P3843, DOI 10.1016/j.jbankfin.2007.02.008
+   Kothari SP, 2009, J ACCOUNT RES, V47, P241, DOI 10.1111/j.1475-679X.2008.00318.x
+   Lai GC, 2008, J RISK INSUR, V75, P125, DOI 10.1111/j.1539-6975.2007.00251.x
+   Pontiff J, 1998, J FINANC ECON, V49, P141, DOI 10.1016/S0304-405X(98)00020-8
+   Pottier S. W., 2002, J FINANCIAL SERVICES, V21, P101
+   Pottier SW, 1999, J RISK INSUR, V66, P621, DOI 10.2307/253867
+   Sclafane S., 2000, NATL UNDERWRITER PRO, V104, P7
+   Simons K., 1991, NEW ENGL ECON REV, P51
+   SINGH AK, 1992, J RISK INSUR, V59, P310, DOI 10.2307/253197
+   Sommer DW, 1996, J RISK INSUR, V63, P501, DOI 10.2307/253623
+   Wade C, 2016, J RISK INSUR, V83, P475, DOI 10.1111/jori.12063
+NR 38
+TC 1
+Z9 1
+U1 1
+U2 4
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-4367
+EI 1539-6975
+J9 J RISK INSUR
+JI J. Risk Insur.
+PD MAR
+PY 2018
+VL 85
+IS 1
+BP 35
+EP 67
+DI 10.1111/jori.12138
+PG 33
+WC Business, Finance; Economics
+SC Business & Economics
+GA FW3DG
+UT WOS:000425185800002
+DA 2019-12-28
+ER
+
+PT J
+AU Nozdrev, SV
+AF Nozdrev, S. V.
+TI EAST ASIA - REGIONAL OR GLOBAL FINANCIAL INTEGRATION ?
+SO MGIMO REVIEW OF INTERNATIONAL RELATIONS
+LA Russian
+DT Article
+DE financial integration; East Asia; financial account of the balance of
+   payments; foreign exchange reserves; investment flows; cross-border
+   capital flows; intraregional integration
+AB The article considers the main directions of further financial integration of East Asian countries, developing deep and stable connections within the framework of global and regional economy. Currently, among the investment flows that lay ground for financial integration with other regions, the leading place is taken by funds from and to the countries of North America and Western Europe. At the same time, the growth in intraregional investment, especially in terms of assets, significantly exceeds growth from the group of developed countries, the share of participation of the latter in interregional relations is gradually decreasing. Through the development of regional integration at various levels of economic interaction, Asian countries are seeking ways to reduce vulnerability and "contagion" from the processes of financial globalization.
+   While the trends in regional financial integration have certain advantages, they also involve some risks. On the one hand, the Asian region can benefit from greater financial diversification and reduce the concentration and dependence from western economies. On the other hand, this process can bring imported volatility from other countries of the region and reduce the regulatory counteraction from various types of shocks that arise in the economies of these countries and beyond. The intensity of further convergence of the financial markets and institutional arrangements of Asian countries will be largely determined by the scenarios of development of the world economy, as its slowdown and, consequently, decrease of activity in the global capital market clearly leads to strengthening of regional integration processes.
+   The expansion of intraregional cross-border financial transactions requires a significant expansion of the regulatory framework for cooperation, the conclusion of two-and multilateral banking and investment agreements, as they directly determine the process of capital flows liberalization. As regional financial cooperation in Asia has not yet developed as in Western Europe and North America, it is important to pay attention to such essential elements as economic and financial supervision, normative harmonization of banking and securities market, strengthening of regional financial security system and maintenance of development of various segment of financial market, first of all bonds in local currency.
+   In the process of work the basic methods of economic analysis were applied, namely basic system and statistical methods. The use of the system approach allowed to consider the movement of capital flows from an to Asia over a long period of time, the evolution of financial integration models. Calculations and comparisons, the construction of tables was carried out on the basis of statistical methods, which are applied for the study of currency and credit relations.
+   The information base of the studies was based on reports and statistics of the World Bank (IBRD), the International Monetary Fund (IMF), the Asian Development Bank, as well as analytical materials of the Institute of World Economy and International Relations of RAS.
+C1 [Nozdrev, S. V.] Russian Acad Sci, Primakov Natl Res Inst World Econ & Int Relat, 23 Profsoyuznaya Str, Moscow 117997, Russia.
+RP Nozdrev, SV (reprint author), Russian Acad Sci, Primakov Natl Res Inst World Econ & Int Relat, 23 Profsoyuznaya Str, Moscow 117997, Russia.
+EM nozdrev-s-v@imemo.ru
+CR Arapova Ye. A., 2016, REGIONALIZATSIYA VOS
+   Bogacheva O. V, 2016, FINANSOVYJ ZH, V5, P63
+   Capannelli G., 2014, POLITICAL EC ASIAN R, DOI [10.1007/978-4-431-54568-2, DOI 10.1007/978-4-431-54568-2]
+   Chan YM, 2014, FRONT AGING NEUROSCI, V6, DOI 10.3389/fnagi.2014.00226
+   Demina Ja. V, 2016, PROSTRANSTVENNAJA JE, P81
+   Filardo A., 2014, J ASIAN EC, P1
+   Ford N, 2017, APPL ECON LETT, V24, P325, DOI 10.1080/13504851.2016.1186790
+   Hsieh PL, 2013, J INT ECON LAW, V16, P119, DOI 10.1093/jiel/jgs045
+   Jr. Rogelio V. Mercado, 2013, International Economic Journal, V27, P497
+   Kabir L. S, 2016, COMMENTS FDA DRAFT E, V1, P12
+   Kalemli-Ozcan S, 2013, J INT ECON, V89, P495, DOI 10.1016/j.jinteco.2012.07.001
+   Kawai Massahiro, 2015, MONETARY FINANCIAL C
+   Kim S, 2012, REV INT ECON, V20, P332, DOI 10.1111/j.1467-9396.2012.01025.x
+   Lee HH, 2013, WORLD ECON, V36, P396, DOI 10.1111/twec.12030
+   Liu Q., 2013, FINANCE ASIA I REGUL
+   Noland M, 2015, STRENGTHENING ASIAS
+   Park CY, 2011, ASIAN ECON POLICY R, V6, P176, DOI 10.1111/j.1748-3131.2011.01193.x
+   Sahay R., 2015, FUTURE ASIAN FINANCE
+   Uolsh Dzh. P., 2014, FINANSY RAZVITIE, P18
+   Yam J., 2007, BIS REV, P1
+   Yunjong Wang, 2004, Journal of Asian Economics, V15, P939, DOI 10.1016/j.asieco.2004.09.004
+NR 21
+TC 0
+Z9 0
+U1 0
+U2 2
+PU MGIMO UNIV PRESS
+PI MOSCOW
+PA PROSPEKT VERNADSKOGO, 76, MOSCOW, 119454, RUSSIA
+SN 2071-8160
+EI 2541-9099
+J9 MGIMO REV INT RELAT
+JI MGIMO Rev. Int. Relat.
+PY 2018
+IS 5
+BP 49
+EP 70
+DI 10.24833/2071-8160-2018-5-62-49-70
+PG 22
+WC International Relations
+SC International Relations
+GA HB3GF
+UT WOS:000450938300003
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Ji, Q
+   Liu, BY
+   Nehler, H
+   Uddin, GS
+AF Ji, Qiang
+   Liu, Bing-Yue
+   Nehler, Henrik
+   Uddin, Gazi Salah
+TI Uncertainties and extreme risk spillover in the energy markets: A
+   time-varying copula-based CoVaR approach
+SO ENERGY ECONOMICS
+LA English
+DT Article
+DE Uncertainty; Time-varying copula; Delta CoVaR; Extreme risk
+ID ECONOMIC-POLICY UNCERTAINTY; DEPENDENCE STRUCTURE; SYSTEMIC RISK;
+   STOCK-MARKET; OIL; VOLATILITY; DYNAMICS; EQUITY; CONNECTEDNESS
+AB In this paper, we explore the impact of uncertainties on energy prices by measuring four types of Delta Conditional Value-at-Risk (Delta CoVaR) using six time-varying copulas. Three different measures of uncertainty (economic policy, financial markets and energy markets) are considered, and the magnitude and asymmetric effects of their influence are investigated. Our results suggest that there generally exists negative dependence between energy returns and changes in uncertainty. The risks of clean energy and crude oil returns are more sensitive to uncertainties in the financial and energy markets, while the impact of economic policy uncertainty is relatively weak. The upside and downside CoVaRs and Delta CoVaRs demonstrate significant asymmetric effects in response to extreme uncertainty movement. Our findings therefore have important implications for energy portfolio investment. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Ji, Qiang] Chinese Acad Sci, Ctr Energy & Environm Policy Res, Inst Sci & Dev, Beijing 100190, Peoples R China.
+   [Ji, Qiang] Univ Chinese Acad Sci, Sch Publ Policy & Management, Beijing 100049, Peoples R China.
+   [Liu, Bing-Yue] Beihang Univ, Sch Econ & Management, Beijing 100191, Peoples R China.
+   [Nehler, Henrik; Uddin, Gazi Salah] Linkoping Univ, Dept Management & Engn, S-58183 Linkoping, Sweden.
+RP Uddin, GS (reprint author), Linkoping Univ, Dept Management & Engn, S-58183 Linkoping, Sweden.
+EM gazi.salah.uddin@liu.se
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71774152, 91546109]; Youth Innovation Promotion
+   Association of the Chinese Academy of Sciences [Y7X0231505]; Jan
+   Wallander and Tom Hedelius Foundation
+FX We are grateful to faculty members of the University of Vaasa, Stavanger
+   University, Warsaw School of Economics and Linkoping University as well
+   as seminar participants at other institutions for helpful discussions.
+   We particularly thank Panu Kalmi, Juha Junttila, Anupam Datta and Michal
+   Rubaszek for valuable comments. The first author acknowledges support
+   from the National Natural Science Foundation of China (Grant No.
+   71774152, No. 91546109) and the Youth Innovation Promotion Association
+   of the Chinese Academy of Sciences (Grant: Y7X0231505). The
+   corresponding author (Gazi Salah Uddin) is thankful for the financial
+   support provided by the Jan Wallander and Tom Hedelius Foundation.
+CR Aastveit KA, 2017, J INT MONEY FINANC, V76, P50, DOI 10.1016/j.jimonfin.2017.05.003
+   Aboura S, 2013, FINANC RES LETT, V10, P131, DOI 10.1016/j.frl.2013.05.003
+   Agbeyegbe TD, 2015, REV FINANC ECON, V27, P28, DOI 10.1016/j.rfe.2015.08.001
+   Aloui R, 2016, ENERG ECON, V55, P92, DOI 10.1016/j.eneco.2016.01.012
+   Antonakakis N, 2016, INT REV FINANC ANAL, V44, P111, DOI 10.1016/j.irfa.2016.01.006
+   Aysan AF, 2015, SINGAP ECON REV, V60, DOI 10.1142/S0217590815020014
+   Bachmann R, 2013, AM ECON J-MACROECON, V5, P217, DOI 10.1257/mac.5.2.217
+   Baker SR, 2016, Q J ECON, V131, P1593, DOI 10.1093/qje/qjw024
+   Barrero J. M., 2016, SHORT LONG RUN UNCER
+   Bekaert G, 2013, J MONETARY ECON, V60, P771, DOI 10.1016/j.jmoneco.2013.06.003
+   Bekiros S, 2017, EUR J OPER RES, V256, P945, DOI 10.1016/j.ejor.2016.06.052
+   Bloom N, 2014, J ECON PERSPECT, V28, P153, DOI 10.1257/jep.28.2.153
+   Chen L, 2017, EUR J OPER RES, V258, P230, DOI 10.1016/j.ejor.2016.08.033
+   Demir E, 2017, EMERG MARK REV, V33, P189, DOI 10.1016/j.ememar.2017.08.001
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Fernandes M, 2014, J BANK FINANC, V40, P1, DOI 10.1016/j.jbankfin.2013.11.004
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Guo MY, 2016, CHINA FINANC REV INT, V6, P264, DOI 10.1108/CFRI-09-2015-0122
+   Ji Q., 2018, INT REV FINANC ANAL, DOI [10.1016/j.irfa.2018.08.002, DOI 10.1016/J.IRFA.2018.08.002]
+   Ji Q, 2018, N AM J ECON FINANC, DOI [10.1016/inajef2018.09.004, DOI 10.1016/INAJEF2018.09.004]
+   Ji Q, 2019, ENERG ECON, V77, P80, DOI 10.1016/j.eneco.2018.07.012
+   Ji Q, 2019, FINANC RES LETT, V28, P376, DOI 10.1016/j.frl.2018.06.005
+   Ji Q, 2018, ENERG ECON, V75, P14, DOI 10.1016/j.eneco.2018.08.015
+   Ji Q, 2016, RES INT BUS FINANC, V37, P242, DOI 10.1016/j.ribaf.2015.11.016
+   Joe H., 1996, 166 U BRIT COL DEP S
+   Joe H., 1997, MULTIVARIATE MODELS
+   Joets M, 2015, EUR J OPER RES, V247, P204, DOI 10.1016/j.ejor.2015.05.061
+   Joets M, 2014, ECON MODEL, V40, P392, DOI 10.1016/j.econmod.2013.11.023
+   Jurado K, 2015, AM ECON REV, V105, P1177, DOI 10.1257/aer.20131193
+   Li XM, 2017, PAC-BASIN FINANC J, V46, P41, DOI 10.1016/j.pacfin.2017.08.005
+   Liu BY, 2017, ENERG ECON, V68, P53, DOI 10.1016/j.eneco.2017.09.011
+   Liu BY, 2017, QUANT FINANC, V17, P437, DOI 10.1080/14697688.2016.1205208
+   Luo CQ, 2016, CHINA FINANC REV INT, V6, P284, DOI 10.1108/CFRI-08-2015-0118
+   Mele A, 2015, J BANK FINANC, V52, P256, DOI 10.1016/j.jbankfin.2014.04.030
+   Mellios C, 2016, EUR J OPER RES, V250, P493, DOI 10.1016/j.ejor.2015.10.045
+   Mensi W, 2017, J BANK FINANC, V75, P258, DOI 10.1016/j.jbankfin.2016.11.017
+   NALEBUFF B, 1987, REV ECON STUD, V54, P265, DOI 10.2307/2297516
+   Pan ZY, 2014, CHINA FINANC REV INT, V4, P42, DOI 10.1108/CFRI-08-2012-0091
+   Pastor L, 2013, J FINANC ECON, V110, P520, DOI 10.1016/j.jfineco.2013.08.007
+   Patton A, 2009, HDB FINANCIAL TIME S, P767
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2012, J MULTIVARIATE ANAL, V110, P4, DOI 10.1016/j.jmva.2012.02.021
+   Reboredo JC, 2016, J BANK FINANC, V62, P76, DOI 10.1016/j.jbankfin.2015.10.011
+   Wisniewski TP, 2015, INT REV FINANC ANAL, V42, P447, DOI 10.1016/j.irfa.2015.09.009
+   Yin LB, 2014, APPL ECON LETT, V21, P711, DOI 10.1080/13504851.2014.887181
+   Zhang DY, 2017, ENERG ECON, V62, P323, DOI 10.1016/j.eneco.2017.01.009
+   Zheng Y., 2014, APPL FINANCIAL EC, V24, P1491, DOI [10.1080/09603107.2014. 925073, DOI 10.1080/09603107.2014]
+NR 47
+TC 15
+Z9 15
+U1 15
+U2 26
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD OCT
+PY 2018
+VL 76
+BP 115
+EP 126
+DI 10.1016/j.eneco.2018.10.010
+PG 12
+WC Economics
+SC Business & Economics
+GA HE6FJ
+UT WOS:000453498400009
+DA 2019-12-28
+ER

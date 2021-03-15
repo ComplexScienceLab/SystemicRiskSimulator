@@ -1,0 +1,579 @@
+
+PT J
+AU Zhu, XN
+   Wang, WN
+   Wang, HS
+   Hardle, WK
+AF Zhu, Xuening
+   Wang, Weining
+   Wang, Hansheng
+   Haerdle, Wolfgang Karl
+TI Network quantile autoregression
+SO JOURNAL OF ECONOMETRICS
+LA English
+DT Article
+DE Social network; Quantile regression; Autoregrssion; Systemic risk;
+   Financial contagion; Shared ownership
+ID COMMUNITY DETECTION; REGRESSION; RISK; CONNECTEDNESS; INFERENCE;
+   TOPOLOGY; MODELS
+AB The complex tail dependency structure in a dynamic network with a large-number of nodes is an important object to study. We propose a network quantile autoregression model (NQAR), which characterizes the dynamic quantile behavior. Our NQAR model consists of a system of equations, of which we relate a response to its connected nodes and node Specific characteristics in a quantile autoregression process. we show the estimation of the NQAR model and the asymptotic properties with assumptions on the network structure. For this propose we develop a network Bahadur representation that gives us direct insight into the parameter asymptotics. Moreover innovative tail-event driven impulse functions are defined. Finally, We demonstrate the usage of our model by investigating the financial contagions in the Chinese stock Market accounting for shared ownership of Companies. We find higher network dependency when the market is exposed to a higher volatility level. (C) 2019 Published by Elsevier B.V.
+C1 [Zhu, Xuening] Fudan Univ, Sch Data Sci, Shanghai, Peoples R China.
+   [Wang, Weining; Haerdle, Wolfgang Karl] Humboldt Univ, CASE, Unter Linden 6, D-10099 Berlin, Germany.
+   [Wang, Hansheng] Peking Univ, Guanghua Sch Management, Beijing, Peoples R China.
+   [Wang, Weining] City Univ London, Dept Econ, London, England.
+   [Haerdle, Wolfgang Karl] Singapore Management Univ, Sim Kee Boon Inst Financial Econ, Sch Econ, 90 Stamford Rd,6th Level, Singapore 178903, Singapore.
+RP Wang, WN (reprint author), Humboldt Univ, CASE, Unter Linden 6, D-10099 Berlin, Germany.
+EM haerdle@hu-berlin.de
+FU National Natural Scierice Foundation of China (NSFC)National Natural
+   Science Foundation of China [U1811461]; Shanghai Sailing Program for
+   Youth Science and Technology Excellence [19YF1402700]; Fudan-Xinzailing
+   joint research centre for big data, School of Data Science, Fudan
+   University. NIDA, NIH [P50 DA039838]; NSFNational Science Foundation
+   (NSF) [DMS 1512422]; German Research Foundition (DFG)German Research
+   Foundation (DFG)Ministry of Education and Science, Spain [IRTG 1792];
+   National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [11831008, 11525101, 71532001, 71332006]; China's
+   National Key Research Special Program [2016YFC0207704]
+FX Xuening Zhu is supported by National Natural Scierice Foundation of
+   China (NSFC, U1811461), Shanghai Sailing Program for Youth Science and
+   Technology Excellence (19YF1402700), Fudan-Xinzailing joint research
+   centre for big data, School of Data Science, Fudan University. NIDA, NIH
+   grants P50 DA039838, and a NSF grant DMS 1512422. Weining Wang and
+   Wolfgang Karl Hardle are supported by German Research Foundition (DFG)
+   on "quantile method for complex financial system" and IRTG 1792.
+   Hansheng Wang's research is partially supported by National Natural
+   Science Foundation of China (No. 11831008, 11525101, 71532001,
+   71332006). It is also supported in part by China's National Key Research
+   Special Program (No.2016YFC0207704).
+CR Abello J., 2013, HDB MASSIVE DATA SET, V4
+   Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Amini AA, 2013, ANN STAT, V41, P2097, DOI 10.1214/13-AOS1138
+   Anton M., 2018, WORKING PAPER
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Cappiello L, 2014, J FINANC ECONOMET, V12, P645, DOI 10.1093/jjfinec/nbu009
+   Chavleishvili S., 2016, WORKING PAPER
+   Chen CYH, 2019, J ECONOMETRICS, V208, P282, DOI 10.1016/j.jeconom.2018.09.016
+   Chen XL, 2013, J MARKETING RES, V50, P95, DOI 10.1509/jmr.12.0026
+   Corsi F, 2016, OPER RES, V64, P1073, DOI 10.1287/opre.2015.1464
+   Cressie N., 2015, STAT SPATIO TEMPORAL
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   Fama EF, 2015, J FINANC ECON, V116, P1, DOI 10.1016/j.jfineco.2014.10.010
+   Fan J., 2010, ISSUES QUANTIL UNPUB
+   Fitzenberger B., 2013, EC APPL QUANTILE REG
+   Gaglianone WP, 2011, J BUS ECON STAT, V29, P150, DOI 10.1198/jbes.2010.07318
+   Granger C. W. J., 2000, Q REV EC FINANCE, V40, P337, DOI DOI 10.1016/S1062-9769(00)00042-9
+   Hardie WK, 2016, J ECONOMETRICS, V192, P499, DOI 10.1016/j.jeconom.2016.02.013
+   Hasan MN, 1997, ECONOMETRICA, V65, P133, DOI 10.2307/2171816
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Herz A, 2015, SOC NETWORKS, V40, P64, DOI 10.1016/j.socnet.2014.08.001
+   Hoff P. D., 2012, J AM STAT ASSOC, V97, P1090
+   Koenker R, 2001, J ECON PERSPECT, V15, P143, DOI 10.1257/jep.15.4.143
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R, 1999, J AM STAT ASSOC, V94, P1296, DOI 10.2307/2669943
+   Koenker R., 2005, QUANTILE REGRESSION
+   Koenker R, 2006, J AM STAT ASSOC, V101, P980, DOI 10.1198/016214506000000672
+   Lee LF, 2004, ECONOMETRICA, V72, P1899, DOI 10.1111/j.1468-0262.2004.00558.x
+   Lee LF, 2009, SPAT ECON ANAL, V4, P301, DOI 10.1080/17421770903114703
+   Li GD, 2015, J AM STAT ASSOC, V110, P246, DOI 10.1080/01621459.2014.892007
+   Lutkepohl H, 2005, NEW INTRO MULTIPLE T
+   Newman M. E. J., 2011, STRUCTURE DYNAMICS N
+   Novy D, 2013, ECON INQ, V51, P101, DOI 10.1111/j.1465-7295.2011.00439.x
+   PORTNOY S, 1991, J MULTIVARIATE ANAL, V38, P100, DOI 10.1016/0047-259X(91)90034-Y
+   Portnoy S, 1997, ANN STAT, V25, P414
+   Sewell DK, 2017, BAYESIAN ANAL, V12, P351, DOI 10.1214/16-BA1000
+   Sewell DK, 2015, J AM STAT ASSOC, V110, P1646, DOI 10.1080/01621459.2014.988214
+   White H, 2015, J ECONOMETRICS, V187, P169, DOI 10.1016/j.jeconom.2015.02.004
+   Zhang D., 2015, ARXIV150807036
+   Zhang JF, 2013, J AM STAT ASSOC, V108, P1295, DOI 10.1080/01621459.2012.758587
+   Zhang X., 2014, ARXIV14061037
+   Zhao YP, 2011, P NATL ACAD SCI USA, V108, P7321, DOI 10.1073/pnas.1006642108
+   Zhou J, 2017, J BUS ECON STAT, V35, P130, DOI 10.1080/07350015.2015.1061437
+   Zhu X., 2018, WORKING PAPER
+   Zhu XN, 2017, ANN STAT, V45, P1096, DOI 10.1214/16-AOS1476
+   Zou T, 2017, J AM STAT ASSOC, V112, P266, DOI 10.1080/01621459.2015.1131699
+NR 47
+TC 0
+Z9 0
+U1 13
+U2 13
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-4076
+EI 1872-6895
+J9 J ECONOMETRICS
+JI J. Econom.
+PD SEP
+PY 2019
+VL 212
+IS 1
+BP 345
+EP 358
+DI 10.1016/j.jeconom.2019.04.034
+PG 14
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA IW3IX
+UT WOS:000484874800018
+DA 2019-12-27
+ER
+
+PT J
+AU Tente, N
+   Von Westernhagen, N
+   Slopek, U
+AF Tente, Natalia
+   Von Westernhagen, Natalja
+   Slopek, Ulf
+TI M-PRESS-CreditRisk: Microprudential and Macroprudential Capital
+   Requirements for Credit Risk under Systemic Stress
+SO JOURNAL OF MONEY CREDIT AND BANKING
+LA English
+DT Article
+DE C15; C23; C63; G21; G28; systemic credit risk; tail dependence; stress
+   testing; microprudential capital requirements; macroprudential buffers
+ID GMM
+AB M-PRESS-CreditRisk is a novel stress testing approach that can help authorities gauge banks' capital adequacy related to credit risk. For the first time, it combines the assessment of microprudential capital requirements under Pillars 1 and 2 and macroprudential buffers in a unified, coherent framework. Its core element is an advanced credit portfolio model-SystemicCreditRisk-built upon a rich, nonlinear dependence structure for correlated bank portfolios. The model is applied to a sample of 12 systemically important German banking groups and delivers measures for systemic credit risk and the banks' contributions to it in both baseline and stress scenarios.
+C1 [Tente, Natalia; Von Westernhagen, Natalja] Deutsch Bundesbank, Directorate Gen Financial Stabil, Frankfurt, Germany.
+   [Slopek, Ulf] Deutsch Bundesbank, Directorate Gen Econ, Execut Div, Frankfurt, Germany.
+RP Tente, N (reprint author), Deutsch Bundesbank, Directorate Gen Financial Stabil, Frankfurt, Germany.
+EM natalia.tente@bundesbank.de; natalja.von.westernhagen@bundesbank.de;
+   ulf.slopek@bundesbank.de
+CR Aas K, 2004, SAMBA2204 NORW COMP
+   Acerbi C, 2002, J BANK FINANC, V26, P1487, DOI 10.1016/S0378-4266(02)00283-2
+   Admati A. R., 2013, BANKERS NEW CLOTHES
+   Admati Anat R., 2013, 23 M PLANCK I RES CO
+   Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Allen F, 2013, J MONEY CREDIT BANK, V45, P121, DOI 10.1111/jmcb.12038
+   Anderson Ron, 2018, WP18197 IMF
+   Barrell R, 2004, ECON MODEL, V21, P877, DOI 10.1016/j.econmod.2003.10.005
+   Basel Committee on Bank Supervision (BCBS), 2013, GLOBAL SYSTEMICALLY
+   Basel Committee on Banking Supervision (BCBS), 2011, BAS 3 GLOB REG FRAM
+   Basel Committee on Banking Supervision (BCBS), 2006, INT CONV CAP MEAS CA
+   Basel Committeeon Banking Supervision-BCBS, 2018, STRESS TEST PRINC
+   BCBS, 2012, FRAM DEAL DOM SYST I
+   Beck Roland, 2013, WORKING PAPER SERIES, V1515
+   Bednarek Peter, 2015, 442015 DTSCH BUND
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   Boegelein L, 2004, SPRINGER FINANCE, P231
+   Bonti G., 2006, J CREDIT RISK, V2, P115
+   Boss Michael, 2006, 2 OEST NAT
+   Burrows Oliver, 2012, 17 BANK ENGL
+   Busch Ramona, 2015, 232015 DTSCH BUND
+   Caruana Jaime, 2010, SYSTEMIC RISK DEAL I
+   Catte P, 2011, J POLICY MODEL, V33, P787, DOI 10.1016/j.jpolmod.2011.06.001
+   Clerc Laurent, 2016, OCCASIONAL PAPER SER, V9
+   Cont Rama, 2017, 22017 NORG BANK
+   CSFB, 1997, CREDITRISK UNPUB
+   Dagher Jihad, 2016, SDB1604 IMF
+   Danielsson J, 2016, J MONEY CREDIT BANK, V48, P795, DOI 10.1111/jmcb.12318
+   Darrell D, 2003, PRINC SER FINANC, P1
+   Das S., 2006, J FIXED INCOME, V16, P7, DOI DOI 10.3905/JFI.2006.656006
+   Dees Stephane, 2017, STAMPEURO STRESS TES
+   Demirguc-Kunt Asli, 1998, IMF STAFF PAPERS, V45
+   Dent Kieran, 2016, Q B, V56
+   Detken Carsten, 2014, OCCASIONAL PAPER SER, V5
+   Deutsche Bundesbank, 2013, MACR OV GERM FRAM I, P39
+   Deutsche Bundesbank, 2011, APPR MEAS MACR TREAT, P37
+   Dullmann K, 2014, FINANC MARK PORTFOLI, V28, P337, DOI 10.1007/s11408-014-0236-y
+   EBA, 2014, CRIT DET COND APPL A
+   EBA, 2014, GUID COMM PROC METH
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   European Banking Authority (EBA), 2014, METH NOT EU WID STRE
+   Foglia A, 2009, INT J CENT BANK, V5, P9
+   FRB, 2016, DODD FRANK ACT STRES
+   Freixas X, 2013, J MONEY CREDIT BANK, V45, P37, DOI 10.1111/jmcb.12036
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Gerlach Stefan, 2009, NOTE
+   Giese G, 2004, SPRINGER FINANCE, P153
+   Glogova Evgenia, 2006, 12 OEST NAT
+   Gordy MB, 2000, J BANK FINANC, V24, P119, DOI 10.1016/S0378-4266(99)00054-0
+   Gorton Gary, 2012, 18455 NBER
+   Hellwig Martin F., 2013, 31 M PLANK I RES COL
+   Henry Jerome, 2013, EUROPEAN CENTRAL BAN, V152
+   Hirtle Beverly, 2014, 696 FED BANK NEW YOR
+   Hofert M, 2013, J SFDS, V154, P25
+   Hughes Edwin J., 1962, THESIS
+   IMF, 2012, MACR STRESS TE UNPUB
+   Jakubik Petr, 2011, BIS PAPERS, V60
+   Jobst Andreas A., 2013, WP1368 IMF
+   Joe H., 1997, MULTIVARIATE MODELS
+   KALKBRENER M, 2015, J RISK MANAG FINANCI, V8, P34
+   Kapinos Pavel, 2018, J FINANCIAL PERSPECT, V5, P1
+   Klein N., 2013, 1372 INT MON FUND
+   Lesko M, 2004, SPRINGER FINANCE, P249
+   Louzis DP, 2012, J BANK FINANC, V36, P1012, DOI 10.1016/j.jbankfin.2011.10.012
+   Nelsen RB, 1999, LECT NOTES STAT, V139
+   Nkusu Mwanza, 2011, 11161 INT MON FUND
+   OeNB, 2002, 3 OENB, P64
+   Okhrin O, 2013, J ECONOMETRICS, V173, P189, DOI 10.1016/j.jeconom.2012.12.001
+   Okhrin Ostap, 2012, 2012036 SFB
+   Ongena S, 2012, EUR ECON REV, V56, P830, DOI 10.1016/j.euroecorev.2012.02.001
+   Ongena Steven, 2015, 092015 DTSCH BUND
+   PRA, 2015, PRAS METH SETT PILL
+   Puzanova N, 2013, CREDIT SECURITIZATIONS AND DERIVATIVES: CHALLENGES FOR THE GLOBAL MARKETS, P95
+   Puzanova N, 2013, J BANK FINANC, V37, P1243, DOI 10.1016/j.jbankfin.2012.11.017
+   Puzanova Natalia, 2011, 142011 DTSCH BUND
+   R Core Team, 2014, R LANG ENV STAT COMP
+   Roodman D, 2009, STATA J, V9, P86, DOI 10.1177/1536867X0900900106
+   Roodman D, 2009, OXFORD B ECON STAT, V71, P135, DOI 10.1111/j.1468-0084.2008.00542.x
+   Salas V., 2002, J FINANCIAL SERVICES, V22, P203, DOI DOI 10.1023/A:1019781109676
+   Schmieder C., 2006, SCHMOLLERS JB, V126, P653
+   Smaga Pawel, 2014, 5 SRC LOND SCH EC PO
+   Sorge M., 2004, BIS WORKING PAPERS, V165
+   Windmeijer F, 2005, J ECONOMETRICS, V126, P25, DOI 10.1016/j.jeconom.2004.02.005
+NR 84
+TC 0
+Z9 0
+U1 4
+U2 4
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-2879
+EI 1538-4616
+J9 J MONEY CREDIT BANK
+JI J. Money Credit Bank.
+PD OCT
+PY 2019
+VL 51
+IS 7
+BP 1923
+EP 1961
+DI 10.1111/jmcb.12636
+PG 39
+WC Business, Finance; Economics
+SC Business & Economics
+GA IX9GZ
+UT WOS:000485997400006
+DA 2019-12-28
+ER
+
+PT J
+AU Ahn, K
+   Lee, D
+   Sohn, S
+   Yang, B
+AF Ahn, K.
+   Lee, D.
+   Sohn, S.
+   Yang, B.
+TI Stock market uncertainty and economic fundamentals: an entropy-based
+   approach
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Entropy; Stock market uncertainty; Economic activities; Systemic risk
+ID RETURNS; VOLATILITY; BANKING; DEFAULT
+AB This study investigates the effects of stock market uncertainty on economic fundamentals, represented by economic activities and systemic risk, in China. To capture the uncertainty in the Chinese stock market precisely, we use the entropy measure through symbolic time-series analysis. The empirical findings reveal strong spillover effects from stock market uncertainty to economic fundamentals. Specifically, an uncertainty shock generates (i) a short-term decline in industrial production, (ii) a rapid drop and rebound in the composite leading indicator, and (iii) an increase in systemic risk. To understand these findings, we suggest and validate the transmission channel through changes in consumption and investment.
+C1 [Ahn, K.] Korea Adv Inst Sci & Technol, Grad Sch Future Strategy, Daejeon, South Korea.
+   [Lee, D.] Iowa State Univ, Human Dev Family Studies, Ames, IA USA.
+   [Sohn, S.] Peking Univ, HSBC Business Sch, Shenzhen, Peoples R China.
+   [Yang, B.] Bocconi Univ, Dept Finance, Milan, Italy.
+RP Sohn, S (reprint author), Peking Univ, HSBC Business Sch, Shenzhen, Peoples R China.
+EM sungbin.sohn@phbs.pku.edu.cn
+OI Sohn, Sungbin/0000-0002-9160-7291; Lee, Daeyong/0000-0002-8247-9179;
+   Ahn, Kwangwon/0000-0003-3611-183X; yang, biao/0000-0002-0046-1531
+CR Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Ahn K., 2015, 23 SAID BUS SCH
+   Alexopoulos M, 2009, 352 U TOR DEP EC
+   Allen F., 2012, W17828 NBER
+   Atkeson AG, 2017, RES ECON, V71, P613, DOI 10.1016/j.rie.2017.05.003
+   Bao J., 2016, 20160302 FISH COLL B
+   BLANCHARD OJ, 1989, AM ECON REV, V79, P655
+   Bloom N, 2009, ECONOMETRICA, V77, P623, DOI 10.3982/ECTA6248
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Cathcard L., 2004, J FIXED INCOME, V14, P60, DOI DOI 10.3905/jfi.2004.419577
+   Chan-Lau JA, 2007, J BANK REGUL, V9, P14, DOI 10.1057/palgrave.jbr.2350056
+   Chauvet M., 1998, J EC SOCIAL MEAS, V25, P235, DOI DOI 10.3233/JEM-1999-0166
+   Chava S, 2010, REV FINANC STUD, V23, P2523, DOI 10.1093/rfs/hhp107
+   Chen T., 2017, W24014 NBER
+   China Banking Regulatory Commission, 2013, ANN REPORT
+   Choudhry T, 2003, J MACROECON, V25, P367, DOI 10.1016/S0164-0704(03)00043-0
+   Clausius R., 1850, MOTIVE POWER HEAT LA
+   Daw CS, 2000, PHYS REV E, V62, P1912, DOI 10.1103/PhysRevE.62.1912
+   Dehuan J., 2008, ACAD ACCOUNT FINANC, V12, P79
+   Ruiz MD, 2012, ENTROPY-SWITZ, V14, P74, DOI 10.3390/e14010074
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Ebrahimi N, 1999, J ECONOMETRICS, V90, P317, DOI 10.1016/S0304-4076(98)00046-3
+   Ejarque JM, 2009, ECONOMICA, V76, P574, DOI 10.1111/j.1468-0335.2008.00694.x
+   FAMA EF, 1990, J FINANC, V45, P1089, DOI 10.2307/2328716
+   Finney C.E., 1998, INT MECH ENG C EXPO, V83, P687
+   Franses PH, 1999, INT J FORECASTING, V15, P1, DOI 10.1016/S0169-2070(98)00053-3
+   Girardin E, 2013, ECON MODEL, V34, P59, DOI 10.1016/j.econmod.2012.12.001
+   Guo J, 2015, APPL ECON, V47, P12, DOI 10.1080/00036846.2014.959653
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Kantz H, 2003, NONLINEAR TIME SERIE
+   LEE BS, 1992, J FINANC, V47, P1591, DOI 10.2307/2328955
+   Maasoumi E., 1993, ECONOMET REV, V12, P137, DOI [10.1080/07474939308800260, DOI 10.1080/07474939308800260]
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   OECD, 2017, COMP LEAD IND CLI, DOI [10.1787/4a174487-en, DOI 10.1787/4A174487-EN]
+   Oh G, 2015, PHYSICA A, V419, P464, DOI 10.1016/j.physa.2014.10.065
+   OHARA M, 1990, J FINANC, V45, P1587, DOI 10.2307/2328751
+   Osiewalski K, 2012, CENT EUR J ECONOM MO, V4, P169
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Raunig B., 2010, MONET POLICY EC, V11, P54
+   Raunig B., 2011, 168 OEST NAT
+   Ravn MO, 2002, REV ECON STAT, V84, P371, DOI 10.1162/003465302317411604
+   ROMER CD, 1990, Q J ECON, V105, P597, DOI 10.2307/2937892
+   Rousseeuw PJ, 2011, WIRES DATA MIN KNOWL, V1, P73, DOI 10.1002/widm.2
+   SHANNON CE, 1948, BELL SYST TECH J, V27, P623, DOI 10.1002/j.1538-7305.1948.tb00917.x
+   Sun RR, 2013, CHINA ECON REV, V26, P56, DOI 10.1016/j.chieco.2013.03.003
+   Tsomocos DP, 2003, J MATH ECON, V39, P619, DOI 10.1016/S0304-4068(03)00045-4
+   Wang X., 2010, INT RES J FINANCE EC, V49, P149
+   Wold H, 1954, ECONOMETRICA, V22, P162, DOI 10.2307/1907540
+   Xu WD, 2011, MATH COMPUT MODEL, V54, P610, DOI 10.1016/j.mcm.2011.03.004
+NR 49
+TC 2
+Z9 2
+U1 6
+U2 6
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD JUL 3
+PY 2019
+VL 19
+IS 7
+BP 1151
+EP 1163
+DI 10.1080/14697688.2019.1579922
+PG 13
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA ID8SY
+UT WOS:000471957100001
+DA 2019-12-28
+ER
+
+PT J
+AU Ji, Q
+   Liu, BY
+   Fan, Y
+AF Ji, Qiang
+   Liu, Bing- Yue
+   Fan, Ying
+TI Risk dependence of CoVaR and structural change between oil prices and
+   exchange rates: A time-varying copula model
+SO ENERGY ECONOMICS
+LA English
+DT Article; Proceedings Paper
+CT 2nd Energy Finance Conference
+CY 2017
+CL Zhejiang Univ, Hangzhou, PEOPLES R CHINA
+HO Zhejiang Univ
+DE Dynamic dependence; CoVaR; Time-varying copula; Structural change; Oil
+   price; Exchange rate
+ID INTERNATIONAL CRUDE-OIL; SYSTEMIC RISK; NONLINEAR CAUSALITY; STOCK
+   RETURNS; CHINA; MARKET; VOLATILITY; RENMINBI; NEXUS; SPILLOVERS
+AB This paper analyses the dynamic dependence between WTI crude oil and the exchange rates of the United States and China, taking structural changes of dependence into account by using six time-varying copula models. Upside and downside conditional values at risk (CoVaRs) are introduced specifically to measure the upward and downward risk dependences between oil prices and exchange rates. The findings indicate a structural break point of dependence exists between daily or weekly crude oil and the US dollar index. The dependence between crude oil and the RMB exchange rate is faintly positive with lower tail dependence, while the dependence between crude oil and the US dollar index is significantly negative with lower-upper and upper-lower tail dependence. Finally, the CoVaRs results show that there is significant risk spillover from crude oil to Chinese and the US exchange rate markets. Furthermore, the spillover effect is significantly asymmetry in Chinese exchange rate market in response to rising and falling oil returns, while the asymmetry of spillover effect for the US dollar index is not significant. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Ji, Qiang] Shandong Normal Univ, Business Sch, Jinan 250014, Shandong, Peoples R China.
+   [Ji, Qiang] Chinese Acad Sci, Inst Sci, Ctr Energy & Environm Policy Res, Beijing 100190, Peoples R China.
+   [Ji, Qiang] Chinese Acad Sci, Inst Dev, Ctr Energy & Environm Policy Res, Beijing 100190, Peoples R China.
+   [Liu, Bing- Yue; Fan, Ying] Beihang Univ, Sch Econ & Management, Beijing 100191, Peoples R China.
+RP Liu, BY (reprint author), Beihang Univ, Sch Econ & Management, Beijing 100191, Peoples R China.
+EM jqwxnjq@163.com; bliu1989@163.com
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71774152, 91546109]; Youth Innovation Promotion
+   Association of Chinese Academy of Sciences [Y7X0231505]
+FX Supports from the National Natural Science Foundation of China under
+   Grant No. 71774152, No. 91546109, and Youth Innovation Promotion
+   Association of Chinese Academy of Sciences (Grant: Y7X0231505) are
+   acknowledged.
+CR Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Aloui R, 2013, J INT MONEY FINANC, V32, P719, DOI 10.1016/j.jimonfin.2012.06.006
+   Amano RA, 1998, J INT MONEY FINANC, V17, P299, DOI 10.1016/S0261-5606(98)00004-7
+   Bal DP, 2015, ENERG ECON, V51, P149, DOI 10.1016/j.eneco.2015.06.013
+   Benassy-Quere A, 2007, ENERG POLICY, V35, P5795, DOI 10.1016/j.enpol.2007.05.035
+   Bouoiyour J, 2015, ENERG ECON, V51, P54, DOI 10.1016/j.eneco.2015.06.001
+   Bouri E, 2017, INT REV ECON FINANC, V48, P34, DOI 10.1016/j.iref.2016.11.004
+   Chaudhuri K, 1998, ECON LETT, V58, P231, DOI 10.1016/S0165-1765(97)00282-6
+   Chen SS, 2007, ENERG ECON, V29, P390, DOI 10.1016/j.eneco.2006.08.003
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Cheung YW, 2014, J INT MONEY FINANC, V49, P170, DOI 10.1016/j.jimonfin.2014.05.012
+   Csorgo M, 1997, LIMIT THEOREMS CHANG
+   De Vita G, 2016, ENERG ECON, V56, P150, DOI 10.1016/j.eneco.2016.03.014
+   Dias A, 2009, EUR J FINANC, V15, P619, DOI 10.1080/13518470701705579
+   Ding ZH, 2017, APPL ENERG, V187, P27, DOI 10.1016/j.apenergy.2016.11.037
+   Fatum R, 2017, J INT MONEY FINANC, V79, P189, DOI 10.1016/j.jimonfin.2017.09.010
+   FOWOWE B, 2014, INT EC, V140, P36
+   Gao XY, 2017, APPL ENERG, V192, P201, DOI 10.1016/j.apenergy.2017.02.014
+   Ghosh S, 2011, APPL ENERG, V88, P1886, DOI 10.1016/j.apenergy.2010.10.043
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   GOLUB SS, 1983, ECON J, V93, P576, DOI 10.2307/2232396
+   Hagspiel S, 2012, APPL ENERG, V96, P33, DOI 10.1016/j.apenergy.2011.10.039
+   Hakwa B., 2015, COMMUN STOCH ANAL, V9, P131
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   He YY, 2017, APPL ENERG, V185, P254, DOI 10.1016/j.apenergy.2016.10.079
+   Hussain M, 2017, PHYSICA A, V465, P338, DOI 10.1016/j.physa.2016.08.056
+   Ji Q, 2019, FINANC RES LETT, V28, P376, DOI 10.1016/j.frl.2018.06.005
+   Ji Q, 2012, COMPUT IND ENG, V63, P615, DOI 10.1016/j.cie.2011.07.021
+   Ji Q, 2012, APPL ENERG, V89, P273, DOI 10.1016/j.apenergy.2011.07.038
+   Joe H., 1996, 166 U BRIT COL DEP S
+   Joe H., 1997, MULTIVARIATE MODELS
+   Jondeau E, 2003, J ECON DYN CONTROL, V27, P1699, DOI 10.1016/S0165-1889(02)00079-9
+   Kim WJ, 2017, ENERG ECON, V62, P61, DOI 10.1016/j.eneco.2016.12.007
+   Krugman P., 1983, OIL SHOCKS EXCHANGE
+   Li QM, 2017, APPL ENERG, V185, P1821, DOI 10.1016/j.apenergy.2015.12.060
+   Liu BY, 2017, ENERG ECON, V68, P53, DOI 10.1016/j.eneco.2017.09.011
+   Liu BY, 2017, QUANT FINANC, V17, P437, DOI 10.1080/14697688.2016.1205208
+   McCauley R.N., 2018, J INT MONEY FINANC, DOI [10.1016/JJIMONFIN2018.03.006, DOI 10.1016/JJIMONFIN2018.03.006]
+   Mensi W, 2017, ENERG ECON, V67, P476, DOI 10.1016/j.eneco.2017.08.036
+   Mensi W, 2017, J BANK FINANC, V75, P258, DOI 10.1016/j.jbankfin.2016.11.017
+   Narayan PK, 2008, ENERG ECON, V30, P2686, DOI 10.1016/j.eneco.2008.03.003
+   Narayan PK, 2015, ENERG ECON, V50, P391, DOI 10.1016/j.eneco.2014.11.021
+   Narayan PK, 2015, ENERG ECON, V48, P18, DOI 10.1016/j.eneco.2014.11.018
+   Narayan PK, 2010, J APPL STAT, V37, P1425, DOI 10.1080/02664760903039883
+   Nikbakht L., 2010, BUS INTELL J, V3, P83
+   Patton A, 2009, HDB FINANCIAL TIME S, P767
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2012, J MULTIVARIATE ANAL, V110, P4, DOI 10.1016/j.jmva.2012.02.021
+   Pershin V, 2016, J POLICY MODEL, V38, P166, DOI 10.1016/j.jpolmod.2015.11.001
+   Reboredo JC, 2016, J BANK FINANC, V62, P76, DOI 10.1016/j.jbankfin.2015.10.011
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Reboredo JC, 2012, J POLICY MODEL, V34, P419, DOI 10.1016/j.jpolmod.2011.10.005
+   Tiwari AK, 2016, APPL ENERG, V179, P272, DOI 10.1016/j.apenergy.2016.06.139
+   Vostrikova L. J., 1981, SOV MATH DOKL, V24, P55
+   Wang MG, 2016, APPL ENERG, V175, P109, DOI 10.1016/j.apenergy.2016.05.013
+   Wu CC, 2012, ENERG ECON, V34, P270, DOI 10.1016/j.eneco.2011.07.007
+   Xu HC, 2017, J INT FINANC MARK I, V49, P173, DOI 10.1016/j.intfin.2017.05.001
+NR 57
+TC 22
+Z9 22
+U1 32
+U2 35
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD JAN
+PY 2019
+VL 77
+SI SI
+BP 80
+EP 92
+DI 10.1016/j.eneco.2018.07.012
+PG 13
+WC Economics
+SC Business & Economics
+GA HS7ZF
+UT WOS:000464087100009
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Brunnermeier, MK
+   Cheridito, P
+AF Brunnermeier, Markus K.
+   Cheridito, Patrick
+TI Measuring and Allocating Systemic Risk
+SO RISKS
+LA English
+DT Article
+DE systemic risk measure; systemic risk allocation; feedback effects;
+   shadow prices; systemic risk limits; systemic risk charges; cap and
+   trade
+ID FINANCIAL NETWORKS; CAPITAL SHORTFALL; LIQUIDITY; BANKING; CONTAGION;
+   MODEL
+AB In this paper, we develop a framework for measuring, allocating and managing systemic risk. SystRisk, our measure of total systemic risk, captures the a priori cost to society for providing tail-risk insurance to the financial system. Our allocation principle distributes the total systemic risk among individual institutions according to their size-shifted marginal contributions. To describe economic shocks and systemic feedback effects, we propose a reduced form stochastic model that can be calibrated to historical data. We also discuss systemic risk limits, systemic risk charges and a cap and trade system for systemic risk.
+C1 [Brunnermeier, Markus K.] Princeton Univ, Dept Econ, Princeton, NJ 08544 USA.
+   [Brunnermeier, Markus K.] Princeton Univ, Bendheim Ctr Finance, Princeton, NJ 08544 USA.
+   [Cheridito, Patrick] Swiss Fed Inst Technol, Dept Math, CH-8092 Zurich, Switzerland.
+   [Cheridito, Patrick] Swiss Fed Inst Technol, RiskLab, CH-8092 Zurich, Switzerland.
+RP Cheridito, P (reprint author), Swiss Fed Inst Technol, Dept Math, CH-8092 Zurich, Switzerland.; Cheridito, P (reprint author), Swiss Fed Inst Technol, RiskLab, CH-8092 Zurich, Switzerland.
+EM markus@princeton.edu; patrick.cheridito@math.ethz.ch
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya VV, 2016, J FINANC INTERMED, V28, P4, DOI 10.1016/j.jfi.2016.08.004
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Aghion P, 2000, EUR ECON REV, V44, P713, DOI 10.1016/S0014-2921(00)00058-1
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Armenti Y, 2018, SIAM J FINANC MATH, V9, P90, DOI 10.1137/16M1087357
+   Avesani Renzo, 2005, 05232 IMF
+   Avesani Renzo, 2006, 06105 IMF
+   Bai J, 2018, J FINANC, V73, P51, DOI 10.1111/jofi.12591
+   Bengtsson E, 2016, J FINANC REGUL COMPL, V24, P60, DOI 10.1108/JFRC-12-2014-0051
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Biagini F, 2019, MATH FINANC, V29, P329, DOI 10.1111/mafi.12170
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bookstaber R, 2018, J ECON INTERACT COOR, V13, P433, DOI 10.1007/s11403-017-0188-1
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier Markus K., 2014, RISK TOPOGRAPHY, P99
+   Brunnermeier MK, 2012, HDB EC FINANCE, V2, P1221
+   Burrows Oliver, 2012, 17 BANK ENGL FIN STA
+   Cespa G, 2014, REV FINANC STUD, V27, P1615, DOI 10.1093/rfs/hhu016
+   Chan-Lau Jorge A., 2005, 05231 IMF
+   Chen C, 2013, MANAGE SCI, V59, P1373, DOI 10.1287/mnsc.1120.1631
+   Cheridito P, 2008, MATH FINANC ECON, V2, P29, DOI 10.1007/s11579-008-0013-7
+   Cheridito P, 2009, MATH FINANC, V19, P189, DOI 10.1111/j.1467-9965.2009.00364.x
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   Duan JC, 2009, REV FINANC STUD, V22, P1981, DOI 10.1093/rfs/hhn057
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Feinstein Z, 2017, SIAM J FINANC MATH, V8, P672, DOI 10.1137/16M1066087
+   Fique Jose, 2017, 111 BANK CAN
+   Follmer H., 2004, STOCHASTIC FINANCE I
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Giesecke K, 2011, MANAGE SCI, V57, P1387, DOI 10.1287/mnsc.1110.1375
+   Giglio Stefano, 2016, RISK BOARD WORKING P, V15
+   Gofman M, 2017, J FINANC ECON, V124, P113, DOI 10.1016/j.jfineco.2016.12.009
+   He Zhiguo, 2014, 19885 NBER
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Kromer E, 2016, MATH METHOD OPER RES, V84, P323, DOI 10.1007/s00186-016-0545-1
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Maccheroni F, 2006, ECONOMETRICA, V74, P1447, DOI 10.1111/j.1468-0262.2006.00716.x
+   Matten Chris, 1996, MANAGING BANK CAPITA
+   MERTON RC, 1993, J APPL CORPORATE FIN, V6, P16
+   Pozsar Zoltan, 2012, 458 FED RES BANK NEW
+   Puhr Claus, 2014, J RISK MANAGEMENT FI, V7, P38
+   Stein JC, 2012, Q J ECON, V127, P57, DOI 10.1093/qje/qjr054
+   Upper Christian, 2007, 234 BANK INT SETTL
+   WEITZMAN ML, 1974, REV ECON STUD, V41, P477, DOI 10.2307/2296698
+NR 55
+TC 1
+Z9 1
+U1 4
+U2 4
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2227-9091
+J9 RISKS
+JI Risks
+PD JUN
+PY 2019
+VL 7
+IS 2
+AR 46
+DI 10.3390/risks7020046
+PG 19
+WC Business, Finance
+SC Business & Economics
+GA II1AS
+UT WOS:000474937700012
+OA DOAJ Gold, Green Published
+DA 2019-12-27
+ER

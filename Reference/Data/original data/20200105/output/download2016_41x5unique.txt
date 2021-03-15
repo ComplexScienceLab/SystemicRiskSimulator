@@ -1,0 +1,460 @@
+
+PT J
+AU Lee, G
+   Jeong, J
+AF Lee, Geesun
+   Jeong, Jinho
+TI An Investigation of Global and Regional Integration of ASEAN Economic
+   Community Stock Market: Dynamic Risk Decomposition Approach
+SO EMERGING MARKETS FINANCE AND TRADE
+LA English
+DT Article
+DE AEC; diversification; dynamic risk decomposition; market integration
+ID FINANCIAL INTEGRATION; RETURN COMOVEMENTS; SELECTION; CONTAGION; TESTS;
+   INTERDEPENDENCE; SEGMENTATION; PORTFOLIOS; CHOICE; CRISIS
+AB This article investigates the dynamic pattern of stock market relations between the ASEAN Economic Community (AEC) and two major stock markets: China and the United States. A GARCH risk decomposition model is developed to reflect the time-varying market integration. The primary findings of this study are as follows. First, the AEC is more integrated with the regional stock market than with the global stock market. Second, the movement in the AEC stock market is mainly driven by domestic economic situations. Third, external shocks only affect the level of integration of the AEC temporarily. Finally, international investors are able to significantly reduce unsystematic risk by adding an AEC market portfolio into their existing portfolios.
+C1 [Lee, Geesun] Samsung Econ Res Inst, Financial Ind & Strategy Dept, Seoul, South Korea.
+   [Jeong, Jinho] Korea Univ, Sch Business Adm, Sejong City, South Korea.
+RP Jeong, J (reprint author), Korea Univ, Sch Business Adm, Finance, 2511 Sejong Ro, Sejong City 339770, South Korea.
+EM jayjeong@korea.ac.kr
+OI Jeong, Jinho/0000-0002-5917-1168
+CR Akdogan H, 1996, J PORTFOLIO MANAGE, V23, P33, DOI 10.3905/jpm.1996.409571
+   Akdogan H, 1997, J PORTFOLIO MANAGE, V24, P82, DOI 10.3905/jpm.1997.409625
+   Alexander C., 1994, RISK, V7, P56
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Ba AD, 2003, ASIAN SURV, V43, P622, DOI 10.1525/as.2003.43.4.622
+   Baele L, 2004, OXFORD REV ECON POL, V20, P509, DOI 10.1093/oxrep/grh030
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   Barari M., 2004, INT REV FINANC ANAL, V13, P649, DOI DOI 10.1016/J.IRFA.2004.02.019
+   Bartram SM, 2007, J BANK FINANC, V31, P1461, DOI 10.1016/j.jbankfin.2006.07.014
+   Beirne J, 2010, EMERG MARK REV, V11, P250, DOI 10.1016/j.ememar.2010.05.002
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   Bekaert G, 2009, J FINANC, V64, P2591, DOI 10.1111/j.1540-6261.2009.01512.x
+   BEST MJ, 1991, REV FINANC STUD, V4, P315, DOI 10.1093/rfs/4.2.315
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Cha HJ, 2009, INT J FINANC ECON, V14, P172, DOI 10.1002/ijfe.343
+   Chi J, 2006, PAC ECON REV, V11, P513, DOI 10.1111/j.1468-0106.2006.00332.x
+   CHOPRA VK, 1993, J PORTFOLIO MANAGE, V19, P6, DOI 10.3905/jpm.1993.409440
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Frankel J., 1998, CRISIS CONTAGION COU
+   Gupta R, 2009, J MULTINATL FINANC M, V19, P160, DOI 10.1016/j.mulfin.2008.10.001
+   Juselius K., 2006, COINTEGRATED VAR MOD
+   Karolyi GA, 1996, J FINANC, V51, P951, DOI 10.2307/2329228
+   Levine R, 2002, J FINANC INTERMED, V11, P398, DOI 10.1006/jfin.2002.0341
+   Levine R, 1998, WORLD DEV, V26, P1169, DOI 10.1016/S0305-750X(98)00046-1
+   Lucey BM, 2008, J INT MONEY FINANC, V27, P1303, DOI 10.1016/j.jimonfin.2008.07.004
+   Markowitz H. M., 1959, COWLES FDN MONOGRAPH, V16
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Michaud R. O., 1989, FINANCIAL ANAL J, V45, P31, DOI DOI 10.2469/FAJ.V45.N1.31
+   NEWEY WK, 1994, REV ECON STUD, V61, P631, DOI 10.2307/2297912
+   Ng A., 2005, J BUS, V78, P1
+   Ng S, 2001, ECONOMETRICA, V69, P1519, DOI 10.1111/1468-0262.00256
+   PAGANO M, 1993, EUR ECON REV, V37, P613, DOI 10.1016/0014-2921(93)90051-B
+   Petri PA, 2012, ASIAN ECON J, V26, P93, DOI 10.1111/j.1467-8381.2012.02079.x
+   Phylaktis K., 2005, J INT FINANC MARK I, V15, P91, DOI DOI 10.1016/J.INTFIN.2004.03.001
+   Prasad Eswar, 2003, EFFECTS FINANCIAL GL
+   RATANAPAKORN O, 2002, REV FINANC EC, V11, P91, DOI DOI 10.1016/S1059-0560(02)00103-X
+   Zivot E., 2009, HDB FINANCIAL TIME S
+NR 38
+TC 7
+Z9 7
+U1 0
+U2 5
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1540-496X
+EI 1558-0938
+J9 EMERG MARK FINANC TR
+JI Emerg. Mark. Financ. Trade
+PY 2016
+VL 52
+IS 9
+BP 2069
+EP 2086
+DI 10.1080/1540496X.2016.1156528
+PG 18
+WC Business; Economics; International Relations
+SC Business & Economics; International Relations
+GA DV2NI
+UT WOS:000382756900008
+DA 2019-12-27
+ER
+
+PT J
+AU Berger, T
+AF Berger, Theo
+TI Wavelet decomposition and applied portfolio management
+SO JOURNAL OF RISK
+LA English
+DT Article
+DE wavelet decomposition; contagion; portfolio management; dependence
+   analysis; portfolio risk; out-of-sample performance
+ID CONTAGION; GUIDE; RISK
+AB In this paper, we decompose financial return series into their time and frequency domains in order to separate short-term noise from long-term trends. First, we investigate the dependence between US stocks at different time scales before and after the outbreak of financial crisis. Second, we set up a novel analysis and introduce the application of decomposed return series to a portfolio management setup. We then model portfolios that minimize the volatility of each particular time scale. As a result, portfolio compositions that minimize the short-run volatility of the first scales represent a promising choice, since they slightly outperform portfolio compositions that minimize the variance of the unfiltered return series.
+C1 [Berger, Theo] Univ Bremen, Empir Econ & Appl Stat, Wilhelm Herbst Str 5, D-28359 Bremen, Germany.
+RP Berger, T (reprint author), Univ Bremen, Empir Econ & Appl Stat, Wilhelm Herbst Str 5, D-28359 Bremen, Germany.
+EM thberger@uni-bremen.de
+CR Aloui C, 2014, ECON MODEL, V36, P421, DOI 10.1016/j.econmod.2013.09.043
+   Angelidis T., 2004, STAT METHODOL, V1, P105, DOI DOI 10.1016/J.STAMET.2004.08.004
+   Berger T, 2014, J RISK, V17, P51, DOI 10.21314/JOR.2014.294
+   Boubaker H, 2013, J BANK FINANC, V37, P361, DOI 10.1016/j.jbankfin.2012.09.006
+   Crowley PM, 2007, J ECON SURV, V21, P207, DOI 10.1111/j.1467-6419.2006.00502.x
+   Daubechies I., 1992, 10 LECT WAVELETS
+   DeMiguel V, 2009, REV FINANC STUD, V22, P1915, DOI 10.1093/rfs/hhm075
+   Engle RF, 2009, ECON INST LECT SER, P1
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gallegati M, 2012, COMPUT STAT DATA AN, V56, P3491, DOI 10.1016/j.csda.2010.11.003
+   Gencay R, 2005, J INT MONEY FINANC, V24, P55, DOI 10.1016/j.jimonfin.2004.10.003
+   Gencay R, 2001, PHYSICA A, V289, P249, DOI 10.1016/S0378-4371(00)00456-8
+   Gencay R, 2010, QUANT FINANC, V10, P895, DOI 10.1080/14697680903460143
+   Haar A, 1910, MATH ANN, V69, P331, DOI 10.1007/BF01456326
+   Jammazi R, 2012, ENERG ECON, V34, P828, DOI 10.1016/j.eneco.2011.07.018
+   Jorion P., 2007, VALUE RISK NEW BENCH
+   Maillard S, 2010, J PORTFOLIO MANAGE, V36, P60, DOI 10.3905/jpm.2010.36.4.060
+   Mallat S, 1998, IEEE T SIGNAL PROCES, V46, P1027, DOI 10.1109/78.668554
+   Mallat S., 1989, T IEEE PATTERN ANAL, V11, P674, DOI DOI 10.1109/34.192463
+   Markowitz H, 1959, PORTFOLIO SELECTION
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Murtagh F, 2004, DECIS SUPPORT SYST, V37, P475, DOI 10.1016/S0167-9236(03)00092-7
+   Percival D.B., 2000, WAVELET METHODS TIME
+   Pigorsch C., 2009, ENCY COMPLEXITY SYST, V4, P3404
+   Qian E., 2005, RISK PARITY PORTFOLI
+   Ramsey J, 2002, STUD NONLINEAR DYN E, V6
+   Ramsey J. B., 1996, Predictability of complex dynamical systems, P189
+   RAMSEY JB, 1995, FRACTALS, V3, P377, DOI 10.1142/S0218348X95000291
+   Ranta M, 2013, INT J MANAG FINANC, V9, P133, DOI 10.1108/17439131311307556
+   Renaud O., 2003, INT J WAVELETS MULTI, V1, P217, DOI DOI 10.1142/S0219691303000153
+   SHENSA MJ, 1992, IEEE T SIGNAL PROCES, V40, P2464, DOI 10.1109/78.157290
+   Starck JL, 2007, IEEE T IMAGE PROCESS, V16, P297, DOI 10.1109/TIP.2006.887733
+   Sur M, 2014, ECOL INFORM, V20, P47, DOI 10.1016/j.ecoinf.2014.01.007
+   Torrence C, 1998, B AM METEOROL SOC, V79, P61, DOI 10.1175/1520-0477(1998)079<0061:APGTWA>2.0.CO;2
+   Vidakovic B, 1998, J AM STAT ASSOC, V93, P173, DOI 10.2307/2669614
+   Whitcher B, 2000, J GEOPHYS RES-ATMOS, V105, P14941, DOI 10.1029/2000JD900110
+NR 36
+TC 1
+Z9 1
+U1 0
+U2 5
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1465-1211
+EI 1755-2842
+J9 J RISK
+JI J. Risk
+PD APR
+PY 2016
+VL 18
+IS 4
+BP 53
+EP 77
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA DP0JF
+UT WOS:000378175400004
+DA 2019-12-27
+ER
+
+PT J
+AU Gharbi, L
+   Khamoussi, H
+AF Gharbi, Leila
+   Khamoussi, Halioui
+TI Fair value and banking contagion Empirical evidence from Islamic and
+   conventional banking sectors in GCC region
+SO JOURNAL OF ISLAMIC ACCOUNTING AND BUSINESS RESEARCH
+LA English
+DT Article
+DE Islamic banks; Conventional banks; Banking contagion; Fair value
+   accounting
+ID TO-MARKET; VOLATILITY; RISK
+AB Purpose - This paper aims to explore empirically the impact of fair value accounting on banking contagion in a comparative context between Islamic banks and conventional banks.
+   Design/methodology/approach - The analysis of the impact of fair value changes on banking contagion is carried out through a panel data model. This study covers 20 Islamic banks and 40 conventional banks operating in the Gulf Cooperation Council ( GCC) countries during nine years from 2003 to 2011.
+   Findings - Empirical evidence shows that there is a significant change in dynamic volatility in GCC banking sector because of financial crisis 2008. However, results fail to confirm the hypothesis that fair value accounting is significantly associated with an increase of banking contagion for both Islamic and conventional banks operating in GCC countries.
+   Originality/value - The outcome of this study provides some insights for academicians, accountants as well as regulators in terms of enhancing the effectiveness of accounting practices.
+C1 [Gharbi, Leila] Higher Inst Finance & Taxat Sousse, Dept Accounting, Sousse, Tunisia.
+   [Khamoussi, Halioui] Univ Imam Muhammed, Dept Accounting, Riyadh, Saudi Arabia.
+RP Gharbi, L (reprint author), Higher Inst Finance & Taxat Sousse, Dept Accounting, Sousse, Tunisia.
+EM leila.gharbi29@yahoo.fr
+CR ACCA and KPMG, 2010, ACC FUT HARM FIN REP
+   Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI), 2008, FAS 17 INV
+   Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI), 2008, FAS 2 MUR MUR PURCH
+   Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI), 2008, FAS 1 GEN PRES DISCL
+   Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI), 2008, FAS 9 ZAK
+   Adrian T., 2007, LIQUIDITY LEVERAGE
+   Allen F, 2008, J ACCOUNT ECON, V45, P358, DOI 10.1016/j.jacceco.2007.02.005
+   Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   [Anonymous], 2003, 39 INT ACC STAND BOA
+   AOSSG, 2010, FIN REP ISS REL ISL
+   Arab Chamber of Commerce and Industry (ARABCCI), 2008, ISLAMIC FINANCE
+   Arya A., 2010, CPA J, P20
+   BARTH ME, 1995, J BANK FINANC, V19, P577, DOI 10.1016/0378-4266(94)00141-O
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cizakca M, 2011, STUD ISLAM FINANC AC, P1
+   El-Gamal MA, 2000, BASIC GUIDE CONT ISL
+   El-Kanj I., 2012, ISLAMIC BANKING FINA
+   ENGLE RF, 1990, ECONOMETRICA, V58, P525, DOI 10.2307/2938189
+   Farooq M. O., 2009, P 20 ANN ISL BANK SE, P123
+   Financial Accounting Standards Board (FASB), 2006, FIN INSTR
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Forbes S., 2010, STOP HORROR IT START
+   Greuning H. V., 2007, RISK ANAL ISLAMIC BA
+   Hachicha N., 2007, J BUSINESS POLICY RE, V3, P44
+   Halioui K., 2012, GLOBAL BUSINESS MANA, V4, P60
+   Harvey A, 1997, ECON J, V107, P192, DOI 10.1111/1468-0297.00152
+   HARVEY AC, 1989, FORECASTING STRUCTUR
+   Hasan M., 2010, IMF WORKING PAPER
+   Hassan K., 2011, QFINANCE, P61
+   Hitz JM, 2007, EUR ACCOUNT REV, V16, P323, DOI 10.1080/09638180701390974
+   Ibrahim M., 2005, MALIZIAN ACCOUNTING, V4, P76
+   IFSB, 2005, GUID PRINC RISK MAN
+   Islahi A. A., 2001, INT C LEG AL GHAZ OR, P24
+   Jacques K, 1997, J ECON BUS, V49, P533, DOI DOI 10.1016/S0148-6195(97)00038-6
+   Karim R.A., 1996, INT J BANK MARK, V14, P32
+   KARIM RAA, 1996, RES ACC REG, V10, P111
+   Khan F, 2010, J ECON BEHAV ORGAN, V76, P805, DOI 10.1016/j.jebo.2010.09.015
+   Khan U., 2009, WORKING PAPER
+   Laux C, 2009, ACCOUNT ORG SOC, V34, P826, DOI 10.1016/j.aos.2009.04.003
+   Moosa I. A, 2010, INT J BANKING FINANC, V7, P19
+   Naim A., 2010, RATIONALE INTRO APPL
+   Olson D, 2008, INT J ACCOUNT, V43, P45, DOI 10.1016/j.intacc.2008.01.003
+   Plantin G, 2008, J ACCOUNT RES, V46, P435, DOI 10.1111/j.1475-679X.2008.00281.x
+   Presley J. R., 2000, INT J ISLAM FINANC S, V2, P3
+   Quran English Translation of the Meanings and Commentary, 1996, KING FAHD COMPL PRIN
+   Raheem A., 2014, INT SUKUK NEED MORE
+   Selim TH, 2008, HUMANOMICS, V24, P122, DOI 10.1108/08288660810876831
+   Shihadeh M. A., 1994, ACCOUNTING SYSTEMS I
+   SHRIEVES RE, 1992, J BANK FINANC, V16, P439, DOI 10.1016/0378-4266(92)90024-T
+   Standard & Poor's, 2010, ISL FIN OUTL 2010
+   Suliman O, 2011, APPL ECON LETT, V18, P285, DOI 10.1080/13504851003614138
+   Usmani M., 2007, INTRO ISLAMIC FINANC
+   Watsubo K., 2006, CEI WORKING PAPER SE
+   [张宗益 ZHANG Zongyi], 2008, [系统工程理论与实践, Systems Engineering-Theory & Practice], V28, P183
+NR 54
+TC 0
+Z9 0
+U1 0
+U2 2
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1759-0817
+EI 1759-0825
+J9 J ISLAMIC ACCOUNT BU
+JI J. Islamic Account. Bus. Res.
+PY 2016
+VL 7
+IS 3
+SI SI
+BP 215
+EP 236
+DI 10.1108/JIABR-12-2014-0042
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA FF7HK
+UT WOS:000409186900004
+DA 2019-12-27
+ER
+
+PT J
+AU Tasca, P
+   Battiston, S
+AF Tasca, P.
+   Battiston, S.
+TI Market procyclicality and systemic risk
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Financial networks; Continuous-time; Systemic risk; Procyclicality;
+   Leverage; Market liquidity; G20; G28
+ID FINANCIAL SYSTEMS; CAPITAL ADEQUACY; LIQUIDITY; CONTAGION; BANK;
+   DIVERSIFICATION; MANAGEMENT; STABILITY; CRUNCH
+AB We develop a model that captures, at the same time, the temporal dynamics of single-firm credit risk and the contagion across banks via a network of obligations and common assets. In particular, we enrich the continuous-time modelling approach of default by accounting explicitly for the procyclical loop between asset prices and leverage. Contagion can spread well before any default occurs, through the value of the obligations held by counterparties. Moreover, the extent of procyclicality effects depends explicitly on the structure of both the interbank network and the asset bank network. We analyse the model in a simplified scenario of a densely connected core of banks and we carry out a systematic investigation of how procyclicality emerges from the multiplicative interplay of market illiquidity and tightness of capital requirements.
+C1 [Tasca, P.] Deutsch Bundesbank, Frankfurt, Germany.
+   [Battiston, S.] Univ Zurich, Dept Banking & Finance, Plattenstr 14, CH-8032 Zurich, Switzerland.
+RP Tasca, P (reprint author), Deutsch Bundesbank, Frankfurt, Germany.
+EM paolo.tasca@bundesbank.de
+RI battiston, stefano/M-1612-2017
+OI battiston, stefano/0000-0002-0051-973X
+FU Economic and Social Research Council (ESRC)Economic & Social Research
+   Council (ESRC) [ES/K002309/1]; ETH Competence Center 'Coping with Crises
+   in Complex Socio-Economic Systems', CHIRP 1 [CH1-01-08-2]; SNSF project
+   'OTC Derivatives and Systemic Risk in Financial Networks'
+   [CR12I1-127000/1]; SNSF Professorship-Financial Networks and Systemic
+   Risk [PP00P1_144689]; European Commission, Future Emergent
+   Technologies-FET Open Project 'FOC' [255987]; Economic and Social
+   Research CouncilEconomic & Social Research Council (ESRC) [ES/K002309/1]
+FX This work was supported by Economic and Social Research Council (ESRC)
+   [grant number ES/K002309/1]; ETH Competence Center 'Coping with Crises
+   in Complex Socio-Economic Systems', CHIRP 1 [grant number CH1-01-08-2];
+   SNSF project 'OTC Derivatives and Systemic Risk in Financial Networks'
+   [grant number CR12I1-127000/1]; SNSF Professorship-Financial Networks
+   and Systemic Risk [grant number PP00P1_144689]; European Commission,
+   Future Emergent Technologies-FET Open Project 'FOC' [grant number
+   255987].
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T., 2008, FEDERAL RESERVE BANK, V338
+   Adrian T., 2011, FEDERAL RESERVE BANK
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F., 2001, J POLITICAL EC, V108, P1
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Arnold B, 2012, J BANK FINANC, V36, P3125, DOI 10.1016/j.jbankfin.2012.07.023
+   Bargigli L, 2014, J ECON BEHAV ORGAN, V99, P109, DOI 10.1016/j.jebo.2013.12.018
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   BERNANKE BS, 1991, BROOKINGS PAP ECO AC, P205
+   BLACK F, 1976, J FINANC, V31, P351, DOI 10.2307/2326607
+   BLUM J, 1995, EUR ECON REV, V39, P739, DOI 10.1016/0014-2921(94)00081-A
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Calomiris CW, 2004, J BUS, V77, P421, DOI 10.1086/386525
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Danielsson J, 2012, PROCYCLICAL LEVERAGE
+   Danielsson J, 2008, ECON THEOR, V35, P293, DOI 10.1007/s00199-007-0238-3
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Estrella A, 2004, J BANK FINANC, V28, P1469, DOI 10.1016/S0378-4266(03)00130-4
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garleanu N, 2007, AM ECON REV, V97, P193, DOI 10.1257/aer.97.2.193
+   Greenlaw David, 2008, 2 US MON POL FOR, P2
+   Haldane A.G., 2009, COMMUNICATION    APR, V53, P1
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Kiyotaki N, 2002, AM ECON REV, V92, P46, DOI 10.1257/000282802320188989
+   Krishnamurthy A, 2010, AM ECON J-MACROECON, V2, P1, DOI 10.1257/mac.2.3.1
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Shin H. S., 2011, 338 FRB NEW YORK STA
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Stein J., 2000, AM ECON REV, P407
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Tasca P, 2014, J FINANC STABIL, V15, P43, DOI 10.1016/j.jfs.2014.08.006
+   Vitali S, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0025995
+NR 43
+TC 8
+Z9 9
+U1 0
+U2 13
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD AUG
+PY 2016
+VL 16
+IS 8
+BP 1219
+EP 1235
+DI 10.1080/14697688.2015.1123817
+PG 17
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA DR8QI
+UT WOS:000380162000005
+DA 2019-12-27
+ER
+
+PT J
+AU Bhimjee, DC
+   Ramos, SB
+   Dias, JG
+AF Bhimjee, Diptes C.
+   Ramos, Sofia B.
+   Dias, Jose G.
+TI Banking industry performance in the wake of the global financial crisis
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article
+DE Global financial crisis; International financial contagion; 'Subprime'
+   crisis; Banking institutions; Heterogeneous regime-switching model
+   (HRSM)
+ID EQUITY MARKETS; VOLATILITY SPILLOVER; STOCK MARKETS; CONTAGION; RETURNS;
+   RISK
+AB This paper analyzes the performance of the banking industry both prior to and during the global financial crisis (GFC). Through the application of a panel regime-switching model designed to capture heterogeneity, our findings suggest that global banking performance can be grouped into two distinctive clusters, each with its own specific regime dynamics. Before the crisis, a cluster of banking institutions pertaining to advanced economies stood out for its buoyant stock market performance, whereas a second cluster, "mainly composed of banking indexes that belong to emerging economies, exhibited a more subdued performance. Further, this differentiation Was accompanied by low regime synchronization between the clusters. During the crisis, banking institutions behaved similarly, regime synchronization increased, and the differences in the regime dynamics vanished. Finally, the GFC constituted a highly synchronized and systemic extreme financial event, as evidenced" by our findings depicting the onset of severe underlying international financial contagion processes. (C) 2016 Elsevier Inc. All rights reserved.
+C1 [Bhimjee, Diptes C.] Inst Univ Lisboa ISCTE IUL, P-1649026 Lisbon, Portugal.
+   [Ramos, Sofia B.] ESSEC Business Sch, F-95000 Cergy Pontoise, France.
+   [Dias, Jose G.] Inst Univ Lisboa ISCTE IUL, BRU IUL, P-1649026 Lisbon, Portugal.
+RP Ramos, SB (reprint author), ESSEC Business Sch, F-95000 Cergy Pontoise, France.
+EM ramos@essec.edu
+OI Ramos, Sofia/0000-0001-6089-573X; Bhimjee, Diptes C.
+   P./0000-0003-4065-5805
+FU BRU-UNIDE, Institute Universitario de Lisboa (ISCTE-IUL), Portugal
+FX The authors would like to thank the discussants and participants of the
+   12th INFINITI Conference on International Finance (Prato, Italy), the
+   XXII Finance Forum (Zaragoza, Spain), the Bank of Portugal's Conference
+   on "Econometric Methods for Banking and Finance", and two anonymous
+   referees for their valuable comments and suggestions; more specifically,
+   we would like to thank INFINITI's Ed Kane (Boston College) for his
+   valuable insights on the future development of the HRSM's theoretical
+   framework Sofia Ramos acknowledges support from BRU-UNIDE, Institute
+   Universitario de Lisboa (ISCTE-IUL), Portugal.
+CR Ahmad W, 2015, EMPIRICA, V42, P77, DOI 10.1007/s10663-014-9248-0
+   Baele L, 2005, J FINANC QUANT ANAL, V40, P373, DOI 10.1017/S0022109000002350
+   Batten JA, 2012, INT REV FINANC ANAL, V25, P136, DOI 10.1016/j.irfa.2012.07.008
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Bhar R., 2004, ADV STUDIES THEORETI
+   Billio M., 2003, J MULTINATL FINANC M, V13, P323, DOI DOI 10.1016/S1042-444X(03)00014-8
+   Chen PF, 2013, ECON MODEL, V31, P578, DOI 10.1016/j.econmod.2012.12.006
+   Cho S, 2015, INT REV FINANC ANAL, V42, P109, DOI 10.1016/j.irfa.2014.10.007
+   Choudhry T, 2014, INT REV FINANC ANAL, V36, P36, DOI 10.1016/j.irfa.2014.05.003
+   Cox J., 2009, WORKING PAPER
+   Dias JG, 2004, STAT COMPUT, V14, P323, DOI 10.1023/B:STCO.0000039481.32211.5a
+   Dias JG, 2008, COMPSTAT2008, P373
+   Dias JG, 2014, REV QUANT FINANC ACC, V42, P293, DOI 10.1007/s11156-013-0342-3
+   Dias JG, 2013, ECON MODEL, V35, P320, DOI 10.1016/j.econmod.2013.07.013
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   Ehrmann M., 2009, WORKING PAPER
+   Federal Reserve Board of St Louis, 2009, FIN CRIS TIM EV POL
+   Filardo A., 2010, BIS PAPERS, P21
+   Guidolin M., 2007, J ECON DYN CONTROL, V11, P3503
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   HARVEY CR, 1995, REV FINANC STUD, V8, P773, DOI 10.1093/rfs/8.3.773
+   Kearney C, 2008, EUR FINANC MANAG, V14, P419, DOI 10.1111/j.1468-036X.2007.00395.x
+   Kotkatvuori-Ornberg J, 2013, INT REV FINANC ANAL, V28, P70, DOI 10.1016/j.irfa.2013.01.009
+   McLachlan G., 2000, FINITE MIXTURE MODEL
+   Molyneux P., 2009, OXFORD HDB BANKING, P37
+   National Bureau of Economic Research, 2010, ANN JUN 2009 BUS CYC
+   Pozsar Zoltan, 2012, 458 FED RES BANK NEW
+   Ramos SB, 2011, INT J FINANC ECON, V16, P324, DOI 10.1002/ijfe.431
+   Shehzad CT, 2013, N AM J ECON FINANC, V24, P113, DOI 10.1016/j.najef.2012.04.002
+   Shiller R. J., 2008, SUBPRIME SOLUTION TO
+   Susmel R, 2001, J INT MONEY FINANC, V20, P971, DOI 10.1016/S0261-5606(01)00014-6
+NR 31
+TC 9
+Z9 9
+U1 0
+U2 12
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD DEC
+PY 2016
+VL 48
+BP 376
+EP 387
+DI 10.1016/j.irfa.2016.01.005
+PG 12
+WC Business, Finance
+SC Business & Economics
+GA EF7FB
+UT WOS:000390494400030
+DA 2019-12-27
+ER

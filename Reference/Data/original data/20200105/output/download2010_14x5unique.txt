@@ -1,0 +1,225 @@
+
+PT J
+AU Drakos, AA
+   Kouretas, GP
+   Zarangas, LP
+AF Drakos, Anastassios A.
+   Kouretas, Georgios P.
+   Zarangas, Leonidas P.
+TI FORECASTING FINANCIAL VOLATILITY OF THE ATHENS STOCK EXCHANGE DAILY
+   RETURNS: AN APPLICATION OF THE ASYMMETRIC NORMAL MIXTURE GARCH MODEL
+SO INTERNATIONAL JOURNAL OF FINANCE & ECONOMICS
+LA English
+DT Article
+DE Volatility; risk management; GARCH; asymmetric normal mixture GARCH;
+   Kupiec test
+ID VALUE-AT-RISK; AUTOREGRESSIVE CONDITIONAL HETEROSKEDASTICITY; UNIT-ROOT;
+   SPECULATIVE PRICES; ARCH MODELS; TIME-SERIES; EFFICIENT TESTS;
+   STATIONARITY; SELECTION; MARKET
+AB In this paper we model the return volatility of stocks traded in the Athens Stock Exchange using alternative GARCH models. We employ daily data for the period January 1998 to November 2008 allowing us to capture possible positive and negative effects that may be due to either contagion or idiosyncratic sources. The econometric analysis is based on the estimation of a class of five GARCH models under alternative assumptions with respect to the error distribution. The main findings of our analysis are: first, based on a battery of diagnostic tests it is shown that the normal mixture asymmetric GARCH (NM-AGARCH) models perform better in modeling the volatility of stock returns. Second, it is shown that with the use of the Kupiec's tests for in-sample and out-of-sample forecasting performance the evidence is mixed as the choice of the appropriate volatility model depends on the trading position under consideration. Third, at the 99% confidence interval the NM-AGARCH model with skewed Student-distribution outperforms all other competing models both for in-sample and out-of-sample forecasting performance. This increase in predictive performance for higher confidence intervals of the NM-AGARCH model with skewed Student-distribution makes this specification consistent with the requirements of the Basel II agreement. Copyright (C) 2010 John Wiley & Sons, Ltd.
+C1 [Drakos, Anastassios A.; Kouretas, Georgios P.] Athens Univ Econ & Business, Dept Business Adm, GR-10434 Athens, Greece.
+RP Kouretas, GP (reprint author), Athens Univ Econ & Business, Dept Business Adm, 76 Patission St, GR-10434 Athens, Greece.
+EM kouretas@aueb.gr
+CR Aas K., 2006, J FINANC ECON, V4, P275, DOI DOI 10.1093/JJFINEC/NBJ006
+   ALEXAKIS P, 1991, J BANK FINANC, V15, P471, DOI 10.1016/0378-4266(91)90081-V
+   Alexakis P., 1995, APPL FINANCIAL EC, V5, P43, DOI [10.1080/758527670, DOI 10.1080/758527670]
+   Alexander C, 2006, J APPL ECONOMET, V21, P307, DOI 10.1002/jae.849
+   Alexander C., 2004, ISMA CTR DISCUSSION
+   Alexander C., 2003, 9 ISMA CTR
+   ALEXANDER C, 2008, MARKET RISK ANAL VAL, V4
+   ALEXANDER C., 2005, ISMA CTR DISCUSSION
+   Alexander C., 2003, MARKET MODELS GUIDE
+   ALEXANDER C, 2005, J FINANCIAL ECONOMET, V3, P3
+   Andersen TG, 1998, INT ECON REV, V39, P885, DOI 10.2307/2527343
+   Apergis N., 2001, J EC FINANC, V25, P50
+   Bader JL, 2008, PREHOSP EMERG CARE, V12, P1, DOI 10.1080/10903120701710595
+   Bams D, 2005, J INT MONEY FINANC, V24, P922
+   Bank for International Settlements, 1999, BCBS PUBL SER, V50
+   Bank for International Settlements, 1988, BCBS PUBL SER, V4
+   Bank for International Settlements, 2001, NEW BAS CAP ACC
+   Bank for International Settlements, 1999, BCBS WORK PAP SER, V2
+   Bank for International Settlements, 1999, BCBS WORK PAP SER, V1
+   Basel Committee on Banking Supervision, 1996, SUP FRAM US BA UNPUB
+   Basel Committee on Banking Supervision, 1996, AM CAP ACC INC MARK
+   Bera AK, 1993, J ECON SURV, V7, P305, DOI DOI 10.1111/J.1467-6419.1993.TB00170.X
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   BOLLERSLEV T, 1987, REV ECON STAT, V69, P542, DOI 10.2307/1925546
+   Bollerslev T., 1994, HDB ECONOMETRICS, V4
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P61
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Christoffersen P, 2006, J ECONOMETRICS, V131, P253, DOI 10.1016/j.jeconom.2005.01.010
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Chung C. F., 1999, ESTIMATING FRACTIONA
+   Cifter A., 2007, BRSA BANKING FINANCI, V1, P7
+   Diamandis P., 2007, APPL FINANCIAL EC, V17, P413
+   Dockery E, 1996, APPL ECON LETT, V3, P121, DOI 10.1080/135048596356834
+   DOCKERY E, 2001, APPL FINANCIAL EC, V11, P573
+   Doornik J. A., 2007, OBJECT ORIENTED PROG
+   Drzik J., 2005, J FINANCIAL ECONOMET, V1, P26
+   Duffie D., 1997, J DERIV, V4, P7, DOI [DOI 10.3905/JOD.1997.407971, DOI 10.3905/jod.1997.407971]
+   Elliott G, 1996, ECONOMETRICA, V64, P813, DOI 10.2307/2171846
+   Elliott G, 1999, INT ECON REV, V40, P767, DOI 10.1111/1468-2354.00039
+   Engle R, 2002, J APPL ECONOM, V17, P425, DOI 10.1002/jae.683
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   ENGLE RF, 1993, J FINANC, V48, P1749, DOI 10.2307/2329066
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   FIELITZ BD, 1971, J FINANC QUANT ANAL, V6, P1025, DOI 10.2307/2329918
+   Forsberg L, 2002, J APPL ECONOM, V17, P535, DOI 10.1002/jae.685
+   Fountas S., 2002, APPL FINANCIAL EC, V12, P291, DOI DOI 10.1080/09603100010000839
+   Giot P, 2003, J APPL ECONOMET, V18, P641, DOI 10.1002/jae.710
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   HAAS M, 2004, J FINANCIAL ECONOMET, V2, P211, DOI DOI 10.1093/JJFINEC/NBH009
+   HAMILTON JD, 1994, J ECONOMETRICS, V64, P307, DOI 10.1016/0304-4076(94)90067-1
+   Jorion P, 2000, VALUE RISK
+   KUPIEC PH, 1995, J DERIV, V2, P73
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Lambert P, 2001, MODELLING FINANCIAL
+   Lanne M., 2007, EUROPEAN J FINANCE, V13, P691, DOI DOI 10.1080/13518470701538608
+   Laurent S, 2002, J ECON SURV, V16, P447, DOI 10.1111/1467-6419.00174
+   Laurent S., 2007, ESTIMATING FORECASTI
+   LELEDAKIS G, 2003, APPL FINANCIAL EC, V13, P413
+   MANDELBROT B, 1967, J BUS, V40, P393, DOI 10.1086/295006
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   NELSON DB, 1990, J ECONOMETRICS, V45, P7, DOI 10.1016/0304-4076(90)90092-8
+   NEWEY WK, 1985, J ECONOMETRICS, V29, P229
+   NEWEY WK, 1994, REV ECON STUD, V61, P631, DOI 10.2307/2297912
+   Ng S, 2001, ECONOMETRICA, V69, P1519, DOI 10.1111/1468-0262.00256
+   NYBLOM J, 1989, J AM STAT ASSOC, V84, P223, DOI 10.2307/2289867
+   PHILIPPAS N, 1998, INT REV EC BUSINESS, V45, P745
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.2307/2336182
+   Poon SH, 2003, J ECON LIT, V41, P478, DOI 10.1257/002205103765762743
+   RISKMETRICS, 1996, TECHN DOC
+   Sarma M, 2003, J FORECASTING, V22, P337, DOI 10.1002/for.868
+   SEPHTON PS, 1995, ECON LETT, V47, P255, DOI 10.1016/0165-1765(94)00561-F
+   Siourounis G, 2002, APPL FINANC EC, V12, P47
+   Tang TL, 2006, PHYSICA A, V366, P437, DOI 10.1016/j.physa.2005.10.017
+   Tsay R.S., 2002, ANAL FINANCIAL TIME
+NR 75
+TC 19
+Z9 21
+U1 0
+U2 7
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1076-9307
+EI 1099-1158
+J9 INT J FINANC ECON
+JI Int. J. Financ. Econ.
+PD OCT
+PY 2010
+VL 15
+IS 4
+BP 331
+EP 350
+DI 10.1002/ijfe.407
+PG 20
+WC Business, Finance
+SC Business & Economics
+GA 658ZN
+UT WOS:000282535300003
+DA 2019-12-27
+ER
+
+PT J
+AU Abad, P
+   Chulia, H
+   Gomez-Puig, M
+AF Abad, Pilar
+   Chulia, Helena
+   Gomez-Puig, Marta
+TI EMU and European government bond market integration
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article; Proceedings Paper
+CT 7th INFINITI Conference on International Finance
+CY JUN, 2009
+CL Trinity Coll, Dublin, IRELAND
+HO Trinity Coll
+DE Monetary integration; Sovereign securities; Bond markets integration
+ID INTERNATIONAL STOCK; MONETARY-UNION; YIELD SPREADS; MOVEMENTS; RETURN;
+   MODEL; COST; RISK
+AB In this study we adopt the CAPM-based model of Bekaert and Harvey (1995) to compare the differences in the relative importance of two sources of systemic risk (world and Eurozone) on Government bond returns, in two groups of countries in EU-15. Results show that euro markets are less vulnerable to the influence of world risk factors, and more vulnerable to EMU risk factors. However, they are only partially integrated. For their part, the markets of the countries that decided to stay out of the Monetary Union present a higher vulnerability to external risk factors. (C) 2009 Elsevier B.V. All rights reserved.
+C1 [Chulia, Helena] Univ Oberta Catalunya, Dept Econ & Business, Barcelona, Spain.
+   [Chulia, Helena] RFA IRA, Barcelona, Spain.
+   [Abad, Pilar] Univ Rey Juan Carlos, Econ Anal Dept, Madrid, Spain.
+   [Abad, Pilar] RFA IREA, Madrid, Spain.
+   [Gomez-Puig, Marta] Univ Barcelona, Econ Theory Dept, Barcelona, Spain.
+   [Gomez-Puig, Marta] RFA IREA, Barcelona, Spain.
+RP Chulia, H (reprint author), Univ Oberta Catalunya, Dept Econ & Business, Barcelona, Spain.
+EM pilar.abad@urjc.es; hchulia@uoc.edu; marta.gomezpuig@ub.edu
+RI Chulia, Helena/D-6749-2014; Abad, Pilar/I-5992-2018; Abad,
+   Pilar/AAD-4779-2019; Gomez-Puig, Marta/E-4408-2016
+OI Abad, Pilar/0000-0002-0558-4055; Abad, Pilar/0000-0002-0558-4055;
+   Gomez-Puig, Marta/0000-0001-8349-2829; Chulia,
+   Helena/0000-0001-5020-0519
+CR ADLER M, 1983, J FINANC, V38, P925, DOI 10.2307/2328091
+   Barr DG, 2004, J INT MONEY FINANC, V23, P71, DOI 10.1016/j.jimonfin.2003.10.005
+   Bartram SM, 2007, J BANK FINANC, V31, P1461, DOI 10.1016/j.jbankfin.2006.07.014
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   Bessler DA, 2003, J INT MONEY FINANC, V22, P261, DOI 10.1016/S0261-5606(02)00076-1
+   BOLLERSLEV T, 1988, J POLIT ECON, V96, P116, DOI 10.1086/261527
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Burns P, 1998, J DERIV, V5, P7
+   CAMPBELL JY, 1991, REV ECON STUD, V58, P495, DOI 10.2307/2298008
+   CAPPIELLO B, 2005, MEASURING COMOVEMENT
+   CAPPIELLO L, 2006, IMPACT EURO FINANCIA
+   Cappiello L., 2003, ASYMMETRIC DYNAMICS
+   Christiansen C, 2007, EUR FINANC MANAG, V13, P923, DOI 10.1111/j.1468-036X.2007.00403.x
+   Christiansen C, 2009, J BANK FINANC, V33, P1048, DOI 10.1016/j.jbankfin.2008.10.014
+   Cifarelli G, 2006, GLOB FINANC J, V16, P245, DOI 10.1016/j.gfj.2006.01.008
+   COX JC, 1985, ECONOMETRICA, V53, P385, DOI 10.2307/1911242
+   De Santis G, 1998, J FINANC ECON, V49, P375, DOI 10.1016/S0304-405X(98)00029-4
+   DeSantis G, 1997, J FINANC, V52, P1881, DOI 10.1111/j.1540-6261.1997.tb02745.x
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   Fleming J, 1998, J FINANC ECON, V49, P111, DOI 10.1016/S0304-405X(98)00019-1
+   Geyer A., 2004, Review of Finance, V8, P171, DOI 10.1023/B:EUFI.0000035191.62455.32
+   Gomez-Puig M, 2008, J INT MONEY FINANC, V27, P455, DOI 10.1016/j.jimonfin.2008.01.008
+   Gomez-Puig M, 2009, EUR FINANC MANAG, V15, P971, DOI 10.1111/j.1468-036X.2009.00495.x
+   Gomez-Puig M, 2009, APPL ECON, V41, P929, DOI 10.1080/00036840802345584
+   Hardouvelis GA, 2006, J BUS, V79, P365, DOI 10.1086/497414
+   Hardouvelis GA, 2007, J INT MONEY FINANC, V26, P305, DOI 10.1016/j.jimonfin.2006.12.002
+   Hunter DM, 2005, EUR FINANC MANAG, V11, P463, DOI 10.1111/j.1354-7798.2005.00293.x
+   Ilmanen A, 1996, J PORTFOLIO MANAGE, V22, P52, DOI 10.3905/jpm.1996.52
+   Kim SJ, 2006, J BANK FINANC, V30, P1507, DOI 10.1016/j.jbankfin.2005.05.007
+   Kim SJ, 2005, J BANK FINANC, V29, P2475, DOI 10.1016/j.jbankfin.2004.09.002
+   Laopodis N. T, 2008, INT RES J FINANCE EC, V19, P56
+   LO AW, 1990, J ECONOMETRICS, V45, P181, DOI 10.1016/0304-4076(90)90098-E
+   MCQUEEN G, 1993, REV FINANC STUD, V6, P683, DOI 10.1093/rfs/6.3.683
+   MERTON RC, 1980, J FINANC ECON, V8, P323, DOI 10.1016/0304-405X(80)90007-0
+   Pagano M, 2004, OXFORD REV ECON POL, V20, P531, DOI 10.1093/oxrep/grh031
+   Panchenko V, 2009, J BANK FINANC, V33, P1014, DOI 10.1016/j.jbankfin.2008.10.016
+   Skintzi V. D., 2006, J INT FINANC MARK I, V16, P23, DOI [10.1016/j.intfin.2004.12.003, DOI 10.1016/J.INTFIN.2004.12.003]
+   SOLNIK BH, 1974, J ECON THEORY, V8, P500, DOI 10.1016/0022-0531(74)90024-6
+   Spencer P, 2010, J BANK FINANC, V34, P667, DOI 10.1016/j.jbankfin.2009.09.006
+   THOMAS SH, 1993, J INT MONEY FINANC, V12, P390, DOI 10.1016/0261-5606(93)90003-T
+   Van Landschoot A, 2008, J BANK FINANC, V32, P2597, DOI 10.1016/j.jbankfin.2008.05.011
+NR 41
+TC 56
+Z9 56
+U1 0
+U2 18
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD DEC
+PY 2010
+VL 34
+IS 12
+SI SI
+BP 2851
+EP 2860
+DI 10.1016/j.jbankfin.2009.10.009
+PG 10
+WC Business, Finance; Economics
+SC Business & Economics
+GA 670HH
+UT WOS:000283411300003
+OA Green Published, Green Accepted
+DA 2019-12-28
+ER

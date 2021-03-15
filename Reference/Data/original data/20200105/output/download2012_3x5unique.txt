@@ -1,0 +1,482 @@
+
+PT J
+AU Wang, MX
+   Wang, MR
+   Wang, SY
+AF Wang, Mingxi
+   Wang, Mingrong
+   Wang, Shouyang
+TI Optimal investment and uncertainty on China's carbon emission abatement
+SO ENERGY POLICY
+LA English
+DT Article
+DE Emission abatement; Investment; Uncertainty
+ID GREENHOUSE; INTENSITY; CLIMATE
+AB To realize environmentally sustainable development of the economy, China has decided to cut carbon dioxide emissions per unit of GDP by 40 to 45 percent by 2020, compared with the level in 2005. Based on China's emission abatement target, this paper first analyzes enterprises' emission reduction pathways in practical production processes, and then develops a framework to derive the magnitude of investment required in each pathway in order to achieve the designated target at the minimal cost. Under the framework, it is found that in the absence of policy guidance, individual enterprises' emission reduction investments deviate from the optimal level. To correct the distortion, an alternative option is provided. Meanwhile, to ensure achievement of the emission reduction target, a stochastic model is introduced to measure the uncertainty arising from emission abatement investment. The results show that an appropriate emission abatement ratio can reduce 'the systemic risk' of emission abatement. Finally, a simulation is given to demonstrate the results derived from the stochastic model. (C) 2011 Elsevier Ltd. All rights reserved.
+C1 [Wang, Mingxi; Wang, Shouyang] Chinese Acad Sci, Acad Math & Syst Sci, Beijing 100190, Peoples R China.
+   [Wang, Mingxi] Univ Int Business & Econ, Sch Int Trade & Econ, Beijing 100029, Peoples R China.
+   [Wang, Mingrong] Capital Univ Econ & Business, Sch Econ, Beijing 100070, Peoples R China.
+RP Wang, MX (reprint author), Chinese Acad Sci, Acad Math & Syst Sci, Beijing 100190, Peoples R China.
+EM mxwang@amss.ac.cn
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71001097, 70941030]; China Postdoctoral Science
+   FoundationChina Postdoctoral Science Foundation [20100470025]; Beijing
+   Federation of Social Science Circles [2010SKL012]
+FX The authors thank Professor Nicky France and the two anonymous reviewers
+   for their valuable comments and very helpful suggestions on the first
+   version of this paper. This work was supported by the National Natural
+   Science Foundation of China (nos. 71001097 and 70941030), China
+   Postdoctoral Science Foundation (no. 20100470025) and Young Talent
+   Support Project of Beijing Federation of Social Science Circles (no.
+   2010SKL012).
+CR Ausubel LM, 2006, AM ECON REV, V96, P602, DOI 10.1257/aer.96.3.602
+   Benz E, 2006, PROBLEMS PERSPECTIVE, V4, P30
+   CAP (Center for American Progress), 2009, COUNT WORLDS CAP EM
+   Chen WY, 2005, ENERG POLICY, V33, P885, DOI 10.1016/j.enpol.2003.10.012
+   CLINE WR, 1992, EC GLOBAL WARMING
+   CTI (China Trade Information), 2010, STAT GRID CHARTS PLA
+   Dagoumas AS, 2010, ENERG POLICY, V38, P3067, DOI 10.1016/j.enpol.2010.01.047
+   EN (Enigin News), 2010, ENIGIN NEWS
+   Fan Y, 2007, ECOL ECON, V62, P683, DOI 10.1016/j.ecolecon.2006.08.016
+   Hope C., 2006, INTEGRATED ASSESSMEN, V6, P19
+   Houghton J.T., 2001, CLIMATE CHANGE 2001
+   Jonsson J., 2010, APPL THERMAL ENG
+   Jotzo F., 2006, NETWORK WORKING PAPE
+   Jotzo F, 2007, ENVIRON RESOUR ECON, V38, P259, DOI 10.1007/s10640-006-9078-z
+   Kennedy PW, 2002, CAN J ECON, V35, P16, DOI 10.1111/1540-5982.00118
+   Kim Y.-G., 2002, BUILDING KYOTO PROTO
+   Krishna V., 2002, AUCTION THEORY
+   Kromer MA, 2010, ENERGY, V35, P387, DOI 10.1016/j.energy.2009.10.006
+   Lutter R, 2000, ENERGY J, V21, P93
+   Maddison D, 2003, RESOUR ENERGY ECON, V25, P155, DOI 10.1016/S0928-7655(02)00024-6
+   MILGROM PR, 1982, ECONOMETRICA, V50, P1089, DOI 10.2307/1911865
+   *NDRC, 2007, CHIN NAT CLIM CHANG
+   NORDHAUS WD, 1991, ECON J, V101, P920, DOI 10.2307/2233864
+   Parry I. W. H., 2000, 0026 RES FUT
+   Pew Charitable Trusts (Pew CT), 2010, WHOS WINN CLEAN EN R
+   Titus J.G., 1992, GLOBAL CLIMATE CHANG, P384
+   Tol RSJ, 2009, J ECON PERSPECT, V23, P29, DOI 10.1257/jep.23.2.29
+   Zhang R. B., 2010, P CREAT C SCI TECHN
+   Zhang YG, 2010, ENERG ECON, V32, P186, DOI 10.1016/j.eneco.2009.09.016
+NR 29
+TC 21
+Z9 23
+U1 2
+U2 21
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0301-4215
+EI 1873-6777
+J9 ENERG POLICY
+JI Energy Policy
+PD FEB
+PY 2012
+VL 41
+BP 871
+EP 877
+DI 10.1016/j.enpol.2011.11.077
+PG 7
+WC Economics; Energy & Fuels; Environmental Sciences; Environmental Studies
+SC Business & Economics; Energy & Fuels; Environmental Sciences & Ecology
+GA 903XH
+UT WOS:000301155500086
+DA 2019-12-28
+ER
+
+PT J
+AU Klein, RW
+AF Klein, Robert W.
+TI Principles for Insurance Regulation: An Evaluation of Current Practices
+   and Potential Reforms
+SO GENEVA PAPERS ON RISK AND INSURANCE-ISSUES AND PRACTICE
+LA English
+DT Article
+DE insurance regulation; market failures; Solvency II
+ID PROPERTY-LIABILITY INSURANCE; SOLVENCY II; INDUSTRY
+AB The recent financial crisis and its cascading effects on the global economy have drawn increased attention to the regulation of financial institutions including insurance companies. While many observers would argue that insurance companies were not significant contributors to the crisis, the role of insurance companies in the financial economy and their potential vulnerability to systemic risk have become matters of considerable interest to policy-makers and regulators. In this context, this paper examines the basic economic principles that should govern the regulation of insurance and employs these principles in assessing current regulatory practices and potential reforms. Specifically, it articulates the basic rationale for insurance regulation, which is the remediation of market failures where regulation can enhance social welfare. In insurance, the principal market failures that warrant regulatory intervention are severe asymmetric information problems and principal-agent conflicts that could lead some insurance companies to incur excessive financial risk and/or engage in abusive market practices that harm consumers. This provides an economic basis for the regulation of insurers' financial condition and market conduct. At the same time, the regulatory measures that are employed to correct market failures should be efficient and effective. Judged against these principles, the systems for solvency and market conduct regulation in the United States warrant significant improvement. There appears to be little or no justification for regulating insurance rates in competitive markets and the states should move forward with full deregulation of insurance prices. The EU appears to be much farther ahead in terms of implementing best practices in the regulation of insurers' financial condition under its Solvency II initiative. It is also much closer to the desirable goal of full price deregulation than the United States. The Geneva Papers (2012) 37, 175-199. doi: 10.1057/gpp.2011.9; published online 5 October 2011
+C1 Georgia State Univ, Dept Risk Management & Insurance Res, Atlanta, GA 30302 USA.
+RP Klein, RW (reprint author), Georgia State Univ, Dept Risk Management & Insurance Res, POB 4036, Atlanta, GA 30302 USA.
+CR Brown JR, 2002, J POLIT ECON, V110, P481, DOI 10.1086/339714
+   CHANDRASHEKKAR P, 2007, AS PAC RISK INS ASS
+   CUMMINS JD, 1995, J BANK FINANC, V19, P511, DOI 10.1016/0378-4266(94)00136-Q
+   Cummins JD, 1999, J RISK INSUR, V66, P417, DOI 10.2307/253555
+   CUMMINS JD, 1991, FED BANK BO, V35, P117
+   DIONNE G, 2001, COMMITMENT AUTOMOBIL
+   Elderfield M, 2009, GENEVA PAP R I-ISS P, V34, P35, DOI 10.1057/gpp.2008.35
+   ELING M, 2009, COMPARISON INSURANCE
+   Eling M., 2007, RISK MANAGEMENT INSU, V10, P69, DOI DOI 10.1111/J.1540-6296.2007.00106.X
+   *EUR COMM, 2008, COM2008 EUR COMM
+   *EUR INS OCC PENS, 2011, EIOPATFQISS11001
+   *EUR PARL, 2007, FIN REP EUR PARL INQ
+   Grace Martin F., 2009, FUTURE INSURANCE REG
+   Grace MartinF, 2007, EFFECTS OPTIONAL FED
+   GRACE MF, 2008, UNDERSTANDING PROPER
+   HANSON J, 1974, MONITORING COMPETITI
+   Harrington S. E., 2002, DEREGULATING PROPERT
+   HARRINGTON SE, 1992, J RISK INSUR, V59, P185, DOI 10.2307/253187
+   Holzmuller I, 2009, GENEVA PAP R I-ISS P, V34, P56, DOI 10.1057/gpp.2008.43
+   *INS INF I, 2011, FACT BOOK 2011
+   JOSKOW PL, 1973, BELL J ECON, V4, P375, DOI 10.2307/3003047
+   Klein R. W., 2009, J INSURANCE REGULATI, V28, P73
+   Klein RobertW, 2005, REGULATORS INTRO INS
+   Klein RobertW, 1995, J RISK INSUR, V62, P263
+   KLEIN RW, 2001, J INSURANCE REGULATI, V20, P51
+   KLEIN RW, 1995, J RISK INSUR, V62, P93
+   MUNCH P, 1981, STUDIES PUBLIC REGUL
+   *NAT ASS INS COMM, 2011, ISS BREIF HLTH INS R
+   Pottier SW, 2011, J REGUL ECON, V39, P169, DOI 10.1007/s11149-010-9139-7
+   POTTIER SW, 2002, J FINANCIAL SERVICES, V21, P101
+   Scherer F., 1990, IND MARKET STRUCTURE
+   SPULBER DF, 1989, REGULATION MARKETS
+   *SWISS RE, 2010, SIGM 3 2010 REG ISS
+   TINER J, 2007, FSA INS SECT C 21 MA
+   Vaughan T. M., 2009, IMPLICATIONS SOLVENC
+   Viscusi WK, 2000, EC REGULATION ANTITR
+   Wang Shaun, 2009, FINANCIAL CRISIS LES
+NR 37
+TC 7
+Z9 7
+U1 0
+U2 26
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1018-5895
+J9 GENEVA PAP R I-ISS P
+JI Geneva Pap. Risk Insur.-Issues Pract.
+PD JAN
+PY 2012
+VL 37
+IS 1
+BP 175
+EP 199
+DI 10.1057/gpp.2011.9
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA 875EB
+UT WOS:000299012100009
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Arakelian, V
+   Dellaportas, P
+AF Arakelian, Veni
+   Dellaportas, Petros
+TI Contagion determination via copula and volatility threshold models
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Copulas; Kendall's tau; Reversible jump Markov chain Monte Carlo;
+   Laplace approximation; Time-varying parameters
+ID BAYESIAN MODEL; SELECTION
+AB We develop threshold models that allow volatilities and copula functions or their association parameters to change across time. The number and location of the thresholds is assumed unknown. We use a Markov chain Monte Carlo strategy combined with Laplace estimates that evaluate the required marginal densities for a given model. We apply our methodology to financial time series, emphasizing the ability to improve estimates of risk characteristics, as well as measuring financial contagion by inspecting simultaneous changes of dependence and volatility structures.
+C1 [Dellaportas, Petros] Athens Univ Econ & Business, Dept Stat, Athens, Greece.
+   [Arakelian, Veni] Univ Cyprus, Dept Econ, Nicosia, Cyprus.
+RP Dellaportas, P (reprint author), Athens Univ Econ & Business, Dept Stat, Athens, Greece.
+EM petros@aueb.gr
+CR Bernardo J, 1994, BAYESIAN THEORY
+   Bouye E., 2000, COPULAS FINANCE READ
+   Caporale G. M, 2005, J EMPIR FINANC, V12, P476, DOI DOI 10.1016/J.JEMPFIN.2004.02.005
+   CLAYTON DG, 1978, BIOMETRIKA, V65, P141, DOI 10.1093/biomet/65.1.141
+   Dellaportas P, 2002, STAT COMPUT, V12, P27, DOI 10.1023/A:1013164120801
+   Dellaportas P, 2007, ECONOMET REV, V26, P419, DOI 10.1080/07474930701220600
+   Dellaportes P., 2003, SPATIAL STAT COMPUTA, V173, P1
+   Denison D.G.T., 2002, BAYESIAN METHODS NON
+   Denison DGT, 1998, J ROY STAT SOC B, V60, P333, DOI 10.1111/1467-9868.00128
+   Dias A., 2004, WILEY FINANCE SERIES, P321
+   Embrechts P, 2003, HANDBOOKS FINANCE, P329, DOI 10.1016/B978-044450896-6.50010-8
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Frank M. J., 1979, AEQUATIONES MATH, V19, P194, DOI [10.1007/BF02189866, DOI 10.1007/BF02189866]
+   FREEDMAN DA, 1983, AM STAT, V37, P152, DOI 10.2307/2685877
+   Green PJ, 1995, BIOMETRIKA, V82, P711, DOI 10.2307/2337340
+   Gumbel E. J., 1960, PUBL I STAT U PARIS, V9, P171
+   HAMILTON JD, 1994, J ECONOMETRICS, V64, P307, DOI 10.1016/0304-4076(94)90067-1
+   HOUGAARD P, 1986, BIOMETRIKA, V73, P671, DOI 10.1093/biomet/73.3.671
+   Joe H, 1997, MULTIVARIATE MODELS
+   Kass RE, 1996, J AM STAT ASSOC, V91, P1343, DOI 10.2307/2291752
+   KASS RE, 1995, J AM STAT ASSOC, V90, P773, DOI 10.1080/01621459.1995.10476572
+   King M.A., 1994, REV FINANCIAL STUD, V3, P5
+   Mashal Roy, 2002, CORRELATION EXTREME
+   Nelsen R.B., 1999, INTRO COPULAS
+   Newey W., 1994, HDB ECONOMETRICS, V4, P2113
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Tong H., 1983, THRESHOLD MODELS NON
+NR 29
+TC 12
+Z9 13
+U1 0
+U2 12
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PY 2012
+VL 12
+IS 2
+SI SI
+BP 295
+EP 310
+DI 10.1080/14697680903410023
+PG 16
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 920QQ
+UT WOS:000302422400010
+DA 2019-12-27
+ER
+
+PT J
+AU Roca, E
+   Tularam, GA
+AF Roca, Eduardo
+   Tularam, Gurudeo Anand
+TI Which way does water flow? An econometric analysis of the global price
+   integration of water stocks
+SO APPLIED ECONOMICS
+LA English
+DT Article
+DE water finance; environmental finance; financial market integration;
+   vector autoregression; variance decomposition; impulse response
+ID MARKET INTEGRATION
+AB Around US$600 billion of investment is desperately needed to address forecasted huge shortages in water supply globally. A number of worldwide investors - so-called water funds - have started to take up this challenge. For these global water investors, knowledge about the extent of integration between the water sectors of financial markets is highly important. According to international portfolio diversification theory, the less (more) integrated markets are, the more (less) benefits there are from international diversification. In this study, we investigate the extent and manner of interdependence among the US, European and Asian water sector of the equity markets based on Vector Autoregression (VAR), Granger causality and impulse response analyses. We find that world water stock market prices are indeed significantly interdependent although this interdependence varies across time periods. Each market quickly responds to shocks from each other and completes its response within 3 days. Hence, for water investors, international diversification that is undertaken just within the water sector will not be beneficial. The result also implies that there is the risk of crossmarket contagion - that is, price volatility spill over across water sectors of different financial markets, and therefore, water authorities in one market should take cognisance of events in other markets.
+C1 [Roca, Eduardo] Griffith Univ, Dept Accounting Finance & Econ, Griffith Business Sch, Nathan, Qld 4111, Australia.
+   [Tularam, Gurudeo Anand] Griffith Univ, Fac Sci Engn Environm & Technol, Nathan, Qld 4111, Australia.
+RP Roca, E (reprint author), Griffith Univ, Dept Accounting Finance & Econ, Griffith Business Sch, Nathan, Qld 4111, Australia.
+EM E.Roca@griffith.edu.au
+CR Berben RP, 2009, APPL ECON, V41, P3067, DOI 10.1080/00036840701367572
+   Brailsford Tim, 2004, INVESTMENTS CONCEPTS
+   Brewer J., 2007, 0707 AR LEG STUD
+   Bruggemann R., 2008, J FINANCIAL ECONOMET, V6, P1
+   Buckland R., 2000, ABERDEEN PAPERS ACCO
+   Calatrava J, 2005, EUR REV AGRIC ECON, V32, P119, DOI 10.1093/EURRAG/jbi006
+   Chi J, 2006, PAC ECON REV, V11, P513, DOI 10.1111/j.1468-0106.2006.00332.x
+   Click RW, 2005, J ASIAN ECON, V16, P5, DOI 10.1016/j.asieco.2004.11.018
+   ENGLE RF, 1987, ECONOMETRICA, V55, P251, DOI 10.2307/1913236
+   EUN CS, 1989, J FINANC QUANT ANAL, V24, P241, DOI 10.2307/2330774
+   Geman H, 2007, J ALTERN INVEST, V10, P23, DOI 10.3905/jai.2007.695264
+   Global Water Intelligence, 2007, GLOB WAT MARK 2008
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Hatemi-J A., 2008, APPL FINANCIAL EC, V17, P827
+   KENEN PB, 1976, PRINCETON STUDIES IN, V39
+   Lutkepohl H, 1991, INTRO MULTIPLE TIME
+   Monteiro H., 2005, 200545 CTR EST SOBR
+   Panopoulou E., 2009, APPL FINANC EC, V19, P917
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Roca ED, 1999, APPL FINANCIAL EC, V9, P501, DOI DOI 10.1080/096031099332168
+   SIMS CA, 1980, ECONOMETRICA, V48, P1, DOI 10.2307/1912017
+   Solnik B., 1982, J PORTFOLIO MANAGE, V2, P11
+   Solnik B., 1974, FINANCIAL ANAL J, V30, P48, DOI DOI 10.2469/FAJ.V30.N4.48
+   SYRIOPOULOS T., 2004, APPL FINANCIAL EC, V14, P1253, DOI DOI 10.1080/0960310042000280465
+   Tahai A., 2004, APPL FINANCIAL EC, V14, P327, DOI DOI 10.1080/0960310042000211597
+   Wang Z, 2003, APPL ECON LETT, V10, P527, DOI 10.1080/1350485032000100198
+NR 26
+TC 7
+Z9 7
+U1 0
+U2 7
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0003-6846
+EI 1466-4283
+J9 APPL ECON
+JI Appl. Econ.
+PY 2012
+VL 44
+IS 23
+BP 2935
+EP 2944
+DI 10.1080/00036846.2011.568403
+PG 10
+WC Economics
+SC Business & Economics
+GA 909CX
+UT WOS:000301540800001
+DA 2019-12-27
+ER
+
+PT J
+AU Murinde, V
+AF Murinde, Victor
+TI Financial Development and Economic Growth: Global and African Evidence
+SO JOURNAL OF AFRICAN ECONOMIES
+LA English
+DT Article
+ID SUB-SAHARAN AFRICA; STOCK MARKETS; BANKS; LAW; INSTITUTIONS;
+   INFORMATION; INVESTMENT; COUNTRIES; POLICY; INCOME
+AB This paper aims to survey existing research on financial development and economic growth, highlighting the theoretical models and evidence from recent empirical work. Emphasis is placed on the flow-of-funds story (finance matters for economic growth). It is noted that recent evidence is weighted in favour of the argument that financial development, in terms of financial institutions and markets and their role in reducing information asymmetry and pricing risk, is crucial for economic growth. Also, new evidence offers important insights into the mechanisms by which finance induces economic growth, including emerging work on corporate finance as well as work that teases out an implication for inter-generational income distribution and poverty reduction (the finance-and-growth opportunity argument). However, there are some cautionary tales, as well, not least because of financial crises and contagion effects and the threat to sustainable growth and income convergence. Evidence specific to African economies is highlighted and implications for policy are drawn. The paper concludes by proposing the way forward for further research.
+C1 Univ Birmingham, Birmingham Business Sch, Birmingham B15 2TT, W Midlands, England.
+RP Murinde, V (reprint author), Univ Birmingham, Birmingham Business Sch, Birmingham B15 2TT, W Midlands, England.
+EM v.murinde@bham.ac.uk
+OI Murinde, Victor/0000-0003-4113-5860
+CR Abu-Bader S, 2008, REV DEV ECON, V12, P803, DOI 10.1111/j.1467-9361.2008.00427.x
+   Abu-Bader S, 2008, J POLICY MODEL, V30, P887, DOI 10.1016/j.jpolmod.2007.02.001
+   Acemoglu D, 1997, J POLIT ECON, V105, P709, DOI 10.1086/262091
+   Adams S, 2009, J POLICY MODEL, V31, P939, DOI 10.1016/j.jpolmod.2009.03.003
+   Aggarwal R, 2011, J DEV ECON, V96, P255, DOI 10.1016/j.jdeveco.2010.10.005
+   Ahlin C, 2008, J DEV ECON, V86, P414, DOI 10.1016/j.jdeveco.2007.07.002
+   Ahmed AD, 2010, STUD ECON FINANC, V27, P314, DOI 10.1108/10867371011085156
+   AKERLOF GA, 1993, BROOKINGS PAP ECO AC, P1
+   Akinlo E. A., 2010, REV FINANCE BANKING, V2, P17
+   Allen F, 2005, J FINANC ECON, V77, P57, DOI 10.1016/j.jfineco.2004.06.010
+   ALLEN F, 1990, J FINANCIAL INTERMED, V1, P3, DOI DOI 10.1016/1042-9573(90)90006-2
+   Ang JB, 2011, EUR ECON REV, V55, P688, DOI 10.1016/j.euroecorev.2010.09.004
+   ATJE R, 1993, EUR ECON REV, V37, P632, DOI 10.1016/0014-2921(93)90053-D
+   Bagehot W., 1873, LOMBARD STREET
+   Bangake C, 2011, ECON SYST, V35, P176, DOI 10.1016/j.ecosys.2010.07.001
+   Beck T, 2004, J BANK FINANC, V28, P423, DOI 10.1016/S0378-4266(02)00408-9
+   Beck T, 2002, J INT ECON, V57, P107, DOI 10.1016/S0022-1996(01)00131-3
+   Beck T, 2006, J MONETARY ECON, V53, P1861, DOI 10.1016/j.jmoneco.2005.10.014
+   BECKER GS, 1979, J POLIT ECON, V87, P1153, DOI 10.1086/260831
+   BECKER GS, 1986, J LABOR ECON, V4, pS1, DOI 10.1086/298118
+   BEKAERT G, 2006, FINANCIAL OPEN UNPUB
+   Benink H, 2002, EUROPEAN FINANCIAL M, V8, P103
+   BHATTACHARYA S, 1985, J ECON THEORY, V36, P1, DOI 10.1016/0022-0531(85)90076-6
+   Blackburn K, 1998, ECONOMICA, V65, P107, DOI 10.1111/1468-0335.00116
+   Bordo MD, 2006, EUR REV ECON HIST, V10, P421, DOI 10.1017/S136149160600181X
+   Boyd J, 1996, WORLD BANK ECON REV, V10, P371, DOI 10.1093/wber/10.2.371
+   BOYD JH, 1986, J ECON THEORY, V38, P211, DOI 10.1016/0022-0531(86)90115-8
+   BRAINARD WC, 1968, AM ECON REV, V58, P99
+   Brambila-Macias J, 2011, APPL FINANCIAL EC, V21, P1205, DOI DOI 10.1080/09603107.2011.566179
+   Brambila-Macias J, 2010, AFR DEV REV, V22, P366, DOI 10.1111/j.1467-8268.2010.00251.x
+   Calderon C, 2003, J DEV ECON, V72, P321, DOI 10.1016/S0304-3878(03)00079-8
+   Catrinescu N, 2009, WORLD DEV, V37, P81, DOI 10.1016/j.worlddev.2008.02.004
+   Chang PC, 2010, J BANK FINANC, V34, P2753, DOI 10.1016/j.jbankfin.2010.05.015
+   Chinn MD, 2006, J DEV ECON, V81, P163, DOI 10.1016/j.jdeveco.2005.05.010
+   Chu KH, 2010, J MACROECON, V32, P265, DOI 10.1016/j.jmacro.2009.10.006
+   Cole RA, 2008, J BANK FINANC, V32, P995, DOI 10.1016/j.jbankfin.2007.07.006
+   Coulibaly B, 2009, J INT MONEY FINANC, V28, P454, DOI 10.1016/j.jimonfin.2008.11.003
+   de Vita G, 2009, APPL ECON LETT, V16, P277, DOI 10.1080/13504850601018437
+   Deaton A, 2010, J ECON PERSPECT, V24, P3, DOI 10.1257/jep.24.3.3
+   Deidda L, 2002, ECON LETT, V74, P339, DOI 10.1016/S0165-1765(01)00571-7
+   Deidda LG, 2006, J MONETARY ECON, V53, P233, DOI 10.1016/j.jmoneco.2005.03.007
+   Demirguc-Kunt A., 2008, 4469 WORLD BANK
+   DEVEREUX MB, 1994, INT ECON REV, V35, P535, DOI 10.2307/2527072
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   Djankov S, 2007, J FINANC ECON, V84, P299, DOI 10.1016/j.jfineco.2006.03.004
+   Doucouliagos H, 2008, EUR J POLIT ECON, V24, P1, DOI 10.1016/j.ejpoleco.2007.06.002
+   ENGLE RF, 1987, ECONOMETRICA, V55, P251, DOI 10.2307/1913236
+   Enisan AA, 2009, J ECON BUS, V61, P162, DOI 10.1016/j.jeconbus.2008.05.001
+   Evans AD, 2002, INT J FINANC ECON, V7, P123, DOI 10.1002/ijfe.182
+   FAMA EF, 1983, J LAW ECON, V26, P301, DOI 10.1086/467037
+   FAMA EF, 1983, J LAW ECON, V26, P327, DOI 10.1086/467038
+   FLEMING AE, 2000, FINANCIAL SYSTEMS TR
+   Fofack H, 2010, AFR DEV REV, V22, P4, DOI 10.1111/j.1467-8268.2009.00226.x
+   Galor O, 1997, AM ECON REV, V87, P363
+   GALOR O, 1993, REV ECON STUD, V60, P35, DOI 10.2307/2297811
+   Giuliano P, 2009, J DEV ECON, V90, P144, DOI 10.1016/j.jdeveco.2008.10.005
+   Goldsmith R. W., 1969, FINANCIAL STRUCTURE
+   Green C., 2003, J INT DEV, V15, P1015, DOI DOI 10.1002/JID.961
+   Green C.J., 2005, FINANCE DEV SURVEYS
+   Green Christopher J., 2006, J INT DEV J INT DEV, V18, P1017, DOI 10.1002/jid.1334
+   Green CJ, 1998, MANCH SCH, V66, P302, DOI 10.1111/1467-9957.00103
+   Green CJ, 1992, NEW PALGRAVE DICT MO
+   GREENWOOD J, 1990, J POLIT ECON, V98, P1076, DOI 10.1086/261720
+   Greenwood J, 1997, J ECON DYN CONTROL, V21, P145, DOI 10.1016/0165-1889(95)00928-0
+   Gries T, 2009, WORLD DEV, V37, P1849, DOI 10.1016/j.worlddev.2009.05.008
+   Guariglia A, 2008, J COMP ECON, V36, P633, DOI 10.1016/j.jce.2007.12.003
+   Gurley JG, 1955, AM ECON REV, V45, P515
+   Haselmann R, 2010, REV FINANC STUD, V23, P549, DOI 10.1093/rfs/hhp073
+   Hassan MK, 2011, Q REV ECON FINANC, V51, P88, DOI 10.1016/j.qref.2010.09.001
+   Huang YF, 2010, WORLD DEV, V38, P1667, DOI 10.1016/j.worlddev.2010.04.001
+   Jappelli T, 2002, J BANK FINANC, V26, P2017, DOI 10.1016/S0378-4266(01)00185-6
+   JENSEN MC, 1976, J FINANC ECON, V3, P305, DOI 10.1016/0304-405X(76)90026-X
+   Kar M, 2011, ECON MODEL, V28, P685, DOI 10.1016/j.econmod.2010.05.015
+   Khwaja AI, 2005, Q J ECON, V120, P1371, DOI 10.1162/003355305775097524
+   KING RG, 1993, J MONETARY ECON, V32, P513, DOI 10.1016/0304-3932(93)90028-E
+   Kirkpatrick C, 2008, EUR J FINANC, V14, P625, DOI 10.1080/13518470701705769
+   Klein L. R., 2000, FINANCIAL SYSTEMS TR
+   La Porta R, 2002, J FINANC, V57, P265, DOI 10.1111/1540-6261.00422
+   La Porta R, 1998, J POLIT ECON, V106, P1113, DOI 10.1086/250042
+   La Porta R, 1999, J FINANC, V54, P471, DOI 10.1111/0022-1082.00115
+   Lee CC, 2009, J APPL ECON, V12, P249, DOI 10.1016/S1514-0326(09)60015-5
+   Lensink R., 2007, APPL FINANCIAL EC, V16, P569
+   Levine R, 1998, AM ECON REV, V88, P537
+   Levine R, 1998, J MONEY CREDIT BANK, V30, P596, DOI 10.2307/2601259
+   Levine R, 1999, J FINANC INTERMED, V8, P8, DOI 10.1006/jfin.1998.0255
+   LEVINE R, 2005, HDB EC GROWTH, P865, DOI DOI 10.1016/S1574-0684(05)01012-9
+   Love I, 2006, Q REV ECON FINANC, V46, P190, DOI 10.1016/j.qref.2005.11.007
+   Loxley J, 2008, AFR DEV REV, V20, P163, DOI 10.1111/j.1467-8268.2008.00181.x
+   LUCAS RE, 1988, J MONETARY ECON, V22, P3, DOI 10.1016/0304-3932(88)90168-7
+   MANKIW NG, 1992, Q J ECON, V107, P407, DOI 10.2307/2118477
+   Manos R, 2007, J ECON BUS, V59, P443, DOI 10.1016/j.jeconbus.2007.04.006
+   Mavrotas G., 2005, EUROPEAN J FINANCE, V14, P563
+   McKinnon R. I., 1973, MONEY CAPITAL EC DEV
+   Meier G. M., 1984, PIONEERS DEV
+   Miller M. H., 1998, J APPL CORPORATE FIN, V11, P8, DOI DOI 10.1111/J.1745-6622.1998.TB00498.X
+   Minier JA, 2003, J MONETARY ECON, V50, P1593, DOI 10.1016/j.jmoneco.2003.08.006
+   Minoiu C, 2010, Q REV ECON FINANC, V50, P27, DOI 10.1016/j.qref.2009.10.004
+   Mishkin FS, 2009, J DEV ECON, V89, P164, DOI 10.1016/j.jdeveco.2007.11.004
+   Moore T, 2006, J POLICY MODEL, V28, P319, DOI 10.1016/j.jpolmod.2005.12.002
+   Moore T, 2005, J DEV STUD, V41, P675, DOI 10.1080/00220380500092846
+   Morck R., 2005, J EC LIT IN PRESS
+   Mukerji P, 2009, J INT MONEY FINANC, V28, P1006, DOI 10.1016/j.jimonfin.2008.10.001
+   Murinde V, 2003, WORLD ECON, V26, P181, DOI 10.1111/1467-9701.00517
+   Murinde V., 2010, AFRICAN COMPANION
+   Murinde V., 1996, FINANCIAL DEV EC GRO, P94
+   MYERS SC, 1984, J FINANC ECON, V13, P187, DOI 10.1016/0304-405X(84)90023-0
+   Ndako U. B., 2010, THESIS U LEICESTER
+   Ndikumana L, 2000, WORLD DEV, V28, P381, DOI 10.1016/S0305-750X(99)00129-1
+   Nissanke M., 1998, FINANCIAL INTEGRATIO
+   North D. C., 1990, I I CHANGE EC PERFOR
+   OBSTFELD M, 1994, AM ECON REV, V84, P1310
+   Odhiambo NM, 2008, ECON MODEL, V25, P704, DOI 10.1016/j.econmod.2007.10.009
+   Odhiambo NM, 2008, ECON ISS, V13, P21
+   PAGANO M, 1993, EUR ECON REV, V37, P613, DOI 10.1016/0014-2921(93)90051-B
+   Pang JR, 2009, J BANK FINANC, V33, P810, DOI 10.1016/j.jbankfin.2008.09.015
+   Pedroni P, 1999, OXFORD B ECON STAT, V61, P653, DOI 10.1111/1468-0084.0610s1653
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Qian J., 2005, AFA 2005 PHIL M, DOI [10.2139/ssrn.501662, DOI 10.2139/SSRN.501662]
+   Rajan RG, 2008, REV ECON STAT, V90, P643, DOI 10.1162/rest.90.4.643
+   RAMAKRISHNAN RTS, 1984, REV ECON STUD, V51, P415, DOI 10.2307/2297431
+   Riman H. B., 2008, GLOBAL J SOCIAL SCI, V7, P85
+   Robinson J., 1952, RATE INTEREST OTHER
+   RODRIK D, 2000, 7540 NAT BUR EC RES
+   SAINTPAUL G, 1992, EUR ECON REV, V36, P763, DOI 10.1016/0014-2921(92)90056-3
+   Schumpeter J.A., 1912, THEORY EC DEV
+   STIGLITZ JE, 1983, AM ECON REV, V73, P912
+   TODA HY, 1995, J ECONOMETRICS, V66, P225, DOI 10.1016/0304-4076(94)01616-8
+   Trew A, 2006, ECON REC, V82, P481, DOI 10.1111/j.1475-4932.2006.00361.x
+   United Nations Department of Economics and Social Affairs, 1993, STUD METH F
+   United Nations Department of Economics and Social Affairs, 1968, STUD METH F
+   Wolde-Rufael Y, 2009, ECON MODEL, V26, P1140, DOI 10.1016/j.econmod.2009.05.002
+   Wurgler J, 2000, J FINANC ECON, V58, P187, DOI 10.1016/S0304-405X(00)00070-2
+   Yang Y, 2009, WORLD DEV, V37, P753, DOI 10.1016/j.worlddev.2008.07.009
+   Yang YY, 2008, J POLICY MODEL, V30, P827, DOI 10.1016/j.jpolmod.2007.09.006
+   Zhao T., 2010, DOES I SETTING CREDI
+NR 135
+TC 16
+Z9 16
+U1 0
+U2 24
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 0963-8024
+EI 1464-3723
+J9 J AFR ECON
+JI J. Afr. Econ.
+PY 2012
+VL 21
+SU 1
+BP I10
+EP I56
+DI 10.1093/jae/ejr042
+PG 47
+WC Economics
+SC Business & Economics
+GA 866ME
+UT WOS:000298384200003
+DA 2019-12-27
+ER

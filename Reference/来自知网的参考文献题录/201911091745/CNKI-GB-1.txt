@@ -1,0 +1,1012 @@
+[1]Franklin Allen,Xian Gu. The Interplay between Regulations and Financial Stability[J]. Journal of Financial Services Research,2018,53(2-3).
+
+[2]Zouheir Mighri. On the Dynamic Linkages Among International Emerging Currencies[J]. Journal of Quantitative Economics,2018,16(2).
+
+[3]Andre R. Neveu. A survey of network-based analysis and systemic risk measurement[J]. Journal of Economic Interaction and Coordination,2018,13(2).
+
+[4]Richard Bookstaber,Mark Paddrik,Brian Tivnan. An agent-based model for financial vulnerability[J]. Journal of Economic Interaction and Coordination,2018,13(2).
+
+[5]Yangguang Zhu,Feng Yang,Wuyi Ye. Financial contagion behavior analysis based on complex network approach[J]. Annals of Operations Research,2018,268(1-2).
+
+[6]Arnd Hübsch,Ursula Walther. The impact of network inhomogeneities on contagion and system stability[J]. Annals of Operations Research,2017,254(1-2).
+
+[7]Kari Nixon. ‘A Speculative Idea’: The Parallel Trajectories of Financial Speculation, Obstetrical Science, and Fiscal Management of Female Bodies in Henry James’s Washington Square[J]. Journal of Medical Humanities,2017,38(3).
+
+[8]Wei Zhou. Dynamic and Asymmetric Contagion Reactions of Financial Markets During the Last Subprime Crisis[J]. Computational Economics,2017,50(2).
+
+[9]Stefan Weber,Kerstin Weske. The joint impact of bankruptcy costs, fire sales and cross-holdings on systemic risk in financial networks[J]. Probability, Uncertainty and Quantitative Risk,2017,2(1).
+
+[10]Ke Cheng,Xiaoguang Yang. Interdependence between the stock market and the bond market in one country: evidence from the subprime crisis and the European debt crisis[J]. Financial Innovation,2017,3(1).
+
+[11]William J. Hippler,Shadiya Hossain,M. Kabir Hassan. Financial crisis spillover from Wall Street to Main Street: further evidence[J]. Empirical Economics,2019,56(6).
+
+[12]Ben Hambly,Andreas Søjmark. An SPDE model for systemic risk with endogenous contagion[J]. Finance and Stochastics,2019,23(3).
+
+[13]Anubha Goel,Aparna Mehra. Analyzing Contagion Effect in Markets During Financial Crisis Using Stochastic Autoregressive Canonical Vine Model[J]. ,2019,53(3).
+
+[14]Qingduo Zeng,Shancun Liu,Qiang Zhang. Common Sentiment and Price Contagion[J]. Journal of Systems Science and Complexity,2019,32(5).
+
+[15]Paolo Tasca,Stefano Battiston,Andrea Deghi. Portfolio diversification and systemic risk in interbank networks[J]. Journal of Economic Dynamics and Control,2017,82.
+
+[16]Donatien Hainaut. Contagion modeling between the financial and insurance markets with time changed processes[J]. Insurance Mathematics and Economics,2017.
+
+[17]Rudra Prosad Roy,Saikat Sinha Roy. Financial contagion and volatility spillover: An exploration into Indian commodity derivative market[J]. Economic Modelling,2017.
+
+[18]Xian Cheng,Ji Wu,Stephen Shaoyi Liao. A study of contagion in the financial system from the perspective of network analytics[J]. Neurocomputing,2017,264.
+
+[19]Piti Disyatat,Phurichai Rungcharoenkitkul. Monetary Policy and Financial Spillovers: Losing Traction?[J]. Journal of International Money and Finance,2017.
+
+[20]Dimitris Kenourgios,Nader Naifar,Dimitrios Dimitriou. Islamic financial markets and global crises: Contagion or decoupling?[J]. Economic Modelling,2016,57.
+
+[21]Haelim Park Anderson,John C. Bluedorn. Reprint of: Stopping contagion with bailouts: Micro-evidence from Pennsylvania bank networks during the panic of 1884[J]. Journal of Banking and Finance,2017,83.
+
+[22]Marco Gambacciani,Marc S. Paolella. Robust Normal Mixtures for Financial Portfolio Allocation[J]. Econometrics and Statistics,2017.
+
+[23]Kostas Andriosopoulos,Emilios Galariotis,Spyros Spyrou. Contagion, volatility persistence and volatility spill-overs: The case of energy markets during the European financial crisis[J]. Energy Economics,2017,66.
+
+[24]Ginanjar Dewandaru,Rumi Masih,A. Mansur M. Masih. What can wavelets unveil about the vulnerabilities of monetary integration? A tale of Eurozone stock markets[J]. Economic Modelling,2016,52.
+
+[25]Gary Koop,Dimitris Korobilis. Model uncertainty in Panel Vector Autoregressive models[J]. European Economic Review,2016,81.
+
+[26]Dimitrios Dimitriou,Dimitris Kenourgios,Theodore Simos. Financial crises, exchange rate linkages and uncovered interest parity: Evidence from G7 markets[J]. Economic Modelling,2017,66.
+
+[27]Ginanjar Dewandaru,Rumi Masih,Mansur Masih. Regional spillovers across transitioning emerging and frontier equity markets: A multi-time scale wavelet analysis[J]. Economic Modelling,2017,65.
+
+[28]Paola Cerchiello,Paolo Giudici,Giancarlo Nicola. Twitter data models for bank risk contagion[J]. Neurocomputing,2017,264.
+
+[29]Hamed Amini,Andreea Minca,Agnès Sulem. Optimal equity infusions in interbank networks[J]. Journal of Financial Stability,2017,31.
+
+[30]Pami Dua,Divya Tuteja. Financial crises and dynamic linkages across international stock and currency markets[J]. Economic Modelling,2016,59.
+
+[31]Zachary Feinstein. Financial contagion and asset liquidation strategies[J]. Operations Research Letters,2017,45(2).
+
+[32]Md Akhtaruzzaman,Abul Shamsuddin. International contagion through financial versus non-financial firms[J]. Economic Modelling,2016,59.
+
+[33]Thiago Christiano Silva,Michel da Silva Alexandre,Benjamin Miranda Tabak. Bank lending and systemic risk: A financial-real sector network approach with feedback[J]. Journal of Financial Stability,2017.
+
+[34]Xiang-Shen Ye,Ruo-Bing Xue,Jianjun Gao,Xi-Ren Cao. Optimization in curbing risk contagion among financial institutes[J]. Automatica,2018,94.
+
+[35]Deeya Sewraj,Bartosz Gebka,Robert D.J. Anderson. Day-of-the-week effects in financial contagion[J]. Finance Research Letters,2018.
+
+[36]Ahmed BenSaïda. The contagion effect in European sovereign debt markets: A regime-switching vine copula approach[J]. International Review of Financial Analysis,2018,58.
+
+[37]Miguel A. Rivera-Castro,Andrea Ugolini,Juan Arismendi Zambrano. Tail systemic risk and contagion: Evidence from the Brazilian and Latin America banking network[J]. Emerging Markets Review,2018,35.
+
+[38]Weihong Huang,Zhenxi Chen. Modelling contagion of financial crises[J]. North American Journal of Economics and Finance,2018.
+
+[39]Edgardo Cayon,Susan Thorp,Eliza Wu. Immunity and infection: Emerging and developed market sovereign spreads over the Global Financial Crisis[J]. Emerging Markets Review,2018,34.
+
+[40]Deeya Sewraj,Bartosz Gebka,Robert D.J. Anderson. Identifying contagion: A unifying approach[J]. Journal of International Financial Markets, Institutions & Money,2018.
+
+[41]Christos Alexakis,Vasileios Pappas. Sectoral dynamics of financial contagion in Europe - The cases of the recent crises episodes[J]. Economic Modelling,2018.
+
+[42]Jill Cetina,Mark Paddrik,Sriram Rajan. Stressed to the core: Counterparty concentrations and systemic losses in CDS markets[J]. Journal of Financial Stability,2018,35.
+
+[43]Tarik Roukny,Stefano Battiston,Joseph E. Stiglitz. Interconnectedness as a source of uncertainty in systemic risk[J]. Journal of Financial Stability,2018,35.
+
+[44]Giuseppe Arbia,Riccardo Bramante,Silvia Facchinetti,Diego Zappa. Modeling inter-country spatial financial interactions with Graphical Lasso: An application to sovereign co-risk evaluation[J]. Regional Science and Urban Economics,2018,70.
+
+[45]Ron J. Berndsen,Carlos León,Luc Renneboog. Financial stability in networks of financial institutions and market infrastructures[J]. Journal of Financial Stability,2018,35.
+
+[46]Ahmed BenSaïda,Houda Litimi,Oussama Abdallah. Volatility spillover shifts in global financial markets[J]. Economic Modelling,2018.
+
+[47]Shaen Corbet,Charles Larkin,Caroline McMullan. Chemical industry disasters and the sectoral transmission of financial market contagion[J]. Research in International Business and Finance,2018.
+
+[48]Lumengo Bonga-Bonga. Uncovering equity market contagion among BRICS countries: An application of the multivariate GARCH model[J]. Quarterly Review of Economics and Finance,2018,67.
+
+[49]Emna Abdennadher,Slaheddine Hellara. Causality and Contagion in Emerging Stock Markets[J]. Borsa Istanbul Review,2018.
+
+[50]Giuseppe De Marco,Chiara Donnini,Federica Gioia,Francesca Perla. On the measure of contagion in fuzzy financial networks[J]. Applied Soft Computing,2018,67.
+
+[51]Alexia Anastasopoulos. Testing for financial contagion: New evidence from the Greek crisis and yuan devaluation[J]. Research in International Business and Finance,2018,45.
+
+[52]Uchenna Tony-Okeke,Jaliyyah Ahmadu-Bello,Jacek Niklewski,Timothy Rodgers. Financial contagion and capital asset pricing in Africa: The impact of the 2007–09 and Euro-Zone crises on natural resources sector Beta in African emerging markets[J]. Research in International Business and Finance,2018,45.
+
+[53]Seungjoon Oh. Fire-sale acquisitions and intra-industry contagion[J]. Journal of Corporate Finance,2018,50.
+
+[54]Samitas Aristeidis,Kampouris Elias. Empirical analysis of market reactions to the UK’s referendum results – How strong will Brexit be?[J]. Journal of International Financial Markets, Institutions & Money,2018,53.
+
+[55]Andrew Meegan,Shaen Corbet,Charles Larkin. Financial market spillovers during the quantitative easing programmes of the global financial crisis (2007–2009) and the European debt crisis[J]. Journal of International Financial Markets, Institutions & Money,2018.
+
+[56]Michael Hasler,Chayawat Ornthanalai. Fluctuating Attention and Financial Contagion[J]. Journal of Monetary Economics,2018.
+
+[57]Roy Cerqueti,Livio Fenga,Marco Ventura. Does the U.S. exercise contagion on Italy? A theoretical model and empirical evidence[J]. Physica A: Statistical Mechanics and its Applications,2018,499.
+
+[58]Stefano Battiston,Serafin Martinez-Jaramillo. Financial networks and stress testing: Challenges and new research avenues for systemic risk analysis and financial stability implications[J]. Journal of Financial Stability,2018,35.
+
+[59]Hossein Dastkhan,Naser Shams Gharneh. How the ownership structures cause epidemics in financial markets: A network-based simulation model[J]. Physica A: Statistical Mechanics and its Applications,2018,492.
+
+[60]Walid M.A. Ahmed. How do Islamic versus conventional equity markets react to political risk? Dynamic panel evidence[J]. International Economics,2018.
+
+[61]Erdem Kilic. Contagion effects of U.S. Dollar and Chinese Yuan in forward and spot foreign exchange markets[J]. Economic Modelling,2017,62.
+
+[62]Thiago Christiano Silva,Michel Alexandre da Silva,Benjamin Miranda Tabak. Systemic risk in financial systems: A feedback approach[J]. Journal of Economic Behavior and Organization,2017,144.
+
+[63]Rajan Sruthi,Santhakumar Shijin. Cascading effect of contagion in Indian stock market: Evidence from reachable stocks[J]. IIMB Management Review,2017,29(4).
+
+[64]Xiang-Shen Ye,Ruo-Bing Xue,Jian-Jun Gao,Xi-Ren Cao. An Iterative Approach to Reduce Systemic Risk among Financial Institutes * * This research was supported in part by National Natural Science Foundation of China under the grant 61221003, and the Collaborative Research Fund of the Research Grants Council, Hong Kong Special Administrative Region, China, under Grant No. HKUST11/CRF/10[J]. IFAC PapersOnLine,2017,50(1).
+
+[65]Louis R. Piccotti. Financial contagion risk and the stochastic discount factor[J]. Journal of Banking and Finance,2017,77.
+
+[66]Brenda González-Hermosillo,Christian Johnson. Transmission of financial stress in Europe: The pivotal role of Italy and Spain, but not Greece[J]. Journal of Economics and Business,2017,90.
+
+[67]Xian Cheng,Haichuan Zhao. Modeling, analysis and mitigation of contagion in financial systems[J]. Economic Modelling,2018.
+
+[68]Shanshan Jiang,Hong Fan. Credit risk contagion coupling with sentiment contagion[J]. Physica A: Statistical Mechanics and its Applications,2018,512.
+
+[69]Siyu Li,Xiande Zhao,Baofeng Huo. Supply chain coordination and innovativeness: A social contagion and learning perspective[J]. International Journal of Production Economics,2018,205.
+
+[70]Niu Xuejie. IoT study on the total risk management and cluster-coordinated development based on synergy theory[J]. Cognitive Systems Research,2018,52.
+
+[71]Swarnava (Sonny) Biswas,Fabiana Gómez. Contagion through common borrowers[J]. Journal of Financial Stability,2018,39.
+
+[72]John Leventides,Kalliopi Loukaki,Vassilios G. Papavassiliou. Simulating financial contagion dynamics in random interbank networks[J]. Journal of Economic Behavior and Organization,2018.
+
+[73]Imen BenMim,Ahmed BenSaïda. Financial contagion across major stock markets: A study during crisis episodes[J]. North American Journal of Economics and Finance,2019,48.
+
+[74]Alberto Bucci,Davide La Torre,Danilo Liuzzi,Simone Marsiglio. Financial contagion and economic development: An epidemiological approach[J]. Journal of Economic Behavior and Organization,2018.
+
+[75]Hsiang-Hsi Liu,Teng-Kun Wang,Weny Li. Dynamical Volatility and Correlation among US Stock and Treasury Bond Cash and Futures Markets in Presence of Financial Crisis: A Copula Approach[J]. Research in International Business and Finance,2019,48.
+
+[76]Laura Ballester,Ana Carmen Díaz-Mendoza,Ana González-Urteaga. A systematic review of sovereign connectedness on emerging economies[J]. International Review of Financial Analysis,2019,62.
+
+[77]Wahbeeah Mohti,Andreia Dionísio,Isabel Vieira,Paulo Ferreira. Financial contagion analysis in frontier markets: Evidence from the US subprime and the Eurozone debt crises[J]. Physica A: Statistical Mechanics and its Applications,2019,525.
+
+[78]Xinya Wang,Huifang Liu,Shupei Huang,Brian Lucey. Identifying the multiscale financial contagion in precious metal markets[J]. International Review of Financial Analysis,2019,63.
+
+[79]Nicholas Apergis,Christina Christou,Iason Kynigakis. Contagion across US and European financial markets: Evidence from the CDS markets[J]. Journal of International Money and Finance,2019,96.
+
+[80]Pınar Kaya Soylu,Bülent Güloğlu. Financial contagion and flight to quality between emerging markets and u.s. bond market[J]. North American Journal of Economics and Finance,2019.
+
+[81]Mario Eboli. A flow network analysis of direct balance-sheet contagion in financial networks[J]. Journal of Economic Dynamics and Control,2019,103.
+
+[82]Roman Matkovskyy,Akanksha Jalan. From financial markets to Bitcoin markets: A fresh look at the contagion effect[J]. Finance Research Letters,2019,31.
+
+[83]Marcy L. Shepardson. Effects of individual task-specific experience in audit committee oversight of financial reporting outcomes[J]. Accounting, Organizations and Society,2019,74.
+
+[84]Sharada Nia. Interdependence or contagion? A model switching approach with a focus on Latin America[J]. Economic Modelling,2019.
+
+[85]Erdinc Akyildirim,Shaen Corbet,Brian Lucey,Ahmet Sensoy,Larisa Yarovaya. The relationship between implied volatility and cryptocurrency returns[J]. Finance Research Letters,2019.
+
+[86]Michael Stutzer. The bankruptcy problem in financial networks[J]. Economics Letters,2018,170.
+
+[87]Ambrogio Cesa-Bianchi,Jean Imbs,Jumana Saleheen. Finance and synchronization[J]. Journal of International Economics,2019,116.
+
+[88]Lixin Sun. Financial networks and systemic risk in China's banking system[J]. Finance Research Letters,2019.
+
+[89]Giuseppe Brandi,Riccardo Di Clemente,Giulio Cimini. Epidemics of liquidity shortages in interbank markets[J]. Physica A: Statistical Mechanics and its Applications,2018,507.
+
+[90]Xuening Zhu,Weining Wang,Hansheng Wang,Wolfgang Karl Härdle. Network quantile autoregression[J]. Journal of Econometrics,2019,212(1).
+
+[91]Anqi Liu,Mark Paddrik,Steve Y. Yang,Xingjia Zhang. Interbank contagion: An agent-based model approach to endogenously formed networks[J]. Journal of Banking and Finance,2017.
+
+[92]Konstantinos Gkillas,Athanasios Tsagkanos,Dimitrios I. Vortelinos. Integration and risk contagion in financial crises: Evidence from international stock markets[J]. Journal of Business Research,2019,104.
+
+[93]Mardi Dungey,Thomas J. Flavin,Dolores Lagoa-Varela. Are banking shocks contagious? Evidence from the eurozone[J]. Journal of Banking and Finance,2018.
+
+[94]Marco Bardoscia,Paolo Barucca,Adam Brinley Codd,John Hill. Forward-looking solvency contagion[J]. Journal of Economic Dynamics and Control,2019.
+
+[95]Rangga Handika,Gatot Soepriyanto,Shinta Amalina Hazrati Havidz. Are cryptocurrencies contagious to Asian financial markets?[J]. Research in International Business and Finance,2019,50.
+
+[96]Jingyu Li,Yanzhen Yao,Jianping Li,Xiaoqian Zhu. Network-based estimation of systematic and idiosyncratic contagion: The case of Chinese financial institutions[J]. Emerging Markets Review,2019,40.
+
+[97]Peter Bossaerts,Shinsuke Suzuki,John P. O’Doherty. Perception of intentionality in investor attitudes towards financial risks[J]. Journal of Behavioral and Experimental Finance,2019,23.
+
+[98]Zachary Feinstein. Capital regulation under price impacts and dynamic financial contagion[J]. European Journal of Operational Research,2019.
+
+[99]Massimo Guidolin,Erwin Hansen,Manuela Pedio. Cross-asset contagion in the financial crisis: A Bayesian time-varying parameter approach[J]. Journal of Financial Markets,2019,45.
+
+[100]S. Avdjiev,P. Giudici,A. Spelta. Measuring contagion risk in international banking[J]. Journal of Financial Stability,2019,42.
+
+[101]Jose E. Gomez-Gonzalez,Wilmer Rojas-Espinosa. Detecting exchange rate contagion in Asian exchange rate markets using asymmetric DDC-GARCH and R-vine copulas[J]. Economic Systems,2019.
+
+[102]Nadja Dwenger,Frank M. Fossen,Martin Simmler. Firms’ financial and real responses to credit supply shocks: Evidence from firm-bank relationships in Germany[J]. Journal of Financial Intermediation,2018.
+
+[103]Jose E. Gomez-Gonzalez,Wilmer Rojas-Espinosa. Detecting contagion in Asian exchange rate markets using asymmetric DCC-GARCH and R-vine copulas[J]. Economic Systems,2019.
+
+[104]Dimitris Kenourgios,Dimitrios Dimitriou. Contagion of the Global Financial Crisis and the real economy: A regional analysis[J]. ,2015,44.
+
+[105]Luo Changqing,Xie Chi,Yu Cong,Xu Yan. Measuring financial market risk contagion using dynamic MRS-Copula models: The case of Chinese and other international stock markets[J]. ,2015,51.
+
+[106]Mardi Dungey,Dinesh Gajurel. Equity market contagion during the global financial crisis: Evidence from the world's eight largest economies[J]. ,2014,38(2).
+
+[107]Ginanjar Dewandaru,Rumi Masih,A. Mansur M. Masih. What can wavelets unveil about the vulnerabilities of monetary integration? A tale of Eurozone stock markets[J]. ,2016,52.
+
+[108]Marco Bardoscia,Paolo Barucca,Adam Brinley Codd,John Hill. Forward-looking solvency contagion[J]. Journal of Economic Dynamics and Control,2019,108.
+
+[109]陈颖.经济新常态背景下中国系统性金融风险的监测与防范[J].市场周刊,2019(08):91-92.
+
+[110]沈丽,刘媛,李文君.中国地方金融风险空间关联网络及区域传染效应:2009-2016[J].管理评论,2019,31(08):35-48.
+
+[111]沈丽,张影,李文君.我国区域金融风险的空间传染路径研究[J].当代经济科学,2019,41(05):62-73.
+
+[112]刘磊,刘健,郭晓旭.金融风险与风险传染——基于CCA方法的宏观金融网络分析[J].金融监管研究,2019(09):35-50.
+
+[113]杨子晖,陈雨恬,谢锐楷.我国金融机构系统性金融风险度量与跨部门风险溢出效应研究[J].金融研究,2018(10):19-37.
+
+[114]中国人民银行西安分行课题组,白鹤祥.基于影子银行视角的我国系统性金融风险测度及预警研究[J].金融发展研究,2018(11):13-22.
+
+[115]徐欣.系统性风险传染的波动性研究——基于金融网络动态关联的视角[J].南方经济,2018(12):40-56.
+
+[116]沈沛龙,李志楠,王晓婷.基于银行同业网络与资产重叠的金融风险传染研究[J].金融论坛,2019,24(01):12-25.
+
+[117]马德功,赵新,韩喜昆.商业银行参与影子银行业务与金融风险传染——基于影子银行体系资金供给方的视角[J].重庆大学学报(社会科学版),2019,25(03):72-83.
+
+[118]王宇,肖欣荣,刘健,刘磊.金融网络结构与风险传染理论述评[J].金融监管研究,2019(02):79-96.
+
+[119]李世泽,马家丽,朱书尚.房地产信贷对我国银行体系系统性风险的影响——基于银行体系内部借贷网络的模拟实证研究[J].中山大学学报(社会科学版),2019,59(03):186-196.
+
+[120]丁述军,庄须娟,李文君.区域金融风险部门间传染机理与实证分析[J].经济经纬,2019,36(03):1-8.
+
+[121]倪柏竹.基于SIR和SIS组合模型的复杂金融网络风险传染研究[J].环渤海经济瞭望,2019(04):165-166.
+
+[122]陈彩虹,索婧.中国消费金融风险研究综述及展望[J].西部金融,2019(03):34-38.
+
+[123]杨子晖,陈雨恬,陈里璇.极端金融风险的有效测度与非线性传染[J].经济研究,2019,54(05):63-80.
+
+[124]方意,和文佳,荆中博.中美贸易摩擦对中国金融市场的溢出效应研究[J].财贸经济,2019,40(06):55-69.
+
+[125]张梦媛,卢俊香.Pair-Copula在金融市场风险传染分析上的应用[J].科学技术创新,2019(21):3-4.
+
+[126]游江天.股市风险传染的研究综述[J].时代金融,2019(18):54-55+63.
+
+[127]刘晓宇.金融风险传染效应的研究[J].商业经济,2019(07):157-158+164.
+
+[128]王俊勇,李心丹.防控系统性金融风险倒逼监管改革路径探析[J].现代经济探讨,2019(07):51-58.
+
+[129]史宁,王雪超,关史良,蒋洪江.浅析影响金融风险传染的因素[J].商业经济,2019(08):165-167.
+
+[130]Xiaoyu Liu. A Review of Research on Financial Risk Contagion[P]. Proceedings of the 3rd International Conference on Culture, Education and Economic Development of Modern Society (ICCESE 2019),2019.
+
+[131]Qiao Han. A Discussion on Whether Financial Contagion Exists Between US Financial Markets from 2006 to 2011[P]. Proceedings of the 4th International Conference on Economics, Management, Law and Education (EMLE 2018),2018.
+
+[132]沈玉溪. 我国P2P网络借贷风险生成及传染机制研究[D].湖北工业大学,2019.
+
+[133]郅钧栋. 钱荒事件中我国上市商业银行市场风险传染研究[D].山西财经大学,2019.
+
+[134]刘爱红. 基于宏观资产负债表的山西省区域金融风险研究[D].山西财经大学,2019.
+
+[135]王星星. 我国煤炭行业信用风险传染效应研究[D].山西财经大学,2019.
+
+[136]姚童. 基于股市波动的银行业、保险业间风险传染强度研究[D].山西财经大学,2019.
+
+[137]覃禹臻. 我国供应链金融企业间风险传染效应研究[D].山西财经大学,2019.
+
+[138]邹婷. 商业银行信用风险传染研究[D].华中师范大学,2019.
+
+[139]邓秉德. 宏观审慎视角下银行系统流动性风险实证研究[D].吉林大学,2019.
+
+[140]董志敏. 沪深300股指期货与现货市场间的风险传染效应研究[D].兰州财经大学,2019.
+
+[141]付肖行. 中国金融系统尾部风险溢出效应研究[D].上海师范大学,2019.
+
+[142]吴伟伟. 基于Copula-CoVaR模型的钢铁行业与银行业风险双向溢出效应研究[D].中国矿业大学,2019.
+
+[143]王泰. 我国金融机构系统性金融风险及其溢出效应的度量研究[D].山东大学,2019.
+
+[144]孙鹏. 基于金融生态的商业银行系统性风险研究[D].辽宁工业大学,2018.
+
+[145]王安东. 中国系统性金融风险传导渠道及其经济效应研究[D].武汉大学,2019.
+
+[146]谢峰. 我国行业间系统性风险度量研究[D].上海交通大学,2017.
+
+[147]Lokhov Andrey Y,Saad David. Optimal deployment of resources for maximizing impact in spreading processes.[J]. Proceedings of the National Academy of Sciences of the United States of America,2017,114(39).
+
+[148]Xu Yang. Intervention on default contagion under partial information in a financial network.[J]. PloS one,2019,14(1).
+
+[149]张骥. 基于关联性视角的证券市场系统性风险研究[D].湖南大学,2018.
+
+[150]李华. 中国银行业混业经营规制研究[D].辽宁大学,2018.
+
+[151]林凌. 基于异质性波动特征的国际股市风险传染效应研究[D].湖南大学,2018.
+
+[152]何敏园. 国内外金融市场间的相依结构及风险溢出关系研究[D].湖南师范大学,2018.
+
+[153]申敏. 国民经济行业系统信用风险相依研究[D].南京航空航天大学,2017.
+
+[154]邹冬. 网络视角下金融机构尾部风险传染效应和系统重要性研究[D].华中科技大学,2018.
+
+[155]朱辰. 互联网化的银行业系统性风险引发机制研究[D].南京师范大学,2018.
+
+[156]孙强. 我国银行业系统性风险的诱发机制与监管研究[D].天津财经大学,2018.
+
+[157]孟晓华. 石油期货市场极端风险、成因及溢出效应研究[D].中南财经政法大学,2018.
+
+[158]谭雪萍. 碳期货与关联资产间的相依性变化机理及碳价预测研究[D].中国矿业大学,2019.
+
+[159]吴山丹. 基于分位数回归的中国金融市场传染效应的研究[D].中央财经大学,2018.
+
+[160]胡玉峰. 基于金融网络方法的中国金融体系稳定性分析[D].中国社会科学院研究生院,2019.
+
+[161]朱敏,汪传江.金融地理视角下产业转移中经济风险的传染性研究[J].金融管理研究,2014(01):109-124.
+
+[162]裴茜,朱书尚.中国股票市场的行业特质性金融传染特征:基于网络模型的实证研究[J].金融学季刊,2017,11(02):122-155.
+
+[163]马骏.金融危机的预警、传染与政策干预[J].新金融评论,2018(06):69-97.
+
+[164]于建克.交叉性金融风险与内部审计的主动应对[J].中国内部审计,2017(12):21-25.
+
+[165]隋聪,邓爽玲,王宗尧.银行资产负债结构对金融风险传染的影响[J].系统工程理论与实践,2017,37(08):1973-1981.
+
+[166]中国人民银行西安分行课题组,白鹤祥.我国影子银行资产负债表的构建与风险测度研究[J].金融会计,2017(12):17-23.
+
+[167]陈克鑫.关于金融风险传染的研究综述[J].经济研究导刊,2018(03):100-101+139.
+
+[168]于建克.对交叉性金融风险内部审计的探析与思考[J].中国城市金融,2017(10):26-28.
+
+[169]石琭.交叉性金融产品、风险传染与金融监管研究[J].西部金融,2018(01):30-34.
+
+[170]刘晓宇,吕琳.一类SIR和SIS组合的复杂金融网络风险传染模型稳定性分析[J].东北农业大学学报(社会科学版),2018,16(02):34-38.
+
+[171]任健.我国金融行业系统性风险传染研究——基于上市金融企业CoVaR模型[J].当代经济,2018(07):20-22.
+
+[172]林砚,陈志新.基于复杂网络理论的金融网络风险传染性评估模型[J].南方金融,2018(05):16-26.
+
+[173]叶五一,董筱雯,缪柏其.c-D-Copula模型构建及其在金融风险传染中的应用[J].系统科学与数学,2018,38(05):553-568.
+
+[174]王一鸣.金融市场风险传染理论的发展与创新——评《金融市场风险传染非线性计量方法及应用研究》[J].社会科学研究,2018(04):194.
+
+[175]王鹏,吴金宴.基于协高阶矩视角的沪港股市风险传染分析[J].管理科学学报,2018,21(06):29-42.
+
+[176]于潇潇,刘广合.基于网络模型的金融机构间风险传染研究综述[J].价值工程,2018,37(26):270-273.
+
+[177]张欣,苏继超.民间金融网络中的风险传染机制与监管策略[J].统计与决策,2018,34(14):156-160.
+
+[178]杨子晖,李东承.我国银行系统性金融风险研究——基于“去一法”的应用分析[J].经济研究,2018,53(08):36-51.
+
+[179]蔡真.我国系统性金融风险与房地产市场的关联、传染途径及对策[J].中国社会科学院研究生院学报,2018(05):42-61.
+
+[180]柯瑜.基于网络视角下的金融结构与金融风险传染初探[J].时代金融,2018(27):50+59.
+
+[181]李洁.基于网络视角下的金融结构与金融风险传染[J].经济研究导刊,2018(28):89-90.
+
+[182]李春妮.系统性金融风险的生成机理与传染机制研究[J].商业经济研究,2018(22):189-192.
+
+[183]左正龙.心理预期对系统性金融风险的影响研究[J].新疆财经,2018(05):25-31.
+
+[184]江红莉,刘丽娟,程思婧.系统性金融风险成因、测度及传导机制——基于文献综述视角[J].金融理论与实践,2018(11):49-55.
+
+[185]李佳男. 信息传播对银行系统性风险的影响研究[D].湖南大学,2018.
+
+[186]张媛. 供应链金融信用风险传染机理与度量[D].长安大学,2018.
+
+[187]丁志龙. 外部流动性冲击与系统性金融风险[D].大连理工大学,2017.
+
+[188]徐益宁. 中国影子银行网络关联性及其风险溢出效应[D].山东大学,2018.
+
+[189]李瑶. 股票市场中消费者信心指数对风险传染的影响研究[D].湖南大学,2018.
+
+[190]陈芳. 钱荒期间我国系统重要性商业银行市场风险传染研究[D].山西财经大学,2018.
+
+[191]刘雨函. 国际股票市场风险传染效应研究[D].吉林大学,2018.
+
+[192]穆秀清. 基于复杂网络的金融风险问题研究[D].河北工业大学,2016.
+
+[193]曹琳. “一带一路”国家银行业系统性风险测度及传递研究[D].济南大学,2018.
+
+[194]黄云飞. 中国金融子行业间系统性金融风险传染效应研究[D].广东财经大学,2018.
+
+[195]雷原. 我国金融网络系统性风险研究[D].华中科技大学,2017.
+
+[196]尹相杰. 银行系统性风险传染及防范研究[D].山东财经大学,2017.
+
+[197]刘敏. 基于多层网络的银行系统性风险研究[D].东南大学,2018.
+
+[198]李雯. 基于同业拆借网络模型的商业银行系统性风险研究[D].华中科技大学,2018.
+
+[199]秦品. 系统性金融风险传导的结构分析[D].东北财经大学,2018.
+
+[200]杨远景. 中国金融系统性风险的多层网络特征及其传染机制研究[D].湖南大学,2017.
+
+[201]吴若池. 基于共同冲击视角的中国金融系统性风险研究[D].东北财经大学,2017.
+
+[202]苟爱萍. 供应链金融的违约传染与融资策略研究[D].电子科技大学,2018.
+
+[203]熊程. 中国金融机构系统性风险与影响因素研究[D].南京大学,2018.
+
+[204]孙柏阳. 中国股票市场风险传染研究[D].南京大学,2018.
+
+[205]魏光辉. Basel Ⅲ下违约传染集中风险EMFA模型修正和预警指标体系构建[D].安徽财经大学,2018.
+
+[206]吴昊. 商业银行资管业务风险导向审计研究[D].南京审计大学,2018.
+
+[207]郭人榛. 基于R藤Copula变点模型的金融传染性与稳定性检验[D].中国科学技术大学,2018.
+
+[208]张烨. 山东省县域金融风险评价及其空间格局演变研究[D].山东大学,2018.
+
+[209]张潇尹. 股市异动期间的风险传染效应研究[D].沈阳工业大学,2018.
+
+[210]梁涛. 商业银行交叉金融业务及风险研究[D].首都经济贸易大学,2018.
+
+[211]陈炯旭. 券商集合资管业务风险传染及免疫策略研究[D].华南理工大学,2018.
+
+[212]刘曦. 基于分位数自回归的金融风险计量研究[D].合肥工业大学,2017.
+
+[213]胡锡亮. 中国银行业系统性风险的决定因素与传染机制研究[D].西南财经大学,2014.
+
+[214]雷雨亮. 开放经济条件下中国房地产市场脆弱性研究[D].湘潭大学,2017.
+
+[215]韩超. 高维动态藤Copula结构在金融风险研究中的应用[D].重庆大学,2017.
+
+[216]苏显方. 基于分位回归的金融风险溢出效应度量模型及应用研究[D].湖南大学,2017.
+
+[217]王达. 基于金融市场联动视角的金融风险国际传染效应研究[D].湖南大学,2017.
+
+[218]李岸. “中心—外围”结构下中国股市国际联动性研究[D].湖南大学,2017.
+
+[219]黄岩渠. 基于复杂网络的系统性金融风险研究[D].湖南大学,2018.
+
+[220]张兴旺. 中国影子银行风险监管研究[D].西北大学,2017.
+
+[221]闫新国. 基于相关与因果复杂网络的金融风险传染与冲击响应研究[D].湖南大学,2017.
+
+[222]肖子龙. 宏观审慎监管、货币政策与银行系统性风险[D].华中科技大学,2017.
+
+[223]钱茜. 关联信用风险的传染效应和管控策略研究[D].电子科技大学,2018.
+
+[224]陈秀荣. 金融风险传染的DAI空间计量模型及实证研究[D].电子科技大学,2018.
+
+[225]高睿. 中国宏观金融风险：量化、积累与传染机制研究[D].山东大学,2018.
+
+[226]王克达. 金融危机国际传染及预警研究[D].吉林大学,2018.
+
+[227]乔木子. 货币政策对中国系统性金融风险的动态影响机制研究[D].吉林大学,2018.
+
+[228]卞家涛. 中国商业银行压力测试理论和应用研究[D].东南大学,2015.
+
+[229]吴宜勇. 宏观审慎监管下系统性风险生成机制及我国防范策略研究[D].华侨大学,2017.
+
+[230]赵雪瑾. 中国主要金融市场的风险测量、传染路径及预警研究[D].华南理工大学,2018.
+
+[231]Petrone Daniele,Latora Vito. A dynamic approach merging network theory and credit risk techniques to assess systemic risk in financial networks.[J]. Scientific reports,2018,8(1).
+
+[232]Yulia R Gel,Vyacheslav Lyubchich. Contagion! Systemic Risk in Financial Networks[J]. Technometrics,2017,59(1).
+
+[233]. Science - Operations Science; Reports from Washington University Add New Data to Findings in Operations Science (Financial contagion and asset liquidation strategies)[J]. Science Letter,2017.
+
+[234]. Statistical Mechanics; Data from M.A.L. Caetano et al Provide New Insights into Statistical Mechanics (Boolean network representation of contagion dynamics during a financial crisis)[J]. News of Science,2015.
+
+[235]Khaled Guesmi,Ilyes Abid,Anna Creti,Julien Chevallier. Oil Price Risk and Financial Contagion[J]. The Energy Journal,2018,39.
+
+[236]Greg Filbeck,Sanjay Kumar,Jiangxia Liu,Xin Zhao. Supply chain finance and financial contagion from disruptions[J]. International Journal of Physical Distribution & Logistics Management,2016,46(4).
+
+[237]刘科星.次贷危机对我国交叉性金融工具监管的启示[J].西部金融,2016(10):21-26.
+
+[238]曹廷求,王可.系统性金融风险的传导机理分析——基于公司治理的视角[J].公共财政研究,2017(01):4-19.
+
+[239]王献东,何建敏.金融市场间的风险传染研究文献综述[J].上海金融,2016(07):50-58.
+
+[240]中国人民银行南宁中心支行课题组,崔瑜.金融市场风险交叉传染机制与防控策略研究——基于医学SIRS传染病模型[J].南方金融,2017(02):3-13.
+
+[241]谢家泉.中美股市风险传染效应研究综述——基于金融危机视角[J].韶关学院学报,2016,37(11):69-73.
+
+[242]陈春林,曲昭光.金融控股集团的风险传染与防控[J].辽宁师范大学学报(社会科学版),2017,40(03):50-54.
+
+[243]胡志浩,李晓花.复杂金融网络中的风险传染与救助策略——基于中国金融无标度网络上的SIRS模型[J].财贸经济,2017,38(04):101-114.
+
+[244]姚登宝.基于银行间网络的流动性风险传染机制研究[J].安徽大学学报(哲学社会科学版),2017,41(04):130-137.
+
+[245]曲昭光,陈春林,陈克鑫.金融控股集团风险传染渠道与研究方法文献综述[J].沈阳师范大学学报(社会科学版),2017,41(02):74-78.
+
+[246]林喦.多维度视角下,我国系统性金融风险的综合研判——《我国系统性金融风险的测度、传染与防范研究》评介[J].渤海大学学报(哲学社会科学版),2017,39(04):2.
+
+[247]刘金霞.我国系统性金融风险预警与防范研究的回顾与展望[J].金融理论与实践,2017(09):92-99.
+
+[248]石涛.民间非正式金融借贷风险:传染、嬗变与控制[J].湖北经济学院学报,2017,15(04):47-52.
+
+[249]王营,曹廷求.中国区域性金融风险的空间关联及其传染效应——基于社会网络分析法[J].金融经济学研究,2017,32(03):46-55.
+
+[250]王达.浅析金融风险国际传染效应最新发展趋势——基于影响因素作用机理视角[J].金融经济,2017(18):63-65.
+
+[251]俞中,佟孟华,邢秉昆.我国金融市场间风险传染与系统性风险溢出效应——基于银行、证券、保险市场的E-CoVaR模型分析[J].上海立信会计金融学院学报,2017(05):5-14.
+
+[252]毛焱.创新应用管理会计工具  有效防范金融风险[J].金融会计,2017(09):17-21.
+
+[253]Mardi Dungey,Dinesh Gajurel. Equity market contagion during the global financial crisis: Evidence from the world's eight largest economies[J]. Economic Systems,2014,38(2).
+
+[254]Wuyi Ye,Kebing Luo,Xiaoquan Liu. Time-varying quantile association regression model with applications to financial contagion and VaR[J]. European Journal of Operational Research,2017,256(3).
+
+[255]Marcus Fernandes da Silva,Éder Johnson de Area Leão Pereira,Aloisio Machado da Silva Filho,Arleys Pereira Nunes de Castro,José Garcia Vivas Miranda,Gilney Figueira Zebende. Quantifying the contagion effect of the 2008 financial crisis between the G7 countries (by GDP nominal)[J]. Physica A: Statistical Mechanics and its Applications,2016,453.
+
+[256]Ling Long,Albert K. Tsui,Zhaoyong Zhang. Estimating time-varying currency betas with contagion: New evidence from developed and emerging financial markets[J]. Japan & The World Economy,2014,30.
+
+[257]Stelios D. Bekiros. Contagion, decoupling and the spillover effects of the US financial crisis: Evidence from the BRIC markets[J]. International Review of Financial Analysis,2014,33.
+
+[258]Nikos Paltalidis,Dimitrios Gounopoulos,Renatas Kizys,Yiannis Koutelidakis. Transmission channels of systemic risk and contagion in the European financial network[J]. Journal of Banking and Finance,2015,61.
+
+[259]Fuchun Li,Hui Zhu. Testing for financial contagion based on a nonparametric measure of the cross-market correlation[J]. Review of Financial Economics,2014,23(3).
+
+[260]Thanaset Chevapatrakul,Kai-Hong Tee. The effects of news events on market contagion: Evidence from the 2007–2009 financial crisis[J]. Research in International Business and Finance,2014,32.
+
+[261]. Special Issue on Comovement and Contagion in Financial Markets[J]. International Review of Financial Analysis,2011,20(5).
+
+[262]Ariel M. Viale,David A. Bessler,James W. Kolari. ON THE STRUCTURE OF FINANCIAL CONTAGION: ECONOMETRIC TESTS AND MERCOSUR EVIDENCE[J]. Journal of Applied Economics,2014,17(2).
+
+[263]Renée Fry-McKibbin,Vance L. Martin,Chrismin Tang. Financial contagion and asset pricing[J]. Journal of Banking and Finance,2014,47.
+
+[264]Wuyi Ye,Yangguang Zhu,Yuehua Wu,Baiqi Miao. Markov regime-switching quantile regression models and financial contagion detection[J]. Insurance Mathematics and Economics,2016,67.
+
+[265]Francis A. Longstaff. The subprime credit crisis and contagion in financial markets[J]. Journal of Financial Economics,2010,97(3).
+
+[266]Massimo Guidolin,Manuela Pedio. Identifying and Measuring the Contagion Channels at Work in the European Financial Crises[J]. Journal of International Financial Markets, Institutions & Money,2017.
+
+[267]Paolo Emilio Mistrulli. Assessing financial contagion in the interbank market: Maximum entropy versus observed interbank lending patterns[J]. Journal of Banking and Finance,2010,35(5).
+
+[268]Dirk G. Baur. Financial contagion and the real economy[J]. Journal of Banking and Finance,2012,36(10).
+
+[269]Dimitris Kenourgios,Aristeidis Samitas,Nikos Paltalidis. Financial crises and stock market contagion in a multivariate time-varying asymmetric framework[J]. Journal of International Financial Markets, Institutions & Money,2010,21(1).
+
+[270]Xiaoye Jin,Ximeng An. Global financial crisis and emerging stock market contagion: A volatility impulse response function approach[J]. Research in International Business and Finance,2016,36.
+
+[271]Xiaoye Jin. The impact of 2008 financial crisis on the efficiency and contagion of Asian stock markets: A Hurst exponent approach[J]. Finance Research Letters,2016,17.
+
+[272]Taufiq Choudhry,Ranadeva Jayasekera. Returns and volatility spillover in the European banking industry during global financial crisis: Flight to perceived quality or contagion?[J]. International Review of Financial Analysis,2014,36.
+
+[273]周冰冰. 有向网络视角下我国上市公司关联性与系统性风险研究[D].内蒙古大学,2017.
+
+[274]朱玲. 我国影子银行的风险传染机制及防范研究[D].湖北工业大学,2017.
+
+[275]文雨. 基于高频数据的金融市场风险传染和动态对冲研究[D].浙江大学,2017.
+
+[276]李路路. 中国金融风险预警模型构建及实证研究[D].河南师范大学,2017.
+
+[277]张德美. 危机环境下期货市场间传染风险的测度与分层应对策略研究[D].云南财经大学,2016.
+
+[278]符栋栋. 基于CoVaR方法的我国传统金融业风险溢出测度及比较研究[D].宁波大学,2016.
+
+[279]王瑞. 影子银行对我国商业银行稳定性影响的实证研究[D].南京审计大学,2016.
+
+[280]成博. 国际证券市场动态相依的特征检验与驱动因素研究[D].湖南大学,2016.
+
+[281]罗克兵. 金融危机传染检验方法研究[D].中国科学技术大学,2016.
+
+[282]李立. 金融危机风险广义多维经济空间溢出、聚集与演变[D].电子科技大学,2016.
+
+[283]李永奎. 基于复杂网络的关联信用风险传染延迟效应研究[D].电子科技大学,2016.
+
+[284]冯超. 宏观审慎管理视角下我国银行系统性风险监管研究[D].湖南大学,2016.
+
+[285]王守芳. 商业银行信用风险转移及其传染性影响研究[D].东华大学,2015.
+
+[286]章秀. 我国系统性金融风险的计量研究[D].吉林大学,2016.
+
+[287]侯县平. 中国股票市场与债券市场间的金融传染效应研究[D].西南交通大学,2016.
+
+[288]韦起. 中国网络借贷的风险传染研究[D].湖南大学,2016.
+
+[289]蔡雯霞. 影子银行和传统银行的关联机理研究[D].天津财经大学,2015.
+
+[290]武毅. 中国股票与股指期货跨市场交易系统性风险研究[D].天津财经大学,2016.
+
+[291]聂晋. 基于宏观审慎视角的系统性金融风险研究[D].华中科技大学,2016.
+
+[292]吴炳辉. 基于Multi-Agent的股票市场投资者行为风险传染机制及其演化研究[D].东南大学,2017.
+
+[293]朱扬光. 金融危机传染检验方法与联动行为分析[D].中国科学技术大学,2017.
+
+[294]陈鑫云. 农村信用社系统性风险管理研究[D].浙江工商大学,2017.
+
+[295]苏帆. 系统性金融风险测度及其网络传染机制研究[D].中南财经政法大学,2017.
+
+[296]姚登宝. 流动性循环及其风险传染机制研究[D].东南大学,2016.
+
+[297]龙美芳. 国际钢材期货市场传染风险分析及其分层应对策略研究[D].云南财经大学,2017.
+
+[298]Teruyoshi Kobayashi. A model of financial contagion with variable asset returns may be replaced with a simple threshold model of cascades[J]. Economics Letters,2014,124(1).
+
+[299]Kimberly F. Luchtenberg,Quang Viet Vu. The 2008 financial crisis: Stock market contagion and its determinants[J]. Research in International Business and Finance,2015,33.
+
+[300]Ju Hyun Pyun,Jiyoun An. Capital and credit market integration and real economic contagion during the global financial crisis[J]. Journal of International Money and Finance,2016,67.
+
+[301]Rafael Romero-Meza,Claudio Bonilla,Hugo Benedetti,Apostolos Serletis. Nonlinearities and financial contagion in Latin American stock markets[J]. Economic Modelling,2015,51.
+
+[302]Dimitris Kenourgios. On financial contagion and implied market volatility[J]. International Review of Financial Analysis,2014,34.
+
+[303]Junhua Jiang. Discount rate or cash flow contagion? Evidence from the recent financial crises[J]. Research in International Business and Finance,2017,39.
+
+[304]Alessandro Vercelli. Introduction to the special section on “Financial Fluctuations and Contagion”[J]. Journal of Economic Behavior and Organization,2012,83(3).
+
+[305]Wang Chen,Yu Wei,Qiaoqi Lang,Yu Lin,Maojuan Liu. Financial market volatility and contagion effect: A copula–multifractal volatility approach[J]. Physica A: Statistical Mechanics and its Applications,2014,398.
+
+[306]I.C. Pragidis,G.P. Aielli,D. Chionis,P. Schizas. Contagion effects during financial crisis: Evidence from the Greek sovereign bonds market[J]. Journal of Financial Stability,2015,18.
+
+[307]Gang-Jin Wang,Chi Xie,Min Lin,H. Eugene Stanley. Stock market contagion during the global financial crisis: A multiscale approach[J]. Finance Research Letters,2016.
+
+[308]A. Can Inci,H.C. Li,Joseph McCarthy. Financial contagion: A local correlation analysis[J]. Research in International Business and Finance,2010,25(1).
+
+[309]Marco Antonio Leonel Caetano,Takashi Yoneyama. Boolean network representation of contagion dynamics during a financial crisis[J]. Physica A: Statistical Mechanics and its Applications,2015,417.
+
+[310]Aymen Ben Rejeb,Adel Boughrara. Financial integration in emerging market economies: Effects on volatility transmission and contagion[J]. Borsa Istanbul Review,2015,15(3).
+
+[311]Dimitris Kenourgios,Nader Naifar,Dimitrios Dimitriou. Islamic financial markets and global crises: Contagion or decoupling?[J]. Economic Modelling,2016,57.
+
+[312]Phurichai Rungcharoenkitkul. Risk sharing versus financial contagion in Asia: An asset price perspective[J]. Review of Development Finance,2012,2(3-4).
+
+[313]Sabur Mollah,A.M.M. Shahiduzzaman Quoreshi,Goran Zafirov. Equity market contagion during global financial and Eurozone crises: Evidence from a dynamic correlation analysis[J]. Journal of International Financial Markets, Institutions & Money,2016,41.
+
+[314]Nafeesa Yunus. Contagion in international financial markets: A recursive cointegration approach[J]. Journal of Multinational Financial Management,2013,23(4).
+
+[315]Md Akhtaruzzaman,Abul Shamsuddin. International contagion through financial versus non-financial firms[J]. Economic Modelling,2016,59.
+
+[316]Marco Gallegati. A wavelet-based approach to test for financial market contagion[J]. Computational Statistics and Data Analysis,2012,56(11).
+
+[317]Eddie Chi-man Hui,Ka Kwan Kevin Chan. The global financial crisis: Is there any contagion between real estate and equity markets?[J]. Physica A: Statistical Mechanics and its Applications,2014,405.
+
+[318]Dimitris Kenourgios,Dimitrios Dimitriou. Contagion of the Global Financial Crisis and the real economy: A regional analysis[J]. Economic Modelling,2015,44.
+
+[319]Riadh Aloui,Mohamed Safouane Ben Aïssa,Duc Khuong Nguyen. Global financial crisis, extreme interdependences, and contagion effects: The role of economic structure?[J]. Journal of Banking and Finance,2010,35(1).
+
+[320]Xiaoqian Wen,Yu Wei,Dengshi Huang. Measuring contagion between energy market and stock market during financial crisis: A copula approach[J]. Energy Economics,2012,34(5).
+
+[321]Rafał Siedlecki,Daniel Papla. Conditional Correlation Coefficient as a Tool for Analysis of Contagion in Financial Markets and Real Economy Indexes Based on the Synthetic Ratio[J]. Procedia - Social and Behavioral Sciences,2016,220.
+
+[322]Fabio Caccioli,Munik Shrestha,Cristopher Moore,J. Doyne Farmer. Stability analysis of financial contagion due to overlapping portfolios[J]. Journal of Banking and Finance,2014,46.
+
+[323]Pei-Long Shen,Wen Li,Xiao-Ting Wang,Chi-Wei Su. Contagion effect of the European financial crisis on China's stock markets: Interdependence and pure contagion[J]. Economic Modelling,2015,50.
+
+[324]Jill Cetina,Mark Paddrik,Sriram Rajan. Stressed to the core: Counterparty concentrations and systemic losses in CDS markets[J]. Journal of Financial Stability,2016.
+
+[325]Sabri Boubaker,Jamel Jouini,Amine Lahiani. Financial contagion between the US and selected developed and emerging countries: The case of the subprime crisis[J]. Quarterly Review of Economics and Finance,2016,61.
+
+[326]Daniel Reed Bergmann. U.S. subprime financial crisis contagion on BRIC and European Union stock markets[J]. Revista de Administração,2015,50(2).
+
+[327]Rudiger Ahrend,Antoine Goujard. Foreign bank presence: Helping or hurting when financial contagion strikes?[J]. Economics Letters,2013,120(2).
+
+[328]Xiaoqian Zhu,Yilin Li,Changzhi Liang,Jianming Chen,Dengsheng Wu. Copula based Change Point Detection for Financial Contagion in Chinese Banking[J]. Procedia Computer Science,2013,17.
+
+[329]Olfa Kaabia,Ilyes Abid,Khaled Guesmi. Does Bayesian shrinkage help to better reflect what happened during the subprime crisis?[J]. Economic Modelling,2013,31.
+
+[330]Wang Chen,Yu Wei,Bangzheng Zhang,Jiang Yu. Quantitative measurement of the contagion effect between US and Chinese stock market during the financial crisis[J]. Physica A: Statistical Mechanics and its Applications,2014,410.
+
+[331]. Editorial Introduction to the Special Issue: Comovement and Contagion in Financial Markets[J]. International Review of Financial Analysis,2014,33.
+
+[332]Bradut-Vasile Bolos. Financial Contagion Research through Epidemiological Means, Romania Case Study[J]. Procedia Economics and Finance,2012,3.
+
+[333]Augusto Hasman,Margarita Samartín,Jos Van Bommel. Financial contagion and depositor monitoring[J]. Journal of Banking and Finance,2013,37(8).
+
+[334]Tarik Roukny,Stefano Battiston,Joseph E. Stiglitz. Interconnectedness as a Source of Uncertainty in Systemic Risk[J]. Journal of Financial Stability,2016.
+
+[335]Lucía Morales,Bernadette Andreosso-O'Callaghan. The global financial crisis: World market or regional contagion effects?[J]. International Review of Economics and Finance,2014,29.
+
+[336]Dimitris Kenourgios,Dimitrios Asteriou,Aristeidis Samitas. Testing for asymmetric financial contagion: New evidence from the Asian crisis[J]. The Journal of Economic Asymmetries,2013,10(2).
+
+[337]Rudiger Ahrend,Antoine Goujard. Are all forms of financial integration equally risky? Asset price contagion during the global financial crisis[J]. Journal of Financial Stability,2014,14.
+
+[338]宫长娥. 基于传染模型的股权制众筹金融风险研究：理论分析及对策[D].东南大学,2016.
+
+[339]孙晓宁. 我国系统性金融风险预警指标体系构建及实证研究[D].青岛大学,2016.
+
+[340]崔微微. 不同规模商业银行间的风险传染效应研究[D].贵州财经大学,2016.
+
+[341]崔巍. 显性存款保险制度下我国银行间风险传染问题研究[D].福建师范大学,2016.
+
+[342]王兵. 我国金融业混业经营的风险及对策研究[D].东北师范大学,2016.
+
+[343]于洁晶. 基于债务违约和减价出售视角的银行间风险传染研究[D].东北财经大学,2016.
+
+[344]Paul Glasserman,H. Peyton Young. How likely is contagion in financial networks?[J]. Journal of Banking and Finance,2015,50.
+
+[345]Bård Støve,Dag Tjøstheim,Karl Ove Hufthammer. Using local Gaussian correlation in a nonlinear re-examination of financial contagion[J]. Journal of Empirical Finance,2014,25.
+
+[346]Shouwei Li,Xin Sui. Contagion risk in endogenous financial networks[J]. Chaos, Solitons and Fractals: the interdisciplinary journal of Nonlinear Science, and Nonequilibrium and Complex Phenomena,2016,91.
+
+[347]Luca De Angelis,Attilio Gardini. DISEQUILIBRIA AND CONTAGION IN FINANCIAL MARKETS: EVIDENCE FROM A NEW TEST[J]. Journal of Applied Economics,2015,18(2).
+
+[348]Michael Manz. Information-based contagion and the implications for financial fragility[J]. European Economic Review,2010,54(7).
+
+[349]Milda Maria Burzala. Contagion effects in selected European capital markets during the financial crisis of 2007–2009[J]. Research in International Business and Finance,2016,37.
+
+[350]Mark P. Bowden. Information contagion within small worlds and changes in kurtosis and volatility in financial prices[J]. Journal of Macroeconomics,2012,34(2).
+
+[351]Natalia Podlich,Michael Wedow. Crossborder financial contagion to Germany: How important are OTC dealers?[J]. International Review of Financial Analysis,2014,33.
+
+[352]Ron J. Berndsen,Carlos León,Luc Renneboog. Financial stability in networks of financial institutions and market infrastructures[J]. Journal of Financial Stability,2016.
+
+[353]Václav Hausenblas,Ivana Kubicová,Jitka Lešanovská. Contagion risk in the Czech financial system: A network analysis and simulation approach[J]. Economic Systems,2015,39(1).
+
+[354]Yacine Aït-Sahalia,Julio Cacho-Diaz,Roger J.A. Laeven. Modeling financial contagion using mutually exciting jump processes[J]. Journal of Financial Economics,2015,117(3).
+
+[355]. Call for Papers: Special Issue on Comovement and Contagion in Financial Markets[J]. International Review of Financial Analysis,2012,21.
+
+[356]Kwang-il Choe,Pilsun Choi,Kiseok Nam,Farshid Vahid. Testing financial contagion on heteroskedastic asset returns in time-varying conditional correlation[J]. Pacific-Basin Finance Journal,2011,20(2).
+
+[357]Fabio Caccioli,J. Doyne Farmer,Nick Foti,Daniel Rockmore. Overlapping portfolios, contagion, and financial stability[J]. Journal of Economic Dynamics and Control,2015,51.
+
+[358]Ettore Panetti. Financial liberalization and contagion with unobservable savings[J]. International Review of Financial Analysis,2014,36.
+
+[359]Tatsuyoshi Miyakoshi,Toyoharu Takahashi,Junji Shimada,Yoshihiko Tsukuda. The dynamic contagion of the global financial crisis into Japanese markets[J]. Japan & The World Economy,2014,31.
+
+[360]Wan-Chien Chiu,Juan Ignacio Peña,Chih-Wei Wang. Industry characteristics and financial risk contagion[J]. Journal of Banking and Finance,2015,50.
+
+[361]Feng Guo,Carl R. Chen,Ying Sophie Huang. Markets contagion during financial crisis: A regime-switching approach[J]. International Review of Economics and Finance,2011,20(1).
+
+[362]Manolis N. Syllignakis,Georgios P. Kouretas. Dynamic correlation analysis of financial contagion: Evidence from the Central and Eastern European markets[J]. International Review of Economics and Finance,2011,20(4).
+
+[363]Lalith P. Samarakoon. Stock market interdependence, contagion, and the U.S. financial crisis: The case of emerging and frontier markets[J]. Journal of International Financial Markets, Institutions & Money,2011,21(5).
+
+[364]Paulo Horta,Sérgio Lagoa,Luís Martins. The impact of the 2008 and 2010 financial crises on the Hurst exponents of international stock markets: Implications for efficiency and contagion[J]. International Review of Financial Analysis,2014,35.
+
+[365]Marco Cipriani,Gloria Gardenal,Antonio Guarino. Financial contagion in the laboratory: The cross-market rebalancing channel[J]. Journal of Banking and Finance,2013,37(11).
+
+[366]Luo Changqing,Xie Chi,Yu Cong,Xu Yan. Measuring financial market risk contagion using dynamic MRS-Copula models: The case of Chinese and other international stock markets[J]. Economic Modelling,2015,51.
+
+[367]Fabrizio Durante,Enrico Foscolo,Piotr Jaworski,Hao Wang. A spatial contagion measure for financial time series[J]. Expert Systems With Applications,2014,41(8).
+
+[368]Simon Neaime. Financial crises and contagion vulnerability of MENA stock markets[J]. Emerging Markets Review,2016,27.
+
+[369]Albi Tola,Sébastien Wälti. Deciphering financial contagion in the euro area during the crisis[J]. Quarterly Review of Economics and Finance,2015,55.
+
+[370]Dimitrios Dimitriou,Dimitris Kenourgios,Theodore Simos. Global financial crisis and emerging stock market contagion: A multivariate FIAPARCH–DCC approach[J]. International Review of Financial Analysis,2013,30.
+
+[371]Lucía Morales,Bernadette Andreosso-O’Callaghan. The current global financial crisis: Do Asian stock markets show contagion or interdependence effects?[J]. Journal of Asian Economics,2012,23(6).
+
+[372]Alexander Ludwig. A unified approach to investigate pure and wake-up-call contagion: Evidence from the Eurozone's first financial crisis[J]. Journal of International Money and Finance,2014,48.
+
+[373]R.C. Jung,R. Maderitsch. Structural breaks in volatility spillovers between international financial markets: Contagion or mere interdependence?[J]. Journal of Banking and Finance,2014,47.
+
+[374]Serafín Martínez-Jaramillo,Omar Pérez Pérez,Fernando Avila Embriz,Fabrizio López Gallo Dey. Systemic risk, financial contagion and financial fragility[J]. Journal of Economic Dynamics and Control,2010,34(11).
+
+[375]杨海平.中国当前金融风险传染的情景推演及对策[J].北方金融,2015(11):7-12.
+
+[376]杨海平.为什么金融风险传染渠道和机制在不断演进?[J].北方金融,2015(12):3-7.
+
+[377]吴念鲁,杨海平.经济金融风险传染的防范与治理——基于资产负债表视角的分析[J].西南金融,2016(02):15-18.
+
+[378]冯林,董红霞,郝建娇.基于ESDA的区域金融风险传染评价研究——山东县域数据的实证[J].经济与管理评论,2016,32(01):135-139.
+
+[379]邓向荣,曹红.系统性风险、网络传染与金融机构系统重要性评估[J].中央财经大学学报,2016(03):52-60.
+
+[380]苏明政,张庆君.关联性视阈下我国金融行业间系统性风险传染效应研究[J].会计与经济研究,2015,29(06):111-124.
+
+[381]张德美,周伟.危机环境下金融市场间传染风险的测度与管理[J].金融经济,2016(06):138-139.
+
+[382].中国金融出版社图书推荐[J].中国金融,2016(05):85.
+
+[383]苟文均,袁鹰,漆鑫.债务杠杆与系统性风险传染机制——基于CCA模型的分析[J].金融研究,2016(03):74-91.
+
+[384]赵雪瑾,张卫国.基于风险传染的我国金融子市场风险预警研究[J].预测,2016,35(03):38-43.
+
+[385]吕徐莹.区域金融风险传染效应和扩散效应的实证分析[J].时代金融,2016(15):75-76+84.
+
+[386]杨海平.衍生金融产品风险传染特性解析[J].北方金融,2016(04):6-11.
+
+[387]杨海平.新形势下商业银行如何阻断社会金融风险传染[J].中国银行业,2016(09):16-18.
+
+[388]任培政. 金融风险的溢出效应及宏观审慎监管研究[D].华中科技大学,2015.
+
+[389]王琳. 中国上市银行系统性风险非对称性及其监管研究[D].山西财经大学,2016.
+
+[390]王姗姗. 外部金融危机对我国的传染性测度及免疫策略研究[D].吉林大学,2016.
+
+[391]居姗. 银行业系统性风险度量与监管研究[D].中国科学技术大学,2015.
+
+[392]Ghorbel, Achraf,Boujelbene, Younes. Contagion effect of the oil shock and US financial crisis on the GCC and BRIC countries[J]. International Journal of Energy Sector Management,2013,7(4).
+
+[393]Chittedi, Krishna Reddy. GLOBAL FINANCIAL CRISIS AND CONTAGION: EVIDENCE FOR THE 'BRIC' ECONOMIES*[J]. The Journal of Developing Areas,2014,48(4).
+
+[394]Tatiana von Landesberger,Simon Diel,Sebastian Bremm,Dieter W Fellner. Visual analysis of contagion in networks[J]. Information Visualization,2015,14(2).
+
+[395]Greg Filbeck,Sanjay Kumar,Jiangxia Liu,Xin Zhao. Supply chain finance and financial contagion from disruptions[J]. International Journal of Physical Distribution & Logistics Management,2016,46(4).
+
+[396]Ghulam Mujtaba Kayani,Hui Xiaofeng,Saqib Gulzar. Financial Contagion: Mean Spillover Effect of US Financial Market to the Emerging Financial Markets in Perspective of Global Financial Crises[J]. Journal of Convergence Information Technology,2013,8(17).
+
+[397]Allan D Grody. SDRs: A modern day fairy tale[J]. FOW,2013.
+
+[398]Tai-kuang Ho,Ming-yen Wu. Third-person Effect and Financial Contagion in the Context of a Global Game[J]. Open Economies Review,2012,23(5).
+
+[399]Zied Ftiti,Aviral Tiwari,Amél Belanès,Khaled Guesmi. Tests of Financial Market Contagion: Evolutionary Cospectral Analysis Versus Wavelet Analysis[J]. Computational Economics,2015,46(4).
+
+[400]Renée Fry-McKibbin,Cody Yu-Ling Hsiao,Chrismin Tang. Contagion and Global Financial Crises: Lessons from Nine Crisis Episodes[J]. Open Economies Review,2014,25(3).
+
+[401]Juan Pablo Solorzano-Margain,Serafin Martinez-Jaramillo,Fabrizio Lopez-Gallo. Financial contagion: extending the exposures network of the Mexican financial system[J]. Computational Management Science,2013,10(2-3).
+
+[402]Bartosz Gębka,Michail Karoglou. Is there life in the old dogs yet? Making break-tests work on financial contagion[J]. Review of Quantitative Finance and Accounting,2013,40(3).
+
+[403]Lu Yang,Shigeyuki Hamori. EU Accession, Financial Integration, and Contagion Effects: Dynamic Correlation Analysis of CEEC-3 Bond Markets[J]. Transition Studies Review,2013,20(2).
+
+[404]张岩. 我国离岸外汇市场与境内外汇市场收益率波动间的风险传染研究[D].中国海洋大学,2015.
+
+[405]赵迷. 基于平滑转换混合Copula模型的跨市场风险传染研究[D].浙江工商大学,2015.
+
+[406]赵微,刘玉涛,周勇.金融风险中违约传染效应的研究[J].数理统计与管理,2014,33(06):983-990.
+
+[407]郑子娴.网络视角下的金融结构与金融风险传染[J].品牌,2014(11):89.
+
+[408]王益锋,刘璐瑶.金融机构的传染性系数大小研究[J].统计与决策,2015(01):160-162.
+
+[409]苏明政,张庆君.经济周期波动、溢出效应与系统性金融风险区域传染性——基于VARX模型的实证研究[J].上海金融学院学报,2015(02):18-29.
+
+[410]李程枫,陈可嘉,陈一非,廖为鼎.基于网络传导分析法的我国银行间风险传染效应研究[J].金融发展评论,2015(01):67-86.
+
+[411]周伟,何建敏.考虑时变与高频因素的金融风险传染效应分析——以SHFE市场金属期货为例[J].数理统计与管理,2015,34(03):540-549.
+
+[412]朱正,贺根庆.危机冲击、市场时变联动与风险跨国传染途径——基于中美股票市场样本数据的实证研究[J].中央财经大学学报,2015(05):32-37.
+
+[413]方先明,孙利.民间金融风险:形成、传染与演化[J].中央财经大学学报,2015(07):28-34.
+
+[414]淳伟德,付君实,赵如波.基于混合Copula函数的金融市场非线性极端风险传染研究[J].预测,2015,34(04):53-58.
+
+[415]陈兵. 银行网络视角下的系统性风险传染研究[D].复旦大学,2013.
+
+[416]苏明政. 我国系统性金融风险的测度、传染与防范研究[D].东北财经大学,2014.
+
+[417]吕思颖. 全球金融危机传染效应研究[D].武汉大学,2012.
+
+[418]孟纹羽. 我国商业银行风险传染效应实证研究[D].山东大学,2015.
+
+[419]贾光华. 区域风险溢出效应研究[D].上海师范大学,2015.
+
+[420]敖青. 我国房地产金融风险演进与风险抑制研究[D].广东省社会科学院,2015.
+
+[421]韩穆盼. 欧洲主权信用评级变动冲击下股票市场的波动与均衡的分析[D].电子科技大学,2015.
+
+[422]赵如波. 基于Copula模型的金融风险传染测度及应用研究[D].成都理工大学,2015.
+
+[423]Yue Peng,Wing Lon Ng. Analysing financial contagion and asymmetric market dependence with volatility indices via copulas[J]. Annals of Finance,2012,8(1).
+
+[424]Gagari Chakrabarti. Financial crisis and the changing nature of volatility contagion in the Asia-Pacific region[J]. Journal of Asset Management,2011,12(3).
+
+[425]Chau Le,Dickinson David. Asset price volatility and financial contagion: analysis using the MS-VAR framework[J]. Eurasian Economic Review,2014,4(2).
+
+[426]吴炳辉,何建敏.开放经济条件下金融风险国际传染的研究综述[J].经济社会体制比较,2014(02):87-96.
+
+[427]柏宝春.投机资本流动与金融风险传染相关性分析[J].统计与决策,2014(05):156-159.
+
+[428]刘锡良,吕娅娴,苗文龙.国际风险冲击与金融市场波动[J].中国经济问题,2014(03):90-100.
+
+[429]刘海二,苗文龙.区域性、系统性风险的生成与演化[J].西南金融,2014(07):8-11.
+
+[430]吴炳辉,何建敏.国际收支视角下金融风险传染机制探讨[J].国际论坛,2014,16(04):69-72+81.
+
+[431]贺根庆.金融市场风险传染的原因及影响因素研究[J].征信,2014,32(07):17-20.
+
+[432]鲍勤,孙艳霞.网络视角下的金融结构与金融风险传染[J].系统工程理论与实践,2014,34(09):2202-2211.
+
+[433]张华勇.金融市场联动性和风险传染的内在机制研究[J].云南社会科学,2014(04):81-84.
+
+[434]廖为鼎,陈一非.基于网络分析法的我国银行间风险传染效应研究[J].金融监管研究,2014(10):59-76.
+
+[435]Kobayashi Teruyoshi,Hasui Kohei. Efficient immunization strategies to prevent financial contagion.[J]. Scientific reports,2014,4.
+
+[436]Maeno, Y.,Morinaga, S.,Nishiguchi, K.,Matsushima, H.. Optimal portfolio for a robust financial system[P]. ,2013.
+
+[437]Lin Liu,Yingfeng Shao,Xiaofeng Hui. Dynamic financial contagion prediction model based on fuzzy information granularity SVM[P]. ,2013.
+
+[438]Kayani, G.M.,Hui Xiao-feng,Gulzar, S.. Financial contagion: Impact of global financial crisis on exchange rate of emerging economies[P]. Management Science & Engineering (ICMSE), 2014 International Conference on,2014.
+
+[439]Maeno, Y.,Morinaga, S.,Nishiguchi, K.,Matsushima, H.. Impact of credit default swaps on financial contagion[P]. Computational Intelligence for Financial Engineering & Economics (CIFEr), 2104 IEEE Conference on,2014.
+
+[440]刘霞. 我国系统性金融风险防范研究[D].新疆财经大学,2013.
+
+[441]黄静菲. 欧债危机期间中美英日四国金融风险传染分析[D].华侨大学,2013.
+
+[442]李雯. 我国银行间市场风险传染效应研究[D].山西财经大学,2014.
+
+[443]陈洋阳. 金砖国家金融市场极端风险的净传染机制研究[D].广东财经大学,2014.
+
+[444]王莎莎. 基于复杂网络的银证业务风险传染与免疫策略研究[D].中国海洋大学,2014.
+
+[445]杜勇强. 基于分位数回归方法的我国银行业系统性风险测度研究[D].西南财经大学,2014.
+
+[446]许韶辉. 金融子行业间的系统性金融风险溢出效应研究[D].西南财经大学,2014.
+
+[447]曾庆桃. 银行资本约束对系统性风险传递的影响[D].西南财经大学,2014.
+
+[448]项峥. 警惕金融风险跨市场传染[N]. 经济参考报,2014-05-09(001).
+
+[449]王璐,王夏妮,王沁,何平.基于时变相关的金融风险传染效应的非参数方法研究[J].数学的实践与认识,2013,43(22):9-14.
+
+[450]谢晓冰,陈燕武.基于多元SVAR-BEKK模型的金融市场的风险传染程度分析[J].科技广场,2013(11):113-118.
+
+[451]宋建宇.能源金融风险管控[J].中国石化,2013(12):66-67.
+
+[452]王小丁. 基于违约相依的信用风险度量与传染效应研究[D].中南大学,2010.
+
+[453]赖娟. 我国金融系统性风险及其防范研究[D].江西财经大学,2011.
+
+[454]宫晓琳. 量化分析中国宏观金融风险及其演变机制[D].山东大学,2011.
+
+[455]齐讴歌. 房地产风险传染机制及其动态效应研究[D].西北大学,2012.
+
+[456]任淑霞. 金融集聚与城市经济增长研究[D].北京邮电大学,2011.
+
+[457]袁闯. 中国证券行业宏观审慎监管研究[D].湖南大学,2012.
+
+[458]刘慧悦. 金融投机攻击、金融脆弱性与金融风险管理[D].吉林大学,2013.
+
+[459]于蓓. 基于时间序列分析的我国上市银行系统性风险研究[D].山西财经大学,2013.
+
+[460]童磊. 基于宏观审慎监管的银行业流动性压力测试研究[D].湖南大学,2013.
+
+[461]高国华. 基于系统性风险的银行资本监管及其宏观经济效应[D].上海交通大学,2013.
+
+[462]宋群英. 中国银行体系的风险传染效应研究[D].华中科技大学,2012.
+
+[463]丁慧. 我国银行集团内部交叉风险及其监管研究[D].清华大学,2013.
+
+[464]马彦平. 区域性商业银行风险及监管创新[D].南开大学,2013.
+
+[465]马威. 金融危机预警指数构建及其应用研究[D].湖南大学,2013.
+
+[466]于文华. 危机传染背景下资产组合风险模型测试精度比较研究[D].西南交通大学,2013.
+
+[467]王彭. 证券市场第三产业板块行业间信用风险传染研究[D].湖南大学,2014.
+
+[468]柏宝春.国际投机资本流动与金融风险传染相关性分析[J].经济与管理评论,2013,29(03):96-103.
+
+[469]苗文龙.金融危机与金融市场间风险传染效应——以中、美、德三国为例[J].中国经济问题,2013(03):89-99.
+
+[470]乔涵.金融风险内部传染效应分析——基于中国债券市场、股票市场、外汇市场的传染机制[J].金融经济,2013(16):87-89.
+
+[471]曹源芳,蔡则祥.基于VAR模型的区域金融风险传染效应与实证分析——以金融危机前后数据为例[J].经济问题,2013(10):59-64.
+
+[472]黄腾飞. 中国资本密集型行业财务风险溢出研究[D].华东师范大学,2012.
+
+[473]肖璐璐. 由金融危机的传导机制看我国金融风险的防范措施[D].上海外国语大学,2014.
+
+[474]伍艳君. 大额支付系统中系统性风险传染规律研究[D].西南财经大学,2013.
+
+[475]Peckham Robert. Contagion: epidemiological models and financial crises.[J]. Journal of public health (Oxford, England),2013.
+
+[476]King Nicholas B. Contagion: a misnomer for financial crisis.[J]. Journal of public health (Oxford, England),2013.
+
+[477]胡玲. 我国金融风险预警实证研究[D].东北财经大学,2012.
+
+[478]丁妍.基于系统动力学的金融风险传染机制研究[J].金融纵横,2012(04):19-24.
+
+[479]李志辉,王颖.中国金融市场间风险传染效应分析——基于VEC模型分析的视角[J].现代财经(天津财经大学学报),2012,32(07):20-27+36.
+
+[480]宫晓琳.宏观金融风险联动综合传染机制[J].金融研究,2012(05):56-69.
+
+[481]陈超. 宏观经济因素冲击下我国银行间市场的风险传染效应研究[D].浙江工商大学,2012.
+
+[482]杨孟雄. 基于银行风险传染效应的宏观压力测试研究[D].湖南大学,2012.
+
+[483]曾丽. 我国商业银行风险传染的计量分析及相关对策研究[D].湖南大学,2011.
+
+[484]Chi, Renyong,Wu, Bao. Network Model of Inter-firm Financial Contagion and Risk Assessment of Regional Industrial Cluster[J]. Journal of Convergence Information Technology,2011,6(6).
+
+[485]Yi, Zhang,Xiaofeng, Hui,Rui, Wang. Prediction of Financial Contagion: Do Chinese Stock Markets Synchronize before the Onset of Crisis?[J]. Journal of Convergence Information Technology,2012,7(4).
+
+[486]姚良. 商业银行金融产品创新的风险传染与免疫研究[D].武汉理工大学,2010.
+
+[487]麦强盛. 基于宏观审慎监管的银行业系统性风险研究[D].暨南大学,2011.
+
+[488]王靖国. 顺周期行为机制下的系统性金融风险：理论与实证分析[D].财政部财政科学研究所,2011.
+
+[489]Xu Yanli, Dan Liu. Empirical study on the contagion effect of financial crisis[P]. Computer Application and System Modeling (ICCASM), 2010 International Conference on,2010.
+
+[490]Fang Liu, Serguieva, A., Date, P.. A mixed-game and co-evolutionary genetic programming agent-based model of financial contagion[P]. Evolutionary Computation (CEC), 2010 IEEE Congress on,2010.
+
+[491]Maguire, R. L. Risk contagion and what could the safety domain learn from risk governance in the financial services industry[P]. System Safety 2010, 5th IET International Conference on,2010.
+
+[492]Xu Yanli, Wang Lixiang, Zhao Chenguang. Empirical Analysis and Test Methods on Contagion Effects of Financial Crisis[P]. Intelligent Computation Technology and Automation (ICICTA), 2010 International Conference on,2010.
+
+[493]Xu Yanli, Liu Jing, Zhang Zhibo, Zhao Chenguang. Research on Real Contagion Mechanism of Financial Crisis[P]. Management and Service Science (MASS), 2010 International Conference on,2010.
+
+[494]Yancai Zhang. Empirical analysis on contagion effect of international financial crisis based on VAR model[P]. Future Information Technology and Management Engineering (FITME), 2010 International Conference on,2010.
+
+[495]Xu Yanli, Wang Lixiang, Zhao Chenguang. Analysis on Real Contagion Mechanism of Financial Crisis[P]. Intelligent Computation Technology and Automation (ICICTA), 2010 International Conference on,2010.
+
+[496]Zhanyun Wu, Minhe Ji, Hailong Su. Global contagion of the U.S. financial crisis: An exploratory spatial data analysis[P]. Geoinformatics, 2011 19th International Conference on,2011.
+
+[497]Minghua Luo, Yixiang Tian, Chenggang Li, Yibo Chen. The non-linear test and empirically study on the financial crisis contagion based on Copula Method[P]. Artificial Intelligence, Management Science and Electronic Commerce (AIMSEC), 2011 2nd International Conference on,2011.
+
+[498]Serguieva, A., Fang Liu, Date, P.. Financial contagion simulation through modelling behavioural characteristics of market participants and capturing cross-market linkages[P]. Computational Intelligence for Financial Engineering and Economics (CIFEr), 2011 IEEE Symposium on,2011.
+
+[499]吴智麟. 金融系统风险传染效应测度研究[D].广东商学院,2011.
+
+[500]郭立伟. 上证、深证和港股市场的动态相关性和风险溢出的实证研究[D].暨南大学,2011.
+
+[501]万媛媛. 次贷危机下我国资本市场对银行体系跨市场风险传染及监管研究[D].南昌大学,2010.
+
+[502]张宗辉. 基于复杂网络的金融系统风险控制研究[D].中国海洋大学,2011.
+
+[503]王俊. 金融风险的跨市场传递机制研究[D].西南财经大学,2011.
+
+[504]方中. 金融衍生品在金融危机中传染风险的机理研究[D].西南财经大学,2011.
+
+[505]洪涛.从国际资本流动角度来讨论金融风险的传染[J].中国外资,2011(04):19-20.
+
+[506]R.L. Maguire. Risk contagion and what could the safety domain learn from risk governance in the financial services industry[P]. 5th IET International Conference on System Safety 2010,2010.
+

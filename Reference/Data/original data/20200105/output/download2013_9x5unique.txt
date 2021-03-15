@@ -1,0 +1,462 @@
+
+PT J
+AU Spiegel, M
+   Tookes, H
+AF Spiegel, Matthew
+   Tookes, Heather
+TI Dynamic Competition, Valuation, and Merger Activity
+SO JOURNAL OF FINANCE
+LA English
+DT Article
+ID ADVERTISING STRATEGIES; CAPITAL STRUCTURE; CORPORATE; DEBT;
+   ANNOUNCEMENTS; CONTAGION; MODEL; RISK
+AB We model the interactions between product market competition and investment valuation within a dynamic oligopoly. To our knowledge, the model is the first continuous-time corporate finance model in a multiple firm setting with heterogeneous products. The model is tractable and amenable to estimation. We use it to relate current industry characteristics with firm value and financial decisions. Unlike most corporate finance models, it produces predictions regarding parameter magnitudes as well their signs. Estimates of the model's parameters indicate strong linkages between model-implied and actual values. The paper uses the estimated parameters to predict rivals returns near merger announcements.
+C1 [Spiegel, Matthew; Tookes, Heather] Yale Univ, Sch Management, New Haven, CT 06520 USA.
+RP Spiegel, M (reprint author), Yale Univ, Sch Management, New Haven, CT 06520 USA.
+CR Bass FM, 2005, MARKET SCI, V24, P556, DOI 10.1287/mksc.1050.0119
+   Betton S., 2008, HDB CORPORATE FINANC
+   BOLTON P, 1990, AM ECON REV, V80, P93
+   BRANDER JA, 1986, AM ECON REV, V76, P956
+   CHEVALIER JA, 1995, AM ECON REV, V85, P206
+   Dockner E, 2000, DIFFERENTIAL GAMES E
+   ECKBO BE, 1992, J FINANC, V47, P1005, DOI 10.2307/2328975
+   ECKBO BE, 1983, J FINANC ECON, V11, P241, DOI 10.1016/0304-405X(83)90013-2
+   Erickson GM, 1997, MANAGE SCI, V43, P1603, DOI 10.1287/mnsc.43.11.1603
+   ERICKSON GM, 1992, MANAGE SCI, V38, P1732, DOI 10.1287/mnsc.38.12.1732
+   Fee CE, 2004, J FINANC ECON, V74, P423, DOI 10.1016/j.jfineco.2003.10.002
+   Fresard L, 2010, J FINANC, V65, P1097, DOI 10.1111/j.1540-6261.2010.01562.x
+   Fruchter GE, 1997, MANAGE SCI, V43, P54, DOI 10.1287/mnsc.43.1.54
+   Goldstein R, 2001, J BUS, V74, P483, DOI 10.1086/322893
+   Gorbenko AS, 2010, REV FINANC STUD, V23, P2591, DOI 10.1093/rfs/hhq039
+   Greene W. H., 1997, ECONOMETRIC ANAL
+   GUENTHER DA, 1994, J ACCOUNT ECON, V18, P115, DOI 10.1016/0165-4101(94)90021-3
+   Hennessy CA, 2005, J FINANC, V60, P1129, DOI 10.1111/j.1540-6261.2005.00758.x
+   Hennessy CA, 2007, J FINANC, V62, P1705, DOI 10.1111/j.1540-6261.2007.01255.x
+   Hennessy CA, 2009, J FINANC ECON, V93, P382, DOI 10.1016/j.jfineco.2008.05.006
+   Hoberg G, 2010, REV FINANC STUD, V23, P3773, DOI 10.1093/rfs/hhq053
+   Hoberg G, 2010, J FINANC, V65, P45, DOI 10.1111/j.1540-6261.2009.01523.x
+   Hsu HC, 2010, J FINANC, V65, P495, DOI 10.1111/j.1540-6261.2009.01542.x
+   Lanchester F.W., 1916, AIRCRAFT WARFARE DAW
+   LANG LHP, 1992, J FINANC ECON, V32, P45, DOI 10.1016/0304-405X(92)90024-R
+   Laux P, 1998, FINANC MANAGE, V27, P5, DOI 10.2307/3666270
+   Leach Chris, 2006, STRATEGIC USE DEBT C
+   Leland HE, 1998, J FINANC, V53, P1213, DOI 10.1111/0022-1082.00051
+   LELAND HE, 1994, J FINANC, V49, P1213, DOI 10.2307/2329184
+   MAKSIMOVIC V, 1988, RAND J ECON, V19, P389, DOI 10.2307/2555663
+   MAKSIMOVIC V, 1990, J FINANC, V45, P1641, DOI 10.2307/2328755
+   Schaefer SM, 2008, J FINANC ECON, V90, P1, DOI 10.1016/j.jfineco.2007.10.006
+   Shahrur H, 2005, J FINANC ECON, V76, P61, DOI 10.1016/j.jfineco.2004.01.001
+   Strebulaev IA, 2007, J FINANC, V62, P1747, DOI 10.1111/j.1540-6261.2007.01256.x
+   SZEWCZYK SH, 1992, J FINANC, V47, P1935, DOI 10.2307/2329002
+   Wang QN, 2007, EUR J OPER RES, V183, P871, DOI 10.1016/j.ejor.2006.10.018
+NR 36
+TC 7
+Z9 8
+U1 5
+U2 70
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-1082
+EI 1540-6261
+J9 J FINANC
+JI J. Financ.
+PD FEB
+PY 2013
+VL 68
+IS 1
+BP 125
+EP 172
+DI 10.1111/j.1540-6261.2012.01796.x
+PG 48
+WC Business, Finance; Economics
+SC Business & Economics
+GA 072YK
+UT WOS:000313709900004
+DA 2019-12-27
+ER
+
+PT J
+AU Wang, KM
+AF Wang, Kuan-Min
+TI Did Vietnam stock market avoid the "contagion risk" from China and the
+   U.S.? The contagion effect test with dynamic correlation coefficients
+SO QUALITY & QUANTITY
+LA English
+DT Article
+DE Vietnam stock market; Contagion risk; EGARCH model; DCC estimation;
+   Sub-prime mortgage crisis
+ID EMERGING MARKETS; VOLATILITY; DIVERSIFICATION; PORTFOLIOS; GAINS; MODEL
+AB This paper examines the Vietnamese stock market with an extension of the recent investigation of risk contagion effects. Daily data spanning October 9, 2006-June 19, 2009 are sourced for the empirical validation of the risk contagion between the stock markets in Vietnam, China, and the U.S. To facilitate the validation of contagion effects with market related coefficients, this paper constructs a bivariable EGARCH model of dynamic condition correlation coefficients. First, we examine whether there are contagion effects when there is a financial crisis in the Vietnamese stock market. Next, we verify whether the contagion risk triggered by the crisis can affect the Vietnamese market and examine which market influences the Vietnamese market the most. We find that compared to the U.S. stock market, the Chinese stock market brings more contagion risk to the Vietnamese market, and these effects gain more significance after the sub-prime mortgage crisis.
+C1 Overseas Chinese Univ, Dept Finance, Taichung 40721, Taiwan.
+RP Wang, KM (reprint author), Overseas Chinese Univ, Dept Finance, 100 Chiao Kwang Rd, Taichung 40721, Taiwan.
+EM wkminn@ocu.edu.tw
+RI Wang, Kuan Min/H-5247-2019
+OI Wang, Kuan Min/0000-0002-0237-0596
+FU National Science Council TaiwanNational Science Council of Taiwan [NSC
+   99-2410-H-240-001]
+FX The financial support of National Science Council Taiwan Grant No. NSC
+   99-2410-H-240-001 is appreciatively acknowledged.
+CR Aggarwal R, 1999, J FINANC QUANT ANAL, V34, P33, DOI 10.2307/2676245
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   BOLLERSLEV T, 1990, REV ECON STAT, V72, P498, DOI 10.2307/2109358
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   CALVO S, 1995, CAPITAL INFLOW UNPUB
+   DIVECHA AB, 1992, J PORTFOLIO MANAGE, V19, P41, DOI 10.3905/jpm.1992.409433
+   Edwards S., 1998, 6756 NBER
+   Edwards S., 2001, IASE SEM BUEN AIR
+   Eichengreen B, 1996, SCAND J ECON, V98, P463, DOI 10.2307/3440879
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Forbes K., 2002, ASIAN FLU RUSS UNPUB
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Giang Vuong Minh, 2008, VIETNAMS EMERGING ST
+   Goetzmann WN, 1999, J FINANC QUANT ANAL, V34, P1, DOI 10.2307/2676244
+   GRUBEL HG, 1968, AM ECON REV, V58, P1299
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   HARVEY CR, 1995, REV FINANC STUD, V8, P773, DOI 10.1093/rfs/8.3.773
+   HON M., 2004, J FINANC RES, V27, P95, DOI DOI 10.1111/J.1475-6803.2004.00079.X
+   Kim KJ, 1993, REV FINANCIAL EC, V3, P89
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Lessard D. R., 1976, FINANCIAL ANAL J, V32, P32, DOI DOI 10.2469/FAJ.V32.N1.32
+   LEVY H, 1970, AM ECON REV, V60, P668
+   Liu Y. A., 1998, J EC FINANC, V22, P59
+   Longin F., 1995, J INT MONEY FINANC, V14, P13
+   MASIH AMM, 1997, APPL FINANCIAL EC, V7, P59, DOI DOI 10.1080/096031097333853
+   MERIC I, 1989, J BANK FINANC, V13, P627, DOI 10.1016/0378-4266(89)90034-4
+   NAGAYASU J, 2001, J ASIAN EC, V12, P529
+   SHENG HC, 2000, J MULTINATL FINANC M, V10, P345, DOI DOI 10.1016/S1042-444X(00)00034-7
+   Solnik B., 1974, FINANCIAL ANAL J, V30, P48, DOI DOI 10.2469/FAJ.V30.N4.48
+   Suleimann R., 2003, 042003 MORA TEAM EC
+   Tsay R.S., 2002, ANAL FINANCIAL TIME
+   Tse YK, 2002, J BUS ECON STAT, V20, P351, DOI 10.1198/073500102288618496
+   Turgutlu E, 2010, APPL ECON, V42, P647, DOI 10.1080/00036840701704485
+   Vuong Q.H., 2006, J INT C PUBL EC THEO
+   Wang KM, 2007, PHYSICA A, V376, P422, DOI 10.1016/j.physa.2006.10.084
+   Watson J, 1978, J BUSINESS FINANCE A, V5, P195, DOI DOI 10.1111/J.1468-5957.1978.TB00182.X
+NR 36
+TC 5
+Z9 5
+U1 0
+U2 12
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0033-5177
+J9 QUAL QUANT
+JI Qual. Quant.
+PD JUN
+PY 2013
+VL 47
+IS 4
+BP 2143
+EP 2161
+DI 10.1007/s11135-011-9647-2
+PG 19
+WC Social Sciences, Interdisciplinary; Statistics & Probability
+SC Social Sciences - Other Topics; Mathematics
+GA 108CB
+UT WOS:000316267500021
+DA 2019-12-27
+ER
+
+PT J
+AU Jimenez-Martin, JA
+   McAleer, M
+   Perez-Amaral, T
+   Santos, PA
+AF Jimenez-Martin, Juan-Angel
+   McAleer, Michael
+   Perez-Amaral, Teodosio
+   Santos, Paulo Araujo
+TI GFC-robust risk management under the Basel Accord using extreme value
+   methodologies
+SO MATHEMATICS AND COMPUTERS IN SIMULATION
+LA English
+DT Article
+DE Value-at-Risk (VaR); DPOT; Daily capital charges; Robust forecasts
+ID VALUE-AT-RISK; GARCH ERRORS; MODELS; 10-COMMANDMENTS; INFERENCE;
+   FORECASTS; BANKS; TIME
+AB In this paper we provide further evidence on the suitability of the median of the point VaR forecasts of a set of models as a GFC-robust strategy by using an additional set of new extreme value forecasting models and by extending the sample period for comparison. The median is not affected by extremes, unlike the mean. In periods of contagion, wherein the number and values of extremes are substantially greater. the use of the median would be expected to be even more robust than the mean. These extreme value models include DPOT and Conditional EVT. Such models might be expected to be useful in explaining financial data, especially in the presence of extreme shocks that arise during a GFC. Our empirical results confirm that the median remains GFC-robust even in the presence of these new extreme value models. This is illustrated by using the S&P500 index before, during and after the 2008-2009 GFC. We investigate the performance of a variety of single and combined VaR forecasts in terms of daily capital requirements and violation penalties under the Basel II Accord, as well as other criteria, including several tests for independence of the violations. The strategy based on the median, or more generally, on combined forecasts of single models, is straightforward to incorporate into existing computer software packages that are used by banks and other financial institutions. (C) 2013 IMACS. Published by Elsevier B.V. All rights reserved.
+C1 [Jimenez-Martin, Juan-Angel; McAleer, Michael; Perez-Amaral, Teodosio] Univ Complutense Madrid, Dept Quantitat Econ, E-28040 Madrid, Spain.
+   [McAleer, Michael] Erasmus Univ, Erasmus Sch Econ, Inst Econometr, Rotterdam, Netherlands.
+   [McAleer, Michael] Tinbergen Inst, Amsterdam, Netherlands.
+   [McAleer, Michael] Kyoto Univ, Inst Econ Res, Kyoto 6068501, Japan.
+   [Santos, Paulo Araujo] Univ Lisbon, Ctr Stat & Applicat, P-1699 Lisbon, Portugal.
+RP Jimenez-Martin, JA (reprint author), Univ Complutense Madrid, Dept Quantitat Econ, E-28040 Madrid, Spain.
+EM juanangel@ccee.ucm.es
+RI McAleer, Michael/K-8780-2019; MARTIN, JUAN ANGEL JIMENEZ/H-7230-2015;
+   McAleer, Michael/A-2407-2008; Perez-Amaral, Teodosio/E-6773-2017
+OI MARTIN, JUAN ANGEL JIMENEZ/0000-0001-5608-3288; Araujos Santos,
+   Paulo/0000-0003-0226-1549
+FU Australian Research CouncilAustralian Research Council; National Science
+   Council, TaiwanNational Science Council of Taiwan; Japan Society for the
+   Promotion of ScienceMinistry of Education, Culture, Sports, Science and
+   Technology, Japan (MEXT)Japan Society for the Promotion of Science;
+   Ministerio de Ciencia y Tecnologia and Comunidad de Madrid, Spain
+FX The authors are most grateful for the helpful comments and suggestions
+   of three reviewers and participants at the International Conference on
+   Risk Modelling and Management, Madrid, Spain, June 2011. For financial
+   support, the second author wishes to thank the Australian Research
+   Council, National Science Council, Taiwan, and the Japan Society for the
+   Promotion of Science. The first and third authors acknowledge the
+   financial support of the Ministerio de Ciencia y Tecnologia and
+   Comunidad de Madrid, Spain.
+CR Araujo Santos P., 2011, NOTAS COMUNICACOES C
+   Araujo Santos P., 2010, COMPUTATION IN PRESS, DOI DOI 10.1016/J.CSDA2010.10.002
+   Araujo Santos P., 2010, NOTAS COMUNICACOES C
+   BALKEMA AA, 1974, ANN PROBAB, V2, P792, DOI 10.1214/aop/1176996548
+   *BAS COMM BANK SUP, 1988, INT CONV CAP MEAS CA
+   Basel Committee on Banking Supervision, 1996, CONJ INT MOD BAS APP
+   Basel Committee on Banking Supervision, 1995, INT MOD BAS APPR MAR
+   Basel Committee on Banking Supervision, 2006, INT CONV CAP MEAS CA
+   Bekiros S.D., 2005, J INT FINANC MARK I, V15, P2009
+   Berkowitz J, 2002, J FINANC, V57, P1093, DOI 10.1111/1540-6261.00455
+   BLACK F, 1976, 1976 P M AM STAT ASS, P177
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Borio C., 2008, BIS WORKING PAPERS
+   Bystrom H., 2004, INT REV FINANC ANAL, V13, P133
+   Caporin M, 2010, J ECON SURV, V24, P196, DOI 10.1111/j.1467-6419.2009.00585.x
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Diebold F. X., 1998, 9810 U PENNS WHART S
+   EMBRECHTS P, 1997, MODELING EXTREMAL EV
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Franses P.H., 1999, NONLINEAR TIME SERIE
+   Ghorbel A., 2008, INT J MONETARY EC FI, V1, P121, DOI DOI 10.1504/IJMEF.2008.019218
+   Gizycki M., 1998, 1 AUSTR PRUD REG AUT
+   Jimenez-Martin JA, 2009, J ECON SURV, V23, P850, DOI 10.1111/j.1467-6419.2009.00590.x
+   Jorion P., 2000, VALUE RISK NEW BENCH
+   Kuester K., 2006, J FINANCIAL ECONOMET, V4, P53, DOI [DOI 10.1093/JJFINEC/NBJ002, 10.1093/jjfinec/nbj002]
+   Kupiec P., 1995, J DERIV, V3, P73, DOI [10.3905/jod.1995.407942, DOI 10.3905/JOD.1995.407942]
+   Li WK, 2002, J ECON SURV, V16, P245, DOI 10.1111/1467-6419.00169
+   Ling S., 2002, J ECONOMETRICS, V106
+   Ling SQ, 2003, ECONOMET THEOR, V19, P280, DOI 10.1017/S0266466603192092
+   Ling SQ, 2003, ANN STAT, V31, P642
+   Ling SQ, 2002, ECONOMET THEOR, V18, P722, DOI 10.1017/S0266466602183071
+   McAleer M, 2005, ECONOMET THEOR, V21, P232, DOI 10.1017/S0266466605050140
+   McAleer M., 2009, J FORECASTING, V29, P317
+   McAleer M, 2008, J FORECASTING, V27, P217, DOI 10.1002/for.1054
+   Mcaleer M, 2008, J FORECASTING, V27, P1, DOI 10.1002/for.1049
+   McAleer M, 2013, N AM J ECON FINANC, V26, P250, DOI 10.1016/j.najef.2013.02.004
+   McAleer M, 2013, INT REV ECON FINANC, V27, P97, DOI 10.1016/j.iref.2012.09.006
+   McAleer M, 2013, J FORECASTING, V32, P267, DOI 10.1002/for.1269
+   McAleer M, 2009, J ECON SURV, V23, P831, DOI 10.1111/j.1467-6419.2009.00588.x
+   McNeil A. J., 2000, J EMPIR FINANC, V7, P271, DOI DOI 10.1016/S0927-5398(00)00012-8
+   Ozun A, 2010, J RISK FINANC, V11, P164, DOI 10.1108/15265941011025189
+   Perignon C, 2008, J BANK FINANC, V32, P783, DOI 10.1016/j.jbankfin.2007.05.014
+   PICKANDS J, 1975, ANN STAT, V3, P119
+   Riskmetrics J.P., 1996, MORGAN TECHNICAL DOC
+   Runkle D., 1993, J FINANC, V46, P1779
+   SMITH RL, 1987, ANN STAT, V15, P1174, DOI 10.1214/aos/1176350499
+   Stahl G., 1997, RISK, V10, P67
+   Zumbauch G., 2007, GENTLE INTRO RM 2006
+NR 49
+TC 1
+Z9 1
+U1 0
+U2 6
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4754
+EI 1872-7166
+J9 MATH COMPUT SIMULAT
+JI Math. Comput. Simul.
+PD AUG
+PY 2013
+VL 94
+BP 223
+EP 237
+DI 10.1016/j.matcom.2013.08.010
+PG 15
+WC Computer Science, Interdisciplinary Applications; Computer Science,
+   Software Engineering; Mathematics, Applied
+SC Computer Science; Mathematics
+GA 270CO
+UT WOS:000328296700013
+DA 2019-12-27
+ER
+
+PT J
+AU Ulibarri, CA
+AF Ulibarri, Carlos A.
+TI Multivariate GARCH analysis of Fannie Mae, Freddie Mac, and American
+   International Group: Did the short-selling ban reduce systemic
+   return-risk?
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Multivariate GARCH; Systemic return-risk; Short-selling constraints;
+   Volatility persistence
+ID SHORT-SALES; HETEROGENEOUS EXPECTATIONS; MARKET; CONSTRAINTS;
+   VOLATILITY; OPINION; MODEL
+AB This paper uses a multivariate GARCH framework to examine how the 2008 moratorium on short-selling affected the systemic return-risk across three firms at the center of the subprime mortgage crises: Fannie Mae and Freddie Mac, the two largest buyers of US home mortgages; and American International Group, a major insurer of mortgage-backed securities. Wald coefficient tests indicate shocks in prior day returns manifest less systemic return-risk under the short-selling ban, thus coinciding with the regulatory intentions of the United States Securities and Exchange Commission (SEC), to "moderate the sudden and excessive fluctuations in securities prices." The findings also agree with prior work in observing abnormal-negative returns for heavily shorted firms, and diminished negative skewness and kurtosis under binding short-selling constraints. (C) 2013 Elsevier Inc. All rights reserved.
+C1 Bur Budget Planning & Res, Dept Human Resources, Santa Fe, NM 87501 USA.
+RP Ulibarri, CA (reprint author), Bur Budget Planning & Res, Dept Human Resources, Santa Fe, NM 87501 USA.
+EM ulibarri@nmt.edu
+CR Asquith P., 1995, 96012 HARV U BUS SCH
+   Avgouleas E., 2010, STANFORD J LAW BUSIN, V15, P376
+   Bai Y, 2006, ASSET PRICES SHORT S
+   Beg ABMRA, 2012, N AM J ECON FINANC, V23, P165, DOI 10.1016/j.najef.2012.02.001
+   Biais B., 1999, EUROPEAN FINANCIAL M, V5, P395
+   Boehmer E., 2008, SHACKLING SHORT SELL
+   Boehmer E, 2008, J FINANC, V63, P491, DOI 10.1111/j.1540-6261.2008.01324.x
+   BOLLERSLEV T, 1988, J POLIT ECON, V96, P116, DOI 10.1086/261527
+   Bris A, 2007, J FINANC, V62, P1029, DOI 10.1111/j.1540-6261.2007.01230.x
+   CAMPBELL JY, 1992, J FINANC ECON, V31, P281, DOI 10.1016/0304-405X(92)90037-X
+   Desai H, 2002, J FINANC, V57, P2263, DOI 10.1111/0022-1082.00495
+   DIAMOND DW, 1987, J FINANC ECON, V18, P277, DOI 10.1016/0304-405X(87)90042-0
+   Ding Z., 2001, SDRP0107 NEW YORK U
+   FSA, 2009, 091 FSA
+   HARRISON JM, 1978, Q J ECON, V92, P323, DOI 10.2307/1884166
+   Helwege J., 2009, CATO REV BUSINESS GO, V32, P24
+   Henry OT, 2006, J BUS, V79, P671, DOI 10.1086/499135
+   Ho K.W., 1996, PACIFIC BASIN FINANC, V4, P377
+   Hong H, 2003, REV FINANC STUD, V16, P487, DOI 10.1093/rfs/hhg006
+   JARROW R, 1980, J FINANC, V35, P1105, DOI 10.2307/2327088
+   MILLER EM, 1977, J FINANC, V32, P1151, DOI 10.2307/2326520
+   OEA, 2008, AN SHORT SAL PRIC TE
+   Rhee G., 2003, 5 OECD ROUND T UNPUB
+   Rubinstein M., 2004, J INVESTMENT MANAGEM, V2
+   Sowell T, 2009, HOUSING BOOM BUST
+   Ulibarri CA, 2009, J FINAN ECON POLICY, V1, P227, DOI 10.1108/17576380911041719
+NR 26
+TC 1
+Z9 1
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1062-9408
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD AUG
+PY 2013
+VL 25
+SI SI
+BP 60
+EP 69
+DI 10.1016/j.najef.2013.01.003
+PG 10
+WC Business, Finance; Economics
+SC Business & Economics
+GA 172RI
+UT WOS:000321022200004
+DA 2019-12-28
+ER
+
+PT J
+AU Saldias, M
+AF Saldias, Martin
+TI A market-based approach to sector risk determinants and transmission in
+   the euro area
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article; Proceedings Paper
+CT 24th Australasian Finance and Banking Conference
+CY DEC, 2011
+CL UNSW, Inst Global Finance, Sydney, AUSTRALIA
+SP UNSW, Sch Banking & Finance, Reserve Bank Australia, Australian Securities Exchange, BlackRock
+HO UNSW, Inst Global Finance
+DE Macro-prudential analysis; Portfolio credit risk measurement; Common
+   correlated effects; Contingent claims analysis
+ID CROSS-SECTION DEPENDENCE; HETEROGENEOUS PANELS; EQUITY RETURNS; DEFAULT
+   RISK; BANKRUPTCY; INDICATORS; BUSINESS; SHOCKS; MODEL
+AB In a panel data framework applied to Portfolio Distance-to-Default series of corporate sectors in the euro area, this paper evaluates systemic and idiosyncratic determinants of default risk and examines how distress is transferred in and between the financial and corporate sectors since the early days of the euro. This approach takes into account observed and unobserved common factors and the presence of different degrees of cross-section dependence in the form of economic proximity. This paper contributes to the financial stability literature with a contingent claims approach to a sector-based analysis with a less dominant macro focus while being compatible with existing stress-testing methodologies in the literature. A disaggregated analysis of the different corporate and financial sectors allows for a more detailed assessment of specificities in terms of risk profile, i.e. heterogeneity of business models, risk exposures and interaction with the rest of the macro environment. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Saldias, Martin] Banco Portugal, P-1150012 Lisbon, Portugal.
+   [Saldias, Martin] Banco Portugal, Econ & Res Dept, Catolica Lisbon Res Unit, P-1150012 Lisbon, Portugal.
+RP Saldias, M (reprint author), Banco Portugal, Av Almirante Reis 71, P-1150012 Lisbon, Portugal.
+EM martin.saldias@bportugal.pt
+OI Saldias Zambrana, Martin/0000-0003-2084-1037
+CR Acharya V. V., 2011, 16896 NAT BUR EC RES
+   ALVES I, 2005, BIS PAPERS, V22, P450
+   Asberg P., 2009, INT J CENT BANK, V5, P83
+   Bai JS, 2004, ECONOMETRICA, V72, P1127, DOI 10.1111/j.1468-0262.2004.00528.x
+   Baltagi BH, 2007, J APPL ECONOM, V22, P339, DOI 10.1002/jae.950
+   Beaver WH, 2005, REV ACCOUNT STUD, V10, P93, DOI 10.1007/s11142-004-6341-9
+   Benmelech E, 2011, J FINANC, V66, P337, DOI 10.1111/j.1540-6261.2010.01636.x
+   Bernoth K, 2011, J BANK FINANC, V35, P807, DOI 10.1016/j.jbankfin.2010.10.024
+   Bohn Jeffrey R., 2003, MODELING DEFAULT RIS
+   Bruneau C., 2008, DOCUMENTS TRAVAIL
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   Cappiello L, 2010, J FINANC QUANT ANAL, V45, P473, DOI 10.1017/S0022109010000086
+   Carling K, 2007, J BANK FINANC, V31, P845, DOI 10.1016/j.jbankfin.2006.06.012
+   CARLSON M, 2008, FINANCE EC DISCUSSIO
+   Castren O., 2009, WORKING PAPER SERIES, V1002
+   Castren O, 2010, J FINANC STABIL, V6, P64, DOI 10.1016/j.jfs.2009.10.001
+   Charitou A, 2011, J FINANC QUANT ANAL, V46, P1521, DOI 10.1017/S0022109011000305
+   Chava S., 2004, Review of Finance, V8, P537, DOI 10.1093/rof/8.4.537
+   Chudik A, 2011, ECONOMET J, V14, pC45, DOI 10.1111/j.1368-423X.2010.00330.x
+   Conley TG, 2003, J POLIT ECON, V111, P311, DOI 10.1086/367681
+   Conley TG, 2002, J APPL ECONOM, V17, P303, DOI 10.1002/jae.670
+   Couderc F, 2008, CH CRC FINANC MATH, P235
+   Das SR, 2007, J FINANC, V62, P93, DOI 10.1111/j.1540-6261.2007.01202.x
+   De Graeve F, 2008, J FINANC STABIL, V4, P205, DOI 10.1016/j.jfs.2007.09.003
+   De Nicolo G., 2007, IMF WORKING PAPERS
+   De Nicolo G., 2005, IMF STAFF COUNTRY RE
+   Dechow P.M., 2004, EARNINGS QUALITY
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Drukker D., 2003, STATA J, V3, P10
+   Drukker DM, 2003, STATA J, V3, P168, DOI 10.1177/1536867X0300300206
+   Eberhardt M., 2009, 17692 MPRA U LIB MUN
+   Eberhardt M., 2010, EC SERIES WORKING PA, V515
+   Echeverria C., 2006, MEDIDA RIESGO INSOLV
+   Echeverria C., 2009, ROBUSTEZ ESTIM UNPUB
+   Eihak M., 2009, WORKING PAPERS INT M
+   European Central Bank, 2010, FIN INT EUR
+   Financial Stability Board, 2010, FIN CRIS INF GAPS
+   Gray D., 2008, MACROFINANCIAL RISK
+   Gropp R, 2006, J MONEY CREDIT BANK, V38, P399, DOI 10.1353/mcb.2006.0032
+   GROPP R, 2004, EC POLICY REV, V10, P53
+   Gropp R, 2009, INT J CENT BANK, V5, P97
+   Hanson SG, 2008, J EMPIR FINANC, V15, P583, DOI 10.1016/j.jempfin.2007.11.002
+   Holly S, 2012, REV ECON STAT, V94, P948, DOI 10.1162/REST_a_00253
+   Holly S, 2011, J URBAN ECON, V69, P2, DOI 10.1016/j.jue.2010.08.002
+   Holly S, 2010, J ECONOMETRICS, V158, P160, DOI 10.1016/j.jeconom.2010.03.040
+   International Monetary Fund, 2011, GLOB FIN STAB REP GR
+   Jarrow RA, 2001, J FINANC, V56, P1765, DOI 10.1111/0022-1082.00389
+   Kapetanios G, 2011, J ECONOMETRICS, V160, P326, DOI 10.1016/j.jeconom.2010.10.001
+   Kavonius I.K., 2009, WORKING PAPER SERIES, V1124
+   Muhleisen M., 2006, IMF STAFF COUNTRY RE
+   Pesaran M. H, 2004, CAMBRIDGE WORKING PA, V0435
+   Pesaran MH, 2007, J APPL ECONOMET, V22, P265, DOI 10.1002/jae.951
+   Pesaran MH, 2006, ECONOMETRICA, V74, P967, DOI 10.1111/j.1468-0262.2006.00692.x
+   Pesaran MH, 2011, J ECONOMETRICS, V161, P182, DOI 10.1016/j.jeconom.2010.12.003
+   PESARAN MH, 1995, J ECONOMETRICS, V68, P79, DOI 10.1016/0304-4076(94)01644-F
+   Pesaran MH, 2004, J BUS ECON STAT, V22, P129, DOI 10.1198/073500104000000019
+   Pomerleano M., 2007, BIS Q REV
+   Raddatz C, 2010, REV ECON STAT, V92, P985, DOI 10.1162/REST_a_00042
+   Saldias M., 2012, SYSTEMIC RISK ANAL U
+   Shumway T, 2001, J BUS, V74, P101, DOI 10.1086/209665
+   Sorge M., 2006, J FINANCIAL STABILIT, V2, P113, DOI DOI 10.1016/J.JFS.2005.07.002
+   Vassalou M, 2004, J FINANC, V59, P831, DOI 10.1111/j.1540-6261.2004.00650.x
+   Veldkamp L, 2007, J MONETARY ECON, V54, pS37, DOI 10.1016/j.jmoneco.2007.06.001
+   Zhou CS, 2001, REV FINANC STUD, V14, P555, DOI 10.1093/rfs/14.2.555
+NR 64
+TC 8
+Z9 9
+U1 0
+U2 21
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD NOV
+PY 2013
+VL 37
+IS 11
+BP 4534
+EP 4555
+DI 10.1016/j.jbankfin.2013.01.026
+PG 22
+WC Business, Finance; Economics
+SC Business & Economics
+GA 242BJ
+UT WOS:000326212100039
+OA Green Published
+DA 2019-12-28
+ER

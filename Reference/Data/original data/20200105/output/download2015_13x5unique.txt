@@ -1,0 +1,371 @@
+
+PT J
+AU Olszak, M
+AF Olszak, Malgorzata
+TI The phenomenon of excessive procyclicality of the financial sector from
+   the perspective of macroprudential policy - sources, methods of
+   reduction and their basic limitations
+SO PROBLEMY ZARZADZANIA-MANAGEMENT ISSUES
+LA Polish
+DT Article
+DE procyclicality; systemic risk; macroprudential policy
+ID MONETARY-POLICY; CREDIT; MARKET; RISK
+AB This article presents explanations of the procyclicality phenonomenon with the application of the theory of market failures and behavioral finance. This analysis shows that the most important failures include: externalities of strategic complementarities (the classical herding phenomenon), fire sale externalities (i.e. asset prices spirals); network externalities (i.e. contagion risk). The theory of market failures does not say the whole story about the procyclicality phenomenon. To get a fuller picture of procyclicality one has to resort to behavioral finance, i.e. availability heuristics and threshold heuristics. The analysis also focuses on macroprudential instruments in their potential to affect financial cycle and soundness of financial sector. The article aims also to identify basic limitation of macroprudential policy instruments.
+C1 [Olszak, Malgorzata] Uniwersytetu Warszawskiego, Wydzial Zarzadzania, Katedrze Syst Finansowych Gospodarki, PL-02678 Warsaw, Poland.
+RP Olszak, M (reprint author), Uniwersytetu Warszawskiego, Wydzial Zarzadzania, Ul Szturmowa 1-3, PL-02678 Warsaw, Poland.
+EM molszak@wz.uw.edu.pl
+RI Olszak, Malgorzata/C-4952-2016
+OI Olszak, Malgorzata/0000-0001-8920-5309
+CR Acemoglu D, 2013, NBER WORKING PAPERS, V19746
+   Acharya V.V., 2003, THEORY PROCYCLICAL B
+   Acharya V. V., 2006, INFORM CONTAGION BAN
+   Acharya VV, 2007, J FINANC ECON, V85, P787, DOI 10.1016/j.jfineco.2006.05.011
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2009, RESTORING FINANCIAL
+   Adrian T, 2009, AM ECON REV, V99, P600, DOI 10.1257/aer.99.2.600
+   Akerlof G, 2009, ANIMAL SPIRITS HUMAN
+   AKERLOF GA, 1970, Q J ECON, V84, P488, DOI 10.2307/1879431
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Angelini P., 2010, OCCASIONAL PAPERS BA
+   Barberis N, 2003, HDB EC FINANCE
+   Barczyk R., 2014, BANKI CYKLE KONIUNKT
+   Bebchuk LA, 2011, REV FINANC STUD, V24, P3519, DOI 10.1093/rfs/hhr086
+   Berger AN, 2004, J FINANC INTERMED, V13, P458, DOI 10.1016/j.jfi.2004.06.006
+   Bernanke B, 1996, REV ECON STAT, V78, P1, DOI 10.2307/2109844
+   Bernanke B., 1998, NBER WORKING PAPER S
+   BERNANKE BS, 1995, J ECON PERSPECT, V9, P27, DOI 10.1257/jep.9.4.27
+   Bianchi J, 2010, AM ECON REV, V100, P398, DOI 10.1257/aer.100.2.398
+   Borio C, 2014, J BANK FINANC, V45, P182, DOI 10.1016/j.jbankfin.2013.07.031
+   Brunnermeier M.K., 2013, ADV EC EC 10 WORLD C
+   Brunnermeier M. K., 2009, 11 CEPRICMB
+   Carletti E., 2011, SYSTEMIC RISK MACROP
+   Claessens S., 2011, WP1176 IMF
+   Claessens S., 2014, WP14155 IMF
+   Claessens S, 2012, J INT ECON, V87, P178, DOI 10.1016/j.jinteco.2011.11.008
+   Claessens Stijn, 2014, WP14214 IMF
+   Danilidis I., 2011, 139 BANK GREEC
+   De Nicolo G., 2012, EXTERNATILITIES MACR
+   Dell'Ariccia G, 2006, J FINANC, V61, P2511, DOI 10.1111/j.1540-6261.2006.01065.x
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   Disyatat P., 2010, BIS WORKING PAPERS
+   Drehmann M., 2012, BIS WORKING PAPERS, V380
+   Farhi E., 2013, NBER WORKING PAPERS, V19313
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Gennaioli N, 2013, J FINANC, V68, P1331, DOI 10.1111/jofi.12031
+   Gorton GB, 2008, REV ECON STUD, V75, P1181, DOI 10.1111/j.1467-937X.2008.00497.x
+   Herring RJ, 1999, OXFORD REV ECON POL, V15, P63, DOI 10.1093/oxrep/15.3.63
+   Jeanne O, 2010, AM ECON REV, V100, P403, DOI 10.1257/aer.100.2.403
+   KAHNEMAN D, 1979, ECONOMETRICA, V47, P263, DOI 10.2307/1914185
+   Lambert F.J., 2014, GLOB FIN STAB REP
+   Laux C, 2010, J ECON PERSPECT, V24, P93, DOI 10.1257/jep.24.1.93
+   Lim C.H., 2011, 11238 IMF
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   Manconi A., 2012, J FINANC ECON, V104, P491
+   Marcinkowska M., 2014, MAT STUDIA NARODOWY, P305
+   Olszak M, 2015, PROCYKLICZNOSC DZIAL
+   Olszak M., 2014, FACULTY MANAGEMENT W, V3
+   Olszak M., 2014, FACULTY MANAGEMENT W, V4
+   Perotti E, 2011, INT J CENT BANK, V7, P3
+   Ratnovski L., 2013, 13126 IMF
+   Ratnovski L, 2009, J FINANC INTERMED, V18, P541, DOI 10.1016/j.jfi.2007.08.001
+   Rotheli TF, 2012, J SOCIO-ECON, V41, P730, DOI 10.1016/j.socec.2012.07.005
+   Ruckes M, 2004, REV FINANC STUD, V17, P1073, DOI 10.1093/rfs/hhh011
+   Savage L. J., 1961, P 4 BERK S MATH STAT, VI, P575
+   Savage L.J., 1954, FDN STAT
+   SCHARFSTEIN DS, 1990, AM ECON REV, V80, P465
+   Shin H.S., 2008, BIS WORKING PAPERS
+   Stein JC, 2012, Q J ECON, V127, P57, DOI 10.1093/qje/qjr054
+   Teoh S. H., 2008, 9142A MPRA
+   Tobias Rotheli, 2001, J ECON BUS, V53, P585
+   TVERSKY A, 1974, SCIENCE, V185, P1124, DOI 10.1126/science.185.4157.1124
+   Vives X, 2010, STRATEGIC COMPLEMENT
+   Vives X, 2014, REV FINANC STUD, V27, P3547, DOI 10.1093/rfs/hhu064
+   Wagner W., 2012, WORKING PAPER
+NR 65
+TC 0
+Z9 0
+U1 0
+U2 4
+PU UNIV WARSAW, FAC MANAGEMENT
+PI WARSAW
+PA SZTURMOWA 1-3, WARSAW, 02-678, POLAND
+SN 1644-9584
+EI 2300-8792
+J9 PROBL ZARZ
+JI Probl. Zarz.
+PY 2015
+VL 13
+IS 3
+BP 72
+EP 96
+DI 10.7172/1644-9584.55.6
+PN 2
+PG 25
+WC Management
+SC Business & Economics
+GA DP9TN
+UT WOS:000378840400006
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Engle, R
+   Moshirian, F
+   Wong, CS
+AF Engle, Robert
+   Moshirian, Fariborz
+   Wong, Christopher S.
+TI GLOBAL SYSTEMIC RISK: What's driving the shadow banking system?
+SO JASSA-THE FINSIA JOURNAL OF APPLIED FINANCE
+LA English
+DT Article
+AB Driven by the tightening of banking regulations, the global shadow banking system continues to grow steadily in size and scope. This paper discusses issues related to the shadow banking system, focusing on Asia and China in particular. The paper highlights the increasing importance of the shadow banking industry in Asia and factors that will contribute to its expansion in the immediate future. The paper compares and contrasts shadow banking in the US and China. It also highlights the risks associated with shadow banking, including leverage risk, maturity and liquidity mismatch, and regulatory arbitrage.
+C1 [Engle, Robert] NYU, Stern Sch Business, Finance, New York, NY USA.
+   [Moshirian, Fariborz; Wong, Christopher S.] UNSW, Sch Business, Inst Global Finance, Sydney, NSW, Australia.
+RP Engle, R (reprint author), NYU, Stern Sch Business, Finance, New York, NY USA.
+CR Adrian T., 2013, FEDERAL RESERVE BANK
+   Adrian T., 2012, FEDERAL RESERVE BANK
+   Barboza D., 2013, NY TIMES
+   Borst N, 2014, INT EC           WIN, P12
+   Brunnermeier M., 2009, FEDERAL RESERVE BANK
+   Caruana J, 2014, PROM ANN LECT LOND 4
+   Financial Stability Board, 2014, GLOB SHAD BANK MON R
+   Financial Stability Board, 2013, GLOB SHAD BANK MON R
+   Financial Stability Board, 2014, REP SHAD BANK AS
+   Ghosh S., 2012, EC PREMISE
+   Hsu S, 2012, 39441 MPRA
+   Hsu S, 2014, 349 U MASS POL EC RE
+   Li C, 2013, SHADOW BANKING CHINA
+   Moody's Investors Service, 2015, SHAD BANK SLOWD RED
+   Moshirian F, 2014, J BANK FINANC, V48, P307, DOI 10.1016/j.jbankfin.2014.07.012
+   Pozsar Z., 2010, FEDERAL RESERVE BANK, V458
+   Schuman M., 2014, TIME MAGAZINE
+   Schwarcz S, 2013, 201383 GLOB EC GOV P
+   Shen W, 2013, J INT BANKING LAW RE, V1, P20
+   Sheng A, 2015, BRINGING LIGHT SHADO
+   Tarullo D, 2012, FED RES BANK SAN FRA
+   Tarullo D. K., 2013, AM FIN REF EC POL I
+   Yi X, 2013, CHINA ORG CN    0127
+NR 23
+TC 1
+Z9 1
+U1 1
+U2 9
+PU FINSIA
+PI SYDNEY NSW
+PA PO BOX H99, AUSTRALIA SQ, SYDNEY NSW, 1215, AUSTRALIA
+SN 0313-5934
+J9 JASSA
+JI JASSA
+PY 2015
+IS 3
+BP 6
+EP 12
+PG 7
+WC Business, Finance
+SC Business & Economics
+GA DH1BA
+UT WOS:000372518200002
+DA 2019-12-28
+ER
+
+PT J
+AU Giacometti, R
+   Ortobelli, S
+   Tichy, T
+AF Giacometti, Rosella
+   Ortobelli, Sergio
+   Tichy, Tomas
+TI PORTFOLIO SELECTION WITH UNCERTAINTY MEASURES CONSISTENT WITH ADDITIVE
+   SHIFTS
+SO PRAGUE ECONOMIC PAPERS
+LA English
+DT Article
+DE alarm signal; dispersion measure; investment; Sharpe ratio; stochastic
+   dominance; systemic risk
+ID MEAN-RISK MODELS; STOCHASTIC-DOMINANCE
+AB Assuming a non-satiable risk-averse investor, the standard approach to portfolio selection suggests discarding of all inefficient investment in terms of mean return and its standard deviation ratio within its first step. However, in literature we can find many alternative dispersion and risk measures that can help us to identify the most suitable investment opportunity. In this work two new dispersion measures, fulfilling the condition that "more is better than less" are proposed. Moreover, their distinct characteristics are analysed and empirically compared. In particular, starting from the definition of dispersion measures, we discuss the property of consistency with respect to additive shifts and we examine two dispersion measures that satisfy this property. Finally, we empirically compare the proposed dispersion measures with the standard deviation and the conditional value at risk on the US stock market. Moreover, within the empirical example the so called "alarm" is incorporated in order to predict potential fails of the market.
+C1 [Giacometti, Rosella; Ortobelli, Sergio] Univ Bergamo, Dept MSIA, I-24127 Bergamo, Italy.
+   [Ortobelli, Sergio; Tichy, Tomas] Tech Univ Ostrava, Dept Finance, Fac Econ, Ostrava 70121, Czech Republic.
+RP Giacometti, R (reprint author), Univ Bergamo, Dept MSIA, Via Caniana 2, I-24127 Bergamo, Italy.
+EM tomas.tichy@vsb.cz
+RI Ortobelli Lozza, Sergio/F-1524-2018
+OI Giacometti, Rosella/0000-0002-9761-3529
+FU Italian funds ex MURST 60%; MIUR PRIN MISURA Project; Czech Science
+   Foundation (GACR)Grant Agency of the Czech Republic [13-13142S,
+   15-23699S, SP2015/15]; SGS Research Project of VSB-TU Ostrava; European
+   Social FundEuropean Social Fund (ESF) [CZ.1.07/2.3.00/20.0296]
+FX This paper has been supported by the Italian funds ex MURST 60% 2013 and
+   2014 and MIUR PRIN MISURA Project, 2013-2015 (R. Giacometti and S.
+   Ortobelli). The research was also supported through the Czech Science
+   Foundation (GACR) under Project No. 13-13142S (T. Tichy) and No.
+   15-23699S (S. Ortobelli) and through SP2015/15, an SGS Research Project
+   of VSB-TU Ostrava, and furthermore by the European Social Fund in the
+   framework of CZ.1.07/2.3.00/20.0296.
+CR Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Bauerle N, 2006, INSUR MATH ECON, V38, P132, DOI 10.1016/j.insmatheco.2005.08.003
+   DYBVIG PH, 1988, J BUS, V61, P369, DOI 10.1086/296438
+   HADAR J, 1969, AM ECON REV, V59, P25
+   HANOCH G, 1969, REV ECON STUD, V36, P335, DOI 10.2307/2296431
+   KONNO H, 1991, MANAGE SCI, V37, P519, DOI 10.1287/mnsc.37.5.519
+   Kopa M, 2014, EMERG MARK FINANC TR, V50, P226, DOI 10.2753/REE1540-496X500113
+   LEVY H, 1992, MANAGE SCI, V38, P555, DOI 10.1287/mnsc.38.4.555
+   MARKOWITZ H., 1959, PORTFOLIO SELECTION
+   Ogryczak W, 2002, SIAM J OPTIMIZ, V13, P60, DOI 10.1137/S1052623400375075
+   Ogryczak W, 1999, EUR J OPER RES, V116, P33, DOI 10.1016/S0377-2217(98)00167-2
+   Ogryczak W, 2001, MATH PROGRAM, V89, P217, DOI 10.1007/PL00011396
+   ORTOBELLI S., 2009, APPL MATH FINANCE, V16, P81
+   Ortobelli S., 2011, CENTRAL EUROPEAN REV, V14, P257
+   Ortobelli S, 2005, INT J THEOR APPL FIN, V8, P1107, DOI 10.1142/S0219024905003402
+   Peters O, 2011, QUANT FINANC, V11, P1593, DOI 10.1080/14697688.2010.513338
+   Petronio F., 2014, CENTRAL EUROPEAN REV, V17, P5
+   Rachev S., 2000, STABLE MODEL FINANCE
+   Rachev S, 2008, INT J THEOR APPL FIN, V11, P19, DOI 10.1142/S0219024908004713
+   Rockafellar RT, 2006, FINANC STOCH, V10, P51, DOI 10.1007/s00780-005-0165-8
+   ROTHSCHILD M, 1970, J ECON THEORY, V2, P225, DOI 10.1016/0022-0531(70)90038-4
+   Shaked M., 1993, STOCHASTIC ORDERS TH
+   Speranza M. G., 1993, FINANCE, V14, P107
+   Zenios S. A., 1993, Annals of Operations Research, V45, P433, DOI 10.1007/BF02282062
+NR 24
+TC 4
+Z9 4
+U1 0
+U2 4
+PU UNIV ECONOMICS-PRAGUE
+PI PRAGUE 3
+PA OECONOMICA PUBL, NAM W CHIRCHILLA 4, PRAGUE 3, CZ-130 67, CZECH REPUBLIC
+SN 1210-0455
+J9 PRAGUE ECON PAP
+JI Prague Econ. Pap.
+PD FEB
+PY 2015
+VL 24
+IS 1
+BP 3
+EP 16
+DI 10.18267/j.pep.497
+PG 14
+WC Economics
+SC Business & Economics
+GA CD9JX
+UT WOS:000351415700001
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Khoruzhyi, D
+AF Khoruzhyi, D.
+TI STABILITY OF THE BANKING SYSTEM OF UKRAINE IN THE CONTEXT OF INTERNAL
+   AND EXTERNAL CHALLENGES
+SO FINANCIAL AND CREDIT ACTIVITY-PROBLEMS OF THEORY AND PRACTICE
+LA Russian
+DT Article
+DE crisis in the banking system; the stability of the banking system;
+   internal and external threats to the stability of the banking system of
+   Ukraine
+AB The article explores the key threats to the domestic banking system and their possible implications in the context of loss of stability of banks. The basic sources of problems and possible measures to neutralize them are subject to the article.
+   The level of the capital stability analysis of the loan portfolio quality and risk assessment of insolvency of domestic banks is subject to the article. The study found that the key problems of the banking system of Ukraine are its insufficient resource base, the outflow of deposits and the loan portfolio deterioration that occurs on a background of multiple, mainly internal risks. It is depicted that the level of capitalization of banks fell, though not reached the critical threshold, indicating there is still certain reserve left.
+   Having analyzed the liquidity and capitalization levels, it was concluded that there are sufficient funds to make payments to depositors in case banks fail to do so. It was concluded that at the moment the level of the coverage of deposits of individuals is more than two times higher than during the crisis of 2008-2009. This still indicates an extremely high risk of new bank insolvency in Ukraine, especially in the context of the systemic risk.
+C1 [Khoruzhyi, D.] Univ Banking NBU, Finance & Loans, Kiev, Ukraine.
+RP Khoruzhyi, D (reprint author), Univ Banking NBU, Finance & Loans, Kiev, Ukraine.
+CR [Anonymous], 2001, DYNAMICS DGF FUNDS
+   Baranowskyi O. I., 2009, FINANCIAL CRISIS BAC
+   Pshyk B. I., 2011, FINANCIAL CREDIT REL
+NR 3
+TC 0
+Z9 0
+U1 0
+U2 0
+PU NATL BANK UKRAINE, UNIV BANKING, KHARKIV INST BANKING
+PI KHARKIV
+PA PR-KT PEREMOHY, 55, KHARKIV, 61174, UKRAINE
+SN 2306-4994
+EI 2310-8770
+J9 FINANC CREDIT ACT
+JI Financ. Credit Act.
+PY 2015
+VL 1
+IS 18
+BP 44
+EP 51
+DI 10.18371/fcaptp.v1i18.46100
+PG 8
+WC Business, Finance
+SC Business & Economics
+GA V7E6N
+UT WOS:000420890400006
+OA Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Peralta, G
+AF Peralta, Gustavo
+TI Network-based measures as leading indicators of market instability: the
+   case of the Spanish stock market
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE network theory; stock markets; systemic risk indicators; leading
+   indicators
+ID COVARIANCE-MATRIX; VARIANCE; CONNECTEDNESS; INVERSE
+AB This paper studies the undirected partial-correlation stock network for the Spanish market that considers the constituents of IBEX-35 as nodes and their partial correlations of returns as links. I propose a novel methodology that combines a recently developed variable selection method, graphical lasso, with Monte Carlo simulations as fundamental ingredients for the estimation recipe. Three major results come from this study. First, in topological terms, the network shows features that are not consistent with random arrangements and it also presents a high level of stability over time. International comparison between major European stock markets extends that conclusion beyond the Spanish context. Second, the systemic importance of the banking sector, relative to the other sectors in the economy, is quantitatively uncovered by means of its network centrality. Particularly interesting is the case of the two major banks that occupy the places of the most systemic players. Finally, the empirical evidence indicates that some network-based measures are leading indicators of distress for the Spanish stock market.
+C1 [Peralta, Gustavo] CNMV, Dept Res & Stat, Madrid, Spain.
+   [Peralta, Gustavo] Univ Carlos III Madrid, Dept Business Adm, Getafe 28006, Spain.
+RP Peralta, G (reprint author), CNMV, Dept Res & Stat, Madrid, Spain.
+EM gperalta@cnmv.es
+CR Barigozzi Matteo, 2014, WORKING PAPER
+   Berg A., 2004, 4 IMF, P1
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BOLLERSLEV T, 1987, REV ECON STAT, V69, P542, DOI 10.2307/1925546
+   Bonanno G., 2001, Quantitative Finance, V1, P96, DOI 10.1088/1469-7688/1/1/306
+   Brown CJ, 2014, SONG OF MY LIFE: A BIOGRAPHY OF MARGARET WALKER, P1
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Friedman J, 2008, BIOSTATISTICS, V9, P432, DOI 10.1093/biostatistics/kxm045
+   Garas A, 2007, PHYSICA A, V380, P399, DOI 10.1016/j.physa.2007.02.097
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   HAMILTON JD, 1994, J ECONOMETRICS, V64, P307, DOI 10.1016/0304-4076(94)90067-1
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Huang WQ, 2009, PHYSICA A, V388, P2956, DOI 10.1016/j.physa.2009.03.028
+   Jackson M. O., 2014, J ECON PERSPECT, P1
+   Jung WS, 2006, PHYSICA A, V361, P263, DOI 10.1016/j.physa.2005.06.081
+   Kenett DY, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0015032
+   Ledoit O, 2004, J PORTFOLIO MANAGE, V30, P110, DOI 10.3905/jpm.2004.110
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Newman MEJ, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.036122
+   Newman MEJ, 2003, SIAM REV, V45, P167, DOI 10.1137/S003614450342480
+   Onnela JP, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.056110
+   Onnela JP, 2003, PHYS SCRIPTA, VT106, P48, DOI 10.1238/Physica.Topical.106a00048
+   Stevens GVG, 1998, J FINANC, V53, P1821, DOI 10.1111/0022-1082.00074
+   Tumminello M, 2005, P NATL ACAD SCI USA, V102, P10421, DOI 10.1073/pnas.0500298102
+   Tumminello M, 2010, J ECON BEHAV ORGAN, V75, P40, DOI 10.1016/j.jebo.2010.01.004
+   Vandewalle N., 2001, Quantitative Finance, V1, P372, DOI 10.1088/1469-7688/1/3/308
+   Whittaker J. W., 1990, GRAPHICAL MODELS APP
+NR 28
+TC 4
+Z9 4
+U1 0
+U2 0
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD SEP
+PY 2015
+VL 1
+IS 3
+BP 91
+EP 122
+PG 32
+WC Business, Finance
+SC Business & Economics
+GA V3S6M
+UT WOS:000218550300003
+DA 2019-12-28
+ER

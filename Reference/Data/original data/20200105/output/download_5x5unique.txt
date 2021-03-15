@@ -1,0 +1,424 @@
+
+PT J
+AU Bernardi, M
+   Stolfi, P
+AF Bernardi, Mauro
+   Stolfi, Paola
+TI A dominance test for measuring financial connectedness
+SO EUROPEAN JOURNAL OF FINANCE
+LA English
+DT Article; Early Access
+DE Financial connectedness; skew elliptical distributions; sparse
+   multivariate methods; method of simulated quantiles; elliptically
+   contoured distributions
+ID SYSTEMIC RISK; CAPITAL SHORTFALL; QUANTILES; MOMENTS; COVAR
+AB This paper introduces a dominance test that allows to determine whether or not a financial institution can be classified as being more systemically important than another in a multivariate framework. The dominance test relies on a new risk measure, the NetCoVaR that is specifically tailored to capture the joint extreme co-movements between institutions belonging to a network. The asymptotic theory for the statistical test is provided under mild regularity conditions concerning the joint distribution of asset returns which is assumed to be elliptically contoured. The proposed risk measure and risk measurement framework is used to analyse the US financial system during the recent Global Financial Crises. In the empirical analysis, the returns are assumed to be Elliptically Stable distributed and the estimation is carried out through the Sparse Multivariate Method of Simulated Quantiles, handling both the lack of an analytic expression for the probability density function and the potential high-dimensionality of the problem.
+C1 [Bernardi, Mauro] Univ Padua, Dept Stat, Padua, Italy.
+   [Stolfi, Paola] Natl Res Council Italy, Inst Appl Math Mauro Picone, Rome, Italy.
+RP Bernardi, M (reprint author), Univ Padua, Dept Stat, Padua, Italy.
+EM mauro.bernardi@unipd.it
+CR Abdul-Hamid H, 1998, J MULTIVARIATE ANAL, V67, P80, DOI 10.1006/jmva.1998.1755
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Appello D, 2018, J ELECTRON TEST, V34, P43, DOI 10.1007/s10836-018-5705-1
+   Azzalini A., 2013, SKEW NORMAL RELATED
+   Azzalini A., 1986, STATISTICA, V12, P199, DOI DOI 10.6092/ISSN.1973-2201/711
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Bernardi M, 2017, STAT PROBABIL LETT, V120, P8, DOI 10.1016/j.spl.2016.09.005
+   Bernardi M., 2017, ARXIV E PRINTS
+   Bernardi M., 2016, SERRA UNPUB
+   Bernardi M., 2016, ARXIV160802365
+   Bernardi M., 2017, STOCH ENV RES RISK A, V32, P1
+   Bernardi M, 2017, J EMPIR FINANC, V43, P1, DOI 10.1016/j.jempfin.2017.04.005
+   Bernardi M, 2015, J RISK FINANC MANAG, V8, P198, DOI 10.3390/jrfm8020198
+   Bernardi M, 2015, BAYESIAN ANAL, V10, P553, DOI 10.1214/14-BA911
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Bradley BO, 2003, HANDBOOKS FINANCE, P35, DOI 10.1016/B978-044450896-6.50004-2
+   Branco MD, 2001, J MULTIVARIATE ANAL, V79, P99, DOI 10.1006/jmva.2000.1960
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   BYCZKOWSKI T, 1993, J MULTIVARIATE ANAL, V46, P13, DOI 10.1006/jmva.1993.1044
+   Caporin M., 2013, TECHNICAL REPORT
+   Castro C, 2014, J EMPIR FINANC, V25, P1, DOI 10.1016/j.jempfin.2013.10.009
+   Chao S.-K., 2015, QUANTILE REGRESSION, P1467
+   Cousin A, 2013, J MULTIVARIATE ANAL, V119, P32, DOI 10.1016/j.jmva.2013.03.016
+   Di Bernardino E, 2016, ENVIRONMETRICS, V27, P158, DOI 10.1002/env.2385
+   Di Bernardino E, 2015, INSUR MATH ECON, V61, P1, DOI 10.1016/j.insmatheco.2014.11.006
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Fan JQ, 2001, J AM STAT ASSOC, V96, P1348, DOI 10.1198/016214501753382273
+   Fang K. T, 1990, MONOGRAPHS STAT APPL, V36
+   Friedman J, 2008, BIOSTATISTICS, V9, P432, DOI 10.1093/biostatistics/kxm045
+   Gallant AR, 1996, ECONOMET THEOR, V12, P657, DOI 10.1017/S0266466600006976
+   Genton MG, 2004, SKEW ELLIPTICAL DIST
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Gomez E, 1998, COMMUN STAT-THEOR M, V27, P589, DOI 10.1080/03610929808832115
+   GOURIEROUX C, 1993, J APPL ECONOM, V8, pS85, DOI 10.1002/jae.3950080507
+   Gupta A., 2013, ELLIPTICALLY CONTOUR
+   Hallin M, 2010, ANN STAT, V38, P694, DOI 10.1214/09-AOS723REJ
+   HANSEN LP, 1982, ECONOMETRICA, V50, P1029, DOI 10.2307/1912775
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Jondeau E, 2007, SPRINGER FINANC, P3
+   Jorion F., 2006, VALUE RISK NEW BENCH
+   Kong LL, 2012, STAT SINICA, V22, P1589, DOI 10.5705/ss.2010.224
+   Kotz S., 2001, LAPLACE DISTRIBUTION
+   Lucas A, 2014, J BUS ECON STAT, V32, P271, DOI 10.1080/07350015.2013.873540
+   Mainik G, 2014, STATIST RISK MODEL, V31, P49, DOI 10.1515/strm-2013-1164
+   Matsui M, 2009, J MULTIVARIATE ANAL, V100, P334, DOI 10.1016/j.jmva.2008.05.007
+   McNeil AJ., 2015, PRINCETON SERIES FIN
+   McNeil AJ, 2005, PRINC SER FINANC, P1
+   Mittnik S, 1998, PRACTICAL GUIDE TO HEAVY TAILS, P79
+   Nolan JP, 2013, COMPUTATION STAT, V28, P2067, DOI 10.1007/s00180-013-0396-7
+   Salvadori G, 2016, WATER RESOUR RES, V52, P3701, DOI 10.1002/2015WR017225
+   Samorodnitsky G., 1994, STABLE NONGAUSSIAN R
+   Serfling R, 2002, STAT NEERL, V56, P214, DOI 10.1111/1467-9574.00195
+   Sordo MA, 2015, INSUR MATH ECON, V61, P62, DOI 10.1016/j.insmatheco.2014.11.008
+NR 57
+TC 0
+Z9 0
+U1 4
+U2 4
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1351-847X
+EI 1466-4364
+J9 EUR J FINANC
+JI Eur. J. Financ.
+DI 10.1080/1351847X.2019.1620819
+EA MAY 2019
+PG 23
+WC Business, Finance
+SC Business & Economics
+GA ID1HC
+UT WOS:000471431200001
+DA 2019-12-28
+ER
+
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Ehrmann, M
+   Schure, P
+AF Ehrmann, Michael
+   Schure, Paul
+TI The European Systemic Risk Board - governance and early experience
+SO JOURNAL OF ECONOMIC POLICY REFORM
+LA English
+DT Article; Early Access
+DE European Systemic Risk Board; macroprudential policy; systemic risk
+   management; financial governance; foreign-currency lending
+ID MONETARY-POLICY; SUPERVISION
+AB The European Systemic Risk Board is charged with the macroprudential oversight of the financial system in the European Union. We compare and contrast the ESRB with the U.S. National Transportation Safety Board, which some scholars proposed as a role model for systemic risk management. There are parallels and some differences between these organisations. Neither institution has direct regulatory power, which could paradoxically be beneficial as it may help preserve their independence and objectivity in the long run. We also review the ESRB's activities after it started in 2010 and assess the effect of its first public recommendation.
+C1 [Ehrmann, Michael] European Cent Bank, D-60640 Frankfurt, Germany.
+   [Schure, Paul] Univ Victoria, Dept Econ, POB 1700, Victoria, BC V8W 2Y2, Canada.
+RP Ehrmann, M (reprint author), European Cent Bank, D-60640 Frankfurt, Germany.
+EM michael.ehrmann@ecb.europa.eu; schure@uvic.ca
+FU Social Sciences and Humanities Research Council of CanadaSocial Sciences
+   and Humanities Research Council of Canada (SSHRC) [611-2016-0153]
+FX Ehrmann: European Central Bank,michael.ehrmann@ecb.europa.eu; Schure:
+   University of Victoria, schure@uvic.ca.This paper presents the authors'
+   personal opinions and does not necessarily reflect the views of the
+   European Central Bank or the Eurosystem. We thank Thibault Cezanne for
+   help with the data, and four anonymous referees, the editors, Frank
+   Dierick, Tuomas Peltonen as well as participants at the SSHRC-supported
+   the workshop "New Institutions in Response to Euro Area Crisis"
+   (University of Victoria) and the 53rd Annual Meeting of the Canadian
+   Economics Association for helpful comments. We thank the Social Sciences
+   and Humanities Research Council of Canada (Grant number 611-2016-0153)
+   for making the workshop at UVic possible. All errors are ours.
+CR Acharya V., 2014, MACROPRUDENTIALISM
+   Alam Z., 2019, 1966 IMF, DOI [10.5089/9781498302708.001, DOI 10.5089/9781498302708.001]
+   [Anonymous], 2016, NAGTRI J, V1, P4
+   Benoit S, 2019, J FINANC INTERMED, V38, P19, DOI 10.1016/j.jfi.2018.05.004
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Blinder A, 2017, ECON POLICY, V32, P707, DOI 10.1093/epolic/eix013
+   Borio C., 2009, BANQUE FRANCE FINANC, V13, P31
+   Born B, 2012, INT FINANC, V15, P179, DOI 10.1111/j.1468-2362.2012.01301.x
+   Cerutti E, 2017, J FINANC STABIL, V28, P203, DOI 10.1016/j.jfs.2015.10.004
+   D'Erman V. J. P. Schure and A. C. Verdun, 2020, J EC POLICY REFORM, V23
+   De Grauwe P., 2009, 2818 CESIFO
+   de Haan J, 2012, Z FUER OEFFENTLICHES, V67, P283
+   De Larosiere Report, 2009, REP HIGH LEV GROUP F
+   Edge R. M., 2019, 50 HUTCH CTR
+   ESRB, 2011, OFFICIAL J EUROPEAN, P1
+   ESRB, 2018, ESRB ANN REP 2017
+   ESRB, 2017, ESRB RISK DASHB
+   ESRB, 2016, MACR POL BANK ESRB S
+   ESRB, 2013, ESRB20111
+   European Commission, 2016, REV EU MACR FRAM EUR
+   Evanoff D. D., 2012, NEW PERSPECTIVES ASS
+   Fielding E., 2011, J INVEST MANAGE, V9, P17
+   GOODHART C, 1995, OXFORD ECON PAP, V47, P539, DOI 10.1093/oxfordjournals.oep.a042187
+   House of Commons Treasury Committee, 2009, 16 REP SESS 2008 09
+   International Monetary Fund, 2014, STAFF GUID NOT MACR
+   Jenkins P., 2015, SECURING MONETARY FI
+   JENSEN MC, 1986, AM ECON REV, V76, P323
+   Kapoor S., 2010, EMERGENT GLOBAL CHAL
+   Olson Mancur, 1971, LOGIC COLLECTIVE ACT
+   Portes R., 2014, MACROPRUDENTIALISM, P47
+   Sapir A., 2014, MACROPRUDENTIALISM, P161
+NR 31
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1748-7870
+EI 1748-7889
+J9 J ECON POLICY REFORM
+JI J. Econ. Policy Reform.
+DI 10.1080/17487870.2019.1683011
+EA DEC 2019
+PG 19
+WC Development Studies; Economics
+SC Development Studies; Business & Economics
+GA JU9EV
+UT WOS:000501971900001
+DA 2019-12-28
+ER
+
+PT J
+AU Capponi, A
+   Cheng, WA
+   Rajan, S
+AF Capponi, Agostino
+   Cheng, W. Allen
+   Rajan, Sriram
+TI Firm capital dynamics in centrally cleared markets
+SO MATHEMATICAL FINANCE
+LA English
+DT Article; Early Access
+ID SYSTEMIC RISK
+AB We develop a tractable continuous time model of multifirm capital dynamics in a centrally cleared market. Our framework jointly models the strategic interactions between business operations of firms and their trading activities. We show that the endogenous allocation of firm capital between trading and operations can be recovered as the unique fixed point of a system of quadratic equations. Our model predicts that (a) there exists a convex relationship between equilibrium margins and firm capital in the cross-section, (b) market collateral demand is positively correlated with size concentration, and (c) size concentration is expected to increase over time. Using proprietary data on bilateral credit default swap exposures, we provide evidence that the convexity prediction is both economically and statistically significant and validate our model assumption that firms hedge excess risks.
+C1 [Capponi, Agostino; Cheng, W. Allen] Columbia Univ, Dept Ind Engn & Operat Res, New York, NY 10027 USA.
+   [Rajan, Sriram] Dept Treasury, Off Financial Res, Washington, DC USA.
+RP Capponi, A (reprint author), Columbia Univ, Dept Ind Engn & Operat Res, New York, NY 10027 USA.
+EM ac3827@columbia.edu
+CR Acharya V. V., 2016, END MARKET DISCIPLIN
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2004, J MONEY CREDIT BANK, V36, P453, DOI 10.1353/mcb.2004.0038
+   Amini H., 2015, 1334 SWISS FIN I
+   Bo LJ, 2015, SIAM J FINANC MATH, V6, P386, DOI 10.1137/130937664
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Capponi A., 2017, WORKING PAPER
+   Carmona R, 2015, COMMUN MATH SCI, V13, P911, DOI 10.4310/CMS.2015.v13.n4.a4
+   Cetorelli N., 2014, EC POLICY REV, V20, P85
+   CME Group, 2010, CME SPAN STAND PORTF
+   Duffie D, 2015, J FINANC ECON, V116, P237, DOI 10.1016/j.jfineco.2014.12.006
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Fouque JP, 2013, SIAM J FINANC MATH, V4, P784, DOI 10.1137/110841096
+   FROOT KA, 1993, J FINANC, V48, P1629, DOI 10.2307/2329062
+   Geanakoplos J., 1996, COWLES FDN DISCUSSIO, V1143
+   Glasserman P, 2016, OPER RES, V64, P1143, DOI 10.1287/opre.2015.1420
+   HAYASHI F, 1982, ECONOMETRICA, V50, P213, DOI 10.2307/1912538
+   Hellmann TF, 2000, AM ECON REV, V90, P147, DOI 10.1257/aer.90.1.147
+   Junge B., 2014, 1365 SWISS FIN I
+   Karatzas I, 2012, BROWNIAN MOTION STOC, V113
+   Menkveld A. J., 2016, SYSTEMIC RISK CENTRA
+   Menkveld AJ, 2017, REV ASSET PRICING ST, V7, P209, DOI 10.1093/rapstu/rax016
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Murphy D., 2014, 29 BANK ENGL
+   OHARA M, 1990, J FINANC, V45, P1587, DOI 10.2307/2328751
+   Pirrong C., 2011, EC CENTRAL CLEARING
+NR 27
+TC 0
+Z9 0
+U1 0
+U2 0
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0960-1627
+EI 1467-9965
+J9 MATH FINANC
+JI Math. Financ.
+DI 10.1111/mafi.12236
+EA NOV 2019
+PG 38
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA JK2VB
+UT WOS:000494703500001
+DA 2019-12-28
+ER
+
+PT J
+AU Ciola, E
+AF Ciola, Emanuele
+TI Financial sector bargaining power, aggregate growth and systemic risk
+SO JOURNAL OF ECONOMIC INTERACTION AND COORDINATION
+LA English
+DT Article; Early Access
+DE Financial development; Entrepreneurship; Firm financing; Growth;
+   Systemic risk
+ID INTERMEDIATION; MARKETS; BANKS; TOO
+AB Recent decades have seen a substantial increase in the size and influence of the financial industry in advanced economies. Mainstream theory states that the financial sector can increase the efficiency and stability of the real economy by reducing informational asymmetries and transaction costs. Nevertheless, the rise of the financial industry has been accompanied by lower aggregate growth, increased inequality and declining financial stability. With this in mind, the main aim of the present article is to provide a different perspective on the rise of finance in developed countries, by focusing on the impact of financial markets on aggregate growth and economic (in)stability. Specifically, we analyse the role of the bargaining power of financial intermediaries in promoting (or reducing) the entrance of new enterprises in the market and find that the financial sector is essential for the good functioning of the real economy, but that an overdeveloped financial industry can reduce the incentive for new firms to start production, resulting in a negative impact on aggregate growth and economic stability.
+C1 [Ciola, Emanuele] Univ Politecn Marche, Dept Econ & Social Sci, Piazzale Martelli 8, I-60121 Ancona, Italy.
+   [Ciola, Emanuele] Univ Jaume 1, Econ Dept, Campus Riu Sec, Castellon De La Plana 12071, Spain.
+RP Ciola, E (reprint author), Univ Politecn Marche, Dept Econ & Social Sci, Piazzale Martelli 8, I-60121 Ancona, Italy.; Ciola, E (reprint author), Univ Jaume 1, Econ Dept, Campus Riu Sec, Castellon De La Plana 12071, Spain.
+EM e.ciola@pm.univpm.it
+CR Acemoglu D, 2003, J MONETARY ECON, V50, P49, DOI 10.1016/S0304-3932(02)00208-8
+   AGHION P, 1992, ECONOMETRICA, V60, P323, DOI 10.2307/2951599
+   Arcand JL, 2015, J ECON GROWTH, V20, P105, DOI 10.1007/s10887-015-9115-2
+   Arrow KJ, 1954, ECONOMETRICA, V22, P265, DOI 10.2307/1907353
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Beck T, 2004, J BANK FINANC, V28, P423, DOI 10.1016/S0378-4266(02)00408-9
+   Beck T, 2000, J FINANC ECON, V58, P261, DOI 10.1016/S0304-405X(00)00072-6
+   Beck T, 2014, J FINANC STABIL, V10, P50, DOI 10.1016/j.jfs.2013.03.005
+   Berardi S, 2017, INT REV ECON FINANC, V47, P255, DOI 10.1016/j.iref.2016.11.001
+   BERNANKE B, 1989, AM ECON REV, V79, P14
+   Brunnermeier MK, 2012, TECHNICAL REPORT
+   Cecchetti S. G., 2015, BIS WORKING PAPERS, V490
+   Cecchetti S. G., 2012, BIS WORKING PAPERS, V381
+   Christiano L, 2011, TECHNICAL REPORT
+   Dabla-Norris E, 2013, IMF WORKING PAPERS, V13/29
+   Davis LE, 2017, J ECON SURV, V31, P1332, DOI 10.1111/joes.12242
+   Easterly W, 2000, ANN WB CONF DEV ECON, P191
+   Epstein G, 2015, FINANCIALIZATION THE
+   GREENWALD BC, 1993, Q J ECON, V108, P77, DOI 10.2307/2118496
+   Greenwood R, 2013, J ECON PERSPECT, V27, P3, DOI 10.1257/jep.27.2.3
+   Grilli R, 2015, J ECON INTERACT COOR, V10, P287, DOI 10.1007/s11403-014-0129-1
+   GROSSMAN GM, 1991, EUR ECON REV, V35, P517, DOI 10.1016/0014-2921(91)90153-A
+   Iyigun Murat, 2002, CONTRIBUTIONS MACROE, V2, P1
+   Jorda O, 2017, NBER MACROECON ANNU, V31, P213, DOI 10.1086/690241
+   KING RG, 1993, Q J ECON, V108, P717, DOI 10.2307/2118406
+   KING RG, 1993, J MONETARY ECON, V32, P513, DOI 10.1016/0304-3932(93)90028-E
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Law SH, 2014, J BANK FINANC, V41, P36, DOI 10.1016/j.jbankfin.2013.12.020
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Levine R, 2005, HANDB ECON, V22, P865
+   Levine R, 1997, J ECON LIT, V35, P688
+   Levine R, 2000, J MONETARY ECON, V46, P31, DOI 10.1016/S0304-3932(00)00017-9
+   Orhangazi O, 2008, NEW DIR MOD ECON, P1
+   Palley TI, 2013, FINANCIALIZATION: THE ECONOMICS OF FINANCE CAPITAL DOMINATION, P17
+   Philippon T, 2015, AM ECON REV, V105, P1408, DOI 10.1257/aer.20120578
+   Piketty T, 2003, Q J ECON, V118, P1, DOI 10.1162/00335530360535135
+   Pissarides C., 2000, EQUILIBRIUM UNEMPLOY
+   Raddatz C, 2006, J FINANC ECON, V80, P677, DOI 10.1016/j.jfineco.2005.03.012
+   Rajan RG, 1998, AM ECON REV, V88, P559
+   Rioja F, 2004, J DEV ECON, V74, P429, DOI 10.1016/j.jdeveco.2003.06.006
+   ROMER PM, 1990, J POLIT ECON, V98, pS71, DOI 10.1086/261725
+   Sawyer M, 2013, INT J POLIT ECON, V42, P5, DOI 10.2753/IJP0891-1916420401
+   SHARPE WF, 1966, J BUS, V39, P119, DOI 10.1086/294846
+   Shen CH, 2006, J MONEY CREDIT BANK, V38, P1907, DOI 10.1353/mcb.2006.0095
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Stiglitz JE, 2017, POLIT Q, V86, P134, DOI [10.1111/1467-923X.12237, DOI 10.1111/1467-923X.12237]
+NR 46
+TC 0
+Z9 0
+U1 6
+U2 6
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1860-711X
+EI 1860-7128
+J9 J ECON INTERACT COOR
+JI J. Econ. Interact. Coord.
+DI 10.1007/s11403-019-00270-5
+EA OCT 2019
+PG 21
+WC Economics
+SC Business & Economics
+GA JG8HL
+UT WOS:000492318900001
+DA 2019-12-28
+ER
+
+PT J
+AU Huang, MC
+AF Huang, MeiChi
+TI New sources of housing market risk: Asset pricing for the US state-level
+   housing markets
+SO INTERNATIONAL FINANCE
+LA English
+DT Article; Early Access
+ID IDIOSYNCRATIC RISK; PRICES; RETURNS; MODEL; VOLATILITIES; FORECLOSURES;
+   LIQUIDITY; BUBBLE; CREDIT
+AB This study develops three novel housing risk factors to explore the sources of risk in US state-level housing markets. The asset-pricing models enrich our investigations into housing markets from three perspectives: housing boom-bust, volatile-calm, and factors' time-varying impact regimes. The findings indicate that state-level housing returns all show significant exposure to systemic risk of housing markets, but the demographic and economic factors' explanatory powers for housing returns differ across markets. Although the liquidity factor is significant under all three frameworks, the inventory and credit factors show significant impacts only in the impact-switching specification. There are differences in the responses of housing returns to various risk factors and shifts in housing regimes across state housing markets, depending on whether the states exhibited housing bubbles. The results suggest that an effective housing stabilization mechanism must be capable of tracking shifts in the relations between housing markets and risk factors.
+C1 [Huang, MeiChi] Natl Taipei Univ, Dept Business Adm, 151 Univ Rd, New Taipei 23741, Taiwan.
+RP Huang, MC (reprint author), Natl Taipei Univ, Dept Business Adm, 151 Univ Rd, New Taipei 23741, Taiwan.
+EM meichihuang@mail.ntpu.edu.tw
+OI Huang, MeiChi/0000-0002-7951-4842
+FU Ministry of Science and Technology, TaiwanMinistry of Science and
+   Technology, Taiwan [MOST 105-2410-H-305-050-MY2]
+FX Ministry of Science and Technology, Taiwan, Grant/Award Number: MOST
+   105-2410-H-305-050-MY2
+CR Abugri BA, 2014, INT REV ECON FINANC, V29, P249, DOI 10.1016/j.iref.2013.05.019
+   Baltagi BH, 2014, J APPL ECONOMET, V29, P515, DOI 10.1002/jae.2372
+   Beracha E, 2013, J REAL ESTATE FINANC, V47, P289, DOI 10.1007/s11146-011-9360-x
+   Breidenbach M., 2006, J REAL ESTATE PORTFO, V12, P73
+   Calomiris CW, 2013, REAL ESTATE ECON, V41, P709, DOI 10.1111/reec.12011
+   Case KE, 2003, BROOKINGS PAP ECO AC, P299
+   Chang KL, 2011, J REAL ESTATE FINANC, V43, P221, DOI 10.1007/s11146-010-9241-8
+   Chen CWS, 2012, COMPUT ECON, V40, P19, DOI 10.1007/s10614-011-9266-y
+   Clark SP, 2011, Q REV ECON FINANC, V51, P189, DOI 10.1016/j.qref.2010.12.001
+   Clark SP, 2009, J REAL ESTATE FINANC, V39, P264, DOI 10.1007/s11146-009-9183-1
+   Clayton J, 2010, J REAL ESTATE FINANC, V40, P14, DOI 10.1007/s11146-008-9128-0
+   Costello G, 2011, J BANK FINANC, V35, P653, DOI 10.1016/j.jbankfin.2010.07.035
+   Crawford GW, 2003, REAL ESTATE ECON, V31, P223, DOI 10.1111/1540-6229.00064
+   Das PK, 2015, J REAL ESTATE FINANC, V51, P160, DOI 10.1007/s11146-014-9490-z
+   Del Negro M, 2007, J MONETARY ECON, V54, P1962, DOI 10.1016/j.jmoneco.2006.11.003
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   Fama EF, 2015, J FINANC ECON, V116, P1, DOI 10.1016/j.jfineco.2014.10.010
+   Gallin J, 2006, REAL ESTATE ECON, V34, P417, DOI 10.1111/j.1540-6229.2006.00172.x
+   Glascock JL, 2015, J REAL ESTATE FINANC, V51, P441, DOI 10.1007/s11146-015-9495-2
+   Goodman AC, 2008, J HOUS ECON, V17, P117, DOI 10.1016/j.jhe.2007.12.001
+   Gulen H, 2011, FINANC MANAGE, V40, P381, DOI 10.1111/j.1755-053X.2011.01146.x
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   Harding JP, 2009, J URBAN ECON, V66, P164, DOI 10.1016/j.jue.2009.07.003
+   Hartley D, 2014, REG SCI URBAN ECON, V49, P108, DOI 10.1016/j.regsciurbeco.2014.09.001
+   Head A, 2014, AM ECON REV, V104, P1172, DOI 10.1257/aer.104.4.1172
+   Ho DKH, 2015, J REAL ESTATE FINANC, V51, P52, DOI 10.1007/s11146-014-9474-z
+   Holly S, 2010, J ECONOMETRICS, V158, P160, DOI 10.1016/j.jeconom.2010.03.040
+   Huang M. C., 2015, J EC FINANCE, V39, P762
+   Huang MC, 2018, INT REV ECON FINANC, V55, P145, DOI 10.1016/j.iref.2018.02.001
+   Hung SYK, 2010, J REAL ESTATE FINANC, V41, P126, DOI 10.1007/s11146-008-9165-8
+   Kilian L, 2014, J APPL ECONOMET, V29, P454, DOI 10.1002/jae.2322
+   KIM CJ, 1994, J ECONOMETRICS, V60, P1, DOI 10.1016/0304-4076(94)90036-1
+   Kim CJ, 1999, STATE SPACE MODELS R
+   Leamer E. E., 2007, 13428 NBER
+   Lin ZG, 2009, J REAL ESTATE FINANC, V38, P387, DOI 10.1007/s11146-007-9093-z
+   Mian A, 2009, Q J ECON, V124, P1449, DOI 10.1162/qjec.2009.124.4.1449
+   Miao H, 2011, REAL ESTATE ECON, V39, P701, DOI 10.1111/j.1540-6229.2010.00303.x
+   Mikhed V, 2009, J HOUS ECON, V18, P140, DOI 10.1016/j.jhe.2009.03.001
+   Najand M, 2006, J REAL ESTATE PORTFO, V12, P167
+   Ooi JTL, 2009, J REAL ESTATE FINANC, V38, P420, DOI 10.1007/s11146-007-9091-1
+   Ozoguz A, 2009, REV FINANC STUD, V22, P4377, DOI 10.1093/rfs/hhn097
+   Pai A, 2007, J PORTFOLIO MANAGE, P134
+   Pavlov A, 2015, REAL ESTATE ECON, V43, P241, DOI 10.1111/1540-6229.12084
+   Pavlov A, 2011, REAL ESTATE ECON, V39, P1, DOI 10.1111/j.1540-6229.2010.00284.x
+   Rapach DE, 2009, INT J FORECASTING, V25, P351, DOI 10.1016/j.ijforecast.2009.01.009
+   Ro S, 2011, J REAL ESTATE FINANC, V42, P68, DOI 10.1007/s11146-009-9189-8
+   Roche MJ, 2001, ECON MODEL, V18, P281, DOI 10.1016/S0264-9993(00)00040-7
+   Wong SK, 2012, J REAL ESTATE FINANC, V45, P49, DOI 10.1007/s11146-011-9326-z
+   Woodward G, 2009, QUANT FINANC, V9, P913, DOI 10.1080/14697680802595643
+   Zhu B, 2013, REAL ESTATE ECON, V41, P29, DOI 10.1111/j.1540-6229.2012.00337.x
+NR 50
+TC 0
+Z9 0
+U1 1
+U2 1
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1367-0271
+EI 1468-2362
+J9 INT FINANC
+JI Int. Financ.
+DI 10.1111/infi.12356
+EA JUL 2019
+PG 40
+WC Business, Finance; Economics
+SC Business & Economics
+GA IM8XT
+UT WOS:000478271500001
+DA 2019-12-28
+ER

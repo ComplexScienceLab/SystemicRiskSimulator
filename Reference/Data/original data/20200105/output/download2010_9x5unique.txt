@@ -1,0 +1,322 @@
+
+PT J
+AU Ghosh, S
+   Skibniewski, MJ
+AF Ghosh, Saumyendu
+   Skibniewski, Miroslaw J.
+TI ENTERPRISE RESOURCE PLANNING SYSTEMS IMPLEMENTATION AS A COMPLEX
+   PROJECT: A CONCEPTUAL FRAMEWORK
+SO JOURNAL OF BUSINESS ECONOMICS AND MANAGEMENT
+LA English
+DT Article
+DE complex projects; ERP; project governance; conceptual framework;
+   critical success factors
+ID TECHNOLOGY ACCEPTANCE MODEL; ERP PROJECT; SUCCESS FACTORS; INFORMATION;
+   PERSPECTIVE; MANAGEMENT; PERFORMANCE
+AB The purpose of this paper is to investigate current literature on critical success factors (CSF) and risk factors (RF) of enterprise resource planning (ERP) system implementation and provide a systemic explanation of complexities involved in such implementation. This study will compile literature that highlighted possible references to CSFs of ERP implementations, definition of complex projects and ERP are compared with project management and project governance impacts. By analyzing highly likely CFS and RFs mentioned in literature, CSF and RFs will be mapped to project complexities involved in any ERP implementation. This is an exploratory study as it is based on literature review to understand ERP implementation and validations. The future research needs to include data collection from ERP adopters and longitudinal analyses of trends based on advances in ERP project management and governance capabilities in different ERP implementations. This article will be significant contribution to current body of knowledge because it helps us understand ERP application implementation as a complex project instead of linear system as currently documented in the literature. This article has outlined the conceptual revisions needed to extend the new project management approach from its current linear way of looking into project management of ERP projects. The article suggests that ERP project management is best understood within the context of environmental complexities. This paper is the first attempt to explore ERP implementations based on current enterprise environment and how to meet those CSF and RFs from complexity perspective.
+C1 [Ghosh, Saumyendu] Univ Maryland, Dept Civil & Environm Engn, College Pk, MD 20742 USA.
+   [Ghosh, Saumyendu] Univ Maryland, George Washington Univ, Sch Business, College Pk, MD 20742 USA.
+   [Skibniewski, Miroslaw J.] Bialystok Tech Univ, Dept Management, Bialystok, Poland.
+RP Ghosh, S (reprint author), Univ Maryland, Dept Civil & Environm Engn, 1188 GL Martin Hall, College Pk, MD 20742 USA.
+EM sghosh12@umd.edu; mirek@umd.edu
+OI Skibniewski, Miroslaw/0000-0002-7102-753X
+CR Aloini D, 2007, INFORM MANAGE-AMSTER, V44, P547, DOI 10.1016/j.im.2007.05.004
+   Aritua B, 2009, INT J PROJ MANAG, V27, P72, DOI 10.1016/j.ijproman.2008.02.005
+   Baccarini D., 1996, International Journal of Project Management, V14, P201, DOI 10.1016/0263-7863(95)00093-3
+   Bernroider EWN, 2008, INFORM MANAGE-AMSTER, V45, P257, DOI 10.1016/j.im.2007.11.004
+   Bueno S, 2008, INTERACT COMPUT, V20, P515, DOI 10.1016/j.intcom.2008.08.003
+   CAZIER J, 2002, E BUSINESS FOCUS TRU, P2204
+   CAZIER J, 2003, P 9 AM C INF SYST TA, P1723
+   CAZIER J, 2003, P 9 AM C INF SYST, P3240
+   Chen CC, 2009, IEEE T ENG MANAGE, V56, P157, DOI 10.1109/TEM.2008.2009802
+   Chen I., 2001, BUSINESS PROCESS MAN, V7, P374, DOI DOI 10.1108/14637150110406768
+   Chung BY, 2008, J COMPUT CIVIL ENG, V22, P373, DOI 10.1061/(ASCE)0887-3801(2008)22:6(373)
+   Davidaviciene V, 2008, J BUS ECON MANAG, V9, P299, DOI 10.3846/1611-1699.2008.9.299-307
+   DOZ Y, 1995, HARVARD BUS REV, V73, P54
+   EKANAYAKA Y, 2003, BENCHMARKING INT J, V10, P343, DOI DOI 10.1108/14635770310484971
+   Espinosa JA, 2007, J MANAGE INFORM SYST, V24, P135, DOI 10.2753/MIS0742-1222240104
+   Esteves J, 2001, COMMUNICATIONS ASS I, V7, P2
+   Ghosh S, 2003, IEMC-2003: MANAGING TECHNOLOGICALLY DRIVEN ORGANIZATIONS: THE HUMAN SIDE OF INNOVATION AND CHANGE, PROCEEDINGS, P320, DOI 10.1109/IEMC.2003.1252285
+   GHOSH S, 2002, ENG MAN C, P101
+   GHOSH S, 2010, 6 INN AEC C IN PRESS
+   GREMBERGEN WV, 2008, IMPLEMENTATING INFOR
+   Gupta A, 2000, IND MANAGE DATA SYST, V100, P114, DOI 10.1108/02635570010286131
+   Gurbaxani V, 1996, COMMUN ACM, V39, P45, DOI 10.1145/233977.233992
+   Hall C.A.S., 1977, ECOSYSTEM MODELING T, P6
+   Hawking P., 2007, J BUSINESS SYSTEM GO, V2, P21
+   Helo P, 2008, IND MANAGE DATA SYST, V108, P1045, DOI 10.1108/02635570810904604
+   Ifinedo P, 2009, IND MANAGE DATA SYST, V109, P118, DOI 10.1108/02635570910926627
+   Jasilioniene R, 2009, J BUS ECON MANAG, V10, P343, DOI 10.3846/1611-1699.2009.10.343-347
+   JENSON R, 2002, ENTERPRISE SYSTEMS I
+   Karahanna E, 2006, MIS QUART, V30, P781
+   Kerbache L, 2002, INTERFACES, V32, P104
+   Kwahk KY, 2008, INFORM MANAGE-AMSTER, V45, P474, DOI 10.1016/j.im.2008.07.002
+   Law CCH, 2007, INFORM MANAGE-AMSTER, V44, P418, DOI 10.1016/j.im.2007.03.004
+   Longinidis P, 2009, IND MANAGE DATA SYST, V109, P628, DOI 10.1108/02635570910957623
+   Lui KM, 2008, IEEE T ENG MANAGE, V55, P171, DOI 10.1109/TEM.2007.912933
+   Luo WH, 2004, IEEE T ENG MANAGE, V51, P322, DOI 10.1109/TEM.2004.830862
+   Mankins MC, 2005, HARVARD BUS REV, V83, P64
+   Miles RH, 2010, HARVARD BUS REV, V88, P68
+   Moon Y. B., 2007, International Journal of Management and Enterprise Development, V4, P235, DOI 10.1504/IJMED.2007.012679
+   Payne W., 2002, WORK STUDY, V51, P91, DOI [10.1108/00438020210418827, DOI 10.1108/00438020210418827]
+   Rao SS, 2000, IND MANAGE DATA SYST, V100, P81, DOI 10.1108/02635570010286078
+   Remington K, 2008, TOOLS COMPLEX PROJEC
+   Rose J., 2006, INT J ACCOUNTING INF, V7, P217, DOI DOI 10.1016/J.ACCINF.2006.06.003
+   Ross J. W., 1999, IT Professional, V1, P65, DOI 10.1109/6294.781626
+   Sauer C, 2009, BIOCHEM PHARMACOL, V77, P444, DOI 10.1016/j.bcp.2008.10.024
+   Sharma R, 2007, MIS QUART, V31, P219
+   Skibniewski MJ, 2009, J CONSTR ENG M, V135, P965, DOI 10.1061/(ASCE)0733-9364(2009)135:10(965)
+   Sledgianowski D, 2008, IND MANAGE DATA SYST, V108, P421, DOI 10.1108/02635570810868317
+   Somers TM, 2004, INFORM MANAGE-AMSTER, V41, P257, DOI 10.1016/S0378-7206(03)00023-5
+   Umble EJ, 2003, EUR J OPER RES, V146, P241, DOI 10.1016/S0377-2217(02)00547-7
+   Venkatesh V, 2000, MANAGE SCI, V46, P186, DOI 10.1287/mnsc.46.2.186.11926
+   Venkatesh V, 2008, DECISION SCI, V39, P273, DOI 10.1111/j.1540-5915.2008.00192.x
+   Wang EH, 2004, HUM PATHOL, V35, P503, DOI 10.1016/j.humpath.2003.10.015
+   Williams T.M., 2002, MODELING COMPLEX PRO
+   Williams T. M., 1999, INT J PROJ MANAG, V17, P269, DOI DOI 10.1016/S0263-7863(98)00047-7
+NR 54
+TC 15
+Z9 16
+U1 0
+U2 23
+PU VILNIUS GEDIMINAS TECH UNIV
+PI VILNIUS
+PA SAULETEKIO AL 11, VILNIUS, LT-10223, LITHUANIA
+SN 1611-1699
+EI 2029-4433
+J9 J BUS ECON MANAG
+JI J. Bus. Econ. Manag.
+PY 2010
+VL 11
+IS 4
+BP 533
+EP 549
+DI 10.3846/jbem.2010.26
+PG 17
+WC Business; Economics
+SC Business & Economics
+GA 710DN
+UT WOS:000286491200001
+OA Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Svec, J
+   Fin, MPF
+AF Svec, Jiri
+   Fin, Maurice Peat F.
+TI SYSTEMATIC RISK, CDS SPREAD AND MARKET INTEGRATION: AN EMPIRICAL
+   INVESTIGATION
+SO JASSA-THE FINSIA JOURNAL OF APPLIED FINANCE
+LA English
+DT Article
+DE systemic risk; credit default swaps (CDS); credit risk; market
+   integration
+ID BONDS
+AB This study is the first to analyse the key drivers of changes in the CDS spreads of Australian companies Our findings indicate that firm-specific measures lead changes in spreads in less than 16 per cent of cases These results suggest that much of the movement in spreads can be explained by international developments, with the S&P 500 and CBOE VIX indices being dominant factors This also provides strong evidence of a high degree of integration in the markets for credit risk, which was widely felt during the global financial crisis
+C1 [Svec, Jiri; Fin, Maurice Peat F.] Univ Sydney, Fac Econ & Business, Sydney, NSW 2006, Australia.
+RP Svec, J (reprint author), Univ Sydney, Fac Econ & Business, Sydney, NSW 2006, Australia.
+CR BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Blanco R, 2005, J FINANC, V60, P2255, DOI 10.1111/j.1540-6261.2005.00798.x
+   Bystrom H, 2006, FINANC ANAL J, V62, P65, DOI 10.2469/faj.v62.n6.4354
+   CAO C, 2009, INFORM CONTENT OPTIO
+   DUFRESNE PC, 2001, J FINANCE        DEC, V56, P2177
+   Ericsson J, 2009, J FINANC QUANT ANAL, V44, P109, DOI 10.1017/S0022109009090061
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Hillegeist SA, 2004, REV ACC STUD, V9, P5, DOI 10.1023/B:RAST.0000013627.90884.b7
+   Kwan SH, 1996, J FINANC ECON, V40, P63, DOI 10.1016/0304-405X(95)00836-4
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   PU X, 2008, THESIS
+   Yu F, 2006, FINANC ANAL J, V62, P47, DOI 10.2469/faj.v62.n5.4282
+NR 12
+TC 0
+Z9 0
+U1 0
+U2 0
+PU FINSIA
+PI SYDNEY NSW
+PA PO BOX H99, AUSTRALIA SQ, SYDNEY NSW, 1215, AUSTRALIA
+SN 0313-5934
+J9 JASSA
+JI JASSA
+PY 2010
+IS 3
+BP 6
+EP 11
+PG 6
+WC Business, Finance
+SC Business & Economics
+GA 690ED
+UT WOS:000284984400001
+DA 2019-12-28
+ER
+
+PT J
+AU Caruana, J
+AF Caruana, Jaime
+TI Grappling with systemic risk
+SO JASSA-THE FINSIA JOURNAL OF APPLIED FINANCE
+LA English
+DT Article
+DE systemic risk; systemic regulation; policy coordination; regulatory
+   reform
+AB This paper analyses systemic risk and considers appropriate policies to reduce it. It examines systemic risk as a negative externality in two dimensions: the cross-sectional and the time dimension. The paper further argues that financial regulatory policies are not enough to address systemic risk. Other policies - especially monetary and fiscal policy also have a role to play. It also argues that policy coordination is essential, nationally among monetary, fiscal and macro- and microprudential policies, as well as internationally.(1)
+C1 Bank Int Settlements, Basel, Switzerland.
+RP Caruana, J (reprint author), Bank Int Settlements, Basel, Switzerland.
+NR 0
+TC 0
+Z9 0
+U1 0
+U2 0
+PU FINSIA
+PI SYDNEY NSW
+PA PO BOX H99, AUSTRALIA SQ, SYDNEY NSW, 1215, AUSTRALIA
+SN 0313-5934
+J9 JASSA
+JI JASSA
+PY 2010
+IS 2
+BP 6
+EP 10
+PG 5
+WC Business, Finance
+SC Business & Economics
+GA 629UT
+UT WOS:000280226100002
+DA 2019-12-28
+ER
+
+PT J
+AU Rochet, JC
+AF Rochet, Jean-Charles
+TI Systemic Risk: Changing the Regulatory Perspective
+SO INTERNATIONAL JOURNAL OF CENTRAL BANKING
+LA English
+DT Article
+AB The article puts forward the view that the regulatory perspective on systemic risk should be changed drastically. The sub-prime crisis has indeed revealed many loopholes in the supervisory/regulatory framework for banks-in particular, the inability to deal with the too-big-to-fail syndrome and also the lack of resiliency of interbank and money markets. To a large extent, the contagion phenomena that took place in these markets were the necessary outcomes of the passive attitude of banking supervisors, who have let large banks develop a complex and opaque nexus of bilateral obligations. We propose two reforms: adopting a platform-based (instead of institution-based) regulatory perspective on systemic risk and encouraging a generalized move to central counterparty clearing.
+C1 [Rochet, Jean-Charles] Univ Zurich, CH-8006 Zurich, Switzerland.
+   [Rochet, Jean-Charles] Toulouse Sch Econ, Toulouse, France.
+RP Rochet, JC (reprint author), Univ Zurich, CH-8006 Zurich, Switzerland.
+CR Adrian T, 2009, 348 FED RES BANK NEW
+   [Anonymous], 2009, FINANCIAL TIMES 0910
+   Avgouleas E., 2010, 4 DSF
+   *BANK CAN, 1995, FIN SYST REV, P49
+   BERNANKE B, 2009, COMMUNICATION   0310
+   Dewatripont M, 2010, BALANCING THE BANKS: GLOBAL LESSONS FROM THE FINANCIAL CRISIS, P1
+   Dewatripont M., 1994, PRUDENTIAL REGULATIO
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   DUFFIE D, 2010, BIG BANKS F IN PRESS
+   Federal Reserve Bank of New York, 2010, TRIP REP INFR REF
+   FENN GW, 1993, J FUTURES MARKETS, V13, P389, DOI 10.1002/fut.3990130406
+   FLANNERY M, 1991, J FINANC, V51, P1347
+   GOODHART C, 2009, 0904 IMF
+   HERRING R, 2010, ENDING GOVT BAILOUTS, pCH7
+   Knott Raymond, 2002, FINANCIAL STABILITY, P162
+   Pennacchi G., 2009, AEI C PRIV MARK PUBL
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   TARASHEV N, 2009, Q REV            SEP, P75
+   ZHOU C, 2010, 232 DNB
+NR 19
+TC 5
+Z9 5
+U1 0
+U2 12
+PU ASSOC INTERNATIONAL JOURNAL CENTRAL BANKING
+PI FRANKFURT
+PA POSTFACH 16 03 19, FRANKFURT, 60066, GERMANY
+SN 1815-4654
+J9 INT J CENT BANK
+JI Int. J. Cent. Bank.
+PD DEC
+PY 2010
+VL 6
+IS 4
+SI SI
+BP 259
+EP 276
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA 699WO
+UT WOS:000285693800012
+DA 2019-12-28
+ER
+
+PT J
+AU Helwege, J
+AF Helwege, Jean
+TI Financial firm bankruptcy and systemic risk
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Financial institutions; Systemic risk; Too big to fail; Fire sales;
+   Counterparty risk
+ID CREDIT CONTAGION; ANNOUNCEMENTS; DISTRESS; COLLAPSE
+AB Financial firm distress often leads to regulatory intervention, such as "too big to fail" (TBTF) policies. Two oft-cited channels to justify TBTF are domino effects (counterparty risk) and the effects of fire sales. We analyze the policy responses for avoiding systemic risk while considering the role of these two factors. Prior bankruptcies suggest that cascades caused by counterparty risk do not occur, as firms diversify their exposures. Instead, crises tend to be symptomatic of common factors in financial firms' portfolios, which lead to widespread instances of declining asset values and which are often misinterpreted as resulting from fire sales. (C) 2009 Elsevier B.V. All rights reserved.
+C1 [Helwege, Jean] Penn State Univ, Dept Finance, Smeal Coll Business, 318 Business Bldg, University Pk, PA 16802 USA.
+RP Helwege, J (reprint author), Penn State Univ, Dept Finance, Smeal Coll Business, 318 Business Bldg, University Pk, PA 16802 USA.
+EM juh20@psu.edu
+CR BEBCHUK LA, 1992, J LAW ECON ORGAN, V8, P253
+   Benston G. J., 1986, DEREGULATING FINANCI
+   BERNANKE BS, 1983, AM ECON REV, V73, P257
+   Bernanke BS, 1999, HBK ECON, V15, P1341
+   Bordo M. D., 2009, CREDIT CRISES MONEY
+   BRADLEY M, 1992, YALE LAW J, V101, P1043, DOI 10.2307/796962
+   Campbell JY, 2001, J FINANC, V56, P1, DOI 10.1111/0022-1082.00318
+   Collin-Dufresne P., 2004, WORKING PAPER
+   CRABBE L, 1991, J FINANC, V46, P689, DOI 10.2307/2328842
+   Davis M., 1999, WORKING PAPER
+   DEANGELO H, 1994, J FINANC ECON, V36, P287, DOI 10.1016/0304-405X(94)90008-6
+   Don M., 1990, CARDOZO LAW REV, V509, P511
+   Duffie D, 2001, ECONOMETRICA, V69, P633, DOI 10.1111/1468-0262.00208
+   Eichengreen Barry, 2000, EC INT CAPITAL FLOWS
+   FENN GW, 1994, J FINANC ECON, V35, P181, DOI 10.1016/0304-405X(94)90003-5
+   Friedman M, 1971, MONETARY HIST US 186
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   GESKE R, 1977, J FINANC QUANT ANAL, V12, P541, DOI 10.2307/2330330
+   Giesecke K., 2002, WORKING PAPER
+   GILSON SC, 1989, J FINANC ECON, V25, P241, DOI 10.1016/0304-405X(89)90083-4
+   Helwege J., 1997, J FIXED INCOME, V7, P55
+   Helwege J., 1996, J FINANCE SERV RES, V7, P55
+   Herring R., 2003, INT FINANCIAL CONGLO
+   Hertzel MG, 2008, J FINANC ECON, V87, P374, DOI 10.1016/j.jfineco.2007.01.005
+   Jarrow RA, 2001, J FINANC, V56, P1765, DOI 10.1111/0022-1082.00389
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   Kabir MH, 2005, J BANK FINANC, V29, P441, DOI 10.1016/j.jbankfin.2004.05.014
+   Kamin S. B., 1999, VOLUTION DETERMINATI
+   LANG LHP, 1992, J FINANC ECON, V32, P45, DOI 10.1016/0304-405X(92)90024-R
+   Peek J, 1997, J FINANC SERV RES, V12, P287, DOI 10.1023/A:1007935005444
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Theocharides G., 2008, WORKING PAPER
+   WEISS LA, 1990, J FINANC ECON, V27, P285, DOI 10.1016/0304-405X(90)90058-8
+   Weiss LA, 1998, J FINANC ECON, V48, P55, DOI 10.1016/S0304-405X(98)00004-X
+   WRUCK KH, 1990, J FINANC ECON, V27, P419, DOI 10.1016/0304-405X(90)90063-6
+   Yu F, 2005, J FINANC ECON, V75, P53, DOI 10.1016/j.jfineco.2004.07.002
+NR 38
+TC 25
+Z9 26
+U1 0
+U2 3
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD FEB
+PY 2010
+VL 20
+IS 1
+BP 1
+EP 12
+DI 10.1016/j.intfin.2009.11.002
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA VB1NI
+UT WOS:000414283500001
+DA 2019-12-27
+ER

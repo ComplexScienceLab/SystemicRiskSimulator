@@ -1,0 +1,487 @@
+
+PT J
+AU Bandyopadhyay, S
+   Jha, R
+   Kennedy, D
+AF Bandyopadhyay, Satiprasad
+   Jha, Ranjini
+   Kennedy, Duane
+TI The effect of the US subprime crisis on Canadian banks
+SO ADVANCES IN ACCOUNTING
+LA English
+DT Article
+DE Financial crisis; Contagion; Asset quality
+ID GLOBAL FINANCIAL CRISIS; RISK; CONTAGION; SHOCKS; IMPACT
+AB We examine whether the Canadian banking sector was afflicted by financial contagion from the 2005 subprime crisis in the United States financial sector. We find that Canadian banks were affected by contagion, though those with higher liquidity withstood better its adverse effects. Our results indicate that Canadian banks that had more transparent asset practices appear to be less adversely affected by contagion. However, higher levels of real estate-related assets including mortgage-backed securities worsened the impact of contagion. (C) 2016 Elsevier Ltd. All rights reserved.
+C1 [Bandyopadhyay, Satiprasad; Jha, Ranjini; Kennedy, Duane] Univ Waterloo, Sch Accounting & Finance, Waterloo, ON N2L 3G1, Canada.
+RP Kennedy, D (reprint author), Univ Waterloo, Sch Accounting & Finance, Waterloo, ON N2L 3G1, Canada.
+EM dkennedy@uwaterloo.ca
+FU Lois Claxton Humanities and Social Sciences Award from the University of
+   Waterloo
+FX We gratefully acknowledge financial support from the Lois Claxton
+   Humanities and Social Sciences Award from the University of Waterloo. We
+   thank Lamia Chourou, Alan Huang, Anya Kleymenova, Donal McKillop, Jay
+   Wellman, participants at the FMA 2014 Annual Meetings, SFA 2014 Annual
+   Meetings, American Accounting Association 2014 Annual Conference,
+   Canadian Academic Accounting Association 2014 Annual Conference, the
+   Annual Conference of the Canadian Operational Research Society, and
+   workshop participants at the University of Waterloo and Brock University
+   First Ontario Accounting Symposium for helpful suggestions.
+CR Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2009, ANNU REV FINANC ECON, V1, P97, DOI 10.1146/annurev.financial.050808.114321
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Arjani N., 2013, LESSONS FINANCIAL CR
+   Avgouleas E, 2009, J CORP LAW STUD, V9, P23, DOI 10.1080/14735970.2009.11421534
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Basel Committee on Banking Supervision (Basel), 2000, NEW CAP AD FRAM PILL
+   Beaton K, 2014, CAN J ECON, V47, P466, DOI 10.1111/caje.12079
+   Beatty A, 2014, J ACCOUNT ECON, V58, P339, DOI 10.1016/j.jacceco.2014.08.009
+   Beatty A, 2011, J ACCOUNT ECON, V52, P1, DOI 10.1016/j.jacceco.2011.02.002
+   Black DE, 2013, WORKING PAPER
+   Bordeleau E., 2009, REGULATORY CONSTRAIN
+   Bordo MD, 2015, ECON HIST REV, V68, P218, DOI 10.1111/1468-0289.665
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Bushman RM, 2015, J ACCOUNT RES, V53, P511, DOI 10.1111/1475-679X.12079
+   Bushman RM, 2012, J ACCOUNT ECON, V54, P1, DOI 10.1016/j.jacceco.2012.04.002
+   Calmes C, 2014, J BANK FINANC, V40, P388, DOI 10.1016/j.jbankfin.2013.11.039
+   Calomiris CW, 2013, FOREIGN AFF, V92, P97
+   Carswell S., 2009, IRISH TIMES
+   Cheng IH, 2015, J FINANC, V70, P839, DOI 10.1111/jofi.12225
+   Christiansen C, 2009, J BANK FINANC, V33, P1048, DOI 10.1016/j.jbankfin.2008.10.014
+   Claessens S., 2010, IMF WORKING PAPER
+   Dechow PM, 2002, ACCOUNT REV, V77, P35, DOI 10.2308/accr.2002.77.s-1.35
+   Demyanyk Y, 2011, REV FINANC STUD, V24, P1848, DOI 10.1093/rfs/hhp033
+   Dornbusch R., 2001, INT FINANCIAL CONTAG
+   Dupuis F., 2008, EC VIEWPOINT DESJARD
+   Engle R, 2014, WORKING PAPER
+   Federal Deposit Insurance Corporation (FDIC), 2002, S SPONS FDIC BANK TR
+   Federal Deposit Insurance Corporation (FDIC), 2006, INT POL STAT ALL LOC
+   Gentile M., 2013, J FINANCIAL MANAGEME, V1, P197
+   Glick R, 1999, J INT MONEY FINANC, V18, P603, DOI 10.1016/S0261-5606(99)00023-6
+   Gueyie J. - P., 2013, FRONTIERS FINANCE EC, V10, P103
+   Guidara A., 2014, WORKING PAPER
+   Guidara A, 2013, J BANK FINANC, V37, P3373, DOI 10.1016/j.jbankfin.2013.05.012
+   Heinrich E., 2008, TIME
+   Huizinga H, 2012, J FINANC ECON, V106, P614, DOI 10.1016/j.jfineco.2012.06.008
+   Kaminsky GL, 1998, AM ECON REV, V88, P444
+   Kanagaretnam K, 2016, J FINANC STABIL, V22, P33, DOI 10.1016/j.jfs.2015.11.001
+   Kay J., 2008, FINANCIAL POST
+   Khan U., 2009, WORKING PAPER
+   King M. R., 2012, WORKING PAPER
+   Krugman P., 2010, NY TIMES
+   Markwat T, 2009, J BANK FINANC, V33, P1996, DOI 10.1016/j.jbankfin.2009.05.008
+   Masson P, 1999, J INT MONEY FINANC, V18, P587, DOI 10.1016/S0261-5606(99)00016-9
+   Ng J., 2011, WORKING PAPER
+   Pais A, 2011, J BANK FINANC, V35, P681, DOI 10.1016/j.jbankfin.2010.05.012
+   Ratnovsky L., 2009, IMF WORKING PAPER
+   Richburg Keith, 2008, WASHINGTON POST
+   Saunders A, 1999, J BANK FINANC, V23, P537, DOI 10.1016/S0378-4266(98)00080-6
+   Stevens G., 2009, RBA B, P36
+   Straetmans STM, 2008, J APPL ECONOM, V23, P17, DOI 10.1002/jae.973
+   Wall L., 2000, FEDERAL RESERVE BANK, V85, P1
+NR 52
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0882-6110
+EI 1046-5715
+J9 ADV ACCOUNT
+JI Adv. Account.
+PD MAR
+PY 2017
+VL 36
+BP 58
+EP 74
+DI 10.1016/j.adiac.2016.08.005
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA GQ1BY
+UT WOS:000441360400006
+DA 2019-12-27
+ER
+
+PT J
+AU Brintseva, O
+   Hutsalenko, O
+   Dmitruk, S
+AF Brintseva, Olena
+   Hutsalenko, Oksana
+   Dmitruk, Sergii
+TI THE ROLE OF SOCIALLY RESPONSIBLE MARKETING IN THE REPRODUCTION OF THE
+   HUMAN CAPITAL AND REDUCTION OF ITS FIKTIVIZATION PROCESSES
+SO BALTIC JOURNAL OF ECONOMIC STUDIES
+LA English
+DT Article
+DE socially responsible marketing; fictitious human capital; human capital
+   reproduction; education; health; social and labour issues
+AB The urgency of the research. Before the modern person at different stages of reproduction of the human capital, there are many calls and risks that need to be considered and also to adapt to consequences of their action. Target setting. Use of marketing tools is rather a perspective direction of improvement of processes of the human capital reproduction. However, improvement of these processes is promoted by only socially responsible marketing. Uninvestigated parts of general matters defining. Almost unexplored are questions of use of marketing tools in the realization of processes of reproduction of the human capital. The purpose of the paper is to study the use of marketing tools for more effective implementation of reproduction processes of human capital at different stages. The issue of reproduction of human capital is considered in such areas: education, health, and social and labour sphere. Methodology. The paper is based on a critical analysis of scientific researches in the sphere of socially responsible marketing and processes of reproduction of human capital. These issues are researched by Blagov Yu.E., Carroll A., Hrishnova O.A., Kotler P., Lantos J., Lambin J., Libanova E.M., Mishchuk H.Yu., and others. Results. Issues of the human capital reproduction are considered in the following spheres: education, healthcare, and social and labour sphere. It is defined that in modern conditions, social responsibility has to become a basis for the creation of all system of the public relations and cover all stages of reproduction of the human capital. Socially irresponsible marketing leads to the formation, accumulation, and distribution of the fictitious human capital and other its unproductive forms. Practical implications. Now reproduction of the human capital in Ukraine is rather strongly influenced by fiktivization processes connected with the distribution of its unproductive forms. In this context, socially irresponsible marketing of educational and medical institutions, enterprises-employers, pharmaceutical and intermediary firms, plays a considerable role. Socially responsible marketing is impossible without the general spread of the ideology of social responsibility in society. The concept of social responsibility should become widespread in all spheres of public life, should become a fundamental basis of social and labour relations and one of the most important directions for overcoming a systemic socio-economic, political, and military crisis in Ukraine.
+C1 [Brintseva, Olena; Dmitruk, Sergii] Kyiv Natl Econ Univ, Dept Personnel Management & Labour Econ, Kiev, Ukraine.
+   [Hutsalenko, Oksana] Vinnytsia Natl Agrarian Univ, Dept Finance Banking & Insurance, Vinnytsia, Ukraine.
+RP Brintseva, O (reprint author), Kyiv Natl Econ Univ, Dept Personnel Management & Labour Econ, Kiev, Ukraine.
+EM o.brintseva@gmail.com; 557555@ukr.net; sergei-dmitruk@ukr.net
+RI HUTSALENKO, Oksana/V-7531-2017
+OI HUTSALENKO, Oksana/0000-0001-9348-4881
+CR Agramakova N. V., 2011, BUSINESS INFORM, P86
+   [Anonymous], 2010, KORPORATIVNAYA SOTSI
+   Carroll AB, 1979, ACAD MANAGE REV, V4, P497, DOI [DOI 10.5465/AMR.1979.4498296, 10.5465/amr.1979.4498296]
+   Hrishnova O. A., 2015, DEMOGRAPHY SOCIAL EC, V1, P90
+   Hrishnova O. A., 2014, SOCIAL LABOUR RELATI, P34
+   Hrishnova O. A., 2014, SOTSIALNA VIDPOVIDAL
+   KOTLER P, 1972, HARVARD BUS REV, V50, P48
+   Kotler P., 2008, MARKETYNH MENEDZHMEN
+   Lambin J.-J, 1996, STRATEGICHESKIY MARK
+   Lantos GP, 2002, J CONSUM MARK, V19, P205, DOI 10.1108/07363760210426049
+   Libanova E. M., 2014, KOLEKTYVNA MONOHRAFI
+NR 11
+TC 0
+Z9 0
+U1 0
+U2 3
+PU BALTIC JOURNAL ECONOMIC STUDIES
+PI RIGA
+PA VALDEKU IELA 62-156, RIGA, LV-1058, LATVIA
+SN 2256-0742
+EI 2256-0963
+J9 BALT J ECON STUD
+JI Balt. J. Econ. Stud.
+PY 2017
+VL 3
+IS 5
+BP 33
+EP 37
+DI 10.30525/2256-0742/2017-3-5-33-37
+PG 5
+WC Economics
+SC Business & Economics
+GA GB8DK
+UT WOS:000429305400006
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Armenti, Y
+   Crepey, S
+AF Armenti, Yannick
+   Crepey, Stephane
+TI Central Clearing Valuation Adjustment
+SO SIAM JOURNAL ON FINANCIAL MATHEMATICS
+LA English
+DT Article
+DE counterparty risk; central counterparty (CCP); margins; default fund;
+   cost of funding; cost of capital; netting
+ID COUNTERPARTY RISK; BSDES
+AB We develop an XVA (costs) analysis of the clearance framework for a member of a clearing house. The systemic consequences of the default of the clearing house itself are outside the scope of such an XVA analysis. Hence the clearing house is assumed default free. We introduce a dynamic framework that incorporates the sequence of cash flows involved in the waterfall of resources of a clearing house. The overall XVA cost for a member, dubbed CCVA for central clearing valuation adjustment, is decomposed into counterparty valuation adjustment (CVA), margin valuation adjustment (MVA), and capital value adjustment (KVA) components. The CVA is the cost for a member of its losses on the default fund due to the defaults of other members. The MVA is the cost of funding initial margin. The KVA mainly consists in the cost of the capital at risk that the member provides to the central counterparty through its default fund contribution. In the end the structure of the XVA equations for bilateral and cleared portfolios is similar, but the data of the equations are of course not the same, reflecting the different financial network structures. The numerical experiments emphasize the multilateral netting benefit of central clearing. However, it is known that this multilateral netting comes at the expense of a loss of netting across asset classes. If we compensate the first order multilateral netting effect by a suitable scaling factor accounting for the loss of netting across asset classes, then the bilateral and centrally cleared XVA numbers become comparable. The second more explanatory factor of the numerical results is the credit risk of the members and the ensuing MVA, especially in the bilateral setup, where even more initial margin is required.
+C1 [Armenti, Yannick; Crepey, Stephane] Univ Evry Val dEssonne, Lab Math & Modelisat Evry, F-91037 Evry, France.
+RP Armenti, Y (reprint author), Univ Evry Val dEssonne, Lab Math & Modelisat Evry, F-91037 Evry, France.
+EM yannick.armenti@gmail.com; stephane.crepey@univ-evry.fr
+FU EIF grant "Collateral management in centrally cleared trading"; "Chair
+   Markets in Transition", Federation Bancaire Francaise; ANRFrench
+   National Research Agency (ANR) [11-LABX-0019]
+FX The research of Stephane Crepey benefited from the support of the EIF
+   grant "Collateral management in centrally cleared trading", of the
+   "Chair Markets in Transition", Federation Bancaire Francaise, and of the
+   ANR 11-LABX-0019.
+CR Albanese C., 2015, RISK MAGAZINE, P54
+   ALBANESE C., 2016, ARXIV160303012
+   Albanese Claudio, 2015, RISK MAGAZINE, P64
+   AMINI H., 2015, SSRN2275376
+   ANDERSEN L., 2016, SSRN2746010
+   ARMAKOLA A., 2015, SSRN2625579
+   Armenti Y, 2015, ARXIV150705351
+   Arnsdorf M, 2012, J RISK MANAGEMENT FI, V5, P273
+   AVELLANEDA M., 2013, SSRN2247493
+   BANK FOR INTERNATIONAL SETTLEMENTS, 2005, APPL BAS II TRAD ACT
+   BASEL COMMITTEE ON BANKING SUPERVISION, 2005, EXPL NOT BAS II IRB
+   Basel Committee on Banking Supervision, 2014, CAP REQ BANK EXP CEN
+   Basel Committee on Banking Supervision (Basel), 2011, BAS 3 GLOB REG FRAM
+   BICHUCH M., 2016, MATH FINANC IN PRESS
+   Bielecki TR, 2015, SIAM J FINANC MATH, V6, P594, DOI 10.1137/130928819
+   Brigo D, 2013, COUNTERPARTY CREDIT RISK, COLLATERAL AND FUNDING: WITH PRICING CASES FOR ALL ASSET CLASSES, P1, DOI 10.1002/9781118818589
+   Brigo D, 2014, INT J FINANC ENG, V1, DOI 10.1142/S2345768614500019
+   BURGARD C., 2012, SSRN2157634
+   CAPPONI A., 2016, SSRN2669304
+   CONT R., 2011, SSRN1783798
+   Cont R, 2014, STATIST RISK MODEL, V31, P3, DOI 10.1515/strm-2013-1161
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Crepey S, 2014, CH CRC FINANC MATH, P1
+   Crepey S, 2016, SPRINGER P MATH STAT, V165, P53, DOI 10.1007/978-3-319-33446-2_3
+   Crepey S, 2016, FINANC STOCH, V20, P901, DOI 10.1007/s00780-016-0305-3
+   Crepey S, 2015, STOCH PROC APPL, V125, P3023, DOI 10.1016/j.spa.2015.02.010
+   DUFFIE D., 2014, 3256 STANF U GRAD SC
+   Duffie D., 2010, BIG BANKS FAIL WHAT
+   Duffie D, 2015, J FINANC ECON, V116, P237, DOI 10.1016/j.jfineco.2014.12.006
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   FENN GW, 1993, J FUTURES MARKETS, V13, P389, DOI 10.1002/fut.3990130406
+   Fujii M, 2012, Q J FINANC, V2, DOI 10.1142/S2010139212500152
+   Fujii M, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024912500343
+   GHAMAMI S., 2016, SSRN2819714
+   Ghamami S, 2015, INT J FINANC ENG, V2, DOI 10.1142/S2424786315500115
+   Gobet E, 2015, SIAM J FINANC MATH, V6, P919, DOI 10.1137/14100021X
+   GREEN A., 2014, RISK MAGAZINE, P82
+   HARRIS J. H., 2015, J FINANCE Q IN PRESS
+   He S-w., 1992, SEMIMARTINGALE THEOR
+   Henry-Labordere P., 2012, RISK MAGAZINE, P67
+   Knott R., 2002, FINANCIAL STABILITY, P162
+   Kruse T, 2016, STOCHASTICS, V88, P491, DOI 10.1080/17442508.2015.1090990
+   Kupiec PH, 1996, J FUTURES MARKETS, V16, P943, DOI 10.1002/(SICI)1096-9934(199612)16:8<943::AID-FUT6>3.0.CO;2-M
+   Levels Anouk, 2012, J FINANCIAL MARKET I, V1, P29
+   MENKVELD A. J., 2016, SSRN2422250
+   Pallavicini A., 2013, ARXIV13041397
+   Singh M, 2009, WP09173 IMF
+   Singh M, 2010, WP1099 IMF
+   WHITE A., 2012, RISK MAGAZINE, P52
+   WHITE A., 2012, RISK, P83
+NR 51
+TC 4
+Z9 4
+U1 0
+U2 0
+PU SIAM PUBLICATIONS
+PI PHILADELPHIA
+PA 3600 UNIV CITY SCIENCE CENTER, PHILADELPHIA, PA 19104-2688 USA
+SN 1945-497X
+J9 SIAM J FINANC MATH
+JI SIAM J. Financ. Math.
+PY 2017
+VL 8
+IS 1
+BP 274
+EP 313
+DI 10.1137/15M1028170
+PG 40
+WC Business, Finance; Mathematics, Interdisciplinary Applications; Social
+   Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA FQ8ZK
+UT WOS:000418651600010
+DA 2019-12-28
+ER
+
+PT J
+AU Anginer, D
+   Cerutti, E
+   Peria, MSM
+AF Anginer, Deniz
+   Cerutti, Eugenio
+   Peria, Maria Soledad Martinez
+TI Foreign bank subsidiaries' default risk during the global crisis: What
+   factors help insulate affiliates from their parents?
+SO JOURNAL OF FINANCIAL INTERMEDIATION
+LA English
+DT Article
+DE Banking crises; Default risk; Ring-fencing; Bank subsidiaries; Distance
+   to default; Merton model
+ID INTERNATIONAL TRANSMISSION; UNIVERSAL BANKING; FINANCIAL CRISIS; MARKET
+   CRASHES; LIQUIDITY; MODEL; CONSTRAINTS; CONTAGION; SYSTEM; SHOCKS
+AB This paper examines the association between the default risk of foreign bank subsidiaries in developing countries and their parents during the global financial crisis, with the purpose of determining the size and sign of this correlation and, more importantly, understanding what factors can help insulate affiliates from their parents. We find evidence of a significant and robust positive correlation between parent banks' and foreign subsidiaries' default risk. This correlation is lower for subsidiaries that have a higher share of retail deposit funding and that are more independently managed from their parents. Host country bank regulations are also associated with the extent to which shocks to the parents affect the subsidiaries' default risk. In particular, the correlation between the default risk of subsidiaries and their parents is lower for subsidiaries operating in countries that impose higher capital, reserve, provisioning, and disclosure requirements, and tougher restrictions on bank activities. (C) 2016 Dr. Maria Soledad Martinez Peria. Published by Elsevier Inc. All rights reserved.
+C1 [Cerutti, Eugenio; Peria, Maria Soledad Martinez] Int Monetary Fund, 700 19th St NW, Washington, DC 20431 USA.
+   [Anginer, Deniz] World Bank, Finance & Private Sect Dev Res Grp, 1818 H St NW, Washington, DC 20433 USA.
+RP Peria, MSM (reprint author), Int Monetary Fund, 700 19th St NW, Washington, DC 20431 USA.
+EM danginer@worldbank.org; ecerutti@imf.org; mmartinezperia@imf.org
+CR Acharya V. V., 2014, END MARKET DISCIPLIN
+   Adrian Tobias, 2016, AM EC REV
+   Allen F, 2000, ECON J, V110, P236, DOI 10.1111/1468-0297.00499
+   Anginer D., 2014, WORLD BANK POLICY RE, V7053
+   Anginer D., 2014, WORLD BANK POLICY RE, V6948
+   Anginer D, 2014, J FINANC STABIL, V13, P202, DOI 10.1016/j.jfs.2014.02.003
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Atkeson A., 2014, 18912 NBER
+   Barlevy G, 2003, J ECON THEORY, V110, P234, DOI 10.1016/S0022-0531(03)00039-5
+   Barth J. R, 2001, 2588 WORLD BANK
+   Barth J. R., 2013, 18733 NAT BUR EC RES
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Bharath ST, 2008, REV FINANC STUD, V21, P1339, DOI 10.1093/rfs/hhn044
+   BIS, 2010, REP REC CROSS BORD R
+   Boyd JH, 1998, J MONEY CREDIT BANK, V30, P426, DOI 10.2307/2601249
+   Brunnermeier M., 2012, BANKS NONINTEREST IN
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Bystrom HN, 2006, J ALTERN INVEST, V8, P39, DOI 10.3905/jai.2006.627849
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   Cerutti E., 2010, 10247 IMF WP
+   Cerutti E., 2016, REV FINANC IN PRESS
+   Cerutti E, 2014, J FINANC STABIL, V11, P1, DOI 10.1016/j.jfs.2013.10.003
+   Cetorelli N, 2012, J INT ECON, V88, P299, DOI 10.1016/j.jinteco.2012.05.001
+   Choi M., 2013, 6674 WORLD BANK
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cihak M, 2013, J FINANC STABIL, V9, P733, DOI 10.1016/j.jfs.2013.10.002
+   Claessens S., 2013, J FINANCIAL PERSPECT, V1, P29
+   Crystal J. S., 2002, CURRENT ISSUES EC FI, V8, P1
+   Crystal J.S., 2001, OPEN DOORS FOREIGN P, P19
+   Cull R., 2010, 5398 WORLD BANK
+   D'Hulster K., 2014, RING FENCING CROSS B
+   D'Hulster K, 2015, J BANK REGUL, V16, P169, DOI 10.1057/jbr.2014.4
+   de Haas R, 2006, J BANK FINANC, V30, P1927, DOI 10.1016/j.jbankfin.2005.07.007
+   De Haas R, 2013, REV FINANC STUD, V26, P244, DOI 10.1093/rfs/hhs113
+   de Haas R, 2010, J FINANC INTERMED, V19, P1, DOI 10.1016/j.jfi.2009.02.001
+   Demirguc-Kunt A., 1999, BANKING CRISES POLIC, V2085
+   Demirguc-Kunt A, 2013, J MONEY CREDIT BANK, V45, P1147, DOI 10.1111/jmcb.12047
+   Demirguc-Kunt A, 2013, J BANK FINANC, V37, P875, DOI 10.1016/j.jbankfin.2012.10.010
+   Demirguc-Kunt Asli, 1998, IMPLICATIONS GLOBALI, P83
+   DETRAGIACHE E, 2006, J FINANCIAL STABILIT, V2, P217, DOI DOI 10.1016/J.JFS.2006.06.001
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   Falkenheim M., 2003, J FINANCIAL SERVICES, V24, P121, DOI DOI 10.1023/B:FINA.0000003320.95646.5f
+   GENNOTTE G, 1990, AM ECON REV, V80, P999
+   Giannetti M, 2012, MANAGE SCI, V58, P365, DOI 10.1287/mnsc.1110.1378
+   Hillegeist SA, 2004, REV ACC STUD, V9, P5, DOI 10.1023/B:RAST.0000013627.90884.b7
+   Hong H, 2003, REV FINANC STUD, V16, P487, DOI 10.1093/rfs/hhg006
+   Hoque H, 2015, J BANK FINANC, V50, P455, DOI 10.1016/j.jbankfin.2014.06.003
+   JOHN K, 1994, J BANK FINANC, V18, P307, DOI 10.1016/0378-4266(94)00037-9
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Mayer T., 2011, 201125 CEPII
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Ongena S, 2015, IMF ECON REV, V63, P698, DOI 10.1057/imfer.2015.34
+   Peek J, 2000, AM ECON REV, V90, P30, DOI 10.1257/aer.90.1.30
+   Rajan R, 2000, J FINANC, V55, P35, DOI 10.1111/0022-1082.00200
+   Repullo R, 2004, J FINANC INTERMED, V13, P156, DOI 10.1016/j.jfi.2003.08.005
+   Schnabl P, 2012, J FINANC, V67, P897, DOI 10.1111/j.1540-6261.2012.01737.x
+   Schwarcz SL, 2013, SOUTH CALIF LAW REV, V87, P69
+   Song I., 2004, 0482 IMF
+   von Thadden EL, 2004, J FINANC INTERMED, V13, P90, DOI 10.1016/j.jfi.2003.04.002
+   Yuan K, 2005, J FINANC, V60, P379, DOI 10.1111/j.1540-6261.2005.00733.x
+NR 63
+TC 9
+Z9 9
+U1 0
+U2 6
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1042-9573
+EI 1096-0473
+J9 J FINANC INTERMED
+JI J. Financ. Intermed.
+PD JAN
+PY 2017
+VL 29
+BP 19
+EP 31
+DI 10.1016/j.jfi.2016.05.004
+PG 13
+WC Business, Finance
+SC Business & Economics
+GA EJ3YL
+UT WOS:000393148500002
+DA 2019-12-27
+ER
+
+PT J
+AU Rubio-Misas, M
+   Fernandez-Moreno, M
+AF Rubio-Misas, Maria
+   Fernandez-Moreno, Magdalena
+TI Solvency surveillance and financial crisis: evidence from the Spanish
+   insurance industry
+SO SPANISH JOURNAL OF FINANCE AND ACCOUNTING-REVISTA ESPANOLA DE
+   FINANCIACION Y CONTABILIDA
+LA English
+DT Article
+DE Solvency surveillance; cost frontier efficiency; organisational form;
+   Spanish insurance industry; financial crisis
+ID PROPERTY-CASUALTY INSURANCE; LIFE-INSURANCE; CAPITAL STRUCTURE;
+   ORGANIZATIONAL-STRUCTURE; LIABILITY INSURANCE; OWNERSHIP STRUCTURE;
+   EMPIRICAL-EVIDENCE; SYSTEMIC RISK; PANEL-DATA; PREDICTION
+AB This paper provides evidence on factors affecting the level of the regulatory solvency ratio of Spanish insurers from 2005-2012 by employing the two-step system generalised method of moments in the analysis. Results show a significant degree of persistence in the regulatory solvency ratio. Cost frontier efficiency, reinsurance utilisation, premiums growth as well as the form of stock insurers negatively affect the level of the regulatory solvency ratio. These identified firm-level characteristic affecting the level of the regulatory solvency ratio are robust across crisis and non-crisis periods. However, the effect of cost frontier efficiency on the level of the regulatory solvency ratio is greater for mutuals than for stocks.
+C1 [Rubio-Misas, Maria; Fernandez-Moreno, Magdalena] Univ Malaga, Finance & Accounting Dept, Campus El Ejido, E-29071 Malaga, Spain.
+RP Rubio-Misas, M (reprint author), Univ Malaga, Finance & Accounting Dept, Campus El Ejido, E-29071 Malaga, Spain.
+EM mrubiom@uma.es
+FU Ministerio de Economia y CompetitividadSpanish Ministry of Economy &
+   Competitiveness [ECO 2014-52345-P]; Universidad de Malaga
+FX This research has been partially funded by the Ministerio de Economia y
+   Competitividad (project ECO 2014-52345-P). Magdalena Fernandez Moreno
+   also thanks financial support received from the Universidad de Malaga to
+   develop this project under the research grant 'Beca de Iniciacion a La
+   Investigacion 2014/2015'.
+CR Adiel R, 1996, J ACCOUNT ECON, V22, P207, DOI 10.1016/S0165-4101(96)00436-3
+   Altunbas Y, 2007, EUR FINANC MANAG, V13, P49, DOI 10.1111/j.1468-036X.2006.00285.x
+   Altuntas M, 2015, J BANK FINANC, V61, P251, DOI 10.1016/j.jbankfin.2015.09.012
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Baluch F, 2011, GENEVA PAP R I-ISS P, V36, P126, DOI 10.1057/gpp.2010.40
+   BARNIV R, 1992, J RISK INSUR, V59, P543, DOI 10.2307/253344
+   Beck T, 2006, J BANK FINANC, V30, P1581, DOI 10.1016/j.jbankfin.2005.05.010
+   Berry-Stolzle TR, 2010, INSUR MATH ECON, V46, P554, DOI 10.1016/j.insmatheco.2010.02.003
+   Bijlsma M, 2016, J FINANC STABIL, V27, P137, DOI 10.1016/j.jfs.2016.11.001
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   BROCKETT PL, 1994, J RISK INSUR, V61, P402, DOI 10.2307/253568
+   Chen RB, 2004, J RISK INSUR, V71, P469, DOI 10.1111/j.0022-4367.2004.00099.x
+   Cheng J, 2013, GENEVA PAP R I-ISS P, V38, P274, DOI 10.1057/gpp.2013.2
+   Cheng J, 2012, J RISK INSUR, V79, P723, DOI 10.1111/j.1539-6975.2011.01452.x
+   Cooper W.W., 2007, DATA ENVELOPMENT ANA
+   Cummins J.D, 2013, HDB INSURANCE, P795, DOI DOI 10.1007/978-1-4614-0155-1_28
+   Cummins JD, 2017, J FINANC STABIL, V28, P66, DOI 10.1016/j.jfs.2016.11.007
+   Cummins JD, 2016, ANNU REV FINANC ECON, V8, P121, DOI 10.1146/annurev-financial-121415-032815
+   Cummins JD, 2014, J RISK INSUR, V81, P489, DOI 10.1111/jori.12039
+   Cummins JD, 2006, J MONEY CREDIT BANK, V38, P323, DOI 10.1353/mcb.2006.0029
+   Cummins JD, 2004, J BANK FINANC, V28, P3113, DOI 10.1016/j.jbankfin.2004.05.004
+   CUMMINS JD, 1994, J BANK FINANC, V18, P43, DOI 10.1016/0378-4266(94)00078-6
+   CUMMINS JD, 2002, J FINANCIAL SERVICES, V21, P15, DOI DOI 10.1023/A:1014369617192
+   Das U., 2003, 03138 IMF
+   de Haan L, 2010, J BANK FINANC, V34, P1618, DOI 10.1016/j.jbankfin.2010.03.008
+   Eling M., 2016, WORKING PAPER
+   Erhemjamts O, 2010, J MONEY CREDIT BANK, V42, P1011, DOI 10.1111/j.1538-4616.2010.00318.x
+   GRON A, 1994, RAND J ECON, V25, P110, DOI 10.2307/2555856
+   Harrington S. E, 2002, J FINANCIAL SERVICES, V21, P145
+   Hayashy F., 2000, ECONOMETRICS
+   He EY, 2011, J RISK INSUR, V78, P583, DOI 10.1111/j.1539-6975.2011.01411.x
+   Ho CL, 2013, J RISK INSUR, V80, P169, DOI 10.1111/j.1539-6975.2012.01464.x
+   Jimenez G, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.02.004
+   Klein R. W., 2014, HDB INSURANCE, P909
+   Kramer B, 1996, ECONOMIST, V144, P79, DOI 10.1007/BF01680262
+   LAMMTENNANT J, 1993, J BUS, V66, P29, DOI 10.1086/296592
+   Leverty JT, 2012, J RISK INSUR, V79, P751, DOI 10.1111/j.1539-6975.2011.01443.x
+   Leverty JT, 2010, J BANK FINANC, V34, P1510, DOI 10.1016/j.jbankfin.2009.08.015
+   MAYERS D, 1988, J LAW ECON, V31, P351, DOI 10.1086/467160
+   Mora A., 1994, REV ESPANOLA FINANCI, V24, P203
+   Munch P., 1981, STUDIES PUBLIC REGUL, P119
+   Pottier S. W., 2005, 2005 WORLD RISK INS
+   Rauch J, 2015, GENEVA PAP R I-ISS P, V40, P47, DOI 10.1057/gpp.2014.16
+   Rubio-Misas M., 2007, HDB INT INSURANCE GL, P499
+   Rubio-Misas M., 2016, REV ESTUDIOS REGIONA, V107, P21
+   Salcedo-Sanz S, 2005, COMPUT OPER RES, V32, P749, DOI 10.1016/j.cor.2003.08.015
+   Sanchis A, 2007, EUR J OPER RES, V181, P1554, DOI 10.1016/j.ejor.2006.01.045
+   Sanchis A., 2003, REV ESPANOLA FINANCI, V37, P183
+   Shim J, 2017, J RISK INSUR, V84, P567, DOI 10.1111/jori.12091
+   Shim J, 2010, J BANK FINANC, V34, P2450, DOI 10.1016/j.jbankfin.2010.04.003
+   Shiu YM, 2011, J RISK INSUR, V78, P475, DOI 10.1111/j.1539-6975.2010.01387.x
+   The Geneva Association, 2010, SYST RISK INS AN INS
+   Uhde A, 2009, J BANK FINANC, V33, P1299, DOI 10.1016/j.jbankfin.2009.01.006
+   Viswanathan KS, 2003, J RISK INSUR, V70, P401, DOI 10.1111/1539-6975.t01-1-00058
+   Weiss MA, 2008, J BANK FINANC, V32, P134, DOI 10.1016/j.jbankfin.2007.09.010
+   Zanjani G, 2007, AM ECON REV, V97, P973, DOI 10.1257/aer.97.3.973
+   Zhang L, 2015, J RISK INSUR, V82, P97, DOI 10.1111/j.1539-6975.2013.12012.x
+NR 58
+TC 2
+Z9 2
+U1 0
+U2 6
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0210-2412
+EI 2332-0753
+J9 SPAN J FINANC ACCOUN
+JI Span. J. Financ. Account.
+PY 2017
+VL 46
+IS 3
+BP 272
+EP 297
+DI 10.1080/02102412.2017.1291167
+PG 26
+WC Business, Finance
+SC Business & Economics
+GA FU5CB
+UT WOS:000423869200002
+DA 2019-12-28
+ER

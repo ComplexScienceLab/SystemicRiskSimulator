@@ -1,0 +1,91 @@
+PT J
+AU Foxon, TJ
+   Gross, R
+   Chase, A
+   Howes, J
+   Arnall, A
+   Anderson, D
+AF Foxon, TJ
+   Gross, R
+   Chase, A
+   Howes, J
+   Arnall, A
+   Anderson, D
+TI UK innovation systems for new and renewable energy technologies:
+   drivers, barriers and systems failures
+SO ENERGY POLICY
+LA English
+DT Article
+DE innovation systems; renewable energy; innovation policy
+ID CARBON LOCK-IN
+AB A better understanding of the systemic processes by which innovation occurs is useful, both conceptually and to inform policy-making in support of innovation in more sustainable technologies. This paper analyses current innovation systems in the UK for a range of new and renewable energy technologies, and generates policy recommendations for improving the effectiveness of these innovation systems. Although incentives are in place in the UK to encourage innovation in these technologies, system failures-or,gaps'-are identified in moving technologies along the innovation chain, preventing their successful commercialisation. Sustained investment will be needed for these technologies to achieve their potential. It is argued that a stable and consistent policy framework is required to help create the conditions for this. In particular, such a framework should be aimed at improving risk/reward ratios for demonstration and pre-commercial stage technologies. This would enhance positive expectations, stimulate learning effects leading to cost reductions, and increase the likelihood of successful commercialisation. (c) 2004 Elsevier Ltd. All rights reserved.
+C1 Univ London Imperial Coll Sci & Technol, Dept Environm Sci & Technol, ICEPT, London SW7 2AZ, England.
+   E4tech UK Ltd, London SW7 2PE, England.
+   Univ Sheffield, Dept Geog, Sheffield S10 2TN, S Yorkshire, England.
+RP Foxon, TJ (reprint author), Univ London Imperial Coll Sci & Technol, Dept Environm Sci & Technol, ICEPT, S Kensington Campus, London SW7 2AZ, England.
+EM tj.foxon@imperial.ac.uk
+RI Kadi, Alaa/C-5045-2017
+OI Kadi, Alaa/0000-0001-7015-2315; Gross, Robert/0000-0003-3810-6663
+CR ANDERSON DC, 2001, INNOVATION ENV CHALL
+   ARROW KJ, 1962, REV ECON STUD, V29, P155, DOI 10.2307/2295952
+   Bergek A., 2003, CHANGE TRANSFORMATIO, P197
+   BUCHINGER E, 1999, IMPACT EU REGULATION
+   Carlsson B., 1991, J EVOLUTIONARY EC, V1, P93, DOI DOI 10.1007/BF01224915
+   Checkland P., 1981, SYSTEMS THINKING SYS
+   DTI, 2003, EN WHIT PAP OUR EN F
+   *DTI, 2003, REN INN REV
+   *EC, 2002, EPCECFIN01777EN
+   EDQUIST C, 2001, GLOBALIZING LEARNING
+   Foxon T., 2003, INDUCING INNOVATION
+   Foxon T., 2003, INT J ENV TECHNOLOGY, V3, P118, DOI DOI 10.1504/IJETM.2003.003399)
+   Foxon T. J., 2002, TECHNOLOGICAL I LOCK
+   FOXON TJ, 2003, BERL C GOV IND TRANS
+   Freeman C., 1987, TECHNOLOGY EC PERFOR
+   FREEMAN C, 1988, TECHNICAL CHANGE EC
+   Freeman C., 1997, EC IND INNOVATION
+   GRUBB M, 2003, DEL CLIM TECHN PROGR
+   GRUBLER A, 1998, TECHNOLOGY GLOBAL CH
+   *ICEPT E4TECH, 2003, UK INN SYST NEW REN
+   Jacobsson S, 2000, ENERG POLICY, V28, P625, DOI 10.1016/S0301-4215(00)00041-0
+   JACOBSSON S, 2002, IN PRESS TECHNOLOGY
+   JOHNSON A, 2001, TECHNOLOGY MARKET DE
+   Kemp R, 1998, TECHNOL ANAL STRATEG, V10, P175, DOI 10.1080/09537329808524310
+   Kemp R., 1997, ENV POLICY TECHNICAL
+   Lundvall B., 1992, NATL SYSTEMS INNOVAT
+   MALERBA F, 2001, RES POLICY, V31, P247
+   Mokyr J, 2002, TECHNOLOGICAL INNOVA
+   Nelson R.R., 1993, NATL INNOVATION SYST
+   OECD, 2002, DYN NAT INN SYST
+   OECD, 1999, MAN NAT INN SYST
+   *OECD IEA, 2003, WORK GROUP INN TECHN
+   Rosenberg N, 1982, INSIDE BLACK BOX TEC
+   RUTTAN VW, 2001, TECHNOLOGY GROWTH DE
+   Unruh GC, 2002, ENERG POLICY, V30, P317, DOI 10.1016/S0301-4215(01)00098-2
+   Unruh GC, 2000, ENERG POLICY, V28, P817, DOI 10.1016/S0301-4215(00)00070-7
+   2003, RENEWABLE ENERGY REP
+   2002, CARBON TRUST
+NR 38
+TC 249
+Z9 253
+U1 5
+U2 169
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0301-4215
+J9 ENERG POLICY
+JI Energy Policy
+PD NOV
+PY 2005
+VL 33
+IS 16
+BP 2123
+EP 2137
+DI 10.1016/j.enpol.2004.04.011
+PG 15
+WC Economics; Energy & Fuels; Environmental Sciences; Environmental Studies
+SC Business & Economics; Energy & Fuels; Environmental Sciences & Ecology
+GA 955BL
+UT WOS:000231199600009
+DA 2019-12-28
+ER

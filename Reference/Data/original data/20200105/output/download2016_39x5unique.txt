@@ -1,0 +1,483 @@
+
+PT J
+AU Huber, LJ
+   Wuthrich, MV
+AF Huber, Laurent J.
+   Wuthrich, Mario V.
+TI Case study of Swiss mortality using Bayesian modeling
+SO EUROPEAN ACTUARIAL JOURNAL
+LA English
+DT Article
+DE Stochastic mortality; Longevity risk; Mortality trend analysis;
+   Mortality forecasting
+AB Most mortality models to date in life insurance have inconsistent modeling assumptions between past and future survival probabilities. This paper aims at correcting this inconsistency by introducing a Bayesian framework for the joint modeling of past survival probabilities and the forecasting of future survival probabilities. To that end, the Bayesian modeling framework introduced considers both the uncertainty in the populations counts (random effects) as well as the uncertainty in the survival probability surface (systemic effects). In particular, the model uses an n-dimensional latent risk factor process to encode the survival probability surface, taking into account its intrinsic dependencies. We use the model for a case study of Swiss mortality. The case study shows that the model fits well to Swiss data and systemic events in the Swiss survival probability surface are captured by the model. The Swiss case study also exhibits the different rate of improvements in mortality for different age groups of the Swiss population.
+C1 [Huber, Laurent J.; Wuthrich, Mario V.] ETH, Dept Math, RiskLab Switzerland, CH-8092 Zurich, Switzerland.
+RP Huber, LJ (reprint author), ETH, Dept Math, RiskLab Switzerland, CH-8092 Zurich, Switzerland.
+EM laurent.huber@math.ethz.ch; mario.wuethrich@math.ethz.ch
+CR Aro H, 2011, EUR ACTUAR J, V1, pS151, DOI 10.1007/s13385-011-0030-4
+   Booth H, 2008, ANN ACTUAR SCI, V3, P3, DOI 10.1017/S1748499500000440
+   Brouhns N, 2002, INSUR MATH ECON, V31, P373, DOI 10.1016/S0167-6687(02)00185-3
+   Cairns AJG, 2012, N AM ACTUA J, V13, P1
+   Cairns AJG, 2006, J RISK INSUR, V73, P687, DOI 10.1111/j.1539-6975.2006.00195.x
+   Cairns AJG, 2008, SCAND ACTUAR J, P79, DOI 10.1080/03461230802173608
+   Coale A., 1990, ASIAN PACIFIC POPULA, V4, P1
+   Czado C, 2005, INSUR MATH ECON, V36, P260, DOI 10.1016/j.insmatheco.2005.01.001
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Dowd K, 2010, N AM ACTUAR J, V14, P281, DOI 10.1080/10920277.2010.10597592
+   GILKS WR, 1995, MARKOV CHAIN MONTE C, P1
+   Gompertz G., 1825, PHILOS T ROY SOC LON, V115, P513, DOI DOI 10.1098/RSTL.1825.0026
+   Heligman L., 1980, J I ACTUARIES, V107, P49, DOI DOI 10.1017/S0020268100040257
+   Hyndman RJ, 2007, COMPUT STAT DATA AN, V51, P4942, DOI 10.1016/j.csda.2006.07.028
+   LEE RD, 1992, J AM STAT ASSOC, V87, P659, DOI 10.2307/2290201
+   Lutkepohl H, 2005, NEW INTRO MULTIPLE T
+   Numelin E, 1984, GEN IRREDUCIBLE MARK
+   Nusselder WJ, 1996, GERONTOLOGIST, V36, P773, DOI 10.1093/geront/36.6.773
+   ROBERTS GO, 1994, STOCH PROC APPL, V49, P207, DOI 10.1016/0304-4149(94)90134-1
+   Seal HL, 1949, SKAND AKTUARIETIDSKR, V32, P188
+   Sweeting PJ, 2011, ANN ACTUAR SCI, V5, P143, DOI 10.1017/S1748499511000017
+   Thatcher AR, 1999, J ROY STAT SOC A STA, V162, P5, DOI 10.1111/1467-985X.00119
+   Tierney L, 1995, MARKOV CHAIN MONTE C, P59
+   Valdes B, 2011, Rev Med Suisse, V7, P1652
+NR 24
+TC 0
+Z9 0
+U1 0
+U2 2
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 2190-9733
+EI 2190-9741
+J9 EUR ACTUAR J
+JI Eur. Actuar. J.
+PD JUL
+PY 2016
+VL 6
+IS 1
+BP 25
+EP 59
+DI 10.1007/s13385-015-0119-2
+PG 35
+WC Business, Finance
+SC Business & Economics
+GA DR0UB
+UT WOS:000379621300003
+DA 2019-12-28
+ER
+
+PT J
+AU Kallio, AMI
+   Salminen, O
+   Sievanen, R
+AF Kallio, A. M. I.
+   Salminen, O.
+   Sievanen, R.
+TI Forests in the Finnish low carbon scenarios
+SO JOURNAL OF FOREST ECONOMICS
+LA English
+DT Article
+DE Carbon balance; Forest sink; Greenhouse gas; Forest sector; Finland; Low
+   carbon economy
+ID WOOD; BIOENERGY; CLIMATE; ENERGY; FINLAND; BIOMASS; GAS; CONSEQUENCES;
+   EMISSIONS; HARVEST
+AB Finland is committed to the EU goal of reducing greenhouse gas emissions by 80% from the 1990 levels by 2050. We examine the potential role of the forests in fulfilling this goal in Finland. We base our analysis on the six scenarios that supported the parliamentary process of preparing Energy and Climate Roadmap 2050 for Finland to which we contributed by providing the assessment of forest sector development. While the scenario paths show that a systemic change to achieve the 80% target is possible with the increasing use of wood for energy being an important tool to cut emissions, our projections here show that an increase in forest carbon sink alone could play at least as important a role in improving the carbon balance. As the Finnish forests are growing clearly more than the projected removals of wood biomass are, Finland's carbon balance in full carbon accounting might become negative already before 2040 thanks to the forest sink. The forest growth might come to offset all other emissions sources even without other measures and still allow an increase in the use of wood for materials and energy. Nevertheless also other emission saving measures are needed because there is currently a cap which limits the use of LULUCF sinks as an emission reduction tool, and because of the fact that at some future point of time the forest sink will saturate while being vulnerable to many risks at the meantime. (C) 2015 Department of Forest Economics, SLU Umed, Sweden. Published by Elsevier GmbH. All rights reserved.
+C1 [Kallio, A. M. I.; Salminen, O.; Sievanen, R.] Nat Resources Inst Finland, Viikinkaari 4, FI-00790 Helsinki, Finland.
+RP Kallio, AMI (reprint author), Nat Resources Inst Finland, Viikinkaari 4, FI-00790 Helsinki, Finland.
+EM maarit.kallio@luke.fi; olli.salminen@luke.fi; risto.sievanen@luke.fl
+OI Kallio, A. Maarit I./0000-0002-5393-761X
+FU TEKES under its Green Growth program; Natural Resources Institute
+   Finland
+FX We are grateful to Antti Lehtila and Tiina Koljonen from VTT technical
+   research center for providing us the numerical data on the greenhouse
+   gas emissions in the different LCF scenarios. Also, when preparing the
+   scenarios for the forest sector, they provided projections for the total
+   energy wood demand in the national level in the scenarios. We thank
+   Tarja Tuomainen from Luke for advice concerning accounting rules of
+   forest management in the Kyoto protocol. The study was financed by TEKES
+   under its Green Growth program and Natural Resources Institute Finland.
+   The authors are solely responsible for the results.
+CR Dator J., 1981, JUDGING THE FUTURE
+   Ellison D, 2011, ENVIRON SCI POLICY, V14, P1062, DOI 10.1016/j.envsci.2011.07.001
+   European Commission, 2011, ROADM MOV COMP LOW C
+   Finnish Statistical Yearbook of Forestry, 2013, OFF STAT FINL AGR FO, P450
+   Gerasimov Y., 2009, WORKING PAPERS FINNI
+   Government of Finland, 2014, REG PROP RIKSD MED F
+   Gregow H, 2011, SILVA FENN, V45, P35, DOI 10.14214/sf.30
+   Holtsmark B, 2012, CLIMATIC CHANGE, V112, P415, DOI 10.1007/s10584-011-0222-6
+   Johnston CMT, 2014, FOREST CHRON, V90, P636, DOI 10.5558/tfc2014-128
+   Jylha K., 2009, FINNISH METEOROLOGIC, P4
+   Kallio AMI, 2013, J FOREST ECON, V19, P402, DOI 10.1016/j.jfe.2013.05.001
+   Karkkainen L, 2014, FOREST SCI, V60, P1077, DOI 10.5849/forsci.13-041
+   Koljonen T., 2015, LECT NOTES ENERGY, V30, P163
+   Koljonen T., 2014, LOW CARBON FINLAND 2, P167
+   Lamers P, 2012, RENEW SUST ENERG REV, V16, P3176, DOI 10.1016/j.rser.2012.02.027
+   Lauri P, 2013, SCAND J FOREST RES, V28, P291, DOI 10.1080/02827581.2012.735695
+   Lecocq F, 2011, J FOREST ECON, V17, P157, DOI 10.1016/j.jfe.2011.02.011
+   Lehtila A., 2014, LOW CARBON FINLAND 2, P165
+   Lehtonen I, 2014, BOREAL ENVIRON RES, V19, P127
+   Lobianco A., 2016, J FOR EC IN PRESS
+   Loulou R., 2008, COMPUT MANAGE SCI, V5, P41
+   Loulou R, 2005, DOCUMENTATION TIMES
+   Loulou R, 2008, COMPUT MANAG SCI, V5, P7, DOI 10.1007/s10287-007-0046-z
+   Lundmark T, 2014, FORESTS, V5, P557, DOI 10.3390/f5040557
+   Maarit A, 2010, FOREST POLICY ECON, V12, P9, DOI 10.1016/j.forpol.2009.09.014
+   Ministry of Agriculture and Forestry, 2008, 3B2008 MIN AGR FOR
+   Moiseyev A, 2013, J FOREST ECON, V19, P432, DOI 10.1016/j.jfe.2013.10.001
+   Moiseyev A, 2011, J FOREST ECON, V17, P197, DOI 10.1016/j.jfe.2011.02.010
+   Muller M., 2012, METLAN TYBRAPORTTEJA, V240, P121
+   Muller MM, 2014, FOREST PATHOL, V44, P325, DOI 10.1111/efp.12104
+   Natural Resources Institute Finland, 2015, STAT DAT
+   Peltola H, 2010, FOREST ECOL MANAG, V260, P833, DOI 10.1016/j.foreco.2010.06.001
+   Petty A, 2011, FOREST POLICY ECON, V13, P575, DOI 10.1016/j.forpol.2011.07.003
+   Redsven V., 2013, MELA2012 REFERENCE M, P666
+   Repo A, 2011, GCB BIOENERGY, V3, P107, DOI 10.1111/j.1757-1707.2010.01065.x
+   Schlamadinger B., 1997, SCI GEOL B, V50, P157
+   Schulze ED, 2012, GCB BIOENERGY, V4, P611, DOI 10.1111/j.1757-1707.2012.01169.x
+   Sievanen R, 2014, ANN FOREST SCI, V71, P255, DOI 10.1007/s13595-013-0295-7
+   Statistics Finland, 2012, NAT INV REP UNFCCC K
+   Statistics Finland, 2014, NAT INV REP UNFCCC K
+   The Ministry of Employment and the Economy, 2014, EN CLIM ROADM 2050
+   Tuomi M, 2011, ENVIRON MODELL SOFTW, V26, P1358, DOI 10.1016/j.envsoft.2011.05.009
+   Tuomi M, 2011, ECOL MODEL, V222, P709, DOI 10.1016/j.ecolmodel.2010.10.025
+   UNFCCC, 2011, SUBM INF FOR MAN REF
+   UNFCCC, 2011, FCCCKPCMP201110ADD1
+   United Nations Framework Convention on Climate Change (UNFCCC), 2006, FCCCKPCMP20058ADD3 U
+   Van Kooten C., 2014, HDB FOREST RESOURCE
+   Virtanen Tarmo, 1996, Silva Fennica, V30, P169
+   Werner F, 2010, ENVIRON SCI POLICY, V13, P72, DOI 10.1016/j.envsci.2009.10.004
+   Zanchi G, 2012, GCB BIOENERGY, V4, P761, DOI 10.1111/j.1757-1707.2011.01149.x
+NR 50
+TC 4
+Z9 4
+U1 1
+U2 10
+PU ELSEVIER GMBH
+PI MUNICH
+PA HACKERBRUCKE 6, 80335 MUNICH, GERMANY
+SN 1104-6899
+EI 1618-1530
+J9 J FOREST ECON
+JI J. For. Econ.
+PD APR
+PY 2016
+VL 23
+BP 45
+EP 62
+DI 10.1016/j.jfe.2015.12.001
+PG 18
+WC Economics; Forestry
+SC Business & Economics; Forestry
+GA EA9UQ
+UT WOS:000386990600004
+DA 2019-12-28
+ER
+
+PT J
+AU Wolski, M
+   van de Leur, M
+AF Wolski, Marcin
+   van de Leur, Michiel
+TI Interbank loans, collateral and modern monetary policy
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Interbank lending; Agent-based models; Collateral; Networks
+ID SYSTEMIC RISK; MONEY MARKET; FINANCIAL ACCELERATOR; REPO; LIQUIDITY;
+   CONTAGION; NETWORKS
+AB This study develops a novel agent-based model of the interbank market with endogenous credit risk formation mechanisms. We allow banks to exchange funds through unsecured and secured transactions, which facilitates the flow of funds to the most profitable investment projects. Risk premiums result from banks' forecasting rules and depend on past performance of the benchmark risk factors and interest rates. Our model confirms basic stylized facts of the interbank interest rates and volumes. We also find that network structures within the secured market segment are characterized by the presence of dealer banks, while we do not observe similar patterns in the unsecured market. We perturb the model with exogenous shocks and policy scenarios which correspond to unconventional monetary policies. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Wolski, Marcin] European Investment Bank, 98-100 Blvd Konrad Adenauer, Luxembourg 2950, Luxembourg.
+   [van de Leur, Michiel] Vrije Univ Amsterdam, De Boelelaan 1105, NL-1081 HV Amsterdam, Netherlands.
+   [van de Leur, Michiel] Univ Amsterdam, Ctr Nonlinear Dynam Econ & Finance, Valckenierstr 65-67, NL-1018 XE Amsterdam, Netherlands.
+RP Wolski, M (reprint author), European Investment Bank, 98-100 Blvd Konrad Adenauer, Luxembourg 2950, Luxembourg.
+EM M.Wolski@eib.org; M.C.W.vande.Leur@vu.nl
+FU European Central Bank; European Union Seventh Framework Programme
+   (FP7)European Union (EU) [320270]; SURF Cooperative
+FX The contribution by Marcin Wolski to this paper has been prepared under
+   the Lamfalussy Fellowship Program sponsored by the European Central
+   Bank. Michiel van de Leur thanks the European Union Seventh Framework
+   Programme (FP7-SSH/2007-2013, grant agreement 320270 - SYRTO) for
+   financial support. The authors would like to thank Tim Bending, Cees
+   Diks, Cars Hommes, Sweder van Wijnbergen, Marco van der Leij,
+   participants of seminars at the University of Amsterdam and two
+   anonymous referees for their useful comments. This work was carried out
+   on the Dutch national e-infrastructure with the support of SURF
+   Cooperative. Any views expressed are only those of authors and do not
+   necessarily represent the views of the ECB, the European Union, the
+   Eurosystem or the EIB.
+CR Ashraf Q, 2011, 17102 NBER, P1
+   Aymanns C, 2015, J BANK FINANC, V50, P273, DOI 10.1016/j.jbankfin.2014.06.030
+   BALTENSPERGER E, 1980, J MONETARY ECON, V6, P1, DOI 10.1016/0304-3932(80)90016-1
+   Bargigli L, 2015, QUANT FINANC, V15, P673, DOI 10.1080/14697688.2014.968356
+   Bargigli L, 2014, J ECON BEHAV ORGAN, V99, P109, DOI 10.1016/j.jebo.2013.12.018
+   Bech ML, 2015, PHYSICA A, V424, P44, DOI 10.1016/j.physa.2014.11.034
+   Bertella MA, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0083488
+   Billi R.M., 2014, SVER RIKSBANK EC REV, V2, P1
+   Bluhm M., 2013, ENDOGENOUS BANKS NET, P1
+   Bluhm M, 2014, J FINANC STABIL, V13, P75, DOI 10.1016/j.jfs.2014.04.002
+   Bodie Z., 2008, INVESTMENTS
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Cervone R, 2009, ARTIFICIAL EC, P81
+   Chapman JTE, 2011, ANN FINANC, V7, P319, DOI 10.1007/s10436-010-0171-5
+   CHATTERJEE K, 1983, OPER RES, V31, P835, DOI 10.1287/opre.31.5.835
+   Copeland A, 2014, J FINANC, V69, P2343, DOI 10.1111/jofi.12205
+   de Andoain CG, 2014, ECON LETT, V125, P298, DOI 10.1016/j.econlet.2014.09.017
+   Ehrmann M, 2004, J EUR ECON ASSOC, V2, P1148, DOI 10.1162/1542476042813904
+   European Central Bank, 2012, EUR MON MARK SURV
+   European Central Bank, 2014, EUR REP MARK IMPR CO
+   European Central Bank, 2013, EUR MON MARK SURV
+   Fischer T, 2014, J ECON DYN CONTROL, V48, P95, DOI 10.1016/j.jedc.2014.08.013
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gatti DD, 2011, NEW ECON WINDOWS, P1, DOI 10.1007/978-88-470-1971-3
+   Gavin W.T., 2014, LIMITATIONS FORWARD, P1
+   Georg C, 2014, 442014 DTSCH BUND
+   Georg C.P., 2010, JENA EC RES PAPERS
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Gerlach S, 2011, ECON LETT, V112, P186, DOI 10.1016/j.econlet.2011.04.011
+   Hatzopoulos V, 2015, QUANT FINANC, V15, P693, DOI 10.1080/14697688.2014.969889
+   Heider F, 2015, J FINANC ECON, V118, P336, DOI 10.1016/j.jfineco.2015.07.002
+   Heider F, 2009, INT J CENT BANK, V5, P5
+   Hommes C., 2013, BEHAV RATIONALITY HE
+   Hommes C, 2011, J ECON DYN CONTROL, V35, P1, DOI 10.1016/j.jedc.2010.10.003
+   HORDAHL P, 2008, BIS Q REV        DEC, P37
+   International Monetary Fund, 2015, 15204 INT MON FUND
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   Kleinberg JM, 1999, J ACM, V46, P604, DOI 10.1145/324133.324140
+   Krishnamurthy A, 2014, J FINANC, V69, P2381, DOI 10.1111/jofi.12168
+   Lengnick M, 2013, ECONOMICS-KIEL, V7, P1, DOI DOI 10.5018/EC0N0MICS-EJ0URNALJA.2013-32
+   Mancini L., 2015, REV FINANC STUD
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Mehrling P, 2011, NEW LOMBARD STREET F
+   NELDER JA, 1965, COMPUT J, V7, P308, DOI 10.1093/comjnl/7.4.308
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Riccetti L, 2013, J ECON DYN CONTROL, V37, P1626, DOI 10.1016/j.jedc.2013.02.008
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Stigum M, 2007, STIGUMS MONEY MARKET
+   Taylor J, 2009, NBER WORKING PAPERS
+   Taylor JB, 2009, AM ECON J-MACROECON, V1, P58, DOI 10.1257/mac.1.1.58
+NR 51
+TC 1
+Z9 1
+U1 2
+U2 9
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD DEC
+PY 2016
+VL 73
+BP 388
+EP 416
+DI 10.1016/j.jedc.2016.10.002
+PG 29
+WC Economics
+SC Business & Economics
+GA ED9ES
+UT WOS:000389173600021
+DA 2019-12-27
+ER
+
+PT J
+AU Hashem, SQ
+   Giudici, P
+AF Hashem, Shatha Qamhieh
+   Giudici, Paolo
+TI NetMES: a network based marginal expected shortfall measure
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE correlation networks; dynamic conditional covariances; graphical
+   Gaussian models; partial correlations; systemic risk measures; Islamic
+   banks
+ID GRAPHICAL MODELS; SYSTEMIC RISK; CONTAGION; CONNECTEDNESS
+AB This paper aims to build novel measures of systemic risk that take the multivariate nature of the problem into account by means of network models. To account for model uncertainty, we also employ a Bayesian approach, which allows model averaging over different network classes. The resulting systemic risk measure, which we call NetMES, is applied to the evaluation of the financial stability of the banking system in the Gulf Cooperation Council countries. Banks are classified as fully-fledged Islamic banks, conventional banks or hybrids: conventional banks with an Islamic window. The empirical findings indicate the presence of a difference between the two banking systems in terms of systemic risk, which can be explained by different levels of capitalization and leverage.
+C1 [Hashem, Shatha Qamhieh; Giudici, Paolo] Univ Pavia, Dept Econ & Management Sci, Via San Felice Al Monastero 5, I-27100 Pavia, Italy.
+RP Hashem, SQ (reprint author), Univ Pavia, Dept Econ & Management Sci, Via San Felice Al Monastero 5, I-27100 Pavia, Italy.
+EM shatha.hashem01@universitadipavia.it; paolo.giudici@unipv.it
+RI Giudici, Paolo Stefano/AAD-7430-2019
+OI Giudici, Paolo Stefano/0000-0002-4198-0127
+FU PhD program in Economics and Management of Technology at Pavia
+   University
+FX The authors gratefully acknowledge the financial support from the PhD
+   program in Economics and Management of Technology at Pavia University.
+   The authors also acknowledge Pejman Abedifar of the University of St
+   Andrews for the data.
+CR Acharya V., 2010, WORKING PAPER
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Aharony J, 1996, J BANK FINANC, V20, P57, DOI 10.1016/0378-4266(94)00116-2
+   Ahelegbey D. F., 2015, WORKING PAPER
+   Bank for International Settlements (BIS), 1994, 64 BIS
+   Banulescu GD, 2015, J BANK FINANC, V50, P575, DOI 10.1016/j.jbankfin.2014.01.037
+   Barigozzi Matteo, 2014, WORKING PAPER
+   Benoit S., 2015, WORKING PAPER
+   Billio M, 2012, COMPUT STAT DATA AN, V56, P3517, DOI 10.1016/j.csda.2010.08.015
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brownlees C., 2012, WORKING PAPER
+   Brunnermeier M.K., 2011, 17454 NAT BUR EC RES
+   Carvalho CM, 2007, BAYESIAN ANAL, V2, P69, DOI 10.1214/07-BA204
+   Corander J, 2006, J TIME SER ANAL, V27, P141, DOI 10.1111/j.1467-9892.2005.00460.x
+   Crockett A, 1997, FED BANK KS, P7
+   DAWID AP, 1993, ANN STAT, V21, P1272, DOI 10.1214/aos/1176349260
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R, 2012, WORKING PAPER
+   Engle R.F, 2001, 8554 NAT BUR EC RES
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   George E. A. J., 1998, COMMUNICATION   0224
+   Giudici P, 2016, J BUS ECON STAT, V34, P128, DOI 10.1080/07350015.2015.1017643
+   Hasan M, 2011, J INT COMMER ECON PO, V2, P163, DOI 10.1142/S1793993311000270
+   Hautsch N, 2014, INT J FORECASTING, V30, P781, DOI 10.1016/j.ijforecast.2013.09.004
+   Islamic Financial Services Board, 2014, TECHNICAL REPORT
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Kaminsky GL, 1999, J INT MONEY FINANC, V18, P537, DOI 10.1016/S0261-5606(99)00015-7
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   Lauritzen S.L., 1996, OXFORD STAT SCI SERI
+   Peltonen T. A., 2015, WORKING PAPER
+   Shafique A., 2012, ARAB J BUS MANAG REV, V1, P124
+   Whittaker J, 1990, WILEY SERIES PROBABI
+NR 33
+TC 4
+Z9 4
+U1 0
+U2 2
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD SEP
+PY 2016
+VL 2
+IS 3
+BP 1
+EP 36
+DI 10.21314/JNTF.2016.020
+PG 36
+WC Business, Finance
+SC Business & Economics
+GA EM4WK
+UT WOS:000395313500002
+DA 2019-12-27
+ER
+
+PT J
+AU Giglio, S
+   Kelly, B
+   Pruitt, S
+AF Giglio, Stefano
+   Kelly, Bryan
+   Pruitt, Seth
+TI Systemic risk and the macroeconomy: An empirical evaluation
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Systemic risk; Quantile regression; Dimension reduction; Macroeconomy
+ID QUANTILE REGRESSION; PRINCIPAL COMPONENTS; FINANCIAL CRISES; INFERENCE;
+   PREDICTORS; MODELS
+AB This article studies how systemic risk and financial market distress affect the distribution of shocks to real economic activity. We analyze how changes in 19 different measures of systemic risk skew the distribution of subsequent shocks to industrial production and other macroeconomic variables in the US and Europe over several decades. We also propose dimension reduction estimators for constructing systemic risk indexes from the cross section of measures and demonstrate their success in predicting future macroeconomic shocks out of sample. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Giglio, Stefano; Kelly, Bryan] Univ Chicago, Booth Sch Business, 5807 South Woodlawn Ave, Chicago, IL 60637 USA.
+   [Pruitt, Seth] Arizona State Univ, WP Carey Sch Business, POB 873906, Tempe, AZ 85287 USA.
+RP Kelly, B (reprint author), Univ Chicago, Booth Sch Business, 5807 South Woodlawn Ave, Chicago, IL 60637 USA.
+EM stefano.giglio@chicagobooth.edu; bryan.kelly@chicagobooth.edu;
+   seth.pruitt@asu.edu
+FU Macro Financial Modeling (MFM) initiative
+FX We thank Lars Hansen for many helpful conversations about this project.
+   We also thank our referee Laura Veldkamp, Tobias Adrian, Gadi Barlevy,
+   John Cochrane, Doug Diamond, Rochelle Edge, Arvind Krishnamurthy, Nellie
+   Liang, Sergio Rebelo, Amir Sufi, Amit Seru, Allan Timmermann, Jonathan
+   Wright and seminar participants at the Federal Reserve Board, the
+   Federal Reserve Bank of San Francisco, University of Chicago (Booth),
+   Northwestern University (Kellogg), Yale University (SoM), Arizona State
+   University (WPCarey), the Midwest Economic Association, the Western
+   Finance Association, and the NBER 2013 Summer Institute EFWW group for
+   helpful comments. We thank Xiao Qiao for excellent research assistance,
+   Roger Koenker, Andrew Lo, Christian Brownlees, and Mark Flood for
+   sharing Matlab code, and the Macro Financial Modeling (MFM) initiative
+   for generous support. Data can downloaded from
+   www.sethpruitt.net/GKPwebdata.zip.
+CR Abadie A, 2002, ECONOMETRICA, V70, P91, DOI 10.1111/1468-0262.00270
+   Acharya V., 2010, WORKING PAPER
+   Adrian T., 2011, COVAR UNPUB
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   Ando T, 2011, ECONOMET J, V14, P1, DOI 10.1111/j.1368-423X.2010.00320.x
+   Angrist J, 2006, ECONOMETRICA, V74, P539, DOI 10.1111/j.1468-0262.2006.00671.x
+   Arsov I., 2013, NEAR COINCIDEN UNPUB
+   Bai J, 2003, ECONOMETRICA, V71, P135, DOI 10.1111/1468-0262.00392
+   Bai J, 2008, J ECONOMETRICS, V146, P304, DOI 10.1016/j.jeconom.2008.08.010
+   Bai J, 2006, ECONOMETRICA, V74, P1133, DOI 10.1111/j.1468-0262.2006.00696.x
+   Bai JS, 2008, ANN ECON FINANC, V9, P201
+   Baker S., 2012, MEASURING EC P UNPUB
+   BERNANKE B, 1989, AM ECON REV, V79, P14
+   Bernanke BS, 1999, HBK ECON, V15, P1341
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, WORKING PAPER
+   Bloom N, 2009, ECONOMETRICA, V77, P623, DOI 10.3982/ECTA6248
+   Brownlees C., 2011, VOLATILITY COR UNPUB
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   Chernozhukov V, 2008, J ECONOMETRICS, V142, P379, DOI 10.1016/j.jeconom.2007.06.005
+   Chernozhukov V, 2010, ECONOMETRICA, V78, P1093, DOI 10.3982/ECTA7880
+   Chesher A, 2001, QUANTILE DRIVE UNPUB
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   DIEBOLD FX, 1995, J BUS ECON STAT, V13, P253, DOI 10.2307/1392185
+   Dodge Y, 2009, METRIKA, V70, P35, DOI 10.1007/s00184-008-0177-4
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   Gertler M, 2010, HDB MACROECONOMICS, P547, DOI DOI 10.1016/13978-0-444-53238-1.00011-9
+   Geweke J., 1977, LATENT VARIABLES SOC, P365
+   Gilchrist S, 2012, AM ECON REV, V102, P1692, DOI 10.1257/aer.102.4.1692
+   Hansen L, 2013, RISK TOPOGRAPHY SYST, P15
+   He XM, 2000, STAT SINICA, V10, P129
+   He Z., 2012, MACROECONOMIC UNPUB
+   Kelly B, 2015, J ECONOMETRICS, V186, P294, DOI 10.1016/j.jeconom.2015.02.011
+   Kelly B, 2013, J FINANC, V68, P1721, DOI 10.1111/jofi.12060
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P112, DOI 10.3905/jpm.2011.37.4.112
+   Kritzman M, 2010, FINANC ANAL J, V66, P30, DOI 10.2469/faj.v66.n5.3
+   Mendoza EG, 2010, AM ECON REV, V100, P1941, DOI 10.1257/aer.100.5.1941
+   Orlik A., 2013, UNDERSTANDING UNPUB
+   POLITIS DN, 1994, J AM STAT ASSOC, V89, P1303, DOI 10.2307/2290993
+   Sargent T.J., 1977, NEW METHODS BUSINESS, V1, P145
+   Schennach SM, 2008, ECONOMET THEOR, V24, P1010, DOI 10.1017/S0266466608080390
+   Schularick M, 2012, AM ECON REV, V102, P1029, DOI 10.1257/aer.102.2.1029
+   Schwert GW, 2011, EUR FINANC MANAG, V17, P789, DOI 10.1111/j.1468-036X.2011.00620.x
+   SCHWERT GW, 1989, CARN ROCH CONF SERIE, V31, P83, DOI 10.1016/0167-2231(89)90006-7
+   Stock JH, 2012, J BUS ECON STAT, V30, P481, DOI 10.1080/07350015.2012.715956
+   Stock JH, 2002, J AM STAT ASSOC, V97, P1167, DOI 10.1198/016214502388618960
+   STOCK JH, 2006, HDB EC FORECASTING, V1, P515, DOI DOI 10.1016/S1574-0706(05)01010-4
+   Wei Y, 2009, J AM STAT ASSOC, V104, P1129, DOI 10.1198/jasa.2009.tm08420
+   West KD, 1996, ECONOMETRICA, V64, P1067, DOI 10.2307/2171956
+   White H., 1994, ESTIMATION INFERENCE
+NR 55
+TC 58
+Z9 60
+U1 25
+U2 102
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD MAR
+PY 2016
+VL 119
+IS 3
+BP 457
+EP 471
+DI 10.1016/j.jfineco.2016.01.010
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA DJ4VH
+UT WOS:000374205700001
+DA 2019-12-28
+ER

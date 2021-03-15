@@ -1,0 +1,431 @@
+
+PT J
+AU Li, WW
+   Ben, SL
+   Hommel, U
+   Paterlini, S
+   Yu, JF
+AF Li, Wenwei
+   Ben, Shenglin
+   Hommel, Ulrich
+   Paterlini, Sandra
+   Yu, Jiefang
+TI Default contagion and systemic risk in loan guarantee networks
+SO ACCOUNTING AND FINANCE
+LA English
+DT Article
+DE Loan guarantee network; SMEs financing; Default contagion; Systemic
+   risk; Stress testing
+ID CAPITAL STRUCTURE; INTERBANK; EXPOSURES; TOPOLOGY
+AB This paper studies systemic risk in the Chinese debt market stemming from inter-corporate loan guarantees using field data from Zhejiang Province. We apply a weighted and directed network model to analyse the implications for default contagion and systemic risk under different stress testing scenarios. The empirical results indicate that the topology of the loan guarantee network is close to a 'scale-free' structure, which is known to be robust against accidental failures but vulnerable to coordinated attacks. Hence, the network is able to cope with idiosyncratic shocks resulting from single company failures, but can easily suffer from more widespread contagion if a group of systemically important companies are hit by a targeted shock. We further demonstrate that within our sample of small and medium-sized enterprise (SME) companies, increasing leverage reduces network stability and exacerbates the effects of contagion. More lenient bank lending policies increase the survival rate of sample companies and thereby reduce the losses from default contagion.
+C1 [Li, Wenwei] Shanghai Gold Exchange, Shanghai, Peoples R China.
+   [Li, Wenwei] Fudan Univ, Sch Management, Shanghai, Peoples R China.
+   [Ben, Shenglin] Zhejiang Univ, Int Business Sch, Haining, Peoples R China.
+   [Ben, Shenglin] Zhejiang Univ, Acad Internet Finance, Hangzhou, Zhejiang, Peoples R China.
+   [Hommel, Ulrich] EBS Univ Wirtschaft & Recht, Dept Finance & Accounting, Wiesbaden, Germany.
+   [Paterlini, Sandra] Univ Trento, Dept Management & Econ, Trento, Italy.
+   [Yu, Jiefang] Zhejiang Univ, Sch Econ, Hangzhou, Zhejiang, Peoples R China.
+RP Li, WW (reprint author), Shanghai Gold Exchange, Shanghai, Peoples R China.; Li, WW (reprint author), Fudan Univ, Sch Management, Shanghai, Peoples R China.
+EM liww@sge.com.cn
+CR Acemoglu D, 2013, MATH OPER RES, V38, P1, DOI 10.1287/moor.1120.0570
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2010, 16177 NBER
+   Alstott J, 2014, SCI REP-UK, V4, DOI 10.1038/srep07258
+   Barabasi AL, 2009, SCIENCE, V325, P412, DOI 10.1126/science.1173299
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Bhattacharya S., 1985, LIQUIDITY CRISES, P35
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   BRADLEY M, 1984, J FINANC, V39, P857, DOI 10.2307/2327950
+   Castiglionesi F., 2008, OPTIMAL FRAGILE FINA
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Colizza V, 2006, NAT PHYS, V2, P110, DOI 10.1038/nphys209
+   Cont R., 2010, NETWORK STRUCTURE SY
+   Cusmano L., 2012, WORKING PAPER
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   EBCI, 2014, TECHNICAL REPORT
+   Eboli M, 2019, J ECON DYN CONTROL, V103, P205, DOI 10.1016/j.jedc.2019.04.007
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   FREEMAN LC, 1977, SOCIOMETRY, V40, P35, DOI 10.2307/3033543
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Hackbarth D, 2006, J FINANC ECON, V82, P519, DOI 10.1016/j.jfineco.2005.10.003
+   Lo AW, 2011, J MONETARY ECON, V58, P471, DOI 10.1016/j.jmoneco.2011.06.001
+   McAuley JJ, 2007, APPL PHYS LETT, V91, DOI 10.1063/1.2773951
+   Modigliani F., 1958, AM ECON REV, V1, P3
+   MYERS SC, 1984, J FINANC, V39, P575, DOI 10.2307/2327916
+   Niu Z., 2017, HYBRID APPROACH RISK
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Ross S. A., 2012, CORPORATE FINANCE
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wang Q., 2012, ZHEJIANG FINANCE, V12, P29
+   Watts DJ, 1998, NATURE, V393, P440, DOI 10.1038/30918
+   Yang MM, 2014, INT J FINANC ENG, V1, DOI 10.1142/S2345768614500196
+   Zhang L, 2011, EC THEORY BUS MANAG, P57
+   [张泽旭 Zhang Zexu], 2012, [系统工程, Systems Engineering], V30, P25
+NR 38
+TC 0
+Z9 0
+U1 1
+U2 1
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0810-5391
+EI 1467-629X
+J9 ACCOUNT FINANC
+JI Account . Financ.
+PD NOV
+PY 2019
+VL 59
+SU 2
+BP 1923
+EP 1946
+DI 10.1111/acfi.12549
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA JN3KA
+UT WOS:000496797100002
+DA 2019-12-28
+ER
+
+PT J
+AU Kalbaska, A
+   Mateus, C
+AF Kalbaska, Alesia
+   Mateus, Cesario
+TI From sovereigns to banks: evidence on cross-border contagion
+SO JOURNAL OF BANKING REGULATION
+LA English
+DT Article
+DE Contagion; Systemic risk; Furfine algorithm; Stress testing; GIIPS
+ID RISK
+AB This paper analyses the evolution of the banking system sensitivity to cross-border contagion in 2006-2011. The study is performed on the basis of the BIS data on cross-border exposures and the Bankscope data on Tier 1 capital of 20 banking systems (Australia, Austria, Belgium, Canada, Finland, France, Germany, Greece, India, Ireland, Italy, Japan, the Netherlands, Portugal, Spain, Sweden, Switzerland, Turkey, the UK, and the USA). Since the European sovereign debt crisis took a decisive turn at the end of 2009, markets started looking at its main protagonists-Greece, Ireland, Italy, Portugal, and Spain (GIIPS)-with a lot of anxiety. However, unexpectedly, we find that a single failure among GIIPS could be absorbed by the network. Our results reveal that the USA, the UK, France, and Germany pose the highest threat to the systemic stability. Moreover, the resilience of the banking systems to contagion risks tends to improve over the years.
+C1 [Kalbaska, Alesia] Univ Siena, Dept Econ & Stat, Siena, Italy.
+   [Mateus, Cesario] Univ Roehampton, Business Sch, London, England.
+RP Mateus, C (reprint author), Univ Roehampton, Business Sch, London, England.
+EM cesario.mateus@roehampton.ac.uk
+RI Mateus, Cesario/Q-3608-2019
+OI Mateus, Cesario/0000-0003-0336-5219
+CR Allen F., 2008, 0807 WHART FIN I CTR
+   Blundell-Wignall A., 2010, OECD WORKING PAPERS, V4
+   Boss M., 2004, 7 OENB
+   Canedo JMD, 2009, INTELL SYST ACCOUNT, V16, P87, DOI 10.1002/isaf.295
+   Chan-Lau J., 2010, 10107 IMF
+   Cihak C M., 2007, 0759 IMF
+   Cihak Martin, 2011, 11186 IMF
+   Committee on the Global Financial System, 2011, 43 CGFS
+   Degryse H., 2010, INT REV FINANC, V10, P209, DOI DOI 10.1111/J.1468-2443.2010.01109.X
+   Degryse H, 2007, INT J CENT BANK, V3, P2
+   Espinosa-Vega M., 2010, 10105 IMF
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Memmel C, 2012, INT J CENT BANK, V8, P3
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Muller J., 2006, J FINANCIAL SERVICES, V29, P37, DOI DOI 10.1007/S10693-005-5107-2
+   Schoenmaker D, 2013, INT FINANC, V16, P1, DOI 10.1111/j.1468-2362.2013.12026.x
+   Toivanen M., 2009, 62009 BANK FINL RES
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   van Lelyveld I., 2006, INT J CENT BANK, V2, P2
+   Wells S., 2004, 230 BANK ENGL WORK
+NR 20
+TC 0
+Z9 0
+U1 1
+U2 2
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1745-6452
+EI 1750-2071
+J9 J BANK REGUL
+JI J. Bank Regul.
+PD MAR
+PY 2019
+VL 20
+IS 1
+BP 86
+EP 103
+DI 10.1057/s41261-018-0068-1
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA HU3EP
+UT WOS:000465155300005
+DA 2019-12-28
+ER
+
+PT J
+AU Cronin, D
+   Dunne, P
+   McQuinn, K
+AF Cronin, David
+   Dunne, Peter
+   McQuinn, Kieran
+TI Have Irish Sovereign Bonds Decoupled from the Euro Area Periphery, and
+   Why?
+SO ECONOMIC AND SOCIAL REVIEW
+LA English
+DT Article
+ID SPILLOVER; CONTAGION; MARKETS; IMPACT; RISK
+AB This paper considers whether Ireland's sovereign bonds have decoupled from other Euro Area sovereigns (Portugal, Italy, Greece and Spain - the 'periphery') with whom it was categorised during the sovereign bond market crisis of the early 2010s. Having initially reviewed yield and sovereign stress indicator data, two econometric methodologies (those of Gibson et al., 2017, and Diebold and Yilmaz, 2012) are applied to long-term bond spread data for the Euro Area 11 countries for the period March 2005 to July 2018. These indicate a shift since around mid-2013 in the Irish sovereign bond market's relationships within the Euro Area, with a higher correlation and interaction with developments in 'core' Member States' markets over those of the periphery Member States now occurring. An econometric model of the determination of the Irish sovereign bond yield spread shows the trend decline in its value since the early 2010s owing to both an improvement in the sustainability of the fiscal position and undue market pessimism dissipating over time. The paper concludes that a combination of emerging fiscal and financial sector vulnerabilities can lead quickly to an upsurge in the sovereign's market bond yields that is justified by these developments and which can be added to by sudden movements in market sentiment from undue optimism to undue pessimism. In such an environment, maintaining a sustainable fiscal path, adhering to fiscal rules, and fostering a resilient banking system are the best means by which the sovereign can help to keep its bond yields from being priced too highly and from varying substantially over time.
+C1 [Cronin, David; Dunne, Peter] Cent Bank Ireland, Dublin, Ireland.
+   [McQuinn, Kieran] Econ & Social Res Inst, Dublin, Ireland.
+RP Cronin, D (reprint author), Cent Bank Ireland, Dublin, Ireland.
+EM dave.cronin@centralbank.ie
+CR Acharya V, 2011, 17136 NBER
+   Addison-Smyth D, 2010, ECON SOC REV, V41, P201
+   Arezki R, 2011, WP1168 IMF
+   Arghyrou MG, 2012, J INT FINANC MARK I, V22, P658, DOI 10.1016/j.intfin.2012.03.003
+   Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Burke-Kennedy E, 2015, IRISH TIMES
+   Caceres C, 2010, 1020 IMF
+   Chan JCC, 2016, ENERG ECON, V54, P182, DOI 10.1016/j.eneco.2015.12.003
+   Claeys P, 2014, J BANK FINANC, V46, P151, DOI 10.1016/j.jbankfin.2014.05.011
+   Conefrey T, 2015, ECON SOC REV, V46, P197
+   Cronin D, 2019, INTERECONOMICS REV E, V54, P250
+   Cronin D, 2014, INTERECON REV EUR EC, V49, P212
+   Cronin D, 2019, J INT MONEY FINANC, V96, P49, DOI 10.1016/j.jimonfin.2019.05.001
+   Cronin D, 2016, ECON LETT, V143, P5, DOI 10.1016/j.econlet.2016.02.031
+   Dajcman S, 2015, ECON SOCIOL, V8, P28, DOI 10.14254/2071-789X.2015/8-1/3
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   De Grauwe P, 2012, JCMS-J COMMON MARK S, V50, P866, DOI 10.1111/j.1468-5965.2012.02287.x
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Drago D, 2016, J INT MONEY FINANC, V67, P264, DOI 10.1016/j.jimonfin.2016.06.004
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Fernandez-Rodriguez F, 2016, J INT FINANC MARK I, V43, P126, DOI 10.1016/j.intfin.2016.04.005
+   Garcia-De-Andoain C, 2017, ECON LETT, V159, P153, DOI 10.1016/j.econlet.2017.06.042
+   Gibson HD, 2017, ECON LETT, V156, P110, DOI 10.1016/j.econlet.2017.04.020
+   Hollo D., 2012, 1426 ECB
+   Honohan P, 2010, IRISH BANKING CRISIS
+   MacDonald R, 2018, J INT FINANC MARK I, V52, P17, DOI 10.1016/j.intfin.2017.09.003
+   Manasse P, 2012, CONTAGION EUROPE EVI
+   McCarthy Y, 2017, Q REV ECON FINANC, V64, P171, DOI 10.1016/j.qref.2016.08.002
+   McQuinn K, 2014, Q EC COMMENTARY, P55
+   McQuinn K, 2017, Q EC COMMENTARY, P85
+   Mody A, 2012, ECON POLICY, P199, DOI 10.1111/j.1468-0327.2012.00281.x
+   Smyth J, 2013, FINANCIAL TIMES
+NR 34
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ECONOMIC & SOCIAL STUDIES
+PI DUBLIN 2
+PA C/O ESRI, WHITAKER SQ, SIR JOHN ROGERSON'S QUAY, DUBLIN 2, 00000,
+   IRELAND
+SN 0012-9984
+J9 ECON SOC REV
+JI Econ. Soc. Rev.
+PD FAL
+PY 2019
+VL 50
+IS 3
+BP 529
+EP 556
+PG 28
+WC Economics; Sociology
+SC Business & Economics; Sociology
+GA JL3UZ
+UT WOS:000495459000005
+DA 2019-12-27
+ER
+
+PT J
+AU Silva-Buston, C
+AF Silva-Buston, Consuelo
+TI Systemic risk and competition revisited
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Systemic risk; Interbank correlation; Diversification; Competition
+ID BANK CONCENTRATION; DEPOSIT INSURANCE; DIVERSIFICATION; CONTAGION
+AB This paper revisits the mechanism behind the relation between bank competition and systemic risk. I decompose this risk into a component driven by banks' commonality with the market and a component arising from other sources of interbank commonality. I show that competition is negatively related to the latter. This relationship is stronger for more informationally opaque banks, financed with a larger share of uninsured sources and in countries with lower deposit insurance coverage. The findings are consistent with herding incentives at banks when competition is low. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Silva-Buston, Consuelo] Pontificia Univ Catolica Chile, Sch Management, Campus San Joaquin,Av Vicuna Mackenna 4860, Santiago, Chile.
+RP Silva-Buston, C (reprint author), Pontificia Univ Catolica Chile, Sch Management, Campus San Joaquin,Av Vicuna Mackenna 4860, Santiago, Chile.
+EM consuelosilva@uc.cl
+FU Fondecyt IniciacionComision Nacional de Investigacion Cientifica y
+   Tecnologica (CONICYT)CONICYT FONDECYT [11150492]
+FX I would like to thank Felipe Aldunate, Klenio Barbosa, Thorsten Beck,
+   Jeanne Lafortune, Borja Larrain, Gonzalo Ramirez, Klaus Schaeck, John
+   Sedunov, Giorgo Sertsios, Jose Tessada and Wolf Wagner for useful
+   feedback. This work was supported by the Fondecyt Iniciacion
+   (project/folio 11150492).
+CR Acharya V., 2007, J FINANC INTERMED, V17, P330
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya VV, 2006, J BUS, V79, P1355, DOI 10.1086/500679
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Aghion P, 2000, EUR ECON REV, V44, P713, DOI 10.1016/S0014-2921(00)00058-1
+   Allen F, 1998, J FINANC, V53, P1245, DOI 10.1111/0022-1082.00052
+   Allen F., 2000, COMP FINANCIAL SYSTE
+   Allen F, 2011, CROSS BORDER BANKING
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Barth J., 2008, BANK REGULATION SUPE
+   Bartholomew P., 2001, FINANCIAL MARKETS I, V13, P173
+   Beck T, 2006, J BANK FINANC, V30, P1581, DOI 10.1016/j.jbankfin.2005.05.010
+   Beck T., 2007, BANK CONCENTRATION F
+   Beck T., 2008, BANK COMPETITION FIN
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Beck T, 2010, WORLD BANK ECON REV, V24, P77, DOI 10.1093/wber/lhp016
+   BENSTON GJ, 1995, J MONEY CREDIT BANK, V27, P777, DOI 10.2307/2077749
+   Berger AN, 2009, J FINANC SERV RES, V35, P99, DOI 10.1007/s10693-008-0050-7
+   Berger AN, 2004, J MONEY CREDIT BANK, V36, P433, DOI 10.1353/mcb.2004.0040
+   Boone J, 2008, ECON J, V118, P1245, DOI 10.1111/j.1468-0297.2008.02168.x
+   Boot AWA, 2000, J FINANC, V55, P679, DOI 10.1111/0022-1082.00223
+   Boyd JH, 2005, J FINANC, V60, P1329, DOI 10.1111/j.1540-6261.2005.00763.x
+   BOYD JH, 1986, J ECON THEORY, V38, P211, DOI 10.1016/0022-0531(86)90115-8
+   Cihak Martin, 2012, 6175 WORLD BANK
+   Cohen WM, 2012, HBK ECON, V1, P129, DOI 10.1016/S0169-7218(10)01004-X
+   Craig B., 1997, EC REV FEDERAL RESER, VQ2, P25
+   Danielsson J, 2008, ECON THEOR, V35, P293, DOI 10.1007/s00199-007-0238-3
+   De Jonghe O, 2015, J BANK FINANC, V61, pS3, DOI 10.1016/j.jbankfin.2014.12.024
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Degryse H, 2007, J FINANC INTERMED, V16, P399, DOI 10.1016/j.jfi.2007.03.002
+   Demirguc-Kunt A., 2013, 6934 WORLD BANK
+   Demsetz RS, 1997, J MONEY CREDIT BANK, V29, P300, DOI 10.2307/2953695
+   DIAMOND DW, 1984, REV ECON STUD, V51, P393, DOI 10.2307/2297430
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Flannery MJ, 2013, J FINANC INTERMED, V22, P55, DOI 10.1016/j.jfi.2012.08.001
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Francis B, 2012, FINANC MANAGE, V41, P159, DOI 10.1111/j.1755-053X.2012.01181.x
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Giglio S, 2016, J FINANC ECON, V119, P457, DOI 10.1016/j.jfineco.2016.01.010
+   Gropp R, 2011, REV FINANC STUD, V24, P2084, DOI 10.1093/rfs/hhq114
+   Hakenes H, 2010, J FINANC STABIL, V6, P156, DOI 10.1016/j.jfs.2009.05.006
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Jimenez G, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.02.004
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Laeven L, 2012, IMF WORKING PAPER
+   Laeven L, 2007, J FINANC ECON, V85, P331, DOI 10.1016/j.jfineco.2005.06.001
+   Laeven L, 2016, J BANK FINANC, V69, pS25, DOI 10.1016/j.jbankfin.2015.06.022
+   Love I., 2012, 6163 WORLD BANK
+   MAYER C, 1988, EUR ECON REV, V32, P1167, DOI 10.1016/0014-2921(88)90077-3
+   *OECD, 2001, UND DIG DIV
+   PANZAR JC, 1987, J IND ECON, V35, P443, DOI 10.2307/2098582
+   Perotti EC, 2002, EUR ECON REV, V46, P1599, DOI 10.1016/S0014-2921(02)00241-6
+   Persaud A., 2000, J RISK FINANCE, V2, P59, DOI DOI 10.1108/EB022947
+   Plumlee M, 2015, REV ACCOUNT STUD, V20, P593, DOI 10.1007/s11142-014-9304-9
+   Presbitero AF, 2011, J FINANC INTERMED, V20, P387, DOI 10.1016/j.jfi.2010.09.001
+   Primrose J., 2003, CENSUS COMPUTER INTE
+   RAJAN RG, 1992, J FINANC, V47, P1367, DOI 10.2307/2328944
+   Schaeck K., 2017, 2 FACES INTERBANK CO
+   Schaeck K, 2014, FINANC MANAGE, V43, P215, DOI 10.1111/fima.12010
+   Schaeck K, 2009, J MONEY CREDIT BANK, V41, P711, DOI 10.1111/j.1538-4616.2009.00228.x
+   Srivastav A, 2017, J ACCOUNT ECON, V64, P37, DOI 10.1016/j.jacceco.2017.05.001
+   Wagner W, 2011, J FINANC, V66, P1141, DOI 10.1111/j.1540-6261.2011.01666.x
+   Zarutskie R., 2009, P 45 ANN C BANK STRU, P183
+NR 64
+TC 0
+Z9 0
+U1 5
+U2 8
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD APR
+PY 2019
+VL 101
+BP 188
+EP 205
+DI 10.1016/j.jbankfin.2019.02.007
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA HR6XS
+UT WOS:000463297100014
+DA 2019-12-28
+ER
+
+PT J
+AU Chan, KK
+   Milne, A
+AF Chan, Ka Kei
+   Milne, Alistair
+TI The Global Legal Entity Identifier System: How Can It Deliver?
+SO JOURNAL OF RISK AND FINANCIAL MANAGEMENT
+LA English
+DT Article
+DE big data; data standards; entity identifiers; macroprudential policy;
+   regulation; risk management; Dodd-Frank Act; operational efficiency;
+   systemic risk
+ID FINANCIAL DATA
+AB We examine the global legal entity identifier (LEI) system for the identification of participants in financial markets. Semi-structured interviews with data professionals revealed the many ways in which the LEI can improve both business process efficiency, and counterparty and credit risk management. Larger social benefits, including the monitoring of systemic financial risk, are achievable if it becomes the accepted universal standard for legal entity identification. Our interviews also review the substantial co-ordination and investment barriers to LEI adoption. To address these, a clear regulatory-led road map is needed for its future development, with widespread application in regulatory reporting.
+C1 [Chan, Ka Kei] Brunel Univ London, Dept Econ & Finance, Uxbridge UB8 3PH, Middx, England.
+   [Milne, Alistair] Loughborough Univ, Sch Business & Econ, Loughborough LE11 2TU, Leics, England.
+RP Milne, A (reprint author), Loughborough Univ, Sch Business & Econ, Loughborough LE11 2TU, Leics, England.
+EM KaKei.Chan@brunel.ac.uk; a.k.l.milne@lboro.ac.uk
+OI Milne, Alistair/0000-0002-4135-3983
+CR A Team_Group, 2009, BUS ENT ID CRUC FDN
+   Alexander L, 2017, BIG DATA-US, V5, P177, DOI 10.1089/big.2016.0074
+   Bottega JA, 2012, J ECON BUS, V64, P105, DOI 10.1016/j.jeconbus.2011.06.002
+   Braswell Jefferson, 2012, RESP FIN STAB BOARDS
+   Buch Claudia, 2017, IRV FISH COMM NAT BA
+   Carmassi J, 2016, J FINANC SERV RES, V49, P175, DOI 10.1007/s10693-016-0251-4
+   Chan Ka Kei, 2013, EC WORKING PAPERS
+   Draghi Mario, 2009, REESTABLISHMENT FSF
+   Fan Liju, 2018, 4 INT WORKSH DAT SCI, P3
+   Flood MD, 2016, FINANC STAB REV, V20, P129
+   FSB, 2012, 4 PROGR NOT GLOB LEI
+   FSB, 2012, CHAR REG OV COMM GLO
+   FSB, 2017, GOV ARR UN T ID UTI
+   FSB, 2012, FORM LAUNCH FSB LEG
+   FSB, 2013, 5 PROGR NOT GLOB LEI
+   FSB, 2012, GLOB LEG ENT ID FIN
+   FSB, 2018, GOV ARR UN PROD ID U
+   FSB, 2009, FIN STAB FOR REEST F
+   FSOC, 2012, 2012 ANN REP
+   Global LEI Foundation and McKinsey and Company, 2017, LEG ENT ID VAL UN CO
+   Gregory J., 2012, WILEY FINANCE SERIES
+   Grody Allan D., 2007, J OPERATIONAL RISK, V1
+   Grody Allan D., 2018, J RISK MANAGEMENT FI, V11, P308
+   Harrell M. C., 2009, DATA COLLECTION METH
+   Hille E, 2013, J BANK REGUL, V14, P269, DOI 10.1057/jbr.2013.12
+   Houstoun Kevin, 2015, PRELIMINARY REPORT S
+   Hygate Justin, 2012, OUR NUMBERS UP
+   Jegher Jacob, 2013, IT SPENDING BANKING
+   Jenner B., 2004, COMPANION QUALITATIV
+   LEI ROC, 2016, COLL DAT DIR ULT PAR
+   LEI ROC, 2013, LEI REG OV COMM ROC
+   LEI ROC, 2015, GLOB LEI SYST REG US
+   LEI ROC, 2018, GLOB LEI SYST REG US
+   MILNE A, 2018, JOURNAL OF BANKING F, V30, P1613, DOI DOI 10.1016/J.JBANKFIN.2005.09.006
+   Office of Financial Research (OFR), 2010, FED REGISTER, V75, P74146
+   Piechocki Michal, 2017, IFC BANK IND STAT SE
+   Powell Linda F., 2011, LEGAL ENTITY IDENTIF
+   PWC, 2009, LEHM BROTH BANKR LES
+   ROC, 2013, LEI REG OV COMM MAK
+NR 39
+TC 1
+Z9 1
+U1 0
+U2 1
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 1911-8066
+EI 1911-8074
+J9 J RISK FINANC MANAG
+JI J. Risk Financ. Manag.
+PD MAR 7
+PY 2019
+VL 12
+IS 1
+AR 39
+DI 10.3390/jrfm12010039
+PG 29
+WC Business, Finance
+SC Business & Economics
+GA HT1IJ
+UT WOS:000464317000001
+OA DOAJ Gold
+DA 2019-12-28
+ER

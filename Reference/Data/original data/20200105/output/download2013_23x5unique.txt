@@ -1,0 +1,361 @@
+
+PT J
+AU Jacome, LI
+AF Jacome, Luis I.
+TI MACROPRUDENTIAL POLICIES IN LATIN AMERICA Institutional foundations*
+SO TRIMESTRE ECONOMICO
+LA Spanish
+DT Article
+ID CRISES
+AB One of the legacies of the financial crisis in the United States and Europe is the adoption of macroprudential policies in an increasing number of countries, including in Latin America. These policies aim to prevent future financial crises through the adoption of far-reaching reforms that involve changing the institutional framework for monetary and financial policies, using models and indicators to monitor the buildup of systemic risks, and utilizing instruments designed to prevent the materialization of those risks. The objective of this paper is to examine the institutional aspects of macroprudential policy in Latin America. In particular, it assesses the strengths and weaknesses of existing institutional models and offers suggestions to improve the effectiveness of those models. The analysis focuses on the two main institutional arrangements that exist in this region, the "Pacific" model which includes countries like Chile, Colombia, Peru, Costa Rica and Mexico, and the "Atlantic" model, which includes countries such as Argentina, Brazil and Uruguay.
+C1 [Jacome, Luis I.] Georgetown Univ, Fondo Monetario Int, Washington, DC 20057 USA.
+   [Jacome, Luis I.] Georgetown Univ, Ctr Estudios Amer Latina, Washington, DC 20057 USA.
+RP Jacome, LI (reprint author), Georgetown Univ, Fondo Monetario Int, Washington, DC 20057 USA.
+EM LJacome@imf.org
+CR Acharya Viral, 2013, 2013 NBER
+   Bordo M, 2002, 8966 NBER
+   Calvo G. A., 2004, 10520 NBER
+   Calvo Guillermo, 1998, J APPL EC, V1, P35
+   Canales-KriljenKo J. I, 2010, 10292 IMF
+   Chang R, 2001, Q J ECON, V116, P489, DOI 10.1162/00335530151144087
+   Claessens Stijn, 2011, 11188 IMF
+   De Krivoy Ruth, 2000, VENEZUELAN BANKING C
+   De Nicolo G., 2012, 1205 IMF
+   Eichengreen B., 1994, MONEY DOCTORS FOREIG
+   ELLIS L., 2012, MACROPRUDENTIAL POLI
+   Fondo Monetario Internaciohal, 2011, MACR POL ORG FRAM
+   Fondo Monetario Internaciohal, 2010, W HEM DEP
+   Fondo Monetario Internaciohal, 2011, W HEM DEP
+   Fondo Monetario Internaciohal Consejo de Estabilidad Financiera y Banco Internacional para Pagos, GUID ASS SYST IMP FI
+   Galindo Arturo, 2010, 116 IADB
+   Garcia-Escribano Mercedes, 2011, 1111 IMF
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Ingves Stephan, 2003, INDIVIDUAL FAILURES
+   Jacome LI, 2008, EUR J POLIT ECON, V24, P788, DOI 10.1016/j.ejpoleco.2008.07.003
+   Jacome Luis I, 2012, 12183 IMF
+   Jacome Luis I, 2008, 08135 IMF
+   Jacome Luis I., 2013, IMF WORKING PAPER
+   Jacome Luis I., 2011, EMERG MARK REV, V13, P424
+   Jacome Luis I., 2004, 0412 IMF
+   Jara A., 2009, BIS Q REV
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Laeven L., 2008, 08224 IMF
+   Laeven L., 2012, 12163 IMF
+   Lim C.H., 2011, 11238 IMF
+   Nier E., 2009, 0970 IMF
+   Nier E. W., 2011, 11250 IMF
+   Nier Erlend W., 2011, NATL I EC REV
+   Roubini Nouriel, 2006, INT FINANC, V9, P87, DOI DOI 10.1111/INFI.2006.9.ISSUE-1
+   Terrier Gilbert, 2011, 11159 IMF
+   Tovar C. E., 2012, 12142 IMF
+NR 36
+TC 0
+Z9 0
+U1 0
+U2 7
+PU FONDO CULTURA ECONOMICA
+PI TLALPAN
+PA AVE PICACHO AJUSCO, NO 227, TLALPAN CP 14200, MEXICO
+SN 0041-3011
+J9 TRIMEST ECON
+JI Trimest. Econ.
+PD OCT-DEC
+PY 2013
+VL 80
+IS 320
+BP 723
+EP 770
+PG 48
+WC Economics
+SC Business & Economics
+GA AJ5HZ
+UT WOS:000337714600001
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Podlich, N
+   Wedow, M
+AF Podlich, N.
+   Wedow, M.
+TI Are insurers SIFIs? A MGARCH model to measure interconnectedness
+SO APPLIED ECONOMICS LETTERS
+LA English
+DT Article
+DE systemic risk; CDS spreads; interconnectedness; MGARCH; G21; G22; G28
+ID DETERMINANTS
+AB We examine whether insurance companies should, like banks, be regulated as Systemically Important Financial Institutions (SIFIs). For this purpose, we empirically model the interconnectedness between different sectors of the financial system with a multivariate GARCH model using the information content of Credit Default Swap (CDS) prices. Our findings suggest that large insurers transmit risks to other parts of the financial system. The magnitude of these contagion effects is substantially lower than those of large banks that are currently treated as SIFIs.
+C1 [Podlich, N.; Wedow, M.] Deutsch Bundesbank, D-60006 Frankfurt, Germany.
+RP Podlich, N (reprint author), Deutsch Bundesbank, D-60006 Frankfurt, Germany.
+EM natalia.podlich@bundesbank.de
+CR Alexander C, 2008, J BANK FINANC, V32, P1008, DOI 10.1016/j.jbankfin.2007.08.002
+   BCBS, 2011, GLOB SYST IMP BANKS
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   De Nicolo G, 2002, J BANK FINANC, V26, P861, DOI 10.1016/S0378-4266(02)00211-X
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Hammoudeh S, 2013, APPL ECON, V45, P213, DOI 10.1080/00036846.2011.597727
+   Podlich N., 2012, 15 DTSCH BUND 2
+   Stolz Stephanie Marie, 2010, 117 ECB
+NR 8
+TC 2
+Z9 2
+U1 0
+U2 22
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1350-4851
+J9 APPL ECON LETT
+JI Appl. Econ. Lett.
+PD MAY 1
+PY 2013
+VL 20
+IS 7
+BP 677
+EP 681
+DI 10.1080/13504851.2012.730127
+PG 5
+WC Economics
+SC Business & Economics
+GA 055YZ
+UT WOS:000312455300013
+DA 2019-12-27
+ER
+
+PT J
+AU Engineer, MH
+   Schure, P
+   Gillis, M
+AF Engineer, Merwan H.
+   Schure, Paul
+   Gillis, Mark
+TI A positive analysis of deposit insurance provision: Regulatory
+   competition among European Union countries
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Banking; Deposit insurance; Regulatory competition; European Union
+ID COMMERCIAL PAPER; BANKING; RISK
+AB We consider the provision of deposit insurance as the outcome of a non-cooperative policy game between nations. Nations compete for deposits in order to protect their banking systems from the destabilizing impact of potential capital flight. Policies are chosen to attract depositors who optimally respond to the expected return to deposits, which depends on deposit insurance levels, systemic risk and transaction costs. We identify both defensive and beggar-thy-neighbour policies. The model sheds light on the European banking crisis of 2008 in which individual nations ratcheted up their deposit insurance levels. (C) 2013 The Authors. Published by Elsevier B.V. All rights reserved.
+C1 [Engineer, Merwan H.; Schure, Paul] Univ Victoria, Victoria, BC V8W 2Y2, Canada.
+   [Gillis, Mark] Commonwealth Bank Australia, New York, NY USA.
+RP Schure, P (reprint author), Univ Victoria, POB 1700, Victoria, BC V8W 2Y2, Canada.
+EM schure@uvic.ca
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2003, J FINANC, V58, P2745, DOI 10.1046/j.1540-6261.2003.00621.x
+   Allen F, 1998, J FINANC, V53, P1245, DOI 10.1111/0022-1082.00052
+   Allen F, 2011, CROSS BORDER BANKING
+   Angeletos GM, 2006, AM ECON REV, V96, P1720, DOI 10.1257/aer.96.5.1720
+   [Anonymous], 2008, FINANCIAL TIMES
+   [Anonymous], 2008, ECONOMIST
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   British Bankers Association, 2008, BBA STAT IR GUAR
+   Bruche M, 2010, J MONETARY ECON, V57, P45, DOI 10.1016/j.jmoneco.2009.11.007
+   Calzolari G, 2011, J FINANC INTERMED, V20, P178, DOI 10.1016/j.jfi.2010.02.002
+   Dell'Ariccia G, 2006, J FINANC ECON, V79, P401, DOI 10.1016/j.jfineco.2005.02.003
+   Demirguc-Kunt A, 2008, J FINANC INTERMED, V17, P407, DOI 10.1016/j.jfi.2007.03.009
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenbeis RA, 2008, J FINANC STABIL, V4, P168, DOI 10.1016/j.jfs.2007.09.004
+   Engineer M.H., 2012, 2912 RCEA
+   European Commission, 2010, SEC20108342 EUR COMM
+   European Commission, 2011, LEG STAT TEMP RUL ES
+   European Commission Joint Research Centre, 2008, INV EFF EU DEP GUAR
+   Forum on Cross-Border Financial Groups, 2009, CROSS BORD BANK EUR
+   Gatev E, 2006, J FINANC, V61, P867, DOI 10.1111/j.1540-6261.2006.00857.x
+   Glenys S., 2008, BLOOMBERG       1023
+   GORTON G, 1988, OXFORD ECON PAP, V40, P751, DOI 10.1093/oxfordjournals.oep.a041885
+   Government of Denmark, 2008, DENM GUAR DEP SEN DE
+   Government of Ireland, 2008, GOV DEC SAF IR BANK
+   Hardy DC, 2011, J FINANC STABIL, V7, P155, DOI 10.1016/j.jfs.2010.01.003
+   Hulzinga H, 2006, J BANK FINANC, V30, P965, DOI 10.1016/j.jbankfin.2005.06.003
+   *INT MON FUND, 2008, GLOB FIN STAB REP CO
+   Kacperczyk M, 2010, J ECON PERSPECT, V24, P29, DOI 10.1257/jep.24.1.29
+   King M. R., 2012, CROSS BORDER CONTAGI
+   Laeven L, 2010, 10146 IMF
+   Levy A., 2010, BANK ITALY WORKING P, V753
+   Malkonen V, 2012, J FINANC STABIL, V8, P84, DOI 10.1016/j.jfs.2011.02.005
+   Morris S, 2001, NBER MACROECON ANN, V15, P139
+   Morrison AD, 2011, J BANK FINANC, V35, P3400, DOI 10.1016/j.jbankfin.2011.05.017
+   Panetta Fabio, 2009, BIS PAPERS, V48
+   Reuters, 2008, REUTERS REGULAT 1005
+   van den End JW, 2012, J FINANC STABIL, V8, P107, DOI 10.1016/j.jfs.2011.05.003
+NR 39
+TC 11
+Z9 11
+U1 0
+U2 33
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2013
+VL 9
+IS 4
+BP 530
+EP 544
+DI 10.1016/j.jfs.2013.10.001
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA 267EC
+UT WOS:000328078500007
+OA Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Donaldson, T
+   Schoemaker, PJH
+AF Donaldson, Thomas
+   Schoemaker, Paul J. H.
+TI Self-Inflicted Industry Wounds: EARLY WARNING SIGNALS AND PELICAN
+   GAMBITS
+SO CALIFORNIA MANAGEMENT REVIEW
+LA English
+DT Article
+DE Strategic management; Risk management; Ethics
+AB Systemic risks arising from underlying interdependencies can create havoc at an industry level and are often too formidable for any single firm to manage. The contagion effects of these risks, including the recent financial crisis, offshore oil spills, and the Japanese nuclear disaster, have upended industry practices. Sometimes they have even pulled economies apart at the seams. We recommend that leaders heed models of cooperative behavior found in nature by engaging in "Pelican Gambits," which we define as strategic moves towards cooperation in highly competitive economic environments for the purpose of limiting risk to one's firm, the industry and society.
+C1 [Donaldson, Thomas] Univ Penn, Wharton Sch, Philadelphia, PA 19104 USA.
+   [Schoemaker, Paul J. H.] Univ Penn Wharton Sch, Mack Ctr Technol Innovat, Philadelphia, PA USA.
+RP Donaldson, T (reprint author), Univ Penn, Wharton Sch, Philadelphia, PA 19104 USA.
+EM donaldst@wharton.upenn.edu; schoemaker@decisionstrat.com
+RI Donaldson, Thomas/I-5435-2013; reddy, indra/C-5363-2011; Schoemaker,
+   Paul/E-5495-2013
+OI Schoemaker, Paul/0000-0002-3619-5335
+CR Abbott KW, 2010, ELGAR ORIG REF, P525
+   [Anonymous], 2004, BLOOMBERG BUSINESSWE
+   Austern David, 1988, MEMO MANVILLE PERSON
+   Barley S.R., 2004, HIRED GUNS AND WARM
+   Bazerman MH, 1997, SLOAN MANAGE REV, V38, P89
+   Belanger J., 2009, RESPONSIBLE CARE HIS, p[1, 5]
+   Bernanke B., 2007, GSE PORTFOLIOS SYSTE
+   Bernanke Ben, 2006, HEDGE FUNDS AND SYST
+   Burke Bill, 2001, VIRGINIAN PILOT
+   Cook J.J., 1974, WONDERS OF THE PELIC
+   Crooks E., 2011, BP SHARES RISE DESPI
+   Diebold Francis X., 2010, THE KNOWN THE UNKNOW
+   FISCHHOFF B, 1975, ORGAN BEHAV HUM PERF, V13, P1, DOI 10.1016/0030-5073(75)90002-1
+   Gordon HS, 1954, J POLIT ECON, V62, P124, DOI 10.1086/257497
+   Gruenfeld DH, 2000, ORGAN BEHAV HUM DEC, V82, P45, DOI 10.1006/obhd.2000.2886
+   Haufler Virginia, 2011, GLOBALIZATION AND SE
+   HIRSHLEIFER J, 1978, AM ECON REV, V68, P238
+   Jacob John, 2003, DO ANALYSTS AT INDEP
+   Jenks Andrew L., 2011, PERILS OF PROGRESS E, P13
+   King AA, 2000, ACAD MANAGE J, V43, P698, DOI 10.2307/1556362
+   Kunreuther H, 2003, J RISK UNCERTAINTY, V26, P231, DOI 10.1023/A:1024119208153
+   Markowitz G, 2000, AM J PUBLIC HEALTH, V90, P36, DOI 10.2105/AJPH.90.1.36
+   Massey C, 2005, MANAGE SCI, V51, P932, DOI 10.1287/mnsc.1050.0386
+   Moffet J., 2007, RESPONSIBLE CARE A C, p[177, 204]
+   Nakamura A, 2011, PUBLIC ADMIN REV, V71, P893, DOI 10.1111/j.1540-6210.2011.02437.x
+   Nalebuff B., 1997, COOPETITION
+   Norris Floyd, 2012, NY TIMES
+   Olendorf R, 2004, P ROY SOC B-BIOL SCI, V271, P177, DOI 10.1098/rspb.2003.2586
+   PARKER CE, 2009, GEO J LEGAL ETHICS, V22, P201
+   Pope Daniel, 1983, THE MAKING OF MODERN
+   Prigogine Ilya, 1984, ORDER OUT OF CHAOS M
+   Richards M, 2008, J BUS ETHICS, V81, P499, DOI 10.1007/s10551-007-9520-3
+   Rulke DL, 2000, MANAGE SCI, V46, P612, DOI 10.1287/mnsc.46.5.612.12052
+   Schelling T, 1978, MICROMOTIVES MACROBE
+   Skeel D, 2011, THE NEW FINANCIAL DE
+   The Associated Press, 2010, NY TIMES
+   WIND Y., 2009, THE NETWORK CHALLENG
+NR 37
+TC 5
+Z9 5
+U1 2
+U2 1284
+PU UNIV CALIF
+PI BERKELEY
+PA GRAD SCH BUSINESS ADMIN, BERKELEY, CA 94720 USA
+SN 0008-1256
+J9 CALIF MANAGE REV
+JI Calif. Manage. Rev.
+PD WIN
+PY 2013
+VL 55
+IS 2
+BP 24
+EP 45
+DI 10.1525/cmr.2013.55.2.24
+PG 22
+WC Business; Management
+SC Business & Economics
+GA 084RF
+UT WOS:000314556100002
+DA 2019-12-27
+ER
+
+PT J
+AU Bicu, A
+   Candelon, B
+AF Bicu, Andreea
+   Candelon, Bertrand
+TI On the importance of indirect banking vulnerabilities in the Eurozone
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Financial integration; GVAR; Banking crisis; Sovereign debt crisis
+AB This paper investigates banking and sovereign distress in the Eurozone and the importance of direct and indirect financial exposures. We use BIS cross-border banking claims to link member states in a GVAR framework and jointly model sectoral CDS premia. Based on balance sheet positions of an intermediate debtor country, we calculate indirect exposures and asses how the level of interconnectedness is impacted when indirect links are accounted for. We notice a general slowdown in financial integration and a reduction in cross-border assets in the hope of limiting international contagion. By differentiating between direct and indirect links, we show that the impact of reduced weights on core member states is mostly insignificant and that deleveraging strategies are not generally able to successfully reduce risk. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Bicu, Andreea; Candelon, Bertrand] Maastricht Univ, Sch Business & Econ, Dept Econ, NL-6200 MD Maastricht, Netherlands.
+RP Bicu, A (reprint author), Maastricht Univ, Sch Business & Econ, Dept Econ, POB 616, NL-6200 MD Maastricht, Netherlands.
+EM a.bicu@maastrichtuniversity.nl; b.candelon@maastrichtuniversity.nl
+CR Acharya V, 2011, WORKING PAPER
+   Ahrend R., 2011, WORKING PAPER
+   Allen F, 2011, CROSS BORDER BANKING
+   Allen M., 2002, WORKING PAPER
+   Alter A., 2011, WORKING PAPER
+   Angeloni C., 2012, WORKING PAPER
+   Bicu A., 2011, WORKING PAPER
+   Bolton P., 2011, WORKING PAPER
+   Cesa-Bianchi A, 2011, WORKING PAPER
+   Claessens S., 2010, 12 INT CTR MON BANK
+   Dees S, 2007, J APPL ECONOMET, V22, P1, DOI 10.1002/jae.932
+   Dieckmann S., 2011, REV FINANC, V16, P1
+   Eickmeier S., 2011, DO CREDIT SUPPLY SHO
+   Ejsing J, 2011, ECON LETT, V110, P28, DOI 10.1016/j.econlet.2010.10.001
+   Galesi A., 2009, WORKING PAPER
+   Gerlach S., 2010, BANKING SOVERREIGN R
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Krugman P., 2008, INT FINANCE MU UNPUB
+   Mody A., 2011, WORKING PAPER
+   NYBLOM J, 1989, J AM STAT ASSOC, V84, P223, DOI 10.2307/2289867
+   Pesaran M. H., 1998, ECON LETT, V58, P17, DOI DOI 10.1016/S0165-1765(97)00214-0
+   Pesaran MH, 2004, J BUS ECON STAT, V22, P129, DOI 10.1198/073500104000000019
+   PLOBERGER W, 1992, ECONOMETRICA, V60, P271, DOI 10.2307/2951597
+   Puig-Gomez M., 2011, WORKING PAPER
+   Reinhart CM, 2011, AM ECON REV, V101, P1676, DOI 10.1257/aer.101.5.1676
+   Rosenberg Ch, 2005, DEBT RELATED VULNERA
+   Smith L.V., 2011, GVAR TOOLBOX 1 1
+NR 27
+TC 4
+Z9 4
+U1 2
+U2 12
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD DEC
+PY 2013
+VL 37
+IS 12
+SI SI
+BP 5007
+EP 5024
+DI 10.1016/j.jbankfin.2013.07.046
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA 261RV
+UT WOS:000327683200024
+DA 2019-12-27
+ER

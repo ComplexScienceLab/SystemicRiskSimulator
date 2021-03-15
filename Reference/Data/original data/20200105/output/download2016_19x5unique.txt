@@ -1,0 +1,411 @@
+
+PT J
+AU Nguyen, TD
+   Elisabeta, P
+AF Tung Dao Nguyen
+   Elisabeta, Pana
+TI Financial integration and diversification benefits: China and ASEAN4
+   countries
+SO MANAGERIAL FINANCE
+LA English
+DT Article
+DE Financial integration; International diversification; Diversification
+   benefits; Equity market index; Investment constraint
+ID STOCK-MARKET INTEGRATION; ASIA; TRANSMISSION; CRISIS; IMPACT
+AB Purpose - The strategic partnership between China and ASEAN has resulted in significant financial reforms at the country and regional level. The scale and pace of these changes call for systematic assessments of their bearing on the development and integration of financial markets in this region. The purpose of this paper is to investigate the level of financial integration of the equity markets in China and ASEAN4 countries (Indonesia, Malaysia, Philippines, and Thailand) for the period 2004-2014.
+   Design/methodology/approach - The authors use the beta and sigma convergence, dynamic conditional correlation, and wavelet correlation to assess the degree, trend, and change across different time scales of the integration of China-ASEAN4 equity markets. Using two measures of change in return per unit risk and variance, we assess the difference in diversification benefits between an equity portfolio China-ASEAN4 and China-EU.
+   Findings - The authors find that financial integration across China-ASEAN4 equity markets fluctuated between a moderate level before and after the recent crisis and a higher level during the crisis. The results indicate that investors achieve higher diversification benefits from a cross-industry than a cross-country investment strategy within this region.
+   Research limitations/implications - Future research should investigate whether local factors and existing cultural and political differences explain the weak to moderate level of integration of China and emerging ASEAN equity markets.
+   Practical implications - A good understanding of the degree and evolution of the regional financial integration may be used by investors to allocate capital efficiently when adding ASEAN4 equities to a portfolio of Chinese equities.
+   Social implications - Systematic assessments of the regional financial integration contribute to the effort to mitigate the ensuing cross-border financial contagion during crises.
+   Originality/value - The authors argue that that the increase in correlations of CHINA-ASEAN4 equity markets during the recent crisis does not reflect a permanent shift in the dynamic of the dominant markets in the region. While investors achieve higher diversification benefits from a cross-industry than a cross-country investment strategy within this region, the diversification benefits are lower for long-term than short-term investors.
+C1 [Tung Dao Nguyen] Illinois Wesleyan Univ, Dept Econ, Bloomington, IL 61701 USA.
+   [Elisabeta, Pana] Illinois Wesleyan Univ, Dept Accounting & Financial Serv, Bloomington, IL 61701 USA.
+RP Elisabeta, P (reprint author), Illinois Wesleyan Univ, Dept Accounting & Financial Serv, Bloomington, IL 61701 USA.
+EM epana@iwu.edu
+CR Almekinders G., 2015, WORKING PAPER
+   Association of Southeast Asian Nations, 2014, OVERVIEW
+   Babecky J., 2013, NATL I ECON REV, V223, P16
+   Balli F, 2014, ECON MODEL, V41, P398, DOI 10.1016/j.econmod.2014.05.035
+   Balli F, 2011, J ECON BUS, V63, P89, DOI 10.1016/j.jeconbus.2010.11.001
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   BOLLERSLEV T, 1990, REV ECON STAT, V72, P498, DOI 10.2307/2109358
+   Burdekin RCK, 2012, PAC-BASIN FINANC J, V20, P521, DOI 10.1016/j.pacfin.2011.12.004
+   Chan C. K., 1992, FINANCIAL REV, V27, P289
+   Chan S., 2010, INT RES J FINAN EC, V44, P161
+   Chen LN, 2007, INT FINANC REV, V8, P95, DOI 10.1016/S1569-3767(07)00005-2
+   Chiou P, 2013, REV QUANT FINANC ACC, V40, P341, DOI 10.1007/s11156-011-0257-9
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   DeFusco R. A., 1996, FINANCIAL REV, V31, P343
+   Dewandaru G, 2015, PHYSICA A, V419, P241, DOI 10.1016/j.physa.2014.10.046
+   Donadelli M, 2014, J INT FINANC MARK I, V32, P184, DOI 10.1016/j.intfin.2014.06.003
+   Donadelli M, 2012, RES ECON, V66, P320, DOI 10.1016/j.rie.2012.06.001
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Fernandez V, 2005, EMERG MARK FINANC TR, V41, P57, DOI 10.1080/1540496X.2005.11052617
+   Fernandez-Macho J, 2012, PHYSICA A, V391, P1097, DOI 10.1016/j.physa.2011.11.002
+   Fratzscher M, 2002, INT J FINANC ECON, V7, P165, DOI 10.1002/ijfe.187
+   Gallegati M, 2012, COMPUT STAT DATA AN, V56, P3491, DOI 10.1016/j.csda.2010.11.003
+   Graham M, 2012, GLOB FINANC J, V23, P34, DOI 10.1016/j.gfj.2012.01.003
+   Huang Bwo-Nung, 2000, INT REV FINANC ANAL, V9, P281, DOI DOI 10.1016/S1057-5219(00)00031-4
+   Hwang JK, 2012, INT ADV ECON RES, V18, P227, DOI 10.1007/s11294-012-9343-6
+   Jayasuriya SA, 2011, EMERG MARK REV, V12, P418, DOI 10.1016/j.ememar.2011.06.005
+   Johansson AC, 2008, J ASIAN ECON, V19, P101, DOI 10.1016/j.asieco.2007.12.015
+   Kim S, 2012, REV INT ECON, V20, P332, DOI 10.1111/j.1467-9396.2012.01025.x
+   Li K., 2003, J EMPIR FINANC, V10, P57, DOI DOI 10.1016/S0927-5398(02)00027-0
+   Loh LX, 2013, RES INT BUS FINANC, V29, P1, DOI 10.1016/j.ribaf.2013.01.001
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Moerman GA, 2008, J INT MONEY FINANC, V27, P1122, DOI 10.1016/j.jimonfin.2008.05.005
+   Narayan S, 2014, ECON MODEL, V39, P19, DOI 10.1016/j.econmod.2014.02.012
+   Narayan S, 2012, J ASIAN ECON, V23, P669, DOI 10.1016/j.asieco.2012.05.001
+   Park C.Y., 2011, 79 AS DEV BANK
+   Pukthuanthong K, 2009, J FINANC ECON, V94, P214, DOI 10.1016/j.jfineco.2008.12.004
+   Tian GG, 2007, AUST ECON PAP, V46, P240, DOI 10.1111/j.1467-8454.2007.00317.x
+   Tiwari AK, 2013, J ECON INTEGR, V28, P441, DOI 10.11130/jei.2013.28.3.441
+   Valls N, 2012, GLOBAL ECON REV, V41, P111, DOI 10.1080/1226508X.2012.686476
+   Wang Y., 2012, SPILLOVER EFFECT ASI
+   Yilmaz K, 2010, J ASIAN ECON, V21, P304, DOI 10.1016/j.asieco.2009.09.001
+   Yu IW, 2010, J BANK FINANC, V34, P2874, DOI 10.1016/j.jbankfin.2010.02.010
+NR 42
+TC 4
+Z9 4
+U1 4
+U2 5
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 0307-4358
+EI 1758-7743
+J9 MANAG FINANC
+JI Manag. Financ.
+PY 2016
+VL 42
+IS 5
+BP 496
+EP 514
+DI 10.1108/MF-12-2014-0300
+PG 19
+WC Business, Finance
+SC Business & Economics
+GA EL1JZ
+UT WOS:000394377900006
+DA 2019-12-27
+ER
+
+PT J
+AU Boucher, C
+   Kouontchou, P
+   Maillet, B
+AF Boucher, Christophe
+   Kouontchou, Patrick
+   Maillet, Bertrand
+TI ON THE RISK OF SYSTEMIC RISK MEASURES
+SO REVUE ECONOMIQUE
+LA French
+DT Article
+AB The systemic risk measure has emerged as a major concern for the stability of the financial system. Most of the measures proposed are based on the estimation of conditional quantiles, which are extremely sensitive to the specification and estimation of risk models used. We propose to correct the systemic risk measures applying a backtest procedure. Our application on the covaR suggests that the model risk is important and that institutions identified as "systemic" differ, depending on whether we consider or not the corrected version of the systemic risk measure.
+C1 [Boucher, Christophe] CNRS, EconomiX, QCG ABN AMRO, Paris, France.
+   [Boucher, Christophe] Univ Paris Ouest, Nanterre, France.
+   [Kouontchou, Patrick] Univ Lorraine CEREFIGE, Nancy, France.
+   [Maillet, Bertrand] Univ Orleans, Univ Paris Dauphine LEDa SDFi, QCG ABN AMRO, Orleans, France.
+   [Maillet, Bertrand] Inst Louis Bachelier, Paris, France.
+RP Maillet, B (reprint author), Univ Paris 09, Pl Marechal de Lattre de Tassigny, F-75016 Paris, France.
+EM christophe.boucher@u-paris10.fr; patrick.kouontchou@univ-lor-raine.fr;
+   bertrand.maillet@dauphine.fr
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   ADRIAN T., 2011, 17454 COVAR
+   Benoit S, 2013, FIN20141030 HEC
+   Bernard C, 2013, HANDBOOK ON SYSTEMIC RISK, P165
+   Bisias D., 2012, 0001 OFF FIN RES
+   Boucher C, 2012, REV ECON-FR, V63, P591, DOI 10.3917/reco.633.0591
+   Boucher CM, 2014, J BANK FINANC, V44, P72, DOI 10.1016/j.jbankfin.2014.03.019
+   Brownlees Christian, 2011, WORKING PAPER
+   Brunnermeier M, 2013, WORKING PAPER
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Colletaz G, 2013, J BANK FINANC, V37, P3843, DOI 10.1016/j.jbankfin.2013.06.006
+   DANIELSSON J., 2014, 11 SRC
+   DORING B., 2013, WORKING PAPER
+   GIGLIO S., 2013, 1249 CHIC BOOTH, P12
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Gorton Gary, 2012, INT J THEORETICAL AP, V104, P425
+   Hautsch N, 2014, REV FINANC, V18, P1
+   HURLIN C., 2013, SYSTEMIC RISK SCORE
+   HURLIN C., 2013, WORKING PAPER
+   IDIER J., 2013, EUROPEAN CENTRAL BAN
+   Kupiec P, 1995, J DERIV, V3, P73, DOI [10.3905/jod.1995.407942, DOI 10.3905/JOD.1995.407942]
+   KUPIEC P., 2015, 201502 AEI
+   Leccadito A, 2014, INT J FORECASTING, V30, P206, DOI 10.1016/j.ijforecast.2013.07.014
+   Lo Duca M, 2013, J BANK FINANC, V37, P2183, DOI 10.1016/j.jbankfin.2012.06.010
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   ORION P., 2007, VALUE RISK NEW BENCH
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   SABZEVARI H., 2014, INT RISK MAN C WARS
+   TAVOLARO S., 2014, DEBATS EC FINANCIERS, V10
+   Wong WK, 2008, J BANK FINANC, V32, P1404, DOI 10.1016/j.jbankfin.2007.11.012
+   Wong WK, 2010, J EMPIR FINANC, V17, P526, DOI 10.1016/j.jempfin.2009.11.004
+NR 31
+TC 2
+Z9 2
+U1 0
+U2 0
+PU PRESSES FOND NAT SCI POLIT
+PI PARIS 07
+PA 27 RUE SAINT-GUILLAUME, 75341 PARIS 07, FRANCE
+SN 0035-2764
+EI 1950-6694
+J9 REV ECON-FR
+JI Rev. Econ.
+PD MAR
+PY 2016
+VL 67
+IS 2
+BP 263
+EP 278
+DI 10.3917/reco.pr2.0065
+PG 16
+WC Economics
+SC Business & Economics
+GA VH7GA
+UT WOS:000453995800004
+DA 2019-12-28
+ER
+
+PT J
+AU Reveiz-Herault, A
+AF Reveiz-Herault, Alejandro
+TI AN ACTIVE ASSET MANAGEMENT INVESTMENT PROCESS FOR DRAWDOWN-AVERSE
+   INVESTORS
+SO INTELLIGENT SYSTEMS IN ACCOUNTING FINANCE & MANAGEMENT
+LA English
+DT Article
+DE active management; genetic algorithms; portfolio optimization;
+   propensities
+ID FUNDAMENTAL LAW
+AB The contribution of this article is to present an investment process that allows the asset manager to limit risk exposure to macro-factors - including expectations on correlation dynamics - whilst allowing for selective exposure to risk factors using factor-portfolios that emulate the risk and return profile of market micro-factors.
+   The design of the process provides the ability to explicitely limit risk exposures to macro-factors based on forward-looking narratives allowing the investor to reflect - in the resulting active allocation - expectations of financial or systemic crises by, say, restricting the overall exposure to the credit macro-factor that includes the risk factor exposures ( micro-level) arising, for example, from corporate and supranational spreads whilst simultaneously increasing the exposure to flight-to-safety macro-factors under a local or global crisis. This process is better suited to drawdown-averse investors that are willing to forgo some upside in order to effectively limit significant portfolio losses from crises, systemic or otherwise.
+   In order to improve the optimization over the rugged solution space resulting from superimposing macrofactors' risk envelopes on the factor-portfolios' tracking error allocation, a genetic-algorithm-based optimization is proposed. Copyright (C) 2015 John Wiley & Sons, Ltd.
+C1 [Reveiz-Herault, Alejandro] World Bank Grp, Quantitat Solut, Strateg Asset Allocat & Analyt Dept, Washington, DC 20433 USA.
+RP Reveiz-Herault, A (reprint author), World Bank Grp, Quantitat Solut, Strateg Asset Allocat & Analyt Dept, Washington, DC 20433 USA.
+EM areveiz@worldbank.org
+CR Ammann M, 2001, FINANC ANAL J, V57, P32, DOI 10.2469/faj.v57.n2.2431
+   Angeline P. J., 1993, THESIS
+   Angeline PJ, 1997, EV PROGR 6 6 INT C E
+   Bhansali V., 2005, PUTTING EC BACK QUAN
+   Bhansali V., 2001, J RISK, V4, P91
+   Clarke R, 2002, FINANC ANAL J, V58, P48, DOI 10.2469/faj.v58.n5.2468
+   FORREST S, 1990, PHYSICA D, V42, P1, DOI 10.1016/0167-2789(90)90063-U
+   GRINOLD RC, 1989, J PORTFOLIO MANAGE, V15, P30, DOI 10.3905/jpm.1989.409211
+   Holland J.H., 1975, ADAPTATION NATURAL A
+   Houck C. R, 1996, GENETIC ALGORITHM FU
+   KOZA J, 1999, GENETIC PROGRAMMING
+   Koza J. R., 1992, GENETIC PROGRAMMING
+   Michalewicz Z., 1996, GENETIC ALGORITHMS D
+   Michod R. E., 1999, DARWINIAN DYNAMICS E
+   Morris C, 1998, WORKING PAPER
+   Reveiz A, 2009, INTEREST RATE MODELS, P134
+   Reveiz A., 2008, CASE ACTIVE MANAGEME
+   Ross S.A., 1976, RISK RETURN FINANCE
+   Roy AD, 1952, ECONOMETRICA, V20, pA431
+   Spears WM., 2000, NATURAL COMPUTER SER
+   WINSTON PH, 1992, ARTIFICIAL INTELLIGE
+   Zangari P., 2003, MODERN INVESTMENT MA
+NR 22
+TC 1
+Z9 1
+U1 0
+U2 1
+PU JOHN WILEY & SONS LTD
+PI CHICHESTER
+PA THE ATRIUM, SOUTHERN GATE, CHICHESTER PO19 8SQ, W SUSSEX, ENGLAND
+SN 1055-615X
+EI 1099-1174
+J9 INTELL SYST ACCOUNT
+JI Intell. Syst. Account. Financ. Manag.
+PD JAN-JUN
+PY 2016
+VL 23
+IS 1-2
+SI SI
+BP 85
+EP 96
+DI 10.1002/isaf.1375
+PG 12
+WC Business, Finance
+SC Business & Economics
+GA FF9RN
+UT WOS:000409354800006
+DA 2019-12-28
+ER
+
+PT J
+AU Gualdi, S
+   Cimini, G
+   Primicerio, K
+   Di Clemente, R
+   Challet, D
+AF Gualdi, Stanislao
+   Cimini, Giulio
+   Primicerio, Kevin
+   Di Clemente, Riccardo
+   Challet, Damien
+TI Statistically validated network of portfolio overlaps and systemic risk
+SO SCIENTIFIC REPORTS
+LA English
+DT Article
+ID FINANCIAL NETWORKS; CONTAGION; MARKET; MODEL; LIQUIDITY; STABILITY;
+   BACKBONE; WORLD; SIZE
+AB Common asset holding by financial institutions (portfolio overlap) is nowadays regarded as an important channel for financial contagion with the potential to trigger fire sales and severe losses at the systemic level. We propose a method to assess the statistical significance of the overlap between heterogeneously diversified portfolios, which we use to build a validated network of financial institutions where links indicate potential contagion channels. The method is implemented on a historical database of institutional holdings ranging from 1999 to the end of 2013, but can be applied to any bipartite network. We find that the proportion of validated links (i.e. of significant overlaps) increased steadily before the 2007-2008 financial crisis and reached a maximum when the crisis occurred. We argue that the nature of this measure implies that systemic risk from fire sales liquidation was maximal at that time. After a sharp drop in 2008, systemic risk resumed its growth in 2009, with a notable acceleration in 2013. We finally show that market trends tend to be amplified in the portfolios identified by the algorithm, such that it is possible to have an informative signal about institutions that are about to suffer (enjoy) the most significant losses (gains).
+C1 [Gualdi, Stanislao; Primicerio, Kevin; Challet, Damien] Cent Supelec, Lab MICS, F-92290 Chatenay Malabry, France.
+   [Cimini, Giulio] IMT Sch Adv Studies, I-55100 Lucca, Italy.
+   [Cimini, Giulio] CNR, ISC, I-00185 Rome, Italy.
+   [Di Clemente, Riccardo] MIT, 77 Massachusetts Ave, Cambridge, MA 02139 USA.
+   [Challet, Damien] Encelade Capital SA, CH-1015 Lausanne, Switzerland.
+RP Gualdi, S (reprint author), Cent Supelec, Lab MICS, F-92290 Chatenay Malabry, France.
+EM stanislao.gualdi@gmail.com
+RI Cimini, Giulio/I-7413-2019; Di Clemente, Riccardo/N-9471-2014
+OI Cimini, Giulio/0000-0001-5698-8597; Di Clemente,
+   Riccardo/0000-0001-8005-6351
+FU Labex Louis Bachelier [ANR 11-LABX-0019]; project GROWTHCOM (FP7-ICT)
+   [611272]; project MULTIPLEX (FP7-ICT) [317532]; project DOLFINS
+   (H2020-EU.1.2.2) [640772]
+FX We thank Fabio Saracco, Tiziano Squartini and Frederic Abergel for
+   useful discussions. D. Challet and S. Gualdi thank Luciano Pietronero
+   together with the (ISC)-CNR team for their kind hospitality. S. Gualdi
+   acknowledges support of Labex Louis Bachelier (project number ANR
+   11-LABX-0019). G. Cimini and R. Di Clemente acknowledge support from
+   project GROWTHCOM (FP7-ICT, grant n. 611272). G. Cimini acknowledges
+   support from projects MULTIPLEX (FP7-ICT, grant n. 317532) and DOLFINS
+   (H2020-EU.1.2.2., grant n. 640772). The funders had no role in study
+   design, data collection and analysis, decision to publish, or
+   preparation of the manuscript.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anton M, 2014, J FINANC, V69, P1099, DOI 10.1111/jofi.12149
+   Barucca P, 2016, ARXIV160605164
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   BENJAMINI Y, 1995, J R STAT SOC B, V57, P289
+   Blanchet J, 2013, RANDOM STRUCT ALGOR, V42, P159, DOI 10.1002/rsa.20403
+   Bluhm M., 2011, WORKING PAPER SERIES, V19
+   Borgatti S. P., 2011, ANAL AFFILIATION NET
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Butler K., 1993, 467 STANF U
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Chan-Lau J., 2009, GLOB FIN STAB REP
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cimini G, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0161642
+   Cimini G, 2015, SCI REP-UK, V5, DOI 10.1038/srep15758
+   Cont R., 2014, MATH FINANC, V26, P835
+   Corsi F, 2016, OPER RES, V64, P1073, DOI 10.1287/opre.2015.1464
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Eisler Z, 2006, EUR PHYS J B, V51, P145, DOI 10.1140/epjb/e2006-00189-6
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gionis A., 2007, ACM T KNOWL DISCOV D, V1, P14, DOI DOI 10.1145/1217299.1217303
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Goldberg DS, 2003, P NATL ACAD SCI USA, V100, P4372, DOI 10.1073/pnas.0735871100
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Greenwood R, 2011, J FINANC ECON, V102, P471, DOI 10.1016/j.jfineco.2011.06.003
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hong YL, 2013, COMPUT STAT DATA AN, V59, P41, DOI 10.1016/j.csda.2012.10.006
+   Horvat EA, 2013, SOC NETW ANAL MIN, V3, P1209, DOI 10.1007/s13278-013-0133-9
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Khandani Amir E., 2007, J INVESTMENT MANAGEM, p[5, 5]
+   Krause A, 2012, J ECON BEHAV ORGAN, V83, P583, DOI 10.1016/j.jebo.2012.05.015
+   Latapy M, 2008, SOC NETWORKS, V30, P31, DOI 10.1016/j.socnet.2007.04.006
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   McCulloh I., 2010, CMUISR10130 CTR COMP
+   Miller R. G., 1981, SPRINGER SERIES STAT
+   Neal Z, 2013, SOC NETW ANAL MIN, V3, P915, DOI 10.1007/s13278-013-0107-y
+   Neal Z, 2014, SOC NETWORKS, V39, P84, DOI 10.1016/j.socnet.2014.06.001
+   Park J, 2004, PHYS REV E, V70, DOI 10.1103/PhysRevE.70.066117
+   Saracco F., 2016, ARXIV160702481
+   Saracco F, 2015, SCI REP-UK, V5, DOI 10.1038/srep10595
+   Serrano MA, 2009, P NATL ACAD SCI USA, V106, P6483, DOI 10.1073/pnas.0808904106
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Squartini T, 2011, NEW J PHYS, V13, DOI 10.1088/1367-2630/13/8/083001
+   Staum J, 2013, HANDBOOK ON SYSTEMIC RISK, P512
+   Sudarsanam P, 2002, GENOME RES, V12, P1723, DOI 10.1101/gr.301202
+   Tumminello M, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0017994
+   Zumbach G, 2004, QUANT FINANC, V4, P441, DOI 10.1080/14697680400008619
+   Zweig KA, 2011, SOC NETW ANAL MIN, V1, P187, DOI 10.1007/s13278-011-0021-0
+NR 50
+TC 27
+Z9 27
+U1 1
+U2 22
+PU NATURE PUBLISHING GROUP
+PI LONDON
+PA MACMILLAN BUILDING, 4 CRINAN ST, LONDON N1 9XW, ENGLAND
+SN 2045-2322
+J9 SCI REP-UK
+JI Sci Rep
+PD DEC 21
+PY 2016
+VL 6
+AR 39467
+DI 10.1038/srep39467
+PG 14
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA EF3FZ
+UT WOS:000390211400001
+PM 28000764
+OA DOAJ Gold, Green Published, Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Kim, GCS
+AF Kim, Gloria C. S.
+TI "99.9% effective": calculating credibility and consuming trust in
+   antibacterial promises
+SO CONSUMPTION MARKETS & CULTURE
+LA English
+DT Article
+DE antibacterial; consumer information; heuristics; health; numeracy;
+   product claims; risk; trust
+AB This article introduces the phrase 99.9% Effective - the claim brandished on all manner of antibacterial hand sanitizers - as a contemporary marketplace icon. It establishes the contexts of global contagious risk in which antibacterial hand sanitizers' 99.9% Effective claim proliferates and becomes a marketplace icon. Beginning from the premise that there is no separation between our material consumption of hand sanitizers and our consumption of the cultures of the antibacterial promise, it analyzes the material meaning of this marketplace icon. Situated amid a backdrop of quotidian but potentially catastrophic twenty-first century systemic microbial risk, this article uncovers the relationship between conditions of trust, the cultures of calculation and the work of consuming this marketplace icon.
+C1 [Kim, Gloria C. S.] Univ Wisconsin, Ctr 21st Century Studies, Milwaukee, WI 53201 USA.
+RP Kim, GCS (reprint author), Univ Wisconsin, Ctr 21st Century Studies, Milwaukee, WI 53201 USA.
+EM kim225@uwm.edu
+FU Center for 21st Century Studies
+FX This article was written with generous postdoctoral support from the
+   Center for 21st Century Studies for which the author is grateful.
+CR AMOORE LOUISE, 2013, POLITICS POSSIBILITY
+   Barthes R., 1972, MYTHOLOGIES
+   BECK U., 1992, RISK SOC NEW MODERNI
+   Bokek-Cohen Y, 2015, CONSUMP MARK CULT, V18, P155, DOI 10.1080/10253866.2014.935938
+   Foster RJ, 2008, COCA-GLOBALIZATION: FOLLOWING SOFT DRINKS FROM NEW YORK TO NEW GUINEA, P1, DOI 10.1057/9780230610170
+   Giddens Anthony, 1990, CONSEQUENCES MODERNI
+   Hacking Ian, 1990, TAMING CHANCE
+   Pink S, 2014, J MAT CULT, V19, P425, DOI 10.1177/1359183514555053
+   Porter M. Theodore, 1990, TRUST NUMBERS PURSUI
+   Power M, 2004, HUM RELAT, V57, P765, DOI 10.1177/0018726704044955
+   Puskar J., 2012, ACCIDENT SOC FICTION
+   Wolfe N, 2012, VIRAL STORM DAWN NEW
+   WORLD HEALTH ORG, 2009, WHO GUID HAND HYG HE
+NR 13
+TC 1
+Z9 1
+U1 0
+U2 45
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1025-3866
+EI 1477-223X
+J9 CONSUMP MARK CULT
+JI Consump. Mark. Cult.
+PD AUG
+PY 2016
+VL 19
+IS 4
+BP 346
+EP 352
+DI 10.1080/10253866.2015.1085135
+PG 7
+WC Business
+SC Business & Economics
+GA DP9ME
+UT WOS:000378819500002
+DA 2019-12-28
+ER

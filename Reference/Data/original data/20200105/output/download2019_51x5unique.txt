@@ -1,0 +1,451 @@
+
+PT J
+AU Miro, DR
+   Piffaut, PV
+AF Rey Miro, Damia
+   Piffaut, Pedro, V
+TI Financial Quality Index (ICF)
+SO CUADERNOS DE ECONOMIA-SPAIN
+LA Spanish
+DT Article
+DE Stress index; Composite indicator; Real economy; Systemic risk;
+   Financial quality index
+ID TIME-SERIES; UNIT-ROOT; HYPOTHESIS; MARKET
+AB Once the financial crisis started in the middle of 2007, the financial authorities, as well as the main governments of developed economies, began to emphasize the importance of anticipating and estimating the systemic financial risks over the risk of a given sector. Beyond macroeconomic strength, if they have higher quality equity markets, countries should be better prepared to cope with potential volatility of capital flows. Consequently, the new European directive MIFID II (Markets in Financial Instruments Directive), which will come into force in January 2018, is based on the premises of the market's security, efficiency and transparency towards investors. The current work intends to develop an indicator that reinforces and measures the quality of the market, in particular the Spanish equity market, with the development of a new indicator called ICF (Financial Quality Index) that shows, in an objective way, the degree of maturity and market stability.
+C1 [Rey Miro, Damia] Univ Barcelona, Dept Econ, Barcelona Stock Exchange Studies BME, Barcelona, Spain.
+   [Piffaut, Pedro, V] Columbia Univ, New York, NY USA.
+RP Miro, DR (reprint author), Univ Barcelona, Dept Econ, Barcelona Stock Exchange Studies BME, Barcelona, Spain.
+EM dreym@grupobme.es; pnv2102@caa.columbia.edu
+CR Acharya V., 2010, 1002 FRB CLEV
+   Adrian T., 2011, 17454 NBER
+   AKERLOF GA, 1970, Q J ECON, V84, P488, DOI 10.2307/1879431
+   [Anonymous], 2000, EUROPEAN FINANCIAL M, V6, P173, DOI DOI 10.1111/1468-036X.00119
+   Beck T, 2010, WORLD BANK ECON REV, V24, P77, DOI 10.1093/wber/lhp016
+   Bharath Sreedhar, 2010, REV FINANCIAL STUDIE
+   Brownlees C., 2012, WORKING PAPER
+   Caldarelli R., 2009, WP09100 INT MON FUND
+   Caporin M., 2013, 18741 NBER
+   Dambra Michael, 2017, POSTIPO MARKET RETUR
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Drewnowski Jan, 1966, LEVEL LIVING INDEX
+   Dubois Michel, 2000, LONG RUN PERFORMANCE
+   DURBIN J, 1951, BIOMETRIKA, V38, P159, DOI 10.2307/2332325
+   DURBIN J, 1950, BIOMETRIKA, V37, P409, DOI 10.1093/biomet/37.3-4.409
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   Forbes K. J., 2001, INT FINANCIAL CONTAG, P43, DOI DOI 10.1007/978-1-4757-3314-3_
+   GOLDFELD S. M., 1973, J ECONOMETRICS, V1, P3, DOI DOI 10.1016/0304-4076(73)90002-X
+   Goldsmith R. W., 1969, FINANCIAL STRUCTURE
+   Gray Dale F., 2011, SVERIGES RIKSBANK EC, V2, P68
+   HAMILTON JD, 1994, J ECONOMETRICS, V64, P307, DOI 10.1016/0304-4076(94)90067-1
+   Hansen BE, 2000, J ECONOMETRICS, V97, P93, DOI 10.1016/S0304-4076(99)00068-8
+   Hansen Bruce E., 1997, BOSTON COLL WORKING, V365
+   Hobijn B., 1998, 9802A ER U EC I
+   Hollo D, 2012, WORKING PAPER SERIES, V1426
+   HORVATH R, 2012, GLOBAL EC J, V12, P1
+   Hovakimian A., 2012, 18043 NBER
+   Huang X., 2011, FINANCE EC DISCUSSIO
+   Hyde S, 2007, INT FINANC REV, V8, P39, DOI 10.1016/S1569-3767(07)00003-9
+   Illing M., 2006, J FINANCIAL STABILIT, V2, P243, DOI DOI 10.1016/j.jfs.2006.06.002
+   IMF BIS FSB, 2009, GUID ASS SYST IMP FI
+   Kang JK, 1999, REV FINANC STUD, V12, P519, DOI 10.1093/rfs/12.3.519
+   KASA K, 1992, J MONETARY ECON, V29, P95, DOI 10.1016/0304-3932(92)90025-W
+   Keynes J. M., 1936, GEN THEORY EMPLOYMEN
+   KING RG, 1993, Q J ECON, V108, P717, DOI 10.2307/2118406
+   Kotkatvuori-Ornberg J, 2013, INT REV FINANC ANAL, V28, P70, DOI 10.1016/j.irfa.2013.01.009
+   Kritzman M., 2010, 478510 MIT SLOAN SCH
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Leticia Estevez, 2015, SPANISH FINANCIAL MA
+   Lybek Tonny, 2003, IMF WORKING PAPERS
+   Mehran Hamid, 2009, FINANCIAL VISIBILITY
+   Mehran Hamid, 2009, FIN VIS DEC GO PRIV
+   Metes Dan V., 2005, VISUAL UNIT ROOT STA
+   Morris V. C., 2010, WORKING PAPER
+   Nagel S, 2012, REV FINANC STUD, V25, P2005, DOI 10.1093/rfs/hhs066
+   Nelson W. R., 2007, IRVING FISHER COMMIT, V23, P92
+   NEWEY WK, 1994, REV ECON STUD, V61, P631, DOI 10.2307/2297912
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.1093/biomet/75.2.335
+   Piffauta PV, 2016, CUAD ECON-SPAIN, V39, P138, DOI 10.1016/j.cesjef.2016.09.003
+   QUANDT RE, 1972, J AM STAT ASSOC, V67, P306, DOI 10.2307/2284373
+   Roberts S. W., 1959, TECHNOMETRICS, V1, P239, DOI DOI 10.1080/00401706.1959.10489860
+   Segoviano M. A., 2009, 094 INT MON FUND
+   Terceno A, 2011, INVESTIGACIONES EURO, V17, P33
+   Velazquez A., 2005, DESIGUALDAD CALIDAD, P199
+NR 55
+TC 0
+Z9 0
+U1 2
+U2 8
+PU ASOC CUADERNOS ECONOMIA, DEPT ECONOMIC ANALYSIS
+PI MADRID
+PA FAC CIENCIAS ECON & EMPRESARIALES, UNIV AUTONOMA MADRID, C/FRANCISCOS
+   TOMAS & VALIENTE 5, MADRID, CANTOBLANCO 28049, SPAIN
+SN 0210-0266
+EI 2340-6704
+J9 CUAD ECON-SPAIN
+JI Cuad. Econ.-Spain
+PD MAY-AUG
+PY 2019
+VL 42
+IS 119
+BP 189
+EP 206
+DI 10.32826/cude.v42i119.170
+PG 18
+WC Economics
+SC Business & Economics
+GA HQ3CW
+UT WOS:000462286200007
+OA Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Andrei, LD
+   Brezeanu, P
+   Dinu, SM
+   Diaconescu, T
+   Anghelache, C
+AF Andrei, Laurentiu Dumitru
+   Brezeanu, Petre
+   Dinu, Sorin-Marius
+   Diaconescu, Tiberiu
+   Anghelache, Constantin
+TI CORRELATIONS AND TURBULENCE OF THE EUROPEAN MARKETS
+SO ROMANIAN JOURNAL OF ECONOMIC FORECASTING
+LA English
+DT Article
+DE turbulence; dynamic correlations; MIDAS regression
+ID MEASURING SYSTEMIC RISK; IMPACT; BANKS; US
+AB This paper uses stock market data to compute the turbulence index at the European level. We also compute the dynamic matrix of correlations for all pairs of country indices in our sample. Running regressions of the turbulence index on dynamic correlations we attempt to identify the extent to which some particular pairs of correlations may influence the turbulence index more than others, on average. We can therefore infer that portfolios that contain the pairs of indices with the highest explanatory power will have higher exposure to systemic risk when compared with compares that do not contain the respective pairs.
+C1 [Andrei, Laurentiu Dumitru; Brezeanu, Petre; Anghelache, Constantin] Univ Econ Studies, Bucharest, Romania.
+   [Dinu, Sorin-Marius; Diaconescu, Tiberiu] Romanian Acad, Inst Econ Forecasting, Bucharest, Romania.
+RP Andrei, LD (reprint author), Univ Econ Studies, Bucharest, Romania.
+EM laurentiu.andrei@gmail.com; petre.brezeanu@fin.ase.ro
+CR Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Albu LL, 2017, ECON COMPUT ECON CYB, V51, P5
+   Albu LL, 2015, ECON COMPUT ECON CYB, V49, P5
+   Andreou E, 2013, J BUS ECON STAT, V31, P240, DOI 10.1080/07350015.2013.767199
+   Battaglia F, 2013, INT REV FINANC ANAL, V30, P274, DOI 10.1016/j.irfa.2013.03.002
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   BORIO C, 2002, BIS Q REV        DEC, P43
+   Caccioli F, 2009, EUR PHYS J B, V71, P467, DOI 10.1140/epjb/e2009-00316-y
+   Chan-Lau J. A., 2009, SOLE ASSESSING SYSTE, P73
+   Chow G., 1999, FINANCIAL ANAL J, V55, P65, DOI DOI 10.2469/FAJ.V55.N3.2273
+   Corsi F, 2018, J FINANC STABIL, V38, P18, DOI 10.1016/j.jfs.2018.06.003
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   Dimsdale Nicholas, 2009, OXONOMICS, V4, P1
+   ECB, 2009, TECH REP
+   Ghysels E., 2017, MIDAS MATLAB TOOLBOX
+   Kleinow J, 2017, FINANC RES LETT, V21, P40, DOI 10.1016/j.frl.2017.01.003
+   Kritzman M., 2011, J PORTFOLIO MANAGEME, V37
+   Kritzman M, 2010, FINANC ANAL J, V66, P30, DOI 10.2469/faj.v66.n5.3
+   Lupu R, 2018, ECON COMPUT ECON CYB, V52, P19, DOI 10.24818/18423264/52.4.18.02
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Moagar-Poladian S, 2017, ROM J ECON FORECAST, V20, P150
+   Papanikolaou NI, 2014, J FINANC STABIL, V14, P3, DOI 10.1016/j.jfs.2013.12.003
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Saman C, 2016, ROM J ECON FORECAST, V19, P170
+   Silva W, 2017, J FINANC STABIL, V28, P91, DOI 10.1016/j.jfs.2016.12.004
+   Weiss GNF, 2014, J BANK FINANC, V40, P165, DOI 10.1016/j.jbankfin.2013.11.032
+   Xu QF, 2018, PAC-BASIN FINANC J, V51, P13, DOI 10.1016/j.pacfin.2018.05.009
+NR 29
+TC 0
+Z9 0
+U1 0
+U2 0
+PU INST ECONOMIC FORECASTING
+PI BUCHAREST
+PA CASA ACADEMIEI, CALEA 13 SEPTEMBRIE NR 13, SECTOR 5, BUCHAREST, 050711,
+   ROMANIA
+SN 1582-6163
+EI 2537-6071
+J9 ROM J ECON FORECAST
+JI Rom. J. Econ. Forecast
+PY 2019
+VL 22
+IS 1
+BP 88
+EP 100
+PG 13
+WC Economics
+SC Business & Economics
+GA HS9PR
+UT WOS:000464199700006
+DA 2019-12-28
+ER
+
+PT J
+AU Yu, HH
+   Sun, WC
+   Ye, XT
+   Fang, LB
+AF Yu, Honghai
+   Sun, Wencong
+   Ye, Xiangting
+   Fang, Libing
+TI Measuring the increasing connectedness of Chinese assets with global
+   assets: using a variance decompositions method
+SO ACCOUNTING AND FINANCE
+LA English
+DT Article
+DE Risk measurement; Chinese assets; Connectedness; Variance decompositions
+ID IMPULSE-RESPONSE ANALYSIS; SYSTEMIC RISK; VOLATILITY SPILLOVERS; CAPITAL
+   SHORTFALL; STOCK; MARKETS; RETURN; BOND; DETERMINANTS; INDUSTRY
+AB This study uses the network topology of variance decompositions to investigate the connectedness of four assets (stocks, bonds, foreign exchange and commodities) across five countries (US, EU, UK, Japan and China). We find that connectedness to and from the Chinese asset markets increased significantly from 2013 to 2018, which reveals that Chinese assets have gradually become integrated into the global economy. We also investigate the volatility connectedness in economically fragile periods and find that the Chinese market acted as a transmitter of volatility in the 2015 Chinese stock crash. This finding is potentially essential to modern risk measurement and management.
+C1 [Yu, Honghai; Sun, Wencong; Fang, Libing] Nanjing Univ, Sch Management & Engn, Nanjing, Jiangsu, Peoples R China.
+   [Ye, Xiangting] Wuhan Univ, Econ & Management Sch, Wuhan, Hubei, Peoples R China.
+RP Fang, LB (reprint author), Nanjing Univ, Sch Management & Engn, Nanjing, Jiangsu, Peoples R China.
+EM lbfang@nju.edu.cn
+RI fang, libing/W-6528-2019
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Adams Z, 2015, J BANK FINANC, V60, P93, DOI 10.1016/j.jbankfin.2015.07.008
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Baele L, 2010, REV FINANC STUD, V23, P2374, DOI 10.1093/rfs/hhq014
+   BAILEY W, 1993, J FINANC, V48, P555, DOI 10.2307/2328912
+   Balli F., 2018, ACCOUNT FINANC, DOI [10.1111/acfi.12402, DOI 10.1111/ACFI.12402]
+   Balli HO, 2013, INT REV FINANC, V13, P67, DOI 10.1111/j.1468-2443.2011.01143.x
+   Batten JA, 2015, APPL ECON LETT, V22, P466, DOI 10.1080/13504851.2014.950789
+   Batten JA, 2010, RESOUR POLICY, V35, P65, DOI 10.1016/j.resourpol.2009.12.002
+   Beine M, 2011, QUANT FINANC, V11, P299, DOI 10.1080/14697680903213815
+   BEKAERT G, 2003, J EMPIR FINANC, V10, P3, DOI DOI 10.1016/S0927-5398(02)00054-3
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bilson C, 2012, AUST J MANAGE, V37, P47, DOI 10.1177/0312896211423556
+   Briere M, 2012, J INT MONEY FINANC, V31, P1729, DOI 10.1016/j.jimonfin.2012.03.010
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Caballero RJ, 2008, J FINANC, V63, P2195, DOI 10.1111/j.1540-6261.2008.01394.x
+   Chng MT, 2009, J BANK FINANC, V33, P958, DOI 10.1016/j.jbankfin.2008.10.006
+   Deng YW, 2014, CHINA FINANC REV INT, V4, P343, DOI 10.1108/CFRI-01-2014-0002
+   Diebold F.X., 2015, FINANCIAL MACROECONO
+   Diebold FX, 2016, J FINANC ECONOMET, V14, P81, DOI 10.1093/jjfinec/nbv021
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Fan XJ, 2017, CHINA FINANC REV INT, V7, P249, DOI 10.1108/CFRI-08-2016-0103
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Inekwe JN, 2018, AUST J MANAGE, V43, P593, DOI 10.1177/0312896218766219
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Luo CQ, 2016, CHINA FINANC REV INT, V6, P284, DOI 10.1108/CFRI-08-2015-0118
+   Mi L, 2018, ACCOUNT FINANC, V58, P465, DOI 10.1111/acfi.12375
+   Paltalidis N, 2015, J BANK FINANC, V61, pS36, DOI 10.1016/j.jbankfin.2015.03.021
+   Perego ER, 2016, J EMPIR FINANC, V37, P214, DOI 10.1016/j.jempfin.2016.04.002
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Sensoy A, 2016, INT REV FINANC, V16, P457, DOI 10.1111/irfi.12077
+   Shahzad SJH, 2018, PHYSICA A, V491, P874, DOI 10.1016/j.physa.2017.09.060
+   Shahzad SJH, 2017, INT REV FINANC ANAL, V52, P9, DOI 10.1016/j.irfa.2017.04.005
+   Shi J, 2010, AUST J MANAGE, V35, P265, DOI 10.1177/0312896210384680
+   Wang K., 2014, ACCOUNT FINANC, V49, P207
+   Wang Y, 2016, CHINA FINANC REV INT, V6, P150, DOI 10.1108/CFRI-11-2014-0095
+   Xu QF, 2018, PAC-BASIN FINANC J, V51, P13, DOI 10.1016/j.pacfin.2018.05.009
+   Zhang B, 2014, ECON MODEL, V42, P413, DOI 10.1016/j.econmod.2014.07.013
+NR 41
+TC 0
+Z9 0
+U1 7
+U2 13
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0810-5391
+EI 1467-629X
+J9 ACCOUNT FINANC
+JI Account . Financ.
+PD MAR
+PY 2019
+VL 58
+IS 5
+BP 1261
+EP 1290
+DI 10.1111/acfi.12458
+PG 30
+WC Business, Finance
+SC Business & Economics
+GA HN8BL
+UT WOS:000460418800002
+DA 2019-12-28
+ER
+
+PT J
+AU Calabrese, R
+   Andreeva, G
+   Ansell, J
+AF Calabrese, Raffaella
+   Andreeva, Galina
+   Ansell, Jake
+TI "Birds of a Feather" Fail Together: Exploring the Nature of Dependency
+   in SME Defaults
+SO RISK ANALYSIS
+LA English
+DT Article
+DE Proximity matrix; scoring model; small business; spatial probit model
+ID CREDIT RISK; FINANCIAL RATIOS; PREDICTION; MODEL; INFORMATION;
+   CONTAGION; DISTANCE; NETWORK; FIRMS; AREA
+AB This article studies the effects of incorporating the interdependence among London small business defaults into a risk analysis framework using the data just before the financial crisis. We propose an extension from standard scoring models to take into account the spatial dimensions and the demographic characteristics of small and medium-sized enterprises (SMEs), such as legal form, industry sector, and number of employees. We estimate spatial probit models using different distance matrices based only on the spatial location or on an interaction between spatial locations and demographic characteristics. We find that the interdependence or contagion component defined on spatial and demographic characteristics is significant and that it improves the ability to predict defaults of non-start-ups in London. Furthermore, including contagion effects among SMEs alters the parameter estimates of risk determinants. The approach can be extended to other risk analysis applications where spatial risk may incorporate correlation based on other aspects.
+C1 [Calabrese, Raffaella; Andreeva, Galina; Ansell, Jake] Univ Edinburgh, Business Sch, 29 Buccleuch Pl, Edinburgh EH8 9JS, Midlothian, Scotland.
+   [Ansell, Jake] Thammasat Business Sch, Khlong Luang Dist, Pathum Thani, Thailand.
+RP Calabrese, R (reprint author), Univ Edinburgh, Business Sch, 29 Buccleuch Pl, Edinburgh EH8 9JS, Midlothian, Scotland.
+EM raffaella.calabrese@ed.ac.uk
+CR Agarwal S, 2010, REV FINANC STUD, V23, P2757, DOI 10.1093/rfs/hhq001
+   Altman EI, 2007, ABACUS, V43, P332, DOI 10.1111/j.1467-6281.2007.00234.x
+   Altman EI, 2010, J CREDIT RISK, V6, P95
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   Andreeva G, 2016, EUR J OPER RES, V249, P506, DOI 10.1016/j.ejor.2015.07.062
+   Barreto G, 2013, SPATIAL CORRELATION
+   Barro D, 2010, EUR J OPER RES, V205, P459, DOI 10.1016/j.ejor.2010.01.017
+   BASEL COMM. ON BANKING SUPERVISION BANK FOR INT'L SETTLEMENTS & INT'L ORG. OF SEC. COMM'NS, 2010, BAS 3 INT FRAM LIQ R
+   Basel Committee on Banking Supervision, 2006, INT CONVERGENCE CAPI
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Berger AN, 2002, ECON J, V112, pF32, DOI 10.1111/1468-0297.00682
+   Berger AN, 2007, J SMALL BUS MANAGE, V47, P522
+   Calabrese R, 2016, J OPER RES SOC, V67, P604, DOI 10.1057/jors.2015.64
+   Calabrese R, 2014, J REGIONAL SCI, V54, P664, DOI 10.1111/jors.12116
+   Calabrese R, 2013, J APPL STAT, V40, P1172, DOI 10.1080/02664763.2013.784894
+   Ciampi F., 2009, INT J BUSINESS EC, V8, P3
+   Ciampi F, 2013, J SMALL BUS MANAGE, V51, P23, DOI 10.1111/j.1540-627X.2012.00376.x
+   Cossin D, 2007, MANAGE SCI, V53, P1604, DOI 10.1287/mnsc.1070.0715
+   Cravo TA, 2015, REG STUD, V49, P1995, DOI 10.1080/00343404.2014.890704
+   CreditMetrics, 2007, CREDITMETRICS TM TEC
+   Crook JN, 2007, EUR J OPER RES, V183, P1447, DOI 10.1016/j.ejor.2006.09.100
+   Degryse H, 2005, J FINANC, V60, P231, DOI 10.1111/j.1540-6261.2005.00729.x
+   DeYoung R, 2006, 2006042006 FDIC CTR
+   Duffie D, 2009, J FINANC, V64, P2089, DOI 10.1111/j.1540-6261.2009.01495.x
+   Egloff D, 2007, J BANK FINANC, V31, P2475, DOI 10.1016/j.jbankfin.2006.10.023
+   Fernandes GB, 2016, EUR J OPER RES, V249, P517, DOI 10.1016/j.ejor.2015.07.013
+   Ferretti V, 2016, DECIS SUPPORT SYST, V84, P41, DOI 10.1016/j.dss.2016.01.005
+   Gatti DD, 2009, J ECON INTERACT COOR, V4, P195, DOI 10.1007/s11403-009-0054-x
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P741, DOI 10.1016/j.jedc.2005.01.004
+   GOWER JC, 1986, J CLASSIF, V3, P5, DOI 10.1007/BF01896809
+   Grunert J, 2012, SMALL BUS ECON, V39, P401, DOI 10.1007/s11187-010-9311-6
+   Hand DJ, 2009, MACH LEARN, V77, P103, DOI 10.1007/s10994-009-5119-5
+   HANLEY JA, 1982, RADIOLOGY, V143, P29, DOI 10.1148/radiology.143.1.7063747
+   Kazemi R, 2012, RISK ANAL, V32, P1888, DOI 10.1111/j.1539-6924.2012.01915.x
+   Klier T, 2008, J BUS ECON STAT, V26, P460, DOI 10.1198/073500107000000188
+   LeSage J, 2009, STAT TEXTB MONOGR, P1
+   Lin SM, 2012, J OPER RES SOC, V63, P539, DOI 10.1057/jors.2011.65
+   Martens D, 2011, EXPERT SYST APPL, V38, P5794, DOI 10.1016/j.eswa.2010.10.052
+   MCMILLEN DP, 1992, J REGIONAL SCI, V32, P335, DOI 10.1111/j.1467-9787.1992.tb00190.x
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Neu P, 2004, PHYSICA A, V342, P639, DOI 10.1016/j.physa.2004.05.062
+   OHLSON JA, 1980, J ACCOUNTING RES, V18, P109, DOI 10.2307/2490395
+   Orton P, 2015, J OPER RES SOC, V66, P657, DOI 10.1057/jors.2014.34
+   Petersen MA, 2002, J FINANC, V57, P2533, DOI 10.1111/1540-6261.00505
+   Pinkse J, 1998, J ECONOMETRICS, V85, P125, DOI 10.1016/S0304-4076(97)00097-3
+   Sohn SY, 2013, SMALL BUS ECON, V41, P931, DOI 10.1007/s11187-012-9457-5
+   Thomas L. C., 2009, CONSUMER CREDIT MODE
+   Thomas L. C., 2002, CREDIT SCORING ITS A
+NR 48
+TC 2
+Z9 2
+U1 2
+U2 13
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0272-4332
+EI 1539-6924
+J9 RISK ANAL
+JI Risk Anal.
+PD JAN
+PY 2019
+VL 39
+IS 1
+SI SI
+BP 71
+EP 84
+DI 10.1111/risa.12862
+PG 14
+WC Public, Environmental & Occupational Health; Mathematics,
+   Interdisciplinary Applications; Social Sciences, Mathematical Methods
+SC Public, Environmental & Occupational Health; Mathematics; Mathematical
+   Methods In Social Sciences
+GA HG4PW
+UT WOS:000454958400006
+PM 28799646
+DA 2019-12-27
+ER
+
+PT J
+AU Szule, B
+AF Szule, Borbala
+TI Systemic Risk Dimensions in the Hungarian Banking and Insurance Sector
+SO PUBLIC FINANCE QUARTERLY-HUNGARY
+LA English
+DT Article
+DE bank; insurance; systemic risk
+ID EXPOSURE
+AB The consecutive financial crises have made the analysis of the systemic risks of financial institutions increasingly important worldwide. The researches so far have been primarily focusing on the banking sector, but insurance companies have also been given an increasing attention. Based on past literature, systematic risk can be measured in a variety of ways, and one of the options is the calculation of the indicators typical of return comovement. This study compares the dimensions calculated by the multidimensional scaling of returns in the banking and insurance sector. The results suggest that return dimensions in the Hungarian banking and insurance sector (related to systemic risk) are not completely independent, and, compared to the banking sector, the return comovement related systemic risk is lower in the insurance sector.
+EM borbala.szule@uni-corvinus.hu
+CR Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T., 2008, FEDERAL RESERVE BANK
+   Arena M, 2008, J RISK INSUR, V75, P921, DOI 10.1111/j.1539-6975.2008.00291.x
+   Arnold B, 2012, J BANK FINANC, V36, P3125, DOI 10.1016/j.jbankfin.2012.07.023
+   Balog D., 2012, EGYENSULY OPTIMUM, P151
+   Bauer D., 2009, J INT FINANC MARK I, V19, P506
+   Becavin C, 2011, BIOINFORMATICS, V27, P1413, DOI 10.1093/bioinformatics/btr143
+   Beck T, 2003, WORLD BANK ECON REV, V17, P51, DOI 10.1093/wber/lhg011
+   Bernal O, 2014, J BANK FINANC, V47, P270, DOI 10.1016/j.jbankfin.2014.05.030
+   Billio M., 2015, NETWORK CONNECTIVITY
+   Billio M., 2010, 477410 MIT SLOAN SCH
+   Chui ACW, 2008, J INT BUS STUD, V39, P88, DOI 10.1057/palgrave.jibs.8400316
+   Civitarese J, 2016, PHYSICA A, V459, P55, DOI 10.1016/j.physa.2016.03.095
+   Csoka P., 2015, SZIGMA, V46
+   De Bandt O, 2000, 35 EUR CENTR BANK
+   ECB, 2017, FINANCIAL STABILITY
+   Eling M., 2014, U ST GALLEN WORKING
+   Ellis L, 2014, J BANK FINANC, V45, P175, DOI 10.1016/j.jbankfin.2014.04.012
+   European Systemic Risk Board (ESRB), 2015, REP SYST RISKS EU IN
+   Faykiss P., 2013, MNB SZEMLE KULONSZAM, P63
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Giglio S, 2016, J FINANC ECON, V119, P457, DOI 10.1016/j.jfineco.2016.01.010
+   Hu DN, 2015, FINANC INNOV, V1, DOI 10.1186/s40854-015-0001-x
+   Huang WQ, 2016, PHYSICA A, V456, P183, DOI 10.1016/j.physa.2016.03.034
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Kalman J., 2016, HITELINTEZETI SZEMLE, V15, P27
+   Kessler D, 2014, J RISK INSUR, V81, P477, DOI 10.1111/j.1539-6975.2013.12007.x
+   Kleinow J, 2017, FINANC RES LETT, V21, P40, DOI 10.1016/j.frl.2017.01.003
+   Kovacs E., 2014, TOBBVALTOZOS ADATELE
+   Kovacs E., 2011, HITELINTEZETI SZEMLE, V10, P349
+   Kritzman M., 2011, J PORTFOLIO MANAGEME, V37
+   Lang J. H., 2019, EUROPEAN CENTRAL BAN, V219
+   Lubloy A., 2005, KOZGAZDASAGI SZEMLE, V59, P377
+   Medvegyev P., 2011, HITELINTEZETI SZEMLE, V10, P314
+   Medvegyev P., 2002, FEJEZETEK MATEMATIKA
+   MNB, 2018, MAKR JEL
+   MNB, 2018, STAB MA STAB HOLN
+   Morrison AD, 2003, GENEVA PAP R I-ISS P, V28, P521, DOI 10.1111/1468-0440.00242
+   Pagano MS, 2016, J FINANC STABIL, V23, P62, DOI 10.1016/j.jfs.2016.02.001
+   Raffestin L, 2014, J BANK FINANC, V46, P85, DOI 10.1016/j.jbankfin.2014.05.014
+   Sedunov J, 2016, J FINANC STABIL, V24, P71, DOI 10.1016/j.jfs.2016.04.005
+   de Souza SRS, 2016, J ECON DYN CONTROL, V66, P54, DOI 10.1016/j.jedc.2016.03.003
+   Szegedi L., 2012, PUBLIC FINANCE Q, VLVII, P368
+   Thimann C., 2014, 3 SRC
+   Trichet JC, 2005, GENEVA PAP R I-ISS P, V30, P65, DOI 10.1057/palgrave.gpp.2510021
+   Wagner W, 2009, INT J CENT BANK, V5, P75
+   Weiss GNF, 2014, J BANK FINANC, V41, P78, DOI 10.1016/j.jbankfin.2014.01.001
+NR 47
+TC 0
+Z9 0
+U1 0
+U2 0
+PU STATE AUDIT OFFICE HUNGARY
+PI BUDAPEST
+PA BECSI U 5, BUDAPEST, 1052, HUNGARY
+SN 0031-496X
+EI 2064-8294
+J9 PUBLIC FINANC Q-HUNG
+JI Public Financ. Q.-Hung.
+PY 2019
+VL 64
+IS 2
+BP 260
+EP 276
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA IH1QP
+UT WOS:000474266300006
+DA 2019-12-28
+ER

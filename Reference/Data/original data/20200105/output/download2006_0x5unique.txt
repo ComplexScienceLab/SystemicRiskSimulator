@@ -1,0 +1,405 @@
+
+PT J
+AU Phelippe-Guinvarc'h, MV
+   Cordier, JE
+AF Phelippe-Guinvarc'h, Martial V.
+   Cordier, Jean E.
+TI A private management strategy for the crop yield insurer: A theoretical
+   approach and tests
+SO INSURANCE MATHEMATICS & ECONOMICS
+LA English
+DT Article
+ID REVENUE INSURANCE; RISK; MARKETS; FUTURES
+AB The agricultural economic literature shows the difficulties of managing insurance contracts that include systemic risk. The aim of this paper is to present an approach for overcoming such difficulties. The approach is applied to a crop yield insurance contract but can be extended to other insurance contracts such as revenue or crop margin ones. The recommended strategy pools risk as common to insurance contracts. Additionally, the strategy transfers the pooled risk to financial markets in order to manage the systemic risks component. The financial market model includes a crop yield futures contract, a price futures contract and a zero-coupon bond. This strategy allows for a risk-free intermediation in insurance contracts with a high systemic risk component. (c) 2006 Elsevier B.V. All rights reserved.
+RP Phelippe-Guinvarc'h, MV (reprint author), 13 Rue St Nicolas, F-75012 Paris, France.
+EM martialphelippeguinvarch@neuf.fr; cordier@agrocampus-rennes.fr
+CR BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Coble KH, 2000, J AGR RESOUR ECON, V25, P432
+   GUINVARCH MV, 2004, INT J THEORETICAL AP, V7, P85
+   Hull J. C., 2000, OPTIONS FUTURES OTHE
+   Just RE, 1999, AM J AGR ECON, V81, P834, DOI 10.2307/1244328
+   Ker AP, 2000, AM J AGR ECON, V82, P463, DOI 10.1111/0002-9092.00039
+   Li DF, 1998, J FUTURES MARKETS, V18, P541, DOI 10.1002/(SICI)1096-9934(199808)18:5<541::AID-FUT3>3.0.CO;2-B
+   Mahul O, 2003, AM J AGR ECON, V85, P580, DOI 10.1111/1467-8276.00457
+   MARGRABE W, 1978, J FINANC, V33, P177, DOI 10.1111/j.1540-6261.1978.tb03397.x
+   Mason C., 2003, Agricultural Finance Review, V63, P23
+   Miranda MJ, 1997, AM J AGR ECON, V79, P206, DOI 10.2307/1243954
+   MUSIELA M, 1997, APPL MATH
+   NELSON CH, 1987, AM J AGR ECON, V69, P523, DOI 10.2307/1241688
+   Ramaswami B, 2004, AM J AGR ECON, V86, P420, DOI 10.1111/j.0092-5853.2004.00588.x
+   Sherrick BJ, 2004, AM J AGR ECON, V86, P103, DOI 10.1111/j.0092-5853.2004.00565.x
+   Skees J. R., 1999, Review of Agricultural Economics, V21, P424, DOI 10.2307/1349889
+   SMITH SM, 1994, CHASQUI, V23, P75, DOI 10.2307/29741070
+   Stokes JR, 2000, J AGR RESOUR ECON, V25, P159
+   Tomek WG, 2001, J FUTURES MARKETS, V21, P953, DOI 10.1002/fut.2004
+   Turvey C, 1999, CAN J AGR ECON, V47, P281, DOI 10.1111/j.1744-7976.1999.tb00226.x
+   Vukina T, 1996, AM J AGR ECON, V78, P1015, DOI 10.2307/1243857
+NR 21
+TC 1
+Z9 1
+U1 1
+U2 3
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-6687
+EI 1873-5959
+J9 INSUR MATH ECON
+JI Insur. Math. Econ.
+PD AUG 1
+PY 2006
+VL 39
+IS 1
+BP 35
+EP 46
+DI 10.1016/j.insmatheco.2006.01.003
+PG 12
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 066UR
+UT WOS:000239256100003
+DA 2019-12-28
+ER
+
+PT J
+AU Geluk, JL
+   De Vries, CG
+AF Geluk, JL
+   De Vries, CG
+TI Weighted sums of subexponential random variables and asymptotic
+   dependence between returns on reinsurance equities
+SO INSURANCE MATHEMATICS & ECONOMICS
+LA English
+DT Article
+DE subexponentiality; regular variation; systemic risk; asymptotic
+   dependence
+ID DISTRIBUTIONS; CONVOLUTION; ATTRACTION; TAILS
+AB Suppose X-1, X-2.... are independent subexponential random variables with partial sums S-n. We show that if the pairwise sums of the X-i's are subexponential, then S-n is subexponential and (S-n > x) similar to Sigma(n)(l) P(X-i > x)(x -> infinity). The result is applied to give conditions under which P(Sigma(infinity)(l) c(i)X(i) > x) similar to Sigma(infinity)(l) P(c(i)X(i) > x) as x -> infinity, where c(1), c(2),... are constants such that Sigma(infinity)(l) c(i)X(i) is a.s. convergent. Asymptotic tail probabilities for bivariate linear combinations of subexponential random variables are given. These results are applied to explain the joint movements of the stocks of reinsurers. Portfolio investment and retrocession practices in the reinsurance industry expose different reinsurers to the same subexponential risks on both sides of their balance sheets. This implies that reinsurer's equity returns can be asymptotically dependent, exposing the industry to systemic risk. (c) 2005 Elsevier B.V. All rights reserved.
+C1 Erasmus Univ, Dept Finance, Fac Econ, NL-3000 DR Rotterdam, Netherlands.
+   Erasmus Univ, Econmetr Inst, NL-3000 DR Rotterdam, Netherlands.
+RP Geluk, JL (reprint author), Erasmus Univ, Dept Finance, Fac Econ, POB 1738, NL-3000 DR Rotterdam, Netherlands.
+EM jgeluk@yahoo.com
+CR Asmussen S., 2000, RUIN PROBABILITIES
+   Bingham N.H., 1987, REGULAR VARIATION
+   Chen YQ, 2005, ADV APPL PROBAB, V37, P510, DOI 10.1239/aap/1118858636
+   Chistyakov V. P., 1964, THEOR PROBAB APPL, V9, P640
+   CLINE DBH, 1986, PROBAB THEORY REL, V72, P529, DOI 10.1007/BF00344720
+   CLINE DBH, 1983, THESIS COLORADO STAT
+   DAVIS R, 1988, STOCH PROC APPL, V30, P41, DOI 10.1016/0304-4149(88)90075-0
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   EMBRECHTS P, 1979, Z WAHRSCHEINLICHKEIT, V49, P335, DOI 10.1007/BF00535504
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   EMBRECHTS P, 2000, MODLELING MULTIVARIA, P59
+   Embrechts P., 1980, J AUSTR MATH SOC A, V29, P243
+   Embrechts P., 1982, STOCHASTIC PROCESSES, V13, P263
+   FELLER W, 1971, INTRO PROBABILITY TH, V2
+   Geluk J, 2004, STAT PROBABIL LETT, V69, P63, DOI 10.1016/j.spl.2004.06.004
+   GOLDIE CM, 1978, J APPL PROBAB, V15, P440, DOI 10.2307/3213416
+   JANSEN DW, 1991, REV ECON STAT, V73, P19
+   Kokoszka PS, 1996, ANN STAT, V24, P1880
+   LESLIE JR, 1989, J APPL PROBAB, V26, P58, DOI 10.2307/3214316
+   Mikosch T, 2000, ANN APPL PROBAB, V10, P1025
+   OMEY E, 2002, PUBL I MATH, V71, P63
+   REISS RD, 2001, STAT ANAL EXTREME VA
+   Resnick S. I., 1987, EXTREME VALUES REGUL
+   ROGOZIN BA, 1999, SIB MAT ZH, V40, P660
+   Rolski T, 1999, ADV APPL PROBAB, V31, P235, DOI 10.1017/S0001867800009046
+   SGIBNEV MS, 1988, SIB MAT ZH, V29, P162
+   SIBUYA M, 1960, ANN I STAT MATH, V11, P195
+   Tang Q., 2003, EXTREMES, V6, P171, DOI DOI 10.1023/B:EXTR.0000031178.19509.57
+   TANG Q, 2004, SCAND ACTUAR J, P229
+   WILLEKENS E, 1986, THESIS U LEUVEN
+NR 30
+TC 15
+Z9 17
+U1 1
+U2 1
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-6687
+J9 INSUR MATH ECON
+JI Insur. Math. Econ.
+PD FEB 24
+PY 2006
+VL 38
+IS 1
+BP 39
+EP 56
+DI 10.1016/j.insmatheco.2005.06.010
+PG 18
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 014PE
+UT WOS:000235491400003
+DA 2019-12-28
+ER
+
+PT J
+AU Wlodarczyk, JH
+   Cleland, LG
+   Keogh, AM
+   McNeil, KD
+   Perl, K
+   Weintraub, RG
+   Williams, TJ
+AF Wlodarczyk, John H.
+   Cleland, Leslie G.
+   Keogh, Anne M.
+   McNeil, Keith D.
+   Perl, Kate
+   Weintraub, Robert G.
+   Williams, Trevor J.
+TI Public funding of bosentan for the treatment of pulmonary artery
+   hypertension in Australia - Cost effectiveness and risk sharing
+SO PHARMACOECONOMICS
+LA English
+DT Article
+ID SYSTEMIC-SCLEROSIS; SURVIVAL; THERAPY
+AB Objectives: In Australia, no therapeutic agents were subsidised for the treatment of idiopathic pulmonary artery hypertension (iPAH), a rare progressive and severe disease with short life expectancy, until I March 2004, when bosentan (a dual endothelin receptor antagonist of high cost) was listed on the Pharmaceutical Benefits Scheme (PBS). Bosentan, in addition to conventional therapy, has been shown to slow iPAH progression and improve clinical and haemodynamic status and symptomatology, compared with placebo and conventional therapy. The objective of this paper is to describe the process of the Australian Pharmaceutical Benefits Scheme listing for bosentan (Tracleer(R)), which included a health economic model assessing the cost effectiveness of bosentan from a healthcare payer perspective, and a risk-sharing arrangement based on the establishment of a patient registry.
+   Methods: The health economic model predicted the cost, hospitalisation and mortality rates of a population of iPAH patients treated with either the conventional therapy regimen used in Australia or bosentan plus the conventional therapy regimen. The model was implemented as a first-order Monte Carlo simulation with mortality modelled directly as the main clinical outcome. The impacts of proposed continuation criteria, restricting the ongoing use of the drug, were evaluated. Costs and outcomes were discounted at 5% and a sensitivity analysis examined the robustness of the key assumptions.
+   Results: The model predicted that after 5, 10 and 15 years, the difference in average cumulative costs between bosentan plus conventional therapy and conventional therapy alone would be 116 929 Australian dollars ($A), $A 181808 and $A216 331 for each patient, respectively. There would be an associated increase in average life expectancy of 1.39, 2.93 and 3.87 years at 5, 10 and 15 years, respectively, with an incremental cost-effectiveness ratio at 15 years of $A55 927 for each life-year gained, Removing the continuation criteria from the model increased the incremental cost-effectiveness ratio to $A62 267 (1996-2002 values).
+   Conclusions: Economic modelling based on improved survival suggests bosentan to be a potentially cost-effective treatment for iPAH. However, the structure of the model and its inputs should be reviewed and updated as more data become available.
+C1 John Wlodarczyk Consulting Serv, New Lambton, NSW, Australia.
+   Royal Adelaide Hosp, Adelaide, SA 5000, Australia.
+   St Vincents Hosp, Darlinghurst, NSW 2010, Australia.
+   Prince Charles Hosp, Chermside, Qld, Australia.
+   Nitecs Pty Ltd, Frenchs Forest, NSW, Australia.
+   Royal Childrens Hosp, Melbourne, Vic, Australia.
+   Monash Univ, Alfred Hosp, Dept Allergy Immunol & Resp Med, Melbourne, Vic 3181, Australia.
+RP Wlodarczyk, JH (reprint author), 10 Mirral Crescent, New Lambton, NSW 2305, Australia.
+EM john@jwcs.com.au
+CR *AHTAC, 1998, SUP SERV GUID LUNG T
+   *AUSTR GOV DEP HLT, 2001, MED BEN SCHED
+   *AUSTR GOV DEP HLT, 2002, SCHED PHARM BEN
+   Barst RJ, 1999, CIRCULATION, V99, P1197, DOI 10.1161/01.CIR.99.9.1197
+   BARST RJ, 1994, ANN INTERN MED, V121, P409, DOI 10.7326/0003-4819-121-6-199409150-00003
+   Channick RN, 2001, LANCET, V358, P1119, DOI 10.1016/S0140-6736(01)06250-X
+   *COMM AUSTR, 2004, SCHED PHARM BEN APPR, P309
+   *COMM DEP HLTH AG, 2001, ORPH DRUG PROGR IMPR
+   *COMM DEP HLTH AG, 2005, SCHED PHARM BEN
+   *COMM DEP HLTH AG, 2002, GUID PHARM IND PREP
+   CONNER L, 1991, ALA MED, V60, P5
+   CONNER L, 1991, ALA MED, V60, P2
+   DALONZO GE, 1991, ANN INTERN MED, V115, P343, DOI 10.7326/0003-4819-115-5-343
+   George B, 2001, PHARMACOECONOMICS, V19, P1103, DOI 10.2165/00019053-200119110-00004
+   HADORN DC, 1991, HASTINGS CENT REP, V21, pS11, DOI 10.2307/3563329
+   Highland KB, 2003, CHEST, V124, P2087, DOI 10.1378/chest.124.6.2087
+   KAPOOR A, 2003, AM HEART ASS SCI SES
+   Kawut SM, 2003, CHEST, V123, P344, DOI 10.1378/chest.123.2.344
+   Keogh A., 2004, Journal of Heart and Lung Transplantation, V23, pS54, DOI 10.1016/j.healun.2003.11.037
+   KEOGH A, 2003, CARD SOC AUSTR NZ CS
+   Keogh Anne, 2004, Expert Rev Pharmacoecon Outcomes Res, V4, P505, DOI 10.1586/14737167.4.5.505
+   Koh ET, 1996, BRIT J RHEUMATOL, V35, P989
+   MCLAUGHLIN V, 2003, AM J RESP CRIT CARE, V167, pA441
+   McLaughlin VV, 2005, EUR RESPIR J, V25, P244, DOI 10.1183/09031936.05.00054804
+   Mendeloff EN, 2002, ANN THORAC SURG, V73, P209, DOI 10.1016/S0003-4975(01)03082-X
+   *NHCDC, 1999, AUSTR REF DIAGN REL
+   *PHARM BEN ADV COM, OTH REL FACT RUL RES
+   *POL AN INC, 2001, EXPL AN DAT BREATHE
+   ROUX S, 2001, AC052354 ACT PHARM U
+   Rubin LJ, 2002, NEW ENGL J MED, V346, P896, DOI 10.1056/NEJMoa012212
+   RUBIN LJ, 1993, CHEST, V104, P236, DOI 10.1378/chest.104.1.236
+   SANDOVAL J, 1994, CIRCULATION, V89, P1733, DOI 10.1161/01.CIR.89.4.1733
+   Sudlow CLM, 2003, BRIT MED J, V326, P388, DOI 10.1136/bmj.326.7385.388
+   Sulica R, 2004, MT SINAI J MED, V71, P103
+   *THER GOOD ADM, DRUGS DES ORPH DRUGS
+   *THER GUID LTD CAR, 2003, VERS 4
+   ZOLESSI R, 2001, J PHARM SOC WISC NOV, P25
+NR 37
+TC 27
+Z9 27
+U1 0
+U2 3
+PU ADIS INTERNATIONAL LTD
+PI AUCKLAND
+PA 41 CENTORIAN DR, PRIVATE BAG 65901, MAIRANGI BAY, AUCKLAND 1311, NEW
+   ZEALAND
+SN 1170-7690
+J9 PHARMACOECONOMICS
+JI Pharmacoeconomics
+PY 2006
+VL 24
+IS 9
+BP 903
+EP 915
+DI 10.2165/00019053-200624090-00007
+PG 13
+WC Economics; Health Care Sciences & Services; Health Policy & Services;
+   Pharmacology & Pharmacy
+SC Business & Economics; Health Care Sciences & Services; Pharmacology &
+   Pharmacy
+GA 086JP
+UT WOS:000240669900007
+PM 16942124
+DA 2019-12-28
+ER
+PT J
+AU Vedenov, DV
+   Epperson, JE
+   Barnett, BJ
+AF Vedenov, Dmitry V.
+   Epperson, James E.
+   Barnett, Barry J.
+TI Designing catastrophe bonds to securitize systemic risks in agriculture:
+   The case of Georgia cotton
+SO JOURNAL OF AGRICULTURAL AND RESOURCE ECONOMICS
+LA English
+DT Article
+DE CAT bonds; catastrophe bond pricing; catastrophe insurance; disaster
+   risk; reinsurance; risk securitization
+ID CROP INSURANCE; YIELD DISTRIBUTIONS; CAT BONDS; MARKETS
+AB This article makes an initial attempt to design catastrophe (CAT) bond products for agriculture and examines the potential of these instruments as mechanisms for transferring agricultural risks from insurance companies to investors/speculators in the global capital market. The case of Georgia cotton is considered as a specific example. The CAT bond contracts are based on percentage deviations of realized state average yields relative to the long-run average. The contracts are priced using historical state-level cotton yield data. The principal finding of the study is that the proposed CAT bonds demonstrate potential as risk transfer mechanisms for crop insurance companies.
+C1 Univ Georgia, Dept Agr & Appl Econ, Athens, GA 30602 USA.
+RP Vedenov, DV (reprint author), Univ Georgia, Dept Agr & Appl Econ, Athens, GA 30602 USA.
+CR Banks E., 2004, ALTERNATIVE RISK TRA
+   Bantwal V, 2000, J PSYCHOL FINANCIAL, V1, P76
+   Baquet A. E., 1994, Choices. The Magazine of Food, Farm, and Resources Issues, P25
+   Barnett BJ, 2005, J AGR RESOUR ECON, V30, P285
+   BARNETT BJ, 2003, 2003 USDA AGR OUT FO
+   Baryshnikov Y., 1998, PRICING CAT BONDS
+   BECKER GS, 1999, 96900CRS ENR
+   Bluhm C., 2003, INTRO CREDIT RISK MO
+   BOSSOM A, 2004, WORLD CATASTROPHE RE
+   Bowers B., 2004, BESTS REV        JUN, P45
+   CUMMINS JD, 2000, BASIS RISK CATASTROP
+   CUMMINS JD, 1998, PRICING EXCESS LOSS
+   Daneshvaran S., 2004, J RISK FINANCE, V5, P33
+   DOHERTY NA, 1997, FINANCIAL INNOVATION
+   Froot K., 1999, FINANCING CATASTROPH
+   Glauber J. W., 2004, American Journal of Agricultural Economics, V86, P1179, DOI 10.1111/j.0002-9092.2004.00663.x
+   Glauber J. W., 2002, Agricultural Finance Review, V62, P81
+   Goodwin BK, 1998, AM J AGR ECON, V80, P139, DOI 10.2307/3180276
+   Greene W.H., 2003, ECONOMETRIC ANAL
+   HOMMEL U, 2000, RISK MANAGMENT CHALL, P39
+   HULL J, 2004, OPTIONS FUTURES OTHE
+   Jaffee DM, 1997, J RISK INSUR, V64, P205, DOI 10.2307/253729
+   Jones GB, 1999, CPCU J, V52, P50
+   KER AP, 2000, AM J AGR ECON, V83, P463
+   KRAMER RA, 1983, AGR HIST, V57, P181
+   Lee JP, 2002, J RISK INSUR, V69, P25, DOI 10.1111/1539-6975.00003
+   LEE M, 2004, BESTS REV        JUN, P48
+   Lewis C M., 1998, J INSURANCE REGULATI, V17, P110
+   Martin SW, 2001, J AGR RESOUR ECON, V26, P261
+   Mason C., 2003, Agricultural Finance Review, V63, P23
+   MIRANDA MJ, 1991, AM J AGR ECON, V73, P233, DOI 10.2307/1242708
+   Miranda MJ, 1997, AM J AGR ECON, V79, P206, DOI 10.2307/1243954
+   Nell M, 2004, GENEVA PAP R I-ISS P, V29, P183, DOI 10.1111/j.1468-0440.2004.00281.x
+   Schnitkey G. D., 2003, Agricultural Finance Review, V63, P1
+   Sherrick BJ, 2004, AM J AGR ECON, V86, P406, DOI 10.1111/j.0092-5853.2004.00587.x
+   Skees J. R., 2001, DEV RAINFALL BASED I
+   Skees JR, 1997, AM J AGR ECON, V79, P430, DOI 10.2307/1244141
+   SMITH SM, 1994, CHASQUI, V23, P75, DOI 10.2307/29741070
+   Turvey C. G., 2001, Review of Agricultural Economics, V23, P333, DOI 10.1111/1467-9353.00065
+   *USDA, 2003, HIST DAT
+   *USDA, 2003, PART DAT
+   Vedenov D. V., 2004, Agricultural Finance Review, V64, P119
+   Vedenov DV, 2004, J AGR RESOUR ECON, V29, P387
+   Wand M. P., 1995, KERNEL SMOOTHING
+NR 44
+TC 13
+Z9 13
+U1 1
+U2 10
+PU WESTERN AGRICULTURAL ECONOMICS ASSOC
+PI LOGAN
+PA C/O DEEVON BAILEY, UTAH STATE UNIV, ECONOMICS DEPT, 3535 OLD MAIN HILL,
+   LOGAN, UT 84322-3530 USA
+SN 0162-1912
+J9 J AGR RESOUR ECON
+JI J. Agric. Resour. Econ.
+PD AUG
+PY 2006
+VL 31
+IS 2
+BP 318
+EP 338
+PG 21
+WC Agricultural Economics & Policy; Economics
+SC Agriculture; Business & Economics
+GA 075RW
+UT WOS:000239903900009
+DA 2019-12-28
+ER
+
+PT J
+AU Elsinger, H
+   Lehar, A
+   Summer, M
+AF Elsinger, Helmut
+   Lehar, Alfred
+   Summer, Martin
+TI Risk assessment for banking systems
+SO MANAGEMENT SCIENCE
+LA English
+DT Article
+DE systemic risk; financial stability; risk management; interbank market
+ID EMPIRICAL-EVIDENCE; CONTAGION; EXPOSURES
+AB We propose a new approach to assess systemic financial stability of a banking system using standard tools from modern risk management in combination with a network model of interbank loans. We apply our model to a unique data set of all Austrian banks. We find that correlation in banks' asset portfolios dominates contagion as the main source of systemic risk. Contagion is rare but can nonetheless wipe out a major part of the banking system. Low bankruptcy costs and an efficient crisis resolution policy are crucial to limit the systemwide impact of contagious default events. We compute the "value at risk" for a lender of last resort and find that the funds necessary to prevent contagion are surprisingly small.
+C1 Univ Vienna, Dept Finance, A-1210 Vienna, Austria.
+   Univ Calgary, Haskayne Sch Business, Calgary, AB T2N 1N4, Canada.
+   Oesterr Natl Bank, Econ Studies Div, A-1011 Vienna, Austria.
+RP Elsinger, H (reprint author), Univ Vienna, Dept Finance, Brunner Str 72, A-1210 Vienna, Austria.
+EM helmut.elsinger@univie.ac.at; alfred.lehar@haskayne.ucalgary.ca;
+   martin.summer@oenb.co.at
+OI Lehar, Alfred/0000-0002-0806-1129
+CR Acharya V. V., 2001, THEORY SYSTEMIC RISK
+   Altman EI, 2005, J BUS, V78, P2203, DOI 10.1086/497044
+   Angelini P, 1996, J BANK FINANC, V20, P853, DOI 10.1016/0378-4266(95)00029-1
+   *BAS COMM BANK SUP, 1988, BANK INT SETTL BAS S
+   *BAS COMM BANK SUP, 2004, BANK INT SETTL BAS S
+   Blien U., 1997, CLASSIFICATION DATA
+   Borio C, 2002, CESIFO LECT SUMM I B
+   *CRED SUISS, 1997, CRED SUISS FIN PROD
+   Crouhy M, 2000, J BANK FINANC, V24, P59, DOI 10.1016/S0378-4266(99)00053-9
+   Davis M., 2001, QUANTITATIVE FINANCE, V1, P382, DOI DOI 10.1080/713665832
+   De Bandt O, 2000, 35 EUR CENTR BANK
+   DEGRYSE H, 2004, INTERBANK EXPOSURES
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Ennis H.M., 2001, EC Q, P1
+   Fang S. C., 1997, ENTROPY OPTIMIZATION
+   Frye J., 2000, EMERGING ISSUES SERI
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Giesecke K, 2004, J BANK FINANC, V28, P3009, DOI 10.1016/j.jbankfin.2003.11.002
+   GREENSPAN A, 1997, SUPERVISION BANKING
+   Hellwig D, 1998, MINIM INVASIV THER, V7, P123, DOI 10.3109/13645709809153102
+   Hoggarth G, 2002, J BANK FINANC, V26, P825, DOI 10.1016/S0378-4266(01)00268-0
+   Humphrey D, 1986, TECHNOLOGY REGULATIO, P97
+   Jorion P, 2000, VALUE RISK
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   Kuritzkes A., 2003, BROOKINGS WHARTON PA, P141
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Rosenberg JV, 2006, J FINANC ECON, V79, P569, DOI 10.1016/j.jfineco.2005.03.001
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   WEISS E, 2004, 7 AUSTR NAT BANK
+   Wells S, 2002, UK INTERBANK EXPOSUR
+NR 31
+TC 182
+Z9 190
+U1 11
+U2 90
+PU INST OPERATIONS RESEARCH  MANAGEMENT SCIENCES
+PI LINTHICUM HTS
+PA 901 ELKRIDGE LANDING RD, STE 400, LINTHICUM HTS, MD 21090-2909 USA
+SN 0025-1909
+J9 MANAGE SCI
+JI Manage. Sci.
+PD SEP
+PY 2006
+VL 52
+IS 9
+BP 1301
+EP 1314
+DI 10.1287/mnsc.1060.0531
+PG 14
+WC Management; Operations Research & Management Science
+SC Business & Economics; Operations Research & Management Science
+GA 082FL
+UT WOS:000240372000002
+DA 2019-12-27
+ER

@@ -1,0 +1,452 @@
+
+PT J
+AU Boschi, M
+   Goenka, A
+AF Boschi, Melisso
+   Goenka, Aditya
+TI Relative risk aversion and the transmission of financial crises
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Financial crises; Contagion; International asset pricing; Relative risk
+   aversion; Wealth effects; Capital controls; Tobin tax
+ID CURRENCY COMPOSITION; CONTAGION; MEXICO; DEBT
+AB We study how investor behavior affects the transmission of financial crises. If investors exhibit decreasing relative risk aversion, then negative wealth shocks increase the risk premium required to hold risky assets. We integrate this into a second generation model of currency crises which allows for contagion through changes in fundamentals. Investor behavior can be a transmission channel of financial crises, as changes in risk premia increase the coverage ratio and makes the defense of a peg less attractive for the policy maker. The feedback effect of the risk premia on the probability of devaluation also makes multiple equilibria more likely. The possible stabilization effects of capital controls and a Tobin tax on the international transmission of financial crises are also studied. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [Boschi, Melisso] Univ Roma Tre, Dept Publ Inst Econ & Soc, I-00145 Rome, Italy.
+   [Goenka, Aditya] Natl Univ Singapore, Dept Econ, Singapore 117570, Singapore.
+RP Boschi, M (reprint author), Univ Roma Tre, Dept Publ Inst Econ & Soc, Via G Chiabrera 199, I-00145 Rome, Italy.
+EM mboschi@uniroma3.it; goenka@nus.edu.sg
+CR Allen F., 2001, J POLITICAL EC, V108, P1
+   Arrow K.J., 1971, ESSAYS THEORY RISK B
+   Boschi M., 2005, APPL FINANCIAL EC, V15, P153, DOI DOI 10.1080/0960310042000306943
+   Bratsiotis GJ, 2004, J INT MONEY FINANC, V23, P595, DOI 10.1016/j.jimonfin.2004.03.008
+   Broner FA, 2006, J INT ECON, V69, P203, DOI 10.1016/j.jinteco.2005.05.004
+   Campbell JY, 1999, J POLIT ECON, V107, P205, DOI 10.1086/250059
+   CAMPBELL JY, 1993, AM ECON REV, V83, P487
+   Chari VV, 2004, J ECON THEORY, V119, P128, DOI 10.1016/S0022-0531(03)00225-4
+   CLAESSENS S, 1992, WORLD BANK ECON REV, V6, P503, DOI 10.1093/wber/6.3.503
+   Cordella T, 2003, J INT MONEY FINANC, V22, P737, DOI 10.1016/S0261-5606(03)00051-2
+   DIAMOND PA, 1974, J ECON THEORY, V8, P337, DOI 10.1016/0022-0531(74)90090-8
+   EICHENGREEN B, 1995, ECON J, V105, P162, DOI 10.2307/2235326
+   Galindo A, 2003, EMERG MARK REV, V4, P330, DOI DOI 10.1016/S1566-0141(03)00059-1
+   Goenka A, 1994, ECON THEOR, V4, P401
+   Goldfajn I., 2001, INT FINANCIAL CONTAG
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Hawkins J, 2000, BIS POLICY PAPERS, V8
+   *IMF, 2002, WORLD EC OUTL
+   Jeanne O, 1997, J INT ECON, V43, P263, DOI 10.1016/S0022-1996(97)00002-0
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Krugman P, 1999, FOREIGN AFF, V78, P56, DOI 10.2307/20020239
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Liu P., 1988, ATLANTIC ECON J, V16, P77
+   Martinez L, 2002, J DEV ECON, V69, P315, DOI 10.1016/S0304-3878(02)00091-3
+   Masson P, 1999, J INT MONEY FINANC, V18, P587, DOI 10.1016/S0261-5606(99)00016-9
+   Obstfeld M., 1996, FDN INT MACROECONOMI
+   PRATT JW, 1964, ECONOMETRICA, V32, P122, DOI 10.2307/1913738
+   Tobin J., 1978, E ECON J, V4, P153
+   Van Rijckehem C, 2001, J INT ECON, V54, P293, DOI 10.1016/S0022-1996(00)00095-7
+NR 29
+TC 3
+Z9 3
+U1 1
+U2 11
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD JAN
+PY 2012
+VL 36
+IS 1
+BP 85
+EP 99
+DI 10.1016/j.jedc.2011.07.005
+PG 15
+WC Economics
+SC Business & Economics
+GA 869BR
+UT WOS:000298571200005
+DA 2019-12-27
+ER
+
+PT J
+AU D'Agostino, G
+   Scala, A
+   Zlatic, V
+   Caldarelli, G
+AF D'Agostino, G.
+   Scala, A.
+   Zlatic, V.
+   Caldarelli, G.
+TI Robustness and assortativity for diffusion-like processes in scale-free
+   networks
+SO EPL
+LA English
+DT Article
+ID COMPLEX NETWORKS; MIXING PATTERNS; EPIDEMIC; DYNAMICS
+AB By analysing the diffusive dynamics of epidemics and of distress in complex networks, we study the effect of the assortativity on the robustness of the networks. We first determine by spectral analysis the thresholds above which epidemics/failures can spread; we then calculate the slowest diffusional times. Our results shows that disassortative networks exhibit a higher epidemiological threshold and are therefore easier to immunize, while in assortative networks there is a longer time for intervention before epidemic/failure spreads. Moreover, we study by computer simulations the sandpile cascade model, a diffusive model of distress propagation (financial contagion). We show that, while assortative networks are more prone to the propagation of epidemic/failures, degree-targeted immunization policies increases their resilience to systemic risk. Copyright (C) EPLA, 2012
+C1 [D'Agostino, G.] CR Casaccia, ENEA, I-00123 Rome, Italy.
+   [Scala, A.] Univ Roma La Sapienza, CNR, ISC, I-00185 Rome, Italy.
+   [Scala, A.] Univ Roma La Sapienza, Dept Phys, I-00185 Rome, Italy.
+   [Scala, A.; Caldarelli, G.] London Inst Math Sci, London W1K 2NY, England.
+   [Zlatic, V.] Rudjer Boskovic Inst, Div Theoret Phys, HR-10002 Zagreb, Croatia.
+   [Caldarelli, G.] IMT Lucca Inst Adv Studies, I-55100 Lucca, Italy.
+RP D'Agostino, G (reprint author), CR Casaccia, ENEA, Via Anguillarese 301, I-00123 Rome, Italy.
+EM antonio.scala@phys.uniroma1.it
+RI Scala, Antonio/A-2098-2012; Scala, Antonio/H-9153-2019; Zlatic,
+   Vinko/H-9321-2012; Caldarelli, Guido/A-5274-2010
+OI Scala, Antonio/0000-0002-3414-2686; Scala, Antonio/0000-0002-3414-2686;
+   Zlatic, Vinko/0000-0001-7101-2154; Caldarelli, Guido/0000-0001-9377-3616
+FU FET [255987]; European project "MOTIA" [JLS-2009-CIPS-AG-C1-016]; 
+   [HDTRA1-11-1-0048]
+FX We thank Prof. L. BRAUNSTEIN for pointing out ref. [19]. AS, VZ and GC
+   acknowledge support from FET Open Project "FOC" No. 255987. GD
+   acknowledges support by the European project "MOTIA"
+   JLS-2009-CIPS-AG-C1-016. AS and GC acknowledge support from the grant
+   HDTRA1-11-1-0048.
+CR Albert R, 2002, REV MOD PHYS, V74, P47, DOI 10.1103/RevModPhys.74.47
+   Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Almendral JA, 2007, NEW J PHYS, V9, DOI 10.1088/1367-2630/9/6/187
+   ALSTROM P, 1988, PHYS REV A, V38, P4905, DOI 10.1103/PhysRevA.38.4905
+   Badham J, 2010, THEOR POPUL BIOL, V77, P71, DOI 10.1016/j.tpb.2009.11.003
+   BAK P, 1987, PHYS REV LETT, V59, P381, DOI 10.1103/PhysRevLett.59.381
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Bartolozzi M, 2006, PHYSICA A, V370, P132, DOI 10.1016/j.physa.2006.04.024
+   Boguna M, 2002, PHYS REV E, V66, DOI 10.1103/PhysRevE.66.047104
+   Boguna M, 2003, PHYS REV LETT, V90, DOI 10.1103/PhysRevLett.90.028701
+   Buldyrev SV, 2010, NATURE, V464, P1025, DOI 10.1038/nature08932
+   Caldarelli G, 2007, SCALE FREE NETWORKS
+   Castellano C, 2010, PHYS REV LETT, V105, DOI 10.1103/PhysRevLett.105.218701
+   Chakrabarti D, 2008, ACM T INFORM SYST SE, V10, DOI 10.1145/1284680.1284681
+   Chen W, 2011, PHYS REV LETT, V106, DOI 10.1103/PhysRevLett.106.115701
+   Durrett R, 2010, P NATL ACAD SCI USA, V107, P4491, DOI 10.1073/pnas.0914402107
+   Eguiluz VM, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.108701
+   Eubank Stephen, 2010, Advances in Social Computing. Proceedings Third International Conference on Social Computing, Behavioral Modeling, and Prediction, SBP 2010, DOI 10.1007/978-3-642-12079-4_1
+   Feigenbaum J, 2003, REP PROG PHYS, V66, P1611, DOI 10.1088/0034-4885/66/10/R02
+   Goh KI, 2003, PHYS REV LETT, V91, DOI 10.1103/PhysRevLett.91.148701
+   Kiss IZ, 2008, J R SOC INTERFACE, V5, P791, DOI 10.1098/rsif.2007.1272
+   Lee KM, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0018443
+   Maslov S, 2002, SCIENCE, V296, P910, DOI 10.1126/science.1065103
+   Moreno Y, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.035103
+   Newman MEJ, 2003, PHYS REV E, V67, DOI 10.1103/PhysRevE.67.026126
+   Newman MEJ, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.208701
+   Noh JD, 2007, PHYS REV E, V76, DOI 10.1103/PhysRevE.76.026116
+   Pastor-Satorras R, 2001, PHYS REV LETT, V86, P3200, DOI 10.1103/PhysRevLett.86.3200
+   Shilo Y, 2003, PHYS REV E, V67, DOI 10.1103/PhysRevE.67.066102
+   Wang Y, 2003, SYM REL DIST SYST, P25
+   Yin YP, 2007, PHYS SCRIPTA, V76, P606, DOI 10.1088/0031-8949/76/6/002
+NR 31
+TC 37
+Z9 37
+U1 0
+U2 30
+PU IOP PUBLISHING LTD
+PI BRISTOL
+PA TEMPLE CIRCUS, TEMPLE WAY, BRISTOL BS1 6BE, ENGLAND
+SN 0295-5075
+EI 1286-4854
+J9 EPL-EUROPHYS LETT
+JI EPL
+PD MAR
+PY 2012
+VL 97
+IS 6
+AR 68006
+DI 10.1209/0295-5075/97/68006
+PG 5
+WC Physics, Multidisciplinary
+SC Physics
+GA 914MD
+UT WOS:000301953300041
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Fecht, F
+   Gruner, HP
+   Hartmann, P
+AF Fecht, Falko
+   Gruener, Hans Peter
+   Hartmann, Philipp
+TI Financial integration, specialization, and systemic risk
+SO JOURNAL OF INTERNATIONAL ECONOMICS
+LA English
+DT Article
+DE Financial integration; Specialization; Interbank market; Financial
+   contagion
+ID LIQUIDITY; LIBERALIZATION; FRAGILITY
+AB This paper studies the implications of cross-border financial integration for financial stability when banks' loan portfolios adjust endogenously. Banks can be subject to sectoral and aggregate domestic shocks. After integration they can share these risks in a complete interbank market When banks have a comparative advantage in providing credit to certain industries, financial integration may induce banks to specialize in lending. An enhanced concentration in lending does not necessarily increase risk, because a well-functioning interbank market allows to achieve the necessary diversification. This greater need for risk sharing, though, increases the risk of cross-border contagion and the likelihood of widespread banking crises. However, even though integration increases the risk of contagion it improves welfare if it permits banks to realize specialization benefits. (c) 2012 Elsevier B.V. All rights reserved.
+C1 [Gruener, Hans Peter] Univ Mannheim, Mannheim, Germany.
+   [Fecht, Falko] EBS Business Sch, Wiesbaden, Germany.
+   [Hartmann, Philipp] European Cent Bank, Frankfurt, Germany.
+   [Gruener, Hans Peter; Hartmann, Philipp] CEPR, London, England.
+   [Hartmann, Philipp] Erasmus Univ, Rotterdam, Netherlands.
+RP Gruner, HP (reprint author), Univ Mannheim, Mannheim, Germany.
+EM gruener@uni-mannheim.de
+OI Fecht, Falko/0000-0001-5659-2381
+CR Acharya VV, 2006, J BUS, V79, P1355, DOI 10.1086/500679
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2004, J EUR ECON ASSOC, V2, P1015, DOI 10.1162/1542476042813805
+   Baele L, 2004, OXFORD REV ECON POL, V20, P509, DOI 10.1093/oxrep/grh030
+   Basel, 2004, 13 BAS COMM BANK SUP
+   Bekaert G, 2005, J FINANC ECON, V77, P3, DOI 10.1016/j.jfineco.2004.05.007
+   Bekaert G, 2001, J DEV ECON, V66, P465, DOI 10.1016/S0304-3878(01)00171-7
+   Bekaert G, 2007, J FINANC, V62, P1081, DOI 10.1111/j.1540-6261.2007.01231.x
+   Bekaert G, 2006, J INT MONEY FINANC, V25, P370, DOI 10.1016/j.jimonfin.2006.01.003
+   Bhattacharia S, 1987, NEW APPROACHES MONET, P69
+   BHATTACHARYA S, 1994, ECON LETT, V44, P287, DOI 10.1016/0165-1765(93)00350-W
+   Bonfiglioli A, 2008, J INT ECON, V76, P337, DOI 10.1016/j.jinteco.2008.08.001
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Dell'Ariccia G, 2006, J FINANC ECON, V79, P401, DOI 10.1016/j.jfineco.2005.02.003
+   DeLong GL, 2001, J FINANC ECON, V59, P221, DOI 10.1016/S0304-405X(00)00086-6
+   Demirguc-Kunt A., 2001, FINANCIAL LIBERALIZA, P96
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   ECB, 2011, FIN INT EUR
+   Eichengreen B, 2003, CAPITAL FLOWS AND CRISES, P1
+   Fecht F., 2006, 5253 CEPR
+   Fecht F., 2007, 6311 CEPR
+   Fecht F, 2004, J EUR ECON ASSOC, V2, P969, DOI 10.1162/1542476042813832
+   Ferguson R. W., 2007, GENEVA REPORTS WORLD, V9
+   Frankel JA, 1998, ECON J, V108, P1009, DOI 10.1111/1468-0297.00327
+   Freixas X, 2005, REV FINANC STUD, V18, P459, DOI 10.1093/rfs/hhi001
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Glick R, 2006, REV ECON STAT, V88, P698, DOI 10.1162/rest.88.4.698
+   Hanson S., 2005, J EMPIR FINANC, V15, P583
+   Hartmann P, 2006, NBER CONF R, P133
+   Heathcote J, 2004, J ECON THEORY, V119, P207, DOI 10.1016/j.jet.2003.06.003
+   HELPMAN E, 1978, THEORY INT TRADE UNC
+   HENRY PB, 2006, 12698 NBER
+   Imbs J.M., 2007, 07132 IMF
+   Ishii S., 2002, 211 IMF
+   Kalemli-Ozcan S, 2003, AM ECON REV, V93, P903, DOI 10.1257/000282803322157151
+   Kose MA, 2009, IMF STAFF PAPERS, V56, P8, DOI 10.1057/imfsp.2008.36
+   Lane PR, 2007, J INT ECON, V73, P223, DOI 10.1016/j.jinteco.2007.02.003
+   Matsuyama K, 2008, NBER MACROECON ANNU, V22, P1
+   Mendicino C, 2004, SSE EFI WORKING PAPE, V567
+   Morgan DP, 2004, Q J ECON, V119, P1555, DOI 10.1162/0033553042476161
+   Musa M, 1998, 172 IMF
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Stulz RM, 2005, J FINANC, V60, P1595, DOI 10.1111/j.1540-6261.2005.00775.x
+   Tirole, 2002, FINANCIAL CRISIS LIQ
+   Van Lelyveld Iman, 2006, INT J CENT BANK, V2, P99
+   Williamson J., 1998, ESSAYS INT FINANCE
+   Winton A., 1999, DONT PUT ALL Y UNPUB
+NR 50
+TC 14
+Z9 14
+U1 1
+U2 40
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0022-1996
+EI 1873-0353
+J9 J INT ECON
+JI J. Int. Econ.
+PD SEP
+PY 2012
+VL 88
+IS 1
+BP 150
+EP 161
+DI 10.1016/j.jinteco.2012.01.012
+PG 12
+WC Economics
+SC Business & Economics
+GA 022GC
+UT WOS:000309944600011
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Arestis, P
+   Karakitsos, E
+AF Arestis, Philip
+   Karakitsos, Elias
+TI The U.S. dimension of the euro zone debt crisis
+SO JOURNAL OF POST KEYNESIAN ECONOMICS
+LA English
+DT Article
+DE credit risk; euro zone debt crisis; (il) liquidity; insolvency
+AB This paper analyzes the contagion channels through which a Greek credit event would spread to the rest of the European Union and then to the United States. A credit crisis would be manifested as a shortage of liquidity, but the real cause would be bank credit risk, which would infect simultaneously the interbank, repo, and certificates of deposits markets. It would then infect the credit default swaps market and money market funds markets. In the past, the risk of a run on the banks was triggered by a purely random event, but nowadays the risk of a run on the entire financial system (whether traditional or shadow) has become systemic. This change in the nature of the risk is due to the excess liquidity in the world financial system. The more excessive the liquidity is, the higher the is probability that the risk will turn out to be systemic. The possibility that a Greek credit event can trigger a Lehman Brothers type of incident in the world financial system is high because the euro zone is not an optimum currency area and because EU policymakers treat it as an illiquidity rather than insolvency problem, which requires capital transfers. Despite this predicament, the losses of financial institutions are likely to be smaller than those triggered by Lehman Brothers because the risk appetite for risky assets is small and the degree of asset leverage is low, around 20 times equity capital, compared with 55 at the time of the Lehman Brothers collapse.
+C1 [Arestis, Philip] Univ Cambridge, Cambridge Ctr Econ & Publ Policy, Dept Land Econ, Cambridge CB2 1TN, England.
+RP Arestis, P (reprint author), Univ Cambridge, Cambridge Ctr Econ & Publ Policy, Dept Land Econ, Cambridge CB2 1TN, England.
+CR Arestis P, 2011, ASSESSMENT OF THE GLOBAL IMPACT OF THE FINANCIAL CRISIS, P1, DOI 10.1057/9780230306912
+   Arestis P, 2011, FINANCIAL CRISIS: ORIGINS AND IMPLICATIONS, P1, DOI 10.1057/9780230303942
+   Arestis P, 2009, HOUSING MARKET CHALLENGES IN EUROPE AND THE UNITED STATES: ANY SOLUTIONS AVAILABLE, P1, DOI 10.1057/9780230246980
+   Arestis P, 2010, POST GREAT RECESSION US ECONOMY: IMPLICATIONS FOR FINANCIAL MARKETS AND THE ECONOMY, P1, DOI 10.1057/9780230276109
+   Bank of International Settlements (BIS), 2010, ASS LONG TERM EC IMP
+   Bank of International Settlements (BIS), 2010, ASS MACR IMP TRANS S
+   Finch G., 2009, BLOOMBERG       0223
+   Gaynor K.B., 1997, EC CONVERGENCE MULTI
+   International Swaps and Derivatives Association (ISDA), 1999, CRED DER DEF
+   MUNDELL RA, 1961, AM ECON REV, V51, P657
+   Sengupta R., 2008, EC SYNOPSES, V25, P1
+   Tett G., 2009, FOOLS GOLD UNRESTRAI
+   Thornton Daniel L., 2009, EC SYNOPSES, V24, P1
+   von Thadden EL, 1999, EUR ECON REV, V43, P991, DOI 10.1016/S0014-2921(98)00122-6
+NR 14
+TC 2
+Z9 2
+U1 0
+U2 0
+PU M E SHARPE INC
+PI ARMONK
+PA 80 BUSINESS PARK DR, ARMONK, NY 10504 USA
+SN 0160-3477
+J9 J POST KEYNESIAN EC
+JI J. Post Keynes. Econ.
+PD FAL
+PY 2012
+VL 35
+IS 1
+BP 21
+EP 44
+DI 10.2753/PKE0160-3477350102
+PG 24
+WC Economics
+SC Business & Economics
+GA 042QA
+UT WOS:000311484800002
+DA 2019-12-27
+ER
+
+PT J
+AU Goh, YM
+   Love, PED
+   Brown, H
+   Spickett, J
+AF Goh, Yang Miang
+   Love, Peter E. D.
+   Brown, Helen
+   Spickett, Jeffery
+TI Organizational Accidents: A Systemic Model of Production versus
+   Protection
+SO JOURNAL OF MANAGEMENT STUDIES
+LA English
+DT Article
+DE causal loop; crisis; mining; organizational accident; risk
+ID SAFETY CLIMATE; RISK PERCEPTION; SENSEMAKING; DISASTER; MANAGEMENT;
+   DYNAMICS; STRATEGY; BEHAVIOR; FAILURE; PROJECT
+AB Production pressure is often cited as an underlying contributory factor of organizational accidents. The relationship, however, between production and safety protection is complex and has not been adequately addressed by current theories regarding organizational accident. In addressing this gap, this paper uses the methodology of system dynamics to develop a causal model to address the dynamic interaction between management of production and protection, which can accumulate in an organizational accident. A case study of a fatal rock fall accident in Tasmania, Australia was conducted based on the developed model and is used to uncover the intricate dynamics linking production pressure, risk tolerability, perception of safety margin, and protection efforts. In particular, the study demonstrates how a strong production focus can trigger a vicious cycle of deteriorating risk perception and how increased protection effort can, ironically, lead to deterioration of protection.
+C1 [Goh, Yang Miang] Curtin Univ Technol, Sch Publ Hlth, Curtin Monash Accid Res Ctr, Fac Hlth Sci, Perth, WA 6845, Australia.
+RP Goh, YM (reprint author), Curtin Univ Technol, Sch Publ Hlth, Curtin Monash Accid Res Ctr, Fac Hlth Sci, GPO Box U1987, Perth, WA 6845, Australia.
+EM y.goh@curtin.edu.au
+RI Goh, Yang Miang/G-2049-2011; Love, Peter/D-7418-2017; Goh, Yang
+   Miang/B-9838-2015
+OI Love, Peter/0000-0002-3239-1304; Goh, Yang Miang/0000-0002-7404-3770
+CR ABDELSABOUR SA, 2001, RES POLICY, V27, P209
+   Ackermann F, 1997, INTERFACES, V27, P48, DOI 10.1287/inte.27.2.48
+   [Anonymous], 2009, AGE
+   [Anonymous], 2009, AUSTRALIAN
+   Babbie E., 2007, PRACTICE SOCIAL RES
+   Baker J., 2007, REPORT BP US REFINER
+   *BEAC GOLD NL, 2009, BEACONSF GOLD NL WEB
+   BOUGON MG, 1992, J MANAGE STUD, V29, P369, DOI 10.1111/j.1467-6486.1992.tb00670.x
+   Brito AJ, 2009, RELIAB ENG SYST SAFE, V94, P187, DOI 10.1016/j.ress.2008.02.014
+   Brown AD, 2000, J MANAGE STUD, V37, P45
+   Burchill G, 1997, MANAGE SCI, V43, P465, DOI 10.1287/mnsc.43.4.465
+   Busby JS, 2006, J MANAGE STUD, V43, P1375, DOI 10.1111/j.1467-6486.2006.00649.x
+   CHANDLER R, 2009, INQUEST TOUCHING DEA
+   Chowdhury SK, 2010, ACAD MANAGE J, V53, P182, DOI 10.5465/AMJ.2010.48037720
+   Cooke DL, 2003, SYST DYNAM REV, V19, P139, DOI 10.1002/sdr.268
+   Cooper K. G., 1980, INTERFACES, V10, P30
+   CSB, 2007, INV REP REF EXPL FIR
+   DOWLING J, 1975, PAC SOCIOL REV, V18, P122
+   FESTINGER L, 1962, SCI AM, V207, P93, DOI 10.1038/scientificamerican1062-93
+   Flin R, 2000, SAFETY SCI, V34, P177, DOI 10.1016/S0925-7535(00)00012-6
+   Flyvbjerg B, 2006, QUAL INQ, V12, P219, DOI 10.1177/1077800405284363
+   Forrester J. W., 1961, IND DYNAMICS
+   Garcia AM, 2004, OCCUP ENVIRON MED, V61, P239
+   Gephart RP, 2004, ACAD MANAGE J, V47, P454, DOI 10.5465/AMJ.2004.14438580
+   GEPHART RP, 1993, ACAD MANAGE J, V36, P1465, DOI 10.2307/256819
+   Goh YM, 2010, SAFETY SCI, V48, P302, DOI 10.1016/j.ssci.2009.11.006
+   Hall JL, 2003, SPACE POLICY, V19, P239, DOI 10.1016/j.spacepol.2003.08.013
+   Health Safety Executive, 2001, RED RISKS PROT PEOPL
+   Hofmann DA, 1998, ACAD MANAGE J, V41, P644, DOI 10.2307/256962
+   Holmes N, 1997, AUST NZ J PUBL HEAL, V21, P11, DOI 10.1111/j.1467-842X.1997.tb01646.x
+   Hopkins A, 1999, SAFETY SCI, V32, P143, DOI 10.1016/S0925-7535(99)00017-X
+   Hopkins A., 1999, MANAGING MAJOR HAZAR
+   Hopkins A., 2000, LESSONS LONGFORD ESS
+   Hopkins A, 2006, SAFETY SCI, V44, P875, DOI 10.1016/j.ssci.2006.05.005
+   Hynes T, 1997, J MANAGE STUD, V34, P601, DOI 10.1111/1467-6486.00065
+   Katz-Navon T, 2005, ACAD MANAGE J, V48, P1075, DOI 10.5465/AMJ.2005.19573110
+   Kim D.H., 1998, SYSTEMS ARCHETYPE BA
+   Kletz T., 2001, LEARNING ACCIDENTS
+   Kletz T., 1999, WHAT WENT WRONG CASE
+   Love P. E. D., 2002, International Journal of Project Management, V20, P425, DOI 10.1016/S0263-7863(01)00039-4
+   Love P. E. D., 1999, CONSTRUCTION MANAGEM, V17, P505, DOI DOI 10.1080/014461999371420
+   Love PED, 2008, IEEE T ENG MANAGE, V55, P234, DOI 10.1109/TEM.2008.919677
+   Love PED, 2009, IEEE T ENG MANAGE, V56, P425, DOI 10.1109/TEM.2008.927774
+   Lyneis JM, 1999, SYST DYNAM REV, V15, P37, DOI 10.1002/(SICI)1099-1727(199921)15:1<37::AID-SDR158>3.0.CO;2-Z
+   MAGNUS R, 2005, REP COMMITTEE INQUIR
+   Maitlis S, 2005, ACAD MANAGE J, V48, P21
+   Marais K, 2006, SAFETY SCI, V44, P565, DOI 10.1016/j.ssci.2005.12.004
+   MARISETT S, 2007, SPECIAL INVESTIGATIO
+   MELICK AG, 2007, BEACONSFIELD INVESTI
+   Ohlson DW, 2006, FOREST POLICY ECON, V8, P824, DOI 10.1016/j.forpol.2005.01.001
+   Perrow C., 1984, NORMAL ACCIDENTS LIV
+   Pidgeon N, 1998, RELIAB ENG SYST SAFE, V59, P5, DOI 10.1016/S0951-8320(97)00114-2
+   QUINLAN M, 2007, REPORT OCCUPATIONAL
+   Ramanujam R, 2003, ACAD MANAGE J, V46, P608, DOI 10.2307/30040652
+   Reason J, 1998, J OCCUP ORGAN PSYCH, V71, P289, DOI 10.1111/j.2044-8325.1998.tb00678.x
+   Reason J., 1997, MANAGING RISK ORG AC
+   Renn O, 1998, RELIAB ENG SYST SAFE, V59, P49, DOI 10.1016/S0951-8320(97)00119-1
+   Richardson GP, 1986, SYST DYNAM REV, V2, P158, DOI 10.1002/sdr.4260020207
+   RICHARDSON GP, 1995, SYST DYNAM REV, V11, P67, DOI 10.1002/sdr.4260110106
+   Saeed K, 1996, SYST DYNAM REV, V12, P235, DOI 10.1002/(SICI)1099-1727(199623)12:3<235::AID-SDR104>3.0.CO;2-Y
+   Salge M, 2006, SYST DYNAM REV, V22, P89, DOI 10.1002/sdr.334
+   Senge P., 2006, 5 DISCIPLINE ART PRA
+   Silverman D., 2001, INTERPRETING QUALITA
+   Simon H., 1957, ADM BEHAV
+   SMITH D, 1995, J MANAGE STUD, V32, P619, DOI 10.1111/j.1467-6486.1995.tb00791.x
+   SOMER BW, 2002, ORAL HIST MANUAL
+   Stake R, 2000, HDB QUALITATIVE RES, P435, DOI DOI 10.2307/2075820
+   Sterman J., 2000, BUSINESS DYNAMICS SY
+   Sutanto J, 2008, J MANAGE INFORM SYST, V25, P133, DOI 10.2753/MIS0742-1222250304
+   Turner B., 1997, MAN MADE DISASTERS
+   Vaughan D., 1996, CHALLENGER LAUNCH DE
+   Weick KE, 2010, J MANAGE STUD, V47, P537, DOI 10.1111/j.1467-6486.2010.00900.x
+   WEICK KE, 1990, J MANAGE, V16, P571, DOI 10.1177/014920639001600304
+   WEICK KE, 1993, ADMIN SCI QUART, V38, P628, DOI 10.2307/2393339
+   Weick KE, 1999, RES ORGAN BEHAV, V21, P81
+   Wilde G. J. S., 1982, RISK ANAL, V2, P209, DOI DOI 10.1111/J.1539-6924.1982.TB01384.X
+   WILLIAMS T, 1995, J OPER RES SOC, V46, P809, DOI 10.1038/sj/jors/0460702
+   WILLIAMS TM, 1995, J PROJECT MANAGEMENT, V13, P151
+   Wolstenholme EF, 2003, SYST DYNAM REV, V19, P7, DOI 10.1002/sdr.259
+   WOLSTENHOLME EF, 1990, SYSTEM INQUIRY
+   Yin R.K., 2009, CASE STUDY RES DESIG
+   2007, AGE
+   2008, AUSTRALIAN
+NR 83
+TC 38
+Z9 39
+U1 1
+U2 41
+PU WILEY-BLACKWELL
+PI MALDEN
+PA COMMERCE PLACE, 350 MAIN ST, MALDEN 02148, MA USA
+SN 0022-2380
+J9 J MANAGE STUD
+JI J. Manage. Stud.
+PD JAN
+PY 2012
+VL 49
+IS 1
+BP 52
+EP 76
+DI 10.1111/j.1467-6486.2010.00959.x
+PG 25
+WC Business; Management
+SC Business & Economics
+GA 869FS
+UT WOS:000298583300003
+DA 2019-12-28
+ER

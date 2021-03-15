@@ -1,0 +1,418 @@
+
+PT J
+AU Zetzsche, D
+   Preiner, C
+AF Zetzsche, Dirk
+   Preiner, Christina
+TI Cross-Border Crowdfunding: Towards a Single Crowdlending and
+   Crowdinvesting Market for Europe
+SO EUROPEAN BUSINESS ORGANIZATION LAW REVIEW
+LA English
+DT Article
+DE Financial regulation; Crowdfunding; FinTech; Crowdlending; Equity based
+   crowdfunding; Crowdinvesting; Capital Requirements Directives (CRD IV);
+   Capital Requirements Regulation (CRR); Market in Financial Instruments
+   Directive (MiFID); Markets in Financial Instruments Regulation (MiFIR);
+   Directive on Undertakings for Collective Investment in Transferable
+   Securities (UCITSD); Directive on Alternative Investment Fund Managers
+   (AIFMD)
+ID LESSONS
+AB Crowdlending and crowdinvesting have experienced rapid growth in some EU Member States. However, these types of crowdfunding have, for the most part, remained a phenomenon of those larger Member States that 'draw a crowd', with populations that are large enough to make crowdfunding systems economically feasible. In turn, crowdfunding has remained a mainly national issue, prompting the European Commission to conclude that there is no need for harmonization of crowdfunding rules in Europe. In contrast to the European Commission's Capital Market Action Plan, this paper takes the view that national limitations on crowdinvesting and crowdlending de facto are the result of limits de iure. Given that no European passport is tailor made or fits crowdfunding, this source of financing is doomed to remain national. Moreover, with different legal requirements in Member States, European law hinders the development of cross-border crowdfunding within the region. This is particularly true for smaller Member States whose populations are too small to constitute 'a crowd'. This paper details how European regulators could facilitate a Single European Crowdfunding Market. Regulation of the crowdfunding platform based on the 'MiFID light' framework could function as the basis for a cross-border crowdfunding manager passport, given the minimum protection it affords both investors and the financial system, and the low costs it imposes on the platform. Following the (1) too-small-to-care, (2) too-large-to-ignore, and (3) too-big-to-fail development path of FinTech business models, we suggest adding a relevance threshold of EUR250,000 in transaction volume to the MiFID light framework and imposing regulation to address systemic risk stemming from very large crowdfunding platforms.
+C1 [Zetzsche, Dirk] Univ Luxembourg, Fac Law Econ & Finance, Financial Law Inclus Finance, Luxembourg, Luxembourg.
+   [Zetzsche, Dirk] Heinrich Heine Univ, Ctr Business & Corp Law, Dusseldorf, Germany.
+   [Preiner, Christina] Univ Zurich, Zurich, Switzerland.
+   [Preiner, Christina] Gasser Partner, Vaduz, Liechtenstein.
+RP Zetzsche, D (reprint author), Univ Luxembourg, Fac Law Econ & Finance, Financial Law Inclus Finance, Luxembourg, Luxembourg.; Zetzsche, D (reprint author), Heinrich Heine Univ, Ctr Business & Corp Law, Dusseldorf, Germany.
+EM dirk.zetzsche@uni.lu; christina.preiner@gasserpartner.com
+CR Agrawal A., 2014, INNOVATION POLICY EC, V14, P63, DOI DOI 10.1086/674021
+   Arner D.W., 2016, GEORGETOWN J INT L, V4, P1271
+   Aschenbeck-Florange T, 2013, REGULATION CROWDFUND
+   Association for Financial Markets in Europe (AFME), 2017, SHORT RISK CAP EUR H
+   Baumann S, 2014, CROWDINVESTING FINAN
+   Belleflamme P, 2015, 15 CORE
+   Bonneau T, 2014, RISF, V2014, P3
+   Bouncken R., 2015, INT BUSINESS EC RES, V74, P407
+   Bradford CS, 2015, ZBB, V27, P376
+   Brenncke M, 2015, WERTPAPIERMITTEILUNG, P1173
+   CAMAC, 2014, CROWD SOURC EQ FUND
+   Camara P, 2015, ALTERNATIVE INVESTME, P237
+   D'Ippolito E, 2016, EUR CO LAW, V13, P27
+   Della Negra F, 2016, REGULATING SUPERVISI, P139
+   Dorff MB, 2013, J CORP LAW, V39, P492
+   ESMA, 2015, ESMA2015856ANN1
+   ESMA, 2014, ESMA20141378
+   ESMA, 2014, ESMA20141569
+   ESMA, 2016, ESMA20161436
+   European Central Bank (ECB), 2016, SURV ACC FIN ENT EUR
+   European Commission, 2014, SUMM RESP PUBL CONS
+   European Commission, 2015, SWD20150255 EUR COMM
+   European Commission, 2017, MOR COMP INN FIN SEC
+   European Commission, 2015, CROWDF MAPP EU MARK
+   European Commission, 2013, CONS DOC CROWDF EU E, V3
+   European Commission, 2016, SWD2016154 EUR COMM
+   European Commission, 2015, COM2015468 EUR COMM, P468
+   European Commission, 2010, SEC2010669 EUR COMM
+   European Commission, 2016, SWD2016147 EUR COMM
+   European Commission, 2014, COM2014172 EUR COMM
+   European Commission, 2017, DET SUMM IND RESP PU
+   European Commission DG for Research and Innovation, 2017, ASS POT CROWDF OTH F
+   European Parliament, 2017, CROWDF EUR INTR STAT
+   European Parliament, 2016, A802222016 EUR PARL
+   Fendrick M, 2017, FINTECH FINANCING EN
+   Ferrarini G, 2017, REGULATION EU FINANC, P659
+   Fink AC, 2012, U DETROIT MERCY LAW, V90, P8
+   Gabison GA, 2015, 16 JRC I PROSP TECHN
+   GERDING ERIK F., 2014, LAW BUBBLES FINANCIA
+   Gilson RJ, 2003, STANFORD LAW REV, V55, P1067
+   Hagedorn A., 2016, CROWDFUNDING EUROPE, P71
+   Harkonen E, 2017, EUR CO LAW, V2017, P121
+   Hatzopoulos V, 2017, COMMON MKT LAW REV, V54, P81
+   Hazen T.L., 2011, N CAROLINA LAW REV, V90, P1735
+   HEMINWAY JM, 2014, VT L REV, V38, P827
+   Hooghiemstra S. N, 2016, CROWDFUNDING EUROPE, P135
+   Hornuf L., 2015, FUNDING DYNAMICS CRO
+   Hurt C, 2015, U ILLINOIS LAW REV, P217
+   Ibrahim DM, 2016, MINN LAW REV, V100, P561
+   IOSCO, 2015, CROWDF 2015 SURV RES
+   IOSCO, 2015, STAT ADDR REG CROWDF
+   IOSCO, 2017, RES REP FIN TECHN FI
+   Jorge Pesok, 2014, DARTM LAW J, V12, P146
+   Kirby E, 2014, 32014 SWP IOSCO RES
+   Klohn L, 2016, EUR CO LAW, V13, P56
+   Lin L, 2017, J CORP LAW STUD, V17, P327, DOI 10.1080/14735970.2017.1296217
+   Lin MF, 2016, MANAGE SCI, V62, P1393, DOI 10.1287/mnsc.2015.2206
+   Nietsch M, 2014, DB, P1788
+   Nigro CA, 2014, EUR CO LAW, V11, P229
+   Rericha R, 2015, ZFR, V218, P403
+   Sannajust A, 2014, J APP BUS RES, V30, P1918
+   Spindler G, 2017, ZBB, P129
+   Steib, 2016, THESIS
+   Surowiecki J, 2005, WISDOM CROWDS WHY MA
+   Tomboc Gmeleen Faye B., 2013, John Marshall Journal of Information Technology and Privacy law, V30, P253
+   UK FCA, 2014, POL STAT PS14 4 FCAS
+   UK FCA, 2016, FCA WARN ITS WEBS
+   Yamen S, 2015, INT LAW MANAG REV, V11, P41
+   Zetzsche DA, 2015, ALTERNATIVE INVESTME, P265
+   Zetzsche DA, 2012, EUROPEAN FINANCIAL M, P339
+   Zetzsche DA, 2015, PRINZIPIEN KOLLEKTIV
+   Zetzsche DA, 2017, ANATOMY EUROPEAN INV
+   Zetzsche Dirk, 2016, RETHINKING GLOBAL FI, P390
+NR 73
+TC 0
+Z9 0
+U1 8
+U2 48
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1566-7529
+EI 1741-6205
+J9 EUR BUS ORGAN LAW RE
+JI Eur. Bus. Organ. Law Rev.
+PD JUN
+PY 2018
+VL 19
+IS 2
+BP 217
+EP 251
+DI 10.1007/s40804-018-0110-x
+PG 35
+WC Business; Law
+SC Business & Economics; Government & Law
+GA GH1CX
+UT WOS:000433141000001
+DA 2019-12-28
+ER
+
+PT J
+AU Fan, H
+   Keregero, CM
+   Gao, QQ
+AF Fan, Hong
+   Keregero, Chirongo Moses
+   Gao, Qianqian
+TI The Application of Macroprudential Capital Requirements in Managing
+   Systemic Risk
+SO COMPLEXITY
+LA English
+DT Article
+ID CONTAGION; NETWORK; EXPOSURES; STABILITY; MODEL
+AB When setting banks regulatory capital requirement based on their contribution to the overall risk of the banking system we need to consider that the risk of the banking system as well as each banks risk contribution changes once bank equity capital gets redistributed. Therefore the present paper provides a theoretical framework to manage the systemic risk of the banking system in Nigeria based on macroprudential capital requirements, which requires banks to hold capital that is proportional to their contribution to systemic risk. Using a sample of 10 Nigerian banks, we reallocate capital in the system based on two scenarios; firstly in the situation where the system shocks do not exist in the system, we find that almost all banks appear to hold more capital; secondly, we also consider the situation where the system shocks exist in the system; we find that almost all banks tend to hold little capital on four risk allocation mechanisms. We further find that despite the heterogeneity in macroprudential capital requirements, all risk allocation mechanisms bring a substantial decrease in the systemic risk. The risk allocation mechanism based on Delta CoVaR decreases the average default probability the most. Our results suggest that financial stability can be substantially improved by implementing macroprudential regulations for the banking system.
+C1 [Fan, Hong; Keregero, Chirongo Moses; Gao, Qianqian] Donghua Univ, Glorious Sun Sch Business & Management, Shanghai 200051, Peoples R China.
+RP Fan, H (reprint author), Donghua Univ, Glorious Sun Sch Business & Management, Shanghai 200051, Peoples R China.
+EM hongfan@dhu.edu.cn
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71371046]
+FX The authors acknowledge the support from the National Natural Science
+   Foundation of China under Grant no. 71371046.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Bluhm M., 2014, SSRN
+   Bramer P, 2014, EUR J POLIT ECON, V34, pS53, DOI 10.1016/j.ejpoleco.2013.04.006
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Cerutti E, 2017, J FINANC STABIL, V28, P203, DOI 10.1016/j.jfs.2015.10.004
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Frisell L., 2007, STATEDEPENDENT UNPUB
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Galati G, 2013, J ECON SURV, V27, P846, DOI 10.1111/j.1467-6419.2012.00729.x
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Glasserman P., 2013, J BANK FINANC, V50, P383
+   Gualdi S, 2016, SCI REP-UK, V6, DOI 10.1038/srep39467
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Jorion P., 2007, VALUE RISK NEW BENCH
+   Kahou ME, 2017, J FINANC STABIL, V29, P92, DOI 10.1016/j.jfs.2016.12.005
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Liao S, 2015, INT REV ECON FINANC, V40, P231, DOI 10.1016/j.iref.2015.02.012
+   Lubloy A., 2005, DOMINO EFFECT UNPUB
+   Lux T, 2015, J ECON DYN CONTROL, V52, pA11, DOI 10.1016/j.jedc.2014.09.038
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Shapley L. S., 1953, ANN MATH STUD, V28, P307, DOI DOI 10.1515/9781400881970-018
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   van Lelyveld I., 2006, INT J CENT BANK, V2, P2
+   Wells S., 2004, 230 BANK ENGL
+   Xu T, 2016, PHYSICA A, V463, P131, DOI 10.1016/j.physa.2016.07.013
+NR 37
+TC 0
+Z9 0
+U1 2
+U2 8
+PU WILEY-HINDAWI
+PI LONDON
+PA ADAM HOUSE, 3RD FL, 1 FITZROY SQ, LONDON, WIT 5HE, ENGLAND
+SN 1076-2787
+EI 1099-0526
+J9 COMPLEXITY
+JI Complexity
+PY 2018
+AR 4012163
+DI 10.1155/2018/4012163
+PG 15
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA FV2XJ
+UT WOS:000424431000001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Pashko, P
+   Tylchyk, O
+   Kotukha, O
+AF Pashko, Pavlo
+   Tylchyk, Olga
+   Kotukha, Oleksandr
+TI ONTOLOGY OF SCIENTIFIC COGNITION OF SHADOW ECONOMY AND ECONOMIC SHADING
+SO BALTIC JOURNAL OF ECONOMIC STUDIES
+LA English
+DT Article
+DE shadowing of the economy; shadow economy; administrative and legal
+   provision; administrative and legal measures; prevention of corruption;
+   offenses in economic sphere; counteraction of shadowing of economy;
+   money laundering of proceeds from crime
+AB The purpose of this article is to characterize deformation problems of the domestic economy, particularly the influence of negative factors on it, resulting in its shading. This article analyses the approaches to statement that the shadow economy is one of the major global risks of the coming decade. The context of legal regulation is directly related to form an effective system of ensuring of Ukraine's national security is possible under the condition of thorough development of the areas of counteraction to individual threats in the relevant spheres, including the economy. At the same time, a special attention is paid to the view that the economic shading although is officially recognized as a threat to national security, however, the notion that should denote this phenomenon and be a basic one is not formulated in any current normative legal act. The formation of the concepts of "shadow economy" and "economic shading" in the interconnection is a logical stage of cognitive activity within both the economic and legal sciences. The practical significance of the results of scientific research is the formation of the hypothesis, the essence of which is the new knowledge about the shadowing of the economy as a legal category on the basis of system-defined signs, causes and of dialectical connection of the phenomenon of the shadow economy and the process of dynamic transformation. A given hypothesis is intended to change the strategic directions and guidelines in the formation of economic policy to neutralize harmful processes of shading of the legal sectors of the economy. The value of the results obtained of the current research is due to the transnational nature of the phenomenon of the shadow economy and connection of such a phenomenon with other harmful processes that are produced within the economic space and lead to the institutionalization of the global economic crisis. Methodology. A methodological framework of the economic security research is defined by complex of scientific cognition methods that allow us to look at this problem as a multi-aspect, interdisciplinary phenomenon. On the basis of the system-based, structural, systemic-functional, and other scientific approaches, the idea of the economic security has formed a complex systemic category covering the theoretical and practical level of economic activity.
+C1 [Pashko, Pavlo; Tylchyk, Olga] Univ State Fiscal Serv Ukraine, Irpin, Ukraine.
+   [Kotukha, Oleksandr] Lviv Trade & Econ Univ, Lvov, Ukraine.
+RP Pashko, P (reprint author), Univ State Fiscal Serv Ukraine, Irpin, Ukraine.
+EM papavl@ukr.net; o.v.tilchik@ukr.net; kotuha1@ukr.net
+RI Pavlo, Pashko/AAC-6115-2019; Котуха, Олександр/AAB-9212-2019
+OI Pavlo, Pashko/0000-0002-2697-751X; Котуха, Олександр/0000-0002-1198-8849
+CR [Anonymous], 2016, REPORT CONDUCTING NA
+   BECKER GS, 1968, J POLIT ECON, V76, P169, DOI 10.1086/259394
+   Buzel V. T., 2009, VELYKYY TLUMACHNYY S
+   Hoppe Hans-Hermann, 1995, EC SCI AUSTRIAN METH
+   Kochev V. A., 2010, B VORONEZH STATE EC, P45
+   Matzievsky N. S., 2010, P TOMSK POLYTECHNIC, P22
+   Measuring the Non-Observed Economy, 2002, MEASURING NONOBSERVE, P141
+   North D., 2010, PONIMANIYE PROTSESSA
+   Popovych V. M., 2001, EKONOMIKO KRYMINOLOH
+   Shemshuchenko Yu. S., 2002, YURYDYCHNA ENTSYKLOP, V6
+   Skakun O. F., 2013, EKONOMICHNA DOMINANT, V1, P154
+   Tsishkovskiy Ye. A., 2007, KATEGORIYA EKONOMICH, P507
+   Turchynov O. V., 1987, THESIS KYIV
+   Varnaliy Z. S., 2009, EKONOMICHNA BEZPEKA
+   Varnaliy Z. S., 2006, TINOVA EKONOMIKA SUT
+   Varnaliy Z. S., 2015, KONKURENTSIYA PIDPRY
+   Varnaliy Z. S., 2017, TIN EK SYST INST ZAH, P29
+NR 17
+TC 1
+Z9 1
+U1 3
+U2 9
+PU BALTIC JOURNAL ECONOMIC STUDIES
+PI RIGA
+PA VALDEKU IELA 62-156, RIGA, LV-1058, LATVIA
+SN 2256-0742
+EI 2256-0963
+J9 BALT J ECON STUD
+JI Balt. J. Econ. Stud.
+PY 2018
+VL 4
+IS 2
+BP 151
+EP 158
+DI 10.30525/2256-0742/2018-4-2-151-158
+PG 8
+WC Economics
+SC Business & Economics
+GA GO3CJ
+UT WOS:000439864300023
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Csoka, P
+   Herings, PJJ
+AF Csoka, Peter
+   Herings, P. Jean-Jacques
+TI Decentralized Clearing in Financial Networks
+SO MANAGEMENT SCIENCE
+LA English
+DT Article
+DE networks; bankruptcy problems; systemic risk; decentralized clearing;
+   indivisibilities; blockchain
+ID GAME-THEORETIC ANALYSIS; SYSTEMIC RISK; ALLOCATION METHODS; TAXATION
+   PROBLEMS; CLAIMS PROBLEMS; CONTAGION; APPORTIONMENT; INDIVISIBILITIES;
+   BANKRUPTCY; LIQUIDITY
+AB We consider a situation in which agents have mutual claims on each other, summarized in a liability matrix. Agents' assets might be insufficient to satisfy their liabilities, leading to defaults. In case of default, bankruptcy rules are used to specify the way agents are going to be rationed. A clearing payment matrix is a payment matrix consistent with the prevailing bankruptcy rules that satisfies limited liability and priority of creditors. Since clearing payment matrices and the corresponding values of equity are not uniquely determined, we provide bounds on the possible levels equity can take. Unlike the existing literature, which studies centralized clearing procedures, we introduce a large class of decentralized clearing processes. We show the convergence of any such process in finitely many iterations to the least clearing payment matrix. When the unit of account is sufficiently small, all decentralized clearing processes lead essentially to the same value of equity as a centralized clearing procedure. As a policy implication, it is not necessary to collect and process all the sensitive data of all the agents simultaneously and run a centralized clearing procedure.
+C1 [Csoka, Peter] Corvinus Univ Budapest, Corvinus Business Sch, Dept Finance, H-1093 Budapest, Hungary.
+   [Csoka, Peter] Hungarian Acad Sci, Ctr Econ & Reg Studies, Momentum Game Theory Res Grp, H-7621 Pecs, Hungary.
+   [Herings, P. Jean-Jacques] Maastricht Univ, Dept Econ, NL-6200 MD Maastricht, Netherlands.
+RP Csoka, P (reprint author), Corvinus Univ Budapest, Corvinus Business Sch, Dept Finance, H-1093 Budapest, Hungary.; Csoka, P (reprint author), Hungarian Acad Sci, Ctr Econ & Reg Studies, Momentum Game Theory Res Grp, H-7621 Pecs, Hungary.
+EM peter.csoka@uni-corvinus.hu; p.herings@maastrichtuniversity.nl
+RI ; Csoka, Peter/P-5817-2014
+OI Herings, P. Jean-Jacques/0000-0002-1100-8601; Csoka,
+   Peter/0000-0003-1703-5835
+FU Hungarian National Research, Development, and Innovation Office [PD
+   105859]; Hungarian Academy of SciencesHungarian Academy of Sciences
+   [LP-004/2010]; COST Action on Computational Social Choice [IC1205]
+FX P. Csoka was supported by the Hungarian National Research, Development,
+   and Innovation Office [PD 105859], the Hungarian Academy of Sciences
+   [LP-004/2010], and COST Action IC1205 on Computational Social Choice.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Balinski M. L., 2010, FAIR REPRESENTATION
+   BALINSKI ML, 1975, AM MATH MON, V82, P701, DOI 10.2307/2318729
+   Biro P, 2015, MATH SOC SCI, V77, P32, DOI 10.1016/j.mathsocsci.2015.06.001
+   Bjorndal E, 2010, INT J GAME THEORY, V39, P11, DOI 10.1007/s00182-009-0174-5
+   BROWN JR, 1979, OPER RES, V27, P324, DOI 10.1287/opre.27.2.324
+   Capponi A, 2016, OPER RES, V64, P1121, DOI 10.1287/opre.2015.1402
+   Chen C, 2013, MANAGE SCI, V59, P1373, DOI 10.1287/mnsc.1120.1631
+   Chen SW, 2015, SOC CHOICE WELFARE, V44, P283, DOI 10.1007/s00355-014-0828-5
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Csoka P, 2017, 17001 GSBE MAASTR U
+   Demange G, 2018, MANAGE SCI, V64, P955, DOI 10.1287/mnsc.2016.2592
+   Dur Umut, 2016, WORKING PAPER
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Franken SM, 2014, OXFORD J LEGAL STUD, V34, P97, DOI 10.1093/ojls/gqt019
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Grimmett GR, 2012, MATH SOC SCI, V63, P68, DOI 10.1016/j.mathsocsci.2011.10.003
+   Groote Schaarsberg M, 2013, 2013033 CENTER TILB
+   Herrero C, 2008, SOC CHOICE WELFARE, V30, P603, DOI 10.1007/s00355-007-0262-z
+   Kaminski MM, 2000, MATH SOC SCI, V40, P131, DOI 10.1016/S0165-4896(99)00045-1
+   Luss H., 2012, EQUITABLE RESOURCE A
+   Malhotra N, 2007, SOC SCI QUART, V88, P1038, DOI 10.1111/j.1540-6237.2007.00517.x
+   Moulin H, 2002, MATH OPER RES, V27, P1, DOI 10.1287/moor.27.1.1.336
+   Moulin H, 2000, ECONOMETRICA, V68, P643, DOI 10.1111/1468-0262.00126
+   Moulin H, 2013, OPER RES, V61, P1087, DOI 10.1287/opre.2013.1199
+   ONEILL B, 1982, MATH SOC SCI, V2, P345, DOI 10.1016/0165-4896(82)90029-4
+   PUKELSHEIM F., 2014, PROPORTIONAL REPRESE
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Tarksi A., 1955, PAC J MATH, V5, P285, DOI DOI 10.2140/PJM.1955.5.285
+   Thomson W, 2003, MATH SOC SCI, V45, P249, DOI 10.1016/S0165-4896(02)00070-7
+   Thomson W, 2013, INT GAME THEORY REV, V15, DOI 10.1142/S0219198913400185
+   Thomson W, 2015, MATH SOC SCI, V74, P41, DOI 10.1016/j.mathsocsci.2014.09.002
+   Young H. P., 1994, EQUITY THEORY PRACTI
+NR 37
+TC 2
+Z9 2
+U1 8
+U2 52
+PU INFORMS
+PI CATONSVILLE
+PA 5521 RESEARCH PARK DR, SUITE 200, CATONSVILLE, MD 21228 USA
+SN 0025-1909
+EI 1526-5501
+J9 MANAGE SCI
+JI Manage. Sci.
+PD OCT
+PY 2018
+VL 64
+IS 10
+BP 4681
+EP 4699
+DI 10.1287/mnsc.2017.2847
+PG 19
+WC Management; Operations Research & Management Science
+SC Business & Economics; Operations Research & Management Science
+GA GW0UB
+UT WOS:000446583800014
+OA Bronze, Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Niu, XJ
+AF Niu Xuejie
+TI IoT study on the total risk management and cluster-coordinated
+   development based on synergy theory
+SO COGNITIVE SYSTEMS RESEARCH
+LA English
+DT Article
+DE Financial risk early warning of listed companies; Contagion channel;
+   Markov; Regime-switching model; IoT
+AB Based on the new perspective of the financial crisis contagion channel of the international listed companies, this Paper aims to a real-time, targeted and international financial risk warning index system of listed companies and synthesize the financial stress index of listed company that adapt to China's situations from such three dimensions as foreign exchange market, banking industry and stock market. The empirical study of financial risk early warning in Chinese listed companies based on the Markov regime-switching model has shown that the M2/GDP growth rate, the volatility of stock market and the foreign trade dependence have a positive relationship with the current financial risk of the listed companies in China; stock market returns and foreign exchange reserves/GDP have inverse relationship with the financial risks of listed companies; the financial risks of listed companies in China mainly come from the excessively loose monetary policy during the crisis and the imperfection of the stock market and its regulatory system. The forecast shows that China will be in the state of low financial risk in listed companies from 2014 to 2015. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Niu Xuejie] Shanxi Univ, Sch Econ & Management, Taiyuan, Shanxi, Peoples R China.
+RP Niu, XJ (reprint author), Shanxi Univ, Sch Econ & Management, Taiyuan, Shanxi, Peoples R China.
+CR Arunkumar N, 2017, PATTERN RECOGN LETT, V94, P112, DOI 10.1016/j.patrec.2017.05.007
+   Arunkumar N., 2012, 2012 International Conference on Advances in Engineering, Science and Management (ICAESM), P61
+   Hussein AF, 2018, IEEE ACCESS, V6, P49306, DOI 10.1109/ACCESS.2018.2867078
+   Malarkodi M. P, 2013, INT J APPL ENG RES, V8, P1831
+   Mohammed M. A., 2018, J SUPERCOMPUT, DOI [10.1007/s11227-018-2495-2, DOI 10.1007/S11227-018-2495-2]
+   Mohammed MA, 2018, COMPUT ELECTR ENG, V71, P372, DOI 10.1016/j.compeleceng.2018.07.044
+   Mohammed MA, 2018, FUTURE GENER COMP SY, V89, P539, DOI 10.1016/j.future.2018.07.022
+   Mutlag AA, 2019, FUTURE GENER COMP SY, V90, P62, DOI 10.1016/j.future.2018.07.049
+   Pan WS, 2012, IEEE INT ENTERP, P190, DOI 10.1109/EDOCW.2012.33
+   Stephygraph LR, 2016, ADV INTELL SYST, V397, P537, DOI 10.1007/978-81-322-2671-0_52
+   Zhang YY, 2016, BIOMATERIALS, V84, P230, DOI 10.1016/j.biomaterials.2015.12.028
+   Zhao YJ, 2017, IEEE T INSTRUM MEAS, V66, P1789, DOI 10.1109/TIM.2017.2665983
+NR 12
+TC 1
+Z9 1
+U1 3
+U2 13
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1389-0417
+J9 COGN SYST RES
+JI Cogn. Syst. Res.
+PD DEC
+PY 2018
+VL 52
+BP 809
+EP 815
+DI 10.1016/j.cogsys.2018.09.010
+PG 7
+WC Computer Science, Artificial Intelligence; Neurosciences; Psychology,
+   Experimental
+SC Computer Science; Neurosciences & Neurology; Psychology
+GA HB2GA
+UT WOS:000450854400082
+DA 2019-12-27
+ER

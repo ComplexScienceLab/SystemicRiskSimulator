@@ -1,0 +1,478 @@
+
+PT J
+AU Albers, H
+   Gornott, C
+   Huttel, S
+AF Albers, Hakon
+   Gornott, Christoph
+   Huettel, Silke
+TI How do inputs and weather drive wheat yield volatility? The example of
+   Germany
+SO FOOD POLICY
+LA English
+DT Article
+DE Yield; Wheat; Variability; Risk; Weather; Common Agricultural Policy
+ID CROP YIELD; CLIMATE-CHANGE; TEMPERATURE VARIABILITY; RISK; IMPACT;
+   MODEL; PRODUCTIVITY; FOOD; AGGREGATION; PERFORMANCE
+AB Increases in cereals production risk are commonly related to increases in weather risk. We analyze weather-induced changes in wheat yield volatility as a systemic weather risk in Germany. We disentangle, however, the relative impacts of inputs and weather on regional yield volatility. For this purpose we augment a production function with phenologically aggregated weather variables. Increasing volatility can be traced back to weather changes only in some regions. On average, inputs explain 49% of the total actual wheat yield volatility, while weather explains 43%. Models with only weather variables deliver biased but reasonable approximations for climate impact research. (c) 2017 Elsevier Ltd. All rights reserved.
+C1 [Albers, Hakon] Martin Luther Univ Halle Wittenberg, Dept Econ, Univ Sring 3, D-06108 Halle, Germany.
+   [Gornott, Christoph] Potsdam Inst Climate Impact Res PIK, Telegrafenberg A62-2-01, D-14412 Potsdam, Germany.
+   [Huettel, Silke] Univ Rostock, Agr Econ, Justus von Liebig Weg 7, D-18059 Rostock, Germany.
+RP Albers, H (reprint author), Martin Luther Univ Halle Wittenberg, Dept Econ, Univ Sring 3, D-06108 Halle, Germany.
+EM hakon.albers@wiwi.uni-halle.de; gornott@pik-potsdam.de;
+   silke.huettel@uni-rostock.de
+OI Huttel, Silke/0000-0002-2141-2931; Gornott,
+   Christoph/0000-0003-3933-3358
+CR Attavanich W, 2014, CLIMATIC CHANGE, V124, P747, DOI 10.1007/s10584-014-1128-x
+   Banse M, 2008, EUR REV AGRIC ECON, V35, P117, DOI 10.1093/erae/jbn023
+   Barkaszi L., 2009, D111 FADN FACEPA
+   Blanc E., 2012, AM J CLIMATE CHANGE, V1, P1, DOI DOI 10.4236/AJCC.2012.11001
+   BMEL, 2015, STAT BER BUND ERN LA
+   Brown I, 2013, INT J BIOMETEOROL, V57, P605, DOI 10.1007/s00484-012-0588-9
+   Brown ME, 2015, CLIMATE CHANGE GLOBA
+   Brown ME, 2017, FOOD POLICY, V68, P154, DOI 10.1016/j.foodpol.2017.02.004
+   Butler EE, 2015, ENVIRON RES LETT, V10, DOI 10.1088/1748-9326/10/3/034009
+   Calderini DF, 1998, FIELD CROP RES, V57, P335, DOI 10.1016/S0378-4290(98)00080-X
+   Chen CC, 2004, CLIMATIC CHANGE, V66, P239, DOI 10.1023/B:CLIM.0000043159.33816.e5
+   Chipanshi A, 2015, AGR FOREST METEOROL, V206, P137, DOI 10.1016/j.agrformet.2015.03.007
+   Chmielewski FM, 2000, AGR FOREST METEOROL, V102, P253, DOI 10.1016/S0168-1923(00)00125-8
+   COELLI T, 2005, INTRO EFFICIENCY PRO
+   Conradt S, 2015, AGR ECON-BLACKWELL, V46, P537, DOI 10.1111/agec.12180
+   Conradt T, 2013, HYDROL EARTH SYST SC, V17, P2947, DOI 10.5194/hess-17-2947-2013
+   Dell M, 2014, J ECON LIT, V52, P740, DOI 10.1257/jel.52.3.740
+   Deschenes O, 2007, AM ECON REV, V97, P354, DOI 10.1257/aer.97.1.354
+   Deutscher Wetterdienst, 2014, PHAN DAT DEUTSCHL
+   Deutscher Wetterdienst, 2012, DAT KLIM DEUTSCH WET
+   Driscoll JC, 1998, REV ECON STAT, V80, P549, DOI 10.1162/003465398557825
+   Emerick K, 2016, AM ECON REV, V106, P1537, DOI 10.1257/aer.20150474
+   European Commission, 2015, FDAN PUBL DAT
+   FAOstat, 2015, PROD WORLD EUR UN GE
+   Finger R, 2013, AGR ECON-BLACKWELL, V44, P217, DOI 10.1111/agec.12005
+   Finger R, 2010, FOOD POLICY, V35, P175, DOI 10.1016/j.foodpol.2009.11.004
+   Foley JA, 2011, NATURE, V478, P337, DOI 10.1038/nature10452
+   Fricke E., 2015, RAPS GETREIDE NICHT
+   Gaupp F., 2016, RISK ANAL EARLY VIEW, P1
+   Gohin A, 2006, J AGR ECON, V57, P415, DOI 10.1111/j.1477-9552.2006.00058.x
+   Gornott C, 2016, AGR FOREST METEOROL, V217, P89, DOI 10.1016/j.agrformet.2015.10.005
+   Greene W. H., 2012, ECONOMETRIC ANAL
+   Haile MG, 2016, AM J AGR ECON, V98, P172, DOI 10.1093/ajae/aav013
+   Iglesias A, 2007, CLIM RES, V34, P47, DOI 10.3354/cr034047
+   Isik M, 2006, APPL ECON, V38, P835, DOI 10.1080/00036840500193682
+   Kaufmann RK, 1997, AM J AGR ECON, V79, P178, DOI 10.2307/1243952
+   Krause J, 2008, AGRIC FINANCE REV, V68, P9, DOI 10.1108/00214660880001216
+   KTBL - Kuratorium fur Technik und Bauwesen in der Landwirtschaft, 2006, BETR LANDW 2006 07
+   Levers C, 2016, LAND USE POLICY, V58, P380, DOI 10.1016/j.landusepol.2016.08.013
+   Liu B, 2016, NAT CLIM CHANGE, V6, P1130, DOI 10.1038/NCLIMATE3115
+   Lobell DB, 2007, AGR FOREST METEOROL, V145, P229, DOI 10.1016/j.agrformet.2007.05.002
+   Lobell DB, 2011, SCIENCE, V333, P616, DOI [10.1126/science.1204531, 10.1126/science.1206376]
+   Long SP, 2006, SCIENCE, V312, P1918, DOI 10.1126/science.1114722
+   Luterbacher J, 2004, SCIENCE, V303, P1499, DOI 10.1126/science.1093877
+   MARRA MC, 1994, J AGR RESOUR ECON, V19, P69
+   Meier U, 2001, GROWTH STAGES MONO D
+   MENDELSOHN R, 1994, AM ECON REV, V84, P753
+   Miao RQ, 2016, AM J AGR ECON, V98, P191, DOI 10.1093/ajae/aav025
+   Millo G., 2014, 54954 MPRA
+   Muller C, 2014, AGR ECON-BLACKWELL, V45, P37, DOI 10.1111/agec.12088
+   Odening M, 2014, AGRIC FINANCE REV, V74, P188, DOI 10.1108/AFR-11-2013-0039
+   Osborne TM, 2013, ENVIRON RES LETT, V8, DOI 10.1088/1748-9326/8/2/024001
+   OURY B, 1965, J FARM ECON, V47, P270, DOI 10.2307/1236574
+   Pachauri R. K., 2014, CLIMATE CHANGE 2014
+   Pardey PG, 2016, NATURE, V537, P301, DOI 10.1038/537301a
+   Perkins SE, 2015, ATMOS RES, V164, P242, DOI 10.1016/j.atmosres.2015.05.014
+   Ray DK, 2015, NAT COMMUN, V6, DOI 10.1038/ncomms6989
+   Reidsma P, 2007, CLIMATIC CHANGE, V84, P403, DOI [10.1007/s10584-007-9242-7, 10.1007/S10584-007-9242-7]
+   Roberts MJ, 2013, AM J AGR ECON, V95, P236, DOI 10.1093/ajae/aas047
+   Rotter R, 1999, CLIMATIC CHANGE, V43, P651, DOI 10.1023/A:1005541132734
+   Schar C, 2004, NATURE, V427, P332, DOI 10.1038/nature02300
+   Schlenker W, 2010, ENVIRON RES LETT, V5, DOI 10.1088/1748-9326/5/1/014010
+   Schlenker W, 2009, P NATL ACAD SCI USA, V106, P15594, DOI 10.1073/pnas.0906865106
+   Siebert S, 2012, AGR FOREST METEOROL, V152, P44, DOI 10.1016/j.agrformet.2011.08.007
+   Statistisches Bundesamt, 2014, 612210002 STAT BUD
+   Statistisches Bundesamt, 2015, 412410001 STAT BUND
+   Steinmann MS, 2010, GER J AGR ECON, V59, P1
+   Surminski S, 2016, NAT CLIM CHANGE, V6, P332
+   Tannura M. A., 2008, 200801 U ILL URB CHA
+   Ward PS, 2014, EUR REV AGRIC ECON, V41, P199, DOI 10.1093/erae/jbt025
+   Wessolek G, 2006, EUR J AGRON, V24, P333, DOI 10.1016/j.eja.2005.11.001
+   Wheeler T, 2013, SCIENCE, V341, P508, DOI 10.1126/science.1239402
+   Woodard JD, 2008, J AGR RESOUR ECON, V33, P34
+   Wooldridge J.M., 2009, INTRO ECONOMETRICS M
+   YANG SR, 1992, J AGR RESOUR ECON, V17, P103
+   You LZ, 2009, AGR FOREST METEOROL, V149, P1009, DOI 10.1016/j.agrformet.2008.12.004
+NR 76
+TC 4
+Z9 4
+U1 3
+U2 18
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0306-9192
+EI 1873-5657
+J9 FOOD POLICY
+JI Food Policy
+PD JUL
+PY 2017
+VL 70
+BP 50
+EP 61
+DI 10.1016/j.foodpol.2017.05.001
+PG 12
+WC Agricultural Economics & Policy; Economics; Food Science & Technology;
+   Nutrition & Dietetics
+SC Agriculture; Business & Economics; Food Science & Technology; Nutrition
+   & Dietetics
+GA FD3AX
+UT WOS:000407407000005
+DA 2019-12-28
+ER
+
+PT J
+AU Wang, GJ
+   Xie, C
+   He, KJ
+   Stanley, HE
+AF Wang, Gang-Jin
+   Xie, Chi
+   He, Kaijian
+   Stanley, H. Eugene
+TI Extreme risk spillover network: application to financial institutions
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Extreme risk spillovers; Financial network; Financial institutions;
+   Financial crisis; C51; G01; G20
+ID SYSTEMIC RISK; VOLATILITY SPILLOVERS; CAPITAL SHORTFALL; GRANGER
+   CAUSALITY; COMPLEX-SYSTEMS; MARKETS; CONNECTEDNESS; INFORMATION
+AB Using the CAViaR tool to estimate the value-at-risk (VaR) and the Granger causality risk test to quantify extreme risk spillovers, we propose an extreme risk spillover network for analysing the interconnectedness across financial institutions. We construct extreme risk spillover networks at 1% and 5% risk levels (which we denote 1% and 5% VaR networks) based on the daily returns of 84 publicly listed financial institutions from four sectorsbanks, diversified financials, insurance and real estateduring the period 2006-2015. We find that extreme risk spillover networks have a time-lag effect. Both the static and dynamic networks show that on average the real estate and bank sectors are net senders of extreme risk spillovers and the insurance and diversified financials sectors are net recipients, which coheres with the evidence from the recent global financial crisis. The networks during the 2008-2009 financial crisis and the European sovereign debt crisis exhibited distinctive topological features that differed from those in tranquil periods. Our approach supplies new information on the interconnectedness across financial agents that will prove valuable not only to investors and hedge fund managers, but also to regulators and policy-makers.
+C1 [Wang, Gang-Jin; Xie, Chi] Hunan Univ, Sch Business, Changsha 410082, Hunan, Peoples R China.
+   [Wang, Gang-Jin; Xie, Chi] Hunan Univ, Ctr Finance & Investment Management, Changsha 410082, Hunan, Peoples R China.
+   [Wang, Gang-Jin; Stanley, H. Eugene] Boston Univ, Ctr Polymer Studies, Boston, MA 02215 USA.
+   [Wang, Gang-Jin; Stanley, H. Eugene] Boston Univ, Dept Phys, 590 Commonwealth Ave, Boston, MA 02215 USA.
+   [He, Kaijian] Hunan Univ Sci & Technol, Sch Business, Xiangtan 411201, Peoples R China.
+RP Wang, GJ (reprint author), Hunan Univ, Sch Business, Changsha 410082, Hunan, Peoples R China.; Wang, GJ (reprint author), Hunan Univ, Ctr Finance & Investment Management, Changsha 410082, Hunan, Peoples R China.; Wang, GJ (reprint author), Boston Univ, Ctr Polymer Studies, Boston, MA 02215 USA.; Wang, GJ (reprint author), Boston Univ, Dept Phys, 590 Commonwealth Ave, Boston, MA 02215 USA.; He, KJ (reprint author), Hunan Univ Sci & Technol, Sch Business, Xiangtan 411201, Peoples R China.
+EM wanggangjin@hnu.edu.cn; kaijian.he@my.cityu.edu.hk
+RI ; Wang, Gang-Jin/E-4749-2013
+OI Stanley, H./0000-0003-2800-4495; He, Kaijian/0000-0001-8097-4435; Xie,
+   Chi/0000-0003-3862-0224; Wang, Gang-Jin/0000-0002-2813-4356
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71501066, 71373072, 71521061, 71201054]; China
+   Scholarship CouncilChina Scholarship Council [201506135022]; Specialized
+   Research Fund for the Doctoral Program of Higher EducationSpecialized
+   Research Fund for the Doctoral Program of Higher Education (SRFDP)
+   [20130161110031]; NSFNational Science Foundation (NSF) [CMMI 1125290,
+   PHY 1505000, CHE-1213217]; DOEUnited States Department of Energy (DOE)
+   [DE-AC07-05Id14517]
+FX This work was supported by the National Natural Science Foundation of
+   China [grant number 71501066], [grant number 71373072], [grant number
+   71521061], [grant number 71201054]; the China Scholarship Council [grant
+   number 201506135022]; the Specialized Research Fund for the Doctoral
+   Program of Higher Education [grant number 20130161110031]. The Boston
+   University work was supported by NSF [grant numbers CMMI 1125290, PHY
+   1505000 and CHE-1213217] and DOE Contract [grant number
+   DE-AC07-05Id14517].
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adams Z, 2014, J FINANC QUANT ANAL, V49, P575, DOI 10.1017/S0022109014000325
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Barrat A, 2004, P NATL ACAD SCI USA, V101, P3747, DOI 10.1073/pnas.0400087101
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Boginski V, 2005, COMPUT STAT DATA AN, V48, P431, DOI 10.1016/j.csda.2004.02.004
+   Borgatti SP, 2009, SCIENCE, V323, P892, DOI 10.1126/science.1165821
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Castagneto-Gissey G, 2014, ENERG ECON, V44, P422, DOI 10.1016/j.eneco.2014.05.008
+   Cheung YW, 1996, J ECONOMETRICS, V72, P33, DOI 10.1016/0304-4076(94)01714-X
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Diebold FX, 2016, J FINANC ECONOMET, V14, P81, DOI 10.1093/jjfinec/nbv021
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Granger C.W.J., 1986, MODEL RELIABILITY, P1
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   GRANGER CWJ, 1980, J ECON DYN CONTROL, V2, P329, DOI 10.1016/0165-1889(80)90069-X
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Hautsch N, 2014, INT J FORECASTING, V30, P781, DOI 10.1016/j.ijforecast.2013.09.004
+   Hong YM, 2001, J ECONOMETRICS, V103, P183, DOI 10.1016/S0304-4076(01)00043-4
+   Hong YM, 2009, J ECONOMETRICS, V150, P271, DOI 10.1016/j.jeconom.2008.12.013
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Kenett DY, 2015, QUANT FINANC, V15, P569, DOI 10.1080/14697688.2014.946660
+   Kenett DY, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0015032
+   Kupiec P, 1995, J DERIV, V3, P73, DOI [10.3905/jod.1995.407942, DOI 10.3905/JOD.1995.407942]
+   Latora V, 2001, PHYS REV LETT, V87, DOI 10.1103/PhysRevLett.87.198701
+   Liu L, 2011, PHYSICA A, V390, P3754, DOI 10.1016/j.physa.2011.06.001
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Onnela JP, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.056110
+   Onnela JP, 2004, EUR PHYS J B, V38, P353, DOI 10.1140/epjb/e2004-00128-7
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Song JW, 2016, PHYSICA A, V458, P287, DOI 10.1016/j.physa.2016.03.093
+   Tumminello M, 2005, P NATL ACAD SCI USA, V102, P10421, DOI 10.1073/pnas.0500298102
+   Vyrost T, 2015, PHYSICA A, V427, P262, DOI 10.1016/j.physa.2015.02.017
+   Wang GJ, 2016, INT REV ECON FINANC, V46, P55, DOI 10.1016/j.iref.2016.08.004
+   Wang YD, 2010, PHYSICA A, V389, P5468, DOI 10.1016/j.physa.2010.08.029
+   Watts DJ, 1998, NATURE, V393, P440, DOI 10.1038/30918
+   Yan XG, 2015, INT J MOD PHYS B, V29, DOI 10.1142/S0217979215501611
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 47
+TC 38
+Z9 38
+U1 24
+U2 80
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PY 2017
+VL 17
+IS 9
+BP 1417
+EP 1433
+DI 10.1080/14697688.2016.1272762
+PG 17
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA FD3ZY
+UT WOS:000407472100008
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Hawkins, RJ
+   Kuang, H
+AF Hawkins, Raymond J.
+   Kuang, Hengyu
+TI Lending Sociodynamics and Drivers of the Financial Business Cycle
+SO QUANTITATIVE FINANCE AND ECONOMICS
+LA English
+DT Article
+DE economic instability; Financial Instability hypothesis; Sociodynamics;
+   opinion formation; systemic risk; Random Forest; Fokker-Planck equation
+ID INSTABILITY
+AB We extend sociodynamic modeling of the financial business cycle to the Euro Area and Japan. Using an opinion-formation model and machine learning techniques we find stable model estimation of the financial business cycle using central bank lending surveys and a few selected macroeconomic variables. We find that banks have asymmetric response to good and bad economic information, and that banks adapt to their peers' opinions when changing lending policies.
+C1 [Hawkins, Raymond J.; Kuang, Hengyu] Univ Calif Berkeley, Econ Dept, Berkeley, CA 94720 USA.
+   [Hawkins, Raymond J.] Univ Arizona, Coll Opt Sci, Tucson, AZ 85721 USA.
+RP Hawkins, RJ (reprint author), Univ Calif Berkeley, Econ Dept, Berkeley, CA 94720 USA.; Hawkins, RJ (reprint author), Univ Arizona, Coll Opt Sci, Tucson, AZ 85721 USA.
+EM hawkins@econ.berkeley.edu
+CR Altavilla Carlo, 2015, 1861 EUR CENTR BANK
+   Breiman L, 2001, MACH LEARN, V45, P5, DOI 10.1023/A:1010933404324
+   Caruana R., 2006, P 23 INT C MACH LEAR, P161, DOI DOI 10.1145/1143844.1143865
+   Ghonghadze J, 2016, VARIATION LENDING ST
+   Ghonghadze J, 2012, APPL ECON, V44, P3065, DOI 10.1080/00036846.2011.570716
+   Gilchrist S, 2012, AM ECON REV, V102, P1692, DOI 10.1257/aer.102.4.1692
+   Gilchrist Simon, 2016, FEDS NOTES
+   Granovetter M, 2005, J ECON PERSPECT, V19, P33, DOI 10.1257/0895330053147958
+   Hawkins RJ, 2011, PHYSICA A, V390, P4355, DOI 10.1016/j.physa.2011.07.003
+   Helbing D, 2010, QUANTITATIVE SOCIODYNAMICS: STOCHASTIC METHODS AND MOODELS OF SOCIAL INTERACTION PROCESSES, SECOND EDITION, P1, DOI 10.1007/978-3-642-11546-2
+   Holmes A., 1969, CONTROLLING MONETARY, P65
+   Kane MJ, 2014, BMC BIOINFORMATICS, V15, DOI 10.1186/1471-2105-15-276
+   Kawashima T, 2014, FSA I DISCUSSION PAP
+   Keynes JM, 1937, Q J ECON, V51, P209, DOI 10.2307/1882087
+   Keynes JM, 1931, ESSAYS PERSUASION, P168
+   Khaidem L, 2016, ARXIV160500003
+   Kindleberger CP, 2011, MANIAS, PANICS AND CRASHES: A HISTORY OF FINANCIAL CRISES, 6TH EDITION, P1
+   Kohler-Ulbrich P., 2016, 179 EUR CENTR BANK
+   Kursa MB, 2010, J STAT SOFTW, V36, P1
+   Lemperiere Y, 2014, ARXIV14043274
+   Lux T, 1997, J ECON DYN CONTROL, V22, P1, DOI 10.1016/S0165-1889(97)00061-4
+   Lux T, 2009, HDB RES COMPLEXITY
+   Lux T, 2009, J ECON BEHAV ORGAN, V72, P638, DOI 10.1016/j.jebo.2009.07.003
+   McLeay M., 2014, BANK ENGLAND Q B Q, VQ1
+   Menkhoff L, 2012, J FINANC ECON, V106, P660, DOI 10.1016/j.jfineco.2012.06.009
+   MINSKY HP, 1977, NEBR J ECON BUS, V16, P5
+   Minsky HP, 2008, STABILIZING UNSTABLE
+   Moore MJ, 2009, MS MACK WELCOMES REG
+   OSBORN DR, 1995, OXFORD B ECON STAT, V57, P547, DOI 10.1111/j.1468-0084.1995.tb00039.x
+   Towers G, 1939, P EV RESP BANK CAN
+   WEIDLICH W, 1983, SPRINGER SERIES SYNE, V14
+   Weidlich W., 1972, COLLECTIVE PHENOMENA, V1, P51
+   Weidlich W, 2000, SOCIODYNAMICS SYSTEM
+   Werner RA, 2016, INT REV FINANC ANAL, V46, P361, DOI 10.1016/j.irfa.2015.08.014
+   Werner RA, 2014, INT REV FINANC ANAL, V36, P1, DOI 10.1016/j.irfa.2014.07.015
+NR 35
+TC 1
+Z9 1
+U1 0
+U2 2
+PU AMER INST MATHEMATICAL SCIENCES-AIMS
+PI SPRINGFIELD
+PA PO BOX 2604, SPRINGFIELD, MO 65801-2604 USA
+SN 2573-0134
+J9 QUANT FINANC ECON
+JI Quant. Financ. Econ.
+PY 2017
+VL 1
+IS 3
+BP 219
+EP 252
+DI 10.3934/QFE.2017.3.219
+PG 34
+WC Business, Finance
+SC Business & Economics
+GA FL0QG
+UT WOS:000413915300001
+OA DOAJ Gold, Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Pederzoli, C
+   Torricelli, C
+AF Pederzoli, Chiara
+   Torricelli, Costanza
+TI Systemic risk measures and macroprudential stress tests: an assessment
+   over the 2014 EBA exercise
+SO ANNALS OF FINANCE
+LA English
+DT Article
+DE Systemic risk; MES; F-MES; Stress test; Macroprudential regulation
+ID SHORTFALL; COVAR
+AB Regulators' stress tests on banks further stimulated an academic debate over systemic risk measures and their predictive content. Focusing on marked based measures, Acharya et al. (Rev Financ Stud 30(1): 2-47, 2017) provide a theoretical background to use marginal expected shortfall (MES) for predicting the stress test results, and verify it on the 2009 Supervisory Capital Assessment Program of the US banking system. The aim of this paper is to further test the goodness of MES as a predictivemeasure, by analysing it in relation to the results of the 2014 European stress tests exercise conducted by the European Banking Authority. Our results underscore the importance of choosing the appropriate index to capture the systemic distress event. In fact MES based on a global market index does not show association with the stress test results, in contrast to Financial MES, which is based on a financial market index, and has a significant information and predictive power.
+C1 [Pederzoli, Chiara] Univ Milano Bicocca, Dept Stat & Quantitat Methods, Milan, Italy.
+   [Torricelli, Costanza] Univ Modena & Reggio Emilia, Dept Econ, Modena, Italy.
+   [Pederzoli, Chiara; Torricelli, Costanza] CEFIN, Modena, Italy.
+   [Torricelli, Costanza] CeRP, Turin, Italy.
+RP Torricelli, C (reprint author), Univ Modena & Reggio Emilia, Dept Econ, Modena, Italy.; Torricelli, C (reprint author), CEFIN, Modena, Italy.; Torricelli, C (reprint author), CeRP, Turin, Italy.
+EM costanza.torricelli@unimore.it
+RI Torricelli, Costanza/B-7993-2016
+OI Torricelli, Costanza/0000-0001-5927-2578
+CR Acharya V., 2014, SAFE POLICY LETT, V32
+   Acharya V, 2014, J MONETARY ECON, V65, P36, DOI 10.1016/j.jmoneco.2014.04.014
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya Viral V, 2014, BENCHMARKING EUROPEA
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Banulescu GD, 2015, J BANK FINANC, V50, P575, DOI 10.1016/j.jbankfin.2014.01.037
+   Basel Committee on Banking Supervision (BCBS), 2014, G SIB ASS METH SCOR
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Black L, 2016, J BANK FINANC, V63, P107, DOI 10.1016/j.jbankfin.2015.09.007
+   Bongini P, 2015, J BANK FINANC, V50, P562, DOI 10.1016/j.jbankfin.2014.07.006
+   Borio C, 2014, J FINANC STABIL, V12, P3, DOI 10.1016/j.jfs.2013.06.001
+   Brownless C. T., 2012, WORKING PAPER
+   Danielsson J, 2016, J MONEY CREDIT BANK, V48, P795, DOI 10.1111/jmcb.12318
+   De Bandt O., 2013, DEBATS EC FINANCIERS
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   European Central Bank, 2009, FINANCIAL STABIL DEC, P134
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Kupiec P, 2016, J FINANC SERV RES, V49, P203, DOI 10.1007/s10693-016-0254-1
+   Lee JH, 2013, ANN FINANC, V9, P757, DOI 10.1007/s10436-012-0218-x
+   Smaga P, 2014, SRC SPECIAL PAPER SE, V5
+NR 22
+TC 2
+Z9 2
+U1 1
+U2 4
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1614-2446
+EI 1614-2454
+J9 ANN FINANC
+JI Ann. Financ.
+PD AUG
+PY 2017
+VL 13
+IS 3
+BP 237
+EP 251
+DI 10.1007/s10436-017-0294-z
+PG 15
+WC Business, Finance
+SC Business & Economics
+GA FH3VC
+UT WOS:000411077100001
+DA 2019-12-28
+ER
+
+PT J
+AU McConnell, P
+AF McConnell, Patrick
+TI Standardized measurement approach: is comparability attainable?
+SO JOURNAL OF OPERATIONAL RISK
+LA English
+DT Article
+DE operational risk regulatory capital (ORRC); standardized measurement
+   approach (SMA); systemic operational risk; comparability; fundamental
+   review of operational risk
+ID OPERATIONAL RISK; CHALLENGES
+AB Recently, the Basel Committee on Banking Supervision (BCBS) published a consultation paper that proposed a radical change to the methodologies permitted for estimating operational risk regulatory capital (ORRC). The Committee proposed replacing all existing approaches with a single new formula, the standardized measurement approach (SMA), which, it is claimed, will be simpler and promote comparability of estimated ORRC across banks. This proposal has, however, been widely criticized by practitioners and academics on both theoretical and practical grounds. Recent studies have demonstrated that, far from promoting comparability, the proposals have the potential to increase rather than reduce variability in the estimation of ORRC across banks. This paper adds to this critique by considering the practical issues of the consistency of operational loss data that are necessary for comparability to be observable. The paper concludes that comparability is not attainable as desired by the SMA proposal, not least because the collection of operational loss data will remain determined by individual bank rules and will not be based on agreed common standards. The paper discusses arguments made by academics and practitioners against the proposal and, finally, makes a suggestion to the BCBS that a comprehensive fundamental review, similar to that recently completed for market risk, should be undertaken for operational risk.
+C1 [McConnell, Patrick] Macquarie Univ, Appl Finance Ctr, Level 24,123 Pitt St, Sydney, NSW 2000, Australia.
+RP McConnell, P (reprint author), Macquarie Univ, Appl Finance Ctr, Level 24,123 Pitt St, Sydney, NSW 2000, Australia.
+EM pjmcconnell@computer.org
+CR Abdymomunov A., 2014, WORKING PAPER
+   Ames M., 2015, WORKING PAPER
+   [Anonymous], 2016, BBC NEWS
+   [Anonymous], 2016, COMM LETT RE STAND M
+   Basel Committee on Banking Supervision, 2014, REV PRINC SOUND MAN
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Basel Committee on Banking Supervision, 2011, PRINC SOUND MAN OP R
+   Basel Committee on Banking Supervision, 2016, MIN CAP REQ MARK RIS
+   Basel Committee on Banking Supervision, 2016, STAND MEAS APPR OP R
+   Basel Committee on Banking Supervision, 2009, OBS RANG PRACT KEY E
+   Basel Committee on Banking Supervision, 2004, INT CONV CAP MEAS CA
+   Brandt R, 2012, C P STRESS TEST MOD
+   British Bankers' Association, 2016, RESP BRIT BANK ASS B
+   Canadian Bankers Association, 2016, CBA COMM BAS COMM BA
+   Cohen RD, 2016, J OPER RISK, V11, P71, DOI 10.21314/JOP.2016.178
+   Cope EW, 2009, J OPER RISK, V4, P3, DOI 10.21314/JOP.2009.069
+   Cruz MG, 2015, WILEY HDB FINANCIAL
+   Dahen H, 2010, J BANK FINANC, V34, P1484, DOI 10.1016/j.jbankfin.2009.08.017
+   Dakers M, 2016, TELEGRAPH
+   Department of Justice-Bank of America, 2014, JUSTICE NEWS    0821
+   Department of Justice-Citicorp, 2014, JUSTICE NEWS    0714
+   Deutsche Bank, 2015, ANN REP 2015 PASS PE
+   Embrechts P., 2003, WORKING PAPER
+   Ergen I., 2016, WORKING PAPER
+   European Banking Federation, 2016, EBF FIN RESP BAS COM
+   FSB, 2014, 2014 UPD GROUP GLOB
+   International Banking Federation, 2016, RE STAND MEAS APPR O
+   Japanese Bankers Association, 2016, COMM CONS DOC STAND
+   Jobst AA, 2007, J FINANC REGUL COMPL, V15, P423, DOI 10.1108/13581980710835272
+   MCCONNELL P, 2013, J OPER RISK, V8, P59
+   McConnell P. J., 2015, SYSTEMIC OPERATIONAL
+   McConnell P, 2015, J OPER RISK, V10, P73
+   McConnell P, 2012, J OPER RISK, V7, P79
+   McConnell P, 2011, J OPER RISK, V6, P65, DOI 10.21314/JOP.2011.095
+   Mignola G, 2016, J OPER RISK, V11, P51, DOI 10.21314/JOP.2016.184
+   Opdyke JD, 2012, J OPER RISK, V7, P3
+   Operational Riskdata eXchange Association, 2015, 2015 ORX REP OP RISK
+   Operational Riskdata eXchange Association, 2016, CAP IMP SMA ORX BENC
+   Peters G, 2016, J OPER RISK, V11, P1, DOI 10.21314/JOP.2016.177
+   Zhou X., 2014, WORKING PAPER
+NR 40
+TC 4
+Z9 4
+U1 0
+U2 2
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1744-6740
+EI 1755-2710
+J9 J OPER RISK
+JI J. Oper. Risk.
+PY 2017
+VL 12
+IS 1
+BP 71
+EP 110
+DI 10.21314/JOP.2017.194
+PG 40
+WC Business, Finance
+SC Business & Economics
+GA FY1TJ
+UT WOS:000426595700004
+DA 2019-12-28
+ER

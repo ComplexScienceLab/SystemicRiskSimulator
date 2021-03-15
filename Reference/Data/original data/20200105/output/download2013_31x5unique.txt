@@ -1,0 +1,475 @@
+
+PT J
+AU Kleintjens, J
+   Li, X
+   Simoens, S
+   Thijs, V
+   Goethals, M
+   Rietzschel, ER
+   Asukai, Y
+   Saka, O
+   Evers, T
+   Faes, P
+   Vansieleghem, S
+   De Ruyck, M
+AF Kleintjens, Joris
+   Li, Xiao
+   Simoens, Steven
+   Thijs, Vincent
+   Goethals, Marnix
+   Rietzschel, Ernst R.
+   Asukai, Yumi
+   Saka, Omer
+   Evers, Thomas
+   Faes, Petra
+   Vansieleghem, Stefaan
+   De Ruyck, Mimi
+TI Cost-Effectiveness of Rivaroxaban Versus Warfarin for Stroke Prevention
+   in Atrial Fibrillation in the Belgian Healthcare Setting
+SO PHARMACOECONOMICS
+LA English
+DT Article
+ID QUALITY-OF-LIFE; PATIENTS PREFERENCES; ANTICOAGULATION; MANAGEMENT;
+   POPULATION; UTILITY
+AB Warfarin, an inexpensive drug that has been available for over half a century, has been the mainstay of anticoagulant therapy for stroke prevention in patients with atrial fibrillation (AF). Recently, rivaroxaban, a novel oral anticoagulant (NOAC) which offers some distinct advantages over warfarin, the standard of care in a world without NOACs, has been introduced and is now recommended by international guidelines.
+   The aim of this study was to evaluate, from a Belgian healthcare payer perspective, the cost-effectiveness of rivaroxaban versus use of warfarin for the treatment of patients with non-valvular AF at moderate to high risk.
+   A Markov model was designed and populated with local cost estimates, safety-on-treatment clinical results from the pivotal phase III ROCKET AF trial and utility values obtained from the literature.
+   Rivaroxaban treatment was associated with fewer ischemic strokes and systemic embolisms (0.308 vs. 0.321 events), intracranial bleeds (0.048 vs. 0.063), and myocardial infarctions (0.082 vs. 0.095) per patient compared with warfarin. Over a lifetime time horizon, rivaroxaban led to a reduction of 0.042 life-threatening events per patient, and increases of 0.111 life-years and 0.094 quality-adjusted life-years (QALYs) versus warfarin treatment. This resulted in an incremental cost-effectiveness ratio of a,not sign8,809 per QALY or a,not sign7,493 per life-year gained. These results are based on valuated data from 2010. Sensitivity analysis indicated that these results were robust and that rivaroxaban is cost-effective compared with warfarin in 87 % of cases should a willingness-to-pay threshold of a,not sign35,000/QALY gained be considered.
+   The present analysis suggests that rivaroxaban is a cost-effective alternative to warfarin therapy for the prevention of stroke in patients with AF in the Belgian healthcare setting.
+C1 [Kleintjens, Joris; Li, Xiao; Saka, Omer] Deloitte Hlth Econ & Outcomes Res Grp, Brussels, Belgium.
+   [Simoens, Steven] Katholieke Univ Leuven, Dept Pharmaceut & Pharmacol Sci, Louvain, Belgium.
+   [Thijs, Vincent] VIB, Neurobiol Lab, Vesalius Res Ctr, Louvain, Belgium.
+   [Thijs, Vincent] Univ Leuven KU Leuven, Expt Neurol Dept Neurosci, Louvain, Belgium.
+   [Thijs, Vincent] Univ Leuven KU Leuven, Leuven Res Inst Neurosci & Dis LIND, Louvain, Belgium.
+   [Thijs, Vincent] Univ Hosp Leuven, Dept Neurol, Louvain, Belgium.
+   [Goethals, Marnix] Mariaziekenhuis Noord Limburg, Overpelt, Belgium.
+   [Rietzschel, Ernst R.] Univ Ghent, Dept Internal Med Cardiovasc Dis, Fac Med & Hlth Sci, B-9000 Ghent, Belgium.
+   [Rietzschel, Ernst R.] Ghent Univ Hosp, Ghent, Belgium.
+   [Rietzschel, Ernst R.] Univ Ghent, Dept Publ Hlth, Fac Med & Hlth Sci, B-9000 Ghent, Belgium.
+   [Asukai, Yumi] IMS Hlth, London, England.
+   [Evers, Thomas] Bayer HealthCare, Global Market Access HEOR, Wuppertal, Germany.
+   [Faes, Petra; Vansieleghem, Stefaan; De Ruyck, Mimi] Bayer HealthCare, Market Access Dept, B-1831 Diegem, Machelen, Belgium.
+RP De Ruyck, M (reprint author), Bayer HealthCare, Market Access Dept, JE Mommaertslaan 14, B-1831 Diegem, Machelen, Belgium.
+EM mimi.deruyck@bayer.com
+RI Thijs, Vincent/C-3647-2009; Thijs, Vincent/M-9048-2019
+OI Thijs, Vincent/0000-0002-6614-8417; Thijs, Vincent/0000-0002-6614-8417
+FU Bayer HealthCare PharmaceuticalsBayer AGBayer Healthcare
+   Pharmaceuticals; Bayer HealthcareBayer AGBayer Healthcare
+   Pharmaceuticals
+FX This study was supported by Bayer HealthCare Pharmaceuticals. Mrs. Mimi
+   De Ruyck, Mrs. Petra Faes, Mr. Stefaan Vansieleghem and Mr. Thomas Evers
+   are employees of Bayer HealthCare Pharmaceuticals. Mrs De Ruyck is the
+   author responsible for the overall content of this publication. Mr.
+   Joris Kleintjens, Mrs. Xiao Li, and Mr. Omer Saka were employees of
+   Deloitte and provided consultant services to Bayer HealthCare. Ms. Yumi
+   Asukai is an employee of IMS Health, which has received consulting fees
+   from Bayer Healthcare. Prof. Steven Simoens, Prof. Vincent Thijs, Prof.
+   Ernst Rietzschel, and Dr. Marnix Goethals acted as consultants to Bayer
+   Healthcare with respect to this study.
+CR [Anonymous], 1998, Br J Haematol, V101, P374
+   Ansell J, 2008, CHEST, V133, p160S, DOI 10.1378/chest.08-0670
+   Bayer HealthCare, 2010, DAT FIL CEG REP 2010
+   Bayer Plc, 2011, NAT I HLTH CLI UNPUB
+   Briggs AH, 2006, DECISION MODELLING H
+   Camm AJ, 2012, EUR HEART J, V33, P2719, DOI 10.1093/eurheartj/ehs253
+   Camm AJ, 2010, EUROPACE, V12, P1360, DOI 10.1093/europace/euq350
+   Cleemput I, 2008, 78C BELG HLTH CAR KN
+   Connolly SJ, 2009, NEW ENGL J MED, V361, P1139, DOI 10.1056/NEJMoa0905561
+   Dagres N, 2007, J AM COLL CARDIOL, V49, P572, DOI 10.1016/j.jacc.2006.10.047
+   Devroey D, 2003, CEREBROVASC DIS, V16, P272, DOI 10.1159/000071127
+   Evers T, 2011, VALUE HEALTH, V14, pA390, DOI 10.1016/j.jval.2011.08.863
+   Federal Public Service Economy SMEs Self-Employed and Energy, LIF TABL BELG 1998 2
+   Gage BF, 1996, ARCH INTERN MED, V156, P1829, DOI 10.1001/archinte.156.16.1829
+   Gailly J, 2009, 117C BELG HLTH CAR K
+   Granger CB, 2011, NEW ENGL J MED, V365, P981, DOI 10.1056/NEJMoa1107039
+   Haacke C, 2006, STROKE, V37, P193, DOI 10.1161/01.STR.0000196990.69412.fb
+   Hallan S, 1999, J INTERN MED, V246, P309, DOI 10.1046/j.1365-2796.1999.00531.x
+   HAS Department of Medecines Assessment, 2009, IND COMP METH VAL, P35
+   HOIT BD, 1986, CIRCULATION, V74, P712, DOI 10.1161/01.CIR.74.4.712
+   Hylek EM, 2003, NEW ENGL J MED, V349, P1019, DOI 10.1056/NEJMoa022913
+   Lee S, 2012, AM J CARDIOL, V110, P845, DOI 10.1016/j.amjcard.2012.05.011
+   Lenert LA, 1997, J AM MED INFORM ASSN, V4, P49, DOI 10.1136/jamia.1997.0040049
+   Limone BL, 2013, PLOS ONE, V8, DOI 10.1371/journal.pone.0062183
+   Mackay J, 2004, ATLAS HEART DIS STRO
+   Marini C, 2005, STROKE, V36, P1115, DOI 10.1161/01.STR.0000166053.83476.4a
+   National Institute for Health and Clinical Excellence, 2012, TA256 NAT I HLTH CLI
+   Neree Claes, 2006, Eur J Gen Pract, V12, P163, DOI 10.1080/13814780600780783
+   Patel MR, 2011, NEW ENGL J MED, V365, P883, DOI 10.1056/NEJMoa1009638
+   Patel MR, 2010, AM HEART J, V159, P340, DOI 10.1016/j.ahj.2009.11.025
+   Protheroe J, 2000, BRIT MED J, V320, P1380, DOI 10.1136/bmj.320.7246.1380
+   Robinson A, 2001, J Health Serv Res Policy, V6, P92, DOI 10.1258/1355819011927288
+   Robinson MB, 1998, INT J TECHNOL ASSESS, V14, P161, DOI 10.1017/S0266462300010606
+   Sanchez MM, 2006, STAT MED, V25, P1169, DOI 10.1002/sim.2244
+   Sanders GD, 2001, ANN INTERN MED, V135, P870, DOI 10.7326/0003-4819-135-10-200111200-00007
+   Strong K, 2007, LANCET NEUROL, V6, P182, DOI 10.1016/S1474-4422(07)70031-5
+   Sullivan PW, 2006, PHARMACOECONOMICS, V24, P1021, DOI 10.2165/00019053-200624100-00009
+   US Department of Health and Human Services, 2010, GUID IND NON CLIN TR
+   WOLF PA, 1987, ARCH INTERN MED, V147, P1561, DOI 10.1001/archinte.147.9.1561
+   Wouters, 2013, J MED EC
+NR 40
+TC 24
+Z9 26
+U1 0
+U2 12
+PU ADIS INT LTD
+PI NORTHCOTE
+PA 5 THE WAREHOUSE WAY, NORTHCOTE 0627, AUCKLAND, NEW ZEALAND
+SN 1170-7690
+EI 1179-2027
+J9 PHARMACOECONOMICS
+JI Pharmacoeconomics
+PD OCT
+PY 2013
+VL 31
+IS 10
+BP 909
+EP 918
+DI 10.1007/s40273-013-0087-9
+PG 10
+WC Economics; Health Care Sciences & Services; Health Policy & Services;
+   Pharmacology & Pharmacy
+SC Business & Economics; Health Care Sciences & Services; Pharmacology &
+   Pharmacy
+GA 232EN
+UT WOS:000325473900006
+PM 24030788
+OA Other Gold, Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Munoz, FJC
+   Gonzalez, NU
+AF Callado Munoz, Francisco J.
+   Utrero Gonzalez, Natalia
+TI Intraday Liquidity and Central Bank Credit in Gross Payment Systems
+SO INTERNATIONAL FINANCE
+LA English
+DT Article
+ID SETTLEMENT; PROVISION; CONTAGION; POLICIES; RISK
+AB The aim of this paper is to compare modern gross payment systems and emphasize their implications on the availability of intraday liquidity and credit from the central bank. We introduce the risk of default involved in extending intraday credit to determine the implications on consumer and bank behaviour. The results show that the non-marketable collateral assets model, which provides greater flexibility to banks but does not completely eliminate credit risk, is superior to other models. To minimize the remaining credit risk, financial authorities should analyse the financial condition of banks, establish higher credit standards for collateral and specify particular criteria to accept non-marketable assets. These actions will improve the performance of this model and reinforce the role of the financial authorities in providing intraday liquidity.
+C1 [Callado Munoz, Francisco J.; Utrero Gonzalez, Natalia] Univ Zaragoza, CUD, E-50009 Zaragoza, Spain.
+RP Munoz, FJC (reprint author), Ctr Univ Def Zaragoza, Acad Gen Mil, Ctra Huesca S-N, Zaragoza 50090, Spain.
+EM fcallado@unizar.es
+RI Utrero-Gonzalez, Natalia/Z-5656-2019
+OI Utrero-Gonzalez, Natalia/0000-0001-9304-3517; Callado Munoz, Francisco
+   Jose/0000-0003-1399-5484
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Callado Munoz F. J., 2009, Q REV EC FINANCE, V49, P1
+   Callado Munoz F. J., 2007, EUROPEAN J FINANCE, V13, P459
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   ECB, 2008, IMPL MON POL EUR AR
+   Freeman S, 1996, AM ECON REV, V86, P1126
+   Freeman S, 1999, J MONETARY ECON, V43, P197, DOI 10.1016/S0304-3932(98)00045-2
+   Freixas X, 1998, J FINANC INTERMED, V7, P3, DOI 10.1006/jfin.1998.0230
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   FRS, 2009, FED RES POL PAYM SYS
+   FRS, 2008, FED REGISTER, V73, P79109
+   Furfine CH, 1998, J MONEY CREDIT BANK, V30, P832, DOI 10.2307/2601131
+   GORTON G, 1985, J MONETARY ECON, V15, P177, DOI 10.1016/0304-3932(85)90063-7
+   Green E., 1997, BANK JAPAN MONETARY, V215, P63
+   Kahn CM, 2001, J MONETARY ECON, V47, P299, DOI 10.1016/S0304-3932(01)00047-2
+   Lacker JM, 2001, REV ECON DYNAM, V4, P842, DOI 10.1006/redy.2001.0138
+   Martin A, 2004, J MONETARY ECON, V51, P401, DOI 10.1016/j.jmoneco.2003.07.007
+   Mills DC, 2006, J MONETARY ECON, V53, P1593, DOI 10.1016/j.jmoneco.2005.05.008
+   Moody's Investor Services, 2002, BANK CRED RES WEEKL
+   Moody's Investor Services, 2009, BANK CRED RES WEEKL
+   Moody's Investors Service, 2002, UND MOOD CORP BOND R
+   ZHOU R, 2000, FEDERAL RESERVE BANK, V24, P29
+NR 22
+TC 1
+Z9 1
+U1 0
+U2 20
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1367-0271
+EI 1468-2362
+J9 INT FINANC
+JI Int. Financ.
+PD WIN
+PY 2013
+VL 16
+IS 3
+BP 363
+EP 392
+DI 10.1111/j.1468-2362.2013.12035.x
+PG 30
+WC Business, Finance; Economics
+SC Business & Economics
+GA 279JK
+UT WOS:000328956100004
+DA 2019-12-27
+ER
+
+PT J
+AU Kupiec, PH
+   Ramirez, CD
+AF Kupiec, Paul H.
+   Ramirez, Carlos D.
+TI Bank failures and the cost of systemic risk: Evidence from 1900 to 1930
+SO JOURNAL OF FINANCIAL INTERMEDIATION
+LA English
+DT Article
+DE Bank failures; Output growth; Credit channel; Systemic risk; Vector
+   autoregressions; Non-bank commercial failures
+ID PANEL-DATA MODELS; GREAT-DEPRESSION; INDUSTRIAL-PRODUCTION; DEPOSIT
+   INSURANCE; BUSINESS CYCLES; PANICS; 1920S; CONSEQUENCES; PROPAGATION;
+   LIQUIDITY
+AB We measure the effect of bank failures on economic growth using data from 1900 to 1930, a period without active government stabilization policies and several severe banking crises. VAR model estimates suggest bank failures have long-lasting negative effects on economic growth. A bank failure shock involving one percent of system liabilities leads to a 6.5% reduction in GNP growth within three quarters and a measurable reduction for 10 quarters. Panel VAR model estimates for the 48 states show bank failures aggravate commercial non-bank failures. Institutional and regulatory features affect the intensity of the bank failure effect. We find that bank failures have a larger impact in states with deposit insurance, in states more heavily concentrated in agriculture, and in states with fewer large firms. However, because a number of states exhibit all three characteristics, we are not able to clearly identify the true marginal effects of these factors independently. Published by Elsevier Inc.
+C1 [Kupiec, Paul H.] Fed Deposit Insurance Corp, Div Insurance & Res, Washington, DC 20429 USA.
+   [Ramirez, Carlos D.] George Mason Univ, Dept Econ, Fairfax, VA 22030 USA.
+RP Kupiec, PH (reprint author), Fed Deposit Insurance Corp, Div Insurance & Res, 550 17th St NW, Washington, DC 20429 USA.
+EM pkupiec@fdic.gov; cramire2@gmu.edu
+CR ALSTON LJ, 1994, EXPLOR ECON HIST, V31, P409, DOI 10.1006/exeh.1994.1017
+   Anari A, 2005, J MONEY CREDIT BANK, V37, P753, DOI 10.1353/mcb.2005.0038
+   [Anonymous], DUNS REV
+   Ashcraft AB, 2005, AM ECON REV, V95, P1712, DOI 10.1257/000282805775014326
+   Bagehot W., 1906, LOMBARD STREET DESCR
+   BERNANKE BS, 1983, AM ECON REV, V73, P257
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   Blundell R, 2000, ADV ECONOMETRICS, V15, P53
+   Board of Governors of the Federal Reserve System, 1943, BANK MON STAT
+   Bodenhorn Howard, 1996, ANGLOAMERICAN FINANC, P415
+   Bordo M. D., 1986, FINANCIAL CRISES WOR, P1870
+   Bordo MD, 1996, J ECON HIST, V56, P389, DOI 10.1017/S0022050700016491
+   Boyd JH, 2005, J MONEY CREDIT BANK, V37, P977, DOI 10.1353/mcb.2006.0002
+   Calomiris C, 2000, US BANK DEREGULATION
+   CALOMIRIS CW, 1990, J ECON HIST, V50, P283, DOI 10.1017/S0022050700036433
+   Calomiris CW, 2003, AM ECON REV, V93, P937, DOI 10.1257/000282803322157188
+   CALOMIRIS CW, 1989, Q J ECON, V104, P429, DOI 10.2307/2937804
+   Carliner Geoffrey, 1991, POLITICS EC 80S, P175
+   Carlson M, 2011, J POLIT ECON, V119, P889, DOI 10.1086/662961
+   Carr J, 1995, J MONEY CREDIT BANK, V27, P1137, DOI 10.2307/2077794
+   Chung Ching-Yi, 2006, CONTRIBUTIONS EC ANA, V5
+   CLAIR RT, 1994, CATO J, V13, P345
+   Clouse J., 1994, FEDERAL RESERVE B, V80, P965
+   COSTIGLIOLA FC, 1977, J ECON HIST, V37, P911, DOI 10.1017/S0022050700094742
+   Davis JH, 2004, Q J ECON, V119, P1177, DOI 10.1162/0033553042476143
+   Davis JH, 2009, Q J ECON, V124, P1675, DOI 10.1162/qjec.2009.124.4.1675
+   Eichengreen Barry, 1996, GOLDEN FETTERS GOLD
+   Ely Bert, 1988, FINANCIAL SERVICES R, P41
+   Ennis HM, 2003, J ECON THEORY, V109, P220, DOI 10.1016/S0022-0531(03)00014-0
+   Federal Deposit Insurance Corporation, 1955, ANN REPORT
+   Fishback Price V., 2001, W8108 NBER
+   Flood Mark D., 1998, US HIST DATA BANK MA
+   FRIEDMAN BM, 1993, STUD BUS CYCLES, V28, P213
+   Friedman M., 1963, MONETARY HIST US 186
+   Gilbert Alton, 1989, J FINANCIAL SERVICES, V3, P333
+   Giuliano P., 2009, 7399 CEPR
+   Goldenweiser Emmanuel A., 1932, BANK SUSPENSIONS US
+   Gordon Robert J., 1986, AM BUSINESS CYCLE CO
+   GROSSMAN RS, 1993, EXPLOR ECON HIST, V30, P294, DOI 10.1006/exeh.1993.1012
+   Hanes Christopher, 2010, HARVESTS FINANCIAL C
+   HAUBRICH JG, 1990, J MONETARY ECON, V25, P223, DOI 10.1016/0304-3932(90)90014-U
+   Hogart G., 2002, J BANK FINANC, V26, P825
+   Holmes Rebecca, 2003, THESIS U ARIZONA
+   Hubbard R. G., 1991, FINANCIAL MARKETS FI, P107
+   Im KS, 2003, J ECONOMETRICS, V115, P53, DOI 10.1016/S0304-4076(03)00092-7
+   Jalil A., 2011, NEW HIST BANKING PAN
+   KANE EJ, 1989, J ECON PERSPECT, V3, P31, DOI 10.1257/jep.3.4.31
+   Kemmerer Edwin W., 1910, SEASONAL VARIATIONS
+   KRYZANOWSKI L, 1993, J MONEY CREDIT BANK, V25, P361, DOI 10.2307/2077768
+   Liitkepohl H, 2005, NEW INTRO MULTIPLE T
+   Long De, 1998, DEFINING MOMENT GREA, P67
+   Meissner Christpher M., 2002, 9233 NBER
+   Meltzer AH, 2003, HIST FEDERAL RESERVE
+   Michael Mussa, 1994, AM EC POLICY 1980S, P81
+   MIRON JA, 1986, AM ECON REV, V76, P125
+   MIRON JA, 1990, J ECON HIST, V50, P321, DOI 10.1017/S0022050700036469
+   Moen Jon, 1990, FEDERAL RESERVE BANK, V75, P2
+   Ramirez CD, 2012, J MONEY CREDIT BANK, V44, P433, DOI 10.1111/j.1538-4616.2011.00494.x
+   Ramirez CD, 2009, J BANK FINANC, V33, P2185, DOI 10.1016/j.jbankfin.2009.05.020
+   Reimann C., 2008, STAT DATA ANAL EXPLA
+   Richardson G, 2009, J POLIT ECON, V117, P1031, DOI 10.1086/649603
+   ROMER CD, 1989, J POLIT ECON, V97, P1, DOI 10.1086/261592
+   Romer CD, 1999, J ECON PERSPECT, V13, P23, DOI 10.1257/jep.13.2.23
+   Silber William L, 2007, GREAT FINANCIAL CRIS
+   STOCK JH, 1989, NBER MACROECON ANN, V4, P351, DOI 10.2307/3584985
+   U. S. Bureau of the Census, 1900, 12 CENS US 1900, V1-10
+   U. S. Department of Agriculture, 1936, 414 USDA
+   US Department of Commerce, 1975, HIST STAT US COL TIM
+   Wells D. R., 2004, FEDERAL RESERVE SYST
+   Wheelock D. C., 1994, FEDERAL RESERVE  MAY, P57
+   WHEELOCK DC, 1992, J ECON HIST, V52, P806, DOI 10.1017/S0022050700011918
+   White Eugene, 1983, REGULATION REFORM AM
+   Wicker E., 2000, BANKING PANICS GILDE
+NR 73
+TC 14
+Z9 16
+U1 0
+U2 26
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1042-9573
+J9 J FINANC INTERMED
+JI J. Financ. Intermed.
+PD JUL
+PY 2013
+VL 22
+IS 3
+BP 285
+EP 307
+DI 10.1016/j.jfi.2012.09.005
+PG 23
+WC Business, Finance
+SC Business & Economics
+GA 163PC
+UT WOS:000320348400001
+DA 2019-12-28
+ER
+
+PT J
+AU Bulbul, D
+AF Buelbuel, Dilek
+TI Determinants of trust in banking networks
+SO JOURNAL OF ECONOMIC BEHAVIOR & ORGANIZATION
+LA English
+DT Article
+DE Banking network; competence trust; financial crisis
+ID INTERBANK MARKET; ORGANIZATIONS; CONTAGION; RISK; PERFORMANCE;
+   COMPETITION; JAPAN; POWER
+AB This paper investigates the determinants of trust in banking networks and, thus, identifies several forces determining the stabilizing effect of networks. Using a unique dataset of 249 German savings banks, the empirical results show that intense interaction with central coordinators supports trust-building within the network. Larger banks and banks with strong competitive standing and high income invest less in a deeper relationship with the network. Moreover, bank's own trustworthiness is a relevant component in building trust. The banks are more willing to trust if they believe that they can influence the banking group's decisions. These findings may help to explain how banking networks can function well even in periods of financial crisis. (C) 2012 Elsevier B.V. All rights reserved.
+C1 Goethe Univ Frankfurt, D-60323 Frankfurt, Germany.
+RP Bulbul, D (reprint author), Goethe Univ Frankfurt, POB 111932, D-60323 Frankfurt, Germany.
+EM buelbuel@finance.uni-frankfurt.de
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2010, 30 EUR U I, V30
+   Allen F, 2009, J MONETARY ECON, V56, P639, DOI 10.1016/j.jmoneco.2009.04.003
+   ANDERSON E, 1987, J MARKETING RES, V24, P254
+   Babus A., 2006, FORMATION FINANCIAL
+   *BAS COMM BANK SUP, 2004, 13 BANK INT SETTL BA
+   Berger AN, 2009, J FINANC SERV RES, V35, P99, DOI 10.1007/s10693-008-0050-7
+   Bove R., 2010, DISCUSSION PAPER SER, V2
+   Boyd JH, 2005, J FINANC, V60, P1329, DOI 10.1111/j.1540-6261.2005.00763.x
+   BRAMS SJ, 1976, THEOR DECIS, V7, P29, DOI 10.1007/BF00141101
+   Brusco S, 2007, J FINANC, V62, P2275, DOI 10.1111/j.1540-6261.2007.01275.x
+   Butler J, 2009, 15344 NBER
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   DBRS, 2010, RAT REP SPARK FIN
+   Diamond DW, 2000, J FINANC, V55, P2431, DOI 10.1111/0022-1082.00296
+   DRISCOLL R, 1972, J PERS SOC PSYCHOL, V24, P1, DOI 10.1037/h0033373
+   DSGV, 2011, INS SAV BANKS FIN GR
+   DULLMANN K, 2007, J FINANCIAL SERVICES, V32, P55, DOI DOI 10.1007/S10693-007-0014-3
+   EMMONS WR, 2004, J FINANCIAL SERVICES, V25, P259, DOI DOI 10.1023/B:FINA.0000020665.54596.f6
+   Falk A, 2006, AM ECON REV, V96, P1611, DOI 10.1257/aer.96.5.1611
+   Fehr E, 2009, J EUR ECON ASSOC, V7, P235, DOI 10.1162/JEEA.2009.7.2-3.235
+   Guiso L, 2009, Q J ECON, V124, P1095, DOI 10.1162/qjec.2009.124.3.1095
+   Hakenes H., 2010, J INST THEOR ECON, V166
+   Hoepner AGF, 2012, ELGAR ORIG REF, P427
+   Kee H. W., 1970, J CONFLICT RESOLUT, V14, P357, DOI DOI 10.1177/002200277001400307
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Knack S, 1997, Q J ECON, V112, P1251, DOI 10.1162/003355300555475
+   KRAHNEN JP, 2004, GERMAN FINANCIAL SYS
+   Kramer RM, 1999, ANNU REV PSYCHOL, V50, P569, DOI 10.1146/annurev.psych.50.1.569
+   KREPS DM, 1982, J ECON THEORY, V27, P245, DOI 10.1016/0022-0531(82)90029-1
+   LaPorta R, 1997, AM ECON REV, V87, P333
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Lincoln JR, 1996, AM SOCIOL REV, V61, P67, DOI 10.2307/2096407
+   MAYER RC, 1995, ACAD MANAGE REV, V20, P709, DOI 10.2307/258792
+   Memmel C., 2007, DISCUSSION PAPER SER, V2, P1
+   REMPEL JK, 1985, J PERS SOC PSYCHOL, V49, P95, DOI 10.1037/0022-3514.49.1.95
+   RING PS, 1992, STRATEGIC MANAGE J, V13, P483, DOI 10.1002/smj.4250130702
+   Sako M, 1998, J ECON BEHAV ORGAN, V34, P387, DOI 10.1016/S0167-2681(97)00082-6
+   Schmidt RH, 2009, SCHMA BU REV, V61, P366, DOI DOI 10.1007/BF03396792
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   WILLIAMSON OE, 1993, J LAW ECON, V36, P453, DOI 10.1086/467284
+   Zaheer A, 1998, ORGAN SCI, V9, P141, DOI 10.1287/orsc.9.2.141
+NR 43
+TC 10
+Z9 10
+U1 3
+U2 28
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-2681
+J9 J ECON BEHAV ORGAN
+JI J. Econ. Behav. Organ.
+PD JAN
+PY 2013
+VL 85
+BP 236
+EP 248
+DI 10.1016/j.jebo.2012.02.022
+PG 13
+WC Economics
+SC Business & Economics
+GA 077AC
+UT WOS:000313999300019
+DA 2019-12-27
+ER
+
+PT J
+AU Masciandaro, D
+   Passarelli, F
+AF Masciandaro, Donato
+   Passarelli, Francesco
+TI Financial systemic risk: Taxation or regulation?
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Financial crisis; Systemic risk; Banking regulation; Financial
+   transaction taxes; Political economy
+AB This paper describes financial systemic risk as a pollution issue. Free riding leads to excess risk production. This problem may be solved, at least partially, either by financial regulation or by taxation. From a normative viewpoint, taxation is superior in many respects. However, reality shows that financial regulation is adopted more frequently. This paper makes a positive, politico-economic argument. If the majority chooses regulation, the level is likely to be too harsh. If it chooses taxation, then the level is likely to be too low. Due to regressive effects, a tax on financial transactions receives low support from a majority of low polluting portfolio owners. The same kind of majority may strategically choose regulation in order to burden the minority with a larger share of the cost of reducing systemic risk. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Masciandaro, Donato] Bocconi Univ, Dept Econ, Milan, Italy.
+   [Masciandaro, Donato] Bocconi Univ, Paolo Baffi Ctr, Milan, Italy.
+   [Passarelli, Francesco] Univ Teramo, Teramo, Italy.
+RP Masciandaro, D (reprint author), Bocconi Univ, Dept Econ, Milan, Italy.
+EM donato.masciandaro@unibocconi.it; francesco.passarelli@unibocconi.it
+CR Acharya V. V., 2012, TAX SYSTEMIC R UNPUB
+   Acharya V. V., 2010, WILEY FINANCE SERIES
+   ACHARYA V. V., 2012, CEPR DISCUSSION PAPE, V8824
+   Adrian T., 2011, NBER WORKING PAPERS
+   Alesina A.F., 2010, 16413 NAT BUR EC RES
+   Allen F., 2010, 16177 NAT BUR EC RES
+   Black D, 1948, J POLIT ECON, V56, P23, DOI 10.1086/256633
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Claessens Stijn, 2010, FINANCIAL SECTOR TAX
+   Cortez B, 2011, EC TAX REV, V20, P16
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Goodhart C., 2011, 201112 CFS
+   Gorton G., 2010, SLAPPED INVISIBLE HA
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Jeanne O., 2010, WORKING PAPER SERIES, VWP10-12
+   Keynes J. M., 1936, GEN THEORY EMPLOYMEN
+   Lockwood B., 2010, CESIFO WORKING PAPER, V3226
+   Matheson Thornton, 2011, IMF WORKING PAPERS
+   MELTZER AH, 1981, J POLIT ECON, V89, P914, DOI 10.1086/261013
+   Peluso E., 2010, CEPR DISCUSSION PAPE
+   Persson T., 2002, POLITICAL EC EXPLAIN
+   Richardson M, 2009, WILEY FINANCE SERIES
+   ROBERTS KWS, 1977, J PUBLIC ECON, V8, P329, DOI 10.1016/0047-2727(77)90005-6
+   STIGLITZ JE, 1989, J FINANC SERV RES, V3, P101, DOI 10.1007/BF00122795
+   Suarez J, 2011, CEPR DISCUSSION PAPE
+   Tobin J., 1978, E ECON J, V4, P153
+   WEITZMAN ML, 1974, REV ECON STUD, V41, P477, DOI 10.2307/2296698
+NR 27
+TC 10
+Z9 10
+U1 1
+U2 42
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD FEB
+PY 2013
+VL 37
+IS 2
+BP 587
+EP 596
+DI 10.1016/j.jbankfin.2012.09.020
+PG 10
+WC Business, Finance; Economics
+SC Business & Economics
+GA 063EN
+UT WOS:000312979100025
+DA 2019-12-28
+ER

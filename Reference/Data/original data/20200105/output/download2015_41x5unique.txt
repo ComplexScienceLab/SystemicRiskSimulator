@@ -1,0 +1,512 @@
+
+PT J
+AU Garleanu, N
+   Panageas, S
+   Yu, JF
+AF Garleanu, Nicolae
+   Panageas, Stavros
+   Yu, Jianfeng
+TI Financial Entanglement: A Theory of Incomplete Integration, Leverage,
+   Crashes, and Contagion
+SO AMERICAN ECONOMIC REVIEW
+LA English
+DT Article
+ID MARKET LIQUIDITY; SYSTEMIC RISK; ASSET PRICES; MODEL; CRISES;
+   EQUILIBRIUM; CONSTRAINTS; INFORMATION; GEOGRAPHY; GOODS
+AB We propose a unified model of limited market integration, asset-price determination, leveraging, and contagion. Investors and firms are located on a circle, and access to markets involves participation costs that increase with distance. Due to a complementarity between participation and leverage decisions, the equilibrium may exhibit diverse leverage and participation choices across investors, although investors are ex ante identical. Small changes in market-access costs can cause a change in the type of equilibrium, leading to discontinuous price changes, deleveraging, and portfolio-flow reversals. Moreover, the market is subject to contagion-an adverse shock to investors in some locations affects prices everywhere. (JEL D83, G11, G12, G32, G35)
+C1 [Garleanu, Nicolae] Univ Calif Berkeley, Haas Sch Business, Berkeley, CA 94720 USA.
+   [Panageas, Stavros] Univ Chicago, Booth Sch Business, Chicago, IL 60637 USA.
+   [Yu, Jianfeng] Univ Minnesota, Carlson Sch Business, Minneapolis, MN 55455 USA.
+   [Yu, Jianfeng] Chinese Univ Hong Kong, Shenzhen, Peoples R China.
+RP Garleanu, N (reprint author), Univ Calif Berkeley, Haas Sch Business, Berkeley, CA 94720 USA.
+EM garleanu@haas.berkeley.edu; spanagea@chicagobooth.edu; jianfeng@umn.edu
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Ahrend Rudiger, 2013, OECD J EC STUDIES
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Allen F, 2004, J EUR ECON ASSOC, V2, P1015, DOI 10.1162/1542476042813805
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   AUMANN RJ, 1966, ECONOMETRICA, V34, P1, DOI 10.2307/1909854
+   Aviat A, 2007, J INT ECON, V71, P22, DOI 10.1016/j.jinteco.2006.02.002
+   Barlevy G, 2003, J ECON THEORY, V110, P234, DOI 10.1016/S0022-0531(03)00039-5
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Buch Claudia M., 2005, REV INT ECON, V13, P787, DOI DOI 10.1111/11467-9396.2005.00537.X
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Carletti Elena, 2012, 201214 ECO EUR U I
+   Chan K, 2005, J FINANC, V60, P1495, DOI 10.1111/j.1540-6261.2005.768_1.x
+   Cochrane JH, 2008, REV FINANC STUD, V21, P347, DOI 10.1093/rfs/hhm059
+   Coval JD, 2001, J POLIT ECON, V109, P811, DOI 10.1086/322088
+   Coval JD, 1999, J FINANC, V54, P2045, DOI 10.1111/0022-1082.00181
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Garcia D, 2011, REV FINANC STUD, V24, P169, DOI 10.1093/rfs/hhq086
+   Garleanu Nicolae, 2015, AM EC REV
+   GENNOTTE G, 1990, AM ECON REV, V80, P999
+   Giannetti M, 2012, J FINANC ECON, V104, P23, DOI 10.1016/j.jfineco.2011.12.006
+   Grinblatt M, 2001, J FINANC, V56, P1053, DOI 10.1111/0022-1082.00355
+   GROSSMAN SJ, 1980, AM ECON REV, V70, P393
+   Head K, 2008, J INT ECON, V74, P2, DOI 10.1016/j.jinteco.2007.04.004
+   Hoggarth G., 2010, 8 BANK ENGL
+   Huberman G, 2001, REV FINANC STUD, V14, P659, DOI 10.1093/rfs/14.3.659
+   Kiyotaki Nobuhiro, 1997, J POLITICAL EC, V105, P211
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Krishnamurthy A, 2010, AM ECON J-MACROECON, V2, P1, DOI 10.1257/mac.2.3.1
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   MERTON RC, 1987, J FINANC, V42, P483, DOI 10.2307/2328367
+   Pavlova A, 2008, REV ECON STUD, V75, P1215, DOI 10.1111/j.1467-937X.2008.00509.x
+   Portes R, 2005, J INT ECON, V65, P269, DOI 10.1016/j.jinteco.2004.05.002
+   SALOP SC, 1979, BELL J ECON, V10, P141, DOI 10.2307/3003323
+   Talamo Giuseppina, 2007, I FDI GRAVITY MODEL
+   Yuan K, 2005, J FINANC, V60, P379, DOI 10.1111/j.1540-6261.2005.00733.x
+   Zawadowski A, 2013, REV FINANC STUD, V26, P1291, DOI 10.1093/rfs/hht008
+NR 40
+TC 9
+Z9 9
+U1 2
+U2 43
+PU AMER ECONOMIC ASSOC
+PI NASHVILLE
+PA 2014 BROADWAY, STE 305, NASHVILLE, TN 37203 USA
+SN 0002-8282
+EI 1944-7981
+J9 AM ECON REV
+JI Am. Econ. Rev.
+PD JUL
+PY 2015
+VL 105
+IS 7
+BP 1979
+EP 2010
+DI 10.1257/aer.20131076
+PG 32
+WC Economics
+SC Business & Economics
+GA CO4XN
+UT WOS:000359164300002
+DA 2019-12-27
+ER
+
+PT J
+AU Wood, T
+   da Costa, APP
+AF Wood, Thomaz, Jr.
+   Paulino da Costa, Ana Paula
+TI Corporate Frauds as Criminal Business Models: An Exploratory Study
+SO THUNDERBIRD INTERNATIONAL BUSINESS REVIEW
+LA English
+DT Article
+ID CORRUPTION; CRIME
+AB In this article, we report on the findings of an exploratory, interpretive study of a notorious corporate fraud that occurred in Brazil from 1989 to 2005. We examine the process by which this scheme was created as well as how it was maintained for all those years. Our analysis covers both the substantive aspects (the actions fraud agents effectively perform) and the symbolic aspects (the resources of impression management that they use). We suggest that under certain circumstances, corporate frauds may be understood as the result of implementation of a criminal business model that focuses on a niche market of risk takers or greed investors, uses aggressive commercial practices and offers exclusivity, promotes the organization's image and personality cult of the entrepreneur, operates a management model that combines centralized control with fragmented systems, and uses complex fraudulent practices. This perspective allows us to understand the phenomenon of corporate fraud from a systemic point of view. We also suggest directions for future research and theory development on corporate frauds. (C) 2014 Wiley Periodicals, Inc.
+C1 [Wood, Thomaz, Jr.] FGV EAESP, Sao Paulo, Brazil.
+   [Paulino da Costa, Ana Paula] BSP Business Sch Sao Paulo, Sao Paulo, Brazil.
+   [Paulino da Costa, Ana Paula] FIPE, Sao Paulo, Brazil.
+RP da Costa, APP (reprint author), Econ Res Inst Fdn FIPE, Sao Paulo, Brazil.
+EM apcosta@fipe.org.br
+CR ALVESSON M, 1990, ORGAN STUD, V11, P373
+   [Anonymous], 2006, EXBANQUEIRO EDEMAR C
+   [Anonymous], 2006, STF CONCEDE HABEAS C
+   Ashforth BE, 2003, RES ORGAN BEHAV, V25, P1, DOI 10.1016/S0191-3085(03)25001-2
+   Ashforth BE, 2008, ACAD MANAGE REV, V33, P670
+   Baden-Fuller C, 2010, LONG RANGE PLANN, V43, P156, DOI 10.1016/j.lrp.2010.02.005
+   Banco Santos, 2005, PED FAL BANC SANT LI
+   Bardin L, 1977, ANALISE CONTEUDO, V70
+   Barros G., 2004, INDIA FOLHA SAO PAUL
+   Barros G., 2004, INTEGRACAO FOLHA SAO
+   Barros G., 2004, NEGOCIOS CHINA FOLHA
+   BAUCUS MS, 1994, J MANAGE, V20, P699, DOI 10.1177/014920639402000401
+   Beraba M., 2004, SINAL VERMELHO FOLHA
+   Boje DM, 2004, ORGAN STUD, V25, P751, DOI 10.1177/0170840604042413
+   Boorstin D. J., 1962, IMAGE GUIDE PSEUDOEV
+   Brown E, 2011, CRIT PERSPECT INT BU, V7, P116, DOI 10.1108/17422041111128203
+   Carvalho M. C., 2004, PAVILHAO OCA DEVE FE
+   Carvalho M. C., 2004, EMPRESA CARIBE CONTR
+   Carvalho M. C., 2004, INTERVENCAO NAO PRIM
+   Carvalho M. C., 2005, SANTOS DAVA BMW INCE
+   COHEN LE, 1979, AM SOCIOL REV, V44, P588, DOI 10.2307/2094589
+   Comissao de Valores Mobiliarios, 2008, PROC ADM SANC 01 05
+   Cypriano F., 2004, INTERVENCAO DIVIDE M
+   De Sanctis F. M., 2009, CRIME ORGANIZADO LAV
+   EISENHARDT KM, 1989, ACAD MANAGE REV, V14, P532, DOI 10.2307/258557
+   Ferreira E. C., 2004, UNCTAD IND CRIATIVAS
+   George A., 2005, CASE STUDIES THEORY
+   Giacalone R. A., 1991, APPL IMPRESSION MANA
+   GLASER BG, 1979, DISCOVERY GROUNDED T
+   Gradilone C., 2004, REV EXAME, P828
+   Gregoriou G. N., 2009, J WEALTH MANAGEMENT, V12, P89
+   HILL CWL, 1992, HUM RELAT, V45, P1055, DOI 10.1177/001872679204501003
+   JAMAL K, 1995, RECHERCHE COMPTABLE, V12, P107
+   Juridico Consultor, 2005, DEN MIN PUBL FED
+   MacLean TL, 2008, J BUS ETHICS, V78, P3, DOI 10.1007/s10551-006-9324-x
+   Markopolos H., 2010, CANADIAN BUSINESS, V83, P48
+   Misangyi VF, 2008, ACAD MANAGE REV, V33, P750
+   Moura D, 2007, THESIS
+   Nassif L., 2004, BANQUEIRO MECENAS FO
+   Phillips N., 2009, HDB ORG RES METHODS, P549
+   Prestes C., 2009, MASSA FALIDA BANCO S
+   Riahi-Belkaoui A., 2000, MANAGE FINANC, V26, P33, DOI DOI 10.1108/03074350010766972
+   Schnatterly K, 2003, STRATEGIC MANAGE J, V24, P587, DOI 10.1002/smj.330
+   Stake RE, 1994, HDB QUALITATIVE RES
+   STRAUSS A., 2008, PESQUISA QUALITATIVA
+   Tavares B., 2010, EDEMAR CID FERREIRA
+   Trevisan C., 2004, ARTE TRADICOES AMAZO
+   Tsai Y. T., 2005, J AM ACAD BUSINESS, V6, P64
+   US Securities and Exchange Commission (US SEC), 2009, REP INV EX SUMM
+   Westphal JD, 2010, ACAD MANAGE J, V53, P15, DOI 10.5465/AMJ.2010.48036721
+   Wood T, 2002, ACAD MANAGE EXEC, V16, P18, DOI 10.5465/AME.2002.7173487
+NR 51
+TC 0
+Z9 0
+U1 0
+U2 8
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1096-4762
+EI 1520-6874
+J9 THUNDERBIRD INT BUS
+JI Thunderbird Int. Bus. Rev.
+PD JAN-FEB
+PY 2015
+VL 57
+IS 1
+BP 51
+EP 62
+DI 10.1002/tie.21676
+PG 12
+WC Business
+SC Business & Economics
+GA CZ7TZ
+UT WOS:000367304200005
+DA 2019-12-28
+ER
+
+PT J
+AU Reboredo, JC
+   Tiwari, AK
+   Albulescu, CT
+AF Reboredo, Juan C.
+   Tiwari, Aviral Kumar
+   Albulescu, Claudiu Tiberiu
+TI An analysis of dependence between Central and Eastern European stock
+   markets
+SO ECONOMIC SYSTEMS
+LA English
+DT Article
+DE CEE stock markets; Dependence structure; Copulas; Tail dependence
+ID TIME-SERIES; INTEGRATION; OIL; SPILLOVER; CONTAGION; DIVERSIFICATION;
+   COMOVEMENTS; DYNAMICS; RETURNS; CRISES
+AB We examine the dependence structure between four Central and Eastern European (CEE) stock markets (Czech Republic, Hungary, Poland and Romania) using static and dynamic copula functions with different forms of tail dependence. We find evidence of positive dependence between all CEE stock markets, although this dependence is stronger between the Hungarian, Czech and Polish markets than between these markets and the Romanian market We also find evidence of symmetric tail dependence, although not for the Hungarian and Czech markets. The dependence is time-varying and intensified after the onset of the recent global financial crisis. These results confirm that CEE stock markets are gradually coupling, a fact that has risk management implications for policymakers and investors. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Reboredo, Juan C.] Univ Santiago de Compostela, Dept Econ, Santiago De Compostela 15782, Spain.
+   [Tiwari, Aviral Kumar] IBS Hyderabad, Fac Management, Hyderabad 501203, Andhra Pradesh, India.
+   [Albulescu, Claudiu Tiberiu] Politehn Univ Timisoara, Dept Management, Timisoara 300006, Romania.
+   [Albulescu, Claudiu Tiberiu] Univ Poitiers, CRIEF, F-86022 Poitiers, France.
+RP Reboredo, JC (reprint author), Univ Santiago de Compostela, Dept Econ, Avda Xoan XXIII S-N, Santiago De Compostela 15782, Spain.
+EM juancarlos.reboredo@usc.es
+RI Albulescu, Claudiu T/J-5341-2012; Tiwari, Aviral Kumar/C-5556-2011;
+   Tiwari, Aviral/H-4369-2019; Reboredo, Juan Carlos/I-3224-2015
+OI Albulescu, Claudiu T/0000-0003-2875-1749; Tiwari, Aviral
+   Kumar/0000-0002-1822-9263; Tiwari, Aviral/0000-0002-1822-9263; Reboredo,
+   Juan Carlos/0000-0003-3912-9410
+FU Xunta de GaliciaXunta de Galicia; FEDEREuropean Union (EU) [GPC2013-045]
+FX We are indebted to two anonymous referees for providing helpful comments
+   and suggestions that have improved the quality of the paper. Juan C.
+   Reboredo is grateful for financial support provided by the Xunta de
+   Galicia and FEDER under research grant GPC2013-045.
+CR Aityan SK, 2010, J INT FINANC MARK I, V20, P590, DOI 10.1016/j.intfin.2010.07.006
+   Aloui R, 2013, ENERG ECON, V39, P208, DOI 10.1016/j.eneco.2013.04.012
+   Avdulaj K, 2013, FINANC UVER, V63, P425
+   Baele L, 2005, J FINANC QUANT ANAL, V40, P373, DOI 10.1017/S0022109000002350
+   Barunik J, 2013, FINANC UVER, V63, P443
+   Breymann W, 2003, QUANT FINANC, V3, P1, DOI 10.1088/1469-7688/3/1/301
+   Buttner D, 2010, ECON MODEL, V27, P915, DOI 10.1016/j.econmod.2010.05.014
+   Caporale GM, 2011, REV INT ECON, V19, P158, DOI 10.1111/j.1467-9396.2010.00938.x
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Chang CL, 2013, EMERG MARK FINANC TR, V49, P53, DOI 10.2753/REE1540-496X4905S404
+   Chelley-Steeley PL, 2005, J INT MONEY FINANC, V24, P818, DOI 10.1016/j.jimonfin.2005.04.007
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Chesnay F., 2001, EC NOTES, V0, P53, DOI DOI 10.1111/1468-0300.00047
+   Dajcman S, 2012, INZ EKON, V23, P22, DOI 10.5755/j01.ee.23.1.1221
+   Deheuvels P., 1978, PUBL I STAT U PARIS, V23, P1
+   Demian CV, 2011, J INT FINANC MARK I, V21, P144, DOI 10.1016/j.intfin.2010.10.002
+   Dias A., 2004, WILEY FINANCE SERIES, P321
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Drakos K, 2005, EASTERN EUR ECON, V43, P5, DOI 10.1080/00128775.2005.11041113
+   Egert B., 2007, EC SYSTEMS, V31, P184, DOI DOI 10.1016/J.ECOSYS.2006.12.004
+   Egert B, 2011, EMPIR ECON, V40, P393, DOI 10.1007/s00181-010-0341-3
+   Embrechts P., 2003, HDB HEAVY TAILED DIS
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   FREES EW, 1997, N AM ACTUARIAL J, V2, P1
+   Gelos RG, 2001, ECON TRANSIT, V9, P53, DOI 10.1111/1468-0351.00067
+   Gilmore CG, 2008, Q REV ECON FINANC, V48, P605, DOI 10.1016/j.qref.2006.06.005
+   Gjika D, 2013, ECON MODEL, V33, P55, DOI 10.1016/j.econmod.2013.03.015
+   Harrison B., 2009, APPL FINANCIAL EC, V19, P1509, DOI DOI 10.1080/09603100902902220
+   Horvath R, 2013, ECON SYST, V37, P81, DOI 10.1016/j.ecosys.2012.07.004
+   Joe H., 1996, 166 U BRIT COL DEP S
+   Joe H., 1997, MONOGRAPHS STAT PROB, V73
+   Jokipii T., 2007, ECON SYST, V31, P71
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Kakouris I, 2014, EUR J OPER RES, V235, P28, DOI 10.1016/j.ejor.2013.12.022
+   Kotkatvuori-Ornberg J, 2013, INT REV FINANC ANAL, V28, P70, DOI 10.1016/j.irfa.2013.01.009
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Li XD, 2013, EMERG MARK FINANC TR, V49, P23, DOI 10.2753/REE1540-496X4902S202
+   LIN WL, 1994, REV FINANC STUD, V7, P507, DOI 10.1093/rfs/7.3.507
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Lupu R, 2009, ECON COMPUT ECON CYB, V43, P173
+   Moore T, 2007, INT REV FINANC ANAL, V16, P282
+   Morana C, 2008, J INT FINANC MARK I, V18, P31, DOI DOI 10.1016/J.INTFIN.2006.05.001
+   Nelsen R. B, 2006, INTRO COPULAS
+   Ning C, 2009, FINANC RES LETT, V6, P202, DOI 10.1016/j.frl.2009.09.002
+   Patev P, 2006, MANAG FINANC, V32, P415, DOI 10.1108/03074350610657436
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Peng Y, 2012, ANN FINANC, V8, P49, DOI 10.1007/s10436-011-0181-y
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.2307/2336182
+   Reboredo JC, 2013, J BANK FINANC, V37, P2665, DOI 10.1016/j.jbankfin.2013.03.020
+   Reboredo JC, 2013, ENERG ECON, V36, P471, DOI 10.1016/j.eneco.2012.10.004
+   Reboredo JC, 2012, ENERG POLICY, V49, P456, DOI 10.1016/j.enpol.2012.06.035
+   Reboredo JC, 2012, J POLICY MODEL, V34, P419, DOI 10.1016/j.jpolmod.2011.10.005
+   Reboredo JC, 2011, ENERG ECON, V33, P948, DOI 10.1016/j.eneco.2011.04.006
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Savva CS, 2010, EMPIR ECON, V39, P337, DOI 10.1007/s00181-009-0306-6
+   Scheicher M, 2001, INT J FINANC ECON, V6, P27, DOI 10.1002/ijfe.141
+   Serwa D., 2005, EC SYSTEMS, V29, P344, DOI DOI 10.1016/j.ecosys.2005.05.003
+   Sklar A., 1959, PUBL I STAT U PARIS, V8, P229
+   Sun W, 2009, EMPIR ECON, V36, P201, DOI 10.1007/s00181-008-0192-3
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   SYRIOPOULOS T., 2004, APPL FINANCIAL EC, V14, P1253, DOI DOI 10.1080/0960310042000280465
+   Tasdemir M, 2014, EMERG MARK FINANC TR, V50, P190, DOI 10.2753/REE1540-496X500211
+   Voronkova Svitlana, 2004, INT REV FINANC ANAL, V13, P633, DOI DOI 10.1016/J.IRFA.2004.02.017
+   Wang K, 2011, INT REV ECON FINANC, V20, P654, DOI 10.1016/j.iref.2010.12.003
+   Wang P, 2008, MANCH SCH, V76, P116, DOI 10.1111/j.1467-9957.2008.01083.x
+   Ye WY, 2012, EUR J OPER RES, V222, P96, DOI 10.1016/j.ejor.2012.04.004
+NR 67
+TC 9
+Z9 10
+U1 0
+U2 22
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0939-3625
+EI 1878-5433
+J9 ECON SYST
+JI Econ. Syst.
+PD SEP
+PY 2015
+VL 39
+IS 3
+BP 474
+EP 490
+DI 10.1016/j.ecosys.2015.01.002
+PG 17
+WC Economics
+SC Business & Economics
+GA CV4OO
+UT WOS:000364246600008
+DA 2019-12-27
+ER
+
+PT J
+AU Fricke, D
+   Lux, T
+AF Fricke, Daniel
+   Lux, Thomas
+TI On the distribution of links in the interbank network: evidence from the
+   e-MID overnight money market
+SO EMPIRICAL ECONOMICS
+LA English
+DT Article
+DE Interbank market; Network models; Financial network; Systemic risk;
+   Power-law
+ID COMPLEX NETWORKS; SAMPLE FRACTION; OUTPUT GROWTH; SYSTEMIC RISK;
+   TOPOLOGY; COUNTRIES; CONTAGION; MODELS; FIRMS; TAIL
+AB Previous literature on statistical properties of interbank networks has reported various power-laws, particularly for the degree distribution (i.e., the distribution of credit links between institutions). In this paper, we revisit data for the Italian interbank network based on overnight loans recorded on the e-MID trading platform during the period 1999-2010 using both daily and quarterly aggregates. In contrast to previous reports, we find no evidence in favor of a power-law characterizing the degree distribution. Rather, the data are best described by negative Binomial distributions. For quarterly data, Weibull, Gamma, and Exponential distributions tend to provide comparable fits. We find similar results when investigating the distribution of the number of transactions, even though in this case, the tails of the quarterly variables are much fatter. The absence of power-law behavior casts doubts on previous claims that these interbank data fall into the category of scale-free networks.
+C1 [Fricke, Daniel] Oxford Martin Sch, Inst New Econ Thinking, Oxford, England.
+   [Fricke, Daniel] Univ Oxford, Said Business Sch, CABDyN Complex Ctr, Oxford OX1 1HP, England.
+   [Fricke, Daniel] Kiel Inst World Econ, D-24105 Kiel, Germany.
+   [Lux, Thomas] Univ Kiel, Dept Econ, D-24118 Kiel, Germany.
+   [Lux, Thomas] Univ Jaume 1, Banco Espana Chair Computat Econ, Castellon de La Plana 12071, Spain.
+RP Fricke, D (reprint author), Oxford Martin Sch, Inst New Econ Thinking, Oxford, England.
+EM daniel.fricke@sbs.ox.ac.uk; lux@economics.uni-kiel.de
+FU European Union Seventh Framework ProgrammeEuropean Union (EU) [619255];
+   FP-7 [CRISIS-ICT-2011-288501]
+FX The article is part of a research initiative launched by the Leibniz
+   Community. We are grateful for helpful comments by Aaron Clauset and
+   Michael Stumpf as well as those of two anonymous reviewers. Thomas Lux
+   also gratefully acknowledges financial support of this research from the
+   European Union Seventh Framework Programme under Grant Agreement No.
+   619255 while Daniel Fricke gratefully acknowledges FP-7 support under
+   Grant Agreement CRISIS-ICT-2011-288501.
+CR Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Alderson DL, 2007, PHYS REV E, V75, DOI 10.1103/PhysRevE.75.046102
+   ANDERSON CW, 1970, J APPL PROBAB, V7, P99, DOI 10.2307/3212152
+   Avnir D, 1998, SCIENCE, V279, P39, DOI 10.1126/science.279.5347.39
+   Axtell RL, 2001, SCIENCE, V293, P1818, DOI 10.1126/science.1062081
+   Beaupain R, 2012, WORKING PAPER SERIES, V1500
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Caldarelli G, 2007, SCALE FREE NETWORKS
+   Castaldi C, 2009, EMPIR ECON, V37, P475, DOI 10.1007/s00181-008-0242-x
+   Clauset A, 2007, J CONFLICT RESOLUT, V51, P58, DOI 10.1177/0022002706296157
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   Danielsson J, 2001, J MULTIVARIATE ANAL, V76, P226, DOI 10.1006/jmva.2000.1903
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   De Masi G, 2012, EMPIR ECON, V43, P851, DOI 10.1007/s00181-011-0512-x
+   Drees H, 1998, STOCH PROC APPL, V75, P149, DOI 10.1016/S0304-4149(98)00017-9
+   Erdos P., 1959, PUBL MATH-DEBRECEN, V6, P290, DOI DOI 10.1234/12345678
+   European Central Bank, 2007, EUR MARK STUD 2006 F
+   Fagiolo G, 2008, J APPL ECONOM, V23, P639, DOI 10.1002/jae.1003
+   Fagiolo G, 2010, J EVOL ECON, V20, P479, DOI 10.1007/s00191-009-0160-x
+   Finger K, 2013, COMPUT MANAG SCI, V10, P187, DOI 10.1007/s10287-013-0171-9
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P1, DOI 10.1017/CBO9781139151184
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Gabaix X, 1999, Q J ECON, V114, P739, DOI 10.1162/003355399556133
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Ioannides YM, 2004, J ECON LIT, V42, P1056, DOI 10.1257/0022051043004595
+   KRAMER W, 1996, EMPIR ECON, V21, P281
+   LEADBETTER MR, 1983, Z WAHRSCHEINLICHKEIT, V65, P291, DOI 10.1007/BF00532484
+   Lux T, 2000, EMPIR ECON, V25, P641
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Reiss R.D., 2007, STAT ANAL EXTREME VA
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Silverberg G, 2007, J ECONOMETRICS, V139, P318, DOI 10.1016/j.jeconom.2006.10.017
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Stumpf MPH, 2012, SCIENCE, V335, P665, DOI 10.1126/science.1216142
+   STUMPF MP, 2005, T COMPUTATIONAL SYST, V3, P65
+   Stumpf MPH, 2005, EUROPHYS LETT, V71, P152, DOI 10.1209/epl/i2004-10531-8
+   Stumpf MPH, 2005, P NATL ACAD SCI USA, V102, P4221, DOI 10.1073/pnas.0501179102
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+NR 43
+TC 9
+Z9 10
+U1 0
+U2 10
+PU PHYSICA-VERLAG GMBH & CO
+PI HEIDELBERG
+PA PO BOX 10 52 80, 69042 HEIDELBERG, GERMANY
+SN 0377-7332
+EI 1435-8921
+J9 EMPIR ECON
+JI Empir. Econ.
+PD DEC
+PY 2015
+VL 49
+IS 4
+BP 1463
+EP 1495
+DI 10.1007/s00181-015-0919-x
+PG 33
+WC Economics; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematical Methods In Social Sciences
+GA CU7KX
+UT WOS:000363717900013
+DA 2019-12-27
+ER
+
+PT J
+AU Lee, JH
+   Jusup, M
+   Podobnik, B
+   Iwasa, Y
+AF Lee, Joung-Hun
+   Jusup, Marko
+   Podobnik, Boris
+   Iwasa, Yoh
+TI Agent-Based Mapping of Credit Risk for Sustainable Microfinance
+SO PLOS ONE
+LA English
+DT Article
+ID FINANCIAL NETWORKS; SYSTEMIC RISK; COMPLEX-SYSTEMS; MODEL; CONTAGION;
+   OUTREACH; IMPACT; SIZE
+AB By drawing analogies with independent research areas, we propose an unorthodox framework for mapping microfinance credit risk-a major obstacle to the sustainability of lenders outreaching to the poor. Specifically, using the elements of network theory, we constructed an agent-based model that obeys the stylized rules of microfinance industry. We found that in a deteriorating economic environment confounded with adverse selection, a form of latent moral hazard may cause a regime shift from a high to a low loan payment probability. An after-the-fact recovery, when possible, required the economic environment to improve beyond that which led to the shift in the first place. These findings suggest a small set of measurable quantities for mapping microfinance credit risk and, consequently, for balancing the requirements to reasonably price loans and to operate on a fully self-financed basis. We illustrate how the proposed mapping works using a 10-year monthly data set from one of the best-known microfinance representatives, Grameen Bank in Bangladesh. Finally, we discuss an entirely new perspective for managing microfinance credit risk based on enticing spontaneous cooperation by building social capital.
+C1 [Lee, Joung-Hun; Jusup, Marko; Iwasa, Yoh] Kyushu Univ, Fac Sci, Fukuoka 812, Japan.
+   [Podobnik, Boris] Univ Rijeka, Fac Civil Engn, Rijeka, Croatia.
+   [Podobnik, Boris] Univ Ljubljana, Fac Econ, Ljubljana, Slovenia.
+   [Podobnik, Boris] Zagreb Sch Econ & Management, Zagreb, Croatia.
+RP Jusup, M (reprint author), Kyushu Univ, Fac Sci, Fukuoka 812, Japan.
+EM mjusup@gmail.com
+RI Jusup, Marko/S-8567-2018; Podobnik, Boris/S-4583-2018; Iwasa,
+   Yoh/G-5368-2010
+OI Jusup, Marko/0000-0002-0777-0425; Podobnik, Boris/0000-0003-4270-1756;
+   Iwasa, Yoh/0000-0003-0691-1852
+FU Kyushu University Graduate Education and Research Training Program in
+   Decision Science for a Sustainable Society [P02]; Japan Society for the
+   Promotion of Science (JSPS) Postdoctoral Fellowship Program for Foreign
+   ResearchersMinistry of Education, Culture, Sports, Science and
+   Technology, Japan (MEXT)Japan Society for the Promotion of Science
+   [P13380]; University of Rijeka project [13.05.1.3.05];  [24370011]
+FX The authors acknowledge support from (i) Kyushu University Graduate
+   Education and Research Training Program in Decision Science for a
+   Sustainable Society no. P02, (ii) Japan Society for the Promotion of
+   Science (JSPS) Postdoctoral Fellowship Program for Foreign Researchers
+   no. P13380 and an accompanying Grant-in-Aid for Scientific Research,
+   (iii) University of Rijeka project no. 13.05.1.3.05, and (iv) JSPS
+   Grant-in-Aid for General Scientific Research B no. 24370011. The funders
+   had no role in study design, data collection and analysis, decision to
+   publish, or preparation of the manuscript.
+CR Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Cassar A, 2007, ECON J, V117, pF85, DOI 10.1111/j.1468-0297.2007.02016.x
+   Conning J, 1999, J DEV ECON, V60, P51, DOI 10.1016/S0304-3878(99)00036-X
+   Copestake J, 2001, J DEV STUD, V37, P81, DOI 10.1080/00220380412331322051
+   Dehejia R, 2012, J DEV ECON, V97, P437, DOI 10.1016/j.jdeveco.2011.06.001
+   DUNBAR RIM, 1992, J HUM EVOL, V22, P469, DOI 10.1016/0047-2484(92)90081-J
+   Elahi KQ, 2004, J POLIT MIL SOCIOL, V32, P61
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gale DM, 2007, AM ECON REV, V97, P99, DOI 10.1257/aer.97.2.99
+   Ghatak M, 1999, J DEV ECON, V60, P27, DOI 10.1016/S0304-3878(99)00035-8
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hermes N, 2007, ECON J, V117, pF1, DOI 10.1111/j.1468-0297.2007.02013.x
+   Hermes N, 2011, WORLD DEV, V39, P875, DOI 10.1016/j.worlddev.2009.10.021
+   Karlan D, 2011, REV ECON STAT, V93, P510, DOI 10.1162/REST_a_00074
+   Karlan D, 2010, REV FINANC STUD, V23, P433, DOI 10.1093/rfs/hhp092
+   Khandker SR, 2005, WORLD BANK ECON REV, V19, P263, DOI 10.1093/wber/lhi008
+   Majdandzic A, 2014, NAT PHYS, V10, P34, DOI [10.1038/NPHYS2819, 10.1038/nphys2819]
+   Marr A., 2003, J MICROFINANCE, V5, P7
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   McIntosh C, 2005, J DEV ECON, V78, P271, DOI 10.1016/j.jdeveco.2004.11.008
+   Mersland R, 2010, WORLD DEV, V38, P28, DOI 10.1016/j.worlddev.2009.05.006
+   Morduch J, 2000, WORLD DEV, V28, P617, DOI 10.1016/S0305-750X(99)00151-5
+   Morduch J, 1999, J ECON LIT, V37, P1569, DOI 10.1257/jel.37.4.1569
+   Ostrom E, 2009, SCIENCE, V325, P419, DOI 10.1126/science.1172133
+   PENG CK, 1994, PHYS REV E, V49, P1685, DOI 10.1103/PhysRevE.49.1685
+   Podobnik B, 2014, EPL-EUROPHYS LETT, V106, DOI 10.1209/0295-5075/106/68003
+   Podobnik B, 2014, PHYS REV E, V89, DOI 10.1103/PhysRevE.89.042807
+   Pretty J, 2003, SCIENCE, V302, P1912, DOI 10.1126/science.1090847
+   Scheffer M, 2010, NATURE, V467, P411, DOI 10.1038/467411a
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   STIGLITZ JE, 1990, WORLD BANK ECON REV, V4, P351, DOI 10.1093/wber/4.3.351
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+NR 35
+TC 6
+Z9 6
+U1 0
+U2 32
+PU PUBLIC LIBRARY SCIENCE
+PI SAN FRANCISCO
+PA 1160 BATTERY STREET, STE 100, SAN FRANCISCO, CA 94111 USA
+SN 1932-6203
+J9 PLOS ONE
+JI PLoS One
+PD MAY 6
+PY 2015
+VL 10
+IS 5
+AR e0126447
+DI 10.1371/journal.pone.0126447
+PG 16
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA CH5BQ
+UT WOS:000354049700132
+PM 25945790
+OA DOAJ Gold, Green Published
+DA 2019-12-27
+ER

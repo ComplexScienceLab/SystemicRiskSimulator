@@ -1,0 +1,452 @@
+
+PT J
+AU Herrmann, S
+   Mihaljek, D
+AF Herrmann, Sabine
+   Mihaljek, Dubravko
+TI The determinants of cross-border bank flows to emerging markets New
+   empirical evidence on the spread of financial crises
+SO ECONOMICS OF TRANSITION
+LA English
+DT Article
+DE Cross-border lending; financial crises; emerging market economies;
+   international banking; spillover effects; gravity model
+ID UNIT-ROOT TESTS; PANEL-DATA; TRADE; CONTAGION; MODELS
+AB This paper studies the determinants of cross-border bank lending on a panel dataset comprising 17 advanced and 28 emerging market economies from 1993 to 2008. The empirical framework is based on a gravity model of financial flows. Our main findings are that the decrease in cross-border lending in the 2007-2008 crisis was mostly due to global rather than country-specific risk factors, and that central and eastern Europe was less affected by this decrease than other emerging market regions because of its stronger financial and monetary ties with creditor countries, and its relatively sound banking systems. These results are fairly robust to several different specifications, sub-samples and econometric methodologies.
+C1 [Herrmann, Sabine] Deutsch Bundesbank, Dept Econ, Frankfurt, Germany.
+   [Mihaljek, Dubravko] Bank Int Settlements, Monetary & Econ Dept, Basel, Switzerland.
+RP Herrmann, S (reprint author), Deutsch Bundesbank, Dept Econ, Wilhelm Epstein Str 14, Frankfurt, Germany.
+EM sabine.herrmann@bundesbank.de; dubravko.mihaljek@bis.org
+CR ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   Aviat A, 2007, J INT ECON, V71, P22, DOI 10.1016/j.jinteco.2006.02.002
+   Breitung J, 2000, ADV ECONOMETRICS, V15, P161
+   Buch C., 2009, 1254 KIEL I WORLD EC
+   Buch Claudia M., 2005, REV INT ECON, V13, P787, DOI DOI 10.1111/11467-9396.2005.00537.X
+   Calvo G., 2008, 637 INT DEV BANK
+   Calvo G., 2000, WANTED WORLD FINANCI, P49
+   Caramazza F, 2004, J INT MONEY FINANC, V23, P51, DOI 10.1016/j.jimonfin.2003.10.001
+   Cetorelli N, 2011, IMF ECON REV, V59, P41, DOI 10.1057/imfer.2010.9
+   CHAMBERLAIN G, 1982, J ECONOMETRICS, V18, P5, DOI 10.1016/0304-4076(82)90094-X
+   EICHENGREEN B, 1996, 5681 NBER
+   European Bank for Reconstruction and Development, 2009, TRANS REP 2009 TRANS
+   Garcia-Herrero A., 2005, 525 BANK SPAIN
+   Glick R., 1998, WORLD EC OUTLOOK, P66
+   Goldberg L. S., 2001, 8209 NBER
+   Goldstein M., 2000, ASSESSING FINANCIAL
+   Heid F., 2004, DTSCH BUNDESBANK DIS, V2
+   Helpman E, 2008, Q J ECON, V123, P441, DOI 10.1162/qjec.2008.123.2.441
+   Hernandez L., 2001, 64 IMF
+   Im J., 2003, J ECONOMETRICS, V115, P53
+   IMF-International Monetary Fund, 2009, WORLD EC OUTLOOK
+   Kaminski G., 2003, 10061 NBER
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Krugman P., 2008, RETURN DEPRESSION EC
+   Levin A, 2002, J ECONOMETRICS, V108, P1, DOI 10.1016/S0304-4076(01)00098-7
+   Maddala GS, 1999, OXFORD B ECON STAT, V61, P631, DOI 10.1111/1468-0084.61.s1.13
+   Martin P, 2004, J INT ECON, V64, P335, DOI 10.1016/j.jinteco.2003.12.001
+   McGuire P., 2008, BIS Q REV, V12, P67
+   Mihaljek D., 2008, 44 BIS, V44, P11
+   Mihaljek D, 2010, PALGR MAC STUD BANK, P5
+   MUNDLAK Y, 1978, ECONOMETRICA, V46, P69, DOI 10.2307/1913646
+   Obstfeld M., 1996, 4893 NBER
+   Papalioannou E, 2009, J DEV ECON, V88, P269, DOI 10.1016/j.jdeveco.2008.04.001
+   Portes R, 2005, J INT ECON, V65, P269, DOI 10.1016/j.jinteco.2004.05.002
+   Reinhart CM, 2004, Q J ECON, V119, P1, DOI 10.1162/003355304772839515
+   Tinbergen J., 1962, SHAPING WORLD EC SUG
+   Van Rijckeghem C, 2003, J INT MONEY FINANC, V22, P483, DOI 10.1016/S0261-5606(03)00017-2
+   Wooldridge J., 2002, ECONOMETRIC ANAL CRO
+   WOOLDRIDGE JM, 1995, J ECONOMETRICS, V68, P115, DOI 10.1016/0304-4076(94)01645-G
+NR 39
+TC 24
+Z9 24
+U1 2
+U2 7
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0967-0750
+J9 ECON TRANSIT
+JI Econ. Transit.
+PD JUL
+PY 2013
+VL 21
+IS 3
+BP 479
+EP 508
+DI 10.1111/ecot.12019
+PG 30
+WC Economics
+SC Business & Economics
+GA 176TA
+UT WOS:000321326500004
+DA 2019-12-27
+ER
+
+PT J
+AU Chirinos, GM
+AF Chirinos, Miguel G.
+TI MEASUREMENT OF CONTAGION AND FINANCIAL INTERDEPENDENCE BY MEANS OF
+   COPULATION AND EXTREME EVENTS IN THE LATIN AMERICAN COUNTRIES*
+SO TRIMESTRE ECONOMICO
+LA Spanish
+DT Article
+ID UNITED-STATES; EQUITY MARKETS; TAIL; DIVERSIFICATION; DEPENDENCE;
+   INFERENCE; MOVEMENTS; VARIANCE; KINGDOM; MODELS
+AB This paper measures the interdependency and transmission of shocks between a sample of financial markets in Latin American. Our results favor the use of copulas and extreme events theory for the computation of mutual (inter) dependence of markets. We show that these techniques provide more accurate measurements in portfolio diversification and Value-at-Risk calculations, vis-a-vis the use of correlation coefficients, which stand as the most popular instrument used in the literature.
+C1 Univ Nacl Mayor San Marcos, Lima, Peru.
+RP Chirinos, GM (reprint author), Univ Nacl Mayor San Marcos, Lima, Peru.
+EM mchirinosg@correo.unmsm.edu.pe
+CR AGMON T, 1972, J FINANC, V27, P839, DOI 10.2307/2978672
+   [Anonymous], 2011, DAT PIB
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   BAIG T., 2000, 160 IMF
+   BALKEMA AA, 1974, ANN PROBAB, V2, P792, DOI 10.1214/aop/1176996548
+   Bekerman M., 2007, TRANSFORMACIONES REC
+   BLUME ME, 1971, J FINANC, V26, P1, DOI 10.2307/2325736
+   BLUME ME, 1975, J FINANC, V30, P785, DOI 10.2307/2326858
+   BOLLERSLEV T, 1990, REV ECON STAT, V72, P498, DOI 10.2307/2109358
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Bollerslev T., 2010, VOLATILITY TIME SERI
+   Bordo M., 2003, WORKING PAPER
+   Bordo M., 1999, CAPTIAL FLOW INT FIN
+   Bouzas R, 2001, DESARROLLO ECON, V41, P179, DOI 10.2307/3455985
+   Boyer B. H., 1999, INT FINANCE DISCUSSI, V597
+   Calvo G., 1997, 9726 DUKE U
+   Chan-Lau JA, 2004, IMF STAFF PAPERS, V51, P386
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Coles S., 1999, EXTREMES, V2, P339, DOI [DOI 10.1023/A:1009963131610, 10.1023/A:1009963131610]
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Danielsson J, 2001, J MULTIVARIATE ANAL, V76, P226, DOI 10.1006/jmva.2000.1903
+   Durrleman V, 2000, WORKING PAPER
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R., 2001, 8554
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Engle RF, 1995, ARCH SELECTED READIN
+   Erb C.B., 1994, FINANC ANAL J, V50, P32, DOI DOI 10.2469/FAJ.V50.N6.32
+   Fisher RA, 1928, P CAMB PHILOS SOC, V24, P180, DOI 10.1017/S0305004100015681
+   Forbes C, 2011, STAT DISTRIBUTIONS
+   Forbes K., 2000, 7885 NBER
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gencay R, 2004, INT J FORECASTING, V20, P287, DOI 10.1016/j.ijforecast.2004.09.005
+   Glick Reuven, 1998, 6806 NBER
+   GRUBEL HG, 1971, J FINANC, V26, P89, DOI 10.2307/2325743
+   GRUBEL HG, 1968, AM ECON REV, V58, P1299
+   HANEY RL, 1978, NEBR J ECON BUS, V17, P55
+   Haulman Clyde, 2008, VIRGINIA PANIC 1819
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Joe H, 1996, WORKING PAPER
+   Kindleberger CP, 2005, MANIAS, PANICS AND CRASHES: A HISTORY OF FINANCIAL CRISES, 5TH EDITION, P1, DOI 10.1057/9780230628045
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kluppelberg C, 2008, SCAND J STAT, V35, P701, DOI 10.1111/j.1467-9469.2008.00602.x
+   Ledford AW, 1996, BIOMETRIKA, V83, P169, DOI 10.1093/biomet/83.1.169
+   LEE CH, 1969, J POLIT ECON, V77, P512, DOI 10.1086/259540
+   LESSARD DR, 1973, J FINANC, V28, P619
+   LEVY H, 1970, AM ECON REV, V60, P668
+   Levy R., 1971, FINANCIAL ANAL J, V27, P55
+   Li F., 2009, 200914
+   Loretan M., 2000, INT FINANCE DISCUSSI, V658
+   Mari D.D., 2004, CORRELATION DEPENDEN
+   MAURENT J, 1976, J COMMON MARK STUD, V14, P344, DOI 10.1111/j.1468-5965.1976.tb00941.x
+   Meucci A, 2005, SPRINGER FINANCE, P3
+   MILLER NC, 1970, Q J ECON, V84, P175, DOI 10.2307/1883008
+   Neal Larry, 1998, FEDERAL RESERVE BANK, P53
+   Nelsen R. B, 2006, INTRO COPULAS
+   Ortiz Diana, 2010, Journal of Economics, Finance and Administrative Science, V15, P95
+   PANTON DB, 1976, J FINANC QUANT ANAL, V11, P415, DOI 10.2307/2330417
+   PICKANDS J, 1975, ANN STAT, V3, P119
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Rachev ST, 2003, HDB HEAVY TAILED DIS
+   Reinhart C., 2002, 13229 MPRA
+   Reinhart C., 2009, THIS TIMES DIFFERENT
+   Rigobon R, 2002, NBER CONF R, P269
+   Rigobon R., 1999, 7354 NBER
+   Roy AD, 1952, ECONOMETRICA, V20, pA431
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   Sklar A, 1959, PUBL I STAT U PARIS, V8, P229, DOI DOI 10.12691/IJEFM-3-2-3
+   Solnik B., 1996, FINANCIAL ANAL J, V52, P17, DOI DOI 10.2469/FAJ.V52.N5.2021
+   TAYLOR A, 2003, 9580 NBER
+   Teiletche J., 2000, WORKING PAPER
+   Vogiatzoglou M., 2010, WORKING PAPER
+   World Federation of Exchange, 2011, MONTHL REP
+   Xu J.J, 1996, STAT MODELLING INFER
+NR 75
+TC 2
+Z9 2
+U1 0
+U2 4
+PU FONDO CULTURA ECONOMICA
+PI TLALPAN
+PA AVE PICACHO AJUSCO, NO 227, TLALPAN CP 14200, MEXICO
+SN 0041-3011
+J9 TRIMEST ECON
+JI Trimest. Econ.
+PD JAN-MAR
+PY 2013
+VL 80
+IS 317
+BP 169
+EP 206
+PG 38
+WC Economics
+SC Business & Economics
+GA AJ5HW
+UT WOS:000337714300006
+OA DOAJ Gold
+DA 2019-12-27
+ER
+PT J
+AU Vyrost, T
+   Baumohl, E
+   Lyocsa, S
+AF Vyrost, Tomas
+   Baumoehl, Eduard
+   Lyocsa, Stefan
+TI What Drives the Stock Market Integration in the CEE-3?
+SO EKONOMICKY CASOPIS
+LA English
+DT Article
+DE stock market integration; CEE-3; time-varying correlations; DCC MV-GARCH
+   model; macroeconomic factors
+ID UNIT-ROOT TESTS; CONDITIONAL HETEROSKEDASTICITY; EUROPEAN-COUNTRIES;
+   RETURNS; INTERDEPENDENCE; TRANSMISSION; PORTFOLIOS; MOVEMENTS; PRICES;
+   GAINS
+AB In this article, we study the possible explanatory power of macroeconomic factors that may drive the stock market integration between the Czech Republic, Poland and Hungary (CEE-3) and developed countries, using Germany as a benchmark Our findings suggest that the recent global financial crisis has affected time-varying correlations between certain stock markets more substantially than the entry of the CEE-3 into the EU. The results of our analysis of the effects of these macroeconomic factors were inconclusive. Only our proxy of exchange rate risk was significant in all cases, with positive effects on integration, thus supporting the presence of contagion among different markets.
+C1 [Vyrost, Tomas] Univ Econ Bratislava, Fac Business Econ Kosice, Dept Finance & Accounting, Kosice 04130, Slovakia.
+   [Baumoehl, Eduard] Univ Econ Bratislava, Fac Business Econ Kosice, Dept Econ, Kosice 04130, Slovakia.
+   [Lyocsa, Stefan] Univ Econ Bratislava, Fac Business Econ Kosice, Dept Business Informat & Math, Kosice 04130, Slovakia.
+RP Vyrost, T (reprint author), Univ Econ Bratislava, Fac Business Econ Kosice, Dept Finance & Accounting, Tajovskeho 13, Kosice 04130, Slovakia.
+EM tomas.vyrost@euke.sk; eduard.baumohl@euke.sk; stefan.lyocsa@gmail.com
+RI Baumohl, Eduard/K-3195-2014
+OI Baumohl, Eduard/0000-0002-5444-7348; Vyrost, Tomas/0000-0002-8384-5724
+CR ARSHANAPALLI B, 1993, J BANK FINANC, V17, P193, DOI 10.1016/0378-4266(93)90088-U
+   Asgharian H, 2011, J INT MONEY FINANC, V30, P22, DOI 10.1016/j.jimonfin.2010.06.006
+   ASLANIDIS N., 2008, CGBCR DISCUSSION PAP
+   ASPREM M, 1989, J BANK FINANC, V13, P589, DOI 10.1016/0378-4266(89)90032-0
+   BABECKY J., 2010, 92010 CZECH NAT PARK
+   Baumohl E, 2011, APPL ECON LETT, V18, P1103, DOI 10.1080/13504851.2010.524610
+   Bekaert G., 2002, EMERG MARK REV, V3, P429, DOI DOI 10.1016/S1566-0141(02)00045-6
+   Breitung J, 2005, STAT NEERL, V59, P414, DOI 10.1111/j.1467-9574.2005.00299.x
+   Buttner D, 2011, ECON SYST, V35, P574, DOI 10.1016/j.ecosys.2010.10.004
+   Chor D, 2012, J INT ECON, V87, P117, DOI 10.1016/j.jinteco.2011.04.001
+   Cook S, 2004, ECON LETT, V84, P267, DOI 10.1016/j.econlet.2004.02.010
+   Egert B, 2011, EMPIR ECON, V40, P393, DOI 10.1007/s00181-010-0341-3
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R.F., 2001, 8554 NBER
+   EUN CS, 1989, J FINANC QUANT ANAL, V24, P241, DOI 10.2307/2330774
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   GARMAN MB, 1980, J BUS, V53, P67, DOI 10.1086/296072
+   Gjerde O., 1995, EUROPEAN J FINANCE, V1, P165
+   GJIKA D., 2012, WORKING PAPERS SERIE, V1035
+   GRINOLD R, 1989, J PORTFOLIO MANAGE, V16, P79, DOI 10.3905/jpm.1989.409232
+   GRUBEL HG, 1968, AM ECON REV, V58, P1299
+   Hadri K, 2000, ECON J, V3, P148, DOI DOI 10.1111/1368-423X.00043
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   Hanousek J, 2011, REV INT ECON, V19, P170, DOI 10.1111/j.1467-9396.2010.00939.x
+   Hanousek J, 2009, J FINANC STABIL, V5, P199, DOI 10.1016/j.jfs.2008.01.003
+   Hardouvelis GA, 2006, J BUS, V79, P365, DOI 10.1086/497414
+   Harris RDF, 1999, J ECONOMETRICS, V91, P201, DOI 10.1016/S0304-4076(98)00076-1
+   HORVATH R., 2012, WORKING PAPERS SERIE, V1028
+   JAFFE J, 1985, J FINANC, V40, P433, DOI 10.2307/2327894
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   LESSARD DR, 1974, J FINANC, V29, P379, DOI 10.2307/2978807
+   LYOCSA S., 2011, 29648 MPRA MUN U LIB, V29648
+   McCallum BT, 2010, ECON LETT, V107, P321, DOI 10.1016/j.econlet.2010.02.004
+   MERIC I, 1989, J BANK FINANC, V13, P627, DOI 10.1016/0378-4266(89)90034-4
+   Molnar P, 2012, INT REV FINANC ANAL, V23, P20, DOI 10.1016/j.irfa.2011.06.012
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Rigobon R., 2002, INT FINANCIAL CONTAG
+   RIPLEY DM, 1973, REV ECON STAT, V55, P356, DOI 10.2307/1927959
+   SCHOLLHAMMER H, 1985, MANAGE INT REV, V25, P17
+   SCHWERT GW, 1989, J BUS ECON STAT, V7, P147, DOI 10.2307/1391432
+   Wang P, 2008, MANCH SCH, V76, P116, DOI 10.1111/j.1467-9957.2008.01083.x
+NR 42
+TC 3
+Z9 3
+U1 0
+U2 18
+PU SLOVAK ACADEMIC PRESS LTD
+PI BRATISLAVA
+PA PO BOX 57 NAM SLOBODY 6, 810 05 BRATISLAVA, SLOVAKIA
+SN 0013-3035
+J9 EKON CAS
+JI Ekon. Cas.
+PY 2013
+VL 61
+IS 1
+BP 67
+EP 81
+PG 15
+WC Economics
+SC Business & Economics
+GA 101FB
+UT WOS:000315759500004
+DA 2019-12-27
+ER
+
+PT J
+AU Bargigli, L
+   Gallegati, M
+AF Bargigli, Leonardo
+   Gallegati, Mauro
+TI Finding Communities in Credit Networks
+SO ECONOMICS-THE OPEN ACCESS OPEN-ASSESSMENT E-JOURNAL
+LA English
+DT Article
+DE Credit networks; communities; contagion, systemic risk
+ID TOPOLOGY; MODELS
+AB In this paper the authors focus on credit connections as a potential source of systemic risk. In particular, they seek to answer the following question: how do we find densely connected subsets of nodes within a credit network? The question is relevant for policy, since these subsets are likely to channel any shock affecting the network. As it turns out, a reliable answer can be obtained with the aid of complex network theory. In particular, the authors show how it is possible to take advantage of the ''community detection'' network literature. The proposed answer entails two subsequent steps. Firstly, the authors verify the hypothesis that the network under study truly has communities. Secondly, they devise a reliable algorithm to find those communities. In order to be sure that a given algorithm works, they test it over a sample of random benchmark networks with known communities. To overcome the limitation of existing benchmarks, the authors introduce a new model and test alternative algorithms, obtaining very good results with an adapted spectral decomposition method. To illustrate this method they provide a community description of the Japanese bank-firm credit network, getting evidence of a strengthening of communities over time and finding support for the well-known Japanese main ''bank'' system. Thus, the authors find comfort both from simulations and from real data on the possibility to apply community detection methods to credit markets. They believe that this method can fruitfully complement the study of contagious defaults. Since network risk depends crucially on community structure, their results suggest that policy maker should identify systemically important communities, i.e. those able extend the initial shock to the entire system.
+   Published in Special Issue Coping with Systemic Risk
+C1 [Bargigli, Leonardo] Scuola Normale Super Pisa, Pisa, Italy.
+   [Gallegati, Mauro] Univ Politecn Marche, Dipartimento Sci & Econ Sociali, Ancona, Italy.
+RP Bargigli, L (reprint author), Scuola Normale Super Pisa, Pisa, Italy.
+EM leonardo.bargigli@gmail.com
+RI GALLEGATI, MAURO/A-4091-2016; bargigli, leonardo/M-1810-2015
+OI bargigli, leonardo/0000-0002-7524-9148
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Amini H., 2010, SSRN ELIBRARY
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   AOKI M, 2006, RECONSTRUCTING MACRO
+   Barber MJ, 2007, PHYS REV E, V76, DOI 10.1103/PhysRevE.76.066102
+   Bargigli L, 2011, J ECON BEHAV ORGAN, V78, P396, DOI 10.1016/j.jebo.2011.01.022
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bianconi G, 2008, EPL-EUROPHYS LETT, V81, DOI 10.1209/0295-5075/81/28005
+   Bianconi G, 2009, PHYS REV E, V79, DOI 10.1103/PhysRevE.79.036114
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Chauhan S, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.056114
+   Cont R., 2012, HDB SYSTEMIC RISK
+   Craig B., 2010, BIS WORKING PAPERS, V322
+   De Masi G, 2011, EVOL INST ECON REV, V7, P209
+   Donetti L, 2005, AIP CONF PROC, V779, P104
+   Elsinger H., 2006, INT EC EC POLICY, V3, P73
+   European Central Bank (ECB), 2010, REC ADV MOD SYST RIS
+   Fortunato S, 2007, P NATL ACAD SCI USA, V104, P36, DOI 10.1073/pnas.0605965104
+   Fortunato S, 2010, PHYS REP, V486, P75, DOI 10.1016/j.physrep.2009.11.002
+   Fujiwara Y., 2009, EC OPEN ACCESS OPEN, V3
+   Fujiwara Y., 2008, EUROPEAN PHYS J B, V77, P565
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   Kavonius I.K., 2009, WORKING PAPER SERIES, V1124
+   Lancichinetti A, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.056117
+   Lancichinetti A, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.016118
+   Lancichinetti A, 2009, NEW J PHYS, V11, DOI 10.1088/1367-2630/11/3/033015
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Mitrovic M, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.026123
+   MOLLOY M, 1995, RANDOM STRUCT ALGOR, V6, P161, DOI 10.1002/rsa.3240060204
+   Newman MEJ, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.026113
+   Newman MEJ, 2001, PHYS REV E, V64, DOI 10.1103/PhysRevE.64.026118
+   Ng A. Y., 2001, ADV NEURAL INFORM PR
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Park J, 2004, PHYS REV E, V70, DOI 10.1103/PhysRevE.70.066117
+   Radicchi F., 2011, PLOS ONE, V6, P04
+   Reichardt J, 2007, EUR PHYS J B, V60, P217, DOI 10.1140/epjb/e2007-00340-y
+   Rosvall M, 2008, P NATL ACAD SCI USA, V105, P1118, DOI 10.1073/pnas.0706851105
+   Sawardecker EN, 2009, EUR PHYS J B, V72, P671, DOI 10.1140/epjb/e2009-00397-6
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Squartini T, 2011, NEW J PHYS, V13, DOI 10.1088/1367-2630/13/8/083001
+   Tumminello M., 2011, PLOS ONE, V6
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   van Lelyveld I., 2006, INT J CENTRAL BANKIN, V2
+   Vega-Redondo Fernando, 2007, COMPLEX SOCIAL NETWO
+NR 47
+TC 2
+Z9 2
+U1 0
+U2 15
+PU KIEL INST WORLD ECONOMY
+PI KIEL
+PA HINDENBURGUFER 66, KIEL, D-24105, GERMANY
+SN 1864-6042
+J9 ECONOMICS-KIEL
+JI Economics
+PD APR 18
+PY 2013
+VL 7
+AR 201317
+DI 10.5018/economics-ejournal.ja.2013-17
+PG 40
+WC Economics
+SC Business & Economics
+GA 185JO
+UT WOS:000321964000001
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Floreani, A
+AF Floreani, Alberto
+TI Risk Measures and Capital Requirements: A Critique of the Solvency II
+   Approach
+SO GENEVA PAPERS ON RISK AND INSURANCE-ISSUES AND PRACTICE
+LA English
+DT Article
+DE Solvency II; Value-at-Risk; prudential regulation; capital requirements;
+   risk measures
+ID INSURANCE; MANAGEMENT; CRISIS; MARKET; DIVERSIFICATION; CONTAGION;
+   IMPACT
+AB In this paper the Solvency II VaR-based capital requirement is analysed and discussed. The new European risk-based system of prudential regulation for insurers could in fact increase, and not decrease, the fragility of the insurance industry. More specifically, the VaR capital requirement exposes insurance companies to a potentially huge systemic effect, as the bigger/better diversified insurers have high default probabilities in case of market shortfalls. This paper shall suggest and discuss some adjustments to the current Solvency II framework. The Geneva Papers (2013) 38, 189-212. doi:10.1057/gpp.2012.47
+C1 Univ Cattolica Sacro Cuore, Fac Banking Finance & Insurance Sci, Dept Econ & Business Adm, I-20123 Milan, Italy.
+RP Floreani, A (reprint author), Univ Cattolica Sacro Cuore, Fac Banking Finance & Insurance Sci, Dept Econ & Business Adm, Largo Gemelli 1, I-20123 Milan, Italy.
+EM alberto.floreani@unicatt.it
+CR Alexander GJ, 2006, J MONETARY ECON, V53, P1631, DOI 10.1016/j.jmoneco.2005.05.013
+   Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Allen F., 2005, RISKS FINANCIAL I
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Ashby S, 2011, GENEVA PAP R I-ISS P, V36, P330, DOI 10.1057/gpp.2011.10
+   Baluch F, 2011, GENEVA PAP R I-ISS P, V36, P126, DOI 10.1057/gpp.2010.40
+   Basak S, 2001, REV FINANC STUD, V14, P371, DOI 10.1093/rfs/14.2.371
+   Bernard C, 2010, GENEVA RISK INS REV, V35, P47, DOI 10.1057/grir.2009.2
+   BRENNAN MJ, 1979, J FINANC, V34, P53, DOI 10.2307/2327143
+   BUTSIC RP, 1994, J RISK INSUR, V61, P656, DOI 10.2307/253643
+   Ceiops, 2010, CEIOPSDOC6510
+   CHEN NF, 1986, J BUS, V59, P383, DOI 10.1086/296344
+   Csiszar E., 2002, SYSTEMIC RISKS INSUR
+   Cummins D.J., 1988, J FINANC, V43, P823
+   Cuoco D, 2006, J FINANC INTERMED, V15, P362, DOI 10.1016/j.jfi.2005.07.001
+   Dhaene J, 2008, J RISK INSUR, V75, P365, DOI 10.1111/j.1539-6975.2008.00264.x
+   Doff R, 2008, GENEVA PAP R I-ISS P, V33, P193, DOI 10.1057/gpp.2008.2
+   Dowd K, 2006, J RISK INSUR, V73, P193, DOI 10.1111/j.1539-6975.2006.00171.x
+   EIOPA, 2011, EIOPA REP 5 QUANT IM
+   Eling M., 2007, RISK MANAGEMENT INSU, V10, P69, DOI DOI 10.1111/J.1540-6296.2007.00106.X
+   Eling M, 2010, GENEVA PAP R I-ISS P, V35, P9, DOI 10.1057/gpp.2009.39
+   European Commission, QIS5 TECHN SPEC
+   Floreani A, 2011, GENEVA PAP R I-ISS P, V36, P226, DOI 10.1057/gpp.2011.2
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Leippold M, 2006, J ECON DYN CONTROL, V30, P1277, DOI 10.1016/j.jedc.2005.04.008
+   Rees R, 1999, GENEVA PAP RISK INS, V24, P55, DOI 10.1023/A:1008733315931
+   STAPLETON RC, 1983, J FINANC, V38, P1637, DOI 10.2307/2327592
+   The Geneva Association, 2010, SYST RISK INS AN INS
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 30
+TC 2
+Z9 2
+U1 0
+U2 27
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1018-5895
+J9 GENEVA PAP R I-ISS P
+JI Geneva Pap. Risk Insur.-Issues Pract.
+PD APR
+PY 2013
+VL 38
+IS 2
+SI SI
+BP 189
+EP 212
+DI 10.1057/gpp.2012.47
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA 123JX
+UT WOS:000317386300002
+OA Bronze
+DA 2019-12-28
+ER

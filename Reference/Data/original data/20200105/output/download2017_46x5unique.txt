@@ -1,0 +1,549 @@
+
+PT J
+AU Yu, S
+AF Yu, Sherry
+TI Sovereign and bank Interdependencies-Evidence from the CDS market
+SO RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE
+LA English
+DT Article
+DE Credit default swaps; Eurozone; Interdependency; Sovereign risk; Debt
+   crisis
+ID DEBT; DEFAULT; RISK; COINTEGRATION; SPILLOVERS; CONTAGION; SPREADS
+AB This paper investigates the bidirectional relationship between banking and sovereign debt crises. An extended model of Bolton and Jeanne (2011) with financial intermediaries and a government sector shows that sovereign default may induce a banking crisis as banks hold a large amount of government bonds. Nevertheless, a significant amount of outright bailouts or explicit bank guarantees may constrain the short-term liquidity of the government sector and trigger a sovereign debt crisis. Empirical analyses using the credit default swap (CDS) spreads of 11 European countries and 26 commercial banks from 2006 to 2012 support the theoretical findings. First, there was minimal comovement between bank and sovereign CDS spreads at the country level before the financial crisis. The correlation has increased significantly after the outbreak of the subprime crisis but notably dropped until the Greek debt crisis. Secondly, the same set of global risk factors could explain variations in both bank and sovereign CDS spreads after 2007 with higher sensitivity to the financial sector. Lastly, the study of price dynamics reveals that bank CDS spreads assumed the leading role prior to the Lehman Brothers bankruptcy but was gradually replaced by sovereign CDS spreads during the course of the Eurozone debt crisis. This suggests that investors have interpreted the sovereign credit risk as the main source of bank risk and traded sovereign CDS contracts to hedge financial risk. Bank guarantees and bailout programs prompted deteriorating fiscal conditions that ultimately led to a reverse spillover effect from the sovereign to the financial sector. (C) 2016 Elsevier B. V. All rights reserved.
+C1 [Yu, Sherry] New Coll Florida, Div Social Sci, 5800 Bay Shore Rd, Sarasota, FL 34243 USA.
+RP Yu, S (reprint author), New Coll Florida, Div Social Sci, 5800 Bay Shore Rd, Sarasota, FL 34243 USA.
+EM syu@ncf.edu
+OI Yu, Sherry/0000-0002-5067-4455
+CR Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Acharya VV, 2015, J FINANC ECON, V115, P215, DOI 10.1016/j.jfineco.2014.11.004
+   Aizenman J, 2013, OXFORD REV ECON POL, V29, P582, DOI 10.1093/oxrep/grt036
+   Aizenman J, 2013, J INT MONEY FINANC, V34, P37, DOI 10.1016/j.jimonfin.2012.11.011
+   Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Arnold IJM, 2012, J POLICY MODEL, V34, P906, DOI 10.1016/j.jpolmod.2012.05.016
+   Arslanalp S, 2014, J EMPIR FINANC, V29, P316, DOI 10.1016/j.jempfin.2014.08.007
+   Bai Jennie, 2012, 18600 NBER
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bissoondoyal-Bheenick E, 2012, RES INT BUS FINANC, V26, P79, DOI 10.1016/j.ribaf.2011.07.001
+   Bolton P, 2011, IMF ECON REV, V59, P162, DOI 10.1057/imfer.2011.5
+   Calice G, 2013, J ECON BEHAV ORGAN, V85, P122, DOI 10.1016/j.jebo.2011.10.013
+   Cantero-Saiz M, 2014, J INT MONEY FINANC, V47, P1, DOI 10.1016/j.jimonfin.2014.04.008
+   Che YK, 2014, AM ECON J-MICROECON, V6, P1, DOI 10.1257/mic.6.4.1
+   Cloke J., 2013, U HELSINKI WORKING P
+   Cloke J., 2010, CRISIS RETHINKING FI, P1
+   Codogno L, 2003, ECON POLICY, P503
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   Eichengreen B, 2012, J INT MONEY FINANC, V31, P1299, DOI 10.1016/j.jimonfin.2012.02.002
+   ENGLE RF, 1987, ECONOMETRICA, V55, P251, DOI 10.2307/1913236
+   Epstein G., 2011, SPECULATION SOVEREIG
+   Erce A., 2014, 1414 BANC ESP
+   Fontana A, 2016, J BANK FINANC, V62, P126, DOI 10.1016/j.jbankfin.2015.10.010
+   Fratzscher M., 2015, CEPR DISCUSSION PAPE
+   Gennaioli N, 2014, J FINANC, V69, P819, DOI 10.1111/jofi.12124
+   Gerlach S., 2010, DTSCH BUNDESBANK DIS, V1
+   GONZALO J, 1995, J BUS ECON STAT, V13, P27
+   Gross M, 2013, 1570 ECB
+   Ho SH, 2016, RES INT BUS FINANC, V36, P579, DOI 10.1016/j.ribaf.2015.07.001
+   JOHANSEN S, 1991, ECONOMETRICA, V59, P1551, DOI 10.2307/2938278
+   Kalbaska A., 2012, J ECON BEHAV ORGAN, V83, P657
+   Kallestrup R., 2016, J EMPIR FIN IN PRESS
+   Konig P., 2013, 201331 BANK CAN
+   Larmann W, 2012, TU MUNCHEN WORKING P
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Manasse P., 2013, RCEA WORKING PAPER S
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Mody A, 2012, ECON POLICY, P199, DOI 10.1111/j.1468-0327.2012.00281.x
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Reinhart CM, 2011, AM ECON REV, V101, P1676, DOI 10.1257/aer.101.5.1676
+   Tamakoshi G, 2016, RES INT BUS FINANC, V36, P288, DOI 10.1016/j.ribaf.2015.09.027
+   Van der Kwaak C, 2014, TINBERGEN I DISCUSSI
+   von Hagen J, 2011, EUR J POLIT ECON, V27, P36, DOI 10.1016/j.ejpoleco.2010.07.002
+NR 43
+TC 9
+Z9 9
+U1 0
+U2 5
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0275-5319
+EI 1878-3384
+J9 RES INT BUS FINANC
+JI Res. Int. Bus. Financ.
+PD JAN
+PY 2017
+VL 39
+BP 68
+EP 84
+DI 10.1016/j.ribaf.2016.07.033
+PN A
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA EO1MD
+UT WOS:000396461700007
+DA 2019-12-27
+ER
+
+PT J
+AU Chen, TQ
+   He, JM
+   Li, XD
+AF Chen, Tingqiang
+   He, Jianmin
+   Li, Xindan
+TI AN EVOLVING NETWORK MODEL OF CREDIT RISK CONTAGION IN THE FINANCIAL
+   MARKET
+SO TECHNOLOGICAL AND ECONOMIC DEVELOPMENT OF ECONOMY
+LA English
+DT Article
+DE credit risk contagion; preferential node deletion; behavioral factors;
+   evolving network model
+ID INVESTOR SENTIMENT; LIQUIDITY
+AB This paper introduces an evolving network model of credit risk contagion containing the average fitness of credit risk contagion, the risk aversion sentiments, and the ability of resist risk of credit risk holders. We discuss the effects of the aforementioned factors on credit risk contagion in the financial market through a series of theoretical analysis and numerical simulations. We find that, on one hand, the infected path distribution of the network gradually increases with the increase in the average fitness of credit risk contagion and the risk aversion sentiments of nodes, but gradually decreases with the increase in the ability to resist risk of nodes. On the other hand, the average fitness of credit risk contagion and the risk aversion sentiments of nodes increase the average clustering coefficient of nodes, whereas the ability to resist risk of nodes decreases this coefficient. Moreover, network size also decreases the average clustering coefficient.
+C1 [Chen, Tingqiang] Nanjing Tech Univ, Sch Econ & Management, Nanjing 211816, Jiangsu, Peoples R China.
+   [He, Jianmin] Southeast Univ, Sch Econ & Management, Nanjing 211189, Jiangsu, Peoples R China.
+   [Li, Xindan] Nanjing Univ, Sch Management & Engn, Nanjing 210093, Jiangsu, Peoples R China.
+RP Chen, TQ (reprint author), Nanjing Tech Univ, Sch Econ & Management, Nanjing 211816, Jiangsu, Peoples R China.
+EM tingqiang88888888@163.com
+RI Chen, Tingqiang/N-4473-2019
+OI Chen, Tingqiang/0000-0002-3013-243X
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71501094]; Natural Science Foundation of Jiangsu
+   Province of ChinaNatural Science Foundation of Jiangsu Province
+   [BK20150961]; China Postdoctoral Science FoundationChina Postdoctoral
+   Science Foundation [2014M561626]; Natural Sciences Research Funded
+   Projects in Colleges and Universities of Jiangsu [15KJB120003];
+   Philosophy and Social Sciences Research Funded Projects in Colleges and
+   Universities of Jiangsu [2014SJB081]
+FX We wish to express our gratitude to the referees for their invaluable
+   comments. This work was supported by the National Natural Science
+   Foundation of China (No. 71501094), the Natural Science Foundation of
+   Jiangsu Province of China (No. BK20150961), China Postdoctoral Science
+   Foundation (2014M561626), the Natural Sciences Research Funded Projects
+   in Colleges and Universities of Jiangsu (No. 15KJB120003), the
+   Philosophy and Social Sciences Research Funded Projects in Colleges and
+   Universities of Jiangsu (No. 2014SJB081).
+CR Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Babus A., 2006, 20060932 TINB I
+   Baker M, 2004, J FINANC MARK, V7, P271, DOI 10.1016/j.finmar.2003.11.005
+   Baker M, 2007, J ECON PERSPECT, V21, P129, DOI 10.1257/jep.21.2.129
+   Baker M, 2006, J FINANC, V61, P1645, DOI 10.1111/j.1540-6261.2006.00885.x
+   Baker M, 2012, J FINANC ECON, V104, P272, DOI 10.1016/j.jfineco.2011.11.002
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Barberis N, 1998, J FINANC ECON, V49, P307, DOI 10.1016/S0304-405X(98)00027-0
+   Barro D, 2010, EUR J OPER RES, V205, P459, DOI 10.1016/j.ejor.2010.01.017
+   Baur D. G., 2006, 21521EN1 EUR, P1
+   Bo LJ, 2015, J BANK FINANC, V52, P29, DOI 10.1016/j.jbankfin.2014.11.010
+   Bollobas B, 2004, COMBINATORICA, V24, P5, DOI 10.1007/s00493-004-0002-2
+   Bollobas B., 2003, INTERNET MATH, V1, P1
+   Canedo JMD, 2009, INTELL SYST ACCOUNT, V16, P87, DOI 10.1002/isaf.295
+   Chen TQ, 2012, DISCRETE DYN NAT SOC, DOI 10.1155/2012/513982
+   Chen TQ, 2015, DISCRETE DYN NAT SOC, DOI 10.1155/2015/397852
+   Chen TQ, 2014, ABSTR APPL ANAL, DOI 10.1155/2014/456764
+   Chen TQ, 2013, INT J BIFURCAT CHAOS, V23, DOI 10.1142/S0218127413501174
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Cooper C., 2004, INTERNET MATH, V1, P463, DOI DOI 10.1080/15427951.2004.10129095
+   Daniel KD, 2001, J FINANC, V56, P921, DOI 10.1111/0022-1082.00350
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   DELONG JB, 1990, J POLIT ECON, V98, P703, DOI 10.1086/261703
+   Deng K, 2007, PHYSICA A, V379, P714, DOI 10.1016/j.physa.2007.02.039
+   Deo N, 2007, INFORM PROCESS LETT, V102, P156, DOI 10.1016/j.ipl.2006.12.009
+   Dorogovtsev S. N., 2001, PHYS REV E, V63, P732
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg C.P., 2010, JENA EC RES PAPERS
+   Glushkov D., 2005, UNPUB
+   Gu YY, 2008, PHYS LETT A, V372, P4564, DOI 10.1016/j.physleta.2008.04.041
+   Hertel G, 2000, COGNITION EMOTION, V14, P441, DOI 10.1080/026999300402754
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Kahn C. M., 2005, ENDOGENOUS FINANCIAL
+   Li SW, 2011, ADV COMPLEX SYST, V14, P673, DOI 10.1142/S0219525911003438
+   Lin CH, 2006, J ECON PSYCHOL, V27, P781, DOI 10.1016/j.joep.2006.03.004
+   Loewenstein GF, 2001, PSYCHOL BULL, V127, P267, DOI 10.1037//0033-2909.127.2.267
+   Marsh I., 2006, J FINANCIAL STABILIT, V2, P173, DOI DOI 10.1016/J.JFS.2005.11.001
+   Moore C, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.036121
+   Neyer U., 2010, INT REV FINANC, V10, P27
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Raghunathan R, 2004, MOTIV EMOTION, V28, P23, DOI 10.1023/B:MOEM.0000027276.32709.30
+   Santos T, 2006, J MONETARY ECON, V53, P113, DOI 10.1016/j.jmoneco.2005.10.010
+   Sarshar N, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.026101
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Teteryatnikova M., 2009, WORKING PAPER
+   Vivier-Lirimont S., 2009, INTERBANKING NETWORK
+   Yuen KSL, 2003, J AFFECT DISORDERS, V75, P11, DOI 10.1016/S0165-0327(02)00022-8
+   Zouaoui M, 2011, FINANC REV, V46, P723, DOI 10.1111/j.1540-6288.2011.00318.x
+NR 51
+TC 8
+Z9 8
+U1 0
+U2 13
+PU VILNIUS GEDIMINAS TECH UNIV
+PI VILNIUS
+PA SAULETEKIO AL 11, VILNIUS, LT-10223, LITHUANIA
+SN 2029-4913
+EI 2029-4921
+J9 TECHNOL ECON DEV ECO
+JI Technol. Econ. Dev. Econ.
+PY 2017
+VL 23
+IS 1
+BP 22
+EP 37
+DI 10.3846/20294913.2015.1095808
+PG 16
+WC Economics
+SC Business & Economics
+GA EL4MF
+UT WOS:000394594600002
+OA Other Gold, Bronze
+DA 2019-12-27
+ER
+
+PT J
+AU Mavletova, A
+   Witte, J
+AF Mavletova, Aigul
+   Witte, James
+TI Is the willingness to take risks contagious? A comparison of immigrants
+   and native-born in the United States
+SO JOURNAL OF RISK RESEARCH
+LA English
+DT Article
+DE willingness to take risks; immigrants; native-born; vignettes
+ID DECISION-MAKING; MECHANICAL TURK; SEX-DIFFERENCES; LOSS AVERSION; POWER;
+   GENDER; HEALTH; ENTREPRENEURS; AFFILIATION; INCENTIVES
+AB A number of studies have shown that immigrants are more willing to take risks than native-born populations. In this paper, we measure if the willingness to take risks is contagious and if this effect is different for immigrants and native-born individuals in the United States. We suggest that the willingness to take risks may be contagious, like emotions and generosity, i.e. an individual may be more willing to take risks if others make risky decisions. We measure if contagion has a stronger effect on willingness to take risks among immigrants than native populations using a variety of vignettes, specifically in the domains of career, financial investment, and health. Respondents were randomly assigned either to a control or experimental condition. In the experimental condition, we attempted to induce risk-taking by suggesting that other individuals made risky decisions in the lottery-choice tasks (a risk shift condition'). Contrary to expectations, the risk shift condition had a positive effect on willingness to take risks among native-born, while a negative effect or no effect was found among immigrants (conservative shift). Native-born found the situations more beneficial in the risk shift condition than in the control condition, while immigrants found them less beneficial in the risk shift condition. The conservative shift was found among immigrants, as well as males and self-employed. Risk shift condition reduced the sense of power among power-motivated individuals (males and immigrants), which produced a less optimistic evaluation of risky situations. While taking into consideration that others make risky decisions, immigrants and males perceived situations as less beneficial for them. The results of the experiment have some implications for our understanding of the link between a sense of power and the willingness to take risks.
+C1 [Mavletova, Aigul] Natl Res Univ Higher Sch Econ, Dept Sociol, Moscow, Russia.
+   [Witte, James] George Mason Univ, Inst Immigrat Res, Fairfax, VA 22030 USA.
+RP Mavletova, A (reprint author), Natl Res Univ Higher Sch Econ, Dept Sociol, Moscow, Russia.
+EM amavletova@hse.ru
+OI Mavletova, Aigul/0000-0001-7407-2072
+CR Anderson C, 2006, EUR J SOC PSYCHOL, V36, P511, DOI 10.1002/ejsp.324
+   Balaz V, 2011, J RISK RES, V14, P583, DOI 10.1080/13669877.2010.547256
+   Barsky RB, 1997, Q J ECON, V112, P537, DOI 10.1162/003355397555280
+   BATESON N, 1966, J EXP SOC PSYCHOL, V2, P119, DOI 10.1016/0022-1031(66)90073-4
+   Behrend TS, 2011, BEHAV RES METHODS, V43, P800, DOI 10.3758/s13428-011-0081-0
+   BELLANTE D, 1981, IND LABOR RELAT REV, V34, P408, DOI 10.2307/2522787
+   BERGER MC, 1991, APPL ECON, V23, P311, DOI 10.1080/00036849100000138
+   Berinsky AJ, 2012, POLIT ANAL, V20, P351, DOI 10.1093/pan/mpr057
+   Boneva B, 1998, EUR PSYCHOL, V3, P247, DOI 10.1027/1016-9040.3.4.247
+   Boneva BS, 2001, J SOC ISSUES, V57, P477, DOI 10.1111/0022-4537.00224
+   Bonin H, 2006, 1999 IZA
+   Bonin H., 2004, LABOUR ECON, V14, P926
+   Bono JE, 2006, LEADERSHIP QUART, V17, P317, DOI 10.1016/j.leaqua.2006.04.008
+   Bordalo P, 2012, Q J ECON, V127, P1243, DOI 10.1093/qje/qjs018
+   BORJAS GJ, 1987, AM ECON REV, V77, P531
+   Buhrmester M, 2011, PERSPECT PSYCHOL SCI, V6, P3, DOI 10.1177/1745691610393980
+   Byrnes JP, 1999, PSYCHOL BULL, V125, P367, DOI 10.1037/0033-2909.125.3.367
+   Cohen GL, 2006, CHILD DEV, V77, P967, DOI 10.1111/j.1467-8624.2006.00913.x
+   COOPER HM, 1979, J PERS SOC PSYCHOL, V37, P131
+   Coppola M, 2014, J SOCIO-ECON, V48, P1, DOI 10.1016/j.socec.2013.08.010
+   Denrell J, 2007, PSYCHOL REV, V114, P177, DOI 10.1037/0033-295X.114.1.177
+   Dohmen J. T., 2005, 1730 IZA
+   EAGLY AH, 1986, PSYCHOL WOMEN QUART, V10, P203, DOI 10.1111/j.1471-6402.1986.tb00747.x
+   Erev I, 2005, PSYCHOL REV, V112, P912, DOI 10.1037/0033-295X.112.4.912
+   FLYNN J, 1994, RISK ANAL, V14, P1101, DOI 10.1111/j.1539-6924.1994.tb00082.x
+   Gardner M, 2005, DEV PSYCHOL, V41, P625, DOI 10.1037/0012-1649.41.4.625
+   Gump BB, 1997, J PERS SOC PSYCHOL, V72, P305, DOI 10.1037/0022-3514.72.2.305
+   Halek M, 2001, J RISK INSUR, V68, P1, DOI 10.2307/2678130
+   Hanoch Y, 2006, PSYCHOL SCI, V17, P300, DOI 10.1111/j.1467-9280.2006.01702.x
+   Hatfield E, 1993, CURRENT DIRECTIONS P, V2, P96, DOI [DOI 10.1111/1467-8721.EP10770953, 10.1111/1467-8721.ep10770953]
+   Heitmueller A, 2005, J POPUL ECON, V18, P93, DOI 10.1007/s00148-004-0192-3
+   Hersch J., 1996, MANAGERIAL DECISION, V17, P471, DOI [DOI 10.1002/(SICI)1099-1468(199609)17:5<471::AID-MDE789>3.0.CO;2-W, DOI 10.1002/(ISSN)1099-1468]
+   Hersch PL, 1997, SOUTHERN ECON J, V64, P75, DOI 10.2307/1061038
+   Hill SE, 2010, EVOL HUM BEHAV, V31, P219, DOI 10.1016/j.evolhumbehav.2010.01.002
+   Holt CA, 2002, AM ECON REV, V92, P1644, DOI 10.1257/000282802762024700
+   Huff C, 2014, WHO ARE THESE PEOPLE
+   Jaeger D. A., 2007, 265 IZA
+   Jianakoplos NA, 1998, ECON INQ, V36, P620, DOI 10.1111/j.1465-7295.1998.tb01740.x
+   KACHELMEIER SJ, 1992, AM ECON REV, V82, P1120
+   KAHNEMAN D, 1979, ECONOMETRICA, V47, P263, DOI 10.2307/1914185
+   Keltner D, 2003, PSYCHOL REV, V110, P265, DOI 10.1037/0033-295X.110.2.265
+   KOGAN N, 1967, J EXP SOC PSYCHOL, V3, P75, DOI 10.1016/0022-1031(67)90038-8
+   Kramer A. D. I., 2014, PNAS, V111, P87
+   Mabogunje A. L., 1975, AFRICAN URBAN NOTES, V1, P49
+   Maner JK, 2007, PERS SOC PSYCHOL B, V33, P451, DOI 10.1177/0146167206297405
+   Mason W, 2012, BEHAV RES METHODS, V44, P1, DOI 10.3758/s13428-011-0124-6
+   Meissner Doris, 2006, IMMIGRATION AM FUTUR
+   MYERS DG, 1974, SOCIOMETRY, V37, P275, DOI 10.2307/2786381
+   MYERS DG, 1976, PSYCHOL BULL, V83, P602, DOI 10.1037/0033-2909.83.4.602
+   Paolacci G, 2014, CURR DIR PSYCHOL SCI, V23, P184, DOI 10.1177/0963721414531598
+   Paolacci G, 2010, JUDGM DECIS MAK, V5, P411
+   Paulhus D. L, 1991, MEASURES PERSONALITY, P17, DOI DOI 10.1016/B978-0-12-590241-0.50006-X
+   Ross J., 2010, P AMC CHI C, P2863, DOI DOI 10.1145/1753846.1753873
+   Shane S, 1996, J MANAGE, V22, P747, DOI 10.1016/S0149-2063(96)90021-5
+   Slovic P, 1999, RISK ANAL, V19, P689, DOI 10.1023/A:1007041821623
+   TEGER AI, 1967, J EXP SOC PSYCHOL, V3, P189, DOI 10.1016/0022-1031(67)90022-4
+   Thaler RH, 1997, Q J ECON, V112, P647, DOI 10.1162/003355397555226
+   Tsvetkova M, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0087275
+   TVERSKY A, 1992, J RISK UNCERTAINTY, V5, P297, DOI 10.1007/BF00122574
+   TVERSKY A, 1986, J BUS, V59, pS251, DOI 10.1086/296365
+   TVERSKY A, 1991, Q J ECON, V106, P1039, DOI 10.2307/2937956
+   Weber EU, 2002, J BEHAV DECIS MAKING, V15, P263, DOI 10.1002/bdm.414
+   WINSLOW EK, 1989, J CREATIVE BEHAV, V23, P149, DOI 10.1002/j.2162-6057.1989.tb00686.x
+   WINSLOW EK, 1987, J CREATIVE BEHAV, V21, P202, DOI 10.1002/j.2162-6057.1987.tb00477.x
+   Yechiam E, 2006, J BEHAV DECIS MAKING, V19, P1, DOI 10.1002/bdm.509
+   ZALESKA M, 1974, EUR J SOC PSYCHOL, V4, P229, DOI 10.1002/ejsp.2420040207
+NR 66
+TC 0
+Z9 0
+U1 0
+U2 3
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1366-9877
+EI 1466-4461
+J9 J RISK RES
+JI J. Risk Res.
+PY 2017
+VL 20
+IS 7
+BP 827
+EP 845
+DI 10.1080/13669877.2015.1119180
+PG 19
+WC Social Sciences, Interdisciplinary
+SC Social Sciences - Other Topics
+GA EW3PJ
+UT WOS:000402412100001
+DA 2019-12-27
+ER
+
+PT J
+AU Begley, TA
+   Purnanandam, A
+   Zheng, KC
+AF Begley, Taylor A.
+   Purnanandam, Amiyatosh
+   Zheng, Kuncheng
+TI The Strategic Underreporting of Bank Risk
+SO REVIEW OF FINANCIAL STUDIES
+LA English
+DT Article
+ID LIQUIDITY SHOCKS EVIDENCE; EMERGING MARKET; CRISIS
+AB We show that banks significantly underreport the risk in their trading book when they have lower equity capital. Specifically, a decrease in a bank's equity capital results in substantially more violations of its self-reported risk levels in the following quarter. Underreporting is especially frequent during the critical periods of high systemic risk and for banks with larger trading operations. We exploit a discontinuity in the expected benefit of underreporting present in Basel regulations to provide further support for a causal link between capital-saving incentives and underreporting. Overall, we show that banks' self-reported risk measures become least informative precisely when they matter the most.
+C1 [Begley, Taylor A.] London Business Sch, London, England.
+   [Begley, Taylor A.] Washington Univ, Olin Business Sch, St Louis, MO USA.
+   [Purnanandam, Amiyatosh] Univ Michigan, Ross Sch Business, Ann Arbor, MI 48109 USA.
+   [Zheng, Kuncheng] Northeastern Univ, DAmore McKim Sch Business, Boston, MA 02115 USA.
+RP Begley, TA (reprint author), Washington Univ, CB 1133,One Brookings Dr, St Louis, MO 63130 USA.
+EM tbegley@wustl.edu
+RI Begley, Taylor/S-1706-2019
+FU Smith Richardson Foundation
+FX We are grateful to Sean Campbell, Jean Colliard, Rainer Haselmann, Vasso
+   Ioannidou, Mauricio Larrain, Gregor Matvos, Uday Rajan, Philipp Schnabl,
+   Sergio Vicente and seminar participants at the Bank of England, Banque
+   de France, Dutch Central Bank, Federal Reserve Bank of New York, London
+   Business School, Notre Dame, University of Houston, University of Miami,
+   University of Michigan, Michigan State University, Purdue University,
+   Surrey, Washington University in St. Louis, Wayne State University, and
+   Wharton and conference participants at AFA (San Francisco),
+   Baffi-Carefin (Bocconi), Barcelona GSE Summer Forum, Lancaster Corporate
+   Finance Conference, NBER Summer Institute, Texas Finance Festival,
+   Tel-Aviv Finance Conference, and the WFA (Seattle) for helpful comments
+   on the paper. Purnanandam gratefully acknowledges financial support from
+   Smith Richardson Foundation for this research. Supplementary data can be
+   found on The Review of Financial Studies web site. Please send
+   correspondence to Taylor Begley, Washington University in St. Louis, CB
+   1133, One Brookings Drive, St. Louis, MO 63130; telephone: (314)
+   935-6329. E-mail: tbegley@wustl.edu.
+CR Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Admati A. R., 2013, FALLACIES IRRELEVANT
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   BECKER GS, 1968, J POLIT ECON, V76, P169, DOI 10.1086/259394
+   Behn M., 2014, LIMITS MODEL BASED R
+   Berkowitz J, 2002, J FINANC, V57, P1093, DOI 10.1111/1540-6261.00455
+   BIS, 1996, SUP FRAM U BACKT CON
+   BIS, 2005, AMM CAP ACC INC MARK
+   BIS (Bank for International Settlements), 2013, REG CONS ASS PROGR R
+   Boyson NM, 2016, REV FINANC STUD, V29, P1821, DOI 10.1093/rfs/hhw007
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   CHAN YS, 1992, J FINANC, V47, P227, DOI 10.2307/2329096
+   Chava S, 2011, J FINANC ECON, V99, P116, DOI 10.1016/j.jfineco.2010.08.006
+   Colliard J.-E., 2014, STRATEGIC SELECTION
+   Ellul A, 2013, J FINANC, V68, P1757, DOI 10.1111/jofi.12057
+   Fahlenbrach R, 2012, J FINANC, V67, P2139, DOI 10.1111/j.1540-6261.2012.01783.x
+   Griffin JM, 2016, REV FINANC STUD, V29, P384, DOI 10.1093/rfs/hhv130
+   Jorion P, 2002, ACCOUNT REV, V77, P911, DOI 10.2308/accr.2002.77.4.911
+   Jorion P, 2006, VALUE RISK NEW BENCH
+   KAPLOW L, 1994, J POLIT ECON, V102, P583, DOI 10.1086/261947
+   Kashelikar A. S., 2008, Proceedings of the World Environmental and Water Resources Congress, Honolulu, Hawai'i, USA, 12-16 May, 2008, P431
+   Khwaja AI, 2008, AM ECON REV, V98, P1413, DOI 10.1257/aer.98.4.1413
+   Kupiec P, 1995, J DERIV, V3, P73, DOI [10.3905/jod.1995.407942, DOI 10.3905/JOD.1995.407942]
+   Piskorski T, 2015, J FINANC, V70, P2635, DOI 10.1111/jofi.12271
+   Plosser M. C., 2014, BANK INCENTIVES QUAL
+   Schnabl P, 2012, J FINANC, V67, P897, DOI 10.1111/j.1540-6261.2012.01737.x
+   Thakor AV, 2014, ANNU REV FINANC ECON, V6, P185, DOI 10.1146/annurev-financial-110613-034531
+NR 28
+TC 13
+Z9 13
+U1 4
+U2 21
+PU OXFORD UNIV PRESS INC
+PI CARY
+PA JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
+SN 0893-9454
+EI 1465-7368
+J9 REV FINANC STUD
+JI Rev. Financ. Stud.
+PD OCT
+PY 2017
+VL 30
+IS 10
+BP 3376
+EP 3415
+DI 10.1093/rfs/hhx036
+PG 40
+WC Business, Finance; Economics
+SC Business & Economics
+GA FJ6BU
+UT WOS:000412839400002
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Billio, M
+   Donadelli, M
+   Paradiso, A
+   Riedel, M
+AF Billio, M.
+   Donadelli, M.
+   Paradiso, A.
+   Riedel, M.
+TI Which market integration measure?
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Equity market integration; Dynamic correlation; Principal components;
+   International diversification benefits
+ID INTERNATIONAL PORTFOLIO DIVERSIFICATION; FINANCIAL INTEGRATION;
+   PRINCIPAL-COMPONENTS; EMERGING MARKET; EXPECTED RETURNS; LONG-RUN;
+   STOCK; RISK; INTERDEPENDENCE; CONTAGION
+AB This paper compares the dynamics of the financial integration process as described by different empirical approaches. To this end, a wide range of measures accounting for several dimensions of integration is employed. In addition, we evaluate the performance of each measure by relying on an established international finance result, i.e., increasing financial integration leads to declining international portfolio diversification benefits. Using monthly equity market data for three different country groups (i.e., developed markets, emerging markets, developed plus emerging markets) and a dynamic indicator of international portfolio diversification benefits, we find that (i) all measures give rise to a very similar long-run integration pattern; (ii) the standard correlation explains variations in diversification benefits as well or better than more sophisticated measures. These findings are robust to a battery of robustness checks. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Billio, M.; Paradiso, A.] CaFoscari Univ Venice, Dept Econ, Cannaregio 873, I-30121 Venice, Italy.
+   [Donadelli, M.; Riedel, M.] Goethe Univ Frankfurt, Res Ctr SAFE, Theodor W Adorno Pl 3, D-60323 Frankfurt, Germany.
+RP Billio, M (reprint author), CaFoscari Univ Venice, Dept Econ, Cannaregio 873, I-30121 Venice, Italy.
+EM billio@unive.it; michael.donadelli@gmail.com; antonio.paradiso@unive.it;
+   riedel@safe.uni-frankfurt.de
+RI Billio, Monica/J-8216-2015
+OI Billio, Monica/0000-0002-6690-0832
+FU Financial Economics/Econometrics; SYRTO; European Union under the 7th
+   Framework Programme (FP7-SSH) [320270]; MISURA; Italian MIURMinistero
+   dell' Istruzione, dell' Universita e della Ricerca (MIUR); Research
+   Center SAFE; State of Hessen initiative for research LOEWE
+FX We thank for helpful comments on earlier versions Guglielmo Maria
+   Caporale, Roberto Casarin, Alessio Ciarlone, Fulvio Corsi, Giuliano
+   Curatola, Daniele Massacci, Faek Menla Ali, Renatas Kizys, Saten Kumar,
+   Loriana Pelizzon, Christian Schlag, participants of the 11th BMRC-DEMS
+   Conference on Macro and Financial Economics/Econometrics and 39th AMASES
+   Annual Meeting. We also thank two anonymous referees for their comments
+   which substantially improved the paper. We gratefully acknowledge
+   financial support from the project SYRTO, funded by the European Union
+   under the 7th Framework Programme (FP7-SSH/2007-2013 Grant Agreement No.
+   320270) and the project MISURA, funded by the Italian MIUR. Donadelli
+   and Riedel also gratefully acknowledge financial support from the
+   Research Center SAFE, funded by the State of Hessen initiative for
+   research LOEWE. The authors alone are responsible for the views
+   expressed in the paper and for any errors that may remain.
+CR Abad P, 2010, J BANK FINANC, V34, P2851, DOI 10.1016/j.jbankfin.2009.10.009
+   Adam K., 2002, ANAL COMP APPL ALTER
+   BACA SP, 2000, FINANCIAL ANAL J, V56, P34, DOI DOI 10.2469/FAJ.V56.N5.2388
+   Baker S, 2015, 21633 NBER
+   Ball C.A., 2006, CONTAGION PRES UNPUB
+   Barr DG, 2004, J INT MONEY FINANC, V23, P71, DOI 10.1016/j.jimonfin.2003.10.005
+   Bekaert G, 2011, REV FINANC STUD, V24, P3841, DOI 10.1093/rfs/hhr082
+   Bekaert G, 2009, J FINANC, V64, P2591, DOI 10.1111/j.1540-6261.2009.01512.x
+   Bekiros SD, 2014, INT REV FINANC ANAL, V33, P58, DOI 10.1016/j.irfa.2013.07.007
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blanchard O, 2010, J MONEY CREDIT BANK, V42, P199, DOI 10.1111/j.1538-4616.2010.00334.x
+   BOLLERSLEV T, 1990, REV ECON STAT, V72, P498, DOI 10.2307/2109358
+   Brooks R., 2004, J EMPIR FINANC, V11, P659, DOI DOI 10.1016/J.JEMPFIN.2003.08.001
+   Caporale GM, 2011, REV INT ECON, V19, P158, DOI 10.1111/j.1467-9396.2010.00938.x
+   Carrieri F, 2007, J FINANC QUANT ANAL, V42, P915, DOI 10.1017/S0022109000003446
+   Carroll CD, 2011, J MONEY CREDIT BANK, V43, P55, DOI 10.1111/j.1538-4616.2010.00365.x
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Choudhry T., 2013, REV QUANT FINANCE AC, V44, P213
+   Choueifaty Y, 2008, J PORTFOLIO MANAGE, V35, P40, DOI 10.3905/JPM.2008.35.1.40
+   CHOW GC, 1971, REV ECON STAT, V53, P372, DOI 10.2307/1928739
+   Christoffersen P, 2012, REV FINANC STUD, V25, P3711, DOI 10.1093/rfs/hhs104
+   Colacito R, 2010, AM ECON REV, V100, P527, DOI 10.1257/aer.100.2.527
+   Connolly RA, 2007, J FINANC MARK, V10, P192, DOI 10.1016/j.finmar.2006.09.005
+   Cunningham A, 2012, J BUS ECON STAT, V30, P173, DOI 10.1198/jbes.2009.08171
+   de Jong F, 2005, J FINANC ECON, V78, P583, DOI 10.1016/j.jfineco.2004.10.010
+   De Santis G, 1998, J FINANC ECON, V49, P375, DOI 10.1016/S0304-405X(98)00029-4
+   Donadelli M, 2014, J INT FINANC MARK I, V32, P184, DOI 10.1016/j.intfin.2014.06.003
+   Driessen J, 2007, J BANK FINANC, V31, P1693, DOI 10.1016/j.jbankfin.2006.11.006
+   Egert B, 2011, EMPIR ECON, V40, P393, DOI 10.1007/s00181-010-0341-3
+   Elyasiani E, 2008, APPL ECON, V40, P395, DOI 10.1080/00036840600707027
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R.F., 2001, NBER WORKING PAPER 8
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   Errunza V, 1999, J FINANC, V54, P2075, DOI 10.1111/0022-1082.00182
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Goetzmann WN, 2005, J BUS, V78, P1, DOI 10.1086/426518
+   Gupta R, 2012, INT REV FINANC ANAL, V21, P10, DOI 10.1016/j.irfa.2011.09.001
+   Hendry D. F., 2003, ECONOMETRICS PHILOS, P379
+   Hendry DF, 2005, ECON J, V115, pC32, DOI 10.1111/j.0013-0133.2005.00979.x
+   HILLIARD JE, 1979, J FINANC, V34, P103, DOI 10.2307/2327147
+   Horvath R, 2013, ECON SYST, V37, P81, DOI 10.1016/j.ecosys.2012.07.004
+   Jappelli T, 2011, ECON J, V121, P678, DOI 10.1111/j.1468-0297.2010.02410.x
+   Jayasinghe P, 2014, ECON MODEL, V42, P128, DOI 10.1016/j.econmod.2014.06.003
+   Jayasuriya SA, 2011, EMERG MARK REV, V12, P418, DOI 10.1016/j.ememar.2011.06.005
+   Jong JC, 1999, AM STAT, V53, P349, DOI 10.2307/2686055
+   Khalid A.M., 2003, J ASIAN EC, V14, P131, DOI DOI 10.1016/S1049-0078(02)00243-9
+   Kim SJ, 2006, J BANK FINANC, V30, P1507, DOI 10.1016/j.jbankfin.2005.05.007
+   KING M, 1994, ECONOMETRICA, V62, P901, DOI 10.2307/2951737
+   Kirchner M., 2010, 1219 ECB
+   Koedijk KG, 2002, J INT MONEY FINANC, V21, P905, DOI 10.1016/S0261-5606(02)00028-1
+   Krolzig H., 2008, TECHNICAL REPORT
+   Laopodis NT, 2011, J INT FINANC MARK I, V21, P247, DOI 10.1016/j.intfin.2010.10.006
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Lucey B. M., 2004, INT REV FINANC ANAL, V13, P571, DOI DOI 10.1016/J.IRFA.2004.02.013
+   Mauro P, 2002, Q J ECON, V117, P695, DOI 10.1162/003355302753650364
+   McAvoy G.E, 1998, POLIT ANAL, V7, P165
+   MERIC I, 1989, J BANK FINANC, V13, P627, DOI 10.1016/0378-4266(89)90034-4
+   Morana C, 2008, J INT FINANC MARK I, V18, P31, DOI DOI 10.1016/J.INTFIN.2006.05.001
+   NELLIS JG, 1982, APPL ECON, V14, P339, DOI 10.1080/00036848200000026
+   Obstfeld M., 2004, GLOBAL CAPITAL MARKE
+   PANTON DB, 1976, J FINANC QUANT ANAL, V11, P415, DOI 10.2307/2330417
+   Pukthuanthong K, 2009, J FINANC ECON, V94, P214, DOI 10.1016/j.jfineco.2008.12.004
+   Quinn DP, 2008, AM ECON REV, V98, P535, DOI 10.1257/aer.98.2.535
+   Ramchand L., 1998, J EMPIR FINANC, V5, P397, DOI DOI 10.1016/S0927-5398(98)00003-6
+   Suzuki Y, 2014, INT REV ECON FINANC, V29, P585, DOI 10.1016/j.iref.2013.08.005
+   Volosovych V, 2013, CESIFO ECON STUD, V59, P360, DOI 10.1093/cesifo/ifs003
+   Volosovych V, 2011, J INT MONEY FINANC, V30, P1535, DOI 10.1016/j.jimonfin.2011.07.011
+   Wang P, 2008, MANCH SCH, V76, P116, DOI 10.1111/j.1467-9957.2008.01083.x
+   Watson J., 1980, J BUSINESS FINANCE A, V7, P297, DOI DOI 10.1111/J.1468-5957.1980.TB00744.X
+   Yu CH, 2015, J INT ECON, V95, P129, DOI 10.1016/j.jinteco.2014.10.008
+   Yu IW, 2010, J BANK FINANC, V34, P2874, DOI 10.1016/j.jbankfin.2010.02.010
+NR 72
+TC 9
+Z9 9
+U1 1
+U2 10
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD MAR
+PY 2017
+VL 76
+BP 150
+EP 174
+DI 10.1016/j.jbankfin.2016.12.002
+PG 25
+WC Business, Finance; Economics
+SC Business & Economics
+GA EK8SZ
+UT WOS:000394196200010
+DA 2019-12-27
+ER

@@ -1,0 +1,441 @@
+
+PT J
+AU Zhang, YY
+   Tressel, T
+AF Zhang, Yuanyan
+   Tressel, Thierry
+TI Effectiveness and channels of macroprudential policies: lessons from the
+   Euro area
+SO JOURNAL OF FINANCIAL REGULATION AND COMPLIANCE
+LA English
+DT Article
+AB Purpose - The design of a macro-prudential framework and its interaction with monetary policy has been at the forefront of the policy agenda since the global financial crisis. However, most advanced economies (AEs) have little experience using macroprudential policies. As a result, relatively little is known empirically about macroprudential instruments' effectiveness in mitigating systemic risks in these countries, about their channels of transmission, and about how these instruments would interact with monetary policy. This paper aims to fill in the gap.
+   Design/methodology/approach - The authors develop a new approach using the euro area bank lending survey to assess the effectiveness of macro-prudential policies in containing credit growth and house price appreciation in mortgage markets. Estimation is performed under the panel regressions (OLS, GLS) and panel VAR setup. Endogeneity issues arising from measures of macro-prudential policies are addressed by introducing GMM estimation and various instruments.
+   Findings - The authors find instruments targeting the cost of bank capital most effective in slowing down mortgage credit growth, and that the impact is transmitted mainly through price margins, the same banking channel as monetary policy. Limits on loan-to-value ratios are also effective, especially when monetary policy is excessively loose.
+   Originality/value - With limited data on macroprudential policy measures in the AEs, this paper proposed a new methodology of using answers from bank lending survey as proxies to assess the effectiveness of specific macroprudential measures and their transmission channels.
+C1 [Zhang, Yuanyan; Tressel, Thierry] Int Monetary Fund, European Dept, Washington, DC 20431 USA.
+RP Zhang, YY (reprint author), Int Monetary Fund, European Dept, Washington, DC 20431 USA.
+EM yzhang@imf.org
+CR Aiyar S., 2014, BANK ENGLAND WORKING
+   Aiyar S, 2014, J MONEY CREDIT BANK, V46, P181, DOI 10.1111/jmcb.12086
+   Angelini P., 2011, 801 BANC IT EC OUTL
+   Basel Committee on Banking Supervision (Basel), 2011, BAS 3 GLOB REG FRAM
+   Bassett W.F., 2012, FEDERAL RESERVE BOAR, V24
+   Beau D., 2012, WORKING PAPERS BANQU
+   Berg J., 2005, 23 ECB
+   Borio C., 2011, CAPITALISM SOC, V6, P1, DOI DOI 10.2202/1932-0213.1083
+   Borio Claudio, 2007, BIS WORKING PAPERS
+   CANOVA Fabio, 2013, 1507 ECB
+   Cerutti Eugenio M., 2015, WP1561 IMF
+   Committee on the Global Financial System, 2010, CGFS PAP
+   Crowe C., 2011, J FINANCIAL STABILIT, V9, P300
+   de Bondt G., 2010, WORKING PAPER SERIES, V1160
+   De Nicolo G., 2011, 201009 IMF
+   Dell'Ariccia Giovanni, 2013, 13143 IMF
+   Demirguc-Kunt A., 2011, J FINANCIAL STABILIT
+   Galati Gabriele, 2011, 337 BIS
+   Hempell H.S., 2010, WP1262 ECB
+   Igan D, 2011, IMF WORKING PAPERS
+   International Monetary Fund, 2011, MACR POL ORG FRAM
+   International Monetary Fund, 2013, KEY ASP MACR POL
+   Kannan P., 2009, IMF WORKING PAPER
+   Lambertini L., 2011, WORKING PAPERS BANCO
+   Lim C.H., 2011, 11238 IMF
+   Lim C.H., 2013, I ARRANGEMENTS MACRO
+   Love I, 2006, Q REV ECON FINANC, V46, P190, DOI 10.1016/j.qref.2005.11.007
+   Maddaloni A, 2013, INT J CENT BANK, V9, P121
+   Otani A., 2011, MACROPRUDENTIAL POLI
+   Quint D., 2013, 13209 IMF
+   Thierry T., 2016, IMF WORKING PAPERS
+   van der Koen V., 2013, 396 DNB
+   Vandenbussche J, 2015, J MONEY CREDIT BANK, V47, P343, DOI 10.1111/jmcb.12206
+   Wong T. C., 2011, LOAN TO VALUE RATIO
+NR 34
+TC 2
+Z9 2
+U1 1
+U2 1
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1358-1988
+EI 1740-0279
+J9 J FINANC REGUL COMPL
+JI J. Financ. Regul. Compliance
+PY 2017
+VL 25
+IS 3
+SI SI
+BP 271
+EP 306
+DI 10.1108/JFRC-10-2016-0094
+PG 36
+WC Business, Finance
+SC Business & Economics
+GA FF1FS
+UT WOS:000408645800005
+DA 2019-12-28
+ER
+
+PT J
+AU Bird, G
+   Du, WT
+   Pentecost, E
+   Willett, T
+AF Bird, Graham
+   Du, Wenti
+   Pentecost, Eric
+   Willett, Thomas
+TI Was it different the second time? An empirical analysis of contagion
+   during the crises in Greece 2009-15
+SO WORLD ECONOMY
+LA English
+DT Article
+DE contagion; correlations; Eurozone crisis
+ID SOVEREIGN DEBT CRISIS; UP-CALL CONTAGION; FINANCIAL CRISIS; MARKET
+   CONTAGION; BOND MARKETS; ECONOMY; PURE
+AB Over the period between end-2009 and end-2015, Greece experienced two discernible financial crises. This paper undertakes a correlation analysis of risk premia to investigate the nature and extent of contagion from these crises to other selected Eurozone countries. A commonly expressed view is that the effects of the second crisis were more muted since the systemic risks were seen by markets as being lower. However, using a rolling correlation model, a Dynamic Conditional Correlation GARCH (DCC-GARCH) model and a t-copula model we find that this is not the case. Broadly speaking, the contagion effects of the second crisis were at least as large as those associated with the first one.
+C1 [Bird, Graham; Willett, Thomas] Claremont Mckenna Coll, Robert Day Sch Econ & Finance, Claremont, CA 91711 USA.
+   [Du, Wenti] Akita Int Univ, Akita, Japan.
+   [Pentecost, Eric] Loughborough Univ Technol, Loughborough, Leics, England.
+   [Bird, Graham; Du, Wenti; Pentecost, Eric; Willett, Thomas] Claremont Grad Univ, Claremont, CA 91711 USA.
+RP Bird, G (reprint author), Claremont Mckenna Coll, Robert Day Sch Econ & Finance, Claremont, CA 91711 USA.; Bird, G (reprint author), Claremont Grad Univ, Claremont, CA 91711 USA.
+CR Afonso A, 2012, J INT MONEY FINANC, V31, P606, DOI 10.1016/j.jimonfin.2012.01.016
+   Andenmatten S., 2011, 0411 U BERN DEP EC
+   Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Bergsten CF, 2012, FOREIGN AFF, V91, P16
+   Bird G., 2012, WORLD ECON, V13, P1
+   Bird G, 2017, OPEN ECON REV, V28, P273, DOI 10.1007/s11079-017-9436-1
+   Brunnemeier M., 2016, EURO BATTLE IDEAS
+   Caporale G. M., 2014, DIW BERLIN DISCUSSIO
+   Caporin M, 2013, ECONOMETRICS, V1, DOI 10.3390/econometrics1010115
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Eichengreen B., 2016, INTERECONOMICS FORUM, V51, P24, DOI [10.1007/s10272-016-0569-z, DOI 10.1007/S10272-016-0569-Z]
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R.F., 2001, 8554 NBER
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gibson HD, 2014, J MACROECON, V39, P405, DOI 10.1016/j.jmacro.2013.08.006
+   Gibson HD, 2012, J INT MONEY FINANC, V31, P498, DOI 10.1016/j.jimonfin.2011.10.009
+   Giordano R, 2013, INT FINANC, V16, P131, DOI 10.1111/j.1468-2362.2013.12033.x
+   Kenourgios D, 2015, ECON MODEL, V44, P283, DOI 10.1016/j.econmod.2014.10.048
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   Ludwig A, 2014, J INT MONEY FINANC, V48, P125, DOI 10.1016/j.jimonfin.2014.07.008
+   Missio S., 2011, 3554 CESIFO
+   Muratori U., 2014, SOCIAL SCI, V4, P66, DOI DOI 10.3390/socsci4010066
+   Philippas D, 2013, J INT FINANC MARK I, V27, P161, DOI 10.1016/j.intfin.2013.09.008
+   Pragidis IC, 2015, J FINANC STABIL, V18, P127, DOI 10.1016/j.jfs.2015.04.001
+   Samitas A, 2013, J INT FINANC MARK I, V25, P18, DOI 10.1016/j.intfin.2013.01.005
+NR 30
+TC 2
+Z9 2
+U1 0
+U2 7
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0378-5920
+EI 1467-9701
+J9 WORLD ECON
+JI World Econ.
+PD DEC
+PY 2017
+VL 40
+IS 12
+BP 2530
+EP 2542
+DI 10.1111/twec.12553
+PG 13
+WC Business, Finance; Economics; International Relations
+SC Business & Economics; International Relations
+GA FO8JB
+UT WOS:000417130900001
+DA 2019-12-27
+ER
+
+PT J
+AU Mokhtar, KS
+   Abd Rahman, NH
+AF Mokhtar, Khairiah Salwa
+   Abd Rahman, Nur Hairani
+TI Social determinants of tuberculosis contagion in Malaysia
+SO ANNALS OF TROPICAL MEDICINE AND PUBLIC HEALTH
+LA English
+DT Article
+DE In-depth interview; infection; Malaysia; social determinants;
+   tuberculosis
+ID HEALTH-CARE WORKERS; RISK-FACTORS; PRISONS; HIV; PREVALENCE; COUNTRIES
+AB Context: Tuberculosis (TB) is primarily an airborne disease caused by the infection of a bacterium, Mycobacterium tuberculosis, which results in more than two million deaths per year worldwide. TB infection is spread when someone with active, infectious TB coughs, or sneezes. In Malaysia, TB is fast rising as a noncommunicable disease, with a death rate higher than death of human immunodeficiency virus (HIV) -AIDS. For instance, in 2015 health indicators, reported by the Ministry of Health, the mortality rate for TB was 5.33%, compared to HIV/AIDS at 1.91%. Aims: This study attempts to review the social determinants of TB transmission in Malaysia. Methods: This is a qualitative study and employs in-depth interview technique for data collection. A list of 36 informants was identified and approached; 22 of them agreed to be interviewed. The elites were chosen for their background, which related to public health and TB patient management. Each interview was recorded, transcribed, and analyzed using thematic analysis. Results: The study finds that the social determinants of TB transmission are related to the following factors: unhealthy lifestyle, inconvenient working environment, negative public perception and stigma, and financial concerns. Conclusions: The identification of as many TB contributing factors as possible is crucial in developing and implementing integrated programs and initiatives that involve all stakeholders in addressing and curbing the spread of the disease.
+C1 [Mokhtar, Khairiah Salwa; Abd Rahman, Nur Hairani] Univ Sains Malaysia, Sch Distance Educ, Dept Polit Sci, George Town 11800, Malaysia.
+RP Mokhtar, KS (reprint author), Univ Sains Malaysia, Sch Distance Educ, Dept Polit Sci, George Town 11800, Malaysia.
+EM khairiah@usm.my
+FU Ministry of Higher Education, Malaysia, under Long-term Research Grant
+   Scheme entitled Enhancement of Relevant National Policies for Effective
+   TB Management: Lesson Drawing and Control [203.PJJAUH.67212003]
+FX The study was supported by the Ministry of Higher Education, Malaysia,
+   under Long-term Research Grant Scheme entitled Enhancement of Relevant
+   National Policies for Effective TB Management: Lesson Drawing and
+   Control (account number 203.PJJAUH.67212003).
+CR Alemie GA, 2014, BMC PUBLIC HEALTH, V14, DOI 10.1186/1471-2458-14-319
+   Astin JA, 1998, JAMA-J AM MED ASSOC, V279, P1548, DOI 10.1001/jama.279.19.1548
+   Beggs CB, 2003, INT J TUBERC LUNG D, V7, P1015
+   Centers for Disease Control and Prevention, 2015, SOC DET HLTH MAPS
+   Clark M, 2002, INT J EPIDEMIOL, V31, P940, DOI 10.1093/ije/31.5.940
+   Daniel TM, 2006, RESP MED, V100, P1862, DOI 10.1016/j.rmed.2006.08.006
+   Dara M, 2015, INT J INFECT DIS, V32, P111, DOI 10.1016/j.ijid.2014.12.029
+   Elliott CT, 2009, CAN FAM PHYSICIAN, V55, P443
+   Farrel C, 2008, COMBAT POVERTY AGENC
+   Godfrey-Faussett P, 2003, TUBERCULOSIS, V83, P68, DOI 10.1016/S1472-9792(02)00083-5
+   Hargreaves JR, 2011, AM J PUBLIC HEALTH, V101, P654, DOI 10.2105/AJPH.2010.199505
+   Health Canada, 1998, METR HLTH DOM SEM
+   Jittimanee SX, 2009, PLOS ONE, V4, DOI 10.1371/journal.pone.0006360
+   Joshi R, 2006, PLOS MED, V3, P2376, DOI 10.1371/journal.pmed.0030494
+   Kilinc O, 2002, RESP MED, V96, P506, DOI 10.1053/rmed.2002.1315
+   Lamb-White J, 2007, INT J HLTH CARE QUAL, V20
+   Mandell GL, 2005, PRINCIPLES PRACTICE
+   Mathew A, 2013, J CLIN EPIDEMIOL, V66, P67, DOI 10.1016/j.jclinepi.2011.12.010
+   McHardy M, 2001, 1 NATIONS COMMUNITY
+   McKee G., 2009, Pimatisiwin - A Journal of Aboriginal and Indigenous Community Health, V7, P49
+   McKinley Health Centre, 2015, UN ILL TUB TB REP
+   Mokhtar KS, 2012, J HUMANIT SOC SCI, V1, P59, DOI DOI 10.3201/EID0402.980217
+   NARAIN JP, 1992, TUBERCLE LUNG DIS, V73, P311, DOI 10.1016/0962-8479(92)90033-G
+   Noeske J, 2011, INT J TUBERC LUNG D, V15, P223
+   Raphael D., 2009, SOCIAL DETERMINANTS
+   Rueda ZV, 2014, INT J TUBERC LUNG D, V18, P1166, DOI 10.5588/ijtld.14.0179
+   Sermrittirong S, 2015, LEPROSY REV, V86, P54
+   Telisinghe L, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0087262
+   Unis G, 2014, BMC INFECT DIS, V14, DOI 10.1186/s12879-014-0548-6
+   World Health Organization, 2004, HUM RES DEV TB CONTR
+NR 30
+TC 1
+Z9 1
+U1 0
+U2 3
+PU MEDKNOW PUBLICATIONS & MEDIA PVT LTD
+PI MUMBAI
+PA B-9, KANARA BUSINESS CENTRE, OFF LINK RD, GHAKTOPAR-E, MUMBAI, 400075,
+   INDIA
+SN 1755-6783
+EI 0974-6005
+J9 ANN TROP MED PUBLIC
+JI Ann. Trop. Med. Public Health
+PD SEP-OCT
+PY 2017
+VL 10
+IS 5
+BP 1215
+EP 1220
+DI 10.4103/ATMPH.ATMPH_371_17
+PG 6
+WC Tropical Medicine
+SC Tropical Medicine
+GA FM1VA
+UT WOS:000414768900027
+DA 2019-12-27
+ER
+
+PT J
+AU Sun, AJ
+   Chan-Lau, JA
+AF Sun, Ariel J.
+   Chan-Lau, Jorge A.
+TI Financial networks and interconnectedness in an advanced emerging market
+   economy
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Banking system; Emerging market; Contagion; Systemic risk;
+   Interconnectedness; Interbank network; Centrality; Macroprudential;
+   Microprudential
+ID INTERBANK MARKET; SYSTEMIC RISK; CONTAGION; DISTRIBUTIONS; EXPOSURES;
+   BANKING
+AB Financial networks could become fragile during periods of economic and financial distress, since interconnectedness among participating firms could transmit and amplify adverse shocks. Relying on balance sheet data, complemented with information on interbank exposures, this paper analyses interconnectedness in an advanced emerging market economy, using two complementary approaches. The first approach focuses on the financial network topology, and finds that the financial system resembles a highly clustered small world network, with in and out-degrees, connectivity and exposures exhibiting a (double) heavy tail behaviour, which favours the formation of strong community structure and preferential attachment in the network. Bank size is Pareto distributed, and highly correlated with centrality. The second approach focuses on how the network topology contributes to the transmission of shocks by modelling default contagion, using balance sheet network analysis. It finds that direct counterparty credit exposure poses less risk to the banking system than fire sale losses triggered by liquidity shocks. Both approaches, either using a topological or induced system losses perspective, identify systemically important financial institutions (SIFIs) consistently by accounting for both macro and microprudential risk dimensions.
+C1 [Sun, Ariel J.] Imperial Coll London, Sch Business, London, England.
+   [Chan-Lau, Jorge A.] Int Monetary Fund, Washington, DC 20431 USA.
+RP Sun, AJ (reprint author), Imperial Coll London, Sch Business, London, England.
+EM js308@imperial.ac.uk
+RI Sun, Ariel J./I-5630-2019
+OI Sun, Ariel J./0000-0002-3576-935X
+CR Acharya V., 2010, WORKING PAPER
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Alter A, 2015, INT J CENT BANK, V11, P329
+   ANDERSON TW, 1952, ANN MATH STAT, V23, P193, DOI 10.1214/aoms/1177729437
+   [Anonymous], 2013, GLOB SYST IMP BANKS
+   Armantier O., 2012, FEDERAL RESERVE BANK, V575
+   ARNOLD B. C., 1983, PARETO DISTRIBUTIONS
+   Bank for International Settlements (BIS), 1994, 64 BIS
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Barrat A, 2004, P NATL ACAD SCI USA, V101, P3747, DOI 10.1073/pnas.0400087101
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   Benzi M, 2013, LINEAR ALGEBRA APPL, V438, P2447, DOI 10.1016/j.laa.2012.10.022
+   Billio M., 2010, 16223 NBER
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Caldarelli G, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.258702
+   Chan-Lau J. A., 2010, IMF WORKING PAPER
+   Chan-Lau JA, 2016, WORKING PAPER
+   Chan-Lau JA, 2007, J BANK REGUL, V9, P14, DOI 10.1057/palgrave.jbr.2350056
+   Chinazzi M, 2013, J ECON DYN CONTROL, V37, P1692, DOI 10.1016/j.jedc.2013.01.010
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Dimitrios B., 2012, WORKING PAPER
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Erdos P., 1959, PUBL MATH-DEBRECEN, V6, P290, DOI DOI 10.1234/12345678
+   European Central Bank (ECB), 2010, FINANCIAL STABILITY, P155
+   Fagiolo G, 2007, PHYS REV E, V76, DOI 10.1103/PhysRevE.76.026107
+   Franzina Emilio, 1995, EC POLICY REV, VI, P27
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Geneva Report by, 2009, FUNDAMENTAL PRINCIPL, V11
+   Gorton G., 2010, SLAPPED INVISIBLE HA
+   Group of Ten, 2001, WORKING PAPER
+   Haldane A.G., 2009, RETHINKING FINANCIAL
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Jo J. H., 2012, MANAGING SYSTEMIC RI
+   Kaufman GG, 1995, RES FIN SERV, V7, P47
+   Kirilenko A. A., 2014, WORKING PAPER
+   Kleinberg JM, 1999, J ACM, V46, P604, DOI 10.1145/324133.324140
+   Leung CC, 2007, PHYSICA A, V378, P591, DOI 10.1016/j.physa.2006.12.022
+   LUCE RD, 1949, PSYCHOMETRIKA, V14, P95, DOI DOI 10.1007/BF02289146
+   Merill C., 2013, WORKING PAPER
+   MieKisz J., SCALE FREE GRAPH PRE, DOI [10.1007/s10955-013-0749-1, DOI 10.1007/S10955-013-0749-1]
+   Milton Friedman, 1963, MONETARY HIST US 186
+   Mishkin F. S, 1994, PREVENTING FINANCIAL
+   Mitchell M., 2010, WORKING PAPER
+   Mitzenmacher M, 2001, DYNAMIC MOD IN PRESS
+   Newman M. E. J., 2002, ASSORTATIVE MIXING N
+   Newman M.E.J., 2003, STRUCTURE FUNCTION C
+   Onnela JP, 2007, P NATL ACAD SCI USA, V104, P7332, DOI 10.1073/pnas.0610245104
+   Reed WJ, 2004, COMMUN STAT-THEOR M, V33, P1733, DOI 10.1081/STA-120037438
+   Roukny T, 2014, 222014 DTSCH BUND
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Squartini T, 2013, SCI REP-UK, V3, DOI 10.1038/srep03357
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Wasserman S., 1994, SOCIAL NETWORK ANAL
+   Watts DJ, 1998, NATURE, V393, P440, DOI 10.1038/30918
+   Wells S., 2004, 230 BANK ENGL
+NR 64
+TC 1
+Z9 1
+U1 1
+U2 8
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PY 2017
+VL 17
+IS 12
+BP 1833
+EP 1858
+DI 10.1080/14697688.2017.1357976
+PG 26
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA FS6DX
+UT WOS:000419889200005
+DA 2019-12-28
+ER
+
+PT J
+AU Bird, G
+   Du, WT
+   Willett, T
+AF Bird, Graham
+   Du, Wenti
+   Willett, Thomas
+TI Behavioral Finance and Efficient Markets: What does the Euro Crisis Tell
+   us?
+SO OPEN ECONOMIES REVIEW
+LA English
+DT Article
+DE Behavioral finance; Efficient markets; Euro crisis
+ID SOVEREIGN DEBT CRISIS; UP-CALL CONTAGION; RISK CONTAGION; BOND MARKETS;
+   SPREADS; PURE
+AB The crisis in the Eurozone between 2009 and 2015 provides an opportunity to test whether financial markets fully display the characteristics associated with the efficient market hypothesis or whether behavioral approaches which focus on excessive pessimism and confirmation bias also offer insights into the performance of markets. In this paper we test several important aspects of market behavior. Specifically we examine the extent to which large changes in risk premia amongst the countries that encountered crises were related to news. We also investigate whether the impact of good and bad news was symmetrical. Finally we explore whether changes in risk premia in Greece affected risk premia in other countries in an asymmetrical and biased way. We discover that while there is considerable evidence that financial markets often performed in an efficient way during the crisis, there are also important departures from this pattern that are consistent with the behavioral approach. Our findings imply that both the efficient and behavioral approaches are helpful when trying to understand how markets perform.
+C1 [Bird, Graham; Willett, Thomas] Claremont Mckenna Coll, Claremont, CA 91711 USA.
+   [Bird, Graham; Du, Wenti; Willett, Thomas] Claremont Grad Univ, Claremont, CA 91711 USA.
+   [Du, Wenti] Akita Int Univ, Akita, Japan.
+RP Bird, G (reprint author), Claremont Mckenna Coll, Claremont, CA 91711 USA.; Bird, G (reprint author), Claremont Grad Univ, Claremont, CA 91711 USA.
+EM graham.bird@claremontmckenna.edu
+CR Afonso A, 2012, J INT MONEY FINANC, V31, P606, DOI 10.1016/j.jimonfin.2012.01.016
+   Bak P., 1996, NATURE WORKS SCI SEL
+   Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bergsten F, 2012, FOREIGN AFFAIRS  SEP
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P639, DOI 10.1016/j.jimonfin.2011.10.006
+   Bird G, 1999, THIRD WORLD Q, V20, P421, DOI 10.1080/01436599913839
+   Bird G, 2012, WORLD ECON, V13, P171
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Caccioli F, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500580
+   Caporale GM, 2014, DIW BERLIN DISCUSSIO, V1413
+   Caporin M., 2013, 18741 NBER
+   CUTLER DM, 1989, J PORTFOLIO MANAGE, V15, P4, DOI 10.3905/jpm.1989.409212
+   Dai L, 2012, SCIENCE, V336, P1175, DOI 10.1126/science.1219805
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   De Santis R. A, 2012, ECB WORKING PAPER SE, V1419
+   Dooley M, 2009, 15120 NBER
+   Eichengreen B., 2010, EUROPE EURO, P11
+   Fong TPW, 2012, ECON LETT, V115, P496, DOI 10.1016/j.econlet.2011.12.112
+   Gibson HD, 2014, J MACROECON, V39, P405, DOI 10.1016/j.jmacro.2013.08.006
+   Giordano R, 2013, INT FINANC, V16, P131, DOI 10.1111/j.1468-2362.2013.12033.x
+   Kaizoji T, 2006, EUR PHYS J B, V50, P123, DOI 10.1140/epjb/e2006-00142-9
+   Kalbaska A, 2012, J ECON BEHAV ORGAN, V83, P657, DOI 10.1016/j.jebo.2012.05.010
+   Khandani Amir E., 2007, J INVESTMENT MANAGEM, p[5, 5]
+   Lewis G, 2010, HOMELAND SECURITY AF, V6
+   LORENZ EN, 1963, J ATMOS SCI, V20, P130, DOI 10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2
+   Ludwig A, 2014, J INT MONEY FINANC, V48, P125, DOI 10.1016/j.jimonfin.2014.07.008
+   MacKinlay AC, 1997, J ECON LIT, V35, P13
+   Manasse P, 2013, 863 DSE
+   Masson PR, 1998, IMF WORK PAP, V98, P1
+   Metiu N, 2012, ECON LETT, V117, P35, DOI 10.1016/j.econlet.2012.04.074
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Mohl P, 2013, APPL ECON LETT, V20, P48, DOI 10.1080/13504851.2012.674201
+   Philippas D, 2013, J INT FINANC MARK I, V27, P161, DOI 10.1016/j.intfin.2013.09.008
+   Saka O, 2015, J INT MONEY FINANC, V54, P168, DOI 10.1016/j.jimonfin.2015.03.002
+   Sole R. V., 2011, PHASE TRANSITIONS
+   Sornette D, 2003, WHY STOCK MARKETS CRASH: CRITICAL EVENTS IN COMPLEX FINANCIAL SYSTEMS, P1
+   TVERSKY A, 1974, SCIENCE, V185, P1124, DOI 10.1126/science.185.4157.1124
+   Willett TD, 2000, PRINCETON ESSAYS INT
+   Willett TD, 2014, HBK RES INT POLIT EC, P285
+NR 40
+TC 5
+Z9 5
+U1 5
+U2 43
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0923-7992
+EI 1573-708X
+J9 OPEN ECON REV
+JI Open Econ. Rev.
+PD APR
+PY 2017
+VL 28
+IS 2
+BP 273
+EP 295
+DI 10.1007/s11079-017-9436-1
+PG 23
+WC Economics
+SC Business & Economics
+GA ES0UM
+UT WOS:000399242800004
+DA 2019-12-27
+ER

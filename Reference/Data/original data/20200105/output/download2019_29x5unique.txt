@@ -1,0 +1,521 @@
+
+PT J
+AU Guillotin, B
+AF Guillotin, Bertrand
+TI Using Unconventional Wisdom to Re-Assess and Rebuild the BRICS
+SO JOURNAL OF RISK AND FINANCIAL MANAGEMENT
+LA English
+DT Article
+DE emerging markets; globalization; protectionism
+ID EMERGING MARKETS; BUSINESS SCHOOLS; FUTURE
+AB In 2015, Goldman Sachs closed its BRIC (Brazil, Russia, India, China) fund after years of losses and plummeting assets. Emerging markets had, once again, turned into submerging markets. Their dependence on "developed" markets and established institutions had failed them in a post-Global Financial Crisis (GFC) era, anchored in protectionism, risks, volatility, and uncertainty. The once commonly-accepted wisdom that called for US housing prices to always increase was part of the problem and contagion. Rebuilding the BRICS (S for South Africa) using conventional wisdom would probably not work. A new approach is necessary, especially since the last key contributions to show the inadequacy of a conventional wisdom-based strategy in emerging markets are more than ten years old. To help fill this gap, this paper proposes a holistic analytical framework for strategists to re-assess risks and opportunities in the BRICS. We illustrate how five basic assumptions can be proven wrong and lead to the creation of unconventional wisdom that can help derive some strategic insights. We find that rebuilding the BRICS for them to be more resilient is possible, if not vital, for the health of the global economy.
+C1 [Guillotin, Bertrand] Temple Univ, Fox Sch Business, Philadelphia, PA 19122 USA.
+RP Guillotin, B (reprint author), Temple Univ, Fox Sch Business, Philadelphia, PA 19122 USA.
+EM bertrand@temple.edu
+CR Ahlstrom D, 2010, ACAD MANAGE PERSPECT, V24, P11, DOI 10.5465/AMP.2010.52842948
+   Altbach P, 1998, COMP HIGHER ED KNOWL
+   Beck-Dudley CL, 2018, J LEG STUD EDUC, V35, P165, DOI 10.1111/jlse.12073
+   Beechler S., 2007, ADV INT MANAGEMENT, DOI [10.1016/S1571-5027(07)19006-9, DOI 10.1016/S1571-5027(07)19006-9]
+   Bermiss YS, 2014, ORGAN SCI, V25, P591, DOI 10.1287/orsc.2013.0852
+   Betts Alexander, 2016, TED TALK
+   Bogle J. C., 2000, COMMON SENSE MUTUAL
+   CHANG HA-JOON, 2002, KICKING AWAY LADDER
+   Crafts N, 2010, OXFORD REV ECON POL, V26, P285, DOI 10.1093/oxrep/grq030
+   Currie G, 2010, BRIT J MANAGE, V21, ps1, DOI 10.1111/j.1467-8551.2009.00677.x
+   Dardo Mauro, 2004, NOBEL LAUREATES 20 C
+   Drucker Peter F., 2017, NEW SOC ANATOMY IND
+   Galbraith Jean, 2018, AJIL, V112, P499
+   Gemmill Barbara, 2002, WORLD SUMMIT SUSTAIN
+   Ghemawat P., 2018, NEW GLOBAL ROAD MAP
+   Giacalone R. A., 2009, J BUSINESS ETHICS ED, V6, P147
+   Gordon R. A., 1959, J BUSINESS ED, V35, P115, DOI DOI 10.1080/08832323.1959.10116245
+   Guillen MF, 2009, ACAD MANAGE PERSPECT, V23, P23, DOI 10.5465/AMP.2009.39985538
+   Holtbrugge D, 2012, INT J EMERG MARK, V7, P4, DOI 10.1108/17468801211197897
+   Javidan M, 2011, ADV GLOB LEADERSHIP, V6, P13, DOI 10.1108/S1535-1203(2011)0000006005
+   KANG D, 2007, CHINA RISING PEACE P
+   Kennedy David M., 2003, AM PEOPLE GREAT DEPR
+   Khanna T, 2001, STRATEGIC MANAGE J, V22, P45, DOI 10.1002/1097-0266(200101)22:1<45::AID-SMJ147>3.3.CO;2-6
+   Khanna T, 2000, ACAD MANAGE J, V43, P268, DOI 10.2307/1556395
+   Khanna T., 2010, WINNING EMERGING MAR
+   Khanna T., 2005, SPOTTING I VOIDS EME
+   Lane H. W., 2009, INT MANAGEMENT BEHAV
+   London T, 2004, J INT BUS STUD, V35, P350, DOI 10.1057/palgrave.jibs.8400099
+   Maddison A., 2007, WORLD EC
+   Mensi W, 2017, FINANC RES LETT, V21, P26, DOI 10.1016/j.frl.2016.11.016
+   Mensi W, 2016, INT REV ECON FINANC, V42, P257, DOI 10.1016/j.iref.2015.11.005
+   Mudambi R., 2018, J INT BUSINESS POLIC, V1, P44, DOI DOI 10.1057/s42214-018-0005-0
+   O'Neill J., 2001, BUILDING BETTER GLOB
+   Pandit Vishwanath, 2018, GLOBAL EC CRISIS 200
+   Pfeffer J, 2002, ACAD MANAG LEARN EDU, V1, P78, DOI 10.5465/AMLE.2002.7373679
+   Pierson F. C, 1959, J BUSINESS ED, V35, P114, DOI DOI 10.1080/08832323.1959.10116244
+   Porter M. E., 2011, BIG IDEA CREATING SH
+   Ramamurti R, 2012, GLOB STRATEG J, V2, P41, DOI 10.1002/gsj.1025
+   Rugman Alan, 2012, END GLOBALIZATION
+   Schlegelmilch BB, 2011, J MANAG DEV, V30, P474, DOI 10.1108/02621711111132984
+   Singh Simon, 2017, FERMATS ENIGMA EPIC
+   Skapinker M., 2008, FINANCIAL TIMES
+   Skapinker Michael, 2011, FINANCIAL TIMES
+   Thomas H, 2012, J MANAG DEV, V31, P329, DOI 10.1108/02621711211219095
+   White LJ, 2002, J ECON PERSPECT, V16, P137, DOI 10.1257/089533002320951019
+   Wilson D., 2003, DREAMING BRICS PATH
+   Wright M, 2005, J MANAGE STUD, V42, P1, DOI 10.1111/j.1467-6486.2005.00487.x
+   Zuckerman Gregory, 2010, GREATEST TRADE EVER
+NR 48
+TC 0
+Z9 0
+U1 1
+U2 1
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 1911-8066
+EI 1911-8074
+J9 J RISK FINANC MANAG
+JI J. Risk Financ. Manag.
+PD JAN 7
+PY 2019
+VL 12
+IS 1
+AR 8
+DI 10.3390/jrfm12010008
+PG 13
+WC Business, Finance
+SC Business & Economics
+GA HT1NA
+UT WOS:000464329400001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Saiz, MC
+   Azofra, SS
+   Olmo, BT
+AF Cantero Saiz, Maria
+   Sanfilippo Azofra, Sergio
+   Torre Olmo, Begona
+TI The single supervision mechanism and contagion between bank and
+   sovereign risk
+SO JOURNAL OF REGULATORY ECONOMICS
+LA English
+DT Article
+DE Single supervision mechanism; Bank risk; Sovereign risk; Contagion; G01;
+   G21; G28; H63
+ID FINANCIAL CRISIS; DEFAULT RISK; STOCK-PRICES; CREDIT RISK;
+   INTERDEPENDENCIES; DYNAMICS; RETURNS; RATINGS; SECTOR; IMPACT
+AB The objective of this article is to analyse how the Single Supervision Mechanism (SSM), the first pillar of the European Banking Union, affects contagion between bank and sovereign risk in the eurozone. Additionally, we test whether this contagion is transmitted from banks to sovereigns or vice versa, and how this transmission differs before and after the SSM. On the one hand, using quarterly data from 80 banks and 13 eurozone countries over the period 2009-2016 (2441 observations), we do not find solid evidence that the SSM reduces contagion from sovereign risk to banks' stock returns. On the other hand, the analysis of credit default swap (CDS) spreads comprises quarterly data from 25 banks and 10 eurozone countries between 2009 and 2016 (771 observations). We find that the announcement of the SSM in March 2013 reduces contagion between bank and sovereign CDS spreads. Additionally, before the announcement of the SSM, an increase in sovereign risk does not alter contagion. However, after this announcement, an increase in sovereign risk leads to lower contagion. Therefore, the announcement of the SSM has an immediate effect on CDS spreads, while there is not enough evidence for banks' stock returns.
+C1 [Cantero Saiz, Maria; Sanfilippo Azofra, Sergio; Torre Olmo, Begona] Univ Cantabria, Ave Los Castros S-N, E-39005 Santander, Cantabria, Spain.
+RP Saiz, MC (reprint author), Univ Cantabria, Ave Los Castros S-N, E-39005 Santander, Cantabria, Spain.
+EM canterom@unican.es; sanfilis@unican.es; torreb@unican.es
+FU University of Cantabria Foundation for Education and Research in the
+   Financial Sector (UCEIF Foundation)
+FX This work was supported by University of Cantabria Foundation for
+   Education and Research in the Financial Sector (UCEIF Foundation).
+CR Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adelino M, 2016, REV FINANC STUD, V29, P1709, DOI 10.1093/rfs/hhw004
+   Aizenman J, 2013, J INT MONEY FINANC, V34, P1, DOI 10.1016/j.jimonfin.2012.11.001
+   Allegret JP, 2016, EUROPEAN RES STUDIES, V19, P129
+   Alsakka R, 2014, J INT MONEY FINANC, V49, P235, DOI 10.1016/j.jimonfin.2014.03.012
+   Altavilla C., 2016, WORKING PAPER SERIES
+   Alter A, 2014, J BANK FINANC, V42, P134, DOI 10.1016/j.jbankfin.2014.01.030
+   Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Altunbas Y., 2011, 1394 ECB
+   Anderson M, 2011, WORKING PAPER
+   Angeloni Ch., 2012, 201207 BRUEG
+   Angeloni I, 2015, EUROPEAN EC BANKS RE, V1, P43
+   Arezki R., 2011, 68 IMF
+   Baele L, 2007, J BANK FINANC, V31, P1999, DOI 10.1016/j.jbankfin.2006.08.003
+   Barba-Navaretti G, 2015, EUROPEAN EC BANKS RE, V1, P9
+   Barth JR, 2012, J FINAN ECON POLICY, V4, P76, DOI 10.1108/17576381211210203
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Berndt A, 2010, REV FINANC, V14, P189, DOI 10.1093/rof/rfq004
+   Black F, 1975, FINANCIAL ANAL J, V31, P61
+   Bocola L, 2016, J POLIT ECON, V124, P879, DOI 10.1086/686734
+   Bolton P, 2011, IMF ECON REV, V59, P162, DOI 10.1057/imfer.2011.5
+   Borensztein E, 2013, J BANK FINANC, V37, P4014, DOI 10.1016/j.jbankfin.2013.07.006
+   Breton Regis, 2012, FINANCIAL STABILITY, V16, P57
+   Brown CO, 2011, REV FINANC STUD, V24, P1378, DOI 10.1093/rfs/hhp039
+   Buch CM, 2016, J FINANC STABIL, V25, P1, DOI 10.1016/j.jfs.2016.05.002
+   Cantero-Saiz M, 2014, J INT MONEY FINANC, V47, P1, DOI 10.1016/j.jimonfin.2014.04.008
+   Carboni M, 2017, J BANK FINANC, V74, P122, DOI 10.1016/j.jbankfin.2016.11.004
+   Carhart MM, 1997, J FINANC, V52, P57, DOI 10.2307/2329556
+   Caselli S, 2014, EUROPEAN FINANCIAL M, V22, P142
+   CGFS, 2011, CGFS PAP, V43
+   Correa R., 2012, FEDERAL RESERVE SYST, P1059
+   Correa R, 2014, J MONEY CREDIT BANK, V46, P93, DOI 10.1111/jmcb.12080
+   Darvas Zsolt, 2013, BRUEGEL POLICY CONTR
+   Davies M., 2011, BIS Q REV, P59
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   Demirguc-Kunt A, 2013, J BANK FINANC, V37, P875, DOI 10.1016/j.jbankfin.2012.10.010
+   Dieckmann S, 2012, REV FINANC, V16, P903, DOI 10.1093/rof/rfr015
+   Drago D, 2016, J INT MONEY FINANC, V67, P264, DOI 10.1016/j.jimonfin.2016.06.004
+   Easley D, 1998, J FINANC, V53, P431, DOI 10.1111/0022-1082.194060
+   Ejsing J, 2011, ECON LETT, V110, P28, DOI 10.1016/j.econlet.2010.10.001
+   Engler P, 2016, EUR ECON REV, V87, P34, DOI 10.1016/j.euroecorev.2016.02.012
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   Fontana A., 2010, TECH REP, P1271
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gennaioli N, 2014, J FINANC, V69, P819, DOI 10.1111/jofi.12124
+   Gerlach S., 2010, DTSCH BUNDESBANK EUR, V09/2010
+   Gervais S, 2001, REV FINANC STUD, V14, P1, DOI 10.1093/rfs/14.1.1
+   Giannikos C, 2013, J DERIV, V21, P27
+   Gray D. F., 2008, NEW FRAMEWORK MEASUR, P13607
+   Gray DF, 2012, ANNU REV FINANC ECON, V4, P297, DOI 10.1146/annurev-financial-110311-101816
+   Gunduz Y, 2014, J INT MONEY FINANC, V49, P425, DOI 10.1016/j.jimonfin.2014.03.013
+   HAUSMAN JA, 1978, ECONOMETRICA, V46, P1251, DOI 10.2307/1913827
+   Howarth D, 2015, JOINT SESS EUR CONS, P10
+   Hsiao C., 1985, ECONOMET REV, V4, P121, DOI [10.1080/07474938508800078, DOI 10.1080/07474938508800078]
+   Idier J, 2014, J BANK FINANC, V47, P134, DOI 10.1016/j.jbankfin.2014.06.022
+   JEGADEESH N, 1993, J FINANC, V48, P65, DOI 10.1111/j.1540-6261.1993.tb04702.x
+   Jiang L., 2017, W23080 NAT BUR EC RE
+   Kallestrup R, 2016, J EMPIR FINANC, V38, P374, DOI 10.1016/j.jempfin.2016.01.004
+   Kraussl R, 2016, J EMPIR FINANC, V38, P363, DOI 10.1016/j.jempfin.2016.04.005
+   Leblond P, 2014, J BANK REGUL, V15, P288, DOI 10.1057/jbr.2014.11
+   Li J., 2014, BANK ITALY WORKING P, V990
+   LINTNER J, 1965, REV ECON STAT, V47, P13, DOI 10.2307/1924119
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   McQueen G, 1996, J FINANC, V51, P889, DOI 10.2307/2329226
+   Merler S, 2012, BRUEGEL POLICY CONTR
+   Mody A, 2009, IMF WORKING PAPERS, V09/108
+   Nowotny E, 2014, ATLANTIC ECON J, V42, P229, DOI 10.1007/s11293-014-9420-8
+   Odean T, 1998, J FINANC, V53, P1775, DOI 10.1111/0022-1082.00072
+   Pasquariello P, 2007, REV FINANC STUD, V20, P391, DOI 10.1093/rfs/hhl010
+   Popov A., 2013, IMPACT SOVEREIGN DEB, V382
+   Schich S., 2012, OECD J FINANCIAL MAR, V102, P45
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   Statman M, 2006, REV FINANC STUD, V19, P1531, DOI 10.1093/rfs/hhj032
+   Veronesi P, 1999, REV FINANC STUD, V12, P975, DOI 10.1093/rfs/12.5.975
+   Williams G, 2013, J BANK FINANC, V37, P563, DOI 10.1016/j.jbankfin.2012.09.021
+   Yip PSL, 2007, STRATEG ORGAN, V5, P13, DOI 10.1177/1476127006073512
+   Yu S, 2017, RES INT BUS FINANC, V39, P68, DOI 10.1016/j.ribaf.2016.07.033
+NR 78
+TC 0
+Z9 0
+U1 0
+U2 3
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0922-680X
+EI 1573-0468
+J9 J REGUL ECON
+JI J. Regul. Econ.
+PD FEB
+PY 2019
+VL 55
+IS 1
+BP 67
+EP 106
+DI 10.1007/s11149-018-09373-6
+PG 40
+WC Economics
+SC Business & Economics
+GA HO9YV
+UT WOS:000461322800004
+DA 2019-12-27
+ER
+
+PT J
+AU Wang, AM
+AF Wang, Aimin
+TI A framework for assessing project vulnerability to crises
+SO INTERNATIONAL JOURNAL OF MANAGING PROJECTS IN BUSINESS
+LA English
+DT Article
+DE Crisis management; Project complexity; Project management methodology
+ID UNEXPECTED EVENTS; COMPLEX PROJECTS; RISK-MANAGEMENT; UNCERTAINTY;
+   EFFICIENCY; NETWORKS
+AB Purpose The purpose of this paper is to propose a framework for assessing the vulnerability of projects to crises. The study seeks to clarify the cascade effects of disruptions leading to project crises and to improve project robustness against crises from a systems perspective. Design/methodology/approach A framework for assessing project vulnerability to crises is developed using complex network theory. The framework includes network representation of project systems, analyzing project network topology, simulating the cascade of unexpected disruptions and assessing project vulnerability. Use of the framework is then illustrated by applying it to a case study of a construction project. Findings Project network topology plays a critical role in resisting crises. By increasing the resilience of the critical tasks and adjusting the structure of a project, the complexity and vulnerability of the project can be reduced, which in turn decreases the occurrence of crises.
+   Originality/value This paper presents a novel framework based on complex network theory to assess project vulnerability, which provides a systemic understanding of the cascade of disruptions that lead to project crises.
+C1 [Wang, Aimin] Shanghai Jiao Tong Univ, Antai Coll Econ & Management, Shanghai, Peoples R China.
+RP Wang, AM (reprint author), Shanghai Jiao Tong Univ, Antai Coll Econ & Management, Shanghai, Peoples R China.
+EM amwang@sjtu.edu.cn
+RI Wang, Aimin/AAH-1364-2019
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71102142]; China Scholarship CouncilChina
+   Scholarship Council [201306235015]
+FX This work is supported by the National Natural Science Foundation of
+   China (Grant No. 71102142) and China Scholarship Council (Grant No.
+   201306235015). The author is grateful to the editor and two anonymous
+   reviewers for their very helpful comments and suggestions.
+CR Aaltonen K, 2010, INT J MANAG PROJ BUS, V3, P564, DOI 10.1108/17538371011076055
+   Ackermann F, 2016, INT J PROJ MANAG, V34, P891, DOI 10.1016/j.ijproman.2016.04.001
+   Ackermann F, 2014, EUR J OPER RES, V238, P290, DOI 10.1016/j.ejor.2014.03.035
+   Ahiaga-Dagbui D. D., 2016, PROJ MANAG J, V48, P88
+   Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Artto K, 2008, INT J MANAG PROJ BUS, V1, P469, DOI 10.1108/17538370810906219
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Barrat A, 2004, P NATL ACAD SCI USA, V101, P3747, DOI 10.1073/pnas.0400087101
+   Baubion C., 2013, OECD WORKING PAPERS, DOI 10.1787/5k41rbd1lzr7-en
+   Beer S., 1994, DECISION CONTROL MEA
+   Bergman I, 2013, INT J MANAG PROJ BUS, V6, P106, DOI 10.1108/17538371311291053
+   Besner C, 2012, INT J MANAG PROJ BUS, V5, P230, DOI 10.1108/17538371211214923
+   Brady T, 2014, PROJ MANAG J, V45, P21, DOI 10.1002/pmj.21434
+   Brink T, 2017, INT J MANAG PROJ BUS, V10, P315, DOI 10.1108/IJMPB-06-2016-0055
+   Cavaleri S, 2008, INT J MANAG PROJ BUS, V1, P71, DOI 10.1108/17538370810846423
+   Chartier A, 2010, CAN J ADM SCI, V27, P148, DOI 10.1002/CJAS.151
+   Cooke-Davies T. J., 2007, PROJECT MANAGEMENT J, V38, P50, DOI DOI 10.1177/875697280703800206
+   Davies A, 2016, PROJ MANAG J, V47, P26, DOI 10.1002/pmj.21574
+   De Meyer A, 2002, MIT SLOAN MANAGE REV, V43, P60
+   Deng XP, 2014, PROJ MANAG J, V45, P20, DOI 10.1002/pmj.21397
+   Ellinas C, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0142469
+   Everett MG, 2014, SOC NETWORKS, V38, P111, DOI 10.1016/j.socnet.2014.03.005
+   Floricel S., 2001, INT J PROJ MANAG, V19, P445, DOI DOI 10.1016/S0263-7863(01)00047-3
+   Flyvbjerg B, 2006, QUAL INQ, V12, P219, DOI 10.1177/1077800405284363
+   Geraldi JG, 2010, INT J PROJ MANAG, V28, P547, DOI 10.1016/j.ijproman.2009.10.008
+   Godenhjelm S, 2015, INT J MANAG PROJ BUS, V8, DOI 10.1108/IJMPB-05-2014-0049
+   Hallgren Markus, 2008, International Journal of Project Management, V26, P830, DOI 10.1016/j.ijproman.2007.10.005
+   Hallgren M, 2011, INT J MANAG PROJ BUS, V4, P196, DOI 10.1108/17538371111120207
+   Hallgren M, 2009, INT J MANAG PROJ BUS, V2, P53, DOI 10.1108/17538370910930518
+   Helbing D, 2013, NATURE, V497, P51, DOI 10.1038/nature12047
+   HERMANN CF, 1963, ADMIN SCI QUART, V8, P61, DOI 10.2307/2390887
+   Hongliang Zhang, 2007, International Journal of Project Management, V25, P694, DOI 10.1016/j.ijproman.2007.02.004
+   Howick S., 2011, COMPLEX SYSTEMS FINA, P116
+   Ivory C., 2005, PROJECT MANAGEMENT J, V36, P5, DOI DOI 10.1177/875697280503600302
+   Johansson J, 2010, RELIAB ENG SYST SAFE, V95, P1335, DOI 10.1016/j.ress.2010.06.010
+   Kapsali M, 2011, INT J PROJ MANAG, V29, P396, DOI 10.1016/j.ijproman.2011.01.003
+   Kiridena S, 2016, PROJ MANAG J, V47, P56, DOI 10.1177/875697281604700605
+   Latora V, 2003, EUR PHYS J B, V32, P249, DOI 10.1140/epjb/e2003-00095-5
+   Liu L, 2015, INT J PROJ MANAG, V33, P599, DOI 10.1016/j.ijproman.2014.11.003
+   Loosemore M, 2015, INT J PROJ MANAG, V33, P1325, DOI 10.1016/j.ijproman.2015.02.005
+   Loosemore M., 1998, INT J PROJ MANAG, V16, P139
+   Loosemore M., 1998, ENG CONSTR ARCHIT MA, V5, P315, DOI DOI 10.1108/EB021085
+   Mainga W, 2017, INT J MANAG PROJ BUS, V10, P454, DOI 10.1108/IJMPB-04-2016-0035
+   Marle F., 2016, MANAGING COMPLEX HIG
+   Merrow E.W., 2011, IND MEGAPROJECTS CON
+   Motter AE, 2002, PHYS REV E, V66, DOI 10.1103/PhysRevE.66.065102
+   Pearson CM, 1998, ACAD MANAGE REV, V23, P59, DOI 10.2307/259099
+   Perrow C., 1984, NORMAL ACCIDENTS LIV
+   PINTO JK, 1990, IEEE T ENG MANAGE, V37, P269, DOI 10.1109/17.62322
+   Piperca S, 2012, INT J MANAG PROJ BUS, V5, P248, DOI 10.1108/17538371211214932
+   Project Management Institute (PMI), 2017, GUID PROJ MAN BOD KN
+   Pryke S. D., 2012, SOCIAL NETWORK ANAL
+   Ramasesh RV, 2014, J OPER MANAG, V32, P190, DOI 10.1016/j.jom.2014.03.003
+   Sanchez H, 2009, INT J MANAG PROJ BUS, V2, P14, DOI 10.1108/17538370910930491
+   Simard M, 2018, INT J MANAG PROJ BUS, V11, P806, DOI 10.1108/IJMPB-08-2017-0093
+   Soderholm Anders, 2008, International Journal of Project Management, V26, P80, DOI 10.1016/j.ijproman.2007.08.016
+   Staadt J, 2012, INT J MANAG PROJ BUS, V5, P51, DOI 10.1108/17538371211192892
+   Thamhain H, 2013, PROJ MANAG J, V44, P20, DOI 10.1002/pmj.21325
+   Tukiainen S, 2010, INT J MANAG PROJ BUS, V3, P526, DOI 10.1108/17538371011056129
+   Turner N, 2016, INT J MANAG PROJ BUS, V9, P845, DOI 10.1108/IJMPB-08-2015-0074
+   Wang L, 2017, INT J PROJ MANAG, V35, P341, DOI 10.1016/j.ijproman.2017.01.009
+   Wasserman S., 1994, SOCIAL NETWORK ANAL
+   White D, 2009, INT J MANAG PROJ BUS, V2, P36, DOI 10.1108/17538370910930509
+   Williams T. M., 1999, INT J PROJ MANAG, V17, P269, DOI DOI 10.1016/S0263-7863(98)00047-7
+   Williams T, 2017, PROJ MANAG J, V48, P55, DOI 10.1177/875697281704800405
+   Williams T, 2012, PROJ MANAG J, V43, P37, DOI 10.1002/pmj.21259
+   Winch G.M., 2001, CONSTRUCTION MANAGEM, V19, P519
+   Yin R. K., 2014, CASE STUDY RES DESIG
+   Zheng X, 2016, INT J PROJ MANAG, V34, P1214, DOI 10.1016/j.ijproman.2016.06.005
+   Zidane YJT, 2017, INT J MANAG PROJ BUS, V10, P621, DOI 10.1108/IJMPB-10-2016-0085
+NR 70
+TC 0
+Z9 0
+U1 2
+U2 2
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1753-8378
+EI 1753-8386
+J9 INT J MANAG PROJ BUS
+JI Int. J. Manag. Proj. Bus.
+PD DEC 2
+PY 2019
+VL 12
+IS 4
+BP 1079
+EP 1096
+DI 10.1108/IJMPB-06-2018-0116
+PG 18
+WC Business; Management
+SC Business & Economics
+GA JN4OK
+UT WOS:000496878300011
+DA 2019-12-28
+ER
+
+PT J
+AU Hsieh, MH
+   Lee, YH
+   Shyu, SD
+   Chiu, YF
+AF Hsieh, Ming-Hua
+   Lee, Yi-Hsi
+   Shyu, So-De
+   Chiu, Yu-Fen
+TI Estimating multifactor portfolio credit risk: A variance reduction
+   approach
+SO PACIFIC-BASIN FINANCE JOURNAL
+LA English
+DT Article
+DE Portfolio credit risk; Monte Carlo simulation; Variance reduction;
+   Importance sampling; Factor copula models
+AB The importance of credit markets in China and Asia Pacific has been increased significantly in the past decade and international regulation demands high standard in credit risk quantification for financial institutions. Computation for credit risk measures is a challenge problem. Hence this study aims to develop a fast Monte Carlo approach of estimating portfolio credit risk. The method could be applied to estimate the probability of large losses and the expected excess loss above a large threshold of a credit portfolio, which has a dependence structure driven by general factor copula models. Except for the assumption that a global common factor driving the default events of all defaultable obligors exists, the study does not impose any restrictions on the composition of the portfolio (e.g., stochastic recovery rates). Hence, this method can therefore be applied to a wide range of credit risk models. Numerical results demonstrate that the proposed method is efficient under general market conditions. In the high market impact condition, in credit contagion or market collapse environments, the proposed method is even more efficient.
+C1 [Hsieh, Ming-Hua] Natl Chengchi Univ, Dept Risk Management & Insurance, Taipei, Taiwan.
+   [Lee, Yi-Hsi] Cent S Univ, Sch Business, Changsha 410083, Hunan, Peoples R China.
+   [Shyu, So-De] Takming Univ Sci & Technol, Dept Accounting Informat, Taipei, Taiwan.
+   [Lee, Yi-Hsi; Chiu, Yu-Fen] Soochow Univ, Dept Financial Engn & Actuarial Math, Suzhou, Peoples R China.
+RP Hsieh, MH (reprint author), Natl Chengchi Univ, Risk & Insurance Res Ctr, Minist Sci & Technol, Taipei, Taiwan.
+EM mhsieh@nccu.edu.tw
+CR Asmussen S., 2007, STOCHASTIC SIMULATIO
+   Bank for International Settlements (BIS), 2017, BIS STAT B
+   Basel Committee on Banking Supervision (BCBS), 2006, BAS 2 INT CONV CAP M
+   Bassamboo A, 2008, OPER RES, V56, P593, DOI 10.1287/opre.1080.0513
+   Burtschell X, 2009, J DERIV, V16, P9, DOI 10.3905/JOD.2009.16.4.009
+   Cherubini U., 2011, DYNAMIC COPULA METHO
+   Cousin A., 2008, FRONTIERS QUANTITATI, P185
+   Embrechts P, 2003, HANDBOOKS FINANCE, P329, DOI 10.1016/B978-044450896-6.50010-8
+   Glasserman P, 2005, MANAGE SCI, V51, P1643, DOI 10.1287/mnsc.1050.0415
+   Glasserman P., 2004, MONTE CARLO METHODS
+   Glasserman P, 2007, MATH FINANC, V17, P345, DOI 10.1111/j.1467-9965.2006.00307.x
+   Glasserman P, 2007, J BANK FINANC, V31, P1375, DOI 10.1016/j.jbankfin.2006.10.018
+   Glasserman P, 2008, OPER RES, V56, P1200, DOI 10.1287/opre.1080.0558
+   GLYNN PW, 1989, MANAGE SCI, V35, P1367, DOI 10.1287/mnsc.35.11.1367
+   Gupton G.M., 1997, CREDITMETRICS TECHNI
+   HULL J, 2004, J DERIV, V12, P8, DOI DOI 10.3905/JOD.2004.450964
+   Kalemanova A, 2007, J DERIV, V14, P80, DOI 10.3905/jod.2007.681815
+   Kan R, 2017, CHINA FINANC REV INT, V7, P2, DOI 10.1108/CFRI-10-2016-0114
+   Kang W., 2005, 37 WINT SIM C ORL FL
+   Kealhofer S., 2001, TECHNICAL REPORT
+   Kostadinov K, 2005, TAIL APPROXIMATION C
+   Kuhn G, 2004, TAILS CREDIT DEFAULT
+   Lucas A, 2001, J BANK FINANC, V25, P1635, DOI 10.1016/S0378-4266(00)00147-3
+   Lucas A, 2003, APPL MATH FINANCE, V10, P337, DOI DOI 10.1080/1350486032000160786
+   Mashal R, 2003, CORRELATION EXTREME
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Morokoff W., 2004, 36 WINT SIM C WASH D
+   Wang Y, 2014, CHINA FINANC REV INT, V4, P385, DOI 10.1108/CFRI-07-2013-0095
+   Witkovsky V, 2001, J STAT PLAN INFER, V94, P1, DOI 10.1016/S0378-3758(00)00208-1
+NR 29
+TC 0
+Z9 0
+U1 1
+U2 1
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0927-538X
+EI 1879-0585
+J9 PAC-BASIN FINANC J
+JI Pac.-Basin Financ. J.
+PD OCT
+PY 2019
+VL 57
+AR UNSP 101047
+DI 10.1016/j.pacfin.2018.08.001
+PG 16
+WC Business, Finance
+SC Business & Economics
+GA JM6PH
+UT WOS:000496333600051
+DA 2019-12-27
+ER
+
+PT J
+AU Chowdhury, B
+   Dungey, M
+   Kangogo, M
+   Abu Sayeed, M
+   Volkov, V
+AF Chowdhury, Biplob
+   Dungey, Mardi
+   Kangogo, Moses
+   Abu Sayeed, Mohammad
+   Volkov, Vladimir
+TI The changing network of financial market linkages: The Asian experience
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article
+DE Network; Financial crises; Asian markets
+ID VOLATILITY SPILLOVERS; SYSTEMIC RISK; CONNECTEDNESS; CONTAGION; OIL;
+   SHOCKS
+AB We investigate the changing integration of Asian financial markets within the global financial network from 1995 to 2016, incorporating the direction of links between markets, the significance of these links, and their strength. Emphasis is placed on the transition of the networks before and after the Asian financial crisis of 1997-1998 and the global financial crisis of 2008-2009. The results reveal a general deepening of the connections of the Asian market with the rest of the world over the past two decades. The analysis demonstrates the increase in interconnectedness during periods of stress and the fall in the number of links in post-crisis periods. Moreover, many of these markets have transitioned from being primarily linked to the global markets via key bridge markets (such as Hong Kong) and over time developed stronger direct links with external markets. These findings highlight the potential importance of key geographical nodes in allowing emerging markets access to the international financial network.
+C1 [Chowdhury, Biplob; Dungey, Mardi; Kangogo, Moses; Abu Sayeed, Mohammad; Volkov, Vladimir] Univ Tasmania, Tasmanian Sch Business & Econ, Private Bag 84, Hobart, Tas 7001, Australia.
+RP Volkov, V (reprint author), Univ Tasmania, Tasmanian Sch Business & Econ, Private Bag 84, Hobart, Tas 7001, Australia.
+EM biplob.chowdhury@utas.edu.au; mardi.dungey@utas.edu.au;
+   moses.kangogo@utas.edu.au; mohammad.sayeed@utas.edu.au;
+   valdimir.volkov@utas.edu.au
+FU ARCFondation ARC pour la Recherche sur le CancerAustralian Research
+   Council [DP150101716]
+FX The authors are grateful for comments from participants at the Modelling
+   Systemic Risks and Contagions in the International Financial Markets,
+   Chengdu, China, September 2018, the editors Brian Lucey and Samuel Vigne
+   and staff at the Asian Development Bank, particularly Peter Rosenkranz.
+   This paper draws on ADB Economics Working Paper no. 558 which was
+   prepared as background material for the Asian Economic Integration
+   Report 2017 theme chapter "The Era of Financial Interconnectedness: How
+   can Asia Strengthen Financial Resilience?". Funding support was provided
+   under ARC Grant DP150101716. The views expressed in this publication are
+   those of the authors and do not necessarily reflect the views and
+   policies of the Asian Development Bank (ADB) or its Board of Governors
+   or the governments they represent.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Apostolakis G, 2014, J INT FINANC MARK I, V32, P128, DOI 10.1016/j.intfin.2014.06.001
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BONACICH P, 1972, J MATH SOCIOL, V2, P113, DOI 10.1080/0022250X.1972.9989806
+   Chuluun T, 2017, GLOB FINANC J, V33, P51, DOI 10.1016/j.gfj.2016.08.002
+   Cimini R, 2015, FINANC RES LETT, V14, P160, DOI 10.1016/j.frl.2015.05.003
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   Diebold FX, 2016, J FINANC ECONOMET, V14, P81, DOI 10.1093/jjfinec/nbv021
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Dufour JM, 1998, ECONOMETRICA, V66, P1099, DOI 10.2307/2999631
+   DUFOUR JM, 1993, ECON LETT, V42, P327, DOI 10.1016/0165-1765(93)90080-V
+   Dungey M., 2018, J INT FINANCIAL MARK
+   Dungey M., 2013, GOOGLING SIFIS
+   Dungey M., 2006, ECON PAPERS, V5, P32
+   Dungey M, 2015, J BANK FINANC, V58, P71, DOI 10.1016/j.jbankfin.2015.04.006
+   Dungey M, 2010, J BANK FINANC, V34, P1008, DOI 10.1016/j.jbankfin.2009.11.006
+   Farrell D., 2005, MED DEVICE MANUFACTU, P1
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Granger C. W. J., 2000, Q REV EC FINANCE, V40, P337, DOI DOI 10.1016/S1062-9769(00)00042-9
+   Ji Q., 2018, INT REV FINANCIAL AN
+   Ji Q, 2018, ENERG ECON, V75, P71, DOI 10.1016/j.eneco.2018.08.013
+   Ji Q, 2018, INT REV FINANC ANAL, V57, P1, DOI 10.1016/j.irfa.2018.02.001
+   Kaminsky GL, 2003, J ECON PERSPECT, V17, P51, DOI 10.1257/089533003772034899
+   Kleimeier S, 2008, OXFORD B ECON STAT, V70, P493, DOI 10.1111/j.1468-0084.2008.00509.x
+   Luo JW, 2018, ENERG ECON, V76, P424, DOI 10.1016/j.eneco.2018.10.031
+   Mensi W, 2018, FINANC RES LETT, V25, P230, DOI 10.1016/j.frl.2017.10.032
+   Merton RC, 2013, FINANC ANAL J, V69, P22, DOI 10.2469/faj.v69.n2.5
+   Mink M, 2015, EMERG MARK REV, V22, P18, DOI 10.1016/j.ememar.2014.11.003
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Narayan PK, 2014, PAC-BASIN FINANC J, V29, P146, DOI 10.1016/j.pacfin.2014.03.007
+   Pesaran M. H., 2016, 6141 CESIFO
+   Pradhan RP, 2015, INT REV FINANC ANAL, V39, P84, DOI 10.1016/j.irfa.2015.03.006
+   Quah D, 2011, GLOB POLICY, V2, P3, DOI 10.1111/j.1758-5899.2010.00066.x
+   Raddant M., 2016, 1609 OFF FIN RES
+   Tsopanakis A., 2018, MACROECON DYN, P1
+   Van De Leur MCW, 2017, J BANK FINANC, V78, P84, DOI 10.1016/j.jbankfin.2017.02.003
+   Wang GJ, 2018, COMPUT ECON, V51, P607, DOI 10.1007/s10614-016-9627-7
+   Yarovaya L, 2016, INT REV FINANC ANAL, V43, P96, DOI 10.1016/j.irfa.2015.09.004
+   Zhang D., 2018, INT REV FINANCIAL AN
+   Zhang DY, 2017, ENERG ECON, V62, P323, DOI 10.1016/j.eneco.2017.01.009
+NR 42
+TC 0
+Z9 0
+U1 10
+U2 10
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD JUL
+PY 2019
+VL 64
+BP 71
+EP 92
+DI 10.1016/j.irfa.2019.05.003
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA IH5ZC
+UT WOS:000474571000006
+OA Green Published
+DA 2019-12-27
+ER

@@ -1,0 +1,467 @@
+
+PT J
+AU Gogas, P
+   Papadimitriou, T
+   Matthaiou, MA
+AF Gogas, Periklis
+   Papadimitriou, Theophilos
+   Matthaiou, Maria-Artemis
+TI Bank supervision using the Threshold-Minimum Dominating Set
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Complex networks; Minimum Dominating Set; Banking supervision;
+   Monitoring optimization
+ID NETWORK TOPOLOGY; SYSTEMIC RISK; EXPOSURES; SCHEME; MARKET
+AB An optimized, healthy and stable banking system resilient to financial crises is a prerequisite for sustainable growth. Minimization of (a) the associated systemic risk and (b) the propagation of contagion in the case of a banking crisis are necessary conditions to achieve this goal. Central Banks are in charge of this significant undertaking via a close and detailed monitoring of the banking network. In this paper, we propose the use of an auxiliary supervision/monitoring system that is both efficient with respect to the required resources and can promptly identify a set of banks that are in distress so that immediate and appropriate action can be taken by the supervising authority. We use the network defined by the interrelations between banking institutions employing tools from Complex Networks theory for an efficient management of the entire banking network. In doing so, we introduce the Threshold Minimum Dominating Set (T-MDS). The T-MDS is used to identify the smallest and most efficient subset of banks that can be used as (a) sensors of distress of a manifesting banking crisis and (b) provide a path of possible contagion. We propose the use of this method as a supplementary monitoring tool in the arsenal of a Central Bank. Our dataset includes the 122 largest American banks in terms of their interbank loans. The empirical results show that when the T-MDS methodology is applied, we can have an efficient supervision of the whole banking network, by monitoring just a subset of 47 banks. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Gogas, Periklis; Papadimitriou, Theophilos; Matthaiou, Maria-Artemis] Democritus Univ Thrace, Dept Econ, Thessaloniki, Greece.
+RP Matthaiou, MA (reprint author), Democritus Univ Thrace, Dept Econ, Thessaloniki, Greece.
+EM maria.matthaiou7@gmail.com
+RI Gogas, Periklis/N-8162-2014
+OI Gogas, Periklis/0000-0002-5134-3869; Papadimitriou,
+   Theophilos/0000-0001-9035-183X
+FU European Union (European Social Fund (ESF))European Union (EU)European
+   Social Fund (ESF); Greek national funds through the Operational Program
+   'Education and Lifelong Learning' of the National Strategic Reference
+   Framework (NSRF)-Research Funding Program: THALES; European Social
+   FundEuropean Social Fund (ESF) [MIS 380292]
+FX This research has been co-financed by the European Union (European
+   Social Fund (ESF)) and Greek national funds through the Operational
+   Program 'Education and Lifelong Learning' of the National Strategic
+   Reference Framework (NSRF)-Research Funding Program: THALES. Investing
+   in knowledge society through the European Social Fund (MIS 380292).
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Angelini P, 1996, J BANK FINANC, V20, P853, DOI 10.1016/0378-4266(95)00029-1
+   Blinder AS, 2010, J ECON LIT, V48, P123, DOI 10.1257/jel.48.1.123
+   Bonanno G, 2004, EUR PHYS J B, V38, P363, DOI 10.1140/epjb/e2004-00129-6
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Boyer PC, 2012, J FINANC STABIL, V8, P206, DOI 10.1016/j.jfs.2011.07.002
+   Chan-Lau J.A., 2010, BALANCE SHEET NETWOR, V10
+   Cheng XZ, 2003, NETWORKS, V42, P202, DOI 10.1002/net.10097
+   Cocco J.F., 2003, LENDING RELATIONSHIP
+   Das B, 1997, ICC'97: 1997 IEEE INTERNATIONAL CONFERENCE ON COMMUNICATIONS - TOWARDS THE KNOWLEDGE MILLENNIUM, CONFERENCE RECORD - VOLS 1-3, P376, DOI 10.1109/ICC.1997.605303
+   Fagiolo G., 2008, PHYS SOC, V2, P1
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P., 2010, 383 BANK ENGL
+   Hoggarth G, 2002, J BANK FINANC, V26, P825, DOI 10.1016/S0378-4266(01)00268-0
+   Inaoka H, 2004, PHYSICA A, V339, P621, DOI 10.1016/j.physa.2004.03.011
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Johnson D., 1996, DYNAMIC SOURCE ROUTI
+   Kumar S, 2012, PHYS REV E, V86, DOI 10.1103/PhysRevE.86.026101
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Lyocsa S, 2012, PHYSICA A, V391, P4147, DOI 10.1016/j.physa.2012.03.038
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Nacher JC, 2012, NEW J PHYS, V14, DOI 10.1088/1367-2630/14/7/073005
+   Nagurney A., 1997, FINANCIAL NETWORKS S
+   Onnela JP, 2004, EUR PHYS J B, V38, P353, DOI 10.1140/epjb/e2004-00128-7
+   Onnela JP, 2003, PHYS SCRIPTA, VT106, P48, DOI 10.1238/Physica.Topical.106a00048
+   Papadimitriou T, 2013, PHYSICA A, V392, P4429, DOI 10.1016/j.physa.2013.05.013
+   Reyes J. A, 2011, WP1174 IMF
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Sandoval L, 2012, PHYSICA A, V391, P2678, DOI 10.1016/j.physa.2011.12.052
+   Schiavo S., 2008, INT TRADE FINANCIAL
+   Schleich J, 2012, J COMB OPTIM, V24, P397, DOI 10.1007/s10878-011-9396-0
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Shen C., 2010, P 23 INT C COMP LING, P984
+   Tabak BM, 2014, PHYSICA A, V394, P211, DOI 10.1016/j.physa.2013.09.010
+   Tabak BM, 2010, PHYSICA A, V389, P3240, DOI 10.1016/j.physa.2010.04.002
+   Thurner S, 2003, QUANT FINANC, V3, P306, DOI 10.1088/1469-7688/3/4/307
+   Tse CK, 2010, J EMPIR FINANC, V17, P659, DOI 10.1016/j.jempfin.2010.04.008
+   Tumminello M, 2007, EUR PHYS J B, V55, P209, DOI 10.1140/epjb/e2006-00414-4
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Wells S., 2004, 230 BANK ENGL
+   Wu J, 2001, TELECOMMUN SYST, V18, P13, DOI 10.1023/A:1016783217662
+   Yadav M., 2009, J COMPUT, V1, P200
+NR 43
+TC 1
+Z9 1
+U1 0
+U2 12
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD JUN 1
+PY 2016
+VL 451
+BP 23
+EP 35
+DI 10.1016/j.physa.2015.12.149
+PG 13
+WC Physics, Multidisciplinary
+SC Physics
+GA DI3TG
+UT WOS:000373420800003
+DA 2019-12-27
+ER
+
+PT J
+AU Soramaki, K
+   Cook, S
+   Laubsch, A
+AF Soramaki, Kimmo
+   Cook, Samantha
+   Laubsch, Alan
+TI A network-based method for visual identification of systemic risks
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE network analysis; systemic risk; complexity reduction; minimum-spanning
+   trees; outliers; financial markets
+ID FINANCIAL-MARKETS; TIME-SERIES
+AB Financial markets provide vast numbers of signals about the performance of companies, banks, assets and economies. These signals can be used by risk managers and regulators to better understand economic dependencies, correlations and phase transitions. In this paper, we present a methodology for mapping multiple dimensions of time series data into two-dimensional visual layouts by applying methods from statistics and network theory. The methodology involves identifying important correlations between the time series as well as monitoring individual series to determine which ones have extreme return values compared with their past performance. Analysis is presented visually to give quick insight into a complex system moving in time; for example, systemically important assets are easily recognizable as those that are central in the minimum spanning tree structure of the correlation matrix, and systemic events are visible as large numbers of assets having extreme values. We present historical scenarios to illustrate the methodology.
+C1 [Soramaki, Kimmo; Cook, Samantha; Laubsch, Alan] Financial Network Analyt, 4-8 Crown Pl, London EC2A 4BT, England.
+RP Soramaki, K (reprint author), Financial Network Analyt, 4-8 Crown Pl, London EC2A 4BT, England.
+EM kimmo@fna.fi; sam@fna.fi; alaubsch@gmail.com
+CR Amisano G, 1997, TOPICS STRUCTURAL VA
+   [Anonymous], 2015, BBC NEWS
+   Aste T, 2010, NEW J PHYS, V12, DOI 10.1088/1367-2630/12/8/085009
+   Bachmaier C., 2005, WORKING PAPER
+   Barigozzi M, 2013, 723 BARC GRAD SCH EC
+   BENJAMINI Y, 1995, J R STAT SOC B, V57, P289
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Birch J., 2015, COMPUTATIONAL EC, V7, P1
+   Bonanno G, 2004, EUR PHYS J B, V38, P363, DOI 10.1140/epjb/e2004-00129-6
+   Brookfield D., 2013, EUROPEAN J FINANCE, V19, P1
+   Brownlees CT, 2006, COMPUT STAT DATA AN, V51, P2232, DOI 10.1016/j.csda.2006.09.030
+   Chandola V, 2009, ACM COMPUT SURV, V41, DOI 10.1145/1541880.1541882
+   CHEN C, 1993, J AM STAT ASSOC, V88, P284, DOI 10.2307/2290724
+   Cont R, 2001, QUANT FINANC, V1, P223, DOI [10.1088/1469-7688/1/2/304, 10.1080/713665670]
+   Cover T.M, 2006, ELEMENTS INFORM THEO
+   Dacorogna M.M., 2001, INTRO HIGH FREQUENCY
+   Diebold F., 2011, 17490 NAT BUR EC RES
+   DUNN OJ, 1961, J AM STAT ASSOC, V56, P52, DOI 10.2307/2282330
+   Fenn D., 2010, TECHNICAL REPORT
+   Fiedor P, 2014, PHYS REV E, V89, DOI 10.1103/PhysRevE.89.052801
+   Fisher RA, 1914, BIOMETRIKA, V10, P507
+   Fisher RA, 1921, METRON, V1, P3, DOI DOI 10.1093/BIOMET/9.1-2.22
+   Fortiana Gregori J, 2008, WORKING PAPER SERIES, V948
+   Franses P, 1999, 9926A EI ER U ROTT
+   Franses PH, 1999, INT J FORECASTING, V15, P1, DOI 10.1016/S0169-2070(98)00053-3
+   GOWER JC, 1966, BIOMETRIKA, V53, P325, DOI 10.2307/2333639
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Grossi L., 2004, STUDIES NONLINEAR DY, V8, P1
+   Hampel F.R, 2005, ROBUST STAT APPROACH
+   Hjelmgaard K., 2014, US TODAY
+   Hodge VJ, 2004, ARTIF INTELL REV, V22, P85, DOI 10.1023/B:AIRE.0000045502.10941.a9
+   Kenett DY, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0015032
+   Laloux L, 1999, PHYS REV LETT, V83, P1467, DOI 10.1103/PhysRevLett.83.1467
+   Laubsch A., 2016, WORKING PAPER
+   Laubsch A., 1999, RISK MANAGEMENT PRAC
+   Laubsch A., 2014, FINANCIAL ECONOMETRI
+   Maillet B, 2009, OUTLIERS DETECTION C
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   Mizuno T, 2006, PHYSICA A, V364, P336, DOI 10.1016/j.physa.2005.08.079
+   Musmeci N., 2014, ABS14060496 CORR
+   NELSON CR, 1982, J MONETARY ECON, V10, P139, DOI 10.1016/0304-3932(82)90012-5
+   Nocera Joe, 2009, NY TIMES
+   Pozzi F, 2012, EUR PHYS J B, V85, DOI 10.1140/epjb/e2012-20697-x
+   RAMMAL R, 1986, REV MOD PHYS, V58, P765, DOI 10.1103/RevModPhys.58.765
+   RiskMetrics, 1996, TECHNICAL REPORT
+   Song WM, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0031929
+   Sornette D., 2012, WORKING PAPERS
+   Tumminello M, 2005, P NATL ACAD SCI USA, V102, P10421, DOI 10.1073/pnas.0500298102
+   Tumminello M, 2010, J ECON BEHAV ORGAN, V75, P40, DOI 10.1016/j.jebo.2010.01.004
+   Yang CX, 2014, PHYSICA A, V400, P168, DOI 10.1016/j.physa.2014.01.011
+NR 50
+TC 3
+Z9 3
+U1 0
+U2 2
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD MAR
+PY 2016
+VL 2
+IS 1
+BP 67
+EP 101
+PG 35
+WC Business, Finance
+SC Business & Economics
+GA DW5UX
+UT WOS:000383713700003
+DA 2019-12-28
+ER
+
+PT J
+AU Friesenbichler, KS
+AF Friesenbichler, Klaus S.
+TI Policy interaction and the integration of volatile renewable energy
+SO ENVIRONMENTAL ECONOMICS AND POLICY STUDIES
+LA English
+DT Article
+DE Renewables; Electricity market; Trade-off; Policy coordination;
+   Institutions
+ID ELECTRICITY; COMPLEXITY; SPAIN
+AB This paper argues that there are inherent trade-offs in energy policy objectives that pose frictions to the establishment of a new technology base. We ask how institutions in an evolving electricity system can be designed to best achieve policy targets that are partly conflicting. In particular, this concerns sector regulation that seeks to maintain security of supply which may conflict with the promotion of volatile renewable energy displacing peak and emergency capacities on the wholesale market. In a case study of the electricity sectors in Germany, Spain and Denmark, policy fields are analysed, which jointly determine systemic performance. The results suggest a key role of policy coordination in mitigating outage risks arising due to the displacement effect.
+C1 [Friesenbichler, Klaus S.] Austrian Inst Econ Res WIFO, Arsenal Objekt 20, A-1030 Vienna, Austria.
+RP Friesenbichler, KS (reprint author), Austrian Inst Econ Res WIFO, Arsenal Objekt 20, A-1030 Vienna, Austria.
+EM Klaus.friesenbichler@wifo.ac.at
+OI Friesenbichler, Klaus/0000-0003-2303-0336
+CR Aiginger K, 2012, WIFO WORKING PAPERS, V421, P1
+   [Anonymous], 2011, AUSW KERNKR MOR UB V
+   Antal M, 2010, ECOL ECON, V69, P937, DOI 10.1016/j.ecolecon.2010.01.002
+   Arthur W.B., 1997, EC EVOLVING COMPLEX
+   Arthur WB, 1999, SCIENCE, V284, P107, DOI 10.1126/science.284.5411.107
+   Centre for Policy Studies (CEPOS), 2009, WIND EN CAS DENM
+   Cochran J, 2012, NRELTP6A0053732 US D
+   de Castro L., 2011, P IEEE COMM CONTR CO, P1294
+   Gonzalez PD, 2008, ENERG POLICY, V36, P2917, DOI 10.1016/j.enpol.2008.03.025
+   del Rio P, 2007, ENERG POLICY, V35, P994, DOI 10.1016/j.enpol.2006.01.014
+   European Commission, 2006, GREEN PAPER EUR STRA
+   Federico G, 2010, REPORTS PUBLIC PRIVA
+   Field CB, 2014, CLIMATE CHANGE 2014: IMPACTS, ADAPTATION, AND VULNERABILITY, PT A: GLOBAL AND SECTORAL ASPECTS, P1
+   Foxon TJ, 2013, CAMB J ECON, V37, P187, DOI 10.1093/cje/bes057
+   Friesenbichler KS, 2013, 31 WWW
+   Fursch M, 2012, MERIT ORDER EFFEKT E
+   Gugler K, 2013, ENERG ECON, V40, P702, DOI 10.1016/j.eneco.2013.08.022
+   Haas R, 2011, RENEW SUST ENERG REV, V15, P1003, DOI 10.1016/j.rser.2010.11.015
+   Hughes T, 1987, SOCIAL CONSTRUCTION, P51, DOI DOI 10.1177/030631289019001010
+   Joskow Paul L, 2008, Utilities Policy, V16, P159, DOI 10.1016/j.jup.2007.10.003
+   Karnoe P., 2008, PROMOTING SUSTAINABL
+   KAUFFMAN S, 1987, J THEOR BIOL, V128, P11, DOI 10.1016/S0022-5193(87)80029-2
+   Klessmann C, 2008, ENERG POLICY, V36, P3646, DOI 10.1016/j.enpol.2008.06.022
+   Kuhlmann S, 2003, TECHNOL FORECAST SOC, V70, P619, DOI 10.1016/S0040-1625(03)00027-1
+   LBD, 2012, 8 IEWT VIENN
+   Maegaard P, 2009, DANISH RENEWABLE ENE
+   Meinshausen M, 2009, NATURE, V458, P1158, DOI 10.1038/nature08017
+   Meyer Niels I, 2007, European Environment, V17, P347, DOI 10.1002/eet.463
+   Monopolkommission, 2013, SOND 65 EN 2013 WETT, V65
+   Morcol G., 2012, COMPLEXITY THEORY PU
+   Moriarty P, 2012, FUTURES, V44, P883, DOI 10.1016/j.futures.2012.08.002
+   Nakada S, 2014, GLOBAL BIOENERGY SUP
+   Olesen G. B., 2002, DANISH EXPERIENCE WI
+   Philibert C, 2011, INTERACTIONS POLICIE, DOI [10.1787/5kggc12rmkzq-en, DOI 10.1787/5KGGC12RMKZQ-EN]
+   Rykkja LH, 2014, PUBLIC POLICY ADMIN, V29, P106, DOI 10.1177/0952076713510344
+   Schleicher-Tappeser R, 2012, 5 SEFEP
+   Schreuer A, 2010, 20104 RICC
+   Stern N, 2006, IAEA B, V48, P25
+   Wilson C, 2013, CLIMATIC CHANGE, V118, P381, DOI 10.1007/s10584-012-0618-y
+   World Energy Council, 2013, MAR EN
+   World Energy Council, 2015, WORLD EN RES CHART U
+NR 41
+TC 2
+Z9 2
+U1 0
+U2 3
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1432-847X
+EI 1867-383X
+J9 ENVIRON ECON POLICY
+JI Environ. Econ. Policy Stud.
+PD APR
+PY 2016
+VL 18
+IS 2
+SI SI
+BP 193
+EP 211
+DI 10.1007/s10018-015-0130-5
+PG 19
+WC Economics
+SC Business & Economics
+GA DO7PQ
+UT WOS:000377974900005
+DA 2019-12-28
+ER
+
+PT J
+AU Pourkhanali, A
+   Kim, JM
+   Tafakori, L
+   Fard, FA
+AF Pourkhanali, Armin
+   Kim, Jong-Min
+   Tafakori, Laleh
+   Fard, Farzad Alavi
+TI Measuring systemic risk using vine-copula
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Partial correlation; Vine copula; Credit risk
+ID CREDIT DEFAULT SWAP; STOCK MARKETS; MODEL; IMPACT
+AB We present an intuitive model of systemic risk to analyse the complex interdependencies between different borrowers. We characterise systemic risk by the way that financial institutions are interconnected. Using their probability of default, we classify different international financial institutions into five rating groups. Then we use the state-of-the-art canonical (C-) and D-vine copulae to investigate the partial correlation structure between the rating groups. Amongst many interesting findings, we discover that the second tier financial institutions pay a larger contribution to the systemic risk than the top tier borrowers. Further, we discuss an application of our methodology for pricing credit derivative swaps. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Pourkhanali, Armin; Fard, Farzad Alavi] RMIT Univ, Sch Econ Finance & Mkt, Melbourne, Vic 3000, Australia.
+   [Kim, Jong-Min] Univ Minnesota, Div Sci & Math, Morris, MN 56267 USA.
+   [Tafakori, Laleh] Univ Melbourne, Sch Math & Stat, Melbourne, Vic 3010, Australia.
+RP Tafakori, L (reprint author), Univ Melbourne, Sch Math & Stat, Melbourne, Vic 3010, Australia.
+EM armin.pourkhanali@rmit.edu.au; jongmink@morris.umn.edu;
+   laleh.tafakori@unimelb.edu.au; farzad.alavifard@rmit.edu.au
+OI Tafakori, laleh/0000-0002-0815-8094
+FU Australian Research CouncilAustralian Research Council [FL130100039]
+FX The authors would like to thank the editor and two anonymous referees
+   for their constructive suggestions that greatly improved the paper. The
+   third author would like to thank the Australian Research Council for
+   supporting this work through Laureate Fellowship FL130100039.
+CR Aas K, 2009, INSUR MATH ECON, V44, P182, DOI 10.1016/j.insmatheco.2007.02.001
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Bedford T, 2002, ANN STAT, V30, P1031
+   Bedford T, 2001, ANN MATH ARTIF INTEL, V32, P245, DOI 10.1023/A:1016725902970
+   Bhatti MI, 2012, J INT FINANC MARK I, V22, P622, DOI 10.1016/j.intfin.2012.02.004
+   Brechmann EC, 2014, COMPUT STAT DATA AN, V77, P233, DOI 10.1016/j.csda.2014.03.002
+   Brechmann EC, 2013, INSUR MATH ECON, V53, P722, DOI 10.1016/j.insmatheco.2013.09.009
+   Brechmann EC, 2013, J STAT SOFTW, V52
+   Buraschi A, 2010, J FINANC, V65, P393, DOI 10.1111/j.1540-6261.2009.01533.x
+   Chen H, 2014, J RISK INSUR, V81, P623, DOI 10.1111/j.1539-6975.2012.01503.x
+   Chen JL, 2014, ECON MODEL, V40, P167, DOI 10.1016/j.econmod.2014.03.031
+   CLAYTON DG, 1978, BIOMETRIKA, V65, P141, DOI 10.2307/2335289
+   Cooke RM, 2015, J MULTIVARIATE ANAL, V138, P4, DOI 10.1016/j.jmva.2015.02.001
+   Cooke R. M., 1997, P ASA SECT BAYES STA, V27
+   Das S. R., 2004, CORRELATED DEFAULT P
+   Das SR, 2007, J FINANC, V62, P93, DOI 10.1111/j.1540-6261.2007.01202.x
+   Das SR, 2000, MANAGE SCI, V46, P46, DOI 10.1287/mnsc.46.1.46.15124
+   Demarta S, 2005, INT STAT REV, V73, P111
+   Duffie D, 2009, J FINANC, V64, P2089, DOI 10.1111/j.1540-6261.2009.01495.x
+   Elliott RJ, 2000, MATH FINANC, V10, P179, DOI 10.1111/1467-9965.00088
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Fenech JP, 2015, ECON MODEL, V47, P340, DOI 10.1016/j.econmod.2015.03.001
+   Fortin I., 2002, International Journal of Intelligent Systems in Accounting, Finance and Management, V11, P89, DOI 10.1002/isaf.216
+   Frey R., 2003, J RISK, V6, P59, DOI DOI 10.21314/J0R.2003.089)
+   GENEST C, 1995, BIOMETRIKA, V82, P543, DOI 10.1093/biomet/82.3.543
+   Giglio S., 2011, P FEDERAL RESERVE BA, V5, P104
+   Hong YM, 2007, REV FINANC STUD, V20, P1547, DOI 10.1093/rfs/hhl037
+   Hu W., 2008, ADV EC, V22, P55
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Hull J, 2004, J BANK FINANC, V28, P2789, DOI 10.1016/j.jbankfin.2004.06.010
+   Joe H., 1997, MULTIVARIATE MODELS
+   Joe H, 1996, DISTRIBUTIONS FIXED, P120, DOI DOI 10.1214/LNMS/1215452614
+   Joe H, 2010, J MULTIVARIATE ANAL, V101, P252, DOI 10.1016/j.jmva.2009.08.002
+   Junker M, 2005, ECONOMET J, V8, P428, DOI 10.1111/j.1368-423X.2005.00173.x
+   Kaushik R., 2012, CREDIT DEFAULT SWAPS
+   Kim JM, 2011, COMPUT STAT DATA AN, V55, P1357, DOI 10.1016/j.csda.2010.09.025
+   Kurowicka D., 2006, UNCERTAINTY ANAL HIG
+   Lanzendrfer J., 2009, THESIS MUNICH U TECH
+   Li DX, 1999, DEFAULT CORRELATION
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Malevergne Y., 2002, TAIL DEPENDENCE FACT
+   Mansor F, 2015, J INT FINANC MARK I, V35, P102, DOI 10.1016/j.intfin.2014.12.009
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Naifar N, 2012, ECON MODEL, V29, P119, DOI 10.1016/j.econmod.2011.08.026
+   Nelsen R. B., 2013, INTRO COPULAS, V139
+   Nguyen CC, 2012, J INT FINANC MARK I, V22, P758, DOI 10.1016/j.intfin.2012.03.004
+   Norden L, 2004, J BANK FINANC, V28, P2813, DOI 10.1016/j.jbankfin.2004.06.011
+   Sklar A, 1959, CAN J STAT, P8
+NR 49
+TC 15
+Z9 15
+U1 1
+U2 26
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD FEB
+PY 2016
+VL 53
+BP 63
+EP 74
+DI 10.1016/j.econmod.2015.11.010
+PG 12
+WC Economics
+SC Business & Economics
+GA DE6UZ
+UT WOS:000370770400006
+DA 2019-12-28
+ER
+
+PT J
+AU Ahnert, T
+AF Ahnert, Toni
+TI Rollover Risk, Liquidity and Macroprudential Regulation
+SO JOURNAL OF MONEY CREDIT AND BANKING
+LA English
+DT Article
+DE bank funding; global game; liquidity; macroprudential; rollover risk
+ID CRISES; COORDINATION; EQUILIBRIUM; PRICES; RUNS; VOLATILITY; MARKETS
+AB I study rollover risk in wholesale funding markets when intermediaries hold liquidity ex ante and fire sales may occur ex post. Multiple equilibria exist in a global rollover game: intermediate liquidity holdings support equilibria with both positive and zero expected liquidation. A simple uniqueness refinement pins down the private liquidity choice, which balances the forgone expected return on investment with reduced fragility and costly liquidation. Due to fire sales, liquidity holdings are strategic substitutes. Intermediaries free ride on the holdings of other intermediaries, causing excessive liquidation. To internalize the systemic nature of liquidity, a macroprudential authority imposes liquidity buffers.
+C1 [Ahnert, Toni] Bank Canada, Financial Studies Div, Ottawa, ON, Canada.
+EM tahnert@bankofcanada.ca
+FU ECB
+FX I thank the coeditor (Robert DeYoung) and two anonymous referees for
+   constructive comments that significantly improved the paper. I also
+   thank Jason Allen, Kartik Anand, Christoph Bertsch, Margaret Bray,
+   Jonathan Chiu, Chris Graham, Co-Pierre Georg, Stefan Gissler, Philipp
+   Hartmann, Peter Hoffmann, Benjamin Nelson, Dimitri Vayanos, and seminar
+   participants at IBEFA Summer Meeting 2014, IRMC 2013, LSE, Nottingham
+   CFCM 2013, and UPF for useful feedback. This paper has been prepared by
+   the author under the Lamfalussy Fellowship Program sponsored by the ECB.
+   Any views expressed are only those of the author and do not necessarily
+   represent the views of the ECB, the Eurosystem, or the Bank of Canada.
+CR ALLEN F, 1994, AM ECON REV, V84, P933
+   Allen Franklin, 2007, UNDERSTANDING FINANC
+   Angeletos GM, 2006, AM ECON REV, V96, P1720, DOI 10.1257/aer.96.5.1720
+   Angeletos GM, 2006, J POLIT ECON, V114, P452, DOI 10.1086/504901
+   BASEL COMM. ON BANKING SUPERVISION BANK FOR INT'L SETTLEMENTS & INT'L ORG. OF SEC. COMM'NS, 2010, BAS 3 INT FRAM LIQ R
+   Basel Committee on Banking Supervision, 2013, BAS 3 LIQ COV RAT LI
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Campbell JY, 2011, AM ECON REV, V101, P2108, DOI 10.1257/aer.101.5.2108
+   CARLSSON H, 1993, ECONOMETRICA, V61, P989, DOI 10.2307/2951491
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenbach Thomas M., 2013, 597 FED RES BANK NEW
+   Gale D, 2010, INT J CENT BANK, V6, P187
+   Goldstein I, 2005, ECON J, V115, P368, DOI 10.1111/j.1468-0297.2005.00993.x
+   Goldstein I, 2005, J FINANC, V60, P1293, DOI 10.1111/j.1540-6261.2005.00762.x
+   Gromb D, 2002, J FINANC ECON, V66, P361, DOI 10.1016/S0304-405X(02)00228-3
+   GROSSMAN SJ, 1980, AM ECON REV, V70, P393
+   Hellwig C, 2006, AM ECON REV, V96, P1769, DOI 10.1257/aer.96.5.1769
+   Hellwig C, 2009, REV ECON STUD, V76, P223, DOI 10.1111/j.1467-937X.2008.00515.x
+   Huang R, 2011, J FINANC INTERMED, V20, P248, DOI 10.1016/j.jfi.2010.06.003
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Konig PJ, 2015, INT J CENT BANK, V11, P129
+   Korinek A, 2011, ECB WORKING PAPER SE, V1345
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   Martin A, 2014, REV FINANC STUD, V27, P957, DOI 10.1093/rfs/hht134
+   Morris S., 2003, ADV EC ECONOMETRICS, V1, P56
+   Morris Stephen, 2000, 1260 COWL FDN RES EC, V1260
+   Morris Stephen, 2010, ILLIQUIDITY CO UNPUB
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Schmidt L, 2016, AM ECON REV, V106, P2625, DOI 10.1257/aer.20140678
+   Shapiro J, 2015, REV FINANC STUD, V28, P2322, DOI 10.1093/rfs/hhv010
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Vives X, 2014, REV FINANC STUD, V27, P3547, DOI 10.1093/rfs/hhu064
+   Wagner W, 2011, J FINANC, V66, P1141, DOI 10.1111/j.1540-6261.2011.01666.x
+   Wagner W, 2009, INT J CENT BANK, V5, P75
+NR 35
+TC 2
+Z9 2
+U1 0
+U2 5
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-2879
+EI 1538-4616
+J9 J MONEY CREDIT BANK
+JI J. Money Credit Bank.
+PD DEC
+PY 2016
+VL 48
+IS 8
+BP 1753
+EP 1785
+DI 10.1111/jmcb.12363
+PG 33
+WC Business, Finance; Economics
+SC Business & Economics
+GA EI5AA
+UT WOS:000392504400006
+OA Green Published
+DA 2019-12-28
+ER

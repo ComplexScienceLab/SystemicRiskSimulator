@@ -1,0 +1,436 @@
+
+PT J
+AU Grilli, R
+   Tedeschi, G
+   Gallegati, M
+AF Grilli, Ruggero
+   Tedeschi, Gabriele
+   Gallegati, Mauro
+TI Bank interlinkages and macroeconomic stability
+SO INTERNATIONAL REVIEW OF ECONOMICS & FINANCE
+LA English
+DT Article
+DE Systemic risk; Business cycle; Volatility; Network connectivity; Giant
+   component
+ID BUSINESS FLUCTUATIONS; FINANCIAL FRAGILITY; SIZE DISTRIBUTION; SCALING
+   BEHAVIOR; SYSTEMIC RISK; CYCLE; FIRM; COMPLEXITY; ECONOMICS; MARKETS
+AB In this paper we analyze the role of the relationship between investment and finance as the main source of both financial instability and business cycle fluctuations. By building an agent-based model, our aim is to explicitly consider the complex nature of credit markets as strongly interactive and evolving structures that can be suitably depicted by networks. In this type of setting, the nodes of a graph represent banks/firms and links represent the relationship between lending and borrowing agents. Since both loans and bad debts proceed through credit linkages, we analyze how market connectivity in particular the interbank one affects agents' performances, bankruptcy cascades and business cycle fluctuations. Specifically, interbank linkages allow banks to share credit risk but at the same time they can spread one bank's crisis through the whole network. Ultimately, the goal of our model is to analyze how microscopic interaction feeds back on macro stability. (C) 2014 Elsevier Inc. All rights reserved.
+C1 [Grilli, Ruggero; Tedeschi, Gabriele; Gallegati, Mauro] Polytech Univ Marche, Ancona, Italy.
+RP Tedeschi, G (reprint author), Polytech Univ Marche, Ancona, Italy.
+EM gabriele.tedeschi@gmail.com
+RI GALLEGATI, MAURO/A-4091-2016
+OI Tedeschi, Gabriele/0000-0003-2638-7373
+CR Affinito M, 2012, J BANK FINANC, V36, P3163, DOI 10.1016/j.jbankfin.2011.11.016
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2000, ECON J, V110, P236, DOI 10.1111/1468-0297.00499
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Amaral LAN, 1997, J PHYS I, V7, P621
+   Angelini P, 1996, BANK ITALY WORKING P, V266
+   Ascari G., 2012, DEP EC QUANTITATIVE, P157
+   Assenza T, 2012, CENDEF WORKING PAPER, V12-08
+   Axtell RL, 2001, SCIENCE, V293, P1818, DOI 10.1126/science.1062081
+   Bank of International Settlements, 1983, BIS EC PAPERS, V8
+   Bartelsman E, 2005, IND CORP CHANGE, V14, P365, DOI 10.1093/icc/dth057
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Baum C. F., 2004, ECON MODEL, V25, P833
+   Berger AN, 1998, J BANK FINANC, V22, P613, DOI 10.1016/S0378-4266(98)00038-7
+   BERNANKE B, 1990, Q J ECON, V105, P87, DOI 10.2307/2937820
+   BERNANKE B, 1989, AM ECON REV, V79, P14
+   Bernanke BS, 1999, HBK ECON, V15, P1341
+   BERNANKE BS, 1995, J ECON PERSPECT, V9, P27, DOI 10.1257/jep.9.4.27
+   Cassar G, 2004, J BUS VENTURING, V19, P261, DOI 10.1016/S0883-9026(03)00029-6
+   Castiglionesi F, 2007, DISCUSSION PAPERS TI
+   Cincotti S, 2010, ECONOMICS-KIEL, V4, DOI 10.5018/economics-ejournal.ja.2010-26
+   Cirillo P, 2013, METHODOL COMPUT APPL, V15, P821, DOI 10.1007/s11009-012-9281-z
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   Cont R., 2007, VOLATILITY CLUSTERIN, P289
+   Cont R., 1997, SCALE INVARIANCE
+   Delli Gatti D., 2011, SERIES NEW EC WINDOW
+   Di Guilmi C, 2004, PHYSICA A, V333, P325, DOI 10.1016/j.physa.2003.10.022
+   Di Guilmi C., 2005, INT J APPL ECONOMETR, V2, P5
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Ding Z., 1993, J EMPIR FINANC, V1, P83, DOI DOI 10.1016/0927-5398(93)90006-D
+   Ding ZX, 1996, J ECONOMETRICS, V73, P185, DOI 10.1016/0304-4076(95)01737-2
+   Dinger V., 2007, DISCUSSION PAPER SER, V223
+   Doyle JC, 2005, P NATL ACAD SCI USA, V102, P14497, DOI 10.1073/pnas.0501426102
+   Erdos P., 1959, PUBL MATH-DEBRECEN, V6, P290, DOI DOI 10.1234/12345678
+   Fagiolo G., 2013, LEM PAPERS SERIES, V2013/08
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gaffeo E, 2003, PHYSICA A, V324, P117, DOI 10.1016/S0378-4371(02)01890-3
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gatti DD, 2005, J ECON BEHAV ORGAN, V56, P489, DOI 10.1016/j.jebo.2003.10.012
+   Gatti DD, 2007, MACROECON DYN, V11, P62, DOI 10.1017/S136510050706018X
+   Ghosal V, 2000, REV ECON STAT, V82, P338, DOI 10.1162/003465300558722
+   Gonzalez VM, 2014, INT REV ECON FINANC, V29, P466, DOI 10.1016/j.iref.2013.07.008
+   Gonzalez VM, 2013, INT REV ECON FINANC, V25, P169, DOI 10.1016/j.iref.2012.07.005
+   Gopikrishnan P, 1999, PHYS REV E, V60, P5305, DOI 10.1103/PhysRevE.60.5305
+   GREENWALD BC, 1990, AM ECON REV, V80, P160
+   GREENWALD BC, 1993, Q J ECON, V108, P77, DOI 10.2307/2118496
+   Grossman S., 1980, AM ECON REV, V70, P77
+   Harding D, 2002, J MONETARY ECON, V49, P365, DOI 10.1016/S0304-3932(01)00108-8
+   Helbing D., 2012, SOCIAL SELF ORG, P261
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Humphrey D, 1986, TECHNOLOGY REGULATIO, P97
+   Ijiri Y., 1977, SKEW DISTRIBUTIONS S
+   Iori G, 2001, PHYSICA A, V299, P205, DOI 10.1016/S0378-4371(01)00297-7
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   LUX T, 2001, APPL FINANCIAL EC, V11, P299, DOI DOI 10.1080/096031001300138708
+   Minsky H. P., 1986, STABILIZING UNSTABLE
+   Mishkin Frederic S, 2011, 16755 NBER
+   Mitchell WC, 1946, MEASURING BUSINESS C
+   MYERS SC, 1984, J FINANC ECON, V13, P187, DOI 10.1016/0304-405X(84)90023-0
+   Ott E., 2002, CHAOS DYNAMICAL SYST
+   Pushkin DO, 2004, PHYSICA A, V336, P571, DOI 10.1016/j.physa.2003.12.056
+   Riccetti L, 2013, J ECON DYN CONTROL, V37, P1626, DOI 10.1016/j.jedc.2013.02.008
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P832, DOI 10.2307/2077924
+   Sornette D, 2011, NATURE, V471, P166, DOI 10.1038/471166a
+   Stanca L., 1999, IND CORP CHANGE, V8, P551
+   Stanley MHR, 1996, NATURE, V379, P804, DOI 10.1038/379804a0
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Tedeschi G, 2009, EUR PHYS J B, V71, P489, DOI 10.1140/epjb/e2009-00337-6
+   Tedeschi G, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0052749
+   Thurner S, 2003, QUANT FINANC, V3, P306, DOI 10.1088/1469-7688/3/4/307
+   Trichet JC, 2010, ECB CENTR BANK C FRA
+   Upper C., 2002, DISCUSSION PAPER SER
+   Vitali S, 2013, IND CORP CHANGE, V22, P1069, DOI 10.1093/icc/dtt024
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Zajdenweber D., 1997, SCALE INVARIANCE
+NR 78
+TC 15
+Z9 15
+U1 3
+U2 43
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1059-0560
+EI 1873-8036
+J9 INT REV ECON FINANC
+JI Int. Rev. Econ. Financ.
+PD NOV
+PY 2014
+VL 34
+BP 72
+EP 88
+DI 10.1016/j.iref.2014.07.002
+PG 17
+WC Business, Finance; Economics
+SC Business & Economics
+GA AU3CW
+UT WOS:000345491300006
+DA 2019-12-28
+ER
+
+PT J
+AU Langfield, S
+   Liu, Z
+   Ota, T
+AF Langfield, Sam
+   Liu, Zijun
+   Ota, Tomohiro
+TI Mapping the UK interbank system
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Interbank markets; Core-periphery; Intermediation; Financial networks;
+   Market microstructure
+ID CONTAGION; MARKET; EXPOSURES; STABILITY; MODELS; RISK
+AB We present new evidence on the structure of interbank connections across key markets: derivatives, marketable securities, repo, unsecured lending and secured lending. Taken together, these markets comprise two networks: a network of interbank exposures and a network of interbank funding. Network structure varies across and within these two networks, for reasons related to markets' different economic functions. Credit risk and liquidity risk therefore propagate in the interbank system through different network structures. We discuss the implications for financial stability. (C) 2014 Published by Elsevier B.V.
+C1 [Langfield, Sam; Liu, Zijun; Ota, Tomohiro] Bank England, London, England.
+   [Langfield, Sam] European Cent Bank, Frankfurt, Germany.
+RP Ota, T (reprint author), Bank England, London, England.
+EM samlangfield@gmail.com; zijun.liu@bankofengland.co.uk;
+   ota.tomohiro@gmail.com
+CR Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Alves I., 2013, ESRB OCCASIONAL PAPE
+   Amini H., 2013, MATHEMATICAL FINANCE
+   Arciero L., 2013, DNB WORKING PAPER NO
+   Armantier O., 2012, FEDERAL RESERVE BANK
+   Bargigli L., 2013, ARXIV PREPRINT 1311
+   Battiston S., 2012, JOURNAL OF FINANCIAL, V8, P128
+   Bech M.L., 2008, FEDERAL RESERVE BANK
+   Bech M.L., 2008, DANMARK NATIONALBANK
+   Becher C., 2008, BANK OF ENGLAND WORK
+   Borgatti SP, 1999, SOC NETWORKS, V21, P375
+   Borgatti SP, 2002, UCINET FOR WINDOWS S
+   Brauning F., 2012, DEUTSCHE BUNDESBANK
+   Brunnermeier M., 2013, BANQUE DE FRANCE FIN, V2013, P123
+   Christophersen C., 2010, NORGES BANK WORKING
+   Craig B., 2014, JOURNAL OF FINANCIAL
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Duffie D, 2005, ECONOMETRICA, V73, P1815, DOI 10.1111/j.1468-0262.2005.00639.x
+   Duffie D, 2010, J ECON PERSPECT, V24, P51, DOI 10.1257/jep.24.1.51
+   European Central Bank, 2003, MEMORANDUM OF UNDERS
+   Freixas X, 2005, REV FINANC STUD, V18, P459, DOI 10.1093/rfs/hhi001
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Fricke D., 2012, KIEL WORKING PAPER N
+   Furfine C., 1999, FINANCIAL MARKETS IN, V8, P24, DOI DOI 10.1111/1468-0416.00031
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Haldane A. G., 2009, COMMUNICATION
+   Iazzetta C., 2009, BANCA DITALIA TEMI D
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Longstaff F. A., 2011, NBER WORKING PAPER N
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Montagna M., 2013, KIEL WORKING PAPER N
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Scott H. S., 2012, INTERCONNECTEDNESS A
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   van Lelyveld, 2012, DNB WORKING PAPER NO
+   WELLS SJ, 2004, BANK OF ENGLAND WORK
+   Wetherilt A., 2010, BANK OF ENGLAND WORK
+NR 40
+TC 50
+Z9 52
+U1 0
+U2 13
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD AUG
+PY 2014
+VL 45
+BP 288
+EP 303
+DI 10.1016/j.jbankfin.2014.03.031
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA AL9IV
+UT WOS:000339455700021
+DA 2019-12-27
+ER
+
+PT J
+AU Park, CY
+   Mercado , RV
+AF Park, Cyn-Young
+   Mercado, Rogelio V., Jr.
+TI Determinants of financial stress in emerging market economies
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Financial stress index; Financial contagion; Emerging market economies
+ID SYSTEMIC RISK; CONTAGION; CRISES
+AB The global financial crisis of 2008-2009 illustrates how financial turmoil in advanced economies could trigger severe financial stress in emerging markets. Previous studies dealing with financial crises and contagion show the linkages through which financial stress are transmitted from advanced to emerging markets. This paper extends the existing literature on the use of financial stress index (FSI) in understanding the channels of financial transmission in emerging market economies. Using FSI of 25 emerging markets, our panel regression estimates show that not only advanced economies FSI, but also regional and nonregional emerging market FSIs significantly increase domestic financial stress. Our findings also suggest that there is a common regional factor significantly affecting domestic FSI in emerging Asia and emerging Europe. Furthermore, the results from a structural vector autoregression model with contemporaneous restrictions indicate that although a domestic financial shock still accounts for most of the variation in domestic FSI, regional shocks play an important role in emerging Asia. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Park, Cyn-Young; Mercado, Rogelio V., Jr.] Asian Dev Bank, Econ & Res Dept, Mandaluyong City 1550, Philippines.
+RP Park, CY (reprint author), Asian Dev Bank, Econ & Res Dept, 6 ADB Ave, Mandaluyong City 1550, Philippines.
+EM cypark@adb.org
+OI Mercado, Rogelio/0000-0002-9274-8301
+CR Afonso A., 2011, ECB WORKING PAPER SE, V1319
+   Aizenman J., 2010, NBER WORKING PAPER S, Vw15804
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Arnold B, 2012, J BANK FINANC, V36, P3125, DOI 10.1016/j.jbankfin.2012.07.023
+   Balakrishnan R., 2009, WORLD ECONOMIC OUTLO
+   Balakrishnan R, 2011, EMERG MARK FINANC TR, V47, P40, DOI 10.2753/REE1540-496X4703S203
+   Bernanke B. S., 1986, CARNEGIE-ROCHESTER C, V25, P49, DOI DOI 10.1016/0167-2231(86)90037-0
+   Blanchard O., 1986, THE AMERICAN BUSINES
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   Borio C., 2009, BANK FOR INTERNATION
+   Calvo S, 1996, PRIVATE CAPITAL FLOW
+   Cardarelli R., 2008, WORLD ECONOMIC OUTLO
+   Cardarelli R, 2011, J FINANC STABIL, V7, P78, DOI 10.1016/j.jfs.2010.01.005
+   DAVIG T, 2010, FEDERAL RESERV BANK, V95, P35
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Dovern J., 2013, KIEL WORKING PAPERS, V1844
+   Eichengreen B., 2004, CAPITAL FLOWS AND CR
+   Eichler S, 2009, J BANK FINANC, V33, P1983, DOI 10.1016/j.jbankfin.2009.04.019
+   Fernandez V, 2007, EMERG MARK FINANC TR, V43, P58, DOI 10.2753/REE1540-496X430304
+   Hakkio C., 2009, FEDERAL RESERVE BANK
+   Hanschel E., 2005, BIS WORKING PAPER NO
+   Hollo D., 2012, EUROPEAN CENTRAL BAN, V1426
+   Illing M., 2006, J FINANCIAL STABILIT, V2, P243, DOI DOI 10.1016/j.jfs.2006.06.002
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Kose A. M., 2006, IMF WORKING PAPER
+   Kunt A., 1996, INTERNATIONAL MONETA, V45, P81
+   Laeven L., 2008, INTERNATIONAL MONETA
+   Misina M, 2009, INT J CENT BANK, V5, P95
+   Moser T., 2003, INT FINANC, V6, P157, DOI [10.1111/1468-2362.00113, DOI 10.1111/1468-2362.00113]
+   Moshirian F, 2008, J BANK FINANC, V32, P472, DOI 10.1016/j.jbankfin.2007.10.002
+   Moshirian F, 2011, J BANK FINANC, V35, P502, DOI 10.1016/j.jbankfin.2010.08.010
+   Ng T., 2011, BANK FOR INTERNATION
+   Oet M., 2011, FEDERAL RESERVE BANK
+   Reinhart CM, 2008, NBER WORKING PAPER S, P13671
+   Sims C., 1986, Q REV FEDERAL RE WIN, V10, P2
+   Stulz RM, 2005, J FINANC, V60, P1595, DOI 10.1111/j.1540-6261.2005.00775.x
+   Van Roye B., 2011, KIEL INSTITUTE WORKI
+   Yiu M., 2010, HKMA RESEARCH NOTE 0
+NR 39
+TC 11
+Z9 13
+U1 3
+U2 16
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD AUG
+PY 2014
+VL 45
+BP 199
+EP 224
+DI 10.1016/j.jbankfin.2013.09.018
+PG 26
+WC Business, Finance; Economics
+SC Business & Economics
+GA AL9IV
+UT WOS:000339455700016
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Ellul, A
+   Jotikasthira, C
+   Lundblad, CT
+   Wang, YH
+AF Ellul, Andrew
+   Jotikasthira, Chotibhak
+   Lundblad, Christian T.
+   Wang, Yihui
+TI Mark-to-market accounting and systemic risk: evidence from the insurance
+   industry
+SO ECONOMIC POLICY
+LA English
+DT Article
+ID FINANCIAL CRISIS; PANDORA BOX; LIQUIDITY; EQUILIBRIUM; PANACEA
+AB One of the most contentious issues raised during the recent crisis has been the potentially exacerbating role played by mark-to-market accounting. Many have proposed the use of historical cost accounting, promoting its ability to avoid the amplification of systemic risk. We caution against focusing on the accounting rule in isolation, and instead emphasize the interaction between accounting and the regulatory framework. First, historical cost accounting, through incentives that arise via interactions with complex capital adequacy regulation, does generate market distortions of its own. Second, while mark-to-market accounting may indeed generate fire sales during a crisis, forward-looking institutions that rationally internalize the probability of fire sales are incentivized to adopt a more prudent investment strategy during normal times which leads to a safer portfolio entering the crisis. Using detailed, position- and transaction-level data from the US insurance industry, we show that (a) market prices do serve as early warning signals', (b) insurers that employed historical cost accounting engaged in greater degrees of regulatory arbitrage before the crisis and limited loss recognition during the crisis, and (c) insurers facing mark-to-market accounting tend to be more prudent in their portfolio allocations. Our identification relies on the sharp difference in statutory accounting rules between life and P&C companies as well as the heterogeneity in implementation of these rules within each insurance type across US states. Our results indicate that regulatory simplicity may be preferred to the complexity of risk-weighted capital ratios that gives rise, through interactions with accounting rules, to distorted risk-taking incentives and potential build-up of systemic risk. Andrew Ellul, Chotibhak Jotikasthira, Christian T. Lundblad and Yihui Wang
+C1 [Ellul, Andrew] Indiana Univ, Bloomington, IN 47405 USA.
+   Univ N Carolina, Chapel Hill, NC 27515 USA.
+   Fordham Univ, Bronx, NY 10458 USA.
+RP Ellul, A (reprint author), Indiana Univ, Bloomington, IN 47405 USA.
+RI Jotikasthira, Chotibhak/P-8865-2017
+CR Admati A. R., 2013, BANKERS NEW CLOTHES
+   Allen F, 2008, J ACCOUNT ECON, V45, P358, DOI 10.1016/j.jacceco.2007.02.005
+   Allen F, 2006, NBER CONF R, P341
+   Badertscher BA, 2012, ACCOUNT REV, V87, P59, DOI 10.2308/accr-10166
+   Becker Bo, 2014, J FINANCE IN PRESS
+   Bhat G, 2011, J ACCOUNT ECON, V52, P153, DOI 10.1016/j.jacceco.2011.06.002
+   Blankespoor E, 2012, WORKING PAPER
+   Bleck A, 2007, J ACCOUNTING RES, V45, P229, DOI 10.1111/j.1475-679X.2007.00231.x
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   Bowen RM, 2010, WORKING PAPER
+   Braithwaite T., 2011, FINANCIAL TIMES
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Ellul A., 2012, WORKING PAPER
+   Ellul A, 2011, J FINANC ECON, V101, P596, DOI 10.1016/j.jfineco.2011.03.020
+   Gromb D, 2002, J FINANC ECON, V66, P361, DOI 10.1016/S0304-405X(02)00228-3
+   Haldane Andrew G., 2012, FED RES BANK KANS CI
+   Hall B., 2008, FINANCIAL TIMES
+   Heaton JC, 2010, J MONETARY ECON, V57, P64, DOI 10.1016/j.jmoneco.2009.11.005
+   Hellwig MF, 2009, ECONOMIST-NETHERLAND, V157, P129, DOI 10.1007/s10645-009-9110-0
+   Kashyap A. K., 2008, FED RES BANK KANS CI
+   Katz D., 2008, FORMER FDIC CHIEF FA
+   Kyle P., 2001, J FINANC, V56, P1401
+   Laux C, 2010, J ECON PERSPECT, V24, P93, DOI 10.1257/jep.24.1.93
+   Laux C, 2009, ACCOUNT ORG SOC, V34, P826, DOI 10.1016/j.aos.2009.04.003
+   Merrill C. B., 2012, WORKING PAPER
+   Morris S., 2004, Review of Finance, V8, P1, DOI 10.1023/B:EUFI.0000022155.98681.25
+   Plantin G, 2008, J ACCOUNT RES, V46, P435, DOI 10.1111/j.1475-679X.2008.00281.x
+   Rajan R., 2010, FAULT LINES HIDDEN F
+   Sapra H, 2008, J ACCOUNT ECON, V45, P379, DOI 10.1016/j.jacceco.2007.10.002
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Yellen J., 2011, REM INT C REAL FIN L
+NR 32
+TC 12
+Z9 12
+U1 2
+U2 19
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0266-4658
+EI 1468-0327
+J9 ECON POLICY
+JI Econ. Policy
+PD APR
+PY 2014
+VL 29
+IS 78
+BP 297
+EP 341
+DI 10.1111/1468-0327.12030
+PG 45
+WC Economics
+SC Business & Economics
+GA AJ2VS
+UT WOS:000337523100004
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Castellacci, G
+   Choi, Y
+AF Castellacci, Giuseppe
+   Choi, Youngna
+TI Financial instability contagion: a dynamical systems approach
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Sovereign credit; Systemic risk; Contagion; Multi-economy model; Market
+   instability indicator
+AB We build a multi-agent dynamical system for the global economy to investigate and analyse financial crises. The agents are large aggregates of a subeconomy, and the global economy is a collection of subeconomies. We use well-known theories of dynamical systems to represent a financial crisis as propagation of a negative shock on wealth due the breakage of a financial equilibrium. We first extend the framework of the market instability indicator, an early warning signal defined for a single economy as the spectral radius of the Jacobian matrix of the wealth dynamical system. Then, we formulate a quantitative definition of instability contagion in terms thereof. Finally, we analyse the mechanism of instability contagion for both single and multiple economies. Our contribution is to provide a methodology to quantify and monitor the level of instability in sectors and stages of a structured global economic model and how it may propagate through its components.
+C1 [Castellacci, Giuseppe] NYU, Dept Math, New York, NY USA.
+   [Choi, Youngna] Montclair State Univ, Dept Math Sci, Montclair, NJ 07043 USA.
+RP Choi, Y (reprint author), Montclair State Univ, Dept Math Sci, Montclair, NJ 07043 USA.
+EM choiy@mail.montclair.edu
+CR [Anonymous], 2012, NAT INC PROD ACC TAB
+   [Anonymous], 2010, EUR SOV DEBT CRIS
+   [Anonymous], 2008, FIN CRIS 2007 08
+   [Anonymous], 2010, GREEK GOV DEBT CRIS
+   [Anonymous], 2012, BBC
+   [Anonymous], 2005, FIN CRIS
+   Be Duc L., 2009, 105 ECB
+   BENHABIB J, 1979, J ECON THEORY, V21, P421, DOI 10.1016/0022-0531(79)90050-4
+   Benhabib J., 1992, CYCLES CHAOS EC EQUI
+   Brin M., 2003, INTRO DYNAMICAL SYST
+   Choi Y, 2013, HANDBOOK ON SYSTEMIC RISK, P453
+   Choi YN, 2012, QUANT FINANC, V12, P1351, DOI 10.1080/14697688.2011.627880
+   Financial Times, 2011, FINANCIAL TIMES
+   Hollo D., 2012, EUROPEAN CENTRAL BAN, V1426
+   Hommes C., 2008, NEW PALGRAVE DICT EC
+   Karolyi A, 2003, INT FINANC, V6, P179, DOI DOI 10.1111/1468-2362.00114
+   Robinson C, 1999, DYNAMICAL SYSTEMS ST
+NR 17
+TC 3
+Z9 3
+U1 0
+U2 0
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD JUL
+PY 2014
+VL 14
+IS 7
+BP 1243
+EP 1255
+DI 10.1080/14697688.2014.890737
+PG 13
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA AJ8IB
+UT WOS:000337945600010
+DA 2019-12-27
+ER

@@ -1,0 +1,509 @@
+
+PT J
+AU Flood, MD
+   Lemieux, VL
+   Varga, M
+   Wong, BLW
+AF Flood, Mark D.
+   Lemieux, Victoria L.
+   Varga, Margaret
+   Wong, B. L. William
+TI The application of visual analytics to financial stability monitoring
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article; Proceedings Paper
+CT Conference on Data Standards, Information and Financial Stability
+CY APR 11-12, 2014
+CL Loughborough Uni, Loughborough, ENGLAND
+HO Loughborough Uni
+DE Financial stability; Macroprudential supervision; Monitoring; Systemic
+   risk; Visual analytics
+ID SYSTEMIC RISK ANALYTICS; BIG-DATA; DATA VISUALIZATION; DIKW HIERARCHY;
+   MONEY MARKET; STATE
+AB This paper provides an overview of visual analytics the science of analytical reasoning enhanced by interactive visualizations tightly coupled with data analytics software and discusses its potential benefits in monitoring systemic financial stability. The core strength of visual analytics is to combine visualization's high-bandwidth information channel to the human analyst with the flexibility and power of rapid iteration analytics. This combination is especially valuable in the context of macroprudential supervision, which is increasingly dominated by large volumes of dynamic and heterogeneous data. Our contribution is to describe and categorize the analytical challenges faced by macroprudential supervisors, and to indicate where and how visual analytics can increase supervisors' comprehension of the data stream, helping to transform it into actionable knowledge to support informed decision- and policy-making. The paper concludes with suggestions for a research agenda. (C) 2016 Published by Elsevier B.V.
+C1 [Flood, Mark D.] Off Financial Res, 717 14th St NW, Washington, DC 20005 USA.
+   [Lemieux, Victoria L.] Univ British Columbia, Media & Graph Interdisciplinary Ctr, Forest Sci Ctr Bldg,FSC 3640 2424 Main Mall, Vancouver, BC V6T 1Z4, Canada.
+   [Varga, Margaret] Univ Oxford, Old Rd Campus,Res Bldg,Old Rd Campus,Roosevelt Dr, Oxford OX3 7DQ, England.
+   [Wong, B. L. William] Middlesex Univ London, Sch Sci & Technol, Human Comp Interact & Head Interact Design Ctr, London NW4 4BT, England.
+RP Flood, MD (reprint author), Off Financial Res, 717 14th St NW, Washington, DC 20005 USA.
+EM mark.flood@ofr.treasury.gov; vlemieux@mail.ubc.ca;
+   margaret.varga@oncology.ox.ac.uk; w.wong@mdx.ac.uk
+RI ; Lemieux, Victoria/D-5447-2016
+OI Flood, Mark/0000-0002-6330-6168; Lemieux, Victoria/0000-0003-1339-6289
+CR Achonu J., 2003, P 22 EUR ANN C HUM D, P103
+   Amengual D., 2013, RESOLUTION POLICY UN
+   Arias-Hernandez R, 2011, P HAW INT C SYST SCI, P1, DOI DOI 10.1109/HICSS.2011.339
+   Balakrishnan S., 2010, SIGMOD, P1187
+   Bank of England (B of E), 2013, 34 B E
+   Bank of England (B of E), 2015, DAT VIS COMP AR YOU
+   Bank of England (B of E), 2015, 3 CENT MACR DAT
+   Bech ML, 2015, PHYSICA A, V424, P44, DOI 10.1016/j.physa.2014.11.034
+   Bennett KB, 2011, DISPLAY AND INTERFACE DESIGN: SUBTLE SCIENCE, EXACT ART, P1
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Bjerke J. T., 2010, P NATO WORKSH VIS NE, P1
+   Bjorke J. T., 2014, STOTRIST085RTG41 NAT
+   Bjorke JT, 2010, INT J APPROX REASON, V51, P275, DOI 10.1016/j.ijar.2009.09.003
+   Board of Governors of the Federal Reserve System (FRB), TECHN REP 2007 MON P
+   Board of Governors of the Federal Reserve System (FRB), 1932, BANK SUSP US 1892 19
+   Board of Governors of the Federal Reserve System (FRB), 2013, COMPR CAP AN REV ASS
+   Board of Governors of the Federal Reserve System (FRB), 2013, 100 FRB BOARD GOV
+   Brammertz W., 2013, FINANCIAL ANAL RISK, P47
+   Brammertz W., 2009, UNIFIED FINANCIAL AN
+   Braswell J., 2013, HDB FINANCIAL DATA, VI
+   Brunetti C., 2015, 2015090 FEDS
+   Burns C. M., 2004, ECOLOGICAL INTERFACE
+   CFTC-SEC, 2010, FIND REG MARK EV MAY
+   Chan K. K., 2013, GLOBAL LEGAL ENTITY
+   Choo J, 2013, IEEE COMPUT GRAPH, V33, P22, DOI 10.1109/MCG.2013.39
+   Chuang J, 2012, ACM T COMPUT-HUM INT, V19, DOI 10.1145/2362364.2362367
+   Clark D. R., 2010, UNDERSTANDING PERFOR
+   Cook S., 2014, GLOBAL NETWORK PAYME, P2012
+   Crandall B., 2006, WORKING MINDS PRACTI
+   Duygan-Bump B, 2013, J FINANC, V68, P715, DOI 10.1111/jofi.12011
+   Engel P, 2013, EXTENSIBLE BUSINESS
+   European Central Bank, 2010, FINANCIAL STABIL JUN, V1, P138
+   Federal Deposit Insurance Corporation (FDIC), 2014, FAIL BANK LIST
+   Few S, 2006, INFORM DASHBOARD DES
+   Financial Stability Board and International Monetary Fund (FSB-IMF), 2009, TECHNICAL REPORT
+   Financial Stability Oversight Council, 2013, FSOC 2013 ANN REP
+   Flood M., 2013, 0011 OFF FIN RES
+   Flood M., 2010, WORKSH U MAR TECHN R
+   Flood M., 2015, 201402 OFF FIN RES
+   Flood M., 2013, FINANCIAL ANAL RISK, P15
+   Fox P, 2011, SCIENCE, V331, P705, DOI 10.1126/science.1197654
+   Fricke M, 2009, J INF SCI, V35, P131, DOI 10.1177/0165551508094050
+   Gotz D, 2008, IEEE S VIS ANAL, P123, DOI 10.1109/VAST.2008.4677365
+   Haynes R., 2016, OFFICE FINA IN PRESS
+   Heer J, 2012, COMMUN ACM, V55, P45, DOI 10.1145/2133806.2133821
+   Heijmans R., 2014, 418 NED BANK
+   Hey J., 2004, WORKING PAPER
+   Hutchins E., 1995, COGNITION WILD
+   International Monetary Fund (IMF), 2013, IMF DAT MAPP
+   Jones Charles M., 2013, 1311 COL BUS SCH
+   Kadivar Nazanin, 2009, Proceedings of the 2009 IEEE Symposium on Visual Analytics Science and Technology. VAST 2009. Held co-jointly with VisWeek 2009, P131, DOI 10.1109/VAST.2009.5333020
+   Kahneman D, 2011, THINKING FAST SLOW
+   Keim D, 2010, MASTERING INFORM AGE
+   Keim D, 2013, IEEE COMPUT GRAPH, V33, P20, DOI 10.1109/MCG.2013.54
+   Khandani AE, 2010, J BANK FINANC, V34, P2767, DOI 10.1016/j.jbankfin.2010.06.001
+   Krzywinski M, 2012, BRIEF BIOINFORM, V13, P627, DOI 10.1093/bib/bbr069
+   Kubelec C, 2012, INT J CENT BANK, V8, P143
+   LARKIN JH, 1987, COGNITIVE SCI, V11, P65, DOI 10.1016/S0364-0213(87)80026-5
+   Lemieux V. L., 2014, P C DAT STAND INF FI
+   Lemieux VL, 2013, ADV INTELL SYST, V206, P575, DOI 10.1007/978-3-642-36981-0_53
+   Lemieux VL, 2014, HANDBOOK OF FINANCIAL DATA AND RISK INFORMATION, VOL II: SOFTWARE AND DATA, P279
+   Leskovec J, 2014, MINING OF MASSIVE DATASETS, 2ND EDITION, P1
+   MacNeil S., 2013, COMPUT GRAPH FORUM, V14, P285
+   Markose SM, 2013, J BANK REGUL, V14, P285, DOI 10.1057/jbr.2013.10
+   Memisevic R, 2005, IEEE SYS MAN CYBERN, P3580
+   Mendelowitz A., 2013, WORKING PAPER
+   Munzner T., 2014, VISUALIZATION ANAL D
+   Nguyen P., 2014, WORKING PAPER
+   Nguyen PH, 2014, IEEE INT CONF INF VI, P225, DOI 10.1109/IV.2014.14
+   Oaksford L, 2012, CAMBRIDGE HDB COGNIT, P131
+   OECD, 2015, OECD STAT
+   Office of Financial Research (OFR), 2015, FIN STAB MON
+   Office of Financial Research (OFR), 2013, ANN REPORT
+   Office of the Comptroller of the Currency Board of Goyernors of the Federal Reserve System Federal Deposit Insurance Corporation and Office of Thrift Supervision (OCC-FRB-FDIC-OTS), 2011, FED REGISTER, V76, P39981
+   OFR Financial Research Advisory Committee (OFR-FRAC), 2013, FIN SERV RISK MAN  2
+   Pastor L, 2013, J FINANC ECON, V110, P520, DOI 10.1016/j.jfineco.2013.08.007
+   Pileggi H, 2012, IEEE T VIS COMPUT GR, V18, P2819, DOI 10.1109/TVCG.2012.263
+   Quax R, 2013, SCI REP-UK, V3, DOI 10.1038/srep01898
+   Rasmussen J., 1994, COGNITIVE SYSTEMS EN
+   Ronnqvist S., 2014, BANK NETWORKS TEXT I
+   Rowley J, 2007, J INF SCI, V33, P163, DOI 10.1177/0165551506070706
+   Sanderson P, 2003, P HUM FACT ERG SOC A, V47, P458
+   Sarkar IN, 2014, METHODS IN BIOMEDICAL INFORMATICS: A PRAGMATIC APPROACH, P1
+   Sarlin P., 2013, THESIS
+   Sarlin P., 2015, 1768 EUR CENTR BANK
+   Sarlin P, 2013, J INT FINANC MARK I, V26, P46, DOI 10.1016/j.intfin.2013.05.002
+   Sarlin P, 2013, ENG APPL ARTIF INTEL, V26, P1532, DOI 10.1016/j.engappai.2013.01.002
+   Schraagen JM, 2000, COGNITIVE TASK ANAL
+   Schwabish JA, 2014, J ECON PERSPECT, V28, P209, DOI 10.1257/jep.28.1.209
+   Securex, 2011, TECHNICAL REPORT
+   Shneiderman B, 1996, IEEE SYMPOSIUM ON VISUAL LANGUAGES, PROCEEDINGS, P336, DOI 10.1109/VL.1996.545307
+   Shneiderman B., 2009, DESIGNING USER INTER
+   Sleeman C., 2015, RECESSIONS RECOVERIE
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Tatu Andrada, 2012, Tsinghua Science and Technology, V17, P419
+   Thomas J.J., 2005, ILLUMINATING PATH RE
+   TREISMAN A, 1985, COMPUT VISION GRAPH, V31, P156, DOI 10.1016/S0734-189X(85)80004-9
+   Trickett SB, 2007, THINKING DATA, P65
+   Tufte E. R., 2001, VISUAL DISPLAY QUANT
+   Tufte Edward R., 1990, ENVISIONING INFORM
+   U. S. Treasury, 2016, RES CTR LEG INT RAT
+   Varga M. J., 2014, P NATO SAS 106 S AN
+   Vicente K.J., 1999, COGNITIVE WORK ANAL
+   VisRisk, 2015, VIS SYST RISK AN PLA
+   Vuckovic A., 2013, HUM FACTORS
+   Walker R, 2013, IEEE T VIS COMPUT GR, V19, P2139, DOI 10.1109/TVCG.2013.132
+   Ware C., 2013, INFORM VISUALIZATION
+   Watts KA, 2009, YALE LAW J, V119, P2
+   Wilkinson L, 2005, GRAMMAR GRAPHICS
+   Wong B. W., 2007, P 6 EUROCONTROL INN, P42
+   Woods DD, 1988, HDB HUMAN COMPUTER I, P3
+   World Bank, 2013, DAT VIS
+   Xiaoyu Wang, 2012, Tsinghua Science and Technology, V17, P440
+   Xu K, 2015, IEEE COMPUT GRAPH, V35, P54, DOI 10.1109/MCG.2015.50
+   Yi JS, 2007, IEEE T VIS COMPUT GR, V13, P1224, DOI 10.1109/TVCG.2007.70515
+   Zhang LS, 2012, IEEE CONF VIS ANAL, P173, DOI 10.1109/VAST.2012.6400554
+   2010, FED REG, V75, P10060
+NR 118
+TC 7
+Z9 7
+U1 3
+U2 21
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2016
+VL 27
+BP 180
+EP 197
+DI 10.1016/j.jfs.2016.01.006
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA EG0RO
+UT WOS:000390740100013
+DA 2019-12-28
+ER
+
+PT J
+AU Dupre, D
+   Perluss, P
+AF Dupre, Denis
+   Perluss, Preston
+TI Mastering risks: An illusion Truth and tropes on jeopardy
+SO RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE
+LA English
+DT Article
+DE Finance; Ethics; Risks; Performativity
+AB Drawing on examples from maritime insurance, this article seeks to show that historically rules and regulations have often taken into consideration the performativity of risk insurance so as to limit the range of insured risks and thus avoid the realization of the claims through embezzlement or kindred corruption.
+   Today the question of performativity and corruption remains outside the pale of financial research. Having rejected the distinction between uncertainty and risk, financiers take risk quantification as an incontrovertible given. Quantifying risk has become a key feature in modern finance ever since the difference between risk and uncertainty was rejected by financiers. Two reasons underlie this state of affairs: first the prevalent rationalist paradigm as expounded by highly reputed university professors has elevated "quantifiable risk" to a dogma. Additionally, this idea of risk, and its quantifiable limits, gain acceptance by society to the extent that systemic risk is constrained by a further concept: efficient markets. Herein we develop an idea of ethical responsibility which leads to a novel definition of risk, sharply diverging from current practice and instruction, so as to meeting the contemporary needs of both finance and broader society. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Dupre, Denis] Univ Grenoble Alps, Dept Business, CERAG, INRIA,STEEP Team, Grenoble, France.
+   [Dupre, Denis] PPL, Grenoble, France.
+   [Perluss, Preston] Univ Grenoble Alps, LARHRA, Grenoble, France.
+RP Dupre, D (reprint author), Univ Grenoble Alps, Dept Business, CERAG, INRIA,STEEP Team, Grenoble, France.
+CR [Anonymous], 2010, MAIS QUI SONT CES EC
+   Bachelier L., 1900, ANN SCI ECOLE NORM S, V3, P21, DOI 10.24033/asens.476
+   Beck Ulrich, 2001, SOC RISQUE VOIE AUTR
+   Bernstein Peter, 1996, GODS REMARKABLE STOR
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Bourguignat H., 2009, ARROGANCE FINANCE CO
+   CASSIDY J, 2009, MARKETS FAIL LOGIC E
+   Castoriadis C, 1975, I IMAGINAIRE SOC
+   Crombie A. C, 1994, STYLES SCI THINKING
+   DEMBINSKI PH, 2008, FINANCE SERVANTE FIN
+   Dupre D., 2014, ETHIQUE PUBLIQUE, V16, P11
+   Dupuy J-P., 2004, CATASTROPHISME ECLAI
+   El Karoui N., 2008, VIDEO SEANCE PUBLIQU
+   Hacking Ian, 1992, SOCIAL DIMENSIONS SC, P130
+   HAUTCOEUR P.-C, 2014, AVENIR SCI EC U FRAN
+   Illich I., 1973, LA CONVIVIALITE
+   Kahn A., 2008, MATHS SONT MAILLON C
+   Kant E, 1785, GROUNDWORK METAPHYSI
+   Keen Steve, 2001, DEBUNKING EC NAKED E
+   Kitcher P., 2010, SCI VERITE DEMOCRATI
+   Knight F. H., 1964, RISK UNCERTAINTY PRO
+   Kourouma L., 2013, BANK MARK INVEST, V126, P45
+   Larousserie D., 2012, LE MONDE FR     1025
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Marx K., 1845, DANS PHILOSOPHIE
+   Michaud Y., 2000, CAPRICES MARCHES FIN
+   Mollenkamp C., 2006, WALL STR J      0309
+   Orlean A, 1999, POUVOIR FINANCE
+   Orlean A., 2004, CRISES FINANCIERES R, P241
+   Perelstein Louis, 2014, LA TRIBUNE      0228
+   Perez R., 2010, MANAGEMENT AVENIR, P170
+   Peyrelevade J., 2010, LA TRIBUNE FR   1112
+   Polanyi K., 1944, GREAT TRANSFORMATION
+   Smith A, 2006, THEORY MORAL SENTIME
+   Toussaint E., 2014, IMPUNITE BANQUES DOI
+   Walter C, 1996, ANN HIST SCI SOC, V51, P873, DOI 10.3406/ahess.1996.410892
+   Walter C., 2009, VIRUS B CRISE FINANC
+NR 37
+TC 2
+Z9 2
+U1 0
+U2 2
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0275-5319
+EI 1878-3384
+J9 RES INT BUS FINANC
+JI Res. Int. Bus. Financ.
+PD MAY
+PY 2016
+VL 37
+BP 620
+EP 628
+DI 10.1016/j.ribaf.2015.12.001
+PG 9
+WC Business, Finance
+SC Business & Economics
+GA DZ6YR
+UT WOS:000386009700043
+DA 2019-12-28
+ER
+
+PT J
+AU Yang, CX
+   Zhu, XS
+   Jiang, LL
+   Hu, S
+   Li, H
+AF Yang Chunxia
+   Zhu Xueshuai
+   Jiang Luoluo
+   Hu Sen
+   Li He
+TI Study on the contagion among American industries
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Transfer entropy; Information flow; Mutual information; Correlation
+   network
+ID MUTUAL INFORMATION; STOCK-MARKET; TIME-SERIES; NONLINEARITY; VOLATILITY;
+   MODEL; RISK
+AB Using a sliding window to scan through every industry index from 2 Jan 2003 to 26 Dec 2013 and transfer entropy to investigate information flow among sectors, we figure out corresponding industry's transfer entropy matrix in every given window. Next, a further analysis of information flow's variations between industries is carried out. Finally, we also use daily trading volumes of each group to carefully analyze trading volume correlation between sectors. The obtained facts are as follows. First, as crisis intensified, the amount of information flow between industries continues to grow and finally reaches a peak over fulloutbreak periods. Second, Financial sector always has large output transfer entropy, and before January 2007, the main information flow is from Financial sector to Non-Daily consumption, Energy, Raw material and Industrial sectors while around 12 April 2007, it has changed from Energy, Raw material and Industrial groups to Telecom, Daily consumption, Public utilities and Health care industries. Thus, Financial industry is the arch-criminal and it seriously affects Non-Daily consumption, Energy, Raw material and Industrial groups. Later, Telecom, Daily consumption, Health care and Public utilities industries are all plunged into the crisis, and financial crisis sweeps all the industries eventually. Besides, we also find that trading volume correlation is the fundamental reason of crisis propagation. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Yang Chunxia; Zhu Xueshuai; Li He] NUIST, Jiangsu Key Lab Big Data Anal Technol B DAT, Jiangsu Collaborat Innovat Ctr Atmospher Environm, Nanjing 210044, Jiangsu, Peoples R China.
+   [Jiang Luoluo] Wenzhou Univ, Wenzhou 325000, Peoples R China.
+   [Hu Sen] Yancheng Teachers Univ, Yancheng 224000, Peoples R China.
+RP Yang, CX (reprint author), NUIST, Jiangsu Key Lab Big Data Anal Technol B DAT, Jiangsu Collaborat Innovat Ctr Atmospher Environm, Nanjing 210044, Jiangsu, Peoples R China.
+EM y.cx@163.com
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [61273229]; Qing Lan Project of Jiangsu Province
+FX This work is supported by National Natural Science Foundation of China
+   (Grant No. 61273229), Qing Lan Project of Jiangsu Province.
+CR Baig T., 1998, IMF WORKING PAPER
+   Bhojraj S, 2003, J ACCOUNTING RES, V41, P745, DOI 10.1046/j.1475-679X.2003.00122.x
+   Billingsley P., 1965, ERGODIC THEORY INFOR
+   Brickley JA, 2010, J ACCOUNT ECON, V50, P235, DOI 10.1016/j.jacceco.2010.10.002
+   Campbell JY, 2001, J FINANC, V56, P1, DOI 10.1111/0022-1082.00318
+   Chu C.L., 2008, J RENMIN U CHINA, V1, P1
+   Church K. W., 1990, Computational Linguistics, V16, P22
+   CLARKE RN, 1989, J BUS, V62, P17, DOI 10.1086/296449
+   Dionisio A, 2004, PHYSICA A, V344, P326, DOI 10.1016/j.physa.2004.06.144
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Fan JPH, 2000, J BUS, V73, P629, DOI 10.1086/209657
+   FRASER AM, 1986, PHYS REV A, V33, P1134, DOI 10.1103/PhysRevA.33.1134
+   Gjika D, 2013, ECON MODEL, V33, P55, DOI 10.1016/j.econmod.2013.03.015
+   Greenspan A., 2007, WALL STREET J, V12
+   GUENTHER DA, 1994, J ACCOUNT ECON, V18, P115, DOI 10.1016/0165-4101(94)90021-3
+   Hassan SA, 2007, Q REV ECON FINANC, V47, P470, DOI 10.1016/j.qref.2006.05.006
+   Kahle KM, 1996, J FINANC QUANT ANAL, V31, P309, DOI 10.2307/2331394
+   Kantz H., 2004, NONLINEAR TIME SERIE, V7
+   KAROLYI GA, 1995, J BUS ECON STAT, V13, P11
+   KING M, 1994, ECONOMETRICA, V62, P901, DOI 10.2307/2951737
+   Kolmogorov A. N. A. N., 1993, INFORM THEORY THEORY
+   Krishnan J, 2003, CONTEMP ACCOUNT RES, V20, P685, DOI 10.1506/N57L-0462-856V-7144
+   Leahy S.P., 2014, STRUCTURE DYNAMICS B
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   Moskowitz TJ, 1999, J FINANC, V54, P1249, DOI 10.1111/0022-1082.00146
+   PALUS M, 1993, PHYS LETT A, V175, P203, DOI 10.1016/0375-9601(93)90827-M
+   PALUS M, 1995, PHYSICA D, V80, P186, DOI 10.1016/0167-2789(95)90079-9
+   Phylaktis K, 2009, FINANC MANAGE, V38, P381, DOI 10.1111/j.1755-053X.2009.01040.x
+   Plerou V, 2002, PHYS REV E, V65, DOI 10.1103/PhysRevE.65.066126
+   Schreiber T, 2000, PHYS REV LETT, V85, P461, DOI 10.1103/PhysRevLett.85.461
+   Shannon C. E., 1949, MATH THEORY INFORM
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Thierry A., 2006, INT REV FINANC ANAL, V15, P109
+   Uechi L, 2015, PHYSICA A, V421, P488, DOI 10.1016/j.physa.2014.11.055
+   Weder B., 2001, J INT ECON, V54, P293
+   Yang CX, 2014, PHYSICA A, V415, P1, DOI 10.1016/j.physa.2014.07.069
+   Yang CX, 2012, PHYSICA A, V391, P3198, DOI 10.1016/j.physa.2012.01.015
+   Zhang X, 2014, PHYSICA A, V415, P43, DOI 10.1016/j.physa.2014.07.068
+NR 38
+TC 8
+Z9 8
+U1 1
+U2 26
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD FEB 15
+PY 2016
+VL 444
+BP 601
+EP 612
+DI 10.1016/j.physa.2015.10.058
+PG 12
+WC Physics, Multidisciplinary
+SC Physics
+GA CZ0HO
+UT WOS:000366785900056
+DA 2019-12-27
+ER
+
+PT J
+AU Berger, T
+   Uddin, GS
+AF Berger, Theo
+   Uddin, Gazi Salah
+TI On the dynamic dependence between equity markets, commodity futures and
+   economic uncertainty indexes
+SO ENERGY ECONOMICS
+LA English
+DT Article
+DE Commodity prices; Policy uncertainty; Equity markets; Wavelet analysis;
+   Copulas
+ID WAVELET-BASED APPROACH; COPULA APPROACH; RISK PREMIA; STOCK; VOLATILITY;
+   CONTAGION; POLICY; FACTS
+AB This paper provides a thorough analysis on multiscale dependence schemes between equity markets, commodity futures and uncertainty indexes. Based on decomposed return series, we provide an exhaustive survey on time varying dependence, before and after the outbreak of financial crisis. Although daily returns of equity markets and commodity futures are described by weak dependence, our results indicate a stronger dependence between the long-run trends of both asset classes. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Berger, Theo] Univ Bremen, Dept Business Adm, D-28359 Bremen, Germany.
+   [Uddin, Gazi Salah] Linkoping Univ, Dept Management & Engn, S-58183 Linkoping, Sweden.
+RP Berger, T (reprint author), Wilhelm Herbst Str 5, D-28359 Bremen, Germany.
+EM theoberger@uni-bremen.de; gazi.salah.uddin@liu.se
+RI Uddin, Gazi Salah/L-6135-2019
+CR Baker S.R., 2013, MEASURING EC POLICY, P2
+   Beckmann J., 2015, QUANT FINAN IN PRESS
+   Berger T., 2013, INT EC, V133, P93
+   Berger T., 2015, J RISK IN PRESS
+   Berger T, 2015, PHYSICA A, V436, P338, DOI 10.1016/j.physa.2015.05.053
+   Bloom N, 2014, J ECON PERSPECT, V28, P153, DOI 10.1257/jep.28.2.153
+   Brogaard J, 2015, MANAGE SCI, V61, P3, DOI 10.1287/mnsc.2014.2044
+   Buyuksahin B, 2014, J INT MONEY FINANC, V42, P38, DOI 10.1016/j.jimonfin.2013.08.004
+   CARR P, 2006, J DERIV, V13, P13, DOI DOI 10.3905/JOD.2006.616865
+   Cheng I.-H., 2013, 19642 NAT BUR EC RES
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Chong J, 2010, J ALTERN INVEST, V12, P61, DOI 10.3905/JAI.2010.12.3.061
+   Creti A, 2013, ENERG ECON, V37, P16, DOI 10.1016/j.eneco.2013.01.005
+   Crowley P.M., 2007, J EC
+   Delatte AL, 2013, J BANK FINANC, V37, P5346, DOI 10.1016/j.jbankfin.2013.06.012
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Engle RF, 2009, ECON INST LECT SER, P1
+   Erb CB, 2006, FINANC ANAL J, V62, P69, DOI 10.2469/faj.v62.n2.4084
+   Fantazzini D., 2009, VAR IMPLEMENTATION H, P253
+   Fantazzini D., 2009, EMERGING MARKETS PER, P533
+   Gallegati M, 2012, COMPUT STAT DATA AN, V56, P3491, DOI 10.1016/j.csda.2010.11.003
+   Gencay R., 2001, INTRO WAVELETS OTHER
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Gonzalez-Pedraz C, 2015, QUANT FINANC, V15, P151, DOI 10.1080/14697688.2014.935463
+   Gorton G, 2006, FINANC ANAL J, V62, P47, DOI 10.2469/faj.v62.n2.4083
+   Graham M, 2013, J ECON BUS, V65, P86, DOI 10.1016/j.jeconbus.2012.09.005
+   Hammoudeh S, 2014, EMERG MARK REV, V21, P183, DOI 10.1016/j.ememar.2014.09.002
+   Joe, 1996, MULTIVARIATE MODELS
+   Jurado K, 2015, AM ECON REV, V105, P1177, DOI 10.1257/aer.20131193
+   Kat H. M., 2007, J INVESTMENT MANAGEM, V5, P16
+   Liu P, 2011, J EMPIR FINANC, V18, P211, DOI 10.1016/j.jempfin.2010.12.003
+   Mallat, 1989, IEEE T PATTERN ANAL, V11, P674
+   Pastor L, 2013, J FINANC ECON, V110, P520, DOI 10.1016/j.jfineco.2013.08.007
+   Pastor L, 2012, J FINANC, V67, P1219, DOI 10.1111/j.1540-6261.2012.01746.x
+   Percival Walden, 2000, WAVELET METHODS TIME
+   Roll R, 2013, J PORTFOLIO MANAGE, V39, P11, DOI 10.3905/jpm.2013.39.2.011
+   Sklar C., 1959, FONCTIONS REPARTITIO, V8, P229
+   Szymanowska M, 2014, J FINANC, V69, P453, DOI 10.1111/jofi.12096
+   Wang Y., 2014, ECON LETT, V127, P39
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+   Whaley RE, 2009, J PORTFOLIO MANAGE, V35, P98, DOI 10.3905/JPM.2009.35.3.098
+   Zhou YG, 2014, J BANK FINANC, V38, P216, DOI 10.1016/j.jbankfin.2013.10.010
+NR 42
+TC 21
+Z9 21
+U1 2
+U2 22
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD MAY
+PY 2016
+VL 56
+BP 374
+EP 383
+DI 10.1016/j.eneco.2016.03.024
+PG 10
+WC Economics
+SC Business & Economics
+GA DP4DO
+UT WOS:000378446600032
+DA 2019-12-27
+ER
+
+PT J
+AU Piffauta, PV
+   Miro, DR
+AF Piffauta, Pedro V.
+   Miro, Damia Rey
+TI Integration, financial contagion and securities risk: Empirical evidence
+   for the period 1995-2016
+SO CUADERNOS DE ECONOMIA-SPAIN
+LA Spanish
+DT Article
+DE Financial contagion; Correlation; GARCH DCC; Financial risk
+ID FOREIGN-EXCHANGE RATES; EQUITY MARKETS; VOLATILITY; HETEROSCEDASTICITY;
+   MODEL; ARCH
+AB Contagion is generally defined as the correlation between markets above what is already implicit in the fundamentals of the underlying assets. However, there is considerable disagreement on definitions of the foundations and the mechanisms that link these asset returns. The present study aims to capture and detect the spread between the main stock indices in the United States, Europe and Asia markets. (C) 2016 Asociacion Cuadernos de Economia. Published by Elsevier Espana, S.L.U. All rights reserved.
+C1 [Piffauta, Pedro V.] FT1 Consulting, Nueva York, Estados Unidos, Spain.
+   [Miro, Damia Rey] Univ Barcelona, Dept Teoria Econom, Barcelona, Spain.
+   [Miro, Damia Rey] BME, Serv Estudios, Bolsa Barcelona, Barcelona, Spain.
+RP Miro, DR (reprint author), Univ Barcelona, Dept Teoria Econom, Barcelona, Spain.; Miro, DR (reprint author), BME, Serv Estudios, Bolsa Barcelona, Barcelona, Spain.
+EM drey@borsabcn.es
+CR [Anonymous], 2002, J EMPIR FINANC, V9, P171
+   Baillie R., 1989, J BUSINESS EC STAT, V7, P60
+   BAILLIE RT, 1991, REV ECON STUD, V58, P565, DOI 10.2307/2298012
+   Bekaert G., 2003, 9510 NBER
+   Chen GM, 2002, J BANK FINANC, V26, P1113, DOI 10.1016/S0378-4266(01)00160-1
+   Chiang T. C., 2001, REV QUANTITATIVE FIN, V17, P301, DOI DOI 10.1023/A:1012296727217
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   DIEBOLD FX, 1989, J APPL ECONOM, V4, P1, DOI 10.1002/jae.3950040102
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R., 2001, 15 UCSD DEP EC
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   ENGLE RF, 1990, ECONOMETRICA, V58, P525, DOI 10.2307/2938189
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   HORVATH R, 2012, GLOBAL EC J, V12, P1
+   HSIEH DA, 1989, J BUS ECON STAT, V7, P307, DOI 10.2307/1391528
+   HSIEH DA, 1988, J INT ECON, V24, P129, DOI 10.1016/0022-1996(88)90025-6
+   HSIEH DA, 1989, J BUS, V62, P339, DOI 10.1086/296466
+   KASA K, 1992, J MONETARY ECON, V29, P95, DOI 10.1016/0304-3932(92)90025-W
+   Kotkatvuori-Ornberg J, 2013, INT REV FINANC ANAL, V28, P70, DOI 10.1016/j.irfa.2013.01.009
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   MILHOJ A, 1987, J BUS ECON STAT, V5, P99, DOI 10.2307/1391219
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Syllignakis MN, 2010, OPEN ECON REV, V21, P607, DOI 10.1007/s11079-009-9109-9
+   VLAAR PJG, 1993, J BUS ECON STAT, V11, P351, DOI 10.2307/1391960
+   Yang S., 2005, APPL FINANCIAL EC LE, V1, P89, DOI DOI 10.1080/17446540500054250
+NR 27
+TC 4
+Z9 4
+U1 0
+U2 14
+PU ELSEVIER DOYMA SL
+PI BARCELONA
+PA TRAVESERA DE GARCIA, 17-21, BARCELONA, 08021, SPAIN
+SN 0210-0266
+EI 2340-6704
+J9 CUAD ECON-SPAIN
+JI Cuad. Econ.-Spain
+PD SEP-DEC
+PY 2016
+VL 39
+IS 111
+BP 138
+EP 147
+DI 10.1016/j.cesjef.2016.09.003
+PG 10
+WC Economics
+SC Business & Economics
+GA EG3IK
+UT WOS:000390937000002
+OA Green Published
+DA 2019-12-27
+ER

@@ -1,0 +1,595 @@
+
+PT J
+AU Anginer, D
+   Demirguc-Kunt, A
+   Mare, DS
+AF Anginer, Deniz
+   Demirguec-Kunt, Asli
+   Mare, Davide S.
+TI Bank capital, institutional environment and systemic stability
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Systemic risk; Bank capital; Basel capital requirements; Distance to
+   default; Bank regulation and supervision
+ID FINANCIAL INTERMEDIATION; MARKET DISCIPLINE; DEPOSIT INSURANCE;
+   RISK-TAKING; CREDIT; SUPERVISION; DEBT; REQUIREMENTS; CONSTRAINTS;
+   BEHAVIOR
+AB Using data on publicly traded banks in 61 countries, we examine how the institutional environment affects the relationship between bank capital and system-wide fragility. Consistent with prior studies, we find that bank capital is associated with a reduction in the systemic risk contribution of individual banks. This effect is more pronounced for banks located in countries with less efficient public and private monitoring of financial institutions and in countries with lower levels of information availability. Overall, our findings suggest that capital can act as a substitute for a weak institutional environment in reducing systemic risk. (C) 2018 Published by Elsevier B.V.
+C1 [Anginer, Deniz; Demirguec-Kunt, Asli; Mare, Davide S.] World Bank, 1818 H St,NW, Washington, DC 20433 USA.
+   [Mare, Davide S.] Univ Edinburgh, Edinburgh, Midlothian, Scotland.
+RP Anginer, D (reprint author), World Bank, 1818 H St,NW, Washington, DC 20433 USA.
+EM danginer@worldbank.org; ademirguckunt@worldbank.org; dmare@worldbank.org
+OI Mare, Davide Salvatore/0000-0003-3777-0108
+FU Knowledge for Change Program at the World Bank
+FX We thank participants at the FDIC 15th Annual Bank Research Conference
+   and Ouarda Merrouche for helpful comments. The authors are also grateful
+   to Iftekhar Hasan (the editor) and to two anonymous referees for their
+   constructive suggestions. This research was supported by a grant from
+   the Knowledge for Change Program at the World Bank. This paper's
+   findings, interpretations and conclusions are entirely those of the
+   authors and do not necessarily represent the views of the World Bank,
+   their Executive Directors, or the countries they represent.
+CR Acharya VV, 2017, REV FINANC STUD, V30, P988, DOI 10.1093/rfs/hhw096
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya VV, 2016, REV CORP FINANC STUD, V5, P36, DOI 10.1093/rcfs/cfv006
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Allen F, 2011, REV FINANC STUD, V24, P983, DOI 10.1093/rfs/hhp089
+   Anginer D, 2014, J FINANC STABIL, V13, P202, DOI 10.1016/j.jfs.2014.02.003
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Barlevy G, 2003, J ECON THEORY, V110, P234, DOI 10.1016/S0022-0531(03)00039-5
+   Barth J. R., 2008, RETHINKING BANK REGU
+   Barth JR, 2013, J FINAN ECON POLICY, V5, P111, DOI 10.1108/17576381311329661
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   Beck T, 2013, J FINANC INTERMED, V22, P218, DOI 10.1016/j.jfi.2012.07.001
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Benoit S., FIN201410302013 HEC
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Bertay A. C., 2012, WORLD BANK POLICY RE
+   Besanko D, 1996, J FINANC INTERMED, V5, P160, DOI 10.1006/jfin.1996.0009
+   Bhattacharya S, 1998, J MONEY CREDIT BANK, V30, P745, DOI 10.2307/2601127
+   Brunnermeier M. K, 2009, 11 GENEVA REPORT WOR
+   Calem P, 1999, J FINANC INTERMED, V8, P317, DOI 10.1006/jfin.1999.0276
+   Calomiris CW, 2016, ANNU REV FINANC ECON, V8, P97, DOI 10.1146/annurev-financial-111914-041923
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Cihak M, 2013, J FINANC STABIL, V9, P733, DOI 10.1016/j.jfs.2013.10.002
+   Coval JD, 2005, J FINANC ECON, V75, P535, DOI 10.1016/j.jfineco.2004.02.005
+   Decamps JP, 2004, J FINANC INTERMED, V13, P132, DOI 10.1016/j.jfi.2003.06.003
+   Demirguc-Kunt A, 2004, J MONETARY ECON, V51, P375, DOI 10.1016/j.jmoneco.2003.04.001
+   Demirguc-Kunt A, 2002, J ECON PERSPECT, V16, P175, DOI 10.1257/0895330027319
+   Demirguc-Kunt A., 1999, P WORLD BANK ANN C D
+   Demirguc-Kunt A, 2013, J MONEY CREDIT BANK, V45, P1147, DOI 10.1111/jmcb.12047
+   Djankov S, 2007, J FINANC ECON, V84, P299, DOI 10.1016/j.jfineco.2006.03.004
+   Duchin R, 2014, J FINANC ECON, V113, P1, DOI 10.1016/j.jfineco.2014.03.005
+   Eichberger N, 2005, J EUR ECON ASSOC, V3, P547
+   Financial Stability Forum, 2009, RED PROC AR BANK CAP
+   Freixas X., 2008, MICROECONOMICS BANKI
+   FSF ( Financial Stability Forum), 2009, REP FIN STAB FOR ADD
+   FURLONG FT, 1989, J BANK FINANC, V13, P883, DOI 10.1016/0378-4266(89)90008-3
+   GENNOTTE G, 1990, AM ECON REV, V80, P999
+   Holmstrom B, 1997, Q J ECON, V112, P663, DOI 10.1162/003355397555316
+   Hong H, 2003, REV FINANC STUD, V16, P487, DOI 10.1093/rfs/hhg006
+   Hoque H, 2015, J BANK FINANC, V50, P455, DOI 10.1016/j.jbankfin.2014.06.003
+   Kaufman G. G., 2003, INDEP REV, V7, P371
+   Klomp J, 2012, J BANK FINANC, V36, P3197, DOI 10.1016/j.jbankfin.2011.10.006
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   KOEHN M, 1980, J FINANC, V35, P1235, DOI 10.2307/2327096
+   Laeven L, 2016, J BANK FINANC, V69, pS25, DOI 10.1016/j.jbankfin.2015.06.022
+   Mehran H, 2011, REV FINANC STUD, V24, P1019, DOI 10.1093/rfs/hhq022
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Moore K., 2011, WORKING PAPER
+   Nier E, 2006, J FINANC INTERMED, V15, P332, DOI 10.1016/j.jfi.2006.03.001
+   Puzanova N, 2013, J BANK FINANC, V37, P1243, DOI 10.1016/j.jbankfin.2012.11.017
+   Regression V., 2011, J FINANC STABIL, V5, P224
+   Reinhart CM, 2008, AM ECON REV, V98, P339, DOI 10.1257/aer.98.2.339
+   Repullo R, 2004, J FINANC INTERMED, V13, P156, DOI 10.1016/j.jfi.2003.08.005
+   ROCHET JC, 1992, EUR ECON REV, V36, P1137, DOI 10.1016/0014-2921(92)90051-W
+   VanHoose D, 2007, J BANK FINANC, V31, P3680, DOI 10.1016/j.jbankfin.2007.01.015
+   von Thadden EL, 2004, J FINANC INTERMED, V13, P90, DOI 10.1016/j.jfi.2003.04.002
+   Yuan K, 2005, J FINANC, V60, P379, DOI 10.1111/j.1540-6261.2005.00733.x
+   Zhang Q, 2015, J MONEY CREDIT BANK, V47, P1403, DOI 10.1111/jmcb.12249
+NR 60
+TC 7
+Z9 7
+U1 6
+U2 27
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD AUG
+PY 2018
+VL 37
+BP 97
+EP 106
+DI 10.1016/j.jfs.2018.06.001
+PG 10
+WC Business, Finance; Economics
+SC Business & Economics
+GA GO5AL
+UT WOS:000440029800007
+DA 2019-12-28
+ER
+
+PT J
+AU Ibeh, KIN
+   Uduma, IA
+   Makhmadshoev, D
+   Madichie, NO
+AF Ibeh, Kevin I. N.
+   Uduma, Idika Awa
+   Makhmadshoev, Dilshod
+   Madichie, Nnamdi O.
+TI Nascent multinationals from West Africa: Are their foreign direct
+   investment motivations any different?
+SO INTERNATIONAL MARKETING REVIEW
+LA English
+DT Article
+DE Africa; FDI; Motivations; Multinational enterprises; MNEs; EMNEs
+ID EMERGING MULTINATIONALS; OUTWARD FDI; INTERNATIONALIZATION; CHINESE;
+   STRATEGIES; FIRM; ENTERPRISES; KNOWLEDGE; PATHS; DETERMINANTS
+AB Purpose The purpose of this paper is to explore the motivations underpinning the foreign direct investment (FDI) activities, including the location and entry mode decisions, of nascent multinational enterprises (MNEs) from West Africa.
+   Design/methodology/approach This research adopted a case study approach entailing the triangulation of interview data with documentary evidence on two leading West African financial service companies that have FDI footprints in over 50 country markets.
+   Findings Evidence suggests the primacy of market-seeking motivations in explaining the FDI activities of the explored nascent MNEs, with relationship, efficiency and mission-driven motivations emerging as strong sub-themes. Having neither the global resonance of their traditional counterparts nor the government-augmented resource profile of their Asian counterparts, the study firms appear to have shied away from costly strategic asset and prestige-seeking FDI, and preferred psychically and institutionally proximate sub-Saharan African markets and non-organic collaborative entry modes.
+   Research limitations/implications The above insights should be considered tentative given the study's limited evidence base. This underscores the need for a larger scale empirical effort to assess the propositional inventory outlined at the end of this paper.
+   Practical implications Africa's growing population of MNEs are urged to continue to strengthen their positions across African markets, view these regional markets as a platform to learn and upgrade their capabilities for future expansion into more challenging global markets, and to augment their limited resource profiles, including by tapping into their global diaspora networks. Policy makers should support their market-seeking initiatives given evidence that they could be a pathway to higher order FDI motivations. This evolutionary approach reflects enduring lessons from earlier generations of MNEs. Policy makers should also support continuing intra-African investment flows as a pathway to creating more sizeable, integrated African markets and generating positive spill-overs, including in typically blind-sided post-conflict or fragile African markets. This also entails pushing for cross-border regulation needed to minimise the transfer of systemic risks across countries.
+   Originality/value The study provides rare empirical evidence on hitherto neglected MNEs from sub-Saharan Africa, thus extending the geographic compass of research on FDI motivations. It identifies some distinctive aspects of the explored MNEs' FDI behaviour, including the previously unheralded mission-driven motivation, whilst also revealing shared characteristics with traditional MNEs and emerging market multinational enterprisess.
+C1 [Ibeh, Kevin I. N.] Birkbeck Univ London, Dept Management, London, England.
+   [Uduma, Idika Awa] Univ Port Harcourt, Dept Management, Port Harcourt, Nigeria.
+   [Makhmadshoev, Dilshod] Univ Strathclyde, Dept Strategy & Org, Glasgow, Lanark, Scotland.
+   [Madichie, Nnamdi O.] London Sch Business & Management, Business Sch, London, England.
+RP Ibeh, KIN (reprint author), Birkbeck Univ London, Dept Management, London, England.
+EM k.ibeh@bbk.ac.uk
+RI Madichie, Nnamdi O/M-2053-2014
+OI Madichie, Nnamdi O/0000-0001-8400-5527; Madichie,
+   Nnamdi/0000-0003-0785-0983
+CR African Business, 2011, AFRICAN BUSINESS
+   African Development Bank, 2016, AFR EC OUTL
+   Ajai O., 2015, CHANGING DYNAMICS IN, P148
+   Aliber R.Z., 1970, INT CORPORATION, P17
+   Amighini A, 2010, SEOUL J ECON, V23, P239
+   [Anonymous], 2013, ACQUISITION REPORT
+   [Anonymous], 2014, ANN REPORT ACCOUNTS
+   Arita S, 2013, INT J EMERG MARK, V8, P329, DOI 10.1108/IJoEM-12-2010-0119
+   ARONOFF C, 1975, ACAD MANAGE J, V18, P753, DOI 10.2307/255377
+   Athreye S, 2009, IND CORP CHANGE, V18, P295, DOI 10.1093/icc/dtp002
+   Athreye S, 2009, IND CORP CHANGE, V18, P209, DOI 10.1093/icc/dtp007
+   Aulakh PS, 2007, J INT MANAG, V13, P235, DOI 10.1016/j.intman.2007.05.001
+   BARNEY J, 1991, J MANAGE, V17, P99, DOI 10.1177/014920639101700108
+   Bartlett CA, 2000, HARVARD BUS REV, V78, P132
+   BARTUNEK JM, 1993, ACAD MANAGE J, V36, P1362, DOI 10.2307/256815
+   Beck T., 2013, WPS201316 CSAE U OXF
+   Boojihawon DK, 2013, AFR J ECON MANAG STU, V4, P244, DOI 10.1108/AJEMS-Nov-2011-0115
+   Boston Consulting Group, 2010, AFRICAN CHALLENGERS
+   BP p.l.c, 2014, ANN REPORT
+   Bryman A., 2007, BUSINESS RES METHODS
+   Buck T, 2000, J WORLD BUS, V35, P379, DOI 10.1016/S1090-9516(00)00044-4
+   Buckley P.J., 1976, FUTURE MULTINATIONAL
+   Buckley PJ, 2007, J INT BUS STUD, V38, P499, DOI 10.1057/palgrave.jibs.8400277
+   Buckley PJ, 2008, MANAGE INT REV, V48, P715, DOI 10.1007/s11575-008-0104-y
+   Buckley PJ, 1998, J INT BUS STUD, V29, P539, DOI 10.1057/palgrave.jibs.8490006
+   Caiazza R, 2016, BENCHMARKING, V23, P329, DOI 10.1108/BIJ-10-2013-0100
+   Casanova L., 2004, BUSINESS POLITICS, V6, P1
+   CAVES RE, 1971, ECONOMICA, V38, P1, DOI 10.2307/2551748
+   Chen VZ, 2012, EUR MANAG J, V30, P204, DOI 10.1016/j.emj.2012.03.005
+   Child J., 2005, MANAGEMENT ORG REV, V1, P381, DOI DOI 10.1111/J.1740-8784.2005.0020A.X
+   Chittoor R, 2007, J INT MANAG, V13, P338, DOI 10.1016/j.intman.2007.05.008
+   Chudnovsky Daniel, 2000, TRANSNATIONAL CORPOR, V9, P31
+   Citigroup, 2005, EMERGING MARKET ACQU
+   Cuervo-Cazurra A, 2008, J INT BUS STUD, V39, P957, DOI 10.1057/palgrave.jibs.8400390
+   Cuervo-Cazurra A, 2007, J INT MANAG, V13, P258, DOI 10.1016/j.intman.2007.05.009
+   Cui L, 2010, ASIA PAC J MANAG, V27, P751, DOI 10.1007/s10490-009-9136-5
+   Das Khanindra C., 2015, International Journal of Commerce and Management, V25, P330, DOI 10.1108/IJCoMA-12-2013-0132
+   De Beule F, 2012, EUR MANAG J, V30, P264, DOI 10.1016/j.emj.2012.03.006
+   De Beule F, 2009, INT BUS REV, V18, P215, DOI 10.1016/j.ibusrev.2009.03.005
+   Del Sol P., 2004, REGIONAL COMPETITIVE
+   Dunning J., 1981, INT PRODUCTION MULTI
+   Dunning JH, 2008, MULTINATIONAL ENTERPRISES AND THE GLOBAL ECONOMY, 2ND EDITION
+   Dunning J.H., 2008, SLPTMD WORKING PAPER
+   DUNNING JH, 1977, INT ALLOCATION EC AC
+   Dunning JH, 2008, ASIA PAC J MANAG, V25, P573, DOI 10.1007/s10490-007-9074-z
+   EISENHARDT KM, 1989, ACAD MANAGE REV, V14, P532, DOI 10.2307/258557
+   EIU, 2013, EIU VIEWSWIRE   0925
+   Ernst and Young, 2012, BUILD BRIDG ERNST YO
+   Frost S., 2004, S S E ASIA RES CTR W, V67
+   Gaffney N, 2014, EUR MANAG J, V32, P383, DOI 10.1016/j.emj.2013.08.001
+   Gammeltoft P, 2010, INT J EMERG MARK, V5, P254, DOI 10.1108/17468801011058370
+   Gao T, 2005, ECON LETT, V86, P29, DOI 10.1016/j.econlet.2004.04.025
+   Ghauri P. K., 2002, RES METHODS BUSINESS
+   Ghauri P. N., 2004, HDB QUALITATIVE RES
+   Giroud A, 2015, MULTINATL BUS REV, V23, P67, DOI 10.1108/MBR-12-2014-0064
+   Goldman S., 2005, 134 GOLDM SACHS EC R
+   Goldstein A, 2007, INT POLIT ECON SER, P1, DOI 10.1057/9780230206335
+   Goldstein A., 2006, EMERGING MULTINATION
+   Goldstein A., 2006, RISE CHINA INDIA WHA
+   Goldstein A., 2008, 82 CASI
+   Goldstein A, 2008, J CONTEMP ASIA, V38, P417, DOI 10.1080/00472330802078493
+   Grant RM, 1996, STRATEGIC MANAGE J, V17, P109, DOI 10.1002/smj.4250171110
+   Guillen MF, 2009, ACAD MANAGE PERSPECT, V23, P23, DOI 10.5465/AMP.2009.39985538
+   Holsti O., 1968, HDB SOCIAL PSYCHOL
+   Hong JJ, 2015, BRIT J MANAGE, V26, P45, DOI 10.1111/1467-8551.12059
+   Hymer S., 1960, THESIS
+   Ibeh K.I.N., 2009, DRAFT REPORT INVESTM
+   Ibeh K. I. N., 2013, DRAFT REPORT INVESTM
+   IMF, 2015, IMF WORLD EC OUTL WE
+   IMF, 2015, PAN AFR BANKS OPP CH
+   JOHANSON J, 1977, J INT BUS STUD, V8, P23, DOI 10.1057/palgrave.jibs.8490676
+   Kalotay K., 2008, C EM MULT OUTW EM DE
+   Kedia B, 2012, MANAGE INT REV, V52, P155, DOI 10.1007/s11575-012-0132-5
+   Kim J.M., 2009, COPENHAGEN J ASIAN S, V27, P126, DOI DOI 10.22439/cjas.v27i1.2288
+   Klein S, 2007, J INT MANAG, V13, P319, DOI 10.1016/j.intman.2007.05.002
+   KOGUT B, 1992, ORGAN SCI, V3, P383, DOI 10.1287/orsc.3.3.383
+   KPMG, 2013, FIN SERV AFR
+   Kumar N, 2008, NEW DIMENSIONS EC GL
+   LALL S, 1983, NEW MULTINATIONALS S
+   Li PP, 2007, J INT MANAG, V13, P296, DOI 10.1016/j.intman.2007.05.004
+   Linder S. B., 1961, ESSAY TRADE TRANSFOR
+   Ling Liu, 2008, International Journal of Technology and Globalisation, V4, P87, DOI 10.1504/IJTG.2008.016189
+   Luiz J., 2015, CHANGING DYNAMICS IN, P242
+   Luo YD, 2007, J INT BUS STUD, V38, P481, DOI 10.1057/palgrave.jibs.8400275
+   MADHOK A, 1998, INT BUSINESS REV, V7, P259, DOI DOI 10.1016/S0969-5931(98)00009-2
+   Makino S, 2002, J INT BUS STUD, V33, P403, DOI 10.1057/palgrave.jibs.8491024
+   Mathews J. A., 2002, ASIA PACIFIC J MANAG, V19, P467, DOI DOI 10.1023/A:1020586223665
+   Mathews J.A., 2006, ASIA PACIFIC J MANAG, V23, P5, DOI DOI 10.1007/S10490-006-6113-0
+   Mathews JA, 2002, DRAGON MULTINATIONAL
+   Mathews JA, 2006, NEW POLIT ECON, V11, P313, DOI 10.1080/13563460600840142
+   Matsuno H., 2003, 68 NOM RES I, V68
+   Meyer KE, 2016, J INT BUS STUD, V47, P3, DOI 10.1057/jibs.2015.34
+   Miles M. B., 1994, ANAL QUALITATIVE DAT
+   Moon H., 2001, INT BUSINESS REV, V10, P197, DOI DOI 10.1016/S0969-5931(00)00046-9
+   Nartey L., 2015, AFRICANS INVESTING A, P103
+   Narula R., 2006, Asia Pacific Journal of Management, V23, P143, DOI 10.1007/s10490-006-7162-0
+   Ngwu F, 2015, ROUTL COMPANION BUS, P9
+   Pananond P, 2015, MULTINATL BUS REV, V23, P77, DOI 10.1108/MBR-02-2015-0008
+   Parada P, 2009, LONG RANGE PLANN, V42, P654, DOI 10.1016/j.lrp.2009.09.006
+   Parente RC, 2013, BUS HORIZONS, V56, P453, DOI 10.1016/j.bushor.2013.04.003
+   Peng M. W., 2002, ASIA PACIFIC J MANAG, V19, P251, DOI DOI 10.1023/A:1016291702714
+   Penrose E.T., 1959, THEORY GROWTH FIRM
+   PHILLIPS LW, 1981, J MARKETING RES, V18, P395, DOI 10.2307/3151333
+   Pietrobelli C., 2010, 4 INT EC PROGR CHATH
+   Rabelloti R., 2015, AIB INSIGHTS, V15, P11
+   Ramamurti R, 2009, EMERGING MULTINATIONALS IN EMERGING MARKETS, P1, DOI 10.1017/CBO9780511576485
+   Ramamurti R., 2008, C EM MULT OUTW FDI E
+   Ramamurti R, 2012, BUS HORIZONS, V55, P241, DOI 10.1016/j.bushor.2012.01.001
+   Rolfe R., 2015, CHANGING DYNAMICS IN, P101, DOI DOI 10.1057/9781137516541
+   Rugman A.M., 1980, MULTINATIONALS CANAD
+   Rugman A. M, 1981, INSIDE MULTINATIONAL
+   Rugman A. M., 1985, MEGAFIRMS STRATEGIES
+   Rugman AM, 2011, MANAGE INT REV, V51, P755, DOI 10.1007/s11575-011-0102-3
+   Rugman AM, 2004, J INT BUS STUD, V35, P3, DOI 10.1057/palgrave.jibs.8400073
+   RUGMAN AM, 2003, J INT MANAG, V9, P409, DOI DOI 10.1016/J.INTMAN.2003.08.004
+   Rui HC, 2008, J WORLD BUS, V43, P213, DOI 10.1016/j.jwb.2007.11.006
+   Salas-Porras A., 1998, CEPAL REV, V65, P133
+   Sass M, 2014, ENTREPR BUS ECON REV, V2, P47
+   Sauvant K., 2005, SEM GLOB PLAYERS EM
+   Schuler-Zhou Y., 2009, DECISION MAKING AUTO
+   Sim A. B., 2003, Asia Pacific Journal of Management, V20, P27, DOI 10.1023/A:1022064412301
+   Sim AB, 2007, INT J EMERG MARK, V2, P252, DOI 10.1108/17468800710758396
+   Sinkovics RR, 2008, MANAGE INT REV, V48, P689, DOI 10.1007/s11575-008-0103-z
+   Svetlicic M., 2004, IMPROVING EXPORT ABI
+   Sydserff R., 2002, ACCOUNTING AUDITING, V15, P523, DOI [10.1108/09513570210440586, DOI 10.1108/09513570210440586]
+   Tolentino P.E., 1992, TECHNOLOGICAL INNOVA
+   UNCTAD, 2008, TRANSN CORP STAT
+   UNCTAD, 2004, UNCTADDITEIIAB20041
+   UNCTAD, 2005, TDBCOM369 UNCTAD
+   UNCTAD, 2014, TOP 100 NONF TNCS DE
+   UNCTAD, 2003, UNCTADPRESSEB200308
+   UNCTAD, 2005, WORLD INV REP
+   *UNCTAD, 2007, WORLD INV REP
+   Vahtra P., 2004, ELECT PUBLICATIONS P, V8
+   Vargo SL, 2004, J MARKETING, V68, P1, DOI 10.1509/jmkg.68.1.1.24036
+   Verbeke A, 2015, BUS HIST REV, V89, P415, DOI 10.1017/S0007680515000689
+   Verhoef G., 2016, 570 ERSA
+   Von Keller E., 2003, MIDDLE KINGDOM GLOBA
+   Wang CQ, 2012, J INT BUS STUD, V43, P655, DOI 10.1057/jibs.2012.18
+   Wells Jr L.T., 1983, 3 WORLD MULTINATIONA
+   Wong Johan, 2003, CHINA INT J, V1, P273, DOI DOI 10.1142/S0219747203000177
+   World Investment Report, 2015, WORLD INV REP
+   Yang Deng-Wu, 2003, THESIS
+   Yang Y, 2014, ASIAN BUS MANAG, V13, P379, DOI 10.1057/abm.2014.15
+   Yeganeh K.H., 2016, 43 AIB UKI C BIRKB U
+   Yeung H. W., 1995, INT BUSINESS REV, V4, P313, DOI DOI 10.1016/0969-5931(95)00012-O
+   Yin R.K., 2003, CASE STUDY RES DESIG
+   Zeng M, 2003, HARVARD BUS REV, V81, P92
+   Zhang Y, 2003, CHINAS EMERGING GLOB
+NR 149
+TC 2
+Z9 2
+U1 0
+U2 9
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 0265-1335
+EI 1758-6763
+J9 INT MARKET REV
+JI Int. Market. Rev.
+PY 2018
+VL 35
+IS 4
+SI SI
+BP 683
+EP 708
+DI 10.1108/IMR-08-2016-0158
+PG 26
+WC Business
+SC Business & Economics
+GA GM8ZB
+UT WOS:000438527500008
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Hurd, TR
+AF Hurd, T. R.
+TI BANK PANICS AND FIRE SALES, INSOLVENCY AND ILLIQUIDITY
+SO INTERNATIONAL JOURNAL OF THEORETICAL AND APPLIED FINANCE
+LA English
+DT Article
+DE Systemic risk; banking network; stock flow consistency; asset liability
+   symmetry; cascade; interbank exposure; funding liquidity; insolvency;
+   indirect contagion; asset fire sales; bank panics
+ID RISK; CONTAGION; LIQUIDITY
+AB Banking system crises are complex events that in a short span of time can inflict extensive damage to banks themselves and to the external economy. The crisis literature has so far identified a number of distinct effects or channels that can propagate distress contagiously both directly within the banking network itself and indirectly, between the network and the external economy. These contagious effects, and the potential events that trigger these effects, can explain most aspects of past crises, and are thought to be likely to dominate future financial crises. Since the current international financial regulatory regime based on the Basel III Accord does a good job of ensuring that banks are resilient to such contagion effects taken one at a time, systemic risk theorists increasingly understand that future crises are likely to he dominated by the spillovers between distinct contagion channels. The present paper aims to provide a model for systemic risk that. is comprehensive enough to include the important contagion channels identified in the literature. In such a model one can hope to understand the dangerous spillover effects that are expected to dominate future crises. To rein in the number and complexity of the modelling assumptions, two requirements are imposed, neither of which is yet well-known or established in the main stream of systemic risk research. The first, called stock-flow consistency, demands that the financial system follows a rigorous set of rules based on accounting principles. The second requirement, called asset-liability symmetry, implies that every proposed contagion channel has a dual channel obtained by interchanging assets and liabilities, and that. these dual channel pairs have a symmetric mathematical representation.
+C1 [Hurd, T. R.] McMaster Univ, Math & Stat, 1280 Main St West, Hamilton, ON L8S 4L8, Canada.
+RP Hurd, TR (reprint author), McMaster Univ, Math & Stat, 1280 Main St West, Hamilton, ON L8S 4L8, Canada.
+EM hurdt@mcmaster.ca
+OI Hurd, Thomas/0000-0003-1131-5502
+FU Natural Sciences and Engineering Research Council of CanadaNatural
+   Sciences and Engineering Research Council of Canada; Forschungsinstitut
+   fur Mathematik at ETH Zurich; Centre Interfacultaire Bernoulli at EPF
+   Lausanne
+FX This project was funded by the Natural Sciences and Engineering Research
+   Council of Canada. The author also gratefully acknowledges the support
+   of the Forschungsinstitut fur Mathematik at ETH Zurich and the Centre
+   Interfacultaire Bernoulli at EPF Lausanne, as well as extensive
+   discussions with Grzegorz Halaj of the European Central Bank and Kartik
+   Anand of Deutsche Bundesbank.
+CR Aldasoro I, 2016, J FINANC STABIL, V27, P1, DOI 10.1016/j.jfs.2016.08.008
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Avgouleas E, 2015, J FINANC REGUL, V1, P3, DOI 10.1093/jfr/fju009
+   Bagehot W., 1873, LOMBARD STREET DESCR
+   Bernanke BS, 1999, HBK ECON, V15, P1341
+   Bichuch M., 2018, OPTIMIZATION FIRE SA
+   Bookstaber R., 2014, TECHNICAL REPORT
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   CALOMIRIS CW, 1991, NAT BUR EC, P109
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R., 2017, FIRE SALES INDIRECT
+   De Bandt O., 2000, 35 ECB
+   De Bandt O., 2010, OXFORD HDB BANKING
+   Detering N., 2017, ARXIVORGABS161009542
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H., 2006, INT J CENT BANK, V2, P137, DOI DOI 10.2139/SSRN.787929
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Farmer JD, 2009, NATURE, V460, P685, DOI 10.1038/460685a
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Galati G, 2013, J ECON SURV, V27, P846, DOI 10.1111/j.1467-6419.2012.00729.x
+   Gatti DD, 2011, NEW ECON WINDOWS, P1, DOI 10.1007/978-88-470-1971-3
+   Godley W., 2012, MONETARY EC INTEGRAT
+   Gourieroux C, 2012, CAN J ECON, V45, P1273, DOI 10.1111/j.1540-5982.2012.01750.x
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Hurd T. R., 2016, INT J THEORETICAL AP, V19, P1
+   Hurd TR, 2016, SPRINGERBRIEFS QUANT
+   Huser A.-C., 2017, WORKING PAPER SERIES, V2010
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   Kaufman G. G., 2003, INDEP REV, V7, P371
+   Kindleberger CP, 2011, MANIAS, PANICS AND CRASHES: A HISTORY OF FINANCIAL CRISES, 6TH EDITION, P1
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   Liu X., 2016, REV FINANCIAL STUDIE
+   MINSKY HP, 1982, FINANCIAL CRISES THE, P13
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Rochet J.-C., 2004, IDEIWORKING PAPERS, V294
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Taylor J. B., 2010, ENDING GOVT BAILOUTS
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+   Weber S, 2017, PROBAB UNCERTAIN QUA, V2, DOI 10.1186/s41546-017-0020-9
+NR 43
+TC 0
+Z9 0
+U1 2
+U2 5
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 0219-0249
+EI 1793-6322
+J9 INT J THEOR APPL FIN
+JI Int. J. Theor. Appl. Financ.
+PD SEP
+PY 2018
+VL 21
+IS 6
+SI SI
+AR 1850040
+DI 10.1142/S0219024918500401
+PG 30
+WC Business, Finance
+SC Business & Economics
+GA GV5RQ
+UT WOS:000446160300005
+DA 2019-12-27
+ER
+
+PT J
+AU Bougheas, S
+   Kirman, A
+AF Bougheas, Spiros
+   Kirman, Alan
+TI Systemic risk and the optimal seniority structure of banking liabilities
+SO INTERNATIONAL JOURNAL OF FINANCE & ECONOMICS
+LA English
+DT Article
+DE banks; priority rules; systemic risk
+ID FINANCIAL NETWORKS; DEBT
+AB The paper argues that systemic risk must be taken into account when designing optimal bankruptcy procedures in general, and priority rules in particular. Allowing for endogenous formation of links in the interbank market, we show that the optimal policy depends on the distribution of shocks and the severity of fire sales.
+C1 [Bougheas, Spiros] Univ Nottingham, Sch Econ, Univ Pk, Nottingham NG7 2RD, England.
+   [Kirman, Alan] Ecole Hautes Etud Sci Sociales, CAMS, 190-198 Ave France, F-75244 Paris 13, France.
+RP Bougheas, S (reprint author), Univ Nottingham, Sch Econ, Univ Pk, Nottingham NG7 2RD, England.
+EM spiros.bougheas@nottingham.ac.uk
+FU COST ActionEuropean Cooperation in Science and Technology (COST)
+   [IS1104]
+FX We would like to thank participants at the Financial Risk and Network
+   Theory Conference, University of Cambridge, 2015 for the helpful
+   comments and suggestions. We would like to acknowledge financial support
+   from COST Action IS1104 "The EU in the new economic complex geography:
+   models, tools and policy analysis."
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Avgouleas E, 2015, J FINANC REGUL, V1, P3, DOI 10.1093/jfr/fju009
+   Babus A, 2016, RAND J ECON, V47, P239, DOI 10.1111/1756-2171.12126
+   Birchler UW, 2000, REV FINANC STUD, V13, P813, DOI 10.1093/rfs/13.3.813
+   Blum JM, 2002, J BANK FINANC, V26, P1427, DOI 10.1016/S0378-4266(02)00282-0
+   Bolton P, 2015, J FINANC, V70, P2353, DOI 10.1111/jofi.12201
+   Bougheas S., 2015, COMPLEXITY GEOGRAPHI, P115, DOI DOI 10.1007/978-3-319-12805-4_6
+   Bougheas S, 2016, LECT NOTES ECON MATH, V683, P195, DOI 10.1007/978-3-319-40803-3_8
+   Cabrales Antonio, 2014, 4715 CESIFO
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Cohen-Cole E., 2010, 252010 WP U BOCC
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Dutta B, 2005, J ECON THEORY, V122, P143, DOI 10.1016/j.jet.2004.05.001
+   Freixas X, 2004, J EUR ECON ASSOC, V2, P1085, DOI 10.1162/1542476042813841
+   Gabaix X, 2011, ECONOMETRICA, V79, P733, DOI 10.3982/ECTA8769
+   Kaufman GG, 2014, J FINANC STABIL, V13, P214, DOI 10.1016/j.jfs.2014.02.004
+   Lenihan N., 2012, COMMUNICATION
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Shleifer A., 2010, 16642 NBER
+   von Thadden EL, 2010, REV FINANC STUD, V23, P2648, DOI 10.1093/rfs/hhq019
+   Wood P., 2011, HOFSTRA LAW REV, V40
+NR 24
+TC 1
+Z9 1
+U1 0
+U2 3
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1076-9307
+EI 1099-1158
+J9 INT J FINANC ECON
+JI Int. J. Financ. Econ.
+PD JAN
+PY 2018
+VL 23
+IS 1
+BP 47
+EP 54
+DI 10.1002/ijfe.1602
+PG 8
+WC Business, Finance
+SC Business & Economics
+GA FS9QU
+UT WOS:000422754100005
+DA 2019-12-28
+ER
+
+PT J
+AU Kermiche, L
+   Piot, C
+AF Kermiche, Lamya
+   Piot, Charles
+TI The Audit Market Dynamics in a Mandatory Joint Audit Setting: The French
+   Experience
+SO JOURNAL OF ACCOUNTING AUDITING AND FINANCE
+LA English
+DT Article
+DE joint audit; auditor concentration; auditor switch; Markov chain; France
+ID AGENCY COSTS; QUALITY; MERGER; PRICEWATERHOUSECOOPERS; SERVICES;
+   INDUSTRY; TENURE
+AB Policy makers in France have considered joint audits as a solution to mitigate the audit market concentration and the "systemic" risk associated with Big 4 auditors. We implement a Markovian analysis where audit clients chose between different types of combinations across Big 4 and smaller auditors. Our main findings support the view that the French joint audit system is effective in maintaining market openness and in mitigating the Big 4 domination in the long run. An investigation of the determinants driving changes in joint audit combinations suggests little economic support in favor of two Big 4 combinations, whereas changes in audit clients' agency costs (e.g., higher ownership concentration) tend to explain the performance of mixed and two non-Big 4 combinations. Overall, this study supports the European Commission's position on the potential benefits of joint audits in mitigating the market concentration; it also suggests that it might not be necessary to impose mixed joint audits to achieve that objective.
+C1 [Kermiche, Lamya] Grenoble Ecole Management, 12 Rue Pierre Semard, F-38000 Grenoble, France.
+   [Piot, Charles] Univ Grenoble Alpes, CNRS, CERAG, Grenoble, France.
+RP Kermiche, L (reprint author), Grenoble Ecole Management, 12 Rue Pierre Semard, F-38000 Grenoble, France.
+EM Lamya.kermiche@grenoble-em.com
+FU Grenoble Ecole de Management; Universite Grenoble Alpes (Universite
+   Pierre Mendes-France Grant PRS) [67]
+FX The author(s) disclosed receipt of the following financial support for
+   the research, authorship, and/or publication of this article: The
+   authors acknowledge financial support from Grenoble Ecole de Management
+   and from Universite Grenoble Alpes (Universite Pierre Mendes-France
+   Grant PRS No. 67).
+CR Andre P, 2016, EUR ACCOUNT REV, V25, P245, DOI 10.1080/09638180.2014.998016
+   Assemblee Nationale, 1984, J OFFICIEL REPU 0203, P485
+   Audousset-Coulier S., 2008, THESIS
+   Ballas AA, 2008, INT ADV ECON RES, V14, P485, DOI 10.1007/s11294-008-9167-6
+   Bedard J., 2014, EVALUATION FRENCH EX
+   Broye G., 2007, REV FRANCAISE COMPTA, V399, P34
+   Broye G., 2001, COMPTABILITE CONTROL, V7, P105
+   CHOI MS, 1999, J INT ACCOUNTING AUD, V8, P1, DOI DOI 10.1016/S1061-9518(99)00002-6
+   Comunale C. L., 2003, MANAGERIAL AUDITING, V18, P569, DOI DOI 10.1108/02686900310482704
+   DeAngelo L. E., 1981, J ACCOUNT ECON, V3, P113, DOI DOI 10.1016/0165-4101(81)90009-4
+   DEFOND ML, 1992, AUDITING-J PRACT TH, V11, P16
+   Deng MC, 2014, J ACCOUNT RES, V52, P1029, DOI 10.1111/1475-679X.12060
+   Dopuch N., 1980, REGULATION ACCOUNTIN, P77
+   Duxbury D, 2007, MANAG AUDIT J, V22, P121, DOI 10.1108/02686900710718645
+   European Commission, 2010, GREEN PAP AUD POL LE
+   European Parliament & Council of the European Union, 2014, OFFICIAL J EUROPEAN, V158, P77
+   Financial Reporting Council, 2010, CHOIC UK AUD MARK 5
+   Francis J. R., 1999, ABACUS, V35, P185, DOI DOI 10.1111/1467-6281.00040
+   Francis JR, 2011, AUDITING-J PRACT TH, V30, P125, DOI 10.2308/ajpt-50006
+   Francis JR, 2009, AUDITING-J PRACT TH, V28, P35, DOI 10.2308/aud.2009.28.2.35
+   FRANCIS JR, 1988, ACCOUNT REV, V63, P663
+   Francis JR, 1999, AUDITING-J PRACT TH, V18, P17, DOI 10.2308/aud.1999.18.2.17
+   Ghosh A, 2005, ACCOUNT REV, V80, P585, DOI 10.2308/accr.2005.80.2.585
+   Gul FA, 2009, J ACCOUNT ECON, V47, P265, DOI 10.1016/j.jacceco.2009.03.001
+   Hamilton J. D., 2002, ADV MARKOV SWITCHING
+   House of Lords, 2010, CALL EV MARK CONC TH
+   Ivancevich S. H., 2000, ACCOUNT HORIZ, V14, P389
+   Iyer VM, 1996, AUDITING-J PRACT TH, V15, P123
+   JOHNSON WB, 1990, J ACCOUNT ECON, V12, P281, DOI 10.1016/0165-4101(90)90051-5
+   Le Vourc'h J., 2011, FINAL REPORT STUDY E
+   Lim CY, 2010, CONTEMP ACCOUNT RES, V27, P923, DOI 10.1111/j.1911-3846.2010.01031.x
+   Marmousez S, 2012, COMPTAB CONTROL AUDI, V18, P121, DOI 10.3917/cca.181.0121
+   Minyard D. H., 1991, ACCOUNT HORIZ, V5, P79
+   Oxera Consulting, 2006, REP PREP DEP TRAD IN
+   Piot C., 2008, FINANCE CONTROLE STR, V11, P31
+   Piot C., 2003, COMPTABILITE CONTROL, V9, P5, DOI DOI 10.3917/CCA.092.0005
+   Piot C, 2007, EUR ACCOUNT REV, V16, P429, DOI 10.1080/09638180701391030
+   Piot C, 2007, MANAG AUDIT J, V22, P161, DOI 10.1108/02686900710718663
+   Pong CKM, 2006, MANAG AUDIT J, V21, P7, DOI 10.1108/02686900610634720
+   Ratzinger-Sakel NVS, 2013, ACCOUNT EUR, V10, P175, DOI 10.1080/17449480.2013.834725
+   Schatt A., 2012, REV FRANCAISE COMPTA, V456, P24
+   Sirois L.-P., 2011, AUDITOR SIZE AUDIT Q
+   Thavapalan S., 2002, ACCOUNT FINANC, V42, P153, DOI DOI 10.1111/1467-629X.00014
+   The American Assembly, 2005, FUT ACC PROF AUD CON
+   TONGE SD, 1991, J ACCOUNT PUBLIC POL, V10, P157, DOI 10.1016/0278-4254(91)90010-H
+   US Government Accountability Office, 2003, PUBL ACC FIRMSM STUD
+   Wootton C. W., 2001, BRIT ACCOUNT REV, V33, P157
+NR 47
+TC 0
+Z9 0
+U1 0
+U2 5
+PU SAGE PUBLICATIONS INC
+PI THOUSAND OAKS
+PA 2455 TELLER RD, THOUSAND OAKS, CA 91320 USA
+SN 0148-558X
+EI 2160-4061
+J9 J ACCOUNT AUDIT FINA
+JI J. Account. Audit. Financ.
+PD OCT
+PY 2018
+VL 33
+IS 4
+BP 463
+EP 484
+DI 10.1177/0148558X16680716
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA GT4PX
+UT WOS:000444487800001
+DA 2019-12-28
+ER

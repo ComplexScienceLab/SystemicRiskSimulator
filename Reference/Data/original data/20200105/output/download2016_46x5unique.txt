@@ -1,0 +1,470 @@
+
+PT J
+AU Naifar, N
+AF Naifar, Nader
+TI Do global risk factors and macroeconomic conditions affect global
+   Islamic index dynamics? A quantile regression approach
+SO QUARTERLY REVIEW OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Islamic indices; Investor sentiment; Sovereign credit risk; Implied
+   volatility; Credit default swap; Global financial crisis
+AB The aim of this paper is to explain global Dow Jones Islamic Market Index (DJIMI) dynamics across quantiles during the period of January 2003 to October 2014. Using quantile regression approach, we investigate the co-movement and the dependence structure between DJIMI returns and influential global financial market conditions, macroeconomic indicators and risk factors (major conventional stock market indices returns, global stock market uncertainty (VIX), crude oil prices, inflation rates, slope of the yield curves, investor sentiment indicator, and global sovereign credit risk represented by sovereign credit default swap (CDS) premiums). The empirical results demonstrate that conventional stock market returns, stock market implied volatility and the slope of the yield curve (as a proxy for future economic conditions) are significant for all the quantiles and display asymmetric tail dependence. During and after the global financial crisis, the sovereign credit risk factor has also been significant with positive coefficients, implying the impact of systemic nature of sovereign credit risk on explaining DJIMI returns. Moreover, the impact of oil prices and investor sentiment indicator is positive and significant but only for the lower quantiles. (C) 2015 Board of Trustees of the University of Illinois. Published by Elsevier Inc. All rights reserved.
+C1 [Naifar, Nader] Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Dept Finance & Investment, Coll Econ & Adm Sci, POB 5701, Riyadh, Saudi Arabia.
+RP Naifar, N (reprint author), Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Dept Finance & Investment, Coll Econ & Adm Sci, POB 5701, Riyadh, Saudi Arabia.
+EM naneifar@imamu.edu.sa
+OI naifar, nader/0000-0001-9554-8236
+CR Abd Majid MS, 2009, HUMANOMICS, V25, P127, DOI 10.1108/08288660910964193
+   Abugri B. A., 2008, INT REV FINANC ANAL, V17, P396, DOI [10.1016/j.irfa.2006.09.002, DOI 10.1016/J.IRFA.2006.09.002]
+   Al-Khazali O, 2014, PAC-BASIN FINANC J, V28, P29, DOI 10.1016/j.pacfin.2013.09.003
+   ALBAITY M, 2012, ATL REV EC, V1, P1
+   Aloui C, 2015, N AM J ECON FINANC, V31, P311, DOI 10.1016/j.najef.2014.12.002
+   Baker M, 2006, J FINANC, V61, P1645, DOI 10.1111/j.1540-6261.2006.00885.x
+   Basher SA, 2006, GLOB FINANC J, V17, P224, DOI 10.1016/j.gfj.2006.04.001
+   Baur DG, 2013, J BANK FINANC, V37, P786, DOI 10.1016/j.jbankfin.2012.10.015
+   Baur DG, 2012, J BANK FINANC, V36, P2680, DOI 10.1016/j.jbankfin.2011.05.019
+   Baur M.N., 1998, MANAGERIAL DECISION, V17, P319
+   BIS, 2009, INT FIN CRIS TIM IMP
+   Bord Vitaly M., 2012, FEDERAL RESERVE BANK, V18, P21
+   Boyd JH, 2005, J FINANC, V60, P649, DOI 10.1111/j.1540-6261.2005.00742.x
+   Brown GW, 2005, J BUS, V78, P405, DOI 10.1086/427633
+   Chan -Lau J., 2004, 0427 IMF
+   Coronado M., 2011, FRONTIERS FINANCE EC, V9, P63
+   DELONG JB, 1991, J ECON HIST, V51, P675, DOI 10.1017/S0022050700039619
+   Dewandaru G, 2014, ECON SYST, V38, P553, DOI 10.1016/j.ecosys.2014.05.003
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   Federal Reserve Board of St. Louis, 2009, FIN CRIS TIM EV POL
+   Flannery MJ, 2002, REV FINANC STUD, V15, P751, DOI 10.1093/rfs/15.3.751
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Hammoudeh S, 2014, PAC-BASIN FINANC J, V30, P189, DOI 10.1016/j.pacfin.2014.10.001
+   Hassan M.K., 2010, J ISLAMIC EC STUDIES, V17, P1
+   Ho CSF, 2014, PAC-BASIN FINANC J, V28, P110, DOI 10.1016/j.pacfin.2013.09.002
+   Hussein K. A., 2004, ISLAM EC STUD, V12, P21, DOI DOI 10.3905/J0I.2005.580557
+   Hussein K, 2005, J INVEST, V14, P105, DOI 10.3905/joi.2005.580557
+   Jones CM, 1996, J FINANC, V51, P463, DOI 10.2307/2329368
+   Karim BA, 2010, INT J ISLAMIC MIDDLE, V3, P363, DOI 10.1108/17538391011093298
+   Kenourgios D, 2014, INT REV FINANC ANAL, V34, P21, DOI 10.1016/j.irfa.2014.05.001
+   Koenker R, 2001, J ECON PERSPECT, V15, P143, DOI 10.1257/jep.15.4.143
+   Koenker R., 2005, QUANTILE REGRESSION
+   Kurov A, 2010, J BANK FINANC, V34, P139, DOI 10.1016/j.jbankfin.2009.07.010
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Lee WY, 2002, J BANK FINANC, V26, P2277, DOI 10.1016/S0378-4266(01)00202-3
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Majdoub J, 2014, N AM J ECON FINANC, V29, P452, DOI 10.1016/j.najef.2014.06.011
+   Majid M. S. A., 2007, ISLAMIC EC, V20, P17
+   Mohanty SK, 2011, GLOB FINANC J, V22, P42, DOI 10.1016/j.gfj.2011.05.004
+   Mun KC, 2012, J BANK FINANC, V36, P383, DOI 10.1016/j.jbankfin.2011.07.014
+   Naifar N, 2014, J ECON ISSUES, V48, P1, DOI 10.2753/JEI0021-3624480101
+   Naifar N, 2013, INT REV ECON FINANC, V27, P416, DOI 10.1016/j.iref.2013.01.001
+   Najeeb S. F., 2015, EMERG MARK FINANC TR, V541, p188 
+   Rahim FA, 2009, INT J ISLAMIC MIDDLE, V2, P7, DOI 10.1108/17538390910946230
+   Santamaria M., 2014, SPANISH REV FINANCIA, V12, P1
+   Schmeling M, 2009, J EMPIR FINANC, V16, P394, DOI 10.1016/j.jempfin.2009.01.002
+   Sensoy A, 2015, N AM J ECON FINANC, V31, P222, DOI 10.1016/j.najef.2014.12.001
+   SIEGEL JJ, 1992, J BUS, V65, P557, DOI 10.1086/296585
+   Zouaoui M, 2011, FINANC REV, V46, P723, DOI 10.1111/j.1540-6288.2011.00318.x
+NR 50
+TC 24
+Z9 24
+U1 3
+U2 4
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1062-9769
+EI 1878-4259
+J9 Q REV ECON FINANC
+JI Q. Rev. Econ. Financ.
+PD AUG
+PY 2016
+VL 61
+BP 29
+EP 39
+DI 10.1016/j.qref.2015.10.004
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA VD8MM
+UT WOS:000437659200003
+DA 2019-12-28
+ER
+
+PT J
+AU Varraso, I
+   Cesari, O
+AF Varraso, Isabella
+   Cesari, Oriana
+TI New financial spaces drawn by institutional regulatory barriers. What
+   effects on territorial sustainable development?
+SO EUROPEAN JOURNAL OF SUSTAINABLE DEVELOPMENT
+LA English
+DT Article
+DE Financial space; Financial flows; Financial Geography; International
+   Institutions; Regulatory barriers
+ID WORLD CITY NETWORK; GEOGRAPHIES; CRISIS
+AB Financial flows affect sustainability. Financial regulation has a central role in sustainable development of regions. Recent crisis of 2008 has shown how financial space equilibrium is entangled with economic stability of territories so that changes in financial space can transform local and global financial conditions.
+   Considering the need to develop sustainable relations between financial space and real economy, the aim of this article is to examine, from a geographical perspective, how international institutions may create or reduce, through regulatory mechanism, barriers to the effects of uncontrolled financial flows.
+   Reproducing spaces involved and drawing results using cartography, poles and barriers are considered. As result, a space is outlined where is possible to study future diffusion patterns and consider if the barrier system observed reveals to be absorbing in the sense that financial contagion prevention is achieved with a significant reduction of risk, or if it is not absorbing so that risk shifts to lower levels of geographical scale reaching for the intersections between financial space and everyday economic life of territories involved.
+C1 [Varraso, Isabella] Univ Foggia, Dipartimento Econ, Geog Polit Econ, Foggia, FG, Italy.
+   [Cesari, Oriana] Univ Foggia, Dipartimento Econ, Econ & Tecnol Sviluppo Sostenibile, Foggia, FG, Italy.
+RP Varraso, I (reprint author), Univ Foggia, Dipartimento Econ, Geog Polit Econ, Foggia, FG, Italy.
+CR Aalbers M, 2009, AREA, V41, P34, DOI 10.1111/j.1475-4762.2008.00877.x
+   Agnes P, 2000, ECON GEOGR, V76, P347, DOI 10.2307/144391
+   Albrechts L., 2003, J TRANSP GEOGR, V11, P215, DOI DOI 10.1016/S0966-6923(03)00032-2
+   [Anonymous], 2016, SOLE 24 ORE     0627
+   Baber G, 2015, RES HANDB FINANC LAW, P239
+   Basel Committee on Banking Supervision (BCBS) & Financial Stability Board (FSB), 2013, GLOB SYST IMP BANKS
+   BCBS, 2016, REG CONS ASS PROGR R
+   BCBS - Basel Committee on Banking Supervision. Bank for International Settlements, 2013, LIQ COV RAT STRUM MO
+   BCE, 2016, RAPP ANN 2015
+   BCE, 2016, LIST SUP ENT
+   Beaverstock JV, 1999, CITIES, V16, P445, DOI 10.1016/S0264-2751(99)00042-6
+   Berger A., 2016, BANK LIQUIDITY CREAT
+   Bissanti A.A., 1974, B ASS ITALIANA CARTO, V32, P113
+   Caselli GP, 2014, EUR J SUSTAIN DEV, V3, P41, DOI 10.14207/ejsd.2014.v3n2p41
+   Castells M., 1996, INFORM AGE EC SOC CU, V1
+   Cesari O., 2014, PERIFERIE OGGI NUOVE, P41
+   Clark GL, 2015, J ECON GEOGR, V15, P855, DOI 10.1093/jeg/lbv015
+   Consiglio dell'Unione Europea, 2009, CONS PRES NOT TRASM
+   Consiglio dell'Unione europea, 2016, UN BANC
+   d'Italia Banca, 2016, VIG SIST BANC FIN
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Dixon AD, 2011, GEOGR COMPASS, V5, DOI 10.1111/j.1749-8198.2011.00458.x
+   Easterly W, 2003, J MONETARY ECON, V50, P3, DOI 10.1016/S0304-3932(02)00200-3
+   Eggertsson T, 1996, EMPIRICAL STUDIES I, P6
+   Fernandez A., 2015, J MECH ENG SCI, V31, P1
+   Financial Stability Board, 2015, 2015 UPD LIST GLOB S
+   Fiori M., 1989, FRIULI VENEZIA GIULI, P190
+   Fiori M, 2012, IDENTITA TERRITORIAL
+   Fox Z., 2015, GLOBAL BANKS READY T
+   FRIEDMANN J, 1986, DEV CHANGE, V17, P69, DOI 10.1111/j.1467-7660.1986.tb00231.x
+   Gehrig T, 2000, EC OF CITIES
+   Giannelli A., 2004, GEOGRAFIA CREDITO SP
+   Gould P.R., 1969, ASS AM GEOGRAPHERS R, V4
+   Graeme B., 2016, J FINANCIAL CRIME, V23, P441
+   Hagerstrand T, 1967, INNOVATION DIFFUSION
+   Hall S, 2013, PROG HUM GEOG, V37, P285, DOI 10.1177/0309132512443488
+   Kindleberger CP, 1974, FORMATION FINANCIAL
+   Lucia M.G., 2010, SPAZIO GEOGRAFICO EC
+   Martin R., 1994, MONEY POWER SPACE, P152
+   Martin R, 2011, J ECON GEOGR, V11, P587, DOI 10.1093/jeg/lbq024
+   NORTH DC, 1991, J ECON PERSPECT, V5, P97, DOI 10.1257/jep.5.1.97
+   Paltalidis N., 2015, J BANK FINANC, V61, P536
+   Sander H, 2016, J FINANC STABIL, V24, P12, DOI 10.1016/j.jfs.2016.04.003
+   Sarre P, 2007, GEOGR COMPASS, V1, P1076, DOI 10.1111/j.1749-8198.2007.00059.x
+   Seo B, 2011, HITOTSUB J ECON, V52, P69, DOI 10.15057/19216
+   Smith Adam, 1976, INQUIRY NATURE CAUSE
+   Sudana IP, 2015, PROCD SOC BEHV, V211, P157, DOI 10.1016/j.sbspro.2015.11.023
+   Taylor PJ, 2005, POLIT GEOGR, V24, P703, DOI 10.1016/j.polgeo.2005.01.009
+   Taylor PJ, 2002, CITIES, V19, P231, DOI 10.1016/S0264-2751(02)00020-3
+   Taylor PJ, 2001, GEOGR ANAL, V33, P181, DOI 10.1111/j.1538-4632.2001.tb00443.x
+   Thrift N., 2001, INT ENCY SOCIAL BEHA, P5655
+   Toniolo G, 2015, VERSO BASILEA
+   Varraso I., 2009, CARTOGRAFIE IMMAGINI, P107
+   Varraso I., 2004, TURISMO DINAMICHE TE
+NR 54
+TC 0
+Z9 0
+U1 0
+U2 5
+PU EUROPEAN CENTER SUSTAINABLE DEVELOPMENT
+PI ROME
+PA VIA DEI FIORI 34, ROME, 00172, ITALY
+SN 2239-5938
+EI 2239-6101
+J9 EUR J SUSTAIN DEV
+JI Eur. J. Sustain. Dev.
+PY 2016
+VL 5
+IS 4
+BP 533
+EP 548
+DI 10.14207/ejsd.2016.v5n4p533
+PG 16
+WC Environmental Sciences
+SC Environmental Sciences & Ecology
+GA DY8QM
+UT WOS:000385394900053
+OA Bronze, Other Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Kromer, E
+   Overbeck, L
+   Zilch, K
+AF Kromer, E.
+   Overbeck, L.
+   Zilch, K.
+TI Systemic risk measures on general measurable spaces
+SO MATHEMATICAL METHODS OF OPERATIONS RESEARCH
+LA English
+DT Article
+DE Systemic risk measure; Aggregation function; Locally convex-solid Riesz
+   spaces; Decomposition; Dual representation; Risk attribution
+ID AXIOMATIC APPROACH; TOPOLOGY; ALLOCATIONS; CONTAGION
+AB In view of the recent financial crisis systemic risk has become a very important research object. It is of significant importance to understand what can be done from a regulatory point of view to make the financial system more resilient to global crises. Systemic risk measures can provide more insight on this aspect. The study of systemic risk measures should support central banks and financial regulators with information that allows for better decision making and better risk management. For this reason this paper studies systemic risk measures on locally convex-solid Riesz spaces. In our work we extend the axiomatic approach to systemic risk, as introduced in Chen et al. (Manag Sci 59(6):1373-1388, 2013), in different directions. One direction is the introduction of systemic risk measures that do not have to be positively homogeneous. The other direction is that we allow for a general measurable space whereas in Chen et al. (2013) only a finite probability space is considered. This extends the scope of possible loss distributions of the components of a financial system to a great extent and introduces more flexibility for the choice of suitable systemic risk measures.
+C1 [Kromer, E.] Univ Calif Berkeley, Dept Stat, Berkeley, CA 94720 USA.
+   [Overbeck, L.; Zilch, K.] Univ Giessen, Dept Math, D-35392 Giessen, Germany.
+RP Kromer, E (reprint author), Univ Calif Berkeley, Dept Stat, Berkeley, CA 94720 USA.
+EM ekromer@berkeley.edu
+FU Postdoc-Program of the German Academic Exchange Service (DAAD)Deutscher
+   Akademischer Austausch Dienst (DAAD) [91529914]
+FX E. Kromer was supported by a fellowship within the Postdoc-Program of
+   the German Academic Exchange Service (DAAD), 91529914.
+CR Acharya V., 2012, 8824 CEPR
+   Acharya VV, 2013, HANDBOOK ON SYSTEMIC RISK, P226
+   Adrian T, 2011, COVAR W17454
+   Aliprantis C, 1991, STUDIES EC THEORY, V2
+   Aliprantis C. D., 2003, LOCALLY SOLID RIESZ
+   Aliprantis C.D., 2006, INFINITE DIMENSIONAL
+   Aliprantis CD, 1990, EXISTENCE OPTIMALITY
+   Amini H., 2013, MATH FINANCE
+   Amini H, 2013, SYSTEMIC RISK CENTRA
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   Armenti Y, 2015, ARXIV150705351
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Awiszus K, 2015, PREPRINT
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   BERNHARD P, 1995, NONLINEAR ANAL-THEOR, V24, P1163, DOI 10.1016/0362-546X(94)00186-L
+   Biagini F, 2015, ARXIV150306354
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brunnermeier M. K., 2014, WORKING PAPER
+   Chen C, 2013, MANAGE SCI, V59, P1373, DOI 10.1287/mnsc.1120.1631
+   Cheridito P, 2011, J RISK, V14, P123, DOI 10.21314/JOR.2011.236
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Delbaen F, 2000, LECT NOTES CATTEDRA
+   Denault M., 2001, J RISK, V4, P1, DOI DOI 10.21314/JOR.2001.053
+   Dhaene J., 2003, N AM ACTUARIAL J, V7, P44, DOI DOI 10.1080/10920277.2003.10596084
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P236
+   Elsinger H, 2009, FINANCIAL NETWORKS C
+   Feinstein Z, 2015, ARXIV150207961
+   Feinstein Z, 2015, ARXIV150600937
+   FOLLMER H, 2002, STOCHASTIC FINANCE I
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P1, DOI 10.1017/CBO9781139151184
+   Frittelli M, 2002, J BANK FINANC, V26, P1473, DOI 10.1016/S0378-4266(02)00270-4
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Hurd T. R., 2011, ARXIV11104312
+   Iyer R, 2011, REV FINANC STUD, V24, P1337, DOI 10.1093/rfs/hhp105
+   Kaina M, 2009, MATH METHOD OPER RES, V69, P475, DOI 10.1007/s00186-008-0248-3
+   Kalkbrener M, 2005, MATH FINANC, V15, P425, DOI 10.1111/j.1467-9965.2005.00227.x
+   Kromer E, 2014, J RISK, V16, P31, DOI 10.21314/JOR.2014.280
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Rockafellar R, 1974, CBMS NSF REGIONAL C
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   Ruszczynski A, 2006, MATH OPER RES, V31, P51
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Staum J, 2013, HDB SYSTEMIC RISK CO
+   Staum J, 2012, WORKING PAPER
+   Tarashev N, 2010, 308 BANK INT SETTL
+   TASCHE D, 2004, EC CAPITAL PRACTITIO, P275
+   TSANAKAS A, 2003, BRIT ACTUARIAL J, V9, P959, DOI DOI 10.1017/S1357321700004414
+   Tsanakas A, 2009, INSUR MATH ECON, V44, P268, DOI 10.1016/j.insmatheco.2008.03.007
+   Upper C, 2014, EUR ECON REV, V48, P827
+   Zalinescu C., 2002, CONVEX ANAL GEN VECT
+NR 55
+TC 12
+Z9 12
+U1 0
+U2 7
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1432-2994
+EI 1432-5217
+J9 MATH METHOD OPER RES
+JI Math. Method Oper. Res.
+PD OCT
+PY 2016
+VL 84
+IS 2
+BP 323
+EP 357
+DI 10.1007/s00186-016-0545-1
+PG 35
+WC Operations Research & Management Science; Mathematics, Applied
+SC Operations Research & Management Science; Mathematics
+GA EB4GU
+UT WOS:000387329400004
+DA 2019-12-27
+ER
+
+PT J
+AU de la Torre, A
+   Ize, A
+AF de la Torre, Augusto
+   Ize, Alain
+TI The Conceptual Foundations of Macroprudential Policy: A Roadmap
+SO INTERNATIONAL FINANCE
+LA English
+DT Article
+ID LIQUIDITY; RISK; MARKET
+AB The global financial crisis unleashed a flurry of academic literature and regulations addressing macroprudential issues. However, reflecting weak links between research and policy as well as varying risk environments (across countries and over time), policy remains exposed to pitfalls, including overreacting, underreacting and applying the wrong or untimely medicine. To help policy makers navigate through the maze, this paper proposes a broad typology of financial frictions that classifies the root causes of socially pernicious financial dynamics under four paradigms', with distinct grounds, implications and aims for macroprudential policy: (i) offsetting the moral hazard implications of bailouts; (ii) protecting unsophisticated market participants from abusive practices; (iii) inducing market players to internalize the systemic consequences of their individual actions; and (iv) tempering destructive mood swings. As policies to curb one source of systemic risk can exacerbate others, the macroprudential policy challenge is to strike a sensible balance among complicated trade-offs.
+C1 [de la Torre, Augusto; Ize, Alain] World Bank, 1077 30th St NW, Washington, DC 20007 USA.
+RP de la Torre, A (reprint author), World Bank, 1077 30th St NW, Washington, DC 20007 USA.
+EM adelatorre@worldbank.org
+CR Abreu D, 2003, ECONOMETRICA, V71, P173, DOI 10.1111/1468-0262.00393
+   Adrian Tobias, 2009, 360 FED RES BANK NEW
+   Akerlof G. A., 2015, PHISHING PHOOLS EC M
+   AKERLOF GA, 1970, THE QUARTERLY JOURNA, V3, P488, DOI DOI 10.2307/1879431
+   Allen F., 2009, UNDERSTANDING FINANC
+   Allen F, 2015, J FINANC ECON, V118, P601, DOI 10.1016/j.jfineco.2014.11.003
+   Alvarez F, 2000, ECONOMETRICA, V68, P775, DOI 10.1111/1468-0262.00137
+   [Anonymous], 2009, ROL MACR POL
+   ARROW KJ, 1970, AM ECON REV, V60, P364
+   Bernanke B. S., 1987, 2318 NBER
+   Bhattacharya S, 2015, J MONEY CREDIT BANK, V47, P931, DOI 10.1111/jmcb.12229
+   Bianchi J., 2012, 18036 NBER
+   BIANCHI J., 2012, 18587 NBER
+   Bianchi J, 2011, AM ECON REV, V101, P3400, DOI 10.1257/aer.101.7.3400
+   Biljanovksa N., 2015, OPTIMAL POLICY COLLA
+   Borio C, 2008, 268 BANK INT SETTL
+   Borio C., 2003, CESIFO ECON STUD, V49, P181
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier Markus K., 2012, 18102 NBER
+   Caballero R. J., 2009, P EC POL S JACKS HOL, P19
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Calvo G., 2002, DONT FIX DONT FLOAT, P77
+   Chari V., 2000, 600 FED RES BANK MIN
+   Chari Varadarajan V., 2013, 19192 NBER
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cordella T., 2013, 6721 WORLD BANK
+   de la Torre A., 2013, 6575 WORLD BANK
+   de la Torre A, 2010, INT FINANC, V13, P109, DOI 10.1111/j.1468-2362.2010.01254.x
+   Dell'Ariccia G., 2013, 13143 INT MON FUND
+   DELONG JB, 1990, J POLIT ECON, V98, P703, DOI 10.1086/261703
+   Dewatripont M., 1994, PRUDENTIAL REGULATIO
+   Dewatripont M, 2012, J MONEY CREDIT BANK, V44, P237, DOI 10.1111/j.1538-4616.2012.00559.x
+   Diamond DW, 2000, J FINANC, V55, P2431, DOI 10.1111/0022-1082.00296
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Farhi E, 2009, 15138 NBER
+   Gabaix Xavier, 2015, 21524 NBER
+   Galati G., 2012, J ECON SURV, V27, P846
+   Gavin M., 1996, WP318 INT DEV BANK
+   GEANAKOPLOS J, 1992, J ECON PERSPECT, V6, P53, DOI 10.1257/jep.6.4.53
+   Geanakoplos J, 2010, NBER MACROECON ANNU, V24, P1
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   He ZG, 2013, AM ECON REV, V103, P732, DOI 10.1257/aer.103.2.732
+   Holmstrom B, 1998, J POLIT ECON, V106, P1, DOI 10.1086/250001
+   Huang R, 2011, J FINANC INTERMED, V20, P248, DOI 10.1016/j.jfi.2010.06.003
+   Jeanne O., 2012, 18675 NBER
+   Jeanne O., 2010, 2010108S TILB U CTR
+   Kashyap A., 2014, BANQUE FRANCE FINANC
+   Kashyap A. K, 2014, 20165 NBER
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Morris S., 2003, ADV EC ECONOMETRICS
+   Perotti E., 2011, 8271 CEPR
+   Plantin G, 2008, J ACCOUNT RES, V46, P435, DOI 10.1111/j.1475-679X.2008.00281.x
+   Rajan R, 2005, 11728 NBER
+   Repullo R., 2012, CEPR DISCUSSION PAPE, V8897
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   STIGLITZ JE, 1982, REV ECON STUD, V49, P393
+NR 56
+TC 0
+Z9 0
+U1 0
+U2 6
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1367-0271
+EI 1468-2362
+J9 INT FINANC
+JI Int. Financ.
+PY 2016
+VL 19
+IS 3
+BP 333
+EP 352
+DI 10.1111/infi.12096
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA EG0BL
+UT WOS:000390695600005
+DA 2019-12-28
+ER
+
+PT J
+AU Firestone, S
+   Rezende, M
+AF Firestone, Simon
+   Rezende, Marcelo
+TI Are Banks' Internal Risk Parameters Consistent? Evidence from Syndicated
+   Loans
+SO JOURNAL OF FINANCIAL SERVICES RESEARCH
+LA English
+DT Article
+DE Probability of default; Loss given default; Bank capital; Syndicated
+   loan
+ID CREDIT RISK; MACROECONOMIC DYNAMICS; LENDING RELATIONSHIPS; RATINGS;
+   INFORMATION; DEFAULT; SYSTEMS
+AB Syndicated loans provide an exceptional opportunity to study differences in banks' approaches to measuring risk because many of these loans are held by more than one bank. We study differences in banks' estimates of risk parameters used to calculate regulatory capital requirements for syndicated loans. Using internal data from nine large U.S. banks, we find significant dispersion in the probability of default (PD) and loss given default (LGD) assigned by different banks to the same loans. Banks' PDs differ substantially, but only a few systematically set PDs higher or lower than others in a statistically significant manner. However, many banks' estimates of LGD differ from others in a systemic manner that is statistically and economically significant, causing large differences in minimum regulatory capital. In addition, we find that banks assign lower PDs to loans of which they hold larger shares, suggesting that incentives affect risk parameters.
+C1 [Firestone, Simon; Rezende, Marcelo] Board Governors Fed Reserve Syst, 20th St & Constitut Ave NW, Washington, DC 20551 USA.
+RP Firestone, S (reprint author), Board Governors Fed Reserve Syst, 20th St & Constitut Ave NW, Washington, DC 20551 USA.
+EM simon.b.firestone@frb.gov; marcelo.rezende@frb.gov
+CR Allen L., 2006, J FINANCIAL SERVICES, V30, P5
+   Angrist JD, 2009, MOSTLY HARMLESS ECONOMETRICS: AN EMPIRICISTS COMPANION, P1
+   Araten M, 2012, RMA J, V94, P32
+   Barakova I, 2014, J FINANC STABIL, V13, P167, DOI 10.1016/j.jfs.2014.05.005
+   Behn M., 2014, WORKING PAPER
+   Bharath S, 2007, J FINANC ECON, V85, P368, DOI 10.1016/j.jfineco.2005.08.003
+   Bonfim D, 2009, J BANK FINANC, V33, P281, DOI 10.1016/j.jbankfin.2008.08.006
+   Brady T. F., 1998, FEDERAL RESERVE B, V84, P604
+   Carey M, 2002, CREDIT RATINGS METHO, P449
+   Dennis SA, 2000, J FINANCIAL INTERMED, V9, P321
+   Drucker S, 2009, REV FINANC STUD, V22, P2835, DOI 10.1093/rfs/hhn067
+   Duffie D, 2007, J FINANC ECON, V83, P635, DOI 10.1016/j.jfineco.2005.10.011
+   Elsas R, 1998, J BANK FINANC, V22, P1283, DOI 10.1016/S0378-4266(98)00063-6
+   English W. B., 1998, 199851 FEDS FED RES
+   FAMA EF, 1985, J MONETARY ECON, V15, P29, DOI 10.1016/0304-3932(85)90051-0
+   Financial Services Authority, 2012, RES 2011 HYP PORTF E
+   Grunert J, 2005, J BANK FINANC, V29, P509, DOI 10.1016/j.jbankfin.2004.05.017
+   Ivashina V, 2009, J FINANC ECON, V92, P300, DOI 10.1016/j.jfineco.2008.06.003
+   Jacobson T, 2006, J BANK FINANC, V30, P1899, DOI 10.1016/j.jbankfin.2005.07.011
+   Jacobson T, 2013, J EUR ECON ASSOC, V11, P945, DOI 10.1111/jeea.12020
+   Jones D, 2000, J BANK FINANC, V24, P35, DOI 10.1016/S0378-4266(99)00052-7
+   Lando D, 2010, J FINANC INTERMED, V19, P355, DOI 10.1016/j.jfi.2010.03.002
+   Lee SW, 2004, FINANC MANAGE, V33, P107
+   Machauer A, 1998, J BANK FINANC, V22, P1355, DOI 10.1016/S0378-4266(98)00064-8
+   Murfin J., 2014, WORKING PAPER
+   Pesaran MH, 2006, J MONEY CREDIT BANK, V38, P1211, DOI 10.1353/mcb.2006.0074
+   Plosser M., 2014, FEDERAL RESERVE BANK, V704
+   RMA Capital Working Group, 2000, RMA J, P54
+   Schuermann T., 2004, CREDIT RISK MODELS M, P249, DOI DOI 10.2139/SSRN.525702
+   Sufi A, 2007, J FINANC, V62, P629, DOI 10.1111/j.1540-6261.2007.01219.x
+   Tang DY, 2010, J BANK FINANC, V34, P743, DOI 10.1016/j.jbankfin.2009.05.018
+   Treacy WF, 2000, J BANK FINANC, V24, P167, DOI 10.1016/S0378-4266(99)00056-4
+   2007, FED REG, V72
+NR 33
+TC 11
+Z9 11
+U1 0
+U2 7
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0920-8550
+EI 1573-0735
+J9 J FINANC SERV RES
+JI J. Financ. Serv. Res.
+PD OCT
+PY 2016
+VL 50
+IS 2
+BP 211
+EP 242
+DI 10.1007/s10693-015-0224-z
+PG 32
+WC Business, Finance
+SC Business & Economics
+GA DX4GU
+UT WOS:000384340000003
+DA 2019-12-28
+ER

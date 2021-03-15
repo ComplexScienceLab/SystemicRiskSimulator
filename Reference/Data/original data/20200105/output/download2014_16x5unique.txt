@@ -1,0 +1,433 @@
+
+PT J
+AU Berman, P
+   DasGupta, B
+   Kaligounder, L
+   Karpinski, M
+AF Berman, Piotr
+   DasGupta, Bhaskar
+   Kaligounder, Lakshmi
+   Karpinski, Marek
+TI On the Computational Complexity of Measuring Global Stability of Banking
+   Networks
+SO ALGORITHMICA
+LA English
+DT Article
+DE Banking networks; Systemic stability; Stability index; Algorithms;
+   Approximation hardness
+ID APPROXIMATION; EXPOSURES; THRESHOLD; MODELS; RISK; SET
+AB Threats on the stability of a financial system may severely affect the functioning of the entire economy, and thus considerable emphasis is placed on the analyzing the cause and effect of such threats. The financial crisis in the current and past decade has shown that one important cause of instability in global markets is the so-called financial contagion, namely the spreadings of instabilities or failures of individual components of the network to other, perhaps healthier, components. This leads to a natural question of whether the regulatory authorities could have predicted and perhaps mitigated the current economic crisis by effective computations of some stability measure of the banking networks. Motivated by such observations, we consider the problem of defining and evaluating stabilities of both homogeneous and heterogeneous banking networks against propagation of synchronous idiosyncratic shocks given to a subset of banks. We formalize the homogeneous banking network model of Nier et al. (J. Econ. Dyn. Control 31:2033-2060, 2007) and its corresponding heterogeneous version, formalize the synchronous shock propagation procedures outlined in (Nier et al. J. Econ. Dyn. Control 31:2033-2060, 2007; M. Eboli Mimeo, 2004), define two appropriate stability measures and investigate the computational complexities of evaluating these measures for various network topologies and parameters of interest. Our results and proofs also shed some light on the properties of topologies and parameters of the network that may lead to higher or lower stabilities.
+C1 [Berman, Piotr] Penn State Univ, Dept Comp Sci & Engn, University Pk, PA 16802 USA.
+   [DasGupta, Bhaskar; Kaligounder, Lakshmi] Univ Illinois, Dept Comp Sci, Chicago, IL 60607 USA.
+   [Karpinski, Marek] Univ Bonn, Dept Comp Sci, D-53117 Bonn, Germany.
+RP DasGupta, B (reprint author), Univ Illinois, Dept Comp Sci, Chicago, IL 60607 USA.
+EM berman@cse.psu.edu; dasgupta@cs.uic.edu; lkalig2@uic.edu;
+   marek@cs.uni-bonn.de
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Amini H., 2011, ARXIV11125687V1
+   Applebaum B, 2012, STOC'12: PROCEEDINGS OF THE 2012 ACM SYMPOSIUM ON THEORY OF COMPUTING, P805
+   Babus A., 2007, 20060932 TINB I
+   Babus A., 2006, FINANCIAL DEV INTEGR, P423
+   BARYEHUDA R, 1984, DISCRETE APPL MATH, V9, P1, DOI 10.1016/0166-218X(84)90086-6
+   Berman P., 1998, FURTH IMPR EL C COMP
+   Blume L., 2011, P 12 ACM C EL COMM, P1, DOI DOI 10.1145/1993574.1993576
+   Blume L, 2011, ANN IEEE SYMP FOUND, P393, DOI 10.1109/FOCS.2011.38
+   Borodin A, 2010, LECT NOTES COMPUT SC, V6484, P539, DOI 10.1007/978-3-642-17572-5_48
+   CALOMIRIS CW, 1991, NAT BUR EC, P109
+   Castiglionesi F., 2007, 2007100 TILB U
+   Chen N, 2008, PROCEEDINGS OF THE NINETEENTH ANNUAL ACM-SIAM SYMPOSIUM ON DISCRETE ALGORITHMS, P1029
+   Chen W, 2009, KDD-09: 15TH ACM SIGKDD CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING, P199, DOI 10.1145/1557019.1557047
+   Coelho FC, 2008, SOURCE CODE BIOL MED, V3, DOI 10.1186/1751-0473-3-3
+   Cont R., 2012, HDB SYSTEMIC RISK
+   Corbo J., 2010, 3 FIN RISKS
+   DasGupta B., 2012, ARXIV12083789V1
+   Dasgupta B., 2004, WORKING PAPERS U CON
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   DOBSON G, 1982, MATH OPER RES, V7, P515, DOI 10.1287/moor.7.4.515
+   Eboli  M., 2004, SYSTEMIC RISK UNPUB
+   Eubank S, 2005, JPN J INFECT DIS, V58, pS9
+   Eubank S, 2004, NATURE, V429, P180, DOI 10.1038/nature02541
+   Feige U, 1998, J ACM, V45, P634, DOI 10.1145/285055.285059
+   Fisher I, 1933, ECONOMETRICA, V1, P337, DOI 10.2307/1907327
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Haldane A, 2009, MARC EV C STRESS TES
+   Iazzetta C, 2009, 711 BANK IT
+   Kempe D., 2003, P 9 ACM SIGKDD INT C, P137, DOI DOI 10.1145/956750.956769
+   Keynes J. M., 1936, GEN THEORY EMPLOYMEN
+   Khuller S, 1999, INFORM PROCESS LETT, V70, P39, DOI 10.1016/S0020-0190(99)00031-9
+   Kleindorfer P. R., 2009, NETWORK CHALLENGE ST
+   Kortsarz G, 2004, SIAM J COMPUT, V33, P704, DOI 10.1137/S0097539702416736
+   Lagunoff R, 2001, J ECON THEORY, V99, P220, DOI 10.1006/jeth.2000.2733
+   Liedorp F., 2010, 248 DNB
+   Minsky H., 1977, FINANCIAL CRISES I M
+   Mistrulli P.E., 2007, BANK ITALY RES
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Raz R, 1998, SIAM J COMPUT, V27, P763, DOI 10.1137/S0097539795280895
+   Stauffer D., 1994, INTRO PERCOLATION TH
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+NR 45
+TC 1
+Z9 1
+U1 0
+U2 14
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0178-4617
+EI 1432-0541
+J9 ALGORITHMICA
+JI Algorithmica
+PD DEC
+PY 2014
+VL 70
+IS 4
+BP 595
+EP 647
+DI 10.1007/s00453-013-9769-0
+PG 53
+WC Computer Science, Software Engineering; Mathematics, Applied
+SC Computer Science; Mathematics
+GA AS5PM
+UT WOS:000344322400001
+DA 2019-12-27
+ER
+
+PT J
+AU Panetti, E
+AF Panetti, Ettore
+TI Financial liberalization and contagion with unobservable savings
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article
+DE Financial intermediation; Liberalization; Financial contagion; Hidden
+   trades
+ID SYSTEMIC RISK; INTEGRATION; INSURANCE; LIQUIDITY; MARKETS
+AB How does the presence of decentralized market-based channels for borrowing and lending affect financial integration and financial contagion? To answer this question, I develop a two-country model of financial intermediation, where banks have access to country-specific investment technologies, and agents can borrow and lend in an international hidden market. In this environment, the possibility of hidden borrowing and lending has three main effects. First, it improves welfare with respect to the autarkic equilibrium, by allowing gains from "hidden" financial integration. Second, it halts the process of "official" financial integration. Third, it lowers the resilience of the economy to unexpected shocks to fundamentals. (C) 2014 Elsevier Inc. All rights reserved.
+C1 [Panetti, Ettore] Banco Portugal, P-1150012 Lisbon, Portugal.
+   [Panetti, Ettore] Univ Sassari, I-07100 Sassari, Italy.
+   [Panetti, Ettore] CRENoS, Cagliari, Italy.
+RP Panetti, E (reprint author), Banco Portugal, Res Dept, Ave Almirante Reis 71, P-1150012 Lisbon, Portugal.
+EM ettore.panetti@bportugal.pt
+RI Panetti, Ettore/E-8223-2014
+OI Panetti, Ettore/0000-0003-2316-3497
+CR Abiad A., 2008, WP08266 IMF
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Brusco S, 2007, J FINANC, V62, P2275, DOI 10.1111/j.1540-6261.2007.01275.x
+   Castiglionesi F, 2013, J FINANC INTERMED, V22, P177, DOI 10.1016/j.jfi.2012.07.002
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Farhi E, 2009, REV ECON STUD, V76, P973, DOI 10.1111/j.1467-937X.2009.00540.x
+   FDIC, 1997, TECHNICAL REPORT
+   Fecht F, 2012, J INT ECON, V88, P150, DOI 10.1016/j.jinteco.2012.01.012
+   Golosov M, 2007, Q J ECON, V122, P487, DOI 10.1162/qjec.122.2.487
+   GORTON G, 1988, OXFORD ECON PAP, V40, P751, DOI 10.1093/oxfordjournals.oep.a041885
+   Gruner H. P., 2005, 5253 CEPR
+   Hartmann P., 2005, ECB WORKING PAPER SE, V527
+   Imai M, 2011, AM ECON J-MACROECON, V3, P155, DOI 10.1257/mac.3.1.155
+   Iyer R, 2011, REV FINANC STUD, V24, P1337, DOI 10.1093/rfs/hhp105
+   Mediobanca Research Department, 2010, TECHNICAL REPORT
+   VANLELYVELD I, 2006, INT J CENT BANK, V2, P99
+   White L. J., 1991, S L DEBACLE PUBLIC P
+NR 19
+TC 2
+Z9 2
+U1 0
+U2 16
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD DEC
+PY 2014
+VL 36
+BP 20
+EP 35
+DI 10.1016/j.irfa.2014.05.005
+PG 16
+WC Business, Finance
+SC Business & Economics
+GA AW1QQ
+UT WOS:000346064800002
+DA 2019-12-27
+ER
+
+PT J
+AU Martinez-Jaramillo, S
+   Alexandrova-Kabadjova, B
+   Bravo-Benitez, B
+   Solorzano-Margain, JP
+AF Martinez-Jaramillo, Serafin
+   Alexandrova-Kabadjova, Biliana
+   Bravo-Benitez, Bernardo
+   Pablo Solorzano-Margain, Juan
+TI An empirical study of the Mexican banking system's network and its
+   implications for systemic risk
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Systemic risk; Financial networks; Payment systems; Interbank market
+ID CENTRALITY; TOPOLOGY
+AB With the aim to measure and monitor systemic risk, we present some topological metrics for the interbank exposures and the payments system networks. The evolution of such networks is analyzed, we draw important conclusions from the systemic risk's perspective and propose a measure of interconnectedness. Additionally, we suggest non-topological measures to describe individual behavior of banks in both networks. The main findings of this paper are: the structures of the payments and exposures networks are different (in terms of connectivity); the topology of the exposures network changed after the collapse of Lehman Brothers, whereas the structure of the payments network does not; the proposed measure of interconnectedness can be used to determine the importance of a bank in terms of connectivity. Finally, we found that interconnectedness of a bank is not necessarily related with its assets size but it is linked to the contagion it might cause. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Martinez-Jaramillo, Serafin; Pablo Solorzano-Margain, Juan] Banco Mexico, Direcc Gen Estabilidad Financiera, Mexico City, DF, Mexico.
+   [Alexandrova-Kabadjova, Biliana; Bravo-Benitez, Bernardo] Banco Mexico, Direcc Gen Sistemas Pagos, Mexico City, DF, Mexico.
+   [Alexandrova-Kabadjova, Biliana; Bravo-Benitez, Bernardo] Banco Mexico, Serv Corporat, Mexico City, DF, Mexico.
+RP Martinez-Jaramillo, S (reprint author), Banco Mexico, Direcc Gen Estabilidad Financiera, Mexico City, DF, Mexico.
+EM smartin@banxico.org.mx
+OI Alexandrova-Kabadjova, Biliana/0000-0001-7493-9449
+CR Acharya V. V., 2010, 1002 FED RES BANK CL
+   Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Alexandrova-Kabadjova B., 2012, DIAGNOSTICS FINANCIA, P431
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   [Anonymous], 2008, 355 BANK ENGL
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Basel Committee on Banking Supervision (BCBS) & Financial Stability Board (FSB), 2013, GLOB SYST IMP BANKS
+   BCBS, 2011, GLOB SYST IMP BANKS
+   Bech M. L., 2008, 59 DANM NATIONALBANK
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Bech ML, 2010, J MONETARY ECON, V57, P352, DOI 10.1016/j.jmoneco.2010.01.002
+   Bisias Dimitrios, 2012, 0001 US DEP TREAS OF
+   Blavarg M., 2002, ECON REV, V2, P19
+   BONACICH P, 1972, J MATH SOCIOL, V2, P113, DOI 10.1080/0022250X.1972.9989806
+   Borgatti SP, 2006, SOC NETWORKS, V28, P466, DOI 10.1016/j.socnet.2005.11.005
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Boss M., 2006, OENB FINANCIAL STABI, V11, P83
+   Brandes U, 2001, J MATH SOCIOL, V25, P163, DOI 10.1080/0022250X.2001.9990249
+   Brunnermeier M.K., 2011, 17454 NAT BUR EC RES
+   Canedo JMD, 2009, INTELL SYST ACCOUNT, V16, P87, DOI 10.1002/isaf.295
+   Cerutti E., 2012, RISK TOPOGRAPHY SYST
+   Chapman J.T.E., 2010, 201013 BANK CAN
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Cont R., 2010, NETWORK STRUCT UNPUB
+   Costenbader E, 2003, SOC NETWORKS, V25, P283, DOI 10.1016/S0378-8733(03)00012-1
+   Craig B., BIS WORKING PAPERS, V322
+   Davison A. C., 1997, CAMBRIDGE SERIES STA
+   Doreian P., 2005, GEN BLOCKMODELING
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   ELMAN JL, 1990, COGNITIVE SCI, V14, P179, DOI 10.1016/0364-0213(90)90002-E
+   Embree L., 2009, 200913 BANK CAN
+   Erdos P., 1959, PUBL MATH-DEBRECEN, V6, P290, DOI DOI 10.1234/12345678
+   Espinosa-Vega MA, 2011, J FINAN ECON POLICY, V3, P182, DOI 10.1108/17576381111152191
+   Frantz T., 2005, CMUISRI05117
+   FREEMAN LC, 1979, SOC NETWORKS, V1, P215, DOI 10.1016/0378-8733(78)90021-7
+   Fricke D., 2012, KIEL WORKING PAPERS, V1759
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garratt R.J., 2011, 413 BANK ENGL
+   Gauthier C., 2010, 20104 BANK CAN
+   Goyal S., 2007, CONNECTIONS INTRO EC
+   Henggeler-Muller J., 2006, THESIS U BASEL
+   Hoggarth G., 2010, 8 BANK ENGL
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   In't Veld D. L., 2012, 348 NED BANK
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Lopez-Castanon C, 2013, SIMULATION IN COMPUTATIONAL FINANCE AND ECONOMICS: TOOLS AND EMERGING APPLICATIONS, P181, DOI 10.4018/978-1-4666-2011-7.ch010
+   Lopez-Gallo F., 2005, INTERBANK EXPO UNPUB
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Nacaskul P., 2010, SYSTEMIC IMPORT ANAL
+   Nagurney A, 2003, NEW DIM NET, P1
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Page L., 1999, 199966 STANF INFOLAB
+   Propper M., 2008, 177 DNB
+   SABIDUSSI G, 1966, PSYCHOMETRIKA, V31, P581, DOI 10.1007/BF02289527
+   Sachs A., 2010, TECHNICAL REPORT
+   Saltoglu B, 2010, 26684 MPRA U LIB MUN
+   Samukhin A., 2001, PHYS REV E, V64
+   Solis-Montes M. P., 2012, STRUCTURE MEXI UNPUB
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Wells S, 2002, FINANCIAL STABIL DEC, V13, P175
+   Wetherilt A., 2010, 398 BANK ENGL
+NR 67
+TC 58
+Z9 61
+U1 4
+U2 55
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD MAR
+PY 2014
+VL 40
+BP 242
+EP 265
+DI 10.1016/j.jedc.2014.01.009
+PG 24
+WC Economics
+SC Business & Economics
+GA AD8DB
+UT WOS:000333495600014
+DA 2019-12-27
+ER
+
+PT J
+AU Fry-McKibbin, R
+   Martin, VL
+   Tang, C
+AF Fry-McKibbin, Renee
+   Martin, Vance L.
+   Tang, Chrismin
+TI Financial contagion and asset pricing
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Financial crises; Contagion; Exchange options; Delta hedging
+ID OPTION; VOLATILITY; MARKETS; CRISES; TESTS
+AB Asset market interconnectedness can give rise to significant contagion risks during periods of financial crises that extend beyond the risks associated with changes in volatilities and correlations. These channels include the transmission of shocks operating through changes in the higher order comoments of asset returns, including changes in coskewness arising from changes in the interaction between volatility and average returns across asset markets. These additional contagion channels have nontrivial implications for the pricing of options through changes in the payoff probability structure and more generally, in the management of financial risks. The effects of incorrectly pricing risk has proved to be significant during many financial crises, including the subprime crisis from mid 2007 to mid 2008, the Great Recession beginning 2008 and the European debt crisis from 2010. Using an exchange options model, the effects of changes in the comoments of asset returns across asset markets are investigated with special emphasis given to understanding the effects on hedging risk during financial crises. The results reveal that by not correctly pricing the risks arising from higher order moments during financial crises, there is significant mispricing of options, while hedged portfolios during noncrisis periods become exposed to price movements in times of crises. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Fry-McKibbin, Renee] Australian Natl Univ, CAMA, Crawford Sch Publ Policy, Canberra, ACT 0200, Australia.
+   [Martin, Vance L.] Univ Melbourne, Dept Econ, Melbourne, Vic 3010, Australia.
+   [Tang, Chrismin] La Trobe Univ, Sch Econ, Bundoora, Vic 3086, Australia.
+RP Tang, C (reprint author), La Trobe Univ, Sch Econ, Bundoora, Vic 3086, Australia.
+EM renee.mckibbin@anu.edu.au; vance@unimelb.edu.au;
+   chrismin.tang@latrobe.edu.au
+RI Fry-McKibbin, Renee/H-4641-2017
+OI Fry-McKibbin, Renee/0000-0003-2396-7540
+CR Ait-Sahalia Y, 2001, J ECONOMETRICS, V102, P67, DOI 10.1016/S0304-4076(00)00091-9
+   Ait-Sahalia Y., 2010, W15850 NBER
+   Ane T, 1999, J FUTURES MARKETS, V19, P735, DOI 10.1002/(SICI)1096-9934(199910)19:7<735::AID-FUT1>3.0.CO;2-W
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   BOYLE PP, 1977, J FINANC ECON, V4, P323, DOI 10.1016/0304-405X(77)90005-8
+   Busetti F, 2011, J FINANC ECONOMET, V9, P106, DOI 10.1093/jjfinec/nbq020
+   CORRADO CJ, 1997, J DERIV, V4, P8
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Dungey M., 2010, TRANSMISSION FINANCI
+   Eichengreen B, 1996, SCAND J ECON, V98, P463, DOI 10.2307/3440879
+   Eichengreen B, 1995, ECON POLICY, V21, P249, DOI DOI 10.2307/1344591
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Flynn DB, 2005, AUST NZ J STAT, V47, P101, DOI 10.1111/j.1467-842X.2005.00375.x
+   Frankel JA, 1996, J INT ECON, V41, P351, DOI 10.1016/S0022-1996(96)01441-9
+   Fry R, 2010, J BUS ECON STAT, V28, P423, DOI 10.1198/jbes.2010.06060
+   Fry-McKibbin R.A., 2013, 612013 CAMA
+   Garcia R, 2000, J ECONOMETRICS, V94, P93, DOI 10.1016/S0304-4076(99)00018-4
+   Harvey A, 2010, J EMPIR FINANC, V17, P485, DOI 10.1016/j.jempfin.2009.10.004
+   Hull J. C., 2000, OPTIONS FUTURES OTHE
+   JARROW R, 1982, J FINANC ECON, V10, P347, DOI 10.1016/0304-405X(82)90007-1
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Lim GC, 2006, J MULTINATL FINANC M, V16, P291, DOI 10.1016/j.mulfin.2005.08.004
+   Lim GC, 2005, J APPL ECONOMET, V20, P377, DOI 10.1002/jae.762
+   Lim GC, 1998, J INT ECON, V45, P351, DOI 10.1016/S0022-1996(97)00056-1
+   Lo Duca M, 2013, J BANK FINANC, V37, P2183, DOI 10.1016/j.jbankfin.2012.06.010
+   LYE JN, 1993, J AM STAT ASSOC, V88, P261, DOI 10.2307/2290721
+   MARGRABE W, 1978, J FINANC, V33, P177, DOI 10.1111/j.1540-6261.1978.tb03397.x
+   Martin GM, 2005, J TIME SER ANAL, V26, P437, DOI 10.1111/j.1467-9892.2005.00410.x
+   Martin V.L., 2013, CONDITIONAL CO UNPUB
+   Melick WR, 1997, J FINANC QUANT ANAL, V32, P91, DOI 10.2307/2331318
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+NR 33
+TC 10
+Z9 10
+U1 0
+U2 18
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD OCT
+PY 2014
+VL 47
+BP 296
+EP 308
+DI 10.1016/j.jbankfin.2014.05.002
+PG 13
+WC Business, Finance; Economics
+SC Business & Economics
+GA AR1KZ
+UT WOS:000343345400022
+DA 2019-12-27
+ER
+
+PT J
+AU Canon, C
+   Margaretic, P
+AF Canon, Carlos
+   Margaretic, Paula
+TI Correlated bank runs, interbank markets and reserve requirements
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Bank runs; Correlated investment; Interbank market
+ID SYSTEMIC RISK; CONTAGION; LIQUIDITY
+AB This article extends the application of global games of Goldstein and Pauzner (2005) in the banking model of Diamond and Dybvig (1983) to account for correlation in the quality of banks' long term investment, when banks are linked through cross deposits and there is a central bank. The goal is to study how these elements affect the deposit contract that banks offer to depositors and the ex ante probability of a bank run. We show that the coexistence of a central bank, which determines banks' reserve requirements, and an interbank market, which redistributes reserves, leads to a smaller probability of a bank run and to fewer inefficient bank runs, relative to the case with no central bank and no interbank market. By adequately choosing the level of reserves to store, the central bank can improve the equilibrium outcome and allow banks to offer a higher interim payment to depositors, relative to the situation with no cross deposits. (c) 2014 Elsevier B.V. All rights reserved.
+C1 [Canon, Carlos] Banco Mexico, Financial Stabil Div, Delegacion Cuauhtemoc, DF, Mexico.
+   [Margaretic, Paula] Univ Toulouse 1, CRM, F-31000 Toulouse, France.
+RP Margaretic, P (reprint author), Univ Toulouse 1, CRM, 6 Impasse Ramier Catalans,Batiment B,Apt 202, F-31000 Toulouse, France.
+EM ccanon@banxico.org.mx; paula.margaretic@airbus.com
+CR Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2012, AM ECON J-MACROECON, V4, P184, DOI 10.1257/mac.4.2.184
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2008, REV FINANC STUD, V21, P2705, DOI 10.1093/rfs/hhm078
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2010, EC WORKING PAPERS EU, VECO2010/26
+   Allen F, 2009, J MONETARY ECON, V56, P639, DOI 10.1016/j.jmoneco.2009.04.003
+   Bhattacharia S, 1987, NEW APPROACHES MONET, P69
+   Bluhm M, 2012, ENDOGENOUS BAN UNPUB
+   CARLSSON H, 1993, ECONOMETRICA, V61, P989, DOI 10.2307/2951491
+   Claessens S, 2013, J INT MONEY FINANC, V39, P153, DOI 10.1016/j.jimonfin.2013.06.023
+   De Carvalho FA, 2008, J APPL ECON, V11, P61, DOI 10.1080/15140326.2008.12040499
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Federico P., 2012, MACROPRUDENTIA UNPUB
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Freixas X, 2011, REV FINANC STUD, V24, P2656, DOI 10.1093/rfs/hhr018
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Glocker C, 2012, INT J CENT BANK, V8, P65
+   Goldstein I, 2005, J FINANC, V60, P1293, DOI 10.1111/j.1540-6261.2005.00762.x
+   Gray S, 2011, WP1136 IMF
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Kashelikar A. S., 2008, Proceedings of the World Environmental and Water Resources Congress, Honolulu, Hawai'i, USA, 12-16 May, 2008, P431
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   Lim C., 2011, WP11238 IMF
+   Margaretic P., 2012, SEQUENTIAL BAN UNPUB
+   Montoro C., 2011, BIS Q REV, P53
+   Morris S., 2003, ADV EC ECONOMETRICS
+   Nier E., 2008, 346 BANK ENGL
+   Robitaille P., 2011, 1021 BOARD GOV FED R
+   Terrier Gilbert, 2011, 11159 IMF
+   Tovar C. E., 2012, WP12142 IMF
+   Vargas H., 2011, GLOBAL CRISIS FINANC, V54, P133
+   Wang CY, 2013, EUR ECON REV, V64, P169, DOI 10.1016/j.euroecorev.2013.08.005
+   Yan ML, 2012, INT REV FINANC ANAL, V25, P73, DOI 10.1016/j.irfa.2012.06.009
+NR 35
+TC 3
+Z9 3
+U1 0
+U2 19
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD DEC
+PY 2014
+VL 49
+BP 515
+EP 533
+DI 10.1016/j.jbankfin.2014.03.040
+PG 19
+WC Business, Finance; Economics
+SC Business & Economics
+GA AY4WR
+UT WOS:000347576400038
+DA 2019-12-28
+ER

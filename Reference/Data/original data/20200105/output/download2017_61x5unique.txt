@@ -1,0 +1,514 @@
+
+PT J
+AU Battaglia, F
+   Gallo, A
+AF Battaglia, Francesca
+   Gallo, Angela
+TI Strong boards, ownership concentration and EU banks' systemic
+   risk-taking: Evidence from the financial crisis
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Board composition; Bank ownership; Systemic risk; Financial crisis
+ID CORPORATE GOVERNANCE; PERFORMANCE; MANAGEMENT; SIZE
+AB We examine the effects of board composition and ownership on traditional measures of bank risk and proxies of bank tail and systemic risk. Both banks' corporate governance shortcomings and systemic risk-taking have been recognized among the potential causes of the 2007 financial crisis. Yet, their interaction has received less attention so far. Based on a sample of 40 European banks over the period 2006-2010, we find that the boards 'characteristics affect banks' systemic risk, except for board independence and that this relation depends on capital regulations, banking systems' ownership structures and bank activity restrictions. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Battaglia, Francesca] Univ Napoli Parthenope, Dipartimento Studi Aziendali & Quantitativi, Via G Parisi 13, I-80132 Naples, Italy.
+   [Gallo, Angela] Univ Salerno, Dipartimento Studi & Ric Aziendali, Via Ponte Don Melillo, I-84084 Fisciano, SA, Italy.
+RP Battaglia, F (reprint author), Univ Napoli Parthenope, Dipartimento Studi Aziendali & Quantitativi, Via G Parisi 13, I-80132 Naples, Italy.
+EM francesca.battaglia@uniparthenope.it; angallo@unisa.it
+CR Acharya V, 2010, MEASURING SYSTEMIC R
+   Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Adams R. B., 2013, LEHMAN SISTERS UNPUB
+   Adams RB, 2007, J FINANC, V62, P217, DOI 10.1111/j.1540-6261.2007.01206.x
+   Adams RB, 2012, INT REV FINANC, V12, P7, DOI 10.1111/j.1468-2443.2011.01147.x
+   Adrian T., 2008, COVAR WORKING PAPER
+   Aebi V, 2012, J BANK FINANC, V36, P3213, DOI 10.1016/j.jbankfin.2011.10.020
+   Akhlgbe A, 2008, J BANK FINANC, V32, P2124, DOI 10.1016/j.jbankfin.2007.12.037
+   Altonji JG, 2005, J POLIT ECON, V113, P151, DOI 10.1086/426036
+   Arteta Carlos, 2013, INT FINANCE DISCUSSI, V1076
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Baltagi B.H., 2005, ECONOMETRIC ANAL PAN
+   Baltagi BH, 1999, ECONOMET THEOR, V15, P814, DOI 10.1017/S0266466699156020
+   Baranchuk N, 2009, REV FINANC STUD, V22, P715, DOI 10.1093/rfs/hhn052
+   Barth J, 1999, 2037 WORLD BANK
+   *BAS COMM BANK SUP, 2005, INT CONV CAP MEAS CA
+   Basel Committee on Banking Supervision, 2010, PRINC ENH CORP GOV
+   Basel Committee on Banking Supervision, 2006, ENH CORP GOV BANK OR
+   Bebchuk LA, 2010, GEORGETOWN LAW J, V98, P247
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Berger A., 2012, 023 EUR BANK CTR
+   Berger AN, 1998, J FINANC ECON, V50, P187, DOI 10.1016/S0304-405X(98)00036-1
+   Bhagst S., 2001, J CORP LAW, V27, P231, DOI DOI 10.2139/ssrn.133808
+   Black BS, 2006, J CORP FINANC, V12, P660, DOI 10.1016/j.jcorpfin.2005.08.001
+   Brownlees Ch., 2010, VOLATILITY CORRELATI
+   Burkart M, 1997, Q J ECON, V112, P693, DOI 10.1162/003355397555325
+   Caprio G, 2007, J FINANC INTERMED, V16, P584, DOI 10.1016/j.jfi.2006.10.003
+   Casu B, 2011, EUR J FINANC, V17, P769, DOI 10.1080/1351847X.2010.538526
+   Chalermchatvichien P, 2014, J FINANC SERV RES, V45, P219, DOI 10.1007/s10693-013-0160-8
+   Coles JL, 2008, J FINANC ECON, V87, P329, DOI 10.1016/j.jfineco.2006.08.008
+   Cooper EW, 2009, Q REV ECON FINANC, V49, P253, DOI 10.1016/j.qref.2008.04.002
+   Cornett M. M., 2010, WORKING PAPER
+   Cornett MM, 2009, J CORP FINANC, V15, P412, DOI 10.1016/j.jcorpfin.2009.04.003
+   Cremers K., 2010, WORKING PAPER
+   de Andres P, 2008, J BANK FINANC, V32, P2570, DOI 10.1016/j.jbankfin.2008.05.008
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Diamond DW, 2009, AM ECON REV, V99, P606, DOI 10.1257/aer.99.2.606
+   Eisenberg T, 1998, J FINANC ECON, V48, P35, DOI 10.1016/S0304-405X(98)00003-8
+   Ellul A, 2013, J FINANC, V68, P1757, DOI 10.1111/jofi.12057
+   Erkens DH, 2012, J CORP FINANC, V18, P389, DOI 10.1016/j.jcorpfin.2012.01.005
+   Faleye O., 2015, RISKY LENDING UNPUB
+   FAMA EF, 1983, J LAW ECON, V26, P301, DOI 10.1086/467037
+   Fernandes N., 2016, ARE OUTSIDE DIRECTOR
+   Fernandez A. I., 1997, CORPORATE GOVERNANCE
+   Fortin R, 2010, FINAN REV, V45, P891, DOI 10.1111/j.1540-6288.2010.00277.x
+   Garcia-Kuhnert Y., 2013, SHAREHOLDER DIVERSIF
+   Geneva Report by, 2009, FUNDAMENTAL PRINCIPL, V11
+   Goodhart C., 2009, IMF WORKING PAPERS, V09/04
+   Gray D., 2009, WORKING PAPER
+   Gray D., 2009, 09015 HARV BUS SCH
+   Gropp R, 2010, 13 ZEW
+   Hanazaki Masaharu, 2003, PACIFIC BASIN FINANC, V11, P305
+   Harris M, 2008, REV FINANC STUD, V21, P1797, DOI 10.1093/rfs/hhl030
+   Hartmann P, 2005, 11698 NBER
+   Hermalin B., 2003, EC POLICY REV, V9, P7
+   International Monetary Fund, 2014, GLOB FIN STAB REP RI
+   Jiraporn P, 2009, J FINANC SERV RES, V36, P1, DOI 10.1007/s10693-009-0059-6
+   Kirkpatrick G., 2009, OECD J FINANCIAL MAR, V2009, P61, DOI DOI 10.1787/FMT-V2009-ART3-EN
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Levine R., 2004, WORKING PAPER
+   Li L, 2010, CORPORATE GOVE UNPUB
+   Liu C.-L., 2011, CORPORATE GOVERNANCE, V19, P437
+   Macy J. R., 2003, FEDERAL RESERVE BANK, P91
+   Minton B. A, 2010, BOARD COMPOSITION RI
+   Mishra CS, 2000, FINANC MANAGE, V29, P51, DOI 10.2307/3666229
+   Organisation for Economic Co-operation and Development, 2010, CORP GOV FIN CRIS CO
+   Pacini C., 2005, J EC FINANCE, V29, P46
+   Pathan S, 2009, J BANK FINANC, V33, P1340, DOI 10.1016/j.jbankfin.2009.02.001
+   Peni E, 2012, J FINANC SERV RES, V41, P19, DOI 10.1007/s10693-011-0108-9
+   SCHRANZ MS, 1993, J POLIT ECON, V101, P299, DOI 10.1086/261877
+   SIERRA GE, 2006, J FINANC SERV RES, V29, P105, DOI DOI 10.1007/S10693-006-5921-1
+   Steffen S., 2012, HDB SYSTEMIC RISK
+   Tasche D., 2000, WORKING PAPER
+   Vafeas N, 1999, J FINANC ECON, V53, P113, DOI 10.1016/S0304-405X(99)00018-5
+   Wang TW, 2013, J BANK FINANC, V37, P2042, DOI 10.1016/j.jbankfin.2013.01.027
+   Wooldridge J.M., 2002, ECONOMETRIC ANAL CRO
+   Yamai Yasuhiro, 2002, MONETARY EC STUDIES, V20, P181
+   Yermack D, 1996, J FINANC ECON, V40, P185, DOI 10.1016/0304-405X(95)00844-5
+NR 79
+TC 6
+Z9 6
+U1 5
+U2 14
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD JAN
+PY 2017
+VL 46
+BP 128
+EP 146
+DI 10.1016/j.intfin.2016.08.002
+PG 19
+WC Business, Finance; Economics
+SC Business & Economics
+GA EL4YQ
+UT WOS:000394628500008
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Wagalath, L
+AF Wagalath, Lakshithe
+TI LOST IN CONTAGION? BUILDING A LIQUIDATION INDEX FROM COVARIANCE DYNAMICS
+SO INTERNATIONAL JOURNAL OF THEORETICAL AND APPLIED FINANCE
+LA English
+DT Article
+DE Fire sales; liquidation; systemic risk indicator; contagion
+ID ASSET FIRE SALES; VOLATILITY; PURCHASES; MARKETS; RISK
+AB We propose a tool for monitoring fire sales and fund liquidations in financial markets. This liquidation index detects fire sales episodes in a contemporaneous manner and estimates their magnitude, using only publicly available data (asset prices and volumes). At every date t, it takes as input the movement of asset prices and realized covariances between dates t-T and t and the market depth of each asset and estimates a theoretical magnitude for fire sales over the period [t -T, t] that generated such joint movement of prices and covariances. As such, the liquidation index spikes during fire sales episodes and can hence be used in a systemic risk management perspective, as it enables to detect fire sales episodes - even complex liquidation events such as the hedge fund crash of August 2007 which was undetected by commonly-used monitoring tools. It can also be useful in a trading and portfolio allocation perspective as it allows to distinguish between periods of "fundamental"asset behavior from fire sales periods, characterized by crowding and contagion effects and during which diversification effects are reduced.
+C1 [Wagalath, Lakshithe] CNRS, LEM, IESEG Sch Management, 1 Parvis Def, F-92044 Paris, France.
+RP Wagalath, L (reprint author), CNRS, LEM, IESEG Sch Management, 1 Parvis Def, F-92044 Paris, France.
+CR Adrian T., 2011, TECHNICAL REPORT
+   ALMGREN R, 2005, RISK, P58
+   Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   Amini H., 2013, MATH FINANCE
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   [Anonymous], 2011, PHYS REV X, V1
+   Bernstein P. L., 1987, FINANCIAL MANAGE SUM, P54
+   Bouchaud J., 2000, IEE P-RADAR SON NAV, V3, P391
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Brunnermeier MK, 2012, TECHNICAL REPORT
+   CBOE, 2003, CBOE VOL IND VIX
+   Cont R, 2016, MATH FINANC, V26, P835, DOI 10.1111/mafi.12071
+   Cont R, 2014, J FINANC ECONOMET, V12, P47, DOI 10.1093/jjfinec/nbt003
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   Da Fonseca J, 2008, QUANT FINANC, V8, P591, DOI 10.1080/14697680701668418
+   Danielsson J, 2004, J BANK FINANC, V28, P1069, DOI 10.1016/S0378-4266(03)00113-4
+   Duffie D., 2012, CREDIT RISK PRICING
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P1, DOI 10.1017/CBO9781139151184
+   Fratzscher M., 2011, CAPITAL FLOWS PUSH V
+   FRIEDMAN S, 1981, EDUC PSYCHOL MEAS, V41, P11, DOI 10.1177/001316448104100102
+   Gonnard E., 2008, FINANCIAL MARKET TRE, V95, P1
+   Gourieroux C, 2006, ECONOMET REV, V25, P177, DOI 10.1080/07474930600713234
+   Gourieroux C, 2009, J ECONOMETRICS, V150, P167, DOI 10.1016/j.jeconom.2008.12.016
+   Graham A., 2000, MEASURING CREDIT RIS
+   Greenwood R, 2011, J FINANC ECON, V102, P471, DOI 10.1016/j.jfineco.2011.06.003
+   Jacod J, 2012, STOCH MOD APPL PROBA, V67, P3, DOI 10.1007/978-3-642-24127-7_1
+   Jotikasthira C, 2012, J FINANC, V67, P2015, DOI 10.1111/j.1540-6261.2012.01780.x
+   Khandani AE, 2011, J FINANC MARK, V14, P1, DOI 10.1016/j.finmar.2010.07.005
+   Kiyotaki N, 2002, AM ECON REV, V92, P46, DOI 10.1257/000282802320188989
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Moro E, 2009, PHYS REV E, V80, DOI 10.1103/PhysRevE.80.066102
+   Obizhaeva A., 2011, WORKING PAPER
+   Sandoval L, 2012, PHYSICA A, V391, P187, DOI 10.1016/j.physa.2011.07.023
+   Saunders  A., 2010, CREDIT RISK MANAGEME, V528
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Stelzer R, 2010, BERNOULLI, V16, P80, DOI 10.3150/09-BEJ196
+   Tonello M., 2010, C BOARD RES REP
+NR 40
+TC 1
+Z9 1
+U1 0
+U2 3
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 0219-0249
+EI 1793-6322
+J9 INT J THEOR APPL FIN
+JI Int. J. Theor. Appl. Financ.
+PD FEB
+PY 2017
+VL 20
+IS 1
+AR 1750001
+DI 10.1142/S0219024917500017
+PG 26
+WC Business, Finance
+SC Business & Economics
+GA EM5RQ
+UT WOS:000395370500001
+DA 2019-12-27
+ER
+
+PT J
+AU Wibowo, B
+AF Wibowo, Buddi
+TI Systemic risk, bank's capital buffer, and leverage
+SO ECONOMIC JOURNAL OF EMERGING MARKETS
+LA English
+DT Article
+DE systemic risk; bank competition; distance-to-default; capital buffer;
+   leverage
+ID FINANCIAL NETWORKS; DEFAULT; CONTAGION; STABILITY; MODEL
+AB This paper measures individual bank's impact on banking systemic risk and examines the effect of individual bank's capital buffer and leverage to bank's systemic risk impact in Indonesia during 2010-2014. Using Merton's distance-to-default to measure systemic risk, the study shows a significant negative relationship between bank's capital buffer and systemic risk. High capital buffer tends to lowering bank's impact on systemic risk. Bank's leverage level also influences its contribution to systemic risk, even though the impact is much lower compared to that of capital buffer impact.
+C1 [Wibowo, Buddi] Univ Indonesia, Dept Management, Econ & Business Fac, Jakarta, Indonesia.
+RP Wibowo, B (reprint author), Univ Indonesia, Dept Management, Econ & Business Fac, Jakarta, Indonesia.
+EM buddi.wibowo@ui.ac.id
+OI wibowo, buddi/0000-0003-4782-4245
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Afik Z, 2016, J EMPIR FINANC, V35, P43, DOI 10.1016/j.jempfin.2015.09.004
+   Anginer D., 2011, HAS GLOBAL BANKING S
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Basel Committee on Banking Supervision, 2012, FRAM DEAL DOM SYST I
+   Basel Committee on Banking Supervision, 2012, COR PRINC EFF BANK S
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bharath ST, 2008, REV FINANC STUD, V21, P1339, DOI 10.1093/rfs/hhn044
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Fiordelisi F, 2013, J BANK FINANC, V37, P2000, DOI 10.1016/j.jbankfin.2013.01.004
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Karolyi GA, 2012, J FINANC ECON, V105, P82, DOI 10.1016/j.jfineco.2011.12.008
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Shin HS, 2009, ECON J, V119, P309, DOI 10.1111/j.1468-0297.2008.02239.x
+   Sundaresan S, 2013, ANNU REV FINANC ECON, V5, P21, DOI 10.1146/annurev-financial-110112-120923
+NR 18
+TC 0
+Z9 0
+U1 0
+U2 0
+PU UNIV ISLAM INDONESIA
+PI YOGYAKARTA
+PA JL KALIURANG KM 14 5, KEC SLEMAN, YOGYAKARTA, 00000, INDONESIA
+SN 2086-3128
+EI 2502-180X
+J9 ECON J EMERG MARK
+JI Econ. J. Emerg. Mark.
+PD OCT
+PY 2017
+VL 9
+IS 2
+BP 150
+EP 158
+DI 10.20885/ejem.vol9.iss2.art4
+PG 9
+WC Economics
+SC Business & Economics
+GA GW9MU
+UT WOS:000447313800004
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Bulut, H
+AF Bulut, Harun
+TI Managing Catastrophic Risk in Agriculture through Ex Ante Subsidized
+   Insurance or Ex Post Disaster Aid
+SO JOURNAL OF AGRICULTURAL AND RESOURCE ECONOMICS
+LA English
+DT Article
+DE agricultural (crop and livestock) insurance; agricultural risk;
+   catastrophic risk; disaster relief; optimism bias; overconfidence;
+   Stackelberg equilibrium; systemic risk
+ID CROP INSURANCE; AVERSION; BELIEFS; UTILITY; CHOICE; POLICY
+AB We consider a political economy in which government cares about risk-averse farmers' loss of income but incurs political cost if it provides monetary support to farmers. Farmers' expectations of government disaster aid and overconfidence (optimism bias) regarding their risk prevent farmers from purchasing full insurance under actuarially fair rates. Considering this conclusion, government prefers to subsidize farmers' purchases of insurance ex ante rather than solely relying on disaster aid ex post. The resulting subsidy rate depends on the political environment, the degree of systemic risk, the distribution of farmers' risk preferences, and the nature and distribution of farmers' risk perceptions.
+C1 [Bulut, Harun] Natl Crop Insurance Serv, Overland Pk, KS 66210 USA.
+RP Bulut, H (reprint author), Natl Crop Insurance Serv, Overland Pk, KS 66210 USA.
+FU National Crop Insurance Services (NCIS), Overland Park, Kansas
+FX The author acknowledges useful comments from Keith J. Collins, Thomas P.
+   Zacharias, James Vercammen, Joseph W. Glauber, and GianCarlo Moschini on
+   prior versions of the paper. The usual disclaimer applies. This research
+   has been funded by National Crop Insurance Services (NCIS), Overland
+   Park, Kansas (www.ag-risk.org).
+CR BABCOCK BA, 1993, J AGR RESOUR ECON, V18, P17
+   Bracha A, 2012, GAME ECON BEHAV, V75, P67, DOI 10.1016/j.geb.2011.11.004
+   Bulut H, 2006, ECON LETT, V91, P131, DOI 10.1016/j.econlet.2005.11.010
+   Bulut H., 2011, CHOICES, V26, P1
+   Bulut H, 2012, AM J AGR ECON, V94, P1013, DOI 10.1093/ajae/aas055
+   Chite R. M., 2012, 75700 CRS
+   Coble KH, 2013, AM J AGR ECON, V95, P498, DOI 10.1093/ajae/aas093
+   Congressional Budget Office, 2015, JAN 2015 BAS FARM PR
+   DellaVigna S, 2009, J ECON LIT, V47, P315, DOI 10.1257/jel.47.2.315
+   Dismukes R., 2005, AMBER WAVES, V86, P1179
+   Du XD, 2017, AM J AGR ECON, V99, P732, DOI 10.1093/ajae/aaw035
+   Duncan J, 2000, AM J AGR ECON, V82, P842, DOI 10.1111/0002-9092.00085
+   Glauber J. W., 2015, 01473 IFPRI
+   Glauber JW, 2013, AM J AGR ECON, V95, P482, DOI 10.1093/ajae/aas091
+   Goodwin B. K., 2014, ANN M AM AGR EC ASS
+   Goodwin BK, 2007, CAN J AGR ECON, V55, P399, DOI 10.1111/j.1744-7976.2007.00099.x
+   Goodwin BK, 2013, AM J AGR ECON, V95, P489, DOI 10.1093/ajae/aas092
+   GUESNERIE R, 1984, J PUBLIC ECON, V25, P329, DOI 10.1016/0047-2727(84)90060-4
+   Hofmann A., 2009, IMPERFECT INSURANCE
+   Hueth B, 2000, AM J AGR ECON, V82, P14, DOI 10.1111/0002-9092.00002
+   Hull J., 2009, OPTIONS FUTURES OTHE
+   Ifft J., 2013, CHOICES, V28, P1
+   Innes R, 2003, AM J AGR ECON, V85, P318, DOI 10.1111/1467-8276.00122
+   Jensen M., 2017, PRESENTATION 2017 OU
+   Just D. R., 2002, COMPREHENSIVE ASSESS, P81, DOI DOI 10.1007/978-1-4757-3583-3_5
+   Kunreather H, 2013, HDB INSURANCE, P517, DOI DOI 10.1007/978-1-4614-0155-1_19
+   Mahul O., 2010, GOVT SUPPORT AGR INS
+   Malmendier U, 2015, J ECON PERSPECT, V29, P3, DOI 10.1257/jep.29.4.3
+   Manzano H., 2017, ANN CONV CROP INS IN
+   Mas-Colell A., 1995, MICROECONOMIC THEORY
+   Menapace L, 2013, AM J AGR ECON, V95, P384, DOI 10.1093/ajae/aas107
+   Miranda M., 2002, APPL COMPUTATIONAL E
+   NELSON CH, 1987, AM J AGR ECON, V69, P523, DOI 10.2307/1241688
+   Rausser GC, 2002, HANDB ECON, V18, P2057
+   SAHA A, 1993, AM J AGR ECON, V75, P905, DOI 10.2307/1243978
+   Shavell S, 2014, J RISK UNCERTAINTY, V49, P213, DOI 10.1007/s11166-014-9203-2
+   Sherrick BJ, 2002, J AGR RESOUR ECON, V27, P77
+   Thaler RH, 2008, MARKET SCI, V27, P15, DOI 10.1287/mksc.1070.0330
+   Turvey CG, 2013, GENEVA PAP R I-ISS P, V38, P612, DOI 10.1057/gpp.2012.42
+   U.S. Department of Agriculture Economic Research Service, 2013, AMB WAV IND TABL JUN
+   U.S. Government Accountability Office, 1989, 89211 RCED US GOV AC
+   U. S. Government Accountability Office, 2014, 14700 GAO
+   Umarov A., 2005, ANN M AM AGR EC ASS
+   USDA, 2013, FARMS LAND FARMS LIV
+   Van Asseldonk, 2002, REV AGR ECON, DOI DOI 10.1111/1467-9353.00091
+   Woodard J. D., 2016, CHOICES, V31, P1
+   Zulauf C., 2014, 01393 IFPRI
+NR 47
+TC 3
+Z9 3
+U1 3
+U2 18
+PU WESTERN AGRICULTURAL ECONOMICS ASSOC
+PI LOGAN
+PA C/O DEEVON BAILEY, UTAH STATE UNIV, ECONOMICS DEPT, 3535 OLD MAIN HILL,
+   LOGAN, UT 84322-3530 USA
+SN 1068-5502
+EI 2327-8285
+J9 J AGR RESOUR ECON
+JI J. Agric. Resour. Econ.
+PD OCT
+PY 2017
+VL 42
+IS 3
+BP 406
+EP +
+PG 34
+WC Agricultural Economics & Policy; Economics
+SC Agriculture; Business & Economics
+GA FO3DD
+UT WOS:000416694200007
+DA 2019-12-28
+ER
+
+PT J
+AU Jesus, CF
+   Melero, I
+   Sese, FJ
+AF Jesus, Cambra-Fierro
+   Melero, Iguacel
+   Javier Sese, F.
+TI Online customer-initiated contacts and the development of profitable
+   relationships
+SO ELECTRONIC COMMERCE RESEARCH AND APPLICATIONS
+LA English
+DT Article
+DE Online customer-initiated contact; Perceived risk; Social effects;
+   Customer profitability; S-O-R model; Financial services
+ID WORD-OF-MOUTH; PERCEIVED RISK; SELF-DETERMINATION; SOCIAL CONTAGION;
+   INTERNET; ADOPTION; IMPACT; MODEL; TRUST; ENVIRONMENTS
+AB Recent advances in technology have profoundly impacted the way firms interact and transact with current and prospective customers. The emergence of online channels has been of particular relevance, as it promotes consumers' active participation in the value-creation process. In this study, we draw from the Stimulus-Organism-Response model to provide a theoretical understanding of the role played by two critical factors driving online customer-initiated contacts (OnCICs): social effects and perceived risk. Additionally, we establish a direct link between these interactions and customer profitability. We merge longitudinal objective data with subjective data for a sample of 1990 customers in financial services and apply partial least squares, revealing that social effects influence perceived risk. Perceived risk consequently promotes the development of OnCICs, while social effects reduce the need for such interactions. Finally, OnCICs help to promote high-quality relationships and leads to higher performance. Implications for theory and management are discussed. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Jesus, Cambra-Fierro] Univ Pablo Olavide, Dept Mkt, Seville, Spain.
+   [Melero, Iguacel; Javier Sese, F.] Univ Zaragoza, Dept Mkt, Zaragoza, Spain.
+RP Jesus, CF (reprint author), Univ Pablo Olavide, Ctra Utrera Km 1, Seville 41013, Spain.
+EM jjcamfie@upo.es; imelero@unizar.es; javisese@unizar.es
+RI Cambra-Fierro, Jesus/K-8325-2014
+OI Cambra-Fierro, Jesus/0000-0001-8226-6459
+FU Spanish Ministry of Science and InnovationMinistry of Science and
+   Innovation, Spain (MICINN)Ministry of Education and Science, Spain
+   [ECO2014-54760]; European Social FundEuropean Social Fund (ESF);
+   Fundacion Ramon Areces (grant: Ayudas a la Investigacion en Ciencias
+   Sociales); Gobierno de Aragon (S09-Generes)
+FX This study was funded by the Spanish Ministry of Science and Innovation
+   (ECO2014-54760), the European Social Fund and Gobierno de Aragon
+   (S09-Generes) and Fundacion Ramon Areces (grant: Ayudas a la
+   Investigacion en Ciencias Sociales).
+CR Aldas-Manzano J, 2009, INT J BANK MARK, V27, P53, DOI 10.1108/02652320910928245
+   Aldas-Manzano J, 2011, SERV IND J, V31, P1165, DOI 10.1080/02642060903433997
+   Aldas-Manzano J, 2009, ONLINE INFORM REV, V33, P672, DOI 10.1108/14684520910985675
+   Animesh A, 2011, MIS QUART, V35, P789
+   Aral S, 2011, MANAGE SCI, V57, P1623, DOI 10.1287/mnsc.1110.1421
+   Ascarza E, 2016, J MARKET RES
+   Avery J, 2012, J MARKETING, V76, P96, DOI 10.1509/jm.09.0081
+   Barroso C., 2009, HDB PARTIAL LEAST SQ
+   BASS FM, 1969, MANAGE SCI, V15, P215, DOI 10.1287/mnsc.15.5.215
+   BEATTY SE, 1987, J CONSUM RES, V14, P83, DOI 10.1086/209095
+   Beckers S, 2013, HDB SERV RES
+   Bettman J. R, 1979, INFORM PROCESSING TH
+   BETTMAN JR, 1973, J MARKETING RES, V10, P184, DOI 10.2307/3149824
+   Bilgihan A, 2015, ELECTRON COMMER R A, V14, P222, DOI 10.1016/j.elerap.2014.09.001
+   Bowman D, 2001, J MARKETING RES, V38, P281, DOI 10.1509/jmkr.38.3.281.18863
+   Brislin R. W., 1973, CROSS CULTURAL RES M
+   Cambra-Fierro J, 2016, INT J RES MARK, V33, P208, DOI 10.1016/j.ijresmar.2015.12.007
+   Campbell D, 2010, MANAGE SCI, V56, P4, DOI 10.1287/mnsc.1090.1066
+   Carmines EG, 1979, SAGE U PAPER SERIES, P7
+   Castilla EJ, 2005, AM J SOCIOL, V110, P1243, DOI 10.1086/427319
+   Chen YL, 2014, ELECTRON COMMER R A, V13, P431, DOI 10.1016/j.elerap.2014.10.001
+   Cheung MFY, 2016, COMPUT HUM BEHAV, V65, P260, DOI 10.1016/j.chb.2016.08.031
+   Chiu HC, 2011, ELECTRON COMMER R A, V10, P268, DOI 10.1016/j.elerap.2010.07.002
+   Christakis NA, 2008, NEW ENGL J MED, V358, P2249, DOI 10.1056/NEJMsa0706154
+   Cohen J., 1988, STAT POWER ANAL BEHA
+   COX DF, 1964, J MARKETING RES, V1, P32, DOI 10.2307/3150375
+   De Wulf K, 2001, J MARKETING, V65, P33, DOI 10.1509/jmkg.65.4.33.18386
+   Deci EL, 2000, PSYCHOL INQ, V11, P227, DOI 10.1207/S15327965PLI1104_01
+   Dholakia Utpal M., 2001, EUR J MARKETING, V35, P1340, DOI DOI 10.1108/EUM0000000006479
+   DONOVAN RJ, 1994, J RETAILING, V70, P283, DOI 10.1016/0022-4359(94)90037-X
+   Douglas SP, 2007, J INT MARKETING, V15, P30, DOI 10.1509/jimk.15.1.030
+   DOWLING GR, 1994, J CONSUM RES, V21, P119, DOI 10.1086/209386
+   DWYER FR, 1987, J MARKETING, V51, P11, DOI 10.2307/1251126
+   EMERSON RM, 1962, AM SOCIOL REV, V27, P31, DOI 10.2307/2089716
+   Featherman MS, 2003, INT J HUM-COMPUT ST, V59, P451, DOI 10.1016/S1071-5819(03)00111-3
+   Floh A, 2013, ELECTRON COMMER R A, V12, P425, DOI 10.1016/j.elerap.2013.06.001
+   FORNELL C, 1981, J MARKETING RES, V18, P39, DOI 10.2307/3151312
+   Forsythe SM, 2003, J BUS RES, V56, P867, DOI 10.1016/S0148-2963(01)00273-9
+   Gefen D, 2011, MIS QUART, V35, pIII
+   Gillet R, 2010, J BANK FINANC, V34, P224, DOI 10.1016/j.jbankfin.2009.07.020
+   Godes D, 2004, MARKET SCI, V23, P545, DOI 10.1287/mksc.1040.0071
+   Goldenberg J, 2006, 06124 MARK SC I
+   Goldenberg J, 2009, J MARKETING, V73, P1, DOI 10.1509/jmkg.73.2.1
+   Hennig-Thurau T, 2010, J SERV RES-US, V13, P311, DOI 10.1177/1094670510375460
+   Henseler J, 2014, ORGAN RES METHODS, V17, P182, DOI 10.1177/1094428114526928
+   Crespo AH, 2010, ELECTRON COMMER R A, V9, P562, DOI 10.1016/j.elerap.2010.04.006
+   Hoyer W., 2004, MARKET SCI, V30, P195
+   Jacoby J, 2002, J CONSUM PSYCHOL, V12, P51, DOI 10.1207/S15327663JCP1201_05
+   Jacoby Jacob, 1972, SV P 3 ANN C ASS CON
+   Jap SD, 2000, J MARKETING RES, V37, P227, DOI 10.1509/jmkr.37.2.227.18735
+   Jiang PJ, 2014, ELECTRON COMMER R A, V13, P98, DOI 10.1016/j.elerap.2013.11.003
+   Keller E, 2007, J ADVERTISING RES, V47, P448, DOI 10.2501/S0021849907070468
+   Kesharwani A, 2012, INT J BANK MARK, V30, P303, DOI 10.1108/02652321211236923
+   KOTLER P, 1974, J RETAILING, V49, P48
+   Kumar V, 2008, J RETAILING, V84, P15, DOI 10.1016/j.jretai.2008.01.007
+   Leeflang P, 2011, INT J RES MARK, V28, P76, DOI 10.1016/j.ijresmar.2011.02.004
+   Lemon KN, 2016, J MARKETING, V80, P69, DOI 10.1509/jm.15.0420
+   Libai B, 2010, J SERV RES-US, V13, P267, DOI 10.1177/1094670510375600
+   Lindell MK, 2001, J APPL PSYCHOL, V86, P114, DOI 10.1037//0021-9010.86.1.114
+   Manchanda P, 2015, MARKET SCI, V34, P367, DOI 10.1287/mksc.2014.0890
+   McLean G, 2016, COMPUT HUM BEHAV, V60, P602, DOI 10.1016/j.chb.2016.02.084
+   Mehrabian A, 1975, HUMANITAS, V11, P219
+   Mehrabian A, 1974, APPROACH ENV PSYCHOL
+   Melero I, 2016, UNIVERSIA BUS REV, P18, DOI 10.3232/UBR.2016.V13.N2.01
+   Meseguer-Artola A, 2015, COMPUT HUM BEHAV, V51, P952, DOI 10.1016/j.chb.2014.10.013
+   Meuter ML, 2005, J MARKETING, V69, P61, DOI 10.1509/jmkg.69.2.61.60759
+   Neslin SA, 2006, J MARKETING RES, V43, P204, DOI 10.1509/jmkr.43.2.204
+   Neslin SA, 2009, J INTERACT MARK, V23, P70, DOI 10.1016/j.intmar.2008.10.005
+   Perez-Arostegui MN, 2015, BRQ-BUS RES Q, V18, P4, DOI 10.1016/j.brq.2013.11.003
+   Nitzan I, 2011, J MARKETING, V75, P24, DOI 10.1509/jm.10.0209
+   Pavlou PA, 2005, INFORM SYST RES, V16, P372, DOI 10.1287/isre.1050.0065
+   Pavlou PA, 2007, MIS QUART, V31, P105
+   Peres R, 2010, INT J RES MARK, V27, P91, DOI 10.1016/j.ijresmar.2009.12.012
+   PODSAKOFF PM, 1986, J MANAGE, V12, P531, DOI 10.1177/014920638601200408
+   Podsakoff PM, 2003, J APPL PSYCHOL, V88, P879, DOI 10.1037/0021-9010.88.5.879
+   Preacher KJ, 2008, BEHAV RES METHODS, V40, P879, DOI 10.3758/BRM.40.3.879
+   Ramani G, 2008, J MARKETING, V72, P27, DOI 10.1509/jmkg.72.1.27
+   Ringle C. M., 2005, SMARTPLS 2 0 M3 BETA
+   Roldan J. L., 2012, RES METHODOLOGIES IN, P193, DOI DOI 10.4018/978-1-4666-0179-6.CH010
+   Ryan RM, 2000, AM PSYCHOL, V55, P68, DOI 10.1037/0003-066X.55.1.68
+   Martin SS, 2009, ONLINE INFORM REV, V33, P629, DOI 10.1108/14684520910985657
+   Shun-Yao T, 2015, J BUS RES, V69, P2289
+   Stilley KM, 2010, J CONSUM RES, V37, P264, DOI 10.1086/651567
+   Stilley KM, 2010, J MARKETING, V74, P34, DOI 10.1509/jmkg.74.3.34
+   Stone R. N., 1993, EUR J MARKETING, V27, P39, DOI DOI 10.1108/03090569310026637
+   Takieddine S, 2015, ELECTRON COMMER R A, V14, P361, DOI 10.1016/j.elerap.2015.06.001
+   Tang L, 2012, TOURISM MANAGE, V33, P38, DOI 10.1016/j.tourman.2011.01.021
+   Tenenhaus M, 2005, COMPUT STAT DATA AN, V48, P159, DOI 10.1016/j.csda.2004.03.005
+   Trusov M, 2010, J MARKETING RES, V47, P643, DOI 10.1509/jmkr.47.4.643
+   Van den Bulte C, 2001, AM J SOCIOL, V106, P1409, DOI 10.1086/320819
+   Venkatesan R, 2007, J MARKETING, V71, P114, DOI 10.1509/jmkg.71.2.114
+   Verhagen T, 2015, COMPUT HUM BEHAV, V48, P340, DOI 10.1016/j.chb.2015.01.061
+   Vieira VA, 2013, J BUS RES, V66, P1420, DOI 10.1016/j.jbusres.2012.05.009
+   Villanueva J, 2008, J MARKETING RES, V45, P48, DOI 10.1509/jmkr.45.1.48
+   Wang JC, 2013, ELECTRON COMMER R A, V12, P337, DOI 10.1016/j.elerap.2013.03.003
+   Wang RJH, 2015, J RETAILING, V91, P217, DOI 10.1016/j.jretai.2015.01.002
+   Watts DJ, 2007, J CONSUM RES, V34, P441, DOI 10.1086/518527
+   Wiesel T, 2011, MARKET SCI, V30, P604, DOI 10.1287/mksc.1100.0612
+   Yousafzai SY, 2003, TECHNOVATION, V23, P847, DOI 10.1016/S0166-4972(03)00130-5
+NR 99
+TC 1
+Z9 1
+U1 3
+U2 22
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1567-4223
+EI 1873-7846
+J9 ELECTRON COMMER R A
+JI Electron. Commer. Res. Appl.
+PD NOV-DEC
+PY 2017
+VL 26
+BP 13
+EP 22
+DI 10.1016/j.elerap.2017.09.004
+PG 10
+WC Business; Computer Science, Information Systems; Computer Science,
+   Interdisciplinary Applications
+SC Business & Economics; Computer Science
+GA FN8MF
+UT WOS:000416278500002
+DA 2019-12-27
+ER

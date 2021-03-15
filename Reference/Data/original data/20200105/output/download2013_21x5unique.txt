@@ -1,0 +1,481 @@
+
+PT J
+AU Seiler, MJ
+   Seiler, VL
+   Harrison, DM
+   Lane, MA
+AF Seiler, Michael J.
+   Seiler, Vicky L.
+   Harrison, David M.
+   Lane, Mark A.
+TI Familiarity Bias and Perceived Future Home Price Movements
+SO JOURNAL OF BEHAVIORAL FINANCE
+LA English
+DT Article
+DE Familiarity bias; Behavioral real estate; Status quo deviation aversion;
+   Increasing status quo deviation aversion
+ID GENDER-DIFFERENCES; PROPERTY-VALUES; MERE EXPOSURE; STOCK; MOOD; RISK;
+   FORECLOSURES; WEATHER; RETURN; OVERCONFIDENCE
+AB This study empirically confirms the existence of the status quo deviation aversion hypothesis, but not increasing status quo deviation aversion, in people who own their primary residence. The examination was conducted in the 20 Case-Shiller Metropolitan Statistical Areas across the country. The results are systemic and do not vary substantially by demographic characteristics. However, variations are noted with different levels of real estate knowledge, income, purchase motive, relative home tenure, and excess relative housing risk.
+C1 [Seiler, Michael J.; Lane, Mark A.] Old Dominion Univ, Norfolk, VA 23529 USA.
+   [Seiler, Vicky L.] Johns Hopkins Univ, Baltimore, MD 21218 USA.
+   [Harrison, David M.] Texas Tech Univ, Lubbock, TX 79409 USA.
+RP Seiler, MJ (reprint author), Old Dominion Univ, 2154 Constant Hall, Norfolk, VA 23529 USA.
+EM mseiler@odu.edu
+CR Ackert L. F., 2005, REV FINANC, V9, P281, DOI DOI 10.1007/S10679-005-7594-2
+   Ahn D., 2006, FAMILIARITY BIAS OPT
+   Aizcorbe A. M., 2003, FEDERAL RESERVE B, P1
+   Baker H. K., 2002, FINANCIAL SERVICES R, V11, P97
+   Barber BM, 2001, Q J ECON, V116, P261, DOI 10.1162/003355301556400
+   Benartzi S, 2001, J FINANC, V56, P1747, DOI 10.1111/0022-1082.00388
+   BENARTZI S, 1995, Q J ECON, V110, P75
+   Beyer S, 1997, PERS SOC PSYCHOL B, V23, P157, DOI 10.1177/0146167297232005
+   BORNSTEIN RF, 1992, J PERS SOC PSYCHOL, V63, P545, DOI 10.1037//0022-3514.63.4.545
+   Byrnes JP, 1999, PSYCHOL BULL, V125, P367, DOI 10.1037/0033-2909.125.3.367
+   Cao HH, 2011, REV FINANC, V15, P173, DOI 10.1093/rof/rfp023
+   CASE KE, 2003, BROOKINGS PAPERS EC
+   CASE KE, 1988, NEW ENGL ECON REV, P2
+   Chira I., 2008, J BUSINESS EC RES, V6, P11
+   Coval JD, 2001, J POLIT ECON, V109, P811, DOI 10.1086/322088
+   Coval JD, 1999, J FINANC, V54, P2045, DOI 10.1111/0022-1082.00181
+   CUNNINGHAM MR, 1979, J PERS SOC PSYCHOL, V37, P1947, DOI 10.1037/0022-3514.37.11.1947
+   DEBONDT WFM, 1993, INT J FORECASTING, V9, P355, DOI 10.1016/0169-2070(93)90030-Q
+   Flachaire E., 2003, NEW APPROACH ANCHORI
+   FRENCH KR, 1991, AM ECON REV, V81, P222
+   Gervais S., 2000, CAPITAL BUDGET UNPUB
+   Graham JR, 2001, J FINANC ECON, V60, P187, DOI 10.1016/S0304-405X(01)00044-7
+   Greenwood R, 2009, J FINANC ECON, V93, P239, DOI 10.1016/j.jfineco.2008.08.004
+   Grinblatt M, 2001, J FINANC, V56, P1053, DOI 10.1111/0022-1082.00355
+   Grinblatt M, 2009, J FINANC, V64, P549, DOI 10.1111/j.1540-6261.2009.01443.x
+   Guiso L, 2002, J MONEY CREDIT BANK, V34, P315, DOI 10.1353/mcb.2002.0039
+   Harding JP, 2009, J URBAN ECON, V66, P164, DOI 10.1016/j.jue.2009.07.003
+   Harris CR, 2006, JUDGM DECIS MAK, V1, P48
+   Hau H, 2001, J FINANC, V56, P1959, DOI 10.1111/0022-1082.00396
+   Hirshleifer D, 2003, J FINANC, V58, P1009, DOI 10.1111/1540-6261.00556
+   Huberman G, 2001, REV FINANC STUD, V14, P659, DOI 10.1093/rfs/14.3.659
+   Immergluck D, 2006, HOUS POLICY DEBATE, V17, P57, DOI 10.1080/10511482.2006.9521561
+   Jong A., 2010, DOES CEOS FAMILIARIT
+   KAHNEMAN D, 1979, ECONOMETRICA, V47, P263, DOI 10.2307/1914185
+   Kamstra MJ, 2003, AM ECON REV, V93, P324, DOI 10.1257/000282803321455322
+   Kaustia M, 2008, FINANC MANAGE, V37, P391, DOI 10.1111/j.1755-053X.2008.00018.x
+   Keller MC, 2005, PSYCHOL SCI, V16, P724, DOI 10.1111/j.1467-9280.2005.01602.x
+   Kim Kenneth A., 2008, PACIFIC BASIN FINANC, V16, P1, DOI DOI 10.1016/J.PACFIN.2007.04.001
+   Kumar A, 2009, J FINANC, V64, P1889, DOI 10.1111/j.1540-6261.2009.01483.x
+   Le Blanc D, 2004, J REAL ESTATE FINANC, V29, P259, DOI 10.1023/B:REAL.0000036673.64928.7f
+   Lewis KK, 1999, J ECON LIT, V37, P571, DOI 10.1257/jel.37.2.571
+   Lin ZG, 2009, J REAL ESTATE FINANC, V38, P387, DOI 10.1007/s11146-007-9093-z
+   Massa M, 2006, REV FINANC STUD, V19, P633, DOI 10.1093/rfs/hhj013
+   Mitchell O., 2002, 20024 PENS RES COUNC
+   MORELAND RL, 1992, J EXP SOC PSYCHOL, V28, P255, DOI 10.1016/0022-1031(92)90055-O
+   Muelbroek L., 2002, 02058 HARV BUS SCH
+   NARAYANA CL, 1977, J MARKETING RES, V14, P118, DOI 10.2307/3151070
+   Nothaft F. E., 1992, J REAL ESTATE FINANC, V5, P219
+   Pagano M, 2002, J FINANC, V57, P2651, DOI 10.1111/1540-6261.00509
+   PARROTT WG, 1990, J PERS SOC PSYCHOL, V59, P321, DOI 10.1037/0022-3514.59.2.321
+   POLLAKOWSKI HO, 1991, AREUEA J, V19, P417
+   POTERBA JM, 1995, SLOAN MANAGE REV, V37, P43
+   Powell M., 2001, 0121 SWISS FED I TEC
+   Rogers WH, 2009, J REAL ESTATE RES, V31, P455
+   Sarkissian S, 2004, REV FINANC STUD, V17, P769, DOI 10.1093/rfs/hhg048
+   SCHWARZ N, 1983, J PERS SOC PSYCHOL, V45, P513, DOI 10.1037/0022-3514.45.3.513
+   SEASHOLES M, 2005, IS THERE INFORM LOCA
+   Seiler M. J., 2008, J HOUSING RES, V17, P139
+   Seiler MJ, 2004, PERFORMING FINANCIAL
+   Shleifer A., 2000, INEFFICIENT MARKETS
+   Statman M., 1995, BEHAV FINANCE DECISI
+   STULZ RM, 1999, INT CAPITAL FLOWS, P257
+   Thaler RH, 1993, ADV BEHAV FINANCE
+   Toshino M., 2004, J ECON BUS, V190, P15
+   Vissing-Jorgensen A, 2002, EXPLANATION HO UNPUB
+   Wang M., 2002, LESS YOU KNOW MORE Y
+   Woodcock A, 1998, BRIT MED J, V316, P1075, DOI 10.1136/bmj.316.7137.1075
+   WRIGHT GN, 1978, J CROSS CULT PSYCHOL, V9, P285, DOI 10.1177/002202217893002
+   YATES JF, 1989, ORGAN BEHAV HUM DEC, V43, P145, DOI 10.1016/0749-5978(89)90048-4
+   ZAJONC RB, 1968, J PERS SOC PSYCHOL, V9, P1, DOI 10.1037/h0025848
+NR 70
+TC 3
+Z9 3
+U1 0
+U2 16
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1542-7560
+J9 J BEHAV FINANC
+JI J. Behav. Financ.
+PD JAN 1
+PY 2013
+VL 14
+IS 1
+BP 9
+EP 24
+DI 10.1080/15427560.2012.737389
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA 096CX
+UT WOS:000315382700002
+DA 2019-12-28
+ER
+
+PT J
+AU Brechmann, EC
+   Hendrich, K
+   Czado, C
+AF Brechmann, Eike C.
+   Hendrich, Katharina
+   Czado, Claudia
+TI Conditional copula simulation for systemic risk stress testing
+SO INSURANCE MATHEMATICS & ECONOMICS
+LA English
+DT Article
+DE Multivariate copula; Sampling; Vine copula; Systemic risk; Stress
+   testing; CDS spreads
+ID CREDIT DEFAULT SWAP; ARCHIMEDEAN COPULAS; CONSTRUCTIONS; VINES
+AB Since the financial crisis of 2007-2009 there is an active debate by regulators and academic researchers on systemic risk, with the aim of preventing similar crises in the future or at least reducing their impact. A major determinant of systemic risk is the interconnectedness of the international financial market. We propose to analyze interdependencies in the financial market using copulas, in particular using flexible vine copulas, which overcome limitations of the popular elliptical and Archimedean copulas. To investigate contagion effects among financial institutions, we develop methods for stress testing by exploiting the underlying dependence structure. New approaches for Archimedean and, especially, for vine copulas are derived. In a case study of 38 major international institutions, 20 insurers and 18 banks, we then analyze interdependencies of CDS spreads and perform a systemic risk stress test. The specified dependence model and the results from the stress test provide new insights into the interconnectedness of banks and insurers. In particular, the failure of a bank seems to constitute a larger systemic risk than the failure of an insurer. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Brechmann, Eike C.; Hendrich, Katharina; Czado, Claudia] Tech Univ Munich, Ctr Math Sci, D-80290 Munich, Germany.
+RP Brechmann, EC (reprint author), Tech Univ Munich, Ctr Math Sci, D-80290 Munich, Germany.
+EM eike.brechmann@tum.de
+OI Czado, Claudia/0000-0002-6329-5438
+FU TUM Graduate School's International School of Applied Mathematics;
+   Allianz Deutschland AG; DFGGerman Research Foundation (DFG) [INST
+   95/919-1 FUGG]
+FX The authors acknowledge the helpful comments of the referee, which
+   further improved the manuscript. The first author is thankful for
+   support from the TUM Graduate School's International School of Applied
+   Mathematics as well as from Allianz Deutschland AG. The second author
+   gratefully acknowledges the support of Munich Re, especially the
+   supervision by Dr. Rainer Sachs. The numerical computations were
+   performed on a Linux cluster supported by DFG grant INST 95/919-1 FUGG.
+CR Aas K, 2009, INSUR MATH ECON, V44, P182, DOI 10.1016/j.insmatheco.2007.02.001
+   Acar EF, 2012, J MULTIVARIATE ANAL, V110, P74, DOI 10.1016/j.jmva.2012.02.001
+   Acharya V., 2011, AM FIN ASS DENV M
+   Barbe P, 1996, J MULTIVARIATE ANAL, V58, P197, DOI 10.1006/jmva.1996.0048
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   Bedford T, 2002, ANN STAT, V30, P1031
+   Bedford T, 2001, ANN MATH ARTIF INTEL, V32, P245, DOI 10.1023/A:1016725902970
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brechmann E. C., 2013, CANADIAN J IN PRESS
+   Brechmann E. C., 2013, STAT RISK M IN PRESS
+   Brunnermeier M., 2010, COVAR FEDERAL RESERV, V348
+   Constantinou N., 2010, U ESSEX CTR COMPUTAT, V40
+   Cont R., 2010, 03 COL U
+   Cummins J. D., 2012, J RISK INSU IN PRESS
+   Czado C., 2013, HDB SYSTEMIC RISK
+   Czado C., 2013, LECT NOTES STAT P
+   Czado C, 2012, STAT MODEL, V12, P229, DOI 10.1177/1471082X1101200302
+   Dissmann J, 2013, COMPUT STAT DATA AN, V59, P52, DOI 10.1016/j.csda.2012.08.010
+   Embrechts P., 2002, RISK MANAGEMENT VALU
+   ENGLE RF, 1987, ECONOMETRICA, V55, P391, DOI 10.2307/1913242
+   Fang KT, 1990, SYMMETRIC MULTIVARIA
+   Financial Stability Board, 2012, UPD GROUP GLOB SYST
+   Financial Stability Board, 2009, REP G 20 FIN MIN CEN
+   Financial Stability Board, 2011, POL MEAS ADDR SYST I
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P1, DOI 10.1017/CBO9781139151184
+   Giglio S., 2011, P FEDERAL RESERVE BA, V5, P104
+   Haff IH, 2010, J MULTIVARIATE ANAL, V101, P1296, DOI 10.1016/j.jmva.2009.12.001
+   Hastie T., 2009, ELEMENTS STAT LEARNI
+   Hendrich K., 2012, THESIS TU MUNCHEN GE
+   Hofert M, 2012, J MULTIVARIATE ANAL, V110, P133, DOI 10.1016/j.jmva.2012.02.019
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Hull J, 2004, J BANK FINANC, V28, P2789, DOI 10.1016/j.jbankfin.2004.06.010
+   International Association of Insurance Supervisors, 2012, GLOB SYST IMP INS PR
+   Joe H, 1997, MULTIVARIATE MODELS
+   Joe H, 1996, 166 U BRIT COLUMBIA
+   Joe H., 1996, DISTRIBUTIONS FIXED, V28, P120, DOI DOI 10.1214/LNMS/1215452614
+   Kaushik R., 2012, TECHNICAL REPORT
+   Kotz S., 2004, MULTIVARIATE T DISTR
+   Kotz S., 2004, CONTINUOUS MULTIVARI
+   Kurowicka D., 2006, UNCERTAINTY ANAL HIG
+   Kurowicka D., 2011, DEPENDENCE MODELING
+   Liu Y, 2009, COMPUT STAT DATA AN, V53, P2284, DOI 10.1016/j.csda.2008.01.018
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   McNeil AJ, 2009, ANN STAT, V37, P3059, DOI 10.1214/07-AOS556
+   Mesfioui M, 2008, J MULTIVARIATE ANAL, V99, P372, DOI 10.1016/j.jmva.2006.10.007
+   Nelsen R. B, 2006, INTRO COPULAS
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Norden L, 2004, J BANK FINANC, V28, P2813, DOI 10.1016/j.jbankfin.2004.06.011
+   Park S., 2011, TECHNICAL REPORT
+   Patton A.I., 2013, PREPRINT
+   Rahman D., 2009, U PARIS W NANTERRE D, V34
+   ROSENBLATT M, 1952, ANN MATH STAT, V23, P470, DOI 10.1214/aoms/1177729394
+   Schepsmeier U., 2013, COMPUTATION IN PRESS
+   Sklar A, 1959, PUBL I STAT U PARIS, V8, P229, DOI DOI 10.12691/IJEFM-3-2-3
+   Stober J, 2013, J MULTIVARIATE ANAL, V119, P101, DOI 10.1016/j.jmva.2013.04.014
+   The Geneva Association, 2010, SYST RISK INS AN INS
+NR 57
+TC 21
+Z9 21
+U1 0
+U2 28
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-6687
+EI 1873-5959
+J9 INSUR MATH ECON
+JI Insur. Math. Econ.
+PD NOV
+PY 2013
+VL 53
+IS 3
+BP 722
+EP 732
+DI 10.1016/j.insmatheco.2013.09.009
+PG 11
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 275ES
+UT WOS:000328659700024
+DA 2019-12-27
+ER
+
+PT J
+AU Caballero, RJ
+   Simsek, A
+AF Caballero, Ricardo J.
+   Simsek, Alp
+TI Fire Sales in a Model of Complexity
+SO JOURNAL OF FINANCE
+LA English
+DT Article
+ID SYSTEMIC RISK; FINANCIAL SYSTEMS; LIQUIDITY; CONTAGION; EQUILIBRIUM;
+   AMBIGUITY; FREEZES; PRIVATE; PRICE
+AB We present a model of financial crises that stem from endogenous complexity. We conceptualize complexity as banks' uncertainty about the financial network of cross exposures. As conditions deteriorate, cross exposures generate the possibility of a domino effect of bankruptcies. As this happens, banks face an increasingly complex environment since they need to understand a greater fraction of the financial network to assess their own financial health. Complexity dramatically amplifies banks' perceived counterparty risk, and makes relatively healthy banks reluctant to buy risky assets. The model also features a novel complexity externality.
+C1 [Caballero, Ricardo J.; Simsek, Alp] MIT, Cambridge, MA 02139 USA.
+   [Caballero, Ricardo J.; Simsek, Alp] NBER, Cambridge, MA 02138 USA.
+RP Caballero, RJ (reprint author), MIT, Cambridge, MA 02139 USA.
+CR Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Acharya VV, 2011, J FINANC, V66, P1177, DOI 10.1111/j.1540-6261.2011.01669.x
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   ALLEN F, 1994, AM ECON REV, V84, P933
+   Allen F., 2010, 16177 NBER
+   Allen F., 2009, NETWORK CHALLENGE
+   Brunnermeier M., 2012, WORKING PAPER
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2005, J FINANC, V60, P1825, DOI 10.1111/j.1540-6261.2005.00781.x
+   Caballero Ricardo, 2008, WORKING PAPER
+   Caballero RJ, 2008, J FINANC, V63, P2195, DOI 10.1111/j.1540-6261.2008.01394.x
+   CABALLERO RJ, 2009, 14997 NBER
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Dang T. V., 2010, WORKING PAPER
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   Duffie Darrell, 2011, BIG BANKS FAIL WHAT
+   Easley D, 2009, REV FINANC STUD, V22, P1817, DOI 10.1093/rfs/hhn100
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   FENDER I, 2007, BIS Q REV        SEP, P1
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Garleanu N, 2011, REV FINANC STUD, V24, P1980, DOI 10.1093/rfs/hhr027
+   Geanakoplos John, 2009, NBER MACROECONOMICS
+   Geanakoplos John, 2003, 1316 COWL FDN
+   GILBOA I, 1989, J MATH ECON, V18, P141, DOI 10.1016/0304-4068(89)90018-9
+   Gromb D, 2002, J FINANC ECON, V66, P361, DOI 10.1016/S0304-405X(02)00228-3
+   Haldane Andrew, 2009, WORKING PAPER
+   Hansen LP, 2010, QUANT ECON, V1, P129, DOI 10.3982/QE9
+   Holmstrom B, 1998, J POLIT ECON, V106, P1, DOI 10.1086/250001
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Kiyotaki N., 1997, WORKING PAPER
+   Klibanoff P, 2005, ECONOMETRICA, V73, P1849, DOI 10.1111/j.1468-0262.2005.00640.x
+   Lagunoff R, 2001, J ECON THEORY, V99, P220, DOI 10.1006/jeth.2000.2733
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   Markus Brunnermeier, 2009, 11 ICMBCEPR
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   ROTEMBERG JJ, 2008, 14222 NBER
+   Routledge BR, 2009, REV ECON DYNAM, V12, P543, DOI 10.1016/j.red.2008.10.002
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Stein JC, 2012, Q J ECON, V127, P57, DOI 10.1093/qje/qjr054
+   UPPER C, 2007, 234 BIS
+   Vause Nicholas, 2010, BIS Q REV, V59
+   Zawadowski A, 2013, REV FINANC STUD, V26, P1291, DOI 10.1093/rfs/hht008
+NR 46
+TC 76
+Z9 78
+U1 0
+U2 71
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-1082
+EI 1540-6261
+J9 J FINANC
+JI J. Financ.
+PD DEC
+PY 2013
+VL 68
+IS 6
+BP 2549
+EP 2587
+DI 10.1111/jofi.12087
+PG 39
+WC Business, Finance; Economics
+SC Business & Economics
+GA 251WK
+UT WOS:000326962800009
+DA 2019-12-27
+ER
+
+PT J
+AU Mink, M
+   de Haan, J
+AF Mink, Mark
+   de Haan, Jakob
+TI Contagion during the Greek sovereign debt crisis
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Contagion; Euro crisis; Event study
+ID BANK; RISK
+AB We examine the impact of news about Greece and news about a Greek bailout on bank stock prices in 2010 using data for 48 European banks. We identify the twenty days with extreme returns on Greek sovereign bonds and categorise the news events during those days into news about Greece and news about the prospects of a Greek bailout. We find that, except for Greek banks, news about Greece does not lead to abnormal returns while news about a bailout does, even for banks without any exposure to Greece or other highly indebted euro countries. This finding suggests that markets consider news about the bailout to be a signal of European governments' willingness in general to use public funds to combat the financial crisis. Sovereign bond prices of Portugal, Ireland, and Spain respond to both news about Greece and news about a Greek bailout.(C) 2012 Elsevier Ltd. All rights reserved.
+C1 [Mink, Mark; de Haan, Jakob] Nederlandsche Bank, NL-1000 AB Amsterdam, Netherlands.
+   [Mink, Mark; de Haan, Jakob] Univ Groningen, Fac Econ & Business, NL-9700 AV Groningen, Netherlands.
+   [de Haan, Jakob] CESifo, Munich, Germany.
+RP Mink, M (reprint author), Nederlandsche Bank, POB 98, NL-1000 AB Amsterdam, Netherlands.
+EM m.mink@rug.nl; j.de.haan@dnb.nl
+CR Acharya V., 2011, N17136 NBER
+   Afonso A, 2012, J INT MONEY FINANC, V31, P606, DOI 10.1016/j.jimonfin.2012.01.016
+   AHARONY J, 1983, J BUS, V56, P305, DOI 10.1086/296203
+   Arezki Rabah, 2011, 1168 INT MON FUND
+   Bekaert G., 2011, 138 EUR CENTR BANK
+   Blinder AS, 2008, J ECON LIT, V46, P910, DOI 10.1257/jel.46.4.910
+   Brewer E, 2003, J MONEY CREDIT BANK, V35, P507, DOI 10.1353/mcb.2003.0026
+   Cochrane J., 2010, WALL STREET J
+   Constancio V., 2011, BOCC U INT SANP C BA
+   Corsetti G., 2011, FINANCIAL CONTAGION, P11
+   Davies M., 2011, BIS Q REV, P59
+   Ejsing J, 2011, ECON LETT, V110, P28, DOI 10.1016/j.econlet.2010.10.001
+   Fair RC, 2002, J BUS, V75, P713, DOI 10.1086/341640
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Goldstein M., 2000, ASSESSING FINANCIAL
+   Kaminsky GL, 2003, J ECON PERSPECT, V17, P51, DOI 10.1257/089533003772034899
+   Kho BC, 2000, AM ECON REV, V90, P28, DOI 10.1257/aer.90.2.28
+   King M. R., 2009, 288 BANK INT SETTL
+   MacKinlay AC, 1997, J ECON LIT, V35, P13
+   Michaelidis A., 2012, 8743 CEPR
+   Missio S., 2011, 3554 CESIFO
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Santis De, 2012, 1419 EUR CENTR BANK
+NR 23
+TC 84
+Z9 85
+U1 1
+U2 81
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD APR
+PY 2013
+VL 34
+SI SI
+BP 102
+EP 113
+DI 10.1016/j.jimonfin.2012.11.006
+PG 12
+WC Business, Finance
+SC Business & Economics
+GA 113CS
+UT WOS:000316644400007
+DA 2019-12-27
+ER
+
+PT J
+AU Milne, A
+AF Milne, Alistair
+TI Register, Cap and Trade: A Proposal for Containing Systemic Liquidity
+   Risk
+SO ECONOMICS-THE OPEN ACCESS OPEN-ASSESSMENT E-JOURNAL
+LA English
+DT Article
+DE Basel III; debt deflation; endogenous money; financial regulation;
+   global financial crisis; limited purpose banking; maturity mismatch;
+   narrow money; Pigouvian taxes; ring fencing; systemic financial risk;
+   systemic financial externalities; Tobin tax
+AB A fundamental cause of the global financial crisis was excessive maturity mismatch, notably shadow banking holdings of sub-prime MBS and other structured credit instruments and cross-border Euro area interbank lending to the uncompetitive Euro area periphery. The costs of short term funding do not fully reflect underlying asset risks and this created systemic liquidity and credit risks. This externality can be controlled through the issue of tradable licenses for short term funding. This is a simpler and more efficient way of addressing systemic liquidity risk than the controls on individual institutions proposed by international regulators.
+C1 Univ Loughborough, Sch Business & Econ, Loughborough, Leics, England.
+RP Milne, A (reprint author), Univ Loughborough, Sch Business & Econ, Loughborough, Leics, England.
+EM a.k.l.milne@lboro.ac.uk
+OI Milne, Alistair/0000-0002-4135-3983
+CR Acharya V. V., 2010, TAX SYSTEMIC RISK
+   Adrian T., 2010, 361 FRB NEW YORK
+   Adrian Tobias, 2009, 328 FRB NEW YORK
+   Allais Maurice, 1948, EC INTERET EXPOSITIO
+   Allen William A., 2012, IS CURE WORSE DIS
+   BCBS, 2010, BAS 3 INT FRAM LIQ R
+   Benes J., 2012, WP12202 IMF
+   Besar D, 2011, BRIT ACTUAR J, V16, P195, DOI 10.1017/S1357321711000110
+   Brunnermeier M., 2009, FEDERAL RESERVE BANK
+   Brunnermeier Markus K., 2009, J EC PERSPECTIVES, V23
+   Burnham James B., 1991, CATO REV BUSINESS GO
+   Clark Alistair, 2011, 83 G 30
+   Collins Ryan, 2011, DOES MONEY COME
+   De Soto Hernando, 2012, FINANCIAL TIMES
+   Doluca Hasan, 2010, REDUCING SYSTEMIC RI
+   Environmental Protection Agency, 2003, CAP TRAD AC RAIN PRO
+   Financial Stability Board, 2012, CONS DOC STRENGTH OV
+   Financial Stability Board, 2012, GLOB LEG ID SYST FIN
+   Fisher Irving, 1935, 100 MONEY
+   Friedman M., 1960, PROGRAM MONETARY STA
+   Haldane Andrew, 2010, PATIENCE FINANCE
+   Jeanne O., 2010, 16377 NBER
+   Kashyap A. K., 2004, FEDERAL RESERVE BANK, V28, P18
+   Kashyap AK, 2012, AM ECON J-MACROECON, V4, P266, DOI 10.1257/mac.4.1.266
+   Kay J., 2009, NARROW BANKING REFOR
+   Knight F., 1933, 431 FD ROOS PRES LIB
+   KOCHERLAKOTA N., 2010, 103 FED RES BANK MIN
+   Korinek A., 2012, SYSTEMIC RISK TAKING
+   Kotlikoff L. J., 2010, J STEWART IS DEAD EN
+   Liikanen Erkki, 2012, HIGH LEVEL EXPERT GR
+   Litan R. E., 1987, WHAT SHOULD BANKS DO
+   Markose S, 2012, 12282 IMF
+   McCauley R, 2010, BIS Q REV, V3, P25
+   Milne A., 2009, FALL HOUSE CREDIT
+   Milne Alistair, 2009, BANK FINLAND DISCUSS, V2009
+   Perotti E, 2010, PIGOVIAN APPROACH LI
+   Perotti Enrico, 2009, CEPR POLICY INSIGHT, V31
+   Perotti Enrico, 2009, CEPR POLICY INSIGHT, V40
+   Phillips Rodney, 1994, CHICAGO PLAN NEW DEA
+   Phillips Ronnie J., 1991, 77 LEV I
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Shin Hyun Song, 2010, WORKING PAPER
+   Simons H.C., 1948, EC POLICY FREE SOC
+   Spong Kenneth, 1989, NARROW BANKING ITS I
+   Stein Jeremy C., 2011, 16883 NBER
+   Stout L. A., 2009, REG, V3, P30
+   Tobin J., 1987, RESTRUCTURING FINANC, P167
+   Tobin J., 1978, E ECON J, V4, P153
+   Turner A, 2009, TURNER REV REGULATOR
+   von Mises L, 1912, THEORY MONEY CREDIT
+NR 50
+TC 0
+Z9 0
+U1 0
+U2 23
+PU KIEL INST WORLD ECONOMY
+PI KIEL
+PA HINDENBURGUFER 66, KIEL, D-24105, GERMANY
+SN 1864-6042
+J9 ECONOMICS-KIEL
+JI Economics
+PD MAR 5
+PY 2013
+VL 7
+AR UNSP 20137
+DI 10.5018/economics-ejournal.ja.2013-7
+PG 32
+WC Economics
+SC Business & Economics
+GA 185IZ
+UT WOS:000321962400001
+OA DOAJ Gold
+DA 2019-12-28
+ER

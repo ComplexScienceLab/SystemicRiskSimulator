@@ -1,0 +1,428 @@
+
+PT J
+AU Derbali, A
+   Hallara, S
+AF Derbali, Abdelkader
+   Hallara, Slaheddine
+TI Measuring systemic risk of Greek banks: New approach by using the
+   epidemic model "SEIR"
+SO COGENT BUSINESS & MANAGEMENT
+LA English
+DT Article
+DE systemic risk; epidemic model; SEIR; Greek banks; transmission
+ID DEFAULT
+AB In the last decade of the financial crisis of 2007, the international financial system appeared to be on the brink of a major systemic crisis which leads to a failure of a systemically important European bank. This type of scenario highlights the need for identifying and measuring of the contribution of banks to systemic risk in the financial system. Then, the aim of this paper is to propose, for the first time, a new approach to measure systemic risk in the financial institutions. This approach is based on the epidemic model methodology. Then, we use the SEIR model with four compartments: Susceptible, Exposed, Infected, and Removed. We apply this model for a sample of 18 Greek banks listed in the Athens Exchange over the period from 2 January 2006 to 31 December 2012. Based on the empirical results, we find the existence of 12 times of default transmission during the study period and the transmission of default coincides with the number of Greek banks that have declared failure and then leaving the Athens Exchange. Also, we remark that the continuation of aid and recovery plans granted by international and national regulatory authorities did enough to save Greek banks.
+C1 [Derbali, Abdelkader] Univ Sousse, Higher Inst Management Sousse, Dept Finance, 22 St Zarkaa Al Yamama, Sousse Erriadh 4023, Tunisia.
+   [Hallara, Slaheddine] Univ Tunis, Dept Finance, Higher Inst Management Tunis, Tunis, Tunisia.
+RP Derbali, A (reprint author), Univ Sousse, Higher Inst Management Sousse, Dept Finance, 22 St Zarkaa Al Yamama, Sousse Erriadh 4023, Tunisia.
+EM derbaliabdelkader@outlook.fr; ihet@gnet.tn
+RI Derbali, Abdelkader/O-1287-2019
+CR Acharya V. V., 2010, 1002 FED RES BANK CL
+   Acharya V. V., 2009, FINANCIAL MARKETS I, V18, P174
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Adrian T., 2008, STAFF REPORTS FED RE
+   Adrian T., 2009, WORKING PAPER STAFF
+   Al-Sheikh S. A., 2012, GLOBAL J SCI FRONTIE, V12, P56
+   Basel Committee on Banking Supervision, 2006, BAS 2 INT CONV CAP M
+   Bellotti T, 2012, INT J FORECASTING, V28, P171, DOI 10.1016/j.ijforecast.2010.08.005
+   Blume L., 2013, ACM T EC COMPUTATION, V1, P1
+   Blume L, 2011, ANN IEEE SYMP FOUND, P393, DOI 10.1109/FOCS.2011.38
+   Brownlees C., 2012, WORKING PAPER
+   Chan-Lau J. A., 2010, FINANC MKTS I INSTRU, V19, P355, DOI DOI 10.2139/SSRN.1995499)
+   Chowell G, 2008, EPIDEMIOL INFECT, V136, P1667, DOI 10.1017/S0950268808000290
+   Crosbie P., 2003, CISC VIS NETW IND GL
+   Das SR, 2004, J FINANC, V59, P2809, DOI 10.1111/j.1540-6261.2004.00717.x
+   Derbali A, 2015, AFR J ACCOUNT AUDIT, V4, P7, DOI 10.1504/AJAAF.2015.071751
+   Ducrot A., 2010, AUTOUR QUELQUES MODE
+   Ebnother S, 2007, J BANK FINANC, V31, P3663, DOI 10.1016/j.jbankfin.2007.01.022
+   Festic M, 2011, J BANK FINANC, V35, P310, DOI 10.1016/j.jbankfin.2010.08.007
+   Giovanni J. D., 2012, ROLE FIRMS AGGREGATE
+   Gray Dale F., 2011, SVERIGES RIKSBANK EC, V2, P68
+   Gray Dale F., 2010, J INVESTMENT MANAGEM, V8, P23
+   Hartmann-Wendels T, 2014, J BANK FINANC, V40, P364, DOI 10.1016/j.jbankfin.2013.12.006
+   He-Long Liu, 2015, Journal of Applied Mathematics, DOI 10.1155/2015/838312
+   Huang X., 2010, J FINANCIAL STABILIT, V8, P193
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   LAROSIERE J, 2009, REPORT HIGH LEVEL GR
+   Leow M, 2012, INT J FORECASTING, V28, P183, DOI 10.1016/j.ijforecast.2011.01.010
+   Liu SH, 2015, THEOR BIOSCI, V134, P75, DOI 10.1007/s12064-015-0212-8
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Pais A, 2013, EUR FINANC MANAG, V19, P429, DOI 10.1111/j.1468-036X.2010.00603.x
+   Porter A.K., 2012, THESIS
+   Schafer R, 2013, ECON MODEL, V30, P1, DOI 10.1016/j.econmod.2012.08.033
+   Segoviano M., 2009, 0904 IMF
+   Tozeau S., 2010, UR341 MATH INFORM AP
+   Wang Y., 2015, APPL MATH INFORM SCI, V9, P957
+   Zhou XY, 2011, COMMUN NONLINEAR SCI, V16, P4438, DOI 10.1016/j.cnsns.2011.03.026
+NR 38
+TC 5
+Z9 5
+U1 0
+U2 1
+PU TAYLOR & FRANCIS AS
+PI OSLO
+PA KARL JOHANS GATE 5, NO-0154 OSLO, NORWAY
+SN 2331-1975
+J9 COGENT BUS MANAG
+JI Cogent Bus. Manag.
+PY 2016
+VL 3
+AR 1153864
+DI 10.1080/23311975.2016.1153864
+PG 30
+WC Business
+SC Business & Economics
+GA DO4XI
+UT WOS:000377787800001
+OA DOAJ Gold, Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Peters, G
+   Shevchenko, PV
+   Hassani, B
+   Chapelle, A
+AF Peters, GarethW.
+   Shevchenko, Pavel V.
+   Hassani, Bertrand
+   Chapelle, Ariane
+TI Should the advanced measurement approach be replaced with the
+   standardized measurement approach for operational risk?
+SO JOURNAL OF OPERATIONAL RISK
+LA English
+DT Article
+DE operational risk (OpRisk); standardized measurement approach (SMA); loss
+   distribution approach (LDA); advanced measurement approach (AMA); Basel
+   Committee for Banking Supervision (BCBS) regulations
+AB Recently, the Basel Committee for Banking Supervision proposed to replace all approaches, including the advanced measurement approach (AMA), to operational risk capital with a simple formula referred to as the standardized measurement approach (SMA). This paper discusses and studies the weaknesses and pitfalls of the SMA, such as instability, risk insensitivity, super-additivity and the implicit relationship between the SMA capital model and systemic risk in the banking sector. We also discuss issues with the closely related operational risk capital-at-risk (OpCar) Basel Committee-proposed model, which is the precursor to the SMA. In conclusion, we advocate to maintain the AMA internal model framework and suggest as an alternative a number of standardization recommendations that could be considered to unify the internal modeling of operational risk. The findings and views presented in this paper have been discussed with and supported by many OpRisk practitioners and academics in Australia, Europe, the United Kingdom and the United States, and recently at the OpRisk Europe 2016 conference in London.
+C1 [Peters, GarethW.] UCL, Dept Stat Sci, Gower St, London WC1E 6BT, England.
+   [Shevchenko, Pavel V.] CSIRO, POB 52, N Ryde, NSW 1670, Australia.
+   [Hassani, Bertrand] Univ Paris 01, CES UMR 8174, 106 Blvd Hop, F-75647 Paris 13, France.
+   [Chapelle, Ariane] UCL, Dept Comp Sci, Gower St, London WC1E 6BT, England.
+RP Shevchenko, PV (reprint author), CSIRO, POB 52, N Ryde, NSW 1670, Australia.
+EM gareth.peters@ucl.ac.uk; Pavel.Shevchenko@csiro.au;
+   bertrand.hassani@univ-paris1.fr; a.chapelle@ucl.ac.uk
+RI Shevchenko, Pavel/C-1718-2009
+OI Shevchenko, Pavel/0000-0001-8104-8716; Peters,
+   Gareth/0000-0003-2768-8979
+FU Australian Research CouncilAustralian Research Council [DP160103489]
+FX The authors report no conflicts of interest. The authors alone are
+   responsible for the content and writing of the paper. Pavel Shevchenko
+   acknowledges the support of the Australian Research Council's Discovery
+   Projects funding scheme (project number: DP160103489).
+CR Basel Committee on Banking Supervision, 2016, STAND MEAS APPR OP R
+   Basel Committee on Banking Supervision, 2006, INT CONV CAP MEAS CA
+   Basel Committee on Banking Supervision, 2009, OBS RANG PRACT KEY E
+   Basel Committee on Banking Supervision, 2014, OP RISK REV SIMPL AP
+   Chapelle A., 2013, OPERATIONAL RISK REG, V58
+   Chavez-Demoulin V., 2015, J RISK INSU IN PRESS
+   Crockford G. N., 1982, GENEVA PAP RISK INS, P169, DOI DOI 10.1057/gpp.1982.10
+   Cruz M. G, 2015, FUNDAMENTAL ASPECTS
+   Dong AXD, 2015, ASTIN BULL, V45, P503, DOI 10.1017/asb.2015.8
+   DUTTA K., 2006, 0613 FED RES BANK BO
+   Ganegoda A, 2013, ANN ACTUAR SCI, V7, P61, DOI 10.1017/S1748499512000267
+   Guegan D, 2013, J OPER RISK, V8, P31
+   Peters GW, 2016, RISKS, V4, DOI 10.3390/risks4020014
+   Peters GW, 2009, J OPER RISK, V4, P69, DOI 10.21314/JOP.2009.059
+   Peters GW, 2015, ADV HEAVY TAILED RIS
+   SHEVCHENKO P. V., 2013, 8 INT C INT COMP BAN, V2, P58
+   Shevchenko PV, 2006, J OPER RISK, V1, P3, DOI 10.21314/JOP.2006.016
+   Shevchenko Pavel V., 2011, MODELLING OPERATIONA
+   Stasinopoulos DM, 2007, J STAT SOFTW, V23
+NR 19
+TC 15
+Z9 16
+U1 0
+U2 8
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1744-6740
+EI 1755-2710
+J9 J OPER RISK
+JI J. Oper. Risk.
+PY 2016
+VL 11
+IS 3
+BP 1
+EP 49
+DI 10.21314/JOP.2016.177
+PG 49
+WC Business, Finance
+SC Business & Economics
+GA DX3HM
+UT WOS:000384264200002
+DA 2019-12-28
+ER
+
+PT J
+AU Majdoub, J
+   Mansour, W
+   Jouini, J
+AF Majdoub, Jihed
+   Mansour, Walid
+   Jouini, Jamel
+TI Market integration between conventional and Islamic stock prices
+SO NORTH AMERICAN JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Cointegration; Time-varying correlation; Structural breaks; Portfolio
+   diversification; Conventional and Islamic indexes
+ID UNIT-ROOT; TESTS; COINTEGRATION; VOLATILITY; SPILLOVER; MODELS; NULL
+AB The paper assesses the market integration between conventional and Islamic stock prices from the long- and short-run perspectives for France, Indonesia, the UK and the US from September 8, 2008 to September 6, 2013 using various econometric approaches. The results show long-run relationships for all countries, except for the UK where there is no cointegration between conventional and Islamic stock prices. These findings suggest that the Islamic finance industry in the considered economies (except the UK) does not seem to be compliant to Islamic law's maxims, which hinders portfolio managers and market participants to benefit from the opportunities of international diversification and hedging effectiveness. From the correlation perspective, there is evidence of weak linkages between the Indonesian market and the developed markets for both conventional and Islamic stock prices, thus suggesting that investors can diversify their portfolios at the international level to minimize risk. However, there is high connection between the developed markets for both conventional and Islamic indexes. In addition, for each economy, the Islamic index is found to be strongly linked with its conventional counterpart. The structural change analysis reveals common break dates for several cross correlations, thus reflecting the similar time-paths of the interactions between markets. The presence of breaks in the inter-market linkages has important implications for international investors as regards portfolio diversification benefits and for financial policy makers regarding contagion risks and market policies. (C) 2016 Elsevier Inc. All rights reserved.
+C1 [Majdoub, Jihed] Univ Tunis, Highest Sch Management, Tunis, Tunisia.
+   [Mansour, Walid] King Abdulaziz Univ, Jeddah, Saudi Arabia.
+   [Mansour, Walid] Univ Carthage, IHEC, ECSTRA, Tunis, Tunisia.
+   [Jouini, Jamel] King Saud Univ, Coll Business Adm, Riyadh, Saudi Arabia.
+RP Majdoub, J (reprint author), Univ Tunis, Highest Sch Management, Tunis, Tunisia.
+EM Jihed.majdoub@gmail.com
+OI Majdoub, JIHED/0000-0002-7250-692X
+FU Deanship of Scientific Research at King Saud University research center
+   at College of Business Administration
+FX The authors are grateful to the Editor and anonymous referees for their
+   valuable comments and suggestions. Jamel Jouini would like to thank the
+   Deanship of Scientific Research at King Saud University represented by
+   the research center at College of Business Administration for supporting
+   this research financially.
+CR Ajmi AN, 2014, J INT FINANC MARK I, V28, P213, DOI 10.1016/j.intfin.2013.11.004
+   Bai JS, 1998, ECONOMETRICA, V66, P47, DOI 10.2307/2998540
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Charles A., 2012, WORKING PAPER
+   Dania A., 2013, J WEALTH MANAG, V16, P65
+   el Alaoui AO, 2015, J INT FINANC MARK I, V36, P53, DOI 10.1016/j.intfin.2014.12.004
+   Elliott G, 1996, ECONOMETRICA, V64, P813, DOI 10.2307/2171846
+   Gjika D, 2013, ECON MODEL, V33, P55, DOI 10.1016/j.econmod.2013.03.015
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Gregory AW, 1996, J ECONOMETRICS, V70, P99, DOI 10.1016/0304-4076(69)41685-7
+   Hammoudeh S., 2013, INTERACTIONS CONVENT
+   Ibn Ashur M. T., 1945, TREATISE MAQASID AL
+   IFSL, 2009, ISLAMIC FINANCE
+   JOHANSEN S, 1988, J ECON DYN CONTROL, V12, P231, DOI 10.1016/0165-1889(88)90041-3
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Lean HH, 2013, ECON MODEL, V32, P333, DOI 10.1016/j.econmod.2013.02.013
+   Carrion-i-Silvestre JL, 2009, ECONOMET THEOR, V25, P1754, DOI 10.1017/S0266466609990326
+   Majdoub J, 2014, N AM J ECON FINANC, V29, P452, DOI 10.1016/j.najef.2014.06.011
+   Mansour W, 2015, J RELIG ETHICS, V43, P51, DOI 10.1111/jore.12086
+   Osborne G., 2013, FINANCIAL TIMES
+   Puzetto I., 2008, WORKING PAPER
+   Rizvi SAR, 2015, PAC-BASIN FINANC J, V34, P315, DOI 10.1016/j.pacfin.2015.04.002
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Tse YK, 2000, J ECONOMETRICS, V98, P107, DOI 10.1016/S0304-4076(99)00080-9
+   Yamamoto S, 2014, N AM J ECON FINANC, V27, P88, DOI 10.1016/j.najef.2013.12.002
+NR 25
+TC 9
+Z9 9
+U1 1
+U2 11
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1062-9408
+EI 1879-0860
+J9 N AM J ECON FINANC
+JI N. Am. Econ. Financ.
+PD JUL
+PY 2016
+VL 37
+SI SI
+BP 436
+EP 457
+DI 10.1016/j.najef.2016.03.004
+PG 22
+WC Business, Finance; Economics
+SC Business & Economics
+GA DS6BG
+UT WOS:000380866100024
+DA 2019-12-27
+ER
+
+PT J
+AU Narayan, S
+   Doytch, N
+   Nguyen, TT
+   Kluegel, K
+AF Narayan, Seema
+   Doytch, Nadia
+   Tri Tung Nguyen
+   Kluegel, Karl
+TI Trade of goods and services and risk sharing ability in international
+   equity markets: Are these substitutes or complements?
+SO INTERNATIONAL REVIEW OF ECONOMICS & FINANCE
+LA English
+DT Article
+DE Trade; International risk sharing; Stock market spillovers; Stock market
+   correlations; Bear markets; Financial crisis; Decoupling-recoupling
+   hypothesis; Financial liberalisation
+ID ECONOMIC-GROWTH EVIDENCE; GLOBAL FINANCIAL CRISIS; SPILLOVER;
+   INTEGRATION; CHINA; US; LIBERALIZATION; CONTAGION; REGIMES; POLICY
+AB This paper shows that changes in risk sharing ability in international financial markets have implications for the trade of goods and services. The ability to share risk in international financial markets is captured as time varying correlations between stock markets in the US and 11 Asian countries. We find that trade in the 11 Asia and their ability to share risk in US equity market are mostly substitutes over the full sample (1993:01 to 2014:01) and in extreme market conditions (such as a financial crisis). However, once we account for the decoupling-recoupling hypothesis during the GFC period, we only find strong evidence of complementarity between Asian trade and risk sharing in the US stock markets. We find further support for this complementary link between the real and financial markets in our analyses of when we examined the relationship between US stock market spillovers and Asian trade during the full sample, the GFC period, and under bearish market conditions. We explain our approach and results making connections with several related areas of research and evaluate the results against cases where international risk sharing is with equity markets in China and Japan. (C) 2016 Elsevier Inc All rights reserved.
+C1 [Narayan, Seema; Tri Tung Nguyen] RMIT Univ, Sch Econ Finance & Mkt, Melbourne, Vic, Australia.
+   [Doytch, Nadia] CUNY Brooklyn Coll, Brooklyn, NY 11210 USA.
+   [Doytch, Nadia] CUNY, Grad Ctr, New York, NY USA.
+   [Kluegel, Karl] RMIT Vietnam, Ho Chi Minh City, Vietnam.
+RP Narayan, S (reprint author), RMIT Univ, Sch Econ Finance & Mkt, Melbourne, Vic, Australia.
+EM seema.narayan@rmit.edu.au
+RI Narayan, Seema/H-5698-2019
+FU College of Business, RMIT University
+FX The first author would like to acknowledge the support of the College of
+   Business, RMIT University (2014 Vietnam Research Fellowship Scheme) for
+   this work.
+CR Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Anwar S, 2012, ECON MODEL, V29, P974, DOI 10.1016/j.econmod.2012.02.009
+   Bekiros SD, 2014, INT REV FINANC ANAL, V33, P58, DOI 10.1016/j.irfa.2013.07.007
+   Chen SS, 2009, J BANK FINANC, V33, P211, DOI 10.1016/j.jbankfin.2008.07.013
+   Chesnay F., 2001, EC NOTES, V0, P53, DOI DOI 10.1111/1468-0300.00047
+   Cheung YW, 2005, INT J FINANC ECON, V10, P117, DOI 10.1002/ijfe.264
+   Chiou-Wei SZ, 2010, APPL ECON, V42, P2041, DOI 10.1080/00036840701765312
+   COLE HL, 1991, J MONETARY ECON, V28, P3, DOI 10.1016/0304-3932(91)90023-H
+   DEMIRGUCKUNT A, 1998, WP9883 IMF
+   Devereux MB, 1999, J MONETARY ECON, V43, P35, DOI 10.1016/S0304-3932(98)00048-8
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   Dooley M, 2009, J INT MONEY FINANC, V28, P1331, DOI 10.1016/j.jimonfin.2009.08.004
+   Engle R. F., 2000, 200009 UCSD
+   Feeney J, 2004, J INT ECON, V64, P151, DOI 10.1016/j.jinteco.2003.06.001
+   FEENEY J, 1994, INT ECON REV, V35, P551, DOI 10.2307/2527073
+   Gander JP, 2011, APPL ECON, V43, P837, DOI 10.1080/00036840802599966
+   Girardin E, 2007, CHINA ECON REV, V18, P354, DOI 10.1016/j.chieco.2007.02.009
+   Hasan I, 2009, J BANK FINANC, V33, P157, DOI 10.1016/j.jbankfin.2007.11.016
+   Hsueh SJ, 2013, ECON MODEL, V32, P294, DOI 10.1016/j.econmod.2013.02.027
+   Hur J, 2006, WORLD DEV, V34, P1728, DOI 10.1016/j.worlddev.2006.02.003
+   Huyghebaert N, 2010, CHINA ECON REV, V21, P98, DOI 10.1016/j.chieco.2009.11.001
+   IMF, 2011, CONS SPILL REP IMPL
+   IMF, 2013, WORD EC OUTL, P81
+   In F., 2001, INT REV FINANC ANAL, V10, P87
+   Jayasuriya SA, 2011, EMERG MARK REV, V12, P418, DOI 10.1016/j.ememar.2011.06.005
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kim S.-W., 2015, EMERG MARK FINANC TR, V51, P68
+   Lau CKM, 2013, EMERG MARK FINANC TR, V49, P37, DOI 10.2753/REE1540-496X4901S103
+   Yeyati EL, 2012, J INT MONEY FINANC, V31, P2102, DOI 10.1016/j.jimonfin.2012.05.005
+   Li XD, 2013, EMERG MARK FINANC TR, V49, P23, DOI 10.2753/REE1540-496X4902S202
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Maderitsch R, 2015, APPL ECON, V47, P4714, DOI 10.1080/00036846.2015.1034839
+   Mehrez G., 2000, 2286 WORLD BANK
+   Mensi W, 2016, INT REV ECON FINANC, V42, P257, DOI 10.1016/j.iref.2015.11.005
+   Mierau JO, 2013, J BANK FINANC, V37, P4765, DOI 10.1016/j.jbankfin.2013.08.025
+   Mun M, 2012, EMERG MARK REV, V13, P1, DOI 10.1016/j.ememar.2011.09.001
+   Narayan S, 2014, ECON MODEL, V39, P19, DOI 10.1016/j.econmod.2014.02.012
+   Narayan S, 2015, EMERG MARK FINANC TR, V51, P867, DOI 10.1080/1540496X.2015.1061379
+   Niroomand F, 2014, APPL ECON, V46, P1490, DOI 10.1080/00036846.2013.866207
+   OBSTFELD M, 1994, AM ECON REV, V84, P1310
+   Psaradakis Z, 2003, J TIME SER ANAL, V24, P237, DOI 10.1111/1467-9892.00305
+   Ranciere R, 2006, J BANK FINANC, V30, P3331, DOI 10.1016/j.jbankfin.2006.05.019
+   ROSE A, 2008, PACIFIC EC REV, V15, P340
+   Rose A. K., 2009, 7354 CEPR
+   Sriananthakumar S, 2015, INT REV ECON FINANC, V39, P504, DOI 10.1016/j.iref.2015.08.001
+   Stockman A. C., 1987, REAL FINANCIAL LINKA, P34
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Wang LH, 2014, J INT FINANC MARK I, V28, P182, DOI 10.1016/j.intfin.2013.11.003
+NR 48
+TC 1
+Z9 2
+U1 1
+U2 11
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1059-0560
+EI 1873-8036
+J9 INT REV ECON FINANC
+JI Int. Rev. Econ. Financ.
+PD SEP
+PY 2016
+VL 45
+BP 485
+EP 503
+DI 10.1016/j.iref.2016.07.007
+PG 19
+WC Business, Finance; Economics
+SC Business & Economics
+GA DV9WJ
+UT WOS:000383292600032
+DA 2019-12-27
+ER
+
+PT J
+AU Phochanachan, P
+   Liu, JX
+   Sriboonchitta, S
+AF Phochanachan, Panisara
+   Liu, Jianxu
+   Sriboonchitta, Songsak
+TI On Mathematical Modeling and Analysis of Co-Movement and Optimal
+   Portfolios of Stock Markets
+SO THAI JOURNAL OF MATHEMATICS
+LA English
+DT Article
+DE time-varying copulas; expected shortfall; backtesting; G7
+ID VALUE-AT-RISK; ASSET ALLOCATION; CONTAGION; DYNAMICS
+AB This paper proposes to use the concept of time-varying copulas in probability theory as an appropriate mathematical modeling tool for investigating an important problem in economics, namely the co-movement of stock markets as well as optimal portfolio constructions on them. In the sense of expected shortfall, a coherent risk measure widely used in risk management of financial markets, we show that our time-varying copula models for GARCH perform better than the conventional DCC-GARCH model. We exhibit also various advantages of this approach in investment decisions. An application to G7 stock markets is given.
+C1 [Phochanachan, Panisara] Univ Phayao, Sch Management & Informat Sci, Mae Ka, Phayao, Thailand.
+   [Phochanachan, Panisara; Liu, Jianxu; Sriboonchitta, Songsak] Chiang Mai Univ, Fac Econ, Chiang Mai, Thailand.
+RP Liu, JX (reprint author), Chiang Mai Univ, Fac Econ, Chiang Mai, Thailand.
+EM panisarapho@hotmail.com; liujianxu1984@163.com; songsakecon@gmail.com
+FU University of Phayao-PhD Scholarship
+FX The authors acknowledge the financial support from University of
+   Phayao-PhD Scholarship.
+CR Ane Thierry, 2006, INT REV ECON FINANC, V15, P417
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Autchariyapanitkul K, 2014, THAI J MATH, P11
+   Bartram SM, 2007, J BANK FINANC, V31, P1461, DOI 10.1016/j.jbankfin.2006.07.014
+   Bentes SR, 2014, PHYSICA A, V408, P190, DOI 10.1016/j.physa.2014.04.032
+   Bilel l. M., 2009, RES J INT STUDIES, V9, P36
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   Celik S, 2012, ECON MODEL, V29, P1946, DOI 10.1016/j.econmod.2012.06.011
+   Chen XJB, 2014, ECON MODEL, V42, P230, DOI 10.1016/j.econmod.2014.07.010
+   Chiang MH, 2011, J ECONOMETRICS, V165, P175, DOI 10.1016/j.jeconom.2011.07.004
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Forbes K., 2000, W7885 NAT BUR EC RES
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gupta R, 2009, J MULTINATL FINANC M, V19, P160, DOI 10.1016/j.mulfin.2008.10.001
+   Hamori S., 2007, ECONOMIC SYSTEMS, V31, P256
+   Hwang I., 2010, FIN CORP GOV C
+   Hyde S. J, 2007, CORRELATION DYNAMICS
+   Jayech Selma, 2012, International Journal of Data Analysis Techniques and Strategies, V4, P154, DOI 10.1504/IJDATS.2012.046790
+   Joe H, 1996, TECHNICAL REPORT, P166
+   Lee J, 2006, J INT MONEY FINANC, V25, P257, DOI 10.1016/j.jimonfin.2005.11.002
+   Lee Y.H., 2014, INT J ENERGY EC POLI, V4, P327
+   Lehmann E. L., 1998, SPRINGER SCI BUSINES, P31
+   Liow KH, 2015, N AM J ECON FINANC, V33, P328, DOI 10.1016/j.najef.2015.06.003
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   MROZ M., 2012, THESIS
+   Nelsen R. B, 2006, INTRO COPULAS
+   Nguyen H. T., 2014, USING 2 ORDER PROBAL
+   Patton A. J., 2002, THESIS
+   Rockafellar RT, 2002, J BANK FINANC, V26, P1443, DOI 10.1016/S0378-4266(02)00271-6
+   Sriboonchita S, 2009, STOCHASTIC DOMINANCE
+   Tsay RS, 2014, INTRO ANAL FINANCIAL
+   Wang K, 2011, INT REV ECON FINANC, V20, P654, DOI 10.1016/j.iref.2010.12.003
+   Wu CC, 2012, ENERG ECON, V34, P270, DOI 10.1016/j.eneco.2011.07.007
+NR 37
+TC 0
+Z9 0
+U1 1
+U2 1
+PU CHIANG MAI UNIV, FAC SCIENCE
+PI CHIANG MAI
+PA 239 HUAY KAEW RD, T SUTHEP, CHIANG MAI, 50200, THAILAND
+SN 1686-0209
+J9 THAI J MATH
+JI Thai J. Math.
+PD AUG
+PY 2016
+VL 14
+IS 2
+BP 283
+EP 303
+PG 21
+WC Mathematics
+SC Mathematics
+GA FG4YQ
+UT WOS:000410293600003
+DA 2019-12-27
+ER

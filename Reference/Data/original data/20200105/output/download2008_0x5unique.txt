@@ -1,0 +1,406 @@
+PT J
+AU Parra-Lopez, C
+   Calatrava-Requena, J
+   de-Haro-Gimenez, T
+AF Parra-Lopez, Carlos
+   Calatrava-Requena, Javier
+   de-Haro-Gimenez, Tomas
+TI A systemic comparative assessment of the multifunctional performance of
+   alternative olive systems in Spain within an AHP-extended framework
+SO ECOLOGICAL ECONOMICS
+LA English
+DT Article
+DE sustainable agriculture; multifunctionality; multicriteria analysis;
+   group decision-making; Analytic Hierarchy Process (AHP); conventional,
+   organic and integrated olive farming
+ID ANALYTIC HIERARCHY PROCESS; BIOLOGICAL FARMING SYSTEMS; VECTOR-SPACE
+   FORMULATION; DECISION-MAKING; ENVIRONMENTAL-IMPACT; ORGANIC AGRICULTURE;
+   SUPPORT-SYSTEMS; SUSTAINABILITY; CONSEQUENCES; MANAGEMENT
+AB The concept of sustainable agriculture is strongly related to the multifunctional role, either explicitly or implicitly, recognized to the primary sector. When assessing the performance and value to society of particular agricultural systems, the multifunctional nature of agriculture requires an approach based on multicriteria. Amongst others, these include economic, environmental, social, cultural and technical criteria. Like other complex multicriteria analyses, this evaluation of agricultural systems is characterized by the existence of not only many, but often conflicting criteria, multiple stakeholders and decision-makers who have competing interests, lack of information and a consideration of the high risks involved.
+   The Analytic Hierarchy Process (AHP) is a methodology that deals with problems of this sort in a relatively easy, flexible and economical manner. Therefore it is a potentially useful tool for the practical resolution of complex problems, often an object of Ecological Economics. one such problem is the analysis of the sustainability of economic activities.
+   This article has three aims. The first is to present AHP as a powerful methodology for assessing multifunctional performances of different agricultural systems in a comparative way. AHP can also be applied to other multifunctional economic activities. The second aim is to propose an extension of AHP for improving the decision-making processes when different groups of decision agents are involved. A final aim is to illustrate the AHP-extended methodology in a particular case study. This is done by using it to compare the multifunctional performance of alternative olive growing systems in Andalusia, a region located in the south of Spain, on the basis of the assessments of different groups of experts. This tests the hypothetically greater sustainability of organic and integrated farming over conventional fanning systems in the medium/long term under average conditions for this region. Results for this case study show a greater global performance of organic and integrated agriculture despite differences in the ideological tendencies of the experts, thus providing a scientific basis for endorsing institutional and social support for the promotion and implementation of these farming techniques. Some conflictive issues, however, have been detected, especially in areas related to environmental performance. Further research on the controversial topics is desirable for clarification. (C) 2007 Elsevier B.V. All rights reserved.
+C1 [Parra-Lopez, Carlos; Calatrava-Requena, Javier] Andalusian Inst Agr Res, IFAPA, Dept Agr Econ & Sociol, Granada 18080, Spain.
+   [de-Haro-Gimenez, Tomas] Univ Cordoba, Dept Agr Econ Sociol & Policy, E-14080 Cordoba, Spain.
+RP Parra-Lopez, C (reprint author), Andalusian Inst Agr Res, IFAPA, Dept Agr Econ & Sociol, POB 2027, Granada 18080, Spain.
+EM carparra@teleline.es
+RI Parra-Lopez, Carlos/A-7730-2008
+OI Parra-Lopez, Carlos/0000-0003-4923-4169
+CR ARDENCLARKE C, 1987, BIOL AGRIC HORTIC, V4, P309, DOI 10.1080/01448765.1987.9755116
+   ARDENCLARKE C, 1988, BIOL AGRIC HORTIC, V5, P223, DOI 10.1080/01448765.1988.9755147
+   Berentsen PBM, 1998, BIOL AGRIC HORTIC, V16, P311, DOI 10.1080/01448765.1998.10823202
+   Brunner N, 2004, ENVIRON IMPACT ASSES, V24, P441, DOI 10.1016/j.eiar.2003.12.001
+   Bryson N, 1996, COMPUT OPER RES, V23, P27, DOI 10.1016/0305-0548(96)00002-H
+   Bryson N, 1997, ANN OPER RES, V71, P75, DOI 10.1023/A:1018983818299
+   *CEE, 1996, DECL CORK MED RUR VI
+   Clark MS, 1998, AGR ECOSYST ENVIRON, V68, P51, DOI 10.1016/S0167-8809(97)00130-8
+   Cobb D, 1999, LAND USE POLICY, V16, P207, DOI 10.1016/S0264-8377(99)00023-X
+   Conacher J, 1998, BIOL AGRIC HORTIC, V16, P145, DOI 10.1080/01448765.1998.9755229
+   de Boer IJM, 2003, LIVEST PROD SCI, V80, P69, DOI 10.1016/S0301-6226(02)00322-6
+   *DEPA, 1999, OK SCEN DANM
+   DYER JS, 1990, MANAGE SCI, V36, P249, DOI 10.1287/mnsc.36.3.249
+   Finan JS, 1999, EUR J OPER RES, V112, P367, DOI 10.1016/S0377-2217(97)00411-6
+   Forman E., 2001, DECISIONS OBJECTIVES
+   FORMAN E, 1983, EXPERT CHOICE DECISI
+   Freemark KE, 2001, BIOL CONSERV, V101, P337, DOI 10.1016/S0006-3207(01)00079-9
+   Gunapala N, 1998, SOIL BIOL BIOCHEM, V30, P1917, DOI 10.1016/S0038-0717(98)00062-5
+   Hansen B, 2001, AGR ECOSYST ENVIRON, V83, P11, DOI 10.1016/S0167-8809(00)00257-7
+   HARWOOD RR, 1990, SUSTAINABLE AGRICULTURAL SYSTEMS, P3
+   Hendriks K, 2000, AGR ECOSYST ENVIRON, V77, P157, DOI 10.1016/S0167-8809(99)00100-0
+   HERNDNDEZ A, 1999, APLICACION METODO JE
+   HOLDER RD, 1990, J OPER RES SOC, V41, P1073, DOI 10.2307/2582904
+   JIMENES JMM, 1997, P 1 ENC IB SOBR EV D
+   JIMENEZ SS, 1999, THESIS U JAEN DEP BU
+   *JUNT AND, 2004, AN EST AGR PESQ AND
+   *JUNT AND, 2003, BAL AGR 2002 CONS AG
+   *JUNT AND, 2002, AN EST AGR PESQ AND
+   Lampkin N, 1994, EC ORGANIC FARMING
+   *MAPA, 2002, EST 2001 AGR EC ESP
+   Pacini C, 2004, AGR ECOSYST ENVIRON, V102, P349, DOI 10.1016/j.agee.2003.08.010
+   Pacini C, 2003, AGR ECOSYST ENVIRON, V95, P273, DOI 10.1016/S0167-8809(02)00091-9
+   PASTOR M, 2000, PRODUCCION INTEGRADA, P105
+   Poyhonen M, 2001, EUR J OPER RES, V129, P569, DOI 10.1016/S0377-2217(99)00467-1
+   RAMANATHAN R, 1994, EUR J OPER RES, V79, P249, DOI 10.1016/0377-2217(94)90356-5
+   Rasul G, 2004, AGR SYST, V79, P327, DOI 10.1016/S0308-521X(03)00090-8
+   Rigby D, 2001, ECOL ECON, V39, P463, DOI 10.1016/S0921-8009(01)00245-2
+   Rosenbloom ES, 1996, EUR J OPER RES, V96, P371
+   Rossing WAH, 1997, EUR J AGRON, V7, P271, DOI 10.1016/S1161-0301(97)00042-7
+   Saaty T.L, 1996, DECISION MAKING DEPE
+   Saaty T. L., 1980, ANAL HIERARCHY PROCE
+   SAATY TL, 1977, J MATH PSYCHOL, V15, P234, DOI 10.1016/0022-2496(77)90033-5
+   SAATY TL, 1994, AHP SERIES RWS PUBLI, V6
+   Saaty TL, 1989, ANAL HIERARCHY PROCE, P59, DOI DOI 10.1007/978-3-642-50244-6_4
+   SCHENKERMAN S, 1994, EUR J OPER RES, V74, P407, DOI 10.1016/0377-2217(94)90220-8
+   Shih HS, 2004, MATH COMPUT MODEL, V39, P1397, DOI 10.1016/j.mcm.2004.06.014
+   Shirani A, 1998, INFORM MANAGE, V33, P231, DOI 10.1016/S0378-7206(98)00029-9
+   Siegrist S, 1998, AGR ECOSYST ENVIRON, V69, P253, DOI 10.1016/S0167-8809(98)00113-3
+   SIERRA CF, 2000, DATOS OLIVAR INTEGRA
+   Stockdale EA, 2001, ADV AGRON, V70, P261, DOI 10.1016/S0065-2113(01)70007-7
+   Stolze M, 2000, EC POLICY
+   Tiwari DN, 1999, AGR SYST, V60, P99, DOI 10.1016/S0308-521X(99)00021-9
+   Wells AT, 2000, AGR ECOSYST ENVIRON, V80, P47, DOI 10.1016/S0167-8809(00)00133-X
+   WOODWARD L, 1989, P EL FARM U KASS M S
+   Yeh JM, 2001, INT J SYST SCI, V32, P1353, DOI 10.1080/00207720110052012
+   Zahir S, 1999, EUR J OPER RES, V112, P620, DOI 10.1016/S0377-2217(98)00021-6
+   Zahir S, 1999, EUR J OPER RES, V112, P373, DOI 10.1016/S0377-2217(98)00020-4
+NR 57
+TC 60
+Z9 63
+U1 3
+U2 34
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0921-8009
+EI 1873-6106
+J9 ECOL ECON
+JI Ecol. Econ.
+PD FEB 1
+PY 2008
+VL 64
+IS 4
+BP 820
+EP 834
+DI 10.1016/j.ecolecon.2007.05.004
+PG 15
+WC Ecology; Economics; Environmental Sciences; Environmental Studies
+SC Environmental Sciences & Ecology; Business & Economics
+GA 270WY
+UT WOS:000253752100013
+DA 2019-12-28
+ER
+
+PT J
+AU Woodard, JD
+   Garcia, P
+AF Woodard, Joshua D.
+   Garcia, Philip
+TI Weather derivatives, spatial aggregation, and systemic risk:
+   Implications for reinsurance hedging
+SO JOURNAL OF AGRICULTURAL AND RESOURCE ECONOMICS
+LA English
+DT Article
+DE crop insurance; hedging; reinsurance; spatial aggregation; systemic
+   risk; weather derivatives
+ID CROP INSURANCE; AGRICULTURAL INSURANCE; CORN YIELD; MARKETS
+AB Previous studies identify limited potential efficacy of weather derivatives in hedging agricultural exposures. In contrast to earlier studies which investigate the problem at low levels of aggregation, we find that better weather hedging opportunities may exist at higher levels of spatial aggregation. Aggregating production exposures reduces idiosyncratic risk, leaving a greater proportion of the total risk in the form of systemic weather risk which can be effectively hedged using relatively simple weather derivatives. The aggregation effect suggests that the potential for weather derivatives in agriculture may be greater than previously thought, particularly for aggregators of risk such as reinsurers.
+C1 [Woodard, Joshua D.; Garcia, Philip] Univ Illinois, Dept Agr & Consumer Econ, OFOR, Urbana, IL 61801 USA.
+RP Woodard, JD (reprint author), Univ Illinois, Dept Agr & Consumer Econ, OFOR, Urbana, IL 61801 USA.
+CR BROCKETT PL, 2005, RISK MANAGEMENT INSU, V8, P127, DOI DOI 10.1111/J.1540-6296.2005.00052.X
+   Cao M, 2004, J FUTURES MARKETS, V24, P1065, DOI 10.1002/fut.20122
+   CHAMBERS RG, 1989, AM J AGR ECON, V71, P604, DOI 10.2307/1242016
+   Coble KH, 2004, EUR REV AGRIC ECON, V31, P309, DOI 10.1093/erae/31.3.309
+   DIXON BL, 1994, J AGR RESOUR ECON, V19, P58
+   Dowd K, 2006, J RISK INSUR, V73, P193, DOI 10.1111/j.1539-6975.2006.00171.x
+   Duncan J, 2000, AM J AGR ECON, V82, P842, DOI 10.1111/0002-9092.00085
+   GARDNER B, 1994, EC AGR CROP INSURANC, P2
+   Glauber J. W., 2004, American Journal of Agricultural Economics, V86, P1179, DOI 10.1111/j.0002-9092.2004.00663.x
+   GOODWIN B, 1995, EC CROP INSURANCE DI
+   Hayes D. J., 2003, Agricultural Finance Review, V63, P127
+   Jewson S., 2005, WEATHER DERIVATIVE V
+   Just R E, 1994, EC AGR CROP INSURANC, P205
+   Kaufmann RK, 1997, AM J AGR ECON, V79, P178, DOI 10.2307/1243952
+   LEATHERS H, 1994, EC AGR CROP INSURANC, P273
+   Mason C., 2003, Agricultural Finance Review, V63, P23
+   Miranda MJ, 1997, AM J AGR ECON, V79, P206, DOI 10.2307/1243954
+   Monjardino P, 2005, CROP SCI, V45, P1203, DOI 10.2135/cropsci2003.0122
+   NAMIAS J, 1983, J CLIM APPL METEOROL, V22, P30, DOI 10.1175/1520-0450(1983)022<0030:SCOUSD>2.0.CO;2
+   NAMIAS J, 1986, MON WEATHER REV, V114, P1368, DOI 10.1175/1520-0493(1986)114<1368:POFPON>2.0.CO;2
+   NELSON CH, 1987, AM J AGR ECON, V69, P523, DOI 10.2307/1241688
+   Popp M, 2005, CAN J AGR ECON, V53, P103, DOI 10.1111/j.1744-7976.2005.00408.x
+   QUIGGIN J, 1994, EC AGR CROP INSURANC, P115
+   Richards DJ, 2004, AM J AGR ECON, V86, P1005
+   ROTH M, 2007, 101 EAAE SEM TITL MA
+   Schlenker W, 2006, REV ECON STAT, V88, P113, DOI 10.1162/rest.2006.88.1.113
+   Schmitz A., 1994, EC AGR CROP INSURANC, P167
+   Schoney R., 1994, EC AGR CROP INSURANC, P293
+   Skees J. R., 1999, Review of Agricultural Economics, V21, P424, DOI 10.2307/1349889
+   SKEES JR, 1986, AM J AGR ECON, V68, P653, DOI 10.2307/1241549
+   SWINTON SM, 1991, AM J AGR ECON, V73, P446, DOI 10.2307/1242729
+   Teigen L. D, 1991, WEATHER CLIMATE VARI
+   Turvey C, 1999, CAN J AGR ECON, V47, P281, DOI 10.1111/j.1744-7976.1999.tb00226.x
+   Turvey C. G., 2001, Review of Agricultural Economics, V23, P333, DOI 10.1111/1467-9353.00065
+   Turvey CG, 2005, AGRIC FINANCE REV, V65, P59, DOI 10.1108/00214660580001167
+   Vedenov DV, 2004, J AGR RESOUR ECON, V29, P387
+   Williams Jr. C. N., 2006, ORNLCDIAC118
+   WOLFSON N, 1987, MON WEATHER REV, V115, P1345, DOI 10.1175/1520-0493(1987)115<1345:NERTTS>2.0.CO;2
+   Wright B. D., 1994, EC AGR CROP INSURANC, P73, DOI 10.1007/978-94-011-1386-1_4
+NR 39
+TC 28
+Z9 30
+U1 0
+U2 11
+PU WESTERN AGRICULTURAL ECONOMICS ASSOC
+PI LOGAN
+PA C/O DEEVON BAILEY, UTAH STATE UNIV, ECONOMICS DEPT, 3535 OLD MAIN HILL,
+   LOGAN, UT 84322-3530 USA
+SN 0162-1912
+J9 J AGR RESOUR ECON
+JI J. Agric. Resour. Econ.
+PD APR
+PY 2008
+VL 33
+IS 1
+BP 34
+EP 51
+PG 18
+WC Agricultural Economics & Policy; Economics
+SC Agriculture; Business & Economics
+GA 286NK
+UT WOS:000254852400003
+DA 2019-12-28
+ER
+
+PT J
+AU Abdous, B
+   Fougeres, AL
+   Ghoudi, K
+   Soulier, P
+AF Abdous, Belkacem
+   Fougeres, Anne-Laure
+   Ghoudi, Kilani
+   Soulier, Philippe
+TI Estimation of bivariate excess probabilities for elliptical models
+SO BERNOULLI
+LA English
+DT Article
+DE asymptotic independence; conditional excess probability; elliptic law;
+   financial contagion; rapidly varying tails
+ID MULTIVARIATE EXTREME VALUES; RANDOM VECTORS; DEPENDENCE; DISTRIBUTIONS;
+   INDEPENDENCE; COEFFICIENT; REGRESSION; SAMPLE; RISK
+AB Let (X, Y) be a random vector whose conditional excess probability theta(x, y) := P(Y <= y | X > x) is of interest, Estimating this kind of probability is a delicate problem as soon as x tends to be large, since the conditioning event becomes an extreme set. Assume that (X, Y) is elliptically distributed, with a rapidly varying radial component. In this paper, three statistical procedures are proposed to estimate theta(x,y) for fixed x, y, with x large. They respectively make use of,in approximation result of Abdous et al. (cf. Canad. J. Statist. 33 (2005) 317-334, Theorem 1), a new second order refinement of Abdous el al.'s Theorem 1, and a non-approximating method. The estimation of the conditional quantile function theta(x, y)(-) for large fixed x is also addressed and these methods are compared via Simulations. An illustration in the financial context is also given.
+C1 [Abdous, Belkacem] Univ Laval, Dept Social & Prevent Med, Quebec City, PQ G1K 7P4, Canada.
+   [Fougeres, Anne-Laure; Soulier, Philippe] Univ Paris 10, Equipe MODALX, F-92000 Nanterre, France.
+   [Ghoudi, Kilani] United Arab Emirates Univ, Dept Stat, Al Ain 17555, U Arab Emirates.
+RP Abdous, B (reprint author), Univ Laval, Dept Social & Prevent Med, Quebec City, PQ G1K 7P4, Canada.
+EM belkacem.abdous@msp.ulaval.ca; Anne-Laure.Fougeres@u-paris10.fr;
+   kghoudi@uaeu.ac.ae; Philippe.Soulier@u-paris10.fr
+RI Ghoudi, Kilani/A-2193-2013
+FU Natural Sciences and Engineering Research Council of CanadaNatural
+   Sciences and Engineering Research Council of Canada
+FX We would like to thank two anonymous referees for useful remarks. We
+   also acknowledge Free Software R. The first author gratefully
+   acknowledges the support of the Natural Sciences and Engineering
+   Research Council of Canada.
+CR Abdous B, 2005, CAN J STAT, V33, P317, DOI 10.1002/cjs.5540330302
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Balkema G, 2007, ZUR LECT ADV MATH, P1
+   BEIRLANT J, 2003, EXTREMES, V6, P335
+   Beirlant J., 2004, STAT EXTREMES
+   Beirlant J., 1999, EXTREMES, V2, P177
+   Berman S, 1992, SOJOURNS EXTREMES ST
+   Bradley BO, 2004, FINANCE LETT, V2, P8
+   Bradley BO, 2005, FINANCE LETT, V3, P77
+   Chernozhukov V, 2005, ANN STAT, V33, P806, DOI 10.1214/009053604000001165
+   Coles S., 2001, INTRO STAT MODELING
+   de Haan L., 1970, REGULAR VARIATION IT
+   DeHaan L, 1996, J AUST MATH SOC A, V61, P381, DOI 10.1017/S144678870000046X
+   DEHAAN L, 1977, Z WAHRSCHEINLICHKEIT, V40, P317
+   DEHAAN L, 1985, B I INT STAT, V5, P185
+   DEHAAN L, 1985, B I INT STAT, V51, P1
+   DIERCKX G, 2007, NEW ESTIMATION METHO
+   Draisma G, 2004, BERNOULLI, V10, P251, DOI 10.3150/bj/1082380219
+   EDDY WF, 1981, ADV APPL PROBAB, V13, P751, DOI 10.2307/1426971
+   Embrechts P, 2003, HANDBOOKS FINANCE, P329, DOI 10.1016/B978-044450896-6.50010-8
+   Fang KT, 1990, SYMMETRIC MULTIVARIA
+   Frahm G, 2005, INSUR MATH ECON, V37, P80, DOI 10.1016/j.insmatheco.2005.05.008
+   Gardes L., 2006, REVSTAT-STAT J, V4, P163
+   Girard S, 2004, COMMUN STAT-THEOR M, V33, P205, DOI 10.1081/STA-120028371
+   Hashorva E., 2007, ALBANIAN J MATH, V1, P31
+   Hashorva E, 2006, STOCH MODELS, V22, P441, DOI 10.1080/15326340600820414
+   Heffernan JE, 2007, ANN APPL PROBAB, V17, P537, DOI 10.1214/105051606000000835
+   Heffernan JE, 2004, J R STAT SOC B, V66, P497, DOI 10.1111/j.1467-9868.2004.02050.x
+   Huffer FW, 2007, J MULTIVARIATE ANAL, V98, P256, DOI 10.1016/j.jmva.2005.09.011
+   Hult H, 2002, ADV APPL PROBAB, V34, P587, DOI 10.1239/aap/1033662167
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R., 2005, QUANTILE REGRESSION
+   Ledford AW, 1996, BIOMETRIKA, V83, P169, DOI 10.1093/biomet/83.1.169
+   Ledford AW, 1997, J ROY STAT SOC B MET, V59, P475, DOI 10.1111/1467-9868.00080
+   Levy H, 2004, J PORTFOLIO MANAGE, V30, P47, DOI 10.3905/jpm.2004.412319
+   Maulik K., 2004, EXTREMES, V7, P31
+   Pickands J., 1981, B INT STAT I, V49, p[859, 894]
+   PICKANDS J, 1981, B I INT STAT, V49, P894
+   Resnick S., 2002, EXTREMES, V5, P303
+   Resnick S. I., 1987, EXTREME VALUES REGUL
+   STEPHENS MA, 1979, BIOMETRIKA, V66, P591
+   Vynckier P., 1996, PRACTICAL ANAL EXTRE
+NR 42
+TC 6
+Z9 6
+U1 0
+U2 4
+PU INT STATISTICAL INST
+PI VOORBURG
+PA 428 PRINSES BEATRIXLAAN, 2270 AZ VOORBURG, NETHERLANDS
+SN 1350-7265
+EI 1573-9759
+J9 BERNOULLI
+JI Bernoulli
+PD NOV
+PY 2008
+VL 14
+IS 4
+BP 1065
+EP 1088
+DI 10.3150/08-BEJ140
+PG 24
+WC Statistics & Probability
+SC Mathematics
+GA 418RP
+UT WOS:000264166400008
+OA Bronze
+DA 2019-12-27
+ER
+
+PT J
+AU Owens, S
+   Driffill, L
+AF Owens, Susan
+   Driffill, Louise
+TI How to change attitudes and behaviours in the context of energy
+SO ENERGY POLICY
+LA English
+DT Article
+DE Energy; Behaviour; Public engagement
+ID RADIOACTIVE-WASTE; CLIMATE-CHANGE; POLICY; DELIBERATION; RISK; UK;
+   OPPOSITION; DEMOCRACY; TRUST; POWER
+AB It is commonly assumed that attitudes and behaviours need to be modified to secure a sustainable energy future. This paper examines insights from the social sciences in this extensive field. Alongside instruments such as regulation and economic measures, government campaigns have sought to 'educate' the public. However, such 'information deficit' models have been criticised on theoretical and pragmatic grounds. In the area of energy consumption, there is a need to take account of the physical, social, cultural and institutional contexts that shape and constrain people's choices, and for a richer understanding of opposition to energy facility siting, which has often been (inadequately) characterised as 'NIMBYism'. Recent work also points to the need for more deliberation and better communication between decision-makers, technical experts, other stakeholders and the public. Predicting future developments in the field is challenging but attention is likely to focus on aspects of policy learning, a more critical examination of the 'deliberative turn', and the need for a systemic approach to complex socio-economic and socio-technical systems. The consistency of government objectives across all policy spheres is likely to provide an important avenue for future research. (C) 2008 Queen's Printer and Controller of HMSO. Published by Elsevier Ltd. All rights reserved.
+C1 [Owens, Susan; Driffill, Louise] Univ Cambridge, Dept Geog, Cambridge CB2 3EN, England.
+RP Owens, S (reprint author), Univ Cambridge, Dept Geog, Downing Pl, Cambridge CB2 3EN, England.
+EM susan.owens@geog.cam.ac.uk
+FU ESRC postgraduate studentshipEconomic & Social Research Council (ESRC)
+FX The authors are grateful for the constructive comments of the referee,
+   and for the assistance of Gary Grubb and Victoria Crossley of ESRC in
+   relation to the appendix. When this paper was drafted, Louise Driffill
+   was in receipt of an ESRC postgraduate studentship, and is grateful for
+   this support. The views are those of the authors.
+CR Adams J., 1995, RISK
+   Bickerstaff K, 2008, PUBLIC UNDERST SCI, V17, P145, DOI 10.1177/0963662506066719
+   Blake J., 1999, LOCAL ENVIRON, V4, P257, DOI DOI 10.1080/13549839908725599
+   Bulkeley H, 1999, THESIS U CAMBRIDGE
+   Burgess J, 1998, ENVIRON PLANN A, V30, P1445, DOI 10.1068/a301445
+   Darier E., 1999, LOCAL ENVIRON, V4, P317, DOI [10.1080/13549839908725602, DOI 10.1080/13549839908725602]
+   *DEP BUS ENT REG R, 2007, 07706 URN DEP BUS EN
+   Devine-Wright H, 2004, J APPL PSYCHOL, V6, P167
+   Devine-Wright P., 2006, GOVERNANCE SUSTAINAB
+   Devine-Wright P, 2005, LOCAL ENVIRON, V10, P57, DOI 10.1080/1354983042000309315
+   DEVINEWRIGHT H, 2006, FUTURE ELECT TECHNOL
+   Devitt M, 2005, PHILOS STUD, V125, P139, DOI 10.1007/s11098-005-8221-y
+   Durning D, 1999, J POLICY ANAL MANAG, V18, P389, DOI 10.1002/(SICI)1520-6688(199922)18:3<389::AID-PAM4>3.0.CO;2-S
+   EDEN S, 1996, PUBLIC UNDERST SCI, V5, P183, DOI DOI 10.1088/0963-6625/5/3/001
+   EDEN SE, 1993, ENVIRON PLANN A, V25, P1743, DOI 10.1068/a251743
+   Ellis G., 2006, RENEWABLE ENERGY DIS
+   FISHER R, 1971, BASIC NEGOTIATING ST
+   FLYNN R, 2006, FORUM QUALITATIVE SO, V7
+   FOSTER J, 1997, VALUING NATURE EC ET
+   FREUDENBURG WR, 1992, J SOC ISSUES, V48, P39, DOI 10.1111/j.1540-4560.1992.tb01944.x
+   Gardner G., 1996, ENV PROBLEMS HUMAN B
+   Gregory R, 1971, PRICE AMENITY 5 STUD
+   Haggett C, 2006, PUBLIC ADMIN, V84, P103, DOI 10.1111/j.0033-3298.2006.00495.x
+   HAGGETT C, 2004, TILTING WINDMILLS AT
+   HERRING H, 2006, MACR REB EFF UK EC
+   Hinchliffe S, 1996, GLOBAL ENVIRON CHANG, V6, P53, DOI 10.1016/0959-3780(95)00113-1
+   Jackson T., 2005, MOTIVATING SUSTAINAB
+   JAEGER C, 1993, CLIMATIC CHANGE, V23, P193, DOI 10.1007/BF01091615
+   JASANOFF S, 2006, RISK SOC CULTURE PRE, P28
+   KEMP R, 1990, ENVIRON PLANN A, V22, P1239, DOI 10.1068/a221239
+   Levin G., 1993, ADVERTISING AGE, V64, P97
+   Lovell H., 2005, THESIS U CAMBRIDGE
+   Marvin S., 1999, Computers, Environment and Urban Systems, V23, P109, DOI 10.1016/S0198-9715(99)00011-3
+   McGOWAN F., 2005, PUBLIC OPINION ENERG
+   McKenzie-Mohr D, 2000, J SOC ISSUES, V56, P543, DOI 10.1111/0022-4537.00183
+   *OFF DEP PRIM MIN, 2004, PLANN POL STAT REN E
+   Owens S, 2000, ENVIRON PLANN A, V32, P1141, DOI 10.1068/a3330
+   Owens S, 2004, J RISK RES, V7, P101, DOI 10.1080/1366987042000158686
+   OWENS S, 1985, ENERG POLICY, V13, P546, DOI 10.1016/0301-4215(85)90005-9
+   Owens S, 2002, ENVIRON PLANN A, V34, P949, DOI 10.1068/a3406com
+   Owens S., 1995, TRANSPORT POLICY, V2, P43, DOI DOI 10.1016/0967-070X(95)93245-T
+   Owens S., 2002, LAND LIMITS INTERPRE
+   OWENS S, 1996, TRANSPORT ENV LINACR
+   Owens S, 1985, GEOGRAPHICAL DIMENSI, P225
+   Pelletier D, 1999, POLICY SCI, V32, P103, DOI 10.1023/A:1004641300366
+   Pellizzoni L, 2001, BRIT J SOCIOL, V52, P59, DOI 10.1080/00071310020023037
+   Petts J, 2008, GEOFORUM, V39, P593, DOI 10.1016/j.geoforum.2006.02.008
+   Poortinga W., 2006, 0602 U E ANGL SCH EN
+   Rein M, 1991, SOCIAL SCI MODERN ST, P262, DOI DOI 10.1017/CBO9780511983993
+   Sanders LM, 1997, POLIT THEORY, V25, P347, DOI 10.1177/0090591797025003002
+   Schon D.A., 1994, FRAME REFLECTION RES
+   Shackley S, 2005, CLIM POLICY, V4, P377, DOI 10.3763/cpol.2004.0428
+   SHOVE E, 1998, SOCIOLOGICAL THEORY, P230
+   Shrove E., 2003, J CONSUM POLICY, V26, P395, DOI DOI 10.1023/A:1026362829781
+   Sinclair P, 2001, BIOMASS BIOENERG, V21, P177, DOI 10.1016/S0961-9534(01)00020-4
+   SLOVIC P, 1993, RISK ANAL, V13, P675, DOI 10.1111/j.1539-6924.1993.tb01329.x
+   SORRELL S, 2007, REBOUND EFFECT ASSES
+   Stirling A., 2004, SCI CITIZENS GLOBALI
+   Thompson M, 1998, GOV OPPOS, V33, P330, DOI 10.1111/j.1477-7053.1998.tb00455.x
+   Thompson M, 1998, GOV OPPOS, V33, P139, DOI 10.1111/j.1477-7053.1998.tb00787.x
+   Thompson P.B., 1996, RISK HLTH SAFETY ENV, V7, P361
+   Upham P., 2006, Journal of Environmental Policy and Planning, V8, P45, DOI 10.1080/15239080600634144
+   VANVLIET B, 2004, SUSTAINABLE CONSUMPT
+   Webler T, 2001, ENVIRON MANAGE, V27, P435
+   WILHITE H, 2006, ENVIRON PLANN C, V24, P645
+   Wolsink M, 2006, T I BRIT GEOGR, V31, P85, DOI 10.1111/j.1475-5661.2006.00191.x
+NR 66
+TC 238
+Z9 241
+U1 3
+U2 105
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0301-4215
+J9 ENERG POLICY
+JI Energy Policy
+PD DEC
+PY 2008
+VL 36
+IS 12
+BP 4412
+EP 4418
+DI 10.1016/j.enpol.2008.09.031
+PG 7
+WC Economics; Energy & Fuels; Environmental Sciences; Environmental Studies
+SC Business & Economics; Energy & Fuels; Environmental Sciences & Ecology
+GA 383MZ
+UT WOS:000261679000024
+DA 2019-12-28
+ER

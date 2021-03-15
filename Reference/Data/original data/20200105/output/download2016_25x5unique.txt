@@ -1,0 +1,455 @@
+
+PT J
+AU Galariotis, EC
+   Makrichoriti, P
+   Spyrou, S
+AF Galariotis, Emilios C.
+   Makrichoriti, Panagiota
+   Spyrou, Spyros
+TI Sovereign CDS spread determinants and spill-over effects during
+   financial crisis: A panel VAR approach
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Financial crisis; CDS; Spreads; Panel VAR; Sentiment
+ID INVESTOR SENTIMENT; TERM STRUCTURE; BOND SPREADS; MARKET; RISK;
+   CONTAGION; VOLATILITY; LIQUIDITY; DEFAULT
+AB This paper examines the determinants of CDS spreads and potential spillover effects for Eurozone countries during the recent financial crisis in the EU. We employ a Panel Vector Autoregressive (PVAR) model which combines the advantages of traditional VAR modelling with those of a panel-data approach. In addition to variables that proxy for global and financial market spread determinants we also employ variables that proxy for behavioral determinants. We find that the determinants of CDS variance are neither uniform nor stable during different periods and different countries. For instance, as we move from 2008 to 2014 the impact of the slope of the term structure on CDS spread variance is increasing for peripheral countries such as Spain, Portugal, Italy, Greece, Ireland, and decreasing for core countries such as Germany, France, Netherlands, Belgium and Austria. Other findings indicate that investor sentiment was an important CDS spread determinant during the subprime crisis, along with other factors, while spillover effects run from larger peripheral economies such as Spain and Italy to core countries; spillover effects from Portugal, Greece, and Ireland are of minor importance. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Galariotis, Emilios C.] Inst Finance, Audencia Business Sch, Nantes, France.
+   [Makrichoriti, Panagiota; Spyrou, Spyros] Athens Univ Econ & Business, Dept Accounting & Finance, Patis 76, Athens 10434, Greece.
+RP Spyrou, S (reprint author), Athens Univ Econ & Business, Dept Accounting & Finance, Patis 76, Athens 10434, Greece.
+EM egalariotis@audencia.com; pmakrichoriti@aueb.gr; sspyrou@aueb.gr
+RI Galariotis, Emilios/B-7849-2018
+OI Galariotis, Emilios/0000-0002-8575-894X
+FU Research Centre at Athens University of Economics and Business (RC-AUEB)
+FX Spyros Spyrou acknowledges financial support from the Research Centre at
+   Athens University of Economics and Business (RC-AUEB).
+CR Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Ammer J, 2011, J INT FINANC MARK I, V21, P369, DOI 10.1016/j.intfin.2011.01.001
+   Anderson M., 2011, CONTAGION EXCESS COR
+   Andrews DWK, 2001, J ECONOMETRICS, V101, P123, DOI 10.1016/S0304-4076(00)00077-4
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Annaert J, 2013, J INT MONEY FINANC, V32, P444, DOI 10.1016/j.jimonfin.2012.05.029
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Baker M, 2004, J FINANC MARK, V7, P271, DOI 10.1016/j.finmar.2003.11.005
+   Baker M, 2006, J FINANC, V61, P1645, DOI 10.1111/j.1540-6261.2006.00885.x
+   Barbosa L., 2010, EC B, P131
+   Becker R, 2009, J BANK FINANC, V33, P1033, DOI 10.1016/j.jbankfin.2008.10.015
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   BERG A, 1988, J DEV ECON, V29, P271, DOI 10.1016/0304-3878(88)90046-6
+   Berndt A, 2010, REV FINANC, V14, P189, DOI 10.1093/rof/rfq004
+   Blommestein H, 2016, J FINANC STABIL, V22, P10, DOI 10.1016/j.jfs.2015.11.004
+   BOEHMER E, 1990, J FINANC, V45, P1517, DOI 10.2307/2328748
+   Bouvet F., 2013, SOC SCI, p[2, 318]
+   Broto C, 2015, J EMPIR FINANC, V32, P165, DOI 10.1016/j.jempfin.2015.03.010
+   Canova F, 2012, J ECON DYN CONTROL, V36, P1520, DOI 10.1016/j.jedc.2012.03.017
+   Canova F, 2009, INT ECON REV, V50, P929, DOI 10.1111/j.1468-2354.2009.00554.x
+   Caporale GM, 2013, J INT MONEY FINANC, V38, P84, DOI 10.1016/j.jimonfin.2013.05.002
+   Caporin M., 2013, 18741 NBER
+   Chiaramonte L, 2013, EUR J FINANC, V19, P861, DOI 10.1080/1351847X.2011.636832
+   Ciccarelli M., 2012, HETEROGENEITY CROSS
+   Claeys P., 2012, AQR WORKING PAPERS
+   Codogno L, 2003, ECON POLICY, P503
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   D'Agostino A, 2014, J BANK FINANC, V47, P155, DOI 10.1016/j.jbankfin.2014.06.001
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   de Castro F, 2008, J MACROECON, V30, P1005, DOI 10.1016/j.jmacro.2007.08.009
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Dieckmann S, 2012, REV FINANC, V16, P903, DOI 10.1093/rof/rfr015
+   Doshi H., 2014, EC FINANCIAL DETERMI
+   EDWARDS S, 1984, AM ECON REV, V74, P726
+   EDWARDS S, 1986, EUR ECON REV, V30, P565, DOI 10.1016/0014-2921(86)90009-7
+   Eichengreen B., 1998, NBER WORKING PAPERS, V6408
+   Eickmeier S., 2011, DP8720 CEPR
+   Ejsing J, 2011, ECON LETT, V110, P28, DOI 10.1016/j.econlet.2010.10.001
+   Estrella A, 2005, ECON J, V115, P722, DOI 10.1111/j.1468-0297.2005.01017.x
+   ESTRELLA A, 1991, J FINANC, V46, P555, DOI 10.2307/2328836
+   Fender I, 2012, J BANK FINANC, V36, P2786, DOI 10.1016/j.jbankfin.2012.06.017
+   Ferrucci G., 2003, 205 BANK ENGL
+   Fisher KL, 2003, J PORTFOLIO MANAGE, V30, P115, DOI 10.3905/jpm.2003.319925
+   Fontana A., 2010, 1271 ECB
+   Galariotis EC, 2015, J BANK FINANC, V50, P589, DOI 10.1016/j.jbankfin.2014.03.014
+   Galil K, 2014, J BANK FINANC, V41, P271, DOI 10.1016/j.jbankfin.2013.12.005
+   Georgoutsos DA, 2013, J BANK FINANC, V37, P4650, DOI 10.1016/j.jbankfin.2013.07.025
+   Gomez-Puig M, 2006, ECON LETT, V90, P156, DOI 10.1016/j.econlet.2005.07.020
+   Gross M., 2013, 1570 GVAR ECB
+   Grossmanna A, 2014, J INT FINANC MARK I, V33, P1, DOI 10.1016/j.intfin.2014.07.008
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   Haugh D., 2009, OECD EC DEP WORKING, V718
+   Heinz F., 2014, 1417 IMF
+   Hermosilo B., 2014, 1476 IMF
+   Hilscher J, 2010, REV FINANC, V14, P235, DOI 10.1093/rof/rfq005
+   Hull J., 2005, VALUATION CORRELATIO
+   Hund J., 2008, LIQUIDITY CREDIT RIS
+   Im KS, 2003, J ECONOMETRICS, V115, P53, DOI 10.1016/S0304-4076(03)00092-7
+   Kalbaska A, 2012, J ECON BEHAV ORGAN, V83, P657, DOI 10.1016/j.jebo.2012.05.010
+   Kassimatis K., 2008, INT REV FINANC ANAL, V17, P903
+   Kumar A, 2006, J FINANC, V61, P2451, DOI 10.1111/j.1540-6261.2006.01063.x
+   LONGSTAFF FA, 1995, J FINANC, V50, P789, DOI 10.2307/2329288
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Love I., 2015, ESTIMATION PAN UNPUB
+   Love I, 2006, Q REV ECON FINANC, V46, P190, DOI 10.1016/j.qref.2005.11.007
+   LUTKEPOHL H, 1991, ECONOMET THEOR, V7, P487, DOI 10.1017/S0266466600004722
+   McGuire Patrick, 2009, 291 BIS
+   Palladini G., 2011, 17586 NBER
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Pelizzon L., 2015, 95 SAFE
+   Peltonen TA, 2014, J FINANC STABIL, V13, P118, DOI 10.1016/j.jfs.2014.05.004
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Remolona E., 2008, J FIXED INCOME, P57, DOI DOI 10.3905/JFI.2008.705542
+   Rua A, 2002, EC B, P87
+   Shin HS, 2012, IMF ECON REV, V60, P155, DOI 10.1057/imfer.2012.6
+   Spyrou S, 2013, J ECON STUD, V40, P739, DOI 10.1108/JES-01-2012-0008
+   Zhu H., 2006, J FINANCIAL SERVICES, V29, P211, DOI DOI 10.1007/S10693-006-7626-X
+NR 77
+TC 10
+Z9 10
+U1 1
+U2 33
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD OCT
+PY 2016
+VL 26
+BP 62
+EP 77
+DI 10.1016/j.jfs.2016.08.005
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA EA6YN
+UT WOS:000386775200005
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Cont, R
+   Wagalath, L
+AF Cont, Rama
+   Wagalath, Lakshithe
+TI FIRE SALES FORENSICS: MEASURING ENDOGENOUS RISK
+SO MATHEMATICAL FINANCE
+LA English
+DT Article
+DE fire sales; financial contagion; feedback effects; price impact;
+   liquidity; diffusion approximation; diffusion models; correlations;
+   endogenous risk
+ID VOLATILITY; CONTAGION; CRASHES
+AB We propose a tractable framework for quantifying the impact of loss-triggered fire sales on portfolio risk, in a multi-asset setting. We derive analytical expressions for the impact of fire sales on the realized volatility and correlations of asset returns in a fire sales scenario and show that our results provide a quantitative explanation for the spikes in volatility and correlations observed during such deleveraging episodes. These results are then used to develop an econometric framework for the forensic analysis of fire sales episodes, using observations of market prices. We give conditions for the identifiability of model parameters from time series of asset prices, propose a statistical test for the presence of fire sales, and an estimator for the magnitude of fire sales in each asset class. Pathwise consistency and large sample properties of the estimator are studied in the high-frequency asymptotic regime. We illustrate our methodology by applying it to the forensic analysis of two recent deleveraging episodes: the Quant Crash of August 2007 and the Great Deleveraging following the default of Lehman Brothers in Fall 2008.
+C1 [Cont, Rama] Univ Paris 06, CNRS, Paris, France.
+   [Wagalath, Lakshithe] CNRS, LEM, IESEG Sch Management, F-75700 Paris, France.
+RP Cont, R (reprint author), Univ Paris VI, CNRS, UMR 7599, Lab Probabil & Modeles Aleatoires, F-75252 Paris 05, France.
+EM rama.cont@upmc.fr
+OI CONT, Rama/0000-0003-1164-6053
+FU Economic and Social Research CouncilEconomic & Social Research Council
+   (ESRC) [ES/K002309/1]
+CR Andersen TG, 2003, ECONOMETRICA, V71, P579, DOI 10.1111/1468-0262.00418
+   ANTON M., 2008, WORKING PAPER
+   Bailey N., 2012, WORKING PAPER
+   Barndorff-Nielsen OE, 2004, ECONOMETRICA, V72, P885, DOI 10.1111/j.1468-0262.2004.00515.x
+   Bouchaud JP, 1998, EUR PHYS J B, V6, P543, DOI 10.1007/s100510050582
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Brunnermeier MK, 2005, J FINANC, V60, P1825, DOI 10.1111/j.1540-6261.2005.00781.x
+   CARLSON M., 2006, 13 FEDS
+   Cont R, 2014, J FINANC ECONOMET, V12, P47, DOI 10.1093/jjfinec/nbt003
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   Da Fonseca J, 2008, QUANT FINANC, V8, P591, DOI 10.1080/14697680701668418
+   Danielsson J, 2004, J BANK FINANC, V28, P1069, DOI 10.1016/S0378-4266(03)00113-4
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Ethier S.N., 1986, MARKOV PROCESSES CHA
+   Fielding E., 2011, J INVEST MANAGE, V9, P17
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Fratzscher M, 2012, J INT ECON, V88, P341, DOI 10.1016/j.jinteco.2012.05.003
+   GENNOTTE G, 1990, AM ECON REV, V80, P999
+   Gourieroux C, 2009, J ECONOMETRICS, V150, P167, DOI 10.1016/j.jeconom.2008.12.016
+   Greenwood R, 2011, J FINANC ECON, V102, P471, DOI 10.1016/j.jfineco.2011.06.003
+   Ikeda N., 1981, STOCHASTIC DIFFERENT
+   Jacod J, 2012, STOCH MOD APPL PROBA, V67, P3, DOI 10.1007/978-3-642-24127-7_1
+   Jotikasthira C, 2012, J FINANC, V67, P2015, DOI 10.1111/j.1540-6261.2012.01780.x
+   Khandani AE, 2011, J FINANC MARK, V14, P1, DOI 10.1016/j.finmar.2010.07.005
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Obizhaeva A., 2011, WORKING PAPER
+   Ozdenoren E, 2008, J FINANC, V63, P1939, DOI 10.1111/j.1540-6261.2008.01378.x
+   Pedersen LH, 2009, INT J CENT BANK, V5, P177
+   Shin H, 2010, RISK AND LIQUIDITY
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Stelzer R, 2010, BERNOULLI, V16, P80, DOI 10.3150/09-BEJ196
+NR 34
+TC 23
+Z9 26
+U1 0
+U2 13
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0960-1627
+EI 1467-9965
+J9 MATH FINANC
+JI Math. Financ.
+PD OCT
+PY 2016
+VL 26
+IS 4
+BP 835
+EP 866
+DI 10.1111/mafi.12071
+PG 32
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA EJ3QJ
+UT WOS:000393126400004
+DA 2019-12-27
+ER
+
+PT J
+AU Bordo, MD
+   McCauley, RN
+AF Bordo, Michael D.
+   McCauley, Robert N.
+TI The Current Account Version of the Triffin Dilemma
+SO ATLANTIC ECONOMIC JOURNAL
+LA English
+DT Article
+DE Triffin dilemma; US current account; Exorbitant privilege; Foreign
+   exchange reserves
+ID DOLLAR
+AB This article reviews the most popular restatement of the Triffin dilemma. It holds that the United States must run current accounts to permit the rest of the world to accumulate dollar reserves but doing so undermines the U.S. solvency. While the original Triffin dilemma pointed to a clear moment of systemic instability, the current account version points to a more amorphous risk of an unbounded rise in U.S. net international liabilities. The empirical work reviewed suggests that savings-investment fundamentals predict narrower U.S. current account deficits than those observed. However, the link to the reserve currency role of the dollar, rather than the U.S. economy's size or the depth of its financial markets, remains to be convincingly made. Under the circumstances, the proposition that the future of the renminbi as a reserve currency depends on China's running current account deficits rather than current account surpluses should not be accepted.
+C1 [Bordo, Michael D.] Rutgers State Univ, Dept Econ, 75 Hamilton St, New Brunswick, NJ 08901 USA.
+   [McCauley, Robert N.] Bank Int Settlements, Monetary & Econ Dept, Cent Bahnpl 2, CH-4002 Basel, Switzerland.
+RP McCauley, RN (reprint author), Bank Int Settlements, Monetary & Econ Dept, Cent Bahnpl 2, CH-4002 Basel, Switzerland.
+EM bordo@econ.rutgers.edu; Robert.McCauley@bis.org
+CR Avdjiev S., 2016, ECONOMIC PO IN PRESS
+   Balakrishnan R, 2009, IMF STAFF PAPERS, V56, P410, DOI 10.1057/imfsp.2009.11
+   Bordo M., 2016, TRIFFIN DILEMM UNPUB
+   Bordo MD, 1993, RETROSPECTIVE BRETTO, P3
+   Borio C., 2016, J INT MONEY IN PRESS
+   Bruno V, 2015, J MONETARY ECON, V71, P119, DOI 10.1016/j.jmoneco.2014.11.011
+   Bruno V, 2015, REV ECON STUD, V82, P535, DOI 10.1093/restud/rdu042
+   Bruno Valentina, 2015, 510 BIS
+   Camdessus M., 2011, REFORM INT MONETARY, P75
+   Chinn MD, 2007, J INT MONEY FINANC, V26, P546, DOI 10.1016/j.jimonfin.2007.03.006
+   Chinn MD, 2014, OXFORD ECON PAP, V66, P465, DOI 10.1093/oep/gpt027
+   Cohen BJ, 2012, OPEN ECON REV, V23, P13, DOI 10.1007/s11079-011-9216-2
+   Curcuru SE, 2013, J INT MONEY FINANC, V36, P1, DOI 10.1016/j.jimonfin.2013.02.002
+   Debelle G., 1996, WP9658 IMF
+   Disyatat P., 2015, 525 BIS
+   Dooley MP, 2004, INT J FINANC ECON, V9, P307, DOI 10.1002/ijfe.250
+   Eichengreen B, 2011, EXORBITANT PRIVILEGE
+   Feldstein M, 2013, J ECON PERSPECT, V27, P105, DOI 10.1257/jep.27.4.105
+   Fratianni M, 2012, OPEN ECON REV, V23, P1, DOI 10.1007/s11079-011-9237-x
+   Gagnon J., 2012, BIS PAPERS CHAPTERS, V66, P168
+   Gagnon Joseph, 2013, 132 PET I INT EC
+   Garber Peter M., 1993, RETROSPECTIVE BRETTO, P461
+   Gourinchas PO, 2014, HBK ECON, P585, DOI 10.1016/B978-0-444-54314-1.00010-0
+   Gruber JW, 2007, J INT MONEY FINANC, V26, P500, DOI 10.1016/j.jimonfin.2007.03.003
+   Heath A, 2007, 223 BIS
+   International Monetary Fund, 2015, AUSTR 2015 ART 4 CON
+   International Monetary Fund, 2015, REV METH VAL SDR IN
+   Jeanne O, 2012, J INT MONEY FINANC, V31, P1976, DOI 10.1016/j.jimonfin.2012.05.012
+   Krugman P., 2007, ECON POLICY, V22, P436, DOI [10.1111/j.1468-0327.2007.00183.x, DOI 10.1111/J.1468-0327.2007.00183.X]
+   McCauley R., 2005, BIS Q REV        SEP, P57
+   McCauley R. N., 2011, BIS PAPERS, V58, P19
+   McCauley RN, 2015, J INT MONEY FINANC, V57, P1, DOI 10.1016/j.jimonfin.2015.06.005
+   McCauley RN, 2015, ECON POLICY, V30, P189, DOI 10.1093/epolic/eiv001
+   Obstfeld M, 2005, BROOKINGS PAP ECO AC, P67
+   Portes R., 2012, SEARCH NEW WORLD MON, P195
+   Prasad E, 2013, DOLLAR TRAP US DOLLA
+   Setser B, 2005, FOREIGN AFF, V84, P194, DOI 10.2307/20034431
+   Steiner A, 2014, J INT MONEY FINANC, V41, P65, DOI 10.1016/j.jimonfin.2013.10.005
+   SUMMERS LH, 2004, US CURRENT ACCOUNT D
+   Swoboda A., 2012, SEARCH NEW WORLD MON, P201
+   Tille C., 2003, CURRENT ISSUES EC FI, V9, P1
+   Triffin R., 1960, GOLD DOLLAR CRISIS F
+   Zhou X., 2009, REFORM INT MONETARY
+NR 43
+TC 1
+Z9 1
+U1 1
+U2 2
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0197-4254
+EI 1573-9678
+J9 ATLANTIC ECON J
+JI Atl. Econ. J.
+PD JUN
+PY 2016
+VL 44
+IS 2
+BP 171
+EP 182
+DI 10.1007/s11293-016-9499-1
+PG 12
+WC Economics
+SC Business & Economics
+GA FF2XX
+UT WOS:000408761200003
+DA 2019-12-28
+ER
+
+PT J
+AU Kleinow, J
+   Moreira, F
+AF Kleinow, Jacob
+   Moreira, Fernando
+TI Systemic risk among European banks: A copula approach
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article; Proceedings Paper
+CT Systemic Risk Tomography Conference
+CY 2015
+CL Amsterdam, NETHERLANDS
+DE SIFT; Copula; Interconnectedness; Bailout; Default; CDS; Europe;
+   Contagion
+ID DETERMINANTS; CONTAGION; TESTS
+AB This paper investigates the drivers of systemic risk and contagion among European banks. First, we use copulas to estimate the systemic risk contribution and systemic risk sensitivity based on CDS spreads of European banks from 2005 to 2014. We then run panel regressions for our systemic risk measures using idiosyncratic bank characteristics and country control variables. Our results comprise highly significant drivers of systemic risk in the European banking sector and have important implications for bank regulation. We argue that banks which receive state aid and have risky loan portfolios as well as low amounts of available liquid funds contribute most to systemic risk, whereas relatively poorly equity equipped banks, mainly engaged in traditional commercial banking with strong ties to the local private sector, headquartered in highly indebted countries are most sensitive to systemic risk. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Kleinow, Jacob] Tech Univ Bergakad Freiberg, Dept Finance, D-09599 Freiberg, Germany.
+   [Moreira, Fernando] Univ Edinburgh, Sch Business, Business Econ, 29 Buccleuch Pl, Edinburgh EH8 9JS, Midlothian, Scotland.
+RP Moreira, F (reprint author), Univ Edinburgh, Sch Business, Business Econ, 29 Buccleuch Pl, Edinburgh EH8 9JS, Midlothian, Scotland.
+EM Fernando.Moreira@ed.ac.uk
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya V., 2004, 4098 CEPR
+   Acharya Viral V., 2011, MEASURING SYSTEMIC R
+   Adrian T., 2011, NBER WORKING PAPERS
+   [Anonymous], 2013, GLOB SYST IMP BANKS
+   Bagehot W., 1873, LOMBARD STREET DESCR
+   Berg D, 2009, EUR J FINANC, V15, P675, DOI 10.1080/13518470802697428
+   Berger R. L., 2008, STAT INFERENCE
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Black L., 2013, INT FINANCE DISCUSSI
+   Bluhm C., 2010, INTRO CREDIT RISK MO
+   Bori N., 2012, CASMEF WORKING PAPER
+   Brousseau V., 2012, IMF WORKING PAPER
+   Brownlees C., 2012, WORKING PAPER
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Buhler W., 2010, WORKING PAPER
+   Chan-Lau J.A., 2006, WP06104 IMF
+   Chan-Lau J. A., 2010, FINANC MKTS I INSTRU, V19, P355, DOI DOI 10.2139/SSRN.1995499)
+   Chan-Lau JA, 2013, SYSTEMIC RISK ASSESS
+   Conrad J., 2012, CROSS MARKET CROSS F
+   Crouhy M., 2014, ESSENTIALS RISK MANA
+   Czado C, 2010, LECT NOTES STAT, P93
+   de Mendonca HF, 2013, ECON MODEL, V33, P605, DOI 10.1016/j.econmod.2013.05.001
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Driscoll JC, 1998, REV ECON STAT, V80, P549, DOI 10.1162/003465398557825
+   Duffle D., 1999, FINANCIAL ANAL J, P73, DOI DOI 10.2469/FAJ.V55.N1.2243
+   Dungey M., 2012, 201208 U TASM SCH EC
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Engle R., 2014, REV FINANC, P1
+   Flannery MJ, 2013, J FINANC INTERMED, V22, P55, DOI 10.1016/j.jfi.2012.08.001
+   Genest C, 2009, INSUR MATH ECON, V44, P199, DOI 10.1016/j.insmatheco.2007.10.005
+   GROSSMAN SJ, 1981, AM ECON REV, V71, P222
+   HAUSMAN JA, 1978, ECONOMETRICA, V46, P1251, DOI 10.2307/1913827
+   Hautsch N, 2014, INT J FORECASTING, V30, P781, DOI 10.1016/j.ijforecast.2013.09.004
+   Hull J., 2000, J DERIV, V8, P29, DOI DOI 10.3905/J0D.2000.319115)
+   Hull John, 2013, J INVESTMENT MANAGEM, V11, P14
+   Jankowitsch R, 2014, J FINANC ECON, V114, P155, DOI 10.1016/j.jfineco.2014.06.001
+   Jobst A., 2013, 1354 IMF
+   Joe Harry, 2014, DEPENDENCE MODELING
+   KMV, 1987, PROB LOSS LOAN PORTF
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Morgan J., 1997, CREDITMETRICS TECHNI
+   Murcia A., 2013, ODEON, V7, P127
+   Nelsen R.B., 2006, INTRO COPULAS
+   Oh D.H., 2013, WORKING PAPER
+   Perotti E. C., 2011, 11188 IMF, V11
+   Philippas D, 2013, J INT FINANC MARK I, V27, P161, DOI 10.1016/j.intfin.2013.09.008
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Sarbu S., 2013, MARKET EXPECTATIONS
+   Skeie D., 2014, FEDERAL RESERVE BANK
+   Steffen S., 2014, HDB SYSTEMIC RISK, V37
+   Vallascas F, 2012, J INT MONEY FINANC, V31, P1745, DOI 10.1016/j.jimonfin.2012.03.011
+   Varotto S., 2014, SYSTEMIC RISK US EUR
+   Weiss GNF, 2014, J BANK FINANC, V41, P78, DOI 10.1016/j.jbankfin.2014.01.001
+NR 56
+TC 5
+Z9 5
+U1 0
+U2 25
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD MAY
+PY 2016
+VL 42
+BP 27
+EP 42
+DI 10.1016/j.intfin.2016.01.002
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA DK7SH
+UT WOS:000375125500002
+DA 2019-12-28
+ER
+
+PT J
+AU Makela, E
+AF Makela, Erik
+TI The price of the euro: evidence from sovereign debt markets
+SO APPLIED ECONOMICS
+LA English
+DT Article
+DE Synthetic control method; monetary union; sovereign risk; government
+   bond yield; F34; E42; G15
+ID CRISIS; CONTAGION; RISK
+AB The objective of this article is to ascertain how the Economic and Monetary Union (EMU) in Europe has affected its members' long-term government bond yields. In order to estimate the effect, this article utilizes a synthetic control approach. The main finding is that the majority of the member countries did not receive economic gains from the EMU in sovereign debt markets. Synthetic counterfactual analysis finds strong evidence that Austria, Belgium, Finland, France and the Netherlands have paid a positive and substantial euro-premium in their 10-year government bonds since the adoption of the single currency. After the most recent financial crisis, government bond yields have been higher in all member countries compared to the situation that would have occurred without the monetary unification. This article concludes that from the viewpoint of sovereign borrowing, it would be beneficial for a country to maintain its own currency and monetary policy.
+C1 [Makela, Erik] Univ Turku, Dept Econ, Turku 20014, Finland.
+RP Makela, E (reprint author), Univ Turku, Dept Econ, Turku 20014, Finland.
+EM erik.makela@utu.fi
+CR Abadie A, 2003, AM ECON REV, V93, P113, DOI 10.1257/000282803321455188
+   Abadie A, 2015, AM J POLIT SCI, V59, P495, DOI 10.1111/ajps.12116
+   Abadie A, 2010, J AM STAT ASSOC, V105, P493, DOI 10.1198/jasa.2009.ap08746
+   Alesina A., 1992, ECON POLICY, V15, P427, DOI DOI 10.2307/1344548
+   Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P639, DOI 10.1016/j.jimonfin.2011.10.006
+   Billmeier A, 2013, REV ECON STAT, V95, P983, DOI 10.1162/REST_a_00324
+   Candelon B, 2010, ECONOMIST-NETHERLAND, V158, P81, DOI 10.1007/s10645-010-9138-1
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   Hallerberg M, 2008, PUBLIC CHOICE, V136, P379, DOI 10.1007/s11127-008-9301-2
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Ureche-Rangau L, 2013, ECON MODEL, V35, P35, DOI 10.1016/j.econmod.2013.06.026
+NR 13
+TC 0
+Z9 0
+U1 0
+U2 2
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0003-6846
+EI 1466-4283
+J9 APPL ECON
+JI Appl. Econ.
+PD OCT
+PY 2016
+VL 48
+IS 47
+BP 4510
+EP 4525
+DI 10.1080/00036846.2016.1161714
+PG 16
+WC Economics
+SC Business & Economics
+GA DU9KY
+UT WOS:000382537200003
+DA 2019-12-27
+ER

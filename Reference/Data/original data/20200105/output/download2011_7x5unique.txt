@@ -1,0 +1,524 @@
+
+PT J
+AU Winn, MI
+   Kirchgeorg, M
+   Griffiths, A
+   Linnenluecke, MK
+   Gunther, E
+AF Winn, Monika I.
+   Kirchgeorg, Manfred
+   Griffiths, Andrew
+   Linnenluecke, Martina K.
+   Guenther, Elmar
+TI Impacts from Climate Change on Organizations: a Conceptual Foundation
+SO BUSINESS STRATEGY AND THE ENVIRONMENT
+LA English
+DT Article
+DE climate change impact; hyperturbulence; environmental uncertainty;
+   organizational resilience; organizational adaptation; sustainable
+   development
+ID SUSTAINABLE DEVELOPMENT; UNCERTAINTY; RESILIENCE; COMPLEXITY;
+   MANAGEMENT; EQUILIBRIUM; EXPLORATION; PERSPECTIVE; ENVIRONMENT;
+   MULTILEVEL
+AB Physical impacts from climate change already pose major challenges for organizations, and the trend is rising. Organization theorists, however, have barely begun to systematically consider the organizational impacts of more and increasingly intense storms, floods, droughts, fires, sea level rise or changing growing seasons as part of their domain of study. Eight organizationally relevant dimensions of climate impacts are identified: severity, temporal scale, spatial scale, predictability, mode, immediacy, state change potential and accelerating trend potential. Combined, their scale, scope and systemic uncertainty suggest future conditions of systemic hyperturbulence in organizational environments, defined here as 'massive discontinuous change' (MDC). To build a conceptual foundation for organizations to respond and adapt to MDC, the paper examines contributions from literatures on the management of sustainability, crisis, risk, resilience and adaptive organizational change. It highlights gaps for addressing both business challenges and opportunities from MDC, and suggests avenues for future research. Copyright (C) 2010 John Wiley & Sons, Ltd and ERP Environment.
+C1 [Winn, Monika I.] Univ Victoria, Fac Business, Victoria, BC V8W 2Y2, Canada.
+   [Kirchgeorg, Manfred; Guenther, Elmar] HHL Leipzig Grad Sch Management, Leipzig, Germany.
+   [Griffiths, Andrew; Linnenluecke, Martina K.] Univ Queensland, UQ Business Sch, Brisbane, Qld, Australia.
+RP Winn, MI (reprint author), Univ Victoria, Fac Business, POB 1700, Victoria, BC V8W 2Y2, Canada.
+EM miwinn@uvic.ca
+RI Linnenluecke, Martina/J-7237-2013
+OI Linnenluecke, Martina/0000-0001-7984-9717
+CR Adams J., 1995, RISK
+   Adger WN, 2000, PROG HUM GEOG, V24, P347, DOI 10.1191/030913200701540465
+   Agarwal R, 2009, ORGAN SCI, V20, P281, DOI 10.1287/orsc.1090.0423
+   Alley RB, 2003, SCIENCE, V299, P2005, DOI 10.1126/science.1081056
+   Amendola A, 2008, NAT HAZARDS, V44, P163, DOI 10.1007/s11069-007-9152-z
+   Ansoff H.I, 1976, Z BETRIEBSWIRT, V28, P129
+   Asian Development Bank, 2005, PAC STUD SER
+   Banerjee SB, 2003, ORGAN STUD, V24, P143, DOI 10.1177/0170840603024001341
+   Bansal P, 2006, ORGAN ENVIRON, V19, P458, DOI 10.1177/1086026606294957
+   Bazerman MH, 2006, CLIMATIC CHANGE, V77, P179, DOI 10.1007/s10584-006-9058-x
+   Berkhout F, 2006, CLIMATIC CHANGE, V78, P135, DOI 10.1007/s10584-006-9089-3
+   Brooks N, 2003, 38 TYND CTR CLIM CHA
+   Brown SL, 1997, ADMIN SCI QUART, V42, P1, DOI 10.2307/2393807
+   Christensen Clayton, 1997, INNOVATORS DILEMMA
+   Christensen CM, 2006, J PROD INNOVAT MANAG, V23, P39, DOI 10.1111/j.1540-5885.2005.00180.x
+   Christensen CM, 2000, HARVARD BUS REV, V78, P66
+   Cohen B, 2007, J BUS VENTURING, V22, P29, DOI 10.1016/j.jbusvent.2004.12.001
+   Davis JP, 2007, ACAD MANAGE REV, V32, P480
+   Denman KL, 2007, CLIMATE CHANGE 2007: THE PHYSICAL SCIENCE BASIS, P499
+   DESS GG, 1984, ADMIN SCI QUART, V29, P52, DOI 10.2307/2393080
+   Downing TE, 2001, VULNERABILITY INDICE
+   Drucker P. F., 1969, AGE DISCONTINUITY GU
+   Eisenhardt KM, 1998, LONG RANGE PLANN, V31, P786, DOI 10.1016/S0024-6301(98)00092-2
+   EMERY FE, 1965, HUM RELAT, V18, P21, DOI 10.1177/001872676501800103
+   Floyd SW, 2000, ACAD MANAGE REV, V25, P154, DOI 10.2307/259268
+   Folke C, 2006, GLOBAL ENVIRON CHANG, V16, P253, DOI 10.1016/j.gloenvcha.2006.04.002
+   Folke C, 2009, GLOBAL ENVIRON CHANG, V19, P1, DOI 10.1016/j.gloenvcha.2008.06.007
+   Garnaut R., 2008, GARNAUT CLIMATE CHAN
+   GERSICK CJG, 1991, ACAD MANAGE REV, V16, P10, DOI 10.2307/258605
+   Gibson CB, 2004, ACAD MANAGE J, V47, P209, DOI 10.2307/20159573
+   Gifford R, 2009, J ENVIRON PSYCHOL, V29, P1, DOI 10.1016/j.jenvp.2008.06.001
+   GLADWIN TN, 1995, ACAD MANAGE REV, V20, P874, DOI 10.2307/258959
+   Glaesser D., 2003, CRISIS MANAGEMENT TO
+   Goodall AH, 2008, J MANAGE INQUIRY, V17, P408, DOI 10.1177/1056492607311930
+   Gunderson L.H., 2002, PANARCHY UNDERSTANDI
+   Gunther E., 2009, KLIMAWANDEL RESILIEN
+   Hamilton JM, 2005, CLIM RES, V29, P245, DOI 10.3354/cr029245
+   Hart SL, 2003, ACAD MANAGE EXEC, V17, P56, DOI 10.5465/AME.2003.10025194
+   HART SL, 1995, ACAD MANAGE REV, V20, P986, DOI 10.2307/258963
+   Hatfield J, 2001, J ENVIRON PSYCHOL, V21, P17, DOI 10.1006/jevp.2000.0190
+   HAY J, 2002, UNDP EXP GROUP M HAV
+   Heal G, 2002, ENVIRON RESOUR ECON, V22, P3, DOI 10.1023/A:1015556632097
+   Hegerl GC, 2007, CLIMATE CHANGE 2007: THE PHYSICAL SCIENCE BASIS, P663
+   Heml P, 1996, TEPHRA, V15, P4
+   HOFFMAN A, 2006, GETTING AHEAD CURVE
+   Hoffmann VH, 2009, GLOBAL ENVIRON CHANG, V19, P256, DOI 10.1016/j.gloenvcha.2008.12.002
+   Holling CS, 2001, ECOSYSTEMS, V4, P390, DOI 10.1007/s10021-001-0101-5
+   Huber G. P., 1993, ORG CHANGE REDESIGN
+   Jones R. N., 2007, Mitigation and Adaptation Strategies for Global Change, V12, P685, DOI 10.1007/s11027-007-9094-5
+   Jones RN, 2000, CLIMATIC CHANGE, V45, P403, DOI 10.1023/A:1005551626280
+   Jones RN, 2001, NAT HAZARDS, V23, P197, DOI 10.1023/A:1011148019213
+   KING A, 1995, ACAD MANAGE REV, V20, P961, DOI 10.2307/258962
+   Kirchgeorg M, 2006, BUSINESS STRATEGY EN, V15, P171, DOI DOI 10.1002/BSE.523
+   Kolk A, 2001, EUROPEAN MANAGEMENT, V19, P501, DOI DOI 10.1016/S0263-2373(01)00064-0
+   Korhonen J., 2008, BUSINESS STRATEGY EN, V17, P411, DOI DOI 10.1002/BSE.635
+   Kovoor-Misra S, 2000, TECHNOL FORECAST SOC, V63, P43, DOI 10.1016/S0040-1625(99)00049-9
+   LaPorte T., 2007, J CONTING CRISIS MAN, V15, P60
+   Lash J, 2007, HARVARD BUS REV, V85, P94
+   Lemmen D.S., 2008, IMPACTS ADAPTATION C
+   LEVINTHAL DA, 1993, STRATEGIC MANAGE J, V14, P95, DOI 10.1002/smj.4250141009
+   LEVITT B, 1988, ANNU REV SOCIOL, V14, P319, DOI 10.1146/annurev.so.14.080188.001535
+   Linnenluecke M. K., 2008, ANN M AC MAN AN CA
+   Majchrzak A, 2007, ORGAN SCI, V18, P147, DOI 10.1287/orsc.1060.0228
+   March JG, 1991, ORGAN SCI, V2, P71, DOI 10.1287/orsc.2.1.71
+   Martin N, 2010, BUS STRATEG ENVIRON, V19, P64, DOI 10.1002/bse.661
+   MCCANN JE, 1984, ACAD MANAGE REV, V9, P460, DOI 10.2307/258286
+   MEA, 2005, LIV OUR MEANS NAT AS
+   Meehl GA, 2007, CLIMATE CHANGE 2007: THE PHYSICAL SCIENCE BASIS, P747
+   Meffert H., 1998, MARKTORIENTIERTES UM
+   Mehr R. I., 1974, RISK MANAGEMENT CONC
+   MEYER AD, 1982, ADMIN SCI QUART, V27, P515, DOI 10.2307/2392528
+   Meyer AD, 2005, ORGAN SCI, V16, P456, DOI 10.1287/orsc.1050.0135
+   Meyer AD, 1993, ORG CHANGE REDESIGN, P66
+   MILLIKEN FJ, 1987, ACAD MANAGE REV, V12, P133, DOI 10.2307/257999
+   Mitroff I. I., 1996, ESSENTIAL GUIDE MANA
+   Mitroff I. I., 1993, CRISIS MANAGEMENT
+   MITROFF II, 1994, CALIF MANAGE REV, V36, P101, DOI 10.2307/41165747
+   Mitroff II, 1987, ACAD MANAGEMENT EXEC, V1, P283, DOI DOI 10.5465/AME.1987.4275639
+   Munich Re, 2003, TOPICS GEO 2003
+   MUNICH RE, 2009, TOPICS GEONATURAL CA
+   National Academy of Sciences, 2009, EC IMP CLIM CHANG
+   O'Brien G, 2006, DISASTERS, V30, P64, DOI 10.1111/j.1467-9523.2006.00307.x
+   Paton D, 2000, DISASTER PREVENTION, V9, P173, DOI DOI 10.1108/09653560010335068
+   Pearson C. M., 1993, ACAD MANAGEMENT EXEC, V7, P48, DOI DOI 10.5465/AME.1993.9409142058
+   Pearson CM, 1998, ACAD MANAGE REV, V23, P59, DOI 10.2307/259099
+   Prato T, 2007, MITIGATION ADAPTATIO, V13, P47
+   Prins G., 2007, WRONG TROUSERS RADIC
+   PURSER RE, 1995, ACAD MANAGE REV, V20, P1053, DOI 10.2307/258965
+   Quarantelli E. L., 1985, ORG BEHAV DISASTERS
+   Quarantelli E.L., 1997, DISASTER PREVENTION, V6, P94, DOI DOI 10.1108/09653569710164053
+   RAHMSTORF S, 1995, NATURE, V378, P145, DOI 10.1038/378145a0
+   Roberts KH, 1989, IND CRISIS Q, V3, P111, DOI DOI 10.1177/108602668900300202
+   Rosenoer J., 2007, HARVARD BUS REV, V87, P26
+   Rosenzweig C, 2008, NATURE, V453, P353, DOI 10.1038/nature06937
+   Santos FA, 2005, ORGAN SCI, V16, P491, DOI 10.1287/orsc.1050.0152
+   Scheffer M, 2001, NATURE, V413, P591, DOI 10.1038/35098000
+   Schwartz P., 2003, ABRUPT CLIMATE CHANG
+   Schwartz P, 2007, HARVARD BUS REV, V85, P26
+   Sheffi Y., 2005, RESILIENT ENTERPRISE
+   SHRIVASTAVA P, 1995, ACAD MANAGE REV, V20, P118, DOI 10.2307/258889
+   Shrivastava P., 1993, ORG ENV, V71, P23
+   SMART C, 1984, STRATEGIC MANAGE J, V5, P199, DOI 10.1002/smj.4250050302
+   Solomon S, 2007, CLIMATE CHANGE 2007: THE PHYSICAL SCIENCE BASIS, P19
+   STACEY RD, 1995, STRATEGIC MANAGE J, V16, P477, DOI 10.1002/smj.4250160606
+   STARIK M, 1995, ACAD MANAGE REV, V20, P908, DOI 10.2307/258960
+   Stern N., 2006, EC CLIMATE CHANGE ST
+   Suder GGS, 2004, TERRORISM AND THE INTERNATIONAL BUSINESS ENVIRONMENT: THE SECURITY-BUSINESS NEXUS, P1
+   THIETART RA, 1995, ORGAN SCI, V6, P19, DOI 10.1287/orsc.6.1.19
+   Timmerman P, 1981, VULNERABILITY RESILI
+   Tol RSJ, 1998, GLOBAL ENVIRON CHANG, V8, P109, DOI 10.1016/S0959-3780(98)00004-1
+   Trenberth KE, 2007, CLIMATE CHANGE 2007: THE PHYSICAL SCIENCE BASIS, P235
+   TUSHMAN ML, 1986, ADMIN SCI QUART, V31, P439, DOI 10.2307/2392832
+   Walker B, 2004, ECOL SOC, V9
+   Waugh Jr W.L., 2000, LIVING HAZARDS DEALI
+   Way M, 2007, HARVARD BUS REV, V85, P42
+   WESTLEY F, 2002, PANARCHY UNDERSTANDI, P333
+   Wilbanks T., 2007, CLIMATE CHANGE 2007, P357
+   Willows RI, 2003, CLIMATE ADAPTATION R
+   WINN MI, 2005, MANAGEMENT AD HOC KR, P245
+   Winn MI, 2005, CORPORATE ENVIRONMENTAL STRATEGY AND COMPETITIVE ADVANTAGE, P232
+NR 120
+TC 102
+Z9 102
+U1 0
+U2 56
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0964-4733
+EI 1099-0836
+J9 BUS STRATEG ENVIRON
+JI Bus. Strateg. Environ.
+PD MAR
+PY 2011
+VL 20
+IS 3
+BP 157
+EP 173
+DI 10.1002/bse.679
+PG 17
+WC Business; Environmental Studies; Management
+SC Business & Economics; Environmental Sciences & Ecology
+GA 752ZO
+UT WOS:000289734200002
+DA 2019-12-28
+ER
+
+PT J
+AU Pirson, M
+   Turnbull, S
+AF Pirson, Michael
+   Turnbull, Shann
+TI Corporate Governance, Risk Management, and the Financial Crisis: An
+   Information Processing View
+SO CORPORATE GOVERNANCE-AN INTERNATIONAL REVIEW
+LA English
+DT Article
+DE Corporate Governance; Board of Director Mechanisms; Governance
+   Environments; Corporate Governance Theories
+ID NETWORKS
+AB Manuscript Type: Perspective
+   Research Question/Issue: What were the reasons for poor risk management on the board level before and during the financial crisis? Were there systemic information processing problems that an alternative board design could alleviate?
+   Research Findings/Insights: Using an information processing perspective, we identify two reasons for boards failing to manage risk well during the financial crisis: (1) board members did not have access to relevant information on the risks management incurred because they had no control over information supply; and (2) board members were unable to process the available risk-related information, and lacked incentives or power to influence managerial decision making. Based on insights from cybernetics and decision making theory, we suggest increasing board level information processing and decision making capabilities by including multiple boards for different stakeholders to create a division of power and labor. We label this alternative structure network governance and posit that it allows superior risk management.
+   Theoretical/Academic Implications: The paper illustrates that the unitary board structure's systemic shortcomings increase the likelihood of poor risk management at the board level. The solutions proposed are an important theoretical advancement of the discussion on ongoing board failure in increasingly complex business environments.
+   Practitioner/Policy Implications: This paper is one of few providing actual recommendations based on a systemic insight. Enlightened shareholders and/or managers could introduce network governance by amending corporate constitutions. Regulators should require firms considered too big to fail to adopt network governance or pay the cost for regulators establishing a risk-monitoring unit in each firm.
+C1 [Pirson, Michael] Fordham Univ, New York, NY 10019 USA.
+RP Pirson, M (reprint author), Fordham Univ, 1790 Broadway,Suite 1147, New York, NY 10019 USA.
+EM pirson@fordham.edu
+CR Agoraki M., 2009, 18548 MPRA
+   [Anonymous], 2010, REUTERS         0408
+   [Anonymous], 2007, MCKINSEY Q
+   Ashby W.R., 1956, INTRO CYBERNETICS
+   Association of Certified Chartered Accountants (ACCA), 2008, CLIMB OUT CRED CRUNC
+   Baldwin C. Y., 2006, 0612 HARV NOM
+   Bebchuk LA, 2010, REV FINANC STUD, V23, P939, DOI 10.1093/rfs/hhp121
+   Beer S, 2002, KYBERNETES, V31, P209, DOI 10.1108/03684920210417283
+   Beer S., 1959, CYBERNETICS MANAGEME
+   Beer S., 1981, BRAIN FIRM MANAGERIA
+   Berman D. K., 2010, WALL STREET J B 0915
+   Bernanke B., 2009, CHIC C BANK STRUCT C
+   Bezemer D., 2009, 15892 MPRA
+   Brady K. F., 2009, BUSINESS LAW TODAY, V19, P1
+   Carpenter MA, 2001, ACAD MANAGE J, V44, P639, DOI 10.2307/3069408
+   Carter C., 2002, BACK DRAWING BOARD D
+   Davies Megan, 2009, 45 PERCENT WORLDS WE
+   Davis GF, 1997, AM J SOCIOL, V103, P1, DOI 10.1086/231170
+   Davis GF, 2005, ANNU REV SOCIOL, V31, P143, DOI 10.1146/annurev.soc.31.041304.122249
+   Downs A., 1967, INSIDE BUREAUCRACY
+   Eckart M., 2005, THESIS SWITZERLAND U
+   EGELHOFF WG, 1982, ADMIN SCI QUART, V27, P435, DOI 10.2307/2392321
+   FCIC, 2011, FIN CRIS INQ COMM RE
+   Fligstein N., 2009, SOC ADV SOC PAR
+   Foley J., 2009, FORBES          0319
+   FROOT KA, 1993, J FINANC, V48, P1629, DOI 10.2307/2329062
+   Galbraith J.R., 1973, DESIGNING COMPLEX OR
+   GALBRAITH JR, 1974, INTERFACES, V4, P28, DOI 10.1287/inte.4.3.28
+   Gordon C., 2009, 2 THEORIES SUBPRIME
+   Grind K., 2009, PUGET SOUND BUS 1206
+   Hambrick DC, 2007, ACAD MANAGE REV, V32, P334
+   Hansen EG, 2010, CORPORATE GOVERNANCE, V10, P378
+   Hock D., 1999, BIRTH CHAORDIC AGE
+   Jones C, 1997, ACAD MANAGE REV, V22, P911, DOI 10.5465/AMR.1997.9711022109
+   Kaen F. R., 2002, CESIFO FORUM, V3, P7
+   Kahneman D, 1973, ATTENTION EFFORT
+   Kahneman D., 1982, JUDGMENT UNCERTAINTY
+   Kalwarski T., 2009, BUSINESS WEEK   0309
+   Kirkpatrick Grant, 2009, CORPORATE GOVERNANCE
+   Lawrence P, 2010, DRIVEN LEAD GOOD BAD
+   Lees G., 2007, STRATEGIC POWER CORP
+   Lewis M., 2008, VANITY FAIR      NOV
+   Merchant KA, 2010, BLIND SPOTS BIASES O
+   Minow N., 2008, ICAHN REPORT    1114
+   Monks R., 2002, CAPITALISM OWNERS WI
+   Morgenstern O., 1947, THEORY GAMES EC BEHA
+   Morrissey E., 2008, MCCAINS ATTEMPT FIX
+   Nini G., 2010, CREDITOR CONTROL RIG
+   Nohria N., 1995, NOTE ORG STRUCTURE
+   Nooteboom B, 1996, ORGAN STUD, V17, P985, DOI 10.1177/017084069601700605
+   Noteboom B., 2002, TRUST FORMS FDN FUNC
+   Ocasio W, 1997, STRATEGIC MANAGE J, V18, P187, DOI 10.1002/(SICI)1097-0266(199707)18:1+<187::AID-SMJ936>3.3.CO;2-B
+   Porter M. E., 1992, CAPITAL CHOICES CHAN
+   Premkumar G, 2005, J MANAGE INFORM SYST, V22, P257, DOI 10.1080/07421222.2003.11045841
+   Raichle M. E., 2010, SCI AM          0217
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Robins S. P., 2010, ESSENTIALS ORG BEHAV
+   Rosales A., 2009, AXIS LOGIC      0507
+   ScienceMaster, 2010, BRAIN BAS KNOW YOUR
+   Shannon C.E., 1949, MATH THEORY COMMUNIC
+   Shojai S., 2010, J FIN TRANSF, V8, P25
+   SIMON HA, 1979, AM ECON REV, V69, P493
+   Spitzeck H, 2012, HUM BUS SER, P1
+   STULZ R, 2008, 200803017 FISH COLL
+   Taibbi M., 2010, GRIFTOPIA
+   Taleb N., 2010, WHY DID CRISIS 2008
+   Taylor F, 1911, PRINCIPLES SCI MANAG
+   Thomas R. J., 2009, SLOAN MANAGE REV, V50, P44
+   TRICKER R, 1994, INT CORPORATE GOVERN
+   Turnbull S., 2011, LATROBE U 2 FIN CORP
+   Turnbull S., 2000, ST JOHNS LAW REV, V74, P101
+   Turnbull S., 2004, FER FORUM FINANCIELE, V6, P6
+   Turnbull S., 2009, CORPORATE BOARDS MAN, P143
+   Turnbull S., 2002, CORPORATE GOVERNANCE, V10, P256
+   TURNBULL S, 1995, CORPORATE GOVERNANCE, V3, P167
+   Turnbull S., 2002, NEW WAY GOVERN ORG S
+   von Hippel E., 1994, SOURCES INNOVATION
+   Watts DJ, 2004, ANNU REV SOCIOL, V30, P243, DOI 10.1146/annurev.soc.30.020404.104342
+   Watts DJ, 2002, SCIENCE, V296, P1302, DOI 10.1126/science.1070120
+   Watts DJ, 2007, J CONSUM RES, V34, P441, DOI 10.1086/518527
+   WEINER N, 1948, CYBERNETICS CONTROL
+   Weiss N. E., 2007, FANNIE MAE FREDDIE M
+   Williamson O.E., 1975, MARKETS HIERARCHIES
+   WILLIAMSON OE, 1979, J LAW ECON, V22, P233, DOI 10.1086/466942
+NR 84
+TC 28
+Z9 29
+U1 2
+U2 53
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0964-8410
+EI 1467-8683
+J9 CORP GOV-OXFORD
+JI Corp. Gov.
+PD SEP
+PY 2011
+VL 19
+IS 5
+BP 459
+EP 470
+DI 10.1111/j.1467-8683.2011.00860.x
+PG 12
+WC Business; Business, Finance; Management
+SC Business & Economics
+GA 841CJ
+UT WOS:000296489800005
+DA 2019-12-28
+ER
+
+PT J
+AU Wong, AYT
+   Fong, TPW
+AF Wong, Alfred Y-T
+   Fong, Tom Pak Wing
+TI Analysing interconnectivity among economies
+SO EMERGING MARKETS REVIEW
+LA English
+DT Article
+DE Financial integration; Interconnectivity; Sovereign risk; Credit risk;
+   Value-at-risk; Systemic risk; Contagion; Spillover; Tail risk; Asia
+   Pacific; Quantile regression
+ID RISK; CONTAGION
+AB As international financial integration gathers pace, interconnectivity has increased tremendously among financial institutions, financial markets and financial systems, a phenomenon to which the recent global financial crisis perhaps provided the best testimony. The interconnectivity among financial entities at various levels is multilateral in dimension and highly complicated with numerous feedback loops. To contribute to the understanding of the complexity of the global financial system, this study shows how the interconnected relationships can be disentangled into simple and quantifiable bilateral interdependence linkages, using 11 Asia-Pacific economies as an example. A major finding is that all these economies register a significantly higher sovereign risk once the condition that another economy is in distress is imposed. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [Wong, Alfred Y-T; Fong, Tom Pak Wing] Hong Kong Monetary Author, Res Dept, Hong Kong, Hong Kong, Peoples R China.
+RP Fong, TPW (reprint author), Two Int Finance Ctr, 55-F,8 Finance St, Hong Kong, Hong Kong, Peoples R China.
+EM alfred_yt_wong@hkma.gov.hk; tom_pw_fong@hkma.gov.hk
+CR Acharya V.V., 2010, NEW YORK U WORKING P
+   Adrian T., 2008, 348 FED RES BANK NEW
+   Avesani R., 2006, INT MONETARY FUND WO
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bayoumi T., 2003, INT MONETARY FUND WO
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Brunnermeier M, 2009, GENEVA REPORTS WORLD, V11
+   Butler KC, 2002, J INT MONEY FINANC, V21, P981, DOI 10.1016/S0261-5606(02)00048-7
+   Chan-Lau J. A., 2008, DEFAULT RISK CODEPEN
+   Chan-Lau J. A., 2010, FINANC MKTS I INSTRU, V19, P355, DOI DOI 10.2139/SSRN.1995499)
+   Chan-Lau J. A., 2005, ICFAI J DERIVATIVES, V2, P7
+   Dungey M., 2003, INT MONETARY FUND WO
+   Fong T.P.W., 2009, REV FUTURES MARKETS, V20, P7
+   Galvao AF, 2011, J ECONOMETRICS, V164, P142, DOI 10.1016/j.jeconom.2011.02.016
+   Giglio S., 2011, CREDIT DEFAULT SWAP
+   Gray D., 2010, C FIN CRIS SYST RISK
+   Gray D.F., 2008, NBER WORKING PAPERS
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   International Competition Network, 2009, ASS SYST IMPL FIN LI, P8
+   Izquierdo Alejandro, 2003, NBER WORKING PAPER S, V9828
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Longstaff F.A., 2007, NBER WORKING PAPERS
+   Matsumura MS, 2010, EMERG MARK REV, V11, P229, DOI 10.1016/j.ememar.2010.04.002
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Oshiro N., 2005, EMERG MARK REV, V6, P346
+   Rocha K, 2010, EMERG MARK REV, V11, P173, DOI 10.1016/j.ememar.2009.11.004
+   Roengpitya R., 2010, BANK THAILAND DISCUS
+   Schechtman R., 2011, CENTRAL BANK BRAZIL, V241
+   Segoviano M., 2009, INT MONETARY FUND WO
+   Wong E.T.C., 2010, BIS C FIN STAB MACR
+NR 32
+TC 19
+Z9 19
+U1 0
+U2 15
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1566-0141
+J9 EMERG MARK REV
+JI Emerg. Mark. Rev.
+PD DEC
+PY 2011
+VL 12
+IS 4
+BP 432
+EP 442
+DI 10.1016/j.ememar.2011.06.004
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA 859QI
+UT WOS:000297890500009
+DA 2019-12-27
+ER
+
+PT J
+AU Cao, J
+   Illing, G
+AF Cao, Jin
+   Illing, Gerhard
+TI Endogenous Exposure to Systemic Liquidity Risk
+SO INTERNATIONAL JOURNAL OF CENTRAL BANKING
+LA English
+DT Article
+ID BANKING; CRISES
+AB Traditionally, aggregate liquidity shocks are modeled as exogenous events. This paper analyzes the adequate policy response to endogenous exposure to systemic liquidity risk. We analyze the feedback between lender-of-last-resort policy and incentives of private banks, determining the aggregate amount of liquidity available. We show that imposing minimum liquidity standards for banks ex ante is a crucial requirement for sensible lender-of-last-resort policy. In addition, we analyze the impact of equity requirements and narrow banking, in the sense that banks are required to hold sufficient liquid funds so as to pay out in all contingencies. We show that both policies are strictly inferior to imposing minimum liquidity standards ex ante combined with lender-of-last-resort policy.
+C1 [Illing, Gerhard] Univ Munich, Seminar Markookon, Dept Econ, D-80539 Munich, Germany.
+RP Illing, G (reprint author), Univ Munich, Seminar Markookon, Dept Econ, Ludwigstr 28-012 Rgb, D-80539 Munich, Germany.
+EM jin.cao@gmail.com; illing@lmu.de
+CR Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 1998, J FINANC, V53, P1245, DOI 10.1111/0022-1082.00052
+   ALLEN F, 2010, MONEY FINANCIAL STAB
+   Allen Franklin, 2007, UNDERSTANDING FINANC
+   BAGEHOT W, 2002, GEN VIEW LOMBARD STR
+   Buiter W. H., 2007, COMMUNICATION
+   Cao J., 2008, 2210 CESIFO
+   Diamond DW, 2000, J FINANC, V55, P2431, DOI 10.1111/0022-1082.00296
+   Diamond DW, 2006, AM ECON REV, V96, P30, DOI 10.1257/000282806776157759
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Farhi E, 2009, 15138 NBER
+   HART O, 1994, Q J ECON, V109, P841, DOI 10.2307/2118350
+   Holmstrom B, 1998, J POLIT ECON, V106, P1, DOI 10.1086/250001
+   Holmstrom B, 1997, Q J ECON, V112, P663, DOI 10.1162/003355397555316
+   Marvin Goodfriend, 1988, AEI STUDIES, V481
+   Rochet J.-C., 2004, J FINANCIAL STABILIT, V1, P93
+NR 18
+TC 8
+Z9 8
+U1 0
+U2 17
+PU ASSOC INTERNATIONAL JOURNAL CENTRAL BANKING
+PI FRANKFURT
+PA POSTFACH 16 03 19, FRANKFURT, 60066, GERMANY
+SN 1815-4654
+J9 INT J CENT BANK
+JI Int. J. Cent. Bank.
+PD JUN
+PY 2011
+VL 7
+IS 2
+BP 173
+EP 216
+PG 44
+WC Business, Finance
+SC Business & Economics
+GA 846LN
+UT WOS:000296902800006
+DA 2019-12-28
+ER
+
+PT J
+AU Bessler, DA
+   Kolari, JW
+   Maung, TA
+AF Bessler, David A.
+   Kolari, James W.
+   Maung, Thein A.
+TI Dynamic linkages among equity markets: local versus basket currencies
+SO APPLIED ECONOMICS
+LA English
+DT Article
+ID EXCHANGE-RATE RISK; STOCK-MARKET; INDUSTRIAL-STRUCTURE; UNITED-STATES;
+   RATE EXPOSURE; INTERDEPENDENCE; INDEXES; PRICE; TRANSMISSION; VOLATILITY
+AB This article compares the stability of interrelationships among nine national equity markets by employing basket currencies versus individual base currencies to measure rates of return. We show that the average correlations of equity indexes based on basket currencies are much lower than the average correlations of equity indexes based on individual home base currencies. Additionally, empirical directed graph results from using basket currencies are more consistent with each other than the results from using different individual currencies. We conclude that basket currencies provide more robust results for studying equity market comovements than individual currencies. By implication, studies on equity market interrelationships, including studies on potential financial contagion between equity markets, should use basket currencies to avoid currency dependent results.
+C1 [Bessler, David A.; Maung, Thein A.] Texas A&M Univ, Dept Agr Econ, College Stn, TX 77840 USA.
+   [Kolari, James W.] Texas A&M Univ, Dept Finance, College Stn, TX 77843 USA.
+RP Bessler, DA (reprint author), Texas A&M Univ, Dept Agr Econ, College Stn, TX 77840 USA.
+EM d-bessler@tamu.edu
+RI Kolari, James/R-2498-2019
+OI Bessler, David/0000-0002-4567-9251
+CR AGMON T, 1972, J FINANC, V27, P839, DOI 10.2307/2978672
+   AMIHUD Y, 1993, RECENT ADV CORPORATE
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baele L, 2005, J FINANC QUANT ANAL, V40, P373, DOI 10.1017/S0022109000002350
+   Bartov E, 1996, J FINANC ECON, V42, P105, DOI 10.1016/0304-405X(95)00873-D
+   Bessler DA, 2003, J INT MONEY FINANC, V22, P261, DOI 10.1016/S0261-5606(02)00076-1
+   Bodnar GM, 2003, FINANC MANAGE, V32, P35, DOI 10.2307/3666203
+   BODNAR GM, 1993, J INT MONEY FINANC, V12, P29, DOI 10.1016/0261-5606(93)90008-Y
+   BOX GEP, 1949, BIOMETRIKA, V36, P317, DOI 10.2307/2332671
+   Chen GM, 2002, J BANK FINANC, V26, P1113, DOI 10.1016/S0378-4266(01)00160-1
+   Chow EH, 1997, J BUS, V70, P105, DOI 10.1086/209710
+   De Santis G, 1998, J FINANC ECON, V49, P375, DOI 10.1016/S0304-405X(98)00029-4
+   DOAN T, 1992, RATS USERS MANUAL 4
+   DUMAS B, 1995, J FINANC, V50, P445, DOI 10.2307/2329415
+   EUN CS, 1989, J FINANC QUANT ANAL, V24, P241, DOI 10.2307/2330774
+   EUN CS, 1988, J FINANC, V43, P197, DOI 10.2307/2328331
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   GRUBEL HG, 1971, J FINANC, V26, P89, DOI 10.2307/2325743
+   Haigh MS, 2004, J BUS, V77, P1099, DOI 10.1086/422632
+   He J, 1998, J FINANC, V53, P733, DOI 10.1111/0022-1082.295575
+   HESTON SL, 1994, J FINANC ECON, V36, P3, DOI 10.1016/0304-405X(94)90028-0
+   Hovanov NV, 2004, J ECON DYN CONTROL, V28, P1481, DOI 10.1016/S0165-1889(02)00087-8
+   JOHANSEN S, 1991, ECONOMETRICA, V59, P1551, DOI 10.2307/2938278
+   JOHANSEN S, 1992, OXFORD B ECON STAT, V54, P383, DOI 10.1111/j.1468-0084.1992.tb00008.x
+   JORION P, 1990, J BUS, V63, P331, DOI 10.1086/296510
+   JORION P, 1991, J FINANC QUANT ANAL, V26, P363, DOI 10.2307/2331212
+   KAPLANIS E, 1991, J ECON BUS, V34, P287
+   Karolyi G. A., 2002, 8994 NAT BUR EC RES
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   KNIF J, 2009, ASSET PRICING EXCHAN
+   KOCH PD, 1991, J INT MONEY FINANC, V10, P231, DOI 10.1016/0261-5606(91)90037-K
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Markowitz H, 1959, PORTFOLIO SELECTION
+   Patro DK, 2002, J BANK FINANC, V26, P1951, DOI 10.1016/S0378-4266(01)00178-9
+   Ramchand L., 1998, J EMPIR FINANC, V5, P397, DOI DOI 10.1016/S0927-5398(98)00003-6
+   ROLL R, 1992, J FINANC, V47, P3, DOI 10.2307/2329089
+   Solnik B., 1996, FINANCIAL ANAL J, V52, P17, DOI DOI 10.2469/FAJ.V52.N5.2021
+   SPIRTES P., 2000, CAUSATION PREDICTION
+NR 38
+TC 1
+Z9 1
+U1 0
+U2 8
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 0003-6846
+EI 1466-4283
+J9 APPL ECON
+JI Appl. Econ.
+PY 2011
+VL 43
+IS 14
+BP 1703
+EP 1719
+DI 10.1080/00036840802631843
+PG 17
+WC Economics
+SC Business & Economics
+GA 770MJ
+UT WOS:000291090500001
+DA 2019-12-27
+ER

@@ -1,0 +1,536 @@
+
+PT J
+AU Xu, GX
+   Gao, WF
+AF Xu, Guoxiang
+   Gao, Wangfeng
+TI Financial Risk Contagion in Stock Markets: Causality and Measurement
+   Aspects
+SO SUSTAINABILITY
+LA English
+DT Article
+DE risk contagion; stock market; nonlinear causality test; Markov state
+   transition; dynamic Copula; financial sustainability
+ID VOLATILITY SPILLOVERS; SYSTEMIC RISK; COPULA; DEPENDENCE; MODELS;
+   CRISIS; TRANSMISSION; FUTURES; PRICES; RETURN
+AB As global financial markets become highly dependent on each other, risk contagion among stock markets is a primary feature of progressing globalization, which poses uncertainties for government agencies. The deficiency of previous studies is that it is difficult to accurately grasp the direction of risk diffusion in different time periods, and to depict the intensity of risk contagion constantly. Research on causality and measurement of financial risk contagion based on nonlinear causality tests and dynamic Copula methods will help governments to allocate financial resources reasonably and effectively, thus promoting the sustainable development of the social economy and financial markets. Taking the Chinese stock market as an example, this paper evaluated the risk contagion effect between the Chinese stock market and six other stock markets including developed and emerging markets from January 2006 to December 2018. From the aspect of causality, the nonlinear Granger causality test was applied to the entire time period and the phased time periods involving specific events like the subprime mortgage crisis and the Chinese stock market crash. From the aspect of measurement, the dynamic Markov state transition Copula model was used to describe the asymmetrically dependent structure of markets, from which was derived the time-varying lower tail dependence coefficients. The results have been summarized as follows. Firstly, after the outbreak of the subprime mortgage crisis, the stock markets in developed and emerging markets unilaterally affected the Chinese stock market, indicating that China was the recipient at this stage. Then, after the outbreak of the Chinese stock market crash, the Chinese stock market had a risk contagion effect on both Japanese and Russian stock markets, indicating that China became a source of financial risk contagion within a limited area at this stage. Lastly, in terms of the degree of risk contagion, the lower tail dependence coefficients of the Chinese stock market and other markets were significantly increased after the occurrence of specific risk events, while the risk contagion degree of developed markets was higher than that of emerging markets. Policymakers can recognize and apply the characteristics of risk contagion at different stages to refrain from unreasonable institutional arrangements, thus improving the sustainability of economic development.
+C1 [Xu, Guoxiang; Gao, Wangfeng] Shanghai Univ Finance & Econ, Sch Stat & Management, Shanghai 200433, Peoples R China.
+   [Xu, Guoxiang] Shanghai Univ Finance & Econ, Res Ctr Appl Stat, Shanghai 200433, Peoples R China.
+RP Gao, WF (reprint author), Shanghai Univ Finance & Econ, Sch Stat & Management, Shanghai 200433, Peoples R China.
+EM xugxiang@mail.shufe.edu.cn; gaowfeng@163.sufe.edu.cn
+FU Shanghai University of Finance and Economics [CXJJ-2016-427]
+FX This research was funded by Shanghai University of Finance and Economics
+   (in 2016) grant number (CXJJ-2016-427).
+CR Adam K, 2016, J FINANC, V71, P33, DOI 10.1111/jofi.12364
+   ADLER M, 1983, J FINANC, V38, P925, DOI 10.2307/2328091
+   [Anonymous], 1998, CRITICAL Q, V40, P1
+   Bai J, 2003, J APPL ECONOMET, V18, P1, DOI 10.1002/jae.659
+   Bai JS, 1998, ECONOMETRICA, V66, P47, DOI 10.2307/2998540
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Bekiros SD, 2008, ENERG ECON, V30, P2673, DOI 10.1016/j.eneco.2008.03.006
+   BROCK WA, 1991, REV ECON STUD, V58, P697, DOI 10.2307/2297828
+   Broock W.A., 1996, ECONOMET REV, V15, P197, DOI DOI 10.1080/07474939608800353
+   Cai X.J., 2016, APPL EC FINANC, V4, P1, DOI [10.11114/aef.v4i2.2010, DOI 10.11114/AEF.V4I2.2010]
+   Chen H, 2014, J RISK INSUR, V81, P623, DOI 10.1111/j.1539-6975.2012.01503.x
+   Chen W, 2014, PHYSICA A, V410, P550, DOI 10.1016/j.physa.2014.05.060
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Cook DO, 1996, J FINANC QUANT ANAL, V31, P265, DOI 10.2307/2331182
+   da Silva OC, 2012, INSUR MATH ECON, V50, P346, DOI 10.1016/j.insmatheco.2012.01.001
+   DARRAT AF, 2002, FINANC REV, V37, P35
+   Das SR, 2004, J FINANC, V59, P2809, DOI 10.1111/j.1540-6261.2004.00717.x
+   De Vita G, 2018, J INT MONEY FINANC, V83, P55, DOI 10.1016/j.jimonfin.2018.02.004
+   Diks C, 2006, J ECON DYN CONTROL, V30, P1647, DOI 10.1016/j.jedc.2005.08.008
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ENGLE RF, 1993, J FINANC, V48, P1749, DOI 10.2307/2329066
+   EUN CS, 1988, J FINANC, V43, P197, DOI 10.2307/2328331
+   Fei F, 2017, INT J FORECASTING, V33, P662, DOI 10.1016/j.ijforecast.2017.01.006
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Gomez-Puig M, 2014, INT REV ECON FINANC, V33, P12, DOI 10.1016/j.iref.2014.03.003
+   Granger CWJ, 2006, J ECONOMETRICS, V132, P43, DOI 10.1016/j.jeconom.2005.01.022
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   He BJ, 2018, HABITAT INT, V82, P83, DOI 10.1016/j.habitatint.2018.10.001
+   HIEMSTRA C, 1994, J FINANC, V49, P1639, DOI 10.2307/2329266
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Juri A, 2002, INSUR MATH ECON, V30, P405, DOI 10.1016/S0167-6687(02)00121-X
+   Kantelhardt JW, 2002, PHYSICA A, V316, P87, DOI 10.1016/S0378-4371(02)01383-3
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kleimeier Stefanie, 2003, INT FINANCIAL MARKET, V13, P171, DOI DOI 10.1016/S1042-4431(02)00043-4
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Nelsen RB, 2006, SPRINGER SERIES STAT
+   Ng S, 2001, ECONOMETRICA, V69, P1519, DOI 10.1111/1468-0262.00256
+   Nolde N., 2018, SOC SCI ELECT PUBL, DOI [10.1080/07350015.2018.1476248, DOI 10.1080/07350015.2018.1476248]
+   Okunev J, 2000, J REAL ESTATE FINANC, V21, P251, DOI 10.1023/A:1012051719424
+   Olsenrobert A., 2006, FINANC ANAL J, V54, P10
+   Pais A, 2011, J BANK FINANC, V35, P681, DOI 10.1016/j.jbankfin.2010.05.012
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2006, J APPL ECONOM, V21, P147, DOI 10.1002/jae.865
+   Pearson K., 1895, P ROY SOC LONDON, V58, P240, DOI DOI 10.1098/RSPL.1895.0041
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Sklar A, 1959, PUBL I STAT U PARIS, V8, P229, DOI DOI 10.12691/IJEFM-3-2-3
+   Souza J.D., 2009, CHAOS SOLITON FRACT, V42, P2512, DOI [10.1016/j.chaos.2009.03.198, DOI 10.1016/J.CHAOS.2009.03.198]
+   Syriopoulos T, 2015, INT REV FINANC ANAL, V39, P7, DOI 10.1016/j.irfa.2015.01.015
+   Tsuji C, 2018, APPL ENERG, V229, P1202, DOI 10.1016/j.apenergy.2018.08.008
+   Tsuji C, 2018, ECON MODEL, V74, P167, DOI 10.1016/j.econmod.2018.05.007
+   Wang KM, 2013, QUAL QUANT, V47, P2143, DOI 10.1007/s11135-011-9647-2
+   Wen XQ, 2012, ENERG ECON, V34, P1435, DOI 10.1016/j.eneco.2012.06.021
+   Yang J, 2008, EUR J OPER RES, V184, P291, DOI 10.1016/j.ejor.2006.04.046
+   YANG L, 2018, SUSTAINABILITY-BASEL, V10, DOI DOI 10.3390/SU10020324
+   Yilmaz K, 2010, J ASIAN ECON, V21, P304, DOI 10.1016/j.asieco.2009.09.001
+   Zhang P, 2019, SUSTAINABILITY-BASEL, V11, DOI 10.3390/su11010153
+   Zhu HM, 2014, INT REV ECON FINANC, V29, P208, DOI 10.1016/j.iref.2013.05.015
+NR 62
+TC 0
+Z9 0
+U1 3
+U2 7
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2071-1050
+J9 SUSTAINABILITY-BASEL
+JI Sustainability
+PD MAR 1
+PY 2019
+VL 11
+IS 5
+AR 402
+DI 10.3390/su11051402
+PG 20
+WC Green & Sustainable Science & Technology; Environmental Sciences;
+   Environmental Studies
+SC Science & Technology - Other Topics; Environmental Sciences & Ecology
+GA HQ8GA
+UT WOS:000462661000186
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Li, JY
+   Yao, YZ
+   Li, JP
+   Zhu, XQ
+AF Li, Jingyu
+   Yao, Yanzhen
+   Li, Jianping
+   Zhu, Xiaoqian
+TI Network-based estimation of systematic and idiosyncratic contagion: The
+   case of Chinese financial institutions
+SO EMERGING MARKETS REVIEW
+LA English
+DT Article
+DE Systematic contagion; Idiosyncratic contagion; Financial crisis;
+   Financial stability; Complex network
+ID RISK SPILLOVERS; STOCK; VOLATILITY; BANKING; CRISIS; MARKET; DEPENDENCE;
+   LINKAGES; CONNECTEDNESS; TRANSMISSION
+AB To distinguish systematic and idiosyncratic contagion during financial crises has attracted increasing attention because it can shed light on the potential drivers of contagion. However, the existing methods for distinguishing the two types of contagion cannot work with a large number of institutions. Therefore, this paper innovatively proposes a network-based framework which is able to distinguish the two types of contagion among numerous institutions. By applying the framework to the publicly listed Chinese financial institutions, we've figured out the main drivers of contagion during three financial crises, beneficial for understanding financial stability in China better.
+C1 [Li, Jingyu; Yao, Yanzhen; Li, Jianping; Zhu, Xiaoqian] Chinese Acad Sci, Inst Sci & Dev, 15 Beiyitiao Alley, Beijing 100190, Peoples R China.
+   [Li, Jingyu; Yao, Yanzhen; Li, Jianping] Univ Chinese Acad Sci, Beijing 100049, Peoples R China.
+RP Zhu, XQ (reprint author), Chinese Acad Sci, Inst Sci & Dev, 15 Beiyitiao Alley, Beijing 100190, Peoples R China.
+EM lijingyu214@mails.ucas.ac.cn; yaoyanzhen14@mails.ucas.ac.cn;
+   ljp@casipm.ac.cn; zhuxq@casipm.ac.cn
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71601178, 71425002]; Youth Innovation Promotion
+   Association of Chinese Academy of Sciences [2012137, 2017200]
+FX We sincerely thank the editor and reviewers for their valuable and
+   professional comments. This study was supported by grants from the
+   National Natural Science Foundation of China (71601178, 71425002) and
+   the Youth Innovation Promotion Association of Chinese Academy of
+   Sciences (2012137, 2017200).
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Aldasoro I, 2018, J FINANC STABIL, V35, P17, DOI 10.1016/j.jfs.2016.12.008
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2014, J FINANC STABIL, V15, P112, DOI 10.1016/j.jfs.2014.09.005
+   Allen F, 2013, J MONEY CREDIT BANK, V45, P121, DOI 10.1111/jmcb.12038
+   Balla E, 2014, J FINANC STABIL, V15, P195, DOI 10.1016/j.jfs.2014.10.002
+   Ballester L, 2016, J EMPIR FINANC, V38, P394, DOI 10.1016/j.jempfin.2016.01.011
+   Baur DG, 2012, J BANK FINANC, V36, P2680, DOI 10.1016/j.jbankfin.2011.05.019
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brealey RA, 2012, J APPL CORP FINANC, V24, P36, DOI 10.1111/j.1745-6622.2012.00399.x
+   Calvo GA, 2003, INT ECON ASSOC SERIE, P81
+   Demirer M, 2018, J APPL ECONOMET, V33, P1, DOI 10.1002/jae.2585
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Dungey M., 2003, AUSTR J MANAGEMENT, V28, P157
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   Dungey M, 2015, J BANK FINANC, V60, P271, DOI 10.1016/j.jbankfin.2015.08.007
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   Fama EF, 2015, J FINANC ECON, V116, P1, DOI 10.1016/j.jfineco.2014.10.010
+   Fang LB, 2018, EMERG MARK REV, V35, P190, DOI 10.1016/j.ememar.2018.02.003
+   Fidrmuc J, 2010, J ASIAN ECON, V21, P293, DOI 10.1016/j.asieco.2009.07.007
+   Fleming J, 1998, J FINANC ECON, V49, P111, DOI 10.1016/S0304-405X(98)00019-1
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Garrett G, 2010, GLOB POLICY, V1, P29, DOI 10.1111/j.1758-5899.2009.00014.x
+   Goh G, 2017, J MULTIVARIATE ANAL, V157, P14, DOI 10.1016/j.jmva.2017.02.007
+   Gourieroux C, 2008, J ECONOMETRICS, V147, P198, DOI 10.1016/j.jeconom.2008.09.028
+   Hong YM, 2009, J ECONOMETRICS, V150, P271, DOI 10.1016/j.jeconom.2008.12.013
+   Huang DS, 2009, ENERG ECON, V31, P511, DOI 10.1016/j.eneco.2008.12.006
+   Jian ZH, 2018, EMERG MARK REV, V37, P98, DOI 10.1016/j.ememar.2018.06.001
+   Jorion P., 2007, VALUE AT RISK THE NE
+   Kalemli-Ozcan S, 2013, J FINANC, V68, P1179, DOI 10.1111/jofi.12025
+   Kang SH, 2017, ENERG ECON, V62, P19, DOI 10.1016/j.eneco.2016.12.011
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Li JP, 2013, ENTROPY-SWITZ, V15, P5549, DOI 10.3390/e15125549
+   Liu A., 2017, J BANK FINANC, DOI [10.1016/j.jbankfin.2017.08.008, DOI 10.1016/J.JBANKFIN.2017.08.008]
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Neaime S, 2016, EMERG MARK REV, V27, P14, DOI 10.1016/j.ememar.2016.03.002
+   Neaime S, 2012, EMERG MARK REV, V13, P268, DOI 10.1016/j.ememar.2012.01.006
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Popov A, 2012, J INT ECON, V87, P147, DOI 10.1016/j.jinteco.2012.01.008
+   Rivera-Castro MA, 2018, EMERG MARK REV, V35, P164, DOI 10.1016/j.ememar.2018.02.004
+   Shahzad SJH, 2018, EMERG MARK REV, V34, P42, DOI 10.1016/j.ememar.2017.10.003
+   Silva TC, 2016, EMERG MARK REV, V26, P130, DOI 10.1016/j.ememar.2015.12.004
+   Taylor JW, 2005, MANAGE SCI, V51, P712, DOI 10.1287/mnsc.1040.0355
+   Wang GJ, 2018, EMERG MARK REV, V35, P1, DOI 10.1016/j.ememar.2017.12.001
+   Wang GJ, 2017, QUANT FINANC, V17, P1417, DOI 10.1080/14697688.2016.1272762
+   Wei L, 2019, ACCOUNT FINANC, V59, P1525, DOI 10.1111/acfi.12453
+   Yao YZ, 2017, ECON MODEL, V64, P589, DOI 10.1016/j.econmod.2017.04.023
+   Zhang JH, 2013, INT REV FINANC ANAL, V30, P149, DOI 10.1016/j.irfa.2013.07.016
+   Zhu XQ, 2018, J RISK, V21, P37, DOI 10.21314/JOR.2018.393
+   Zhu XQ, 2015, INT REV ECON FINANC, V38, P18, DOI 10.1016/j.iref.2014.12.011
+   Zou H, 2006, J COMPUT GRAPH STAT, V15, P265, DOI 10.1198/106186006X113430
+NR 55
+TC 0
+Z9 0
+U1 8
+U2 8
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1566-0141
+EI 1873-6173
+J9 EMERG MARK REV
+JI Emerg. Mark. Rev.
+PD SEP
+PY 2019
+VL 40
+AR UNSP 100624
+DI 10.1016/j.ememar.2019.100624
+PG 22
+WC Business, Finance; Economics
+SC Business & Economics
+GA JB1KK
+UT WOS:000488319200008
+DA 2019-12-27
+ER
+
+PT J
+AU Ayadi, MA
+   Ayadi, N
+   Trabelsi, S
+AF Ayadi, Mohamed A.
+   Ayadi, Nesrine
+   Trabelsi, Samir
+TI Corporate governance, European bank performance and the financial crisis
+SO MANAGERIAL AUDITING JOURNAL
+LA English
+DT Article
+DE Financial crisis; Financial performance; Capital regulation; Insolvency
+   risk; Internal mechanisms; G340; G380; G320; G330; G21; G01
+ID RISK-TAKING; DEPOSIT INSURANCE; BOARD STRUCTURE; OWNERSHIP;
+   DETERMINANTS; MARKET; COSTS; FIRM; PROFITABILITY; MANAGEMENT
+AB Purpose This paper aims to analyze the effects of internal and external governance mechanisms on the performance and risk taking of banks from the Euro zone before and after the 2008 financial crisis.
+   Design/methodology/approach To avoid macroeconomic problems and shocks and because of data availability, the authors select some countries of the Euro zone, namely, France, Belgium, Germany and Finland, during the 2004-2009 period. These countries share similar macroeconomic environments (unemployment, inflation and economic growth rates). All the data relating to the banks are manually drawn from the supervising reports submitted to banks and are available on the banks' websites and/or on that of the AMF website. The banks included in our sample are drawn from the list of European central banks on www.ecb.int
+   Findings The empirical results show that banks undertake tradeoffs between different governance mechanisms to alleviate the intensity of the agency conflicts between the shareholders and managers. The findings also confirm that internal mechanisms and capital regulations are complementary and significantly impact bank performance.
+   Research limitations/implications This analysis can be extended through studying the interaction between bondholders' governance and shareholders' governance and their impact on the 2008 financial crisis.
+   Practical implications The changes in banking governance help banks find a useful and necessary way to avoid ill-considered risks that can cause a systemic risk. Therefore, some conditions should be met so that banking governance can contribute to the economic development.
+   Social implications Culture and mentality of good banking governance must grow as much as possible through awareness-raising, training, promotion, recognition of performance, enhancing procedure transparency and stability of good banking governance and regulations, strengthening the national capacity to fight against corruption, and preventive mechanisms.
+   Originality/value This paper complements previous studies, mainly those of Andres and Vallelado (2008) who examine the impact of the components of the board on banking performance and of Laeven and Levine (2009) who estimate the combined effect of regulatory and ownership structure on the risk-taking of each bank.
+C1 [Ayadi, Mohamed A.] Brock Univ, Goodman Sch Business, Dept Finance Operat & Informat Syst, Finance, St Catharines, ON L2S 3A1, Canada.
+   [Ayadi, Nesrine] Univ Sfax, Fac Econ & Management, Dept Finance, Sfax, Tunisia.
+   [Trabelsi, Samir] Brock Univ, Goodman Sch Business, Dept Accounting, Accounting, St Catharines, ON L2S 3A1, Canada.
+RP Trabelsi, S (reprint author), Brock Univ, Goodman Sch Business, Dept Accounting, Accounting, St Catharines, ON L2S 3A1, Canada.
+EM strabelsi@brocku.ca
+CR Aebi V, 2012, J BANK FINANC, V36, P3213, DOI 10.1016/j.jbankfin.2011.10.020
+   Alexandre H., 2009, BANKERS MARKETS INVE, V98, P6
+   ALSHIMMIRI T, 2004, CORPORATE OWNERSHIP, V2, P104, DOI DOI 10.22495/C0CV2I1P8
+   Anderson RC, 2000, J BANK FINANC, V24, P1383, DOI 10.1016/S0378-4266(99)00088-6
+   Ang J, 2002, J BANK FINANC, V26, P1143, DOI 10.1016/S0378-4266(01)00165-0
+   Angbazo L, 1997, J BANK FINANC, V21, P55, DOI 10.1016/S0378-4266(96)00025-8
+   [Anonymous], 2009, PRINC SOUND STRESS T
+   Athanasoglou P., 2008, J INT FINANC MARK I, V18, P121, DOI DOI 10.1016/J.INTFIN.2006.07.001
+   Ayadi N., 2012, J ADV RES MANAGEMENT, V3, P4
+   Baker M, 2003, J LAW ECON, V46, P569, DOI 10.1086/380409
+   BARRO JR, 1990, J LABOR ECON, V8, P448, DOI 10.1086/298230
+   Basel Committee on Banking Supervision, 2010, RANG METH RISK PERF
+   Basel Committee on Banking Supervision, 2006, ENH CORP GOV BANK OR
+   Basel Committee on Banking Supervision, 2015, CORP GOV PRINC BANKS
+   Becher DA, 2011, J BANK FINANC, V35, P736, DOI 10.1016/j.jbankfin.2010.09.003
+   Belkhir M., 2009, APPL FINANCIAL EC, V19, P1581, DOI [10.1080/09603100902967561, DOI 10.1080/09603100902967561]
+   Black B.S., 1998, REVOLUTION CORPORATE
+   Bouwman C.H.S., 2009, WORKING PAPER
+   Boyd JH, 1998, J MONEY CREDIT BANK, V30, P426, DOI 10.2307/2601249
+   Boyd JH, 2014, J ECON THEORY, V149, P43, DOI 10.1016/j.jet.2012.10.001
+   Broye G., 2010, FINANCE CONTROLE STR, V13, P67
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   BUSER SA, 1981, J FINANC, V36, P51, DOI 10.2307/2327463
+   Caprio G, 2007, J FINANC INTERMED, V16, P584, DOI 10.1016/j.jfi.2006.10.003
+   Valverde SC, 2007, J BANK FINANC, V31, P2043, DOI 10.1016/j.jbankfin.2006.06.017
+   Cornett MM, 2009, J CORP FINANC, V15, P412, DOI 10.1016/j.jcorpfin.2009.04.003
+   Dalton DR, 1999, ACAD MANAGE J, V42, P674, DOI 10.2307/256988
+   de Andres P, 2008, J BANK FINANC, V32, P2570, DOI 10.1016/j.jbankfin.2008.05.008
+   De Coussergues S., 1996, BANQUE STRUCTURE MAR
+   de Haan J, 2016, J ECON SURV, V30, P228, DOI 10.1111/joes.12101
+   DEMSETZ H, 1985, J POLIT ECON, V93, P1155, DOI 10.1086/261354
+   DEMSETZ H, 1983, J LAW ECON, V26, P375, DOI 10.1086/467041
+   DEMSETZ H, 1986, AM ECON REV, V76, P313
+   Dormont B., 1989, INTRO ECONOMETRIE DO, P125
+   El-Chaarani H., 2014, INT J BUSINESS FINAN, V8, P35
+   Erkens D., 2012, J CORP FINANC, V18, P389, DOI DOI 10.1016/J
+   Esty BC, 1998, J FINANC ECON, V47, P189, DOI 10.1016/S0304-405X(97)00043-3
+   European Commission, 2010, COMM COMM EUR PARL C
+   Fernandes N., 2009, WORKING PAPER
+   GALAI D, 1976, J FINANC ECON, V3, P53, DOI 10.1016/0304-405X(76)90020-9
+   Garcia-Meca E, 2015, J BANK FINANC, V53, P202, DOI 10.1016/j.jbankfin.2014.12.002
+   Gedajlovic E, 2002, ACAD MANAGE J, V45, P565, DOI 10.2307/3069381
+   Godlewski CJ, 2005, J BANK REGUL, V6, P128, DOI 10.1057/palgrave.jbr.2340187
+   Gonzalez F, 2005, J BANK FINANC, V29, P1153, DOI 10.1016/j.jbankfin.2004.05.029
+   GROSSMAN SJ, 1986, J POLIT ECON, V94, P691, DOI 10.1086/261404
+   Hadlock CJ, 2002, J LAW ECON, V45, P535, DOI 10.1086/340391
+   Hagendorff J, 2010, CORP GOV, V18, P381, DOI 10.1111/j.1467-8683.2010.00815.x
+   Hau H, 2009, ECON POLICY, P701
+   HAUSMAN JA, 1978, ECONOMETRICA, V46, P1251, DOI 10.2307/1913827
+   Himmelberg CP, 1999, J FINANC ECON, V53, P353, DOI 10.1016/S0304-405X(99)00025-2
+   Holderness CG, 1999, J FINANC, V54, P435, DOI 10.1111/0022-1082.00114
+   HOSHI T, 1990, J FINANC ECON, V27, P67, DOI 10.1016/0304-405X(90)90021-Q
+   Houston JF, 1995, J MONETARY ECON, V36, P405, DOI 10.1016/0304-3932(95)01219-2
+   JENSEN MC, 1993, J FINANC, V48, P831, DOI 10.2307/2329018
+   JENSEN MC, 1976, J FINANC ECON, V3, P305, DOI 10.1016/0304-405X(76)90026-X
+   John K, 2008, J FINANC, V63, P1679, DOI 10.1111/j.1540-6261.2008.01372.x
+   Joshi M, 2013, J INTELLECT CAP, V14, P264, DOI 10.1108/14691931311323887
+   Kane E., 1985, GATHERING CRISIS FED
+   KEELEY MC, 1990, AM ECON REV, V80, P1183
+   Kennedy P, 1985, GUIDE ECONOMETRICS
+   KIM D, 1988, J FINANC, V43, P1219, DOI 10.2307/2328216
+   KOEHN M, 1980, J FINANC, V35, P1235, DOI 10.2307/2327096
+   Kole SR, 1999, J FINANC ECON, V52, P79, DOI 10.1016/S0304-405X(99)00005-7
+   Konishi M, 2004, J BANK FINANC, V28, P215, DOI 10.1016/S0378-4266(02)00405-3
+   La Porta R, 1998, J POLIT ECON, V106, P1113, DOI 10.1086/250042
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Laing D., 1999, MANAGE DECIS, V37, P457
+   Levine R., 2004, WORLD BANK POLICY RE
+   Liang Q, 2013, J BANK FINANC, V37, P2953, DOI 10.1016/j.jbankfin.2013.04.018
+   Macy J. R., 2003, FEDERAL RESERVE BANK, P91
+   MCALLISTER P, 2002, J BANK FINANC, V17, P389
+   Merton R.C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   Miller SM, 1997, APPL ECON, V29, P505, DOI 10.1080/000368497326994
+   Minton BA, 2014, J FINANC QUANT ANAL, V49, P351, DOI 10.1017/S0022109014000283
+   Moody's Manuals, 2018, MOOD MAN IND PUBL UT
+   OECD, 1996, KNOWL BAS EC
+   Pathan S, 2013, J BANK FINANC, V37, P1573, DOI 10.1016/j.jbankfin.2012.12.016
+   Pathan S, 2009, J BANK FINANC, V33, P1340, DOI 10.1016/j.jbankfin.2009.02.001
+   Persico N, 2004, REV ECON STUD, V71, P165, DOI 10.1111/0034-6527.00280
+   Pirotte A., 2011, ECONOMETRIE DONNEES, P278
+   Prowse S. D., 1995, FEDERAL RESERVE BANK, P24
+   Sevestre P., 2002, ECONOMETRIE DONNEES, P109
+   Shleifer A, 1997, J FINANC, V52, P737, DOI 10.1111/j.1540-6261.1997.tb04820.x
+   SHLEIFER A, 2003, J POLIT ECON 1, V94, P461
+   SHRIEVES RE, 1992, J BANK FINANC, V16, P439, DOI 10.1016/0378-4266(92)90024-T
+   Sinkey J.F., 1999, COMMERCIAL BANK FINA, P696
+   STIGLER GJ, 1962, J LAW ECON, V5, P1, DOI 10.1086/466579
+   Taylor JB, 2009, CRIT REV, V21, P341, DOI 10.1080/08913810902974865
+   Vafeas N, 1999, J FINANC ECON, V53, P113, DOI 10.1016/S0304-405X(99)00018-5
+   Veltri Stefania, 2011, Journal of Human Resource Costing and Accounting, V15, P232, DOI 10.1108/14013381111178596
+   Weir C., 2002, J BUSINESS FINANCE A, V29, P579, DOI DOI 10.1111/1468-5957.00444
+   Young CS, 2009, SERV IND J, V29, P1565, DOI 10.1080/02642060902793284
+NR 92
+TC 0
+Z9 0
+U1 13
+U2 13
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 0268-6902
+EI 1758-7735
+J9 MANAG AUDIT J
+JI Manag. Audit. J.
+PY 2019
+VL 34
+IS 3
+SI SI
+BP 338
+EP 371
+DI 10.1108/MAJ-11-2017-1704
+PG 34
+WC Business, Finance; Management
+SC Business & Economics
+GA IC7BB
+UT WOS:000471125900007
+DA 2019-12-28
+ER
+
+PT J
+AU Triggs, A
+   Kacaribu, F
+   Wang, J
+AF Triggs, Adam
+   Kacaribu, Febrio
+   Wang, Jiao
+TI Risks, Resilience, and Reforms: Indonesia's Financial System in 2019
+SO BULLETIN OF INDONESIAN ECONOMIC STUDIES
+LA English
+DT Article
+DE Indonesia; crisis management; financial markets; financial crises;
+   government policy and regulation; banks; non-bank financial
+   institutions; bankruptcy; financial reform
+AB Indonesia has managed the complex challenges of the global economy well. The country's capital outflows were smaller in 2018 than during the Taper Tantrum in 2013; the rupiah had regained most of its lost ground by January 2019; the Indonesian stock market has outperformed its peers; growth is forecast to remain stable; inflation is low; unemployment remains below its five-year average; consumer and business confidence are robust; and the government budget has improved through a smaller deficit and cheaper borrowing costs. But significant risks remain. This paper assesses these risks and evaluates the adequacy of Indonesia's crisis management framework. It finds that the framework has serious deficiencies that could see liquidity challenges become systemic solvency crises. The framework effectively removes Bank Indonesia as the lender of last resort, risks politicising the process of crisis response, and could mean slower, less effective responses to crises. This paper explores how the framework could be improved and what reforms could be undertaken to deepen Indonesia's financial system, strengthen financial resilience, and boost the long-term growth outlook.
+C1 [Triggs, Adam] Australian Natl Univ, Canberra, ACT, Australia.
+   [Kacaribu, Febrio] Univ Indonesia, Depok, Indonesia.
+   [Wang, Jiao] Univ Melbourne, Melbourne, Vic, Australia.
+RP Triggs, A (reprint author), Australian Natl Univ, Canberra, ACT, Australia.
+OI Kacaribu, Febrio/0000-0002-3217-115X
+CR Amelia Anggita., 2019, KATADATA        0125
+   Amin K, 2016, JAKARTA POST
+   [Anonymous], 2008, WALL STREET J
+   [Anonymous], 2018, PRAB DEM HALT IMF WO
+   [Anonymous], 2018, ECONOMIST
+   [Anonymous], 2018, STRAITS TIMES
+   Apergis N, 2007, REV WORLD ECON, V143, P179, DOI 10.1007/s10290-007-0102-3
+   Azka Rinaldi., 2018, BISNIS          0726
+   Bank Indonesia, 2018, PUBL SECT DEBT STAT
+   Bank World, 2019, GLOBAL FINANCIAL DEV
+   Bland B., 2018, FINANCIAL TIMES
+   Blondal J, 2009, OECD J BUDGETING, V2, P1, DOI DOI 10.1787/BUDGET-9-5KS72WV8GP48
+   Burke PJ, 2018, ENERG POLICY, V116, P410, DOI 10.1016/j.enpol.2018.02.018
+   CEIC, 2019, CEIC DAT
+   Davis Phillip E., 2008, LESSONS LEARNED FINA, P111
+   Dell'Araccia Giovanni, 2018, TRADEOFFS BANK RESOL
+   Ekberg Jason, 2015, FINANCIAL DEEPENING
+   Fealy Greg., 2019, OLD RIVALS SPAR INDO
+   FSB, 2014, KEY ATTR EFF RES REG
+   Hagendorff Jens, 2013, BANK CAPITAL REQUIRE
+   Hutchison MM, 2006, J DEV ECON, V79, P225, DOI 10.1016/j.jdeveco.2004.12.002
+   IMF, 2017, 17152 IMF
+   IMF, 2019, WORLD EC OUTL UPD UP
+   International Monetary Fund-IMF, 2018, WORLD EC OUTLOOK DAT
+   Krugman P., 2009, RETURN DEPRESSION EC
+   Lipson David., 2019, AUSTR BROADCAST 0118
+   Lledo Victor, 2017, FISCAL RULES GLANCE
+   LPEM FEB UI (Institute of Social and Economic Research Faculty of Economics and Business University of Indonesia), 2019, MACR AN SER BI BOARD
+   McCawley Peter., 2018, INDONESIAS ELECTION
+   McLeod Ross., 2010, EC POLITICAL PERSPEC
+   Morris Nicholas, 2015, SOLVE INDONESIAS INF
+   OJK (Financial Services Authority), 2016, IND FIN SERV SECT MA
+   OJK (Financial Services Authority), 2018, IND BANK STAT NOV 20
+   OJK (Financial Services Authority), 2019, AB OJK
+   Parlina Ina., 2018, JAKARTA POST
+   Rahadiana Rieka, 2017, BLOOMBERG
+   Sterland Barry., 2017, 109 BROOK I GLOB EC
+   Tjoe Yenny., 2018, CONVERSATION
+   Trading Economics, 2019, IND EC IND
+   Triggs Adam., 2018, 116 BROOK I GLOB EC
+   Triggs Adam., 2018, AUSTR FINANCIAL REV
+   von Allmen Ulric Eriksson, 2018, REALIZING INDONESIAS, P271
+   Warjiyo Perry., 2017, BIS PAPERS, V94
+   Yuniar R.W., 2018, S CHINA MORNING POST
+NR 44
+TC 0
+Z9 0
+U1 2
+U2 4
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0007-4918
+EI 1472-7234
+J9 B INDONES ECON STUD
+JI Bull. Indones. Econ. Stud.
+PD JAN 2
+PY 2019
+VL 55
+IS 1
+BP 1
+EP 27
+DI 10.1080/00074918.2019.1592644
+PG 27
+WC Area Studies; Economics
+SC Area Studies; Business & Economics
+GA HQ4HJ
+UT WOS:000462370800001
+DA 2019-12-28
+ER
+
+PT J
+AU Dell'Ariccia, G
+   Ratnovski, L
+AF Dell'Ariccia, Giovanni
+   Ratnovski, Lev
+TI Bailouts and systemic insurance
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Banking; Bailouts; Bank capital; Contagion; Financial stability
+ID MORAL HAZARD; BANK BAILOUTS; RISK; CONTAGION; DESIGN; MODEL; DEBT
+AB We revisit the link between bailouts and bank risk taking. Bailout expectations create moral hazard - increase bank risk taking. However, when an individual bank's success depends on both its effort and the overall stability of the banking system, bailouts that shield banks from contagion may increase their incentives to invest prudently and so reduce bank risk taking. This systemic insurance effect is more important when bailout rents are low while contagion risk is high. The optimal policy is then to make bailouts not difficult, but "effective" : associated with lower rents. We further show that, besides better bank resolution, a powerful means to reduce bailout rents is higher ex ante bank capital, since it implies a larger bank equity cushion that can be expropriated in a resolution. This highlights an important complementarity between bank capital regulation and bailouts as tools to enhance financial stability. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Dell'Ariccia, Giovanni; Ratnovski, Lev] Int Monetary Fund, Washington, DC 20431 USA.
+   [Dell'Ariccia, Giovanni] CEPR, Washington, DC USA.
+   [Ratnovski, Lev] European Cent Bank, Frankfurt, Germany.
+RP Ratnovski, L (reprint author), Int Monetary Fund, Washington, DC 20431 USA.; Ratnovski, L (reprint author), European Cent Bank, Frankfurt, Germany.
+EM gdellariccia@imf.org; lev.ratnovski@ecb.int
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2008, REV FINANC STUD, V21, P2705, DOI 10.1093/rfs/hhm078
+   Aghion P, 1999, J INST THEOR ECON, V155, P51
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2018, J ECON THEORY, V177, P518, DOI 10.1016/j.jet.2018.06.007
+   Allen F, 2011, REV FINANC STUD, V24, P983, DOI 10.1093/rfs/hhp089
+   Bebchuk LA, 2011, REV FINANC STUD, V24, P3519, DOI 10.1093/rfs/hhr086
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Caballero RJ, 2003, J FINANC, V58, P867, DOI 10.1111/1540-6261.00549
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Cordella T, 2003, J FINANC INTERMED, V12, P300, DOI 10.1016/S1042-9573(03)00046-9
+   Corsetti G, 2006, J MONETARY ECON, V53, P441, DOI 10.1016/j.jmoneco.2005.03.008
+   Dell'Ariccia G, 2006, J FINANC, V61, P2511, DOI 10.1111/j.1540-6261.2006.01065.x
+   Dell'Ariccia G, 2014, J ECON THEORY, V149, P65, DOI 10.1016/j.jet.2013.06.002
+   Diamond D. W., 2009, 15197 NBER
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   KAREKEN JH, 1978, J BUS, V51, P413, DOI 10.1086/296006
+   Korinek A., 2011, SYSTEMIC RISK UNPUB
+   Laeven L, 2010, 10146 IMF
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   Morrison AD, 2013, J FINANC ECON, V110, P642, DOI 10.1016/j.jfineco.2013.08.011
+   Orszag P., 2002, OPTIMAL FIRE D UNPUB
+   Perotti EC, 2002, EUR ECON REV, V46, P1599, DOI 10.1016/S0014-2921(02)00241-6
+   Philippon T, 2013, J FINANC, V68, P1, DOI 10.1111/j.1540-6261.2012.01793.x
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Tirole J, 2006, THEORY OF CORPORATE FINANCE, P1
+NR 33
+TC 0
+Z9 0
+U1 6
+U2 6
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD AUG
+PY 2019
+VL 105
+BP 166
+EP 177
+DI 10.1016/j.jbankfin.2019.05.019
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA IE9MM
+UT WOS:000472698500012
+DA 2019-12-27
+ER

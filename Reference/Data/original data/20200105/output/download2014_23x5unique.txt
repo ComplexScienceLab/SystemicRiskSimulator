@@ -1,0 +1,386 @@
+
+PT J
+AU Gauthier, C
+   Souissi, M
+   Liu, XZ
+AF Gauthier, Celine
+   Souissi, Moez
+   Liu, Xuezhi
+TI Introducing Funding Liquidity Risk in a Macro Stress-Testing Framework
+SO INTERNATIONAL JOURNAL OF CENTRAL BANKING
+LA English
+DT Article
+ID SYSTEMIC RISK
+AB The main contribution of this paper is to introduce a funding liquidity component a la Morris and Shin (2009) in a stress-testing framework. As a result, funding liquidity risk arises as an endogenous outcome of the interactions between market liquidity and solvency risks, and banks' liquidity profiles. We perform a calibration exercise that highlights the vulnerability of leveraged institutions to the combination of low cash holdings and the prevalence of short-term debt, a key feature of the 2008 credit crisis. We also analyze the trade-offs between higher capital ratios, more liquid assets, and/or less short-term liabilities in reducing systemic risk.
+C1 [Gauthier, Celine] Bank Canada, Toronto, ON, Canada.
+   [Souissi, Moez] Int Monetary Fund, Washington, DC 20431 USA.
+   [Liu, Xuezhi] Manulife Financial, Toronto, ON, Canada.
+RP Gauthier, C (reprint author), Bank Canada, Toronto, ON, Canada.
+EM celine.gauthier@uqo.ca; msouissi@imf.org; Xuezhi_liu@manulife.com
+CR Acharya V., 2013, QUANTIFYING SYSTEMIC, P175
+   Acharya VV, 2011, J FINANC, V66, P1177, DOI 10.1111/j.1540-6261.2011.01669.x
+   Adrian T., 2011, 17454 NBER
+   Aikman D., 2009, 372 BANK ENGL
+   Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen J., 2011, 201117 BANK CAN
+   Boss M., 2002, OENB FINANC STAB REP, V4, P64
+   Bris A, 2006, J FINANC, V61, P1253, DOI 10.1111/j.1540-6261.2006.00872.x
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   CARLSSON H, 1993, ECONOMETRICA, V61, P989, DOI 10.2307/2951491
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Committee on the Global Financial System, 2010, 36 CGFS
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Djoudad R., 2011, AESTIMATIO IEB INT J, V3, P150
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Flannery MJ, 1996, J MONEY CREDIT BANK, V28, P804, DOI 10.2307/2077922
+   Foglia A, 2009, INT J CENT BANK, V5, P9
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gauthier C, 2013, SIMULATION IN COMPUTATIONAL FINANCE AND ECONOMICS: TOOLS AND EMERGING APPLICATIONS, P211, DOI 10.4018/978-1-4666-2011-7.ch011
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Goodhart C., 2010, CMFE C HELD CARLETON
+   Gravelle T., 2011, 201119 BANK CAN
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   JAMES C, 1991, J FINANC, V46, P1223, DOI 10.2307/2328857
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   Misina M, 2006, 200647 BANK CAN
+   Morris S, 2001, NBER MACROECON ANN, V15, P139
+   Morris S., 2009, ILLIQUIDITY CO UNPUB
+   Morris S., 2003, ADV EC ECONOMETRICS, V1, P56
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Rochet JC, 2004, J EUR ECON ASSOC, V2, P1116, DOI 10.1162/1542476042813850
+   Sorge M., 2006, J FINANCIAL STABILIT, V2, P113, DOI DOI 10.1016/J.JFS.2005.07.002
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Van den End J. W., 2008, 175 DUTCH NAT BANK
+   Wong Eric, 2009, 062009 HONG KONG MON
+NR 38
+TC 1
+Z9 1
+U1 0
+U2 10
+PU ASSOC INTERNATIONAL JOURNAL CENTRAL BANKING
+PI FRANKFURT
+PA POSTFACH 16 03 19, FRANKFURT, 60066, GERMANY
+SN 1815-4654
+EI 1815-7556
+J9 INT J CENT BANK
+JI Int. J. Cent. Bank.
+PD DEC
+PY 2014
+VL 10
+IS 4
+BP 105
+EP 141
+PG 37
+WC Business, Finance
+SC Business & Economics
+GA AZ9YS
+UT WOS:000348571300004
+DA 2019-12-28
+ER
+
+PT J
+AU van Oordt, MRC
+AF van Oordt, Maarten R. C.
+TI Securitization and the dark side of diversification
+SO JOURNAL OF FINANCIAL INTERMEDIATION
+LA English
+DT Article
+DE Securitization; Diversification; Systemic risk; Risk management;
+   Tranching
+ID CREDIT RISK TRANSFER; LOAN SALES; SECURITY DESIGN; SYSTEMIC RISK; BANKS;
+   DERIVATIVES; MODEL; FAIL; TOO
+AB Diversification by banks affects the systemic risk of the sector. Importantly, Wagner (2010) shows that linear diversification increases systemic risk. We consider the case of securitization, whereby loan portfolios are sliced into tranches with different seniority levels. We show that tranching offers nonlinear diversification strategies, which can reduce the failure risk of individual institutions beyond the minimum level attainable by linear diversification without increasing systemic risk. (C) 2013 Elsevier Inc. All rights reserved.
+C1 De Nederlandsche Bank, Econ & Res Div, NL-1000 AB Amsterdam, Netherlands.
+RP van Oordt, MRC (reprint author), De Nederlandsche Bank, Econ & Res Div, POB 98, NL-1000 AB Amsterdam, Netherlands.
+EM M.R.C.van.Oordt@DNB.nl
+OI van Oordt, Maarten/0000-0002-9830-287X
+CR Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   BOOT AWA, 1993, J FINANC, V48, P1349
+   Chiesa G, 2008, J FINANC INTERMED, V17, P464, DOI 10.1016/j.jfi.2008.07.003
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   DeMarzo P, 1999, ECONOMETRICA, V67, P65, DOI 10.1111/1468-0262.00004
+   DeMarzo PM, 2005, REV FINANC STUD, V18, P1, DOI 10.1093/rfs/hhi008
+   Duffee GR, 2001, J MONETARY ECON, V48, P25, DOI 10.1016/S0304-3932(01)00063-0
+   GORTON G, 1990, J FINANC, V45, P49, DOI 10.2307/2328809
+   GORTON GB, 1995, J MONETARY ECON, V35, P389, DOI 10.1016/0304-3932(95)01199-X
+   Hakenes H, 2010, J FINANC INTERMED, V19, P308, DOI 10.1016/j.jfi.2010.03.001
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Morrison AD, 2005, J BUS, V78, P621, DOI 10.1086/427641
+   Parlour CA, 2008, J FINANC, V63, P1291, DOI 10.1111/j.1540-6261.2008.01358.x
+   PENNACCHI GG, 1988, J FINANC, V43, P375, DOI 10.2307/2328466
+   Riddiough TJ, 1997, J FINANC INTERMED, V6, P121, DOI 10.1006/jfin.1997.0214
+   Shaffer S, 1994, RES FINANCIAL SERVIC, V6, P249
+   Shaffer Sherrill, 1985, ATLANTIC ECON J, V13, P99
+   Slijkerman JF, 2013, J BANK FINANC, V37, P773, DOI 10.1016/j.jbankfin.2012.10.027
+   WAGNER W, 2006, J FINANCIAL STABILIT, V2, P173
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 24
+TC 8
+Z9 8
+U1 1
+U2 19
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1042-9573
+EI 1096-0473
+J9 J FINANC INTERMED
+JI J. Financ. Intermed.
+PD APR
+PY 2014
+VL 23
+IS 2
+BP 214
+EP 231
+DI 10.1016/j.jfi.2013.05.001
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA AG0SN
+UT WOS:000335126000003
+DA 2019-12-28
+ER
+
+PT J
+AU Revenda, Z
+AF Revenda, Zbynek
+TI ASSISTANCE TO TROUBLED BANKS - THEORY, REALITY AND MONETARY IMPLICATIONS
+SO POLITICKA EKONOMIE
+LA Spanish
+DT Article
+DE bank regulation and supervision; bank run; central bank; contagion risk;
+   deposit insurance; lender of last resort; money multiplier; subordinated
+   bonds; systematically important bank
+AB The recent financial crisis has significantly modified the approach to helping troubled banks. The traditional role of the central bank has shifted toward non-credit forms of assistance, provided mainly by the state, and even toward assisting insolvent banks. State assistance - directly or through specialized institutions - mainly concerned banks too big to fail, i.e. systemically important banks. State aid should be forthcoming only once funds available from shareholders, owners of subordinated debt and uninsured depositors have been exhausted. Credit by a central bank should be granted only to temporarily illiquid banks. Primarily as this credit assistance can have significant monetary implications, in as much as it leads to the growth of reserves in the banking system. The impact on the economy then depends primarily on the credit activity of commercial banks. The author compares theory against practice and, using the U.S. and the EMU as an example, analyses the monetary impact using the development of money multipliers.
+C1 Univ Econ, CZ-13067 Prague 3, Czech Republic.
+RP Revenda, Z (reprint author), Univ Econ, Nam W Churchilla 4, CZ-13067 Prague 3, Czech Republic.
+EM revy@vse.cz
+CR Bagehot W, 1873, LOMBARD STREET A DES
+   BENSTON G. J., 1986, PERSPECTIVES ON SAFE
+   BLAHOVA N., 2012, EUROPEAN FINANCIAL A, V7, P41
+   DOWD K., 1988, HOBART PAPER 112
+   DVOkAK P., 2008, VEREJNE FINANCE FISK
+   FISCHER S., 1999, CENTRAL BANKING, V9
+   GOODHART C. A. E., 2000, ECONOMIC REVIEW
+   HOLSMANN J. G., 2003, THE INDEPENDENT REVI, V7
+   KAUFMAN G. G, 2002, EC PERSPECTIVES, V26, P27
+   MANDEL M., 2012, BANKOVNICTVI, P19
+   Mandel M, 2011, POLIT EKON, V59, P58, DOI 10.18267/j.polek.772
+   MUSILEK P., 2011, TRHY CENNYCH PAPLRU, P2011
+   REVENDA Z., 2000, POLITICKA EKONOMIE, V48, P335
+   Revenda Z., 2011, CENTRALNI BANKOVNICT
+   REVENDA Z., 2003, ACTA OECONOMICA PRAG, V11, P29
+   Revenda Z, 2013, POLIT EKON, V61, P149, DOI 10.18267/j.polek.892
+   SCHULTZ F. H., 2005, REVIEW PART 2, V87, P343
+   VIVES X., 2010, WORKING PAPER 852
+NR 18
+TC 1
+Z9 1
+U1 0
+U2 6
+PU VYSOKA SKOLA EKONOMICKA
+PI PRAGUE
+PA NAM W CHURCHILLA 4, PRAGUE 13067, CZECH REPUBLIC
+SN 0032-3233
+J9 POLIT EKON
+JI Polit. Ekon.
+PY 2014
+VL 62
+IS 2
+BP 270
+EP 288
+DI 10.18267/j.polek.950
+PG 19
+WC Economics; Political Science
+SC Business & Economics; Government & Law
+GA AH4CW
+UT WOS:000336075400007
+OA Bronze
+DA 2019-12-27
+ER
+
+PT J
+AU Schuermann, T
+AF Schuermann, Ti
+TI Stress testing banks
+SO INTERNATIONAL JOURNAL OF FORECASTING
+LA English
+DT Article
+DE Capital requirements; Leverage; Systemic risk
+ID INDUSTRY
+AB How much capital and liquidity does a bank need to support its risk taking activities? During the recent (and still ongoing) financial crisis, answers to this question using standard approaches, e.g., regulatory capital ratios, were no longer credible, and thus broad-based supervisory stress testing became the new tool. Bank balance sheets are notoriously opaque and susceptible to asset substitution (easy swapping of high risk for low risk assets), so stress tests, tailored to the situation at hand, can provide clarity by openly disclosing details of the results and approaches taken, allowing trust to be regained. With that trust re-established, the cost-benefit of stress testing disclosures may tip away from bank-specific towards more aggregated information. This paper lays out a framework for the stress testing of banks: why it is useful and why it has become such a popular tool for the regulatory community in the course of the recent financial crisis; how stress testing is done (design and execution); and finally, with stress testing results in hand, how one should handle their disclosure, and whether it should be different in crisis vs. "normal" times. (C) 2013 International Institute of Forecasters. Published by Elsevier B.V. All rights reserved.
+C1 [Schuermann, Ti] Oliver Wyman, New York, NY USA.
+   [Schuermann, Ti] Wharton Financial Inst Ctr, Philadelphia, PA USA.
+RP Schuermann, T (reprint author), 1166 Ave Amer,29th Floor, New York, NY 10036 USA.
+EM til.schuermann@oliverwyman.com
+CR Acharya VV, 2007, J FINANC ECON, V85, P787, DOI 10.1016/j.jfineco.2006.05.011
+   Acharya Viral V., 2011, 490 FED RES BANK NEW
+   Allen L., 2004, UNDERSTANDING MARKET
+   [Anonymous], 2001, SURV STRESS TESTS CU
+   BANGIA A, 2002, J BANK FINANC, V26, P235
+   Berkowitz J., 2000, J RISK, V2, P1
+   Board of Governors of the Federal Reserve System, 2012, COMPR CAP AN REV 201
+   Canabarro E., 2010, COUNTERPARTY CREDIT
+   Dang T. V., 2010, WORKING PAPER
+   English W. B, 2002, BIS Q REV, P67
+   European Banking Authority, 2011, 2011 EU WID STRESS T
+   Fender I., 2001, CURRENT ISSUES EC FI, V7
+   Flannery M. J., 2012, WORKING PAPER
+   Foglia A., 2008, 37 BANC IT
+   Goldstein I., 2012, WORKING PAPER
+   Gupton GM, 1997, CREDITMETRICSTM TECH
+   Hopper G., 2010, COUNTERPARTY CREDIT
+   Jorion P., 2007, VALUE RISK NEW BENCH
+   Jorion P. H, 1996, VALUE RISK NEW BENCH
+   Koyluoglu U, 1998, RISK, V11, P56
+   KUPIEC PH, 1998, J DERIV, V6, P7, DOI DOI 10.3905/JOD.1998.408008
+   KURITZKES A., 2009, FINANCIAL TIMES
+   Lester J., 2012, STRATEGIC CAPITAL DE
+   Morgan DP, 2002, AM ECON REV, V92, P874, DOI 10.1257/00028280260344506
+   Purnanandam A, 2007, J MONETARY ECON, V54, P1769, DOI 10.1016/j.jmoneco.2006.07.009
+   Rebonato R., 2010, COHERENT STRESS TEST
+   Stiroh KJ, 2004, J MONEY CREDIT BANK, V36, P853, DOI 10.1353/mcb.2004.0076
+   Wilde Tom, 1997, CREDITRISK CREDIT RI
+   Wyman O., 2012, ASSET QUALITY REV BO
+   Wyman Oliver, 2012, BANK SPAIN STRESS TE
+NR 30
+TC 21
+Z9 21
+U1 0
+U2 21
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0169-2070
+EI 1872-8200
+J9 INT J FORECASTING
+JI Int. J. Forecast.
+PD JUL-SEP
+PY 2014
+VL 30
+IS 3
+BP 717
+EP 728
+DI 10.1016/j.ijforecast.2013.10.003
+PG 12
+WC Economics; Management
+SC Business & Economics
+GA AL0HU
+UT WOS:000338808800031
+DA 2019-12-28
+ER
+
+PT J
+AU Boyson, N
+   Helwege, J
+   Jindra, J
+AF Boyson, Nicole
+   Helwege, Jean
+   Jindra, Jan
+TI Crises, Liquidity Shocks, and Fire Sales at Commercial Banks
+SO FINANCIAL MANAGEMENT
+LA English
+DT Article
+ID RISK; MARKET; CONTAGION; REGULATIONS; EQUILIBRIUM; RELUCTANCE;
+   ISSUANCES; VOLUNTARY; BORROW; DEBT
+AB If liquidity shortages cause financial crises, a lender of last resort can provide funds to banks facing potential fire sales. However, if funding problems primarily occur at banks with existing solvency problems, then government liquidity programs may not spur bank lending. We find that commercial bank funding does not typically dry up in a crisis, not even during the subprime crisis. Rather, weak banks are more likely to borrow less. Furthermore, banks rely more on deposits and newly issued equity than fire sales. When they do sell assets, they cherry pick assets in order to alleviate pressure from capital regulations.
+C1 [Boyson, Nicole] Northeastern Univ, Boston, MA 02115 USA.
+   [Helwege, Jean] Univ S Carolina, Columbia, SC 29208 USA.
+   [Jindra, Jan] Secur & Exchange Commiss, San Francisco, CA USA.
+RP Boyson, N (reprint author), Northeastern Univ, Boston, MA 02115 USA.
+CR Acharya V. V., 2011, REV FINANCIAL STUD, V24, P1773
+   Acharya VV, 2013, J FINANC ECON, V107, P515, DOI 10.1016/j.jfineco.2012.09.004
+   Acharya VV, 2013, REV FINANC, V17, P107, DOI 10.1093/rof/rfs022
+   Acharya VV, 2009, CRIT REV, V21, P195, DOI 10.1080/08913810902952903
+   Adrian T, 2008, LIQUIDITY FINANCIAL
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Afonso G, 2011, J FINANC, V66, P1109, DOI 10.1111/j.1540-6261.2011.01670.x
+   Ahmed S. A., 1995, J ACCOUNT ECON, V20, P207
+   Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Armantier O., 2011, STIGMA FINANCIAL MAR
+   Ashcraft A, 2010, J MONEY CREDIT BANK, V42, P551, DOI 10.1111/j.1538-4616.2010.00299.x
+   Badertscher BA, 2012, ACCOUNT REV, V87, P59, DOI 10.2308/accr-10166
+   BEATTY A, 1995, J ACCOUNTING RES, V33, P231, DOI 10.2307/2491487
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Berger AN, 2008, J FINANC SERV RES, V34, P123, DOI 10.1007/s10693-008-0044-5
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Bordo MD, 2010, J MONETARY ECON, V57, P1, DOI 10.1016/j.jmoneco.2009.10.015
+   Boyson N., 2013, CRISES LIQUIDITY SHO
+   Boyson N. M., 2013, THAWING FROZEN CAPIT
+   Boyson N. M., 2012, CRISES LIQUIDITY SHO
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Calomiris CW, 1997, AM ECON REV, V87, P863
+   Chari V. V., 2008, FACTS MYTHS FINANCIA
+   Cohen-Cole E., 2010, FINANCIAL SECTOR REA
+   Collin-Dufresne P., 2009, IS CREDIT EVENT RISK
+   Cornett MM, 2011, J FINANC ECON, V101, P297, DOI 10.1016/j.jfineco.2011.03.001
+   CORNETT MM, 1994, J FINANC ECON, V35, P99, DOI 10.1016/0304-405X(94)90019-1
+   Cornett MM, 1998, J FINANC, V53, P2139, DOI 10.1111/0022-1082.00085
+   Covitz D, 2013, J FINANC, V68, P815, DOI 10.1111/jofi.12023
+   Demsetz R, 1993, NEW YORK FEDERAL WIN, P75
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   Eisenbeis RA, 2009, AUST ECON REV, V42, P457, DOI 10.1111/j.1467-8462.2009.00571.x
+   Flannery MJ, 2008, REV FINANC, V12, P391, DOI 10.1093/rof/rfm007
+   Froot K. A, 2010, IRRATIONAL EC MAKING
+   Furfine C, 2001, ECON LETT, V72, P209, DOI 10.1016/S0165-1765(01)00419-0
+   Gatev E, 2006, J FINANC, V61, P867, DOI 10.1111/j.1540-6261.2006.00857.x
+   Gatev E, 2009, REV FINANC STUD, V22, P995, DOI 10.1093/rfs/hhm060
+   Geanakoplos J, 2010, NBER MACROECON ANNU, V24, P1
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Greenwood R., 2011, VULNERABLE BANKS
+   Gromb D, 2002, J FINANC ECON, V66, P361, DOI 10.1016/S0304-405X(02)00228-3
+   He ZG, 2010, IMF ECON REV, V58, P118, DOI 10.1057/imfer.2010.6
+   Ivashina V, 2010, J FINANC ECON, V97, P319, DOI 10.1016/j.jfineco.2009.12.001
+   Iyer R., 2013, INTERBANK LIQUIDITY
+   Kahle KM, 2013, J FINANC ECON, V110, P280, DOI 10.1016/j.jfineco.2013.02.014
+   Kane E.J., 2009, YALE J REGULATION, V26, P405
+   KANE EJ, 1989, J ECON PERSPECT, V3, P31, DOI 10.1257/jep.3.4.31
+   Kashyap A. K., 2004, FEDERAL RESERVE BANK, V28, P18
+   Kashyap A.K., 1995, CARNEGIE-ROCHESTER C, V42, P151, DOI DOI 10.1016/0167-2231(95)00032-U
+   Korinek A, 2011, SYSTEMIC RISK TAKING
+   Krishnamurthy A, 2010, AM ECON J-MACROECON, V2, P1, DOI 10.1257/mac.2.3.1
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   MOYER SE, 1990, J ACCOUNT ECON, V13, P123, DOI 10.1016/0165-4101(90)90027-2
+   MYERS SC, 1977, J FINANC ECON, V5, P147, DOI 10.1016/0304-405X(77)90015-0
+   Peristiani S, 1998, REV ECON STAT, V80, P611, DOI 10.1162/003465398557690
+   Santos JAC, 2011, REV FINANC STUD, V24, P1916, DOI 10.1093/rfs/hhq115
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Slovin MB, 1999, J FINANC ECON, V54, P197, DOI 10.1016/S0304-405X(99)00036-7
+   Uhlig H, 2010, J MONETARY ECON, V57, P78, DOI 10.1016/j.jmoneco.2009.10.010
+NR 63
+TC 11
+Z9 11
+U1 0
+U2 23
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0046-3892
+EI 1755-053X
+J9 FINANC MANAGE
+JI Financ. Manage.
+PD WIN
+PY 2014
+VL 43
+IS 4
+BP 857
+EP 884
+DI 10.1111/fima.12056
+PG 28
+WC Business, Finance
+SC Business & Economics
+GA AU0IW
+UT WOS:000345307600005
+DA 2019-12-27
+ER

@@ -1,0 +1,587 @@
+
+PT J
+AU Kenett, DY
+   Huang, XQ
+   Vodenska, I
+   Havlin, S
+   Stanley, HE
+AF Kenett, Dror Y.
+   Huang, Xuqing
+   Vodenska, Irena
+   Havlin, Shlomo
+   Stanley, H. Eugene
+TI Partial correlation analysis: applications for financial markets
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+ID SYSTEMIC RISK; CONDITIONAL CORRELATION; CROSS-CORRELATIONS; BEHAVIOR
+C1 [Kenett, Dror Y.; Huang, Xuqing; Vodenska, Irena; Havlin, Shlomo; Stanley, H. Eugene] Boston Univ, Ctr Polymer Studies, Boston, MA 02215 USA.
+   [Kenett, Dror Y.; Huang, Xuqing; Vodenska, Irena; Havlin, Shlomo; Stanley, H. Eugene] Boston Univ, Dept Phys, Boston, MA 02215 USA.
+   [Vodenska, Irena] Boston Univ, Metropolitan Coll, Adm Sci Dept, Boston, MA 02215 USA.
+   [Havlin, Shlomo] Bar Ilan Univ, Dept Phys, IL-52900 Ramat Gan, Israel.
+RP Kenett, DY (reprint author), Boston Univ, Ctr Polymer Studies, Boston, MA 02215 USA.
+EM dkenett@bu.edu; eqing2700@gmail.com
+FU ONROffice of Naval Research [N00014-09-1-0380, N00014-12-1-0548];
+   DTRAUnited States Department of DefenseDefense Threat Reduction Agency
+   [HDTRA-1-10-1- 0014, HDTRA-1-09-1-0035]; NSFNational Science Foundation
+   (NSF) [CMMI 1125290]; European MULTIPLEX (EU-FET project) [317532];
+   CONGAS [FP7-ICT-2011-8-317672]; FET Open Project [FOC 255987, FOC-INCO
+   297149]; LINC project - (ECs Marie-Curie ITN program) [289447];
+   DFGGerman Research Foundation (DFG); Next Generation Infrastructure
+   (Bsik); Bi-national US-Israel Science Foundation (BSF)US-Israel
+   Binational Science Foundation; Israel Science FoundationIsrael Science
+   Foundation
+FX We wish to thank ONR (Grant N00014-09-1-0380, Grant N00014-12-1-0548),
+   DTRA (Grant HDTRA-1-10-1- 0014, Grant HDTRA-1-09-1-0035), NSF (Grant
+   CMMI 1125290), the European MULTIPLEX (EU-FET project 317532), CONGAS
+   (Grant FP7-ICT-2011-8-317672), FET Open Project FOC 255987 and FOC-INCO
+   297149, and LINC (no. 289447 funded by the ECs Marie-Curie ITN program)
+   projects, DFG, the Next Generation Infrastructure (Bsik), Bi-national
+   US-Israel Science Foundation (BSF) and the Israel Science Foundation for
+   financial support.
+CR Abergel F., 2011, ECONOPHYSICS ORDER D
+   Adrian T., 2011, TECHNICAL REPORT
+   Aste T, 2010, NEW J PHYS, V12, DOI 10.1088/1367-2630/12/8/085009
+   Baba K, 2004, AUST NZ J STAT, V46, P657, DOI 10.1111/j.1467-842X.2004.00360.x
+   Basu B, 2010, NEW ECON WINDOWS, P1, DOI 10.1007/978-88-470-1501-2
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Bouchaud JP, 2003, THEORY FINANCIAL RIS
+   Brock WA, 2009, J ECON DYN CONTROL, V33, P1912, DOI 10.1016/j.jedc.2009.05.004
+   Campbell J. Y., 1997, ECONOMETRICS FINANCI, V1
+   Campbell RAJ, 2008, J EMPIR FINANC, V15, P287, DOI 10.1016/j.jempfin.2007.01.001
+   CHOU YL, 1975, STAT ANAL BUSINESS E
+   Cizeau P, 2001, QUANT FINANC, V1, P217, DOI [10.1080/713665669, 10.1088/1469-7688/1/2/303]
+   Cont R, 2000, MACROECON DYN, V4, P170
+   Eisler Z, 2006, PHYS REV E, V73, DOI 10.1103/PhysRevE.73.046109
+   Elton E.J., 2009, MODERN PORTFOLIO THE
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   Fisher R.A., 1915, BIOMETRIKA, V215, P507, DOI DOI 10.2307/2331838
+   Fisher RA, 1924, METRON, V3, P329
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Huang XQ, 2013, SCI REP-UK, V3, DOI 10.1038/srep01219
+   Kendall MG, 1938, BIOMETRIKA, V30, P81, DOI 10.2307/2332226
+   Kenett Dror Y., 2012, International Journal of Modern Physics: Conference Series, V16, P13, DOI 10.1142/S201019451200774X
+   Kenett DY, 2012, INT J BIFURCAT CHAOS, V22, DOI 10.1142/S0218127412501817
+   Kenett DY, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0019378
+   Kenett DY, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0015032
+   Kenett YN, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0023912
+   Krishnan CNV, 2009, J EMPIR FINANC, V16, P353, DOI 10.1016/j.jempfin.2008.10.005
+   Laloux L, 1999, PHYS REV LETT, V83, P1467, DOI 10.1103/PhysRevLett.83.1467
+   LALOUX L, 2000, INT J THEOR APPL FIN, V3, P391, DOI DOI 10.1142/S0219024900000255
+   LO AW, 1990, J ECONOMETRICS, V45, P181, DOI 10.1016/0304-4076(90)90098-E
+   Lux T, 1999, NATURE, V397, P498, DOI 10.1038/17290
+   Madi A., 2011, CHAOS INTERDIS J NON, V21
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Maugis PA, 2014, ARXIV14011130
+   Morck R, 2000, J FINANC ECON, V58, P215, DOI 10.1016/S0304-405X(00)00071-4
+   Pearson K., 1895, PHILOS T R SOC A, V186, P343, DOI DOI 10.1098/RSTA.1895.0010
+   Plerou V, 1999, PHYS REV LETT, V83, P1471, DOI 10.1103/PhysRevLett.83.1471
+   Podobnik B, 2009, P NATL ACAD SCI USA, V106, P22079, DOI 10.1073/pnas.0911983106
+   Pollet JM, 2010, J FINANC ECON, V96, P364, DOI 10.1016/j.jfineco.2010.02.011
+   Shapira Y, 2009, EUR PHYS J B, V72, P657, DOI 10.1140/epjb/e2009-00384-y
+   Sornette D, 2003, WHY STOCK MARKETS CRASH: CRITICAL EVENTS IN COMPLEX FINANCIAL SYSTEMS, P1
+   Takayasu H, 2006, PRACTICAL FRUITS ECO
+   Tumminello M, 2010, J ECON BEHAV ORGAN, V75, P40, DOI 10.1016/j.jebo.2010.01.004
+   Voit J, 2005, STAT MECH FINANCIAL
+NR 49
+TC 42
+Z9 42
+U1 5
+U2 60
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD APR 3
+PY 2015
+VL 15
+IS 4
+SI SI
+BP 569
+EP 578
+DI 10.1080/14697688.2014.946660
+PG 10
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA CD1HC
+UT WOS:000350824600001
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Hu, DN
+   Schwabe, G
+   Li, X
+AF Hu, Daning
+   Schwabe, Gerhard
+   Li, Xiao
+TI Systemic risk management and investment analysis with financial network
+   analytics: research opportunities and challenges
+SO FINANCIAL INNOVATION
+LA English
+DT Article
+DE Financial network analytics; Risk management; Investment analysis
+ID CONTAGION
+AB Recent economic crises like the 2008 financial tsunami has demonstrated a critical need for better understanding of the topologies and various economic, social, and technical mechanisms of the increasingly interconnected global financial system. Such a system largely relies on the interconnectedness of various financial entities such as banks, firms, and investors through complex financial relationships such as interbank payment networks, investment relations, or supply chains. A network-based perspective or approach is needed to study various financial networks in order to improve or extend financial theories, as well as develop business applications. Moreover, with the advance of big data related technologies, and the availability of huge amounts of financial and economic network data, advanced computing technologies and data analytics that can comprehend such big data are also needed. We referred this approach as financial network analytics. We suggest that it will enable stakeholders better understand the network dynamics within the interconnected global financial system and help designing financial policies such as managing and monitoring banking systemic risk, as well as developing intelligent business applications like banking advisory systems. In this paper, we review the existing research about financial network analytics and then discuss its main research challenges from the economic, social, and technological perspectives.
+C1 [Hu, Daning; Schwabe, Gerhard; Li, Xiao] Univ Zurich, Dept Informat, Fac Econ Business Adm & Informat Technol, Zurich, Switzerland.
+RP Li, X (reprint author), Univ Zurich, Dept Informat, Fac Econ Business Adm & Informat Technol, Zurich, Switzerland.
+EM davidlixiao@ifi.uzh.ch
+FU Department of informatics, Faculty of Economics, Business Administration
+   and Information Technology, University of Zurich
+FX This research was partially supported by Department of informatics,
+   Faculty of Economics, Business Administration and Information
+   Technology, University of Zurich.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acemoglu Daron, 2014, SYSTEMIC RISK ENDOGE
+   Amini H, 2010, RESILIENCE CONTAGION
+   Anand K., 2014, QUANTITATIVE FINANCE, P1
+   Angelini P, 1996, J BANK FINANC, V20, P853, DOI 10.1016/0378-4266(95)00029-1
+   Arias M, 2013, ACM T INTEL SYST TEC, V5, DOI 10.1145/2542182.2542190
+   Battiston S, 2015, LEVERAGING NETWORK S
+   Battiston S, 2013, J FINANC MANAGE MARK, P129, DOI [10.12831/75568, DOI 10.12831/75568]
+   Bollen J, 2011, COMPUTER, V44, P90
+   Bouktif Salah, 2013, 2013 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM), P837
+   Bradbury Meike, 2014, THORSTEN ZEISBERGER, DOI [10.2139/ssrn.2179276, DOI 10.2139/SSRN.2179276]
+   Chen Z, 2013, 2013 ASE/IEEE INTERNATIONAL CONFERENCE ON SOCIAL COMPUTING (SOCIALCOM), P913, DOI 10.1109/SocialCom.2013.141
+   COHEN L, 2007, 13121 NBER
+   De Choudhury M., 2008, P 19 ACM C HYP HYP, P55, DOI DOI 10.1145/1379092.1379106
+   Eboli  M., 2004, SYSTEMIC RISK UNPUB
+   Efma, 2015, GOING DIG BANK TRANS
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Gale DM, 2007, AM ECON REV, V97, P99, DOI 10.1257/aer.97.2.99
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Heinrich P., 2014, CSCW P, P171
+   Hu DN, 2012, MIS QUART, V36, P1269
+   Jin YZ, 2012, SOC NETW ANAL MIN, V2, P217, DOI 10.1007/s13278-011-0045-5
+   Kinnan C, 2012, AM ECON REV, V102, P289, DOI 10.1257/aer.102.3.289
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Lu CT, 2014, WSDM'14: PROCEEDINGS OF THE 7TH ACM INTERNATIONAL CONFERENCE ON WEB SEARCH AND DATA MINING, P573, DOI 10.1145/2556195.2556251
+   Makrehchi M, 2013, 2013 IEEE/WIC/ACM INTERNATIONAL JOINT CONFERENCES ON WEB INTELLIGENCE (WI) AND INTELLIGENT AGENT TECHNOLOGIES (IAT), VOL 1, P337, DOI 10.1109/WI-IAT.2013.48
+   Mao Y, 2013, P 7 WORKSH SOC NETW, V4, P1
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Nueesch R, 2014, REALIZING VALUE TABL
+   Nussbaumer P, 2009, ISI
+   Nussbaumer P., 2012, ACM T MANAGEMENT INF, V3, P2
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Saito K, 2014, P 12 INT C KNOWL BAS
+   Schwabe G, 2009, WHY INFORM TECHNOLOG
+   Zhang WP, 2015, IEEE INTELL SYST, V30, P26, DOI 10.1109/MIS.2015.25
+NR 38
+TC 7
+Z9 7
+U1 1
+U2 4
+PU SPRINGEROPEN
+PI LONDON
+PA CAMPUS, 4 CRINAN ST, LONDON, N1 9XW, ENGLAND
+SN 2199-4730
+J9 FINANC INNOV
+JI Financ. Innov.
+PD DEC
+PY 2015
+VL 1
+IS 1
+AR UNSP 2
+DI 10.1186/s40854-015-0001-x
+PG 9
+WC Business, Finance; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematical Methods In Social Sciences
+GA VC8KQ
+UT WOS:000434739500002
+OA DOAJ Gold, Green Published, Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Aparicio, D
+   Fraiman, D
+AF Aparicio, Diego
+   Fraiman, Daniel
+TI BANKING NETWORKS AND LEVERAGE DEPENDENCE IN EMERGING COUNTRIES
+SO ADVANCES IN COMPLEX SYSTEMS
+LA English
+DT Article
+DE Leverage dynamics; banking network; balance sheet data
+ID BALANCE SHEETS; SYSTEMIC RISK; MARKET; INFORMATION; DISCIPLINE;
+   COMPLEXITY; CONTAGION; SIZE
+AB We construct banking networks using bank-level balance sheet data from 2005 to 2010 from five emerging countries: Argentina, Brazil, Mexico, South Africa, and Taiwan. The network interaction is based on the leverage ratio dependence between each pair of banks within a same country. Despite leverage and accounting rules heterogeneity, the results are robust across countries. The leverage diversity produces financial networks with a modular structure characterized by one large bank community, some small ones, and isolated banks. However, these groups of banks merge together creating a financial network topology that converges to a unique large cluster at a relatively low leverage dependence level. Finally, we simulate the banking system through a model of corporate and interbank loans with credit shocks, where links between banks arise due to insufficient liquidity. The model yields leverage-based networks that are similar to the empirical ones. A model prediction for banks' growth is presented and tested in the data.
+C1 [Aparicio, Diego] MIT, Dept Econ, Cambridge, MA 02139 USA.
+   [Fraiman, Daniel] Univ San Andres, Dept Matemat & Ciencias, Vito Dumas 284,B1644BID, Buenos Aires, DF, Argentina.
+   [Fraiman, Daniel] Consejo Nacl Invest Cient & Tecn, RA-1033 Buenos Aires, DF, Argentina.
+RP Fraiman, D (reprint author), Univ San Andres, Dept Matemat & Ciencias, Vito Dumas 284,B1644BID, Buenos Aires, DF, Argentina.
+EM dfraiman@udesa.edu.ar
+RI Fraiman, Daniel/E-1581-2018
+OI Fraiman, Daniel/0000-0002-0482-9137
+CR [Anonymous], 2009, ROL MACR POL
+   Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   Bair S. C., 2011, P FED RES BANK CHIC
+   Bank for International Settlements, 2011, GLOB SYST IMP BANKS
+   Bank of England, 2011, INSTR MACR POL
+   Barros L. A. B, 2011, 233 BANC CENTR BRAS
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Basel Committee on Banking Supervision, 2004, BAS 2 INT CONV CAP M
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Blanchard O. J, 2009, IMF WORKING PAPERS
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Buiter W., 2007, LESSONS 2007 F UNPUB
+   Caldarelli G, 2007, SCALE FREE NETWORKS
+   Calvo G. A., 2003, 9828 NBER, V9828
+   Cespedes LF, 2004, AM ECON REV, V94, P1183, DOI 10.1257/0002828042002589
+   Chen YN, 1999, J POLIT ECON, V107, P946, DOI 10.1086/250086
+   Cont R., 2010, 219 BANC CENTR BRAS
+   D'Amato L., 2002, WORKING PAPER
+   Duffie D., 2008, 255 BIS
+   Elliot D. J., 2011, IDENTIFYING REGULATI
+   Flannery MJ, 1998, J MONEY CREDIT BANK, V30, P273, DOI 10.2307/2601102
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   GALIANI S, 2003, ECONOMIA, V3, P109
+   Gorton G. B., 2010, 0914 YALE ICF
+   Gyntelberg Jacob, 2008, BIS Q REV
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hannoun H., 2010, BASEL 3 CAPITAL FRAM
+   Heise S, 2012, EUR PHYS J B, V85, DOI 10.1140/epjb/e2012-20740-0
+   Imai M, 2006, J BANK FINANC, V30, P3433, DOI 10.1016/j.jbankfin.2006.01.009
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Kishan RP, 2000, J MONEY CREDIT BANK, V32, P121, DOI 10.2307/2601095
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Klodt H., 2009, CRISIS LESSONS 2007
+   Krugman P, 1999, INT TAX PUBLIC FINAN, V6, P459, DOI 10.1023/A:1008741113074
+   LeBaron B., 2006, AM ECON REV, V98, P246
+   Lengnick M, 2013, OPEN ASSESSMENT E J, V7, P1
+   Levy-Yeyati E., 2004, POLICY RES WORKING P, V3400
+   Maechler AM, 2006, J BANK FINANC, V30, P1871, DOI 10.1016/j.jbankfin.2005.07.010
+   Martinez Peria M. S., 2001, J FINANC, V56, P1029
+   MISHKIN FS, 1995, J ECON PERSPECT, V9, P3, DOI 10.1257/jep.9.4.3
+   Morris S, 2008, BROOKINGS PAP ECO AC, P229
+   Newman M., 2006, STRUCTURE DYNAMICS N
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Raberto M, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0023370
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 46
+TC 1
+Z9 1
+U1 0
+U2 8
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 0219-5259
+EI 1793-6802
+J9 ADV COMPLEX SYST
+JI Adv. Complex Syst.
+PD NOV-DEC
+PY 2015
+VL 18
+IS 7-8
+AR 1550022
+DI 10.1142/S0219525915500228
+PG 21
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA DF4PG
+UT WOS:000371331000004
+DA 2019-12-27
+ER
+
+PT J
+AU Brigo, D
+   Garcia, J
+   Pede, N
+AF Brigo, Damiano
+   Garcia, Joao
+   Pede, Nicola
+TI COCO BONDS PRICING WITH CREDIT AND EQUITY CALIBRATED FIRST-PASSAGE FIRM
+   VALUE MODELS
+SO INTERNATIONAL JOURNAL OF THEORETICAL AND APPLIED FINANCE
+LA English
+DT Article
+DE Contingent capital; CoCo bonds; AT1P model; firm value models; credit
+   default swap calibration; conversion time; default time; hybrid
+   credit-equity products; Basel III; systemic risk
+ID STOCHASTIC INTENSITY MODEL; STRUCTURAL MODELS; RISK; DEBT
+AB Since the beginning of the credit and liquidity crisis, financial institutions have been considering creating a convertible-bond type contract focusing on capital. Under the terms of this contract, a bond is converted into equity if the authorities deem the institution to be under-capitalized. This paper discusses this contingent capital (CoCo) bond instrument and presents a pricing methodology based on firm value models that calibrate exactly the credit term structure of the issuer either through credit default swaps or corporate bonds data. Decorrelation between the capital conversion trigger and credit quality is introduced. The equity value for the issuer is derived in closed form with a barrier option type formula. A stress test of model parameters is illustrated to account for potential model risk and the obtained prices are compared to the price obtained from a market source. Finally, a brief overview of how the instrument valuation performs compared to pure corporate bonds and a discussion involving the CDS bond basis are presented.
+C1 [Brigo, Damiano; Pede, Nicola] Univ London Imperial Coll Sci Technol & Med, Dept Math, South Kensington Campus, London SW7 2AZ, England.
+RP Pede, N (reprint author), Univ London Imperial Coll Sci Technol & Med, Dept Math, South Kensington Campus, London SW7 2AZ, England.
+EM damiano.brigo@imperial.ac.uk; jgarcia@bloomberg.net;
+   n.pede13@imperial.ac.uk
+CR Barucci E., 2011, DYNAMIC CAPITAL STRU
+   BIELECKI T, 2002, CREDIT RISK MODELING
+   BLACK F, 1976, J FINANC, V31, P351, DOI 10.2307/2326607
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Blundell-Wignall A., 2010, OECD J FINANCIAL MAR, V2010, P1
+   Brigo D, 2005, FINANC STOCH, V9, P29, DOI 10.1007/s00780-004-0131-x
+   Brigo D, 2013, COUNTERPARTY CREDIT RISK, COLLATERAL AND FUNDING: WITH PRICING CASES FOR ALL ASSET CLASSES, P1, DOI 10.1002/9781118818589
+   Brigo D., 2010, CREDIT RISK FRONTIER, P457
+   Brigo D., 2004, P FEA 2004 C MIT
+   Brigo D., 2010, CREDIT MODELS CRISIS
+   Brigo D, 2005, RISK MAG, V1, P89
+   Brigo D., 2013, COCO BONDS VALUATION
+   Brigo D, 2009, INT J THEOR APPL FIN, V12, P1007, DOI 10.1142/S0219024909005567
+   Brigo D, 2010, MATH FINANC, V20, P365, DOI 10.1111/j.1467-9965.2010.00401.x
+   Briys E, 1997, J FINANC QUANT ANAL, V32, P239, DOI 10.2307/2331175
+   De Spiegeleer J., 2011, CONTINGENT CONVERTIB
+   Duffie D, 1999, REV FINANC STUD, V12, P687, DOI 10.1093/rfs/12.4.687
+   Elizalde A., 2009, BOND CDC BASIS HDB
+   Eom YH, 2004, REV FINANC STUD, V17, P499, DOI 10.1093/rfs/hhg053
+   Forte S, 2012, J BANK FINANC, V36, P1639, DOI 10.1016/j.jbankfin.2012.01.010
+   Garcia J., 2009, ART CREDIT DEMYSTIFY
+   Goldstein R, 2001, J BUS, V74, P483, DOI 10.1086/322893
+   Gordy MB, 2003, J FINANC INTERMED, V12, P199, DOI 10.1016/S1042-9573(03)00040-8
+   Haworth H., 2009, CREDITSUISSE RES ANA
+   Jarrow RA, 2011, FINANC RES LETT, V8, P2, DOI 10.1016/j.frl.2010.08.002
+   KOTHARI V, 2006, SECURITIZATION FINAN
+   Li J., 2014, 1 APPROXIMATION COST
+   Li KL, 2008, J EMPIR FINANC, V15, P751, DOI 10.1016/j.jempfin.2008.01.001
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Rapisarda F., 2003, PRICING BARRIERS UND
+   Schaefer SM, 2008, J FINANC ECON, V90, P1, DOI 10.1016/j.jfineco.2007.10.006
+   Wilkens S., 2012, CONTINGENT CONVERTIB
+NR 32
+TC 3
+Z9 3
+U1 0
+U2 7
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 0219-0249
+EI 1793-6322
+J9 INT J THEOR APPL FIN
+JI Int. J. Theor. Appl. Financ.
+PD MAY
+PY 2015
+VL 18
+IS 3
+AR UNSP 1550015
+DI 10.1142/S0219024915500156
+PG 31
+WC Business, Finance
+SC Business & Economics
+GA CW0CP
+UT WOS:000364657200001
+DA 2019-12-28
+ER
+
+PT S
+AU Claessens, S
+AF Claessens, Stijn
+BE Lo, AW
+   Merton, RC
+TI An Overview of Macroprudential Policy Tools
+SO ANNUAL REVIEW OF FINANCIAL ECONOMICS, VOL 7
+SE Annual Review of Financial Economics
+LA English
+DT Article; Book Chapter
+DE financial stability; financial intermediation; externalities; market
+   failures; procyclicality; systemic risks; macroprudential policies
+ID MONETARY-POLICY; CREDIT; RISK; MODEL; VOLATILITY; STABILITY; FAIL
+AB Macroprudential policies caps on loan to value ratios, limits on credit growth and other balance-sheet restrictions, (countercyclical) capital and reserve requirements and surcharges, and Pigouvian levies have become part of the policy paradigm in emerging markets and developed countries alike. But knowledge of these tools is still limited. Macroprudential policies ought to be motivated by market failures and externalities, but these can be hard to identify. They may also interact with various other policies, such as monetary and microprudential, raising coordination issues. Countries, especially emerging markets, have used these tools, and analyses suggest that some of those tools reduce procyclicality and crisis risks. Yet, much remains to be studied, including the costs of such tools, as they may adversely affect resource allocations; how best to adapt these tools to a country's circumstances; and preferred institutional designs, including how to address political economy risks. As such, policy makers should move carefully in adopting these tools.
+C1 [Claessens, Stijn] Fed Reserve Syst, Board Governors, Div Int Finance, Washington, DC 20551 USA.
+RP Claessens, S (reprint author), Fed Reserve Syst, Board Governors, Div Int Finance, Washington, DC 20551 USA.
+EM stijn.claessens@frb.gov
+CR Acemoglu D., 2013, 18727 NBER
+   Acharya V, 2013, 18891 NBER
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV., 2013, ADAPTING MICROPRUDEN
+   Adam Klaus, 2013, HOUSING PRICES ROBUS
+   Adrian T, 2013, 601 FED RES BANK NY
+   Adrian T, 2014, REV FINANC STUD, V27, P373, DOI 10.1093/rfs/hht068
+   Adrian T, 2012, ANNU REV FINANC ECON, V4, P99, DOI 10.1146/annurev-financial-110311-101810
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Aiyar S, 2014, 508 BANK ENG
+   Aiyar S, 2014, J FINANC ECON, V113, P368, DOI 10.1016/j.jfineco.2014.05.003
+   Aiyar S, 2014, J MONEY CREDIT BANK, V46, P181, DOI 10.1111/jmcb.12086
+   Akerlof GA, 2014, WHAT HAVE WE LEARNED?: MACROECONOMIC POLICY AFTER THE CRISIS, P317
+   Allen F, 2004, J MONEY CREDIT BANK, V36, P453, DOI 10.1353/mcb.2004.0038
+   ALLEN F, 1994, AM ECON REV, V84, P933
+   Allen Franklin, 2007, UNDERSTANDING FINANC
+   Allen L., 2003, 126 BANK INT SETTL
+   Amato JD, 2004, J BANK FINANC, V28, P2641, DOI 10.1016/j.jbankfin.2004.06.005
+   Angelini P, 2010, 74 BANT IT
+   Angelini P, 2012, 140 BANK IT
+   [Anonymous], 2009, ROL MACR POL
+   Aregger N, 2013, 20132 SWISS NAT BANK
+   Arregui N., 2013, 13199 INT MON FUND
+   Arregui N, 2013, 13167 INT MON FUND
+   Arsov I, 2013, 13115 INT MON FUND
+   Bank Int. Settl, 2014, 84 ANN REP 1 APR 201
+   Bank of England, 2011, INSTR MACR POL
+   Barberis NC, 2013, J ECON PERSPECT, V27, P173, DOI 10.1257/jep.27.1.173
+   Basel Comm. Bank. Superv, 2010, CONS DOC COUNT CAP B
+   Basel Committee on Banking Supervision, 2010, ASS LONG TERM EC IMP
+   Basel Committee on Banking Supervision, 2013, GLOB SYST IMP BANK U
+   Basel Committee on Banking Supervision (Basel), 2011, BAS 3 GLOB REG FRAM
+   Bean C, 2010, ANN C FED RES BANK K
+   Bebchuk LA, 2011, REV FINANC STUD, V24, P3519, DOI 10.1093/rfs/hhr086
+   BECK T., 2008, 4656 WORLD BANK POL
+   Belles J, 2014, 1457 INT MON FUND
+   Benes J., 2014, 1456 INT MON FUND
+   BERNANKE BS, 1991, BROOKINGS PAP ECO AC, P205
+   Bernanke BS, 2001, AM ECON REV, V91, P253, DOI 10.1257/aer.91.2.253
+   Bianchi J, 2010, AM ECON REV, V100, P398, DOI 10.1257/aer.100.2.398
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Blancher N, 2013, 13168 INT MON FUND
+   Borio C, 2003, MONETARY POLICY AND UNCERTAINTY: ADAPTING TO A CHANGING ECONOMY, P131
+   Borio C., 2003, 128 BANK INT SETTL
+   Brunnermeier M.K., 2014, RISK TOPOGRAPHY SYST
+   Brunnermeier MK, 2013, ECON SOC MONOGR, P3
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   Brunnermeier MK, 2009, GENEVA REP WORLD EC, V11
+   Bruno V, 2014, SCAND J ECON, V116, P128, DOI 10.1111/sjoe.12037
+   Caballero RJ, 2004, J ECON THEORY, V119, P104, DOI 10.1016/S0022-0531(03)00227-8
+   Calomiris CW, 2013, BORSA ISTANB REV, V13, P65, DOI 10.1016/j.bir.2013.10.011
+   Camors C.D., 2014, MACROPRUDENTIAL MONE
+   Canuto O, 2013, DEALING CHALLENGES M
+   Carlstrom CT, 2010, J MONEY CREDIT BANK, V42, P37, DOI 10.1111/j.1538-4616.2010.00329.x
+   Cerutti E, 2014, SYSTEMIC RISK GLOBAL
+   Cerutti E, 2014, 1469 INT MON FUND
+   Cerutti E, 2015, 1561 INT MON FUND
+   Claessens S, 2011, WORLD SCI STUDIES IN, V17
+   Claessens S, 2012, 1212 INT MON FUND
+   Claessens S., 2014, 1446 INT MON FUND
+   Claessens S., 2015, YALE J REGUL, V31, P735
+   Claessens S, 2013, J INT MONEY FINANC, V39, P153, DOI 10.1016/j.jimonfin.2013.06.023
+   Clement P., 2010, BIS Q REV        MAR, P59
+   Committee on the Global Financial System, 2010, CGFS PUBL, V38
+   Committee on the Global Financial System, 2012, CGFS PUBL, V48
+   Cordella T, 2014, 6793 WORLD BANK POL
+   Crockett A., 2000, COMMUNICATION   0921
+   Crowe C., 2011, 1102 INT MON FUND
+   CURDIA V., 2009, 278 BANK INT SETTL
+   de Alooij RA., 2011, 1111 INT MON FUND
+   De Nicolo G., 2012, 1205 INT MON FUND
+   De Nicolo G, 2012, 1272 INT MON FUND
+   Dell'Ariccia G., 2012, 1206 INT MON FUND
+   Dell'Ariccia G, 2006, J FINANC, V61, P2511, DOI 10.1111/j.1540-6261.2006.01065.x
+   Dell'Ariccia G, 2013, ANNU REV FINANC ECON, V5, P123, DOI 10.1146/annurev-financial-110112-121021
+   Demirguc-Kunt A, 2002, J MONETARY ECON, V49, P1373, DOI 10.1016/S0304-3932(02)00171-X
+   DemirgucKunt A, 2008, DEPOSIT INSURANCE AROUND THE WORLD: ISSUES OF DESIGN AND IMPLEMENTATION, P1
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   Drehmann M., 2011, 342 BANK INT SETTL
+   Drehmann M, 2010, 298 BANK INT SETTL
+   Elliott DJ, 2013, 8 US DEP TREAS OFF F
+   Elliott DJ., 2011, CHOOSING MACROPRUDEN
+   Ellul A, 2013, MARK TO MARKET ACCOU
+   Eur. Cent. Bank, 2012, REP 1 2 YEARS MACR R
+   Eur. Cent. Bank, 2014, MACR RES NETW MARS
+   EUROPEAN SYSTEMIC RISC BOARD, 2014, HDB OP MACR POL BANK
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Farhi Emmanuel, 2013, 19313 NBER
+   Financ. Stab. Board, 2014, OV PROGR IMPL G20 RE
+   Financ. Stab. Board BaselComm. Bank. Superv, 2010, MACR ASS GROUP FIN R
+   Financial Stability Board, 2014, 2014 UPD LIST GLOB S
+   Forbes K, 2012, 18052 NBER
+   Freixas X, 2015, SYSTEMIC RISK, CRISES, AND MACROPRUDENTIAL REGULATION
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Galati G, 2014, 440 NETH BANK
+   Galati G., 2011, 337 BANK INT SETTL
+   Gennaioli N, 2013, J FINANC, V68, P1331, DOI 10.1111/jofi.12031
+   Goldstein I, 2013, J FINANC ECON, V109, P566, DOI 10.1016/j.jfineco.2013.03.011
+   Gorton GB, 2008, REV ECON STUD, V75, P1181, DOI 10.1111/j.1467-937X.2008.00497.x
+   Hahm J, 2011, 17780 NBER
+   Hahm JH, 2013, J MONEY CREDIT BANK, V45, P3, DOI 10.1111/jmcb.12035
+   Hanson SG, 2011, J ECON PERSPECT, V25, P3, DOI 10.1257/jep.25.1.3
+   Heath R., 2013, 136 INT MON FUND
+   Igan D, 2011, 11297 INT MON FUND
+   IMF, 2012, LIB MAN CAP FLOWS I
+   IMF, 2013, KEY ASP MACR POL, P1
+   IMF, 2010, FAIR SUBST CONTR FIN
+   IMF, 2011, MACR POL ORG FRAM
+   IMF (Int. Monet. Fund), 2014, 1448 IMF CTRY
+   IMF (Int. Monet. Fund), 2013, IMPL MACR POL SEL IS, P1
+   IMF (Int. Monet. Fund), 2012, OP MACR POL ACT, P1
+   IMF (Int. Monet. Fund), 2011, HOUS FIN FIN STAB BA, P111
+   IMF (Int. Monet. Fund), 2012, 12275 IMF
+   IMF (Int. Monet. Fund), 2013, KEY ASP MACR POL BAN
+   Int. Assoc. Insur. Superv, 2013, MACR POL SURV INS MA
+   International Monetary Fund, 2014, GLOB FIN STAB REP, P101
+   Jeanne O., 2013, 18675 NBER
+   Jeanne O, 2014, BANQUE FRANCE FINANC, V18, P163
+   Jeanne O., 2014, 19967 NBER
+   Jeanne O, 2010, AM ECON REV, V100, P403, DOI 10.1257/aer.100.2.403
+   Jimenez G, 2012, 2012011 EUR BANK CEN
+   Kannan P, 2009, 09251 INT MON FUND
+   Kashyap AK, 2011, IMF ECON REV, V59, P145, DOI 10.1057/imfer.2011.4
+   Keen M, 2012, 1248 INT MON FUND
+   Kocherlakota N, 2013, QUANT TOO BIG FAIL S
+   Korinek A., 2014, ANN CEMP CIEPS RES F
+   Korinek A, 2014, 14129 INT MON FUND
+   Korinek A, 2011, EUR ECON REV, V55, P371, DOI 10.1016/j.euroecorev.2010.12.008
+   Korinek Anton, 2014, 20805 NBER
+   Kuttner KN, 2013, 433 BANK INT SETTL
+   Laeven Luc, 2014, 144 INT MON FUND
+   Lambert FJ, 2014, BIG IS IMPLICIT SUBS
+   Laux C, 2010, J ECON PERSPECT, V24, P93, DOI 10.1257/jep.24.1.93
+   Lim CH, 2011, 11238 INT MON FUND
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   Manconi A, 2012, J FINANC ECON, V104, P491, DOI 10.1016/j.jfineco.2011.05.011
+   Merrill C.B., 2012, 18270 NBER
+   Nier EW, 2011, 1118 INT MON FUND
+   Osinski J, 2013, 1305 INT MON FUND
+   Ostry J. D., 2011, 1106 INT MON FUND
+   Ostry JD, 2013, 1311 INT MON FUND
+   Ostry Jonathan, 2012, 1210 INT MON FUND
+   Perotti E, 2011, INT J CENT BANK, V7, P3
+   Rabanal P., 2013, 13209 INT MON FUND
+   RAJAN RG, 1994, Q J ECON, V109, P399, DOI 10.2307/2118468
+   Ratnovski L., 2013, 13126 INT MON FUND
+   Ratnovski L, 2009, J FINANC INTERMED, V18, P541, DOI 10.1016/j.jfi.2007.08.001
+   Repullo R, 2013, REV FINANC STUD, V26, P452, DOI 10.1093/rfs/hhs118
+   Ruckes M, 2004, REV FINANC STUD, V17, P1073, DOI 10.1093/rfs/hhh011
+   Schmitt-Grohe S., 2012, 18031 NBER
+   Schoenmaker D, 2011, 13 DUIS SCH FIN
+   Shin H. S, 2010, NONCORE LIABILITIES
+   Shin HS., 2013, ADAPTING MACROPRUDEN
+   Shin HS, 2012, IMF ECON REV, V60, P155, DOI 10.1057/imfer.2012.6
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   SHLEIFER A, 2000, CLARENDON LECT INEFF
+   Stein J., 2013, RES S FED RES BANK S
+   Stein JC, 2012, Q J ECON, V127, P57, DOI 10.1093/qje/qjr054
+   Strahan PE, 2013, ANNU REV FINANC ECON, V5, P43, DOI 10.1146/annurev-financial-110112-121025
+   Ueda K, 2012, 12128 INT MON FUND
+   van den Noord P., 2005, ECON INTEGRATION, V1, P29
+   Vandenbussche J, 2012, 12303 INT MON FUND
+   Wagner W, 2011, J FINANC, V66, P1141, DOI 10.1111/j.1540-6261.2011.01666.x
+   Wong E., 2011, 012011 HONG KONG MON
+   Yellen J., 2014, MICH CAMD CENT BANK
+   Zhang L, 2014, 1422 INT MON FUND
+NR 166
+TC 20
+Z9 20
+U1 5
+U2 32
+PU ANNUAL REVIEWS
+PI PALO ALTO
+PA 4139 EL CAMINO WAY, PO BOX 10139, PALO ALTO, CA 94303-0897 USA
+SN 1941-1367
+BN 978-0-8243-4807-6
+J9 ANNU REV FINANC ECON
+JI Annu. Rev. Financ. Econ.
+PY 2015
+VL 7
+BP 397
+EP 422
+DI 10.1146/annurev-financial-111914-041807
+PG 26
+WC Business, Finance; Economics
+SC Business & Economics
+GA BE0XD
+UT WOS:000367291500014
+OA Green Published
+DA 2019-12-28
+ER

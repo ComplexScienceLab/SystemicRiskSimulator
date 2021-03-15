@@ -1,0 +1,387 @@
+
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Felix, FD
+   Locatelli, RL
+   Fernandes, JD
+   Ramalho, W
+AF Felix, Fernanda dos Santos
+   Locatelli, Ronaldo Lamounier
+   Fernandes, Joelson de Figueiredo
+   Ramalho, Wanderley
+TI CONSTRUCTION INDUSTRY IN BRAZIL : CREATING OR DESTROYING VALUE?
+SO REVISTA DE GESTAO E PROJETOS
+LA Portuguese
+DT Article
+DE EVA; Systemic Risk; Capital Structure; Capital Structure; Construction
+   Industry
+ID RISK; COST
+AB The articles provides an analysis of the performance of Brazilian companies of the construction sector in the buildings segment, adopting the Economic Value Added (EVA) approach. The sample contains companies that are among the largest in the segment and with rather similar systemic risk. To quantify the opportunity cost of capital of companies CAPM conditional model was adopted, considering the presence of data heteroscedasticity. Overall, companies have achieved positive operating returns. However, in relation to economic value generation, a distinct pattern was identified, characterized by the fact that all the analyzed companies destroyed value from 2008 to 2012, except MRV Construction Co., in 2010 and 2011. Therefore, there was no remuneration to shareholders consistent with business risk. These results are worrying in view of the importance of the sector and strengthen the warnings that not always a company that generates profit accounting creates value to shareholder, demonstrating the importance of calculating the EVA as a measure of corporate performance.
+C1 [Felix, Fernanda dos Santos; Fernandes, Joelson de Figueiredo] FPL, Adm, Pedro Leopoldo, MG, Brazil.
+   [Locatelli, Ronaldo Lamounier] FPL, Pedro Leopoldo, MG, Brazil.
+   [Ramalho, Wanderley] FPL, Curso Mestrado Profiss Adm, Pedro Leopoldo, MG, Brazil.
+RP Felix, FD (reprint author), FPL, Adm, Pedro Leopoldo, MG, Brazil.
+EM fernandafelix2007@hotmail.com; ronaldo.locatelli@yahoo.com.br;
+   joelsonf.fernandes@gmail.com; w.ramalho@yahoo.com.br
+CR Abramo P., 1979, PESQUISA SOCIAL
+   Assaf Neto A., 2008, REV ADM, V43, P72
+   ASSAF NETO A., 2010, FINANCAS CORPORATIVA
+   BAXTER ND, 1967, J FINANC, V22, P395, DOI 10.2307/2978892
+   Bonomo M., 2004, FINANCAS APLICADAS B
+   Brealey R., 1988, PRINCIPIOS FINANCAS
+   Brigham E. F, 2008, ADM FINANCEIRA TEORI
+   Bruni A. Risco, 1988, THESIS, p163f
+   Campbell John Y., 1997, ECONOMETRICS FINANCI
+   COPELAND T., 2013, AVALIACAO EMPRESAS V
+   Cyrela, REL ADM 2008 12
+   DAMODARAN A, 2010, AVALIACAO INVESTIMEN
+   Damodaran A., 2004, FINANCAS CORPORATIVA
+   Durand D., 1952, C RES BUS FIN NEW YO
+   Ehbar A., 1999, EVA VALOR EC AGREGAD
+   FAMA EF, 1992, J FINANC, V47, P427, DOI 10.2307/2329112
+   Fernandez P., 2014, CAPM ABSURD MO UNPUB
+   GAFISA, REL ADM 2008 12
+   Gitman L. J, 2010, PRINCIPIOS ADM FINAN
+   Gujarati D, 2006, ECONOMETRIA BASICA
+   JENSEN MC, 1976, J FINANC ECON, V3, P305, DOI 10.1016/0304-405X(76)90026-X
+   Kayo E., 2002, THESIS, p126f
+   Kishtainy N., 2012, O LIVRO DA EC
+   LINTNER J, 1965, REV ECON STAT, V47, P13, DOI 10.2307/1924119
+   Locatelli R., 2015, REV ORG RURAIS AGROI, V17, P72
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   MILLER MH, 1988, J ECON PERSPECT, V2, P99, DOI 10.1257/jep.2.4.99
+   MODIGLIANI F, 1958, AM ECON REV, V48, P261
+   MODIGLIANI F, 1963, AM ECON REV, V53, P433
+   MRV, REL ADM 2008 12
+   MYERS SC, 1984, J FINANC, V39, P575, DOI 10.2307/2327916
+   PDV, REL ADM 2008 12
+   POVOA A., 2012, VALUATION COMO PRECI
+   ROSS SA, 1976, J ECON THEORY, V13, P341, DOI 10.1016/0022-0531(76)90046-6
+   Rossi, RELATORIO ADM 2008 1
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   SHARPE WF, 1963, MANAGE SCI, V9, P277, DOI 10.1287/mnsc.9.2.277
+   Young S. D., 2003, EVA GESTAO BASEADA V
+NR 38
+TC 1
+Z9 1
+U1 0
+U2 6
+PU UNIV NOVE JULHO
+PI SAO PAULO
+PA AV FRANCISCO MATARAZZO 612, AGUA BRANCA, SAO PAULO, C05001-100, BRAZIL
+SN 2236-0972
+J9 REV GES PROJ
+JI Rev. Gest. Proj.
+PD JAN-APR
+PY 2016
+VL 7
+IS 1
+BP 70
+EP 82
+DI 10.5585/gep.v7i1.400
+PG 13
+WC Business
+SC Business & Economics
+GA DO5ZQ
+UT WOS:000377862200006
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Derbali, A
+   Hallara, S
+AF Derbali, Abdelkader
+   Hallara, Slaheddine
+TI Systemic risk of European financial institutions: Estimation and ranking
+   by the Marginal Expected Shortfall
+SO RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE
+LA English
+DT Article
+DE Systemic risk; MES; European financial institutions; DECO-GARCH
+AB The task of processing systemic events and its negative externalities requires approaches to measure systemic risks and break it down into contributions of different institutions. The main objective of the present paper is to estimate the systemic risk of European banks following the financial crisis of 2007. To do so, we estimate the systemic risk of a sample composed of 281 financial institutions grouped in 16 European countries during the period from January 01, 2006 to December 31, 2012. We use the Marginal Expected Shortfall (MES) to measure systemic risk. The empirical results show that the systemic risk supported by European banks is very high. Moreover, the contribution of financial institutions in the risk of their system is very important as a result of the high correlation between institution returns and market returns. This correlation is measured by DECO-GARCH (1,1) introduced for the first time to assess systemic risk of financial institutions. This high level of systemic risk prompted the international authorities to intervene, as is the case of the countries of the Euro zone, where the International Monetary Fund, the European Central Bank and the World Bank intervened but did not lead to a permanent solution to limit the accumulation of systemic risk. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Derbali, Abdelkader] Higher Inst Management Sousse, Dept Finance, Sousse, Tunisia.
+   [Hallara, Slaheddine] Higher Inst Management Tunis, Dept Finance, Tunis, Tunisia.
+RP Derbali, A (reprint author), Higher Inst Management Sousse, Dept Finance, Sousse, Tunisia.
+EM derbaliabdelkader@outlook.fr; ihet@gnet.tn
+RI Derbali, Abdelkader/O-1287-2019
+OI , Abdelkader/0000-0003-4098-3120
+CR Acharya V., 2012, 8824 CEPR
+   Acharya V. V., 2010, 1002 FED RES BANK CL
+   Acharya V.V., 2009, RES C QUANT SYST RIS
+   Adrian T., 2011, WORKING PAPER
+   Adrian T, 2008, STAFF REPORTS, V348
+   ARTZNER P., 1997, RISK, V10, P68
+   Bagliano FC, 2014, RES INT BUS FINANC, V30, P377, DOI 10.1016/j.ribaf.2012.08.003
+   Brownlees Christian, 2011, WORKING PAPER
+   Brownlees T.C., 2012, WORKING PAPER
+   Chan-Lau J., 2010, 1098 IMF
+   Chevapatrakul T., 2014, RES INT BUSINESS FIN, V32, P83
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Derbali A, 2015, AFR J ACCOUNT AUDIT, V4, P7, DOI 10.1504/AJAAF.2015.071751
+   ECB, 2004, ANN REPORT
+   Engle R., 2009, FIN08038 NYU
+   Engle R.F., 2012, AM EC REV, V102
+   Gray D. F., 2008, 13607 NBER
+   Jorion P, 2006, NBER CONF R, P29
+   Kaufman G., 1995, RES FINANC SERV, V7
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Luchtenberg KF, 2015, RES INT BUS FINANC, V33, P178, DOI 10.1016/j.ribaf.2014.09.007
+   Puzanova N, 2013, J BANK FINANC, V37, P1243, DOI 10.1016/j.jbankfin.2012.11.017
+NR 23
+TC 4
+Z9 4
+U1 2
+U2 12
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0275-5319
+EI 1878-3384
+J9 RES INT BUS FINANC
+JI Res. Int. Bus. Financ.
+PD MAY
+PY 2016
+VL 37
+BP 113
+EP 134
+DI 10.1016/j.ribaf.2015.10.013
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA DZ6YR
+UT WOS:000386009700008
+DA 2019-12-28
+ER
+
+PT J
+AU Vucinic, M
+AF Vucinic, Milena
+TI Importance of Macroprudential Policy Implementation for Safeguarding
+   Financial Stability
+SO JOURNAL OF CENTRAL BANKING THEORY AND PRACTICE
+LA English
+DT Article
+DE macroprudential policy; financial stability; economic policies;
+   institutional framework
+AB The crisis pointed to the necessity for strong and stable financial system resistant to potential risks and shocks. Macroprudential policy is used to identify, monitor and asses systemic risks to financial stability. Therefore, it is very important to create effective and efficient macroprudential policy. To achieve this, it is crucial to create a strong institutional framework.
+   This paper deals with the importance of macroprudential policy for financial system stability. The first part of the paper explains the macroprudential policy and its connection with other economic policies. The second part refers to the necessity of building strong institutional framework and the importance of providing clear responsibilities for macroprudential policy, as long as precise determination of responsibilities is very suggested and important for further functioning and policy implementation. Responsibilities for macroprudential policy and macroprudential supervision defers among countries.
+C1 [Vucinic, Milena] Cent Bank Muntenegro, Podgorica, Montenegro.
+RP Vucinic, M (reprint author), Cent Bank Muntenegro, Podgorica, Montenegro.
+EM milena.vucinic@cbcg.me
+CR Deutsche Bundesbank, FIN MON SYST
+   Deutsche Bundesbank, 2015, IMPR MACT POL MON PO
+   European Central Bank, 2016, CENTR BANKS MEET CHA
+   European Commission, 2012, GREEN PAP SHAD BANK
+   European Systemic Risk Board, 2015, EUR SYST FIN SUP REV
+   European Systemic Risk Board, 2015, ESRB HDB OP MACR POL
+   European Systemic Risk Board, 2013, ESRB20131 EUR SYST R
+   International Monetary Fund, 2013, INT MON MACR POL
+   International Monetary Fund, 2013, KEY ASP MACR POL
+   Olmstead-Rumsey Jane, 2015, EFFECTIVE ARE MACRO
+   Otker-Robe Inci, 2015, INT FINANCE DISCUSSI, V1136
+NR 11
+TC 4
+Z9 4
+U1 0
+U2 0
+PU DE GRUYTER POLAND SP ZOO
+PI WARSAW
+PA BOGUMILA ZUGA 32A STR., 01-811 WARSAW, POLAND
+SN 1800-9581
+EI 2336-9205
+J9 J CENT BANK THEOR PR
+JI J. Cent. Bank Theor. Pract.
+PD SEP
+PY 2016
+VL 5
+IS 3
+BP 79
+EP 98
+DI 10.1515/jcbtp-2016-0021
+PG 20
+WC Business, Finance
+SC Business & Economics
+GA VH0NW
+UT WOS:000449847700005
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Clark, GL
+AF Clark, Gordon L.
+TI Urban and Regional Horizons
+SO REGIONAL STUDIES
+LA English
+DT Article
+DE Financial ecology; Investment management; Organizations; Portfolio
+   managers; Talent
+ID BUSINESS EDUCATION; FINANCIAL CENTERS; PRECARIOUS WORK; SYSTEMIC RISK;
+   LONDON; MARKET; GEOGRAPHIES; CAPITALISM; GOVERNANCE; LABOR
+AB CLARK G. L. The components of talent: company size and financial centres in the European investment management industry, Regional Studies. As the centre for advanced financial services, and having the complex array of services needed to invest beyond Europe's borders, London dominates the European financial services industry. As in other global financial centres there is a premium on talented investment managers, identified in the media as ` star performers'. Investment companies rely on such employees for risk- adjusted rates of return on the basis of asset- and/or style- specific investment strategies while protecting their clients against the risks occasioned by market uncertainty. Drawing upon frameworks from organizational ecology, this paper integrates the size of companies with the market for talent sectorally and geographically.
+C1 [Clark, Gordon L.] Univ Oxford, Smith Sch Enterprise & Environm, Oxford OX1 3QY, England.
+   [Clark, Gordon L.] Monash Univ, Dept Banking & Finance, Caulfield, Vic 3145, Australia.
+RP Clark, GL (reprint author), Univ Oxford, Smith Sch Enterprise & Environm, Oxford OX1 3QY, England.
+EM gordon.clark@smithschool.ox.ac.uk
+FU Leverhulme TrustLeverhulme Trust; Rotman International Centre for
+   Pension Management; Stanford University Institutional Investor Research
+   Club - Ashby Monk's Global Projects Center; Towers Watson
+FX Research on the governance and management of financial companies was
+   supported by the Leverhulme Trust, the Rotman International Centre for
+   Pension Management, the Stanford University Institutional Investor
+   Research Club sponsored by Ashby Monk's Global Projects Center, and
+   Towers Watson.
+CR AMIN A, 1992, INT J URBAN REGIONAL, V16, P571, DOI 10.1111/j.1468-2427.1992.tb00197.x
+   Baker G, 2001, AM ECON REV, V91, P212, DOI 10.1257/aer.91.2.212
+   Baron JN, 2004, IND CORP CHANGE, V13, P3, DOI 10.1093/icc/13.1.3
+   Bathelt H., 2011, RELATIONAL EC GEOGRA
+   Bathelt H, 2014, J ECON GEOGR, V14, P869, DOI 10.1093/jeg/lbu027
+   Campbell John Y., 2013, GETTING BETTER LEARN
+   Clark G. L., 2014, J SUSTAINABLE FINANC, V4, P299, DOI DOI 10.1080/20430795.2014.980656
+   Clark G. L., 2015, PROFESSIONA IN PRESS
+   CLARK GL, 1981, ANN ASSOC AM GEOGR, V71, P412
+   CLARK GL, 2007, J PENSION ECON FINAN, V6, P67, DOI DOI 10.1017/S1474747206002629
+   CLARK GL, 2003, EUROPEAN PENSIONS GL
+   CLARK GL, 2006, J PENSION ECON FINAN, V5, P91, DOI DOI 10.1017/S1474747205002374
+   Clark GL, 2013, J ECON GEOGR, V13, P279, DOI 10.1093/jeg/lbs061
+   Coe NM, 2014, REG STUD, V48, P761, DOI 10.1080/00343404.2014.886772
+   DEMSETZ H, 1968, Q J ECON, V82, P33, DOI 10.2307/1882244
+   Dixon AD, 2014, ANN ASSOC AM GEOGR, V104, P852, DOI 10.1080/00045608.2014.912543
+   Dorry S., 2014, J ECON GEOGR, V14, P1, DOI [10.1093/jeg/lbt009, DOI 10.1093/JEG/LBT009]
+   Dyer S, 2011, GENDER PLACE CULT, V18, P685, DOI 10.1080/0966369X.2011.601808
+   Engelen E, 2013, REG STUD, V47, P850, DOI 10.1080/00343404.2011.624510
+   Farmer JD, 2002, IND CORP CHANGE, V11, P895, DOI 10.1093/icc/11.5.895
+   Faulconbridge J, 2007, GROWTH CHANGE, V38, P279, DOI 10.1111/j.1468-2257.2007.00367.x
+   Florida R, 2002, ANN ASSOC AM GEOGR, V92, P743, DOI 10.1111/1467-8306.00314
+   Florida R, 2002, J ECON GEOGR, V2, P55, DOI 10.1093/jeg/2.1.55
+   Florida R., 2015, TALENT SKILLS UNPUB
+   Folkman P, 2007, BUS HIST, V49, P552, DOI 10.1080/00076790701296373
+   Gertler M. S., 2001, J ECON GEOGR, V1, P5, DOI DOI 10.1093/JEG/1.1.5
+   Grabher G., 1994, EMBEDDED FIRM SOCIOE
+   Grossman GM, 2005, REV ECON STUD, V72, P135, DOI 10.1111/0034-6527.00327
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hall S, 2008, T I BRIT GEOGR, V33, P27, DOI 10.1111/j.1475-5661.2007.00288.x
+   Hall S, 2009, J ECON GEOGR, V9, P597, DOI 10.1093/jeg/lbp026
+   Hannan J., 1989, ORG ECOLOGY
+   Hannan M. T., 2007, LOGICS ORG THEORY AU
+   Hotelling H, 1929, ECON J, V39, P41, DOI 10.2307/2224214
+   Kerr S. P., 2013, 14040 HARV BUS SCH
+   Kerr WR, 2010, J URBAN ECON, V67, P46, DOI 10.1016/j.jue.2009.09.006
+   La Porta R, 1998, J POLIT ECON, V106, P1113, DOI 10.1086/250042
+   Litterman B, 2004, MODERN INVESTMENT MA
+   MARCH JG, 1958, ORGANISATIONS
+   MARTIN R, 1995, REG STUD, V29, P125, DOI 10.1080/00343409512331348853
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   McDowell L, 2009, INT J URBAN REGIONAL, V33, P3, DOI 10.1111/j.1468-2427.2009.00831.x
+   Monk AHB, 2009, ENVIRON PLANN A, V41, P859, DOI 10.1068/a40284
+   Moretti E., 2013, 19294 NBER
+   O'Brien R., 1992, GLOBAL FINANCIAL INT
+   OHARA M, 1997, MARKET MICROSTRUCTUR
+   Pastor L., 2014, 19891 NBER
+   Power D, 2014, REG STUD, V48, P579, DOI 10.1080/00343404.2014.891011
+   ROSEN S, 1981, AM ECON REV, V71, P845
+   ROSEN S, 1986, AM ECON REV, V76, P701
+   Savage M, 2008, SOCIOL REV MONOGR, P1
+   Scott AJ, 2008, INT J URBAN REGIONAL, V32, P548, DOI 10.1111/j.1468-2427.2008.00795.x
+   Scott AJ, 2009, J ECON GEOGR, V9, P207, DOI 10.1093/jeg/lbn051
+   Scott AJ, 2014, REG STUD, V48, P565, DOI 10.1080/00343404.2014.891010
+   Storper M, 2004, J ECON GEOGR, V4, P351, DOI 10.1093/jnlecg/lbh027
+   Storper M, 2009, J ECON GEOGR, V9, P147, DOI 10.1093/jeg/lbn052
+   Sugihara G, 2009, NATURE, V458, P979, DOI 10.1038/458979a
+   Taylor PJ, 2014, ECON GEOGR, V90, P267, DOI 10.1111/ecge.12040
+   Thrift Nigel, 1994, MONEY POWER SPACE, P327
+   Winters JV, 2013, J ECON GEOGR, V13, P799, DOI 10.1093/jeg/lbs046
+   Wojcik D., 2011, GLOBAL STOCK MARKET
+   Wojcik D, 2013, PROG HUM GEOG, V37, P330, DOI 10.1177/0309132512460904
+NR 62
+TC 3
+Z9 3
+U1 0
+U2 18
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0034-3404
+EI 1360-0591
+J9 REG STUD
+JI Reg. Stud.
+PD JAN 2
+PY 2016
+VL 50
+IS 1
+SI SI
+BP 168
+EP 181
+DI 10.1080/00343404.2015.1068932
+PG 14
+WC Economics; Environmental Studies; Geography; Regional & Urban Planning
+SC Business & Economics; Environmental Sciences & Ecology; Geography;
+   Public Administration
+GA CY3HG
+UT WOS:000366299200013
+DA 2019-12-28
+ER
+
+PT J
+AU O'Kane, D
+AF O'Kane, Dominic
+TI Counterparty Risk Minimization by the Optimal Netting of OTC Derivative
+   Trades
+SO Journal of Derivatives
+LA English
+DT Article
+AB The netting of OTC derivatives trades, known as "compression," reduces systemic risk in financial markets by reducing counterparty exposures among large financial institutions. In this article, we present a framework for optimizing compression in OTC derivatives market, with a specific focus on interest rate swaps. We minimize the total net counterparty exposure by unwinding in part or in full existing swap trades subject to risk conservation constraints. We determine the degree of compression obtained as a function of the number of trades, counterparties, and duration buckets. We do this using linear programming (LP) and quadratic programming (QP) approaches, and separately quantify the benefit of bilateral and multilateral netting, and compare the tendency of both LP and QP approaches to favor full unwinds of existing trades versus partial unwinds. This is done by calculating the average performance of both optimization approaches by simulating over large numbers of randomly generated trade universes. A significant reduction in counterparty risk can be achieved, and we find that an LP approach is preferable as it is computationally faster and produces solutions with more full trade unwinds than do QP approaches.
+C1 [O'Kane, Dominic] EDHEC Risk Inst, Finance, Nice, France.
+RP O'Kane, D (reprint author), EDHEC Risk Inst, Finance, Nice, France.
+EM dominic.okane@edhec-risk.com
+FU French Banking Federation (FBF) Chair on Banking Regulation and
+   Innovation under the aegis of the Louis Bachelier laboratory; Fondation
+   Institut Europlace de Finance (IEF); EDHEC
+FX This research benefited from the support of the French Banking
+   Federation (FBF) Chair on Banking Regulation and Innovation under the
+   aegis of the Louis Bachelier laboratory in collaboration with the
+   Fondation Institut Europlace de Finance (IEF) and EDHEC. The author
+   would like to acknowledge useful comments from Jon Gregory, David
+   Murphy, and Sebastian Zurek, and helpful correspondence with Per Sjoberg
+   of TriOptima.
+CR Baksys D, 2010, INF TECHNOL CONTROL, V39, P25
+   Boyd S., 2004, CONVEX OPTIMISATION
+   Brouwer D. P., 2012, U. S. Patent, Patent No. [8,306,905, 8306905]
+   Cont R, 2014, STATIST RISK MODEL, V31, P3, DOI 10.1515/strm-2013-1161
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Gizycki M., 1994, DEFAULT RISK DERIVAT
+   Gregory J, 2014, CENTRAL COUNTERPARTIES: MANDATORY CLEARING AND BILATERAL MARGIN REQUIREMENTS FOR OTC DERIVATIVES, P1, DOI 10.1002/9781118891568
+   Humes Jr C., 2012, AIP C P, P1490
+   ISDA, 2012, RES NOTES
+   LEDRUT E, 2007, BIS Q REV        DEC, P83
+   O'Kane D., 2013, WORKING PAPER
+   OCC, 1997, OCC COMPTR HDB
+NR 12
+TC 1
+Z9 1
+U1 0
+U2 2
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1074-1240
+EI 2168-8524
+J9 J DERIV
+JI J. Deriv.
+PD WIN
+PY 2016
+VL 24
+IS 2
+BP 48
+EP 65
+DI 10.3905/jod.2016.24.2.048
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA EE0RK
+UT WOS:000389286400004
+DA 2019-12-28
+ER

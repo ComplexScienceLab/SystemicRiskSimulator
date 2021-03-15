@@ -1,0 +1,474 @@
+
+PT J
+AU Iori, G
+   Mantegna, RN
+   Marotta, L
+   Micciche, S
+   Porter, J
+   Tumminello, M
+AF Iori, Giulia
+   Mantegna, Rosario N.
+   Marotta, Luca
+   Micciche, Salvatore
+   Porter, James
+   Tumminello, Michele
+TI Networked relationships in the e-MID interbank market: A trading model
+   with memory
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Interbank market; Network formation; Statistically validated networks;
+   Java/Mason
+ID SYSTEMIC RISK; FINANCIAL NETWORKS; COMPLEX NETWORKS; CONTAGION; TOPOLOGY
+AB In this paper, we introduce a model of interbank trading with memory. The memory mechanism is used to introduce a proxy of trust in the model. The key idea is that a lender, having lent many times to a borrower in the past, is more likely to lend to that borrower again in the future than to other borrowers, with which the lender has never (or has infrequently) interacted. The core of the model depends on only two parameters, which are common to all lenders: one is w and it is representing the attractiveness of borrowers, the other one is Q and it represents the memory of lenders in their assessment of counter parties. The stronger the w parameter, the more random the matching results between lenders and borrowers. The stronger the Q parameter, the more stable the trading relationships become. Model outcomes and real money market data are compared through a variety of measures that describe the structure and properties of trading networks. These include number of statistically validated links, bidirectional links, and 3-motifs. The model reproduces well features of preferential trading patterns empirically observed in a real market. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Iori, Giulia; Porter, James] City Univ London, Dept Econ, London EC1V 0HB, England.
+   [Mantegna, Rosario N.] Cent European Univ, Ctr Network Sci, Nador 9, H-1051 Budapest, Hungary.
+   [Mantegna, Rosario N.] Cent European Univ, Dept Econ, H-1051 Budapest, Hungary.
+   [Mantegna, Rosario N.; Marotta, Luca; Micciche, Salvatore] Univ Palermo, Dipartimento Chim & Fis, I-90128 Palermo, Italy.
+   [Tumminello, Michele] Univ Palermo, Dipartimento Sci Econ Aziendali & Stat, I-90128 Palermo, Italy.
+RP Mantegna, RN (reprint author), Cent European Univ, Ctr Network Sci, Nador 9, H-1051 Budapest, Hungary.
+EM rn.mantegna@gmail.com
+RI Tumminello, Michele/G-4492-2011; Micciche', Salvatore/B-6575-2008;
+   Mantegna, Rosario N/H-3652-2014
+OI Tumminello, Michele/0000-0001-6045-6761; Micciche',
+   Salvatore/0000-0003-3779-592X; Mantegna, Rosario N/0000-0003-4177-171X;
+   Iori, Giulia/0000-0001-9443-9353
+FU FP7 research project CRISIS "Complexity Research Initiative for Systemic
+   InstabilitieS"; FP7 research project CRISIS "Complexity Research
+   Initiative for Systemic InstabilitieS"
+FX The authors acknowledge support from the FP7 research project CRISIS
+   "Complexity Research Initiative for Systemic InstabilitieS".
+CR Abraham H., 2013, WORKING PAPER
+   Acemoglu D., 2013, 18727 NBER
+   Acharya VV, 2013, REV FINANC, V17, P107, DOI 10.1093/rof/rfs022
+   Affinito M., 2011, 826 BANK IT
+   Allen F., 2008, 0807 WHART FIN I CTR
+   Anand K, 2013, J ECON BEHAV ORGAN, V85, P219, DOI 10.1016/j.jebo.2012.04.006
+   Babus A., 2007, FDN EE MATTEI WORKIN
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Bloch F, 2007, J ECON THEORY, V133, P83, DOI 10.1016/j.jet.2005.10.003
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brauning F., 2001, WORKING PAPER FOR TI
+   Caccioli F, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500580
+   Castiglionesi F, 2007, 2007100 TILB U CTR E
+   Craig B., 2010, WORKING PAPERS, V322
+   di Iasio G., 2013, MULTIPLEX STRUCTURE
+   Dutta B, 2005, J ECON THEORY, V122, P143, DOI 10.1016/j.jet.2004.05.001
+   European Central Bank, 2011, EUR MARK STUD
+   Feller W, 1968, INTRO PROBABILITY TH, V1
+   Finger K, 2014, KIEL WORKING PAPERS, V1916
+   Finger K, 2013, COMPUT MANAG SCI, V10, P187, DOI 10.1007/s10287-013-0171-9
+   Fricke D., 2012, KIEL WORKING PAPERS, V1759
+   Fricke D., 2013, KIEL WORKING PAPERS, V1819
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Goyal S, 2007, J ECON THEORY, V137, P460, DOI 10.1016/j.jet.2007.01.006
+   Grilli R., 2012, 375 U POL MARCH DIP
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Haldane A. G., 2009, COMMUNICATION
+   Hatzopoulos V, 2015, QUANT FINANC, V15, P693, DOI 10.1080/14697688.2014.969889
+   Heider F, 2009, EUROPEAN CENTRAL BAN, V1126
+   Iazzetta M., 2009, 711 BANK IT
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Iyer R, 2011, REV FINANC STUD, V24, P1337, DOI 10.1093/rfs/hhp105
+   Jackson MO, 1996, J ECON THEORY, V71, P44, DOI 10.1006/jeth.1996.0108
+   Ladley D, 2013, J ECON DYN CONTROL, V37, P1384, DOI 10.1016/j.jedc.2013.03.009
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Li MX, 2014, SCI REP-UK, V4, DOI 10.1038/srep05132
+   Lu LY, 2011, PHYSICA A, V390, P1150, DOI 10.1016/j.physa.2010.11.027
+   Luke S, 2005, SIMUL-T SOC MOD SIM, V81, P517, DOI 10.1177/0037549705058073
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   Milo R, 2002, SCIENCE, V298, P824, DOI 10.1126/science.298.5594.824
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Poledna S, 2014, ARXIV14018026
+   Squartini T, 2013, SCI REP-UK, V3, DOI 10.1038/srep03357
+   Temizsoy A., 2014, DISCUSSION PAPER SER, V14/03
+   Thurner S, 2013, SCI REP-UK, V3, DOI 10.1038/srep01888
+   Tumminello M, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0017994
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wernicke S, 2006, BIOINFORMATICS, V22, P1152, DOI 10.1093/bioinformatics/btl038
+NR 52
+TC 28
+Z9 28
+U1 1
+U2 31
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD JAN
+PY 2015
+VL 50
+BP 98
+EP 116
+DI 10.1016/j.jedc.2014.08.016
+PG 19
+WC Economics
+SC Business & Economics
+GA CA5OQ
+UT WOS:000348958100006
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Hoesli, M
+   Reka, K
+AF Hoesli, Martin
+   Reka, Kustrim
+TI Contagion Channels between Real Estate and Financial Markets
+SO REAL ESTATE ECONOMICS
+LA English
+DT Article
+ID INVESTOR SENTIMENT; CROSS-SECTION; REGIME SHIFTS; RISK-FACTORS;
+   LIQUIDITY; VOLATILITY; CRISES; INTEGRATION; CURRENCY; RETURNS
+AB The recent crisis has demonstrated the linkages between asset classes within a country as well as the association between assets internationally. We provide for a better understanding of some of these linkages by conducting an empirical investigation of the channels underlying the risk of contagion between real estate investment trusts (REITs) and stocks in the United States. We test for three financial mechanisms potentially driving contagion. A behavioral dimension in the crisis propagation is also examined by considering investor sentiment and panic risk. We find that contagion prevails between REITs and stocks and that this phenomenon is driven by behavioral and liquidity mechanisms.
+C1 [Hoesli, Martin; Reka, Kustrim] Univ Geneva, Sch Econ & Management, Geneva, Switzerland.
+   [Hoesli, Martin] Univ Geneva, SFI, Geneva, Switzerland.
+   [Hoesli, Martin] Univ Aberdeen, Sch Business, Aberdeen AB9 1FX, Scotland.
+   [Hoesli, Martin] Kedge Business Sch, Talence, France.
+RP Hoesli, M (reprint author), Univ Geneva, Sch Econ & Management, Geneva, Switzerland.
+EM martin.hoesli@unige.ch; kustrim.reka@unige.ch
+FU RERI
+FX We thank Shaun Bond, Brad Case (the special issue editor), Anjeza
+   Kadilli, Jongsub Lee, David Ling, William Maher, Andy Naranjo, David
+   Watkins, an anonymous referee and seminar participants at the 2013
+   Annual Research Symposium of the Real Estate Research Institute (RERI),
+   the 2013 AREUEA-ASSA Annual Conference and the University of Florida for
+   their valuable comments and suggestions. Financial support by RERI is
+   gratefully acknowledged.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Ambrose BW, 2007, REAL ESTATE ECON, V35, P57, DOI 10.1111/j.1540-6229.2007.00182.x
+   Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   Ang A, 2006, J FINANC, V61, P259, DOI 10.1111/j.1540-6261.2006.00836.x
+   Bacchetta P, 2013, J INT ECON, V89, P511, DOI 10.1016/j.jinteco.2012.07.006
+   Bacchetta P, 2012, AM ECON REV, V102, P3674, DOI 10.1257/aer.102.7.3674
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baker M, 2007, J ECON PERSPECT, V21, P129, DOI 10.1257/jep.21.2.129
+   Baker M, 2006, J FINANC, V61, P1645, DOI 10.1111/j.1540-6261.2006.00885.x
+   Barberis N, 2005, J FINANC ECON, V75, P283, DOI 10.1016/j.jfineco.2004.04.003
+   Barberis NC, 2013, FINANCIAL INNOVATION: TOO MUCH OR TOO LITTLE?, P15
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Brown GW, 2005, J BUS, V78, P405, DOI 10.1086/427633
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Choi N, 2009, J FINANC ECON, V94, P469, DOI 10.1016/j.jfineco.2008.12.009
+   Chordia T, 2001, J FINANC, V56, P501, DOI 10.1111/0022-1082.00335
+   Clayton J, 2009, J REAL ESTATE FINANC, V38, P5, DOI 10.1007/s11146-008-9130-6
+   DELONG JB, 1990, J POLIT ECON, V98, P703, DOI 10.1086/261703
+   Dudley E, 2011, J FINANC QUANT ANAL, V46, P1227, DOI 10.1017/S0022109011000342
+   Eichengreen B, 1996, SCAND J ECON, V98, P463, DOI 10.2307/3440879
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   FAMA EF, 1988, J FINANC ECON, V22, P3, DOI 10.1016/0304-405X(88)90020-7
+   Fry R, 2010, J BUS ECON STAT, V28, P423, DOI 10.1198/jbes.2010.06060
+   Gerlach R, 2006, J INT MONEY FINANC, V25, P974, DOI 10.1016/j.jimonfin.2006.07.002
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Hoesli M, 2013, J REAL ESTATE FINANC, V47, P1, DOI 10.1007/s11146-011-9346-8
+   Hoesli M, 2012, J INT MONEY FINANC, V31, P1823, DOI 10.1016/j.jimonfin.2012.05.017
+   Joe H, 1997, MULTIVARIATE MODELS
+   Kallberg JG, 2005, J BUS, V78, P169, DOI 10.1086/426523
+   Kallberg JG, 2002, REAL ESTATE ECON, V30, P263, DOI 10.1111/1540-6229.00040
+   Kaminsky GL, 2003, J ECON PERSPECT, V17, P51, DOI 10.1257/089533003772034899
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kiyotaki N, 2002, AM ECON REV, V92, P62, DOI 10.1257/000282802320189014
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Koenker R., 2005, QUANTILE REGRESSION
+   Kumar A, 2006, J FINANC, V61, P2451, DOI 10.1111/j.1540-6261.2006.01063.x
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Lemmon M, 2006, REV FINANC STUD, V19, P1499, DOI 10.1093/rfs/hhj038
+   Liew J, 2000, J FINANC ECON, V57, P221, DOI 10.1016/S0304-405X(00)00056-8
+   Ling D. C., 2012, WORKING PAPER
+   Ling DC, 2014, REAL ESTATE ECON, V42, P531, DOI 10.1111/1540-6229.12037
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Quigley JA, 2001, J HOUS ECON, V10, P129, DOI 10.1006/jhec.2001.0284
+   Shefrin H., 2009, INSIGHTS GLOBAL FINA, P224
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Sklar A, 1959, PUBL I STAT U PARIS, V8, P229, DOI DOI 10.12691/IJEFM-3-2-3
+   Yuan K, 2005, J FINANC, V60, P379, DOI 10.1111/j.1540-6261.2005.00733.x
+   Zhou J, 2013, J REAL ESTATE FINANC, V47, P83, DOI 10.1007/s11146-011-9352-x
+NR 53
+TC 11
+Z9 11
+U1 0
+U2 33
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1080-8620
+EI 1540-6229
+J9 REAL ESTATE ECON
+JI Real Estate Econ.
+PD SPR
+PY 2015
+VL 43
+IS 1
+BP 101
+EP 138
+DI 10.1111/1540-6229.12070
+PG 38
+WC Business, Finance; Economics; Urban Studies
+SC Business & Economics; Urban Studies
+GA CI3IY
+UT WOS:000354642600005
+DA 2019-12-27
+ER
+
+PT J
+AU Di, JP
+   Zhu, PF
+AF Di, Junpeng
+   Zhu, Pingfang
+TI A method for evaluating the extreme risk sources of financial markets:
+   The case of stock markets in China
+SO GLOBAL FINANCE JOURNAL
+LA English
+DT Article
+DE Bayesian quantile regression; CVaR-Granger causality test; Extreme risk;
+   Source
+ID REGRESSION
+AB Risk contagion has attracted increasing research attention in recent years. In this paper, we combined conditional Value at Risk (CVaR), Bayesian quantile regression and Granger causality test to propose a Bayesian CVaR-Granger causality test method, which is an efficient tool in analyzing sources of extreme risks in a financial market. Using this method, we determined the sources of extreme risks in major stock markets in China. (C) 2015 Published by Elsevier Inc.
+C1 [Di, Junpeng; Zhu, Pingfang] Shanghai Acad Social Sci, Shanghai, Peoples R China.
+RP Di, JP (reprint author), 7-622 Huaihai Middle Rd, Shanghai 200020, Peoples R China.
+EM dijunpeng@sass.org.cn
+CR Chernozhukov V., 2001, EMPIR ECON, V26, P271, DOI DOI 10.1007/S001810000062
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   ENGLE RF, 1990, ECONOMETRICA, V58, P525, DOI 10.2307/2938189
+   Granger C.W.J., 1986, MODEL RELIABILITY, P1
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Hong Y., 2004, CHINA ECONOMIC Q, V3, P703
+   Hong YM, 2009, J ECONOMETRICS, V150, P271, DOI 10.1016/j.jeconom.2008.12.013
+   Li Hong, 2011, EC RES J, V8, P15
+   Wang X.Y., 2010, QUANTILE REGRESSION
+   Yu KM, 2001, STAT PROBABIL LETT, V54, P437, DOI 10.1016/S0167-7152(01)00124-9
+NR 10
+TC 1
+Z9 1
+U1 2
+U2 3
+PU JAI PRESS INC
+PI STAMFORD
+PA 100 PROSPECT ST, PO BOX 811, STAMFORD, CT 06901 USA
+SN 1044-0283
+EI 1873-5665
+J9 GLOB FINANC J
+JI Glob. Financ. J.
+PD MAY
+PY 2015
+VL 26
+BP 18
+EP 28
+DI 10.1016/j.gfj.2015.01.002
+PG 11
+WC Business, Finance
+SC Business & Economics
+GA DM0NC
+UT WOS:000376041400002
+DA 2019-12-27
+ER
+
+PT J
+AU MacDonald, R
+   Sogiakas, V
+   Tsopanakis, A
+AF MacDonald, Ronald
+   Sogiakas, Vasilios
+   Tsopanakis, Andreas
+TI An investigation of systemic stress and interdependencies within the
+   Eurozone and Euro Area countries
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Financial crisis; Systemic risk; Financial stress index; VAR
+ID IMPULSE-RESPONSE ANALYSIS; TIME-SERIES; UNIT-ROOT; BUSINESS
+AB One of the most challenging issues that economists are dealing with is the investigation of the financial turmoil in Eurozone economies. Particularly, the issue of exposing the potential crisis transmission channels has attracted considerable interest. Aiming to contribute to this literature, we construct financial stress indices on a country level and explore further the potential inter-reactions between the root causes of systemic risk. The country-specific index consists of a wide number of series drawn from the money, equity and bond markets, as well as from the banking sector of each Eurozone country. A Euro Area stress index is also provided, exploring the evolution of financial conditions for this group of countries. The investigation of the potential transmission channels is implemented through a multivariate analysis and the corresponding impulse responses' dynamics. The empirical findings suggest that countries are mostly responsive to their own financial shocks, while a degree of regionalism is also evident. That is, the peripheral countries are more susceptible to their financial stress, while the same holds for the core Eurozone countries. Additionally, in contrast to common wisdom, financial conditions in Greece and Portugal do not seem to affect the rest of the Euro Area, at least in the degree that Italy and Ireland do. These results are consistent under alternative model and sample specifications. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [MacDonald, Ronald; Sogiakas, Vasilios] Univ Glasgow, Econ Sect, Adam Smith Business Sch, Glasgow, Lanark, Scotland.
+   [Tsopanakis, Andreas] Univ Salford, Salford Business Sch, Int Finance Accounting & Econ Sect, Salford M5 4WT, Lancs, England.
+RP Tsopanakis, A (reprint author), Univ Salford, Salford Business Sch, Int Finance Accounting & Econ Sect, Salford M5 4WT, Lancs, England.
+EM Ronald.MacDonald@glasgow.ac.uk; Vasilios.Sogiakas@glasgow.ac.uk;
+   a.tsopanakis.@salford.ac.uk
+OI Tsopanakis, Andreas/0000-0002-7968-0015
+CR Angelopoulou E., 2012, 147 BANK GREEC
+   Brave S., 2011, FEDERAL RESERVE BANK, V1Q
+   Canova F., 2007, METHODS APPL MACROEC
+   Debuque-Gonzales M., 2013, ASIAN DEV BANK EC WO, V333
+   Demirguc-Kunt A., 1998, IMF STAFF PAP, V45
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Estrella A, 1998, REV ECON STAT, V80, P45, DOI 10.1162/003465398557320
+   Gonzalez-Hermosillo B., 2014, IMF WORKING PAPER SE, V76
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Grimaldi Marianna B., 2010, ECB WORKING PAPER SE, V1214
+   Hakkio C., 2009, FEDERAL RESERVE BANK
+   Hodrick RJ, 1997, J MONEY CREDIT BANK, V29, P1, DOI 10.2307/2953682
+   Hollo D., 2012, ECB WORKING PAPER SE, V1426
+   Illing M., 2006, J FINANCIAL STABILIT, V2, P243, DOI DOI 10.1016/j.jfs.2006.06.002
+   Kaminsky G, 1998, INT MONET FUND S PAP, V45, P1
+   Kliesen K.L., 2012, FEDERAL RESERVE BANK
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Lee H.W., 2012, EFFECTS SOVEREIGN RI
+   Lee HW, 2011, INT REV ECON FINANC, V20, P441, DOI 10.1016/j.iref.2010.11.020
+   Louzis D., 2012, EC MODEL, V29
+   Louzis DP, 2012, J BANK FINANC, V36, P1012, DOI 10.1016/j.jbankfin.2011.10.012
+   Luetkepohl H., 2011, EUI WORKING PAPER SE, V30
+   Melvin M, 2009, J INT MONEY FINANC, V28, P1317, DOI 10.1016/j.jimonfin.2009.08.006
+   Morales MA, 2010, ANN FINANC, V6, P555, DOI 10.1007/s10436-010-0161-7
+   Nelson WR, 2005, IRVING FISHER COMMIT, V23, P92
+   Oet M., 2010, FIN CRIS SYST RISK S
+   Oet M., 2011, FEDERAL RESERVE BANK, V11-30
+   Osorio C., 2011, IMF WORKING PAPER SE, V170
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.1093/biomet/75.2.335
+   Puddu S., 2008, OPTIMAL WEIGHTS STRE
+   Sandahl J.F., 2011, SVER RIKSBANK EC REV, V2
+   SIMS CA, 1980, ECONOMETRICA, V48, P1, DOI 10.2307/1912017
+   Slingenberg J.W., 2011, NEDERLANDSCHE BANK W, V292
+NR 35
+TC 7
+Z9 7
+U1 1
+U2 18
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD AUG
+PY 2015
+VL 48
+SI SI
+BP 52
+EP 69
+DI 10.1016/j.econmod.2014.10.023
+PG 18
+WC Economics
+SC Business & Economics
+GA CL2EZ
+UT WOS:000356757700006
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Smerlak, M
+   Stoll, B
+   Gupta, A
+   Magdanz, JS
+AF Smerlak, Matteo
+   Stoll, Brady
+   Gupta, Agam
+   Magdanz, James S.
+TI Mapping Systemic Risk: Critical Degree and Failures Distribution in
+   Financial Networks
+SO PLOS ONE
+LA English
+DT Article
+ID DEFAULT CASCADES; TOPOLOGY; MODEL; INSURANCE; EVOLUTION; GRAPHS; MARKET
+AB The financial crisis illustrated the need for a functional understanding of systemic risk in strongly interconnected financial structures. Dynamic processes on complex networks being intrinsically difficult to model analytically, most recent studies of this problem have relied on numerical simulations. Here we report analytical results in a network model of interbank lending based on directly relevant financial parameters, such as interest rates and leverage ratios. We obtain a closed-form formula for the "critical degree" (the number of creditors per bank below which an individual shock can propagate throughout the network), and relate failures distributions to network topologies, in particular scalefree ones. Our criterion for the onset of contagion turns out to be isomorphic to the condition for cooperation to evolve on graphs and social networks, as recently formulated in evolutionary game theory. This remarkable connection supports recent calls for a methodological rapprochement between finance and ecology.
+C1 [Smerlak, Matteo] Perimeter Inst Theoret Phys, Waterloo, ON N2L 2Y5, Canada.
+   [Stoll, Brady] Univ Texas Austin, Dept Mech Engn, Austin, TX 78712 USA.
+   [Gupta, Agam] Indian Inst Management Calcutta, Kolkata 700104, W Bengal, India.
+   [Magdanz, James S.] Univ Alaska Fairbanks, Resilience & Adaptat Program, Fairbanks, AK 99775 USA.
+RP Smerlak, M (reprint author), Perimeter Inst Theoret Phys, 31 Caroline St North, Waterloo, ON N2L 2Y5, Canada.
+EM msmerlak@perimeterinstitute.ca
+RI Magdanz, James S/C-9348-2011
+OI Smerlak, Matteo/0000-0002-0844-8868; Magdanz, James/0000-0002-2412-2788
+FU Government of Canada through Industry Canada; Province of Ontario
+   through the Ministry of Research and InnovationMinistry of Research and
+   Innovation, Ontario
+FX Research at the Perimeter Institute is supported in part by the
+   Government of Canada through Industry Canada and by the Province of
+   Ontario through the Ministry of Research and Innovation. The funders had
+   no role in study design, data collection and analysis, decision to
+   publish, or preparation of the manuscript.
+CR Acemoglu D., 2013, 134 COL BUS SCH
+   Aghion P, 2000, EUR ECON REV, V44, P713, DOI 10.1016/S0014-2921(00)00058-1
+   Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2009, ANNU REV FINANC ECON, V1, P97, DOI 10.1146/annurev.financial.050808.114321
+   Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   Ashcraft AB, 2007, AM ECON REV, V97, P221, DOI 10.1257/aer.97.2.221
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Barrat A., 2008, DYNAMICAL PROCESSES
+   Basel III Basel C., 2010, BASEL
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D., 2012, SURVEY SYSTEMIC RISK
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Caccioli F., 2012, 201210018 SFI
+   Cohen R, 2001, PHYS REV LETT, V86, P3682, DOI 10.1103/PhysRevLett.86.3682
+   De Bandt O., 2000, 35 ECB
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Erdos P., 1959, PUBL MATH-DEBRECEN, V6, P290, DOI DOI 10.1234/12345678
+   Fotouhi B, 2013, EUR PHYS J B, V86, DOI 10.1140/epjb/e2013-40920-6
+   Freixas X., 2010, 371 FRB NEW YORK STA, V371
+   Furfine C., 1999, FINANCIAL MARKETS IN, V8, P24, DOI DOI 10.1111/1468-0416.00031
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garlaschelli D, 2004, PHYS REV LETT, V93, DOI 10.1103/PhysRevLett.93.268701
+   Haldane A., 2009, BIS REV, V18
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   HAMILTON WD, 1964, J THEOR BIOL, V7, P1, DOI [10.1016/0022-5193(64)90038-4, 10.1016/0022-5193(64)90039-6]
+   Inoguchi M, 2013, PAC-BASIN FINANC J, V25, P136, DOI 10.1016/j.pacfin.2013.08.006
+   KAMBHU J, 2007, NEW DIRECTIONS UNDER
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Musmeci N, 2013, J STAT PHYS, V151, P720, DOI 10.1007/s10955-013-0720-1
+   Newman MEJ, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.066133
+   Newman MEJ, 2001, PHYS REV E, V64, DOI 10.1103/PhysRevE.64.026118
+   Newman MEJ, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.208701
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Ohtsuki H, 2006, NATURE, V441, P502, DOI 10.1038/nature04605
+   POSTLEWAITE A, 1987, J POLIT ECON, V95, P485, DOI 10.1086/261468
+   Propper M., 2008, NETWORK DESCRIPTION, V177, P1
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Stiglitz JE, 2010, AM ECON REV, V100, P388, DOI 10.1257/aer.100.2.388
+   Taylor J. B., 2008, 13943 NBER, P36
+   Temme NM, 2003, J COMPUT APPL MATH, V153, P441, DOI 10.1016/S0377-0427(02)00627-1
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+NR 54
+TC 6
+Z9 6
+U1 0
+U2 41
+PU PUBLIC LIBRARY SCIENCE
+PI SAN FRANCISCO
+PA 1160 BATTERY STREET, STE 100, SAN FRANCISCO, CA 94111 USA
+SN 1932-6203
+J9 PLOS ONE
+JI PLoS One
+PD JUL 24
+PY 2015
+VL 10
+IS 7
+AR e0130948
+DI 10.1371/journal.pone.0130948
+PG 15
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA CN7NT
+UT WOS:000358622000009
+PM 26207631
+OA DOAJ Gold, Green Published
+DA 2019-12-27
+ER

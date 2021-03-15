@@ -1,0 +1,496 @@
+
+PT J
+AU Boysen-Hogrefe, J
+AF Boysen-Hogrefe, Jens
+TI Risk assessment on euro area government bond markets - The role of
+   governance
+SO JOURNAL OF INTERNATIONAL MONEY AND FINANCE
+LA English
+DT Article
+DE Euro area; Bond spreads; Debt crisis; OMT; Time-varying coefficients;
+   Good governance; Default risk
+ID SOVEREIGN DEBT; YIELD SPREADS; CRISIS; DETERMINANTS; CONTAGION; MODELS;
+   TIMES
+AB Since the announcement of the outright monetary transactions program (OMT) government bond yield spreads have decreased substantially, but have not fallen to pre-crisis levels. This paper argues that the debt-to-GDP ratio has become less relevant as a determinant for government bond spreads, while financial markets have become more concerned about the willingness and the capability to cooperate with the institutions that conduct the adjustment programs since the announcement of OMT. The paper links the willingness and the capability to cooperate to political stability and the quality of governance, for which the indicators are available from the World Bank. By means of a time-varying coefficient approach it can be shown that the coefficient for a composite World Bank indicator on the quality of governance has outpaced other possible determinants of government bond spreads since the announcement of OMT. (C) 2017 Published by Elsevier Ltd.
+C1 [Boysen-Hogrefe, Jens] Kiel Inst World Econ, Kiellinie 66, D-24105 Kiel, Germany.
+RP Boysen-Hogrefe, J (reprint author), Kiel Inst World Econ, Kiellinie 66, D-24105 Kiel, Germany.
+EM jens.hogrefe@ifw.kiel.de
+CR Aizenman J, 2013, J INT MONEY FINANC, V34, P37, DOI 10.1016/j.jimonfin.2012.11.011
+   Assmann C, 2012, EMPIRICA, V39, P341, DOI 10.1007/s10663-011-9171-6
+   Attinasi M, 2009, 1131 ECB
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Benito B, 2016, FINANC ACCOUNT MANAG, V32, P309, DOI 10.1111/faam.12090
+   Bergman UM, 2016, EUR J POLIT ECON, V44, P1, DOI 10.1016/j.ejpoleco.2016.04.005
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P975, DOI 10.1016/j.jimonfin.2011.12.006
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P639, DOI 10.1016/j.jimonfin.2011.10.006
+   BIRD G, 2004, COMP EC STUDIES, V46, P423, DOI DOI 10.1057/palgrave.ces.8100060
+   Blanchard O., 2013, IMF WORKING PAPERS, V13, P1, DOI DOI 10.3386/W18779
+   Boysen-Hogrefe J., 2015, WIRTSCHAFTSDIENST, V95, P534
+   Bursian D, 2015, INT TAX PUBLIC FINAN, V22, P663, DOI 10.1007/s10797-015-9363-2
+   CALVO GA, 1988, AM ECON REV, V78, P647
+   Costantini M, 2014, EUR ECON REV, V70, P337, DOI 10.1016/j.euroecorev.2014.06.004
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   Doornik JA, 2008, INT J FORECASTING, V24, P432, DOI 10.1016/j.ijforecast.2008.06.002
+   Falagiarda M, 2015, J INT MONEY FINANC, V53, P276, DOI 10.1016/j.jimonfin.2015.02.005
+   Giordano R., 2013, INT FINAN
+   Gros Daniel, 2012, 366 CEPS
+   HARVEY A, 1992, J ECONOMETRICS, V52, P129, DOI 10.1016/0304-4076(92)90068-3
+   Ivanova Anna, 2003, 038 IMF
+   Khan S., 2001, 01142 IMF
+   KING M, 1994, ECONOMETRICA, V62, P901, DOI 10.2307/2951737
+   Ludwig A, 2014, J INT MONEY FINANC, V48, P125, DOI 10.1016/j.jimonfin.2014.07.008
+   Pappa E, 2015, J INT ECON, V96, pS56, DOI 10.1016/j.jinteco.2014.12.004
+   von Hagen J, 2011, EUR J POLIT ECON, V27, P36, DOI 10.1016/j.ejpoleco.2010.07.002
+NR 26
+TC 1
+Z9 1
+U1 0
+U2 0
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0261-5606
+EI 1873-0639
+J9 J INT MONEY FINANC
+JI J. Int. Money Finan.
+PD MAY
+PY 2017
+VL 73
+BP 104
+EP 117
+DI 10.1016/j.jimonfin.2017.01.005
+PN A
+PG 14
+WC Business, Finance
+SC Business & Economics
+GA ES4HW
+UT WOS:000399494900007
+DA 2019-12-27
+ER
+
+PT J
+AU Duprey, T
+   Klaus, B
+   Peltone, T
+AF Duprey, Thibaut
+   Klaus, Benjamin
+   Peltone, Tuomas
+TI Dating systemic financial stress episodes in the EU countries
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Financial stress index; Markov-switching; Threshold VAR; Systemic
+   financial crises; Crises dating
+ID BUSINESS-CYCLE; CRISES; RISK
+AB This paper introduces a new methodology to date systemic financial stress events in a transparent, objective and reproducible way. The financial cycle is captured by a monthly Country-Level Index of Financial Stress (CLIFS). Based on two Markov-switching and one threshold vector autoregressive model, information from the CLIFS and industrial production are combined to identify those episodes of financial market stress that are associated with a substantial negative impact on the real economy. By applying this framework to 27 European Union countries, the paper is a first attempt to provide a chronology of systemic financial stress episodes as a complement to the expert-detected events that are currently available. Crown Copyright (C) 2017 Published by Elsevier B.V. All rights reserved.
+C1 [Duprey, Thibaut] Bank Canada, 234 Wellington St, Ottawa, ON K1A 0G9, Canada.
+   [Klaus, Benjamin] European Cent Bank, Sonnemannstr 20, D-60314 Frankfurt, Germany.
+   [Peltone, Tuomas] European Syst Risk Board, Sonnemannstr 22, D-60314 Frankfurt, Germany.
+RP Duprey, T (reprint author), Bank Canada, 234 Wellington St, Ottawa, ON K1A 0G9, Canada.
+EM tduprey@bankofcanada.ca; benjamin.klaus@ecb.europa.eu;
+   tuomas.peltonen@esrb.europa.eu
+FU Banque de France; Association Nationale de la Recherche et de la
+   TechnologieFrench National Research Agency (ANR) [2011/1510]
+FX Financial support from the Banque de France and the Association
+   Nationale de la Recherche et de la Technologie (grant 2011/1510) is
+   gratefully acknowledged. The project was started while visiting the
+   European Central Bank.
+CR Alessandri P, 2017, REV ECON DYNAM, V24, P66, DOI 10.1016/j.red.2017.01.003
+   Allen F, 2013, J MONEY CREDIT BANK, V45, P121, DOI 10.1111/jmcb.12038
+   [Anonymous], 2013, FINANCIAL STABILITY
+   Babecky J., 2012, 1485 ECB
+   Berge TJ, 2011, AM ECON J-MACROECON, V3, P246, DOI 10.1257/mac.3.2.246
+   Borio C, 2014, J BANK FINANC, V45, P182, DOI 10.1016/j.jbankfin.2013.07.031
+   Braga J. P., 2014, 1 BANK PORT
+   Brave S., 2011, EC PERSPECTIVES, P22
+   Brave S, 2012, INT J CENT BANK, V8, P191
+   Bruneau G, 2017, MODEL FINAN IN PRESS
+   Bry G, 1971, CYCLICAL ANAL TIME S
+   Capiro G., 2005, SYSTEMIC FINANCIAL C, P307
+   Cardarelli R, 2011, J FINANC STABIL, V7, P78, DOI 10.1016/j.jfs.2010.01.005
+   Chaudron R, 2014, J FINANC STABIL, V15, P63, DOI 10.1016/j.jfs.2014.09.001
+   CHAUVET M, 2005, 11422 NBER
+   Chauvet M, 2008, J BUS ECON STAT, V26, P42, DOI 10.1198/073500107000000296
+   Coe PJ, 2002, J MONEY CREDIT BANK, V34, P76, DOI 10.1353/mcb.2002.0026
+   Detken C., 2014, 5 ESRB
+   Elekdag Selim, 2017, GLOBAL FINANCIAL STA
+   Fawcett T, 2006, PATTERN RECOGN LETT, V27, P861, DOI 10.1016/j.patrec.2005.10.010
+   Grimaldi M. B., 2010, 1214 ECB
+   Hakkio C.S., 2009, ECON REV, V2, P5
+   Hamilton J. D, 2010, 16162 NBER
+   HAMILTON JD, 1989, ECONOMETRICA, V57, P357, DOI 10.2307/1912559
+   Harding D, 2002, J MONETARY ECON, V49, P365, DOI 10.1016/S0304-3932(01)00108-8
+   Hatzius J., 2010, 16150 NBER
+   He Zhiguo, 2014, 19885 NBER
+   Hollo D., 2012, 1426 ECB
+   Hollo D., 2012, 105 MNB
+   Hubrich K, 2015, J MONETARY ECON, V70, P100, DOI 10.1016/j.jmoneco.2014.09.005
+   Illing M., 2006, J FINANCIAL STABILIT, V2, P243, DOI DOI 10.1016/j.jfs.2006.06.002
+   Jing ZB, 2015, J MACROECON, V43, P1, DOI 10.1016/j.jmacro.2014.09.001
+   Jorda O, 2013, J MONEY CREDIT BANK, V45, P3, DOI 10.1111/jmcb.12069
+   Kliesen K.L, 2010, EC SYNOPSES, P2
+   Kliesen KL, 2012, FED RESERVE BANK ST, V94, P369
+   Koop G, 2014, EUR ECON REV, V71, P101, DOI 10.1016/j.euroecorev.2014.07.002
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Liang N, 2013, J MONEY CREDIT BANK, V45, P129, DOI 10.1111/jmcb.12039
+   LOUZIS D. P., 2013, 1563 ECB
+   Mitchell WC, 1946, MEASURING BUSINESS C
+   Oet M. V, 2011, 1130 FED RES BANK CL
+   Reinhart CM, 2014, AM ECON REV, V104, P50, DOI 10.1257/aer.104.5.50
+   Reinhart CM, 2011, AM ECON REV, V101, P1676, DOI 10.1257/aer.101.5.1676
+   Reinhart CM, 2009, AM ECON REV, V99, P466, DOI 10.1257/aer.99.2.466
+   Romer CD., 2015, 21021 NBER
+   Schwartz A. J., 1987, MONEY HIST PERSPECTI, P271
+NR 46
+TC 9
+Z9 10
+U1 2
+U2 10
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD OCT
+PY 2017
+VL 32
+BP 30
+EP 56
+DI 10.1016/j.jfs.2017.07.004
+PG 27
+WC Business, Finance; Economics
+SC Business & Economics
+GA FK7CC
+UT WOS:000413660700003
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Fahr, S
+   Fell, J
+AF Fahr, Stephan
+   Fell, John
+TI Macroprudential policy - closing the financial stability gap
+SO JOURNAL OF FINANCIAL REGULATION AND COMPLIANCE
+LA English
+DT Article
+DE Financial stability; Monetary policy; Systemic risk; Macroprudential
+   policy; Policy assignment; Tinbergen rule
+ID MONETARY-POLICY
+AB Purpose - The global financial crisis demonstrated that monetary policy alone cannot ensure both price and financial stability. According to the Tinbergen (1952) rule, there was a gap in the policymakers' toolkit for safeguarding financial stability, as the number of available policy instruments was insufficient relative to the number of policy objectives. That gap is now being closed through the creation of new macroprudential policy instruments. Both monetary policy and macroprudential policy have the capacity to influence both price and financial stability objectives. This paper develops a framework for determining how best to assign instruments to objectives.
+   Design/methodology/approach - Using a simplified New-Keynesian model, the authors examine two sets of policy trade-offs, the first concerning the relative effectiveness of monetary and macroprudential policy instruments in achieving price and financial stability objectives and the second concerning trade-offs between macroprudential policy instruments themselves.
+   Findings - This model shows that regardless of whether the objective is to enhance financial system resilience or to moderate the financial cycle, macroprudential policies are more effective than monetary policy. Likewise, monetary policy is more effective than macroprudential policy in achieving price stability. According to the Mundell (1962) principle of effective market classification, this implies that macroprudential policy instruments should be paired with financial stability objectives, and monetary policy instruments should be paired with the price stability objective. The authors also find a trade-off between the two sets of macroprudential policy instruments, which indicates that failure to moderate the financial cycle would require greater financial system resilience.
+   Originality/value - The main contribution of the paper is to establish - with the help of a model framework - the relative effectiveness of monetary and macroprudential policies in achieving price and financial stability objectives. By so doing, it provides a rationale for macroprudential policy and it shows how macroprudential policy can unburden monetary policy in leaning against the wind of financial imbalances.
+C1 [Fahr, Stephan; Fell, John] European Cent Bank, DG Macroprudential Policy & Financial Stabil, Frankfurt, Germany.
+RP Fell, J (reprint author), European Cent Bank, DG Macroprudential Policy & Financial Stabil, Frankfurt, Germany.
+EM john.fell@ecb.europa.eu
+CR Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Ajello A., 2015, FINANCIAL STABILITY
+   Barwell R, 2013, MACROPRUDENTIAL POLICY: TAMING THE WILD GYRATIONS OF CREDIT FLOWS, DEBT STOCKS AND ASSET PRICES, P1, DOI 10.1057/9781137274465
+   Barwell R., 2017, MACROECONOMIC POLICY
+   Basten C., 2015, BIS WORKING PAPERS, V511
+   Bean C., 2010, FED RES BANK KANS CI
+   Borio C., 2003, BIS WORKING PAPERS, V128
+   Borio C, 2015, BIS WORKING PAPERS, V534
+   Borio C, 2012, BIS WORKING PAPERS, V395
+   Borio C., 2009, 12 ANN INT BANK C
+   Borio C, 2012, J FINANC STABIL, V8, P236, DOI 10.1016/j.jfs.2011.12.003
+   Cecchetti SG, 2014, INT J CENT BANK, V10, P205
+   Cerutti E., 2015, WP1516 IMF
+   CGFS, 2012, COMM GLOB FIN SYST P, V48
+   Claessens S., 2011, NBER INT SEM MACR
+   Claessens S., 2014, WP14155 IMF
+   Clarida R, 1999, J ECON LIT, V37, P1661, DOI 10.1257/jel.37.4.1661
+   Constancio V., 2016, ECB IMF C MACR POL F
+   De Paoli B, 2017, J MONEY CREDIT BANK, V49, P319, DOI 10.1111/jmcb.12381
+   Detken C., 2014, ESRB OCCASIONAL PAPE, V5
+   Dietsch M., 2014, 13 ACPR
+   DNB, 2015, NEDERLANDSCHE BANK O, V13
+   Elliot D.J., 2013, FINANCE EC DISCUSSIO
+   Elliott D, 2013, HIGHER BANK CAPITAL
+   Fell J, 2005, NATL INST ECON REV, V192, P102
+   Filardo A, 2016, BIS WORKING PAPERS, V594
+   Issing O., 2011, WP1197 IMF
+   Jeanne O., 2016, MACROPRUDENTIAL REGU
+   Jorda O., 2017, 23287 NBER, V23287
+   Kindleberger C., 1978, MANIAS PANICS CRASHE
+   Kuttner K, 2013, 433 BIS
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Lietuvos bankas, 2015, FINANCIAL STABILITY
+   Lo Duca M., 2017, ECB OCCASIONAL PAPER, V194
+   Michl T.R., 2006, 144 LEV EC I
+   MINSKY HP, 1977, NEBR J ECON BUS, V16, P5
+   Mishkin F.S., 2010, MONETARY POLICY STRA
+   MODIGLIANI F, 1958, AM ECON REV, V48, P261
+   Mundell R., 1962, IMF STAFF PAPERS, V9, P70, DOI DOI 10.2307/3866082
+   Schoenmaker D, 2015, ECON LETT, V136, P70, DOI 10.1016/j.econlet.2015.08.020
+   Schuler Y.S., 2015, 1846 ECB
+   Smets F, 2014, INT J CENT BANK, V10, P263
+   Svensson LEO, 2017, J MONETARY ECON, V90, P193, DOI 10.1016/j.jmoneco.2017.07.004
+   Swan T. W., 1960, ECON REC, V36, P51, DOI DOI 10.1111/ECOR.1960.36.ISSUE-73
+   Tinbergen J., 1952, THEORY EC POLICY
+   White W.R., 2009, 34 FED RES BANK
+   Wong E., 2015, 202015 HKIMR
+NR 47
+TC 5
+Z9 5
+U1 1
+U2 3
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1358-1988
+EI 1740-0279
+J9 J FINANC REGUL COMPL
+JI J. Financ. Regul. Compliance
+PY 2017
+VL 25
+IS 4
+SI SI
+BP 334
+EP 359
+DI 10.1108/JFRC-03-2017-0037
+PG 26
+WC Business, Finance
+SC Business & Economics
+GA FH0SC
+UT WOS:000410849800001
+DA 2019-12-28
+ER
+
+PT J
+AU Lopez, JAC
+   Harris, JH
+   Hurlin, C
+   Perignon, C
+AF Lopez, Jorge A. Cruz
+   Harris, Jeffrey H.
+   Hurlin, Christophe
+   Perignon, Christophe
+TI Co Margin
+SO JOURNAL OF FINANCIAL AND QUANTITATIVE ANALYSIS
+LA English
+DT Article
+ID STOCK INDEX FUTURES; DEFAULT SWAP MARKET; VALUE-AT-RISK; SYSTEMIC RISK;
+   COUNTERPARTY RISK; CLEARING HOUSES; DEPENDENCE; LIQUIDITY; MODELS;
+   INSURANCE
+AB We present CoMargin, a new methodology to estimate collateral requirements in derivatives central counterparties (CCPs). CoMargin depends on both the tail risk of a given market participant and its interdependence with other participants. Our approach internalizes trading externalities and enhances the stability of CCPs, thus reducing systemic risk concerns. We assess our methodology using proprietary data from the Canadian Derivatives Clearing Corporation that include daily observations of the actual trading positions of all of its members from 2003 to 2011. We show that CoMargin outperforms existing margining systems by stabilizing the probability and minimizing the shortfall of simultaneous margin-exceeding losses.
+C1 [Lopez, Jorge A. Cruz] Bank Canada, Ottawa, ON, Canada.
+   [Harris, Jeffrey H.] Amer Univ, Kopod Sch Business, Washington, DC 20016 USA.
+   [Hurlin, Christophe] Univ Orleans, Orleans, France.
+   [Perignon, Christophe] HEC Paris, Jouy En Josas, France.
+RP Harris, JH (reprint author), Amer Univ, Kopod Sch Business, Washington, DC 20016 USA.
+EM jcruzlopez@bankofcanada.ca; jharris@american.edu;
+   christophe.hurlin@univ-orleans.fr; perignon@hec.fr
+RI Hurlin, Christophe/J-1474-2019
+OI Hurlin, Christophe/0000-0002-6082-8251; Cruz Lopez,
+   Jorge/0000-0003-3850-2543
+FU Chair L'Autorite de Contr ole Prudentiel et de Resolution (ACPR)/Risk
+   Foundation: Regulation and Systemic Risk; Dauphine-Amundi Chair in Asset
+   Management; Montreal Institute of Structured Products and Derivatives
+   (Institut de la Finance Structuree et des Instruments Derives de
+   Montreal, or IFSID)
+FX We thank the Canadian Derivatives Clearing Corporation (CDCC) for
+   providing us with the data used in this paper. We are very grateful to
+   the Chair L'Autorite de Contr ole Prudentiel et de Resolution
+   (ACPR)/Risk Foundation: Regulation and Systemic Risk, the
+   Dauphine-Amundi Chair in Asset Management, and the Montreal Institute of
+   Structured Products and Derivatives (Institut de la Finance Structuree
+   et des Instruments Derives de Montreal, or IFSID) for funding and
+   supporting our research. We appreciate the time and support provided by
+   Nikil Chande, Scott Hendry, Nicholas Labelle St-Pierre, and Jonathan
+   Witmer. We thank an anonymous referee, Andrew Barton, Hendrik
+   Bessembinder (the editor), Mark Chambers, Pierre Collin-Dufresne, Darrel
+   Duffie, Christian Gourieroux, Nicholas Linder, Anthony Lynch, Serafin
+   Martinez-Jaramillo, Albert Menkveld, Gustavo Schwenkler, Guillaume
+   Vuillemey, Anne Wetherilt, Haoxiang Zhu, seminar participants at the
+   Bank of England, Bank of Japan, Banque de France, Banco de Mexico,
+   Boston University, French Prudential Supervisory and Resolution
+   Authority (ACPR), Global Risk Institute, and the Reserve Bank of
+   Australia, as well as the participants of the 2013 Annual Workshop of
+   the Dauphine-Amundi Chair in Asset Management, the 2014 IFSID Conference
+   on Derivatives, the 2014 Society for Financial Econometrics (SOFIE)
+   Conference on Systemic Risk, the 2015 American Finance Association
+   meeting, Bank of Canada Financial Intermediation and Market Dynamics
+   Workshop, the 2011 Australasian Finance and Banking Conference, and the
+   QUT-Princeton Frontiers in Financial Econometrics Workshop for their
+   valuable comments.
+CR Acharya V, 2014, J ECON THEORY, V149, P153, DOI 10.1016/j.jet.2013.07.001
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya VV, 2009, RESTORING FINANCIAL
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Adrian T, 2014, REV FINANC STUD, V27, P373, DOI 10.1093/rfs/hht068
+   Arora N, 2012, J FINANC ECON, V103, P280, DOI 10.1016/j.jfineco.2011.10.001
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bank for International Settlements, 2015, MARG REQ NONC CLEAR
+   Bank for International Settlements, 2015, DER STAT
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Berkowitz J, 2002, J FINANC, V57, P1093, DOI 10.1111/1540-6261.00455
+   Berkowitz J, 2011, MANAGE SCI, V57, P2213, DOI 10.1287/mnsc.1080.0964
+   BERNANKE BS, 1990, REV FINANC STUD, V3, P133, DOI 10.1093/rfs/3.1.133
+   Bernstein A., 2014, 20459 NBER
+   Biais B, 2016, J FINANC, V71, P1669, DOI 10.1111/jofi.12396
+   Biais B, 2012, IMF ECON REV, V60, P193, DOI 10.1057/imfer.2012.8
+   Bignon V, 2017, WORKING PAPER
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bliss R. R., 2006, WORKING PAPER
+   Boissel C, 2017, J FINANC ECON, V125, P511, DOI 10.1016/j.jfineco.2017.06.010
+   Booth GG, 1997, MANAGE SCI, V43, P1177, DOI 10.1287/mnsc.43.8.1177
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brunnermeier M. K., 2014, WORKING PAPER
+   Campbell B., 2003, WORKING PAPER
+   Chicago Mercantile Exchange, 2012, CME CLEAR FIN SAF
+   Christoffersen P., 2009, ENCY QUANTITATIVE FI
+   Christoffersen P, 2012, REV FINANC STUD, V25, P3711, DOI 10.1093/rfs/hhs104
+   Cotter J, 2001, J BANK FINANC, V25, P1475, DOI 10.1016/S0378-4266(00)00137-0
+   Day TE, 2004, J BUS, V77, P101, DOI 10.1086/379863
+   Duffie D., 2010, FEDERAL RESERVE BANK
+   Duffie D., 2013, FEBS LABEX REFI FIN
+   Duffie D, 2015, J FINANC ECON, V116, P237, DOI 10.1016/j.jfineco.2014.12.006
+   Duffie D, 2013, INT J CENT BANK, V9, P251
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   European Union, 2012, EUR MARK INFR REG EM
+   FIGLEWSKI S, 1984, J FUTURES MARKETS, V4, P385, DOI 10.1002/fut.3990040307
+   Fontaine J.-S., 2013, WORKING PAPER
+   FSB, 2015, OTC DER MARK REF
+   Garleanu N, 2011, REV FINANC STUD, V24, P1980, DOI 10.1093/rfs/hhr027
+   GEMMILL G, 1994, J BANK FINANC, V18, P979, DOI 10.1016/0378-4266(94)00024-7
+   GENEST C, 1995, BIOMETRIKA, V82, P543, DOI 10.1093/biomet/82.3.543
+   Ghamami S., 2014, WORKING PAPER
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Harris J. H., 2011, WORKING PAPER
+   Hedegaard E., 2013, WORKING PAPER
+   HIRSHLEIFER D, 1994, J FINANC, V49, P1665, DOI 10.2307/2329267
+   Hurlin C., 2012, REV FUTURES MARKETS, V20, P179
+   Jones RA, 2013, J RISK INSUR, V80, P373, DOI 10.1111/j.1539-6975.2012.01489.x
+   JORDAN JV, 1990, J FINANC, V45, P909, DOI 10.2307/2328799
+   Knott R., 2002, FINANCIAL STABILITY, P162
+   Koeppl T, 2012, J FINANC ECON, V103, P189, DOI 10.1016/j.jfineco.2011.08.008
+   KUPIEC PH, 1994, J FUTURES MARKETS, V14, P789, DOI 10.1002/fut.3990140704
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Longstaff FA, 2004, J BUS, V77, P511, DOI 10.1086/386528
+   Loon YC, 2014, J FINANC ECON, V112, P91, DOI 10.1016/j.jfineco.2013.12.001
+   Menkveld A. J., 2013, WORKING PAPER
+   Menkveld A. J., 2015, WORKING PAPER
+   Oh DH, 2017, J BUS ECON STAT, V35, P139, DOI 10.1080/07350015.2015.1062384
+   Pirrong C, 2011, WORKING PAPER
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Slive J., 2013, J FINANCIAL MARKET I, V2, P3
+   Sourbes C., 2013, BOES CARNEY LIQUIDIT
+   TMX Montreal Exchange, 2013, GOVT CAN BOND FUT OP
+   TMX Montreal Exchange, 2013, BAX 3 MONTH CAN BANK
+   TMX Montreal Exchange, 2013, IND DER REF MAN
+   United States of America Department of the Treasury, 2009, FIN REG REF NEW FDN
+NR 69
+TC 2
+Z9 2
+U1 0
+U2 4
+PU CAMBRIDGE UNIV PRESS
+PI NEW YORK
+PA 32 AVENUE OF THE AMERICAS, NEW YORK, NY 10013-2473 USA
+SN 0022-1090
+EI 1756-6916
+J9 J FINANC QUANT ANAL
+JI J. Financ. Quant. Anal.
+PD OCT
+PY 2017
+VL 52
+IS 5
+BP 2183
+EP 2215
+DI 10.1017/S0022109017000709
+PG 33
+WC Business, Finance; Economics
+SC Business & Economics
+GA FL5IG
+UT WOS:000414267400013
+DA 2019-12-28
+ER
+
+PT J
+AU Molyneux, P
+AF Molyneux, Philip
+TI Are banks public utilities? Evidence from Europe
+SO JOURNAL OF ECONOMIC POLICY REFORM
+LA English
+DT Article
+DE banks; public utilities; regulatory reform; G21; K23; L51; L9
+ID DIVERSIFICATION; ENTERPRISES; INNOVATION
+AB The regulatory response to the global financial crisis has been to instal a myriad of new rules in order to improve bank capital and liquidity, as well as to reduce systemic risks through structural reform. All these new rules place a straightjacket around banker's activities and inhibit their operational freedom. This new environment has made European banks look less like private free-wheeling profit-maximising firms and more like public utilities. The utility services banks provide to society means that they should be overseen even more heavily. This includes greater regulatory oversight of bank pricing, profitability and service provision.
+C1 [Molyneux, Philip] Bangor Univ, Bangor Business Sch, Bangor, Gwynedd, Wales.
+RP Molyneux, P (reprint author), Bangor Univ, Bangor Business Sch, Bangor, Gwynedd, Wales.
+EM p.molyneux@bangor.ac.uk
+OI Molyneux, Philip/0000-0001-6210-7418
+FU Santander Financial Institute [APIE 2/2015-2017]
+FX This work was supported by Santander Financial Institute [grant number
+   APIE 2/2015-2017].
+CR [Anonymous], 2016, FINANCIAL TIMES
+   Armstrong M., 2007, HDB IND ORG, V3, P15557
+   AVRAHAM D, 2012, EC POLICY REV, V18, P65
+   Beccalli E, 2015, J BANK FINANC, V58, P232, DOI 10.1016/j.jbankfin.2015.04.014
+   BECKER GS, 1983, Q J ECON, V98, P371, DOI 10.2307/1886017
+   BIS (Department for Business Innovation and Skills), 2016, 270 BIS
+   Boot AWA, 2000, J FINANC INTERMED, V9, P240, DOI 10.1006/jfin.2000.0287
+   Brunnermeier M., 2012, WORKING PAPER
+   Valverde SC, 2007, J BANK FINANC, V31, P2043, DOI 10.1016/j.jbankfin.2006.06.017
+   Clifton J, 2011, BUS HIST, V53, P659, DOI 10.1080/00076791.2011.599592
+   COASE RH, 1960, J LAW ECON, V3, P1, DOI 10.1086/466560
+   ECB, 2000, EU BANKS INC STRUCT
+   *ECB, 2007, EU BANK STRUCT
+   ECB (European Central Bank), 2011, FINANCIAL STABILITY
+   European Central Bank (ECB), 2016, FINANCIAL STABILITY
+   European Central Bank (ECB), 2015, REP FIN STRUCT
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Florio M, 2014, J ECON POLICY REFORM, V17, P201, DOI 10.1080/17487870.2014.913823
+   Florio M, 2011, ANN PUBLIC COOP ECON, V82, P361, DOI 10.1111/j.1467-8292.2011.00445.x
+   Goddard J., 2015, OXFORD HDB BANKING, P849
+   Goddard J, 2007, J BANK FINANC, V31, P1911, DOI 10.1016/j.jbankfin.2007.01.002
+   Hughes JP, 2013, J FINANC INTERMED, V22, P559, DOI 10.1016/j.jfi.2013.06.004
+   Laeven L, 2007, J FINANC ECON, V85, P331, DOI 10.1016/j.jfineco.2005.06.001
+   Lepetit L, 2008, J BANK FINANC, V32, P2325, DOI 10.1016/j.jbankfin.2007.09.025
+   Liikanen E., 2012, HIGHLEVEL EXPERT GRO
+   Mester Loretta J., 2015, OXFORD HDB BANKING, P247
+   Molyneux P, 2014, J INT MONEY FINANC, V49, P258, DOI 10.1016/j.jimonfin.2014.03.006
+   Pasiouras F, 2018, MANAGE SCI, V64, P902, DOI 10.1287/mnsc.2016.2585
+   Saunders A., 2015, J FINANCIAL PERSPECT, V3, P1
+   STIGLER GJ, 1971, BELL J ECON, V2, P3, DOI 10.2307/3003160
+   Stiroh K. J., 2015, OXFORD HDB BANKING, P219
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   Stiroh KJ, 2004, J MONEY CREDIT BANK, V36, P853, DOI 10.1353/mcb.2004.0076
+   Stolzenburg S, 2010, METHODS MOL BIOL, V649, P117, DOI 10.1007/978-1-60761-753-2_7
+   Stulz Rene, 2016, FRBNY EC POLY REV, V22, P43
+   Tonurist P, 2016, ANN PUBLIC COOP ECON, V87, P623, DOI 10.1111/apce.12126
+   Vickers J. S, 2011, INDEPENDENT COMMISSI
+   White A. M., 2016, TULANE LAW REV, V90, P1241
+NR 38
+TC 2
+Z9 2
+U1 0
+U2 1
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1748-7870
+EI 1748-7889
+J9 J ECON POLICY REFORM
+JI J. Econ. Policy Reform.
+PY 2017
+VL 20
+IS 3
+BP 199
+EP 213
+DI 10.1080/17487870.2017.1294073
+PG 15
+WC Development Studies; Economics
+SC Development Studies; Business & Economics
+GA EX4VD
+UT WOS:000403232100002
+DA 2019-12-28
+ER

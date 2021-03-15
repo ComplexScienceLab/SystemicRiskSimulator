@@ -1,0 +1,472 @@
+
+PT J
+AU Borri, N
+AF Borri, Nicola
+TI Redenomination-risk spillovers in the Eurozone
+SO ECONOMICS LETTERS
+LA English
+DT Article
+DE Redenomination risk; Credit default swap; Quanto-CDS
+ID SYSTEMIC RISK; SOVEREIGN RISK; SPREADS
+AB In this paper we use sovereign quanto-CDS spreads as proxy for redenomination-risk in the Eurozone, i.e., the risk of a sovereign default obtained by the redenomination of debt in a different currency. Quanto-CDS spreads are the difference between the CDS quotes in U.S. dollars and euros. We capture spillovers with ACoVaR, a risk-indicator proposed by Adrian and Brunnermeier (2016), that measures the difference between the value-at-risk of country i conditional on a state of distress in country j and the median state. Our sample starts on the onset of the Great Recession. We find that Belgium, Ireland, Italy and Spain are the only Eurozone countries exposed to redenomination-risk spillovers. However, in the shorter post-OMT sample, the only vulnerable countries are Italy and Spain. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Borri, Nicola] LUISS Univ, Dept Econ & Finance, Viale Romania 32, I-00197 Rome, Italy.
+RP Borri, N (reprint author), LUISS Univ, Dept Econ & Finance, Viale Romania 32, I-00197 Rome, Italy.
+EM nborri@luiss.it
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Aizenman J, 2013, J INT MONEY FINANC, V34, P37, DOI 10.1016/j.jimonfin.2012.11.011
+   Augustin Patrick, 2014, Foundations and Trends in Finance, V9, P1, DOI 10.1561/0500000040
+   Augustin P., 2018, TECH REP
+   Augustin P., 2018, J MONET EC
+   Bayer C., 2018, TECH REP
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Borri N, 2018, EMERG MARK REV, V34, P111, DOI 10.1016/j.ememar.2017.11.003
+   Brownlees C., 2016, REV FINANC STUD
+   Corsetti G, 2014, J MONETARY ECON, V61, P53, DOI 10.1016/j.jmoneco.2013.11.001
+   De Santis R. A., 2015, MEASURE REDENOMINATI
+   De Santis R. A., 2015, SOVEREIGN SPREADS EU
+   De Santis RA, 2018, J APPL ECONOMET, V33, P727, DOI 10.1002/jae.2627
+   De Santis RA, 2014, J EMPIR FINANC, V26, P150, DOI 10.1016/j.jempfin.2013.12.003
+   Elizalde A., 2010, EUROPE CREDIT DERIVA
+   Fabozzi FJ, 2016, J INT MONEY FINANC, V65, P1, DOI 10.1016/j.jimonfin.2016.03.003
+   Fong TPW, 2012, ECON LETT, V115, P496, DOI 10.1016/j.econlet.2011.12.112
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Gros D., 2018, ITALIAN RISK SPREADS
+   Klose J, 2014, INT FINANC, V17, P25, DOI 10.1111/infi.12042
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R., 2005, QUANTILE REGRESSION, V38
+   Mainik G, 2014, STATIST RISK MODEL, V31, P49, DOI 10.1515/strm-2013-1164
+   Nucera F, 2016, J EMPIR FINANC, V38, P461, DOI 10.1016/j.jempfin.2016.01.002
+   Packer F., 2005, CONTRACTUAL TERMS CD
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Pu XL, 2012, FINANC RES LETT, V9, P157, DOI 10.1016/j.frl.2012.01.001
+NR 29
+TC 0
+Z9 0
+U1 0
+U2 1
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0165-1765
+EI 1873-7374
+J9 ECON LETT
+JI Econ. Lett.
+PD JAN
+PY 2019
+VL 174
+BP 173
+EP 178
+DI 10.1016/j.econlet.2018.11.013
+PG 6
+WC Economics
+SC Business & Economics
+GA HI9FC
+UT WOS:000456759700041
+DA 2019-12-28
+ER
+
+PT J
+AU Kyrylenko, ON
+   Razumova, EN
+   Vysotskaya, MP
+   Kushnir, LV
+AF Kyrylenko, O. N.
+   Razumova, E. N.
+   Vysotskaya, M. P.
+   Kushnir, L. V.
+TI DEVELOPMENT OF MARKETING-LOGISTIC CENTERS OF INTERACTION OF ALL KINDS OF
+   TRANSPORT BASED ON IMPLEMENTATION "ONE TICKET"
+SO FINANCIAL AND CREDIT ACTIVITY-PROBLEMS OF THEORY AND PRACTICE
+LA Ukrainian
+DT Article
+DE transport; passenger transportation; single ticket; marketing and
+   logistics center; service
+AB The article proposes the creation of a single marketing and logistics center for coordinating the interaction of road, rail and air transport, the main carriers of passengers on the basis of the implementation of a "single ticket". It has also been proved that combining the functions of technological development and the creation of a single information space will provide a systemic effect. These centers will be able to accept transport services for mixed transportation of passengers, including tourists. Tactical and strategic management in all respects should be based on scientifically grounded methodology of system analysis to solve emerging problems. The purpose of their creation - identification of the possibility of integrated use of marketing and logistics for solving economic problems of the efficiency of passenger transport operations. Studying the experience of the most developed European marketing and logistics centers, it is possible to note that there is observed the high role of the state in planning, investing and controlling the activities of marketing and logistics centers in Europe. At the same time, the most effective ones are those of which assistance to the state is greatest.
+   It is confirmed that the realization of this task will be carried out by means of an early substantiation of the corresponding calculations of logistic technological schemes of transfer of passengers at a node from one mode of transport to another. Moreover, these centers will be able to accept transport services for mixed transportation of passengers, including tourists. Tactical and strategic management in all respects should be based on scientifically grounded methodology of system analysis to solve emerging problems. The decision of this task, as well as other, related to the operational management of transport processes of passenger transportation, in the absence of complete certainty and risk, should be carried out using the methods of using the so-called priority coefficients of priority service passengers.
+C1 [Kyrylenko, O. N.; Razumova, E. N.; Vysotskaya, M. P.] Natl Aviat Univ, Kiev, Ukraine.
+   [Kushnir, L. V.] Odessa Natl Maritime Univ, Econ, Odessa, Ukraine.
+RP Kyrylenko, ON (reprint author), Natl Aviat Univ, Kiev, Ukraine.
+EM ons@ua.fm; krazum@ukr.net; marinavis-2008@mail.ru; lyudmila_ku@i.ua
+CR Aksenov I. M., 2012, TRANSPORTNA LOHISTYK
+   Aksenov I. M., 2006, MARKETING OBEKTAH TR
+   Dykan V. L., 2004, EKONOMICHNYI ANALIZ
+   Galaburda V. G., 2006, TRANSPORTNYJ MARKETI
+   Kulaiev Yu. F., 2006, EKONOMIKA ZALIZNYCHN
+   Lozhachevska O. M., 2018, FORMUVANNIA MARKETYN
+   Novak V. O., 2012, VZAIEMODIIA AEROPORT
+   Pasichnyk V. I., 2005, UPRAVLINNIA EKONOMIK
+   Razumova K. M., 2014, SYSTEMNYI EKONOMICHN
+   Wikitransport.com, PASS TRANSP STAT INF
+NR 10
+TC 0
+Z9 0
+U1 0
+U2 0
+PU NATL BANK UKRAINE, UNIV BANKING, KHARKIV INST BANKING
+PI KHARKIV
+PA PR-KT PEREMOHY, 55, KHARKIV, 61174, UKRAINE
+SN 2306-4994
+EI 2310-8770
+J9 FINANC CREDIT ACT
+JI Financ. Credit Act.
+PY 2019
+VL 2
+IS 29
+BP 528
+EP 534
+DI 10.18371/fcaptp.v2i29.172306
+PG 7
+WC Business, Finance
+SC Business & Economics
+GA IK5DM
+UT WOS:000476605900054
+DA 2019-12-28
+ER
+
+PT J
+AU Kocaarslan, B
+   Soytas, U
+   Sari, R
+   Ugurlu, E
+AF Kocaarslan, Baris
+   Soytas, Ugur
+   Sari, Ramazan
+   Ugurlu, Ecenur
+TI The Changing Role of Financial Stress, Oil Price, and Gold Price in
+   Financial Contagion among US and BRIC Markets
+SO INTERNATIONAL REVIEW OF FINANCE
+LA English
+DT Article
+ID STOCK-MARKET; TIME-SERIES; CONDITIONAL HETEROSKEDASTICITY; EXPECTED
+   RETURNS; EQUITY RETURNS; ASSET RETURNS; UNIT-ROOT; CRISIS; VOLATILITY;
+   INTEGRATION
+AB The objective of this paper is to explore the determining factors behind financial contagion between US and BRIC (Brazil, Russia, India, and China) equity markets. To this end, we investigate the effects of global macroeconomic factors on the time-varying correlations among these markets obtained by asymmetric dynamic conditional correlation method. Utilizing quantile regression analysis, we examine the determinants of financial contagion at different levels of time-varying correlations. The results of quantile regression analyses reveal that global financial crisis (GFC) (2008) leads to changes in the dependence structure between dynamic conditional correlations among equity markets and global macroeconomic factors, such as global financial stress, oil prices, and gold prices. Following the GFC, monetary, and fiscal policy changes in the BRIC markets and hence changing macroeconomic risks of these markets are conducive to these changes. Our findings also demonstrate the importance of cross-market rebalancing channel for information transmission across US and BRIC markets.
+C1 [Kocaarslan, Baris; Soytas, Ugur; Sari, Ramazan] Middle East Tech Univ, Dept Business Adm, TR-06800 Ankara, Turkey.
+   [Ugurlu, Ecenur] Yildirim Beyazit Univ, Dept Int Trade & Business, Ankara, Turkey.
+RP Kocaarslan, B (reprint author), Middle East Tech Univ, Dept Business Adm, TR-06800 Ankara, Turkey.
+EM baris.kocaarslan@metu.edu.tr
+RI Soytas, Ugur/A-5498-2010
+CR Abad P, 2010, J BANK FINANC, V34, P2851, DOI 10.1016/j.jbankfin.2009.10.009
+   Adams Z, 2015, J BANK FINANC, V60, P93, DOI 10.1016/j.jbankfin.2015.07.008
+   Akca K, 2016, INT REV FINANC, V16, P169, DOI 10.1111/irfi.12071
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Ang A., 1999, 7056 NBER
+   Arouri MEH, 2010, ENERG POLICY, V38, P4528, DOI 10.1016/j.enpol.2010.04.007
+   Bai JS, 1998, ECONOMETRICA, V66, P47, DOI 10.2307/2998540
+   Banerjee R., 2010, REV TEMPO MUNDO, V2, P57
+   Baur DG, 2010, J BANK FINANC, V34, P1886, DOI 10.1016/j.jbankfin.2009.12.008
+   BEKAERT G, 1995, WORLD BANK ECON REV, V9, P75, DOI 10.1093/wber/9.1.75
+   BEKAERT G, 1995, J FINANC, V50, P403, DOI 10.2307/2329414
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Bekiros SD, 2014, INT REV FINANC ANAL, V33, P58, DOI 10.1016/j.irfa.2013.07.007
+   Bhar R, 2009, WORLD ECON, V32, P1036, DOI 10.1111/j.1467-9701.2009.01194.x
+   Bianconi M, 2013, EMERG MARK REV, V14, P76, DOI 10.1016/j.ememar.2012.11.002
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   BUCHINSKY M, 1995, J ECONOMETRICS, V68, P303, DOI 10.1016/0304-4076(94)01652-G
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Carrieri F, 2007, J FINANC QUANT ANAL, V42, P915, DOI 10.1017/S0022109000003446
+   Celik S, 2012, ECON MODEL, V29, P1946, DOI 10.1016/j.econmod.2012.06.011
+   Chen GM, 2002, J BANK FINANC, V26, P1113, DOI 10.1016/S0378-4266(01)00160-1
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   CHO DC, 1986, J FINANC, V41, P313, DOI 10.2307/2328437
+   Choe KI, 2012, PAC-BASIN FINANC J, V20, P271, DOI 10.1016/j.pacfin.2011.09.003
+   CHOW GC, 1960, ECONOMETRICA, V28, P591, DOI 10.2307/1910133
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Daskalaki C, 2011, J BANK FINANC, V35, P2606, DOI 10.1016/j.jbankfin.2011.02.022
+   de Jong F, 2005, J FINANC ECON, V78, P583, DOI 10.1016/j.jfineco.2004.10.010
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Dimitriou D, 2013, INT REV FINANC ANAL, V30, P46, DOI 10.1016/j.irfa.2013.05.008
+   Dooley M, 2009, J INT MONEY FINANC, V28, P1331, DOI 10.1016/j.jimonfin.2009.08.004
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   FAMA EF, 1990, J FINANC, V45, P1089, DOI 10.2307/2328716
+   Fang CR, 2014, INT REV ECON FINANC, V29, P330, DOI 10.1016/j.iref.2013.06.005
+   Fleming J, 1998, J FINANC ECON, V49, P111, DOI 10.1016/S0304-405X(98)00019-1
+   Forbes K. J., 2001, INT FINANCIAL CONTAG, P43, DOI DOI 10.1007/978-1-4757-3314-3_
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Goldstein M., 1998, ASIAN FINANCIAL CRIS
+   Gupta A. S., 2010, UNCTADGDSMDP20101, P149
+   Hacihasanoglu E, 2012, EMERG MARK FINANC TR, V48, P67, DOI 10.2753/REE1540-496X480404
+   Hammoudeh S, 2013, MATH COMPUT SIMULAT, V94, P277, DOI 10.1016/j.matcom.2012.01.002
+   Hwang E, 2013, ECON MODEL, V35, P338, DOI 10.1016/j.econmod.2013.07.021
+   Jaffe J, 1989, FINANC ANAL J, V45, P53, DOI DOI 10.2469/FAJ.V45.N2.53
+   Kang SH, 2009, ENERG ECON, V31, P119, DOI 10.1016/j.eneco.2008.09.006
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   Kocaarslan B, 2017, J COMMOD MARK, V7, P41, DOI 10.1016/j.jcomm.2017.08.001
+   Kocaarslan B, 2017, EMERG MARK FINANC TR, V53, P357, DOI 10.1080/1540496X.2016.1216838
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Koenker R, 2001, J ECON PERSPECT, V15, P143, DOI 10.1257/jep.15.4.143
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Koenker R, 2005, ECONOMETRIC SOC MONO
+   KOENKER RW, 1987, J R STAT SOC C-APPL, V36, P383
+   Kumar S.M., 2001, WP01134 IMF
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Lawrence C., 2003, WHY IS GOLD DIFFEREN
+   Lehkonen H, 2014, J EMPIR FINANC, V28, P90, DOI 10.1016/j.jempfin.2014.06.002
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Martens M, 2001, J BANK FINANC, V25, P1805, DOI 10.1016/S0378-4266(00)00159-X
+   Masson P., 1998, 98142 IMF
+   Mensi W, 2014, EMERG MARK REV, V19, P1, DOI 10.1016/j.ememar.2014.04.002
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   O'Neill J., 2009, LONG TERM OUTLOOK BR
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.2307/2336182
+   SCHWERT GW, 1990, J FINANC, V45, P1237, DOI 10.2307/2328722
+   Sensoy A, 2014, ECON MODEL, V40, P290, DOI 10.1016/j.econmod.2014.04.024
+   Silvennoinen A., 2008, HDB FINANCIAL TIME S
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Turhan I, 2013, EMERG MARK FINANC TR, V49, P21, DOI 10.2753/REE1540-496X4901S102
+   Yang L., 2010, FINANCIAL EC CRISIS, P119
+NR 72
+TC 0
+Z9 0
+U1 7
+U2 7
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1369-412X
+EI 1468-2443
+J9 INT REV FINANC
+JI Int. Rev. Financ.
+PD SEP
+PY 2019
+VL 19
+IS 3
+BP 541
+EP 574
+DI 10.1111/irfi.12189
+PG 34
+WC Business, Finance
+SC Business & Economics
+GA IU8JY
+UT WOS:000483829000003
+DA 2019-12-27
+ER
+
+PT J
+AU Giriuniene, G
+   Giriunas, L
+   Morkunas, M
+   Brucaite, L
+AF Giriuniene, Gintare
+   Giriunas, Lukas
+   Morkunas, Mangirdas
+   Brucaite, Laura
+TI A Comparison on Leading Methodologies for Bankruptcy Prediction: The
+   Case of the Construction Sector in Lithuania
+SO ECONOMIES
+LA English
+DT Article
+DE bankruptcy prediction models; construction sector
+ID GENETIC ALGORITHM; FINANCIAL DISTRESS; LISTED COMPANIES;
+   NEURAL-NETWORKS; MODEL; VARIABLES; RATIOS; RISK; FIRM
+AB Different economic environments differ in their characteristics; this prevents the usage of the same bankruptcy prediction models under different conditions. Objectively, the abundance of bankruptcy prediction models gives rise to the idea that these models are not in compliance with the changing business conditions in the market and do not meet the increasing complexity of business tasks. The purpose of this study is to assess the suitability of existing bankruptcy prediction models and the possibilities to increase the effectiveness of their application. In order to analyze theoretical aspects of the application of bankruptcy forecasting models and frame the research methodology, a systemic comparative and logical analysis of the scientific literature and statistical data, graphic data representation, induction, deduction and abstraction are employed. Results of the analysis confirm research hypotheses that bankruptcy prediction models based on macroeconomic variables are effective in identifying the number of corporate bankruptcies in a country and that the application of the model created on the grounds of macroeconomic indicators together with the traditional bankruptcy prediction model can improve the reliability of bankruptcy prediction. However, it was identified that models which are not specially adapted to companies in the construction sector are also suitable for forecasting their bankruptcies.
+C1 [Giriuniene, Gintare] Vilnius Univ, Fac Econ & Business Adm, LT-10222 Vilnius, Lithuania.
+   [Giriunas, Lukas; Morkunas, Mangirdas; Brucaite, Laura] Mykolas Romeris Univ, Fac Econ & Business, LT-08303 Vilnius, Lithuania.
+RP Morkunas, M (reprint author), Mykolas Romeris Univ, Fac Econ & Business, LT-08303 Vilnius, Lithuania.
+EM morkunas.mangirdas@gmail.com
+CR Abdipoor S, 2013, ASIAN EC FINANC REV, V3, P1528
+   Acosta-Gonzalez E, 2019, COMPUT ECON, V53, P227, DOI 10.1007/s10614-017-9737-x
+   Aiemsomboon L, 2016, ACTA MATH HUNG, V149, P413, DOI 10.1007/s10474-016-0621-2
+   Alaka HA, 2018, EXPERT SYST APPL, V94, P164, DOI 10.1016/j.eswa.2017.10.040
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   Amoa-Gyarteng K., 2014, EUROPEAN J BUSINESS, V6, P10
+   Aruldoss M, 2015, J ENTERP INF MANAG, V28, P186, DOI 10.1108/JEIM-09-2013-0069
+   Barbuta-Misu N., 2014, EKONOMIKA, V93, P131, DOI DOI 10.15388/Ekon.2014.2.3542
+   Belas J, 2017, J SECURITY SUSTAINAB, V7, DOI [10.9770/jssi.2017.7.1(7), DOI 10.9770/JSSI.2017.7.1(7)]
+   Ninh BPV, 2018, ECON SYST, V42, P616, DOI 10.1016/j.ecosys.2018.05.002
+   Box M, 2019, J QUANT CRIMINOL, V35, P287, DOI 10.1007/s10940-018-9380-2
+   BREDART X, 2014, ACCOUNTING FINANCE R, V3, P124, DOI DOI 10.5430/AFR.V3N2P124
+   Butkus M., 2014, APPL EC SYSTEMATIC R, V8, P111, DOI DOI 10.7220/AESR.1822.7996.2014.8.1.7
+   Calabrese R, 2013, J APPL STAT, V40, P1172, DOI 10.1080/02664763.2013.784894
+   Carter R, 2006, J SMALL BUS MANAGE, V44, P493, DOI 10.1111/j.1540-627X.2006.00187.x
+   Chesser D. L., 1974, J COMMERCIAL BAN AUG, V56, P28
+   Choong Nyoung Kim, 1999, Journal of Management Information Systems, V16, P189
+   Chou CH, 2017, APPL SOFT COMPUT, V56, P298, DOI 10.1016/j.asoc.2017.03.014
+   Chung CC, 2016, INT J FUZZY SYST, V18, P160, DOI 10.1007/s40815-015-0121-5
+   Cultrera L, 2016, REV ACCOUNT FINANC, V15, P101, DOI 10.1108/RAF-06-2014-0059
+   Du Jardin P., 2019, ANN OPER RES, P1, DOI [10.1007/s10479-019-03283-2, DOI 10.1007/S10479-019-03283-2]
+   EDMISTER RO, 1972, J FINANC QUANT ANAL, V7, P1477, DOI 10.2307/2329929
+   Etemadi H, 2009, EXPERT SYST APPL, V36, P3199, DOI 10.1016/j.eswa.2008.01.012
+   Fedorova E. A., 2016, STUDIES RUSSIAN EC D, V27, P254, DOI [10.1134/S1075700716030060, DOI 10.1134/S1075700716030060]
+   Fulmer J. G., 1984, J COMMERCIAL BANK LE, V24, P25
+   Garskaite K., 2008, BUSINESS THEORY PRAC, V9, P281
+   Glezakos M., 2010, EUROPEAN J FINANCE B, V3, P1
+   Grigaravicius S., 2003, MANAGEMENT ORG SYSTE, V28, P29
+   Gupta J, 2015, REV QUANT FINANC ACC, V45, P845, DOI 10.1007/s11156-014-0458-0
+   Hassan E, 2017, INDIAN PACIFIC J ACC, V1, P13
+   Ibarrondo-Davila MP, 2015, SAFETY SCI, V79, P116, DOI 10.1016/j.ssci.2015.05.014
+   Karaleviciene J., 2011, J MANAGE, V2, P113
+   Karas M, 2017, INZ EKON, V28, P145, DOI 10.5755/j01.ee.28.2.16353
+   Karas M, 2013, FINANCE AND THE PERFORMANCE OF FIRMS IN SCIENCE, EDUCATION, AND PRACTICE, P324
+   Kumar PR, 2007, EUR J OPER RES, V180, P1, DOI 10.1016/j.ejor.2006.08.043
+   Lawrence J. R., 2015, J APPL BUSINESS RES, V31, P2069, DOI DOI 10.19030/jabr.v31i6.9468
+   Lewis-Beck C., 2015, APPL REGRESSION INTR, P80
+   Li H, 2011, KNOWL-BASED SYST, V24, P1380, DOI 10.1016/j.knosys.2011.06.015
+   Iturriaga FJL, 2015, EXPERT SYST APPL, V42, P2857, DOI 10.1016/j.eswa.2014.11.025
+   Mackevicius J., 2006, VERSLAS TEORIJA IR P, V7, P193
+   Memon PA, 2015, PROCD SOC BEHV, V172, P200, DOI 10.1016/j.sbspro.2015.01.355
+   Mitman K, 2016, AM ECON REV, V106, P2219, DOI 10.1257/aer.20120512
+   OHLSON JA, 1980, J ACCOUNTING RES, V18, P109, DOI 10.2307/2490395
+   Onofrei M, 2014, ECON COMPUT ECON CYB, V48, P197
+   Prusak B., 2017, INTELLECT EC, V11, P18
+   Salehi M, 2016, INT J LAW MANAG, V58, P545, DOI 10.1108/IJLMA-05-2015-0023
+   Sandin A., 2007, INT J COMMERCE MANAG, V17, P295, DOI DOI 10.1108/10569210710844372
+   Schonfeld J, 2018, J BUS ECON MANAG, V19, P692, DOI 10.3846/jbem.2018.7063
+   Sedlacek J., 2001, UCETNI DATA RUKOV MA, P220
+   Shin KS, 2002, EXPERT SYST APPL, V23, P321, DOI 10.1016/S0957-4174(02)00051-9
+   Slavici T, 2016, QUAL QUANT, V50, P385, DOI 10.1007/s11135-014-0154-0
+   Slefendorfas Gediminas, 2016, EKONOMIKA, V95, P134, DOI [10.15388/Ekon.2016.1.9910, DOI 10.15388/EKON.2016.1.9910]
+   Springate G. L. V., 1978, PREDICTING POSSIBILI
+   Stephens M. A., 2017, GOODNESS OF FIT TECH, P195
+   Stoskus S, 2007, INZ EKON, P26
+   Svabova L., 2018, ANAL PREDICTORS BANK, P331
+   Tae Kyung Sung, 1999, Journal of Management Information Systems, V16, P63
+   Taffler R.J., 1977, ACCOUNTANCY, V88, P50
+   Tinoco MH, 2013, INT REV FINANC ANAL, V30, P394, DOI 10.1016/j.irfa.2013.02.013
+   Tomczak SK, 2017, OPER RES DECIS, V27, P81, DOI 10.5277/ord170306
+   Uhrig-Homburg M, 2005, J BANK FINANC, V29, P1509, DOI 10.1016/j.jbankfin.2004.06.026
+   Valaskova K, 2018, SUSTAINABILITY-BASEL, V10, DOI 10.3390/su10072144
+   Valaskova K, 2018, OECON COPERNIC, V9, P105, DOI 10.24136/oc.2018.006
+   Waqas H, 2018, BUS ECON HORIZ, V14, P389, DOI 10.15208/beh.2018.28
+   Zavgren C. V., 1985, J BUSINESS FINANCE A, V12, P19, DOI DOI 10.1111/J.1468-5957.1985.TB00077.X
+   Zelenkov Y, 2017, EXPERT SYST APPL, V88, P393, DOI 10.1016/j.eswa.2017.07.025
+   Zieba M, 2016, EXPERT SYST APPL, V58, P93, DOI 10.1016/j.eswa.2016.04.001
+   Zvarikova K, 2017, OECON COPERNIC, V8, P143, DOI 10.24136/oc.v8i1.10
+NR 68
+TC 0
+Z9 0
+U1 2
+U2 2
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+EI 2227-7099
+J9 ECONOMIES
+JI Economies
+PD SEP
+PY 2019
+VL 7
+IS 3
+AR 82
+DI 10.3390/economies7030082
+PG 20
+WC Economics
+SC Business & Economics
+GA JA7DD
+UT WOS:000488000600028
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Hurlin, C
+   Iseli, G
+   Perignon, C
+   Yeung, S
+AF Hurlin, Christophe
+   Iseli, Gregoire
+   Perignon, Christophe
+   Yeung, Stanley
+TI The counterparty risk exposure of ETF investors
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Asset management; Collateral; Derivatives; Regulatory arbitrage;
+   Systemic risk
+ID EXCHANGE-TRADED FUNDS; CAPITAL SHORTFALL; IMPACT
+AB As most Exchange-Traded Funds (ETFs) engage in securities lending or are based on total return swaps, they expose their investors to counterparty risk. In this paper, we estimate empirically such risk exposures for a sample of physical and swap-based funds. We find that counterparty risk exposure is higher for swap-based ETFs, but that investors are compensated for bearing this risk. Using a difference-indifferences specification, we uncover that ETF flows respond significantly to changes in counterparty risk. Finally, we show that switching to an optimal collateral portfolio leads to substantial reduction in counterparty risk exposure. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Hurlin, Christophe] Univ Orleans, Lab Econ Orleans, Rue Blois, F-45067 Orleans, France.
+   [Iseli, Gregoire; Perignon, Christophe] HEC Paris, 1 Ave Liberat, Jouy En Josas, France.
+   [Yeung, Stanley] Canadian Imperial Bank Commerce, 161 Bay St, Toronto, ON, Canada.
+RP Perignon, C (reprint author), HEC Paris, 1 Ave Liberat, Jouy En Josas, France.
+EM christophe.hurlin@univ-orleans.fr; iseli@hec.fr; perignon@hec.fr;
+   stanley.yeung@cibc.com
+RI Hurlin, Christophe/J-1474-2019
+OI Hurlin, Christophe/0000-0002-6082-8251
+FU Chair ACPR/Risk Foundation: Regulation and Systemic Risk;
+   Amundi-Dauphine Chair in Asset Management; Swiss National Science
+   FoundationSwiss National Science Foundation (SNSF); Institut Europlace
+   de Finance/Louis Bachelier; Agence Nationale de la RechercheFrench
+   National Research Agency (ANR)
+   [ANR-11-IDEX-0003/LabexEcodec/ANR-11-LABX-0047, ANR MultiRisk
+   ANR-16-CE26-0015-01]
+FX We acknowledge financial support from the Chair ACPR/Risk Foundation:
+   Regulation and Systemic Risk. Institut Europlace de Finance/Louis
+   Bachelier, Agence Nationale de la Recherche
+   (ANR-11-IDEX-0003/LabexEcodec/ANR-11-LABX-0047 and ANR MultiRisk
+   ANR-16-CE26-0015-01), Amundi-Dauphine Chair in Asset Management, and
+   from the Swiss National Science Foundation.
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Agarwal V., 2016, WORKING PAPER
+   [Anonymous], 2014, FINANCIAL TIMES
+   Barber BM, 2016, REV FINANC STUD, V29, P2600, DOI 10.1093/rfs/hhw054
+   Bartolini L, 2011, REV FINANC STUD, V24, P248, DOI 10.1093/rfs/hhq108
+   Ben-David I, 2018, J FINANC, V73, P2471, DOI 10.1111/jofi.12727
+   Ben-David I, 2017, ANNU REV FINANC ECON, V9, P169, DOI 10.1146/annurev-financial-110716-032538
+   Berkowitz J, 2002, J FINANC, V57, P1093, DOI 10.1111/1540-6261.00455
+   Bessembinder H, 2016, J FINANC ECON, V121, P142, DOI 10.1016/j.jfineco.2016.02.011
+   Bhattacharya A., 2018, WORKING PAPER
+   BlackRock, 2018, ETP LANDSC
+   BlackRock, 2012, ETP LANDSC
+   Blocher J., 2016, WORKING PAPER
+   Bloomberg, 2011, BLACKR FINK ATT SOC
+   Brandt MW, 2004, J FINANC, V59, P2623, DOI 10.1111/j.1540-6261.2004.00711.x
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Carhart MM, 1997, J FINANC, V52, P57, DOI 10.2307/2329556
+   Celerier C, 2017, Q J ECON, V132, P1469, DOI 10.1093/qje/qjx007
+   Chen Y, 2011, J FINANC QUANT ANAL, V46, P1073, DOI 10.1017/S0022109011000238
+   Chevalier J, 1997, J POLIT ECON, V105, P1167, DOI 10.1086/516389
+   Chinco A., 2019, WORKING PAPER
+   Cremers M, 2016, J FINANC ECON, V120, P539, DOI 10.1016/j.jfineco.2016.02.008
+   Da Z, 2018, EUR FINANC MANAG, V24, P136, DOI 10.1111/eufm.12137
+   Dannhauser CD, 2017, J FINANC ECON, V125, P537, DOI 10.1016/j.jfineco.2017.06.002
+   Evans R., 2018, WORKING PAPER
+   Financial Stability Board, 2011, POT FIN STAB ISS AR
+   Frazzini A, 2008, J FINANC ECON, V88, P299, DOI 10.1016/j.jfineco.2007.07.001
+   Grant MC, 2008, LECT NOTES CONTR INF, V371, P95, DOI 10.1007/978-1-84800-155-8_7
+   Hamm S. J. W., 2014, WORKING PAPER
+   International Monetary Fund, 2011, GLOB FIN STAB REP DU, P68
+   Ivanov I. T., 2017, WORKING PAPER
+   Jagannathan R, 2003, J FINANC, V58, P1651, DOI 10.1111/1540-6261.00580
+   Koski JL, 1999, J FINANC, V54, P791, DOI 10.1111/0022-1082.00126
+   Ledoit O., 2003, J EMPIR FINANC, V10, P603, DOI DOI 10.1016/S0927-5398(03)00007-0
+   Malamud S., 2016, WORKING PAPER
+   MARKOWITZ H., 1959, PORTFOLIO SELECTION
+   Morningstar, 2012, SYNTH ETFS MICR GLOB
+   Ramaswamy S., 2011, WORKING PAPER
+   Schmidt L. D. W., 2015, AM ECON REV, V106, P2625
+   Shum P, 2016, REV FINANC, V20, P2379, DOI 10.1093/rof/rfv061
+   Tang HF, 2013, J FINANC QUANT ANAL, V48, P309, DOI 10.1017/S0022109012000622
+   Tuzun T., 2014, WORKING PAPER
+   Vanguard, 2013, UND SYNTH ETFS
+NR 44
+TC 0
+Z9 0
+U1 1
+U2 3
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD MAY
+PY 2019
+VL 102
+BP 215
+EP 230
+DI 10.1016/j.jbankfin.2019.03.014
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA HV8RR
+UT WOS:000466251500013
+DA 2019-12-28
+ER

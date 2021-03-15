@@ -1,0 +1,420 @@
+
+PT J
+AU Heider, F
+   Hoerova, M
+   Holthausen, C
+AF Heider, Florian
+   Hoerova, Marie
+   Holthausen, Cornelia
+TI Liquidity hoarding and interbank market rates: The role of counterparty
+   risk
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Interbank market; Endogenous liquidity; Counterparty risk; Asymmetric
+   information; Market break-down; Financial crisis
+ID MONETARY-POLICY; SYSTEMIC RISK; BANKING; INFORMATION; FREEZES; CRISIS;
+   UPS
+AB We develop a model of interbank lending and borrowing with counterparty risk. The model has two key ingredients. First, liquidity in the banking sector is endogenous, so there is an opportunity cost of holding liquid assets. Second, banks are privately informed about the risk of their long-term assets, which can lead to adverse selection and high interest rates in the interbank market. We identify a novel form of a market break-down, which can lead to liquidity hoarding. It arises because adverse selection in the interbank market changes the opportunity cost of holding liquidity. We use the model to shed light on developments in interbank markets prior to and during the 2007-09 financial crisis, as well as the effectiveness of policy interventions aimed at restoring interbank market activity. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Heider, Florian; Hoerova, Marie; Holthausen, Cornelia] European Cent Bank, Frankfurt, Germany.
+RP Hoerova, M (reprint author), European Cent Bank, Frankfurt, Germany.
+EM marie.hoerova@ecb.int
+CR Acharya VV, 2013, REV FINANC, V17, P107, DOI 10.1093/rof/rfs022
+   Acharya VV, 2012, AM ECON J-MACROECON, V4, P184, DOI 10.1257/mac.4.2.184
+   Afonso G, 2011, J FINANC, V66, P1109, DOI 10.1111/j.1540-6261.2011.01670.x
+   Allen F, 2004, ECONOMETRICA, V72, P1023, DOI 10.1111/j.1468-0262.2004.00525.x
+   Allen F, 2009, J MONETARY ECON, V56, P639, DOI 10.1016/j.jmoneco.2009.04.003
+   Angelini P, 2011, J MONEY CREDIT BANK, V43, P923, DOI 10.1111/j.1538-4616.2011.00402.x
+   Board of Governors of the Federal Reserve System, 2009, SUP CAP ASS PROGR DE
+   Bolton P, 2011, Q J ECON, V126, P259, DOI 10.1093/qje/qjq007
+   Bond P, 2015, J FINANC ECON, V115, P155, DOI 10.1016/j.jfineco.2014.08.008
+   Bruche M, 2010, J MONETARY ECON, V57, P45, DOI 10.1016/j.jmoneco.2009.11.007
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   European Central Bank, 2009, EUR MARK SURV
+   European Central Bank, 2013, MACR TEST FRAM BANK
+   Freixas X, 2005, REV FINANC STUD, V18, P459, DOI 10.1093/rfs/hhi001
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Freixas X, 2008, J MONEY CREDIT BANK, V40, P1151, DOI 10.1111/j.1538-4616.2008.00152.x
+   Freixas X, 2011, REV FINANC STUD, V24, P2656, DOI 10.1093/rfs/hhr018
+   Goldstein I, 2015, 1510 FED RES BANK PH
+   Gorton G., 2008, JACKS HOL S MAINT ST
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   GREENLAW David, 2008, P US MON POL FOR 200
+   Malherbe F, 2014, J FINANC, V69, P947, DOI 10.1111/jofi.12063
+   Milbradt K., 2015, J FINANCIAL IN PRESS
+   Parlatore C., 2014, TRANSPARENCY B UNPUB
+   Philippon T, 2013, J FINANC, V68, P1, DOI 10.1111/j.1540-6261.2012.01793.x
+   Philippon T, 2012, AM ECON REV, V102, P1, DOI 10.1257/aer.102.1.1
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Schwarz K., 2009, MIND GAP DISEN UNPUB
+   STIGLITZ JE, 1981, AM ECON REV, V71, P393
+   Taylor JB, 2009, AM ECON J-MACROECON, V1, P58, DOI 10.1257/mac.1.1.58
+   Tirole J, 2012, AM ECON REV, V102, P29, DOI 10.1257/aer.102.1.29
+NR 35
+TC 33
+Z9 33
+U1 1
+U2 42
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD NOV
+PY 2015
+VL 118
+IS 2
+BP 336
+EP 354
+DI 10.1016/j.jfineco.2015.07.002
+PG 19
+WC Business, Finance; Economics
+SC Business & Economics
+GA CV9JX
+UT WOS:000364604600007
+DA 2019-12-28
+ER
+
+PT J
+AU Gang, JH
+   Qian, ZX
+AF Gang, Jianhua
+   Qian, Zongxin
+TI China's Monetary Policy and Systemic Risk
+SO EMERGING MARKETS FINANCE AND TRADE
+LA English
+DT Article
+DE China; monetary policy; systemic risk
+ID KEYNESIAN PHILLIPS-CURVE; CAPITAL REGULATION; LENDING STANDARDS;
+   INFLATION; SPREADS; FINANCE; GROWTH; BANKS; BOOMS
+AB We study the effect of domestic monetary policies on China's systemic risk after the collapse of Lehman Brothers. Evidence shows China's systemic risk was relatively high in 2009 and to the end of 2011. The increased systemic risk was partly due to the contagion from the volatile global financial market, but effects from domestic monetary policy actions are also nonnegligible. Evidence also suggests monetary policy shocks significantly increased China's systemic risk between October 2008 and November 2013 while they had a limited effect on the real economy. Findings in this article call for a more prudent monetary policy in the context of high global financial risk.
+C1 [Gang, Jianhua] Renmin Univ China, Sch Finance, China Financial Policy Res Ctr, Beijing, Peoples R China.
+   [Qian, Zongxin] Renmin Univ China, Inst Real Estate & Finance, Sch Finance, Beijing 100872, Peoples R China.
+RP Qian, ZX (reprint author), Renmin Univ China, Inst Real Estate & Finance, Sch Finance, 59 Zhongguancun St, Beijing 100872, Peoples R China.
+EM qianzx@ruc.edu.cn
+FU Fundamental Research Funds for the Central UniversitiesFundamental
+   Research Funds for the Central Universities; Renmin University of China;
+   National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71303246]
+FX The article is partly supported by the Fundamental Research Funds for
+   the Central Universities and the Research Funds of Renmin University of
+   China as well as funding from grant 71303246 supported by National
+   Natural Science Foundation of China.
+CR ACHARYA V. V., 2012, 8824 CTR EC POL RES
+   Adrian T., 2010, HDB MONETARY EC, V3, P601, DOI DOI 10.1016/B978-0-444-53238-1.00012-0
+   Ahuja A., 2010, 10274 INT MON FUND
+   Alexander C, 2008, J BANK FINANC, V32, P1008, DOI 10.1016/j.jbankfin.2007.08.002
+   Allen F, 2005, J FINANC ECON, V77, P57, DOI 10.1016/j.jfineco.2004.06.010
+   Allen F, 2000, ECON J, V110, P236, DOI 10.1111/1468-0297.00499
+   Altunbas Y, 2010, 298 BANK INT SETTL
+   Angeloni I, 2013, J MONETARY ECON, V60, P311, DOI 10.1016/j.jmoneco.2013.01.003
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blommestein H. J., 2011, 8652 CTR EC POL RES
+   Borio C, 2012, J FINANC STABIL, V8, P236, DOI 10.1016/j.jfs.2011.12.003
+   Christiano LJ, 2014, AM ECON REV, V104, P27, DOI 10.1257/aer.104.1.27
+   Dell'Ariccia G, 2006, J FINANC, V61, P2511, DOI 10.1111/j.1540-6261.2006.01065.x
+   Dell'Ariccia G, 2012, J MONEY CREDIT BANK, V44, P367, DOI 10.1111/j.1538-4616.2011.00491.x
+   Demirguc-Kunt A, 2013, J BANK FINANC, V37, P875, DOI 10.1016/j.jbankfin.2012.10.010
+   Dickinson D, 2007, CHINA ECON REV, V18, P87, DOI 10.1016/j.chieco.2005.11.002
+   Dufour JM, 2013, J MONETARY ECON, V60, P340, DOI 10.1016/j.jmoneco.2013.02.001
+   Galati G., 2012, J ECON SURV, V27, P846
+   Hasan MS, 1999, J COMP ECON, V27, P669, DOI 10.1006/jcec.1999.1607
+   He Q, 2013, CHINA ECON REV, V25, P88, DOI 10.1016/j.chieco.2013.03.001
+   Jimnez G., 2014, ECONOMETRICA, V82, P463
+   Justiniano A, 2008, AM ECON REV, V98, P604, DOI 10.1257/aer.98.3.604
+   Linde J, 2005, J MONETARY ECON, V52, P1135, DOI 10.1016/j.jmoneco.2005.08.007
+   People's Bank of China, 2011, CHIN MON POL REP 201
+   People's Bank of China, 2008, CHIN MON POL REP 200
+   People's Bank of China, 2010, CHIN MON POL REP 201
+   Primiceri GE, 2005, REV ECON STUD, V72, P821, DOI 10.1111/j.1467-937X.2005.00353.x
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Sims CA, 2006, AM ECON REV, V96, P54, DOI 10.1257/000282806776157678
+   Sun RR, 2013, CHINA ECON REV, V26, P56, DOI 10.1016/j.chieco.2013.03.003
+   Taylor J. B., 2009, GETTING TRACK GOVT A
+   Zhang CS, 2013, EMERG MARK FINANC TR, V49, P82, DOI 10.2753/REE1540-496X490505
+   Zhang CS, 2013, EMERG MARK FINANC TR, V49, P119, DOI 10.2753/REE1540-496X4905S409
+   Zhang CS, 2013, J POLICY MODEL, V35, P75, DOI 10.1016/j.jpolmod.2012.04.006
+   Zhang CS, 2011, ECON MODEL, V28, P2462, DOI 10.1016/j.econmod.2011.07.003
+   Zhang CS, 2009, WORLD ECON, V32, P998, DOI 10.1111/j.1467-9701.2009.01191.x
+NR 36
+TC 9
+Z9 9
+U1 3
+U2 31
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1540-496X
+EI 1558-0938
+J9 EMERG MARK FINANC TR
+JI Emerg. Mark. Financ. Trade
+PD JUL-AUG
+PY 2015
+VL 51
+IS 4
+BP 701
+EP 713
+DI 10.1080/1540496X.2015.1039895
+PG 13
+WC Business; Economics; International Relations
+SC Business & Economics; International Relations
+GA CL9KG
+UT WOS:000357296500003
+DA 2019-12-27
+ER
+
+PT J
+AU Kupiec, P
+   Wallison, P
+AF Kupiec, Paul
+   Wallison, Peter
+TI Can the "Single Point of Entry" strategy be used to recapitalize a
+   systemically important failing bank?
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Dodd-Frank Orderly Liquidation Authority; Single point of entry
+   resolution strategy; Too-big-to-fail
+AB The Single Point of Entry (SPOE) the FDIC strategy to implement its new Dodd-Frank Orderly Liquidation Authority (OLA) promises to reduce the financial market turmoil caused by the failure of a large complex financial institution by using parent holding company resources to recapitalize its large failing subsidiary banks. We identify legal and financial impediments that may prevent the use of a SPOE strategy for this purpose. Dodd-Frank does not authorize bank recapitalizations through SPOE or otherwise, and the OLA cannot be invoked unless the failure of a subsidiary puts the parent in danger of default. The imprecise legislative language that authorizes OLA creates a new source of systemic risk. Regulations required to operationalize SPOE will require bank holding companies to issue a substantial volume of new subordinated debt, increasing these institutions' leverage and financial fragility. Unless the Dodd-Frank Act is amended, OLA could well magnify and not reduce market instability in the next financial crisis. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Kupiec, Paul; Wallison, Peter] Amer Enterprise Inst Publ Policy Res, Washington, DC 20036 USA.
+RP Kupiec, P (reprint author), Amer Enterprise Inst Publ Policy Res, 1150 17th St NW, Washington, DC 20036 USA.
+EM paul.kupiec@aei.org; peter.wallison@aei.org
+CR Adler J., 2014, AM BANKER       1030
+   Barth J., 2014, PERSPECTIVES DODD FR
+   Bovenzi J., 2013, REPORT FAILURE RESOL
+   Bovenzi J., 2014, BIPARTISAN POLICY CT
+   BRADLEY C, 2008, FINANCE MARK I INSTR, V17, P249
+   Brown D C. L., 1992, HOFSTRA LAW REV, P21
+   Cieri Richard M., 2004, DEPAUL BUS COM L J, V2, P295
+   Coffee JC, 2012, CORNELL LAW REV, V97, P1019
+   Committee on Capital Markets Regulation, 2014, WHAT DO CONT REP COM
+   Crawford J., 2014, U CALIFORNIA HASTING, P132
+   Deutsch D., 2011, AM BANKRUPTCY I J, VXXX
+   Federal Deposit Insurance Corporation, 2014, WAMU REC
+   Federal Deposit Insurance Corporation, 2013, FED REGISTER, V78, P76614
+   Federal Deposit Insurance Corporation and Bank of England, 2012, JOINT PAP FED DEP IN
+   Financial Stability Board, 2014, FIN STAB BOARD CONS
+   Fisher R., 2013, COMMUNICATION   0626
+   Fitzgerald A., 2013, WHAT IS SPARKING TRE
+   Flannery M., 2009, U FLORIDA WORKING PA
+   Guynn Randall D, 2014, GREAT DIVIDE NEW PER
+   Herring RJ, 2013, J APPL CORP FINANCE, V25, P21
+   Hoenig T., 2014, NAT ASS BUS EC 30 AN
+   Johnson S., 2013, NY TIMES
+   Krimminger M., 2013, COMMUNICATION   0515
+   Lacker J., 2013, COMMUNICATION
+   Lee P.L., 2012, BANK LAW J, V129
+   Levitin A., 2014, SINGLE POINT ENTRY N
+   Lubben S., 2013, 2353035 SET HALL PUB
+   Norton J.O., 2013, COMMUNICATION
+   One reel, 2010, SEATTLE TIMES
+   Powell J., 2013, I INT BANK 2013 WASH
+   Rosner J., 2013, COMMUNICATION   0514
+   Skeel D. A, 2014, 1410 U PENNS I LAW E
+   Stein J., 2013, C SPONS INT MON FUND
+   Tarullo D. K., 2013, FED RES BOARD FED RE
+NR 34
+TC 4
+Z9 4
+U1 0
+U2 6
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD OCT
+PY 2015
+VL 20
+BP 184
+EP 197
+DI 10.1016/j.jfs.2015.09.007
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA CW2VN
+UT WOS:000364851300012
+DA 2019-12-28
+ER
+
+PT J
+AU Eder, A
+   Keiler, S
+AF Eder, Armin
+   Keiler, Sebastian
+TI CDS Spreads and Contagion Amongst Systemically Important Financial
+   Institutions - A Spatial Econometric Approach
+SO INTERNATIONAL JOURNAL OF FINANCE & ECONOMICS
+LA English
+DT Article
+DE Systemic risk; financial contagion; spatial econometrics; CDS spreads;
+   government policy and regulation; CDS spread
+ID DEFAULT SWAP MARKET; CREDIT RISK; DETERMINANTS; MODEL; SPECIFICATION;
+   DEPENDENCE; CRISIS; BONDS; BANK
+AB This study applies a novel way of measuring, quantifying and modelling the contagion risk amongst financial institutions. The magnitude of risk spill over effects is gauged by introducing a specific weighting scheme to the regression. This approach originally stems from spatial econometrics. The methodology allows for a decomposition of the credit spread into a contagion risk premium, a systematic risk premium and an idiosyncratic risk premium. We identify considerable risk spill overs due to the interconnectedness of the financial institutes in the sample. In stress tests, up to one-fifth of the CDS spread changes are owing to financial contagion. These results also give an alternative explanation for the nonlinear relationship between a debtor's theoretical probability of default and the observed credit spreads - known as the credit spread puzzle'. Copyright (c) 2015 John Wiley & Sons, Ltd.
+C1 [Eder, Armin] Helvetia Insurance, CH-9001 St Gallen, Switzerland.
+   [Keiler, Sebastian] Deutsch Bundesbank, D-60431 Frankfurt, Germany.
+RP Keiler, S (reprint author), Deutsch Bundesbank, Wilhelm Epstein Str 14, D-60431 Frankfurt, Germany.
+EM sebastian.keiler1@gmail.com
+CR Abreu M, 2004, TECHNICAL REPORT
+   Acharya VV, 2009, RESTORING FINANCIAL
+   Adams Z., 2010, MODELING SPILLOVER E
+   Alexander C, 2008, J BANK FINANC, V32, P1008, DOI 10.1016/j.jbankfin.2007.08.002
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen L., 2004, UNDERSTANDING MARKET
+   Anselin L, 2002, AGR ECON, V27, P247, DOI 10.1111/j.1574-0862.2002.tb00120.x
+   Anselin L, 2003, INT REGIONAL SCI REV, V26, P153, DOI 10.1177/0160017602250972
+   Anselin L, 1988, SPATIAL ECONOMETRICS
+   Arora N, 2012, J FINANC ECON, V103, P280, DOI 10.1016/j.jfineco.2011.10.001
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Chan-Lau JA, 2005, IMF WORKING PAPER
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   Deutsche B., 2011, FINANCIAL STABILITY
+   Deutsche B., 2010, FINANCIAL STABILITY
+   Deutsche B, 2004, MONTHLY REPORT, V56, P43
+   Deutsche B, 2010, MONTHLY REPORT, V62, P43
+   Duffie D, 1999, REV FINANC STUD, V12, P687, DOI 10.1093/rfs/12.4.687
+   Edwards S, 2001, J DEV ECON, V66, P505, DOI 10.1016/S0304-3878(01)00172-9
+   Edwards S., 2000, W7813 NBER
+   EICHENGREEN B, 2009, 14904 NBER
+   Elsas R, 2010, J BANK FINANC, V34, P1274, DOI 10.1016/j.jbankfin.2009.11.024
+   Ericsson J, 2009, J FINANC QUANT ANAL, V44, P109, DOI 10.1017/S0022109009090061
+   Fecht F, 2004, J EUR ECON ASSOC, V2, P969, DOI 10.1162/1542476042813832
+   Fernandez V, 2011, QUANT FINANC, V11, P237, DOI 10.1080/14697680903127403
+   Finch G, 2009, BLOOMBERG       0202
+   Forte S, 2009, J BANK FINANC, V33, P2013, DOI 10.1016/j.jbankfin.2009.04.015
+   Fratzscher M, 2003, INT J FINANC ECON, V8, P109, DOI 10.1002/ijfe.203
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   further Basel Committee on Banking Supervision, 2006, 15 BAS COMM BANK SUP
+   Giglio S., 2011, WORKING PAPER
+   HAUBRICH JG, 1996, ECON REV, V32, P26
+   Hernandez L.F., 2001, INT REV FINANC ANAL, V10, P203
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Jarrow RA, 1997, REV FINANC STUD, V10, P481, DOI 10.1093/rfs/10.2.481
+   JARROW RA, 1995, J FINANC, V50, P53, DOI 10.2307/2329239
+   Kelejian HH, 2006, OPEN ECON REV, V17, P423, DOI 10.1007/s11079-006-0357-7
+   KIM IJ, 1993, FINANC MANAGE, V22, P117, DOI 10.2307/3665932
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   LeSage J, 2009, STAT TEXTB MONOGR, P1
+   Longstaff FA, 2005, J FINANC, V60, P2213, DOI 10.1111/j.1540-6261.2005.00797.x
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Plumper T, 2010, EUR J POLIT RES, V49, P418, DOI 10.1111/j.1475-6765.2009.01900.x
+   Stulz RM, 2010, J ECON PERSPECT, V24, P73, DOI 10.1257/jep.24.1.73
+   Thornton Daniel L., 2009, EC SYNOPSES, V24, P1
+   Tsuji C, 2005, J INT MONEY FINANC, V24, P1073, DOI 10.1016/j.jimonfin.2005.08.005
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Volz M., 2009, DOES BANKS SIZE DIST
+   Wilson J, 2012, FINANCIAL TIMES
+NR 51
+TC 8
+Z9 8
+U1 1
+U2 20
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1076-9307
+EI 1099-1158
+J9 INT J FINANC ECON
+JI Int. J. Financ. Econ.
+PD OCT
+PY 2015
+VL 20
+IS 4
+BP 291
+EP 309
+DI 10.1002/ijfe.1516
+PG 19
+WC Business, Finance
+SC Business & Economics
+GA CT3RM
+UT WOS:000362724600001
+DA 2019-12-27
+ER
+
+PT J
+AU Berlinger, E
+   Walter, G
+AF Berlinger, Edina
+   Walter, Gyoergy
+TI INCOME-CONTINGENT REPAYMENT SCHEME FOR NON-PERFORMING MORTGAGE LOANS IN
+   HUNGARY
+SO ACTA OECONOMICA
+LA English
+DT Article
+DE FX mortgage loans; emerging markets; management of credit and systemic
+   risk; PTI; income-contingent repayment; micro-simulation; Hungary
+ID MORAL HAZARD; HOUSEHOLDS
+AB At the end of 2014, more than 23% of the foreign currency denominated mortgage portfolio in Hungary was overdue; about 20% was classified as non-performing and the tendency is worsening. In this paper, we propose a solution to effectively reduce the credit and systemic risk inherent to this portfolio - the proposed model can be applied to other mortgage portfolios in trouble as well. The main element of our proposal is income-contingent repayment complemented with effective incentives to motivate debtors to repay their debt. We demonstrate that the proposed scheme is attractive for both the debtors and the lenders; therefore, contrary to some recent policy measures, in this case there is no need for direct state intervention to force modifications to the existing legal contracts. In order to evaluate the possible effects, we simulated a realistic population of borrowers with different age, debt, loan-to-value, and income. Then we calculated the expected income paths, the repayments of the borrowers as well as the profit of the lenders on the basis of the non-performing FX mortgage portfolio. The results underpin that the proposed scheme creates significant value added and, most importantly, that it can effectively reduce the vulnerability of the entire economy to future shocks.
+C1 [Berlinger, Edina; Walter, Gyoergy] Corvinus Univ Budapest, Dept Finance, Budapest, Hungary.
+   [Berlinger, Edina] Hungarian Acad Sci, Finance Sub Comm, H-1051 Budapest, Hungary.
+RP Berlinger, E (reprint author), Corvinus Univ Budapest, Dept Finance, Budapest, Hungary.
+EM Edina.Berlinger@uni-corvinus.hu; Gyorgy.Walter@uni-corvinus.hu
+RI Berlinger, Edina/I-3576-2015
+FU Hungarian Academy of Sciences, Momentum Programme [LP-004/2010]
+FX This paper was based on a research supported by the Hungarian Academy of
+   Sciences, Momentum Programme (LP-004/2010).
+CR Balas T, 2015, ACTA OECON, V65, P183, DOI 10.1556/032.65.2015.2.1
+   Barr N., 2012, EC WELFARE STATE
+   Beer C, 2010, J BANK FINANC, V34, P2198, DOI 10.1016/j.jbankfin.2010.02.008
+   Berlinger E, 2014, HITELINTEZETI SZEMLE, VXIII, P2
+   Berlinger E, 2013, HITELINTEZETI SZEMLE, VXII, P469
+   Bethlendi A, 2011, ACTA OECON, V61, P193, DOI 10.1556/AOecon.61.2011.2.5
+   Csajbok A, 2010, MNB OCCASSIONAL PAPE, V87
+   Dewatripont M, 2003, J EUR ECON ASSOC, V1, DOI 10.1162/154247603322493186
+   EGEDY T., 2012, HUNGARIAN GEOGRAPHIC, V61, P155
+   Eichengreen B, 1999, 7418 NAT BUR EC RES
+   HERMALIN BE, 1991, ECONOMETRICA, V59, P1735, DOI 10.2307/2938287
+   HFSA, 2012, GYORS VEGT
+   Hudecz A, 2013, ACTA OECON, V63, P257, DOI 10.1556/AOecon.63.2013.3.1
+   Hungarian Student Loan Center, 2014, FIN REP
+   INNES RD, 1990, J ECON THEORY, V52, P45, DOI 10.1016/0022-0531(90)90066-S
+   Michelangeli V., 2014, INT J MICROSIMULATIO, V7, P53
+   Ministry of National Economies in Hungary, 2012, CENTR BUDG 2012
+   MNB, 2014, REP FIN STAB
+   MNB, 2015, COMP LOANS EXT HOUS
+   MNB, 2011, MNB CLUB
+   MNB, 2014, INF EXCH RAT FIX SCH
+   Modigliani F., 1976, NEW INFLATION MONETA, P90
+   O'Donoghue C., 2001, BRAZILIAN ELECT J EC, V4, P77
+   ROSENBERG CB, 2008, 08173 IMF
+   Stiglitz J., 2013, 19064 NBER
+   Stiglitz J.E., 2014, INCOME CONTINGENT LO
+   Tirole J, 2006, THEORY OF CORPORATE FINANCE, P1
+   Yeyati EL, 2006, ECON POLICY, P61
+NR 28
+TC 2
+Z9 2
+U1 0
+U2 9
+PU AKADEMIAI KIADO RT
+PI BUDAPEST
+PA PRIELLE K U 19, PO BOX 245,, H-1117 BUDAPEST, HUNGARY
+SN 0001-6373
+EI 1588-2659
+J9 ACTA OECON
+JI Acta. Oecon.
+PD DEC
+PY 2015
+VL 65
+SU 1
+BP 123
+EP 147
+DI 10.1556/032.65.2015.S1.8
+PG 25
+WC Economics
+SC Business & Economics
+GA DA8WM
+UT WOS:000368087500007
+OA Green Accepted
+DA 2019-12-28
+ER

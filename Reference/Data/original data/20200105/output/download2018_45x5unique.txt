@@ -1,0 +1,614 @@
+
+PT J
+AU Bates, S
+   Saint-Pierre, P
+AF Bates, Samuel
+   Saint-Pierre, Patrick
+TI Adaptive Policy Framework through the Lens of the Viability Theory: A
+   Theoretical Contribution to Sustainability in the Anthropocene Era
+SO ECOLOGICAL ECONOMICS
+LA English
+DT Article
+DE Social-Ecological System built around Money; Anticipatory governance;
+   Adaptive governance; Mathematical viability theory; Vulnerability;
+   Resilience
+ID SOCIAL-ECOLOGICAL SYSTEMS; GLOBAL CHANGE RESEARCH; CLIMATE-CHANGE;
+   RESOURCE-MANAGEMENT; ROBUST-CONTROL; GOVERNANCE; COMANAGEMENT; CRISIS;
+   PARTICIPATION; COLLABORATION
+AB The Earth is an evolutionary system that can be viewed as a Social-Ecological System built around Money (SESM) because of the coupling of the Anthropocene Era with globalization. Given the simultaneous (environmental -economic) risks of "total uncertainty" and "systemic aftermath", several paradigmatic turns are required. Ecological economics is a cutting-edge field that tackles this issue. An integrative framework involving co-evolutionary modelling offers methods for addressing the regulation issue that arises from the significant uncertainty driven by global economic and ecological risks. We tackle the issue of adaptive policy for SESM regulation by answering the call for paradigmatic turns, which leads us to support tychastic vs. stochastic uncertainty, in time adaptation vs. optimal belated solutions, viability vs. stationary equilibrium, and interdisciplinarity and participatory processes in modelling and policy action. We describe step by step how to conceive SESM modelling through the lens of the mathematical viability theory (MVT), and we argue that this lens, when adjusted for anticipatory and adaptive governance (AAG), is relevant to examining sustainability for complex adaptive SESMs from a local or global perspective.
+C1 [Bates, Samuel] Univ Paris 09, PSL Res Univ, LEDa, Pl Marechal Lattre de Tassigny, F-75775 Paris 16, France.
+   [Saint-Pierre, Patrick] LASTRE, Bordeaux, France.
+RP Bates, S (reprint author), Univ Paris 09, PSL Res Univ, LEDa, Pl Marechal Lattre de Tassigny, F-75775 Paris 16, France.
+EM samuel.bates@dauphine.fr
+OI BATES, Samuel/0000-0002-2059-8332
+FU program "Agrobiosphere" (Gaia-Trop) by the French Government; ANRFrench
+   National Research Agency (ANR) [ANR-12-AGRO-0009-05]
+FX This work has received support under the program "Agrobiosphere"
+   (Gaia-Trop) launched by the French Government and implemented by ANR
+   with the references ANR-12-AGRO-0009-05.
+CR Adger WN, 2006, GLOBAL ENVIRON CHANG, V16, P268, DOI 10.1016/j.gloenvcha.2006.02.006
+   Allen CR, 2011, J ENVIRON MANAGE, V92, P1339, DOI 10.1016/j.jenvman.2010.11.019
+   Anderies JM, 2004, ECOL SOC, V9
+   Angelstam P, 2013, AMBIO, V42, P254, DOI 10.1007/s13280-012-0372-4
+   Aubin J. P., 2012, TYCHASTIC MEASURE VI
+   Aubin J.-P., 1997, DYNAMIC EC THEORY VI
+   Aubin JP, 2011, VIABILITY THEORY: NEW DIRECTIONS, SECOND EDITION, P1, DOI 10.1007/978-3-642-16684-6
+   Aubin JP, 2003, STOCH ANAL APPL, V21, P955, DOI 10.1081/SAP-120024699
+   Baiter M., 2013, SCIENCE, V340, P261
+   Barnosky AD, 2012, NATURE, V486, P52, DOI 10.1038/nature11018
+   Baumgartner S, 2009, ECOL ECON, V68, P2008, DOI 10.1016/j.ecolecon.2009.01.016
+   Berkes F., 1998, LINKING SOCIAL ECOLO, P1
+   Berkes F, 2009, J ENVIRON MANAGE, V90, P1692, DOI 10.1016/j.jenvman.2008.12.001
+   Biermann F., 2009, 20 IHDP
+   Biermann F, 2007, GLOBAL ENVIRON CHANG, V17, P326, DOI 10.1016/j.gloenvcha.2006.11.010
+   Bodin O, 2009, GLOBAL ENVIRON CHANG, V19, P366, DOI 10.1016/j.gloenvcha.2009.05.002
+   Bonneuil N, 2014, CAN J ECON, V47, P422, DOI 10.1111/caje.12084
+   Boyd E, 2015, AMBIO, V44, pS149, DOI 10.1007/s13280-014-0604-x
+   Cairns RD, 2014, EUR ECON REV, V69, P4, DOI 10.1016/j.euroecorev.2014.03.001
+   Cardaliaguet P, 1999, STOCHASTIC DIFFERENT, P177, DOI 10.1007/978-1-4612-1592-9_4
+   Challies E, 2014, GLOBAL ENVIRON CHANG, V27, P32, DOI 10.1016/j.gloenvcha.2014.04.015
+   Chichilnisky G, 2013, ECOL ECON, V85, P143, DOI 10.1016/j.ecolecon.2012.11.017
+   Cisse AA, 2013, ENVIRON DEV ECON, V18, P245, DOI 10.1017/S1355770X13000065
+   Cooke RM, 2013, CLIMATIC CHANGE, V117, P467, DOI 10.1007/s10584-012-0634-y
+   Cornell S, 2013, ENVIRON SCI POLICY, V28, P60, DOI 10.1016/j.envsci.2012.11.008
+   Crost B, 2013, ECON LETT, V120, P552, DOI 10.1016/j.econlet.2013.05.019
+   Crutzen P., 2000, IGBP NEWSLETTER, V41, P17
+   Cundill G, 2009, J ENVIRON MANAGE, V90, P3205, DOI 10.1016/j.jenvman.2009.05.012
+   Davies AL, 2012, J ENVIRON MANAGE, V112, P160, DOI 10.1016/j.jenvman.2012.07.032
+   dos Santos FT, 2011, EUR PLAN STUD, V19, P1517, DOI 10.1080/09654313.2011.533515
+   Dovers S., 2007, INTEGRATED RESOURCE, P36
+   Doyen L, 1997, SET-VALUED ANAL, V5, P227, DOI 10.1023/A:1008610123440
+   Doyen L, 2012, ECOL ECON, V75, P32, DOI 10.1016/j.ecolecon.2012.01.005
+   Durand MH, 2017, NAT RESOUR MODEL, V30, DOI 10.1111/nrm.12134
+   Folke C, 2005, ANNU REV ENV RESOUR, V30, P441, DOI 10.1146/annurev.energy.30.050504.144511
+   Fritz D, 2009, J INT DEV, V21, P673, DOI 10.1002/jid.1595
+   Garmendia E, 2010, ECOL ECON, V69, P1712, DOI 10.1016/j.ecolecon.2010.03.027
+   Gourguet S, 2014, ECOL ECON, V99, P110, DOI 10.1016/j.ecolecon.2014.01.013
+   Gowdy J, 2013, ECOL ECON, V95, P137, DOI 10.1016/j.ecolecon.2013.08.006
+   Gregory R, 2006, ECOL APPL, V16, P2411, DOI 10.1890/1051-0761(2006)016[2411:DAMCFA]2.0.CO;2
+   Groot J. C. K., 2012, J ENVIRON MANAGE, V90, P147
+   GUNDERSON LH, 2002, RESILIENCE BEHAV LAR
+   Gupta J, 2015, EUR J DEV RES, V27, P541, DOI 10.1057/ejdr.2015.30
+   Hadorn G.H., 2008, HDB TRANSDISCIPLINAR
+   HARRIS GP, 2007, SEEKING SUSTAINABILI
+   Holling C.S., 1973, Annual Rev Ecol Syst, V4, P1, DOI 10.1146/annurev.es.04.110173.000245
+   Holling C. S., 1978, ADAPTIVE ENV ASSESSM
+   Holm P, 2013, ENVIRON SCI POLICY, V28, P25, DOI 10.1016/j.envsci.2012.11.010
+   Huntjens P, 2012, GLOBAL ENVIRON CHANG, V22, P67, DOI 10.1016/j.gloenvcha.2011.09.015
+   Krawczyk J, 2009, MACROECON DYN, V13, P46, DOI 10.1017/S1365100508070466
+   Lakatos Imre, 1970, CRITICISM GROWTH KNO, P91, DOI DOI 10.1017/CBO9781139171434
+   Levin S. A., 1999, FRAGILE DOMINION COM
+   Lindkvist E, 2014, ECOL ECON, V104, P107, DOI 10.1016/j.ecolecon.2014.04.018
+   Lovbrand E, 2015, GLOBAL ENVIRON CHANG, V32, P211, DOI 10.1016/j.gloenvcha.2015.03.012
+   Martin S, 2004, ECOL SOC, V9
+   Mitchell M., 2009, COMPLEXITY GUIDED TO
+   Naimzada Ahmad K, 2009, NETWORKS TOPOLOGY DY
+   Nelson JA, 2013, ECOL ECON, V85, P145, DOI 10.1016/j.ecolecon.2011.07.029
+   Newell B, 2012, GLOBAL ENVIRON CHANG, V22, P776, DOI 10.1016/j.gloenvcha.2012.03.006
+   Nuria R, 2011, SOIL BIOL BIOCHEM, V43, P2032, DOI 10.1016/j.soilbio.2011.05.019
+   Olsson P, 2004, ENVIRON MANAGE, V34, P75, DOI 10.1007/s00267-003-0101-7
+   Olsson P, 2006, ECOL SOC, V11
+   Ostrom E, 2005, UNDERSTANDING INSTITUTIONAL DIVERSITY, P1
+   Ostrom E, 1990, GOVERNING COMMONS EV
+   Ostrom E, 2010, GLOBAL ENVIRON CHANG, V20, P550, DOI 10.1016/j.gloenvcha.2010.07.004
+   Pahl-Wostl C, 2009, GLOBAL ENVIRON CHANG, V19, P354, DOI 10.1016/j.gloenvcha.2009.06.001
+   Pahl-Wostl Claudia, 2007, ADAPTIVE INTEGRATED
+   Patten BC, 2014, ECOL MODEL, V293, P4, DOI 10.1016/j.ecolmodel.2014.04.010
+   Petersen IR, 2014, AUTOMATICA, V50, P1315, DOI 10.1016/j.automatica.2014.02.042
+   Rammel C, 2007, ECOL ECON, V63, P9, DOI 10.1016/j.ecolecon.2006.12.014
+   Roberts F.S, 1976, DISCRETE MATH MODELS
+   Sach, 2015, AGE SUSTAINABLE DEV
+   Safonov MG, 2012, ANNU REV CONTROL, V36, P173, DOI 10.1016/j.arcontrol.2012.09.001
+   Saint-Pierre P, 2003, LECT NOTES COMPUT SC, V2542, P255
+   SAINTPIERRE P, 1995, SET-VALUED ANAL, V3, P143, DOI 10.1007/BF01038596
+   Schultz L, 2011, WORLD DEV, V39, P662, DOI 10.1016/j.worlddev.2010.09.014
+   SEN A, 1993, QUALITY LIFE, P30, DOI DOI 10.1093/0198287976.003.0003
+   Sen AK, 1995, COLLECTIVE CHOICE SO
+   Steffen W, 2011, PHILOS T R SOC A, V369, P842, DOI 10.1098/rsta.2010.0327
+   Sterman J., 2000, BUSINESS DYNAMICS SY
+   Swanson D, 2010, TECHNOL FORECAST SOC, V77, P924, DOI 10.1016/j.techfore.2010.04.005
+   Velasquez E, 2007, SOIL BIOL BIOCHEM, V39, P3066, DOI 10.1016/j.soilbio.2007.06.013
+   Verburg PH, 2016, GLOBAL ENVIRON CHANG, V39, P328, DOI 10.1016/j.gloenvcha.2015.08.007
+   Walker B., 2006, RESILIENCE THINKING
+   Waring TM, 2010, ECOL ECON, V69, P718, DOI 10.1016/j.ecolecon.2008.10.017
+   Wei W, 2013, ECOL MODEL, V251, P103, DOI 10.1016/j.ecolmodel.2012.10.009
+   Wei Wei, 2012, Proceedings of the IADIS International Conference on Intelligent Systems and Agents 2012 and IADIS European Conference on Data Mining 2012. Part of the IADIS Multi Conference on Computer Science and Information Systems 2012, P55
+   Young OR, 2006, GLOBAL ENVIRON CHANG, V16, P304, DOI 10.1016/j.gloenvcha.2006.03.004
+   Zalasiewicz J, 2010, ENVIRON SCI TECHNOL, V44, P2228, DOI 10.1021/es903118j
+NR 89
+TC 2
+Z9 2
+U1 2
+U2 9
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0921-8009
+EI 1873-6106
+J9 ECOL ECON
+JI Ecol. Econ.
+PD MAR
+PY 2018
+VL 145
+BP 244
+EP 262
+DI 10.1016/j.ecolecon.2017.09.007
+PG 19
+WC Ecology; Economics; Environmental Sciences; Environmental Studies
+SC Environmental Sciences & Ecology; Business & Economics
+GA FV1JF
+UT WOS:000424316700022
+DA 2019-12-28
+ER
+
+PT J
+AU Freixas, X
+AF Freixas, Xavier
+TI Credit Growth, Rational Bubbles and Economic Efficiency
+SO COMPARATIVE ECONOMIC STUDIES
+LA English
+DT Article
+DE Bubbles; Credit Supply; Systemic Risk; Banks; Macroprudential regulation
+ID OVERLAPPING GENERATIONS; LENDING STANDARDS; FINANCIAL CRISES;
+   STOCK-PRICES; LIQUIDITY; CYCLES; BOOMS; DEBT; EXUBERANCE; BEHAVIOR
+AB Excessive credit growth and the emergence of bubbles increase the likelihood of a systemic crisis. While no causality between credit growth and systemic crises has been empirically established, it seems reasonable to think that excessive credit growth goes hand in hand with the emergence of bubbles and that it is their bursting that triggers a systemic crisis. This article explores the interaction between the demand for bubbly assets and the supply of credit in a dynamic overlapping generations economy and examines the macroprudential policy implications.
+EM xavier.freixas@upf.edu
+CR ABEL AB, 1989, REV ECON STUD, V56, P1, DOI 10.2307/2297746
+   ALLEN F, 1993, J ECON THEORY, V61, P206, DOI 10.1006/jeth.1993.1067
+   Anundsen Andre, 2014, J APPL ECONOMET, V31, P1099
+   Aoki K, 2015, J MONETARY ECON, V74, P33, DOI 10.1016/j.jmoneco.2015.05.002
+   AZARIADIS C, 1993, J ECON THEORY, V60, P277, DOI 10.1006/jeth.1993.1044
+   BENES J., 2014, WP1457 IMF
+   Berger AN, 2004, J FINANC INTERMED, V13, P458, DOI 10.1016/j.jfi.2004.06.006
+   BERNANKE BS, 1983, AM ECON REV, V73, P257
+   Blanchard O., 1982, CRISIS EC FINANCIAL
+   Bordo M, 2002, INT FINANC, V5, P139, DOI DOI 10.1111/1468-2362.00092
+   BORIO C., 2002, BIS WORKING PAPERS
+   Borio C., 2012, BIS WORKING PAPERS
+   Brunnermeier Markus, 2009, GENEVA REPORTS WORLD, P11
+   Brunnermeier MK, 2004, J FINANC, V59, P2013, DOI 10.1111/j.1540-6261.2004.00690.x
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Carvalho VM, 2012, AM ECON REV, V102, P95, DOI 10.1257/aer.102.3.95
+   Claessens S., 2011, IMF WORKING PAPER
+   Claessens Stijn, 2008, IMF WORKING PAPERS
+   Dell'Ariccia G, 2006, J FINANC, V61, P2511, DOI 10.1111/j.1540-6261.2006.01065.x
+   Dell'Ariccia Giovanni, 2012, 1206 IMF
+   Detken Carsten, 2004, WORKING PAPER SERIES
+   DIBA BT, 1988, AM ECON REV, V78, P520
+   Drehmann M, 2014, INT J FORECASTING, V30, P759, DOI 10.1016/j.ijforecast.2013.10.002
+   Farhi E, 2012, REV ECON STUD, V79, P678, DOI 10.1093/restud/rdr039
+   Freixas Xavier, 2017, GILDED BUBBLES UNPUB
+   Friedman M., 1963, MONETARY HIST US 186
+   FROOT KA, 1991, AM ECON REV, V81, P1189
+   Gertler M, 2011, J MONETARY ECON, V58, P17, DOI 10.1016/j.jmoneco.2010.10.004
+   Goodhart C, 2008, OXFORD REV ECON POL, V24, P180, DOI 10.1093/oxrep/grn009
+   HART O, 1994, Q J ECON, V109, P841, DOI 10.2307/2118350
+   Helbling Thomas F., 2005, BIS PAPERS CHAPTERS, V21
+   Holmstrom B, 1998, J POLIT ECON, V106, P1, DOI 10.1086/250001
+   Holmstrom B, 1997, Q J ECON, V112, P663, DOI 10.1162/003355397555316
+   IMF, 2003, WORLD EC OUTLOOK, P61
+   Jorda O, 2015, J MONETARY ECON, V76, P1, DOI DOI 10.1016/j.jmoneco.2015.08.005
+   Jorda O, 2013, J MONEY CREDIT BANK, V45, P3, DOI 10.1111/jmcb.12069
+   Jorda O, 2011, IMF ECON REV, V59, P340, DOI 10.1057/imfer.2011.8
+   Kindleberger C., 1978, MANIAS PANICS CRASHE
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Kohn D, 2009, COMMUNICATION
+   Laeven L., 2012, 12163 IMF
+   Lown C, 2006, J MONEY CREDIT BANK, V38, P1575, DOI 10.1353/mcb.2006.0086
+   Maddaloni A, 2011, REV FINANC STUD, V24, P2121, DOI 10.1093/rfs/hhr015
+   Martin A, 2016, J EUR ECON ASSOC, V14, P753, DOI 10.1111/jeea.12161
+   Martin A, 2012, AM ECON REV, V102, P3033, DOI 10.1257/aer.102.6.3033
+   Matsuyama K, 2007, AM ECON REV, V97, P503, DOI 10.1257/aer.97.1.503
+   Oscar Jorda, 2014, 2050 NBER
+   Phillips PCB, 2015, INT ECON REV, V56, P1043, DOI 10.1111/iere.12132
+   Phillips PCB, 2011, INT ECON REV, V52, P201, DOI 10.1111/j.1468-2354.2010.00625.x
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Schularick M, 2012, AM ECON REV, V102, P1029, DOI 10.1257/aer.102.2.1029
+   SMITH VL, 1988, ECONOMETRICA, V56, P1119, DOI 10.2307/1911361
+   TIROLE J, 1985, ECONOMETRICA, V53, P1499, DOI 10.2307/1913232
+   WEIL P, 1987, Q J ECON, V102, P1, DOI 10.2307/1884677
+   WOODFORD M, 1990, AM ECON REV, V80, P382
+NR 55
+TC 0
+Z9 0
+U1 0
+U2 8
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 0888-7233
+EI 1478-3320
+J9 COMP ECON STUD
+JI Comp. Econ. Stud.
+PD MAR
+PY 2018
+VL 60
+IS 1
+BP 87
+EP 104
+DI 10.1057/s41294-018-0054-8
+PG 18
+WC Economics
+SC Business & Economics
+GA GB9RG
+UT WOS:000429410900008
+DA 2019-12-28
+ER
+
+PT J
+AU Mezghani, T
+   Boujelbene, M
+AF Mezghani, Taicir
+   Boujelbene, Mouna
+TI The contagion effect between the oil market, and the Islamic and
+   conventional stock markets of the GCC country Behavioral explanation
+SO INTERNATIONAL JOURNAL OF ISLAMIC AND MIDDLE EASTERN FINANCE AND
+   MANAGEMENT
+LA English
+DT Article
+DE Behavioral finance; Dynamic conditional correlations; Dow Jones GCC
+   index; Dow Jones Islamic market GCC; Subprime and oil crises
+ID AUTOREGRESSIVE CONDITIONAL HETEROSKEDASTICITY; PRICE SHOCKS; VOLATILITY
+   TRANSMISSION; RETURNS EVIDENCE; SUBPRIME CRISIS; SYSTEMATIC-RISK;
+   ASIA-PACIFIC; CO-MOVEMENT; IMPACT; INTERDEPENDENCE
+AB Purpose-This study aims to investigate the transmission of shock between the oil market and the Islamic and conventional stock markets of the Gulf Cooperation Council (GCC) countries during the oil shocks of 2008 and 2014.
+   Design/methodology/approach-This study uses two models. First, the dynamic conditional correlation-generalized autoregressive conditionally heteroskedastic model has been used to capture the fundamental contagion effects between the oil market and the Islamic and conventional stock markets during the tranquil and turmoil-crisis periods of 2008-2014. Second, the filter of Kalman has been used to capture the effects of pure contagion between the oil market and the GCC Islamic and conventional stock markets. The authors analyze the dynamic correlation between forecasting errors of oil returns and stock returns of GCC Islamic and GCC conventional indices.
+   Findings-The main findings of this investigation are: first, the estimation of the dynamic conditional correlation-generalized autoregressive conditionally heteroskedastic model for oil market and the Islamic and conventional stock markets proves that the Islamic and conventional stock markets and oil market displayed a significant increase in the dynamic correlation during the turmoil period, from mid-2008 and mid-2014. This proves the existence of contagion between the markets studied. Second, the authors analyze the dynamic correlation between forecasting errors of oil returns and stock returns of GCC Islamic and GCC conventional indices. They show a strong increase in the correlation coefficients between the oil market and the conventional GCC stock markets, and between the conventional and Islamic GCC stock markets during the oil crisis of 2014. However, there is no change in regime in the figure of the correlation coefficient between the oil market and the GCC Islamic stock markets during the 2008 financial crisis. This pure contagion is mainly attributed to the herding bias in 2014 oil crisis.
+   Originality/value-This study contributes to identifying the contribution of herding bias on the volatility transmission between the oil markets, and the GCC Islamic and conventional stock market, especially during two controversial shocks: the 2008 oil-price increase and the 2014 oil drop.
+C1 [Mezghani, Taicir; Boujelbene, Mouna] Univ Sfax, Fac Econ & Management Sfax, Sfax, Tunisia.
+RP Mezghani, T (reprint author), Univ Sfax, Fac Econ & Management Sfax, Sfax, Tunisia.
+EM taicir_mezghani@yahoo.fr
+RI Mezghani, Taicir/AAG-5384-2019
+CR Abbes M.B., 2012, INT J EUROMEDITERRAN, V5, P1, DOI DOI 10.1007/S40321-012-0001-9
+   Abbes MB, 2013, INT J MANAG FINANC A, V5, P138, DOI 10.1504/IJMFA.2013.053209
+   Abdullah AM, 2016, BORSA ISTANB REV, V16, P219, DOI 10.1016/j.bir.2015.12.002
+   Akoum I, 2012, Q REV ECON FINANC, V52, P385, DOI 10.1016/j.qref.2012.07.005
+   Al-Khazali O, 2014, PAC-BASIN FINANC J, V28, P29, DOI 10.1016/j.pacfin.2013.09.003
+   Alikhanov A, 2013, REV ECON PERSPECT, V13, P3, DOI 10.2478/v10135-012-0013-7
+   Aloui C, 2016, ECON MODEL, V52, P322, DOI 10.1016/j.econmod.2015.09.009
+   Aloui C, 2009, ENERG ECON, V31, P789, DOI 10.1016/j.eneco.2009.03.009
+   Arezki R., 2014, IMFDIRECT IMF B 1222
+   Arezki R., 2015, IMF RES B, V16, P1
+   Arouri ME, 2013, APPL ECON, V45, P3412, DOI 10.1080/00036846.2012.707776
+   Arouri ME, 2011, ECON MODEL, V28, P1815, DOI 10.1016/j.econmod.2011.03.012
+   Arouri ME, 2012, INT J FINANC ECON, V17, P242, DOI 10.1002/ijfe.443
+   Asteriou D, 2013, ENERG ECON, V38, P204, DOI 10.1016/j.eneco.2013.02.011
+   Awartani B, 2013, ENERG ECON, V36, P28, DOI 10.1016/j.eneco.2012.11.024
+   Baffes J, 2015, GREAT PLUNGE OIL PRI, DOI [10.2139/ssrn.2624398, DOI 10.2139/SSRN.2624398]
+   Baffes J. K., 2015, GREAT PLUNGE OIL CAU
+   Basher SA, 2006, GLOB FINANC J, V17, P224, DOI 10.1016/j.gfj.2006.04.001
+   Baumeister C, 2016, J ASSOC ENVIRON RESO, V3, P131, DOI 10.1086/684160
+   Behar A, 2017, ENERG ECON, V63, P185, DOI 10.1016/j.eneco.2016.12.021
+   Bhimjee DC, 2016, INT REV FINANC ANAL, V48, P376, DOI 10.1016/j.irfa.2016.01.005
+   Billio M, 2010, COMPUT STAT DATA AN, V54, P2443, DOI 10.1016/j.csda.2009.03.018
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   Bouaziz M. S., 2012, EUROPEAN J EC FINANC, V22, P66
+   Bouri E, 2006, EC POLITICA, V33, P6382
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Burzala MM, 2016, RES INT BUS FINANC, V37, P556, DOI 10.1016/j.ribaf.2016.01.026
+   Chang C.-L, 2010, KIER DISCUSSION PAPE
+   Charles A. D, 2012, 4272 EA
+   Chen Q, 2015, INT REV ECON FINANC, V39, P121, DOI 10.1016/j.iref.2015.03.007
+   Choi K, 2010, ENERG POLICY, V38, P4388, DOI 10.1016/j.enpol.2010.03.067
+   Christie W.G., 1995, FINANCIAL ANAL J, V51, P31, DOI [DOI 10.2469/FAJ.V51.N4.1918, 10.2469/faj.v51.n4.1918]
+   Cifarelli G, 2010, ENERG ECON, V32, P363, DOI 10.1016/j.eneco.2009.08.014
+   Cunado J, 2014, ENERG ECON, V42, P365, DOI 10.1016/j.eneco.2013.10.017
+   Donahue C., 2016, OIL PRICES STRONGER
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Edwards S, 2001, J DEV ECON, V66, P505, DOI 10.1016/S0304-3878(01)00172-9
+   Eichengreen B, 1996, SCAND J ECON, V98, P463, DOI 10.2307/3440879
+   El-Sharif I, 2005, ENERG ECON, V27, P819, DOI 10.1016/j.eneco.2005.09.002
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R, 2002, J APPL ECONOM, V17, P425, DOI 10.1002/jae.683
+   Fantazzini D, 2016, ENERG POLICY, V96, P383, DOI 10.1016/j.enpol.2016.06.020
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Filis G. D, 2011, INT REV FINANC ANAL, V20, P52
+   Filis G, 2011, INT REV FINANC ANAL, V20, P152, DOI 10.1016/j.irfa.2011.02.014
+   Forbes K., 2000, 7885 NBER
+   Forbes K, 1999, MEASURING CONTAGION
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Frank N. G.-H, 2008, 02200 IMF WP
+   Gallo GM, 2008, COMPUT STAT DATA AN, V52, P3011, DOI 10.1016/j.csda.2007.09.016
+   Ghorbel A, 2013, IUP J APPL FINANCE, V19, P41
+   Ghorbel A., 2011, J APPL RES FINANCE, V2, P204
+   Ghorbel A, 2014, INT J ENERGY SECT MA, V8, P121, DOI 10.1108/IJESM-09-2012-0007
+   Ghouri SS, 2006, ENERG POLICY, V34, P3327, DOI 10.1016/j.enpol.2005.07.007
+   Guesmi K, 2014, ECON MODEL, V38, P305, DOI 10.1016/j.econmod.2014.01.022
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   Hamilton J., 2014, ECONBROWSER BLO 1214
+   Hamilton James D., 2007, BROOKINGS PAPERS EC, V1, P215, DOI DOI 10.1353/ECA.0.0047
+   HAMILTON JD, 1994, J ECONOMETRICS, V64, P307, DOI 10.1016/0304-4076(94)90067-1
+   Hammoudeh S., 2010, INT REV FINANC ANAL, V19, P298, DOI DOI 10.1016/J.IRFA.2010.09.002
+   Hammoudeh S., 2007, J INT FINANC MARK I, V17, P231
+   Hammoudeh S, 2005, J ECON BUS, V57, P1, DOI 10.1016/j.jeconbus.2004.08.002
+   Horta P, 2010, PORT ECON J, V9, P115, DOI 10.1007/s10258-010-0056-6
+   Jammazi R, 2010, ENERG POLICY, V38, P1415, DOI 10.1016/j.enpol.2009.11.023
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Karim A. B. L, 2012, INT C INT BUS SOC SC
+   Karim BA, 2012, PROCD SOC BEHV, V65, P668, DOI 10.1016/j.sbspro.2012.11.182
+   Khan S, 2009, J ASIAN ECON, V20, P561, DOI 10.1016/j.asieco.2009.07.001
+   KILIAN L, 2007, BROOKINGS PAPERS EC, V1, P267
+   Kilian L, 2014, J APPL ECONOMET, V29, P454, DOI 10.1002/jae.2322
+   Kilian L, 2009, INT ECON REV, V50, P1267, DOI 10.1111/j.1468-2354.2009.00568.x
+   Kilian L, 2009, AM ECON REV, V99, P1053, DOI 10.1257/aer.99.3.1053
+   Kim H, 2010, FIN CORP GOV C
+   Kim KJ, 1993, REV FINANCIAL EC, V3, P89
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Klein AC, 2013, J INT FINANC MARK I, V26, P291, DOI 10.1016/j.intfin.2013.06.006
+   MALIK F, 2007, INT REV ECON FINANC, V16, P357, DOI DOI 10.1016/J.IREF.2005.05.005
+   Masson P., 1998, CONTAGION MONSOONAL, p[98, 142]
+   Miller JI, 2009, ENERG ECON, V31, P559, DOI 10.1016/j.eneco.2009.01.009
+   Mohanty SK, 2011, GLOB FINANC J, V22, P42, DOI 10.1016/j.gfj.2011.05.004
+   Naifar N, 2016, BORSA ISTANB REV, V16, P157, DOI 10.1016/j.bir.2016.01.005
+   Naifar N, 2016, Q REV ECON FINANC, V61, P29, DOI 10.1016/j.qref.2015.10.004
+   Nandha M, 2007, RES INT BUS FINANC, V21, P326, DOI 10.1016/j.ribaf.2006.09.001
+   Narayan PK, 2010, APPL ENERG, V87, P356, DOI 10.1016/j.apenergy.2009.05.037
+   O'Neill TJ, 2008, RES FINANC, V24, P287, DOI 10.1016/S0196-3821(07)00211-0
+   Pindyck R., 1990, ECON J, V100, P4
+   PINDYCK RS, 1990, ECON J, V100, P1173, DOI 10.2307/2233966
+   Rigobon R, 2002, NBER CONF R, P269
+   Rizvi SAR, 2015, PAC-BASIN FINANC J, V34, P315, DOI 10.1016/j.pacfin.2015.04.002
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Sadorsky P, 1999, ENERG ECON, V21, P449, DOI 10.1016/S0140-9883(99)00020-1
+   Saiti B, 2016, EMERG MARK FINANC TR, V52, P1832, DOI 10.1080/1540496X.2015.1087784
+   Saiti B, 2014, BORSA ISTANB REV, V14, P196, DOI 10.1016/j.bir.2014.08.002
+   Singhal S, 2016, RESOUR POLICY, V50, P276, DOI 10.1016/j.resourpol.2016.10.001
+   STEPHENS MA, 1974, J AM STAT ASSOC, V69, P730, DOI 10.2307/2286009
+   Tokic D, 2015, ENERG POLICY, V85, P162, DOI 10.1016/j.enpol.2015.06.005
+   Van Rijckehem C, 2001, J INT ECON, V54, P293, DOI 10.1016/S0022-1996(00)00095-7
+   Wahyudi I, 2014, BORSA ISTANB REV, V14, P32, DOI 10.1016/j.bir.2013.11.001
+   Wang KM, 2006, ASIAN J MANAGE HUM S, V1, P16
+   Wang P, 2012, J INT FINANC MARK I, V22, P1, DOI 10.1016/j.intfin.2011.07.001
+   Yilmaz MK, 2015, PAC-BASIN FINANC J, V32, P1, DOI 10.1016/j.pacfin.2014.12.008
+NR 101
+TC 2
+Z9 2
+U1 2
+U2 3
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1753-8394
+EI 1753-8408
+J9 INT J ISLAMIC MIDDLE
+JI Int.J. Islamic Middle Eastern Finance Manag.
+PY 2018
+VL 11
+IS 2
+SI SI
+BP 157
+EP 181
+DI 10.1108/IMEFM-08-2017-0227
+PG 25
+WC Business, Finance; Management
+SC Business & Economics
+GA HF1AJ
+UT WOS:000453897000002
+DA 2019-12-27
+ER
+
+PT J
+AU Andries, AM
+   Nistor, S
+AF Andries, Alin Marius
+   Nistor, Simona
+TI Systemic Risk and Foreign Currency Positions of Banks: Evidence from
+   Emerging Europe
+SO EASTERN EUROPEAN ECONOMICS
+LA English
+DT Article; Proceedings Paper
+CT 19th International-Network-for-Economic-Research (INFER) Annual
+   Conference
+CY JUN 07-09, 2017
+CL Univ Bordeaux, Bordeaux, FRANCE
+SP Int Network Econ Res
+HO Univ Bordeaux
+DE foreign currency assets; foreign currency liabilities; governance; Swiss
+   franc; systemic risk
+ID CREDIT DEFAULT SWAPS; EASTERN-EUROPE; MACROPRUDENTIAL POLICIES;
+   CORPORATE GOVERNANCE; FINANCIAL STABILITY; CRISES; OWNERSHIP; COUNTRIES
+AB This article investigates the impact of foreign currency (FX) denominated assets and liabilities on systemic risk by using a unique hand-collected dataset of bank-level FX positions for the period 2005-2012. The sample consists of banks from Central and Eastern Europe with large share of FX exposures on the balance sheet. Empirical findings indicate that systemic risk is dependent on the currency choice of financial institutions. While FX positions denominating in EUR and USD do not pose systemic risk concerns, FX positions denominating in exotic currencies like CHF significantly enhance the banks' systemic importance. The negative influence of CHF positions might be reduced through prudent corporate governance mechanisms, tight restrictions on banking activity, and more restrictive limits on foreign currency lending in the home countries of the bank holding companies.
+C1 [Andries, Alin Marius] Alexandru Ioan Cuza Univ, Fac Econ & Business Adm, Iasi, Romania.
+   [Nistor, Simona] Babes Bolyai Univ Cluj Napoca, Fac Econ & Business Adm, Teodor Mihali St 58-60, Cluj Napoca 400591, Romania.
+RP Nistor, S (reprint author), Babes Bolyai Univ Cluj Napoca, Fac Econ & Business Adm, Teodor Mihali St 58-60, Cluj Napoca 400591, Romania.
+EM simona.mutu@econ.ubbcluj.ro
+RI Andries, Alin Marius/B-5980-2011; Nistor, Simona/D-5694-2018
+OI Andries, Alin Marius/0000-0002-4415-4197; Nistor,
+   Simona/0000-0001-5258-9214
+FU Romanian National Authority for Scientific Research and Innovation,
+   BRIDGE GRANT DSS-Direct [PN-III-P2-2.1-BG-2016-0447]; Romanian National
+   Authority for Scientific Research and Innovation, CNCS - UEFISCDI
+   [PN-II-RU-TE-2014-4-0443]
+FX This work was supported by the Romanian National Authority for
+   Scientific Research and Innovation, BRIDGE GRANT DSS-Direct
+   [PN-III-P2-2.1-BG-2016-0447] and the Romanian National Authority for
+   Scientific Research and Innovation, CNCS - UEFISCDI
+   [PN-II-RU-TE-2014-4-0443].
+CR Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Akinci O, 2018, J FINANC INTERMED, V33, P33, DOI 10.1016/j.jfi.2017.04.001
+   Allen F, 2017, J CORP FINANC, V42, P494, DOI 10.1016/j.jcorpfin.2015.05.001
+   Allen F, 2013, INT FINANC REV, V14, P365, DOI 10.1108/S1569-3767(2013)0000014016
+   Andries AM, 2017, ECON TRANSIT, V25, P377, DOI 10.1111/ecot.12127
+   Andries AM, 2016, ECON LETT, V144, P59, DOI 10.1016/j.econlet.2016.04.031
+   [Anonymous], 2015, ECB ANN REP SUP ACT
+   Augustin P, 2016, J FINANC QUANT ANAL, V51, P541, DOI 10.1017/S0022109016000259
+   Barth JR, 2013, J FINAN ECON POLICY, V5, P111, DOI 10.1108/17576381311329661
+   Basel Committee on Banking Supervision (BCBS) & Financial Stability Board (FSB), 2013, GLOB SYST IMP BANKS
+   Beckmann E, 2015, J ECON BEHAV ORGAN, V112, P1, DOI 10.1016/j.jebo.2014.12.015
+   Bethlendi A, 2011, ACTA OECON, V61, P193, DOI 10.1556/AOecon.61.2011.2.5
+   Black L, 2016, J BANK FINANC, V63, P107, DOI 10.1016/j.jbankfin.2015.09.007
+   Bonin JP, 2017, J COMP ECON, V45, P793, DOI 10.1016/j.jce.2016.08.003
+   Bordo MD, 2010, J INT MONEY FINANC, V29, P642, DOI 10.1016/j.jimonfin.2010.01.002
+   Brown M, 2012, ECON POLICY, P57, DOI 10.1111/j.1468-0327.2011.00277.x
+   Brown M, 2011, J FINANC INTERMED, V20, P285, DOI 10.1016/j.jfi.2010.12.001
+   Brown Martin, 2009, AUSSENWIRTSCHAFT, V64, P167
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Cerutti E, 2017, J FINANC STABIL, V28, P203, DOI 10.1016/j.jfs.2015.10.004
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Commitee on the Global Financial System, 2011, CGFS PAP, V43
+   Cuaresma JC, 2014, ECON SYST, V38, P26, DOI 10.1016/j.ecosys.2013.09.001
+   Cull R, 2013, J BANK FINANC, V37, P4861, DOI 10.1016/j.jbankfin.2013.08.017
+   De Jonghe O, 2015, J BANK FINANC, V61, pS3, DOI 10.1016/j.jbankfin.2014.12.024
+   Ellis L, 2014, J BANK FINANC, V45, P175, DOI 10.1016/j.jbankfin.2014.04.012
+   European Bank for Reconstruction and Development (EBRD), 2012, VIENN IN MOV NEW PHA
+   European Banking Authority (EBA), 2014, GLOB SYST IMP I G SI
+   European Systemic Risk Board (ESRB), 2011, REC EUR SYST RISK BO
+   Fiala T, 2017, ECON MODEL, V60, P108, DOI 10.1016/j.econmod.2016.08.025
+   Fidrmuc J, 2013, J BANK FINANC, V37, P1880, DOI 10.1016/j.jbankfin.2012.06.018
+   Financial Stability Board (FSB), 2014, 2014 UPD LIST GLOB S
+   Hasan I, 2013, J BANK FINANC, V37, P5436, DOI 10.1016/j.jbankfin.2013.06.007
+   International Monetary Fund (IMF), 2010, REG EC OUTL EUR FOST, DOI [10.5089/9781589069190.086, DOI 10.5089/9781589069190.086]
+   Iqbal J, 2015, J ECON BUS, V82, P42, DOI 10.1016/j.jeconbus.2015.06.001
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Kress JC, 2011, HARVARD J LEGIS, V48, P49
+   Kupiec P, 1995, J DERIV, V3, P73, DOI [10.3905/jod.1995.407942, DOI 10.3905/JOD.1995.407942]
+   Kuttner KN, 2016, J FINANC STABIL, V26, P31, DOI 10.1016/j.jfs.2016.07.014
+   Laeven L, 2016, J BANK FINANC, V69, pS25, DOI 10.1016/j.jbankfin.2015.06.022
+   Lopez-Espinosa G, 2013, J FINANC STABIL, V9, P287, DOI 10.1016/j.jfs.2013.05.002
+   Raffestin L, 2014, J BANK FINANC, V46, P85, DOI 10.1016/j.jbankfin.2014.05.014
+   Ranciere R, 2010, ECON POLICY, P597, DOI 10.1111/j.1468-0327.2010.00251.x
+   Schoenmaker D, 2013, INT FINANC, V16, P1, DOI 10.1111/j.1468-2362.2013.12026.x
+   Stulz RM, 2010, J ECON PERSPECT, V24, P73, DOI 10.1257/jep.24.1.73
+   Temesvary J, 2016, ECON TRANSIT, V24, P233, DOI 10.1111/ecot.12089
+   Vandenbussche J, 2015, J MONEY CREDIT BANK, V47, P343, DOI 10.1111/jmcb.12206
+   Weiss GNF, 2014, J BANK FINANC, V41, P78, DOI 10.1016/j.jbankfin.2014.01.001
+   Yesin P, 2013, FED RESERVE BANK ST, V95, P219
+NR 50
+TC 2
+Z9 2
+U1 0
+U2 0
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0012-8775
+EI 1557-9298
+J9 EASTERN EUR ECON
+JI East. Eur. Econ.
+PY 2018
+VL 56
+IS 5
+SI SI
+BP 382
+EP 421
+DI 10.1080/00128775.2018.1440179
+PG 40
+WC Economics
+SC Business & Economics
+GA GS7ES
+UT WOS:000443864300004
+DA 2019-12-28
+ER
+
+PT J
+AU Allen, F
+   Gu, X
+AF Allen, Franklin
+   Gu, Xian
+TI The Interplay between Regulations and Financial Stability
+SO JOURNAL OF FINANCIAL SERVICES RESEARCH
+LA English
+DT Article; Proceedings Paper
+CT Conference on Interplay Financial Regulations, Resilience, and Growth
+CY JUN 16-17, 2016
+CL Fed Reserve Bank Philadelphia, Philadelphia, PA
+HO Fed Reserve Bank Philadelphia
+DE Financial crises; Asset price bubbles; Contagion; Macroprudential
+ID SYSTEMIC RISK; DEPOSIT INSURANCE; BANK RUNS; TO-MARKET; CONTAGION;
+   NETWORKS; LIQUIDITY; DISTRESS; PANICS; CRISES
+AB The crisis demonstrated that microprudential regulation focusing on the risks taken by individual banks is not sufficient to prevent crises. This is because it ignores systemic risk. Six types of systemic risk are identified, namely: (i) panics - banking crises due to multiple equilibria; (ii) banking crises due to asset price falls; (iii) contagion; (iv) financial architecture; (v) foreign exchange mismatches in the banking system; (vi) behavioral effects from Knightian uncertainty. We focus on the first three as they are arguably the main causes of the 2007-9 crisis and consider regulatory and other policies to counteract them.
+C1 [Allen, Franklin] Imperial Coll London, London, England.
+   [Gu, Xian] Cent Univ Finance & Econ, Beijing, Peoples R China.
+RP Allen, F (reprint author), Imperial Coll London, London, England.
+EM f.allen@imperial.ac.uk; xiangu@cufe.edu.cn
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya VV, 2007, J FINANC ECON, V85, P787, DOI 10.1016/j.jfineco.2006.05.011
+   Admati A, 2013, 161 STANF U ROCK CTR
+   Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2000, ECON J, V110, P236, DOI 10.1111/1468-0297.00499
+   Allen F, 2017, PEOPLES BANK CHINA H
+   Allen F, 2007, CLARENDON LECT SERIE
+   Allen F., 2008, BANQUE FRANCE FINANC, V12, P1
+   Allen F, 2008, J ACCOUNT ECON, V45, P358, DOI 10.1016/j.jacceco.2007.02.005
+   Allen Franklin, 2011, Korean Social Science Journal, V38, P1
+   Allen F, 2009, ANNU REV FINANC ECON, V1, P97, DOI 10.1146/annurev.financial.050808.114321
+   Allen Franklin, 2006, REV FINANC, V10, P645, DOI DOI 10.1007/S10679-006-9008-5
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   [Anonymous], 2008, FINANCIAL STABILITY
+   Babus A, 2016, RAND J ECON, V47, P239, DOI 10.1111/1756-2171.12126
+   Battiston S, 2016, P NATL ACAD SCI USA, V113, P10031, DOI 10.1073/pnas.1521573113
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Bernanke B, 2008, JACKS HOL S FED RES, P1
+   Bleck A, 2018, J MONETARY ECON, V94, P27, DOI 10.1016/j.jmoneco.2017.09.012
+   BORIO C, 2002, 114 BANK INT SETTL
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   BRYANT J, 1980, J BANK FINANC, V4, P335, DOI 10.1016/0378-4266(80)90012-6
+   CALOMIRIS CW, 1991, NAT BUR EC, P109
+   Calomiris CW, 2003, AM ECON REV, V93, P1615, DOI 10.1257/000282803322655473
+   Carletti E., 2009, INT REV FINANC, V10, P1, DOI DOI 10.1111/J.1468-2443.2009.01103.X
+   CASE KE, 1989, AM ECON REV, V79, P125
+   Chen N, 2017, REV FINANC STUD, V30, P3921, DOI 10.1093/rfs/hhx067
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Crowe Christopher W., 2011, 1191 IMF
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Englund P, 1998, J URBAN ECON, V44, P171, DOI 10.1006/juec.1997.2062
+   Feroli Michael, 2014, 1409 CHIC BOOTH
+   Freixas X., 2008, MICROECONOMICS BANKI
+   Friedman Milton, 1963, MONETARY HIST US 186
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Glaeser E, 2016, 22997 NBER
+   Glaeser Edward L., 2007, 2137 HARV I EC RES
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Glover B, 2016, J FINANC ECON, V119, P284, DOI 10.1016/j.jfineco.2015.09.007
+   GORTON G, 1988, OXFORD ECON PAP, V40, P751, DOI 10.1093/oxfordjournals.oep.a041885
+   Gorton G, 2003, HANDB ECON, V21, P431
+   He ZG, 2016, MANAGE SCI, V62, P303, DOI 10.1287/mnsc.2014.2120
+   Hellmann TF, 2000, AM ECON REV, V90, P147, DOI 10.1257/aer.90.1.147
+   Helwege J, 2016, REV FINANC, V20, P1321, DOI 10.1093/rof/rfv045
+   Hernandez-Murillo R, 2014, 005D FED RES BANK ST
+   Herring R., 1999, 9927 WHART FIN I CTR
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   JAMES C, 1991, J FINANC, V46, P1223, DOI 10.2307/2328857
+   Plantin G, 2008, J ACCOUNT RES, V46, P435, DOI 10.1111/j.1475-679X.2008.00281.x
+   Rajan R., 2010, FINANCIAL TIMES
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Schepens G, 2016, J FINANC ECON, V120, P585, DOI 10.1016/j.jfineco.2016.01.015
+   Svensson L., 2016, WP163 IMF
+   Taylor JB, 2008, FINANCIAL CRISIS POL
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   White LJ, 2014, Perspectives on Dodd-Frank and Finance, P25
+NR 62
+TC 3
+Z9 3
+U1 1
+U2 16
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0920-8550
+EI 1573-0735
+J9 J FINANC SERV RES
+JI J. Financ. Serv. Res.
+PD JUN
+PY 2018
+VL 53
+IS 2-3
+SI SI
+BP 233
+EP 248
+DI 10.1007/s10693-018-0296-7
+PG 16
+WC Business, Finance
+SC Business & Economics
+GA GF1DW
+UT WOS:000431674000008
+OA Green Published, Other Gold
+DA 2019-12-27
+ER

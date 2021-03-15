@@ -1,0 +1,297 @@
+
+PT J
+AU Cipollini, A
+   Lo Cascio, I
+   Muzzioli, S
+AF Cipollini, Andrea
+   Lo Cascio, Iolanda
+   Muzzioli, Silvia
+TI Volatility co-movements: A time-scale decomposition analysis
+SO JOURNAL OF EMPIRICAL FINANCE
+LA English
+DT Article
+DE Implied volatility; Realized volatility; Volatility risk premium;
+   Contagion; Heteroskedasticity bias; Wavelets
+ID LONG-MEMORY; CONTAGION; RISK; COMOVEMENT; MARKETS; SHOCKS
+AB In this paper, we are interested in detecting contagion from US to European stock market volatilities in the period immediately after the Lehman Brothers collapse. The analysis is based on a factor decomposition of the covariance matrix, in the time and frequency domain, using wavelets. The analysis aims to disentangle two components of volatility contagion (anticipated and unanticipated by the market). Once we focus on standardized factor loadings, the results show no evidence of contagion (from the US) in market expectations (coming from implied volatility) and evidence of unanticipated contagion (coming from the volatility risk premium) for almost any European country. Finally, the estimation of a three-factor model specification shows that a European common shock plays an important role in determining volatility co-movements mainly in the tranquil period, while in the period of financial turmoil, the US common shock is the main driver of volatility co-movements. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Cipollini, Andrea; Lo Cascio, Iolanda] Univ Palermo, Dept Econ Accounting & Stat, I-90128 Palermo, Italy.
+   [Cipollini, Andrea] Univ Modena & Reggio Emilia, CEFIN, RECent, I-41121 Modena, Italy.
+   [Muzzioli, Silvia] Univ Modena & Reggio Emilia, CEFIN, Dept Econ, I-41121 Modena, Italy.
+RP Cipollini, A (reprint author), Univ Palermo, Dept Econ Accounting & Stat, I-90128 Palermo, Italy.
+EM andrea.cipollini@unipa.it; iolanda.locascio@unipa.it;
+   silvia.muzzioli@unimore.it
+RI Muzzioli, Silvia/B-3717-2016
+OI Muzzioli, Silvia/0000-0003-0738-6690
+FU Fondazione Cassa di Risparmio di Modena; MIURMinistero dell' Istruzione,
+   dell' Universita e della Ricerca (MIUR)
+FX The authors wish to thank two anonymous referees. The usual disclaimer
+   applies. S. Muzzioli gratefully acknowledges financial support from the
+   Fondazione Cassa di Risparmio di Modena, for the project "Volatility
+   modeling and forecasting with option prices: the proposal of a
+   volatility index for the Italian market" and MIUR. A. Cipollini
+   gratefully acknowledges financial support from MIUR, for the PRIN
+   project "Forecasting economic and financial time series: understanding
+   the complexity and modeling structural change."
+CR Ait-Sahalia J., 2010, 15850 NBER
+   Andersen T. G., 1997, J EMPIR FINANC, V4, P115, DOI DOI 10.1016/S0927-5398(97)00004-2
+   Andersen TG, 2001, J AM STAT ASSOC, V96, P42, DOI 10.1198/016214501750332965
+   Baillie RT, 1996, J ECONOMETRICS, V74, P3, DOI 10.1016/S0304-4076(95)01749-6
+   Bandi F., 2006, J FINANC ECON, V4, P636, DOI DOI 10.1093/jjfinec/nbl003
+   Bodart V, 2009, EMERG MARK REV, V10, P140, DOI 10.1016/j.ememar.2008.11.003
+   Bollerslev T, 2013, J FINANC ECON, V108, P409, DOI 10.1016/j.jfineco.2013.01.002
+   Buraschi A, 2014, J FINANC, V69, P101, DOI 10.1111/jofi.12095
+   Caporale G. M, 2005, J EMPIR FINANC, V12, P476, DOI DOI 10.1016/J.JEMPFIN.2004.02.005
+   Carr P, 2009, REV FINANC STUD, V22, P1311, DOI 10.1093/rfs/hhn038
+   Comte F, 1998, MATH FINANC, V8, P291, DOI 10.1111/1467-9965.00057
+   Corsi F, 2009, J FINANC ECONOMET, V7, P174, DOI 10.1093/jjfinec/nbp001
+   Daubechies I., 1992, SOC IND APPL MATH
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   Dungey M, 2010, J BANK FINANC, V34, P1008, DOI 10.1016/j.jbankfin.2009.11.006
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gallegati M, 2012, COMPUT STAT DATA AN, V56, P3491, DOI 10.1016/j.csda.2010.11.003
+   Horeova M., 2014, 1675 ECB, P1675
+   Jiang GJ, 2012, J BANK FINANC, V36, P2260, DOI 10.1016/j.jbankfin.2012.04.006
+   Jung RC, 2014, J BANK FINANC, V47, P331, DOI 10.1016/j.jbankfin.2013.12.023
+   Kenourgios D, 2014, INT REV FINANC ANAL, V34, P21, DOI 10.1016/j.irfa.2014.05.001
+   Muzzioli S, 2013, Q J FINANC, V3, DOI 10.1142/S2010139213500055
+   Muzzioli S, 2013, COMPUT ECON, V41, P359, DOI 10.1007/s10614-012-9343-x
+   Percival D. B., 2000, WAVELET METHODS TIME
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   Ranta M, 2013, INT J MANAG FINANC, V9, P133, DOI 10.1108/17439131311307556
+   Rua A, 2009, J EMPIR FINANC, V16, P632, DOI 10.1016/j.jempfin.2009.02.002
+   Whitcher B, 2000, J GEOPHYS RES-ATMOS, V105, P14941, DOI 10.1029/2000JD900110
+NR 30
+TC 2
+Z9 2
+U1 0
+U2 13
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0927-5398
+EI 1879-1727
+J9 J EMPIR FINANC
+JI J. Empir. Financ.
+PD DEC
+PY 2015
+VL 34
+BP 34
+EP 44
+DI 10.1016/j.jempfin.2015.08.005
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA CY2IH
+UT WOS:000366231500003
+DA 2019-12-27
+ER
+
+PT J
+AU Lewandowska, O
+AF Lewandowska, Olga
+TI OTC Clearing Arrangements for Bank Systemic Risk Regulation: A
+   Simulation Approach
+SO JOURNAL OF MONEY CREDIT AND BANKING
+LA English
+DT Article
+DE systemic risk; market regulation; derivatives market organization;
+   clearing; over-the-counter derivatives
+AB Based on a simulation approach, this paper compares different over-the-counter (OTC) clearing models regarding their netting efficiency and loss-concentration implications. The results indicate that the mandatory clearing of all standardized OTC derivatives by a Central Counterparty (CCP) propagated by regulators would significantly decrease systemic risk as compared to existing clearing arrangements only if the multilateral netting benefits of the CCP and loss mutualization are fully attained. Therefore, regulators have to ensure that there is a critical mass of asset classes under mandatory clearing, that broad market participation in the CCP is enabled, and that there is an appropriate client asset protection regime.
+C1 Goethe Univ Frankfurt, Frankfurt, Germany.
+RP Lewandowska, O (reprint author), Goethe Univ Frankfurt, Frankfurt, Germany.
+EM olga.lewandowska@stud.uni-frankfurt.de
+CR ARROW K, 1964, Q J ECON, V31, P91
+   Baer HL, 2004, RES FINANCE, V21, P201
+   Bank for International Settlements, 2010, COMM PAYM SETTL SYST, P89
+   Bank for International Settlements, 2004, COMM PAYM SETTL SYST, P64
+   Bank for International Settlements, 2013, OTC DER STAT END JUN
+   Bank for International Settlements, 2003, GLOSS TERMS US PAYM
+   Bank for International Settlements, 1998, OTC DER SETTL PROC C, P27
+   Bates D, 1999, J MONEY CREDIT BANK, V31, P248, DOI 10.2307/2601232
+   Bergman William J., 2004, 2 FRB CHIC
+   Bliss Robert, 2005, 200503 FRB CHIC
+   CECCHETTI SG, 2009, BIS Q REV, P45
+   Debreu G., 1959, THEORY VALUE AXIOMAT
+   Deutsche Boerse Group, 2009, GLOB DER MARK BLUEPR
+   DTCC Deriv/SERV LLC, 2012, TRAD INF WAR CDS DAT
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   European Commission, 2010, PROP REG EUR PARL CO
+   HARRIS LARRY, 2003, TRADING EXCHANGE MAR
+   International Swaps and Derivatives Association, 2012, INT RAT SWAPS COMPR
+   International Swaps and Derivatives Association, 2010, MARK REV OTC DER BIL
+   International Swaps and Derivatives Association, 2014, MARG SURV 2014
+   International Swaps and Derivatives Association, 2011, MARG SURV 2011
+   International Swaps and Derivatives Association, 2010, ISDA RES NOT, V1
+   Jackson J. P., 2007, 321 BANK ENGL
+   Kroszner RS, 1999, J MONEY CREDIT BANK, V31, P596, DOI 10.2307/2601077
+   LEBARON B, 2006, HDB COMPUTATIONAL EC, V2, P1187, DOI DOI 10.1016/S1574-0021(05)02024-1
+   Mack Bernd, 2010, 2 INT C IND ORG SEC
+   Moser James T, 1998, 26 FED RES BANK CHIC
+   Office of the Comptroller of the Currency, 2011, OCCS Q REP BANK TRAD
+   Parkinson S., 1999, BANK ENGLAND FINANCI, P122
+   Pirrong C, 2011, EC CENTRAL CLEARING, P1
+   Pirrong Craig, 2009, EC CLEARING DERIVATI
+   Zeigler B.P., 1976, THEORY MODELLING SIM
+NR 32
+TC 4
+Z9 4
+U1 0
+U2 11
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-2879
+EI 1538-4616
+J9 J MONEY CREDIT BANK
+JI J. Money Credit Bank.
+PD SEP
+PY 2015
+VL 47
+IS 6
+BP 1177
+EP 1203
+DI 10.1111/jmcb.12241
+PG 27
+WC Business, Finance; Economics
+SC Business & Economics
+GA CP7WI
+UT WOS:000360099400006
+DA 2019-12-28
+ER
+
+PT J
+AU Gianfelice, G
+   Marotta, G
+   Torricelli, C
+AF Gianfelice, Gianfranco
+   Marotta, Giuseppe
+   Torricelli, Costanza
+TI A liquidity risk index as a regulatory tool for systemically important
+   banks? An empirical assessment across two financial crises
+SO APPLIED ECONOMICS
+LA English
+DT Article
+DE liquidity premia; systemic risk; banks' stock returns; macroprudential
+   regulation
+AB We provide an empirical assessment of the suggestion, based on Severo (2012), to use a systemic liquidity risk index (SLRI) for estimating liquidity premia that could be charged on large banks as a compensation for the implicit liquidity support obtained from public authorities (Blancher et al., 2013). To this end we compute, over the period January 2004-December 2012, a parsimonious and fully documented SLRI. We also investigate its statistical significance in explaining the level and variability of stock returns for a group of large international banks across the subprime and the Eurozone sovereign debt crises. Main findings are two: our more parsimonious SLRI is close to Severo's but provides a stronger signal of liquidity stress and recovery episodes; we consistently fail to detect, within and across the two crises, a stable group of banks among the global systemically important ones listed by the Financial Stability Board.
+C1 [Gianfelice, Gianfranco] Univ Modena & Reggio Emilia, CEFIN, Dept Econ, I-41121 Modena, Italy.
+   [Marotta, Giuseppe; Torricelli, Costanza] Univ Modena & Reggio Emilia, CEFIN, I-41121 Modena, Italy.
+   [Torricelli, Costanza] CeRP, I-41121 Modena, Italy.
+RP Torricelli, C (reprint author), Univ Modena & Reggio Emilia, CEFIN, I-41121 Modena, Italy.
+EM costanza.torricelli@unimore.it
+RI Torricelli, Costanza/B-7993-2016; Marotta, Giuseppe/F-8575-2016
+OI Torricelli, Costanza/0000-0001-5927-2578; Marotta,
+   Giuseppe/0000-0002-0129-0287
+CR Allen WA, 2012, BIS WORKING PAPERS, V390
+   [Anonymous], 2009, REPORT OF THE HIGH L
+   Baglioni A, 2012, J FINANC SERV RES, V41, P1, DOI 10.1007/s10693-011-0110-2
+   Bank for International Settlements, 2010, 80TH ANNUAL REPORT
+   Bank of England, 2007, FINANCIAL STABILITY
+   Bank of England, 2009, FINANCIAL STABILITY
+   Basel Committee on Banking Supervision, 2013, GLOBAL SYSTEMICALLY
+   Blancher N., 2013, IMF WP 13 168
+   Blanco R, 2005, J FINANC, V60, P2255, DOI 10.1111/j.1540-6261.2005.00798.x
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Edmonds T., 2013, LIBOR PUBLIC INQUIRI
+   Financial Stability Board (FSB), 2012, UPDATE OF GROUP OF G
+   Fontana A., 2010, WORKING PAPER 2010 1
+   IMF, 2012, WOR ECON FINANC, P1
+   Kerry W., 2008, JOURNAL OF RISK MANA, V1, P181
+   Krishnamurthy A, 2002, J FINANC ECON, V66, P463, DOI 10.1016/S0304-405X(02)00207-6
+   Kuo D., 2012, COMP LIBOR OTHER MEA
+   Mc Guire P, 2009, BIS Q REV, P47
+   Ossolinski C., 2010, AUSTRALIAN CENTRAL B, P47
+   Severo T., 2012, IMF WP 12 194
+   Stein J. C., 2012, NBER WORKING PAPER N
+   Vayanos D, 2008, J FINANC, V63, P1361, DOI 10.1111/j.1540-6261.2008.01360.x
+NR 23
+TC 0
+Z9 0
+U1 0
+U2 17
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0003-6846
+EI 1466-4283
+J9 APPL ECON
+JI Appl. Econ.
+PY 2015
+VL 47
+IS 2
+BP 129
+EP 147
+DI 10.1080/00036846.2014.967379
+PG 19
+WC Economics
+SC Business & Economics
+GA AZ1UR
+UT WOS:000348023700003
+DA 2019-12-28
+ER
+
+PT J
+AU Sornette, D
+   Cauwels, P
+AF Sornette, Didier
+   Cauwels, Peter
+TI Financial Bubbles: Mechanisms and Diagnostics
+SO REVIEW OF BEHAVIORAL ECONOMICS
+LA English
+DT Article
+DE Systemic crisis; Change of regime; Financial bubble; Bifurcation;
+   Instability; Precursors; Singularity; Prediction; Super-exponential;
+   Log-periodic; Hierarchies; Positive feedbacks; Pro-cyclicality
+ID ORGANIZATION
+AB Financial bubbles are subject to debate and controversy. They are not well understood and are hardly ever characterized specifically, especially ex ante. We define a bubble as a period of unsustainable growth, when the price of an asset increases ever more quickly, in a series of accelerating phases of corrections and rebounds. More technically, during a bubble phase, the price follows a faster-than- exponential power law growth process, often accompanied by log-periodic oscillations. This dynamic ends abruptly in a change of regime that may be a crash or a substantial correction. In this paper, we will explain the mechanism behind financial bubbles in an intuitive way. We will show how the log-periodic power law emerges spontaneously from the complex system that financial markets are as a consequence of feedback mechanisms, hierarchical structure and specific trading dynamics and investment styles. We argue that the risk of a major correction, or even a crash, becomes substantial when a bubble develops towards maturity, and that it is therefore very important to find evidence of bubbles and to follow their development from as early a stage as possible. We call for the establishment of Financial Crisis Observatories, like the FCO at the ETH Zurich, where financial markets can be monitored continuously for potential systemic risk, and where both generally accepted as well as innovative tools and models can be tested and challenged in a scientific way.
+C1 [Sornette, Didier; Cauwels, Peter] Swiss Fed Inst Technol, Chair Entrepreneurial Risks, Dept Management Technol & Econ, Zurich, Switzerland.
+RP Sornette, D (reprint author), Swiss Fed Inst Technol, Chair Entrepreneurial Risks, Dept Management Technol & Econ, Zurich, Switzerland.
+CR ALTES RA, 1976, J ACOUST SOC AM, V59, P97, DOI 10.1121/1.380831
+   BLACK F, 1986, J FINANCE, V41
+   Cialdini R.B., 1998, INFLUENCE PSYCHOL PE
+   Davidson J., 1938, Transactions of the Royal Society of South Australia, V62, P342
+   Dunbar RIM, 1998, EVOL ANTHROPOL, V6, P178, DOI 10.1002/(SICI)1520-6505(1998)6:5<178::AID-EVAN5>3.0.CO;2-8
+   Fuchs B, 2014, SCI REP-UK, V4, DOI 10.1038/srep06526
+   Gisler M, 2011, RES POLICY, V40, P1412, DOI 10.1016/j.respol.2011.05.019
+   Janeway WH, 2012, DOING CAPITALISM IN THE INNOVATION ECONOMY: MARKETS, SPECULATION AND THE STATE, P1, DOI 10.1017/CBO9781139381550
+   Minsky H., 1992, 74 J LEV EC I
+   Piketty T, 2014, CAPITAL 21 CENTURY
+   Rothert A, 2003, NEW J PHYS, V5, DOI 10.1088/1367-2630/5/1/359
+   Shiller Robert J., 2005, IRRATIONAL EXUBERANC
+   Sircar K. R., 1998, APPL MATH FINANCE, V5, P4582
+   Sornette D, 1998, PHYS REP, V297, P239, DOI 10.1016/S0370-1573(97)00076-8
+   Sornette D, 1998, PHYSICA A, V261, P581, DOI 10.1016/S0378-4371(98)00433-6
+   Sornette D., 2015, J RISK MANAG FINANC, V8, P83, DOI DOI 10.3390/jrfm8010083
+   Sornette D, 2014, RISKS, V2, P103, DOI 10.3390/risks2020103
+   Sornette D, 2009, PHYSICA A, V388, P1571, DOI 10.1016/j.physa.2009.01.011
+   Zhou WX, 2006, PHYSICA A, V361, P297, DOI 10.1016/j.physa.2005.06.098
+   Zhou WX, 2005, P ROY SOC B-BIOL SCI, V272, P439, DOI 10.1098/rspb.2004.2970
+   2012, GLOB FIN STAB REP, P1
+NR 21
+TC 28
+Z9 28
+U1 1
+U2 4
+PU NOW PUBLISHERS INC
+PI HANOVER
+PA PO BOX 1024, HANOVER, MA 02339 USA
+SN 2326-6198
+EI 2326-6201
+J9 REV BEHAV ECON
+JI Rev. Behav. Econ.
+PY 2015
+VL 2
+IS 3
+BP 279
+EP 305
+DI 10.1561/105.00000035
+PG 27
+WC Economics
+SC Business & Economics
+GA VE2RN
+UT WOS:000438964100002
+DA 2019-12-28
+ER

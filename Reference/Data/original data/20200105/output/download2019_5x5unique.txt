@@ -1,0 +1,471 @@
+
+PT J
+AU Das, SR
+AF Das, Sanjiv R.
+TI The future of fintech
+SO FINANCIAL MANAGEMENT
+LA English
+DT Article
+DE fintech; blockchains; trading; payments; robots; AI; regtech
+ID REAL-TIME; SYSTEMIC-RISK; FINANCE; MARKET; TALK
+AB This article describes the growing field of financial technology (fintech) and the different financial paradigms and technologies that support it. Fintech is primarily a disintermediation force where disruptive technologies are the drivers. This framework discusses 10 primary areas in fintech comprising a taxonomy, which categorizes research in the field and also proposes a pedagogical structure. Pitfalls of fintech are also analyzed. Overall, the great strides made in computing technology, mathematics, statistics, psychology, econometrics, linguistics, cryptography, big data, and computer interfaces have combined to create an explosion of fintechs.
+C1 [Das, Sanjiv R.] Santa Clara Univ, Leavey Sch Business, Finance, Santa Clara, CA 95053 USA.
+RP Das, SR (reprint author), Santa Clara Univ, Leavey Sch Business, Santa Clara, CA 95053 USA.
+EM rsdas@scu.edu
+CR Aastveit KA, 2014, J BUS ECON STAT, V32, P48, DOI 10.1080/07350015.2013.844155
+   Aldridge I., 2017, REAL TIME RISK WHAT
+   Alexander L, 2017, BIG DATA-US, V5, P177, DOI 10.1089/big.2016.0074
+   Antweiler W, 2004, J FINANC, V59, P1259, DOI 10.1111/j.1540-6261.2004.00662.x
+   Autor DH, 2015, J ECON PERSPECT, V29, P3, DOI 10.1257/jep.29.3.3
+   Banbura M, 2013, HBK ECON, P195, DOI 10.1016/B978-0-444-53683-9.00004-9
+   Bartlett J., 2014, DARK NET INSIDE DIGI
+   Berg T., 2019, REV FINANC STUD, DOI 10.1093/rfs/hhz099
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Bodnaruk A, 2015, J FINANC QUANT ANAL, V50, P623, DOI 10.1017/S0022109015000411
+   Bollen J, 2011, J COMPUT SCI-NETH, V2, P1, DOI 10.1016/j.jocs.2010.12.007
+   Burdick D., 2011, IEEE DATA ENG B, V34, P60
+   Butia S, 2017, J FINANC ECON, V124, P244, DOI 10.1016/j.jfineco.2016.02.002
+   Calomiris CW, 2019, J FINANC ECON, V133, P299, DOI 10.1016/j.jfineco.2018.11.009
+   Chacko G, 2016, J BANK FINANC, V68, P162, DOI 10.1016/j.jbankfin.2016.03.012
+   Chan-Lau J. A., 2018, FINANCIAL NETWORK SY
+   Chowdhry B., 2016, BIG DATA CAN MAKE US
+   Claessens S., 2018, BANK INT SETTLEMENTS
+   Crespo I., 2018, USING DATA UNLOCK PO
+   Culkin R, 2017, J INVEST MANAG, V15, P92
+   Das Sanjiv Ranjan, 2014, Foundations and Trends in Finance, V8, P145, DOI 10.1561/0500000045
+   Das S. R., 2019, J FINANCIAL DATA SCI, V1, P8
+   Das S. R., 2019, J FINANCIAL DATA SCI, V1, P141
+   Das SR, 2007, MANAGE SCI, V53, P1375, DOI 10.1287/mnsc.1070.0704
+   Das SR, 2018, ALGORITHMS, V11, DOI 10.3390/a11090138
+   Das SR, 2016, J ALTERN INVEST, V18, P33, DOI 10.3905/jai.2016.18.4.033
+   Espinosa-Vega M., 2010, 10105 INT MON FUND
+   Froot K., 2017, WORKING PAPER
+   Giannone D, 2008, J MONETARY ECON, V55, P665, DOI 10.1016/j.jmoneco.2008.05.010
+   Graeber D., 2018, BULLSHIT JOBS THEORY
+   Gunning R, 1952, TECHNIQUE CLEAR WRIT
+   Harvey C. R., 2014, 2479670 SSRN
+   Hasbrouck J, 2013, J FINANC MARK, V16, P646, DOI 10.1016/j.finmar.2013.05.003
+   Hasham S., 2018, COMBATING PAYMENTS F
+   Hendershott T, 2013, J FINANC QUANT ANAL, V48, P1001, DOI 10.1017/S0022109013000471
+   Higgins P. C., 2014, 20147 FED RES BANK A
+   HUTCHINSON JM, 1994, J FINANC, V49, P851, DOI 10.2307/2329209
+   Jegadeesh N, 2013, J FINANC ECON, V110, P712, DOI 10.1016/j.jfineco.2013.08.018
+   Leinweber D., 2009, NERDS WALL STREET
+   Leinweber D, 2011, J PORTFOLIO MANAGE, V38, P110, DOI 10.3905/jpm.2011.38.1.110
+   Lewis M., 2014, FLASH BOYS
+   Lin MF, 2013, MANAGE SCI, V59, P17, DOI 10.1287/mnsc.1120.1560
+   Lo AW, 2017, J INVEST MANAG, V15, P17
+   Loughran T, 2014, J FINANC, V69, P1643, DOI 10.1111/jofi.12162
+   Loughran T, 2011, J FINANC, V66, P35, DOI 10.1111/j.1540-6261.2010.01625.x
+   Menkveld AJ, 2013, J FINANC MARK, V16, P712, DOI 10.1016/j.finmar.2013.06.006
+   Menn J., 2010, FATAL SYSTEM ERROR H
+   MERTON RC, 1973, BELL J ECON, V4, P141, DOI 10.2307/3003143
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Mitra G., 2011, HDB NEWS ANAL FINANC
+   Nakamoto S, 2009, BITCOIN PEER TO PEER
+   O'Neill Cathy, 2016, WEAPONS MATH DESTRUC
+   Philippon T., 2016, WORKING PAPER
+   Piketty T, 2014, CAPITAL 21 CENTURY
+   Poulsen K., 2011, KINGPIN ONE HACKER T
+   PricewaterhouseCoopers, 2014, TECHNICAL REPORT
+   Rizzi W., 2018, MACHINE LEARNING CAN
+   Srinivasan S., 2016, WORKING PAPER
+   Tetlock PC, 2008, J FINANC, V63, P1437, DOI 10.1111/j.1540-6261.2008.01362.x
+   Thakor R. T., 2018, 3210412 SSRN
+   Wei Y, 2016, MARKET SCI, V35, P234, DOI 10.1287/mksc.2015.0949
+   Yermack D., 2015, HDB DIGITAL CURRENCY
+   Yermack D, 2017, REV FINANC, V21, P7, DOI 10.1093/rof/rfw074
+NR 64
+TC 0
+Z9 0
+U1 13
+U2 13
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0046-3892
+EI 1755-053X
+J9 FINANC MANAGE
+JI Financ. Manage.
+PD DEC
+PY 2019
+VL 48
+IS 4
+BP 981
+EP 1007
+DI 10.1111/fima.12297
+EA NOV 2019
+PG 27
+WC Business, Finance
+SC Business & Economics
+GA JQ3WX
+UT WOS:000494409900001
+OA Bronze
+DA 2019-12-28
+ER
+
+PT J
+AU Elyasiani, E
+   Jia, JY
+AF Elyasiani, Elyas
+   Jia, Jingyi (Jane)
+TI Relative performance and systemic risk contributions of small and large
+   banks during the financial crisis
+SO QUARTERLY REVIEW OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Financial intermediation; Financial crisis; Large and small banks;
+   Performance; Systemic risk
+ID INSTITUTIONAL OWNERSHIP; DIVERSIFICATION; PROFITABILITY; DETERMINANTS;
+   RISKINESS; FAILURES; TESTS; SIZE
+AB During the financial crisis of 2007-2009, large banks (BHCs with assets exceeding $1 billion) suffered a sharper decline in performance and a greater increase in systemic risk, than small banks (BHCs with assets less than $1 billion). Performance is measured by return on assets (ROA) and EBIT/TA. Systemic risk( SRISK) is measured by the capital shortfall indicator proposed by Brownless and Engle (2017) and total risk is standard deviation of monthly returns. We test four hypotheses associated with the dissimilarity in behavioral patterns of large and small banks during the crisis: (1) the nontraditional banking activity hypothesis, (2) the organizational structure hypothesis, (3) the accounting risk hypotheses, and (4) the accounting conservatism hypothesis. We find that behavioral dissimilarities between large and small banks can be, at least, partially related to the first three hypotheses. Non-nested test procedures show that factors associated with nontraditional activity hypothesis fit the data for performance (ROA and EBIT/TA) and total risk the best. Organizational complexity factors are the most relevant set of variables related to systemic risk of banks (SRISK). The implications of our findings are that regulators should focus on factors related these two hypotheses to optimally alter bank performance and bank contribution to systemic risk, rather than limiting bank size and bank acquisitions as proposed by Section 622 of the Dodd-Frank Act (effective January 1, 2015). Our recommendation is in accord with attempts by the Trump administration to relax the Dodd-Frank Act. (c) 2019 Board of Trustees of the University of Illinois. Published by Elsevier Inc. All rights reserved.
+C1 [Elyasiani, Elyas] Temple Univ, Fox Sch Business & Management, Dept Finance, Philadelphia, PA 19122 USA.
+   [Jia, Jingyi (Jane)] Southern Illinois Univ, Sch Business, Dept Econ & Finance, Edwardsville, IL 62026 USA.
+   [Elyasiani, Elyas] Univ Penn, Wharton Financial Inst Ctr, Philadelphia, PA 19104 USA.
+RP Elyasiani, E (reprint author), Temple Univ, Fox Sch Business & Management, Dept Finance, Philadelphia, PA 19122 USA.
+EM elyas@temple.edu; jjia@siue.edu
+CR Athanasoglou P., 2008, J INT FINANC MARK I, V18, P121, DOI DOI 10.1016/J.INTFIN.2006.07.001
+   Aubuchon C., 2010, FEDERAL RESERVE BANK
+   Avramidis P, 2018, J BANK FINANC, V93, P127, DOI 10.1016/j.jbankfin.2018.05.016
+   Balla E., 2012, EC BRIEF, P1
+   Beck P. J., 2013, J ACCOUNTING EC
+   Beltratti A., 2009, WHY DID SOME BANKS P
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Berger AN, 2010, J BANK FINANC, V34, P1417, DOI 10.1016/j.jbankfin.2010.01.010
+   Berger AN, 2005, J FINANC ECON, V76, P237, DOI 10.1016/j.jfineco.2004.06.003
+   BERGER AN, 1995, J MONEY CREDIT BANK, V27, P404, DOI 10.2307/2077876
+   Berndt A, 2009, J MONETARY ECON, V56, P725, DOI 10.1016/j.jmoneco.2009.04.002
+   BOURKE P, 1989, J BANK FINANC, V13, P65, DOI 10.1016/0378-4266(89)90020-4
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Chernykh L, 2015, J FINANC STABIL, V20, P131, DOI 10.1016/j.jfs.2015.08.003
+   Clarke KA, 2001, AM J POLIT SCI, V45, P724, DOI 10.2307/2669248
+   Clarke KA, 2007, POLIT ANAL, V15, P347, DOI 10.1093/pan/mpm004
+   Cole RA, 2012, J FINANC SERV RES, V42, P5, DOI 10.1007/s10693-011-0116-9
+   Cornett M. M., 2009, FINANCIAL CRISIS DID
+   Deng S, 2013, FINAN REV, V48, P385, DOI 10.1111/fire.12008
+   DeYoung R., 2004, J FINANCIAL SERVICES, V25, P85, DOI DOI 10.1023/B:FINA.0000020656.65653.79
+   DeYoung R, 2013, J FINANC INTERMED, V22, P397, DOI 10.1016/j.jfi.2013.01.001
+   Dietrich A, 2011, J INT FINANC MARK I, V21, P307, DOI 10.1016/j.intfin.2010.11.002
+   ELYASIANI E, 1995, APPL ECON, V27, P737
+   Elyasiani E., 2009, WORKING PAPER
+   Elyaslani E, 2008, J BANK FINANC, V32, P1767, DOI 10.1016/j.jbankfin.2007.12.010
+   Fahlenbrach R, 2011, J FINANC ECON, V99, P11, DOI 10.1016/j.jfineco.2010.08.010
+   Ferrier G. D., 2013, EFFECT DISTANCE COMM
+   FLANNERY MJ, 1984, J FINANC, V39, P1141, DOI 10.2307/2327618
+   Foos D, 2010, J BANK FINANC, V34, P2929, DOI 10.1016/j.jbankfin.2010.06.007
+   Gomez M., 2016, BANKS EXPOSURE INTER, DOI [10.2139/ssrn.2220360, DOI 10.2139/SSRN.2220360]
+   Haan J. D., 2012, J BANK FINANC, V36, P3008
+   Heffernan S., 2008, DETERMINANTS BANK PE, DOI [10.2139/ssrn.1247713, DOI 10.2139/SSRN.1247713]
+   Himmelberg CP, 1999, J FINANC ECON, V53, P353, DOI 10.1016/S0304-405X(99)00025-2
+   Hughes JP, 2013, J FINANC INTERMED, V22, P559, DOI 10.1016/j.jfi.2013.06.004
+   Jin J., 2014, BANK ACCOUNTING CONS
+   Laeven L., 2014, BANK SIZE SYSTEMIC R
+   Laeven L, 2007, J FINANC ECON, V85, P331, DOI 10.1016/j.jfineco.2005.06.001
+   Laeven L, 2016, J BANK FINANC, V69, pS25, DOI 10.1016/j.jbankfin.2015.06.022
+   Mirzaei A., 2018, Q REV EC FINANCE
+   Molyneux P., 1998, APPL FINANCIAL EC, V8, P533
+   Ng J, 2014, REV ACCOUNT STUD, V19, P1234, DOI 10.1007/s11142-014-9281-z
+   Pasiouras F, 2007, RES INT BUS FINANC, V21, P222, DOI 10.1016/j.ribaf.2006.03.007
+   Pathan S, 2013, J BANK FINANC, V37, P1573, DOI 10.1016/j.jbankfin.2012.12.016
+   Saunders DA, 2014, CONSERV PHYSIOL, V2, DOI 10.1093/conphys/cou001
+   Stein JC, 2002, J FINANC, V57, P1891, DOI 10.1111/0022-1082.00483
+   Varotto S, 2018, J INT MONEY FINANC, V82, P45, DOI 10.1016/j.jimonfin.2017.12.002
+   VUONG QH, 1989, ECONOMETRICA, V57, P307, DOI 10.2307/1912557
+   Wilmarth A. E., 2014, 201453 GWU
+   Wintoki MB, 2012, J FINANC ECON, V105, P581, DOI 10.1016/j.jfineco.2012.03.005
+   Yellen J. L., 2014, IND COMM BANK AM 201
+NR 50
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1062-9769
+EI 1878-4259
+J9 Q REV ECON FINANC
+JI Q. Rev. Econ. Financ.
+PD NOV
+PY 2019
+VL 74
+BP 220
+EP 241
+DI 10.1016/j.qref.2019.01.010
+PG 22
+WC Business, Finance; Economics
+SC Business & Economics
+GA JR5WZ
+UT WOS:000499696300020
+DA 2019-12-28
+ER
+
+PT J
+AU Tiwari, AK
+   Trabelsi, N
+   Alqahtani, F
+   Bachmeier, L
+AF Tiwari, Aviral Kumar
+   Trabelsi, Nader
+   Alqahtani, Faisal
+   Bachmeier, Lance
+TI Modelling systemic risk and dependence structure between the prices of
+   crude oil and exchange rates in BRICS economies: Evidence using quantile
+   coherency and NGCoVaR approaches
+SO ENERGY ECONOMICS
+LA English
+DT Article
+DE Quantile coherency; Systematic risk; Crude oil; Exchange rate; BRICS
+ID COMMODITY PRICES; NONLINEAR CAUSALITY; GRANGER CAUSALITY; UNIT-ROOT;
+   SHOCKS; PARAMETER; COUNTRIES; CHINA; TESTS; NEXUS
+AB In this study, we examine the dependence structure and systemic risk between return series of the prices of crude oil and the BRICS exchange rates to US using the quantile coherency methods of Barunik and Kley (2015) and the nonparametric conditional value-at-risk granger causality test (hereafter NGCoVaR) of Diks and Wolski (2018) over the period 2005-2017. Further, we use the Hiemstra and Jones (1994, hereafter HJ) and Diks and Panchenko (2005, hereafter DP) tests for comparison purposes. Our findings indicate that all countries reveal significant negative dependence in the long-run dynamics between Oil prices and Brazilian, Indian, and South African currencies. HI and DP tests suggest that lagged crude oil prices have predictive power for the Brazilian and Russian exchange rates. Furthermore, a robust unidirectional lagged dependence exists from the Brazilian exchange rate to crude oil prices. Concerning the Chinese, Indian, and South African currencies, we find no contagion effects from/to those countries to the oil market. For Russia, there is limited evidence of contagion effects. These findings provide insights for regulators and international investors. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Tiwari, Aviral Kumar] Montpellier Business Sch, Montpellier, France.
+   [Tiwari, Aviral Kumar] Rajagiri Business Sch, Rajagiri Valley Campus, Kochi, Kerala, India.
+   [Trabelsi, Nader] Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Coll Econ & Adm Sci, Dept Finance & Investment, Riyadh 5701, Saudi Arabia.
+   [Trabelsi, Nader] Higher Inst Comp Sci & Management Kairouan, LARTIGE, Kairouan, Tunisia.
+   [Alqahtani, Faisal] Taibah Univ, Dept Finance & Econ, Medina, Saudi Arabia.
+   [Bachmeier, Lance] Kansas State Univ, Dept Econ, Manhattan, KS 66506 USA.
+RP Trabelsi, N (reprint author), Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Coll Econ & Adm Sci, Dept Finance & Investment, Riyadh 5701, Saudi Arabia.
+EM nhtrabelsi@imamu.edu.sa; fqahtani@taibahu.edu.sa; LanceB@ksu.edu
+RI Tiwari, Aviral Kumar/C-5556-2011
+OI Tiwari, Aviral Kumar/0000-0002-1822-9263
+CR Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   ANDREWS DWK, 1994, ECONOMETRICA, V62, P1383, DOI 10.2307/2951753
+   ANDREWS DWK, 1993, ECONOMETRICA, V61, P821, DOI 10.2307/2951764
+   Atems B, 2015, ENERG ECON, V49, P227, DOI 10.1016/j.eneco.2015.01.027
+   Bal DP, 2015, ENERG ECON, V51, P149, DOI 10.1016/j.eneco.2015.06.013
+   Barunik J., 2015, WORKING PAPER
+   Basher SA, 2016, ENERG ECON, V54, P11, DOI DOI 10.1016/J.ENECO.2015.12.004
+   Basnet HC, 2015, APPL ECON, V47, P3078, DOI 10.1080/00036846.2015.1011322
+   Benhmad F, 2012, ECON MODEL, V29, P1505, DOI 10.1016/j.econmod.2012.01.003
+   Bodart V, 2015, J INT MONEY FINANC, V51, P264, DOI 10.1016/j.jimonfin.2014.11.021
+   Bouoiyour J, 2015, ENERG ECON, V51, P54, DOI 10.1016/j.eneco.2015.06.001
+   Breitenfellner A., 2008, MONETARY POLICY EC, V4
+   Chen S., 2014, 20142063 SFB 649
+   Chen WP, 2013, J INT MONEY FINANC, V36, P191, DOI 10.1016/j.jimonfin.2013.04.004
+   Diks C, 2005, STUD NONLINEAR DYN E, V9
+   Diks C., 2018, NCOVAR GRANGER CAUSA
+   Diks C, 2006, J ECON DYN CONTROL, V30, P1647, DOI 10.1016/j.jedc.2005.08.008
+   Ferraro D, 2015, J INT MONEY FINANC, V54, P116, DOI 10.1016/j.jimonfin.2015.03.001
+   GOLUB SS, 1983, ECON J, V93, P576, DOI 10.2307/2232396
+   HIEMSTRA C, 1994, J FINANC, V49, P1639, DOI 10.2307/2329266
+   Huang SP, 2017, APPL ENERG, V194, P667, DOI 10.1016/j.apenergy.2016.09.052
+   Jain A, 2016, RESOUR POLICY, V49, P179, DOI 10.1016/j.resourpol.2016.06.001
+   Jammazi R, 2015, J INT FINANC MARK I, V34, P173, DOI 10.1016/j.intfin.2014.11.011
+   Ji Q, 2018, RISK DEPENDENCE COVA
+   Ji Q, 2015, EMERG MARK FINANC TR, V51, P1129, DOI 10.1080/1540496X.2015.1080505
+   Kilian L, 2009, AM ECON REV, V99, P1053, DOI 10.1257/aer.99.3.1053
+   Krugman P, 1983, EC INTERDEPENDENCE F
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Rogoff K., 1991, OIL PRODUCTIVITY GOV
+   Shahbaz M, 2015, J APPL STAT, V42, P690, DOI 10.1080/02664763.2014.980784
+   Turhan MI, 2014, J INT FINANC MARK I, V32, P397, DOI 10.1016/j.intfin.2014.07.003
+   Wen FH, 2018, APPL ECON, V50, P319, DOI 10.1080/00036846.2017.1321838
+   Yang L, 2017, INT REV ECON FINANC, V49, P536, DOI 10.1016/j.iref.2017.03.015
+   Zhang HJ, 2016, J EMPIR FINANC, V36, P100, DOI 10.1016/j.jempfin.2015.10.005
+   ZIVOT E, 1992, J BUS ECON STAT, V10, P251, DOI 10.2307/1391541
+NR 35
+TC 0
+Z9 0
+U1 5
+U2 5
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD JUN
+PY 2019
+VL 81
+BP 1011
+EP 1028
+DI 10.1016/j.eneco.2019.06.008
+PG 18
+WC Economics
+SC Business & Economics
+GA IN5IV
+UT WOS:000478710000076
+DA 2019-12-28
+ER
+
+PT J
+AU Falahati, K
+AF Falahati, Kazem
+TI Systemic Characteristics of Financial Instability
+SO JOURNAL OF ECONOMIC ISSUES
+LA English
+DT Article
+DE endogenous swings; premia rating cycles
+AB I describe how in the new paradigm of a Competitive, Efficient, and Frictionless Economy (CEFE), introduced in Falahati (2019), macroeconomic imbalances with fluctuating levels of liquidity emerge endogenously. This provides a solid foundation for studying Minsky's views on financial instability in an economy with a banking and risk-underwriting system. I identify an inverse relationship between liquidity premia and risk premia, which leads to endogenous risk-premium rating cycles, including credit-risk-premium rating cycles, and macroeconomic swings. Ceteris paribus, lower liquidity increases the prices of contracts covering risks (e.g., credit default swaps), whist it decreases prices of all other assets. The opposite occurs with higher liquidity. I analyze operations of banks, risk-underwriters, and the State/Central Bank, and present a new theory of banking which improves current understandings. This theory explains how a banking system uses the floating capital of the economy more efficiently, while it also generates greater systemic risks, compared to an economy without banks. I show how the banking system can induce macroeconomic booms and busts and generate endogenous asset price bubbles and bursts. I highlight other systemic problems of the economy and derive their implications for improving the financial management of the economy and its institutions.
+C1 [Falahati, Kazem] Glasgow Caledonian Univ, Glasgow, Lanark, Scotland.
+RP Falahati, K (reprint author), Glasgow Caledonian Univ, Glasgow, Lanark, Scotland.
+OI Falahati, Kazem/0000-0003-2961-2505
+CR Aikman D, 2015, ECON J, V125, P1072, DOI 10.1111/ecoj.12113
+   Bank of England, 2012, BANK ENGLAND Q B, V52, P254
+   Bernanke B., 2009, CRISIS POLICY RESPON
+   Bernanke B., 2012, MONETARY POLICY ONSE
+   Bernanke Ben S., 2000, ESSAYS GREAT DEPRESS
+   BERNANKE BS, 2002, DEFLATION MAKING SUR
+   Blanchard O. J, 2008, 14259 NAT BUR EC AN
+   Blanchard O, 2018, OXFORD REV ECON POL, V34, P43, DOI 10.1093/oxrep/grx045
+   Boulding K. E, 1966, EC ANAL, VII
+   British Broadcasting Corporation (BBC), 2008, TIM NO ROCK BANK CRI
+   Brown C, 2012, J ECON ISSUES, V46, P303, DOI 10.2753/JEI0021-3624460205
+   Carney Mark, 2014, ONE MISSION ONE BANK
+   Cassidy J., 2010, NEW YORKER
+   Cecchetti S.G., 2017, WP1765 IMF
+   Debreu G., 1959, THEORY VALUE
+   Dent Andrew, 2012, BANK ENGLAND Q B, V52, P234
+   Donnan Shawn, 2017, FINANCIAL TIMES
+   Falahati K, 2019, J ECON ISSUES, V53, P115, DOI 10.1080/00213624.2019.1573082
+   Falahati Kazem, 2012, NEW PARADIGMS FINANC
+   FAMA EF, 1970, J FINANC, V25, P383, DOI 10.2307/2325486
+   Financial Services Authority (FSA), 2009, THE TURN REV
+   Forbes K, 2014, FINANCIAL DEGLOBALIZ
+   FRIEDMAN M, 1963, REV EC STATISTICS S, V45, P32
+   FSA, 2011, FAIL ROYAL BANK SCOT
+   Giles C, 2017, FINANCIAL TIMES
+   Haldane A. G, 2011, ACCOUNTING BANK UNCE
+   Haldane Andrew, 2016, 624 BANK ENGL
+   Jorda O., 2017, 23287 NBER, V23287
+   Keen S, 2013, ECON REC, V89, P228, DOI 10.1111/1475-4932.12016
+   Keen S, 2013, J ECON BEHAV ORGAN, V86, P221, DOI 10.1016/j.jebo.2011.01.010
+   Keynes J. M., 1936, GEN THEORY EMPLOYMEN
+   Krugman P., 2007, NEW YORK REV BOOKS
+   Krugman P, 2018, OXFORD REV ECON POL, V34, P156, DOI 10.1093/oxrep/grx052
+   McLeay M., 2014, BANK ENGL Q B, V54, P14
+   MEHRA R, 1985, J MONETARY ECON, V15, P145, DOI 10.1016/0304-3932(85)90061-3
+   Mehra Rajnish, 2006, FDN TRENDS FINANCE, V2, P1, DOI [10.1561/0500000006, DOI 10.1561/0500000006]
+   Minsky HP, 1995, J FINANC SERV RES, V9, P197, DOI 10.1007/BF01051746
+   Minsky P. H, 1992, 74 J LEV EC I BARD C
+   Northern Rock plc, 2007, ANN REP ACC 2006
+   Ryan-Collins J., 2011, DOES MONEY COME GUID
+   Samuelson P., 1948, ECONOMICS
+   Tymoigne Eric, 2013, 778 J LEV EC I BARD
+   Weiss M. A, 2007, J INSURANCE ISSUES, V30, P31
+   Werner RA, 2016, INT REV FINANC ANAL, V46, P361, DOI 10.1016/j.irfa.2015.08.014
+   WRAY LR, 1991, J ECON ISSUES, V25, P1, DOI 10.1080/00213624.1991.11505125
+   Yellen J. L, 2005, 529 BANK ENGL
+NR 46
+TC 1
+Z9 1
+U1 0
+U2 3
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0021-3624
+EI 1946-326X
+J9 J ECON ISSUES
+JI J. Econ. Issues
+PD JAN 2
+PY 2019
+VL 53
+IS 1
+BP 155
+EP 192
+DI 10.1080/00213624.2019.1573084
+PG 38
+WC Economics
+SC Business & Economics
+GA HN9JN
+UT WOS:000460515800008
+DA 2019-12-28
+ER
+
+PT J
+AU Li, ZY
+   Li, K
+   Yao, X
+   Wen, Q
+AF Li, Zhiyong
+   Li, Ke
+   Yao, Xiao
+   Wen, Qing
+TI Predicting Prepayment and Default Risks of Unsecured Consumer Loans in
+   Online Lending
+SO EMERGING MARKETS FINANCE AND TRADE
+LA English
+DT Article
+DE credit; default; online lending; prediction; prepayment; H81; C53; D81
+ID CREDIT RISK; COMPETING RISKS; MORTGAGE TERMINATION; PAYDAY LOANS; MODEL;
+   INFORMATION; MARKET; HETEROGENEITY; PERFORMANCE; BORROWERS
+AB Online lending provides a means of fast financing for borrowers based on their creditworthiness. However, borrowers may undermine this agreement due to early repayment or default, which are two major concerns for the platform and lenders, since both affect the profitability of a loan. While default risk is frequently focused on credit scoring literature, prepayment has received much less attention, despite a higher prepayment rate being observed in online lending when compared with default. This article uses multivariate logistic regression to predict the probability of both the underlying prepayment and default risks. Real consumer lending data of 140,605 unsecured loans provides evidence that these two events have their own distinct patterns. We consider systemic risk by incorporating macroeconomic factors in modeling and address the influence of economic conditions, which are lessons learnt from the last financial crisis. The out-of-sample validation has shown that both prepayment and default can be accurately predicted. This article highlights the necessity of regulations on prepayment given the fast growing online lending market.
+C1 [Li, Zhiyong; Wen, Qing] Southwestern Univ Finance & Econ, Sch Finance, Chengdu, Sichuan, Peoples R China.
+   [Li, Zhiyong; Li, Ke] Southwestern Univ Finance & Econ, Collaborat Innovat Ctr Financial Secur, Chengdu, Sichuan, Peoples R China.
+   [Li, Ke] Southwestern Univ Finance & Econ, Sch Stat, 555 Liutai Ave, Chengdu 611130, Sichuan, Peoples R China.
+   [Yao, Xiao] Cent Univ Finance & Econ, Business Sch, Beijing, Peoples R China.
+RP Li, K (reprint author), Southwestern Univ Finance & Econ, Sch Stat, 555 Liutai Ave, Chengdu 611130, Sichuan, Peoples R China.
+EM likec@swufe.edu.cn
+CR Agarwal S, 2006, J MONEY CREDIT BANK, V38, P1, DOI 10.1353/mcb.2006.0010
+   Agarwal V, 2008, J BANK FINANC, V32, P1541, DOI 10.1016/j.jbankfin.2007.07.014
+   Ambrose BW, 2003, J REAL ESTATE FINANC, V26, P179, DOI 10.1023/A:1022978708728
+   Andreeva G, 2007, EUR J OPER RES, V183, P1537, DOI 10.1016/j.ejor.2006.10.064
+   Banasik J, 1999, J OPER RES SOC, V50, P1185
+   BCBS, 2000, PRINC MAN CRED RISK
+   BELLOTTI T, 2008, J OPERATIONAL RES SO, V60, P1699, DOI DOI 10.1057/JORS.2008.130
+   Bhutta N, 2015, J MONEY CREDIT BANK, V47, DOI 10.1111/jmcb.12175
+   Bhutta N, 2014, J BANK FINANC, V47, P230, DOI 10.1016/j.jbankfin.2014.04.024
+   Blochlinger A, 2006, J BANK FINANC, V30, P851, DOI 10.1016/j.jbankfin.2005.07.014
+   Bonfim D, 2009, J BANK FINANC, V33, P281, DOI 10.1016/j.jbankfin.2008.08.006
+   Carling K, 2001, J BANK FINANC, V25, P717, DOI 10.1016/S0378-4266(00)00093-5
+   Carling K, 2007, J BANK FINANC, V31, P845, DOI 10.1016/j.jbankfin.2006.06.012
+   Ciochetti BA, 2003, J REAL ESTATE FINANC, V27, P5, DOI 10.1023/A:1023694912018
+   Ciochetti BA, 2002, REAL ESTATE ECON, V30, P595, DOI 10.1111/1540-6229.t01-1-00053
+   Clapp JM, 2006, REAL ESTATE ECON, V34, P243, DOI 10.1111/j.1540-6229.2006.00166.x
+   Crone SF, 2012, INT J FORECASTING, V28, P224, DOI 10.1016/j.ijforecast.2011.07.006
+   Crook JN, 2007, EUR J OPER RES, V183, P1447, DOI 10.1016/j.ejor.2006.09.100
+   Deng YH, 2000, ECONOMETRICA, V68, P275, DOI 10.1111/1468-0262.00110
+   Duarte J, 2012, REV FINANC STUD, V25, P2455, DOI 10.1093/rfs/hhs071
+   Emekter R, 2015, APPL ECON, V47, P54, DOI 10.1080/00036846.2014.962222
+   Esteve-Perez S, 2010, EMPIR ECON, V38, P281, DOI 10.1007/s00181-009-0266-x
+   Guo YH, 2016, EUR J OPER RES, V249, P417, DOI 10.1016/j.ejor.2015.05.050
+   Hand DJ, 1997, J R STAT SOC A STAT, V160, P523
+   Heitfield E, 2004, J REAL ESTATE FINANC, V29, P457, DOI 10.1023/B:REAL.0000044023.02636.e6
+   Hwang RC, 2014, J FORECASTING, V33, P108, DOI 10.1002/for.2278
+   Iyer R, 2016, MANAGE SCI, V62, P1554, DOI 10.1287/mnsc.2015.2181
+   Kelly R, 2016, J FINANC STABIL, V22, P1, DOI 10.1016/j.jfs.2015.09.005
+   Leow M, 2016, EUR J OPER RES, V249, P457, DOI 10.1016/j.ejor.2014.09.005
+   Lin MF, 2013, MANAGE SCI, V59, P17, DOI 10.1287/mnsc.1120.1560
+   Malekipirbazari M, 2015, EXPERT SYST APPL, V42, P4621, DOI 10.1016/j.eswa.2015.02.001
+   Melzer BT, 2015, J FINANC INTERMED, V24, P25, DOI 10.1016/j.jfi.2014.07.001
+   Miller S, 2015, J FINANC INTERMED, V24, P45, DOI 10.1016/j.jfi.2014.06.003
+   Nam CW, 2008, J FORECASTING, V27, P493, DOI 10.1002/for.985
+   Pavlov AD, 2001, J REAL ESTATE FINANC, V23, P185, DOI 10.1023/A:1011158400165
+   Pennington-Cross A, 2010, J REAL ESTATE FINANC, V40, P109, DOI 10.1007/s11146-008-9124-4
+   Rigbi O, 2013, REV ECON STAT, V95, P1238, DOI 10.1162/REST_a_00310
+   Stein RM, 2005, J BANK FINANC, V29, P1213, DOI 10.1016/j.jbankfin.2004.04.008
+   Steinbuks J, 2015, J BANK FINANC, V59, P445, DOI 10.1016/j.jbankfin.2015.07.012
+   Stepanova M, 2002, OPER RES, V50, P277, DOI 10.1287/opre.50.2.277.426
+   Thomas L. C., 2009, CONSUMER CREDIT MODE
+   Thomas LC, 2000, INT J FORECASTING, V16, P149, DOI 10.1016/S0169-2070(00)00034-0
+   Varli Y, 2015, J BANK FINANC, V61, P81, DOI 10.1016/j.jbankfin.2015.09.003
+   Zhang JJ, 2012, MANAGE SCI, V58, P892, DOI 10.1287/mnsc.1110.1459
+NR 44
+TC 0
+Z9 0
+U1 7
+U2 69
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1540-496X
+EI 1558-0938
+J9 EMERG MARK FINANC TR
+JI Emerg. Mark. Financ. Trade
+PY 2019
+VL 55
+IS 1
+BP 118
+EP 132
+DI 10.1080/1540496X.2018.1479251
+PG 15
+WC Business; Economics; International Relations
+SC Business & Economics; International Relations
+GA GV4YV
+UT WOS:000446108700009
+DA 2019-12-28
+ER

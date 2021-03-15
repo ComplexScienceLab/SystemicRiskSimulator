@@ -1,0 +1,458 @@
+
+PT J
+AU Spelta, A
+   Pecora, N
+   Kaltwasser, PR
+AF Spelta, A.
+   Pecora, N.
+   Kaltwasser, P. Rovira
+TI Identifying Systemically Important Banks: A temporal approach for
+   macroprudential policies
+SO JOURNAL OF POLICY MODELING
+LA English
+DT Article
+DE Tensor decomposition; Early warnings; Evolving networks; Interbank
+   market; Systemically important financial institutions
+ID DECOMPOSITIONS
+AB Contrary to the general belief, systemic risk does not only regard the risk posed by balance sheet relationships and interdependencies among institutions. It also features a temporal dimension related to the inappropriate responses of financial market participants to changes in risk over time. This paper proposes a method to simultaneously address the cross-sectional and the time dimension in which systemic risk materializes. The method is based on the TOPHITS algorithm. It provides three scores, namely borrowing, lending and time scores: the first two represent the systemic importance of the borrowing and the lending activity associated with each financial institution,while the third represents an empirical Early Warning Signal of the financial crisis. Our findings reveal that the identification of the time score as an indicator for an incoming market distress could be relevant to design macro prudential policies. (C) 2018 The Society for Policy Modeling. Published by Elsevier Inc. All rights reserved.
+C1 [Spelta, A.] Human Technopole, Ctr Anal Decis & Soc, Milan, Italy.
+   [Pecora, N.] Catholic Univ, Dept Econ & Social Sci, Piacenza, Italy.
+   [Kaltwasser, P. Rovira] Univ Leuven, Dept Econ & Business, Leuven, Belgium.
+   [Kaltwasser, P. Rovira] Natl Bank Belgium, Brussels, Belgium.
+RP Pecora, N (reprint author), Catholic Univ, Dept Econ & Social Sci, Piacenza, Italy.
+EM alessandro.spelta01@universitadipavia.it; nicolo.pecora@unicatt.it;
+   Pablo.RoviraKaltwasser@kuleuven.be
+FU Research Foundations Flanders (FWO) [1510413N]; European Commission
+   through the FP7-SSH research grant [320278]
+FX We are indebted to the Research Foundations Flanders (FWO) and the
+   European Commission for their financial support through the research
+   grant 1510413N and the FP7-SSH research grant 320278 respectively. The
+   ideas reported in the paper do not necessarily correspond to the views
+   of the National Bank of Belgium or the European Commission (EU).
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   [Anonymous], 2011, MACR POL ORG FRAM
+   [Anonymous], 2013, GLOB SYST IMP BANKS
+   Arnold IJM, 2012, J POLICY MODEL, V34, P906, DOI 10.1016/j.jpolmod.2012.05.016
+   Arribas I, 2011, J POLICY MODEL, V33, P831, DOI 10.1016/j.jpolmod.2011.08.007
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Borio C., 2001, BIS PAPERS, V1, P1
+   Borio C., 2003, CESIFO ECON STUD, V49, P181
+   Castiglionesi F, 2007, 2007100 TILB U CTR E
+   Crockett A, 2000, BIS SPEECHES, P21
+   Deguchi T, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0100338
+   Drehmann M, 2014, INT J FORECASTING, V30, P759, DOI 10.1016/j.ijforecast.2013.10.002
+   Financial Stability Board, 2011, G20 FIN STAB BOARD
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Igan D, 2017, J POLICY MODEL, V39, P169, DOI 10.1016/j.jpolmod.2016.09.003
+   Iwanicz-Drozdowska M, 2016, J POLICY MODEL, V38, P572, DOI 10.1016/j.jpolmod.2016.03.001
+   Kleinberg JM, 1999, J ACM, V46, P604, DOI 10.1145/324133.324140
+   Kolda TG, 2009, SIAM REV, V51, P455, DOI 10.1137/07070111X
+   Krause A, 2012, J ECON BEHAV ORGAN, V83, P583, DOI 10.1016/j.jebo.2012.05.015
+   KRUSKAL JB, 1977, LINEAR ALGEBRA APPL, V18, P95, DOI 10.1016/0024-3795(77)90069-6
+   KRUSKAL JB, 1989, MULTIWAY DATA ANAL, P7
+   Lawson C. L., 1995, SOLVING LEAST SQUARE, V15
+   Lee DD, 1999, NATURE, V401, P788, DOI 10.1038/44565
+   Rhu H. K, 2011, BIS PAPERS CHAPTERS, V60, P120
+   Squartini T, 2013, SCI REP-UK, V3, DOI 10.1038/srep03357
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Zawadowski A, 2013, REV FINANC STUD, V26, P1291, DOI 10.1093/rfs/hht008
+NR 29
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 0161-8938
+EI 1873-8060
+J9 J POLICY MODEL
+JI J. Policy Model.
+PD JAN-FEB
+PY 2019
+VL 41
+IS 1
+BP 197
+EP 218
+DI 10.1016/j.jpolmod.2018.06.004
+PG 22
+WC Economics
+SC Business & Economics
+GA HW1QM
+UT WOS:000466457400013
+DA 2019-12-28
+ER
+
+PT J
+AU Hanif, H
+   Naveed, M
+   Rehman, MU
+AF Hanif, Hasan
+   Naveed, Muhammad
+   Rehman, Mobeen Ur
+TI Dynamic modeling of systemic risk and firm value: A case of Pakistan
+SO COGENT BUSINESS & MANAGEMENT
+LA English
+DT Article
+DE Systemic risk; increment CoVaR; sectoral variables; bank valuation;
+   micro and macro prudential regulations
+ID CORPORATE GOVERNANCE; BANKS; DETERMINANTS
+AB The study examines the systemic risk of banking sector in Pakistan and elucidates the factors that exacerbate the systemic risk taking. First, a systemic risk measure increment CoVaR is applied to analyze the contribution of individual institution to the whole financial system. Secondly, systemic risk and firm value are modeled in static and dynamic frameworks to measure the factors that build systemic risk and firm value. Most importantly, the study highlights the sector level variables munificence, dynamism and concentration are also important in comprehending the risk dynamics along with the much-emphasized firm and country level variables, notably size, political stability, and bank claims. The results imply that the repercussions of excessive risk taking can be ameliorated by increasing liquidity requirements and having a close watch on leverage. Accordingly, monetary policy should be aligned with macro prudential policy to alleviate systemic risk. Furthermore, the Granger causality results indicate that systemic risk engenders idiosyncratic risk and not vice versa, implying regulation of systemic risk can lower the idiosyncratic risk as well. Last but not the least, systemic risk has positive effect on valuation, implying systemic risk cannot be curbed by sheer market discipline and requires external intervention.
+C1 [Hanif, Hasan; Naveed, Muhammad; Rehman, Mobeen Ur] Zulficiar Ali Bhutto Inst Sci & Technol Islamabad, Management Sci, Islamabad, Pakistan.
+RP Hanif, H (reprint author), Zulficiar Ali Bhutto Inst Sci & Technol Islamabad, Management Sci, Islamabad, Pakistan.
+EM hasanhanitjanjua@gmail.com
+CR Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T., 2012, INTERMEDIARY LEVERAG, P567, DOI [10.1094/PDIS-11-11-0999-PDN, DOI 10.1094/PDIS-11-11-0999-PDN]
+   Adrian T., 2011, 17454 NBER
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Almazan A, 2005, J ECON MANAGE STRAT, V14, P263, DOI 10.1111/j.1530-9134.2005.00042.x
+   Andries AM, 2016, ECON LETT, V144, P59, DOI 10.1016/j.econlet.2016.04.031
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Anwar Y., 2012, I BUS MAN KAR PAK, DOI [10.1094/PDIS-11-11-0999-PDN, DOI 10.1094/PDIS-11-11-0999-PDN]
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Baek S, 2015, J BANK FINANC, V55, P295, DOI 10.1016/j.jbankfin.2014.02.011
+   Beck T, 2006, J BANK FINANC, V30, P1581, DOI 10.1016/j.jbankfin.2005.05.010
+   Bernal O, 2014, J BANK FINANC, V47, P270, DOI 10.1016/j.jbankfin.2014.05.030
+   Bessler W, 2015, J INT FINANC MARK I, V35, P45, DOI 10.1016/j.intfin.2014.11.009
+   Black L, 2016, J BANK FINANC, V63, P107, DOI 10.1016/j.jbankfin.2015.09.007
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   Borri N, 2014, ECON NOTES, V43, P21, DOI 10.1111/ecno.12015
+   BOYD BK, 1995, STRATEGIC MANAGE J, V16, P301, DOI 10.1002/smj.4250160404
+   Brunnermeier M. K., 2012, WORKING PAPER, DOI [10.1094/PDIS-11-11-0999-PDN, DOI 10.1094/PDIS-11-11-0999-PDN]
+   Castro C, 2014, J EMPIR FINANC, V25, P1, DOI 10.1016/j.jempfin.2013.10.009
+   de Mendonca HF, 2018, N AM J ECON FINANC, V43, P141, DOI 10.1016/j.najef.2017.10.011
+   Dell'Ariccia G, 2006, J FINANC, V61, P2511, DOI 10.1111/j.1540-6261.2006.01065.x
+   Dell'Ariccia G, 2014, J ECON THEORY, V149, P65, DOI 10.1016/j.jet.2013.06.002
+   Drakos AA, 2015, INT REV ECON FINANC, V40, P127, DOI 10.1016/j.iref.2015.02.010
+   Dumitrescu EI, 2012, ECON MODEL, V29, P1450, DOI 10.1016/j.econmod.2012.02.014
+   Gang JH, 2015, EMERG MARK FINANC TR, V51, P701, DOI 10.1080/1540496X.2015.1039895
+   Iqbal J, 2015, J ECON BUS, V82, P42, DOI 10.1016/j.jeconbus.2015.06.001
+   Jimenez G, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.02.004
+   Kayo EK, 2011, J BANK FINANC, V35, P358, DOI 10.1016/j.jbankfin.2010.08.015
+   Kleinow J, 2017, J EC FINANCE, V41, P211, DOI DOI 10.1007/s12197-015-9341-7
+   Kleinow J, 2015, J FINAN ECON POLICY, V7, P446, DOI 10.1108/JFEP-07-2015-0042
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Lee C. H., 2003, Q REV EC FINANCE, V43, P560, DOI [10.1016/S1062-9769(02)00173-4, DOI 10.1016/S1062-9769(02)00173-4]
+   Lin E., 2016, FINANCIAL EC, DOI [10.1007/s10479-016-2113-8, DOI 10.1007/S10479-016-2113-8]
+   Pikas H. P., 2003, J ACAD BUSINESS EC, V1, P720
+   Roodman D, 2009, STATA J, V9, P86, DOI 10.1177/1536867X0900900106
+   Saona P, 2018, REV MANAG SCI, V12, P65, DOI 10.1007/s11846-016-0213-0
+   Smith J. D., 2014, J ACCOUNTING FINANCE, V17, P66
+   Soedarmono W, 2017, RES INT BUS FINANC, V42, P1208, DOI 10.1016/j.ribaf.2017.07.058
+   Stolbov M, 2017, INT EC EC POLICY, V14, P119
+   Strobl S, 2016, J RISK FINANC, V17, P374, DOI 10.1108/JRF-05-2016-0064
+   Teply P, 2017, N AM J ECON FINANC, V42, P461, DOI 10.1016/j.najef.2017.08.007
+   Uhde A, 2009, J BANK FINANC, V33, P1299, DOI 10.1016/j.jbankfin.2009.01.006
+   Zedda S., 2017, J BANK FINANC, DOI [10.1016/j.jbankthornn.2017.06.008, DOI 10.1016/J.JBANKTHORNN.2017.06.008]
+NR 44
+TC 0
+Z9 0
+U1 0
+U2 0
+PU TAYLOR & FRANCIS AS
+PI OSLO
+PA KARL JOHANS GATE 5, NO-0154 OSLO, NORWAY
+SN 2331-1975
+J9 COGENT BUS MANAG
+JI Cogent Bus. Manag.
+PD AUG 6
+PY 2019
+VL 6
+IS 1
+AR 1651440
+DI 10.1080/23311975.2019.1651440
+PG 17
+WC Business
+SC Business & Economics
+GA IS3VG
+UT WOS:000482081100001
+OA DOAJ Gold, Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Cont, R
+   Schaanning, E
+AF Cont, Rama
+   Schaanning, Eric
+TI Monitoring indirect contagion
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Financial stability; Price-mediated contagion; Macro prudential
+   regulation; Systemic risk measurement
+ID SYSTEMIC RISK; LIQUIDATION
+AB We propose two indicators for quantifying the potential exposure of financial institutions to indirect contagion arising from deleveraging of assets in stress scenarios. The first indicator, the Endogenous Risk Index (ERI) captures spillovers across portfolios arising from deleveraging in stress scenarios. The second indicator, the Indirect Contagion Index (ICI) measures the systemic importance of a bank by quantifying the loss its distressed liquidation would inflict on other institutions. Both are computable from portfolio holdings of financial institutions and measures of market depth for the assets held in the portfolio. We discuss the micro-foundation of these indicators and apply them to the analysis of the vulnerability of the European banking system to indirect contagion.
+   Using data on portfolio holdings of European banks, we show that our indicators correlate to the magnitude of fire-sales losses in simulated stress scenarios, thus providing a simple to compute proxy for the outcome of stress tests. We also show that the information provided by our indicators on the systemic importance of banks is different from indicators based on size, thereby providing a measure of interconnectedness complementary to those currently used by supervisors. (C) 2019 Published by Elsevier B.V.
+C1 [Cont, Rama] Univ Oxford, Math Inst, Oxford 0X2 6GG, England.
+   [Schaanning, Eric] Swiss Fed Inst Technol, RiskLab, Dept Math, Ramistr 101, CH-8092 Zurich, Switzerland.
+   [Schaanning, Eric] Norges Bank, Bankplassen 2, N-0151 Oslo, Norway.
+RP Schaanning, E (reprint author), Swiss Fed Inst Technol, RiskLab, Dept Math, Ramistr 101, CH-8092 Zurich, Switzerland.
+EM Rama.Cont@maths.ox.ac.uk; eric.schaanning@esrb.europa.eu
+FU Royal Society APEX Award for Excellence in Interdisciplinary Research
+   [AX160182]; Fonds National de la Recherche Luxembourg under the AFR PhD
+   scheme [5028140]
+FX Rama Cont's research was funded by the Royal Society APEX Award for
+   Excellence in Interdisciplinary Research (AX160182). This work was
+   initiated as part of Eric Schaanning's PhD at Imperial College London,
+   funded by the Fonds National de la Recherche Luxembourg under the AFR
+   PhD scheme, grant no. 5028140. We thank Michel Baes, Martin Summer and
+   seminar participants at ETH, the Bank of England, the National Bank of
+   Austria, CRM Workshop on Systemic Risk (Univ Montreal), the Vienna
+   University of Economics and Business, the BIS and Banca d'Italia, the
+   Bachelier Financial Society World Congress, Columbia University, the
+   European Systemic Risk Board and the Bank of Finland for their valuable
+   comments. An earlier version of this paper appeared under the title
+   "Measuring systemic risk: The indirect contagion index." The model used
+   in this paper is described in greater detail in (Cont and Schaanning,
+   2016).
+CR Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Amihud Y, 2002, J FINANC MARK, V5, P31, DOI 10.1016/S1386-4181(01)00024-6
+   Ang A, 2006, REV FINANC STUD, V19, P1191, DOI 10.1093/rfs/hhj035
+   Baes M., 2019, WORKING PAPER
+   Battiston S., 2012, DEBTRANK TOO CENTRAL
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blei S., 2014, ASSET COMMONALITY SY
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Braouezec Y, 2018, REV FINANC, V22, P747, DOI 10.1093/rof/rfw067
+   Braverman A., 2016, STAT RISK MODEL
+   Brownlees C., 2016, REV FINANC STUD
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Capponi A., 2015, REV ASSET PRICING ST
+   Coen J., 2017, WORKING PAPER
+   Cont R., 2016, WORKING PAPER
+   Cont R, 2016, MATH FINANC, V26, P835, DOI 10.1111/mafi.12071
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   Danielsson J., 2012, WORKING PAPER
+   Duarte F., 2013, FIRE SALE SPILLOVERS, V645
+   Duffle D., 2010, BIG BANKS FAIL WHAT
+   Ellul A, 2011, J FINANC ECON, V101, P596, DOI 10.1016/j.jfineco.2011.03.020
+   Feinstein Z, 2017, STATIST RISK MODEL, V34, P113, DOI 10.1515/strm-2015-0030
+   Getmansky M., 2016, PORTFOLIO SIMILARITY
+   GRANOVETTER M, 1979, AM J SOCIOL, V85, P489, DOI 10.1086/227047
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Guo WL, 2016, STATIST RISK MODEL, V33, P139, DOI 10.1515/strm-2015-0020
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Jotikasthira C, 2012, J FINANC, V67, P2015, DOI 10.1111/j.1540-6261.2012.01780.x
+   Khandani AE, 2011, J FINANC MARK, V14, P1, DOI 10.1016/j.finmar.2010.07.005
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Kyle AS, 2016, WORKING PAPER
+   Markose S, 2012, J EC BEHAV ORG
+   Obizhaeva A., 2012, WORKING PAPER
+   Pedersen LH, 2009, INT J CENT BANK, V5, P177
+   Poledna S., 2018, QUANTIFICATION SYSTE
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Wagner W, 2011, J FINANC, V66, P1141, DOI 10.1111/j.1540-6261.2011.01666.x
+NR 39
+TC 0
+Z9 0
+U1 7
+U2 7
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JUL
+PY 2019
+VL 104
+BP 85
+EP 102
+DI 10.1016/j.jbankfin.2019.04.007
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA IC4QG
+UT WOS:000470949800006
+DA 2019-12-27
+ER
+
+PT J
+AU Bloomfield, K
+   Williams, T
+   Bovis, C
+   Merali, Y
+AF Bloomfield, Katherine
+   Williams, Terry
+   Bovis, Chris
+   Merali, Yasmin
+TI Systemic risk in major public contracts
+SO INTERNATIONAL JOURNAL OF FORECASTING
+LA English
+DT Article
+DE Projects; Contracts; Systemic risk; Public sector; Front-end;
+   Outsourcing
+AB This paper presents a novel approach to the characterisation of "systemic risk" in the context of public sector procurement and contracting. We argue that contemporary risk management practices in project and programme management exhibit a number of limitations. This is particularly relevant to public sector contracting, which, the authors postulate, would benefit from more sophisticated practices that are capable of dealing with risk 'systemicity'. Drawing on a sample of public sector procurement exercises commissioned by the UK Ministry of Defence (MoD), the paper presents a multi-method approach that aims to increase our understanding of complex outsourcing contracts. The results suggest a need for more appropriate methods of risk analysis, and discuss the practical implications. (C) 2018 International Institute of Forecasters. Published by Elsevier B.V. All rights reserved.
+C1 [Bloomfield, Katherine; Williams, Terry; Bovis, Chris; Merali, Yasmin] Univ Hull, Cottingham Rd, Kingston Upon Hull HU6 7RX, N Humberside, England.
+RP Bloomfield, K (reprint author), Univ Hull, Cottingham Rd, Kingston Upon Hull HU6 7RX, N Humberside, England.
+EM K.Bloomfield@hull.ac.uk
+CR Ackermann F, 2007, J OPER RES SOC, V58, P39, DOI 10.1057/palgrave.jors.2602105
+   Association for Project Management, 2012, APM BOD KNOWL
+   Association for Project Management, 2008, PRIOR PROJ RISKS
+   Association of Project Management, 2004, PROJ RISK AN MAN GUI
+   Breese R, 2015, INT J PROJ MANAG, V33, P1438, DOI 10.1016/j.ijproman.2015.06.004
+   Cabrera D, 2015, SYST RES BEHAV SCI, V32, P534, DOI 10.1002/sres.2351
+   De Bandt O, 2009, OXFORD HDB BANKING
+   Department of Defense, 2002, DOD NEWS BRIEF SECR
+   Dorland W, 2011, DORLANDS ILLUSTRATED
+   Eden C, 2000, J OPER RES SOC, V51, P291, DOI 10.2307/254087
+   EDEN C, 2005, PROJECT MANAGEMENT J, V36, P15, DOI DOI 10.1177/875697280503600203
+   Edkins Andrew, 2013, Engineering Project Organization Journal, V3, P71, DOI 10.1080/21573727.2013.775942
+   Flyvbjerg B., 2003, MEGAPROJECTS RISK AN
+   Geraldi J, 2011, INT J OPER PROD MAN, V31, P966, DOI 10.1108/01443571111165848
+   Haapio H, 2017, SHORT GUIDE CONTRACT
+   International Institute of Forecasters, 2018, IJF SPEC ISS FOR UNC
+   IPA, 2017, ANN REP MAJ PROJ 201
+   IPA, 2018, QUOT PROJ WEBS
+   Keil M, 1995, MIS QUART, V19, P421, DOI 10.2307/249627
+   Keil M, 2010, CALIF MANAGE REV, V53, P6, DOI 10.1525/cmr.2010.53.1.6
+   Leitch M, 2010, RISK ANAL, V30, P887, DOI 10.1111/j.1539-6924.2010.01397.x
+   Midler C., 1995, SCAND J MANAG, V11, P363, DOI DOI 10.1016/0956-5221(95)00035-T
+   Miller R., 2001, STRATEGIC MANAGEMENT
+   MORRIS PWG, 2011, PROJ PERSPECT, V33, P4
+   Narayanan V., 2012, PROJECT GOVERNANCE G, P3
+   National Audit Office, 2013, OV OPT GOV PROJ
+   O'Leary T, 2013, IEEE T ENG MANAGE, V60, P566, DOI 10.1109/TEM.2012.2228206
+   Oaks M, 1986, STAT INFERENCE COMME
+   Project Management Institute, 2013, GUID PROJ MAN BOD KN
+   Project Management Institute, 2009, PRACT STAND PROJ RIS
+   Ramasesh RV, 2014, J OPER MANAG, V32, P190, DOI 10.1016/j.jom.2014.03.003
+   Samset K, 2010, EARLY PROJECT APPRAISAL: MAKING THE INITIAL CHOICES, P1, DOI 10.1057/9780230289925
+   Shafer G., 1976, MATH THEORY EVIDENCE, V42
+   Taleb N.N, 2008, BLACK SWAN IMPACT HI
+   Thamhain H, 2013, PROJ MANAG J, V44, P20, DOI 10.1002/pmj.21325
+   Willams T.M., 1994, INT J PROJ MANAG, V12, P17, DOI DOI 10.1016/0263-7863(94)90005-1
+   Williams T, 2017, CROSS NATL COMP BENE
+   Williams T., 2002, MODELLING COMPLEX PR
+   Williams T, 2018, BE GIV CONC S 2018 S
+   Williams T, 2017, PROJ MANAG J, V48, P55, DOI 10.1177/875697281704800405
+   Williams T, 2010, PROJ MANAG J, V41, P38, DOI 10.1002/pmj.20160
+NR 41
+TC 1
+Z9 1
+U1 2
+U2 2
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0169-2070
+EI 1872-8200
+J9 INT J FORECASTING
+JI Int. J. Forecast.
+PD APR-JUN
+PY 2019
+VL 35
+IS 2
+BP 667
+EP 676
+DI 10.1016/j.ijforecast.2018.10.005
+PG 10
+WC Economics; Management
+SC Business & Economics
+GA IA1HO
+UT WOS:000469310100018
+DA 2019-12-28
+ER
+
+PT J
+AU Xu, R
+   Chang, JL
+   Li, CG
+   Wang, WL
+AF Xu, Rong
+   Chang, Jialu
+   Li, Conggang
+   Wang, Wenlan
+TI Research on the influence of equity pledge on stock price crash risk:
+   based on financial shock of 2015 stock market crisis
+SO ECONOMIC AND POLITICAL STUDIES-EPS
+LA English
+DT Article
+DE Equity pledge; stock price crash risk; leverage effect; financial shock
+ID SHORT-SALES; CONTAGION; ATTENTION; SALIENCE; BEHAVIOR
+AB The 2015 Chinese stock market crisis triggered liquidation because of equity pledge so that the leverage effect of the small probability event with severe results got intensive attention from investors. It is found that the effects of equity pledge on stock price crash risk reversed significantly before and after the 2015 stock market crisis. In the mechanism analysis, we further find that the equity pledge influenced the stock price crash risk by longer suspension and greater price fluctuation. The shareholding ratio of institutional investors and information environment also had a significant moderating effect on the influence of equity pledge on stock price crash risk. Alternative interpretation tests excluded the tunnel effect and pressure effect by shareholders and incentive effect by management. This study by analysing empirical data provides evidence on the change of investors? risk recognition, which is caused by financial shock, in the Chinese capital market.
+C1 [Xu, Rong] Renmin Univ China, Sch Finance, Beijing, Peoples R China.
+   [Xu, Rong] Renmin Univ China, China Financial Policy Res Ctr, Beijing, Peoples R China.
+RP Xu, R (reprint author), Renmin Univ China, Sch Finance, Beijing, Peoples R China.; Xu, R (reprint author), Renmin Univ China, China Financial Policy Res Ctr, Beijing, Peoples R China.
+EM xurongfsi@gmail.com
+FU Fundamental Research Funds for the Central UniversitiesFundamental
+   Research Funds for the Central Universities; Research Funds of Renmin
+   University of China [16XNO001]
+FX This research is supported by the Fundamental Research Funds for the
+   Central Universities and the Research Funds of Renmin University of
+   China [16XNO001].
+CR Barber BM, 2008, REV FINANC STUD, V21, P785, DOI 10.1093/rfs/hhm079
+   Bordalo P, 2013, AM ECON REV, V103, P623, DOI 10.1257/aer.103.3.623
+   Bordalo P, 2012, Q J ECON, V127, P1243, DOI 10.1093/qje/qjs018
+   Brooks C, 2005, ECON J, V115, P767, DOI 10.1111/j.1468-0297.2005.01019.x
+   Brunnermeier M., 2016, CENTRAL BANKS CROSSR, P493, DOI 10.1017/CBO9781316570401.013
+   Calvo GA, 2000, J INT ECON, V51, P79, DOI 10.1016/S0022-1996(99)00038-0
+   CASE KE, 1989, AM ECON REV, V79, P125
+   Chen J, 2001, J FINANC ECON, V61, P345, DOI 10.1016/S0304-405X(01)00066-6
+   DECHOW PM, 1995, ACCOUNT REV, V70, P193
+   Griffin JM, 2007, REV FINANC STUD, V20, P905, DOI 10.1093/rfs/hhl019
+   Guiso L, 2018, J FINANC ECON, V128, P403, DOI 10.1016/j.jfineco.2018.02.007
+   [郝项超 Hao Xiangchao], 2009, [会计研究, Accounting Research], P57
+   Hong H, 2003, REV FINANC STUD, V16, P487, DOI 10.1093/rfs/hhg006
+   Hutton AP, 2009, J FINANC ECON, V94, P67, DOI 10.1016/j.jfineco.2008.10.003
+   Jin L, 2006, J FINANC ECON, V79, P257, DOI 10.1016/j.jfineco.2004.11.003
+   Kim JB, 2016, CONTEMP ACCOUNT RES, V33, P1720, DOI 10.1111/1911-3846.12217
+   Kim JB, 2016, CONTEMP ACCOUNT RES, V33, P412, DOI 10.1111/1911-3846.12112
+   Kim JB, 2014, CONTEMP ACCOUNT RES, V31, P851, DOI 10.1111/1911-3846.12048
+   Kim JB, 2011, J FINANC ECON, V101, P713, DOI 10.1016/j.jfineco.2011.03.013
+   Li Bingxiang, 2017, ZHONGYANG CAIJING DA, V11, P75
+   Li Laifang., 2005, KUAIJI YANJIU, V11, P8
+   Li Ni, 2015, KUAIJI YANJIU, V5, P42
+   Li Yongwei, 2007, CAIWU YU KUAIJI, V1, P39
+   Liang Q., 2016, MANAG WORLD, V3, P144
+   Luo Yongli, 2012, ADV FIN EC, P195
+   Mondria J, 2013, ECON J, V123, P429, DOI 10.1111/j.1468-0297.2012.02530.x
+   Ni XR, 2016, ECON LETT, V144, P22, DOI 10.1016/j.econlet.2016.04.029
+   Richardson S, 2006, REV ACCOUNT STUD, V11, P159, DOI 10.1007/s11142-006-9012-1
+   Shleifer A, 1997, J FINANC, V52, P737, DOI 10.1111/j.1540-6261.1997.tb04820.x
+   Su Dongwei, 2013, JINRONG YANJIU, V12, P167
+   Wang Bin, 2013, XITONG GONGCHENG LIL, V33, P1762
+   Wang F. S., 2014, NANKAI BUSINESS REV, V02, P95
+   Wang H., 2015, MANAGE WORLD, V2, P45
+   WANG Y, 2009, J FINANC RES, V12, P162
+   Wen Yuechun, 2016, SHANGHAI JINRONG XUE, V2, P5
+   Wu Xiaoqiu, 2016, CAIMAO JINGJI, V37, P22
+   Xie D. R., 2016, MANAGE WORLD, V5, P128
+   Xu N., 2013, MANAGE WORLD, V7, P31
+   Xu Nianxing, 2012, EC RES J, P127
+   Yin YG, 2017, EMERG MARK FINANC TR, V53, P493, DOI 10.1080/1540496X.2015.1093844
+   Zheng Guojian, 2013, GUANLI SHIJIE, V5, P157
+NR 41
+TC 0
+Z9 0
+U1 13
+U2 13
+PU TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OR14 4RN, OXON, ENGLAND
+SN 2095-4816
+EI 2470-4024
+J9 ECON POLIT STUD-EPS
+JI Econ. Polit. Stud.-EPS
+PD OCT 2
+PY 2019
+VL 7
+IS 4
+BP 480
+EP 505
+DI 10.1080/20954816.2019.1667599
+EA OCT 2019
+PG 26
+WC Social Sciences, Interdisciplinary
+SC Social Sciences - Other Topics
+GA JI6AP
+UT WOS:000489058500001
+DA 2019-12-27
+ER

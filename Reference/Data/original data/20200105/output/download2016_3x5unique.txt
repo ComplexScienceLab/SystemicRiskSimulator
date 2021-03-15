@@ -1,0 +1,416 @@
+
+PT J
+AU Tovar-Garcia, ED
+AF Tovar-Garcia, Edgar Demetrio
+TI Exposure to interbank market and risk-taking by Mexican banks
+SO CUADERNOS DE ECONOMIA-SPAIN
+LA English
+DT Article
+DE Market discipline; Interbank market; Bank risk; Contagion; Mexico
+ID SYSTEMIC RISK; DISCIPLINE; LIQUIDITY; DEBT
+AB Banks can avoid bank runs and panic using the interbank market as a type of coinsurance. Moreover, because of the possibility of losing financial assets, they theoretically have incentives to monitor their peers, borrowing in this market. This paper examines whether bank risks are explained by their exposure to the interbank market. The market discipline hypothesis suggests that bankers are welt equipped to monitor their peers, and the interbank borrowing is par excellence an uninsured deposit. Consequently, banks with a larger exposure to the interbank market should present strong bank fundamentals. Using a sample of 37 Mexican banks, from December 2008 to September 2012, and dynamic panel models based on the SYS GMM estimator, I did not find evidence in favor of the market discipline hypothesis. These results are robust to different indicators of bank risk and exposure to interbank markets. This is a wake-up call for policymakers, who should restore market discipline in interbank operations, following the disclosure policy in Basel III. (C) 2015 Asociacion Cuadernos de Economia. Published by Elsevier Espana, S.L.U. All rights reserved.
+C1 [Tovar-Garcia, Edgar Demetrio] Natl Res Univ, Higher Sch Econ, Myasnitskaya St 20, Moscow 101000, Russia.
+RP Tovar-Garcia, ED (reprint author), Natl Res Univ, Higher Sch Econ, Myasnitskaya St 20, Moscow 101000, Russia.
+EM demetrio.tovar@gmail.com
+RI Tovar-Garcia, Edgar Demetrio/G-7890-2015
+OI Tovar-Garcia, Edgar Demetrio/0000-0002-8826-0004
+FU Academic Fund Program at the National Research University Higher School
+   of Economics (HSE) [16-01-0008]; Government of the Russian Federation
+FX The article was prepared within the framework of the Academic Fund
+   Program at the National Research University Higher School of Economics
+   (HSE) in 2015 (grant No 16-01-0008) and supported within the framework
+   of a subsidy granted to the HSE by the Government of the Russian
+   Federation for the implementation of the Global Competitiveness Program.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Andrievskaya I., 2012, ARE BANKS PEER DISCI
+   Angelini P., 2009, INTERBANK MARKET AUG
+   Ayadi R., 2013, HDB SAFEGUARDING GLO, P403
+   Basel Committee on Banking Supervision, 2013, CONS DOC REV BAS 3 L
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Calomiris CW, 1996, J MONEY CREDIT BANK, V28, P766, DOI 10.2307/2077920
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   de Mendonca HF, 2009, J REGUL ECON, V36, P286, DOI 10.1007/s11149-009-9098-z
+   Tovar-Garcia ED, 2012, CUAD ECON-SPAIN, V35, P172
+   Dinger V, 2009, J MONEY CREDIT BANK, V41, P491, DOI 10.1111/j.1538-4616.2009.00217.x
+   Distinguin I, 2013, J COMP ECON, V41, P544, DOI 10.1016/j.jce.2012.07.005
+   Evanoff DD, 2011, J ECON BUS, V63, P1, DOI 10.1016/j.jeconbus.2010.07.001
+   Flannery MJ, 1996, J MONEY CREDIT BANK, V28, P804, DOI 10.2307/2077922
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2001, J BUS, V74, P33, DOI 10.1086/209662
+   Kim M, 2005, J BANK FINANC, V29, P681, DOI 10.1016/j.jbankfin.2004.05.024
+   King TB, 2008, J MONEY CREDIT BANK, V40, P295, DOI 10.1111/j.1538-4616.2008.00114.x
+   Liedorp F. R., 2010, PEER MONITORING CONT
+   Marquez J., 2011, COYUNTURA EC, V41, P87
+   Martinez-Peria M. S., 2001, J FINANC, V56, P1029
+   Munoz J. F., 2013, DISCIPLINA MERCADOEN, V16, P87
+   Nier E, 2006, J FINANC INTERMED, V15, P332, DOI 10.1016/j.jfi.2006.03.001
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Tovar Edgar Demetrio, 2011, Ens. polit. econ., V29, P80
+   Garcia EDT, 2012, CUAD ECON-BOGOTA, V31, P89
+   Tovar-Garcia E. D., REV EC APLICADA
+   Tovar-Garcia E. D., 2011, PROBL DESARRO, V42, P147
+   Tovar-Garcia ED, 2014, LAT AM ECON REV, V23, DOI 10.1007/s40503-014-0006-2
+   Turk-Ariss R., 2014, DO DEPOSITORS DISCIP
+NR 31
+TC 0
+Z9 1
+U1 0
+U2 5
+PU ELSEVIER DOYMA SL
+PI BARCELONA
+PA TRAVESERA DE GARCIA, 17-21, BARCELONA, 08021, SPAIN
+SN 0210-0266
+EI 2340-6704
+J9 CUAD ECON-SPAIN
+JI Cuad. Econ.-Spain
+PD SEP-DEC
+PY 2016
+VL 39
+IS 111
+BP 157
+EP 174
+DI 10.1016/j.cesjef.2015.11.002
+PG 18
+WC Economics
+SC Business & Economics
+GA EG3IK
+UT WOS:000390937000004
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Lee, M
+   Asuncion, RC
+   Kim, J
+AF Lee, Minsoo
+   Asuncion, Ruben Carlo
+   Kim, Jungsuk
+TI Effectiveness of Macroprudential Policies in Developing Asia: An
+   Empirical Analysis
+SO EMERGING MARKETS FINANCE AND TRADE
+LA English
+DT Article
+DE developing Asia; financial stability; macroprudential policy
+ID MONETARY
+AB Before the 2008 global financial crisis, bank monitoring focused primarily on risks to individual institutions, or what are generally referred to as prudential risks. Regulators thus failed to consider that a buildup of macroeconomic risks and vulnerabilities could pose systemic risk to the financial sector. The global credit crisis showed the inadequacy of purely prudential surveillance systems and the need for bank supervisors to better detect the buildup of macroeconomic risks before they can threaten the financial system. This article presents an empirical framework for analyzing how effectively macroprudential policies control credit growth, leverage growth, and housing price appreciation. Two significant findings emerge. Broadly, macroprudential policies can indeed promote financial stability in Asia. More specifically, different types of macroprudential policies are proved effective for different types of macroeconomic risks.
+C1 [Lee, Minsoo; Asuncion, Ruben Carlo] Asian Dev Bank, Econ Res & Reg Cooperat Dept, Manila, Philippines.
+   [Kim, Jungsuk] Sogang Univ, Inst Int & Area Studies, Seoul, South Korea.
+RP Lee, M (reprint author), Asian Dev Bank, Econ Res & Reg Cooperat Dept, Manila, Philippines.
+EM mlee@adb.org
+CR Borio C., 2010, INT FIN CORP 5 C BAS
+   Christensen I, 2011, COUNTERCYCLICA UNPUB
+   Claessens S, 2013, J INT MONEY FINANC, V39, P153, DOI 10.1016/j.jimonfin.2013.06.023
+   Dueker M, 2005, J BUS ECON STAT, V23, P96, DOI 10.1198/073500104000000613
+   Economist Intelligence Unit, 2014, EC SPEC Q DAT 1999 2
+   Gelain P, 2013, INT J CENT BANK, V9, P219
+   IMF Multilateral Policy Issues Report, 2013, IMF MULT POL ISS REP
+   International Monetary Fund (IMF), 2013, KEY ASP MACR POL PAP
+   Tillmann P., 2014, ESTIMATING EFF UNPUB
+   Walentin K, 2014, SCAND J ECON, V116, P635, DOI 10.1111/sjoe.12064
+NR 10
+TC 3
+Z9 3
+U1 0
+U2 9
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1540-496X
+EI 1558-0938
+J9 EMERG MARK FINANC TR
+JI Emerg. Mark. Financ. Trade
+PD APR
+PY 2016
+VL 52
+IS 4
+BP 923
+EP 937
+DI 10.1080/1540496X.2015.1103137
+PG 15
+WC Business; Economics; International Relations
+SC Business & Economics; International Relations
+GA DF1GA
+UT WOS:000371086300012
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Lo, AW
+   Stein, RM
+AF Lo, Andrew W.
+   Stein, Roger M.
+TI TRC Networks and Systemic Risk
+SO JOURNAL OF ALTERNATIVE INVESTMENTS
+LA English
+DT Article
+ID MODEL
+C1 [Lo, Andrew W.; Stein, Roger M.] MIT, Sloan Sch Management, 77 Massachusetts Ave, Cambridge, MA 02139 USA.
+   [Lo, Andrew W.] AlphaSimplex Grp, Cambridge, MA 02142 USA.
+RP Lo, AW (reprint author), MIT, Sloan Sch Management, 77 Massachusetts Ave, Cambridge, MA 02139 USA.; Lo, AW (reprint author), AlphaSimplex Grp, Cambridge, MA 02142 USA.
+EM alo-admin@mit.edu; steinr@mit.edu
+FU MIT Laboratory
+FX We thank Jeff Bohn, Darrell Duffie, Mark Flood, Francis Gross, Joe
+   Langsam, Yaacov Mutnikas, and participants at the Federal Reserve Bank
+   of Chicago's "Measuring Systemic Risk Conference"and the Research
+   Symposia of the Consortium for Systemic Risk Analytics (CSRA) for
+   helpful comments and discussion. We are grateful to Steve Guo and
+   Chengcheng Qin for assistance with the portfolio analytics; Michael
+   DeCavalcante for compiling the money market funds data; David Fagnan for
+   research assistance in visualizing early versions of this article; Dror
+   Kenett for references to the network literature and research assistance
+   in rendering the final visualizations and calculating the network
+   topology measures; and Jayna Cummings for editorial assistance. Data
+   were provided by Moody's. Research support from the MIT Laboratory for
+   Financial Engineering is gratefully acknowledged. The views and opinions
+   expressed in this article are those of the authors only, and do not
+   necessarily represent the views and opinions of any institution or
+   agency, any of their affiliates or employees, or any of the individuals
+   acknowledged.
+CR Acharya V. V., 2010, 1002 FED RES BANK CL
+   Adrian T, 2010, TECHNICAL REPORT
+   Barrat A, 2004, P NATL ACAD SCI USA, V101, P3747, DOI 10.1073/pnas.0400087101
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Boccaletti S, 2006, PHYS REP, V424, P175, DOI 10.1016/j.physrep.2005.10.009
+   Bohn JR, 2009, WILEY FINANC SER, P1, DOI 10.1002/9781118266830
+   Cohen R., 2010, COMPLEX NETWORKS STR
+   Gao JX, 2012, NAT PHYS, V8, P40, DOI 10.1038/nphys2180
+   Kealhofer S, 2003, FINANC ANAL J, V59, P30, DOI 10.2469/faj.v59.n1.2501
+   Kealhofer S., 1998, TECHNICAL REPORT
+   Kenett DY, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0015032
+   Kenett YN, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0023912
+   Lee UV, 2006, PHYS REV E, V73, DOI 10.1103/PhysRevE.73.041920
+   Madi A, 2011, CHAOS, V21, DOI 10.1063/1.3543800
+   Mantegna RN, 1999, EUR PHYS J B, V11, P193, DOI 10.1007/s100510050929
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Newman MEJ, 2006, P NATL ACAD SCI USA, V103, P8577, DOI 10.1073/pnas.0601602103
+   Newman MEJ, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.066133
+   Opsahl T, 2010, SOC NETWORKS, V32, P245, DOI 10.1016/j.socnet.2010.03.006
+   Ortega GJ, 2008, NEUROSCI LETT, V447, P129, DOI 10.1016/j.neulet.2008.09.080
+   Reyngold A, 2015, J ALTERN INVEST, V17, P58, DOI 10.3905/jai.2015.17.4.058
+   Rhoades SA, 1993, FEDERAL RESERVE B, V79, P188
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Stein RM, 2013, HANDBOOK ON SYSTEMIC RISK, P37
+   Tumminello M, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0017994
+   Tumminello M, 2010, J ECON BEHAV ORGAN, V75, P40, DOI 10.1016/j.jebo.2010.01.004
+   Vasicek O. A., 1987, TECHNICAL REPORT
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+NR 29
+TC 2
+Z9 2
+U1 0
+U2 0
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1520-3255
+EI 2168-8435
+J9 J ALTERN INVEST
+JI J. Altern. Invest.
+PD SPR
+PY 2016
+VL 18
+IS 4
+BP 52
+EP 67
+DI 10.3905/jai.2016.18.4.052
+PG 16
+WC Business, Finance
+SC Business & Economics
+GA FJ3LA
+UT WOS:000412632400005
+DA 2019-12-28
+ER
+
+PT J
+AU Aboura, S
+   Wagner, N
+AF Aboura, Sofiane
+   Wagner, Niklas
+TI Extreme asymmetric volatility: Stress and aggregate asset prices
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Market volatility; Asymmetric volatility; Leverage effect; Volatility
+   feedback; Market stress; Financial stability; Systemic risk; Extreme
+   volatility; Aggregate asset prices
+ID EQUITY MARKETS; STOCK RETURNS; MODELS; INDEPENDENCE; LEVERAGE
+AB Asymmetric volatility in equity markets has been widely documented in finance (Bekaert and Wu, 2000)). We study asymmetric volatility for daily S&P 500 index returns and VIX index changes, thereby examining the relation between extreme changes in risk-neutral volatility expectations, i.e. market stress, and aggregate asset prices. To this aim, we model market returns, implied VIX market volatility and volatility of volatility, showing that the latter is asymmetric in that past positive volatility shocks drive positive shocks to volatility of volatility. Our main result documents the existence of a significant extreme asymmetric volatility effect as we find contemporaneous volatility-return tail dependence for crashes but not for booms. We then outline aggregate market price implications of extreme asymmetric volatility, indicating that under volatility feedback a one-in-a-hundred trading day innovation to average VIX implied volatility, for example, relates to an expected market drop of more than 4 percent. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Aboura, Sofiane] Univ Paris 09, DRM Finance, F-75775 Paris 16, France.
+   [Wagner, Niklas] Univ Passau, D-94030 Passau, Germany.
+RP Wagner, N (reprint author), Univ Passau, Dept Econ & Business, D-94030 Passau, Germany.
+EM nwagner@alum.calberkeley.org
+CR BAE J, 2007, J EMPIR FINANC, V14, P41, DOI DOI 10.1016/J.JEMPFIN.2006.04.005
+   BARNDORFFNIELSE.OE, 2005, IDENTIFICATION INFER, P306
+   Beirlant J., 2004, STAT EXTREMES THEORY
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   Bekaert G, 2014, J ECONOMETRICS, V183, P181, DOI 10.1016/j.jeconom.2014.05.008
+   Bianconi M., 2014, DETERMINANTS SYSTEMI
+   Black F., 1976, P 1976 M AM STAT ASS, P177
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   Bollerslev T., 2006, J FINANCIAL ECONOMET, V4, P353, DOI DOI 10.1093/JJFINEC/NBJ014
+   Bollerslev T, 2009, REV FINANC STUD, V22, P4463, DOI 10.1093/rfs/hhp008
+   Bollerslev T, 2009, J ECONOMETRICS, V150, P151, DOI 10.1016/j.jeconom.2008.12.001
+   CAMPBELL JY, 1992, J FINANC ECON, V31, P281, DOI 10.1016/0304-405X(92)90037-X
+   CARR P, 2006, J DERIV, V13, P13, DOI DOI 10.3905/JOD.2006.616865
+   CHICAGO BOARD OPTIONS EXCHANGE, 2003, NEW CBOE VOL IND VIX
+   CHRISTIE AA, 1982, J FINANC ECON, V10, P407, DOI 10.1016/0304-405X(82)90018-6
+   Coles S., 1999, EXTREMES, V2, P339, DOI [DOI 10.1023/A:1009963131610, 10.1023/A:1009963131610]
+   Coles S., 2001, INTRO STAT MODELING
+   Corsi F, 2008, ECONOMET REV, V27, P46, DOI 10.1080/07474930701853616
+   Diebold F. X., 1998, DECISION TECHNOLOGIE, P3
+   Embrechts P., 1997, MODELLING EXTREMAL E
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R.F., 2007, PRICED RISK ASYMMETR
+   Engle RF, 2001, THEORETICAL EMPIRICA
+   Falk M, 2006, ANN I STAT MATH, V58, P261, DOI 10.1007/s10463-005-0016-6
+   FRENCH KR, 1987, J FINANC ECON, V19, P3, DOI 10.1016/0304-405X(87)90026-2
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   GUMBEL EJ, 1960, J AM STAT ASSOC, V55, P698, DOI 10.2307/2281591
+   Hibbert AM, 2008, J BANK FINANC, V32, P2254, DOI 10.1016/j.jbankfin.2007.12.046
+   IMF, 2003, FIN ASS PRIC VOL SOU, P62
+   Ledford AW, 1996, BIOMETRIKA, V83, P169, DOI 10.1093/biomet/83.1.169
+   Li C., 2004, SKEWNESS PREMIUM ASY
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Marsh T.A., 2000, RETURN VOLUME DEPEND
+   MERTON RC, 1973, ECONOMETRICA, V41, P867, DOI 10.2307/1913811
+   Papadamou S, 2014, J INT FINANC MARK I, V31, P362, DOI 10.1016/j.intfin.2014.05.002
+   Pickands J., 1981, B INT STAT I, V69, P859
+   PINDYCK RS, 1984, AM ECON REV, V74, P335
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Silvapulle P., 2001, Quantitative Finance, V1, P542, DOI 10.1088/1469-7688/1/5/306
+   Straetmans STM, 2008, J APPL ECONOM, V23, P17, DOI 10.1002/jae.973
+   TAWN JA, 1988, BIOMETRIKA, V75, P397, DOI 10.2307/2336591
+   Wagner N, 2005, J EMPIR FINANC, V12, P165
+   WU G, 2002, J EMPIR FINANC, V9, P287, DOI DOI 10.1016/S0927-5398(01)00057-3
+   ZAKOIAN JM, 1994, J ECON DYN CONTROL, V18, P931, DOI 10.1016/0165-1889(94)90039-6
+NR 44
+TC 18
+Z9 18
+U1 1
+U2 14
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD MAR
+PY 2016
+VL 41
+BP 47
+EP 59
+DI 10.1016/j.intfin.2015.12.004
+PG 13
+WC Business, Finance; Economics
+SC Business & Economics
+GA DI6LW
+UT WOS:000373611400004
+DA 2019-12-28
+ER
+
+PT J
+AU Resta, M
+AF Resta, Marina
+TI VARSOM: A TOOL TO MONITOR MARKETS' STABILITY BASED ON VALUE AT RISK AND
+   SELF-ORGANIZING MAPS
+SO INTELLIGENT SYSTEMS IN ACCOUNTING FINANCE & MANAGEMENT
+LA English
+DT Article
+DE markets' stability; self-organizing maps; value at risk
+ID CURRENCY CRISES; EMERGING MARKETS; SYSTEMIC RISK
+AB We introduce a variant of self-organizing maps (SOMs) termed VaRSOM that evaluates the similarity among inputs and nodes of the map employing value at risk (VaR). In this way we embed risk measurement within a machine-learning architecture, thus becoming particularly well-suited to analysing financial data. We tested the visualization capabilities and the explicative power of VaRSOM on data from the German Stock Exchange; we then evaluated the results in a comparative perspective, opposing the VaRSOM outcomes to those of SOM trained with more conventional similarity measures. The results lead to the conclusion that VaRSOM is a tool particularly well suited to visualize and exploit critical patterns in financial markets. This, in turn, opens perspectives for a general machine-learning framework sensitive to financial distress and contagion effects. Copyright (C) 2015 John Wiley & Sons, Ltd.
+C1 [Resta, Marina] Univ Genoa, DIEC, Via Vivaldi 2, I-16126 Genoa, Italy.
+RP Resta, M (reprint author), Univ Genoa, DIEC, Via Vivaldi 2, I-16126 Genoa, Italy.
+EM resta@economia.unige.it
+RI Resta, Marina/B-5888-2011
+OI Resta, Marina/0000-0003-0994-9151
+CR Acharya V, 2010, MEASURING SYSTEMIC R
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Adams Z., 2010, MODELING SPILLOVER E
+   Adorno MC, 2004, LECT NOTES COMPUT SC, V3213, P426
+   Adorno MC, 2003, LECT NOTES ARTIF INT, V2773, P1088
+   Adrian T, 348 FRB, DOI [10.2139/ssrn.1269446, DOI 10.2139/SSRN.1269446]
+   Aggarwal CC, 2001, LECT NOTES COMPUT SC, V1973, P420
+   Arrow KJ, 1951, ECONOMETRICA, V19, P404, DOI 10.2307/1907465
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Aumann RJ, 2008, J POLIT ECON, V116, P810, DOI 10.1086/591947
+   Banulescu GD, 2012, P CREDIT 2012 C
+   Benoit S, 2013, FIN20141030 HEC
+   Bernardi M, 2013, BAYESIAN INFERENCE C
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Boucher C. M, 2013, WORKING PAPER
+   Brownlees C., 2012, WORKING PAPER
+   Cao Z, 2013, WORKING PAPER
+   Danielsson J, 2014, MODEL RISK RISK MODE
+   de Bodt E, 2002, NEURAL NETWORKS, V15, P967, DOI 10.1016/S0893-6080(02)00071-0
+   Demyanyk Y, 2010, OMEGA-INT J MANAGE S, V38, P315, DOI 10.1016/j.omega.2009.09.007
+   Foster DP, 2013, THEOR ECON, V8, P591, DOI 10.3982/TE1150
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Hakkio C.S., 2009, ECON REV, V2, P5
+   Jorion P, 2006, VALUE RISK NEW BENCH
+   Kaminsky GL., 1999, IMF WORKING PAPERS
+   Karimalis E. N, 2014, WORKING PAPER
+   KOHONEN T, 1982, BIOL CYBERN, V43, P59, DOI 10.1007/BF00337288
+   Kohonen T., 2002, SELF ORGANIZING MAPS
+   Lamping J., 1994, UIST '94. Seventh Annual Symposium on User Interface Software and Technology. Proceedings of the ACM Symposium on User Interface Software and Technology, P13
+   Li J. X., 2004, Information Visualization, V3, P49, DOI 10.1057/palgrave.ivs.9500051
+   Liu S, 2006, INTELL SYST ACCOUNT, V14, P179, DOI 10.1002/isaf.276
+   Mainik G, 2012, ARXIV12073464
+   Manganelli S, 2011, WORKING PAPER
+   Marghescu D, 2010, INTELL SYST ACCOUNT, V17, P143, DOI 10.1002/isaf.317
+   Marina ME, 2014, MATH STAT METHODS AP, P195
+   MARKOWITZ H., 1959, PORTFOLIO SELECTION
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Morgan J.P., 1996, RISKMETRICS TECHNICA
+   Oh D.H., 2013, TIME VARYING SYSTEMI, P167
+   Pasricha G, 2013, ASSESSING FINANCIAL
+   PRATT JW, 1964, ECONOMETRICA, V32, P122, DOI 10.2307/1913738
+   Resta M., 2009, NEW DIRECTIONS NEURA, V193
+   Resta M., 2012, COMPUTATIONAL INTELL, V6, P535
+   Resta M, 2015, J MATH FINANCE, V5, P119
+   Resta M., 2014, MATH STAT METHODS AC, P173
+   Ritter H, 1999, KOHONEN MAPS, P97, DOI 10.1016/B978-044450270-4/50007-3
+   Rockafellar RT, 2006, FINANC STOCH, V10, P51, DOI 10.1007/s00780-005-0165-8
+   Sarlin P., 2014, COMPUTATIONAL RISK M
+   Sarlin P, 2011, INT J COMPUT ECON EC, V2, P24, DOI 10.1504/IJCEE.2011.040575
+   Sarlin P, 2013, J INT FINANC MARK I, V26, P46, DOI 10.1016/j.intfin.2013.05.002
+   Sarlin P, 2012, INT J MACH LEARN CYB, V3, P233, DOI 10.1007/s13042-011-0057-5
+   Sarlin P, 2011, INTELL SYST ACCOUNT, V18, P15, DOI 10.1002/isaf.321
+   Sarlin P, 2011, LECT NOTES COMPUT SC, V6731, P40, DOI 10.1007/978-3-642-21566-7_4
+   SHARPE WF, 1994, J PORTFOLIO MANAGE, V21, P49, DOI 10.3905/jpm.1994.409501
+   Tarashev N, 2010, TECHNICAL REPORT WOR
+   TOBIN J, 1957, REV ECON STUD, V25, P65
+   Venna J, 2001, LECT NOTES COMPUT SC, V2130, P485
+   Wong A., 2010, ANAL INTERCONNECTIVI
+   Zangari P, 1996, IMPROVED METHODOLOGY, P7
+NR 59
+TC 2
+Z9 2
+U1 0
+U2 2
+PU JOHN WILEY & SONS LTD
+PI CHICHESTER
+PA THE ATRIUM, SOUTHERN GATE, CHICHESTER PO19 8SQ, W SUSSEX, ENGLAND
+SN 1055-615X
+EI 1099-1174
+J9 INTELL SYST ACCOUNT
+JI Intell. Syst. Account. Financ. Manag.
+PD JAN-JUN
+PY 2016
+VL 23
+IS 1-2
+SI SI
+BP 47
+EP 64
+DI 10.1002/isaf.1372
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA FF9RN
+UT WOS:000409354800004
+DA 2019-12-28
+ER

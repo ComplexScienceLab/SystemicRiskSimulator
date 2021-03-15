@@ -1,0 +1,442 @@
+
+PT J
+AU Temizsoy, A
+   Ioni, G
+   Montes-Rojas, G
+AF Temizsoy, Asena
+   Ioni, Giulia
+   Montes-Rojas, Gabriel
+TI Network centrality and funding rates in the e-MID interbank market
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article; Proceedings Paper
+CT 5th International Conference of the
+   Financial-Engineering-and-Banking-Society (FEBS)
+CY JUN 11-13, 2015
+CL Nantes, FRANCE
+SP Financial Engn & Banking Soc, Audencia Business Sch, Ctr Financial & Risk Management, French Finance Assoc, Journal Financial Stabil
+DE Network centrality; Interbank market; Overnight loans
+ID OVERNIGHT MONEY MARKET; SYSTEMIC RISK; TOPOLOGY
+AB This paper empirically investigates the role of banks' network centrality in the interbank market on their funding rates. Specifically we analyze transaction data from the e-MID market, the only electronic interbank market in the Euro Area and US, over the period 2006-2009 that encompasses the global financial crisis. We show that interbank spreads are significantly affected by both local and global measures of connectedness. The effects of network centrality increased as the financial crisis evolved. Local measures show that having more links increases borrowing costs for borrowers and reduces premia for lenders. For global network centrality, borrowers receive a significant discount if they increase their intermediation activity and become more central, while lenders pay in general a premium (i.e. receive lower rates) for centrality. This provides evidence of the 'too-interconnected-to-fail' hypothesis. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Temizsoy, Asena; Ioni, Giulia; Montes-Rojas, Gabriel] City Univ London, Dept Econ, Social Sci Bldg,Northampton Sq, London EC1V 0HB, England.
+   [Montes-Rojas, Gabriel] Univ Autonoma Barcelona, Dept Econ Aplicada, Edifici B Campus UAB, E-08193 Barcelona, Spain.
+RP Temizsoy, A (reprint author), City Univ London, Dept Econ, Social Sci Bldg,Northampton Sq, London EC1V 0HB, England.
+EM asena.temizsoy.2@city.ac.uk; g.iori@city.ac.uk; gabriel.montes@uab.cat
+RI Montes-Rojas, Gabriel/M-4750-2015
+OI Montes-Rojas, Gabriel/0000-0002-8447-4929
+FU European Union, Seventh Framework Programme FP7 under FET Open Project
+   FOC [255987]; European Union, Seventh Framework Programme FP7 under ICT
+   Project CRISIS [288501]
+FX We are grateful to the Editor, Dr. Iftekhar Hasan, to two anonymous
+   referees and to participants at the FEBS 2015 conference for helpful
+   comments and suggestions for improving this article. The research
+   leading to these results has received funding from the European Union,
+   Seventh Framework Programme FP7/2007-2013 under Grant agreements FET
+   Open Project FOC, Nr. 255987, and ICT Project CRISIS, Nr. 288501.
+CR Affinito M, 2012, J BANK FINANC, V36, P3163, DOI 10.1016/j.jbankfin.2011.11.016
+   Akram Q, 2010, INTERBANK OVERNIGHT
+   Aldasoro I., 2015, 102 SAFE
+   Anand K, 2012, J ECON DYN CONTROL, V36, P1088, DOI 10.1016/j.jedc.2012.03.005
+   Angelini P, 2000, J MONEY CREDIT BANK, V32, P54, DOI 10.2307/2601092
+   Angelini P, 2011, J MONEY CREDIT BANK, V43, P923, DOI 10.1111/j.1538-4616.2011.00402.x
+   Babus A., 2015, 060932 TINB I
+   Babus A, 2016, RAND J ECON, V47, P239, DOI 10.1111/1756-2171.12126
+   Bargigli L, 2015, QUANT FINANC, V15, P673, DOI 10.1080/14697688.2014.968356
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Bech M. L., 2008, WORKING PAPER SERIES, V986
+   BONACICH P, 1972, J MATH SOCIOL, V2, P113, DOI 10.1080/0022250X.1972.9989806
+   BONACICH P, 1987, AM J SOCIOL, V92, P1170, DOI 10.1086/228631
+   Booth GG, 2014, J FINANC MARK, V18, P126, DOI 10.1016/j.finmar.2013.08.001
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brauning F., 2012, RELATIONSHIP LENDING
+   Chinazzi M., 2013, LEM PAPERS SERIES, V2013
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Finger K, 2013, COMPUT MANAG SCI, V10, P187, DOI 10.1007/s10287-013-0171-9
+   FREEMAN LC, 1979, SOC NETWORKS, V1, P215, DOI 10.1016/0378-8733(78)90021-7
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Gabrieli S., 2014, 531 BANQ FRANC
+   Gabrieli S., 2011, CEIS TOR VERGATA WOR, V158
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Goyal S, 2007, J ECON THEORY, V137, P460, DOI 10.1016/j.jet.2007.01.006
+   Hatzopoulos V, 2015, QUANT FINANC, V15, P693, DOI 10.1080/14697688.2014.969889
+   Iazzetta C., 2009, WORKING PAPER
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   KATZ L, 1953, PSYCHOMETRIKA, V18, P39
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Leon C., 2014, BORRADORES EC, V840
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Page L., 1999, 66 STANF INF
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Squartini T, 2013, SCI REP-UK, V3, DOI 10.1038/srep03357
+   Temizsoy A, 2015, J ECON DYN CONTROL, V59, P118, DOI 10.1016/j.jedc.2015.07.008
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   van der Leij M., 2012, WORKING PAPERS SERIE
+NR 48
+TC 6
+Z9 6
+U1 0
+U2 2
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2017
+VL 33
+BP 346
+EP 365
+DI 10.1016/j.jfs.2016.11.003
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA FO9DW
+UT WOS:000417189200023
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Leschinski, C
+   Bertram, P
+AF Leschinski, Christian
+   Bertram, Philip
+TI Time varying contagion in EMU government bond spreads
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Contagion; Sovereign risk; Bond spreads; Rolling window; Instrumental
+   variables
+ID FLIGHT-TO-LIQUIDITY; UP-CALL CONTAGION; OIL-PRICE SHOCK; UNIT-ROOT
+   TESTS; SOVEREIGN RISK; YIELD SPREADS; FINANCIAL CRISIS; GREAT CRASH;
+   EURO; VOLATILITY
+AB We analyze the time varying behavior of pure contagion effects between Economic and Monetary Union( EMU) government bond spreads before and during the subprime mortgage crisis and the EMU debt crisis. By conducting a rolling window analysis, we are able to monitor the evolution of pure contagion effects and the changing influence of exogenous factors over time. Importantly, this is done without an ex-antespecification of the contagion window. Hence, we are able to determine the exact timing of the start and end for the different contagion periods. In contrast to related studies, we use a slightly different definition of contagious events and show that this approach leads to different conclusions about the progression of the EMU debt crisis. First, the main sources of pure contagion in the later phase of the EMU debt crisis appear to be Italy and Spain and not Greece, Ireland and Portugal. Furthermore, we find that substantial contagion effects among EMU government bond spreads (caused by Ireland and Portugal) already arise during the subprime mortgage crisis and not only during the EMU debt crisis, as one might expect. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Leschinski, Christian; Bertram, Philip] Leibniz Univ Hannover, Fac Econ & Management, Inst Stat, Konigsworther Pl 1, D-30167 Hannover, Germany.
+RP Bertram, P (reprint author), Leibniz Univ Hannover, Fac Econ & Management, Inst Stat, Konigsworther Pl 1, D-30167 Hannover, Germany.
+CR Aizenman J, 2013, J INT MONEY FINANC, V34, P37, DOI 10.1016/j.jimonfin.2012.11.011
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Arghyrou MG, 2012, J INT FINANC MARK I, V22, P658, DOI 10.1016/j.intfin.2012.03.003
+   Attinasi M.-G., 2009, 1131 EUR CTR BANK
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   Beber A, 2009, REV FINANC STUD, V22, P925, DOI 10.1093/rfs/hhm088
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Benzoni L, 2015, REV FINANC STUD, V28, P1960, DOI 10.1093/rfs/hhv018
+   Bernoth K., 2004, 359 EUR CTR BANK
+   Bernoth K, 2008, SCOT J POLIT ECON, V55, P465, DOI 10.1111/j.1467-9485.2008.00462.x
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P639, DOI 10.1016/j.jimonfin.2011.10.006
+   Blanchard O, 2007, PORT ECON J, V6, P1, DOI 10.1007/s10258-006-0015-4
+   Blatt D, 2015, J BANK FINANC, V59, P1, DOI 10.1016/j.jbankfin.2015.06.003
+   Calvo S. G., 1996, 1619 WORLD BANK POL
+   Canofari P, 2015, QUANT FINANC, V15, P711, DOI 10.1080/14697688.2014.968606
+   Codogno L, 2003, ECON POLICY, P503
+   Conefrey T., 2010, NATL I ECON REV, V211, P91, DOI DOI 10.1177/0027950110364103
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   De Santis RA, 2014, J EMPIR FINANC, V26, P150, DOI 10.1016/j.jempfin.2013.12.003
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Ehrmann M, 2017, J INT MONEY FINANC, V70, P26, DOI 10.1016/j.jimonfin.2016.08.005
+   Elliott G, 1996, ECONOMETRICA, V64, P813, DOI 10.2307/2171846
+   Faini R., 2006, ECON POLICY, V21, P443, DOI DOI 10.1111/J.1468-0327.2006.00163.X
+   Favero C, 2010, J FINANC QUANT ANAL, V45, P107, DOI 10.1017/S0022109009990494
+   Fernandez-Rodriguez F, 2015, INT REV ECON FINANC, V39, P337, DOI 10.1016/j.iref.2015.07.001
+   Forbes K. J., 2012, TECHNICAL REPORT
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Giordano R, 2013, INT FINANC, V16, P131, DOI 10.1111/j.1468-2362.2013.12033.x
+   Goldstein M., 1998, POLICY ANAL INT EC, V55
+   Gomez-Puig M, 2014, N AM J ECON FINANC, V30, P133, DOI 10.1016/j.najef.2014.09.003
+   Gomez-Puig M, 2014, INT REV ECON FINANC, V33, P12, DOI 10.1016/j.iref.2014.03.003
+   Gonzalez-Hermosillo B., 2014, IMF WORKING PAPER SE, V76
+   Gunduz Y, 2014, J INT MONEY FINANC, V49, P425, DOI 10.1016/j.jimonfin.2014.03.013
+   Hamilton J. D, 1994, TIME SERIES ANAL, V2
+   Honohan P., 2009, WHAT WENT WRONG IREL
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Carrion-i-Silvestre JL, 2009, ECONOMET THEOR, V25, P1754, DOI 10.1017/S0266466609990326
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Ludwig A, 2014, J INT MONEY FINANC, V48, P125, DOI 10.1016/j.jimonfin.2014.07.008
+   Manganelli S, 2009, ECON POLICY, P191, DOI 10.1111/j.1468-0327.2009.00220.x
+   Martin V., 2012, EC MODELLING TIME SE
+   Masson Paul, 1999, ASIAN FINANCIAL CRIS
+   Metiu N, 2012, ECON LETT, V117, P35, DOI 10.1016/j.econlet.2012.04.074
+   Ng S, 2001, ECONOMETRICA, V69, P1519, DOI 10.1111/1468-0262.00256
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Perron P, 1996, REV ECON STUD, V63, P435, DOI 10.2307/2297890
+   PERRON P, 1989, ECONOMETRICA, V57, P1361, DOI 10.2307/1913712
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   PHILLIPS PCB, 1988, ECONOMETRICA, V56, P1021, DOI 10.2307/1911357
+   Pragidis IC, 2015, J FINANC STABIL, V18, P127, DOI 10.1016/j.jfs.2015.04.001
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Samitas A, 2013, J INT FINANC MARK I, V25, P18, DOI 10.1016/j.intfin.2013.01.005
+   SARGAN JD, 1958, ECONOMETRICA, V26, P393, DOI 10.2307/1907619
+   Sibbertsen P, 2014, J BANK FINANC, V41, P109, DOI 10.1016/j.jbankfin.2014.01.003
+   STOCK JH, 1988, J AM STAT ASSOC, V83, P1097, DOI 10.2307/2290142
+   VASICEK O, 1977, J FINANC ECON, V5, P177, DOI 10.1016/0304-405X(77)90016-2
+   Wu YR, 1996, J MONEY CREDIT BANK, V28, P604, DOI 10.2307/2078073
+   ZIVOT E, 1992, J BUS ECON STAT, V10, P251, DOI 10.2307/1391541
+NR 58
+TC 2
+Z9 2
+U1 0
+U2 6
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD APR
+PY 2017
+VL 29
+BP 72
+EP 91
+DI 10.1016/j.jfs.2017.01.007
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA EU5MP
+UT WOS:000401076100006
+DA 2019-12-27
+ER
+
+PT J
+AU Gyodi, K
+AF Gyodi, Kristof
+TI DETERMINANTS OF CEE GOVERNMENT BOND SPREADS AND CONTAGION BETWEEN
+   2001-2014
+SO ACTA OECONOMICA
+LA English
+DT Article
+DE government bond spreads; sovereign risk; sovereign credit rating;
+   contagion; Central and Eastern European countries
+ID UP-CALL CONTAGION; SOVEREIGN RISK; CRISIS; PURE
+AB This paper analyses the pricing of sovereign risk and contagion during the crises in the Central and Eastern European countries. Panel data are used to estimate the determinants of government bond spreads in three different time periods: before the crisis, during the global financial crisis, and during the European debt crisis. The econometric model includes interactions between the explanatory variables and the crisis dummies. This specification enables the coefficients to change during the crises. The empirical analysis confirms a statistically significant relationship between sovereign risk and macroeconomic fundamental variables. Additionally, the results suggest an increase in the importance of macroeconomic fundamentals during the financial crisis. The analysis also supports that sovereign credit ratings and exchange rate risk have a significant impact on government bond spreads.
+C1 [Gyodi, Kristof] Univ Warsaw, Fac Econ Sci, Warsaw, Poland.
+RP Gyodi, K (reprint author), Univ Warsaw, Fac Econ Sci, Warsaw, Poland.
+EM kgyodi@coin.wne.uw.edu.pl
+OI Gyodi, Kristof/0000-0003-2999-8444
+CR Alexopoulou I, 2010, EASTERN EUR ECON, V48, P5, DOI 10.2753/EEE0012-8775480502
+   Antonakakis N, 2013, J INT FINANC MARK I, V26, P258, DOI 10.1016/j.intfin.2013.06.004
+   Ardagna S, 2007, BE J MACROECON, V7
+   Attinasi MG, 2009, 1131 EUR CENTR BANK
+   Baldacci E, 2010, 184 IMF
+   Barrios S., 2009, DETERMINANTS INTRAEU
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   CANTOR R, 1996, FRBNY EC POLICY REV, V2, P37
+   Canuto O., 2004, MACROECONOMICS SOVER
+   Cavallo E, 2013, INT J FINANC ECON, V18, P240, DOI 10.1002/ijfe.1461
+   Claeys G., 2016, BRUEGEL POLICY CONTR
+   Claeys P, 2014, J BANK FINANC, V46, P151, DOI 10.1016/j.jbankfin.2014.05.011
+   Darvas Z, 2010, OECD J BUDGETING, V2010, P1, DOI DOI :10.1787/BUDGET-10-5KM7S5M3NLVD
+   Ebner A, 2009, EMERG MARK REV, V10, P97, DOI 10.1016/j.ememar.2009.02.001
+   Elmendorf D., 1999, 6470 NBER
+   Gadanecz B., 2014, 474 BIS
+   Giday A, 2013, PUBLIC FINANC Q-HUNG, V58, P271
+   Giordano R, 2013, INT FINANC, V16, P131, DOI 10.1111/j.1468-2362.2013.12033.x
+   Gomez-Puig M, 2014, N AM J ECON FINANC, V30, P133, DOI 10.1016/j.najef.2014.09.003
+   Gomez-Puig M, 2014, INT REV ECON FINANC, V33, P12, DOI 10.1016/j.iref.2014.03.003
+   Gruber J., 2010, INT FINANCE DISCUSSI
+   Iara A, 2014, EUR J POLIT ECON, V34, P222, DOI 10.1016/j.ejpoleco.2014.02.002
+   Jahjah S., 2012, INT FINANCE DISCUSSI
+   Jaramillo L., 2011, 44 IMF
+   Jaramillo L., 2012, 198 IMF
+   Kattel R, 2010, J POST KEYNESIAN EC, V33, P41, DOI 10.2753/PKE0160-3477330103
+   Lane PR, 2012, J ECON PERSPECT, V26, P49, DOI 10.1257/jep.26.3.49
+   Laubach T, 2009, J EUR ECON ASSOC, V7, P858, DOI 10.1162/JEEA.2009.7.4.858
+   Leschinski C., 2013, HANNOVER EC PAPERS H
+   Ludwig A, 2014, J INT MONEY FINANC, V48, P125, DOI 10.1016/j.jimonfin.2014.07.008
+   Miyajima K, 2015, EMERG MARK REV, V22, P126, DOI 10.1016/j.ememar.2014.09.006
+   MUNDELL RA, 1963, CAN J ECON POLIT SCI, V29, P475, DOI 10.2307/139336
+   Poghosyan T, 2014, ECON SYST, V38, P100, DOI 10.1016/j.ecosys.2013.07.008
+   Staehr K., 2010, PUBLIC FINANCE MANAG, V10, P671
+   Suh S, 2015, INT REV ECON FINANC, V35, P45, DOI 10.1016/j.iref.2014.09.002
+   Vamvakidis A, 2009, EASTERN EUR ECON, V47, P5, DOI 10.2753/EEE0012-8775470301
+   von Hagen J, 2011, EUR J POLIT ECON, V27, P36, DOI 10.1016/j.ejpoleco.2010.07.002
+NR 37
+TC 1
+Z9 1
+U1 0
+U2 1
+PU AKADEMIAI KIADO ZRT
+PI BUDAPEST
+PA BUDAFOKI UT 187-189-A-3, H-1117 BUDAPEST, HUNGARY
+SN 0001-6373
+EI 1588-2659
+J9 ACTA OECON
+JI Acta. Oecon.
+PD JUN
+PY 2017
+VL 67
+IS 2
+BP 235
+EP 256
+DI 10.1556/032.2017.67.2.5
+PG 22
+WC Economics
+SC Business & Economics
+GA FA3ZV
+UT WOS:000405384500005
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Jean-Loup, S
+AF Jean-Loup, Soula
+TI Measuring heterogeneity in bank liquidity risk: Who are the winners and
+   losers?
+SO QUARTERLY REVIEW OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Bank risk management; Liquidity risk; Systemic risk
+ID INTERBANK MARKET; BASEL III; MANAGEMENT; MODEL; RUNS
+AB The 2007-2009 crisis stressed the importance of liquidity for banks. Aggregate liquidity indices provide an account of financial market liquidity conditions. However, these indices do not illustrate how banks individually are affected by such conditions. Similarly, balance sheet indicators only reflect degrees of potential bank exposure to liquidity shocks. Using a risk factor model, we present a way of measuring bank sensitivity to liquidity risk. Our results indicate that liquidity risk is a specific risk, and we shed light on heterogeneities among banks in terms of their exposure to liquidity risk. Liquidity conditions can hinder or benefit banks, and banks can also be insensitive to such conditions. We document large variations in exposure levels across the 2008 and 2011 crises. Larger size and higher capital levels insulate banks from aggregate liquidity risk. However, deposit shares, wholesale funding reliance and funding gaps affect only those banks benefiting from aggregate liquidity risk. These ratios reveal bank liquidity production levels. This suggests that market discipline applies to liquidity production, but only for less risky banks in cases of liquidity crisis. Thus, market discipline appears to be one-sided. This reinforces the necessity of liquidity requirements for all banks as illustrated from the Basel III liquidity ratios. (C) 2017 Board of Trustees of the University of Illinois. Published by Elsevier Inc. All rights reserved.
+C1 [Jean-Loup, Soula] Strasbourg Univ, Strasbourg, France.
+   [Jean-Loup, Soula] LaRGE Res Ctr, Strasbourg, France.
+RP Jean-Loup, S (reprint author), Univ Strasbourg, Inst Etud Polit, 47 Ave Foret Noire, F-67082 Strasbourg, France.
+EM jlsoula@unistra.fr
+CR Abbassi P., 2013, 40 DTSCH BUND
+   Acharya V. V., 2014, END MARKET DISCIPLIN
+   Acharya VV, 2013, REV FINANC, V17, P107, DOI 10.1093/rof/rfs022
+   Acharya VV, 2012, AM ECON J-MACROECON, V4, P184, DOI 10.1257/mac.4.2.184
+   Acharya VV, 2011, J FINANC, V66, P1177, DOI 10.1111/j.1540-6261.2011.01669.x
+   Acharya VV, 2011, REV FINANC STUD, V24, P2166, DOI 10.1093/rfs/hhq073
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Afonso G, 2011, J FINANC, V66, P1109, DOI 10.1111/j.1540-6261.2011.01670.x
+   Aikman D, 2011, FINANCIAL STABILITY, P371
+   Akram F. Q., 2010, NORGES BANK WORKING, V11
+   Allen F., 2008, JACKS HOL C P FED RE, P379
+   Allen F, 2009, J MONETARY ECON, V56, P639, DOI 10.1016/j.jmoneco.2009.04.003
+   Allen Franklin, 2007, UNDERSTANDING FINANC
+   Angelini P, 2011, J MONEY CREDIT BANK, V43, P923, DOI 10.1111/j.1538-4616.2011.00402.x
+   Aspachs O, 2005, LIQUIDITY BANKING RE
+   Baele L, 2015, J BANK FINANC, V53, P49, DOI 10.1016/j.jbankfin.2014.11.012
+   Berger AN, 2009, REV FINANC STUD, V22, P3779, DOI 10.1093/rfs/hhn104
+   Bijlsma M., 2014, MEASURING TOO BIG TO
+   Bongaerts D, 2011, J FINANC, V66, P203, DOI 10.1111/j.1540-6261.2010.01630.x
+   Brunnermeier MK, 2012, NBER MACROECON ANNU, V26, P149, DOI 10.1086/663991
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   BUNDA Irina, 2008, International Economic Journal, V22, P361
+   Caballero RJ, 2008, J FINANC, V63, P2195, DOI 10.1111/j.1540-6261.2008.01394.x
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Christensen JHE, 2014, J BUS ECON STAT, V32, P136, DOI 10.1080/07350015.2013.858631
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Cornett MM, 2011, J FINANC ECON, V101, P297, DOI 10.1016/j.jfineco.2011.03.001
+   Covitz D, 2013, J FINANC, V68, P815, DOI 10.1111/jofi.12023
+   Craig BR, 2015, J BANK FINANC, V53, P99, DOI 10.1016/j.jbankfin.2014.12.022
+   de Haan L, 2013, J INT FINANC MARK I, V26, P152, DOI 10.1016/j.intfin.2013.05.004
+   Dewenter KL, 1998, J MONEY CREDIT BANK, V30, P472, DOI 10.2307/2601251
+   Diamond DW, 2009, AM ECON REV, V99, P606, DOI 10.1257/aer.99.2.606
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Dietrich A, 2014, J BANK FINANC, V44, P13, DOI 10.1016/j.jbankfin.2014.03.041
+   Drehmann M, 2013, J BANK FINANC, V37, P2173, DOI 10.1016/j.jbankfin.2012.01.002
+   Eisenbach Thomas, 2014, FEDERAL RESERVE BANK, V20, P29
+   Ennis HM, 2013, REV ECON DYNAM, V16, P601, DOI 10.1016/j.red.2012.09.005
+   Fox J., 1997, APPL REGRESSION ANAL
+   Furfine CH, 2001, J BUS, V74, P33, DOI 10.1086/209662
+   Goldstein I, 2005, J FINANC, V60, P1293, DOI 10.1111/j.1540-6261.2005.00762.x
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Gyntelberg J., 2008, BANK INT SETTLEM MAR
+   Haq M, 2012, J INT FINANC MARK I, V22, P696, DOI 10.1016/j.intfin.2012.04.003
+   Heider F., 2015, LIQUIDITY HOARDING I
+   Hess AC, 1997, J FINANC SERV RES, V12, P133, DOI 10.1023/A:1007922702718
+   Hong H, 2014, J FINANC STABIL, V15, P91, DOI 10.1016/j.jfs.2014.09.003
+   Hui CH, 2011, INT J FINANC ECON, V16, P307, DOI 10.1002/ijfe.427
+   Imbierowicz B, 2014, J BANK FINANC, V40, P242, DOI 10.1016/j.jbankfin.2013.11.030
+   Iyer R, 2012, AM ECON REV, V102, P1414, DOI 10.1257/aer.102.4.1414
+   Jokipii T, 2008, J BANK FINANC, V32, P1440, DOI 10.1016/j.jbankfin.2007.12.001
+   Kaufman G. G., 2003, INDEP REV, V7, P371
+   Philippon T, 2012, AM ECON REV, V102, P1, DOI 10.1257/aer.102.1.1
+   ROSETT RN, 1959, ECONOMETRICA, V27, P263, DOI 10.2307/1909447
+   Schuermann T., 2006, FEDERAL RESERVE BANK, V252
+   Schwarz K., 2014, MIND GAP DISENTANGLI, DOI 10.2139/ssrn.1486240
+   Severo T., 2012, 12194 IMF
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Stringa M., 2009, INT J CENTRAL BANKIN, V5
+   TOBIN J, 1958, ECONOMETRICA, V26, P24, DOI 10.2307/1907382
+   Tolo E, 2015, ECB WORKING PAPER SE, V1809
+   Vodova P., 2013, FINANCIAL INTERNET Q, V9, P64
+   Wu D., 2012, INFORM VALUE BASEL 3
+NR 64
+TC 1
+Z9 1
+U1 2
+U2 8
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1062-9769
+EI 1878-4259
+J9 Q REV ECON FINANC
+JI Q. Rev. Econ. Financ.
+PD NOV
+PY 2017
+VL 66
+BP 302
+EP 313
+DI 10.1016/j.qref.2017.04.006
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA FW0MG
+UT WOS:000424988600025
+DA 2019-12-28
+ER
+
+PT J
+AU Leon-Janampa, JH
+AF Leon-Janampa, Jose Henry
+TI Network analysis and systemic FX settlement risk
+SO STATISTICS & RISK MODELING
+LA English
+DT Article
+DE Networks; risk; statistics; quantitative finance
+AB A proposal for applying network analysis to a foreign exchange (FX) settlement system is considered. In particular, network centrality metrics are used to analyse payments of financial institutions which settle through CLS Bank (CLS). Network centrality metrics provide a way to study settlement members' connectivity, obtain a sense of their payments evolution with time, and measure their network topology variability. The analysis shows that although the continuous link settlement (CLS) network structure can be approximated with a power law degree distribution for many trade days, this is not always the case. A network community detection algorithm is applied to the FX settlement network to explore relationships between communities and to detect classification patterns in the FX trading net payments. A metric called SinkRank is used to build a ranking of the most systemic settlement risk important financial institutions trading on the FX system, and to understand how the metric depends on network's connectivity. Since network metrics do not fully explain the dynamics of the settlement process, the CLS' settlement system is simulated to measure the contagion of unsettled trades and its spread among network members. The effect of settlement failure and contagion on the settlement members is also explored.
+C1 [Leon-Janampa, Jose Henry] JHL, London, England.
+RP Leon-Janampa, JH (reprint author), JHL, London, England.
+EM jhleonjy@yahoo.es
+CR Blondel VD, 2008, J STAT MECH-THEORY E, DOI 10.1088/1742-5468/2008/10/P10008
+   Brandes U, 2001, J MATH SOCIOL, V25, P163, DOI 10.1080/0022250X.2001.9990249
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Kivela M, 2014, J COMPLEX NETW, V2, P203, DOI 10.1093/comnet/cnu016
+   Newman M, 2010, NETWORKS INTRO
+   Soramaki K, 2013, ECONOMICS-KIEL, V7, DOI 10.5018/economics-ejournal.ja.2013-28
+NR 6
+TC 0
+Z9 0
+U1 0
+U2 2
+PU WALTER DE GRUYTER GMBH
+PI BERLIN
+PA GENTHINER STRASSE 13, D-10785 BERLIN, GERMANY
+SN 2193-1402
+EI 2196-7040
+J9 STATIST RISK MODEL
+JI Statist. Risk Model.
+PD SEP
+PY 2017
+VL 34
+IS 3-4
+SI SI
+BP 91
+EP 112
+DI 10.1515/strm-2015-0006
+PG 22
+WC Statistics & Probability
+SC Mathematics
+GA FM0GD
+UT WOS:000414639500002
+DA 2019-12-27
+ER

@@ -1,0 +1,459 @@
+
+PT J
+AU Zhao, SJ
+   Lv, N
+AF Zhao Sujuan
+   Lv Na
+TI Food Protein Nutrition, Food Enterprise Financing and Financial Risk
+   Transmission Mechanism
+SO ARCHIVOS LATINOAMERICANOS DE NUTRICION
+LA English
+DT Article
+DE Amino acid; soybean protein; food nutrition; financing systems
+AB Compared with other cereal products, soybean protein has higher lysine content. Its application in baked food can not only improve the protein content effectively, but also improve the quality of protein according to the principle of amino acid complementation. When soybean protein is added into food processing, the content of calcium and potassium can be greatly increased, while the content of fat can be reduced. In this paper, the authors analyze the food protein nutrition, food enterprise financing and financial risk transmission mechanism. The financing difficulty of food enterprises is a systemic problem, which needs to be problem-oriented, aiming at the pain points of financing and the difficulties of financial services. Through the supply-side reform of tools, organizations and systems, the food enterprises'financial security ability should be strengthened as a whole.At the same time, we should pay attention to the impact of systemic financial risks to food industry.When the proportion of assets and liabilities in the inter banks accounts for a relatively high proportion, the probability of contagion of financial risks will increase.
+C1 [Zhao Sujuan; Lv Na] Langfang Polytech Inst, Langfang, Heibei, Peoples R China.
+RP Zhao, SJ (reprint author), Langfang Polytech Inst, Langfang, Heibei, Peoples R China.
+CR Aleman-Mateo H, 2012, CLIN INTERV AGING, V7, P225, DOI 10.2147/CIA.S32356
+   Amano K, 2013, AM J HOSP PALLIAT ME, V30, P730, DOI 10.1177/1049909112469273
+   Anis M, 2017, GLOBAL J HUMAN SOCIA
+   Banks J, 2017, NEW MEDIA SOC, V19, P419, DOI 10.1177/1461444815606616
+   Bozzetti F, 2009, CLIN NUTR, V28, P445, DOI 10.1016/j.clnu.2009.04.011
+   Chen L, 2015, APPL MECH MAT, V734, P6
+   Grimm H, 2002, BRIT J NUTR, V87, pS59, DOI 10.1079/BJN2001457
+   Laborda-Gonzalez L., 2009, NUTRHOSPSUPLEMENTOS, V2, P18
+   Park H, 2014, EXPERT SYST APPL, V41, P5227, DOI 10.1016/j.eswa.2014.01.032
+   Patel M.J., 2015, INT J GERIATRIC PSYC
+   Petersen K, 2015, INFORM SOFTWARE TECH, V64, P1, DOI 10.1016/j.infsof.2015.03.007
+   Spanier BWM, 2008, BEST PRACT RES CL GA, V22, P45, DOI 10.1016/j.bpg.2007.10.007
+   Tanwar S, 2015, J NETW COMPUT APPL, V53, P39, DOI 10.1016/j.jnca.2015.03.004
+   Tasan CC, 2015, ANNU REV MATER RES, V45, P391, DOI 10.1146/annurev-matsci-070214-021103
+NR 14
+TC 0
+Z9 0
+U1 3
+U2 3
+PU ARCHIVOS LATINOAMERICANOS NUTRICION
+PI CARACAS
+PA APARTADO 62778 CHACAO, AVENIDA FRANCISCO MIRANDA, CARACAS 1060,
+   VENEZUELA
+SN 0004-0622
+J9 ARCH LATINOAM NUTR
+JI Arch. Latinoam. Nutr.
+PY 2019
+VL 69
+IS 2
+BP 61
+EP 67
+PG 7
+WC Nutrition & Dietetics
+SC Nutrition & Dietetics
+GA IF7MS
+UT WOS:000473268900008
+DA 2019-12-27
+ER
+
+PT J
+AU Verma, R
+   Ahmad, W
+   Uddin, GS
+   Bekiros, S
+AF Verma, Ramprasad
+   Ahmad, Wasim
+   Uddin, Gazi Salah
+   Bekiros, Stelios
+TI Analysing the systemic risk of Indian banks
+SO ECONOMICS LETTERS
+LA English
+DT Article
+DE Systemic risk; Financial policy; Quantile regression
+AB This paper adopts the Tail-Event driven NETwork (TENET) risk model to assess the systemic risk of Indian banks. Building upon the Value at Risk (VaR), Conditional Value at Risk (CoVaR) and a Single Index Model (SIM) in a generalized quantile regression framework, the results suggest that the Indian banks exhibit high interconnectedness during the crisis period. The results also identify the systemically important banks and explain the banking networks. (C) 2019 Elsevier B.V. All rights reserved.
+C1 [Verma, Ramprasad; Ahmad, Wasim] Indian Inst Technol Kanpur, Dept Econ Sci, Kanpur 208016, UP, India.
+   [Uddin, Gazi Salah] Linkoping Univ, Dept Management & Engn, S-58183 Linkoping, Sweden.
+   [Bekiros, Stelios] European Univ Inst, Dept Econ, Villa La Fonte,Via Fontanelle 18, I-50014 Florence, Italy.
+RP Ahmad, W (reprint author), Indian Inst Technol Kanpur, Dept Econ Sci, Kanpur 208016, UP, India.
+EM rpverma@iitk.ac.in; wasimad@iitk.ac.in; gazi.salah.uddin@liu.se;
+   stelios.bekiros@eui.eu
+FU Office of Dean: Research and Development, Indian Institute of Technology
+   Kanpur [IITK /HSS /2015086]
+FX We are thankful to the editor of the journal and the reviewers for their
+   valuable feedback. The authors would also like to thanks the
+   participants of DSE-Winter School, Network Science in Economics and
+   Finance 2018, IIM Ahmedabad and IFC-2018, IIM Calcutta. The generous
+   financial support from the Office of Dean: Research and Development,
+   Indian Institute of Technology Kanpur through grant #IITK /HSS /2015086
+   is gratefully acknowledged.
+CR Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Demirer M, 2018, J APPL ECONOMET, V33, P1, DOI 10.1002/jae.2585
+   Economic Survey, 2016, EC SURV 2016 2017
+   FSR, 2015, REP TREND PROGR BANK
+   Hardie WK, 2016, J ECONOMETRICS, V192, P499, DOI 10.1016/j.jeconom.2016.02.013
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P112, DOI 10.3905/jpm.2011.37.4.112
+   Patro DK, 2013, J FINANC STABIL, V9, P105, DOI 10.1016/j.jfs.2012.03.002
+   Wang GJ, 2018, J INT FINANC MARK I, V57, P205, DOI 10.1016/j.inthn.2018.07.008
+   Wang GJ, 2018, EMERG MARK REV, V35, P1, DOI 10.1016/j.ememar.2017.12.001
+   Wang GJ, 2017, QUANT FINANC, V17, P1417, DOI 10.1080/14697688.2016.1272762
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 12
+TC 0
+Z9 0
+U1 5
+U2 10
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0165-1765
+EI 1873-7374
+J9 ECON LETT
+JI Econ. Lett.
+PD MAR
+PY 2019
+VL 176
+BP 103
+EP 108
+DI 10.1016/j.econlet.2019.01.003
+PG 6
+WC Economics
+SC Business & Economics
+GA HS8AC
+UT WOS:000464089400023
+DA 2019-12-28
+ER
+
+PT J
+AU Gibilaro, L
+   Mattarocci, G
+AF Gibilaro, Lucia
+   Mattarocci, Gianluca
+TI The impact of corporate distress along the supply chain: evidences from
+   United States
+SO SUPPLY CHAIN MANAGEMENT-AN INTERNATIONAL JOURNAL
+LA English
+DT Article
+DE Risk sharing; Supply chain disruptions; Supplier-manufacturer
+   relationships
+ID TRADE CREDIT; FINANCIAL DISTRESS; CAPITAL STRUCTURE; RISK-MANAGEMENT;
+   PERFORMANCE; DETERMINANTS; FLEXIBILITY; INFORMATION; CONTAGION; EQUITY
+AB Purpose The aim of the study is to provide evidence on the distress in the supply chain and its impact on the trade credit policy, firms' performance and risk and their growth opportunities. Trade credit creates a strict relation between suppliers and customers that cannot be easily substituted over time. The linkages established between firms in a supply chain are a key value added for all members that could represent a competitive advantage over independent market players. In the event of a supply chain disruption, all members could suffer from a decrease in profitability and an increase in risk. Nonetheless, no empirical evidence exists on the expected economic and financial effects on pertinent suppliers and customers. Design/methodology/approach This paper examines the US market and evaluates the impact of a supply chain member's default on the other members, looking at both the customers' and suppliers' default. The sample considers all firms in the USA disclosing entry into bankruptcy proceedings through EDGAR filings that were not classified as financial intermediaries between 2012 and 2016. The analysis considers the effect of distress on the supply chain (suppliers or customers) on the trade credit policy, performance, risk and growth perspectives of connected firms. Findings The results show that a supply chain disruption not only modifies the trade credit policy but also affects firm risk and profitability and the financing sources available to support firm growth. Empirical evidence shows that the bankruptcy of a member of the supply chain affects the trade credit policy of all the other members. The costs related to default are economically and financially relevant to all supply chain members and affect the resiliency of the supply chain beyond the short term. Originality/value This paper uses an original and innovative database to empirically test the impact of corporate distress on supply chain financing, performance, risk and growth opportunities.
+C1 [Gibilaro, Lucia] Univ Bergamo, Dept Management Econ & Quantitat Methods, Bergamo, Italy.
+   [Mattarocci, Gianluca] Univ Roma Tor Vergata, Dept Management & Law, Rome, Italy.
+RP Mattarocci, G (reprint author), Univ Roma Tor Vergata, Dept Management & Law, Rome, Italy.
+EM gianluca.mattarocci@uniroma2.it
+OI MATTAROCCI, GIANLUCA/0000-0001-5639-8618
+CR Acemoglu D., 2017, 24116 NAT BUR EC RES
+   Adhitya A, 2009, AICHE J, V55, P1447, DOI 10.1002/aic.11764
+   Aktas N, 2012, J BANK FINANC, V36, P1402, DOI 10.1016/j.jbankfin.2011.12.001
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   Avanzo R, 2003, SUPPLY CHAIN MANAG, V7, P40
+   Basel Committee on Banking Supervision, 2014, 50 COMM GLOB FIN SYS
+   Battiston S, 2007, J ECON DYN CONTROL, V31, P2061, DOI 10.1016/j.jedc.2007.01.004
+   Berger AN, 1998, J BANK FINANC, V22, P613, DOI 10.1016/S0378-4266(98)00038-7
+   Biais B, 1997, REV FINANC STUD, V10, P903, DOI 10.1093/rfs/10.4.903
+   Boden R, 2014, QUAL RES ACCOUNT MAN, V11, DOI 10.1108/QRAM-08-2012-0032
+   Boissay F., 2007, REV FINANC, V17, P1853
+   Busi M, 2006, INT J PRODUCT PERFOR, V55, P7, DOI 10.1108/17410400610635471
+   Caniato F, 2016, SUPPLY CHAIN MANAG, V21, P534, DOI 10.1108/SCM-11-2015-0436
+   Christopher M., 2004, INT J LOGIST MANAG, V15, P1, DOI [DOI 10.1108/09574090410700275, 10.1108/09574090410700275]
+   Colicchia C, 2012, SUPPLY CHAIN MANAG, V17, P403, DOI 10.1108/13598541211246558
+   Coulibaly B, 2013, INT REV ECON FINANC, V26, P25, DOI 10.1016/j.iref.2012.08.006
+   Crook TR, 2007, J OPER MANAG, V25, P546, DOI 10.1016/j.jom.2006.05.008
+   Cunat V, 2007, REV FINANC STUD, V20, P491, DOI 10.1093/rfs/hhl015
+   Deloof M, 2003, J BUSINESS FINANCE A, V30, P573, DOI DOI 10.1111/1468-5957.00008
+   Effinger AE, 2011, J BUS LOGIST, V32, P214
+   EMERY GW, 1987, J FINANC QUANT ANAL, V22, P209, DOI 10.2307/2330713
+   Emiliani M., 2000, MANAG DECIS, V38, P60, DOI DOI 10.1108/00251740010317423
+   Emiliani ML, 2003, SUPPLY CHAIN MANAG, V8, P107, DOI 10.1108/13598540310468706
+   EVANS DS, 1987, J IND ECON, V35, P567, DOI 10.2307/2098588
+   Factor Chain International, 2016, STATISTICS
+   Faisal MN, 2006, IND MANAGE DATA SYST, V106, P878, DOI 10.1108/02635570610671533
+   Farris II M.T., 2003, INT J LOGIST MANAG, V14, P83, DOI DOI 10.1108/09574090310806611
+   Ferrando A, 2013, J BANK FINANC, V37, P3035, DOI 10.1016/j.jbankfin.2013.02.013
+   Giannetti M, 2011, REV FINANC STUD, V24, P1261, DOI 10.1093/rfs/hhn096
+   Gibilaro L., 2011, INT BUSINESS EC RES, V10, P103, DOI [10.19030/iber.v10i3.4106, DOI 10.19030/IBER.V10I3.4106]
+   Gibilaro L., 2010, INT BUSINESS EC RES, V4, P103
+   Hendricks KB, 2005, PROD OPER MANAG, V14, P35
+   Hendricks KB, 2003, J OPER MANAG, V21, P501, DOI 10.1016/j.jom.2003.02.003
+   Hendricks KB, 2009, J OPER MANAG, V27, P233, DOI 10.1016/j.jom.2008.09.001
+   Hertzel MG, 2008, J FINANC ECON, V87, P374, DOI 10.1016/j.jfineco.2007.01.005
+   Higgins T., 2018, WALL STREET J
+   Hofmann E, 2010, J BUS LOGIST, V31, P305, DOI 10.1002/j.2158-1592.2010.tb00154.x
+   Huang H, 2011, J BANK FINANC, V35, P1859, DOI 10.1016/j.jbankfin.2010.12.009
+   Hutchison P. P, 2002, INT J PHYS DISTRIB, V32, P288
+   Jaffee D.M., 1990, HDB MONETARY EC
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   Juttner U, 2011, SUPPLY CHAIN MANAG, V16, P246, DOI 10.1108/13598541111139062
+   Kale JR, 2007, J FINANC ECON, V83, P321, DOI 10.1016/j.jfineco.2005.12.007
+   Khan S., 2018, CISC VIS NETW IND GL
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Kleindorfer PR, 2005, PROD OPER MANAG, V14, P53, DOI 10.1111/j.1937-5956.2005.tb00009.x
+   Lambert D. M., 1998, INT J LOGIST MANAG, V9, P1, DOI DOI 10.1108/09574099810805807
+   LANG LHP, 1992, J FINANC ECON, V32, P45, DOI 10.1016/0304-405X(92)90024-R
+   LEE YW, 1993, J FINANC QUANT ANAL, V28, P285, DOI 10.2307/2331291
+   Lewellen W.G., 1980, J FINANC RES, V3, P105, DOI DOI 10.1111/J.1475-6803.1980.TB00043.X
+   LONG MS, 1993, FINANC MANAGE, V22, P117, DOI 10.2307/3665582
+   Longhofer SD, 2000, J FINANC INTERMED, V9, P57, DOI 10.1006/jfin.1999.0272
+   Lopez JA, 2004, J FINANC INTERMED, V13, P265, DOI 10.1016/S1042-9573(03)00045-7
+   Luo JW, 2012, OPER RES LETT, V40, P378, DOI 10.1016/j.orl.2012.04.008
+   Martinez-Sola C, 2014, SMALL BUS ECON, V42, P561, DOI 10.1007/s11187-013-9491-y
+   McMillan J, 1999, Q J ECON, V114, P1285, DOI 10.1162/003355399556278
+   MELTZER AH, 1960, REV ECON STAT, V42, P429, DOI 10.2307/1925692
+   Mentzer J. T., 2000, SUPPLY CHAIN MANAG, V4, P52
+   MIAN SL, 1992, J FINANC, V47, P169, DOI 10.2307/2329094
+   Miemczyk J, 2012, SUPPLY CHAIN MANAG, V17, P478, DOI 10.1108/13598541211258564
+   Mizgier KJ, 2012, INT J PROD ECON, V135, P14, DOI 10.1016/j.ijpe.2010.09.022
+   Myers SC, 1998, Q J ECON, V113, P733, DOI 10.1162/003355398555739
+   NADIRI MI, 1969, ECONOMETRICA, V37, P408, DOI 10.2307/1912790
+   Ng CK, 1999, J FINANC, V54, P1109, DOI 10.1111/0022-1082.00138
+   Nilsen JH, 2002, J MONEY CREDIT BANK, V34, P226, DOI 10.1353/mcb.2002.0032
+   Omiccioli M., 2005, IMPRESE INTERMEDIARI
+   Paul S., 2008, BR ACCOUNT REV, V40, P272
+   Paul S., 2006, J ACCOUNTING BUSINES, V13, P85
+   Petersen MA, 1997, REV FINANC STUD, V10, P661, DOI 10.1093/rfs/10.3.661
+   Raddatz C, 2010, REV ECON STAT, V92, P985, DOI 10.1162/REST_a_00042
+   Ritchie B, 2007, J OPER RES SOC, V58, P1398, DOI 10.1057/palgrave.jors.2602412
+   Salonen A., 2010, STRATEGIC FINANCE, P41
+   Seifert D, 2013, EUR J OPER RES, V231, P245, DOI 10.1016/j.ejor.2013.03.016
+   Shi M, 2013, INT J OPER PROD MAN, V33, P1283, DOI 10.1108/IJOPM-03-2012-0112
+   Silvestro R, 2014, INT J OPER PROD MAN, V34, P298, DOI 10.1108/IJOPM-04-2012-0131
+   Simatupang TM, 2004, SUPPLY CHAIN MANAG, V9, P57, DOI 10.1108/13598540410517584
+   SMITH JK, 1987, J FINANC, V42, P863, DOI 10.1111/j.1540-6261.1987.tb03916.x
+   Stevens G. C., 1989, International Journal of Physical Distribution & Materials Management, V19, P3, DOI 10.1108/EUM0000000000329
+   Su J, 2011, NANKAI BUS REV NT, V2, P383, DOI 10.1108/20408741111178816
+   Summers B., 2003, MANAGERIAL DECISION, V24, P439
+   Tang C, 2008, INT J PROD ECON, V116, P12, DOI 10.1016/j.ijpe.2008.07.008
+   Tang CS, 2006, INT J PROD ECON, V103, P451, DOI 10.1016/j.ijpe.2005.12.006
+   TITMAN S, 1988, J FINANC, V43, P1, DOI 10.2307/2328319
+   de Oliveira MPV, 2017, SUPPLY CHAIN MANAG, V22, P442, DOI 10.1108/SCM-03-2017-0121
+   Van der Vorst J., 2002, INT J PHYS DISTRIB, V32, P409, DOI [DOI 10.1108/09600030210437951, http://dx.doi.org/10.1108/09600030210437951]
+   Van Horen N, 2007, 4284 WORLD BANK
+   Wagner SM, 2009, EUR J OPER RES, V199, P150, DOI 10.1016/j.ejor.2008.11.012
+   Wilner BS, 2000, J FINANC, V55, P153, DOI 10.1111/0022-1082.00203
+   Yang SA, 2015, MANAGE SCI, V61, P2320, DOI 10.1287/mnsc.2014.2079
+   Yang XL, 2011, J ECON BUS, V63, P517, DOI 10.1016/j.jeconbus.2011.05.001
+   Yi CY, 2011, SUPPLY CHAIN MANAG, V16, P271, DOI 10.1108/13598541111139080
+   Zaheer N, 2017, INT J LOGIST MANAG, V28, P417, DOI 10.1108/IJLM-09-2015-0158
+NR 92
+TC 1
+Z9 1
+U1 3
+U2 3
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1359-8546
+EI 1758-6852
+J9 SUPPLY CHAIN MANAG
+JI Supply Chain Manag.
+PD JUN 11
+PY 2019
+VL 24
+IS 4
+BP 498
+EP 508
+DI 10.1108/SCM-08-2018-0275
+PG 11
+WC Business; Management
+SC Business & Economics
+GA IO2QG
+UT WOS:000479226300004
+DA 2019-12-27
+ER
+
+PT J
+AU Greenwood-Nimmo, M
+   Huang, JG
+   Nguyen, H
+AF Greenwood-Nimmo, Matthew
+   Huang, Jingong
+   Viet Hoang Nguyen
+TI Financial sector bailouts, sovereign bailouts, and the transfer of
+   credit risk
+SO JOURNAL OF FINANCIAL MARKETS
+LA English
+DT Article
+DE Financial crisis; Debt crisis; Financial-sovereign linkages; Credit risk
+   transmission; Network modeling
+ID EURO AREA; SYSTEMIC RISK; CONTAGION; CDS; SPILLOVERS; INTERDEPENDENCIES;
+   CONNECTEDNESS; REGRESSION; SELECTION; DEFAULT
+AB We develop an empirical network model to study credit risk spillovers among a group of eighteen sovereigns and their financial sectors from 2006 to 2015. Initially a net source of credit risk, the financial sector becomes a net recipient after the 2008 financial sector bailouts in many countries. Fiscal fundamentals explain much of the heterogeneity in financial-sovereign spillovers over this period. The subsequent European sovereign bailouts disrupt the feedback between sovereign risk and local financial sector risk. Depending on the initial fiscal position of the target country, sovereign bailouts may also disrupt international credit risk spillovers originating from the target sovereign. (C) 2018 Elsevier B.V. All rights reserved.
+C1 [Greenwood-Nimmo, Matthew] Univ Melbourne, Dept Econ, Melbourne, Vic, Australia.
+   [Greenwood-Nimmo, Matthew] Australian Natl Univ, Ctr Appl Macroecon Anal, Canberra, ACT, Australia.
+   [Huang, Jingong] Univ Nottingham Ningbo China, Sch Econ, Ningbo, Zhejiang, Peoples R China.
+   [Viet Hoang Nguyen] Melbourne Inst Appl Econ & Social Res, Melbourne, Vic, Australia.
+RP Greenwood-Nimmo, M (reprint author), Univ Melbourne, Fac Business & Econ, Room 3-12,111 Barry St, Melbourne, Vic 3053, Australia.
+EM matthew.greenwood@unimelb.edu.au; jingong.huang@nottingham.edu.cn;
+   vietn@unimelb.edu.au
+FU Australian Research CouncilAustralian Research Council [DE150100708]
+FX We have benefited from the constructive comments of seminar participants
+   at the University of Utah (April 2017) and conference participants at
+   the 2017 Asian Meeting of the Econometric Society (Hong Kong, June
+   2017), the 6th Singapore Economic Review Conference (Singapore, August
+   2017) and the 70th European Summer Meeting of the Econometric Society
+   (Lisbon, August 2017). We are grateful for many illuminating discussions
+   with Heather Anderson, Renee Fry-McKibbin, Joe Hirschberg, Faek Menlo
+   Ali, Barry Rafferty, Yongcheol Shin, Chris Skeels, Tomasz Woiniak and
+   Eliza Wu. We thank Matthias Chong, Vijay Mogha and Stewart Somerville at
+   Markit for their assistance and flexibility in the delivery of the
+   credit default swap data. We also thank Raphael Brun-Aguerre at JP
+   Morgan for providing data on the realized variance of the U.S. 10-year
+   Treasury Note. Greenwood-Nimmo gratefully acknowledges financial support
+   from the Australian Research Council under grant number DE150100708 and
+   the hospitality of the University of York during a sequence of research
+   visits over the period 2015-2017.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Alter A, 2014, J BANK FINANC, V42, P134, DOI 10.1016/j.jbankfin.2014.01.030
+   Alter A, 2012, J BANK FINANC, V36, P3444, DOI 10.1016/j.jbankfin.2012.08.002
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Bai J, 2017, Q J FINANC, V7, DOI 10.1142/S2010139217500136
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bekaert G, 2014, J ECONOMETRICS, V183, P181, DOI 10.1016/j.jeconom.2014.05.008
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Blanco R, 2005, J FINANC, V60, P2255, DOI 10.1111/j.1540-6261.2005.00798.x
+   Bollerslev T, 2009, REV FINANC STUD, V22, P4463, DOI 10.1093/rfs/hhp008
+   Bostanci G, 2015, 1515 KOC U
+   Caporin M, 2018, J FINANC STABIL, V34, P150, DOI 10.1016/j.jfs.2017.12.004
+   Choi H, 2017, REV FINANC, V21, P987, DOI 10.1093/rof/rfw072
+   Chudik A, 2011, EUR ECON REV, V55, P325, DOI 10.1016/j.euroecorev.2010.12.003
+   Constancio V., 2012, BANQUE FRANCE FINANC, V16, P109
+   Corsi F, 2009, J FINANC ECONOMET, V7, P174, DOI 10.1093/jjfinec/nbp001
+   Dees S, 2007, J APPL ECONOMET, V22, P1, DOI 10.1002/jae.932
+   Demirer M, 2018, J APPL ECONOMET, V33, P1, DOI 10.1002/jae.2585
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Duffle D., 1999, FINANCIAL ANAL J, P73, DOI DOI 10.2469/FAJ.V55.N1.2243
+   Fender I, 2012, J BANK FINANC, V36, P2786, DOI 10.1016/j.jbankfin.2012.06.017
+   Fontana A, 2016, J BANK FINANC, V62, P126, DOI 10.1016/j.jbankfin.2015.10.010
+   Furman Y, 2014, VAR ESTIMATION ADAPT
+   Galesi A., 2013, GVAR HDB STRUCTURE A, P255
+   Gande A, 2005, J FINANC ECON, V75, P691, DOI 10.1016/j.jfineco.2003.11.003
+   Gray D. F., 2011, SVERIGES RISKSBANK E, V2, P1
+   Greenwood-Nimmo M., 2015, 715 U MELB MELB I AP
+   Greenwood-Nimmo M, 2016, J FINANC MARK, V31, P43, DOI 10.1016/j.finmar.2016.05.001
+   Gyntelberg J, 2018, J BANK FINANC, V96, P106, DOI 10.1016/j.jbankfin.2018.08.008
+   Heber G., 2009, OXFORD MAN I REALIZE
+   HOERL AE, 1970, TECHNOMETRICS, V12, P55
+   International Monetary Fund, 2013, GLOB FIN STAB REP
+   Kalbaska A, 2012, J ECON BEHAV ORGAN, V83, P657, DOI 10.1016/j.jebo.2012.05.010
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Pelizzon L, 2016, J FINANC ECON, V122, P86, DOI 10.1016/j.jfineco.2016.06.001
+   Pesaran MH, 2004, J BUS ECON STAT, V22, P129, DOI 10.1198/073500104000000019
+   Tibshirani R, 1996, J ROY STAT SOC B MET, V58, P267
+   Zou H, 2005, J R STAT SOC B, V67, P301, DOI 10.1111/j.1467-9868.2005.00503.x
+NR 44
+TC 1
+Z9 1
+U1 2
+U2 7
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1386-4181
+EI 1878-576X
+J9 J FINANC MARK
+JI J. Financ. Mark.
+PD JAN
+PY 2019
+VL 42
+BP 121
+EP 142
+DI 10.1016/j.finmar.2018.11.001
+PG 22
+WC Business, Finance
+SC Business & Economics
+GA HK9XF
+UT WOS:000458345500006
+DA 2019-12-27
+ER
+
+PT J
+AU Sensoy, A
+   Nguyen, DK
+   Rostom, A
+   Hacihasanoglu, E
+AF Sensoy, Ahmet
+   Duc Khuong Nguyen
+   Rostom, Ahmed
+   Hacihasanoglu, Erk
+TI Dynamic integration and network structure of the EMU sovereign bond
+   markets
+SO ANNALS OF OPERATIONS RESEARCH
+LA English
+DT Article
+DE Sovereign debt; European Economic and Monetary Union; Network analysis;
+   Monetary policy; Tapering
+ID SYSTEMIC RISK; DEBT MARKETS; CONTAGION
+AB In this paper, we propose a novel concept of correlation-based stable networks to empirically investigate the dynamic integration and network structure of the European Monetary Union (EMU) sovereign bond markets. The obtained results uncover a high degree of market integration between sample markets over the period preceding the recent financial crises, while segmentation is found afterwards. The stable network analysis shows, for its part, the existence of two different network structures before and after the onset of the European debt crisis, where the in-crisis network structure is characterized by two groups of countries with respect to their fiscal performance. In particular, Belgium is the unique vertex connecting the two groups, making it the channel for shock transmission in the event of worsening debt crisis in the EMU.
+C1 [Sensoy, Ahmet] Bilkent Univ, Fac Business Adm, TR-06800 Ankara, Turkey.
+   [Duc Khuong Nguyen] IPAG Business Sch, IPAG Lab, Paris, France.
+   [Rostom, Ahmed] World Bank, Finance & Markets Global Practice Grp, 1818 H St NW, Washington, DC 20433 USA.
+   [Hacihasanoglu, Erk] Abdullah Gul Univ, Dept Business Adm, Kayseri, Turkey.
+RP Sensoy, A (reprint author), Bilkent Univ, Fac Business Adm, TR-06800 Ankara, Turkey.
+EM ahmet.sensoy@bilkent.edu.tr
+OI Sensoy, Ahmet/0000-0001-7967-5171
+CR Abad P, 2010, J BANK FINANC, V34, P2851, DOI 10.1016/j.jbankfin.2009.10.009
+   Aielli GP, 2013, J BUS ECON STAT, V31, P282, DOI 10.1080/07350015.2013.771027
+   Barrios S., 2009, EUROPEAN COMMISSION, V388
+   Barro D, 2010, EUR J OPER RES, V205, P459, DOI 10.1016/j.ejor.2010.01.017
+   Beber A, 2009, REV FINANC STUD, V22, P925, DOI 10.1093/rfs/hhm088
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P975, DOI 10.1016/j.jimonfin.2011.12.006
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Capponi A, 2015, J ECON DYN CONTROL, V58, P152, DOI 10.1016/j.jedc.2015.06.008
+   Christiansen C, 2014, J BANK FINANC, V42, P191, DOI 10.1016/j.jbankfin.2014.01.022
+   Codogno L, 2003, ECON POLICY, V37, P527
+   Conrad C., 2008, DISCUSSION PAPER SER
+   Dewachter H, 2015, J BANK FINANC, V50, P308, DOI 10.1016/j.jbankfin.2014.03.011
+   Ehrmann M, 2011, REV ECON STAT, V93, P350, DOI 10.1162/REST_a_00055
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Fatas A, 2010, AC CONS M BOARD GOV
+   Gruner HP, 2010, EUR J POLIT ECON, V26, P1, DOI 10.1016/j.ejpoleco.2009.08.006
+   Iara A, 2014, EUR J POLIT ECON, V34, P222, DOI 10.1016/j.ejpoleco.2014.02.002
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Lavielle M, 2005, SIGNAL PROCESS, V85, P1501, DOI 10.1016/j.sigpro.2005.01.012
+   Markellos RN, 2016, EUR J OPER RES, V252, P220, DOI 10.1016/j.ejor.2015.12.039
+   Masson P, 1999, J INT MONEY FINANC, V18, P587, DOI 10.1016/S0261-5606(99)00016-9
+   Minoiu C, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2013.03.001
+   Nagurney A, 2006, EUR J OPER RES, V172, P40, DOI 10.1016/j.ejor.2004.09.035
+   Paltalidis N, 2015, J BANK FINANC, V61, pS36, DOI 10.1016/j.jbankfin.2015.03.021
+   Pozzi L, 2012, EUR ECON REV, V56, P36, DOI 10.1016/j.euroecorev.2011.05.006
+   Pragidis IC, 2015, J FINANC STABIL, V18, P127, DOI 10.1016/j.jfs.2015.04.001
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Schuknecht L, 2009, EUR J POLIT ECON, V25, P371, DOI 10.1016/j.ejpoleco.2009.02.004
+   Sibbertsen P, 2014, J BANK FINANC, V41, P109, DOI 10.1016/j.jbankfin.2014.01.003
+   Tola V, 2008, J ECON DYN CONTROL, V32, P235, DOI 10.1016/j.jedc.2007.01.034
+   Tse YK, 1998, J APPL ECONOMET, V13, P49
+   Tumminello M, 2010, J ECON BEHAV ORGAN, V75, P40, DOI 10.1016/j.jebo.2010.01.004
+   von Hagen J, 2011, EUR J POLIT ECON, V27, P36, DOI 10.1016/j.ejpoleco.2010.07.002
+NR 34
+TC 1
+Z9 1
+U1 3
+U2 3
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0254-5330
+EI 1572-9338
+J9 ANN OPER RES
+JI Ann. Oper. Res.
+PD OCT
+PY 2019
+VL 281
+IS 1-2
+SI SI
+BP 297
+EP 314
+DI 10.1007/s10479-018-2831-1
+PG 18
+WC Operations Research & Management Science
+SC Operations Research & Management Science
+GA JE9ZV
+UT WOS:000491048300014
+OA Green Published
+DA 2019-12-27
+ER

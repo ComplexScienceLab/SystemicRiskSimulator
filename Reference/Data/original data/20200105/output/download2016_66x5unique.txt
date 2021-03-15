@@ -1,0 +1,429 @@
+
+PT J
+AU Guharay, SK
+   Thakur, GS
+   Goodman, FJ
+   Rosen, SL
+   Houser, D
+AF Guharay, Samar K.
+   Thakur, Gaurav S.
+   Goodman, Fred J.
+   Rosen, Scott L.
+   Houser, Daniel
+TI Integrated data-driven analytics to identify instability signatures in
+   nonstationary financial time series
+SO APPLIED ECONOMICS
+LA English
+DT Article
+DE Nonstationary time series; integrated data analytics; PCA and fPCA;
+   Synchrosqueezing; instability signature detection; G10; C65; C32
+ID SYSTEMIC RISK; TRADING VOLUME; DYNAMICS; BEHAVIOR; MODEL
+AB With the objective of identifying instability signatures of the financial system, this article integrates two classes of data-driven techniques. The first class of techniques is utilized to investigate macroeconomic behaviour by aggregating an ensemble of heterogeneous nonstationary time-series data and the second class of techniques examines the local dynamics of the microstructures in each time series. Moving window principal component analysis (PCA) and functional PCA (fPCA) are shown to extract collective signatures of the financial system for understanding macroeconomic behaviour, and the Synchrosqueezing and Markov switching techniques are used to study local dynamics within each individual time series. The integrated data analytics successfully identifies the diverse events from 1986 to 2012. All events, both major and minor, have been identified by fPCA. The major economic events, especially the 2008 Great Recession, along with several minor events, showed a strong leading indicator in the density index derived from Synchrosqueezing. The capability of this integrated analytics suite is demonstrated in this article, and it motivates further studies encompassing data sets from broader sectors. As a complement to existing model-driven approach, this would lead to achieving a robust and reliable method that can help in taking measures to avoid catastrophic collapse in the constantly evolving financial system.
+C1 [Guharay, Samar K.; Thakur, Gaurav S.; Goodman, Fred J.; Rosen, Scott L.] Mitre Corp, Mclean, VA USA.
+   [Houser, Daniel] George Mason Univ, Dept Econ, Fairfax, VA 22030 USA.
+RP Guharay, SK (reprint author), Mitre Corp, Mclean, VA USA.
+EM sguharay@mitre.org
+FU MITRE Innovation Program
+FX This work was supported by the MITRE Innovation Program.
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Anderson PW, 1988, EC EVOLVING COMPLEX
+   BANERJEE AV, 1992, Q J ECON, V107, P797, DOI 10.2307/2118364
+   Beale N, 2011, P NATL ACAD SCI USA, V108, P12647, DOI 10.1073/pnas.1105882108
+   Beelders O., 2001, P ANN M AM STAT ASS
+   Bikhchandani S, 2001, IMF STAFF PAPERS, V47, P279
+   BIKHCHANDANI S, 1992, J POLIT ECON, V100, P992, DOI 10.1086/261849
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, WORKING PAPER
+   BLUME L, 1994, J FINANC, V49, P153, DOI 10.2307/2329139
+   Brunnermeier M. K., 2014, WORKING PAPER
+   Camacho M, 2013, ECON LETT, V121, P369, DOI 10.1016/j.econlet.2013.09.010
+   CAMPBELL JY, 1993, Q J ECON, V108, P905, DOI 10.2307/2118454
+   Caspi I., 2014, STELLENBOSCH EC WORK, V20/14
+   Chib S, 2002, J ECONOMETRICS, V108, P281, DOI 10.1016/S0304-4076(01)00137-3
+   Daubechies I, 2011, APPL COMPUT HARMON A, V30, P243, DOI 10.1016/j.acha.2010.08.002
+   De Bandt O, 2000, 35 EUR CENTR BANK
+   Filardo A., 2010, BIS PAPERS, P21
+   Goncalves CP, 2011, ALGORITHMIC FINANC, V1, P141, DOI 10.3233/AF-2011-011
+   Guharay SK, 2013, ECON LETT, V121, P454, DOI 10.1016/j.econlet.2013.09.026
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hansen L. P., 2012, WORKING PAPER
+   Hansen LP, 2009, ECONOMETRICA, V77, P177, DOI 10.3982/ECTA6761
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   Hubrich K, 2012, FINANCE EC DISCUSSIO, V2012-82
+   Jizba P, 2012, PHYSICA A, V391, P2971, DOI 10.1016/j.physa.2011.12.064
+   Kaizoji T, 2002, PHYSICA A, V316, P441, DOI 10.1016/S0378-4371(02)01216-5
+   Khandani AE, 2013, J FINANC ECON, V108, P29, DOI 10.1016/j.jfineco.2012.10.007
+   Kritzman M., 2010, 478510 MIT SLOAN SCH
+   Kritzman M, 2010, FINANC ANAL J, V66, P30, DOI 10.2469/faj.v66.n5.3
+   Liu M., 2012, SYSTEMIC RISK COMPON
+   Lo A. W., 2001, WORKING PAPER
+   LO AW, 1990, REV FINANC STUD, V3, P431, DOI 10.1093/rfs/3.3.431
+   Nakaso H., 2001, BIS PAPERS, V6, P1
+   Pavlidis E., 2015, 165 FED RES BANK DAL
+   Phillips P.C., 2012, 1843 COWL FDN
+   Phillips PCB, 2011, INT ECON REV, V52, P201, DOI 10.1111/j.1468-2354.2010.00625.x
+   PRIMBS J. A, 2009, APPL MATH FINANCE, V16, P151, DOI DOI 10.1080/13504860802583444
+   Ramsay JO, 2009, USE R, P1, DOI 10.1007/978-0-387-98185-7_1
+   Romano JP, 2008, ECONOMET THEOR, V24, P404, DOI 10.1017/S0266466608080171
+   Schwaab B., 2011, WORKING PAPER
+   Shiller R.J.[M.]., 2015, IRRATIONAL EXUBERANC
+   Smaga P., 2014, 5 LOND SCH EC SYST R
+   Tarashev N, 2016, REV FINANC, V20, P1189, DOI 10.1093/rof/rfv028
+   Thakur G, 2013, SIGNAL PROCESS, V93, P1079, DOI 10.1016/j.sigpro.2012.11.029
+   WELCH I, 1992, J FINANC, V47, P695, DOI 10.2307/2329120
+   White H, 2000, ECONOMETRICA, V68, P1097, DOI 10.1111/1468-0262.00152
+NR 48
+TC 1
+Z9 1
+U1 0
+U2 7
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0003-6846
+EI 1466-4283
+J9 APPL ECON
+JI Appl. Econ.
+PY 2016
+VL 48
+IS 18
+BP 1678
+EP 1694
+DI 10.1080/00036846.2015.1105925
+PG 17
+WC Economics
+SC Business & Economics
+GA DD0UZ
+UT WOS:000369636900004
+DA 2019-12-28
+ER
+
+PT J
+AU Guan, Y
+   Pollak, M
+AF Guan, Yuanying
+   Pollak, Micah
+TI CONTAGION IN HETEROGENEOUS FINANCIAL NETWORKS
+SO ADVANCES IN COMPLEX SYSTEMS
+LA English
+DT Article
+DE Contagion; network models; systemic risk; financial crisis
+ID INTERBANK MARKET; SYSTEMIC RISK; MODEL; TOPOLOGY; STABILITY
+AB In this paper, we use the financial network contagion model of Gai P. and Kapadia S. [Contagion in financial networks, Proc. R. Soc. A 466 (2010) 2401-2423] to investigate the interaction of several types of heterogeneity found in real world banking systems. The first source of heterogeneity originates in the distribution of assets across banks in the financial system. The second source is in how individual banks then distribute these assets among their neighbors. We characterize how these two sources of heterogeneity interact to affect the probability and extent of financial contagions in three network structures. We find that greater heterogeneity has a stabilizing effect for networks that are sparsely connected and a destabilizing effect for networks that are highly interconnected. Finally, we consider multiple sequential shocks and find that when banks redistribute assets following an initial mild contagion it increases the stability, on average, of the system to subsequent shocks originating at weakened banks.
+C1 [Guan, Yuanying] Indiana Univ Northwest, Dept Math & Actuarial Sci, 3400 Broadway, Gary, IN 46408 USA.
+   [Pollak, Micah] Indiana Univ Northwest, Sch Business & Econ, 3400 Broadway, Gary, IN 46408 USA.
+RP Guan, Y (reprint author), Indiana Univ Northwest, Dept Math & Actuarial Sci, 3400 Broadway, Gary, IN 46408 USA.
+EM guany@iun.edu
+RI Pollak, Micah/R-3771-2019
+OI Pollak, Micah/0000-0002-4232-3081
+FU Lilly Endowment, Inc.; Indiana METACyt Initiative
+FX This research was supported in part by Lilly Endowment, Inc., through
+   its support for the Indiana University Pervasive Technology Institute,
+   and in part by the Indiana METACyt Initiative. The Indiana METACyt
+   Initiative at IU is also supported in part by Lilly Endowment, Inc. We
+   are also extremely grateful for the helpful comments and suggestions of
+   two anonymous referees.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Afonso G., 2013, FEDERAL RESERVE BANK
+   Albert R, 2002, REV MOD PHYS, V74, P47, DOI 10.1103/RevModPhys.74.47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Anand K, 2013, J ECON BEHAV ORGAN, V85, P219, DOI 10.1016/j.jebo.2012.04.006
+   Babus A., 2015, RAND J ECON, P99
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Bollobas B, 2003, SIAM PROC S, P132
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Caccioli F, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500580
+   Catanzaro M, 2005, PHYS REV E, V71, DOI 10.1103/PhysRevE.71.027103
+   Chinazzi M., 2013, LEM WORKING PAPER SE
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Erds P., 1960, PUBL MATH I HUNG, V5, P17, DOI DOI 10.2307/1999405
+   Fagiolo G, 2007, PHYS REV E, V76, DOI 10.1103/PhysRevE.76.026107
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   George C, 2015, 201501 FDIC CTR FIN
+   Hubsch A., 2012, WORKING PAPER SERIES
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Klimek P, 2015, J ECON DYN CONTROL, V50, P144, DOI 10.1016/j.jedc.2014.08.020
+   Li SW, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500865
+   Moussa A., 2011, THESIS
+   Newman MEJ, 1999, PHYS LETT A, V263, P341, DOI 10.1016/S0375-9601(99)00757-4
+   Newman MEJ, 2000, PHYS REV LETT, V84, P3201, DOI 10.1103/PhysRevLett.84.3201
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Onn S, 2011, ANN OPER RES, V189, P331, DOI 10.1007/s10479-009-0567-7
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Watts DJ, 1998, NATURE, V393, P440, DOI 10.1038/30918
+   Xu JH, 2010, APPL MATH COMPUT, V216, P2118, DOI 10.1016/j.amc.2010.03.045
+NR 34
+TC 1
+Z9 1
+U1 0
+U2 6
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA 5 TOH TUCK LINK, SINGAPORE 596224, SINGAPORE
+SN 0219-5259
+EI 1793-6802
+J9 ADV COMPLEX SYST
+JI Adv. Complex Syst.
+PD FEB-MAR
+PY 2016
+VL 19
+IS 1-2
+AR 1650001
+DI 10.1142/S0219525916500016
+PG 25
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA DR3LY
+UT WOS:000379805900002
+DA 2019-12-27
+ER
+
+PT J
+AU Choi, WW
+   Kim, J
+   Kim, M
+AF Choi, Wonho Wilson
+   Kim, Jinyong
+   Kim, Mingook
+TI Derivatives holdings and market values of US bank holding companies
+SO APPLIED ECONOMICS
+LA English
+DT Article
+DE Derivative holdings; holding purposes; underlying asset types; market
+   values; bank holding companies; G20; G21
+ID INTEREST-RATE RISK; CREDIT DERIVATIVES; DIVERSIFICATION DISCOUNT;
+   SYSTEMIC RISK; EXPOSURE; USAGE
+AB We examine the impact of derivatives held by US bank holding companies on their market valuations over the period 2000 to 2010. By using bank-level data with detailed information on the notional amounts of derivative positions according to holding purposes and underlying asset types, our regression analyses provide three main findings. First, derivative instruments held for hedging rather than trading purposes contribute to enhancing market values. Second, the positive effects exhibit nonmonotonic patterns indicating that excessive amounts of derivatives holdings deteriorate market values. Third, interest rate derivatives are the main source of high valuations.
+C1 [Choi, Wonho Wilson; Kim, Jinyong; Kim, Mingook] KAIST Coll Business, Seoul, South Korea.
+RP Kim, J (reprint author), KAIST Coll Business, Seoul, South Korea.
+EM jinyongkim@business.kaist.ac.kr
+RI Choi, Wonho/C-1709-2011
+CR Basel Committee on Banking Supervision, 1998, FRAM SUP INF DER TRA
+   Brewer E, 2000, J BANK FINANC, V24, P353, DOI 10.1016/S0378-4266(99)00041-2
+   Brewer E, 2014, J FINANC STABIL, V15, P230, DOI 10.1016/j.jfs.2014.10.003
+   Campa JM, 2002, J FINANC, V57, P1731, DOI 10.1111/1540-6261.00476
+   Carter DA, 1998, J FINANC SERV RES, V14, P17, DOI 10.1023/A:1008057418368
+   Chaudhry MK, 1999, RES FINANCE, V17, P275
+   Chiou JS, 2012, J BUS ECON MANAG, V13, P587, DOI 10.3846/16111699.2011.620158
+   Choi JJ, 1997, J FINANC SERV RES, V12, P267, DOI 10.1023/A:1007982921374
+   Cyree KB, 2012, J FINANC SERV RES, V41, P121, DOI 10.1007/s10693-011-0106-y
+   DeYoung R, 2013, J FINANC INTERMED, V22, P397, DOI 10.1016/j.jfi.2013.01.001
+   Gunther J., 1995, WHOS CAPITALIZING DE, P1
+   Hirtle BJ, 1997, J FINANC SERV RES, V12, P243, DOI 10.1023/A:1007930904536
+   Instefjord N, 2005, J BANK FINANC, V29, P333, DOI 10.1016/j.jbankfin.2004.05.008
+   Kim S., 1992, J FIANNCIAL SERVICES, V7, P57, DOI 10.1007/BF01048340
+   Laeven L, 2007, J FINANC ECON, V85, P331, DOI 10.1016/j.jfineco.2005.06.001
+   Li SF, 2014, INT REV FINANC ANAL, V35, P46, DOI 10.1016/j.irfa.2014.07.007
+   Mayordomo S, 2014, J BANK FINANC, V45, P84, DOI 10.1016/j.jbankfin.2014.03.037
+   Minton BA, 2009, J FINANC SERV RES, V35, P1, DOI 10.1007/s10693-008-0046-3
+   Morrison AD, 2005, J BUS, V78, P621, DOI 10.1086/427641
+   Nijskens R, 2011, J BANK FINANC, V35, P1391, DOI 10.1016/j.jbankfin.2010.10.001
+   Purnanandam A, 2007, J MONETARY ECON, V54, P1769, DOI 10.1016/j.jmoneco.2006.07.009
+   Shanker L, 1996, J FUTURES MARKETS, V16, P459, DOI 10.1002/(SICI)1096-9934(199606)16:4<459::AID-FUT6>3.0.CO;2-H
+   Shyu YW, 2002, RES FINANCE, V19, P143
+   Sinkey JF, 1999, J BANK FINANC, V23, P1725, DOI 10.1016/S0378-4266(99)00016-3
+   SINKEY JF, 2000, Q REV EC FINANCE, V40, P431, DOI DOI 10.1016/S1062-9769(00)00050-8
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   Stulz RM, 2015, J APPL CORP FINANC, V27, P8, DOI 10.1111/jacf.12099
+   Venkatachalam M, 1996, J ACCOUNT ECON, V22, P327, DOI 10.1016/S0165-4101(96)00433-8
+   Wang MS, 2014, EMERG MARK FINANC TR, V50, P23, DOI 10.2753/REE1540-496X5002S202
+NR 29
+TC 0
+Z9 0
+U1 1
+U2 4
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0003-6846
+EI 1466-4283
+J9 APPL ECON
+JI Appl. Econ.
+PY 2016
+VL 48
+IS 49
+BP 4747
+EP 4757
+DI 10.1080/00036846.2016.1164822
+PG 11
+WC Economics
+SC Business & Economics
+GA DV5KW
+UT WOS:000382967100005
+DA 2019-12-28
+ER
+
+PT J
+AU Baur, DG
+   McDermott, TKJ
+AF Baur, Dirk G.
+   McDermott, Thomas K. J.
+TI Why is gold a safe haven?
+SO JOURNAL OF BEHAVIORAL AND EXPERIMENTAL FINANCE
+LA English
+DT Article
+DE Safe haven; Safe assets; Gold; Flight to gold; Decision-making under
+   stress; Local thinking
+ID QUALITY; UNCERTAINTY; CONTAGION; AMBIGUITY; LIQUIDITY; STRESS; MARKET;
+   FLIGHT; RISK
+AB Gold is a prominent safe haven asset but risky compared to other safe haven assets such as US government bonds. We identify unique features of gold that explain why investors under stress buy the riskier alternative gold. We argue that the decision to buy gold is rooted in behavioral biases associated with gold's history as a currency, a store of value and a safe haven. The empirical analysis shows that gold was a particularly strong safe haven in the aftermath of September 11, 2001 and the Lehman bankruptcy in September 2008. The Global Financial Crisis also exemplifies the role of the US dollar as a safe haven currency and how it can mask the safe haven effect of gold. Finally, we find that safe haven assets do not exacerbate crises via a negative feedback effect. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Baur, Dirk G.] UWA, Sch Business, 35 Stirling Highway, Crawley, WA 6009, Australia.
+   [McDermott, Thomas K. J.] Natl Univ Ireland Univ Coll Cork, Cork, Ireland.
+RP Baur, DG (reprint author), UWA, Sch Business, 35 Stirling Highway, Crawley, WA 6009, Australia.
+EM dirk.baur@uwa.edu.au; thomas.mcdermott@ucc.ie
+CR Bartram SM, 2009, J INT MONEY FINANC, V28, P1246, DOI 10.1016/j.jimonfin.2009.08.005
+   Baur DG, 2010, FINAN REV, V45, P217, DOI 10.1111/j.1540-6288.2010.00244.x
+   Baur DG, 2010, J BANK FINANC, V34, P1886, DOI 10.1016/j.jbankfin.2009.12.008
+   Beber A, 2009, REV FINANC STUD, V22, P925, DOI 10.1093/rfs/hhm088
+   Bloom N, 2009, ECONOMETRICA, V77, P623, DOI 10.3982/ECTA6248
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Caballero RJ, 2008, J FINANC, V63, P2195, DOI 10.1111/j.1540-6261.2008.01394.x
+   Connolly R, 2005, J FINANC QUANT ANAL, V40, P161, DOI 10.1017/S0022109000001782
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Epstein LG, 2008, J FINANC, V63, P197, DOI 10.1111/j.1540-6261.2008.01314.x
+   Fratzscher M, 2009, J INT MONEY FINANC, V28, P1390, DOI 10.1016/j.jimonfin.2009.08.008
+   Gennaioli N, 2010, Q J ECON, V125, P1399, DOI 10.1162/qjec.2010.125.4.1399
+   Gorton Gary B., 2012, 17777 NBER
+   Gourinchas Pierre-Olivier, 2012, 11 BIS ANN C 2012
+   International Monetary Fund (IMF), 2012, 81122 IMF, P81
+   Kaul Aditya, 2006, J INT MONEY FINANC, V25, P760
+   KEINAN G, 1987, J PERS SOC PSYCHOL, V52, P639, DOI 10.1037/0022-3514.52.3.639
+   Mather M, 2012, CURR DIR PSYCHOL SCI, V21, P36, DOI 10.1177/0963721411429452
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Oh JYJ, 2014, J FINANC MARK, V18, P49, DOI 10.1016/j.finmar.2013.07.003
+   Peng L, 2007, EUR FINANC MANAG, V13, P394, DOI 10.1111/j.1468-036X.2007.00366.x
+   Ranaldo A, 2010, REV FINANC, V14, P385, DOI 10.1093/rof/rfq007
+   Taleb N. N., 2010, BLACK SWAN IMPACT HI
+   Tversky Amos, 1974, SCIENCE, V185, P1124
+NR 24
+TC 14
+Z9 14
+U1 0
+U2 10
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 2214-6350
+EI 2214-6369
+J9 J BEHAV EXP FINANC
+JI J. Behav. Exp. Financ.
+PD JUN
+PY 2016
+VL 10
+BP 63
+EP 71
+DI 10.1016/j.jbef.2016.03.002
+PG 9
+WC Business, Finance
+SC Business & Economics
+GA DO2GW
+UT WOS:000377599000007
+DA 2019-12-27
+ER
+
+PT J
+AU Grabowski, W
+   Welfe, A
+AF Grabowski, Wojciech
+   Welfe, Aleksander
+TI An Exchange Rate Model with Market Pressures and a Contagion Effect
+SO EMERGING MARKETS FINANCE AND TRADE
+LA English
+DT Article; Proceedings Paper
+CT International Conference on Neoclassical and Behavioral Finance
+CY JUN 26-27, 2014
+CL Univ Lodz, Lodz, POLAND
+SP Atlas, Magellan, Petcki Co
+HO Univ Lodz
+DE Binomial variables; cointegration; contagion effect; exchange rate
+   models; herding; C32; C35
+ID CURRENCY CRISES
+AB The model we propose includes variables accounting for the behavioral aspects of decision-making in the currency markets, namely the contagion effect between countries in the same region. It combines the classical purchasing power parity (PPP) and uncovered interest rate parity (UIP) hypotheses with the effects of risk aversion in financial markets and of currency market pressures.The results based on the Polish data confirm that the currency market instabilities arise not only from fundamental factors such as economic activity and the country's balance of payments, but also from the contagion effect brought about by investors' tendency to view Poland and its neighbors, the Czech Republic and Hungary, as one group.
+C1 [Grabowski, Wojciech; Welfe, Aleksander] Univ Lodz, Chair Econometr Models & Forecasts, 41 Rewolucji 1905r Str, PL-90214 Lodz, Poland.
+RP Welfe, A (reprint author), Univ Lodz, Chair Econometr Models & Forecasts, 41 Rewolucji 1905r Str, PL-90214 Lodz, Poland.
+EM emfalw@uni.lodz.pl
+OI Grabowski, Wojciech/0000-0002-6707-3736; Welfe,
+   Aleksander/0000-0002-9925-3432
+FU National Science Center, Poland (NCN) grant [MAESTRO 4
+   DEC-2013/08/A/HS4/00612]
+FX Support from the National Science Center, Poland (NCN) grant MAESTRO 4
+   DEC-2013/08/A/HS4/00612 is gratefully acknowledged.
+CR Aizenman J, 2013, J INT MONEY FINANC, V34, P37, DOI 10.1016/j.jimonfin.2012.11.011
+   Akdogan K, 2013, EMERG MARK FINANC TR, V49, P6, DOI 10.2753/REE1540-496X490301
+   Bienkowski W, 2014, EASTERN EUR ECON, V52, P32, DOI 10.1080/00128775.2014.1004907
+   Bohl MT, 2009, J FINANC STABIL, V5, P170, DOI 10.1016/j.jfs.2008.02.003
+   BOHL MT, 2006, J INT FINANC MARK I, V16, P370, DOI DOI 10.1016/J.INTFIN.2005.05.005
+   Broner FA, 2008, J MONETARY ECON, V55, P592, DOI 10.1016/j.jmoneco.2008.03.001
+   Bubak V, 2011, J BANK FINANC, V35, P2829, DOI 10.1016/j.jbankfin.2011.03.012
+   Calvo GA, 2000, J INT ECON, V51, P79, DOI 10.1016/S0022-1996(99)00038-0
+   Calvo Guillermo, 1998, J APPL EC, V1, P35
+   Cipriani M, 2008, BE J THEOR ECON, V8
+   Cuaresma JC, 2009, J MACROECON, V31, P621, DOI 10.1016/j.jmacro.2009.01.004
+   de Jong RM, 2011, ECONOMET THEOR, V27, P673, DOI 10.1017/S0266466610000472
+   Dueker M, 2005, J BUS ECON STAT, V23, P96, DOI 10.1198/073500104000000613
+   Eichengreen B, 1996, SCAND J ECON, V98, P463, DOI 10.2307/3440879
+   Eichengreen B, 1995, ECON POLICY, V10, P251, DOI DOI 10.2307/1344591
+   FROOT KA, 1992, J FINANC, V47, P1461, DOI 10.2307/2328947
+   Grabowski W, 2011, ECON MODEL, V28, P782, DOI 10.1016/j.econmod.2010.10.011
+   Hanousek J, 2009, J FINANC STABIL, V5, P199, DOI 10.1016/j.jfs.2008.01.003
+   Hu L, 2004, J APPL ECONOMET, V19, P851, DOI 10.1002/jae.747
+   Hu L, 2004, J ECONOMETRICS, V120, P103, DOI 10.1016/S0304-4076(03)00208-2
+   Hu L., 2007, J ECONOMETRICS, V141, P1115, DOI [10.1016/j.jeconom.2007.01.017, DOI 10.1016/J.JECONOM.2007.01.017]
+   Jarocinski M, 2010, J APPL ECONOMET, V25, P833, DOI 10.1002/jae.1082
+   Jeanne O, 1997, J INT ECON, V43, P263, DOI 10.1016/S0022-1996(97)00002-0
+   JOHANSEN S, 1991, ECONOMETRICA, V59, P1551, DOI 10.2307/2938278
+   Johansen S., 1996, LIKELIHOOD BASED INF
+   Juselius K, 2004, JPN WORLD ECON, V16, P17, DOI 10.1016/S0922-1425(03)00003-3
+   Kaminsky G, 1998, INT MONET FUND S PAP, V45, P1
+   Kasman S, 2010, EMERG MARK FINANC TR, V46, P53, DOI 10.2753/REE1540-496X460204
+   Kbowski P., 2012, ECON MODEL, V29, P1473, DOI [10.1016/j.econmod.2012.02.002, DOI 10.1016/J.ECONMOD.2012.02.002]
+   Keblowski P, 2011, CENT EUR J ECONOM MO, V3, P221
+   Keblowski P, 2010, J INT MONEY FINANC, V29, P1385, DOI 10.1016/j.jimonfin.2010.03.007
+   Klaassen F, 2011, J INT MONEY FINANC, V30, P74, DOI 10.1016/j.jimonfin.2010.07.003
+   KRUGMAN P, 1979, J MONEY CREDIT BANK, V11, P311, DOI 10.2307/1991793
+   Mackinnon JG, 1999, J APPL ECONOM, V14, P563, DOI 10.1002/(SICI)1099-1255(199909/10)14:5<563::AID-JAE530>3.3.CO;2-I
+   Obstfeld M, 1996, EUR ECON REV, V40, P1037, DOI 10.1016/0014-2921(95)00111-5
+   Osband K, 2000, IMF STAFF PAPERS, V47, P238
+   OSTERWALDLENUM M, 1992, OXFORD B ECON STAT, V54, P461, DOI 10.1111/j.1468-0084.1992.tb00013.x
+   Park JY, 2000, ECONOMETRICA, V68, P1249, DOI 10.1111/1468-0262.00157
+   Pesaran MH, 2000, J ECONOMETRICS, V97, P293, DOI 10.1016/S0304-4076(99)00073-1
+   PHILLIPS PCB, 1986, J ECONOMETRICS, V33, P311, DOI 10.1016/0304-4076(86)90001-1
+   Rose Andrew K., 1999, INT FINANCE FINANCIA
+   Sachs JD, 1996, BROOKINGS PAP ECO AC, P147
+   Schinasi GJ, 2000, IMF STAFF PAPERS, V47, P159
+   Turner P, 2009, J APPL ECONOM, V24, P825, DOI 10.1002/jae.1073
+   Van Poeck A, 2007, JCMS-J COMMON MARK S, V45, P459, DOI 10.1111/j.1468-5965.2007.00718.x
+   Wermers R, 1999, J FINANC, V54, P581, DOI 10.1111/0022-1082.00118
+   Yang J, 2006, J APPL ECONOM, V21, P727, DOI 10.1002/jae.889
+   Yap BW, 2011, J STAT COMPUT SIM, V81, P2141, DOI 10.1080/00949655.2010.520163
+NR 48
+TC 5
+Z9 5
+U1 0
+U2 4
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1540-496X
+EI 1558-0938
+J9 EMERG MARK FINANC TR
+JI Emerg. Mark. Financ. Trade
+PY 2016
+VL 52
+IS 12
+BP 2706
+EP 2720
+DI 10.1080/1540496X.2016.1216931
+PG 15
+WC Business; Economics; International Relations
+SC Business & Economics; International Relations
+GA ED3GT
+UT WOS:000388738300003
+DA 2019-12-27
+ER

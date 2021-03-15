@@ -1,0 +1,491 @@
+
+PT J
+AU Sorrosal-Forradellas, MT
+   Martinez, LB
+   Terceno, A
+AF Teresa Sorrosal-Forradellas, M.
+   Martinez, Lisana B.
+   Terceno, Antonio
+TI Are European sovereign bond spreads in concordance with macroeconomic
+   variables evolution?
+SO KYBERNETES
+LA English
+DT Article
+DE Financial crisis; Economic variables; Self-Organizing maps; Sovereign
+   bond spreads
+ID YIELD SPREADS; DETERMINANTS; RISK; IMPROVE
+AB Purpose - The last great financial crisis which arose in the middle of 2007 in the USA produced contagion effects over others economies. The purpose of this paper is focused on analyzing the evolution of a set of economic variables of 17 European countries since 1991 until 2013. Sovereign bond spreads are also considered to compare the incidence of the financial crisis over the economies considering macroeconomics fundamentals and fixed bonds.
+   Design/methodology/approach - Self-organizing maps (SOMs) are used to achieve the purpose of the research. With this methodology, it is possible to analyze the evolution of the macroeconomic fundamentals of each country, obtaining particular and general conclusions according to the position of each country in the SOM. Moreover, the countries are compared between them and with its respective sovereign bond spreads level for each year of analysis.
+   Findings - The impact of the crisis is different between the countries was analyzed. Belonging to the European Monetary Union is an interesting characteristic of some of the most affect economies.
+   Research limitations/implications - This research presents wide implications for the economies to control the most vulnerable economic variables in front of financial crisis to prevent the contagion effect. The inclusion of more economic variables and countries could enhance the study.
+   Originality/value - This research analyzes the relationship between macroeconomic variables and sovereign bond spreads using an infrequent methodology. The results obtained are valuable because they highlight how the present crisis has differently affected the European countries.
+C1 [Teresa Sorrosal-Forradellas, M.] Univ Rovira & Virgili, Dept Business Management, Tarragona, Spain.
+   [Martinez, Lisana B.] Univ Nacl Sur, Univ Prov Sudoeste, CONICET, Inst Invest Econ & Sociales Sur, Bahia Blanca, Buenos Aires, Argentina.
+   [Terceno, Antonio] Univ Rovira & Virgili, Fac Business & Econ, Dept Management, Reus, Spain.
+RP Martinez, LB (reprint author), Univ Nacl Sur, Univ Prov Sudoeste, CONICET, Inst Invest Econ & Sociales Sur, Bahia Blanca, Buenos Aires, Argentina.
+EM lbmartinez@iiess-conicet.gob.ar
+RI Terceno, Antonio/N-4916-2019
+OI Terceno, Antonio/0000-0001-5348-8837
+CR Arghyrou MG, 2012, J INT FINANC MARK I, V22, P658, DOI 10.1016/j.intfin.2012.03.003
+   Arora V., 2000, 0048 INT MON FUND
+   Attinasi M.G., 2009, WORKING PAPER SERIES, V1131, P1
+   Baldacci E, 2011, REV DEV ECON, V15, P251, DOI 10.1111/j.1467-9361.2011.00606.x
+   Barrios S., 2009, EUROPEAN EC EC PAPER, V388, P1
+   Basu R., 2002, IMF WORKING PAPERS, P1
+   Beber A, 2009, REV FINANC STUD, V22, P925, DOI 10.1093/rfs/hhm088
+   Bernoth K., 2004, ECB WORKING PAPER SE, V369, P1
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P639, DOI 10.1016/j.jimonfin.2011.10.006
+   Caceres C., 2010, IMF WORKING PAPERS, P1
+   Chen N, 2013, EXPERT SYST APPL, V40, P385, DOI 10.1016/j.eswa.2012.07.047
+   Codogno L, 2003, ECON POLICY, P503
+   du Jardin P, 2011, DECIS SUPPORT SYST, V51, P701, DOI 10.1016/j.dss.2011.04.001
+   Eichengreen B., 1996, 5681 NAT BUR EC RES, P1
+   Eichengreen B., 1998, WORKING PAPER, V6408, P1
+   Fioramanti M, 2008, J FINANC STABIL, V4, P149, DOI 10.1016/j.jfs.2008.01.001
+   Gande A., 2007, J FINANC ECON, V75, P691
+   Geyer A., 2004, Review of Finance, V8, P171, DOI 10.1023/B:EUFI.0000035191.62455.32
+   Gonzalez-Rozada M, 2008, ECON J, V118, P1917, DOI 10.1111/j.1468-0297.2008.02196.x
+   Hilscher J, 2010, REV FINANC, V14, P235, DOI 10.1093/rof/rfq005
+   Kaminsky G, 2002, WORLD BANK ECON REV, V16, P171, DOI 10.1093/wber/16.2.171
+   Klepsch C., 2011, INTERECONOMICS, V46, P169, DOI [10.1007/s10272-011-0379-2, DOI 10.1007/S10272-011-0379-2]
+   KOHONEN T, 1982, BIOL CYBERN, V43, P59, DOI 10.1007/BF00337288
+   Kohonen T, 1989, SELF ORG ASS MEMORY
+   Manganelli S, 2009, ECON POLICY, P191, DOI 10.1111/j.1468-0327.2009.00220.x
+   Martinez LB, 2013, EMERG MARK REV, V17, P60, DOI 10.1016/j.ememar.2013.08.004
+   Merigo JM, 2016, APPL SOFT COMPUT, V47, P141, DOI 10.1016/j.asoc.2016.05.031
+   Min H.G., 2003, GLOBAL FINANCE J, V14, P271
+   Moreno D, 2006, EUR J OPER RES, V174, P1039, DOI 10.1016/j.ejor.2004.12.018
+   Gonzalez LO, 2016, J BUS RES, V69, P4781, DOI 10.1016/j.jbusres.2016.04.030
+   Ramirez D., 2009, FUZZY EC REV, V14, P31
+   Sarlin P, 2011, INTELL SYST ACCOUNT, V18, P15, DOI 10.1002/isaf.321
+   Sgherri S., 2009, IMF WORKING PAPERS, P1
+   Terceno A., 2013, J EC COMPUTATION EC, V4, P1
+   Vayanos D., 2004, NBER WORKING PAPERS, P1
+NR 35
+TC 0
+Z9 0
+U1 1
+U2 2
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 0368-492X
+EI 1758-7883
+J9 KYBERNETES
+JI Kybernetes
+PY 2017
+VL 46
+IS 1
+SI SI
+BP 85
+EP 101
+DI 10.1108/K-06-2016-0121
+PG 17
+WC Computer Science, Cybernetics
+SC Computer Science
+GA EP2ST
+UT WOS:000397234300007
+DA 2019-12-27
+ER
+
+PT J
+AU Lewandowska, O
+   Glaser, F
+AF Lewandowska, Olga
+   Glaser, Florian
+TI The recent crises and central counterparty risk practices in the light
+   of procyclicality: empirical evidence
+SO JOURNAL OF FINANCIAL MARKET INFRASTRUCTURES
+LA English
+DT Article
+DE central counterparty (CCP); clearing; procyclicality; systematically
+   important institutions; margins; haircuts
+ID CONDITIONAL HETEROSKEDASTICITY; LIQUIDITY
+AB The mandatory central clearing for standardized over-the-counter derivatives, which was introduced by recent financial market reforms, makes central counterparties (CCPs) the most systemically important market participants. However, the theory suggests that, aside from their potential to reduce systemic risk, CCP risk management practices such as margining and collateral haircuts may exacerbate financial-cycle fluctuations. Based on almost ten years of empirical data from a leading clearing house, we investigate if and to what extent the procyclical effects suggested by the literature can be statistically confirmed. Our results for the period encompassing the credit crisis and European sovereign debt crisis do not confirm the hypothesis from theoretical research that CCP risk practices are procyclical. Instead, they reveal only a low average level of conditional correlation between market stress and the margin/haircut requirement in the investigated period. Moreover, increases in CCP haircuts do not make clearing members (CMs) systematically drop the bonds with increased haircuts from their portfolios. Our results indicate that the effectiveness of regulatory action in the form of macroprudential haircut add-ons is doubtful, as the systematic overcollateralization of open positions by CMs, as observed in our data set, may already act as a countercyclical break.
+C1 [Lewandowska, Olga; Glaser, Florian] Goethe Univ Frankfurt, Theodor W Adorno Pl 4, D-60323 Frankfurt, Germany.
+RP Lewandowska, O (reprint author), Goethe Univ Frankfurt, Theodor W Adorno Pl 4, D-60323 Frankfurt, Germany.
+EM lewandowska@econ.uni-frankfurt.de; fglaser@wiwi.uni-frankfurt.de
+CR Abruzzo N, 2016, J FINANC SERV RES, V49, P65, DOI 10.1007/s10693-014-0212-8
+   Acharya VV, 2011, J FINANC, V66, P99, DOI 10.1111/j.1540-6261.2010.01627.x
+   Ashcraft A, 2011, NBER MACROECON ANNU, V25, P143, DOI 10.1086/657530
+   Banerjee A., 1993, COINTEGRATION ERROR
+   Bank for International Settlements, 2016, OTC DER STAT END JUN
+   Black F., 1976, P 1976 M AM STAT ASS, P177
+   Brumm J, 2015, J MONETARY ECON, V75, P54, DOI 10.1016/j.jmoneco.2014.12.007
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Committee on the Global Financial System, 2010, 36 CGFS BANK INT SET
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   European Central Bank, 2013, COLL EL REQ COMP STU
+   European Central Bank, 2016, STAT DAT WAR
+   European Systemic Risk Board, 2015, EFF MARG REQ LIM PRO
+   Goodhart C., 2012, 1211 CHIC BOOTH RES
+   Hansen PR, 2005, J APPL ECONOM, V20, P873, DOI 10.1002/jae.800
+   Hollo D., 2012, 1426 EUR CENTR BANK
+   JARQUE CM, 1980, ECON LETT, V6, P255, DOI 10.1016/0165-1765(80)90024-5
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Lewandowska O, 2015, J MONEY CREDIT BANK, V47, P1177, DOI 10.1111/jmcb.12241
+   Mai E, 2016, REGULATORY REQUIREME
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   Molteni F, 2015, 201532 CEPII
+   Murphy D., 2014, 29 BANK ENGL
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Tsay R. S, 2014, MULTIVARIATE TIME SE
+   Tsay RS, 2005, ANAL FINANCIAL TIME
+   Wendt F., 2006, WORKING PAPER
+NR 28
+TC 2
+Z9 2
+U1 0
+U2 4
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2049-5404
+EI 2049-5412
+J9 J FINANC MARK INFRAS
+JI J. Financ. Mark. Infrastruct.
+PD MAR
+PY 2017
+VL 5
+IS 3
+BP 1
+EP 24
+DI 10.21314/JFMI.2017.072
+PG 24
+WC Business, Finance
+SC Business & Economics
+GA ER4BW
+UT WOS:000398745000002
+DA 2019-12-28
+ER
+
+PT J
+AU Huhtaniemi, H
+   Peters, M
+AF Huhtaniemi, H.
+   Peters, M.
+TI Central counterparty recovery and resolution: the European perspective
+SO JOURNAL OF FINANCIAL MARKET INFRASTRUCTURES
+LA English
+DT Article
+DE financial market infrastructures; central clearing; central
+   counterparty; CCPs; recovery; resolution
+ID RISK
+AB This paper contributes to the literature on the recovery and resolution of central counterparties (CCPs) by exploring the key components of the recent European legislative proposal on the recovery and resolution of CCPs, its main differences with the bank recovery and resolution directive, and its main underlying policy options. To our knowledge, it is one of the first papers to provide a detailed analysis of the proposed European framework. Following the G20 commitments to reform over-the-counter derivatives markets, jurisdictions started requiring standardized transactions in these instruments to be cleared in CCPs, thereby making them even more systemic. In Europe, this commitment has been transposed by the European Market Infrastructure Regulation. The proposal constitutes the completion of this framework, ensuring that crises in CCPs can be addressed in an orderly manner. It is aligned with related international work, balancing predictability for CCPs and their participants with flexibility so that resolution authorities can use their powers when there is still certainty about the financial resources available. One of the key challenges ahead for authorities will be to operationalize and articulate the possible simultaneous resolution of global systemically important banks and CCPs, and to make resolution decisions effective on a cross-border basis.
+C1 [Huhtaniemi, H.] European Commiss, DG FISMA, B-1049 Brussels, Belgium.
+   [Peters, M.] European Commiss, DG FISMA, Resolut & Crisis Management, B-1049 Brussels, Belgium.
+   [Peters, M.] Univ Libre Bruxelles, Solvay Brussels Sch Econ & Management, Ctr E Bernheim, Ave FD Roosevelt 42,CP 114-03, B-1050 Brussels, Belgium.
+RP Peters, M (reprint author), European Commiss, DG FISMA, Resolut & Crisis Management, B-1049 Brussels, Belgium.; Peters, M (reprint author), Univ Libre Bruxelles, Solvay Brussels Sch Econ & Management, Ctr E Bernheim, Ave FD Roosevelt 42,CP 114-03, B-1050 Brussels, Belgium.
+EM hannes.huhtaniemi@ec.europa.eu; marc.peters@ulb.ac.be
+CR Aigrain J., 2013, FINANCIAL STABILITY, V17
+   Bailey D., 2016, CENTRAL CLEARING SET
+   [Board of the International Organization of Securities Commissions Committee on Payments and Market Infrastructures], 2016, RES REC CENTR COUNT
+   Braithwaite J., 2016, 37 BANK ENGL
+   Carter L, 2016, J FINANC MARK INFRAS, V4, P39
+   Committee on Payment and Settlement Systems-Technical Committee of the International Organization of Securities Commissions, 2012, PRINC FIN MARK INFR
+   Committee on Payments and Market Infrastructures-Board of the International Organi-zation of Securities Commissions, 2014, REC FIN MARK INFR RE
+   Cont R., 2015, J RISK MANAGEMENT FI, V8, P365
+   Domanksi D., 2015, Q REV
+   Duffie D., 2014, WORKING PAPER
+   Elliott D, 2013, 20 BANK ENGL
+   European Commission, 2015, ROADDM FRAM RES FIN
+   European Securities and Markets Authority, 2016, EU WID CCP STRESS TE
+   Financial Stability Board, 2015, TEMP FUND NEED SUPP
+   Financial Stability Board, 2016, FIN REF PROGR WORK P
+   Financial Stability Board, 2014, KEY ATTR EFF RES REG
+   Financial Stability Board, 2015, PRINC LOSS ABS REC C
+   Financial Stability Board, 2015, FIN REF PROGR WORK P
+   Financial Stability Board, 2015, PROGR REP CCP WORK P
+   FSB, 2016, ESS ASP CCP RES PLAN
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Heath A, 2016, J FINANC STABIL, V27, P217, DOI 10.1016/j.jfs.2015.12.004
+   Huertas T., 2014, CERTIFYING CONTINUIT
+   International Monetary Fund, 2010, GLOB FIN STAB REP
+   [International Swaps and Derivatives Association The Clearing House], 2016, CISC VIS NETW IND GL
+   Laurent J.-P., 2015, WORKING PAPER
+   Manning MJ, 2016, J FINANC MARK INFRAS, V4, P1
+   Monnet C., 2010, BUSINESS REV
+   Pirrong C., 2011, DISCUSSION PAPERS SE, V1
+   Rehlon A., 2013, Q B
+   Singh M., 2014, WP14203 INT MON FUND
+   Steigerwald R., 2015, CHICAGO FED LETT, V348
+   Tucker P., 2013, FINANCIAL STABILITY, V17
+   Wendt F., 2015, WP1521 INT MON FUND
+NR 34
+TC 2
+Z9 2
+U1 0
+U2 1
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2049-5404
+EI 2049-5412
+J9 J FINANC MARK INFRAS
+JI J. Financ. Mark. Infrastruct.
+PD SEP
+PY 2017
+VL 6
+IS 1
+BP 79
+EP 106
+DI 10.21314/JFMI.2017.083
+PG 28
+WC Business, Finance
+SC Business & Economics
+GA FJ0QY
+UT WOS:000412415300005
+DA 2019-12-28
+ER
+
+PT J
+AU Squartini, T
+   Almog, A
+   Caldarelli, G
+   van Lelyveld, I
+   Garlaschelli, D
+   Cimini, G
+AF Squartini, Tiziano
+   Almog, Assaf
+   Caldarelli, Guido
+   van Lelyveld, Iman
+   Garlaschelli, Diego
+   Cimini, Giulio
+TI Enhanced capital-asset pricing model for the reconstruction of bipartite
+   financial networks
+SO PHYSICAL REVIEW E
+LA English
+DT Article
+ID SYSTEMIC RISK; INTERBANK MARKET; CONTAGION; LIQUIDITY; STABILITY;
+   INVESTMENTS; PORTFOLIOS; COMPLEXITY
+AB Reconstructing patterns of interconnections from partial information is one of the most important issues in the statistical physics of complex networks. A paramount example is provided by financial networks. In fact, the spreading and amplification of financial distress in capital markets are strongly affected by the interconnections among financial institutions. Yet, while the aggregate balance sheets of institutions are publicly disclosed, information on single positions is mostly confidential and, as such, unavailable. Standard approaches to reconstruct the network of financial interconnection produce unrealistically dense topologies, leading to a biased estimation of systemic risk. Moreover, reconstruction techniques are generally designed for monopartite networks of bilateral exposures between financial institutions, thus failing in reproducing bipartite networks of security holdings (e.g., investment portfolios). Here we propose a reconstruction method based on constrained entropy maximization, tailored for bipartite financial networks. Such a procedure enhances the traditional capital-asset pricing model (CAPM) and allows us to reproduce the correct topology of the network. We test this enhanced CAPM (ECAPM) method on a dataset, collected by the European Central Bank, of detailed security holdings of European institutional sectors over a period of six years (2009-2015). Our approach outperforms the traditional CAPM and the recently proposed maximum-entropy CAPM both in reproducing the network topology and in estimating systemic risk due to fire sales spillovers. In general, ECAPM can be applied to the whole class of weighted bipartite networks described by the fitness model.
+C1 [Squartini, Tiziano; Caldarelli, Guido; Cimini, Giulio] IMT Sch Adv Studies, Piazza San Francesco 19, I-55100 Lucca, Italy.
+   [Almog, Assaf; Garlaschelli, Diego] Leiden Univ, Inst Lorentz Theoret Phys, Leiden Inst Phys, Niels Bohrweg 2, NL-2333 CA Leiden, Netherlands.
+   [Almog, Assaf] Tel Aviv Univ, Dept Ind Engn, IL-699780 Ramat Aviv, Israel.
+   [Caldarelli, Guido; Cimini, Giulio] CNR UoS Univ Sapienza, Ist Sistemi Complessi, Piazzale Aldo Moro 5, I-00185 Rome, Italy.
+   [Caldarelli, Guido] Univ Venezia Ca Foscari, European Ctr Living Technol, S Marco 2940, I-30124 Venice, Italy.
+   [van Lelyveld, Iman] Nederlandsche Bank, POB 98, NL-1000 AB Amsterdam, Netherlands.
+   [van Lelyveld, Iman] Vrije Univ Amsterdam, Boelelaan 1105, NL-1081 HV Amsterdam, Netherlands.
+RP Cimini, G (reprint author), IMT Sch Adv Studies, Piazza San Francesco 19, I-55100 Lucca, Italy.; Cimini, G (reprint author), CNR UoS Univ Sapienza, Ist Sistemi Complessi, Piazzale Aldo Moro 5, I-00185 Rome, Italy.
+EM giulio.cimini@imtlucca.it
+RI Garlaschelli, Diego/P-2795-2019; Garlaschelli, Diego/O-4862-2014;
+   Squartini, Tiziano/H-8823-2017; Caldarelli, Guido/A-5274-2010
+OI Garlaschelli, Diego/0000-0001-6035-1783; Garlaschelli,
+   Diego/0000-0001-6035-1783; Squartini, Tiziano/0000-0001-9011-966X;
+   Caldarelli, Guido/0000-0001-9377-3616; van Lelyveld,
+   Iman/0000-0002-6925-5525; CIMINI, Giulio/0000-0001-5698-8597
+FU European Union project MULTIPLEX [317532]; European Union project
+   DOLFINS [640772]; European Union project CoeGSS [676547]; European Union
+   project Shakermaker [687941]; European Union project SoBigData [654024];
+   Econophysics foundation (Stichting Econophysics, Leiden, the
+   Netherlands)
+FX We thank S. Battiston for useful discussions. This work was supported by
+   the European Union projects MULTIPLEX (Grant No. 317532), DOLFINS (Grant
+   No. 640772), CoeGSS (Grant No. 676547), Shakermaker (Grant No. 687941),
+   and SoBigData (Grant No. 654024). D.G. acknowledges support from the
+   Econophysics foundation (Stichting Econophysics, Leiden, the
+   Netherlands).
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acharya VV, 2013, REV FINANC, V17, P107, DOI 10.1093/rof/rfs022
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anand K, 2018, J FINANC STABIL, V35, P107, DOI 10.1016/j.jfs.2017.05.012
+   Anand K, 2015, QUANT FINANC, V15, P625, DOI 10.1080/14697688.2014.968195
+   Baral P., 2012, ESTIMATION BIL UNPUB
+   Bardoscia M, 2017, NAT COMMUN, V8, DOI 10.1038/ncomms14416
+   Battiston S, 2016, P NATL ACAD SCI USA, V113, P10031, DOI 10.1073/pnas.1521573113
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   Berrospide J., 2013, FINANCE EC DISCUSSIO, V03
+   Bonanno G, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.046130
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Caldarelli G, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.258702
+   Chan-Lau J. A., 2009, TECHNICAL REPORT
+   Cimini G, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0161642
+   Cimini G, 2015, SCI REP-UK, V5, DOI 10.1038/srep15758
+   Cimini G, 2015, PHYS REV E, V92, DOI 10.1103/PhysRevE.92.040802
+   Cimini G, 2015, LECT NOTES COMPUT SC, V8852, P323, DOI 10.1007/978-3-319-15168-7_41
+   Cont R., 2017, FIRE SALES INDIRECT, DOI [10.2139/ssrn.2541114, DOI 10.2139/SSRN.2541114]
+   Cont R, 2016, MATH FINANC, V26, P835, DOI 10.1111/mafi.12071
+   Corsi F, 2016, OPER RES, V64, P1073, DOI 10.1287/opre.2015.1464
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   Di Gangi D., 2015, ARXIV150900607
+   Diamond D. W., 2009, 14925 NAT BUR EC RES
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gale D, 2013, THEOR ECON, V8, P291, DOI 10.3982/TE1064
+   Gandy A, 2017, MANAGE SCI, V63, P4428, DOI 10.1287/mnsc.2016.2546
+   Garlaschelli D, 2004, PHYS REV LETT, V93, DOI 10.1103/PhysRevLett.93.188701
+   Garlaschelli D, 2005, PHYSICA A, V350, P491, DOI 10.1016/j.physa.2004.11.040
+   Getmansky M., 2017, 4 ANN C FIN MARK REG, DOI [10.2139/ssrn.2749691, DOI 10.2139/SSRN.2749691]
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Gualdi S, 2016, SCI REP-UK, V6, DOI 10.1038/srep39467
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Krause A, 2012, J ECON BEHAV ORGAN, V83, P583, DOI 10.1016/j.jebo.2012.05.015
+   LINTNER J, 1965, REV ECON STAT, V47, P13, DOI 10.2307/1924119
+   Mastrandrea R, 2014, NEW J PHYS, V16, DOI 10.1088/1367-2630/16/4/043022
+   Mastromatteo I, 2012, J STAT MECH-THEORY E, DOI 10.1088/1742-5468/2012/03/P03011
+   Mazzarisi P, 2017, NEW ECON WINDOWS, P201, DOI 10.1007/978-3-319-47705-3_15
+   Mistrulli P. E., 2007, EC WORKING PAPERS
+   Montagna M, 2017, QUANT FINANC, V17, P101, DOI 10.1080/14697688.2016.1178855
+   MOSSIN J, 1966, ECONOMETRICA, V34, P768, DOI 10.2307/1910098
+   Musmeci N, 2013, J STAT PHYS, V151, P720, DOI 10.1007/s10955-013-0720-1
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Park J, 2004, PHYS REV E, V70, DOI 10.1103/PhysRevE.70.066117
+   Peltonen T. A., 2015, 1866 ECB
+   Saracco F, 2015, SCI REP-UK, V5, DOI 10.1038/srep10595
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Silvia G., 2014, 531 BANQ FRANC
+   Squartini Tiziano, 2017, Appl Netw Sci, V2, P3, DOI 10.1007/s41109-017-0021-8
+   Squartini T, 2011, NEW J PHYS, V13, DOI 10.1088/1367-2630/13/8/083001
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Wells S., 2004, 230 BANK ENGL
+NR 59
+TC 11
+Z9 11
+U1 2
+U2 18
+PU AMER PHYSICAL SOC
+PI COLLEGE PK
+PA ONE PHYSICS ELLIPSE, COLLEGE PK, MD 20740-3844 USA
+SN 2470-0045
+EI 2470-0053
+J9 PHYS REV E
+JI Phys. Rev. E
+PD SEP 27
+PY 2017
+VL 96
+IS 3
+AR 032315
+DI 10.1103/PhysRevE.96.032315
+PG 12
+WC Physics, Fluids & Plasmas; Physics, Mathematical
+SC Physics
+GA FI5AC
+UT WOS:000411991200003
+PM 29347051
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Poledna, S
+   Bochmann, O
+   Thurner, S
+AF Poledna, Sebastian
+   Bochmann, Olaf
+   Thurner, Stefan
+TI Basel III capital surcharges for G-SIBs are far less effective in
+   managing systemic risk in comparison to network-based, systemic
+   risk-dependent financial transaction taxes
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Basel III; Systemic risk; Resilience; Agent-based modeling; DebtRank;
+   Banking regulation
+ID AGENT-BASED MODELS; BUSINESS FLUCTUATIONS; CREDIT
+AB In addition to constraining bilateral exposures of financial institutions, there exist essentially two options for future financial regulation of systemic risk: First, regulation could attempt to reduce the financial fragility of global or domestic systemically important financial institutions (G-SIBS or D-SIBs), as for instance proposed by Basel III. Second, it could focus on strengthening the financial system as a whole by reducing the probability of large-scale cascading events. This can be achieved by re-shaping the topology of financial networks. We use an agent-based model of a financial system and the real economy to study and compare the consequences of these two options. By conducting three computer experiments with the agent-based model we find that re-shaping financial networks is more effective and efficient than reducing financial fragility. Capital surcharges for G-SIBs could reduce systemic risk, but they would have to be substantially larger than those specified in the current Basel III proposal in order to have a measurable impact. This would cause a loss of efficiency. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Poledna, Sebastian; Thurner, Stefan] IIASA, Schlosspl 1, A-2361 Laxenburg, Austria.
+   [Poledna, Sebastian; Thurner, Stefan] Med Univ Vienna, Sect Sci Complex Syst, Spitalgasse 23, A-1090 Vienna, Austria.
+   [Thurner, Stefan] Santa Fe Inst, 1399 Hyde Pk Rd, Santa Fe, NM 87501 USA.
+   [Bochmann, Olaf] Oxford Martin Sch, Inst New Econ Thinking, Eagle House,Walton Well Rd, Oxford OX2 3ED, England.
+   [Bochmann, Olaf] Univ Oxford, Math Inst, Woodstock Rd, Oxford OX2 6GG, England.
+   [Thurner, Stefan] Complex Sci Hub Vienna, Josefstadter Str 39, A-1080 Vienna, Austria.
+RP Thurner, S (reprint author), Med Univ Vienna, Sect Sci Complex Syst, Spitalgasse 23, A-1090 Vienna, Austria.
+EM poledna@iiasa.ac.at; olaf.bochmann@inet.ox.ac.uk;
+   stefan.thurner@meduniwien.ac.at
+FU EC FP7 project CRISIS [288501]; EC FP7 project LASAGNE [318132]; EC FP7
+   project MULTIPLEX [317532]
+FX We acknowledge financial support from EC FP7 projects CRISIS, agreement
+   no. 288501 (65%), LASAGNE, agreement no. 318132 (15%) and MULTIPLEX,
+   agreement no. 317532 (20%).
+CR Acharya V., 2012, CEPR DISCUSSION PAPE
+   Acharya VV, 2013, HANDBOOK ON SYSTEMIC RISK, P226
+   Adrian T., 2011, TECHNICAL REPORT
+   ADRIAN T, 2008, 328 FED RES BANK NEW
+   Aikman D., 2013, FINANCIAL STABILITY, V24, P10
+   Aoyama H., 2013, DISCUSSION PAPERS
+   Aymanns C, 2015, J ECON DYN CONTROL, V50, P155, DOI 10.1016/j.jedc.2014.09.015
+   Bank for International Settlements, 2010, BAS 3 GLOB REG FRAM
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brownlees C. T., 2012, VOLATILITY CORRELATI
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caballero J., 2012, WORKING PAPER SERIES
+   Caccioli F., 2012, RISK, V25, P74
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Cincotti S, 2010, ECONOMICS-KIEL, V4, P2010
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Cooley T., 2009, RESTORING FINANCIAL, P277
+   Dawid H., 2012, BIELEFELD WORKING PA
+   Dawid H, 2008, J ECON BEHAV ORGAN, V67, P351, DOI 10.1016/j.jebo.2007.06.009
+   Dawid H, 2011, EAST ECON J, V37, P44, DOI 10.1057/eej.2010.43
+   De Bandt O, 2000, TECHNICAL REPORT
+   Dosi G, 2013, J ECON DYN CONTROL, V37, P1598, DOI 10.1016/j.jedc.2012.11.008
+   Dosi G, 2010, J ECON DYN CONTROL, V34, P1748, DOI 10.1016/j.jedc.2010.06.018
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Fostel A, 2008, AM ECON REV, V98, P1211, DOI 10.1257/aer.98.4.1211
+   Gabbi G, 2015, J ECON DYN CONTROL, V50, P117, DOI 10.1016/j.jedc.2014.07.002
+   Gaffeo E, 2008, EAST ECON J, V34, P441, DOI 10.1057/eej.2008.27
+   Gatti DD, 2005, J ECON BEHAV ORGAN, V56, P489, DOI 10.1016/j.jebo.2003.10.012
+   Gatti DD, 2011, NEW ECON WINDOWS, P1, DOI 10.1007/978-88-470-1971-3
+   Gatti DD, 2008, NEW ECON WINDOWS, P1
+   Gatti DD, 2009, J ECON INTERACT COOR, V4, P195, DOI 10.1007/s11403-009-0054-x
+   Geanakoplos J, 2010, NBER MACROECON ANNU, V24, P1
+   Georg C.-P., 2011, WORKING PAPERS GLOBA
+   Gualdi S, 2015, J ECON DYN CONTROL, V50, P29, DOI 10.1016/j.jedc.2014.08.003
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Klimek P, 2015, J ECON DYN CONTROL, V50, P144, DOI 10.1016/j.jedc.2014.08.020
+   Krug S, 2015, QUANT FINANC, V15, P1917, DOI 10.1080/14697688.2014.999701
+   Leduc M. V., 2016, INCENTIVIZING RESILI
+   Leduc M. V., 2016, SYSTEMIC RISK MANAGE
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Minoiu C., 2013, 13267 INT MON FUND
+   Minsky H.P., 1992, WORKING PAPER
+   Neuberger D., 2014, J BANK FINANCIAL EC, V1, P5
+   Poledna S, 2016, QUANT FINANC, V16, P1599, DOI 10.1080/14697688.2016.1156146
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Poledna S, 2014, J BANK FINANC, V42, P199, DOI 10.1016/j.jbankfin.2014.01.038
+   Raberto M., 2012, ECONOMICS-KIEL, V6, P1
+   Riccetti L, 2015, J ECON INTERACT COOR, V10, P305, DOI 10.1007/s11403-014-0130-8
+   Riccetti L, 2013, J ECON DYN CONTROL, V37, P1626, DOI 10.1016/j.jedc.2013.02.008
+   Roukny T, 2013, SCI REP-UK, V3, DOI 10.1038/srep02759
+   Summers L.H., 1989, FINANCIAL MARKETS WO
+   Tedeschi G, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0052749
+   Thurner S, 2013, SCI REP-UK, V3, DOI 10.1038/srep01888
+   Thurner S, 2012, QUANT FINANC, V12, P695, DOI 10.1080/14697688.2012.674301
+   Tobin J, 1978, 506 YAL U COWL FDN R
+   Zlatic V, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0114928
+NR 59
+TC 5
+Z9 5
+U1 2
+U2 14
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD APR
+PY 2017
+VL 77
+BP 230
+EP 246
+DI 10.1016/j.jedc.2017.02.004
+PG 17
+WC Economics
+SC Business & Economics
+GA ES5ZH
+UT WOS:000399624800011
+OA Green Accepted
+DA 2019-12-28
+ER

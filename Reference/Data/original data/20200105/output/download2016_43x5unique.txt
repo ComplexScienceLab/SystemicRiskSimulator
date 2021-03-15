@@ -1,0 +1,470 @@
+
+PT J
+AU Heath, A
+   Kelly, G
+   Manning, M
+   Markose, S
+   Shaghaghi, AR
+AF Heath, Alexandra
+   Kelly, Gerard
+   Manning, Mark
+   Markose, Sheri
+   Shaghaghi, Ali Rais
+TI CCPs and network stability in OTC derivatives markets
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article; Proceedings Paper
+CT Conference on Data Standards, Information and Financial Stability
+CY APR 11-12, 2014
+CL Loughborough Uni, Loughborough, ENGLAND
+HO Loughborough Uni
+DE OTC derivatives reforms; Central counterparty (CCP); Netting efficiency;
+   Collateralization
+ID SYSTEMIC RISK
+AB Among the reforms to OTC derivative markets since the global financial crisis is a commitment to collateralize counterparty exposures and to clear standardized contracts via central counterparties (CCPs). The reforms aim to reduce interconnectedness and improve counterparty risk management in these important markets. At the same time, however, the reforms necessarily concentrate risk in one or a few nodes in the financial network and also increase institutions' demand for high-quality assets to meet collateral requirements. This paper looks more closely at the implications of increased CCP clearing for both the topology and stability of the financial network. Building on Heath et al. (2013) and Markose (2012), the analysis supports the view that the concentration of risk in CCPs could generate instability if not appropriately managed. Nevertheless, maintaining CCP prefunded financial resources in accordance with international standards and dispersing any unfunded losses widely through the system can limit the potential for a CCP to transmit stress even in very extreme market conditions. The analysis uses the Bank for International Settlements Macroeconomic Assessment Group on Derivatives (MAGD) data set on the derivatives positions of the 41 largest bank participants in global OTC derivative markets in 2012. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Heath, Alexandra; Kelly, Gerard; Manning, Mark] Reserve Bank Australia, 65 Martin Pl, Sydney, NSW, Australia.
+   [Markose, Sheri] Univ Essex, Wivenhoe Pk, Colchester CO4 3SQ, Essex, England.
+   [Shaghaghi, Ali Rais] Univ Cambridge, Cambridge Judge Business Sch, Ctr Risk Studies, Trumpington St, Cambridge CB2 1AG, England.
+RP Markose, S (reprint author), Univ Essex, Wivenhoe Pk, Colchester CO4 3SQ, Essex, England.
+EM scher@essex.ac.uk
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Bailey D., 2014, COMMUNICATION   1124
+   BCBS, 2015, MARG REQ NONC CLEAR
+   BERNANKE BS, 1990, REV FINANC STUD, V3, P133, DOI 10.1093/rfs/3.1.133
+   Cceure Benoit, 2014, COMMUNICATION
+   CGFS, 2013, CGFS PAP, V49
+   Chase JPMorgan, 2014, PERSPECTIVES
+   Cheung B, 2014, BULLETIN, P53
+   COEure B., 2015, COMMUNICATION
+   CPMI and IOSCO, 2014, REC FIN MARK INFR
+   CPSS and IOSCO, 2012, PRINC FIN MARK INFR
+   Craig B., 2010, BIS WORKING PAPERS, V322
+   Duffie D., 2014, RESOLUTION FAI UNPUB
+   Duffie D., 2014, 19890 NBER
+   Duffie D, 2011, REV ASSET PRICING ST, V1, P74, DOI 10.1093/rapstu/rar001
+   Financial Stability Board (FSB), 2014, APPL KEY ATTR EFF RE
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gibson, 2013, BULLETIN, P39
+   Group of Twenty, 2009, LEAD STAT PITTSB SUM
+   Haldane A. G., 2009, COMMUNICATION
+   Heath A., 2015, 201502 RBA
+   Heath A., 2013, LIQ FUND MARK P C, P33
+   Heller D., 2012, BIS WORKING PAPERS, V373
+   International Swaps and Derivatives Association (ISDA), 2015, CCP DEF MAN REC CONT
+   ISDA, 2014, ISDA MARK RES REP
+   ISDA, 2013, CCP LOSS ALL END WAT
+   Kroszner, 2006, COMMUNICATION   0403
+   Levels Anouk, 2012, J FINANCIAL MARKET I, V1, P29
+   Macroeconomic Assessment Group on Derivatives (MAGD), 2012, MACR IMP ASS OTC DER
+   Markose S, 2012, 12282 IMF
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Markose S, 2011, J DERIV, V18, P35, DOI 10.3905/jod.2011.18.3.035
+   Markose SM, 2013, J BANK REGUL, V14, P285, DOI 10.1057/jbr.2013.10
+   MAY RM, 1972, NATURE, V238, P413, DOI 10.1038/238413a0
+   MAY RM, 1974, STABILITY COMPLEXITY
+   Moser, 1998, FEDERAL RESERVE BANK, V1998-26
+   Pirrong C., 2011, 1 ISDA
+   Powell J, 2014, COMMUNICATION
+   Reserve Bank of Australia, 2014, SUBM FIN SYST INQ
+   Sidanius C., 2012, 8 BANK ENGL
+   Singh M., 2013, 1325 IMF
+   Tucker P., 2011, COMMUNICATION
+   Tucker P, 2014, REGULATORY REFORM ST
+   Wang Y., 2003, REL DISTR SYST IEEE
+   Wendt F, 2015, WP1521 IMF
+   Yellen J.L., 2013, COMMUNICATION
+NR 46
+TC 10
+Z9 10
+U1 0
+U2 7
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2016
+VL 27
+BP 217
+EP 233
+DI 10.1016/j.jfs.2015.12.004
+PG 17
+WC Business, Finance; Economics
+SC Business & Economics
+GA EG0RO
+UT WOS:000390740100015
+OA Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU van Bekkum, S
+AF van Bekkum, Sjoerd
+TI Ireland's 2010 EU/IMF intervention: Costs and benefits
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Bailout; Financial stability; European debt crisis; Event study
+ID DEFAULT; SPREADS; IMPACT; RISK; NEWS
+AB This paper examines the costs and benefits of the EU/IMF rescue package for Ireland, on November 29, 2010. We analyze the costs of the intervention and the subsequent increase in value of debt and/or equity issued by Irish banks, the Irish government, and European banks with substantial holdings of Irish debt. The total initial value increase around the announcement amounts to epsilon 5.59bln at a realized taxpayers' cost of epsilon 4.23bln. While the value increase depends on somewhat generous assumptions, it further increases by epsilon 2.8bln up to Ireland's exit in December 2013. About epsilon 3.1bln of the value created indirectly supports the European banking sector, indicating that substantial benefits arise from systemic risk containment. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [van Bekkum, Sjoerd] Erasmus Univ, Erasmus Sch Econ, Burgemeester Oudlaan 50, Rotterdam, Netherlands.
+RP van Bekkum, S (reprint author), Erasmus Univ, Erasmus Sch Econ, Burgemeester Oudlaan 50, Rotterdam, Netherlands.
+EM vanbekkum@ese.eur.nl
+CR Abiad A., 2011, IMF WORKING PAPERS, P1
+   Alexander C, 2008, J BANK FINANC, V32, P1008, DOI 10.1016/j.jbankfin.2007.08.002
+   [Anonymous], 2011, ECONOMIST
+   Attinasi MG, 2009, 1131 EUR CENTR BANK
+   Bagehot W., 1873, LOMBARD STREET DESCR
+   Bagehot Walter, 1897, LOMBARD STREET DESCR
+   Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Bhanot K, 2014, J BANK FINANC, V38, P51, DOI 10.1016/j.jbankfin.2013.09.015
+   Bongaerts D, 2011, J FINANC, V66, P203, DOI 10.1111/j.1540-6261.2010.01630.x
+   Caballero R., 2007, WORKING PAPER
+   Deutsche Bank, 2010, EXP CENTR LOC GOV
+   Ejsing J. W., 2009, JANUS HEADED SALVATI
+   European Commission, 2013, Q REPORT EUROAREA, V12, P27
+   Forte S, 2009, J BANK FINANC, V33, P2013, DOI 10.1016/j.jbankfin.2009.04.015
+   Horvath BL, 2015, J MONEY CREDIT BANK, V47, P177, DOI 10.1111/jmcb.12173
+   Hull J, 2004, J BANK FINANC, V28, P2789, DOI 10.1016/j.jbankfin.2004.06.010
+   Hull J, 2012, FINANC ANAL J, V68, P58, DOI 10.2469/faj.v68.n5.6
+   International Monetary Fund, 2012, 1393 IMF
+   Kelly M., 2009, IRISH CREDIT BUBBLE
+   King M., 2009, 288 BIS
+   Longstaff FA, 2005, J FINANC, V60, P2213, DOI 10.1111/j.1540-6261.2005.00797.x
+   Mink M, 2013, J INT MONEY FINANC, V34, P102, DOI 10.1016/j.jimonfin.2012.11.006
+   Norden L, 2004, J BANK FINANC, V28, P2813, DOI 10.1016/j.jbankfin.2004.06.011
+   Veronesi P, 2010, J FINANC ECON, V97, P339, DOI 10.1016/j.jfineco.2010.03.011
+   Whelan K., 2011, IRELANDS SOVEREIGN D
+NR 25
+TC 1
+Z9 1
+U1 2
+U2 8
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD NOV
+PY 2016
+VL 72
+BP 175
+EP 183
+DI 10.1016/j.jbankfin.2014.12.025
+PG 9
+WC Business, Finance; Economics
+SC Business & Economics
+GA ED8EQ
+UT WOS:000389105200011
+DA 2019-12-28
+ER
+
+PT J
+AU Acharya, VV
+   Mehran, H
+   Thakor, AV
+AF Acharya, Viral V.
+   Mehran, Hamid
+   Thakor, Anjan V.
+TI Caught between Scylla and Charybdis? Regulating Bank Leverage When There
+   Is Rent Seeking and Risk Shifting
+SO REVIEW OF CORPORATE FINANCE STUDIES
+LA English
+DT Article
+ID MORAL HAZARD; FINANCIAL CRISES; LIQUIDITY; INFORMATION; INVESTMENT;
+   POLICIES; DEBT
+AB We develop a theory of optimal bank leverage in which the benefit of debt in inducing loan monitoring is balanced against the benefit of equity in attenuating risk shifting. However, faced with socially costly correlated bank failures, regulators bail out creditors. Anticipation of this generates multiple equilibria, including one with systemic risk in which banks use excessive leverage to fund correlated, inefficiently risky loans. Limiting leverage and resolving both moral hazards-insufficient loan monitoring and asset substitution-requires a novel two-tiered capital requirement, including a "special capital account" that is unavailable to creditors upon failure.
+C1 [Acharya, Viral V.] NYU, New York, NY 10003 USA.
+   [Acharya, Viral V.] CEPR, Washington, DC USA.
+   [Acharya, Viral V.] NBER, Cambridge, MA 02138 USA.
+   [Mehran, Hamid] Fed Reserve Bank New York, New York, NY 10045 USA.
+   [Thakor, Anjan V.] ECGI, New York, NY USA.
+   [Thakor, Anjan V.] Washington Univ, St Louis, MO USA.
+RP Thakor, AV (reprint author), Washington Univ, Olin Sch Business, Campus Box 1133,One Brookings Dr, St Louis, MO 63130 USA.
+EM thakor@wustl.edu
+CR Acharya V., 2013, QUANTIFYING SYSTEMIC, P175
+   Acharya V. V., 2012, ROBUST CAPITAL REGUL
+   Acharya V. V., 2009, WORKING PAPER
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2011, J FINANC, V66, P99, DOI 10.1111/j.1540-6261.2010.01627.x
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Acharya VV, 2008, REV FINANC STUD, V21, P2705, DOI 10.1093/rfs/hhm078
+   Admati A. R., 2010, WORKING PAPER
+   Albul B., 2010, WORKING PAPER
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2000, ECON J, V110, P236, DOI 10.1111/1468-0297.00499
+   Allen F., 2008, FINANCIAL CRISES INT, V218, P3
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Basel Committee on Banking Supervision, 2009, STRENGTH RES BANK SE
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   BESANKO D, 1987, INT ECON REV, V28, P671, DOI 10.2307/2526573
+   Bhattacharya S, 1998, J MONEY CREDIT BANK, V30, P745, DOI 10.2307/2601127
+   Bhattacharya S., 1993, J FINANCIAL INTERMED, V3, P2, DOI DOI 10.1006/JFIN.1993.1001
+   Biais B, 1999, J FINANC, V54, P1291, DOI 10.1111/0022-1082.00147
+   Boot AWA, 2000, J FINANC, V55, P679, DOI 10.1111/0022-1082.00223
+   Calzolari G, 2011, J FINANC INTERMED, V20, P178, DOI 10.1016/j.jfi.2010.02.002
+   CORNETT MM, 1994, J FINANC ECON, V35, P99, DOI 10.1016/0304-405X(94)90019-1
+   Dewatripont M., 1994, PRUDENTIAL REGULATIO
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Dudley W. C, 2009, COMMUNICATION
+   Dutfie D., 2010, ENDING GOVT BAILOUTS
+   Edmans A, 2011, REV FINANC, V15, P75, DOI 10.1093/rof/rfq008
+   Farhi E, 2012, AM ECON REV, V102, P60, DOI 10.1257/aer.102.1.60
+   Flannery M, 2005, CAPITAL ADEQUACY BAS
+   HART O, 1994, Q J ECON, V109, P841, DOI 10.2307/2118350
+   Hellwig MF, 2009, J FINANC INTERMED, V18, P495, DOI 10.1016/j.jfi.2007.09.001
+   HOLMSTROM B, 1982, BELL J ECON, V13, P324, DOI 10.2307/3003457
+   Imbierowicz B., 2015, WORKING PAPER
+   JENSEN MC, 1976, J FINANC ECON, V3, P305, DOI 10.1016/0304-405X(76)90026-X
+   Kane EJ, 2011, FINANCIAL MARKET REGULATION: LEGISLATION AND IMPLICATIONS, P107, DOI 10.1007/978-1-4419-6637-7_8
+   Kashyap A. K., 2008, FED RES BANK KANS CI
+   Kindleberger C., 1978, MANIAS PANICS CRASHE
+   McDonald RL, 2013, J FINANC STABIL, V9, DOI 10.1016/j.jfs.2011.11.001
+   Mehran H, 2011, REV FINANC STUD, V24, P1019, DOI 10.1093/rfs/hhq022
+   Memmel C, 2010, J FINANC INTERMED, V19, P509, DOI 10.1016/j.jfi.2009.10.002
+   Merton R. C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   Myers SC, 1998, Q J ECON, V113, P733, DOI 10.1162/003355398555739
+   MYERS SC, 1984, J FINANC ECON, V13, P187, DOI 10.1016/0304-405X(84)90023-0
+   Office of the Comptroller of the Currency, 1988, BANK FAIL EV FACT CO
+   Pennacchi G, 2014, J FINANC QUANT ANAL, V49, P541, DOI 10.1017/S0022109014000398
+   Pfleiderer P., 2009, WORKING PAPER
+   Philippon T, 2013, J FINANC, V68, P1, DOI 10.1111/j.1540-6261.2012.01793.x
+   RAMAKRISHNAN RTS, 1984, REV ECON STUD, V51, P415, DOI 10.2307/2297431
+   Reinhart CM, 2008, AM ECON REV, V98, P339, DOI 10.1257/aer.98.2.339
+   Rochet JC, 2011, J FINANC INTERMED, V20, P303, DOI 10.1016/j.jfi.2010.11.001
+   Romer P. M., 1994, WORKING PAPER
+   *SQUAM LAK WORK GR, 2009, EXP RES MECH DISTR F
+   STULZ RM, 1990, J FINANC ECON, V26, P3, DOI 10.1016/0304-405X(90)90011-N
+   Thakor AV, 2014, ANNU REV FINANC ECON, V6, P185, DOI 10.1146/annurev-financial-110613-034531
+   Thakor AV, 2012, J FINANC ECON, V103, P130, DOI 10.1016/j.jfineco.2011.03.026
+   Thakor R. T., 2015, 21258 NBER
+   Wang Z., 2010, WORKING PAPER
+   White L., 2007, WORKING PAPER
+   Wolff C., 2010, WORKING PAPER
+   Zingales L., 2009, WORKING PAPER
+NR 60
+TC 24
+Z9 24
+U1 0
+U2 3
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 2046-9128
+EI 2046-9136
+J9 REV CORP FINANC STUD
+JI Rev. Corp. Financ. Stud.
+PD MAR
+PY 2016
+VL 5
+IS 1
+BP 36
+EP 75
+DI 10.1093/rcfs/cfv006
+PG 40
+WC Business, Finance
+SC Business & Economics
+GA DW7YJ
+UT WOS:000383869300002
+DA 2019-12-28
+ER
+
+PT J
+AU Pagano, MS
+   Sedunov, J
+AF Pagano, Michael S.
+   Sedunov, John
+TI A comprehensive approach to measuring the relation between systemic risk
+   exposure and sovereign debt
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Systemic risk; Banking crises; Sovereign debt; Contagion; Financial
+   institutions
+ID FINANCIAL CRISIS; INSTITUTIONS; CONTAGION
+AB Using an integrated model to control for simultaneity, as well as new risk measurement techniques such as Adapted Exposure CoVaR and Marginal Expected Shortfall (MES), we show that the aggregate systemic risk exposure of financial institutions is positively related to sovereign debt yields in European countries in an episodic manner, varying positively with the intensity of the financial crisis facing a particular nation. We find evidence of a simultaneous relation between systemic risk exposure and sovereign debt yields. This suggests that models of sovereign debt yields should also include the systemic risk of a country's financial system in order to avoid potentially important mis-specification errors. We find evidence that systemic risk of a country's financial institutions and the risk of sovereign governments are inter-related and shocks to these domestic linkages are stronger and longer lasting than international risk spillovers. Thus, the channel in which domestic sovereign debt yields can be affected by another nation's sovereign debt is mostly an indirect one in that shocks to a foreign country's government finances are transmitted to that country's financial system which, in turn, can spill over to the domestic financial system and, ultimately, have a destabilizing effect on the domestic sovereign debt market. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Pagano, Michael S.; Sedunov, John] Villanova Univ, Villanova, PA 19085 USA.
+RP Pagano, MS (reprint author), Villanova Univ, Villanova, PA 19085 USA.
+EM michael.pagano@villanova.edu
+OI Pagano, Michael/0000-0003-4556-3037
+CR Acharya V., 2013, HDB SYSTEMIC RISK
+   Acharya V. V., 2016, WORKING PAPER
+   Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya Viral V., 2009, RESTORING FINANCIAL, V1, P1
+   Adrian T., 2015, COVAR AM EC IN PRESS
+   Adrian T, 2013, NBER MACROEC ANN-SER, V27, P159, DOI 10.1086/669176
+   Alter A, 2014, J BANK FINANC, V42, P134, DOI 10.1016/j.jbankfin.2014.01.030
+   [Anonymous], 2012, BBC NEWS, V28/9
+   Bai J., 2012, WORKING PAPER
+   Battistini N, 2014, ECON POLICY, V29, P203, DOI 10.1111/1468-0327.12029
+   Bedendo M, 2015, J CORP FINANC, V33, P34, DOI 10.1016/j.jcorpfin.2015.04.006
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Benzoni L., 2015, WORKING PAPER
+   Billio M., 2014, WORKING PAPER
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Black L., 2012, INT FINANCE DISCUSSI, V1076
+   Bolton P, 2011, IMF ECON REV, V59, P162, DOI 10.1057/imfer.2011.5
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Brutti F, 2015, J INT ECON, V97, P231, DOI 10.1016/j.jinteco.2015.03.009
+   Cadman E., 2011, FINANCIAL TIMES
+   CANTOR R, 1996, FRBNY EC POLICY REV, V2, P37
+   Caporin M., 2015, 18741 NBER
+   Carey M, 2012, J FINANC ECON, V104, P421, DOI 10.1016/j.jfineco.2012.02.003
+   Chaturvedi N., 2011, WALL STR J
+   Danielsson J., 2012, DEALING SYSTEMIC RIS
+   De Bruyckere V, 2013, J BANK FINANC, V37, P4793, DOI 10.1016/j.jbankfin.2013.08.012
+   Degryse H., 2010, INT REV FINANC, V10, P209, DOI DOI 10.1111/J.1468-2443.2010.01109.X
+   Duarte F., 2015, WORKING PAPER
+   Eichengreen B, 2012, J INT MONEY FINANC, V31, P1299, DOI 10.1016/j.jimonfin.2012.02.002
+   Engle R., 2014, REV FINANC IN PRESS, V19
+   Gennaioli N, 2014, J FINANC, V69, P819, DOI 10.1111/jofi.12124
+   Granger C. W. J., 1974, J ECONOMETRICS, V2, P111, DOI DOI 10.1016/0304-4076(74)90034-7
+   Gunduz Y, 2014, J INT MONEY FINANC, V49, P425, DOI 10.1016/j.jimonfin.2014.03.013
+   Hauner D, 2010, OXFORD B ECON STAT, V72, P411, DOI 10.1111/j.1468-0084.2010.00589.x
+   Hilscher J, 2010, REV FINANC, V14, P235, DOI 10.1093/rof/rfq005
+   Hofmann C, 2013, FORDHAM J CORPORATE, V18, P519
+   Hull J., 2012, RISK MANAGEMENT FINA
+   Imbierowicz B., 2015, WORKING PAPER
+   Kallestrup R., 2013, WORKING PAPER
+   Keiler S., 2013, 012013 DTSCH BUND
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Lahmann W., 2012, WORKING PAPER
+   Leonello A., 2014, WORKING PAPER
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Lucas A., 2013, ECB RES B, V17
+   Manzo G., 2015, WORKING PAPER
+   Petersen MA, 2009, REV FINANC STUD, V22, P435, DOI 10.1093/rfs/hhn053
+   Sedunov J., 2016, WORKING PAPER
+   Straetmans S, 2015, J INT MONEY FINANC, V58, P191, DOI 10.1016/j.jimonfin.2015.07.003
+   Walker M., 2009, WALL STREET J
+   ZELLNER A, 1962, J AM STAT ASSOC, V57, P348, DOI 10.2307/2281644
+   Zhang Q., 2014, J MONEY CRE IN PRESS
+NR 56
+TC 12
+Z9 12
+U1 1
+U2 21
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD APR
+PY 2016
+VL 23
+BP 62
+EP 78
+DI 10.1016/j.jfs.2016.02.001
+PG 17
+WC Business, Finance; Economics
+SC Business & Economics
+GA DI5ZQ
+UT WOS:000373579400005
+DA 2019-12-27
+ER
+
+PT J
+AU Zhang, X
+   Feng, L
+   Berman, Y
+   Hu, N
+   Stanley, HE
+AF Zhang, Xin
+   Feng, Ling
+   Berman, Yonatan
+   Hu, Ning
+   Stanley, H. Eugene
+TI Exacerbated vulnerability of coupled socio-economic risk in complex
+   networks
+SO EPL
+LA English
+DT Article
+ID SYSTEMIC RISK; CONTAGION
+AB The study of risk contagion in economic networks has most often focused on the financial liquidities of institutions and assets. In practice the agents in a network affect each other through social contagion, i.e., through herd behavior and the tendency to follow leaders. We study the coupled risk between social and economic contagion and find it significantly more severe than when economic risk is considered alone. Using the empirical network from the China venture capital market we find that the system exhibits an extreme risk of abrupt phase transition and large-scale damage, which is in clear contrast to the smooth phase transition traditionally observed in economic contagion alone. We also find that network structure impacts market resilience and that the randomization of the social network of the market participants can reduce system fragility when there is herd behavior. Our work indicates that under coupled contagion mechanisms network resilience can exhibit a fundamentally different behavior, i.e., an abrupt transition. It also reveals the extreme risk when a system has coupled socio-economic risks, and this could be of interest to both policy makers and market practitioners. Copyright (C) EPLA, 2016.
+C1 [Zhang, Xin; Hu, Ning] Shanghai Maritime Univ, Coll Transport & Commun, Shanghai 201306, Peoples R China.
+   [Feng, Ling] Agcy Sci Technol & Res, Inst High Performance Comp, Complex Syst Grp, Singapore 138632, Singapore.
+   [Stanley, H. Eugene] Boston Univ, Ctr Polymer Studies, Boston, MA 02215 USA.
+   [Stanley, H. Eugene] Boston Univ, Dept Phys, 590 Commonwealth Ave, Boston, MA 02215 USA.
+   [Berman, Yonatan] Tel Aviv Univ, Sch Phys & Astron, Tel Aviv, Israel.
+RP Zhang, X (reprint author), Shanghai Maritime Univ, Coll Transport & Commun, Shanghai 201306, Peoples R China.
+FU National Science Foundation of ChinaNational Natural Science Foundation
+   of China [71601112]; Shanghai Pujiang ProgramShanghai Pujiang Program
+   [15PJC061]; NSFNational Science Foundation (NSF) [PHY 1444389, PHY
+   1505000, CMMI 1125290, CHE-1213217]; DTRA Grant [HDTRA1-14-1-0017]; DOE
+   ContractUnited States Department of Energy (DOE) [DE-AC07-05Id14517]
+FX This work was supported by Project 71601112 by National Science
+   Foundation of China, and Shanghai Pujiang Program via Grant 15PJC061.
+   The Boston University work was supported by NSF Grants PHY 1444389, PHY
+   1505000, CMMI 1125290, and CHE-1213217, and by DTRA Grant
+   HDTRA1-14-1-0017 and DOE Contract DE-AC07-05Id14517.
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Borgatti SP, 2009, SCIENCE, V323, P892, DOI 10.1126/science.1165821
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Buldyrev SV, 2010, NATURE, V464, P1025, DOI 10.1038/nature08932
+   Cai WR, 2015, NAT PHYS, V11, P936, DOI 10.1038/NPHYS3457
+   Cainelli G, 2012, J EVOL ECON, V22, P711, DOI 10.1007/s00191-012-0280-6
+   Caldarelli G, 2013, NAT PHYS, V9, P125, DOI 10.1038/nphys2580
+   Callaway DS, 2000, PHYS REV LETT, V85, P5468, DOI 10.1103/PhysRevLett.85.5468
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Crucitti P, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.045104
+   FISHER E., 2013, ANAL EC, V28, P109
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gao JX, 2015, ENERGIES, V8, P12187, DOI 10.3390/en81012187
+   Garas A, 2010, NEW J PHYS, V12, DOI 10.1088/1367-2630/12/11/113043
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   HIRSHLEIFER D. A., 2009, THOUGHT BEHAV CONTAG
+   Huang X, 2013, SCI REP-UK, V3, DOI 10.1038/srep02317
+   Jackson M.O., 2008, SOCIAL EC NETWORKS, V3
+   Levy-Carciente S, 2015, J BANK FINANC, V59, P164, DOI 10.1016/j.jbankfin.2015.05.008
+   Majdandzic A, 2014, NAT PHYS, V10, P34, DOI [10.1038/NPHYS2819, 10.1038/nphys2819]
+   PECKHAM R., 2013, J PUBLIC HLTH, P1
+   Podobnik B, 2014, EPL-EUROPHYS LETT, V106, DOI 10.1209/0295-5075/106/68003
+   Scherer CW, 2003, RISK ANAL, V23, P261, DOI 10.1111/1539-6924.00306
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Starr R., 2003, STRATEGY BUSINESS, V30, P70
+   THOMAS KAUE DAL'MASO PERON, 2012, CHAOS, V22
+   Toivanen M., 2013, 19 BANK FINL
+   Townsend RR, 2015, MANAGE SCI, V61, P2782, DOI 10.1287/mnsc.2014.2110
+   Tucker P., 2009, BARCL ANN LECT LOND
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+   Zhang X, 2014, EPL-EUROPHYS LETT, V108, DOI 10.1209/0295-5075/108/58001
+   Zhang X, 2014, PHYSICA A, V415, P43, DOI 10.1016/j.physa.2014.07.068
+NR 35
+TC 11
+Z9 11
+U1 3
+U2 15
+PU IOP PUBLISHING LTD
+PI BRISTOL
+PA TEMPLE CIRCUS, TEMPLE WAY, BRISTOL BS1 6BE, ENGLAND
+SN 0295-5075
+EI 1286-4854
+J9 EPL-EUROPHYS LETT
+JI EPL
+PD OCT
+PY 2016
+VL 116
+IS 1
+AR 18001
+DI 10.1209/0295-5075/116/18001
+PG 6
+WC Physics, Multidisciplinary
+SC Physics
+GA EC8CY
+UT WOS:000388369100025
+DA 2019-12-27
+ER

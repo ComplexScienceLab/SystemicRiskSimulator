@@ -1,0 +1,491 @@
+
+PT J
+AU Lopez-Espinosa, G
+   Moreno, A
+   Rubia, A
+   Valderrama, L
+AF Lopez-Espinosa, German
+   Moreno, Antonio
+   Rubia, Antonio
+   Valderrama, Laura
+TI Short-term wholesale funding and systemic risk: A global CoVaR approach
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Systemic importance; Liquidity risk; Macroprudential regulation
+ID LIQUIDITY
+AB We use the CoVaR approach to identify the main factors behind systemic risk in a set of large international banks. We find that short-term wholesale funding is a key determinant in triggering systemic risk episodes. In contrast, we find weaker evidence that either size or leverage contributes to systemic risk within the class of large international banks. We also show that asymmetries based on the sign of bank returns play an important role in capturing the sensitivity of system-wide risk to individual bank returns. Since short-term wholesale funding emerges as the most relevant systemic factor, our results support the Basel Committee's proposal to introduce a net stable funding ratio, penalizing excessive exposure to liquidity risk. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Valderrama, Laura] Int Monetary Fund, Washington, DC 20431 USA.
+   [Lopez-Espinosa, German; Moreno, Antonio] Univ Navarra, Sch Econ & Business Adm, E-31080 Pamplona, Spain.
+   [Rubia, Antonio] Univ Alicante, Dept Financial Econ, Alicante, Spain.
+RP Valderrama, L (reprint author), Int Monetary Fund, Washington, DC 20431 USA.
+EM glespinosa@unav.es; antmoreno@unav.es; antonio.rubia@ua.es;
+   LValderramaFerrando@imf.org
+RI Moreno, Antonio/P-7014-2017; Lopez-Espinosa, German/C-8256-2017
+OI Moreno, Antonio/0000-0003-3244-3028; Lopez-Espinosa,
+   German/0000-0003-4520-0789; Valderrama, Laura/0000-0001-5968-6092
+CR Acharya V, 2010, 16395 NBER
+   Acharya V. V., 2010, 1002 FED RES BANK CL
+   Adrian T., 2011, COVAR
+   Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Allen F, 2010, FINANCIAL CONNECTION
+   Ang A, 2006, REV FINANC STUD, V19, P1191, DOI 10.1093/rfs/hhj035
+   Billio M., 2010, MEASURING SYSTEMIC R
+   Bisias D., 2012, 1 US DEP TREAS OFF F
+   Brownlees C. T., 2011, VOLATILITY CORRELATI
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Cao Z., 2010, SHAPLEY VALUE COVAR
+   Cont R., 2009, TOO INTERCONNECTED F
+   De Nicolo G., 2010, SYSTEMIC RISK MACROE
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   Girardi G., 2011, SYSTEMIC RISK MEASUR
+   Goodhart C., 2009, BANKING STABILITY ME
+   Gray Dale F., 2010, J INVESTMENT MANAGEM, V8, P23
+   Huang R, 2011, J FINANC INTERMED, V20, P248, DOI 10.1016/j.jfi.2010.06.003
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   International Monetary Fund, 2010, GLOB FIN STAB REP
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kritzman M., 2010, PRINCIPAL COMPONENTS
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Lopez-Espinosa G., 2012, SYSTEMIC RISK ASYMME
+   Martinez-Jaramillo S, 2010, J ECON DYN CONTROL, V34, P2358, DOI 10.1016/j.jedc.2010.06.004
+   Perotti E.C., 2011, PIGOVIAN APPROACH LI
+   Ratnovski L, 2009, J FINANC INTERMED, V18, P541, DOI 10.1016/j.jfi.2007.08.001
+   Roengiptya R, 2011, 022010 BANK THAIL
+   Tarashev Nicola, 2009, BIS Q REV, P75
+   Walter S., 2011, C BAS 3 FIN STAB I A
+   Zhou C., 2010, SYSTEMATIC RISK ADVE
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 32
+TC 60
+Z9 63
+U1 5
+U2 53
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD DEC
+PY 2012
+VL 36
+IS 12
+BP 3150
+EP 3162
+DI 10.1016/j.jbankfin.2012.04.020
+PG 13
+WC Business, Finance; Economics
+SC Business & Economics
+GA 027ZZ
+UT WOS:000310393900004
+DA 2019-12-28
+ER
+
+PT J
+AU Zhang, JY
+   Cheng, L
+   Wang, HQ
+AF Zhang, Jinyu
+   Cheng, Lin
+   Wang, Huaiqing
+TI A multi-agent-based decision support system for bankruptcy contagion
+   effects
+SO EXPERT SYSTEMS WITH APPLICATIONS
+LA English
+DT Article
+DE Bankruptcy filing; Software agents; Multi-agent-based system; Ontology
+ID ONTOLOGY
+AB With the increasing interdependence of marketing participants, distress experienced by a specific entity may cause other connecting firms to encounter financial difficulties, leading to a negative impact on their stock valuations. At the same time, individual investors have a great need to gain relevant information for portfolio risk management. The monitoring vision cannot be limited to investors' portfolios but must take into account any potential candidates affected. Based on the ontological knowledge model of inter-firm relationships, the proposed multi-agent decision support system continuously observes real-time news reports and forecasts their potential impact on the corresponding stock price. After identifying relating companies for which significant market reactions can be expected, a wireless push-based message service promptly supplies information. A case study is used to illustrate the multi-agent-based decision support system (MAB-DSS) implementation and its use. The example shows that the MAB-DSS can automate the solution for intricate and dynamic valuation effects among interdependent firms and provide constructive advice for individual investors. (C) 2011 Elsevier Ltd. All rights reserved.
+C1 [Zhang, Jinyu] Nanjing Univ, Software Inst, Nanjing, Jiangsu, Peoples R China.
+   [Cheng, Lin] USTC CityU Joint Adv Res Ctr, Suzhou, Peoples R China.
+   [Cheng, Lin; Wang, Huaiqing] City Univ Hong Kong, Dept Informat Syst, Kowloon, Hong Kong, Peoples R China.
+RP Zhang, JY (reprint author), Nanjing Univ, Software Inst, 22 Hankou Rd, Nanjing, Jiangsu, Peoples R China.
+EM zhjinyu@software.nju.edu.cn
+RI Wang, Huai/B-7562-2013
+OI Wang, Huai/0000-0002-5404-3140; Zhang, Jinyu/0000-0002-0628-8856
+FU Fundamental Research Funds for the Central Universities,
+   ChinaFundamental Research Funds for the Central Universities
+   [2010-VI-001]; Wuhan University of Technology, China; City University of
+   Hong KongCity University of Hong Kong
+FX This research was supported by the Fundamental Research Funds for the
+   Central Universities, China (Grant No. 2010-VI-001), and the authors
+   would also like to thank Wuhan University of Technology, China and City
+   University of Hong Kong for their supports.
+CR AXTELL R, 2000, 17 BROOK I CTR SOC E
+   BARCLAY MJ, 1988, J FINANC ECON, V21, P71, DOI 10.1016/0304-405X(88)90032-3
+   Bellifemine F., 2007, DEV MULTIAGENT SYSTE
+   Bordini R. H., 2005, JASON MANUAL RELEASE
+   Bordini RH, 2006, INFORM-J COMPUT INFO, V30, P33
+   Bradshaw J. M., 1997, SOFTWARE AGENTS
+   Braubach L., 2004, MAIN C NET OBJ DAYS
+   Bresciani P, 2004, AUTON AGENT MULTI-AG, V8, P203, DOI 10.1023/B:AGNT.0000018806.20944.ef
+   BUSETTA P, 1999, AGENTLINK NEWS LETT, V2
+   Carling Kenneth, 2004, 168 SVER RIKSB
+   Clark KL, 2007, INT J HUM-COMPUT ST, V65, P640, DOI 10.1016/j.ijhcs.2007.03.004
+   Deloach SA, 2001, INT J SOFTW ENG KNOW, V11, P231, DOI 10.1142/S0218194001000542
+   Dey MK, 2007, J BUS FINAN ACCOUNT, V34, P269, DOI 10.1111/j.1468-5957.2006.00650.x
+   Drogoul A., 2002, MABS, P1
+   Farmer JD, 2009, NATURE, V460, P685, DOI 10.1038/460685a
+   Ferber J., 1999, MULTIAGENT SYSTEM IN
+   FISHWICK P, 1996, IEEE POTENTIALS  FEB, P24
+   Fuentes V, 2006, LECT NOTES COMPUT SC, V4224, P1199
+   Gatti DD, 2006, PHYSICA A, V370, P68, DOI 10.1016/j.physa.2006.04.115
+   GRUBER TR, 1993, KNOWL ACQUIS, V5, P199, DOI 10.1006/knac.1993.1008
+   Jennings N.R., 1998, AUTON AGENT MULTI-AG, V1, P7, DOI DOI 10.1023/A:1010090405266
+   Kiyotaki N, 2002, AM ECON REV, V92, P46, DOI 10.1257/000282802320188989
+   Krafzig D., 2004, ENTERPRISE SOA SERVI
+   Lavbic D, 2010, TECHNOL ECON DEV ECO, V16, P327, DOI 10.3846/tede.2010.21
+   LeBaron B, 2000, J ECON DYN CONTROL, V24, P679, DOI 10.1016/S0165-1889(99)00022-6
+   Lin Cheng, 2010, 2010 International Conference on Electronics and Information Engineering (ICEIE 2010), P367, DOI 10.1109/ICEIE.2010.5559856
+   Meditskos G, 2008, IEEE T KNOWL DATA EN, V20, P397, DOI 10.1109/TKDE.2007.190699
+   MENTGES E, 1999, J ARTIFICIAL SOC SOC, V2
+   Mujica-V VE, 2005, 2005 IEEE/WIC/ACM International Conference on Intelligent Agent Technology, Proceedings, P148
+   Orgun B, 2006, COMPUT BIOL MED, V36, P817, DOI 10.1016/j.compbiomed.2005.04.010
+   Pokahr A, 2005, MU S ART SOC SIM ORG, V15, P149, DOI 10.1007/0-387-26350-0_6
+   Qiu RG, 2006, J INTELL MANUF, V17, P99, DOI 10.1007/s10845-005-5515-z
+   Soo VW, 2006, EXPERT SYST APPL, V31, P766, DOI 10.1016/j.eswa.2006.01.014
+   Sycara K., 2001, CMURITR0105
+   Sycara KP, 1998, AI MAG, V19, P79
+   Tseng FSC, 2006, DECIS SUPPORT SYST, V42, P727, DOI 10.1016/j.dss.2005.02.011
+   Vanbergue D., 2003, THESIS U PARIS 6, pVI
+   Vasilecas O, 2006, LECT NOTES COMPUT SC, V4243, P187
+   Verstichel S, 2008, FOURTH INTERNATIONAL CONFERENCE ON AUTONOMIC AND AUTONOMOUS SYSTEMS (ICAS 2008), P70, DOI 10.1109/ICAS.2008.17
+   Wand Y, 2002, INFORM SYST RES, V13, P363, DOI 10.1287/isre.13.4.363.69
+   Weber R., 2003, Journal of Database Management, V14, P1, DOI 10.4018/jdm.2003070101
+   Weiss G., 1999, MULTIAGENT SYSTEMS M
+   WOOLDRIDGE M, 1995, KNOWL ENG REV, V10, P115, DOI 10.1017/S0269888900008122
+   Wooldridge M. J, 2002, INTRO MULTIAGENT SYS
+   Ye K, 2009, J INF SCI, V35, P548, DOI 10.1177/0165551509105194
+NR 45
+TC 6
+Z9 6
+U1 0
+U2 46
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 0957-4174
+EI 1873-6793
+J9 EXPERT SYST APPL
+JI Expert Syst. Appl.
+PD APR
+PY 2012
+VL 39
+IS 5
+BP 5920
+EP 5934
+DI 10.1016/j.eswa.2011.11.112
+PG 15
+WC Computer Science, Artificial Intelligence; Engineering, Electrical &
+   Electronic; Operations Research & Management Science
+SC Computer Science; Engineering; Operations Research & Management Science
+GA 903XF
+UT WOS:000301155300132
+DA 2019-12-27
+ER
+
+PT J
+AU Ackumey, MM
+   Gyapong, M
+   Pappoe, M
+   Kwakye-Maclean, C
+   Weiss, MG
+AF Ackumey, Mercy M.
+   Gyapong, Margaret
+   Pappoe, Matilda
+   Kwakye-Maclean, Cynthia
+   Weiss, Mitchell G.
+TI Illness meanings and experiences for pre-ulcer and ulcer conditions of
+   Buruli ulcer in the Ga-West and Ga-South Municipalities of Ghana
+SO BMC PUBLIC HEALTH
+LA English
+DT Article
+ID MYCOBACTERIUM-ULCERANS; RISK-FACTORS; TUBERCULOSIS-CONTROL; DISEASE;
+   INFECTION; TRANSMISSION; SEEKING; STREPTOMYCIN; COMBINATION; SERVICES
+AB Background: Ghana is a Buruli ulcer (BU) endemic country yet there is paucity of socio-cultural research on BU. Examining distinctive experiences and meanings for pre-ulcers and ulcers of BU may clarify the disease burden, illness experience and local perceptions of causes and spread, and environmental features of BU, which are useful to guide public health programmes and future research. This study aimed to explain local meanings and experiences of BU for persons with pre-ulcers and ulcers in the Ga-West and Ga-South municipalities in Accra.
+   Methods: Semi-structured interviews based on the Explanatory Model Interview Catalogue framework were administered to 181 respondents comprising 15 respondents with pre-ulcers and 166 respondents with ulcers. The Wilcoxon rank-sum test was used to compare categories of illness experiences (PD) and perceived causes (PC) among respondents with pre-ulcer and ulcer conditions. The Fisher's exact test was used to compare the most troubling PD and the most important PC variables. Qualitative phenomenological analysis of respondents' narratives clarified illness experiences and meanings with reference to PC and PD variables.
+   Results: Families of respondents with pre-ulcers and the respondents themselves were often anxious about disease progression, while families of respondents with ulcers, who had to give care, worried about income loss and disruption of school attendance. Respondents with pre-ulcers frequently reported swimming in ponds and rivers as a perceived cause and considered it as the most important PC (53.3%). Respondents with ulcers frequently attributed their BU illness to witchcraft (64.5%) and respondents who claimed they had no water contact, questioned the credibility of health messages
+   Conclusions: Affected persons with pre-ulcers are likely to delay treatment because of social and financial constraints and the absence of pain. Scepticism on the role of water in disease contagion and prolonged healing is perceived to make ideas of witchcraft as a PC more credible, among respondents with ulcers. Health messages should address issues of locally perceived risk and vulnerability. Guided by study findings, further research on the role of environmental, socio-cultural and genetic factors in BU contagion, is also needed to clarify and formulate health messages and strengthen public health initiatives.
+C1 [Ackumey, Mercy M.; Gyapong, Margaret; Pappoe, Matilda] Univ Ghana, Sch Publ Hlth, Coll Hlth Sci, Legon, Ghana.
+   [Ackumey, Mercy M.; Weiss, Mitchell G.] Swiss Trop & Publ Hlth Inst, Basel, Switzerland.
+   [Ackumey, Mercy M.; Weiss, Mitchell G.] Univ Basel, Basel, Switzerland.
+   [Gyapong, Margaret] Ghana Hlth Serv, Dodowa Hlth Res Ctr, Navrongo, Ghana.
+   [Kwakye-Maclean, Cynthia] Ga W Municipal Hlth Adm, Amasaman, Ghana.
+RP Ackumey, MM (reprint author), Univ Ghana, Sch Publ Hlth, Coll Hlth Sci, Legon, Ghana.
+EM Mercy.Ackumey@unibas.ch
+OI Gyapong, Margaret/0000-0002-4818-3497
+FU Global Buruli Ulcer Initiative (GBUI) of the World Health Organisation
+FX We acknowledge the corporation and participation of all respondents and
+   express our gratitude to all health personnel and CBSVs who helped to
+   locate community participants. Special thanks go to the staff of the
+   Amasaman hospital BU ward for their corporation, Ms. Florence Foli,
+   field assistant and Mr. Donald Okai, field driver. This study was funded
+   by the Global Buruli Ulcer Initiative (GBUI) of the World Health
+   Organisation. The GBUI played no role in the study design, collection,
+   analysis and interpretation of data, in the writing of the manuscript
+   and in the decision to submit the manuscript for publication.
+CR Ackumey MM, 2011, AM J TROP MED HYG, V85, P1106, DOI 10.4269/ajtmh.2011.11-0429
+   Ackumey MM, 2011, PLOS NEGLECT TROP D, V5, DOI 10.1371/journal.pntd.0001187
+   Adamba C., 2011, AFRICAN STUDY MONOGR, V32, P1
+   Agbenorku P, 2011, T ROY SOC TROP MED H, V105, P459, DOI 10.1016/j.trstmh.2011.05.003
+   Ahorlu CK, 2005, MALARIA J, V4, DOI 10.1186/1475-2875-4-47
+   Aiga H, 2004, AM J TROP MED HYG, V71, P387, DOI 10.4269/ajtmh.2004.71.387
+   Amofah G, 2002, EMERG INFECT DIS, V8, P167, DOI 10.3201/eid0802.010119
+   [Anonymous], 2008, Wkly Epidemiol Rec, V83, P145
+   [Anonymous], 1971, T ROY SOC TROP MED H, V65, P763, DOI 10.1016/0035-9203(71)90090-3
+   Asiedu K, 1998, AM J TROP MED HYG, V59, P1015, DOI 10.4269/ajtmh.1998.59.1015
+   Asiedu K, 2000, BURULI ULCER MYCOBAC, P5
+   Aujoulat I, 2003, TROP MED INT HEALTH, V8, P750, DOI 10.1046/j.1365-3156.2003.01089.x
+   BAYLEY AC, 1971, BRIT MED J, V2, P401, DOI 10.1136/bmj.2.5758.401-c
+   Brieger WR, 1996, ACTA TROP, V61, P93, DOI 10.1016/0001-706X(95)00104-M
+   Cairncross S, 1996, ACTA TROP, V61, P121, DOI 10.1016/0001-706X(95)00106-O
+   Chauty A, 2007, ANTIMICROB AGENTS CH, V51, P4029, DOI 10.1128/AAC.00175-07
+   Debacker M, 2004, TROP MED INT HEALTH, V9, P1297, DOI 10.1111/j.1365-3156.2004.01339.x
+   Debacker M, 2006, EMERG INFECT DIS, V12, P1325, DOI 10.3201/eid1209.050598
+   Duker AA, 2006, ENVIRON INT, V32, P567, DOI 10.1016/j.envint.2006.01.002
+   Etuaful S, 2005, ANTIMICROB AGENTS CH, V49, P3182, DOI 10.1128/AAC.49.8.3182-3186.2005
+   Fyfe JAM, 2010, PLOS NEGLECT TROP D, V4, DOI 10.1371/journal.pntd.0000791
+   Ga-South Municipal Directorate, GREAT ACCR WEIJ MUN
+   Gordillo V, 1999, AIDS, V13, P1763, DOI 10.1097/00002030-199909100-00021
+   Grietens KP, 2008, PLOS NEGLECT TROP D, V2, DOI 10.1371/journal.pntd.0000321
+   Gyapong M, 1996, SOC SCI MED, V43, P235, DOI 10.1016/0277-9536(95)00365-7
+   Johansson E, 2002, QUAL HEALTH RES, V12, P473, DOI 10.1177/104973202129120025
+   Johnson PDR, 1999, J MED MICROBIOL, V48, P511, DOI 10.1099/00222615-48-6-511
+   Johnson PDR, 2005, PLOS MED, V2, P282, DOI 10.1371/journal.pmed.0020108
+   Johnson RC, 2005, EMERG INFECT DIS, V11, P500, DOI 10.3201/eid1103.040597
+   MACCALLUM P, 1948, J PATHOL BACTERIOL, V60, P93, DOI 10.1002/path.1700600111
+   Macq J, 2007, TROP MED INT HEALTH, V12, P873, DOI 10.1111/j.1365-3156.2007.01858.x
+   MARSTON BJ, 1995, AM J TROP MED HYG, V52, P219, DOI 10.4269/ajtmh.1995.52.219
+   Merritt RW, 2010, PLOS NEGLECT TROP D, V4, DOI 10.1371/journal.pntd.0000911
+   Morisky DE, 2001, PUBLIC HEALTH REP, V116, P568, DOI 10.1016/S0033-3549(04)50089-4
+   Muela Ribera Joan, 2009, PLoS Negl Trop Dis, V3, pe445, DOI 10.1371/journal.pntd.0000445
+   Mulder AA, 2008, T ROY SOC TROP MED H, V102, P912, DOI 10.1016/j.trstmh.2008.05.026
+   Nienhuis WA, 2010, LANCET, V375, P664, DOI 10.1016/S0140-6736(09)61962-0
+   Noeske J, 2004, AM J TROP MED HYG, V70, P520, DOI 10.4269/ajtmh.2004.70.520
+   Nyonator FK, 2005, HEALTH POLICY PLANN, V20, P25, DOI 10.1093/heapol/czi003
+   Portaels F, 1999, LANCET, V353, P986, DOI 10.1016/S0140-6736(98)05177-0
+   Portaels F, 2009, CLIN DERMATOL, V27, P291, DOI 10.1016/j.clindermatol.2008.09.021
+   Pouillot R, 2007, PLOS NEGLECT TROP D, V1, DOI 10.1371/journal.pntd.0000101
+   Raghunathan PL, 2005, CLIN INFECT DIS, V40, P1445, DOI 10.1086/429623
+   Renzaho AMN, 2007, TROP MED INT HEALTH, V12, P445, DOI 10.1111/j.1365-3156.2006.01795.x
+   Sagbakken M, 2008, BMC PUBLIC HEALTH, V8, DOI 10.1186/1471-2458-8-11
+   Stienstra Y, 2004, AM J TROP MED HYG, V70, P318, DOI 10.4269/ajtmh.2004.70.318
+   Stienstra Y, 2002, AM J TROP MED HYG, V67, P207, DOI 10.4269/ajtmh.2002.67.207
+   Suykerbuyk P, 2009, AM J TROP MED HYG, V81, P888, DOI 10.4269/ajtmh.2009.09-0049
+   van der Werf TS, 1999, LANCET, V354, P1013, DOI 10.1016/S0140-6736(99)01156-3
+   van der Werf TS, 2005, B WORLD HEALTH ORGAN, V83, P785
+   Vandelannoote K, 2010, FEMS MICROBIOL LETT, V304, P191, DOI 10.1111/j.1574-6968.2010.01902.x
+   VANDERWERF TS, 1989, T ROY SOC TROP MED H, V83, P410, DOI 10.1016/0035-9203(89)90521-X
+   WALSH DS, 2009, CLIN MICROBIOL NEWSL, V31, P119, DOI DOI 10.1016/J.CLINMICNEWS.2009.07.004
+   Weiss M, 1997, TRANSCULT PSYCHIATRY, V34, P235, DOI [10.1177/136346159703400204, DOI 10.1177/136346159703400204]
+   Weiss MG, 2008, INT J TUBERC LUNG D, V12, P837
+   WHO, 2009, NEGL TROP DIS HIDD S
+   WHO Global Buruli Ulcer Initiative, 1998, REC BUR ULC YOUR COM
+   Williamson HR, 2008, PLOS NEGLECT TROP D, V2, DOI 10.1371/journal.pntd.0000205
+   Worley S, 2009, GLOB PUBLIC HEALTH, V4, P367, DOI 10.1080/17441690801994301
+   Yirga D, 2010, PARASITE VECTOR, V3, DOI 10.1186/1756-3305-3-48
+NR 60
+TC 9
+Z9 9
+U1 0
+U2 4
+PU BMC
+PI LONDON
+PA CAMPUS, 4 CRINAN ST, LONDON N1 9XW, ENGLAND
+EI 1471-2458
+J9 BMC PUBLIC HEALTH
+JI BMC Public Health
+PD APR 3
+PY 2012
+VL 12
+AR 264
+DI 10.1186/1471-2458-12-264
+PG 12
+WC Public, Environmental & Occupational Health
+SC Public, Environmental & Occupational Health
+GA 942BZ
+UT WOS:000304015800001
+PM 22471884
+OA DOAJ Gold, Green Accepted, Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Dhaene, J
+   Linders, D
+   Schoutens, W
+   Vyncke, D
+AF Dhaene, Jan
+   Linders, Daniel
+   Schoutens, Wim
+   Vyncke, David
+TI The Herd Behavior Index: A new measure for the implied degree of
+   co-movement in stock markets
+SO INSURANCE MATHEMATICS & ECONOMICS
+LA English
+DT Article
+DE Comonotonicity; Herd behavior; Systemic risk; Correlation; VIX
+   volatility index
+ID ACTUARIAL SCIENCE; UPPER-BOUNDS; OPTIONS; COMONOTONICITY; FINANCE
+AB We introduce a new and easy-to-calculate measure for the expected degree of herd behavior or co-movement between stock prices. This forward looking measure is model-independent and based on observed option data. It is baptized the Herd Behavior Index (HIX).
+   The degree of co-movement in a stock market can be determined by comparing the observed market situation with the extreme (theoretical) situation under which the whole system is driven by a single factor. The HIX is then defined as the ratio of an option-based estimate of the risk-neutral variance of the market index and an option-based estimate of the corresponding variance in case of the extreme single factor market situation.
+   The HIX can be determined for any market index provided an appropriate series of vanilla options is traded on this index as well as on its components. As an illustration, we determine historical values of the 30-days HIX for the Dow Jones Industrial Average, covering the period January 2003 to October 2009. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Dhaene, Jan; Linders, Daniel; Schoutens, Wim] Katholieke Univ Leuven, Louvain, Belgium.
+   [Vyncke, David] UGent, Ghent, Belgium.
+RP Linders, D (reprint author), Katholieke Univ Leuven, Louvain, Belgium.
+EM Jan.Dhaene@econ.kuleuven.be; Daniel.Linders@econ.kuleuven.be;
+   wim@schoutens.be; david.vyncke@UGent.be
+RI Linders, Daniel/M-3241-2014; Dhaene, Jan/K-6178-2012; Dhaene,
+   Jan/I-9656-2019
+OI Dhaene, Jan/0000-0003-4314-8809; Linders, Daniel/0000-0003-4206-2149
+FU Onderzoeksfonds K.U. LeuvenKU Leuven [GOA/07, GOA/12/002/TBA]
+FX Jan Dhaene, Daniel Linders and Wim Schoutens acknowledge the financial
+   support of the Onderzoeksfonds K.U. Leuven (GOA/07: Risk Modeling and
+   Valuation of Insurance and Financial cash Flows, with Applications to
+   Pricing, Provisioning and Solvency and GOA/12/002/TBA: Management of
+   Financial and Actuarial Risks: Modeling, Regulation, Incentives and
+   Market Effects).
+CR Carr P, 2001, HANDBOOKS IN MATHEMATICAL FINANCE: OPTION PRICING, INTEREST RATES AND RISK MANAGEMENT, P458
+   CARR P, 2006, J DERIV, V13, P13, DOI DOI 10.3905/JOD.2006.616865
+   Chen X, 2008, INSUR MATH ECON, V42, P1067, DOI 10.1016/j.insmatheco.2008.01.002
+   Cheung K. C., 2011, SCANDINAVIA IN PRESS
+   Cheung KC, 2010, INSUR MATH ECON, V47, P130, DOI 10.1016/j.insmatheco.2010.06.004
+   Chicago Board Options Exchange, 2009, CBOE VOL INDEX VIX
+   Deelstra G, 2010, ADV MATH METHODS FIN
+   Dhaene J, 2002, INSUR MATH ECON, V31, P3, DOI 10.1016/S0167-6687(02)00134-8
+   Dhaene J, 2002, INSUR MATH ECON, V31, P133, DOI 10.1016/S0167-6687(02)00135-X
+   Dhaene J., 2011, FIX FEAR INDEX MEASU
+   Dhaene J., 2010, COMONOTONIC PRICES A
+   Embrechts P., 1999, RISK MANAGEMENT VALU, P176
+   Harmon D., 2011, PREDICTING EC MARKET
+   Hobson D, 2005, QUANT FINANC, V5, P329, DOI 10.1080/14697680500151392
+   Laurence P, 2008, COMMUNICATION    MAY
+   Laurence P, 2008, EUR J FINANC, V14, P717, DOI 10.1080/13518470802173164
+   Linders D., 2012, INDEX OPTIONS MODEL
+   Schoutens W, 2005, QUANT FINANC, V5, P525, DOI 10.1080/14697680500401490
+NR 18
+TC 26
+Z9 26
+U1 0
+U2 23
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-6687
+J9 INSUR MATH ECON
+JI Insur. Math. Econ.
+PD MAY
+PY 2012
+VL 50
+IS 3
+BP 357
+EP 370
+DI 10.1016/j.insmatheco.2012.01.005
+PG 14
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 932MO
+UT WOS:000303295400007
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Ye, WY
+   Liu, XQ
+   Miao, BQ
+AF Ye, Wuyi
+   Liu, Xiaoquan
+   Miao, Baiqi
+TI Measuring the subprime crisis contagion: Evidence of change point
+   analysis of copula functions
+SO EUROPEAN JOURNAL OF OPERATIONAL RESEARCH
+LA English
+DT Article
+DE Financial contagion; Archimedean copula functions; Tail dependence;
+   Change point tests; Credit crunch; Risk management
+ID INTERNATIONAL EQUITY MARKETS; FINANCIAL CONTAGION; STOCK MARKETS; ASIAN
+   CRISIS; DEPENDENCE; CURRENCY; DISTRIBUTIONS; VOLATILITY; INFERENCE;
+   MODELS
+AB In this paper, we first determine the existence of structural changes in the dependence between time series of equity index returns of two markets using the change point testing method. The method is based on Archimedean copula functions, which are able to comprehensively describe dependence characteristics of random variables. The degree of financial contagion between markets is subsequently estimated using the tail dependence coefficient of copula functions before and after the change point. We empirically test our method by investigating financial contagion during the subprime crisis between the US S&P 500 index and five Asian markets, namely China, japan, Korea, Hong Kong and Taiwan. Our results show that a statistically significant change point exists in the dependence between the US market and all Asian stock markets except Taiwan. The upper tail dependence is larger after the time of change, implying the existence of contagion during the banking crisis between the US and the Asian economies. The degree of financial contagion is also estimated and found to be consistent with market events and media reports during that period. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Liu, Xiaoquan] Univ Essex, Essex Business Sch, Colchester CO4 3SQ, Essex, England.
+   [Liu, Xiaoquan] Univ Essex, Essex Finance Ctr, Colchester CO4 3SQ, Essex, England.
+   [Ye, Wuyi; Miao, Baiqi] Univ Sci & Technol China, Dept Stat & Finance, Hefei 230026, Peoples R China.
+RP Liu, XQ (reprint author), Univ Essex, Essex Business Sch, Colchester CO4 3SQ, Essex, England.
+EM wyye@ustc.edu.cn; liux@essex.ac.uk; bqmiao@ustc.edu.cn
+OI Liu, Xiaoquan/0000-0002-1765-4524
+FU Natural Science Foundation of ChinaNational Natural Science Foundation
+   of China [71001095]; National PhD Foundation of China [20103402120010]
+FX We are grateful to the Editor and two anonymous referees for helpful
+   comments which have substantially improved the exposition of the paper.
+   This research is supported partially by the Natural Science Foundation
+   of China (No. 71001095) and the National PhD Foundation of China (No.
+   20103402120010).
+CR Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baig T., 1999, IMF STAFF PAPERS, V46
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   Boyer B. H., 1999, 597 BOARD GOV FED RE
+   Calvo S, 1996, PRIVATE CAPITAL FLOW
+   Cherubini U., 2004, COPULA METHODS FINAN
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Corsetti G, 1999, JPN WORLD ECON, V11, P305, DOI 10.1016/S0922-1425(99)00019-5
+   Dias A., 2004, WILEY FINANCE SERIES, P321
+   Dias A, 2009, EUR J FINANC, V15, P619, DOI 10.1080/13518470701705579
+   Edwards S., 1998, 6756 NBER
+   Embrechts P., 2000, HEAVY TAILED DISTRIB
+   Embrechts P, 2011, TEST-SPAIN, V20, P263, DOI 10.1007/s11749-011-0252-4
+   Favero CA, 2002, J INT ECON, V57, P231, DOI 10.1016/S0022-1996(01)00139-8
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   GENEST C, 1986, AM STAT, V40, P280, DOI 10.2307/2684602
+   Glick R, 1999, J INT MONEY FINANC, V18, P603, DOI 10.1016/S0261-5606(99)00023-6
+   Hamilton D., 1994, J ECONOMETRICS, V64, P307
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Jayech Selma, 2011, International Journal of Mathematics in Operational Research, V3, P636
+   Joe H, 1997, MULTIVARIATE MODELS
+   Kallberg JG, 2005, J BUS, V78, P169, DOI 10.1086/426523
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Klugman SA, 1999, INSUR MATH ECON, V24, P139, DOI 10.1016/S0167-6687(98)00039-0
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Nelsen R.B., 1999, INTRO COPULAS
+   Okimoto T, 2008, J FINANC QUANT ANAL, V43, P787, DOI 10.1017/S0022109000004294
+   Ostermark R, 2001, EUR J OPER RES, V134, P498, DOI 10.1016/S0377-2217(00)00272-1
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2006, J APPL ECONOM, V21, P147, DOI 10.1002/jae.865
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Quintos C, 2001, REV ECON STUD, V68, P633, DOI 10.1111/1467-937X.00184
+   Rodriguez. J., 2007, J EMPIR FINANC, V14, P401
+   Schweizer R., 1983, PROBABILISTIC METRIC
+   Szego G, 2005, EUR J OPER RES, V163, P5, DOI 10.1016/j.ejor.2003.12.016
+   Vostrikova L. J., 1981, SOV MATH DOKL, V24, P55
+   Yang J, 2008, EUR J OPER RES, V184, P291, DOI 10.1016/j.ejor.2006.04.046
+   Ye W., 2007, QUANTITATIVE TECHNIC, V24, P151
+NR 40
+TC 32
+Z9 33
+U1 1
+U2 35
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0377-2217
+J9 EUR J OPER RES
+JI Eur. J. Oper. Res.
+PD OCT 1
+PY 2012
+VL 222
+IS 1
+BP 96
+EP 103
+DI 10.1016/j.ejor.2012.04.004
+PG 8
+WC Management; Operations Research & Management Science
+SC Business & Economics; Operations Research & Management Science
+GA 966UI
+UT WOS:000305862500010
+DA 2019-12-27
+ER

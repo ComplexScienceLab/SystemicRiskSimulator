@@ -1,0 +1,519 @@
+
+PT J
+AU Lavin, JF
+   Valle, MA
+   Magner, NS
+AF Lavin, Jaime F.
+   Valle, Mauricio A.
+   Magner, Nicolas S.
+TI Modeling Overlapped Mutual Funds' Portfolios: A Bipartite Network
+   Approach
+SO COMPLEXITY
+LA English
+DT Article
+ID FINANCIAL NETWORKS; CONTAGION; INDUSTRY; IMPACT; RISK
+AB This paper studies the topology of the Chilean mutual fund industry using networks methods. With the physical positions of the local equity portfolios managed during 2003.01-2017.4, we analyze their connectivity structure in both the mutual funds' bipartite network and their one-mode projection. We estimate network measures to examine the potential effects on the topology arising from changes in the industrial environment and changes in the mutual funds' investment strategies in their overlapped portfolios. Our main results show that changes in the bipartite network and its one-mode projection are correlated with variables related to funds' investment strategies and with industry-specific variables. In consequence, these elements are a new potential of disturbance in the financial network conformed by stocks and mutual funds. We contribute to the existing literature, improving the understanding of the aggregate behavior of a financial sector which despite its economic importance has attracted little attention from a systemic risk perspective.
+C1 [Lavin, Jaime F.] Univ Adolfo Ibanez, Escuela Negocios, Diagonal Las Torres 2640, Santiago 7941169, Chile.
+   [Valle, Mauricio A.; Magner, Nicolas S.] Univ Finis Terrae, Fac Econ & Negocios, Pedro de Valdivia 1509, Santiago 7501015, Chile.
+RP Lavin, JF (reprint author), Univ Adolfo Ibanez, Escuela Negocios, Diagonal Las Torres 2640, Santiago 7941169, Chile.
+EM jaime.lavin@uai.cl
+OI Lavin, Jaime/0000-0003-1380-6938
+FU CONICYT-ChileComision Nacional de Investigacion Cientifica y Tecnologica
+   (CONICYT) [Fondecyt 11160072]
+FX The authors would like to thank CONICYT-Chile under grant Fondecyt
+   11160072 (Mauricio A. Valle), for financially supporting this research.
+CR Abreu MP, 2019, PHYSICA A, V522, P302, DOI 10.1016/j.physa.2019.01.084
+   Albert R, 2002, REV MOD PHYS, V74, P47, DOI 10.1103/RevModPhys.74.47
+   Arcagni A, 2017, EUR J OPER RES, V262, P708, DOI 10.1016/j.ejor.2017.04.028
+   Barrat A, 2004, P NATL ACAD SCI USA, V101, P3747, DOI 10.1073/pnas.0400087101
+   Battiston S, 2004, EUR PHYS J B, V38, P345, DOI 10.1140/epjb/e2004-00127-8
+   Battiston S, 2007, ADV COMPLEX SYST, V10, P29, DOI 10.1142/S0219525907000933
+   Battiston S, 2010, NETWORK SCIENCE: COMPLEXITY IN NATURE AND TECHNOLOGY, P131, DOI 10.1007/978-1-84996-396-1_7
+   Bersier LF, 2002, ECOLOGY, V83, P2394, DOI 10.1890/0012-9658(2002)083[2394:QDOFWM]2.0.CO;2
+   Bikhchandani S, 2001, IMF STAFF PAPERS, V47, P279
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Caccioli F., 2017, J COMPUTATIONAL SOCI, V1, P81, DOI [10.2139/ssrn.3066722, DOI 10.2139/SSRN.3066722]
+   Campbell JY, 2010, REV FINANC STUD, V23, P305, DOI 10.1093/rfs/hhp029
+   Carhart MM, 1997, J FINANC, V52, P57, DOI 10.2307/2329556
+   Cerqueti R., 2018, SYSTEMIC RISK ASSESS
+   Clemente TS, 2019, ROUTL CONTEMP CHINA, P1
+   Cremers KJM, 2009, REV FINANC STUD, V22, P3329, DOI 10.1093/rfs/hhp057
+   D'Errico M., 2010, U STUDI MILANO BICOC
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   Delpini D., 2018, NETWORK US MUTUAL FU
+   Eberhard J, 2017, COMPLEXITY, DOI 10.1155/2017/3979836
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Estrada E, 2015, 1 COURSE NETWORK THE
+   FAMA EF, 1992, J FINANC, V47, P427, DOI 10.2307/2329112
+   Foster JG, 2010, P NATL ACAD SCI USA, V107, P10815, DOI 10.1073/pnas.0912671107
+   Glasserman P, 2016, J ECON LIT, V54, P779, DOI 10.1257/jel.20151228
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Grinblatt M, 1995, AM ECON REV, V85, P1088
+   Haldane Andrew G., 2013, FRAGILE STABILITAT S, P243
+   Kearney C, 2012, EMERG MARK REV, V13, P159, DOI 10.1016/j.ememar.2012.01.003
+   Khorana A, 2005, J FINANC ECON, V78, P145, DOI 10.1016/j.jfineco.2004.08.006
+   LAKONISHOK J, 1992, J FINANC ECON, V32, P23, DOI 10.1016/0304-405X(92)90023-Q
+   Lavin JF, 2014, EMERG MARK FINANC TR, V50, P110, DOI 10.2753/REE1540-496X5005S507
+   Lavin JF, 2014, ACAD-REV LATINOAM AD, V27, P10, DOI 10.1108/ARLA-09-2013-0137
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Newman MEJ, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.026113
+   Newman MEJ, 2003, PHYS REV E, V67, DOI 10.1103/PhysRevE.67.026126
+   Newman MEJ, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.208701
+   Pastor L, 2003, J POLIT ECON, V111, P642
+   Petajisto A, 2013, FINANC ANAL J, V69, P73, DOI 10.2469/faj.v69.n4.7
+   Pollak M, 2017, COMPLEXITY, DOI 10.1155/2017/9895632
+   Rotundo G, 2010, J ECON INTERACT COOR, V5, P191, DOI 10.1007/s11403-010-0068-4
+   SHANNON CE, 1948, BELL SYST TECH J, V27, P623, DOI 10.1002/j.1538-7305.1948.tb00917.x
+   Stracca L, 2006, J ECON SURV, V20, P823, DOI 10.1111/j.1467-6419.2006.00271.x
+   Straka MJ, 2018, J STAT PHYS, V173, P1252, DOI 10.1007/s10955-018-2039-4
+   WARTHER VA, 1995, J FINANC ECON, V39, P209, DOI 10.1016/0304-405X(95)00827-2
+   Wermers R, 1999, J FINANC, V54, P581, DOI 10.1111/0022-1082.00118
+   Zhou T, 2007, PHYS REV E, V76, DOI 10.1103/PhysRevE.76.046115
+NR 48
+TC 0
+Z9 0
+U1 1
+U2 1
+PU WILEY-HINDAWI
+PI LONDON
+PA ADAM HOUSE, 3RD FL, 1 FITZROY SQ, LONDON, WIT 5HE, ENGLAND
+SN 1076-2787
+EI 1099-0526
+J9 COMPLEXITY
+JI Complexity
+PY 2019
+AR 1565698
+DI 10.1155/2019/1565698
+PG 20
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA IJ0HQ
+UT WOS:000475581500001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Billio, M
+   Casarin, R
+   Rossini, L
+AF Billio, Monica
+   Casarin, Roberta
+   Rossini, Luca
+TI Bayesian nonparametric sparse VAR models
+SO JOURNAL OF ECONOMETRICS
+LA English
+DT Article
+DE Bayesian nonparametrics; Bayesian model selection; Connectedness; Large
+   vector autoregression; Multilayer networks; Network communities;
+   Shrinkage
+ID SYSTEMIC RISK; INFERENCE; CONNECTEDNESS; SELECTION; FINANCE
+AB High <THESTERM>dimensional vector</THESTERM> autoregressive (VAR) models require a large number of parameters to be estimated and may suffer of inferential problems. We propose a new <THESTERM>Bayesian</THESTERM> nonparametric (BNP) Lasso <THESTERM>prior</THESTERM> (BNP-Lasso) for high-dimensional VAR models that can improve estimation efficiency and prediction accuracy. Our hierarchical prior overcomes overparametrization and overfitting issues by clustering the VAR coefficients into groups and by shrinking the coefficients of each group toward a common location. Clustering and shrinking effects induced by the BNP-Lasso prior are well suited for the extraction of causal networks from time series, since they account for some stylized facts in real-world networks, which are sparsity, communities structures and heterogeneity in the edges intensity. In order to fully capture the richness of the data and to achieve a better understanding of financial and <THESTERM>macroeconomic</THESTERM> risk, it is therefore crucial that the model used to extract network accounts for these stylized facts. (C) 2019 Elsevier B.V. All rights reserved:
+C1 [Billio, Monica; Casarin, Roberta; Rossini, Luca] Ca Foscari Univ Venice, Venice, Italy.
+   [Rossini, Luca] Free Univ Bozen Bolzano, Bolzano, Italy.
+RP Billio, M (reprint author), Ca Foscari Univ Venice, Venice, Italy.
+EM billio@unive.it; r.casarin@unive.it; luca.rossini@unibz.it
+OI Rossini, Luca/0000-0002-7302-4543
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Ahelegbey DF, 2016, J APPL ECONOMET, V31, P357, DOI 10.1002/jae.2443
+   Ahelgebey D. F., 2016, ANN EC STAT, V123, P333
+   Banbura M, 2010, J APPL ECONOMET, V25, P71, DOI 10.1002/jae.1137
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Barigozzi M., 2018, NETS NETWORK ESTIMAT
+   Bassetti F, 2014, J ECONOMETRICS, V180, P49, DOI 10.1016/j.jeconom.2014.01.007
+   Battiston S, 2012, SCI REP-UK, V2, DOI 10.1038/srep00541
+   Bianchi D, 2019, J ECONOMETRICS, V210, P58, DOI 10.1016/j.jeconom.2018.11.005
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Canova F, 2004, J ECONOMETRICS, V120, P327, DOI 10.1016/S0304-4076(03)00216-1
+   Caron F, 2017, J R STAT SOC B, V79, P1295, DOI 10.1111/rssb.12233
+   Carriero A, 2015, J APPL ECONOMET, V30, P46, DOI 10.1002/jae.2315
+   Carvalho CM, 2007, BIOMETRIKA, V94, P647, DOI 10.1093/biomet/asm056
+   Demirer M, 2018, J APPL ECONOMET, V33, P1, DOI 10.1002/jae.2585
+   Di Lucca MA, 2013, BAYESIAN ANAL, V8, P63, DOI 10.1214/13-BA803
+   Diebold F. X., 2015, MEASURING DYNAMICS G, P45
+   Diebold FX, 2016, J FINANC ECONOMET, V14, P81, DOI 10.1093/jjfinec/nbv021
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Doan TA, 1984, ECONOMET REV, V3, P1, DOI DOI 10.1080/07474938408800053
+   Eichler M., 2013, PHIL T R SOC A, V371
+   FERGUSON TS, 1973, ANN STAT, V1, P209, DOI 10.1214/aos/1176342360
+   Francis N, 2017, J APPL ECONOMET, V32, P1261, DOI 10.1002/jae.2577
+   Gefang D, 2014, INT J FORECASTING, V30, P1, DOI 10.1016/j.ijforecast.2013.04.004
+   George EI, 2008, J ECONOMETRICS, V142, P553, DOI 10.1016/j.jeconom.2007.08.017
+   Griffin JE, 2006, J ECONOMETRICS, V134, P605, DOI 10.1016/j.jeconom.2005.07.007
+   Griffin JE, 2011, J ECONOMETRICS, V162, P383, DOI 10.1016/j.jeconom.2011.03.001
+   Hatjispyros SJ, 2011, COMPUT STAT DATA AN, V55, P2011, DOI 10.1016/j.csda.2010.12.005
+   Hautsch N, 2015, REV FINANC, V19, P685, DOI 10.1093/rof/rfu010
+   Hirano K, 2002, ECONOMETRICA, V70, P781, DOI 10.1111/1468-0262.00305
+   Hjort N. L., 2010, BAYESIAN NONPARAMEIR
+   Huber F, 2017, J BUS ECON STAT, V37, P1
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   Jensen MJ, 2010, J ECONOMETRICS, V157, P306, DOI 10.1016/j.jeconom.2010.01.014
+   Jones B, 2005, STAT SCI, V20, P388, DOI 10.1214/088342305000000304
+   Kalli M, 2018, J ECONOMETRICS, V203, P267, DOI 10.1016/j.jeconom.2017.11.009
+   Kalli M, 2011, STAT COMPUT, V21, P93, DOI 10.1007/s11222-009-9150-y
+   Karlsson S, 2013, HBK ECON, P791, DOI 10.1016/B978-0-444-62731-5.00015-4
+   Kaufmann S, 2017, J APPL ECONOMET, V32, P1123, DOI 10.1002/jae.2566
+   Kaufmann S, 2010, J APPL ECONOMET, V25, P309, DOI 10.1002/jae.1076
+   Kivela M, 2014, J COMPLEX NETW, V2, P203, DOI 10.1093/comnet/cnu016
+   Koop G, 2016, EUR ECON REV, V81, P115, DOI 10.1016/j.euroecorev.2015.09.006
+   Koop GM, 2013, J APPL ECONOMET, V28, P177, DOI 10.1002/jae.1270
+   Korobilis D., 2019, J ECONOMETRICS
+   Korobilis D, 2016, COMPUT STAT DATA AN, V101, P110, DOI 10.1016/j.csda.2016.02.011
+   Korobilis D, 2013, J APPL ECONOMET, V28, P204, DOI 10.1002/jae.1271
+   Kose MA, 2003, AM ECON REV, V93, P1216, DOI 10.1257/000282803769206278
+   Leicht EA, 2008, PHYS REV LETT, V100, DOI 10.1103/PhysRevLett.100.118703
+   LITTERMAN RB, 1986, J BUS ECON STAT, V4, P25, DOI 10.2307/1391384
+   LO AY, 1984, ANN STAT, V12, P351, DOI 10.1214/aos/1176346412
+   MacEachern S, 1999, ASA P SECT BAYES STA, P50
+   MacEachern S. N., 2001, BAYESIAN METHODS APP, P551
+   MacLehose RF, 2010, BIOMETRICS, V66, P455, DOI 10.1111/j.1541-0420.2009.01275.x
+   Magnus J.R., 1999, MATRIX DIFFERENTIAL
+   McCracken MW, 2016, J BUS ECON STAT, V34, P574, DOI 10.1080/07350015.2015.1086655
+   MILLER RB, 1980, TECHNOMETRICS, V22, P65, DOI 10.2307/1268384
+   Muller P, 2004, J R STAT SOC B, V66, P735, DOI 10.1111/j.1467-9868.2004.05564.x
+   Newman MEJ, 2006, P NATL ACAD SCI USA, V103, P8577, DOI 10.1073/pnas.0601602103
+   NEWMAN MEJ, 2004, NATURE, V69, DOI DOI 10.1103/PHYSREVE.69.066133
+   Nieto-Barajas LE, 2016, J TIME SER ANAL, V37, P675, DOI 10.1111/jtsa.12182
+   Opsahl T, 2010, SOC NETWORKS, V32, P245, DOI 10.1016/j.socnet.2010.03.006
+   Park T, 2008, J AM STAT ASSOC, V103, P681, DOI 10.1198/016214508000000337
+   Pennell ML, 2006, BIOMETRICS, V62, P1044, DOI 10.1111/j.1541-0420.2006.00571.x
+   Pitman J, 1997, ANN PROBAB, V25, P855
+   Puliga M, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0162855
+   Richardson S, 1997, J ROY STAT SOC B MET, V59, P731, DOI 10.1111/1467-9868.00095
+   Scott Hal S., 2016, CONNECTEDNESS CONTAG
+   Scott SL, 2014, INT J MATH MODELL NU, V5, P4, DOI [10.1504/ijmmno.2014.059942, DOI 10.1504/IJMMNO.2014.059942]
+   SETHURAMAN J, 1994, STAT SINICA, V4, P639
+   Sims CA, 1998, INT ECON REV, V39, P949, DOI 10.2307/2527347
+   de Souza SRS, 2016, J ECON DYN CONTROL, V66, P54, DOI 10.1016/j.jedc.2016.03.003
+   Stock JH, 2012, J BUS ECON STAT, V30, P481, DOI 10.1080/07350015.2012.715956
+   Taddy MA, 2009, BAYESIAN ANAL, V4, P793, DOI 10.1214/09-BA430
+   Walker SG, 2007, COMMUN STAT-SIMUL C, V36, P45, DOI 10.1080/03610910601096262
+   Wang H, 2010, COMPUT STAT DATA AN, V54, P2866, DOI 10.1016/j.csda.2010.03.028
+   Zou H, 2005, J R STAT SOC B, V67, P301, DOI 10.1111/j.1467-9868.2005.00503.x
+NR 78
+TC 0
+Z9 0
+U1 7
+U2 7
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-4076
+EI 1872-6895
+J9 J ECONOMETRICS
+JI J. Econom.
+PD SEP
+PY 2019
+VL 212
+IS 1
+BP 97
+EP 115
+DI 10.1016/j.jeconom.2019.04.022
+PG 19
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA IW3IX
+UT WOS:000484874800006
+DA 2019-12-28
+ER
+
+PT J
+AU Carmona, P
+   Climent, F
+   Momparler, A
+AF Carmona, Pedro
+   Climent, Francisco
+   Momparler, Alexandre
+TI Predicting failure in the US banking sector: An extreme gradient
+   boosting approach
+SO INTERNATIONAL REVIEW OF ECONOMICS & FINANCE
+LA English
+DT Article; Proceedings Paper
+CT 7th Global-Innovation-and-Knowledge-Academy (GIKA) Conference
+CY JUN 28-30, 2017
+CL Univ Lisboa, Int Super Economia Gestao, Lisbon Sch Econ & Management,
+   Lisbon, PORTUGAL
+SP Global Innovat & Knowledge Acad
+HO Univ Lisboa, Int Super Economia Gestao, Lisbon Sch Econ & Management
+DE Bank failure prediction; Bank failure prevention; Bank financial
+   distress; Machine learning; Extreme gradient boosting; XGBoost
+ID BANKRUPTCY PREDICTION; FINANCIAL DISTRESS; DETERMINANTS; PERFORMANCE;
+   FIRMS; MODEL
+AB Banks play a central role in developed economies. Consequently, systemic banking crises destabilize financial markets and hamper global economic growth. In this study, extreme gradient boosting was used to predict bank failure in the U.S. banking sector. Key variables were identified to anticipate and prevent bank defaults. The data, which spanned the period 2001 to 2015, consisted of annual series of 30 financial ratios for 156 U.S. national commercial banks. Identifying leading indicators of bank failure is vital to help regulators and bank managers act swiftly before distressed financial institutions reach the point of no return. The findings indicate that lower values for retained earnings to average equity, pretax return on assets, and total risk-based capital ratio are associated with a higher risk of bank failure. In addition, an exceedingly high yield on earning assets increases the chance of bank financial distress.
+C1 [Carmona, Pedro] Univ Valencia, Dept Accounting, Valencia, Spain.
+   [Climent, Francisco] Univ Valencia, Dept Financial Econ, Valencia, Spain.
+   [Momparler, Alexandre] Univ Valencia, Dept Corp Finance, Valencia, Spain.
+RP Climent, F (reprint author), Fac Econ, Dept Econ Financiera & Actuarial, Campus Tarongers,Ave Tarongers S-N, Valencia 46022, Spain.
+EM pedro.carmona@uv.es; f.jose.climent@uv.es; alexandre.momparler@uv.es
+RI Climent, Francisco/I-2846-2017
+OI Climent, Francisco/0000-0003-2698-889X
+FU Ministerio de Economia y CompetitividadSpanish Ministry of Economy &
+   Competitiveness [I + D: ECO2013-40816-P]
+FX The authors express their gratitude to the Ministerio de Economia y
+   Competitividad for providing financial support through project I + D:
+   ECO2013-40816-P. Francisco Climent express their gratitude to the
+   Ministerio de Economia y Competitividad for providing financial support
+   through project I+D: ECO2013-40816-P.
+CR Cortes EA, 2008, REV ESP FINANC CONTA, V37, P13
+   Al Wakil A., 2018, J BUSINESS ACCOUNTIN, V1
+   Alfaro E, 2008, DECIS SUPPORT SYST, V45, P110, DOI 10.1016/j.dss.2007.12.002
+   Arnendola A, 2015, INT REV ECON FINANC, V37, P33, DOI 10.1016/j.iref.2014.10.012
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Betz F, 2014, J BANK FINANC, V45, P225, DOI 10.1016/j.jbankfin.2013.11.041
+   BOYD JH, 1993, J MONETARY ECON, V31, P47, DOI 10.1016/0304-3932(93)90016-9
+   Brownlee J., 2016, TUNE NUMBER SIZE DEC
+   Cao Y, 2011, ASIA PAC J OPER RES, V28, P95, DOI 10.1142/S0217595911003077
+   Capatina A, 2017, J INNOV KNOWL, V2, P125, DOI 10.1016/j.jik.2016.07.001
+   Chambers M., 2015, ADV ANAL METHODOLOGI
+   Chen T., 2016, ARXIV160302754V3CSLG
+   Chen T., 2016, XGBOOST EXTREME GRAD
+   Chiaramonte L, 2016, FINANC MARK I INSTRU, V25, P333, DOI DOI 10.1111/fmii.12077
+   Cleary S, 2016, J BANK FINANC, V64, P101, DOI 10.1016/j.jbankfin.2015.12.001
+   Collier C., 2003, FDIC BANKING REV, V15, P17
+   Dell'Ariccia G, 2012, J MONEY CREDIT BANK, V44, P367, DOI 10.1111/j.1538-4616.2011.00491.x
+   Demyanyk Y, 2010, OMEGA-INT J MANAGE S, V38, P315, DOI 10.1016/j.omega.2009.09.007
+   DeYoung R, 2013, J FINANC INTERMED, V22, P397, DOI 10.1016/j.jfi.2013.01.001
+   Ecer F, 2013, ECON RES-EKON ISTRAZ, V26, P81, DOI 10.1080/1331677X.2013.11517623
+   Ekinci A, 2017, COMPUT ECON, V49, P677, DOI 10.1007/s10614-016-9623-y
+   Elith J, 2008, J ANIM ECOL, V77, P802, DOI 10.1111/j.1365-2656.2008.01390.x
+   Erdogan BE, 2013, J STAT COMPUT SIM, V83, P1543, DOI 10.1080/00949655.2012.666550
+   Fortmann-Roe S., 2012, UNDERSTANDING BIAS V
+   Foster D., 2017, XGBOOSTEXPLAINER XGB
+   Foster D., 2017, NEW R PACKAGE MAKES
+   Friedman JH, 2001, ANN STAT, V29, P1189, DOI 10.1214/aos/1013203451
+   Friedman JH, 2002, COMPUT STAT DATA AN, V38, P367, DOI 10.1016/S0167-9473(01)00065-2
+   Hastie T, 2009, ELEMENTS STAT LEARNI
+   He T., 2016, INTRO XGBOOST R PACK
+   Jagtiani J., 2003, FEDERAL RESERVE BANK, V27, P49
+   Jain A. M., 2016, COMPLETE GUIDE PARAM
+   James G., 2017, INTRO STAT LEARNING
+   Jones S, 2015, J BANK FINANC, V56, P72, DOI 10.1016/j.jbankfin.2015.02.006
+   Krolikowski M. W., 2018, J BUSINESS ACCOUNTIN, V1
+   Kuhn M., 2013, APPL PREDICTIVE MODE
+   Kuhn M., 2016, CARET CLASSIFICATION
+   Kumar PR, 2007, EUR J OPER RES, V180, P1, DOI 10.1016/j.ejor.2006.08.043
+   LANE WR, 1986, J BANK FINANC, V10, P511, DOI 10.1016/S0378-4266(86)80003-6
+   Lu WL, 2016, J FINAN ECON POLICY, V8, P316, DOI 10.1108/JFEP-02-2016-0011
+   Lu WL, 2013, J FINAN ECON POLICY, V5, P281, DOI 10.1108/JFEP-02-2013-0006
+   MEYER PA, 1970, J FINANC, V25, P853, DOI 10.2307/2325421
+   Momparler A, 2016, SPAN J FINANC ACCOUN, V45, P63, DOI 10.1080/02102412.2015.1118903
+   Natekin A, 2013, FRONT NEUROROBOTICS, V7, DOI 10.3389/fnbot.2013.00021
+   Olson DL, 2012, DECIS SUPPORT SYST, V52, P464, DOI 10.1016/j.dss.2011.10.007
+   R Core Team, 2016, R LANG ENV STAT COMP
+   Rey-Moreno M, 2017, J INNOV KNOWL, V2, P172, DOI 10.1016/j.jik.2017.01.001
+   Serrano-Cinca C, 2014, APPL ECON, V46, P3798, DOI 10.1080/00036846.2014.943882
+   Serrano-Cinca C, 2013, DECIS SUPPORT SYST, V54, P1245, DOI 10.1016/j.dss.2012.11.015
+   Shrivastava T., 2014, INTRO RANDOM FOREST
+   Tian SN, 2017, INT REV ECON FINANC, V51, P510, DOI 10.1016/j.iref.2017.07.025
+   Trussel J. J., 2012, ACAD BANKING STUDIES, V11, P15
+   Volkov A, 2017, DECIS SUPPORT SYST, V98, P59, DOI 10.1016/j.dss.2017.04.008
+   Zieba M, 2016, EXPERT SYST APPL, V58, P93, DOI 10.1016/j.eswa.2016.04.001
+NR 54
+TC 3
+Z9 3
+U1 5
+U2 5
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1059-0560
+EI 1873-8036
+J9 INT REV ECON FINANC
+JI Int. Rev. Econ. Financ.
+PD MAY
+PY 2019
+VL 61
+BP 304
+EP 323
+DI 10.1016/j.iref.2018.03.008
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA HZ9FT
+UT WOS:000469161900020
+DA 2019-12-28
+ER
+
+PT J
+AU Corbet, S
+   Gurdgiev, C
+AF Corbet, Shaen
+   Gurdgiev, Constantin
+TI What the hack: Systematic risk contagion from cyber events
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article
+DE EGARCH; Financial markets; Cybercrime; Regulation
+ID SECURITY BREACH ANNOUNCEMENTS; MARKET REACTIONS; IMPACT
+AB This paper examines the impact of cybercrime and hacking events on equity market volatility across publicly traded corporations. The volatility influence of these cybercrime events is shown to be dependent on the number of clients exposed across all sectors and the type of the cyber security breach event, with significantly large volatility effects presented for companies who find themselves exposed to cybercrime in the form of hacking. Evidence is presented to suggest that corporations with large data breaches are punished substantially in the form of stock market volatility and significantly reduced abnormal stock returns. Companies with lower levels of market capitalisation are found to be most susceptible. In an environment where corporate data protection should be paramount, minor breaches appear to be relatively unpunished by the stock market. We also show that there is a growing importance in the contagion channel from cybersecurity breaches to markets volatility. Systematic weakness in the existent mechanisms for cybersecurity oversight and enforcement could be improved through the ring-fenced incentivisation of both current and ex-hackers. Their expertise is central to the identification of weak corporate cybersecurity practices.
+C1 [Corbet, Shaen] Dublin City Univ, DCU Business Sch, Dublin 9, Ireland.
+   [Gurdgiev, Constantin] Trinity Coll Dublin, Calif Trinity Business Sch, Middlebury Inst Int Studies Monterey, Aras Phiarsaigh, Dublin 2, Ireland.
+RP Corbet, S (reprint author), Dublin City Univ, DCU Business Sch, Dublin 9, Ireland.
+EM shaen.corbet@dcu.ie; cgurdgiev@miis.edu
+RI Corbet, Shaen/B-4869-2017
+OI Corbet, Shaen/0000-0001-7430-7417
+CR Ablon L., 2014, MARKETS CYBERCRIME T
+   Acemoglu D., 2013, 19174 NAT BUR EC RES
+   Acquisti A., 2006, P 27 INT C INF SYST
+   [Anonymous], 2016, DOES DATA BREACH REA
+   BAILLIE RT, 1989, J BUS ECON STAT, V7, P297, DOI 10.2307/1391527
+   Baldwin A, 2017, J OPER RES SOC, V68, P780, DOI 10.1057/jors.2016.37
+   Boes S., 2016, FIGHTING CYBERCRIME
+   CAMERER C, 1989, J POLIT ECON, V97, P1232, DOI 10.1086/261651
+   Campbell K., 2003, Journal of Computer Security, V11, P431
+   Cavusoglu H, 2004, INT J ELECTRON COMM, V9, P69, DOI 10.1080/10864415.2004.11044320
+   CGI and Oxford Economics, 2017, CYB VAL CONN REV LIN
+   Ciner C, 2013, INT REV FINANC ANAL, V29, P202, DOI 10.1016/j.irfa.2012.12.001
+   CPMI-IOSCO, 2016, GUID CYB RES FIN MAR
+   Dahlgren S., 2016, NEW ERA SUPERVISION
+   DTCC, 2014, CYB RISK GLOB SYST T
+   Dungey M, 2015, J BANK FINANC, V60, P271, DOI 10.1016/j.jbankfin.2015.08.007
+   Egan M., 2014, CO TURN CYBER INSURA
+   Engle R, 2004, AM ECON REV, V94, P405, DOI 10.1257/0002828041464597
+   Farrell S., 2016, BIG HACK ATTACK PROT
+   Flegg M., 2017, SC MAGAZINE UK  0124
+   FSOC, 2016, UPD REV ASS MAN PROD
+   Garg A., 2003, Information Management & Computer Security, V11, P74, DOI 10.1108/09685220310468646
+   Gatzlaff K. M., 2010, RISK MANAG INSUR REV, V13, P61, DOI DOI 10.1111/J.1540-6296.2010.01178.X
+   Gemalto, 2017, 2017 YEAR INT THREAT
+   Goel S, 2009, INFORM MANAGE-AMSTER, V46, P404, DOI 10.1016/j.im.2009.06.005
+   Gordon LA, 2011, J COMPUT SECUR, V19, P33, DOI 10.3233/JCS-2009-0398
+   Gulino D., 2016, CONTAGION MARKE 1213
+   Gurdgiev C., 2016, IS RISE FINANCIAL DI
+   Haines J., 1997, J MONEY LAUNDERING C, V2, P317
+   Heal G., 2004, INTERDEPENDENT SECUR
+   Heal G, 2007, RISK ANAL, V27, P621, DOI 10.1111/j.1539-6924.2007.00904.x
+   Holt T. J., 2003, SOCIAL SCI COMPUTER, V31, P165
+   Holt TJ, 2010, CRIM JUSTICE STUD, V23, P33, DOI 10.1080/14786011003634415
+   Hovav A., 2003, RISK MANAGEMENT INSU, V6, P97, DOI DOI 10.1046/J.1098-1616.2003.026.X
+   Ionescu L., 2011, EC MANAGEMENT FINANC, V6, P373
+   Jang-Jaccard J, 2014, J COMPUT SYST SCI, V80, P973, DOI 10.1016/j.jcss.2014.02.005
+   Kannan K, 2007, INT J ELECTRON COMM, V12, P69, DOI 10.2753/JEC1086-4415120103
+   Kaplan J., 2011, 2011 MCKINSEY Q  JUN
+   Khrennikov I., 2016, BLOOMBERG
+   Klop M., 2016, CYBERCRIME CORPORATE
+   Ko M., 2006, J INFORM TECHNOLOGY, V14, P13
+   Kraemer-Mbula E, 2013, TECHNOL FORECAST SOC, V80, P541, DOI 10.1016/j.techfore.2012.07.002
+   Kuypers M. A., 2016, EMPIRICAL ANAL CYBER
+   Laszka A, 2016, LECT NOTES COMPUT SC, V9996, P349, DOI 10.1007/978-3-319-47413-7_20
+   Levchenko K, 2011, P IEEE S SECUR PRIV, P431, DOI 10.1109/SP.2011.24
+   Mawad M., 2017, BLOOMBERG
+   McKendry I., 2015, AM BANKER       0728
+   Moore T., 2010, P WORKSH DET CYBERAT
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Norton Rose Fulbright, 2016, CYB RISK DIR LIAB IN
+   OFR, 2016, 2016 FIN STAB REP
+   Overvest B., 2015, 306 CPB NETH BUR EC
+   Panda Security, 2017, IS GDPR OPP CYB
+   PWC, 2016, GLOB STAT INF SEC SU
+   PWC, 2014, MAN CYB RISKS INS KE
+   ROLLINS J, 2007, OCUS TERRORISM, V9, P43
+   Schwartz H, 2014, CULTURE OF THE COPY: STRIKING LIKENESSES, UNREASONABLE FACSIMILES, P145
+   Stearns J., 2016, BLOOMBERG
+   Stiennon R., 2013, CATEGORIZING DATA BR
+   Telang R, 2007, IEEE T SOFTWARE ENG, V33, P544, DOI [10.1109/TSE.2007.70712, 10.1109/TSE.2007.1015]
+   Tendulkar R., 2013, SWP12013
+   Townsend K., 2014, CYBERCRIME PUNISHMEN
+   Yampolskiy R. V., 2016, CONVERSATION
+   Young R, 2007, INFORM SYST MANAGE, V24, P281, DOI 10.1080/10580530701585823
+NR 64
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD OCT
+PY 2019
+VL 65
+AR UNSP 101386
+DI 10.1016/j.irfa.2019.101386
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA JR5WM
+UT WOS:000499695000013
+DA 2019-12-27
+ER
+
+PT J
+AU Manguzvane, M
+   Mwamba, JWM
+AF Manguzvane, Mathias
+   Mwamba, John Weirstrass Muteba
+TI Modelling systemic risk in the South African banking sector using CoVaR
+SO INTERNATIONAL REVIEW OF APPLIED ECONOMICS
+LA English
+DT Article
+DE Conditional quantile; systemic risk; conditional value at risk; banking
+   sector
+ID MARKETS
+AB In this paper, we model systemic risk by making use of the conditional quantile regression to identify the most systemically important and vulnerable banks in South Africa (SA). We measure the marginal contributions of each bank to systemic risk by computing the difference between system risk of individual banks when they are in a normal state and when they are in distress. Using daily stock market prices of six SA commercial banks(1) from June 2007 to April 2016; Our results show a considerable increase in the market risk of all the six banks during the 2008 global financial crisis with African Bank being the riskiest bank in the country. Our systemic risk ranking shows that First Rand Bank was the largest contributor to systemic risk followed by Standard Bank, Barclays Africa, Nedbank, Capitec and lastly African Bank. These results suggest that the largest banks pose a bigger threat to the banking system than the smaller banks. These findings clearly indicate that different banks pose different threats to the banking system and the economy at large. Hence, specific actions that go beyond limiting idiosyncratic risk are needed if stability is to be attained through macro prudential regulation.
+C1 [Manguzvane, Mathias; Mwamba, John Weirstrass Muteba] Univ Johannesburg, Sch Econ, Johannesburg, South Africa.
+RP Mwamba, JWM (reprint author), Univ Johannesburg, Sch Econ, Johannesburg, South Africa.
+EM johnmu@uj.ac.za
+RI Muteba Mwamba, John Weirstrass/I-5479-2014
+OI Muteba Mwamba, John Weirstrass/0000-0002-8002-1156
+CR Acharya V., 2010, WORKING PAPER
+   Adrian T., 2008, W17454 NAT BUR EC RE
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F., 2010, INT REV FINANC, V10, P1, DOI DOI 10.1111/J.1468-2443.2009.01103.X
+   [Anonymous], 2006, INT CONV CAP MEAS CA
+   Banulescu GD, 2015, J BANK FINANC, V50, P575, DOI 10.1016/j.jbankfin.2014.01.037
+   Brownlees Christian, 2011, WORKING PAPER
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   Derivatives Policy Group, 1995, WORKING PAPER
+   Dominguez J. M. F., 2004, INVESTMENT MANAGEMEN, V4, P62
+   Dowd K., 1998, VALUE RISK NEW SCI R
+   Esterhuysen J, 2011, S AFR J ECON, V79, P270, DOI 10.1111/j.1813-6982.2011.01276.x
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   International Monetary Fund Financial Stability Board and Bank for International Settlements, 2011, MACR POL TOOLS FRAM
+   Iqbal J, 2015, J ECON BUS, V82, P42, DOI 10.1016/j.jeconbus.2015.06.001
+   Jorion P., 2007, VALUE RISK NEW BENCH, V3
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   Kupiec P.H., 1995, J DERIV, V3, P73, DOI DOI 10.3905/jod.1995.407942
+   Mwamba JM, 2012, S AFR J ECON, V80, P459, DOI 10.1111/j.1813-6982.2012.01319.x
+   Reboredo JC, 2016, SPAN J FINANC ACCOUN, V45, P1, DOI 10.1080/02102412.2015.1092231
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Roengpitya R., 2011, SYSTEMIC RISK
+   Tsay R. S., 2005, ANAL FINANCIAL TIME, V543
+   Varotto S, 2018, J INT MONEY FINANC, V82, P45, DOI 10.1016/j.jimonfin.2017.12.002
+   Wang GJ, 2018, EMERG MARK REV, V35, P1, DOI 10.1016/j.ememar.2017.12.001
+   Wong AYT, 2011, EMERG MARK REV, V12, P432, DOI 10.1016/j.ememar.2011.06.004
+NR 27
+TC 0
+Z9 0
+U1 10
+U2 10
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 0269-2171
+EI 1465-3486
+J9 INT REV APPL ECON
+JI Int. Rev. Appl. Econ.
+PD SEP 3
+PY 2019
+VL 33
+IS 5
+BP 624
+EP 641
+DI 10.1080/02692171.2018.1516741
+PG 18
+WC Economics
+SC Business & Economics
+GA IK6MW
+UT WOS:000476702800003
+DA 2019-12-28
+ER

@@ -1,0 +1,538 @@
+
+PT J
+AU Caccioli, F
+   Farmer, JD
+   Foti, N
+   Rockmore, D
+AF Caccioli, Fabio
+   Farmer, J. Doyne
+   Foti, Nick
+   Rockmore, Daniel
+TI Overlapping portfolios, contagion, and financial stability
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Systemic risk; Network models; Contagion
+ID NETWORK STRUCTURE; SYSTEMIC RISK; INTERBANK; EXPOSURES; CASCADES;
+   TOPOLOGY; MARKET; MODEL
+AB We study the problem of interacting channels of contagion in financial networks. The first channel of contagion is counterparty failure risk; this is captured empirically using data for the Austrian interbank network. The second channel of contagion is overlapping portfolio exposures; this is studied using a stylized model. We perform stress tests according to different protocols. For the parameters we study neither channel of contagion results in large effects on its own. In contrast, when both channels are active at once, bankruptcies are much more common and have large systemic effects. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Caccioli, Fabio] UCL, Dept Comp Sci, London WC1E 6BT, England.
+   [Caccioli, Fabio] Univ Cambridge, Cambridge judge Business Sch, Ctr Risk Studies, Cambridge CB21 AG, England.
+   [Farmer, J. Doyne; Foti, Nick; Rockmore, Daniel] Santa Fe Inst, Santa Fe, NM 87501 USA.
+   [Farmer, J. Doyne] Univ Oxford, Oxford Martin Sch, Inst New Econ Thinking, Oxford OX2 6ED, England.
+   [Farmer, J. Doyne] Univ Oxford, Math Inst, Oxford OX2 6ED, England.
+   [Rockmore, Daniel] Dartmouth Coll, Dept Comp Sci, Hanover, NH 03755 USA.
+   [Rockmore, Daniel] Dartmouth Coll, Dept Math, Hanover, NH 03755 USA.
+RP Caccioli, F (reprint author), UCL, Dept Comp Sci, Gower St, London WC1E 6BT, England.
+EM f.caccioli@ucl.ac.uk
+FU National Science FoundationNational Science Foundation (NSF) [0965673];
+   European Union Seventh Framework Programme FP7 [CRISIS-ICT-2011-288501];
+   Sloan Foundation under the grant "Network Models of Systemic Risk";
+   Dartmouth College Neukom Institute for Computational Science
+FX This work was supported by the National Science Foundation under Grant
+   0965673, by the European Union Seventh Framework Programme FP7/2007-2013
+   under Grant agreement CRISIS-ICT-2011-288501 and by the Sloan Foundation
+   under the grant "Network Models of Systemic Risk." The authors would
+   like to thank Martin Summer and Claus Puhr for their help in sharing the
+   data and for useful discussions. We also warmly thank Stefan Thurner for
+   useful discussions and Co-Pierre Georg for useful discussions and a
+   careful reading of the paper. F.C. would like to thank Fabrizio
+   Altarelli for useful comments. D.R. acknowledges the support of the
+   Dartmouth College Neukom Institute for Computational Science.
+CR Abbassi P., 2013, NETWORK VIEW M UNPUB
+   Acharya V.V., 2011, 17000 NAT BUR EC RES
+   Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Allesina S, 2009, PLOS COMPUT BIOL, V5, DOI 10.1371/journal.pcbi.1000494
+   Barabasi AL, 1999, SCIENCE, V286, P509, DOI 10.1126/science.286.5439.509
+   Barrat A., 2008, DYNAMICAL PROCESSES
+   Battiston S., 2009, 1561 NBER
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Caccioli F, 2012, ADV COMPLEX SYST, V15, DOI 10.1142/S0219525912500580
+   Corsi F, 2013, MICROPRUDENCE INCREA
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Degryse H. A., 2004, 20044 TILB U
+   Doyle JC, 2005, P NATL ACAD SCI USA, V102, P14497, DOI 10.1073/pnas.0501426102
+   Drehmann Mathias, 2011, BIS Q REV, P25
+   Dunne JA, 2006, SFI S SCI C, P27
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Foti N., 2012, J ECON DYN CONTROL, P1889
+   Frisell L., 2007, PREPRINT
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P., 2010, 383 BANK ENGL
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   GEANAKOPLOS J., 2003, ADV EC ECONOMETRICS, P170
+   Geanakoplos J, 2010, NBER MACROECON ANNU, V24, P1
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Huang XQ, 2013, SCI REP-UK, V3, DOI 10.1038/srep01219
+   Iazzetta C., 2009, 711 BANC IT
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Jeong H, 2000, NATURE, V407, P651, DOI 10.1038/35036627
+   Jeong H, 2001, NATURE, V411, P41, DOI 10.1038/35075138
+   Lenzu S, 2012, PHYSICA A, V391, P4331, DOI 10.1016/j.physa.2012.03.035
+   Moore C, 2000, PHYS REV E, V61, P5678, DOI 10.1103/PhysRevE.61.5678
+   Muller J., 2006, J FINANCIAL SERVICES, V29, P37, DOI DOI 10.1007/S10693-005-5107-2
+   Newman M., 2010, NETWORKS
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Puhr C., 2012, 24 OENBS
+   Santos E.B., 2010, 219 BANC CENTR BRAZ
+   Sheldon George, 1998, SWISS J EC STAT, V134, P685
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Staum J, 2013, HANDBOOK ON SYSTEMIC RISK, P512
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+   Xia YX, 2010, PHYSICA A, V389, P1281, DOI 10.1016/j.physa.2009.11.037
+   Yagan O, 2012, PHYS REV E, V86, DOI 10.1103/PhysRevE.86.036103
+   Yook SH, 2002, P NATL ACAD SCI USA, V99, P13382, DOI 10.1073/pnas.172501399
+   Young H. P., 2013, J BANKING FINANCE
+NR 50
+TC 46
+Z9 48
+U1 3
+U2 23
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD FEB
+PY 2015
+VL 51
+BP 50
+EP 63
+DI 10.1016/j.jedc.2014.09.041
+PG 14
+WC Economics
+SC Business & Economics
+GA CB4CX
+UT WOS:000349576900003
+DA 2019-12-27
+ER
+
+PT J
+AU Curran, D
+AF Curran, Dean
+TI Risk illusion and organized irresponsibility in contemporary finance:
+   rethinking class and risk society
+SO ECONOMY AND SOCIETY
+LA English
+DT Article
+DE financial risk; Ulrich Beck; risk illusion; organized irresponsibility;
+   risk-class; risk arbitrage
+ID CAPITALISM; INEQUALITY; ECONOMY; CRISIS
+AB This paper analyzes the lead-up to and aftermath of the 2008 financial crisis to show how processes associated with risk society - the social production and distribution of systemic financial risk in a context of organized irresponsibility - are contributing to the intensification of contemporary class-based inequalities. Utilizing a framework based in Bourdieusian class resources, the analysis moves beyond Beck's rejection of the relevance of class relations to systemic risk, and his critics' denial that risk transforms existing logics of distribution, to identify key shifts in the relation between contemporary financial risk, power and inequality. The conclusions of this study, showing how systemic financial risk in contexts of organized irresponsibility contributes to differential 'risk-classes', suggest that risk is a key source of contemporary inequality and that reconstructing the theory of risk society can illuminate these changes.
+C1 [Curran, Dean] Univ Calgary, Dept Sociol, 2500 Univ Dr NW, Calgary, AB T2N 1N4, Canada.
+RP Curran, D (reprint author), Univ Calgary, Dept Sociol, 2500 Univ Dr NW, Calgary, AB T2N 1N4, Canada.
+EM dcurran@ucalgary.ca
+FU Social Sciences and Humanities Research Council of CanadaSocial Sciences
+   and Humanities Research Council of Canada (SSHRC) [756-2013-0331]
+FX This work was supported by the Social Sciences and Humanities Research
+   Council of Canada under Grant 756-2013-0331.
+CR Alcock P., 2013, GUARDIAN
+   [Anonymous], 2009, FORTUNE
+   Armstrong J., 2005, BANK CANADA FINANCIA, P53
+   Augar P., 2010, RECKLESS RISE FALL C
+   BECK U, 1992, THEOR CULT SOC, V9, P97, DOI 10.1177/026327692009001006
+   Beck U, 1998, POLITICS RISK SOC, P9
+   Beck U., 1995, ECOLOGICAL POLITICS
+   BECK U., 1992, RISK SOC NEW MODERNI
+   Beck U., 2013, RISK SOC REVISITED S, pxiii
+   BECK U, 2009, WORLD RISK
+   BECK U, 1999, WORLD RISK SOC
+   Beck U, 2006, ECON SOC, V35, P329, DOI 10.1080/03085140600844902
+   Beck U, 2013, BRIT J SOCIOL, V64, P63, DOI 10.1111/1468-4446.12005
+   Bell B, 2014, ECON J, V124, pF1, DOI 10.1111/ecoj.12101
+   Bintliff E., 2013, FINANCIAL TIMES
+   BIS, 2009, 79 BIS
+   Bourdieu P., 1992, INVITATION REFLEXIVE
+   BOURDIEU P., 1984, DISTINCTION SOCIAL C
+   Boyer R, 2000, ECON SOC, V29, P111, DOI 10.1080/030851400360587
+   Briault C., 2010, ANTICIPATING RISKS O, P25
+   Cooley T., 2013, 19594 NBER
+   CRESC, 2009, ALT REP UK BANK REF
+   Cribb J., 2015, IFS GREEN BUDGET FEB
+   Crotty J., 2010, BONUS DRIVEN RAIN MA
+   Curran D, 2013, BRIT J SOCIOL, V64, P75, DOI 10.1111/1468-4446.12006
+   Curran D, 2013, BRIT J SOCIOL, V64, P44, DOI 10.1111/1468-4446.12004
+   DiNapoli T. P., 2014, SECURITIES IND NEW Y
+   Dobbin F, 2010, RES SOCIOL ORGAN-RES, V30, P29, DOI 10.1108/S0733-558X(2010)000030B006
+   Engelen E, 2011, GREAT COMPLACENCE FI
+   Erturk I, 2007, ECON SOC, V36, P51, DOI 10.1080/03085140601089903
+   FCIC (Financial Crisis Inquiry Commission), 2011, FIN CRIS INQ REP FIN
+   Folkman P, 2007, BUS HIST, V49, P552, DOI 10.1080/00076790701296373
+   Froud J, 2001, REV INT POLIT ECON, V8, P66, DOI 10.1080/09692290010010326
+   Froud J, 2007, NEW POLIT ECON, V12, P339, DOI 10.1080/13563460701485326
+   Glyn Andrew, 2007, CAPITALISM UNLEASHED
+   Haldane A., 2010, I REG RISK HONG KONG
+   Haldane Andrew, 2010, FUTURE FINANCE LSE R, P87
+   Harvey D., 2005, BRIEF HIST NEOLIBERA
+   Ho K, 2009, LIQUIDATED ETHNOGRAP
+   Inman P., 2013, GUARDIAN
+   Jenkins S., 2013, GREAT RECESSION DIST
+   Keeley B., 2010, CRISIS RECOVERY CAUS
+   Lapavitsas C., 2013, PROFITING PRODUCING
+   Lapavitsas C, 2009, HIST MATER, V17, P114, DOI 10.1163/156920609X436153
+   Lehman Brothers, 2005, LEHM BROTH 2004 ANN
+   Lehman Brothers, 2008, LEHM BROTH 2007 ANN
+   Lowenstein Roger, 2011, END WALL STREET
+   MacKenzie D., 2013, LONDON REV BOOKS, V35, P16
+   MacKenzie D. A., 2006, ENGINE NOT CAMERA FI
+   MacKenzie D, 2011, AM J SOCIOL, V116, P1778, DOI 10.1086/659639
+   Martin R, 2008, COMPET CHANG, V12, P120, DOI 10.1179/102452908X314849
+   Mills C. Wright, 1956, POWER ELITE
+   Mishel L., 2012, STATE WORKING AM
+   Mythen G, 2005, SOCIOL REV, V53, P129, DOI 10.1111/j.1467-954X.2005.00506.x
+   Mythen G, 2005, SOCIOLOGICAL RES ONL, P10
+   OECD, 2013, CRIS SQUEEZ INC PUTS
+   Perri F., 2012, 121 FED RES BANK MIN
+   Rajan Raghuram G., 2005, HAS FINANCIAL DEV MA
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Saez E., 2013, REAL WORLD EC REV, P120
+   Saigol L., 2008, FINANC TIMES, P29
+   Savage M, 2008, SOCIOL REV, V56, P1, DOI 10.1111/j.1467-954X.2008.00759.x
+   Savage M, 2013, SOCIOLOGY, V47, P219, DOI 10.1177/0038038513481128
+   Scott A., 2000, RISK SOC CRITICAL IS, P33
+   Sen A., 1981, POVERTY FAMINES ESSA
+   Sherman J, 2013, SOC PROBL, V60, P409, DOI 10.1525/sp.2013.12090
+   Solow R. M., 2009, NEW YORK REV BOOKS
+   Stiglitz J., 2012, PRICE INEQUALITY
+   Stiglitz J., 1997, PRINCIPLES MICROECON
+   Stiglitz JE, 2009, CRIT REV, V21, P329, DOI 10.1080/08913810902934133
+   Tett G., 2009, FOOLS GOLD UNRESTRAI
+   Therborn G., 2013, KILLING FIELDS INEQU
+   Thompson Jeffrey, 2013, GREAT RECESSION DIST, P202
+   Turner A, 2009, TURNER REV REGULATOR
+   2007, FORTUNE
+NR 75
+TC 10
+Z9 10
+U1 0
+U2 12
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 0308-5147
+EI 1469-5766
+J9 ECON SOC
+JI Econ. Soc.
+PY 2015
+VL 44
+IS 3
+BP 392
+EP 417
+DI 10.1080/03085147.2015.1044850
+PG 26
+WC Economics; Sociology
+SC Business & Economics; Sociology
+GA DD3LA
+UT WOS:000369822500003
+DA 2019-12-28
+ER
+
+PT J
+AU Acemoglu, D
+   Ozdaglar, A
+   Tahbaz-Salehi, A
+AF Acemoglu, Daron
+   Ozdaglar, Asuman
+   Tahbaz-Salehi, Alireza
+TI Systemic Risk and Stability in Financial Networks
+SO AMERICAN ECONOMIC REVIEW
+LA English
+DT Article
+ID CONTAGION; LIQUIDITY; BANK; PRIVATE; MODEL
+AB This paper argues that the extent of financial contagion exhibits a form of phase transition: as long as the magnitude of negative shocks affecting financial institutions are sufficiently small, a more densely connected financial network (corresponding to a more diversified pattern of interbank liabilities) enhances financial stability. However, beyond a certain point, dense interconnections serve as a mechanism for the propagation of shocks, leading to a more fragile financial system. Our results thus highlight that the same factors that contribute to resilience under certain conditions may function as significant sources of systemic risk under others.
+C1 [Acemoglu, Daron] MIT, Dept Econ, Cambridge, MA 02142 USA.
+   [Ozdaglar, Asuman] MIT, Lab Informat & Decis Syst, Cambridge, MA 02139 USA.
+   [Tahbaz-Salehi, Alireza] Columbia Univ, Columbia Business Sch, New York, NY 10027 USA.
+RP Acemoglu, D (reprint author), MIT, Dept Econ, 77 Massachusetts Ave,E18-269D, Cambridge, MA 02142 USA.
+EM daron@mit.edu; asuman@mit.edu; alirezat@columbia.edu
+CR Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Akram Q. Farooq, 2010, 112010 NORG BANK
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Amini H., 2013, MATH FINANCE
+   Babus Ana, 2013, 20060932 TINB I
+   Barlevy Gadi, 2014, WP20144 FED RES BANK
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Bech ML, 2010, J MONETARY ECON, V57, P352, DOI 10.1016/j.jmoneco.2010.01.002
+   Berman A., 1979, NONNEGATIVE MATRICES
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Blume L, 2011, ANN IEEE SYMP FOUND, P393, DOI 10.1109/FOCS.2011.38
+   Bolton Patrick, J FINANCE IN PRESS
+   Brunnermeier M.K., 2013, HDB EC FINANCE, P1221
+   Brunnermeier MK, 2005, J FINANC, V60, P1825, DOI 10.1111/j.1540-6261.2005.00781.x
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Cabrales Antonio, 2014, 4715 CESIFO GROUP MU
+   Carlson D., 1979, CZECH MATH J, V29, P246
+   Chung F.R.K., 1997, CBMS REGIONAL C SERI, V92
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cook Samantha, 2013, EC OPEN ACCESS OPEN
+   Craig B, 2013, 542013 DTSCH BUND
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   Denbee E, 2014, DP734 FMG
+   Di Maggio Marco, 2014, 1440 COL BUS SCH
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Easley David, 2013, ACM T EC COMPUTATION, V1
+   Eboli M., 2013, FLOW NETWORK ANAL DI
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Farboodi M., 2014, INTERMEDIATION VOLUN, DOI 10.2139/ssrn.2535900
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Gofman M, 2014, EFFICIENCY STABILITY
+   Gofman M., 2011, NETWORK BASED ANAL O
+   Haldane A. G., 2009, COMMUNICATION
+   Holmstrom B, 1998, J POLIT ECON, V106, P1, DOI 10.1086/250001
+   Horn R.A., 1985, MATRIX ANAL
+   Iyer R, 2011, REV FINANC STUD, V24, P1337, DOI 10.1093/rfs/hhp105
+   KIYOTAKI N, 1997, CREDIT CHAINS UNPUB
+   Krishnamurthy A, 2010, AM ECON J-MACROECON, V2, P1, DOI 10.1257/mac.2.3.1
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   Lorenzoni G, 2008, REV ECON STUD, V75, P809, DOI 10.1111/j.1467-937X.2008.00494.x
+   Lorenzoni Guido, 2012, FINANCIAL INTEGRATIO
+   Lovasz L, 1996, BOLYAI MATH STUD, V2, P353
+   Nagaraja H. N., 2013, WP201305 FED RES BAN
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Ozdaglar Asuman, 2014, MICROECONOMIC ORIGIN
+   PLEMMONS RJ, 1977, LINEAR ALGEBRA APPL, V18, P175, DOI 10.1016/0024-3795(77)90073-8
+   Plosser C. I, 2009, COMMUNICATION
+   Rochet JC, 1996, J MONEY CREDIT BANK, V28, P733, DOI 10.2307/2077918
+   Rotemberg JJ, 2011, J MONEY CREDIT BANK, V43, P81, DOI 10.1111/j.1538-4616.2010.00366.x
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Shin HS, 2009, ECON J, V119, P309, DOI 10.1111/j.1468-0297.2008.02239.x
+   Sinclair A., 1992, COMBINATORICS PROBAB, V1, P351, DOI DOI 10.1017/S0963548300000390
+   Sorkin Andrew Ross, 2009, TOO BIG FAIL INSIDE
+   Tahbaz-Salehi A., 2013, 18727 NAT BUR EC RES
+   Vivier-Lirimont S., 2006, CONTAGION INTERBANK
+   Yellen J.L., 2013, COMMUNICATION
+   Zawadowski A, 2013, REV FINANC STUD, V26, P1291, DOI 10.1093/rfs/hht008
+   Zawadowski Adam, 2011, 201113 BOST U SCH MA
+   Zenou Yves, 2013, 252010 CAREFIN
+NR 66
+TC 261
+Z9 270
+U1 61
+U2 305
+PU AMER ECONOMIC ASSOC
+PI NASHVILLE
+PA 2014 BROADWAY, STE 305, NASHVILLE, TN 37203 USA
+SN 0002-8282
+EI 1944-7981
+J9 AM ECON REV
+JI Am. Econ. Rev.
+PD FEB
+PY 2015
+VL 105
+IS 2
+BP 564
+EP 608
+DI 10.1257/aer.20130456
+PG 45
+WC Economics
+SC Business & Economics
+GA CB0RT
+UT WOS:000349335100004
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Garg, A
+   Naswa, P
+   Shukla, PR
+AF Garg, Amit
+   Naswa, Prakriti
+   Shukla, P. R.
+TI Energy infrastructure in India: Profile and risks under climate change
+SO ENERGY POLICY
+LA English
+DT Article
+DE Energy infrastructure; Reverse impact; Vulnerability index
+ID PROJECTIONS; RESOLUTION; ECONOMICS
+AB India has committed large investments to energy infrastructure assets-power plants, refineries, energy ports, pipelines, roads, railways, etc. The coastal infrastructure being developed to meet the rising energy imports is vulnerable to climate extremes. This paper provides an overview of climate risks to energy infrastructures in India and details two case studies - a crude oil importing port and. a western coast railway transporting coal. The climate vulnerability of the port has been mapped using an index while that of the railway has been done through a damage function for RCP 4.5.0 and 8.5 scenarios. Our analysis shows that risk management through adaptation is likely to be very expensive. The system risks can be even greater and might adversely affect energy security and access objectives. Aligning, sustainable development and climate adaptation measures can deliver substantial co-benefits. The key policy recommendations include: i) mandatory vulnerability assessment to future climate risks for energy infrastructures; ii) project and systemic risks in the vulnerability index; iii) adaptation funds for unmitigated climate risks; iv) continuous monitoring of climatic parameters and implementation of adaptation measures, and iv) sustainability actions along energy infrastructures that enhance climate resilience and simultaneously deliver co-benefits to local agents. (C) 2014 Elsevier Ltd. All rights reserved.
+C1 [Garg, Amit; Shukla, P. R.] Indian Inst Management, Ahmadabad 380015, Gujarat, India.
+   [Naswa, Prakriti] UNEP DTU Partnership, DK-2100 Copenhagen, Denmark.
+RP Garg, A (reprint author), Indian Inst Management, Wing 16B, Ahmadabad 380015, Gujarat, India.
+EM amitgarg@iimahd.ernet.in; prana@dtu.dk; shukla@iimahd.ernet.in
+OI Shukla, Priyadarshi/0000-0002-7305-2907
+FU UNEP project "Promoting Low Carbon Transport in India" - German
+   Government (BMU) under the International Climate Initiative"
+   [10_I_129_M_Low Carbon Transport]
+FX The research for this paper was supported from UNEP project "Promoting
+   Low Carbon Transport in India" which was funded by the German Government
+   (BMU) under the International Climate Initiative" (Project No.
+   10_I_129_M_Low Carbon Transport). The authors appreciate the valuable
+   comments received from the anonymous reviewers which helped in improving
+   the paper.
+CR Aiyar S. S., 2008, BENEFITS PORT LIBERA, V7, P1
+   [Anonymous], 2014, NATL NEWS MID D 0824
+   [Anonymous], 2011, IND STAT FOR REP
+   Asif M, 2007, RENEW SUST ENERG REV, V11, P1388, DOI 10.1016/j.rser.2005.12.004
+   Bhatt B.K., 2009, THE GUJARAT EC, V2nd
+   Briceno-Garmendia C., 2004, 3468 WORLD BANK, P1
+   Brown C. E., 2002, WORLD ENERGY RESOURC, P61
+   Business Standard, 1998, PLANS DRAWN FAC OIL
+   Central Electricity Authority-GoI, 2011, GROWTH EL SECT IND 1
+   Chaturvedi RK, 2012, CURR SCI INDIA, V103, P791
+   De P., 2009, GLOBALISATION CHANGI
+   Emanuel K. A., 2013, P NATL ACAD SCI USA, P1
+   Forest Survey of India, 1991, IND STAT FOR REP
+   Garg A, 2007, NAT RESOUR FORUM, V31, P132, DOI 10.1111/j.1477-8947.2007.00142.x
+   Goswami S, 2007, VALUATION COASTAL RE
+   Hallegatte S, 2009, GLOBAL ENVIRON CHANG, V19, P240, DOI 10.1016/j.gloenvcha.2008.12.003
+   IEA, 2014, SPEC REP WORLD EN IN
+   Indian Ports Association, 2013, MAJ PORTS IND PROF
+   Indian Railways, 2011, IND RAILW ANN REP 20
+   Intergovernmental Panel on Climate Change (IPCC), 2013, CLIM CHANG 2014 IMP
+   Kapshe M., 2003, CLIMATE CHANGE INDIA, P291
+   Knutson TR, 2010, NAT GEOSCI, V3, P157, DOI 10.1038/NGEO779
+   Kousky C., 2009, CLIMATE CHANGE RISK, P1
+   KRCL, 2013, OP STAT
+   KRCL-RTI, 2011, RIGHT INF APPL KR CO
+   Kumar RK, 2006, CURR SCI, V90, P334
+   Kumar U, 2010, ENERGY, V35, P1709, DOI 10.1016/j.energy.2009.12.021
+   Kurian AL, 2013, INDIA Q, V69, P383, DOI 10.1177/0974928413503749
+   Ministry of Coal-GoI, 2013, ANN REP 2012 13
+   Ministry of Coal-GoI, 2011, REP WORK GROUP COAL
+   Ministry of Coal-GoI, 2012, ANN REP 2012 13
+   Ministry of Finance-GoI, 2009, EC SURV
+   Ministry of Petroleum and Natural Gas Government of India, 2014, IND PETR NAT GAS STA
+   Ministry of Power-GoI, 2014, POW SECT PERF
+   Ministry of Power-GoI, 2013, IND EL SCEN
+   MOEF, 2010, CLIM CHANG IND 4 4 A
+   MoSPI, 2013, EN STAT 2013
+   MOSPI, 2013, CSO NAT AC STAT PUBL
+   Murakami H, 2013, CLIM DYNAM, V40, P1949, DOI 10.1007/s00382-012-1407-z
+   Murakami H, 2010, SOLA, V6, P73, DOI 10.2151/sola.2010-019
+   Nagrajan R., 2000, B ENG GEOL ENVIRON, P275
+   Pargal S., 2014, MORE POWER INDIA CHA
+   Parthasarathy R., 2014, DISASTER RECOVERY, P301
+   Peter H., 2008, EC MANAGEMENT CLIMAT, P13
+   Planning Commission-Gol, 2013, 12 5 YEAR PLAN 2012
+   Power-Technology, 2013, TOP 10 BIGG THERM PO
+   Ranade P.S., 2009, INFRASTRUCTURE DEV I
+   RSMC-IMD, PORT WARN SIGN
+   RSMC-IMD, DAM POT TROP CYCL
+   Santhiyavalli G., 2011, ASIAN J RES SOC SCI, V1, P446
+   Schenker-Wicki A, 2010, J BUS RES, V63, P337, DOI 10.1016/j.jbusres.2009.02.021
+   Shukla P. R., 2003, CLIMATE CHANGE INDIA, V1st, P389
+   Sibal H.K., 2011, OPERATIONS MANAGEMEN
+   Stern N. H, 2007, EC CLIMATE CHANGE ST
+   Stocker T.F., 2013, CLIM CHANG 2013 PHYS
+   TERI, 2006, NATL ENERGY MAP INDI
+   Vivoda V, 2010, ENERG POLICY, V38, P5258, DOI 10.1016/j.enpol.2010.05.028
+   Weitzman ML, 2007, J ECON LIT, V45, P703, DOI 10.1257/jel.45.3.703
+   Weitzman ML, 2011, REV ENV ECON POLICY, V5, P275, DOI 10.1093/reep/rer006
+   World Bank, 2014, PURCH POW PAR REAL S
+NR 60
+TC 11
+Z9 12
+U1 3
+U2 38
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0301-4215
+EI 1873-6777
+J9 ENERG POLICY
+JI Energy Policy
+PD JUN
+PY 2015
+VL 81
+BP 226
+EP 238
+DI 10.1016/j.enpol.2014.12.007
+PG 13
+WC Economics; Energy & Fuels; Environmental Sciences; Environmental Studies
+SC Business & Economics; Energy & Fuels; Environmental Sciences & Ecology
+GA CH2JX
+UT WOS:000353852600023
+DA 2019-12-28
+ER
+
+PT J
+AU Chittedi, KR
+AF Chittedi, Krishna Reddy
+TI Financial Crisis and Contagion Effects to Indian Stock Market:
+   'DCC-GARCH' Analysis
+SO GLOBAL BUSINESS REVIEW
+LA English
+DT Article
+DE Stock market; financial crisis; contagion; bivariate DCC-GARCH model
+AB The study applies the dynamic conditional correlation (DCC) bivariate generalized autoregressive conditional heteroskedasticity (GARCH) model of Engle (2002) in order to capture the contagion effects during global financial crisis. We used daily stock returns for the period January 2002-December 2011 to study the contagion effects from the United States (US) to India. We have considered January 2002-December 2007 as the pre-crisis period and January 2008-December 2011 as crisis period. Empirical findings show that there has been a significant increase in the mean of correlation coefficient between the markets in the crisis periods compared to the pre-crisis period. This proves the existence of contagion between the US and Indian markets. However, this enhanced correlation does not lead to the removal of international diversification benefits since emerging markets still outperform in the long run due to reduced volatility. Finally, it should be noted that the presence of investment barriers and the importance of country-specific risks curtail foreign participation, even though it has grown considerably in a diminishing manner over time.
+C1 [Chittedi, Krishna Reddy] CUTN, Dept Econ, Thiruvarur, Tamil Nadu, India.
+RP Chittedi, KR (reprint author), CUTN, Dept Econ, Sch Social Sci & Humanities, Thiruvarur 610004, Tamil Nadu, India.
+EM krishnarc@cutn.ac.in
+OI Chittedi, Dr Krishna Reddy/0000-0002-0275-8451
+CR Ane Thierry, 2006, INT REV ECON FINANC, V15, P417
+   Beirne J., 2008, 286 IMF
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   BOLLERSLEV T, 1992, J ECONOMETRICS, V52, P5, DOI 10.1016/0304-4076(92)90064-X
+   Boyer B.H., 1999, 597R FED RES BOARD
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   Dornbusch R, 2000, WORLD BANK RES OBSER, V15, P177, DOI 10.1093/wbro/15.2.177
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle R.F., 2001, 8554 NBER
+   Fischer S., 1998, IMF ASIAN CRISIS
+   Forbes K., 2000, ECONOMIA, V1, P1
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   Hashmi A. R., 2001, 10 INT TOR VERG FIN
+   Hesse H., 2009, 104 IMF
+   HOTI S, 2005, EMERG MARK REV, V6, P324, DOI DOI 10.1016/J.EMEMAR.2005.09.006
+   Jang H, 2002, J ASIAN EC, V13, P94, DOI DOI 10.1016/S1049-0078(01)00115-4
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Kaminsky Graciela L., 2003, 9479 NBER
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   Kim SJ, 2005, J JPN INT ECON, V19, P338, DOI 10.1016/j.jjie.2004.03.002
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Krugman P., 2008, RETURN DEPRESSION EC
+   Leong S.C., 2003, PACIFIC BASIN FINANC, V11, P219, DOI DOI 10.1016/S0927-538X(03)00002-7
+   Masson PR, 1998, IMF WORK PAP, V98, P1
+   Nguyen D.K., 2011, J BANK FINANC, V35, P30
+   Pritsker Matt, 2000, INT FINANCIAL CONTAG, P67
+   Rao V.V. Bhanoji, 2000, GLOBAL BUSINESS REV, V1, P1
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   SHENG HC, 2000, J MULTINATL FINANC M, V10, P345, DOI DOI 10.1016/S1042-444X(00)00034-7
+   Sun T., 2009, 111 IMF
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Syriopoulos T, 2007, INT REV FINANC ANAL, V16, P41, DOI DOI 10.1016/j.irfa.2005.02.003
+NR 34
+TC 15
+Z9 16
+U1 0
+U2 0
+PU SAGE PUBLICATIONS LTD
+PI LONDON
+PA 1 OLIVERS YARD, 55 CITY ROAD, LONDON EC1Y 1SP, ENGLAND
+SN 0972-1509
+EI 0973-0664
+J9 GLOB BUS REV
+JI Glob. Bus. Rev.
+PD FEB
+PY 2015
+VL 16
+IS 1
+BP 50
+EP 60
+DI 10.1177/0972150914553507
+PG 11
+WC Business
+SC Business & Economics
+GA VD0XW
+UT WOS:000435796800005
+DA 2019-12-27
+ER

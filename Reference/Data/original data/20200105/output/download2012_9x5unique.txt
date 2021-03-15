@@ -1,0 +1,471 @@
+
+PT J
+AU Mendes, BVD
+   Accioly, VB
+AF de Melo Mendes, Beatriz Vaz
+   Accioly, Victor Bello
+TI On the dependence structure of realized volatilities
+SO INTERNATIONAL REVIEW OF FINANCIAL ANALYSIS
+LA English
+DT Article
+DE Pair-copulas; Dependence structure; Realized volatilities;
+   High-frequency data; Contagion; Multivariate tail dependence coefficient
+AB Volatility plays an important role when managing risks, composing portfolios, and pricing financial instruments. However it is not directly observable, being usually estimated through parametric models such as those in the GARCH family. A more natural empirical measure of daily returns variability is the so called realized volatility, computed from high-frequency intra day returns, an unbiased and highly efficient estimator of the return volatility. At this time point, with globalization effects driving markets' volatilities all over the world, it becomes of great interest to assess volatilities' co-movements and contagion. To this end we use pair-copulas, a powerful and flexible statistical model which allows for linear and nonlinear, possibly asymmetric forms of dependence without the restrictions posed by existing multivariate models. Given the importance of the Brazilian stock market in the Latin America, in this paper we characterize the dependence structure linking the realized volatilities of seven Brazilian stocks. The realized volatilities are computed using an 8-year sample of 5-minute returns from 2001 through 2009. We include a more comprehensive study involving seven emerging markets, addressing the issue of contagion in a more general scenario. (C) 2012 Elsevier Inc. All rights reserved.
+C1 [de Melo Mendes, Beatriz Vaz] Univ Fed Rio de Janeiro, IM COPPEAD, BR-21941 Rio De Janeiro, Brazil.
+   [Accioly, Victor Bello] Univ Fed Rio de Janeiro, COPPEAD, BR-21941 Rio De Janeiro, Brazil.
+RP Mendes, BVD (reprint author), UFRJ Ilha Fundao, CP 68530, BR-21945970 Rio De Janeiro, RJ, Brazil.
+EM beatriz@im.ufrj.br
+RI Accioly, Victor/C-2942-2015
+OI Accioly, Victor/0000-0003-3618-0827
+CR Aas K., 2007, INSUR MATH ECON, V2, P1
+   Andersen TG, 2001, J FINANC ECON, V61, P43, DOI 10.1016/S0304-405X(01)00055-1
+   Andersen TG, 1998, J FINANC, V53, P219, DOI 10.1111/0022-1082.85732
+   Andersen TG, 1998, INT ECON REV, V39, P885, DOI 10.2307/2527343
+   Andersen TG, 2001, J AM STAT ASSOC, V96, P42, DOI 10.1198/016214501750332965
+   Andersen TG, 2003, ECONOMETRICA, V71, P579, DOI 10.1111/1468-0262.00418
+   Anderson T., 1999, J EMPIR FINANC, V6, P457, DOI DOI 10.1016/S0927-5398(99)00013-4
+   Ane T., 2009, INT REV FINANC ANAL, V18, P134
+   Bedford T, 2002, ANN STAT, V30, P1031
+   Bedford T, 2001, ANN MATH ARTIF INTEL, V32, P245, DOI 10.1023/A:1016725902970
+   Breymann W, 2003, QUANT FINANC, V3, P1, DOI 10.1088/1469-7688/3/1/301
+   DACOROGNA MM, 1993, J INT MONEY FINANC, V12, P413, DOI 10.1016/0261-5606(93)90004-U
+   Diebold FX, 1998, INT ECON REV, V39, P863, DOI 10.2307/2527342
+   EDERINGTON LH, 1993, J FINANC, V48, P1161, DOI 10.2307/2329034
+   GIOT P, 2004, J EMPIR FINANC, V11, P379, DOI DOI 10.1016/J.JEMPF
+   Hansen B., 1994, INT ECON REV, V35, P3
+   Joe H, 2010, J MULTIVARIATE ANAL, V101, P252, DOI 10.1016/j.jmva.2009.08.002
+   Kluppelberg C, 2008, SCAND J STAT, V35, P701, DOI 10.1111/j.1467-9469.2008.00602.x
+   Kurowicka D, 2006, LINEAR ALGEBRA APPL, V418, P188, DOI 10.1016/j.laa.2006.01.031
+   Labys P., 2000, RISK, V13, P105
+   Martens M, 2001, J INT MONEY FINANC, V20, P1, DOI 10.1016/S0261-5606(00)00047-4
+   Moosa I., 2002, INT REV FINANC ANAL, V11, P85, DOI 10.1016/S1057-5219(01)00069-2
+   Pong SY, 2004, J BANK FINANC, V28, P2541, DOI 10.1016/j.jbankfin.2003.10.015
+   Sklar A., 1959, PUBL I STAT U PARIS, V8, P229
+   Zivot E., 2005, UWEC200503
+NR 25
+TC 3
+Z9 5
+U1 0
+U2 4
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1057-5219
+EI 1873-8079
+J9 INT REV FINANC ANAL
+JI Int. Rev. Financ. Anal.
+PD APR
+PY 2012
+VL 22
+BP 1
+EP 9
+DI 10.1016/j.irfa.2012.01.001
+PG 9
+WC Business, Finance
+SC Business & Economics
+GA V31AT
+UT WOS:000208857200001
+DA 2019-12-27
+ER
+
+PT J
+AU Battiston, S
+   Gatti, DD
+   Gallegati, M
+   Greenwald, B
+   Stiglitz, JE
+AF Battiston, Stefano
+   Gatti, Domenico Delli
+   Gallegati, Mauro
+   Greenwald, Bruce
+   Stiglitz, Joseph E.
+TI Liaisons dangereuses: Increasing connectivity, risk sharing, and
+   systemic risk
+SO JOURNAL OF ECONOMIC DYNAMICS & CONTROL
+LA English
+DT Article
+DE Systemic risk; Network models; Contagion; Financial acceleration;
+   Financial crisis
+ID LIQUIDITY; EXPOSURES; CONTAGION; MARKET
+AB The recent financial crisis poses the challenge to understand how systemic risk arises endogenously and what architecture can make the financial system more resilient to global crises. This paper shows that a financial network can be most resilient for intermediate levels of risk diversification, and not when this is maximal, as generally thought so far. This finding holds in the presence of the financial accelerator, i.e. when negative variations in the financial robustness of an agent tend to persist in time because they have adverse effects on the agent's subsequent performance through the reaction of the agent's counterparties. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Battiston, Stefano] ETH, Zurich, Switzerland.
+   [Gatti, Domenico Delli] Catholic Univ Milan, Milan, Italy.
+   [Gallegati, Mauro] Polytech Univ Marche, Ancona, Italy.
+   [Greenwald, Bruce; Stiglitz, Joseph E.] Columbia Univ, New York, NY 10027 USA.
+RP Battiston, S (reprint author), ETH, Zurich, Switzerland.
+EM sbattiston@ethz.ch
+RI battiston, stefano/M-1612-2017; GALLEGATI, MAURO/A-4091-2016; Battiston,
+   Stefano/I-2624-2012
+OI battiston, stefano/0000-0002-0051-973X; Battiston,
+   Stefano/0000-0002-0051-973X; Delli Gatti, Domenico/0000-0001-8819-090X
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2011, J FINANCIAL EC
+   Allen F., 2009, NETWORK CHALLENGE ST, P367
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Battiston S., SCI REPORTS UNPUB
+   Bernanke B, 1999, HDB MACROECONOMICS
+   BLACK F, 1976, J FINANC, V31, P351, DOI 10.2307/2326607
+   Boissay F., 2006, 573 EUR CENTR BANK
+   Boss M, 2004, LECT NOTES COMPUT SC, V3038, P1070
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Castiglionesi F., 2010, SSRN WORKING PAPER S
+   Cont R., 2010, NETWORK STRUCTURE SY
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gardiner C, 2004, SPRINGER SERIES SYNE
+   Goyal S., 2007, CONNECTIONS INTRO EC
+   Hull J., 2000, J DERIV, V8, P23
+   Hull J., 2001, J DERIV, V8, P12, DOI DOI 10.3905/J0D.2001.319153
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Jackson MO, 2007, BE J THEOR ECON, V7, DOI 10.1186/1472-6947-7-6
+   Jackson MO, 2008, SOCIAL AND ECONOMIC NETWORKS, P1
+   Kiyotaki N, 2002, AM ECON REV, V92, P46, DOI 10.1257/000282802320188989
+   Kiyotaki N, 1997, J POLIT ECON, V105, P211, DOI 10.1086/262072
+   Kleinberg J, 2007, ALGORITHMIC GAME THEORY, P613
+   Kroszner RS, 2007, J FINANC ECON, V84, P187, DOI 10.1016/j.jfineco.2006.05.001
+   LONGSTAFF FA, 1995, J FINANC, V50, P789, DOI 10.2307/2329288
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Morris S., 2008, BROOKINGS PANEL EC A
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Ongena S, 2000, J FINANC INTERMED, V9, P26, DOI 10.1006/jfin.1999.0273
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Stiglitz J., J GLOBALIZA IN PRESS
+   STIGLITZ J, 2003, NEW PARADIGM MONETAR
+   Stiglitz JE, 2010, AM ECON REV, V100, P388, DOI 10.1257/aer.100.2.388
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Vitali S, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0025995
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Zhou C, 1997, FINANCE EC DISCUSSIO
+NR 49
+TC 206
+Z9 206
+U1 8
+U2 114
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-1889
+EI 1879-1743
+J9 J ECON DYN CONTROL
+JI J. Econ. Dyn. Control
+PD AUG
+PY 2012
+VL 36
+IS 8
+SI SI
+BP 1121
+EP 1141
+DI 10.1016/j.jedc.2012.04.001
+PG 21
+WC Economics
+SC Business & Economics
+GA 980HO
+UT WOS:000306884400005
+OA Green Published
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Rogers, JC
+   Simmons, EA
+   Convery, I
+   Weatherall, A
+AF Rogers, Jennifer C.
+   Simmons, Eunice A.
+   Convery, Ian
+   Weatherall, Andrew
+TI Social impacts of community renewable energy projects: findings from a
+   woodfuel case study
+SO ENERGY POLICY
+LA English
+DT Article
+DE Community renewable energy; Impacts; Woodfuel
+ID WIND-ENERGY; PUBLIC PERCEPTIONS; UNITED-KINGDOM; SYSTEMS; POLICY;
+   FRAMEWORK; ATTITUDES; UK
+AB There is much current interest in the potential of community-based renewable energy projects to contribute to transition towards low carbon energy systems. As well as displacing fossil fuel consumption by increasing renewable energy generation, projects are expected to have a range of social impacts which may result in additional positive sustainability outcomes. These include potential to increase: acceptance of renewable energy developments; awareness of renewable and sustainable energy technologies and issues; uptake of low carbon technologies; and sustainable/pro-environmental behaviours. To date however, there has been little investigation of whether and how these impacts occur. This paper presents results from qualitative research investigating the social impacts of a community woodfuel project as experienced by project participants and other local stakeholders. Findings show projects can raise awareness of renewable energy technologies and increase uptake of renewables. Overall the case study project successfully changed the local social context for development of woodfuel heating, reducing risk for all involved in the future development of this sector, particularly in the immediate locality. There was some evidence of increased engagement with wider sustainability issues but this was limited to direct participants, suggesting local projects need to be supported by wider systemic change to maximise impacts. (C) 2011 Elsevier Ltd. All rights reserved.
+C1 [Rogers, Jennifer C.; Convery, Ian; Weatherall, Andrew] Univ Cumbria, Natl Sch Forestry, Penrith, England.
+   [Simmons, Eunice A.] Nottingham Trent Univ, Sch Anim Rural & Environm Sci, Brackenhurst, England.
+RP Rogers, JC (reprint author), Univ Cumbria, Natl Sch Forestry, Penrith, England.
+EM jennyclaire@hotmail.com
+RI Weatherall, Andrew/C-6956-2008; Convery, Ian/C-7141-2008
+OI Weatherall, Andrew/0000-0002-8413-1539; Convery, Ian/0000-0003-2527-5660
+FU UK Energy Research Centre; University of Cumbria; School of Animal,
+   Rural and Environmental Sciences, Nottingham Trent University
+FX The authors would like to thank all research participants for their
+   co-operation and input to the project. The first author was funded by a
+   UK Energy Research Centre PhD Studentship. Financial support was also
+   provided by the University of Cumbria and the School of Animal, Rural
+   and Environmental Sciences, Nottingham Trent University.
+CR ATLAS.ti Scientific Software Development GmbH, 2008, ATLAS TI 5 2 21
+   Barker T, 2009, ENERG EFFIC, V2, P411, DOI 10.1007/s12053-009-9053-y
+   Bergman N., 2011, ENERGY EFFICIENCY, V4, P1
+   Boeije H, 2002, QUAL QUANT, V36, P391, DOI 10.1023/A:1020909529486
+   Cass N., 2009, EMOT SPACE SOC, V2, P62, DOI DOI 10.1016/J.EM0SPA.2009.05.006
+   Castellano PJ, 2009, BIOMASS BIOENERG, V33, P393, DOI 10.1016/j.biombioe.2008.08.001
+   Charmaz K., 2006, CONSTRUCTING GROUNDE
+   Cherubini F, 2009, RESOUR CONSERV RECY, V53, P434, DOI 10.1016/j.resconrec.2009.03.013
+   COLLINS AJ, 2004, INT J CONSUM STUD, V28, P202, DOI DOI 10.1111/J.1470-6431.2003.00365.X
+   Darnton A., 2006, PROMOTING PROENVIRON
+   DECC, 2011, REN HEAT INC
+   DECC, 2010, COMM EN ONL
+   DECC (Department of Energy and Climate Change), LOW CARB COMM CHALL
+   Devine-Wright P, 2005, WIND ENERGY, V8, P125, DOI 10.1002/we.124
+   Devine-Wright P, 2007, 2 COMM EN IN PROJ
+   DEVINEWRIGHT P, 2007, GOVERNING TECHNOLOGY, P63
+   Dobbyn J., 2005, SUSTAINABLE CONSUMPT
+   Foresight, 2008, FORESIGHT SUSTAINABL
+   Forestry Commission, 2007, WOODF STRAT ENGL
+   Gonzalez JF, 2010, ENERG POLICY, V38, P2309, DOI 10.1016/j.enpol.2009.12.018
+   Furze B., 1992, Environmental Values, V1, P141, DOI 10.3197/096327192776680106
+   Giddens A., 2009, POLITICS CLIMATE CHA
+   Greenhalgh T, 1997, BMJ-BRIT MED J, V315, P740, DOI 10.1136/bmj.315.7110.740
+   Gubbins N, 2007, LOCAL ECON, V22, P80, DOI 10.1080/02690940601121336
+   Heiskanen E, 2010, ENERG POLICY, V38, P7586, DOI 10.1016/j.enpol.2009.07.002
+   *HM GOV, 2009, UK LOW CARB TRANS PL
+   HM Government, 2010, COAL OUR PROGR GOV
+   IPSOS MORI, 2009, BIG EN SHIFT REP CIT
+   Jackson T, 2009, PROSPERITY GROWTH TR
+   Jackson T., 2005, MOTIVATING SUSTAINAB
+   Jones CR, 2009, ENERG POLICY, V37, P4604, DOI 10.1016/j.enpol.2009.06.015
+   Keirstead J, 2007, ENERG POLICY, V35, P4128, DOI 10.1016/j.enpol.2007.02.019
+   Letcher M., 2007, MOBILISING INDIVIDUA
+   Madlener R, 2007, ENERG POLICY, V35, P1992, DOI 10.1016/j.enpol.2006.06.010
+   Middlemiss L, 2008, INT J ENVIRON SUSTAI, V7, P78, DOI 10.1504/IJESD.2008.017898
+   Mitchell C., 2003, RENEWABLE ENERGY PLA
+   Moloney S, 2010, ENERG POLICY, V38, P7614, DOI 10.1016/j.enpol.2009.06.058
+   Mulugetta Y, 2010, ENERG POLICY, V38, P7541, DOI 10.1016/j.enpol.2010.05.050
+   Oldenburg B, 2008, HLTH BEHAV HLTH ED T, P313
+   Owens S, 2008, ENERG POLICY, V36, P4412, DOI 10.1016/j.enpol.2008.09.031
+   Pasqualetti MJ, 2000, GEOGR REV, V90, P381, DOI 10.2307/3250859
+   Peters M, 2010, ENERG POLICY, V38, P7596, DOI 10.1016/j.enpol.2010.01.044
+   Prendergrast J., 2008, CREATURES HABIT ART
+   Preston I., 2009, BEST PRACTICE REV CO
+   Read D.J., 2009, COMBATING CLIMATE CH
+   Ricci M, 2010, ENERG POLICY, V38, P2633, DOI 10.1016/j.enpol.2009.05.038
+   Rogers Everett M., 2005, INNOVATION J PUBLIC, V10, P30
+   Rogers JC, 2008, ENERG POLICY, V36, P4217, DOI 10.1016/j.enpol.2008.07.028
+   Sauter R, 2007, ENERG POLICY, V35, P2770, DOI 10.1016/j.enpol.2006.12.006
+   Seyfang G, 2007, ENVIRON POLIT, V16, P584, DOI 10.1080/09644010701419121
+   Seyfang G, 2010, ENERG POLICY, V38, P7624, DOI 10.1016/j.enpol.2009.10.027
+   Shackley S, 2007, ENERGY, V32, P221, DOI 10.1016/j.energy.2006.04.010
+   Skea J, 2008, CLIM POLICY, V8, pS5, DOI 10.3763/cpol.2008.0487
+   Sorrell S, 2009, ENERG POLICY, V37, P1456, DOI 10.1016/j.enpol.2008.12.003
+   Steward F., 2009, MAPPING BIG GREEN CH
+   Sustainable Development Commission, 2010, FUT IS LOC EMP COMM
+   Trier C, 2009, LOCAL ENVIRON, V14, P819, DOI 10.1080/13549830903166487
+   van der Horst D, 2008, SOC ENTERP J, V4, P171, DOI 10.1108/17508610810922686
+   Walker G, 2008, ENERG POLICY, V36, P497, DOI 10.1016/j.enpol.2007.10.019
+   Walker G, 2007, AREA, V39, P458, DOI 10.1111/j.1475-4762.2007.00772.x
+   Walker G, 2007, GLOBAL ENVIRON POLIT, V7, P64, DOI 10.1162/glep.2007.7.2.64
+   Walker G, 2010, ENERG POLICY, V38, P2655, DOI 10.1016/j.enpol.2009.05.055
+   Warren CR, 2010, LAND USE POLICY, V27, P204, DOI 10.1016/j.landusepol.2008.12.010
+   Yadoo A, 2011, ENERG POLICY, V39, P6400, DOI 10.1016/j.enpol.2011.07.040
+NR 64
+TC 49
+Z9 49
+U1 0
+U2 64
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0301-4215
+J9 ENERG POLICY
+JI Energy Policy
+PD MAR
+PY 2012
+VL 42
+BP 239
+EP 247
+DI 10.1016/j.enpol.2011.11.081
+PG 9
+WC Economics; Energy & Fuels; Environmental Sciences; Environmental Studies
+SC Business & Economics; Energy & Fuels; Environmental Sciences & Ecology
+GA 910CY
+UT WOS:000301616000026
+DA 2019-12-28
+ER
+
+PT J
+AU Allen, F
+   Babus, A
+   Carletti, E
+AF Allen, Franklin
+   Babus, Ana
+   Carletti, Elena
+TI Asset commonality, debt maturity and systemic risk
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Contagion; Clustered and unclustered networks; Interim information
+ID INFORMATION; CONTAGION; MODEL
+AB We develop a model in which asset commonality and short-term debt of banks interact to generate excessive systemic risk. Banks swap assets to diversify their individual risk. Two asset structures arise. In a clustered structure, groups of banks hold common asset portfolios and default together. In an unclustered structure, defaults are more dispersed. Portfolio quality of individual banks is opaque but can be inferred by creditors from aggregate signals about bank solvency. When bank debt is short-term, creditors do not roll over in response to adverse signals and all banks are inefficiently liquidated. This information contagion is more likely under clustered asset structures. In contrast, when bank debt is long-term, welfare is the same under both asset structures. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [Allen, Franklin] Univ Penn, Wharton Sch, 3620 Locust Walk, Philadelphia, PA 19104 USA.
+   [Babus, Ana] Univ London Imperial Coll Sci Technol & Med, London SW7 2AZ, England.
+   [Carletti, Elena] European Univ Inst, Florence, Italy.
+RP Allen, F (reprint author), Univ Penn, Wharton Sch, 3620 Locust Walk, Philadelphia, PA 19104 USA.
+EM allenf@wharton.upenn.edu
+CR Acharya V. V., J FINANCE IN PRESS
+   Acharya VV, 2008, J MONEY CREDIT BANK, V40, P215, DOI 10.1111/j.1538-4616.2008.00110.x
+   Allen F., 2011, ASSET COMMONAL UNPUB
+   Allen F, 2009, ANNU REV FINANC ECON, V1, P97, DOI 10.1146/annurev.financial.050808.114321
+   Babus A., 2009, FORMATION FINA UNPUB
+   Bisin A, 2006, J POLIT ECON, V114, P485, DOI 10.1086/503754
+   BIZER DS, 1992, J POLIT ECON, V100, P41, DOI 10.1086/261806
+   Bolton P, 2011, Q J ECON, V126, P259, DOI 10.1093/qje/qjq007
+   Brunnermeier M., 2009, MATURITY RAT R UNPUB
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   Castiglionesi F., 2010, OPTIMAL FRAGIL UNPUB
+   Chen YN, 1999, J POLIT ECON, V107, P946, DOI 10.1086/250086
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   Diamond DW, 2011, Q J ECON, V126, P557, DOI 10.1093/qje/qjr012
+   DIAMOND DW, 1991, Q J ECON, V106, P709, DOI 10.2307/2937924
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Flannery M., 2010, 2007 09 FINANC UNPUB
+   FLANNERY MJ, 1986, J FINANC, V41, P19
+   He Z., 2009, DYNAMIC BANK R UNPUB
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Jackson MO, 1996, J ECON THEORY, V71, P44, DOI 10.1006/jeth.1996.0108
+   Morgan D., 2004, AM ECON REV, V92, P874
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Shaffer S, 1994, RES FINANCIAL SERVIC, V6, P249
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Zawadowski A., 2010, ENTANGLED FINA UNPUB
+NR 26
+TC 82
+Z9 83
+U1 7
+U2 61
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD JUN
+PY 2012
+VL 104
+IS 3
+SI SI
+BP 519
+EP 534
+DI 10.1016/j.jfineco.2011.07.003
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA 948IL
+UT WOS:000304496700006
+DA 2019-12-28
+ER
+
+PT J
+AU Soofi, AS
+   Li, Z
+   Hui, XF
+AF Soofi, Abdol S.
+   Li, Zhe
+   Hui, Xiaofeng
+TI Nonlinear interdependence of the Chinese stock markets
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Applied mathematical finance; Computational finance; Contagion;
+   Econophysics; Emerging stock markets; Empirical time series analysis;
+   Quantitative finance; Signal processing
+ID TIME-SERIES; CHAOTIC SYSTEMS; EMBEDDING DIMENSION; EQUITY MARKETS;
+   SYNCHRONIZATION; CONTAGION; INTEGRATION; DYNAMICS; PRICES; RISK
+AB The methodologies and assumptions in financial integration studies are problematic and may lead to spurious empirical results. Using surrogate data analysis and the mutual prediction method of testing for nonlinear interdependence, it is feasible for an analyst, with a scant knowledge of the underlying dynamics of two dynamical systems, to show whether or not the systems are interdependent. This study applies these techniques in testing for nonlinear interdependence of three Chinese stock markets: Shanghai, Shenzhen, and Hong Kong. The empirical results of the present study indicate that the stock market series are nonlinear and that the Chinese stock exchanges are nonlinearly interdependent. Specifically, the evidence indicates that Shanghai and Shenzhen markets are bi-directionally interdependent, while Shanghai and Hong Kong as well as Shenzhen and Hong Kong markets are unidirectionally interdependent, with the direction of interdependence going from the mainland's markets to the Hong Kong market.
+C1 [Soofi, Abdol S.] Univ Wisconsin Platteville, Dept Econ, Platteville, WI 53818 USA.
+   [Li, Zhe; Hui, Xiaofeng] Harbin Inst Technol, Sch Management, Harbin 150006, Peoples R China.
+RP Soofi, AS (reprint author), Univ Wisconsin Platteville, Dept Econ, Platteville, WI 53818 USA.
+EM soofi@uwplatt.edu
+OI Soofi, Abdol/0000-0002-1869-4958
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [70773028]
+FX We are grateful to Lianqyue Cao, Alexander Balanov, and the anonymous
+   referees for their helpful comments on an earlier draft of this paper.
+   This study was partially supported by a grant from The National Natural
+   Science Foundation of China (70773028).
+CR Afrainmovich N., 1986, RADIO PHYS QUANT ELE, V29, P747
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Baek SJ, 2004, PHYS REV E, V69, DOI 10.1103/PhysRevE.69.066210
+   Baele L., 2004, EUROPEAN CENTRAL BAN, V14
+   Balanov A, 2009, SPRINGER SER SYNERG, P1
+   Bekaert G, 2000, REV FINANC STUD, V13, P1, DOI 10.1093/rfs/13.1.1
+   Breakspear M, 2002, NEUROIMAGE, V16, P822, DOI 10.1006/nimg.2002.1106
+   Cao LY, 1997, PHYSICA D, V110, P43, DOI 10.1016/S0167-2789(97)00118-8
+   CLEVELAND WS, 1982, J AM STAT ASSOC, V77, P520, DOI 10.2307/2287705
+   Das SR, 2004, J FINANC, V59, P2809, DOI 10.1111/j.1540-6261.2004.00717.x
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Efron B., 1982, JACKKNIFE BOOTSTRAP
+   ERRUNZA V, 1992, J BANK FINANC, V16, P949, DOI 10.1016/0378-4266(92)90034-W
+   FRASER AM, 1986, PHYS REV A, V33, P1134, DOI 10.1103/PhysRevA.33.1134
+   FUJISAKA H, 1983, PROG THEOR PHYS, V69, P32, DOI 10.1143/PTP.69.32
+   GALKA A, 2000, ADV SERIES NONLINEAR, V14
+   Henry PB, 2000, J FINANC, V55, P529, DOI 10.1111/0022-1082.00219
+   HSIEH DA, 1991, J FINANC, V46, P1839, DOI 10.2307/2328575
+   Kaplan D., 2004, MATH BIOMEDICAL ENG
+   KENNEL MB, 1992, PHYS REV A, V45, P3403, DOI 10.1103/PhysRevA.45.3403
+   Kugiumtzis D., 2002, MODELLING FORECASTIN, P267
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Masson P, 1999, J INT MONEY FINANC, V18, P587, DOI 10.1016/S0261-5606(99)00016-9
+   OSBORNE AR, 1989, PHYSICA D, V35, P357, DOI 10.1016/0167-2789(89)90075-4
+   Ott E, 2002, PHYSICA D, V173, P29, DOI 10.1016/S0167-2789(02)00663-2
+   Pecora L, 1996, BUILDING BRIDGE NATU, P49
+   PECORA LM, 1990, PHYS REV LETT, V64, P821, DOI 10.1103/PhysRevLett.64.821
+   Pecora LM, 1997, CHAOS, V7, P520, DOI 10.1063/1.166278
+   Pesaran MH, 2007, J ECON DYN CONTROL, V31, P1245, DOI 10.1016/j.jedc.2006.03.008
+   Phylaktis K, 2002, J INT MONEY FINANC, V21, P879, DOI 10.1016/S0261-5606(02)00027-X
+   Restrepo JG, 2006, PHYSICA D, V224, P114, DOI 10.1016/j.physd.2006.08.026
+   RULKOV NF, 1995, PHYS REV E, V51, P980, DOI 10.1103/PhysRevE.51.980
+   SAUER T, 1991, J STAT PHYS, V65, P579, DOI 10.1007/BF01053745
+   SCHEINKMAN JA, 1989, J BUS, V62, P311, DOI 10.1086/296465
+   Schiff SJ, 1996, PHYS REV E, V54, P6708, DOI 10.1103/PhysRevE.54.6708
+   Schreiber T, 1999, PHYS REP, V308, P2
+   Soofi A, 2003, INT J THEORETICAL AP, V6, P553
+   Soofi A.S., 2002, MODELLING FORECASTIN
+   STULZ RM, 1981, J FINANC ECON, V9, P383, DOI 10.1016/0304-405X(81)90005-2
+   Takens F., 1981, LECT NOTES MATH, P366, DOI DOI 10.1007/BFB0091924
+   THEILER J, 1992, PHYSICA D, V58, P77, DOI 10.1016/0167-2789(92)90102-S
+   WOLF A, 1985, PHYSICA D, V16, P285, DOI 10.1016/0167-2789(85)90011-9
+   Zhu Q., 2003, INT J THEOR APPL FIN, V7, P135
+NR 44
+TC 6
+Z9 6
+U1 1
+U2 29
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PY 2012
+VL 12
+IS 3
+BP 397
+EP 410
+DI 10.1080/14697688.2010.541488
+PG 14
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA 920QW
+UT WOS:000302423100006
+DA 2019-12-27
+ER

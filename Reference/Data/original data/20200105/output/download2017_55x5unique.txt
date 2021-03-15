@@ -1,0 +1,465 @@
+
+PT J
+AU Rubia, A
+   Sanchis-Marco, L
+AF Rubia, Antonio
+   Sanchis-Marco, Lidia
+TI MEASURING TAIL-RISK CROSS-COUNTRY EXPOSURES IN THE BANKING INDUSTRY
+SO REVISTA DE ECONOMIA APLICADA
+LA English
+DT Article
+DE bank contagion; SDSVaR; expectiles
+ID SYSTEMIC RISK; VOLATILITY SPILLOVERS; QUANTILE REGRESSION; STOCK;
+   TRANSMISSION; MARKETS; CRISIS
+AB This paper analyzes the vulnerability of the banking industry in advanced and emerging economic to shocks originated in or transmitted by banks in a foreign area under stressed and non-stressed conditions. The main aim is to measure cross-country sensitivities that feature systemic contagion in the international banking system and characterize how systemic shocks are propagated. To this end, we estimate the sensitivity of the expected-loss function in the local banking industry to contemporaneous shocks in foreign expected-loss functions in a dynamic equation system during the period December 1999 through November 2013, after controlling for global exposures to common factors, and considering stressed and non-stressed economic scenarios. We implement instrumental estimation to ensure robust estimates against endogeneity and characterize impulse-response functions to appraise the expected duration of tail-contagion. Our study reveals that cross-country vulnerabilities exhibit strong state-dependent patterns which largely increase during periods of distress. During tranquil or normal periods, shocks cause minor or no significant impacts are quickly absorbed by the domestic systems. Under stressed market conditions, however, even idiosyncratic shocks can trigger a pronounced response in other areas with effects that tend to last over long periods of time. Our analysis also reveals the existence of directionality in cross-border contagion, with the US banking sector being the greatest source of financial contagion worldwide and, simultaneously, being more resilient than other areas. Furthermore, systematic exposures to Central EMU area are largely significant than Peripheral Europe, being US the most vulnerable country to shocks originating in Central EMU. Finally, US and Eurozone are sensitive to shocks in Emerging banking system.
+C1 [Rubia, Antonio] Univ Alicante, Alicante, Spain.
+   [Sanchis-Marco, Lidia] Univ Castilla La Mancha, Ciudad Real, Spain.
+RP Rubia, A (reprint author), Univ Alicante, Alicante, Spain.
+RI Sanchis Marco, Lidia/H-6161-2018
+OI Sanchis Marco, Lidia/0000-0002-7631-0238
+FU Spanish Department of Education and Innovation [ECO2012-33619,
+   ECO2014-58434P]
+FX We would like to thank Zeno Adams, Antonio Diaz, Javier
+   Lopez-de-LaCalle, Simone Manganelli, Antonio Moreno, Alfonso Novales,
+   James W. Taylor, seminar participants at ESADE in 2015 and two anonymous
+   referees for comments and suggestions. Earlier versions of this paper
+   were presented in the 2014 Workshop in Time Series Econometrics
+   (Frankfurt), XXII Finance Forum (Zaragoza), Winter 2014 Conference of
+   the Multinational Finance Society (Athens), 2015 EFMA Meeting
+   (Netherlands), 2015 Infinity Meeting (Ljubljana). Any error is our
+   responsability. Financial support from the Spanish Department of
+   Education and Innovation (projects ECO2012-33619 and ECO2014-58434P) is
+   gratefully acknowledged. A previous version of this paper is available
+   in the working paper series edited by IVIE.
+CR Acerbi C, 2002, J BANK FINANC, V26, P1487, DOI 10.1016/S0378-4266(02)00283-2
+   Acharya VV, 2010, IMF ECON REV, V58, P37, DOI 10.1057/imfer.2010.4
+   Acharya VV, 2010, TECHNICAL REPORT
+   Adams Z, 2014, J FINANC QUANT ANAL, V49, P575, DOI 10.1017/S0022109014000325
+   Adrian T., 2011, WORKING PAPER
+   Aigner D.J., 1976, INT ECON REV, V17, P377, DOI DOI 10.2307/2525708
+   AMEMIYA T, 1982, ECONOMETRICA, V50, P689, DOI 10.2307/1912608
+   Ang A, 2006, REV FINANC STUD, V19, P1191, DOI 10.1093/rfs/hhj035
+   [Anonymous], 2014, WORLD EC OUTL REC ST
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Baele L, 2005, J FINANC QUANT ANAL, V40, P373, DOI 10.1017/S0022109000002350
+   Ballester L., 2014, WORKING PAPER
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   BECKER KG, 1990, J FINANC, V45, P1297, DOI 10.2307/2328726
+   Berkowitz J, 2001, J BUS ECON STAT, V19, P465, DOI 10.1198/07350010152596718
+   Berkowitz J, 2011, MANAGE SCI, V57, P2213, DOI 10.1287/mnsc.1080.0964
+   Brownlees C., 2012, WORKING PAPER
+   Buchholz M., 2013, WORKING PAPER
+   Cheung W., 2010, APPL FINANCIAL EC, V20, P85, DOI DOI 10.1080/09603100903262962
+   Chevapatrakul T, 2013, ECON BULL, V33, P1863
+   Christoffersen P., 2004, J FINANCIAL ECONOMET, V2, P84, DOI DOI 10.1093/JJFINEC/NBH004
+   Christoffersen PF, 1998, INT ECON REV, V39, P841, DOI 10.2307/2527341
+   De Rossi G, 2009, J ECONOMETRICS, V152, P179, DOI 10.1016/j.jeconom.2009.01.001
+   Degryse H., 2010, INT REV FINANC, V10, P209, DOI DOI 10.1111/J.1468-2443.2010.01109.X
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   EFRON B, 1991, STAT SINICA, V1, P93
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   ENGLE RF, 1990, ECONOMETRICA, V58, P525, DOI 10.2307/2938189
+   EUN CS, 1989, J FINANC QUANT ANAL, V24, P241, DOI 10.2307/2330774
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   International Monetary Fund, 2011, CHANG PATT GLOB TRAD
+   Jin XY, 2012, ENERG ECON, V34, P2125, DOI 10.1016/j.eneco.2012.03.003
+   Kim T. - H., 2004, ECONOMET J, V7, P218, DOI [10.1111/j.1368-423X.2004.00128.x, DOI 10.1111/J.1368-423X.2004.00128.X]
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Koenker R, 2005, ECONOMETRIC SOC MONO
+   Kuan CM, 2009, J ECONOMETRICS, V150, P261, DOI 10.1016/j.jeconom.2008.12.002
+   Kupiec P.H., 1995, J DERIV, V3, P73, DOI DOI 10.3905/jod.1995.407942
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   Lopez-Espinosa G, 2015, J BANK FINANC, V58, P471, DOI 10.1016/j.jbankfin.2015.05.004
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Ludwig A, 2014, ECON LETT, V125, P451, DOI 10.1016/j.econlet.2014.10.010
+   McGuire P., 2009, WORKING PAPER
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   Monk A., 2012, WORKING PAPER
+   NEWEY WK, 1987, ECONOMETRICA, V55, P819, DOI 10.2307/1911031
+   Panopoulou E., 2009, APPL FINANC EC, V19, P917
+   Poon SH, 2003, J ECON LIT, V41, P478, DOI 10.1257/002205103765762743
+   POWELL JL, 1983, ECONOMETRICA, V51, P1569, DOI 10.2307/1912290
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Segoviano M, 2009, WORKING PAPER
+   SHILLER RJ, 1989, J FINANC, V44, P719, DOI 10.2307/2328779
+   SUSMEL R, 1994, J INT MONEY FINANC, V13, P3, DOI 10.1016/0261-5606(94)90021-3
+   Taylor JW, 2008, J FINANC ECONOMET, V6, P382, DOI 10.1093/jjfinec/nbn007
+   Taylor JW, 2008, J FINANC ECONOMET, V6, P231, DOI 10.1093/jjfinc/nbn001
+   Taylor S.J., 1986, MODELLING FINANCIAL
+   THEODOSSIOU P, 1993, J FINANC RES, V16, P337, DOI 10.1111/j.1475-6803.1993.tb00152.x
+   Tressel H., 2010, WORKING PAPER
+   Vinod HD, 2009, J STAT SOFTW, V29, P1
+   Weistroffer C., 2010, MONITORING CROSS BOR
+   Yao Q., 1996, J NONPARAMETR STAT, V6, P273, DOI DOI 10.1080/10485259608832675
+NR 61
+TC 0
+Z9 0
+U1 0
+U2 2
+PU UNIV ZARAGOZA DEV COOPERATION CHAIR, SPANISH NETWORK DEV STUDIES
+PI ZARAGOZA
+PA GRAN VIA 2, ZARAGOZA, 50005, SPAIN
+SN 1133-455X
+J9 REV ECON APL-SPAIN
+JI Rev. Econ. Apl.
+PD FAL
+PY 2017
+VL 25
+IS 74
+BP 27
+EP 74
+PG 48
+WC Economics
+SC Business & Economics
+GA FM7QC
+UT WOS:000415274100002
+DA 2019-12-27
+ER
+
+PT J
+AU Fernholz, RT
+   Koch, C
+AF Fernholz, Ricardo T.
+   Koch, Christoffer
+TI Big Banks, Idiosyncratic Volatility, and Systemic Risk
+SO AMERICAN ECONOMIC REVIEW
+LA English
+DT Article
+ID AGGREGATE FLUCTUATIONS; POWER LAWS; ZIPFS LAW; ECONOMICS; ORIGINS
+C1 [Fernholz, Ricardo T.] Claremont Mckenna Coll, Robert Day Sch Econ & Finance, 500 E Ninth St, Claremont, CA 91711 USA.
+   [Koch, Christoffer] Fed Reserve Bank Dallas, Res Dept, 2200 North Pearl St, Dallas, TX 75201 USA.
+RP Fernholz, RT (reprint author), Claremont Mckenna Coll, Robert Day Sch Econ & Finance, 500 E Ninth St, Claremont, CA 91711 USA.
+EM ricardo.fernolz@cmc.edu; christoffer.koch@dal.frb.org
+CR Acemoglu D, 2012, ECONOMETRICA, V80, P1977, DOI 10.3982/ECTA9623
+   Axtell RL, 2001, SCIENCE, V293, P1818, DOI 10.1126/science.1062081
+   Benhabib J, 2011, ECONOMETRICA, V79, P123, DOI 10.3982/ECTA8416
+   Caballero RJ, 2013, J FINANC, V68, P2549, DOI 10.1111/jofi.12087
+   Fernholz Ricardo T., 2016, EMPIRICAL METHODS DY
+   Fernholz Rocardp T., 2016, 1604 FED RES BANK DA
+   Gabaix X, 1999, Q J ECON, V114, P739, DOI 10.1162/003355399556133
+   Gabaix X, 2011, ECONOMETRICA, V79, P733, DOI 10.3982/ECTA8769
+   Gabaix X, 2009, ANNU REV ECON, V1, P255, DOI 10.1146/annurev.economics.050708.142940
+   Ioannides Y, 2013, J URBAN ECON, V73, P18, DOI 10.1016/j.jue.2012.06.005
+   Janicki H., 2006, FRB RICHMOND EC Q, V92, P291
+   Kroszner RS, 1999, Q J ECON, V114, P1437, DOI 10.1162/003355399556223
+   Lucas RE, 2013, AM ECON REV, V103, P43, DOI 10.1257/aer.103.3.43
+   Luttmer EGJ, 2007, Q J ECON, V122, P1103, DOI 10.1162/qjec.122.3.1103
+   Newman MEJ, 2005, CONTEMP PHYS, V46, P323, DOI 10.1080/00107510500052444
+   Summers Lawrence H., 2016, BROOK PAP EC ACT FAL
+NR 16
+TC 1
+Z9 1
+U1 4
+U2 24
+PU AMER ECONOMIC ASSOC
+PI NASHVILLE
+PA 2014 BROADWAY, STE 305, NASHVILLE, TN 37203 USA
+SN 0002-8282
+EI 1944-7981
+J9 AM ECON REV
+JI Am. Econ. Rev.
+PD MAY
+PY 2017
+VL 107
+IS 5
+BP 603
+EP 607
+DI 10.1257/aer.p20171007
+PG 5
+WC Economics
+SC Business & Economics
+GA EW5MZ
+UT WOS:000402551700118
+DA 2019-12-28
+ER
+
+PT J
+AU Bui, C
+   Scheule, H
+   Wu, E
+AF Bui, Christina
+   Scheule, Harald
+   Wu, Eliza
+TI The value of bank capital buffers in maintaining financial system
+   resilience
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Capital buffer; Loan loss provisions; Systemic risk; Financial
+   resilience
+ID LENDING BEHAVIOR; AUSTRALIAN BANKS; RISK; REQUIREMENTS; INSTITUTIONS;
+   GROWTH
+AB There is a current controversy concerning the appropriate size of banks' capital requirements, and the trade-off between the costs and benefits of implementing higher capital requirements. We quantify the size of capital buffers required to reduce system-wide losses using confidential regulatory data for Australian banks from 2002 to 2014 and annual public accounts from 1978 to 2014. We find that a moderate increase in bank capital buffers is sufficient to maintain financial system resilience, even after taking economic downturns into consideration. Furthermore, while banks benefit from paying a lower cost of debt when they have a higher capital buffer, lending volumes are lower indicating that credit supply may be hampered if bank capital levels are too high within a financial system. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Bui, Christina; Scheule, Harald] Univ Technol Sydney, Finance Discipline Grp, UTS Business Sch, POB 123, Broadway, NSW 2007, Australia.
+   [Wu, Eliza] Univ Sydney, Sch Business, Discipline Finance, Sydney, NSW 2006, Australia.
+RP Wu, E (reprint author), Univ Sydney, Sch Business, Discipline Finance, Sydney, NSW 2006, Australia.
+EM Christina.Bui@uts.edu.au; Harald.Scheule@uts.edu.au;
+   Eliza.Wu@sydney.edu.au
+FU Center for International Finance and Regulation (CIFR) [F002];
+   Commonwealth Government; NSW Government; Australian Research
+   CouncilAustralian Research Council [DP170101413]
+FX The support by the Center for International Finance and Regulation
+   (CIFR, project number F002) is gratefully acknowledged. CIFR was funded
+   by the Commonwealth and NSW Governments and supported by other
+   consortium members (see www.cifr.edu.au). We thank the Australian
+   Prudential Regulation Authority and in particular Charles Littrell
+   (Executive General Manager, Policy, Supervisory Support Division), David
+   Connolly (Manager, Banking Statistics Policy, Statistics and
+   International Division) and Meghann Garry (Senior Statistics Analyst
+   Supervisory Support Division) for the provision of data as well as
+   helpful feedback. We thank Michael Hawari and Mai Luong for valuable
+   research assistance. Wu would also like to acknowledge the support from
+   the Australian Research Council for DP170101413. We are grateful to
+   Charles Calomiris, Talis Putnins, Lorenzo Casavecchia, Marco Navone, Ben
+   Marshall, Shams Pathan, Amelia Pais Rodriguez, Alden Toevs, David Tripe,
+   Bill Wilson, and two anonymous CIFR referees for helpful comments. All
+   errors remain our own. We would also like to thank participants in
+   seminars at the University of Technology Sydney and Massey University as
+   well as the 7th Financial Markets and Corporate Governance Conference,
+   the Paul Wooley Centre for Financial Market Dysfunctionality Workshop,
+   the UTS PhD Symposium, the CIFR Banking Research Symposium and the
+   IGF/ADB Financial Cycles, Systemic Risk, Interconnectedness, and Policy
+   Options for Resilience Conference 2016. All errors remain our own
+CR Abou El Sood H, 2012, INT REV FINANC ANAL, V25, P64, DOI 10.1016/j.irfa.2012.06.007
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Admati A, 2014, BANKERS NEW CLOTHES
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Ahmed AS, 1999, J ACCOUNT ECON, V28, P1, DOI 10.1016/S0165-4101(99)00017-8
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Anufriev M, 2015, J BANK FINANC, V61, pS241, DOI 10.1016/j.jbankfin.2015.08.034
+   Ayuso J, 2004, J FINANC INTERMED, V13, P249, DOI 10.1016/S1042-9573(03)00044-5
+   Bank of England, 2016, FIN POL COMM FRAM TH
+   Basel Committee on Banking Supervision, 2011, GLOB REG FRAM MOR RE
+   Basel Committee on Banking Supervision, 2014, REG CONS ASS PROGR R
+   Bikker J. A., 2005, J INT FINANC MARK I, V15, P141, DOI DOI 10.1016/J.INTFIN.2004.03.004
+   Borio C., 2009, 284 BIS
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Cajueiro D., 2011, 2 BIS CCA C MON POL
+   Caruana J., 2012, BUILDING RESILIENT F
+   Cerutti E., 2012, 376 BIS
+   Cummings JR, 2016, J BANK FINANC, V67, P23, DOI 10.1016/j.jbankfin.2016.02.009
+   Cummings JR, 2016, AUST ECON REV, V49, P44, DOI 10.1111/1467-8462.12138
+   Danielsson J, 2002, J BANK FINANC, V26, P1273, DOI 10.1016/S0378-4266(02)00263-7
+   Dermine J, 2008, J FINANC STABIL, V4, P1, DOI 10.1016/j.jfs.2007.12.001
+   Dungey M. H., 2016, ECON REC, V93, P1
+   Dungey M. H., 2014, WP038 CIFR
+   Fahlenbrach R., 2017, REV FINANCI IN PRESS
+   Fong Tom, 2011, REV FUTURES MARKETS
+   Foos D, 2010, J BANK FINANC, V34, P2929, DOI 10.1016/j.jbankfin.2010.06.007
+   Gambacorta L, 2004, J FINANC INTERMED, V13, P436, DOI 10.1016/j.jfi.2004.06.001
+   Gambacorta L., 2016, J FINANCIAL IN PRESS
+   Goodhart C, 2013, J FINANC STABIL, V9, P445, DOI 10.1016/j.jfs.2013.02.001
+   Heid F, 2007, J BANK FINANC, V31, P3885, DOI 10.1016/j.jbankfin.2007.03.004
+   Hess K., 2008, J INT FINANCE EC, V8, P1
+   Hess K, 2009, ECON REC, V85, P331, DOI 10.1111/j.1475-4932.2009.00551.x
+   Kosak M, 2015, INT REV FINANC ANAL, V37, P168, DOI 10.1016/j.irfa.2014.11.008
+   Kupiec PH, 2013, J FINANC INTERMED, V22, P285, DOI 10.1016/j.jfi.2012.09.005
+   Laeven L, 2003, J FINANC INTERMED, V12, P178, DOI 10.1016/S1042-9573(03)00016-0
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Miles D, 2013, ECON J, V123, P1, DOI 10.1111/j.1468-0297.2012.02521.x
+   Rosch D, 2016, PAC-BASIN FINANC J, V40, P289, DOI 10.1016/j.pacfin.2016.01.002
+   Sedunov J, 2016, J FINANC STABIL, V24, P71, DOI 10.1016/j.jfs.2016.04.005
+   Silva W, 2017, J FINANC STABIL, V28, P91, DOI 10.1016/j.jfs.2016.12.004
+   de Souza SRS, 2016, J FINANC STABIL, V25, P179, DOI 10.1016/j.jfs.2015.10.001
+   Thakor AV, 2014, ANNU REV FINANC ECON, V6, P185, DOI 10.1146/annurev-financial-110613-034531
+   Vithessonthi C, 2016, INT REV FINANC ANAL, V45, P295, DOI 10.1016/j.irfa.2016.04.003
+   Wong E., 2011, PROCYCLICALITY LOAN
+   Zhang Q, 2015, J MONEY CREDIT BANK, V47, P1403, DOI 10.1111/jmcb.12249
+NR 45
+TC 4
+Z9 4
+U1 1
+U2 9
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2017
+VL 33
+BP 23
+EP 40
+DI 10.1016/j.jfs.2017.10.006
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA FO9DW
+UT WOS:000417189200002
+DA 2019-12-28
+ER
+
+PT J
+AU Ceylan, O
+AF Ceylan, Ozcan
+TI Global Risk Aversion Spillover Dynamics and Investors' Attention
+   Allocation
+SO ANNALS OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE Investor sentiment; Risk aversion spillovers; Variance risk premium;
+   Generalized forecast error variance decomposition; Investors' attention
+   allocation; Financial crises
+ID VOLATILITY; CONTAGION; PREMIA; CRISES; MODEL
+AB This paper investigates market-wide risk aversion in an international setting. Particularly, this empirical study evaluates risk aversion spillover dynamics as an uncertainty transmission mechanism for the period 2000-2015 to reveal if there has been a significant change in these dynamics when markets are going through turbulent periods. As a plausible proxy for risk aversion, variance risk premium (VRP) is computed through the difference between expected variances under risk-neutral and physical measures for seven markets studied: United States, United Kingdom, Germany, France, Netherlands, Switzerland and Japan. Effects of a shock to U.S. VRP on the other markets' VRPs are evaluated through Generalized Forecast Error Variance Decomposition. Results show that risk aversion spillovers from U.S. to other markets are stronger while the U.S. is going through turbulent periods confirming the intuition that investors are more focused on incidents in the turbulent market. Markets become more connected in terms of sentiments when a country is unexpectedly hit by a major crisis, limiting diversification opportunities.
+C1 [Ceylan, Ozcan] Istanbul Kemerburgaz Univ, Dept Business Admnistrat, TR-34217 Istanbul, Turkey.
+RP Ceylan, O (reprint author), Istanbul Kemerburgaz Univ, Dept Business Admnistrat, TR-34217 Istanbul, Turkey.
+EM ozcan.ceylan@kemerbugaz.edu.tr
+RI Ceylan, Ozcan/AAC-7225-2019
+OI Ceylan, Ozcan/0000-0003-2924-2903
+CR Andersen TG, 2007, REV ECON STAT, V89, P701, DOI 10.1162/rest.89.4.701
+   Baker M, 2012, J FINANC ECON, V104, P272, DOI 10.1016/j.jfineco.2011.11.002
+   Bakshi G, 2006, MANAGE SCI, V52, P1945, DOI 10.1287/mnsc.1060.0579
+   Bollerslev T, 2011, J ECONOMETRICS, V160, P235, DOI 10.1016/j.jeconom.2010.03.033
+   Bollerslev T, 2009, REV FINANC STUD, V22, P4463, DOI 10.1093/rfs/hhp008
+   Britten-Jones M, 2000, J FINANC, V55, P839, DOI 10.1111/0022-1082.00228
+   Carr P, 2009, REV FINANC STUD, V22, P1311, DOI 10.1093/rfs/hhn038
+   Corsi F, 2009, J FINANC ECONOMET, V7, P174, DOI 10.1093/jjfinec/nbp001
+   DEMETERFI K, 1999, J DERIV, V6, P9, DOI DOI 10.3905/JOD.1999.319129
+   Drechsler I, 2011, REV FINANC STUD, V24, P1, DOI 10.1093/rfs/hhq085
+   Glick R, 1999, J INT MONEY FINANC, V18, P603, DOI 10.1016/S0261-5606(99)00023-6
+   Jiang GJ, 2005, REV FINANC STUD, V18, P1305, DOI 10.1093/rfs/hhi027
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Kumar M. S., 2002, INT FINANC, V5, P401
+   Longstaff FA, 2010, J FINANC ECON, V97, P436, DOI 10.1016/j.jfineco.2010.01.002
+   Mondria J, 2013, ECON J, V123, P429, DOI 10.1111/j.1468-0297.2012.02530.x
+   Muller U. A., 1997, J EMPIR FINANC, V4, P213, DOI DOI 10.1016/S0927-5398(97)00007-8
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   Todorov V, 2010, REV FINANC STUD, V23, P345, DOI 10.1093/rfs/hhp035
+   Zhou H., 2010, VARIANCE RISK PREMIA
+NR 20
+TC 1
+Z9 1
+U1 0
+U2 1
+PU WUHAN UNIV JOURNALS PRESS
+PI WUHAN
+PA DONGHU RD, 155, WUHAN, HUBEI 430072, PEOPLES R CHINA
+SN 1529-7373
+J9 ANN ECON FINANC
+JI Ann. Econ. Financ.
+PD MAY
+PY 2017
+VL 18
+IS 1
+BP 99
+EP 109
+PG 11
+WC Economics
+SC Business & Economics
+GA EZ9KR
+UT WOS:000405049800005
+DA 2019-12-27
+ER
+
+PT J
+AU Capponi, A
+   Dooley, JM
+   Oet, MV
+   Ong, SJ
+AF Capponi, Agostino
+   Dooley, John M.
+   Oet, Mikhail V.
+   Ong, Stephen J.
+TI Capital and resolution policies: The US interbank market
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Bank resolution; Capital policy; Systemic risk; Policy simulation;
+   Collateralized interbank market
+ID SYSTEMIC RISK; BANK MERGERS; FINANCIAL INSTITUTIONS; EFFICIENCY;
+   COMPETITION; BUFFERS
+AB We develop an empirically based simulation study to test two types of policies designed to control systemic risk: preventive policies targeting capital requirements and mitigation policies targeting default resolution. We find that capital buffers reduce both the number of defaults and the resulting losses. The loss reduction benefit increases as the magnitude of adverse shocks becomes higher. We find that a simple branch-breakup resolution strategy reduces the loss borne by the Federal Deposit Insurance Corporation (FDIC). The mitigation effect becomes higher as the fraction of assets resolved through auctions and auction competitiveness increase. (C) 2016 Published by Elsevier B.V.
+C1 [Capponi, Agostino] Columbia Univ, Ind Engn & Operat Res Dept, 500 W 120th St,Mudd 510, New York, NY 10027 USA.
+   [Dooley, John M.; Oet, Mikhail V.; Ong, Stephen J.] Fed Reserve Bank Cleveland, 1455 E 6th St, Cleveland, OH 44114 USA.
+   [Oet, Mikhail V.] Case Western Reserve Univ, Weatherhead Sch Management, 11119 Bellflower Rd, Cleveland, OH 44106 USA.
+RP Oet, MV (reprint author), Fed Reserve Bank Cleveland, POB 6387, Cleveland, OH 44114 USA.
+EM ac3827@columbia.edu; john.m.dooley@clev.frb.org;
+   mikhail.v.oet@clev.frb.org; stephen.j.ong@clev.frb.org
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   AGGARWAL R, 1998, FEDERAL RESERVE BANK, V4, P23
+   Arner DW, 2009, HONG KONG LAW J, V39, P95
+   Avgouleas E., 2010, 4 DSF
+   Basel Committee on Banking Supervision (BCBS), 1996, CONS DOC
+   Basel Committee on Banking Supervision (BCBS), 1992, CONS DOC
+   Basel Committee on Banking Supervision (BCBS), 2011, CONS DOC
+   Bech ML, 2010, PHYSICA A, V389, P5223, DOI 10.1016/j.physa.2010.05.058
+   Beck T, 2006, J BANK FINANC, V30, P1581, DOI 10.1016/j.jbankfin.2005.05.010
+   Berger AN, 2009, J FINANC SERV RES, V35, P99, DOI 10.1007/s10693-008-0050-7
+   Berger AN, 1997, J BANK FINANC, V21, P895, DOI 10.1016/S0378-4266(97)00010-1
+   BERGER AN, 1995, J BANK FINANC, V19, P393, DOI 10.1016/0378-4266(95)00002-X
+   BERGER AN, 1992, ANTITRUST B, V37, P541
+   CALOMIRIS CW, 2009, CATO J, V29, P65
+   Capponi A, 2015, REV ASSET PRICING ST, V5, P227, DOI 10.1093/rapstu/rav006
+   Capponi A, 2015, J ECON DYN CONTROL, V58, P152, DOI 10.1016/j.jedc.2015.06.008
+   Cowan AR, 2015, J BANK FINANC, V54, P222, DOI 10.1016/j.jbankfin.2014.12.016
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Davison Lee, 2005, FDIC BANKING REV, V17, p[17, 19]
+   Dickens R. N., 2002, Q J BUS EC, V3-12
+   Drehmann M., 2010, BANK INT SETTLEMENTS
+   Drehmann M, 2011, INT J CENT BANK, V7, P189
+   EASLEY D., 2010, NETWORKS CROWDS MARK
+   Edge RM, 2011, INT J CENT BANK, V7, P261
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Ely B., 1990, HOUS POLICY DEBATE, V1, P53
+   ESTRELLA A, 2000, FRBNY EC POLICY REV, V6, P33
+   FAMA EF, 1968, J AM STAT ASSOC, V63, P1132, DOI 10.2307/2285874
+   FDIC, 2014, RES HDB
+   Freixas X, 2010, ECON POLICY, P375
+   Gallagher J. J., 1998, MANAGING CRISIS FDIC
+   Goodhart C., 2008, FINANC TIMES, V30, P14
+   Granja J., 2016, J FINANCE IN PRESS
+   Grant J. K., 2012, VA LAW BUS REV, V6, P467
+   Grant Thornton, 2010, CISC VIS NETW IND GL
+   Houston JF, 2001, J FINANC ECON, V60, P285, DOI 10.1016/S0304-405X(01)00046-0
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Huertas T. F., 2010, LOND SCH EC FINANC M, V18
+   Hynes Richard M., 2010, WASH LEE L REV, V67, P985
+   JAMES C, 1991, J FINANC, V46, P1223, DOI 10.2307/2328857
+   Kocherlakota NR, 2007, J MONEY CREDIT BANK, V39, P1107, DOI 10.1111/j.1538-4616.2007.00059.x
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   LINTNER J, 1956, AM ECON REV, V46, P97
+   Makarova M. Y., 2010, 10247 INT MON FUND, P10
+   Miu P., 2010, CAN BASEL 3 WORK EXA
+   Oet M. V., 2016, RES INT BUS IN PRESS
+   Olivares-Caminal R., 2011, BUS LAW REV, V8-9, P228
+   Parker M. D. C., 2011, CLOSING FAILED BANK
+   Peristiani S, 1997, J MONEY CREDIT BANK, V29, P326, DOI 10.2307/2953697
+   Ragalevsky SV, 2009, BANKING LAW J, V126, P867
+   Regulatory Consistency Assessment Programme (RCAP), 2014, REG CONS ASS PROGR
+   Repullo R, 2011, DP8304 CEPR
+   RHOADES SA, 1993, J BANK FINANC, V17, P411, DOI 10.1016/0378-4266(93)90041-B
+   Rhoades SA, 1998, J BANK FINANC, V22, P273, DOI 10.1016/S0378-4266(97)00053-8
+   Schwarcz SL, 2013, SOUTH CALIF LAW REV, V87, P69
+   Shadish W. R., 2002, EXPT QUASIEXPERIMENT
+   SPONG KENNETH, 2000, BANKING REGULATION I
+   Vazquez F, 2015, J BANK FINANC, V61, P1, DOI 10.1016/j.jbankfin.2015.08.023
+   Zhou T., 2015, FAILED BANK AUCTIONS
+NR 59
+TC 1
+Z9 1
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD JUN
+PY 2017
+VL 30
+BP 229
+EP 239
+DI 10.1016/j.jfs.2016.04.010
+PG 11
+WC Business, Finance; Economics
+SC Business & Economics
+GA FH0GS
+UT WOS:000410818200017
+DA 2019-12-28
+ER

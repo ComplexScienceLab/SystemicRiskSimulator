@@ -1,0 +1,410 @@
+
+PT J
+AU Mensi, W
+   Hammoudeh, S
+   Shahzad, SJH
+   Al-Yahyaee, KH
+   Shahbaz, M
+AF Mensi, Walid
+   Hammoudeh, Shawkat
+   Shahzad, Syed Jawad Hussain
+   Al-Yahyaee, Khamis Hamed
+   Shahbaz, Muhammad
+TI Oil and foreign exchange market tail dependence and risk spillovers for
+   MENA, emerging and developed countries: VMD decomposition based copulas
+SO ENERGY ECONOMICS
+LA English
+DT Article
+DE Oil prices; Currency markets; Conditional Value at Risk; Copula;
+   Multiresolution approach
+ID VARIATIONAL MODE DECOMPOSITION; IMPULSE-RESPONSE ANALYSIS; VOLATILITY
+   SPILLOVERS; SYSTEMIC RISK; TIME-SERIES; UNIT-ROOT; MULTIVARIATE MODELS;
+   STOCK MARKETS; PRICES; RATES
+AB This paper examines the short- and medium run dependence structures between oil and currency markets for MENA, other developing and developed countries, using a novel multiresolution decomposition method, namely the variational mode decomposition (VMD), along with a battery of time-invariant and time-varying symmetric and asymmetric copula functions. Further, we assess the downside and upside short- and medium-run risk spillovers from oil to U.S. exchange rate returns and vice versa by computing the conditional Value-at-Risk (CoVaR) risk measures. Before the copula estimations, we apply the spillover index of Diebold and Yilmaz (2012) and network diagrams to identify and select the currencies that are the most significant net contributors or net receivers of returns from/to the oil/currency markets. The copula results show strong evidence of time-varying and high average (tail) dependence between oil returns and the FX markets, which are net transmitters to oil, for the short and medium time horizons. On the other hand, we find average and relatively low dynamic dependence between oil and the net receiver currencies, regardless of the time horizons. Moreover, there is evidence of up and down risk asymmetric systemic risks from oil to currencies and vice versa for some countries in the short-and medium run horizons. Finally, the risk spillovers are asymmetric over time and investment horizons. These results have several important implications for hedging strategies and diversification benefits for oil and FX traders and institutional investors. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Mensi, Walid] Univ Tunis El Manar, Dept Finance & Accounting, Tunis, Tunisia.
+   [Mensi, Walid; Al-Yahyaee, Khamis Hamed] Sultan Qaboos Univ, Coll Econ & Polit Sci, Dept Econ & Finance, Muscat, Oman.
+   [Hammoudeh, Shawkat] Drexel Univ, Lebow Coll Business, Philadelphia, PA 19104 USA.
+   [Hammoudeh, Shawkat; Shahzad, Syed Jawad Hussain; Shahbaz, Muhammad] Montpellier Business Sch, ESD, Montpellier, France.
+RP Mensi, W (reprint author), Univ Tunis El Manar, Dept Finance & Accounting, Tunis, Tunisia.
+EM walid.mensi@fsegt.rnu.tn; hammousm@drexel.edu; yahyai@squ.edu.om
+RI Shahbaz, Muhammad/AAD-9038-2019; Shahzad, Syed Jawad Hussain/D-1986-2019
+OI Shahzad, Syed Jawad Hussain/0000-0003-3511-6057
+CR Adrian T., 2011, WORKING PAPER
+   Amano RA, 1998, J INT MONEY FINANC, V17, P299, DOI 10.1016/S0261-5606(98)00004-7
+   Awartani B, 2013, ENERG ECON, V36, P28, DOI 10.1016/j.eneco.2012.11.024
+   Baillie RT, 1996, J ECONOMETRICS, V74, P3, DOI 10.1016/S0304-4076(95)01749-6
+   Brahmasrene T, 2014, ENERG ECON, V44, P407, DOI 10.1016/j.eneco.2014.05.011
+   Chen SS, 2007, ENERG ECON, V29, P390, DOI 10.1016/j.eneco.2006.08.003
+   Chou KW, 2016, ECON MODEL, V52, P733, DOI 10.1016/j.econmod.2015.10.012
+   de Truchis G, 2016, ECON MODEL, V52, P206, DOI 10.1016/j.econmod.2014.11.014
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Diebold FX, 2016, J FINANC ECONOMET, V14, P81, DOI 10.1093/jjfinec/nbv021
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   Dragomiretskiy K, 2014, IEEE T SIGNAL PROCES, V62, P531, DOI 10.1109/TSP.2013.2288675
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Fratzscher M., 2014, WORKING PAPER SERIES, V1689
+   Ghosh S, 2011, APPL ENERG, V88, P1886, DOI 10.1016/j.apenergy.2010.10.043
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   GOLUB SS, 1983, ECON J, V93, P576, DOI 10.2307/2232396
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Izran A.-E. M, 2016, OIL PRICE FALL BACK
+   Jiang JQ, 2016, PHYSICA A, V456, P75, DOI 10.1016/j.physa.2016.03.016
+   Koop G, 1996, J ECONOMETRICS, V74, P119, DOI 10.1016/0304-4076(95)01753-4
+   Krugman P, 1983, EC INTERDEPENDENCE F
+   KWIATKOWSKI D, 1992, J ECONOMETRICS, V54, P159, DOI 10.1016/0304-4076(92)90104-Y
+   Mensi W, 2017, J BANK FINANC, V75, P258, DOI 10.1016/j.jbankfin.2016.11.017
+   Mensi W, 2015, ENERG ECON, V48, P46, DOI 10.1016/j.eneco.2014.12.004
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Pesaran HH, 1998, ECON LETT, V58, P17, DOI 10.1016/S0165-1765(97)00214-0
+   PHILLIPS PCB, 1988, BIOMETRIKA, V75, P335, DOI 10.1093/biomet/75.2.335
+   Reboredo JC, 2016, J BANK FINANC, V62, P76, DOI 10.1016/j.jbankfin.2015.10.011
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Reboredo JC, 2013, ECON MODEL, V32, P42, DOI 10.1016/j.econmod.2012.12.028
+   Reboredo JC, 2012, J POLICY MODEL, V34, P419, DOI 10.1016/j.jpolmod.2011.10.005
+   Shahzad SJH, 2016, PHYSICA A, V457, P8, DOI 10.1016/j.physa.2016.03.048
+   Stosic D, 2016, PHYSICA A, V449, P233, DOI 10.1016/j.physa.2015.12.124
+   Turhan MI, 2014, J INT FINANC MARK I, V32, P397, DOI 10.1016/j.intfin.2014.07.003
+   Wang GJ, 2016, FINANC RES LETT, V18, P255, DOI 10.1016/j.frl.2016.04.025
+   Zhang B, 2014, ECON MODEL, V42, P413, DOI 10.1016/j.econmod.2014.07.013
+   Zhang HJ, 2016, J EMPIR FINANC, V36, P100, DOI 10.1016/j.jempfin.2015.10.005
+NR 39
+TC 8
+Z9 8
+U1 8
+U2 40
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0140-9883
+EI 1873-6181
+J9 ENERG ECON
+JI Energy Econ.
+PD SEP
+PY 2017
+VL 67
+BP 476
+EP 495
+DI 10.1016/j.eneco.2017.08.036
+PG 20
+WC Economics
+SC Business & Economics
+GA FM2LL
+UT WOS:000414816200040
+DA 2019-12-28
+ER
+
+PT J
+AU Mcvea, H
+AF Mcvea, Harry
+TI Central counterparties and sale and repurchase agreements: regulating
+   financial markets in the light of yet another false dawn
+SO JOURNAL OF CORPORATE LAW STUDIES
+LA English
+DT Article
+AB In this article it is argued that the burgeoning faith of policymakers and regulators in the ability of central counterparties ('CCPs') to absorb both counterparty and collateral risk in 'sale and repurchase agreements' (otherwise known as 'repos') - and, in turn, in helping to forestall contagion in the form of so-called 'repo runs' - is misplaced. In developing this contention, three major claims are advanced. First, for all their benefits, CCPs exhibit a major design flaw in as much as they are unable to diversify away market-wide systemic risk when counterparty failures become correlated - as exemplified by the global financial crisis ('GFC'). Second, this design flaw is remarkably similar to the flaw which the modern trend towards market-based finance exhibits, again, as revealed during the GFC, and as persists in its more recent 'fund-based' guise, and that this parallel cautions against viewing CCPs in an unduly favourable light. That is to say, in much the same way that market-based finance helped to neutralise systemic risk in good or moderately turbulent times pre-crisis, but amplified it in times of acute market turbulence, so too CCPs are liable to exhibit similar tendencies. Finally, although the UK's new regulatory and supervisory regime applicable to CCPs has much to commend it, these measures are, in fact, likely to be of limited assistance in ensuing that CCPs are able to perform their mutualisation role, or that they do not disrupt financial markets, when things go seriously wrong.
+C1 [Mcvea, Harry] Univ Bristol, Sch Law, Bristol, Avon, England.
+   [Mcvea, Harry] IALS, London, England.
+RP Mcvea, H (reprint author), Univ Bristol, Sch Law, Bristol, Avon, England.; Mcvea, H (reprint author), IALS, London, England.
+EM h.mcvea@bris.ac.uk
+CR Allen Julia L, 2012, STANFORD LAW REV, V64, P1081
+   Allen JL, 2012, STANFORD LAW REV, V64, P1079
+   [Anonymous], BLOOMBERG
+   Aquilina Matteo, 2016, 18 FCA, P18
+   Bank of England, 2015, BANK ENGL SUP FIN MA, P7
+   Comotto Richard, 2013, SUPPLEMENTARY NOTE S
+   Euroclear, 2009, UND REP REP MARK, P4
+   European Association of CCP Clearing Houses ('EACH'), 2014, EFF REC RES PROGR CC, P5
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Gorton G, 2010, BROOKINGS PAP ECO AC, P261
+   Hills Bob, 1999, CENTRAL COUNTERPARTY, P122
+   ICMA, FREQ ASK QUEST FAQS
+   Martin A, 2014, REV FINANC STUD, V27, P957, DOI 10.1093/rfs/hht134
+   McCormick Liz Capo, 2015, BLOOMBERG       0413
+   Munyan Benjamin, 2015, REGULATORY ARBITRAGE, P45
+   Powell Jerome H, 2015, FED RES SYST CLEAR H, P13
+   POZSAR Z., 2013, SHADOW BANKING GLOBA
+   Rehlon Amandeep, 2013, BANK ENGLAND Q B, V1, P1
+   Rennison J, 2015, FINANCIAL TIMES
+   Roe MJ, 2013, CALIF LAW REV, V101, P1641
+   Squam Lake Working Group on Financial Regulation, 2009, WORKING PAPER
+   Walker M., 2010, 477 FED RES BANK NEW
+   Williams Mike, 2015, REPO ITS ROLE GOVT S
+NR 23
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1473-5970
+EI 1757-8426
+J9 J CORP LAW STUD
+JI J. Corp. Law Stud.
+PY 2017
+VL 17
+IS 1
+BP 111
+EP 135
+DI 10.1080/14735970.2016.1254451
+PG 25
+WC Law
+SC Government & Law
+GA EU5WQ
+UT WOS:000401105200004
+DA 2019-12-27
+ER
+
+PT J
+AU Li, SW
+   Wen, SH
+AF Li, Shouwei
+   Wen, Shihang
+TI Multiplex Networks of the Guarantee Market: Evidence from China
+SO COMPLEXITY
+LA English
+DT Article
+ID SYSTEMIC RISK; FINANCIAL NETWORKS; CONTAGION RISK; MODEL; BANKING;
+   CENTRALITY; STABILITY; DYNAMICS
+AB We investigate a multiplex network of the guarantee market with three layers corresponding to different types of guarantee relationships in China. We find that three single-layer networks all have the scale-free property and are of disassortative nature. A single-layer network is not quite representative of another single-layer network. The result of the betweenness centrality shows that central companies in one layer are not necessarily central in another layer. And the eigenvector centrality has the same result of the betweenness centrality except the top central company.
+C1 [Li, Shouwei; Wen, Shihang] Southeast Univ, Sch Econ & Management, Nanjing 211189, Jiangsu, Peoples R China.
+RP Wen, SH (reprint author), Southeast Univ, Sch Econ & Management, Nanjing 211189, Jiangsu, Peoples R China.
+EM wenzhanyao@gmail.com
+FU NSFCNational Natural Science Foundation of China [71201023, 71371051,
+   71671037]; Social Science Fund Project of Jiangsu Province [15GLC003];
+   Humanities and Social Science Planning Foundation of the Ministry of
+   Education of China [16YJA630026]; Teaching and Research Program for
+   Excellent Young Teachers of Southeast University [2242015R30021]
+FX This research is supported by NSFC (no. 71201023, no. 71371051, and no.
+   71671037), Social Science Fund Project of Jiangsu Province (no.
+   15GLC003), Humanities and Social Science Planning Foundation of the
+   Ministry of Education of China (no. 16YJA630026), and Teaching and
+   Research Program for Excellent Young Teachers of Southeast University
+   (no. 2242015R30021).
+CR Acemoglu D, 2015, AM ECON REV, V105, P564, DOI 10.1257/aer.20130456
+   Aldasoro I., 2016, J FINANCIAL STABILIT
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Aymanns C, 2015, J BANK FINANC, V50, P273, DOI 10.1016/j.jbankfin.2014.06.030
+   Bargigli L, 2015, QUANT FINANC, V15, P673, DOI 10.1080/14697688.2014.968356
+   Bargigli L, 2016, UNDERST COMPLEX SYST, P179, DOI 10.1007/978-3-319-23947-7_11
+   Betz F, 2016, J FINANC STABIL, V25, P206, DOI 10.1016/j.jfs.2015.10.006
+   Boccaletti S, 2014, PHYS REP, V544, P1, DOI 10.1016/j.physrep.2014.07.001
+   BONACICH P, 1972, J MATH SOCIOL, V2, P113, DOI 10.1080/0022250X.1972.9989806
+   Borgatti SP, 2005, SOC NETWORKS, V27, P55, DOI 10.1016/j.socnet.2004.11.008
+   Chen TQ, 2015, COMPUT ECON, V46, P519, DOI 10.1007/s10614-014-9475-2
+   de Arruda GF, 2016, PHYSICA D, V323, P5, DOI 10.1016/j.physd.2015.11.004
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Georg CP, 2013, J BANK FINANC, V37, P2216, DOI 10.1016/j.jbankfin.2013.02.032
+   Gonzalez-Avella JC, 2016, CHAOS SOLITON FRACT, V88, P235, DOI 10.1016/j.chaos.2015.11.044
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Leon C., 2014, BORRADORES EC, V840
+   Li SW, 2016, CHAOS SOLITON FRACT, V91, P591, DOI 10.1016/j.chaos.2016.08.006
+   Li SW, 2016, COMPLEXITY, V21, P512, DOI 10.1002/cplx.21765
+   Li SW, 2012, COMPLEXITY, V17, P37, DOI 10.1002/cplx.21384
+   Li SW, 2011, ADV COMPLEX SYST, V14, P673, DOI 10.1142/S0219525911003438
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Molina-Borboa JL, 2014, J NETW THEORY FINANC, V1, P99
+   Musmeci N., 2016, MULTIPLEX DEPENDENCY
+   Newman MEJ, 2003, PHYS REV E, V67, DOI 10.1103/PhysRevE.67.026126
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Poledna S, 2015, J FINANC STABIL, V20, P70, DOI 10.1016/j.jfs.2015.08.001
+   Sachs A, 2014, QUANT FINANC, V14, P1677, DOI 10.1080/14697688.2012.749421
+   Sensoy A., 2015, J FINANCIAL STABILIT
+   Sensoy A, 2014, PHYSICA A, V414, P387, DOI 10.1016/j.physa.2014.07.067
+   Serguieva A., 2016, SSRN ELECT J
+   Silva TC, 2016, EMERG MARK REV, V26, P130, DOI 10.1016/j.ememar.2015.12.004
+   Silva TC, 2017, J ECON DYN CONTROL, V76, P109, DOI 10.1016/j.jedc.2017.01.001
+   Silva TC, 2016, J NETW THEORY FINANC, V2, P1, DOI 10.21314/JNTF.2016.022
+   Silva TC, 2016, J FINANC STABIL, V25, P247, DOI 10.1016/j.jfs.2016.04.004
+   Silva TC, 2016, CHAOS SOLITON FRACT, V88, P218, DOI 10.1016/j.chaos.2016.01.023
+NR 36
+TC 3
+Z9 3
+U1 3
+U2 22
+PU WILEY-HINDAWI
+PI LONDON
+PA ADAM HOUSE, 3RD FL, 1 FITZROY SQ, LONDON, WIT 5HE, ENGLAND
+SN 1076-2787
+EI 1099-0526
+J9 COMPLEXITY
+JI Complexity
+PY 2017
+AR 9781890
+DI 10.1155/2017/9781890
+PG 7
+WC Mathematics, Interdisciplinary Applications; Multidisciplinary Sciences
+SC Mathematics; Science & Technology - Other Topics
+GA FA4VW
+UT WOS:000405442300001
+OA DOAJ Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Dumicic, M
+AF Dumicic, Mirna
+TI A Brief Introduction to the World of Macroprudential Policy
+SO JOURNAL OF CENTRAL BANKING THEORY AND PRACTICE
+LA English
+DT Article
+DE macroprudential policy; financial stability; systemic risks
+AB Notwithstanding the rapid growth in the popularity of and the increasing number of research papers on macroprudential policy, the general public still has a relatively unclear perception of this concept. The main purpose of this paper is to explain briefly the most important concepts related to macroprudential policy and describe its objectives. Emphasis is put on explaining the main stages of a macroprudential cycle, the relationship between macroprudential policy and other economic policies, and the costs and benefits of macroprudential regulations.
+C1 [Dumicic, Mirna] Croatian Natl Bank, Zagreb, Croatia.
+RP Dumicic, M (reprint author), Croatian Natl Bank, Zagreb, Croatia.
+EM mirna.dumicic@hnb.hr
+OI Dumicic, Mirna/0000-0003-1893-5456
+FU Croatian Science Foundation under the project STatistical Modelling for
+   REspoNse to Crisis and Economic GrowTH in WeStern Balkan Countries -
+   STRENGTHS [9402]
+FX This work has been partially supported by Croatian Science Foundation
+   under the project STatistical Modelling for REspoNse to Crisis and
+   Economic GrowTH in WeStern Balkan Countries - STRENGTHS (project no.
+   9402).
+CR [Anonymous], 2009, ROL MACR POL
+   Bank for International Settlements, 2012, 21 BIS
+   Beau D., 2012, MACROPRUDENTIAL POLI
+   Benigno G, 2012, IMF 12 JACQ POL ANN
+   Bernanke BS, 2001, AM ECON REV, V91, P253, DOI 10.1257/aer.91.2.253
+   Bini Smaghi L, 2011, OENB ANN EC C FUT EU
+   Bofinger P., 2001, MONETARY POLICY GOAL
+   Bordo M, 2001, ECON POLICY, P51
+   Bordo M, 1998, PRICE STABILITY FINA
+   Borio C., 2010, IMPLEMENTING MACROPR
+   Borio Claudio E. V., 2007, 242 BIS
+   Brockmeijer J., 2014, EXPERIENCES MACROPRU
+   Caruana J., 2011, SAARCFINANCE GOV S K
+   Cheang N., 2011, MACAO MONETARY RES B, V21, P27
+   Clement P, 2010, BIS Q REV
+   Clouse J. A, 2013, FINANCE EC DISCUSSI
+   Committee on the Global Financial System (CGFS), 2010, CGFS PAPERS, V38
+   Committee on the Global Financial System-CGFS, 2012, CGFS PAPERS, V48
+   Crockett A, 1994, COMMUNICATION
+   Crockett A., 2000, MARRYING MICRO MACRO
+   De Bandt O., 2000, 35 ECB
+   European Systemic Risk Board, 2014, FLAGSH REP MACR POL
+   Fabris N., 2010, AKTUELNA PITANJA CRN
+   Financial Stability Board IMF and BIS., 2011, MACR POL TOOLS FRAM
+   Gadanecz B., 2009, IFC B, V31, P365
+   Galati G., 2011, BIS WORKING PAPERS, V337
+   Haldane A. G., 2006, FRAMEWORK FINANCIAL
+   Hoggarth G, 2002, J BANK FINANC, V26, P825, DOI 10.1016/S0378-4266(01)00268-0
+   Houben A., 2004, WP04101 IMF
+   *INT MON FUND, 2009, GLOB FIN STAB REP, pCH3
+   International Monetary Fund, 2015, BANK SOV STRESS IMPL
+   International Monetary Fund, 2013, KEY ASP MACR POL
+   Johnston B. R., 2011, IMF COURS FIN STAB S
+   Kogar C., 2006, C IST
+   Lim C., 2013, 13166 IMF
+   MORTTINEN L, 2005, 26 ECB
+   Nier E. W., 2011, I MACROPRUDENTIAL PO
+   Ozgode O, 2011, EMERGENCE SYSTEMIC F
+   Panetta F., 2011, 801 BAK IT
+   Pena J. I., 2011, J BANK FINANC, V37, P1817
+   Reinhart C., 2014, 19823 NBER
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Schaller A, 2007, INT CENTR BANK SEM F
+   Schinasi G. J., 2004, WP04187 IMF
+   Schou-Zibell L., 2010, ADB WORKING PAPER SE, V43
+   Schwartz S. L., 2011, IDENTIFYING MANAGING
+   Spicka P., 2009, C FIN STAB ORG DTSCH
+   Suare G., 2013, WP13143 IMF
+   Watson M., 2010, SEM FIN STAB DES EFF
+   Windischbauer U., 2007, DEALING FINANCIAL ST
+NR 50
+TC 3
+Z9 3
+U1 0
+U2 0
+PU DE GRUYTER POLAND SP ZOO
+PI WARSAW
+PA BOGUMILA ZUGA 32A STR., 01-811 WARSAW, POLAND
+SN 1800-9581
+EI 2336-9205
+J9 J CENT BANK THEOR PR
+JI J. Cent. Bank Theor. Pract.
+PD JAN
+PY 2017
+VL 6
+IS 1
+BP 87
+EP 109
+DI 10.1515/jcbtp-2017-0005
+PG 23
+WC Business, Finance
+SC Business & Economics
+GA GZ9UU
+UT WOS:000449848700005
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Haritchabalet, C
+   Lepetit, L
+   Spinassou, K
+   Strobel, F
+AF Haritchabalet, Carole
+   Lepetit, Laetitia
+   Spinassou, Kevin
+   Strobel, Frank
+TI Bank capital regulation: Are local or central regulators better?
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Bank regulation; Capital requirement; Spillover; Regulatory capture;
+   Financial architecture
+ID DEPOSIT INSURANCE
+AB Using a simple two-region model where local or central regulators set bank capital requirements as risk sensitive capital or leverage ratios, we demonstrate the importance of capital requirements being set centrally when cross-region spillovers are large and local regulators suffer from substantial regulatory capture. We show that local regulators may want to surrender regulatory power only when spillover effects are large but the degree of supervisory capture is relatively small, and that bank capital regulation at central rather than local levels is more beneficial the larger the impact of systemic risk and the more asymmetric is regulatory capture at the local level. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Haritchabalet, Carole] Univ Pau & Pays Adour, CATT, Pau, France.
+   [Lepetit, Laetitia; Spinassou, Kevin] Univ Limoges, LAPE, Limoges, France.
+   [Strobel, Frank] Univ Birmingham, Dept Econ, Birmingham, W Midlands, England.
+RP Strobel, F (reprint author), Univ Birmingham, Dept Econ, Birmingham, W Midlands, England.
+EM f.strobel@bham.ac.uk
+OI haritchabalet, carole/0000-0003-3788-8966; Lepetit,
+   Laetitia/0000-0002-2875-4432; Strobel, Frank/0000-0003-3425-145X
+CR Acharya VV, 2003, J FINANC, V58, P2745, DOI 10.1046/j.1540-6261.2003.00621.x
+   Agarwal S, 2014, Q J ECON, V129, P889, DOI 10.1093/qje/qju003
+   Agur I, 2013, J FINANC STABIL, V9, P259, DOI 10.1016/j.jfs.2013.04.003
+   Beck T, 2013, ECON POLICY, V28, P5, DOI 10.1111/1468-0327.12001
+   Calzolari G, 2011, J FINANC INTERMED, V20, P178, DOI 10.1016/j.jfi.2010.02.002
+   Carletti E., 2016, WP16186 IMF
+   Colliard J. -E, 2015, 1786 ECB
+   Dell'Ariccia G, 2006, J FINANC ECON, V79, P401, DOI 10.1016/j.jfineco.2005.02.003
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Freixas X, 2015, SYSTEMIC RISK, CRISES, AND MACROPRUDENTIAL REGULATION
+   GIAMMARINO RM, 1993, J FINANC, V48, P1523, DOI 10.2307/2329050
+   Goodhart C.A.E., 2000, EC NOTES, V29, P1
+   Gornicka LA, 2016, J BANK FINANC, V65, P41, DOI 10.1016/j.jbankfin.2016.01.005
+   Hardy DC, 2011, J FINANC STABIL, V7, P155, DOI 10.1016/j.jfs.2010.01.003
+   Holthausen C, 2004, 316 ECB
+   Kahn CM, 2005, EUR ECON REV, V49, P2107, DOI 10.1016/j.euroecorev.2004.10.004
+   Morrison AD, 2009, J FINANC, V64, P1099, DOI 10.1111/j.1540-6261.2009.01460.x
+   Niepmann F, 2013, AM ECON J-ECON POLIC, V5, P270, DOI 10.1257/pol.5.4.270
+   Prescott E. S, 2004, FEDERAL RESERVE BANK, V90, P47
+   Rezende M, 2011, HANDBOOK OF CENTRAL BANKING, FINANCIAL REGULATION AND SUPERVISION: AFTER THE FINANCIAL CRISIS, P531
+NR 20
+TC 0
+Z9 0
+U1 1
+U2 13
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD JUL
+PY 2017
+VL 49
+BP 103
+EP 114
+DI 10.1016/j.intfin.2017.02.007
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA FC1CI
+UT WOS:000406574600007
+DA 2019-12-28
+ER

@@ -1,0 +1,550 @@
+
+PT J
+AU Kobayashi, T
+   Takaguchi, T
+AF Kobayashi, Teruyoshi
+   Takaguchi, Taro
+TI Social dynamics of financial networks
+SO EPJ DATA SCIENCE
+LA English
+DT Article
+DE Financial networks; Systemic risk; Temporal networks; Scaling; Fitness
+   model
+ID SYSTEMIC RISK; INTERBANK MARKET; COMPLEX-SYSTEMS; LIQUIDITY; CONTAGION;
+   TOPOLOGY
+AB Recurrent interactions between agents play an essential role in the organization of a dynamic complex system. While intensive researches have been done on social systems formed by human interactions, dynamical rules are not well understood in economic systems. Here we study the evolution of financial networks and show that repeated interactions between financial institutions taking place at the daily scale are characterized by social communication patterns of humans emerging at higher time scales. The "social" dynamics of financial interactions are highly stable and little affected by external shocks such as the occurrence of the global financial crisis. A dynamic network model based on random pairwise matching accurately explains the observed daily dynamical patterns. The observed similarity between social and financial interactions gives us previously unknown stylized facts about a financial system, which could lead to a deeper understanding of the fundamental source of systemic risk.
+C1 [Kobayashi, Teruyoshi] Kobe Univ, Grad Sch Econ, Kobe, Hyogo, Japan.
+   [Takaguchi, Taro] Natl Inst Informat & Commun Technol, Tokyo, Japan.
+   [Takaguchi, Taro] Natl Inst Informat, Tokyo, Japan.
+   [Takaguchi, Taro] JST, ERATO, Kawarabayashi Large Graph Project, Tokyo, Japan.
+RP Takaguchi, T (reprint author), Natl Inst Informat & Commun Technol, Tokyo, Japan.; Takaguchi, T (reprint author), Natl Inst Informat, Tokyo, Japan.
+EM taro.takaguchi.cp@gmail.com
+OI Kobayashi, Teruyoshi/0000-0002-3135-9038
+FU Japan Society for the Promotion of ScienceMinistry of Education,
+   Culture, Sports, Science and Technology, Japan (MEXT)Japan Society for
+   the Promotion of Science [15H05729, 16K03551]; JST ERATO Grant,
+   JapanJapan Science & Technology Agency (JST) [JPMJER1201]
+FX TK acknowledges financial support from the Japan Society for the
+   Promotion of Science Grants no. 15H05729 and 16K03551. TT was supported
+   by JST ERATO Grant Number JPMJER1201, Japan.
+CR Acharya VV, 2013, REV FINANC, V17, P107, DOI 10.1093/rof/rfs022
+   Allen F., 2010, INT REV FINANC, V10, P1, DOI DOI 10.1111/J.1468-2443.2009.01103.X
+   Anand K, 2018, J FINANC STABIL, V35, P107, DOI 10.1016/j.jfs.2017.05.012
+   Anand K, 2012, J ECON DYN CONTROL, V36, P1088, DOI 10.1016/j.jedc.2012.03.005
+   Atkinson T, 2013, DALLAS FED STAFF PAP, V20
+   Bajardi P, 2011, PLOS ONE, V6, DOI 10.1371/journal.pone.0019869
+   Bardoscia M, 2017, NAT COMMUN, V8, DOI 10.1038/ncomms14416
+   Barucca P, 2018, COMPUT MANAG SCI, V15, P33, DOI 10.1007/s10287-017-0293-6
+   Battiston S, 2016, P NATL ACAD SCI USA, V113, P10031, DOI 10.1073/pnas.1521573113
+   Battiston S, 2016, SCIENCE, V351, P818, DOI 10.1126/science.aad0299
+   Beaupain R, 2008, 988 ECB W
+   Bettencourt LMA, 2007, P NATL ACAD SCI USA, V104, P7301, DOI 10.1073/pnas.0610172104
+   Bettencourt LMA, 2013, SCIENCE, V340, P1438, DOI 10.1126/science.1235823
+   Boguna M, 2003, PHYS REV E, V68, DOI 10.1103/PhysRevE.68.036112
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brummitt CD, 2015, PHYS REV E, V91, DOI 10.1103/PhysRevE.91.062813
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Burkholz R, 2016, PHYSICA D, V323, P64, DOI 10.1016/j.physd.2015.10.004
+   Caccioli F, 2015, J ECON DYN CONTROL, V51, P50, DOI 10.1016/j.jedc.2014.09.041
+   Caldarelli G, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.258702
+   Cattuto C, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0011596
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cimini G, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0161642
+   Cimini G, 2015, SCI REP-UK, V5, DOI 10.1038/srep15758
+   Cimini G, 2015, PHYS REV E, V92, DOI 10.1103/PhysRevE.92.040802
+   Clauset A, 2009, SIAM REV, V51, P661, DOI 10.1137/070710111
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   De Masi G, 2006, PHYS REV E, V74, DOI 10.1103/PhysRevE.74.066112
+   Diamond DW, 2009, 14925 NBER W
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Estrada E, 2005, PHYS REV E, V72, DOI 10.1103/PhysRevE.72.046105
+   Finger K, 2013, COMPUT MANAG SCI, V10, P187, DOI 10.1007/s10287-013-0171-9
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P1, DOI 10.1017/CBO9781139151184
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gautreau A, 2009, P NATL ACAD SCI USA, V106, P8847, DOI 10.1073/pnas.0811113106
+   Godoy-Lorite A, 2016, PLOS ONE, V11, DOI 10.1371/journal.pone.0146113
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hatzopoulos V, 2015, QUANT FINANC, V15, P693, DOI 10.1080/14697688.2014.969889
+   Helbing D, 2013, NATURE, V497, P51, DOI 10.1038/nature12047
+   Huang XQ, 2013, SCI REP-UK, V3, DOI 10.1038/srep01219
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Iori G, 2015, J ECON DYN CONTROL, V50, P98, DOI 10.1016/j.jedc.2014.08.016
+   Kobayashi T., 2017, ARXIV170808594
+   Mastrandrea R, 2014, NEW J PHYS, V16, DOI 10.1088/1367-2630/16/4/043022
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   Mishkin FS, 2011, 16755 NBER W
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Pan W, 2013, NAT COMMUN, V4, DOI 10.1038/ncomms2961
+   Schlapfer M, 2014, J R SOC INTERFACE, V11, DOI 10.1098/rsif.2013.0789
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Soejima Y, 2010, MONETARY EC STUDIES, V28, P107
+   Song CM, 2010, NAT PHYS, V6, P818, DOI 10.1038/NPHYS1760
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Sornette D., 2006, CRITICAL PHENOMENA N
+   Squartini T, 2015, NEW J PHYS, V17, DOI 10.1088/1367-2630/17/2/023052
+   Squartini T, 2013, SCI REP-UK, V3, DOI 10.1038/srep03357
+   Squartini T, 2011, NEW J PHYS, V13, DOI 10.1088/1367-2630/13/8/083001
+   Starnini M, 2013, PHYS REV LETT, V110, DOI 10.1103/PhysRevLett.110.168701
+   Tedeschi G, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0052749
+   Temizsoy A, 2015, J ECON DYN CONTROL, V59, P118, DOI 10.1016/j.jedc.2015.07.008
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Van Lelyveld Iman, 2006, INT J CENT BANK, V2, P99
+   WEIBULL W, 1951, J APPL MECH-T ASME, V18, P293
+NR 63
+TC 3
+Z9 3
+U1 0
+U2 14
+PU SPRINGEROPEN
+PI LONDON
+PA CAMPUS, 4 CRINAN ST, LONDON, N1 9XW, ENGLAND
+SN 2193-1127
+J9 EPJ DATA SCI
+JI EPJ Data Sci.
+PD JUN 7
+PY 2018
+VL 7
+AR 15
+DI 10.1140/epjds/s13688-018-0143-y
+PG 19
+WC Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods
+SC Mathematics; Mathematical Methods In Social Sciences
+GA GJ2YE
+UT WOS:000435139700001
+OA DOAJ Gold, Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Du, XD
+   Hennessy, DA
+   Feng, HL
+   Arora, G
+AF Du, Xiaodong
+   Hennessy, David A.
+   Feng, Hongli
+   Arora, Gaurav
+TI LAND RESILIENCE AND TAIL DEPENDENCE AMONG CROP YIELD DISTRIBUTIONS
+SO AMERICAN JOURNAL OF AGRICULTURAL ECONOMICS
+LA English
+DT Article
+DE Climate change; crop insurance; Gaussian copula; pseudo-copula;
+   reinsurance; systemic risk
+ID INSURANCE; DROUGHT
+AB We propose and empirically test a simple model to shed light on the nature of interactions between weather, land quality, and yield. The conceptual model posits substitution relations between water stress metrics and soil quality, as well as a soil-conditioned threshold water stress level beyond which soil cannot buffer crop yields. The model implies that yield-yield dependence should vary as growing conditions vary. In comparison with intermediate growing conditions, yield-yield dependence should strengthen when growing conditions are either very good or very poor. County yield data strongly support substitution between soil and benign water availability levels, but complementarity between soil and beneficial heat variables. Our estimated model provides qualified support for the hypothesis that better land is more resilient to water stress. We estimate a pseudo-copula that nests the Gaussian copula, finding strong evidence of left tail dependence among yields. Our formal model and empirical findings corroborate others' concerns about the appropriateness of current USDA rate-setting methodologies, which posit constant state-conditional rank correlations, implicitly assumed by use of the Gaussian copula. An application to aggregate crop yield rate setting suggests that current methods underprice area yield and whole farm premiums. Applying our empirical model to medium-range weather projections under a climate change scenario for the Northern Great Plains, we infer that systemic yield correlations will increase in future years.
+C1 [Du, Xiaodong] Univ Wisconsin, Dept Agr & Appl Econ, Madison, WI 53706 USA.
+   [Hennessy, David A.] Michigan State Univ, Dept Agr Food & Resource Econ, Food & Agr Policy, E Lansing, MI 48824 USA.
+   [Feng, Hongli] Michigan State Univ, Dept Agr Food & Resource Econ, E Lansing, MI 48824 USA.
+   [Arora, Gaurav] Indraprastha Inst Informat Technol, Social Sci Div, Delhi, India.
+RP Hennessy, DA (reprint author), Michigan State Univ, Dept Agr Food & Resource Econ, Food & Agr Policy, E Lansing, MI 48824 USA.
+EM hennes64@msu.edu
+CR Aas K., 2004, MODELLING DEPENDENCE
+   Ahmed O, 2015, AGR ECON-BLACKWELL, V46, P69, DOI 10.1111/agec.12141
+   Arora G., 2016, AAEA ANN M BOST MA
+   BERCK P, 1990, AM J AGR ECON, V72, P985, DOI 10.2307/1242630
+   Bot A., 2005, P EL C ORG FAO UN RO
+   Collins M, 2014, CLIMATE CHANGE 2013: THE PHYSICAL SCIENCE BASIS, P1029
+   DASGUPTA P, 1987, ECON J, V97, P581, DOI 10.2307/2232925
+   DEATON A, 1992, REV ECON STUD, V59, P1, DOI 10.2307/2297923
+   Du XD, 2015, AGR ECON-BLACKWELL, V46, P463, DOI 10.1111/agec.12174
+   Du XD, 2014, AM J AGR ECON, V96, P232, DOI 10.1093/ajae/aat057
+   Du XD, 2012, AM J AGR ECON, V94, P225, DOI 10.1093/ajae/aar091
+   Fang Y, 2013, INSUR MATH ECON, V53, P292, DOI 10.1016/j.insmatheco.2013.05.009
+   Furman E, 2016, INSUR MATH ECON, V69, P97, DOI 10.1016/j.insmatheco.2016.04.009
+   Goodwin BK, 2015, AGRIC FINANCE REV, V75, P19, DOI 10.1108/AFR-03-2015-0015
+   Goodwin BK, 2015, AM J AGR ECON, V97, P879, DOI 10.1093/ajae/aau086
+   Goodwin BK, 2015, AM J AGR ECON, V97, P353, DOI 10.1093/ajae/aau105
+   Goodwin BK, 2013, AM J AGR ECON, V95, P489, DOI 10.1093/ajae/aas092
+   Goodwin BK, 2001, AM J AGR ECON, V83, P643, DOI 10.1111/0002-9092.00184
+   Hao L., 2007, QUANTILE REGRESSION
+   Heddinghaus T. R., 1991, 7 C APPL CLIM AM MET
+   Helms Douglas, 1992, READINGS HIST SOIL C, P60
+   Hennessy DA, 2009, J AGR RESOUR ECON, V34, P34
+   Hennessy DA, 2009, AM J AGR ECON, V91, P197, DOI 10.1111/j.1467-8276.2008.01181.x
+   IMAN RL, 1982, COMMUN STAT B-SIMUL, V11, P311, DOI 10.1080/03610918208812265
+   Joe H., 2015, DEPENDENCE MODELING
+   KARL TR, 1986, J CLIM APPL METEOROL, V25, P77, DOI 10.1175/1520-0450(1986)025<0077:TSOTPD>2.0.CO;2
+   Kawasaki K, 2016, AM J AGR ECON, V98, P1195, DOI 10.1093/ajae/aaw036
+   Koop G., 2007, BAYESIAN ECONOMETRIC
+   Mildenhall S. J., 2005, REPORT RES WORKING P
+   National Oceanic and Atmospheric Administration, 2014, STAT REG DROUGHT
+   Patton A, 2013, HBK ECON, P899, DOI 10.1016/B978-0-444-62731-5.00016-6
+   Qiu F, 2016, APPL ECON, V48, P4379, DOI 10.1080/00036846.2016.1158916
+   Salmon F, 2012, SIGNIFICANCE, V9, P16, DOI DOI 10.1111/j.1740-9713.2012.00538.x
+   Schlenker W, 2009, P NATL ACAD SCI USA, V106, P15594, DOI 10.1073/pnas.0906865106
+   Staudt A., 2015, AUSTR J AGR RESOURCE, V60, P265
+   Staudt A., 2010, CASUALTY ACTUARIAL S, V2
+   Tack J, 2015, P NATL ACAD SCI USA, V112, P6931, DOI 10.1073/pnas.1415181112
+   Tack JB, 2016, CLIMATIC CHANGE, V134, P299, DOI 10.1007/s10584-015-1538-4
+   Trivedi P.K., 2005, FDN TRENDS ECONOMETR, V1, P1, DOI DOI 10.1561/0800000005
+   Voldoire A, 2013, CLIM DYNAM, V40, P2091, DOI 10.1007/s00382-011-1259-y
+   Wilhelmi OV, 2002, NAT HAZARDS, V25, P37, DOI 10.1023/A:1013388814894
+   Xu Z, 2013, CROP SCI, V53, P735, DOI 10.2135/cropsci2012.06.0399
+   Zimmer DM, 2012, REV ECON STAT, V94, P607, DOI 10.1162/REST_a_00172
+NR 43
+TC 2
+Z9 2
+U1 2
+U2 5
+PU OXFORD UNIV PRESS INC
+PI CARY
+PA JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
+SN 0002-9092
+EI 1467-8276
+J9 AM J AGR ECON
+JI Am. J. Agr. Econ.
+PD APR
+PY 2018
+VL 100
+IS 3
+BP 809
+EP 828
+DI 10.1093/ajae/aax082
+PG 20
+WC Agricultural Economics & Policy; Economics
+SC Agriculture; Business & Economics
+GA GP9EI
+UT WOS:000441219900010
+DA 2019-12-28
+ER
+
+PT J
+AU Haldane, AG
+   Turrell, AE
+AF Haldane, A. G.
+   Turrell, A. E.
+TI An interdisciplinary model for macroeconomics
+SO OXFORD REVIEW OF ECONOMIC POLICY
+LA English
+DT Article
+DE macroeconomics; modelling; agent-based model; consumption
+ID AGENT-BASED MODEL; SYSTEMIC RISK; OUTPUT GROWTH; ECONOMICS; CONSUMPTION;
+   DYNAMICS; POLICY; EXPECTATIONS; INCOME; DISTRIBUTIONS
+AB Macroeconomic modelling has been under intense scrutiny since the Great Financial Crisis, when serious shortcomings were exposed in the methodology used to understand the economy as a whole. Criticism has been levelled at the assumptions employed in the dominant models, particularly that economic agents are homogeneous and optimizing and that the economy is equilibrating. This paper seeks to explore an interdisciplinary approach to macroeconomic modelling, with techniques drawn from other (natural and social) sciences. Specifically, it discusses agent-based modelling, which is used across a wide range of disciplines, as an example of such a technique. Agent-based models are complementary to existing approaches and are suited to answering macroeconomic questions where complexity, heterogeneity, networks, and heuristics play an important role.
+C1 [Haldane, A. G.; Turrell, A. E.] Bank England, London, England.
+RP Haldane, AG (reprint author), Bank England, London, England.
+EM andrew.haldane@bankofengland.co.uk; arthur.turrell@bankofengland.co.uk
+CR Aad G, 2012, PHYS LETT B, V716, P1, DOI 10.1016/j.physletb.2012.08.020
+   Abbott BP, 2016, PHYS REV LETT, V116, DOI 10.1103/PhysRevLett.116.241102
+   Abel A. B., 1990, TECHNICAL REPORT
+   Aikman D., 2014, 28 BANK ENGL FIN STA
+   Alfarano S., 2005, Computational Economics, V26, P19, DOI 10.1007/s10614-005-6415-1
+   Alfi V, 2009, EUR PHYS J B, V67, P385, DOI 10.1140/epjb/e2009-00028-4
+   Arber TD, 2015, PLASMA PHYS CONTR F, V57, DOI 10.1088/0741-3335/57/11/113001
+   Arinaminpathy N, 2012, P NATL ACAD SCI USA, V109, P18338, DOI 10.1073/pnas.1213767109
+   Arthur WB, 2006, HANDB ECON, V13, P1551
+   Ascari G, 2015, MACROECON DYN, V19, P465, DOI 10.1017/S1365100513000473
+   Ashraf Q, 2017, J ECON BEHAV ORGAN, V135, P143, DOI 10.1016/j.jebo.2016.12.023
+   Assenza T., 2016, CESIFO WORKING PAPER, V5959
+   Assenza T, 2017, ECON INQ, V55, P542, DOI 10.1111/ecin.12367
+   Assenza T, 2015, J ECON DYN CONTROL, V50, P5, DOI 10.1016/j.jedc.2014.07.001
+   Auclert A., 2015, 2015 M SOC EC DYN, V381
+   Ausloos M, 2004, PHYSICA A, V339, P548, DOI 10.1016/j.physa.2004.03.005
+   Avian Flu Working Group, 2006, TECHNICAL REPORT
+   Bagehot W., 1873, LOMBARD STREET DESCR
+   Baker SR, 2016, Q J ECON, V131, P1593, DOI 10.1093/qje/qjw024
+   Baptista R, 2016, 619 BANK ENGL
+   Bardoscia M., 2017, NATURE COMMUNICATION, V8
+   Bartelsman EJ, 2000, J ECON LIT, V38, P569, DOI 10.1257/jel.38.3.569
+   Batten Sandra, 2016, 603 BANK ENGL
+   Battiston S, 2007, J ECON DYN CONTROL, V31, P2061, DOI 10.1016/j.jedc.2007.01.004
+   Bernanke B. S., 2004, COMMUNICATION
+   Bjornland HC, 2012, OXFORD B ECON STAT, V74, P163, DOI 10.1111/j.1468-0084.2011.00639.x
+   Blanchard O., 2017, NEED LEAST 5 CLASSES
+   Bonabeau E, 2002, P NATL ACAD SCI USA, V99, P7280, DOI 10.1073/pnas.082080899
+   Bottazzi G, 2003, REV IND ORGAN, V23, P217, DOI 10.1023/B:REIO.0000031366.28559.c1
+   Bottazzi G, 2006, RAND J ECON, V37, P235, DOI 10.1111/j.1756-2171.2006.tb00014.x
+   Braun-Munzinger K, 2016, 592 BANK ENGL
+   Brayton F., 1996, 9642 FEDS
+   Bronk R, 2011, BUSINESS EC, V42, P5
+   Bronk R., 2016, UNCERTAINTY DANGERS
+   Bulanov SV, 2002, PLASMA PHYS REP+, V28, P453, DOI 10.1134/1.1478534
+   Burke M, 2015, NATURE, V527, P235, DOI 10.1038/nature15725
+   Caiani A, 2016, J ECON DYN CONTROL, V69, P375, DOI 10.1016/j.jedc.2016.06.001
+   CAMPBELL JY, 1989, NBER MACROECON ANN, V4, P185, DOI 10.2307/3584973
+   Card D, 2013, J ECON LIT, V51, P144, DOI 10.1257/jel.51.1.144
+   Carney M., 2017, REFLECTING DIVERSITY
+   Carroll CD, 1997, Q J ECON, V112, P1, DOI 10.1162/003355397555109
+   Carroll CD, 1996, ECONOMETRICA, V64, P981, DOI 10.2307/2171853
+   Carroll CD, 2009, J MONETARY ECON, V56, P780, DOI 10.1016/j.jmoneco.2009.06.016
+   Carter N, 2015, ECOL MODEL, V312, P347, DOI 10.1016/j.ecolmodel.2015.06.008
+   Castaldi C, 2009, EMPIR ECON, V37, P475, DOI 10.1007/s00181-008-0242-x
+   Chakraborty C., MACHINE LEA IN PRESS
+   Chan CK, 2008, AGENT BASED MODEL MI
+   Cincotti S, 2010, EC DISCUSSION PAPERS, V2010-4
+   Colander D, 2009, CRIT REV, V21, P249, DOI 10.1080/08913810902934109
+   Colussi T., 2017, REV EC STAT IN PRESS
+   Cooper D., 2014, J ECON SURV, V30, P34
+   CUTLER DM, 1989, J PORTFOLIO MANAGE, V15, P4, DOI 10.3905/jpm.1989.409212
+   DAVIS M, 1985, ASTROPHYS J, V292, P371, DOI 10.1086/163168
+   Dawid H, 2014, J ECON DYN CONTROL, V44, P54, DOI 10.1016/j.jedc.2014.04.004
+   Dawid H., 2012, BIELEFELD WORKING PA
+   De Grauwe P, 2010, CESIFO ECON STUD, V56, P465, DOI 10.1093/cesifo/ifq014
+   degli Atti MLC, 2008, PLOS ONE, V3, DOI 10.1371/journal.pone.0001790
+   Di Guilmi C, 2004, PHYSICA A, V334, P267, DOI 10.1016/j.physa.2003.10.063
+   Doms M, 1998, REV ECON DYNAM, V1, P409, DOI 10.1006/redy.1998.0011
+   Dosi G, 2015, J ECON DYN CONTROL, V52, P166, DOI 10.1016/j.jedc.2014.11.014
+   Dosi Giovanni, 2007, J ECON DYN CONTROL, P1110
+   ERNEST N, 2002, AM ECON REV, V92, P1013
+   Ezrachi A, 2016, VIRTUAL COMPETITION
+   Fagiolo G., 2012, J ARTIFICIAL SOC SOC, V5, P67
+   Fagiolo G, 2008, J APPL ECONOM, V23, P639, DOI 10.1002/jae.1003
+   Fair RC, 2012, J MACROECON, V34, P2, DOI 10.1016/j.jmacro.2010.09.009
+   Fernandez-Corugedo E., 2013, 471 BANK ENGL
+   Foos D, 2010, J BANK FINANC, V34, P2929, DOI 10.1016/j.jbankfin.2010.06.007
+   Fourcade M, 2015, J ECON PERSPECT, V29, P89, DOI 10.1257/jep.29.1.89
+   Franke R, 2012, J ECON DYN CONTROL, V36, P1193, DOI 10.1016/j.jedc.2011.10.004
+   Friedman J., 2001, SPRINGER SERIES STAT, V1, P241
+   Friedman Milton, 1957, THEORY CONSUMPTION F
+   Gabaix X, 2011, ECONOMETRICA, V79, P733, DOI 10.3982/ECTA8769
+   Gaffeo E, 2012, ECOL COMPLEX, V11, P109, DOI 10.1016/j.ecocom.2012.05.001
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   Gatti DD, 2015, J ECON INTERACT COOR, V10, P265, DOI 10.1007/s11403-014-0123-7
+   Geanakoplos J, 2012, AM ECON REV, V102, P53, DOI 10.1257/aer.102.3.53
+   Ghironi F, 2018, OXFORD REV ECON POL, V34, P195, DOI 10.1093/oxrep/grx050
+   Gigerenzer G, 2009, TOP COGN SCI, V1, P107, DOI 10.1111/j.1756-8765.2008.01006.x
+   GODE DK, 1993, J POLIT ECON, V101, P119, DOI 10.1086/261868
+   Godley W, 2007, MONETARY ECONOMICS: AN INTEGRATED APPROACH TO CREDIT, MONEY, INCOME, PRODUCTION AND WEALTH, P1, DOI 10.1057/9780230626546
+   Godley W, 2007, MONETARY ECONOMICS: AN INTEGRATED APPROACH TO CREDIT, MONEY, INCOME, PRODUCTION AND WEALTH, P1
+   Gregory David, 2015, NEWS NARRATIVES FINA
+   Gualdi S, 2015, J ECON DYN CONTROL, V50, P29, DOI 10.1016/j.jedc.2014.08.003
+   Guerini M., 2017, J EC DYNAMICS CONTRO
+   Guerini M, 2016, SCI PO PUBLICATIONS, V2016-18
+   Guvenen F., 2011, TECHNICAL REPORT
+   Haldane A., 2016, DAPPLED WORLD
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hamermesh DS, 2013, J ECON LIT, V51, P162, DOI 10.1257/jel.51.1.162
+   Heathcote J, 2005, REV ECON STUD, V72, P161, DOI 10.1111/0034-6527.00328
+   Heppenstall A.J., 2011, AGENT BASED MODELS G
+   Hommes CH, 2006, HANDB ECON, V13, P1109
+   Hong H, 1999, J FINANC, V54, P2143, DOI 10.1111/0022-1082.00184
+   Jaimovich N, 2008, J MONETARY ECON, V55, P1238, DOI 10.1016/j.jmoneco.2008.08.008
+   Jawadi F, 2014, REV ECON POLIT, V124, P639, DOI 10.3917/redp.244.0639
+   Keogh-Brown MR, 2010, HEALTH ECON, V19, P1345, DOI 10.1002/hec.1554
+   Keynes JM, 1924, ECON J, V34, P311, DOI 10.2307/2222645
+   Keynes J. M., 1936, GEN THEORY EMPLOYMEN
+   KIRMAN AP, 1992, J ECON PERSPECT, V6, P117, DOI 10.1257/jep.6.2.117
+   Krugman P, 2011, EAST ECON J, V37, P307, DOI 10.1057/eej.2011.8
+   Kumhof M, 2015, AM ECON REV, V105, P1217, DOI 10.1257/aer.20110683
+   KYDLAND FE, 1982, ECONOMETRICA, V50, P1345, DOI 10.2307/1913386
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Leary MT, 2009, J FINANC, V64, P1143, DOI 10.1111/j.1540-6261.2009.01461.x
+   Leibo JZ, 2017, WORKING PAPER
+   Leombruni R, 2005, PHYSICA A, V355, P103, DOI 10.1016/j.physa.2005.02.072
+   Lindl JD, 2004, PHYS PLASMAS, V11, P339, DOI 10.1063/1.1578638
+   Lown C, 2006, J MONEY CREDIT BANK, V38, P1575, DOI 10.1353/mcb.2006.0086
+   Lucas R. E., 1987, MODELS BUSINESS CYCL, V26
+   LUCAS RE, 1972, J ECON THEORY, V4, P103, DOI 10.1016/0022-0531(72)90142-1
+   LUCAS RE, 1976, CARN ROCH CONF SERIE, V1, P19, DOI 10.1016/S0167-2231(76)80003-6
+   Lux T, 1999, NATURE, V397, P498, DOI 10.1038/17290
+   METROPOLIS N, 1953, J CHEM PHYS, V21, P1087, DOI 10.1063/1.1699114
+   Metropolis N., 1987, LOS ALAMOS SCI, V15, P125, DOI DOI 10.1128/JCM.05092-11
+   Mikolov T., 2013, COMPUTING RES REPOSI, V1301, P3781, DOI DOI 10.1109/TNN.2003.820440]
+   Mitchell WC, 1946, MEASURING BUSINESS C
+   Muellbauer J., 2009, NEWS NARRATIVES FINA
+   MUTH JF, 1961, ECONOMETRICA, V29, P315, DOI 10.2307/1909635
+   Napoletano M., 2006, RIV ITAL DEGLI ECON, V1, P87, DOI DOI 10.1427/23296:Y:2006:I:1:P:87-118
+   Page Scott E, 2008, DIFFERENCE POWER DIV
+   Popoyan L, 2016, J EC BEHAV ORG
+   Ravn M., 2016, DISCUSSION PAPERS, V1633
+   Salle I, 2013, ECON MODEL, V34, P114, DOI 10.1016/j.econmod.2013.01.031
+   Sands P, 2016, NEW ENGL J MED, V374, P1281, DOI 10.1056/NEJMsr1600236
+   Shaikh A., 2016, CAPITALISM COMPETITI
+   Sherlock M, 2014, PHYS REV LETT, V113, DOI 10.1103/PhysRevLett.113.255001
+   SIMON HA, 1959, AM ECON REV, V49, P253
+   Sinitskaya E, 2015, J ECON DYN CONTROL, V61, P152, DOI 10.1016/j.jedc.2015.09.011
+   Smets F, 2003, J EUR ECON ASSOC, V1, P1123, DOI 10.1162/154247603770383415
+   Solow R, 2008, J ECON PERSPECT, V22, P243
+   Sornette D, 2014, REP PROG PHYS, V77, DOI 10.1088/0034-4885/77/6/062001
+   Souleles NS, 1999, AM ECON REV, V89, P947, DOI 10.1257/aer.89.4.947
+   SPEARS BK, 2015, PHYS PLASMAS, V22
+   Stern N, 2016, NATURE, V530, P407, DOI 10.1038/530407a
+   Stock J. H, 2011, OXFORD HDB EC FORECA
+   Stock JH, 2006, HBK ECON, V24, P515, DOI 10.1016/S1574-0706(05)01010-4
+   STOCK JH, 1999, HDB MACROECONOMICS A, V1, P1
+   Tesfatsion L, 2002, ARTIF LIFE, V8, P55, DOI 10.1162/106454602753694765
+   Timmermann A, 2006, HBK ECON, V24, P135, DOI 10.1016/S1574-0706(05)01004-9
+   Turrell A., 2016, BANK ENGLAND Q B SER, VQ4
+   Turrell AE, 2015, J COMPUT PHYS, V299, P144, DOI 10.1016/j.jcp.2015.06.034
+   Van Noorden R, 2015, NATURE, V525, P306, DOI 10.1038/525306a
+   Walde K, 2004, ECON LETT, V82, P91, DOI 10.1016/j.econlet.2003.07.014
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+   Wren-Lewis S, 2016, REV KEYNES ECON, V4, P20
+   Wright I, 2005, PHYSICA A, V345, P608, DOI 10.1016/j.physa.2004.07.035
+   Wuchty S, 2007, SCIENCE, V316, P1036, DOI 10.1126/science.1136099
+   Yegros-Yegros A, 2015, PLOS ONE, V10, DOI 10.1371/journal.pone.0135095
+   Yellen J. L., 2016, J EC DYNAMICS CONTRO
+   Zarnowitz V., 1984, J EC DYNAMICS CONTRO
+NR 151
+TC 14
+Z9 14
+U1 3
+U2 37
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 0266-903X
+EI 1460-2121
+J9 OXFORD REV ECON POL
+JI Oxf. Rev. Econ. Policy
+PD SPR-SUM
+PY 2018
+VL 34
+IS 1-2
+BP 219
+EP 251
+DI 10.1093/oxrep/grx051
+PG 33
+WC Economics
+SC Business & Economics
+GA FS3MF
+UT WOS:000419685300010
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Radburn, C
+AF Radburn, Crosby
+TI Deposit Insurance: Friend or Foe?
+SO JOURNAL OF BANKING AND FINANCE LAW AND PRACTICE
+LA English
+DT Article
+ID CRISIS
+AB Following the Global Financial Crisis, many governments underwent reform to ensure stability in financial markets. One mechanism utilised throughout many jurisdictions is deposit insurance. The Reserve Bank of New Zealand has chosen not to adopt such regulation. This article criticises this decision and posits that the current regulatory framework leaves depositors vulnerable to losses upon bank failure, whereby recovery is subject to ministerial discretion. This creates depositor uncertainty over recovery and consequently aggravates the risk of bank runs and contagion. Adopting a suitably designed deposit insurance scheme will remove this uncertainty, create depositor confidence and increase stability in the banking sector.
+CR [Anonymous], 2011, TREAS IMPL MAN CROWN, P102
+   [Anonymous], 2012, OP BANK RES CONT WOR, P2
+   [Anonymous], 2010, 3913547 RBNZ
+   [Anonymous], 2012, 4674576 FSO
+   [Anonymous], 2008, RBNZ PUBL INF
+   Bank of England Prudential Regulation Authority, BANK INF
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Basel Committee on Banking Supervision and International Association of Deposit Insurances, 2009, COR PRINC EFF DEP IN, P2
+   Calomiris C, 2016, DEPOSIT INSURANCE TH, P4
+   Campbell A, 2009, J FINANC REGUL COMPL, V17, P210, DOI 10.1108/13581980910972214
+   Coleton A, 2012, J INT BANK LAW REGUL, V27, P63
+   Coleton A, 2012, J INT BANKING LAW RE, V27, P72
+   Financial Services Compensation Scheme, WHAT WE COV BANKS BU
+   Financial Stability Department, 2006, BS11 FIN STAB DEP
+   Independent Commission on Banking, 2011, FIN REP REC, P9
+   International Monetary Fund, 2017, 17110 IMF, P37
+   Mayes D, 2010, J GOVERNANCE REGULAT, V1, P192
+   Mayes D, 2010, J GOVERNANCE REGULAT, V1, P186
+   Moffatt P, 2010, J INT BANKING LAW RE, V25, P490
+   Moffatt P, 2010, J INT BANKING LAW RE, V25, P486
+   Mortlock G, 2016, STUFF
+   Mortlock Geof, 2005, DEPOSIT INSURANCE SH
+   Prudential Supervision Department, 2014, BS13 PRUD SUP DEP
+   Prudential Supervision Department, 2014, BS14 PRUD SUP DEP, P3
+   Reserve Bank of New Zealand, KEY PRUD REQ
+   Reserve Bank of New Zealand, 2014, LIST REG BANKS NZ PR
+   Reserve Bank of New Zealand, LIQ POL
+   Reserve Bank of New Zealand, YOUR BANKS DISCL STA
+   Reserve Bank of New Zealand, BAS 3 CAP AD REQ
+   Reserve Bank of New Zealand, REG BANKS DISCL REG
+   Reserve Bank of New Zealand, OP BANK RES
+   Reserve Bank of New Zealand, 2015, OBR MAD SIMPL
+   Reserve Bank of New Zealand, OUTS POL
+   Reserve Bank of New Zealand, INF REL CAP AD FRAM
+   Reserve Bank of New Zealand, OP BANK RES FREQ ASK
+   Reserve Bank of New Zealand, 2013, MEM COOP T TASM BANK
+   Resuscitation_Council (UK), 2008, EXPL CRED RAT, P1
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Singh D., 2010, J BUS LAW, V2, P55
+   Singh D, 2010, J BUS LAW, V2, P59
+   Statistics New Zealand, TOP STAT
+   the Vickers Report: Bank of England Prudential Regulation Authority, 2014, CP1914 BANK ENGL PRU, P6
+   Treasury The, 2010, CHRONOLOGY S CANTERB, P4
+   Wesemann A, 2016, ABOLITION DEPOSIT IN, P36
+NR 44
+TC 0
+Z9 0
+U1 0
+U2 0
+PU LAWBOOK CO LTD
+PI PYRMONT
+PA LEVEL 6, 19 HARRIS ST, PYRMONT, NSW 2009, AUSTRALIA
+SN 1034-3040
+J9 J BANK FINANC LAW PR
+JI J. Bank Financ. Law Pract.
+PY 2018
+VL 29
+IS 2
+BP 131
+EP 149
+PG 19
+WC Law
+SC Government & Law
+GA GK2MH
+UT WOS:000435964000005
+DA 2019-12-27
+ER
+
+PT J
+AU Jiang, JH
+   Aijo, J
+AF Jiang, Junhua
+   Aijo, Janne
+TI Equity volatility connectedness across China's real estate firms and
+   financial institutions
+SO JOURNAL OF CHINESE ECONOMIC AND BUSINESS STUDIES
+LA English
+DT Article
+DE Volatility connectedness; real estate firms; financial institutions;
+   systemic importance
+ID NETWORK; TOPOLOGY; BUBBLE
+AB The study investigates the dynamic equity volatility connectedness across the major real estate firms, banks, and other financial institutions in China. Based on the relative level of equity volatility connectedness, the study also examines the systemic importance of real estate firms and banks. The study shows that despite widespread worries about potential real estate bubbles in China, total directional connectedness from real estate firms to banks has decreased over the sample period. In contrast, total directional connectedness from banks to the real estate firms and to the financial institutions has become stronger over the sample period, which implies stronger risk originating from the banking sector. The study also shows that size plays an important role in determining the systemic importance of a real estate firm to the banking sector. The largest real estate firm displays the highest average systemic importance ranking. However, size does not appear to be the determinant factor of the systemic importance of a bank to the financial system. The largest bank shows the lowest average systemic importance ranking and 70% probability of being the least or second least systemically important bank in the long run.
+C1 [Jiang, Junhua; Aijo, Janne] Univ Vaasa, Dept Accounting & Finance, Vaasa, Finland.
+RP Jiang, JH (reprint author), Univ Vaasa, Dept Accounting & Finance, Vaasa, Finland.
+EM jjiang@uva.fi
+FU Evald and Hilda Nissi Foundation
+FX This work was supported by Evald and Hilda Nissi Foundation.
+CR Acharya V. V., 2010, 1002 FRB
+   Adrian T., 2011, 17454 NBER
+   Alessandri P, 2015, INT FINANC, V18, P157, DOI 10.1111/infi.12068
+   Allen F., 2013, INT J BANKING ACCOUN, V5, P28, DOI DOI 10.1504/IJBAAF.2013.058091
+   Chan S, 2016, RES INT BUS FINANC, V36, P52, DOI 10.1016/j.ribaf.2015.09.018
+   China Real Estate TOP10 Research Group, 2016, 2016 CHIN LIST REAL
+   Diebold FX, 2016, J FINANC ECONOMET, V14, P81, DOI 10.1093/jjfinec/nbv021
+   Diebold FX, 2014, J ECONOMETRICS, V182, P119, DOI 10.1016/j.jeconom.2014.04.012
+   Dreger C, 2013, URBAN POLICY RES, V31, P27, DOI 10.1080/08111146.2012.711248
+   Feng Q, 2015, ECON MODEL, V46, P376, DOI 10.1016/j.econmod.2015.02.004
+   Financial Stability Analysis Group of People's Bank of China, 2016, CHIN FIN STAB REP 20
+   Gao B, 2013, PHYSICA A, V392, P2965, DOI 10.1016/j.physa.2013.02.015
+   GARMAN MB, 1980, J BUS, V53, P67, DOI 10.1086/296072
+   He D, 2016, RES SER CHIN DREAM, P1, DOI 10.1007/978-981-10-0969-3
+   Hoesli M, 2013, J REAL ESTATE FINANC, V47, P1, DOI 10.1007/s11146-011-9346-8
+   Huang Qiubin, 2015, 5513 CESIFO
+   Huang WQ, 2016, PHYSICA A, V456, P183, DOI 10.1016/j.physa.2016.03.034
+   International Monetary Fund, 2016, GLOB FIN STAB REP PO
+   Li S., 2016, SPRINGERPLUS, V5, P224
+   People's Bank of China, 2015, 2015 ANN REP
+   Ren Y, 2012, CHINA ECON REV, V23, P786, DOI 10.1016/j.chieco.2012.04.001
+   Wu J, 2012, REG SCI URBAN ECON, V42, P531, DOI 10.1016/j.regsciurbeco.2011.03.003
+NR 22
+TC 0
+Z9 0
+U1 0
+U2 1
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 2-4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXON, ENGLAND
+SN 1476-5284
+EI 1476-5292
+J9 J CHIN ECON BUS STUD
+JI J. Chin. Econ. Bus. Stud.
+PY 2018
+VL 16
+IS 2
+BP 215
+EP 231
+DI 10.1080/14765284.2018.1446237
+PG 17
+WC Economics
+SC Business & Economics
+GA GN3HS
+UT WOS:000438895400005
+DA 2019-12-28
+ER

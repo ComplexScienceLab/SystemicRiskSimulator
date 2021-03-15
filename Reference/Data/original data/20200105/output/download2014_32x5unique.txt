@@ -1,0 +1,403 @@
+
+PT J
+AU Kiff, J
+   Kisser, M
+AF Kiff, John
+   Kisser, Michael
+TI A shot at regulating securitization
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Financial crisis; Securitization; Moral hazard; Regulation
+ID CREDIT RISK TRANSFER; FINANCE; DERIVATIVES
+AB In order to incentivize stronger issuer due diligence effort, European and U. S. authorities are amending securitization-related regulations to force issuers to retain an economic interest in the securitization products they issue. This paper contributes to the process by exploring the economics of equity and mez zanine tranche retention in the context of systemic risk, moral hazard, accounting frictions and funding distortions. It shows that loan screening activity is maximized when the loan originating bank retains the equity tranche. However, in case capital structure irrelevance does not hold a profit maximizing bank is likely to favor retention of the less risky mezzanine tranche. From a regulator's perspective this is a problem because the implied loan screening activity is substantially lower in this case. Policy attention is even more warranted if performing due diligence is costly, the economic outlook is positive or loan profitability is high. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Kiff, John] Int Monetary Fund, Washington, DC 20431 USA.
+   [Kisser, Michael] Norwegian Sch Econ, N-5045 Bergen, Norway.
+RP Kiff, J (reprint author), Int Monetary Fund, 700th St Northwest, Washington, DC 20431 USA.
+EM jkiff@imf.org; michael.kisser@nhh.no
+CR Admati Anat, 2011, STANFORD GSB RESEARC
+   AKERLOF GA, 1970, Q J ECON, V84, P488, DOI 10.2307/1879431
+   Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Altunbas Y, 2009, EUR ECON REV, V53, P996, DOI 10.1016/j.euroecorev.2009.03.004
+   Ayotte K., 2010, THE REVIEW OF FINANC, V24, P1299
+   Basel Committee on Banking Supervision, 2011, BASEL III A GLOBAL R
+   Berk J., 2011, CORPORATE FINANCE
+   Bloomberg, 2010, DEUTSCHE BANK CEO ST
+   Brunnermeier M., 2012, WORKING PAPER
+   Carbo-Valverde S., 2012, WORKING PAPER
+   Carletti E, 2004, J FINANC INTERMED, V13, P58, DOI 10.1016/j.jfi.2003.04.001
+   Cebenoyan AS, 2004, J BANK FINANC, V28, P19, DOI 10.1016/S0378-4266(02)00391-6
+   Chauvet M., 2012, CENTER FOR RESEARCH
+   Chiesa G, 2008, J FINANC INTERMED, V17, P464, DOI 10.1016/j.jfi.2008.07.003
+   DeMarzo PM, 2005, REV FINANC STUD, V18, P1, DOI 10.1093/rfs/hhi008
+   Demyanyk Y, 2011, REV FINANC STUD, V24, P1848, DOI 10.1093/rfs/hhp033
+   Duffie D., 2008, BIS WORKING PAPER 25
+   Eisfeldt A., 2009, FINANCING SHORTFALLS
+   Fender I., 2010, WORKING PAPER
+   GORTON GB, 1995, J MONETARY ECON, V35, P389, DOI 10.1016/0304-3932(95)01199-X
+   Hartman-Glaser B, 2012, J FINANC ECON, V104, P186, DOI 10.1016/j.jfineco.2011.12.007
+   Hirtle B, 2009, J FINANC INTERMED, V18, P125, DOI 10.1016/j.jfi.2008.08.001
+   Hoesli M, 2013, J REAL ESTATE FINANC, V47, P1, DOI 10.1007/s11146-011-9346-8
+   INNES RD, 1990, J ECON THEORY, V52, P45, DOI 10.1016/0022-0531(90)90066-S
+   International Monetary Fund, 2009, GLOBAL FINANCIAL STA
+   Jensen M., 1976, JOURNAL OF FINANCIAL, V3
+   Keys BJ, 2010, Q J ECON, V125, P307, DOI 10.1162/qjec.2010.125.1.307
+   Kiff J., 2010, IMF WORKING PAPER 10
+   Kisser M., 2013, REVIEW OF FINANCE
+   Krainer J.P., 2009, MORTGAGE LOAN SECURI
+   LELAND HE, 1977, J FINANC, V32, P371, DOI 10.2307/2326770
+   Loutskina E, 2011, J FINANC ECON, V100, P663, DOI 10.1016/j.jfineco.2011.02.005
+   Loutskina E, 2009, J FINANC, V64, P861, DOI 10.1111/j.1540-6261.2009.01451.x
+   MILGROM PR, 1981, BELL J ECON, V12, P380, DOI 10.2307/3003562
+   MODIGLIANI F, 1958, AM ECON REV, V48, P261
+   Morrison AD, 2005, J BUS, V78, P621, DOI 10.1086/427641
+   Niccolo A., 2006, WORKING PAPER
+   Noss J., 2012, FINANCIAL STABILITY, V15, P1
+   Rosen Richard J., 2010, WORKING PAPER
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   The Board of Governors of the Federal Reserve System, 2010, REPORT TO THE CONGRE
+NR 41
+TC 1
+Z9 1
+U1 0
+U2 18
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD FEB
+PY 2014
+VL 10
+BP 32
+EP 49
+DI 10.1016/j.jfs.2013.02.003
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA 301ZA
+UT WOS:000330569700004
+DA 2019-12-28
+ER
+
+PT J
+AU Donadelli, M
+   Paradiso, A
+AF Donadelli, Michael
+   Paradiso, Antonio
+TI Is there heterogeneity in financial integration dynamics? Evidence from
+   country and industry emerging market equity indexes
+SO JOURNAL OF INTERNATIONAL FINANCIAL MARKETS INSTITUTIONS & MONEY
+LA English
+DT Article
+DE Financial integration; PCA; Industries; Systemic banking crises
+ID EXPECTED RETURNS; LONG-RUN; CONTAGION; LIQUIDITY
+AB This paper examines the dynamics of the financial integration process across equity markets in one global emerging region (Emerging) and three emerging sub-regions (Asia, Eastern Europe, Latin America) over the last two decades. The proportion of total variation in individual excess returns explained by the first principal component serves as a robust measure of integration. Financial integration is measured in the "national equity market" (market) and in ten different "industrial equity markets" (basic materials, consumer goods, consumer services, financials, healthcare, industrials, oil and gas, telecommunications, technology and utilities). We obtain two main results. First, we observe that the level of integration across emerging equity markets in emerging regions is rather low, both at the country and industry level. Second, the shape of the financial integration process is not homogeneous among different industries. Specifically, J-shaped, U-shaped and increasing trends are observed. Overall, our integration numbers and dynamics simultaneously improve portfolio diversification benefits and reduce risk-sharing opportunities. This is supported by a CAPMbased analysis. (C) 2014 Elsevier By. All rights reserved.
+C1 [Donadelli, Michael] Goethe Univ Frankfurt, Res Ctr SAFE, D-60323 Frankfurt, Germany.
+   [Paradiso, Antonio] Ca Foscari Univ Venice, Dept Econ, I-30131 Venice, Italy.
+RP Paradiso, A (reprint author), Ca Foscari Univ Venice, Dept Econ, Cannaregio 873, I-30131 Venice, Italy.
+EM michael.donadelli@gmail.com; antonio.paradiso@unive.it
+OI Paradiso, Antonio/0000-0003-0083-1341
+CR Bai J, 2003, J APPL ECONOMET, V18, P1, DOI 10.1002/jae.659
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   BEKAERT G., 2003, J FINANC RES, V26, P275, DOI DOI 10.1111/1475-6803.00059
+   Bekaert G, 2007, REV FINANC STUD, V20, P1783, DOI 10.1093/rfs/hhm030
+   Bilson C. M., 2001, PACIFIC BASIN FINANC, V9, P401, DOI DOI 10.1016/S0927-538X(01)00020-8
+   Chambet A, 2008, J INT MONEY FINANC, V27, P654, DOI 10.1016/j.jimonfin.2008.02.007
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Chkili W, 2014, RES INT BUS FINANC, V31, P46, DOI 10.1016/j.ribaf.2013.11.007
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   de Jong F, 2005, J FINANC ECON, V78, P583, DOI 10.1016/j.jfineco.2004.10.010
+   Donadelli M, 2013, MACROECON FINANC EME, V6, P244, DOI 10.1080/17520843.2013.782885
+   Donadelli M, 2012, RES ECON, V66, P320, DOI 10.1016/j.rie.2012.06.001
+   Donadelli M, 2014, RES INT BUS FINANC, V30, P284, DOI 10.1016/j.ribaf.2013.09.008
+   GRUBEL HG, 1968, AM ECON REV, V58, P1299
+   Harvey AC, 2003, REV ECON STAT, V85, P244, DOI 10.1162/003465303765299774
+   Henry PB, 2000, J FINANC ECON, V58, P301, DOI 10.1016/S0304-405X(00)00073-8
+   Henry PB, 2000, J FINANC, V55, P529, DOI 10.1111/0022-1082.00219
+   Jolliffe I. T., 2002, SPRINGER SERIES STAT
+   Laeven L., 2012, 12163 IMF
+   Lee CC, 2013, N AM J ECON FINANC, V26, P119, DOI 10.1016/j.najef.2013.08.002
+   Lessard D. R., 1976, FINANCIAL ANAL J, V32, P28
+   LEVY H, 1970, AM ECON REV, V60, P668
+   Mauro P, 2002, Q J ECON, V117, P695, DOI 10.1162/003355302753650364
+   NEWEY WK, 1987, ECONOMETRICA, V55, P703, DOI 10.2307/1913610
+   NEWEY WK, 1994, REV ECON STUD, V61, P631, DOI 10.2307/2297912
+   Pukthuanthong K, 2009, J FINANC ECON, V94, P214, DOI 10.1016/j.jfineco.2008.12.004
+   Russell B, 2008, J MACROECON, V30, P1792, DOI 10.1016/j.jmacro.2007.11.001
+   SACHS JD, 1995, BROOKINGS PAP ECO AC, P1
+   Saleem K, 2009, RES INT BUS FINANC, V23, P243, DOI 10.1016/j.ribaf.2008.09.003
+   Salomons R., 2003, EMERG MARK REV, V4, P121, DOI [10.1016/S1566-0141(03)00024-4, DOI 10.1016/S1566-0141(03)00024-4]
+   STAMANT P, 1998, 79 BANK CAN
+   Volosovych V, 2013, CESIFO ECON STUD, V59, P360, DOI 10.1093/cesifo/ifs003
+   Volosovych V, 2011, J INT MONEY FINANC, V30, P1535, DOI 10.1016/j.jimonfin.2011.07.011
+NR 33
+TC 15
+Z9 15
+U1 1
+U2 15
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1042-4431
+J9 J INT FINANC MARK I
+JI J. Int. Financ. Mark. Inst. Money
+PD SEP
+PY 2014
+VL 32
+BP 184
+EP 218
+DI 10.1016/j.intfin.2014.06.003
+PG 35
+WC Business, Finance; Economics
+SC Business & Economics
+GA AO2LD
+UT WOS:000341152800010
+DA 2019-12-27
+ER
+
+PT J
+AU Long, L
+   Tsui, AK
+   Zhang, ZY
+AF Long, Ling
+   Tsui, Albert K.
+   Zhang, Zhaoyong
+TI Estimating time-varying currency betas with contagion: New evidence from
+   developed and emerging financial markets
+SO JAPAN AND THE WORLD ECONOMY
+LA English
+DT Article
+DE Time-varying currency betas; MGARCH; ICAPM; Contagion; Long memory
+ID EXCHANGE-RATE EXPOSURE; STOCK; VOLATILITY; RATES
+AB This paper examines the conditional time-varying currency betas from five developed and six emerging financial markets with contagion and spillover effects. We employ a trivariate asymmetric BERK-type GARCH-in-Mean (MGARCH-M) approach to estimate the time-varying conditional variance and covariance of returns of stock market index, the world market portfolio and bilateral exchange rate between the US dollar and the local currency. The results show that the world market and currency risks are not only priced in the stock markets, but also time-varying. It is found that currency betas are much more volatile than the world market betas, and currency betas in the emerging markets are more volatile than those in the developed markets. We find empirical evidence of contagion effect and spillovers between stock market and foreign exchange market during the recent global financial crisis, and the effect is stronger in the emerging markets than that in the developed markets. Two applications are provided to illustrate the usefulness of time-varying currency betas. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Long, Ling; Tsui, Albert K.] Natl Univ Singapore, Dept Econ, Singapore 117548, Singapore.
+   [Zhang, Zhaoyong] Edith Cowan Univ, Sch Business, Fac Business & Law, Joondalup, WA 6027, Australia.
+RP Zhang, ZY (reprint author), Edith Cowan Univ, Sch Business, Fac Business & Law, 270 Joondalup Dr, Joondalup, WA 6027, Australia.
+EM zhaoyong.zhang@ecu.edu.au
+RI Zhang, Zhaoyong/D-5100-2013
+OI Zhang, Zhaoyong/0000-0001-9596-2648
+CR ADLER M, 1983, J FINANC, V38, P925, DOI 10.2307/2328091
+   AJAYI RA, 1996, J FINANC RES, V19, P193, DOI DOI 10.1111/J.1475-6803.1996.TB00593.X
+   Allayannis G., 2001, REV FINANC STUD, V14, P905
+   Allayannis G., 1997, 9729 U VIRG
+   BARTOV E, 1994, J FINANC, V49, P1755, DOI 10.2307/2329270
+   Bodnar GM, 2003, FINANC MANAGE, V32, P35, DOI 10.2307/3666203
+   Bodnar GM, 2002, J FINANC, V57, P199, DOI 10.1111/1540-6261.00420
+   BODNAR GM, 1993, J INT MONEY FINANC, V12, P29, DOI 10.1016/0261-5606(93)90008-Y
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Brooks R, 2000, REV QUANT FINAN ACC, V14, P17
+   BROWN RL, 1975, J ROY STAT SOC B MET, V37, P149
+   Campbell JY, 2010, J FINANC, V65, P87, DOI 10.1111/j.1540-6261.2009.01524.x
+   Cappiello L., 2003, WORKING PAPER
+   Chiao C., 2000, REV PAC BASIN FINANC, V3, P201
+   Choudhry T, 2002, MANCH SCH, V70, P768, DOI 10.1111/1467-9957.00324
+   Choudhry T., 2005, PACIFIC BASIN FINANC, V13, P93, DOI DOI 10.1016/J.PACFIN.2004.06.001
+   Chow E.H., 1998, PACIFIC BASIN FINANC, V6, P153
+   Chua C.T., 2006, J FIXED INCOME, V15, P20
+   De Santis G, 1998, J FINANC ECON, V49, P375, DOI 10.1016/S0304-405X(98)00029-4
+   DORNBUSCH R, 1980, AM ECON REV, V70, P960
+   DUMAS B, 1995, J FINANC, V50, P445, DOI 10.2307/2329415
+   ENGLE RF, 1995, ECONOMET THEOR, V11, P122, DOI 10.1017/S0266466600009063
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Foster D.P., 2003, WORKING PAPER
+   Frankel J. A., 1983, EC INTERDEPENDENCE F
+   Fu TY, 2011, STUD ECON FINANC, V28, P36, DOI 10.1108/10867371111110543
+   Gewek J., 1983, J FINANCIAL QUANTITA, V13, P101
+   Giannopoulos K., 1995, EUROPEAN J FINANCE, V1, P129, DOI DOI 10.1080/13518479500000013
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   Gonzales-Rivera G., 1996, J EMPIR FINANC, V2, P333
+   HARVEY CR, 1991, J FINANC, V46, P111, DOI 10.2307/2328691
+   Hunter D.M., 2005, WORKING PAPER
+   Jayasinghe P., 2011, 19 INT C MOD SIM PER
+   JORION P, 1990, J BUS, V63, P331, DOI 10.1086/296510
+   Lim G. C., 2005, J INT FINANC MARK I, V15, P189
+   Lin CH, 2011, J MULTINATL FINANC M, V21, P224, DOI 10.1016/j.mulfin.2011.04.002
+   Lin W. T., 2002, MULTINATIONAL FINANC, V6, P167
+   Mcclain KT, 1996, J EMPIR FINANC, V3, P369
+   McKenzie M., 2002, EUROPEAN J FINANCE, V8, P249, DOI 10.1080/13518470110074837
+   MERTON RC, 1980, J FINANC ECON, V8, P323, DOI 10.1016/0304-405X(80)90007-0
+   Moerman G.A., 2006, WORKING PAPER
+   MSCI, 1998, METH IND POL MORG ST
+   Tai CS, 2010, MANAG FINANC, V36, P511, DOI 10.1108/03074351011042991
+   Tai CS, 2007, RES INT BUS FINANC, V21, P98, DOI 10.1016/j.ribaf.2006.03.001
+   Walid C, 2011, EMERG MARK REV, V12, P272, DOI 10.1016/j.ememar.2011.04.003
+   WHITE H, 1980, ECONOMETRICA, V48, P817, DOI 10.2307/1912934
+   Williamson R, 2001, J FINANC ECON, V59, P441, DOI 10.1016/S0304-405X(00)00093-3
+NR 47
+TC 6
+Z9 6
+U1 0
+U2 16
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0922-1425
+EI 1879-2006
+J9 JPN WORLD ECON
+JI Jpn. World Econ.
+PD MAY
+PY 2014
+VL 30
+BP 10
+EP 24
+DI 10.1016/j.japwor.2014.02.001
+PG 15
+WC Economics
+SC Business & Economics
+GA AH0KC
+UT WOS:000335806800002
+DA 2019-12-27
+ER
+
+PT J
+AU Boudreault, M
+   Gauthier, G
+   Thomassin, T
+AF Boudreault, Mathieu
+   Gauthier, Genevieve
+   Thomassin, Tommy
+TI Contagion effect on bond portfolio risk measures in a hybrid credit risk
+   model
+SO FINANCE RESEARCH LETTERS
+LA English
+DT Article
+DE Credit risk; Recovery risk; Contagion; Bond portfolio; Value-at-Risk
+ID TERM STRUCTURES; DEFAULT; DEBT
+AB This paper illustrates how modelling the contagion effect among assets of a given bond portfolio changes the risk perception associated to it. This empirical work is developed in a hybrid credit risk framework that incorporates recovery rate risk. Dependence structures among firms and between external shocks affecting firms together are considered. The presence of correlations among firm leverage ratios and the interrelation between default probabilities and recovery rates produces clusters of defaults with low recovery rates. This has a major impact on standard risk measures such as Value-at-Risk and conditional tail expectation. Consequently, an appropriate measurement of the contagion has a tremendous effect on the capital requirement of many financial institutions. (C) 2013 Elsevier Inc. All rights reserved.
+C1 [Boudreault, Mathieu] Univ Quebec Montreal, Dept Math, Montreal, PQ H3C 3P8, Canada.
+   [Gauthier, Genevieve] HEC Montreal, Dept Management Sci, Montreal, PQ H3T 2A7, Canada.
+   [Thomassin, Tommy] Stand Life Canada, Corp Actuarial Dept, Montreal, PQ H3G 1G2, Canada.
+RP Gauthier, G (reprint author), HEC Montreal, Dept Management Sci, 3000 Cote St Catherine Rd, Montreal, PQ H3T 2A7, Canada.
+EM boudreault.mathieu@uqam.ca; genevieve.gauthier@hec.ca;
+   tommy.thomas-sin@standardlife.ca
+CR Altman E. I., 2006, WORKING PAPER
+   Altman EI, 2004, EC NOTES, V33, P183
+   Altman EI, 1996, FINANCIAL ANAL J, V52, P57, DOI DOI 10.2469/FAJ.V52.N6.2040
+   Andersen L, 2004, J CREDIT RISK, V1, P29
+   Bakshi G, 2006, J BUS, V79, P1955, DOI 10.1086/503653
+   Boudreault M., J CREDIT RI IN PRESS
+   Cetin U, 2004, ANN APPL PROBAB, V14, P1167, DOI 10.1214/105051604000000251
+   Chen L., 2004, J RISK, V17
+   Dassios A, 2011, ADV APPL PROBAB, V43, P814
+   Duffie D, 2001, ECONOMETRICA, V69, P633, DOI 10.1111/1468-0262.00208
+   Duffie D, 1999, REV FINANC STUD, V12, P687, DOI 10.1093/rfs/12.4.687
+   Duffie D, 2001, FINANC ANAL J, V57, P41, DOI 10.2469/faj.v57.n1.2418
+   Errais E, 2010, SIAM J FINANC MATH, V1, P642, DOI 10.1137/090771272
+   Giesecke K, 2004, J BANK FINANC, V28, P1521, DOI 10.1016/S0378-4266(03)00129-8
+   Giesecke K., 2004, J RISK, V7, P1
+   JARROW R, 1992, RISK MAG, V5, P63
+   Jarrow R. A., 2004, J INVESTMENT MANAGEM, V2, P1
+   JARROW RA, 1995, J FINANC, V50, P53, DOI 10.2307/2329239
+   Laurent P, 2005, J RISK, V7, P1
+   Li DX, 2000, J FIXED INCOME, V9, P43, DOI DOI 10.3905/JFI.2000.319253
+   Madan D, 2000, J FINANC QUANT ANAL, V35, P43, DOI 10.2307/2676238
+   Schonbucher P., 2000, WORKING PAPER
+   Schonbucher P., 2001, WORKING PAPER
+   Schonbucher P. J., 2002, J COMPUT FINANCE, V6
+   van der Merwe R, 2001, ADV NEUR IN, V13, P584
+   Wan E. A., 2000, AD SYST SIGN PROC CO
+NR 26
+TC 4
+Z9 6
+U1 1
+U2 4
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1544-6123
+EI 1544-6131
+J9 FINANC RES LETT
+JI Financ. Res. Lett.
+PD JUN
+PY 2014
+VL 11
+IS 2
+BP 131
+EP 139
+DI 10.1016/j.frl.2013.07.005
+PG 9
+WC Business, Finance
+SC Business & Economics
+GA AJ4JN
+UT WOS:000337642500008
+DA 2019-12-27
+ER
+
+PT J
+AU Agliardi, E
+   Pinar, M
+   Stengos, T
+AF Agliardi, Elettra
+   Pinar, Mehmet
+   Stengos, Thanasis
+TI A sovereign risk index for the Eurozone based on stochastic dominance
+SO FINANCE RESEARCH LETTERS
+LA English
+DT Article
+DE Sovereign risk; Eurozone; Nonparametric stochastic dominance
+ID FINANCIAL CRISIS; DEBT; CONTAGION; MARKETS; SPREADS; DEFAULT
+AB We propose a new method to assess sovereign risk in Eurozone countries using an approach that relies on consistent tests for stochastic dominance efficiency. The test statistics and the estimators are computed using mixed integer programming methods. Our analysis is based on macroeconomic fundamentals and their importance in accounting for sovereign risk. The results suggest that net international investment position/GDP and public debt/GDP are the main contributors to country risk in the Eurozone. We also conduct ranking analysis of countries for fiscal and external trade risk. We find a positive correlation between our rankings of the most vulnerable countries and the S&P's ratings, whereas the correlation for other countries is weaker. (C) 2014 Elsevier Inc. All rights reserved.
+C1 [Agliardi, Elettra] Univ Bologna, Dept Econ, I-40126 Bologna, Italy.
+   [Pinar, Mehmet] Edge Hill Univ, Sch Business, Ormskirk L39 4QP, Lancs, England.
+   [Stengos, Thanasis] Univ Guelph, Dept Econ, Guelph, ON N1G 2W1, Canada.
+RP Agliardi, E (reprint author), Univ Bologna, Dept Econ, Piazza Scaravilli 2, I-40126 Bologna, Italy.
+EM elettra.agliardi@unibo.it; mehmet.pinar@edgehill.ac.uk;
+   tstengos@uoguelph.ca
+RI PINAR, MEHMET/Y-7567-2019
+OI PINAR, MEHMET/0000-0001-5518-188X
+CR Agliardi E, 2012, J EMPIR FINANC, V19, P741, DOI 10.1016/j.jempfin.2012.08.003
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Baek IM, 2005, J INT MONEY FINANC, V24, P533, DOI 10.1016/j.jimonfin.2005.03.007
+   Barrett GF, 2003, ECONOMETRICA, V71, P71, DOI 10.1111/1468-0262.00390
+   Barrios S., 2009, EUROPEAN EC EC PAPER, V388
+   Beetsma R, 2013, J INT MONEY FINANC, V34, P83, DOI 10.1016/j.jimonfin.2012.11.005
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bekaert Geert, 2011, 17121 NBER
+   Borio C., 2009, BIS Q REV, P29
+   Davis EP, 2008, J FINANC STABIL, V4, P89, DOI 10.1016/j.jfs.2007.12.004
+   De Grauwe P., 2014, J MACROECON IN PRESS
+   Dieckmann S, 2012, REV FINANC, V16, P903, DOI 10.1093/rof/rfr015
+   Eichengreen B, 2000, NBER CONF R, P107
+   Gibson H. D., 2014, J MACROECON IN PRESS
+   Gibson HD, 2012, J INT MONEY FINANC, V31, P498, DOI 10.1016/j.jimonfin.2011.10.009
+   Honkapohja S., 2014, J MACROECON IN PRESS
+   Kaminsky GL, 2003, J ECON PERSPECT, V17, P51, DOI 10.1257/089533003772034899
+   Linton O, 2005, REV ECON STUD, V72, P735, DOI 10.1111/j.1467-937X.2005.00350.x
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Manasse P., 2013, 863 DSE UN
+   Panizza U, 2009, J ECON LIT, V47, P651, DOI 10.1257/jel.47.3.651
+   Pinar M., 2012, WORKING PAPER SERIES, V17_12
+   Pinar M, 2013, J ECON GROWTH, V18, P69, DOI 10.1007/s10887-012-9083-8
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Scaillet O, 2010, J BUS ECON STAT, V28, P169, DOI 10.1198/jbes.2009.06167
+   Sgherri S., 2009, 09222 IMF
+   Wu E., 2013, INTRA REGIONAL UNPUB
+NR 27
+TC 8
+Z9 8
+U1 0
+U2 6
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1544-6123
+EI 1544-6131
+J9 FINANC RES LETT
+JI Financ. Res. Lett.
+PD DEC
+PY 2014
+VL 11
+IS 4
+BP 375
+EP 384
+DI 10.1016/j.frl.2014.07.002
+PG 10
+WC Business, Finance
+SC Business & Economics
+GA AW6PX
+UT WOS:000346392200008
+DA 2019-12-27
+ER

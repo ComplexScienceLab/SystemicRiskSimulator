@@ -1,0 +1,430 @@
+
+PT J
+AU Shkodina, I
+   Derid, I
+   Zelenko, O
+AF Shkodina, I
+   Derid, I
+   Zelenko, O.
+TI DIGITAL TRANSFORMATION OF GLOBAL BANKING: CHALLENGES AND PROSPECTS
+SO FINANCIAL AND CREDIT ACTIVITY-PROBLEMS OF THEORY AND PRACTICE
+LA Ukrainian
+DT Article
+DE banks; industry 4.0; financial technology (fintech); payment systems;
+   open banking
+AB Based on the analysis of trends and threats of digital transformation of global banking, we concluded that there is an unevenness of digitization of banking in different regions. The development of digital technology has an impact on the global banking market, its structure and services. Cloud technology, blockchain and Big Data, artificial intelligence, biometrics, and open source APIs are used by financial institutions both in routine client work (optical character recognition, language, voice, customer image and face recognition, etc.), and in complex analysis of unstructured data sets (pattern recognition in money laundering transactions, counter-terrorism financing). The major segments where the biggest changes were made - are retail, corporate banking, payments, bank transactions, investment banking, and infrastructure projects. There are considered the concept of open banking, its impact on the ecosystem of financial market. The use of digital technologies, on the one hand, increases competition and market efficiency, and on the other, creates new systemic risks to financial stability and integrity.
+   The main obstacles to digital transformation are not technological ones, but the differences in the organizational culture of traditional banks and fintech, different strategic vision of top management, lack of qualified personnel, which makes it difficult for banks to transform for cooperation. The use of digital technology increases the systemic risks associated with cyber security, fraud and ethical issues. In order to reduce the fraud, it is important to improve the verification procedures: the integration of offline and online modes, the use of implicit factors, and consumer biometric behaviour. Given the likelihood of recession in the coming years, geopolitical problems, trade and currency wars, traditional banks need to transform their businesses in line with new trends. In modern global world, there are not the largest banks that the competitive advantages get but the ones that are the most adapted to changes.
+C1 [Shkodina, I] Kharkov Natl Univ, Econ, Kharkov, Ukraine.
+   [Shkodina, I; Derid, I] Kharkov Natl Univ, Kharkov, Ukraine.
+   [Zelenko, O.] HS Skovoroda Kharkiv Natl Pdag Univ, Econ, Kharkov, Ukraine.
+RP Shkodina, I (reprint author), Kharkov Natl Univ, Econ, Kharkov, Ukraine.; Shkodina, I (reprint author), Kharkov Natl Univ, Kharkov, Ukraine.
+EM iryna.shkodina@karazin.ua; derid@karazin.ua; kaf_ecteor@hnpu.edu.ua
+RI Karlin, Mykola/AAG-1177-2019; Zelenko, Oleksandr/AAG-1335-2019
+OI Zelenko, Oleksandr/0000-0002-7283-0914
+CR Azarenkova G., 2018, INVESTMENT MANAGEMEN, V15, P229
+   Detrixhe J., 2018, QZ              0724
+   International Monetary Fund; World Bank, 2019, FINT EXP SO FAR
+   Kornivska V. O., 2017, PROBLEMY EKONOMIKY, V3, P254
+NR 4
+TC 0
+Z9 0
+U1 26
+U2 26
+PU NATL BANK UKRAINE, UNIV BANKING, KHARKIV INST BANKING
+PI KHARKIV
+PA PR-KT PEREMOHY, 55, KHARKIV, 61174, UKRAINE
+SN 2306-4994
+EI 2310-8770
+J9 FINANC CREDIT ACT
+JI Financ. Credit Act.
+PY 2019
+VL 3
+IS 30
+BP 45
+EP 51
+DI 10.18371/fcaptp.v3i30.179680
+PG 7
+WC Business, Finance
+SC Business & Economics
+GA JD9YU
+UT WOS:000490344900005
+OA Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Davis, EP
+   Liadze, I
+   Piggott, R
+AF Davis, E. Philip
+   Liadze, Iana
+   Piggott, Rebecca
+TI Assessing the macroeconomic impact of alternative macroprudential
+   policies
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Macroprudential policy; than-to-value ratios; Bank capital adequacy;
+   Systemic risk; Macroeconomic modelling
+ID EARLY WARNING SYSTEMS; FINANCIAL CRISES; ECONOMIC-IMPACT;
+   MONETARY-POLICY; BANKING CRISES; CREDIT; INVESTMENT
+AB This article assesses effects on the wider economy and overall costs and benefits of two alternative macro prudential policies- loan-to-value ratios on mortgage lending and variable bank capital adequacy targets. It also traces the potential effects of such policies if introduced prior to the subprime crisis. The work is performed within the National Institute Global Econometric Model, with a focus on Germany, Italy and the UK. Detailed banking sectors and addition of a macroprudential block to our model enable effects of policies to be captured. A systemic risk index tracks the likelihood of the occurrence of a banking crisis and establishes thresholds at which macroprudential policies should be activated by the authorities. Capital adequacy impacts the economy by acting on the spread between borrowing and lending of corporates and households, while loan-to-value transmits through its impact on the housing market. We find generally loan-to-value policy has a lesser effect than capital adequacy on crisis probabilities and net benefits, but there is considerable cross country variation. We show that the introduction of macroprudential policy prior to the crisis would have led to improvement in a number of key macroeconomic measures and might thus have reduced the incidence of the crisis.
+C1 [Davis, E. Philip] Brunel Univ, Dept Econ & Finance, Uxbridge UB8 3PH, Middx, England.
+   [Davis, E. Philip; Liadze, Iana; Piggott, Rebecca] NIESR, 2 Dean Trench St Smith Sq, London SW1P 3HE, England.
+RP Davis, EP (reprint author), Brunel Univ, Dept Econ & Finance, Uxbridge UB8 3PH, Middx, England.
+EM e_philip_davis@msn.com; i.liadze@niesr.ac.uk; r.piggott@niesr.ac.uk
+FU European Commission under the FIRSTRUN project of Horizon-2020 [649261]
+FX We thank the editor (Sushanta Mallick), two anonymous reviewers, Ray
+   Barrell, Oriol Carreras, Jagjit Chadha, Ian Hurst, Simon Kirby, James
+   Warren and Garry Young for helpful comments and Yanitsa Kazalova for
+   research assistance. This work was supported by the European Commission
+   under the FIRSTRUN project of Horizon-2020, Project id: 649261, website
+   www.firstrun.eu.
+CR Antipa P, 2014, BANQUE FRANCE FINANC, V18, P225
+   Baker J, 2016, ECON MODEL, V58, P339, DOI 10.1016/j.econmod.2016.06.012
+   Barrell R, 1997, ECON J, V107, P1770, DOI 10.1111/1468-0297.00256
+   Barrell R, 2009, 38 FSA
+   Barrell R, 2003, NATL I EC REV
+   Barrell R, 2010, 358 NIESR
+   Barrell R., 2010, 351 NIESR
+   Barrell R, 2010, J BANK FINANC, V34, P2255, DOI 10.1016/j.jbankfin.2010.02.015
+   Basel Committee, 2015, FREQ ASK QUEST BAS 3
+   Basel Committee, 2010, GUID NAT AUTH OP COU
+   Benigno G, 2013, J INT ECON, V89, P453, DOI 10.1016/j.jinteco.2012.06.002
+   Bennani T, 2014, BANQUE FRANCE OCCASI, V9
+   Bernanke BS, 1999, HBK ECON, V15, P1341
+   Blanchard O.J., 1989, LECT MACROECONOMICS
+   Boissay F, 2013, 1514 ECB
+   Borgy V, 2014, J BANK FINANC, V46, P132, DOI 10.1016/j.jbankfin.2014.05.015
+   Borio C., 2009, 284 BIS
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   Cardarelli R, 2011, J FINANC STABIL, V7, P78, DOI 10.1016/j.jfs.2010.01.005
+   Carreras O, 2016, MACROPRUDENTIAL TOOL
+   Carreras O., 2018, 490 NIESR
+   Carreras O, 2018, J FINANC STABIL, V37, P112, DOI 10.1016/j.jfs.2018.04.004
+   Catte P, 2010, BANK ITALY OCCASIONA, V69
+   Cerutti E, 2017, J FINANC STABIL, V28, P203, DOI 10.1016/j.jfs.2015.10.004
+   CGFS, 2010, MACR INSTR FRAM REP
+   Claessens S., 2014, WP14155 IMF
+   Crockett A, 2000, 11 INT C BANK SUP BA
+   Darbar S. M, 2015, 15123 IMF
+   Davis E. P, 2017, 1722 BRUN U
+   Davis E. P, 2011, RUTH RIKSBANKS INQUI, P219
+   Davis E. P, 2012, 396 NIESR
+   Davis EP, 2009, Q REV ECON FINANC, V49, P1341, DOI 10.1016/j.qref.2009.06.001
+   Davis EP, 2008, J FINANC STABIL, V4, P89, DOI 10.1016/j.jfs.2007.12.004
+   Demirguc-Kunt A, 1998, IMF STAFF PAPER, V45
+   Demirguc-Kunt A., 2005, IMF WORKING PAPERS
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Drehmann M., 2010, 317 BIS
+   Drehmann M, 2011, INT J CENT BANK, V7, P189
+   Dufrenot G, 2012, CREDIT STANDAR UNPUB
+   Ebell M, 2016, ECON MODEL, V59, P196, DOI 10.1016/j.econmod.2016.06.020
+   Edge RM, 2011, INT J CENT BANK, V7, P261
+   European Systemic Risk Board, 2016, ADV MACR SCEN EBA 20
+   Fisher I, 1933, ECONOMETRICA, V1, P337, DOI 10.2307/1907327
+   Galati G, 2014, 440 DNB
+   Gersbach H, 2012, 9077 CEPR
+   Gersbach H, 2012, J MONEY CREDIT BANK, V44, P73, DOI 10.1111/j.1538-4616.2012.00554.x
+   Gertler M, 2011, J MONETARY ECON, V58, P17, DOI 10.1016/j.jmoneco.2010.10.004
+   Goodfriend M, 2007, J MONETARY ECON, V54, P1480, DOI 10.1016/j.jmoneco.2007.06.009
+   Goodhart C, 2012, 17909 NBER
+   Goodhart CAE, 2010, NATL INST ECON REV, V214, pF73, DOI 10.1177/0027950110389774
+   Goodhart CAE, 2013, INT J CENT BANK, V9, P109
+   Hollo D, 2012, 1462 ECB
+   Horvath B, 2013, DISTURBING INT UNPUB
+   Hurst I, 2016, FIRSTRUN DELIVERABLE, V4
+   Jorda O, 2016, ECON POLICY, V31, P107, DOI 10.1093/epolic/eiv017
+   Jorda O, 2013, J MONEY CREDIT BANK, V45, P3, DOI 10.1111/jmcb.12069
+   Karim D, 2013, J FINANC STABIL, V9, P673, DOI 10.1016/j.jfs.2012.07.001
+   Kashyap A. K, 2014, 20165 NBER
+   Kuttner KN, 2016, J FINANC STABIL, V26, P31, DOI 10.1016/j.jfs.2016.07.014
+   Mallick SK, 2013, INT REV FINANC ANAL, V30, P1, DOI 10.1016/j.irfa.2013.05.003
+   McKinnon R.I, 1994, CREDIBLE LIBERALIZAT
+   Osborne M, 2008, PRELIMINARY RESULTS
+   Perotti E, 2011, INT J CENT BANK, V7, P3
+   Repullo R, 2011, CEPR DISCUSSION PAPE, V8304
+   Rubio M, 2016, ECON MODEL, V59, P570, DOI 10.1016/j.econmod.2016.06.006
+   Schularick M, 2012, AM ECON REV, V102, P1029, DOI 10.1257/aer.102.2.1029
+   Tobin J, 1963, BANKING MONETARY STU, P408
+   Turdaliev N, 2018, EC MODELL
+   Woodford M, 2010, J ECON PERSPECT, V24, P21, DOI 10.1257/jep.24.4.21
+NR 69
+TC 0
+Z9 0
+U1 9
+U2 9
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD AUG
+PY 2019
+VL 80
+BP 407
+EP 428
+DI 10.1016/j.econmod.2018.11.025
+PG 22
+WC Economics
+SC Business & Economics
+GA IE9JZ
+UT WOS:000472692000033
+DA 2019-12-28
+ER
+
+PT J
+AU Jalles, JT
+AF Jalles, Joao Tovar
+TI How Do Macroeconomic Fundamentals Affect Sovereign Bond Yields? New
+   Evidence from European Forecasts
+SO CESIFO ECONOMIC STUDIES
+LA English
+DT Article
+DE forecast error; forecast revision; bond spreads; instrumental variables;
+   SUR estimation; Eastern Europe; Global Financial Crisis
+ID REAL-TIME DATA; ECONOMIC FORECASTS; PANEL-DATA; DETERMINANTS; SPREADS;
+   AREA; ANNOUNCEMENTS; CONTAGION; TESTS; RISK
+AB Macroeconomic fundamentals impact the long-term insolvency problem of a country. This article empirically assesses the role played by both macroeconomic and fiscal fundamentals, proxied by a set of European Commissions forecasts, in affecting sovereign bond yields. We look at a large panel of 25 European countries between 1992 and 2015. By means panel and time-series approaches, we find that lower short-term interest rates and better fiscal institutions tend to lower bond yields. The better the economic and fiscal outlooks going forward, the lower the yields demanded in international markets. Timing also matters: investors seem to pay more attention to forecasts the shorter the forecast horizon, and they started carrying more weight since the Global Financial Crisis. Finally, the impact of yields determinants is different across countries, being more prominent in those characterized by economic hardship conditions (Greece, Ireland, Spain, and Portugal). (JEL codes: C23, E44, H68).
+C1 [Jalles, Joao Tovar] Nova Sch Business & Econ, Ctr Globalizat & Governance, Campus Campolide, P-1099032 Lisbon, Portugal.
+   [Jalles, Joao Tovar] ISEG, UECE Res Unit Complex & Econ, Lisbon, Portugal.
+RP Jalles, JT (reprint author), Nova Sch Business & Econ, Ctr Globalizat & Governance, Campus Campolide, P-1099032 Lisbon, Portugal.; Jalles, JT (reprint author), ISEG, UECE Res Unit Complex & Econ, Lisbon, Portugal.
+EM joaojalles@gmail.com
+RI Jalles, Joao/AAA-9923-2019
+OI Jalles, Joao/0000-0002-7171-5076
+CR Afonso A., 2010, 3155 CESIFO
+   Afonso A., 2015, WORKING PAPER SERIES, V1781
+   Afonso A, 2015, ECON MODEL, V44, P319, DOI 10.1016/j.econmod.2014.03.012
+   Afonso A, 2010, APPL ECON LETT, V17, P1437, DOI 10.1080/13504850903049627
+   Aizenman J., 2014, 19980 NBER
+   Andersen TG, 2003, AM ECON REV, V93, P38, DOI 10.1257/000282803321455151
+   Ardagna S, 2007, BE J MACROECON, V7
+   Assmann C, 2012, EMPIRICA, V39, P341, DOI 10.1007/s10663-011-9171-6
+   Attinasi M, 2009, 1131 ECB
+   Balduzzi P, 2001, J FINANC QUANT ANAL, V36, P523, DOI 10.2307/2676223
+   Barrios S, 2009, EC EC PAPERS, V338
+   Beck R., 2001, DO COUNTRY FUNDAMENT, V2001/02
+   Beirne J, 2013, J INT MONEY FINANC, V34, P60, DOI 10.1016/j.jimonfin.2012.11.004
+   Bernoth K, 2012, J INT MONEY FINANC, V31, P639, DOI 10.1016/j.jimonfin.2011.10.006
+   Caggiano G, 2012, ECON LETT, V117, P774, DOI 10.1016/j.econlet.2012.08.041
+   Campbell JY, 2004, AM ECON REV, V94, P1249, DOI 10.1257/0002828043052240
+   CAMPBELL JY, 1987, J POLIT ECON, V95, P1062, DOI 10.1086/261502
+   Campbell S. D, 2005, 11736 NBER
+   Canzoneri M., 2003, P FEDERAL RESERVE BA, P333
+   Carriero A, 2006, J ECONOMETRICS, V131, P339, DOI 10.1016/j.jeconom.2005.01.019
+   Colasanti F, 1982, FORECASTING DG UNPUB
+   Conway P, 2002, OCCASIONAL PAPER
+   Croushore D, 2011, J ECON LIT, V49, P72, DOI 10.1257/jel.49.1.72
+   D'Agostino A, 2013, J APPL ECONOMET, V28, P82, DOI 10.1002/jae.1257
+   EC, 2011, PUBL FIN EMU 2011
+   ECB, 2006, MONTHLY B
+   Engen E. M., 2004, 1068 NBER
+   Faini R., 2006, ECON POLICY, V21, P443, DOI DOI 10.1111/J.1468-0327.2006.00163.X
+   Fatas A, 2013, REV ECON STAT, V95, P362, DOI 10.1162/REST_a_00265
+   Favero C, 2010, J FINANC QUANT ANAL, V45, P107, DOI 10.1017/S0022109009990494
+   Gajewski P, 2014, COMP ECON RES, V17, P5, DOI 10.2478/cer-2014-0011
+   Georgoutsos DA, 2013, J BANK FINANC, V37, P4650, DOI 10.1016/j.jbankfin.2013.07.025
+   Godl M, 2016, REV WORLD ECON, V152, P449, DOI 10.1007/s10290-016-0252-2
+   Gomez-Puig M, 2014, N AM J ECON FINANC, V30, P133, DOI 10.1016/j.najef.2014.09.003
+   Guntram G. B., 2010, 092010 DTSCH BUND
+   Hansen CB, 2007, J ECONOMETRICS, V141, P597, DOI 10.1016/j.jeconom.2006.10.009
+   Hilscher J, 2010, REV FINANC, V14, P235, DOI 10.1093/rof/rfq005
+   Keereman F, 1999, EC PAPERS, V137
+   Kinoshita N., 2006, 0663 IMF
+   Koenig EF, 2003, REV ECON STAT, V85, P618, DOI 10.1162/003465303322369768
+   Laubach T, 2009, J EUR ECON ASSOC, V7, P858, DOI 10.1162/JEEA.2009.7.4.858
+   Lawrence K., 1998, ADV BUSINESS MANAGEM, V2, P157
+   Macchiarelli C., 2017, LSE SPECIAL PAPER SE, V12
+   MANDY DM, 1989, INT J FORECASTING, V5, P381, DOI 10.1016/0169-2070(89)90041-1
+   Manganelli S, 2009, ECON POLICY, P191, DOI 10.1111/j.1468-0327.2009.00220.x
+   Mankiw N. G., 1999, HDB MACROECONOMICS
+   Muellbauer J, 2014, OXFORD EC        APR
+   New York Fed, 2003, CURRENT ISSUES FEDER, V9
+   Pigou A., 1927, IND FLUCTUATIONS
+   Poghosyan T, 2012, 12271 IMF WP
+   Portes R., 2014, NBER WORKING PAPERS, V19985
+   QUIGLEY MR, 1994, J MONEY CREDIT BANK, V26, P894, DOI 10.2307/2077954
+   Silvapulle P, 2016, ECON MODEL, V58, P83, DOI 10.1016/j.econmod.2016.05.015
+   Strauch R, 2004, 307 WP EUR CENTR BAN
+   Van den Noord P, 2000, 230 OECD WP EC DEP
+   Wooldridge P., 2001, BIS Q REV, P48
+   ZELLNER A, 1962, J AM STAT ASSOC, V57, P348, DOI 10.2307/2281644
+NR 57
+TC 0
+Z9 0
+U1 1
+U2 1
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1610-241X
+EI 1612-7501
+J9 CESIFO ECON STUD
+JI CESifo Econ. Stud.
+PD MAR
+PY 2019
+VL 65
+IS 1
+BP 44
+EP 67
+DI 10.1093/cesifo/ify025
+PG 24
+WC Economics
+SC Business & Economics
+GA HQ7BC
+UT WOS:000462573400003
+DA 2019-12-27
+ER
+
+PT J
+AU Wu, F
+AF Wu, Fei
+TI Sectoral contributions to systemic risk in the Chinese stock market
+SO FINANCE RESEARCH LETTERS
+LA English
+DT Article
+DE Component expected shortfall; Marginal expected shortfall; Sectoral
+   analysis; Stock market; Systemic risk
+ID CAPITAL SHORTFALL; SHOCKS
+AB This paper investigates the question of how much each sector contributes to systemic risk in the Chinese stock market. Based on two recently developed approaches, namely, Marginal Expected Shortfall (MES) and Component Expected Shortfall (CES), the empirical results demonstrate that weights of sectors matter. Moreover, Financials, Industrials and Energy sectors are found to be the top risk contributors, though their contributions tend to evolve over time. The results have strong implications to both investors and regulators for risk management and regulatory purposes.
+C1 [Wu, Fei] Univ Birmingham, Dept Econ, Birmingham, W Midlands, England.
+RP Wu, F (reprint author), Univ Birmingham, Dept Econ, Birmingham, W Midlands, England.
+EM F.Wu.1@bham.ac.uk
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen F, 2014, EUR J FINANC, V20, P599, DOI 10.1080/1351847X.2012.671780
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Banulescu GD, 2015, J BANK FINANC, V50, P575, DOI 10.1016/j.jbankfin.2014.01.037
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Ewing B. T., 2002, APPL FINANCIAL EC, V12, P285, DOI DOI 10.1080/09603100110090172
+   Ewing BT, 2003, APPL ECON, V35, P201, DOI 10.1080/0003684022000018222
+   Financial Stability Board, 2010, RED MOR HAZ POS SYST
+   Wang ZJ, 2005, Q REV ECON FINANC, V45, P767, DOI 10.1016/j.qref.2003.08.001
+   Wu F., 2018, SYSTEMIC RISKS SPILL
+   Zhang DY, 2017, ENERG ECON, V62, P323, DOI 10.1016/j.eneco.2017.01.009
+NR 13
+TC 0
+Z9 0
+U1 1
+U2 1
+PU ACADEMIC PRESS INC ELSEVIER SCIENCE
+PI SAN DIEGO
+PA 525 B ST, STE 1900, SAN DIEGO, CA 92101-4495 USA
+SN 1544-6123
+EI 1544-6131
+J9 FINANC RES LETT
+JI Financ. Res. Lett.
+PD DEC
+PY 2019
+VL 31
+BP 386
+EP 390
+DI 10.1016/j.frl.2018.12.009
+PG 5
+WC Business, Finance
+SC Business & Economics
+GA JS9SX
+UT WOS:000500640600044
+DA 2019-12-28
+ER
+
+PT J
+AU Polat, O
+   Ozkan, I
+AF Polat, Onur
+   Ozkan, Ibrahim
+TI Transmission mechanisms of financial stress into economic activity in
+   Turkey
+SO JOURNAL OF POLICY MODELING
+LA English
+DT Article
+DE Financial Stability; Financial Stress Index; Systemic Risk
+ID YIELD CURVE; STABILITY INDEX; MONETARY-POLICY; TERM STRUCTURE; REAL
+   ECONOMY; MACROECONOMY; SHOCKS; MODEL
+AB Measuring, analyzing and understanding systemic risk in financial system have become very important in the light of the recent global crisis. In this study, we follow Hollo, Kremer, and Lo Duca (2012) and evaluate systemic stress of financial system of Turkey with a high frequency (daily) financial stress index which consists of daily 13 financial market indicators. Dynamics of the financial stress index indicate that the index creates proper signals to the well-known financial stress events. The dynamic interaction between financial stress and real economic activity is investigated with application of structural VAR (SVAR) model. Results of the study suggest that deterioration of financial conditions impacts real economic activity significantly and adversely. (C) 2019 The Society for Policy Modeling. Published by Elsevier Inc. All rights reserved.
+C1 [Polat, Onur; Ozkan, Ibrahim] Hacettepe Univ, Dept Econ, Ankara, Turkey.
+RP Polat, O (reprint author), Hacettepe Univ, Dept Econ, Ankara, Turkey.
+EM onurpolat@hacettepe.edu.tr
+RI Polat, Onur/Q-7985-2018; Polat, Onur/AAC-3353-2019; OZKAN,
+   IBRAHIM/I-8714-2013
+OI Polat, Onur/0000-0002-7170-4254; Polat, Onur/0000-0002-7170-4254; OZKAN,
+   IBRAHIM/0000-0002-1092-8123
+CR Afonso A, 2012, J BANK FINANC, V36, P1789, DOI 10.1016/j.jbankfin.2012.02.004
+   Allen F, 2010, EC PERSPECT, V10, P1
+   [Anonymous], 2018, POLICY REACTIONS EUR
+   Arzamasov V, 2014, PROCEDIA COMPUT SCI, V31, P985, DOI 10.1016/j.procs.2014.05.351
+   Balakrishnan R, 2009, 09133 IMF
+   Balke NS, 2000, REV ECON STAT, V82, P344, DOI 10.1162/rest.2000.82.2.344
+   BOLLERSLEV T, 1990, REV ECON STAT, V72, P498, DOI 10.2307/2109358
+   Bordo MD, 2002, ECON INQ, V40, P521, DOI 10.1093/ei/40.4.521
+   Cardarelli R, 2011, J FINANC STABIL, V7, P78, DOI 10.1016/j.jfs.2010.01.005
+   Central Bank of the Republic of Turkey, 2006, FINANCIAL STABILITY, V3
+   Central Bank of the Republic of Turkey, 2015, FINANCIAL STABILITY, V15
+   Cerqueira L. E, 2015, SPANISH FINANCIAL MA, P1
+   Cevika EI, 2013, J POLICY MODEL, V35, P370, DOI 10.1016/j.jpolmod.2012.06.003
+   Chauvet M, 2016, INT J FORECASTING, V32, P324, DOI 10.1016/j.ijforecast.2015.05.007
+   Ciccarelli M, 2012, WP SERIES ECB, V1498
+   Claessens S, 2012, J INT ECON, V88, P375, DOI 10.1016/j.jinteco.2012.02.015
+   Claessens S, 2010, ECON POLICY, P267
+   Diebold FX, 2006, J ECONOMETRICS, V131, P309, DOI 10.1016/j.jeconom.2005.01.011
+   Eidenberger J, 2014, WHAT PREDICTS FINANC
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Hakkio C.S., 2009, ECON REV, V2, P5
+   Hatzius J, 2010, FINANCIAL CONDITIONS
+   Hollo D, 2012, CISS COMPOSITE INDIC
+   Holmfeldt M, 2009, HAS STRESS FINANCIAL
+   Huotari J, 2015, 7 BANK FINL
+   Illing M., 2006, J FINANCIAL STABILIT, V2, P243, DOI DOI 10.1016/j.jfs.2006.06.002
+   Islami M, 2014, INT J FINANC ECON, V19, P204, DOI 10.1002/ijfe.1483
+   Kliesen K. L., 2010, EC SYNOPSES, V2
+   Lange RH, 2013, INT REV ECON FINANC, V27, P261, DOI 10.1016/j.iref.2012.10.003
+   Laurini MP, 2016, INT REV ECON FINANC, V44, P68, DOI 10.1016/j.iref.2016.03.008
+   Levant J, 2016, J EMPIR FINANC, V37, P117, DOI 10.1016/j.jempfin.2016.03.003
+   Louzis DP, 2012, ECON MODEL, V29, P1228, DOI 10.1016/j.econmod.2012.03.017
+   MERTON RC, 1973, ECONOMETRICA, V41, P867, DOI 10.2307/1913811
+   Morales MA, 2010, ANN FINANC, V6, P555, DOI 10.1007/s10436-010-0161-7
+   NELSON CR, 1987, J BUS, V60, P473, DOI 10.1086/296409
+   Nelson W. R., 2007, RISK MEASUREMENT SYS, V4, P343
+   Oet M. V, 2011, 1130 FRB
+   Ozer-Imer I, 2014, ECON MODEL, V43, P394, DOI 10.1016/j.econmod.2014.09.008
+   Paccagnini A, 2016, ECON MODEL, V52, P216, DOI 10.1016/j.econmod.2014.11.013
+   Patel SA, 1998, FINANCIAL ANAL J, V54, P50, DOI DOI 10.2469/FAJ.V54.N6.2225
+   Peersman G, 2005, ECON J, V115, P319, DOI 10.1111/j.1468-0297.2005.00991.x
+   Rai V., 2014, EFFECT FEDERAL RESER
+   Reinhart Carmen M., 2010, P EC POL S JACKS HOL, P17
+   Silvestrini A, 2015, J POLICY MODEL, V37, P915, DOI 10.1016/j.jpolmod.2015.09.003
+   Sinenko N, 2013, BALT J ECON, V13, P85
+   Vermeulen R, 2015, OPEN ECON REV, V26, P383, DOI 10.1007/s11079-015-9348-x
+   Wall D. L, 2012, CENTRAL BANKING FINA
+   Wen Y, 2015, 4 NORG BANK
+   Yiu M. S, 2010, 2 HONG KONG MON AUTH
+   2003, WORLD DEV, V31, P1549, DOI DOI 10.1016/S0305-750X(03)00108-6
+NR 50
+TC 1
+Z9 1
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 0161-8938
+EI 1873-8060
+J9 J POLICY MODEL
+JI J. Policy Model.
+PD MAR-APR
+PY 2019
+VL 41
+IS 2
+BP 395
+EP 415
+DI 10.1016/j.jpolmod.2019.02.010
+PG 21
+WC Economics
+SC Business & Economics
+GA HX8QV
+UT WOS:000467671300010
+DA 2019-12-28
+ER

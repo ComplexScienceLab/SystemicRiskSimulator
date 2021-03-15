@@ -1,0 +1,416 @@
+
+PT J
+AU Chan-Lau, JA
+   Mitra, S
+   Ong, LL
+AF Chan-Lau, Jorge Antonio
+   Mitra, Srobona
+   Ong, Li Lian
+TI IDENTIFYING CONTAGION RISK IN THE INTERNATIONAL BANKING SYSTEM: AN
+   EXTREME VALUE THEORY APPROACH
+SO INTERNATIONAL JOURNAL OF FINANCE & ECONOMICS
+LA English
+DT Article
+DE Bank soundness; co-exceedance; contagion risk; distance to default;
+   extreme value theory; logit
+ID STOCK RETURNS; FINANCIAL CONTAGION; EQUITY MARKETS; TERM STRUCTURE;
+   LINKAGES; MODELS
+AB In this article, we use the extreme value theory framework to analyse contagion risk across the international banking system. We test for the likelihood that an extreme shock affecting a major, systemic global bank would also affect another large local or foreign counterpart, and vice versa. Our results reveal several key trends among major global banks: contagion risk among banks exhibits home bias, individual banks are affected differently by idiosyncratic shocks to their major counterparts and banks are affected differently by common shocks to the real economy or financial markets. In general, bank soundness seems more susceptible to common (macro and market) shocks when the global environment is turbulent; this may have important implications for global financial stability especially during stressful periods. Not surprisingly, our findings also suggest that bank contagion risk has risen over time, which emphasizes the need for continuing collaboration on cross-border supervision and crisis management. Copyright (c) 2012 John Wiley & Sons, Ltd.
+C1 [Ong, Li Lian] Int Monetary Fund, Monetary & Capital Markets Dept, Washington, DC 20431 USA.
+RP Ong, LL (reprint author), Int Monetary Fund, Monetary & Capital Markets Dept, 700 19th St, Washington, DC 20431 USA.
+EM long@imf.org
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Bank of England, 2006, 20 BANK ENGL
+   Bernard H, 1998, INT J FINANC ECON, V3, P195, DOI 10.1002/(SICI)1099-1158(199807)3:3<195::AID-IJFE81>3.0.CO;2-M
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Bohn Jeffrey R., 2003, MODELING DEFAULT RIS
+   Chan-Lau JA, 2004, IMF STAFF PAPERS, V51, P386
+   Chan-Lau Jorge A., 2004, 0433 IMF
+   CHANG EC, 1993, J FINANC QUANT ANAL, V28, P497, DOI 10.2307/2331162
+   De Santis G, 1998, J FINANC ECON, V49, P375, DOI 10.1016/S0304-405X(98)00029-4
+   DeSantis G, 1997, J FINANC, V52, P1881, DOI 10.1111/j.1540-6261.1997.tb02745.x
+   Duggar E, 2009, IMF STAFF PAPERS, V56, P758, DOI 10.1057/imfsp.2008.38
+   Engle R, 2001, J ECON PERSPECT, V15, P157, DOI 10.1257/jep.15.4.157
+   Estrella A, 2005, ECON J, V115, P722, DOI 10.1111/j.1468-0297.2005.01017.x
+   ESTRELLA A, 1991, J FINANC, V46, P555, DOI 10.2307/2328836
+   Forbes K., 2001, INT FINANCIAL CONTAG
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   FRENCH KR, 1980, J FINANC ECON, V8, P55, DOI 10.1016/0304-405X(80)90021-5
+   Geithner T, 2006, FINANCIAL TIMES
+   Gieve J, 2006, PRACTICAL ISSUES PRE
+   Gropp R, 2004, J INT MONEY FINANC, V23, P405, DOI 10.1016/j.jimonfin.2004.01.005
+   Gropp R., 2006, 662 ECB
+   Gropp R, 2004, J MONEY CREDIT BANK, V38, P399
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   JAFFE J, 1985, J FINANC, V40, P433, DOI 10.2307/2327894
+   KEIM DB, 1984, J FINANC, V39, P819
+   Lakonishok J, 1988, REV FINANC STUD, V1, P403, DOI 10.1093/rfs/1.4.403
+   Ledoit O, 2003, REV ECON STAT, V85, P735, DOI 10.1162/003465303322369858
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Morgan DP, 2002, AM ECON REV, V92, P874, DOI 10.1257/00028280260344506
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Quintos CE, 2001, ESTIMATING TAIL DEPE
+   ROGALSKI RJ, 1984, J FINANC, V39, P835, DOI 10.2307/2327946
+   Schoenmaker D, 2006, P INT BANK C INT FIN
+   STARICA C., 1999, J EMPIR FINANC, V6, P515
+NR 36
+TC 4
+Z9 4
+U1 0
+U2 23
+PU WILEY-BLACKWELL
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1076-9307
+EI 1099-1158
+J9 INT J FINANC ECON
+JI Int. J. Financ. Econ.
+PD OCT
+PY 2012
+VL 17
+IS 4
+BP 390
+EP 406
+DI 10.1002/ijfe.1459
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA 011SO
+UT WOS:000309185500006
+DA 2019-12-27
+ER
+
+PT J
+AU El-Erian, MA
+   Spence, M
+AF El-Erian, Mohamed A.
+   Spence, Michael
+TI Systemic Risk, Multiple Equilibriums, and Market Dynamics: What You Need
+   to Know and Why
+SO FINANCIAL ANALYSTS JOURNAL
+LA English
+DT Article
+AB Using an array of real-life examples-including the current sovereign debt crisis in the eurozone-the authors analyze the underlying dynamics of the periodic bouts of systemic path dependence that affect not only financial markets (their functioning and stability, investment returns, and volatility) but also investment strategy itself Their analysis explains how sudden shifts in expectations can morph into particularly disruptive multiple-equilibrium dynamics and points to possible implications for market outcomes, market equilibriums, and policy responses.
+C1 [El-Erian, Mohamed A.] PIMCO, Newport Beach, CA USA.
+   [Spence, Michael] NYU, Leonard N Stern Sch Business, New York, NY USA.
+   [Spence, Michael] PIMCO, Milan, Italy.
+RP El-Erian, MA (reprint author), PIMCO, Newport Beach, CA USA.
+CR Blanchard O, 2011, 2011 REV 4 HARD TRUT
+   Spence M, 1974, MARKET SIGNALING INF
+NR 2
+TC 1
+Z9 1
+U1 0
+U2 14
+PU CFA INST
+PI CHARLOTTESVILLE
+PA 915 EAST HIGH ST, CHARLOTTESVILLE, VA 22902 USA
+SN 0015-198X
+EI 1938-3312
+J9 FINANC ANAL J
+JI Financ. Anal. J.
+PD SEP-OCT
+PY 2012
+VL 68
+IS 5
+BP 18
+EP 24
+DI 10.2469/faj.v68.n5.5
+PG 7
+WC Business, Finance
+SC Business & Economics
+GA 017FJ
+UT WOS:000309575200005
+DA 2019-12-28
+ER
+
+PT J
+AU Hui, ECM
+   Chan, KKK
+AF Hui, Eddie C. M.
+   Chan, Ka Kwan Kevin
+TI ARE THE GLOBAL REAL ESTATE MARKETS CONTAGIOUS?
+SO INTERNATIONAL JOURNAL OF STRATEGIC PROPERTY MANAGEMENT
+LA English
+DT Article
+DE Contagion; Coskewness; Cokurtosis; Real estate; Financial tsunami
+ID STOCK MARKETS; CRISES; TESTS; VOLATILITY; SHOCKS; PRICE
+AB The aim of this paper is. to investigate the contagion across real estate markets of four countries: Hong Kong, China, U.S. and U.K., during the financial tsunami in 2008. We use the Forbes-Rigobon test, the coskewness test and the cokurtosis test. We propose a new cokurtosis test constructed by extending the method of constructing the coskewness test to further higher order moments. It can show additional channels of contagion that other tests fail to show, and hence can provide more information on the direction of contagion, and reflect a more complete picture of the contagion pattern. The coskewness and cokurtosis tests show that contagion exists between the four countries, and the contagion effect is stronger between Hong Kong and China, and between U.S. and U.K. This provides clues for investors on how to diversify their investment to reduce their risk. This paper bridges the gap that previous works on contagion across real estate markets give mixed results, and gives a first insight into the contagion pattern of global real estate markets during the financial tsunami.
+C1 [Hui, Eddie C. M.; Chan, Ka Kwan Kevin] Hong Kong Polytech Univ, Dept Bldg & Real Estate, Hong Kong, Hong Kong, Peoples R China.
+RP Hui, ECM (reprint author), Hong Kong Polytech Univ, Dept Bldg & Real Estate, Hong Kong, Hong Kong, Peoples R China.
+EM bscmhui@inet.polyu.edu.hk; ckkwyc@yahoo.com.hk
+RI Hui, Eddie Chi Man/L-2037-2016
+OI Hui, Eddie Chi Man/0000-0002-6974-891X
+CR Bond SA, 2006, J REAL ESTATE FINANC, V32, P253, DOI 10.1007/s11146-006-6800-0
+   CHAU K, 2005, J REAL ESTATE LIT, V13, P337
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Dungey M., 2001, NEW YORK STOCK EXCH
+   Dungey M, 2007, J APPL ECONOM, V22, P89, DOI 10.1002/jae.936
+   Dungey M, 2010, J BANK FINANC, V34, P1008, DOI 10.1016/j.jbankfin.2009.11.006
+   Dungey Mardi, 2009, CESIFO FORUM, V9, P33
+   Eichengreen B, 1996, SCAND J ECON, V98, P463, DOI 10.2307/3440879
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Forbes KJ, 2004, J INT ECON, V63, P59, DOI 10.1016/S0022-1996(03)00044-8
+   Fry R., 2008, 12008 CAMA
+   Fry R., 2006, NEW CLASS TESTS CONT
+   Fry R, 2010, J BUS ECON STAT, V28, P423, DOI 10.1198/jbes.2010.06060
+   Gonzalez-Hermosillo B., 2005, SAMPLING PROPERTIES
+   Granger C. W. J., 2000, Q REV EC FINANCE, V40, P337, DOI DOI 10.1016/S1062-9769(00)00042-9
+   HAMAO Y, 1990, REV FINANC STUD, V3, P281, DOI 10.1093/rfs/3.2.281
+   Harvey CR, 2000, J FINANC, V55, P1263, DOI 10.1111/0022-1082.00247
+   Hatemi-J A., 2010, IMPACT US REAL ESTAT
+   Hui E. C. M., 2004, INT J STRATEG PROP M, V8, P105
+   Hui ECM, 2011, INT J STRATEG PROP M, V15, P26, DOI 10.3846/1648715X.2011.565867
+   Hui ECM, 2012, APPL ECON, V44, P2985, DOI 10.1080/00036846.2011.568409
+   Liow H. K., 2006, APPL FINANCIAL EC, V16, P371, DOI DOI 10.1080/09603100500390885
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Newell G., 1996, J PROPERTY FINANCE, V7, P9, DOI DOI 10.1108/09588689610152363
+   Okunev J, 2000, J REAL ESTATE FINANC, V21, P251, DOI 10.1023/A:1012051719424
+   Okunev J, 1997, REAL ESTATE ECON, V25, P487, DOI 10.1111/1540-6229.00724
+   Ong S. E., 1994, J PROPERTY FINANCE, V5, P4
+   Pericoli M, 2003, J ECON SURV, V17, P571, DOI 10.1111/1467-6419.00205
+   Quan DC, 1999, REAL ESTATE ECON, V27, P183, DOI 10.1111/1540-6229.00771
+   Quigley JA, 2001, J HOUS ECON, V10, P129, DOI 10.1006/jhec.2001.0284
+   Sing T. F., 2001, INT REAL ESTATE REV, V4, P135
+   The World Bank Group, 2011, DEF CONT
+   Tse R., 2001, REV PACIFIC BASIN FI, V4, P29, DOI DOI 10.1142/S0219091501000309
+   Wilson P., 2004, J PROPERTY INVESTMEN, V22, P401
+   Wong F. K. W., 2005, POLYU BRE INDEX INDI
+   Zhou J, 2010, J PROP RES, V27, P357, DOI 10.1080/09599916.2010.517853
+NR 36
+TC 8
+Z9 8
+U1 0
+U2 13
+PU VILNIUS GEDIMINAS TECH UNIV
+PI VILNIUS
+PA SAULETEKIO AL 11, VILNIUS, LT-10223, LITHUANIA
+SN 1648-715X
+J9 INT J STRATEG PROP M
+JI Int. J. Strateg. Prop. Manag.
+PD SEP
+PY 2012
+VL 16
+IS 3
+BP 219
+EP 235
+DI 10.3846/1648715X.2011.645904
+PG 17
+WC Management
+SC Business & Economics
+GA 013TD
+UT WOS:000309327900001
+OA Other Gold
+DA 2019-12-27
+ER
+
+PT J
+AU Raddatz, C
+   Schmulder, SL
+AF Raddatz, Claudio
+   Schmulder, Sergio L.
+TI On the international transmission of shocks: Micro-evidence from mutual
+   fund portfolios
+SO JOURNAL OF INTERNATIONAL ECONOMICS
+LA English
+DT Article
+DE Contagion; Crises; Global financial crisis; International capital flows;
+   Mutual fund investors; Mutual fund managers
+ID INSTITUTIONAL INVESTORS; FINANCIAL CRISES; EMERGING MARKETS; SUDDEN
+   STOPS; LIQUIDITY; BEHAVIOR; RISK; INVESTMENT; STRATEGIES; SUBPRIME
+AB Using micro-level data on mutual funds from different financial centers investing in equity and bonds, this paper analyzes how investors and managers behave and transmit shocks across countries. The paper shows that the volatility of mutual fund investments is quantitatively driven by both the underlying investors and fund managers through (i) injections into/redemptions out of each fund and (ii) managerial changes in country weights and cash. Both investors and managers respond to country returns and crises and adjust their investments substantially, e.g., generating large reallocations during the global financial crisis. Their behavior tends to be pro-cyclical, reducing their exposure to countries during bad times and increasing it when conditions improve. Managers actively change country weights over time, although there is significant short-run pass-through from returns to country weights. Capital flows from mutual funds do not seem to have a stabilizing role and expose countries in their portfolios to foreign shocks. (C) 2012 Elsevier B.V. All rights reserved.
+C1 [Raddatz, Claudio; Schmulder, Sergio L.] World Bank, Washington, DC 20433 USA.
+RP Schmulder, SL (reprint author), World Bank, 1818 H St NW, Washington, DC 20433 USA.
+EM craddatz@bcentral.cl; sschmukler@worldbank.org
+OI Raddatz, Claudio/0000-0003-3192-9034
+CR Allen F., 2000, CARNEGIE-ROCHESTER C, V53, P177
+   Allen F, 2006, NBER CONF R, P341
+   Andersen TG, 2007, J INT ECON, V73, P251, DOI 10.1016/j.jinteco.2007.02.004
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   Borensztein E, 2003, IMF STAFF PAPERS, V50, P43
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Broner F., J EUROPEAN EC ASS
+   Broner F., 2010, 1039 BANC ESP
+   Broner FA, 2006, J INT ECON, V69, P203, DOI 10.1016/j.jinteco.2005.05.004
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   BULOW JI, 1985, J POLIT ECON, V93, P488, DOI 10.1086/261312
+   Calomiris CW, 2009, J STRUCT FINANC, V15, P6, DOI 10.3905/JSF.2009.15.1.006
+   Calvo G.A, 2002, P INT EC ASS C BUEN, V3
+   Cetorelli N, 2011, IMF ECON REV, V59, P41, DOI 10.1057/imfer.2010.9
+   Chan K, 2005, J FINANC, V60, P1495, DOI 10.1111/j.1540-6261.2005.768_1.x
+   Chang R, 2001, Q J ECON, V116, P489, DOI 10.1162/00335530151144087
+   Chevalier J, 1997, J POLIT ECON, V105, P1167, DOI 10.1086/516389
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Claessens S., 2001, INT FINANCIAL CONTAG
+   Dahlquist M, 2001, J FINANC ECON, V59, P413, DOI 10.1016/S0304-405X(00)00092-1
+   Devereux MB, 2010, J MONEY CREDIT BANK, V42, P71, DOI 10.1111/j.1538-4616.2010.00330.x
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Didier T., 2010, 16629 NBER
+   EICHENGREEN B, 2009, 14904 NBER
+   Forbes K., 2011, 17351 NBER
+   Fratzscher M., 2011, 17357 NBER
+   Gelos RG, 2005, J FINANC, V60, P2987, DOI 10.1111/j.1540-6261.2005.00823.x
+   Gompers PA, 2001, Q J ECON, V116, P229, DOI 10.1162/003355301556392
+   Gorton G, 2012, J FINANC ECON, V104, P425, DOI 10.1016/j.jfineco.2011.03.016
+   Gourinchas P., 2011, STORIES 20 CEN UNPUB
+   Gourinchas P. O., 2010, 10E20 IMES BANK JAP
+   Gourinchas PO, 2007, J POLIT ECON, V115, P665, DOI 10.1086/521966
+   Gourinchas Pierre-Olivier, 2007, G7 CURRENT ACCOUNT I, P11
+   Grinblatt M, 1995, AM ECON REV, V85, P1088
+   Hau H, 2006, REV FINANC STUD, V19, P273, DOI 10.1093/rfs/hhj008
+   Hau H., 2008, 14165 NBER
+   Hellwig MF, 2009, ECONOMIST-NETHERLAND, V157, P129, DOI 10.1007/s10645-009-9110-0
+   Jotikasthira C., J FINANCE
+   Kaminsky G, 2004, J INT ECON, V64, P113, DOI 10.1016/S0022-1996(03)00075-8
+   Kaminsky GL, 2001, WORLD BANK ECON REV, V15, P315, DOI 10.1093/wber/15.2.315
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Kang J., 1997, J INT ECON, V64, P113
+   Kim W, 2002, J INT ECON, V56, P77, DOI 10.1016/S0022-1996(01)00109-X
+   Klenow PJ, 2005, HANDB ECON, V22, P817
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Krugman P., 2008, INT FINANCE MU UNPUB
+   Mendoza EG, 2006, J INT ECON, V70, P82, DOI 10.1016/j.jinteco.2005.06.016
+   Mendoza EG, 2010, AM ECON REV, V100, P1941, DOI 10.1257/aer.100.5.1941
+   Mendoza EG, 2010, J MONETARY ECON, V57, P24, DOI 10.1016/j.jmoneco.2009.10.009
+   Milesi-Ferretti G., 2010, 182010 IHEID GRAD I
+   Mishkin FS, 2011, J ECON PERSPECT, V25, P49, DOI 10.1257/jep.25.1.49
+   Morck R, 2000, J FINANC ECON, V58, P215, DOI 10.1016/S0304-405X(00)00071-4
+   Peria MSM, 2005, IMF STAFF PAPERS, V52, P430
+   Raddatz C., 2010, 5039 WORLD BANK
+   Raddatz C, 2011, 17358 NBER
+   Rajan R., 2005, GREENSPAN ERA LESSON, P313
+   SCHARFSTEIN DS, 1990, AM ECON REV, V80, P465
+   SCHWERT GW, 1989, J FINANC, V44, P1115, DOI 10.2307/2328636
+   Shiller R. J., 2008, SUBPRIME SOLUTION TO
+   Shin HS, 2009, J ECON PERSPECT, V23, P101, DOI 10.1257/jep.23.1.101
+   Shleifer A, 1997, J FINANC, V52, P35, DOI 10.2307/2329555
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Sirri ER, 1998, J FINANC, V53, P1589, DOI 10.1111/0022-1082.00066
+   Stein JC, 2005, Q J ECON, V120, P247, DOI 10.1162/qjec.2005.120.1.247
+   Stein JC, 2009, J FINANC, V64, P1517, DOI 10.1111/j.1540-6261.2009.01472.x
+   Wermers R, 1999, J FINANC, V54, P581, DOI 10.1111/0022-1082.00118
+NR 67
+TC 43
+Z9 44
+U1 0
+U2 28
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0022-1996
+EI 1873-0353
+J9 J INT ECON
+JI J. Int. Econ.
+PD NOV
+PY 2012
+VL 88
+IS 2
+SI SI
+BP 357
+EP 374
+DI 10.1016/j.jinteco.2012.05.006
+PG 18
+WC Economics
+SC Business & Economics
+GA 058HX
+UT WOS:000312625800011
+OA Green Published
+DA 2019-12-27
+ER
+
+PT J
+AU Hale, G
+AF Hale, Galina
+TI Bank relationships, business cycles, and financial crises
+SO JOURNAL OF INTERNATIONAL ECONOMICS
+LA English
+DT Article
+DE Networks; International banking; Crises; Bank relationships; Business
+   cycles
+ID LENDING RELATIONSHIPS; SYSTEMIC RISK; HOME BIAS; INFORMATION;
+   DETERMINANTS; INVESTMENT
+AB The importance of information asymmetries in the capital markets is commonly accepted as one of the main reasons for home bias in investment. The effects of such asymmetries may potentially be reduced through relationships between banks established through bank-to-bank lending. To analyze the dynamics of formation of such relationships during 1980-2009, I construct a global banking network of 7938 banking institutions from 141 countries. I find that recessions and banking crises tend to have negative effects on the formation of new connections and that these effects are not the same for all countries or all banks. I also find that the global financial crisis of 2008-09 had a large negative impact on the formation of new relationships in the global banking network, especially by large banks, which were previously immune to effects of banking crises and recessions. Published by Elsevier B.V.
+C1 [Hale, Galina] Fed Reserve Bank San Francisco, San Francisco, CA USA.
+RP Hale, G (reprint author), 101 Market St,MS 1130, San Francisco, CA 94105 USA.
+EM Galina.b.hale@sf.frb.org
+OI Hale, Galina/0000-0002-5604-9730
+CR Ahearne AG, 2004, J INT ECON, V62, P313, DOI 10.1016/S0022-1996(03)00015-1
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Bae KH, 2008, J FINANC ECON, V88, P581, DOI 10.1016/j.jfineco.2007.02.004
+   Battiston S, 2009, 15611 NBER
+   Boot AWA, 2000, J FINANC INTERMED, V9, P7, DOI 10.1006/jfin.2000.0282
+   Bottazzi L., 2009, 200943 CENTER TILB U
+   Brennan MJ, 1997, J FINANC, V52, P1851, DOI 10.1111/j.1540-6261.1997.tb02744.x
+   Caballero J., 2009, EC LETTERFRBSF  1214
+   Castiglionesi F, 2007, 2007100 TILB U CTR E
+   Chan K, 2008, J FINANC, V63, P159, DOI 10.1111/j.1540-6261.2008.01313.x
+   Chan-Lau J.A., 2009, ASSESSING SYSTEMIC I
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Coval JD, 2001, J POLIT ECON, V109, P811, DOI 10.1086/322088
+   Craig B., 2010, 322 BIS
+   Fratzscher Marcel, 2011, CAPITAL FLOWS UNPUB
+   Garratt R.J., 2010, MAPPING SYSTEM UNPUB
+   Gatti DD, 2010, J ECON DYN CONTROL, V34, P1627, DOI 10.1016/j.jedc.2010.06.019
+   Guiso L, 2009, Q J ECON, V124, P1095, DOI 10.1162/qjec.2009.124.3.1095
+   Haldane A.G., 2009, RETHINKING FINANCIAL
+   Haldane AG, 2011, NATURE, V469, P351, DOI 10.1038/nature09659
+   Hale G, 2011, GLOBAL BANKING UNPUB
+   Hatchondo JC, 2008, INT ECON REV, V49, P1297
+   Huberman G, 2001, REV FINANC STUD, V14, P659, DOI 10.1093/rfs/14.3.659
+   Ivashina V, 2010, AM ECON REV, V100, P57, DOI 10.1257/aer.100.2.57
+   Kang JK, 1997, J FINANC ECON, V46, P3, DOI 10.1016/S0304-405X(97)00023-8
+   Karlan D, 2009, Q J ECON, V124, P1307, DOI 10.1162/qjec.2009.124.3.1307
+   Kubelec Ch., 2010, 384 BANK ENGL
+   Laeven L., 2008, 08224 IMF
+   Lehmann E, 2001, J ECON BEHAV ORGAN, V45, P339, DOI 10.1016/S0167-2681(01)00151-2
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Mian A, 2006, J FINANC, V61, P1465, DOI 10.1111/j.1540-6261.2006.00878.x
+   Milesi-Ferretti GM, 2011, ECON POLICY, P285, DOI 10.1111/j.1468-0327.2011.00263.x
+   Minoiu C., 2011, 1174 IMF
+   Mirchev L., 2010, FINANCIAL SYSTEM TRA
+   Miura H., 2010, STATA J IN PRESS
+   MOULTON BR, 1990, REV ECON STAT, V72, P334, DOI 10.2307/2109724
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Okawa Y., 2010, 072010 HKIMR
+   Peek J, 2000, AM ECON REV, V90, P30, DOI 10.1257/aer.90.1.30
+   Pilloff S.J., 2004, 176 FED RES BOARD GO, P176
+   Portes R, 2005, J INT ECON, V65, P269, DOI 10.1016/j.jinteco.2004.05.002
+   Portes R, 2001, EUR ECON REV, V45, P783, DOI 10.1016/S0014-2921(01)00138-6
+   PUTNAM RD, 1995, J DEMOCRACY, V0006
+   Reinhart C. M., 2009, AM EC ASS M SAN FRAN
+   Rose AK, 2007, ECON J, V117, P1310, DOI 10.1111/j.1468-0297.2007.02084.x
+   Rose Andrew K., 2011, 17073 NBER
+   Sachs A., 2010, 082010 DTSCH BUND
+   Schularick M., 2010, FRBSF C MON EC
+   Van Nieuwerburgh S, 2009, J FINANC, V64, P1187, DOI 10.1111/j.1540-6261.2009.01462.x
+   von Peter G., 2007, BIS Q REV, P33
+NR 50
+TC 37
+Z9 37
+U1 0
+U2 33
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0022-1996
+EI 1873-0353
+J9 J INT ECON
+JI J. Int. Econ.
+PD NOV
+PY 2012
+VL 88
+IS 2
+SI SI
+BP 312
+EP 325
+DI 10.1016/j.jinteco.2012.01.011
+PG 14
+WC Economics
+SC Business & Economics
+GA 058HX
+UT WOS:000312625800008
+DA 2019-12-28
+ER

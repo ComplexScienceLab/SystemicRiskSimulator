@@ -1,0 +1,12 @@
+<project name="FinancialRiskWithComplexNetwork" version="docear 1.0" ID="167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ">
+<folder type="library" name="Library">
+<link type="literature_annotations" name="Literature &amp; Annotations" path="project://167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/_data/167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/default_files/literature_and_annotations.mm"/>
+<link type="file" name="Temp" path="project://167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/_data/167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/default_files/temp.mm" system="true"/>
+<link type="file" name="Trash" path="project://167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/_data/167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/default_files/trash.mm" system="true"/>
+</folder>
+<folder type="physical" name="My drafts" path="project://167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/_data/167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/My%20Drafts/"/>
+<folder type="literature_repository" name="Literature repository" system="true">
+<folder type="repository_path" name="default" path="file:/Users/ethan/Documents/Ethan/CoreFiles/ProjectsFile/Research/EconomicAndFinance/FinancialRisk/Analyse//literature_repository"/>
+</folder>
+<link type="references" name="References" path="project://167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/_data/167C47A029DCU04QXQAE3RG3HRQI9O51F5MZ/default_files/FinancialRiskWithComplexNetwork.bib" system="true"/>
+</project>

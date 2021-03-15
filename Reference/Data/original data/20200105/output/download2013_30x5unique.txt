@@ -1,0 +1,374 @@
+
+PT J
+AU Tuckman, B
+AF Tuckman, Bruce
+TI Embedded Financing: The Unsung Virtue of Derivatives
+SO JOURNAL OF DERIVATIVES
+LA English
+DT Article
+AB This article shows that a derivative contract essentially bundles i) a spot or cash position in an asset or set of cash flows, and ii) an agreement to finance that asset or set of cash flows throughout the life of the contract.
+   The embedded financing feature of derivative contracts is often underappreciated. First, with respect to pricing, the applicable interest rate is not some abstract "risk-free" rate but rather the financing rate of a particular security for a specific term. Second, since long-term cash financing arrangements are extremely illiquid, derivatives play a central role toward completing financing markets. Third, by virtue of embedded long-term financing, a derivative position has significantly less financing risk than an equivalent levered cash position using existing, i.e., short-term, financing arrangements. Fourth, from a public policy perspective, controlling for total leverage, derivatives pose less systemic financing risk than levered cash positions.
+C1 [Tuckman, Bruce] NYU, Stern Sch Business, New York, NY 10012 USA.
+   [Tuckman, Bruce] Ctr Financial Stabil, New York, NY USA.
+RP Tuckman, B (reprint author), NYU, Stern Sch Business, New York, NY 10012 USA.
+EM btuckman@stern.nyu.edu
+CR Financial Stability Board, 2012, STRENGTH OV REG SHAD
+   Pozsar Zoltan, 2011, I CASH POOLS TRIFFIN
+   Tuckman B., 2012, FIXED INCOME SECURIT
+NR 3
+TC 1
+Z9 1
+U1 0
+U2 0
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1074-1240
+EI 2168-8524
+J9 J DERIV
+JI J. Deriv.
+PD FAL
+PY 2013
+VL 21
+IS 1
+BP 73
+EP 82
+PG 10
+WC Business, Finance
+SC Business & Economics
+GA AM3VS
+UT WOS:000339781500006
+DA 2019-12-28
+ER
+
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Oh, FD
+AF Oh, Frederick Dongchuhl
+TI Contagion of a liquidity crisis between two firms
+SO JOURNAL OF FINANCIAL ECONOMICS
+LA English
+DT Article
+DE Contagion; Liquidity crisis; Global game; Learning; Coordination
+   failure; Information structure
+ID FINANCIAL CRISES; GLOBAL GAMES; DEBT; RISK; COORDINATION; INVESTMENT;
+   BANKING; ATTACKS; EQUILIBRIUM; INFORMATION
+AB This paper presents a model in which the contagion of a liquidity crisis between two nonfinancial institutions occurs because of learning activity within a common creditor pool. After creditors observe what occurs in a rollover game for a firm, they conjecture one another's "type" or attitude toward the risk associated with the firm's investment project. Creditors' inference about one another's type then influences their decision to lend to the next firm. By providing an analysis of the "incidence of failure" (the threshold for a liquidity crisis) for each firm, this paper demonstrates that the risk of contagion increases sharply if it originates ex ante from a firm facing a low probability of failure. In addition, the paper proposes some policy measures for mitigating the severity of contagion during a liquidity crisis. (c) 2012 Elsevier B.V. All rights reserved.
+C1 Korea Adv Inst Sci & Technol, KAIST Coll Business, Seoul 130722, South Korea.
+RP Oh, FD (reprint author), Korea Adv Inst Sci & Technol, KAIST Coll Business, 85 Hoegi Ro, Seoul 130722, South Korea.
+EM dcoh415@kaist.ac.kr
+RI Oh, Frederick Dongchuhl/G-7363-2012
+CR Akama H., 2003, BOJ REPORTS RES PAPE
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F, 2012, J FINANC ECON, V104, P519, DOI 10.1016/j.jfineco.2011.07.003
+   Angeletos GM, 2007, ECONOMETRICA, V75, P711, DOI 10.1111/j.1468-0262.2007.00766.x
+   Baig T., 2001, INT FINANCIAL CONTAG, P268
+   BESANKO D, 1987, INT ECON REV, V28, P671, DOI 10.2307/2526573
+   Biais B., 2009, LIFECYCLE FINA UNPUB
+   Broner FA, 2006, J INT ECON, V69, P203, DOI 10.1016/j.jinteco.2005.05.004
+   Bruche M, 2011, J FINANC QUANT ANAL, V46, P1407, DOI 10.1017/S0022109011000330
+   CALOMIRIS CW, 1991, AM ECON REV, V81, P497
+   CARLSSON H, 1993, ECONOMETRICA, V61, P989, DOI 10.2307/2951491
+   Chamley C, 1999, Q J ECON, V114, P869, DOI 10.1162/003355399556160
+   Chen YN, 1999, J POLIT ECON, V107, P946, DOI 10.1086/250086
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Dasgupta A, 2004, J EUR ECON ASSOC, V2, P1049, DOI 10.1162/1542476042813896
+   DIAMOND DW, 1991, Q J ECON, V106, P709, DOI 10.2307/2937924
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Diamond DW, 2001, J POLIT ECON, V109, P287, DOI 10.1086/319552
+   Fischer S, 1999, J ECON PERSPECT, V13, P85, DOI 10.1257/jep.13.4.85
+   FLANNERY MJ, 1986, J FINANC, V41, P19
+   GERLACH S, 1995, EUROPEAN J POLITICAL, V11, P45
+   Goldstein I, 2004, J ECON THEORY, V119, P151, DOI 10.1016/j.jet.2004.03.004
+   Greenbaum S. I., 2007, CONT FINANCIAL INTER
+   Guimaraes B, 2007, J MONETARY ECON, V54, P2205, DOI 10.1016/j.jmoneco.2007.07.005
+   Heinemann F, 2002, J INT ECON, V58, P429, DOI 10.1016/S0022-1996(01)00167-2
+   Izmalkov S, 2010, AM ECON J-MICROECON, V2, P21, DOI 10.1257/mic.2.1.21
+   Kaminsky GL, 2001, WORLD BANK ECON REV, V15, P315, DOI 10.1093/wber/15.2.315
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Lando D, 2010, J FINANC INTERMED, V19, P355, DOI 10.1016/j.jfi.2010.03.002
+   Manz M, 2010, EUR ECON REV, V54, P900, DOI 10.1016/j.euroecorev.2010.02.001
+   Morris S, 2001, NBER MACROECON ANN, V15, P139
+   Morris S, 2004, EUR ECON REV, V48, P133, DOI 10.1016/S0014-2921(02)00239-8
+   Morris Stephen, 2003, ADV EC ECONOMETRICS, V1, P56
+   Obstfeld M, 1996, EUR ECON REV, V40, P1037, DOI 10.1016/0014-2921(95)00111-5
+   Oh F.D., 2012, ROLE PUBLIC IN UNPUB
+   Radelet S, 2000, NBER CONF R, P105
+   Rhee H.Y., 1998, INT J KOREAN STUDIES, V2, P129
+   Rochet J.-C., 2004, CREDIT INTERMEDIATIO, P324
+   SCHARFSTEIN DS, 1990, AM ECON REV, V80, P465
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   Steiner J, 2008, GAME ECON BEHAV, V63, P308, DOI 10.1016/j.geb.2007.07.005
+   Takeda F., 2008, J INT EC STUDIES, V22, P31
+   Taketa K., 2004, CONTAGION CURR UNPUB
+   Thakor A.V., 2008, IS BAILOUT COUNTERPR
+   Thakor AV, 2012, J FINANC ECON, V103, P130, DOI 10.1016/j.jfineco.2011.03.026
+NR 45
+TC 7
+Z9 7
+U1 0
+U2 23
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0304-405X
+J9 J FINANC ECON
+JI J. Financ. Econ.
+PD FEB
+PY 2013
+VL 107
+IS 2
+BP 386
+EP 400
+DI 10.1016/j.jfineco.2012.08.018
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA 091SC
+UT WOS:000315069100007
+DA 2019-12-27
+ER
+
+PT J
+AU Gourieroux, C
+   Heam, JC
+   Monfort, A
+AF Gourieroux, C.
+   Heam, J. C.
+   Monfort, A.
+TI Liquidation equilibrium with seniority and hidden CDO
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article; Proceedings Paper
+CT Conference of the International-Finance-and-Banking-Society (IFABS)
+CY JUN 18-20, 2012
+CL Valencia, SPAIN
+DE Collateralized debt obligation; Contagion; Solvency risk; Value-of-the
+   firm model; Liquidation equilibrium; Contagion premium; Systemic risk
+ID BILATERAL EXPOSURES; RISK; CONTAGION; SYSTEMS; DEBT
+AB The aim of our paper is to price credit derivatives written on a single name when this name is a bank. Indeed, due to the special structure of the balance sheet of a bank and to the interconnections with other institutions of the financial system, the standard pricing formulas do not apply and their use can imply severe mispricing. The pricing of credit derivatives written on a single bank name requires a joint analysis of the risks of all banks directly or indirectly interconnected with the bank of interest. Each name cannot be priced in isolation, but the banking system must be treated as a whole. It is necessary to analyze the contagion of losses among banks, especially the equilibrium of joint defaults and recovery rates at liquidation time. We show the existence and uniqueness of such an equilibrium. Then the standard pricing formulas are modified by adding a premium to capture the contagion effects. (C) 2013 Elsevier B.V. All rights reserved.
+C1 [Gourieroux, C.] Univ Toronto, Toronto, ON M5S 1A1, Canada.
+   [Monfort, A.] Univ Maastricht, Maastricht, Netherlands.
+RP Heam, JC (reprint author), ACP CC 66 2771,61 Rue Taitbout, F-75436 Paris 09, France.
+EM jean-cyprien.heam@acp.banque-france.fr
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Bennett MK, 1995, AFFINE PROJECTIVE GE
+   Blavarg Martin, 2002, SVERIGES RIKSBANK EC, V2, P19
+   Burtschell X., 2009, COMP ANAL CDO UNPUB
+   Degryse H., 2004, 43 WP NAT BANK BELG
+   Demange G., 2012, CONTAGION FINANCIAL
+   Duffie D, 2001, FINANC ANAL J, V57, P41, DOI 10.2469/faj.v57.n1.2418
+   Duffle D., 1999, SIMULATING CORRELATE
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M., 2013, FINANCIAL NETWORKS C
+   Elsinger H, 2009, FINANCIAL NETWORKS C
+   Furfine CH, 1999, 70 BIS
+   Gourieroux C, 2012, CAN J ECON, V45, P1273, DOI 10.1111/j.1540-5982.2012.01750.x
+   GOURIEROUX C, 1980, ECONOMETRICA, V48, P75, DOI 10.2307/1912019
+   Li DX, 2000, J FIXED INCOME, V9, P43, DOI DOI 10.3905/JFI.2000.319253
+   Lubloy A., 2005, KOZGAZDAZAKI SZEMLE, V42, P377
+   MacKenzie D., 2012, FORMULA KILLED UNPUB
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   SCHONBUCHER PJ, 2001, COPULA DEPENDENT DEF
+   Sheldon G., 1998, J MONEY CREDIT BANK, V28, P733
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Vasicek O., 1991, LIMITING LOAN LOSS P
+   WELLS S, 2002, BANK ENGLAND FIN DEC, P175
+   Wired, 2009, WIRED MAGAZINE, P17
+NR 24
+TC 3
+Z9 3
+U1 0
+U2 17
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD DEC
+PY 2013
+VL 37
+IS 12
+SI SI
+BP 5261
+EP 5274
+DI 10.1016/j.jbankfin.2013.04.016
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA 261RV
+UT WOS:000327683200044
+DA 2019-12-27
+ER
+
+PT J
+AU Lee, SH
+AF Lee, Seung Hwan
+TI Systemic liquidity shortages and interbank network structures
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Liquidity shortage; Interbank network; Systemic risk; Knock-on effect
+ID BANKING SYSTEMS; RISK; CONTAGION; MARKET
+AB This paper aims to shed light on the systemic nature of liquidity risk and to propose a method for calculating systemic liquidity shortages. Our method incorporates not only direct liquidity shortages but also indirect liquidity shortages due to the knock-on effects through interbank linkages. We perform a simulation with a simple banking system model and find that a deficit bank can mitigate a liquidity shortage by holding more claims on a surplus bank. Meanwhile, a greater imbalance in liquidity positions across banks tends to aggravate the liquidity shortage of a deficit bank. According to comparative analysis between different types of network structures, a core-periphery network with a deficit money center bank gives rise to the highest level of systemic liquidity shortage, and a banking system becomes more vulnerable to liquidity shocks as its interbank network becomes more ill-matched. (C) 2012 Elsevier B.V. All rights reserved.
+C1 Bank Korea, Seoul 100794, South Korea.
+RP Lee, SH (reprint author), Bank Korea, 39 Namdaemun Ro, Seoul 100794, South Korea.
+EM leecon@bok.or.kr
+CR Aikman D., 2009, 372 BANK ENGL
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   [Anonymous], 2008, 355 BANK ENGL
+   Bhattacharya S, 1987, NEW APPROACHES MONET
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Caballero R., 2012, 15479 NBER
+   Chan-Lau J.A., 2009, ASSESSING SYSTEMIC I
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Craig B., 2010, 322 BIS
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Diamond DW, 2005, J FINANC, V60, P615, DOI 10.1111/j.1540-6261.2005.00741.x
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Fricke D., 2012, KIEL WORKING PAPERS, V1759
+   Gai P., 2010, 383 BANK ENGL
+   Gai P, 2011, J MONETARY ECON, V58, P453, DOI 10.1016/j.jmoneco.2011.05.005
+   International Monetary Fund (IMF), 2010, SYST LIQ RISK IMPR R, p3f
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Mistrulli P. E., 2007, ASSESSING FINANCIAL
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Schweitzer F, 2009, SCIENCE, V325, P422, DOI 10.1126/science.1173644
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+NR 26
+TC 25
+Z9 26
+U1 1
+U2 33
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD APR
+PY 2013
+VL 9
+IS 1
+BP 1
+EP 12
+DI 10.1016/j.jfs.2012.12.001
+PG 12
+WC Business, Finance; Economics
+SC Business & Economics
+GA 101WW
+UT WOS:000315806100001
+DA 2019-12-28
+ER
+
+PT J
+AU Dumontaux, N
+   Pop, A
+AF Dumontaux, Nicolas
+   Pop, Adrian
+TI Understanding the market reaction to shockwaves: Evidence from the
+   failure of Lehman Brothers
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article
+DE Bank failures; Systemic risk; Too-big-to-fail; Contagion; Market
+   discipline; Credit default swap
+ID CREDIT DEFAULT SWAP; CONTAGION; IMPACT; ANNOUNCEMENTS; INFORMATION;
+   RETURNS; BANKS; RISK
+AB The spectacular failure of the 150-year-old investment bank Lehman Brothers on September 15th, 2008 was a major turning point in the global financial crisis that broke out in the summer of 2007. Through the use of stock market data and credit default swap (CDS) spreads, this paper examines investors' reaction to Lehman's collapse in an attempt to identify a spillover effect on the surviving financial institutions. The empirical analysis indicates that (i) the collateral damage was limited to the largest financial firms; (ii) the institutions most affected were the surviving "non-bank" financial services firms; and (iii) the negative effect was correlated with the financial conditions of the surviving institutions. We also detect significant abnormal jumps in CDS spreads that we interpret as evidence of sudden upward revisions in the market assessment of future default probabilities assigned to the surviving financial firms. (c) 2013 Elsevier B.V. All rights reserved.
+C1 [Dumontaux, Nicolas] Banque France, French Prudential Supervis Author, Banking Studies Div, F-75436 Paris 09, France.
+   [Pop, Adrian] Univ Nantes LEMNA, Inst Banking & Finance, F-44322 Nantes 3, France.
+RP Pop, A (reprint author), Univ Nantes LEMNA, Inst Banking & Finance, Chemin Cens Tertre,BP 52231, F-44322 Nantes 3, France.
+EM nicolas.dumontaux@acp.banque-france.fr; adrian.pop@univ-nantes.fr
+CR Acharya VV, 2009, RESTORING FINANCIAL
+   Adrian T., 2009, FEDERAL RESERVE BANK, V15
+   Aharony J, 1996, J BANK FINANC, V20, P57, DOI 10.1016/0378-4266(94)00116-2
+   Aragon GO, 2012, J FINANC ECON, V103, P570, DOI 10.1016/j.jfineco.2011.10.004
+   BCBS, 2011, GLOB SYST IMP BANKS
+   BCBS, 2012, FRAM DEAL DOM SYST I
+   BINDER JJ, 1985, RAND J ECON, V16, P167, DOI 10.2307/2555408
+   Black L., 2013, J FINANCIAL IN PRESS
+   BLAIR RD, 1978, J MONEY CREDIT BANK, V10, P88, DOI 10.2307/1991474
+   Brewer E, 2003, J MONEY CREDIT BANK, V35, P507, DOI 10.1353/mcb.2003.0026
+   BROWN SJ, 1985, J FINANC ECON, V14, P3, DOI 10.1016/0304-405X(85)90042-X
+   Chakrabarty B, 2012, FINANC MANAGE, V41, P318, DOI 10.1111/j.1755-053X.2012.01194.x
+   Cochrane J., 2009, WALL STREET J
+   Collin-Dufresne P, 2010, 15733 NBER
+   CORNELL B, 1986, J BANK FINANC, V10, P55, DOI 10.1016/0378-4266(86)90020-8
+   CORNETT MM, 1990, J FINANC, V45, P95, DOI 10.2307/2328811
+   De Bandt Olivier, 2002, FINANCIAL CRISES CON
+   Docking DS, 1997, J FINANC ECON, V43, P219, DOI 10.1016/S0304-405X(96)00895-1
+   Egginton J., 2010, RISK MANAGEMENT INSU, V13, P225
+   Eichengreen B, 2012, J INT MONEY FINANC, V31, P1299, DOI 10.1016/j.jimonfin.2012.02.002
+   Fernando CS, 2012, J FINANC, V67, P235, DOI 10.1111/j.1540-6261.2011.01711.x
+   Flannery MJ, 2013, J FINANC INTERMED, V22, P55, DOI 10.1016/j.jfi.2012.08.001
+   Flannery MJ, 1998, J MONEY CREDIT BANK, V30, P273, DOI 10.2307/2601102
+   Flannery MJ, 2004, J FINANC ECON, V71, P419, DOI 10.1016/S0304-405X(03)00185-5
+   Fratianni M, 2013, J FINANC STABIL, V9, P69, DOI 10.1016/j.jfs.2013.01.004
+   Helwege J, 2010, J INT FINANC MARK I, V20, P1, DOI 10.1016/j.intfin.2009.11.002
+   Hull J, 2004, J BANK FINANC, V28, P2789, DOI 10.1016/j.jbankfin.2004.06.010
+   Ivashina V, 2010, J FINANC ECON, V97, P319, DOI 10.1016/j.jfineco.2009.12.001
+   Jones JS, 2012, J FINANC INTERMED, V21, P383, DOI 10.1016/j.jfi.2012.01.004
+   Jorion P, 2007, J FINANC ECON, V84, P860, DOI 10.1016/j.jfineco.2006.06.001
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   KARAFIATH I, 1991, J BANK FINANC, V15, P699, DOI 10.1016/0378-4266(91)90093-2
+   Kaufman G. G., 1994, J FINANCIAL SERVICES, V8, P123, DOI DOI 10.1007/BF01053812
+   Kaufman G. G., 2003, INDEP REV, V7, P371
+   Kaufman George G., 2000, FINANCIAL MARKETS I, V9, P69, DOI DOI 10.1111/1468-0416.00036
+   KOEHN M, 1980, J FINANC, V35, P1235, DOI 10.2307/2327096
+   Kovner A, 2012, J FINANC INTERMED, V21, P507, DOI 10.1016/j.jfi.2012.01.001
+   LANG LHP, 1992, J FINANC ECON, V32, P45, DOI 10.1016/0304-405X(92)90024-R
+   Mishkin FS, 2011, J ECON PERSPECT, V25, P49, DOI 10.1257/jep.25.1.49
+   Morgan DP, 2002, AM ECON REV, V92, P874, DOI 10.1257/00028280260344506
+   Norden L, 2004, J BANK FINANC, V28, P2813, DOI 10.1016/j.jbankfin.2004.06.011
+   OHARA M, 1990, J FINANC, V45, P1587, DOI 10.2307/2328751
+   PEAVY JW, 1988, J BANK FINANC, V12, P141, DOI 10.1016/0378-4266(88)90055-6
+   Pop A, 2009, Q REV ECON FINANC, V49, P1429, DOI 10.1016/j.qref.2009.08.001
+   Portes R., 2008, FINANCIAL TIMES
+   Raddatz C., 2010, 5203 WORLD BANK
+   Rogoff K., 2008, FINANCIAL TIMES
+   SCHIPPER K, 1983, J ACCOUNTING RES, V21, P184, DOI 10.2307/2490943
+   SCHWERT GW, 1981, J LAW ECON, V24, P121, DOI 10.1086/466977
+   Slovin MB, 1999, J FINANC ECON, V54, P197, DOI 10.1016/S0304-405X(99)00036-7
+   SWARY I, 1986, J BUS, V59, P451, DOI 10.1086/296347
+   Taylor J., 2009, ENDING GOVT BAILOUTS
+   Taylor J. B., 2009, FINANCIAL CRISIS POL
+   Veronesi P, 2010, J FINANC ECON, V97, P339, DOI 10.1016/j.jfineco.2010.03.011
+   WALL LD, 1990, J MONETARY ECON, V26, P77, DOI 10.1016/0304-3932(90)90032-Y
+   Wilson L, 2012, J FINANC STABIL, V8, P32, DOI 10.1016/j.jfs.2011.02.002
+   ZELLNER A, 1962, J AM STAT ASSOC, V57, P348, DOI 10.2307/2281644
+   Zhang S., 2013, J FINANCIAL IN PRESS
+NR 58
+TC 8
+Z9 8
+U1 0
+U2 28
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD SEP
+PY 2013
+VL 9
+IS 3
+BP 269
+EP 286
+DI 10.1016/j.jfs.2013.04.001
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA 213GD
+UT WOS:000324042400003
+DA 2019-12-28
+ER

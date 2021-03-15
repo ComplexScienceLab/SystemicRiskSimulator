@@ -1,0 +1,397 @@
+
+PT J
+AU Berndt, A
+   Obreja, I
+AF Berndt, Antje
+   Obreja, Iulian
+TI Decomposing European CDS Returns
+SO REVIEW OF FINANCE
+LA English
+DT Article
+DE G12; G13; G15
+ID CREDIT DEFAULT SWAPS; FINANCIAL RATIOS; RISK; DETERMINANTS; EQUITY;
+   PREDICTION; LIQUIDITY; PRICES
+AB Nearly half of the variation in European CDS returns is captured by a novel factor that mimics economic catastrophe risk. During the financial crisis of 2007-8, this factor became more important relative to other sources of risk, leading to a shift in the correlation structure of CDS returns. Using equivalent CDS and equity portfolios, we show that while crucial for explaining temporal and cross-sectional variation in CDS returns, the factor plays a lesser role for equity. This is likely due to the limited sensitivity of the equity value at default to whether the event is of systemic or idiosyncratic nature.
+C1 [Berndt, Antje] Carnegie Mellon Univ, Tepper Sch Business, Pittsburgh, PA 15213 USA.
+   [Obreja, Iulian] Univ Colorado, Leeds Sch Business, Boulder, CO 80309 USA.
+RP Berndt, A (reprint author), Carnegie Mellon Univ, Tepper Sch Business, Pittsburgh, PA 15213 USA.
+CR Abid F, 2006, INT J THEOR APPL FIN, V9, P23, DOI 10.1142/S0219024906003445
+   Acharya VV, 2007, J FINANC ECON, V84, P110, DOI 10.1016/j.jfineco.2006.05.003
+   Alexander C, 2008, J BANK FINANC, V32, P1008, DOI 10.1016/j.jbankfin.2007.08.002
+   ALTMAN EI, 1968, J FINANC, V23, P589, DOI 10.2307/2978933
+   ANDERSON TW, 1952, ANN MATH STAT, V23, P193, DOI 10.1214/aoms/1177729437
+   Ang A, 2006, J FINANC, V61, P259, DOI 10.1111/j.1540-6261.2006.00836.x
+   Annaert J., 2000, MODELLING EUROPEAN C
+   Annaert J., 2006, EUROPEAN J FINANCE, V12, P23
+   Avramov D, 2009, J FINANC MARK, V12, P469, DOI 10.1016/j.finmar.2009.01.005
+   Berndt A, 2007, STOCH PROC APPL, V117, P1724, DOI 10.1016/j.spa.2007.01.013
+   Bhansali V, 2008, FINANC ANAL J, V64, P16, DOI 10.2469/faj.v64.n4.2
+   Blanco R, 2005, J FINANC, V60, P2255, DOI 10.1111/j.1540-6261.2005.00798.x
+   BONGAERTS D, 2008, LIQUIDITY LIQU UNPUB
+   BOSS M, 2002, BIS PAPERS, V12, P181
+   BREEDEN DT, 1989, J FINANC, V44, P231, DOI 10.2307/2328589
+   Bystrom H, 2006, FINANC ANAL J, V62, P65, DOI 10.2469/faj.v62.n6.4354
+   Bystrom H, 2008, CH CRC FINANC MATH, P69
+   Campbell JY, 2008, J FINANC, V63, P2899, DOI 10.1111/j.1540-6261.2008.01416.x
+   CASTAGNETTI C, 2008, EUROCORPORATE UNPUB
+   Collin-Dufresne P, 2001, J FINANC, V56, P2177, DOI 10.1111/0022-1082.00402
+   Coval JD, 2009, AM ECON REV, V99, P628, DOI 10.1257/aer.99.3.628
+   Dichev ID, 1998, J FINANC, V53, P1131, DOI 10.1111/0022-1082.00046
+   Dullmann K, 2007, FINANC MARK PORTFOLI, V21, P269, DOI 10.1007/s11408-007-0053-7
+   Ericsson J, 2006, J FINANC, V61, P2219, DOI 10.1111/j.1540-6261.2006.01056.x
+   Ericsson J, 2009, J FINANC QUANT ANAL, V44, P109, DOI 10.1017/S0022109009090061
+   FAMA EF, 1993, J FINANC ECON, V33, P3, DOI 10.1016/0304-405X(93)90023-5
+   Garlappi L, 2008, REV FINANC STUD, V21, P2743, DOI 10.1093/rfs/hhl044
+   GIBSON M, 2004, UNDERSTANDING UNPUB
+   Griffin JM, 2002, J FINANC, V57, P2317, DOI 10.1111/1540-6261.00497
+   KARLSON E, 2008, EXAMINING DETE UNPUB
+   Kiesel R., 2003, J RISK, V6, P1
+   LEWELLEN J, 2008, J FINANCIAL IN PRESS
+   Longstaff FA, 2005, J FINANC, V60, P2213, DOI 10.1111/j.1540-6261.2005.00797.x
+   Longstaff FA, 2008, J FINANC, V63, P529, DOI 10.1111/j.1540-6261.2008.01330.x
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   OHLSON JA, 1980, J ACCOUNTING RES, V18, P109, DOI 10.2307/2490395
+   Schaefer SM, 2008, J FINANC ECON, V90, P1, DOI 10.1016/j.jfineco.2007.10.006
+   STEPHENS MA, 1974, J AM STAT ASSOC, V69, P730, DOI 10.2307/2286009
+   VANLANDSCHOOT A, 2004, DETERMINANTS E UNPUB
+   Vassalou M, 2004, J FINANC, V59, P831, DOI 10.1111/j.1540-6261.2004.00650.x
+   YAN H, 2007, LIQUIDITY CRED UNPUB
+   ZHOU X, 2007, INFORM LIQUIDI UNPUB
+NR 42
+TC 47
+Z9 47
+U1 0
+U2 10
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 1572-3097
+EI 1573-692X
+J9 REV FINANC
+JI Rev. Financ.
+PD APR
+PY 2010
+VL 14
+IS 2
+BP 189
+EP 233
+DI 10.1093/rof/rfq004
+PG 45
+WC Business, Finance; Economics
+SC Business & Economics
+GA 584IQ
+UT WOS:000276745500001
+DA 2019-12-28
+ER
+
+PT J
+AU Grody, AD
+AF Grody, Allan D.
+TI Observations on the new US financial regulation challenges to the
+   financial sector: data standardization, straight-through-processing and
+   operational risks
+SO JOURNAL OF OPERATIONAL RISK
+LA English
+DT Article
+AB This paper looks at the post Dodd-Frank environment wherein the financial industry engages with governments to identify systemic risk by first addressing the underlying operational risks of data inconsistencies across the industry. The regulation has provided the impetus for the industry to come together, as other industries have, to solve this problem through global collaboration. We explore other global industries' successes as a benchmark for what the financial industry needs to do. The benefit to the industry of lowered systemic risk, reduced operational risk in each financial institution, and lowered costs to all are the motivation for achieving a degree of data standardization to realize the vision of straight-through-processing across the entire industry. The singular attempt by a sovereign government, even as large as the market the US regulators oversee, will not be sufficient to solve this problem nor observe the consequences of the operational risks of faulty data as it cascades into systemic risk. This is truly a global issue best resolved by global financial institutions who alone transcend these silo regulators fiefdoms, and in whose name the objective of systemic risk mitigation is being undertaken.
+C1 Financial Intergrp Holdings Ltd, New York, NY 10021 USA.
+RP Grody, AD (reprint author), Financial Intergrp Holdings Ltd, 169 E 69th St,18th Floor, New York, NY 10021 USA.
+EM agrody@FinancialInterGroup.com
+NR 0
+TC 0
+Z9 0
+U1 1
+U2 4
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1744-6740
+J9 J OPER RISK
+JI J. Oper. Risk.
+PD FAL
+PY 2010
+VL 5
+IS 3
+BP 23
+EP 27
+DI 10.21314/JOP.2010.081
+PG 5
+WC Business, Finance
+SC Business & Economics
+GA 812PC
+UT WOS:000294304400003
+DA 2019-12-28
+ER
+
+PT J
+AU Gai, P
+   Kapadia, S
+AF Gai, Prasanna
+   Kapadia, Sujit
+TI Contagion in financial networks
+SO PROCEEDINGS OF THE ROYAL SOCIETY A-MATHEMATICAL PHYSICAL AND ENGINEERING
+   SCIENCES
+LA English
+DT Article
+DE contagion; network models; systemic risk; liquidity risk; financial
+   crises
+ID SYSTEMIC RISK; INTERBANK MARKET; COMPLEX NETWORKS; CREDIT CONTAGION;
+   SIMPLE-MODEL; LIQUIDITY; PERCOLATION; DIFFUSION; EXPOSURES; TOPOLOGY
+AB This paper develops an analytical model of contagion in financial networks with arbitrary structure. We explore how the probability and potential impact of contagion is influenced by aggregate and idiosyncratic shocks, changes in network structure and asset market liquidity. Our findings suggest that financial systems exhibit a robust-yet-fragile tendency: while the probability of contagion may be low, the effects can be extremely widespread when problems occur. And we suggest why the resilience of the system in withstanding fairly large shocks prior to 2007 should not have been taken as a reliable guide to its future robustness.
+C1 [Gai, Prasanna; Kapadia, Sujit] Bank England, London EC2R 8AH, England.
+   [Gai, Prasanna] Australian Natl Univ, Crawford Sch Econ & Govt, Canberra, ACT 0200, Australia.
+RP Kapadia, S (reprint author), Bank England, London EC2R 8AH, England.
+EM sujit.kapadia@bankofengland.co.uk
+RI Gai, Prasanna/R-2911-2019
+OI Gai, Prasanna/0000-0002-1664-3946
+CR Albert R, 2000, NATURE, V406, P378, DOI 10.1038/35019019
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Allen F., 2009, NETWORK CHALLENGE ST
+   Anderson R. M., 1991, INFECT DIS HUMANS DY
+   Angelini P, 1996, J BANK FINANC, V20, P853, DOI 10.1016/0378-4266(95)00029-1
+   *BANK ENGL, 2007, 21 BANK ENGL
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brusco S, 2007, J FINANC, V62, P2275, DOI 10.1111/j.1540-6261.2007.01275.x
+   Callaway DS, 2000, PHYS REV LETT, V85, P5468, DOI 10.1103/PhysRevLett.85.5468
+   Calvo GA, 2000, J INT ECON, V51, P79, DOI 10.1016/S0022-1996(99)00038-0
+   Castiglionesi F., 2007, 2007100 TILB U
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cossin D, 2007, MANAGE SCI, V53, P1604, DOI 10.1287/mnsc.1070.0715
+   CRAIG B, INTERBANK T IN PRESS
+   DAVIS M, 2001, MASTERING RISK VOLUM, V2
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Egloff D, 2007, J BANK FINANC, V31, P2475, DOI 10.1016/j.jbankfin.2006.10.023
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   FELD SL, 1991, AM J SOCIOL, V96, P1464, DOI 10.1086/229693
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Frey  R., 2003, INTERACTING DEFAULTS
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Gale DM, 2007, AM ECON REV, V97, P99, DOI 10.1257/aer.97.2.99
+   Galeotti A, 2009, RAND J ECON, V40, P509, DOI 10.1111/j.1756-2171.2009.00075.x
+   Giesecke K, 2004, J BANK FINANC, V28, P3009, DOI 10.1016/j.jbankfin.2003.11.002
+   Giesecke K, 2004, J BANK FINANC, V28, P1521, DOI 10.1016/S0378-4266(03)00129-8
+   Grimmett G., 1986, PROBABILITY INTRO
+   Haldane A, 2009, COMMUNICATION    APR
+   Iori G, 2006, J ECON BEHAV ORGAN, V61, P525, DOI 10.1016/j.jebo.2004.07.018
+   Jackson MO, 2007, AM ECON REV, V97, P92, DOI 10.1257/aer.97.2.92
+   JACKSON MO, 2007, BE J THEOR ECON, V7, P1
+   JAMES C, 1991, J FINANC, V46, P1223, DOI 10.2307/2328857
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Kyle AS, 2001, J FINANC, V56, P1401, DOI 10.1111/0022-1082.00373
+   Leitner Y, 2005, J FINANC, V60, P2925, DOI 10.1111/j.1540-6261.2005.00821.x
+   May RM, 2008, NATURE, V451, P893, DOI 10.1038/451893a
+   May RM, 2010, J R SOC INTERFACE, V7, P823, DOI 10.1098/rsif.2009.0359
+   Meyers LA, 2007, B AM MATH SOC, V44, P63
+   MISTRULLI P, 2007, 641 BANK IT
+   Mistrulli P.E., 2005, INTERBANK LENDING PA
+   Morris S, 2000, REV ECON STUD, V67, P57, DOI 10.1111/1467-937X.00121
+   Newman MEJ, 2002, PHYS REV E, V66, DOI 10.1103/PhysRevE.66.016128
+   Newman MEJ, 2001, PHYS REV E, V64, DOI 10.1103/PhysRevE.64.026118
+   NEWMAN MEJ, 2003, HDB GRAPHS NETWORKS
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Rajan R.G., 2005, P FED RES BANK KANS
+   Schnabel I, 2004, J EUR ECON ASSOC, V2, P929, DOI 10.1162/1542476042813887
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Strogatz SH, 2001, NATURE, V410, P268, DOI 10.1038/35065725
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Upper Christian, 2007, 234 BANK INT SETTL
+   VANLELYVELD I, 2006, INT J CENT BANK, V2, P99
+   Watts DJ, 2002, P NATL ACAD SCI USA, V99, P5766, DOI 10.1073/pnas.082090499
+   Wells S., 2004, 230 BANK ENGL
+   Wilf H.S., 1994, GENERATING FUNCTIONO
+NR 57
+TC 320
+Z9 336
+U1 8
+U2 114
+PU ROYAL SOC
+PI LONDON
+PA 6-9 CARLTON HOUSE TERRACE, LONDON SW1Y 5AG, ENGLAND
+SN 1364-5021
+EI 1471-2946
+J9 P ROY SOC A-MATH PHY
+JI Proc. R. Soc. A-Math. Phys. Eng. Sci.
+PD AUG 8
+PY 2010
+VL 466
+IS 2120
+BP 2401
+EP 2423
+DI 10.1098/rspa.2009.0410
+PG 23
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA 616UY
+UT WOS:000279236900012
+OA Bronze
+DA 2019-12-27
+ER
+
+PT J
+AU Khandani, AE
+   Kim, AJ
+   Lo, AW
+AF Khandani, Amir E.
+   Kim, Adlar J.
+   Lo, Andrew W.
+TI Consumer credit-risk models via machine-learning algorithms
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Household behavior; Consumer credit risk; Credit card borrowing; Machine
+   learning; Nonparametric estimation
+ID SUPPORT VECTOR MACHINES; BANKRUPTCY PREDICTION; BUSINESS CREDIT;
+   NEURAL-NETWORKS; BANKING; DEBIT
+AB We apply machine-learning techniques to construct nonlinear nonparametric forecasting models of consumer credit risk. By combining customer transactions and credit bureau data from January 2005 to April 2009 for a sample of a major commercial bank's customers, we are able to construct out-of-sample forecasts that significantly improve the classification rates of credit-card-holder delinquencies and defaults, with linear regression R-2's of forecasted/realized delinquencies of 85%. Using conservative assumptions for the costs and benefits of cutting credit lines based on machine-learning forecasts, we estimate the cost savings to range from 6% to 25% of total losses. Moreover, the time-series patterns of estimated delinquency rates from this model over the course of the recent financial crisis suggest that aggregated consumer credit-risk analytics may have important applications in forecasting systemic risk. (C) 2010 Elsevier B.V. All rights reserved.
+C1 [Lo, Andrew W.] MIT, Sloan Sch Management, Cambridge, MA 02139 USA.
+   MIT, Lab Financial Engn, Cambridge, MA 02139 USA.
+RP Lo, AW (reprint author), MIT, Sloan Sch Management, Cambridge, MA 02139 USA.
+EM khandani@mit.edu; jwkim@csail.mit.edu; alo@mit.edu
+CR AGARWAL S, 2009, 1440334 SSRN
+   Atiya AF, 2001, IEEE T NEURAL NETWOR, V12, P929, DOI 10.1109/72.935101
+   AVERY R, 2003, FEDERAL RESERVE B
+   Avery RB, 2004, J BANK FINANC, V28, P835, DOI 10.1016/j.jbankfin.2003.10.009
+   Bellotti T, 2009, EXPERT SYST APPL, V36, P3302, DOI 10.1016/j.eswa.2008.01.005
+   Bishop C. M., 2006, PATTERN RECOGNITION
+   Boot AWA, 2000, J FINANC INTERMED, V9, P7, DOI 10.1006/jfin.2000.0282
+   Breiman L, 1984, CLASSIFICATION REGRE
+   Buyukkarabacak B, 2010, J BANK FINANC, V34, P1247, DOI 10.1016/j.jbankfin.2009.11.022
+   Categorical A., 1998, MACH LEARN, V30, P271, DOI DOI 10.1023/A:1017181826899
+   Drehmann M, 2010, J BANK FINANC, V34, P713, DOI 10.1016/j.jbankfin.2009.06.009
+   DUDA R. O, 2000, PATTERN CLASSIFICATI
+   Dwyer DW, 2006, J BANK FINANC, V30, P797, DOI 10.1016/j.jbankfin.2005.11.001
+   Foster DP, 2004, J AM STAT ASSOC, V99, P303, DOI 10.1198/016214504000000287
+   Freund Y., 1996, P 13 INT C MACH LEAR, P148, DOI DOI 10.4236/IIM.2010.26047
+   Galindo J., 2000, Computational Economics, V15, P107, DOI 10.1023/A:1008699112516
+   Han L, 2009, J BANK FINANC, V33, P415, DOI 10.1016/j.jbankfin.2008.08.014
+   Hand DJ, 1997, J R STAT SOC A STAT, V160, P523
+   HUANG C, 2006, EXPERT SYSTEMS APPL, V33, P847
+   Huang Z, 2004, DECIS SUPPORT SYST, V37, P543, DOI 10.1016/S0167-9236(03)00086-1
+   LANDIS JR, 1977, BIOMETRICS, V33, P159, DOI 10.2307/2529310
+   Li ST, 2006, EXPERT SYST APPL, V30, P772, DOI 10.1016/j.eswa.2005.07.041
+   Martens D, 2007, EUR J OPER RES, V183, P1466, DOI 10.1016/j.ejor.2006.04.051
+   Min JH, 2005, EXPERT SYST APPL, V28, P603, DOI 10.1016/j.eswa.2004.12.008
+   Ong CS, 2005, EXPERT SYST APPL, V29, P41, DOI 10.1016/j.eswa.2005.01.003
+   Perignon C, 2010, J BANK FINANC, V34, P362, DOI 10.1016/j.jbankfin.2009.08.009
+   Scholnick B, 2008, J BANK FINANC, V32, P1468, DOI 10.1016/j.jbankfin.2007.05.001
+   Shin KS, 2005, EXPERT SYST APPL, V28, P127, DOI 10.1016/j.eswa.2004.08.009
+   Simon J, 2010, J BANK FINANC, V34, P1759, DOI 10.1016/j.jbankfin.2010.02.001
+   Stein RM, 2005, J BANK FINANC, V29, P1213, DOI 10.1016/j.jbankfin.2004.04.008
+   Thomas L. C., 2009, CONSUMER CREDIT MODE
+   Vapnik V., 1998, STAT LEARNING THEORY
+   Zinman J, 2009, J BANK FINANC, V33, P358, DOI 10.1016/j.jbankfin.2008.08.009
+NR 33
+TC 92
+Z9 93
+U1 9
+U2 71
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD NOV
+PY 2010
+VL 34
+IS 11
+BP 2767
+EP 2787
+DI 10.1016/j.jbankfin.2010.06.001
+PG 21
+WC Business, Finance; Economics
+SC Business & Economics
+GA 652EZ
+UT WOS:000281986300016
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU Semmler, W
+   Young, B
+AF Semmler, Willi
+   Young, Brigitte
+TI Lost in temptation of risk: Financial market liberalization, financial
+   market meltdown and regulatory reforms
+SO COMPARATIVE EUROPEAN POLITICS
+LA English
+DT Article
+DE capital market liberalization; complex securities; macroeconomic
+   environment; boom-bust cycle; asset bubbles; regulatory responses
+AB The current meltdown of the financial markets in the United States, which triggered worldwide financial crisis and staggering declines in global growth rates, challenges the assumptions of fast capital market liberalization (CML). Whereas the discussion in previous years has concentrated on the benefits of financial market liberalization, the focus has now shifted to the cost of fast and excessive financial liberalization. In contrast to the theory of perfect capital markets, the article starts from the more realistic assumption of imperfect capital markets. We deal with the benefits but also the potential shortcomings of CML. Too-fast liberalized capital markets, with risk assessments solely left to the market, can trigger boom-bust cycles, the busts precipitated by financial instability, entailing contagion effects and strong negative effects on the real side of the economy. The financial meltdown has created not only new challenges for the central banks around the globe, but has also produced initiatives on new financial regulations. We discuss here the most important recommendations put forward by the G20, the United States, United Kingdom and EU policy proposals for the financial market reforms triggered by the recent financial market meltdown. No final verdict is possible at this time, since the proposals and recommendations issued by the various bodies have to go through the political process. Nevertheless, the regulatory policy fragmentation is already evident between a more liberal position and its tendency to rely more on market modes of coordination and a interventionist position that has more trust in non-market coordination. The challenge for the multilevel governance system of finance is to find a way to regulate without refragmentation both at the European and the global level. Comparative European Politics (2010) 8, 327-353. doi:10.1057/cep.2010.10
+C1 [Semmler, Willi] New Sch, Dept Econ, New York, NY 10003 USA.
+   [Young, Brigitte] Univ Munster, Inst Polit Sci, D-48151 Munster, Germany.
+RP Semmler, W (reprint author), New Sch, Dept Econ, 79 5th Ave,Suite 1100, New York, NY 10003 USA.
+CR AYUSO J, 2006, DOCUMENTOS TRABACHO, V9
+   BARBER T, 2009, FINANCIAL TIMES 0326, P1
+   Bernanke B, 2004, 48 FED RES BOARD
+   CECHETTI SG, 2000, GENEVA REPORTS WORLD, V2
+   Commission of Experts on Reforms of the International Monetary and Financial System, 2009, COMM EXP REF INT MON
+   *COUNC FOR REL, 2002, BUILD TRANS SEC MARK
+   De Larosiere J., 2009, HIGH LEVEL GROUP FIN
+   Financial Services Authority, 2009, TURN REV
+   Greenspan A., 2008, AGE TURBULENCE
+   *GROUP 20, 2009, ENH SOUND REG STRENG
+   HALL A, 2001, VARIETIES CAPITALISM
+   Helleiner E, 2009, NEW POLIT ECON, V14, P275, DOI 10.1080/13563460902826021
+   Hudson N, 2006, HARPERS MAGAZINE MAY
+   LANNOO K, 2008, ITS HIGH TIME CREATE
+   LANNOO K, 2009, WHATS NEXT LONDON G
+   LUCE E, 2009, FINANCIAL TIMES 0618
+   LUTZ S, 2002, STAAT GLOBALISIERUNG
+   MacAvoy P. W., 2004, RECURRENT CRISIS COR
+   Minsky H, 1982, CAN IT HAPPEN AGAIN
+   Minsky H.P., 1975, JM KEYNES
+   Minsky H. P., 1986, STABILIZING UNSTABLE
+   MISHKIN F, 2009, FINANCIAL TIMES 0623
+   MONTGOMERIE J, 2010, HOME IS HARDSH UNPUB
+   MUGGE D, 2008, THESIS U AMSTERDAM
+   Padoa-Schioppa T, 2004, EURO ITS CENTRAL BAN
+   Plender J., 2009, FINANCIAL TIMES 0622, P5
+   SEMMLER W, 2006, MONETARY FISCAL POLI
+   SEMMLER W, 2002, ASSET PRICE BUBBLES
+   SEMMLER W, 2009, ECON POLIT WEEKLY, V44, P133
+   Semmler W., 2006, ASSET PRICES BOOMS R
+   Semmler Willi, 2009, BOOM BUST CYCLES LEV
+   Shiller RJ, 2007, LOW INTEREST RATES H
+   SHILLER RJ, 1991, MARKET VOLATILITY
+   Shiller Robert J, 2001, IRRATIONAL EXUBERANC
+   Smaghi LB, 2009, INT FINANC, V12, P93, DOI 10.1111/j.1468-2362.2009.01238.x
+   Stiglitz Joseph, 2006, STABILITY GROWTH
+   TETT G, 2009, FINANCIAL TIMES 0626, P23
+   Tobin J, 1980, ASSET ACCUMULATION E
+   United States of America Department of the Treasury, 2009, FIN REG REF NEW FDN
+   VERON N, 2008, CESIFO FORUM, P51
+   2009, FINANCIAL TIMES 0619, P2
+   2009, FINANCIAL TIMES 0618, P3
+   2009, FINANCIAL TIMES 0325, P2
+   2009, FINANCIAL TIMES 0603, P1
+NR 44
+TC 11
+Z9 11
+U1 1
+U2 16
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1472-4790
+J9 COMP EUR POLIT
+JI Comp. Eur. Polit.
+PD SEP
+PY 2010
+VL 8
+IS 3
+BP 327
+EP 353
+DI 10.1057/cep.2010.10
+PG 27
+WC Political Science
+SC Government & Law
+GA 688ZA
+UT WOS:000284894900003
+DA 2019-12-27
+ER

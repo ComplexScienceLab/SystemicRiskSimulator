@@ -1,0 +1,444 @@
+
+PT J
+AU Tsai, IC
+AF Tsai, I-Chun
+TI Interregional correlations in the US housing market at three price tiers
+SO ANNALS OF REGIONAL SCIENCE
+LA English
+DT Article
+DE R10; R30
+ID LONG-RUN RELATIONSHIPS; CONVERGENCE; SPILLOVERS; COMOVEMENT; DIFFUSION
+AB The goal of this paper is to observe the interregional correlations in the housing market at three price tiers (low, middle, and high) and examine differences in ripple effects at each housing price tier and the factors that influence these effects in each tier. Ripple effects in housing prices of 10 major metropolitan areas in the USA between January 1993 and March 2016 are examined, and this study finds that intercity ripple effects are larger in lower-cost houses. In addition, ripple effects continue to increase after February 2015 only for the low-tier sample. This indicates that intercity systemic risk is currently highest for low-tier houses. Further estimations reveal that money supply is the most crucial variable for determining the level of systemic risk. However, because high-price-tier properties are prone to disposition effects when house prices fall, ripple effects tend to drop sharply during housing market downturns, except for during the subprime mortgage crisis.
+C1 [Tsai, I-Chun] Natl Univ Kaohsiung, Dept Finance, 700 Kaohsiung Univ Rd, Kaohsiung 811, Taiwan.
+RP Tsai, IC (reprint author), Natl Univ Kaohsiung, Dept Finance, 700 Kaohsiung Univ Rd, Kaohsiung 811, Taiwan.
+EM ictsai@nuk.edu.tw
+RI Tsai, I-Chun/H-6503-2018
+OI Tsai, I-Chun/0000-0001-8277-2327
+FU Ministry of Science and Technology of TaiwanMinistry of Science and
+   Technology, Taiwan [MOST-107-2410-H-390-016-MY3]
+FX I am immensely grateful to Professor Euijune Kim (Editor) and the two
+   anonymous referees for the constructive comments of this paper. Funding
+   from the Ministry of Science and Technology of Taiwan under Project No.
+   MOST-107-2410-H-390-016-MY3 has enabled the continuation of this
+   research and the dissemination of these results.
+CR Brady RR, 2014, REG SCI URBAN ECON, V46, P150, DOI 10.1016/j.regsciurbeco.2014.04.003
+   Canarella G, 2012, URBAN STUD, V49, P757, DOI 10.1177/0042098011404935
+   Chiang MC, 2016, ANN REGIONAL SCI, V56, P55, DOI 10.1007/s00168-015-0718-5
+   Cohen JP, 2016, J HOUS ECON, V31, P1, DOI 10.1016/j.jhe.2015.10.006
+   Cook S, 2003, URBAN STUD, V40, P2285, DOI 10.1080/0042098032000123295
+   Cook S, 2016, URBAN STUD, V53, P3048, DOI 10.1177/0042098015610482
+   Cook S, 2005, INT REV APPL ECON, V19, P107, DOI 10.1080/0269217042000312632
+   Cotter J, 2011, WORKING PAPER, DOI [10.2139/ssrn.1945975, DOI 10.2139/SSRN.1945975]
+   Diebold FX, 2012, INT J FORECASTING, V28, P57, DOI 10.1016/j.ijforecast.2011.02.006
+   Diebold FX, 2009, ECON J, V119, P158, DOI 10.1111/j.1468-0297.2008.02208.x
+   DRAKE L, 1995, REG STUD, V29, P357, DOI 10.1080/00343409512331349023
+   Fereidouni HG, 2016, REG STUD, V50, P657, DOI 10.1080/00343404.2014.928408
+   Flor MA, 2017, J ECON DYN CONTROL, V77, P134, DOI 10.1016/j.jedc.2017.02.001
+   Gupta R, 2012, ANN REGIONAL SCI, V48, P763, DOI 10.1007/s00168-010-0416-2
+   Gupta R, 2012, J REAL ESTATE FINANC, V44, P339, DOI 10.1007/s11146-010-9234-7
+   Gupta R, 2010, ECON MODEL, V27, P315, DOI 10.1016/j.econmod.2009.09.011
+   Helgers R, 2016, SPAT ECON ANAL, V11, P92, DOI 10.1080/17421772.2016.1102961
+   Holmes M. J., 2007, J EC SOCIAL RES, V9, P1
+   Holmes MJ, 2008, URBAN STUD, V45, P1531, DOI 10.1177/0042098008091489
+   Iacoviello M, 2010, AM ECON J-MACROECON, V2, P125, DOI 10.1257/mac.2.2.125
+   Kallberg JG, 2014, REAL ESTATE ECON, V42, P71, DOI 10.1111/1540-6229.12022
+   Kuethe TH, 2011, REG STUD, V45, P563, DOI 10.1080/00343400903497897
+   Lui HK, 2011, J HOUS ECON, V20, P15, DOI 10.1016/j.jhe.2010.11.001
+   MACDONALD R, 1993, SCOT J POLIT ECON, V40, P43, DOI 10.1111/j.1467-9485.1993.tb00636.x
+   Meen G, 1999, HOUSING STUD, V14, P733, DOI 10.1080/02673039982524
+   Miao H, 2011, REAL ESTATE ECON, V39, P701, DOI 10.1111/j.1540-6229.2010.00303.x
+   Pijnenburg K, 2017, URBAN STUD, V54, P466, DOI 10.1177/0042098015606595
+   Pollakowski H.O., 1997, J HOUS RES, V8, P107
+   Tsai IC, 2018, ANN REGIONAL SCI, V61, P351, DOI 10.1007/s00168-018-0870-9
+   Tsai IC, 2013, ECON MODEL, V31, P405, DOI 10.1016/j.econmod.2012.12.012
+   Turner TM, 2009, J REGIONAL SCI, V49, P1, DOI 10.1111/j.1467-9787.2008.00589.x
+   Wu YL, 2017, INT J STRATEG PROP M, V21, P225, DOI 10.3846/1648715X.2016.1254120
+   Zhou WX, 2006, PHYSICA A, V361, P297, DOI 10.1016/j.physa.2005.06.098
+NR 33
+TC 0
+Z9 0
+U1 4
+U2 4
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0570-1864
+EI 1432-0592
+J9 ANN REGIONAL SCI
+JI Ann. Reg. Sci.
+PD AUG
+PY 2019
+VL 63
+IS 1
+BP 1
+EP 24
+DI 10.1007/s00168-019-00916-z
+PG 24
+WC Economics; Environmental Studies; Geography; Regional & Urban Planning
+SC Business & Economics; Environmental Sciences & Ecology; Geography;
+   Public Administration
+GA IU6KX
+UT WOS:000483696300001
+DA 2019-12-28
+ER
+
+PT J
+AU Novales, A
+   Chamizo, A
+AF Novales, Alfonso
+   Chamizo, Alvaro
+TI Splitting Credit Risk into Systemic, Sectorial and Idiosyncratic
+   Components
+SO JOURNAL OF RISK AND FINANCIAL MANAGEMENT
+LA English
+DT Article
+DE systemic risk; sectorial risk; idiosyncratic risk; hedging; global risk
+   factor
+ID IMPLIED CORRELATION; SOVEREIGN; INDEXES; SPREAD; EQUITY
+AB We provide a methodology to estimate a global credit risk factor from credit default swap (CDS) spreads that can be very useful for risk management. The global risk factor (GRF) reproduces quite well the different episodes that have affected the credit market over the sample period. It is highly correlated with standard credit indices, but it contains much higher explanatory power for fluctuations in CDS spreads across sectors than the credit indices themselves. The additional information content over iTraxx seems to be related to some financial interest rates. We first use the estimated GRF to analyze the extent to which the eleven sectors we consider are systemic. After that, we use it to split the credit risk of individual firms into systemic, sectorial, and idiosyncratic components, and we perform some analyses to test that the estimated idiosyncratic components are actually firm-specific. The systemic and sectorial components explain around 65% of credit risk in the European industrial and financial sectors and 50% in the North American sectors, while 35% and 50% of risk, respectively, is of an idiosyncratic nature. Thus, there is a significant margin for portfolio diversification. We also show that our decomposition allows us to identify those firms whose credit would be harder to hedge. We end up analyzing the relationship between the estimated components of risk and some synthetic risk factors, in order to learn about the different nature of the credit risk components.
+C1 [Novales, Alfonso] Univ Complutense, Fac Ciencias Econom & Empresariales, ICAE, Campus Somosaguas, Madrid 28223, Spain.
+   [Novales, Alfonso] Univ Complutense, Fac Ciencias Econom & Empresariales, Dept Anal Econ, Campus Somosaguas, Madrid 28223, Spain.
+   [Chamizo, Alvaro] BBVA, Ciudad BBVA Calle Azul 4, Madrid 428050, Spain.
+RP Novales, A (reprint author), Univ Complutense, Fac Ciencias Econom & Empresariales, ICAE, Campus Somosaguas, Madrid 28223, Spain.; Novales, A (reprint author), Univ Complutense, Fac Ciencias Econom & Empresariales, Dept Anal Econ, Campus Somosaguas, Madrid 28223, Spain.; Chamizo, A (reprint author), BBVA, Ciudad BBVA Calle Azul 4, Madrid 428050, Spain.
+EM anovales@ccee.ucm.es; alvaro.chamizo@bbva.com
+FU Programa de Ayudas a la Investigacion from Banco de Espana
+   [ECO2015-67305-P, PrometeoII/2013/015]
+FX Financial support by grants ECO2015-67305-P, PrometeoII/2013/015,
+   Programa de Ayudas a la Investigacion from Banco de Espana is gratefully
+   acknowledged.
+CR Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Badaoui S, 2013, J BANK FINANC, V37, P2392, DOI 10.1016/j.jbankfin.2013.01.038
+   Ballester L, 2016, J EMPIR FINANC, V38, P394, DOI 10.1016/j.jempfin.2016.01.011
+   Basel Committee on Banking Supervision (BCBS), 2011, BAS 3 GLOB REG FRAM
+   BCBS, 2000, PRINC MAN CRED RISK
+   BCBS, 2012, FRAM DEAL DOM SYST I
+   Beirne J, 2012, J INT MONEY FINANC, V31, P534, DOI 10.1016/j.jimonfin.2011.10.005
+   Berndt A, 2010, REV FINANC, V14, P189, DOI 10.1093/rof/rfq004
+   Bhansali V, 2008, FINANC ANAL J, V64, P16, DOI 10.2469/faj.v64.n4.2
+   Blix Grimaldi Marianna, 2010, TECHNICAL REPORT
+   Campa JM, 1998, J INT MONEY FINANC, V17, P855, DOI 10.1016/S0261-5606(98)00031-X
+   Chen CYH, 2015, COMPUTATION STAT, V30, P845, DOI 10.1007/s00180-015-0578-6
+   Driessen J, 2009, J FINANC, V64, P1377, DOI 10.1111/j.1540-6261.2009.01467.x
+   DULLMANN K, 2007, J FINANCIAL SERVICES, V32, P55, DOI DOI 10.1007/S10693-007-0014-3
+   EBA, 2014, MIN LIST QUAL QUANT
+   Eder A, 2015, INT J FINANC ECON, V20, P291, DOI 10.1002/ijfe.1516
+   Eichengreen B, 2012, J INT MONEY FINANC, V31, P1299, DOI 10.1016/j.jimonfin.2012.02.002
+   FSB, 2013, PRINC EFF RISK APP F
+   Giglio Stefano, 2010, THESIS
+   Gropp R, 2006, J MONEY CREDIT BANK, V38, P399, DOI 10.1353/mcb.2006.0032
+   Ornelas JRH, 2019, N AM J ECON FINANC, V49, P206, DOI 10.1016/j.najef.2019.03.015
+   Hammoudeh S, 2013, APPL ECON, V45, P213, DOI 10.1080/00036846.2011.597727
+   Heinz Frigyes F., 2014, SOVEREIGN CDS SPREAD
+   Heitfield E., 2006, J CREDIT RISK, V2, P3, DOI DOI 10.21314/JCR.2006.038
+   Hilscher J, 2010, REV FINANC, V14, P235, DOI 10.1093/rof/rfq005
+   Hui CH, 2013, J BANK FINANC, V37, P3694, DOI 10.1016/j.jbankfin.2013.05.030
+   Hull J, 2004, J BANK FINANC, V28, P2789, DOI 10.1016/j.jbankfin.2004.06.010
+   Illing Mark, 2005, BANK CANADA FINANCIA
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   LOPEZ JA, 2000, J DERIV, V7, P65
+   Markit, 2008, MARK COM US GUID VER
+   Markit, 2012, MARK COM US GUID CDS
+   Munves David W., 2008, FINANCIAL SECTOR RIS
+   Puzanova N, 2013, J BANK FINANC, V37, P1243, DOI 10.1016/j.jbankfin.2012.11.017
+   Pykhtin M., 2004, RISK, V17, P85
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Schwaab B, 2017, J APPL ECONOMET, V32, P296, DOI 10.1002/jae.2521
+   Siegel AF, 1997, J FUTURES MARKETS, V17, P369, DOI 10.1002/(SICI)1096-9934(199706)17:4<369::AID-FUT1>3.0.CO;2-F
+   Skintzi VD, 2005, J FUTURES MARKETS, V25, P171, DOI 10.1002/fut.20137
+   Thornton Daniel L., 2009, WHAT LIBOR OIS SPREA
+NR 40
+TC 0
+Z9 0
+U1 1
+U2 1
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 1911-8066
+EI 1911-8074
+J9 J RISK FINANC MANAG
+JI J. Risk Financ. Manag.
+PD SEP
+PY 2019
+VL 12
+IS 3
+AR 129
+DI 10.3390/jrfm12030129
+PG 33
+WC Business, Finance
+SC Business & Economics
+GA JA6OZ
+UT WOS:000487963000043
+OA DOAJ Gold, Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Niedziolka, P
+AF Niedziolka, Pawel
+TI Systemic and Reputational Risk in the Activities of Rating Agencies
+SO GOSPODARKA NARODOWA
+LA Polish
+DT Article
+DE credit rating agency; reputation risk; systemic risk
+AB This article contains an analysis of the impact channels through which credit rating agencies may affect systemic risk, while raising the research question of whether reputational risk is a sufficient mechanism for disciplining credit rating agencies and motivating them to care for the high quality of ratings.
+   Research into reputational risk for rating agencies has led to the conclusion that credit rating agencies manage reputational risk. During a boom period, they perceive this risk as low and hence they tend to offer overestimated ratings. It is difficult then to show errors in rating decisions, and both issuers and investors benefit from high ratings. It is only during a bearish period that assessments become more diverse and better reflect the actual credit risk, sometimes overestimating it. During such a period, the likelihood of insolvency and therefore the need for a gradual reduction in ratings are higher. This proves the existence of reputation cycles and puts into question the claim that agency ratings are through-the-cycle ratings. Due to the possibility of an independent credit risk assessment of single-name securities, ratings are not usually overestimated for these securities, while the reputation of rating agencies built on the single-name instruments market is transferred to the structured instruments market where risk is underestimated.
+   In order to reduce systemic risk, in both the United States and the European Union, decisions have been made to subject rating agencies to civil liability. There was also a need to define a regulatory framework for rating agencies and to intensify supervision.
+C1 [Niedziolka, Pawel] Szkola Glowna Handlowa Warszawie, Inst Bankowosci, Kolegium Ekon Spoleczne, Warsaw, Poland.
+RP Niedziolka, P (reprint author), Szkola Glowna Handlowa Warszawie, Inst Bankowosci, Kolegium Ekon Spoleczne, Warsaw, Poland.
+EM pniedz@sgh.waw.pl
+CR Almeida H., 2017, J FINANCE, V72
+   Altman E. I., 2010, REGULATING WALL STRE
+   Amato J. D., 2003, BIS WORKING PAPERS, V129
+   [Anonymous], 2015, GTNEWS
+   Araujo L. A, 2016, REPUTATIONAL RISK ME
+   Bernstein J., 1996, CYKLE GIELDOWE
+   Bolton P., 2009, NBER WORKING PAPERS
+   CAINZ, 2016, CRED RAT AG AR THEY
+   Candelon B, 2014, CPI ANTITRUST CHRONI
+   Ching W, 2015, RISK MANAGEMENT 0908
+   Cichy J, 2015, ANN U M CURIESKLODOW, V47
+   Coval J., 2008, REEXAMINING ROLE RAT
+   Diamond D. W, 1984, REV EC STUDIES, V51
+   Diermeier D, 2008, MEASURING MANAGING R
+   Dziawgo D, 2010, CREDIT RATING MIEDZY
+   Dziawgo D, 1998, CREDIT RATING RYZYKO
+   Goodhart C. A. E., 2008, LSE FINANCIAL MARKET
+   Han S. H., 2010, RATING AGENCY REPUTA
+   Hemraj M., 2015, CREDIT RATING AGENCI
+   Holmstrom B., 2008, DISCUSSION PANIC 200
+   IOSCO (Technical Committee), 2004, COD COND FUND CRED R
+   Jovanovic B., 2016, REPUTATION CYCLES
+   Kolesnik J., 2010, INSTRUMENTY REGULACJ
+   Kolesnik J., 2013, ZARZADZANIE FINANSE
+   Komisja Europejska, 2016, STUD STAT CRED RAT M
+   Komisja Europejska, 2016, SPRAW KOM PARL EUR R
+   Korzeb Z., 2019, MAT STUDIA, V333
+   Lovo S, 2012, REPUTATION ENTRY BAR
+   Lowenstein R, 2008, NY TIMES MAGAZINE
+   McAndrews J. J., 2009, J MONETARY EC, V56
+   Mitic P, 2015, REPUTATION RISK QUAN
+   Mitic P., 2018, J SAFETY ENG, V8, P171
+   Moody's Investors Service, 2018, FIN CO
+   Moody's Investors Service, 2017, POL SOV RAT
+   Niedziolka P., 2013, ZARZADZANIE FINANSE, V2
+   Niedziolka P, 2017, STUDIA PRACE KOLEGIU, V158, P96
+   Nikolova S, 2014, REMOVAL CREDIT RATIN, P31
+   Partnoy Frank, 2009, YALE J REGUL, V26, P2
+   Perry J., 2005, MEASURING REPUTATION
+   Pym H., 2012, DO CREDIT RATING AGE
+   Rosch D., 2012, SYSTEMIC RISK CREDIT
+   SEC, 2017, ANN REP NAT REC STAT
+   SEC, 2008, SUMM REP ISS ID COMM
+   Sethuraman M., 2018, ACCOUNTING REV
+   Spatt Ch, 2013, CREDIT RATING AGENCI
+   Standard & Poor's, 2019, GEN CRIT PRINC CRED
+   Sy A. N. R, 2009, SYSTEMIC REGULATION
+   Trouillet J., 2015, CREDIT RATING AGENCI
+   Walter I., 2006, REPUTATIONAL RISK CO
+   Zygier M, 2015, NAUKI ZARZADZANIU
+NR 50
+TC 0
+Z9 0
+U1 1
+U2 1
+PU SZKOLA GLOWNA HANDLOWA, KOLEGIUM ANALIZ EKONOMICZNYCH
+PI WARSZAWA
+PA UL MADALINSKIEGO 6-8, WARSZAWA, 02-513, POLAND
+SN 0867-0005
+EI 2300-5238
+J9 GOSPOD NARODOWA
+JI Gospod. Narod.
+PY 2019
+IS 2
+BP 127
+EP 148
+DI 10.33119/GN/108611
+PG 22
+WC Economics
+SC Business & Economics
+GA IE8WT
+UT WOS:000472655000005
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU van Oordt, M
+   Zhou, C
+AF van Oordt, Maarten
+   Zhou, Chen
+TI Systemic risk and bank business models
+SO JOURNAL OF APPLIED ECONOMETRICS
+LA English
+DT Article
+ID EXPECTED-SHORTFALL; CAPITAL SHORTFALL; DEPOSIT INSURANCE;
+   FINANCIAL-SYSTEM; TOO BIG; TAIL; FAIL; CRISIS; SIZE; TIME
+AB In this paper, we decompose banks' systemic risk into two dimensions: the risk of a bank ("bank tail risk") and the link of the bank to the system in financial distress ("systemic linkage"). Based on extreme value theory, we estimate a systemic risk measure that can be decomposed into two subcomponents reflecting these dimensions. Empirically, we assess the relationships of bank business models to the two dimensions of systemic risk. The observed differences in these relationships partly explain why micro- and macroprudential perspectives sometimes have different implications for banking regulation.
+C1 [van Oordt, Maarten] Bank Canada, Currency Dept, Ottawa, ON, Canada.
+   [Zhou, Chen] Nederlandsche Bank, Econ & Res Div, Amsterdam, Netherlands.
+   [Zhou, Chen] Erasmus Univ, Erasmus Sch Econ, Rotterdam, Netherlands.
+   [Zhou, Chen] Tinbergen Inst, Amsterdam, Netherlands.
+RP van Oordt, M (reprint author), Bank Canada, 234 Wellington, Ottawa, ON K1A 0G9, Canada.
+EM mvanoordt@bankofcanada.ca
+CR Acharya V., 2013, QUANTIFYING SYSTEMIC, P175
+   Acharya V. V., 2009, RESTORING FINANCIAL, P283
+   Acharya V, 2014, J FINANC, V69, P2689, DOI 10.1111/jofi.12206
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2007, J FINANC INTERMED, V16, P1, DOI 10.1016/j.jfi.2006.06.001
+   Acharya VV, 2017, REV FINANC STUD, V30, P2, DOI 10.1093/rfs/hhw088
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Allen L, 2012, REV FINANC STUD, V25, P3000, DOI 10.1093/rfs/hhs094
+   Anginer D, 2014, J FINANC INTERMED, V23, P1, DOI 10.1016/j.jfi.2013.11.001
+   Baele L, 2014, N AM J ECON FINANC, V29, P124, DOI 10.1016/j.najef.2014.05.003
+   Balla E, 2014, J FINANC STABIL, V15, P195, DOI 10.1016/j.jfs.2014.10.002
+   Banulescu GD, 2015, J BANK FINANC, V50, P575, DOI 10.1016/j.jbankfin.2014.01.037
+   Bartram SM, 2007, J FINANC ECON, V86, P835, DOI 10.1016/j.jfineco.2006.10.001
+   Basel Committee on Banking Supervision (BCBS) & Financial Stability Board (FSB), 2013, GLOB SYST IMP BANKS
+   Benoit S, 2017, REV FINANC, V21, P109, DOI 10.1093/rof/rfw026
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bologna P, 2015, J FINANC SERV RES, V47, P81, DOI 10.1007/s10693-013-0180-4
+   Borio C., 2003, CESIFO ECON STUD, V49, P181
+   Borio C. E. V, 2014, BIS WORKING PAPERS, V456
+   Boyd JH, 2005, J MONEY CREDIT BANK, V37, P977, DOI 10.1353/mcb.2006.0002
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brunnermeier M., 2012, WORKING PAPER
+   Cai JJ, 2015, J R STAT SOC B, V77, P417, DOI 10.1111/rssb.12069
+   Chan-Lau J. A., 2010, FINANC MKTS I INSTRU, V19, P355, DOI DOI 10.2139/SSRN.1995499)
+   Davila E, 2018, REV ECON STUD, V85, P352, DOI 10.1093/restud/rdx010
+   De Bandt O., 2010, OXFORD HDB BANKING, P633
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Dell'Ariccia G, 2008, J FINANC INTERMED, V17, P89, DOI 10.1016/j.jfi.2007.06.001
+   Demirguc-Kunt A, 2013, J BANK FINANC, V37, P875, DOI 10.1016/j.jbankfin.2012.10.010
+   Demsetz RS, 1997, J MONEY CREDIT BANK, V29, P300, DOI 10.2307/2953695
+   Drehmann M, 2013, J FINANC INTERMED, V22, P586, DOI 10.1016/j.jfi.2013.08.001
+   Ellul A, 2013, J FINANC, V68, P1757, DOI 10.1111/jofi.12057
+   Embrechts P, 2000, EXTREMES INTEGRATED, P59
+   Embrechts P, 1997, MODELLING EXTREMAL E, V33
+   Fahlenbrach R, 2012, J FINANC, V67, P2139, DOI 10.1111/j.1540-6261.2012.01783.x
+   Foos D, 2010, J BANK FINANC, V34, P2929, DOI 10.1016/j.jbankfin.2010.06.007
+   Galati G, 2013, J ECON SURV, V27, P846, DOI 10.1111/j.1467-6419.2012.00729.x
+   Giglio S, 2016, J FINANC ECON, V119, P457, DOI 10.1016/j.jfineco.2016.01.010
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Hall RE, 2010, J ECON PERSPECT, V24, P3, DOI 10.1257/jep.24.4.3
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hartmann P, 2006, NBER CONF R, P133
+   HILL BM, 1975, ANN STAT, V3, P1163, DOI 10.1214/aos/1176343247
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Huang X, 2009, J BANK FINANC, V33, P2036, DOI 10.1016/j.jbankfin.2009.05.017
+   JANSEN DW, 1991, REV ECON STAT, V73, P18, DOI 10.2307/2109682
+   Knaup M, 2012, J FINANC SERV RES, V42, P35, DOI 10.1007/s10693-012-0131-5
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Lepetit L, 2008, J BANK FINANC, V32, P1452, DOI 10.1016/j.jbankfin.2007.12.002
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Lopez-Espinosa G, 2013, J FINANC STABIL, V9, P287, DOI 10.1016/j.jfs.2013.05.002
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Mikosch T, 2013, J ECONOMETRICS, V172, P205, DOI 10.1016/j.jeconom.2012.08.015
+   Nijskens R, 2011, J BANK FINANC, V35, P1391, DOI 10.1016/j.jbankfin.2010.10.001
+   Pais A, 2013, EUR FINANC MANAG, V19, P429, DOI 10.1111/j.1468-036X.2010.00603.x
+   Peek J, 2000, AM ECON REV, V90, P30, DOI 10.1257/aer.90.1.30
+   PENATI A, 1988, J MONETARY ECON, V21, P107, DOI 10.1016/0304-3932(88)90049-9
+   Pennacchi G, 2006, J MONETARY ECON, V53, P1, DOI 10.1016/j.jmoneco.2005.10.007
+   Perotti E, 2011, INT J CENT BANK, V7, P123
+   ROCHET JC, 1992, EUR ECON REV, V36, P1137, DOI 10.1016/0014-2921(92)90051-W
+   Shaffer S, 1994, RES FINANCIAL SERVIC, V6, P249
+   Stiroh KJ, 2006, J MONEY CREDIT BANK, V38, P1351, DOI 10.1353/mcb.2006.0075
+   Stiroh KJ, 2006, J FINANC SERV RES, V30, P237, DOI DOI 10.1007/S10693-006-0418-5
+   Straetmans STM, 2008, J APPL ECONOM, V23, P17, DOI 10.1002/jae.973
+   Tabak BM, 2013, J BANK FINANC, V37, P3855, DOI 10.1016/j.jbankfin.2013.06.003
+   Vallascas F, 2012, J INT MONEY FINANC, V31, P1745, DOI 10.1016/j.jimonfin.2012.03.011
+   van Oordt MRC, 2019, J FINANC ECONOMET, V17, P432, DOI 10.1093/jjfinec/nbx033
+   van Oordt MRC, 2016, J FINANC QUANT ANAL, V51, P685, DOI 10.1017/S0022109016000193
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Weiss GNF, 2014, J BANK FINANC, V40, P165, DOI 10.1016/j.jbankfin.2013.11.032
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 71
+TC 0
+Z9 0
+U1 8
+U2 9
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0883-7252
+EI 1099-1255
+J9 J APPL ECONOMET
+JI J. Appl. Econom.
+PD APR
+PY 2019
+VL 34
+IS 3
+BP 365
+EP 384
+DI 10.1002/jae.2666
+PG 20
+WC Economics; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematical Methods In Social Sciences
+GA HR3HJ
+UT WOS:000463027100003
+OA Green Published, Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Londono, JM
+AF Londono, Juan M.
+TI Bad bad contagion
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE International stock markets; Interconnectedness; Integration;
+   Transmission; Spillovers
+ID DOWNSIDE RISK; VOLATILITY; MARKETS; RETURN
+AB This paper proposes a new measure of contagion as the coincidence of large left-tail events in the idiosyncratic disturbances of international stock returns after controlling for their exposure to a global factor. Episodes of bad contagion, especially those involving a large number of countries, are followed by a significant drop in international stock returns. This predictability pattern can be understood as an international transmission effect, as bad contagion only affects countries that did not experience tail events. In addition, the negative effect of bad contagion spills over to real growth, sovereign default risk, and financial stability indicators. Published by Elsevier B.V.
+C1 [Londono, Juan M.] Fed Reserve Board, Int Finance Div, Mail Stop 43, Washington, DC 20551 USA.
+RP Londono, JM (reprint author), Fed Reserve Board, Int Finance Div, Mail Stop 43, Washington, DC 20551 USA.
+EM juan.m.londono@frb.gov
+CR Bae KH, 2003, REV FINANC STUD, V16, P717, DOI 10.1093/rfs/hhg012
+   Ball C.A., 2000, J EMPIR FINANC, V7, P373
+   Bekaert G, 2005, J BUS, V78, P39, DOI 10.1086/426519
+   Bekaert G, 1997, J FINANC ECON, V43, P29, DOI 10.1016/S0304-405X(96)00889-6
+   BEKAERT G, 1995, J FINANC, V50, P952
+   Bekaert G, 2014, J FINANC, V69, P2597, DOI 10.1111/jofi.12203
+   Bekaert G, 2013, J MONETARY ECON, V60, P771, DOI 10.1016/j.jmoneco.2013.06.003
+   Bollerslev T, 2015, J FINANC ECON, V118, P113, DOI 10.1016/j.jfineco.2015.02.010
+   Bowman D, 2015, J INT MONEY FINANC, V55, P27, DOI 10.1016/j.jimonfin.2015.02.016
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Butler KC, 2002, J INT MONEY FINANC, V21, P981, DOI 10.1016/S0261-5606(02)00048-7
+   Chinn MD, 2006, J DEV ECON, V81, P163, DOI 10.1016/j.jdeveco.2005.05.010
+   Dungey M, 2005, QUANT FINANC, V5, P9, DOI 10.1080/14697680500142045
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   JARQUE CM, 1987, INT STAT REV, V55, P163, DOI 10.2307/1403192
+   Karolyi A, 2003, INT FINANC, V6, P179, DOI DOI 10.1111/1468-2362.00114
+   Karolyi GA, 1996, J FINANC, V51, P951, DOI 10.2307/2329228
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Lane PR, 2003, IMF STAFF PAPERS, V50, P82
+   Li Q., 2005, J EMPIR FINANC, V12, P650, DOI DOI 10.1016/J.JEMPFIN.2005.03.001
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Pownall RAJ, 1999, J INT MONEY FINANC, V18, P853, DOI 10.1016/S0261-5606(99)00040-6
+NR 24
+TC 0
+Z9 0
+U1 2
+U2 2
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD NOV
+PY 2019
+VL 108
+AR UNSP 105652
+DI 10.1016/j.jbankfin.2019.105652
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA JN0OQ
+UT WOS:000496604300014
+DA 2019-12-27
+ER

@@ -1,0 +1,560 @@
+
+PT J
+AU De Genaro, A
+AF De Genaro, Alan
+TI Systematic multi-period stress scenarios with an application to CCP risk
+   management
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Stress scenarios; Central Counterparty; Monte Carlo simulation; Margin
+   requirements; Maximum block-entropy
+ID PORTFOLIO; MODEL; ENTROPY
+AB In the aftermath of the financial crisis of 2007-2008 regulators in multiple jurisdictions have laid the foundation of new regulatory standards aiming at strengthening systemic resilience. Among different initiatives, mandatory central clearing of standardized OTC derivatives has been one of the most prominent. Because OTC derivatives entail default management procedures that are far more complex than listed derivatives, risk management procedures have to follow suit. The recent paper by Vicente et al. (2015) propose an innovative way to calculate margin requirements by using multi-period robust optimization (RO) methods that accounts for important differences between OTC and listed derivatives default procedures. Motivated by this methodology, this paper proposes a hybrid framework to construct discrete uncertainty sets, in which each element of this set can be seen as multi-period stress scenarios, which are necessary to solve the RO problem faced by the Central Counterparty (CCP). When applied to determine the margin requirements, the present method provides both qualitative and quantitative results that outperform other robust optimization models such as Ben-Tal and Nemirovski (2000) and Bertsimas and Pachamanova (2008). (C) 2016 Elsevier B.V. All rights reserved.
+C1 [De Genaro, Alan] Univ Sao Paulo, Dept Econ, R Luciano Gualberto 908, Sao Paulo, Brazil.
+   [De Genaro, Alan] Cetip SA Mercados Organizados, Ave Brigadeiro Faria Lima 1663, Sao Paulo, Brazil.
+RP De Genaro, A (reprint author), Univ Sao Paulo, Dept Econ, R Luciano Gualberto 908, Sao Paulo, Brazil.
+EM adg@usp.br
+OI De Genaro, Alan/0000-0002-9839-6116
+CR Avellaneda M., 2001, INT J THEORETICAL AP, V4, P1
+   Basel Committee on Banking Supervision, 2005, TECHNICAL REPORT
+   Bedford T, 2002, ANN STAT, V30, P1031
+   Bedford T, 2001, ANN MATH ARTIF INTEL, V32, P245, DOI 10.1023/A:1016725902970
+   Ben-Tal A, 2000, MATH PROGRAM, V88, P411, DOI 10.1007/PL00011380
+   Ben-Tal A, 2000, HIGH PERFORMANCE OPT, V33, P303, DOI 10.1007/978-1-4757-3216-0
+   Bertsimas D, 2004, OPER RES LETT, V32, P510, DOI 10.1016/j.orl.2003.12.007
+   Bertsimas D, 2004, OPER RES, V52, P35, DOI 10.1287/opre.1030.0065
+   Bertsimas D., 2013, DATA DRIVEN RO UNPUB
+   Bertsimas D, 2008, COMPUT OPER RES, V35, P3, DOI 10.1016/j.cor.2006.02.011
+   BOLLERSLEV T, 1987, REV ECON STAT, V69, P542, DOI 10.2307/1925546
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Breuer T., 1999, GUIDELINES MARKET RI, V5
+   Breuer T, 2013, J BANK FINANC, V37, P1552, DOI 10.1016/j.jbankfin.2012.04.013
+   Breuer T, 2012, J BANK FINANC, V36, P332, DOI 10.1016/j.jbankfin.2011.07.009
+   Breuer T, 2009, INT J CENT BANK, V5, P205
+   Breymann W, 2003, QUANT FINANC, V3, P1, DOI 10.1088/1469-7688/3/1/301
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Chen WQ, 2010, OPER RES, V58, P470, DOI 10.1287/opre.1090.0712
+   Christensen JHE, 2015, J MONETARY ECON, V73, P26, DOI 10.1016/j.jmoneco.2015.03.007
+   COMM. PAYMENT & SETTLEMENT SYSTEMS BANK FOR INT'L SETTLEMENTS, 2012, PRINC FIN MARK INFR
+   Cont M., 2013, CLOSE OUT RISK UNPUB
+   Duffle D., 2011, 46 STANF U ROCK CTR
+   Embrechts P., 2001, RISK MANAGEMENT VALU
+   Flood M., 2013, WORKING PAPER
+   Galbiati M, 2012, J ECON BEHAV ORGAN, V83, P609, DOI 10.1016/j.jebo.2012.05.013
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   HANSEN BE, 1994, INT ECON REV, V35, P705, DOI 10.2307/2527081
+   Heller D., 2012, BIS WORKING PAPERS, V373
+   Joe H, 1996, DISTRIBUTIONS FIXED
+   Kamhi N., 2009, BANK CANADA FINANCIA
+   Kurowicka D, 2004, 4 INT C MATH METH RE
+   Mashal R, 2002, CORRELATION EX UNPUB
+   McNeil A. J., 2000, J EMPIR FINANC, V7, P271, DOI DOI 10.1016/S0927-5398(00)00012-8
+   Mendes BVD, 2005, APPL STOCH MODEL BUS, V21, P483, DOI 10.1002/asmb.602
+   Menn C, 2005, EUR J OPER RES, V163, P201, DOI 10.1016/j.ejor.2004.01.009
+   Moskowitz TJ, 2012, J FINANC ECON, V104, P228, DOI 10.1016/j.jfineco.2011.11.003
+   Murphy D., 2014, 29 BANK ENGL
+   Nelsen R.B., 1999, INTRO COPULAS
+   NELSON DB, 1992, J BUS ECON STAT, V10, P229, DOI 10.2307/1391681
+   Ou J, 2005, J RISK FINANC, V6, P31, DOI 10.1108/15265940510574754
+   PHILIPPATOS GC, 1972, APPL ECON, V4, P209, DOI 10.1080/00036847200000017
+   Pirrong C, 2011, ISDA DISCUSSION PAPE
+   Polak GG, 2010, EUR J OPER RES, V207, P409, DOI 10.1016/j.ejor.2010.04.025
+   Romano C., 2002, 12 CIDEM
+   Steinbach MC, 2001, SIAM REV, V43, P31, DOI 10.1137/S0036144500376650
+   Studer G., 1999, J RISK, V1, P33
+   Tutuncu RH, 2004, ANN OPER RES, V132, P157, DOI 10.1023/B:ANOR.0000045281.41041.ed
+   Vicente LABG, 2015, J BANK FINANC, V51, P119, DOI 10.1016/j.jbankfin.2014.08.016
+   Zhou RX, 2013, ENTROPY-SWITZ, V15, P4909, DOI 10.3390/e15114909
+NR 50
+TC 4
+Z9 4
+U1 0
+U2 11
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JUN
+PY 2016
+VL 67
+BP 119
+EP 134
+DI 10.1016/j.jbankfin.2015.12.011
+PG 16
+WC Business, Finance; Economics
+SC Business & Economics
+GA DN8HO
+UT WOS:000377320000009
+DA 2019-12-28
+ER
+
+PT J
+AU Gephart, JA
+   Rovenskaya, E
+   Dieckmann, U
+   Pace, ML
+   Brannstrom, A
+AF Gephart, Jessica A.
+   Rovenskaya, Elena
+   Dieckmann, Ulf
+   Pace, Michael L.
+   Braennstroem, Ake
+TI Vulnerability to shocks in the global seafood trade network
+SO ENVIRONMENTAL RESEARCH LETTERS
+LA English
+DT Article
+DE food security; perturbation; seafood trade; shocks; trade network;
+   vulnerability
+ID CONTAGION; MODEL
+AB Trade can allow countries to overcome local or regional losses (shocks) to their food supply, but reliance on international food trade also exposes countries to risks from external perturbations. Countries that are nutritionally or economically dependent on international trade of a commodity may be adversely affected by such shocks. While exposure to shocks has been studied in financial markets, communication networks, and some infrastructure systems, it has received less attention in food-trade networks. Here, we develop a forward shock-propagation model to quantify how trade flows are redistributed under a range of shock scenarios and assess the food-security outcomes by comparing changes in national fish supplies to indices of each country's nutritional fish dependency. Shock propagation and distribution among regions are modeled on a network of historical bilateral seafood trade data from UN Comtrade using 205 reporting territories grouped into 18 regions. In our model exposure to shocks increases with total imports and the number of import partners. We find that Central and West Africa are the most vulnerable to shocks, with their vulnerability increasing when a willingness-to-pay proxy is included. These findings suggest that countries can reduce their overall vulnerability to shocks by reducing reliance on imports and diversifying food sources. As international seafood trade grows, identifying these types of potential risks and vulnerabilities is important to build a more resilient food system.
+C1 [Gephart, Jessica A.; Pace, Michael L.] Univ Virginia, Dept Environm Sci, Clark Hall, Charlottesville, VA 22903 USA.
+   [Rovenskaya, Elena; Dieckmann, Ulf; Braennstroem, Ake] Int Inst Appl Syst Anal, A-2361 Laxenburg, Austria.
+   [Rovenskaya, Elena] Fac Computat Math & Cybernet, Moscow, Lomonosov Mosco, Russia.
+   [Braennstroem, Ake] Umea Univ, Dept Math & Math Stat, Umea, Sweden.
+RP Gephart, JA (reprint author), Univ Virginia, Dept Environm Sci, Clark Hall, Charlottesville, VA 22903 USA.
+EM jag5sa@virginia.edu
+RI Dieckmann, Ulf/E-1424-2011
+OI Dieckmann, Ulf/0000-0001-7089-0393; Pace, Michael/0000-0001-5945-6131
+FU Department of Environmental Sciences at the University of Virginia;
+   National Science Foundation Graduate Research FellowshipNational Science
+   Foundation (NSF); International Institute for Applied Systems Analysis
+   (IIASA) Young Scientists Summer Program; National Academy of Sciences
+FX This research was supported by the Department of Environmental Sciences
+   at the University of Virginia, the National Science Foundation Graduate
+   Research Fellowship, the International Institute for Applied Systems
+   Analysis (IIASA) Young Scientists Summer Program, and the National
+   Academy of Sciences. We are grateful to the members of the Evolution and
+   Ecology Program at IIASA, Paolo D'Odorico, David Seekell, and the
+   reviewers for helpful feedback on the project and manuscript. All data
+   used in this paper are openly available through the Food and
+   Agricultural Organization of the United Nations and can be accessed
+   using the web addresses in the references section.
+CR Acemoglu D., 2015, 20931 NAT BUR EC RES
+   Allison EH, 2009, FISH FISH, V10, P173, DOI 10.1111/j.1467-2979.2008.00310.x
+   [Anonymous], 2005, DIET REF INT EN CARB
+   Bene C, 2010, WORLD DEV, V38, P933, DOI 10.1016/j.worlddev.2009.12.010
+   Callaway DS, 2000, PHYS REV LETT, V85, P5468, DOI 10.1103/PhysRevLett.85.5468
+   Christiaensen Luc, 2009, 200904 WORLD I DEV E
+   Comtrade, 2010, UN COMM TRAD STAT DA
+   D'Odorico P, 2014, EARTHS FUTURE, V2, P458, DOI 10.1002/2014EF000250
+   Delgado C. L., 2003, 62 WORLDFISH CTR
+   Dunne JA, 2009, PHILOS T R SOC B, V364, P1711, DOI 10.1098/rstb.2008.0219
+   FAO, 2014, FAOSTAT DAT
+   FAO, 2014, STAT WORLD FISH AQ 2, P223
+   Food and Agriculture Organization of the United Nations, 2013, FISHSTAT DAT
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Gephart JA, 2015, ENVIRON RES LETT, V10, DOI 10.1088/1748-9326/10/12/125014
+   Hallegatte S, 2008, RISK ANAL, V28, P779, DOI 10.1111/j.1539-6924.2008.01046.x
+   HANNON B, 1973, J THEOR BIOL, V41, P535, DOI 10.1016/0022-5193(73)90060-X
+   Headey D, 2011, FOOD POLICY, V36, P136, DOI 10.1016/j.foodpol.2010.10.003
+   Iapadre PL, 2014, J POLICY MODEL, V36, pS89, DOI 10.1016/j.jpolmod.2013.10.010
+   Ilmola L, 2013, INNOV SUPPLY CHAIN M, V7, P058
+   Intergovernmental Panel on Climate Change (IPCC), 2001, CLIM CHANG 2001 IMP
+   Jaunky VC, 2011, COAST MANAGE, V39, P377, DOI 10.1080/08920753.2011.589210
+   Kali R, 2010, ECON INQ, V48, P1072, DOI 10.1111/j.1465-7295.2009.00249.x
+   Kent G, 2003, 708 FAO, P49
+   Krzywinski M, 2009, GENOME RES, V19, P1639, DOI 10.1101/gr.092759.109
+   Kurien J., 2004, FISH TRADE PEOPLE UN
+   McClanahan T, 2015, FISH FISH, V16, P78, DOI 10.1111/faf.12045
+   One World Nations Online, 2014, COUNTR REG WORLD A Z
+   Pelletier N, 2014, GLOBAL ENVIRON CHANG, V24, P30, DOI 10.1016/j.gloenvcha.2013.11.014
+   Puma MJ, 2015, ENVIRON RES LETT, V10, DOI 10.1088/1748-9326/10/2/024007
+   Subasinghe R, 2009, REV AQUACULT, V1, P2, DOI 10.1111/j.1753-5131.2008.01002.x
+   Tamea S, 2016, SCI REP-UK, V6, DOI 10.1038/srep18803
+   The World Bank, 2014, GDP CURR US
+   Watson RA, 2016, FISH FISH, V17, P585, DOI 10.1111/faf.12129
+   Watson RA, 2015, NAT COMMUN, V6, DOI 10.1038/ncomms8365
+   Westlund L., 2007, 479 FAO
+NR 36
+TC 25
+Z9 25
+U1 1
+U2 25
+PU IOP PUBLISHING LTD
+PI BRISTOL
+PA TEMPLE CIRCUS, TEMPLE WAY, BRISTOL BS1 6BE, ENGLAND
+SN 1748-9326
+J9 ENVIRON RES LETT
+JI Environ. Res. Lett.
+PD MAR
+PY 2016
+VL 11
+IS 3
+AR 035008
+DI 10.1088/1748-9326/11/3/035008
+PG 10
+WC Environmental Sciences; Meteorology & Atmospheric Sciences
+SC Environmental Sciences & Ecology; Meteorology & Atmospheric Sciences
+GA DI3LY
+UT WOS:000373401400036
+OA DOAJ Gold, Green Accepted, Green Published
+DA 2019-12-27
+ER
+
+PT S
+AU Cummins, JD
+   Weiss, MA
+AF Cummins, J. David
+   Weiss, Mary A.
+BE Lo, AW
+   Merton, RC
+TI Equity Capital, Internal Capital Markets, and Optimal Capital Structure
+   in the US Property-Casualty Insurance Industry
+SO ANNUAL REVIEW OF FINANCIAL ECONOMICS, VOL 8
+SE Annual Review of Financial Economics
+LA English
+DT Article; Book Chapter
+DE property-casualty insurance; optimal capital structure; internal capital
+   markets; underwriting cycles; reinsurance
+ID LIABILITY INSURANCE; SYSTEMIC RISK; UNDERWRITING CYCLES; FINANCIAL
+   QUALITY; CORPORATE DEMAND; REINSURANCE; FIRM; DIVERSIFICATION;
+   INFORMATION; MANAGEMENT
+AB This article reviews the most pertinent literature on the sources and uses of equity capital in the US property-casualty (P-C) insurance industry. P-C insurers serve risk management and risk-bearing functions in the economy. Insurers create diversified risk pools consisting of large numbers of exposures. However, even in the most highly diversified risk pools, uncertainty is not reduced to zero, and insurers must hold equity capital to credibly promise that claims will be paid even if losses are higher than expected. We begin with a financial overview of the industry. Insurers are well capitalized and financially stable, withstanding large catastrophic events and economic crises. Analysis of capital regulation further shows that regulation is not binding for the vast majority of insurers. We then review the theoretical and empirical evidence on the most important economic phenomena impinging on capital in P-C insurance: underwriting cycles, internal capital markets (ICMs), and optimal capital structure. P-C insurers are heavy users of ICMs, and insurer ICM transactions are efficient. According to available evidence, P-C insurers have optimal capital structures and behave according to the trade-off theory of capital structure.
+C1 [Cummins, J. David; Weiss, Mary A.] Temple Univ, Dept Risk Insurance & Healthcare Management, Philadelphia, PA 19122 USA.
+RP Cummins, JD (reprint author), Temple Univ, Dept Risk Insurance & Healthcare Management, Philadelphia, PA 19122 USA.
+EM cummins@temple.edu; mweiss@temple.edu
+CR Baker M, 2002, J FINANC, V57, P1, DOI 10.1111/1540-6261.00414
+   BERGER LA, 1992, J RISK UNCERTAINTY, V5, P253, DOI 10.1007/BF00057882
+   BERGER PG, 1995, J FINANC ECON, V37, P39, DOI 10.1016/0304-405X(94)00798-6
+   Berry-Stolzle TR, 2014, J RISK INSUR, V81, P529, DOI 10.1111/jori.12042
+   Best A. M., 2015, PROPERTY CASUALTY IM
+   Best A. M., 2015, BESTS AGGREGATES AVE
+   Best A. M., 2015, IT IS NOT YOUR FATHE
+   Boyer MM, 2012, J RISK INSUR, V79, P995, DOI 10.1111/j.1539-6975.2011.01458.x
+   Brewer E, 1997, J RISK INSUR, V64, P301, DOI 10.2307/253732
+   Chandler A.D., 1962, STRATEGY STRUCTURE C
+   Chen H., 2016, REINSURANCE NETWORK
+   Cheng J, 2012, J INSURANCE ISSUES, V35, P1
+   Cheng J, 2012, J RISK INSUR, V79, P723, DOI 10.1111/j.1539-6975.2011.01452.x
+   Cummins JD, 2014, J RISK INSUR, V81, P489, DOI 10.1111/jori.12039
+   Cummins JD, 2009, J RISK INSUR, V76, P493, DOI 10.1111/j.1539-6975.2009.01311.x
+   Cummins JD, 2009, J RISK INSUR, V76, P463, DOI 10.1111/j.1539-6975.2009.01319.x
+   CUMMINS JD, 1987, J RISK INSUR, V54, P246, DOI 10.2307/252856
+   CUMMINS JD, 1991, J RISK INSUR, V58, P261, DOI 10.2307/253237
+   Cummins JD, 1997, J FINANC INTERMED, V6, P3, DOI 10.1006/jfin.1996.0205
+   Cummins JD, 1999, J RISK INSUR, V66, P417, DOI 10.2307/253555
+   CUMMINS JD, 1994, J BANK FINANC, V18, P43, DOI 10.1016/0378-4266(94)00078-6
+   Cummins JD, 1993, J INSURANCE REGULATI, V11, P427
+   de Haan L, 2010, J BANK FINANC, V34, P1618, DOI 10.1016/j.jbankfin.2010.03.008
+   de la Merced Michael, 2016, NY TIMES, pB1
+   Dionne G., 2013, HDB INSURANCE
+   Donaldson G., 1961, CORPORATE DEBT CAPAC
+   Dumm R. E., 1999, J INSURANCE REGULATI, V17, P348
+   Fairley WB, 1987, FAIR RATE RETURN PRO, P1
+   Fama EF, 2002, REV FINANC STUD, V15, P1, DOI 10.1093/rfs/15.1.1
+   Fed. Depos. Insur. Corp, 2016, FAIL ASS T
+   Fier SG, 2013, J BANK FINANC, V37, P1029, DOI 10.1016/j.jbankfin.2012.11.003
+   Froot KA, 1998, J FINANC ECON, V47, P55, DOI 10.1016/S0304-405X(97)00037-8
+   Garven J.R., 2003, INSURANCE RISK MANAG, V7, P217
+   Garven JR, 2014, GENEVA RISK INS REV, V39, P222, DOI 10.1057/grir.2014.13
+   GERTNER RH, 1994, Q J ECON, V109, P1211, DOI 10.2307/2118361
+   Graham JR, 2011, ANNU REV FINANC ECON, V3, P309, DOI 10.1146/annurev-financial-102710-144821
+   Harrington S. E, 2002, J FINANCIAL SERVICES, V21, P145
+   Higgins ML, 2000, ECON INQ, V38, P442, DOI 10.1093/ei/38.3.442
+   HILL CWL, 1992, ORGAN SCI, V3, P501, DOI 10.1287/orsc.3.4.501
+   HILL CWL, 1985, J ECON ISSUES, V19, P731, DOI 10.1080/00213624.1985.11504412
+   Huang RB, 2009, J FINANC QUANT ANAL, V44, P237, DOI 10.1017/S0022109009090152
+   Hund J., 2012, APPLES APPLES EC BEN
+   JALILVAND A, 1984, J FINANC, V39, P127, DOI 10.1111/j.1540-6261.1984.tb03864.x
+   Jean-Baptiste EL, 2000, J FINANC INTERMED, V9, P274, DOI 10.1006/jfin.2000.0291
+   Khanna N, 2001, J FINANC, V56, P1489, DOI 10.1111/0022-1082.00377
+   Klein RW, 1995, J RISK INSUR, V62, P363, DOI 10.2307/253816
+   KROGH HC, 1972, J RISK INSUR, V39, P431, DOI 10.2307/251833
+   LammTennant J, 1997, J RISK INSUR, V64, P415, DOI 10.2307/253758
+   LANG LHP, 1994, J POLIT ECON, V102, P1248, DOI 10.1086/261970
+   Leary MT, 2005, J FINANC, V60, P2575, DOI 10.1111/j.1540-6261.2005.00811.x
+   Maksimovic V, 2013, ANNU REV FINANC ECON, V5, P225, DOI 10.1146/annurev-financial-110112-120933
+   Mankai S, 2016, J RISK INSUR, V83, P1007, DOI 10.1111/jori.12080
+   MAYERS D, 1990, J BUS, V63, P19, DOI 10.1086/296481
+   MAYERS D, 1982, J BUS, V55, P281, DOI 10.1086/296165
+   MERTON RC, 1995, FINANC MANAGE, V24, P23, DOI 10.2307/3665532
+   MODIGLIANI F, 1958, AM ECON REV, V48, P261
+   MYERS SC, 1984, J FINANC, V39, P575, DOI 10.2307/2327916
+   MYERS SC, 1984, J FINANC ECON, V13, P187, DOI 10.1016/0304-405X(84)90023-0
+   NAIC (Natl. Assoc. Insur. Comm.), 2010, ACC PRACT PROC MAN, VI
+   NAIC (Natl. Assoc. Insur. Comm.), 2015, UN CERT AUTH APPL
+   NAIC (Natl. Assoc. Insur. Comm.), 2015, INS REG INF SYST IRI
+   NAIC (Natl. Assoc. Insur. Comm.), 2016, NAIC FIN DAT REP
+   NAIC (Natl. Assoc. Insur. Comm.), 2012, RISK BAS CAP RBC INS
+   Niehaus Greg, 2014, MANAGING CAPITAL INS
+   Park SC, 2014, J RISK INSUR, V81, P587, DOI 10.1111/jori.12045
+   Phillips RD, 1998, J RISK INSUR, V65, P597, DOI 10.2307/253804
+   Powell L., 2007, J FINANCIAL SERVICES, V31, P173, DOI DOI 10.1007/S10693-007-0007-2
+   Powell LS, 2008, J RISK INSUR, V75, P439, DOI 10.1111/j.1539-6975.2008.00267.x
+   Raphael A., 1995, ULTIMATE RISK INSIDE
+   S&P Global, 2015, GLOB REINS HIGHL 201
+   Scharfstein DS, 2000, J FINANC, V55, P2537, DOI 10.1111/0022-1082.00299
+   Schlutter S, 2012, GENEVA PAP R I-ISS P, V37, P571, DOI 10.1057/gpp.2012.29
+   Schwarcz D, 2014, U CHICAGO LAW REV, V81, P1569
+   Shiu YM, 2011, J RISK INSUR, V78, P475, DOI 10.1111/j.1539-6975.2010.01387.x
+   SNL Financial, 2016, INS AN
+   Sommer DW, 1996, J RISK INSUR, V63, P501, DOI 10.2307/253623
+   Stein JC, 1997, J FINANC, V52, P111, DOI 10.2307/2329558
+   Swiss Re, 2002, INS CYCL ENTR CHALL
+   Swiss Re, 2015, 22015 SWISS RE CO
+   US Board Gov. Fed. Reserve Syst, 2016, FIN ACC US FLOW FLUI
+   US Dep. Treasury, 2016, NONB FIN CO DES
+   US Gen. Account. Off, 1990, INS REG INS REG INF
+   VENEZIAN EC, 1985, J RISK INSUR, V52, P477, DOI 10.2307/252782
+   Veysey S, 2015, BUS INSUR SEPT  0927
+   Villalonga B, 2004, J FINANC, V59, P479, DOI 10.1111/j.1540-6261.2004.00640.x
+   Weiss MA, 2004, J RISK INSUR, V71, P437, DOI 10.1111/j.0022-4367.2004.00098.x
+   Weiss MA, 1997, J INSUR ISSUES, V30, P31
+   Welch I, 2004, J POLIT ECON, V112, P106, DOI 10.1086/379933
+   Williamson O.E., 1975, MARKETS HIERARCHIES
+   WILLIAMSON OE, 1970, CORPORATE CONTROL BU
+   Winter Ralph, 1994, J FINANCIAL INTERMED, V3, P379, DOI DOI 10.1006/JFIN.1994.1011
+NR 91
+TC 2
+Z9 2
+U1 3
+U2 15
+PU ANNUAL REVIEWS
+PI PALO ALTO
+PA 4139 EL CAMINO WAY, PO BOX 10139, PALO ALTO, CA 94303-0897 USA
+SN 1941-1367
+BN 978-0-8243-4808-3
+J9 ANNU REV FINANC ECON
+JI Annu. Rev. Financ. Econ.
+PY 2016
+VL 8
+BP 121
+EP 153
+DI 10.1146/annurev-financial-121415-032815
+PG 33
+WC Business, Finance; Economics
+SC Business & Economics
+GA BG5NL
+UT WOS:000389584100006
+DA 2019-12-28
+ER
+
+PT J
+AU Reboredo, JC
+   Rivera-Castro, MA
+   Ugolini, A
+AF Reboredo, Juan C.
+   Rivera-Castro, Miguel A.
+   Ugolini, Andrea
+TI Downside and upside risk spillovers between exchange rates and stock
+   prices
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Stock prices; Exchange rates; Spillover; Downside risk; Upside risk;
+   Copulas; Emerging markets
+ID SYSTEMIC RISK; COPULA APPROACH; DEPENDENCE STRUCTURE; RATE DYNAMICS;
+   MARKETS; FLOWS; INSURANCE; INVESTORS; FINANCE; MODELS
+AB We examined downside and upside risk spillovers from exchange rates to stock prices and vice versa for a set of emerging economies. We characterized the dependence structure between currency and stock returns using copulas and computed downside and upside value-at-risk and conditional value-at-risk. We documented a positive relationship between stock prices and currency values in emerging economies with respect to the US dollar and the euro, with downside and upside spillover risk effects transmitted both ways. Finally, we also documented asymmetries in upside and downside risk spillovers and asymmetric differences in the size of risk spillovers when the domestic currency values against the US dollar and the euro. Our results, consistent with flight-to-quality phenomena, have implications for downside and upside risk management of international investor portfolios in emerging markets. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Reboredo, Juan C.] Univ Santiago de Compostela, Dept Econ, Santiago De Compostela 15782, Spain.
+   [Rivera-Castro, Miguel A.; Ugolini, Andrea] Univ Salvador, Postgrad Programme Management, BR-41770235 Salvador, BA, Brazil.
+   [Ugolini, Andrea] Univ Florence, Dipartimento Stat Informat, Applicaz G Parenti, I-50121 Florence, Italy.
+RP Reboredo, JC (reprint author), Univ Santiago de Compostela, Dept Fundamentos Anal Econ, Avda Xoan 23 S-N, Santiago De Compostela 15782, Spain.
+EM juancarlos.reboredo@usc.es
+RI ugolini, andrea/N-3990-2019; ugolini, andrea/K-7206-2015; Reboredo, Juan
+   Carlos/I-3224-2015
+OI ugolini, andrea/0000-0002-0904-5665; ugolini,
+   andrea/0000-0002-0904-5665; Reboredo, Juan Carlos/0000-0003-3912-9410
+FU Xunta de GaliciaXunta de Galicia; FEDEREuropean Union (EU)
+   [GPC2013-045]; MIUR PRIN MISURA - Multivariate models for risk
+   assessment
+FX We gratefully thank the Editor, Carol Alexander, and two anonymous
+   referees for providing useful comments and suggestions that have
+   improved the quality of the paper. Juan C. Reboredo acknowledges
+   financial support provided by the Xunta de Galicia and FEDER under
+   research grant GPC2013-045. Andrea Ugoliniacknowledges the financial
+   support of the project MIUR PRIN MISURA - Multivariate models for risk
+   assessment.
+CR Abadie A, 2002, J AM STAT ASSOC, V97, P284, DOI 10.1198/016214502753479419
+   Abdalla I, 1997, APPL FINANCIAL EC, V7, P25, DOI DOI 10.1080/096031097333826
+   Adrian T., 2011, NBER WORKING PAPER S
+   Ajayi R. A., 1998, GLOBAL FINANCE J, V9, P241, DOI [10.1016/S1044-0283(98)90006-0, DOI 10.1016/S1044-0283(98)90006-0]
+   Aloui C, 2007, QUANT FINANC, V7, P669, DOI 10.1080/14697680701302653
+   Bernal O, 2014, J BANK FINANC, V47, P270, DOI 10.1016/j.jbankfin.2014.05.030
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias D., 2012, 1 US DEP TREAS OFF F
+   Branson W. H., 1993, MANAGING FOREIGN EXC
+   Breymann W, 2003, QUANT FINANC, V3, P1, DOI 10.1088/1469-7688/3/1/301
+   Cho JW, 2016, J BANK FINANC, V62, P191, DOI 10.1016/j.jbankfin.2014.09.003
+   Chow EH, 1997, J BUS, V70, P105, DOI 10.1086/209710
+   Diamandis PF, 2011, J POLICY MODEL, V33, P381, DOI 10.1016/j.jpolmod.2010.11.004
+   Doong S., 2004, INT J BUS EC, V3, P139
+   DORNBUSCH R, 1980, AM ECON REV, V70, P960
+   Frankel J. A., 1983, EC INTERDEPENDENCE F
+   Froot KA, 2001, J FINANC ECON, V59, P151, DOI 10.1016/S0304-405X(00)00084-2
+   GAVIN M, 1989, J INT MONEY FINANC, V8, P181, DOI 10.1016/0261-5606(89)90022-3
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Granger C. W. J., 2000, Q REV EC FINANCE, V40, P337, DOI DOI 10.1016/S1062-9769(00)00042-9
+   Griffin JM, 2004, REV ECON STAT, V86, P641, DOI 10.1162/0034653041811725
+   Hau H, 2006, REV FINANC STUD, V19, P273, DOI 10.1093/rfs/hhj008
+   Joe H., 1996, 166 U BRIT COL DEP S
+   Joe H., 1997, MONOGRAPHS STAT PROB, V73
+   Lin CH, 2012, INT REV ECON FINANC, V22, P161, DOI 10.1016/j.iref.2011.09.006
+   Lin F, 2011, TAIL DEPENDENCE STOC
+   Michelis L, 2010, CAN J ECON, V43, P1016, DOI 10.1111/j.1540-5982.2010.01604.x
+   Nelsen R.B., 2006, INTRO COPULAS
+   Nieh C.-C., 2001, Q REV EC FINANCE, V41, P477, DOI DOI 10.1016/S1062-9769(01)00085-0
+   Ning C, 2010, J INT MONEY FINANC, V29, P743, DOI 10.1016/j.jimonfin.2009.12.002
+   Pan M.S., 2007, INT REV ECON FINANC, V16, P503, DOI DOI 10.1016/J.IREF.2005.09.003
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Pavlova A, 2007, REV FINANC STUD, V20, P1139, DOI 10.1093/revfin/hhm008
+   Phylaktis K, 2005, J INT MONEY FINANC, V24, P1031, DOI 10.1016/j.jimonfin.2005.08.001
+   Poon SH, 2004, REV FINANC STUD, V17, P581, DOI 10.1093/rfs/hhg058
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Reboredo JC, 2013, J BANK FINANC, V37, P2665, DOI 10.1016/j.jbankfin.2013.03.020
+   Reboredo JC, 2012, J POLICY MODEL, V34, P419, DOI 10.1016/j.jpolmod.2011.10.005
+   Reboredo JC, 2011, ENERG ECON, V33, P948, DOI 10.1016/j.eneco.2011.04.006
+   Richards A, 2005, J FINANC QUANT ANAL, V40, P1, DOI 10.1017/S0022109000001721
+   Sklar A., 1959, PUBL I STAT U PARIS, V8, P229, DOI 10.1007/978-3-642-33590-7
+   Wang YC, 2013, J BANK FINANC, V37, P1706, DOI 10.1016/j.jbankfin.2013.01.001
+NR 42
+TC 49
+Z9 50
+U1 11
+U2 98
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD JAN
+PY 2016
+VL 62
+BP 76
+EP 96
+DI 10.1016/j.jbankfin.2015.10.011
+PG 21
+WC Business, Finance; Economics
+SC Business & Economics
+GA CZ5EB
+UT WOS:000367124200006
+HC Y
+HP N
+DA 2019-12-28
+ER
+
+PT J
+AU Diez-Esteban, JM
+   Farinha, JB
+   Garcia-Gomez, CD
+AF Maria Diez-Esteban, Jose
+   Farinha, Jorge Bento
+   Diego Garcia-Gomez, Conrado
+TI The role of institutional investors in propagating the 2007 financial
+   crisis in Southern Europe
+SO RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE
+LA English
+DT Article
+DE Risk-taking; Financial deregulation; Crisis; Institutional investors
+ID BANK RISK-TAKING; FAMILY OWNERSHIP; CORPORATE; PERFORMANCE;
+   SHAREHOLDERS; PROTECTION; MANAGEMENT; CONTAGION; POLICY
+AB The 2007 financial crisis has affected Southern European companies (Spanish, Portuguese, Italian and Greek) more than others. From a Minskyan bubble-burst cycle perspective (Minsky, 1986), we study the relation between institutional ownership structure and corporate risk-taking for a sample of non-financial listed companies from Spain, Portugal, Italy and Greece for the period 2001-2014. Our results suggest that the financial deregulation process, that lead to the financialization of the world economy before the 2007 financial crisis and the favourable macroeconomic scenario encouraged corporate risk-taking in those countries. We also find that the lack of effective control mechanisms provided an incentive for investment funds to assume a proactive role, encouraging companies to overinvest in risky projects. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Maria Diez-Esteban, Jose] Univ Burgos, Dept Econ & Business Adm, Pza Infanta Elena, Burgos 09001, Spain.
+   [Farinha, Jorge Bento] Univ Porto, Fac Econ Porto, Rua Roberto Frias, P-4200464 Oporto, Portugal.
+   [Farinha, Jorge Bento] CEF UP Ctr Econ & Finance UP, Rua Roberto Frias, P-4200464 Oporto, Portugal.
+   [Diego Garcia-Gomez, Conrado] Univ Valladolid, Dept Accounting & Financial Econ, Soria Campus,Calle Univ S-N, Soria 42004, Spain.
+RP Garcia-Gomez, CD (reprint author), Univ Valladolid, Dept Accounting & Financial Econ, Soria Campus,Calle Univ S-N, Soria 42004, Spain.
+EM jmdiez@ubu.es; jfarinha@fep.up.pt; conradodiego.garcia@uva.es
+RI DIEZ-ESTEBAN, JOSE MARIA/R-6043-2016; Gomez, Conrado Diego
+   Garcia/V-4965-2019; Farinha, Jorge/H-9265-2019; Garcia-Gomez, Conrado
+   Diego/B-5196-2015
+OI DIEZ-ESTEBAN, JOSE MARIA/0000-0003-3053-3521; Farinha,
+   Jorge/0000-0002-1115-8538; Garcia-Gomez, Conrado
+   Diego/0000-0001-8184-3285
+FU Portuguese Public Funds through FCT (Fundacao para a Ciencia e a
+   Tecnologia) [UID/ECO/04105/2013]
+FX This research has been financed by Portuguese Public Funds through FCT
+   (Fundacao para a Ciencia e a Tecnologia) in the framework of the project
+   UID/ECO/04105/2013.
+CR Adam T., 2008, J FINANC RES, V31, P41, DOI DOI 10.1111/J.1475-6803.2008.00231.X
+   Almazan A, 2005, FINANC MANAGE, V34, P5, DOI 10.1111/j.1755-053X.2005.tb00116.x
+   Amihud Y, 2006, J FINANC QUANT ANAL, V41, P637, DOI 10.1017/S0022109000002568
+   Anderson RC, 2000, J BANK FINANC, V24, P1383, DOI 10.1016/S0378-4266(99)00088-6
+   Anderson RC, 2003, J FINANC, V58, P1301, DOI 10.1111/1540-6261.00567
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   ARELLANO M., 1990, INVEST ECON-SPAIN, V14, P3
+   Azofra-Palenzuela V., 1997, REV ESPANOLA FINANCI, V26, P749
+   Barontini R, 2006, EUR FINANC MANAG, V12, P689, DOI 10.1111/j.1468-036X.2006.00273.x
+   Bhattacharya P. S, 2007, I OWNERSHIP FIRM PER
+   Blundell R, 2000, ADV ECONOMETRICS, V15, P53
+   Blundell R., 2000, ECONOMET REV, V19, P321, DOI DOI 10.1080/07474930008800475
+   Bond S., 2002, 902 I FISC STUD
+   Boubakri N, 2013, J INT BUS STUD, V44, P195, DOI 10.1057/jibs.2013.2
+   Brealey R.A., 2012, PRINCIPLES CORPORATE
+   Bruno V, 2014, J INT BUS STUD, V45, P800, DOI 10.1057/jibs.2014.12
+   Buchanan B., 2016, RES I BUS F IN PRESS
+   Cloke J., 2013, WORKING PAPER
+   Cloke J., 2010, NOVA SCI, P1
+   Cornand C, 2012, EMERG MARK REV, V13, P301, DOI 10.1016/j.ememar.2012.02.001
+   Dalton DR, 2003, ACAD MANAGE J, V46, P13, DOI 10.2307/30040673
+   Deephouse DL, 2000, J ECON BEHAV ORGAN, V42, P463, DOI 10.1016/S0167-2681(00)00100-1
+   DeYoung R, 2013, J FINANC QUANT ANAL, V48, P165, DOI 10.1017/S0022109012000646
+   Diez-Esteban J.M., 2014, TRANSFORM BUS ECON, V13, P126
+   Dimitras AI, 2015, RES INT BUS FINANC, V34, P338, DOI 10.1016/j.ribaf.2015.02.017
+   Duca JV, 2010, J FINANC STABIL, V6, P203, DOI 10.1016/j.jfs.2010.05.002
+   Epstein Gerald, 2013, HDB POLITICAL EC FIN, P326
+   Erkens DH, 2012, J CORP FINANC, V18, P389, DOI 10.1016/j.jcorpfin.2012.01.005
+   Ferreira MA, 2008, J FINANC ECON, V88, P499, DOI 10.1016/j.jfineco.2007.07.003
+   Fung HG, 2012, FINANC MANAGE, V41, P979, DOI 10.1111/j.1755-053X.2012.01203.x
+   Henisz W.J., 2010, POLITICAL CONSTRAINT
+   Holder-Webb L, 2008, J BUS ETHICS, V83, P543, DOI 10.1007/s10551-007-9638-3
+   Huang BQ, 2013, EMERG MARK REV, V17, P44, DOI 10.1016/j.ememar.2013.08.005
+   Hutchinson M, 2015, INT J ACCOUNT, V50, P31, DOI 10.1016/j.intacc.2014.12.004
+   Ignatowski M, 2014, J FINANC STABIL, V15, P264, DOI 10.1016/j.jfs.2014.05.002
+   John K, 2008, J FINANC, V63, P1679, DOI 10.1111/j.1540-6261.2008.01372.x
+   KEEN S, 1995, J POST KEYNESIAN EC, V17, P607, DOI 10.1080/01603477.1995.11490053
+   Konishi M, 2004, J BANK FINANC, V28, P215, DOI 10.1016/S0378-4266(02)00405-3
+   La Porta R, 2002, J FINANC, V57, P1147, DOI 10.1111/1540-6261.00457
+   La Porta R, 2000, J FINANC ECON, V58, P3, DOI 10.1016/S0304-405X(00)00065-9
+   La Porta R, 1998, J POLIT ECON, V106, P1113, DOI 10.1086/250042
+   La Porta R, 1999, J FINANC, V54, P471, DOI 10.1111/0022-1082.00115
+   Lagoarde-Segot T., 2016, INT REV FIN IN PRESS
+   LaPorta R, 1997, J FINANC, V52, P1131, DOI 10.1111/j.1540-6261.1997.tb02727.x
+   Le Breton-Miller I, 2013, ENTREP THEORY PRACT, V37, P1391, DOI 10.1111/etap.12072
+   Luchtenberg KF, 2015, RES INT BUS FINANC, V33, P178, DOI 10.1016/j.ribaf.2014.09.007
+   Manconi A., 2012, J FINANC ECON, V104, P491
+   Maury B, 2005, J BANK FINANC, V29, P1813, DOI 10.1016/j.jbankfin.2004.07.002
+   Minsky H. P., 1986, STABILIZING UNSTABLE
+   Panousi V, 2012, J FINANC, V67, P1113, DOI 10.1111/j.1540-6261.2012.01743.x
+   Nguyen P, 2011, PAC-BASIN FINANC J, V19, P278, DOI 10.1016/j.pacfin.2010.12.002
+   Pragidis IC, 2015, J FINANC STABIL, V18, P127, DOI 10.1016/j.jfs.2015.04.001
+   Qi YX, 2010, J FINANC ECON, V95, P202, DOI 10.1016/j.jfineco.2009.10.004
+   ROE M, 2003, POLITICAL DETERMINAN
+   Sahuc JG, 2008, J MONEY CREDIT BANK, V40, P505, DOI 10.1111/j.1538-4616.2008.00124.x
+   SAUNDERS A, 1990, J FINANC, V45, P643, DOI 10.2307/2328676
+   Stulz RM, 2005, J FINANC, V60, P1595, DOI 10.1111/j.1540-6261.2005.00775.x
+   Tong H, 2011, REV FINANC STUD, V24, P2023, DOI 10.1093/rfs/hhq078
+   TOPOROWSKI J, 2000, END FINANCE THEORY C
+   Udayasankar K, 2008, J BUS ETHICS, V83, P167, DOI 10.1007/s10551-007-9609-8
+   Villalonga B, 2006, J FINANC ECON, V80, P385, DOI 10.1016/j.jfineco.2004.12.005
+NR 61
+TC 3
+Z9 3
+U1 0
+U2 14
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0275-5319
+EI 1878-3384
+J9 RES INT BUS FINANC
+JI Res. Int. Bus. Financ.
+PD SEP
+PY 2016
+VL 38
+BP 439
+EP 454
+DI 10.1016/j.ribaf.2016.07.006
+PG 16
+WC Business, Finance
+SC Business & Economics
+GA DZ6ZQ
+UT WOS:000386012800035
+DA 2019-12-27
+ER

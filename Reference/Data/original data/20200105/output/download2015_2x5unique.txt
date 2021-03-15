@@ -1,0 +1,427 @@
+
+PT J
+AU Melecky, A
+   Melecky, M
+   Sulganova, M
+AF Melecky, Ales
+   Melecky, Martin
+   Sulganova, Monika
+TI NON-PERFORMING LOANS AND THE MACROECONOMY: MODELING THE SYSTEMIC CREDIT
+   RISK IN THE CZECH REPUBLIC
+SO POLITICKA EKONOMIE
+LA Czech
+DT Article
+DE systemic credit risk; Czech banking system; non-performing loans;
+   Bayesian estimation; instrumental variables; a priori information
+ID MONETARY-POLICY; BANKING; DETERMINANTS; SLOVAKIA; ECONOMY
+AB Aggregate non-performing loans are the loans of a banking sector with delayed payments. This paper examines how aggregate non performing loans (NPLs), as an indicator of aggregate credit risk, respond to macroeconomic developments in the Czech Republic. It uses data for the period 1993-2014 and the Bayesian estimation method of instrumental variables. This method exploits a priori information from similar studies for other countries and considers the potential endogeneity of macroeconomic developments vis-a-vis non-performing loans. The estimation results reveal a strong persistence of NPLs and a significantly positive and robust, effect of economic growth and income effect of the exchange rate on the financial condition of borrowers. We also find a significantly negative and robust effect of lending rates on the financial condition of borrowers. The effects of inflation and unemployment are significant but not as robust as the experience of other countries suggests. The balance sheet effect of the exchange rate is positive, but its significance is changing with model specifications. For economic policy, a timely, real depreciation of the koruna in response to rising credit risk could be an effective measure to stabilize the solvency of the banking sector.
+C1 [Melecky, Ales; Melecky, Martin; Sulganova, Monika] VSB Tech Univ Ostrava, Dept Econ, Fac Econ, Sokolska Tr 33, Ostrava 70121, Czech Republic.
+RP Melecky, A (reprint author), VSB Tech Univ Ostrava, Dept Econ, Fac Econ, Sokolska Tr 33, Ostrava 70121, Czech Republic.
+EM ales.melecky@vsb.cz; m.melecky@gmail.com; monika.sulganova@vsb.cz
+OI Sulganova, Monika/0000-0003-3945-3130; Melecky, Ales/0000-0002-4495-6296
+CR ADOLFSON M., 2001, 127 ADOLFSON SVER RI
+   AHMAD F, 2013, WORLD APPL SCI J, V22, P243, DOI DOI 10.5829/idosi.wasj.2013.22.02.1863
+   Ali A., 2010, INT REV FINANC ANAL, V19, P165, DOI DOI 10.1016/J.IRFA.2010.03.001
+   An S, 2007, ECONOMET REV, V26, P113, DOI 10.1080/07474930701220071
+   BABIHUGA R., 2007, 07115 INT MON FUND
+   Baboucek I, 2005, WORKING PAPER SERIES, V1, P1
+   Beck Roland, 2013, WORKING PAPER SERIES, V1515
+   Bofondi M., 2011, OCCASIONAL PAPERS, V89
+   BOSS M., 2009, 17 OEST NAT
+   Buncic D, 2013, J FINANC STABIL, V9, P347, DOI 10.1016/j.jfs.2012.11.003
+   Castro V, 2013, ECON MODEL, V31, P672, DOI 10.1016/j.econmod.2013.01.027
+   De Bock R., 2012, 1271 INT MON FUND
+   Dixon P. B., 2012, HDB COMPUTABLE GEN E, V1A
+   Espinoza Raphael A, 2010, 10224 INT MON FUND
+   Fainstein G., 2011, REV EC FINANCE, V1, P20
+   Festic M, 2008, PRAGUE ECON PAP, V17, P99, DOI 10.18267/j.pep.323
+   Festic M, 2011, J BANK FINANC, V35, P310, DOI 10.1016/j.jbankfin.2010.08.007
+   Festic M, 2008, FINANC UVER, V58, P131
+   Fofack H., 2005, 3769 WORLD BANK
+   Frait J, 2011, FINANC UVER, V61, P5
+   FRANTA M., 2014, 32014 CNB
+   Gerlach S., 2005, BIS PAPERS, P481
+   Gersl A, 2013, FINANC UVER, V63, P505
+   IMF, 2006, FIN SOUNDN IND
+   Jakubik P., 2013, OESTERREICHISCHE N Q, V3, P48
+   Jakubik P, 2011, PRAGUE ECON PAP, V20, P157, DOI 10.18267/j.pep.394
+   Jesus S., 2006, INT J CENT BANK, V2, P65
+   JOHANSEN S, 2005, PREDN PREZ K MOD EV
+   Klein N., 2013, 1372 INT MON FUND
+   Laeven L, 2013, IMF ECON REV, V61, P225, DOI 10.1057/imfer.2013.12
+   Linde J, 2009, INT J FINANC ECON, V14, P301, DOI 10.1002/ijfe.377
+   Louzis DP, 2012, J BANK FINANC, V36, P1012, DOI 10.1016/j.jbankfin.2011.10.012
+   Lubik TA, 2007, J MONETARY ECON, V54, P1069, DOI 10.1016/j.jmoneco.2006.01.009
+   Marcucci J., 2008, J INT FINANC MARK I, V18, P46, DOI DOI 10.1016/J.INTFIN.2006.05.002
+   Melecky M, 2012, ECON MODEL, V29, P1377, DOI 10.1016/j.econmod.2012.02.021
+   Monacelli T, 2005, J MONEY CREDIT BANK, V37, P1047, DOI 10.1353/mcb.2006.0007
+   MUSILEK P, 2008, CESKY FINANCNI UCETN, V3, P6
+   Nkusu Mwanza, 2011, 11161 INT MON FUND
+   Podpiera R, 2006, IMF STAFF PAPERS, V53, P306
+   Salas V., 2002, J FINANCIAL SERVICES, V22, P203, DOI DOI 10.1023/A:1019781109676
+   Schmieder C. H., 2011, 1183 INT MON FUND
+   SHU CH, 2002, WORKING PAPER
+   Vazquez F, 2012, J FINANC STABIL, V8, P69, DOI 10.1016/j.jfs.2011.05.002
+   Yurdakul F, 2014, PROCD SOC BEHV, V109, P784, DOI 10.1016/j.sbspro.2013.12.544
+   ZEMAN J., 2008, 12008 NAR BANK SLOV
+NR 45
+TC 3
+Z9 3
+U1 0
+U2 12
+PU VYSOKA SKOLA EKONOMICKA
+PI PRAGUE
+PA NAM W CHURCHILLA 4, PRAGUE 13067, CZECH REPUBLIC
+SN 0032-3233
+J9 POLIT EKON
+JI Polit. Ekon.
+PY 2015
+VL 63
+IS 8
+BP 921
+EP 947
+DI 10.18267/j.polek.1045
+PG 27
+WC Economics; Political Science
+SC Business & Economics; Government & Law
+GA DE0GO
+UT WOS:000370303300001
+OA Bronze, Green Accepted
+DA 2019-12-28
+ER
+
+PT J
+AU Chen, TQ
+   Li, XD
+   Wang, JN
+AF Chen, Tingqiang
+   Li, Xindan
+   Wang, Jining
+TI Spatial Interaction Model of Credit Risk Contagion in the CRT Market
+SO COMPUTATIONAL ECONOMICS
+LA English
+DT Article
+DE Credit risk contagion; Entropy spatial model; CRT market; Spatial
+   distance; Risk preference
+ID DEFAULT; NETWORK; ENTROPY
+AB In this paper, we introduce an entropy spatial model of credit risk contagion in the credit risk transfer (CRT) market that considers the effects of spatial, industry-specific, regional financial and individual factors of the CRT market on credit risk contagion. We use numerical simulation to describe the influence and active mechanism of the spatial distance and transmission capacity between banks and investors in the CRT market. We also assess bank asset quality and credit risk transfer capability, as well as investor asset scale and risk preference level, bank financial development level, investors in the area and the weight of investors in the area relative to credit risk contagion. This model contributes to the explicit formalization of the connection between probability and spatial factors and provides new ideas and a theoretical framework for considering credit risk contagion in a spatial context, which has great relevance for credit risk management.
+C1 [Chen, Tingqiang; Wang, Jining] Nanjing Tech Univ, Sch Econ & Management, Nanjing 211816, Jiangsu, Peoples R China.
+   [Chen, Tingqiang; Li, Xindan] Nanjing Univ, Sch Management & Engn, Nanjing 210093, Jiangsu, Peoples R China.
+RP Chen, TQ (reprint author), Nanjing Tech Univ, Sch Econ & Management, Nanjing 211816, Jiangsu, Peoples R China.
+EM tingqiang88888888@163.com
+RI Chen, Tingqiang/N-4473-2019
+OI Chen, Tingqiang/0000-0002-3013-243X
+FU National Natural Science Foundation of ChinaNational Natural Science
+   Foundation of China [71173098, 71271109, 71301078]; China Postdoctoral
+   Science FoundationChina Postdoctoral Science Foundation [2014M561626];
+   Philosophy and Social Sciences Research Funded Projects in Colleges;
+   Universities of Jiangsu [2014SJB081]
+FX We wish to express our gratitude to the referees for their invaluable
+   comments. This study was supported by the National Natural Science
+   Foundation of China (Nos. 71173098, 71271109, and 71301078), China
+   Postdoctoral Science Foundation (2014M561626), the Philosophy and Social
+   Sciences Research Funded Projects in Colleges and Universities of
+   Jiangsu (2014SJB081).
+CR Allen F, 2006, J MONETARY ECON, V53, P89, DOI 10.1016/j.jmoneco.2005.10.004
+   Barro D, 2010, EUR J OPER RES, V205, P459, DOI 10.1016/j.ejor.2010.01.017
+   Basso A., 2005, ICFAI J FINANCIAL RI, V2, P1
+   Carling K, 2005, J ECON BUS, V57, P39, DOI 10.1016/j.jeconbus.2004.07.002
+   Chen T., 2013, WORKING PAPER
+   Chen T. Q., 2012, DISCRETE DYN NAT SOC, V2012
+   Chen T. Q., 2012, WORKING PAPER
+   Chen T. Q., 2013, DISCRETE DYN NAT SOC, V2013
+   Chen TQ, 2013, INT J BIFURCAT CHAOS, V23, DOI 10.1142/S0218127413501174
+   Clarke G., 1998, Computers, Environment and Urban Systems, V22, P157, DOI 10.1016/S0198-9715(98)00021-0
+   Cossin D, 2007, MANAGE SCI, V53, P1604, DOI 10.1287/mnsc.1070.0715
+   Davis M., 2001, QUANTITATIVE FINANCE, V1, P382, DOI DOI 10.1080/713665832
+   Davis M., 2000, MODELLING DEFAULT CO
+   Egloff D, 2007, J BANK FINANC, V31, P2475, DOI 10.1016/j.jbankfin.2006.10.023
+   Focardi S. M., 2004, J RISK, V7, P75
+   Frey  R., 2003, INTERACTING DEFAULTS
+   FUJITA M, 1999, SPATIAL EC CITES REG
+   Giesecke K, 2004, J BANK FINANC, V28, P1521, DOI 10.1016/S0378-4266(03)00129-8
+   Giesecke K, 2006, J ECON DYN CONTROL, V30, P2281, DOI 10.1016/j.jedc.2005.07.003
+   Haworth H, 2008, QUANT FINANC, V8, P669, DOI 10.1080/14697680701834614
+   Jarrow RA, 2001, J FINANC, V56, P1765, DOI 10.1111/0022-1082.00389
+   Jorion P, 2009, J FINANC, V64, P2053, DOI 10.1111/j.1540-6261.2009.01494.x
+   KCHIA Y., 2011, WORKING PAPER
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Krugman P., 1997, DEV GEOGRAPHY EC THE
+   Kuehn R, 2004, PHYSICA A, V342
+   Martin D., 2007, RISK, V4, P90
+   Murat Celik H., 2007, SOCIOECONOMIC PLANNI, V41, P147, DOI [10.1016/j.seps.2005.10.003, DOI 10.1016/J.SEPS.2005.10.003]
+   O'Kelly ME, 2010, GEOGR ANAL, V42, P472, DOI 10.1111/j.1538-4632.2010.00803.x
+   Santos T, 2006, J MONETARY ECON, V53, P113, DOI 10.1016/j.jmoneco.2005.10.010
+   Wilson A. G., 1970, ENTROPY URBAN REGION
+   Wilson A, 2010, GEOGR ANAL, V42, P364, DOI 10.1111/j.1538-4632.2010.00799.x
+NR 32
+TC 15
+Z9 15
+U1 6
+U2 33
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0927-7099
+EI 1572-9974
+J9 COMPUT ECON
+JI Comput. Econ.
+PD DEC
+PY 2015
+VL 46
+IS 4
+BP 519
+EP 537
+DI 10.1007/s10614-014-9475-2
+PG 19
+WC Economics; Management; Mathematics, Interdisciplinary Applications
+SC Business & Economics; Mathematics
+GA CV8DD
+UT WOS:000364506400002
+DA 2019-12-27
+ER
+
+PT J
+AU Apergis, N
+   Ajmi, AN
+AF Apergis, Nicholas
+   Ajmi, Ahdi Noomen
+TI Systemic Sovereign Risk and Asset Prices: Evidence from the CDS Market,
+   Stressed European Economies and Nonlinear Causality Tests
+SO FINANCE A UVER-CZECH JOURNAL OF ECONOMICS AND FINANCE
+LA English
+DT Article
+DE CDS prices; asset prices; economies in sovereign debt crisis
+ID CREDIT DEFAULT SWAPS
+AB This empirical study attempts to measure the direction of effects related to systemic sovereign risk (i.e. proxied by CDS prices) on a number of asset prices in four heavily stressed European economies: Greece, Ireland, Italy and Spain. The paper is innovative in terms of addressing the drawbacks of linear causality by making use of both the Sato et al. (2007) methodological approach, which introduces time-varying vector autoregressive modeling, as well as the Hatemi-J (2012) asymmetric causality test that explicitly introduces asymmetries in causality. The empirical findings suggest that the presence of CDS derivatives aggravated the prices in a number of assets. These results are associated with the overall negative environment in economies that experienced the sovereign debt crisis and had to go through a dramatic reduction in market liquidity as well as strict consolidation programs that led these markets to crash. The findings have important implications for the ongoing debate about how to reform the financial system so as to mitigate systemic risk in the future.
+C1 [Apergis, Nicholas] Northumbria Univ, Sch Business, Newcastle Upon Tyne NE1 8ST, Tyne & Wear, England.
+   [Ajmi, Ahdi Noomen] Salman Bin Abdulaziz Univ, Coll Sci & Humanities Slayel, KSA, Al Kharj, Saudi Arabia.
+   Manouba Univ, ESC Tunis, Manouba, Tunisia.
+   [Ajmi, Ahdi Noomen] IPAG Business Sch, IPAG Lab, Paris, France.
+RP Apergis, N (reprint author), Northumbria Univ, Sch Business, Newcastle Upon Tyne NE1 8ST, Tyne & Wear, England.
+EM nicholas.apergis@northumbria.ac.uk; ajmi.ahdi.noomen@gmail.com
+RI Apergis, Nikolas/J-7125-2017
+CR Acharya V., 2013, 9432 CEPR
+   Acharya VV, 2011, 8679 CEPR
+   Adrian T., 2008, 348 FED RES BANK NEW
+   Aizemann J, 2011, 17407 NBER
+   Allen WA, 2013, 1302 BIS
+   Ang A, 2013, J MONETARY ECON, V60, P493, DOI 10.1016/j.jmoneco.2013.04.009
+   Bekaert G, 2013, 17121 NBER
+   Bolton P, 2011, REV FINANC STUD, V24, P2617, DOI 10.1093/rfs/hhr002
+   Borgy V., 2011, 350 BANQ FRANC
+   Brock WA, 2009, J ECON DYN CONTROL, V33, P1912, DOI 10.1016/j.jedc.2009.05.004
+   Brunnermeier M. K., 2009, ICMB CEPR GENEVA REP
+   Coimbra N., 2014, SOVEREIGNS RIS UNPUB
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   Demirguc-Kunt A, 2013, J BANK FINANC, V37, P875, DOI 10.1016/j.jbankfin.2012.10.010
+   Dieckmann S, 2012, REV FINANC, V16, P903, DOI 10.1093/rof/rfr015
+   Eilers PHC, 1996, STAT SCI, V11, P89, DOI 10.1214/ss/1038425655
+   Favero C, 2012, ECON POLICY, P231, DOI 10.1111/j.1468-0327.2012.00282.x
+   Fostel A, 2008, AM ECON REV, V98, P1211, DOI 10.1257/aer.98.4.1211
+   Geanakoplos J., 2010, FRBNY EC POLICY REV, P101
+   Gennaioli N., 2010, 7955 CEPR
+   Guntram G. B., 2010, 092010 DTSCH BUND
+   Hatemi-J A, 2003, APPL ECON LETT, V10, P135, DOI 10.1080/1350485022000041050
+   Hatemi-J A, 2008, APPL ECON LETT, V15, P239, DOI 10.1080/13504850500461613
+   Hatemi-J A, 2012, EMPIR ECON, V43, P447, DOI 10.1007/s00181-011-0484-x
+   Hilscher J, 2010, REV FINANC, V14, P235, DOI 10.1093/rof/rfq005
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Montfort A, 2011, 352 BANQ FRANC
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Remolona E., 2008, J FIXED INCOME, P57, DOI DOI 10.3905/JFI.2008.705542
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Sato JR, 2007, COMPUT STAT DATA AN, V51, P5847, DOI 10.1016/j.csda.2006.10.027
+   Simsek A, 2013, Q J ECON, V128, P1365, DOI 10.1093/qje/qjt007
+   Wong AYT, 2011, EMERG MARK REV, V12, P432, DOI 10.1016/j.ememar.2011.06.004
+NR 33
+TC 2
+Z9 2
+U1 0
+U2 0
+PU CHARLES UNIV-PRAGUE
+PI PRAGUE 2
+PA C/O DATAKONEKT S R O, VINOHRADSKA 49, PO BOX 6, PRAGUE 2 120 00, CZECH
+   REPUBLIC
+SN 0015-1920
+J9 FINANC UVER
+JI Financ. Uver
+PY 2015
+VL 65
+IS 2
+BP 127
+EP 143
+PG 17
+WC Business, Finance
+SC Business & Economics
+GA CE8NS
+UT WOS:000352100500002
+DA 2019-12-28
+ER
+
+PT J
+AU Saltoglu, B
+   Yenilmez, T
+AF Saltoglu, Burak
+   Yenilmez, Taylan
+TI When does low interconnectivity cause systemic risk?
+SO QUANTITATIVE FINANCE
+LA English
+DT Article
+DE Financial distress; Applied finance; Complexity in finance;
+   Econophysics; G01; G21; G28
+ID NETWORK; MARKET; STABILITY; TOPOLOGY
+AB We analysed a systemic liquidity crisis by using a unique money market data-set in which the coded identity of the counterparties of each trade is known. Contrary to recent findings, we did not observe a positive relationship between interconnectivity and systemic risk. We have concluded that our conflicting findings can be related to the degree of market concentration on the borrowing side of the funding market. High level of concentration in the borrowing side led to lower interconnectivity but higher systemic risk prior to the crisis. We conclude that measures of market heterogeneity should be used to generalize the relationship between systemic risk and interconnectivity.
+C1 [Saltoglu, Burak] Bogazici Univ, Dept Econ, Istanbul, Turkey.
+   [Yenilmez, Taylan] Erasmus Univ, Dept Econ, Rotterdam, Netherlands.
+RP Saltoglu, B (reprint author), Bogazici Univ, Dept Econ, Istanbul, Turkey.
+EM burak.saltoglu@boun.edu.tr
+RI saltoglu, burak/A-9576-2019
+OI saltoglu, burak/0000-0002-2854-6051
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Boss M, 2004, QUANT FINANC, V4, P677, DOI 10.1080/14697680400020325
+   Brin S, 1998, COMPUT NETWORKS ISDN, V30, P107, DOI 10.1016/S0169-7552(98)00110-X
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   DENOOY W, 2005, EXPLORATORY SOCIAL N
+   Haldane A, 2009, COMMUNICATION    APR
+   Iori G, 2008, J ECON DYN CONTROL, V32, P259, DOI 10.1016/j.jedc.2007.01.032
+   Kuzubas TU, 2014, PHYSICA A, V405, P203, DOI 10.1016/j.physa.2014.03.006
+   Lelarge M, 2012, GAME ECON BEHAV, V75, P752, DOI 10.1016/j.geb.2012.03.009
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Muller J., 2006, J FINANCIAL SERVICES, V29, P37, DOI DOI 10.1007/S10693-005-5107-2
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Sachs A, 2014, QUANT FINANC, V14, P1677, DOI 10.1080/14697688.2012.749421
+   Soramaki K, 2007, PHYSICA A, V379, P317, DOI 10.1016/j.physa.2006.11.093
+   Van Rijckeghem Caroline, 2005, CHRONICLE TURKISH FI
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+NR 18
+TC 2
+Z9 2
+U1 0
+U2 11
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 1469-7688
+EI 1469-7696
+J9 QUANT FINANC
+JI Quant. Financ.
+PD DEC 2
+PY 2015
+VL 15
+IS 12
+BP 1933
+EP 1942
+DI 10.1080/14697688.2015.1043331
+PG 10
+WC Business, Finance; Economics; Mathematics, Interdisciplinary
+   Applications; Social Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA CW8YN
+UT WOS:000365285500002
+DA 2019-12-28
+ER
+
+PT J
+AU Zhang, Q
+   Vallascas, F
+   Keasey, K
+   Cai, CX
+AF Zhang, Qi
+   Vallascas, Francesco
+   Keasey, Kevin
+   Cai, Charlie X.
+TI Are Market-Based Measures of Global Systemic Importance of Financial
+   Institutions Useful to Regulators and Supervisors?
+SO JOURNAL OF MONEY CREDIT AND BANKING
+LA English
+DT Article
+DE market measures of systemic importance; financial crises; regulation
+ID RISK; DIVERSIFICATION
+AB We analyze whether four market-based measures of the global systemic importance of financial institutions offer early warning signals during three financial crises. The tests based on the 2007-2008 crisis show that only one measure (CoVaR) consistently adds predictive power to conventional early warning models. However, the additional predictive power remains small and it is not normally confirmed for the Asian and the 1998 crises. We conclude that it is problematic to identify a market-based measure of systemic importance that remains valid across crises with different features. The same criticism also applies to several conventional proxies of systemic importance, of which size is the most consistent performer.
+C1 [Zhang, Qi; Cai, Charlie X.] Univ Leeds, Sch Business, Finance, Leeds LS2 9JT, W Yorkshire, England.
+   [Vallascas, Francesco] Univ Leeds, Sch Business, Banking, Leeds LS2 9JT, W Yorkshire, England.
+   [Keasey, Kevin] Univ Leeds, Sch Business, IIBFS, Leeds LS2 9JT, W Yorkshire, England.
+RP Zhang, Q (reprint author), Univ Leeds, Sch Business, Finance, Leeds LS2 9JT, W Yorkshire, England.
+EM Q.Zhang@leeds.ac.uk; fv@lubs.leeds.ac.uk; kk@lubs.leeds.ac.uk;
+   X.Cai@lubs.leeds.ac.uk
+CR Acharya V, 2010, MEASURING SYSTEMIC R
+   Acharya V, 2014, J MONETARY ECON, V65, P36, DOI 10.1016/j.jmoneco.2014.04.014
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2011, J FINANC, V66, P99, DOI 10.1111/j.1540-6261.2010.01627.x
+   Acharya Viral V., 2009, RESTORING FINANCIAL, V1, P1
+   Adrian T., 2011, 17454 NBER
+   Allen F., 2010, INT REV FINANC, V10, P1, DOI DOI 10.1111/J.1468-2443.2009.01103.X
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   Bayazitova D, 2012, REV FINANC STUD, V25, P377, DOI 10.1093/rfs/hhr121
+   Beltratti A, 2012, J FINANC ECON, V105, P1, DOI 10.1016/j.jfineco.2011.12.005
+   Benoit S, 2013, THEORETICAL EMPIRICA
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Brownlees C. T., 2012, VOLATILITY CORRELATI
+   Brunnermeier M., 2012, BANKS NONINTEREST IN
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   Danielsson Jon, 2014, CAN WE PROVE BANK GU
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   Dieckmann S, 2012, REV FINANC, V16, P903, DOI 10.1093/rof/rfr015
+   Drehmann M, 2011, BIS Q REV
+   Drehmann Mathias, 2011, 34 BIS
+   Engle Robert, REV FINANCE
+   Fahlenbrach R, 2012, J FINANC, V67, P2139, DOI 10.1111/j.1540-6261.2012.01783.x
+   Financial Stability Board, 2011, POL MEAS ADDR SYST I
+   Financial Stability Board, 2009, GUID ASS SYST IMP FI
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Houston JF, 2012, J FINANC, V67, P1845, DOI 10.1111/j.1540-6261.2012.01774.x
+   Huang X, 2012, J FINANC SERV RES, V42, P55, DOI 10.1007/s10693-011-0117-8
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Keys BJ, 2009, J MONETARY ECON, V56, P700, DOI 10.1016/j.jmoneco.2009.04.005
+   Laeven L., 2014, BANK SIZE SYSTEMIC R
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Lopez-Espinosa G, 2012, J BANK FINANC, V36, P3150, DOI 10.1016/j.jbankfin.2012.04.020
+   Merton R. C., 1977, J BANK FINANC, V1, P3, DOI DOI 10.1016/0378-4266(77)90015-2
+   Ng J., 2011, IMPACT TARPS CAPITAL
+   Otker-Robe I., 2013, 6703 WORLD BANK
+   Petrovic A., 2009, EUROPEAN CENTRAL BAN
+   Purnanandam A, 2011, REV FINANC STUD, V24, P1881, DOI 10.1093/rfs/hhq106
+   Puzanova N, 2013, J BANK FINANC, V37, P1243, DOI 10.1016/j.jbankfin.2012.11.017
+   Rose AK, 2011, EUR ECON REV, V55, P309, DOI 10.1016/j.euroecorev.2010.12.006
+   Sedunov John, 2012, WHAT IS SYSTEMIC RIS
+   Segoviano M., 2009, IMF WORKING PAPER
+   Shleifer A, 2010, J FINANC ECON, V97, P306, DOI 10.1016/j.jfineco.2009.10.007
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   Tarashev Nikola, 2010, 308 BIS
+   Vallascas F, 2012, J INT MONEY FINANC, V31, P1745, DOI 10.1016/j.jimonfin.2012.03.011
+   Veronesi P, 2010, J FINANC ECON, V97, P339, DOI 10.1016/j.jfineco.2010.03.011
+   Vinals J., 2013, 1304 IMF
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Weiss GNF, 2014, J BANK FINANC, V41, P78, DOI 10.1016/j.jbankfin.2014.01.001
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 50
+TC 11
+Z9 11
+U1 0
+U2 17
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-2879
+EI 1538-4616
+J9 J MONEY CREDIT BANK
+JI J. Money Credit Bank.
+PD OCT
+PY 2015
+VL 47
+IS 7
+BP 1403
+EP 1442
+DI 10.1111/jmcb.12249
+PG 40
+WC Business, Finance; Economics
+SC Business & Economics
+GA CS6FY
+UT WOS:000362175000006
+OA Green Accepted, Green Published
+DA 2019-12-28
+ER

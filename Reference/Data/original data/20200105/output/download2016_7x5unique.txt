@@ -1,0 +1,398 @@
+
+PT J
+AU Battiston, S
+   D'Errico, M
+   Gurciullo, S
+AF Battiston, Stefano
+   D'Errico, Marco
+   Gurciullo, Stefano
+TI DebtRank and the Network of Leverage
+SO JOURNAL OF ALTERNATIVE INVESTMENTS
+LA English
+DT Article
+ID SYSTEMIC RISK; BANKING SYSTEMS; CONTAGION; EXPOSURES; MARKET
+C1 [Battiston, Stefano; D'Errico, Marco] Univ Zurich, Dept Banking & Finance, Zurich, Switzerland.
+   [Gurciullo, Stefano] UCL, Sch Publ Policy, London, England.
+RP Battiston, S (reprint author), Univ Zurich, Dept Banking & Finance, Zurich, Switzerland.
+EM stefano.battiston@uzh.ch; marco.derrico@uzh.ch;
+   stefano.gurciullo.11@ucl.ac.uk
+RI battiston, stefano/M-1612-2017
+OI battiston, stefano/0000-0002-0051-973X
+FU FET Project SIMPOL [610704]; FET project DOLFINS [640772]; ERC project
+   RMAC [249415]; Swiss National Fund Professorship grant [PP00P1-144689]
+FX Stefano Battiston and Marco D'Errico acknowledge support from FET
+   Project SIMPOL no. 610704, FET project DOLFINS no. 640772, ERC project
+   RMAC no. 249415, and the Swiss National Fund Professorship grant no.
+   PP00P1-144689.
+CR Adrian T, 2010, J FINANC INTERMED, V19, P418, DOI 10.1016/j.jfi.2008.12.002
+   Anand K., 2014, 022014 DTSCH BUND
+   Aoyama H., 2013, IDEAS REPEC, V2012, P2011
+   Basel Committee on Banking Supervision, 2011, TECHNICAL REPORT
+   Battiston S., 2013, MPRA PAPERS, V52141
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bisias Dimitrios, 2012, 0001 US DEP TREAS OF
+   Caldarelli G, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.258702
+   Caldarelli G., 2012, SCI REPORTS
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R., 2010, SRN ELIBRARY     FEB
+   Crosbie P. J., 2003, WORKING PAPER
+   deMasi G., 2006, PHYS REV E, V74
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Fink K., 2014, PRICE INTERCONNECTED
+   Furfine CH, 2003, J MONEY CREDIT BANK, V35, P111, DOI 10.1353/mcb.2003.0004
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Halaj G, 2013, COMPUT MANAG SCI, V10, P157, DOI 10.1007/s10287-013-0168-4
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Lo A. W, 2015, 515315 MIT
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Martinez-Jaramillo S, 2014, J ECON DYN CONTROL, V40, P242, DOI 10.1016/j.jedc.2014.01.009
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   Miranda R., 2013, TECHNICAL REPORT
+   Mistrulli PE, 2011, J BANK FINANC, V35, P1114, DOI 10.1016/j.jbankfin.2010.09.018
+   Montagna M., 2014, WORKING PAPER
+   Musmeci N, 2013, J STAT PHYS, V151, P720, DOI 10.1007/s10955-013-0720-1
+   Poledna S., 2014, ELIMINATION SYSTEMIC
+   Puliga M., 2014, SCI REPORTS
+   Roukny T, 2013, SCI REPORTS
+   Tabak B.M., 2013, WORKING PAPER
+   Tasca P, 2016, QUANT FINANC, V16, P1219, DOI 10.1080/14697688.2015.1123817
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   Van Dijk Bureau, 2016, BANKSCOPE DATABASE
+NR 35
+TC 8
+Z9 8
+U1 0
+U2 5
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1520-3255
+EI 2168-8435
+J9 J ALTERN INVEST
+JI J. Altern. Invest.
+PD SPR
+PY 2016
+VL 18
+IS 4
+BP 68
+EP 81
+DI 10.3905/jai.2016.18.4.068
+PG 14
+WC Business, Finance
+SC Business & Economics
+GA FJ3LA
+UT WOS:000412632400006
+DA 2019-12-28
+ER
+
+PT J
+AU Silva, TC
+   da Silva, MS
+   Tabak, BM
+AF Silva, Thiago Christiano
+   da Silva, Marcos Soares
+   Tabak, Benjamin Miranda
+TI Financial networks and bank liquidity
+SO JOURNAL OF NETWORK THEORY IN FINANCE
+LA English
+DT Article
+DE liquidity; core-periphery; network topology; financial stability;
+   banking regulation; Basel III.
+ID CORE-PERIPHERY STRUCTURE; SYSTEMIC RISK; INTERBANK; MODEL
+AB Our paper is the first to link bank liquidity performance and core-periphery network structures. We show that core-periphery structures can improve the liquidity performance of banks. We also find that network centrality plays a major role in bank liquidity performance. In particular, central players often display better liquidity performance than peripheral members. Our results are relevant for policy-making and financial regulation.
+C1 [Silva, Thiago Christiano; da Silva, Marcos Soares] Cent Bank Brazil, Dept Res, Setor Bancario Sul, Quadra 3,Bloco B, BR-70074900 Brasilia, DF, Brazil.
+   [Silva, Thiago Christiano] Univ Sao Paulo, Ribeirao Preto Sch Philosophy Sci & Literature, Dept Comp & Math, Av Bandeirantes 3900, BR-14040901 Ribeirao Preto, SP, Brazil.
+   [Silva, Thiago Christiano; Tabak, Benjamin Miranda] Univ Catolica Brasilia, Dept Law & Econ, Campus Avancado Asa Norte,SGAN 916, BR-70790160 Brasilia, DF, Brazil.
+RP Silva, TC (reprint author), Cent Bank Brazil, Dept Res, Setor Bancario Sul, Quadra 3,Bloco B, BR-70074900 Brasilia, DF, Brazil.; Silva, TC (reprint author), Univ Sao Paulo, Ribeirao Preto Sch Philosophy Sci & Literature, Dept Comp & Math, Av Bandeirantes 3900, BR-14040901 Ribeirao Preto, SP, Brazil.; Silva, TC (reprint author), Univ Catolica Brasilia, Dept Law & Econ, Campus Avancado Asa Norte,SGAN 916, BR-70790160 Brasilia, DF, Brazil.
+EM thiago.silva@bcb.gov.br; marcos.soares@bcb.gov.br;
+   benjaminm.tabak@gmail.com
+RI Tabak, Benjamin/F-9952-2018; Christiano, Thiago/B-8828-2012
+OI Tabak, Benjamin/0000-0002-7935-3188; Christiano,
+   Thiago/0000-0003-2631-4393
+FU CNPq foundationNational Council for Scientific and Technological
+   Development (CNPq) [302808/2015-9, 305427/2014-8]
+FX Thiago C. Silva (grant no. 302808/2015-9) and Benjamin M. Tabak (grant
+   no. 305427/2014-8) gratefully acknowledge financial support from the
+   CNPq foundation.
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anand K, 2013, J ECON BEHAV ORGAN, V85, P219, DOI 10.1016/j.jebo.2012.04.006
+   ARELLANO M, 1991, REV ECON STUD, V58, P277, DOI 10.2307/2297968
+   ARELLANO M, 1995, J ECONOMETRICS, V68, P29, DOI 10.1016/0304-4076(94)01642-D
+   Baltagi B.H., 2001, ECONOMETRIC ANAL PAN
+   Basel Committee on Banking Supervision, 2013, BAS 3 LIQ COV RAT LI
+   Basel Committee on Banking Supervision, 2014, BAS 3 NET STAB FUND
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Bhattacharya S., 1993, J FINANCIAL INTERMED, V3, P2, DOI DOI 10.1006/JFIN.1993.1001
+   Blinder M., 2003, ECONOMET THEOR, V21, P795
+   Blundell R, 1998, J ECONOMETRICS, V87, P115, DOI 10.1016/S0304-4076(98)00009-8
+   Capponi A, 2015, J ECON DYN CONTROL, V58, P152, DOI 10.1016/j.jedc.2015.06.008
+   Miranda RCC, 2014, J COMPLEX NETW, V2, P585, DOI 10.1093/comnet/cnu022
+   Central Bank of Brazil, 2015, FINANCIAL STABILITY
+   Central Bank of Brazil, 2011, FINANCIAL STABILITY
+   Cocco JF, 2009, J FINANC INTERMED, V18, P24, DOI 10.1016/j.jfi.2008.06.003
+   Costa LD, 2007, ADV PHYS, V56, P167, DOI 10.1080/00018730601170527
+   Craig B, 2014, J FINANC INTERMED, V23, P322, DOI 10.1016/j.jfi.2014.02.003
+   Craig BR, 2015, J BANK FINANC, V53, P99, DOI 10.1016/j.jbankfin.2014.12.022
+   De Masi G, 2012, EMPIR ECON, V43, P851, DOI 10.1007/s00181-011-0512-x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   FREEMAN LC, 1977, SOCIOMETRY, V40, P35, DOI 10.2307/3033543
+   Fricke D, 2015, COMPUT ECON, V45, P359, DOI 10.1007/s10614-014-9427-x
+   Fujiwara Y, 2009, ECONOMICS-KIEL, V3
+   Guerra SM, 2016, PHYSICA A, V442, P329, DOI 10.1016/j.physa.2015.09.013
+   Hong H, 2014, J FINANC STABIL, V15, P91, DOI 10.1016/j.jfs.2014.09.003
+   In't Veld D, 2014, J BANK FINANC, V49, P27, DOI 10.1016/j.jbankfin.2014.08.006
+   Kashyap AK, 2002, J FINANC, V57, P33, DOI 10.1111/1540-6261.00415
+   Krause A, 2012, J ECON BEHAV ORGAN, V83, P583, DOI 10.1016/j.jebo.2012.05.015
+   Langfield S, 2014, J BANK FINANC, V45, P288, DOI 10.1016/j.jbankfin.2014.03.031
+   Latora V, 2001, PHYS REV LETT, V87, DOI 10.1103/PhysRevLett.87.198701
+   Latora V, 2003, EUR PHYS J B, V32, P249, DOI 10.1140/epjb/e2003-00095-5
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   Lux T, 2015, J ECON DYN CONTROL, V52, pA11, DOI 10.1016/j.jedc.2014.09.038
+   Markose S, 2012, J ECON BEHAV ORGAN, V83, P627, DOI 10.1016/j.jebo.2012.05.016
+   Newman MEJ, 2003, PHYS REV E, V67, DOI 10.1103/PhysRevE.67.026126
+   Newman MEJ, 2002, PHYS REV LETT, V89, DOI 10.1103/PhysRevLett.89.208701
+   Silva TC, 2016, MACHINE LEARNING COM
+   Silva TC, 2016, EMERG MARK REV, V26, P130, DOI 10.1016/j.ememar.2015.12.004
+   Silva TC, 2016, J FINANC STABIL, V25, P247, DOI 10.1016/j.jfs.2016.04.004
+   Silva TC, 2015, INFORM SCIENCES, V294, P109, DOI 10.1016/j.ins.2014.09.048
+   Silva TC, 2012, IEEE T NEUR NET LEAR, V23, P954, DOI 10.1109/TNNLS.2012.2195027
+   de Souza SRS, 2016, J ECON DYN CONTROL, V66, P54, DOI 10.1016/j.jedc.2016.03.003
+   TUDELA M, 2003, 194 BANK ENGL
+NR 44
+TC 4
+Z9 4
+U1 0
+U2 6
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 2055-7795
+EI 2055-7809
+J9 J NETW THEORY FINANC
+JI J. Netw. Theory Financ.
+PD DEC
+PY 2016
+VL 2
+IS 4
+BP 1
+EP 51
+DI 10.21314/JNTF.2016.022
+PG 51
+WC Business, Finance
+SC Business & Economics
+GA EM4WT
+UT WOS:000395314400002
+DA 2019-12-28
+ER
+
+PT J
+AU Mamaysky, H
+AF Mamaysky, Harry
+TI How Useful Are Aggregate Measures of Systemic Risk?
+SO JOURNAL OF ALTERNATIVE INVESTMENTS
+LA English
+DT Article
+C1 [Mamaysky, Harry] Columbia Business Sch, New York, NY 10027 USA.
+RP Mamaysky, H (reprint author), Columbia Business Sch, New York, NY 10027 USA.
+EM hm2646@columbia.edu
+CR Acharya V., 2010, WORKING PAPER
+   Adrian T., 2013, 601 FED RES BANK NEW
+   Adrian T., 2013, 567 FED RES BANK NEW
+   Adrian T., 2011, 348 FED RES BANK NEW
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   BISIAS D., 2012, 1 OFF FIN RES
+   Brunnermeier MK, 2014, AM ECON REV, V104, P379, DOI 10.1257/aer.104.2.379
+   Drehmann M., 2013, BANK INT SETTLEMENTS
+   GIGLIO S., 2015, 20963 NBER
+   Hansen L. P., 2013, WORKING PAPER
+   Huang X., 2009, BOARD GOVERNORS FEDE
+   International Monetary Fund, 2009, ASSESSING SYSTEMIC, P73
+   Khandani AE, 2011, J FINANC MARK, V14, P1, DOI 10.1016/j.finmar.2010.07.005
+   Kritzman M, 2010, REVERE STREET WORKIN, P272
+   Kritzman M, 2010, FINANC ANAL J, V66, P30, DOI 10.2469/faj.v66.n5.3
+   Lo A., 2012, UNPUB
+   Pojarliev M., 2011, FINANCIAL ANAL J, V64, P18
+   Reyngold A, 2015, J ALTERN INVEST, V17, P58, DOI 10.3905/jai.2015.17.4.058
+NR 18
+TC 1
+Z9 1
+U1 0
+U2 1
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1520-3255
+EI 2168-8435
+J9 J ALTERN INVEST
+JI J. Altern. Invest.
+PD SPR
+PY 2016
+VL 18
+IS 4
+BP 13
+EP 32
+DI 10.3905/jai.2016.18.4.013
+PG 20
+WC Business, Finance
+SC Business & Economics
+GA FJ3LA
+UT WOS:000412632400003
+DA 2019-12-28
+ER
+
+PT J
+AU Bobtcheff, C
+   Chaney, T
+   Gollier, C
+AF Bobtcheff, Catherine
+   Chaney, Thomas
+   Gollier, Christian
+TI Analysis of Systemic Risk in the Insurance Industry
+SO GENEVA RISK AND INSURANCE REVIEW
+LA English
+DT Article
+DE insurance industry; diversification; systemic risk; firm size;
+   volatility
+ID LIFETIME PORTFOLIO SELECTION; DIVERSIFICATION; UNCERTAINTY
+AB In this paper, we discuss the systemic relevance of the insurance sector. Systemic risk is defined as the propensity of a financial institution to be undercapitalised when the financial system as a whole is undercapitalised. By the law of large numbers, traditional lines of insurance with idiosyncratic non-catastrophic risks cannot be systemic. On the contrary, undiversified insurers specialised in activities whose insured risks are highly correlated with GDP are systemic. In the life insurance sector, some contractual clauses such as unhedged minimum guarantees and free options to surrender raise the chance of systemic relevance. On the contrary, life insurers satisfying the classic solvency capital requirements contribute to the liquidity of financial markets thanks to the long-termist approach of their portfolio management. Finally, using historical data in the U.S. on the contribution of different sectors to the aggregate volatility of the economy, we show that investment banking is almost twice as volatile as aggregate GDP, while insurance is one fifth as volatile as aggregate GDP. The insurance sector thus appears to be a stabilising force of the economy.
+C1 [Bobtcheff, Catherine; Gollier, Christian] Toulouse Sch Econ, 21 Allee Brienne, F-31015 Toulouse 6, France.
+   [Chaney, Thomas] Toulouse Sch Econ, Econ, 21 Allee Brienne, F-31015 Toulouse 6, France.
+RP Bobtcheff, C (reprint author), Toulouse Sch Econ, 21 Allee Brienne, F-31015 Toulouse 6, France.
+FU AXA; SCOR Chair "Risk Markets and Value Creation" at TSE
+FX We acknowledge the financial support of AXA for this research. We thank
+   Amelie de Montchalin and Christian Thimann for useful comments on an
+   earlier version of this paper. We also thank the editor, Michael Hoy and
+   two anonymous reviewers for their constructive comments and suggestions.
+   The research leading to these results has also received funding from the
+   SCOR Chair "Risk Markets and Value Creation" at TSE.
+CR Acharya V., 2010, WORKING PAPER
+   ACPR, 2014, DEF SECT ASS VIE JAP
+   Barrot J.-N., 2014, ARE RETAIL TRADERS C
+   Bell M., 2009, INSURANCE STABILITY
+   BORCH K, 1962, ECONOMETRICA, V30, P424, DOI 10.2307/1909887
+   Campbell J., 2002, STRATEGIC ASSET ALLO
+   Carvalho V, 2013, AM ECON REV, V103, P1697, DOI 10.1257/aer.103.5.1697
+   CASS D, 1970, J ECON THEORY, V2, P122, DOI 10.1016/0022-0531(70)90002-5
+   Chen H, 2014, J RISK INSUR, V81, P623, DOI 10.1111/j.1539-6975.2012.01503.x
+   Cummins JD, 2014, J RISK INSUR, V81, P489, DOI 10.1111/jori.12039
+   Eling Martin, 2014, WORKING PAPER
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Financial Stability Board, 2013, GLOB SYST IMP INS G
+   Gatzert N, 2012, J RISK FINANC, V13, P184, DOI 10.1108/15265941211229226
+   Geneva Association, 2012, SURR LIF INS IND THE
+   Geneva Association, 2010, FOLL SYST RISK INS A
+   Geneva Association, 2010, SYST RISK INS AN AN
+   Gollier C, 1996, ECONOMETRICA, V64, P1109, DOI 10.2307/2171958
+   Gollier C, 2002, J MONETARY ECON, V49, P1439, DOI 10.1016/S0304-3932(02)00173-3
+   Gollier C., 2001, EC RISK TIME
+   Gollier C, 2008, J PUBLIC ECON, V92, P1463, DOI 10.1016/j.jpubeco.2007.07.008
+   International Association of Insurance Supervisors, 2011, INS FIN STAB
+   International Association of Insurance Supervisors, 2013, MACR POL SURV INS
+   International Association of Insurance Supervisors, 2013, GLOB SYST IMP INS IN
+   Jobst AA, 2014, GENEVA PAP R I-ISS P, V39, P440, DOI 10.1057/gpp.2013.7
+   Kessler D, 2014, J RISK INSUR, V81, P477, DOI 10.1111/j.1539-6975.2013.12007.x
+   Koijen R. S. J., 2014, SHADOW INSURAN UNPUB
+   MERTON RC, 1969, REV ECON STAT, V51, P247, DOI 10.2307/1926560
+   Plantin Guillaume, 2007, INSURERS GO BUST EC
+   SAMUELSON PA, 1963, SCIENTIA, V98, P108
+   SAMUELSON PA, 1969, REV ECON STAT, V51, P239, DOI 10.2307/1926559
+   Swiss Re, 2013, WORLD INS 2012 PROGR
+   Thimann C., 2014, INSURERS DIFFE UNPUB
+NR 33
+TC 3
+Z9 3
+U1 0
+U2 12
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1554-964X
+EI 1554-9658
+J9 GENEVA RISK INS REV
+JI Geneva Risk Insur. Rev.
+PD MAR
+PY 2016
+VL 41
+IS 1
+BP 73
+EP 106
+DI 10.1057/grir.2016.1
+PG 34
+WC Business, Finance; Economics
+SC Business & Economics
+GA DG3WT
+UT WOS:000372001900005
+DA 2019-12-28
+ER
+
+PT J
+AU Thakolsri, S
+   Sethapramote, Y
+   Jiranyakul, K
+AF Thakolsri, Supachok
+   Sethapramote, Yuthana
+   Jiranyakul, Komain
+TI Implied Volatility Transmissions Between Thai and Selected Advanced
+   Stock Markets
+SO SAGE OPEN
+LA English
+DT Article
+DE stock index option prices; implied volatility; causality; impulse
+   response functions; variance decompositions
+ID FINANCIAL CONTAGION
+AB This article investigates the impacts of changes in the U.S.-implied volatility on the changes in implied volatilities of the Euro and Thai stock markets. For that purpose, volatilities implicit in stock index option prices from the United States, Euro, and Thai stock markets are analyzed using the Standard Granger Causality Test, impulse response analysis, and variance decompositions. The results found in this study suggest that the U.S. stock market is the leading source of volatility transmissions since the changes in implied volatility in the U.S. stock market are transmitted to the Euro and Thai stock markets. Implied volatility indexes are used because they contain information about future realized volatility beyond that contained past volatility. Therefore, implied volatility indexes can be used as an underlying asset in a derivative market. The risk factors that can gauge the expectations of institutional investors are important to the key players in international stock markets. Given the dominance of institutional traders in the international derivative markets, the implied volatilities should reflect international traders' sentiment. The findings in the present article give recent knowledge for portfolio managers because they need to know the degree of dependency across stock markets so that they can diversify more efficiently.
+C1 [Thakolsri, Supachok] Minist Finance, Bangkok, Thailand.
+   [Sethapramote, Yuthana; Jiranyakul, Komain] Natl Inst Dev Adm, Econ, Bangkok, Thailand.
+RP Jiranyakul, K (reprint author), Natl Inst Dev Adm, Sch Dev Econ, Bangkok, Thailand.
+EM komain_j@hotmail.com
+RI Sethapramote, Yuthana/O-3569-2019
+CR Aijo J, 2008, GLOB FINANC J, V18, P290, DOI 10.1016/j.gfj.2006.11.003
+   Ann HJ, 2008, J FUTURES MARKETS, V28, P1118, DOI 10.1002/fut.20369
+   Badshah IU, 2013, J FUTURES MARKETS, V33, P235, DOI 10.1002/fut.21551
+   BLACK F, 1973, J POLIT ECON, V81, P637, DOI 10.1086/260062
+   Blair BJ, 2001, J ECONOMETRICS, V105, P5, DOI 10.1016/S0304-4076(01)00068-9
+   Bollerslev T, 2006, J ECONOMETRICS, V131, P123, DOI 10.1016/j.jeconom.2005.01.006
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Christensen BJ, 1998, J FINANC ECON, V50, P125, DOI 10.1016/S0304-405X(98)00034-8
+   FLEMING J, 1995, J FUTURES MARKETS, V15, P265, DOI 10.1002/fut.3990150303
+   Giot P, 2005, J PORTFOLIO MANAGE, V31, P92, DOI 10.3905/jpm.2005.500363
+   GRANGER CWJ, 1969, ECONOMETRICA, V37, P424, DOI 10.2307/1912791
+   HULL JC, 1997, OPTIONS FUTURES OTHE
+   Kenourgios D, 2014, INT REV FINANC ANAL, V34, P21, DOI 10.1016/j.irfa.2014.05.001
+   Liu YA, 1997, MULTINATIONAL FINANC, V1, P47, DOI DOI 10.17578/1
+   Nikkinen J., 2004, GLOBAL FINANCE J, V15, P1, DOI DOI 10.1016/J.GFJ.2003.10.007
+   Padhi P., 2011, 32011 NES NAT STOCK
+   Peng Y, 2012, ANN FINANC, V8, P49, DOI 10.1007/s10436-011-0181-y
+   Poon SH, 2003, J ECON LIT, V41, P478, DOI 10.1257/002205103765762743
+   Raj J., 2008, BIS PAPERS, V42
+   SIMS CA, 1980, ECONOMETRICA, V48, P1, DOI 10.2307/1912017
+   Siriopoulos C, 2012, GLOB FINANC J, V23, P77, DOI 10.1016/j.gfj.2012.03.001
+   Siriopoulos C, 2013, REV DERIV RES, V16, P233, DOI 10.1007/s11147-012-9085-x
+   Watsham T. J., 1997, QUANTITATIVE METHODS
+   Whaley RE, 2000, J PORTFOLIO MANAGE, V26, P12, DOI 10.3905/jpm.2000.319728
+NR 24
+TC 0
+Z9 0
+U1 2
+U2 2
+PU SAGE PUBLICATIONS INC
+PI THOUSAND OAKS
+PA 2455 TELLER RD, THOUSAND OAKS, CA 91320 USA
+SN 2158-2440
+J9 SAGE OPEN
+JI SAGE Open
+PD SEP
+PY 2016
+VL 6
+IS 3
+AR UNSP 2158244016659318
+DI 10.1177/2158244016659318
+PG 9
+WC Social Sciences, Interdisciplinary
+SC Social Sciences - Other Topics
+GA DY9ZK
+UT WOS:000385495800024
+OA DOAJ Gold
+DA 2019-12-27
+ER

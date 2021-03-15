@@ -1,0 +1,454 @@
+
+PT J
+AU Reyngold, A
+   Shnyra, K
+   Stein, RM
+AF Reyngold, Alexander
+   Shnyra, Ksenia
+   Stein, Roger M.
+TI Aggregate and Firm-Level Measures of Systemic Risk from a Structural
+   Model of Default
+SO JOURNAL OF ALTERNATIVE INVESTMENTS
+LA English
+DT Article
+C1 [Reyngold, Alexander] State St Bank & Trust, Enterprise Risk Advisory Serv, New York, NY 10017 USA.
+   [Shnyra, Ksenia] State St Bank & Trust, Fixed Income Res & Validat, New York, NY USA.
+   [Stein, Roger M.] MIT, Sloan Sch Management, Finance, Cambridge, MA 02139 USA.
+RP Reyngold, A (reprint author), State St Bank & Trust, Enterprise Risk Advisory Serv, New York, NY 10017 USA.
+EM areyngold@statestreetgx.com; kshnyra@statestreetgx.com; steinr@mit.edu
+CR Acharya V., 2010, 1002 FRB CLEV
+   Adrian T, 2010, TECHNICAL REPORT
+   [Anonymous], 2012, ABC NEWS
+   [Anonymous], 2007, BBC NEWS
+   Banerjee AV, 2010, WORKING PAPER
+   Banham M, 2010, MARKETING
+   Billio M, 2010, SOCIAL SCI RES NETWO
+   Bisias D., 2012, SURVEY SYSTEMIC RISK
+   Bohn JR, 2009, WILEY FINANC SER, P1, DOI 10.1002/9781118266830
+   Choudhury A, 2012, BOOMBERG        0606
+   Encyclopedia Britanica, 2013, ENCY BRITANICA
+   European Commission, 2009, EUROPEAN EC, V1
+   Fineman S, 2012, RE LIBOR BASED FINAN
+   Granger C.W.J, 1979, ECONOMETRCIA, V37, P424
+   Guerber J., 2007, SUBPRIME US RESIDENT
+   Kealhofer S, 2003, FINANC ANAL J, V59, P30, DOI 10.2469/faj.v59.n1.2501
+   Kelion L., 2010, BBC NEWS
+   Kinlaw W, 2012, J PORTFOLIO MANAGEME
+   Kritzman M, 2011, J PORTFOLIO MANAGEME
+   Kwan S.H., 2010, 201011 FRB SAN FRANC
+   MERTON RC, 1974, J FINANC, V29, P449, DOI 10.2307/2978814
+   ProPublica, 2012, WHY FREDD MAC RES RE
+   Richard M., 2011, FINANCIAL TIMES
+   Stein RM, 2013, HANDBOOK ON SYSTEMIC RISK, P37
+   Treanor Jill, 2010, GUARDIAN
+   Whenman G., 2010, RISK MAGAZINE
+   Zacks Equity Research, 2012, LLOYDS SELL TROUBL L
+NR 27
+TC 4
+Z9 4
+U1 0
+U2 3
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1520-3255
+EI 2168-8435
+J9 J ALTERN INVEST
+JI J. Altern. Invest.
+PD SPR
+PY 2015
+VL 17
+IS 4
+BP 58
+EP 78
+DI 10.3905/jai.2015.17.4.058
+PG 21
+WC Business, Finance
+SC Business & Economics
+GA VE2XP
+UT WOS:000439023800005
+DA 2019-12-28
+ER
+
+PT J
+AU McConnell, P
+AF McConnell, Patrick
+TI Modeling operational risk capital: the inconvenient truth
+SO JOURNAL OF OPERATIONAL RISK
+LA English
+DT Article
+DE operational risk regulatory capital; systemic risk; systemic operational
+   risk; Libor; foreign exchange benchmark manipulation
+AB Since 2008, over US$200 billion of operational risk losses have been incurred by large banks, mainly as a result of regulatory fines, lawsuits and demands for customer redress for various types of misconduct. A basic assumption underlying the modeling of operational risk regulatory capital (ORRC) under Basel II is that such operational risk losses can be modeled as being idiosyncratic to an individual institution, as this is the (microprudential) level at which banks are currently regulated. This paper challenges that assumption and shows that it is an "inconvenient truth" that the largest losses by banks are not firm specific. Instead, the largest losses involve multiple banks being fined at the same time by multiple regulators for the same types of misconduct. In this paper, such large multi-bank incidents are called systemic operational risk events and it is argued that, in addition to the firm level, ORRC should also be modeled at the "systemic", or macroprudential, level. The paper also discusses arguments made by academics against current approaches taken to modeling ORRC and, finally, makes a suggestion to the Basel Committee that, similar to the current review being undertaken for market risk, a comprehensive fundamental review be undertaken for operational risk.
+C1 [McConnell, Patrick] Macquarie Univ, Appl Finance Ctr, Sydney, NSW 2000, Australia.
+RP McConnell, P (reprint author), Macquarie Univ, Appl Finance Ctr, Level 3,10 Spring St, Sydney, NSW 2000, Australia.
+EM patrick.mcconnell@mq.edu.au
+CR Abdymomunov A., 2014, WORKING PAPER
+   Ames M., 2015, J RISK MANAGEMENT FI, V8, P227
+   [Anonymous], 2015, GUARDIAN
+   Artzner P, 1999, MATH FINANC, V9, P203, DOI 10.1111/1467-9965.00068
+   Basel Committee on Banking Supervision, 2014, FUND REV TRAD BOOK O
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Basel Committee on Banking Supervision, 2014, OP RISK REV SIMPL AP
+   Basel Committee on Banking Supervision, 2009, OBS RANG PRACT KEY E
+   Basel Committee on Banking Supervision, 2014, REV PRINC SOUND MAN
+   Basel Committee on Banking Supervision, 2004, INT CONV CAP MEAS CA
+   Besar D., 2009, PI0912 PENS I
+   Bessis J., 2002, RISK MANAGEMENT BANK
+   Blacker K., 2015, PEOPLE RISK MANAGEME
+   Brandt R., 2012, STRESS TEST MOD S SE
+   Cope E. W., 2009, J OPER RISK, V4, P29
+   Cruz MG, 2002, MODELING MEASURING H
+   Cruz MG, 2015, WILEY HDB FINANCIAL
+   Curry T. J., 2012, COMMUNICATION   0516
+   Dahen H, 2010, J BANK FINANC, V34, P1484, DOI 10.1016/j.jbankfin.2009.08.017
+   Duggan B., 2012, COMMUNICATION   0211
+   EFAMA, 2013, OCERP PROP EUR PERS
+   Embrechts P., 2003, QUANTIFYING REGULATO
+   Embrechts P., 2004, WORKING PAPER
+   Euromoney, 2013, REG BRIEF
+   European Systemic Risk Board, 2015, MISS OBJ TASKS
+   Financial Conduct Authority, 2015, BUS PLAN 2015 2016
+   Financial Conduct Authority, 2015, FIN NOT BARCL PLC
+   Financial Conduct Authority, 2014, FCA FIN 5 BANKS 1 1
+   Financial Conduct Authority Deutsche, 2015, FIN NOT DTSCH BANK A
+   Financial Crisis Inquiry Commission, 2011, FIN REP NAT COMM CAU
+   Financial Ombudsman Service, 2013, ANN REV 2013 2014
+   Financial Ombudsman Service, 2011, OMB NEWSL, V94
+   Financial Stability Board, 2009, GUID ASS SYST IMP FI
+   Financial Stability Board, 2014, 2014 UPD GROUP GLOB
+   Gordy Michael, 2009, OXFORD HDB BANKING
+   IMF, 2010, GLOB FIN STAB REP M
+   Institute and Faculty of Actuaries, 2015, IFOA RESP OP RISK RE
+   Institute of Operational Risk, 2015, 291 BCBS I OP RISK
+   Jenkins S., 2003, ADV OPERATIONAL RISK
+   Jobst AA, 2007, J FINANC REGUL COMPL, V15, P423, DOI 10.1108/13581980710835272
+   Kalkbrener M., 2008, DTSCH BANKS AMA MODE
+   MCCONNELL P, 2013, J OPER RISK, V8, P59
+   McConnell P. J., 2015, SYSTEMIC OPERATIONAL
+   McConnell P, 2014, J OPER RISK, V9, P59, DOI 10.21314/JOP.2014.144
+   McConnell P, 2014, J OPER RISK, V9, P77
+   McConnell P, 2013, J OPER RISK, V8, P59
+   McConnell P, 2012, J OPER RISK, V7, P79
+   McConnell P, 2011, J OPER RISK, V6, P65, DOI 10.21314/JOP.2011.095
+   McNeil A. J., 2005, QUANTITATIVE RISK MA
+   Opdyke JD, 2012, J OPER RISK, V7, P3
+   ORX, 2011, OP RISK REP STAND OR
+   ORX, 2014, ORX REP OP RISK LOSS
+   PRA, 2015, FAIR EFF MARK REV
+   PWC, 2014, REG BRIEF
+   Reuters, 2014, REUTERS         1112
+   Schwarcz S. L., 2008, 163 DUK LAW SCH
+   Tarullo D. K., 2012, COMMUNICATION   0331
+   Thirlwell J., 2011, BIGGEST OPERATIONAL
+   Vignoles VL, 2011, HANDBOOK OF IDENTITY THEORY AND RESEARCH, VOLS 1 AND 2, P1, DOI 10.1007/978-1-4419-7988-9_1
+   Wheatley M, 2012, WHEATLEY REV LIBOR F
+   Zhou X., 2014, WORKING PAPER
+NR 61
+TC 5
+Z9 5
+U1 1
+U2 7
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1744-6740
+EI 1755-2710
+J9 J OPER RISK
+JI J. Oper. Risk.
+PY 2015
+VL 10
+IS 4
+BP 73
+EP 111
+PG 39
+WC Business, Finance
+SC Business & Economics
+GA CY3UJ
+UT WOS:000366335100005
+DA 2019-12-28
+ER
+
+PT J
+AU Fazio, DM
+   Tabak, BM
+   Cajueiro, DO
+AF Fazio, Dimas M.
+   Tabak, Benjamin M.
+   Cajueiro, Daniel O.
+TI Inflation targeting: Is IT to blame for banking system instability?
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Inflation targeting; Financial stability; Monetary policy; Financial
+   crisis; Bank regulation
+ID MONETARY-POLICY; RISK; SUPERVISION; ENVIRONMENT; FINANCE; LAW
+AB In light of the financial crisis, the practice of inflation targeting (IT) has been blamed for authorities' failure to respond to the increase in financial systemic risk and to the development of asset bubbles. However, utilizing a rich database containing nearly 5500 commercial banks from 70 countries (among which, 22 are IT) for the period 1998-2012, this paper argues that on average, inflation targeting national banking systems (i) are more stable; (ii) possess sounder systemically important banks; and (iii) are less distressed than (or at least as distressed as) other banks during periods of global liquidity shortages. Our results are robust to a series of tests, such as when we compare countries with the same legal origins or control for the delegation of bank supervision responsibility to bodies other than the central bank. Overall, we conclude that IT cannot be blamed for contributing to financial fragility. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Fazio, Dimas M.] Univ London, London Business Sch, London NW1 4SA, England.
+   [Tabak, Benjamin M.] Univ Catolica Brasilia, Dept Law & Econ, BR-70790160 Brasilia, DF, Brazil.
+   [Cajueiro, Daniel O.] Univ Brasilia, FACE, Dept Econ, BR-70910900 Brasilia, DF, Brazil.
+   [Cajueiro, Daniel O.] Univ Brasilia, FACE, Natl Inst Sci & Technol Complex Syst, BR-70910900 Brasilia, DF, Brazil.
+RP Fazio, DM (reprint author), Univ London, London Business Sch, London NW1 4SA, England.
+EM dimasfazio@gmail.com; benjamin.mtabak@gmail.com;
+   danielcajueiro@gmail.com
+RI Tabak, Benjamin/F-9952-2018; Cajueiro, Daniel Oliveira/R-2694-2019
+OI Tabak, Benjamin/0000-0002-7935-3188; CAJUEIRO,
+   DANIEL/0000-0001-5898-1655
+FU CNPq foundationNational Council for Scientific and Technological
+   Development (CNPq)
+FX The authors would like to thank, Carol Alexander (the editor), and two
+   anonymous referees for their valuable comments and suggestions to the
+   paper. We would also like to thank, without implicating: Iftekhar Hasan,
+   Bill Francis, Tuomas Peltonen, Eduardo Lima, Aquiles Faria, Marcio
+   Garcia, Katherine Hennings, Marta Baltar, Solange Guerra, Naercio
+   Menezes, Luiz Alberto Esteves, Marcelo Zeuli, Carlos Hamilton Araujo,
+   Francisco Figueiredo, Rafael Terra, and the participants at the XVI
+   Annual Inflation Targeting Seminar of the Banco Central do Brasil.
+   Benjamin Tabak and Daniel Cajueiro are grateful to financial support
+   from CNPq foundation. All remaining errors are our own.
+CR Adrian T., 2011, NBER WORKING PAPERS
+   ALLEN L, 2003, BIS WORKING PAPERS, V126
+   Angrist JD, 2009, MOSTLY HARMLESS ECONOMETRICS: AN EMPIRICISTS COMPANION, P1
+   Barth J. R., 2008, POLICY RES WORKING P
+   Barth JR, 2013, J FINAN ECON POLICY, V5, P111, DOI 10.1108/17576381311329661
+   Barth JR, 2004, J FINANC INTERMED, V13, P205, DOI 10.1016/j.jfi.2003.06.002
+   Barth JR, 2001, POLICY RES WORKING P, V2588
+   Basel Committee on Banking Supervision, 2011, GLOB SYST IMP BANKS
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Bean C, 2009, ECON J, V119, pF442, DOI 10.1111/j.1468-0297.2009.02315.x
+   Beck T, 2003, J COMP ECON, V31, P653, DOI 10.1016/j.jce.2003.08.001
+   Beck T, 2000, J FINANC ECON, V58, P261, DOI 10.1016/S0304-405X(00)00072-6
+   Berger AN, 1997, J BANK FINANC, V21, P895, DOI 10.1016/S0378-4266(97)00010-1
+   Bertrand M, 2004, Q J ECON, V119, P249, DOI 10.1162/003355304772839588
+   Blanchard O., 2010, RETHINKING MACROECON
+   BORDO MD, 1998, FEDERAL RESERVE BANK, V0080
+   Borio C., 2003, BIS WORKING PAPERS, V127
+   Borio C., 2008, BIS WORKING PAPERS, V268
+   Bos J.W.B., 2009, APPL ECON, V41, P1466
+   BOYD JH, 1993, J MONETARY ECON, V31, P47, DOI 10.1016/0304-3932(93)90016-9
+   Brito RD, 2010, J MONEY CREDIT BANK, V42, P1679, DOI 10.1111/j.1538-4616.2010.00359.x
+   Crowe C, 2010, J MONETARY ECON, V57, P226, DOI 10.1016/j.jmoneco.2009.12.003
+   Cukierman A, 2013, J FINANC STABIL, V9, P373, DOI 10.1016/j.jfs.2013.02.002
+   Curry TJ, 2008, J BANK FINANC, V32, P1297, DOI 10.1016/j.jbankfin.2007.11.009
+   Dell'Ariccia Giovanni, 2013, 13143 IMF
+   Demirguc-Kunt A, 2010, J FINANC ECON, V98, P626, DOI 10.1016/j.jfineco.2010.06.004
+   di Giovanni J, 2009, REV ECON STAT, V91, P558
+   Dietsch M, 2000, J BANK FINANC, V24, P985, DOI 10.1016/S0378-4266(99)00115-6
+   Djankov S, 2003, Q J ECON, V118, P453, DOI 10.1162/003355303321675437
+   Donald SG, 2007, REV ECON STAT, V89, P221, DOI 10.1162/rest.89.2.221
+   EICHENGREEN B, 2009, 14904 NBER
+   Fang YW, 2014, J BANK FINANC, V39, P160, DOI 10.1016/j.jbankfin.2013.11.003
+   Fouejieu A., 2013, CONCERN FINANC UNPUB
+   Frappa S, 2010, J FINANC STABIL, V6, P243, DOI 10.1016/j.jfs.2010.06.001
+   Geraats PM, 2002, ECON J, V112, pF532, DOI 10.1111/1468-0297.00082
+   Goncalves CES, 2009, J MONEY CREDIT BANK, V41, P233, DOI 10.1111/j.1538-4616.2008.00195.x
+   Horvath R., 2013, FIW WORKING PAPERS, V113
+   Houston JF, 2010, J FINANC ECON, V96, P485, DOI 10.1016/j.jfineco.2010.02.008
+   Ioannidou V. P., 2009, MONETARY POLIC UNPUB
+   Issing O., 2009, BIS WORKING PAPERS, V273
+   Jimenez G., 2014, ECONOMETRIC IN PRESS
+   Johnson DR, 2002, J MONETARY ECON, V49, P1521, DOI 10.1016/S0304-3932(02)00181-2
+   King M., 2012, STAMP MEM LECT UNPUB
+   La Porta R, 1998, J POLIT ECON, V106, P1113, DOI 10.1086/250042
+   La Porta R, 2008, J ECON LIT, V46, P285, DOI 10.1257/jel.46.2.285
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   LaPorta R, 1997, J FINANC, V52, P1131, DOI 10.1111/j.1540-6261.1997.tb02727.x
+   Lepetyuk V, 2013, ECON J, V123, P962, DOI 10.1111/ecoj.12024
+   Levine R, 1998, J MONEY CREDIT BANK, V30, P596, DOI 10.2307/2601259
+   Lozano-Vivas A., 2002, J PRODUCTIVITY ANAL, P18
+   Lucas RE, 2000, ECONOMETRICA, V68, P247
+   Maudos J, 2002, J INT FINANC MARK I, V12, P33, DOI DOI 10.1016/S1042-4431(01)00051-8
+   Maudos J, 2007, J BANK FINANC, V31, P2103, DOI 10.1016/j.jbankfin.2006.10.028
+   Mercieca S, 2007, J BANK FINANC, V31, P1975, DOI 10.1016/j.jbankfin.2007.01.004
+   Mishkin F. S., 2004, NBER WORKING PAPERS, V10646
+   Mishkin F. S., 2011, NBER WORKING PAPER S
+   Mishkin FS, 1999, J MONETARY ECON, V43, P579, DOI 10.1016/S0304-3932(99)00006-9
+   Roger S., 2006, 06278 IMF
+   Roger S., 2010, FINANC DEV, V47, P46
+   ROSENBAUM PR, 1983, BIOMETRIKA, V70, P41, DOI 10.2307/2335942
+   Roy AD, 1952, ECONOMETRICA, V20, pA431
+   Schwartz A., 1995, EC AFFAIRS, V15, P21, DOI DOI 10.1111/j.1468-0270.1995.tb00493.x
+   Svensson L., 2008, NEW PALGRAVE DICT EC
+   Svensson L. E. O., 2009, WORKSH NEW FRAM MON
+   Thornton Daniel L., 2009, WHAT LIBOR OIS SPREA
+   White W. R., 2006, BIS WORKING PAPERS, V205
+NR 66
+TC 14
+Z9 14
+U1 1
+U2 14
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD OCT
+PY 2015
+VL 59
+BP 76
+EP 97
+DI 10.1016/j.jbankfin.2015.05.016
+PG 22
+WC Business, Finance; Economics
+SC Business & Economics
+GA CR8EA
+UT WOS:000361582700006
+DA 2019-12-28
+ER
+
+PT J
+AU Tsai, YS
+   Lin, CC
+   Chen, HY
+AF Tsai, Yung-Shun
+   Lin, Chien-Chih
+   Chen, Hsiao-Yin
+TI Optimal diversification, bank value maximization and default probability
+SO APPLIED ECONOMICS
+LA English
+DT Article
+DE diversification; default probability; systemic risk; banking; business
+   cycle
+ID DISCOUNT
+AB This study argues that the optimal level of diversification for the maximization of bank value is asymmetrical and depends on the business cycle. During times of expansion, systematic risks are relatively low; hence, the effect of raising systematic risks from portfolio diversification is slight. Consequently, the benefit of reducing individual risks dominates any loss from raising systematic risks, leading to a higher value for a bank by holding a diversified portfolio of assets. On the contrary, during times of recession, systematic risks are relatively high. It is more likely that the loss from raising systematic risks surpasses the benefit of reducing individual risks from portfolio diversification. Consequently, more diversification leads to lower bank values. Finally, some empirical evidence from the banks in Taiwan is provided.
+C1 [Tsai, Yung-Shun] Asia Univ, Dept Finance, Taichung City 413, Peoples R China.
+   [Lin, Chien-Chih] Tamkang Univ, Dept Banking & Finance, New Taipei City 25137, Taiwan.
+   [Chen, Hsiao-Yin] Kainan Univ, Dept Business & Entrepreneurial Management, Taoyuan 33857, Taiwan.
+RP Lin, CC (reprint author), Tamkang Univ, Dept Banking & Finance, New Taipei City 25137, Taiwan.
+EM 139714@mail.tku.edu.tw
+FU Asia University [101-asia-10]; National Science CouncilNational Science
+   Council of Taiwan [NSC 103-2410-H-032-024]
+FX This work was supported by Asia University [grant number 101-asia-10]
+   and the National Science Council [grant number NSC 103-2410-H-032-024].
+CR Campa JM, 2002, J FINANC, V57, P1731, DOI 10.1111/1540-6261.00476
+   Elsas R, 2010, J BANK FINANC, V34, P1274, DOI 10.1016/j.jbankfin.2009.11.024
+   Laeven L, 2007, J FINANC ECON, V85, P331, DOI 10.1016/j.jfineco.2005.06.001
+   LANG LHP, 1994, J POLIT ECON, V102, P1248, DOI 10.1086/261970
+   PATRICK HT, 1994, FINANCIAL DEV JAPAN
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Whited TM, 2001, J FINANC, V56, P1667, DOI 10.1111/0022-1082.00385
+NR 8
+TC 2
+Z9 2
+U1 0
+U2 12
+PU ROUTLEDGE JOURNALS, TAYLOR & FRANCIS LTD
+PI ABINGDON
+PA 4 PARK SQUARE, MILTON PARK, ABINGDON OX14 4RN, OXFORDSHIRE, ENGLAND
+SN 0003-6846
+EI 1466-4283
+J9 APPL ECON
+JI Appl. Econ.
+PY 2015
+VL 47
+IS 24
+BP 2488
+EP 2499
+DI 10.1080/00036846.2015.1008766
+PG 12
+WC Economics
+SC Business & Economics
+GA CB9YF
+UT WOS:000349989800004
+DA 2019-12-28
+ER
+
+PT J
+AU Oet, MV
+   Dooley, JM
+   Janosko, AC
+   Gramlich, D
+   Ong, SJ
+AF Oet, Mikhail V.
+   Dooley, John M.
+   Janosko, Amanda C.
+   Gramlich, Dieter
+   Ong, Stephen J.
+TI Supervising System Stress in Multiple Markets
+SO RISKS
+LA English
+DT Article
+DE financial stress; supervision; financial system stability; systemic risk
+ID CRISES
+AB This paper develops an extended financial stress measure that considers the supervisory objective of identifying risks to the stability of the financial system. The measure provides a continuous and bounded signal of financial stress using daily public market data. Broad coverage of material financial system markets over time is achieved by leveraging dynamic credit weights. We consider how this measure can be used to monitor, analyze, and alert financial system stress.
+C1 [Oet, Mikhail V.; Dooley, John M.; Janosko, Amanda C.; Ong, Stephen J.] Fed Reserve Bank Cleveland, Supervis & Regulat, 1455 E 6th St, Cleveland, OH 44114 USA.
+   [Oet, Mikhail V.] Case Western Reserve Univ, Cleveland, OH 44106 USA.
+   [Gramlich, Dieter] Baden Wuerttemberg Cooperat State Univ, Banking, D-89518 Heidenheim, Germany.
+RP Oet, MV (reprint author), Fed Reserve Bank Cleveland, Supervis & Regulat, 1455 E 6th St, Cleveland, OH 44114 USA.
+EM mikhail.v.oet@clev.frb.org; john.m.dooley@clev.frb.org;
+   amanda.c.janosko@clev.frb.org; gramlich@dhbw-heidenheim.de;
+   stephen.j.ong@clev.frb.org
+CR Allen F., 2000, COMP FINANCIAL SYSTE
+   Allen F., 2010, INT REV FINANC, V10, P1, DOI DOI 10.1111/J.1468-2443.2009.01103.X
+   Bai JS, 1998, ECONOMETRICA, V66, P47, DOI 10.2307/2998540
+   Bordo M.D., 2000, 2000005B FED RES BAN
+   Borio C., 2002, BIS Q REV, V7, P43
+   Brave S., 2011, EC PERSPECTIVES, P22
+   CAPRIO G, 1996, 1620 WORLD BANK
+   Carlson M., 2012, 201202 FED RES BOARD
+   Detragiache E., 2005, 9605 IMF
+   FAMA EF, 1989, J FINANC ECON, V25, P23, DOI 10.1016/0304-405X(89)90095-0
+   Freixas X., 2008, MICROECONOMICS BANKI
+   Gramlich D., 2010, BANKS BANK SYSTEMS, V5, P199
+   Gramlich D., 2012, J FINANC MANAG ANAL, V25, P1
+   Hakkio C.S., 2009, ECON REV, V2, P5
+   Hatzius J., 2010, 16150 NBER
+   Haubrich J., 2006, DOES YIELD CURVE SIG
+   Hollo D., 2012, 1426 ECB
+   Illing M., 2006, J FINANCIAL STABILIT, V2, P243, DOI DOI 10.1016/j.jfs.2006.06.002
+   *IMF, 2009, GLOB FIN STAB REP RE
+   Kaminsky GL, 1999, AM ECON REV, V89, P473, DOI 10.1257/aer.89.3.473
+   Kliesen Kevin L., 2010, FEDERAL RESERVE BANK
+   Korinek A., 2011, 2011WP13 NETW FIN I, DOI 10.2139/ssrn.1838600
+   Liu Y., 200314 BANK CAN
+   Lo Duca M, 2013, J BANK FINANC, V37, P2183, DOI 10.1016/j.jbankfin.2012.06.010
+   McKinnon RI, 1996, NBER E A EC, V5, P7
+   Merton R. C., 1995, GLOBAL FINANCIAL SYS, P3
+   MIRON JA, 1986, AM ECON REV, V76, P125
+   Mishkin F.S., 1997, NBER WORKING PAPER S
+   Morgan J., 2011, 130 ECB
+   Oet M.V., 2015, EVALUATING INFORM VA
+   Oet M. V, 2011, 1130 FED RES BANK CL
+   Patel SA, 1998, FINANCIAL ANAL J, V54, P50, DOI DOI 10.2469/FAJ.V54.N6.2225
+   Reinhart C. M, 2008, 13882 NBER, V13882
+   Rosenberg M., FINANCIAL CONDITIONS
+   Sachs JD, 1996, BROOKINGS PAP ECO AC, P147
+   SCHWERT GW, 1989, J FINANC, V44, P1115, DOI 10.2307/2328636
+   Shiller R.J., 1989, STOCK MARKET VOLATIL
+   Siddiqi N., 2005, CREDIT RISK SCORECAR, P79
+   Simon Herbert A., 1962, P AM PHILOS SOC, V106, P467, DOI DOI 10.2307/985254
+   SOMERS RH, 1962, AM SOCIOL REV, V27, P799, DOI 10.2307/2090408
+   Song FH, 2010, ECON J, V120, P1021, DOI 10.1111/j.1468-0297.2009.02345.x
+   Thakor AV, 1996, J BANK FINANC, V20, P917, DOI 10.1016/0378-4266(95)00033-X
+   Thakor AV, 2001, REV FINANC STUD, V14, P577, DOI 10.1093/rfs/14.2.577
+   Trubin Mary, 2006, CURRENT ISSUES EC FI, V12
+   Weller CE, 2001, J DEV STUD, V38, P98, DOI 10.1080/00220380412331322201
+NR 45
+TC 2
+Z9 2
+U1 0
+U2 0
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+SN 2227-9091
+J9 RISKS
+JI Risks
+PD SEP
+PY 2015
+VL 3
+IS 3
+BP 365
+EP 389
+DI 10.3390/risks3030365
+PG 25
+WC Business, Finance
+SC Business & Economics
+GA CU0MS
+UT WOS:000363211800007
+OA DOAJ Gold
+DA 2019-12-28
+ER

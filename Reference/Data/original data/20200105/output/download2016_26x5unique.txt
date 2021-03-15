@@ -1,0 +1,388 @@
+
+PT J
+AU Savona, R
+   Ciavolino, E
+AF Savona, Roberto
+   Ciavolino, Enrico
+TI Sovereign and Hedge Fund Systemic Risks
+SO JOURNAL OF ALTERNATIVE INVESTMENTS
+LA English
+DT Article
+ID LIQUIDITY; MODELS
+C1 [Savona, Roberto] Univ Brescia, Dept Econ & Management, Financial Markets & Inst, Brescia, Italy.
+   [Ciavolino, Enrico] Univ Salento, Dept Hist Soc & Human Studies, Lecce, Italy.
+RP Savona, R (reprint author), Univ Brescia, Dept Econ & Management, Financial Markets & Inst, Brescia, Italy.
+EM roberto.savona@unibs.it; enrico.ciavolino@unisalento.it
+FU European Union's Seventh Framework ProgrammeEuropean Union (EU)
+   [320270-SYRTO]
+FX The authors were supported by the European Union's Seventh Framework
+   Programme (FP7-SSH/2007-2013) for research, technological development,
+   and demonstration under grant agreement No. 320270-SYRTO.
+CR Abreu D, 2002, J FINANC ECON, V66, P341, DOI 10.1016/S0304-405X(02)00227-1
+   Abreu D, 2003, ECONOMETRICA, V71, P173, DOI 10.1111/1468-0262.00393
+   Adams Z, 2014, J FINANC QUANT ANAL, V49, P575, DOI 10.1017/S0022109014000325
+   AUGUSTIN P, 2014, J INVESTMENT MANAGEM, V12, P65
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   bin Mohamad M., 1997, WALL STREET J
+   Boyson NM, 2010, J FINANC, V65, P1789, DOI 10.1111/j.1540-6261.2010.01594.x
+   Brown SJ, 2000, J PORTFOLIO MANAGE, V26, P95, DOI 10.3905/jpm.2000.319767
+   Brunnermeier MK, 2004, J FINANC, V59, P2013, DOI 10.1111/j.1540-6261.2004.00690.x
+   Cao C, 2013, J FINANC ECON, V109, P493, DOI 10.1016/j.jfineco.2013.03.009
+   Ciavolino E, 2012, ELECTRON J APPL STAT, V5, P458, DOI 10.1285/i20705948v5n3p458
+   Ciavolino E, 2013, J APPL STAT, V40, P508, DOI 10.1080/02664763.2012.745837
+   Ciavolino E, 2009, J NONPARAMETR STAT, V21, P1017, DOI 10.1080/10485250903009037
+   De Grauwe P, 2013, J INT MONEY FINANC, V34, P15, DOI 10.1016/j.jimonfin.2012.11.003
+   Fung W, 2004, FINANC ANAL J, V60, P65, DOI 10.2469/faj.v60.n5.2657
+   Fung W, 2001, REV FINANC STUD, V14, P313, DOI 10.1093/rfs/14.2.313
+   FUNG W., 2000, J EMPIR FINANC, V7, P1, DOI DOI 10.1016/S0927-5398(00)00005-0
+   Fung W., 2007, BANQUE FRANCE FINANC, V10, P55
+   Fung W., 2007, J INVESTMENT MANAGEM, V2, P56
+   GOLDBERGER AS, 1972, ECONOMETRICA, V40, P979, DOI 10.2307/1913851
+   Gropp R., 2014, FRBSF EC LETT, V11
+   Hilscher J, 2010, REV FINANC, V14, P235, DOI 10.1093/rof/rfq005
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P112, DOI 10.3905/jpm.2011.37.4.112
+   Lewis A., 2014, WALL STREET J
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Pulliam S., 2010, WALL STREET J
+   Savona R, 2014, EUR J OPER RES, V236, P282, DOI 10.1016/j.ejor.2013.12.014
+   Savona R, 2014, EUR J FINANC, V20, P1, DOI 10.1080/1351847X.2011.649216
+   Wallace C. P., 2012, FORTUNE
+   Wold H., 1975, QUANTITATIVE SOCIOLO, P307, DOI [DOI 10.1016/B978-0-12-103950-9.50017-4, 10.1016/B978-0-12-103950-9.50017-4]
+NR 30
+TC 3
+Z9 3
+U1 0
+U2 2
+PU INST INVESTOR INC
+PI NEW YORK
+PA 225 PARK AVE SOUTH, NEW YORK, NY 10003 USA
+SN 1520-3255
+EI 2168-8435
+J9 J ALTERN INVEST
+JI J. Altern. Invest.
+PD SPR
+PY 2016
+VL 18
+IS 4
+BP 98
+EP 108
+DI 10.3905/jai.2016.18.4.098
+PG 11
+WC Business, Finance
+SC Business & Economics
+GA FJ3LA
+UT WOS:000412632400008
+DA 2019-12-28
+ER
+
+PT J
+AU Hemche, O
+   Jawadi, F
+   Maliki, SB
+   Cheffou, AI
+AF Hemche, Omar
+   Jawadi, Fredj
+   Maliki, Samir B.
+   Cheffou, Abdoulkarim Idi
+TI On the study of contagion in the context of the subprime crisis: A
+   dynamic conditional correlation-multivariate GARCH approach
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Contagion; Subprime crisis; DCC-MGARCH model
+ID STOCK; INTERDEPENDENCE
+AB This paper investigates the contagion hypothesis for ten developed and emerging stock markets (France, Italy, UK, Japan, China, Argentina, Mexico, Tunisia, Morocco and Egypt) with respect to the US market in the context of the subprime crisis. In order to capture further time-variation in contagion effects and dynamic linkages between stock markets, our paper makes use of a DCC-MGARH model. Our findings make two interesting contributions to the field. First, we highlighted an increase in dynamic correlations following the subprime crisis for most markets under consideration with regard to the U.S. market. Second, with respect to the contagion test by Forbes and Rigobon (2002) that associates "pure" contagion with a significantly higher correlation between markets during the crisis, our results showed that the "pure" contagion hypothesis is not rejected for France, Italy, the UK or Mexico at the level of 1%, and for Argentina at 10%. Simple interdependence with the US market characterizes the other markets. Our findings thus offer interesting insights in terms of investment and diversification, and offer further insights into systemic risk in these regions. (C) 2014 Elsevier B.V. All rights reserved.
+C1 [Hemche, Omar; Maliki, Samir B.] Univ Tlemcen, MECAS Lab, Tilimsen, Algeria.
+   [Jawadi, Fredj] Univ Evry, F-91000 Evry, France.
+   [Cheffou, Abdoulkarim Idi] EDC Paris Business Sch, Paris, France.
+RP Jawadi, F (reprint author), Univ Evry, Batiment Poste,2 Rue Facteur Cheval, F-91000 Evry, France.
+EM fredj.jawadi@univ-evry.fr
+OI MALIKI, Samir Baha-Eddine/0000-0002-7905-8648
+CR Aggarwal R., 2005, INT REV FINANC ANAL, V14, P393, DOI DOI 10.1016/J.IRFA.2004.10.008
+   Aglietta M., 2009, LA CRISE
+   Arouri MEH, 2011, ECON BULL, V31, P960
+   Baur D, 2003, J MULTINATL FINANC M, V13, P405
+   BOLLERSLEV T, 1990, REV ECON STAT, V72, P498, DOI 10.2307/2109358
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   Bollerslev T., 1992, ECONOMET REV, V11, P143, DOI DOI 10.1080/07474939208800229
+   Boyer BH, 2006, J FINANC, V61, P957, DOI 10.1111/j.1540-6261.2006.00860.x
+   Calvo G., 1996, CAPITAL FLOWS LATIN
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Collins D., 2003, J ECON BUS, V55, P285, DOI DOI 10.1016/S0148-6195(03)00020-1
+   Corsetti G, 2005, J INT MONEY FINANC, V24, P1177, DOI 10.1016/j.jimonfin.2005.08.012
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Engle RF, 2001, WORKING PAPER
+   Forbes K., 2000, 7885 NBER
+   Forbes K. J., 2001, INT FINANCIAL CONTAG, P43, DOI DOI 10.1007/978-1-4757-3314-3_
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Horta P, 2008, CONTAGION EFFECTS US
+   Hwang I., 2010, FIN CORP GOV C 2010
+   Idi Cheffou A., 2014, WORKING PAPER
+   Iwatsubo K., 2007, J ASIAN EC, V18, P217
+   Kaminsky GL, 2000, J INT ECON, V51, P145, DOI 10.1016/S0022-1996(99)00040-9
+   Kearney C, 2006, RES INT BUS FINANC, V20, P305, DOI 10.1016/j.ribaf.2005.05.006
+   Kroner K.F., 1995, WORKING PAPER
+   Lahiani A., 2013, BANKERS MARKETS INVE, V126, P17
+   Louhichi W., 2014, JUMP CONTAGION NONPA
+   ORLEAN A, 1990, REV ECON, V41, P839, DOI 10.2307/3501792
+   Rim Setaputra, 2007, GLOB BUS FINANC REV, V12, P75
+   Rim Setaputra, 2008, BUS REV, V10, P357
+   Serwa D., 2005, EC SYSTEMS, V29, P344, DOI DOI 10.1016/j.ecosys.2005.05.003
+   Shiller R. J., 2008, SUBPRIME SOLUTION TO
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   Yang J, 2008, EUR J OPER RES, V184, P291, DOI 10.1016/j.ejor.2006.04.046
+NR 33
+TC 16
+Z9 17
+U1 0
+U2 29
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD JAN
+PY 2016
+VL 52
+SI SI
+BP 292
+EP 299
+DI 10.1016/j.econmod.2014.09.004
+PN A
+PG 8
+WC Economics
+SC Business & Economics
+GA CZ5CI
+UT WOS:000367119600028
+DA 2019-12-28
+ER
+
+PT J
+AU Hirtle, B
+   Kovner, A
+   Vickery, J
+   Bhanot, M
+AF Hirtle, Beverly
+   Kovner, Anna
+   Vickery, James
+   Bhanot, Meru
+TI Assessing financial stability: The Capital and Loss Assessment under
+   Stress Scenarios (CLASS) model
+SO JOURNAL OF BANKING & FINANCE
+LA English
+DT Article
+DE Capital; Bank; Stress testing; Systemic risk; Financial stability
+AB The CLASS model is a top-down capital stress testing framework that uses public data, simple econometric models and auxiliary assumptions to project the effect of macroeconomic scenarios on U.S. banking firms. Through the lens of the model, we find that the total banking system capital shortfall under stressful macroeconomic conditions began to rise 4 years before the financial crisis, peaking in the fourth quarter of 2008. The capital gap has since fallen sharply, and is now significantly below pre-crisis levels. In the cross-section, banking firms estimated to be most sensitive to macroeconomic conditions also have higher capital ratios, consistent with a "precautionary" view of bank capital, though this behavior is evident only since the crisis. We interpret our results as evidence that the resiliency of the U.S. banking system has improved since the financial crisis, and also as an illustration of the value of stress testing as a macroprudential policy tool. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Hirtle, Beverly; Kovner, Anna; Vickery, James] Fed Reserve Bank New York, New York, NY 10045 USA.
+   [Bhanot, Meru] Univ Chicago, Chicago, IL 60637 USA.
+RP Vickery, J (reprint author), Fed Reserve Bank New York, Res & Stat Grp, 33 Liberty St, New York, NY 10045 USA.
+EM james.vickery@ny.frb.org
+CR Acharya V. V., 2009, WORKING PAPER
+   Acharya V, 2014, J MONETARY ECON, V65, P36, DOI 10.1016/j.jmoneco.2014.04.014
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Berger AN, 2008, J FINANC SERV RES, V34, P123, DOI 10.1007/s10693-008-0044-5
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Board of Governors of the Federal Reserve System, 2009, OVERVIEW
+   Board of Governors of the Federal Reserve System, 2013, COMPR CAP AN REV 201
+   Board of Governors of the Federal Reserve System, 2012, COMPR CAP AN REV 201, P3012
+   Board of Governors of the Federal Reserve System, 2011, FED REGISTER, V76, P74631
+   Board of Governors of the Federal Reserve System, 2009, SUP CAP ASS PROGR DE
+   Board of Governors of the Federal Reserve System, 2013, METHODOLOGY
+   Board of Governors of the Federal Reserve System, 2014, DODD FRANK ACT STRES
+   Bookstaber R., 2013, 0010 OFF FIN RES
+   Calomiris Charles, 2012, J FINANCIAL INTERMED, V23, P400
+   CLARK T, 2007, FEDERAL RESERVE BANK, V13, P3
+   COMM. OF EUR. BANKING SUPERVISORS, 2010, AGGR OUTC 2010 EU WI
+   Covas FB, 2014, INT J FORECASTING, V30, P691, DOI 10.1016/j.ijforecast.2013.11.003
+   Eichengreen B, 2012, J INT MONEY FINANC, V31, P1299, DOI 10.1016/j.jimonfin.2012.02.002
+   Eisenbach Thomas, 2014, FEDERAL RESERVE BANK, V20, P29
+   Engle R, 2014, WORKING PAPER
+   European Banking Authority, 2011, 2011 EU WID STRESS T
+   Frame W. Scott, 2015, 20153 FRB
+   Greenlaw David, 2012, 1208 CHIC BOOTH
+   Guerrieri Luca, 2012, 201249 FED RES BOARD
+   Kapadia S., 2012, 456 BANK ENGL
+   Kapinos Pavel S., 2015, 201502 FDIC CTR
+   KAU JB, 1992, J MONEY CREDIT BANK, V24, P279, DOI 10.2307/1992718
+   Office of the Comptroller of the Currency Board of Governors of the Federal Reserve System Federal Deposit Insurance Corporation National Credit Union Administration and Office of Thrift Supervision, 2006, INT POL STAT ALL LOA
+   Wong Eric, 2009, 062009 HONG KONG MON
+NR 29
+TC 14
+Z9 14
+U1 0
+U2 11
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0378-4266
+EI 1872-6372
+J9 J BANK FINANC
+JI J. Bank Financ.
+PD AUG
+PY 2016
+VL 69
+SU 1
+BP S35
+EP S55
+DI 10.1016/j.jbankfin.2015.09.021
+PG 21
+WC Business, Finance; Economics
+SC Business & Economics
+GA DR7LS
+UT WOS:000380081800004
+DA 2019-12-28
+ER
+
+PT J
+AU de Souza, SRS
+AF Stancato de Souza, Sergio Rubens
+TI Capital requirements, liquidity and financial stability: The case of
+   Brazil
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article; Proceedings Paper
+CT 9th Conference on Risk, Financial Stability and Banking
+CY AUG 14-15, 2014
+CL Sao Paulo, BRAZIL
+SP Cent Bank Brazil, Bank Finland, Journal Financial Stabil
+DE Financial stability; Capital requirements; Risk attribution; Fire sales
+ID SYSTEMIC RISK; CONTAGION; BANK
+AB This paper simulates the effects of credit risk, changes in capital requirements and price shocks on the Brazilian banking system. We perform the analysis within the context of a model that integrates data on bilateral exposures in the interbank market with information about the liquidity profile of each financial institution. Asset prices in the model are determined endogenously as a function of the total volume of fire sales, thus creating the possibility that marking to market may trigger new rounds of fire sales and downward asset price spirals. The simulation results show that the Brazilian banking system is robust, as relatively large increases in the NPL ratio lead to only modest losses in the system. We also compute the contribution of each financial institution to systemic losses under severe shocks and find that contributions from medium-sized banks can be significant. However, if shocks become more severe, only large banks will contribute significantly to systemic losses. (C) 2015 Elsevier B.V. All rights reserved.
+C1 [Stancato de Souza, Sergio Rubens] Cent Bank Brazil, Res Dept, Brasilia, DF, Brazil.
+RP de Souza, SRS (reprint author), Cent Bank Brazil, Res Dept, Brasilia, DF, Brazil.
+EM sergio.souza@bcb.gov.br
+CR Adrian T., 2010, J FINANC INTERMED, V19, P418
+   AIKMAN D, 2009, FUNDING LIQUIDITY RI
+   Alessandri P, 2009, INT J CENT BANK, V5, P47
+   Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Barnhill T., 2011, IMF WORKING PAPERS, P1
+   Battiston S, 2012, J FINANC STABIL, V8, P138, DOI 10.1016/j.jfs.2012.01.002
+   Bluhm M., 2014, MONETARY POLICY IMPL
+   Borio C. E, 2009, OPERATIONAL FRAMEWOR
+   Borio C, 2014, J FINANC STABIL, V12, P3, DOI 10.1016/j.jfs.2013.06.001
+   Bravo-Benitez B., 2014, COMPUT EC
+   Brunnermeier MK, 2009, J ECON PERSPECT, V23, P77, DOI 10.1257/jep.23.1.77
+   CABALLERO RJ, 2009, FIRE SALES MODEL COM
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cocco J., 2005, LENDING RELATIONSHIP
+   Coval J, 2007, J FINANC ECON, V86, P479, DOI 10.1016/j.jfineco.2006.09.007
+   David A., 2011, WORKING PAPER
+   Degryse H., 2007, INT J CENT BANK, V3, P123, DOI DOI 10.2139/ssrn.1691645
+   Duffie D., 2006, VALUATION COUNTER MA
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Ellul A., 2010, REGULATORY PRESSURE
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Francis WB, 2012, J BANK FINANC, V36, P803, DOI 10.1016/j.jbankfin.2011.09.011
+   Freixas X, 2000, J MONEY CREDIT BANK, V32, P611, DOI 10.2307/2601198
+   Gai P, 2010, P ROYAL SOC LOND MAT
+   Gauthier C, 2012, J FINANC INTERMED, V21, P594, DOI 10.1016/j.jfi.2012.01.005
+   Georg C.-P., 2011, EFFECT INTERBANK NET
+   Halaj G., 2015, QUANT FINANC
+   Halaj G, 2013, WORKING PAPER SERIES, V1506
+   in't Veld D., 2014, TI20140982 TINB I
+   Jupetipe F.K.N., 2014, THESIS
+   Kok C., 2013, WORKING PAPER SERIES
+   Lee SH, 2013, J FINANC STABIL, V9, P1, DOI 10.1016/j.jfs.2012.12.001
+   Lengnick M., 2012, EC DISCUSSION PAPERS
+   Mitchell M, 2007, AM ECON REV, V97, P215, DOI 10.1257/aer.97.2.215
+   Montagna M., 2013, 1873 KIEL I WORLD EC
+   Shin HS, 2008, J FINANC INTERMED, V17, P315, DOI 10.1016/j.jfi.2008.02.003
+   Upper C, 2004, EUR ECON REV, V48, P827, DOI 10.1016/j.euroecorev.2003.12.009
+   van den End JW, 2012, J FINANC STABIL, V8, P107, DOI 10.1016/j.jfs.2011.05.003
+   VANLELYVELD I, 2006, INT J CENT BANK, V2, P99
+NR 40
+TC 9
+Z9 9
+U1 0
+U2 11
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD AUG
+PY 2016
+VL 25
+BP 179
+EP 192
+DI 10.1016/j.jfs.2015.10.001
+PG 14
+WC Business, Finance; Economics
+SC Business & Economics
+GA DU5LD
+UT WOS:000382252300014
+DA 2019-12-27
+ER
+
+PT J
+AU Jung, SS
+   Chang, W
+AF Jung, Sean S.
+   Chang, Woojin
+TI Clustering stocks using partial correlation coefficients
+SO PHYSICA A-STATISTICAL MECHANICS AND ITS APPLICATIONS
+LA English
+DT Article
+DE Financial market; Stylized facts; Pearson correlation; Partial
+   correlation; Agglomerative clustering
+ID FINANCIAL-MARKETS; RETURNS; RISK; PORTFOLIOS; SELECTION; CONTAGION;
+   PRICES
+AB A partial correlation analysis is performed on the Korean stock market (KOSPI). The difference between Pearson correlation and the partial correlation is analyzed and it is found that when conditioned on the market return, Pearson correlation coefficients are generally greater than those of the partial correlation, which implies that the market return tends to drive up the correlation between stock returns. A clustering analysis is then performed to study the market structure given by the partial correlation analysis and the members of the clusters are compared with the Global Industry Classification Standard (GICS). The initial hypothesis is that the firms in the same GICS sector are clustered together since they are in a similar business and environment. However, the result is inconsistent with the hypothesis and most clusters are a mix of multiple sectors suggesting that the traditional approach of using sectors to determine the proximity between stocks may not be sufficient enough to diversify a portfolio. (C) 2016 Elsevier B.V. All rights reserved.
+C1 [Jung, Sean S.; Chang, Woojin] Seoul Natl Univ, Dept Ind Engn, Seoul 151, South Korea.
+RP Chang, W (reprint author), Seoul Natl Univ, Dept Ind Engn, Seoul 151, South Korea.
+EM changw@snu.ac.kr
+CR Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Caporale G. M, 2005, J EMPIR FINANC, V12, P476, DOI DOI 10.1016/J.JEMPFIN.2004.02.005
+   Chi X., 2012, ACTA PHYS POL B, V43, P2021
+   Chiang TC, 2007, J INT MONEY FINANC, V26, P1206, DOI 10.1016/j.jimonfin.2007.06.005
+   Cont R, 2001, QUANT FINANC, V1, P223, DOI [10.1088/1469-7688/1/2/304, 10.1080/713665670]
+   Ding Z., 1993, J EMPIR FINANC, V1, P83, DOI DOI 10.1016/0927-5398(93)90006-D
+   EUN CS, 1989, J FINANC QUANT ANAL, V24, P241, DOI 10.2307/2330774
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Gabaix X, 2003, NATURE, V423, P267, DOI 10.1038/nature01624
+   Kenett D. Y., 2012, INT J BIFURCAT CHAOS, V22, P14
+   Kenett D. Y., 2011, PLOS ONE, V6, DOI [10.1371/journal.pone.0019378, DOI 10.1371/JOURNAL.PONE.0019378]
+   Kenett DY, 2015, QUANT FINANC, V15, P569, DOI 10.1080/14697688.2014.946660
+   Kenett DY, 2010, PLOS ONE, V5, DOI 10.1371/journal.pone.0015032
+   LINTNER J, 1965, REV ECON STAT, V47, P13, DOI 10.2307/1924119
+   LINTNER J, 1965, J FINANC, V20, P587, DOI 10.2307/2977249
+   LONGIN F, 1995, J INT MONEY FINANC, V14, P3, DOI 10.1016/0261-5606(94)00001-H
+   Maheu JM, 2000, J BUS ECON STAT, V18, P100, DOI 10.2307/1392140
+   MANDELBROT B., 1997, FRACTALS SCALING FIN
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   ROLL R, 1977, J FINANC ECON, V4, P129, DOI 10.1016/0304-405X(77)90009-5
+   SHARPE WF, 1964, J FINANC, V19, P425, DOI 10.2307/2977928
+   Tseng JJ, 2011, PHYSICA A, V390, P1300, DOI 10.1016/j.physa.2010.12.002
+   Tumminello M, 2010, J ECON BEHAV ORGAN, V75, P40, DOI 10.1016/j.jebo.2010.01.004
+   Uechi L, 2015, PHYSICA A, V421, P488, DOI 10.1016/j.physa.2014.11.055
+   Zhang YJ, 2015, PHYSICA A, V421, P377, DOI 10.1016/j.physa.2014.11.051
+NR 25
+TC 8
+Z9 10
+U1 0
+U2 18
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0378-4371
+EI 1873-2119
+J9 PHYSICA A
+JI Physica A
+PD NOV 15
+PY 2016
+VL 462
+BP 410
+EP 420
+DI 10.1016/j.physa.2016.06.094
+PG 11
+WC Physics, Multidisciplinary
+SC Physics
+GA DT9SF
+UT WOS:000381841900037
+DA 2019-12-27
+ER

@@ -1,0 +1,509 @@
+
+PT J
+AU Ang, A
+   Longstaff, FA
+AF Ang, Andrew
+   Longstaff, Francis A.
+TI Systemic sovereign credit risk: Lessons from the US and Europe
+SO JOURNAL OF MONETARY ECONOMICS
+LA English
+DT Article
+ID TERM STRUCTURE; FINANCIAL CONTAGION; YIELD SPREADS; DEFAULT RISK;
+   MARKET; LIQUIDITY; BONDS; DEBT; PANICS; MODEL
+AB We study the nature of systemic sovereign credit risk using CDS spreads for the U.S. Treasury, individual U.S. states, and major Eurozone countries. Using a multifactor affine framework that allows for both systemic and sovereign-specific credit shocks, we find that there is much less systemic risk among U.S. sovereigns than among Eurozone sovereigns. We find that both U.S. and Eurozone systemic sovereign risk are strongly related to financial market variables. These results provide strong support for the view that systemic sovereign risk has its roots in financial markets rather than in macroeconomic fundamentals. (c) 2013 Elsevier B.V. All rights reserved.
+C1 [Ang, Andrew] Columbia Business Sch, New York, NY 10025 USA.
+   [Longstaff, Francis A.] Univ Calif Los Angeles, Anderson Sch, Los Angeles, CA 90095 USA.
+RP Longstaff, FA (reprint author), Univ Calif Los Angeles, Anderson Sch, 110 Westwood Plaza, Los Angeles, CA 90095 USA.
+EM aa610@columbia.edu; francis.longstaff@anderson.ucla.edu
+CR Allen F, 2000, J POLIT ECON, V108, P1, DOI 10.1086/262109
+   Anderberg M. R., 1973, CLUSTER ANAL APPL
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Ang A, 2010, J FINANC, V65, P565, DOI 10.1111/j.1540-6261.2009.01545.x
+   Bayliss G.E., 1964, ARKANSAS HIST Q, V23, P243
+   Berndt A., 2008, WORKING PAPER
+   Blundell-Wignall A., 2012, OECD J FINANCIAL MAR, V2, P1
+   BOEHMER E, 1990, J FINANC, V45, P1517, DOI 10.2307/2328748
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   Calomiris C, 1991, FINANCIAL MARKETS FI
+   Calomiris CW, 2003, AM ECON REV, V93, P1615, DOI 10.1257/000282803322655473
+   Caporin M, 2012, WORKING PAPER
+   Dai Q, 2002, J FINANC ECON, V63, P415, DOI 10.1016/S0304-405X(02)00067-3
+   Darrell D, 2003, PRINC SER FINANC, P1
+   Das SR, 2007, J FINANC, V62, P93, DOI 10.1111/j.1540-6261.2007.01202.x
+   DIAMOND DW, 1983, J POLIT ECON, V91, P401, DOI 10.1086/261155
+   Duffie D, 2000, ECONOMETRICA, V68, P1343, DOI 10.1111/1468-0262.00164
+   Duffie D, 1997, J FINANC, V52, P1287, DOI 10.2307/2329437
+   Duffie D, 2003, J FINANC, V58, P119, DOI 10.1111/1540-6261.00520
+   Duffie D, 1999, REV FINANC STUD, V12, P687, DOI 10.1093/rfs/12.4.687
+   Duffle D., 1999, FINANCIAL ANAL J, P73, DOI DOI 10.2469/FAJ.V55.N1.2243
+   EATON J, 1981, REV ECON STUD, V48, P289, DOI 10.2307/2296886
+   EDWARDS S, 1984, AM ECON REV, V74, P726
+   Edwards S., 2002, WORKING PAPER
+   English WB, 1996, AM ECON REV, V86, P259
+   Fleckenstein Matthias, J FINANCE IN PRESS
+   Geyer A., 2004, Review of Finance, V8, P171, DOI 10.1023/B:EUFI.0000035191.62455.32
+   Giesecke K, 2011, J FINANC ECON, V102, P233, DOI 10.1016/j.jfineco.2011.01.011
+   GORTON G, 1988, OXFORD ECON PAP, V40, P751, DOI 10.1093/oxfordjournals.oep.a041885
+   Kodres LE, 2002, J FINANC, V57, P769, DOI 10.1111/1540-6261.00441
+   Lando D., 1998, REV DERIV RES, V2, P99, DOI DOI 10.1007/BF01531332
+   Longstaff FA, 2005, J FINANC, V60, P2213, DOI 10.1111/j.1540-6261.2005.00797.x
+   Longstaff FA, 2011, AM ECON J-MACROECON, V3, P75, DOI 10.1257/mac.3.2.75
+   Markham JW, 2002, FINANCIAL HIST US
+   Mauro P, 2002, Q J ECON, V117, P695, DOI 10.1162/003355302753650364
+   MCGRANE R. C., 1935, FOREIGN BONDHOLDERS
+   Pan J, 2008, J FINANC, V63, P2345, DOI 10.1111/j.1540-6261.2008.01399.x
+   Pirinsky CA, 2011, FINANC MANAGE, V40, P455, DOI 10.1111/j.1755-053X.2011.01149.x
+   Reaves L., 1943, ARKANSAS HIST Q, V2, P316
+   Reinhart CM, 2009, THIS TIME IS DIFFERENT: EIGHT CENTURIES OF FINANCIAL FOLLY, P1
+   Reinhart Carmen M., 2008, 13946 NBER
+   Schultz P., 2012, WORKING PAPER
+   Sturzenegger F, 2008, J INT MONEY FINANC, V27, P780, DOI 10.1016/j.jimonfin.2007.04.014
+   Zhang X., 2011, 111762DSF29 TI
+NR 44
+TC 105
+Z9 105
+U1 3
+U2 47
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0304-3932
+J9 J MONETARY ECON
+JI J. Monetary Econ.
+PD JUL
+PY 2013
+VL 60
+IS 5
+BP 493
+EP 510
+DI 10.1016/j.jmoneco.2013.04.009
+PG 18
+WC Business, Finance; Economics
+SC Business & Economics
+GA 210UY
+UT WOS:000323861400001
+DA 2019-12-27
+ER
+
+PT J
+AU Wilkinson, A
+   Kupers, R
+   Mangalagiu, D
+AF Wilkinson, Angela
+   Kupers, Roland
+   Mangalagiu, Diana
+TI How plausibility-based scenario practices are grappling with complexity
+   to appreciate and address 21st century challenges
+SO TECHNOLOGICAL FORECASTING AND SOCIAL CHANGE
+LA English
+DT Article
+DE Complexity; Scenarios; Plausibility; Evolutionary futures
+ID KNOWLEDGE; MODELS
+AB Scenarios are best described as a highly innovative, pragmatic field of practice grappling with theoretical grounding. Complexity science, in contrast, is a theoretically grounded, highly conceptual field searching for more effective and extensive application in practice. This paper explores how these largely separate fields might be better related in enabling groups and organizations cope with uncertainty. It focuses on non-probabilistic scenarios and the so-called Intuitive logics school of scenarios, with its emphasis on plausible, alternative futures because of its increasing dominance. The benefits of incorporating key insights from complexity science into scenario practices seems an obvious 'must have' in engaging complex, messy and puzzling situations and guiding action in the 21st century. Similarly, the persistent and recent significantly increased interest in scenarios offers insights relevant to extending complexity ideas beyond academe and inquiry, into broader spheres of corporate strategy, public policy-making and change management. Plausibility-based scenarios are being deployed to grapple with complexity for a variety of different purposes, including strategic renewal, anticipating systemic risks and enabling the large scale, transitions implied in meeting the challenge of global, sustainable development This paper suggests that intuitive logics scenarios offer an 'on-ramp' to complexity, encouraging attention to the systemic framing of systems, situations and problems and enabling complexity concepts to penetrate beyond the domains of scholarship. It notes that complexity thinking challenges one-off scenario building practices, especially when the scenarios are developed using the deductive building method. As plausibility-based scenario practices continue to evolve they encounter practical challenges of linking to other processes, relating to other futures methods, broadening beyond the organizational scale, engaging heterogeneous agents and in enabling deeper reframing, exposing deeply held beliefs about progress and assumptions about change management in complex systems. This paper concludes with implications for practice and future scholarship associated with each challenge. (C) 2012 Elsevier Inc. All rights reserved.
+C1 [Wilkinson, Angela] Univ Oxford, Smith Sch Enterprise & Environm, Futures Programme, Oxford OX1 2BQ, England.
+   [Kupers, Roland] THNK, NL-1014 BE Amsterdam, Netherlands.
+   [Kupers, Roland; Mangalagiu, Diana] Univ Oxford, Smith Sch Enterprise & Environm, Oxford OX1 2BQ, England.
+   [Mangalagiu, Diana] Reims Management Sch, Reims, France.
+RP Wilkinson, A (reprint author), Univ Oxford, Smith Sch Enterprise & Environm, Futures Programme, Hayes House,75 George St, Oxford OX1 2BQ, England.
+EM angela.wilkinson@smithschool.ox.ac.uk;
+   roland.kupers@smithschool.ox.ac.uk;
+   diana.mangalagiu@smithschool.ox.ac.uk
+CR Ackoff R., 1974, REDESIGNING FUTURE
+   Alcamo J., 2011, ENV FUTURES PRACTICE
+   [Anonymous], 2011, SHELL EN SCEN 2050 S
+   [Anonymous], 2010, IEA EN TECHN PERSP S
+   Auchincloss AH, 2008, AM J EPIDEMIOL, V168, P1, DOI 10.1093/aje/kwn118
+   Axelrod R., 1997, COMPLEXITY COOPERATI
+   Bain & Company, 2011, MAN TOOLS TRENDS 201
+   Barnes M., 2003, EVALUATION, V9, P263
+   Beinhocker E. D., 2006, ORIGIN WEALTH EVOLUT
+   Berkhout F, 2002, GLOBAL ENVIRON CHANG, V12, P83, DOI 10.1016/S0959-3780(02)00006-7
+   Bernard M., 2010, BUSINESS PLANNING TU
+   Borjeson L, 2006, FUTURES, V38, P723, DOI 10.1016/j.futures.2005.12.002
+   Bradfield R, 2005, FUTURES, V37, P795, DOI 10.1016/j.futures.2005.01.003
+   Burrell G., 1979, SOCIOLOGICAL PARADIG
+   Burt G., 2010, BUSINESS PLANNING TU
+   Burt G, 2007, TECHNOL FORECAST SOC, V74, P731, DOI 10.1016/j.techfore.2006.08.010
+   Byrne D., 1998, COMPLEXITY THEORY SO
+   Christakis NA, 2007, NEW ENGL J MED, V357, P370, DOI 10.1056/NEJMsa066082
+   Cilliers P, 2005, FUTURES, V37, P605, DOI 10.1016/j.futures.2004.11.001
+   Colander D., 2011, AM ECON REV, V98, P236
+   Collyns N., 1998, BUSINESS NETWORK NEW, V9
+   Cornelius P., 1985, CALIFORNIA MANAGEMEN, V48, P92
+   EMERY FE, 1965, HUM RELAT, V18, P21, DOI 10.1177/001872676501800103
+   Eriksson EA, 2008, TECHNOL FORECAST SOC, V75, P462, DOI 10.1016/j.techfore.2008.02.006
+   Flowers B.S., 2010, FINANCIAL CRISIS
+   Franco L.A., 2012, TECHNOLOGICAL FORECA
+   Gavrilets S., 2004, FITNESS LANDSCAPES O
+   Gintis H., 2000, GAME THEORY EVOLVING
+   GODET M, 2001, CREATING FUTURES SCE
+   de Haan J, 2011, TECHNOL FORECAST SOC, V78, P90, DOI 10.1016/j.techfore.2010.10.008
+   Helbing D, 1998, PHYS REV LETT, V81, P3042, DOI 10.1103/PhysRevLett.81.3042
+   Henrichs T., 2010, SCENARIO DEV ANAL FO, P175
+   Huff AS, 2000, ACAD MANAGE REV, V25, P288, DOI 10.2307/259014
+   HUSS WR, 1987, LONG RANGE PLANN, V20, P21, DOI 10.1016/0024-6301(87)90152-X
+   IPCC, 1990, 1 IPCC
+   Kahane A., 2004, SOLVING TOUGH PROBLE
+   Kahn H., 1967, YEAR 2000 FRAMEWORK
+   KAUFFMAN SA, 1991, J THEOR BIOL, V149, P467, DOI 10.1016/S0022-5193(05)80094-3
+   Kurtz CF, 2003, IBM SYST J, V42, P462, DOI 10.1147/sj.423.0462
+   Linstone HA, 1999, TECHNOL FORECAST SOC, V62, P79, DOI 10.1016/S0040-1625(99)00034-7
+   MacKay B., 2006, INT STUDIES MANAGEME, V36, P93
+   Mangalagiu D., 2012, REFRAMING PROBLEM CL
+   MANNERMAA M, 1991, FUTURES, V23, P349, DOI 10.1016/0016-3287(91)90111-E
+   Mannermaa M., 1988, SYSTEMS PRACTICE, V1, P279
+   Michael D. N., 1973, LEARNING PLAN PLANNI
+   Moss RH, 2010, NATURE, V463, P747, DOI 10.1038/nature08823
+   Nakicenovic N., 2000, SPECIAL REPORT EMISS
+   Phillips F, 2000, TECHNOL FORECAST SOC, V64, P1, DOI 10.1016/S0040-1625(99)00076-1
+   Prigogine I, 1984, ORDER OUT CHAOS MANS
+   Prigogine Ilya, 1984, ORDER OUT CHAOS
+   Ramirez R., 2008, BUSINESS PLANNING TU
+   Ramirez R, 2011, LONG RANGE PLANN, V44, P250, DOI 10.1016/j.lrp.2011.04.003
+   Ramirez R, 2011, FUTURES, V43, P478, DOI 10.1016/j.futures.2010.12.005
+   RITTEL HWJ, 1973, POLICY SCI, V4, P155, DOI 10.1007/BF01405730
+   Robinson DKR, 2009, TECHNOL FORECAST SOC, V76, P1222, DOI 10.1016/j.techfore.2009.07.015
+   Roubelat F, 2006, FUTURES, V38, P519, DOI 10.1016/j.futures.2005.09.001
+   Scheffer M, 2009, NATURE, V461, P53, DOI 10.1038/nature08227
+   SCHELLING TC, 1971, J MATH SOCIOL, V1, P143, DOI 10.1080/0022250X.1971.9989794
+   Schwartz P., 1991, ART LONG VIEW PLANNI
+   Selsky J.W., 2008, BUSINESS PLANNING TU
+   Shoemaker P.J.H., 2002, PROFITING UNCERTAINT
+   Sondeijker S, 2006, FORESIGHT, V8, P15, DOI 10.1108/14636680610703063
+   van der Heijden K, 2006, SCENARIOS ART STRATE
+   van Klooster Susan, 2006, FUTURES, V38, P15
+   van Notten PWF, 2003, FUTURES, V35, P423, DOI 10.1016/S0016-3287(02)00090-3
+   van Vliet M, 2010, FUTURES, V42, P1, DOI 10.1016/j.futures.2009.08.005
+   VANDERHEIJDEN K, 2002, 6 SENSE
+   Vasileiadou E, 2010, FUTURES, V42, P1176, DOI 10.1016/j.futures.2010.07.001
+   Von Korff Y, 2007, P CAIWA BAS
+   WACK P, 1985, HARVARD BUS REV, V63, P139
+   Walton JS, 2008, ADV DEV HUM RESOUR, V10, P147, DOI 10.1177/1523422307304101
+   Wbcsd, VIS 2050 NEW AG BUS
+   WBCSD, 2002, BUS WORLD WAT 3 SCEN
+   Weick K., 1979, SOCIAL PSYCHOL ORG
+   Wilkinson A, 2010, J FUTURES STUD, V14, P45
+   Wilkinson A, 2012, FUTURES, V44, P372, DOI 10.1016/j.futures.2011.12.001
+   Wilkinson A, 2009, J FUTURES STUD, V13, P107
+   Wilkinson A, 2008, ENVIRON RES LETT, V3, DOI 10.1088/1748-9326/3/4/045017
+   Wright A., 2005, MANAGE DECIS, V41, P86, DOI DOI 10.1108/00251740510572506
+   Zurek MB, 2007, TECHNOL FORECAST SOC, V74, P1282, DOI 10.1016/j.techfore.2006.11.005
+NR 80
+TC 38
+Z9 40
+U1 4
+U2 25
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 0040-1625
+EI 1873-5509
+J9 TECHNOL FORECAST SOC
+JI Technol. Forecast. Soc. Chang.
+PD MAY
+PY 2013
+VL 80
+IS 4
+BP 699
+EP 710
+DI 10.1016/j.techfore.2012.10.031
+PG 12
+WC Business; Regional & Urban Planning
+SC Business & Economics; Public Administration
+GA 120HU
+UT WOS:000317162200011
+OA Green Published
+DA 2019-12-28
+ER
+
+PT J
+AU McConnell, P
+   Blacker, K
+AF McConnell, Patrick
+   Blacker, Keith
+TI Systemic operational risk: does it exist and, if so, how do we regulate
+   it?
+SO JOURNAL OF OPERATIONAL RISK
+LA English
+DT Article
+AB Since the global financial crisis, banking regulators and academics have extended the traditional, narrow definition of "systemic risk" to encompass concepts such as "interconnectedness" and "shadow banking". But, at the time of writing, a definition of systemic risk that covers all of the factors that precipitated the global financial crisis is still emerging. This paper first describes the debate around the emerging definition(s) of systemic risk and discusses some of the initiatives to address systemic risk by international regulators. These initiatives include microprudential regulations, such as increasing capital for systemically important banks, and macroprudential initiatives, such as the creation of the European Systemic Risk Board. Recognizing that systemic risks arise not only from credit and market risk factors, this paper views systemic risk through the lens of operational risk, arguing that key risk factors, especially people and process risks, were pervasive across the global financial industry prior to the global financial crisis and, consequently, operational risk must be considered as a contributor to, and in some instances a trigger for, systemic risk. The paper goes on to describe the microprudential approach to operational risk within the Basel II regulations and identifies and describes operational risks that were present prior to the global financial crisis. The paper concludes that there is indeed a systemic dimension to operational risk that should be recognized and addressed by banking regulators. Finally, the paper makes some suggestions as to how the management of systemic operational risks may be addressed by banks and regulators.
+C1 [McConnell, Patrick] Macquarie Univ, Appl Finance Ctr, Sydney, NSW 2000, Australia.
+RP McConnell, P (reprint author), Macquarie Univ, Appl Finance Ctr, Level 3,10 Spring St, Sydney, NSW 2000, Australia.
+EM pjmcconnell@computer.org; blacker.keith@btinternet.com
+CR Acharya V. V., 2010, 1002 FED RES BANK CL
+   Adrian T., 2011, 17454 NBER
+   Allan N., 2011, REV USE COMPLEX SYST
+   Allen L., 2011, DOES SYSTEMIC RISK F
+   Alvarez S. G., 2012, COMMUNICATION
+   Anabtawi I, 2011, NOTRE DAME LAW REV, V86, P1349
+   Ashby S., 2010, 76 U NOTT FIN SERV R
+   Bank of International Settlements, 2008, BIS Q REV
+   Basel Committee on Banking Supervision, 2011, BCBS 201 GLOB SYST I
+   Basel Committee on Banking Supervision, 2010, BAS 3 GLOB REG FRAM
+   Basel Committee on Banking Supervision, 2011, BCBS 195 PRINC SOUND
+   Basel Committee on Banking Supervision, 2008, JOINT FOR HIGH LEV P
+   Basel Committee on Banking Supervision, 2004, INT CONV CAP MEAS CA
+   Basel Committee on Banking Supervision, 2009, BCBS 160 OBS RANG PR
+   Bernanke B. S., 2012, FOSTERING FINANCIAL
+   Bernanke Ben S., 2011, COMMUNICATION, P2
+   Besar D., 2009, PI0912 PENS I
+   Bessis J., 2002, RISK MANAGEMENT BANK
+   Bisias D., 2012, 0001 OFF FIN RES
+   Blake D., 2006, FINANCIAL ENG NEWS, V49, P19
+   Blunden T, 2010, MASTERING OPERATIONA
+   Coburn T., 2011, WALL STREET FINANCIA
+   Cohrs M., 2012, COMMUNICATION
+   Committee of European Banking Supervisors, 2006, GUID OUTS
+   Committee of Sponsoring Organizations of the Treadway Commission, 2012, ENT RISK MAN UND COM
+   Commodity Futures Trading Commission, 2013, ORD MATT ROYAL BANK
+   Commodity Futures Trading Commission, 2012, ORD MATT UBS AG
+   Cooper S., 2005, DONT FEAR FEAR PANIC
+   Department of Justice, 2012, BARCL BANK PLC ADM M
+   Espinosa-Vega M., 2010, 10105 IMF
+   Euroclear, 2011, ANN REP 2011
+   European Systemic Risk Board, 2011, REC EUR SYST RISK BO
+   Fabozzi F., 2005, HDB MORTGAGE BACKED
+   FCIC, 2011, FIN REP NAT COMM CAU
+   Federal Reserve, 2006, RISK BAS CAP STAND A
+   Federal Reserve, 2012, CONS ORD MORG STANL
+   Financial and Banking Information Infrastructure Committee, 2007, FIN BANK INF INFR CO
+   Financial Policy Committee, 2012, SYST RISK SURV SURV
+   Financial Sector Continuity, 2012, MARK WID EX
+   Financial Services Authority, 2012, INT RAT HEDG PROD IN
+   Financial Stability Board, 2009, GUID ASS SYST IMP FI
+   Financial Stability Oversight Council, 2012, ANN REP 2011
+   Flannery M. J., 2012, 0002 OFF FIN RES
+   Gart A, 1994, REGULATION DEREGULAT
+   Gibson G., 2012, COMMUNICATION
+   Haldane A. G., 2009, COMMUNICATION
+   HARDIN G, 1968, SCIENCE, V162, P1243
+   Hillson D. A., 1997, INT J PROJECT BUSINE, V1, P35
+   Honahan P., 2010, IRISH BANKING CRISIS
+   Huang X., 2010, 296 BANK INT SETTL B
+   Independent Commission on Banking, 2011, FIN REP REC REP IND
+   Institute of Risk Management, 2011, RISK APP TOL GUID PA
+   International Financial Reporting Standard, 2011, FIN INSTR IMP
+   International Monetary Fund, 2010, GLOB FIN STAB REP M
+   International Risk Governance Council, 2008, INTR RISK GOV FRAM
+   Jobst A. A., 2007, J FINANCIAL REGULATI
+   Jorion P., 2003, FINANCIAL RISK MANAG
+   Jorion P., 2005, 11037 NBER
+   Krugman P., 2009, RETURN DEPRESSION EC
+   Lewis M, 2010, BIG SHORT INSIDE DOO
+   Liebeg D., 2011, 21 OEST NAT BANK, P62
+   Lloyds of London, 2009, DIG RISKS VIEW CHANG
+   McConnell P. J., 2008, J RISK MANAGEMENT FI, V1, P370
+   McConnell P. J., 2012, J OPER RISK, V7, P1
+   McConnell P, 2012, J OPER RISK, V7, P119
+   McConnell P, 2011, J OPER RISK, V6, P65, DOI 10.21314/JOP.2011.095
+   Mishkin S., 2012, FINANCIAL TIMES  APR
+   Nyberg P., 2011, MISJUDGING RISK CAUS
+   Office of Fair Trading, 2006, PAYM PROT INS REP MA
+   Office of Financial Research, 2012, ANN REP 2011
+   Office of the Inspector General, 2012, SAF SOUNDN OCCS SUP
+   ORX, 2011, OP RISK REP STAND OR
+   ORX, 2010, ORX OP RISK REP JUN
+   Payments Council, 2012, PAYM COUNC ADV UK CU
+   Schiller R., 2008, SUBPRIME SOLUTION
+   Schwarcz S. L., 2008, 163 DUK LAW SCH
+   Schwarcz Steven L., 2011, HARV BUS L REV ONLIN, V1, P94
+   Securities and Exchange Commission, 2010, GOLDM SACHS PAY REC
+   Securities and Exchange Commission, 2005, GLOB RES AN SETTL
+   Securities and Exchange Commission-Commodity Futures Trading Commission, 2010, FIND REG MARK EV MAY
+   Shukla S., 2008, CO LAW J, V3
+   SWIFT, 2011, ANN REP 2011
+   Tarullo D. K., 2011, J MONEY CREDIT BANKI
+   Tarullo D. K., 2012, 2011 CRED MARK S CHA
+   Treasury Committee, 2009, 14 SESS 2008 09
+   Treasury Subcommittee, 2012, TYR DEM ANSW COMP FA
+   Valukas A. R., 2010, REPORT AR VALUKAS BA
+   Whelan K., 2009, CONTAINING SYSTEMIC
+NR 88
+TC 0
+Z9 0
+U1 0
+U2 18
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1744-6740
+EI 1755-2710
+J9 J OPER RISK
+JI J. Oper. Risk.
+PD SPR
+PY 2013
+VL 8
+IS 1
+BP 59
+EP 99
+PG 41
+WC Business, Finance
+SC Business & Economics
+GA 125VZ
+UT WOS:000317571100004
+DA 2019-12-28
+ER
+
+PT J
+AU McConnell, P
+AF McConnell, Patrick
+TI Systemic operational risk: the LIBOR manipulation scandal
+SO JOURNAL OF OPERATIONAL RISK
+LA English
+DT Article
+AB The manipulation of the London Interbank Offered Rate (LIBOR) was not a localized event. Unscrupulous traders and managers in some of the largest banks around the world deliberately and systematically manipulated borrowing rates. It was not the work of isolated "rogue traders" but part of business-as-usual in the international money markets. This paper describes the LIBOR scandal and argues that it is an example of systemic operational risk, in particular people risk. The paper first describes the LIBOR setting process. The explosive growth over the past twenty-five years in the use of interest rate swaps (IRSs) and the process of resetting rates on IRSs, which ultimately led to the unethical manipulation of the underlying LIBOR rates, is then described. The paper then looks at official inquiries into manipulation of LIBOR at three banks, Barclays, UBS and Royal Bank of Scotland, to identify examples of operational risk. The transcripts of conversations unearthed by these investigations show rampant illicit activities that were apparently a normal part of doing business, as traders, LIBOR submitters and brokers colluded to manipulate LIBOR for their own interests. Finally, the paper makes some suggestions as to how the management of systemic operational risks may be addressed by banks and regulators.
+C1 Macquarie Univ, Appl Finance Ctr, Sydney, NSW 2000, Australia.
+RP McConnell, P (reprint author), Macquarie Univ, Appl Finance Ctr, Level 3,10 Spring St, Sydney, NSW 2000, Australia.
+EM pjmcconnell@computer.org
+CR Abrantes-Metz R. M., 2008, WORKING PAPER
+   [Anonymous], 2013, INT RAT HEDG PROD PI
+   BCBS, 2011, GLOB SYST IMP BANKS
+   BCBS, 2004, INT CONV CAP MEAS CA
+   BCBS, 2011, PRINC SOUND MAN OP R
+   BCBS (Basel Committee on Banking Supervision), 2009, OBS RANG PRACT KEY E
+   Benson C., 2012, BLOOMBERG       1220
+   BIS, 2013, STAT REL OTC DER STA
+   Blunden T, 2010, MASTERING OPERATIONA
+   Cecchetti S. G, 2009, BIS OTHER PAPERS
+   CFTC Barclays, 2012, ORD MATT BARCL BANK
+   CFTC RBS, 2013, ORD MATT ROYAL BANK
+   CFTC UBS, 2012, ORD MATT UBS AG
+   Coleman J, 2001, CRIMINAL ELITE UNDER
+   Cont R., 2010, FINANCE CONCEPT 0810
+   Corb H., 2012, INTEREST RATE SWAPS
+   Coyle B., 2001, INTEREST RATE SWAPS
+   Crouhy A., 2006, ESSENTIALS RISK MANA
+   DOJ, 2012, BARCL BANK PLC ADM M
+   DUBOFSKY DA, 1992, OPTIONS FINANCIAL FU
+   Espinosa-Vega M., 2010, 10105 IMF
+   Fabozzi F. J., 1993, BOND MARKETS ANAL ST
+   Fenton-O'Creevy M., 2007, TRADERS RISKS DECISI
+   Financ. Stab. Board (FSB), 2009, GUID ASS SYST IMP FI
+   FINMA, 2012, FINMA INV EV SURR TR
+   Fleming M, 2012, 557 FED RES BANK NEW
+   FSA, 2012, INT RAT HEDG PROD IN
+   FSA Audit, 2013, INT AUD REP REV EXT
+   FSA Barclays, 2012, FIN NOT BARCL BANK P
+   FSA RBS, 2013, FIN NOT ROYAL BANK S
+   Haldane A, 2009, COMMUNICATION    APR
+   IIF, 2009, REF FIN SERV IND STR
+   Jobst A., 2007, CONSTRAINTS CONSISTE
+   Jorion Ph, 1997, VALUE RISK
+   Kahn N., 2007, FINANCIAL REV
+   Kawaller I., 1994, HDB INTEREST RATE RI
+   Keenan D., 2012, FINANCIAL TIMES
+   Mangiero S. M., 1994, HDB INTEREST RATE RI
+   MCCONNELL P, 2013, J OPER RISK, V8, P59
+   McConnell P. J., 2012, J OPER RISK, V7, P1
+   McConnell P, 2012, J OPER RISK, V7, P119
+   McConnell P, 2011, J OPER RISK, V6, P65, DOI 10.21314/JOP.2011.095
+   McKenna F., 2012, AM BANKER, pJuly
+   Mollenkamp Carrick, 2008, WALL STREET J
+   ORX, 2011, OP RISK REP STAND OR
+   Osborn T., 2013, FINANCIAL NEWS  0209
+   Quinn R. E., 2011, DIAGNOSING CHANGING
+   SAUNDERS A, 2002, CREDIT RISK MEASUREM
+   SCHEIN EH, 1990, AM PSYCHOL, V45, P109, DOI 10.1037/0003-066X.45.2.109
+   Schenk CR, 1998, EXPLOR ECON HIST, V35, P221, DOI 10.1006/exeh.1998.0693
+   Sharma R., 2008, CO LAW J, V3, P57
+   Snider C., 2010, WORKING PAPER
+   Stone M., 2008, STRESS BANK FUNDING
+   Touryalai H., 2012, FORBES
+   UBS, 2013, COD BUS COND ETH UBS
+   Wetherilt A., 2012, THOUGHTS DETERMINING
+   Wheatley M., 2012, WHEATLEY REV LIBOR
+   Whittaker J. G, 1987, ECON REV, P3
+   Wilson M., 2013, DAILY TELEGRAPH
+   Wooldridge P., 2008, BIS Q REV
+NR 60
+TC 4
+Z9 4
+U1 1
+U2 31
+PU INCISIVE MEDIA
+PI LONDON
+PA HAYMARKET HOUSE, 28-29 HAYMARKET, LONDON, SW1Y 4RX, ENGLAND
+SN 1744-6740
+EI 1755-2710
+J9 J OPER RISK
+JI J. Oper. Risk.
+PD FAL
+PY 2013
+VL 8
+IS 3
+BP 59
+EP 99
+PG 41
+WC Business, Finance
+SC Business & Economics
+GA 231LK
+UT WOS:000325417800003
+DA 2019-12-28
+ER
+
+PT J
+AU Sunega, P
+   Lux, M
+AF Sunega, Petr
+   Lux, Martin
+TI SYSTEMIC RISKS ON THE CZECH HOUSING MARKET
+SO E & M EKONOMIE A MANAGEMENT
+LA Czech
+DT Article
+DE Owner-occupied housing; systemic risks; Czech Republic
+AB The impacts of economic crisis on the Czech housing market were, at least till now, relatively moderate. In comparison to other developed countries (e.g. Ireland, Spain, Greece, USA, Denmark, Hungary, Estonia, Latvia or Bulgaria) was the decrease in residential property prices only gradual and the default rate is lagging behind the average of the developed countries. The volatility in residential property prices could follow the accumulation of systemic risks of owner-occupied housing, especially the growing share of low-income households with mortgage debts among home-owners. The article therefore aims to answer following research questions. First, was there significant increase in the share of low-income households repaying their mortgages in the owner-occupied housing sector in the Czech Republic after 2005? Second, was there significant increase in 'innovative' mortgage products (e.g. interest-only mortgages, mortgages denominated in foreign currencies etc.) on the Czech mortgage market after 2005? Supplementary question was, whether balanced housing market, i.e. housing market with significant share of rental housing, could be one of the reasons of lower volatility in residential property prices, in comparison to housing market oriented mainly toward owner-occupied housing. The analysis showed that the hypothesis about sharply growing share of low-income households repaying mortgages in the owner-occupied housing sector in the Czech Republic after 2005 can be rejected. Also the share of 'innovative' mortgage products in the portfolios of Czech mortgage lenders seems to be rather negligible. Therefore we concluded that there is no evidence about significant accumulation of systemic risks on the Czech housing market. Moreover, the comparison of impacts of economic crisis in selected countries showed that balanced housing market could pose the best protection against negative impacts of economics crisis and against increased volatility in residential property prices.
+EM petr.sunega@soc.cas.cz; martin.lux@soc.cas.cz
+RI Lux, Martin/B-8177-2014; Sunega, Petr/B-9288-2014
+OI Sunega, Petr/0000-0001-9918-0731
+CR BALL M., 2010, APPRAISAL J, V79, P199
+   BOELHOUWER P., 2005, HOME OWNERSHIP GETTI
+   Bourassa S, 2010, J REAL ESTATE LIT, V18, P263
+   Cadil J, 2009, PRAGUE ECON PAP, V18, P38, DOI 10.18267/j.pep.340
+   CNB, 2010, ZPRAV FIN STAB 2009
+   CSU, 2009, PRIJM ZIV PODM DOM R
+   DOLING J., 2010, HOME OWNERSHIP GET 3
+   DUBEL A, 2007, US MORTGAGE MARKET C
+   Ellis L., 2008, BIS WORKING PAPERS
+   Ford J, 2001, HOUSING STUD, V16, P147, DOI 10.1080/02673030120038456
+   Hegedus J, 2011, J HOUS BUILT ENVIRON, V26, P315, DOI 10.1007/s10901-011-9228-7
+   HLAVACEK M., 2009, 120009 CNB
+   IGAN D., 2008, WP08106 IMF
+   Kiff John, 2007, WP07188 IMF
+   KOFNER S., 2010, K ENHR 2010 IST
+   Leamer E. E., 2007, 13428 NBER
+   LUX M, 2003, STANDARDY BYDLENI 20
+   Lux M, 2009, HOUSING POLICY HOUSI
+   LUX M., 2010, POLIT EKON, V2010, P225
+   SENDI R., 2010, K HOUS NEXT 20 YEARS, V16
+   SMITH J., 2005, HOUSING FINANCE INT, P3
+   SMITH J., 2005, BANKING HOUSING SPEC
+   STEPHENS M, 2005, EUR NETW HOUS RES C
+   Sunega P, 2007, INT J HOUS POLICY, V7, P241, DOI 10.1080/14616710701477888
+   Tong H., 2008, WP08186 IMF
+   YATES J., 2010, K HOUS NEXT 20 YEARS, V16
+   ZEMCIK P., 2010, IS THERE REAL ESTATE
+NR 27
+TC 0
+Z9 0
+U1 0
+U2 11
+PU TECHNICAL UNIV LIBEREC
+PI LIBEREC 1
+PA FAC ECONOMICS, STUDENTSKA 2, IC 46747885, LIBEREC 1, 461 17, CZECH
+   REPUBLIC
+SN 1212-3609
+EI 2336-5064
+J9 E M EKON MANAG
+JI E M Ekon. Manag.
+PY 2013
+VL 16
+IS 4
+BP 55
+EP 70
+PG 16
+WC Economics; Management
+SC Business & Economics
+GA 278YI
+UT WOS:000328925400005
+DA 2019-12-28
+ER

@@ -1,0 +1,445 @@
+
+PT J
+AU Perea, MD
+   Dunne, PG
+   Puhl, M
+   Reininger, T
+AF Perea, Maite De Sola
+   Dunne, Peter G.
+   Puhl, Martin
+   Reininger, Thomas
+TI Sovereign bond-backed securities: A VAR-for-VaR and marginal expected
+   shortfall assessment
+SO JOURNAL OF EMPIRICAL FINANCE
+LA English
+DT Article
+DE Safe assets; Sovereign bonds; Value-at-Risk; Spillover; CAViaR;
+   Co-Dependence
+ID CAPITAL SHORTFALL
+AB The risk reducing benefits of the sovereign bond-backed security (SBBS) proposal of Brunnermeier et al. (2016) have been assessed in terms of the likely losses that different kinds of holders would suffer under simulated default scenarios. However, the effects of mark-to-market losses that may occur when there is rising uncertainty about defaults, or when self-fulfilling destabilising dynamics are prevalent, have not yet been examined. We apply the "VAR-for-VaR" method of Manganelli et al. (2015) and the Marginal Expected Shortfall (MES) approach of Brownlees and Engle (2012, 2017) to estimated yields of SBBS to assess how ex ante exposures and marginal contributions to systemic risk are likely to play-out for different SBBS tranches under various securitisation structures. We compare these with exposures/MES of single sovereigns and a diversified portfolio of sovereigns. We find that the senior SBBS has extremely low ex ante tail risk and that, like the low-risk sovereigns, it acts as a hedge against extreme market-wide yield movements. The mezzanine SBBS has tail risk exposure similar to that of Italian and Spanish bonds. Yields on SBBS appear to be adequate compensation for their risks when compared with single sovereigns or a diversified portfolio.
+C1 [Perea, Maite De Sola] Natl Bank Belgium, Econ & Res Dept, 3 Blvd Berlaimont, B-1000 Brussels, Belgium.
+   [Dunne, Peter G.] Cent Bank Ireland, New Wapping St, Dublin 1, Ireland.
+   [Puhl, Martin] European Cent Bank, D-6064 Frankfurt, Germany.
+   [Reininger, Thomas] Oesterreichishe Natl Bank, Otto Wagner Pl 3, A-1090 Vienna, Austria.
+RP Dunne, PG (reprint author), Cent Bank Ireland, New Wapping St, Dublin 1, Ireland.
+EM maite.DeSolaPerea@nbb.be; peter.dunne@centralbank.ie;
+   martin.puhl@ecb.europa.eu; thomas.reininger@oenb.at
+CR Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Adrian T, 2016, AM ECON REV, V106, P1705, DOI 10.1257/aer.20120555
+   Alogoskoufis S., 2018, ESRB WORKING PAPER S, V74
+   Brownlees C., 2012, WORKING PAPER
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Brunnermeier MK, 2017, ECON POLICY, V32, P177
+   Brunnermeier MK, 2016, AM ECON REV, V106, P508, DOI 10.1257/aer.p20161107
+   Brunnermeier Markus K, 2011, EUROPEAN SAFE BONDS
+   Chan JCC, 2016, ENERG ECON, V54, P182, DOI 10.1016/j.eneco.2015.12.003
+   Cholesky A, 1910, B SOC AMIS BIBL ECOL, V2005
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Engle RF, 2004, J BUS ECON STAT, V22, P367, DOI 10.1198/073500104000000370
+   ESRB High-Level Task Force on Safe Assets, 2018, SOV BOND BACK SEC FE
+   GLOSTEN LR, 1993, J FINANC, V48, P1779, DOI 10.2307/2329067
+   KOENKER R, 1978, ECONOMETRICA, V46, P33, DOI 10.2307/1913643
+   SCAILLET O, 2005, INS RISK MANAGE J, V74, P639
+   Schonbucher P.J., 2003, CREDIT DERIVATIVES P
+   SHARPE WF, 1966, J BUS, V39, P119, DOI 10.1086/294846
+   SHARPE WF, 1994, J PORTFOLIO MANAGE, V21, P49, DOI 10.3905/jpm.1994.409501
+   Shirvani H., 2005, J EC FINANC ED, V4, P1
+   Silverman B., 1986, DENSITY ESTIMATION S
+   White H, 2015, J ECONOMETRICS, V187, P169, DOI 10.1016/j.jeconom.2015.02.004
+NR 22
+TC 0
+Z9 0
+U1 6
+U2 6
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0927-5398
+EI 1879-1727
+J9 J EMPIR FINANC
+JI J. Empir. Financ.
+PD SEP
+PY 2019
+VL 53
+BP 33
+EP 52
+DI 10.1016/j.jempfin.2019.06.001
+PG 20
+WC Business, Finance; Economics
+SC Business & Economics
+GA JA1GT
+UT WOS:000487566200003
+DA 2019-12-28
+ER
+
+PT J
+AU Biagini, F
+   Mazzon, A
+   Meyer-Brandis, T
+AF Biagini, Francesca
+   Mazzon, Andrea
+   Meyer-Brandis, Thilo
+TI Financial Asset Bubbles in Banking Networks
+SO SIAM JOURNAL ON FINANCIAL MATHEMATICS
+LA English
+DT Article
+DE bubbles; systemic risk; financial networks; mean-field models
+ID SYSTEMIC RISK; MODEL; EQUILIBRIUM; MARKETS
+AB We consider a banking network represented by a system of stochastic differential equations coupled by their drift. We assume a core-periphery structure, where banks in the core hold a bubbly asset. Investments are modeled by the weight of the links, which is a function of the robustness of the banks. In this way, a preferential attachment mechanism of the banks in the periphery towards the core takes place during the growth of the bubble. We then investigate how the bubble distorts the shape of the network for both finite and infinitely large systems, assuming a nonvanishing impact of the core on the periphery. Due to the influence of the bubble, banks are no longer independent, and the strong law of large numbers cannot be directly applied to the average of banks' investments towards the periphery. This results in a term in the drift of the diffusions which does not average out, increasing systemic risk when the bubble bursts. We test this feature of the model by numerical simulations.
+C1 [Biagini, Francesca; Mazzon, Andrea; Meyer-Brandis, Thilo] Ludwig Maximilians Univ Munchen, Dept Math, Workgrp Financial & Insurance Math, D-80333 Munich, Germany.
+   [Biagini, Francesca] Univ Oslo, Dept Math, N-0316 Oslo, Norway.
+RP Biagini, F (reprint author), Ludwig Maximilians Univ Munchen, Dept Math, Workgrp Financial & Insurance Math, D-80333 Munich, Germany.; Biagini, F (reprint author), Univ Oslo, Dept Math, N-0316 Oslo, Norway.
+EM biagini@math.lmu.de; mazzon@math.lmu.de; meyer-brandis@math.lmu.de
+CR Abreu D, 2003, ECONOMETRICA, V71, P173, DOI 10.1111/1468-0262.00393
+   Allen F, 2000, ECON J, V110, P236, DOI 10.1111/1468-0297.00499
+   Amini H, 2016, OPER RES, V64, P1109, DOI 10.1287/opre.2016.1540
+   Amini H, 2016, MATH FINANC, V26, P329, DOI 10.1111/mafi.12051
+   Amini H, 2012, INT J THEOR APPL FIN, V15, DOI 10.1142/S0219024911006504
+   Battiston P., 2015, RATIONAL BUBBLES CLO
+   Battiston S, 2012, J ECON DYN CONTROL, V36, P1121, DOI 10.1016/j.jedc.2012.04.001
+   Biagini F., 2018, FAIRNESS SYSTEMIC RI
+   Biagini F, 2019, MATH FINANC, V29, P329, DOI 10.1111/mafi.12170
+   Biagini F, 2018, SIAM J FINANC MATH, V9, P800, DOI 10.1137/16M1107097
+   Bianconi G, 2001, EUROPHYS LETT, V54, P436, DOI 10.1209/epl/i2001-00260-6
+   Bisias D, 2012, ANNU REV FINANC ECON, V4, P255, DOI 10.1146/annurev-financial-110311-101754
+   Bo LJ, 2015, SIAM J FINANC MATH, V6, P386, DOI 10.1137/130937664
+   Brunnermeier M., 2016, CENTRAL BANKS CROSSR, P493, DOI 10.1017/CBO9781316570401.013
+   Brunnermeier M. K., 2013, HDB EC FIN, V2, P1221, DOI DOI 10.1016/B978-0-44-459406-8.00018-4
+   Brunnermeier M. K., 2008, NEW PALGRAVE DICT EC, P578
+   Carmona R., 2016, J OPTIMIZATION THEOR, P1
+   Carmona R, 2015, COMMUN MATH SCI, V13, P911, DOI 10.4310/CMS.2015.v13.n4.a4
+   Chen C, 2013, MANAGE SCI, V59, P1373, DOI 10.1287/mnsc.1120.1631
+   Choi Y., 2009, CHAOS BIFURCATION 20
+   Choi Y, 2013, HANDBOOK ON SYSTEMIC RISK, P453
+   Chong C., 2015, PARTIAL MEAN FIELD L
+   Chow Y.S., 2012, PROBABILITY THEORY I
+   Cox AMG, 2005, FINANC STOCH, V9, P477, DOI 10.1007/s00780-005-0162-y
+   DELONG JB, 1990, J POLIT ECON, V98, P703, DOI 10.1086/261703
+   Detering N., 2017, MANAGING DEFAULT CON
+   Detering N., 2015, BOOTSTRAP PERCOLATIO
+   Detering N., 2018, FINANCIAL CONTAGION
+   Drapeau S, 2016, ANN I H POINCARE-PR, V52, P868, DOI 10.1214/14-AIHP664
+   Earl PE, 2007, J ECON PSYCHOL, V28, P351, DOI 10.1016/j.joep.2006.08.001
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Fang F, 2017, STATIST RISK MODEL, V34, P141, DOI 10.1515/strm-2016-0013
+   Feinstein Z, 2017, SIAM J FINANC MATH, V8, P672, DOI 10.1137/16M1066087
+   Follmer H, 2005, J MATH ECON, V41, P123, DOI 10.1016/j.jmateco.2004.08.001
+   Fouque JP, 2013, HANDBOOK ON SYSTEMIC RISK, P444
+   Fouque JP, 2013, SIAM J FINANC MATH, V4, P784, DOI 10.1137/110841096
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Garnier J, 2013, HANDBOOK ON SYSTEMIC RISK, P432
+   Garnier J, 2013, SIAM J FINANC MATH, V4, P151, DOI 10.1137/12087387X
+   Hambly B., 2018, MCKEAN VLASOV EQUATI
+   HARRISON JM, 1978, Q J ECON, V92, P323, DOI 10.2307/1884166
+   Hoffmann H., 2016, ALLOCATION SYSTEMIC
+   Hoffmann H, 2016, STOCH PROC APPL, V126, P2014, DOI 10.1016/j.spa.2016.01.002
+   Hull J., 2001, J DERIV, V8, P12, DOI DOI 10.3905/J0D.2001.319153
+   Hurd T. R., 2016, CONTAGION SYSTEMIC R
+   Jarrow R., 2007, ADV MATH FINANCE, P105
+   Jarrow R, 2011, SIAM J FINANC MATH, V2, P839, DOI 10.1137/10079673X
+   Jarrow RA, 2012, QUANT FINANC, V12, P1339, DOI 10.1080/14697688.2011.620976
+   Jarrow RA, 2011, REV DERIV RES, V14, P67, DOI 10.1007/s11147-010-9055-0
+   Jarrow RA, 2009, INT J THEOR APPL FIN, V12, P901, DOI 10.1142/S0219024909005518
+   Jarrow RA, 2010, MATH FINANC, V20, P145, DOI 10.1111/j.1467-9965.2010.00394.x
+   Kaizoji T, 2000, PHYSICA A, V287, P493, DOI 10.1016/S0378-4371(00)00388-5
+   Karatzas I., 1991, GRAD TEXTS MATH, V113
+   Kley O., 2015, ADV MATH FINANCE, P133
+   Kromer E, 2016, MATH METHOD OPER RES, V84, P323, DOI 10.1007/s00186-016-0545-1
+   Loewenstein M, 2000, J ECON THEORY, V91, P17, DOI 10.1006/jeth.1999.2589
+   Maheshwari A, 2018, RISKS, V6, DOI 10.3390/risks6040131
+   Mao X.R., 2007, STOCHASTIC DIFFERENT
+   Mazzon A., 2018, THESIS
+   MCKEAN HP, 1966, P NATL ACAD SCI USA, V56, P1907, DOI 10.1073/pnas.56.6.1907
+   MCKEAN HP, 1966, ARCH RATION MECH AN, V21, P343, DOI 10.1007/BF00264463
+   MILLER EM, 1977, J FINANC, V32, P1151, DOI 10.2307/2326520
+   Pastor-Satorras R, 2001, PHYS REV E, V63, DOI 10.1103/PhysRevE.63.066117
+   Pastor-Satorras R, 2001, PHYS REV LETT, V86, P3200, DOI 10.1103/PhysRevLett.86.3200
+   Protter P. E., 2005, STOCHASTIC INTEGRATI
+   Protter P, 2013, LECT NOTES MATH, V2081, P1, DOI 10.1007/978-3-319-00413-6_1
+   Scheinkman J., 2013, SPECULATION TRADING
+   Scheinkman JA, 2003, J POLIT ECON, V111, P1183, DOI 10.1086/378531
+   SZNITMAN AS, 1991, LECT NOTES MATH, V1464, P165
+   TIROLE J, 1982, ECONOMETRICA, V50, P1163, DOI 10.2307/1911868
+   Xiong W., 2012, TECHNICAL REPORT
+   Zhuk S., 2013, SPECULATIVE BUBBLES, DOI [10.2139/ssrn.2280304, DOI 10.2139/SSRN.2280304]
+NR 73
+TC 0
+Z9 0
+U1 3
+U2 3
+PU SIAM PUBLICATIONS
+PI PHILADELPHIA
+PA 3600 UNIV CITY SCIENCE CENTER, PHILADELPHIA, PA 19104-2688 USA
+SN 1945-497X
+J9 SIAM J FINANC MATH
+JI SIAM J. Financ. Math.
+PY 2019
+VL 10
+IS 2
+BP 430
+EP 465
+DI 10.1137/18M1193189
+PG 36
+WC Business, Finance; Mathematics, Interdisciplinary Applications; Social
+   Sciences, Mathematical Methods
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA IF5OS
+UT WOS:000473132700004
+DA 2019-12-28
+ER
+
+PT J
+AU Jouida, S
+AF Jouida, Sameh
+TI Bank capital structure, capital requirements and SRISK across bank
+   ownership types and financial crisis: panel VAR approach
+SO REVIEW OF QUANTITATIVE FINANCE AND ACCOUNTING
+LA English
+DT Article
+DE PVAR; Leverage; Regulation; SRISK; Bank ownership type; Financial crisis
+ID PERFORMANCE; RISK; SHORTFALL; IMPACT
+AB This paper analyzes the simultaneous and dynamic multi-directional interrelationships between bank capital structure, capital requirements and SRISK (systemic risk) across the bank ownership typeforeign and domestic banksand the financial crisis. We check whether these interrelationships are significantly different for foreign banks spread over 18 countries. To overcome econometric problems (endogeneity and causality), we build a panel vector auto-regression for 170 banks operating in the French market. There is a dynamic bidirectional interrelationship over a whole period. All these findings are sensitive to ownership type as well as to crisis period. A negative bidirectional relationship between SRISK and capital ratio has been found for domestic banks. Forecast error variance decompositions chooses leverage as the most endogenous variable. Impulse-response functions separates capital ratio from SRISK that affects leverage in the banking sector. In a crisis period, we find that the response of leverage and capital ratio to SRISK shock is negative.
+C1 [Jouida, Sameh] Sousse Univ, ISG, Sousse, Tunisia.
+RP Jouida, S (reprint author), Sousse Univ, ISG, Sousse, Tunisia.
+EM samehjouida@gmail.com
+OI Jouida, Sameh/0000-0001-8901-4828
+CR Abrigo MRM, 2015, PAN DAT C
+   Acharya V, 2012, AM ECON REV, V102, P59, DOI 10.1257/aer.102.3.59
+   Acharya VV, 2006, J BUS, V79, P1355, DOI 10.1086/500679
+   Akhtar S., 2009, INT REV FINANCE, V9, P1
+   Akhtar S, 2015, ACCOUNT FINANCE
+   Andrews DWK, 2001, J ECONOMETRICS, V101, P123, DOI 10.1016/S0304-4076(00)00077-4
+   Barth J.R, 2017, PRIMER EVOLUTION COM, DOI [10.2139/ssrn.2919407, DOI 10.2139/SSRN.2919407]
+   Barth J.R, 2006, WTO STAFF WORKING PA, VERSD-2006-11
+   Berger AN, 2013, J FINANC ECON, V109, P146, DOI 10.1016/j.jfineco.2013.02.008
+   Berger AN, 2006, J BANK FINANC, V30, P1065, DOI 10.1016/j.jbankfin.2005.05.015
+   Berger AN, 2000, J BANK FINANC, V24, P1203, DOI 10.1016/S0378-4266(99)00124-7
+   BERGER PG, 1995, J FINANC ECON, V37, P39, DOI 10.1016/0304-405X(94)00798-6
+   Brewer E, 2008, J FINANC SERV RES, V34, P177, DOI 10.1007/s10693-008-0040-9
+   Brownlees C, 2017, REV FINANC STUD, V30, P48, DOI 10.1093/rfs/hhw060
+   Bruno V, 2014, REV FINANC, V18, P1683, DOI 10.1093/rof/rft041
+   Buch C. M., 2001, J MULTINATL FINANC M, V11, P341
+   Buckley PJ, 2007, J INT BUS STUD, V38, P447, DOI 10.1057/palgrave.jibs.8400274
+   Canova F., 2013, 1507 EUR CENTR BANK
+   Chen CH, 2009, ECON MODEL, V26, P1161, DOI 10.1016/j.econmod.2009.05.004
+   CHKIR IE, 2001, J MULTINATL FINANC M, V11, P17, DOI DOI 10.1016/S1042-444X(00)00040-2
+   Chronopoulos DK, 2015, EUR J FINANC, V21, P426, DOI 10.1080/1351847X.2013.838184
+   Claessens S, 2001, J BANK FINANC, V25, P891, DOI 10.1016/S0378-4266(00)00102-3
+   Claessens S, 2015, IMF ECON REV, V63, P868, DOI 10.1057/imfer.2015.38
+   Coleman TF, 2017, ANAL SRISK MEASURE I
+   De Bandt O, 2014, DOES CAPITAL STRUCTU
+   De Haas R, 2014, J MONEY CREDIT BANK, V46, P333, DOI 10.1111/jmcb.12094
+   Diamond DW, 2000, J FINANC, V55, P2431, DOI 10.1111/0022-1082.00296
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   Engle R, 2015, REV FINANC, V19, P145, DOI 10.1093/rof/rfu012
+   Frank MZ, 2009, FINANC MANAGE, V38, P1, DOI 10.1111/j.1755-053X.2009.01026.x
+   Graf F, 2011, WORKING PAPER
+   Gropp R, 2010, REV FINANC, V14, P587, DOI 10.1093/rof/rfp030
+   Grosse R, 2017, RES INT BUS FINANCE
+   Hamilton James Douglas, 1994, TIME SERIES ANAL
+   Harding JP, 2013, J FINANC SERV RES, V43, P127, DOI 10.1007/s10693-011-0127-6
+   Isaiah O, 2017, RES INT BUS FINANCE
+   Jouida S, 2017, RES INT BUS FINANC, V39, P920, DOI 10.1016/j.ribaf.2016.01.028
+   Kremp E, 2013, J BANK FINANC, V37, P3757, DOI 10.1016/j.jbankfin.2013.05.028
+   Laeven L, 2009, J FINANC ECON, V93, P259, DOI 10.1016/j.jfineco.2008.09.003
+   Levine R, 1997, J ECON LIT, V35, P688
+   Love I, 2006, Q REV ECON FINANC, V46, P190, DOI 10.1016/j.qref.2005.11.007
+   Lutkepohl H., 2007, NEW INTRO MULTIPLE T
+   Margaritis D, 2010, J BANK FINANC, V34, P621, DOI 10.1016/j.jbankfin.2009.08.023
+   Marques OM, 2003, CAPITAL STRUCTURE PO
+   Maudos J, 2017, RES INT BUS FINANC, V39, P85, DOI 10.1016/j.ribaf.2016.07.034
+   McKee G, 2017, REV QUANT FINANCE AC
+   NICKELL S, 1981, ECONOMETRICA, V49, P1417, DOI 10.2307/1911408
+   Sajid A, 2014, J CORP FINANCE
+   Schoenmaker D, 2015, ACCOUNT BUS RES, V45, P468, DOI 10.1080/00014788.2015.1030961
+   Shank CA, 2016, RES INT BUS FINANC, V38, P430, DOI 10.1016/j.ribaf.2016.05.002
+   SIMS CA, 1980, ECONOMETRICA, V48, P1, DOI 10.2307/1912017
+   SINGH M, 2004, J MULTINATL FINANC M, V14, P153, DOI DOI 10.1016/J.MULFIN.2003.07.003
+   Stanhouse B, 2016, REV QUANT FINANC ACC, V46, P691, DOI 10.1007/s11156-014-0483-z
+   Teixeira JCA, 2014, N AM J ECON FINANC, V28, P33, DOI 10.1016/j.najef.2014.01.002
+NR 54
+TC 0
+Z9 0
+U1 5
+U2 5
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0924-865X
+EI 1573-7179
+J9 REV QUANT FINANC ACC
+JI Rev. Quant. Financ. Account.
+PD JUL
+PY 2019
+VL 53
+IS 1
+BP 295
+EP 325
+DI 10.1007/s11156-018-0750-5
+PG 31
+WC Business, Finance
+SC Business & Economics
+GA IC2AE
+UT WOS:000470760700010
+DA 2019-12-28
+ER
+
+PT J
+AU Goel, A
+   Mehra, A
+AF Goel, Anubha
+   Mehra, Aparna
+TI Analyzing Contagion Effect in Markets During Financial Crisis Using
+   Stochastic Autoregressive Canonical Vine Model
+SO COMPUTATIONAL ECONOMICS
+LA English
+DT Article
+DE Contagion effect; Financial crisis; Autoregressive GARCH model; C-Vine
+   copula; SCAR model
+ID STOCK-MARKET; DEPENDENCE; DYNAMICS; US
+AB Using the multivariate dynamic framework, we study the contagion effect through the change in the dependence structure of major stock markets of the USA, China, Japan, Russia, Hong Kong and India, during the recent (2015) slowdown in China market, the financial crisis called the subprime crisis (2008) of the USA and the Russian flu (1998). The dependence structures in these markets are captured by applying the time-varying C-Vine copula model combined with the AR(1)-GJR-GARCH(1,1) (autoregressive Glosten-Jagannathan-Runkle generalized autoregressive conditional heteroscedasticity) model. At first, we apply the AR(1)-GJR-GARCH(1,1) model to specify the marginal distribution of returns from the market indices and subsequently we apply the time-varying C-Vine (Canonical Vine) copula to estimate the dependence structure among these markets in pre and post phases of the financial crisis. The empirical findings establish the existence of contagion effect in these markets during the periods of depression. Clayton copula turns out to be the best fit copula after the China slowdown in all cases except for China-Russia pair, indicating an increased lower tail dependence in the post crisis period. The subprime crisis witnessed a significant increase in Kendall's tau and its time-varying behavior in all pairs of countries except USA-China where a static dependence structure is observed. The same phenomena are observed during the Russian flu in Russia-India, Russia-USA and Russia-Japan pairs indicating a significant contagion effect. These empirical findings have significance in risk management for banks and financial intermediaries which invest majorally in the global markets.
+C1 [Goel, Anubha; Mehra, Aparna] Indian Inst Technol Delhi, Dept Math, New Delhi 110016, India.
+RP Goel, A (reprint author), Indian Inst Technol Delhi, Dept Math, New Delhi 110016, India.
+EM anubha.goel1@gmail.com; apmehra@maths.iitd.ac.in
+OI Goel, Anubha/0000-0002-2211-4936
+FU Council of Scientific and Industrial Research (CSIR), IndiaCouncil of
+   Scientific & Industrial Research (CSIR) - India
+FX Anubha Goel is thankful to Council of Scientific and Industrial Research
+   (CSIR), India, for the financial grant. The authors are grateful to the
+   referees for their valuable feedback and suggestions which help to
+   improve the quality of the paper. The authors show gratitude to
+   Professor Hans Manner, University of Graz, for providing code for the
+   bivariate SCAR model.
+CR Aas K, 2009, INSUR MATH ECON, V44, P182, DOI 10.1016/j.insmatheco.2007.02.001
+   Almeida C, 2016, APPL STOCH MODEL BUS, V32, P621, DOI 10.1002/asmb.2182
+   Almeida C, 2012, COMPUT STAT DATA AN, V56, P1511, DOI 10.1016/j.csda.2011.08.015
+   Aloui R, 2011, J BANK FINANC, V35, P130, DOI 10.1016/j.jbankfin.2010.07.021
+   Ang A, 2002, REV FINANC STUD, V15, P1137, DOI 10.1093/rfs/15.4.1137
+   Ang A, 2002, J FINANC ECON, V63, P443, DOI 10.1016/S0304-405X(02)00068-5
+   Arellano C., 2013, TECH REP
+   Baig T, 1999, INT MONET FUND S PAP, V46, P167
+   Baral P, 2013, THESIS
+   Bedford T, 2002, ANN STAT, V30, P1031
+   Bedford T, 2001, ANN MATH ARTIF INTEL, V32, P245, DOI 10.1023/A:1016725902970
+   Brooks C., 2014, INTRO ECONOMETRICS F
+   Cappiello L, 2006, J FINANCIAL ECONOMET, V4, P537, DOI DOI 10.1093/JJFINEC/NBL005
+   Chakrabarti R, 2002, J FINANC MARK, V5, P1, DOI 10.1016/S1386-4181(01)00022-2
+   Chen W, 2014, PHYSICA A, V410, P550, DOI 10.1016/j.physa.2014.05.060
+   Chollete L, 2009, J FINANC ECONOMET, V7, P437, DOI 10.1093/jjfinec/nbp014
+   Dias A, 2010, J INT MONEY FINANC, V29, P1687, DOI 10.1016/j.jimonfin.2010.06.004
+   Dissmann J, 2013, COMPUT STAT DATA AN, V59, P52, DOI 10.1016/j.csda.2012.08.010
+   Forbes KJ, 2002, J FINANC, V57, P2223, DOI 10.1111/0022-1082.00494
+   Garcia R, 2011, J BANK FINANC, V35, P1954, DOI 10.1016/j.jbankfin.2011.01.003
+   Hafner CM, 2012, J APPL ECONOMET, V27, P269, DOI 10.1002/jae.1197
+   Hausken K, 2002, PUBLIC CHOICE, V111, P209, DOI 10.1023/A:1014943528057
+   Hernandez L.F., 2001, INT REV FINANC ANAL, V10, P203
+   Joe H, 2010, J MULTIVARIATE ANAL, V101, P252, DOI 10.1016/j.jmva.2009.08.002
+   Jondeau E, 2006, J INT MONEY FINANC, V25, P827, DOI 10.1016/j.jimonfin.2006.04.007
+   Kaminsky GL, 2003, J ECON PERSPECT, V17, P51, DOI 10.1257/089533003772034899
+   Karolyi GA, 1996, J FINANC, V51, P951, DOI 10.2307/2329228
+   Kenourgios D, 2011, J INT FINANC MARK I, V21, P92, DOI 10.1016/j.intfin.2010.08.005
+   KING MA, 1990, REV FINANC STUD, V3, P5, DOI 10.1093/rfs/3.1.5
+   Kurowicka D., 2006, UNCERTAINTY ANAL HIG
+   Kurowicka D., 2011, DEPENDENCE MODELING
+   Liesenfeld R., 2003, J EMPIR FINANC, V10, P505, DOI DOI 10.1016/S0927-5398(02)00072-5
+   Liu BY, 2017, QUANT FINANC, V17, P437, DOI 10.1080/14697688.2016.1205208
+   Longin F, 2001, J FINANC, V56, P649, DOI 10.1111/0022-1082.00340
+   Manner H., 2009, DP0917 I STAT UCL
+   Mohammadi H, 2010, ENERG ECON, V32, P1001, DOI 10.1016/j.eneco.2010.04.009
+   Nelsen R. B, 2006, INTRO COPULAS
+   Ning C, 2010, J INT MONEY FINANC, V29, P743, DOI 10.1016/j.jimonfin.2009.12.002
+   Park J., 2012, WORKING PAPER
+   Patton AJ, 2006, INT ECON REV, V47, P527, DOI 10.1111/j.1468-2354.2006.00387.x
+   Patton AJ, 2006, J APPL ECONOM, V21, P147, DOI 10.1002/jae.865
+   Richard JF, 2007, J ECONOMETRICS, V141, P1385, DOI 10.1016/j.jeconom.2007.02.007
+   Rodriguez JC, 2007, J EMPIR FINANC, V14, P401, DOI DOI 10.1016/J.JEMPFIN.2006.07.002
+   Su E, 2017, COMPUT ECON, V50, P325, DOI 10.1007/s10614-016-9587-y
+   Sun W, 2009, EMPIR ECON, V50, P325
+   Tsay RS, 2005, ANAL FINANCIAL TIME
+   Wang K, 2011, INT REV ECON FINANC, V20, P654, DOI 10.1016/j.iref.2010.12.003
+   Welburn JW, 2015, APPL MATH COMPUT, V266, P738, DOI 10.1016/j.amc.2015.05.093
+   Welburn JW, 2017, COMPUT ECON, V49, P177, DOI 10.1007/s10614-015-9542-3
+   You LY, 2010, J BANK FINANC, V34, P163, DOI 10.1016/j.jbankfin.2009.07.016
+   Yue VZ, 2010, J INT ECON, V80, P176, DOI 10.1016/j.jinteco.2009.11.004
+   Zhou W, 2017, COMPUT ECON, V50, P207, DOI 10.1007/s10614-016-9606-z
+NR 52
+TC 2
+Z9 2
+U1 2
+U2 10
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0927-7099
+EI 1572-9974
+J9 COMPUT ECON
+JI Comput. Econ.
+PD MAR
+PY 2019
+VL 53
+IS 3
+BP 921
+EP 950
+DI 10.1007/s10614-017-9772-7
+PG 30
+WC Economics; Management; Mathematics, Interdisciplinary Applications
+SC Business & Economics; Mathematics
+GA HO0UF
+UT WOS:000460619800002
+DA 2019-12-27
+ER
+
+PT J
+AU Shevtsova, OI
+   Bondar, YI
+AF Shevtsova, O., I
+   Bondar, Ye., I
+TI INSURANCE MARKET AND SYSTEM-BASED RISK OF FUNCTIONING
+SO FINANCIAL AND CREDIT ACTIVITY-PROBLEMS OF THEORY AND PRACTICE
+LA English
+DT Article
+DE financial sector; financial institutions; insurance market; system-based
+   risk; system-based approach
+AB The article deals with the factors and conditions for the emergence and spread of systemic risks in the insurance market within the framework of the interaction of insurance companies with each other and other financial institutions. These are forms of identifying the features of systemic risk manifestation. Focused attention is paid to factors such as competition between financial institutions, mergers and acquisitions, accumulation of individual risks, and their impact on the characteristics of the insurance market, markets of other financial intermediaries. The conditions of distribution of systemic risks - the increase of the level of capitalization of the insurance market, a separate insurance company, the presence of the transfer of risks from one to another financial intermediary.
+   It is revealed that the possibility of diversifying the directions of formation of own assets of the insurance company determines its interaction with financial intermediaries of the stock, currency, investment market, banking services market, which causes an increase in the threat of systemic risk.
+   The comparative characteristics of monitoring of manifestations of systemic risk on the insurance market by domestic and European financial regulators are given. The issue of insufficient attention to the degree of unevenness of the concentration of insurers' assets in different financial markets is considered, taking into account the corresponding risks that can accumulate and exacerbate each other. The necessity of expansion of objects of monitoring by types of risks of insurance activity is established. The necessity for financial regulators to pay special attention to systemic risk is substantiated.
+   It is proposed to assess the systemic risk in the insurance market to use a systematic approach to the diagnosis of the state of the insurance market as an open complex economic system. The main methodological principles for assessing the systemic risk of the insurance market and the individual insurance company are formulated. Concerning the specifics of the interaction of insurance companies with banking institutions, it was considered necessary to combine the risks of the insurance market and the influence of systemically important banks on the activity of a separate insurance company.
+C1 [Shevtsova, O., I; Bondar, Ye., I] Oles Honchar Dnipro Natl Univ, Dnipro, Ukraine.
+RP Shevtsova, OI (reprint author), Oles Honchar Dnipro Natl Univ, Dnipro, Ukraine.
+EM ei.shevtsova@gmail.com; e.bondar888@gmail.com
+CR [Anonymous], 2016, GLOB SYST IMP INS UP
+   FSB, 2017, REINSURANCE NEW 1121
+   Liubkina O., 2011, VISNYK KNU IMENI TAR, V127, P9
+   Rada z finansovoi stabilnosti, 2018, ZVIT PRO DIIALN RAD
+   Rotova T., 2018, RYNOK FINANSOVYKH PO, V1, P121
+   Tkachenko N. V., 2010, FINANSY UKRAINY, V7, P84
+   Trichet J.-C., 2009, CLARE DISTINGUISHED
+   Yermoshenko A. M., 2009, AKTUALNI PROBLEMY EK, V6, P207
+NR 8
+TC 0
+Z9 0
+U1 1
+U2 1
+PU NATL BANK UKRAINE, UNIV BANKING, KHARKIV INST BANKING
+PI KHARKIV
+PA PR-KT PEREMOHY, 55, KHARKIV, 61174, UKRAINE
+SN 2306-4994
+EI 2310-8770
+J9 FINANC CREDIT ACT
+JI Financ. Credit Act.
+PY 2019
+VL 3
+IS 30
+BP 407
+EP 413
+DI 10.18371/fcaptp.v3i30.179818
+PG 7
+WC Business, Finance
+SC Business & Economics
+GA JD9YU
+UT WOS:000490344900042
+OA Other Gold
+DA 2019-12-28
+ER

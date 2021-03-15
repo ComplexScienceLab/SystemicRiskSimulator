@@ -1,0 +1,464 @@
+
+PT J
+AU Aymanns, C
+   Caccioli, F
+   Farmer, JD
+   Tan, VWC
+AF Aymanns, Christoph
+   Caccioli, Fabio
+   Farmer, J. Doyne
+   Tan, Vincent W. C.
+TI Taming the Basel leverage cycle
+SO JOURNAL OF FINANCIAL STABILITY
+LA English
+DT Article; Proceedings Paper
+CT Conference on Data Standards, Information and Financial Stability
+CY APR 11-12, 2014
+CL Loughborough Uni, Loughborough, ENGLAND
+HO Loughborough Uni
+DE Financial stability; Capital regulation; Systemic risk
+ID BEHAVIOR; IMPACT
+AB We investigate a simple dynamical model for the systemic risk caused by the use of Value-at-Risk, as mandated by Basel II. The model consists of a bank with a leverage target and an unleveraged fundamentalist investor subject to exogenous noise with clustered volatility. The parameter space has three regions: (i) a stable region, where the system has a fixed point equilibrium; (ii) a locally unstable region, characterized by cycles with chaotic behavior; and (iii) a globally unstable region. A calibration of parameters to data puts the model in region (ii). In this region there is a slowly building price bubble, resembling the period prior to the Global Financial Crisis, followed by a crash resembling the crisis, with a period of approximately 10-15 years. We dub this the Basel leverage cycle. To search for an optimal leverage control policy we propose a criterion based on the ability to minimize risk for a given average leverage. Our model allows us to vary from the procyclical policies of Basel II or III, in which leverage decreases when volatility increases, to countercyclical policies,in which leverage increases when volatility increases. We find the best policy depends on the market impact of the bank. Basel II is optimal when the exogenous noise is high, the bank is small and leverage is low; in the opposite limit where the bank is large and leverage is high the optimal policy is closer to constant leverage. In the latter regime systemic risk can be dramatically decreased by lowering the leverage target adjustment speed of the banks. While our model does not show that the financial crisis and the period leading up to it were due to VaR risk management policies, it does suggest that it could have been caused by VaR risk management, and that the housing bubble may have just been the spark that triggered the crisis. (C) 2016 The Authors. Published by Elsevier B.V.
+C1 [Aymanns, Christoph; Farmer, J. Doyne] Univ Oxford, Oxford Martin Sch, Inst New Econ Thinking, Oxford OX2 6ED, England.
+   [Aymanns, Christoph; Farmer, J. Doyne; Tan, Vincent W. C.] Univ Oxford, Inst Math, Oxford OX1 3LB, England.
+   [Caccioli, Fabio] UCL, Dept Comp Sci, London WC1E 6BT, England.
+   [Aymanns, Christoph; Caccioli, Fabio] London Sch Econ & Polit Sci, Syst Risk Ctr, London, England.
+   [Farmer, J. Doyne] Santa Fe Inst, Santa Fe, NM 87501 USA.
+RP Caccioli, F (reprint author), UCL, Dept Comp Sci, London WC1E 6BT, England.
+EM christoph.aymanns@gmail.com; f.caccioli@ucl.ac.uk;
+   Doyne.Farmer@inet.ox.ac.uk; vintwc@gmail.com
+FU European UnionEuropean Union (EU) [CRISIS-ICT-2011-288501]; Institute of
+   New Economic Thinking at the Oxford Martin School; German National Merit
+   Foundation; EPSRC (UK)Engineering & Physical Sciences Research Council
+   (EPSRC); Economic and Social Research Council (ESRC)Economic & Social
+   Research Council (ESRC) [ES/K002309/1]; Economic and Social Research
+   CouncilEconomic & Social Research Council (ESRC) [ES/K002309/1]
+FX This work was supported by the European Union Seventh Framework
+   Programme FP7/2007-2013 under Grant agreement CRISIS-ICT-2011-288501 and
+   by the Institute of New Economic Thinking at the Oxford Martin School.
+   CA has also been supported by the German National Merit Foundation and
+   EPSRC (UK). FC and CA acknowledges support of the Economic and Social
+   Research Council (ESRC) in funding the Systemic Risk Centre
+   (ES/K002309/1). We would like to thank Tobias Adrian and Nina
+   Boyarchenko for useful discussions and Christian Upper for a valuable
+   critique. The code for the model used in this paper is available at
+   https://github.com/ChristophAy/leverage_cycles.
+CR Admati A, 2014, BANKERS NEW CLOTHES
+   Adrian T., 2008, J FINANCIAL INTERMED, V19, P418
+   Adrian T., 2012, TECHNICAL REPORT
+   Adrian T., 2008, BANQUE DE FRANCE FIN, V11, P1
+   Adrian T., 2013, STAFF REPORTS FEDERA, V651
+   Adrian T., 2012, STAFF REPORTS FEDERA, V567
+   Adrian T, 2014, REV FINANC STUD, V27, P373, DOI 10.1093/rfs/hht068
+   Adrian Tobias, 2012, INTERMEDIARY LEVERAG
+   Aikman D, 2015, J BANK FINANC, V50, P428, DOI 10.1016/j.jbankfin.2014.06.014
+   Aymanns C, 2015, J ECON DYN CONTROL, V50, P155, DOI 10.1016/j.jedc.2014.09.015
+   BLACK F., 1976, P 1976 M AM STAT ASS, P171
+   Brummitt CD, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0104219
+   Brunnermeier MK, 2009, REV FINANC STUD, V22, P2201, DOI 10.1093/rfs/hhn098
+   CHRISTIE AA, 1982, J FINANC ECON, V10, P407, DOI 10.1016/0304-405X(82)90018-6
+   Corsi F., 2013, TECHNICAL REPORT
+   CRUTCHFIELD JP, 1982, PHYS REP, V92, P45, DOI 10.1016/0370-1573(82)90089-8
+   Danielsson J, 2004, J BANK FINANC, V28, P1069, DOI 10.1016/S0378-4266(03)00113-4
+   Danielsson J., 2001, ACAD RESPONSE BASEL
+   de Nicolo G., 2012, TECHNICAL REPORT
+   Drehmann M, 2012, APPL ECON LETT, V19, P603, DOI 10.1080/13504851.2011.591720
+   ENGLE RF, 1993, J FINANC, V48, P1749, DOI 10.2307/2329066
+   Estrella A, 2004, J BANK FINANC, V28, P1469, DOI 10.1016/S0378-4266(03)00130-4
+   Financial Policy Committee (FPC), 2014, FIN POL COMM POW SUP
+   Fostel A, 2008, AM ECON REV, V98, P1211, DOI 10.1257/aer.98.4.1211
+   Geanakoplos J., 1997, EC EVOLVING COMPLEX, VXXVII, P285
+   GEANAKOPLOS J., 2003, ADV EC ECONOMETRICS, P170
+   Geanakoplos J, 2010, NBER MACROECON ANNU, V24, P1
+   Gennaioli N, 2012, J FINANC ECON, V104, P452, DOI 10.1016/j.jfineco.2011.05.005
+   GENNOTTE G, 1990, AM ECON REV, V80, P999
+   Gorton G.B., 2010, TECHNICAL REPORT
+   He ZG, 2012, REV ECON STUD, V79, P735, DOI 10.1093/restud/rdr036
+   Hommes CH, 2006, HDB COMPUTATIONAL EC, V2, P1110
+   Longerstaey J., 1996, TECHNICAL REPORT
+   Minsky Hyman, 1992, FINANCIAL INSTABILIT
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Peura S, 2006, J BUS, V79, P2163, DOI 10.1086/503660
+   Poledna S., 2013, ARXIV13016114
+   Shin HY, 2010, CLARENDON LECT FINAN
+   SHLEIFER A, 1992, J FINANC, V47, P1343, DOI 10.2307/2328943
+   Shleifer A, 2011, J ECON PERSPECT, V25, P29, DOI 10.1257/jep.25.1.29
+   Tasca P., 2012, TECHNICAL REPORT
+   Thurner S, 2012, QUANT FINANC, V12, P695, DOI 10.1080/14697688.2012.674301
+   Van den Heuvel S., 2002, EC POLICY REV, P259, DOI DOI 10.1016/J.JMONECO.2007.12.001
+   Zigrand J. P., 2010, TECHNICAL REPORT
+NR 44
+TC 11
+Z9 12
+U1 1
+U2 12
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA STE 800, 230 PARK AVE, NEW YORK, NY 10169 USA
+SN 1572-3089
+EI 1878-0962
+J9 J FINANC STABIL
+JI J. Financ. Stab.
+PD DEC
+PY 2016
+VL 27
+BP 263
+EP 277
+DI 10.1016/j.jfs.2016.02.004
+PG 15
+WC Business, Finance; Economics
+SC Business & Economics
+GA EG0RO
+UT WOS:000390740100018
+OA Green Published, Other Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Elyasiani, E
+   Staikouras, SK
+   Dontis-Charitos, P
+AF Elyasiani, Elyas
+   Staikouras, Sotiris K.
+   Dontis-Charitos, Panagiotis
+TI Cross-Industry Product Diversification and Contagion in Risk and Return:
+   The case of Bank-Insurance and Insurance-Bank Takeovers
+SO JOURNAL OF RISK AND INSURANCE
+LA English
+DT Article
+ID HOLDING COMPANIES; SYSTEMIC RISK; FINANCIAL CRISIS; CAPITAL-MARKETS;
+   MERGERS; US; FIRMS; MODEL; CONSOLIDATION; EFFICIENCY
+AB We investigate the impact of domestic/international bancassurance deals on the risk-return profiles of announcing and nonannouncing banks and insurers within a GARCH model. Bank-insurance deals produce intra- and interindustry contagion in both risk and return, with larger deals producing greater contagion. Bidder banks and peers experience positive abnormal returns, with the effects on insurer peers being stronger than those on bank peers. Insurance-bank deals produce insignificant excess returns for bidder and peer insurers and positive valuations for peer banks. Following the deal, the bank bidders' idiosyncratic (systematic) risk falls (increases), while insurance bidders exhibit a lower systematic risk and maintain their idiosyncratic risk.
+C1 [Elyasiani, Elyas] Temple Univ, Dept Finance, Philadelphia, PA 19122 USA.
+   [Staikouras, Sotiris K.] City Univ London, Cass Business Sch, Dept Finance, London EC1Y 8TZ, England.
+   [Dontis-Charitos, Panagiotis] Univ Westminster, Westminster Business Sch, Dept Accounting Finance & Governance, London NW1 5LS, England.
+   [Elyasiani, Elyas] Hebrew Univ Jerusalem, IL-91905 Jerusalem, Israel.
+   [Elyasiani, Elyas] Wharton Financial Inst Ctr, Philadelphia, PA 19104 USA.
+RP Elyasiani, E (reprint author), Temple Univ, Dept Finance, Philadelphia, PA 19122 USA.; Elyasiani, E (reprint author), Hebrew Univ Jerusalem, IL-91905 Jerusalem, Israel.; Elyasiani, E (reprint author), Wharton Financial Inst Ctr, Philadelphia, PA 19104 USA.
+EM elyas@temple.edu; sks@city.ac.uk; p.dontis-charitos@westminster.ac.uk
+CR Acharya VV, 2006, J BUS, V79, P1355, DOI 10.1086/500679
+   Aggarwal RK, 2003, J FINANC, V58, P71, DOI 10.1111/1540-6261.00519
+   Aharony J, 1996, J BANK FINANC, V20, P57, DOI 10.1016/0378-4266(94)00116-2
+   AHARONY J, 1983, J BUS, V56, P305, DOI 10.1086/296203
+   Amel D, 2004, J BANK FINANC, V28, P2493, DOI 10.1016/j.jbankfin.2003.10.013
+   Baele L, 2007, J BANK FINANC, V31, P1999, DOI 10.1016/j.jbankfin.2006.08.003
+   BAUMOL WJ, 1982, AM ECON REV, V72, P1
+   Berger AN, 2000, J FINANC INTERMED, V9, P323, DOI 10.1006/jfin.2000.0295
+   Berger AN, 1999, J BANK FINANC, V23, P135, DOI 10.1016/S0378-4266(98)00125-3
+   Berger AN, 2005, J FINANC ECON, V76, P237, DOI 10.1016/j.jfineco.2004.06.003
+   Berry-Stolzle TR, 2014, J RISK INSUR, V81, P529, DOI 10.1111/jori.12042
+   Berry-Stolzle TR, 2013, J RISK INSUR, V80, P423, DOI 10.1111/j.1539-6975.2012.01470.x
+   BLACK F, 1978, J BUS, V51, P379, DOI 10.1086/296005
+   BOLLERSLEV T, 1986, J ECONOMETRICS, V31, P307, DOI 10.1016/0304-4076(86)90063-1
+   BOLLERSLEV T, 1987, REV ECON STAT, V69, P542, DOI 10.2307/1925546
+   Boot A. W. A., 2009, OXFORD HDB BANKING, P58
+   Boot AWA, 2000, J FINANC INTERMED, V9, P240, DOI 10.1006/jfin.2000.0287
+   BOYD JH, 1993, J BANK FINANC, V17, P43, DOI 10.1016/0378-4266(93)90079-S
+   Brewer E., 2002, 20022023 FED RES BAN
+   Brockett PL, 1999, INSUR MATH ECON, V25, P197, DOI 10.1016/S0167-6687(98)00046-8
+   Brunnermeir M., 2012, AFA ANN M CHIC
+   Carow KA, 2001, J RISK INSUR, V68, P129, DOI 10.2307/2678134
+   Carow KA, 2001, J BANK FINANC, V25, P1553, DOI 10.1016/S0378-4266(00)00134-5
+   CAROW KA, 2002, Q REV EC FINANCE, V42, P439
+   Carson JM, 2008, J RISK INSUR, V75, P873, DOI 10.1111/j.1539-6975.2008.00289.x
+   Chen H, 2014, J RISK INSUR, V81, P623, DOI 10.1111/j.1539-6975.2012.01503.x
+   Cheng J, 2011, J RISK INSUR, V78, P609, DOI 10.1111/j.1539-6975.2011.01427.x
+   Cheng J, 2010, J RISK INSUR, V77, P347, DOI 10.1111/j.1539-6975.2009.01327.x
+   Chiou I, 2005, J BANK FINANC, V29, P2455, DOI 10.1016/j.jbankfin.2004.09.001
+   Cornett M.M., 2008, FINANCIAL I MANAGEME
+   Cummins JD, 2008, J BANK FINANC, V32, P30, DOI 10.1016/j.jbankfin.2007.09.003
+   Cummins JD, 2014, J RISK INSUR, V81, P489, DOI 10.1111/jori.12039
+   Cummins JD, 1999, J BANK FINANC, V23, P325, DOI 10.1016/S0378-4266(98)00089-2
+   De Jonghe O, 2010, J FINANC INTERMED, V19, P387, DOI 10.1016/j.jfi.2009.04.001
+   DeLong GL, 2001, J FINANC ECON, V59, P221, DOI 10.1016/S0304-405X(00)00086-6
+   Demsetz RS, 1997, J MONEY CREDIT BANK, V29, P300, DOI 10.2307/2953695
+   Deng S, 2008, J MONEY CREDIT BANK, V40, P1217, DOI 10.1111/j.1538-4616.2008.00154.x
+   DeYoung R, 2001, J FINANC INTERMED, V10, P54, DOI 10.1006/jfin.2000.0305
+   DeYoung R, 2009, J FINANC SERV RES, V36, P87, DOI 10.1007/s10693-009-0066-7
+   ECKBO BE, 1985, J BUS, V58, P325, DOI 10.1086/296300
+   Elyasiani E., 2003, J ACCOUNTING AUDITIN, V18, P303, DOI DOI 10.1177/0148558X0301800207
+   Elyasiani E., 2012, WORKING PAPER SERIES, V11-12
+   Elyasiani E, 2007, J BANK FINANC, V31, P1167, DOI 10.1016/j.jbankfin.2006.10.006
+   ENGLE RF, 1982, ECONOMETRICA, V50, P987, DOI 10.2307/1912773
+   Fields LP, 2007, J BANK FINANC, V31, P3646, DOI 10.1016/j.jbankfin.2007.01.014
+   Fields LP, 2007, J RISK INSUR, V74, P777
+   Flannery MJ, 1998, J MONEY CREDIT BANK, V30, P273, DOI 10.2307/2601102
+   Flannery MJ, 1999, J FINANC SERV RES, V16, P101, DOI 10.1023/A:1008180106687
+   Hagendorff J, 2008, J BANK FINANC, V32, P1333, DOI 10.1016/j.jbankfin.2007.11.008
+   Harrington SE, 2009, J RISK INSUR, V76, P785, DOI 10.1111/j.1539-6975.2009.01330.x
+   HERRING RJ, 1990, J FINANC SERV RES, V4, P471, DOI 10.1007/BF00122882
+   Houston JF, 2001, J FINANC ECON, V60, P285, DOI 10.1016/S0304-405X(01)00046-0
+   HOUSTON JF, 1994, J BANK FINANC, V18, P1155, DOI 10.1016/0378-4266(94)00065-4
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Kane EJ, 1996, UNIVERSAL BANKING, P338
+   Kane EJ, 2000, J MONEY CREDIT BANK, V32, P671, DOI 10.2307/2601202
+   Lown C.S., 2000, FEDERAL RESERVE BANK, P39
+   Mercieca S, 2007, J BANK FINANC, V31, P1975, DOI 10.1016/j.jbankfin.2007.01.004
+   Morrison A. D., 2009, OXFORD HDB BANKING, P171
+   Parsons C., 2009, THE BANKING CRISIS
+   Santomero A., 1992, FINANCIAL MARKETS I, V1, P1
+   Santomero A. M., 2000, EC POLICY REV, V6, P11
+   Saunders A., 1994, UNIVERSAL BANKING US
+   SAVICKAS R, 2003, J FINANC RES, V26, P165, DOI DOI 10.1111/1475-6803.00052
+   Staikouras S. K., 2011, FINANCIAL MARKETS I, V20, P1
+   Staikouras SK, 2006, GENEVA PAP R I-ISS P, V31, P124, DOI 10.1057/palgrave.gpp.2510060
+   Stein JC, 1997, J FINANC, V52, P111, DOI 10.2307/2329558
+   Stiroh K. J., 2010, OXFORD HDB BANKING, P90
+   Stiroh KJ, 2006, J MONEY CREDIT BANK, V38, P1351, DOI 10.1353/mcb.2006.0075
+   Stiroh KJ, 2006, J BANK FINANC, V30, P2131, DOI 10.1016/j.jbankfin.2005.04.030
+   Stiroh KJ, 2004, J MONEY CREDIT BANK, V36, P853, DOI 10.1353/mcb.2004.0076
+   Vallascas F, 2012, J INT MONEY FINANC, V31, P1745, DOI 10.1016/j.jimonfin.2012.03.011
+   Vallascas F, 2011, J BANK FINANC, V35, P902, DOI 10.1016/j.jbankfin.2010.09.001
+   Vander Vennet R, 2002, J MONEY CREDIT BANK, V34, P254, DOI 10.1353/mcb.2002.0036
+   Wagner W, 2010, J FINANC INTERMED, V19, P373, DOI 10.1016/j.jfi.2009.07.002
+   Yildirim H. S., 2006, J BUSINESS FINANCE A, V33, P629
+NR 76
+TC 3
+Z9 3
+U1 3
+U2 21
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-4367
+EI 1539-6975
+J9 J RISK INSUR
+JI J. Risk Insur.
+PD SEP
+PY 2016
+VL 83
+IS 3
+BP 681
+EP 718
+DI 10.1111/jori.12066
+PG 38
+WC Business, Finance; Economics
+SC Business & Economics
+GA DV1QY
+UT WOS:000382697200006
+OA Green Accepted
+DA 2019-12-27
+ER
+
+PT J
+AU Marenichenko, V
+AF Marenichenko, Valerii
+TI MECHANISMS OF STATE REGULATION OF SMALL AND MEDIUM BUSINESSES
+SO BALTIC JOURNAL OF ECONOMIC STUDIES
+LA English
+DT Article
+DE state regulation; small and medium businesses; direction of activity;
+   mechanisms; quality development
+AB Subject of research is the mechanisms of state regulation of small and medium businesses in Ukraine. The purpose of the research is effective mechanisms development of state regulation of small and medium enterprises (SMEs). Methodology. The article uses general and special methods of investigation: empirical research methods (observation, comparison); methods used empirically and theoretically study (abstraction, analysis and synthesis); methods of theoretical research (ascent from the abstract to the concrete, systemic and structural approach). The article highlighted the priority areas of activity in Ukraine, such as agriculture, IT-sector and tourism. In particular, we have analyzed data of the State Statistics Service of Ukraine and international surveys such as Enabling the Business of Agriculture, DOU, Deloitte (Global Survey of R&D Incentives 2015), International SOS and Control Risks, WTTC, UPS, Consulting integrated, Organic Monitor and other. We determined that agriculture must use consistent increasing areas under food crops; introduction of modern technology and innovation; gradual increase in the level of mechanization of agricultural production. Scientific research preparation and training of local staff employed in the agriculture and food industry must become the main aspects of quality development. The article defines that IT market requires quality of the state regulation in readiness for a permanent dialogue with government and comprehensive support for sector as a strategic development of the country; development strategy and projects for development of the sector; effective fight against corruption at all levels. The relevance of government regulation in the development of green international tourism is determined. Modern historical and cultural features of Ukraine can allow providing a range of services for international tourism community. There is analyzed an impact of export orientation for small and medium business in the article. Export agribusiness areas that are not yet wide developed are identified: the supply of organic products (use of fertilizers over many years significantly reduced the possibility of growing organic products in the EU, Ukraine has a a lot of land that is not processed); bean cultures export (For example, provision of population with bean cultures is only 8%, 92% -import in Turkey. The production of bean cultures have high indicators in Ukraine); selling of honey (Ukraine takes 3rd place in Europe on manufacture of of honey, and only a small part is realized abroad). As a result of research we have created own Index of business quality development (IBQD), which includes the negative tendencies of development in international rankings and current state of socio-economic environment in Ukraine. Index of business quality development considers the practical significance and is formed directly on the SMEs questionnaire and includes the following blocks: general information about the company; contemporary business issues (the study of actual practical problems of business); providing state functions to support the business development. Thus, the Index of business quality development shows efficiency of mechanisms of state administration in the SMEs sphere in dynamics.
+C1 [Marenichenko, Valerii] Dnipropetrovsk State Agr & Econ Univ, Dept Management Org, Dnepropetrovsk, Ukraine.
+RP Marenichenko, V (reprint author), Dnipropetrovsk State Agr & Econ Univ, Dept Management Org, Dnepropetrovsk, Ukraine.
+EM vmarenichenko@mail.ru
+CR Berezovska E., 2016, ORGANIC FORUM 2016 U
+   DOU, 2016, EM IT SPEC DEALS DAM
+   EBA, 2016, EBA APPR INV ATTR AG
+   GFK, 2016, CONS CONF UKR
+   Statistics, 2016, VOL PROD 2014
+   UPS, 2016, UPS RES FOUND EXP IS
+   WTTC, 2016, MARK REV TOUR 2016 C
+NR 7
+TC 0
+Z9 0
+U1 2
+U2 5
+PU BALTIC JOURNAL ECONOMIC STUDIES
+PI RIGA
+PA VALDEKU IELA 62-156, RIGA, LV-1058, LATVIA
+SN 2256-0742
+EI 2256-0963
+J9 BALT J ECON STUD
+JI Balt. J. Econ. Stud.
+PY 2016
+VL 2
+IS 5
+BP 41
+EP 47
+DI 10.30525/2256-0742/2016-2-5-41-47
+PG 7
+WC Economics
+SC Business & Economics
+GA VC4CW
+UT WOS:000433734400007
+OA DOAJ Gold
+DA 2019-12-28
+ER
+
+PT J
+AU Prasch, R
+   Warin, T
+AF Prasch, Robert
+   Warin, Thierry
+TI Systemic risk and financial regulations: A theoretical perspective
+SO JOURNAL OF BANKING REGULATION
+LA English
+DT Article
+DE systemic risk; specific risk; systematic risk; modern portfolio theory;
+   complexity; financial regulations
+ID SELECTION; MINSKY
+AB This article inserts the notion of systemic risk into the theoretical foundations of modern finance. By systemic risk, we mean risks because of interdependence among leading firms, in other words complexity. It builds upon the traditional mean-variance approach while reconsidering an inadequately contemplated source of risk: the actual organization of the financial market. As such, we take seriously the idea that some oligopolistic firms may be understood by market participants to be central to the fabric of modern financial markets, and in that sense can be deemed too big to fail. While we believe that much of traditional financial analysis is valid in its own terms, we also believe that important insights can be acquired from melding Modern Portfolio Theory with recent developments in Industrial Organization.
+C1 [Prasch, Robert] Middlebury Coll, Econ, Middlebury, VT 05753 USA.
+   [Prasch, Robert] Assoc Evolutionary Econ, Washington, DC USA.
+   [Prasch, Robert] Assoc Social Econ, Board Directors, New York, NY USA.
+   [Prasch, Robert] CIRANO, Montreal, PQ, Canada.
+   [Warin, Thierry] HEC Montreal, Int Business, Montreal, PQ, Canada.
+   [Warin, Thierry] Middlebury Coll, Middlebury, VT 05753 USA.
+   [Warin, Thierry] Polytech Montreal, Montreal, PQ, Canada.
+   [Warin, Thierry] Sun Yat Sen Univ, Guangzhou, Guangdong, Peoples R China.
+   [Warin, Thierry] Essec Business Sch, Paris, France.
+   [Warin, Thierry] HEC Paris, Paris, France.
+   [Warin, Thierry] UIBE, Beijing, Peoples R China.
+RP Warin, T (reprint author), HEC Montreal, Dept Int Business, 3000 Chemin Cote St Catherine, Montreal, PQ H3T 2A7, Canada.
+RI Warin, Thierry/G-9409-2016
+OI Warin, Thierry/0000-0002-5921-3428
+CR Arestis P, 2004, RES INT BUSINESS FIN, V18, P129, DOI DOI 10.1016/J.RIBAF.2003.11.001
+   Borio C, 2013, J BANK REGUL, V14, P306, DOI 10.1057/jbr.2013.9
+   Cohan William D., 2009, HOUSE CARDS TALE HUB
+   Couppey-Soubeyran J., 2010, INT EC, V123, P13
+   Davies H., 2008, 1725 ESOCIALSCIENCES
+   Eggertsson GB, 2012, Q J ECON, V127, P1469, DOI 10.1093/qje/qjs023
+   Fisher R. W., 2013, ENDING TOO BIG TO FA
+   Fujii M., 2010, 23010 E AS BUR EC RE
+   Glasser TD, 2013, J BANK REGUL, V14, P195, DOI 10.1057/jbr.2013.11
+   Kindleberger CP, 2011, MANIAS, PANICS AND CRASHES: A HISTORY OF FINANCIAL CRISES, 6TH EDITION, P1
+   Knight F., 1929, RISK UNCERTAINTY PRO
+   Lamfalussy A., 2004, COMMUNICATION
+   LINTNER J, 1965, REV ECON STAT, V47, P13, DOI 10.2307/1924119
+   Marcelo A, 2008, J BANK REGUL, V9, P65, DOI 10.1057/jbr.2008.1
+   Marjit S., 2003, ECON POLIT WEEKLY, V38, P1871
+   Markose SM, 2013, J BANK REGUL, V14, P285, DOI 10.1057/jbr.2013.10
+   Markowitz H, 1952, J FINANC, V7, P77, DOI 10.1111/j.1540-6261.1952.tb01525.x
+   Minsky H. P., 1986, STABILIZING UNSTABLE
+   Minsky Hyman P., 1977, CHALLENGE, V20, P20, DOI DOI 10.1080/05775132.1977.11470296
+   Mirowski P, 2010, J I ECON, V6, P415, DOI 10.1017/S1744137409990397
+   Moosa I, 2010, J BANK REGUL, V11, P319, DOI 10.1057/jbr.2010.15
+   MOSSIN J, 1966, ECONOMETRICA, V34, P768, DOI 10.2307/1910098
+   Pan EJ, 2009, SSRN ELECT J, P1
+   Peretz P, 2009, PUBLIC ADMIN REV, V69, P603, DOI 10.1111/j.1540-6210.2009.02009.x
+   Poncet P., 2009, FINANCE MARCHE
+   Prasch R., 2012, INT J APPL BUSINESS, V10, P177
+   SHARPE WF, 1963, MANAGE SCI, V9, P277, DOI 10.1287/mnsc.9.2.277
+   Smith A., 1977, INQUIRY NATURE CAUSE
+   Vasudev PM, 2014, J BANK REGUL, V15, P56, DOI 10.1057/jbr.2012.19
+   Wagner WH, 1971, FINANCIAL ANAL J, V27, P48, DOI DOI 10.2469/FAJ.V27.N6.48
+   Warin T, 2006, TAX COMPETITION INFO
+   Whalen CJ, 2001, J ECON ISSUES, V35, P805, DOI 10.1080/00213624.2001.11506415
+   Whitehead C. K., 2010, J FINANCIAL TRANSFOR, V29, P57
+   Willett TD, 2012, J FINAN ECON POLICY, V4, P41, DOI 10.1108/17576381211206479
+   Yener C., 2011, 34838 U LIB MUN
+NR 35
+TC 1
+Z9 1
+U1 0
+U2 9
+PU PALGRAVE MACMILLAN LTD
+PI BASINGSTOKE
+PA BRUNEL RD BLDG, HOUNDMILLS, BASINGSTOKE RG21 6XS, HANTS, ENGLAND
+SN 1745-6452
+EI 1750-2071
+J9 J BANK REGUL
+JI J. Bank Regul.
+PD JUL
+PY 2016
+VL 17
+IS 3
+BP 188
+EP 199
+DI 10.1057/jbr.2015.4
+PG 12
+WC Business, Finance
+SC Business & Economics
+GA DV9FN
+UT WOS:000383245800004
+DA 2019-12-28
+ER
+
+PT J
+AU Takaishi, T
+AF Takaishi, Tetsuya
+TI Dynamical cross-correlation of multiple time series Ising model
+SO EVOLUTIONARY AND INSTITUTIONAL ECONOMICS REVIEW
+LA English
+DT Article
+DE Ising model; Cross-correlation; Random matrix theory; Cumulative risk
+   fraction; Inverse participation ratio
+ID TESTABLE DISTRIBUTIONAL IMPLICATIONS; CHAIN MONTE-CARLO; SYSTEMIC RISK;
+   STOCK-MARKET; GARCH MODEL; SPECULATIVE PRICES; VOLATILITY MODELS; RANDOM
+   MATRICES; ASSET RETURNS; SPIN MODEL
+AB Using an Ising-based model extended to simulate multiple stock time series, we perform a large-scale simulation for a financial system with 100 stocks. We find that the financial system shows fat-tailed return distributions and the system volatility level measured as an average of absolute-returns changes over time. We investigate the dynamical properties of cross-correlation matrices among stocks and find that the eigenvalue distributions of the cross-correlation matrices deviate from those of the random matrix theory. It is found that the cumulative risk fraction (CRF) constructed from the largest eigenvalues changes at periods where the volatility level is high. The inverse participation ratio (IPR) and its higher-power version, IPR6, also exhibit the changes at the same high volatility periods. Therefore, the CRF, IPR, and IPR6 are expected to be useful measurements to identify abnormal states such as high-volatility periods.
+C1 [Takaishi, Tetsuya] Hiroshima Univ Econ, Hiroshima, Japan.
+RP Takaishi, T (reprint author), Hiroshima Univ Econ, Hiroshima, Japan.
+EM tt-taka@hue.ac.jp
+CR Andersen T., 2000, MULTINATIONAL FINANC, V4, P159
+   Andersen TG, 2001, J FINANC ECON, V61, P43, DOI 10.1016/S0304-405X(01)00055-1
+   Andersen TG, 1998, INT ECON REV, V39, P885, DOI 10.2307/2527343
+   Andersen TG, 2001, J AM STAT ASSOC, V96, P42, DOI 10.1198/016214501750332965
+   Andersen TG, 2007, J ECONOMETRICS, V138, P125, DOI 10.1016/j.jeconom.2006.05.018
+   Andersen TG, 2010, J APPL ECONOMET, V25, P233, DOI 10.1002/jae.1105
+   Billio M, 2012, J FINANC ECON, V104, P535, DOI 10.1016/j.jfineco.2011.12.010
+   Bornholdt S, 2001, INT J MOD PHYS C, V12, P667, DOI 10.1142/S0129183101001845
+   CLARK PK, 1973, ECONOMETRICA, V41, P135, DOI 10.2307/1913889
+   Cont R, 2001, QUANT FINANC, V1, P223, DOI [10.1088/1469-7688/1/2/304, 10.1080/713665670]
+   EDELMAN A, 1988, SIAM J MATRIX ANAL A, V9, P543, DOI 10.1137/0609045
+   FAMA EF, 1965, J BUS, V38, P34, DOI 10.1086/294743
+   Gopikrishnan P, 1998, EUR PHYS J B, V3, P139, DOI 10.1007/s100510050292
+   Gopikrishnan P, 1999, PHYS REV E, V60, P5305, DOI 10.1103/PhysRevE.60.5305
+   Kaizoji T, 2002, PHYSICA A, V316, P441, DOI 10.1016/S0378-4371(02)01216-5
+   Kim DH, 2005, PHYS REV E, V72, DOI 10.1103/PhysRevE.72.046133
+   Kritzman M, 2011, J PORTFOLIO MANAGE, V37, P112, DOI 10.3905/jpm.2011.37.4.112
+   Laloux L, 1999, PHYS REV LETT, V83, P1467, DOI 10.1103/PhysRevLett.83.1467
+   Lux Thomas, 1996, APPL FINANCIAL EC, V6, P463, DOI DOI 10.1080/
+   MANDELBROT B, 1963, J BUS, V36, P394, DOI 10.1086/294632
+   Mantegna RN, 1997, PHYSICA A, V239, P255, DOI 10.1016/S0378-4371(96)00484-0
+   Matia K, 2004, EUROPHYS LETT, V66, P909, DOI 10.1209/epl/i2003-10267-y
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Plerou V, 2002, PHYS REV E, V65, DOI 10.1103/PhysRevE.65.066126
+   Plerou V, 1999, PHYS REV LETT, V83, P1471, DOI 10.1103/PhysRevLett.83.1471
+   Plerou V, 2000, PHYSICA A, V287, P374, DOI 10.1016/S0378-4371(00)00376-9
+   Ren F, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0097711
+   Sengupta AM, 1999, PHYS REV E, V60, P3389, DOI 10.1103/PhysRevE.60.3389
+   Takaishi T, 2005, INT J MOD PHYS C, V16, P1311, DOI 10.1142/S0129183105007923
+   Takaishi Tetsuya, 2010, Journal of Physics: Conference Series, V221, DOI 10.1088/1742-6596/221/1/012011
+   Takaishi T., 2014, JPS C P
+   Takaishi T, 2015, IEEE ANN INT CONF CY, P104, DOI 10.1109/CYBER.2015.7287918
+   Takaishi T, 2013, PROCEDIA COMPUT SCI, V22, P1056, DOI 10.1016/j.procs.2013.09.191
+   Takaishi T, 2015, J PHYS CONF SER, V574, DOI 10.1088/1742-6596/574/1/012149
+   Takaishi T, 2013, J PHYS CONF SER, V454, DOI 10.1088/1742-6596/454/1/012041
+   Takaishi T, 2012, PROCD SOC BEHV, V65, P968, DOI 10.1016/j.sbspro.2012.11.228
+   Takaishi T, 2009, L N INST COMP SCI SO, V5, P1424
+   Takaishi T, 2012, PROG THEOR PHYS SUPP, P43
+   Takaishi T, 2009, PROCEEDINGS OF THE 8TH IEEE/ACIS INTERNATIONAL CONFERENCE ON COMPUTER AND INFORMATION SCIENCE, P525, DOI 10.1109/ICIS.2009.173
+   Takaishi T, 2009, STUD COMP INTELL, V199, P635
+   Takasihi T, 2012, INT P EC DEV RES, V29, P303
+   Utsugi A, 2004, PHYS REV E, V70, DOI 10.1103/PhysRevE.70.026110
+   Wang D, 2011, PHYS REV E, V83, DOI 10.1103/PhysRevE.83.046121
+   Zheng ZY, 2012, SCI REP-UK, V2, DOI 10.1038/srep00888
+NR 44
+TC 0
+Z9 0
+U1 0
+U2 2
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1349-4961
+EI 2188-2096
+J9 EVOL INST ECON REV
+JI Evol. Inst. Econ. Rev.
+PD DEC
+PY 2016
+VL 13
+IS 2
+BP 455
+EP 468
+DI 10.1007/s40844-016-0051-4
+PG 14
+WC Economics
+SC Business & Economics
+GA EG3BR
+UT WOS:000390919200012
+DA 2019-12-28
+ER

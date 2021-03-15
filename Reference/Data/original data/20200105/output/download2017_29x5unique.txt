@@ -1,0 +1,421 @@
+
+PT J
+AU Trabelsi, N
+   Naifar, N
+AF Trabelsi, Nader
+   Naifar, Nader
+TI Are Islamic stock indexes exposed to systemic risk? Multivariate GARCH
+   estimation of CoVaR
+SO RESEARCH IN INTERNATIONAL BUSINESS AND FINANCE
+LA English
+DT Article
+DE Systemic risk; CoVaR; Islamic stock indexes; Hedging strategy
+ID CONDITIONAL HETEROSKEDASTICITY; CORPORATE GOVERNANCE;
+   EMPIRICAL-EVIDENCE; EUROPEAN BANKS; SHARIA STOCKS; CO-MOVEMENT; RETURNS;
+   MARKETS; PERFORMANCE; SUKUK
+AB The main objective of this paper is to assess the exposure of Islamic stock indexes to systemic tail events. We use Conditional Value-at-Risk (CoVaR) and Delta CoVaR measures as developed by Adrian and Brunnermeier (2011) and a sample of Islamic and conventional stock indexes, from various developed and emerging markets, during the period September 2005 to March 2015. The empirical results reveal that the systemic risk has a moderate adverse effect on Islamic indexes, with a lower level in Gulf Cooperation Council countries (GCC hereafter). The findings also show the Asian stock indexes can be considered as effective hedge assets, after the global financial crisis (GFC hereafter). Furthermore, the empirical reveal that portfolio including Islamic stock indexes performs better than a benchmark portfolio in turmoil periods. These findings have several implications in financial decisions including the strategy of stability and asset allocation.
+C1 [Trabelsi, Nader; Naifar, Nader] Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Coll Econ & Adm Sci, Dept Finance & Investment, POB 5701, Riyadh, Saudi Arabia.
+   [Trabelsi, Nader] Univ SFAX, Fac Econ & Management FSEG Sfax, BP 3018, Sfax, Tunisia.
+RP Trabelsi, N (reprint author), Al Imam Mohammad Ibn Saud Islamic Univ IMSIU, Coll Econ & Adm Sci, Dept Finance & Investment, POB 5701, Riyadh, Saudi Arabia.
+EM nhtrabelsi@imamu.edu.sa; naneifar@imamu.edu.sa
+CR Abdi A.M., 2011, THESIS, P2011
+   Acharya V., 2010, WORKING PAPER
+   Adrian T., 2011, NBER WORKING PAPERS
+   Ahmet S., 2015, WORKING PAPER SERIES, V28
+   Aloui C, 2015, N AM J ECON FINANC, V31, P311, DOI 10.1016/j.najef.2014.12.002
+   Aloui C, 2015, J INT FINANC MARK I, V34, P69, DOI 10.1016/j.intfin.2014.11.003
+   Andries AM, 2016, ECON LETT, V144, P59, DOI 10.1016/j.econlet.2016.04.031
+   Ashraf D, 2016, J BUS ETHICS, V134, P209, DOI 10.1007/s10551-014-2422-2
+   Baur DG, 2010, FINAN REV, V45, P217, DOI 10.1111/j.1540-6288.2010.00244.x
+   Beck T, 2013, J BANK FINANC, V37, P433, DOI 10.1016/j.jbankfin.2012.09.016
+   Ben Rejeb A, 2016, RES INT BUS FINANC, V36, P140, DOI 10.1016/j.ribaf.2015.09.022
+   Black L, 2016, J BANK FINANC, V63, P107, DOI 10.1016/j.jbankfin.2015.09.007
+   Boumediene A., 2009, STABILITY ISLAMIC BA
+   Bourkhis K, 2013, REV FINANC ECON, V22, P68, DOI 10.1016/j.rfe.2013.01.001
+   Charles A, 2015, RES INT BUS FINANC, V35, P33, DOI 10.1016/j.ribaf.2015.03.003
+   Ciara M, 2014, 3 ESSAYS IDENTIFYING
+   Dewandaru G, 2015, J MULTINATL FINANC M, V29, P115, DOI 10.1016/j.mulfin.2014.11.006
+   DICKEY DA, 1979, J AM STAT ASSOC, V74, P427, DOI 10.2307/2286348
+   El-Gamal M., 2006, ISLAMIC FINANCE LAW
+   Engle R, 2002, J BUS ECON STAT, V20, P339, DOI 10.1198/073500102288618487
+   Frederic S.M, 2010, CLIEF SUBPRIME GLOBA
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Haroon Y.S., 1999, ISLAMIC STOCK MARKET
+   Hassan M. K., 2010, 10201 IMF
+   Herwany A., 2013, GLOBAL J BUS RES, V7, P35
+   Ho CSF, 2014, PAC-BASIN FINANC J, V28, P110, DOI 10.1016/j.pacfin.2013.09.002
+   Huang X., 2009, J BANKING FINANCE, V33
+   Iqbal J, 2015, J ECON BUS, V82, P42, DOI 10.1016/j.jeconbus.2015.06.001
+   Johnes J., 2009, 2009023 LANC U MAN S
+   Johnes J, 2014, J ECON BEHAV ORGAN, V103, pS93, DOI 10.1016/j.jebo.2013.07.016
+   Jorion P, 2006, VALUE RISK NEW BENCH
+   Kenourgios D, 2016, ECON MODEL, V57, P36, DOI 10.1016/j.econmod.2016.04.014
+   Khan MM, 2008, MANAG FINANC, V34, P708, DOI 10.1108/03074350810891029
+   Kleinow J, 2016, J INT FINANC MARK I, V42, P27, DOI 10.1016/j.intfin.2016.01.002
+   Kohonen A, 2013, J EMPIR FINANC, V22, P140, DOI 10.1016/j.jempfin.2013.04.005
+   Kupiec P. H., 2002, J DERIV, V9, P46
+   Merdad HJ, 2015, PAC-BASIN FINANC J, V34, P293, DOI 10.1016/j.pacfin.2015.04.001
+   Mihajat S.I.M, 2011, ISLAMIC EXCHANGE TRA
+   Mohamad S., 2008, J ISLAMIC EC BANKING, V4, P107, DOI DOI 10.1080/09593960500049381
+   Mustafa NNS, 2015, PROC ECON FINANC, V31, P846, DOI 10.1016/S2212-5671(15)01178-8
+   NELSON DB, 1991, ECONOMETRICA, V59, P347, DOI 10.2307/2938260
+   Pappas V., 2013, SURVIVAL ANAL ISLAMI
+   Rashidian M., 2002, 9 EC RES FOR ANN M
+   Reboredo JC, 2015, J INT MONEY FINANC, V51, P214, DOI 10.1016/j.jimonfin.2014.12.002
+   Rizvi SAR, 2015, PAC-BASIN FINANC J, V34, P315, DOI 10.1016/j.pacfin.2015.04.002
+   Saiti B, 2014, BORSA ISTANB REV, V14, P196, DOI 10.1016/j.bir.2014.08.002
+   Shaista A., 2013, J ISLAM FINANC, V2, P1
+   Young Ernst, 2014, 201314 WORLD ISL BAN
+   Zaminor Z., 2013, J ENTREPRENEURSHIP B, V1, P1
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 50
+TC 7
+Z9 7
+U1 1
+U2 8
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0275-5319
+EI 1878-3384
+J9 RES INT BUS FINANC
+JI Res. Int. Bus. Financ.
+PD DEC
+PY 2017
+VL 42
+BP 727
+EP 744
+DI 10.1016/j.ribaf.2017.07.013
+PG 18
+WC Business, Finance
+SC Business & Economics
+GA FO6LK
+UT WOS:000416974400055
+DA 2019-12-28
+ER
+
+PT J
+AU Fiala, T
+   Havranek, T
+AF Fiala, Tomas
+   Havranek, Tomas
+TI The sources of contagion risk in a banking sector with foreign ownership
+SO ECONOMIC MODELLING
+LA English
+DT Article
+DE Systemic risk; Extreme value theory; Financial stability; Central and
+   Eastern Europe; Banking; Parent-subsidiary relationship
+ID SYSTEMIC RISK; EU COUNTRIES; EFFICIENCY; DIVERSIFICATION; CRISIS;
+   INSTITUTIONS; PERFORMANCE; DEBT
+AB Foreign-dominated banking sectors, such as those prevalent in Central and Eastern Europe, are susceptible to two major sources of systemic risk: (i) linkages between local banks and (ii) linkages between a foreign parent bank and its local subsidiary. During and after the global financial crisis, the second source of risk has been stressed by local regulators. Using a nonparametric method based on extreme value theory, we analyze interdependencies in downward risk in the banking sectors of the Czech Republic, Poland, Slovakia, and Turkey during 1994-2013. We find that the risk of contagion from a foreign parent bank to its local subsidiary is substantially smaller than the risk between two local banks.
+C1 [Fiala, Tomas] Swiss Finance Inst, Zurich, Switzerland.
+   [Fiala, Tomas] Univ Svizzera Italian, Lugano, Switzerland.
+   [Havranek, Tomas] Charles Univ Prague, Prague, Czech Republic.
+   [Havranek, Tomas] Czech Natl Bank, Prague, Czech Republic.
+RP Havranek, T (reprint author), Charles Univ Prague, Prague, Czech Republic.; Havranek, T (reprint author), Czech Natl Bank, Prague, Czech Republic.
+EM tomas.havranek@ies-prague.org
+RI Havranek, Tomas/M-8888-2015
+OI Havranek, Tomas/0000-0002-3158-2539
+FU Grant Agency of Charles University [334315/2015]; Czech Science
+   FoundationGrant Agency of the Czech Republic [P402/12/G097]
+FX We thank Mazen Ali, Lenka Habetinova, Iftekhar Hasan, Roman Horvath,
+   Zuzana Irsova, Marek Rusnak, Boril Sopov, Mitja Stadje, Chen Thou, and
+   four anonymous referees of Economic Modelling for their helpful
+   comments. We are also grateful to Matej Senkarcin for providing us with
+   a portion of data. Tomas Fiala acknowledges support from the Grant
+   Agency of Charles University (grant #334315/2015) Tomas Havranek
+   acknowledges support from the Czech Science Foundation (grant
+   #P402/12/G097). The views expressed in the paper are ours and not
+   necessarily those of the Czech National Bank.
+CR Abel Istvan, 2004, EC SYSTEMS, V28, P111
+   Acharya VV, 2009, J FINANC STABIL, V5, P224, DOI 10.1016/j.jfs.2009.02.001
+   Adrian T, 2008, 348 FED RES BANK
+   Akhtaruzzaman M, 2016, ECON MODEL, V59, P143, DOI 10.1016/j.econmod.2016.07.003
+   Arvai Z., 2009, 096 IMF
+   Ashcraft A. B., 2004, 189 FED RES BANK NEW
+   Berger AN, 2010, J BANK FINANC, V34, P1417, DOI 10.1016/j.jbankfin.2010.01.010
+   Berger AN, 2009, J BANK FINANC, V33, P113, DOI 10.1016/j.jbankfin.2007.05.016
+   Bonin JP, 2005, J BANK FINANC, V29, P31, DOI 10.1016/j.jbankfin.2004.06.015
+   Brissimis SN, 2008, J BANK FINANC, V32, P2674, DOI 10.1016/j.jbankfin.2008.07.002
+   Chollete L, 2012, J BANK FINANC, V36, P871, DOI 10.1016/j.jbankfin.2011.09.015
+   Cihak M, 2007, FINANC UVER, V57, P41
+   CNB, 2012, FIN STAB REP 2011 20
+   Cont R, 2001, QUANT FINANC, V1, P223, DOI [10.1088/1469-7688/1/2/304, 10.1080/713665670]
+   Danielsson J, 2002, J BANK FINANC, V26, P1273, DOI 10.1016/S0378-4266(02)00263-7
+   De Bandt O., 2000, SYSTEMIC RISK SURVEY
+   de Haas R, 2010, J FINANC INTERMED, V19, P1, DOI 10.1016/j.jfi.2009.02.001
+   De Vries CG, 2005, J BANK FINANC, V29, P803, DOI 10.1016/j.jbankfin.2004.08.003
+   Deng SE, 2007, J BANK FINANC, V31, P2453, DOI 10.1016/j.jbankfin.2006.10.024
+   Dinger V, 2009, J COMP ECON, V37, P647, DOI 10.1016/j.jce.2009.04.003
+   Embrechts Paul, 2002, RISK MANAGEMENT VALU, P176, DOI DOI 10.1017/CBO9780511615337.008
+   Fang Y., 2011, BANK FINLAND RES DIS
+   Feller W., 1971, INTRO PROBABILITY TH, VII
+   Geluk J. L., 2007, TINBERGEN I DISCUSSI
+   Girardi G, 2013, J BANK FINANC, V37, P3169, DOI 10.1016/j.jbankfin.2013.02.027
+   Gjika D, 2013, ECON MODEL, V33, P55, DOI 10.1016/j.econmod.2013.03.015
+   Goldberg L., 2000, 7714 NAT BUR EC RES, V7714
+   Gomez-Puig M, 2016, ECON MODEL, V56, P133, DOI 10.1016/j.econmod.2016.03.017
+   Hartmann P, 2010, J EMPIR FINANC, V17, P241, DOI 10.1016/j.jempfin.2009.09.004
+   Hartmann P, 2004, REV ECON STAT, V86, P313, DOI 10.1162/003465304323023831
+   Hasan I, 2003, J BANK FINANC, V27, P2249, DOI 10.1016/S0378-4266(02)00328-X
+   Havranek T, 2016, ECON MODEL, V54, P153, DOI 10.1016/j.econmod.2016.01.004
+   Hemche O, 2016, ECON MODEL, V52, P292, DOI 10.1016/j.econmod.2014.09.004
+   Horvath R, 2013, ECON SYST, V37, P81, DOI 10.1016/j.ecosys.2012.07.004
+   Huang X., 1992, THESIS
+   Huang X, 2012, J FINANC STABIL, V8, P193, DOI 10.1016/j.jfs.2011.10.004
+   Ibragimov R, 2011, J FINANC ECON, V99, P333, DOI 10.1016/j.jfineco.2010.08.015
+   Jokipii T., 2007, ECON SYST, V31, P71
+   Keeton W. R., 1990, EC REV, V75
+   Klein P. G., 1997, CTR FINANCIAL I WORK, V97-27
+   Kuester K., 2006, J FINANCIAL ECONOMET, V4, P53, DOI [DOI 10.1093/JJFINEC/NBJ002, 10.1093/jjfinec/nbj002]
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Lensink R, 2008, J BANK FINANC, V32, P834, DOI 10.1016/j.jbankfin.2007.06.001
+   NBP, 2011, TECHNICAL REPORT
+   Patro DK, 2013, J FINANC STABIL, V9, P105, DOI 10.1016/j.jfs.2012.03.002
+   Puzanova N, 2013, J BANK FINANC, V37, P1243, DOI 10.1016/j.jbankfin.2012.11.017
+   Rodriguez-Moreno M, 2013, J BANK FINANC, V37, P1817, DOI 10.1016/j.jbankfin.2012.07.010
+   Silvapulle P, 2016, ECON MODEL, V58, P83, DOI 10.1016/j.econmod.2016.05.015
+   Slijkerman J. F., 2005, 1102 TINB I
+   Slijkerman JF, 2013, J BANK FINANC, V37, P773, DOI 10.1016/j.jbankfin.2012.10.027
+   Syllignakis MN, 2011, INT REV ECON FINANC, V20, P717, DOI 10.1016/j.iref.2011.01.006
+   WILCOXON F, 1945, BIOMETRICS BULL, V1, P80, DOI 10.2307/3001968
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 53
+TC 4
+Z9 4
+U1 0
+U2 11
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0264-9993
+EI 1873-6122
+J9 ECON MODEL
+JI Econ. Model.
+PD JAN
+PY 2017
+VL 60
+BP 108
+EP 121
+DI 10.1016/j.econmod.2016.08.025
+PG 14
+WC Economics
+SC Business & Economics
+GA EF7IE
+UT WOS:000390502500010
+DA 2019-12-27
+ER
+
+PT J
+AU Hainaut, D
+AF Hainaut, Donatien
+TI Contagion modeling between the financial and insurance markets with time
+   changed processes
+SO INSURANCE MATHEMATICS & ECONOMICS
+LA English
+DT Article
+DE Self-exciting process; Cramer-Lundberg risk model; Stochastic optimal
+   control; Time-changed Levy process; Asset-liability management
+ID EXCITING POINT-PROCESSES; OPTIMAL INVESTMENT; REINSURANCE; RUIN;
+   PROBABILITY; SPECTRA
+AB This study analyzes the impact of contagion between financial and non-life insurance markets on the asset liability management policy of an insurance company. The indirect dependence between these markets is modeled by assuming that the assets return and non-life insurance claims are led respectively by time-changed Brownian and jump processes, for which stochastic clocks are integrals of mutually self exciting processes. This model exhibits delayed co-movements between financial and non-life insurance markets, caused by events like natural disasters, epidemics, or economic recessions. (C) 2017 Elsevier B.V. All rights reserved.
+C1 [Hainaut, Donatien] Catholic Univ Louvain, ISBA, Voie Roman Pays 20, B-1348 Louvain La Neuve, Belgium.
+RP Hainaut, D (reprint author), Catholic Univ Louvain, ISBA, Voie Roman Pays 20, B-1348 Louvain La Neuve, Belgium.
+EM donatien.hainaut@gmail.com
+FU BNP Paribas Cardiff
+FX I thank for its support the Chair "Data Analytics and Models for
+   insurance" of BNP Paribas Cardiff, hosted by ISFA (Universite Claude
+   Bernard, Lyon France).
+CR Ait-Sahalia Y, 2015, J FINANC ECON, V117, P585, DOI 10.1016/j.jfineco.2015.03.002
+   Ait-Sahalia Y, 2014, J ECONOMETRICS, V183, P151, DOI 10.1016/j.jeconom.2014.05.006
+   Albrecher H., 2006, SCANDINAVIAN ACTUARI, V2, P86
+   Andrieu C, 2010, J R STAT SOC B, V72, P269, DOI 10.1111/j.1467-9868.2009.00736.x
+   Ane T, 2000, J FINANC, V55, P2259, DOI 10.1111/0022-1082.00286
+   Asmussen S., 1997, N AM ACTUAR J, V20, P1
+   BJORK T, 1988, SCAND ACTUAR J, P77
+   Browne S, 1995, MATH OPER RES, V20, P937, DOI 10.1287/moor.20.4.937
+   Dassios A, 2012, INSUR MATH ECON, V51, P93, DOI 10.1016/j.insmatheco.2012.03.006
+   Dassios A, 2011, ADV APPL PROBAB, V43, P814
+   Embrechts P., 1993, SCAND ACTUARIAL J, V1, P17
+   Embrechts P, 2011, J APPL PROBAB, V48A, P367
+   Hainaut D., 2016, CLUSTERED LEVY PROCE
+   Hainaut D, 2016, INSUR MATH ECON, V71, P367, DOI 10.1016/j.insmatheco.2016.10.009
+   Hainaut D, 2016, QUANT FINANC, V16, P1203, DOI 10.1080/14697688.2015.1135251
+   Hainaut D, 2016, ECON MODEL, V57, P180, DOI 10.1016/j.econmod.2016.04.016
+   HAWKES AG, 1971, J ROY STAT SOC B, V33, P438
+   HAWKES AG, 1971, BIOMETRIKA, V58, P83, DOI 10.2307/2334319
+   HAWKES AG, 1974, J APPL PROBAB, V11, P493, DOI 10.2307/3212693
+   Hipp C, 2000, INSUR MATH ECON, V27, P215, DOI 10.1016/S0167-6687(00)00049-4
+   IMF, 2016, INS SECT TRENDS SYST
+   Kaluszka M, 2001, INSUR MATH ECON, V28, P61, DOI 10.1016/S0167-6687(00)00066-4
+   KALUSZKA M., 2004, SCANDINAVIAN ACTUARI, V1, P28
+   Lundberg P., 1903, APPROXIMERAD FRAMSTA
+   Salmon M., 2007, TIME DEFORMATION YIE
+   Schmidli H, 2002, ANN APPL PROBAB, V12, P890
+   Schmidli H, 2006, STOCH MODELS, V22, P689, DOI 10.1080/15326340600878420
+   Yuen KC, 2015, INSUR MATH ECON, V64, P1, DOI 10.1016/j.insmatheco.2015.04.009
+   Zheng XX, 2016, INSUR MATH ECON, V67, P77, DOI 10.1016/j.insmatheco.2015.12.008
+NR 29
+TC 2
+Z9 2
+U1 2
+U2 8
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0167-6687
+EI 1873-5959
+J9 INSUR MATH ECON
+JI Insur. Math. Econ.
+PD MAY
+PY 2017
+VL 74
+BP 63
+EP 77
+DI 10.1016/j.insmatheco.2017.02.011
+PG 15
+WC Economics; Mathematics, Interdisciplinary Applications; Social Sciences,
+   Mathematical Methods; Statistics & Probability
+SC Business & Economics; Mathematics; Mathematical Methods In Social
+   Sciences
+GA EW0XM
+UT WOS:000402214500006
+DA 2019-12-27
+ER
+
+PT J
+AU Schoenmaker, D
+AF Schoenmaker, Dirk
+TI What happened to global banking after the crisis?
+SO JOURNAL OF FINANCIAL REGULATION AND COMPLIANCE
+LA English
+DT Article
+DE Financial crisis; Banking; International finance
+ID FOREIGN BANKS; EUROPE
+AB Purpose - Large global banks were at the heart of the global financial crisis. In response to the crisis, the Financial Stability Board published an integrated set of policy measures, such as capital surcharges, to address the systemic and moral hazard risks associated with global systemically important banks (G-SIBs). Almost 10 years later, it is time to take stock of the impact of these measures. This paper answers three questions on what happened to the G-SIBs. First, have they shrunk in size? Second, are they better capitalised? Third, have they reduced their global reach?
+   Design/methodology/approach - This paper looks at the individual G-SIBs and compares the situation before the crisis with the current situation. In this methodology, the differences because of changes at individual banks and changes in the ranking within the group (composition effect) are disentangled. Data have been collected on these banks from SNL Financial (banking database) and annual reports.
+   Findings - First, a substantial increase in capital levels is seen, though the distribution is uneven. China and USA are leading the pact with leverage ratios (Tier 1 capital divided by total assets) of around 7 per cent for their large banks, whereas Europe and Japan are trailing behind with ratios between 4 and 5 per cent. Second, a strong composition effect is identified: a shift of business from the global European banks to the more domestic Asian banks, which are gradually increasing their global reach. The US banks keep their strong position. So, the decline in cross-border banking is largely because of a composition effect (i.e. a reshuffle of the global banking champions league) and far less due to a reduced global reach of individual banks.
+   Research limitations/implications - From the results on capital, recommendations are made on capital requirements (see below at social implications).
+   Social implications - It is noted that the euro area, Japan, Sweden and Switzerland trail behind with a leverage ratio between 4 and 5 per cent. It is recommended these countries bring the leverage ratio of their largest banks more in line with international practice.
+   Originality/value - The effects of the reform after the global financial crisis on the large global banks have not been researched in detail. This paper split the results by country of incorporation (home country). This gives interesting differences, which the paper relates to specific policies (or lack of policies) in these countries.
+C1 [Schoenmaker, Dirk] RSM Erasmus Univ, Dept Finance, Rotterdam, Netherlands.
+RP Schoenmaker, D (reprint author), RSM Erasmus Univ, Dept Finance, Rotterdam, Netherlands.
+EM schoenmaker@rsm.nl
+CR Acharya V., 2011, MUCH CAPITAL EUROPEA
+   Berger B., 2016, TOTAL ASSETS VERSUS
+   Cerutti E., 2017, REV FINANCE IN PRESS
+   Claessens S., 2017, REV FINANCE IN PRESS
+   Claessens S, 2014, J MONEY CREDIT BANK, V46, P295, DOI 10.1111/jmcb.12092
+   De Haas R, 2015, J FINANC INTERMED, V24, P325, DOI 10.1016/j.jfi.2014.05.003
+   Demir B., 2016, 11565 CEPR
+   Duijm P., 2017, EUROPEAN BANKS UNPUB
+   Financial Stability Board, 2016, FINANCIAL TIMES
+   Gambacorta L, 2011, ECON POLICY, P135, DOI 10.1111/j.1468-0327.2011.00261.x
+   Goodhart C, 2012, LAW FINANC MATER REV, V6, P32, DOI 10.5235/175214412799195247
+   Kleymenova A, 2016, J JPN INT ECON, V40, P43, DOI 10.1016/j.jjie.2016.03.002
+   Langfield S, 2016, ECON POLICY, V31, P51, DOI 10.1093/epolic/eiv019
+   Liikanen Report, 2012, HIGH LEV EXP GROUP R
+   Marshall White F., 1897, NEW YORK J      0602, P1
+   McCauley R, 2012, J ECON BUS, V64, P7, DOI 10.1016/j.jeconbus.2011.06.004
+   Rose AK, 2014, J FINANC, V69, P2127, DOI 10.1111/jofi.12184
+   Schoenmaker D., 2016, EUROPEAN BANKING SUP
+   Schoenmaker D., 2013, GOVERNANCE INT BANKI
+   Schoenmaker D., 2016, 11600 CEPR
+   Schoenmaker D, 2013, INT FINANC, V16, P1, DOI 10.1111/j.1468-2362.2013.12026.x
+NR 21
+TC 3
+Z9 3
+U1 0
+U2 5
+PU EMERALD GROUP PUBLISHING LTD
+PI BINGLEY
+PA HOWARD HOUSE, WAGON LANE, BINGLEY BD16 1WA, W YORKSHIRE, ENGLAND
+SN 1358-1988
+EI 1740-0279
+J9 J FINANC REGUL COMPL
+JI J. Financ. Regul. Compliance
+PY 2017
+VL 25
+IS 3
+SI SI
+BP 241
+EP 252
+DI 10.1108/JFRC-01-2017-0010
+PG 12
+WC Business, Finance
+SC Business & Economics
+GA FF1FS
+UT WOS:000408645800003
+DA 2019-12-28
+ER
+
+PT J
+AU Feinstein, Z
+   El-Masri, F
+AF Feinstein, Zachary
+   El-Masri, Fatena
+TI The effects of leverage requirements and fire sales on financial
+   contagion via asset liquidation strategies in financial networks
+SO STATISTICS & RISK MODELING
+LA English
+DT Article
+DE Systemic risk; financial contagion; fire sales; leverage requirements;
+   financial network
+ID SYSTEMIC RISK; STABILITY
+AB This paper provides a framework for modeling the financial system with multiple illiquid assets when liquidation of illiquid assets is caused by failure to meet a leverage requirement. This extends the network model of [6] which incorporates a single asset with fire sales and capital adequacy ratio. This also extends the network model of [14] which incorporates multiple illiquid assets with fire sales and no leverage ratios. We prove existence of equilibrium clearing payments and liquidation prices for a known liquidation strategy when leverage requirements are required. We also prove sufficient conditions for the existence of an equilibrium liquidation strategy with corresponding clearing payments and liquidation prices. Finally, we calibrate network models to asset and liability data for 50 banks in the United States from 2007-2014 in order to draw conclusions on systemic risk as a function of leverage requirements.
+C1 [Feinstein, Zachary] Washington Univ, ESE, St Louis, MO 63130 USA.
+   [El-Masri, Fatena] Fed Deposit Insurance Corp, Arlington, VA 22203 USA.
+RP Feinstein, Z (reprint author), Washington Univ, ESE, St Louis, MO 63130 USA.
+EM zfeinstein@ese.wustl.edu; fatenaelmasri@gmail.com
+OI Feinstein, Zachary/0000-0002-6733-5724
+CR Amini H., 2015, 1334 SWISS FIN I
+   Amini H, 2016, OPER RES LETT, V44, P1, DOI 10.1016/j.orl.2015.10.005
+   Awiszus K, 2015, WORKING PAPER
+   Caccioli F, 2014, J BANK FINANC, V46, P233, DOI 10.1016/j.jbankfin.2014.05.021
+   Chen N, 2016, OPER RES, V64, P1089, DOI 10.1287/opre.2016.1497
+   Cifuentes R, 2005, J EUR ECON ASSOC, V3, P556, DOI 10.1162/jeea.2005.3.2-3.556
+   Cont R, 2016, MATH FINANC, V26, P835, DOI 10.1111/mafi.12071
+   Cont R, 2013, HANDBOOK ON SYSTEMIC RISK, P327
+   Cont R, 2013, MATH FINANC, V23, P718, DOI 10.1111/j.1467-9965.2011.00510.x
+   Eisenberg L, 2001, MANAGE SCI, V47, P236, DOI 10.1287/mnsc.47.2.236.9835
+   Elliott M, 2014, AM ECON REV, V104, P3115, DOI 10.1257/aer.104.10.3115
+   Elsinger H., 2009, 156 OST NAT
+   Elsinger H, 2006, MANAGE SCI, V52, P1301, DOI 10.1287/mnsc.1060.0531
+   Feinstein Z., 2016, SIAM J FINA IN PRESS
+   Feinstein Z, 2017, OPER RES LETT, V45, P109, DOI 10.1016/j.orl.2017.01.004
+   Gai P, 2010, P ROY SOC A-MATH PHY, V466, P2401, DOI 10.1098/rspa.2009.0410
+   Glasserman P, 2015, J BANK FINANC, V50, P383, DOI 10.1016/j.jbankfin.2014.02.006
+   Greenwood R, 2015, J FINANC ECON, V115, P471, DOI 10.1016/j.jfineco.2014.11.006
+   Lehar A, 2005, J BANK FINANC, V29, P2577, DOI 10.1016/j.jbankfin.2004.09.007
+   Nier E, 2007, J ECON DYN CONTROL, V31, P2033, DOI 10.1016/j.jedc.2007.01.014
+   Rogers LCG, 2013, MANAGE SCI, V59, P882, DOI 10.1287/mnsc.1120.1569
+   SCARF H, 1967, SIAM J APPL MATH, V15, P1328, DOI 10.1137/0115116
+   Upper C, 2011, J FINANC STABIL, V7, P111, DOI 10.1016/j.jfs.2010.12.001
+   Zhou C, 2010, INT J CENT BANK, V6, P205
+NR 24
+TC 6
+Z9 6
+U1 0
+U2 1
+PU WALTER DE GRUYTER GMBH
+PI BERLIN
+PA GENTHINER STRASSE 13, D-10785 BERLIN, GERMANY
+SN 2193-1402
+EI 2196-7040
+J9 STATIST RISK MODEL
+JI Statist. Risk Model.
+PD SEP
+PY 2017
+VL 34
+IS 3-4
+SI SI
+BP 113
+EP 139
+DI 10.1515/strm-2015-0030
+PG 27
+WC Statistics & Probability
+SC Mathematics
+GA FM0GD
+UT WOS:000414639500003
+DA 2019-12-27
+ER
