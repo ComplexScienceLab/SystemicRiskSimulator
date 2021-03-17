@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2021-03-16T02:58:00.595Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.54.2 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36" etag="vrHltEKtDE9B9_ddVFBp" version="14.2.4" type="embed" pages="10">
+<mxfile host="65bd71144e" modified="2021-03-16T02:57:16.461Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.54.2 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36" etag="jIL7_xK4NuQPY8wzkMnb" version="14.2.4" type="embed" pages="10">
     <diagram name="系统性金融风险研究框架" id="s_eDp8Wrx6QgjVAEPlbN">
         <mxGraphModel dx="979" dy="1131" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
             <root>
@@ -1795,12 +1795,19 @@
         &#xa;
     </diagram>
     <diagram id="d-QbTQjU04cMqYqZFjjG" name="内生冲击">
-        <mxGraphModel dx="1088" dy="902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        &#xa;
+        <mxGraphModel dx="579" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            &#xa;
             <root>
+                &#xa;
                 <mxCell id="Ta7S_o2cWJldtly8eeGr-0"/>
+                &#xa;
                 <mxCell id="Ta7S_o2cWJldtly8eeGr-1" parent="Ta7S_o2cWJldtly8eeGr-0"/>
+                &#xa;
             </root>
+            &#xa;
         </mxGraphModel>
+        &#xa;
     </diagram>
     <diagram id="yIy99APQ9y_VOn6RPSJc" name="商业银行部门">
         &#xa;
@@ -1852,7 +1859,7 @@
         &#xa;
     </diagram>
     <diagram name="家庭部门" id="Nlw9F0QcZqvpT_OhxWMq">
-        <mxGraphModel dx="1888" dy="1302" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+        <mxGraphModel dx="1379" dy="1131" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
             <root>
                 <mxCell id="dc3Z-UnP8D3dMwIeHkTR-0"/>
                 <mxCell id="dc3Z-UnP8D3dMwIeHkTR-1" parent="dc3Z-UnP8D3dMwIeHkTR-0"/>

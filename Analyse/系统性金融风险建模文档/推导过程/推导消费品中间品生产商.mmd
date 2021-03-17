@@ -38,8 +38,8 @@ $$
 其中，
 $(\gamma_{GI})^{t_s}$：消费品中间品生产商贴现；
 $(\theta_{GI,p})^{t_s}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_2}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例，在预期的$t_s$时期能够将其价格保持的概率；
-$Y_{GI}[j,t+t_s]$：产出之于消费品中间品生产商$j$，其参与重新定价于时期$t+t_s$；
-$P_{GF}[t+t_s]$：定价之于消费品最终品生产商于时期$t+t_s$；
+$Y_{GI}[j,t+t_s]$：产出之于消费品中间品生产商$j$，其参与重新定价在时期t+t_s；
+$P_{GF}[t+t_s]$：定价之于消费品最终品生产商在时期t+t_s；
 
 上式的
 $$
@@ -48,7 +48,7 @@ $$
 	r_{GI,z}[t+t_s] \; K_{GI}[j,t+t_s] + w_{GI,z}[t+t_s] \; L_{GI}[j, t+t_s]
 \right)
 $$
-表示最小化成本问题，即资本和劳动力投入成本之于参与重新定价于时期$t+t_s$的消费品中间品生产商$j$；
+表示最小化成本问题，即资本和劳动力投入成本之于参与重新定价在时期t+t_s的消费品中间品生产商$j$；
 
 
 
@@ -79,10 +79,10 @@ $L_{GI}[j,t+t_s]$：参与重新定价的消费品中间品生产商$j$的劳动
 
 #### 阶段1：最小化总成本
 
-基于时期$t$，所有的消费品中间品生产商$i$最小化其总成本于时期$t_s$，即时期$t+t_s, \quad t_s \in [t,\infty)$。这里为了简化表述，在阶段1，我们省略$t_s$，所以$t+t_s$用$t$表示。
+基于时期$t$，所有的消费品中间品生产商$i$最小化其总成本在时期$t_s$，暨时期$t+t_s, \quad t_s \in [t,\infty)$。这里为了简化表述，在阶段1，我们省略$t_s$，所以$t+t_s$用$t$表示。
 
 $$
-TC_{GI}[i,t] \equiv TC_{GI}[t] := \min _{L_{GI}[i,t] , K_{GI}[i,t]}  w_{GI}[t] \; L_{GI}[i,t] + r_{GI}[t] \; K_{GI}[i,t]
+{TC}_{GI}[i,t] := \min _{L_{GI}[i,t] , K_{GI}[i,t]}  w_{GI}[t] \; L_{GI}[i,t] + r_{GI}[t] \; K_{GI}[i,t]
 $$
 其中，
 $w_{GI}[t]$：消费品中间品生产商对居民支付单位工资，在时期$t$；
@@ -90,13 +90,21 @@ $L_{GI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$�
 $r_{GI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{GI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
 
-  
 
-约束条件：
 
-生产函数之中间消费品
+对于整个消费品中间品生产商部门而言，
 $$
-F_{GI}[A_{GI}[t],K_{GI}[i,t],L_{GI}[i,t]] := Y_{GI}[i,t] := A_{GI}[t] \; K_{GI}[i,t]^{\alpha_{GI}} \; L_{GI}[i,t]^{1-\alpha_{GI}}
+{TC}_{GI}[t] := \sum_{i=1}^{N_{GF}} {TC}_{GI}[i,t]
+$$
+
+
+
+
+最小化成本问题对应约束条件：
+
+消费品中间品生产商之生产函数$F_{GI}[\cdot]$
+$$
+Y_{GI}[i,t] = F_{GI}[A_{GI}[t],K_{GI}[i,t],L_{GI}[i,t]] := A_{GI}[t] \; K_{GI}[i,t]^{\alpha_{GI}} \; L_{GI}[i,t]^{1-\alpha_{GI}}
 $$
 其中，
 $A_{GI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
@@ -175,7 +183,7 @@ $$
 
 由于我们采用的Calvo定价规则，假设了在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_2}$当中，随机抽取所占比例为 $(1-\theta_{GI,p})$数量的厂商参与重新定价。此时意味着在时期$t$，被随机抽取中参与重新定价的厂商的数量占比为$(1 - \theta_{GI,p})$。
 
-基于时期$t$，参与制定最优价格的消费品中间品生产商$j \in \mathbb{GI_1}$，通过制定最优价格最大化其实际预期贴现利润于时期$t_s$，即时期$t+t_s, \quad t_s \in [t,\infty)$。
+基于时期$t$，参与制定最优价格的消费品中间品生产商$j \in \mathbb{GI_1}$，通过制定最优价格最大化其实际预期贴现利润在时期t_s，暨在时期$t+t_s, \quad t_s \in [t,\infty)$。
 
 另外，未能参与制定最优价格$\tilde{P}_{GI}[j,t]$之消费品中间品生产商$k \in \mathbb{GI_2}$根据过去的通货膨率$\pi[t-1]$确定其指数化价格为
 $$
@@ -200,7 +208,7 @@ $$
 
 
 
-假设消费品中间品生产商$j$参与定价一次$\tilde {P}_{GI}[j,t]$之后，之后不再参与被随机抽取，即之后不能最优地重新定价，从而该消费品中间品生产商$j$的价格$P_{GI}[j,t+t_s]$在时期$t+t_s$为
+假设消费品中间品生产商$j$参与定价一次$\tilde {P}_{GI}[j,t]$之后，之后不再参与被随机抽取，暨之后不能最优地重新定价，从而该消费品中间品生产商$j$的价格$P_{GI}[j,t+t_s]$在时期$t+t_s$为
 $$
 P_{GI}[j,t+t_s] = \prod_{t_h=1}^{t_s} 
 \left(
@@ -213,8 +221,8 @@ $$
 
 $$
 \begin{align*}
-\max _{\tilde{P}_{GI}[j,t]} 
-& \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\max _{\tilde{P}_{GI}[j,t]} \mathrm{Utility}_{GI}[j,t] 
+:= & \max _{\tilde{P}_{GI}[j,t]} \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
 \left(
 (\gamma_{GI})^{t_s} \; (\theta_{GI,p})^{t_s}
 \; Y_{GI}[j,t+t_s]
@@ -225,7 +233,7 @@ $$
 	\right)
 \right)
 \\
-\Leftrightarrow \quad & \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\Leftrightarrow \quad & \max _{\tilde{P}_{GI}[j,t]} \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
 \left(
 (\gamma_{GI})^{t_s} \; (\theta_{GI,p})^{t_s}
 \; \left(\frac{P_{GF}[t+t_s]}{P_{GI}[j, t+t_s]} \right)^{\alpha_{GF}} Y_{GF}[t+t_s]
@@ -240,7 +248,9 @@ $$
 	\right)
 \right)
 \\
-\Leftrightarrow \quad & \mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\Leftrightarrow \quad & 
+\max _{\tilde{P}_{GI}[j,t]} 
+\mathbb{E}_{t} \sum_{t_s=0}^{\infty}
 \left(
 (\gamma_{GI})^{t_s} \; (\theta_{GI,p})^{t_s}
 \; \left(\frac{P_{GF}[t+t_s]}{		
