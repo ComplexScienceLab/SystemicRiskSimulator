@@ -84,6 +84,25 @@ $$
 B_{t}^{h} \leqslant m^{h} \frac{E_{t}\left(q_{t+1} H_{t} \pi_{t+1}\right)}{R^{b}}
 $$
 
+> 推导过程：
+>
+> 这里的$B^h_{t}$表示实际货币计量贷款额。$B_{t}^{h} \; P_t$表示名义货币计量的贷款额。
+> $$
+> B_{t}^{h} \leqslant m^{h} \frac{E_{t}\left(q_{t+1} H_{t} \pi_{t+1}\right)}{R^{b}} \text{, in this eq., } \pi=P_{t+1}/P_{t}
+> $$
+>
+> $$
+> B_{t}^{h} \; P_t \leqslant m^{h} \frac{E_{t}\left(q_{t+1} H_{t} P_{t+1} \right)}{R^{b}}
+> $$
+>
+> $$
+> B_{t}^{h} \; P_t \leqslant m^{h} \frac{E_{t}\left(q_{t+1} H_{t} P_{t+1} \right)}{R^{b}}
+> $$
+>
+> 
+
+
+
 
 
 
