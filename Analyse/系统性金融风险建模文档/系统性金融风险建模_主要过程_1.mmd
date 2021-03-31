@@ -34,7 +34,7 @@
 > [[Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.]]
 > 的做法
 
-居民成员角色可相互转化，每期企业家和银行家的相互转化满足泊松过程，分别以固定的退出率（转换率）$1-\lambda_e , \lambda_e \in[0,1)$ 和 $1-\lambda_b , \lambda_b \in[0,1)$， 随机退出自己岗位转为其他角色。如果退出率为0，则居民成员的角色不相互转化。
+居民成员角色可相互转化，每期企业家和银行家的相互转化满足泊松过程，分别以固定的退出率（转换率）$1-\lambda_{e} , \lambda_{e} \in[0,1)$ 和 $1-\lambda_{b} , \lambda_{b} \in[0,1)$， 随机退出自己岗位转为其他角色。如果退出率为0，则居民成员的角色不相互转化。
 
 > 居民的设置参照
 >
@@ -92,11 +92,12 @@ $\Box_{HB}$
 ###### 目标：
 
 借款型居民部门的个体$i$的目标是最大化其效用$\mathrm{Utility}_{HB}$在当前时期$t$：
+
 $$
 \mathrm{Utility}_{HB}[i,t] :=
 \max \quad \mathbb{E}_{i,t=0} 
 \left[ \sum_{t=0}^{\infty} 
-(\gamma_{HB})^t \left(
+(\gamma_{HB})^{t} \left(
 (1-\alpha_{HB}) \; \varepsilon_{c}[t] \; \log \left(C_{HB,c}[i,t] - \alpha_{HB} \; C_{HB,c}[t-1]\right) + \varepsilon_{h}[t] \; \log C_{HB,h}[i,t] - \frac{\left(h_{HB}[i,t]\right)^{1+\phi}}{1+\phi}
  \right)
 \right]
@@ -115,7 +116,7 @@ $\phi$：居民工作时长对效用的指数因子；
 
 其中，上式的
 $$
-\varepsilon_{c}[t] \; \log \left(C_{c, H B}[i, t] - \alpha_{H B} \; C_{c, H B}[t-1]\right)=\log \frac{C_{c, H B}[i, t]^{\varepsilon_{c}[t]}}{\alpha_{H B} C_{c, H B}[t-1]^{\varepsilon_{c}[t]}}
+\varepsilon_{c}[t] \; \log \left(C_{c, H B}[i, t] - \alpha_{H B} \; C_{c, H B}[t-1]\right)=\log \frac{(C_{c, H B}[i, t])^{\varepsilon_{c}[t]}}{\alpha_{H B} (C_{c, H B}[t-1])^{\varepsilon_{c}[t]}}
 $$
 表示借款型居民$i$的大众消费需求。
 
@@ -201,7 +202,7 @@ $$
 \mathrm{Utility}_{HI}[i,t]:=
 \max \quad \mathbb{E}_{i,t=0} \left[ 
 \sum_{t=0}^{\infty}
-(\gamma_{HI})^t
+(\gamma_{HI})^{t}
 \left(
 (1-\alpha_{HI}) \; \varepsilon_{c}[t] \; \log \left(C_{HI,c}[i,t]-\alpha_{HI} \; C_{HI,c}[t-1]\right) + \varepsilon_{h}[t] \; \log h_{HI}[i,t]-\frac{(h_{HI}[i,t])^{1+\phi}}{1+\phi}
 \right)
@@ -220,7 +221,7 @@ $\phi$：居民工作时长对效用的指数因子；
 
 上式中，
 $$
-\varepsilon_{c}[t] \log \left(C_{c, H I}[i, t]-\alpha_{H I} C_{c, H I}[t-1]\right)=\log \frac{C_{c, H I}[i, t]^{\varepsilon_{c}[t]}}{\alpha_{H I} C_{c, H I}[t-1]^{\varepsilon_{c}[t]}}
+\varepsilon_{c}[t] \log \left(C_{c, H I}[i, t]-\alpha_{H I} C_{c, H I}[t-1]\right)=\log \frac{(C_{c, H I}[i, t])^{\varepsilon_{c}[t]}}{\alpha_{H I} (C_{c, H I}[t-1])^{\varepsilon_{c}[t]}}
 $$
 表示投资和储蓄型居民$i$的大众消费需求。
 
@@ -313,7 +314,7 @@ TODO分类针对消费品厂商的生产最终品的厂商、房地产开发商�
 
 - 假设未能参与重新定价的消费品中间品生产商的价格根据过去的通胀水平确定其指数化了的价格；
 
-- 假设所有参与重新定价的消费品中间品生产商厂商 $j \in \mathbb{GI_1}$  都选择同样的价格 $\tilde{P}_{GI}[t] \equiv \tilde{P}_{GI}[j,t]$；
+- 假设所有参与重新定价的消费品中间品生产商厂商 $j \in \mathbb{GI_{1}}$  都选择同样的价格 $\tilde{P}_{GI}[t] \equiv \tilde{P}_{GI}[j,t]$；
 
 - 假定对数形式的全要素生产率$A_{\Box}[t]$服从AR(1)过程；
 
@@ -407,7 +408,7 @@ $Y_{GF}[t]$：消费品最终品产量；
 
 满足的约束条件：
 $$
-Y_{GF}[t] := \left(\int_{0}^{1} Y_{GI}[i,t]^{\frac{\alpha_{GF}-1}{\alpha_{GF}}} \; \mathbb{d} i\right)^{\frac{\alpha_{GF}}{\alpha_{GF}-1}}
+Y_{GF}[t] := \left(\int_{0}^{1} (Y_{GI}[i,t])^{\frac{\alpha_{GF} - 1}{\alpha_{GF}}} \; \mathbb{d} i\right)^{\frac{\alpha_{GF}}{\alpha_{GF}-1}}
 $$
 
 其中，
@@ -463,7 +464,7 @@ $\Box_{GI}$
 
 假设消费品中间品生产商的个体$i_{GI}$构成的集合为$\mathbb{GI}$，数量为$N_{GI}$。
 
-为了简化分析，在这里，假设消费品中间品厂商的定价机制遵循Calvo定价机制。在第$t$期，随机以一定数量比例$(1 - \theta_{GI,p})$选择生产商$j \in \mathbb{GI_1}$，它们在本期参与制定价格为$\tilde{P}_{GI}[j,t]$。假设所有参与重新定价的消费品中间品生产商厂商$j$都选择同样的价格 $\tilde{P}_{GI}[t] \equiv \tilde{P}_{GI}[j,t]$。在当期，其未被选中能够参与制定最优价格之其余厂商个体$k$，构成厂商集合$\mathbb{GI_2}$，此时有$k \in \mathbb{GI_2}$。未被选中能够参与制定最优价格的厂商$k$则调整价格，其调整价格以总通货膨胀率为基准。
+为了简化分析，在这里，假设消费品中间品厂商的定价机制遵循Calvo定价机制。在第$t$期，随机以一定数量比例$(1 - \theta_{GI,p})$选择生产商$j \in \mathbb{GI_{1}}$，它们在本期参与制定价格为$\tilde{P}_{GI}[j,t]$。假设所有参与重新定价的消费品中间品生产商厂商$j$都选择同样的价格 $\tilde{P}_{GI}[t] \equiv \tilde{P}_{GI}[j,t]$。在当期，其未被选中能够参与制定最优价格之其余厂商个体$k$，构成厂商集合$\mathbb{GI_{2}}$，此时有$k \in \mathbb{GI_{2}}$。未被选中能够参与制定最优价格的厂商$k$则调整价格，其调整价格以总通货膨胀率为基准。
 
 此时中间品生产商的最优化问题中，即包含最大化收益，也包含最小化成本问题，因此分析时考虑分为两个阶段决策。
 
@@ -503,7 +504,7 @@ $$
 
 消费品中间品生产商之生产函数$F_{GI}[\cdot]$
 $$
-Y_{GI}[i,t] = F_{GI}[A_{GI}[t],K_{GI}[i,t],L_{GI}[i,t]] := A_{GI}[t] \; K_{GI}[i,t]^{\alpha_{GI}} \; L_{GI}[i,t]^{1-\alpha_{GI}}
+Y_{GI}[i,t] = F_{GI}[A_{GI}[t],K_{GI}[i,t],L_{GI}[i,t]] := A_{GI}[t] \; (K_{GI}[i,t])^{\alpha_{GI}} \; (L_{GI}[i,t])^{1-\alpha_{GI}}
 $$
 其中，
 $A_{GI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
@@ -528,7 +529,7 @@ $\varepsilon_{A,GI}[t]$：消费品中间品生产商的全要素生产率对$A_
 $$
 MC_{GI}[t]
 := \frac{TC_{GI}[t]}{Y_{GI}[t]}
-= \left( 1-\alpha_{GI} \right)^{\alpha_{GI} -1} \; (\alpha_{GI})^{-\alpha_{GI}} \; \frac{w_{GI}[t]^{1-\alpha_{GI}} \; r_{GI}[t]^{\alpha_{GI}}}{A_{GI}[t]}
+= \left( 1-\alpha_{GI} \right)^{\alpha_{GI} -1} \; (\alpha_{GI})^{-\alpha_{GI}} \; \frac{(w_{GI}[t])^{1-\alpha_{GI}} \; (r_{GI}[t])^{\alpha_{GI}}}{A_{GI}[t]}
 $$
 
 
@@ -539,11 +540,11 @@ $$
 
 阶段2：制定最优价格以最大化总利润。
 
-基于时期$t$，参与制定最优价格的消费品中间品生产商$j \in \mathbb{GI_1}$，通过制定最优价格最大化其实际预期贴现利润在时期$t_s$，暨在时期$t+t_s, \quad t_s \in [t,\infty)$。
+基于时期$t$，参与制定最优价格的消费品中间品生产商$j \in \mathbb{GI_{1}}$，通过制定最优价格最大化其实际预期贴现利润在时期$t_{s}$，暨在时期$t+t_{s}, \quad t_{s} \in [t,\infty)$。
 
-另外，未能参与制定最优价格$\tilde{P}_{GI}[j,t]$之消费品中间品生产商$k \in \mathbb{GI_2}$根据过去的通货膨率$\pi[t-1]$确定其指数化价格为
+另外，未能参与制定最优价格$\tilde{P}_{GI}[j,t]$之消费品中间品生产商$k \in \mathbb{GI_{2}}$根据过去的通货膨率$\pi[t-1]$确定其指数化价格为
 $$
-P_{GI}[k,t]=\pi[t-1]^{\chi_{p}} \; P_{GI}[i,t-1]
+P_{GI}[k,t]=(\pi[t-1])^{\chi_{p}} \; P_{GI}[i,t-1]
 $$
 其中，
 $\chi_{p} \in[0,1]$ ：指数化程度参数；
@@ -559,16 +560,17 @@ $P[\cdot]$：表示物价于特定时期；
 
 因为对于未参与定价的消费品中间品生产商$k$，价格之调整以总通货膨胀率为基准，所以消费品最终品生产商的定价规则为
 $$
-P_{GF}[t] = \theta_{GI,p} \; \left( \pi[t+t_h-1]^{\chi_{p}} \; P_{GF}[t-1] \right)   + (1-\theta_{GI,p}) \; P_{GI}[j,t]
+P_{GF}[t] = \theta_{GI,p} \; \left( (\pi[t+t_{h}-1])^{\chi_{p}} \; P_{GF}[t-1] \right)   + (1-\theta_{GI,p}) \; P_{GI}[j,t]
 $$
 
-由于我们采用的Calvo定价规则，假设了在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_2}$当中，随机抽取所占比例为 $(1-\theta_{GI,p})$数量的厂商参与重新定价。此时意味着在时期$t$，被随机抽取中参与重新定价的厂商的数量占比为$(1 - \theta_{GI,p})$。
+由于我们采用的Calvo定价规则，假设了在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_{2}}$当中，随机抽取所占比例为 $(1-\theta_{GI,p})$数量的厂商参与重新定价。此时意味着在时期$t$，被随机抽取中参与重新定价的厂商的数量占比为$(1 - \theta_{GI,p})$。
 
-假设消费品中间品生产商$j$参与定价一次$\tilde {P}_{GI}[j,t]$之后，之后不再参与被随机抽取，暨之后不能最优地重新定价，从而该消费品中间品生产商$j$的价格$P_{GI}[j,t+t_s]$在时期$t+t_s , \quad t_s \in [t,\infty)$为
+假设消费品中间品生产商$j$参与定价一次$\tilde{P}_{GI}[j,t]$之后，之后不再参与被随机抽取，暨之后不能最优地重新定价，从而该消费品中间品生产商$j$的价格$P_{GI}[j,t+t_{s}]$在时期$t+t_{s} \quad t_{s} \in [t,\infty)$为
+
 $$
-P_{GI}[j,t+t_s] = \prod_{t_h=1}^{t_s} 
+P_{GI}[j,t+t_{s}] = \prod_{t_{h}=1}^{t_{s}} 
 \left(
-	\pi[t+t_h-1]^{\chi_{p}} 
+	(\pi[t+t_{h}-1])^{\chi_{p}} 
 \right)	
 \; \tilde{P}_{GI}[j,t]
 $$
@@ -579,24 +581,24 @@ $$
 \begin{align*}
 & \max _{\tilde{P}_{GI}[j,t]} \mathrm{Utility}_{GI}[j,t] \\
 := & \max _{\tilde{P}_{GI}[j,t]} 
-\mathbb{E}_{t} \sum_{t_s=0}^{\infty}
+\mathbb{E}_{t} \sum_{t_{s}=0}^{\infty}
 \left(
-(\gamma_{GI})^{t_s} \; (\theta_{GI,p})^{t_s}
-\; \left(\frac{P_{GF}[t+t_s]}{		
-			\prod_{t_h=1}^{t_s} 
+(\gamma_{GI})^{t_{s}} \; (\theta_{GI,p})^{t_{s}}
+\; \left(\frac{P_{GF}[t+t_{s}]}{		
+			\prod_{t_{h}=1}^{t_{s}} 
       \left(
-      \pi[t+t_h-1]^{\chi_{p}} 
+      (\pi[t+t_{h}-1])^{\chi_{p}} 
       \right)	
 			\; \tilde{P}_{GI}[j,t]
-    } \right)^{\alpha_{GF}} Y_{GF}[t+t_s]
+    } \right)^{\alpha_{GF}} Y_{GF}[t+t_{s}]
 	\;
 	\left(
-		\prod_{t_h=1}^{t_s} 
+		\prod_{t_{h}=1}^{t_{s}} 
 		\left(
-		\pi[t+t_h-1]^{\chi_{p}} 
+		(\pi[t+t_{h}-1])^{\chi_{p}} 
 		\right)	
 		\; \tilde{P}_{GI}[j,t]
-		- MC_{GI}[t + t_s]
+		- MC_{GI}[t + t_{s}]
 	\right)
 \right)
 \end{align*}
@@ -604,7 +606,7 @@ $$
 
 其中，
 $\gamma_{GI}$：消费品中间品生产商之效用贴现因子；
-$\theta_{GI,p}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_2}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例；
+$\theta_{GI,p}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_{2}}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例；
 $\alpha_{GF}$：消费品中间品生产商不同的产品的替代弹性；
 
 
@@ -612,11 +614,11 @@ $\alpha_{GF}$：消费品中间品生产商不同的产品的替代弹性；
 
 $$
 \text { s. t. } 
-\quad Y_{GI}[i,t+t_s] = 
+\quad Y_{GI}[i,t+t_{s}] = 
 \left(
-	\prod_{t_h=1}^{t_s} \left( \pi[t + t_h - 1] ^{\chi_{p}} \right) \frac{\tilde{P}_{GI}[t]}{P_{GF}[t+t_s]}
+	\prod_{t_{h}=1}^{t_{s}} \left( (\pi[t + t_{h} - 1])^{\chi_{p}} \right) \frac{\tilde{P}_{GI}[t]}{P_{GF}[t+t_{s}]}
 \right)^{-\alpha_{GF}} 
-\; Y_{GF}[t+t_s]
+\; Y_{GF}[t+t_{s}]
 $$
 
 产量需求的约束意味着消费品中间品生产商将在每一期中生产该期价格下所需求的全部产品。
@@ -628,26 +630,26 @@ $$
 \frac
 {
 \mathbb{E}_{t} 
-\sum \limits_{t_s=0}^{\infty}
+\sum \limits_{t_{s}=0}^{\infty}
 	\left(
-		\left(\gamma_{GI} \; \theta_{GI,p} \right)^{t_s} \; P_{GF}[t+t_s] \; MC_{GI}[t+t_s] \; Y_{GF}[i, t+t_s]
+		\left(\gamma_{GI} \; \theta_{GI,p} \right)^{t_{s}} \; P_{GF}[t+t_{s}] \; MC_{GI}[t+t_{s}] \; Y_{GF}[i, t+t_{s}]
 	\right)
 }
 {
-\mathbb{E}_{t} \sum \limits_{t_s=0}^{\infty}
+\mathbb{E}_{t} \sum \limits_{t_{s}=0}^{\infty}
 	\left(
-		\left(\gamma_{GI} \theta_{GI,p} \right)^{t_s} 
-		\; \prod \limits_{t_h=1}^{t_s} 
+		\left(\gamma_{GI} \; \theta_{GI,p} \right)^{t_{s}} 
+		\; \prod \limits_{t_{h}=1}^{t_{s}} 
 			\left(  
-				\pi[t+t_h-1]^{\chi_{p}} 
+				(\pi[t+t_{h}-1])^{\chi_{p}} 
 			\right)  
-		\; Y_{GI}[i, t+t_s]
+		\; Y_{GI}[i, t+t_{s}]
 	\right)
 }
 $$
 
 其中，
-$MC_{GI}[t+t_s]$：消费品中间品生产商的实际边际成本。
+$MC_{GI}[t+t_{s]}$：消费品中间品生产商的实际边际成本。
 
 根据消费品中间品生产商的产量$Y_{GI}[i,t]$与$Y_{GF}[t]$的关系
 $$
@@ -656,9 +658,10 @@ $$
 ，然后采用Uhlig提出的对数线性化的方法，经过推导，可得消费品中间品生产商之价格水平的时变表达式
 
 $$
-P_{GF}[t]^{1-\alpha_{GF}}
-= \theta_{GI,p} \; \left(\pi[t-1]^{\chi_{p}} \; P[t-1] \right)^{1-\alpha_{GF}} + (1-\theta_{GI,p}) \; \tilde{P}_{GI}[t]^{1-\alpha_{GF}}
+(P_{GF}[t])^{1-\alpha_{GF}}
+= \theta_{GI,p} \; \left((\pi[t-1])^{\chi_{p}} \; P[t-1] \right)^{1-\alpha_{GF}} + (1-\theta_{GI,p}) \; \left(\tilde{P}_{GI}[t]\right)^{1-\alpha_{GF}}
 $$
+
 通过对数线性化上面两个式子，并采用差分方法消除对未来期望值的无穷加总项，经过推导，最终可以得到如下形式的混合型新凯恩斯菲利普斯曲线（hybrid NKPC）
 
 $$
@@ -730,9 +733,11 @@ $\Box_{PE}$
 房地产开发商部门的生产函数$F_{PE}$符合规模报酬不变的特性。
 
 对于整个房地产开发商部门来说，其生产函数$F_{PE}[\cdot]$：
+
 $$
-Y_{PE}[t] = F_{PE}[A_{PE}[t],K_{PE}[t],L_{PE}[t],H_{PE}[t]] := A_{PE}[t] \; K_{PE}[t-1]^{\alpha_{PE,K}} L_{PE}[t]^{\alpha_{PE,L}} H_{PE}[t-1]^{\alpha_{PE,H}}
+Y_{PE}[t] = F_{PE}[A_{PE}[t],K_{PE}[t],L_{PE}[t],H_{PE}[t]] := A_{PE}[t] \; (K_{PE}[t-1])^{\alpha_{PE,K}} (L_{PE}[t])^{\alpha_{PE,L}} (H_{PE}[t-1])^{\alpha_{PE,H}}
 $$
+
 其中，
 $Y_{PE}[t]$：房地产开发商的最终产出；
 $A_{PE}[t]$：房地产开发商的全要素生产率；
@@ -745,6 +750,7 @@ $\alpha_{PE,L}$：房地产开发商投入劳动要素所占的替代指数；
 $\alpha_{PE,H}$：房地产开发商投入房地产要素所占的替代指数；
 
 其中，满足
+
 $$
 \alpha_{PE,K}+\alpha_{PE,L}+\alpha_{PE,H}=1​
 $$
@@ -759,6 +765,7 @@ $$
 $$
 \max \mathbb{E}_{t} \sum_{t=0}^{\infty} \gamma_{PE} \; \ln C_{PE}[t]
 $$
+
 其中，
 $C_{PE}[t]$：房地产开发商之消费；
 $\gamma_{PE}$：贴现因子，$0<\gamma_{PE}<1$ 。
@@ -768,8 +775,9 @@ $\gamma_{PE}$：贴现因子，$0<\gamma_{PE}<1$ 。
 ###### 约束条件：
 
 房地产开发商所受现金流的约束条件如下:
+
 $$
-Y_{PE}[t] + B_{PE,BB}[t] + B_{SB}[t] = C_{PE}[t] + P_{PE}[t] \; \left(H_{PE}[t] - H_{PE}[t-1]\right) + w_{PE}[t] \; L_{PE}[t]^{h}+\frac{r_{BB,PE}[t-1]}{\pi[t]}  \; B_{PE,h}[t-1] + \frac{R_{t-1}^{s h}}{\pi[t]} \; B_{SB}[t-1] + I_{PE}[t]
+Y_{PE}[t] + B_{PE,BB}[t] + B_{SB}[t] = C_{PE}[t] + P_{PE}[t] \; \left(H_{PE}[t] - H_{PE}[t-1]\right) + w_{PE}[t] \; (L_{PE}[t])^{h}+\frac{r_{BB,PE}[t-1]}{\pi[t]}  \; B_{PE,h}[t-1] + \frac{R_{t-1}^{s h}}{\pi[t]} \; B_{SB}[t-1] + I_{PE}[t]
 $$
 
 TODO理解和替换相关变量
@@ -792,8 +800,9 @@ $w_{PE}[t]$：房地产开发商提供的支付单位工资，暨工资率，在
 房地产开发企业总体信贷规模为 $B_{PE}[t]=SH_{}[t]+B_{PE,BB}[t]$。
 
 房地产开发商的投资 $I_{PE}[t]$ 与资本存量 $K_{PE}[t]^{h}$ 之间存在如下关系:
+
 $$
-K_{PE}[t+1]^{h}=I_{PE}[t]+(1-\delta) K_{PE}[t]^{h}
+(K_{PE}[t+1])^{h}=I_{PE}[t]+(1-\delta) (K_{PE}[t])^{h}
 $$
 
 该式表示的是房地产开发商资本存量的积累情况, $\delta$ 表示资本折旧率。
@@ -861,32 +870,41 @@ $\Box_{PC}$
 ##### 模型：
 
 设定生产函数形式为CRS（具有一次齐次假设的）生产函数$F_{PC}$为
+
 $$
 F_{PC}\left[\frac{I_{GI}[t]}{K_{GI}[t]}\right]K_{GI}[t]
 $$
+
 则对应的时变的资本累积方程为
+
 $$
 K_{PC}[t+1]=(1-\delta) K_{PC}[t]+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] K_{PC}[t]
 $$
+
 决策目标：
 
 资本生产部门的决策问题：
+
 $$
 \max _{I_{PC}[t]} \quad P_{PC}[t] \; F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] \; K_{PC}[t]-P_{GF}[t] \; I_{PC}[t]
 $$
+
 其中一阶条件：
+
 $$
 P_{PC}[t] \; F_{PC} ^{\prime} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]=P_{GF}[t]
 $$
 
 全要素生产率$A_{PC}[t]$服从AR(1)过程：
+
 $$
 \ln A_{PC}[t]=\rho_{a} \ln A_{PC}[t-1]+\varepsilon_{t}^{a}
 $$
 
-其中，$\varepsilon_t^a$ 服从标准差为$\sigma_a$的i.i.d.冲击。
+其中，$\varepsilon_{t^{a}}$ 服从标准差为$\sigma_{a}$的i.i.d.冲击。
 
 相邻时期持有单位资本的名义总回报率$r_{PC,n}[t]$的计算如下，
+
 $$
 \begin{align*}
 r_{PC,n}[t] & := r_{GI}[t] + P_{GF}[t] \; 
@@ -905,6 +923,7 @@ $$
 TODO：如何求得均衡条件？
 
 在均衡条件下，相邻时期持有单位资本的实际总回报率$r_{PC,e}[t]$将与银行从其贷款获得的实际总回报相等 :
+
 $$
 \frac{r_{PC,n}[t+1]}{P_{PC}[t]} \equiv \frac{r_{PC,e}[t+1]}{\pi[t+1]}
 $$
