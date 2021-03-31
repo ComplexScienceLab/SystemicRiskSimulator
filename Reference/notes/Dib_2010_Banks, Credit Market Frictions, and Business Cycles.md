@@ -81,11 +81,11 @@
 
 - 行为：
 
-  - 收集劳动者的全额保险存款，支付以存款利率$R_{j,t}^D$；
+  - 收集劳动者的全额保险存款，存款利率$R_{j,t}^D$；
 
   - 调配资产比例$(1-s_{j,t})$以购买政府债券；
 
-  - 资产比例$s_{j,t}$于银行间市场；
+  - 配置资产比例$s_{j,t}$于银行间市场，用以贷给借款型银行；
 
     
 
@@ -124,7 +124,7 @@ $$
 $$
 其中，
 
-$\bar{s}$：监管规定的目标值，偏离该值会有二次方成本；
+$\bar{s}$：监管规定的目标值，偏离该值会产生二次方成本；
 
 
 
@@ -141,6 +141,32 @@ $\left(1-s_{j, t}\right) R_{t} D_{j,t}$：银行收回本息从政府债券；
 上述二项是总的名义收益之于银行之资产。
 
 $R_{j, t}^{D} D_{j, t}$：银行还给储户本息；
+
+$\delta_{t}^{D}$：贷款型银行违约比率之于银行间市场；
+
+
+
+同质均衡时，应有：$s_{j, t}=s_{t}$ and $R_{j, t}^{D}=R_{t}^{D}$ for all $t>0$
+
+
+
+F.O.C.
+$$
+s_{t}=\bar{s}+\frac{R_{t}^{I B}\left(1-\delta_{t}^{D}\right)-R_{t}}{\chi_{s} D_{t}}
+$$
+
+$$
+\begin{aligned}
+\frac{1+\vartheta_{D}}{\vartheta_{D}}\left(R_{t}^{D}-1\right) &=s_{t}\left(R_{t}^{I B}-1\right)\left(1-\delta_{t}^{D}\right)+\left(1-s_{t}\right)\left(R_{t}-1\right)-\chi_{s}\left(s_{t}-\bar{s}\right)^{2} D_{t} \\
+&-\frac{\phi_{R^{D}}}{\vartheta_{D}}\left(\frac{R_{t}^{D}}{R_{t-1}^{D}}-1\right) \frac{R_{t}^{D}}{R_{t-1}^{D}}+\frac{\beta_{b} \phi_{R^{D}}}{\vartheta_{D}}\left(\frac{R_{t+1}^{D}}{R_{t}^{D}}-1\right) \frac{R_{t+1}^{D}}{R_{t}^{D}}
+\end{aligned}
+$$
+
+
+
+银行同业拆借、无风险资产持有之间有一个最优配置比例，
+
+存款利率具有名义粘性，即变动成本，影响了跨时期消费的跨期替代；
 
 
 
@@ -172,25 +198,27 @@ $R_{j, t}^{D} D_{j, t}$：银行还给储户本息；
 | ------------------------- | ------------------------------------------------------------ |
 | 贷款：$L_{j, t}-x_{j, t}$ | 同业拆借：$D_{j,t}^{IB}$                                     |
 | 政府债务：$B_{j,t}^{sb}$  | 银行资金：$Q_{t}^{Z} Z_{j, t}$                               |
-|                           | 央行资金注入： $ x_{j,t}$                                    |
-|                           | 其它项目：$\left(\Gamma_{t}-1\right)\left(D_{j, t}^{I B}+m_{j, t}\right)$ |
+|                           | 央行资金注入： $ m_{j,t}$                                    |
+|                           | 其它项目：$\left(\Gamma_{t}-1\right)\left(D_{j, t}^{I B}+x_{j, t}\right)$ |
 
 $$
 \begin{array}{l|l}
 \hline \text { Assets } & \text { Liabilities } \\
 \hline \text { Loans: } L_{j, t}-x_{j, t} & \text { Interbank borrowing: } D_{j, t}^{I B} \\
 \text { Government bonds: } B_{j, t}^{l b} & \text { Bank capital: } Q_{t}^{Z} Z_{j, t} \\
-& \text { Central bank's money injection: } x_{j, t} \\
-& \text { Other terms: }\left(\Gamma_{t}-1\right)\left(D_{j, t}^{I B}+m_{j, t}\right) \\
-\hline \hline
+& \text { Central bank's money injection: } m_{j, t} \\
+& \text { Other terms: }\left(\Gamma_{t}-1\right)\left(D_{j, t}^{I B}+x_{j, t}\right) \\
+\hline
 \end{array}
 $$
 
 备注：
 
+其它项目，$\left(\Gamma_{t}-1\right)\left(D_{j, t}^{I B}+m_{j, t}\right)$，用以平衡偏离资产负债表的操作；
+
 改变资产负债表的比例的方法：
 
-- 通过转换一部分贷款成为政府债券$x_{j, t}$；
+- 通过转换一部分贷款$L_{j,t}$成为政府债券$x_{j, t}$；
 
 扩缩资产负债表的规模的方法：
 
@@ -201,10 +229,26 @@ $$
 
 
 
-获得借款的方式，以Leontief技术的形式：
+获得借款的方式，以Leontief技术的形式，其贷款需求函数在银行间市场借贷和自有银行资金之间互相替代：
 $$
 L_{j, t}=\min \left\{D_{j, t}^{I B}+m_{j, t} \; ; \; \kappa_{j, t}\left(Q_{t}^{Z} Z_{j, t}+x_{j, t}\right)\right\} \Gamma_{t}
+\tag{17}
 $$
+暨(28)(29)二者选择最小的那个作为
+$$
+L_{t} =\Gamma_{t}\left(D_{t}^{I B}+m_{t}\right)
+\tag{28}
+$$
+
+$$
+L_{t} =\Gamma_{t} \kappa_{t}\left(Q_{t}^{Z} Z_{t}+x_{t}\right)
+\tag{29}
+$$
+
+
+
+
+
 其中，
 
 $D_{j, t}^{I B}$：借款通过同业拆借；
@@ -223,6 +267,50 @@ Leontief技术包含了完美的替代性于银行间市场借贷和银行资本
 
 
 
+最优化过程
+
+
+
+利率调整成本：
+$$
+A d_{j, t}^{R^{L}}=\frac{\phi_{R^{L}}}{2}\left(\frac{R_{j, t}^{L}}{R_{j, t-1}^{L}}-1\right)^{2} L_{t}
+\tag{18}
+$$
+贷款型银行$j$，面对如下贷款需求函数
+$$
+L_{j, t}=\left(\frac{R_{j, t}^{L}}{R_{t}^{L}}\right)^{-\vartheta_{L}} L_{t}
+\tag{19}
+$$
+其中，$\vartheta_{L}$表示替代弹性之于两种不同类型；
+
+
+
+
+
+贷款型银行$j$之二次方收入：
+$$
+\Delta_{j, t}^{\kappa}=\frac{\chi_{\kappa}}{2}\left(\frac{\bar{\kappa}-\kappa_{j, t}}{\bar{\kappa}} Q_{t}^{Z} Z_{j, t}\right)^{2}
+\tag{20}
+$$
+
+
+
+
+惩罚之于贷款型银行违约于银行间市场：
+$$
+\Delta_{j, t}^{D}=\frac{\chi_{\delta^{D}}}{2}\left(\frac{\delta_{j, t-1}^{D} D_{j, t-1}^{I B}}{\pi_{t}}\right)^{2} R_{t-1}^{I B}
+\tag{21}
+$$
+其中，$\delta_{t}^{D}$：贷款型银行违约比率之于银行间市场；
+
+
+
+惩罚之于贷款型银行银行家转移部分银行资金作为自身收益：
+$$
+\Delta_{j, t}^{Z}=\frac{\chi_{\delta^{Z}}}{2}\left(\frac{\delta_{j, t-1}^{Z} Q_{t-1}^{Z} Z_{j, t-1}}{\pi_{t}}\right)^{2} R_{t}^{Z}
+\tag{22}
+$$
+其中，$\delta_{t}^{Z}$：银行家转移资金比率之于贷款型银行；
 
 
 
@@ -230,21 +318,69 @@ Leontief技术包含了完美的替代性于银行间市场借贷和银行资本
 
 
 
-
-
-
-最大化收益：
+总之，贷款型银行$j$的最大化其利润：
 $$
 \max _{\left\{R_{j, t}^{L}, \kappa_{j, t}, \delta_{j, t}^{D}, \delta_{j, t}^{Z}\right\}} E_{0} \sum_{t=0}^{\infty} \beta_{b}^{t} \lambda_{t}^{b}\left\{R_{j, t}^{L} L_{j, t}-\left(1-\delta_{j, t}^{D}\right) R_{t}^{I B} D_{j, t}^{I B}-\left[\left(1-\delta_{j, t}^{Z}\right) R_{t+1}^{Z}-R_{t}\right] Q_{t}^{Z} Z_{j, t}-A d_{j, t}^{R^{L}}-\Delta_{j, t}^{D}-\Delta_{j, t}^{Z}-R_{t} m_{j, t}-\left(R_{j, t}^{L}-R_{t}\right) x_{j, t},\right\}
 $$
 其中，
 
+$\lambda_{t}^{b}$：边际效用之于银行家消费；
+
+$\left[\left(1-\delta_{j, t}^{Z}\right) R_{t+1}^{Z}-R_{t}\right] Q_{t}^{Z} Z_{j, t}$：边际成本之于持有以单位银行资金以满足资金需求；
+
+$R_{t} m_{j, t}$：总成本之于货币注资从央行；
+
+$\left(R_{j, t}^{L}-R_{t}\right) x_{j, t}$：总成本之于转换一部分债券用于政府债券；
 
 
 
+对应约束条件(17)-(22)。
 
 
 
+F.O.C.
+$$
+R_{t}^{L}= 1+\frac{\vartheta_{L}}{\vartheta_{L}-1}\left(\zeta_{t}-1\right)-\frac{\phi_{R^{L}}}{\vartheta_{L}-1}\left(\frac{R_{t}^{L}}{R_{t-1}^{L}}-1\right) \frac{R_{t}^{L}}{R_{t-1}^{L}}+\frac{\beta_{b} \phi_{R^{L}}}{\vartheta_{L}-1} E_{t}\left[\left(\frac{R_{t+1}^{L}}{R_{t}^{L}}-1\right) \frac{R_{t+1}^{L}}{R_{t}^{L}}\right]
+\tag{23}
+$$
+$$
+\kappa_{t}= \bar{\kappa}\left(1-\frac{\bar{\kappa} \Gamma_{t}\left(R_{t}^{L}-1\right)}{\chi_{\kappa} Q_{t}^{Z} Z_{t}}\right)
+\tag{24}
+$$
+$$
+\delta_{t}^{D}= E_{t}\left[\frac{R_{t} \pi_{t+1}}{\chi_{\delta^{D}} D_{t}^{I B}}\right]
+\tag{25}
+$$
+$$
+\delta_{t}^{Z}= E_{t}\left[\frac{R_{t} \pi_{t+1}}{\chi_{\delta^Z}  Q_{t}^{Z} Z_{t}}\right]
+\tag{26}
+$$
+
+其中，边际成本之于产生贷款：
+$$
+\zeta_{t}=\Gamma_{t}^{-1}\left[R_{t}^{I B}+\left(E_{t} R_{t+1}^{Z}-R_{t}-\left(R_{t}^{L}-1\right) \frac{\bar{\kappa}-\kappa_{t}}{\bar{\kappa}}\right) \frac{Q_{t}^{Z}}{\kappa_{t}}\right]
+$$
+此外，Leontief技术形式的需求函数在银行间市场借贷和自有银行资金之间互相替代
+$$
+L_{t} =\Gamma_{t}\left(D_{t}^{I B}+m_{t}\right)
+\tag{28}
+$$
+
+$$
+L_{t} =\Gamma_{t} \kappa_{t}\left(Q_{t}^{Z} Z_{t}+x_{t}\right)
+\tag{29}
+$$
+
+对于(24)，如果贷款利率$R^L_t$上升，则意味着银行需要去杠杆。
+
+对于(25)，银行间市场借贷违约率下降，当同业拆借借贷规模扩大时。
+
+> 怎么从经济学角度理解同业拆借借贷规模越大，借贷违约率下降？
+
+对于(27)，其加总如下，由银行间市场拆借利率$R^{IB}_t$
+$$
+\left(E_{t} R_{t+1}^{Z}-R_{t}-\left(R_{t}^{L}-1\right) \frac{\bar{\kappa}-\kappa_{t}}{\bar{\kappa}}\right) \frac{Q_{t}^{Z}}{\kappa_{t}}
+$$
 
 
 ##### 中央银行、政府
