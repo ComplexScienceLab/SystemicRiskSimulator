@@ -82,11 +82,11 @@ $L_{GI}[j,t+t_{s}]$：参与重新定价的消费品中间品生产商$j$的劳�
 基于时期$t$，所有的消费品中间品生产商$i$最小化其总成本在时期$t_{s}$，暨时期$t+t_{s} \quad t_{s} \in [t,\infty)$。这里为了简化表述，在阶段1，我们省略$t_{s}$，所以$t+t_{s}$用$t$表示。
 
 $$
-{TC}_{GI}[i,t] := \min _{L_{GI}[i,t] , K_{GI}[i,t]}  w_{GI}[t] \; L_{GI}[i,t] + r_{GI}[t] \; K_{GI}[i,t]
+{TC}_{GI}[i,t] := \min _{La_{GI}[i,t] , K_{GI}[i,t]}  w_{GI}[t] \; La_{GI}[i,t] + r_{GI}[t] \; K_{GI}[i,t]
 $$
 其中，
 $w_{GI}[t]$：消费品中间品生产商对居民支付单位工资，在时期$t$；
-$L_{GI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
+$La_{GI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
 $r_{GI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{GI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
 
@@ -104,12 +104,12 @@ $$
 
 消费品中间品生产商之生产函数$F_{GI}[\cdot]$
 $$
-Y_{GI}[i,t] = F_{GI}[A_{GI}[t],K_{GI}[i,t],L_{GI}[i,t]] := A_{GI}[t] \; (K_{GI}[i,t])^{\alpha_{GI}} \; (L_{GI}[i,t])^{1-\alpha_{GI}}
+Y_{GI}[i,t] = F_{GI}[A_{GI}[t],K_{GI}[i,t],La_{GI}[i,t]] := A_{GI}[t] \; (K_{GI}[i,t])^{\alpha_{GI}} \; (La_{GI}[i,t])^{1-\alpha_{GI}}
 $$
 其中，
 $A_{GI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
 $K_{GI}[i,t]$ ：消费品中间品生产商$i$的资本要素在时期$t$；
-$L_{GI}[i,t]$：消费品中间品生产商$i$的劳动要素在时期$t$；
+$La_{GI}[i,t]$：消费品中间品生产商$i$的劳动要素在时期$t$；
 $\alpha_{GI}$：消费品中间品生产商的替代指数；
 
 ~~$\Phi$：消费品中间品生产商的固定生产成本。在稳态条件下，其值被设定为产生0利润；~~
@@ -128,9 +128,9 @@ $\varepsilon_{A,GI}[t]$：消费品中间品生产商的全要素生产率对$A_
 最优化问题的一阶条件可以写成：
 $$
 \begin{align*}
-& w_{GI}[t]=(1-\alpha_{GI}) A_{GI}[t] (K_{GI}[i,t])^{\alpha_{GI}} (L_{GI}[i,t])^{-\alpha_{GI}} \\
+& w_{GI}[t]=(1-\alpha_{GI}) A_{GI}[t] (K_{GI}[i,t])^{\alpha_{GI}} (La_{GI}[i,t])^{-\alpha_{GI}} \\
 \Leftrightarrow \quad
-& w_{GI}[t]=(1-\alpha_{GI}) \frac{Y_{GI}[i,t]}{L_{GI}[i,t]}
+& w_{GI}[t]=(1-\alpha_{GI}) \frac{Y_{GI}[i,t]}{La_{GI}[i,t]}
 \end{align*}
 $$
 
@@ -138,7 +138,7 @@ $$
 由此可求得消费品中间品生产商$i$的租金率$r_{GI}[t]$
 $$
 \begin{align*}
-& r_{GI}[t] = \alpha_{GI} \; A_{GI}[t] \; (K_{GI}[i,t])^{\alpha_{GI}-1} \; (L_{GI}[i,t])^{1-\alpha_{GI}} \\
+& r_{GI}[t] = \alpha_{GI} \; A_{GI}[t] \; (K_{GI}[i,t])^{\alpha_{GI}-1} \; (La_{GI}[i,t])^{1-\alpha_{GI}} \\
 \Leftrightarrow \quad 
  & r_{GI}[t] = \alpha_{GI} \; \frac{Y_{GI}[i,t]}{K_{GI}[i,t]}
 \end{align*}
@@ -148,20 +148,20 @@ $$
 \begin{align*}
 K_{GI}[i, t] & = \frac{Y_{GI}[i,t]}{A_{GI}[t]} \left(\frac{r_{GI}[t]}{w_{GI}[t]} \cdot \frac{1-\alpha_{GI}}{\alpha_{GI}} \right) ^{\alpha_{GI} - 1}
 \\
-& = \frac{\alpha_{GI}}{1-\alpha_{GI}} \; \frac{w_{GI}[t]}{r_{GI}[t]} \; L_{GI}[i,t]
+& = \frac{\alpha_{GI}}{1-\alpha_{GI}} \; \frac{w_{GI}[t]}{r_{GI}[t]} \; La_{GI}[i,t]
 \end{align*}
 $$
 
-可求得消费品中间品生产商$i$的劳动$L_{GI}[i,t]$
+可求得消费品中间品生产商$i$的劳动$La_{GI}[i,t]$
 $$
 \begin{align*}
-L_{GI}[i, t] & = \frac{Y_{GI}[i,t]}{A_{GI}[t]} \left(\frac{r_{GI}[t]}{w_{GI}[t]} \cdot \frac{1-\alpha_{GI}}{\alpha_{GI}} \right) ^{\alpha_{GI}}
+La_{GI}[i, t] & = \frac{Y_{GI}[i,t]}{A_{GI}[t]} \left(\frac{r_{GI}[t]}{w_{GI}[t]} \cdot \frac{1-\alpha_{GI}}{\alpha_{GI}} \right) ^{\alpha_{GI}}
 \\
 & = \frac{1-\alpha_{GI}}{\alpha_{GI}} \; \frac{r_{GI}[t]}{w_{GI}[t]} \; K_{GI}[i,t] 
 \end{align*}
 $$
 
-将$K_{GI}[i, t]$和$L_{GI}[i, t]$的表达式代入最小化总成本表达式，并且代入约束条件可得消费品中间品生产商$i$的实际总成本$TC_{GI}[t]$
+将$K_{GI}[i, t]$和$La_{GI}[i, t]$的表达式代入最小化总成本表达式，并且代入约束条件可得消费品中间品生产商$i$的实际总成本$TC_{GI}[t]$
 $$
 TC_{GI}[t]
 := \left( 1-\alpha_{GI} \right)^{\alpha_{GI} -1} \; (\alpha_{GI})^{-\alpha_{GI}} \; \frac{Y_{GI}[t] \; (w_{GI}[t])^{1-\alpha_{GI}} \; (r_{GI}[t])^{\alpha_{GI}}}{A_{GI}[t]}
