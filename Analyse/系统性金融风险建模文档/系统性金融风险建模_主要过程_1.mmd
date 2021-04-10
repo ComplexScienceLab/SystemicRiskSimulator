@@ -107,6 +107,7 @@ $$
 (1-\alpha_{HB}) \; \varepsilon_{c}[t] \; \log \left(C_{HB,c}[i,t] - \alpha_{HB} \; C_{HB,c}[t-1]\right) + \varepsilon_{h}[t] \; \log C_{HB,h}[i,t] - \frac{\left(h_{HB}[i,t]\right)^{1+\phi}}{1+\phi}
  \right)
 \right]
+\tag{HB_goal}
 $$
 
 其中，
@@ -147,6 +148,7 @@ $H_{HB,PE}[i,t]$：借款型居民$i$在房地产开发商的工作时长，在�
 预算约束：
 $$
 C_{HB,c}[i,t] + p_{PE}[t] \; \Delta C_{HB,h}[i,t] + \frac{\left(1 + r_{b,HB}[t]\right) }{\pi[t]} \; B_{HB,BB}[i,t-1] = w_{PE}[i,t] \; h_{HB,PE}[i,t] + w_{GI}[i,t] \; h_{HB,GI}[i,t] + B_{HB,BB}[i,t]+tr_{HB}[i,t]
+\tag{HB_st_budget}
 $$
 其中，
 $C_{HB,c}[i,t]$：借款型居民$i$的大众消费，在时期$t$；
@@ -163,6 +165,7 @@ $tr_{HB}[i,t]$：借款型居民$i$获得的转移支付，在时期$t$；
 信贷抵押约束：
 $$
 \left(1+r_{b,HB}[t] \right) B_{HB,BB}[i,t] \leq \theta_{HB}[t] \; \mathbb{E}_{i,t} \left[ p_{PE}[t+1] \; \pi[t+1] \; C_{HB,h}[t] \right]
+\tag{HB_st_debt}
 $$
 其中，
 $\theta_{HB}[t]$ ：针对借款型居民用于住房消费抵押品之贷款价值比例LTV。$(1-\theta_{HB}[t])$意味着如果发生违约，银行按此比例收回抵押品，从而借款型居民为此付出的成本。LTV是广义政府部门可以进行宏观调控的政策工具，暨广义政府部门根据经济金融周期对其进行逆周期调整；
@@ -223,6 +226,7 @@ $$
 (1-\alpha_{HI}) \; \varepsilon_{c}[t] \; \log \left(C_{HI,c}[i,t]-\alpha_{HI} \; C_{HI,c}[t-1]\right) + \varepsilon_{h}[t] \; \log h_{HI}[i,t]-\frac{(h_{HI}[i,t])^{1+\phi}}{1+\phi}
 \right)
 \right]
+\tag{HI_goal}
 $$
 其中，
 $\gamma_{HI}$：投资和储蓄型居民跨时期折现因子；
@@ -257,6 +261,7 @@ $H_{HB,PE}[i,t]$：借款型居民$i$在房地产开发商的工作时长，在�
 
 $$
 C_{HI,c}[i,t] + p_{PE}[t] \Delta C_{HI,h}[i,t] + D_{HI}[i,t] = w_{HI}[i,t] C_{HI,h}[i,t] + (1+r_{d}[t-1]) D_{HI}[i,t-1] / \pi[t] + tr_{HI}[i,t])
+\tag{H022}
 $$
 其中，
 $C_{HI,c}[i,t]$：投资和储蓄型居民$i$的大众消费，在时期$t$；
@@ -530,7 +535,7 @@ $\alpha_{GI}$：消费品中间品生产商各生产要素的替代指数；
 
 ~~$\Phi$：消费品中间品生产商的固定生产成本。在稳态条件下，其值被设定为产生0利润；~~
 
-假定对数形式的全要素生产率 $A_{GI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
+假定全要素生产率 $A_{GI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
 \ln A_{GI}[t] = \rho_{A,GI} \ln A_{GI}[t-1] + \varepsilon_{A,GI}[t]
 $$
@@ -1186,6 +1191,16 @@ $$
 #### 市场出清TODO
 
 - [ ] 
+
+
+
+#### 方程组之于纳入计算的
+
+TODO
+
+借款型居民之优化目标(HB_goal)
+
+贷款型居民之优化目标
 
 
 
