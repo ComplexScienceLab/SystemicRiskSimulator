@@ -349,7 +349,7 @@ Cell[BoxData[
 },
 WindowToolbars->"EditBar",
 WindowSize->{964, 1023},
-WindowMargins->{{507, Automatic}, {0, Automatic}},
+WindowMargins->{{Automatic, 449}, {0, Automatic}},
 DockedCells->FEPrivate`FrontEndResource[
  "NotebookTemplatingExpressions", "AuthoringDockedCell"],
 TaggingRules->{"NotebookTemplateVersion" -> 1., "NotebookTemplate" -> True},
@@ -398,11 +398,11 @@ Cell[6627, 215, 481, 13, 73, "Input",ExpressionUUID->"fef1717b-6456-4056-94df-81
 Cell[7111, 230, 567, 17, 68, "Output",ExpressionUUID->"c40e2c20-8ac5-4327-a26b-be16b15e9b8b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7715, 252, 594, 18, 92, "Input",ExpressionUUID->"ca5e37b2-00cb-4b7b-8200-0dff6368e56d"],
+Cell[7715, 252, 594, 18, 74, "Input",ExpressionUUID->"ca5e37b2-00cb-4b7b-8200-0dff6368e56d"],
 Cell[8312, 272, 573, 16, 64, "Output",ExpressionUUID->"5230fdf3-ba18-4ff7-8d39-80faa5065301"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8922, 293, 295, 6, 60, "Input",ExpressionUUID->"31626e5a-5191-426e-a554-033364256d55"],
+Cell[8922, 293, 295, 6, 41, "Input",ExpressionUUID->"31626e5a-5191-426e-a554-033364256d55"],
 Cell[9220, 301, 1254, 42, 75, "Output",ExpressionUUID->"8607f266-c674-4afb-9554-c41a6e2045b5"]
 }, Open  ]]
 }, Open  ]]
