@@ -129,6 +129,9 @@ $$
 V_{t}^{s h}=\max E_{t} \sum_{i=0}^{\infty}(1-\mu) \mu^{i} \beta^{i+1} \Lambda_{t, t+1+i}\left[\left(R_{t+i}^{s h}-R_{t+i}^{t r}\right) S H_{t+i}+R_{t+i}^{t r} N_{t+i}^{s h}\right]
 $$
 
+其中, $\mu$ 表示影子银行留在市场的概率， $\Lambda_{t, t+1}=\frac{\lambda_{t+1}}{\lambda_{t}}$ 是定义在最优消费路径上的贴现因子。
+
+其中：
 
 影子银行资产负债情况：
 $$
@@ -136,10 +139,27 @@ S H_{t}=N_{t}^{s h}+T R_{t}
 $$
 其中，影子银行净资产 $N_{t}^{s h}$ ；另一部分为商业银行提供的资金转移 $T R_{t}$；
 
+这里，影子银行净资产累计方程：
 $$
 N_{t+1}^{s h}=R_{t}^{s h} S H_{t}-R_{t}^{t r} T R_{t}=\left(R_{t}^{s h}-R_{t}^{t r}\right) S H_{t}+R_{t}^{t r} N_{t}^{s h}
 $$
 
+
+
+
+
+将最优化目标改写成动态规划形式：
+$$
+V_{t}^{s h}=\nu_{t} S H_{t}+\theta_{t} N_{t}^{s h}
+$$
+其中, $\nu_{t}$ 代表影子银行增加 1 单位资产得到的边际收益， $\theta_{t}$ 代表影子银行增加 1 单位净资产
+得到的边际收益，二者定义为
+$$
+\begin{array}{l}
+\nu_{t}=E_{t}\left[(1-\mu) \beta \Lambda_{t, t+1}\left(R_{t+1}^{s h}-R_{t+1}^{t r}\right)+\beta \Lambda_{t, t+1} \mu x_{t, t+1} \nu_{t+1}\right] \\
+\theta_{t}=E_{t}\left[(1-\mu)+\beta \Lambda_{t, t+1} \mu z_{t, t+1} \theta_{t+1}\right]
+\end{array}
+$$
 
 
 

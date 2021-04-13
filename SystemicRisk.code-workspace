@@ -5,17 +5,18 @@
 		},
 		{
 			"path": "../../../../LocalFiles/ResearchFile/SystemicRisk"
+		},
+		{
+			"path": "Models"
 		}
 	],
 	"settings": {
-		"markdown.styles": [
-			"Management/markdown_style/my_markdown_style_20201121.css"
-			// "/Users/ethan/Documents/CoreFiles/ProgramsFile/Markdown/styles/my_markdown_style_20201121.css"
-			// "\\Users\\ethan\\Documents\\CoreFiles\\ProgramsFile\\Markdown\\styles\\styles\\my_markdown_style_20201121.css"
-		],
 		"editor.fontFamily": "Times New Roman, Menlo, Monaco, 'Courier New', monospace",
 		"markdown.preview.fontSize": 20,
 		"editor.fontSize": 16,
+		"markdown.styles": [
+			"Management/markdown_style/my_markdown_style_20201121.css"
+		],
 	
 	}
 }
