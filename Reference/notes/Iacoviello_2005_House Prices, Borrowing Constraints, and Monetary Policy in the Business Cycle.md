@@ -32,5 +32,7 @@ Other files:
 
 
 
-
-
+信贷约束：
+$$
+b_{t} \leq m E_{t}\left(q_{t+1} h_{t} \pi_{t+1} / R_{t}\right)
+$$

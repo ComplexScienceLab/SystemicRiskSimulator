@@ -33,8 +33,26 @@
 
 ## 模型  
 
-> - 模型中,银行面临的信用风险,来自于银行向企业发放贷款时作为交换而持有的企业权益。  
+> - 模型中,银行面临的信用风险,来自于银行向企业发放贷款时作为交换而持有的企业权益。 
 >
+
+
+
+#### 银行部门
+
+##### 假设
+
+- 假设无摩擦之于资金流动于银行与生产商之间；
+
+##### 描述
+
+$$
+Q_{t} s_{t}=n_{t}+q_{t} e_{t}+d_{t}
+$$
+
+For an individual bank, the flow-of-funds constraint implies the value of loans funded within a given period, $Q_{t} s_{t}$, must equal the sum of 银行净资产 bank net worth $n_{t}$, and funds raised from households, consisting of outside equity $q_{t} e_{t}$ and deposits $d_{t}$ :
+
+
 
 ## 缺点  
 

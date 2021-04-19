@@ -1,0 +1,150 @@
+# 模块之资本品生产商PC010
+
+
+[TOC]
+
+
+
+
+
+
+
+## 参考
+
+> 资本品生产商的建模描述主要参考
+>
+> [[马勇, 2013. 植入金融因素的DSGE模型与宏观审慎货币政策规则[J]. 世界经济, (07 vo 36): 68–92.]]
+>
+> 
+
+
+
+
+
+- [ ] ## 特点
+
+
+
+
+
+
+
+
+## 模块描述
+
+
+
+
+
+
+
+#### 资本品生产商
+
+英文全名：
+
+Capital Goods Producers
+
+变量名：
+
+producers_capital
+
+数学符号：
+
+$\Box_{PC}$
+
+
+
+##### 行为：
+
+- 具有竞争性的生产资本品生产商$i$利用投资和现有资本存量生产新的资本品，这样的生产将耗费一定的物质转换成本。
+
+
+
+
+
+> 资本品生产商的建模描述主要参考
+>
+> [[马勇, 2013. 植入金融因素的DSGE模型与宏观审慎货币政策规则[J]. 世界经济, (07 vo 36): 68–92.]]
+>
+> 
+
+
+
+
+
+##### 模型：
+
+设定生产函数形式为CRS（具有一次齐次假设的）生产函数$F_{PC}$为
+
+$$
+F_{PC}\left[\frac{I_{GI}[t]}{K_{GI}[t]}\right]K_{GI}[t]
+$$
+
+则对应的时变的资本累积方程为
+
+$$
+K_{PC}[t+1]=(1-\delta) K_{PC}[t]+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] K_{PC}[t]
+$$
+
+决策目标：
+
+资本生产部门的决策问题：
+
+$$
+\max _{I_{PC}[t]} \quad P_{PC}[t] \; F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] \; K_{PC}[t]-P_{GF}[t] \; I_{PC}[t]
+$$
+
+其中一阶条件：
+
+$$
+P_{PC}[t] \; {F_{PC}}^{\prime} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]=P_{GF}[t]
+$$
+
+全要素生产率$A_{PC}[t]$服从AR(1)过程：
+
+$$
+\ln A_{PC}[t]=\rho_{A,PC} \ln A_{PC}[t-1] + \varepsilon_{A,PC}[t]
+$$
+
+其中，$\varepsilon_{A,PC}[t]$ 服从标准差为$\sigma_{A,PC}$的i.i.d.冲击。
+
+相邻时期持有单位资本的名义总回报率$r_{PC,n}[t]$的计算如下，
+
+$$
+\begin{align*}
+r_{PC,n}[t] & := r_{GI}[t] + P_{GF}[t] \; 
+\frac
+{
+	\partial \; K_{PC}[t+1]
+}{
+	\partial \; K_{PC}[t]
+}
+\\
+& = r_{GI}[t] + P_{GF}[t] \left((1-\delta) - F_{PC} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]   \; \frac{I_{PC}[t]}{K_{PC}[t]}+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]\right)
+\end{align*}
+$$
+
+
+TODO：如何求得均衡条件？
+
+在均衡条件下，相邻时期持有单位资本的实际总回报率$r_{PC,e}[t]$将与银行从其贷款获得的实际总回报相等 :
+
+$$
+\frac{r_{PC,n}[t+1]}{P_{PC}[t]} \equiv \frac{r_{PC,e}[t+1]}{\pi[t+1]}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
