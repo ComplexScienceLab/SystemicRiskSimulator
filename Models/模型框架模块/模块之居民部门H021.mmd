@@ -11,7 +11,7 @@
 
 参考：
 
-> 方意, 2016. 宏观审慎政策有效性研究[J]. 世界经济, 39(08): 25–49.
+> [[Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.]]
 
 
 
@@ -141,36 +141,36 @@ $$
 \max \quad \mathbb{E}_{i,t=0} 
 \left[ \sum_{t=0}^{\infty} 
 (\gamma_{HB})^{t} \left(
-\alpha_{HB,c} \; \varepsilon_{HB,c}[t] \; \log[C_{HB,c}[i,t]] 
-+ \alpha_{HB,h} \; \varepsilon_{HB,h}[t] \; \log C_{HB,h}[i,t]
-- \frac{\left(H_{HB}[i,t]\right)^{1+\phi}}{1+\phi}
+(1-\alpha_{HB}) \; \varepsilon_{c}[t] \; \log \left(C_{HB,c}[i,t] - \alpha_{HB} \; C_{HB,c}[t-1]\right) + \varepsilon_{h}[t] \; \log C_{HB,h}[i,t] - \frac{\left(h_{HB}[i,t]\right)^{1+\phi}}{1+\phi}
  \right)
 \right]
 \tag{HB_goal}
 $$
 
 其中，
-$\gamma_{HB}$：借款型居民跨时期折现因子；
-$\alpha_{HB,c}$：借款型居民大众消费行为偏好参数；
-$\varepsilon_{HB,c}[t]$：扰动项之于借款型居民之大众消费，在时期$t$；
+$\gamma_{HB}$：借款型居民的跨期折现因子；
+$\alpha_{HB}$：借款型居民的行为偏好参数；
 $C_{HB,c}[i,t]$：借款型居民$i$的大众消费，在时期$t$；
-$\alpha_{HB,h}$：借款型居民住房消费行为偏好参数；
-$\varepsilon_{HB,h}[t]$：扰动项之于住房消费，在时期$t$；
+$C_{HB,c}[t-1]$：投资和储蓄型居民的大众消费加总，在时期$t-1$；
 $C_{HB,h}[i,t]$：借款型居民$i$的住房消费，在时期$t$；
+$\varepsilon_{c}[t]$：扰动项之于大众消费，在时期$t$；
+$\varepsilon_{h}[t]$：扰动项之于住房消费，在时期$t$；
 $H_{HB}[i,t]$：借款型居民$i$的工作时长，在时期$t$；
 $\phi$：居民工作时长对效用的指数因子；
 
-
+其中，上式的
+$$
+\varepsilon_{c}[t] \; \log \left(C_{c, H B}[i, t] - \alpha_{H B} \; C_{c, H B}[t-1]\right)=\log \frac{(C_{c, H B}[i, t])^{\varepsilon_{c}[t]}}{\alpha_{H B} (C_{c, H B}[t-1])^{\varepsilon_{c}[t]}}
+$$
+表示借款型居民$i$的大众消费需求。
 
 对于借款型居民$i$的工作时长，在时期$t$，由如下成分组成：
 $$
-H_{HB}[i,t] := H_{HB,GI}[i,t] + H_{HB,PE}[i,t]
+h_{HB}[i,t] := h_{HB,GI}[i,t] + h_{HB,PE}[i,t]
 $$
 其中，
 $H_{HB,GI}[i,t]$：借款型居民$i$在消费品中间品生产商的工作时长，在时期$t$；
 $H_{HB,PE}[i,t]$：借款型居民$i$在房地产开发商的工作时长，在时期$t$；
-
-
 
 
 
@@ -266,34 +266,39 @@ $$
 \mathrm{Utility}_{HI}[i,t]:=
 \max \quad \mathbb{E}_{i,t=0} \left[ 
 \sum_{t=0}^{\infty}
-(\gamma_{HI})^{t} 
+(\gamma_{HI})^{t}
 \left(
-\alpha_{HI,c} \; \varepsilon_{HI,c}[t] \; \log[C_{HI,c}[i,t]] 
-+ \alpha_{HI,h} \; \varepsilon_{HI,h}[t] \; \log C_{HI,h}[i,t]
-- \frac{\left(H_{HI}[i,t]\right)^{1+\phi}}{1+\phi}
+(1-\alpha_{HI}) \; \varepsilon_{c}[t] \; \log \left(C_{HI,c}[i,t]-\alpha_{HI} \; C_{HI,c}[t-1]\right) + \varepsilon_{h}[t] \; \log h_{HI}[i,t]-\frac{(h_{HI}[i,t])^{1+\phi}}{1+\phi}
 \right)
 \right]
 \tag{HI_goal}
 $$
 其中，
 $\gamma_{HI}$：投资和储蓄型居民跨时期折现因子；
-$\alpha_{HI,c}$：投资和储蓄型居民大众消费行为偏好参数；
-$\varepsilon_{HI,c}[t]$：扰动项之于投资和储蓄型居民之大众消费，在时期$t$；
+$\alpha_{HI}$：投资和储蓄型居民行为偏好参数；
 $C_{HI,c}[i,t]$：投资和储蓄型居民$i$的大众消费，在时期$t$；
-$\alpha_{HI,h}$：投资和储蓄型居民住房消费行为偏好参数；
-$\varepsilon_{HI,h}[t]$：扰动项之于住房消费，在时期$t$；
+$C_{HI,c}[t-1]$：投资和储蓄型居民的大众消费加总，在时期$t-1$；
 $C_{HI,h}[i,t]$：投资和储蓄型居民$i$的住房消费，在时期$t$；
+$\varepsilon_{c}[t]$：扰动项之于大众消费，在时期$t$；
+$\varepsilon_{h}[t]$：扰动项之于住房消费，在时期$t$；
 $H_{HI}[i,t]$：投资和储蓄型居民$i$的工作时长，在时期$t$；
 $\phi$：居民工作时长对效用的指数因子；
 
+上式中，
+$$
+\varepsilon_{c}[t] \log \left(C_{c, H I}[i, t]-\alpha_{H I} C_{c, H I}[t-1]\right)=\log \frac{(C_{c, H I}[i, t])^{\varepsilon_{c}[t]}}{\alpha_{H I} (C_{c, H I}[t-1])^{\varepsilon_{c}[t]}}
+$$
+表示投资和储蓄型居民$i$的大众消费需求。
 
 对于投资和储蓄型居民$i$的工作时长，在时期$t$，由如下成分组成：
 $$
-H_{HI}[i,t] := H_{HI,GI}[i,t] + H_{HI,PE}[i,t]
+h_{HI}[i,t] := h_{HI,GI}[i,t] + h_{HI,PE}[i,t]
 $$
 其中，
 $H_{HI,GI}[i,t]$：投资和储蓄型居民$i$在消费品中间品生产商的工作时长，在时期$t$；
 $H_{HI,PE}[i,t]$：投资和储蓄型居民$i$在房地产开发商的工作时长，在时期$t$；
+
+
 
 
 ###### 约束条件：
