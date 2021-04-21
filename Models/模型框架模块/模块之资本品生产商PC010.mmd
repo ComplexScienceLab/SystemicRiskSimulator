@@ -80,10 +80,11 @@ $$
 F_{PC}\left[\frac{I_{GI}[t]}{K_{GI}[t]}\right]K_{GI}[t]
 $$
 
-则对应的时变的资本累积方程为
+则对应的时变的资本累积时变方程为
 
 $$
 K_{PC}[t+1]=(1-\delta) K_{PC}[t]+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] K_{PC}[t]
+\tag{PC_K}
 $$
 
 决策目标：
@@ -92,6 +93,7 @@ $$
 
 $$
 \max _{I_{PC}[t]} \quad P_{PC}[t] \; F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] \; K_{PC}[t]-P_{GF}[t] \; I_{PC}[t]
+\tag{PC_goal}
 $$
 
 其中一阶条件：
@@ -124,8 +126,9 @@ r_{PC,n}[t] & := r_{GI}[t] + P_{GF}[t] \;
 \end{align*}
 $$
 
+- [ ] 
+  TODO：如何求得均衡条件？
 
-TODO：如何求得均衡条件？
 
 在均衡条件下，相邻时期持有单位资本的实际总回报率$r_{PC,e}[t]$将与银行从其贷款获得的实际总回报相等 :
 
