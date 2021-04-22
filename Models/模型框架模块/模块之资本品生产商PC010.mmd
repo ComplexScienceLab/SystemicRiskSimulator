@@ -90,14 +90,14 @@ $$
 资本生产部门的决策问题：
 
 $$
-\max _{I_{PC}[t]} \quad P_{PC}[t] \; F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] \; K_{PC}[t]-P_{GF}[t] \; I_{PC}[t]
+\max _{I_{PC}[t]} \quad p_{PC}[t] \; F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] \; K_{PC}[t]-p_{GF}[t] \; I_{PC}[t]
 \tag{PC_goal}
 $$
 
 其中一阶条件：
 
 $$
-P_{PC}[t] \; {F_{PC}}^{\prime} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]=P_{GF}[t]
+p_{PC}[t] \; {F_{PC}}^{\prime} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]=p_{GF}[t]
 $$
 
 全要素生产率$A_{PC}[t]$服从AR(1)过程：
@@ -112,7 +112,7 @@ $$
 
 $$
 \begin{align*}
-r_{PC,n}[t] & := r_{GI}[t] + P_{GF}[t] \; 
+r_{PC,n}[t] & := r_{GI}[t] + p_{GF}[t] \; 
 \frac
 {
 	\partial \; K_{PC}[t+1]
@@ -120,7 +120,7 @@ r_{PC,n}[t] & := r_{GI}[t] + P_{GF}[t] \;
 	\partial \; K_{PC}[t]
 }
 \\
-& = r_{GI}[t] + P_{GF}[t] \left((1-\delta) - F_{PC} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]   \; \frac{I_{PC}[t]}{K_{PC}[t]}+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]\right)
+& = r_{GI}[t] + p_{GF}[t] \left((1-\delta) - F_{PC} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]   \; \frac{I_{PC}[t]}{K_{PC}[t]}+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]\right)
 \end{align*}
 $$
 
@@ -131,7 +131,7 @@ $$
 在均衡条件下，相邻时期持有单位资本的实际总回报率$r_{PC,e}[t]$将与银行从其贷款获得的实际总回报相等 :
 
 $$
-\frac{r_{PC,n}[t+1]}{P_{PC}[t]} \equiv \frac{r_{PC,e}[t+1]}{\pi[t+1]}
+\frac{r_{PC,n}[t+1]}{p_{PC}[t]} \equiv \frac{r_{PC,e}[t+1]}{\pi[t+1]}
 $$
 
 
