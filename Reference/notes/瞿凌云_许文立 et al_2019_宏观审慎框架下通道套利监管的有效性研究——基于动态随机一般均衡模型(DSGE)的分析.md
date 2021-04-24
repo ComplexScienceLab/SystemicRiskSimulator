@@ -66,7 +66,15 @@
 
 融资来源：从商业银行、影子银行。
 
-
+厂商部门。厂商部门生产最终产品, 从商业银行和影子银行获得融资, 雇佣劳动, 并支付利息和工资。其生产函数为 Cobb -​ Douglas 生产函数: $F \left( K _{ t -1}, N _{ t }\right)= Y _{ t }=\varepsilon_{ t } K _{ t -1}^{1-\alpha} N _{ t }^{\alpha}$
+其中, $K _{ t }= S _{ t }^{ c }+ S _{ t }^{ s }, S _{ t }^{ c }, S _{ t }^{ s }$ 分别为厂商获得的传统商业银行贷款和影子银行的贷款, 支付
+利率分别为 $r _{ t }^{ k }, r _{ t }^{ s } ; \varepsilon_{ t }=\varepsilon_{ t -1}^{ \rho _{\varepsilon}} \exp \left(\sigma_{\varepsilon} u _{\varepsilon, t }\right)$ 是全要素生产率冲击( 技术冲击) $,\left|\rho_{\varepsilon}\right|<1, \sigma_{\varepsilon}>0$,
+$u _{\varepsilon, t } \sim i . i . d . N (0,1)$
+资本积累方程为 $K _{ t }= I _{ t }+(1-\delta) K _{ t -1}$, 其中 $\delta$ 为资本折旧率。
+工厂目标是最大化利润, 利润函数为： $\pi_{ t }^{ f }= Y _{ t }- w _{ t } N _{ t }-\left( r _{ t }^{ k }+\delta\right) S _{ t -1}^{ c }-\left( r _{ t }^{ s }+\delta\right) S _{ t -1}^{ s }$
+一阶条件: $r _{ t }^{ k }=(1-\alpha) \varepsilon_{ t }\left( S _{ t -1}^{ c }\right)^{-\alpha} N _{ t }^{\alpha}$
+$r _{ t }^{ s }=(1-\alpha) \varepsilon_{ t }\left( S _{ t -1}^{ s }\right)^{-\alpha} N _{ t }^{\alpha}$
+$w _{ t }=\alpha \varepsilon_{ t }\left( S _{ t -1}^{ c }+ S _{ t -1}^{ s }\right)^{1-\alpha} N _{ t }^{\alpha-1}$
 
 
 

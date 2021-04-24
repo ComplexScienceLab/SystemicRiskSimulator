@@ -141,7 +141,7 @@ $$
 \max \quad \mathbb{E}_{i,t=0} 
 \left[ \sum_{t=0}^{\infty} 
 (\gamma_{HB})^{t} \left(
-(1-\alpha_{HB}) \; \varepsilon_{c}[t] \; \log \left(C_{HB,c}[i,t] - \alpha_{HB} \; C_{HB,c}[t-1]\right) + \varepsilon_{h}[t] \; \log C_{HB,h}[i,t] - \frac{\left(h_{HB}[i,t]\right)^{1+\phi}}{1+\phi}
+(1-\alpha_{HB}) \; \varepsilon_{c}[t] \; \log \left(C_{HB,c}[i,t] - \alpha_{HB} \; C_{HB,c}[t-1]\right) + \varepsilon_{h}[t] \; \log C_{HB,h}[i,t] - \frac{\left(h_{HB}[i,t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
  \right)
 \right]
 \tag{HB_goal}
@@ -156,7 +156,7 @@ $C_{HB,h}[i,t]$：借款型居民$i$的住房消费，在时期$t$；
 $\varepsilon_{c}[t]$：扰动项之于大众消费，在时期$t$；
 $\varepsilon_{h}[t]$：扰动项之于住房消费，在时期$t$；
 $H_{HB}[i,t]$：借款型居民$i$的工作时长，在时期$t$；
-$\phi$：居民工作时长对效用的指数因子；
+$\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
 其中，上式的
 $$
@@ -184,7 +184,7 @@ $H_{HB,PE}[i,t]$：借款型居民$i$在房地产开发商的工作时长，在�
 
 预算约束：
 $$
-C_{HB,c}[i,t] + p_{PE}[t] \; \Delta C_{HB,h}[i,t] + B_{BB,HB}[i,t-1] \; \frac{(1 + r_{b,HB}[t]) }{\pi[t]} = w_{PE}[i,t] \; h_{HB,PE}[i,t] + w_{GI}[i,t] \; h_{HB,GI}[i,t] + B_{BB,HB}[i,t]+tr_{HB}[i,t]
+C_{HB,c}[i,t] + p_{PE}[t] \; \Delta C_{HB,h}[i,t] + B_{BB,HB}[i,t-1] \; \frac{(1 + r_{b,HB}[t]) }{\pi[t]} = w_{PE}[i,t] \; h_{HB,PE}[i,t] + w_{PI}[i,t] \; h_{HB,GI}[i,t] + B_{BB,HB}[i,t]+tr_{HB}[i,t]
 \tag{HB_st_budget}
 $$
 其中，
@@ -192,7 +192,7 @@ $C_{HB,c}[i,t]$：借款型居民$i$的大众消费，在时期$t$；
 $p_{PE}[t] \; \Delta C_{HB,h}[i,t]$：房地产价格$p_{PE}[t]$与借款型居民$i$的住房偿还贷款变动量$\Delta C_{HB,h}[i,t]$的乘积，在时期$t$；
 $B_{BB,HB}[i,t-1] \; \left(1 + r_{b,HB}[t]\right) / \pi[t]$：借款型居民$i$偿还上一期的借款给商业银行部门于本期，以借款利率$r_{b,HB}[t]$，考虑当前总通胀率$\pi[t]$的影响；
 $w_{PE}[i,t]  \; h_{HB,PE}[i,t]$：借款型居民$i$获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{HB}[i,t]$，与在房地产开发商的工作时长$H_{HB,PE}[i,t]$的乘积，在时期$t$；
-$w_{GI}[i,t] \; h_{HB,GI}[i,t]$：借款型居民$i$获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{GI}[i,t]$，与在消费品中间品生产商的工作时长$H_{HB,GI}[i,t]$的乘积，在时期$t$；
+$w_{PI}[i,t] \; h_{HB,GI}[i,t]$：借款型居民$i$获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[i,t]$，与在消费品中间品生产商的工作时长$H_{HB,GI}[i,t]$的乘积，在时期$t$；
 $(1+r_{d}[t-1]) \; D_{HB}[i,t-1] / \pi[t]$：借款型居民$i$的上一期存款$D_{HB}[i,t-1]$于本期提现以上一期的存款利率$r_{d}[t-1]$，考虑当前总通胀率$\pi[t]$的影响；
 $B_{BB,HB}[i,t]$：借款型居民$i$对银行的借款，在当期$t$；
 $tr_{HB}[i,t]$：借款型居民$i$获得的转移支付，在时期$t$；
@@ -268,7 +268,7 @@ $$
 \sum_{t=0}^{\infty}
 (\gamma_{HI})^{t}
 \left(
-(1-\alpha_{HI}) \; \varepsilon_{c}[t] \; \log \left(C_{HI,c}[i,t]-\alpha_{HI} \; C_{HI,c}[t-1]\right) + \varepsilon_{h}[t] \; \log h_{HI}[i,t]-\frac{(h_{HI}[i,t])^{1+\phi}}{1+\phi}
+(1-\alpha_{HI}) \; \varepsilon_{c}[t] \; \log \left(C_{HI,c}[i,t]-\alpha_{HI} \; C_{HI,c}[t-1]\right) + \varepsilon_{h}[t] \; \log h_{HI}[i,t]-\frac{(h_{HI}[i,t])^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
 \right)
 \right]
 \tag{HI_goal}
@@ -282,7 +282,7 @@ $C_{HI,h}[i,t]$：投资和储蓄型居民$i$的住房消费，在时期$t$；
 $\varepsilon_{c}[t]$：扰动项之于大众消费，在时期$t$；
 $\varepsilon_{h}[t]$：扰动项之于住房消费，在时期$t$；
 $H_{HI}[i,t]$：投资和储蓄型居民$i$的工作时长，在时期$t$；
-$\phi$：居民工作时长对效用的指数因子；
+$\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
 上式中，
 $$
@@ -314,7 +314,7 @@ $C_{HI,c}[i,t]$：投资和储蓄型居民$i$的大众消费，在时期$t$；
 $p_{PE}[t] \; \Delta C_{HI,h}[i,t]$：住房价格$p_{PE}[t]$与投资和储蓄型居民$i$的住房偿还贷款变动量$\Delta C_{HI,h}[i,t]$的乘积，在时期$t$；
 $D_{HI}[i,t]$：投资和储蓄型居民$i$在银行的储蓄；
 $w_{PE}[i,t]  \; H_{HI,PE}[i,t]$：投资和储蓄型居民$i$获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{PE}[i,t]$，与在房地产开发商的工作时长$H_{HI,PE}[i,t]$的乘积，在时期$t$；
-$w_{GI}[i,t] \; H_{HI,GI}[i,t]$：投资和储蓄型居民$i$获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{GI}[i,t]$，与在消费品中间品生产商的工作时长$H_{HI,GI}[i,t]$的乘积，在时期$t$；
+$w_{PI}[i,t] \; H_{HI,GI}[i,t]$：投资和储蓄型居民$i$获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[i,t]$，与在消费品中间品生产商的工作时长$H_{HI,GI}[i,t]$的乘积，在时期$t$；
 $(1+r_{d}[t-1]) \; D_{HI}[i,t-1] / \pi[t]$：投资和储蓄型居民$i$提现之存款，其存于上一期，从商业银行部门整体，以上一期的存款利率$r_{d}[t-1]$，考虑当前总通胀率$\pi[t]$的影响；
 $tr_{HI}[i,t]$：投资和储蓄型居民$i$获得的转移支付，在时期$t$；
 
