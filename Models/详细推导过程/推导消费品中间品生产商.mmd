@@ -16,26 +16,26 @@
 
 #### 预分析
 
-假设消费品中间品生产商的个体$i_{PI}$构成的集合为$\mathbb{GI}$，数量为$N_{PI}$。
+假设消费品中间品生产商的个体$i_{PI}$构成的集合为$\mathbb{PI}$，数量为$N_{PI}$。
 
-为了简化分析，在这里，假设消费品中间品厂商的定价机制遵循Calvo定价机制。在第$t$期，随机以一定数量比例$(1 - \theta_{GI,p})$选择生产商$j \in \mathbb{GI_{1}}$，它们在本期参与制定价格为$\tilde{P}_{PI}[j,t]$。假设所有参与重新定价的消费品中间品生产商厂商$j$都选择同样的价格 $\tilde{P}_{PI}[t] \equiv \tilde{P}_{PI}[j,t]$。在当期，其未被选中能够参与制定最优价格之其余厂商个体$k$，构成厂商集合$\mathbb{GI_{2}}$，此时有$k \in \mathbb{GI_{2}}$。未被选中能够参与制定最优价格的厂商$k$则调整价格，其调整价格以总通货膨胀率为基准。
+为了简化分析，在这里，假设消费品中间品厂商的定价机制遵循Calvo定价机制。在第$t$期，随机以一定数量比例$(1 - \theta_{PI,p})$选择生产商$j \in \mathbb{PI_{1}}$，它们在本期参与制定价格为$\tilde{P}_{PI}[j,t]$。假设所有参与重新定价的消费品中间品生产商厂商$j$都选择同样的价格 $\tilde{P}_{PI}[t] \equiv \tilde{P}_{PI}[j,t]$。在当期，其未被选中能够参与制定最优价格之其余厂商个体$k$，构成厂商集合$\mathbb{PI_{2}}$，此时有$k \in \mathbb{PI_{2}}$。未被选中能够参与制定最优价格的厂商$k$则调整价格，其调整价格以总通货膨胀率为基准。
 
 首先考虑在时期$t$的最优化问题之于消费品中间品生产商$j$，其可以表示为企业预期的收益折现与预期的成本折现序列：
 $$
 \max _{\tilde{P}_{PI}[t]} \mathbb{E}_{t} \sum\limits_{t_{s}=0}^{\infty}
 \left(
- 	(\gamma_{PI})^{t_{s}} \; (\theta_{GI,p})^{t_{s}} \; Y_{PI}[j,t+t_{s}]
+ 	(\gamma_{PI})^{t_{s}} \; (\theta_{PI,p})^{t_{s}} \; Y_{PI}[j,t+t_{s}]
  	- p_{PF}[t+t_{s}]
  	\times
  	\min _{}
  	\left(
- 		r_{GI,z}[t+t_{s}] \; K_{PI}[j,t+t_{s}] + w_{GI,z}[t+t_{s}] \; L_{PI}[j, t+t_{s}]
+ 		r_{PI,z}[t+t_{s}] \; K_{PI}[j,t+t_{s}] + w_{PI,z}[t+t_{s}] \; L_{PI}[j, t+t_{s}]
  	\right) 
 \right)
 $$
 其中，
 $(\gamma_{PI})^{t_{s}}$：消费品中间品生产商贴现；
-$(\theta_{GI,p})^{t_{s}}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_{2}}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例，在预期的$t_{s}$时期能够将其价格保持的概率；
+$(\theta_{PI,p})^{t_{s}}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{PI_{2}}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例，在预期的$t_{s}$时期能够将其价格保持的概率；
 $Y_{PI}[j,t+t_{s}]$：产出之于消费品中间品生产商$j$，其参与重新定价在时期$t+t_{s}$；
 $p_{PF}[t+t_{s}]$：定价之于消费品最终品生产商在时期$t+t_{s}$；
 
@@ -43,7 +43,7 @@ $p_{PF}[t+t_{s}]$：定价之于消费品最终品生产商在时期$t+t_{s}$；
 $$
 \min _{}
 \left(
-	r_{GI,z}[t+t_{s}] \; K_{PI}[j,t+t_{s}] + w_{GI,z}[t+t_{s}] \; L_{PI}[j, t+t_{s}]
+	r_{PI,z}[t+t_{s}] \; K_{PI}[j,t+t_{s}] + w_{PI,z}[t+t_{s}] \; L_{PI}[j, t+t_{s}]
 \right)
 $$
 表示最小化成本问题，即资本和劳动力投入成本之于参与重新定价在时期$t+t_{s}$的消费品中间品生产商$j$；
@@ -84,12 +84,12 @@ $L_{PI}[j,t+t_{s}]$：参与重新定价的消费品中间品生产商$j$的劳�
 基于时期$t$，所有的消费品中间品生产商$i$最小化其总成本在时期$t_{s}$，暨时期$t+t_{s} \quad t_{s} \in [t,\infty)$。这里为了简化表述，在阶段1，我们省略$t_{s}$，所以$t+t_{s}$用$t$表示。
 
 $$
-{TC}_{PI}[i,t] := \min _{La_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; La_{PI}[i,t] + r_{PC,GI}[t] \; K_{PI}[i,t]
+{TC}_{PI}[i,t] := \min _{La_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; La_{PI}[i,t] + r_{PC,PI}[t] \; K_{PI}[i,t]
 $$
 其中，
 $w_{PI}[t]$：消费品中间品生产商对居民支付单位工资，在时期$t$；
 $La_{PI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
-$r_{PC,GI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
+$r_{PC,PI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
 
 
@@ -118,12 +118,12 @@ $\alpha_{PI}$：消费品中间品生产商的替代指数；
 
 假定对数形式的全要素生产率 $A_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\ln A_{PI}[t] = \rho_{A,GI} \ln A_{PI}[t-1] + \varepsilon_{A,GI}[t]
+\ln A_{PI}[t] = \rho_{A,PI} \ln A_{PI}[t-1] + \varepsilon_{A,PI}[t]
 $$
 
 其中，
-$\rho_{A,GI}$：消费品中间品生产商的全要素生产率$A_{PI}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{A,GI}[t]$：消费品中间品生产商的全要素生产率对$A_{PI}[t]$应的自回归过程的扰动项，服从均值为0，标准差为$\sigma_{A,GI}$的独立同分布的正态分布；
+$\rho_{A,PI}$：消费品中间品生产商的全要素生产率$A_{PI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对$A_{PI}[t]$应的自回归过程的扰动项，服从均值为0，标准差为$\sigma_{A,PI}$的独立同分布的正态分布；
 
 
 
@@ -137,42 +137,42 @@ $$
 $$
 
 
-由此可求得消费品中间品生产商$i$的租金率$r_{PC,GI}[t]$
+由此可求得消费品中间品生产商$i$的租金率$r_{PC,PI}[t]$
 $$
 \begin{align*}
-& r_{PC,GI}[t] = \alpha_{PI} \; A_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}-1} \; (La_{PI}[i,t])^{1-\alpha_{PI}} \\
+& r_{PC,PI}[t] = \alpha_{PI} \; A_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}-1} \; (La_{PI}[i,t])^{1-\alpha_{PI}} \\
 \Leftrightarrow \quad 
- & r_{PC,GI}[t] = \alpha_{PI} \; \frac{Y_{PI}[i,t]}{K_{PI}[i,t]}
+ & r_{PC,PI}[t] = \alpha_{PI} \; \frac{Y_{PI}[i,t]}{K_{PI}[i,t]}
 \end{align*}
 $$
 可求得消费品中间品生产商$i$的资本$K_{PI}[i,t]$
 $$
 \begin{align*}
-K_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{A_{PI}[t]} \left(\frac{r_{PC,GI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI} - 1}
+K_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{A_{PI}[t]} \left(\frac{r_{PC,PI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI} - 1}
 \\
-& = \frac{\alpha_{PI}}{1-\alpha_{PI}} \; \frac{w_{PI}[t]}{r_{PC,GI}[t]} \; La_{PI}[i,t]
+& = \frac{\alpha_{PI}}{1-\alpha_{PI}} \; \frac{w_{PI}[t]}{r_{PC,PI}[t]} \; La_{PI}[i,t]
 \end{align*}
 $$
 
 可求得消费品中间品生产商$i$的劳动$La_{PI}[i,t]$
 $$
 \begin{align*}
-La_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{A_{PI}[t]} \left(\frac{r_{PC,GI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI}}
+La_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{A_{PI}[t]} \left(\frac{r_{PC,PI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI}}
 \\
-& = \frac{1-\alpha_{PI}}{\alpha_{PI}} \; \frac{r_{PC,GI}[t]}{w_{PI}[t]} \; K_{PI}[i,t] 
+& = \frac{1-\alpha_{PI}}{\alpha_{PI}} \; \frac{r_{PC,PI}[t]}{w_{PI}[t]} \; K_{PI}[i,t] 
 \end{align*}
 $$
 
 将$K_{PI}[i, t]$和$La_{PI}[i, t]$的表达式代入最小化总成本表达式，并且代入约束条件可得消费品中间品生产商$i$的实际总成本$TC_{PI}[t]$
 $$
 TC_{PI}[t]
-:= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{Y_{PI}[t] \; (w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PC,GI}[t])^{\alpha_{PI}}}{A_{PI}[t]}
+:= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{Y_{PI}[t] \; (w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PC,PI}[t])^{\alpha_{PI}}}{A_{PI}[t]}
 $$
 可求得消费品中间品生产商$i$共有的实际边际成本$MC_{PI}[t]$：
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PC,GI}[t])^{\alpha_{PI}}}{A_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PC,PI}[t])^{\alpha_{PI}}}{A_{PI}[t]}
 $$
 
 
@@ -183,11 +183,11 @@ $$
 
 #### 阶段2：制定最优价格以最大化总利润
 
-由于我们采用的Calvo定价规则，假设了在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_{2}}$当中，随机抽取所占比例为 $(1-\theta_{GI,p})$数量的厂商参与重新定价。此时意味着在时期$t$，被随机抽取中参与重新定价的厂商的数量占比为$(1 - \theta_{GI,p})$。
+由于我们采用的Calvo定价规则，假设了在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{PI_{2}}$当中，随机抽取所占比例为 $(1-\theta_{PI,p})$数量的厂商参与重新定价。此时意味着在时期$t$，被随机抽取中参与重新定价的厂商的数量占比为$(1 - \theta_{PI,p})$。
 
-基于时期$t$，参与制定最优价格的消费品中间品生产商$j \in \mathbb{GI_{1}}$，通过制定最优价格最大化其实际预期贴现利润在时期$t_{s}$，暨在时期$t+t_{s}, \quad t_{s} \in [t,\infty)$。
+基于时期$t$，参与制定最优价格的消费品中间品生产商$j \in \mathbb{PI_{1}}$，通过制定最优价格最大化其实际预期贴现利润在时期$t_{s}$，暨在时期$t+t_{s}, \quad t_{s} \in [t,\infty)$。
 
-另外，未能参与制定最优价格$\tilde{P}_{PI}[j,t]$之消费品中间品生产商$k \in \mathbb{GI_{2}}$根据过去的通货膨率$\pi[t-1]$确定其指数化价格为
+另外，未能参与制定最优价格$\tilde{P}_{PI}[j,t]$之消费品中间品生产商$k \in \mathbb{PI_{2}}$根据过去的通货膨率$\pi[t-1]$确定其指数化价格为
 $$
 p_{PI}[k,t]=(\pi[t-1])^{\chi_{p}} \; p_{PI}[i,t-1]
 $$
@@ -205,7 +205,7 @@ $P[\cdot]$：表示物价于特定时期；
 
 因为对于未参与定价的消费品中间品生产商k，价格之调整以总通货膨胀率为基准，所以消费品最终品生产商的定价规则为
 $$
-p_{PF}[t] = \theta_{GI,p} \; \left( (\pi[t+t_{h}-1])^{\chi_{p}} \; p_{PF}[t-1] \right)   + (1-\theta_{GI,p}) \; p_{PI}[j,t]
+p_{PF}[t] = \theta_{PI,p} \; \left( (\pi[t+t_{h}-1])^{\chi_{p}} \; p_{PF}[t-1] \right)   + (1-\theta_{PI,p}) \; p_{PI}[j,t]
 $$
 
 
@@ -227,7 +227,7 @@ $$
 \max _{\tilde{P}_{PI}[j,t]} \mathrm{Utility}_{PI}[j,t] 
 := & \max _{\tilde{P}_{PI}[j,t]} \mathbb{E}_{t} \sum_{t_{s}=0}^{\infty}
 \left(
-(\gamma_{PI})^{t_{s}} \; (\theta_{GI,p})^{t_{s}}
+(\gamma_{PI})^{t_{s}} \; (\theta_{PI,p})^{t_{s}}
 \; Y_{PI}[j,t+t_{s}]
 	\; 
 	\left(
@@ -238,7 +238,7 @@ $$
 \\
 \Leftrightarrow \quad & \max _{\tilde{P}_{PI}[j,t]} \mathbb{E}_{t} \sum_{t_{s}=0}^{\infty}
 \left(
-(\gamma_{PI})^{t_{s}} \; (\theta_{GI,p})^{t_{s}}
+(\gamma_{PI})^{t_{s}} \; (\theta_{PI,p})^{t_{s}}
 \; \left(\frac{p_{PF}[t+t_{s}]}{p_{PI}[j, t+t_{s}]} \right)^{\alpha_{PF}} Y_{PF}[t+t_{s}]
 	\;
 	\left(
@@ -255,7 +255,7 @@ $$
 \max _{\tilde{P}_{PI}[j,t]} 
 \mathbb{E}_{t} \sum_{t_{s}=0}^{\infty}
 \left(
-(\gamma_{PI})^{t_{s}} \; (\theta_{GI,p})^{t_{s}}
+(\gamma_{PI})^{t_{s}} \; (\theta_{PI,p})^{t_{s}}
 \; \left(\frac{p_{PF}[t+t_{s}]}{		
 			\prod_{t_{h}=1}^{t_{s}} 
       \left(
@@ -278,7 +278,7 @@ $$
 
 其中，
 $\gamma_{PI}$：消费品中间品生产商之效用贴现因子；
-$\theta_{GI,p}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_{2}}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例；
+$\theta_{PI,p}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{PI_{2}}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例；
 $Y_{PI}[j,t+t_{s}]$：表示为
 $$
 Y_{PI}[j, t+t_{s}] = \left(\frac{p_{PF}[t+t_{s}]}{p_{PI}[j, t+t_{s}]} \right)^{\alpha_{PF}} Y_{PF}[t+t_{s}]
@@ -314,13 +314,13 @@ $$
 \mathbb{E}_{t} 
 \sum \limits_{t_{s}=0}^{\infty}
 	\left(
-		\left(\gamma_{PI} \; \theta_{GI,p} \right)^{t_{s}} \; p_{PF}[t+t_{s}] \; MC_{PI}[t+t_{s}] \; Y_{PF}[i, t+t_{s}]
+		\left(\gamma_{PI} \; \theta_{PI,p} \right)^{t_{s}} \; p_{PF}[t+t_{s}] \; MC_{PI}[t+t_{s}] \; Y_{PF}[i, t+t_{s}]
 	\right)
 }
 {
 \mathbb{E}_{t} \sum \limits_{t_{s}=0}^{\infty}
 	\left(
-		\left(\gamma_{PI} \theta_{GI,p} \right)^{t_{s}} 
+		\left(\gamma_{PI} \theta_{PI,p} \right)^{t_{s}} 
 		\; \prod \limits_{t_{h}=1}^{t_{s}} 
 			\left(  
 				(\pi[t+t_{h}-1])^{\chi_{p}} 
@@ -335,7 +335,7 @@ $MC_{PI}[t+t_{s}]$：消费品中间品生产商的实际边际成本，表达�
 
 $$
 MC_{PI}[t+t_{s}]
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t+t_{s}])^{1-\alpha_{PI}} (r_{GI,z}[t+t_{s}])^{\alpha_{PI}}}{A_{PI}[t+t_{s}]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t+t_{s}])^{1-\alpha_{PI}} (r_{PI,z}[t+t_{s}])^{\alpha_{PI}}}{A_{PI}[t+t_{s}]}
 $$
 
 。
@@ -351,7 +351,7 @@ $$
 最终可得消费品中间品生产商之价格水平的时变表达式
 $$
 (p_{PF}[t])^{1-\alpha_{PF}}
-= \theta_{GI,p} \; \left((\pi[t-1])^{\chi_{p}} \; P[t-1] \right)^{1-\alpha_{PF}} + (1-\theta_{GI,p}) \; (\tilde{P}_{PI}[t])^{1-\alpha_{PF}}
+= \theta_{PI,p} \; \left((\pi[t-1])^{\chi_{p}} \; P[t-1] \right)^{1-\alpha_{PF}} + (1-\theta_{PI,p}) \; (\tilde{P}_{PI}[t])^{1-\alpha_{PF}}
 $$
 通过对数线性化上面两个式子，并采用差分方法消除对未来期望值的无穷加总项，通过以下推导过程
 
@@ -366,9 +366,9 @@ $$
 +
 \frac
 {
-\left( 1-\theta_{GI,p} \right) \; \left( 1-\gamma_{PI} \theta_{GI,p} \right)
+\left( 1-\theta_{PI,p} \right) \; \left( 1-\gamma_{PI} \theta_{PI,p} \right)
 }{
-\theta_{GI,p}\left(1+\gamma_{PI} \theta_{GI,p}\right)
+\theta_{PI,p}\left(1+\gamma_{PI} \theta_{PI,p}\right)
 } 
 \; \hat{MC}_{PI}[t]
 $$

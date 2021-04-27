@@ -127,10 +127,10 @@ $\Box_{PI}$
 - 假设生产消费品中间品的厂商的产品是同种类的，具有要素替代性；
 - 假设经济中存在一系列连续的消费品中间品生产商$i \in [0,1]$连续统，意味着每一个消费品中间品生产商对该消费品中间品市场的影响都是无穷小的；
 - 假设消费品中间品生产商的定价规则遵循Calvo的定价机制。
-- 假设每一期从未参与消费品中间品生产商随机抽取比例为 $1-\theta_{GI,p}$数量的厂商参与重新定价；
+- 假设每一期从未参与消费品中间品生产商随机抽取比例为 $1-\theta_{PI,p}$数量的厂商参与重新定价；
 - 假设消费品中间品生产商$j$参与定价一次$\tilde {P}_{PI}[j,t]$之后，之后不再参与被随机抽取，暨之后不能最优地重新定价；
 - 假设未能参与重新定价的消费品中间品生产商的价格根据过去的通胀水平确定其指数化了的价格；
-- 假设所有参与重新定价的消费品中间品生产商厂商 $j \in \mathbb{GI_{1}}$  都选择同样的价格 $\tilde{P}_{PI}[t] \equiv \tilde{P}_{PI}[j,t]$；
+- 假设所有参与重新定价的消费品中间品生产商厂商 $j \in \mathbb{PI_{1}}$  都选择同样的价格 $\tilde{P}_{PI}[t] \equiv \tilde{P}_{PI}[j,t]$；
 
 
 
@@ -183,9 +183,9 @@ $\Box_{PI}$
 >
 > 。
 
-假设消费品中间品生产商的个体$i_{PI}$构成的集合为$\mathbb{GI}$，数量为$N_{PI}$。
+假设消费品中间品生产商的个体$i_{PI}$构成的集合为$\mathbb{PI}$，数量为$N_{PI}$。
 
-为了简化分析，在这里，假设消费品中间品厂商的定价机制遵循Calvo定价机制。在第$t$期，随机以一定数量比例$(1 - \theta_{GI,p})$选择生产商$j \in \mathbb{GI_{1}}$，它们在本期参与制定价格为$\tilde{P}_{PI}[j,t]$。假设所有参与重新定价的消费品中间品生产商厂商$j$都选择同样的价格 $\tilde{P}_{PI}[t] \equiv \tilde{P}_{PI}[j,t]$。在当期，其未被选中能够参与制定最优价格之其余厂商个体$k$，构成厂商集合$\mathbb{GI_{2}}$，此时有$k \in \mathbb{GI_{2}}$。未被选中能够参与制定最优价格的厂商$k$则调整价格，其调整价格以总通货膨胀率为基准。
+为了简化分析，在这里，假设消费品中间品厂商的定价机制遵循Calvo定价机制。在第$t$期，随机以一定数量比例$(1 - \theta_{PI,p})$选择生产商$j \in \mathbb{PI_{1}}$，它们在本期参与制定价格为$\tilde{P}_{PI}[j,t]$。假设所有参与重新定价的消费品中间品生产商厂商$j$都选择同样的价格 $\tilde{P}_{PI}[t] \equiv \tilde{P}_{PI}[j,t]$。在当期，其未被选中能够参与制定最优价格之其余厂商个体$k$，构成厂商集合$\mathbb{PI_{2}}$，此时有$k \in \mathbb{PI_{2}}$。未被选中能够参与制定最优价格的厂商$k$则调整价格，其调整价格以总通货膨胀率为基准。
 
 此时中间品生产商的最优化问题中，即包含最大化收益，也包含最小化成本问题，因此分析时考虑分为两个阶段决策。
 
@@ -203,12 +203,12 @@ $\Box_{PI}$
 所有的消费品中间品生产商$i$最小化其总成本$TC_{PI}$，在时期$t$。
 
 $$
-{TC}_{PI}[i,t] := \min _{La_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; La_{PI}[i,t] + r_{PC,GI}[t] \; K_{PI}[i,t]
+{TC}_{PI}[i,t] := \min _{La_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; La_{PI}[i,t] + r_{PC,PI}[t] \; K_{PI}[i,t]
 $$
 其中，
 $w_{PI}[t]$：消费品中间品生产商对居民支付单位工资（工资率），在时期$t$；
 $La_{PI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
-$r_{PC,GI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
+$r_{PC,PI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
 
 - [ ] 这里$K_{PI}[i,t]$的生成方式包括：
@@ -245,12 +245,12 @@ $\alpha_{PI}$：消费品中间品生产商各生产要素的替代指数；
 
 假定全要素生产率 $A_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\ln A_{PI}[t] = \rho_{A,GI} \ln A_{PI}[t-1] + \varepsilon_{A,GI}[t]
+\ln A_{PI}[t] = \rho_{A,PI} \ln A_{PI}[t-1] + \varepsilon_{A,PI}[t]
 $$
 
 其中，
-$\rho_{A,GI}$：消费品中间品生产商的全要素生产率$A_{PI}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{A,GI}[t]$：消费品中间品生产商的全要素生产率对$A_{PI}[t]$应的自回归过程的扰动项；
+$\rho_{A,PI}$：消费品中间品生产商的全要素生产率$A_{PI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对$A_{PI}[t]$应的自回归过程的扰动项；
 
 
 
@@ -258,7 +258,7 @@ $\varepsilon_{A,GI}[t]$：消费品中间品生产商的全要素生产率对$A_
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PC,GI}[t])^{\alpha_{PI}}}{A_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PC,PI}[t])^{\alpha_{PI}}}{A_{PI}[t]}
 $$
 
 
@@ -269,9 +269,9 @@ $$
 
 阶段2：制定最优价格以最大化总利润。
 
-基于时期$t$，参与制定最优价格的消费品中间品生产商$j \in \mathbb{GI_{1}}$，通过制定最优价格最大化其实际预期贴现利润在时期$t_{s}$，暨在时期$t+t_{s}, \quad t_{s} \in [t,\infty)$。
+基于时期$t$，参与制定最优价格的消费品中间品生产商$j \in \mathbb{PI_{1}}$，通过制定最优价格最大化其实际预期贴现利润在时期$t_{s}$，暨在时期$t+t_{s}, \quad t_{s} \in [t,\infty)$。
 
-另外，未能参与制定最优价格$\tilde{P}_{PI}[j,t]$之消费品中间品生产商$k \in \mathbb{GI_{2}}$根据过去的通货膨率$\pi[t-1]$确定其指数化价格为
+另外，未能参与制定最优价格$\tilde{P}_{PI}[j,t]$之消费品中间品生产商$k \in \mathbb{PI_{2}}$根据过去的通货膨率$\pi[t-1]$确定其指数化价格为
 $$
 p_{PI}[k,t]=(\pi[t-1])^{\chi_{p}} \; p_{PI}[i,t-1]
 $$
@@ -289,10 +289,10 @@ $P[\cdot]$：表示物价于特定时期；
 
 因为对于未参与定价的消费品中间品生产商$k$，价格之调整以总通货膨胀率为基准，所以消费品最终品生产商的定价规则为
 $$
-p_{PF}[t] = \theta_{GI,p} \; \left( (\pi[t+t_{h}-1])^{\chi_{p}} \; p_{PF}[t-1] \right)   + (1-\theta_{GI,p}) \; p_{PI}[j,t]
+p_{PF}[t] = \theta_{PI,p} \; \left( (\pi[t+t_{h}-1])^{\chi_{p}} \; p_{PF}[t-1] \right)   + (1-\theta_{PI,p}) \; p_{PI}[j,t]
 $$
 
-由于我们采用的Calvo定价规则，假设了在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_{2}}$当中，随机抽取所占比例为 $(1-\theta_{GI,p})$数量的厂商参与重新定价。此时意味着在时期$t$，被随机抽取中参与重新定价的厂商的数量占比为$(1 - \theta_{GI,p})$。
+由于我们采用的Calvo定价规则，假设了在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{PI_{2}}$当中，随机抽取所占比例为 $(1-\theta_{PI,p})$数量的厂商参与重新定价。此时意味着在时期$t$，被随机抽取中参与重新定价的厂商的数量占比为$(1 - \theta_{PI,p})$。
 
 假设消费品中间品生产商$j$参与定价一次$\tilde{P}_{PI}[j,t]$之后，之后不再参与被随机抽取，暨之后不能最优地重新定价，从而该消费品中间品生产商$j$的价格$p_{PI}[j,t+t_{s}]$在时期$t+t_{s} \quad t_{s} \in [t,\infty)$为
 
@@ -312,7 +312,7 @@ $$
 := & \max _{\tilde{P}_{PI}[j,t]} 
 \mathbb{E}_{t} \sum_{t_{s}=0}^{\infty}
 \left(
-(\gamma_{PI})^{t_{s}} \; (\theta_{GI,p})^{t_{s}}
+(\gamma_{PI})^{t_{s}} \; (\theta_{PI,p})^{t_{s}}
 \; \left(\frac{p_{PF}[t+t_{s}]}{		
 			\prod_{t_{h}=1}^{t_{s}} 
       \left(
@@ -335,7 +335,7 @@ $$
 
 其中，
 $\gamma_{PI}$：消费品中间品生产商之效用贴现因子；
-$\theta_{GI,p}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{GI_{2}}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例；
+$\theta_{PI,p}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{PI_{2}}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例；
 $\alpha_{PF}$：消费品中间品生产商不同的产品的替代弹性；
 
 
@@ -361,13 +361,13 @@ $$
 \mathbb{E}_{t} 
 \sum \limits_{t_{s}=0}^{\infty}
 	\left(
-		\left(\gamma_{PI} \; \theta_{GI,p} \right)^{t_{s}} \; p_{PF}[t+t_{s}] \; MC_{PI}[t+t_{s}] \; Y_{PF}[i, t+t_{s}]
+		\left(\gamma_{PI} \; \theta_{PI,p} \right)^{t_{s}} \; p_{PF}[t+t_{s}] \; MC_{PI}[t+t_{s}] \; Y_{PF}[i, t+t_{s}]
 	\right)
 }
 {
 \mathbb{E}_{t} \sum \limits_{t_{s}=0}^{\infty}
 	\left(
-		\left(\gamma_{PI} \; \theta_{GI,p} \right)^{t_{s}} 
+		\left(\gamma_{PI} \; \theta_{PI,p} \right)^{t_{s}} 
 		\; \prod \limits_{t_{h}=1}^{t_{s}} 
 			\left(  
 				(\pi[t+t_{h}-1])^{\chi_{p}} 
@@ -388,7 +388,7 @@ $$
 
 $$
 (p_{PF}[t])^{1-\alpha_{PF}}
-= \theta_{GI,p} \; \left((\pi[t-1])^{\chi_{p}} \; P[t-1] \right)^{1-\alpha_{PF}} + (1-\theta_{GI,p}) \; \left(\tilde{P}_{PI}[t]\right)^{1-\alpha_{PF}}
+= \theta_{PI,p} \; \left((\pi[t-1])^{\chi_{p}} \; P[t-1] \right)^{1-\alpha_{PF}} + (1-\theta_{PI,p}) \; \left(\tilde{P}_{PI}[t]\right)^{1-\alpha_{PF}}
 $$
 
 通过对数线性化上面两个式子，并采用差分方法消除对未来期望值的无穷加总项，经过推导，最终可以得到如下形式的混合型新凯恩斯菲利普斯曲线（hybrid NKPC）
@@ -401,9 +401,9 @@ $$
 +
 \frac
 {
-\left( 1-\theta_{GI,p} \right) \; \left( 1-\gamma_{PI} \theta_{GI,p} \right)
+\left( 1-\theta_{PI,p} \right) \; \left( 1-\gamma_{PI} \theta_{PI,p} \right)
 }{
-\theta_{GI,p}\left(1+\gamma_{PI} \theta_{GI,p}\right)
+\theta_{PI,p}\left(1+\gamma_{PI} \theta_{PI,p}\right)
 } 
 \; \hat{MC}_{PI}[t]
 $$
@@ -503,7 +503,7 @@ $$
 
 $$
 \begin{align*}
-r_{PC,n}[t] & := r_{PC,GI}[t] + p_{PF}[t] \; 
+r_{PC,n}[t] & := r_{PC,PI}[t] + p_{PF}[t] \; 
 \frac
 {
 	\partial K_{PC}[t+1]
@@ -511,7 +511,7 @@ r_{PC,n}[t] & := r_{PC,GI}[t] + p_{PF}[t] \;
 	\partial K_{PC}[t]
 }
 \\
-& = r_{PC,GI}[t] + p_{PF}[t] \left((1-\delta) - F_{PC} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]   \; \frac{I_{PC}[t]}{K_{PC}[t]}+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]\right)
+& = r_{PC,PI}[t] + p_{PF}[t] \left((1-\delta) - F_{PC} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]   \; \frac{I_{PC}[t]}{K_{PC}[t]}+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]\right)
 \end{align*}
 $$
 
