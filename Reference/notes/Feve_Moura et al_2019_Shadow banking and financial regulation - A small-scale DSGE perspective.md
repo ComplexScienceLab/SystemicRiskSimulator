@@ -86,7 +86,9 @@ $d_{t}$：居民储蓄；
 
 - 资产替代成本：
 
-假设ABS流动性优于长期资产，因此资产间替代调整成本：
+假设ABS流动性优于长期资产。
+
+定义资产间替代调整成本：
 $$
 \Gamma\left(\frac{a b s_{t}}{q_{t} l_{t}}\right)=\frac{\gamma}{2}\left(\frac{a b s_{t}}{q_{t} l_{t}}-\frac{\overline{a b s}}{\bar{q}_{t} \bar{l}}\right)^{2}
 $$

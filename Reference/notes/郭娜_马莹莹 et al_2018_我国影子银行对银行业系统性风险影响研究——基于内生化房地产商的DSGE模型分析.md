@@ -111,7 +111,7 @@ $$
 
 
 
-##### 影子银行
+#### 影子银行
 
 
 
@@ -166,16 +166,38 @@ $$
 
 
 
-##### 商业银行
+#### 商业银行
+
+
+
+商业银行向影子银行转移资产的动力：
+$$
+\psi_{t}^{\prime}=v\left[E\left(\log R_{t+1}^{s h}-\log R_{t+1}^{t r}\right)-\left(\log \bar{R}^{s h}-\log \bar{R}^{t r}\right)\right]+\psi_{t}
+$$
+其中, $\psi_{t}$ 为影子银行融资利差参数; $v$ 为影子银行融资利差调整系数; $\psi_{t}$ 为影子银行融资利差
+冲击，服从 $A R(1)$ 过程: $\ln \psi_{t}=\rho_{\psi} \ln \psi_{t-1}+\varepsilon_{t}^{\psi}, \varepsilon_{t}^{\psi} \sim N\left(0, \sigma_{\psi}^{2}\right)$ 。
+
+
+
+商业银行资产负债：
+$$
+B_{t}^{h}+T R_{t}=N_{t}^{b}+O_{t}=N_{t}^{b}+\left(1-R_{t}^{d}\right) D_{t}+S_{t}
+$$
+其中, $O_{t}$ 为外部借款, $N_{t}^{b}$ 为商业银行净资产,$R_{t}^{d}$ 为中央银行设定的存款准备金率，用以调整商业银行信贷规模；
 
 
 
 
 
+#### 参数校准
 
 
 
+![image-20210430213956652](%E9%83%AD%E5%A8%9C_%E9%A9%AC%E8%8E%B9%E8%8E%B9%20et%20al_2018_%E6%88%91%E5%9B%BD%E5%BD%B1%E5%AD%90%E9%93%B6%E8%A1%8C%E5%AF%B9%E9%93%B6%E8%A1%8C%E4%B8%9A%E7%B3%BB%E7%BB%9F%E6%80%A7%E9%A3%8E%E9%99%A9%E5%BD%B1%E5%93%8D%E7%A0%94%E7%A9%B6%E2%80%94%E2%80%94%E5%9F%BA%E4%BA%8E%E5%86%85%E7%94%9F%E5%8C%96%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%95%86%E7%9A%84DSGE%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90.assets/image-20210430213956652.png)
 
 
 
+![image-20210430213909967](%E9%83%AD%E5%A8%9C_%E9%A9%AC%E8%8E%B9%E8%8E%B9%20et%20al_2018_%E6%88%91%E5%9B%BD%E5%BD%B1%E5%AD%90%E9%93%B6%E8%A1%8C%E5%AF%B9%E9%93%B6%E8%A1%8C%E4%B8%9A%E7%B3%BB%E7%BB%9F%E6%80%A7%E9%A3%8E%E9%99%A9%E5%BD%B1%E5%93%8D%E7%A0%94%E7%A9%B6%E2%80%94%E2%80%94%E5%9F%BA%E4%BA%8E%E5%86%85%E7%94%9F%E5%8C%96%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%95%86%E7%9A%84DSGE%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90.assets/image-20210430213909967.png)
+
+![image-20210430213928534](%E9%83%AD%E5%A8%9C_%E9%A9%AC%E8%8E%B9%E8%8E%B9%20et%20al_2018_%E6%88%91%E5%9B%BD%E5%BD%B1%E5%AD%90%E9%93%B6%E8%A1%8C%E5%AF%B9%E9%93%B6%E8%A1%8C%E4%B8%9A%E7%B3%BB%E7%BB%9F%E6%80%A7%E9%A3%8E%E9%99%A9%E5%BD%B1%E5%93%8D%E7%A0%94%E7%A9%B6%E2%80%94%E2%80%94%E5%9F%BA%E4%BA%8E%E5%86%85%E7%94%9F%E5%8C%96%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%95%86%E7%9A%84DSGE%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90.assets/image-20210430213928534.png)
 

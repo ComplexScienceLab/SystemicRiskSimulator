@@ -79,7 +79,7 @@ $\Box_{PF}$
 
 最大化利润，在给定消费品最终品价格$p_{PF}[t]$和中间品价格$p_{PI}[i,t]$时：
 $$
-\mathrm{Utility}_{PF}[t] := \max _{Y_{PI}[i,t]} p_{PF}[t] Y_{PF}[t] - \int_{0}^{1} p_{PI}[i, t] Y_{PI}[i, t] \; \mathbb{d} i
+\mathrm{Profit}_{PF}[t] := \max _{Y_{PI}[i,t]} p_{PF}[t] Y_{PF}[t] - \int_{0}^{1} p_{PI}[i, t] Y_{PI}[i, t] \; \mathbb{d} i
 $$
 
 
@@ -142,7 +142,7 @@ $\Box_{PI}$
 
 - 获取资本要素投入，从资本累积渠道：
 
-  - 从资本品生产商$PC$购买资本；
+  - 从资本品生产商$\mathbb{PK}$购买资本；
   - 融资资本，从金融中介机构：
     - 商业银行部门；
     - 影子银行部门；
@@ -203,17 +203,17 @@ $\Box_{PI}$
 所有的消费品中间品生产商$i$最小化其总成本$TC_{PI}$，在时期$t$。
 
 $$
-{TC}_{PI}[i,t] := \min _{La_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; La_{PI}[i,t] + r_{PC,PI}[t] \; K_{PI}[i,t]
+{TC}_{PI}[i,t] := \min _{La_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; La_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
 $$
 其中，
 $w_{PI}[t]$：消费品中间品生产商对居民支付单位工资（工资率），在时期$t$；
 $La_{PI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
-$r_{PC,PI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
+$r_{PK,PI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
 
 - [ ] 这里$K_{PI}[i,t]$的生成方式包括：
 
-  - 向资本品生产商购买资本，以价格$p_{PC}[t]$；
+  - 向资本品生产商购买资本，以价格$p_{PK}[t]$；
 
     
 
@@ -233,24 +233,24 @@ $$
 
 消费品中间品生产商之生产函数$F_{PI}[\cdot]$
 $$
-Y_{PI}[i,t] = F_{PI}[A_{PI}[t],K_{PI}[i,t],La_{PI}[i,t]] := A_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}} \; (La_{PI}[i,t])^{1-\alpha_{PI}}
+Y_{PI}[i,t] = F_{PI}[\mathrm{TFP}_{PI}[t],K_{PI}[i,t],La_{PI}[i,t]] := \mathrm{TFP}_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}} \; (La_{PI}[i,t])^{1-\alpha_{PI}}
 $$
 其中，
-$A_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
+$\mathrm{TFP}_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
 $K_{PI}[i,t]$ ：消费品中间品生产商$i$的资本要素；
 $La_{PI}[i,t]$：消费品中间品生产商$i$的劳动要素；
 $\alpha_{PI}$：消费品中间品生产商各生产要素的替代指数；
 
 ~~$\Phi$：消费品中间品生产商的固定生产成本。在稳态条件下，其值被设定为产生0利润；~~
 
-假定全要素生产率 $A_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
+假定全要素生产率 $\mathrm{TFP}_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\ln A_{PI}[t] = \rho_{A,PI} \ln A_{PI}[t-1] + \varepsilon_{A,PI}[t]
+\ln \mathrm{TFP}_{PI}[t] = \rho_{A,PI} \ln \mathrm{TFP}_{PI}[t-1] + \varepsilon_{A,PI}[t]
 $$
 
 其中，
-$\rho_{A,PI}$：消费品中间品生产商的全要素生产率$A_{PI}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对$A_{PI}[t]$应的自回归过程的扰动项；
+$\rho_{A,PI}$：消费品中间品生产商的全要素生产率$\mathrm{TFP}_{PI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对$\mathrm{TFP}_{PI}[t]$应的自回归过程的扰动项；
 
 
 
@@ -258,7 +258,7 @@ $\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对$A_
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PC,PI}[t])^{\alpha_{PI}}}{A_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{\mathrm{TFP}_{PI}[t]}
 $$
 
 
@@ -308,7 +308,7 @@ $$
 
 $$
 \begin{align*}
-& \max _{\tilde{P}_{PI}[j,t]} \mathrm{Utility}_{PI}[j,t] \\
+& \max _{\tilde{P}_{PI}[j,t]} \mathrm{Profit}_{PI}[j,t] \\
 := & \max _{\tilde{P}_{PI}[j,t]} 
 \mathbb{E}_{t} \sum_{t_{s}=0}^{\infty}
 \left(
@@ -331,6 +331,7 @@ $$
 	\right)
 \right)
 \end{align*}
+\tag{PG_goal}
 $$
 
 其中，
@@ -447,13 +448,43 @@ producers_capital
 
 数学符号：
 
-$\Box_{PC}$
+$\Box_{PK}$
+
+
+
+> 资本品生产商的建模描述主要参考
+>
+> [[马勇, 2013. 植入金融因素的DSGE模型与宏观审慎货币政策规则[J]. 世界经济, (07 vo 36): 68–92.]]
+>
+> 其中，(马勇, 2013)参考了
+>
+> [[Faia E, Monacelli T, 2007. Optimal Interest Rate Rules, Asset Prices, and Credit Frictions[J]. Journal of Economic Dynamics and Control, 31(10): 3228–3254. DOI:[10.1016/j.jedc.2006.11.006](https://doi.org/10.1016/j.jedc.2006.11.006).]]
+
+
+
+
+
+
+
+
+
+##### 引入原因
+
+引入资本品生产商，用以引入资本调整成本，以相对方便处理的形式。
+
+
 
 
 
 ##### 行为：
 
-- 具有竞争性的生产资本品生产商部门利用投资和现有资本存量生产新的资本品，这样的生产将耗费一定的物质转换成本。
+- 具有竞争性的生产资本品生产商$i$利用投资和现有资本存量生产新的资本品，这样的生产将耗费一定的物质转换成本。
+- 资本品生产商获取资本渠道：
+  - 金融中介机构：
+    - 商业银行部门；
+    - 影子银行部门；
+  - 外部融资：
+    - 通过证券市场融资；
 
 
 
@@ -463,17 +494,17 @@ $\Box_{PC}$
 
 ##### 模型：
 
-设定生产函数形式为CRS（具有一次齐次假设的）生产函数$F_{PC}$为
+设定生产函数形式为CRS（具有一次齐次假设的）生产函数$F_{PK}$为
 
 $$
-F_{PC}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right]K_{PI}[t]
+F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right]K_{PI}[t]
 $$
 
 则对应的时变的资本累积时变方程为
 
 $$
-K_{PC}[t+1]=(1-\delta) K_{PC}[t]+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] K_{PC}[t]
-\tag{PC_K}
+K_{PK}[t+1]=(1-\delta) K_{PK}[t]+F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right] K_{PK}[t]
+\tag{PK_K}
 $$
 
 决策目标：
@@ -481,49 +512,48 @@ $$
 资本生产部门的决策问题：
 
 $$
-\max _{I_{PC}[t]} \quad p_{PC}[t] \; F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right] \; K_{PC}[t]-p_{PF}[t] \; I_{PC}[t]
-\tag{PC_goal}
+\max _{I_{PK}[t]} \quad p_{PK}[t] \; F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right] \; K_{PK}[t]-p_{PF}[t] \; I_{PK}[t]
+\tag{PK_goal}
 $$
 
 其中一阶条件：
 
 $$
-p_{PC}[t] \; {F_{PC}}^{\prime} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]=p_{PF}[t]
+p_{PK}[t] \; {F_{PK}}^{\prime} \left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]=p_{PF}[t]
 $$
 
-全要素生产率$A_{PC}[t]$服从AR(1)过程：
+全要素生产率$\mathrm{TFP}_{PK}[t]$服从AR(1)过程：
 
 $$
-\ln A_{PC}[t]=\rho_{A,PC} \ln A_{PC}[t-1] + \varepsilon_{A,PC}[t]
+\ln \mathrm{TFP}_{PK}[t]=\rho_{A,PK} \ln \mathrm{TFP}_{PK}[t-1] + \varepsilon_{A,PK}[t]
 $$
 
-其中，$\varepsilon_{A,PC}[t]$ 服从标准差为$\sigma_{A,PC}$的i.i.d.冲击。
+其中，$\varepsilon_{A,PK}[t]$ 服从标准差为$\sigma_{A,PK}$的i.i.d.冲击。
 
-相邻时期持有单位资本的名义总回报率$r_{PC,n}[t]$的计算如下，
+相邻时期持有单位资本的名义总回报率$r_{PK,n}[t]$的计算如下，
 
 $$
 \begin{align*}
-r_{PC,n}[t] & := r_{PC,PI}[t] + p_{PF}[t] \; 
+r_{PK,n}[t] & := r_{PK,PI}[t] + p_{PF}[t] \; 
 \frac
 {
-	\partial K_{PC}[t+1]
+	\partial K_{PK}[t+1]
 }{
-	\partial K_{PC}[t]
+	\partial K_{PK}[t]
 }
 \\
-& = r_{PC,PI}[t] + p_{PF}[t] \left((1-\delta) - F_{PC} \left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]   \; \frac{I_{PC}[t]}{K_{PC}[t]}+F_{PC}\left[\frac{I_{PC}[t]}{K_{PC}[t]}\right]\right)
+& = r_{PK,PI}[t] + p_{PF}[t] \left((1-\delta) - F_{PK} \left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]   \; \frac{I_{PK}[t]}{K_{PK}[t]}+F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]\right)
 \end{align*}
 $$
 
 - [ ] TODO：如何求得均衡条件？
 
 
-在均衡条件下，相邻时期持有单位资本的实际总回报率$r_{PC,e}[t]$将与银行向资本品生产商贷款获得的实际总回报相等 :
+在均衡条件下，相邻时期持有单位资本的实际总回报率$r_{PK,e}[t]$将与银行向资本品生产商贷款获得的实际总回报相等 :
 
 $$
-\frac{r_{PC,n}[t+1]}{p_{PC}[t]} \equiv \frac{r_{PC,e}[t+1]}{\pi[t+1]}
+\frac{r_{PK,n}[t+1]}{p_{PK}[t]} \equiv \frac{r_{PK,e}[t+1]}{\pi[t+1]}
 $$
-
 
 
 

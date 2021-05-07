@@ -80,7 +80,31 @@ $w _{ t }=\alpha \varepsilon_{ t }\left( S _{ t -1}^{ c }+ S _{ t -1}^{ s }\righ
 
 #### 银行部门
 
-假设：
+单期利润：
+$$
+\begin{aligned}
+\pi_{t}^{c}=& D_{t}+\left(1+r_{t}^{k}-\delta\right) S_{t-1}^{c}+\left(1-\Gamma_{t}\right)\left(1+r_{t-1}^{a}\right) Z G_{t-1}-\left(1+e_{t}\right) S_{t}^{c}-Z G_{t}-\left(1+r_{t-1}^{d}\right) D_{t-1} \\
+&-C\left(x_{t}\right)-p\left(\frac{Z G_{t}}{S_{t}^{c}}\right)
+\end{aligned}
+$$
+其中, $\pi_{t}^{\text {c }}$ 是传统银行部门获得的利润; $r _{ t }^{ k }$ 为银行部门发放贷款获得利息收入; $r _{ t -1}^{\alpha}$ 为购买资管产品获得的利息收入; $r _{ t -1}^{ d }$ 为存款利息; $e _{ t }$ 是单位贷款的审查成本, 即对借款者进行 审查篮选所花费的成本, 直接决定贷款利率的高低。这一成本冲击符合一阶自回归过程 $e _{ t }$ $=\rho_{ e } e _{ t -1}+\sigma_{ e } \mu_{ e , t }$, 其中 $\left|\rho_{ e }\right|<1, \sigma_{ e }>0, u _{ e , t } \sim i . i . d N (0.1)$ 。影子银行的资管违约冲击遵循
+一阶自回归过程, 即 $\Gamma_{ t }=\rho_{\Gamma} \Gamma_{ t -1}+\varepsilon_{\Gamma, t } \circ$ 违约冲击包含了所有来自于影子银行的扰动,但与
+经济结构没有直接联系。
+
+
+
+
+
+传统商业银行追求跨期利润最大化, 其跨期贴现因子为家庭的随机贴现因子 $\Lambda_{ t , t +1}=$ $\beta c_{t} / c_{t+1}$。商业银行会选择存款、贷款和购买资管来实现跨期利润最大化。即它们的一阶 条件为:
+$$
+\left\{\begin{array}{l}
+1+C_{t}^{\prime}=E_{t} \Lambda_{t, t+1}\left(1+r_{t}^{d}\right) \\
+\left(1-e_{t}\right)-\left(1-\eta_{t}\right) C_{t}^{\prime}-p^{\prime}_{t} \frac{Z G_{t}}{\left(S_{t}^{c}\right)^{2}}=E_{t} \Lambda_{t, t+1}\left(1+r_{t+1}^{k}-\delta\right) \\
+1+C_{t}^{\prime}+p_{t}^{\prime} \frac{1}{S_{t}^{c}}=E_{t} \Lambda_{t, t+1}\left(1-\Gamma_{t+1}\right)\left(1+r_{t}^{\alpha}\right)
+\end{array}\right.
+$$
+式中, $\Lambda_{ t , t +1}=\beta c _{ t } / c _{ t +1}$ 表示 $t$ 至 $t +1$ 期间家庭部门的随机折现因子,其中各个变量
+稳态值用 $\overline{ z }$ 来表示, $\hat{ z }= z _{ t }-\overline{ z }$ 。
 
 
 
@@ -88,6 +112,20 @@ $w _{ t }=\alpha \varepsilon_{ t }\left( S _{ t -1}^{ c }+ S _{ t -1}^{ s }\righ
 
 
 
+两期部门。影子银行在第一期进入市场, 通过向银行发行资管产品 $ZG _{ t }$ 融资, 单位发行成本 为 $a$, 并向企业发放贷款 $S _{ t }^{ c }=(1-\alpha) ZG _{ t }, 0< a <1 ;$ 在第二期获取收益离开市场。其目标函数是第二期收益最大化, 在第二期 $t +1$ 时刻的利润函数为：
+$$
+\pi_{t+1}^{ s }=\left(1+ r _{ t +1}^{ s }-\delta\right) S _{ t }^{ s }-\left(1+ r _{ t }^{ a }\right) ZG _{ t }
+$$
+
+
+约束条件：
+$$
+S _{ t }^{ c }=(1-\alpha) ZG _{ t }
+$$
+一阶条件：
+$$
+(1-\alpha) E _{ t }\left(1+ r _{ t +1}^{ s }\right)=1+ r _{ t }^{\alpha}
+$$
 
 
 
