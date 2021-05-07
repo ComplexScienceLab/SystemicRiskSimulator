@@ -941,15 +941,15 @@ $$
 
 设定为：
 $$
-F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] := \frac{I_{PI}[t]}{K_{PI}[t]} - \frac{\eta_{PK}}{2}\left(\frac{I_{PI}[t]}{K_{PI}[t]}-\delta\right)^{2}
+F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] := \frac{I_{PI}[t]}{K_{PI}[t]} - \frac{\eta_{PK}}{2}\left(\frac{I_{PI}[t]}{K_{PI}[t]}-\delta_{PK}\right)^{2}
 $$
 其中，
 $\eta_{PK}$：资本调整成本参数；
-$\delta$：资本品折旧率；
+$\delta_{PK}$：资本品折旧率；
 
 则对应的时变的资本累积方程为
 $$
-K_{PK}[t+1]=(1-\delta) K_{PK}[t]+F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right] K_{PK}[t]
+K_{PK}[t+1]=(1-\delta_{PK}) K_{PK}[t]+F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right] K_{PK}[t]
 $$
 
 
@@ -981,7 +981,7 @@ r_{PK,n}[t] & := r_{PK,PI}[t] + p_{PF}[t] \;
 	\partial \; K_{PK}[t]
 }
 \\
-& = r_{PK,PI}[t] + p_{PF}[t] \left((1-\delta) - F_{PK} \left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]   \; \frac{I_{PK}[t]}{K_{PK}[t]}+F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]\right)
+& = r_{PK,PI}[t] + p_{PF}[t] \left((1-\delta_{PK}) - F_{PK} \left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]   \; \frac{I_{PK}[t]}{K_{PK}[t]}+F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]\right)
 \end{align*}
 $$
 
@@ -1113,10 +1113,10 @@ $La_{PE}[t]$：房地产商的劳动力资源要素，在时期$t$，体现为�
 房地产开发商的投资 $I_{PE}[t]$ 与资本存量 $K_{PE}[t]$ 之间存在如下关系:
 
 $$
-K_{PE}[t+1]=I_{PE}[t]+(1-\delta) K_{PE}[t]
+K_{PE}[t+1]=I_{PE}[t]+(1-\delta_{PE}) K_{PE}[t]
 $$
 
-该式表示的是房地产开发商资本存量的积累情况, $\delta$ 表示资本折旧率。
+该式表示的是房地产开发商资本存量的积累情况, $\delta_{PE}$ 表示资本折旧率。
 
 > 本文借鉴
 >
@@ -1246,12 +1246,21 @@ $\Box_{BB}$
 
 对于单个商业银行$i$，有如下行为：
 
+资本更新：
+
 - 商业银行$i$从常规渠道获得资本，其融资来源：
 
   - 自有资本$K_{BB}[i,t]$；
-  - 投资和储蓄型居民部门$\mathbb{HI}$存款资金$D_{HI}[i,t]$至商业银行$i$；
-  - 提供资金$D_{HI}[i,t-1] \; (1+r_{BB,D}) / \pi[t]$以供投资和储蓄型居民部门$\mathbb{HI}$提取上一期存款所需；
-  - 银行部门同业拆借。暨商业银行$i$向商业银行$j$拆借资金$B_{BI}[i,j,t]$于时期$t$；
+
+$$
+K_{BB}[i,t] = (1-\delta_{BB}) \; K_{BB}[i,t] + 
+$$
+
+
+
+- 投资和储蓄型居民部门$\mathbb{HI}$存款资金$D_{HI}[i,t]$至商业银行$i$；
+- 提供资金$D_{HI}[i,t-1] \; (1+r_{BB,D}) / \pi[t]$以供投资和储蓄型居民部门$\mathbb{HI}$提取上一期存款所需；
+- 银行部门同业拆借。暨商业银行$i$向商业银行$j$拆借资金$B_{BI}[i,j,t]$于时期$t$；
 - 提供贷款服务：
 
   - 商业银行$i$提供贷款资本贷给消费品生产部门（非金融机构）：
@@ -1303,7 +1312,7 @@ B_{BB,PK}[i,t],ABS_{BS}[j,i,t]
 \begin{gather}
 D_{HI}[i,t]
 -D_{HI}[i,t-1] \; \frac{(1+r_{BB,D})}{\pi[t]}
-+B_{BB,PK}[i,t-1] \; \frac{(1+r_{BB,PK}[t]-\delta)}{\pi[t]}
++B_{BB,PK}[i,t-1] \; \frac{(1+r_{BB,PK}[t]-\delta_{PK})}{\pi[t]}
 -B_{BB,PK}[i,t] \; (1+c_{BB,P}[t])
 \\
 -\mathrm{ABS}_{BS}[j,i,t]
@@ -1319,7 +1328,7 @@ $$
 $D_{HI}[i,t]$：居民部门存款于商业银行$i$的资金；
 $D_{HI}[i,t-1] \; (1+r_{BB,D}) / \pi[t]$：提供资金以供投资和储蓄型居民部门$\mathbb{HI}$提取上一期存款所需；
 $\mathcal{P}_{def,BS}[t]$：影子银行当期违约概率；
-$B_{BB,PK}[i,t-1] \; (1+r_{BB,PK}[t]-\delta) / \pi[t]$：收回上一期贷给消费品生产商部门之资本品生产商部门$\mathbb{PK}$之贷款所获得的收入；
+$B_{BB,PK}[i,t-1] \; (1+r_{BB,PK}[t]-\delta_{PK}) / \pi[t]$：收回上一期贷给消费品生产商部门之资本品生产商部门$\mathbb{PK}$之贷款所获得的收入；
 $B_{BB,PK}[i,t] \; (1+c_{BB,P}[t])$：商业银行$i$贷款给生产部门之消费品生产商的资本品生产商，在当期，与此同时付出审查成本率$c_{BB,P}[t]$；
 $\mathrm{ABS}_{BS}[j,i,t-1]$：商业银行$i$购买影子银行$j$提供的资管产品，在上一期；
 $(1-\mathcal{P}_{def,BS}[t]) \; \mathrm{ABS}_{BS}[j,i,t-1] \; (1+r_{BS,BB}[t-1]) / \pi[t]$：商业银行$i$之收益之于其赎回购买资管产品之于影子银行$j$提供的，于上一期。其中$r_{BS,BB}[t-1]$表示收益率，$\mathcal{P}_{def,BS}[t]$表示概率之于影子银行违约无法提供收益，在当期的时候；
@@ -1530,7 +1539,7 @@ $\Box_{PK}$
 
   - 调控方式：
 
-- 控制商业银行的存款准备金率$\delta_{DR}$
+- 控制商业银行的存款准备金率$\theta_{DR}$
 
 - 控制影子银行的资本充足率要求；
 
