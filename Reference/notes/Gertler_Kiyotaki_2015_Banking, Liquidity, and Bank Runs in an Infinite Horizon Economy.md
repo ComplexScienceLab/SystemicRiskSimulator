@@ -95,8 +95,7 @@
       K_{t}^{b} \text { capital }
       \end{array}\right.
       $$
-      
-
+  
 - 商品：
 
   - 耐用商品（资本）$K_t$，分别持有于银行$K_t^b$和家庭$K_t^h$，满足约束$K_{t}^{b}+K_{t}^{h}=1$。
@@ -109,7 +108,6 @@
   K_{t}^{b} \text { capital }
   \end{array}\right.
   $$
-  
 
 ​	
 
@@ -172,7 +170,6 @@ $$
   $$
   R_{t+1}^{h}=\frac{Z_{t+1}+Q_{t+1}}{Q_{t}+f^{\prime}\left(K_{t}^{h}\right)}
   $$
-  
 
 #### 模型的银行部门
 
@@ -220,6 +217,7 @@ n_{t}=\left(Z_{t}+Q_{t}\right) k_{t-1}^{b}-R_{t} d_{t-1}
 \tag{11}
 $$
 - 银行家融资约束：
+
 $$
 Q_{t} k_{t}^{b}=d_{t}+n_{t}
 \tag{14}

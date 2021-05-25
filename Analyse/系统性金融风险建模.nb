@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     13278,        406]
-NotebookOptionsPosition[     10526,        349]
-NotebookOutlinePosition[     11276,        373]
-CellTagsIndexPosition[     11233,        370]
+NotebookDataLength[     14445,        436]
+NotebookOptionsPosition[     11274,        373]
+NotebookOutlinePosition[     12026,        397]
+CellTagsIndexPosition[     11983,        394]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -342,14 +342,38 @@ Cell[BoxData[
     SuperscriptBox["\[Gamma]", "2"]}]]}]], "Output",
  CellChangeTimes->{3.818043949986109*^9},
  CellLabel->"Out[4]=",ExpressionUUID->"8607f266-c674-4afb-9554-c41a6e2045b5"]
-}, Open  ]]
+}, Open  ]],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.8294533713285713`*^9, 
+  3.8294533723565083`*^9}},ExpressionUUID->"e427f0a0-d9d5-44d4-836c-\
+5cc3ebbb7b4d"]
+}, Open  ]],
+
+Cell["\:5546\:4e1a\:94f6\:884c\:90e8\:95e8", "Subsection",
+ CellChangeTimes->{{3.829453390920532*^9, 
+  3.829453395027501*^9}},ExpressionUUID->"e41b8b45-c263-4f95-b41e-\
+ee9415c93e20"],
+
+Cell[CellGroupData[{
+
+Cell["", "Subsection",
+ CellChangeTimes->{{3.829453390920532*^9, 
+  3.8294533952218657`*^9}},ExpressionUUID->"68a5b142-5794-423e-be16-\
+724fe782a777"],
+
+Cell["\:6700\:4f18\:5316\:76ee\:6807\:ff1a\:6700\:5927\:5316\:8de8\:671f\:5229\
+\:6da6", "Text",
+ CellChangeTimes->{{3.829453390920532*^9, 
+  3.829453425935498*^9}},ExpressionUUID->"b4f4b0ec-2ab0-4567-aa9a-\
+6c99a6232204"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowToolbars->"EditBar",
 WindowSize->{964, 1023},
-WindowMargins->{{Automatic, 771}, {72, Automatic}},
+WindowMargins->{{Automatic, 309}, {-152, Automatic}},
 DockedCells->FEPrivate`FrontEndResource[
  "NotebookTemplatingExpressions", "AuthoringDockedCell"],
 TaggingRules->{"NotebookTemplateVersion" -> 1., "NotebookTemplate" -> True},
@@ -404,7 +428,13 @@ Cell[8312, 272, 573, 16, 64, "Output",ExpressionUUID->"5230fdf3-ba18-4ff7-8d39-8
 Cell[CellGroupData[{
 Cell[8922, 293, 295, 6, 41, "Input",ExpressionUUID->"31626e5a-5191-426e-a554-033364256d55"],
 Cell[9220, 301, 1254, 42, 75, "Output",ExpressionUUID->"8607f266-c674-4afb-9554-c41a6e2045b5"]
-}, Open  ]]
+}, Open  ]],
+Cell[10489, 346, 146, 3, 32, "Text",ExpressionUUID->"e427f0a0-d9d5-44d4-836c-5cc3ebbb7b4d"]
+}, Open  ]],
+Cell[10650, 352, 184, 3, 50, "Subsection",ExpressionUUID->"e41b8b45-c263-4f95-b41e-ee9415c93e20"],
+Cell[CellGroupData[{
+Cell[10859, 359, 150, 3, 44, "Subsection",ExpressionUUID->"68a5b142-5794-423e-be16-724fe782a777"],
+Cell[11012, 364, 222, 4, 33, "Text",ExpressionUUID->"b4f4b0ec-2ab0-4567-aa9a-6c99a6232204"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
