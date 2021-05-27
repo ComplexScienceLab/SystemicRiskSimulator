@@ -1214,6 +1214,7 @@ $\Box_{BB}$
   - 投资和储蓄型居民部门$\mathbb{HI}$整体存款资金$D_{HI}[\cdot,i,t]$至商业银行$i$；
   - 提供资金$D_{HI}[\cdot,i,t-1] \; (1+r_{BB,D}) / \pi[t]$以供投资和储蓄型居民部门$\mathbb{HI}$提取上一期存款所需；
   - 银行部门同业拆借。暨商业银行$i$向商业银行$j$拆借资金$B_{BI}[i,j,t]$于时期$t$；
+  
 - 提供贷款服务：
 
   - 商业银行$i$提供贷款资本贷给消费品生产部门（非金融机构）：
@@ -1228,13 +1229,23 @@ $\Box_{BB}$
     - 商业银行$i$提供贷款$B_{BB,H}[i,t]$给借款型居民部门之居民$\mathbb{HB}$于当期$t$，以利率$r_{BB,H}[t]$；
 
     - 商业银行$i$收回上一期贷给借款型居民部门$\mathbb{HB}$之贷款$B_{BB,HB}[i,t-1] \; \left(1 + r_{b,HB}[t]\right) / \pi[t]$，从借款型居民部门之居民$\mathbb{HB}_{j}$；
+  
 - 开展影子银行业务：
 
   - 商业银行$i$购买影子银行$j$提供的资管产品$\mathrm{ABS}_{BS}[j,i,t-1]$；
   - 商业银行$i$赎回影子银行$j$提供的资管产品，以获得收益$(1+r_{BS,BB}[t-1]) \; \mathrm{ABS}_{BS}[j,i,t-1]$；
+  
 - 股利分红$Dv_{BB}[t]$；
-- 面临监管要求：
-  - 不满足资本充足率要求惩罚$Pun_{CAR}[i,t]$
+
+- 现有面临监管要求：
+  
+  - 贷存比监管$\theta_{LDR}$：
+    
+    不满足规定贷存比要求对应的惩罚函数$Pun_{LDR}[i,t,gap_[i,t]]$；
+    
+  - 资本充足率监管$\theta_{CAR}$：
+  
+    不满足规定资本充足率要求对应的惩罚函数$Pun_{CAR}[i,t]$；
 
 
 
@@ -1250,10 +1261,10 @@ $\Box_{BB}$
 
 - 商业银行$i$从常规渠道获得资本，其融资来源：
 
-  - 自有资本$K_{BB}[i,t]$；
+  - 自有资本$K_{BB}[i,t]$更新：
 
 $$
-K_{BB}[i,t] = (1-\delta_{BB}) \; K_{BB}[i,t] + 
+K_{BB}[i,t] = (1-\delta_{BB}) \; K_{BB}[i,t] +
 $$
 
 
@@ -1280,8 +1291,15 @@ $$
   - 商业银行$i$购买影子银行$j$提供的资管产品$\mathrm{ABS}_{BS}[j,i,t-1]$；
   - 商业银行$i$赎回影子银行$j$提供的资管产品，以获得收益$(1+r_{BS,BB}[t-1]) \; \mathrm{ABS}_{BS}[j,i,t-1]$；
 - 股利分红$Dv_{BB}[t]$；
-- 面临监管要求：
-  - 不满足资本充足率要求惩罚$Pun_{CAR}[i,t]$
+- 现有面临监管要求：
+
+  - 贷存比监管$\theta_{LDR}$：
+
+    不满足规定贷存比要求对应的惩罚函数$Pun_{LDR}[i,t,gap_[i,t]]$；
+
+  - 资本充足率监管$\theta_{CAR}$：
+
+    不满足规定资本充足率要求对应的惩罚函数$Pun_{CAR}[i,t]$；
 
 
 
@@ -1297,7 +1315,16 @@ $$
 >
 > 的目标最优化函数。
 
-对于单个商业银行$i$，其最优化目标是最大化跨期利润$\mathrm{Profit}_{BB}[i,t]$：
+对于单个商业银行$i$，其最优化目标有几个：
+
+- [ ] 最大化商业信誉：
+  $$
+  \mathrm{Reputation}_{BB}[i,t]:=
+  \max
+  $$
+
+2. 最大化跨期利润$\mathrm{Profit}_{BB}[i,t]$：
+
 $$
 \mathrm{Profit}_{BB}[i,t]
 :=
@@ -1318,12 +1345,12 @@ D_{HI}[i,t]
 \\
 -\mathrm{ABS}_{BS}[j,i,t]
 + (1-\mathcal{P}_{def,BS}[t]) \; \mathrm{ABS}_{BS}[j,i,t-1] \; \frac{(1+r_{BS,BB}[t-1])}{\pi[t]}
-\\
--Pun_{CAR}[i,t,gap[i,t]]
--{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{B_{BB,BK}[t]}\right]
-\end{gather}
-\right)
-\right]
+  \\
+  -Pun_{CAR}[i,t,gap[i,t]]
+  -{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{B_{BB,BK}[t]}\right]
+  \end{gather}
+  \right)
+  \right]
 $$
 
 其中，
@@ -1334,7 +1361,10 @@ $B_{BB,PK}[i,t-1] \; (1+r_{BB,PK}[t]-\delta_{PK}) / \pi[t]$：收回上一期贷
 $B_{BB,PK}[i,t] \; (1+c_{BB,P}[t])$：商业银行$i$贷款给生产部门之消费品生产商的资本品生产商，在当期，与此同时付出审查成本率$c_{BB,P}[t]$；
 $\mathrm{ABS}_{BS}[j,i,t-1]$：商业银行$i$购买影子银行$j$提供的资管产品，在上一期；
 $(1-\mathcal{P}_{def,BS}[t]) \; \mathrm{ABS}_{BS}[j,i,t-1] \; (1+r_{BS,BB}[t-1]) / \pi[t]$：商业银行$i$之收益之于其赎回购买资管产品之于影子银行$j$提供的，于上一期。其中$r_{BS,BB}[t-1]$表示收益率，$\mathcal{P}_{def,BS}[t]$表示概率之于影子银行违约无法提供收益，在当期的时候；
-$Pun_{CAR}[i,t,gap[i,t]]$：商业银行$i$面临资本充足率要求对应的惩罚函数，于时期$t$；
+$Pun_{CAR}[i,t,gap[i,t]]$：商业银行$i$面临不满足规定的资本充足率要求对应的惩罚函数，于时期$t$；
+
+$Pun_{LDR}[i,t,gap_[i,t]]$：商业银行$i$面临不满足规定的资本充足率要求对应的惩罚函数，于时期$t$；
+
 ${Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{B_{BB,BK}[t]}\right]$：同期信贷资产调整成本函数；
 TODO同业拆借；
 
@@ -1381,12 +1411,12 @@ B_{BB,PE}[i,t] + B_{BB,PK}[i,t] + B_{BB,H}[i,t] = D_{HI}[\cdot,i,t] + D_{HI}[i,t
 $$
 
 
-贷存比约束：
+监管之贷存比约束：
 $$
 
 $$
 
-
+监管之资本充足率约束：
 
 > 参考：
 >
@@ -1537,21 +1567,35 @@ $\Box_{PK}$
 
 ##### 行为：
 
-中央银行的行为：
 
-- 货币政策
+
+政府的行为：
+
+- 财政政策；
+- 税收；
+- 居民福利转移；
+
+中央银行和监管当局的行为：
+
+- 货币政策：
   - 相关的货币政策工具：
-    - 
+    - Taylor Rules，通过调控利率以调控投资。
+
+- 公开市场操作：
 
 - 控制商业银行的资本充足率要求；
 
   - 调控方式：
 
-- 控制商业银行的存款准备金率$\theta_{DR}$
+- 控制商业银行的存款准备金率$\theta_{DR}$；
+
+- 贷款价值比（LTVs）；
 
 - 控制影子银行的资本充足率要求；
 
 - 存贷比要求；
+
+- 
 
   
 
@@ -1563,9 +1607,15 @@ $\Box_{PK}$
 
 定义传统资本充足率：
 $$
-\mathrm{CAR}[t]:=
+{CAR}[t]:=
 $$
 
+
+
+定义存贷比要求：
+$$
+{LDR}_{}[t]:=
+$$
 
 
 > 资本充足率监管惩罚函数，借鉴 GNSS模型
@@ -1578,7 +1628,9 @@ $$
 Pun_{CAR}[i,t,gap_[i,t]] := \frac{}{2}
 $$
 
-构建传统货币政策调控方式：
+
+
+构建传统货币政策调控方式Talor Rule：
 $$
 \ln \left(\frac{R_{t}}{R}\right)=\kappa_{r} \ln \left(\frac{R_{t-1}}{R}\right)+\left(1-\kappa_{r}\right)\left[\kappa_{y} \ln \left(\frac{Y_{t}}{Y}\right)+\kappa_{\pi} \ln \left(\frac{\pi_{t}}{\pi}\right)\right]+\varepsilon_{t}^{r}
 $$
