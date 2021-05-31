@@ -16,7 +16,7 @@
 >
 > 方意, 2016. 宏观审慎政策有效性研究[J]. 世界经济, 39(08): 25–49.
 >
-> 
+> Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.
 >
 > 
 
@@ -53,17 +53,281 @@
 
 
 
+##### 定义：
+
+
+
+定义银行存贷比：
+$$
+{LDR}[t] := \frac{L_{BB}[t]}{\tilde{D}_{BB,H}[t]}
+$$
+定义传统资本充足率：
+$$
+{CAR}[t]:= \frac{E_{BB}[t]}{\sum_{k} \left( \omega_{BB,k}[t] \; A_{BB,k}[t] \right) }
+$$
+
+其中，$k \in \{PK,PE,BI\}$。这里$PK$表示来自资本品生产商，$PE$表示来自房地产商，$BI$表示来自银行同业拆借；
+
+
+
 ##### 行为：
 
 
 
 - 银行批发部门：
+
+  - 决定银行资产$A_{BB}[t]$；
+
+  - 银行资本$K_{BB}[t]$主要通过留存收益来补充；
+
+  - 决定银行存款规模$\tilde{D}_{BB,H}[t]$；
+
+  - 接受宏观审慎政策当局的监管要求：
+
+    - 贷存比要求：
+
+    $$
+    \theta_{LDR}[t] := {L_{BB}[i,t]}/{\tilde{D}_{BB,H}[t]}
+    $$
+
+    - 资本充足率要求：
+      当银行的风险加权资产比例${CAR}[t]$偏离监管机构的资本充足率要求$v_t$时，银行将付出监管成本
+      $$
+      (1 / 2) * \kappa_{K b}\left(K_{BB}[t] / \varpi_{t} L_{t}-v_{t}\right)^{2} K_{BB}[t]
+      $$
+
+      其中，
+      $\kappa_{Kb}$表示监管成本程度的系数；
+
+      风险权重$\varpi_t$：
+      $$
+      \varpi_{t}=(1-\rho) \bar{\varpi}-(1-\rho) \chi_{1}\left(Y_{t} / Y_{t-4}-1\right)+\rho \varpi_{t-1}
+      $$
+      其中，上划线表示稳态值；$\chi_t$表示风险权重根据产出增长率调整的系数。
+
+      > 上述借鉴GNSS模型。
+
 - 银行存款部门：
+
 - 银行贷款部门：
 
 
 
-对于传统商业银行部门，包括两类资产：传统贷款、从影子银行购买的资管产品。
+~~？？？对于传统商业银行部门，包括两类资产：传统贷款、从影子银行购买的资管产品？？？~~
 
 
 
+#### 模型
+
+
+
+##### 批发银行分支
+
+> 借鉴
+>
+> 方意, 2016. 宏观审慎政策有效性研究[J]. 世界经济, 39(08): 25–49.
+
+
+
+行为：
+
+- 计划银行资产规模$A_{BB}[t]$；
+
+- 银行资本主要通过留存收益来补充 。 考虑到中国股票市场较少分红的现实 ， 假设银行的利润 ${Profit}_{BB}[t-1]$的比例$\theta_{BB,s}$转化为资本补充银行资本，通过留存收益补充。其余比例部分$(1-\theta_{BB,s})$
+  $$
+  K_{BB}[t]=
+  \left(1-\delta_{BB}\right) K_{BB}[t-1] + \theta_{BB,s} \; {Profit}_{BB}[t-1]
+  $$
+  ~~其中，$\varepsilon^k_t$表示银行资本的金融冲击；~~
+  
+- 银行计划当期存款规模需求$\tilde{D}_{BB,H}[t]$，从居民部门获得；
+
+- 接受宏观审慎政策当局的监管要求：
+
+  - 贷存比要求$\theta_{LDR}[t]$；
+
+  $$
+  \theta_{LDR}[t] := {L_{BB}[i,t]}/{\tilde{D}_{BB,H}[t]}
+  $$
+
+  - 资本充足率要求：
+    当银行的风险加权资产比例$\left(K_{BB}[t] / \varpi_{t} L_{t}\right)$偏离监管机构的资本充足率要求$v_t$时，银行将付出监管成本
+    $$
+    (1 / 2) * \kappa_{K b}\left(K_{BB}[t] / \varpi_{t} L_{t}-v_{t}\right)^{2} K_{BB}[t]
+    $$
+
+    其中，
+    $\kappa_{Kb}$表示监管成本程度的系数；
+
+    风险权重$\varpi_t$：
+    $$
+    \varpi_{t}=(1-\rho) \bar{\varpi}-(1-\rho) \chi_{1}\left(Y_{t} / Y_{t-4}-1\right)+\rho \varpi_{t-1}
+    $$
+    其中，上划线表示稳态值；$\chi_t$表示风险权重根据产出增长率调整的系数。
+
+    > 上述借鉴GNSS模型。
+
+银行部门之批发银行分支的最优化目标：
+$$
+\max _{\left\{A_{t}, \tilde{D}_{BB,H}[t]\right\}} E _{0} \sum_{t=0}^{\infty} \Lambda_{0, t}\left(\left(1+R_{t}^{L}\right) \eta_{t} \tilde{D}_{BB,H}[t]+\left(1+r_{t}\right)\left(A_{t}-\eta_{t} \tilde{D}_{BB,H}[t]\right)-A_{t+1}+\tilde{D}_{BB,H}[t+1]-\left(1+R_{t}^{D}\right) \tilde{D}_{BB,H}[t]+\Delta K_{BB}[t+1]-(1 / 2) *{\kappa_{K b}}\left(K_{BB}[t] / \varpi_{t} L_{t}-v_{t}\right)^{2} K_{BB}[t]\right)
+$$
+其中，
+$R_{t}^{L}$ 为批发银行贷款利率, $r_{t}$ 为无风险债券利率（政策利率）。借鉴GNSS模型, 假设批发银行存款利率 $R_{t}^{D}$ 等于政策利率 $r_{t}$。
+
+条件：
+
+满足会计恒等式
+$$
+B _{t}+ L _{t}= D _{t}+ K _{t}^{b}
+$$
+其中，
+$B_t$表示无风险国债，其包含于批发银行分支的资产端$A_{BB}[t]$；
+$L_{BB}[i,t]$表示贷款之于零售贷款银行分支；
+$\tilde{D}_{BB,H}[t]$表示存款之于零售存款银行分支；
+$K^b_t$表示资本金；
+
+
+
+由上述公式得到：
+$$
+R_{t}^{L}=r_{t}-\kappa_{K b}\left(K_{BB}[t] / \varpi_{t} L_{t}-v_{t}\right)\left(K_{BB}[t] / L_{t}\right) / \varpi_{t}
+$$
+
+
+
+
+
+
+##### 批发银行分支(Gerali等, 2010)
+
+假设：
+
+- 股利政策外生不变；
+
+行为：
+
+- 累计资本：
+  $$
+  K_{BB}[t]=\left(1-\delta_{BB}\right) K_{BB}[t-1]+\omega^{b} j_{t-1}^{b}
+  $$
+  其中，$j^b_t$表示每家银行的三个分支的总收益；$(1-\omega^b)$表示银行的股利政策；$\delta^b$表示银行资本管理费用。
+
+最优化问题：
+$$
+\tag{5}
+\begin{align}
+& \max _{\left\{B_{t}, \tilde{D}_{BB,H}[t]\right\}} E_{0} \sum_{t=0}^{\infty} \Lambda_{0, t}^{P}\left[\left(1+R_{t}^{b}\right) B_{t}-B_{t+1}+\tilde{D}_{BB,H}[t+1]-\left(1+R_{t}^{d}\right) \tilde{D}_{BB,H}[t]+\Delta K_{BB}[t+1]-\frac{\kappa_{K b}}{2}\left(\frac{K_{BB}[t]}{B_{t}}-\nu^{b}\right)^{2} K_{BB}[t]\right] \\
+\text { s.t. } & \quad B_{t}=\tilde{D}_{BB,H}[t]+K_{BB}[t]
+\end{align}
+$$
+其中，
+$R^b_t$：净贷款利率；
+$R^d_t$：净存款利率；
+$\left(1+R_{t}^{b}\right) B_{t}$：本期贷出贷款$B_{t}$以利率$\left(1+R_{t}^{b}\right)$给贷款银行分支（资产增加）；
+$-B_{t+1}$：下一期收回贷款从贷款银行分支（资产减少）；
+$-\left(1+R_{t}^{d}\right) \tilde{D}_{BB,H}[t]$：本期获得存款$\tilde{D}_{BB,H}[t]$以利率$\left(1+R_{t}^{d}\right)$从存款银行分支（负债增加）；
+$\tilde{D}_{BB,H}[t+1]$：下一期偿还存款给存款银行分支（负债减少）；
+$\Delta K_{BB}[t+1]$：银行资本的差额；
+$-\frac{\kappa_{K b}}{2}\left(\frac{K_{BB}[t]}{B_{t}}-\nu^{b}\right)^{2} K_{BB}[t]$：；
+
+
+
+
+
+求解得到外贷利率：
+$$
+R_{t}^{b}=r_{t}-\kappa_{K b}\left(\frac{K_{BB}[t]}{B_{t}}-\nu^{b}\right)\left(\frac{K_{BB}[t]}{B_{t}}\right)^{2}
+$$
+
+
+贷款银行分支的外贷利差：
+$$
+S_{t}^{W} \equiv R_{t}^{b}-r_{t}=-\kappa_{K b}\left(\frac{K_{BB}[t]}{B_{t}}-\nu^{b}\right)\left(\frac{K_{BB}[t]}{B_{t}}\right)^{2}
+$$
+
+
+
+
+
+
+##### 贷款银行分支
+
+
+
+行为：
+
+- 获得贷款，从批发银行分支，以批发价$R^b_t$；
+- 将批发贷款转售给家庭部门和企业部门，然后收回贷款于下一期时；
+
+
+
+最优化问题：
+$$
+\tag{6}
+\begin{align}
+& \max _{\left\{r_{t}^{b H}(j), r_{t}^{b E}(j)\right\}} E_{0} \sum_{t=0}^{\infty} \Lambda_{0, t}^{P}\left[r_{t}^{b H}(j) b_{t}^{I}(j)+r_{t}^{b E}(j) b_{t}^{E}(j)-R_{t}^{b} B_{t}(j)
+-\frac{\kappa_{b H}}{2}\left(\frac{r_{t}^{b H}(j)}{r_{t-1}^{b H}(j)}-1\right)^{2} r_{t}^{b H} b_{t}^{I}-\frac{\kappa_{b E}}{2}\left(\frac{r_{t}^{b E}(j)}{r_{t-1}^{b E}(j)}-1\right)^{2} r_{t}^{b E} b_{t}^{E}\right]
+\\
+\mathrm{s.t.} \quad & b_{t}^{I}(j)=\left(\frac{r_{t}^{b H}(j)}{r_{t}^{b H}}\right)^{-\varepsilon_{t}^{b H}} b_{t}^{I}
+\\
+& b_{t}^{E}(j)=\left(\frac{r_{t}^{b E}(j)}{r_{t}^{b E}}\right)^{-\varepsilon_{t}^{b E}} b_{t}^{E}
+\\
+& B_{t}(j)=b_{t}(j)=b_{t}^{I}(j)+b_{t}^{E}(j)
+
+\end{align}
+$$
+其中，
+$r_{t}^{b H}(j) b_{t}^{I}(j)$：贷款银行分支$j$贷款$b_{t}^{I}$给非耐心的家庭部门以利率$r^{bH}_t$（资产）；
+$r_{t}^{b E}(j) b_{t}^{E}(j)$：贷款银行分支$j$贷款$b_{t}^{E}$给企业部门$r_{t}^{b E}$（资产）；
+$-R_{t}^{b} B_{t}(j)$：返还给批发银行分支$j$贷款$B_{t}(j)$以利率$R_{t}^{b} $；
+$-\frac{\kappa_{b H}}{2}\left(\frac{r_{t}^{b H}(j)}{r_{t-1}^{b H}(j)}-1\right)^{2} r_{t}^{b H} b_{t}^{I}$：成本之改变利率$r_{t}^{b H}$当贷款给家庭部门时。$\kappa_{b H}$表示相关的利率调整摩擦系数。；
+
+$-\frac{\kappa_{b E}}{2}\left(\frac{r_{t}^{b E}(j)}{r_{t-1}^{b E}(j)}-1\right)^{2} r_{t}^{b E} b_{t}^{E}$：成本之改变利率$r_{t}^{b E}$当贷款给企业部门时。$\kappa_{b E}$表示相关的利率调整摩擦系数。；
+
+
+
+求解：
+
+假设贷款利率之于家庭部门和企业部门$r^{bs}_t$。
+
+求解通过构造拉格朗日函数可得均衡
+$$
+1-\varepsilon_{t}^{b s}+\varepsilon_{t}^{b s} \frac{R_{t}^{b}}{r_{t}^{b s}}-\kappa_{b s}\left(\frac{r_{t}^{b s}}{r_{t-1}^{b s}}-1\right) \frac{r_{t}^{b s}}{r_{t-1}^{b s}}+\beta_{P} E_{t}\left\{\frac{\lambda_{t+1}^{P}}{\lambda_{t}^{P}} \kappa_{b s}\left(\frac{r_{t+1}^{b s}}{r_{t}^{b s}}-1\right)\left(\frac{r_{t+1}^{b s}}{r_{t}^{b s}}\right)^{2} \frac{b_{t+1}^{s}}{b_{t}^{s}}\right\}=0
+$$
+稳态版本当对数线性、非时变、非随机时，可得贷款利率：
+$$
+\hat{r}_{t}^{b s}=\frac{\kappa_{b s}}{\varepsilon^{b s}-1+\left(1+\beta_{P}\right) \kappa_{b s}} \hat{r}_{t-1}^{b s}+\frac{\beta_{P} \kappa_{b s}}{\varepsilon^{b s}-1+\left(1+\beta_{P}\right) \kappa_{b s}} E_{t} \hat{r}_{t+1}^{b s}+\frac{\varepsilon^{b s}-1}{\varepsilon^{b s}-1+\left(1+\beta_{P}\right) \kappa_{b s}} \hat{R}_{t}^{b}
+$$
+假设不考虑摩擦的情况时，
+可得贷款利率之于家庭部门和企业部门$r^{bs}_t$：
+$$
+r_{t}^{b s}=\frac{\varepsilon_{t}^{b s}}{\varepsilon_{t}^{b s}-1} R_{t}^{b}
+$$
+
+
+
+
+##### 存款银行分支
+
+行为：
+
+- 获得存款，从居民部门，然后清偿给居民部门于下一期时；
+- 将存款转售批发银行分支；
+
+
+
+最优化问题：
+$$
+\begin{align}
+& \max _{\left\{r_{t}^{d}(j)\right\}} E_{0} \sum_{t=0}^{\infty} \Lambda_{0, t}^{P}\left[r_{t} \tilde{D}_{BB,H}[t](j)-r_{t}^{d}(j) d_{t}(j)-\frac{\kappa_{d}}{2}\left(\frac{r_{t}^{d}(j)}{r_{t-1}^{d}(j)}-1\right)^{2} r_{t}^{d} d_{t}\right]
+\\
+\mathrm{s.t.} \quad & d_{t}(j)=\left(\frac{r_{t}^{d}(j)}{r_{t}^{d}}\right)^{-\varepsilon_{t}^{d}} d_{t}
+\\
+& \tilde{D}_{BB,H}[t](j)=d_{t}(j)
+
+\end{align}
+$$
+其中，
+$r_{t} \tilde{D}_{BB,H}[t](j)$：存款银行分支$j$获得贷款从批发银行分支（资产）；
+$-r_{t}^{d}(j) d_{t}(j)$：存款银行分支$j$获得存款从家庭部门（负债）；
+$-\frac{\kappa_{d}}{2}\left(\frac{r_{t}^{d}(j)}{r_{t-1}^{d}(j)}-1\right)^{2} r_{t}^{d} d_{t}$：成本之改变利率之从家庭部门；
