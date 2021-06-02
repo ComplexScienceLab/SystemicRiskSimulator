@@ -190,13 +190,12 @@ where $m_{t}^{E}$ is the stochastic entrepreneurs' LTV ratio. Our assumption on 
   $$
   其中，$j^b_t$表示每家银行的三个分支的总收益；$(1-\omega^b)$表示银行的股利政策；$\delta^b$表示银行资本管理费用。
 
-最优化问题：
+最优化问题：最大化跨期利润，约束条件是资产负债：
 $$
-\tag{5}
-\begin{align}
-& \max _{\left\{B_{t}, D_{t}\right\}} E_{0} \sum_{t=0}^{\infty} \Lambda_{0, t}^{P}\left[\left(1+R_{t}^{b}\right) B_{t}-B_{t+1}+D_{t+1}-\left(1+R_{t}^{d}\right) D_{t}+\Delta K_{t+1}^{b}-\frac{\kappa_{K b}}{2}\left(\frac{K_{t}^{b}}{B_{t}}-\nu^{b}\right)^{2} K_{t}^{b}\right] \\
-\text { s.t. } & \quad B_{t}=D_{t}+K_{t}^{b}
-\end{align}
+\begin{array}{c}
+\max _{\left\{B_{t}, D_{t}\right\}} E_{0} \sum_{t=0}^{\infty} \Lambda_{0, t}^{P}\left[\left(1+R_{t}^{b}\right) B_{t}-B_{t+1}+D_{t+1}-\left(1+R_{t}^{d}\right) D_{t}+\Delta K_{t+1}^{b}-\frac{\kappa_{K b}}{2}\left(\frac{K_{t}^{b}}{B_{t}}-\nu^{b}\right)^{2} K_{t}^{b}\right] \\
+\text { s.t. } \quad B_{t}=D_{t}+K_{t}^{b}
+\end{array}
 $$
 其中，
 $R^b_t$：净贷款利率；
