@@ -29,7 +29,7 @@ $$
  	\times
  	\min _{}
  	\left(
- 		r_{PI,z}[t+t_{s}] \; K_{PI}[j,t+t_{s}] + w_{PI,z}[t+t_{s}] \; L_{PI}[j, t+t_{s}]
+ 		r_{PI,z}[t+t_{s}] \; K_{PI}[j,t+t_{s}] + w_{PI,z}[t+t_{s}] \; {Lab}_{PI}[j, t+t_{s}]
  	\right) 
 \right)
 $$
@@ -43,7 +43,7 @@ $p_{PF}[t+t_{s}]$：定价之于消费品最终品生产商在时期$t+t_{s}$；
 $$
 \min _{}
 \left(
-	r_{PI,z}[t+t_{s}] \; K_{PI}[j,t+t_{s}] + w_{PI,z}[t+t_{s}] \; L_{PI}[j, t+t_{s}]
+	r_{PI,z}[t+t_{s}] \; K_{PI}[j,t+t_{s}] + w_{PI,z}[t+t_{s}] \; {Lab}_{PI}[j, t+t_{s}]
 \right)
 $$
 表示最小化成本问题，即资本和劳动力投入成本之于参与重新定价在时期$t+t_{s}$的消费品中间品生产商$j$；
@@ -56,7 +56,7 @@ $$
 \begin{align}
 \text { s. t. } \quad
 Y_{PI}[j, t+t_{s}] & := F_{PI}[\mathrm{TFP}_{PI}[t],K_{PI}[j,t+t_{s}],{Lab}_{PI}[j,t+t_{s}]]\\
-& = \mathrm{TFP}_{PI}[t+t_{s}] \; (K_{PI}[j,t+t_{s}])^{\alpha_{PI}} \; (L_{PI}[j,t+t_{s}])^{1-\alpha_{PI}} \\
+& = \mathrm{TFP}_{PI}[t+t_{s}] \; (K_{PI}[j,t+t_{s}])^{\alpha_{PI}} \; ({Lab}_{PI}[j,t+t_{s}])^{1-\alpha_{PI}} \\
 & = \left(\frac{p_{PF}[t+t_{s}]}{\tilde{P}_{PI}[j, t+t_{s}]} \right)^{\alpha_{PF}} Y_{PF}[t+t_{s}]
 \end{align}
 $$
@@ -64,7 +64,7 @@ $$
 其中，
 $\mathrm{TFP}_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
 $K_{PI}[j,t+t_{s}]$：参与重新定价的消费品中间品生产商$j$的资本，在时期$t+t_{s}$；
-$L_{PI}[j,t+t_{s}]$：参与重新定价的消费品中间品生产商$j$的劳动力要素，在时期$t+t_{s}$；
+${Lab}_{PI}[j,t+t_{s}]$：参与重新定价的消费品中间品生产商$j$的劳动力要素，在时期$t+t_{s}$；
 
 
 
