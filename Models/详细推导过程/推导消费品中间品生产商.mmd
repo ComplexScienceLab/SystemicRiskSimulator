@@ -55,14 +55,14 @@ $$
 $$
 \begin{align}
 \text { s. t. } \quad
-Y_{PI}[j, t+t_{s}] & := F_{PI}[\mathrm{TFP}_{PI}[t],K_{PI}[j,t+t_{s}],{Lab}_{PI}[j,t+t_{s}]]\\
-& = \mathrm{TFP}_{PI}[t+t_{s}] \; (K_{PI}[j,t+t_{s}])^{\alpha_{PI}} \; ({Lab}_{PI}[j,t+t_{s}])^{1-\alpha_{PI}} \\
+Y_{PI}[j, t+t_{s}] & := F_{PI}[{TFP}_{PI}[t],K_{PI}[j,t+t_{s}],{Lab}_{PI}[j,t+t_{s}]]\\
+& = {TFP}_{PI}[t+t_{s}] \; (K_{PI}[j,t+t_{s}])^{\alpha_{PI}} \; ({Lab}_{PI}[j,t+t_{s}])^{1-\alpha_{PI}} \\
 & = \left(\frac{p_{PF}[t+t_{s}]}{\tilde{P}_{PI}[j, t+t_{s}]} \right)^{\alpha_{PF}} Y_{PF}[t+t_{s}]
 \end{align}
 $$
 
 其中，
-$\mathrm{TFP}_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
+${TFP}_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
 $K_{PI}[j,t+t_{s}]$：参与重新定价的消费品中间品生产商$j$的资本，在时期$t+t_{s}$；
 ${Lab}_{PI}[j,t+t_{s}]$：参与重新定价的消费品中间品生产商$j$的劳动力要素，在时期$t+t_{s}$；
 
@@ -106,31 +106,31 @@ $$
 
 消费品中间品生产商之生产函数$F_{PI}[\cdot]$
 $$
-Y_{PI}[i,t] = F_{PI}[\mathrm{TFP}_{PI}[t],K_{PI}[i,t],{Lab}_{PI}[i,t]] := \mathrm{TFP}_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}} \; ({Lab}_{PI}[i,t])^{1-\alpha_{PI}}
+Y_{PI}[i,t] = F_{PI}[{TFP}_{PI}[t],K_{PI}[i,t],{Lab}_{PI}[i,t]] := {TFP}_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}} \; ({Lab}_{PI}[i,t])^{1-\alpha_{PI}}
 $$
 其中，
-$\mathrm{TFP}_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
+${TFP}_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
 $K_{PI}[i,t]$ ：消费品中间品生产商$i$的资本要素在时期$t$；
 ${Lab}_{PI}[i,t]$：消费品中间品生产商$i$的劳动要素在时期$t$；
 $\alpha_{PI}$：消费品中间品生产商的替代指数；
 
 ~~$\Phi$：消费品中间品生产商的固定生产成本。在稳态条件下，其值被设定为产生0利润；~~
 
-假定对数形式的全要素生产率 $\mathrm{TFP}_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
+假定对数形式的全要素生产率 ${TFP}_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\ln \mathrm{TFP}_{PI}[t] = \rho_{A,PI} \ln \mathrm{TFP}_{PI}[t-1] + \varepsilon_{A,PI}[t]
+\ln {TFP}_{PI}[t] = \rho_{A,PI} \ln {TFP}_{PI}[t-1] + \varepsilon_{A,PI}[t]
 $$
 
 其中，
-$\rho_{A,PI}$：消费品中间品生产商的全要素生产率$\mathrm{TFP}_{PI}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对$\mathrm{TFP}_{PI}[t]$应的自回归过程的扰动项，服从均值为0，标准差为$\sigma_{A,PI}$的独立同分布的正态分布；
+$\rho_{A,PI}$：消费品中间品生产商的全要素生产率${TFP}_{PI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对${TFP}_{PI}[t]$应的自回归过程的扰动项，服从均值为0，标准差为$\sigma_{A,PI}$的独立同分布的正态分布；
 
 
 
 最优化问题的一阶条件可以写成：
 $$
 \begin{align*}
-& w_{PI}[t]=(1-\alpha_{PI}) \mathrm{TFP}_{PI}[t] (K_{PI}[i,t])^{\alpha_{PI}} ({Lab}_{PI}[i,t])^{-\alpha_{PI}} \\
+& w_{PI}[t]=(1-\alpha_{PI}) {TFP}_{PI}[t] (K_{PI}[i,t])^{\alpha_{PI}} ({Lab}_{PI}[i,t])^{-\alpha_{PI}} \\
 \Leftrightarrow \quad
 & w_{PI}[t]=(1-\alpha_{PI}) \frac{Y_{PI}[i,t]}{{Lab}_{PI}[i,t]}
 \end{align*}
@@ -140,7 +140,7 @@ $$
 由此可求得消费品中间品生产商$i$的租金率$r_{PK,PI}[t]$
 $$
 \begin{align*}
-& r_{PK,PI}[t] = \alpha_{PI} \; \mathrm{TFP}_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}-1} \; ({Lab}_{PI}[i,t])^{1-\alpha_{PI}} \\
+& r_{PK,PI}[t] = \alpha_{PI} \; {TFP}_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}-1} \; ({Lab}_{PI}[i,t])^{1-\alpha_{PI}} \\
 \Leftrightarrow \quad 
  & r_{PK,PI}[t] = \alpha_{PI} \; \frac{Y_{PI}[i,t]}{K_{PI}[i,t]}
 \end{align*}
@@ -148,7 +148,7 @@ $$
 可求得消费品中间品生产商$i$的资本$K_{PI}[i,t]$
 $$
 \begin{align*}
-K_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{\mathrm{TFP}_{PI}[t]} \left(\frac{r_{PK,PI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI} - 1}
+K_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{{TFP}_{PI}[t]} \left(\frac{r_{PK,PI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI} - 1}
 \\
 & = \frac{\alpha_{PI}}{1-\alpha_{PI}} \; \frac{w_{PI}[t]}{r_{PK,PI}[t]} \; {Lab}_{PI}[i,t]
 \end{align*}
@@ -157,7 +157,7 @@ $$
 可求得消费品中间品生产商$i$的劳动${Lab}_{PI}[i,t]$
 $$
 \begin{align*}
-{Lab}_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{\mathrm{TFP}_{PI}[t]} \left(\frac{r_{PK,PI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI}}
+{Lab}_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{{TFP}_{PI}[t]} \left(\frac{r_{PK,PI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI}}
 \\
 & = \frac{1-\alpha_{PI}}{\alpha_{PI}} \; \frac{r_{PK,PI}[t]}{w_{PI}[t]} \; K_{PI}[i,t] 
 \end{align*}
@@ -166,13 +166,13 @@ $$
 将$K_{PI}[i, t]$和${Lab}_{PI}[i, t]$的表达式代入最小化总成本表达式，并且代入约束条件可得消费品中间品生产商$i$的实际总成本$TC_{PI}[t]$
 $$
 TC_{PI}[t]
-:= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{Y_{PI}[t] \; (w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{\mathrm{TFP}_{PI}[t]}
+:= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{Y_{PI}[t] \; (w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
 $$
 可求得消费品中间品生产商$i$共有的实际边际成本$MC_{PI}[t]$：
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{\mathrm{TFP}_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
 $$
 
 
@@ -335,7 +335,7 @@ $MC_{PI}[t+t_{s}]$：消费品中间品生产商的实际边际成本，表达�
 
 $$
 MC_{PI}[t+t_{s}]
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t+t_{s}])^{1-\alpha_{PI}} (r_{PI,z}[t+t_{s}])^{\alpha_{PI}}}{\mathrm{TFP}_{PI}[t+t_{s}]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t+t_{s}])^{1-\alpha_{PI}} (r_{PI,z}[t+t_{s}])^{\alpha_{PI}}}{{TFP}_{PI}[t+t_{s}]}
 $$
 
 。

@@ -355,7 +355,7 @@ TODO分类针对消费品厂商的生产最终品的厂商、房地产开发商�
 
 - 假设消费品厂商部门生产的产品在同一时期内都能被消费掉，即无库存；
 
-- 假定对数形式的全要素生产率$\mathrm{TFP}_{\Box}[t]$服从AR(1)过程；
+- 假定对数形式的全要素生产率${TFP}_{\Box}[t]$服从AR(1)过程；
 
 - 资本市场、劳动力市场是完全竞争的。则在消费品中间品生产商中的每一个都将接受给定的工资和资本租金水平；
 
@@ -630,24 +630,24 @@ $$
 
 消费品中间品生产商之生产函数$F_{PI}[\cdot]$
 $$
-Y_{PI}[i,t] = F_{PI}[\mathrm{TFP}_{PI}[t],K_{PI}[i,t],{Lab}_{PI}[i,t]] := \mathrm{TFP}_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}} \; ({Lab}_{PI}[i,t])^{1-\alpha_{PI}}
+Y_{PI}[i,t] = F_{PI}[{TFP}_{PI}[t],K_{PI}[i,t],{Lab}_{PI}[i,t]] := {TFP}_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}} \; ({Lab}_{PI}[i,t])^{1-\alpha_{PI}}
 $$
 其中，
-$\mathrm{TFP}_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
+${TFP}_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
 $K_{PI}[i,t]$ ：消费品中间品生产商$i$的资本要素；
 ${Lab}_{PI}[i,t]$：消费品中间品生产商$i$的劳动要素；
 $\alpha_{PI}$：消费品中间品生产商各生产要素的替代指数；
 
 ~~$\Phi$：消费品中间品生产商的固定生产成本。在稳态条件下，其值被设定为产生0利润；~~
 
-假定全要素生产率 $\mathrm{TFP}_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
+假定全要素生产率 ${TFP}_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\ln \mathrm{TFP}_{PI}[t] = \rho_{A,PI} \ln \mathrm{TFP}_{PI}[t-1] + \varepsilon_{A,PI}[t]
+\ln {TFP}_{PI}[t] = \rho_{A,PI} \ln {TFP}_{PI}[t-1] + \varepsilon_{A,PI}[t]
 $$
 
 其中，
-$\rho_{A,PI}$：消费品中间品生产商的全要素生产率$\mathrm{TFP}_{PI}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对$\mathrm{TFP}_{PI}[t]$应的自回归过程的扰动项；
+$\rho_{A,PI}$：消费品中间品生产商的全要素生产率${TFP}_{PI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对${TFP}_{PI}[t]$应的自回归过程的扰动项；
 
 
 
@@ -655,7 +655,7 @@ $\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对$\m
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{\mathrm{TFP}_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
 $$
 
 
@@ -962,10 +962,10 @@ $$
 p_{PK}[t] \; {F_{PK}}^{\prime} \left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]=p_{PF}[t]
 $$
 
-全要素生产率$\mathrm{TFP}_{PK}[t]$服从AR(1)过程：
+全要素生产率${TFP}_{PK}[t]$服从AR(1)过程：
 
 $$
-\ln \mathrm{TFP}_{PK}[t]=\rho_{A,PK} \ln \mathrm{TFP}_{PK}[t-1] + \varepsilon_{A,PK}[t]
+\ln {TFP}_{PK}[t]=\rho_{A,PK} \ln {TFP}_{PK}[t-1] + \varepsilon_{A,PK}[t]
 $$
 
 其中，$\varepsilon_{A,PK}[t]$ 服从标准差为$\sigma_{A,PK}$的i.i.d.冲击。
@@ -1050,12 +1050,12 @@ $\Box_{PE}$
 对于整个房地产开发商部门来说，其生产函数$F_{PE}[\cdot]$：
 
 $$
-Y_{PE}[t] = F_{PE}[\mathrm{TFP}_{PE}[t],K_{PE}[t],{Lab}_{PE}[t],H_{PE}[t]] := \mathrm{TFP}_{PE}[t] \; (K_{PE}[t-1])^{\alpha_{PE,K}} ({Lab}_{PE}[t])^{\alpha_{PE,L}} (H_{PE}[t-1])^{\alpha_{PE,H}}
+Y_{PE}[t] = F_{PE}[{TFP}_{PE}[t],K_{PE}[t],{Lab}_{PE}[t],H_{PE}[t]] := {TFP}_{PE}[t] \; (K_{PE}[t-1])^{\alpha_{PE,K}} ({Lab}_{PE}[t])^{\alpha_{PE,L}} (H_{PE}[t-1])^{\alpha_{PE,H}}
 $$
 
 其中，
 $Y_{PE}[t]$：房地产开发商的最终产出；
-$\mathrm{TFP}_{PE}[t]$：房地产开发商的全要素生产率；
+${TFP}_{PE}[t]$：房地产开发商的全要素生产率；
 $K_{PE}[t-1]$：房地产开发商之资本存量，在上一时期；
 $H_{PE}[t-1]$：房地产存量，在上一时期；
 ${Lab}_{PE}[t]$：房地产商投入的劳动力要素；
