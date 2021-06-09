@@ -184,7 +184,7 @@ $Hour_{HB,PE}[i,t]$：借款型居民$i$在房地产开发商的工作时长，�
 
 预算约束：
 $$
-C_{HB,c}[i,t] + p_{PE}[t] \; \Delta C_{HB,h}[i,t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} = w_{PE}[i,t] \; h_{HB,PE}[i,t] + w_{PI}[i,t] \; h_{HB,PI}[i,t] + B_{HB,BB}[i,t]+{Trans}_{HB}[i,t]
+C_{HB,c}[i,t] + p_{PE}[t] \; \Delta C_{HB,h}[i,t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \le w_{PE}[i,t] \; h_{HB,PE}[i,t] + w_{PI}[i,t] \; h_{HB,PI}[i,t] + B_{HB,BB}[i,t]+{Trans}_{HB}[i,t]
 \tag{HB_st_budget}
 $$
 其中，
@@ -301,7 +301,7 @@ $Hour_{HI,PE}[i,t]$：投资和储蓄型居民$i$在房地产开发商的工作�
 对于投资和储蓄型居民$i$，存在预算约束：
 
 $$
-C_{HI,c}[i,t] + p_{PE}[t] \Delta C_{HI,h}[i,t] + D_{HI}[i,t] = w_{HI}[i,t] C_{HI,h}[i,t] + (1+r_{BB,HI}[i,t-1]) D_{HI}[i,t-1] / \pi[t] + {Trans}_{HI}[i,t])
+C_{HI,c}[i,t] + p_{PE}[t] \Delta C_{HI,h}[i,t] + D_{HI}[i,t] \le w_{HI}[i,t] C_{HI,h}[i,t] + (1+r_{BB,HI}[i,t-1]) D_{HI}[i,t-1] / \pi[t] + {Trans}_{HI}[i,t])
 \tag{HI_st_budget}
 $$
 其中，
