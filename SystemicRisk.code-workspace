@@ -4,10 +4,10 @@
 			"path": "."
 		},
 		{
-			"path": "../../../../LocalFiles/ResearchFile/SystemicRisk"
+			"path": "Models"
 		},
 		{
-			"path": "Models"
+			"path": "../../../../LocalFiles/ResearchFile/SystemicRisk_code"
 		}
 	],
 	"settings": {
