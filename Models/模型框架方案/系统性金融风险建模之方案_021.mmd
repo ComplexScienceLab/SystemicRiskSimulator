@@ -88,16 +88,16 @@
 
 - 为了保证稳态时，借款型居民是经济体的净借款方，因此设借款型居民的贴现因子应小于投资和储蓄型居民的贴现因子$\gamma_{HB}<\gamma_{HI}$。
 
-- 居民个数为$N_{H}[t]$，其中借款型居民个数为$N_{HB}[t]$，储蓄与投资型居民个数为$N_{HI}[t]$。
+- 居民个数占比为$\theta_{H,N}[t]$，其中借款型居民个数为$\theta_{HB,N}[t]$，储蓄与投资型居民个数为$\theta_{HI,N}[t]$。
   $$
-  N_{H}[t]=N_{HB}[t]+N_{HI}[t]
+  \theta_{H,N}[t] := \theta_{HB,N}[t] + \theta_{HI,N}[t]
   $$
   
-- 假设居民成员工作于消费品中间品生产商、房地产开发商；
+- 假设居民成员工作于生产商部门各子部门；
 
 - 假设居民成员持有的资金全部用于消费、投资、储蓄，暨每个时期不存在闲置货币；
 
-- 假设居民部门所有成员提供的劳动${Lab}_{H}[i,t]$是同质的，暨单位生产率是一样的，此时居民成员个体$i$提供的劳动在时期$t$，可以用一个时期内的劳动时长$Hour_{H}[i,t]$表示；
+- 假设居民部门所有成员提供的劳动${Lab}_{H}[t]$是同质的，暨单位生产率是一样的，此时居民提供的劳动在时期$t$，可以用一个时期内的劳动时长${Hour}_{H}[t]$表示；
 
 
 
@@ -143,8 +143,8 @@ $$
 \max \quad \mathbb{E}_{i,t=0} 
 \left[ \sum_{t=0}^{\infty} 
 (\gamma_{HB})^{t} \left(
-\alpha_{HB,PG} \; \varepsilon_{HB,PG}[t] \; \log[C_{HB,PG}[i,t]] 
-+ \alpha_{HB,PE} \; \varepsilon_{HB,PE}[t] \; \log C_{HB,PE}[i,t]
+\alpha_{HB,PG} \; \varepsilon_{HB,PG}[t] \; \log[C_{HB,PG}[t]] 
++ \alpha_{HB,PE} \; \varepsilon_{HB,PE}[t] \; \log C_{HB,PE}[t]
 - \frac{\left(Hour_{HB}[i,t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
  \right)
 \right]
@@ -155,22 +155,22 @@ $$
 $\gamma_{HB}$：借款型居民跨时期折现因子；
 $\alpha_{HB,PG}$：借款型居民消费品消费行为偏好参数；
 $\varepsilon_{HB,PG}[t]$：扰动项之于借款型居民之消费品消费，在时期$t$；
-$C_{HB,PG}[i,t]$：借款型居民$i$的消费品消费，在时期$t$；
+$C_{HB,PG}[t]$：借款型居民的消费品消费，在时期$t$；
 $\alpha_{HB,PE}$：借款型居民住房消费行为偏好参数；
 $\varepsilon_{HB,PE}[t]$：扰动项之于住房消费，在时期$t$；
-$C_{HB,PE}[i,t]$：借款型居民$i$的住房消费，在时期$t$；
-$Hour_{HB}[i,t]$：借款型居民$i$的工作时长，在时期$t$；
+$C_{HB,PE}[t]$：借款型居民的住房消费，在时期$t$；
+$Hour_{HB}[i,t]$：借款型居民的工作时长，在时期$t$；
 $\alpha_{H,H}$：居民工作时长对效用的指数因子。注意下标里的第一个$H$表示居民部门，第二个$H$表示居民工作时长；
 
 
 
-对于借款型居民$i$的工作时长，在时期$t$，由如下成分组成：
+对于借款型居民的工作时长，在时期$t$，由如下成分组成：
 $$
-Hour_{HB}[i,t] := Hour_{HB,PI}[i,t] + Hour_{HB,PE}[i,t]
+Hour_{HB}[i,t] := {Hour}_{HB,PG}[t] + {Hour}_{HB,PE}[t]
 $$
 其中，
-$Hour_{HB,PI}[i,t]$：借款型居民$i$在消费品中间品生产商的工作时长，在时期$t$；
-$Hour_{HB,PE}[i,t]$：借款型居民$i$在房地产开发商的工作时长，在时期$t$；
+${Hour}_{HB,PG}[t]$：借款型居民在消费品中间品生产商的工作时长，在时期$t$；
+${Hour}_{HB,PE}[t]$：借款型居民在房地产开发商的工作时长，在时期$t$；
 
 
 
@@ -180,33 +180,33 @@ $Hour_{HB,PE}[i,t]$：借款型居民$i$在房地产开发商的工作时长，�
 
 
 
-对于借款型居民$i$，存在预算约束：
+对于借款型居民，存在预算约束：
 
 预算约束：
 $$
-C_{HB,PG}[i,t] + p_{PE}[t] \; \Delta C_{HB,PE}[i,t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} = w_{PE}[i,t] \; h_{HB,PE}[i,t] + w_{PI}[i,t] \; h_{HB,PI}[i,t] + B_{HB,BB}[i,t]+{Trans}_{HB}[i,t]
+C_{HB,PG}[t] + p_{PE}[t] \; \Delta C_{HB,PE}[t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} = w_{PE}[t] \; {Hour}_{HB,PE}[t] + w_{PI}[t] \; {Hour}_{HB,PG}[t] + B_{HB,BB}[i,t]+{Trans}_{HB}[t]
 \tag{HB_st_budget}
 $$
 其中，
-$C_{HB,PG}[i,t]$：借款型居民$i$的消费品消费，在时期$t$；
-$p_{PE}[t] \; \Delta C_{HB,PE}[i,t]$：房地产价格$p_{PE}[t]$与借款型居民$i$的住房偿还贷款变动量$\Delta C_{HB,PE}[i,t]$的乘积，在时期$t$；
-$B_{HB,BB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$：借款型居民$i$偿还上一期的借款给商业银行部门于本期，以借款利率$r_{BB,HB}[i,t]$，考虑当前总通胀率$\pi[t]$的影响；
-$w_{PE}[i,t]  \; h_{HB,PE}[i,t]$：借款型居民$i$获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{HB}[i,t]$，与在房地产开发商的工作时长$Hour_{HB,PE}[i,t]$的乘积，在时期$t$；
-$w_{PI}[i,t] \; h_{HB,PI}[i,t]$：借款型居民$i$获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[i,t]$，与在消费品中间品生产商的工作时长$Hour_{HB,PI}[i,t]$的乘积，在时期$t$；
-$(1+r_{BB,HI}[i,t-1]) \; D_{HB}[i,t-1] / \pi[t]$：借款型居民$i$的上一期存款$D_{HB}[i,t-1]$于本期提现，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
-$B_{HB,BB}[i,t]$：借款型居民$i$对银行的借款，在当期$t$；
-${Trans}_{HB}[i,t]$：借款型居民$i$获得的转移支付，在时期$t$；
+$C_{HB,PG}[t]$：借款型居民的消费品消费，在时期$t$；
+$p_{PE}[t] \; \Delta C_{HB,PE}[t]$：房地产价格$p_{PE}[t]$与借款型居民的住房偿还贷款变动量$\Delta C_{HB,PE}[t]$的乘积，在时期$t$；
+$B_{HB,BB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$：借款型居民偿还上一期的借款给商业银行部门于本期，以借款利率$r_{BB,HB}[i,t]$，考虑当前总通胀率$\pi[t]$的影响；
+$w_{PE}[t]  \; {Hour}_{HB,PE}[t]$：借款型居民获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{HB}[i,t]$，与在房地产开发商的工作时长${Hour}_{HB,PE}[t]$的乘积，在时期$t$；
+$w_{PI}[t] \; {Hour}_{HB,PG}[t]$：借款型居民获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[t]$，与在消费品中间品生产商的工作时长${Hour}_{HB,PG}[t]$的乘积，在时期$t$；
+$(1+r_{BB,HI}[i,t-1]) \; D_{HB}[i,t-1] / \pi[t]$：借款型居民的上一期存款$D_{HB}[i,t-1]$于本期提现，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
+$B_{HB,BB}[i,t]$：借款型居民对银行的借款，在当期$t$；
+${Trans}_{HB}[t]$：借款型居民获得的转移支付，在时期$t$；
 
 
 
 信贷抵押约束：
 $$
-\left(1+r_{BB,HB}[i,t] \right) B_{HB,BB}[i,t] \leq \theta_{HB}[t] \; \mathbb{E}_{i,t} \left[ p_{PE}[t+1] \; \pi[t+1] \; C_{HB,PE}[t] \right]
+\left(1+r_{BB,HB}[i,t] \right) B_{HB,BB}[i,t] \leq \theta_{BB,HB}[t] \; \mathbb{E}_{i,t} \left[ p_{PE}[t+1] \; \pi[t+1] \; C_{HB,PE}[t] \right]
 \tag{HB_st_debt}
 $$
 其中，
-$\theta_{HB}[t]$ ：针对借款型居民用于住房消费抵押品之贷款价值比例LTV。$(1-\theta_{HB}[t])$意味着如果发生违约，银行按此比例收回抵押品，从而借款型居民为此付出的成本。LTV是广义政府部门可以进行宏观调控的政策工具，暨广义政府部门根据经济金融周期对其进行逆周期调整；
-$B_{HB,BB}[i,t]$：借款型居民$i$对银行的借款；
+$\theta_{BB,HB}[t]$ ：针对借款型居民用于住房消费抵押品之贷款价值比例LTV。$(1-\theta_{BB,HB}[t])$意味着如果发生违约，银行按此比例收回抵押品，从而借款型居民为此付出的成本。LTV是广义政府部门可以进行宏观调控的政策工具，暨广义政府部门根据经济金融周期对其进行逆周期调整；
+$B_{HB,BB}[i,t]$：借款型居民对银行的借款；
 TODO$p_{PE}[t+1] \; \pi[t+1] \; C_{HB,PE}[t]$：信贷抵押约束中，；
 
 
@@ -231,13 +231,13 @@ $\Box_{HI}$
 
 ##### 假设：
 
-- [ ] 假设考虑存款有两种类型：短期存款、长期存款。用以建模存款挤兑现象；
+- [ ] TODO假设考虑存款有两种类型：短期存款、长期存款。用以建模存款挤兑现象；
 
 
 
 ##### 行为：
 
-- 向银行部门的银行零售银行存款分支存款$D_{HI}[i,t]$，以存款利率$r_{D,t}$；
+- 向银行部门$i$存款分支存款$D_{HI}[i,t]$，以存款利率$r_{D,t}$；
 - 消费大众商品$C_{HI,PG}[i,t]$；
 - 住房消费$C_{HI,PE}[i,t]$；
 
@@ -262,7 +262,7 @@ $$
 \left(
 \alpha_{HI,PG} \; \varepsilon_{HI,PG}[t] \; \log[C_{HI,PG}[i,t]] 
 + \alpha_{HI,PE} \; \varepsilon_{HI,PE}[t] \; \log C_{HI,PE}[i,t]
-- \frac{\left(Hour_{HI}[i,t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
+- \frac{\left({Hour}_{HI}[t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
 \right)
 \right]
 \tag{HI_goal}
@@ -272,40 +272,40 @@ $$
 $\gamma_{HI}$：投资和储蓄型居民跨时期折现因子；
 $\alpha_{HI,PG}$：投资和储蓄型居民消费品消费行为偏好参数；
 $\varepsilon_{HI,PG}[t]$：扰动项之于投资和储蓄型居民之消费品消费，在时期$t$；
-$C_{HI,PG}[i,t]$：投资和储蓄型居民$i$的消费品消费，在时期$t$；
+$C_{HI,PG}[i,t]$：投资和储蓄型居民的消费品消费，在时期$t$；
 $\alpha_{HI,PE}$：投资和储蓄型居民住房消费行为偏好参数；
 $\varepsilon_{HI,PE}[t]$：扰动项之于住房消费，在时期$t$；
-$C_{HI,PE}[i,t]$：投资和储蓄型居民$i$的住房消费，在时期$t$；
-$Hour_{HI}[i,t]$：投资和储蓄型居民$i$的工作时长，在时期$t$；
+$C_{HI,PE}[i,t]$：投资和储蓄型居民的住房消费，在时期$t$；
+${Hour}_{HI}[t]$：投资和储蓄型居民的工作时长，在时期$t$；
 $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
 
-对于投资和储蓄型居民$i$的工作时长，在时期$t$，由如下成分组成：
+对于投资和储蓄型居民的工作时长，在时期$t$，由如下成分组成：
 $$
-Hour_{HI}[i,t] := Hour_{HI,PI}[i,t] + Hour_{HI,PE}[i,t]
+{Hour}_{HI}[t] := {Hour}_{HI,PI}[i,t] + {Hour}_{HI,PE}[i,t]
 $$
 其中，
-$Hour_{HI,PI}[i,t]$：投资和储蓄型居民$i$在消费品中间品生产商的工作时长，在时期$t$；
-$Hour_{HI,PE}[i,t]$：投资和储蓄型居民$i$在房地产开发商的工作时长，在时期$t$；
+${Hour}_{HI,PI}[i,t]$：投资和储蓄型居民在消费品中间品生产商的工作时长，在时期$t$；
+${Hour}_{HI,PE}[i,t]$：投资和储蓄型居民在房地产开发商的工作时长，在时期$t$；
 
 
 
 ###### 约束条件：
 
-对于投资和储蓄型居民$i$，存在预算约束：
+对于投资和储蓄型居民，存在预算约束：
 
 $$
-C_{HI,PG}[i,t] + p_{PE}[t] \Delta C_{HI,PE}[i,t] + D_{HI}[i,t] = w_{HI}[i,t] C_{HI,PE}[i,t] + (1+r_{BB,HI}[i,t-1]) D_{HI}[i,t-1] / \pi[t] + {Trans}_{HI}[i,t])
+C_{HI,PG}[i,t] + p_{PE}[t] \; \Delta C_{HI,PE}[i,t] + D_{HI}[i,t] = w_{HI}[i,t] \; {Hour}_{HI,PE}[i,t] + (1+r_{BB,HI}[i,t-1]) \; D_{HI}[i,t-1] / \pi[t] + {Trans}_{HI}[i,t])
 \tag{HI_st_budget}
 $$
 其中，
-$C_{HI,PG}[i,t]$：投资和储蓄型居民$i$的消费品消费，在时期$t$；
-$p_{PE}[t] \; \Delta C_{HI,PE}[i,t]$：住房价格$p_{PE}[t]$与投资和储蓄型居民$i$的住房偿还贷款变动量$\Delta C_{HI,PE}[i,t]$的乘积，在时期$t$；
-$D_{HI}[i,t]$：投资和储蓄型居民$i$在银行的储蓄；
-$w_{PE}[i,t]  \; Hour_{HI,PE}[i,t]$：投资和储蓄型居民$i$获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{PE}[i,t]$，与在房地产开发商的工作时长$Hour_{HI,PE}[i,t]$的乘积，在时期$t$；
-$w_{PI}[i,t] \; Hour_{HI,PI}[i,t]$：投资和储蓄型居民$i$获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[i,t]$，与在消费品中间品生产商的工作时长$Hour_{HI,PI}[i,t]$的乘积，在时期$t$；
-$(1+r_{BB,HI}[i,t-1]) \; D_{HI}[i,t-1] / \pi[t]$：投资和储蓄型居民$i$提现之存款，其存于上一期，从商业银行部门整体，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
-${Trans}_{HI}[i,t]$：投资和储蓄型居民$i$获得的转移支付，在时期$t$；
+$C_{HI,PG}[i,t]$：投资和储蓄型居民的消费品消费，在时期$t$；
+$p_{PE}[t] \; \Delta C_{HI,PE}[i,t]$：住房价格$p_{PE}[t]$与投资和储蓄型居民的住房偿还贷款变动量$\Delta C_{HI,PE}[i,t]$的乘积，在时期$t$；
+$D_{HI}[i,t]$：投资和储蓄型居民在银行的储蓄；
+$w_{PE}[t]  \; {Hour}_{HI,PE}[i,t]$：投资和储蓄型居民获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{PE}[t]$，与在房地产开发商的工作时长${Hour}_{HI,PE}[i,t]$的乘积，在时期$t$；
+$w_{PI}[t] \; {Hour}_{HI,PI}[i,t]$：投资和储蓄型居民获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[t]$，与在消费品中间品生产商的工作时长${Hour}_{HI,PI}[i,t]$的乘积，在时期$t$；
+$(1+r_{BB,HI}[i,t-1]) \; D_{HI}[i,t-1] / \pi[t]$：投资和储蓄型居民提现之存款，其存于上一期，从商业银行部门整体，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
+${Trans}_{HI}[i,t]$：投资和储蓄型居民获得的转移支付，在时期$t$；
 
 
 
@@ -945,14 +945,14 @@ $$
 
 设定资本调整成本方程（capital adjustment cost function）$F_{PK}$形式为CRS（具有一次齐次假设的）：
 $$
-F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] \; K_{PI}[t]
+F_{PK}\left[\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}\right] \; K_{PI}[t]
 $$
 
 > 根据（Gertler,2007）（Mimir,2010）等人研究，
 
 设定为：
 $$
-F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] := \frac{I_{PI}[t]}{K_{PI}[t]} - \frac{\eta_{PK}}{2}\left(\frac{I_{PI}[t]}{K_{PI}[t]}-\delta_{PK}\right)^{2}
+F_{PK}\left[\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}\right] := \frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]} - \frac{\eta_{PK}}{2}\left(\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}-\delta_{PK}\right)^{2}
 $$
 其中，
 $\eta_{PK}$：资本调整成本参数；
@@ -1137,14 +1137,14 @@ $$
 >
 > 的研究，引入信贷约束机制
 
-对于商业银行来说，由于存在信贷约束机制。通过引入信贷约束机制，房地产开发商将其持有的房地产抵押给商业银行获得抵押贷款，但是其所获得的抵押贷款的数量取决于其还款期抵押品的预期价值。假设 $\theta_{PE} \in (0,1)$ 为房地产开发商信贷约束比例，需满足:
+对于商业银行来说，由于存在信贷约束机制。通过引入信贷约束机制，房地产开发商将其持有的房地产抵押给商业银行获得抵押贷款，但是其所获得的抵押贷款的数量取决于其还款期抵押品的预期价值。假设 $\theta_{BB,PE}[t] \in (0,1)$ 为房地产开发商信贷约束比例，需满足:
 
 $$
-B_{PE,BB}[t] \leq \theta_{PE} \frac{\mathbb{E}_{t} \left[p_{PE}[t+1] \; H_{PE}[t] \; \pi[t+1]\right]}{r_{BB,PE}[i,t]}
+B_{PE,BB}[t] \leq \theta_{BB,PE}[t] \frac{\mathbb{E}_{t} \left[p_{PE}[t+1] \; H_{PE}[t] \; \pi[t+1]\right]}{r_{BB,PE}[i,t]}
 $$
 
 其中，
-$\theta_{PE}$：为房地产开发商信贷约束比例；
+$\theta_{BB,PE}[t]$：为房地产开发商信贷约束比例；
 $B_{PE,BB}[t]$：房地产开发商从商业银行借款，在时期$t$；
 $r_{BB,PE}[i,t]$：商业银行向房地产开发商的贷款利率；
 $H_{PE}[t]$：房地产部门整体存量，在当期的时候；
@@ -1398,10 +1398,11 @@ D_{HI}[i,t]
 +L_{BB,PK}[i,t-1] \; \frac{(1+r_{BB,PK}[i,t]-\delta_{PK})}{\pi[t]}
 -L_{BB,PK}[i,t] \; (1+c_{BB,P}[t])
 \\
+-Pun_{CAR}[i,t,gap[i,t]]
+\\
 -\mathrm{ABS}_{BS}[j,i,t]
 + (1-\mathcal{Pr}_{def,BS}[t]) \; \mathrm{ABS}_{BS}[j,i,t-1] \; \frac{(1+r_{BS,BB}[t-1])}{\pi[t]}
 \\
--Pun_{CAR}[i,t,gap[i,t]]
 -{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]
 \end{gather}
 \right)
@@ -1419,6 +1420,8 @@ $\mathcal{Pr}_{def,BS}[t]$：影子银行当期违约概率；
 $L_{BB,PK}[i,t-1] \; (1+r_{BB,PK}[i,t]-\delta_{PK}) / \pi[t]$：收回上一期贷给消费品生产商部门之资本品生产商部门$\mathbb{PK}$之贷款所获得的收入；
 
 $L_{BB,PK}[i,t] \; (1+c_{BB,P}[t])$：商业银行$i$贷款给生产部门之消费品生产商的资本品生产商，在当期，与此同时付出审查成本率$c_{BB,P}[t]$；
+
+TODO房地产商信贷；
 
 $\mathrm{ABS}_{BS}[j,i,t-1]$：商业银行$i$购买影子银行$j$提供的资管产品，在上一期；
 
@@ -1484,9 +1487,9 @@ ${Equity}_{BB}[i,t]$：商业银行$i$之当期的总所有者权益；
 $$
 {Assets}_{BB}[i,t] := {Assets}_{BB,HB}[i,t] + {Assets}_{BB,PK}[i,t] + {Assets}_{BB,PE}[i,t] + {Assets}_{BB,BI}[i,t] + {Assets}_{BB,BS}[]
 $$
-对于商业银行对于商业银行$i$之当期总负债${Liability}_{BB}[i,t]$，由如下构成：
+TODO对于商业银行对于商业银行$i$之当期总负债${Liability}_{BB}[i,t]$，由如下构成：
 $$
-{Liability}_{BB}[i,t] := {Liability}_{BB,HI}[i,t] + {Assets}_{BB,BI}[i,t] + {Assets}_{BB,PE}[i,t] + {Assets}_{BB,BI}[i,t]
+{Liability}_{BB}[i,t] := {Liability}_{BB,HI}[i,t] + {Liability}_{BB,BI}[i,t]
 $$
 
 
@@ -1664,6 +1667,7 @@ $\Box_{PK}$
 - 财政政策；
 - 税收；
 - 居民福利转移；
+- 调控房地产市场；
 
 中央银行和监管当局的行为：
 
