@@ -141,8 +141,8 @@ $$
 \max \quad \mathbb{E}_{i,t=0} 
 \left[ \sum_{t=0}^{\infty} 
 (\gamma_{HB})^{t} \left(
-\alpha_{HB,c} \; \varepsilon_{HB,c}[t] \; \log[C_{HB,c}[i,t]] 
-+ \alpha_{HB,h} \; \varepsilon_{HB,h}[t] \; \log C_{HB,h}[i,t]
+\alpha_{HB,PG} \; \varepsilon_{HB,PG}[t] \; \log[C_{HB,PG}[i,t]] 
++ \alpha_{HB,PE} \; \varepsilon_{HB,PE}[t] \; \log C_{HB,PE}[i,t]
 - \frac{\left(Hour_{HB}[i,t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
  \right)
 \right]
@@ -151,12 +151,12 @@ $$
 
 其中，
 $\gamma_{HB}$：借款型居民跨时期折现因子；
-$\alpha_{HB,c}$：借款型居民大众消费行为偏好参数；
-$\varepsilon_{HB,c}[t]$：扰动项之于借款型居民之大众消费，在时期$t$；
-$C_{HB,c}[i,t]$：借款型居民$i$的大众消费，在时期$t$；
-$\alpha_{HB,h}$：借款型居民住房消费行为偏好参数；
-$\varepsilon_{HB,h}[t]$：扰动项之于住房消费，在时期$t$；
-$C_{HB,h}[i,t]$：借款型居民$i$的住房消费，在时期$t$；
+$\alpha_{HB,PG}$：借款型居民消费品消费行为偏好参数；
+$\varepsilon_{HB,PG}[t]$：扰动项之于借款型居民之消费品消费，在时期$t$；
+$C_{HB,PG}[i,t]$：借款型居民$i$的消费品消费，在时期$t$；
+$\alpha_{HB,PE}$：借款型居民住房消费行为偏好参数；
+$\varepsilon_{HB,PE}[t]$：扰动项之于住房消费，在时期$t$；
+$C_{HB,PE}[i,t]$：借款型居民$i$的住房消费，在时期$t$；
 $Hour_{HB}[i,t]$：借款型居民$i$的工作时长，在时期$t$；
 $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
@@ -184,12 +184,12 @@ $Hour_{HB,PE}[i,t]$：借款型居民$i$在房地产开发商的工作时长，�
 
 预算约束：
 $$
-C_{HB,c}[i,t] + p_{PE}[t] \; \Delta C_{HB,h}[i,t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \le w_{PE}[i,t] \; h_{HB,PE}[i,t] + w_{PI}[i,t] \; h_{HB,PI}[i,t] + B_{HB,BB}[i,t]+{Trans}_{HB}[i,t]
+C_{HB,PG}[i,t] + p_{PE}[t] \; \Delta C_{HB,PE}[i,t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \le w_{PE}[i,t] \; h_{HB,PE}[i,t] + w_{PI}[i,t] \; h_{HB,PI}[i,t] + B_{HB,BB}[i,t]+{Trans}_{HB}[i,t]
 \tag{HB_st_budget}
 $$
 其中，
-$C_{HB,c}[i,t]$：借款型居民$i$的大众消费，在时期$t$；
-$p_{PE}[t] \; \Delta C_{HB,h}[i,t]$：房地产价格$p_{PE}[t]$与借款型居民$i$的住房偿还贷款变动量$\Delta C_{HB,h}[i,t]$的乘积，在时期$t$；
+$C_{HB,PG}[i,t]$：借款型居民$i$的消费品消费，在时期$t$；
+$p_{PE}[t] \; \Delta C_{HB,PE}[i,t]$：房地产价格$p_{PE}[t]$与借款型居民$i$的住房偿还贷款变动量$\Delta C_{HB,PE}[i,t]$的乘积，在时期$t$；
 $B_{HB,BB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$：借款型居民$i$偿还上一期的借款给商业银行部门于本期，以借款利率$r_{BB,HB}[i,t]$，考虑当前总通胀率$\pi[t]$的影响；
 $w_{PE}[i,t]  \; h_{HB,PE}[i,t]$：借款型居民$i$获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{HB}[i,t]$，与在房地产开发商的工作时长$Hour_{HB,PE}[i,t]$的乘积，在时期$t$；
 $w_{PI}[i,t] \; h_{HB,PI}[i,t]$：借款型居民$i$获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[i,t]$，与在消费品中间品生产商的工作时长$Hour_{HB,PI}[i,t]$的乘积，在时期$t$；
@@ -201,13 +201,13 @@ ${Trans}_{HB}[i,t]$：借款型居民$i$获得的转移支付，在时期$t$；
 
 信贷抵押约束：
 $$
-\left(1+r_{BB,HB}[i,t] \right) B_{HB,BB}[i,t] \leq \theta_{HB}[t] \; \mathbb{E}_{i,t} \left[ p_{PE}[t+1] \; \pi[t+1] \; C_{HB,h}[t] \right]
+\left(1+r_{BB,HB}[i,t] \right) B_{HB,BB}[i,t] \leq \theta_{HB}[t] \; \mathbb{E}_{i,t} \left[ p_{PE}[t+1] \; \pi[t+1] \; C_{HB,PE}[t] \right]
 \tag{HB_st_debt}
 $$
 其中，
 $\theta_{HB}[t]$ ：针对借款型居民用于住房消费抵押品之贷款价值比例LTV。$(1-\theta_{HB}[t])$意味着如果发生违约，银行按此比例收回抵押品，从而借款型居民为此付出的成本。LTV是广义政府部门可以进行宏观调控的政策工具，暨广义政府部门根据经济金融周期对其进行逆周期调整；
 $B_{HB,BB}[i,t]$：借款型居民$i$对银行的借款；
-TODO$p_{PE}[t+1] \; \pi[t+1] \; C_{HB,h}[t]$：信贷抵押约束中，；
+TODO$p_{PE}[t+1] \; \pi[t+1] \; C_{HB,PE}[t]$：信贷抵押约束中，；
 
 
 
@@ -246,8 +246,8 @@ $\Box_{HI}$
 ##### 行为：
 
 - 向银行部门的银行零售银行存款分支存款$D_{HI}[i,t]$，以存款利率$r_{D,t}$；
-- 消费大众商品$C_{HI,c}[i,t]$；
-- 住房消费$C_{HI,h}[i,t]$；
+- 消费大众商品$C_{HI,PG}[i,t]$；
+- 住房消费$C_{HI,PE}[i,t]$；
 
 
 
@@ -268,8 +268,8 @@ $$
 \sum_{t=0}^{\infty}
 (\gamma_{HI})^{t} 
 \left(
-\alpha_{HI,c} \; \varepsilon_{HI,c}[t] \; \log[C_{HI,c}[i,t]] 
-+ \alpha_{HI,h} \; \varepsilon_{HI,h}[t] \; \log C_{HI,h}[i,t]
+\alpha_{HI,PG} \; \varepsilon_{HI,PG}[t] \; \log[C_{HI,PG}[i,t]] 
++ \alpha_{HI,PE} \; \varepsilon_{HI,PE}[t] \; \log C_{HI,PE}[i,t]
 - \frac{\left(Hour_{HI}[i,t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
 \right)
 \right]
@@ -277,12 +277,12 @@ $$
 $$
 其中，
 $\gamma_{HI}$：投资和储蓄型居民跨时期折现因子；
-$\alpha_{HI,c}$：投资和储蓄型居民大众消费行为偏好参数；
-$\varepsilon_{HI,c}[t]$：扰动项之于投资和储蓄型居民之大众消费，在时期$t$；
-$C_{HI,c}[i,t]$：投资和储蓄型居民$i$的大众消费，在时期$t$；
-$\alpha_{HI,h}$：投资和储蓄型居民住房消费行为偏好参数；
-$\varepsilon_{HI,h}[t]$：扰动项之于住房消费，在时期$t$；
-$C_{HI,h}[i,t]$：投资和储蓄型居民$i$的住房消费，在时期$t$；
+$\alpha_{HI,PG}$：投资和储蓄型居民消费品消费行为偏好参数；
+$\varepsilon_{HI,PG}[t]$：扰动项之于投资和储蓄型居民之消费品消费，在时期$t$；
+$C_{HI,PG}[i,t]$：投资和储蓄型居民$i$的消费品消费，在时期$t$；
+$\alpha_{HI,PE}$：投资和储蓄型居民住房消费行为偏好参数；
+$\varepsilon_{HI,PE}[t]$：扰动项之于住房消费，在时期$t$；
+$C_{HI,PE}[i,t]$：投资和储蓄型居民$i$的住房消费，在时期$t$；
 $Hour_{HI}[i,t]$：投资和储蓄型居民$i$的工作时长，在时期$t$；
 $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
@@ -301,12 +301,12 @@ $Hour_{HI,PE}[i,t]$：投资和储蓄型居民$i$在房地产开发商的工作�
 对于投资和储蓄型居民$i$，存在预算约束：
 
 $$
-C_{HI,c}[i,t] + p_{PE}[t] \Delta C_{HI,h}[i,t] + D_{HI}[i,t] \le w_{HI}[i,t] C_{HI,h}[i,t] + (1+r_{BB,HI}[i,t-1]) D_{HI}[i,t-1] / \pi[t] + {Trans}_{HI}[i,t])
+C_{HI,PG}[i,t] + p_{PE}[t] \Delta C_{HI,PE}[i,t] + D_{HI}[i,t] \le w_{HI}[i,t] C_{HI,PE}[i,t] + (1+r_{BB,HI}[i,t-1]) D_{HI}[i,t-1] / \pi[t] + {Trans}_{HI}[i,t])
 \tag{HI_st_budget}
 $$
 其中，
-$C_{HI,c}[i,t]$：投资和储蓄型居民$i$的大众消费，在时期$t$；
-$p_{PE}[t] \; \Delta C_{HI,h}[i,t]$：住房价格$p_{PE}[t]$与投资和储蓄型居民$i$的住房偿还贷款变动量$\Delta C_{HI,h}[i,t]$的乘积，在时期$t$；
+$C_{HI,PG}[i,t]$：投资和储蓄型居民$i$的消费品消费，在时期$t$；
+$p_{PE}[t] \; \Delta C_{HI,PE}[i,t]$：住房价格$p_{PE}[t]$与投资和储蓄型居民$i$的住房偿还贷款变动量$\Delta C_{HI,PE}[i,t]$的乘积，在时期$t$；
 $D_{HI}[i,t]$：投资和储蓄型居民$i$在银行的储蓄；
 $w_{PE}[i,t]  \; Hour_{HI,PE}[i,t]$：投资和储蓄型居民$i$获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{PE}[i,t]$，与在房地产开发商的工作时长$Hour_{HI,PE}[i,t]$的乘积，在时期$t$；
 $w_{PI}[i,t] \; Hour_{HI,PI}[i,t]$：投资和储蓄型居民$i$获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[i,t]$，与在消费品中间品生产商的工作时长$Hour_{HI,PI}[i,t]$的乘积，在时期$t$；
