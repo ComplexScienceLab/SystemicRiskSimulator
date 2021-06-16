@@ -84,10 +84,10 @@ ${Lab}_{PI}[j,t+t_{s}]$：参与重新定价的消费品中间品生产商$j$的
 基于时期$t$，所有的消费品中间品生产商$i$最小化其总成本在时期$t_{s}$，暨时期$t+t_{s} \quad t_{s} \in [t,\infty)$。这里为了简化表述，在阶段1，我们省略$t_{s}$，所以$t+t_{s}$用$t$表示。
 
 $$
-{TC}_{PI}[i,t] := \min _{{Lab}_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; {Lab}_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
+{TC}_{PI}[i,t] := \min _{{Lab}_{PI}[i,t] , K_{PI}[i,t]}  w_{PG}[t] \; {Lab}_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
 $$
 其中，
-$w_{PI}[t]$：消费品中间品生产商对居民支付单位工资，在时期$t$；
+$w_{PG}[t]$：消费品中间品生产商对居民支付单位工资，在时期$t$；
 ${Lab}_{PI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
 $r_{PK,PI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
@@ -130,9 +130,9 @@ $\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对${T
 最优化问题的一阶条件可以写成：
 $$
 \begin{align*}
-& w_{PI}[t]=(1-\alpha_{PI}) {TFP}_{PI}[t] (K_{PI}[i,t])^{\alpha_{PI}} ({Lab}_{PI}[i,t])^{-\alpha_{PI}} \\
+& w_{PG}[t]=(1-\alpha_{PI}) {TFP}_{PI}[t] (K_{PI}[i,t])^{\alpha_{PI}} ({Lab}_{PI}[i,t])^{-\alpha_{PI}} \\
 \Leftrightarrow \quad
-& w_{PI}[t]=(1-\alpha_{PI}) \frac{Y_{PI}[i,t]}{{Lab}_{PI}[i,t]}
+& w_{PG}[t]=(1-\alpha_{PI}) \frac{Y_{PI}[i,t]}{{Lab}_{PI}[i,t]}
 \end{align*}
 $$
 
@@ -148,31 +148,31 @@ $$
 可求得消费品中间品生产商$i$的资本$K_{PI}[i,t]$
 $$
 \begin{align*}
-K_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{{TFP}_{PI}[t]} \left(\frac{r_{PK,PI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI} - 1}
+K_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{{TFP}_{PI}[t]} \left(\frac{r_{PK,PI}[t]}{w_{PG}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI} - 1}
 \\
-& = \frac{\alpha_{PI}}{1-\alpha_{PI}} \; \frac{w_{PI}[t]}{r_{PK,PI}[t]} \; {Lab}_{PI}[i,t]
+& = \frac{\alpha_{PI}}{1-\alpha_{PI}} \; \frac{w_{PG}[t]}{r_{PK,PI}[t]} \; {Lab}_{PI}[i,t]
 \end{align*}
 $$
 
 可求得消费品中间品生产商$i$的劳动${Lab}_{PI}[i,t]$
 $$
 \begin{align*}
-{Lab}_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{{TFP}_{PI}[t]} \left(\frac{r_{PK,PI}[t]}{w_{PI}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI}}
+{Lab}_{PI}[i, t] & = \frac{Y_{PI}[i,t]}{{TFP}_{PI}[t]} \left(\frac{r_{PK,PI}[t]}{w_{PG}[t]} \cdot \frac{1-\alpha_{PI}}{\alpha_{PI}} \right) ^{\alpha_{PI}}
 \\
-& = \frac{1-\alpha_{PI}}{\alpha_{PI}} \; \frac{r_{PK,PI}[t]}{w_{PI}[t]} \; K_{PI}[i,t] 
+& = \frac{1-\alpha_{PI}}{\alpha_{PI}} \; \frac{r_{PK,PI}[t]}{w_{PG}[t]} \; K_{PI}[i,t] 
 \end{align*}
 $$
 
 将$K_{PI}[i, t]$和${Lab}_{PI}[i, t]$的表达式代入最小化总成本表达式，并且代入约束条件可得消费品中间品生产商$i$的实际总成本$TC_{PI}[t]$
 $$
 TC_{PI}[t]
-:= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{Y_{PI}[t] \; (w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
+:= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{Y_{PI}[t] \; (w_{PG}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
 $$
 可求得消费品中间品生产商$i$共有的实际边际成本$MC_{PI}[t]$：
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PG}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
 $$
 
 

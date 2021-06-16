@@ -119,9 +119,9 @@ $\Box_{HB}$
 
 ##### 行为：
 
-- 向商业银行部门之零售贷款银行分支申请借款$L_{HB,t}$，以商业银行对居民的贷款利率（等价于居民的借款利率）$r_{BB,HB}[i,t]$；
+- 向商业银行部门之个体$i$申请借款$B_{HB,BB}[i,t]$，以商业银行对居民的贷款利率（等价于居民的借款利率）$r_{BB,HB}[i,t]$；
 
-- 消费产品$C_{HB,t}$；
+- 消费需求$C_{HB}[t]$；
 
   
 ##### 特点：
@@ -183,16 +183,16 @@ ${Hour}_{HB,PE}[t]$：借款型居民在房地产开发商的工作时长，在�
 
 预算约束：
 $$
-C_{HB,PG}[t] + p_{PE}[t] \; \Delta C_{HB,PE}[t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \le w_{PE}[t] \; {Hour}_{HB,PE}[t] + w_{PI}[t] \; {Hour}_{HB,PG}[t] + B_{HB,BB}[i,t]+{Trans}_{HB}[t]
+C_{HB,PG}[t] + p_{PE}[t] \; \Delta C_{HB,PE}[t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \le w_{PE}[t] \; {Hour}_{HB,PE}[t] + w_{PG}[t] \; {Hour}_{HB,PG}[t] + B_{HB,BB}[i,t]+{Trans}_{HB}[t]
 \tag{HB_st_budget}
 $$
 其中，
 $C_{HB,PG}[t]$：借款型居民的大众消费，在时期$t$；
 $p_{PE}[t] \; \Delta C_{HB,PE}[t]$：房地产价格$p_{PE}[t]$与借款型居民的住房偿还贷款变动量$\Delta C_{HB,PE}[t]$的乘积，在时期$t$；
 $B_{HB,BB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$：借款型居民偿还上一期的借款给商业银行部门于本期，以借款利率$r_{BB,HB}[i,t]$，考虑当前总通胀率$\pi[t]$的影响；
-$w_{PE}[t]  \; {Hour}_{HB,PE}[t]$：借款型居民获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{HB}[i,t]$，与在房地产开发商的工作时长${Hour}_{HB,PE}[t]$的乘积，在时期$t$；
-$w_{PI}[t] \; {Hour}_{HB,PG}[t]$：借款型居民获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[t]$，与在消费品中间品生产商的工作时长${Hour}_{HB,PG}[t]$的乘积，在时期$t$；
-$(1+r_{BB,HI}[i,t-1]) \; D_{HB}[i,t-1] / \pi[t]$：借款型居民的上一期存款$D_{HB}[i,t-1]$于本期提现，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
+$w_{PE}[t]  \; {Hour}_{HB,PE}[t]$：借款型居民获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{HB}[t]$，与在房地产开发商的工作时长${Hour}_{HB,PE}[t]$的乘积，在时期$t$；
+$w_{PG}[t] \; {Hour}_{HB,PG}[t]$：借款型居民获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PG}[t]$，与在消费品中间品生产商的工作时长${Hour}_{HB,PG}[t]$的乘积，在时期$t$；
+$(1+r_{BB,HI}[i,t-1]) \; B_{HB,BB}[i,t-1] / \pi[t]$：借款型居民的上一期存款$B_{HB,BB}[i,t-1]$于本期提现，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
 $B_{HB,BB}[i,t]$：借款型居民对银行的借款，在当期$t$；
 ${Trans}_{HB}[t]$：借款型居民获得的转移支付，在时期$t$；
 
@@ -236,9 +236,9 @@ $\Box_{HI}$
 
 ##### 行为：
 
-- 向银行部门的银行零售银行存款分支存款$D_{HI}[i,t]$，以存款利率$r_{D,t}$；
-- 消费大众商品$C_{HI,PG}[i,t]$；
-- 住房消费$C_{HI,PE}[i,t]$；
+- 向商业银行部门个体$i$存款$D_{HI}[t]$，以商业银行$i$提供的存款利率$r_{BB,HI}[i,t]$；
+- 消费大众商品$C_{HI,PG}[t]$；
+- 住房消费$C_{HI,PE}[t]$；
 
 
 
@@ -254,13 +254,13 @@ $\Box_{HI}$
 
 投资和储蓄型居民部门的个体$i$的目标是最大化其效用${Utility}_{HI}$在当前时期$t$：
 $$
-{Utility}_{HI}[i,t]:=
+{Utility}_{HI}[t]:=
 \max \quad \mathbb{E}_{i,t=0} \left[ 
 \sum_{t=0}^{\infty}
 (\gamma_{HI})^{t} 
 \left(
-\alpha_{HI,PG} \; \varepsilon_{HI,PG}[t] \; \log[C_{HI,PG}[i,t]] 
-+ \alpha_{HI,PE} \; \varepsilon_{HI,PE}[t] \; \log C_{HI,PE}[i,t]
+\alpha_{HI,PG} \; \varepsilon_{HI,PG}[t] \; \log[C_{HI,PG}[t]] 
++ \alpha_{HI,PE} \; \varepsilon_{HI,PE}[t] \; \log C_{HI,PE}[t]
 - \frac{\left({Hour}_{HI}[t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
 \right)
 \right]
@@ -271,10 +271,10 @@ $$
 $\gamma_{HI}$：投资和储蓄型居民跨时期折现因子；
 $\alpha_{HI,PG}$：投资和储蓄型居民大众消费行为偏好参数；
 $\varepsilon_{HI,PG}[t]$：扰动项之于投资和储蓄型居民之大众消费，在时期$t$；
-$C_{HI,PG}[i,t]$：投资和储蓄型居民的大众消费，在时期$t$；
+$C_{HI,PG}[t]$：投资和储蓄型居民的大众消费，在时期$t$；
 $\alpha_{HI,PE}$：投资和储蓄型居民住房消费行为偏好参数；
 $\varepsilon_{HI,PE}[t]$：扰动项之于住房消费，在时期$t$；
-$C_{HI,PE}[i,t]$：投资和储蓄型居民的住房消费，在时期$t$；
+$C_{HI,PE}[t]$：投资和储蓄型居民的住房消费，在时期$t$；
 ${Hour}_{HI}[t]$：投资和储蓄型居民的工作时长，在时期$t$；
 $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
@@ -294,17 +294,17 @@ ${Hour}_{HI,PE}[i,t]$：投资和储蓄型居民在房地产开发商的工作�
 对于投资和储蓄型居民，存在预算约束：
 
 $$
-C_{HI,PG}[i,t] + p_{PE}[t] \Delta C_{HI,PE}[i,t] + D_{HI}[i,t] \leq w_{HI}[i,t] \; {Hour}_{HI,PE}[i,t] + \frac{(1+r_{BB,HI}[i,t-1])}{\pi[t]} D_{HI}[i,t-1] + {Trans}_{HI}[i,t])
+C_{HI,PG}[t] + p_{PE}[t] \Delta C_{HI,PE}[t] + D_{HI}[t] \leq w_{HI}[t] \; {Hour}_{HI,PE}[i,t] + \frac{(1+r_{BB,HI}[i,t-1])}{\pi[t]} D_{HI}[i,t-1] + {Trans}_{HI}[t])
 \tag{HI_st_budget}
 $$
 其中，
-$C_{HI,PG}[i,t]$：投资和储蓄型居民的大众消费，在时期$t$；
-$p_{PE}[t] \; \Delta C_{HI,PE}[i,t]$：住房价格$p_{PE}[t]$与投资和储蓄型居民的住房偿还贷款变动量$\Delta C_{HI,PE}[i,t]$的乘积，在时期$t$；
-$D_{HI}[i,t]$：投资和储蓄型居民在银行的储蓄；
+$C_{HI,PG}[t]$：投资和储蓄型居民的大众消费，在时期$t$；
+$p_{PE}[t] \; \Delta C_{HI,PE}[t]$：住房价格$p_{PE}[t]$与投资和储蓄型居民的住房偿还贷款变动量$\Delta C_{HI,PE}[t]$的乘积，在时期$t$；
+$D_{HI}[t]$：投资和储蓄型居民在银行的储蓄；
 $w_{PE}[t]  \; {Hour}_{HI,PE}[i,t]$：投资和储蓄型居民获得总收入，从房地产开发商。暨房地产开发商提供的工资率$w_{PE}[t]$，与在房地产开发商的工作时长${Hour}_{HI,PE}[i,t]$的乘积，在时期$t$；
-$w_{PI}[t] \; {Hour}_{HI,PI}[i,t]$：投资和储蓄型居民获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PI}[t]$，与在消费品中间品生产商的工作时长${Hour}_{HI,PI}[i,t]$的乘积，在时期$t$；
+$w_{PG}[t] \; {Hour}_{HI,PI}[i,t]$：投资和储蓄型居民获得总收入，从消费品中间品生产商。暨消费品中间品生产商提供的工资率$w_{PG}[t]$，与在消费品中间品生产商的工作时长${Hour}_{HI,PI}[i,t]$的乘积，在时期$t$；
 $(1+r_{BB,HI}[i,t-1]) \; D_{HI}[i,t-1] / \pi[t]$：投资和储蓄型居民提现之存款，其存于上一期，从商业银行部门整体，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
-${Trans}_{HI}[i,t]$：投资和储蓄型居民获得的转移支付，在时期$t$；
+${Trans}_{HI}[t]$：投资和储蓄型居民获得的转移支付，在时期$t$；
 
 
 
@@ -446,7 +446,7 @@ $\delta_{BB}$：折旧率之于商业银行资本；
 
 
 
-商业银行$i$获取投资和储蓄型居民部门$\mathbb{HI}$存款资金$D_{HI}[i,t]$，于当期。则该银行当期负债增加${Liability}_{BB,HI}[i,t]$，同时当期资金流增加；
+商业银行$i$获取投资和储蓄型居民部门$\mathbb{HI}$存款资金$D_{HI}[t]$，于当期。则该银行当期负债增加${Liability}_{BB,HI}[i,t]$，同时当期资金流增加；
 
 商业银行$i$提供资金$D_{HI}[i,t-1] \; (1+r_{BB,HI}) / \pi[t]$以供投资和储蓄型居民部门$\mathbb{HI}$提取上一期存款所需。则该银行当期负债${Liability}_{BB,HI}[i,t]$减少；
 
@@ -553,7 +553,7 @@ ABS_{BS}[j,i,t]
 \left(\gamma_{BB}\right)^{t} 
 \left(
 \begin{gather}
-D_{HI}[i,t]
+D_{HI}[t]
 -D_{HI}[i,t-1] \; \frac{(1+r_{BB,HI})}{\pi[t]}
 \\
 +L_{BB,PK}[i,t-1] \; \frac{(1+r_{BB,PK}[i,t]-\delta_{PK})}{\pi[t]}
@@ -571,7 +571,7 @@ $$
 
 其中，
 
-$D_{HI}[i,t]$：居民部门存款于商业银行$i$的资金；
+$D_{HI}[t]$：居民部门存款于商业银行$i$的资金；
 
 $D_{HI}[i,t-1] \; (1+r_{BB,HI}) / \pi[t]$：提供资金以供投资和储蓄型居民部门$\mathbb{HI}$提取上一期存款所需；
 
@@ -658,7 +658,7 @@ $$
 
 商业银行$i$面临资产负债表平衡约束：
 $$
-L_{BB,PE}[i,t] + L_{BB,PK}[i,t] + L_{BB,H}[i,t] = D_{HI}[\cdot,i,t] + D_{HI}[i,t] + B_{BI}[i,j,t] + K_{BB}[i,t]
+L_{BB,PE}[i,t] + L_{BB,PK}[i,t] + L_{BB,H}[i,t] = D_{HI}[\cdot,i,t] + D_{HI}[t] + B_{BI}[i,j,t] + K_{BB}[i,t]
 $$
 
 
