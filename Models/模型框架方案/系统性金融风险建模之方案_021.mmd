@@ -468,7 +468,10 @@ ${Trans}_{HI}[t]$：投资和储蓄型居民获得的转移支付，在时期$t$
 
 生产部门的行为：
 
-生产部门通过外部融资或者购买资本、雇佣劳动生产最终产品，以提供居民部门消费，同时支付工资、利息。其外部融资方式主要为从商业银行和影子银行获得。生产最终产品的过程涉及到生产中间品、生产资本品。此外在研究中，为了考虑房地产的影响，我们将房地产开发商纳入到生产部门。
+- [ ] 生产部门通过外部融资或者购买资本、雇佣劳动生产最终产品；
+- [ ] 销售最终产品以提供居民部门消费，同时获得销售收入；
+- [ ] 同时支付工资给居民部门；
+- [ ] 其外部融资方式主要为从商业银行和影子银行获得。生产最终产品的过程涉及到生产中间品、生产资本品。此外在研究中，为了考虑房地产的影响，我们将房地产开发商纳入到生产部门。
 
 
 
@@ -497,7 +500,51 @@ TODO分类针对消费品厂商的生产最终品的厂商、房地产开发商�
 
 
 
-##### 假设：
+
+
+#### 模块接口
+
+
+
+设定全要素生产率（技术）要素：
+$$
+{TFP}_{PI}[t] := {TFP}_{PG}[t]
+$$
+设定资本要素：
+$$
+K_{PI}[i,t] := K_{PG}[i,t]
+$$
+设定劳动要素：
+$$
+{Lab}_{PI}[i,t] := {Lab}_{PG}[i,t]
+$$
+设定生产要素替代指数：
+$$
+\alpha_{PI} := \alpha_{PG}
+$$
+设定全要素生产率${TFP}_{PI}[t]$服从的AR(1)过程的随机因子的下标：
+$$
+\Box_{{TFP},PI} := \Box_{{TFP},PI}
+$$
+
+
+设定工资率：
+$$
+w_{PI}[t] := w_{PG}[t]
+$$
+
+
+设定资本品生产商$\mathbb{PK}$信贷$B_{PK,B}[t]$，从银行部门$\mathbb{B}$为：
+$$
+B_{PK,B}[t] := \sum_{j=1}^{N_{BB}}{B_{PK,BB}[j,t]} + \sum_{k=1}^{N_{BS}}{B_{PK,BS}[k,t]}
+$$
+其中，
+$B_{PK,BB}[j,t]$：资本品生产商$\mathbb{PK}$信贷从商业银行$j$；
+$B_{PK,BS}[k,t]$：资本品生产商$\mathbb{PK}$信贷从影子银行$k$；
+
+
+
+#### 假设：
 
 - 假设消费品厂商部门生产的产品在同一时期内都能被消费掉，即无库存；
 
@@ -722,47 +769,32 @@ $\Box_{PI}$
 所有的消费品中间品生产商$i$最小化其总成本$TC_{PI}$，在时期$t$。
 
 $$
-{TC}_{PI}[i,t] := \min _{{Lab}_{PI}[i,t] , K_{PI}[i,t]}  w_{PG}[t] \; {Lab}_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
+{TC}_{PI}[i,t] := \min _{{Lab}_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; {Lab}_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
 \tag{PI_goal_010}
 $$
 其中，
-$w_{PG}[t]$：消费品中间品生产商对居民支付单位工资（工资率），在时期$t$；
+$w_{PI}[t]$：消费品中间品生产商对居民支付单位工资（工资率），在时期$t$；
 ${Lab}_{PI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
 $r_{PK,PI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
 
-这里$K_{PI}[i,t]$的生成方式包括：
+这里$K_{PI}[i,t]$的生成方式是：
 
-- 向资本品生产商购买资本，以价格$p_{PK}[t]$；
-- 借款，从金融中介机构：
-  - 商业银行部门；
-  - 影子银行部门；
+- 上一期资本折旧累积$(1-\delta_{PI}) \; K_{PI}[i,t-1]$；
+- TODO向资本品生产商购买资本$B_{PK}[t]$，以价格$p_{PK}[t]$；
 
 
 
-- [ ] 向资本品生产商获取资本：
-
-
-
-向商业银行部门借贷：
-
-中间品生产商获得借款$B_{PI,BB}[j,t]$来自传统商业银行$j$；
-
-
-
-向影子银行部门借贷：
-
-中间品生产商获得借款$B_{PI,BS}[k,t]$来自影子银行个体$k$；
-
-
-
-- [ ] 因此，资本$K_{PI}[i,t]$累积方程表示为：
-
+因此，中间品生产商$i$之资本$K_{PI}[i,t]$累积方程表示为：
 $$
-K_{PI}[i,t] = (1-\delta_{PI}) \; K_{PI}[i,t-1] + B_{PI,BB}[j,t] + B_{PI,BS}[k,t]
+K_{PI}[i,t] = (1-\delta_{PI}) \; K_{PI}[i,t-1] + B_{PI}[i,t]
 \tag{PI_st_K}
 $$
 
+其中，
+$$
+\sum_{i=1}^{N_{PI}}{B_{PI}[i,t]} = B_{PK}[t]
+$$
 
 
 对于整个消费品中间品生产商部门而言，
@@ -774,8 +806,11 @@ $$
 
 ###### 约束条件：
 
-
 最小化成本问题对应约束条件：
+
+
+
+生产函数：
 
 消费品中间品生产商之生产函数$F_{PI}[\cdot]$
 $$
@@ -787,16 +822,14 @@ $K_{PI}[i,t]$ ：消费品中间品生产商$i$的资本要素；
 ${Lab}_{PI}[i,t]$：消费品中间品生产商$i$的劳动要素；
 $\alpha_{PI}$：消费品中间品生产商各生产要素的替代指数；
 
-~~$\Phi$：消费品中间品生产商的固定生产成本。在稳态条件下，其值被设定为产生0利润；~~
-
 假定全要素生产率 ${TFP}_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\log {TFP}_{PI}[t] = \rho_{A,PI} \log {TFP}_{PI}[t-1] + \varepsilon_{A,PI}[t]
+\log {TFP}_{PI}[t] = \rho_{{TFP},PI} \log {TFP}_{PI}[t-1] + \varepsilon_{{TFP},PI}[t]
 $$
 
 其中，
-$\rho_{A,PI}$：消费品中间品生产商的全要素生产率${TFP}_{PI}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对${TFP}_{PI}[t]$应的自回归过程的扰动项；
+$\rho_{{TFP},PI}$：消费品中间品生产商的全要素生产率${TFP}_{PI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{{TFP},PI}[t]$：消费品中间品生产商的全要素生产率对${TFP}_{PI}[t]$应的自回归过程的扰动项；
 
 
 
@@ -804,7 +837,7 @@ $\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对${T
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PG}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
 $$
 
 
@@ -817,7 +850,7 @@ $$
 
 - [ ] 消费品中间品生产商应满足收支平衡约束：
   $$
-  B_{BS,PI}[t] + Y_{PI}[t] + B_{PI,BB}[t]=I_{t}+C_{t}^{f}+W_{t} N_{t}+\frac{R_{t-1}^{l} L_{t-1}}{\pi_{t}}+\frac{R_{t-1}^{s} S_{t-1}}{\pi_{t}}
+  B_{PI,BS}[t] + Y_{PI}[t] + B_{PI,BB}[t]=I_{t}+C_{t}^{f}+W_{t} N_{t}+\frac{R_{t-1}^{l} L_{t-1}}{\pi_{t}}+\frac{R_{t-1}^{s} S_{t-1}}{\pi_{t}}
   $$
 
 
@@ -830,7 +863,7 @@ $$
 
 另外，未能参与制定最优价格$\tilde{P}_{PI}[j,t]$之消费品中间品生产商$k \in \mathbb{PI_{2}}$根据过去的通货膨胀率$\pi[t-1]$确定其指数化价格为
 $$
-p_{PI}[k,t]=(\pi[t-1])^{\chi_{p}} \; p_{PI}[i,t-1]
+p_{PI}[k,t]=(\pi[t-1])^{\chi_{p}} \; p_{PI}[j,t-1]
 $$
 其中，
 $\chi_{p} \in[0,1]$ ：指数化程度参数；
@@ -959,9 +992,9 @@ $$
 +
 \frac
 {
-\left( 1-\theta_{PI,p} \right) \; \left( 1-\gamma_{PI} \theta_{PI,p} \right)
+\left( 1-\theta_{PI,p} \right) \; \left( 1-\gamma_{PI} \; \theta_{PI,p} \right)
 }{
-\theta_{PI,p}\left(1+\gamma_{PI} \theta_{PI,p}\right)
+\theta_{PI,p}\left(1+\gamma_{PI} \; \theta_{PI,p}\right)
 } 
 \; \hat{MC}_{PI}[t]
 $$
@@ -1044,7 +1077,7 @@ $\Box_{PK}$
 - 信贷融资比例$\phi_{CF,PK}$，信贷总规模$CF_{PK}[t] = \phi_{CF,PK}[t] \; p_{PK}[t] \; L_{PK}[t]$；
   - 从政府信贷占比$\phi_{CF,G}[t]$，对应信贷规模$\phi_{CF,G}[t] \; \phi_{CF,PK}[t] \; p_{PK}[t] \; L_{PK}[t]=B_{G}[t]$；
   - 商业银行部门信贷占比$\phi_{CF,BB}[t]$，对应信贷规模$\phi_{CF,PK}[t] \; \phi_{CF,BB}[t] \; p_{PK}[t] \; L_{PK}[t] = B_{PK,BB}[t]$；
-  - 影子银行部门信贷占比$\phi_{CF,BS}[t]$，对应信贷规模$\phi_{CF,PK}[t] \; \phi_{CF,BS}[t] \; p_{PK}[t] \; L_{PK}[t] = B_{BS,PK}[t]$；
+  - 影子银行部门信贷占比$\phi_{CF,BS}[t]$，对应信贷规模$\phi_{CF,PK}[t] \; \phi_{CF,BS}[t] \; p_{PK}[t] \; L_{PK}[t] = B_{PK,BS}[t]$；
 
 - 股票市场融资项目比例$(1-\phi_{CF,PK})$，对应信贷规模$D F_{PK}[t]=(1-\phi_{CF,PK}[t]) \; p_{PK}[t] \; L_{PK}[t]$；
 
@@ -1084,14 +1117,14 @@ $$
 
 设定资本调整成本方程（capital adjustment cost function）$F_{PK}$形式为CRS（具有一次齐次假设的）：
 $$
-F_{PK}\left[\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}\right] \; K_{PI}[t]
+F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] \; K_{PI}[t]
 $$
 
 > 根据（Gertler,2007）（Mimir,2010）等人研究，
 
 设定为：
 $$
-F_{PK}\left[\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}\right] := \frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]} - \frac{\eta_{PK}}{2}\left(\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}-\delta_{PK}\right)^{2}
+F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] := \frac{I_{PI}[t]}{K_{PI}[t]} - \frac{\eta_{PK}}{2}\left(\frac{I_{PI}[t]}{K_{PI}[t]}-\delta_{PK}\right)^{2}
 $$
 其中，
 $\eta_{PK}$：资本调整成本参数；

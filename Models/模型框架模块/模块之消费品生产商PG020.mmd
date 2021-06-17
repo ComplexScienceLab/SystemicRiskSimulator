@@ -247,10 +247,10 @@ $$
 所有的消费品中间品生产商$i$最小化其总成本$TC_{PI}$，在时期$t$。
 
 $$
-{TC}_{PI}[i,t] := \min _{{Lab}_{PI}[i,t] , K_{PI}[i,t]}  w_{PG}[t] \; {Lab}_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
+{TC}_{PI}[i,t] := \min _{{Lab}_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; {Lab}_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
 $$
 其中，
-$w_{PG}[t]$：消费品中间品生产商对居民支付单位工资（工资率），在时期$t$；
+$w_{PI}[t]$：消费品中间品生产商对居民支付单位工资（工资率），在时期$t$；
 ${Lab}_{PI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
 $r_{PK,PI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
@@ -291,12 +291,12 @@ $\alpha_{PI}$：消费品中间品生产商各生产要素的替代指数；
 
 假定全要素生产率 ${TFP}_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\log {TFP}_{PI}[t] = \rho_{A,PI} \log {TFP}_{PI}[t-1] + \varepsilon_{A,PI}[t]
+\log {TFP}_{PI}[t] = \rho_{{TFP},PI} \log {TFP}_{PI}[t-1] + \varepsilon_{{TFP},PI}[t]
 $$
 
 其中，
-$\rho_{A,PI}$：消费品中间品生产商的全要素生产率${TFP}_{PI}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对${TFP}_{PI}[t]$应的自回归过程的扰动项；
+$\rho_{{TFP},PI}$：消费品中间品生产商的全要素生产率${TFP}_{PI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{{TFP},PI}[t]$：消费品中间品生产商的全要素生产率对${TFP}_{PI}[t]$应的自回归过程的扰动项；
 
 
 
@@ -304,7 +304,7 @@ $\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对${T
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PG}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
 $$
 
 
@@ -383,7 +383,7 @@ $$
 其中，
 $\gamma_{PI}$：消费品中间品生产商之效用贴现因子；
 $\theta_{PI,p}$：在时期$t$，从曾经没有参与过重新定价的消费品中间品生产商$k \in \mathbb{PI_{2}}$当中，随机抽取一定数量的厂商以参与重新定价，剩余仍未被抽取中以参与重新定价的厂商数量所占的比例；
-$\alpha_{PF}$：消费品中间品生产商不同的产品的替代弹性；
+$\alpha_{PF}$：替代指数，暨消费品最终品生产商对于不同的由消费品中间品生产商生产的产品的替代指数；
 
 
 上述最优化问题对应的约束条件是消费品中间品生产商$i$的产量需求：
@@ -543,7 +543,7 @@ $\Box_{PK}$
 设定生产函数形式为CRS（具有一次齐次假设的）生产函数$F_{PK}$为
 
 $$
-F_{PK}\left[\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}\right]K_{PI}[t]
+F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right]K_{PI}[t]
 $$
 
 则对应的时变的资本累积时变方程为

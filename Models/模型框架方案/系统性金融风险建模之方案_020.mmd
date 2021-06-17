@@ -572,11 +572,11 @@ $\Box_{PI}$
 所有的消费品中间品生产商$i$最小化其总成本$TC_{PI}$，在时期$t$。
 
 $$
-{TC}_{PI}[i,t] := \min _{{Lab}_{PI}[i,t] , K_{PI}[i,t]}  w_{PG}[t] \; {Lab}_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
+{TC}_{PI}[i,t] := \min _{{Lab}_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; {Lab}_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
 \tag{PI_goal_010}
 $$
 其中，
-$w_{PG}[t]$：消费品中间品生产商对居民支付单位工资（工资率），在时期$t$；
+$w_{PI}[t]$：消费品中间品生产商对居民支付单位工资（工资率），在时期$t$；
 ${Lab}_{PI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
 $r_{PK,PI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
@@ -597,16 +597,16 @@ $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
 
 向商业银行部门借贷：
 
-中间品生产商获得借款$B_{PI,BB}[j,t]$来自传统商业银行$j$；
+中间品生产商$i$获得借款$B_{PI,BB}[i,j,t]$来自传统商业银行$j$；
 
 
 
 
 
-- [ ] 因此，资本$K_{PI}[i,t]$累积方程表示为：
+- [ ] 因此，中间品生产商$i$之资本$K_{PI}[i,t]$累积方程表示为：
 
 $$
-K_{PI}[i,t] = (1-\delta_{PI}) \; K_{PI}[i,t-1] + B_{PI,BB}[j,t]
+K_{PI}[i,t] = (1-\delta_{PI}) \; K_{PI}[i,t-1] + B_{PI,BB}[i,j,t]
 \tag{PI_st_K}
 $$
 
@@ -638,12 +638,12 @@ $\alpha_{PI}$：消费品中间品生产商各生产要素的替代指数；
 
 假定全要素生产率 ${TFP}_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\log {TFP}_{PI}[t] = \rho_{A,PI} \log {TFP}_{PI}[t-1] + \varepsilon_{A,PI}[t]
+\log {TFP}_{PI}[t] = \rho_{{TFP},PI} \log {TFP}_{PI}[t-1] + \varepsilon_{{TFP},PI}[t]
 $$
 
 其中，
-$\rho_{A,PI}$：消费品中间品生产商的全要素生产率${TFP}_{PI}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对${TFP}_{PI}[t]$应的自回归过程的扰动项；
+$\rho_{{TFP},PI}$：消费品中间品生产商的全要素生产率${TFP}_{PI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{{TFP},PI}[t]$：消费品中间品生产商的全要素生产率对${TFP}_{PI}[t]$应的自回归过程的扰动项；
 
 
 
@@ -651,7 +651,7 @@ $\varepsilon_{A,PI}[t]$：消费品中间品生产商的全要素生产率对${T
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PG}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
 $$
 
 
@@ -664,7 +664,7 @@ $$
 
 - [ ] 消费品中间品生产商应满足收支平衡约束：
   $$
-  B_{BS,PI}[t] + Y_{PI}[t] + B_{PI,BB}[t]=I_{t}+C_{t}^{f}+W_{t} N_{t}+\frac{R_{t-1}^{l} L_{t-1}}{\pi_{t}}+\frac{R_{t-1}^{s} S_{t-1}}{\pi_{t}}
+  B_{PI,BS}[t] + Y_{PI}[t] + B_{PI,BB}[t]=I_{t}+C_{t}^{f}+W_{t} N_{t}+\frac{R_{t-1}^{l} L_{t-1}}{\pi_{t}}+\frac{R_{t-1}^{s} S_{t-1}}{\pi_{t}}
   $$
 
 
@@ -929,14 +929,14 @@ $$
 
 设定资本调整成本方程（capital adjustment cost function）$F_{PK}$形式为CRS（具有一次齐次假设的）：
 $$
-F_{PK}\left[\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}\right] \; K_{PI}[t]
+F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] \; K_{PI}[t]
 $$
 
 > 根据（Gertler,2007）（Mimir,2010）等人研究，
 
 设定为：
 $$
-F_{PK}\left[\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}\right] := \frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]} - \frac{\eta_{PK}}{2}\left(\frac{I_{\mathbb{PI}}[t]}{K_{PI}[t]}-\delta_{PK}\right)^{2}
+F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] := \frac{I_{PI}[t]}{K_{PI}[t]} - \frac{\eta_{PK}}{2}\left(\frac{I_{PI}[t]}{K_{PI}[t]}-\delta_{PK}\right)^{2}
 $$
 其中，
 $\eta_{PK}$：资本调整成本参数；
