@@ -135,11 +135,11 @@ $C_{H,PE}[t]$：居民部门之住房消费，在时期$t$；
 
 对于居民部门$\mathbb{H}$之工作时长${Hour}_{H}[t]$，在时期$t$，由如下部分组成：
 $$
-Hour_{H}[t] := Hour_{H,PG}[t] + Hour_{H,PE}[t]
+Hour_{H}[t] := {Hour}_{H,PG}[t] + Hour_{H,PE}[t]
 $$
 
 其中，
-$Hour_{H,PI}[t]$：居民部门在消费品中间品生产商的工作时长，在时期$t$；
+${Hour}_{H,PG}[t]$：居民部门在消费品中间品生产商的工作时长，在时期$t$；
 $Hour_{H,PE}[t]$：居民部门在房地产开发商的工作时长，在时期$t$；
 
 上述表达式对于居民部门各子部门同样有效。
@@ -152,12 +152,12 @@ $Hour_{H,PE}[t]$：居民部门在房地产开发商的工作时长，在时期$
 
 定义居民部门$\mathbb{H}$获得总收入$Income_{H}[t]$为：
 $$
-Income_{H}[t] := w_{PE}[t] \; {Hour}_{H,PE}[t] + w_{PG}[t] \; {Hour}_{H,PG}[t]
+Income_{H}[t] := w_{PG}[t] \; {Hour}_{H,PG}[t] + w_{PE}[t] \; {Hour}_{H,PE}[t]
 $$
 
 其中，
-$w_{PE}[t]  \; {Hour}_{H,PE}[t]$：居民部门获得总收入，从生产部门之房地产开发商。暨房地产开发商提供的工资率$w_{PE}[t]$，与在房地产开发商的工作时长${Hour}_{HB,PE}[t]$的乘积，在时期$t$；
 $w_{PG}[t] \; {Hour}_{H,PG}[t]$：居民部门获得总收入，从生产部门之消费品生产商部门。暨消费品生产商提供的工资率$w_{PG}[t]$，与在消费品生产商的工作时长${Hour}_{HB,PG}[t]$的乘积，在时期$t$；
+$w_{PE}[t]  \; {Hour}_{H,PE}[t]$：居民部门获得总收入，从生产部门之房地产开发商。暨房地产开发商提供的工资率$w_{PE}[t]$，与在房地产开发商的工作时长${Hour}_{HB,PE}[t]$的乘积，在时期$t$；
 
 上述表达式对于居民部门各子部门同样有效。
 
@@ -293,15 +293,13 @@ $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{HB,PG}[t] + p_{PE}[t] \; \Delta C_{HB,PE}[t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \leq {Income}_{HB}[t] + B_{HB,BB}[i,t] + {Trans}_{HB}[t]
+C_{HB}[t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \leq {Income}_{HB}[t] + B_{HB,BB}[i,t] + {Trans}_{HB}[t]
 \tag{HB_st_budget}
 $$
 其中，
-$C_{HB,PG}[t]$：借款型居民的消费品消费，在时期$t$；
-$p_{PE}[t] \; \Delta C_{HB,PE}[t]$：房地产价格$p_{PE}[t]$与借款型居民的住房偿还贷款变动量$\Delta C_{HB,PE}[t]$的乘积，在时期$t$；
+$C_{HB}[t]$：借款型居民之消费需求，在时期$t$；
 $B_{HB,BB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$：借款型居民偿还上一期的借款给商业银行部门于本期，以借款利率$r_{BB,HB}[i,t]$，考虑当前总通胀率$\pi[t]$的影响；
 $Income_{HB}[t]$：借款型居民当期总收入；
-
 $B_{HB,BB}[i,t-1] \; (1+r_{BB,HB}[i,t-1]) / \pi[t]$：借款型居民之上一期借款$B_{HB,BB}[i,t-1]$于本期偿还，以上一期的商业银行$i$设定的贷款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
 $B_{HB,BB}[i,t]$：借款型居民对银行的借款，在当期$t$；
 ${Trans}_{HB}[t]$：借款型居民获得的转移支付，在时期$t$；
@@ -344,7 +342,8 @@ $\Box_{HI}$
 
 
 
-投资和储蓄型居民的存款需求$D_{HI}[t]$有两种类型：短期存款、长期存款。用以建模存款挤兑现象。
+- [ ] 投资和储蓄型居民的存款需求$D_{HI}[t]$有两种类型：短期存款、长期存款。用以建模存款挤兑现象。
+
 $$
 D_{HI}[t] := D_{HI,s}[t] + D_{HI,l}[t]
 $$
@@ -420,12 +419,11 @@ $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{HI,PG}[t] + p_{PE}[t] \Delta C_{HI,PE}[t] + D_{HI}[t] \leq {Income}_{HI}[t] + \frac{(1+r_{BB,HI}[i,t-1])}{\pi[t]} \; D_{HI}[i,t-1] + {Trans}_{HI}[t]
+C_{HI}[t] + D_{HI}[t] \leq {Income}_{HI}[t] + \frac{(1+r_{BB,HI}[i,t-1])}{\pi[t]} \; D_{HI}[i,t-1] + {Trans}_{HI}[t]
 \tag{HI_st_budget}
 $$
 其中，
-$C_{HI,PG}[t]$：投资和储蓄型居民的消费品消费，在时期$t$；
-$p_{PE}[t] \; \Delta C_{HI,PE}[t]$：住房价格$p_{PE}[t]$与投资和储蓄型居民的住房偿还贷款变动量$\Delta C_{HI,PE}[t]$的乘积，在时期$t$；
+$C_{HI}[t]$：投资和储蓄型居民之消费需求，在时期$t$；
 $D_{HI}[t]$：投资和储蓄型居民在银行的储蓄；
 $Income_{HI}[t]$：投资和储蓄型居民当期总收入；
 $(1+r_{BB,HI}[i,t-1]) \; D_{HI}[i,t-1] / \pi[t]$：投资和储蓄型居民提现存于上一期的存款，从商业银行$i$，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
@@ -443,13 +441,13 @@ ${Trans}_{HI}[t]$：投资和储蓄型居民获得的转移支付，在时期$t$
 
 
 
-其中，银行家成员的转换：
+~~其中，银行家成员的转换：~~
 
-> 参照
-> [[Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.]]
-> 的做法
+> ~~参照~~
+> ~~[[Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.]]~~
+> ~~的做法~~
 
-居民成员中特殊角色可相互转化，每期银行家的相互转化满足泊松过程，分别以固定的退出率（转换率） $1-\lambda_{b} , \lambda_{b} \in[0,1)$， 随机退出自己岗位转为其他角色。如果退出率为0，则居民成员的角色不相互转化。
+~~居民成员中特殊角色可相互转化，每期银行家的相互转化满足泊松过程，分别以固定的退出率（转换率） $1-\lambda_{b} , \lambda_{b} \in[0,1)$， 随机退出自己岗位转为其他角色。如果退出率为0，则居民成员的角色不相互转化。~~
 
 
 
