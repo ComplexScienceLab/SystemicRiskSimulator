@@ -11,12 +11,17 @@
 		}
 	],
 	"settings": {
-		"editor.fontFamily": "Times New Roman, Menlo, Monaco, 'Courier New', monospace",
-		"markdown.preview.fontSize": 20,
-		"editor.fontSize": 16,
 		"markdown.styles": [
 			"Management/markdown_style/my_markdown_style_20201121.css"
 		],
+		"[markdown]": {
+
+			"editor.wordWrap": "on",
+			"editor.quickSuggestions": false
+		},
+		"files.autoSave": "afterDelay",
+		"editor.fontFamily": "Times New Roman, Menlo, Monaco, 'Courier New', monospace",
+		"editor.fontSize": 18,
 	
 	}
 }
