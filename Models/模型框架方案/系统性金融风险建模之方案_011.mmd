@@ -1050,9 +1050,15 @@ $\delta_{BB}$：折旧率之于商业银行资本；
 
 
 
+
+
+接受居民存款$D_{HI}[t]$：
+
 商业银行$i$获取投资和储蓄型居民部门$\mathbb{HI}$存款资金$D_{HI}[t]$，于当期。则该银行当期负债增加${Liability}_{BB,HI}[i,t]$，同时当期资金流增加；
 
 商业银行$i$提供资金$D_{HI}[i,t-1] \; (1+r_{BB,HI}) / \pi[t]$以供投资和储蓄型居民部门$\mathbb{HI}$提取上一期存款所需。则该银行当期负债${Liability}_{BB,HI}[i,t]$减少；
+
+
 
 
 
@@ -1074,13 +1080,13 @@ $\delta_{BB}$：折旧率之于商业银行资本；
 
 
 
-
-
 TODO开展影子银行业务：
 
 
 - 商业银行$i$购买影子银行$j$提供的资管产品$\mathrm{ABS}_{BS}[j,i,t-1]$；
 - 商业银行$i$赎回影子银行$j$提供的资管产品，以获得收益$(1+r_{BS,BB}[t-1]) \; \mathrm{ABS}_{BS}[j,i,t-1]$；
+
+
 
 
 
@@ -1094,7 +1100,11 @@ $$
 
 
 
+
+
 TODO银行部门同业拆借。暨商业银行$i$向商业银行$j$拆借资金$B_{BI}[i,j,t]$于时期$t$。具体将在下文描述。
+
+
 
 
 
@@ -1109,11 +1119,11 @@ TODO银行部门同业拆借。暨商业银行$i$向商业银行$j$拆借资金$
 
   不满足规定资本充足率要求对应的惩罚函数$Pun_{CAR}[i,t]$；
 
+对于上述变量之定义，见广义政府部门描述部门。
 
 
 
-
-由上述资金流变动情况，可得商业银行当期资金流变动公式：
+~~由上述资金流变动情况，可得商业银行当期资金流变动公式：~~
 $$
 Cash_{BB}[i,t] := Cash_{}
 $$
@@ -1148,8 +1158,9 @@ $$
 \max _{
 \left\{
 \begin{array}{c}
-r_{BB,HI}[i,t],r_{BB,HB}[i,t],r_{BB,PG}[i,t],r_{BB,PE}[i,t]\\
-D_{BB,HI}[i,t],L_{BB,HB}[i,t]\\
+r_{BB,HI}[i,t],r_{BB,HB}[i,t],\\
+r_{BB,PG}[i,t],r_{BB,PE}[i,t],\\
+D_{BB,HI}[i,t],L_{BB,HB}[i,t],\\
 ABS_{BS}[j,i,t]
 \end{array}
 \right\}
@@ -1158,44 +1169,36 @@ ABS_{BS}[j,i,t]
 \sum_{t=0}^{\infty} 
 \left(\gamma_{BB}\right)^{t} 
 \left(
-\begin{array}{c}
+\begin{align}&
 D_{HI}[t]
 -D_{HI}[i,t-1] \; \frac{(1+r_{BB,HI})}{\pi[t]}
-\\
+\\&
 +L_{BB,PG}[i,t-1] \; \frac{(1+r_{BB,PG}[i,t]-\delta_{PG})}{\pi[t]}
 -L_{BB,PG}[i,t] \; (1+c_{BB,P}[t])
-\\
+\\&
 -\mathrm{ABS}_{BS}[j,i,t]
 + (1-\mathcal{Pr}_{def,BS}[t]) \; \mathrm{ABS}_{BS}[j,i,t-1] \; \frac{(1+r_{BS,BB}[t-1])}{\pi[t]}
-  \\
-  -Pun_{CAR}[i,t,gap[i,t]]
-  -{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]
-  \end{array}
-  \right)
-  \right]
+\\&
+-Pun_{CAR}[i,t,gap[i,t]]
+-{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]
+\end{align}
+\right)
+\right]
+\quad \quad \quad \quad \quad
+\tag{BB_Goal}
 $$
 
 其中，
-
 $D_{HI}[t]$：居民部门存款于商业银行$i$的资金；
-
 $D_{HI}[i,t-1] \; (1+r_{BB,HI}) / \pi[t]$：提供资金以供投资和储蓄型居民部门$\mathbb{HI}$提取上一期存款所需；
-
 $\mathcal{Pr}_{def,BS}[t]$：影子银行当期违约概率；
-
 $L_{BB,PG}[i,t-1] \; (1+r_{BB,PG}[i,t]-\delta_{PG}) / \pi[t]$：收回上一期贷给消费品生产商部门$\mathbb{PG}$之贷款所获得的收入；
-
 $L_{BB,PG}[i,t] \; (1+c_{BB,P}[t])$：商业银行$i$贷款给消费品生产商部门，在当期，与此同时付出审查成本率$c_{BB,P}[t]$；
-
 $\mathrm{ABS}_{BS}[j,i,t-1]$：商业银行$i$购买影子银行$j$提供的资管产品，在上一期；
-
 $(1-\mathcal{Pr}_{def,BS}[t]) \; \mathrm{ABS}_{BS}[j,i,t-1] \; (1+r_{BS,BB}[t-1]) / \pi[t]$：商业银行$i$之收益之于其赎回购买资管产品之于影子银行$j$提供的，于上一期。其中$r_{BS,BB}[t-1]$表示收益率，$\mathcal{Pr}_{def,BS}[t]$表示概率之于影子银行违约无法提供收益，在当期的时候；
-
 $Pun_{CAR}[i,t,gap[i,t]]$：商业银行$i$面临不满足规定的资本充足率要求对应的惩罚函数，于时期$t$；
-
 $Pun_{{LDR}}[i,t,gap_[i,t]]$：商业银行$i$面临不满足规定的贷存比要求对应的惩罚函数，于时期$t$；
-
-${Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]$：同期信贷资产调整成本函数；
+${Adj}_{BB,L}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]$：同期信贷资产调整成本函数；
 
 TODO同业拆借；
 
@@ -1219,8 +1222,12 @@ $$
 
 定义同期信贷资产调整成本函数如下：
 $$
-{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]:=\frac{\beta}{2} \; \left(\frac{\mathrm{ABS}_{BS}[j,i,t]}{L_{BB,PG}[i,t]} - \frac{\bar{Z}_{BS}[j,i,t]}{\bar{B}_{BB,PG}[i,t]}  \right)^{2}
+{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]:=\frac{\beta}{2} \; \left(\frac{\mathrm{ABS}_{BS}[j,i,t]}{L_{BB,PG}[i,t]} - \frac{\bar{ABS}_{BS}[j,i,t]}{\bar{L}_{BB,PG}[i,t]}  \right)^{2}
 $$
+
+其中，
+$\beta_{BB}$
+
 
 
 假设商业银行为贷款给企业，其付出审查成本率$c_{BB,P}[t]$满足如下AR(1)过程：
@@ -1261,6 +1268,17 @@ $$
 
 
 
+定义商业银行$i$在同业拆借市场资产${Assets}_{BB,PE}[i,t]$：
+$$
+{Assets}_{BB,BI}[i,t] := \sum_{j=1}^{N_{j}}{{Assets}_{BB,BI}[i,j,t]}
+$$
+其中，
+${Assets}_{BB,BI}[i,j,t]$：商业银行$i$拥有商业银行$j$之资金作为资产，在同业拆借市场中，在当期。
+
+
+
+
+
 
 商业银行$i$面临资产负债表平衡约束：
 $$
@@ -1269,12 +1287,16 @@ $$
 
 
 
-监管之贷存比约束：
+银行接受贷存比约束监管：
 $$
-<Empty \space Math \space Block>
+\tilde{\theta}_{CAR,BB}[i,t] := {L_t}/{\tilde{D}_{BB,H}[i,t]}
 $$
 
-监管之资本充足率约束：
+
+
+
+
+银行接受资本充足率约束监管：
 
 > 参考：
 >
@@ -1411,13 +1433,15 @@ $\Box_{G}$
 
 - 政府运转部门；
 
-  - 财政部门：提供政府融资、采购、消费等服务；
+  - 财政部门：提供政府融资、采购、消费等服务、税收；
 
   
 
-- 中央银行和银监会：
+- 中央银行：充当货币当局的角色，实施货币政策；
 
-  - 货币政策、宏观审慎政策、微观审慎政策；
+- 银监会：
+
+  - 宏观审慎政策、微观审慎政策；
 
 
 
@@ -1425,7 +1449,7 @@ $\Box_{G}$
 
 
 
-政府的行为：
+普通政府的行为：
 
 - 财政政策；
 - 税收；
