@@ -681,11 +681,11 @@ $$
 {Profit}_{PG}[t] := 
 \max_{B_{PG,B},{Lab}_{PG}[t],w_{H}[t]} \quad
 \left(
-\begin{gather}
+\begin{array}{c}
 Q_{PG}[t] - w_{H}[t] \; {Lab}_{PG}[t] \\
 + \Delta K_{PG}[t] \\
 - \tau[t]
-\end{gather}
+\end{array}
 \right)
 \tag{PG_goal}
 $$
@@ -1148,7 +1148,7 @@ ABS_{BS}[j,i,t]
 \sum_{t=0}^{\infty} 
 \left(\gamma_{BB}\right)^{t} 
 \left(
-\begin{gather}
+\begin{array}{c}
 D_{HI}[t]
 -D_{HI}[i,t-1] \; \frac{(1+r_{BB,HI})}{\pi[t]}
 \\
@@ -1160,7 +1160,7 @@ D_{HI}[t]
   \\
   -Pun_{CAR}[i,t,gap[i,t]]
   -{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]
-  \end{gather}
+  \end{array}
   \right)
   \right]
 $$
