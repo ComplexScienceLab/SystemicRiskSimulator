@@ -872,17 +872,17 @@ $\delta_{BB}$：折旧率之于商业银行资本；
 
 商业银行提供贷款服务：
 
-商业银行$i$提供贷款$L_{BB,H}[i,t]$给借款型居民部门之居民$\mathbb{HB}$于当期$t$，以利率$r_{BB,HB}[i,t]$。则该银行当期资产${Assets}_{BB,HB}[i,t]$增加，同时当期资金流减少；
+商业银行$i$提供贷款$L_{BB,H}[i,t]$给借款型居民部门之居民$\mathbb{HB}$于当期$t$，以利率$r_{BB,HB}[i,t]$。则该银行当期资产${Asset}_{BB,HB}[i,t]$增加，同时当期资金流减少；
 
-商业银行$i$收回上一期贷给借款型居民部门$\mathbb{HB}$之贷款$L_{BB,HB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$。则该银行当期资产${Assets}_{BB,HB}[i,t]$减少，同时当期资金流增加；
+商业银行$i$收回上一期贷给借款型居民部门$\mathbb{HB}$之贷款$L_{BB,HB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$。则该银行当期资产${Asset}_{BB,HB}[i,t]$减少，同时当期资金流增加；
 
-商业银行$i$提供贷款资本$L_{BB,PG}[i,t]$贷给消费品生产部门（非金融机构）$\mathbb{P}$，于当期。则该银行当期资产增加${Assets}_{BB,PG}[i,t]$，同时当期资金流减少；
+商业银行$i$提供贷款资本$L_{BB,PG}[i,t]$贷给消费品生产部门（非金融机构）$\mathbb{P}$，于当期。则该银行当期资产增加${Asset}_{BB,PG}[i,t]$，同时当期资金流减少；
 
-商业银行$i$收回上一期贷款$L_{BB,PG}[i,t-1] \; (1+r_{BB,PG}[i,t-1]) / \pi[t]$，其贷给消费品生产商部门$\mathbb{PG}$。则该银行当期资产减少${Assets}_{BB,PG}[i,t-1]$，同时当期资金流增加；
+商业银行$i$收回上一期贷款$L_{BB,PG}[i,t-1] \; (1+r_{BB,PG}[i,t-1]) / \pi[t]$，其贷给消费品生产商部门$\mathbb{PG}$。则该银行当期资产减少${Asset}_{BB,PG}[i,t-1]$，同时当期资金流增加；
 
-商业银行$i$提供贷款资本$L_{BB,PE}[i,t]$贷给房地产开发商部门（非金融机构）。则该银行当期资产增加${Assets}_{BB,PE}[i,t]$；
+商业银行$i$提供贷款资本$L_{BB,PE}[i,t]$贷给房地产开发商部门（非金融机构）。则该银行当期资产增加${Asset}_{BB,PE}[i,t]$；
 
-商业银行$i$收回上一期贷款$L_{BB,PE}[i,t-1] \; (1+r_{BB,PE}[i,t-1]) / \pi[t]$。则该银行当期资产${Assets}_{BB,PE}[i,t]$减少，同时当期资金流增加；
+商业银行$i$收回上一期贷款$L_{BB,PE}[i,t-1] \; (1+r_{BB,PE}[i,t-1]) / \pi[t]$。则该银行当期资产${Asset}_{BB,PE}[i,t]$减少，同时当期资金流增加；
 
 
 
@@ -893,8 +893,8 @@ $\delta_{BB}$：折旧率之于商业银行资本；
 TODO开展影子银行业务：
 
 
-- 商业银行$i$购买影子银行$j$提供的资管产品$\mathrm{ABS}_{BS}[j,i,t-1]$；
-- 商业银行$i$赎回影子银行$j$提供的资管产品，以获得收益$(1+r_{BS,BB}[t-1]) \; \mathrm{ABS}_{BS}[j,i,t-1]$；
+- 商业银行$i$购买影子银行$j$提供的资管产品${ABS}_{BS}[j,i,t-1]$；
+- 商业银行$i$赎回影子银行$j$提供的资管产品，以获得收益$(1+r_{BS,BB}[t-1]) \; {ABS}_{BS}[j,i,t-1]$；
 
 
 
@@ -979,11 +979,11 @@ D_{HI}[t]
 +L_{BB,PG}[i,t-1] \; \frac{(1+r_{BB,PG}[i,t]-\delta_{PG})}{\pi[t]}
 -L_{BB,PG}[i,t] \; (1+c_{BB,P}[t])
 \\
--\mathrm{ABS}_{BS}[j,i,t]
-+ (1-\mathcal{Pr}_{def,BS}[t]) \; \mathrm{ABS}_{BS}[j,i,t-1] \; \frac{(1+r_{BS,BB}[t-1])}{\pi[t]}
+-{ABS}_{BS}[j,i,t]
++ (1-\mathcal{Pr}_{def,BS}[t]) \; {ABS}_{BS}[j,i,t-1] \; \frac{(1+r_{BS,BB}[t-1])}{\pi[t]}
   \\
   -Pun_{CAR}[i,t,gap[i,t]]
-  -{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]
+  -{Adj}_{BB,A}\left[{ABS}_{BS}[t],L_{BB,BK}[t]\right]
   \end{array}
   \right)
   \right]
@@ -1001,15 +1001,15 @@ $L_{BB,PG}[i,t-1] \; (1+r_{BB,PG}[i,t]-\delta_{PG}) / \pi[t]$：收回上一期�
 
 $L_{BB,PG}[i,t] \; (1+c_{BB,P}[t])$：商业银行$i$贷款给消费品生产商部门，在当期，与此同时付出审查成本率$c_{BB,P}[t]$；
 
-$\mathrm{ABS}_{BS}[j,i,t-1]$：商业银行$i$购买影子银行$j$提供的资管产品，在上一期；
+${ABS}_{BS}[j,i,t-1]$：商业银行$i$购买影子银行$j$提供的资管产品，在上一期；
 
-$(1-\mathcal{Pr}_{def,BS}[t]) \; \mathrm{ABS}_{BS}[j,i,t-1] \; (1+r_{BS,BB}[t-1]) / \pi[t]$：商业银行$i$之收益之于其赎回购买资管产品之于影子银行$j$提供的，于上一期。其中$r_{BS,BB}[t-1]$表示收益率，$\mathcal{Pr}_{def,BS}[t]$表示概率之于影子银行违约无法提供收益，在当期的时候；
+$(1-\mathcal{Pr}_{def,BS}[t]) \; {ABS}_{BS}[j,i,t-1] \; (1+r_{BS,BB}[t-1]) / \pi[t]$：商业银行$i$之收益之于其赎回购买资管产品之于影子银行$j$提供的，于上一期。其中$r_{BS,BB}[t-1]$表示收益率，$\mathcal{Pr}_{def,BS}[t]$表示概率之于影子银行违约无法提供收益，在当期的时候；
 
 $Pun_{CAR}[i,t,gap[i,t]]$：商业银行$i$面临不满足规定的资本充足率要求对应的惩罚函数，于时期$t$；
 
 $Pun_{{LDR}}[i,t,gap_[i,t]]$：商业银行$i$面临不满足规定的贷存比要求对应的惩罚函数，于时期$t$；
 
-${Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]$：同期信贷资产调整成本函数；
+${Adj}_{BB,A}\left[{ABS}_{BS}[t],L_{BB,BK}[t]\right]$：同期信贷资产调整成本函数；
 
 TODO同业拆借；
 
@@ -1020,10 +1020,10 @@ TODO同业拆借；
 TODO企业对银行$j$的贷款需求
 
 $$
-L^E_t[j]=\left( \frac{r^E_t[j]}{r^E_t} \right)^{-\varepsilon^E} L^E_t
+\tilde{B}_{P,BB}[i,t]=\left( \frac{r_{BB,P}[i,t]}{r_{BB,P}[t]} \right)^{-\xi_{P,BB}} \tilde{B}_{P,BB}[t]
 $$
 
-其中，$\varepsilon^E$表示企业家对银行$j$的贷款需求弹性，衡量银行$j$的垄断程度。
+其中，$\xi_{P,BB}$表示企业家对银行$j$的贷款需求弹性，衡量银行$j$的垄断程度。
 
 
 $$
@@ -1033,7 +1033,7 @@ $$
 
 定义同期信贷资产调整成本函数如下：
 $$
-{Adj}_{BB,B}\left[\frac{\mathrm{ABS}_{BS}[t]}{L_{BB,BK}[t]}\right]:=\frac{\beta}{2} \; \left(\frac{\mathrm{ABS}_{BS}[j,i,t]}{L_{BB,PG}[i,t]} - \frac{\bar{Z}_{BS}[j,i,t]}{\bar{B}_{BB,PG}[i,t]}  \right)^{2}
+{Adj}_{BB,A}\left[{ABS}_{BS}[t],L_{BB,BK}[t]\right]:=\frac{\beta}{2} \; \left(\frac{{ABS}_{BS}[j,i,t]}{L_{BB,PG}[i,t]} - \frac{\bar{Z}_{BS}[j,i,t]}{\bar{B}_{BB,PG}[i,t]}  \right)^{2}
 $$
 
 
@@ -1055,20 +1055,20 @@ $$
 商业银行$i$面临每一时期的资产负债表平衡约束。其资产负债表可表示为：
 
 $$
-{Assets}_{BB}[i,t] = {Liability}_{BB}[i,t] + {Equity}_{BB}[i,t]
+{Asset}_{BB}[i,t] = {Liability}_{BB}[i,t] + {Equity}_{BB}[i,t]
 $$
 其中，
-${Assets}_{BB}[i,t]$：商业银行$i$之当期的总资产；
+${Asset}_{BB}[i,t]$：商业银行$i$之当期的总资产；
 ${Liability}_{BB}[i,t]$：商业银行$i$之当期的总负债；
 ${Equity}_{BB}[i,t]$：商业银行$i$之当期的总所有者权益；
 
-对于商业银行$i$之当期总资产${Assets}_{BB}[i,t]$，由如下构成：
+对于商业银行$i$之当期总资产${Asset}_{BB}[i,t]$，由如下构成：
 $$
-{Assets}_{BB}[i,t] := {Assets}_{BB,HB}[i,t] + {Assets}_{BB,PG}[i,t] + {Assets}_{BB,PE}[i,t] + {Assets}_{BB,BI}[i,t] + {Assets}_{BB,BS}[]
+{Asset}_{BB}[i,t] := {Asset}_{BB,HB}[i,t] + {Asset}_{BB,PG}[i,t] + {Asset}_{BB,PE}[i,t] + {Asset}_{BB,BI}[i,t] + {Asset}_{BB,BS}[]
 $$
 对于商业银行对于商业银行$i$之当期总负债${Liability}_{BB}[i,t]$，由如下构成：
 $$
-{Liability}_{BB}[i,t] := {Liability}_{BB,HI}[i,t] + {Assets}_{BB,BI}[i,t] + {Assets}_{BB,PE}[i,t] + {Assets}_{BB,BI}[i,t]
+{Liability}_{BB}[i,t] := {Liability}_{BB,HI}[i,t] + {Asset}_{BB,BI}[i,t] + {Asset}_{BB,PE}[i,t] + {Asset}_{BB,BI}[i,t]
 $$
 
 
@@ -1261,7 +1261,7 @@ $$
 
 贷存比要求：
 $$
-\tilde{\theta}_{CAR,BB}[i,t] := {L_t}/{\tilde{D}_{BB,H}[i,t]}
+\tilde{\theta}_{CAR,BB}[i,t] := {L_{BB}[i,t]}/{D_{BB,H}[i,t]}
 $$
 
 TODO定义中央银行对商业银行$i$不满足规定的贷存比要求对应的惩罚函数，于时期$t$：
