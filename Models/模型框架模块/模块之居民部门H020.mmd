@@ -61,9 +61,9 @@ $p_{PE}[t] \; \Delta C_{H,PE}[t]$：房地产价格$p_{PE}[t]$与居民部门的
 
 
 
-对于居民部门$\mathbb{H}$之消费效用${Uti}_{H,C}[t]$，可进行进一步定义；
+对于居民部门$\mathbb{H}$之消费效用$Uti_{H,C}[t]$，可进行进一步定义；
 $$
-{Uti}_{H,C}[t] := \sum_{P}{\left( \alpha_{H,P} \; \varepsilon_{H,P}[t] \; \log[C_{H,P}[t]] \right)}
+Uti_{H,C}[t] := \sum_{P}{\left( \alpha_{H,P} \; \varepsilon_{H,P}[t] \; \log[C_{H,P}[t]] \right)}
 $$
 
 其中，
@@ -77,7 +77,7 @@ $C_{H,P}[t]$：居民部门$\mathbb{H}$对于生产部门$\mathbb{P}$之消费�
 
 
 
-对于居民部门$\mathbb{H}$之工作时长${Hour}_{H}[t]$，在时期$t$，由如下部分组成：
+对于居民部门$\mathbb{H}$之工作时长$Hour_{H}[t]$，在时期$t$，由如下部分组成：
 $$
 Hour_{H}[t] := \sum_{P}{\left( Hour_{H,P}[t] \right)}
 $$
@@ -95,11 +95,11 @@ $Hour_{H,P}[t]$：居民部门$\mathbb{H}$在生产部门$\mathbb{P}$的工作�
 
 定义居民部门$\mathbb{H}$获得总收入$Income_{H}[t]$，在时期$t$，由如下部分组成：
 $$
-Income_{H}[t] := \sum_{P}{\left( w_{P}[t] \; {Hour}_{H,P}[t] \right)}
+Income_{H}[t] := \sum_{P}{\left( w_{P}[t] \; Hour_{H,P}[t] \right)}
 $$
 
 其中，
-$w_{P}[t]  \; {Hour}_{H,P}[t]$：居民部门$\mathbb{H}$获得总收入，从生产部门$\mathbb{P}$。暨该生产部门提供的工资率$w_{P}[t]$，与该居民部门在该生产部门工作时长${Hour}_{H,P}[t]$之乘积，在时期$t$；
+$w_{P}[t]  \; Hour_{H,P}[t]$：居民部门$\mathbb{H}$获得总收入，从生产部门$\mathbb{P}$。暨该生产部门提供的工资率$w_{P}[t]$，与该居民部门在该生产部门工作时长$Hour_{H,P}[t]$之乘积，在时期$t$；
 
 上述表达式对于居民部门各子部门同样有效。
 
@@ -152,7 +152,7 @@ $w_{P}[t]  \; {Hour}_{H,P}[t]$：居民部门$\mathbb{H}$获得总收入，从�
 
 - 假设居民成员持有的资金全部用于消费、投资、储蓄，暨每个时期不存在闲置货币；
 
-- 假设居民部门所有成员提供的劳动${Lab}_{H}[t]$是同质的，暨单位生产率是一样的，此时居民提供的劳动在时期$t$，可以用劳动时长${Hour}_{H}[t]$表示；
+- 假设居民部门所有成员提供的劳动$Lab_{H}[t]$是同质的，暨单位生产率是一样的，此时居民提供的劳动在时期$t$，可以用劳动时长$Hour_{H}[t]$表示；
 
 
 
@@ -198,15 +198,15 @@ $\Box_{HB}$
 
 ###### 目标：
 
-借款型居民部门之目标是最大化其效用${Utility}_{HB}$在当前时期$t$：
+借款型居民部门之目标是最大化其效用$Utility_{HB}$在当前时期$t$：
 
 $$
-{Utility}_{HB}[t] :=
-\max _{{Uti}_{HB,C}[t],{Hour}_{HB}[t]}
+Utility_{HB}[t] :=
+\max _{Uti_{HB,C}[t],Hour_{HB}[t]}
 \quad \mathbb{E}_{t=0} 
 \left[ \sum_{t=0}^{\infty} 
 (\gamma_{HB})^{t} \left(
-{Uti}_{HB,C}[t]
+Uti_{HB,C}[t]
 - \frac{\left(Hour_{HB}[t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
  \right)
 \right]
@@ -215,7 +215,7 @@ $$
 
 其中，
 $\gamma_{HB}$：借款型居民跨时期折现因子；
-${Uti}_{HB,C}[t]$：借款型居民之消费效用；
+$Uti_{HB,C}[t]$：借款型居民之消费效用；
 $Hour_{HB}[t]$：借款型居民的工作时长，在时期$t$；
 $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
@@ -235,7 +235,7 @@ $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{HB}[t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \leq {Income}_{HB}[t] + B_{HB,BB}[i,t] + {Trans}_{HB}[t]
+C_{HB}[t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \leq Income_{HB}[t] + B_{HB,BB}[i,t] + Trans_{HB}[t]
 \tag{HB_st_budget}
 $$
 其中，
@@ -244,7 +244,7 @@ $B_{HB,BB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$：借款型居民
 $Income_{HB}[t]$：借款型居民当期总收入；
 $B_{HB,BB}[i,t-1] \; (1+r_{BB,HB}[i,t-1]) / \pi[t]$：借款型居民之上一期借款$B_{HB,BB}[i,t-1]$于本期偿还，以上一期的商业银行$i$设定的贷款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
 $B_{HB,BB}[i,t]$：借款型居民对银行的借款，在当期$t$；
-${Trans}_{HB}[t]$：借款型居民获得的转移支付，在时期$t$；
+$Trans_{HB}[t]$：借款型居民获得的转移支付，在时期$t$；
 
 
 
@@ -325,23 +325,23 @@ $D_{H,l}[t]$：居民部门长期存款；
 
 
 
-投资和储蓄型居民部门的个体$i$的目标是最大化其效用${Utility}_{HI}[t]$在当前时期$t$：
+投资和储蓄型居民部门的个体$i$的目标是最大化其效用$Utility_{HI}[t]$在当前时期$t$：
 $$
-{Utility}_{HI}[t]:=
+Utility_{HI}[t]:=
 \max \quad \mathbb{E}_{t=0} \left[ 
 \sum_{t=0}^{\infty}
 (\gamma_{HI})^{t} 
 \left(
-{Uti}_{HI,C}[t]
-- \frac{\left({Hour}_{HI}[t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
+Uti_{HI,C}[t]
+- \frac{\left(Hour_{HI}[t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
 \right)
 \right]
 \tag{HI_goal}
 $$
 其中，
 $\gamma_{HI}$：投资和储蓄型居民跨时期折现因子；
-${Uti}_{HI,C}[t]$：投资和储蓄型居民之消费效用；
-${Hour}_{HI}[t]$：投资和储蓄型居民的工作时长，在时期$t$；
+$Uti_{HI,C}[t]$：投资和储蓄型居民之消费效用；
+$Hour_{HI}[t]$：投资和储蓄型居民的工作时长，在时期$t$；
 $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
 
@@ -355,7 +355,7 @@ $\alpha_{H,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{HI}[t] + D_{HI}[t] \leq {Income}_{HI}[t] + \frac{(1+r_{BB,HI}[i,t-1])}{\pi[t]} \; D_{HI}[i,t-1] + {Trans}_{HI}[t]
+C_{HI}[t] + D_{HI}[t] \leq Income_{HI}[t] + \frac{(1+r_{BB,HI}[i,t-1])}{\pi[t]} \; D_{HI}[i,t-1] + Trans_{HI}[t]
 \tag{HI_st_budget}
 $$
 其中，
@@ -363,7 +363,7 @@ $C_{HI}[t]$：投资和储蓄型居民之消费需求，在时期$t$；
 $D_{HI}[t]$：投资和储蓄型居民在银行的储蓄；
 $Income_{HI}[t]$：投资和储蓄型居民当期总收入；
 $(1+r_{BB,HI}[i,t-1]) \; D_{HI}[i,t-1] / \pi[t]$：投资和储蓄型居民提现存于上一期的存款，从商业银行$i$，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
-${Trans}_{HI}[t]$：投资和储蓄型居民获得的转移支付，在时期$t$；
+$Trans_{HI}[t]$：投资和储蓄型居民获得的转移支付，在时期$t$；
 
 
 

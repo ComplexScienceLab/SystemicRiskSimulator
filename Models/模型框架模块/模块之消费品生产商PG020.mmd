@@ -48,7 +48,7 @@
 
 设定全要素生产率（技术）要素：
 $$
-{TFP}_{PI}[t] := {TFP}_{PG}[t]
+TFP_{PI}[t] := TFP_{PG}[t]
 $$
 设定资本要素：
 $$
@@ -56,15 +56,15 @@ K_{PI}[i,t] := K_{PG}[i,t]
 $$
 设定劳动要素：
 $$
-{Lab}_{PI}[i,t] := {Lab}_{PG}[i,t]
+Lab_{PI}[i,t] := Lab_{PG}[i,t]
 $$
 设定生产要素替代指数：
 $$
 \alpha_{PI} := \alpha_{PG}
 $$
-设定全要素生产率${TFP}_{PI}[t]$服从的AR(1)过程的随机因子的下标：
+设定全要素生产率$TFP_{PI}[t]$服从的AR(1)过程的随机因子的下标：
 $$
-\Box_{{TFP},PI} := \Box_{{TFP},PG}
+\Box_{TFP,PI} := \Box_{TFP,PG}
 $$
 
 
@@ -87,7 +87,7 @@ $B_{PK,B}[j,t]$：资本品生产商$\mathbb{PK}$信贷从银行$j$；
 
 - 假设消费品厂商部门生产的产品在同一时期内都能被消费掉，即无库存；
 
-- 假定对数形式的全要素生产率${TFP}_{\Box}[t]$服从AR(1)过程；
+- 假定对数形式的全要素生产率$TFP_{\Box}[t]$服从AR(1)过程；
 
 - 资本市场、劳动力市场是完全竞争的。则在消费品中间品生产商中的每一个都将接受给定的工资和资本租金水平；
 
@@ -205,7 +205,7 @@ $\Box_{PF}$
 
 最大化利润，在给定消费品最终品价格$p_{PF}[t]$和中间品价格$p_{PI}[i,t]$时：
 $$
-{Profit}_{PF}[t] := \max _{Y_{PI}[i,t]} p_{PF}[t] Y_{PF}[t] - \int_{0}^{1} p_{PI}[i, t] Y_{PI}[i, t] \; \mathbb{d} i
+Profit_{PF}[t] := \max _{Y_{PI}[i,t]} p_{PF}[t] Y_{PF}[t] - \int_{0}^{1} p_{PI}[i, t] Y_{PI}[i, t] \; \mathbb{d} i
 \tag{PF_goal}
 $$
 
@@ -324,12 +324,12 @@ $\Box_{PI}$
 所有的消费品中间品生产商$i$最小化其总成本$TC_{PI}$，在时期$t$。
 
 $$
-{TC}_{PI}[i,t] := \min _{{Lab}_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; {Lab}_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
+{TC}_{PI}[i,t] := \min _{Lab_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; Lab_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
 \tag{PI_goal_010}
 $$
 其中，
 $w_{PI}[t]$：消费品中间品生产商对居民支付单位工资（工资率），在时期$t$；
-${Lab}_{PI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
+$Lab_{PI}[i,t]$：消费品中间品生产商$i$的劳动力要素，在时期$t$；
 $r_{PK,PI}[t]$：消费品中间品生产商的消耗单位资本租金率，在时期$t$；
 $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，在时期$t$；
 
@@ -369,30 +369,30 @@ $$
 
 消费品中间品生产商之生产函数$F_{PI}[\cdot]$
 $$
-Y_{PI}[i,t] = F_{PI}[{TFP}_{PI}[t],K_{PI}[i,t],{Lab}_{PI}[i,t]] := {TFP}_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}} \; ({Lab}_{PI}[i,t])^{1-\alpha_{PI}}
+Y_{PI}[i,t] = F_{PI}[TFP_{PI}[t],K_{PI}[i,t],Lab_{PI}[i,t]] := TFP_{PI}[t] \; (K_{PI}[i,t])^{\alpha_{PI}} \; (Lab_{PI}[i,t])^{1-\alpha_{PI}}
 $$
 其中，
-${TFP}_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
+$TFP_{PI}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
 $K_{PI}[i,t]$ ：消费品中间品生产商$i$的资本要素；
-${Lab}_{PI}[i,t]$：消费品中间品生产商$i$的劳动要素；
+$Lab_{PI}[i,t]$：消费品中间品生产商$i$的劳动要素；
 $\alpha_{PI}$：消费品中间品生产商各生产要素的替代指数；
 
-假定全要素生产率 ${TFP}_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
+假定全要素生产率 $TFP_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\log {TFP}_{PI}[t] = \rho_{{TFP},PI} \log {TFP}_{PI}[t-1] + \varepsilon_{{TFP},PI}[t]
+\log TFP_{PI}[t] = \rho_{TFP,PI} \log TFP_{PI}[t-1] + \varepsilon_{TFP,PI}[t]
 $$
 
 其中，
-$\rho_{{TFP},PI}$：消费品中间品生产商的全要素生产率${TFP}_{PI}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{{TFP},PI}[t]$：消费品中间品生产商的全要素生产率对${TFP}_{PI}[t]$应的自回归过程的扰动项；
+$\rho_{TFP,PI}$：消费品中间品生产商的全要素生产率$TFP_{PI}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{TFP,PI}[t]$：消费品中间品生产商的全要素生产率对$TFP_{PI}[t]$应的自回归过程的扰动项；
 
 
 
-由最优化问题的一阶条件可以得出资本$K_{PI}[i,t]$和劳动${Lab}_{PI}[i,t]$的表达式，然后代入最小化总成本表达式、约束条件，即可得消费品中间品生产商$i$的实际总成本$TC_{PI}[t]$，然后可以得到消费品中间品生产商$i$共有的实际边际成本$MC_{PI}[t]$：
+由最优化问题的一阶条件可以得出资本$K_{PI}[i,t]$和劳动$Lab_{PI}[i,t]$的表达式，然后代入最小化总成本表达式、约束条件，即可得消费品中间品生产商$i$的实际总成本$TC_{PI}[t]$，然后可以得到消费品中间品生产商$i$共有的实际边际成本$MC_{PI}[t]$：
 $$
 MC_{PI}[t]
 := \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{{TFP}_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{TFP_{PI}[t]}
 $$
 
 
@@ -453,7 +453,7 @@ $$
 
 $$
 \begin{align*}
-& \max _{\tilde{P}_{PI}[j,t]} {Profit}_{PI}[j,t] \\
+& \max _{\tilde{P}_{PI}[j,t]} Profit_{PI}[j,t] \\
 := & \max _{\tilde{P}_{PI}[j,t]} 
 \mathbb{E}_{t} \sum_{t_{s}=0}^{\infty}
 \left(
@@ -659,7 +659,7 @@ $$
 资本生产部门的决策问题：
 
 $$
-{Profit}_{PK}[t] := \max _{I_{PK}[t]} \quad p_{PK}[t] \; F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right] \; K_{PK}[t]-p_{PF}[t] \; I_{PK}[t]
+Profit_{PK}[t] := \max _{I_{PK}[t]} \quad p_{PK}[t] \; F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right] \; K_{PK}[t]-p_{PF}[t] \; I_{PK}[t]
 $$
 
 
@@ -697,13 +697,13 @@ $$
 p_{PK}[t] \; {F_{PK}}^{\prime} \left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]=p_{PF}[t]
 $$
 
-全要素生产率${TFP}_{PK}[t]$服从AR(1)过程：
+全要素生产率$TFP_{PK}[t]$服从AR(1)过程：
 
 $$
-\log {TFP}_{PK}[t]=\rho_{{TFP},PK} \log {TFP}_{PK}[t-1] + \varepsilon_{{TFP},PK}[t]
+\log TFP_{PK}[t]=\rho_{TFP,PK} \log TFP_{PK}[t-1] + \varepsilon_{TFP,PK}[t]
 $$
 
-其中，$\varepsilon_{{TFP},PK}[t]$ 服从标准差为$\sigma_{{TFP},PK}$的i.i.d.冲击。
+其中，$\varepsilon_{TFP,PK}[t]$ 服从标准差为$\sigma_{TFP,PK}$的i.i.d.冲击。
 
 相邻时期持有单位资本的名义总回报率$r_{PK,n}[t]$的计算如下，
 

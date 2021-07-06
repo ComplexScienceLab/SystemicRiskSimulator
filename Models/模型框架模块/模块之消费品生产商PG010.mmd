@@ -150,7 +150,7 @@ $\left(r_{B,PG}[i,t-1]+1 \right) / \pi[t]\; B_{PG,B}[i,t-1]$：消费品生产�
 
 同质性代表性消费品生产商具有如下行为：
 
-- 寻求利润最大化${Profit}_{PC}[t]$；
+- 寻求利润最大化$Profit_{PC}[t]$；
 
 - 获取劳动力要素投入，从居民部门$\mathbb{H}$；
 
@@ -230,11 +230,11 @@ $B_{PG}[t]$：消费品生产商借款总量，在时期$t$；
 
 消费品生产商部门$\mathbb{PG}$之目标是最大化当期利润$Profit_{PG}[t]$：
 $$
-{Profit}_{PG}[t] := 
-\max_{B_{PG,B},{Lab}_{PG}[t],w_{H}[t]} \quad
+Profit_{PG}[t] := 
+\max_{B_{PG,B},Lab_{PG}[t],w_{H}[t]} \quad
 \left(
 \begin{array}{c}
-Q_{PG}[t] - w_{H}[t] \; {Lab}_{PG}[t] \\
+Q_{PG}[t] - w_{H}[t] \; Lab_{PG}[t] \\
 + \Delta K_{PG}[t] \\
 - \tau[t]
 \end{array}
@@ -244,7 +244,7 @@ $$
 
 其中，
 $Q_{PG}[t]$：消费品生产商产出销售总收入；
-$w_{H}[t] \; {Lab}_{PG}[t]$：消费品生产商支付工资给居民部门；
+$w_{H}[t] \; Lab_{PG}[t]$：消费品生产商支付工资给居民部门；
 $\Delta K_{PG}[t]$：消费品生产商资本变动量，默认表示当期与上一期变动量；
 $\tau[t]$：消费品生产商缴纳税收；
 
@@ -270,25 +270,25 @@ $\tau[t]$：消费品生产商缴纳税收；
 
 消费品生产商之生产函数$F_{PG}[\cdot]$服从Cobb-Douglas生产函数形式：
 $$
-Y_{PG}[t] = F_{PG}[{TFP}_{PG}[t],K_{PG}[t],{Lab}_{PG}[t]] := {TFP}_{PG}[t] \; (K_{PG}[t])^{\alpha_{PG}} \; ({Lab}_{PG}[t])^{1-\alpha_{PG}} \\
+Y_{PG}[t] = F_{PG}[TFP_{PG}[t],K_{PG}[t],Lab_{PG}[t]] := TFP_{PG}[t] \; (K_{PG}[t])^{\alpha_{PG}} \; (Lab_{PG}[t])^{1-\alpha_{PG}} \\
 \tag{PG_st_product}
 $$
 其中，
-${TFP}_{PG}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
+$TFP_{PG}[t]$：消费品领域生产的全要素生产率（技术）在时期$t$；
 $K_{PG}[t]$ ：消费品生产商$i$的资本要素；
-${Lab}_{PG}[t]$：消费品生产商$i$的劳动要素；
+$Lab_{PG}[t]$：消费品生产商$i$的劳动要素；
 $\alpha_{PG}$：消费品生产商各生产要素的替代指数；
 
 
 
-假定全要素生产率 ${TFP}_{PG}[t]$ 服从如下形式的一阶自回归AR(1)过程：
+假定全要素生产率 $TFP_{PG}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\log {TFP}_{PG}[t] = \rho_{{TFP},PG} \log {TFP}_{PG}[t-1] + \varepsilon_{{TFP},PG}[t]
+\log TFP_{PG}[t] = \rho_{TFP,PG} \log TFP_{PG}[t-1] + \varepsilon_{TFP,PG}[t]
 $$
 
 其中，
-$\rho_{{TFP},PG}$：消费品生产商的全要素生产率${TFP}_{PG}[t]$对应的自回归过程的回归系数；
-$\varepsilon_{{TFP},PG}[t]$：消费品生产商的全要素生产率对${TFP}_{PG}[t]$应的自回归过程的扰动项；
+$\rho_{TFP,PG}$：消费品生产商的全要素生产率$TFP_{PG}[t]$对应的自回归过程的回归系数；
+$\varepsilon_{TFP,PG}[t]$：消费品生产商的全要素生产率对$TFP_{PG}[t]$应的自回归过程的扰动项；
 
 
 
