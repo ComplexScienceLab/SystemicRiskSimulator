@@ -811,7 +811,7 @@ $\Box_{PI}$
 所有的消费品中间品生产商$i$最小化其总成本$TC_{PI}$，在时期$t$。
 
 $$
-{TC}_{PI}[i,t] := \min _{Lab_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; Lab_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
+TC_{PI}[i,t] := \min _{Lab_{PI}[i,t] , K_{PI}[i,t]}  w_{PI}[t] \; Lab_{PI}[i,t] + r_{PK,PI}[t] \; K_{PI}[i,t]
 \tag{PI_goal_010}
 $$
 其中，
@@ -841,7 +841,7 @@ $$
 
 对于整个消费品中间品生产商部门而言，
 $$
-{TC}_{PI}[t] := \sum_{i=1}^{N_{PF}} {TC}_{PI}[i,t]
+TC_{PI}[t] := \sum_{i=1}^{N_{PF}}{TC_{PI}[i,t]}
 $$
 
 
@@ -1536,7 +1536,7 @@ $\delta_{BB}$：折旧率之于商业银行资本；
 
 商业银行对于最终经营收入按照比例$\theta_{BB,Dv}[i,t]$做股利分红$Dv_{BB}[i,t]$：
 $$
-{Dv}_{BB}[i,t] := \theta_{BB,Dv}[i,t] \; Profit_{BB}[i,t]
+Dv_{BB}[i,t] := \theta_{BB,Dv}[i,t] \; Profit_{BB}[i,t]
 $$
 由于我国国情，股利分红几乎可以忽略不计。
 
@@ -1896,7 +1896,7 @@ $\Box_{PK}$
 
   - 调控方式：
 
-- 控制商业银行的存款准备金率${DR}_{BB}[i,t]$以达到要求$\check{\theta}_{DR}[i,t]$；
+- 控制商业银行的存款准备金率$DR_{BB}[i,t]$以达到要求$\check{\theta}_{DR}[i,t]$；
 
 - 贷款价值比（LTVs）；
 
