@@ -790,7 +790,7 @@ $\alpha_{PI}$：消费品中间品生产商各生产要素的替代指数；
 
 假定全要素生产率 $TFP_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\log TFP_{PI}[t] = \rho_{TFP,PI} \log TFP_{PI}[t-1] + \varepsilon_{TFP,PI}[t]
+\log TFP_{PI}[t] = \rho_{TFP,PI} \; \log TFP_{PI}[t-1] + \varepsilon_{TFP,PI}[t]
 $$
 
 其中，
@@ -1047,17 +1047,18 @@ $\Box_{PK}$
 
 
 
-银行存款的贷存比：
+银行存款之贷存比：
 $$
-d_{BB}[t] := \frac{deposit_{BB}[t]}{credit_{BB}[t]}
+\theta_{LDR,BB}[i,t] := \frac{L_{BB}[i,t]}{D_{BB,H}[i,t]}
 $$
-资本比率：
+银行资本比率：
+
 $$
-k_{BB}[t] := 1-d_{BB}[t] = \frac{credit_{BB}[t] - deposit_{BB}[t]}{credit_{BB}[t]} = \frac{equity_{BB}[t]}{credit_{BB}[t]}
+\theta_{ELR,BB}[i,t] := \frac{Equity_{BB}[i,t]}{L_{BB}[i,t]} = 1 - \frac{1}{\theta_{LDR,BB}[i,t]}
 $$
 
 
-项目回报：
+TODO项目回报：
 $$
 \bar{R}=R_t^p+\varepsilon_t
 $$

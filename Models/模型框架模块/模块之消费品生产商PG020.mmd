@@ -636,13 +636,15 @@ $\Box_{PK}$
 
 
 
-银行存款的贷存比：
+银行存款之贷存比：
 $$
-d_{BB}[t] := \frac{deposit_{BB}[t]}{credit_{BB}[t]}
+\theta_{LDR,BB}[i,t] := \frac{L_{BB}[i,t]}{D_{BB,H}[i,t]}
 $$
-资本比率：
+
+银行资本比率：
+
 $$
-k_{BB}[t] := 1-d_{BB}[t] = \frac{credit_{BB}[t] - deposit_{BB}[t]}{credit_{BB}[t]} = \frac{equity_{BB}[t]}{credit_{BB}[t]}
+\theta_{ELR,BB}[i,t] := \frac{Equity_{BB}[i,t]}{L_{BB}[i,t]} = 1 - \frac{1}{\theta_{LDR,BB}[i,t]}
 $$
 
 
