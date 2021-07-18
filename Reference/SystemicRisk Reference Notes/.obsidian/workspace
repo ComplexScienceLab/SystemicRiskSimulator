@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "13e1819a81c9ce0e",
+    "type": "split",
+    "children": [
+      {
+        "id": "eaf334c2e10bfdd3",
+        "type": "leaf",
+        "dimension": 33.55350066050198,
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Acharya_Pedersen et al_2017_Measuring Systemic Risk.md"
+          }
+        }
+      },
+      {
+        "id": "36f8b6c2e35432a4",
+        "type": "leaf",
+        "dimension": 66.44649933949802,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Acharya_Pedersen et al_2017_Measuring Systemic Risk.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ee4e31022eef6e28",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b6476e4e7379148",
+        "type": "tabs",
+        "dimension": 57.785467128027676,
+        "children": [
+          {
+            "id": "bcb0a5e2632bcc34",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "623468cb4dc633e8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a35c05e268275cd6",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "7db1a475e3dee3c1",
+        "type": "tabs",
+        "dimension": 42.21453287197232,
+        "children": [
+          {
+            "id": "a8854b325b119e9a",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Acharya_Pedersen et al_2017_Measuring Systemic Risk.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 455
+  },
+  "right": {
+    "id": "cac73dfccff6930d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b1db9209ab3f432",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4ce8275165d9128",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Acharya_Pedersen et al_2017_Measuring Systemic Risk.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "7801de44678daf8a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Acharya_Pedersen et al_2017_Measuring Systemic Risk.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "936beefe8e9edab8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30310c13e83a16af",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "36f8b6c2e35432a4",
+  "lastOpenFiles": [
+    "Acharya_Pedersen et al_2017_Measuring Systemic Risk.md",
+    "2021-07-18.md"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "baseFontSize": 16,
+  "theme": "moonstone",
+  "cssTheme": "mystyle_themes_for_obsidian_20210110",
+  "enabledCssSnippets": [
+    "mystyle_snippets_for_obsidian_20210110"
+  ]
+}
