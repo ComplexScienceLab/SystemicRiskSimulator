@@ -173,13 +173,13 @@ $D_{H,l}[t]$：居民部门长期存款；
 
 - 居民部门$\mathbb{H}$向商业银行部门之个体$i$借款$B_{H,BB}[i,t]$，以商业银行对居民的贷款利率（等价于居民的借款利率）$r_{L,BB,H}[i,t]$；
 
-- 居民部门$\mathbb{H}$向商业银行部门之个体$i$还款$B_{H,BB}[i,t]$，以商业银行对居民的贷款利率（等价于居民的借款利率）$r_{L,BB,H}[i,t]$；
+- 居民部门$\mathbb{H}$向商业银行部门之个体$i$还款$B_{H,BB}[i,t-1]$，以商业银行对居民的贷款利率（等价于居民的借款利率）$r_{L,BB,H}[i,t]$；
 
 - 居民部门$\mathbb{H}$消费需求$C_{H}[t]$；
 
 - 居民部门$\mathbb{H}$向商业银行部门个体$i$存款$D_{H}[t]$，以商业银行$i$提供的存款利率$r_{D,BB,H}[i,t]$；
 
-- 居民部门$\mathbb{H}$向商业银行部门个体$i$取款$D_{H}[t]$，以商业银行$i$提供的存款利率$r_{D,BB,H}[i,t]$；
+- 居民部门$\mathbb{H}$向商业银行部门个体$i$取款$D_{H}[t-1]$，以商业银行$i$提供的存款利率$r_{D,BB,H}[i,t]$；
 
 - 居民部门$\mathbb{H}$提供$Lab_{P}[t]$供给生产部门$\mathbb{P}$，付出劳动时长$Hour_{H}[t]$；
 
@@ -219,26 +219,26 @@ $D_{H,l}[t]$：居民部门长期存款；
 
 ###### 目标：
 
-借款型居民部门之目标是最大化其效用$Utility_{HB}$在当前时期$t$：
+居民部门之目标是最大化其效用$Utility_{H}$在当前时期$t$：
 
 $$
-Utility_{HB}[t] :=
-\max _{Uti_{HB,C}[t],Hour_{HB}[t]}
+Utility_{H}[t] :=
+\max _{Uti_{H,C}[t],Hour_{H}[t]}
 \quad \mathbb{E}_{t=0} 
 \left[ \sum_{t=0}^{\infty} 
-(\gamma_{HB})^{t} \left(
-Uti_{HB,C}[t]
-- \frac{\left(Hour_{HB}[t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
+(\gamma_{H})^{t} \left(
+Uti_{H,C}[t]
+- \frac{\left(Hour_{H}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
  \right)
 \right]
-\tag{HB_goal}
+\tag{H_goal}
 $$
 
 其中，
-$\gamma_{HB}$：借款型居民跨时期折现因子；
-$Uti_{HB,C}[t]$：借款型居民之消费效用；
-$Hour_{HB}[t]$：借款型居民的工作时长，在时期$t$；
-$\alpha_{H,H}$：居民工作时长对效用的指数因子；
+$\gamma_{H}$：借款型居民跨时期折现因子；
+$Uti_{H,C}[t]$：借款型居民之消费效用；
+$Hour_{H}[t]$：借款型居民的工作时长，在时期$t$；
+$\alpha_{Hour,H}$：居民工作时长对效用的指数因子；
 
 
 
@@ -354,7 +354,7 @@ Utility_{HI}[t]:=
 (\gamma_{HI})^{t} 
 \left(
 Uti_{HI,C}[t]
-- \frac{\left(Hour_{HI}[t]\right)^{1+\alpha_{H,H}}}{1+\alpha_{H,H}}
+- \frac{\left(Hour_{HI}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
 \right)
 \right]
 \tag{HI_goal}
@@ -363,7 +363,7 @@ $$
 $\gamma_{HI}$：投资和储蓄型居民跨时期折现因子；
 $Uti_{HI,C}[t]$：投资和储蓄型居民之消费效用；
 $Hour_{HI}[t]$：投资和储蓄型居民的工作时长，在时期$t$；
-$\alpha_{H,H}$：居民工作时长对效用的指数因子；
+$\alpha_{Hour,H}$：居民工作时长对效用的指数因子；
 
 
 
