@@ -231,9 +231,9 @@ $\Box_{HB}$
 
 ##### 行为：
 
-- 向商业银行部门之个体$i$借款$B_{HB,BB}[i,t]$，以商业银行对居民的贷款利率（等价于居民的借款利率）$r_{BB,HB}[i,t]$；
+- 向商业银行部门之个体$i$借款$B_{HB,BB}[i,t]$，以商业银行对居民的贷款利率（等价于居民的借款利率）$r_{L,BB,H}[i,t]$；
 
-- 向商业银行部门之个体$i$还款$B_{HB,BB}[i,t]$，以商业银行对居民的贷款利率（等价于居民的借款利率）$r_{BB,HB}[i,t]$；
+- 向商业银行部门之个体$i$还款$B_{HB,BB}[i,t]$，以商业银行对居民的贷款利率（等价于居民的借款利率）$r_{L,BB,H}[i,t]$；
 
 - 消费需求$C_{HB}[t]$；
 
@@ -288,14 +288,14 @@ $\alpha_{Hour,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{HB}[t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{BB,HB}[i,t]) }{\pi[t]} \leq Income_{HB}[t] + B_{HB,BB}[i,t] + Trans_{HB}[t]
+C_{HB}[t] + B_{HB,BB}[i,t-1] \; \frac{(1 + r_{L,BB,H}[i,t]) }{\pi[t]} \leq Income_{HB}[t]+ B_{HB,BB}[i,t] + Trans_{HB}[t]
 \tag{HB_st_budget}
 $$
 其中，
 $C_{HB}[t]$：借款型居民之消费需求，在时期$t$；
-$B_{HB,BB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$：借款型居民偿还上一期的借款给商业银行部门于本期，以借款利率$r_{BB,HB}[i,t]$，考虑当前总通胀率$\pi[t]$的影响；
+$B_{HB,BB}[i,t-1] \; \left(1 + r_{L,BB,H}[i,t]\right) / \pi[t]$：借款型居民偿还上一期的借款给商业银行部门于本期，以借款利率$r_{L,BB,H}[i,t]$，考虑当前总通胀率$\pi[t]$的影响；
 $Income_{HB}[t]$：借款型居民当期总收入；
-$B_{HB,BB}[i,t-1] \; (1+r_{BB,HB}[i,t-1]) / \pi[t]$：借款型居民之上一期借款$B_{HB,BB}[i,t-1]$于本期偿还，以上一期的商业银行$i$设定的贷款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
+$B_{HB,BB}[i,t-1] \; (1+r_{L,BB,H}[i,t-1]) / \pi[t]$：借款型居民之上一期借款$B_{HB,BB}[i,t-1]$于本期偿还，以上一期的商业银行$i$设定的贷款利率$r_{D,BB,H}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
 $B_{HB,BB}[i,t]$：借款型居民对银行的借款，在当期$t$；
 $Trans_{HB}[t]$：借款型居民获得的转移支付，在时期$t$；
 
@@ -303,7 +303,7 @@ $Trans_{HB}[t]$：借款型居民获得的转移支付，在时期$t$；
 
 ~~对于借款型居民消费在房地产方面，存在信贷抵押约束：~~
 $$
-\left(1+r_{BB,HB}[i,t] \right) B_{HB,BB}[i,t] \leq \theta_{BB,HB}[t] \; \mathbb{E}_{t} \left[ p_{PE}[t+1] \; \pi[t+1] \; C_{HB,PE}[t] \right]
+\left(1+r_{L,BB,H}[i,t]\right) B_{HB,BB}[i,t] \leq \theta_{BB,HB}[t] \; \mathbb{E}_{t} \left[ p_{PE}[t+1] \; \pi[t+1] \; C_{HB,PE}[t] \right]
 \tag{HB_st_debt}
 $$
 ~~其中，~~
@@ -362,9 +362,9 @@ $D_{H,l}[t]$：居民部门长期存款；
 
 ##### 行为：
 
-- 向商业银行部门个体$i$存款$D_{HI}[t]$，以商业银行$i$提供的存款利率$r_{BB,HI}[i,t]$；
+- 向商业银行部门个体$i$存款$D_{HI}[t]$，以商业银行$i$提供的存款利率$r_{D,BB,H}[i,t]$；
 
-- 向商业银行部门个体$i$取款$D_{HI}[t]$，以商业银行$i$提供的存款利率$r_{BB,HI}[i,t]$；
+- 向商业银行部门个体$i$取款$D_{HI}[t]$，以商业银行$i$提供的存款利率$r_{D,BB,H}[i,t]$；
 
 - 消费需求$C_{HI}[t]$；
 
@@ -410,14 +410,14 @@ $\alpha_{Hour,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{HI}[t] + D_{HI}[t] \leq Income_{HI}[t] + \frac{(1+r_{BB,HI}[i,t-1])}{\pi[t]} \; D_{HI}[i,t-1] + Trans_{HI}[t]
+C_{HI}[t] + D_{HI}[t] \leq Income_{HI}[t] + \frac{(1+r_{D,BB,H}[i,t-1])}{\pi[t]} \; D_{HI}[i,t-1]+ Trans_{HI}[t]
 \tag{HI_st_budget}
 $$
 其中，
 $C_{HI}[t]$：投资和储蓄型居民之消费需求，在时期$t$；
 $D_{HI}[t]$：投资和储蓄型居民在银行的储蓄；
 $Income_{HI}[t]$：投资和储蓄型居民当期总收入；
-$(1+r_{BB,HI}[i,t-1]) \; D_{HI}[i,t-1] / \pi[t]$：投资和储蓄型居民提现存于上一期的存款，从商业银行$i$，以上一期的存款利率$r_{BB,HI}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
+$(1+r_{D,BB,H}[i,t-1]) \; D_{HI}[i,t-1]/ \pi[t]$：投资和储蓄型居民提现存于上一期的存款，从商业银行$i$，以上一期的存款利率$r_{D,BB,H}[i,t-1]$，考虑当前总通胀率$\pi[t]$的影响；
 $Trans_{HI}[t]$：投资和储蓄型居民获得的转移支付，在时期$t$；
 
 
@@ -1452,9 +1452,9 @@ $\Box_{BB}$
     - 商业银行$i$收回上一期贷给房地产开发商部门$\mathbb{PE}$之贷款$L_{BB,PE}[i,t-1] \; (1+r_{BB,PE}[i,t-1]) / \pi[t]$；
   - 商业银行$i$提供贷款给借款型居民部门：
 
-    - 商业银行$i$提供贷款$L_{BB,H}[i,t]$给借款型居民部门之居民$\mathbb{HB}$于当期$t$，以利率$r_{BB,HB}[i,t]$；
+    - 商业银行$i$提供贷款$L_{BB,H}[i,t]$给借款型居民部门之居民$\mathbb{HB}$于当期$t$，以利率$r_{L,BB,H}[i,t]$；
 
-    - 商业银行$i$收回上一期贷给借款型居民部门$\mathbb{HB}$之贷款$L_{BB,H}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$，从借款型居民部门之居民$\mathbb{HB}_{j}$；
+    - 商业银行$i$收回上一期贷给借款型居民部门$\mathbb{HB}$之贷款$L_{BB,H}[i,t-1] \; \left(1 + r_{L,BB,H}[i,t]\right) / \pi[t]$，从借款型居民部门之居民$\mathbb{HB}_{j}$；
   
 - 开展影子银行业务：
 
@@ -1506,9 +1506,9 @@ $\delta_{BB}$：折旧率之于商业银行资本；
 
 商业银行提供贷款服务：
 
-商业银行$i$提供贷款$L_{BB,H}[i,t]$给借款型居民部门之居民$\mathbb{HB}$于当期$t$，以利率$r_{BB,HB}[i,t]$。则该银行当期资产$Asset_{BB,HB}[i,t]$增加，同时当期资金流减少；
+商业银行$i$提供贷款$L_{BB,H}[i,t]$给借款型居民部门之居民$\mathbb{HB}$于当期$t$，以利率$r_{L,BB,H}[i,t]$。则该银行当期资产$Asset_{BB,HB}[i,t]$增加，同时当期资金流减少；
 
-商业银行$i$收回上一期贷给借款型居民部门$\mathbb{HB}$之贷款$L_{BB,HB}[i,t-1] \; \left(1 + r_{BB,HB}[i,t]\right) / \pi[t]$。则该银行当期资产$Asset_{BB,HB}[i,t]$减少，同时当期资金流增加；
+商业银行$i$收回上一期贷给借款型居民部门$\mathbb{HB}$之贷款$L_{BB,HB}[i,t-1] \; \left(1 + r_{L,BB,H}[i,t]\right) / \pi[t]$。则该银行当期资产$Asset_{BB,HB}[i,t]$减少，同时当期资金流增加；
 
 商业银行$i$提供贷款资本$L_{BB,PK}[i,t]$贷给消费品生产商部门之资本品生产商$\mathbb{PK}$，于当期，以利率$r_{BB,PK}[i,t]$。则该银行当期资产增加$Asset_{BB,PK}[i,t]$，同时当期资金流减少；
 
@@ -1596,7 +1596,7 @@ Profit_{BB}[i,t]
 \max _{
 \left\{
 \begin{array}{c}
-r_{BB,HI}[i,t],r_{BB,HB}[i,t],r_{BB,PK}[i,t],r_{BB,PE}[i,t]\\
+r_{D,BB,H}[i,t],r_{L,BB,H}[i,t],r_{BB,PK}[i,t],r_{BB,PE}[i,t]\\
 D_{BB,HI}[i,t],L_{BB,HB}[i,t]\\
 ABS_{BS}[j,i,t]
 \end{array}
