@@ -21,7 +21,8 @@
 		},
 		"files.autoSave": "afterDelay",
 		"editor.fontFamily": "Times New Roman, Menlo, Monaco, 'Courier New', monospace",
-		"editor.fontSize": 15,
+		"editor.suggestFontSize": 12,
+		"editor.fontSize": 14,
 	
 	}
 }

@@ -28,8 +28,6 @@ $\Box_{BB}$
 
 #### 银行部门各银行划分：
 
-
-
 每个银行机构作为一个个体。个体之间的差异性通过数据或者参数设定体现。
 
 
@@ -44,7 +42,7 @@ $\Box_{BB}$
 
 
 
-#### TODO设定：
+#### 设定：
 
 设定同期信贷资产调整成本$Adj_{BB,A}\left[Asset_{1},Asset_{2}\right]$存在函数关系式：
 
@@ -58,15 +56,28 @@ $$
 
 
 
-#### TODO模块描述
+#### 模块描述
+
+每个银行机构作为一个个体。个体之间的差异性通过数据或者参数设定体现。
 
 
 
-#### TODO模块接口
+
+
+#### 模块接口
+
+
 
 商业银行部门$\mathbb{BB}$接受居民部门$\mathbb{H}$之存款资金，由以下构成：
 $$
 D_{H}[t] := \sum_{i=1}^{N_{BB}}{D_{H}[i,t]}
+$$
+
+
+
+其中，商业银行部门$\mathbb{BB}$之个体$i$接受居民部门$\mathbb{H}$之存款资金，由以下构成：
+$$
+D_{H}[i,t] := D_{H}[i,t]
 $$
 
 
@@ -78,6 +89,13 @@ $$
 
 
 
+其中，商业银行部门$\mathbb{BB}$之个体$i$提供贷款资本贷给居民部门$\mathbb{H}$，由以下构成：
+$$
+L_{BB,H}[i,t] := L_{BB,H}[i,t]
+$$
+
+
+
 商业银行部门$\mathbb{BB}$提供贷款资本贷给生产商部门$\mathbb{P}$，由以下构成：
 $$
 L_{BB,P}[t] := \sum_{i=1}^{N_{BB}}{L_{BB,P}[i,t]}
@@ -85,21 +103,7 @@ $$
 
 
 
-商业银行部门$\mathbb{BB}$之个体$i$接受居民部门$\mathbb{H}$之存款资金，由以下构成：
-$$
-D_{H}[i,t] := D_{HI}[i,t]D_{H}[i,t] := D_{H}[i,t]
-$$
-
-
-
-商业银行部门$\mathbb{BB}$之个体$i$提供贷款资本贷给居民部门$\mathbb{H}$，由以下构成：
-$$
-L_{BB,H}[i,t] := L_{BB,H}[i,t]
-$$
-
-
-
-商业银行部门$\mathbb{BB}$之个体$i$提供贷款资本贷给生产商部门$\mathbb{P}$，由以下构成：
+其中，商业银行部门$\mathbb{BB}$之个体$i$提供贷款资本贷给生产商部门$\mathbb{P}$，由以下构成：
 $$
 L_{BB,P}[i,t] := L_{BB,P}[i,t]
 $$
@@ -112,13 +116,15 @@ is_{BS} := \Box
 $$
 
 
-对于商业银行$i$之当期总资产$Asset_{BB}[i,t]$，由如下构成：
+
+TODO对于商业银行$i$之当期总资产$Asset_{BB}[i,t]$，由如下构成：
 $$
 Asset_{BB}[i,t] := Asset_{BB,H}[i,t] + Asset_{BB,P}[i,t] + Asset_{BB,BI}[i,t] + Asset_{BB,BS}[i,j,t]
 $$
 
 
-对于商业银行对于商业银行$i$之当期总负债$Liability_{BB}[i,t]$，由如下构成：
+
+TODO对于商业银行对于商业银行$i$之当期总负债$Liability_{BB}[i,t]$，由如下构成：
 $$
 Liability_{BB}[i,t] := Liability_{BB,H}[i,t] + Liability_{BB,BI}[i,t]
 $$
@@ -392,6 +398,39 @@ $$
 
 
 
+
+#### 资产负债表：
+
+
+
+商业银行$i$面临每一时期的资产负债表平衡约束。其资产负债表可表示为：
+
+$$
+Asset_{BB}[i,t] = Liability_{BB}[i,t] + Equity_{BB}[i,t]
+$$
+其中，
+$Asset_{BB}[i,t]$：商业银行$i$之当期的总资产；
+$Liability_{BB}[i,t]$：商业银行$i$之当期的总负债；
+$Equity_{BB}[i,t]$：商业银行$i$之当期的总所有者权益；
+
+
+
+对于商业银行$i$在同业拆借市场资产$Asset_{BB,BI}[i,t]$，由如下构成：
+$$
+Asset_{BB,BI}[i,t] = \sum_{j=1}^{N_{j}}{Asset_{BB,BI}[i,j,t]}
+$$
+其中，
+$Asset_{BB,BI}[i,j,t]$：商业银行$i$拥有商业银行$j$之资金作为资产，在同业拆借市场中，在当期。
+
+
+
+
+
+
+
+
+
+
 #### 目标
 
 
@@ -431,8 +470,8 @@ ABS_{BS}[j,i,t]
 \left(\gamma_{BB}\right)^{t} 
 \left(
 \begin{align}&
-D_{HI}[t]
--D_{HI}[i,t-1] \; \frac{(1+r_{BB,HI})}{\pi[t]}
+D_{H}[t]
+-D_{H}[i,t-1] \; \frac{(1+r_{BB,HI})}{\pi[t]}
 \\&
 +B_{BB,G}[i,t]
 -B_{BB,G}[i,t-1] \; \frac{1+r_{G,BB}[i,t]}{\pi[t]}
@@ -457,8 +496,8 @@ D_{HI}[t]
 $$
 
 其中，
-$D_{HI}[t]$：居民部门存款于商业银行$i$的资金；
-$D_{HI}[i,t-1] \; (1+r_{BB,HI}) / \pi[t]$：提供资金以供居民部门$\mathbb{H}$提取上一期存款所需；
+$D_{H}[t]$：居民部门存款于商业银行$i$的资金；
+$D_{H}[i,t-1] \; (1+r_{BB,HI}) / \pi[t]$：提供资金以供居民部门$\mathbb{H}$提取上一期存款所需；
 $B_{BB,G}[i,t]$：商业银行$i$获取政府部门之中央银行$\mathbb{G}$贴现获得借款资金$B_{BB,G}[i,t]$，于当期；
 $B_{BB,G}[i,t-1] \; (1+r_{G,BB}[i,t]) / \pi[t]$：商业银行$i$偿还上一期向政府部门之中央银行$\mathbb{G}$贴现资金；
 $L_{BB,PG}[i,t-1] \; (1+r_{BB,PG}[i,t]-\delta_{PG}) / \pi[t]$：收回上一期贷给消费品生产商部门$\mathbb{PG}$之贷款所获得的收入，与此同时考虑消费品生产商部门对商业银行个体$i$之违约概率$\mathcal{Pr}_{def,PG}[i,t]$，在当期；
@@ -486,33 +525,12 @@ TODO同业拆借；
 
 
 
-商业银行$i$面临每一时期的资产负债表平衡约束。其资产负债表可表示为：
-
-$$
-Asset_{BB}[i,t] = Liability_{BB}[i,t] + Equity_{BB}[i,t]
-$$
-其中，
-$Asset_{BB}[i,t]$：商业银行$i$之当期的总资产；
-$Liability_{BB}[i,t]$：商业银行$i$之当期的总负债；
-$Equity_{BB}[i,t]$：商业银行$i$之当期的总所有者权益；
-
-
-
-对于商业银行$i$在同业拆借市场资产$Asset_{BB,BI}[i,t]$，由如下构成：
-$$
-Asset_{BB,BI}[i,t] = \sum_{j=1}^{N_{j}}{Asset_{BB,BI}[i,j,t]}
-$$
-其中，
-$Asset_{BB,BI}[i,j,t]$：商业银行$i$拥有商业银行$j$之资金作为资产，在同业拆借市场中，在当期。
-
-
-
 
 
 
 TODO商业银行$i$面临资金流约束：
 $$
-L_{BB,PE}[i,t] + L_{BB,PG}[i,t] + L_{BB,H}[i,t] = D_{HI}[\cdot,i,t] + D_{HI}[t] + B_{BI}[i,j,t] + K_{BB}[i,t]
+L_{BB,PE}[i,t] + L_{BB,PG}[i,t] + L_{BB,H}[i,t] = D_{H}[\cdot,i,t] + D_{H}[t] + B_{BI}[i,j,t] + K_{BB}[i,t]
 $$
 
 
