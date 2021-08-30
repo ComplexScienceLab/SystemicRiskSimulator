@@ -2,12 +2,6 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "Models"
-		},
-		{
-			"path": "../../../../LocalFiles/ResearchFile/SystemicRisk_code"
 		}
 	],
 	"settings": {
