@@ -3,3 +3,4 @@ Reference/*
 Reports/Graduation Thesis/*
 .obsidian/*
 */.sync.ffs_db
+*.ffs_lock
