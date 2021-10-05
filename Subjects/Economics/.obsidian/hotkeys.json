@@ -1,0 +1,18 @@
+{
+  "open-with-default-app:open": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": " "
+    }
+  ],
+  "open-with-default-app:show": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "Enter"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "60808f69a4356ec8",
+    "type": "split",
+    "children": [
+      {
+        "id": "8117633d88978731",
+        "type": "split",
+        "children": [
+          {
+            "id": "bb8de6201f82dbc2",
+            "type": "leaf",
+            "dimension": 62.52485089463221,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "通用经济与金融/知识笔记/宏观审慎政策.md",
+                "mode": "preview"
+              }
+            }
+          },
+          {
+            "id": "d09edb6b189494d1",
+            "type": "split",
+            "dimension": 37.47514910536779,
+            "children": [
+              {
+                "id": "c9144ddc6a51c472",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "通用经济与金融/知识笔记/宏观审慎政策.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "329ff631d64aa4e8",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "通用经济与金融/知识笔记/宏观审慎政策.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.6541198871045791,
+                      "close": false
+                    }
+                  }
+                }
+              }
+            ],
+            "direction": "vertical"
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0d3c01f84a3dedde",
+    "type": "split",
+    "children": [
+      {
+        "id": "b761c47e0e5a7f51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f3b81faabd15a708",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9b0ab5bee04ce260",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "宏观审慎政策",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "952d3bba9dd93636",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 251
+  },
+  "right": {
+    "id": "4f2da989a6b386e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e392b82469f3bf65",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9421e9480e5a2f5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "通用经济与金融/知识笔记/宏观审慎政策.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "72ae51aa27d0d946",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "通用经济与金融/知识笔记/宏观审慎政策.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "2d2fde1de479033a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "79e74eeffbfe5adf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 232
+  },
+  "active": "bb8de6201f82dbc2",
+  "lastOpenFiles": [
+    "通用经济与金融/知识笔记/宏观审慎政策.md",
+    "通用经济与金融/知识笔记/Untitled.md",
+    "货币银行学/货币银行学笔记.md",
+    "会计/资产负债表，利润表，现金流量表.md",
+    "通用经济与金融/知识笔记/货币政策工具.md",
+    "通用经济与金融/知识笔记/再贴现政策.md",
+    "通用经济与金融/知识笔记/货币政策.md",
+    "通用经济与金融/知识笔记/公开市场操作.md",
+    "公开市场操作.md",
+    "通用经济与金融/知识笔记/基础货币.md"
+  ]
+}

@@ -1,0 +1,55 @@
+.theme-light
+{
+  --background-primary: #FBFBFB;
+  --background-primary-alt: #FBFBFB;
+  --background-secondary: #FBFBFB;
+  --background-secondary-alt: #faefd1;
+  --text-normal: rgb(0, 0, 0);
+  --text-faint: #444444;
+  --text-title-h1: rgb(0, 0, 0);
+  --text-title-h2: rgb(0, 0, 0);
+  --text-title-h3: rgb(0, 0, 0);
+  --text-title-h4: rgb(0, 0, 0);
+  --text-title-h5: rgb(0, 0, 0);
+  --text-link: #B4B4B4;
+  --text-a: #c4383d;
+  --text-a-hover: #db4d52;
+  --text-mark: #D3FFA4;
+  --pre-code: #FFFFFF;
+  --interactive-accent: #92A1A1;
+  --interactive-before: #5e6565;
+  --background-modifier-border: #92a1a17a;
+  --blockquote-border: #D6555F;
+  --tag-background: #A7B0B3;
+  --interactive-accent-rgb: #db4d52;
+  --font-family-editor: "Vollkorn";
+  --font-family-preview: "Vollkorn";
+}
+
+.theme-dark
+{
+  --background-primary: #1E2022;
+  --background-primary-alt: #1E2022;
+  --background-secondary: #1E2022;
+  --background-secondary-alt: #2E3236;
+  --text-normal: #DDDDDD;
+  --text-faint: #B2B2B2;
+  --text-title-h1: #CBDBE5;
+  --text-title-h2: #CBDBE5;
+  --text-title-h3: #CBDBE5;
+  --text-title-h4: #CBDBE5;
+  --text-title-h5: #CBDBE5;
+  --text-link: #B4B4B4;
+  --text-a: #6BCAFB;
+  --text-a-hover: #6BCAFB;
+  --text-mark: #263D92;
+  --pre-code: #252525;
+  --interactive-accent: #92A1A1;
+  --interactive-before: #5e6565;
+  --background-modifier-border: #92a1a17a;
+  --blockquote-border: #4AA8FB;
+  --tag-background: #A7B0B3;
+  --interactive-accent-rgb: #6BCAFB;
+  --font-family-editor: "Vollkorn";
+  --font-family-preview: "Vollkorn";
+}

@@ -1,0 +1,11 @@
+{
+  "obsidianCss": true,
+  "promptDelete": false,
+  "attachmentFolderPath": "assets",
+  "alwaysUpdateLinks": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "showFrontmatter": true,
+  "strictLineBreaks": true,
+  "spellcheck": true
+}
