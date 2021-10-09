@@ -1,4 +1,4 @@
-#【类型】知识
+#类型/知识
 
 # 巴塞尔协议III(The Basel III Accord)
 
