@@ -1,7 +1,8 @@
-*/.DS_Store
-Reference/*
-Reports/Graduation Thesis/*
-.obsidian/*
-*/.sync.ffs_db
+*.DS_Store
+*.ffs_db
 *.ffs_lock
 *.sync.ffs_db
+
+Reference/*
+Reports/Graduation Thesis/*
+
