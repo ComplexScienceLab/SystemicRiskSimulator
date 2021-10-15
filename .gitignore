@@ -4,5 +4,9 @@
 *.sync.ffs_db
 
 Reference/*
+!Reference/*.md
+!Reference/*.assets
+!Reference/*.drawio
+
 Reports/Graduation Thesis/*
 
