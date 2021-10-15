@@ -8,7 +8,7 @@
 * Date Added: [[2020-05-07]]
 * Cite key: Miller2010
 * Topics: [[博士毕业论文开题报告]], [[国际金融危机]], [[Subjects/Economics/通用经济与金融/流动性风险]]
-* Tags: #内容/流动性风险, #内容/银行系统性风险, #学科/经济学, #研究/国际金融危机, #项目/博士毕业论文, #zotero, #literature-notes, #reference
+* Tags: #内容/流动性风险, #内容/银行系统性风险, #学科/经济学, #研究/国际金融危机, #项目/SystemicRisk, #zotero, #literature-notes, #reference
 * PDF Attachments
 	- [Miller_Zhang_et-al_2010_Riding for a fall - Concentrated banking with hidden tail risk.pdf](zotero://open-pdf/library/items/CD3LF5Y5)
 

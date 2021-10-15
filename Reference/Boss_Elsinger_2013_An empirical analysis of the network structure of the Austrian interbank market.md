@@ -8,7 +8,7 @@
 * Date Added: [[2020-05-07]]
 * Cite key: Boss2013
 * Topics: [[博士毕业论文开题报告]], [[复杂网络]]
-* Tags: #方法/复杂网络, #方法/实证, #内容/银行间市场, #学科/经济学, #内容/银行系统性风险, #项目/博士毕业论文, #zotero, #literature-notes, #reference
+* Tags: #方法/复杂网络, #方法/实证, #内容/银行间市场, #学科/经济学, #内容/银行系统性风险, #项目/SystemicRisk, #zotero, #literature-notes, #reference
 * PDF Attachments
 	- [Boss_Elsinger_2013_An empirical analysis of the network structure of the Austrian interbank market.pdf](zotero://open-pdf/library/items/VRH5J5UY)
 

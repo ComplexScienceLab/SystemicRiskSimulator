@@ -9,7 +9,7 @@
 * Cite key: Cooper1998
 * Topics: [[挤兑]], [[博士毕业论文开题报告]], [[风险传染]]
 * Related: [[Dybvig1983]]
-* Tags: #内容/挤兑, #内容/银行系统性风险, #学科/经济学, #项目/博士毕业论文, #zotero, #literature-notes, #reference
+* Tags: #内容/挤兑, #内容/银行系统性风险, #学科/经济学, #项目/SystemicRisk, #zotero, #literature-notes, #reference
 * PDF Attachments
 	- [Cooper_Ross_1998_Bank runs - Liquidity costs and investment distortions.pdf](zotero://open-pdf/library/items/5NC2K796)
 

@@ -10,7 +10,7 @@
 * DOI: [10.2139/ssrn.236998](https://doi.org/10.2139/ssrn.236998)
 * Cite key: Engle2000
 * Topics: [[博士毕业论文开题报告]], [[回归分析]]
-* Tags: #学科/经济学, #方法/DCC-GARCH, #项目/博士毕业论文, #GARCH, #zotero, #literature-notes, #reference
+* Tags: #学科/经济学, #方法/DCC-GARCH, #项目/SystemicRisk, #GARCH, #zotero, #literature-notes, #reference
 * PDF Attachments
 	- [Engle_2000_Dynamic Conditional Correlation - A Simple Class of Multivariate GARCH Models.pdf](zotero://open-pdf/library/items/2HS979DK)
 
