@@ -43,3 +43,20 @@
 
 
 
+
+
+## 模型
+
+
+
+解释一些公式：
+
+$R_{t}=M F_{t}$
+
+<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211016220137506.png" alt="image-20211016220137506" style="zoom: 33%;" />
+
+
+
+<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211016220054373.png" alt="image-20211016220054373" style="zoom:50%;" />
+
+<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211016220036532.png" alt="image-20211016220036532" style="zoom:50%;" />
