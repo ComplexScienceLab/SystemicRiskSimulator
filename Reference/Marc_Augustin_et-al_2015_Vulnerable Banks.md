@@ -55,24 +55,104 @@
 
 #### 解释一些公式：
 
+
+
+首先，假设资产交易应对银行回报冲击。
+
 $R_{t}=M F_{t}$
 
 <img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211016220137506.png" alt="image-20211016220137506" style="zoom: 33%;" />
 
 
 
-<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211016220054373.png" alt="image-20211016220054373" style="zoom:50%;" />
-
-<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211016220036532.png" alt="image-20211016220036532" style="zoom:50%;" />
 
 
+其次，我们必须描述银行如何出售个人资产，以回归目标杠杆。我们做出最简单的假设，即银行出售资产的方式是在日期 1 和 2 之间保持 M 矩阵不变。
+$$
+\phi=M^{\prime} A_{1} B R_{1}
+$$
+<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211017210355254.png" alt="image-20211017210355254" style="zoom:50%;" />
 
+
+
+第三，我们假设第二期的资产销售量根据线性模型通过价格影响资产净回报。
+$$
+R_{2}=M F_{2}=M L \phi=\left(M L M^{\prime} B A_{1}\right) R_{1}
+$$
+
+
+
+
+
+
+我们结合方程 （1）、（2） 和 （3） 来计算 t=1 中银行未关联资产回报对 t=2 回报的影响
+$$
+R_{2}=M F_{2}=M L \phi=\left(M L M^{\prime} B A_{1}\right) R_{1}
+$$
 
 
 #### 指标
 
 
 
-测度加总的去杠杆化的风险
+##### 测度**加总的去杠杆化的风险**
 
 $$
+A V=\frac{1^{\prime} A_{1} M L M^{\prime} B A_{1} M F_{1}}{E_{1}}
+$$
+这个公式忽略了冲击对净资产的直接影响，只强调银行间的溢出效应。
+
+
+
+
+
+
+
+<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/方意_郑子文_2016_系统性风险在银行间的传染路径研究——基于持有共同资产网络模型.svg" alt="方意_郑子文_2016_系统性风险在银行间的传染路径研究——基于持有共同资产网络模型" style="transform: rotate(90deg); zoom: 50%;" />
+
+
+
+
+
+理解 **连接性**$\Gamma:=1^{\prime} A_{1} M L M^{\prime}$：
+$$
+\gamma_{n}=\sum_{k} \left( \left(\sum_{m} a_{m} m_{m k}\right) \left( l_{k} m_{n k} \right) \right)
+$$
+其测度了一家银行的“连接度”。该测度银行将持有更大的资产（当$\left(\sum_{m} a_{m} m_{m k}\right)$更大时），或持有非流动性资产（当$l_{k}$更大时）的资产类别当中哪个更大的。在这种情况下，银行抛售1美元资产将导致银行系统持有的更多金额，因为它将减少更大的资产类别的价格。
+
+
+
+<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/方意_郑子文_2016_系统性风险在银行间的传染路径研究——基于持有共同资产网络模型-2.svg" alt="方意_郑子文_2016_系统性风险在银行间的传染路径研究——基于持有共同资产网络模型" style="transform: translate(0px,500px) rotate(90deg); transform-origin:50% 50%; zoom: 50%; " />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+更一般地说，该式之**连接性**$\Gamma:=1^{\prime} A_{1} M L M^{\prime}$、杠杆$B$、大小$A_{1}$、风险敞口$M F_{1}$，四个要素在确定 AV 时会成倍增加。
+
+
+
+##### 各银行对去杠杆化的贡献："系统性"
+
+TODO各银行对去杠杆化的贡献："系统性"
+
