@@ -71,7 +71,7 @@ $R_{t}=M F_{t}$
 $$
 \phi=M^{\prime} A_{1} B R_{1}
 $$
-<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211017210355254.png" alt="image-20211017210355254" style="zoom:50%;" />
+<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211018155024865.png" alt="image-20211018155024865" style="zoom:50%;" />
 
 
 
@@ -91,7 +91,7 @@ R_{2}=M F_{2}=M L \phi=\left(M L M^{\prime} B A_{1}\right) R_{1}
 $$
 
 
-#### 指标
+#### 测度指标
 
 
 
@@ -99,7 +99,7 @@ $$
 
 加总脆弱性指标AV：
 $$
-A V=\frac{1^{\prime} A_{1} M L M^{\prime} B A_{1} M F_{1}}{E_{1}}
+AV :=\frac{1^{\prime} A_{1} M L M^{\prime} B A_{1} M F_{1}}{E_{1}}
 $$
 这个公式忽略了冲击对净资产的直接影响，只强调银行间的溢出效应。
 
@@ -117,7 +117,7 @@ $$
 
 理解 **连接性**$\Gamma:=1^{\prime} A_{1} M L M^{\prime}$：
 $$
-\gamma_{n}=\sum_{k} \left( \left(\sum_{m} a_{m} m_{m k}\right) \left( l_{k} m_{n k} \right) \right)
+\gamma_{n}:=\sum_{k} \left( \left(\sum_{m} a_{m} m_{m k}\right) \left( l_{k} m_{n k} \right) \right)
 $$
 其测度了一家银行的“连接度”。该测度判断银行将持有更大的资产（当$\left(\sum_{m} a_{m} m_{m k}\right)$更大时），或持有非流动性资产（当$l_{k}$更大时）。在这种情况下，银行抛售1美元资产将导致银行系统持有的更多金额，因为它将减少更大的资产类别的价格。
 
@@ -155,5 +155,61 @@ $$
 
 ##### 各银行对去杠杆化的贡献："系统性"
 
-TODO各银行对去杠杆化的贡献："系统性"
+各银行对去杠杆化的贡献："系统性"，描述了某银行对加总脆弱性的贡献
 
+$$
+S(n):=\frac{1^{\prime} A_{1} M L M^{\prime} B A_{1} \delta_{n} \delta_{n}^{\prime} M F_{1}}{E_{1}}
+$$
+
+$$
+AV=\sum_{n} S(n)
+$$
+
+
+
+对于一个银行，当满足以下条件时，其表现更为系统性：
+
+<img src="Marc_Augustin_et-al_2015_Vulnerable Banks.assets/image-20211018104324715.png" alt="image-20211018104324715" style="zoom: 50%;" />
+
+
+
+
+
+##### 间接脆弱性
+
+
+$$
+IV(n):=\frac{\delta_{n}^{\prime} A_{1} M L M^{\prime} B A_{1} M F_{1}}{e_{n 1}}
+$$
+解释该指标：
+$$
+IV(n):=\underbrace{\left(1+b_{n}\right)}_{\text {leverage }} \times \sum_{k}\left[\underbrace{l_{k} m_{n k}}_{\text { illiquidity-weighted exposure to asset k}} \times \underbrace{\left(\sum_{n^{\prime}} m_{n^{\prime} k} a_{n^{\prime}} b_{n^{\prime}} r_{n^{\prime}}\right)}_{\text {fire sales of asset k }}\right]
+$$
+
+
+> 注意之前对于连接性的解释：
+> $$
+> \gamma_{n}:=\sum_{k} \left( \left(\sum_{m} a_{m} m_{m k}\right) \left( l_{k} m_{n k} \right) \right)
+> $$
+> 解释脆弱性指标中，合并了$B A_1 M F_1$进连接性。
+>
+> 对于杠杆有：
+> $$
+> \underbrace{\left(1+b_{n}\right)}_{\text {leverage }} = \frac{\delta_{n}^{\prime} A_{1}}{e_{n1}}
+> $$
+> 
+
+
+
+
+
+
+
+
+
+##### 直接脆弱性
+
+
+$$
+DV(n):=\frac{\delta_{n}^{\prime} A_{1} M F_{1}}{e_{n 1}}
+$$
