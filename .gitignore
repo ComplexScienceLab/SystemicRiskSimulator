@@ -2,6 +2,7 @@
 *.ffs_db
 *.ffs_lock
 *.sync.ffs_db
+*.trash
 
 Reference/*
 !Reference/*.md
@@ -9,4 +10,5 @@ Reference/*
 !Reference/*.drawio
 
 Reports/Graduation Thesis/*
+
 
