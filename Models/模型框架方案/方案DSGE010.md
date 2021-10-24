@@ -248,7 +248,7 @@ Utility_{H}[t] :=
 \left[ \sum_{t=0}^{\infty} 
 (\gamma_{H})^{t} \left(
 Uti_{H,C}[t]
-- \frac{\left(Hour_{H}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
+- \dfrac{\left(Hour_{H}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
  \right)
 \right]
 $$
@@ -276,7 +276,7 @@ $\alpha_{Hour,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{H}[t] + D_{H}[t] + Br_{H,BB}[i,t-1] \; \frac{(1 + r_{L,BB,H}[i,t]) }{\pi[t]} \leq Income_{H}[t] + \frac{(1+r_{L,BB,H}[i,t-1])}{\pi[t]} \; D_{H}[i,t-1] + Br_{H,BB}[i,t] + Trans_{H}[t]
+C_{H}[t] + D_{H}[t] + Br_{H,BB}[i,t-1] \; \dfrac{(1 + r_{L,BB,H}[i,t]) }{\pi[t]} \leq Income_{H}[t] + \dfrac{(1+r_{L,BB,H}[i,t-1])}{\pi[t]} \; D_{H}[i,t-1] + Br_{H,BB}[i,t] + Trans_{H}[t]
 $$
 \tag{H_st_budget}
 
@@ -389,7 +389,7 @@ $Repay_{PG,B}[t]$：代表性消费品生产商偿还借款给银行部门$\math
 对于消费品生产商部门偿还借款$Repay_{PG,B}[t]$给银行部门$\mathbb{B}$之各个商业银行个体$i$，由以下构成：
 $$
 Repay_{PG,B}[t] := 
-\sum_{i=1}^{N_{\mathbb{BB}}}{\left(\frac{(1+r_{L,BB,PG}[i,t])}{\pi[t]} \; Br_{PG,BB}[i,t]\right)}
+\sum_{i=1}^{N_{\mathbb{BB}}}{\left(\dfrac{(1+r_{L,BB,PG}[i,t])}{\pi[t]} \; Br_{PG,BB}[i,t]\right)}
 $$
 其中，
 $\left(r_{L,BB,PG}[i,t-1]+1 \right) / \pi[t]\; Br_{PG,BB}[i,t-1]$：消费品生产商部门偿还上一期借款$Br_{PG,BB}[i,t-1]$给商业银行部门$\mathbb{BB}$之个体$i$，以其提供的贷款利率$r_{L,BB,PG}[i,t-1]$于上一期，考虑当期物价$\pi[t]$；
@@ -652,7 +652,7 @@ $\Box_{BB}$
 
 $$
 Adj_{BB,A}\left[A_{1},A_{2}\right] := 
-\frac{\beta}{2} \; \left(\frac{A_{1}}{A_{2}} - \frac{\bar{A}_{1}}{\bar{A}_{2}}  \right)^{2}
+\dfrac{\beta}{2} \; \left(\dfrac{A_{1}}{A_{2}} - \dfrac{\bar{A}_{1}}{\bar{A}_{2}}  \right)^{2}
 $$
 
 
@@ -859,7 +859,7 @@ $$
 
 对于商业银行调整其信贷资产比例，暨调整影子银行的ABS产品和商业银行传统贷款时，存在如下调整成本
 $$
-Adj_{BB,A}\left[ABS_{BS}[t],L_{BB,BS}[t]\right] := \frac{\beta_{BB}}{2} \; \left(\frac{ABS_{BS}[j,i,t]}{L_{BB,PG}[i,t]} - \frac{\bar{ABS}_{BS}[j,i,t]}{\bar{L}_{BB,PG}[i,t]}  \right)^{2}
+Adj_{BB,A}\left[ABS_{BS}[t],L_{BB,BS}[t]\right] := \dfrac{\beta_{BB}}{2} \; \left(\dfrac{ABS_{BS}[j,i,t]}{L_{BB,PG}[i,t]} - \dfrac{\bar{ABS}_{BS}[j,i,t]}{\bar{L}_{BB,PG}[i,t]}  \right)^{2}
 $$
 
 其中，
@@ -872,7 +872,7 @@ $\beta_{BB}$：商业银行调整信贷资产权重；
 TODO设定生产部门对商业银行$i$的借款需求$\tilde{B}_{P,BB}[i,t]$满足函数关系：
 
 $$
-\tilde{B}_{P,BB}[i,t]=\left( \frac{r_{L,BB,P}[i,t]}{r_{L,BB,P}[t]} \right)^{-\xi_{P,BB}} \tilde{B}_{P,BB}[t]
+\tilde{B}_{P,BB}[i,t]=\left( \dfrac{r_{L,BB,P}[i,t]}{r_{L,BB,P}[t]} \right)^{-\xi_{P,BB}} \tilde{B}_{P,BB}[t]
 $$
 
 其中，
@@ -885,7 +885,7 @@ $\tilde{B}_{P,BB}[t]$：生产部门对商业银行整体借款需求；
 TODO设定居民部门对商业银行$i$的借款需求$\tilde{B}_{HB,BB}[i,t]$满足函数关系：
 
 $$
-\tilde{B}_{HB,BB}[i,t]=\left( \frac{r_{L,BB,H}[i,t]}{r_{L,BB,HB}[t]} \right)^{-\xi_{HB,BB}} \tilde{B}_{HB,BB}[t]
+\tilde{B}_{HB,BB}[i,t]=\left( \dfrac{r_{L,BB,H}[i,t]}{r_{L,BB,HB}[t]} \right)^{-\xi_{HB,BB}} \tilde{B}_{HB,BB}[t]
 $$
 
 其中，
@@ -972,7 +972,7 @@ TODO银行接受存贷比约束监管：
 > 王擎, 田娇, 2016. 银行资本监管与系统性金融风险传递——基于DSGE模型的分析[J]. 中国社会科学, 000(03): 99–122.
 
 $$
- \frac{L_{BB}[i,t]}{D_{BB,H}[i,t]} \leq \check{\phi}_{CAR,BB}[i,t] 
+ \dfrac{L_{BB}[i,t]}{D_{BB,H}[i,t]} \leq \check{\phi}_{CAR,BB}[i,t] 
 $$
 
 其中，
@@ -991,7 +991,7 @@ TODO银行接受资本充足率约束监管：
 > 田娇, 王擎, 2017. 系统性风险防范与多重金融政策搭配——基于DSGE模型的逆周期监管效应分析[J]. 财经研究, 07(v.31;No.246): 59–71.
 
 $$
-\check{\phi}_{CAR}[i,t] \geq \frac{K_{B}[i,t]}{ \sum_{}^{}{\left(\omega_{CAR,BB}[i,j,t] \; A_{BB}[i,j,t]\right)}}
+\check{\phi}_{CAR}[i,t] \geq \dfrac{K_{B}[i,t]}{ \sum_{}^{}{\left(\omega_{CAR,BB}[i,j,t] \; A_{BB}[i,j,t]\right)}}
 $$
 
 
@@ -1080,12 +1080,12 @@ ABS_{BS}[j,i,t]
 \left(
 \begin{align}&
 D_{H}[t]
--D_{H}[i,t-1] \; \frac{(1+r_{D,BB,HI})}{\pi[t]}
+-D_{H}[i,t-1] \; \dfrac{(1+r_{D,BB,HI})}{\pi[t]}
 \\&
 +Br_{BB,G}[i,t]
--Br_{BB,G}[i,t-1] \; \frac{1+r_{G,BB}[i,t]}{\pi[t]}
+-Br_{BB,G}[i,t-1] \; \dfrac{1+r_{G,BB}[i,t]}{\pi[t]}
 \\&
-+L_{BB,PG}[i,t-1] \; \frac{(1+r_{L,BB,PG}[i,t]-\delta_{PG})}{\pi[t]}
++L_{BB,PG}[i,t-1] \; \dfrac{(1+r_{L,BB,PG}[i,t]-\delta_{PG})}{\pi[t]}
 -L_{BB,PG}[i,t] \; (1+Cost_{review,BB,P}[t])
 \\&
 同业拆入+Br_{}
@@ -1093,7 +1093,7 @@ D_{H}[t]
 同业拆出
 \\&
 - ABS_{BS}[j,i,t]
-+ (1-\mathcal{Pr}_{def,BS}[t]) \; ABS_{BS}[j,i,t-1] \; \frac{(1+r_{BS,BB}[t-1])}{\pi[t]}
++ (1-\mathcal{Pr}_{def,BS}[t]) \; ABS_{BS}[j,i,t-1] \; \dfrac{(1+r_{BS,BB}[t-1])}{\pi[t]}
 \\&
 - Pun_{CAR}[i,t,gap[i,t]]
 - Adj_{BB,A}\left[ABS_{BS}[t],L_{BB,BS}[t]\right]
@@ -1286,14 +1286,14 @@ $$
 TODO定义中央银行对商业银行$i$的资本充足率惩罚函数$Pun_{CAR}[i,t,gap_[i,t]]$：
 
 $$
-Pun_{CAR}[i,t,Gap_{CAR}[i,t]] := \frac{1}{2} \; \kappa_{CAR} \left(  \right)
+Pun_{CAR}[i,t,Gap_{CAR}[i,t]] := \dfrac{1}{2} \; \kappa_{CAR} \left(  \right)
 $$
 
 
 
 构建传统货币政策调控方式Talor Rule：
 $$
-\log \left(\frac{R_{t}}{R}\right)=\kappa_{r} \log \left(\frac{R_{t-1}}{R}\right)+\left(1-\kappa_{r}\right)\left[\kappa_{y} \log \left(\frac{Y_{t}}{Y}\right)+\kappa_{\pi} \log \left(\frac{\pi_{t}}{\pi}\right)\right]+\varepsilon_{t}^{r}
+\log \left(\dfrac{R_{t}}{R}\right)=\kappa_{r} \log \left(\dfrac{R_{t-1}}{R}\right)+\left(1-\kappa_{r}\right)\left[\kappa_{y} \log \left(\dfrac{Y_{t}}{Y}\right)+\kappa_{\pi} \log \left(\dfrac{\pi_{t}}{\pi}\right)\right]+\varepsilon_{t}^{r}
 $$
 
 
@@ -1305,7 +1305,7 @@ $$
 TODO定义中央银行对商业银行$i$不满足规定的存贷比要求对应的惩罚函数，于时期$t$：
 
 $$
-Pun_{LDR}[i,t,Gap_{LDR}[i,t]] := \frac{1}{2} \;
+Pun_{LDR}[i,t,Gap_{LDR}[i,t]] := \dfrac{1}{2} \;
 $$
 
 

@@ -295,11 +295,11 @@ $$
 
 在正常情况下，居民部门$\mathbb{H}$存入的储蓄流量在到期提现的时候是：
 $$
-Si_{H}[t+T_{DD}+1] = \sum_{i=1}^{N_{p}}{Si_{H}[i,t+T_{DD}+1]} = \sum_{i=1}^{N_{p}}{\left( \frac{(1+r_{p,H}[i,t])}{\prod_{\tau = 1}^{T_{DD}+1}\pi[\tau]} \; So_{H}[i,t] \right)}
+Si_{H}[t+T_{DD}+1] = \sum_{i=1}^{N_{p}}{Si_{H}[i,t+T_{DD}+1]} = \sum_{i=1}^{N_{p}}{\left( \dfrac{(1+r_{p,H}[i,t])}{\prod_{\tau = 1}^{T_{DD}+1}\pi[\tau]} \; So_{H}[i,t] \right)}
 $$
 
 其中，
-$\frac{(1+r_{p,H}[i,t])}{\prod_{\tau = 1}^{T_{DD}+1}\pi[\tau]} \; Si_{H}[i,t]$：居民部门$\mathbb{H}$提现到期储蓄$Si_{H}[i,t]$给部门$p$之个体$i$，以其提供的存款利率$r_{p,PG}[i,t]$，考虑各期物价$\pi[\tau],\tau \in \{1,T_{LL}+1\}$；
+$\dfrac{(1+r_{p,H}[i,t])}{\prod_{\tau = 1}^{T_{DD}+1}\pi[\tau]} \; Si_{H}[i,t]$：居民部门$\mathbb{H}$提现到期储蓄$Si_{H}[i,t]$给部门$p$之个体$i$，以其提供的存款利率$r_{p,PG}[i,t]$，考虑各期物价$\pi[\tau],\tau \in \{1,T_{LL}+1\}$；
 
 
 
@@ -314,7 +314,7 @@ Utility_{H}[t] :=
 \left[ \sum_{t=0}^{\infty} 
 (\gamma_{H})^{t} \left(
 Uti_{H,C}[t]
-- \frac{\left(Hour_{H}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
+- \dfrac{\left(Hour_{H}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
  \right)
 \right]
 $$
@@ -342,7 +342,7 @@ $\alpha_{Hour,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{H}[t] + So_{H,BB}[t] + Br_{H,BB}[i,t-1] \; \frac{(1 + r_{L,BB,H}[i,t]) }{\pi[t]} \leq Income_{H}[t] + Br_{H,BB}[i,t] + Trans_{H}[t]
+C_{H}[t] + So_{H,BB}[t] + Br_{H,BB}[i,t-1] \; \dfrac{(1 + r_{L,BB,H}[i,t]) }{\pi[t]} \leq Income_{H}[t] + Br_{H,BB}[i,t] + Trans_{H}[t]
 $$
 \tag{H_st_budget}
 
@@ -595,11 +595,11 @@ $$
 
 在正常情况下，消费品生产商部门$\mathbb{PG}$借入的借款流量在到期偿还的时候是：
 $$
-Bo_{PG}[t+T_{LL}+1] = \sum_{i=1}^{N_{p}}{Bo_{PG}[i,t+T_{LL}+1]} = \sum_{i=1}^{N_{p}}{\left( \frac{(1+r_{p,PG}[i,t])}{\prod_{\tau = 1}^{T_{LL}+1}\pi[\tau]} \; Bi_{PG}[i,t] \right)}
+Bo_{PG}[t+T_{LL}+1] = \sum_{i=1}^{N_{p}}{Bo_{PG}[i,t+T_{LL}+1]} = \sum_{i=1}^{N_{p}}{\left( \dfrac{(1+r_{p,PG}[i,t])}{\prod_{\tau = 1}^{T_{LL}+1}\pi[\tau]} \; Bi_{PG}[i,t] \right)}
 $$
 
 其中，
-$\frac{(1+r_{p,PG}[i,t])}{\prod_{\tau = 1}^{T+1}\pi[\tau]} \; Bi_{PG}[i,t]$：消费品生产商部门$\mathbb{PG}$偿还到期借款$Bi_{PG}[i,t]$给部门$p$之个体$i$，以其提供的贷款利率$r_{p,PG}[i,t]$，考虑各期物价$\pi[\tau],\tau \in \{1,T_{LL}+1\}$；
+$\dfrac{(1+r_{p,PG}[i,t])}{\prod_{\tau = 1}^{T+1}\pi[\tau]} \; Bi_{PG}[i,t]$：消费品生产商部门$\mathbb{PG}$偿还到期借款$Bi_{PG}[i,t]$给部门$p$之个体$i$，以其提供的贷款利率$r_{p,PG}[i,t]$，考虑各期物价$\pi[\tau],\tau \in \{1,T_{LL}+1\}$；
 
 
 
@@ -871,14 +871,14 @@ $$
 TODO定义中央银行对商业银行$i$的资本充足率惩罚函数$Pun_{CAR}[i,t,gap_[i,t]]$：
 
 $$
-Pun_{CAR}[i,t,Gap_{CAR}[i,t]] := \frac{1}{2} \; \kappa_{CAR} \left(  \right)
+Pun_{CAR}[i,t,Gap_{CAR}[i,t]] := \dfrac{1}{2} \; \kappa_{CAR} \left(  \right)
 $$
 
 
 
 构建传统货币政策调控方式Talor Rule：
 $$
-\log \left(\frac{R_{t}}{R}\right)=\kappa_{r} \log \left(\frac{R_{t-1}}{R}\right)+\left(1-\kappa_{r}\right)\left[\kappa_{y} \log \left(\frac{Y_{t}}{Y}\right)+\kappa_{\pi} \log \left(\frac{\pi_{t}}{\pi}\right)\right]+\varepsilon_{t}^{r}
+\log \left(\dfrac{R_{t}}{R}\right)=\kappa_{r} \log \left(\dfrac{R_{t-1}}{R}\right)+\left(1-\kappa_{r}\right)\left[\kappa_{y} \log \left(\dfrac{Y_{t}}{Y}\right)+\kappa_{\pi} \log \left(\dfrac{\pi_{t}}{\pi}\right)\right]+\varepsilon_{t}^{r}
 $$
 
 
@@ -890,7 +890,7 @@ $$
 TODO定义中央银行对商业银行$i$不满足规定的存贷比要求对应的惩罚函数，于时期$t$：
 
 $$
-Pun_{LDR}[i,t,Gap_{LDR}[i,t]] := \frac{1}{2} \;
+Pun_{LDR}[i,t,Gap_{LDR}[i,t]] := \dfrac{1}{2} \;
 $$
 
 

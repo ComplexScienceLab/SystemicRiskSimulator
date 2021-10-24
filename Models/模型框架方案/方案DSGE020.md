@@ -238,7 +238,7 @@ Utility_{HB}[t] :=
 \left[ \sum_{t=0}^{\infty} 
 (\gamma_{HB})^{t} \left(
 Uti_{HB,C}[t]
-- \frac{\left(Hour_{HB}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
+- \dfrac{\left(Hour_{HB}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
  \right)
 \right]
 $$
@@ -265,7 +265,7 @@ $\alpha_{Hour,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{HB}[t] + Br_{HB,BB}[i,t-1] \; \frac{(1 + r_{L,BB,H}[i,t])}{\pi[t]} \leq Income_{HB}[t]+ Br_{HB,BB}[i,t] + Trans_{HB}[t]
+C_{HB}[t] + Br_{HB,BB}[i,t-1] \; \dfrac{(1 + r_{L,BB,H}[i,t])}{\pi[t]} \leq Income_{HB}[t]+ Br_{HB,BB}[i,t] + Trans_{HB}[t]
 $$
 \tag{HB_st_budget}
 其中，
@@ -365,7 +365,7 @@ Utility_{HI}[t]:=
 (\gamma_{HI})^{t} 
 \left(
 Uti_{HI,C}[t]
-- \frac{\left(Hour_{HI}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
+- \dfrac{\left(Hour_{HI}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
 \right)
 \right]
 $$
@@ -387,7 +387,7 @@ $\alpha_{Hour,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{HI}[t] + D_{HI}[t] \leq Income_{HI}[t] + \frac{(1+r_{D,BB,H}[i,t-1])}{\pi[t]} \; D_{HI}[i,t-1]+ Trans_{HI}[t]
+C_{HI}[t] + D_{HI}[t] \leq Income_{HI}[t] + \dfrac{(1+r_{D,BB,H}[i,t-1])}{\pi[t]} \; D_{HI}[i,t-1]+ Trans_{HI}[t]
 $$
 \tag{HI_st_budget}
 其中，
@@ -630,7 +630,7 @@ $Y_{PF}[t]$：消费品最终品产量；
 
 满足的约束条件：
 $$
-Y_{PF}[t] := \left(\int_{0}^{1} (Y_{PI}[i,t])^{\frac{\alpha_{PF} - 1}{\alpha_{PF}}} \; \mathbb{d} i\right)^{\frac{\alpha_{PF}}{\alpha_{PF}-1}}
+Y_{PF}[t] := \left(\int_{0}^{1} (Y_{PI}[i,t])^{\dfrac{\alpha_{PF} - 1}{\alpha_{PF}}} \; \mathbb{d} i\right)^{\dfrac{\alpha_{PF}}{\alpha_{PF}-1}}
 $$
 \tag{PF_st}
 
@@ -639,7 +639,7 @@ $\alpha_{PF}$：替代指数，暨消费品最终品生产商对于不同的由�
 
 由上述式子可列出拉格朗日函数，通过一阶条件，求得消费品中间品生产商$i$的产出需求$Y_{PI}[i, t]$：
 $$
-Y_{PI}[i, t] = \left(\frac{p_{PF}[t]}{p_{PI}[i, t]} \right)^{\alpha_{PF}} Y_{PF}[t]
+Y_{PI}[i, t] = \left(\dfrac{p_{PF}[t]}{p_{PI}[i, t]} \right)^{\alpha_{PF}} Y_{PF}[t]
 $$
 
 
@@ -805,8 +805,8 @@ $\varepsilon_{TFP,PI}[t]$：消费品中间品生产商的全要素生产率对$
 由最优化问题的一阶条件可以得出资本$K_{PI}[i,t]$和劳动$Lab_{PI}[i,t]$的表达式，然后代入最小化总成本表达式、约束条件，即可得消费品中间品生产商$i$的实际总成本$TC_{PI}[t]$，然后可以得到消费品中间品生产商$i$共有的实际边际成本$MC_{PI}[t]$：
 $$
 MC_{PI}[t]
-:= \frac{TC_{PI}[t]}{Y_{PI}[t]}
-= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \frac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{TFP_{PI}[t]}
+:= \dfrac{TC_{PI}[t]}{Y_{PI}[t]}
+= \left( 1-\alpha_{PI} \right)^{\alpha_{PI} -1} \; (\alpha_{PI})^{-\alpha_{PI}} \; \dfrac{(w_{PI}[t])^{1-\alpha_{PI}} \; (r_{PK,PI}[t])^{\alpha_{PI}}}{TFP_{PI}[t]}
 $$
 
 
@@ -819,7 +819,7 @@ $$
 
 TODO消费品中间品生产商应满足收支平衡约束：
 $$
-  Y_{PI}[t] + K_{PK}[t] =I_{t}+C_{t}^{f}+W_{t} N_{t}+\frac{R_{t-1}^{l} L_{t-1}}{\pi_{t}}+\frac{R_{t-1}^{s} S_{t-1}}{\pi_{t}}
+  Y_{PI}[t] + K_{PK}[t] =I_{t}+C_{t}^{f}+W_{t} N_{t}+\dfrac{R_{t-1}^{l} L_{t-1}}{\pi_{t}}+\dfrac{R_{t-1}^{s} S_{t-1}}{\pi_{t}}
 $$
 
 
@@ -838,7 +838,7 @@ $$
 $\chi_{p} \in[0,1]$ ：指数化程度参数；
 $\pi[\cdot]$：通货膨胀率于特定时期，其定义为
 $$
-\pi[t] := \frac{P[t]}{P[t-1]}
+\pi[t] := \dfrac{P[t]}{P[t-1]}
 $$
 
 其中，
@@ -872,7 +872,7 @@ $$
 \mathbb{E}_{t} \sum_{t_{s}=0}^{\infty}
 \left(
 (\gamma_{PI})^{t_{s}} \; (\theta_{PI,p})^{t_{s}}
-\; \left(\frac{p_{PF}[t+t_{s}]}{		
+\; \left(\dfrac{p_{PF}[t+t_{s}]}{		
 			\prod_{t_{h}=1}^{t_{s}} 
       \left(
       (\pi[t+t_{h}-1])^{\chi_{p}} 
@@ -905,7 +905,7 @@ $$
 \text { s. t. } 
 \quad Y_{PI}[i,t+t_{s}] = 
 \left(
-	\prod_{t_{h}=1}^{t_{s}} \left( (\pi[t + t_{h} - 1])^{\chi_{p}} \right) \frac{\tilde{P}_{PI}[t]}{p_{PF}[t+t_{s}]}
+	\prod_{t_{h}=1}^{t_{s}} \left( (\pi[t + t_{h} - 1])^{\chi_{p}} \right) \dfrac{\tilde{P}_{PI}[t]}{p_{PF}[t+t_{s}]}
 \right)^{-\alpha_{PF}} 
 \; Y_{PF}[t+t_{s}]
 $$
@@ -915,8 +915,8 @@ $$
 最优化问题对应的一阶条件：
 $$
 \tilde{P}_{PI}[t] =
-\frac{\alpha_{PF}}{\alpha_{PF}-1} 
-\frac
+\dfrac{\alpha_{PF}}{\alpha_{PF}-1} 
+\dfrac
 {
 \mathbb{E}_{t} 
 \sum \limits_{t_{s}=0}^{\infty}
@@ -942,7 +942,7 @@ $MC_{PI}[t+t_{s]}$：消费品中间品生产商的实际边际成本。
 
 根据消费品中间品生产商的产量$Y_{PI}[i,t]$与$Y_{PF}[t]$的关系
 $$
-Y_{PI}[i, t] = \left(\frac{p_{PI}[i, t]}{p_{PF}[t]} \right)^{-\alpha_{PF}} Y_{PF}[t]
+Y_{PI}[i, t] = \left(\dfrac{p_{PI}[i, t]}{p_{PF}[t]} \right)^{-\alpha_{PF}} Y_{PF}[t]
 $$
 ，然后采用Uhlig提出的对数线性化的方法，经过推导，可得消费品中间品生产商之价格水平的时变表达式
 
@@ -955,11 +955,11 @@ $$
 
 $$
 \hat{\pi}[t] =
-\frac{\gamma_{PI}}{1+\gamma_{PI} \;\chi_{p}} \mathbb{E}_{t} \; \hat{\pi}[t+1]
+\dfrac{\gamma_{PI}}{1+\gamma_{PI} \;\chi_{p}} \mathbb{E}_{t} \; \hat{\pi}[t+1]
 +
-\frac{\chi_{p}}{1+\gamma_{PI} \; \chi_{p}} \; \hat{\pi}[t-1]
+\dfrac{\chi_{p}}{1+\gamma_{PI} \; \chi_{p}} \; \hat{\pi}[t-1]
 +
-\frac
+\dfrac
 {
 \left( 1-\theta_{PI,p} \right) \; \left( 1-\gamma_{PI} \; \theta_{PI,p} \right)
 }{
@@ -1052,12 +1052,12 @@ $\Box_{PK}$
 
 银行存款之存贷比：
 $$
-\phi_{LDR,BB}[i,t] := \frac{L_{BB}[i,t]}{D_{BB,H}[i,t]}
+\phi_{LDR,BB}[i,t] := \dfrac{L_{BB}[i,t]}{D_{BB,H}[i,t]}
 $$
 银行资本比率：
 
 $$
-\phi_{ELR,BB}[i,t] := \frac{E_{BB}[i,t]}{L_{BB}[i,t]} = 1 - \frac{1}{\phi_{LDR,BB}[i,t]}
+\phi_{ELR,BB}[i,t] := \dfrac{E_{BB}[i,t]}{L_{BB}[i,t]} = 1 - \dfrac{1}{\phi_{LDR,BB}[i,t]}
 $$
 
 
@@ -1074,7 +1074,7 @@ $$
 资本生产部门的决策问题：
 
 $$
-Profit_{PK}[t] := \max _{I_{PK}[t]} \quad p_{PK}[t] \; F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right] \; K_{PK}[t]-p_{PF}[t] \; I_{PK}[t]
+Profit_{PK}[t] := \max _{I_{PK}[t]} \quad p_{PK}[t] \; F_{PK}\left[\dfrac{I_{PK}[t]}{K_{PK}[t]}\right] \; K_{PK}[t]-p_{PF}[t] \; I_{PK}[t]
 $$
 
 
@@ -1085,7 +1085,7 @@ $$
 
 设定资本调整成本方程（capital adjustment cost function）$F_{PK}$形式为CRS（具有一次齐次假设的）：
 $$
-F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] \; K_{PI}[t]
+F_{PK}\left[\dfrac{I_{PI}[t]}{K_{PI}[t]}\right] \; K_{PI}[t]
 $$
 
 > 根据[[Gertler_Gilchrist_et-al_2007_External constraints on monetary policy and the financial accelerator.md]]、[[Mimir_2010_Financial intermediaries, leverage ratios, and business cycles.md]]等人研究，
@@ -1097,7 +1097,7 @@ $$
 
 设定为：
 $$
-F_{PK}\left[\frac{I_{PI}[t]}{K_{PI}[t]}\right] := \frac{I_{PI}[t]}{K_{PI}[t]} - \frac{\eta_{PK}}{2}\left(\frac{I_{PI}[t]}{K_{PI}[t]}-\delta_{PK}\right)^{2}
+F_{PK}\left[\dfrac{I_{PI}[t]}{K_{PI}[t]}\right] := \dfrac{I_{PI}[t]}{K_{PI}[t]} - \dfrac{\eta_{PK}}{2}\left(\dfrac{I_{PI}[t]}{K_{PI}[t]}-\delta_{PK}\right)^{2}
 $$
 其中，
 $\eta_{PK}$：资本调整成本参数；
@@ -1105,7 +1105,7 @@ $\delta_{PK}$：资本品折旧率；
 
 则对应的时变的资本累积方程为
 $$
-K_{PK}[t+1]=(1-\delta_{PK}) K_{PK}[t]+F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right] K_{PK}[t]
+K_{PK}[t+1]=(1-\delta_{PK}) K_{PK}[t]+F_{PK}\left[\dfrac{I_{PK}[t]}{K_{PK}[t]}\right] K_{PK}[t]
 $$
 
 
@@ -1114,7 +1114,7 @@ $$
 
 其中一阶条件：
 $$
-p_{PK}[t] \; {F_{PK}}^{\prime} \left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]=p_{PF}[t]
+p_{PK}[t] \; {F_{PK}}^{\prime} \left[\dfrac{I_{PK}[t]}{K_{PK}[t]}\right]=p_{PF}[t]
 $$
 
 全要素生产率$TFP_{PK}[t]$服从AR(1)过程：
@@ -1130,14 +1130,14 @@ $$
 $$
 \begin{align*}
 r_{PK,n}[t] & := r_{PK,PI}[t] + p_{PF}[t] \; 
-\frac
+\dfrac
 {
 	\partial \; K_{PK}[t+1]
 }{
 	\partial \; K_{PK}[t]
 }
 \\
-& = r_{PK,PI}[t] + p_{PF}[t] \left((1-\delta_{PK}) - F_{PK} \left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]   \; \frac{I_{PK}[t]}{K_{PK}[t]}+F_{PK}\left[\frac{I_{PK}[t]}{K_{PK}[t]}\right]\right)
+& = r_{PK,PI}[t] + p_{PF}[t] \left((1-\delta_{PK}) - F_{PK} \left[\dfrac{I_{PK}[t]}{K_{PK}[t]}\right]   \; \dfrac{I_{PK}[t]}{K_{PK}[t]}+F_{PK}\left[\dfrac{I_{PK}[t]}{K_{PK}[t]}\right]\right)
 \end{align*}
 $$
 
@@ -1146,7 +1146,7 @@ $$
 在均衡条件下，相邻时期持有单位资本的实际总回报率$r_{PK,e}[t]$将与银行从其贷款获得的实际总回报相等 :
 
 $$
-\frac{r_{PK,n}[t+1]}{p_{PK}[t]} \equiv \frac{r_{PK,e}[t+1]}{\pi[t+1]}
+\dfrac{r_{PK,n}[t+1]}{p_{PK}[t]} \equiv \dfrac{r_{PK,e}[t+1]}{\pi[t+1]}
 $$
 
 
@@ -1200,7 +1200,7 @@ $\Box_{BB}$
 
 $$
 Adj_{BB,A}\left[A_{1},A_{2}\right] := 
-\frac{\beta}{2} \; \left(\frac{A_{1}}{A_{2}} - \frac{\bar{A}_{1}}{\bar{A}_{2}}  \right)^{2}
+\dfrac{\beta}{2} \; \left(\dfrac{A_{1}}{A_{2}} - \dfrac{\bar{A}_{1}}{\bar{A}_{2}}  \right)^{2}
 $$
 
 
@@ -1411,7 +1411,7 @@ $$
 
 对于商业银行调整其信贷资产比例，暨调整影子银行的ABS产品和商业银行传统贷款时，存在如下调整成本
 $$
-Adj_{BB,A}\left[ABS_{BS}[t],L_{BB,BS}[t]\right] := \frac{\beta_{BB}}{2} \; \left(\frac{ABS_{BS}[j,i,t]}{L_{BB,PG}[i,t]} - \frac{\bar{ABS}_{BS}[j,i,t]}{\bar{L}_{BB,PG}[i,t]}  \right)^{2}
+Adj_{BB,A}\left[ABS_{BS}[t],L_{BB,BS}[t]\right] := \dfrac{\beta_{BB}}{2} \; \left(\dfrac{ABS_{BS}[j,i,t]}{L_{BB,PG}[i,t]} - \dfrac{\bar{ABS}_{BS}[j,i,t]}{\bar{L}_{BB,PG}[i,t]}  \right)^{2}
 $$
 
 其中，
@@ -1424,7 +1424,7 @@ $\beta_{BB}$：商业银行调整信贷资产权重；
 TODO设定生产部门对商业银行$i$的借款需求$\tilde{B}_{P,BB}[i,t]$满足函数关系：
 
 $$
-\tilde{B}_{P,BB}[i,t]=\left( \frac{r_{L,BB,P}[i,t]}{r_{L,BB,P}[t]} \right)^{-\xi_{P,BB}} \tilde{B}_{P,BB}[t]
+\tilde{B}_{P,BB}[i,t]=\left( \dfrac{r_{L,BB,P}[i,t]}{r_{L,BB,P}[t]} \right)^{-\xi_{P,BB}} \tilde{B}_{P,BB}[t]
 $$
 
 其中，
@@ -1437,7 +1437,7 @@ $\tilde{B}_{P,BB}[t]$：生产部门对商业银行整体借款需求；
 TODO设定居民部门对商业银行$i$的借款需求$\tilde{B}_{HB,BB}[i,t]$满足函数关系：
 
 $$
-\tilde{B}_{HB,BB}[i,t]=\left( \frac{r_{L,BB,H}[i,t]}{r_{L,BB,HB}[t]} \right)^{-\xi_{HB,BB}} \tilde{B}_{HB,BB}[t]
+\tilde{B}_{HB,BB}[i,t]=\left( \dfrac{r_{L,BB,H}[i,t]}{r_{L,BB,HB}[t]} \right)^{-\xi_{HB,BB}} \tilde{B}_{HB,BB}[t]
 $$
 
 其中，
@@ -1524,7 +1524,7 @@ TODO银行接受存贷比约束监管：
 > 王擎, 田娇, 2016. 银行资本监管与系统性金融风险传递——基于DSGE模型的分析[J]. 中国社会科学, 000(03): 99–122.
 
 $$
- \frac{L_{BB}[i,t]}{D_{BB,H}[i,t]} \leq \check{\phi}_{CAR,BB}[i,t] 
+ \dfrac{L_{BB}[i,t]}{D_{BB,H}[i,t]} \leq \check{\phi}_{CAR,BB}[i,t] 
 $$
 
 其中，
@@ -1543,7 +1543,7 @@ TODO银行接受资本充足率约束监管：
 > 田娇, 王擎, 2017. 系统性风险防范与多重金融政策搭配——基于DSGE模型的逆周期监管效应分析[J]. 财经研究, 07(v.31;No.246): 59–71.
 
 $$
-\check{\phi}_{CAR}[i,t] \geq \frac{K_{B}[i,t]}{ \sum_{}^{}{\left(\omega_{CAR,BB}[i,j,t] \; A_{BB}[i,j,t]\right)}}
+\check{\phi}_{CAR}[i,t] \geq \dfrac{K_{B}[i,t]}{ \sum_{}^{}{\left(\omega_{CAR,BB}[i,j,t] \; A_{BB}[i,j,t]\right)}}
 $$
 
 
@@ -1622,12 +1622,12 @@ ABS_{BS}[j,i,t]
 \left(
 \begin{align}&
 D_{H}[t]
--D_{H}[i,t-1] \; \frac{(1+r_{D,BB,HI})}{\pi[t]}
+-D_{H}[i,t-1] \; \dfrac{(1+r_{D,BB,HI})}{\pi[t]}
 \\&
 +Br_{BB,G}[i,t]
--Br_{BB,G}[i,t-1] \; \frac{1+r_{G,BB}[i,t]}{\pi[t]}
+-Br_{BB,G}[i,t-1] \; \dfrac{1+r_{G,BB}[i,t]}{\pi[t]}
 \\&
-+L_{BB,PG}[i,t-1] \; \frac{(1+r_{L,BB,PG}[i,t]-\delta_{PG})}{\pi[t]}
++L_{BB,PG}[i,t-1] \; \dfrac{(1+r_{L,BB,PG}[i,t]-\delta_{PG})}{\pi[t]}
 -L_{BB,PG}[i,t] \; (1+Cost_{review,BB,P}[t])
 \\&
 同业拆入+Br_{}
@@ -1635,7 +1635,7 @@ D_{H}[t]
 同业拆出
 \\&
 - ABS_{BS}[j,i,t]
-+ (1-\mathcal{Pr}_{def,BS}[t]) \; ABS_{BS}[j,i,t-1] \; \frac{(1+r_{BS,BB}[t-1])}{\pi[t]}
++ (1-\mathcal{Pr}_{def,BS}[t]) \; ABS_{BS}[j,i,t-1] \; \dfrac{(1+r_{BS,BB}[t-1])}{\pi[t]}
 \\&
 - Pun_{CAR}[i,t,gap[i,t]]
 - Adj_{BB,A}\left[ABS_{BS}[t],L_{BB,BS}[t]\right]
@@ -1814,14 +1814,14 @@ $$
 
 定义中央银行对商业银行$i$的资本充足率惩罚函数$Pun_{CAR}[i,t,gap_[i,t]]$：
 $$
-Pun_{CAR}[i,t,Gap_{CAR}[i,t]] := \frac{1}{2} \; \kappa_{CAR} \left(  \right)
+Pun_{CAR}[i,t,Gap_{CAR}[i,t]] := \dfrac{1}{2} \; \kappa_{CAR} \left(  \right)
 $$
 
 
 
 构建传统货币政策调控方式Talor Rule：
 $$
-\log \left(\frac{R_{t}}{R}\right)=\kappa_{r} \log \left(\frac{R_{t-1}}{R}\right)+\left(1-\kappa_{r}\right)\left[\kappa_{y} \log \left(\frac{Y_{t}}{Y}\right)+\kappa_{\pi} \log \left(\frac{\pi_{t}}{\pi}\right)\right]+\varepsilon_{t}^{r}
+\log \left(\dfrac{R_{t}}{R}\right)=\kappa_{r} \log \left(\dfrac{R_{t-1}}{R}\right)+\left(1-\kappa_{r}\right)\left[\kappa_{y} \log \left(\dfrac{Y_{t}}{Y}\right)+\kappa_{\pi} \log \left(\dfrac{\pi_{t}}{\pi}\right)\right]+\varepsilon_{t}^{r}
 $$
 
 
@@ -1832,7 +1832,7 @@ $$
 
 定义中央银行对商业银行$i$不满足规定的存贷比要求对应的惩罚函数，于时期$t$：
 $$
-Pun_{LDR}[i,t,Gap_{LDR}[i,t]] := \frac{1}{2} \;
+Pun_{LDR}[i,t,Gap_{LDR}[i,t]] := \dfrac{1}{2} \;
 $$
 
 
