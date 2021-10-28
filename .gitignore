@@ -3,7 +3,7 @@
 *.ffs_lock
 *.sync.ffs_db
 *.trash
-*/*.obsidian
+*.obsidian
 
 Reference/*
 !Reference/*.md
@@ -11,5 +11,3 @@ Reference/*
 !Reference/*.drawio
 
 Reports/Graduation Thesis/*
-
-
