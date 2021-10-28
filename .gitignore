@@ -3,6 +3,7 @@
 *.ffs_lock
 *.sync.ffs_db
 *.trash
+*/*.obsidian
 
 Reference/*
 !Reference/*.md
