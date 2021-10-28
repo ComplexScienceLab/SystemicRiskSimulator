@@ -6,18 +6,18 @@ Other files:
 * Mdnotes File Name: [[Hill_2021_Topological phases emerge in an ecological model]]
 * Metadata File Name: [[Hill_2021_Topological phases emerge in an ecological model-zotero]]
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_VEPQXDLP)
 * [Cloud library](http://zotero.org/users/6240833/items/VEPQXDLP)
 
-## Notes
+# Notes
 - 
 
 
 
 
 
-## 借助拓扑学，解释生态系统中的种群变化
+# 借助拓扑学，解释生态系统中的种群变化
 
 Original Heather Hill 集智俱乐部 *3/17*
 
@@ -57,7 +57,7 @@ Heather Hill **| 作者**潘佳栋 **| 译者**刘培源 **| 审校**
 
 #   
 
-###   ***\*1. 剪刀石头布游戏\****   
+##   ***\*1. 剪刀石头布游戏\****   
 
 Frey的研究生Johannes Knebel受到机械超材料拓扑相的启发，开始探索其他可能存在拓扑态的系统。Knebel与Frey的另一位学生Philipp Geiger一直在研究**反对称的Lotka-Volterra方程****（ALVE，又称捕食者-猎物方程）**。ALVE是研究许多动态系统时会用到的模型，以生态学为例，ALVE被用于研究种群个体数量的动态变化：捕食者和猎物的关系如何影响种群增长。Frey小组近期用粒子替代物种，来以ALVE来预测在高能量状态下玻色·爱因斯坦凝聚物的形成。[4]
 
@@ -89,7 +89,7 @@ Frey的研究生Johannes Knebel受到机械超材料拓扑相的启发，开始�
 
 #   
 
-###   ***\*2. 一维链的极化行为\****   
+##   ***\*2. 一维链的极化行为\****   
 
 图2显示了一维剪刀石头布循环的一种数值结果。初始状态下，总质量均匀分布在整个链上，通过对计算进行归一化，使得所有试验的传输率r1=1。然后，研究人员改变偏度r=r2/r3的值。
 
@@ -127,7 +127,7 @@ Frey的研究生Johannes Knebel受到机械超材料拓扑相的启发，开始�
 
 #   
 
-###   ***\*3. 如何用拓扑学解释结果？\****   
+##   ***\*3. 如何用拓扑学解释结果？\****   
 
 为了使用拓扑结构解释他们的观察结果以及将ALVE和凝聚态物理联系起来，研究人员计算了一维石头剪刀布链的能带结构（energy band structure）的等效值[5]。首先，他们以S-by-S反对称矩阵的形式对相互作用进行公式化，找到了特征值和特征向量，并从中发现了能带结构。
 

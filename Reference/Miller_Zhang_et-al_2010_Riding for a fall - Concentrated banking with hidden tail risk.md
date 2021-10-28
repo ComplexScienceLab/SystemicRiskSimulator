@@ -1,6 +1,6 @@
 # Riding for a fall? Concentrated banking with hidden tail risk
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Marcus Miller]], [[Lei Zhang]], [[Han Hao Li]]
@@ -12,15 +12,15 @@
 * PDF Attachments
 	- [Miller_Zhang_et-al_2010_Riding for a fall - Concentrated banking with hidden tail risk.pdf](zotero://open-pdf/library/items/CD3LF5Y5)
 
-## Abstract
+# Abstract
 
 The traditional theory of commercial banking explains maturity transformation and liquidity provision under assumptions of free entry, no asymmetric information and no excess profits. These assumptions seem entirely at odds with evidence from banking in the US and UK, prior to the recent crisis. So we extend the traditional theory to allow for market concentration (monopoly banking) and principle-agent problems in the form of excess risk taking, via the use of derivatives to boost measured profits. The paper ends with a brief discussion of possible regulatory changes to limit concentration and gambling.
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_3ID6KH8F)
 * [Cloud library](http://zotero.org/users/6240833/items/3ID6KH8F)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - [[Miller2010 - 摘要：]]

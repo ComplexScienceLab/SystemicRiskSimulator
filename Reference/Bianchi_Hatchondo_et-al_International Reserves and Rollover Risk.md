@@ -11,12 +11,12 @@ Other files:
 * Mdnotes File Name: [[Bianchi2018]]
 * Metadata File Name: [[Bianchi2018-zotero]]
 
-##  Zotero links
+#  Zotero links
 
 * [Local library](zotero://select/items/1_MQFIYFR3)
 * [Cloud library](http://zotero.org/users/6240833/items/MQFIYFR3)
 
-## Notes
+# Notes
 
 
 
@@ -30,7 +30,7 @@ Other files:
 
 
 
-## 变量定义：
+# 变量定义：
 
 - $y$：国家产出；
 
@@ -52,7 +52,7 @@ Other files:
 
 
 
-## 国家的环境
+# 国家的环境
 
 $$
 E_{t} \sum_{j=t}^{\infty} \beta^{j-t} u\left(c_{j}\right)
@@ -76,7 +76,7 @@ $$
 - $q_{t}$：发行债务价格；
 - $y_t$：收入；
 
-## 政府问题表示为递归形式
+# 政府问题表示为递归形式
 
 变量定义：
 
@@ -151,7 +151,7 @@ $$
 
 
 
-## 博弈过程
+# 博弈过程
 
 该博弈是借款政府与贷款政府的在$t+1$时期、$t$时期的重复博弈。借款政府根据贷款政府在$t+1$期的定价，决策本国在$t+1$期$a$、b和是否违约$d$。然后贷款者再根据借款政府的$t+1$期的决策，制定$t$期的价格。然后借款政府再决策。就是这样从时期$t$的未来的时期，一直博弈到时期$t$为止的。
 
@@ -161,7 +161,7 @@ $$
 
 
 
-## 计算债券定价
+# 计算债券定价
 
 
 

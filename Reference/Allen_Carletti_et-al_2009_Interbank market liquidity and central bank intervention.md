@@ -1,6 +1,6 @@
 # Interbank market liquidity and central bank intervention
 
-## Metadata
+# Metadata
 
 * Type: [[Article]]
 * Authors: [[Franklin Allen]], [[Elena Carletti]], [[Douglas Gale]]
@@ -14,19 +14,19 @@
 * Tags: [[Zotero Import]]
 * PDF Attachments: [Allen et al_2009_Interbank market liquidity and central bank intervention.pdf](zotero://open-pdf/library/items/S7TKSV3F)
 
-### Abstract
+## Abstract
 
  We develop a simple model of the interbank market where banks trade a long term, safe asset. When there is a lack of opportunities for banks to hedge idiosyncratic and aggregate liquidity shocks, the interbank market is characterized by excessive price volatility. In such a situation, a central bank can implement the constrained efficient allocation by using open market operations to fix the short term interest rate. It can be constrained efficient for banks to hoard liquidity and stop trading with each other if there is sufficient uncertainty about aggregate liquidity demand compared to idiosyncratic liquidity demand.
 
-## 摘要  
+# 摘要  
 
 我们开发了银行间市场的简单模型，在该模型中，银行交易长期、安全的资产。 当银行缺乏对冲特殊和总体流动性冲击的机会时，银行间市场的特征就是价格过度波动。 在这种情况下，中央银行可以通过使用公开市场操作来固定短期利率来实施受限的有效分配。 如果总流动性需求与特殊流动性需求相比有足够的不确定性，则可以限制银行储备的流动性并停止相互交易。  
 
-## 目标  
+# 目标  
 
 - 建立一个分析具有银行间市场、中央银行如何干预的简单理论框架。  
 
-## 研究  
+# 研究  
 
 - 基于  
   - Allen和Gale（2004a，2004b）  
@@ -55,7 +55,7 @@
 
 
 
-## 模型
+# 模型
 
 
 

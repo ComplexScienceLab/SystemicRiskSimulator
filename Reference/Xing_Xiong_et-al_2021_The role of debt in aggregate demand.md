@@ -1,6 +1,6 @@
 # The role of debt in aggregate demand
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Xiaoyun Xing]], [[Wanting Xiong]], [[Jinzhong Guo]], [[Yougui Wang]]
@@ -14,12 +14,12 @@
 * PDF Attachments
 	- [Xing_Xiong_et-al_2021_The role of debt in aggregate demand.pdf](zotero://open-pdf/library/items/ZI4IJ3H7)
 
-## Abstract
+# Abstract
 
 With the purpose of performing a simple and original analysis on the mechanisms through which money and debt affect aggregate demand, this paper presents a stock-flow-consistent model in which the role of credit creation of banks is emphasized. By conducting theoretical analysis on income determination in an alternative way, we demonstrate that the equilibrium national in­ come can be expressed as flows generated from three sources, namely money circulation, private debt circulation, and total credit expansion.
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_GINM2Q6E)
 * [Cloud library](http://zotero.org/users/6240833/items/GINM2Q6E)
 

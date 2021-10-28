@@ -1,6 +1,6 @@
 # Financial networks and stress testing: Challenges and new research avenues for systemic risk analysis and financial stability implications
 
-## Metadata
+# Metadata
 
 * Type: [[Article]]
 * Authors: [[Stefano Battiston]], [[Serafin Martinez-Jaramillo]]
@@ -14,23 +14,23 @@
 * Tags: [[Zotero Import]]
 * PDF Attachments: [Battiston_Martinez-Jaramillo_2018_Financial networks and stress testing.pdf](zotero://open-pdf/library/items/RKBLDB9I)
 
-### Abstract
+## Abstract
 
  Network models, stress testing methods and early warning systems are attracting growing interest both among scholars and practitioners. In this short paper, we illustrate some examples of the insights they have to oﬀer both in terms of new fundamental scientiﬁc understanding and in terms of concrete applications to the policy area of ﬁnancial stability and macro-prudential policy. Finally, we discuss some new research pathways that the ﬁeld could engage in order to address the challenging questions still open.
 
 
 
-## 摘要
+# 摘要
 
 本文分析了风险敞口网络的多重分解中银行之间关系的持久性和重叠性。我们的分析可能对设计压力测试或模型（其中银行行为被明确建模）的研究人员有用。考虑到所涉及的时间段以及所使用的不同类型的曝光和交互作用，以前没有对此进行过研究。我们表明，某些银行对之间的交易关系重叠，并且有担保的链接持久性高于无担保的市场。此外，证券交叉控股网络中的链接持久性比其他融资网络中的链接持久性高得多，尽管与时俱进，但与其他活动部分的重叠率却很低。此外，无论对手方规模如何，大型银行收到的无抵押贷款的等待时间都最短（也就是说，对于给定的借款人和给定的贷方而言，观察到新贷款之前经过的天数），这意味着可以更快地获得流动性。大型银行向中型银行的贷款等待时间较短（无抵押），而不是小型银行；当它们借入网络的安全层时，情况并非如此。从中型银行借款时，小银行可以更快地获得有抵押贷款层的流动性。
 
 
 
-## 文章类型
+# 文章类型
 
 综述类文章  
 
-## 概述  
+# 概述  
 
 - 挑战和渠道  
 
@@ -52,7 +52,7 @@
 
   - 金融体系与实体经济之间的反馈作用  
 
-## 综述  
+# 综述  
 
 - 违约传染  
 
@@ -117,22 +117,22 @@
 
 
 
-## 数据  
+# 数据  
 
 - 墨西哥  
 
-## 代码  
+# 代码  
 
 - thank Ben Craig and Goetz von Peter for providing us with the code to ﬁt the core–periphery model to the Mexican interbank networks.  
 
-## 引用  
+# 引用  
 
 - Craig and von Peter (2010)  
   - 计算是否是网络层核心的算法  
 
 
 
-## 部分翻译
+# 部分翻译
 
 
 

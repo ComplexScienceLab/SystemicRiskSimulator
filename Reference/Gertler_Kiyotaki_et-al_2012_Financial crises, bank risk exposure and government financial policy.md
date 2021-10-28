@@ -20,7 +20,7 @@
 
 # Financial crises, bank risk exposure and government financial policy
 
-## Metadata
+# Metadata
 
 * Type: [[Article]]
 * Authors: [[Mark Gertler]], [[Nobuhiro Kiyotaki]], [[Albert Queralto]]
@@ -35,17 +35,17 @@
 * Zotero links: [Local library](zotero://select/items/1_PHWCFETK)
 * PDF Attachments: [Gertler_Kiyotaki et al_2012_Financial crises, bank risk exposure and government financial policy.pdf](zotero://open-pdf/library/items/ZAU993X5)
 
-### Abstract
+## Abstract
 
  A macroeconomic model with ﬁnancial intermediation is developed in which the intermediaries (banks) can issue outside equity as well as short term debt. This makes bank risk exposure an endogenous choice. The goal is to have a model that can not only capture a crisis when banks are highly vulnerable to risk, but can also account for why banks adopt such a risky balance sheet in the ﬁrst place. We use the model to assess quantitatively how perceptions of fundamental risk and of government credit policy in a crisis affect the vulnerability of the ﬁnancial system ex ante. We also study the effects of macro-prudential policies designed to offset the incentives for risk-taking.
 
-## 摘要
+# 摘要
 
 建立了具有金融中介作用的宏观经济模型，其中中介（银行）可以发行外部股本和短期债务，这使得银行风险敞口成为一种内生的选择，目标是建立一个不仅可以在发生危机时捕获危机的模型，其银行极易受到风险的影响，而且也可以首先解释为什么银行采用这样的风险资产负债表。我们使用该模型定量评估危机中对基本风险和政府信贷政策的看法如何影响银行的脆弱性。我们还研究了旨在设定冒险动机的宏观审慎政策的效果。
 
 
 
-## 工作
+# 工作
 
 - 使用了一个相关的模型来阐明，对金融中介的扰动能够引致经济实体面的危机。该模型中的金融摩擦和扰动源是银行可以因为私人的或者非生产性的动机而挪用它们从银行间市场获得的资金。这会带来资产负债表上的约束，并进而带来信用提供上的约束，从而限制投资支出，影响到实体面。中央银行的作用是通过向银行注入流动性或者通过直接向私人部门注入资金来减轻此类金融约束。
 - 金融危机之后，研究了包含金融中介的DSGE模型，集中研究流动性风险，以及政府的政策干预、对资产回报风险的认知等是如何影响金融中介对风险披露的程度的。
@@ -57,7 +57,7 @@
 
 
 
-## 缺点  
+# 缺点  
 
 - 该理论可能存在的一个不足是,它假设企业能够将自己的风险转移到银行,因为不存在违约风险,而且银行不对这些贷款收取风险溢价,虽然这些风险是来自于企业权益价值的波动。  
 
@@ -69,11 +69,11 @@
 
 
 
-## 模型  
+# 模型  
 
 > - 模型中,银行面临的信用风险,来自于银行向企业发放贷款时作为交换而持有的企业权益。 
 
-### 模型基础设定
+## 模型基础设定
 
 由**资本折旧率**$\delta$影响的**资本股票**：
 
@@ -99,9 +99,9 @@ $$
 
 
 
-### 家庭
+## 家庭
 
-##### 最优化问题：
+#### 最优化问题：
 
 最大化预期跨期加总效用函数，通过控制**消费**$C_t$、**劳动力供给**$L_t$、无风险债券$D_{ht}$、**外部股本数量**$\bar{e}_t$
 $$
@@ -141,7 +141,7 @@ $$
 > 是否不符合现实？
 
 
-### 商品生产商
+## 商品生产商
 
 
 
@@ -149,7 +149,7 @@ $$
 
 
 
-### 资本品生产商
+## 资本品生产商
 
 
 
@@ -157,15 +157,15 @@ $$
 
 
 
-### 银行部门
+## 银行部门
 
-#### 假设
+### 假设
 
 - 假设无摩擦之于资金流动于银行与生产商之间；
 
 
 
-#### 描述
+### 描述
 
 银行资产负债：
 $$
@@ -202,7 +202,7 @@ $$
 
 
 
-##### 最优化问题：
+#### 最优化问题：
 
 最大化商业银行的目标价值(23)：
 $$
@@ -211,7 +211,7 @@ V_{t}\left(s_{t}, e_{t}, d_{t}\right)=\mu_{s t} Q_{t} s_{t}+\mu_{e t} q_{t} e_{t
 $$
 
 
-##### 约束条件：
+#### 约束条件：
 
 激励相容约束(18)：
 $$
@@ -222,7 +222,7 @@ $$
 
 
 
-##### 求解过程：
+#### 求解过程：
 
 最优化问题(23)(18)可写成Bellman方程形式(19)(20)
 $$
@@ -276,7 +276,7 @@ $$
 
 
 
-###### 分析经济学含义之于上述式子：
+##### 分析经济学含义之于上述式子：
 
 (24)左边，$\mu_{et}$是银行用外部股本融资$\frac{\nu_{e t}}{q_{t}}$代替短期债务$\nu_{t}$对银行的边际收益，右边是银行私自转移资产份额的边际量$\theta\left(\varepsilon+\kappa x_{t}\right)$乘以相容激励约束价值$\lambda_t$。
 
@@ -288,7 +288,7 @@ $$
 
 
 
-###### 继续计算：
+##### 继续计算：
 
 结合(24)(25)然后求得$x_t$与$\left(\frac{\mu_{e t}}{\mu_{s t}}\right)$关系式：
 
@@ -336,7 +336,7 @@ $$
 
 
 
-###### 分析经济含义：
+##### 分析经济含义：
 
 首先银行希望净值$n_{t}$越大越好，但是银行总是有动机想要谋取私利，希望$\Theta\left(x_{t}\right)$越大越好。但是，如果$\Theta\left(x_{t}\right)$越大，那么被私自转移的$\Theta\left(x_{t}\right) Q_{t} s_{t}$就会越大，那么根据(23)，$V_t$也会越小，相应的$n_t$也可能越小。最终导致约束(18)起作用，等号成立。
 
@@ -362,7 +362,7 @@ $$
 
 
 
-###### 继续计算：
+##### 继续计算：
 
 
 
@@ -435,7 +435,7 @@ $$
 
 
 
-###### 加总银行净值
+##### 加总银行净值
 
 加总的银行证券需求$S_{pt}$和加总的银行部门资本净值
 $$
@@ -489,7 +489,7 @@ $$
 
 
 
-### 信贷政策：
+## 信贷政策：
 
 
 
@@ -531,7 +531,7 @@ $$
 
 
 
-### 均衡条件
+## 均衡条件
 
 
 
@@ -541,7 +541,7 @@ $$
 
 
 
-##### 证券市场均衡出清：
+#### 证券市场均衡出清：
 
 
 
@@ -583,7 +583,7 @@ Q_{t}\left(S_{t}-S_{g t}\right)=\frac{v_{t}}{\theta\left(1+\varepsilon x_{t}+x_{
 \tag{45}
 $$
 
-##### 外部股本出清：
+#### 外部股本出清：
 
 家庭外部股本需求$\bar{e}_t$等于银行外部股本供给$e_t$：
 $$
@@ -595,7 +595,7 @@ q_{t} \bar{e}_{t}=x_{t} \cdot Q_{t} S_{p t}
 \tag{46}
 $$
 
-##### 存款（无风险债券）出清：
+#### 存款（无风险债券）出清：
 
 > 回顾：
 >
@@ -617,7 +617,7 @@ $$
 D_{t}=D_{h t}-D_{g t}=\left(1-x_{t}\right) Q_{t} S_{p t}-N_{t}
 \tag{47}
 $$
-##### 劳动力均衡出清：
+#### 劳动力均衡出清：
 
 (10)代入(7)整理可得
 $$

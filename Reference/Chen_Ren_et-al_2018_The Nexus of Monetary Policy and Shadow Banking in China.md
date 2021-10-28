@@ -10,7 +10,7 @@
 
 # The Nexus of Monetary Policy and Shadow Banking in China
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Kaiji Chen]], [[Jue Ren]], [[Tao Zha]]
@@ -24,12 +24,12 @@
 * PDF Attachments
   - [Chen_Ren et al_2018_The Nexus of Monetary Policy and Shadow Banking in China.pdf](zotero://open-pdf/library/items/H8D38ZUA)
 
-## Abstract
+# Abstract
 
 We study how monetary policy in China influences banks’ shadow banking activities. We develop and estimate the endogenously switching monetary policy rule that is based on institutional facts and at the same time tractable in the spirit of Taylor (1993). This development, along with two newly constructed micro banking datasets, enables us to establish the following empirical evidence. Contractionary monetary policy during 2009–2015 caused shadow banking loans to rise rapidly, offsetting the expected decline of traditional bank loans and hampering the effectiveness of monetary policy on total bank credit. We advance a theoretical explanation of our empirical findings. (JEL E32, E52, G21, O16, O23, P24, P34)
 
 
-##  Zotero links
+#  Zotero links
 
 * [Local library](zotero://select/items/1_NGL2JAN8)
 * [Cloud library](http://zotero.org/users/6240833/items/NGL2JAN8)
@@ -38,15 +38,15 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-## 笔记
+# 笔记
 
-### 文章类别
+## 文章类别
 
 货币政策有效性分析。
 
 
 
-### 基本观点
+## 基本观点
 
 
 
@@ -54,7 +54,7 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-### 研究过程
+## 研究过程
 
 
 
@@ -133,11 +133,11 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-## 摘录
+# 摘录
 
 
 
-#### 【香樟推文1382】The Nexus of Monetary Policy and Shadow Banking
+### 【香樟推文1382】The Nexus of Monetary Policy and Shadow Banking
 
 何克润 香樟经济学术圈 *2019-03-11*
 
@@ -155,7 +155,7 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-##### 研究动机
+#### 研究动机
 
 
 
@@ -191,7 +191,7 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-##### 研究逻辑与基本结果
+#### 研究逻辑与基本结果
 
 
 
@@ -225,7 +225,7 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-##### 中国银行系统&货币政策的制度性事实
+#### 中国银行系统&货币政策的制度性事实
 
 
 
@@ -309,7 +309,7 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-##### 中国货币政策的估计
+#### 中国货币政策的估计
 
 
 
@@ -355,7 +355,7 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-##### 影子银行微观数据集
+#### 影子银行微观数据集
 
 
 
@@ -385,7 +385,7 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-##### 货币政策对影子银行的影响
+#### 货币政策对影子银行的影响
 
 现在，本文将回答第一个重要问题：货币政策变动对影子银行活动具有怎样的影响？因此，本部分将进行实证分析货币政策变动对影子银行活动的影响，发现国有和非国有银行在表外表内均表现出显著差异，同时非国有银行具有将表外影子银行业务转移到表内的过程。
 
@@ -499,7 +499,7 @@ We study how monetary policy in China influences banks’ shadow banking activit
 
 
 
-##### 中国银行系统中货币政策的有效性
+#### 中国银行系统中货币政策的有效性
 
 当面对货币政策紧缩时，非国有银行首先在表外增加委托贷款等影子银行业务（“被动应对者”），然后将这些影子银行业务以ARIX投资形式计入表内（“主动参与者”）。但紧缩性货币政策的实施是为了降低银行总体信贷（传统贷款+影子银行贷款），那么该货币政策是否达到预期还有待检验。因此，本部分将建立理论模型并使用结构VAR分析中国货币政策的有效性。
 

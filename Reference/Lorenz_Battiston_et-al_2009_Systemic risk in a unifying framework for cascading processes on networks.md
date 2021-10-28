@@ -1,6 +1,6 @@
 # Systemic risk in a unifying framework for cascading processes on networks
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[J. Lorenz]], [[S. Battiston]], [[F. Schweitzer]]
@@ -13,7 +13,7 @@
 	- [Lorenz_Battiston_et-al_2009_Systemic risk in a unifying framework for cascading processes on networks.pdf](zotero://open-pdf/library/items/D2QB3F29)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_EWRF4VSI)
 * [Cloud library](http://zotero.org/users/6240833/items/EWRF4VSI)
 

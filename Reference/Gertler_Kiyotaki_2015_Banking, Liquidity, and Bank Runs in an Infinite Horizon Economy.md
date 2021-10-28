@@ -11,7 +11,7 @@
 
 # Banking, Liquidity, and Bank Runs in an Infinite Horizon Economy
 
-## Metadata
+# Metadata
 
 * Type: [[Article]]
 * Authors: [[Mark Gertler]], [[Nobuhiro Kiyotaki]]
@@ -25,7 +25,7 @@
 * Tags: [[Zotero Import]], [[_tablet_modified]], [[Archived]]
 * PDF Attachments: [Gertler_Kiyotaki_2015_Banking, Liquidity, and Bank Runs in an Infinite Horizon Economy.pdf](zotero://open-pdf/library/items/RVJYZWDF)
 
-### Abstract
+## Abstract
 
  We develop an infinite horizon macroeconomic model of banking that allows for liquidity mismatch and bank runs. Whether a bank run equilibrium exists depends on bank balance sheets and an endogenous liquidation price for bank assets. While in normal times a bank run equilibrium may not exist, the possibility can arise in recessions. A run leads to a significant contraction in intermediation and aggregate economic activity. Anticipations of a run have harmful effects on the economy even if the run does not occur. We illustrate how the model can shed light on some key aspects of the recent financial crisis. (JEL E23, E32, E44, G01, G21, G33)
 
@@ -33,13 +33,13 @@
 
 
 
-## 摘要：
+# 摘要：
 
 我们开发一个无限水平的银行宏观经济模型，允许流动性不匹配和银行运行。银行运行均衡是否存在取决于银行资产负债表和银行资产的内生清算价格。虽然在正常时期，银行运行均衡可能不存在，但这种可能性可能在衰退中出现。运行导致中介和总体经济活动的显著收缩。对挤兑的预期对经济有有害影响，即使挤兑不出现。我们说明了该模型如何阐明最近金融危机的一些关键方面。
 
 
 
-## 目标
+# 目标
 
 目标是开发一个简单的银行不稳定宏观经济模型，它既实现了金融加速器效应，也实现了银行挤兑。我们的方法强调这些机制的互补性。资产负债表条件不仅影响银行信贷成本，还影响是否可能发生挤兑。在这方面，可以关联与宏观经济条件有关挤兑的可能性，反过来又描述挤兑如何反馈到宏观经济。
 
@@ -47,7 +47,7 @@
 
 
 
-## 模型
+# 模型
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-### 模型的特点
+## 模型的特点
 
 - 引入金融市场的摩擦；
 - 描述影子银行；
@@ -69,7 +69,7 @@
 
 
 
-#### 模型的关键特征
+### 模型的关键特征
 
 - 个体：
   - 家庭
@@ -111,7 +111,7 @@
 
 ​	
 
-#### 模型的家庭部门
+### 模型的家庭部门
 
 家庭部门的行为：
 
@@ -171,7 +171,7 @@ $$
   R_{t+1}^{h}=\frac{Z_{t+1}+Q_{t+1}}{Q_{t}+f^{\prime}\left(K_{t}^{h}\right)}
   $$
 
-#### 模型的银行部门
+### 模型的银行部门
 
 
 
@@ -197,7 +197,7 @@ $$
 
 
 
-##### 银行家的道德风险问题：
+#### 银行家的道德风险问题：
 银行家面临道德风险。就是在接受存款之后，面临两个选择：
 - 道德的事情：按照约定在到期时发放带息存款；
 - 不道德的事情：把资金拿去二级市场投资。为了不被发现，银行家只拿一部分$\theta$比例的资金，慢慢投资。这样做的惩罚是，存款人可以在下一个时期开始时迫使中介机构倒闭。

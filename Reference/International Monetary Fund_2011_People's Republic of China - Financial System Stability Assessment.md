@@ -1,6 +1,6 @@
 # People's Republic of China: Financial System Stability Assessment
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[ International Monetary Fund]]
@@ -13,7 +13,7 @@
 	- [International Monetary Fund_2011_People's Republic of China - Financial System Stability Assessment.pdf](zotero://open-pdf/library/items/5LKCH4DR)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_A7KM3BNT)
 * [Cloud library](http://zotero.org/users/6240833/items/A7KM3BNT)
 

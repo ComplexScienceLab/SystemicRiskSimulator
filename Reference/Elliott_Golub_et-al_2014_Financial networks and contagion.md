@@ -1,6 +1,6 @@
 # Financial networks and contagion
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[M. Elliott]], [[B. Golub]], [[M. O. Jackson]]
@@ -13,7 +13,7 @@
 	- [Elliott_Golub_et-al_2014_Financial networks and contagion.pdf](zotero://open-pdf/library/items/4K5DSFTB)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_JJ2ZCFZJ)
 * [Cloud library](http://zotero.org/users/6240833/items/JJ2ZCFZJ)
 

@@ -1,6 +1,6 @@
 # Economic complexity theory and applications
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[César A. Hidalgo]]
@@ -14,16 +14,16 @@
 * PDF Attachments
 	- [Hidalgo - 2021 - Economic complexity theory and applications.pdf](zotero://open-pdf/library/items/CZQLRHLU)
 
-## Abstract
+# Abstract
 
 Economic complexity methods have become popular tools in economic geography, international development and innovation studies. Here, I review economic complexity theory and applications, with a particular focus on two streams of literature: the literature on relatedness, which focuses on the evolution of specialization patterns, and the literature on metrics of economic complexity, which uses dimensionality reduction techniques to create metrics of economic sophistication that are predictive of variations in income, economic growth, emissions and income inequality.
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_CE5GRHZ8)
 * [Cloud library](http://zotero.org/users/6240833/items/CE5GRHZ8)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - [[Hidalgo2021 - ]]
 

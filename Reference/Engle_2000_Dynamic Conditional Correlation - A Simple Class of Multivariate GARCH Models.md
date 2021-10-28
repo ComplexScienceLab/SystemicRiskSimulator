@@ -1,6 +1,6 @@
 # Dynamic Conditional Correlation - A Simple Class of Multivariate GARCH Models
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Robert F. Engle]]
@@ -14,16 +14,16 @@
 * PDF Attachments
 	- [Engle_2000_Dynamic Conditional Correlation - A Simple Class of Multivariate GARCH Models.pdf](zotero://open-pdf/library/items/2HS979DK)
 
-## Abstract
+# Abstract
 
 Time varying correlations are often estimated with Multivariate Garch models that are linear in squares and cross products of the data. A new class of multivariate models called dynamic conditional correlation (DCC) models is proposed. These have the flexibility of univariate GARCH models coupled with parsimonious parametric models for the correlations. They are not linear but can often be estimated very simply with univariate or two step methods based on the likelihood function. It is shown that they perform well in a variety of situations and provide sensible empirical results.
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_QENXU4TG)
 * [Cloud library](http://zotero.org/users/6240833/items/QENXU4TG)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - [[Engle2000 - Version URL a href=httpweb.archive.orgweb20200920083822httpspapers.ssrn.comsol3papers.cfmabstract_id=2369]]
 - [[Engle2000 - 摘要]]

@@ -1,6 +1,6 @@
 # External constraints on monetary policy and the financial accelerator
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[M. Gertler]], [[S. Gilchrist]], [[F. M. Natalucci]]
@@ -13,7 +13,7 @@
 	- [Gertler_Gilchrist_et-al_2007_External constraints on monetary policy and the financial accelerator.pdf](zotero://open-pdf/library/items/CNR5HXTT)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_KQMUGCT7)
 * [Cloud library](http://zotero.org/users/6240833/items/KQMUGCT7)
 

@@ -1,6 +1,6 @@
 # A Macroprudential Theory of Foreign Reserve Accumulation
 
-## Metadata
+# Metadata
 
 * Item Type: [[Report]]
 * Authors: [[Fernando Arce]], [[Julien Bengui]], [[Javier Bianchi]]
@@ -13,13 +13,13 @@
 	- [Arce_Bengui et al_2019_A Macroprudential Theory of Foreign Reserve Accumulation.pdf](zotero://open-pdf/library/items/SRJRCSAK)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_7CSPSI33)
 * [Cloud library](http://zotero.org/users/6240833/items/7CSPSI33)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
-### 概览
+## 概览
 
 Fernado arce,Julien Bengui,Javier Bianchi（2019)提出了将外汇储备作为宏观审慎政策的理论，他们建立一个小型开放经济体金融危机模型，国内的家庭面临收入冲击
 
@@ -53,9 +53,9 @@ Fernado arce,Julien Bengui,Javier Bianchi通过比较自由放任的经济体、
 
 他们很好的解释了中等收入国家外汇储备和私人外债共同增长的现象，结论是:无论是随着时间推移还是在截面数据上，这二者的增长都是正相关的。且这一现象是顺周期的，这一顺周期性是由经济良好时期更高的超额借贷能力所驱动。
 
-### 模型
+## 模型
 
-#### 家庭部门
+### 家庭部门
 首先，对于家庭，又一个家庭最大化问题，满足由多期消费构成的效用最大化，如公式1所示。
 消费又由两类消费构成，如公式1下面的公式所示，重点关注可贸易商品的消费。
 公式2、3表示家庭的预算约束、家庭的信贷约束。
@@ -75,7 +75,7 @@ Fernado arce,Julien Bengui,Javier Bianchi通过比较自由放任的经济体、
 
 信贷约束公式3，可以使得外汇储备累积有效且有存在的必要，为了遏制外债的不断增长。
 
-#### 有效约束
+### 有效约束
 公式9-公式12类似前面对于家庭部门的描述，只不过这里才用福利分析。考虑一个社会规划师代表家庭作出集体借款决定。家庭借贷能力。
 
 分析的动机是出于资金的外部性，因为家庭的借贷能力取决于非贸易商品的市场决定价格$p_t^N$。特别是，家庭不会通过目前增加借款和今后减少消费来内化借贷能力，它们给非可交易产品的未来价格带来了下行压力，从而有助于收紧其他代理人的信贷限制。
@@ -84,7 +84,7 @@ Fernado arce,Julien Bengui,Javier Bianchi通过比较自由放任的经济体、
 在等式左边的多出来的项表示在时间t时，总消费的增加有助于放宽当期约束时的信贷约束。
 在右边多出来的项的下标增加了一个时期，可以看出当期借贷的增加如何降低下一期的消费并收紧下一期的信贷约束。
 
-#### 外汇储备累积
+### 外汇储备累积
 在这一部分中，我们证明了通过适当的储备积累政策，可以分散受约束的有效分配。
 
 

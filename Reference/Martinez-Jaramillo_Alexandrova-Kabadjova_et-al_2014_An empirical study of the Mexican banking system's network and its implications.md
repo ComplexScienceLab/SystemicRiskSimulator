@@ -1,6 +1,6 @@
 # An empirical study of the Mexican banking system's network and its implications for systemic risk
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Serafin Martinez-Jaramillo]], [[Biliana Alexandrova-Kabadjova]], [[Bernardo Bravo-Benitez]], [[Juan Pablo Solorzano-Margain]]
@@ -13,7 +13,7 @@
 	- [Martinez-Jaramillo_Alexandrova-Kabadjova_et-al_2014_An empirical study of the Mexican banking system's network and its implications.pdf](zotero://open-pdf/library/items/T5T3FJYN)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_34DB34EI)
 * [Cloud library](http://zotero.org/users/6240833/items/34DB34EI)
 

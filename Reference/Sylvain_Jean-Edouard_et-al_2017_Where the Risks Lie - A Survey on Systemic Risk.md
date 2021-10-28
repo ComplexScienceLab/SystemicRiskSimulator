@@ -4,7 +4,7 @@
 
 # Where the Risks Lie: A Survey on Systemic Risk
 
-## Metadata
+# Metadata
 
 * Type: [[Article]]
 * Authors: [[Benoit Sylvain]], [[Colliard Jean-Edouard]], [[Hurlin Christophe]], [[Pérignon Christophe]]
@@ -17,23 +17,23 @@
 * Tags: [[Zotero Import]]
 * PDF Attachments: [Sylvain_Jean-Edouard et al_Where the Risks Lie.pdf](zotero://open-pdf/library/items/M2PB43B3)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 * [[Sylvain__WheretheRisksLieASurveyonSystemicRisk - 在线全文：]]
 
 
 
-## 摘要
+# 摘要
 
 我们回顾了有关系统性风险的大量文献，并将其与当前的监管辩论联系起来。 在评估这一快速增长领域的成就时，我们发现了两种主要方法之间的差距。 第一个是单独研究系统性风险的不同来源，使用机密数据，并激发有针对性但复杂的监管工具。 第二种方法是使用市场数据来产生不与任何特定理论直接相关的全局度量，但是可以支持更有效的监管。 弥合这一差距将需要涵盖理论模型和改进的数据披露。
 
-## 文献梳理
+# 文献梳理
 
 ![image-20201028205208467](Sylvain_Jean-Edouard_et-al_2017_Where the Risks Lie - A Survey on Systemic Risk.assets/image-20201028205208467.png)
 
 
 
-## 系统性风险形成机制
+# 系统性风险形成机制
 
 
 

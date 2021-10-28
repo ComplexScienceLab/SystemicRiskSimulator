@@ -1,6 +1,6 @@
 # Evaluating Macroprudential Policy with Financial Friction DSGE Model
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Hyunduk Suh]]
@@ -12,12 +12,12 @@
 * PDF Attachments
   - [Suh_2011_Evaluating Macroprudential Policy with Financial Friction DSGE Model.pdf](zotero://open-pdf/library/items/IM3S8GDX)
 
-## Abstract
+# Abstract
 
 In general, macroprudential policy refers to a set of regulatory policy imposed mainly on ﬁnancial institutions, for macroeconomic purposes. In this paper, I aim to provide a DSGE framework to assess issues regarding macroprudential policy. Based on New Keynesian setup, I embedded ﬁnancial accelerator mechanism by Bernanke et al. (1999) in both business and household lending contract and designed bank capital functioning as a buﬀer stock. Then I evaluate the eﬀectiveness of various macroprudential policy rules given diﬀerent shocks, using a policy evaluation measure in terms of inﬂation and output volatility. It turns out the target capital ratio reacting to output deviation performs the best, as it can reduce the volatility of inﬂation and output in most cases. LTV rule on household lending is in general not eﬀective, as credit shifts away to the business sector.
 
 
-##  Zotero links
+#  Zotero links
 
 * [Local library](zotero://select/items/1_XCHFUG3M)
 * [Cloud library](http://zotero.org/users/6240833/items/XCHFUG3M)
@@ -28,7 +28,7 @@ In general, macroprudential policy refers to a set of regulatory policy imposed 
 
 
 
-## 模型
+# 模型
 
 
 
@@ -40,7 +40,7 @@ In general, macroprudential policy refers to a set of regulatory policy imposed 
 
 
 
-#### 家庭部门
+### 家庭部门
 
 多出银行借贷部分；
 
@@ -48,17 +48,17 @@ In general, macroprudential policy refers to a set of regulatory policy imposed 
 
 
 
-#### 生产部门
+### 生产部门
 
 
 
-##### 企业家
+#### 企业家
 
 
 
 
 
-##### 资本家
+#### 资本家
 
 
 

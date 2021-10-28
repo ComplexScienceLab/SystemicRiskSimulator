@@ -1,6 +1,6 @@
 # Liquidity Shortages and Banking Crises
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Douglas W. Diamond]], [[Raghuram G. Rajan]]
@@ -13,7 +13,7 @@
 	- [Diamond_Rajan_2005_Liquidity Shortages and Banking Crises.pdf](zotero://open-pdf/library/items/J43268QK)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_IK2IN2HK)
 * [Cloud library](http://zotero.org/users/6240833/items/IK2IN2HK)
 

@@ -6,11 +6,11 @@ Other files:
 * Mdnotes File Name: [[Scholl2021]]
 * Metadata File Name: [[Scholl2021-zotero]]
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_5NH6T9T2)
 * [Cloud library](http://zotero.org/users/6240833/items/5NH6T9T2)
 
-## Notes
+# Notes
 - 
 
 * Mdnotes File Name: [[Scholl2021]]

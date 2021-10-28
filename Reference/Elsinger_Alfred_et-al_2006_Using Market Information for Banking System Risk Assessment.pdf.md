@@ -1,6 +1,6 @@
 # Using Market Information for Banking System Risk Assessment.pdf
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Helmut Elsinger]], [[Lehar Alfred]], [[Summerc Martin]]
@@ -13,7 +13,7 @@
 	- [Elsinger_Alfred_et-al_2006_Using Market Information for Banking System Risk Assessment.pdf.pdf](zotero://open-pdf/library/items/BJ75H73B)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_4IQ4REKL)
 * [Cloud library](http://zotero.org/users/6240833/items/4IQ4REKL)
 

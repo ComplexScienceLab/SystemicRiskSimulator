@@ -1,6 +1,6 @@
 # Systemic risk in banking ecosystems
 
-## Metadata
+# Metadata
 
 * Type: [[Article]]
 * Authors: [[Andrew G. Haldane]], [[Robert M. May]]
@@ -16,7 +16,7 @@
 
 
 
-### Abstract
+## Abstract
 
 
 
@@ -26,7 +26,7 @@ In the run-up to the recent financial crisis, an increasingly elaborate set of f
 
 
 
-## 摘要
+# 摘要
 
 
 
@@ -36,11 +36,11 @@ In the run-up to the recent financial crisis, an increasingly elaborate set of f
 
 
 
-## 创新  
+# 创新  
 
 - 通过与生态食物网的动态以及传染病在其中传播的网络进行类比，简化金融网络模型，探索了复杂性和稳定性之间的相互作用。  
 
-## 工作  
+# 工作  
 
 - 考虑金融体系内债权的增长在导致银行倒闭和不稳定中的作用  
 - 概述了各种不同的方式，在这种方式下，最初的银行故障或“冲击”可能会传播，从而导致后续故障的级联。  

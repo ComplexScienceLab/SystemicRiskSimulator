@@ -1,6 +1,6 @@
 # Graph Neural Networks: Methods, Applications, and Opportunities
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Lilapati Waikhom]], [[Ripon Patgiri]]
@@ -13,16 +13,16 @@
 * PDF Attachments
 	- [Waikhom_Patgiri_2021_Graph Neural Networks - Methods, Applications, and Opportunities.pdf](zotero://open-pdf/library/items/PGMQRDII)
 
-## Abstract
+# Abstract
 
 In the last decade or so, we have witnessed deep learning reinvigorating the machine learning field. It has solved many problems in the domains of computer vision, speech recognition, natural language processing, and various other tasks with state-of-the-art performance. The data is generally represented in the Euclidean space in these domains. Various other domains conform to non-Euclidean space, for which graph is an ideal representation. Graphs are suitable for representing the dependencies and interrelationships between various entities. Traditionally, handcrafted features for graphs are incapable of providing the necessary inference for various tasks from this complex data representation. Recently, there is an emergence of employing various advances in deep learning to graph data-based tasks. This article provides a comprehensive survey of graph neural networks (GNNs) in each learning setting: supervised, unsupervised, semi-supervised, and self-supervised learning. Taxonomy of each graph based learning setting is provided with logical divisions of methods falling in the given learning setting. The approaches for each learning task are analyzed from both theoretical as well as empirical standpoints. Further, we provide general architecture guidelines for building GNNs. Various applications and benchmark datasets are also provided, along with open challenges still plaguing the general applicability of GNNs. CCS Concepts: • Computing methodologies → Machine learning; Machine learning approaches; Learning paradigms; Machine learning algorithms; Cross-validation; Artificial intelligence.
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_B8NP239N)
 * [Cloud library](http://zotero.org/users/6240833/items/B8NP239N)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - [[Waikhom.Patgiri_2021 - ]]
 - [[Waikhom.Patgiri_2021 - Comment Submitted to ACM]]
@@ -33,13 +33,13 @@ In the last decade or so, we have witnessed deep learning reinvigorating the mac
 
 
 
-### ![Image](Waikhom_Patgiri_2021_Graph Neural Networks - Methods, Applications, and Opportunities.assets/640-20210923120748328)
+## ![Image](Waikhom_Patgiri_2021_Graph Neural Networks - Methods, Applications, and Opportunities.assets/640-20210923120748328)
 
-###   **报道** 
+##   **报道** 
 
 作者：专知
 
-##### **【导读】**图神经网络一直是业界关注的热点之一。最近来自印度国家理工学院的学者发布了《图神经网络》综述论文。
+#### **【导读】**图神经网络一直是业界关注的热点之一。最近来自印度国家理工学院的学者发布了《图神经网络》综述论文。
 
 
 

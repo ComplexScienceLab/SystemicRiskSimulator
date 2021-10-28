@@ -1,6 +1,6 @@
 # Connectomes across development reveal principles of brain maturation
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Daniel Witvliet]], [[Ben Mulcahy]], [[James K. Mitchell]], [[Yaron Meirovitch]], [[Daniel R. Berger]], [[Yuelong Wu]], [[Yufang Liu]], [[Wan Xian Koh]], [[Rajeev Parvathala]], [[Douglas Holmyard]], [[Richard L. Schalek]], [[Nir Shavit]], [[Andrew D. Chisholm]], [[Jeff W. Lichtman]], [[Aravinthan D. T. Samuel]], [[Mei Zhen]]
@@ -12,12 +12,12 @@
 * Topics: [[Collection]]
 * Tags: #学科/认知科学, #内容/神经元连接规律, #zotero, #literature-notes, #reference
 
-## Abstract
+# Abstract
 
 An animal’s nervous system changes as its body grows from birth to adulthood and its behaviours mature1–8. The form and extent of circuit remodelling across the connectome is unknown3,9–15. Here we used serial-section electron microscopy to reconstruct the full brain of eight isogenic Caenorhabditis elegans individuals across postnatal stages to investigate how it changes with age. The overall geometry of the brain is preserved from birth to adulthood, but substantial changes in chemical synaptic connectivity emerge on this consistent scaffold. Comparing connectomes between individuals reveals substantial differences in connectivity that make each brain partly unique. Comparing connectomes across maturation reveals consistent wiring changes between different neurons. These changes alter the strength of existing connections and create new connections. Collective changes in the network alter information processing. During development, the central decision-making circuitry is maintained, whereas sensory and motor pathways substantially remodel. With age, the brain becomes progressively more feedforward and discernibly modular. Thus developmental connectomics reveals principles that underlie brain maturation.
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_KN7BLTWC)
 * [Cloud library](http://zotero.org/users/6240833/items/KN7BLTWC)
 

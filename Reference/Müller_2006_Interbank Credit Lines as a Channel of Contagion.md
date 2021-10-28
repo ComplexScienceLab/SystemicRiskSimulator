@@ -1,6 +1,6 @@
 # Interbank Credit Lines as a Channel of Contagion
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Jeannette Müller]]
@@ -14,12 +14,12 @@
 * PDF Attachments
 	- [Müller_2006_Interbank Credit Lines as a Channel of Contagion.pdf](zotero://open-pdf/library/items/V98GFYL7)
 
-## Abstract
+# Abstract
 
 This paper assesses the potential for contagion in the Swiss interbank market using new data on bilateral bank exposures as well as on credit lines. A simulation approach is applied to assess the banking system’s inherent instability. Moreover, the spill-over effects of a simulated default situation in the interbank market on the liquidity and solvency of banks are measured. The main ﬁndings are, ﬁrst, that there is a substantial potential for contagion. Second, the exposure as well as the credit line contagion channel are relevant for Switzerland. Third, a lender of last resort intervention could reduce spill-over effects remarkably. Finally, the structure of the interbank market has considerable impact on its resilience against spill-over effects: Centralized markets are more prone to contagion than homogenous ones.
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_KWASDW3D)
 * [Cloud library](http://zotero.org/users/6240833/items/KWASDW3D)
 

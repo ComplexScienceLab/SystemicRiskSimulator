@@ -6,11 +6,11 @@ Other files:
 * Mdnotes File Name: [[Amir2021]]
 * Metadata File Name: [[Amir2021-zotero]]
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_GZLWPSL3)
 * [Cloud library](http://zotero.org/users/6240833/items/GZLWPSL3)
 
-## Notes
+# Notes
 - 
 
 * Mdnotes File Name: [[Amir2021]]

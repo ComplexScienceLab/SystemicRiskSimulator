@@ -1,6 +1,6 @@
 # Macroeconomic Theory: A Dynamic General Equilibrium Approach, 2nd edn
 
-## Metadata
+# Metadata
 
 * Type: [[Book]]
 * Authors: [[Michael Wickens]]
@@ -13,9 +13,9 @@
 
 
 
-## page 496-504 的模型
+# page 496-504 的模型
 
-### 工作
+## 工作
 
 - 提出了一个包含内生变量的违约的DSGE模型  
 

@@ -1,6 +1,6 @@
 # Credit and banking in a DSGE model of the Euro area
 
-## Metadata
+# Metadata
 
 * Type: [[Article]]
 * Authors: [[Andrea Gerali]], [[Stefano Neri]], [[Luca Sessa]], [[Federico Maria Signoretti]]
@@ -14,11 +14,11 @@
 * Zotero links: [Local library](zotero://select/items/1_DD8GBCJ6)
 * PDF Attachments: [Gerali_Neri et al_2010_Credit and banking in a DSGE model of the Euro area.pdf](zotero://open-pdf/library/items/5JDGSRNI)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 
 
-### 摘要
+## 摘要
 
 研究：
 
@@ -40,7 +40,7 @@
 
 
 
-### 前言【翻译】
+## 前言【翻译】
 
 本文试图了解金融摩擦和银行中介在塑造商业周期动态中的作用。为此，我们制定并估算了一个动态的一般均衡模型，该模型纳入了具有一定程度的市场支配力（在资产负债表的两面都具有一定市场支配力）并且积累了满足资本充足性要求的银行资本的银行部门。我们使用我们的模型来研究第一，如何通过引入银行业来改变货币和技术冲动的传导机制，其次，是如何将源自信贷市场的冲击传递给实体经济。此外，我们估计银行业内部的冲击对2008年欧元区经济活动放缓的影响。
 
@@ -72,7 +72,7 @@
 
 
 
-### 模型的前面部分
+## 模型的前面部分
 
 
 
@@ -88,13 +88,13 @@
 
 > 以上为机器翻译。
 
-### 模型
+## 模型
 
 
 
-#### 家庭部门
+### 家庭部门
 
-##### 耐心家庭：
+#### 耐心家庭：
 
 
 
@@ -114,7 +114,7 @@ $$
 其中，
 The flow of expenses includes current consumption, accumulation of housing services (with real price $q_{t}^{h}$ ) and deposits to be made this period $d_{t} .$ Resources are composed of wage earnings $w_{t}^{P} l_{t}^{P}$ (where $w_{t}^{P}$ is the real wage rate for the labor input of each patient household), gross interest income on last period deposits $\left(1+r_{t-1}^{d}\right) d_{t-1} / \pi_{t}$ (where $\pi_{t} \equiv$ $P_{t} / P_{t-1}$ is the gross inflation) and a number of lump-sum transfers $t_{t}^{P},$ which include a labor union membership net fee and dividends from ﬁrms and banks (of which patient households are the only owners).
 
-##### 非耐心家庭
+#### 非耐心家庭
 
 最优化目标：
 $$
@@ -141,7 +141,7 @@ where $m_{t}^{I}$ is the (stochastic) loan-to-value ratio (LTV) for mortgages. F
 
 
 
-##### 企业家
+#### 企业家
 
 Each entrepreneur $i$ only cares about deviations of his own consumption $c_{t}^{E}(i)$ from aggregate lagged group habits (parameterized by $a^{E}$ ) and maximizes the utility function
 $$
@@ -168,7 +168,7 @@ where $m_{t}^{E}$ is the stochastic entrepreneurs' LTV ratio. Our assumption on 
 
 
 
-#### 银行部门
+### 银行部门
 
 银行部门处于模型的核心部分。
 
@@ -176,7 +176,7 @@ where $m_{t}^{E}$ is the stochastic entrepreneurs' LTV ratio. Our assumption on 
 
 
 
-##### 批发银行分支
+#### 批发银行分支
 
 假设：
 
@@ -227,7 +227,7 @@ $$
 
 
 
-##### 贷款银行分支
+#### 贷款银行分支
 
 
 
@@ -284,7 +284,7 @@ $$
 
 
 
-##### 存款银行分支
+#### 存款银行分支
 
 行为：
 

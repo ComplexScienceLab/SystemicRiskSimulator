@@ -9,18 +9,18 @@ Other files:
 * Mdnotes File Name: [[Christensen2008]]
 * Metadata File Name: [[Christensen2008-zotero]]
 
-##  Zotero links
+#  Zotero links
 
 * [Local library](zotero://select/items/1_8F36HGAF)
 * [Cloud library](http://zotero.org/users/6240833/items/8F36HGAF)
 
-## Notes
+# Notes
 
 
 
 
 
-##### 企业家
+#### 企业家
 
 
 企业家的假设：
@@ -148,7 +148,7 @@ $$
 
 
 
-##### 资本家
+#### 资本家
 
 资本家调整资本存在成本，其目标是追求最大化利润：
 $$
@@ -179,7 +179,7 @@ where $\rho_{x} \in(-1,1)$ is an autoregressive coefficient, and $\varepsilon_{x
 
 
 
-##### 零售商
+#### 零售商
 
 零售业仅用于将名义刚性引入该经济体。 零售商以等于企业家名义边际成本的价格从企业家那里购买批发商品，并无成本地区分它们。 然后，他们在垄断竞争的市场中出售这些差异化的零售产品。 根据Calvo（1983）和Yun（1996），我们假设除非零售商收到随机信号，否则他们无法重新优化其销售价格。 接收到这样的信号的恒定概率为（1-φ）。 因此，每个零售商j设置价格，～p t（j），该价格在l个时期内使预期利润最大化。 因此，l = 1 /（1-φ）是价格保持不变的平均时间长度。 但是，零售商j必须以概率φ收取前一时期以稳态总通货膨胀率π为指标的有效价格。 在时间t处，如果零售商j收到重新优化的信号，它会选择价格～p t（j），以使其折扣最大化，即在其价格固定的间隔内的预期实际总利润。
 

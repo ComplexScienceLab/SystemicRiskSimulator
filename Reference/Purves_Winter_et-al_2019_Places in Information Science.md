@@ -1,6 +1,6 @@
 # Places in Information Science
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Ross S. Purves]], [[Stephan Winter]], [[Werner Kuhn]]
@@ -15,13 +15,13 @@
 	- [Purves_Winter_et-al_2019_Places in Information Science.pdf](zotero://open-pdf/library/items/AWU9FVSI)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_X4WPCUX3)
 * [Cloud library](http://zotero.org/users/6240833/items/X4WPCUX3)
 
 
 
-## 摘要
+# 摘要
 
 
 

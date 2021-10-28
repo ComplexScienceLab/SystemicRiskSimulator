@@ -1,6 +1,6 @@
 # Vulnerable Banks
 
-## Metadata
+# Metadata
 
 * Type: [[Article]]
 * Authors: [[Greenwood Robin Marc]], [[Landier Augustin]], [[Thesmar David]]
@@ -13,24 +13,24 @@
 * Tags: [[Zotero Import]]
 * PDF Attachments: [Marc et al_2015_Vulnerable Banks.pdf](zotero://open-pdf/library/items/I99XDJ3R)
 
-### Abstract
+## Abstract
 
  When a bank experiences a negative shock to its equity, one way to return to target leverage is to sell assets. If asset sales occur at depressed prices, then one bank’s sales may impact other banks with common exposures, resulting in contagion. We propose a simple framework that accounts for how this effect adds up across the banking sector. Our framework explains how the distribution of bank leverage and risk exposures contributes to a form of systemic risk. We compute bank exposures to system-wide deleveraging, as well as the spillover of a single bank’s deleveraging onto other banks. We show how our model can be used to evaluate a variety of crisis interventions, such as mergers of good and bad banks and equity injections. We apply the framework to European banks vulnerable to sovereign risk in 2010 and 2011.
 
 
 
-## 摘要
+# 摘要
 
 当银行的权益遭受负面冲击时，恢复目标杠杆的一种方法是出售资产。如果资产销售价格低迷，那么一家银行的销售可能会影响其他有共同风险敞口的银行，从而导致传染。我们提出一个简单的框架，说明这种影响如何在整个银行业中加起来。我们的框架说明了银行杠杆和风险敞口的分布如何导致某种形式的系统性风险。我们计算银行在整个系统范围内的去杠杆化的风险敞口，以及单个银行去杠杆化对其他银行的溢出风险。我们将展示如何使用我们的模型来评估各种危机干预措施，例如好坏银行的合并以及注资。我们将该框架应用于2010年和201年易受主权风险影响的欧洲银行。
 
 
 
-## 问题
+# 问题
 
 
 #问题 为什么这篇文章强制要求必须保持杠杆率恰好一致，而不是大于等于杠杆率要求？ ^0sn2g5b
 
-## 相关机制
+# 相关机制
 
 考虑了金融机构持有多种非流动性金融资产的降价抛售线性传染机制。  
 
@@ -40,23 +40,23 @@
 
 
 
-## 抛售资产规则  
+# 抛售资产规则  
 
 - 按照初始比例抛售资产  
 
 
 
-## 相关文献：
+# 相关文献：
 
 
 
 
 
-## 模型
+# 模型
 
 
 
-#### 解释一些公式：
+### 解释一些公式：
 
 
 
@@ -94,11 +94,11 @@ R_{2}=M F_{2}=M L \phi=\left(M L M^{\prime} B A_{1}\right) R_{1}
 $$
 
 
-#### 测度指标
+### 测度指标
 
 
 
-##### 测度**加总的去杠杆化的风险**
+#### 测度**加总的去杠杆化的风险**
 
 加总脆弱性指标AV：
 $$
@@ -156,7 +156,7 @@ $$
 
 
 
-##### 各银行对去杠杆化的贡献："系统性"
+#### 各银行对去杠杆化的贡献："系统性"
 
 各银行对去杠杆化的贡献："系统性"，描述了某银行对加总脆弱性的贡献
 
@@ -178,7 +178,7 @@ $$
 
 
 
-##### 间接脆弱性
+#### 间接脆弱性
 
 
 $$
@@ -210,7 +210,7 @@ $$
 
 
 
-##### 直接脆弱性
+#### 直接脆弱性
 
 
 $$

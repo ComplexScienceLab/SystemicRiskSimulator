@@ -6,11 +6,11 @@ Other files:
 * Mdnotes File Name: [[Lu2021]]
 * Metadata File Name: [[Lu2021-zotero]]
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_PS7LD4H4)
 * [Cloud library](http://zotero.org/users/6240833/items/PS7LD4H4)
 
-## Notes
+# Notes
 - 
 
 * Mdnotes File Name: [[Lu2021]]

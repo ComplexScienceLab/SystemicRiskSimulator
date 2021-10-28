@@ -8,7 +8,7 @@
 
 # Systemic Risk in Financial Systems
 
-## Metadata
+# Metadata
 
 * Type: [[Article]]
 * Authors: [[Larry Eisenberg]], [[Thomas H. Noe]]
@@ -22,7 +22,7 @@
 * Tags: [[Zotero Import]], [[Credit Risk]], [[Clearning Systems]], [[Default]]
 * PDF Attachments: [Eisenberg_Noe_2001_Systemic Risk in Financial Systems.pdf](zotero://open-pdf/library/items/M3EHHA2A)
 
-### Abstract
+## Abstract
 
  We consider default by firms that are part of a single clearing mechanism. The obligations of all firms within the system are determined simultaneously in a fashion consistent with the priority of debt claims and the limited liability of equity. We first show, via a fixed-point argument, that there always exists a "clearing payment vector" that clears the obligations of the members of the clearing system; under mild regularity conditions, this clearing vector is unique. Next, we develop an algorithm that both clears the financial system in a computationally efficient fashion and provides information on the systemic risk faced by the individual system firms. Finally, we produce qualitative comparative statics for financial systems. These comparative statics imply that, in contrast to single-firm results, even unsystematic, nondissipative shocks to the system will lower the total value of the system and may lower the value of the equity of some of the individual system firms.
 
@@ -32,7 +32,7 @@
 
 
 
-## 摘要  
+# 摘要  
 
 我们认为机构违约是单一清算机制一部分。  
   系统内所有机构的债务是按照与债权优先级和权益有限责任一致的方式同时确定的。  
@@ -41,7 +41,7 @@
  最后，定性分析金融系的比较稳态。  
   比较稳态意味着，与单一机构的结果相比，即使是对系统的非系统性，非耗散性的冲击也会降低系统的总价值，并可能降低某些单个系统机构的股权价值。  
 
-## 工作  
+# 工作  
 
 - 文章为复杂金融系统的清算向量的存在和唯一性提供条件，分析清算向量的性质，并提供描述清算向量与金融系统基础参数之间关系的比较静态变量。
 - 描述了金融系统的特性  
@@ -57,14 +57,14 @@
 
 
 
-## 贡献  
+# 贡献  
 
 - 无传染悖论的开创工作  
 - 通过严格的数学模型证明，较好地解决了债务网络中的付款清算问题。  
 
 
 
-## 特点  
+# 特点  
 
 - 理论分析  
 - 数学证明  
@@ -73,13 +73,13 @@
 
 
 
-## 缺点
+# 缺点
 
 > 模型可以分析金融系统的健康状况，但是容易产生错误的乐观或者悲观的估计结论。
 
 
 
-## 后续研究  
+# 后续研究  
 
 - Elsinger, H., Lehar, A., & Summer, M. (2006). Risk Assessment for Banking Systems. Management Science,52, 1301–1314.  
 - Glasserman, P., Young, H. P., Young, P., & Young, H. P. (2015). How likely is contagion in ﬁnancial networks?Journal of Banking & Finance, 50, 383–399.  

@@ -1,6 +1,6 @@
 # Financial Stability and Interacting Networks of Financial Institutions and Market Infrastructures
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Carlos León]], [[Ron J Berndsen]], [[Luc Renneboog]]
@@ -11,7 +11,7 @@
 * PDF Attachments
 	- [León_Berndsen_et-al_Financial Stability and Interacting Networks of Financial Institutions and.pdf](zotero://open-pdf/library/items/9MN9PGT6)
 
-## Abstract
+# Abstract
 
 An interacting network coupling financial institutions’ multiplex (i.e. multi-layer) and financial market infrastructures’ single-layer networks gives an accurate picture of a financial system’s true connective architecture. We examine and compare the main properties of Colombian multiplex and interacting financial networks. Coupling financial institutions’ multiplex networks with financial market infrastructures’ networks removes modularity, which augments financial instability because the network then fails to isolate feedbacks and limit cascades while it retains its robust-yet-fragile features. Moreover, our analysis highlights the relevance of infrastructure-related systemic risk, corresponding to the effects caused by the improper functioning of FMIs or by FMIs acting as conduits for contagion.
 
@@ -22,7 +22,7 @@ An interacting network coupling financial institutions’ multiplex (i.e. multi-
 
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_VL6PJJY2)
 * [Cloud library](http://zotero.org/users/6240833/items/VL6PJJY2)
 

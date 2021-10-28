@@ -7,16 +7,16 @@ Other files:
 * Mdnotes File Name: [[GuoNuo2018a]]
 * Metadata File Name: [[GuoNuo2018a-zotero]]
 
-##  Zotero links
+#  Zotero links
 
 * [Local library](zotero://select/items/1_QWTY557A)
 * [Cloud library](http://zotero.org/users/6240833/items/QWTY557A)
 
-## Notes
+# Notes
 
 
 
-## 模型
+# 模型
 
 
 
@@ -24,9 +24,9 @@ Other files:
 
 
 
-#### 生产部门
+### 生产部门
 
-##### 房地产开发商
+#### 房地产开发商
 
 
 
@@ -111,7 +111,7 @@ $$
 
 
 
-#### 影子银行
+### 影子银行
 
 
 
@@ -166,7 +166,7 @@ $$
 
 
 
-#### 商业银行
+### 商业银行
 
 
 
@@ -189,7 +189,7 @@ $$
 
 
 
-#### 参数校准
+### 参数校准
 
 
 

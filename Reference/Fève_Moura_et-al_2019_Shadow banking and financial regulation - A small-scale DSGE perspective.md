@@ -6,7 +6,7 @@
 
 # Shadow banking and financial regulation: A small-scale DSGE perspective
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Patrick Fève]], [[Alban Moura]], [[Olivier Pierrard]]
@@ -20,12 +20,12 @@
 * PDF Attachments
   - [Fève_Moura et al_2019_Shadow banking and financial regulation - A small-scale DSGE perspective.pdf](zotero://open-pdf/library/items/I77VVVLQ)
 
-## Abstract
+# Abstract
 
 This paper estimates a small-scale DSGE model of the US economy with interacting traditional and shadow banks. We ﬁnd that shadow banks amplify the transmission of structural shocks by helping escape constraints from traditional intermediaries. We show how this leakage toward shadow entities reduces the ability of macro-prudential policies targeting traditional credit to reduce economic volatility. A counterfactual experiment suggests that a countercyclical capital buffer, if applied only to traditional banks, would have in fact ampliﬁed the boom-bust cycle associated with the ﬁnancial crisis of 2007-2008. On the other hand, a broader regulation scheme targeting both traditional and shadow credit would have helped stabilize the economy.
 
 
-##  Zotero links
+#  Zotero links
 
 * [Local library](zotero://select/items/1_RP7B3PPP)
 * [Cloud library](http://zotero.org/users/6240833/items/RP7B3PPP)
@@ -36,11 +36,11 @@ This paper estimates a small-scale DSGE model of the US economy with interacting
 
 
 
-## 模型
+# 模型
 
 
 
-#### 定义
+### 定义
 
 一些变量定义：
 
@@ -62,7 +62,7 @@ $$
 $$
 
 
-#### 传统银行部门
+### 传统银行部门
 
 资产负债表
 $$
@@ -199,13 +199,13 @@ $$
 
 
 
-#### 影子银行部门
+### 影子银行部门
 
 影子银行建模采用OLG模型结构，生命周期2 。时期1进入市场，发行ABS给非金融机构；时期2获利，还款，退出市场。
 
 
 
-##### 假定：
+#### 假定：
 
 - 影子银行进入时无资产；
 
@@ -224,7 +224,7 @@ $$
 
 
 
-##### 行为：
+#### 行为：
 
 时期$t=1$，新影子银行进入市场，发行ABS给非金融机构；存在单位发行成本$0<\bar{a}<1$。其资产负债表：
 $$
@@ -256,7 +256,7 @@ $$
 
 
 
-#### 闭合其模型
+### 闭合其模型
 
 
 
@@ -264,7 +264,7 @@ $$
 
 
 
-#### 方法之于计算模型
+### 方法之于计算模型
 
 采用标准线性化技术，贝叶斯估计方法。
 

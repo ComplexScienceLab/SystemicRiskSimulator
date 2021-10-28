@@ -1,6 +1,6 @@
 # Portfolio Credit Risk
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Thomas C Wilson]]
@@ -13,10 +13,10 @@
 	- [Wilson_1998_Portfolio Credit Risk.pdf](zotero://open-pdf/library/items/WNNS2KZE)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_77DWJLFM)
 * [Cloud library](http://zotero.org/users/6240833/items/77DWJLFM)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - Wilson1998 - 压力测试法的鼻祖框架。

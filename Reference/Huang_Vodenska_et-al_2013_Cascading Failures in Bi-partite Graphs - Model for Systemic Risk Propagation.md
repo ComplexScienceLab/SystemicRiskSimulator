@@ -1,6 +1,6 @@
 # Cascading Failures in Bi-partite Graphs: Model for Systemic Risk Propagation
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Xuqing Huang]], [[Irena Vodenska]], [[Shlomo Havlin]], [[H. Eugene Stanley]]
@@ -15,11 +15,11 @@
 	- [Huang_Vodenska_et-al_2013_Cascading Failures in Bi-partite Graphs - Model for Systemic Risk Propagation.pdf](zotero://open-pdf/library/items/M7XKURW3)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_HDX4565V)
 * [Cloud library](http://zotero.org/users/6240833/items/HDX4565V)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - [[Huang2013 - 特点：其研究方法更偏物理学的研究方法，离金融学研究方法较远。]]
 - [[Huang2013 - 被引文献]]

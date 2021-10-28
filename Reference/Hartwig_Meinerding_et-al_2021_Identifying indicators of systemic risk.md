@@ -1,6 +1,6 @@
 # Identifying indicators of systemic risk
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Benny Hartwig]], [[Christoph Meinerding]], [[Yves S. Schüler]]
@@ -14,16 +14,16 @@
 * PDF Attachments
 	- [Hartwig_Meinerding_et-al_2021_Identifying indicators of systemic risk.pdf](zotero://open-pdf/library/items/FDR9ZWW5)
 
-## Abstract
+# Abstract
 
 We operationalize the deﬁnition of systemic risk provided by the IMF, BIS, and FSB and derive a two-stage hierarchical hypothesis test to identify indicators of systemic risk. Applying the framework to a set of candidate variables for 45 countries, we detect two credit-based ﬁnancial cycle variables that, by and large, pass our test. However, for many other variables, including the Basel III credit-to-GDP gap, we ﬁnd that elevated systemic risk is signaled by high values in some countries and by low values in others. More generally, our results suggest that, ex ante, systemic risk can be clearly identiﬁed only once the turning points of indicators have been observed.
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_IPPYLGHW)
 * [Cloud library](http://zotero.org/users/6240833/items/IPPYLGHW)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 定义系统性风险：
 

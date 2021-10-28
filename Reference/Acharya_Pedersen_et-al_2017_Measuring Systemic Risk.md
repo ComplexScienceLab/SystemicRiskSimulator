@@ -8,7 +8,7 @@
 
 # Measuring Systemic Risk
 
-## Metadata
+# Metadata
 
 * Type: [[Book]]
 * Authors: [[Viral V Acharya]], [[Lasse H Pedersen]], [[Thomas Philippon]], [[Matthew P Richardson]]
@@ -20,19 +20,19 @@
 * Tags: [[Zotero Import]], [[_tablet_modified]]
 * PDF Attachments: [Acharya_Pedersen et al_2017_Measuring Systemic Risk.pdf](zotero://open-pdf/library/items/HUZAFDQC)
 
-### Abstract
+## Abstract
 
  We present an economic model of systemic risk in which undercapitalization of the ﬁnancial sector as a whole is assumed to harm the real economy, leading to a systemic risk externality. Each ﬁnancial institution’s contribution to systemic risk can be measured as its systemic expected shortfall (SES), that is, its propensity to be undercapitalized when the system as a whole is undercapitalized. SES increases in the institution’s leverage and its marginal expected shortfall (MES), that is, its losses in the tail of the system’s loss distribution. We demonstrate empirically the ability of components of SES to predict emerging systemic risk during the ﬁnancial crisis of 2007–2009. (JEL G01, G21, G28, D62, H23)
 
 
 
-## 摘要
+# 摘要
 
 我们提出了一种系统性风险的经济模型，其中假定金融部门整体的资本不足会损害实体经济，从而导致系统性风险的外部性。 每个金融机构对系统性风险的贡献都可以用其系统性预期缺口（SES）来衡量，也就是说，当整个系统的资本不足时，其金融不足的倾向。  SES增加了该机构的杠杆作用和其边际预期缺口（MES），即其在系统损失分布末端的损失。 我们从经验上证明了SES的组成部分能够预测2007-2009年金融危机期间出现的系统性风险的能力。
 
 
 
-## 工作  
+# 工作  
 
 - 制定一个框架，然后衡量系统性风险；  
 
@@ -40,9 +40,9 @@
 
 - 最后，对2007-2009年金融危机进行了详细的分析，支持了系统风险的理论分析；  
 
-## 研究的贡献  
+# 研究的贡献  
 
-### 模型  
+## 模型  
 
 - 五因素模型  
 
@@ -54,13 +54,13 @@
 
   我们通过研究一种理论模型来“弥合差距”，该理论模型基于各种一般均衡模型的公分母，但又足够简单，可以依靠众所周知的统计方法提供清晰的建议。 我们的模型基于以下基本思想：对金融机构进行监管的主要原因是：  （ii）金融系统的资本不足会导致外部性扩散到整个经济体。  3有趣的是，即使是相对简单的模型也足以获得具有丰富经验内容的丰富的系统风险监管新理论。  
 
-## 模型
+# 模型
 
 
 
-### 理论部分
+## 理论部分
 
-#### 银行激励
+### 银行激励
 
 设定：
 
@@ -152,9 +152,9 @@ $$
 
 
 
-### 经验部分
+## 经验部分
 
-#### 衡量系统性风险的指标
+### 衡量系统性风险的指标
 
 两类标准用以测度风险水平：
 
@@ -232,7 +232,7 @@ $$
 
 
 
-## 结论
+# 结论
 
 
 

@@ -1,6 +1,6 @@
 # Ecology for bankers
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Robert M. May]], [[Simon A. Levin]], [[George Sugihara]]
@@ -15,10 +15,10 @@
 	- [May_Levin_et-al_2008_Ecology for bankers.pdf](zotero://open-pdf/library/items/76ZNW37M)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_VIMPTLZT)
 * [Cloud library](http://zotero.org/users/6240833/items/VIMPTLZT)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - [[May2008 - Version URL a href=httpweb.archive.orgweb20200827124829httpswww.nature.comarticles451893a data-originalur]]

@@ -1,6 +1,6 @@
 # Fire-Sale Spillovers and Systemic Risk
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Fernando Duarte]], [[Thomas M. Eisenbach]]
@@ -15,7 +15,7 @@
 * PDF Attachments
 	- [Duarte_Eisenbach_2013_Fire-Sale Spillovers and Systemic Risk.pdf](zotero://open-pdf/library/items/JFARD3N9)
 
-## Abstract
+# Abstract
 
 We construct a new systemic risk measure that quantifies vulnerability to fire-sale spillovers using detailed regulatory balance sheet data for U.S. commercial banks and repo market data for broker-dealers. Even for moderate shocks in normal times, fire-sale externalities can be substantial. For commercial banks, a 1 percent exogenous shock to assets in 2013:Q1 produces fire-sale externalities equal to 21 percent of system capital. For broker-dealers, a 0.1 percent shock to assets in August 2013 generates spillover losses equivalent to almost 6 percent of system capital. Externalities during the last financial crisis are between two and three times larger. Our systemic risk measure reaches a peak in the fall of 2007 but shows a notable increase starting in 2004, ahead of many other systemic risk indicators. Although the largest banks and brokerdealers produce – and are victims of – most of the externalities, leverage and linkages of financial institutions also play important roles.
 
@@ -26,15 +26,15 @@ We construct a new systemic risk measure that quantifies vulnerability to fire-s
 
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_CDJHTJLK)
 * [Cloud library](http://zotero.org/users/6240833/items/CDJHTJLK)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - [[Duarte2013 - 摘要]]
 - [[Duarte2013 - 相关的借鉴]]
 
-### 相关的借鉴
+## 相关的借鉴
 
 > 方意, 和黄丽灵. 2019. 《系统性风险、抛售博弈与宏观审慎政策》. 经济研究, 期 09 vo 54: 41–55.借鉴了根据 Duarte ＆ Eisenbach（ 2013） 对资产的划分，本文定义现金、政府债券等流动性强、安全性高的资产为流动性资产，其余流动性较差的资产定义为非流动性资产。

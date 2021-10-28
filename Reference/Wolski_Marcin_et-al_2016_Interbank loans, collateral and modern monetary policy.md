@@ -1,6 +1,6 @@
 # Interbank loans, collateral and modern monetary policy
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[ Wolski]], [[ Marcin]], [[ van]], [[ de]], [[ Leur]], [[ Michiel]]
@@ -13,7 +13,7 @@
 	- [Wolski_Marcin_et-al_2016_Interbank loans, collateral and modern monetary policy.pdf](zotero://open-pdf/library/items/FC37H3X3)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_AQVPF75K)
 * [Cloud library](http://zotero.org/users/6240833/items/AQVPF75K)
 

@@ -1,6 +1,6 @@
 # Contagion and risk-sharing on the inter-bank market
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Daniel Ladley]]
@@ -15,7 +15,7 @@
 	- [Ladley_2013_Contagion and risk-sharing on the inter-bank market.pdf](zotero://open-pdf/library/items/GHJ9PTXQ)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_9UJIVFKD)
 * [Cloud library](http://zotero.org/users/6240833/items/9UJIVFKD)
 

@@ -1,6 +1,6 @@
 # Bank runs: Liquidity costs and investment distortions
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Russell Cooper]], [[Thomas W Ross]]
@@ -14,10 +14,10 @@
 	- [Cooper_Ross_1998_Bank runs - Liquidity costs and investment distortions.pdf](zotero://open-pdf/library/items/5NC2K796)
 
 
-##  Zotero links
+#  Zotero links
 * [Local library](zotero://select/items/1_A663GUMC)
 * [Cloud library](http://zotero.org/users/6240833/items/A663GUMC)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - [[Cooper1998 - 摘要]]

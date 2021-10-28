@@ -7,18 +7,18 @@ Other files:
 * Mdnotes File Name: [[Gertler2011]]
 * Metadata File Name: [[Gertler2011-zotero]]
 
-##  Zotero links
+#  Zotero links
 
 * [Local library](zotero://select/items/1_LG2NB8NM)
 * [Cloud library](http://zotero.org/users/6240833/items/LG2NB8NM)
 
-## Notes
+# Notes
 
 - 
 
 # A model of unconventional monetary policy
 
-## Metadata
+# Metadata
 
 * Item Type: [[Article]]
 * Authors: [[Mark Gertler]], [[Peter Karadi]]
@@ -32,17 +32,17 @@ Other files:
 * PDF Attachments
   - [Gertler_Karadi_2011_A model of unconventional monetary policy.pdf](zotero://open-pdf/library/items/8V8WIV8V)
 
-## Abstract
+# Abstract
 
 We develop a quantitative monetary DSGE model with ﬁnancial intermediaries that face endogenously determined balance sheet constraints. We then use the model to evaluate the eﬀects of the central bank using unconventional monetary policy to combat a simulated ﬁnancial crisis. We interpret unconventional monetary policy as expanding central bank credit intermediation to oﬀset a disruption of private ﬁnancial intermediation. The primary advantage the central bank has over private intermediaries is that it can elastically obtain funds by issuing riskless government debt. During the crisis, the balance sheet constraints on private intermediaries tighten, raising the net beneﬁts from central bank intermediation. We ﬁnd that the welfare beneﬁts from this policy may be substantial if the relative eﬃciency costs of central bank intermediation are modest. Further, in a ﬁnancial crisis there are beneﬁts from credit policy even if the nominal interest has not reached the zero lower bound. In the event the zero lower bound constraint is binding, however, the next beneﬁts from credit policy may be signiﬁcantly enhanced.
 
 
-##  Zotero links
+#  Zotero links
 
 * [Local library](zotero://select/items/1_LG2NB8NM)
 * [Cloud library](http://zotero.org/users/6240833/items/LG2NB8NM)
 
-## Highlights and Annotations
+# Highlights and Annotations
 
 - [[Gertler2011 - 摘要]]
 
@@ -54,23 +54,23 @@ We develop a quantitative monetary DSGE model with ﬁnancial intermediaries tha
 
 
 
-## 特点
+# 特点
 
 考虑了道德激励约束以对银行家。
 
 
 
-## 模型
+# 模型
 
 
 
-#### 家庭部门
+### 家庭部门
 
 提供劳动力、消费、储蓄。
 
 
 
-#### 金融部门
+### 金融部门
 
 金融部门（金融中介、银行之类的金融部门）提供贷款其从储户来，至非金融公司。持有长期资产和基金
 
@@ -152,7 +152,7 @@ $$
 
 
 
-#### 市场出清
+### 市场出清
 
 
 
@@ -165,7 +165,7 @@ $$
 I_{n t} \equiv I_{t}-\delta\left(U_{t}\right) \xi_{t} K_{t}
 $$
 
-#### 政府部门
+### 政府部门
 
 
 
@@ -219,7 +219,7 @@ $$
 
 
 
-##### 和平时期货币政策：
+#### 和平时期货币政策：
 
 表现为简单的Taylor规则，包含利率平滑参数$\rho$：
 $$
@@ -231,7 +231,7 @@ $$
 $$
 
 
-##### 危机时期信贷政策：
+#### 危机时期信贷政策：
 
 利率规则足以作为正常时期的货币政策。但是，在危机中允许采取信贷政策。尤其是假设在危机开始时，将宽松定义为信贷利差急剧上升的时期，根据以下反馈规则，中央银行将根据信贷利差的变化注入信贷：
 $$
@@ -243,15 +243,15 @@ $$
 
 
 
-## 实验
+# 实验
 
 
 
 
 
-#### 实验
+### 实验
 
-##### 实验目的：
+#### 实验目的：
 
 阐述模型行为是怎样的。
 
