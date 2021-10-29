@@ -11,3 +11,7 @@ Reference/*
 !Reference/*.drawio
 
 Reports/Graduation Thesis/*
+
+code/.idea/
+code/env_python/
+code/env_julia/

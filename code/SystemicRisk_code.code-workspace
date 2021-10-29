@@ -4,5 +4,9 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"julia.environmentPath": "/Users/ethan/LocalFiles/ResearchFile/SystemicRisk/code/env_julia",
+		"terminal.integrated.env.osx": {
+		}
+	}
 }
