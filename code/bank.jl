@@ -3,6 +3,7 @@
 
 mutable struct bank_commercial # 商业银行结构体
     ID::Int32 # 银行编号
+    abbr_name::String # 银行名称缩写
     name::String # 银行名称
     Assets::Float32 # 资产
     Liabilities::Float32 # 负债
