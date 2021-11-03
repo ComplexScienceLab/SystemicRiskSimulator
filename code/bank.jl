@@ -8,7 +8,11 @@ mutable struct bank_commercial # 商业银行结构体
     Liabilities::Float32 # 负债
     Equity::Float32 # 所有者权益
     Loan::Float32 # 贷款量
+    Borrow::Float32 # 借款量
 end
+
+
+
 
 
 

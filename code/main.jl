@@ -8,7 +8,7 @@
 
 ## 
 
-vec_bank_commercial = Array{bank_commercial}
+vec_bank_commercial = Array{bank_commercial,3,2}
 
 Matrix{Float32}(4,3,2)
 
