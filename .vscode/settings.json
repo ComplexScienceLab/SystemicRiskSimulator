@@ -1,4 +1,5 @@
 {
     "markdown.preview.fontSize": 24,
-    "editor.fontSize": 14
+    "editor.fontSize": 14,
+    "restructuredtext.syntaxHighlighting.disabled": true
 }
