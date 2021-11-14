@@ -13,6 +13,8 @@
 * Tags: [[Zotero Import]]
 * PDF Attachments: [Marc et al_2015_Vulnerable Banks.pdf](zotero://open-pdf/library/items/I99XDJ3R)
 
+链接：[Zotero link](zotero://select/library/items/PLE4CHVF)
+
 ## Abstract
 
  When a bank experiences a negative shock to its equity, one way to return to target leverage is to sell assets. If asset sales occur at depressed prices, then one bank’s sales may impact other banks with common exposures, resulting in contagion. We propose a simple framework that accounts for how this effect adds up across the banking sector. Our framework explains how the distribution of bank leverage and risk exposures contributes to a form of systemic risk. We compute bank exposures to system-wide deleveraging, as well as the spillover of a single bank’s deleveraging onto other banks. We show how our model can be used to evaluate a variety of crisis interventions, such as mergers of good and bad banks and equity injections. We apply the framework to European banks vulnerable to sovereign risk in 2010 and 2011.
