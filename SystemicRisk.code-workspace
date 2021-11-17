@@ -17,6 +17,10 @@
 		"editor.suggestFontSize": 12,
 		"editor.fontSize": 14,
 		"editor.fontFamily": "Times New Roman, Menlo, Monaco, 'Courier New', monospace",
-	
+		"workbench.colorCustomizations": {
+			
+			"editor.background": "#fbfffc"
+		},
+
 	}
 }
