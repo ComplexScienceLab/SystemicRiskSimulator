@@ -1,6 +1,6 @@
 # 系统性风险的传染渠道与度量研究——兼论宏观审慎政策实施
 
-# Metadata
+## Metadata
 
 * Item Type: [[Article]]
 * Authors: [[ 方意]]
@@ -8,21 +8,21 @@
 * Date Added: [[2020-05-26]]
 * Cite key: FangYi_2016a
 * Topics: [[系统性风险研究角度之测度]], [[系统性风险研究角度风险传染]], [[系统性风险研究角度政策监管、救助、最后贷款人]]
-* Related: [[Noncore bank liabilities and financial vulnerability]], [[系统性风险、抛售博弈与宏观审慎政策]], [[Vulnerable Banks]]
+* Related: [[Noncore bank liabilities and financial vulnerability-mdnotes]], [[系统性风险、抛售博弈与宏观审慎政策-mdnotes]], [[Vulnerable Banks-mdnotes]]
 * Tags: #网络模型, #【方法】：测度, #【研究】：中国银行业系统性风险, #【研究】：传染机制, #【内容】：银行间市场, #【用途】：借鉴方法, #【内容】：宏观审慎监管, #【感觉】：重要, #【用途】：借鉴思路, #【内容】：系统性风险传染, #【学科】：经济学, #【进度】：精读, #【内容】：银行系统性风险, #zotero, #literature-notes, #reference
 * PDF Attachments
 	- [方意_2016_系统性风险的传染渠道与度量研究——兼论宏观审慎政策实施.pdf](zotero://open-pdf/library/items/JHH3AURJ)
 
-# Abstract
+## Abstract
 
 本文创新性构建了包含银行破产机制和去杠杆机制的资产负债表直接关联网络模型。本文发现:(1)四类银行特征和4个外生参数影响四类传染渠道,且影响存在显著差异,四类传染渠道中去杠杆渠道(Loss~(DEL))和银行间负债违约渠道(Loss~(IA_DF))最为重要;(2)在传染过程中,银行破产会导致系统性风险急剧上升,且破产越集中,系统性风险越大;(3)系统性风险存在"区制转换"效应:当低于某一参数阈值,金融体系呈现出随时间递减的"常态"系统性风险(SR),该风险由银行体系杠杆率驱动;当高于某一参数阈值,金融体系呈现出随时间递增的"危机"系统性风险(SR),该风险由银行关联性和资产规模驱动,并主要来源于传染指标较高的大型商业银行;(4)4个外生参数对应了四类针对金融体系整体的宏观审慎政策,脆弱性指标(VBI)和传染性指标(CBI)对应了针对单家金融机构的宏观审慎政策,这些宏观审慎政策应根据金融周期(上行或下行)和系统性风险类型(常态或危机)来实施。
 
 
-#  Zotero links
+##  Zotero links
 * [Local library](zotero://select/items/1_J9MGRSUG)
 * [Cloud library](http://zotero.org/users/6240833/items/J9MGRSUG)
 
-# Highlights and Annotations
+## Highlights and Annotations
 
 - [[系统性风险的传染渠道与度量研究——兼论宏观审慎政策实施 - Extracted Annotations (3102021, 43333 PM)]]
 - [[系统性风险的传染渠道与度量研究——兼论宏观审慎政策实施 - Extracted Annotations (202099 下午51023)于其考虑的是金融机构持 有相同类型资产由于价格损失而导致的间接传染， 而本文则关注金融机构相互借贷由于破产和降价抛 售成本而导致的直接传染 (方意 20]]
@@ -31,4 +31,3 @@
 - [[系统性风险的传染渠道与度量研究——兼论宏观审慎政策实施 - The following values have no corresponding Zotero fieldSR 1AD 中央财经大学金融学院;中央财经大学全球金融治理协同创新中心;中央财经大学银行业研究中心;DS CNKI]]
 - [[系统性风险的传染渠道与度量研究——兼论宏观审慎政策实施 - 指标借鉴]]
 - [[系统性风险的传染渠道与度量研究——兼论宏观审慎政策实施 - 模型借鉴]]
-
