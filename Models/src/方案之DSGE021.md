@@ -1,6 +1,6 @@
 # 系统性金融风险建模
 
-> 方案DSGE020
+> 方案之DSGE021
 
 
 [TOC]
@@ -8,6 +8,13 @@
 
 
 # 总假设之于DSGE模型框架
+
+
+
+**方案之DSGE021**以方案之DSGE020为基准，添加如下部门：
+
+- 房地产开发商部门；
+- 影子银行部门；
 
 
 
@@ -21,16 +28,16 @@
 
 
 
-| 部门         | 模块                                                         | 备注 |
-| ------------ | ------------------------------------------------------------ | ---- |
-| 居民部门     | [模块之居民部门H020](../模型模块/模块之居民部门H020.md) |      |
-| 消费品生产商 | [模块之消费品生产商PG020](../模型模块/模块之消费品生产商PG020.md) |      |
-| 房地产开发商 | -                                                            |      |
-| 商业银行部门 | [模块之商业银行BB200](../模型模块/模块之商业银行BB200.md) |      |
-| 影子银行部门 | -                                                            |      |
-| 广义政府部门 | [模块之广义政府部门G010](../模型模块/模块之广义政府部门G010.md) |      |
-|              |                                                              |      |
-|              |                                                              |      |
+| 部门         | 模块                                                         | 备注                 |
+| ------------ | ------------------------------------------------------------ | -------------------- |
+| 居民部门     | [模块之居民部门H020](模块之居民部门H020.md) | 暂时不考虑银行家角色 |
+| 消费品生产商 | [模块之消费品生产商PG020](模块之消费品生产商PG020.md) |                      |
+| 房地产开发商 | [模块之房地产开发商PE010](模块之房地产开发商PE010.md) |                      |
+| 商业银行部门 | [模块之商业银行BB200](模块之商业银行BB200.md) |                      |
+| 影子银行部门 | [模块之影子银行BS120](模块之影子银行BS120.md) |                      |
+| 广义政府部门 | [模块之广义政府部门G010](模块之广义政府部门G010.md) |                      |
+|              |                                                              |                      |
+|              |                                                              |                      |
 
   
 
@@ -43,8 +50,6 @@
 
 
 
-
-
 ## 居民部门
 
 
@@ -52,10 +57,10 @@
 ### 参考
 
 > 居民部门的设置参照：[[方意_2016_宏观审慎政策有效性研究.md]]、[[Gerali_Neri_et-al_2010_Credit and banking in a DSGE model of the Euro area.md]]
->
+> 
 > 【方意, 2016. 宏观审慎政策有效性研究[J]. 世界经济, 39(08): 25–49.】
 >
-> 【Gerali A, Neri S, Sessa Lab, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.】
+> 【Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.】
 
 
 
@@ -75,17 +80,28 @@
 对于居民部门之消费需求$C_{H}[t]$由以下构成：
 
 $$
-C_{H}[t] := C_{H,PG}[t]
+C_{H}[t] := C_{H,PG}[t] + C_{H,PE}[t]
 $$
 
 其中，
 $C_{H,PG}[t]$：居民部门之需求对于消费大众商品；
+$C_{H,PE}[t]$：居民部门之需求对于住房消费；
 
 上述表达式对于居民部门各子部门同样有效。
 
 
 
 
+
+对于居民部门$\mathbb{H}$之住房消费需求$C_{H,PE}[t]$，有如下表达式：
+$$
+C_{H,PE}[t] := p_{PE}[t] \; \Delta C_{H,PE}[t]
+$$
+
+其中，
+$p_{PE}[t] \; \Delta C_{H,PE}[t]$：房地产价格$p_{PE}[t]$与居民部门的住房偿还贷款变动量$\Delta C_{H,PE}[t]$的乘积，于时期$t$；
+
+上述表达式对于居民部门各子部门同样有效。
 
 
 
@@ -95,12 +111,16 @@ $C_{H,PG}[t]$：居民部门之需求对于消费大众商品；
 $$
 Uti_{H,C}[t] := 
 \alpha_{H,PG} \; \varepsilon_{H,PG}[t] \; \log[C_{H,PG}[t]] 
++ \alpha_{H,PE} \; \varepsilon_{H,PE}[t] \; \log C_{H,PE}[t]
 $$
 
 其中，
 $\alpha_{H,PG}$：居民部门消费品消费行为偏好参数；
 $\varepsilon_{H,PG}[t]$：扰动项之于居民部门之消费品消费，于时期$t$；
 $C_{H,PG}[t]$：居民部门之消费品消费，于时期$t$；
+$\alpha_{H,PE}$：居民部门之住房消费行为偏好参数；
+$\varepsilon_{H,PE}[t]$：扰动项之于住房消费，于时期$t$；
+$C_{H,PE}[t]$：居民部门之住房消费，于时期$t$；
 
 上述表达式对于居民部门各子部门同样有效。
 
@@ -110,11 +130,12 @@ $C_{H,PG}[t]$：居民部门之消费品消费，于时期$t$；
 
 对于居民部门$\mathbb{H}$之工作时长$Hour_{H}[t]$，在时期$t$，由如下部分组成：
 $$
-Hour_{H}[t] := Hour_{H,PG}[t]
+Hour_{H}[t] := Hour_{H,PG}[t] + Hour_{H,PE}[t]
 $$
 
 其中，
 $Hour_{H,PG}[t]$：居民部门在消费品中间品生产商的工作时长，于时期$t$；
+$Hour_{H,PE}[t]$：居民部门在房地产开发商的工作时长，于时期$t$；
 
 上述表达式对于居民部门各子部门同样有效。
 
@@ -126,11 +147,12 @@ $Hour_{H,PG}[t]$：居民部门在消费品中间品生产商的工作时长，�
 
 定义居民部门$\mathbb{H}$获得总收入$Income_{H}[t]$为：
 $$
-Income_{H}[t] := w_{PG}[t] \; Hour_{H,PG}[t]
+Income_{H}[t] := w_{PG}[t] \; Hour_{H,PG}[t] + w_{PE}[t] \; Hour_{H,PE}[t]
 $$
 
 其中，
 $w_{PG}[t] \; Hour_{H,PG}[t]$：居民部门获得总收入，从生产部门之消费品生产商部门。暨消费品生产商提供的工资率$w_{PG}[t]$，与在消费品生产商的工作时长$Hour_{HB,PG}[t]$的乘积，于时期$t$；
+$w_{PE}[t]  \; Hour_{H,PE}[t]$：居民部门获得总收入，从生产部门之房地产开发商。暨房地产开发商提供的工资率$w_{PE}[t]$，与在房地产开发商的工作时长$Hour_{HB,PE}[t]$的乘积，于时期$t$；
 
 上述表达式对于居民部门各子部门同样有效。
 
@@ -241,6 +263,7 @@ Uti_{HB,C}[t]
 - \dfrac{\left(Hour_{HB}[t]\right)^{1+\alpha_{Hour,H}}}{1+\alpha_{Hour,H}}
  \right)
 \right]
+<!-- \tag{HB_goal} -->
 $$
 
 其中，
@@ -265,7 +288,7 @@ $\alpha_{Hour,H}$：居民工作时长对效用的指数因子；
 
 预算约束：
 $$
-C_{HB}[t] + Br_{HB,BB}[i,t-1] \; \dfrac{(1 + r_{L,BB,H}[i,t])}{\pi[t]} \leq Income_{HB}[t]+ Br_{HB,BB}[i,t] + Trans_{HB}[t]
+C_{HB}[t] + Br_{HB,BB}[i,t-1] \; \dfrac{(1 + r_{L,BB,H}[i,t]) }{\pi[t]} \leq Income_{HB}[t]+ Br_{HB,BB}[i,t] + Trans_{HB}[t]
 $$
 \tag{HB_st_budget}
 其中，
@@ -399,8 +422,6 @@ $Trans_{HI}[t]$：投资和储蓄型居民获得的转移支付，于时期$t$�
 
 
 
-
-
 ### 居民部门居民类型的转换
 
 
@@ -409,15 +430,15 @@ TODO居民部门$\mathbb{H}$两类居民的转换
 
 
 
-~~其中，银行家成员的转换：~~
+其中，银行家成员的转换：
 
-> ~~参照：[[Gerali_Neri_et-al_2010_Credit and banking in a DSGE model of the Euro area.md]]~~
-> ~~~~
-> ~~【Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.】~~
-> ~~~~
-> ~~的做法~~
+> 参照：[[Gerali_Neri_et-al_2010_Credit and banking in a DSGE model of the Euro area.md]]
+> 
+> 【Gerali A, Neri S, Sessa L, 等, 2010. Credit and banking in a DSGE model of the Euro area[J]. Journal of money credit and banking, 42(s1): 107–141.】
+> 
+> 的做法
 
-~~居民成员中特殊角色可相互转化，每期银行家的相互转化满足泊松过程，分别以固定的退出率（转换率） $1-\lambda_{b} , \lambda_{b} \in[0,1)$， 随机退出自己岗位转为其他角色。如果退出率为0，则居民成员的角色不相互转化。~~
+居民成员中特殊角色可相互转化，每期银行家的相互转化满足泊松过程，分别以固定的退出率（转换率） $1-\lambda_{b} , \lambda_{b} \in[0,1)$， 随机退出自己岗位转为其他角色。如果退出率为0，则居民成员的角色不相互转化。
 
 
 
@@ -431,8 +452,10 @@ TODO居民部门$\mathbb{H}$两类居民的转换
 
 ### 参考
 
-生产部门融资部分参考：[[郭娜_马莹莹_et-al_2018_我国影子银行对银行业系统性风险影响研究——基于内生化房地产商的DSGE模型分析.md]]
+生产部门融资部分参考：
 
+> [[郭娜_马莹莹_et-al_2018_我国影子银行对银行业系统性风险影响研究——基于内生化房地产商的DSGE模型分析.md]]
+> 
 > 郭娜, 马莹莹, 张宁, 2018. 我国影子银行对银行业系统性风险影响研究——基于内生化房地产商的DSGE模型分析[J]. 南方经济, (08): 29–46.
 
 
@@ -445,6 +468,7 @@ TODO居民部门$\mathbb{H}$两类居民的转换
 - 销售最终产品以提供居民部门消费，同时获得销售收入；
 - 同时支付工资给居民部门；
 - 其外部融资方式主要为从商业银行和影子银行获得。生产最终产品的过程涉及到生产中间品、生产资本品。
+- 在研究中，为了考虑房地产的影响，我们将房地产开发商纳入到生产部门。
 
 
 
@@ -456,10 +480,67 @@ TODO居民部门$\mathbb{H}$两类居民的转换
   - 生产中间品的厂商；
   - 生产最终品的厂商；
   - 资本品生产商；
+- 房地产开发商；
 
 
 
-### 部门假设：
+
+
+### 模块特点
+
+按照功能划分消费品生产商为以下异质性代表生产商：
+
+- 消费品最终品生产商；
+- 消费品中间品生产商；
+- 消费品资本品生产商；
+
+定价机制采用被广泛采用的Calvo定价机制；
+
+
+
+### 模块接口
+
+
+
+设定全要素生产率（技术）要素：
+$$
+TFP_{PI}[t] := TFP_{PG}[t]
+$$
+设定资本要素：
+$$
+K_{PI}[i,t] := K_{PG}[i,t]
+$$
+设定劳动要素：
+$$
+Lab_{PI}[i,t] := Lab_{PG}[i,t]
+$$
+设定生产要素替代指数：
+$$
+\alpha_{PI} := \alpha_{PG}
+$$
+设定全要素生产率$TFP_{PI}[t]$服从的AR(1)过程的随机因子的下标：
+$$
+\Box_{TFP,PI} := \Box_{TFP,PG}
+$$
+
+
+设定工资率：
+$$
+w_{PI}[t] := w_{PG}[t]
+$$
+
+
+设定资本品生产商$\mathbb{PK}$信贷$Br_{PK,B}[t]$，从银行部门$\mathbb{B}$为：
+$$
+Br_{PK,B}[t] := \sum_{j=1}^{N_{BB}}{Br_{PK,BB}[j,t]} + \sum_{k=1}^{N_{BS}}{Br_{PK,BS}[k,t]}
+$$
+其中，
+$Br_{PK,BB}[j,t]$：资本品生产商$\mathbb{PK}$信贷从商业银行$j$；
+$Br_{PK,BS}[k,t]$：资本品生产商$\mathbb{PK}$信贷从影子银行$k$；
+
+
+
+### 假设：
 
 - 假设消费品厂商部门生产的产品在同一时期内都能被消费掉，即无库存；
 
@@ -471,10 +552,9 @@ TODO居民部门$\mathbb{H}$两类居民的转换
 
 - 在资本品生产部门中，资本品生产商具有竞争性；
 
-  
+- 房地产开发商；
 
   
-
 
 
 
@@ -496,13 +576,9 @@ TODO居民部门$\mathbb{H}$两类居民的转换
 
 
 
-
-
 ### 消费品生产商
 
 消费品生产商由消费品中间品生产商、消费品最终品生产商构成。为了简化分析消费品生产商，我们将其合并说明。
-
-
 
 
 
@@ -520,15 +596,13 @@ TODO居民部门$\mathbb{H}$两类居民的转换
 >
 > 
 
+
+
+
+
 #### 模块特点
 
-按照功能划分消费品生产商为以下异质性代表生产商：
 
-- 消费品最终品生产商；
-- 消费品中间品生产商；
-- 消费品资本品生产商；
-
-定价机制采用被广泛采用的Calvo定价机制；
 
 
 
@@ -554,7 +628,7 @@ $$
 $$
 设定全要素生产率$TFP_{PI}[t]$服从的AR(1)过程的随机因子的下标：
 $$
-\Box_{TFP,PI} := \Box_{TFP,PI}
+\Box_{TFP,PI} := \Box_{TFP,PG}
 $$
 
 
@@ -566,10 +640,15 @@ $$
 
 设定资本品生产商$\mathbb{PK}$信贷$Br_{PK,B}[t]$，从银行部门$\mathbb{B}$为：
 $$
-Br_{PK,B}[t] := \sum_{j=1}^{N_{BB}}{Br_{PK,BB}[j,t]}
+Br_{PK,B}[t] := \sum_{j=1}^{N_{BB}}{Br_{PK,BB}[j,t]} + \sum_{k=1}^{N_{BS}}{Br_{PK,BS}[k,t]}
 $$
 其中，
 $Br_{PK,BB}[j,t]$：资本品生产商$\mathbb{PK}$信贷从商业银行$j$；
+$Br_{PK,BS}[k,t]$：资本品生产商$\mathbb{PK}$信贷从影子银行$k$；
+
+
+
+
 
 
 
@@ -714,7 +793,7 @@ $\Box_{PI}$
 
 > 详细的推导过程跳转：
 >
-> [推导消费品中间品生产商较详细的过程](推导消费品中间品生产商.md)
+> [推导消费品中间品生产商较详细的过程](推导之消费品中间品生产商.md)
 >
 > 。
 
@@ -756,7 +835,7 @@ $K_{PI}[i,t]$：消费品中间品生产商$i$的资本，于时期$t$；
 
 因此，中间品生产商$i$之资本$K_{PI}[i,t]$累积方程表示为：
 $$
-K_{PI}[i,t] = (1-\delta_{PI}) \; K_{PI}[i,t-1] + Br_{PI}[i,t]
+K_{PI}[i,t] = (1-\delta_{PI}) \; K_{PI}[i,t-1] + K_{PK}[i,t]
 $$
 \tag{PI_st_K}
 
@@ -793,7 +872,7 @@ $\alpha_{PI}$：消费品中间品生产商各生产要素的替代指数；
 
 假定全要素生产率 $TFP_{PI}[t]$ 服从如下形式的一阶自回归AR(1)过程：
 $$
-\log TFP_{PI}[t] = \rho_{TFP,PI} \; \log TFP_{PI}[t-1] + \varepsilon_{TFP,PI}[t]
+\log TFP_{PI}[t] = \rho_{TFP,PI} \log TFP_{PI}[t-1] + \varepsilon_{TFP,PI}[t]
 $$
 
 其中，
@@ -819,7 +898,7 @@ $$
 
 TODO消费品中间品生产商应满足收支平衡约束：
 $$
-  Y_{PI}[t] + K_{PK}[t] =I_{t}+C_{t}^{f}+W_{t} N_{t}+\dfrac{R_{t-1}^{l} L_{t-1}}{\pi_{t}}+\dfrac{R_{t-1}^{s} S_{t-1}}{\pi_{t}}
+  Y_{PI}[t] + K_{PK}[t]=I_{t}+C_{t}^{f}+W_{t} N_{t}+\dfrac{R_{t-1}^{l} L_{t-1}}{\pi_{t}}+\dfrac{R_{t-1}^{s} S_{t-1}}{\pi_{t}}
 $$
 
 
@@ -987,7 +1066,7 @@ $\hat{\Box}$：上标带尖冒号表示相应变量偏离比例相对于其其�
 
 
 
-### 资本品生产商
+### TODO资本品生产商
 
 
 英文全名：
@@ -1004,13 +1083,14 @@ $\Box_{PK}$
 
 
 
->资本品生产商的建模描述主要参考：[[马勇_2013_植入金融因素的DSGE模型与宏观审慎货币政策规则.md]]
 >
->【马勇, 2013. 植入金融因素的DSGE模型与宏观审慎货币政策规则[J]. 世界经济, (07 vo 36): 68–92.】
+> 资本品生产商的建模描述主要参考：[[马勇_2013_植入金融因素的DSGE模型与宏观审慎货币政策规则.md]]
 >
->其中，[[马勇_2013_植入金融因素的DSGE模型与宏观审慎货币政策规则.md]]参考了[[Faia_Monacelli_2007_Optimal interest rate rules, asset prices, and credit frictions.md]]
-> 
->【Faia E, Monacelli T, 2007. Optimal Interest Rate Rules, Asset Prices, and Credit Frictions[J]. Journal of Economic Dynamics and Control, 31(10): 3228–3254. DOI:[10.1016/j.jedc.2006.11.006](https://doi.org/10.1016/j.jedc.2006.11.006).】
+> 【马勇, 2013. 植入金融因素的DSGE模型与宏观审慎货币政策规则[J]. 世界经济, (07 vo 36): 68–92.】
+>
+> 其中，[[马勇_2013_植入金融因素的DSGE模型与宏观审慎货币政策规则.md]]参考了[[Faia_Monacelli_2007_Optimal interest rate rules, asset prices, and credit frictions.md]]
+>
+> 【Faia E, Monacelli T, 2007. Optimal Interest Rate Rules, Asset Prices, and Credit Frictions[J]. Journal of Economic Dynamics and Control, 31(10): 3228–3254. DOI:[10.1016/j.jedc.2006.11.006](https://doi.org/10.1016/j.jedc.2006.11.006).】
 
 
 
@@ -1045,6 +1125,7 @@ $\Box_{PK}$
 - 信贷融资比例$\theta_{Cf,PK}$，信贷总规模$CF_{PK}[t] = \theta_{Cf,PK}[t] \; p_{PK}[t] \; L_{PK}[t]$；
   - 从政府信贷占比$\theta_{Cf,G}[t]$，对应信贷规模$\theta_{Cf,G}[t] \; \theta_{Cf,PK}[t] \; p_{PK}[t] \; L_{PK}[t]=Br_{G}[t]$；
   - 商业银行部门信贷占比$\theta_{Cf,BB}[t]$，对应信贷规模$\theta_{Cf,PK}[t] \; \theta_{Cf,BB}[t] \; p_{PK}[t] \; L_{PK}[t] = Br_{PK,BB}[t]$；
+  - 影子银行部门信贷占比$\theta_{Cf,BS}[t]$，对应信贷规模$\theta_{Cf,PK}[t] \; \theta_{Cf,BS}[t] \; p_{PK}[t] \; L_{PK}[t] = Br_{PK,BS}[t]$；
 
 - 股票市场融资项目比例$(1-\theta_{Cf,PK})$，对应信贷规模$D F_{PK}[t]=(1-\theta_{Cf,PK}[t]) \; p_{PK}[t] \; L_{PK}[t]$；
 
@@ -1061,7 +1142,7 @@ $$
 $$
 
 
-TODO项目回报：
+项目回报：
 $$
 \bar{R}=R_t^p+\varepsilon_t
 $$
@@ -1093,7 +1174,6 @@ $$
 > 【Gertler M, Gilchrist S, Natalucci F M, 2007. External constraints on monetary policy and the financial accelerator[J]. Journal of Money, Credit & Banking, 39.】
 > 
 > 【Mimir Y, 2010. Financial intermediaries, leverage ratios, and business cycles[J]. Macroeconomic Dynamics, 19(1): 1–32.】
-
 
 设定为：
 $$
@@ -1141,6 +1221,7 @@ r_{PK,n}[t] & := r_{PK,PI}[t] + p_{PF}[t] \;
 \end{align*}
 $$
 
+> 
 > TODO：如何求得均衡条件？
 
 在均衡条件下，相邻时期持有单位资本的实际总回报率$r_{PK,e}[t]$将与银行从其贷款获得的实际总回报相等 :
@@ -1148,6 +1229,152 @@ $$
 $$
 \dfrac{r_{PK,n}[t+1]}{p_{PK}[t]} \equiv \dfrac{r_{PK,e}[t+1]}{\pi[t+1]}
 $$
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 房地产开发商部门
+
+TODO
+
+英文全名：
+
+Real Estate Producers
+
+变量名：
+
+producers_estate
+
+数学符号：
+
+$\Box_{PE}$
+
+
+
+
+
+#### 行为：
+
+- 从商业银行获得贷款；
+- 从影子银行部门获得融资；
+- 采用资本、劳动、土地开发建设房地产；
+
+
+
+> 房地产开发商部分参考：[[郭娜_马莹莹_et-al_2018_我国影子银行对银行业系统性风险影响研究——基于内生化房地产商的DSGE模型分析.md]]
+>
+> 【郭娜, 马莹莹, 张宁, 2018. 我国影子银行对银行业系统性风险影响研究——基于内生化房地产开发商的DSGE模型分析[J]. 南方经济, (08): 29–46.】
+>
+> 
+
+
+
+#### 模型：
+
+房地产开发商部门的生产函数$F_{PE}$符合规模报酬不变的特性。
+
+对于整个房地产开发商部门来说，其生产函数$F_{PE}[\cdot]$：
+
+$$
+Y_{PE}[t] = F_{PE}[TFP_{PE}[t],K_{PE}[t],Lab_{PE}[t],H_{PE}[t]] := TFP_{PE}[t] \; (K_{PE}[t-1])^{\alpha_{PE,K}} (Lab_{PE}[t])^{\alpha_{PE,Lab}} (H_{PE}[t-1])^{\alpha_{PE,H}}
+$$
+
+其中，
+$Y_{PE}[t]$：房地产开发商的最终产出；
+$TFP_{PE}[t]$：房地产开发商的全要素生产率；
+$K_{PE}[t-1]$：房地产开发商之资本存量，在上一时期；
+$H_{PE}[t-1]$：房地产存量，在上一时期；
+$Lab_{PE}[t]$：房地产商投入的劳动力要素；
+$H_{PE}[t-1]$：房地产商投入的房地产商品存量，在上一时期；
+$\alpha_{PE,K}$：房地产开发商投入资本要素所占的替代指数；
+$\alpha_{PE,Lab}$：房地产开发商投入劳动要素所占的替代指数；
+$\alpha_{PE,H}$：房地产开发商投入房地产要素所占的替代指数；
+
+其中，满足
+
+$$
+\alpha_{PE,K}+\alpha_{PE,Lab}+\alpha_{PE,H}=1​
+$$
+
+
+
+##### 目标：
+
+
+整体商地产开发商部门之目标在于最大化其消费：
+
+$$
+\max \mathbb{E}_{t} \sum_{t=0}^{\infty} \gamma_{PE} \; \log C_{PE}[t]
+$$
+
+其中，
+$C_{PE}[t]$：房地产开发商之消费；
+$\gamma_{PE}$：贴现因子，$0<\gamma_{PE}<1$ 。
+
+
+
+##### 约束条件：
+
+房地产开发商所受资金流的约束条件如下:
+
+$$
+Y_{PE}[t] + Br_{PE,BB}[t] + Br_{BS,PE}[t] = C_{PE}[t] + p_{PE}[t] \; \left(H_{PE}[t] - H_{PE}[t-1]\right) + w_{PE}[t] \; Lab_{PE}[t] + Br_{PE,BB}[t-1] \; \dfrac{(1+r_{L,BB,PE}[i,t-1])}{\pi[t]} + Br_{BS,PE}[t-1] \; \dfrac{(1+r_{L,BS,PE}[t-1])}{\pi[t]} + I_{PE}[t]
+$$
+
+理解和替换相关变量
+
+其中，
+$Y_{PE}[t]$：房地产开发商的产出；
+$Br_{PE,BB}[t]$：房地产开发商从商业银行借款，于时期$t$；
+$r_{L,BB,PE}[i,t]$：商业银行向房地产开发商的贷款利率；
+$p_{PE}[t]$：房地产价格：
+$Br_{BS,PE}[t]$：房地产开发商向影子银行获取的贷款的数量；
+$r_{L,BS,PE}[t]$：影子银行向房地产开发商的贷款利率；
+$I_{PE}[t]$：房地产开发商的投资；
+$\left(H_{PE}[t]-H_{PE}[t-1]\right)$：房地产流量，在当期的时候；
+$w_{PE}[t]$：房地产开发商提供的支付单位工资，暨工资率，于时期$t$；
+$Lab_{PE}[t]$：房地产商的劳动力资源要素，在时期$t$，体现为房地产开发商提供的工资率；
+
+房地产开发企业总体信贷规模为 $Br_{PE}[t] := Br_{BS,PE}[t]+Br_{PE,BB}[t]$。
+
+房地产开发商的投资 $I_{PE}[t]$ 与资本存量 $K_{PE}[t]$ 之间存在如下关系:
+
+$$
+K_{PE}[t+1]=I_{PE}[t]+(1-\delta_{PE}) K_{PE}[t]
+$$
+
+该式表示的是房地产开发商资本存量的积累情况, $\delta_{PE}$ 表示资本折旧率。
+
+> 本文借鉴：[[Christensen_Dib_2008_The financial accelerator in an estimated New Keynesian model.md]]、[[Iacoviello_2005_House Prices, Borrowing Constraints, and Monetary Policy in the Business Cycle.md]]
+>
+> 【Christensen I, Dib A, 2008. The Financial Accelerator in an Estimated New Keynesian Model[J]. Review of Economic Dynamics, 11(1): 155–178. DOI:[10.1016/j.red.2007.04.006](https://doi.org/10.1016/j.red.2007.04.006).】
+>
+> 【Iacoviello M, 2005. House Prices, Borrowing Constraints, and Monetary Policy in the Business Cycle[J]. American Economic Review, 95(3): 739–764. DOI:[10.1257/0002828054201477](https://doi.org/10.1257/0002828054201477).】
+>
+> 的研究，引入信贷约束机制
+
+对于商业银行来说，由于存在信贷约束机制。通过引入信贷约束机制，房地产开发商将其持有的房地产抵押给商业银行获得抵押贷款，但是其所获得的抵押贷款的数量取决于其还款期抵押品的预期价值。假设 $\phi_{LTV,BB,PE}[t] \in (0,1)$ 为房地产开发商信贷约束比例，需满足:
+
+$$
+Br_{PE,BB}[t] \leq \phi_{LTV,BB,PE}[t] \dfrac{\mathbb{E}_{t} \left[p_{PE}[t+1] \; H_{PE}[t] \; \pi[t+1]\right]}{r_{L,BB,PE}[i,t]}
+$$
+
+其中，
+$\phi_{LTV,BB,PE}[t]$：为房地产开发商信贷约束比例；
+$Br_{PE,BB}[t]$：房地产开发商从商业银行借款，于时期$t$；
+$r_{L,BB,PE}[i,t]$：商业银行向房地产开发商的贷款利率；
+$H_{PE}[t]$：房地产部门整体存量，在当期的时候；
+
+
 
 
 
@@ -1221,7 +1448,7 @@ $$
 
 商业银行部门$\mathbb{BB}$接受居民部门$\mathbb{H}$之投资和储蓄型居民部门$\mathbb{HI}$之存款资金，由以下构成：
 $$
-D_{H}[t] := \sum_{i=1}^{N_{BB}}{D_{H}[i,t]}
+D_{H}[t] := \sum_{i=1}^{N_{BB}}{D_{H}[i,t]}D_{H}[t] := \sum_{i=1}^{N_{BB}}{D_{H}[i,t]}
 $$
 
 
@@ -1242,7 +1469,7 @@ $$
 
 其中，商业银行部门$\mathbb{BB}$之个体$i$提供贷款资本贷给居民部门$\mathbb{H}$之借款型居民部门$\mathbb{HB}$，由以下构成：
 $$
-L_{BB,H}[i,t] := L_{BB,HB}[i,t]
+L_{BB,H}[i,t] := L_{BB,HB}[i,t]L_{BB,H}[i,t] := L_{BB,H}[i,t]
 $$
 
 
@@ -1256,7 +1483,7 @@ $$
 
 其中，商业银行部门$\mathbb{BB}$之个体$i$提供贷款资本贷给生产商部门$\mathbb{P}$，由以下构成：
 $$
-L_{BB,P}[i,t] := L_{BB,P}[i,t]
+L_{BB,P}[i,t] := L_{BB,PG}[i,t] + L_{BB,PE}[i,t]
 $$
 
 
@@ -1270,7 +1497,7 @@ $$
 
 TODO对于商业银行$i$之当期总资产$A_{BB}[i,t]$，由如下构成：
 $$
-A_{BB}[i,t] := A_{BB,H}[i,t] + A_{BB,P}[i,t] + A_{BI}[i,t]
+A_{BB}[i,t] := A_{BB,H}[i,t] + A_{BB,P}[i,t] + A_{BI}[i,t]A_{BB}[i,t] := A_{BB,H}[i,t] + A_{BB,P}[i,t] + A_{BI}[i,t] + A_{BB,BS}[i,j,t]
 $$
 
 
@@ -1690,6 +1917,66 @@ $$
 
 
 
+## 影子银行部门
+
+TODO
+
+英文全名：
+
+Shadow Bank
+
+变量名：
+
+bank_shadow
+
+数学符号：
+
+$\Box_{BS}$
+
+
+
+#### 假设：
+
+- 影子银行可以退出市场，当每期的影子银行产品到期兑付之后；
+- 设定影子银行为多主体模型，与商业银行部门银行类似；
+- 将每个影子银行$j$划分为具有2期生命周期的主体，以OLG结构的方式建模；
+
+
+
+#### 行为：
+
+- 销售理财产品给家庭部门；
+- 接受资产转移从商业银行部门；
+- 融资给生产部门；
+- 影子银行可以退出市场，当每期的影子银行产品到期兑付之后；
+
+
+
+
+
+
+
+#### 模型：
+
+> 借鉴
+>
+> 瞿凌云, 许文立, 钱国军, 2019. 宏观审慎框架下通道套利监管的有效性研究——基于动态随机一般均衡模型(DSGE)的分析[J]. 金融经济学研究, (05 vo 34): 10–22.
+>
+> 对影子银行的建模。
+
+第一期，影子银行进入市场，融资，以发行资管产品ABS
+
+
+
+
+> [[林琳_曹勇_et-al_2016_中国式影子银行下的金融系统脆弱性.md]]
+> 
+> 林琳, 曹勇, 肖寒, 2016. 中国式影子银行下的金融系统脆弱性[J]. 经济学(季刊), (03 vo 15): 1113–1136.
+
+影子银行净资产通过留存收益获得
+
+
+
 
 
 ## 银行间市场
@@ -1755,6 +2042,7 @@ $\Box_{PK}$
 - 财政政策；
 - 税收；
 - 居民福利转移；
+- 调控房地产市场；
 
 中央银行和监管当局的行为：
 
@@ -1771,6 +2059,8 @@ $\Box_{PK}$
 - 控制商业银行的存款准备金率$\phi_{DRR,BB}[i,t]$以达到要求$\check{\phi}_{DRR}[i,t]$；
 
 - 贷款价值比（LTVs）；
+
+- 控制影子银行的资本充足率要求；
 
 - 存贷比要求；
 
@@ -1876,4 +2166,6 @@ $$
 
 
 考虑到中国股票市场较少分红的现实 ， 假设银行的利润用来分红的比例$1-\theta_{BB,Dv}=0$，即全部用来补充银行资本。
+
+
 
