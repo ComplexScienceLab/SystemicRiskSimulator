@@ -19,3 +19,13 @@
 * [Local library](zotero://select/items/1_7A6FSDLQ)
 * [Cloud library](http://zotero.org/users/6240833/items/7A6FSDLQ)
 
+
+
+
+
+
+
+# Note
+
+[外部笔记](zotero://select/library/items/5Z5H4ECJ)
+
