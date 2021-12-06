@@ -6,9 +6,6 @@
 *.obsidian
 
 Reference/*
-!Reference/*.md
-!Reference/*.assets
-!Reference/*.drawio
 
 Reports/Graduation Thesis/*
 
@@ -20,3 +17,4 @@ Resources
 data/bankscope资产负债数据
 
 code/分析文献/Data/*
+
