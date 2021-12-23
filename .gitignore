@@ -13,10 +13,11 @@ code/.idea/
 code/env_python/
 code/env_julia/
 
-Resources/*
-!*/Resources/概念画板笔记源文件
+/Resources/*
+!/Resources/概念画板笔记源文件
 
 data/bankscope资产负债数据
 
 code/分析文献/Data/*
+
 
