@@ -1,0 +1,137 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4544,        129]
+NotebookOptionsPosition[      3687,        106]
+NotebookOutlinePosition[      4053,        122]
+CellTagsIndexPosition[      4010,        119]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.850255437677182*^9, 
+  3.8502554452766447`*^9}},ExpressionUUID->"4d34f876-ac1f-49b1-bbca-\
+1cc87fb233c2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Get", "[", 
+  "\"\<https://raw.githubusercontent.com/szhorvat/IGraphM/master/IGInstaller.\
+m\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.850255452774131*^9, 3.850255452782638*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"318afefa-5777-48ba-a838-c10c0bb1bf2f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"The currently installed versions of IGraph/M are: \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["The currently installed versions of IGraph/M are: ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.8502554585717583`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"13c30ce0-ac6a-43ad-b80b-dbe5d52e96a2"],
+
+Cell[BoxData[
+ TemplateBox[{InterpretationBox[
+    DynamicBox[
+     FEPrivate`FrontEndResource["FEExpressions", "NecklaceAnimator"][Medium], 
+     ImageSizeCache -> {50., {19., 31.}}], 
+    ProgressIndicator[Appearance -> "Necklace"], BaseStyle -> {"Deploy"}],
+   "\"Downloading IGraph/M v0.5.1 ...\""},
+  "Labeled",
+  DisplayFunction->(GridBox[{{
+      TagBox[
+       ItemBox[
+        PaneBox[
+         TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
+         BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+       "SkipImageSizeLevel"], 
+      ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}}, 
+    GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+    AutoDelete -> False, 
+    GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+    BaselinePosition -> {1, 1}]& ),
+  InterpretationFunction->(RowBox[{"Labeled", "[", 
+     RowBox[{#, ",", #2, ",", "Right"}], "]"}]& )]], "PrintTemporary",
+ CellChangeTimes->{3.850255460203533*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"f45b5de7-7579-45c3-b0ef-e3ecc5a211f6"]
+}, Open  ]],
+
+Cell[BoxData[
+ TemplateBox[{
+  "URLSave","ssl",
+   "\"An SSL error occurred. The raw details are: \\\"libcurl error \
+(\\!\\(\\*RowBox[{\\\"35\\\"}]\\)): \\!\\(\\*RowBox[{\\\"\\\\\\\"Server \
+aborted the SSL handshake\\\\\\\"\\\"}]\\)\\\"\"",2,1,1,25399397177728845373,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.850255537116746*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"e298b735-a86a-4b1e-b27f-0ec2b3e8c5c7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Installation failed. Please install IGraph/M manually. \"\>", 
+   "\[InvisibleSpace]", 
+   TemplateBox[{
+    "\"https://github.com/szhorvat/IGraphM#installation\"",
+     "https://github.com/szhorvat/IGraphM#installation"},
+    "HyperlinkURL"]}],
+  SequenceForm["Installation failed. Please install IGraph/M manually. ", 
+   Hyperlink["https://github.com/szhorvat/IGraphM#installation"]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.850255537208606*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"13f6bdc3-5422-47e5-87db-620c467ad475"]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 297}, {75, Automatic}},
+Magnification:>2. Inherited,
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (May 18, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 154, 3, 52, "Input",ExpressionUUID->"4d34f876-ac1f-49b1-bbca-1cc87fb233c2"],
+Cell[CellGroupData[{
+Cell[737, 27, 283, 5, 86, "Input",ExpressionUUID->"318afefa-5777-48ba-a838-c10c0bb1bf2f"],
+Cell[CellGroupData[{
+Cell[1045, 36, 408, 10, 40, "Print",ExpressionUUID->"13c30ce0-ac6a-43ad-b80b-dbe5d52e96a2"],
+Cell[1456, 48, 1116, 25, 68, "PrintTemporary",ExpressionUUID->"f45b5de7-7579-45c3-b0ef-e3ecc5a211f6"]
+}, Open  ]],
+Cell[2587, 76, 469, 11, 78, "Message",ExpressionUUID->"e298b735-a86a-4b1e-b27f-0ec2b3e8c5c7"],
+Cell[3059, 89, 612, 14, 71, "Print",ExpressionUUID->"13f6bdc3-5422-47e5-87db-620c467ad475"]
+}, Open  ]]
+}
+]
+*)
+
