@@ -4,6 +4,8 @@
 
 *.ffs_db
 
+# paths that include data files
+!data/exp_raw/test_data
 
 
 ################################################################################
