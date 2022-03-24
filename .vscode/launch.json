@@ -24,7 +24,7 @@
             "type": "julia",
             "request": "launch",
             "name": "Launch batch_main.jl file",
-            "program": "${workspaceFolder}/env_julia/src/mode_3-1/batch_main.jl",
+            "program": "${workspaceFolder}/src/batch_main.jl",
             "stopOnEntry": false,
             "cwd": "${workspaceFolder}",
             "juliaEnv": "${command:activeJuliaEnvironment}"
