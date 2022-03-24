@@ -1,0 +1,56 @@
+Bankcd [银行代码] - 由希施玛设计并编排的一套识别代码。每家银行将被分配一个唯一的代码。
+Bnm_Cn [银行中文全称] - 银行的中文全称。
+Bnm_En [银行英文全称] - 银行的英文全称。
+Shortbnm [银行中文简称] - 银行的中文简称。
+Clsdt [更新日期] - 基本信息的更新日期。
+Stkcd [股票代码] - 交易所发布的证券代码，仅适用于已上市银行。A股：XXX B股：XXX H股：XXXX
+Cuntrycd [国家代码] - 银行所属国家代码：中国CHN
+Bnature [银行性质] - 1.政策性银行
+2.国有控股大型商业银行
+3.股份制商业银行
+4.城市商业银行 
+5.农村商业银行
+6.外资银行
+7.其他
+8.农合行
+9.农信社
+10.三类新型农村金融机构
+Policy [采用的会计准则] - 1.《企业会计制度》 2.《金融企业会计制度》 3.《国际财务报告准则》（IFRS） 4.《城市合作银行会计制度》5.《农村信用合作社会计基本制度》
+Descr [银行简介] - 银行的沿革简介。
+Estbdt [成立日期] - 银行成立的日期。
+Weasite [网址] - 银行主页。
+Phone [联系电话] - 联系电话
+Fax [公司传真] - 公司传真
+DisclosureDate [报告披露日期] - 报告披露的日期。
+ZipCode [邮政编码] - null
+Email [电子邮件] - null
+ProvinceName [省份] - null
+CityName [城市] - null
+RegisterAddress [注册地址] - null
+OfficeAddress [办公地址] - null
+RegisterCapital [注册资本] - null
+BusinessScope [经营范围] - null
+LegalRepresentative [法定代表人] - null
+ChairmanOfBoard [董事长] - null
+Governor [行长] - null
+LargShrhNm [第一大股东名称] - null
+LargShrhNt [第一大股东性质] - null
+LargShrhShareholding [第一大股东持股比例] - null
+DirectorNumber [董事会人数] - null
+IndependentDirectorNumber [独立董事人数] - null
+PersonsEngaged [在职员工总数] - null
+RetiredNumber [离退休人数] - null
+UndergraduateNumber [本科及以上员工人数] - null
+UndergraduateAccount [本科及以上员工人数占比] - null
+GraduateStudent [研究生及以上员工人数] - null
+GraduateStudentProp [研究生及以上员工人数占比] - null
+IntermediateTitle [中级及以上职称人数] - null
+IntermediateTitlePropo [中级及以上职称人数占比] - null
+ManagementNumber [管理人员人数] - null
+ManagementAccount [管理人员人数占比] - null
+BranchNumber [分行数量] - 境内分行数量，包括：一级分行、直属分行、一级分行营业部、二级分行等
+PrimaryBranches [其中：一级分行] - null
+AgencyNumber [机构总数量] - 境内机构总数量，包括：总行、一级分行、直属分行、一级分行营业部、二级分行、一级支行、基层营业网点、总行利润中心、直属机构及其分支机构、主要控股公司及其分支等
+DomesticInstitutions [其中：境内机构数量] - null
+OverseasInstitutions [其中：境外机构数量] - null
+AdministrativeSanction [监管部门立案调查行政处罚记录] - 1.有；2.无；具体调查对象包括：公司及董事、监事、高级管理人员、持有 5%以上股份的股东、 第一大股东、实际控制人等
