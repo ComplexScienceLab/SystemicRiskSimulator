@@ -6,6 +6,9 @@
 
 # paths that include data files
 !data/exp_raw/test_data
+!data/import_data
+!data/original_data
+!data/tibble_data
 
 
 ################################################################################
