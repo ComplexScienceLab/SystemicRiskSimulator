@@ -7,9 +7,14 @@
 #状态/开发
 ##########################################
 
+## 字典之于初始化数据方式
+dict_initMethods = Dict(
+    [(0, "only init"), (1, "randomly"), (2, "import data"), (3, "set manually")]
+)
 
 
 ######### 设置环境变量 #########
+env.init_method = dict_initMethods[3] # 初始化数据方式
 env.tau = 0 # 设置初始回合计次为0；
 env.process_name = "" # 过程名称
 env.is_end_round = false # 结束回合判断

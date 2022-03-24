@@ -22,8 +22,8 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     env.tau += 1 # 传染回合累加一
     println("开始回合", env.tau)
 
-    b = TypeState{1}(@. BB.on | BB.off) # 临时设置BB示性变量
-    ib = TypeState{2}((@. BB.on | BB.off) & (BB.on | BB.off)') # 临时设置BI示性变量
+    b = TypeState{1}(BB.on .| BB.off) # 临时设置BB示性变量
+    ib = TypeState{2}((BB.on .| BB.off) .& (BB.on .| BB.off)') # 临时设置BI示性变量
 
     ## # 银行外部违约损失传染阶段
     println("t1 银行外部违约损失传染阶段")

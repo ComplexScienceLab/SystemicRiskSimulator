@@ -10,6 +10,7 @@
 
 "环境变量EnvironmentVariables"
 mutable struct EnvironmentVariables
+    init_method::String # 初始化方法
     tau::Int16 # 回合计数
     process_name::String # 过程名称
     is_end_round::Bool # 结束回合判断

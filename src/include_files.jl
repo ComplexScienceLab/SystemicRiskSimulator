@@ -45,3 +45,6 @@ include("process/process_interBank_bankrupt.jl")
 
 ## 集成各模型函数文件
 include("model/model_BI1111.jl")
+
+## 集成做实验函数文件
+include("experiments/fun_makesim.jl")

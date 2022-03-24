@@ -3,22 +3,34 @@
 ## 程序：设置参数变量ParameterVariables
 
 ##########################################
-#状态/开发
+#状态/使用
 ##########################################
 
 
 
 ######### 设置参数变量 #########
-para.init_method = dict_initMethods[3] # 初始化数据方式
-para.Shock_exBI_t = [1631.73, 0.0, 0.0, 0.0, 0.0] # 外生冲击量 #BUG
-# para.Shock_exBI_t = [3160.99, 0.0, 0.0, 0.0, 0.0] # 外生冲击量 #BUG
-para.idx_Shock_exBI_t = [true,false,false,false,false] # 指定遭受初始外生冲击的银行示性列表
-para.kappa_A_P = 0.0 # 银行抛售厂商贷款资产价格折扣率。默认0.0。#HACK目前暂时不考虑这个参数！
+## 设置字典，其组成以一集合，该集合构成以各参数各可能的取值
+setOfParametersValues = Dict(
+    "model" => [ # 运行模型
+        "model_BI1111"
+        ],
+    "Shock_exBI_t" => [ # 外生冲击量
+        [1631.73, 0.0, 0.0, 0.0, 0.0],
+        [3160.99, 0.0, 0.0, 0.0, 0.0]
+        ],
+    "idx_Shock_exBI_t" => [ # 指定遭受初始外生冲击的银行示性列表
+        [true, false, false, false, false]
+        ],
+    "kappa_A_P" => [ # 银行抛售厂商贷款资产价格折扣率。默认0.0。#HACK目前暂时不考虑这个参数！
+        0.0
+        ],
+    "kappa_BI" => [ # 银行抛售银行间贷款资产价格折扣率。默认0.0。#HACK目前暂时不考虑这个参数！
+        0.0
+        ]
+)
 
+## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
+p = dict_list(setOfParametersValues) # 完整名称为dict_paraValues。此处为了方便用于后续代码阅读，因此设置为p。
 
-###########################
-
-
-
-# end; # process
+################################
 
