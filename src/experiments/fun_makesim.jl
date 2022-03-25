@@ -1,20 +1,15 @@
-"函数：运行仿真"
+"函数：运行一次仿真"
 
 ##########################################
 #状态/开发
 ##########################################
 
 
-function makesim(dict_paraValues::Dict)
-    @unpack (
-        model,
-        Shock_exBI_t,
-        idx_Shock_exBI_t,
-        kappa_A_P, kappa_BI
-        ) = dict_paraValues
-    r, y = fakesim(a, b, v, method)
-    fulld = copy(dict_paraValues)
-    fulld["r"] = r
-    fulld["y"] = y
-    return fulld
+
+"函数：运行一次仿真"
+function makesim(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
+    BB, BI, BB_tau, BI_tau, para, env = model_BI1111(BB, BI, para, env)
+
+    wsave(datadir("data/sims", savename(para,"jld2",connector=" | ",equals="=")), BB)
+    # return BB, BI, BB_tau, BI_tau, env
 end

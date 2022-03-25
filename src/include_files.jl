@@ -18,7 +18,7 @@ include("define/define_agents.jl")
 include("define/define_consts.jl")
 
 ## 集成参数设置项文件
-include("define/define_parameterVariables.jl")
+# include("define/define_parameterVariables.jl")
 include("set/set_parameterVariables.jl")
 
 ## 集成功能函数文件
@@ -30,6 +30,7 @@ include("functions/fun_transfer.jl")
 
 ## 集成初始化函数文件
 include("initialization/fun_initVariables.jl")
+include("initialization/fun_setFolders.jl")
 
 ## 集成模块函数文件
 include("module/modules_contagion_and_shock.jl")

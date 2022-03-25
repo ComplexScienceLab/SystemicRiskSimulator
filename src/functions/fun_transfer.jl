@@ -13,10 +13,10 @@
 """
 转移资金（资金等量反向变化）。
 # Arguments
-`target`：转移目的地；
-`source`：转移源；
-`shock`：相关冲击；
-`flow`：流量；
+`target`: 转移目的地；
+`source`: 转移源；
+`shock`: 相关冲击；
+`flow`: 流量；
 """
 function transfer_B_capital_reverse(target::TypeMoney, source::TypeMoney, shock::TypeMoney, flow::TypeMoney)
     target += flow
@@ -28,10 +28,10 @@ end
 """
 同减资金（资金等量同向减少）。
 # Arguments
-`target`：转移目的地；
-`source`：转移源；
-`shock`：相关冲击；
-`flow`：流量；
+`target`: 转移目的地；
+`source`: 转移源；
+`shock`: 相关冲击；
+`flow`: 流量；
 """
 function transfer_B_capital_reduce(target::TypeMoney, source::TypeMoney, shock::TypeMoney, flow::TypeMoney)
     target -= flow
@@ -107,12 +107,12 @@ end
 
 "加总各银行之银行间借款流入``Bi_{B}``，通过银行间借款流入邻接矩阵``Bi_{BI}``。"
 function sum_transfer_Bi_BI!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2})
-    bank.Bi_BI_all[:] = sum(interbank.Bi_BI .* interbankState, dims = 2)
+    bank.Bi_BI_all[: ] = sum(interbank.Bi_BI .* interbankState, dims = 2)
 end
 
 "加总各银行之银行间贷款流入``Li_{B}``，通过银行间贷款流入邻接矩阵``Li_{BI}``。"
 function sum_transfer_Li_BI!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2})
-    bank.Li_BI_all[:] = sum(interbank.Li_BI .* interbankState, dims = 2)
+    bank.Li_BI_all[: ] = sum(interbank.Li_BI .* interbankState, dims = 2)
 end
 
 "清零所有流量变量值"
@@ -132,21 +132,21 @@ end
 """
 更新各银行之借贷流量变量。
 # Arguments
-`byWay::String`: 参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
-- `all`: 更新全部借贷流量变量；
-- `clear transfer all`: 清零所有不必要的借贷流量变量；
-- `Lo_P`: 已知``Lo_{B,P}``，更新其余借贷流量变量；
-- `Li_P`: 已知``Li_{B,P}``，更新其余借贷流量变量；
-- `Bi_D`: 已知``Bi_{B,D}``，更新其余借贷流量变量；
-- `Bo_D`: 已知``Bo_{B,D}``，更新其余借贷流量变量；
-- `Lo_BI_all`: 已知``Lo_{BI}[i,:]``，更新其余借贷流量变量；
-- `Li_BI_all`: 已知``Li_{BI}[i,:]``，更新其余借贷流量变量；
-- `Bi_BI_all`: 已知``Bi_{BI}[i,:]``，更新其余借贷流量变量；
-- `Bo_BI_all`: 已知``Bo_{BI}[i,:]``，更新其余借贷流量变量；
-- `Lo_BI`: 已知``Lo_{BI}``，更新其余借贷流量变量；
-- `Bi_BI`: 已知``Bi_{BI}``，更新其余借贷流量变量；
-- `Bo_BI`: 已知``Bo_{BI}``，更新其余借贷流量变量；
-- `Li_BI`: 已知``Li_{BI}``，更新其余借贷流量变量；
+`byWay::String`:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
+- `all`:  更新全部借贷流量变量；
+- `clear transfer all`:  清零所有不必要的借贷流量变量；
+- `Lo_P`:  已知``Lo_{B,P}``，更新其余借贷流量变量；
+- `Li_P`:  已知``Li_{B,P}``，更新其余借贷流量变量；
+- `Bi_D`:  已知``Bi_{B,D}``，更新其余借贷流量变量；
+- `Bo_D`:  已知``Bo_{B,D}``，更新其余借贷流量变量；
+- `Lo_BI_all`:  已知``Lo_{BI}[i,: ]``，更新其余借贷流量变量；
+- `Li_BI_all`:  已知``Li_{BI}[i,: ]``，更新其余借贷流量变量；
+- `Bi_BI_all`:  已知``Bi_{BI}[i,: ]``，更新其余借贷流量变量；
+- `Bo_BI_all`:  已知``Bo_{BI}[i,: ]``，更新其余借贷流量变量；
+- `Lo_BI`:  已知``Lo_{BI}``，更新其余借贷流量变量；
+- `Bi_BI`:  已知``Bi_{BI}``，更新其余借贷流量变量；
+- `Bo_BI`:  已知``Bo_{BI}``，更新其余借贷流量变量；
+- `Li_BI`:  已知``Li_{BI}``，更新其余借贷流量变量；
 """
 function update_B_transfer!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2}; byWay::String = "all")
     if byWay == "all"
