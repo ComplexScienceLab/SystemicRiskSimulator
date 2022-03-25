@@ -3,12 +3,13 @@
 ## 按照顺序集成各文件
 
 ##########################################
-#状态/开发
+#状态/可扩展
 ##########################################
 
-## 集成环境设置项文件
-include("define/define_environmentVariables.jl")
+## 集成设置项文件
+# include("define/define_environmentVariables.jl")
 include("set/set_environmentVariables.jl")
+include("set/set_parameterVariables.jl")
 
 ## 集成定义文件
 include("define/define_type.jl")
@@ -16,10 +17,6 @@ include("define/define_agents.jl")
 
 ## 集成定义常数文件
 include("define/define_consts.jl")
-
-## 集成参数设置项文件
-# include("define/define_parameterVariables.jl")
-include("set/set_parameterVariables.jl")
 
 ## 集成功能函数文件
 include("functions/fun_balanceSheet.jl")
