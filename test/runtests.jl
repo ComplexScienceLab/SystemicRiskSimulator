@@ -5,6 +5,9 @@
 #状态/进行；
 ##########################################
 
+using DrWatson
+@quickactivate "SystemicRisk"
+
 # include("defineType.jl")
 
 # st = Union{Int64,String,Float64}
@@ -305,103 +308,116 @@
 
 
 
-## 初始化参数
-dict_initMethods = Dict([(0, "only init"), (1, "randomly"), (2, "import data"), (3, "set manually")]) # 字典之于初始化数据方式
-init_method = dict_initMethods[3] # 初始化银行数据方式
-num_bank = 5 # 银行个数
-num_assets = 3 # 资产种类数
-max_num_tau = 10 # 最大传染轮次数
-theta_Shock_exBI = 1.0 # 外生冲击类型占比
-set_Shock_exB = [1] # 指定遭受初始外生冲击的银行示性集合
+# ## 初始化参数
+# dict_initMethods = Dict([(0, "only init"), (1, "randomly"), (2, "import data"), (3, "set manually")]) # 字典之于初始化数据方式
+# init_method = dict_initMethods[3] # 初始化银行数据方式
+# num_bank = 5 # 银行个数
+# num_assets = 3 # 资产种类数
+# max_num_tau = 10 # 最大传染轮次数
+# theta_Shock_exBI = 1.0 # 外生冲击类型占比
+# set_Shock_exB = [1] # 指定遭受初始外生冲击的银行示性集合
 
-## 定义类型
-TypeIds{NDIMS1} = Array{Int16,NDIMS1} # 向量编号类型
-TypeAbbrs{NDIMS1} = Array{String,NDIMS1} # 向量缩写类型
-TypeNames{NDIMS1} = Array{String,NDIMS1} # 向量名称类型
-TypeMoney{NDIMS2} = Array{Float32,NDIMS2} # 向量资金类型
-TypeState{NDIMS2} = Array{Bool,NDIMS2} # 一维向量状态类型
-
-
-
-
-
-## 定义常量
-const FALSE1 = TypeState{1}(falses(num_bank)) # 一维false布尔向量常量
-const FALSE2 = TypeState{2}(falses(num_bank, num_bank)) # 二维方阵false布尔向量常量
-const TRUE1 = TypeState{1}(trues(num_bank)) # 一维true布尔向量常量
-const TRUE2 = TypeState{2}(trues(num_bank, num_bank)) # 二维方阵true布尔向量常量
-const BLANK1 = fill("", num_bank) # 一维空字符串向量常量
-const BLANK2 = fill("", num_bank, num_bank) # 一维方阵空字符串向量常量
-const ZEROS1 = TypeMoney{1}(zeros(num_bank)) # 一维零向量常量
-const ZEROS2 = TypeMoney{2}(zeros(num_bank, num_bank)) # 二维方阵零向量常量
-const LESS1 = TypeMoney{1}(zeros(num_bank) .+ 0.01) # 一维接近零的正数向量常量
-const LESS2 = TypeMoney{2}(zeros(num_bank, num_bank) .+ 0.1) # 二维方阵接近零的正数常量
-const ONES1 = TypeMoney{1}(ones(num_bank)) # 一维幺向量常量
-const ONES2 = TypeMoney{2}(ones(num_bank, num_bank)) # 二维方阵幺向量常量
-const MISSING1 = fill(missing, num_bank) # 一维缺失值向量常量
-const MISSING2 = fill(missing, num_bank, num_bank) # 二维方阵确失值常量
-const RANGE1 = range(1, num_bank, step = 1) # 一维步进向量常量
+# ## 定义类型
+# TypeIds{NDIMS1} = Array{Int16,NDIMS1} # 向量编号类型
+# TypeAbbrs{NDIMS1} = Array{String,NDIMS1} # 向量缩写类型
+# TypeNames{NDIMS1} = Array{String,NDIMS1} # 向量名称类型
+# TypeMoney{NDIMS2} = Array{Float32,NDIMS2} # 向量资金类型
+# TypeState{NDIMS2} = Array{Bool,NDIMS2} # 一维向量状态类型
 
 
 
 
-## 定义结构
-mutable struct BC
-    id::TypeIds{NDIMS1}
-    abbr::TypeAbbrs{NDIMS1}
-    name::TypeNames{NDIMS1}
-    A_all::TypeMoney{NDIMS2}
-    Z_all::TypeMoney{NDIMS2}
-    isOn::TypeState{NDIMS2}
-    listOfExist::Array{Any}
-end
 
-## 定义初始化函数
-function init_B()
-    bank = BC{1,1}(
-        RANGE1, # 编号 id
-        ["1", "2", "3", "4", "5"], # 缩写
-        ["BK1", "BK2", "BK3", "BK4", "BK5"], # 全名
-        # reshape([1.0, 2.0, 3.0, 4.0, 5.0], (num_bank, 1)),
-        # reshape([6.0, 7.0, 8.0, 9.0, 10.0], (num_bank, 1)),
-        ZEROS1,
-        ZEROS1,
-        TRUE1,
-        []
-    )
-    return bank
-
-end
-
-# 初始化函数
-BB = init_B()
-
-println(BB)
-
-println(BB.A_all)
-
-BB.Z_all=BB.A_all
-BB.A_all=ONES1
-
-println(BB.A_all,"\n",BB.Z_all)
-println(pointer(BB.A_all),"\n",pointer(BB.Z_all))
+# ## 定义常量
+# const FALSE1 = TypeState{1}(falses(num_bank)) # 一维false布尔向量常量
+# const FALSE2 = TypeState{2}(falses(num_bank, num_bank)) # 二维方阵false布尔向量常量
+# const TRUE1 = TypeState{1}(trues(num_bank)) # 一维true布尔向量常量
+# const TRUE2 = TypeState{2}(trues(num_bank, num_bank)) # 二维方阵true布尔向量常量
+# const BLANK1 = fill("", num_bank) # 一维空字符串向量常量
+# const BLANK2 = fill("", num_bank, num_bank) # 一维方阵空字符串向量常量
+# const ZEROS1 = TypeMoney{1}(zeros(num_bank)) # 一维零向量常量
+# const ZEROS2 = TypeMoney{2}(zeros(num_bank, num_bank)) # 二维方阵零向量常量
+# const LESS1 = TypeMoney{1}(zeros(num_bank) .+ 0.01) # 一维接近零的正数向量常量
+# const LESS2 = TypeMoney{2}(zeros(num_bank, num_bank) .+ 0.1) # 二维方阵接近零的正数常量
+# const ONES1 = TypeMoney{1}(ones(num_bank)) # 一维幺向量常量
+# const ONES2 = TypeMoney{2}(ones(num_bank, num_bank)) # 二维方阵幺向量常量
+# const MISSING1 = fill(missing, num_bank) # 一维缺失值向量常量
+# const MISSING2 = fill(missing, num_bank, num_bank) # 二维方阵确失值常量
+# const RANGE1 = range(1, num_bank, step = 1) # 一维步进向量常量
 
 
 
 
-mutable struct S
-    s1::Vector
-    s2::Vector
-end
+# ## 定义结构
+# mutable struct BC
+#     id::TypeIds{NDIMS1}
+#     abbr::TypeAbbrs{NDIMS1}
+#     name::TypeNames{NDIMS1}
+#     A_all::TypeMoney{NDIMS2}
+#     Z_all::TypeMoney{NDIMS2}
+#     isOn::TypeState{NDIMS2}
+#     listOfExist::Array{Any}
+# end
 
-S1=S([1,2,3],[4,5,6])
+# ## 定义初始化函数
+# function init_B()
+#     bank = BC{1,1}(
+#         RANGE1, # 编号 id
+#         ["1", "2", "3", "4", "5"], # 缩写
+#         ["BK1", "BK2", "BK3", "BK4", "BK5"], # 全名
+#         # reshape([1.0, 2.0, 3.0, 4.0, 5.0], (num_bank, 1)),
+#         # reshape([6.0, 7.0, 8.0, 9.0, 10.0], (num_bank, 1)),
+#         ZEROS1,
+#         ZEROS1,
+#         TRUE1,
+#         []
+#     )
+#     return bank
 
-for i in fieldnames(S)
-    x=getfield(S1,i)
-    end
+# end
 
-df=DataFrame(
-    for i in fieldnames(S)
-        x=getfield(S1,i)
-    end
-)
+# # 初始化函数
+# BB = init_B()
+
+# println(BB)
+
+# println(BB.A_all)
+
+# BB.Z_all=BB.A_all
+# BB.A_all=ONES1
+
+# println(BB.A_all,"\n",BB.Z_all)
+# println(pointer(BB.A_all),"\n",pointer(BB.Z_all))
+
+
+
+
+# mutable struct S
+#     s1::Vector
+#     s2::Vector
+# end
+
+# S1=S([1,2,3],[4,5,6])
+
+# for i in fieldnames(S)
+#     x=getfield(S1,i)
+#     end
+
+# df=DataFrame(
+#     for i in fieldnames(S)
+#         x=getfield(S1,i)
+#     end
+# )
+
+
+projectdir()
+folderpath=projectdir()*"/data/sims/default"
+mkpath(folderpath)
+
+
+
+
+
+
+
+
