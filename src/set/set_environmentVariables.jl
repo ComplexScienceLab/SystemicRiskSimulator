@@ -25,22 +25,37 @@
 ##########################################
 
 
+init_method = "set manually"; # 初始化数据方式；
+foldernameTypeOfExperimentsData = "set manually"; # 设置实验数据文件夹命名方式。默认"default"；
+foldernamePrefixOfExperimentsData = "test"; # 手动设置实验数据文件夹前缀名。默认"default"；
+rootDirOfExperimentsData = projectdir() * "/data/sims/"; # 手动设置实验数据文件夹根路径。默认projectdir( * "/data/sims/"；
+folderpathOfExperimentsData = ""; # 主文件夹路径之于实验。将由函数生成；
+tau = 0; # 设置初始回合计次为0；
+process_name = ""; # 过程名称；
+is_end_round = false; # 结束回合判断；
+max_num_tau = 1000; # 最大回合数；
+num_bank = 5; # 银行个数；
+num_assets = 3; # 资产种类数；
+test_tau = 4 # test变量，用于打断点。相关语句：env[:tau]>=env[:test_tau]；
+
+
 
 ######### 设置环境变量初始值 #########
-env = Dict([
-    ("init_method", "set manually"), # 初始化数据方式；
-    ("foldernameTypeOfExperimentsData", "set manually"), # 设置实验数据文件夹命名方式。默认"default"；
-    ("foldernamePrefixOfExperimentsData", "test"), # 手动设置实验数据文件夹前缀名。默认"default"；
-    ("rootDirOfExperimentsData", projectdir() * "/data/sims/"), # 手动设置实验数据文件夹根路径。默认projectdir() * "/data/sims/"；
-    ("folderpathOfExperimentsData", ""), # 主文件夹路径之于实验。将由函数生成；
-    ("tau", 0), # 设置初始回合计次为0；
-    ("process_name", ""), # 过程名称；
-    ("is_end_round", false), # 结束回合判断；
-    ("max_num_tau", 1000), # 最大回合数；
-    ("num_bank", 5), # 银行个数；
-    ("num_assets", 3), # 资产种类数；
-    ("test_tau", 4) # test变量，用于打断点。相关语句：env["tau"]>=env["test_tau"]；
-])
+env = @dict(
+    init_method,
+    foldernameTypeOfExperimentsData,
+    foldernamePrefixOfExperimentsData,
+    rootDirOfExperimentsData,
+    folderpathOfExperimentsData,
+    tau,
+    process_name,
+    is_end_round,
+    max_num_tau,
+    num_bank,
+    num_assets,
+    test_tau
+)
+
 
 
 
