@@ -7,17 +7,17 @@
 function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
     ## 过程：银行外部挤兑流动传染冲击
-    env["process_name"] = "银行外部挤兑流动传染冲击"
-    println("过程：", env["process_name"])
+    env[:process_name] = "银行外部挤兑流动传染冲击"
+    println("过程：", env[:process_name])
 
     ## # 初始阶段
     println("t0 初始阶段")
 
-    env["tau"] = 0 # 初始化传染回合
-    env["is_end_round"] = false # 初始化结束判断
+    env[:tau] = 0 # 初始化传染回合
+    env[:is_end_round] = false # 初始化结束判断
 
-    env["tau"] += 1 # 传染回合累加一
-    println("开始回合", env["tau"])
+    env[:tau] += 1 # 传染回合累加一
+    println("开始回合", env[:tau])
 
     b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
     ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
@@ -38,12 +38,12 @@ function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::
     println("t3 开始尾声阶段")
 
     ## TODO存储数据
-    BB_tau[env["tau"]] = deepcopy(BB) # 存储该回合传染结果数据
-    BI_tau[env["tau"]] = deepcopy(BI) # 存储该回合传染结果数据
+    BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
+    BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
     ## 判定本回合是否有银行转移状态，如果无则后续处理然后结束本轮，如果有则继续处理。
     if BB.ilq == BB_t1.ilq
-        env["is_end_round"] = true
+        env[:is_end_round] = true
     end
 
     return BB, BI, BB_t1, BI_t1, env

@@ -22,18 +22,18 @@ function setExperimentsFolders(env::Dict; isDatetime::Bool = true)
     end
 
     ## 设定前缀字符串
-    if env["foldernameTypeOfExperimentsData"] == "default"
+    if env[:foldernameTypeOfExperimentsData] == "default"
         str_manuallyName = "default"
-    elseif env["foldernameTypeOfExperimentsData"] == "set manually"
-        str_manuallyName = env["foldernamePrefixOfExperimentsData"]
+    elseif env[:foldernameTypeOfExperimentsData] == "set manually"
+        str_manuallyName = env[:foldernamePrefixOfExperimentsData]
     else
-        throw(DomainError(env["foldernameTypeOfExperimentsData"], "关键词取值错误！"))
+        throw(DomainError(env[:foldernameTypeOfExperimentsData], "关键词取值错误！"))
     end
 
     foldername = str_manuallyName * str_datetime
-    folderdir = env["rootDirOfExperimentsData"]
-    env["folderpathOfExperimentsData"] = folderdir * foldername
+    folderdir = env[:rootDirOfExperimentsData]
+    env[:folderpathOfExperimentsData] = folderdir * foldername
 
-    mkpath(env["folderpathOfExperimentsData"]) # 创建文件夹
+    mkpath(env[:folderpathOfExperimentsData]) # 创建文件夹
 return env
 end # functioin
