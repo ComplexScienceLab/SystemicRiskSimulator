@@ -10,35 +10,35 @@ mutable struct BankCommercial{NDIMS1,NDIMS2}
     id::TypeIds{NDIMS1} # 编号 id
     abbr::TypeAbbrs{NDIMS1} # 缩写 abbr
     name::TypeNames{NDIMS1} # 全名 name
-    A_all::TypeMoney{NDIMS2} # 总资产 A_all：$A_all=A_BI+A_exBI$
+    A_all::TypeMoney{NDIMS2} # 总资产 A_all: $A_all=A_BI+A_exBI$
     A_BI_all::TypeMoney{NDIMS2} # 银行间资产加总 A_BI_all
-    A_exBI::TypeMoney{NDIMS2} # 非银行间资产 A_exBI：$A_exBI=A_P+A_Q+A_R+A_other$
+    A_exBI::TypeMoney{NDIMS2} # 非银行间资产 A_exBI: $A_exBI=A_P+A_Q+A_R+A_other$
     A_P::TypeMoney{NDIMS2} # 银行贷款给生产部门之资产（非流动性资产） A_P
     A_Q::TypeMoney{NDIMS2} # 银行持有超额准备金（流动性资产） A_Q
     A_R::TypeMoney{NDIMS2} # 银行持有法定准备金（非流动性资产） A_R
     A_other::TypeMoney{NDIMS2} # 银行持有的其它资产（非流动性资产） A_other
-    Z_all::TypeMoney{NDIMS2} # 总负债 Z_all：$Z_total=Z_BI+Z_exBI$
+    Z_all::TypeMoney{NDIMS2} # 总负债 Z_all: $Z_total=Z_BI+Z_exBI$
     Z_BI_all::TypeMoney{NDIMS2} # 银行间负债加总 Z_BI_all
-    Z_exBI::TypeMoney{NDIMS2} # 非银行间负债 Z_exBI：$Z_exBI=Z_D+Z_other$
+    Z_exBI::TypeMoney{NDIMS2} # 非银行间负债 Z_exBI: $Z_exBI=Z_D+Z_other$
     Z_D::TypeMoney{NDIMS2} # 银行获得居民部门存款（非流动性负债） Z_D
     Z_other::TypeMoney{NDIMS2} # 银行持有的其他负债（非流动性负债） Z_other
     E_all::TypeMoney{NDIMS2} # 所有者权益 E_all
-    T_all::TypeMoney{NDIMS2} # 总交易流量 Transfer_all：$Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
-    Lo_all::TypeMoney{NDIMS2} # 总贷款流出 Lo_all：$Lo_all=Lo_BI_all+Lo_exBI$
+    T_all::TypeMoney{NDIMS2} # 总交易流量 Transfer_all: $Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
+    Lo_all::TypeMoney{NDIMS2} # 总贷款流出 Lo_all: $Lo_all=Lo_BI_all+Lo_exBI$
     Lo_BI_all::TypeMoney{NDIMS2} # 银行间贷款流出 Lo_BI_all
-    Lo_exBI::TypeMoney{NDIMS2} # 非银行间贷款流出 Lo_exBI：$Lo_exBI=Lo_P$
+    Lo_exBI::TypeMoney{NDIMS2} # 非银行间贷款流出 Lo_exBI: $Lo_exBI=Lo_P$
     Lo_P::TypeMoney{NDIMS2} # 银行贷款流出给生产部门 Lo_P
-    Li_all::TypeMoney{NDIMS2} # 总贷款流入 Li_all：$Li_all=Li_BI_all+Li_exBI$
+    Li_all::TypeMoney{NDIMS2} # 总贷款流入 Li_all: $Li_all=Li_BI_all+Li_exBI$
     Li_BI_all::TypeMoney{NDIMS2} # 银行间贷款流入 Li_BI_all
-    Li_exBI::TypeMoney{NDIMS2} # 非银行间贷款流入 Li_exBI：$Li_exBI=Li_D$
+    Li_exBI::TypeMoney{NDIMS2} # 非银行间贷款流入 Li_exBI: $Li_exBI=Li_D$
     Li_P::TypeMoney{NDIMS2} # 银行贷款流入从生产部门 Li_P
-    Bi_all::TypeMoney{NDIMS2} # 总借款流入 Bi_all：$Bi_all=Bi_BI_all+Bi_exBI$
+    Bi_all::TypeMoney{NDIMS2} # 总借款流入 Bi_all: $Bi_all=Bi_BI_all+Bi_exBI$
     Bi_BI_all::TypeMoney{NDIMS2} # 银行间借款流入 Bi_BI_all
-    Bi_exBI::TypeMoney{NDIMS2} # 非银行间借款流入 Bi_exBI：$Bi_exBI=Bi_D$
+    Bi_exBI::TypeMoney{NDIMS2} # 非银行间借款流入 Bi_exBI: $Bi_exBI=Bi_D$
     Bi_D::TypeMoney{NDIMS2} # 银行借款流入从居民部门 Bi_D
-    Bo_all::TypeMoney{NDIMS2} # 总借款流出 Bo_all：$Bo_all=Bo_BI_all+Bo_exBI$
+    Bo_all::TypeMoney{NDIMS2} # 总借款流出 Bo_all: $Bo_all=Bo_BI_all+Bo_exBI$
     Bo_BI_all::TypeMoney{NDIMS2} # 银行间借款流出 Bo_BI_all
-    Bo_exBI::TypeMoney{NDIMS2} # 非银行间借款流出 Bo_exBI：$Bo_exBI=Bo_P$
+    Bo_exBI::TypeMoney{NDIMS2} # 非银行间借款流出 Bo_exBI: $Bo_exBI=Bo_P$
     Bo_D::TypeMoney{NDIMS2} # 银行借款流出给居民部门 Bo_D
     Shock_t::TypeMoney{NDIMS2} # 总冲击目标 Shock_t $Shock_t = Shock_exBI_t+Shock_BI_t$
     Shock_s::TypeMoney{NDIMS2} # 总冲击源头 Shock_s $Shock_s = Shock_exBI_s+Shock_BI_s$
@@ -101,9 +101,9 @@ mutable struct BankInterbank{NDIMS2}
     Li_BI::TypeMoney{NDIMS2} # 银行间贷款流入邻接矩阵 Li_BI
     Bo_BI::TypeMoney{NDIMS2} # 银行间借款流入邻接矩阵 Bo_BI
     Bi_BI::TypeMoney{NDIMS2} # 银行间借款流出邻接矩阵 Bi_BI
-    Shock_BI::TypeMoney{NDIMS2} # 银行间冲击 Shock_BI：$Shock_BI=Shock_BI_def+Shock_BI_run$
+    Shock_BI::TypeMoney{NDIMS2} # 银行间冲击 Shock_BI: $Shock_BI=Shock_BI_def+Shock_BI_run$
     Shock_BI_def::TypeMoney{NDIMS2} # 银行间违约损失冲击 Shock_BI_def
-    Shock_BI_run::TypeMoney{NDIMS2} # 银行间挤兑流动冲击 Shock_BI_run：$Shock_BI_run=Shock_BI_run_ilq+Shock_BI_run_br$
+    Shock_BI_run::TypeMoney{NDIMS2} # 银行间挤兑流动冲击 Shock_BI_run: $Shock_BI_run=Shock_BI_run_ilq+Shock_BI_run_br$
     Shock_BI_run_ilq::TypeMoney{NDIMS2} # 流动性短缺银行银行间挤兑流动冲击 Shock_BI_run_ilq
     Shock_BI_run_br::TypeMoney{NDIMS2} # 破产银行银行间挤兑流动冲击 Shock_BI_run_br
     Loss_BI::TypeMoney{NDIMS2} # 银行间市场冲击损失 Loss_BI
