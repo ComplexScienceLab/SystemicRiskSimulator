@@ -4,7 +4,7 @@
 
 
 "函数：过程之于破产银行间挤兑流动传染冲击"
-function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::ParameterVariables, env::EnvironmentVariables)
+function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
 
     ## 过程：破产银行间挤兑流动传染冲击 #BUG
     env.process_name = "破产银行间挤兑流动传染冲击"

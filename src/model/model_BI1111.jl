@@ -8,7 +8,7 @@
 
 # module model_BI1111
 
-function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::ParameterVariables, env::EnvironmentVariables) #= BB_tau::StructArray, BI_tau::StructArray,  =#
+function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
 
     ## 设置临时变量
     BB_t0 = deepcopy(BB) # 临时设置BB变量，被读取于阶段1
@@ -45,7 +45,7 @@ function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::ParameterVari
 
     println("model_BI1111结束。")
 
-    return BB, BI, BB_tau, BI_tau, env
+    return BB, BI, BB_tau, BI_tau, para, env
 end # function
 
 # end # module

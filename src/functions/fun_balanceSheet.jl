@@ -20,7 +20,7 @@ end
 
 "加总各银行之银行间总资产，通过银行间资产邻接矩阵。"
 function sum_B_A_BI!(bank::BankCommercial, interbank::BankInterbank, bankList::TypeState{1}, interbankList::TypeState{2})
-    bank.A_BI_all[:] = sum(interbank.A_BI .* interbankList, dims = 2)
+    bank.A_BI_all[: ] = sum(interbank.A_BI .* interbankList, dims = 2)
 end
 
 "汇总各银行之非银行间资产``A_{-BI}``。"
@@ -50,7 +50,7 @@ end
 
 "加总各银行之银行间总负债，通过银行间负债邻接矩阵。"
 function sum_B_Z_BI!(bank::BankCommercial, interbank::BankInterbank, bankList::TypeState{1}, interbankList::TypeState{2})
-    bank.Z_BI_all[:] = sum(interbank.Z_BI .* interbankList, dims = 2)
+    bank.Z_BI_all[: ] = sum(interbank.Z_BI .* interbankList, dims = 2)
 end
 
 "汇总各银行之非银行间负债``Z_{-BI}``。"
@@ -65,7 +65,7 @@ end
 
 "计算银行体系内包括已退出银行在内的所有各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"
 function calc_B_E_all_at_all_bank!(bank::BankCommercial, bankList::TypeState{1})
-    bank.E_all[:] = max.(bank.A_all - bank.Z_all - LESS1, 0.0)
+    bank.E_all[: ] = max.(bank.A_all - bank.Z_all - LESS1, 0.0)
 end
 
 
@@ -95,9 +95,9 @@ end
 """
 更新各银行间之资产负债矩阵。
 # Arguments
-`byWay::String`: 参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
-- `Z_BI`: 已知``Z_{BI}``，更新其余银行间资产负债变量；
-- `A_BI`: 已知``A_{BI}``，更新其余银行间资产负债变量；
+`byWay::String`:  参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
+- `Z_BI`:  已知``Z_{BI}``，更新其余银行间资产负债变量；
+- `A_BI`:  已知``A_{BI}``，更新其余银行间资产负债变量；
 """
 function update_BI_balanceSheet!(interbank::BankInterbank; byWay::String)
     if byWay == "Z_BI"
@@ -114,25 +114,25 @@ end
 """
 更新各银行之资产负债表变量。
 # Arguments
-`byWay::String`: 参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
-- `all`: 更新各银行之所有资产负债表变量；
-- `A_exBI`: 已知``A_{-BI}``，更新各银行之其余相关的资产负债表变量；
-- `A_P`: 已知``L_{-BI}``，更新各银行之其余相关的资产负债表变量；
-- `A_Q`: 已知``Q_{B}``，更新各银行之其余相关的资产负债表变量；
-- `A_R`: 已知``R_{B}``，更新各银行之其余相关的资产负债表变量；
-- `A_other`: 已知``A_{other}``，更新各银行之其余相关的资产负债表变量；
-- `A_BI_all`: 已知``A_{BI}[i,:]``，更新各银行之其余相关的资产负债表变量；
-- `Z_exBI`: 已知``Z_{exBI}``，更新各银行之其余相关的资产负债表变量；
-- `Z_D`: 已知``D_{B}``，更新各银行之其余相关的资产负债表变量；
-- `Z_other`: 已知``Z_{other}``，更新各银行之其余相关的资产负债表变量；
-- `Z_BI_all`: 已知``Z_{BI}[i,:]``，更新各银行之其余相关的资产负债表变量；
-- `E_all and Z_all`: 已知``E_{B}``和``Z_{B}``，更新各银行之其余相关的资产负债表变量；
-- `E_all and A_all`: 已知``E_{B}``和``A_{B}``，更新各银行之其余相关的资产负债表变量；
-- `calc all E_all`: 已知``A_{B}``和``Z_{B}``，更新计算所有银行之所有者权益``E_{B}``；
-- `sum A_BI`: 已知``A_{BI}[i,j]``，加总各银行变量``A_{BI}[i,:]``；
-- `sum Z_BI`: 已知``Z_{BI}[i,j]``，加总各银行变量``Z_{BI}[i,:]``；
-- `alter to Z_BI from A_BI`: 已知``A_{BI}[i,j]``，转换得到``Z_{BI}[i,j]``；
-- `alter to A_BI from Z_BI`: 已知``Z_{BI}[i,j]``，转换得到``A_{BI}[i,j]``；
+`byWay::String`:  参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
+- `all`:  更新各银行之所有资产负债表变量；
+- `A_exBI`:  已知``A_{-BI}``，更新各银行之其余相关的资产负债表变量；
+- `A_P`:  已知``L_{-BI}``，更新各银行之其余相关的资产负债表变量；
+- `A_Q`:  已知``Q_{B}``，更新各银行之其余相关的资产负债表变量；
+- `A_R`:  已知``R_{B}``，更新各银行之其余相关的资产负债表变量；
+- `A_other`:  已知``A_{other}``，更新各银行之其余相关的资产负债表变量；
+- `A_BI_all`:  已知``A_{BI}[i,: ]``，更新各银行之其余相关的资产负债表变量；
+- `Z_exBI`:  已知``Z_{exBI}``，更新各银行之其余相关的资产负债表变量；
+- `Z_D`:  已知``D_{B}``，更新各银行之其余相关的资产负债表变量；
+- `Z_other`:  已知``Z_{other}``，更新各银行之其余相关的资产负债表变量；
+- `Z_BI_all`:  已知``Z_{BI}[i,: ]``，更新各银行之其余相关的资产负债表变量；
+- `E_all and Z_all`:  已知``E_{B}``和``Z_{B}``，更新各银行之其余相关的资产负债表变量；
+- `E_all and A_all`:  已知``E_{B}``和``A_{B}``，更新各银行之其余相关的资产负债表变量；
+- `calc all E_all`:  已知``A_{B}``和``Z_{B}``，更新计算所有银行之所有者权益``E_{B}``；
+- `sum A_BI`:  已知``A_{BI}[i,j]``，加总各银行变量``A_{BI}[i,: ]``；
+- `sum Z_BI`:  已知``Z_{BI}[i,j]``，加总各银行变量``Z_{BI}[i,: ]``；
+- `alter to Z_BI from A_BI`:  已知``A_{BI}[i,j]``，转换得到``Z_{BI}[i,j]``；
+- `alter to A_BI from Z_BI`:  已知``Z_{BI}[i,j]``，转换得到``A_{BI}[i,j]``；
 """
 function update_B_balanceSheet!(bank::BankCommercial, interbank::BankInterbank, bankList::TypeState{1}, interbankList::TypeState{2}; byWay::String)
     if byWay == "all"

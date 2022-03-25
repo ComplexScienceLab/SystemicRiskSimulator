@@ -10,9 +10,9 @@
 
 # 定义个体抽象类型
 # abstract type Object end
-# abstract type Bank <: Object end
-# abstract type BB <: Bank end # 定义商业银行BankCommercial个体抽象类型
-# abstract type BS <: Bank end # 定义影子银行BankShadow个体抽象类型
+# abstract type Bank <:  Object end
+# abstract type BB <:  Bank end # 定义商业银行BankCommercial个体抽象类型
+# abstract type BS <:  Bank end # 定义影子银行BankShadow个体抽象类型
 
 
 ## 定义类型

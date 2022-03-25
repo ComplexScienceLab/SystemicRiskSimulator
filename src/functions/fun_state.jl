@@ -175,7 +175,7 @@ end
 function update_isBankrupt_from_isOff!(bank::BankCommercial, interbank::BankInterbank)
     condition = (bank.off)
     if bank.br == condition
-        bank.br[:] = FALSE1
+        bank.br[: ] = FALSE1
         interbank.br = (bank.br .&& bank.br')
         interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
         interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
@@ -269,14 +269,14 @@ end
 """
 计算信息列表之于各状态银行之各关联银行。
 # Arguments
-- `interbank::BankInterbank`: 银行间主体。
-- `listOfRelationInStateOfBanks::Array`: 列表之于各银行之各状态之关系。
-- `isState::Vector`: 示性向量之于各银行之状态。
-- `goal::String`: 参数，确定计算债务方或债权方。
-    - `debtor`: 计算对应的债务方银行；
-    - `creditor`: 计算对应的债权方银行；
+- `interbank::BankInterbank`:  银行间主体。
+- `listOfRelationInStateOfBanks::Array`:  列表之于各银行之各状态之关系。
+- `isState::Vector`:  示性向量之于各银行之状态。
+- `goal::String`:  参数，确定计算债务方或债权方。
+    - `debtor`:  计算对应的债务方银行；
+    - `creditor`:  计算对应的债权方银行；
 # Returns
-- `listOfRelationInStateOfBanks`: 返回对应状态下的债权或者债务关系的银行列表；
+- `listOfRelationInStateOfBanks`:  返回对应状态下的债权或者债务关系的银行列表；
 """
 function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Vector, goal::String)
     # 计算示性矩阵之于银行间风险敞口的
@@ -287,9 +287,9 @@ function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Ve
     else
         throw(DomainError(byWay, "关键词取值错误！"))
     end
-    listOfRelationInStateOfBanks = [[] for i in 1:env.num_bank]
-    for i in 1:env.num_bank
-        listOfRelationInStateOfBanks[i] = findall(isExposure[i, :]) # 获取对应状态下的债权或者债务关系的银行列表
+    listOfRelationInStateOfBanks = [[] for i in 1: env.num_bank]
+    for i in 1: env.num_bank
+        listOfRelationInStateOfBanks[i] = findall(isExposure[i, : ]) # 获取对应状态下的债权或者债务关系的银行列表
     end
     return listOfRelationInStateOfBanks
 end
@@ -300,30 +300,30 @@ end
 
 # Arguments
 
-`to::String`: 参数，转移状态目标；
-- `any`: 到任意状态；
-- `healthy`: 到健康状态；
-- `insolvent`: 到资不抵债状态；
-- `illiquity`: 到流动性短缺状态；
-- `bankrupt`: 到破产状态；
-- `off`: 到退出状态；
-- `needed repay BI`: 到是否需要偿还银行间借款状态；
-- `enabled repay BI`: 到是否可以偿还银行间借款状态；
-- `needed repay Z_D`: 到是否需要偿还居民存款状态；
-- `enabled repay Z_D`: 到是否需要偿还借款状态；
-- `needed collect A_P`: 到是否可以收回厂商贷款状态；
-- `enabled collect A_P`: 到是否可以收回厂商贷款状态；
+`to::String`:  参数，转移状态目标；
+- `any`:  到任意状态；
+- `healthy`:  到健康状态；
+- `insolvent`:  到资不抵债状态；
+- `illiquity`:  到流动性短缺状态；
+- `bankrupt`:  到破产状态；
+- `off`:  到退出状态；
+- `needed repay BI`:  到是否需要偿还银行间借款状态；
+- `enabled repay BI`:  到是否可以偿还银行间借款状态；
+- `needed repay Z_D`:  到是否需要偿还居民存款状态；
+- `enabled repay Z_D`:  到是否需要偿还借款状态；
+- `needed collect A_P`:  到是否可以收回厂商贷款状态；
+- `enabled collect A_P`:  到是否可以收回厂商贷款状态；
 
-`from::String`: 参数，转移状态源头；
-- `any`: 从任意状态出发；
-- `healthy`: 从健康状态出发；
-- `insolvent`: 从资不抵债状态出发；
-- `illiquity`: 从流动性短缺状态出发；
-- `bankrupt`: 从破产状态出发；
-- `off`: 从退出状态出发；
-- `needed repay BI`: 到是否需要偿还银行间借款状态；
-- `needed repay Z_D`: 到是否需要偿还居民存款状态；
-- `needed collect A_P`: 到是否可以收回厂商贷款状态；
+`from::String`:  参数，转移状态源头；
+- `any`:  从任意状态出发；
+- `healthy`:  从健康状态出发；
+- `insolvent`:  从资不抵债状态出发；
+- `illiquity`:  从流动性短缺状态出发；
+- `bankrupt`:  从破产状态出发；
+- `off`:  从退出状态出发；
+- `needed repay BI`:  到是否需要偿还银行间借款状态；
+- `needed repay Z_D`:  到是否需要偿还居民存款状态；
+- `needed collect A_P`:  到是否可以收回厂商贷款状态；
 """
 function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::String = "any", from::String = "any")
     if to == "any" #FIXME 这个可能有缺陷

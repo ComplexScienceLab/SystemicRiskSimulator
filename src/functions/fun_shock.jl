@@ -15,7 +15,7 @@
 
 # "汇总综合外生冲击。" #HACK无用
 # function together_Shock_exBI!(bank::BankCommercial, bankState::TypeState{1})
-#     bank.Shock_exBI_t[bankState] = para.theta_Shock_exBI_t .* bank.Shock_P_def_t[bankState] + (1 - para.theta_Shock_exBI_t) .* bank.Shock_D_run_t[bankState]
+#     bank.Shock_exBI_t[bankState] = para["theta_Shock_exBI_t"] .* bank.Shock_P_def_t[bankState] + (1 - para["theta_Shock_exBI_t"]) .* bank.Shock_D_run_t[bankState]
 # end
 
 "汇总总冲击目标"
@@ -154,25 +154,25 @@ end
 """
 更新各银行之冲击。
 # Arguments
-`byWay::String`: 参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
-- `all`: 更新全部冲击变量；
-- `clear Shock_BI and Shock_exBI`: 清零本回合结束时，除了``Shock_{B}``系列的变量以外的，所有不必要的冲击变量，暨所有``Shock_{BI}``系列的变量、``Shock_{exBI}``系列的变量；
-- `clear Shock_B_A and Shock_B_Z`: 清零银行内资产负债冲击变量；
-- `Shock_P_def_t`: 已知``Shock_{P,def}[i]``，更新其余冲击变量；
-- `Shock_P_run_s`: 已知``Shock_{P,run}[i]``，更新其余冲击变量；
-- `Shock_D_run_t`: 已知``Shock_{D,run}[i]``，更新其余冲击变量；
-- `Shock_D_def_s`: 已知``Shock_{D,def}[i]``，更新其余冲击变量；
-- `Shock_B_A`: 已知``Shock_{B,b}``，更新其余冲击变量；
-- `Shock_B_Z`: 已知``Shock_{B,Z}``，更新其余冲击变量；
-- `Shock_BI_def_s`: 已知``Shock_{BI,def}[:,i_{isv}]``，更新其余冲击变量；
-- `Shock_BI_run_ilq_s`: 已知``Shock_{BI,run}[:,i_{ilq}]``，更新其余冲击变量；
-- `Shock_BI_run_br_s`: 已知``Shock_{BI,run}[:,i_{br}]``，更新其余冲击变量；
-- `Shock_BI_def`: 已知``Shock_{BI,def}[j,i_{isv}]``，更新其余冲击变量；
-- `Shock_BI_run_ilq`: 已知``Shock_{BI,run}[j,i_{ilq}]``，更新其余冲击变量；
-- `Shock_BI_run_br`: 已知``Shock_{BI,run}[j,i_{br}]``，更新其余冲击变量；
-- `Shock_BI_def_t`: 已知``Shock_{BI,def}[j,:}],: \\in i_{isv}``，更新其余冲击变量；
-- `Shock_BI_run_ilq_t`: 已知``Shock_{BI,run}[j,:}],: \\in i_{ilq}``，更新其余冲击变量；
-- `Shock_BI_run_br_t`: 已知``Shock_{BI,run}[j,:}],: \\in i_{br}``，更新其余冲击变量；
+`byWay::String`:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
+- `all`:  更新全部冲击变量；
+- `clear Shock_BI and Shock_exBI`:  清零本回合结束时，除了``Shock_{B}``系列的变量以外的，所有不必要的冲击变量，暨所有``Shock_{BI}``系列的变量、``Shock_{exBI}``系列的变量；
+- `clear Shock_B_A and Shock_B_Z`:  清零银行内资产负债冲击变量；
+- `Shock_P_def_t`:  已知``Shock_{P,def}[i]``，更新其余冲击变量；
+- `Shock_P_run_s`:  已知``Shock_{P,run}[i]``，更新其余冲击变量；
+- `Shock_D_run_t`:  已知``Shock_{D,run}[i]``，更新其余冲击变量；
+- `Shock_D_def_s`:  已知``Shock_{D,def}[i]``，更新其余冲击变量；
+- `Shock_B_A`:  已知``Shock_{B,b}``，更新其余冲击变量；
+- `Shock_B_Z`:  已知``Shock_{B,Z}``，更新其余冲击变量；
+- `Shock_BI_def_s`:  已知``Shock_{BI,def}[: ,i_{isv}]``，更新其余冲击变量；
+- `Shock_BI_run_ilq_s`:  已知``Shock_{BI,run}[: ,i_{ilq}]``，更新其余冲击变量；
+- `Shock_BI_run_br_s`:  已知``Shock_{BI,run}[: ,i_{br}]``，更新其余冲击变量；
+- `Shock_BI_def`:  已知``Shock_{BI,def}[j,i_{isv}]``，更新其余冲击变量；
+- `Shock_BI_run_ilq`:  已知``Shock_{BI,run}[j,i_{ilq}]``，更新其余冲击变量；
+- `Shock_BI_run_br`:  已知``Shock_{BI,run}[j,i_{br}]``，更新其余冲击变量；
+- `Shock_BI_def_t`:  已知``Shock_{BI,def}[j,: }],:  \\in i_{isv}``，更新其余冲击变量；
+- `Shock_BI_run_ilq_t`:  已知``Shock_{BI,run}[j,: }],:  \\in i_{ilq}``，更新其余冲击变量；
+- `Shock_BI_run_br_t`:  已知``Shock_{BI,run}[j,: }],:  \\in i_{br}``，更新其余冲击变量；
 """
 function update_B_Shock!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2}; byWay::String = "all")
     if byWay == "all"

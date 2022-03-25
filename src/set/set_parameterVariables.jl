@@ -29,8 +29,5 @@ setOfParametersValues = Dict(
         ]
 )
 
-## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
-p = dict_list(setOfParametersValues) # 完整名称为dict_paraValues。此处为了方便用于后续代码阅读，因此设置为p。
-
 ################################
 

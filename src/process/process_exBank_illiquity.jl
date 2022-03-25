@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于银行外部挤兑流动冲击"
-function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::ParameterVariables, env::EnvironmentVariables)
+function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
 
     ## 过程：银行外部挤兑流动传染冲击
     env.process_name = "银行外部挤兑流动传染冲击"
