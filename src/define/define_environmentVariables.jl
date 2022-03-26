@@ -11,7 +11,7 @@
 
 
 ## 生成字典变量
-environmentVariables = @dict(
+env = @dict(
   init_method,
   foldernameTypeOfExperimentsData,
   foldernamePrefixOfExperimentsData,
@@ -26,5 +26,4 @@ environmentVariables = @dict(
   test_tau
 )
 
-## 别名
-env = environmentVariables
+# env = environmentVariables # 别名

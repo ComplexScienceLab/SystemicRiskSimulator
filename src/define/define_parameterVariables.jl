@@ -8,12 +8,12 @@
 
 
 ## 生成字典变量
-ParameterVariables = @dict(
+setOfValuesOfParameterVariables = @dict(
     model,
     Shock_exBI_t,
     kappa_A_P,
     kappa_BI
 )
 
-## 别名
-para = ParameterVariables
+# para = setOfValuesOfParameterVariables # 别名
+

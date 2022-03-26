@@ -12,10 +12,6 @@ using Graphs
 using Agents
 using Dates
 using DataFrames
-using DrWatson
-
-## 快速激活本项目
-@quickactivate "SystemicRisk"
 
 ## 集成设置项文件
 # include("define/define_environmentVariables.jl")
@@ -37,6 +33,7 @@ include("functions/fun_state.jl")
 include("functions/fun_shock.jl")
 include("functions/fun_loss.jl")
 include("functions/fun_transfer.jl")
+include("functions/fun_models.jl")
 
 ## 集成初始化函数文件
 include("initialization/fun_initVariables.jl")
