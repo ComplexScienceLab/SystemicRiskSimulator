@@ -39,29 +39,6 @@ num_assets = 3; # 资产种类数；
 test_tau = 4 # test变量，用于打断点。相关语句：env[:tau]>=env[:test_tau]；
 
 
-
-######### 设置环境变量初始值 #########
-env = @dict(
-    init_method,
-    foldernameTypeOfExperimentsData,
-    foldernamePrefixOfExperimentsData,
-    rootDirOfExperimentsData,
-    folderpathOfExperimentsData,
-    tau,
-    process_name,
-    is_end_round,
-    max_num_tau,
-    num_bank,
-    num_assets,
-    test_tau
-)
-
-
-
-
-
-
-
 ###########################
 
 
