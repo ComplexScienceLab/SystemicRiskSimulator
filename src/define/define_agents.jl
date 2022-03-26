@@ -6,8 +6,8 @@
 
 
 
-"定义商业银行复合类型。"
-mutable struct BankCommercial{NDIMS1,NDIMS2} <: AbstractAgent
+"定义商业银行群复合类型。"
+mutable struct BankCommercial{NDIMS1,NDIMS2}
     id::TypeIds{NDIMS1} # 编号 id
     abbr::TypeAbbrs{NDIMS1} # 缩写 abbr
     name::TypeNames{NDIMS1} # 全名 name
@@ -94,7 +94,7 @@ end
 
 
 "定义银行间邻接矩阵复合类型。"
-mutable struct BankInterbank{NDIMS2} <: AbstractAgent
+mutable struct BankInterbank{NDIMS2}
     # id::TypeIds{NDIMS2} # 编号
     A_BI::TypeMoney{NDIMS2} # 银行间资产邻接矩阵 A_BI
     Z_BI::TypeMoney{NDIMS2} # 银行间负债邻接矩阵 Z_BI
@@ -130,8 +130,7 @@ end
 
 
 "定义综合Agent类型"
-@agent SystemicRiskAgent GraphSpace begin
-    pos::Tuple{Float64,Float64}
-    bank::BankCommercial # 商业银行复合类型
-    interbank::BankInterbank # 银行间邻接矩阵复合类型
+mutable struct SystemicRiskAgent <: AbstractAgent
+    bank::BankCommercial # 商业银行群
+    interbank::BankInterbank # 银行间邻接矩阵
 end
