@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于外部违约损失传染冲击"
-function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
 
     # if para["theta_Shock_exBI_t"] == 1.0 #HACK无用
 

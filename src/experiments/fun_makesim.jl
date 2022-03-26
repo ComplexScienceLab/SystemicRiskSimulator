@@ -7,7 +7,7 @@
 
 
 "函数：运行一次仿真"
-function makesim(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function makesim(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
 
 
     BB, BI, BB_tau, BI_tau, para, env = model_BI1111(BB, BI, para, env)
