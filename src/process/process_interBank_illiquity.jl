@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于流动性短缺银行间挤兑流动传染冲击"
-function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
 
     ## 过程：流动性短缺银行间挤兑流动传染冲击
     env[:process_name] = "流动性短缺银行间挤兑流动传染冲击"

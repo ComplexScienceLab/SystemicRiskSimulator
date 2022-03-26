@@ -9,10 +9,10 @@
 """
 函数：设置实验文件夹
 # Arguments: 
-- env::Dict: 环境变量；
+- env::EnvironmentVariables: 环境变量；
 - isDatetime::Bool = true: 是否加入日期时间；
 """
-function setExperimentsFolders(env::Dict; isDatetime::Bool = true)
+function setExperimentsFolders(env::EnvironmentVariables; isDatetime::Bool = true)
 
     # 设定日期时间字符串
     if isDatetime == true
