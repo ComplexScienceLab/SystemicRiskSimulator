@@ -3,7 +3,7 @@
 ##########################################
 
 "函数：过程之于外生破产银行间挤兑流动传染冲击"#HACK暂时不用
-function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
 
     if BB_t0.br != FALSE1 # 当最初存在已经判定倒闭的银行时执行以下过程
 

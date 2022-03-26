@@ -8,7 +8,7 @@
 
 # module model_BI1111
 
-function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
 
     ## 设置临时变量
     BB_t0 = deepcopy(BB) # 临时设置BB变量，被读取于阶段1

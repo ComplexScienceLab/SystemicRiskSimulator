@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于资不抵债银行间违约损失传染冲击"
-function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_t1::BankCommercial, BI_t1::BankInterbank, para::Dict, env::Dict)
+function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_t1::BankCommercial, BI_t1::BankInterbank, para::Dict, env::EnvironmentVariables)
     ## 过程：资不抵债银行间违约损失传染冲击
     env[:process_name] = "资不抵债银行间违约损失传染冲击"
     println("过程：", env[:process_name])
