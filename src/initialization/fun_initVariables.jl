@@ -289,7 +289,7 @@ end
 - `import data`:  导入数据以初始化
 - `manually`:  手动设置以初始化；
 """
-function init_B_variables(; init_method::String)
+function init_B_and_BI(; init_method::String)
     if init_method == "only init"
         BB, BI = init_B_variables_only()
         BB_tau = StructArray([BB for i = 1: env[:max_num_tau]]) # 初始化带传染回合变量的商业银行实例数组
@@ -324,5 +324,21 @@ function init_B_variables(; init_method::String)
     BI_tau_0 = deepcopy(BI)
 
     return BB, BI, BB_tau_0, BI_tau_0, BB_tau, BI_tau
+end
+
+
+agent=SystemicRiskAgent
+
+space = GraphSpace(#= #TODO生成图空间 =#)
+
+#NOW
+function init_models(BB,BI,env::EnvironmentVariables,para::Dict)
+
+
+    # model=ABM(
+        
+    # )
+
+    return model
 end
 
