@@ -6,6 +6,17 @@
 #状态/可扩展
 ##########################################
 
+
+## 使用外部工具包
+using Graphs
+using Agents
+using Dates
+using DataFrames
+using DrWatson
+
+## 快速激活本项目
+@quickactivate "SystemicRisk"
+
 ## 集成设置项文件
 # include("define/define_environmentVariables.jl")
 include("set/set_environmentVariables.jl")
@@ -14,6 +25,8 @@ include("set/set_parameterVariables.jl")
 ## 集成定义文件
 include("define/define_type.jl")
 include("define/define_agents.jl")
+include("define/define_environmentVariables.jl")
+include("define/define_parameterVariables.jl")
 
 ## 集成定义常数文件
 include("define/define_consts.jl")
