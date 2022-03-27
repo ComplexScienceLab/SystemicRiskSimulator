@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于外部违约损失传染冲击"
-function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
+function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
     # if para["theta_Shock_exBI_t"] == 1.0 #HACK无用
 
@@ -44,8 +44,8 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     println("t3 尾声阶段")
 
     ## TODO存储数据
-    BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-    BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
+    # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
+    # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
     ## 判定本回合是否有银行转移状态，如果无则后续处理然后结束本轮，如果有则继续处理。
     if BB.isv == BB_t1.isv

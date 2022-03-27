@@ -33,7 +33,7 @@ folderpathOfExperimentsData = ""; # 主文件夹路径之于实验。将由函�
 tau = 0; # 设置初始回合计次为0；
 process_name = ""; # 过程名称；
 is_end_round = false; # 结束回合判断；
-max_num_tau = 1000; # 最大回合数；
+max_num_tau = 100; # 最大回合数；
 num_bank = 5; # 银行个数；
 num_assets = 3; # 资产种类数；
 test_tau = 4 # test变量，用于打断点。相关语句：env[:tau]>=env[:test_tau]；

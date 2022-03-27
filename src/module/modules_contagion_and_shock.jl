@@ -7,7 +7,7 @@
 "函数：银行外部违约损失传染"
 function exBank_insolvent_contagion!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 银行外部违约损失传染阶段
-    BB.Shock_P_def_t[para["idx_Shock_exBI_t"]] = para["Shock_exBI_t"][para["idx_Shock_exBI_t"]] # 生成厂商贷款违约损失冲击
+    BB.Shock_P_def_t[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_t][para[:idx_Shock_exBI_t]] # 生成厂商贷款违约损失冲击
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_P_def_t") # 厂商贷款违约损失冲击传导至银行内资产冲击
 
     return BB, BI
@@ -79,7 +79,7 @@ end # function
 "函数：银行外部挤兑流动冲击。考虑情况：存在部分债务银行之部分债务因为流动性短缺从而无法偿还。"
 function exBank_illiquity_shock!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict) #= BB_t1::BankCommercial, BI_t1::BankInterbank,  =#
     ## # 银行外部挤兑流动冲击阶段
-    BB.Shock_D_run_t[para["idx_Shock_exBI_t"]] = para["Shock_exBI_t"][para["idx_Shock_exBI_t"]] # 生成居民存款挤兑流动冲击
+    BB.Shock_D_run_t[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_t][para[:idx_Shock_exBI_t]] # 生成居民存款挤兑流动冲击
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_D_run_t") # 居民存款挤兑流动冲击传导至银行内负债冲击
     update_B_state!(BB, BI; to = "illiquity", from = "healthy") # 更新各银行之状态，从健康到流动性短缺
 
@@ -148,7 +148,7 @@ function interBank_illiquity_repay!(BB::BankCommercial, BI::BankInterbank, b::Ty
     ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
 
     BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b] = transfer_B_capital_reverse(BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b], BB.Li_P[b]) # 流动资产变动，因收回厂商贷款
-    # @. BB.A_Q[b] *= (1 - para["kappa_A_P"]) #HACK 暂时还不用！
+    # @. BB.A_Q[b] *= (1 - para[:kappa_A_P]) #HACK 暂时还不用！
     update_B_balanceSheet!(BB, BI, b, ib; byWay = "A_Q")
     update_B_balanceSheet!(BB, BI, b, ib; byWay = "A_P")
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_P_run_s")
@@ -181,7 +181,7 @@ end # function
 #TODO"函数：外生破产银行间挤兑流动传染"
 function exBank_bankrupt_contagion!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 外生破产银行间挤兑流动传染
-    BB.br[para["idx_Shock_exBI_t"]] = para["Shock_exBI_t"][para["idx_Shock_exBI_t"]]
+    BB.br[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_t][para[:idx_Shock_exBI_t]]
     update_B_state!(BB, BI; to = "bankrupt", from = "any")
 
     return BB, BI

@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于流动性短缺银行间挤兑流动传染冲击"
-function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::EnvironmentVariables)
+function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
     ## 过程：流动性短缺银行间挤兑流动传染冲击
     env[:process_name] = "流动性短缺银行间挤兑流动传染冲击"
@@ -35,8 +35,8 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
 
         ## TODO存储数据
-        BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-        BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
+        # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
+        # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
         ## 判定本回合是否有借贷流量，如果无则后续处理然后结束本轮，如果有则继续处理。
         if BB.Shock_t == Shock_t_t1

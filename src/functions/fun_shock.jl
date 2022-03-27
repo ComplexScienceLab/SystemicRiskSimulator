@@ -15,7 +15,7 @@
 
 # "汇总综合外生冲击。" #HACK无用
 # function together_Shock_exBI!(bank::BankCommercial, bankState::TypeState{1})
-#     bank.Shock_exBI_t[bankState] = para["theta_Shock_exBI_t"] .* bank.Shock_P_def_t[bankState] + (1 - para["theta_Shock_exBI_t"]) .* bank.Shock_D_run_t[bankState]
+#     bank.Shock_exBI_t[bankState] = para[:theta_Shock_exBI_t] .* bank.Shock_P_def_t[bankState] + (1 - para[:theta_Shock_exBI_t]) .* bank.Shock_D_run_t[bankState]
 # end
 
 "汇总总冲击目标"

@@ -10,7 +10,6 @@
 # export obj_BI,initObj
 
 
-using StructArrays
 
 
 ## 定义变量
@@ -325,33 +324,9 @@ function init_B_and_BI(; init_method::String)
 
 
 
-    return agent, BB, BI, BB_tau_0, BI_tau_0, BB_tau, BI_tau
+    return BB, BI, BB_tau_0, BI_tau_0, BB_tau, BI_tau
 end
 
-"#NOW初始化SystemicRiskAgent"
-function init_systemicRiskAgent!(BB::BankCommercial,BI::BankInterbank,env::EnvironmentVariables)
-    BB, BI, BB_tau_0, BI_tau_0, BB_tau, BI_tau = init_B_and_BI(; init_method = env[:init_method])
 
-    systemicRiskAgent = SystemicRiskAgent(
-        BB, # 商业银行群
-        BI # 银行间邻接矩阵
-    )
-
-    return systemicRiskAgent
-end
-
-# space = GraphSpace(#= #TODO生成图空间 =#)
-
-
-## 构建模型
-function create_systemicRiskModel(agent::SystemicRiskAgent, env::EnvironmentVariables, para::Dict)
-
-    systemicRiskModel = ABM(
-        agent,
-        space;
-        para
-    )
-    return systemicRiskModel
-end
 
 
