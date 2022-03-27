@@ -7,7 +7,7 @@
 "函数：银行外部违约损失传染"
 function exBank_insolvent_contagion!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 银行外部违约损失传染阶段
-    BB.Shock_P_def_t[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_t][para[:idx_Shock_exBI_t]] # 生成厂商贷款违约损失冲击
+    BB.Shock_P_def_t[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_def_t][para[:idx_Shock_exBI_t]] # 生成厂商贷款违约损失冲击
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_P_def_t") # 厂商贷款违约损失冲击传导至银行内资产冲击
 
     return BB, BI
@@ -79,7 +79,7 @@ end # function
 "函数：银行外部挤兑流动冲击。考虑情况：存在部分债务银行之部分债务因为流动性短缺从而无法偿还。"
 function exBank_illiquity_shock!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict) #= BB_t1::BankCommercial, BI_t1::BankInterbank,  =#
     ## # 银行外部挤兑流动冲击阶段
-    BB.Shock_D_run_t[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_t][para[:idx_Shock_exBI_t]] # 生成居民存款挤兑流动冲击
+    BB.Shock_D_run_t[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_run_t][para[:idx_Shock_exBI_t]] # 生成居民存款挤兑流动冲击
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_D_run_t") # 居民存款挤兑流动冲击传导至银行内负债冲击
     update_B_state!(BB, BI; to = "illiquity", from = "healthy") # 更新各银行之状态，从健康到流动性短缺
 
@@ -189,7 +189,7 @@ function exBank_bankrupt_contagion!(BB::BankCommercial, BI::BankInterbank, b::Ty
 end # function
 
 
-"过程：破产银行应偿还负债冲击"#HACK暂时不用
+"过程：破产银行应偿还负债冲击"#HACK冗余，可以替代以
 function bankrupt_repay_shock!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 破产银行遭受偿还冲击
 
