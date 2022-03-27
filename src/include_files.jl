@@ -12,6 +12,8 @@ using Graphs
 using Agents
 using Dates
 using DataFrames
+using StructArrays
+
 
 ## 集成设置项文件
 # include("define/define_environmentVariables.jl")
@@ -49,7 +51,6 @@ include("process/process_exBank_illiquity.jl")
 include("process/process_interBank_illiquity.jl")
 include("process/process_exBank_bankrupt.jl")
 include("process/process_interBank_bankrupt.jl")
-
 
 ## 集成各模型函数文件
 include("model/model_BI1111.jl")
