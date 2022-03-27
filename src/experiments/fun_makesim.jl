@@ -10,10 +10,16 @@
 function makesim(para::Dict, env::Dict)
 
     # 写入agent运行步骤在这
-    A, M, BB_tau_0, BI_tau_0, BB_tau, BI_tau = init_systemicRiskAgent!(para, env)
-    # M = create_systemicRiskModel(A, para)
-    systemicRiskAgent_step!(A, M, para, env)
-    _, _ = run!(M, systemicRiskAgent_step!, env[:max_num_tau])
-    wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "jld2", connector = "|", equals = "=")), BB) #FIXME
+    systemicRiskAgent, systemicRiskModel, BB_tau_0, BI_tau_0, BB_tau, BI_tau = init_systemicRiskAgent!(para, env)
+    # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)
+
+    ##BUG 测试具体模型。
+    systemicRiskAgent_step!(systemicRiskAgent, systemicRiskModel, para, env)
+    
+    ##BUG 测试Agents框架
+    # step!(systemicRiskModel, systemicRiskAgent_step!, 1)
+    # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, 1)
+    # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:max_num_tau])
+    # wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "jld2", connector = "|", equals = "=")), BB) #FIXME
     # return BB, BI, BB_tau, BI_tau, env
 end
