@@ -28,15 +28,11 @@ env = setExperimentsFolders(env)
 
 ## 初始化银行变量
 
-# global BB, global BI, global BB_tau_0, global BI_tau_0, global BB_tau, global BI_tau = init_B_variables(; init_method = env[:init_method])
-init_systemicRiskAgent!()
 ## 主循环
 for (i, para) in enumerate(list_combinationOfPara)
     # makesim(BB, BI, para, env)
-    makesim(agent, para, env)
+    makesim(para, env)
 end # for
-## BUG运行模型BI1111
-# BB, BI, BB_tau, BI_tau, env = model_BI1111(BB, BI, para, env)
-# using ./model_BI1111
+
 
 

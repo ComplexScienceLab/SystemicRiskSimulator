@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于流动性短缺银行间挤兑流动传染冲击"
-function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, BB_t1::BankCommercial, BI_t1::BankInterbank, para::Dict, env::EnvironmentVariables)
+function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, BB_t1::BankCommercial, BI_t1::BankInterbank, para::Dict, env::Dict)
 
     ## 过程：流动性短缺银行间挤兑流动传染冲击
     env[:process_name] = "流动性短缺银行间挤兑流动传染冲击"
@@ -40,8 +40,8 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, BB_
         # update_B_state!(BB, BI; to = "bankrupt", from = "illiquity") # 更新各银行之状态到破产
 
         ## TODO存储数据
-        BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-        BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
+        # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
+        # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
         ## 清零银行内冲击变量
         update_B_Shock!(BB, BI, b, ib; byWay = "clear Shock_B_A and Shock_B_Z") # 清零银行内资产负债冲击

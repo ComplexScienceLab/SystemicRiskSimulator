@@ -225,12 +225,12 @@ end
 
 "计算示性向量之于银行能够偿还银行间负债的。"
 function calc_isEnabledBoBI!(bank::BankCommercial, interbank::BankInterbank)
-    bank.eBoBI = (bank.Shock_BI_run_ilq_t .> 0 .&& BB.A_Q .> 0 .&& bank.on)
+    bank.eBoBI = (bank.Shock_BI_run_ilq_t .> 0 .&& bank.A_Q .> 0 .&& bank.on)
 end
 
 "计算示性向量之于银行能够偿还银行间负债的，从需要偿还银行间负债的。"
 function calc_isEnabledBoBI_from_isNeededBoBI!(bank::BankCommercial, interbank::BankInterbank)
-    bank.eBoBI = (bank.nBoBI .&& BB.A_Q .> 0)
+    bank.eBoBI = (bank.nBoBI .&& bank.A_Q .> 0)
 end
 
 "计算示性向量之于银行需要偿还居民部门存款的。"
@@ -240,12 +240,12 @@ end
 
 "计算示性向量之于银行能够偿还居民部门存款的。"
 function calc_isEnabledBoD!(bank::BankCommercial, interbank::BankInterbank)
-    bank.eBoD = (bank.Shock_D_run_t .> 0 .&& BB.A_Q .> 0 .&& bank.on)
+    bank.eBoD = (bank.Shock_D_run_t .> 0 .&& bank.A_Q .> 0 .&& bank.on)
 end
 
 "计算示性向量之于银行能够偿还居民部门存款的，从需要偿还居民部门存款的。"
 function calc_isEnabledBoD_from_isNeededBoD!(bank::BankCommercial, interbank::BankInterbank)
-    bank.eBoD = (bank.nBoD .&& BB.A_Q .> 0)
+    bank.eBoD = (bank.nBoD .&& bank.A_Q .> 0)
 end
 
 "计算示性向量之于银行需要收回厂商贷款的。"

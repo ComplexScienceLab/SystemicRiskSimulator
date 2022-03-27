@@ -11,6 +11,7 @@
 setOfValuesOfParameterVariables = @dict(
     model,
     Shock_exBI_t,
+    idx_Shock_exBI_t,
     kappa_A_P,
     kappa_BI
 )
