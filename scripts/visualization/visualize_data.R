@@ -11,7 +11,7 @@ library(igraph)
 ## 初始设置 --------------
 workaddress = getwd() # 获取工作路径
 
-test_data <- read_csv(str_c(workaddress,"data/test_data/test_data.csv",sep = '/'))
+test_data <- read_csv(str_c(workaddress,"data/exp_raw/test_data/test_data.csv",sep = '/'))
 
 View(test_data)
 
