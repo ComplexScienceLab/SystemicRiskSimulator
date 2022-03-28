@@ -34,8 +34,6 @@ function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Di
     BB, BI, env = process_interBank_bankrupt!(BB, BI, para, env)
 
 
-    ## 传染过程结束
-    @test println("传染过程结束")
     ## 收尾
     # update_B_balanceSheet!(BB, BI,b,ib; byWay = "calc all E_all") # 更新计算各银行之所有者权益
     # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据

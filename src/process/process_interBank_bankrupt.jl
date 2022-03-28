@@ -38,7 +38,7 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
 
         ## 判定本回合是否有借贷流量，如果无则后续处理然后结束本轮，如果有则继续处理。
         if BB.Shock_t == Shock_t_t1
-            env[:isEndRound] = true
+            env[:isEndProcess] = true
             break
         end
 

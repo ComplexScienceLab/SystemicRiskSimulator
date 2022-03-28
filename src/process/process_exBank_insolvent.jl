@@ -41,7 +41,7 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
 
     ## 判定本回合是否有银行转移状态，如果无则后续处理然后结束本轮，如果有则继续处理。
     if BB.isv == BB_t1.isv
-        env[:isEndRound] = true
+        env[:isEndProcess] = true
     end
 
     return BB, BI, BB_t1, BI_t1, env
