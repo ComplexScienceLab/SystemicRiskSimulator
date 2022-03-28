@@ -37,10 +37,14 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
 
         ## 判定本回合是否有借贷流量，如果无则后续处理然后结束本轮，如果有则继续处理。
         if BB.Shock_t == Shock_t_t1
-            env[:isEndRound] = true
+            env[:isEndProcess] = true
             break
         end
 
+
+        if env[:step] == env[:stepSize]
+            env[:isEndStep] = true
+        end
 
     end # while # 过程：流动性短缺银行间挤兑流动传染冲击
 

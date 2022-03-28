@@ -30,11 +30,13 @@ end
 # end
 
 
-"函数：Agent模型步进"
+"函数：Agent模型步进" #TODO方案一
 function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict)
-    # BB, BI, BB_tau, BI_tau, para, env = model_BI1111(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
     systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
-    # systemicRiskAgent.bank = BB
-    # systemicRiskAgent.interbank = BI
-    # return systemicRiskAgent, BB_tau, BI_tau, para, env
+end
+
+
+"函数：Agent模型步进" #NOW 方案二
+function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict)
+    systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
 end

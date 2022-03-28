@@ -42,8 +42,6 @@ function exBank_insolvent_shock!(BB::BankCommercial, BI::BankInterbank, BB_t1::B
 end # function
 
 
-
-
 "函数：资不抵债银行间违约损失传染"
 function interBank_insolvent_contagion!(BB::BankCommercial, BI::BankInterbank, BB_t1::BankCommercial, BI_t1::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 资不抵债银行间违约损失传染阶段
@@ -66,7 +64,7 @@ function interBank_insolvent_shock!(BB::BankCommercial, BI::BankInterbank, BB_t1
     ## # 资不抵债银行间违约损失冲击阶段
     env[:stage] = "t2 资不抵债银行间违约损失冲击阶段"
     @test println("阶段：$(env[:stage])")
-    
+
     @. BB.A_BI_all[b] = max(BB.A_BI_all[b] - BB.Shock_def_t[b], 0.0) # 银行之银行间资产变动
     update_B_balanceSheet!(BB, BI, b, ib; byWay = "A_BI_all")
     @. BB.E_all[BB.on] = max(BB.E_all[BB.on] - BB.Shock_def_t[BB.on], 0.0) # 银行之所有者权益变动
