@@ -12,12 +12,12 @@
 - foldernamePrefixOfExperimentsData::String: 手动设置实验数据文件夹前缀名。默认"default"；
 - rootDirOfExperimentsData::String: 手动设置实验数据文件夹根路径。默认projectdir() * "/data/sims/"；
 - tau::Int16: 回合计数
-- process_name::String: 过程名称
-- is_end_round::Bool: 结束回合判断
-- num_bank::Int16: 银行个数
-- num_assets::Int16: 资产总类数
-- max_num_tau::Int16: 最大传染回合数
-- test_tau::Int16: test变量，用于打断点
+- processName::String: 过程名称
+- isEndRound::Bool: 结束回合判断
+- numBank::Int16: 银行个数
+- numAssets::Int16: 资产总类数
+- maxNumOfTau::Int16: 最大传染回合数
+- tauForTest::Int16: test变量，用于打断点
 """
 
 ##########################################
@@ -32,12 +32,15 @@ foldernamePrefixOfExperimentsData = "test"; # 手动设置实验数据文件夹�
 rootDirOfExperimentsData = projectdir() * "/data/sims/"; # 手动设置实验数据文件夹根路径。默认projectdir( * "/data/sims/"；
 folderpathOfExperimentsData = ""; # 主文件夹路径之于实验。将由函数生成；
 tau = 0; # 设置初始回合计次为0；
-process_name = ""; # 过程名称；
-is_end_round = false; # 结束回合判断；
-max_num_tau = 100; # 最大回合数；
-num_bank = 5; # 银行个数；
-num_assets = 3; # 资产种类数；
-test_tau = 4 # test变量，用于打断点。相关语句：env[:tau]>=env[:test_tau]；
+stage = "t0 未开始阶段"; # 设置当前阶段；
+id_experiment = 1; # 设置当前实验组编号；
+processName = ""; # 过程名称；
+isEndRound = false; # 结束回合判断；
+maxNumOfTau = 100; # 最大回合数；
+numBank = 5; # 银行个数；
+numAssets = 3; # 资产种类数；
+tauForTest = 4 # test变量，用于打断点。相关语句：env[:tau]>=env[:tauForTest]；
+isTest = true # 是否处于测试状态
 
 
 ###########################

@@ -18,12 +18,15 @@ env = @dict(
   rootDirOfExperimentsData,
   folderpathOfExperimentsData,
   tau,
-  process_name,
-  is_end_round,
-  max_num_tau,
-  num_bank,
-  num_assets,
-  test_tau
+  stage,
+  id_experiment,
+  processName,
+  isEndRound,
+  maxNumOfTau,
+  numBank,
+  numAssets,
+  tauForTest,
+  isTest
 )
 
 # env = environmentVariables # 别名

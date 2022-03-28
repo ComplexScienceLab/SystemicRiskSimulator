@@ -7,7 +7,9 @@
 "函数：银行外部违约损失传染"
 function exBank_insolvent_contagion!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 银行外部违约损失传染阶段
-    BB.Shock_P_def_t[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_def_t][para[:idx_Shock_exBI_t]] # 生成厂商贷款违约损失冲击
+    env[:stage] = "t1 银行外部违约损失传染阶段"
+    @test println("阶段：$(env[:stage])")
+    BB.Shock_P_def_t[para[:list_Shock_exBI_t]] = para[:Shock_exBI_def_t][para[:list_Shock_exBI_t]] # 生成厂商贷款违约损失冲击
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_P_def_t") # 厂商贷款违约损失冲击传导至银行内资产冲击
 
     return BB, BI
@@ -17,6 +19,8 @@ end # function
 "函数：银行外部违约损失冲击"
 function exBank_insolvent_shock!(BB::BankCommercial, BI::BankInterbank, BB_t1::BankCommercial, BI_t1::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 银行外部违约损失冲击阶段
+    env[:stage] = "t2 银行外部违约损失冲击阶段"
+    @test println("阶段：$(env[:stage])")
     BB.A_P[b] -= BB.Shock_def_t[b] # 银行之非银行间资产变动
     update_B_balanceSheet!(BB, BI, b, ib; byWay = "A_P")
     update_B_state!(BB, BI; to = "insolvent", from = "healthy")
@@ -43,6 +47,8 @@ end # function
 "函数：资不抵债银行间违约损失传染"
 function interBank_insolvent_contagion!(BB::BankCommercial, BI::BankInterbank, BB_t1::BankCommercial, BI_t1::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 资不抵债银行间违约损失传染阶段
+    env[:stage] = "t1 资不抵债银行间违约损失传染阶段"
+    @test println("阶段：$(env[:stage])")
     for i in findall(BB.isv) # 资不抵债银行违约，导致其对各债权银行负债变动，造成银行间违约冲击
         @. BI.Shock_BI_def[BI.cre[i], i] = BI.Z_BI[i, BI.cre[i]] * BB.Shock_BI_def_s[i] / BB_t1.Z_BI_all[i]
         BI.Z_BI[i, BI.cre[i]] -= BI.Shock_BI_def[BI.cre[i], i]
@@ -58,6 +64,9 @@ end # function
 "函数：资不抵债银行间违约损失冲击"
 function interBank_insolvent_shock!(BB::BankCommercial, BI::BankInterbank, BB_t1::BankCommercial, BI_t1::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 资不抵债银行间违约损失冲击阶段
+    env[:stage] = "t2 资不抵债银行间违约损失冲击阶段"
+    @test println("阶段：$(env[:stage])")
+    
     @. BB.A_BI_all[b] = max(BB.A_BI_all[b] - BB.Shock_def_t[b], 0.0) # 银行之银行间资产变动
     update_B_balanceSheet!(BB, BI, b, ib; byWay = "A_BI_all")
     @. BB.E_all[BB.on] = max(BB.E_all[BB.on] - BB.Shock_def_t[BB.on], 0.0) # 银行之所有者权益变动
@@ -79,7 +88,9 @@ end # function
 "函数：银行外部挤兑流动冲击。考虑情况：存在部分债务银行之部分债务因为流动性短缺从而无法偿还。"
 function exBank_illiquity_shock!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict) #= BB_t1::BankCommercial, BI_t1::BankInterbank,  =#
     ## # 银行外部挤兑流动冲击阶段
-    BB.Shock_D_run_t[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_run_t][para[:idx_Shock_exBI_t]] # 生成居民存款挤兑流动冲击
+    env[:stage] = "t1 银行外部挤兑流动冲击阶段"
+    @test println("阶段：$(env[:stage])")
+    BB.Shock_D_run_t[para[:list_Shock_exBI_t]] = para[:Shock_exBI_run_t][para[:list_Shock_exBI_t]] # 生成居民存款挤兑流动冲击
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_D_run_t") # 居民存款挤兑流动冲击传导至银行内负债冲击
     update_B_state!(BB, BI; to = "illiquity", from = "healthy") # 更新各银行之状态，从健康到流动性短缺
 
@@ -90,6 +101,8 @@ end # function
 "函数：流动性短缺银行间挤兑流动传染冲击。考虑情况：存在部分债务银行之部分债务因为流动性短缺从而无法偿还。"
 function interBank_illiquity_contagion_shock!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 流动性短缺银行间挤兑流动传染冲击
+    env[:stage] = "t1 流动性短缺银行间挤兑流动传染冲击阶段"
+    @test println("阶段：$(env[:stage])")
 
     ##BUG 方式一：每个银行只有一次分配传染冲击之行为。
     i_nas = (BB.ilq .& .!BB.isAllocatedShock) # 临时设置示性变量，表示银行其未分配传染冲击。暨每个银行只有一次分配传染冲击之行为。
@@ -120,6 +133,8 @@ end # function
 "函数：流动性短缺银行间挤兑流动分配借贷流量阶段"
 function interBank_illiquity_allocate!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
+    env[:stage] = "t2 银行间挤兑流动分配借贷流量阶段"
+    @test println("阶段：$(env[:stage])")
 
     update_B_state!(BB, BI; to = "needed collect A_P", from = "any")
     update_B_state!(BB, BI; to = "enabled collect A_P", from = "any")
@@ -146,6 +161,8 @@ end # function
 "函数：流动性短缺银行间挤兑流动执行借贷流量阶段"
 function interBank_illiquity_repay!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
+    env[:stage] = "t3 银行间挤兑流动执行借贷流量阶段"
+    @test println("阶段：$(env[:stage])")
 
     BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b] = transfer_B_capital_reverse(BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b], BB.Li_P[b]) # 流动资产变动，因收回厂商贷款
     # @. BB.A_Q[b] *= (1 - para[:kappa_A_P]) #HACK 暂时还不用！
@@ -181,7 +198,9 @@ end # function
 #TODO"函数：外生破产银行间挤兑流动传染"
 function exBank_bankrupt_contagion!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 外生破产银行间挤兑流动传染
-    BB.br[para[:idx_Shock_exBI_t]] = para[:Shock_exBI_t][para[:idx_Shock_exBI_t]]
+    env[:stage] = "t1 外生破产银行间挤兑流动冲击阶段"
+    @test println("阶段：$(env[:stage])")
+    BB.br[para[:list_Shock_exBI_t]] = para[:Shock_exBI_t][para[:list_Shock_exBI_t]]
     update_B_state!(BB, BI; to = "bankrupt", from = "any")
 
     return BB, BI
@@ -203,7 +222,8 @@ end # function
 "过程：破产银行间挤兑流动传染冲击"
 function interBank_bankrupt_contagion_shock!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
     ## # 破产银行间挤兑流动传染冲击
-
+    env[:stage] = "t1 破产银行间挤兑流动传染冲击阶段"
+    @test println("阶段：$(env[:stage])")
     update_B_state!(BB, BI; to = "bankrupt", from = "any")
     BB.Shock_BI_run_br_s[BB.br] = BB.A_BI_all[BB.br] # 计算应银行内冲击传导至银行间传染冲击
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_BI_run_br_s") # 更新挤兑流动冲击源头变量Shock_run_s
