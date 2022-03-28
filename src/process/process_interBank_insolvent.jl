@@ -7,22 +7,18 @@
 "函数：过程之于资不抵债银行间违约损失传染冲击"
 function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_t1::BankCommercial, BI_t1::BankInterbank, para::Dict, env::Dict)
     ## 过程：资不抵债银行间违约损失传染冲击
-    env[:process_name] = "资不抵债银行间违约损失传染冲击"
-    println("过程：", env[:process_name])
+    env[:processName] = "资不抵债银行间违约损失传染冲击"
+    @test println("过程：$(env[:processName])")
 
-    while (env[:tau] <= env[:max_num_tau] .&& env[:is_end_round] != true)
+    while (env[:tau] <= env[:maxNumOfTau] .&& env[:isEndRound] != true)
 
         env[:tau] += 1 # 传染回合累加一
-        println("开始回合", env[:tau])
-
-        ## # 初始阶段
-        println("t0 初始阶段")
+        @test println("开始回合$(env[:tau])")
 
         b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
 
         ## # 资不抵债银行间违约损失传染阶段
-        println("t1 资不抵债银行间违约损失传染阶段")
         BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)
 
 
@@ -32,12 +28,8 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
 
 
         ## # 资不抵债银行间违约损失冲击阶段
-        println("t2 资不抵债银行间违约损失冲击阶段")
         BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
 
-
-        ## # 尾声阶段
-        println("t3 尾声阶段")
 
         # update_B_state!(BB, BI; to = "bankrupt", from = "insolvent") # 更新各银行之状态到破产
 
@@ -47,7 +39,7 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
 
         ## 判定本回合是否有银行转移状态，如果无则后续处理然后结束本轮，如果有则继续处理。
         if BB.isv == BB_t1.isv
-            env[:is_end_round] = true
+            env[:isEndRound] = true
             break
         end
 

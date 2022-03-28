@@ -6,7 +6,7 @@
 
 ##########################################
 #状态/开发
-####################.######################
+##########################################
 
 using DrWatson
 @quickactivate "SystemicRisk" # 快速激活本项目
@@ -30,12 +30,11 @@ env = setExperimentsFolders(env)
 
 ## 主循环
 for (i, para) in enumerate(list_combinationOfPara)
-    println("第",i,"组实验开始：")
-    println("相关实验参数：")
-    println(para)
-    # makesim(BB, BI, para, env)
+    env[:id_experiment] = i
+    @test println("第$(env[:id_experiment])组实验开始：")
+    # @test println("相关实验参数：\n $(para)")
     makesim(para, env)
-    println("第",i,"组实验结束。\n")
+    @test println("第$(env[:id_experiment])组实验结束。\n")
 end # for
 
 

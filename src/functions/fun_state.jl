@@ -287,8 +287,8 @@ function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Ve
     else
         throw(DomainError(byWay, "关键词取值错误！"))
     end
-    listOfRelationInStateOfBanks = [[] for i in 1: env[:num_bank]]
-    for i in 1: env[:num_bank]
+    listOfRelationInStateOfBanks = [[] for i in 1: env[:numBank]]
+    for i in 1: env[:numBank]
         listOfRelationInStateOfBanks[i] = findall(isExposure[i, : ]) # 获取对应状态下的债权或者债务关系的银行列表
     end
     return listOfRelationInStateOfBanks
@@ -355,7 +355,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::Str
             interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
             interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
         elseif from == "off"
-            println("无须更新！")
+            @test println("无须更新！")
         else
             throw(DomainError(byWay, "关键词from取值错误！"))
         end
@@ -365,7 +365,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::Str
             update_isInsolvent_from_isHealthy!(bank, interbank)
             update_isIlliquity_from_isHealthy!(bank, interbank)
         elseif from == "healthy"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "insolvent"
             calc_isHealthy_from_isInsolvent!(bank, interbank)
             calc_isInsolvent_from_isHealthy!(bank, interbank)
@@ -373,9 +373,9 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::Str
             calc_isHealthy_from_isIlliquity!(bank, interbank)
             update_isIlliquity_from_isHealthy!(bank, interbank)
         elseif from == "bankrupt"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "off"
-            println("无须更新！")
+            @test println("无须更新！")
         else
             throw(DomainError(byWay, "关键词from取值错误！"))
         end
@@ -387,17 +387,17 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::Str
             calc_isInsolvent_from_isHealthy!(bank, interbank)
             update_isHealthy_from_isInsolvent!(bank, interbank)
         elseif from == "insolvent"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "illiquity"
             # calc_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
             # calc_isHealthy_from_isIlliquity!(bank, interbank) # 错误，可以删除！
             # calc_isHealthy_from_isInsolvent!(bank, interbank) # 错误，可以删除！
             # calc_isInsolvent_from_isHealthy!(bank, interbank) # 错误，可以删除！
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "bankrupt"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "off"
-            println("无须更新！")
+            @test println("无须更新！")
         else
             throw(DomainError(byWay, "关键词from取值错误！"))
         end
@@ -412,13 +412,13 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::Str
             # calc_isHealthy_from_isInsolvent!(bank, interbank) # 错误，可以删除！
             # update_isInsolvent_from_isHealthy!(bank, interbank) # 错误，可以删除！
             # update_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "illiquity"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "bankrupt"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "off"
-            println("无须更新！")
+            @test println("无须更新！")
         else
             throw(DomainError(byWay, "关键词from取值错误！"))
         end
@@ -437,9 +437,9 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::Str
         elseif from == "illiquity"
             calc_isBankrupt_from_isIlliquity!(bank, interbank)
         elseif from == "bankrupt"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "off"
-            println("无须更新！")
+            @test println("无须更新！")
         else
             throw(DomainError(byWay, "关键词from取值错误！"))
         end
@@ -448,11 +448,11 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::Str
             calc_isOff!(bank, interbank)
             update_isOn_from_isOff!(bank, interbank)
         elseif from == "healthy"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "insolvent"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "illiquity"
-            println("无须更新！")
+            @test println("无须更新！")
         elseif from == "bankrupt"
             calc_isOff_from_isBankrupt!(bank, interbank)
             update_isOn_from_isOff!(bank, interbank)
@@ -460,7 +460,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::Str
             interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
             interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
         elseif from == "off"
-            println("无须更新！")
+            @test println("无须更新！")
         else
             throw(DomainError(byWay, "关键词from取值错误！"))
         end

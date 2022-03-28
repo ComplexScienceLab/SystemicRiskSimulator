@@ -9,10 +9,10 @@
 
 ## 生成字典变量
 setOfValuesOfParameterVariables = @dict(
-    model,
+    modelName,
     Shock_exBI_def_t,
     Shock_exBI_run_t,
-    idx_Shock_exBI_t,
+    list_Shock_exBI_t,
     kappa_A_P,
     kappa_BI
 )

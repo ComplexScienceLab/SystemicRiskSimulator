@@ -11,7 +11,7 @@
 ######### 设置参数变量 #########################################
 
 ## 指定待运行的模型
-model = "model_BI1111"
+modelName = "model_BI1111"
 
 ## 外生违约损失冲击
 Shock_exBI_def_t = [
@@ -26,7 +26,7 @@ Shock_exBI_run_t = [
 ]
 
 ## 指定遭受初始外生冲击的银行示性列表
-idx_Shock_exBI_t=[
+list_Shock_exBI_t=[
     [true, false, false, false, false]
 ]
 

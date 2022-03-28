@@ -30,6 +30,7 @@ include("define/define_parameterVariables.jl")
 include("define/define_consts.jl")
 
 ## 集成功能函数文件
+include("functions/fun_tools.jl")
 include("functions/fun_balanceSheet.jl")
 include("functions/fun_state.jl")
 include("functions/fun_shock.jl")
@@ -39,7 +40,6 @@ include("functions/fun_agentModel.jl")
 
 ## 集成初始化函数文件
 include("initialization/fun_initVariables.jl")
-include("initialization/fun_setFolders.jl")
 
 ## 集成模块函数文件
 include("module/modules_contagion_and_shock.jl")

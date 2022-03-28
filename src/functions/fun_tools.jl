@@ -1,6 +1,6 @@
-"函数区：设置实验文件夹"
+"函数区：工具集"
 
-## 函数区：设置实验文件夹
+## 函数区：工具集
 
 ##########################################
 #状态/开发
@@ -35,5 +35,17 @@ function setExperimentsFolders(env::Dict; isDatetime::Bool = true)
     env[:folderpathOfExperimentsData] = folderdir * foldername
 
     mkpath(env[:folderpathOfExperimentsData]) # 创建文件夹
-return env
+    return env
 end # functioin
+
+
+
+"宏：当测试是使用"
+macro test(content)
+    if env[:isTest]
+        # return content
+        # return :(content)
+        # return $(content)
+        return :($(content))
+    end
+end
