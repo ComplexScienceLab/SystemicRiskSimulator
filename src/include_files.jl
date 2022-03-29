@@ -37,6 +37,7 @@ include("functions/fun_shock.jl")
 include("functions/fun_loss.jl")
 include("functions/fun_transfer.jl")
 include("functions/fun_agentModel.jl")
+include("functions/fun_process.jl")
 
 ## 集成初始化函数文件
 include("initialization/fun_initVariables.jl")

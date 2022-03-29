@@ -16,7 +16,7 @@
 - isEndRound::Bool: 结束回合判断
 - numBank::Int16: 银行个数
 - numAssets::Int16: 资产总类数
-- maxNumOfTau::Int16: 最大传染回合数
+- maxNumOfTau::Int16: 最大回合数
 - tauForTest::Int16: test变量，用于打断点
 """
 
@@ -35,12 +35,18 @@ rootDirOfExperimentsData = projectdir() * "/data/sims/"; # 手动设置实验数
 folderpathOfExperimentsData = ""; # 主文件夹路径之于实验。将由函数生成；
 
 
+
+stepSize = 10; # 设置步进跨度；
 maxNumOfTau = 100; # 单个过程最大回合数；
 numBank = 5; # 银行个数；
 numAssets = 3; # 资产种类数；
 
+
+
 tauForTest = 4 # test变量，用于打断点。相关语句：env[:tau]>=env[:tauForTest]；
 isTest = true # 是否处于测试状态
+
+
 
 ###########################
 
