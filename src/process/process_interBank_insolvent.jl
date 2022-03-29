@@ -22,10 +22,10 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
         # env[:stageName] = "t1 资不抵债银行间违约损失传染阶段"
         # @test println("阶段：$(env[:stageName])")
         # @run_stage("BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)") #HACK 暂时用不了
-        if env[:stageName] == env[:savedStageName]
+        if (env[:stateOfOperation] == :stepping && env[:stageName] == env[:savedStageName])
             BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)
             env[:step] += 1
-            if env[:step] % env[:stepSize] == 0
+            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
                 env[:savedProcessName] = env[:processName]
                 env[:savedStageName] = env[:stageName]
                 env[:isEndStep] = true
@@ -43,10 +43,10 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
         # env[:stageName] = "t2 资不抵债银行间违约损失冲击阶段"
         # @test println("阶段：$(env[:stageName])")
         # @run_stage("BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)") #HACK 暂时用不了
-        if env[:stageName] == env[:savedStageName]
+        if (env[:stateOfOperation] == :stepping && env[:stageName] == env[:savedStageName])
             BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
             env[:step] += 1
-            if env[:step] % env[:stepSize] == 0
+            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
                 env[:savedProcessName] = env[:processName]
                 env[:savedStageName] = env[:stageName]
                 env[:isEndStep] = true

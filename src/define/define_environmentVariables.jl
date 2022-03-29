@@ -35,6 +35,8 @@ env = @dict(
   isEndRound,
   isEndProcess,
   isEndModel,
+  isEndExperiment,
+  stateOfOperation,
 )
 
 # env = environmentVariables # 别名

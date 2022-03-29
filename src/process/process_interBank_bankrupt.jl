@@ -27,10 +27,10 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
         # env[:stageName] = "t1 破产银行间挤兑流动传染冲击阶段"
         # @test println("阶段：$(env[:stageName])")
         # @run_stage("BB, BI = interBank_bankrupt_contagion_shock!(BB, BI, b, ib, para)") #HACK 暂时用不了
-        if env[:stageName] == env[:savedStageName]
+        if (env[:stateOfOperation] == :stepping && env[:stageName] == env[:savedStageName])
             BB, BI = interBank_bankrupt_contagion_shock!(BB, BI, b, ib, para)
             env[:step] += 1
-            if env[:step] % env[:stepSize] == 0
+            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
                 env[:savedProcessName] = env[:processName]
                 env[:savedStageName] = env[:stageName]
                 env[:isEndStep] = true
@@ -42,10 +42,10 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
         # env[:stageName] = "t2 银行间挤兑流动分配借贷流量阶段"
         # @test println("阶段：$(env[:stageName])")
         # @run_stage("BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)") #HACK 暂时用不了
-        if env[:stageName] == env[:savedStageName]
+        if (env[:stateOfOperation] == :stepping && env[:stageName] == env[:savedStageName])
             BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
             env[:step] += 1
-            if env[:step] % env[:stepSize] == 0
+            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
                 env[:savedProcessName] = env[:processName]
                 env[:savedStageName] = env[:stageName]
                 env[:isEndStep] = true
@@ -57,10 +57,10 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
         # env[:stageName] = "t3 银行间挤兑流动执行借贷流量阶段"
         # @test println("阶段：$(env[:stageName])")
         # @run_stage("BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)") #HACK 暂时用不了
-        if env[:stageName] == env[:savedStageName]
+        if (env[:stateOfOperation] == :stepping && env[:stageName] == env[:savedStageName])
             BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
             env[:step] += 1
-            if env[:step] % env[:stepSize] == 0
+            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
                 env[:savedProcessName] = env[:processName]
                 env[:savedStageName] = env[:stageName]
                 env[:isEndStep] = true

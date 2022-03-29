@@ -42,13 +42,13 @@ end # macro
 - stageContent::String: 待运行的阶段之表达式字符串；
 """
 function run_stage!(content::String)
-    if env[:stageName] == env[:savedStageName]
+    if (env[:stateOfOperation] == :stepping && env[:stageName] == env[:savedStageName])
         env[:stageName] = "t1 流动性短缺银行间挤兑流动传染冲击阶段"
         @test println("阶段：$(env[:stageName])")
         expr = Meta.parse(content)
         eval(expr) #FIXME
         env[:step] += 1
-        if env[:step] % env[:stepSize] == 0
+        if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
             env[:savedProcessName] = env[:processName]
             env[:savedStageName] = env[:stageName]
             env[:isEndStep] = true
@@ -60,10 +60,10 @@ end
 "#TODO宏：运行当前阶段"#HACK不好把握，还不能用
 macro run_stage(content)
     expr = quote
-        if env[:stageName] == env[:savedStageName]
+        if (env[:stateOfOperation] == :stepping && env[:stageName] == env[:savedStageName])
             :(content)
             env[:step] += 1
-            if env[:step] % env[:stepSize] == 0
+            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
                 env[:savedProcessName] = env[:processName]
                 env[:savedStageName] = env[:stageName]
                 env[:isEndStep] = true
