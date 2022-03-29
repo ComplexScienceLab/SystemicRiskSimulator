@@ -23,6 +23,8 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     ib = TypeState{2}((BB.on .| BB.off) .& (BB.on .| BB.off)') # 临时设置BI示性变量
 
     ## # 银行外部违约损失传染阶段
+    env[:stageName] = "t1 银行外部违约损失传染阶段"
+    @test println("阶段：$(env[:stageName])")
     BB, BI = exBank_insolvent_contagion!(BB, BI, b, ib, para)
 
 
@@ -32,6 +34,8 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
 
 
     ## # 银行外部违约损失冲击阶段
+    env[:stageName] = "t2 银行外部违约损失冲击阶段"
+    @test println("阶段：$(env[:stageName])")
     BB, BI, BB_t1, BI_t1 = exBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
 
 

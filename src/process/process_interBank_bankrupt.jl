@@ -24,12 +24,18 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
         Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 破产银行间挤兑流动传染冲击阶段
+        env[:stageName] = "t1 破产银行间挤兑流动传染冲击阶段"
+        @test println("阶段：$(env[:stageName])")
         BB, BI = interBank_bankrupt_contagion_shock!(BB, BI, b, ib, para)
 
         ## # 破产银行间挤兑流动分配借贷流量阶段
+        env[:stageName] = "t2 银行间挤兑流动分配借贷流量阶段"
+        @test println("阶段：$(env[:stageName])")
         BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
 
         ## # 破产银行间挤兑流动执行借贷流量阶段
+        env[:stageName] = "t3 银行间挤兑流动执行借贷流量阶段"
+        @test println("阶段：$(env[:stageName])")
         BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
 
         ## TODO存储数据
