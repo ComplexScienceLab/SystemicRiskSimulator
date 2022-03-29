@@ -30,11 +30,21 @@ env = setExperimentsFolders(env)
 
 ## 主循环
 for (i, para) in enumerate(list_combinationOfPara)
+
+    
     env[:id_experiment] = i
-    @test println("第$(env[:id_experiment])组实验开始：")
+    
+    # 重置环境变量
+    env[:step] = 0
+    env[:processName] = ""
+    env[:savedProcessName] = ""
+    env[:stageName] = ""
+    env[:savedStageName] = ""
+
+    @test println("实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
     # @test println("相关实验参数：\n $(para)")
     makesim(para, env)
-    @test println("第$(env[:id_experiment])组实验结束。\n")
+    @test println("本次实验结束，还剩下$(length(list_combinationOfPara)-env[:id_experiment])个实验。\n")
 end # for
 
 

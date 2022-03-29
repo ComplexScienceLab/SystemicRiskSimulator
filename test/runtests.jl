@@ -409,15 +409,29 @@ using DrWatson
 #     end
 # )
 
-
-projectdir()
-folderpath=projectdir()*"/data/sims/default"
-mkpath(folderpath)
-
+env = Dict()
+env[:processName] = "a"
+env[:savedProcessName] = "a"
 
 
+function add(x, y)
+    return x + y
+end
 
+macro run_process(content)
+    return quote
+        if x != y
+            content
+        end
+    end
+end
 
+function fun_runprocess(x, y)
+    @run_process :(z = add(x, y))
+    return z
+end
 
-
-
+input1 = 3
+input2 = 4
+fun_runprocess(input1, input2)
+println(z)

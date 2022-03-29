@@ -11,10 +11,10 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         env[:processName] = "外生破产银行间挤兑流动传染冲击"
         @test println("过程：$(env[:processName])")
 
-        env[:tau] = 0 # 初始化传染回合
+        env[:tau] = 0 # 初始化回合
         env[:isEndRound] = false # 初始化结束判断
 
-        env[:tau] += 1 # 传染回合累加一
+        env[:tau] += 1 # 回合累加一
         @test println("开始回合$(env[:tau])")
 
         b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
@@ -24,15 +24,28 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 外生破产银行间挤兑流动冲击阶段
-        BB, BI = exBank_bankrupt_shock!(BB, BI, b, ib, para)
+        # @run_stage("BB, BI = exBank_bankrupt_shock!(BB, BI, b, ib, para)") #HACK 暂时用不了
+        if env[:stageName] == env[:savedStageName]
+            BB, BI = exBank_bankrupt_shock!(BB, BI, b, ib, para)
+            env[:step] += 1
+            if env[:step] % env[:stepSize] == 0
+                env[:savedProcessName] = env[:processName]
+                env[:savedStageName] = env[:stageName]
+                env[:isEndStep] = true
+                # break
+            end
+        end
 
         ## TODO存储数据
         # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
         # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
-        ## 判定本回合是否有银行转移状态，如果无则后续处理然后结束本轮，如果有则继续处理。
+        ## 判定是否结束循环#FIXME
         if BB.Shock_t == Shock_t_t1
             env[:isEndProcess] = true
+        end
+        if (env[:isEndStep] .&& env[:isEndProcess])
+            env[:isEndRound] = true
         end
 
         return BB, BI, env
