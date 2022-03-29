@@ -26,24 +26,30 @@ list_combinationOfPara = dict_list(setOfValuesOfParameterVariables) # 完整名�
 ## 创建主文件夹用于本批次实验
 env = setExperimentsFolders(env)
 
-## 初始化银行变量
+## 初始化参数变量
+_, para = enumerate(list_combinationOfPara)
 
 ## 主循环
-for (i, para) in enumerate(list_combinationOfPara)
-
-    
-    env[:id_experiment] = i
-    
+for (i, p) in enumerate(list_combinationOfPara)
+    env[:id_experiment] = i # 设定当前实验编号
+    para = copy(p)
     # 重置环境变量
     env[:step] = 0
     env[:processName] = ""
     env[:savedProcessName] = ""
     env[:stageName] = ""
     env[:savedStageName] = ""
+    env[:isEndStep] = false
+    env[:isEndStage] = false
+    env[:isEndRound] = false
+    env[:isEndProcess] = false
+    env[:isEndModel] = false
+    env[:isEndExperiment] = false
+    env[:isLoading] = false
 
     @test println("实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
-    # @test println("相关实验参数：\n $(para)")
-    makesim(para, env)
+    @test println("相关实验参数：$(para)") #FIXME 这个输出是错误的
+    makesim(p, env)
     @test println("本次实验结束，还剩下$(length(list_combinationOfPara)-env[:id_experiment])个实验。\n")
 end # for
 

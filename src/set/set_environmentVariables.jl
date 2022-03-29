@@ -66,6 +66,8 @@ isEndStage = false; # 结束阶段判断；
 isEndRound = false; # 结束回合判断；
 isEndProcess = false; # 结束过程判断；
 isEndModel = false; # 结束模型判断；
+isEndExperiment = false; # 结束当前的一次实验判断；
+stateOfOperation = :stepping; # 设置当前程序运作状态。状态一共有4种：`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:running`：运行状态；
 
 
 

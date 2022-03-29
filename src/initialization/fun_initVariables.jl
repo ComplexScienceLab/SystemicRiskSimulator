@@ -11,14 +11,6 @@
 
 
 
-
-## 定义变量
-env[:tau] = 1 # 初始化回合编号
-
-
-
-
-
 "仅初始化银行变量"
 function init_B_variables_only()
     ## 初始化商业银行实例
