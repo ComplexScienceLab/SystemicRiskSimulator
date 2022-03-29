@@ -10,7 +10,7 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
     env[:processName] = "资不抵债银行间违约损失传染冲击"
     @test println("过程：$(env[:processName])")
 
-    while (env[:tau] <= env[:maxNumOfTau] .&& env[:isEndRound] != true)
+    while (env[:isEndRound] != true .&& env[:isEndProcess] != true)
 
         env[:tau] += 1 # 传染回合累加一
         @test println("开始回合$(env[:tau])")
