@@ -12,7 +12,7 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
 
     env[:isEndRound] = false # 初始化结束判断
 
-    while (env[:tau] <= env[:maxNumOfTau] .&& env[:isEndRound] != true)
+    while (env[:isEndRound] != true .&& env[:isEndProcess] != true)
 
         env[:tau] += 1 # 传染回合累加一
         @test println("开始回合$(env[:tau])")
