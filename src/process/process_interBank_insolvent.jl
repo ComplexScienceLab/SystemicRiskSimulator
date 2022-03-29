@@ -19,6 +19,8 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
 
         ## # 资不抵债银行间违约损失传染阶段
+        env[:stageName] = "t1 资不抵债银行间违约损失传染阶段"
+        @test println("阶段：$(env[:stageName])")
         BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)
 
 
@@ -28,6 +30,8 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
 
 
         ## # 资不抵债银行间违约损失冲击阶段
+        env[:stageName] = "t2 资不抵债银行间违约损失冲击阶段"
+        @test println("阶段：$(env[:stageName])")
         BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
 
 

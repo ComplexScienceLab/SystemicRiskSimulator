@@ -49,8 +49,10 @@ isTest = true # 是否处于测试状态
 
 step = 0; # 设置当前步伐值为0。不要改动
 tau = 0; # 设置初始回合计次为0；
-stageName = ""; # 设置当前阶段名称；
-processName = ""; # 过程名称；
+stageName = ""; # 设置运行的阶段之名称；
+savedStageName = ""; # 设置存储的当前阶段之名称；
+processName = ""; # 设置运行的过程之名称；
+savedProcessName = ""; # 设置存储的过程之名称；
 id_experiment = 1; # 设置当前实验组编号；
 
 isEndStep = false; # 结束步进判断；
