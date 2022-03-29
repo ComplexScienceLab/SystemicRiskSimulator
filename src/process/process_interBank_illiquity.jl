@@ -23,30 +23,45 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 流动性短缺银行间挤兑流动传染冲击阶段
-        BB, BI = interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)
-
-        env[:step] += 1
-        if env[:step] % env[:stepSize] == 0
-            env[:isEndStep] = true
-            break
+        if env[:stageName] == env[:savedStageName]
+            env[:stageName] = "t1 流动性短缺银行间挤兑流动传染冲击阶段"
+            @test println("阶段：$(env[:stageName])")
+            BB, BI = interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)
+            env[:step] += 1
+            if env[:step] % env[:stepSize] == 0
+                env[:savedProcessName] = env[:processName]
+                env[:savedStageName] = env[:stageName]
+                env[:isEndStep] = true
+                break
+            end
         end
 
         ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
-        BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
-
-        env[:step] += 1
-        if env[:step] % env[:stepSize] == 0
-            env[:isEndStep] = true
-            break
+        if env[:stageName] == env[:savedStageName]
+            env[:stageName] = "t2 银行间挤兑流动分配借贷流量阶段"
+            @test println("阶段：$(env[:stageName])")
+            BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
+            env[:step] += 1
+            if env[:step] % env[:stepSize] == 0
+                env[:savedProcessName] = env[:processName]
+                env[:savedStageName] = env[:stageName]
+                env[:isEndStep] = true
+                break
+            end
         end
 
         ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
-        BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
-
-        env[:step] += 1
-        if env[:step] % env[:stepSize] == 0
-            env[:isEndStep] = true
-            break
+        if env[:stageName] == env[:savedStageName]
+            env[:stageName] = "t3 银行间挤兑流动执行借贷流量阶段"
+            @test println("阶段：$(env[:stageName])")
+            BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
+            env[:step] += 1
+            if env[:step] % env[:stepSize] == 0
+                env[:savedProcessName] = env[:processName]
+                env[:savedStageName] = env[:stageName]
+                env[:isEndStep] = true
+                break
+            end
         end
 
         ## TODO存储数据
@@ -59,8 +74,8 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         end
 
 
-        if (env[:isEndProcess].&&env[:isEndStage])
-            
+        if (env[:isEndProcess] .&& env[:isEndStage])
+
         end
 
     end # while # 过程：流动性短缺银行间挤兑流动传染冲击

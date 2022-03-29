@@ -40,7 +40,7 @@ end # functioin
 
 
 
-"宏：当测试是使用"
+"宏：当测试时使用"
 macro test(content)
     if env[:isTest]
         # return content
@@ -49,3 +49,38 @@ macro test(content)
         return :($(content))
     end
 end
+
+
+"#TODO宏：运行过程"
+macro run_process(content)
+    if env[:processName] == saveprocess[:savedProcessName]
+        return :(content)
+    end
+end
+
+"函数：运行过程"
+function run_process(processName::String,processContent::Expr)
+    if env[:processName] == saveprocess[:savedProcessName]
+        processContent
+    end
+end
+
+
+"#TODO宏：运行阶段"
+macro run_stage(content)
+    expr = quote
+        if env[:stageName] == env[:savedStageName]
+            env[:stageName] = "t1 流动性短缺银行间挤兑流动传染冲击阶段"
+            @test println("阶段：$(env[:stageName])")
+            content
+            env[:step] += 1
+            if env[:step] % env[:stepSize] == 0
+                env[:savedProcessName] = env[:processName]
+                env[:savedStageName] = env[:stageName]
+                env[:isEndStep] = true
+                break
+            end
+        end
+    end # quote
+    return :(expr)
+end # macro

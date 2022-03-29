@@ -24,6 +24,8 @@ function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::
     Shock_t_t1 = deepcopy(BB.Shock_t)
 
     ## # 银行外部挤兑流动冲击阶段
+    env[:stageName] = "t1 银行外部挤兑流动冲击阶段"
+    @test println("阶段：$(env[:stageName])")
     BB, BI = exBank_illiquity_shock!(BB, BI, b, ib, para)
 
     ## TODO存储数据

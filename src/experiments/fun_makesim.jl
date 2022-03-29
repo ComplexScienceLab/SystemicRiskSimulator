@@ -9,7 +9,7 @@
 "函数：运行一次仿真"
 function makesim(para::Dict, env::Dict)
 
-    # 写入agent运行步骤在这
+    ## 初始化agent及其模型
     systemicRiskAgent, systemicRiskModel, BB_tau_0, BI_tau_0, BB_tau, BI_tau = init_systemicRiskAgent!(para, env)
     # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)
 
