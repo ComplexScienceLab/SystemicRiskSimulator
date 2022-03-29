@@ -17,7 +17,7 @@ function makesim(para::Dict, env::Dict)
     systemicRiskAgent_step!(systemicRiskAgent, systemicRiskModel, para, env)
 
     ##BUG 测试Agents框架
-    # step!(systemicRiskModel, systemicRiskAgent_step!, 1)
+    # step!(systemicRiskModel, systemicRiskAgent_step!, env[:stepSize])
     # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, 1)
     # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
     # wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "jld2", connector = "|", equals = "=")), BB) #FIXME

@@ -25,10 +25,10 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
 
         ## # 外生破产银行间挤兑流动冲击阶段
         # @run_stage("BB, BI = exBank_bankrupt_shock!(BB, BI, b, ib, para)") #HACK 暂时用不了
-        if env[:stageName] == env[:savedStageName]
+        if (env[:stateOfOperation] == :stepping && env[:stageName] == env[:savedStageName])
             BB, BI = exBank_bankrupt_shock!(BB, BI, b, ib, para)
             env[:step] += 1
-            if env[:step] % env[:stepSize] == 0
+            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
                 env[:savedProcessName] = env[:processName]
                 env[:savedStageName] = env[:stageName]
                 env[:isEndStep] = true
