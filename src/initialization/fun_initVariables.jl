@@ -13,7 +13,7 @@
 
 
 ## 定义变量
-env[:tau] = 1 # 初始化传染回合编号
+env[:tau] = 1 # 初始化回合编号
 
 
 
@@ -291,22 +291,22 @@ end
 function init_B_and_BI(; init_method::String)
     if init_method == "only init"
         BB, BI = init_B_variables_only()
-        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带传染回合变量的商业银行实例数组
-        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带传染回合变量的银行间市场实例数组
+        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
+        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
     elseif init_method == "randomly"
         BB, BI = init_B_variables_randomly()
-        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带传染回合变量的商业银行实例数组
-        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带传染回合变量的银行间市场实例数组
+        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
+        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
     elseif init_method == "import data"
         BB, BI = init_B_variables_only()
-        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带传染回合变量的商业银行实例数组
-        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带传染回合变量的银行间市场实例数组
+        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
+        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
         ## 导入数据以初始化银行变量
         BB, BI, BB_tau, BI_tau = init_B_variables_importData()
     elseif init_method == "set manually"
         BB, BI = initVariables_setManually() # 手动设置以初始化银行变量
-        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带传染回合变量的商业银行实例数组
-        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带传染回合变量的银行间市场实例数组
+        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
+        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
     else
         throw(DomainError(init_method, "关键词取值错误！"))
     end

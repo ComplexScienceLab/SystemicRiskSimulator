@@ -17,6 +17,7 @@ env = @dict(
   foldernamePrefixOfExperimentsData,
   rootDirOfExperimentsData,
   folderpathOfExperimentsData,
+  stepSize,
   maxNumOfTau,
   numBank,
   numAssets,
@@ -33,7 +34,7 @@ env = @dict(
   isEndStage,
   isEndRound,
   isEndProcess,
-  isEndModel
+  isEndModel,
 )
 
 # env = environmentVariables # 别名
