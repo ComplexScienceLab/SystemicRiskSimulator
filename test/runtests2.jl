@@ -12,20 +12,22 @@ function add(x, y)
 end
 
 macro run_process(content)
-    return quote
+    return esc(quote
         if x != y
             $(content)
         end
-    end
+    end)
 end
 
 function fun_runprocess(x, y)
-    expr=@run_process :(z = add(x, y))
-
+    @run_process z = add(x, y)
     return z
 end
 
+
+
 input1 = 3
 input2 = 4
-fun_runprocess(input1, input2)
+z=fun_runprocess(input1, input2)
 println(z)
+
