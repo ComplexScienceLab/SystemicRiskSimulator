@@ -52,7 +52,7 @@ for (i, p) in enumerate(list_combinationOfPara)
     env[:stateOfStageStep] = :standing
 
     @test println("实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
-    @test println("相关实验参数：$(para)") #FIXME 这个输出是错误的
+    @test println("相关实验参数：$(para)") #FIXME 这个打印输出是错误的，虽然运行是正确的！
 
     makesim(p, env) # 进行实验
 
