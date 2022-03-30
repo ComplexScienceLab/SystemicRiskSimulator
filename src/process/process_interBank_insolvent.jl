@@ -22,30 +22,31 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
         ## # 资不抵债银行间违约损失传染阶段
         env[:stageName] = "资不抵债银行间违约损失传染阶段"
         # @test println("阶段：$(env[:stageName])")
-        if (env[:stateOfStageStep] == :stepping || (env[:stateOfStageStep] == :loading && env[:stageName] == env[:savedStageName]))
-            env[:isStep] = true
-            @test println("步进开始：")
-            env[:stateOfStageStep] = :stepping # 切换阶段运作状态为步进
-            @test println("切换阶段运作状态为stepping")
-            BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)
-            env[:step] += 1
-            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-                env[:isStep] = false
-                @test println("步进结束。")
-                env[:stateOfStageStep] = :saving # 切换阶段运作状态为存储
-                @test println("切换阶段运作状态为saving")
-                env[:stateOfProcessStep] = :saving # 切换过程运作状态为存储
-                @test println("切换过程运作状态为saving")
-            end
-        elseif (env[:stateOfStageStep] == :saving)
-            env[:savedStageName] = env[:stageName]
-            @test println("下一次步进运行的阶段：$(env[:stageName])。")
-            env[:stateOfStageStep] = :collecting # 切换阶段运作状态为收集数据 #TODO 收集数据
-            @test println("切换阶段运作状态为collecting")
-            env[:stateOfStageStep] = :loading  # 切换阶段运作状态为读取
-            @test println("切换阶段运作状态为loading")
-            # break
-        end
+        @run_stage BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)
+        # if (env[:stateOfStageStep] == :stepping || (env[:stateOfStageStep] == :loading && env[:stageName] == env[:savedStageName]))
+        #     env[:isStep] = true
+        #     @test println("步进开始：")
+        #     env[:stateOfStageStep] = :stepping # 切换阶段运作状态为步进
+        #     @test println("切换阶段运作状态为stepping")
+        #     BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)
+        #     env[:step] += 1
+        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
+        #         env[:isStep] = false
+        #         @test println("步进结束。")
+        #         env[:stateOfStageStep] = :saving # 切换阶段运作状态为存储
+        #         @test println("切换阶段运作状态为saving")
+        #         env[:stateOfProcessStep] = :saving # 切换过程运作状态为存储
+        #         @test println("切换过程运作状态为saving")
+        #     end
+        # elseif (env[:stateOfStageStep] == :saving)
+        #     env[:savedStageName] = env[:stageName]
+        #     @test println("下一次步进运行的阶段：$(env[:stageName])。")
+        #     env[:stateOfStageStep] = :collecting # 切换阶段运作状态为收集数据 #TODO 收集数据
+        #     @test println("切换阶段运作状态为collecting")
+        #     env[:stateOfStageStep] = :loading  # 切换阶段运作状态为读取
+        #     @test println("切换阶段运作状态为loading")
+        #     # break
+        # end
 
 
 
@@ -57,30 +58,31 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
         ## # 资不抵债银行间违约损失冲击阶段
         env[:stageName] = "资不抵债银行间违约损失冲击阶段"
         # @test println("阶段：$(env[:stageName])")
-        if (env[:stateOfStageStep] == :stepping || (env[:stateOfStageStep] == :loading && env[:stageName] == env[:savedStageName]))
-            env[:isStep] = true
-            @test println("步进开始：")
-            env[:stateOfStageStep] = :stepping # 切换阶段运作状态为步进
-            @test println("切换阶段运作状态为stepping")
-            BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
-            env[:step] += 1
-            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-                env[:isStep] = false
-                @test println("步进结束。")
-                env[:stateOfStageStep] = :saving # 切换阶段运作状态为存储
-                @test println("切换阶段运作状态为saving")
-                env[:stateOfProcessStep] = :saving # 切换过程运作状态为存储
-                @test println("切换过程运作状态为saving")
-            end
-        elseif (env[:stateOfStageStep] == :saving)
-            env[:savedStageName] = env[:stageName]
-            @test println("下一次步进运行的阶段：$(env[:stageName])。")
-            env[:stateOfStageStep] = :collecting # 切换阶段运作状态为收集数据 #TODO 收集数据
-            @test println("切换阶段运作状态为collecting")
-            env[:stateOfStageStep] = :loading  # 切换阶段运作状态为读取
-            @test println("切换阶段运作状态为loading")
-            # break
-        end
+        @run_stage BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
+        # if (env[:stateOfStageStep] == :stepping || (env[:stateOfStageStep] == :loading && env[:stageName] == env[:savedStageName]))
+        #     env[:isStep] = true
+        #     @test println("步进开始：")
+        #     env[:stateOfStageStep] = :stepping # 切换阶段运作状态为步进
+        #     @test println("切换阶段运作状态为stepping")
+        #     BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
+        #     env[:step] += 1
+        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
+        #         env[:isStep] = false
+        #         @test println("步进结束。")
+        #         env[:stateOfStageStep] = :saving # 切换阶段运作状态为存储
+        #         @test println("切换阶段运作状态为saving")
+        #         env[:stateOfProcessStep] = :saving # 切换过程运作状态为存储
+        #         @test println("切换过程运作状态为saving")
+        #     end
+        # elseif (env[:stateOfStageStep] == :saving)
+        #     env[:savedStageName] = env[:stageName]
+        #     @test println("下一次步进运行的阶段：$(env[:stageName])。")
+        #     env[:stateOfStageStep] = :collecting # 切换阶段运作状态为收集数据 #TODO 收集数据
+        #     @test println("切换阶段运作状态为collecting")
+        #     env[:stateOfStageStep] = :loading  # 切换阶段运作状态为读取
+        #     @test println("切换阶段运作状态为loading")
+        #     # break
+        # end
 
 
 
