@@ -29,29 +29,36 @@ env = setExperimentsFolders(env)
 ## 初始化参数变量
 _, para = enumerate(list_combinationOfPara)
 
+println("\n实验组开始：\n")
+
 ## 主循环
 for (i, p) in enumerate(list_combinationOfPara)
     env[:id_experiment] = i # 设定当前实验编号
     para = copy(p)
     # 重置环境变量
     env[:step] = 0
+    env[:tau] = 0
     env[:processName] = ""
     env[:savedProcessName] = ""
     env[:stageName] = ""
     env[:savedStageName] = ""
-    env[:isEndStep] = false
-    env[:isEndStage] = false
-    env[:isEndRound] = false
-    env[:isEndProcess] = false
-    env[:isEndModel] = false
-    env[:isEndExperiment] = false
-    env[:isLoading] = false
+    env[:isStep] = false
+    env[:isRound] = false
+    env[:isStage] = false
+    env[:isProcess] = false
+    env[:isModel] = false
+    env[:isExperiment] = false
+    env[:stateOfProcessStep] = :standing
+    env[:stateOfStageStep] = :standing
 
     @test println("实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
     @test println("相关实验参数：$(para)") #FIXME 这个输出是错误的
-    makesim(p, env)
+
+    makesim(p, env) # 进行实验
+
     @test println("本次实验结束，还剩下$(length(list_combinationOfPara)-env[:id_experiment])个实验。\n")
 end # for
 
+println("实验组结束。")
 
 
