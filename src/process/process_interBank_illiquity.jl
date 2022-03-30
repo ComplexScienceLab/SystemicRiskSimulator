@@ -24,52 +24,57 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 流动性短缺银行间挤兑流动传染冲击阶段
-        # @run_stage("BB, BI = interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)") #HACK 暂时用不了
-        if (env[:stateOfStageStep] == :stepping && env[:stageName] == env[:savedStageName])
-            BB, BI = interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)
-            env[:step] += 1
-            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-                env[:savedProcessName] = env[:processName]
-                env[:savedStageName] = env[:stageName]
-                # break
-            end
-        end
+        @run_stage BB, BI = interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)
+        # if (env[:stateOfStageStep] == :stepping && env[:stageName] == env[:savedStageName])
+        #     BB, BI = interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)
+        #     env[:step] += 1
+        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
+        #         env[:savedProcessName] = env[:processName]
+        #         env[:savedStageName] = env[:stageName]
+        #         # break
+        #     end
+        # end
 
         ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
-        # @run_stage("BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)") #HACK 暂时用不了
-        if (env[:stateOfStageStep] == :stepping && env[:stageName] == env[:savedStageName])
-            BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
-            env[:step] += 1
-            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-                env[:savedProcessName] = env[:processName]
-                env[:savedStageName] = env[:stageName]
-                # break
-            end
-        end
+        @run_stage BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
+        # if (env[:stateOfStageStep] == :stepping && env[:stageName] == env[:savedStageName])
+        #     BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
+        #     env[:step] += 1
+        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
+        #         env[:savedProcessName] = env[:processName]
+        #         env[:savedStageName] = env[:stageName]
+        #         # break
+        #     end
+        # end
 
         ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
-        # @run_stage("BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)") #HACK 暂时用不了
-        if (env[:stateOfStageStep] == :stepping && env[:stageName] == env[:savedStageName])
-            BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
-            env[:step] += 1
-            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-                env[:savedProcessName] = env[:processName]
-                env[:savedStageName] = env[:stageName]
-                # break
-            end
-        end
+        @run_stage BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
+        # if (env[:stateOfStageStep] == :stepping && env[:stageName] == env[:savedStageName])
+        #     BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
+        #     env[:step] += 1
+        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
+        #         env[:savedProcessName] = env[:processName]
+        #         env[:savedStageName] = env[:stageName]
+        #         # break
+        #     end
+        # end
 
         ## TODO存储数据
         # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
         # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
-        ## 判定是否结束
+        ## 判定是否结束过程
         if BB.Shock_t == Shock_t_t1
             env[:isProcess] = false
         end
-        if (env[:stateOfStageStep] != :stepping || !env[:isProcess] || env[:tau] >= env[:maxNumOfTau])
+
+        ## 判定是否结束
+        if (!env[:isProcess] || env[:tau] >= env[:maxNumOfTau])
             env[:isRound] = false
             @test println("结束过程：$(env[:processName])。")
+        end
+        if !env[:isStep]
+            @test println("跳出过程：$(env[:processName])。")
         end
 
     end # while

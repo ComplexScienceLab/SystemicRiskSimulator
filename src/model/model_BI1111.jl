@@ -23,48 +23,24 @@ function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Di
     end
 
     ## 过程：银行外部违约损失传染冲击 #BUG测试宏和函数正确性
-    # @run_process :(BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env))
     env[:processName] = "银行外部违约损失传染冲击过程"
-    if (env[:stateOfProcessStep] == :stepping)
-        BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)
-    elseif (env[:stateOfProcessStep] == :loading && env[:processName] == env[:savedProcessName])
-        BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)
-    elseif (env[:stateOfProcessStep] == :saving)
-        env[:savedProcessName] = env[:processName]
-        @test println("下一次步进运行的过程：$(env[:processName])。")
-        env[:stateOfProcessStep] = :collecting # 切换过程运作状态为收集数据 #TODO 收集数据
-        @test println("切换过程运作状态为collecting")
-        env[:stateOfProcessStep] = :loading  # 切换过程运作状态为读取
-        @test println("切换过程运作状态为loading")
-    end
+    @run_process BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)
 
     ## 过程：资不抵债银行间违约损失传染冲击
-    # @run_process :(BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env))
     env[:processName] = "资不抵债银行间违约损失传染冲击过程"
-    if (env[:stateOfProcessStep] == :stepping)
-        BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env)
-    elseif (env[:stateOfProcessStep] == :loading && env[:processName] == env[:savedProcessName])
-        BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env)
-    elseif (env[:stateOfProcessStep] == :saving)
-        env[:savedProcessName] = env[:processName]
-        @test println("下一次步进运行的过程：$(env[:processName])。")
-        env[:stateOfProcessStep] = :collecting # 切换过程运作状态为收集数据 #TODO 收集数据
-        @test println("切换过程运作状态为collecting")
-        env[:stateOfProcessStep] = :loading  # 切换过程运作状态为读取
-        @test println("切换过程运作状态为loading")
-    end
+    @run_process BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env)
 
     ## 过程：外部挤兑流动传染冲击
-    # @run_process :(BB, BI, env = process_exBank_illiquity!(BB, BI, para, env))
+    @run_process BB, BI, env = process_exBank_illiquity!(BB, BI, para, env)
 
     ## 过程：流动性短缺银行间挤兑流动传染冲击
-    # @run_process :(BB, BI, env = process_interBank_illiquity!(BB, BI, para, env))
+    @run_process BB, BI, env = process_interBank_illiquity!(BB, BI, para, env)
 
     ## 过程：外生破产银行间挤兑流动传染冲击 #HACK暂时不用
-    # @run_process :(BB, BI, env = process_exBank_bankrupt!(BB, BI, para, env))
+    # @run_process BB, BI, env = process_exBank_bankrupt!(BB, BI, para, env)
 
     ## 过程：破产银行间挤兑流动传染冲击
-    # @run_process :(BB, BI, env = process_interBank_bankrupt!(BB, BI, para, env))
+    @run_process BB, BI, env = process_interBank_bankrupt!(BB, BI, para, env)
 
 
     ## 收尾

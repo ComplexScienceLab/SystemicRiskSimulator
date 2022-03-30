@@ -7,33 +7,21 @@
 ##########################################
 
 
-"""
-#NOW函数：运行当前过程: 
-# Argument: 
-- processContent::String: 待运行的过程之表达式字符串；
-"""
-# function run_process(content::String)
-# # function run_process!(content::String,BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
-#     if env[:processName] == env[:savedProcessName]
-#         expr = Meta.parse(content)
-#         # eval(expr)#FIXME
-#     end
-#     # return BB, BI, BB_t1, BI_t1, env
-#     return expr
-# end
-
-
 "#NOW宏：运行当前过程"#HACK不好把握，还不能用
 macro run_process(process)
     return esc(
         quote
-            if (env[:stateOfStep] == :stepping)
+            if (env[:stateOfProcessStep] == :stepping)
                 $(process)
-            elseif (env[:stateOfStep] == :loading && env[:processName] == env[:savedProcessName])
+            elseif (env[:stateOfProcessStep] == :loading && env[:processName] == env[:savedProcessName])
                 $(process)
-            elseif (env[:stateOfStep] == :saving)
-                env[:processName] = env[:process]
-                @test println("开始过程：$(env[:processName])：")
+            elseif (env[:stateOfProcessStep] == :saving)
+                env[:savedProcessName] = env[:processName]
+                @test println("下一次步进运行的过程：$(env[:processName])。")
+                env[:stateOfProcessStep] = :collecting # 切换过程运作状态为收集数据 #TODO 收集数据
+                @test println("切换过程运作状态为collecting")
+                env[:stateOfProcessStep] = :loading  # 切换过程运作状态为读取
+                @test println("切换过程运作状态为loading")
             end
         end #quote
     )
@@ -41,39 +29,38 @@ macro run_process(process)
 end # macro
 
 
-"""
-函数：运行当前阶段: 
-# Argument: 
-- stageContent::String: 待运行的阶段之表达式字符串；
-"""
-# function run_stage!(content::String)
-#     if (env[:stateOfStep] == :stepping && env[:stageName] == env[:savedStageName])
-#         env[:stageName] = "流动性短缺银行间挤兑流动传染冲击阶段"
-#         @test println("阶段：$(env[:stageName])")
-#         expr = Meta.parse(content)
-#         eval(expr) #FIXME
-#         env[:step] += 1
-#         if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-#             env[:savedProcessName] = env[:processName]
-#             env[:savedStageName] = env[:stageName]
-#         end
-#     end
-# end
-
 
 "#TODO宏：运行当前阶段"#HACK不好把握，还不能用
-macro run_stage(content)
-    expr = quote
-        if (env[:stateOfStep] == :stepping && env[:stageName] == env[:savedStageName])
-            :(content)
-            env[:step] += 1
-            if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-                env[:savedProcessName] = env[:processName]
+macro run_stage(stage)
+    expr = esc(
+        quote
+            # @test println("阶段：$(env[:stageName])")
+            if (env[:stateOfStageStep] == :stepping || (env[:stateOfStageStep] == :loading && env[:stageName] == env[:savedStageName]))
+                env[:isStep] = true
+                @test println("步进开始：")
+                env[:stateOfStageStep] = :stepping # 切换阶段运作状态为步进
+                @test println("切换阶段运作状态为stepping")
+                $(stage)
+                env[:step] += 1
+                if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
+                    env[:isStep] = false
+                    @test println("步进结束。")
+                    env[:stateOfStageStep] = :saving # 切换阶段运作状态为存储
+                    @test println("切换阶段运作状态为saving")
+                    env[:stateOfProcessStep] = :saving # 切换过程运作状态为存储
+                    @test println("切换过程运作状态为saving")
+                end
+            elseif (env[:stateOfStageStep] == :saving)
                 env[:savedStageName] = env[:stageName]
+                @test println("下一次步进运行的阶段：$(env[:stageName])。")
+                env[:stateOfStageStep] = :collecting # 切换阶段运作状态为收集数据 #TODO 收集数据
+                @test println("切换阶段运作状态为collecting")
+                env[:stateOfStageStep] = :loading  # 切换阶段运作状态为读取
+                @test println("切换阶段运作状态为loading")
                 # break
             end
-        end
-    end # quote
+        end # quote
+    )
     return expr
 end # macro
 
