@@ -30,13 +30,14 @@ env = @dict(
   processName,
   savedProcessName,
   id_experiment,
-  isEndStep,
-  isEndStage,
-  isEndRound,
-  isEndProcess,
-  isEndModel,
-  isEndExperiment,
-  stateOfOperation,
+  stateOfProcessStep,
+  stateOfStageStep,
+  isStep,
+  isRound,
+  isStage,
+  isProcess,
+  isModel,
+  isExperiment,
 )
 
 # env = environmentVariables # 别名

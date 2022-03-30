@@ -14,7 +14,7 @@ function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Di
     BB_t0 = deepcopy(BB) # 临时设置BB变量，被读取于阶段1
     BI_t0 = deepcopy(BI) # 临时设置BI变量，被读取于阶段1
 
-    if (!env[:isEndModel])
+    if (!env[:isModel])
         if (env[:tau] > 0)
             @test println("继续模型model：")
         else
@@ -22,55 +22,49 @@ function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Di
         end
     end
 
-    ## 过程：外部违约损失传染冲击 #BUG测试宏和函数正确性
-    if (env[:stateOfOperation] == :stepping || env[:processName] == env[:savedProcessName])
-        BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)
-    end
-    # run_process("BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)",BB, BI, para, env)
-    # expr = run_process("BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)")
-    # expr = run_process("$(BB), $(BI), $(env) = $(process_exBank_insolvent!)($(BB), $(BI), $(para), $(env))")
-    # eval(expr)
+    ## 过程：银行外部违约损失传染冲击 #BUG测试宏和函数正确性
     # @run_process :(BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env))
-    # @run_process BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)
-    # content=@run_process "BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env))"
-    # @test println(typeof(content))
-    # expr=Meta.parse(content)
-    # @run_process "$(BB), $(BI), $(env) = $(process_exBank_insolvent!)($(BB), $(BI), $(para), $(env))"
+    env[:processName] = "银行外部违约损失传染冲击过程"
+    if (env[:stateOfProcessStep] == :stepping)
+        BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)
+    elseif (env[:stateOfProcessStep] == :loading && env[:processName] == env[:savedProcessName])
+        BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)
+    elseif (env[:stateOfProcessStep] == :saving)
+        env[:savedProcessName] = env[:processName]
+        @test println("下一次步进运行的过程：$(env[:processName])。")
+        env[:stateOfProcessStep] = :collecting # 切换过程运作状态为收集数据 #TODO 收集数据
+        @test println("切换过程运作状态为collecting")
+        env[:stateOfProcessStep] = :loading  # 切换过程运作状态为读取
+        @test println("切换过程运作状态为loading")
+    end
 
     ## 过程：资不抵债银行间违约损失传染冲击
-    if (env[:stateOfOperation] == :stepping || env[:processName] == env[:savedProcessName])
+    # @run_process :(BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env))
+    env[:processName] = "资不抵债银行间违约损失传染冲击过程"
+    if (env[:stateOfProcessStep] == :stepping)
         BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env)
+    elseif (env[:stateOfProcessStep] == :loading && env[:processName] == env[:savedProcessName])
+        BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env)
+    elseif (env[:stateOfProcessStep] == :saving)
+        env[:savedProcessName] = env[:processName]
+        @test println("下一次步进运行的过程：$(env[:processName])。")
+        env[:stateOfProcessStep] = :collecting # 切换过程运作状态为收集数据 #TODO 收集数据
+        @test println("切换过程运作状态为collecting")
+        env[:stateOfProcessStep] = :loading  # 切换过程运作状态为读取
+        @test println("切换过程运作状态为loading")
     end
-    # @run_process BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env)
-    # run_process!("BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env)")
 
     ## 过程：外部挤兑流动传染冲击
-    if (env[:stateOfOperation] == :stepping || env[:processName] == env[:savedProcessName])
-        BB, BI, env = process_exBank_illiquity!(BB, BI, para, env)
-    end
-    # run_process!("BB, BI, env = process_exBank_illiquity!(BB, BI, para, env)")
-    # @eval @run_process(:(BB_1, BI_1, env = process_exBank_illiquity!(BB, BI, para, env)))
+    # @run_process :(BB, BI, env = process_exBank_illiquity!(BB, BI, para, env))
 
     ## 过程：流动性短缺银行间挤兑流动传染冲击
-    if (env[:stateOfOperation] == :stepping || env[:processName] == env[:savedProcessName])
-        BB, BI, env = process_interBank_illiquity!(BB, BI, para, env)
-    end
-    # run_process!("BB, BI, env = process_interBank_illiquity!(BB, BI, para, env)")
     # @run_process :(BB, BI, env = process_interBank_illiquity!(BB, BI, para, env))
 
-    # eval(:(BB, BI, env = process_interBank_illiquity!(BB, BI, para, env)))
-
     ## 过程：外生破产银行间挤兑流动传染冲击 #HACK暂时不用
-    if (env[:stateOfOperation] == :stepping || env[:processName] == env[:savedProcessName])
-        BB, BI, env = process_exBank_bankrupt!(BB, BI, para, env)
-    end
-    # run_process("BB, BI, env = process_exBank_bankrupt!(BB, BI,para,env)")
+    # @run_process :(BB, BI, env = process_exBank_bankrupt!(BB, BI, para, env))
 
     ## 过程：破产银行间挤兑流动传染冲击
-    if (env[:stateOfOperation] == :stepping || env[:processName] == env[:savedProcessName])
-        BB, BI, env = process_interBank_bankrupt!(BB, BI, para, env)
-    end
-    # run_process!("BB, BI, env = process_interBank_bankrupt!(BB, BI, para, env)")
+    # @run_process :(BB, BI, env = process_interBank_bankrupt!(BB, BI, para, env))
 
 
     ## 收尾
@@ -79,13 +73,16 @@ function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Di
     # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
     #TODO 最终破产清算
 
-    if env[:isEndStep]
-        @test println("步进结束，跳出model_BI1111。")
-    else
-        env[:isEndModel] = true
+    if !env[:isStep]
+        @test println("步进已结束，跳出model_BI1111。")
     end
 
-    if env[:isEndModel]
+    if env[:stateOfProcessStep] == :standing
+        env[:isModel] = false
+        env[:isExperiment] = false
+    end
+
+    if (!env[:isModel] || !env[:isExperiment])
         @test println("model_BI1111结束。")
     end
 

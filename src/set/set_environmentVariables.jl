@@ -36,7 +36,7 @@ folderpathOfExperimentsData = ""; # 主文件夹路径之于实验。将由函�
 
 
 
-stepSize = 10; # 设置步进跨度；
+stepSize = 1; # 设置步进跨度；
 maxNumOfTau = 100; # 单个过程最大回合数；
 numBank = 5; # 银行个数；
 numAssets = 3; # 资产种类数；
@@ -61,13 +61,14 @@ processName = ""; # 设置运行的过程之名称；
 savedProcessName = ""; # 设置存储的过程之名称；
 id_experiment = 1; # 设置当前实验组编号；
 
-isEndStep = false; # 结束步进判断；
-isEndStage = false; # 结束阶段判断；
-isEndRound = false; # 结束回合判断；
-isEndProcess = false; # 结束过程判断；
-isEndModel = false; # 结束模型判断；
-isEndExperiment = false; # 结束当前的一次实验判断；
-stateOfOperation = :stepping; # 设置当前程序运作状态。状态一共有4种：`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:running`：运行状态；
+stateOfProcessStep = :standing; # 设置过程运作状态。状态一共有6种：`:standing`：待命状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
+stateOfStageStep = :standing; # 设置阶段运作状态。状态一共有6种：`:standing`：待命状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
+isStep = true; # 是否处于步进状态；
+isRound = true; # 是否处于回合状态；
+isStage = true; # 是否处于阶段状态；
+isProcess = true; # 是否处于过程状态；
+isModel = true; # 是否处于模型状态；
+isExperiment = true; # 是否处于当前状态的一次实验；
 
 
 
