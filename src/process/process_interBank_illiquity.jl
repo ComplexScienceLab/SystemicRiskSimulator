@@ -13,6 +13,7 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
 
     env[:isLoop] = true # 初始化循环状态
     env[:isRound] = true # 初始化回合状态
+    env[:isProcess] = true # 初始化过程状态
     while env[:isLoop] == true
 
         env[:tau] += 1 # 回合累加一
@@ -22,7 +23,7 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
 
         ## 设置临时变量
-        Shock_t_t1 = deepcopy(BB.Shock_t)
+        BB_Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 流动性短缺银行间挤兑流动传染冲击阶段
         @scheduler_stage BB, BI = interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)
@@ -38,7 +39,7 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
         ## 判定是否结束过程
-        if BB.Shock_t == Shock_t_t1
+        if BB.Shock_t == BB_Shock_t_t1
             env[:isProcess] = false
             @test println("env[:isProcess]=$(env[:isProcess])")
         end
