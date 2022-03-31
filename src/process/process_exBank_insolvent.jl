@@ -21,20 +21,23 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     b = TypeState{1}(BB.on .| BB.off) # 临时设置BB示性变量
     ib = TypeState{2}((BB.on .| BB.off) .& (BB.on .| BB.off)') # 临时设置BI示性变量
 
-    ## # 银行外部违约损失传染阶段
-    env[:stageName] = "银行外部违约损失传染阶段"
-    # @test println("阶段：$(env[:stageName])")
-    @scheduler_stage BB, BI = exBank_insolvent_contagion!(BB, BI, b, ib, para)
-
     ## 设置临时变量
-    BB_t1 = deepcopy(BB)
-    BI_t1 = deepcopy(BI)
-
+    BB_Shock_t_t1 = deepcopy(BB.Shock_t)
+    BB_isv_t1 = deepcopy(BB.isv)
 
     ## # 银行外部违约损失冲击阶段
     env[:stageName] = "银行外部违约损失冲击阶段"
     # @test println("阶段：$(env[:stageName])")
-    @scheduler_stage BB, BI, BB_t1, BI_t1 = exBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
+    @scheduler_stage BB, BI = exBank_insolvent_shock!(BB, BI, b, ib, para)
+
+    # ## # 资不抵债银行间违约损失传染阶段
+    env[:stageName] = "资不抵债银行间违约损失传染阶段"
+    # @test println("阶段：$(env[:stageName])")
+    @scheduler_stage BB, BI = interBank_insolvent_contagion!(BB, BI, b, ib, para)
+
+    # ## 设置临时变量
+    # BB_t1 = deepcopy(BB)
+    # BI_t1 = deepcopy(BI)
 
 
     ## TODO存储数据
@@ -42,7 +45,7 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
     ## 判定是否结束过程
-    if BB.isv == BB_t1.isv
+    if BB.isv == BB_isv_t1
         env[:isProcess] = false
         @test println("env[:isProcess]=$(env[:isProcess])")
     end
@@ -50,8 +53,7 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     isEndLoop!(env) # 判断是否结束循环
     isJumpOutProcess!(env) # 判断是否跳出过程
 
-    return BB, BI, BB_t1, BI_t1, env
-    # return BB, BI, env
+    return BB, BI, env
 
 
 end # function

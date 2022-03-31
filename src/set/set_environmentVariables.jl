@@ -36,8 +36,8 @@ folderpathOfExperimentsData = ""; # 主文件夹路径之于实验。将由函�
 
 
 
-stepSize = 20; # 设置步进跨度；如果该数值设置较大，则相当于直接运行程序；
-maxNumOfTau = 20; # 单个过程最大回合数；
+stepSize = 50; # 设置步进跨度；如果该数值设置较大，则相当于直接运行程序；
+maxNumOfTau = 50; # 单个过程最大回合数；
 numBank = 5; # 银行个数；
 numAssets = 3; # 资产种类数；
 
