@@ -10,8 +10,9 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
     env[:processName] = "资不抵债银行间违约损失传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
 
+    env[:isLoop] = true # 初始化循环状态
     env[:isRound] = true # 初始化回合状态
-    while env[:isRound] == true
+    while env[:isLoop] == true
 
         env[:tau] += 1 # 回合累加一
         @test println("开始回合$(env[:tau])")
@@ -22,32 +23,7 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
         ## # 资不抵债银行间违约损失传染阶段
         env[:stageName] = "资不抵债银行间违约损失传染阶段"
         # @test println("阶段：$(env[:stageName])")
-        @run_stage BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)
-        # if (env[:stateOfStageStep] == :stepping || (env[:stateOfStageStep] == :loading && env[:stageName] == env[:savedStageName]))
-        #     env[:isStep] = true
-        #     @test println("步进开始：")
-        #     env[:stateOfStageStep] = :stepping # 切换阶段运作状态为步进
-        #     @test println("切换阶段运作状态为stepping")
-        #     BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)
-        #     env[:step] += 1
-        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-        #         env[:isStep] = false
-        #         @test println("步进结束。")
-        #         env[:stateOfStageStep] = :saving # 切换阶段运作状态为存储
-        #         @test println("切换阶段运作状态为saving")
-        #         env[:stateOfProcessStep] = :saving # 切换过程运作状态为存储
-        #         @test println("切换过程运作状态为saving")
-        #     end
-        # elseif (env[:stateOfStageStep] == :saving)
-        #     env[:savedStageName] = env[:stageName]
-        #     @test println("下一次步进运行的阶段：$(env[:stageName])。")
-        #     env[:stateOfStageStep] = :collecting # 切换阶段运作状态为收集数据 #TODO 收集数据
-        #     @test println("切换阶段运作状态为collecting")
-        #     env[:stateOfStageStep] = :loading  # 切换阶段运作状态为读取
-        #     @test println("切换阶段运作状态为loading")
-        #     # break
-        # end
-
+        @scheduler_stage BB, BI = interBank_insolvent_contagion!(BB, BI, BB_t1, BI_t1, b, ib, para)
 
 
         ## 设置临时变量
@@ -58,35 +34,7 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
         ## # 资不抵债银行间违约损失冲击阶段
         env[:stageName] = "资不抵债银行间违约损失冲击阶段"
         # @test println("阶段：$(env[:stageName])")
-        @run_stage BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
-        # if (env[:stateOfStageStep] == :stepping || (env[:stateOfStageStep] == :loading && env[:stageName] == env[:savedStageName]))
-        #     env[:isStep] = true
-        #     @test println("步进开始：")
-        #     env[:stateOfStageStep] = :stepping # 切换阶段运作状态为步进
-        #     @test println("切换阶段运作状态为stepping")
-        #     BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
-        #     env[:step] += 1
-        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-        #         env[:isStep] = false
-        #         @test println("步进结束。")
-        #         env[:stateOfStageStep] = :saving # 切换阶段运作状态为存储
-        #         @test println("切换阶段运作状态为saving")
-        #         env[:stateOfProcessStep] = :saving # 切换过程运作状态为存储
-        #         @test println("切换过程运作状态为saving")
-        #     end
-        # elseif (env[:stateOfStageStep] == :saving)
-        #     env[:savedStageName] = env[:stageName]
-        #     @test println("下一次步进运行的阶段：$(env[:stageName])。")
-        #     env[:stateOfStageStep] = :collecting # 切换阶段运作状态为收集数据 #TODO 收集数据
-        #     @test println("切换阶段运作状态为collecting")
-        #     env[:stateOfStageStep] = :loading  # 切换阶段运作状态为读取
-        #     @test println("切换阶段运作状态为loading")
-        #     # break
-        # end
-
-
-
-        # update_B_state!(BB, BI; to = "bankrupt", from = "insolvent") # 更新各银行之状态到破产
+        @scheduler_stage BB, BI, BB_t1, BI_t1 = interBank_insolvent_shock!(BB, BI, BB_t1, BI_t1, b, ib, para)
 
         ## TODO存储数据
         # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
@@ -95,17 +43,12 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, BB_
         ## 判定是否结束过程
         if BB.isv == BB_t1.isv
             env[:isProcess] = false
+            @test println("env[:isProcess]=$(env[:isProcess])")
         end
 
-        ## 判定是否结束
-        if (!env[:isProcess] || env[:tau] >= env[:maxNumOfTau])
-            env[:isRound] = false
-            @test println("结束过程：$(env[:processName])。")
-        end
-        if !env[:isStep]
-            @test println("跳出过程：$(env[:processName])。")
-        end
-
+        isEndLoop!(env) # 判断是否结束循环
+        isJumpOutProcess!(env) # 判断是否跳出过程
+    
     end # while
 
     return BB, BI, BB_t1, BI_t1, env

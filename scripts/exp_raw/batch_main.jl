@@ -25,9 +25,15 @@ list_combinationOfPara = dict_list(setOfValuesOfParameterVariables) # 完整名�
 
 ## 创建主文件夹用于本批次实验
 env = setExperimentsFolders(env)
+@test println("\n实验组名称：$(env[:foldernameOfExperimentsData])")
 
 ## 初始化参数变量
 _, para = enumerate(list_combinationOfPara)
+
+@test println("\n列出所有实验组：")
+for (i, p) in enumerate(list_combinationOfPara)
+    @test println("$(i): $(p);")
+end
 
 println("\n实验组开始：\n")
 
@@ -43,6 +49,7 @@ for (i, p) in enumerate(list_combinationOfPara)
     env[:stageName] = ""
     env[:savedStageName] = ""
     env[:isStep] = false
+    env[:isLoop] = false
     env[:isRound] = false
     env[:isStage] = false
     env[:isProcess] = false
@@ -51,8 +58,8 @@ for (i, p) in enumerate(list_combinationOfPara)
     env[:stateOfProcessStep] = :standing
     env[:stateOfStageStep] = :standing
 
-    @test println("实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
-    @test println("相关实验参数：$(para)") #FIXME 这个打印输出是错误的，虽然运行是正确的！
+    @test println("\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
+    @test println("\n相关实验参数：$(para)")
 
     makesim(p, env) # 进行实验
 

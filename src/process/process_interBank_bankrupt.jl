@@ -10,8 +10,9 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
     env[:processName] = "破产银行间挤兑流动传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
 
+    env[:isLoop] = true # 初始化循环状态
     env[:isRound] = true # 初始化回合状态
-    while env[:isRound] == true
+    while env[:isLoop] == true
 
         env[:tau] += 1 # 回合累加一
         @test println("开始回合$(env[:tau])")
@@ -25,44 +26,17 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
         ## # 破产银行间挤兑流动传染冲击阶段
         env[:stageName] = "破产银行间挤兑流动传染冲击阶段"
         # @test println("阶段：$(env[:stageName])")
-        @run_stage BB, BI = interBank_bankrupt_contagion_shock!(BB, BI, b, ib, para)
-        # if (env[:stateOfStageStep] == :stepping && env[:stageName] == env[:savedStageName])
-        #     BB, BI = interBank_bankrupt_contagion_shock!(BB, BI, b, ib, para)
-        #     env[:step] += 1
-        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-        #         env[:savedProcessName] = env[:processName]
-        #         env[:savedStageName] = env[:stageName]
-        #         # break
-        #     end
-        # end
+        @scheduler_stage BB, BI = interBank_bankrupt_contagion_shock!(BB, BI, b, ib, para)
 
         ## # 破产银行间挤兑流动分配借贷流量阶段
         env[:stageName] = "银行间挤兑流动分配借贷流量阶段"
         # @test println("阶段：$(env[:stageName])")
-        @run_stage BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
-        # if (env[:stateOfStageStep] == :stepping && env[:stageName] == env[:savedStageName])
-        #     BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
-        #     env[:step] += 1
-        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-        #         env[:savedProcessName] = env[:processName]
-        #         env[:savedStageName] = env[:stageName]
-        #         # break
-        #     end
-        # end
+        @scheduler_stage BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
 
         ## # 破产银行间挤兑流动执行借贷流量阶段
         env[:stageName] = "银行间挤兑流动执行借贷流量阶段"
         # @test println("阶段：$(env[:stageName])")
-        @run_stage BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
-        # if (env[:stateOfStageStep] == :stepping && env[:stageName] == env[:savedStageName])
-        #     BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
-        #     env[:step] += 1
-        #     if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-        #         env[:savedProcessName] = env[:processName]
-        #         env[:savedStageName] = env[:stageName]
-        #         # break
-        #     end
-        # end
+        @scheduler_stage BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
 
         ## TODO存储数据
         # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
@@ -71,17 +45,11 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
         ## 判定是否结束过程 #FIXME
         if BB.Shock_t == Shock_t_t1
             env[:isProcess] = false
+            @test println("env[:isProcess]=$(env[:isProcess])")
         end
 
-        ## 判定是否结束
-        if (!env[:isProcess] || env[:tau] >= env[:maxNumOfTau])
-            env[:isRound] = false
-            @test println("结束过程：$(env[:processName])。")
-        end
-        if !env[:isStep]
-            @test println("跳出过程：$(env[:processName])。")
-        end
-
+        isEndLoop!(env) # 判断是否结束循环
+        isJumpOutProcess!(env) # 判断是否跳出过程    
 
     end # while
 
