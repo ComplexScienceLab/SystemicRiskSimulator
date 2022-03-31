@@ -10,11 +10,9 @@
 
 function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
-    env[:tau] = 0 # 初始化回合
+    pos_process = 0 # 初始化过程所在位置
 
-    ## 设置临时变量
-    BB_t0 = deepcopy(BB) # 临时设置BB变量，被读取于阶段1
-    BI_t0 = deepcopy(BI) # 临时设置BI变量，被读取于阶段1
+    env[:tau] = 0 # 初始化回合
 
     if (!env[:isModel])
         if (env[:tau] > 0)
