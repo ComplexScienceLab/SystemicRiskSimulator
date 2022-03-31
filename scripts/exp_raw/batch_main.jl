@@ -38,9 +38,8 @@ end
 println("\n实验组开始：\n")
 
 ## 主循环
-for (i, p) in enumerate(list_combinationOfPara)
+for (i, para) in enumerate(list_combinationOfPara)
     env[:id_experiment] = i # 设定当前实验编号
-    para = copy(p)
     # 重置环境变量
     env[:step] = 0
     env[:tau] = 0
@@ -48,20 +47,20 @@ for (i, p) in enumerate(list_combinationOfPara)
     env[:savedProcessName] = ""
     env[:stageName] = ""
     env[:savedStageName] = ""
-    env[:isStep] = false
-    env[:isLoop] = false
-    env[:isRound] = false
-    env[:isStage] = false
-    env[:isProcess] = false
-    env[:isModel] = false
-    env[:isExperiment] = false
+    env[:isStep] = true
+    env[:isLoop] = true
+    env[:isRound] = true
+    env[:isStage] = true
+    env[:isProcess] = true
+    env[:isModel] = true
+    env[:isExperiment] = true
     env[:stateOfProcessStep] = :standing
     env[:stateOfStageStep] = :standing
 
     @test println("\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
     @test println("\n相关实验参数：$(para)")
 
-    makesim(p, env) # 进行实验
+    makesim(para, env) # 进行实验
 
     @test println("本次实验结束，还剩下$(length(list_combinationOfPara)-env[:id_experiment])个实验。\n")
 end # for

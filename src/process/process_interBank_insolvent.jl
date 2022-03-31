@@ -12,6 +12,7 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, par
 
     env[:isLoop] = true # 初始化循环状态
     env[:isRound] = true # 初始化回合状态
+    env[:isProcess] = true # 初始化过程状态
     while env[:isLoop] == true
 
         env[:tau] += 1 # 回合累加一

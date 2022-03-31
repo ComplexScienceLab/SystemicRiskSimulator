@@ -12,7 +12,8 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         @test println("开始过程：$(env[:processName])：")
 
         env[:isLoop] = true # 初始化循环状态
-    env[:isRound] = true # 初始化回合状态
+        env[:isRound] = true # 初始化回合状态
+        env[:isProcess] = true # 初始化过程状态
 
         env[:tau] += 1 # 回合累加一
         @test println("开始回合$(env[:tau])")
@@ -21,7 +22,7 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
 
         ## 设置临时变量
-        Shock_t_t1 = deepcopy(BB.Shock_t)
+        BB_Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 外生破产银行间挤兑流动冲击阶段
         @scheduler_stage BB, BI = exBank_bankrupt_shock!(BB, BI, b, ib, para)
@@ -31,14 +32,14 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
         ## 判定是否结束过程 #FIXME
-        if BB.Shock_t == Shock_t_t1
+        if BB.Shock_t == BB_Shock_t_t1
             env[:isProcess] = false
             @test println("env[:isProcess]=$(env[:isProcess])")
         end
 
         isEndLoop!(env) # 判断是否结束循环
         isJumpOutProcess!(env) # 判断是否跳出过程
-    
+
         return BB, BI, env
     end # if
 

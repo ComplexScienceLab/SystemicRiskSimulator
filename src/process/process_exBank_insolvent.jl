@@ -14,6 +14,7 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
 
     env[:isLoop] = true # 初始化循环状态
     env[:isRound] = true # 初始化回合状态
+    env[:isProcess] = true # 初始化过程状态
 
     env[:tau] += 1 # 回合累加一
     @test println("开始回合$(env[:tau])")
