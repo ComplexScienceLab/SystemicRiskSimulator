@@ -6,14 +6,14 @@
 #状态/开发
 ##########################################
 
-"#NOW宏：调度并运行当前模型"
+"#TODO宏：调度当前模型"
 macro scheduler_model(model, process::String)
 
 
 
 end
 
-"#NOW宏：调度并运行当前过程"
+"#NOW宏：调度当前过程"
 macro scheduler_process(process)
     return esc(
         quote
@@ -28,6 +28,9 @@ macro scheduler_process(process)
                 @test println("切换过程运作状态为collecting")
                 env[:stateOfProcessStep] = :loading  # 切换过程运作状态为读取
                 @test println("切换过程运作状态为loading")
+            elseif (env[:stateOfProcessStep] == :indexing)
+                pos_process += 1
+                append!(env[:indexOfSchedulePosition], [[]])
             end
         end # quote
     )
@@ -36,7 +39,7 @@ end # macro
 
 
 
-"宏：调度并运行当前阶段"
+"#NOW宏：调度当前阶段"
 macro scheduler_stage(stage)
     expr = esc(
         quote
@@ -59,6 +62,9 @@ macro scheduler_stage(stage)
                 env[:stateOfStageStep] = :loading  # 切换阶段运作状态为读取
                 @test println("切换阶段运作状态为loading")
                 # break
+            elseif (env[:stateOfStageStep] == :indexing)
+                pos_stage += 1
+                push!(env[:indexOfSchedulePosition][pos_process], pos_stage)
             end
         end # quote
     )

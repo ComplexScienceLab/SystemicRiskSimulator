@@ -12,6 +12,7 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     env[:processName] = "银行外部违约损失传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
 
+    pos_stage = 0 # 初始化阶段所在位置
     env[:isLoop] = true # 初始化循环状态
     env[:isRound] = true # 初始化回合状态
     env[:isProcess] = true # 初始化过程状态
@@ -29,6 +30,7 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     ## # 银行外部违约损失冲击阶段
     env[:stageName] = "银行外部违约损失冲击阶段"
     # @test println("阶段：$(env[:stageName])")
+    push!(env[:indexOfSchedulePosition])
     @scheduler_stage BB, BI = exBank_insolvent_shock!(BB, BI, b, ib, para)
 
     # ## # 资不抵债银行间违约损失传染阶段
