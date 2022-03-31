@@ -26,11 +26,11 @@ function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Di
 
     ## 过程：银行外部违约损失传染冲击 #BUG测试宏和函数正确性
     env[:processName] = "银行外部违约损失传染冲击过程"
-    @scheduler_process BB, BI, BB_t1, BI_t1, env = process_exBank_insolvent!(BB, BI, para, env)
+    @scheduler_process BB, BI, env = process_exBank_insolvent!(BB, BI, para, env)
 
     ## 过程：资不抵债银行间违约损失传染冲击
     env[:processName] = "资不抵债银行间违约损失传染冲击过程"
-    @scheduler_process BB, BI, BB_t1, BI_t1, env = process_interBank_insolvent!(BB, BI, BB_t1, BI_t1, para, env)
+    @scheduler_process BB, BI, env = process_interBank_insolvent!(BB, BI, para, env)
 
     ## 过程：外部挤兑流动传染冲击
     @scheduler_process BB, BI, env = process_exBank_illiquity!(BB, BI, para, env)
