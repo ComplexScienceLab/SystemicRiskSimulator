@@ -41,6 +41,7 @@ println("\n实验组开始：\n")
 for (i, para) in enumerate(list_combinationOfPara)
     env[:id_experiment] = i # 设定当前实验编号
     # 重置环境变量
+    env[:indexOfSchedulePosition] = []
     env[:step] = 0
     env[:tau] = 0
     env[:processName] = ""
