@@ -37,7 +37,9 @@ include("functions/fun_shock.jl")
 include("functions/fun_loss.jl")
 include("functions/fun_transfer.jl")
 include("functions/fun_agentModel.jl")
-include("functions/fun_process.jl")
+
+## 集成调度功能文件
+include("scheduler/schedulers.jl")
 
 ## 集成初始化函数文件
 include("initialization/fun_initVariables.jl")
@@ -46,6 +48,7 @@ include("initialization/fun_initVariables.jl")
 include("module/modules_contagion_and_shock.jl")
 
 ## 集成过程函数文件
+include("process/process.jl")
 include("process/process_exBank_insolvent.jl")
 include("process/process_interBank_insolvent.jl")
 include("process/process_exBank_illiquity.jl")

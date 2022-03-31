@@ -1,14 +1,20 @@
-"函数区：运行过程"
+"调度器"
 
-## 函数区：运行过程
+## 调度器
 
 ##########################################
 #状态/开发
 ##########################################
 
+"#NOW宏：调度并运行当前模型"
+macro scheduler_model(model, process::String)
 
-"#NOW宏：运行当前过程"#HACK不好把握，还不能用
-macro run_process(process)
+
+
+end
+
+"#NOW宏：调度并运行当前过程"
+macro scheduler_process(process)
     return esc(
         quote
             if (env[:stateOfProcessStep] == :stepping)
@@ -23,33 +29,28 @@ macro run_process(process)
                 env[:stateOfProcessStep] = :loading  # 切换过程运作状态为读取
                 @test println("切换过程运作状态为loading")
             end
-        end #quote
+        end # quote
     )
     # return :($(content))
 end # macro
 
 
 
-"#TODO宏：运行当前阶段"#HACK不好把握，还不能用
-macro run_stage(stage)
+"宏：调度并运行当前阶段"
+macro scheduler_stage(stage)
     expr = esc(
         quote
             # @test println("阶段：$(env[:stageName])")
-            if (env[:stateOfStageStep] == :stepping || (env[:stateOfStageStep] == :loading && env[:stageName] == env[:savedStageName]))
-                env[:isStep] = true
-                @test println("步进开始：")
+            if (env[:stateOfStageStep] == :stepping)
+                $(stage)
+                isAltToSavingState!(env)
+            elseif (env[:stateOfStageStep] == :loading && env[:stageName] == env[:savedStageName])
                 env[:stateOfStageStep] = :stepping # 切换阶段运作状态为步进
                 @test println("切换阶段运作状态为stepping")
+                env[:isStep] = true
+                @test println("步进开始：")
                 $(stage)
-                env[:step] += 1
-                if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-                    env[:isStep] = false
-                    @test println("步进结束。")
-                    env[:stateOfStageStep] = :saving # 切换阶段运作状态为存储
-                    @test println("切换阶段运作状态为saving")
-                    env[:stateOfProcessStep] = :saving # 切换过程运作状态为存储
-                    @test println("切换过程运作状态为saving")
-                end
+                isAltToSavingState!(env)
             elseif (env[:stateOfStageStep] == :saving)
                 env[:savedStageName] = env[:stageName]
                 @test println("下一次步进运行的阶段：$(env[:stageName])。")
@@ -64,3 +65,34 @@ macro run_stage(stage)
     return expr
 end # macro
 
+
+
+"函数：判断是否步进结束"
+function isAltToSavingState!(env::Dict)
+    env[:step] += 1
+    if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
+        env[:isStep] = false
+        @test println("步进结束。")
+        env[:stateOfStageStep] = :saving # 切换阶段运作状态为存储
+        @test println("切换阶段运作状态为saving")
+        env[:stateOfProcessStep] = :saving # 切换过程运作状态为存储
+        @test println("切换过程运作状态为saving")
+    end
+end
+
+"函数：判断是否结束循环"
+function isEndLoop!(env::Dict)
+    if (!env[:isProcess] || env[:tau] >= env[:maxNumOfTau])
+        env[:isLoop] = false
+        env[:isRound] = false
+        @test println("结束过程：$(env[:processName])。\n")
+    end
+end
+
+"函数：判断是否跳出过程"
+function isJumpOutProcess!(env::Dict)
+    if !env[:isStep]
+        env[:isLoop] = false
+        @test println("跳出过程：$(env[:processName])。\n")
+    end
+end

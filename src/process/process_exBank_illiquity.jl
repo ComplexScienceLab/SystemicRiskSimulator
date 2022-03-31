@@ -11,7 +11,7 @@ function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::
     env[:processName] = "银行外部挤兑流动传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
 
-    env[:tau] = 0 # 初始化回合
+    env[:isLoop] = true # 初始化循环状态
     env[:isRound] = true # 初始化回合状态
 
     env[:tau] += 1 # 回合累加一
@@ -26,7 +26,7 @@ function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::
     ## # 银行外部挤兑流动冲击阶段
     env[:stageName] = "银行外部挤兑流动冲击阶段"
     # @test println("阶段：$(env[:stageName])")
-    @run_stage BB, BI = exBank_illiquity_shock!(BB, BI, b, ib, para)
+    @scheduler_stage BB, BI = exBank_illiquity_shock!(BB, BI, b, ib, para)
 
     ## TODO存储数据
     # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
@@ -35,16 +35,11 @@ function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::
     ## 判定是否结束过程
     if BB.Shock_t == Shock_t_t1
         env[:isProcess] = false
+        @test println("env[:isProcess]=$(env[:isProcess])")
     end
 
-    ## 判定是否结束
-    if (!env[:isProcess] || env[:tau] >= env[:maxNumOfTau])
-        env[:isRound] = false
-        @test println("结束过程：$(env[:processName])。")
-    end
-    if !env[:isStep]
-        @test println("跳出过程：$(env[:processName])。")
-    end
+    isEndLoop!(env) # 判断是否结束循环
+    isJumpOutProcess!(env) # 判断是否跳出过程
 
     return BB, BI, env
 
