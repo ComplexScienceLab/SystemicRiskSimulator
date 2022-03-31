@@ -30,9 +30,9 @@ function setExperimentsFolders(env::Dict; isDatetime::Bool = true)
         throw(DomainError(env[:foldernameTypeOfExperimentsData], "关键词取值错误！"))
     end
 
-    foldername = str_manuallyName * str_datetime
+    env[:foldernameOfExperimentsData] = str_manuallyName * str_datetime
     folderdir = env[:rootDirOfExperimentsData]
-    env[:folderpathOfExperimentsData] = folderdir * foldername
+    env[:folderpathOfExperimentsData] = folderdir * env[:foldernameOfExperimentsData]
 
     mkpath(env[:folderpathOfExperimentsData]) # 创建文件夹
     return env
@@ -43,7 +43,7 @@ end # functioin
 "宏：当测试时使用"
 macro test(content)
     if env[:isTest]
-        return content
+        return esc(content)
         # return :(content)
         # return $(content)
         # return :($(content))
