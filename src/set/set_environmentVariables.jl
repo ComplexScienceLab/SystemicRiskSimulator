@@ -59,8 +59,8 @@ step = 0; # 当前步伐值为0。不要改动
 tau = 0; # 初始回合计次为0；
 id_experiment = 1; # 当前实验组编号；
 
-stateOfProcessStep = :standing; # 过程运作状态。状态符有以下几种：`:standing`：待命状态、`:indexing`：索引状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
-stateOfStageStep = :standing; # 阶段运作状态。状态符有以下几种：`:standing`：待命状态、`:indexing`：索引状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
+stateOfSchedule = :standing; # 调度运作状态。状态符有以下几种：`:standing`：待命状态、`:indexing`：索引状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
+
 isStep = true; # 是否处于步进状态；
 isLoop = true; # 是否处于循环状态
 isRound = true; # 是否处于回合状态；
@@ -68,11 +68,14 @@ isStage = true; # 是否处于阶段状态；
 isProcess = true; # 是否处于过程状态；
 isModel = true; # 是否处于模型状态；
 isExperiment = true; # 是否处于当前状态的一次实验；
-indexOfSchedulePosition = []; # 调度位置索引
-stageName = ""; # 运行的阶段之名称；
-savedStageName = ""; # 存储的当前阶段之名称；
+
+indexOfSchedulePosition = []; # 调度位置索引；
+indexProcess = 0; # 索引状态下，标记当前所在过程之位置
 processName = ""; # 运行的过程之名称；
 savedProcessName = ""; # 存储的过程之名称；
+indexStage = 0; # 索引状态下，标记当前所在阶段之位置
+stageName = ""; # 运行的阶段之名称；
+savedStageName = ""; # 存储的当前阶段之名称；
 
 
 
