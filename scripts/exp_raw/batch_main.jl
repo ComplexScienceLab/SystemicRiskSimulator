@@ -55,8 +55,8 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:isProcess] = true
     env[:isModel] = true
     env[:isExperiment] = true
-    env[:stateOfProcessStep] = :standing
-    env[:stateOfStageStep] = :standing
+    env[:stateOfSchedule] = :standing
+    env[:stateOfSchedule] = :standing
 
     @test println("\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
     @test println("\n相关实验参数：$(para)")
