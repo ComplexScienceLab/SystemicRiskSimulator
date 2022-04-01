@@ -27,8 +27,7 @@ env = @dict(
   step,
   tau,
   id_experiment,
-  stateOfProcessStep,
-  stateOfStageStep,
+  stateOfSchedule,
   isStep,
   isLoop,
   isRound,
@@ -36,11 +35,13 @@ env = @dict(
   isProcess,
   isModel,
   isExperiment,
-  pos_stage,
-  stageName,
-  savedStageName,
+  indexOfSchedulePosition,
+  indexProcess,
   processName,
   savedProcessName,
+  indexStage,
+  stageName,
+  savedStageName,
 )
 
 # env = environmentVariables # 别名
