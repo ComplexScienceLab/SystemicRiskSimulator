@@ -11,7 +11,14 @@
 using DrWatson
 @quickactivate "SystemicRisk" # 快速激活本项目
 
-include("../../src/include_files.jl")
+
+include("../include/include_exp_files.jl")
+
+include("../../src/SystemicRiskSimulation.jl")
+
+include("../../src/model/Models.jl")
+
+# using SystemicRiskSimulation
 
 
 
