@@ -6,38 +6,28 @@
 #状态/可扩展
 ##########################################
 
-## 集成设置项文件
-# include("../define/define_environmentVariables.jl")
-include("../set/set_environmentVariables.jl")
-include("../set/set_parameterVariables.jl")
+## # 集成核心文件
 
 ## 集成定义文件
-include("../define/define_type.jl")
-include("../define/define_agents.jl")
-include("../define/define_model.jl")
-include("../define/define_environmentVariables.jl")
-include("../define/define_parameterVariables.jl")
+include("../core/define/define_type.jl")
+include("../core/define/define_model.jl")
+include("../core/define/define_environmentVariables.jl")
 
 ## 集成定义常数文件
-include("../define/define_consts.jl")
+include("../core/define/define_consts.jl")
 
-## 集成功能函数文件
-include("../functions/fun_tools.jl")
-include("../functions/fun_balanceSheet.jl")
-include("../functions/fun_state.jl")
-include("../functions/fun_shock.jl")
-include("../functions/fun_loss.jl")
-include("../functions/fun_transfer.jl")
-include("../functions/fun_agentModel.jl")
 
 ## 集成调度功能文件
-include("../scheduler/schedulers.jl")
+include("../core/scheduler/schedulers.jl")
+include("../core/scheduler/fun_io.jl")
+include("../core/scheduler/fun_agentModel.jl")
+include("../core/scheduler/fun_makesim.jl")
 
 ## 集成初始化函数文件
-include("../initialization/fun_initVariables.jl")
+include("../core/initialization/fun_initVariables.jl")
 
-## 集成模块函数文件
-include("../module/modules_contagion_and_shock.jl")
+# ## 集成模块函数文件
+# include("../module/modules_contagion_and_shock.jl")
 
 ## 集成过程函数文件
 include("../process/process.jl")
@@ -53,6 +43,23 @@ include("../model/model_BI1111.jl")
 
 ## 集成做实验函数文件
 include("../experiments/fun_makesim.jl")
+
+
+## # 集成基础文件
+
+## 集成定义文件
+include("../base/define/define_agents.jl")
+include("../base/define/define_parameterVariables.jl")
+
+## 集成功能函数文件
+include("../base/functions/fun_balanceSheet.jl")
+include("../base/functions/fun_state.jl")
+include("../base/functions/fun_shock.jl")
+include("../base/functions/fun_loss.jl")
+include("../base/functions/fun_transfer.jl")
+include("../base/functions/fun_measure.jl")
+
+
 
 
 
