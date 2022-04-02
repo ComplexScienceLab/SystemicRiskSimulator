@@ -36,15 +36,19 @@ function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Di
         @scheduler_process BB, BI, env = process_interBank_insolvent!(BB, BI, para, env)
 
         ## 过程：外部挤兑流动传染冲击
+        env[:processName] = "银行外部挤兑流动传染冲击过程"
         @scheduler_process BB, BI, env = process_exBank_illiquity!(BB, BI, para, env)
 
         ## 过程：流动性短缺银行间挤兑流动传染冲击
+        env[:processName] = "流动性短缺银行间挤兑流动传染冲击过程"
         @scheduler_process BB, BI, env = process_interBank_illiquity!(BB, BI, para, env)
 
         ## 过程：外生破产银行间挤兑流动传染冲击 #HACK暂时不用
+        # env[:processName] = "外生破产银行间挤兑流动传染冲击过程"
         # @run_process BB, BI, env = process_exBank_bankrupt!(BB, BI, para, env)
 
         ## 过程：破产银行间挤兑流动传染冲击
+        env[:processName] = "破产银行间挤兑流动传染冲击过程"
         @scheduler_process BB, BI, env = process_interBank_bankrupt!(BB, BI, para, env)
 
 
