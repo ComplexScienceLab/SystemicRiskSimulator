@@ -148,7 +148,7 @@ function init_B_variables_importData()
 
 end
 
-"手动设置以初始化银行变量"
+"手动设置以初始化银行变量" #FIXME 须提取手动初始化方式为单独的方式
 function initVariables_setManually()
     ## 初始化商业银行群
     bank = BankCommercial{1,1}(
