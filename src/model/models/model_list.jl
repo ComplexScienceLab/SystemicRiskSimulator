@@ -12,9 +12,9 @@
 
 
 
-model_BI1111=Model(
+# list_model_BI1111=Model(
 
-)
+# )
 
 # [
 #     Dict((:modelname,:model_BI1111)),
