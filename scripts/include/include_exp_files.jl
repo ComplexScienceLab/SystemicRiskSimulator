@@ -6,9 +6,12 @@
 #状态/未使用
 ##########################################
 
+## 集成设置变量文件
 
+include("../variables/set_environmentVariables.jl")
+include("../variables/set_parameterVariables.jl")
 
-## 集成做实验函数文件
+## TODO集成做实验函数文件
 
 
 
