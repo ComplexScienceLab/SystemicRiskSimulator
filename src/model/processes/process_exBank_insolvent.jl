@@ -31,12 +31,12 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     env[:stageName] = "银行外部违约损失冲击阶段"
     # @test println("阶段：$(env[:stageName])")
     push!(env[:indexOfSchedulePosition])
-    @scheduler_stage BB, BI = exBank_insolvent_shock!(BB, BI, b, ib, para)
+    @scheduler_stage BB, BI = stage_exBank_insolvent_shock!(BB, BI, b, ib, para)
 
     # ## # 资不抵债银行间违约损失传染阶段
     env[:stageName] = "资不抵债银行间违约损失传染阶段"
     # @test println("阶段：$(env[:stageName])")
-    @scheduler_stage BB, BI = interBank_insolvent_contagion!(BB, BI, b, ib, para)
+    @scheduler_stage BB, BI = stage_interBank_insolvent_contagion!(BB, BI, b, ib, para)
 
     # ## 设置临时变量
     # BB_t1 = deepcopy(BB)
