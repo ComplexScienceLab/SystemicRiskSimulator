@@ -6,8 +6,11 @@
 	],
 	"settings": {
 		"workbench.colorCustomizations": {
-			"editor.background": "#fffef7"
+		
+			"editor.background": "#fffdeb"
 		},
-		"editor.fontLigatures": true
+		"editor.fontLigatures": true,
+		"workbench.colorTheme": "MacOS Modern Light - Big Sur Xcode Default",
+		"workbench.preferredDarkColorTheme": "MacOS Modern Light - Big Sur Xcode Default"
 	}
 }
