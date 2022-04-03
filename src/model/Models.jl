@@ -13,8 +13,17 @@
 # using 
 
 
-## 集成阶段文件#NOW
-
+## 集成阶段文件
+include("../model/stages/stage_exBank_insolvent_shock.jl")
+include("../model/stages/stage_interBank_insolvent_shock.jl")
+include("../model/stages/stage_interBank_insolvent_contagion.jl")
+include("../model/stages/stage_exBank_illiquity_shock.jl")
+include("../model/stages/stage_interBank_illiquity_contagion_shock.jl")
+include("../model/stages/stage_interBank_illiquity_allocate.jl")
+include("../model/stages/stage_interBank_illiquity_repay.jl")
+include("../model/stages/stage_exBank_bankrupt_contagion.jl")
+include("../model/stages/stage_interBank_bankrupt_contagion_shock.jl")
+include("../model/stages/stage_bankrupt_repay_shock.jl")
 
 ## 集成过程文件
 include("../model/processes/process_list.jl")
