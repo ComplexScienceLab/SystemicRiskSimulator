@@ -28,17 +28,17 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
         ## # 破产银行间挤兑流动传染冲击阶段
         env[:stageName] = "破产银行间挤兑流动传染冲击阶段"
         # @test println("阶段：$(env[:stageName])")
-        @scheduler_stage BB, BI = interBank_bankrupt_contagion_shock!(BB, BI, b, ib, para)
+        @scheduler_stage BB, BI = stage_interBank_bankrupt_contagion_shock!(BB, BI, b, ib, para)
 
         ## # 破产银行间挤兑流动分配借贷流量阶段
         env[:stageName] = "银行间挤兑流动分配借贷流量阶段"
         # @test println("阶段：$(env[:stageName])")
-        @scheduler_stage BB, BI = interBank_illiquity_allocate!(BB, BI, b, ib, para)
+        @scheduler_stage BB, BI = stage_interBank_illiquity_allocate!(BB, BI, b, ib, para)
 
         ## # 破产银行间挤兑流动执行借贷流量阶段
         env[:stageName] = "银行间挤兑流动执行借贷流量阶段"
         # @test println("阶段：$(env[:stageName])")
-        @scheduler_stage BB, BI = interBank_illiquity_repay!(BB, BI, b, ib, para)
+        @scheduler_stage BB, BI = stage_interBank_illiquity_repay!(BB, BI, b, ib, para)
 
         ## TODO存储数据
         # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
