@@ -27,7 +27,7 @@ include("../model/processes/process_interBank_bankrupt.jl")
 
 
 ## 集成模型文件
-include("../model/models/model_list.jl")
+# include("../model/models/model_list.jl")
 include("../model/models/model_BI1111.jl")
 
 

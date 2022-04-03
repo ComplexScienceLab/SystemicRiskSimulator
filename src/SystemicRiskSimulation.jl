@@ -21,31 +21,30 @@ using StructArrays
 using Graphs
 using Agents
 
-## # 集成核心文件
 
 ## 集成定义文件
 include("./core/define/define_type.jl")
 include("./core/define/define_model.jl")
 include("./core/define/define_environmentVariables.jl")
+include("./base/define/define_agents.jl")
+include("./base/define/define_parameterVariables.jl")
+
 
 ## 集成定义常数文件
 include("./core/define/define_consts.jl")
 
 
 ## 集成调度功能文件
-include("./core/scheduler/schedulers.jl")
 include("./core/scheduler/fun_io.jl")
 include("./core/scheduler/fun_agentModel.jl")
+include("./core/scheduler/schedulers.jl")
 include("./core/scheduler/fun_makesim.jl")
 
+
+
+
 ## 集成初始化函数文件
-include("./core/initialization/fun_initVariables.jl")
-
-## # 集成基础文件
-
-## 集成定义文件
-include("./base/define/define_agents.jl")
-include("./base/define/define_parameterVariables.jl")
+include("./base/initialization/fun_initVariables.jl")
 
 ## 集成功能函数文件
 include("./base/functions/fun_balanceSheet.jl")
