@@ -2,9 +2,25 @@
 
 
 "定义模型结构体"
-mutable struct Model{NDIMS1}
-    id::Int8 # 编号 id
-    name::String # 模型名称 name
-    list_process::Vector{Dict{Symbol,Symbol}} # 模型需要的过程列表 list_process
+mutable struct Model
+    id::ItemId # 编号 id
+    funName::ItemFunctionName # 函数名称 name
+    textName::ItemTextName # 文本名称 name
+    listProcess::ItemList # 过程列表 listProcess
+end
+
+"定义过程结构体"
+mutable struct Process
+    id::ItemId # 编号 id
+    funName::ItemFunctionName # 函数名称 functionName
+    textName::ItemTextName # 文本名称 textName
+    listStage::ItemList # 阶段列表 listStage
+end
+
+"定义阶段结构体"
+mutable struct Stage
+    id::ItemId # 编号 id
+    funName::ItemFunctionName # 函数名称 name
+    textName::ItemTextName # 文本名称 name
 end
 

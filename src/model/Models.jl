@@ -12,8 +12,13 @@
 
 # using 
 
+## 集成名称集合文件
+include("../model/model_variables/set_models.jl")
+include("../model/model_variables/set_processes.jl")
+include("../model/model_variables/set_stages.jl")
 
 ## 集成阶段文件
+include("../model/stages/stage_list.jl")
 include("../model/stages/stage_exBank_insolvent_shock.jl")
 include("../model/stages/stage_interBank_insolvent_shock.jl")
 include("../model/stages/stage_interBank_insolvent_contagion.jl")
@@ -36,7 +41,7 @@ include("../model/processes/process_interBank_bankrupt.jl")
 
 
 ## 集成模型文件
-# include("../model/models/model_list.jl")
+include("../model/models/model_list.jl")
 include("../model/models/model_BI1111.jl")
 
 

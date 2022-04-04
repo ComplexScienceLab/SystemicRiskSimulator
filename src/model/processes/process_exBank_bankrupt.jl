@@ -2,7 +2,7 @@
 #状态/暂停开发
 ##########################################
 
-"函数：过程之于外生破产银行间挤兑流动传染冲击"#HACK暂时不用
+"函数：外生破产银行间挤兑流动传染冲击过程"#HACK暂时不用
 function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
     if BB_t0.br != FALSE1 # 当最初存在已经判定倒闭的银行时执行以下过程 #FIXME 存在一些不协调的代码风格
