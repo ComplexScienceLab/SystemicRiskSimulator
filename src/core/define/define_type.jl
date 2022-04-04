@@ -24,6 +24,10 @@ TypeState{NDIMS2} = Array{Bool,NDIMS2} # 一维向量状态类型
 # EnvironmentVariables = Dict # 环境变量字典类型
 # ParameterVariables = Dict # 参数变量字典类型
 # primitive type EnvironmentVariables <: AbstractDict{Any,Any} end
+ItemId = Int8
+ItemFunctionName = Symbol
+ItemTextName = String
+ItemList = Vector{ItemName}
 
 
 # "定义个体复合类型。"
