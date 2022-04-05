@@ -8,7 +8,7 @@
 
 # module model_BI1111
 
-function model_BI1111(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
     env[:indexProcess] = 0 # 初始化过程所在位置
     env[:stateOfSchedule] = :indexing
