@@ -35,7 +35,7 @@ function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicR
     env[:stateOfSchedule] = :stepping #FIXME
     env[:stateOfSchedule] = :indexing
     env[:isStep] = true
-    systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
+    systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
 end
 
