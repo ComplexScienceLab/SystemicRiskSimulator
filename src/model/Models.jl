@@ -12,6 +12,10 @@
 
 # using 
 
+## 集成通用框架文件
+include("../model/models/fun_model_skeleton.jl")
+include("../model/processes/fun_process_skeleton.jl")
+
 ## 集成名称集合文件
 include("../model/model_variables/set_models.jl")
 include("../model/model_variables/set_processes.jl")
