@@ -36,12 +36,15 @@ env = @dict(
   isModel,
   isExperiment,
   indexOfSchedulePosition,
+  indexModel,
+  # modelName,
+  # savedModelName,
   indexProcess,
   processName,
-  savedProcessName,
+  savedIndexProcess,
   indexStage,
   stageName,
-  savedStageName,
+  savedIndexStage,
 )
 
 # env = environmentVariables # 别名
