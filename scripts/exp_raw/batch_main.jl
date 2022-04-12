@@ -51,6 +51,8 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:indexOfSchedulePosition] = []
     env[:step] = 0
     env[:tau] = 0
+    env[:savedModelName] = ""
+    env[:modelName] = ""
     env[:processName] = ""
     env[:savedProcessName] = ""
     env[:stageName] = ""
@@ -68,7 +70,11 @@ for (i, para) in enumerate(list_combinationOfPara)
     @test println("\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
     @test println("\n相关实验参数：$(para)")
 
-    makesim(para, env) # 进行实验
+    ## 调度：生成位置索引
+    env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(para[:modelName], env[:stateOfSchedule])
+    
+    ## 进行实验
+    makesim(para, env)
 
     @test println("本次实验结束，还剩下$(length(list_combinationOfPara)-env[:id_experiment])个实验。\n")
 end # for

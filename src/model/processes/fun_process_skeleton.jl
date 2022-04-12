@@ -14,7 +14,7 @@ Argument:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
     ## 过程：资不抵债银行间违约损失传染冲击
     env[:processName] = "资不抵债银行间违约损失传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
@@ -35,16 +35,27 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, par
         b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
 
-        ## # 资不抵债银行间违约损失冲击阶段
-        env[:stageName] = "资不抵债银行间违约损失冲击阶段"
-        # @test println("阶段：$(env[:stageName])")
-        @scheduler_stage BB, BI = stage_interBank_insolvent_shock!(BB, BI, b, ib, para)
+        ##NOW 运行每一个阶段
+        for (j,s) in eval(Meta.parse(enumerate(env[:processName] * ".listStage")))
+            env[:indexStage] = j
+            env[:stageName] = Symbol(s)
+            expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
+            @scheduler_stage Meta.parse(expr)
+        end
 
-        ## # 资不抵债银行间违约损失传染阶段
-        env[:stageName] = "资不抵债银行间违约损失传染阶段"
-        # @test println("阶段：$(env[:stageName])")
-        @scheduler_stage BB, BI = stage_interBank_insolvent_contagion!(BB, BI, b, ib, para)
+        # ## 判断是否结束
+        # if !env[:isStep]
+        #     @test println("步进已结束，跳出$(env[:modelName])。")
+        # end
 
+        # if env[:stateOfSchedule] == :standing
+        #     env[:isModel] = false
+        #     env[:isExperiment] = false
+        # end
+
+        # if (!env[:isModel] || !env[:isExperiment])
+        #     @test println("$(env[:modelName])结束。")
+        # end
 
         # ## 设置临时变量
         # BB_t1 = deepcopy(BB)
@@ -60,7 +71,7 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, par
         isRound!(env) # 判断是否结束回合
         isLoop!(env) # 判断是否结束循环
         isJumpOutModel!(env) # 判断是否跳出本次过程
-    
+
     end # while
 
     return BB, BI, env
