@@ -30,22 +30,23 @@ end
 # end
 
 
-"函数：Agent模型步进" #TODO方案一
+"函数：Agent模型步进" #BUG方案一
 function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict)
     env[:stateOfSchedule] = :stepping #FIXME
     env[:stateOfSchedule] = :indexing
     env[:isStep] = true
-    systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
+    model=fun_model_controller!(fun_model_skeleton!,modelContent)
+    systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = fun_model_skeleton!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
 end
 
-"函数：Agent模型步进" #TODO方案一
-function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict)
-    env[:stateOfSchedule] = :stepping #FIXME
-    env[:stateOfSchedule] = :indexing
-    env[:isStep] = true
-    systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
-    _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
-end
+# "函数：Agent模型步进" #BUG方案二
+# function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict)
+#     env[:stateOfSchedule] = :stepping #FIXME
+#     env[:stateOfSchedule] = :indexing
+#     env[:isStep] = true
+#     systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
+#     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
+# end
 
 

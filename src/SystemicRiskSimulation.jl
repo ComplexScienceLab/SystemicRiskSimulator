@@ -35,10 +35,11 @@ include("./core/define/define_consts.jl")
 
 
 ## 集成调度功能文件
-include("./core/scheduler/fun_io.jl")
-include("./core/scheduler/fun_agentModel.jl")
-include("./core/scheduler/schedulers.jl")
-include("./core/scheduler/fun_makesim.jl")
+include("./core/controller/fun_io.jl")
+include("./core/controller/fun_agentModel.jl")
+include("./core/controller/schedulers.jl")
+include("./core/controller/fun_makesim.jl")
+include("./core/controller/model_builder.jl")
 
 
 
