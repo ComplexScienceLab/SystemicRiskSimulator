@@ -22,6 +22,8 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
 
     env[:tau] = 0 # 初始化回合
 
+    
+
     if (env[:isModel])
         if (env[:tau] > 0)
             @test println("继续模型model：\n")
@@ -34,7 +36,9 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
     ##NOW 运行每一个过程
     for (i,p) in eval(Meta.parse(enumerate(para[:modelName] * ".listProcess")))
         env[:indexProcess] = i
+        @test println("env[:indexProcess] = $(i)")
         env[:processName] = Symbol(p)
+        @test println("env[:processName] = $(p)")
         expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
         @scheduler_process Meta.parse(expr)
     end

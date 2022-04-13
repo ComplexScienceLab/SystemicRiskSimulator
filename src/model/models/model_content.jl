@@ -6,7 +6,7 @@
 #状态/可扩展
 ##########################################
 
-model_BI1111 = Model(
+model_BI1111 = ModelContent(
     1, # 编号 id
     :model_BI1111, # 函数名称 functionName
     "模型BI1111", # 文本名称 textName
