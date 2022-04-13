@@ -71,7 +71,7 @@ for (i, para) in enumerate(list_combinationOfPara)
     @test println("\n相关实验参数：$(para)")
 
     ## 调度：生成位置索引
-    env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(para[:modelName], env[:stateOfSchedule])
+    env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(para[:modelName])
     
     ## 进行实验
     makesim(para, env)

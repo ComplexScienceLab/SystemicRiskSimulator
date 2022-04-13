@@ -10,7 +10,7 @@
 """
 NOW模型生成器
 """
-function model_builder(modelContent::Model; modelSkeleton::Function=fun_model_skeleton!)
+function model_builder(modelContent::ModelContent; modelSkeleton::Function=fun_model_skeleton!)
     
     return model
 end
@@ -19,7 +19,7 @@ end
 """
 NOW过程生成器
 """
-function process_builder(processContent::Process; processSkeleton::Function=fun_process_skeleton!)
+function process_builder(processContent::ProcessContent; processSkeleton::Function=fun_process_skeleton!)
 
     return process
 end
