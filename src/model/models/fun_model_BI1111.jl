@@ -60,7 +60,7 @@ function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::D
         @test println("步进已结束，跳出model_BI1111。")
     end
 
-    if env[:stateOfSchedule] == :standing
+    if env[:stateOfSchedule] == :idle
         env[:isModel] = false
         env[:isExperiment] = false
     end

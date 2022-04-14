@@ -17,20 +17,20 @@ Return:
 """
 function scheduler!(env::Dict)
     if (stateOfSchedule == :loading)
-        env[:stateOfSchedule], env[:loadedIndexProcess], env[:loadedIndexStage] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess]) # 读取
+        env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess]) # 读取
     end
     if env[:stateOfSchedule] == :stepping
-        env[:stateOfSchedule], env[:isStep] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
+        env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
     end
     # end
     if (stateOfSchedule == :saving)
-        env[:savedIndexProcess], env[:savedIndexStage] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
+        env[:savedIndexProcess], env[:savedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
     end
     if (stateOfSchedule == :collecting)
         env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
     end
     if (stateOfSchedule == :indexing)
-        env[:stateOfSchedule], env[:indexOfSchedulePosition] = scheduler_indexing(modelContent) # 索引
+        env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelContent) # 索引
     end
 end # function
 
@@ -48,14 +48,14 @@ function scheduler_indexing(modelContent::ModelContent)
     for (i, p) in enumerate(modelContent.listProcess)
         append!(indexOfSchedulePosition, [[]])
         @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
-        for (j, s) in evel(Meta.parse("$(p).listStage"))
+        for (j, s) in eval(Meta.parse("enumerate($(p).listStage)"))
             push!(indexOfSchedulePosition[i], j)
             @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         end
     end
     stateOfSchedule = :stepping
     @test println("切换调度运作状态为stepping")
-    return stateOfSchedule, indexOfSchedulePosition, StateOfSchedule
+    return indexOfSchedulePosition, stateOfSchedule
 end
 
 
@@ -66,9 +66,9 @@ Argument:
 - indexProcess::Int: 当前过程之位置；
 - savedIndexProcess::Int: 存储的过程之位置；
 Return: 
-- stateOfSchedule::Symbol: 调度状态；
 - loadedIndexProcess::Int: 读取的过程之位置；
 - loadedIndexStage::Int: 读取的阶段之位置；
+- stateOfSchedule::Symbol: 调度状态；
 """
 function scheduler_loading(indexOfSchedulePosition::Int, indexProcess::Int, savedIndexProcess::Int)
     if indexProcess == savedIndexProcess
@@ -86,7 +86,7 @@ function scheduler_loading(indexOfSchedulePosition::Int, indexProcess::Int, save
         stateOfSchedule = :stepping # 切换调度运作状态为步进
         @test println("切换调度运作状态为stepping")
     end
-    return stateOfSchedule, loadedIndexProcess, loadedIndexStage
+    return loadedIndexProcess, loadedIndexStage, stateOfSchedule
 end
 
 
@@ -103,8 +103,8 @@ Argument:
 - step::Int: 步进步数；
 - stepSize::Int: 步进尺寸；
 Return: 
-- stateOfSchedule::Symbol: 调度状态；
 - isStep::Bool: 是否步进；
+- stateOfSchedule::Symbol: 调度状态；
 """
 function scheduler_stepping(step::Int, stepSize::Int)
     step += 1
@@ -117,7 +117,7 @@ function scheduler_stepping(step::Int, stepSize::Int)
         stateOfSchedule = :stepping
         @test println("步进继续")
     end
-    return stateOfSchedule, isStep
+    return isStep, stateOfSchedule
 end
 
 
@@ -128,9 +128,9 @@ Argument:
 - indexProcess::Int: 当前过程之位置；
 - indexStage::Int: 当前阶段之位置；
 Return: 
-- stateOfSchedule::Symbol: 调度状态；
 - savedIndexProcess::Int: 存储的过程之位置；
 - savedIndexStage::Int: 存储的阶段之位置；；
+- stateOfSchedule::Symbol: 调度状态；
 """
 function scheduler_saving(indexOfSchedulePosition::Int, indexProcess::Int, indexStage::Int)
 
@@ -142,7 +142,7 @@ function scheduler_saving(indexOfSchedulePosition::Int, indexProcess::Int, index
     stateOfSchedule = :collecting # 切换调度运作状态为收集数据
     @test println("切换调度运作状态为collecting")
 
-    return stateOfSchedule, savedIndexProcess, savedIndexStage
+    return savedIndexProcess, savedIndexStage, stateOfSchedule
 end
 
 
