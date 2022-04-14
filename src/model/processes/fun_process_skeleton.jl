@@ -48,7 +48,7 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         #     @test println("步进已结束，跳出$(env[:modelName])。")
         # end
 
-        # if env[:stateOfSchedule] == :standing
+        # if env[:stateOfSchedule] == :idle
         #     env[:isModel] = false
         #     env[:isExperiment] = false
         # end

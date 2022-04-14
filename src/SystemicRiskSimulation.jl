@@ -29,10 +29,11 @@ include("./core/define/define_environmentVariables.jl")
 include("./base/define/define_agents.jl")
 include("./base/define/define_parameterVariables.jl")
 
-
 ## 集成定义常数文件
 include("./core/define/define_consts.jl")
 
+## 集成工具功能文件
+include("./core/controller/fun_tools.jl")
 
 ## 集成调度功能文件
 include("./core/controller/fun_io.jl")
@@ -40,9 +41,6 @@ include("./core/controller/fun_agentModel.jl")
 include("./core/controller/schedulers.jl")
 include("./core/controller/fun_makesim.jl")
 include("./core/controller/model_builder.jl")
-
-
-
 
 ## 集成初始化函数文件
 include("./base/initialization/fun_initVariables.jl")
