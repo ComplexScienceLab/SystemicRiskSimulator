@@ -17,12 +17,12 @@ Argument:
 function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
     env[:indexProcess] = 0 # 初始化过程所在位置
-    env[:stateOfSchedule] = :stepping
-    @test println("切换调度运作状态为$(env[:stateOfSchedule])")
+    # env[:stateOfSchedule] = :stepping
+    # @test println("切换调度运作状态为$(env[:stateOfSchedule])")
 
     env[:tau] = 0 # 初始化回合
 
-    
+
 
     if (env[:isModel])
         if (env[:tau] > 0)
@@ -32,15 +32,22 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
         end
     end
 
-    
+
     ##NOW 运行每一个过程
-    for (i,p) in eval(Meta.parse(enumerate(para[:modelName] * ".listProcess")))
+    for (i, p) in eval(Meta.parse(enumerate(para[:modelName] * ".listProcess")))
         env[:indexProcess] = i
         @test println("env[:indexProcess] = $(i)")
         env[:processName] = Symbol(p)
         @test println("env[:processName] = $(p)")
         expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
-        @scheduler_process Meta.parse(expr)
+        scheduler!(env)
+        if env[:stateOfSchedule] == :stepping
+            eval(Meta.parse(expr))
+        end
+        if env[:stateOfSchedule]==:collecting
+            #TODO 收集数据
+        # scheduler!(ModelContent, env, expr)
+        # @scheduler_process Meta.parse(expr)
     end
 
     ## 判断是否结束
