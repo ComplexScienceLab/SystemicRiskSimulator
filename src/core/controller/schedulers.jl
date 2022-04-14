@@ -15,34 +15,33 @@ Argument:
 Return: 
 - env::Dict: 环境变量；
 """
-function scheduler!(modelContent::ModelContent, env::Dict, process::Symbol, state::Symbol)
-    if (env[:stateOfSchedule] == :loading)
-        env[:stateOfSchedule] = scheduler_loading(env[:indexProcess], env[:savedIndexProcess])
-    elseif (env[:stateOfSchedule] == :stepping)
-        scheduler_stepping(process, env, env[:savedIndexProcess])
-    elseif (env[:stateOfSchedule] == :saving)
-        env[:savedIndexProcess], env[:savedIndexStage] = scheduler_saving(env[:stateOfSchedule], env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage])
-        env[:stateOfSchedule] = :collecting # 切换调度运作状态为收集数据
-        @test println("切换调度运作状态为collecting")
-    elseif (env[:stateOfSchedule] == :collecting)
-        scheduler_collecting()
-        env[:stateOfSchedule] = :loading  # 切换调度运作状态为读取
-        @test println("切换调度运作状态为loading")
-        # elseif (env[:stateOfSchedule] == :indexing) #HACK 冗余。事实上实验开始就索引了模型。
-        #     env[:indexOfSchedulePosition] = scheduler_indexing(modelContent, env[:stateOfSchedule])
-        #     env[:stateOfSchedule] = :loading  # 切换调度运作状态为读取
-        #     @test println("切换调度运作状态为loading")
-    end # if
-end
+function scheduler!(env::Dict)
+    if (stateOfSchedule == :loading)
+        env[:stateOfSchedule], env[:loadedIndexProcess], env[:loadedIndexStage] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess]) # 读取
+    end
+    if env[:stateOfSchedule] == :stepping
+        env[:stateOfSchedule], env[:isStep] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
+    end
+    # end
+    if (stateOfSchedule == :saving)
+        env[:savedIndexProcess], env[:savedIndexStage] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
+    end
+    if (stateOfSchedule == :collecting)
+        env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
+    end
+    if (stateOfSchedule == :indexing)
+        env[:stateOfSchedule], env[:indexOfSchedulePosition] = scheduler_indexing(modelContent) # 索引
+    end
+end # function
 
 
 """
 函数：调度索引
 Argument: 
 - modelContent::ModelContent: 被调度的模型内容；
-- stateOfSchedule::Symbol: 调度状态；
 Return: 
 - indexOfSchedulePosition::Array 调度位置索引列表；
+- stateOfSchedule::Symbol: 调度状态；
 """
 function scheduler_indexing(modelContent::ModelContent)
     indexOfSchedulePosition = []
@@ -54,71 +53,116 @@ function scheduler_indexing(modelContent::ModelContent)
             @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         end
     end
-    StateOfSchedule = :stepping
+    stateOfSchedule = :stepping
     @test println("切换调度运作状态为stepping")
-    return indexOfSchedulePosition, StateOfSchedule
+    return stateOfSchedule, indexOfSchedulePosition, StateOfSchedule
 end
 
 
-"#NOW函数：调度读取"
-function scheduler_loading(indexProcess::Int, savedIndexProcess::Int)
+"""
+函数：调度读取
+Argument: 
+- indexOfSchedulePosition::Int: 调度位置索引列表；
+- indexProcess::Int: 当前过程之位置；
+- savedIndexProcess::Int: 存储的过程之位置；
+Return: 
+- stateOfSchedule::Symbol: 调度状态；
+- loadedIndexProcess::Int: 读取的过程之位置；
+- loadedIndexStage::Int: 读取的阶段之位置；
+"""
+function scheduler_loading(indexOfSchedulePosition::Int, indexProcess::Int, savedIndexProcess::Int)
     if indexProcess == savedIndexProcess
-        stateOfSchedule = :stepping
+        if length(indexOfSchedulePosition) <= indexOfSchedulePosition[indexProcess+1]
+            if length(indexOfSchedulePosition[indexProcess]) <= indexOfSchedulePosition[indexProcess][indexStage+1]
+                loadedIndexProcess = indexOfSchedulePosition[indexProcess]
+                @test println("读取的过程：$(loadedIndexProcess)。")
+                loadedIndexStage = indexOfSchedulePosition[indexProcess][indexStage]
+                @test println("读取的阶段：$(loadedIndexStage)。")
+            else
+                loadedIndexProcess = indexOfSchedulePosition[indexProcess+1]
+                loadedIndexStage = 1
+            end
+        end
+        stateOfSchedule = :stepping # 切换调度运作状态为步进
         @test println("切换调度运作状态为stepping")
     end
-    return stateOfSchedule
+    return stateOfSchedule, loadedIndexProcess, loadedIndexStage
 end
 
 
-"#NOW函数：调度步进"
-function scheduler_stepping(process::Symbol, env::Dict=env, savedIndexProcess::Int)
-    $(process)
-    scheduler_altToSavingState!(env)
-    env[:stateOfSchedule] = :saving # 切换调度运作状态为存储
-    @test println("切换调度运作状态为saving")
-end
+# "函数：调度步进"
+# function scheduler_stepping(process::Symbol, env::Dict=env, savedIndexProcess::Int)
+#     $(process)
+#     scheduler_altToSavingState!(env)
+# end
 
+
+"""
+函数：调度步进
+Argument: 
+- step::Int: 步进步数；
+- stepSize::Int: 步进尺寸；
+Return: 
+- stateOfSchedule::Symbol: 调度状态；
+- isStep::Bool: 是否步进；
+"""
+function scheduler_stepping(step::Int, stepSize::Int)
+    step += 1
+    if step % stepSize == 0 # 是否完成本次步进
+        isStep = false
+        @test println("步进停止")
+        stateOfSchedule = :saving # 切换调度运作状态为存储
+        @test println("切换调度运作状态为saving")
+    else
+        stateOfSchedule = :stepping
+        @test println("步进继续")
+    end
+    return stateOfSchedule, isStep
+end
 
 
 """
 函数：调度存储
 Argument: 
-- stateOfSchedule::Symbol: 调度状态；
 - indexOfSchedulePosition::Int: 调度位置索引列表；
 - indexProcess::Int: 当前过程之位置；
 - indexStage::Int: 当前阶段之位置；
 Return: 
+- stateOfSchedule::Symbol: 调度状态；
 - savedIndexProcess::Int: 存储的过程之位置；
 - savedIndexStage::Int: 存储的阶段之位置；；
 """
-function scheduler_saving(stateOfSchedule::Symbol, indexOfSchedulePosition::Int, indexProcess::Int, indexStage::Int)
+function scheduler_saving(indexOfSchedulePosition::Int, indexProcess::Int, indexStage::Int)
 
     savedIndexProcess = indexOfSchedulePosition[indexProcess]
-    @test println("已存储步进运行的过程：$(processName)。")
+    @test println("存储的过程：$(savedIndexProcess)。")
     savedIndexStage = indexOfSchedulePosition[indexProcess][indexStage]
-    @test println("已存储步进运行的阶段：$(stageName)。")
+    @test println("存储的阶段：$(savedIndexStage)。")
 
-    #NOW是否冗余？ if length(indexOfSchedulePosition) <= indexOfSchedulePosition[indexProcess+1]
-    #     if length(indexOfSchedulePosition[indexProcess]) <= indexOfSchedulePosition[indexProcess][indexStage+1]
-    #         savedIndexProcess = indexOfSchedulePosition[indexProcess]
-    #         @test println("下一次步进运行的过程：$(processName)。")
-    #         savedIndexStage = indexOfSchedulePosition[indexProcess][indexStage]
-    #     else
-    #         savedIndexProcess = indexOfSchedulePosition[indexProcess+1]
-    #         savedIndexStage = 1
-    #     end
-    # end
+    stateOfSchedule = :collecting # 切换调度运作状态为收集数据
+    @test println("切换调度运作状态为collecting")
 
-    return savedIndexProcess, savedIndexStage
+    return stateOfSchedule, savedIndexProcess, savedIndexStage
 end
 
 
 
-"#NOW函数：调度搜集数据"
+"""
+#NOW函数：调度搜集数据
+Argument: 
+
+Return: 
+- stateOfSchedule::Symbol: 调度状态；
+"""
+
 function scheduler_collecting()
-    #TODO 收集数据
-
+    #TODO 收集数据        
+    stateOfSchedule = :loading  # 切换调度运作状态为读取
+    @test println("切换调度运作状态为loading")
+    return stateOfSchedule
 end
+
+
 
 "#NOW宏：调度当前过程。" #HACK 准备拆分为若干独立调度器函数
 macro scheduler_process(process)
@@ -160,14 +204,17 @@ macro scheduler_stage(stage)
             # @test println("阶段：$(env[:stageName])")
             if (env[:stateOfSchedule] == :stepping)
                 $(stage)
-                scheduler_altToSavingState!(env)
+                scheduler_stepping(env)
             elseif (env[:stateOfSchedule] == :loading && env[:stageName] == env[:savedStageName])
                 env[:stateOfSchedule] = :stepping # 切换调度运作状态为步进
                 @test println("切换调度运作状态为stepping")
                 env[:isStep] = true
                 @test println("步进开始")
                 $(stage)
-                scheduler_altToSavingState!(env)
+                env[:isStep] = scheduler_stepping(env[:step], env[:stepSize])
+                stateOfSchedule = :saving # 切换调度运作状态为存储
+                @test println("切换调度运作状态为saving")
+
             elseif (env[:stateOfSchedule] == :saving)
                 env[:savedIndexStage] = env[:indexStage]
                 @test println("下一次步进运行的阶段：$(env[:stageName])。")
@@ -188,17 +235,6 @@ macro scheduler_stage(stage)
 end # macro
 
 
-
-"函数：转换阶段状态为存储。"
-function scheduler_altToSavingState!(env::Dict)
-    env[:step] += 1
-    if env[:step] % env[:stepSize] == 0 # 是否完成本次步进
-        env[:isStep] = false
-        @test println("步进停止")
-        env[:stateOfSchedule] = :saving # 切换调度运作状态为存储
-        @test println("切换调度运作状态为saving")
-    end
-end
 
 
 "函数：判断是否继续运行循环"
