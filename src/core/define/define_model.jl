@@ -2,7 +2,7 @@
 
 
 "定义模型结构体"
-mutable struct ModelContent
+struct ModelContent
     id::ItemId # 编号 id
     funName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
@@ -10,7 +10,7 @@ mutable struct ModelContent
 end
 
 "定义过程结构体"
-mutable struct ProcessContent
+struct ProcessContent
     id::ItemId # 编号 id
     funName::ItemFunctionName # 函数名称 functionName
     textName::ItemTextName # 文本名称 textName
@@ -18,7 +18,7 @@ mutable struct ProcessContent
 end
 
 "定义阶段结构体"
-mutable struct StageContent
+struct StageContent
     id::ItemId # 编号 id
     funName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name

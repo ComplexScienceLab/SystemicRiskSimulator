@@ -64,17 +64,21 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:isProcess] = true
     env[:isModel] = true
     env[:isExperiment] = true
-    env[:stateOfSchedule] = :standing
-    env[:stateOfSchedule] = :standing
+    env[:stateOfSchedule] = :idle
+
+    # 生成模型
+    modelContent = eval(Meta.parse(para[:modelName]))
+    model = model_builder(modelContent; modelSkeleton=fun_model_skeleton!)
+
+    ## 调度：生成位置索引
+    env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelContent)
+
 
     @test println("\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
     @test println("\n相关实验参数：$(para)")
 
-    ## 调度：生成位置索引
-    env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(para[:modelName])
-    
     ## 进行实验
-    makesim(para, env)
+    makesim(model, para, env)
 
     @test println("本次实验结束，还剩下$(length(list_combinationOfPara)-env[:id_experiment])个实验。\n")
 end # for

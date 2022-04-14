@@ -7,102 +7,70 @@
 
 using DataFrames
 
-include("../src/core/define/define_type.jl")
-include("../src/core/define/define_model.jl")
-include("../src/core/define/define_type.jl")
-include("../src/model/models/model_content.jl")
-include("../src/model/processes/process_content.jl")
-include("../src/model/stages/stage_content.jl")
+# include("../src/core/controller/fun_tools.jl")
+# include("../src/core/define/define_type.jl")
+# include("../src/core/define/define_model.jl")
+# include("../src/model/models/model_content.jl")
+# include("../src/model/processes/process_content.jl")
+# include("../src/model/stages/stage_content.jl")
+# include("../src/model/models/fun_model_skeleton.jl")
+# include("../src/model/models/fun_model_BI1111.jl")
 
 
+# 模型内容结构体
+struct ModelContent
+    content::String
+end
 
-# expr=quote
+# 模型内容实例
+modelContent = ModelContent(
+    "我是模型核心内容。"
+)
 
-# """
-# 通用模型框架：
-# Argument: 
-# - BB::BankCommercial: 商业银行群变量；
-# - BI::BankInterbank: 银行间邻接矩阵变量；
-# - para::Dict: 参数变量；
-# - env::Dict: 环境变量；
-# """
-# function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+# 模型外围架构
+function modelSkeleton(modelContent)
+    println("我是模型外围架构。")
+end
 
-#     env[:indexProcess] = 0 # 初始化过程所在位置
-#     env[:stateOfSchedule] = :stepping
-#     @test println("切换调度运作状态为indexing")
+# 转换模型外围架构为表达式
+macro alterToExpr(expr)
+    # esc(
+        quote
+            $(expr)
+        end
+    # )
+    return expr
+end
 
-#     env[:tau] = 0 # 初始化回合
-
-#     if (!env[:isModel])
-#         if (env[:tau] > 0)
-#             @test println("继续模型model：\n")
-#         else
-#             @test println("开始模型model：\n")
-#         end
-#     end
-
-    
-#     ## 运行每一个过程
-#     for p in eval(Meta.parse(para[:modelName] * ".listProcess"))
-#         env[:processName] = Symbol(p)
-#         expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
-#         @scheduler_process Meta.parse(expr)
-#     end
-
-#     ## 判断是否结束
-#     if !env[:isStep]
-#         @test println("步进已结束，跳出$(env[:modelName])。")
-#     end
-
-#     if env[:stateOfSchedule] == :standing
-#         env[:isModel] = false
-#         env[:isExperiment] = false
-#     end
-
-#     if (!env[:isModel] || !env[:isExperiment])
-#         @test println("$(env[:modelName])结束。")
-#     end
-
-
-#     return BB, BI, para, env
-#     # return BB, BI, BB_tau, BI_tau, para, env
-# end # function
-
-# # end # module
-
-# end
-# 
-# 
-
-    # 
-# function model_builder(modelContent::Model; skeleton::Function=fun_model_skeleton!)
-#     print(skeleton) 
-# end
-
-# model_builder(model_BI1111)
-
-function scheduler_indexing(model::Model, stateOfSchedule::Symbol)
-    if stateOfSchedule == :indexing
-        indexOfSchedulePosition = []
-        n=0
-        for (i, p) in enumerate(model.listProcess)
-            append!(indexOfSchedulePosition, [[]])
-            for (j, s) in eval(Meta.parse("enumerate($(p).listStage)"))
-                n+=1
-                push!(indexOfSchedulePosition[i], n)
-            end
+# 生成表达式模型外围架构
+expr = @alterToExpr quote
+    function modelSkeleton(modelContent::ModelContent)
+        println("我是模型外围架构。")
+        if modelContent != nothing
+            println("已经插入了模型核心内容。内容是：$(modelContent.content)")
         end
     end
-    println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
-    stateOfSchedule = :stepping
-    # for i in indexOfSchedulePosition
-    #     println(indexOfSchedulePosition[i])
-    # end
-    return indexOfSchedulePosition, stateOfSchedule
+end
+
+println(typeof(expr))
+println(expr)
+
+# 模型生成器
+function modelBuilder(modelContent::ModelContent, modelSkeleton::Expr)
+    #TODO 载入modelSkeleton和modelContent。插modelContent入modelSkeleton，生成新的model，保存为文件："model.jl"
+    println("插入模型核心内容。")
+    modelSkeleton(modelContent)
 end
 
 
 
-idx,state = scheduler_indexing(model_BI1111,:indexing)
+# 载入模型代码文件
+# include("model.jl")
+
+# 运行模型代码文件里的模型
+
+
+
+
+
 
