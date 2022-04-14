@@ -76,9 +76,11 @@ indexOfSchedulePosition = []; # 调度位置索引；
 indexProcess = 0; # 索引状态下，标记当前所在过程之位置
 processName = ""; # 运行的过程之名称；
 savedIndexProcess = ""; # 存储的过程之位置；
+loadedIndexProcess = ""; # 读取的过程之位置；
 indexStage = 0; # 索引状态下，标记当前所在阶段之位置
 stageName = ""; # 运行的阶段之名称；
 savedIndexStage = ""; # 存储的当前阶段之位置；
+loadedIndexStage = ""; # 读取的当前阶段之位置；
 
 
 
