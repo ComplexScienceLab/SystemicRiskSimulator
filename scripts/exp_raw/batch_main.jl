@@ -68,7 +68,7 @@ for (i, para) in enumerate(list_combinationOfPara)
 
     # 生成模型
     modelContent = eval(Meta.parse(para[:modelName]))
-    model = model_builder(modelContent; modelSkeleton=fun_model_skeleton!)
+    model = modelBuilder!(modelContent; modelSkeleton=fun_model_skeleton!)
 
     ## 调度：生成位置索引
     env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelContent)
