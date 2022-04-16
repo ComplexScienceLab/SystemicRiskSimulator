@@ -68,7 +68,11 @@ for (i, para) in enumerate(list_combinationOfPara)
 
     # 生成模型
     modelContent = eval(Meta.parse(para[:modelName]))
-    model = modelBuilder!(modelContent; modelSkeleton=fun_model_skeleton!)
+
+    if # NOW如果不存在模型文件，则构建模型
+        
+    end
+    model = modelBuilder!(modelContent)
 
     ## 调度：生成位置索引
     env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelContent)

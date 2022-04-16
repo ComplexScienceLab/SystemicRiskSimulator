@@ -1,41 +1,36 @@
-# 定义：模型内容结构体
+
+
+## 定义类型别名
+TypeIds{NDIMS1} = Array{Int16,NDIMS1} # 向量编号类型
+TypeAbbrs{NDIMS1} = Array{String,NDIMS1} # 向量缩写类型
+TypeNames{NDIMS1} = Array{String,NDIMS1} # 向量名称类型
+TypeMoney{NDIMS2} = Array{Float32,NDIMS2} # 向量资金类型
+TypeState{NDIMS2} = Array{Bool,NDIMS2} # 一维向量状态类型
+# EnvironmentVariables = Dict # 环境变量字典类型
+# ParameterVariables = Dict # 参数变量字典类型
+# primitive type EnvironmentVariables <: AbstractDict{Any,Any} end
+ItemId = Int8
+ItemFunctionName = Symbol
+ItemTextName = String
+ItemList = Vector{Any}
+
+
+"定义过程结构体"
+struct ProcessContent
+    id::ItemId # 编号 id
+    functionName::ItemFunctionName # 函数名称 functionName
+    textName::ItemTextName # 文本名称 textName
+    listStage::ItemList # 阶段列表 listStage
+end
+
+"定义模型结构体"
 struct ModelContent
-    content::String
+    id::ItemId # 编号 id
+    functionName::ItemFunctionName # 函数名称 name
+    textName::ItemTextName # 文本名称 name
+    listProcess::Vector{ProcessContent} # 过程列表 listProcess
 end
 
-#= 定义：模型生成器
-做如下事情：
-1. 调取模型核心内容modelContent、模型外围框架modelSkeleton；
-2. 插入模型核心内容modelContent至模型外围框架modelSkeleton内，组合成模型model；
-3. 写出模型model为文件model.jl；
-=#
-function modelBuilder!(modelContent::ModelContent)
-
-    file_modelSkeleton = open("model_skeleton.jl", "r")
-    string_modelSkeleton = read(file_modelSkeleton, String)
-    println("模型外围框架：\n" * string_modelSkeleton * "\n")
-    close(file_modelSkeleton)
-    
-    string_model = string_modelSkeleton
-    println("替换前的模型：\n" * string_model * "\n")
-    
-    re010 = r"##\s插入modelContent"
-    string_model = replace(string_model, re010 => modelContent.content)
-    
-    re020 = """println("我是模型外围架构。虽然我可以运行起来，但是我需要被插入核心内容，才能成为一个有意义的模型。")"""
-    string_model = replace(string_model, re020 => """println("我是模型外围架构。")""")
-    
-    re030 = "modelSkeleton"
-    string_model = replace(string_model, re030 => "model")
-    
-    println("替换后的模型：\n" * string_model * "\n")
-    
-    run(`touch model.jl`)
-    open("model.jl","w") do file_model
-        write(file_model, string_model)
-    end
-   
-end
 
 # 定义：运行模型
 macro runModel()
@@ -46,6 +41,16 @@ macro runModel()
     println("开始运行模型model：")
     eval(expr)
     println("结束运行模型model。")
+end
+
+"宏：当测试时使用"
+macro test(content)
+    if env[:isTest]
+        return esc(content)
+        # return :(content)
+        # return $(content)
+        # return :($(content))
+    end
 end
 
 

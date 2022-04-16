@@ -14,7 +14,7 @@ Argument:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict) # 此处需要修改函数名称为实际待生成函数模型名称
 
     env[:indexProcess] = 0 # 初始化过程所在位置
     # env[:stateOfSchedule] = :stepping
@@ -30,23 +30,9 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
         end
     end
 
-    ##NOW 运行每一个过程
-    for (i, p) in eval(Meta.parse(enumerate(para[:modelName] * ".listProcess")))
-        env[:indexProcess] = i
-        @test println("env[:indexProcess] = $(i)")
-        env[:processName] = Symbol(p)
-        @test println("env[:processName] = $(p)")
-        expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
-        scheduler!(env)
-        if env[:stateOfSchedule] == :stepping
-            eval(Meta.parse(expr))
-        end
-        if env[:stateOfSchedule] == :collecting
-            #TODO 收集数据
-        end
-        # scheduler!(ModelContent, env, expr)
-        # @scheduler_process Meta.parse(expr)
-    end
+    ## 过程
+    
+    #=【插入表达式】=#
 
     ## 判断是否结束
     if !env[:isStep]
@@ -63,7 +49,7 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
     end
 
 
-    return BB, BI, para, env
+    # return BB, BI, para, env
     # return BB, BI, BB_tau, BI_tau, para, env
 end # function
 
