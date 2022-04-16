@@ -27,7 +27,10 @@ TypeState{NDIMS2} = Array{Bool,NDIMS2} # 一维向量状态类型
 ItemId = Int8
 ItemFunctionName = Symbol
 ItemTextName = String
-ItemList = Vector{ItemFunctionName}
+# ItemList = Vector{ItemFunctionName}
+ItemList = Vector{S}
+# ProcessItemList = Vector{ProcessContent}
+# ProcessItemList = Vector{StageContent}
 
 
 # "定义个体复合类型。"
