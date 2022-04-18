@@ -45,7 +45,7 @@ Return:
 """
 function scheduler_indexing(modelContent::ModelContent)
     indexOfSchedulePosition = []
-    for (i, p) in enumerate(modelContent.listProcess)
+    for (i, p) in enumerate(modelContent.listProcessContent)
         append!(indexOfSchedulePosition, [[]])
         @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         for (j, s) in eval(Meta.parse("enumerate($(p).listStage)"))

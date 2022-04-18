@@ -18,6 +18,7 @@ include("../../src/SystemicRiskSimulation.jl")
 
 include("../../src/model/Models.jl")
 
+
 # using SystemicRiskSimulation
 
 
@@ -71,8 +72,8 @@ for (i, para) in enumerate(list_combinationOfPara)
 
     if # NOW如果不存在模型文件，则构建模型
         
+        model = buildModel(modelContent)
     end
-    model = modelBuilder!(modelContent)
 
     ## 调度：生成位置索引
     env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelContent)
