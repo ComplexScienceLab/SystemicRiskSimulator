@@ -14,7 +14,7 @@ Argument:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict,processContent::ProcessContent)
     ## 过程：资不抵债银行间违约损失传染冲击
     env[:processName] = "资不抵债银行间违约损失传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
