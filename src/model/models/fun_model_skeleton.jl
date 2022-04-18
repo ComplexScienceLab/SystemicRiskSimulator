@@ -14,7 +14,7 @@ Argument:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, modelContent::ModelContent)
 
     env[:indexProcess] = 0 # 初始化过程所在位置
     # env[:stateOfSchedule] = :stepping
@@ -36,7 +36,8 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
         @test println("env[:indexProcess] = $(i)")
         env[:processName] = Symbol(p)
         @test println("env[:processName] = $(p)")
-        expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
+        # expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
+        BB, BI, env = process(BB, BI, para, env)
         scheduler!(env)
         if env[:stateOfSchedule] == :stepping
             eval(Meta.parse(expr))

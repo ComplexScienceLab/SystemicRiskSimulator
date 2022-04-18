@@ -24,7 +24,7 @@ using Agents
 
 ## 集成定义文件
 include("./core/define/define_type.jl")
-include("./core/define/define_model.jl")
+include("./core/define/define_component.jl")
 include("./core/define/define_environmentVariables.jl")
 include("./base/define/define_agents.jl")
 include("./base/define/define_parameterVariables.jl")
@@ -40,7 +40,10 @@ include("./core/controller/fun_io.jl")
 include("./core/controller/fun_agentModel.jl")
 include("./core/controller/schedulers.jl")
 include("./core/controller/fun_makesim.jl")
+include("./core/controller/process_builder.jl")
 include("./core/controller/model_builder.jl")
+include("./core/controller/process_runner.jl")
+include("./core/controller/model_runner.jl")
 
 ## 集成初始化函数文件
 include("./base/initialization/fun_initVariables.jl")
