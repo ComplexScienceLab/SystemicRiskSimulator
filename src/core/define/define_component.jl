@@ -7,21 +7,41 @@ struct Component{ComponentHierarchyType,ComponentInstanceType}
     run::Function # 运行组件
 end
 
+
+
 "定义阶段组件内容结构体"
 struct StageContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
-    run::Function # 函数
+    # run!::Function # 函数
 end
+
+
+"定义阶段组件"
+struct StageComponent{ComponentInstanceType}
+    name::String # 阶段名称
+    run!::Function # 运行阶段
+    content::StageContent # 阶段核心内容
+end
+
 
 "定义过程组件内容结构体"
 struct ProcessContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 functionName
     textName::ItemTextName # 文本名称 textName
-    listStageContent::Vector{StageContent} # 阶段内容列表 listStageContent
-    listStageFunction::Vector{Function} # 阶段函数列表 listStageFunction
+    # run!::Function # 函数
+    # listStageContent::Vector{StageContent} # 阶段内容列表 listStageContent
+    listStageComponent::Vector{StageComponent} # 阶段组件列表 listStageComponent
+end
+
+
+"定义过程组件"
+struct ProcessComponent{ComponentInstanceType}
+    name::String # 过程名称
+    run!::Function # 运行过程
+    content::ProcessContent # 过程核心内容
 end
 
 "定义模型组件内容结构体"
@@ -29,28 +49,17 @@ struct ModelContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
-    listProcessContent::Vector{ProcessContent} # 过程内容列表 listContentProcess
+    # run!::Function # 函数
+    # listProcessContent::Vector{ProcessContent} # 过程内容列表 listContentProcess
+    listProcessComponent::Vector{ProcessComponent} # 过程组件列表 listContentComponent
 end
-
-
 
 "定义模型组件"
 struct ModelComponent{ComponentInstanceType}
     name::String # 模型名称
+    run!::Function # 运行模型
     content::ModelContent # 模型核心内容
-    run::Function # 运行模型
 end
 
-"定义过程组件"
-struct ProcessComponent{ComponentInstanceType}
-    name::String # 过程名称
-    content::ProcessContent # 过程核心内容
-    run::Function # 运行过程
-end
 
-"定义阶段组件"
-struct StageComponent{ComponentInstanceType}
-    name::String # 过程名称
-    content::StageContent # 过程核心内容
-    run::Function # 运行过程
-end
+
