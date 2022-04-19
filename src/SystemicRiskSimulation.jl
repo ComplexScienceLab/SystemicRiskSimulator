@@ -40,10 +40,8 @@ include("./core/controller/fun_io.jl")
 include("./core/controller/fun_agentModel.jl")
 include("./core/controller/schedulers.jl")
 include("./core/controller/fun_makesim.jl")
-include("./core/controller/process_builder.jl")
-include("./core/controller/model_builder.jl")
-include("./core/controller/process_runner.jl")
-include("./core/controller/model_runner.jl")
+include("./core/controller/fun_builder.jl")
+include("./core/controller/fun_runner.jl")
 
 ## 集成初始化函数文件
 include("./base/initialization/fun_initVariables.jl")

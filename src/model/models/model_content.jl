@@ -10,6 +10,7 @@ model_BI1111 = ModelContent(
     1, # 编号 id
     :model_BI1111, # 函数名称 functionName
     "模型BI1111", # 文本名称 textName
+    # model_BI1111!, # 运行该函数 run
     [
         process_exBank_insolvent,
         process_interBank_insolvent,

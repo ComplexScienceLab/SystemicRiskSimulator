@@ -14,7 +14,7 @@ Argument:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict,processContent::ProcessContent)
+function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, processComponent::ProcessComponent)
     ## 过程：资不抵债银行间违约损失传染冲击
     env[:processName] = "资不抵债银行间违约损失传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
@@ -36,11 +36,15 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
 
         ##NOW 运行每一个阶段
-        for (j,s) in eval(Meta.parse(enumerate(env[:processName] * ".listStage")))
-            env[:indexStage] = j
-            env[:stageName] = Symbol(s)
-            expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
-            @scheduler_stage Meta.parse(expr)
+        for (idx_stage, stageComponent) in processComponent.content.listStageComponent
+            env[:indexStage] = idx_stage
+            @test println("env[:indexProcess] = $(idx_stage)")
+            env[:stageName] = Symbol(stageComponent)
+            @test println("env[:stageName] = $(stageComponent)")
+            BB, BI, env = runStage!(stageComponent)(BB, BI, para, env)
+            # BB, BI = processContent.listStageContent[idx_stage].run(BB, BI, b, ib, para)
+            # expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
+            # @scheduler_stage Meta.parse(expr)
         end
 
         # ## 判断是否结束

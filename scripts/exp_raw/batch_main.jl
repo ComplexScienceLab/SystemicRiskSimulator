@@ -45,6 +45,16 @@ end
 
 println("\n实验组开始：\n")
 
+## 构建本次实验组所需的所有模型
+for modelName in para[:modelName]
+    modelContent = eval(Meta.parse(para[:modelName]))
+
+    if # NOW如果不存在模型文件，则构建模型
+        
+        model = buildModel(modelContent)
+    end
+end
+
 ## 主循环
 for (i, para) in enumerate(list_combinationOfPara)
     env[:id_experiment] = i # 设定当前实验编号
@@ -66,14 +76,6 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:isModel] = true
     env[:isExperiment] = true
     env[:stateOfSchedule] = :idle
-
-    # 生成模型
-    modelContent = eval(Meta.parse(para[:modelName]))
-
-    if # NOW如果不存在模型文件，则构建模型
-        
-        model = buildModel(modelContent)
-    end
 
     ## 调度：生成位置索引
     env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelContent)
