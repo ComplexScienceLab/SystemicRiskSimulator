@@ -32,17 +32,20 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
 
     ##NOW 运行每一个过程
     # for (i, p) in eval(Meta.parse(enumerate(para[:modelName] * ".listProcess"))) # HACK 元编程方式
-    for (idx_process, processComponent) in modelComponent.content.listProcessComponent
+    # for (idx_process, processComponent) in modelComponent.content.listProcessComponent
+    # for (idx_process, processContent) in modelComponent.content.listProcessContent
+    for (idx_process, processContent) in modelComponent.process.content
         env[:indexProcess] = idx_process
-        @test println("env[:indexProcess] = $(idx_process)")
-        env[:processName] = Symbol(processComponent.name)
-        @test println("env[:processName] = $(processComponent)")
+        @test println("env[:indexProcess] = $(env[:indexProcess])")
+        env[:processName] = Symbol(processContent.name)
+        @test println("env[:processName] = $(env[:processName])")
         # expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
         # @scheduler_process Meta.parse(expr)
         scheduler!(env)
         if env[:stateOfSchedule] == :stepping
             # eval(Meta.parse(expr))
-            BB, BI, env = runProcess!(processComponent)(BB, BI, para, env)
+            BB, BI, para, env = modelComponent.process.run!(processContent)(BB, BI, para, env)
+            # BB, BI, env = runProcess!(processComponent)(BB, BI, para, env)
         end
         if env[:stateOfSchedule] == :collecting
             #TODO 收集数据

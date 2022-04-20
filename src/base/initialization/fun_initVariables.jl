@@ -10,6 +10,14 @@
 # export obj_BI,initObj
 
 
+"#NOW 初始化模型变量ModelComponent"
+function initModel()
+    model = ModelComponent(
+        model_BI1111!, # 任意初始化为某个过程
+        modelContent_BI1111 # 初始化为某个模型之内容
+    )
+    return model
+end
 
 "仅初始化银行变量"
 function init_B_variables_only()
@@ -306,9 +314,9 @@ function init_B_and_BI(; init_method::String)
     ## 更新各银行之变量，在第一回合初始时
     b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
     ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
-    update_B_Shock!(BB, BI, b, ib; byWay = "all") # 更新各银行之所有冲击变量，在第一回合开始时
-    update_B_balanceSheet!(BB, BI, b, ib; byWay = "all") # 更新各银行之资产负债表变量
-    update_B_state!(BB, BI; to = "any", from = "any") # 更新各银行之状态示性变量
+    update_B_Shock!(BB, BI, b, ib; byWay="all") # 更新各银行之所有冲击变量，在第一回合开始时
+    update_B_balanceSheet!(BB, BI, b, ib; byWay="all") # 更新各银行之资产负债表变量
+    update_B_state!(BB, BI; to="any", from="any") # 更新各银行之状态示性变量
 
     ## 存储初始数据
     BB_tau_0 = deepcopy(BB)

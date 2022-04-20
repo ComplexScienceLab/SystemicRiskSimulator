@@ -36,24 +36,24 @@ env = setExperimentsFolders(env)
 @test println("\n实验组名称：$(env[:foldernameOfExperimentsData])")
 
 ## 初始化参数变量
-_, para = enumerate(list_combinationOfPara)
-
+# (i, para) = enumerate(list_combinationOfPara)
 @test println("\n列出所有实验组：")
-for (i, p) in enumerate(list_combinationOfPara)
-    @test println("$(i): $(p);")
+for (idx_para, para) in enumerate(list_combinationOfPara)
+    @test println("$(idx_para): $(para);")
+    modelContent = eval(Meta.parse("modelContent_" * para[:modelName]))
+end
+
+## 构建本次实验组所需的所有模型
+model = buildModel(modelContent_BI1111)
+for (idx_para, para) in enumerate(list_combinationOfPara)
+    modelContent = eval(Meta.parse("modelContent_" * para[:modelName]))
+    # if true # FIXME如果不存在模型文件，则构建模型
+        model = buildModel(modelContent)
+    # end
+    # env[:modelName] = model.content.functionName
 end
 
 println("\n实验组开始：\n")
-
-## 构建本次实验组所需的所有模型
-for modelName in para[:modelName]
-    modelContent = eval(Meta.parse(para[:modelName]))
-
-    if # NOW如果不存在模型文件，则构建模型
-        
-        model = buildModel(modelContent)
-    end
-end
 
 ## 主循环
 for (i, para) in enumerate(list_combinationOfPara)
@@ -77,8 +77,11 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:isExperiment] = true
     env[:stateOfSchedule] = :idle
 
+    ## 生成模型内容
+    # modelComponent = eval(Meta.parse(para[:modelName]))
+
     ## 调度：生成位置索引
-    env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelContent)
+    env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(model)
 
 
     @test println("\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
