@@ -14,7 +14,7 @@ function makesim(model::ModelComponent,para::Dict, env::Dict)
     # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)
 
     ##BUG 测试具体模型。
-    systemicRiskAgent_step!(systemicRiskAgent, systemicRiskModel, para, env)
+    systemicRiskAgent_step!(systemicRiskAgent, systemicRiskModel, para, env,model)
 
     ##BUG 测试Agents框架
     # step!(systemicRiskModel, systemicRiskAgent_step!, env[:stepSize])
