@@ -15,7 +15,7 @@ Argument:
 Return: 
 - env::Dict: 环境变量；
 """
-function scheduler!(env::Dict)
+function scheduler!(model::ModelComponent, env::Dict)
     if (stateOfSchedule == :loading)
         env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess]) # 读取
     end
@@ -30,7 +30,7 @@ function scheduler!(env::Dict)
         env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
     end
     if (stateOfSchedule == :indexing)
-        env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelContent) # 索引
+        env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(model) # 索引
     end
 end # function
 
@@ -43,12 +43,14 @@ Return:
 - indexOfSchedulePosition::Array 调度位置索引列表；
 - stateOfSchedule::Symbol: 调度状态；
 """
-function scheduler_indexing(modelContent::ModelContent)
+function scheduler_indexing(model::ModelComponent)
     indexOfSchedulePosition = []
-    for (i, p) in enumerate(modelContent.listProcessComponent)
+    # for (i, _) in enumerate(model.content.listProcessContent)
+    for i in length(model.content.listProcessContent)
         append!(indexOfSchedulePosition, [[]])
         @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
-        for (j, s) in eval(Meta.parse("enumerate($(p).listStage)"))
+        # for (j, _) in eval(Meta.parse("enumerate(model.content.listStage)"))
+        for j in length(model.process.)
             push!(indexOfSchedulePosition[i], j)
             @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         end

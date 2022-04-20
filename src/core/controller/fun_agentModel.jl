@@ -31,11 +31,11 @@ end
 
 
 "函数：Agent模型步进" #BUG方案一
-function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict, modelComponent::ModelComponent)
+function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict, model::ModelComponent)
     env[:stateOfSchedule] = :stepping #FIXME
     env[:stateOfSchedule] = :indexing
     env[:isStep] = true
-    systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = runModel!(modelComponent) # 运行具体的模型，通过运行模型组件的方式
+    systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = runModel!(model) # 运行具体的模型，通过运行模型组件的方式
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = fun_model_skeleton!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = modelComponent.run!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
