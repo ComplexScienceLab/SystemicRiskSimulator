@@ -9,13 +9,16 @@
 """
 函数：阶段生成器
 """
-function buildStage(stageContent::StageContent; stageSkeleton::Function=stageSkeleton)
+function buildStage(stageContent::StageContent; stageSkeleton::Function=fun_stage_skeleton!)
     ## 获得阶段类型
     stageInstanceType = Symbol(stageContent.functionName)
 
     ## 生成阶段stage
-    stage = StageComponent{stageInstanceType}(stageSkeleton,
-        stageContent,
+    stage = StageComponent{stageInstanceType}(
+        stageContent.id,
+        stageContent.functionName,
+        stageContent.textName,
+        stageContent.modelFunction,
     )
 
     println("已经生成阶段$(stageContent.functionName)")
