@@ -14,7 +14,7 @@ struct StageContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
-    # run!::Function # 函数
+    modelFunction::Function # 函数
 end
 
 
@@ -44,7 +44,7 @@ struct StageComponent{ComponentInstanceType}
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
     run::Function # 运行阶段
-    content::StageContent # 阶段内容
+    # content::StageContent # 阶段内容
 end
 
 
