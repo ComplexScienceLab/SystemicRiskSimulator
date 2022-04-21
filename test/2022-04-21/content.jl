@@ -6,18 +6,21 @@ stageContent_1 = StageContent(
     1, # 编号 id
     :stage_1, # 函数名称 functionName
     "stage_1", # 文本名称 textName
+    stage_1!, # 函数名称
 )
 
 stageContent_2 = StageContent(
     2, # 编号 id
     :stage_2, # 函数名称 functionName
     "stage_2", # 文本名称 textName
+    stage_2!, # 函数名称
 )
 
 stageContent_3 = StageContent(
     3, # 编号 id
     :stage_3, # 函数名称 functionName
     "stage_3", # 文本名称 textName
+    stage_3!, # 函数名称
 )
 
 

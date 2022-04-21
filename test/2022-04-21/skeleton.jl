@@ -7,12 +7,11 @@ end
 
 function fun_process_skeleton!(data::Float64, processComponent::StageComponent)
     for (idx_stage, stageComponent) in enumerate(processComponent.content)
-        data = stageComponent.run(data, stageComponent)
+        data = stageComponent.run(data)
     end
     return data
 end
 
-function fun_stage_skeleton!(data::Float64, stageComponent::StageComponent)
-    data = stageComponent.
-        return data
-end
+# function fun_stage_skeleton!(data::Float64, stageComponent::StageComponent)
+#     return data
+# end
