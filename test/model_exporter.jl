@@ -39,7 +39,7 @@ function processExporter!(processContent::ModelContent; filepath_processSkeleton
     for p in modelContent.listProcess
         target030 *= """
         env[:processName] = "$(p.textName)"
-        BB, BI, env = $(String(p.functionName))!(BB, BI, para, env)
+        data, BI, env = $(String(p.functionName))!(data, BI, para, env)
         scheduler!(env)
         if env[:stateOfSchedule] == :stepping
             eval(Meta.parse(expr))
@@ -94,7 +94,7 @@ function modelExporter!(modelContent::ModelContent; filepath_modelSkeleton::Stri
     for p in modelContent.listProcess
         target030 *= """
         env[:processName] = "$(p.textName)"
-        BB, BI, env = $(String(p.functionName))!(BB, BI, para, env)
+        data, BI, env = $(String(p.functionName))!(data, BI, para, env)
         scheduler!(env)
         if env[:stateOfSchedule] == :stepping
             eval(Meta.parse(expr))

@@ -377,17 +377,17 @@ using DrWatson
 # end
 
 # # 初始化函数
-# BB = init_B()
+# data = init_B()
 
-# println(BB)
+# println(data)
 
-# println(BB.A_all)
+# println(data.A_all)
 
-# BB.Z_all=BB.A_all
-# BB.A_all=ONES1
+# data.Z_all=data.A_all
+# data.A_all=ONES1
 
-# println(BB.A_all,"\n",BB.Z_all)
-# println(pointer(BB.A_all),"\n",pointer(BB.Z_all))
+# println(data.A_all,"\n",data.Z_all)
+# println(pointer(data.A_all),"\n",pointer(data.Z_all))
 
 
 

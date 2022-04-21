@@ -8,26 +8,6 @@
 
 # include("../Models.jl")
 
-stageContent_exBank_insolvent_shock = StageContent(
-    1, # 编号 id
-    :stage_exBank_insolvent_shock, # 函数名称 functionName
-    "银行外部违约损失冲击阶段", # 文本名称 textName
-    # stage_exBank_insolvent_shock! # 函数 run
-)
-
-stageContent_interBank_insolvent_shock = StageContent(
-    2, # 编号 id
-    :stage_interBank_insolvent_shock, # 函数名称 functionName
-    "资不抵债银行间违约损失冲击阶段", # 文本名称 textName
-    # stage_interBank_insolvent_shock! # 函数 run
-)
-
-stageContent_interBank_insolvent_contagion = StageContent(
-    3, # 编号 id
-    :stage_interBank_insolvent_contagion, # 函数名称 functionName
-    "资不抵债银行间违约损失传染阶段", # 文本名称 textName
-    # stage_interBank_insolvent_contagion! # 函数 run
-)
 
 stageContent_exBank_illiquity_shock = StageContent(
     4, # 编号 id
