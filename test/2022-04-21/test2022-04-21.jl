@@ -9,5 +9,6 @@ include("fun_runner.jl")
 
 model = buildModel(modelContent_1)
 
-data = runModel!(model)
-data = model.run(data, model)
+data = 64.0
+data = runModel!(data,model)
+# data = model.run(data, model)

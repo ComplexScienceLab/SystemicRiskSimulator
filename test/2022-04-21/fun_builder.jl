@@ -32,19 +32,19 @@ end
 """
 函数：过程生成器
 """
-function buildProcess(processContent::ProcessContent; processSkeleton::Function=fun_process_skeleton!, stage::StageComponent=stage)
+function buildProcess(processContent::ProcessContent; processSkeleton::Function=fun_process_skeleton!)
     ## 获得过程类型
     modelType = Symbol(processContent.functionName)
 
     ## 生成子阶段组件列表
-    list_stage = Array{StageComponent}
+    list_stage = Vector{StageComponent}([])
     for stageContent in processContent.listStageContent
         stage = buildStage(stageContent)
-        append!(list_stage, stage)
+        append!(list_stage, [stage])
     end
 
     ## 生成过程process
-    process = StageComponent{modelType}(
+    process = ProcessComponent{modelType}(
         processContent.id,
         processContent.functionName,
         processContent.textName,
@@ -68,10 +68,10 @@ function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_mode
     modelType = Symbol(modelContent.functionName)
 
     ## 生成子过程组件列表
-    list_process = Array{StageComponent}
+    list_process = Vector{ProcessComponent}([])
     for processContent in modelContent.listProcessContent
         process = buildProcess(processContent)
-        append!(list_process, process)
+        append!(list_process, [process])
     end
 
     ## 生成模型model
