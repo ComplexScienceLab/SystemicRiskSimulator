@@ -10,7 +10,7 @@
 # export obj_BI,initObj
 
 
-"#NOW 初始化模型变量ModelComponent"
+"初始化模型变量ModelComponent"
 function initModel()
     model = ModelComponent(
         model_BI1111!, # 任意初始化为某个过程

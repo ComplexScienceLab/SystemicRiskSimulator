@@ -24,6 +24,7 @@ using Agents
 
 ## 集成定义文件
 include("./core/define/define_type.jl")
+include("./core/define/define_content.jl")
 include("./core/define/define_component.jl")
 include("./core/define/define_environmentVariables.jl")
 include("./base/define/define_agents.jl")

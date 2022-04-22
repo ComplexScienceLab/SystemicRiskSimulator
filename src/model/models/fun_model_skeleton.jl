@@ -8,7 +8,15 @@
 
 """
 通用模型框架：
+
 Argument: 
+- BB::BankCommercial: 商业银行群变量；
+- BI::BankInterbank: 银行间邻接矩阵变量；
+- para::Dict: 参数变量；
+- env::Dict: 环境变量；
+- modelComponent::ModelComponent: 模型组件实例；
+
+Return:
 - BB::BankCommercial: 商业银行群变量；
 - BI::BankInterbank: 银行间邻接矩阵变量；
 - para::Dict: 参数变量；
@@ -34,17 +42,17 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
     # for (i, p) in eval(Meta.parse(enumerate(para[:modelName] * ".listProcess"))) # HACK 元编程方式
     # for (idx_process, processComponent) in modelComponent.content.listProcessComponent
     # for (idx_process, processContent) in modelComponent.content.listProcessContent
-    for (idx_process, processContent) in modelComponent.process.content
+    for (idx_process, processComponent) in modelComponent.process.content
         env[:indexProcess] = idx_process
         @test println("env[:indexProcess] = $(env[:indexProcess])")
-        env[:processName] = Symbol(processContent.name)
+        env[:processName] = Symbol(processComponent.functionName)
         @test println("env[:processName] = $(env[:processName])")
         # expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
         # @scheduler_process Meta.parse(expr)
         scheduler!(env)
         if env[:stateOfSchedule] == :stepping
             # eval(Meta.parse(expr))
-            BB, BI, para, env = modelComponent.process.run!(processContent)(BB, BI, para, env)
+            BB, BI, para, env = runProcess!(BB, BI, para, env, processComponent)
             # BB, BI, env = runProcess!(processComponent)(BB, BI, para, env)
         end
         if env[:stateOfSchedule] == :collecting

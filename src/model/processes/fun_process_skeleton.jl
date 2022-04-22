@@ -8,7 +8,15 @@
 
 """
 通用过程框架：
+
 Argument: 
+- BB::BankCommercial: 商业银行群变量；
+- BI::BankInterbank: 银行间邻接矩阵变量；
+- para::Dict: 参数变量；
+- env::Dict: 环境变量；
+- processComponent::ProcessComponent: 过程组件实例；
+
+Return:
 - BB::BankCommercial: 商业银行群变量；
 - BI::BankInterbank: 银行间邻接矩阵变量；
 - para::Dict: 参数变量；
@@ -37,12 +45,12 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
 
         ##NOW 运行每一个阶段
         # for (idx_stage, stageComponent) in processComponent.content.listStageComponent
-        for (idx_stage, stageContent) in processComponent.content.listStageContent
+        for (idx_stage, stageComponent) in processComponent.content.listStageContent
             env[:indexStage] = idx_stage
             @test println("env[:indexProcess] = $(env[:indexStage])")
-            env[:stageName] = Symbol(stageContent)
+            env[:stageName] = Symbol(stageComponent.functionName)
             @test println("env[:stageName] = $(env[:stageName])")
-            BB, BI, para, env = stageContent.run!(stageContent)(BB, BI, para, env)
+            BB, BI, para, env = runStage!(BB, BI, para, env, stageComponent)
             # BB, BI, env = runStage!(stageComponent)(BB, BI, para, env)
             # BB, BI = processContent.listStageContent[idx_stage].run(BB, BI, b, ib, para)
             # expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"

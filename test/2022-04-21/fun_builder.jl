@@ -9,7 +9,7 @@
 """
 函数：阶段生成器
 """
-function buildStage(stageContent::StageContent; stageSkeleton::Function=fun_stage_skeleton!)
+function buildStage(stageContent::StageContent; stageSkeleton::Function = fun_stage_skeleton!)
     ## 获得阶段类型
     stageInstanceType = Symbol(stageContent.functionName)
 
@@ -32,7 +32,7 @@ end
 """
 函数：过程生成器
 """
-function buildProcess(processContent::ProcessContent; processSkeleton::Function=fun_process_skeleton!)
+function buildProcess(processContent::ProcessContent; processSkeleton::Function = fun_process_skeleton!)
     ## 获得过程类型
     modelType = Symbol(processContent.functionName)
 
@@ -62,7 +62,7 @@ end
 """
 函数：模型生成器
 """
-function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_model_skeleton!)
+function buildModel(modelContent::ModelContent; modelSkeleton::Function = fun_model_skeleton!)
 
     ## 获得模型类型
     modelType = Symbol(modelContent.functionName)

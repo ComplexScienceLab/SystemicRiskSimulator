@@ -1,28 +1,31 @@
 "生成器"
 
 ##########################################
-#状态/开发
+#状态/使用
 ##########################################
 
 
 
 """
-NOW函数：阶段生成器
-做如下事情：
-1. 调取阶段核心内容stageContent、阶段外围框架stageSkeleton；
-2. 插入阶段核心内容stageContent至阶段外围框架stageSkeleton内，组合成阶段stage；
-3. 写出阶段stage为文件stage.jl；
+函数：阶段实例生成器
+
 Argument: 
-- stageContent::StageContent: 阶段核心内容
+- stageContent::StageContent: 阶段核心内容；
+- stageSkeleton::Function = fun_stage_skeleton!: 阶段架构函数；
+
+Return:
+- stage::StageComponent: 阶段组件实例
 """
-function buildStage(stageContent::StageContent; stageSkeleton::Function=stageSkeleton)
+function buildStage(stageContent::StageContent; stageSkeleton::Function=fun_stage_skeleton!)
     ## 获得阶段类型
     stageInstanceType = Symbol(stageContent.functionName)
 
     ## 生成阶段stage
     stage = StageComponent{stageInstanceType}(
-        stageSkeleton,
-        stageContent,
+        stageContent.id,
+        stageContent.functionName,
+        stageContent.textName,
+        stageContent.modelFunction,
     )
 
     @test println("已经生成阶段$(stageContent.functionName)")
@@ -32,25 +35,34 @@ end
 
 
 
+"""
+函数：过程实例生成器
 
-"""
-NOW函数：过程生成器
-做如下事情：
-1. 调取过程核心内容processContent、过程外围框架processSkeleton；
-2. 插入过程核心内容processContent至过程外围框架processSkeleton内，组合成过程process；
-3. 写出过程process为文件process.jl；
 Argument: 
-- processContent::ProcessContent: 过程核心内容
+- processContent::ProcessContent: 过程核心内容；
+- processSkeleton::Function = fun_process_skeleton!: 过程架构函数；
+
+Return:
+- process::ProcessComponent: 过程组件实例
 """
-function buildProcess(processContent::ProcessContent; processSkeleton::Function=fun_process_skeleton!,stage::StageComponent=stage)
+function buildProcess(processContent::ProcessContent; processSkeleton::Function=fun_process_skeleton!)
     ## 获得过程类型
-    processInstanceType = Symbol(processContent.functionName)
+    modelType = Symbol(processContent.functionName)
+
+    ## 生成子阶段组件列表
+    list_stage = Vector{StageComponent}([])
+    for stageContent in processContent.listStageContent
+        stage = buildStage(stageContent)
+        append!(list_stage, [stage])
+    end
 
     ## 生成过程process
-    process = ProcessComponent{processInstanceType}(
+    process = ProcessComponent{modelType}(
+        processContent.id,
+        processContent.functionName,
+        processContent.textName,
         processSkeleton,
-        processContent,
-        stage=buildStage(processContent.listStageContent)
+        list_stage,
     )
 
     @test println("已经生成过程$(processContent.functionName)")
@@ -61,26 +73,34 @@ end
 
 
 """
-NOW函数：模型生成器
-做如下事情：
-1. 调取模型核心内容modelContent、模型外围框架modelSkeleton；
-2. 插入模型核心内容modelContent至模型外围框架modelSkeleton内，组合成模型model；
-3. 写出模型model为文件model.jl；
+函数：模型实例生成器
+
 Argument: 
-- modelContent::ModelContent: 模型核心内容
+- modelContent::ModelContent: 模型核心内容；
+- modelSkeleton::Function = fun_model_skeleton!: 模型架构函数；
+
+Return:
+- model::ModelComponent: 模型组件实例
 """
 function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_model_skeleton!)
 
     ## 获得模型类型
     modelType = Symbol(modelContent.functionName)
 
+    ## 生成子过程组件列表
+    list_process = Vector{ProcessComponent}([])
+    for processContent in modelContent.listProcessContent
+        process = buildProcess(processContent)
+        append!(list_process, [process])
+    end
+
     ## 生成模型model
     model = ModelComponent{modelType}(
+        modelContent.id,
+        modelContent.functionName,
+        modelContent.textName,
         modelSkeleton,
-        modelContent,
-        for i in modelContent.listProcessContent
-            process[i]=buildProcess(i)
-        end
+        list_process,
     )
 
     @test println("已经生成模型$(modelContent.functionName)")
