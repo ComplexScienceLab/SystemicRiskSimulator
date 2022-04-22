@@ -33,6 +33,7 @@ struct ComponentHierarchyType end # 定义组件层级结构类型：模型Model
 struct ComponentInstanceType end # 定义组件元素类型，有具体的定义；
 struct ModelType end # 定义模型类型
 struct ProcessType end # 定义过程类型
+struct StageType end # 定义阶段类型
 
 # ProcessItemList = Vector{ProcessContent}
 # ProcessItemList = Vector{StageContent}

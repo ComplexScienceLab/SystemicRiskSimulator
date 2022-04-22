@@ -9,9 +9,11 @@
 
 """
 #NOW函数：调度器
+
 Argument: 
 - modelContent::ModelContent: 被调度的模型内容；
 - env::Dict: 环境变量；
+
 Return: 
 - env::Dict: 环境变量；
 """
@@ -37,8 +39,10 @@ end # function
 
 """
 函数：调度索引
+
 Argument: 
 - modelContent::ModelContent: 被调度的模型内容；
+
 Return: 
 - indexOfSchedulePosition::Array 调度位置索引列表；
 - stateOfSchedule::Symbol: 调度状态；
@@ -46,11 +50,11 @@ Return:
 function scheduler_indexing(model::ModelComponent)
     indexOfSchedulePosition = []
     # for (i, _) in enumerate(model.content.listProcessContent)
-    for i in length(model.content.listProcessContent)
+    for i in 1:length(model.content)
         append!(indexOfSchedulePosition, [[]])
         @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         # for (j, _) in eval(Meta.parse("enumerate(model.content.listStage)"))
-        for j in length(model.process.)
+        for j in 1:length(model.content[i].content)
             push!(indexOfSchedulePosition[i], j)
             @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         end
