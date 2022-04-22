@@ -23,9 +23,7 @@ struct ProcessContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 functionName
     textName::ItemTextName # 文本名称 textName
-    # run!::Function # 函数
     listStageContent::Vector{StageContent} # 阶段内容列表 listStageContent
-    # listStageComponent::Vector{StageComponent} # 阶段组件列表 listStageComponent
 end
 
 
@@ -54,7 +52,7 @@ struct ProcessComponent{ComponentInstanceType}
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
     run::Function # 运行过程
-    content::Array{ProcessComponent} # 阶段组件列表
+    content::Array{StageComponent} # 阶段组件列表
 end
 
 
@@ -64,7 +62,7 @@ struct ModelComponent{ComponentInstanceType}
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
     run::Function # 运行模型
-    content::Array{StageComponent} # 过程组件列表
+    content::Array{ProcessComponent} # 过程组件列表
 end
 
 
