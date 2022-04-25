@@ -22,7 +22,7 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, processComponent::ProcessComponent)
+function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, process::ProcessComponent)
     ## 过程：资不抵债银行间违约损失传染冲击
     env[:processName] = "资不抵债银行间违约损失传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
@@ -45,12 +45,12 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
 
         ##NOW 运行每一个阶段
         # for (idx_stage, stageComponent) in processComponent.content.listStageComponent
-        for (idx_stage, stageComponent) in processComponent.content.listStageContent
+        for (idx_stage, stage) in enumerate(process.content)
             env[:indexStage] = idx_stage
             @test println("env[:indexProcess] = $(env[:indexStage])")
-            env[:stageName] = Symbol(stageComponent.functionName)
+            env[:stageName] = Symbol(stage.functionName)
             @test println("env[:stageName] = $(env[:stageName])")
-            BB, BI, para, env = runStage!(BB, BI, para, env, stageComponent)
+            BB, BI, para, env = runStage!(BB, BI, para, env, stage)
             # BB, BI, env = runStage!(stageComponent)(BB, BI, para, env)
             # BB, BI = processContent.listStageContent[idx_stage].run(BB, BI, b, ib, para)
             # expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
