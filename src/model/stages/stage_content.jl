@@ -33,7 +33,7 @@ stageContent_exBank_illiquity_shock = StageContent(
     4, # 编号 id
     :stage_exBank_illiquity_shock, # 函数名称 functionName
     "银行外部挤兑流动冲击阶段", # 文本名称 textName
-    stage_exBank_insolvent_shock!! # 函数 run
+    stage_exBank_insolvent_shock! # 函数 run
 )
 
 stageContent_interBank_illiquity_contagion_shock = StageContent(
