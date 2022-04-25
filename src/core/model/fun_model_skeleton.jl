@@ -22,7 +22,7 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, modelComponent::ModelComponent)
+function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, model::ModelComponent)
 
     env[:indexProcess] = 0 # 初始化过程所在位置
     # env[:stateOfSchedule] = :stepping
@@ -42,17 +42,16 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
     # for (i, p) in eval(Meta.parse(enumerate(para[:modelName] * ".listProcess"))) # HACK 元编程方式
     # for (idx_process, processComponent) in modelComponent.content.listProcessComponent
     # for (idx_process, processContent) in modelComponent.content.listProcessContent
-    for (idx_process, processComponent) in modelComponent.process.content
+    for (idx_process, process) in enumerate(model.content)
         env[:indexProcess] = idx_process
-        @test println("env[:indexProcess] = $(env[:indexProcess])")
-        env[:processName] = Symbol(processComponent.functionName)
-        @test println("env[:processName] = $(env[:processName])")
+        env[:processName] = Symbol(process.functionName)
+        @test println("env[:indexProcess] = $(env[:indexProcess]),  env[:processName] = $(env[:processName])")
         # expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
         # @scheduler_process Meta.parse(expr)
-        scheduler!(env)
+        scheduler!(model, env)
         if env[:stateOfSchedule] == :stepping
             # eval(Meta.parse(expr))
-            BB, BI, para, env = runProcess!(BB, BI, para, env, processComponent)
+            BB, BI, para, env = runProcess!(BB, BI, para, env, process)
             # BB, BI, env = runProcess!(processComponent)(BB, BI, para, env)
         end
         if env[:stateOfSchedule] == :collecting

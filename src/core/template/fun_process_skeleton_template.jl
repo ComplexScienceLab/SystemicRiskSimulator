@@ -40,7 +40,7 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
             env[:indexStage] = j
             env[:stageName] = Symbol(s)
             expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
-            @scheduler_stage Meta.parse(expr)
+            #= @scheduler_stage  =#Meta.parse(expr)
         end
 
         # ## 判断是否结束

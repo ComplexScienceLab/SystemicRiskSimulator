@@ -7,14 +7,14 @@
 
 
 "函数：运行一次仿真"
-function makesim(model::ModelComponent,para::Dict, env::Dict)
+function makesim(model::ModelComponent, para::Dict, env::Dict)
 
     ## 初始化agent及其模型
     systemicRiskAgent, systemicRiskModel, BB_tau_0, BI_tau_0, BB_tau, BI_tau = init_systemicRiskAgent!(para, env)
     # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)
 
     ##BUG 测试具体模型。
-    systemicRiskAgent_step!(systemicRiskAgent, systemicRiskModel, para, env,model)
+    systemicRiskAgent_step!(systemicRiskAgent, systemicRiskModel, para, env, model)
 
     ##BUG 测试Agents框架
     # step!(systemicRiskModel, systemicRiskAgent_step!, env[:stepSize])
