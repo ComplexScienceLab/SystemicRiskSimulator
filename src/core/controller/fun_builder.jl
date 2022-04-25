@@ -16,7 +16,7 @@ Argument:
 Return:
 - stage::StageComponent: 阶段组件实例
 """
-function buildStage(stageContent::StageContent; stageSkeleton::Function=fun_stage_skeleton!)
+function buildStage(stageContent::StageContent #=; stageSkeleton::Function=fun_stage_skeleton! =#)
     ## 获得阶段类型
     stageInstanceType = Symbol(stageContent.functionName)
 
