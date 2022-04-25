@@ -29,12 +29,12 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, par
         ## # 资不抵债银行间违约损失冲击阶段
         env[:stageName] = "资不抵债银行间违约损失冲击阶段"
         # @test println("阶段：$(env[:stageName])")
-        @scheduler_stage BB, BI = stage_interBank_insolvent_shock!(BB, BI, b, ib, para)
+        #= @scheduler_stage  =#BB, BI = stage_interBank_insolvent_shock!(BB, BI, b, ib, para)
 
         ## # 资不抵债银行间违约损失传染阶段
         env[:stageName] = "资不抵债银行间违约损失传染阶段"
         # @test println("阶段：$(env[:stageName])")
-        @scheduler_stage BB, BI = stage_interBank_insolvent_contagion!(BB, BI, b, ib, para)
+        #= @scheduler_stage  =#BB, BI = stage_interBank_insolvent_contagion!(BB, BI, b, ib, para)
 
 
         # ## 设置临时变量

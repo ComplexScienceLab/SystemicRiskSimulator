@@ -46,12 +46,13 @@ end
 
 ## 构建本次实验组所需的所有模型
 model = buildModel(modelContent_BI1111)
-for (idx_para, para) in enumerate(list_combinationOfPara)
-    modelContent = eval(Meta.parse("modelContent_" * para[:modelName]))
-    # if true # FIXME如果不存在模型文件，则构建模型
-        model = buildModel(modelContent)
-    # end
-    # env[:modelName] = model.content.functionName
+if length(setOfValuesOfParameterVariables[:modelName])>1
+    for modelName in setOfValuesOfParameterVariables[:modelName][2:end]
+        modelContent = eval(Meta.parse("modelContent_$(modelName)"))
+        # if true # FIXME如果不存在模型文件，则构建模型
+            model = buildModel(modelContent)
+        # end
+    end
 end
 
 println("\n实验组开始：\n")

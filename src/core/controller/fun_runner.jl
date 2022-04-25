@@ -24,7 +24,7 @@ Return:
 - env::Dict: 环境变量；
 """
 function runModel!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, modelComponent::ModelComponent)
-    BB, BI, para, env = modelComponent.run!(BB, BI, para, env, modelComponent)
+    BB, BI, para, env = modelComponent.run(BB, BI, para, env, modelComponent)
 end
 
 

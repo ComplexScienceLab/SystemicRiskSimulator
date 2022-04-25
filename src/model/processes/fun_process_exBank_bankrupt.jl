@@ -26,7 +26,7 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 外生破产银行间挤兑流动冲击阶段
-        @scheduler_stage BB, BI = exBank_bankrupt_shock!(BB, BI, b, ib, para)
+        #= @scheduler_stage  =#BB, BI = exBank_bankrupt_shock!(BB, BI, b, ib, para)
 
         ## TODO存储数据
         # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据

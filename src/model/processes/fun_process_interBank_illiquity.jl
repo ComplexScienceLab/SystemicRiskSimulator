@@ -27,13 +27,13 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 流动性短缺银行间挤兑流动传染冲击阶段
-        @scheduler_stage BB, BI = stage_interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)
+        #= @scheduler_stage  =#BB, BI = stage_interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)
 
         ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
-        @scheduler_stage BB, BI = stage_interBank_illiquity_allocate!(BB, BI, b, ib, para)
+        #= @scheduler_stage  =#BB, BI = stage_interBank_illiquity_allocate!(BB, BI, b, ib, para)
 
         ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
-        @scheduler_stage BB, BI = stage_interBank_illiquity_repay!(BB, BI, b, ib, para)
+        #= @scheduler_stage  =#BB, BI = stage_interBank_illiquity_repay!(BB, BI, b, ib, para)
 
         ## TODO存储数据
         # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据

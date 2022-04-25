@@ -17,14 +17,13 @@ Argument:
 Return: 
 - env::Dict: 环境变量；
 """
-function scheduler!(model::ModelComponent, env::Dict)
+function scheduler!(modelComponent::ModelComponent, env::Dict)
     if (stateOfSchedule == :loading)
         env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess]) # 读取
     end
     if env[:stateOfSchedule] == :stepping
         env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
     end
-    # end
     if (stateOfSchedule == :saving)
         env[:savedIndexProcess], env[:savedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
     end
@@ -32,7 +31,7 @@ function scheduler!(model::ModelComponent, env::Dict)
         env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
     end
     if (stateOfSchedule == :indexing)
-        env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(model) # 索引
+        env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelComponent) # 索引
     end
 end # function
 
@@ -52,13 +51,14 @@ function scheduler_indexing(model::ModelComponent)
     # for (i, _) in enumerate(model.content.listProcessContent)
     for i in 1:length(model.content)
         append!(indexOfSchedulePosition, [[]])
-        @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
+        # @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         # for (j, _) in eval(Meta.parse("enumerate(model.content.listStage)"))
         for j in 1:length(model.content[i].content)
             push!(indexOfSchedulePosition[i], j)
-            @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
+            # @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         end
     end
+    @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
     stateOfSchedule = :stepping
     @test println("切换调度运作状态为stepping")
     return indexOfSchedulePosition, stateOfSchedule
@@ -81,9 +81,9 @@ function scheduler_loading(indexOfSchedulePosition::Int, indexProcess::Int, save
         if length(indexOfSchedulePosition) <= indexOfSchedulePosition[indexProcess+1]
             if length(indexOfSchedulePosition[indexProcess]) <= indexOfSchedulePosition[indexProcess][indexStage+1]
                 loadedIndexProcess = indexOfSchedulePosition[indexProcess]
-                @test println("读取的过程：$(loadedIndexProcess)。")
+                @test print("读取的过程：$(loadedIndexProcess)。")
                 loadedIndexStage = indexOfSchedulePosition[indexProcess][indexStage]
-                @test println("读取的阶段：$(loadedIndexStage)。")
+                @test print("读取的阶段：$(loadedIndexStage)。\n")
             else
                 loadedIndexProcess = indexOfSchedulePosition[indexProcess+1]
                 loadedIndexStage = 1
@@ -141,9 +141,8 @@ Return:
 function scheduler_saving(indexOfSchedulePosition::Int, indexProcess::Int, indexStage::Int)
 
     savedIndexProcess = indexOfSchedulePosition[indexProcess]
-    @test println("存储的过程：$(savedIndexProcess)。")
     savedIndexStage = indexOfSchedulePosition[indexProcess][indexStage]
-    @test println("存储的阶段：$(savedIndexStage)。")
+    @test println("存储的过程：$(savedIndexProcess)，存储的阶段：$(savedIndexStage)。")
 
     stateOfSchedule = :collecting # 切换调度运作状态为收集数据
     @test println("切换调度运作状态为collecting")
