@@ -5,10 +5,10 @@
 ##########################################
 
 "函数：银行间挤兑流动分配借贷流量阶段"
-function stage_interBank_illiquity_allocate!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict)
+function stage_interBank_illiquity_allocate!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict,env::Dict)
     ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
-    env[:stageName] = "银行间挤兑流动分配借贷流量阶段"
-    @test println("阶段：$(env[:stageName])")
+    # env[:stageName] = "银行间挤兑流动分配借贷流量阶段"
+    @test println("开始阶段$(env[:stageName])：")
 
     update_B_state!(BB, BI; to = "needed collect A_P", from = "any")
     update_B_state!(BB, BI; to = "enabled collect A_P", from = "any")
@@ -29,5 +29,6 @@ function stage_interBank_illiquity_allocate!(BB::BankCommercial, BI::BankInterba
     end
     update_B_transfer!(BB, BI, b, ib; byWay = "Bo_BI")
 
-    return BB, BI
+    @test println("结束阶段$(env[:stageName])。")
+    # return BB, BI
 end # function

@@ -23,8 +23,6 @@ Return:
 - env::Dict: 环境变量；
 """
 function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, process::ProcessComponent)
-    ## 过程：资不抵债银行间违约损失传染冲击
-    env[:processName] = "资不抵债银行间违约损失传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
 
     env[:indexStage] = 0 # 初始化阶段所在位置
@@ -47,14 +45,21 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         # for (idx_stage, stageComponent) in processComponent.content.listStageComponent
         for (idx_stage, stage) in enumerate(process.content)
             env[:indexStage] = idx_stage
-            @test println("env[:indexProcess] = $(env[:indexStage])")
             env[:stageName] = Symbol(stage.functionName)
-            @test println("env[:stageName] = $(env[:stageName])")
-            BB, BI, para, env = runStage!(BB, BI, para, env, stage)
+            @test println("env[:indexStage] = $(env[:indexStage]),  env[:stageName] = $(env[:stageName])")
+            scheduler!(process, env)
+            if env[:stateOfSchedule] == :stepping
+                runStage!(BB, BI, b, ib, para, env, stage)
+            end
             # BB, BI, env = runStage!(stageComponent)(BB, BI, para, env)
             # BB, BI = processContent.listStageContent[idx_stage].run(BB, BI, b, ib, para)
             # expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
             # @scheduler_stage Meta.parse(expr)
+            if env[:stateOfSchedule] == :collecting
+                #TODO 收集数据
+                @test println("收集数据。")
+            end
+
         end
 
         # ## 判断是否结束

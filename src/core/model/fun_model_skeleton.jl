@@ -51,7 +51,7 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
         scheduler!(model, env)
         if env[:stateOfSchedule] == :stepping
             # eval(Meta.parse(expr))
-            BB, BI, para, env = runProcess!(BB, BI, para, env, process)
+            runProcess!(BB, BI, para, env, process)
             # BB, BI, env = runProcess!(processComponent)(BB, BI, para, env)
         end
         if env[:stateOfSchedule] == :collecting
