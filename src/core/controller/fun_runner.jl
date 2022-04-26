@@ -46,7 +46,7 @@ Return:
 - env::Dict: 环境变量；
 """
 function runProcess!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, processComponent::ProcessComponent)
-    BB, BI, para, env = processComponent.run(BB, BI, para, env, processComponent)
+    processComponent.run(BB, BI, para, env, processComponent)
 end
 
 
@@ -67,9 +67,8 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function runStage!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, stageComponent::StageComponent)
-    BB, BI, para, env = stageComponent.run(BB, BI, para, env)
-    return BB, BI, para, env
+function runStage!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict, stageComponent::StageComponent)
+    stageComponent.run(BB, BI, b, ib, para, env)
 end
 
 

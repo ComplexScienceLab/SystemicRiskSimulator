@@ -8,7 +8,7 @@
 function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
     ## 过程：流动性短缺银行间挤兑流动传染冲击
-    env[:processName] = "流动性短缺银行间挤兑流动传染冲击过程"
+    # env[:processName] = "流动性短缺银行间挤兑流动传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
 
     env[:indexStage] = 0 # 初始化阶段所在位置
@@ -27,13 +27,13 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 流动性短缺银行间挤兑流动传染冲击阶段
-        #= @scheduler_stage  =#BB, BI = stage_interBank_illiquity_contagion_shock!(BB, BI, b, ib, para)
+        BB, BI = stage_interBank_illiquity_contagion_shock!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
 
         ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
-        #= @scheduler_stage  =#BB, BI = stage_interBank_illiquity_allocate!(BB, BI, b, ib, para)
+        BB, BI = stage_interBank_illiquity_allocate!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
 
         ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
-        #= @scheduler_stage  =#BB, BI = stage_interBank_illiquity_repay!(BB, BI, b, ib, para)
+        BB, BI = stage_interBank_illiquity_repay!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
 
         ## TODO存储数据
         # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
@@ -45,11 +45,12 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         isRound!(env) # 判断是否结束回合
         isLoop!(env) # 判断是否结束循环
         isJumpOutModel!(env) # 判断是否跳出本次过程
-    
+        
     end # while
+    
+    @test println("结束过程：$(env[:processName])。")
 
-
-    return BB, BI, env
+    return BB, BI, para, env
 
 
 end # function

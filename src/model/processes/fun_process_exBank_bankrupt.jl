@@ -8,7 +8,7 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
     if BB_t0.br != FALSE1 # 当最初存在已经判定倒闭的银行时执行以下过程 #FIXME 存在一些不协调的代码风格
 
         ## 过程：外生破产银行间挤兑流动传染冲击 #TODO增加参数，判断是否增加外生冲击。 #HACK这个过程可以暂时不使用。
-        env[:processName] = "外生破产银行间挤兑流动传染冲击过程"
+        # env[:processName] = "外生破产银行间挤兑流动传染冲击过程"
         @test println("开始过程：$(env[:processName])：")
 
         env[:indexStage] = 0 # 初始化阶段所在位置
@@ -39,8 +39,11 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         isRound!(env) # 判断是否结束回合
         isLoop!(env) # 判断是否结束循环
         isJumpOutModel!(env) # 判断是否跳出本次过程
+    
 
-        return BB, BI, env
+        @test println("结束过程：$(env[:processName])。")
+
+        return BB, BI, para, env
     end # if
 
 

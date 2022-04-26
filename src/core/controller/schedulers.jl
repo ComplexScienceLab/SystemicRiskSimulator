@@ -17,12 +17,12 @@ Argument:
 Return: 
 - env::Dict: 环境变量；
 """
-function scheduler!(modelComponent::ModelComponent, env::Dict)
+function scheduler!(component::Union{ModelComponent,ProcessComponent}, env::Dict)
     if (stateOfSchedule == :loading)
         env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess]) # 读取
     end
     if env[:stateOfSchedule] == :stepping
-        env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
+        env[:step],env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
     end
     if (stateOfSchedule == :saving)
         env[:savedIndexProcess], env[:savedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
@@ -31,7 +31,7 @@ function scheduler!(modelComponent::ModelComponent, env::Dict)
         env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
     end
     if (stateOfSchedule == :indexing)
-        env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(modelComponent) # 索引
+        env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(component) # 索引
     end
 end # function
 
@@ -114,16 +114,17 @@ Return:
 """
 function scheduler_stepping(step::Int, stepSize::Int)
     step += 1
-    if step % stepSize == 0 # 是否完成本次步进
+    if step % (stepSize + 1) == 0 # 是否完成本次步进
         isStep = false
-        @test println("步进停止")
+        @test println("步进停止。")
         stateOfSchedule = :saving # 切换调度运作状态为存储
         @test println("切换调度运作状态为saving")
     else
+        isStep = true
         stateOfSchedule = :stepping
-        @test println("步进继续")
+        @test println("步进继续：")
     end
-    return isStep, stateOfSchedule
+    return step, isStep, stateOfSchedule
 end
 
 
@@ -143,7 +144,6 @@ function scheduler_saving(indexOfSchedulePosition::Int, indexProcess::Int, index
     savedIndexProcess = indexOfSchedulePosition[indexProcess]
     savedIndexStage = indexOfSchedulePosition[indexProcess][indexStage]
     @test println("存储的过程：$(savedIndexProcess)，存储的阶段：$(savedIndexStage)。")
-
     stateOfSchedule = :collecting # 切换调度运作状态为收集数据
     @test println("切换调度运作状态为collecting")
 
