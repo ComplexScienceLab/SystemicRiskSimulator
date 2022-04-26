@@ -9,7 +9,7 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
 
 
     ## 过程：银行外部违约损失传染冲击
-    env[:processName] = "银行外部违约损失传染冲击过程"
+    # env[:processName] = "银行外部违约损失传染冲击过程"
     @test println("开始过程：$(env[:processName])：")
 
     env[:indexStage] = 0 # 初始化阶段所在位置
@@ -28,15 +28,15 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     BB_isv_t1 = deepcopy(BB.isv)
 
     ## # 银行外部违约损失冲击阶段
-    env[:stageName] = "银行外部违约损失冲击阶段"
+    # env[:stageName] = "银行外部违约损失冲击阶段"
     # @test println("阶段：$(env[:stageName])")
     push!(env[:indexOfSchedulePosition])
-    #= @scheduler_stage  =#BB, BI = stage_exBank_insolvent_shock!(BB, BI, b, ib, para)
+    BB, BI = stage_exBank_insolvent_shock!(BB, BI, b, ib, para, env)    #= @scheduler_stage  =#
 
     # ## # 资不抵债银行间违约损失传染阶段
-    env[:stageName] = "资不抵债银行间违约损失传染阶段"
+    # env[:stageName] = "资不抵债银行间违约损失传染阶段"
     # @test println("阶段：$(env[:stageName])")
-    #= @scheduler_stage  =#BB, BI = stage_interBank_insolvent_contagion!(BB, BI, b, ib, para)
+    BB, BI = stage_interBank_insolvent_contagion!(BB, BI, b, ib, para, env)    #= @scheduler_stage  =#
 
     # ## 设置临时变量
     # BB_t1 = deepcopy(BB)
@@ -56,7 +56,10 @@ function process_exBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::
     isJumpOutModel!(env) # 判断是否跳出本次过程
 
 
-    return BB, BI, env
+    @test println("结束过程：$(env[:processName])。")
+
+
+    return BB, BI, para, env
 
 
 end # function
