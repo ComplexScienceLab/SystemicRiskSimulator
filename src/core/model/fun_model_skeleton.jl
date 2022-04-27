@@ -32,9 +32,9 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
 
     if (env[:isModel])
         if (env[:tau] > 0)
-            @test println("继续模型model：\n")
+            @test println("\n继续模型：env[:modelName]\n")
         else
-            @test println("开始模型model：\n")
+            @test println("开始模型：$(env[:modelName])\n")
         end
     end
 
@@ -48,15 +48,15 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
         @test println("env[:indexProcess] = $(env[:indexProcess]),  env[:processName] = $(env[:processName])")
         # expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
         # @scheduler_process Meta.parse(expr)
-        scheduler!(model, env)
-        if env[:stateOfSchedule] == :stepping
+        # scheduler!(env)
+        # if env[:stateOfSchedule] == :stepping
             # eval(Meta.parse(expr))
             runProcess!(BB, BI, para, env, process)
             # BB, BI, env = runProcess!(processComponent)(BB, BI, para, env)
-        end
-        if env[:stateOfSchedule] == :collecting
+        # end
+        # if env[:stateOfSchedule] == :collecting
             #TODO 收集数据
-        end
+        # end
         # scheduler!(ModelContent, env, expr)
         # @scheduler_process Meta.parse(expr)
     end
