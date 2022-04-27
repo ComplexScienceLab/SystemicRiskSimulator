@@ -70,8 +70,8 @@ isModel = true; # 是否处于模型状态；
 isExperiment = true; # 是否处于当前状态的一次实验；
 
 indexModel = 0; # 索引状态下，标记当前所在模型之位置; 
-# modelName = ""; # 运行的模型之名称; 
-# savedModelName = ""; # 存储的模型之名称; 
+modelName = ""; # 运行的模型之名称; 
+savedModelName = ""; # 存储的模型之名称; 
 indexOfSchedulePosition = []; # 调度位置索引；
 indexProcess = 0; # 索引状态下，标记当前所在过程之位置
 processName = ""; # 运行的过程之名称；

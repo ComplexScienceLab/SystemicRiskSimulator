@@ -46,11 +46,11 @@ end
 
 ## 构建本次实验组所需的所有模型
 model = buildModel(modelContent_BI1111)
-if length(setOfValuesOfParameterVariables[:modelName])>1
+if length(setOfValuesOfParameterVariables[:modelName]) > 1
     for modelName in setOfValuesOfParameterVariables[:modelName][2:end]
         modelContent = eval(Meta.parse("modelContent_$(modelName)"))
         # if true # FIXME如果不存在模型文件，则构建模型
-            model = buildModel(modelContent)
+        model = buildModel(modelContent)
         # end
     end
 end
@@ -62,7 +62,7 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:id_experiment] = i # 设定当前实验编号
     # 重置环境变量
     env[:indexOfSchedulePosition] = []
-    env[:step] = 0
+    env[:step] = 1
     env[:tau] = 0
     env[:savedModelName] = ""
     env[:modelName] = ""
@@ -83,8 +83,11 @@ for (i, para) in enumerate(list_combinationOfPara)
     # modelComponent = eval(Meta.parse(para[:modelName]))
 
     ## 调度：生成位置索引
-    env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(model)
+    if env[:stateOfSchedule] == :indexing
+        env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(model)
+    end
 
+    env[:modelName] = model.functionName
 
     @test println("\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
     @test println("\n相关实验参数：$(para)")

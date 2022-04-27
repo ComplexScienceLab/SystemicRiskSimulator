@@ -39,7 +39,7 @@ function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::
     end
     isRound!(env) # 判断是否结束回合
     isLoop!(env) # 判断是否结束循环
-    isJumpOutModel!(env) # 判断是否跳出本次过程
+    isStep!(env) # 判断是否跳出本次过程
 
 
     @test println("结束过程：$(env[:processName])。")
