@@ -47,7 +47,7 @@ Return:
 """
 function buildProcess(processContent::ProcessContent; processSkeleton::Function=fun_process_skeleton!)
     ## 获得过程类型
-    modelType = Symbol(processContent.functionName)
+    processInstanceType = Symbol(processContent.functionName)
 
     ## 生成子阶段组件列表
     list_stage = Vector{StageComponent}([])
@@ -57,10 +57,11 @@ function buildProcess(processContent::ProcessContent; processSkeleton::Function=
     end
 
     ## 生成过程process
-    process = ProcessComponent{modelType}(
+    process = ProcessComponent{processInstanceType}(
         processContent.id,
         processContent.functionName,
         processContent.textName,
+        # processContent.conditionToContinueProcess,
         processSkeleton,
         list_stage,
     )
@@ -85,7 +86,7 @@ Return:
 function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_model_skeleton!)
 
     ## 获得模型类型
-    modelType = Symbol(modelContent.functionName)
+    modelInstanceType = Symbol(modelContent.functionName)
 
     ## 生成子过程组件列表
     list_process = Vector{ProcessComponent}([])
@@ -95,7 +96,7 @@ function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_mode
     end
 
     ## 生成模型model
-    model = ModelComponent{modelType}(
+    model = ModelComponent{modelInstanceType}(
         modelContent.id,
         modelContent.functionName,
         modelContent.textName,

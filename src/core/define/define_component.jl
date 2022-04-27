@@ -23,6 +23,7 @@ struct ProcessComponent{ComponentInstanceType}
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
+    # conditionToContinueProcess::Expr # 判断条件用以结束过程 conditionToContinueProcess
     run::Function # 运行过程
     content::Array{StageComponent} # 阶段组件列表
 end

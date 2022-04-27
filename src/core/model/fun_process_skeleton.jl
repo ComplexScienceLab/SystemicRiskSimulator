@@ -47,18 +47,29 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
             env[:indexStage] = idx_stage
             env[:stageName] = Symbol(stage.functionName)
             @test println("env[:indexStage] = $(env[:indexStage]),  env[:stageName] = $(env[:stageName])")
-            scheduler!(process, env)
-            if env[:stateOfSchedule] == :stepping
-                runStage!(BB, BI, b, ib, para, env, stage)
+
+            ## 调度状态
+            if env[:stateOfSchedule] != :loading
+                if env[:stateOfSchedule] == :stepping
+                    runStage!(BB, BI, b, ib, para, env, stage)
+                    env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
+                end
+                if env[:stateOfSchedule] == :saving
+                    env[:savedIndexProcess], env[:savedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
+                end
+                if env[:stateOfSchedule] == :collecting
+                    env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
+                end
+            else
+                env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess]) # 读取
             end
+
+            # scheduler!(#= process,  =#env) # 调度状态
             # BB, BI, env = runStage!(stageComponent)(BB, BI, para, env)
             # BB, BI = processContent.listStageContent[idx_stage].run(BB, BI, b, ib, para)
             # expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
             # @scheduler_stage Meta.parse(expr)
-            if env[:stateOfSchedule] == :collecting
-                #TODO 收集数据
-                @test println("收集数据。")
-            end
+
 
         end
 
@@ -84,12 +95,15 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
         # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
-        if BB.isv == BB_isv_t1 # 判定是否结束过程
-            env[:isProcess] = false
+        if (process.functionName == :process_exBank_insolvent || process.functionName == :process_interBank_insolvent)
+            isProcess!(BB.isv, BB_isv_t1) # 判断是否结束过程
+        else
+            isProcess!(BB.Shock_t, BB_Shock_t_t1) # 判断是否结束过程
         end
+        # @isProcess! eval(process.conditionToContinueProcess) # 判断是否结束过程
         isRound!(env) # 判断是否结束回合
+        isStep!(env) # 判断是否结束步进
         isLoop!(env) # 判断是否结束循环
-        isJumpOutModel!(env) # 判断是否跳出本次过程
 
     end # while
 

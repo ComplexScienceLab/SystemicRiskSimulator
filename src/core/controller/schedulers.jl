@@ -17,22 +17,22 @@ Argument:
 Return: 
 - env::Dict: 环境变量；
 """
-function scheduler!(component::Union{ModelComponent,ProcessComponent}, env::Dict)
-    if (stateOfSchedule == :loading)
+function scheduler!(env::Dict)#= component::Union{ModelComponent,ProcessComponent},  =#
+    if env[:stateOfSchedule] == :loading
         env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess]) # 读取
     end
     if env[:stateOfSchedule] == :stepping
-        env[:step],env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
+        env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
     end
-    if (stateOfSchedule == :saving)
+    if env[:stateOfSchedule] == :saving
         env[:savedIndexProcess], env[:savedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
     end
-    if (stateOfSchedule == :collecting)
+    if env[:stateOfSchedule] == :collecting
         env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
     end
-    if (stateOfSchedule == :indexing)
-        env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(component) # 索引
-    end
+    # if (stateOfSchedule == :indexing) #HACK 冗余
+    #     env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(component) # 索引
+    # end
 end # function
 
 
@@ -50,17 +50,17 @@ function scheduler_indexing(model::ModelComponent)
     indexOfSchedulePosition = []
     # for (i, _) in enumerate(model.content.listProcessContent)
     for i in 1:length(model.content)
-        append!(indexOfSchedulePosition, [[]])
+        append!(indexOfSchedulePosition, [[i, []]])
         # @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         # for (j, _) in eval(Meta.parse("enumerate(model.content.listStage)"))
         for j in 1:length(model.content[i].content)
-            push!(indexOfSchedulePosition[i], j)
+            push!(indexOfSchedulePosition[i][2], j)
             # @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
         end
     end
     @test println("indexOfSchedulePosition=$(indexOfSchedulePosition)")
-    stateOfSchedule = :stepping
-    @test println("切换调度运作状态为stepping")
+    stateOfSchedule = :loading
+    @test println("切换调度运作状态为saving")
     return indexOfSchedulePosition, stateOfSchedule
 end
 
@@ -76,16 +76,15 @@ Return:
 - loadedIndexStage::Int: 读取的阶段之位置；
 - stateOfSchedule::Symbol: 调度状态；
 """
-function scheduler_loading(indexOfSchedulePosition::Int, indexProcess::Int, savedIndexProcess::Int)
+function scheduler_loading(indexOfSchedulePosition::Vector{Any}, indexProcess::Int, savedIndexProcess::Int)
     if indexProcess == savedIndexProcess
-        if length(indexOfSchedulePosition) <= indexOfSchedulePosition[indexProcess+1]
-            if length(indexOfSchedulePosition[indexProcess]) <= indexOfSchedulePosition[indexProcess][indexStage+1]
-                loadedIndexProcess = indexOfSchedulePosition[indexProcess]
-                @test print("读取的过程：$(loadedIndexProcess)。")
-                loadedIndexStage = indexOfSchedulePosition[indexProcess][indexStage]
-                @test print("读取的阶段：$(loadedIndexStage)。\n")
+        if length(indexOfSchedulePosition[:, 1]) <= indexOfSchedulePosition[indexProcess+1][1] # 如果当前过程不是该模型之最后一个过程
+            if length(indexOfSchedulePosition[indexProcess][1]) <= indexOfSchedulePosition[indexProcess][indexStage+1][1]
+                loadedIndexProcess = indexOfSchedulePosition[indexProcess][1]
+                loadedIndexStage = indexOfSchedulePosition[indexProcess][2][indexStage]
+                @test print("读取的过程：$(loadedIndexProcess)，读取的阶段：$(loadedIndexStage)。\n")
             else
-                loadedIndexProcess = indexOfSchedulePosition[indexProcess+1]
+                loadedIndexProcess = indexOfSchedulePosition[indexProcess+1][1]
                 loadedIndexStage = 1
             end
         end
@@ -116,9 +115,8 @@ function scheduler_stepping(step::Int, stepSize::Int)
     step += 1
     if step % (stepSize + 1) == 0 # 是否完成本次步进
         isStep = false
-        @test println("步进停止。")
         stateOfSchedule = :saving # 切换调度运作状态为存储
-        @test println("切换调度运作状态为saving")
+        @test println("步进停止。切换调度运作状态为saving")
     else
         isStep = true
         stateOfSchedule = :stepping
@@ -139,10 +137,10 @@ Return:
 - savedIndexStage::Int: 存储的阶段之位置；；
 - stateOfSchedule::Symbol: 调度状态；
 """
-function scheduler_saving(indexOfSchedulePosition::Int, indexProcess::Int, indexStage::Int)
+function scheduler_saving(indexOfSchedulePosition::Vector{Any}, indexProcess::Int, indexStage::Int)
 
-    savedIndexProcess = indexOfSchedulePosition[indexProcess]
-    savedIndexStage = indexOfSchedulePosition[indexProcess][indexStage]
+    savedIndexProcess = indexOfSchedulePosition[indexProcess][1]
+    savedIndexStage = indexOfSchedulePosition[indexProcess][2][indexStage]
     @test println("存储的过程：$(savedIndexProcess)，存储的阶段：$(savedIndexStage)。")
     stateOfSchedule = :collecting # 切换调度运作状态为收集数据
     @test println("切换调度运作状态为collecting")
@@ -162,6 +160,8 @@ Return:
 
 function scheduler_collecting()
     #TODO 收集数据        
+    @test println("收集数据。")
+
     stateOfSchedule = :loading  # 切换调度运作状态为读取
     @test println("切换调度运作状态为loading")
     return stateOfSchedule
@@ -169,7 +169,7 @@ end
 
 
 
-"#NOW宏：调度当前过程。" #HACK 准备拆分为若干独立调度器函数
+"#宏：调度当前过程。" #HACK 或将废弃
 macro scheduler_process(process)
     return esc(
         quote
@@ -202,7 +202,7 @@ end # macro
 
 
 
-"#NOW宏：调度当前阶段。"
+"#宏：调度当前阶段。" #HACK 或将废弃
 macro scheduler_stage(stage)
     expr = esc(
         quote
@@ -240,7 +240,29 @@ macro scheduler_stage(stage)
 end # macro
 
 
+"宏：判断是否结束过程"
+function isProcess!(condition01, condition02)
+    if condition01 == condition02 # 判断是否结束过程
+        env[:isProcess] = false
+    end
+end
 
+"函数：判断是否继续运行回合"
+function isRound!(env::Dict)
+    if (env[:tau] < env[:maxNumOfTau])
+        env[:isRound] = true
+    else
+        env[:isRound] = false
+        @test println("结束回合：$(env[:processName])。\n")
+    end
+end
+
+"函数：判断是否继续步进"
+function isStep!(env::Dict)
+    if !env[:isStep]
+        @test println("暂时跳出模型：$(env[:modelName])之过程：$(env[:processName])之阶段：$(env[:stageName])。\n")
+    end
+end
 
 "函数：判断是否继续运行循环"
 function isLoop!(env::Dict)
@@ -251,22 +273,4 @@ function isLoop!(env::Dict)
         @test println("跳出循环：$(env[:processName])。\n")
     end
 end
-
-"函数：判断是否继续运行回合"
-function isRound!(env::Dict)
-    if (env[:tau] >= env[:maxNumOfTau])
-        env[:isRound] = true
-    else
-        env[:isRound] = false
-        @test println("结束回合：$(env[:processName])。\n")
-    end
-end
-
-"函数：判断是否跳出模型"
-function isJumpOutModel!(env::Dict)
-    if !env[:isStep]
-        @test println("跳出模型之过程：$(env[:processName])之阶段：$(env[:stageName])。\n")
-    end
-end
-
 
