@@ -62,10 +62,17 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:id_experiment] = i # 设定当前实验编号
     # 重置环境变量
     env[:indexOfSchedulePosition] = []
+    env[:indexModel] = 1
+    env[:indexProcess] = 1
+    env[:indexStage] = 1
+    env[:savedIndexProcess] = 1
+    env[:savedIndexStage] = 1
+    env[:loadedIndexProcess] = 1
+    env[:loadedIndexStage] = 1
     env[:step] = 1
     env[:tau] = 0
     env[:savedModelName] = ""
-    env[:modelName] = ""
+    env[:modelName] = model.functionName
     env[:processName] = ""
     env[:savedProcessName] = ""
     env[:stageName] = ""
@@ -77,7 +84,7 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:isProcess] = true
     env[:isModel] = true
     env[:isExperiment] = true
-    env[:stateOfSchedule] = :idle
+    env[:stateOfSchedule] = :indexing
 
     ## 生成模型内容
     # modelComponent = eval(Meta.parse(para[:modelName]))
@@ -86,8 +93,6 @@ for (i, para) in enumerate(list_combinationOfPara)
     if env[:stateOfSchedule] == :indexing
         env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(model)
     end
-
-    env[:modelName] = model.functionName
 
     @test println("\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
     @test println("\n相关实验参数：$(para)")

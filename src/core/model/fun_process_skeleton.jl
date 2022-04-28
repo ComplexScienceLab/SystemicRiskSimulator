@@ -49,19 +49,19 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
             @test println("env[:indexStage] = $(env[:indexStage]),  env[:stageName] = $(env[:stageName])")
 
             ## 调度状态
-            if env[:stateOfSchedule] != :loading
+            if env[:stateOfSchedule] == :loading
+                env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule]) # 读取
+            else
                 if env[:stateOfSchedule] == :stepping
                     runStage!(BB, BI, b, ib, para, env, stage)
                     env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
                 end
                 if env[:stateOfSchedule] == :saving
-                    env[:savedIndexProcess], env[:savedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
+                    env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
                 end
                 if env[:stateOfSchedule] == :collecting
                     env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
                 end
-            else
-                env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess]) # 读取
             end
 
             # scheduler!(#= process,  =#env) # 调度状态
