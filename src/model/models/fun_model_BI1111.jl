@@ -12,7 +12,7 @@ function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::D
 
     env[:indexProcess] = 0 # 初始化过程所在位置
     env[:stateOfSchedule] = :indexing
-    @test println("切换调度运作状态为indexing")
+    @test println("切换调度运作状态为$(env[:stateOfSchedule])")
 
     env[:tau] = 0 # 初始化回合
 
