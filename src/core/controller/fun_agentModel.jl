@@ -45,7 +45,7 @@ function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicR
     systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = runModel!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env, model) # 运行具体的模型，通过运行模型组件的方式
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = fun_model_skeleton!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = modelComponent.run!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
-    _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
+    # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
 end
 
 # "函数：Agent模型步进" #BUG方案二
