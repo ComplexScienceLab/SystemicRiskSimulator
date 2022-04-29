@@ -14,12 +14,24 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)
 
     ##BUG 测试具体模型。
-    systemicRiskAgent_step!(systemicRiskAgent, systemicRiskModel, para, env, model)
+    maxnum = 0
+    while env[:isModel] == true && maxnum <= 20
+        maxnum += 1
+        systemicRiskAgent_step!(systemicRiskAgent, systemicRiskModel, para, env, model)
+        # return BB, BI, BB_tau, BI_tau, env
+    end # while
+
 
     ##BUG 测试Agents框架
-    # step!(systemicRiskModel, systemicRiskAgent_step!, env[:stepSize])
-    # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, 1)
-    # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
-    # wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "jld2", connector = "|", equals = "=")), BB) #FIXME
-    # return BB, BI, BB_tau, BI_tau, env
-end
+    # maxnum = 0
+    # while env[:isModel] == true && maxnum <= 20
+    #     maxnum += 1
+    #     step!(systemicRiskModel, systemicRiskAgent_step!, env[:stepSize])
+    #     # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, 1)
+    #     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
+    #     # return BB, BI, BB_tau, BI_tau, env
+    # end # while
+
+    ## 存储数据，通过Watson.Dr工具包
+    # wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "jld2", connector="|", equals="=")), systemicRiskAgent.bank) #FIXME
+end # function
