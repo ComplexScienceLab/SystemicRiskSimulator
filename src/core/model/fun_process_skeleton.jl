@@ -23,16 +23,17 @@ Return:
 - env::Dict: 环境变量；
 """
 function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, process::ProcessComponent)
-    @test println("开始过程：$(env[:processName])：")
+    @test println("过程$(env[:indexProcess])：$(env[:processName])")
 
     env[:indexStage] = 0 # 初始化阶段所在位置
-    env[:isLoop] = true # 初始化循环状态
+    env[:isStep] = true # 初始化步进状态
     env[:isRound] = true # 初始化回合状态
     env[:isProcess] = true # 初始化过程状态
+    env[:isLoop] = true # 初始化循环状态
     while env[:isLoop] == true
 
         env[:tau] += 1 # 回合累加一
-        @test println("开始回合$(env[:tau])")
+        @test println("开始回合$(env[:tau])：")
 
         ## 设置临时变量
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)
@@ -46,22 +47,21 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         for (idx_stage, stage) in enumerate(process.content)
             env[:indexStage] = idx_stage
             env[:stageName] = Symbol(stage.functionName)
-            @test println("env[:indexStage] = $(env[:indexStage]),  env[:stageName] = $(env[:stageName])")
+            @test println("阶段$(env[:indexStage])：$(env[:stageName])")
 
-            ## 调度状态
+            ## 调度并运行状态
             if env[:stateOfSchedule] == :loading
-                env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule]) # 读取
-            else
-                if env[:stateOfSchedule] == :stepping
-                    runStage!(BB, BI, b, ib, para, env, stage)
-                    env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
-                end
-                if env[:stateOfSchedule] == :saving
-                    env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
-                end
-                if env[:stateOfSchedule] == :collecting
-                    env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
-                end
+                env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule], env[:isModel]) # 读取
+            end
+            if env[:stateOfSchedule] == :stepping
+                runStage!(BB, BI, b, ib, para, env, stage)
+                env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
+            end
+            if env[:stateOfSchedule] == :saving
+                env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:isProcess]) # 存储
+            end
+            if env[:stateOfSchedule] == :collecting
+                env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
             end
 
             # scheduler!(#= process,  =#env) # 调度状态
@@ -70,8 +70,11 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
             # expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
             # @scheduler_stage Meta.parse(expr)
 
-
-        end
+            isStep!(env) # 判断是否继续运行步进
+            if env[:isStep] == false # 如果步进停止，则跳出该循环
+                break
+            end
+        end # for
 
         # ## 判断是否结束
         # if !env[:isStep]
@@ -96,15 +99,12 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
         if (process.functionName == :process_exBank_insolvent || process.functionName == :process_interBank_insolvent)
-            isProcess!(BB.isv, BB_isv_t1) # 判断是否结束过程
+            isProcess!(BB.isv, BB_isv_t1) # 判断是否继续运行过程
         else
-            isProcess!(BB.Shock_t, BB_Shock_t_t1) # 判断是否结束过程
+            isProcess!(BB.Shock_t, BB_Shock_t_t1) # 判断是否继续运行过程
         end
-        # @isProcess! eval(process.conditionToContinueProcess) # 判断是否结束过程
-        isRound!(env) # 判断是否结束回合
-        isStep!(env) # 判断是否结束步进
-        isLoop!(env) # 判断是否结束循环
-
+        isRound!(env) # 判断是否继续运行回合
+        isLoop!(env) # 判断是否继续运行循环
     end # while
 
     return BB, BI, env

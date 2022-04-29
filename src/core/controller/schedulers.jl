@@ -76,15 +76,18 @@ NOWReturn:
 - loadedIndexStage::Int: 读取的阶段之位置；
 - stateOfSchedule::Symbol: 调度状态；
 """
-function scheduler_loading(indexOfSchedulePosition::Vector{Any}, indexProcess::Int, indexStage::Int, loadedIndexProcess::Int, loadedIndexStage::Int, stateOfSchedule::Symbol)
+function scheduler_loading(indexOfSchedulePosition::Vector{Any}, indexProcess::Int, indexStage::Int, loadedIndexProcess::Int, loadedIndexStage::Int, stateOfSchedule::Symbol, isModel::Bool)
+    @test println("调度读取中……")
     newStateOfSchedule = stateOfSchedule
     if (indexProcess == loadedIndexProcess && indexStage == loadedIndexStage) # 如果待读取过程和阶段是应该读取的过程和阶段，则读取之，否则跳到下一阶段尝试读取
         if (indexOfSchedulePosition[indexProcess][1] <= length(indexOfSchedulePosition[:, 1]) && indexOfSchedulePosition[indexProcess][2][indexStage] <= indexOfSchedulePosition[indexProcess][2][end]) # 如果待读取过程不是该模型之最后一个过程之最后一个阶段，则继续读取，否则说明程序之模型部分已经运行到终点了，此时应停止读取，然后改状态为idle。
             newStateOfSchedule = :stepping # 切换调度运作状态为步进
         else
             newStateOfSchedule = :idle # 切换调度运作状态为待命
+            isModel = false
+            @test println("模型运行完毕。\n")
         end
-        @test println("切换调度运作状态为$(newStateOfSchedule)")
+        @test println("调度读取完毕。切换调度运作状态为$(newStateOfSchedule)。")
     end
     return newStateOfSchedule
 end
@@ -132,7 +135,7 @@ NOWReturn:
 - savedIndexStage::Int: 存储的阶段之位置；；
 - stateOfSchedule::Symbol: 调度状态；
 """
-function scheduler_saving(indexOfSchedulePosition::Vector{Any}, indexProcess::Int, indexStage::Int)
+function scheduler_saving(indexOfSchedulePosition::Vector{Any}, indexProcess::Int, indexStage::Int, isProcess::Bool)
 
     savedIndexProcess = indexOfSchedulePosition[indexProcess][1]
     savedIndexStage = indexOfSchedulePosition[indexProcess][2][indexStage]
@@ -143,20 +146,23 @@ function scheduler_saving(indexOfSchedulePosition::Vector{Any}, indexProcess::In
     loadedIndexProcess = nothing
     loadedIndexStage = nothing
     if (indexOfSchedulePosition[indexProcess][1] <= length(indexOfSchedulePosition[:, 1]) && indexOfSchedulePosition[indexProcess][2][indexStage] <= indexOfSchedulePosition[indexProcess][2][end]) # 如果待读取过程不是该模型之最后一个过程之最后一个阶段，则计划下一次读取，否则下一阶段只读取当前存储的阶段。
-        if indexOfSchedulePosition[indexProcess][2][indexStage] < indexOfSchedulePosition[indexProcess][2][end] # 如果待读取阶段不是其所处过程之最后一个阶段，则继续，否则读取下一个过程之第一个阶段
-            loadedIndexProcess = indexOfSchedulePosition[indexProcess][1]
-            loadedIndexStage = indexOfSchedulePosition[indexProcess][2][indexStage+1]
-            @test println("下一次应该读取的过程：$(loadedIndexProcess)，下一次应该读取的阶段：$(loadedIndexStage)。")
+        if isProcess # 如果所处的过程未结束，则继续，否则读取下一过程之初始阶段
+            if indexOfSchedulePosition[indexProcess][2][indexStage] < indexOfSchedulePosition[indexProcess][2][end] # 如果待读取阶段不是其所处过程之最后一个阶段，则继续，否则读取所处过程过程之第一个阶段
+                loadedIndexProcess = indexOfSchedulePosition[indexProcess][1]
+                loadedIndexStage = indexOfSchedulePosition[indexProcess][2][indexStage+1]
+            else
+                loadedIndexProcess = indexOfSchedulePosition[indexProcess][1]
+                loadedIndexStage = 1
+            end # if
         else
             loadedIndexProcess = indexOfSchedulePosition[indexProcess+1][1]
             loadedIndexStage = 1
-            @test println("下一次应该读取的过程：$(loadedIndexProcess)，下一次应该读取的阶段：$(loadedIndexStage)。")
-        end
+        end # if
     else
         loadedIndexProcess = savedIndexProcess
         loadedIndexStage = savedIndexStage
-        @test println("下一次应该读取的过程：$(loadedIndexProcess)，下一次应该读取的阶段：$(loadedIndexStage)。")
-    end
+    end # if
+    @test println("下一次应该读取的过程和阶段：$(loadedIndexProcess)，$(loadedIndexStage)。")
 
     stateOfSchedule = :collecting # 切换调度运作状态为收集数据
     @test println("切换调度运作状态为$(stateOfSchedule)")
@@ -260,6 +266,7 @@ end # macro
 function isProcess!(condition01, condition02)
     if condition01 == condition02 # 判断是否结束过程
         env[:isProcess] = false
+        @test println("结束过程：$(env[:processName])。")
     end
 end
 
@@ -269,24 +276,27 @@ function isRound!(env::Dict)
         env[:isRound] = true
     else
         env[:isRound] = false
-        @test println("结束回合：$(env[:processName])。\n")
+        @test println("结束回合$(env[:processName])。")
     end
 end
 
 "函数：判断是否继续步进"
 function isStep!(env::Dict)
     if !env[:isStep]
-        @test println("暂时跳出模型：$(env[:modelName])之过程：$(env[:processName])之阶段：$(env[:stageName])。\n")
+        @test println("暂时跳出模型$(env[:modelName])之过程$(env[:processName])之阶段：$(env[:stageName])。")
     end
 end
 
-"函数：判断是否继续运行循环"
+"""
+函数：判断是否继续运行循环。
+只有同时满足继续运行过程、继续步进、继续运行回合时，才继续运行循环。否则跳出循环。
+"""
 function isLoop!(env::Dict)
-    if (env[:stateOfSchedule] == :stepping && env[:isProcess] && env[:isStep] && env[:isRound])
+    if (env[:isProcess] && env[:isStep] && env[:isRound])
         env[:isLoop] = true
     else
         env[:isLoop] = false
-        @test println("跳出循环：$(env[:processName])。\n")
+        @test println("跳出过程$(env[:processName])之循环。\n")
     end
 end
 

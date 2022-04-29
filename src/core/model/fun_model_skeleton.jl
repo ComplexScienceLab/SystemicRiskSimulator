@@ -24,14 +24,13 @@ Return:
 """
 function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, model::ModelComponent)
 
-    env[:indexProcess] = 0 # 初始化过程所在位置
+    # env[:indexProcess] = 0 # 初始化过程所在位置
     # env[:stateOfSchedule] = :stepping
     # @test println("切换调度运作状态为$(env[:stateOfSchedule])")
 
-    env[:tau] = 0 # 初始化回合
 
     if (env[:isModel])
-        if (env[:tau] > 0)
+        if (env[:tau] > 1)
             @test println("\n继续模型：env[:modelName]\n")
         else
             @test println("开始模型：$(env[:modelName])\n")
@@ -44,22 +43,23 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
     # for (idx_process, processContent) in modelComponent.content.listProcessContent
     for (idx_process, process) in enumerate(model.content)
         env[:indexProcess] = idx_process
-        env[:processName] = Symbol(process.functionName)
-        @test println("env[:indexProcess] = $(env[:indexProcess]),  env[:processName] = $(env[:processName])")
-        # expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
-        # @scheduler_process Meta.parse(expr)
-        # scheduler!(env)
-        # if env[:stateOfSchedule] == :stepping
+        if env[:indexProcess] == env[:loadedIndexProcess]
+            env[:processName] = Symbol(process.functionName)
+            # expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
+            # @scheduler_process Meta.parse(expr)
+            # scheduler!(env)
+            # if env[:stateOfSchedule] == :stepping
             # eval(Meta.parse(expr))
             runProcess!(BB, BI, para, env, process)
-            # BB, BI, env = runProcess!(processComponent)(BB, BI, para, env)
+        end
+        # BB, BI, env = runProcess!(processComponent)(BB, BI, para, env)
         # end
         # if env[:stateOfSchedule] == :collecting
-            #TODO 收集数据
+        #TODO 收集数据
         # end
         # scheduler!(ModelContent, env, expr)
         # @scheduler_process Meta.parse(expr)
-    end
+    end # for
 
     ## 判断是否结束
     if !env[:isStep]
