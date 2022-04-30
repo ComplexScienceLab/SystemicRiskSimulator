@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：资不抵债银行间违约损失传染阶段"
-function stage_interBank_insolvent_contagion!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict,env::Dict)
+function stage_interBank_insolvent_contagion!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict)
     ## # 资不抵债银行间违约损失传染阶段
     # env[:stageName] = "资不抵债银行间违约损失传染阶段"
     @test println("开始阶段$(env[:stageName])：")
@@ -15,8 +15,8 @@ function stage_interBank_insolvent_contagion!(BB::BankCommercial, BI::BankInterb
         BI.Z_BI[i, BI.cre[i]] -= BI.Shock_BI_def[BI.cre[i], i]
     end
     # HACK以下部分是否提取出来在阶段1结束之前使用
-    update_B_balanceSheet!(BB, BI, b, ib; byWay = "alter to A_BI from Z_BI") # 转换银行间资产负债邻接矩阵
-    update_B_Shock!(BB, BI, b, ib; byWay = "Shock_BI_def") # 更新违约损失冲击目标变量Shock_def_t
+    update_B_balanceSheet!(BB, BI, b, ib; byWay="alter to A_BI from Z_BI") # 转换银行间资产负债邻接矩阵
+    update_B_Shock!(BB, BI, b, ib; byWay="Shock_BI_def") # 更新违约损失冲击目标变量Shock_def_t
 
     @test println("结束阶段$(env[:stageName])。")
     # return BB, BI
