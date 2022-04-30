@@ -43,7 +43,6 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
 
         ##NOW 运行每一个阶段
-        # for (idx_stage, stageComponent) in processComponent.content.listStageComponent
         for (idx_stage, stage) in enumerate(process.content)
             env[:indexStage] = idx_stage
             env[:stageName] = Symbol(stage.functionName)
@@ -51,24 +50,12 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
 
             ## 调度并运行状态
             if env[:stateOfSchedule] == :loading
-                env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule], env[:isModel]) # 读取
+                env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule]) # 调度读取
             end
             if env[:stateOfSchedule] == :stepping
                 runStage!(BB, BI, b, ib, para, env, stage)
                 env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
             end
-            if env[:stateOfSchedule] == :saving
-                env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:isProcess]) # 存储
-            end
-            if env[:stateOfSchedule] == :collecting
-                env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
-            end
-
-            # scheduler!(#= process,  =#env) # 调度状态
-            # BB, BI, env = runStage!(stageComponent)(BB, BI, para, env)
-            # BB, BI = processContent.listStageContent[idx_stage].run(BB, BI, b, ib, para)
-            # expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
-            # @scheduler_stage Meta.parse(expr)
 
             isStep!(env) # 判断是否继续运行步进
             if env[:isStep] == false # 如果步进停止，则跳出该循环
@@ -76,33 +63,16 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
             end
         end # for
 
-        # ## 判断是否结束
-        # if !env[:isStep]
-        #     @test println("步进已结束，跳出$(env[:modelName])。")
-        # end
 
-        # if env[:stateOfSchedule] == :idle
-        #     env[:isModel] = false
-        #     env[:isExperiment] = false
-        # end
+        env[:isProcess] = isProcess!(BB, BB_isv_t1, BB_Shock_t_t1, env[:isProcess], env[:stageName], process) # 判断是否继续运行过程
 
-        # if (!env[:isModel] || !env[:isExperiment])
-        #     @test println("$(env[:modelName])结束。")
-        # end
-
-        # ## 设置临时变量
-        # BB_t1 = deepcopy(BB)
-        # BI_t1 = deepcopy(BI)
-
-        ## TODO存储数据
-        # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-        # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
-
-        if (process.functionName == :process_exBank_insolvent || process.functionName == :process_interBank_insolvent)
-            isProcess!(BB.isv, BB_isv_t1) # 判断是否继续运行过程
-        else
-            isProcess!(BB.Shock_t, BB_Shock_t_t1) # 判断是否继续运行过程
+        if env[:stateOfSchedule] == :saving
+            env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:isProcess]) # 调度存储
         end
+        if env[:stateOfSchedule] == :collecting
+            env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
+        end
+
         isRound!(env) # 判断是否继续运行回合
         isLoop!(env) # 判断是否继续运行循环
     end # while

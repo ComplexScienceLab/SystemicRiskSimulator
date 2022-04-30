@@ -15,7 +15,7 @@ modelContent_BI1111 = ModelContent(
         processContent_interBank_insolvent,
         processContent_exBank_illiquity,
         processContent_interBank_illiquity,
-        processContent_interBank_bankrupt
+        # processContent_interBank_bankrupt #BUG 先暂时不考虑，因为这个过程还未完成。目前为了测试调度框架。
     ], # 过程内容列表 listContentProcess
 )
 

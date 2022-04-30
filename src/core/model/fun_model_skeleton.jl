@@ -24,55 +24,34 @@ Return:
 """
 function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, model::ModelComponent)
 
-    # env[:indexProcess] = 0 # 初始化过程所在位置
-    # env[:stateOfSchedule] = :stepping
-    # @test println("切换调度运作状态为$(env[:stateOfSchedule])")
-
-
     if (env[:isModel])
         if (env[:tau] > 1)
-            @test println("\n继续模型：env[:modelName]\n")
+            @test println("\n继续模型：$(env[:modelName])")
         else
-            @test println("开始模型：$(env[:modelName])\n")
+            @test println("\n开始模型：$(env[:modelName])")
         end
     end
 
-    ##NOW 运行每一个过程
-    # for (i, p) in eval(Meta.parse(enumerate(para[:modelName] * ".listProcess"))) # HACK 元编程方式
-    # for (idx_process, processComponent) in modelComponent.content.listProcessComponent
-    # for (idx_process, processContent) in modelComponent.content.listProcessContent
+    ##NOW 运行每个过程
     for (idx_process, process) in enumerate(model.content)
         env[:indexProcess] = idx_process
-        if env[:indexProcess] == env[:loadedIndexProcess]
+        if env[:indexProcess] == env[:loadedIndexProcess] # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。
             env[:processName] = Symbol(process.functionName)
-            # expr = "BB, BI, env = " * String(p) * "!(BB, BI, para, env)"
-            # @scheduler_process Meta.parse(expr)
-            # scheduler!(env)
-            # if env[:stateOfSchedule] == :stepping
-            # eval(Meta.parse(expr))
             runProcess!(BB, BI, para, env, process)
         end
-        # BB, BI, env = runProcess!(processComponent)(BB, BI, para, env)
-        # end
-        # if env[:stateOfSchedule] == :collecting
-        #TODO 收集数据
-        # end
-        # scheduler!(ModelContent, env, expr)
-        # @scheduler_process Meta.parse(expr)
     end # for
-
-    ## 判断是否结束
+    
+    ## 判断是否结束步进
     if !env[:isStep]
-        @test println("步进已结束，跳出$(env[:modelName])。")
+        @test println("步进已结束，跳出模型：$(env[:modelName])。")
     end
-
+    # 判断是否结束模型
     if env[:stateOfSchedule] == :idle
         env[:isModel] = false
         env[:isExperiment] = false
     end
-
     if (!env[:isModel] || !env[:isExperiment])
-        @test println("$(env[:modelName])结束。")
+        @test println("结束模型：$(env[:modelName])。\n")
     end
 
 
