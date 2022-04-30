@@ -69,7 +69,7 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:savedIndexStage] = 1
     env[:loadedIndexProcess] = 1
     env[:loadedIndexStage] = 1
-    env[:step] = 1
+    env[:step] = 0
     env[:tau] = 0
     env[:savedModelName] = ""
     env[:modelName] = model.functionName
