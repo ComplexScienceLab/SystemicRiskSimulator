@@ -39,7 +39,7 @@ include("../core/controller/fun_tools.jl")
 ## 集成调度功能文件
 include("../core/controller/fun_io.jl")
 include("../core/controller/fun_agentModel.jl")
-include("../core/controller/schedulers.jl")
+include("../core/controller/fun_schedulers.jl")
 include("../core/controller/fun_makesim.jl")
 include("../core/controller/fun_builder.jl")
 include("../core/controller/fun_runner.jl")
