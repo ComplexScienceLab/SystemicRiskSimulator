@@ -42,7 +42,7 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
 
-        ##NOW 运行每一个阶段
+        ## 运行每一个阶段
         for (idx_stage, stage) in enumerate(process.content)
             env[:indexStage] = idx_stage
             env[:stageName] = Symbol(stage.functionName)

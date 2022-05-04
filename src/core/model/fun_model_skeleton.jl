@@ -32,7 +32,7 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
         end
     end
 
-    ##NOW 运行每个过程
+    ## 运行每个过程
     for (idx_process, process) in enumerate(model.content)
         env[:indexProcess] = idx_process
         if env[:indexProcess] == env[:loadedIndexProcess] # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。
