@@ -32,6 +32,14 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
     env[:isLoop] = true # 初始化循环状态
     while env[:isLoop] == true
 
+        ## 回合数变动
+        if (env[:loadedIndexStage] != 1)
+            @test println("\n继续回合：$(env[:tau])")
+        else
+            env[:tau] += 1 # 回合累加一
+            @test println("\n开始回合：$(env[:tau])")
+        end
+
         env[:tau] += 1 # 回合累加一
         @test println("开始回合$(env[:tau])：")
 
