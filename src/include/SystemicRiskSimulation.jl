@@ -43,6 +43,7 @@ include("../core/controller/fun_schedulers.jl")
 include("../core/controller/fun_makesim.jl")
 include("../core/controller/fun_builder.jl")
 include("../core/controller/fun_runner.jl")
+include("../core/controller/fun_collector.jl")
 
 ## 集成初始化函数文件
 include("../core/initialization/fun_initVariables.jl")

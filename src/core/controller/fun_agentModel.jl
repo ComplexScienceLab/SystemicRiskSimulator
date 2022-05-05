@@ -10,23 +10,18 @@
 
 "初始化systemicRiskAgent和systemicRiskModel"
 function init_systemicRiskAgent!(para::Dict, env::Dict)
-    bank, interbank, bank_tau_0, interbank_tau_0, bank_tau, bankinter_tau = init_B_and_BI(; init_method=env[:init_method])
+    banks, interbank, bank_tau_0, interbank_tau_0, bank_tau, bankinter_tau = init_B_and_BI(; init_method=env[:init_method])
 
     ## 调度状态
     env[:stateOfSchedule] = :loading
-    # if env[:stateOfSchedule] == :saving
-    #     env[:savedIndexProcess], env[:savedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
-    # end
-    # if env[:stateOfSchedule] == :collecting
-    #     env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
-    # end
 
+    ## 构建Agent模型
     systemicRiskAgent = SystemicRiskAgent(
         1, # 编号（必备的）
         banks, # 商业银行群
         interbank # 银行间邻接矩阵
     )
-    systemicRiskModel = ABM(systemicRiskAgent; properties=para) # 构建Agent模型
+    systemicRiskModel = ABM(systemicRiskAgent; properties=(Dict([collect(para); collect(env)])))
     return systemicRiskAgent, systemicRiskModel, bank_tau_0, interbank_tau_0, bank_tau, bankinter_tau
 end
 
