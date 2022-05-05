@@ -79,6 +79,7 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         end
         if env[:stateOfSchedule] == :collecting
             env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
+            df_BB = DataFrames()
         end
 
         isRound!(env) # 判断是否继续运行回合
