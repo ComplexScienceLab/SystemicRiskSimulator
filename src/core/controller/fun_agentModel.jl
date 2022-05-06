@@ -8,9 +8,9 @@
 
 
 
-"初始化systemicRiskAgent和systemicRiskModel"
+"#TODO初始化systemicRiskAgent和systemicRiskModel"
 function init_systemicRiskAgent!(para::Dict, env::Dict)
-    systemicRiskAgent, systemicRiskAgent_tau_0, bank_tau, bankinter_tau = init_B_and_BI(; init_method=env[:init_method])
+    systemicRiskAgent, systemicRiskAgent_data = init_B_and_BI(; init_method=env[:init_method])
 
     ## 调度状态
     env[:stateOfSchedule] = :loading
@@ -22,7 +22,7 @@ function init_systemicRiskAgent!(para::Dict, env::Dict)
     #     interbank # 银行间邻接矩阵
     # )
     systemicRiskModel = ABM(systemicRiskAgent; properties=(Dict([collect(para); collect(env)])))
-    return systemicRiskAgent, systemicRiskModel, systemicRiskAgent_tau_0, bank_tau, bankinter_tau
+    return systemicRiskAgent, systemicRiskModel, systemicRiskAgent_data
 end
 
 # space = GraphSpace(#= #TODO生成图空间 =#)
@@ -35,9 +35,9 @@ end
 
 
 "函数：Agent模型步进" #BUG方案一
-function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict, model::ModelComponent, BB_data, BI_data)
+function systemicRiskAgent_step!(A::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict, model::ModelComponent, A_data::DataStepCollection)
     env[:isStep] = true
-    systemicRiskAgent.banks, systemicRiskAgent.interbank, para, env = runModel!(systemicRiskAgent.banks, systemicRiskAgent.interbank, para, env, model, BB_data, BI_data) # 运行具体的模型，通过运行模型组件的方式
+    A_data, para, env = runModel!(A, para, env, model, A_data) # 运行具体的模型，通过运行模型组件的方式
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = fun_model_skeleton!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = modelComponent.run!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
     # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
