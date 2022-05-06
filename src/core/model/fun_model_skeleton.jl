@@ -22,7 +22,7 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, model::ModelComponent, )
+function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, model::ModelComponent, BB_data::DataFrame, BI_data::Array)
 
     if (env[:isModel])
         if (env[:tau] > 1)
@@ -37,10 +37,10 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
         env[:indexProcess] = idx_process
         if env[:indexProcess] == env[:loadedIndexProcess] # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。
             env[:processName] = Symbol(process.functionName)
-            runProcess!(BB, BI, para, env, process)
+            runProcess!(BB, BI, para, env, process, BB_data, BI_data)
         end
     end # for
-    
+
     ## 判断是否结束步进
     if !env[:isStep]
         @test println("步进已结束，跳出模型：$(env[:modelName])。")
@@ -55,8 +55,8 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
     end
 
 
-    return BB, BI, para, env
-    # return BB, BI, BB_tau, BI_tau, para, env
+    # return BB, BI, para, env
+    return BB, BI, para, env, BB_data, BI_data
 end # function
 
 # end # module

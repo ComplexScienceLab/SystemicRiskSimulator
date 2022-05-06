@@ -31,8 +31,8 @@ function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::
     BB, BI = stage_exBank_illiquity_shock!(BB, BI, b, ib, para, env)    #= @scheduler_stage  =#
 
     ## TODO存储数据
-    # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-    # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
+    # BB_data[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
+    # BI_data[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
     if BB.Shock_t == BB_Shock_t_t1 # 判定是否结束过程 #FIXME
         env[:isProcess] = false
