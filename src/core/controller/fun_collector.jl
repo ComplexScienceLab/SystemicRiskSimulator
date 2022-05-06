@@ -40,8 +40,8 @@ end
 
 "结构体：定义待收集数据类型"
 mutable struct DataStepCollection
-    BB_data::DataFrame
-    BI_data::StructArray
+    banks_data::DataFrame
+    interbank_data::StructArray
 end
 
 

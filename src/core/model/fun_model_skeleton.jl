@@ -22,7 +22,7 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, model::ModelComponent, BB_data::DataFrame, BI_data::Array)
+function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, model::ModelComponent, BB_data::DataFrame, BI_data::StructArray)
 
     if (env[:isModel])
         if (env[:tau] > 1)

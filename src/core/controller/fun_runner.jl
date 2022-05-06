@@ -23,8 +23,8 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function runModel!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, modelComponent::ModelComponent, BB_data::DataFrame, BI_data::Array)
-    BB, BI, para, env, BB_data, BI_data = modelComponent.run(BB, BI, para, env, modelComponent, BB_data, BI_data)
+function runModel!(A::SystemicRiskAgent, para::Dict, env::Dict, modelComponent::ModelComponent, A_data::DataStepCollection)
+    return A_data, para, env, BB_data, BI_data = modelComponent.run(A.banks, A.interbank, para, env, modelComponent, A_data.banks_data, A_data.interbank_data)
 end
 
 
@@ -45,7 +45,7 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function runProcess!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, processComponent::ProcessComponent, BB_data::DataFrame, BI_data::Array)
+function runProcess!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, processComponent::ProcessComponent, BB_data::DataFrame, BI_data::StructArray)
     processComponent.run(BB, BI, para, env, processComponent, BB_data, BI_data)
 end
 
