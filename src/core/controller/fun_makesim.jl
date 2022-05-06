@@ -10,15 +10,15 @@
 function makesim(model::ModelComponent, para::Dict, env::Dict)
 
     ## 初始化agent及其模型
-    systemicRiskAgent, systemicRiskModel, BB_tau_0, BI_tau_0, BB_tau, BI_tau = init_systemicRiskAgent!(para, env)
+    A, M, A_data_0, BB_data, BI_data = init_systemicRiskAgent!(para, env)
     # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)
 
     ##BUG 测试具体模型。
     maxnum = 0
     while env[:isModel] == true && maxnum <= 20
         maxnum += 1
-        systemicRiskAgent_step!(systemicRiskAgent, systemicRiskModel, para, env, model)
-        # return BB, BI, BB_tau, BI_tau, env
+        systemicRiskAgent_step!(A, M, para, env, model, BB_data, BI_data)
+        # return BB, BI, BB_data, BI_data, env
     end # while
 
 
@@ -29,7 +29,7 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     #     step!(systemicRiskModel, systemicRiskAgent_step!, env[:stepSize])
     #     # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, 1)
     #     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
-    #     # return BB, BI, BB_tau, BI_tau, env
+    #     # return BB, BI, BB_data, BI_data, env
     # end # while
 
     ## 存储数据，通过Watson.Dr工具包

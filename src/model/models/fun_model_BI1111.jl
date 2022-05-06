@@ -51,8 +51,8 @@ function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::D
 
 
     # update_B_balanceSheet!(BB, BI,b,ib; byWay = "calc all E_all") # 更新计算各银行之所有者权益
-    # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-    # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
+    # BB_data[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
+    # BI_data[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
     #TODO 最终破产清算
 
     ## 判断是否结束
@@ -71,7 +71,7 @@ function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::D
 
 
     return BB, BI, para, env
-    # return BB, BI, BB_tau, BI_tau, para, env
+    # return BB, BI, BB_data, BI_data, para, env
 end # function
 
 # end # module

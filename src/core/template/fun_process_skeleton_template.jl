@@ -62,8 +62,8 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         # BI_t1 = deepcopy(BI)
 
         ## TODO存储数据
-        # BB_tau[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-        # BI_tau[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
+        # BB_data[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
+        # BI_data[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
         if BB.isv == BB_isv_t1 # 判定是否结束过程
             env[:isProcess] = false
