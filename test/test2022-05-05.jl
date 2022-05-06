@@ -22,6 +22,28 @@ while tau<=10
     append!(df,dd)
 end
 
+function init_agent_dataframe(
+    model::ABM{S,A},
+    properties::Vector{<:Tuple},
+) where {S,A<:AbstractAgent}
+    nagents(model) < 1 && throw(ArgumentError(
+        "Model must have at least one agent to " * "initialize data collection",
+    ))
+    headers = Vector{String}(undef, 1 + length(properties))
+    types = Vector{Vector}(undef, 1 + length(properties))
+
+    utypes = union_types(A)
+
+    headers[1] = "step"
+    types[1] = Int[]
+
+    if length(utypes) > 1
+        multi_agent_agg_types!(types, utypes, headers, model, properties)
+    else
+        single_agent_agg_types!(types, headers, model, properties)
+    end
+    DataFrame(types, headers)
+end
 
 
 function collect_agent_data!(df, model, properties::Vector, step::Int=0; kwargs...)
@@ -49,3 +71,13 @@ function _add_col_data!(
 ) where {T}
     dd[!, dataname(property)] = collect(get_data(a, property, obtainer) for a in agent_iter)
 end
+
+dataname(x::Tuple) =
+    join(vcat([dataname(x[2]), dataname(x[1])], [dataname(s) for s in x[3:end]]), "_")
+dataname(x::Union{Symbol,String}) = string(x)
+# This takes care to include fieldnames and values in the column name to make column names unique
+# if the same function is used with different values of outer scope variables.
+dataname(x::Function) = join(
+    vcat([string(x)], ["$(prop)=$(getproperty(x, prop))" for prop in propertynames(x)]),
+    "_",
+)

@@ -234,10 +234,10 @@ function initVariables_setManually()
         FALSE1, # 示性向量之于银行是否需要收回厂商贷款 isNeededLiP
         TRUE1, # 示性向量之于银行是否可以收回厂商贷款 isEnabledLiP    
         FALSE1, # 示性向量之于银行是否已经分配传染冲击 isAllocatedShock
-        [], # 列表之于存在的银行编号 listOfExist
-        [], # 列表之于资不抵债的银行编号 listOfInsolvent
-        [], # 列表之于流动性短缺的银行编号 listOfIlliquity
-        []  # 列表之于破产的银行编号 listOfBankrupt
+        fill(nothing, numBank), # 列表之于存在的银行编号 listOfExist
+        fill(nothing, numBank), # 列表之于资不抵债的银行编号 listOfInsolvent
+        fill(nothing, numBank), # 列表之于流动性短缺的银行编号 listOfIlliquity
+        fill(nothing, numBank)  # 列表之于破产的银行编号 listOfBankrupt
     )
 
     ## 初始化银行间邻接矩阵
@@ -291,25 +291,27 @@ end
 function init_B_and_BI(; init_method::String)
     if init_method == "only init"
         BB, BI = init_B_variables_only()
-        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
-        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
     elseif init_method == "randomly"
         BB, BI = init_B_variables_randomly()
-        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
-        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
     elseif init_method == "import data"
         BB, BI = init_B_variables_only()
-        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
-        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
-        ## 导入数据以初始化银行变量
-        BB, BI, BB_tau, BI_tau = init_B_variables_importData()
+        BB, BI, BB_data, BI_data = init_B_variables_importData() # 导入数据以初始化银行变量
     elseif init_method == "set manually"
         BB, BI = initVariables_setManually() # 手动设置以初始化银行变量
-        BB_tau = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
-        BI_tau = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
     else
         throw(DomainError(init_method, "关键词取值错误！"))
     end
+
+    ## 构建Agent模型
+    A = SystemicRiskAgent(
+        1, # 编号（必备的）
+        BB, # 商业银行群
+        BI # 银行间邻接矩阵
+    )
+
+    BB_data, BI_data = initCollectionData(A)
+    # BB_data = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
+    # BI_data = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
 
     ## 更新各银行之变量，在第一回合初始时
     b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
@@ -319,12 +321,15 @@ function init_B_and_BI(; init_method::String)
     update_B_state!(BB, BI; to="any", from="any") # 更新各银行之状态示性变量
 
     ## 存储初始数据
-    BB_tau_0 = deepcopy(BB)
-    BI_tau_0 = deepcopy(BI)
+    # BB_data_0 = deepcopy(BB)
+    # BI_data_0 = deepcopy(BI)
+    # A_data_0 = deepcopy(A)
+
+    A_data = DataStepCollection(BB_data,BI_data)
 
 
 
-    return BB, BI, BB_tau_0, BI_tau_0, BB_tau, BI_tau
+    return A, A_data
 end
 
 
