@@ -10,14 +10,14 @@
 function makesim(model::ModelComponent, para::Dict, env::Dict)
 
     ## 初始化agent及其模型
-    A, M, A_data_0, BB_data, BI_data = init_systemicRiskAgent!(para, env)
+    A, M, A_data = init_systemicRiskAgent!(para, env)
     # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)
 
     ##BUG 测试具体模型。
     maxnum = 0
     while env[:isModel] == true && maxnum <= 20
         maxnum += 1
-        systemicRiskAgent_step!(A, M, para, env, model, BB_data, BI_data)
+        systemicRiskAgent_step!(A, M, para, env, model, A_data)
         # return BB, BI, BB_data, BI_data, env
     end # while
 

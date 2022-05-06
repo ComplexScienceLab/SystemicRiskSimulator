@@ -22,7 +22,7 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, process::ProcessComponent, BB_data::DataFrame, BI_data::Array)
+function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, process::ProcessComponent, BB_data::DataFrame, BI_data::StructArray)
     @test println("过程$(env[:indexProcess])：$(env[:processName])")
 
     env[:indexStage] = 0 # 初始化阶段所在位置
@@ -78,8 +78,8 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
             env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:isProcess]) # 调度存储
         end
         if env[:stateOfSchedule] == :collecting
-            env[:stateOfSchedule] = scheduler_collecting() #TODO 调度收集数据
-            BB_data, BB_data = collector(BB_data, BI_data, SystemicRiskAgent; env=env) # 收集数据
+            env[:stateOfSchedule] = scheduler_collecting() #NOW 调度收集数据
+            BB_data, BI_data = collector(A_data.BB_data, BI_data, SystemicRiskAgent; env=env) # 收集数据
         end
 
         isRound!(env) # 判断是否继续运行回合
