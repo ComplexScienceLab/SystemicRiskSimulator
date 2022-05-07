@@ -7,7 +7,7 @@
 ##########################################
 
 """
-模型运行器。
+TODO模型运行器。
 输入参数将被直接修改。
 
 Argument: 
@@ -23,13 +23,13 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function runModel!(A::SystemicRiskAgent, para::Dict, env::Dict, modelComponent::ModelComponent, A_data::DataStepCollection)
-    return A_data, para, env, BB_data, BI_data = modelComponent.run(A.banks, A.interbank, para, env, modelComponent, A_data.banks_data, A_data.interbank_data)
+function runModel!(A::SystemicRiskAgent, para::Dict, env::Dict, modelComponent::ModelComponent, A_data::AgentDataCollection)
+    return A_data, para, env, A_data = modelComponent.run(A, para, env, modelComponent, A_data)
 end
 
 
 """
-过程运行器。
+TODO过程运行器。
 输入参数将被直接修改。
 
 Argument: 
@@ -45,8 +45,8 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function runProcess!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, processComponent::ProcessComponent, BB_data::DataFrame, BI_data::StructArray)
-    processComponent.run(BB, BI, para, env, processComponent, BB_data, BI_data)
+function runProcess!(A::SystemicRiskAgent, para::Dict, env::Dict, processComponent::ProcessComponent, A_data::AgentDataCollection)
+    return A, para, env, A_data = processComponent.run(A, para, env, processComponent, A_data)
 end
 
 

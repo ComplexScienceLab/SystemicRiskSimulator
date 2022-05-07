@@ -35,7 +35,7 @@ end
 
 
 "函数：Agent模型步进" #BUG方案一
-function systemicRiskAgent_step!(A::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict, model::ModelComponent, A_data::DataStepCollection)
+function systemicRiskAgent_step!(A::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict, model::ModelComponent, A_data::AgentDataCollection)
     env[:isStep] = true
     A_data, para, env = runModel!(A, para, env, model, A_data) # 运行具体的模型，通过运行模型组件的方式
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = fun_model_skeleton!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余

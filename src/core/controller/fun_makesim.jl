@@ -18,7 +18,7 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     while env[:isModel] == true && maxnum <= 20
         maxnum += 1
         systemicRiskAgent_step!(A, M, para, env, model, A_data)
-        # return BB, BI, BB_data, BI_data, env
+        # return BB, BI, A_data.BB, A_data.BI, env
     end # while
 
 
@@ -29,7 +29,7 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     #     step!(systemicRiskModel, systemicRiskAgent_step!, env[:stepSize])
     #     # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, 1)
     #     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
-    #     # return BB, BI, BB_data, BI_data, env
+    #     # return BB, BI, A_data.BB, A_data.BI, env
     # end # while
 
     ## 存储数据，通过Watson.Dr工具包
