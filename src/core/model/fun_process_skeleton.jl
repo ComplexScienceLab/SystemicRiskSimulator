@@ -7,7 +7,7 @@
 ##########################################
 
 """
-通用过程框架：
+TODO通用过程框架：
 
 Argument: 
 - BB::BankCommercial: 商业银行群变量；
@@ -22,7 +22,7 @@ Return:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 """
-function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict, process::ProcessComponent, BB_data::DataFrame, BI_data::StructArray)
+function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, process::ProcessComponent, A_data::AgentDataCollection)
     @test println("过程$(env[:indexProcess])：$(env[:processName])")
 
     env[:indexStage] = 0 # 初始化阶段所在位置
@@ -44,11 +44,11 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         @test println("开始回合$(env[:tau])：")
 
         ## 设置临时变量
-        BB_Shock_t_t1 = deepcopy(BB.Shock_t)
-        BB_isv_t1 = deepcopy(BB.isv)
+        BB_Shock_t_t1 = deepcopy(A.BB.Shock_t)
+        BB_isv_t1 = deepcopy(A.BB.isv)
 
-        b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
-        ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
+        b = TypeState{1}(A.BB.on .|| A.BB.off) # 临时设置BB示性变量
+        ib = TypeState{2}((A.BB.on .|| A.BB.off) .&& (A.BB.on .|| A.BB.off)') # 临时设置BI示性变量
 
         ## 运行每一个阶段
         for (idx_stage, stage) in enumerate(process.content)
@@ -61,7 +61,7 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
                 env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule]) # 调度读取
             end
             if env[:stateOfSchedule] == :stepping
-                runStage!(BB, BI, b, ib, para, env, stage)
+                runStage!(A.BB, A.BI, b, ib, para, env, stage)
                 env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
             end
 
@@ -72,21 +72,21 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         end # for
 
 
-        env[:isProcess] = isProcess!(BB, BB_isv_t1, BB_Shock_t_t1, env[:isProcess], env[:stageName], process) # 判断是否继续运行过程
+        env[:isProcess] = isProcess!(A.BB, BB_isv_t1, BB_Shock_t_t1, env[:isProcess], env[:stageName], process) # 判断是否继续运行过程
 
         if env[:stateOfSchedule] == :saving
             env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:isProcess]) # 调度存储
         end
         if env[:stateOfSchedule] == :collecting
             env[:stateOfSchedule] = scheduler_collecting() #NOW 调度收集数据
-            BB_data, BI_data = collector(A_data.BB_data, BI_data, SystemicRiskAgent; env=env) # 收集数据
+            A_data = collector(A, A_data) # 收集数据
         end
 
         isRound!(env) # 判断是否继续运行回合
         isLoop!(env) # 判断是否继续运行循环
     end # while
 
-    return BB, BI, para, env, BB_data, BI_data
+    return A.BB, A.BI, para, env, A_data.BB, A_data.BI
 
 end # function
 
