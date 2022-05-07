@@ -295,7 +295,7 @@ function init_B_and_BI(; init_method::String)
         BB, BI = init_B_variables_randomly()
     elseif init_method == "import data"
         BB, BI = init_B_variables_only()
-        BB, BI, BB_data, BI_data = init_B_variables_importData() # 导入数据以初始化银行变量
+        BB, BI, A_data.BB, A_data.BI = init_B_variables_importData() # 导入数据以初始化银行变量
     elseif init_method == "set manually"
         BB, BI = initVariables_setManually() # 手动设置以初始化银行变量
     else
@@ -309,9 +309,11 @@ function init_B_and_BI(; init_method::String)
         BI # 银行间邻接矩阵
     )
 
-    BB_data, BI_data = initCollectionData(A)
-    # BB_data = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
-    # BI_data = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
+    # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组
+    A_data = initAgentDataCollection(A)
+
+    # A_data.BB = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
+    # A_data.BI = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
 
     ## 更新各银行之变量，在第一回合初始时
     b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
@@ -321,11 +323,10 @@ function init_B_and_BI(; init_method::String)
     update_B_state!(BB, BI; to="any", from="any") # 更新各银行之状态示性变量
 
     ## 存储初始数据
-    # BB_data_0 = deepcopy(BB)
-    # BI_data_0 = deepcopy(BI)
+    # A_data.BB_0 = deepcopy(BB)
+    # A_data.BI_0 = deepcopy(BI)
     # A_data_0 = deepcopy(A)
 
-    A_data = DataStepCollection(BB_data,BI_data)
 
 
 

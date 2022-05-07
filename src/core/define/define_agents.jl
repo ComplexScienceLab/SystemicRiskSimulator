@@ -1,8 +1,11 @@
 
-"程序：定义各类Agents，基于模式3-1"
+"结构体：定义各类Agents，基于模式3-1"
 
 ## 程序：定义各类Agents，基于模式3-1
 
+##########################################
+#状态/使用
+##########################################
 
 
 
@@ -132,8 +135,15 @@ end
 "定义综合Agent类型"
 mutable struct SystemicRiskAgent <: AbstractAgent
     id::Int # 编号（必备的）
-    banks::BankCommercial # 商业银行群
-    interbank::BankInterbank # 银行间邻接矩阵
+    BB::BankCommercial # 商业银行群
+    BI::BankInterbank # 银行间邻接矩阵
+end
+
+
+"#TODO 结构体：定义待收集数据类型"
+mutable struct AgentDataCollection
+    BB::DataFrame
+    BI::StructArray
 end
 
 

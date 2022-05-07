@@ -36,8 +36,8 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         BB, BI = stage_interBank_illiquity_repay!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
 
         ## TODO存储数据
-        # BB_data[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-        # BI_data[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
+        # A_data.BB[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
+        # A_data.BI[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
         if BB.Shock_t == BB_Shock_t_t1# 判定是否结束过程
             env[:isProcess] = false

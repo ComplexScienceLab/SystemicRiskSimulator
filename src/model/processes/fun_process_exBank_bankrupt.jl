@@ -29,8 +29,8 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         #= @scheduler_stage  =#BB, BI = exBank_bankrupt_shock!(BB, BI, b, ib, para)
 
         ## TODO存储数据
-        # BB_data[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-        # BI_data[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
+        # A_data.BB[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
+        # A_data.BI[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
 
 
         if BB.Shock_t == BB_Shock_t_t1 # 判定是否结束过程 #FIXME

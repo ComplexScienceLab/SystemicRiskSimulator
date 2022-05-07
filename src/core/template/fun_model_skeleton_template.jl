@@ -50,7 +50,7 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
 
 
     # return BB, BI, para, env
-    # return BB, BI, BB_data, BI_data, para, env
+    # return BB, BI, A_data.BB, A_data.BI, para, env
 end # function
 
 # end # module
