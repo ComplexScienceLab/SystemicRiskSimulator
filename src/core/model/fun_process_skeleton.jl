@@ -86,7 +86,7 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
         isLoop!(env) # 判断是否继续运行循环
     end # while
 
-    return A.BB, A.BI, para, env, A_data.BB, A_data.BI
+    return A, para, env, A_data
 
 end # function
 
