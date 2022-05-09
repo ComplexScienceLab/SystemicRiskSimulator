@@ -27,7 +27,7 @@ function stage_exBank_insolvent_shock!(BB::BankCommercial, BI::BankInterbank, b:
 
     # update_B_Shock!(BB, BI, b, ib; byWay = "clear Shock_B_A and Shock_B_Z") # 清零银行内资产负债冲击
 
-    BB.Shock_P_def_t[BB.isv] = ZEROS1[BB.isv] # 清零银行间和银行外冲击变量
+    BB.Shock_P_def_t[BB.isv] = zeros(env[:numBank])[BB.isv] # 清零银行间和银行外冲击变量
     update_B_Shock!(BB, BI, b, ib; byWay="Shock_P_def_t") # 更新违约损失冲击目标变量Shock_def_t
 
     @test println("结束阶段$(env[:stageName])。")
