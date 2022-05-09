@@ -19,6 +19,7 @@ const LESS1 = zeros(env[:numBank]) .+ 0.01 # 一维接近零的正数向量常�
 const LESS2 = zeros(env[:numBank], env[:numBank]) .+ 0.1 # 二维方阵接近零的正数常量
 const ONES1 = ones(env[:numBank]) # 一维幺向量常量
 const ONES2 = ones(env[:numBank], env[:numBank]) # 二维方阵幺向量常量
+const NOTHING1 = fill(nothing, env[:numBank]) # 一维缺失值向量常量
 const MISSING1 = fill(missing, env[:numBank]) # 一维缺失值向量常量
 const MISSING2 = fill(missing, env[:numBank], env[:numBank]) # 二维方阵确失值常量
-const RANGE1 = range(1, env[:numBank], step = 1) # 一维步进向量常量
+const RANGE1 = collect(range(1, env[:numBank], step=1)) # 一维步进向量常量
