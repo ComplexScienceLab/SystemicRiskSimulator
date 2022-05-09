@@ -78,8 +78,7 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
             env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:isProcess]) # 调度存储
         end
         if env[:stateOfSchedule] == :collecting
-            env[:stateOfSchedule] = scheduler_collecting() #NOW 调度收集数据
-            A_data = collector(A, A_data) # 收集数据
+            env[:stateOfSchedule] = scheduler_collecting(A, A_data)
         end
 
         isRound!(env) # 判断是否继续运行回合

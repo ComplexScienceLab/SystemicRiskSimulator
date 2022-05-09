@@ -17,7 +17,7 @@ Argument:
 Return: 
 - env::Dict: 环境变量；
 """
-function scheduler!(env::Dict)#= component::Union{ModelComponent,ProcessComponent},  =#
+function scheduler!(env::Dict, A::SystemicRiskAgent, A_data::AgentDataCollection)#= component::Union{ModelComponent,ProcessComponent},  =#
     if env[:stateOfSchedule] == :loading
         env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess], env[:stateOfSchedule]) # 读取
     end
@@ -28,7 +28,7 @@ function scheduler!(env::Dict)#= component::Union{ModelComponent,ProcessComponen
         env[:savedIndexProcess], env[:savedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
     end
     if env[:stateOfSchedule] == :collecting
-        env[:stateOfSchedule] = scheduler_collecting() #TODO 收集数据
+        env[:stateOfSchedule] = scheduler_collecting(A, A_data)
     end
     # if (stateOfSchedule == :indexing) #HACK 冗余
     #     env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(component) # 索引
@@ -173,10 +173,9 @@ Return:
 - stateOfSchedule::Symbol: 调度状态；
 """
 
-function scheduler_collecting()
-    #TODO 收集数据        
+function scheduler_collecting(A::SystemicRiskAgent, A_data::AgentDataCollection)
     @test println("收集数据。")
-
+    A_data = collector(A, A_data) # 收集数据
     stateOfSchedule = :loading  # 切换调度运作状态为读取
     @test println("切换调度运作状态为$(stateOfSchedule)")
     return stateOfSchedule

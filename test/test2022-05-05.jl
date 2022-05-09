@@ -13,7 +13,7 @@ sts=[st1,st2]
 df = DataFrame(s1=[],s2=[])
 dd=DataFrame()
 for field in fieldnames(typeof(st1))
-    dd[!,field]=collect(getproperty(i,field) for i in sts) 
+    dd[!,field]=collect(getproperty(i,fi) for i in sts) 
     println(dd)
 end
 
