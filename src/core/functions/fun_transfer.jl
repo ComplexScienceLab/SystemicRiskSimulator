@@ -117,16 +117,16 @@ end
 
 "清零所有流量变量值"
 function clear_all_transfer!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2})
-    bank.Lo_BI_all[bankState] = ZEROS1[bankState]
-    bank.Lo_P[bankState] = ZEROS1[bankState]
-    bank.Li_BI_all[bankState] = ZEROS1[bankState]
-    bank.Li_P[bankState] = ZEROS1[bankState]
-    bank.Bi_BI_all[bankState] = ZEROS1[bankState]
-    bank.Bi_D[bankState] = ZEROS1[bankState]
-    bank.Bo_BI_all[bankState] = ZEROS1[bankState]
-    bank.Bo_D[bankState] = ZEROS1[bankState]
-    interbank.Lo_BI[interbankState] = ZEROS2[interbankState]
-    interbank.Bo_BI[interbankState] = ZEROS2[interbankState]
+    bank.Lo_BI_all[bankState] = zeros(env[:numBank])[bankState]
+    bank.Lo_P[bankState] = zeros(env[:numBank])[bankState]
+    bank.Li_BI_all[bankState] = zeros(env[:numBank])[bankState]
+    bank.Li_P[bankState] = zeros(env[:numBank])[bankState]
+    bank.Bi_BI_all[bankState] = zeros(env[:numBank])[bankState]
+    bank.Bi_D[bankState] = zeros(env[:numBank])[bankState]
+    bank.Bo_BI_all[bankState] = zeros(env[:numBank])[bankState]
+    bank.Bo_D[bankState] = zeros(env[:numBank])[bankState]
+    interbank.Lo_BI[interbankState] = zeros(env[:numBank],env[:numBank])[interbankState]
+    interbank.Bo_BI[interbankState] = zeros(env[:numBank],env[:numBank])[interbankState]
 end
 
 """
