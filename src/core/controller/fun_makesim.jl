@@ -33,5 +33,19 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     # end # while
 
     ## 存储数据，通过Watson.Dr工具包
-    # wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "jld2", connector="|", equals="=")), systemicRiskAgent.bank) #FIXME
+    dataBB=A_data.BB
+    dataBI=A_data.BI
+    wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "jld2", connector="|", equals="=")), para) #FIXME
+    wsave(datadir(env[:folderpathOfExperimentsData], "BB.jld2"), dataBB) #FIXME
+    wsave(datadir(env[:folderpathOfExperimentsData], "BI.jld2"), A_data.BI) #FIXME
+    # dataBB_csv=
+
+    dict_BI=struct2dict(dataBI[1])
+
+    array_dict_BI=Array{Any}[]
+    for i in 1:length(array_dict_BI)
+        array_dict_BI[i]=struct2dict(dataBI[i])
+    end
+    jldsave()
+
 end # function
