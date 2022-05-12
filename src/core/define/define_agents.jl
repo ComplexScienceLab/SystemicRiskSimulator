@@ -140,10 +140,5 @@ mutable struct SystemicRiskAgent <: AbstractAgent
 end
 
 
-"#TODO 结构体：定义待收集数据类型"
-mutable struct AgentDataCollection
-    BB::DataFrame
-    BI::StructArray
-end
 
 
