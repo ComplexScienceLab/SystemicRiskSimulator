@@ -55,6 +55,7 @@ isTest = true # 是否处于测试状态
 
 foldernameOfExperimentsData = ""; # 实验数据文件夹名称
 
+dataId = 0; # 实验初始数据帧ID号；
 step = 0; # 当前步伐值为0。不要改动
 tau = 0; # 初始回合计次为0；
 id_experiment = 1; # 当前实验组编号；
