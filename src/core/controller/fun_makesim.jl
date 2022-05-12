@@ -31,7 +31,8 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     #     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
     #     # return BB, BI, A_data.BB, A_data.BI, env
     # end # while
-
+    
+    #BUG
     ## 存储数据，通过Watson.Dr工具包
     dataBB = A_data.BB
     dataBI = A_data.BI
@@ -39,37 +40,43 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     # wsave(datadir(env[:folderpathOfExperimentsData], "BB.jld2"), dataBB) #FIXME
     # wsave(datadir(env[:folderpathOfExperimentsData], "BI.jld2"), A_data.BI) #FIXME
     # dataBB_csv=
-    
-    wsave(datadir("../test/",savename(para, "_$(env[:id_experiment]).jld2", connector="|", equals="=")), para) #FIXME
+    wsave(datadir("../test/data/", savename(para, "_$(env[:id_experiment]).jld2", connector="|", equals="=")), para) #FIXME
+    jldsave("./test/data/BB$(env[:id_experiment]).jld2"; dataBB)
+    jldsave("./test/data/BI$(env[:id_experiment]).jld2"; dataBI)
 
-    jldsave("./test/BB$(env[:id_experiment]).jld2"; dataBB)
+    # h5save("./test/BB$(env[:id_experiment]).h5", "w") do f
+    #     g = create_group(f, "mygroup")
+    #     g["mydataset"] = dataBB
+    # end
+    # 
+    # h5save("./test/BB$(env[:id_experiment]).h5"; dataBI)
 
-    jldsave("./test/BI$(env[:id_experiment]).jld2"; dataBI)
+    # jldopen("./test/BIarray$(env[:id_experiment]).jld2", "w") do f
+    #     array_dict_BI = Array[]
+    #     for i in 1:length(dataBI)
+    #         append!(array_dict_BI, [struct2dict(dataBI[i])])
+    #         f[i] = array_dict_BI[i]
+    #     end
+    # end
 
-    h5open("./test/BB$(env[:id_experiment]).h5", "w") do f
-        g = create_group(f, "mygroup")
-        g["mydataset"] = dataBB
-    end
+    # h5open("./test/BI$(env[:id_experiment]).h5", "w") do f
+    #     g = create_group(f, "mygroup")
+    #     g["mydataset"] = dataBI
+    # end
 
-    h5open("./test/BI$(env[:id_experiment]).h5", "w") do f
-        g = create_group(f, "mygroup")
-        g["mydataset"] = dataBI
-    end
+    # h5open("./test/BIarray$(env[:id_experiment]).h5", "w") do f
+    #     array_dict_BI = []
+    #     for i in 1:length(dataBI)
+    #         # append!(array_dict_BI, struct2dict(dataBI[i]))
+    #         append!(array_dict_BI, [[dataBI[i]]])
+    #         f[i] = array_dict_BI[i]
+    #     end
+    # end
 
-    jldopen("./test/BIarray$(env[:id_experiment]).jld2", "w") do f
-        array_dict_BI = Array{Any}[]
-        for i in 1:length(array_dict_BI)
-            array_dict_BI[i] = struct2dict(dataBI[i])
-            f[i] = array_dict_BI[i]
-        end
-    end
-
-    h5open("./test/BIarray$(env[:id_experiment]).h5", "w") do f
-        array_dict_BI = Array{Any}[]
-        for i in 1:length(array_dict_BI)
-            array_dict_BI[i] = struct2dict(dataBI[i])
-            f[i] = array_dict_BI[i]
-        end
-    end
+    # array_dict_BI = []
+    # for i in 1:length(dataBI)
+    #     append!(array_dict_BI, [[dataBI[i]]])
+    # end
+    # print(array_dict_BI)
 
 end # function
