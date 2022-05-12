@@ -73,9 +73,17 @@ get_folder_info <-
 
 
 ## 导入实验后之数据文件 ----------------
-folderpath_original <- "data/exp_raw/test_data"
-folderpath_
-
+folderpath_original <- "data"
+folderpath_import <- ""
+suffix_original <- "jld2"
+suffix_import <- "hdf5"
+df_000 <- 
+  get_folder_info(
+    workAddress = workAddress,
+    folder_source = folderpath_original
+    folder_target = folderpath_import
+    
+  )
 
 
 
