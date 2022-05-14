@@ -5,6 +5,7 @@
 *.ffs_db
 
 # paths that include data files
+venv/
 !data/exp_raw/test_data
 !data/import_data
 !data/original_data
@@ -428,6 +429,7 @@ $RECYCLE.BIN/
 ## Acknowledgements
 # Many thanks to `https://gitignore.io/`, written and maintained by Joe Blau, which contributed much material to this gitignore file.
 .Rproj.user
+
 
 
 
