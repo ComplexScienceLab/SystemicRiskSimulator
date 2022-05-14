@@ -38,9 +38,9 @@ BB["dataBB"]
 BI = load("test/data/BI1.jld2")
 dump(BI["dataBI"])
 
-BI["dataBI"][1][1]
-BI["dataBI"][1][1][:ilq]
-BI["dataBI"][2][1][:ilq]
+BI["dataBI"][1]
+BI["dataBI"][1][:ilq]
+BI["dataBI"][2][:dataId]
 
 BI = load("BIarray1.h5")
 typeof(BI)

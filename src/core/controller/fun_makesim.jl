@@ -43,6 +43,14 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     wsave(datadir("../test/data/", savename(para, "_$(env[:id_experiment]).jld2", connector="|", equals="=")), para) #FIXME
     jldsave("./test/data/BB$(env[:id_experiment]).jld2"; dataBB)
     jldsave("./test/data/BI$(env[:id_experiment]).jld2"; dataBI)
+    jldsave("./test/data/BB$(env[:id_experiment]).h5"; dataBB)
+    jldsave("./test/data/BI$(env[:id_experiment]).h5"; dataBI)
+    
+    h5open("./test/data/BI$(env[:id_experiment]).h5", "w") do f
+        create_dataset(f,"BI$(env[:id_experiment])",[[dataBI]])
+        # g = create_group(f, "BI$(env[:id_experiment])")
+        # g["BI$(env[:id_experiment])"] = dataBI
+    end
 
     # h5save("./test/BB$(env[:id_experiment]).h5", "w") do f
     #     g = create_group(f, "mygroup")
@@ -59,10 +67,7 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     #     end
     # end
 
-    # h5open("./test/BI$(env[:id_experiment]).h5", "w") do f
-    #     g = create_group(f, "mygroup")
-    #     g["mydataset"] = dataBI
-    # end
+
 
     # h5open("./test/BIarray$(env[:id_experiment]).h5", "w") do f
     #     array_dict_BI = []
