@@ -6,11 +6,14 @@ import numpy as np
 #
 # Open an existing file using default properties.
 #
-file = h5py.File('dset.h5','r+')
+
+
+
+file = h5py.File('test/data/BI1.h5','r+')
 #
 # Open "dset" dataset under the root group.
 #
-dataset = file['/dset']
+dataset = file['/dataBB']
 #
 # Initialize data object with 0.
 #

@@ -97,10 +97,10 @@ function init_B_variables_only()
         falses(env[:numBank]), # 示性向量之于银行是否需要收回厂商贷款 isNeededLiP
         trues(env[:numBank]), # 示性向量之于银行是否可以收回厂商贷款 isEnabledLiP    
         falses(env[:numBank]), # 示性向量之于银行是否已经分配传染冲击 isAllocatedShock
-        fill(nothing, env[:numBank]),  # 列表之于存在的银行编号 listOfExist
-        fill(nothing, env[:numBank]),  # 列表之于资不抵债的银行编号 listOfInsolvent
-        fill(nothing, env[:numBank]),  # 列表之于流动性短缺的银行编号 listOfIlliquity
-        fill(nothing, env[:numBank])  # 列表之于破产的银行编号 listOfBankrupt
+        fill(missing, env[:numBank]),  # 列表之于存在的银行编号 listOfExist
+        fill(missing, env[:numBank]),  # 列表之于资不抵债的银行编号 listOfInsolvent
+        fill(missing, env[:numBank]),  # 列表之于流动性短缺的银行编号 listOfIlliquity
+        fill(missing, env[:numBank])  # 列表之于破产的银行编号 listOfBankrupt
     )
 
     ## 初始化银行间邻接矩阵
@@ -234,10 +234,10 @@ function initVariables_setManually()
         falses(env[:numBank]), # 示性向量之于银行是否需要收回厂商贷款 isNeededLiP
         trues(env[:numBank]), # 示性向量之于银行是否可以收回厂商贷款 isEnabledLiP    
         falses(env[:numBank]), # 示性向量之于银行是否已经分配传染冲击 isAllocatedShock
-        fill(nothing, env[:numBank]), # 列表之于存在的银行编号 listOfExist
-        fill(nothing, env[:numBank]), # 列表之于资不抵债的银行编号 listOfInsolvent
-        fill(nothing, env[:numBank]), # 列表之于流动性短缺的银行编号 listOfIlliquity
-        fill(nothing, env[:numBank])  # 列表之于破产的银行编号 listOfBankrupt
+        fill(missing, env[:numBank]), # 列表之于存在的银行编号 listOfExist
+        fill(missing, env[:numBank]), # 列表之于资不抵债的银行编号 listOfInsolvent
+        fill(missing, env[:numBank]), # 列表之于流动性短缺的银行编号 listOfIlliquity
+        fill(missing, env[:numBank])  # 列表之于破产的银行编号 listOfBankrupt
     )
 
     ## 初始化银行间邻接矩阵

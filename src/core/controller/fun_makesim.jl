@@ -45,6 +45,7 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     jldsave("./test/data/BI$(env[:id_experiment]).jld2"; dataBI)
     jldsave("./test/data/BB$(env[:id_experiment]).h5"; dataBB)
     jldsave("./test/data/BI$(env[:id_experiment]).h5"; dataBI)
+    CSV.write("./test/data/BB$(env[:id_experiment]).csv",dataBB)
     
     h5open("./test/data/BI$(env[:id_experiment]).h5", "w") do f
         create_dataset(f,"BI$(env[:id_experiment])",[[dataBI]])
