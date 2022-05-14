@@ -15,77 +15,35 @@ library(hdf5r) # 操作文件其HDF5格式
 
 
 ## 初始设置 --------------
-workaddress = getwd() # 获取工作路径
+workAddress = getwd() # 获取工作路径
 
-
-
-## 函数区 -----------
-##+ 获取文件夹及其子文件信息 --------
-get_folder_info <-
-  function(workAddress,
-           folder_source,
-           folder_target,
-           suffix_source,
-           suffix_target) {
-    rootPath_source <-
-      str_c(workAddress,  folder_source, sep = '/') # 原始文件根路径
-    rootPath_target <-
-      str_c(workAddress, folder_target, sep = '/') # 目标文件根路径
-    fileNamesWithSuffix <-
-      dir(
-        rootPath_source,
-        all.files = F,
-        full.names = F,
-        no.. = T
-      ) # 文件名含后缀名
-    regularPattern <- str_c(".*[^(\\.", suffix_source, ")]")
-    fileNames <-
-      fileNamesWithSuffix %>% str_extract(pattern = regularPattern) # 纯文件名
-    filePath_source <-
-      dir(
-        rootPath_source,
-        pattern = "[^(\\~\\$)]",
-        all.files = F,
-        full.names = T,
-        no.. = T
-      ) # 文件名含后缀名
-    filePath_target <-
-      map2_chr(
-        rootPath_target,
-        str_c(fileNames, suffix_target, sep = '.') ,
-        str_c,
-        sep = '/',
-        collapse = ','
-      )   # 目标文件路径
-    
-    results <- list(
-      "fileNames" =
-        fileNames,
-      "fileNamesWithSuffix" =
-        fileNamesWithSuffix,
-      "filePath_source" =
-        filePath_source,
-      "filePath_target" =  filePath_target
-    )
-    
-    
-  }
+## 导入相关功能文件 -------------
+source(str_c(workAddress,  "scripts/tools/useful_functions.R", sep = '/'))
 
 
 ## 导入实验后之数据文件 ----------------
-folderpath_original <- "data"
-folderpath_import <- ""
+folderpath_expdata <- "test/data" # 需要后续改进
+folderpath_expprocess <- "test/data"
 suffix_original <- "jld2"
 suffix_import <- "hdf5"
-df_000 <- 
+fd_000 <- 
   get_folder_info(
     workAddress = workAddress,
-    folder_source = folderpath_original
-    folder_target = folderpath_import
-    
+    folder_source = folderpath_expdata,
+    folder_target = folderpath_expprocess,
+    suffix_source = suffix_original,
+    suffix_target = suffix_import
   )
 
+f_BB1jld2 <- fd_000$filePath_source[which(fd_000$fileNamesWithSuffix=="BB1.jld2")]
+f_BI1h5 <- fd_000$filePath_source[which(fd_000$fileNamesWithSuffix=="BI1.h5")]
+
+BB1 <- H5File$new(f_BB1jld2,mode = "r")
+BI1h5 <- H5File.open(f_BI1h5,mode = "r")
 
 
 
+
+# H5File$open()
+BB1jld2
 
