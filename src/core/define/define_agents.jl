@@ -98,7 +98,7 @@ end
 
 "定义银行间邻接矩阵复合类型。"
 mutable struct BankInterbank{NDIMS2}
-    # id::TypeIds{NDIMS2} # 编号
+    id::TypeIds{NDIMS2} # 编号
     A_BI::TypeMoney{NDIMS2} # 银行间资产邻接矩阵 A_BI
     Z_BI::TypeMoney{NDIMS2} # 银行间负债邻接矩阵 Z_BI
     Lo_BI::TypeMoney{NDIMS2} # 银行间贷款流出邻接矩阵 Lo_BI
