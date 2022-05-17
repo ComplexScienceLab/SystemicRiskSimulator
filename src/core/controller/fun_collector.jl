@@ -132,23 +132,23 @@ function initAgentDataCollection(A::SystemicRiskAgent; env::Dict=env)
     # BB_data = []
     # append!(BB_data, A.BB)
 
-    BB_data_item = Dict([
+    BB_data_item = [Dict([
         (getkey(env, env[:dataId], :dataId), env[:dataId]),
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:indexProcess], :indexProcess), env[:indexProcess]),
         (getkey(env, env[:indexStage], :indexStage), env[:indexStage]),
         (:dataBB, A.BB)
-    ])
+    ])]
     BB_data = []
     append!(BB_data, BB_data_item) # 初始化banks之数据为一字典数组
 
-    BI_data_item = Dict([
+    BI_data_item = [Dict([
         (getkey(env, env[:dataId], :dataId), env[:dataId]),
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:indexProcess], :indexProcess), env[:indexProcess]),
         (getkey(env, env[:indexStage], :indexStage), env[:indexStage]),
         (:dataBI, A.BI)
-    ])
+    ])]
     BI_data = []
     append!(BI_data, BI_data_item) # 初始化interbank之数据为一字典数组
 
