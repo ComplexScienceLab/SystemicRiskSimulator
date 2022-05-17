@@ -85,6 +85,7 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:isModel] = true
     env[:isExperiment] = true
     env[:stateOfSchedule] = :indexing
+    env[:stateOfProcess] = :initializing
 
     ## 生成模型内容
     # modelComponent = eval(Meta.parse(para[:modelName]))

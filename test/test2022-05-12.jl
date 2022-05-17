@@ -16,33 +16,69 @@ mutable struct St
     s2::Vector{Float32}
 end
 
-st1=St([1,1,1],[2,2,2,2])
-st2=St([3,3,3],[4,4,4,4])
-ssst=StructArray((st1,st2))
-asst=[]
-append!(asst,[[merge(Dict([:tau=>1]),Dict([:indexStage=>1]),struct2dict(st1))]])
-append!(asst,[[merge(Dict([:tau=>2]),Dict([:indexStage=>1]),struct2dict(st2))]])
+st1 = St([1, 1, 1], [2, 2, 2, 2])
+st2 = St([3, 3, 3], [4, 4, 4, 4])
+asst = []
+# append!(asst, [[merge(Dict([:tau => 1]), Dict([:indexStage => 1]), struct2dict(st1))]])
+# append!(asst, [[merge(Dict([:tau => 2]), Dict([:indexStage => 1]), struct2dict(st2))]])
+append!(asst, [[merge(Dict([:tau => 1]), Dict([:indexStage => 1]), struct2dict(st1))]])
+append!(asst, [[merge(Dict([:tau => 2]), Dict([:indexStage => 1]), struct2dict(st2))]])
 
-run(`cd test/data`)
-run(`ls`)
+asst_export = DataFrames()
+df_asst = DataFrame()
+for (i1, v1) in enumerate(asst)
+    for (i2, v2) in enumerate(v1)
+        
+    end
+    append!(asst_export, df_asst)
+end
 
-jldsave("asst.jld2";asst)
-asst2=load("asst.jld2")
+# run(`cd test/data`)
+# run(`ls`)
+
+# jldsave("asst.jld2"; asst)
+# asst2 = load("asst.jld2")
+
+
+# h5open("asst.h5", "w") do f
+#     for (i,v) in enumerate(asst)
+#         f["$(i)"]=Dict()
+#         for (j,d) in enumerate(v)
+#             write(f,"$(i)/$(j)",d)
+#         end
+#     end
+# end
+
+h5open("asst.h5", "r") do f
+    a = read(f, "data")
+    println(a)
+end
 
 
 
-para = load("kappa_A_P=0.0|kappa_BI=0.0|modelName=BI1111._1.jld2")
-BB = load("BB1.jld2")
-BB["dataBB"]
+para = load("test/data/kappa_A_P=0.0|kappa_BI=0.0|modelName=BI1111._1.jld2")
+BBjld2 = load("test/data/BB1.jld2")
+BBjld2["dataBB"]
 
-BI = load("test/data/BI1.jld2")
+BIjld2 = load("test/data/BI1.jld2")
 dump(BI["dataBI"])
 
-BI["dataBI"][1]
-BI["dataBI"][1][:ilq]
-BI["dataBI"][2][:dataId]
+BIjld2["dataBI"][1]
+BIjld2["dataBI"][1][:ilq]
+BIjld2["dataBI"][2][:dataId]
 
-BI = load("BIarray1.h5")
-typeof(BI)
-dump(BI)
+
+BBh5 = read("test/data/BB1.h5")
+BBh5["dataBB"]
+
+BIh5 = load("test/data/BI1.h5")
+dump(BI["dataBI"])
+
+BIh5["dataBI"][1]
+BIh5["dataBI"][1][:ilq]
+BIh5["dataBI"][2][:dataId]
+
+BIh5 = load("BIarray1.h5")
+typeof(BIh5)
+dump(BIh5)
 
