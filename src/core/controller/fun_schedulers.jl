@@ -173,10 +173,10 @@ Return:
 - stateOfSchedule::Symbol: 调度状态；
 """
 
-function scheduler_collecting(A::SystemicRiskAgent, A_data::AgentDataCollection)
+function scheduler_collecting(A::SystemicRiskAgent, A_data::AgentDataCollection; env::Dict=env)
     @test println("收集数据。")
     env[:dataId] += 1 # 累加数据帧ID号
-    A_data = collector(A, A_data) # 收集数据
+    collector(A; A_data, stateOfProcess=env[:stateOfProcess]) # 收集数据
     stateOfSchedule = :loading  # 切换调度运作状态为读取
     @test println("切换调度运作状态为$(stateOfSchedule)")
     return stateOfSchedule

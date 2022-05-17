@@ -310,7 +310,7 @@ function init_B_and_BI(; init_method::String)
     )
 
     # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组
-    A_data = initAgentDataCollection(A)
+    A_data=collector(A;stateOfProcess=env[:stateOfProcess])
 
     # A_data.BB = StructArray([BB for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的商业银行实例数组
     # A_data.BI = StructArray([BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
