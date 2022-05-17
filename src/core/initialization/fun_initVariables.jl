@@ -105,7 +105,7 @@ function init_B_variables_only()
 
     ## 初始化银行间邻接矩阵
     interbank = BankInterbank{2}(
-        # reshape(range(1, env[:numBank]^2, step = 1), (env[:numBank], env[:numBank])), # 编号
+        reshape(range(1, env[:numBank]^2, step = 1), (env[:numBank], env[:numBank])), # 编号
         zeros(env[:numBank], env[:numBank]), # 银行间资产邻接矩阵 A_BI
         zeros(env[:numBank], env[:numBank]), # 银行间负债邻接矩阵 Z_BI
         zeros(env[:numBank], env[:numBank]), # 银行间贷款流出邻接矩阵 Lo_BI
@@ -242,7 +242,7 @@ function initVariables_setManually()
 
     ## 初始化银行间邻接矩阵
     interbank = BankInterbank{2}(
-        # reshape(range(1, env[:numBank]^2, step = 1), (env[:numBank], env[:numBank])), # 编号
+        reshape(range(1, env[:numBank]^2, step = 1), (env[:numBank], env[:numBank])), # 编号
         [0 1728.55 0 134.46 322.23; 109.35 0 289.02 0 0; 730.99 0 0 0 0; 119.26 115.69 964.32 0 158.48; 0 0 0 2717.39 0], # 银行间资产邻接矩阵 A_BI
         [0 1728.55 0 134.46 322.23; 109.35 0 289.02 0 0; 730.99 0 0 0 0; 119.26 115.69 964.32 0 158.48; 0 0 0 2717.39 0]', # 银行间负债邻接矩阵 Z_BI
         zeros(env[:numBank], env[:numBank]), # 银行间贷款流出邻接矩阵 Lo_BI
