@@ -29,6 +29,7 @@ env = @dict(
   tau,
   id_experiment,
   stateOfSchedule,
+  stateOfProcess,
   isStep,
   isLoop,
   isRound,
