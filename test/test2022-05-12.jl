@@ -2,7 +2,6 @@
 using DrWatson
 @quickactivate "SystemicRisk" # 快速激活本项目
 using Dates
-using DataFrames
 using StructArrays
 using Graphs
 using Agents
@@ -11,49 +10,61 @@ using JLD2
 using HDF5
 using JSON
 
+using DataFrames
+
+# 定义结构体
 mutable struct St
     s1::Matrix{Float64}
     s2::Matrix{Float64}
 end
 
+# 生成数组，元素为结构体
 st1 = St([1 2 3; 4 5 6; 7 8 9], [10 11 12; 13 14 15; 16 17 18])
 st2 = St([1 2 3; 4 5 6; 7 8 9] .* 10, [10 11 12; 13 14 15; 16 17 18] .* 10)
-asst = []
-# append!(asst, [[merge(Dict([:tau => 1]), Dict([:indexStage => 1]), struct2dict(st1))]])
-# append!(asst, [[merge(Dict([:tau => 2]), Dict([:indexStage => 1]), struct2dict(st2))]])
+a = []
+a_item = [Dict([:tau => 1, :data => st1])]
+append!(a, a_item)
+a_item = [Dict([:tau => 2, :data => st2])]
+append!(a, a_item)
 
-asst_item = [Dict([:tau => 1, :data => st1])]
-append!(asst, asst_item)
-asst_item = [Dict([:tau => 2, :data => st2])]
-append!(asst, asst_item)
-asst
-asst[1]
-asst[1][:tau]
-asst[1][:data].s1
-#FIXME for (i,v) in enumerate(asst[1][:data]) 
-    i
-    v
-end
+# 查看数组
+a
+a[1]
+a[1][:tau]
+a[1][:data].s1
+getfield(a[1][:data], :s1)
 
-asst_export = DataFrame()
-df_asst = DataFrame()
-for (i1, v1) in enumerate(asst)
-    df_asst[!, :tau] = v2[:tau]
-    for (i2, v2) in enumerate(v1)
-        df_asst[!, :data] = v2[:data]
+# 转换该数组a为数据框结构
+a_df = DataFrame()
+df = DataFrame()
+for (i1, v1) in enumerate(a)
+    # enumerate(v1[:data])
+    fieldNames = fieldnames(typeof(v1[:data]))
+    fieldValues = [getfield(v1[:data], fieldName) for fieldName in fieldNames]
+    for (i2, v2) in enumerate(fieldValues)
+        df[!, :tau] = fill(v1[:tau], size(v2)[1] * size(v2)[2])
+        df[!, :row] = repeat(1:size(v2)[1], inner=size(v2)[1])
+        df[!, :col] = repeat(1:size(v2)[2], outer=size(v2)[2])
+        df[!, fieldNames[i2]] = [v2'...]
     end
+    append!(a_df, df)
 end
-append!(asst_export, df_asst)
 
+# 查看结果
+a_df
+
+
+i1 = 1;
+v1 = a[1];
 # run(`cd test/data`)
 # run(`ls`)
 
-# jldsave("asst.jld2"; asst)
-# asst2 = load("asst.jld2")
+# jldsave("a.jld2"; a)
+# a2 = load("a.jld2")
 
 
-# h5open("asst.h5", "w") do f
-#     for (i,v) in enumerate(asst)
+# h5open("a.h5", "w") do f
+#     for (i,v) in enumerate(a)
 #         f["$(i)"]=Dict()
 #         for (j,d) in enumerate(v)
 #             write(f,"$(i)/$(j)",d)
@@ -61,7 +72,7 @@ append!(asst_export, df_asst)
 #     end
 # end
 
-h5open("asst.h5", "r") do f
+h5open("a.h5", "r") do f
     a = read(f, "data")
     println(a)
 end
