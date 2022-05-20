@@ -31,20 +31,22 @@ append!(a, a_item)
 a
 a[1]
 a[1][:tau]
-a[1][:data].s1
+a[1][:data]
 getfield(a[1][:data], :s1)
+size(a[1][:data])
 
 # 转换该数组a为数据框结构
 a_df = DataFrame()
 df = DataFrame()
 for (i1, v1) in enumerate(a)
+    numRow,numCol=size(getfield(a[1][:data],fieldnames(typeof(a[1][:data]))[1]))
     # enumerate(v1[:data])
+    df[!, :tau] = fill(v1[:tau], numRow*numCol)
+    df[!, :row] = repeat(1:numRow, inner=numCol)
+    df[!, :col] = repeat(1:numCol, outer=numRow)
     fieldNames = fieldnames(typeof(v1[:data]))
     fieldValues = [getfield(v1[:data], fieldName) for fieldName in fieldNames]
     for (i2, v2) in enumerate(fieldValues)
-        df[!, :tau] = fill(v1[:tau], size(v2)[1] * size(v2)[2])
-        df[!, :row] = repeat(1:size(v2)[1], inner=size(v2)[1])
-        df[!, :col] = repeat(1:size(v2)[2], outer=size(v2)[2])
         df[!, fieldNames[i2]] = [v2'...]
     end
     append!(a_df, df)
