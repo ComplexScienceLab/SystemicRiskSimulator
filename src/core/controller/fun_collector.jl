@@ -7,7 +7,7 @@
 ##########################################
 
 
-function collector(A::SystemicRiskAgent; A_data::AgentDataCollection, stateOfProcess::Symbol=:running, env::Dict=env)
+function collector(A::SystemicRiskAgent; A_data::AgentDataCollection=AgentDataCollection([], []), stateOfProcess::Symbol=:running, env::Dict=env)
     if stateOfProcess == :running
         A_data = collectAgentData(A, A_data)
         return A_data
@@ -15,7 +15,7 @@ function collector(A::SystemicRiskAgent; A_data::AgentDataCollection, stateOfPro
         A_data = initAgentDataCollection(A)
         return A_data
     elseif stateOfProcess == :finishing
-        exportAgentData(A, A_data)
+        exportAgentData(A_data)
     else
         throw(DomainError(stateOfProcess, "关键词stateOfProcess取值错误！"))
     end # if
@@ -198,94 +198,57 @@ end
 """
 TODO函数：导出实验结果数据
 """
-function exportAgentData(A::SystemicRiskAgent, A_data::AgentDataCollection; env::Dict=env)
-    #BUG
-    ## 整理并导出数据
-    dataBB = A_data.BB
-    dataBI = A_data.BI
+function exportAgentData(A_data::AgentDataCollection; env::Dict=env)
 
     ## 整理banks之数据为一数据框
-    BB_data_export=DataFrames()
+    BB_data_export = DataFrames()
     BB_data = DataFrame()
-    for (i1,v1) in enumerate(A_data.BB)
-        BB_data[!, :dataId] = fill(v1[:dataId],env[:numBank])
-        BB_data[!, :tau] = fill(v1[:tau], env[:numBank])
-        BB_data[!, :indexProcess] = fill(v1[:indexProcess], env[:numBank])
-        BB_data[!, :indexStage] = fill(v1[:indexStage], env[:numBank])
-        for (i2, v2) in v1[:dataBB]
-            BB_data[!, i2] = v2
+    for (i1, v1) in enumerate(A_data.BB)
+        numRow, numCol = size(getfield(A_data.BB[i1][:data], fieldnames(typeof(A_data.BB[i1][:dataBB]))[1]))
+        BB_data[!, :dataId] = fill(v1[:dataId], numRow * numCol)
+        BB_data[!, :tau] = fill(v1[:tau], numRow * numCol)
+        BB_data[!, :indexProcess] = fill(v1[:indexProcess], numRow * numCol)
+        BB_data[!, :indexStage] = fill(v1[:indexStage], numRow * numCol)
+        fieldNames = fieldnames(typeof(v1[:dataBB]))
+        fieldValues = [getfield(v1[:dataBB], fieldName) for fieldName in fieldNames]
+        for (i2, v2) in enumerate(fieldValues)
+            BB_data[!, fieldNames[i2]] = [v2'...]
         end
         append!(BB_data_export, BB_data)
     end
 
     ## NOW整理interbank之数据为一数据框
-    BI_data_export=DataFrames()
+    BI_data_export = DataFrames()
     BI_data = DataFrame()
-    for (i1,v1) in enumerate(A_data.BI)
-        BI_data[!, :dataId] = fill(v1[:dataId],env[:numBank]^2)
-        BI_data[!, :tau] = fill(v1[:tau], env[:numBank]^2)
-        BI_data[!, :indexProcess] = fill(v1[:indexProcess], env[:numBank]^2)
-        BI_data[!, :indexStage] = fill(v1[:indexStage], env[:numBank]^2)
-        for (i2, v2) in v1[:dataBI]
-            BI_data[!, i2] = 
+    for (i1, v1) in enumerate(A_data.BI)
+        numRow, numCol = size(getfield(A_data.BI[i1][:data], fieldnames(typeof(A_data.BI[i1][:dataBI]))[1]))
+        BI_data[!, :dataId] = fill(v1[:dataId], numRow * numCol)
+        BI_data[!, :tau] = fill(v1[:tau], numRow * numCol)
+        BI_data[!, :indexProcess] = fill(v1[:indexProcess], numRow * numCol)
+        BI_data[!, :indexStage] = fill(v1[:indexStage], numRow * numCol)
+        BI_data[!, :indexStage] = fill(v1[:indexStage], numRow * numCol)
+        BI_data[!, :row] = repeat(1:numRow, inner=numCol)
+        BI_data[!, :col] = repeat(1:numCol, outer=numRow)
+        fieldNames = fieldnames(typeof(v1[:dataBI]))
+        fieldValues = [getfield(v1[:dataBI], fieldName) for fieldName in fieldNames]
+        for (i2, v2) in enumerate(fieldValues)
+            BI_data[!, fieldNames[i2]] = [v2'...]
         end
         append!(BI_data_export, BI_data)
     end
 
-
-
-    # wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "jld2", connector="|", equals="=")), para) #FIXME
-    # wsave(datadir(env[:folderpathOfExperimentsData], "BB.jld2"), dataBB) #FIXME
-    # wsave(datadir(env[:folderpathOfExperimentsData], "BI.jld2"), A_data.BI) #FIXME
-    # dataBB_csv=
     wsave(datadir("../test/data/", savename(para, "_$(env[:id_experiment]).jld2", connector="|", equals="=")), para) #FIXME
-    jldsave("./test/data/BB$(env[:id_experiment]).jld2"; dataBB)
-    jldsave("./test/data/BI$(env[:id_experiment]).jld2"; dataBI)
-    # jldsave("./test/data/BB$(env[:id_experiment]).h5"; dataBB)
-    # jldsave("./test/data/BI$(env[:id_experiment]).h5"; dataBI)
-    CSV.write("./test/data/BB$(env[:id_experiment]).csv", dataBB)
-
-    h5open("./test/data/BI$(env[:id_experiment]).h5", "w") do f
-        for (i, oneOfDataBI) in enumerate(dataBI)
-            create_group(f, "$(i)")
-            g = f["$(i)"]
-            g["$(i)"] = oneOfDataBI
-        end
-        # g = create_group(f, "BI$(env[:id_experiment])")
-        # g["BI$(env[:id_experiment])"] = dataBI
-    end
-
-    # h5save("./test/BB$(env[:id_experiment]).h5", "w") do f
-    #     g = create_group(f, "mygroup")
-    #     g["mydataset"] = dataBB
-    # end
-    # 
-    # h5save("./test/BB$(env[:id_experiment]).h5"; dataBI)
-
-    # jldopen("./test/BIarray$(env[:id_experiment]).jld2", "w") do f
-    #     array_dict_BI = Array[]
-    #     for i in 1:length(dataBI)
-    #         append!(array_dict_BI, [struct2dict(dataBI[i])])
-    #         f[i] = array_dict_BI[i]
+    CSV.write("./test/data/BB$(env[:id_experiment]).csv", BB_data_export)
+    CSV.write("./test/data/BI$(env[:id_experiment]).csv", BI_data_export)
+    # jldsave("./test/data/BB$(env[:id_experiment]).jld2"; dataBB)
+    # jldsave("./test/data/BI$(env[:id_experiment]).jld2"; dataBI)
+    # h5open("./test/data/BI$(env[:id_experiment]).h5", "w") do f
+    #     for (i, oneOfDataBI) in enumerate(dataBI)
+    #         create_group(f, "$(i)")
+    #         g = f["$(i)"]
+    #         g["$(i)"] = oneOfDataBI
     #     end
     # end
-
-
-
-    # h5open("./test/BIarray$(env[:id_experiment]).h5", "w") do f
-    #     array_dict_BI = []
-    #     for i in 1:length(dataBI)
-    #         # append!(array_dict_BI, struct2dict(dataBI[i]))
-    #         append!(array_dict_BI, [[dataBI[i]]])
-    #         f[i] = array_dict_BI[i]
-    #     end
-    # end
-
-    # array_dict_BI = []
-    # for i in 1:length(dataBI)
-    #     append!(array_dict_BI, [[dataBI[i]]])
-    # end
-    # print(array_dict_BI)
 end
 
 
