@@ -131,7 +131,7 @@ function exportAgentData(A_data::AgentDataCollection; env::Dict=env, para::Dict=
 
     wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "|exp=$(env[:id_experiment]).jld2", connector="|", equals="=")), para)
     CSV.write(datadir("$(env[:folderpathOfExperimentsData])","BB_exp=$(env[:id_experiment]).csv"), BB_data_export)
-    CSV.write(datadir("$(env[:folderpathOfExperimentsData])","BB_exp=$(env[:id_experiment]).csv"), BI_data_export)
+    CSV.write(datadir("$(env[:folderpathOfExperimentsData])","BI_exp=$(env[:id_experiment]).csv"), BI_data_export)
 end
 
 
