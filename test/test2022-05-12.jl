@@ -39,9 +39,9 @@ size(a[1][:data])
 a_df = DataFrame()
 df = DataFrame()
 for (i1, v1) in enumerate(a)
-    numRow,numCol=size(getfield(a[1][:data],fieldnames(typeof(a[1][:data]))[1]))
+    numRow, numCol = size(getfield(a[1][:data], fieldnames(typeof(a[1][:data]))[1]))
     # enumerate(v1[:data])
-    df[!, :tau] = fill(v1[:tau], numRow*numCol)
+    df[!, :tau] = fill(v1[:tau], numRow * numCol)
     df[!, :row] = repeat(1:numRow, inner=numCol)
     df[!, :col] = repeat(1:numCol, outer=numRow)
     fieldNames = fieldnames(typeof(v1[:data]))
@@ -107,3 +107,12 @@ BIh5 = load("BIarray1.h5")
 typeof(BIh5)
 dump(BIh5)
 
+
+v2 = Any[Any[2, 3, 4], Any[1, 4], Any[2, 4], Any[1, 5], Any[1, 4]]
+m2 = Matrix{Any}(falses(5, 5))
+for (i3, v3) in enumerate(v2)
+    for v4 in v3
+        m2[i3,v4] = true
+    end
+end
+m2

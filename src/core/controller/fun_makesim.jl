@@ -16,7 +16,7 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     ##BUG 测试具体模型。
     maxnum = 0
     env[:stateOfProcess] = :running
-    while env[:isModel] == true && maxnum <= 20
+    while env[:isModel] == true && maxnum <= 20 #HACK可能需要设置最大次数maxnum
         maxnum += 1
         systemicRiskAgent_step!(A, M, para, env, model, A_data)
         # return BB, BI, A_data.BB, A_data.BI, env
@@ -34,6 +34,6 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     # end # while
 
     env[:stateOfProcess] = :finishing
-    collector(A;A_data)
+    collector(A; A_data, stateOfProcess=env[:stateOfProcess], para=para)
 
 end # function

@@ -25,15 +25,6 @@ function init_systemicRiskAgent!(para::Dict, env::Dict)
     return systemicRiskAgent, systemicRiskModel, systemicRiskAgent_data
 end
 
-# space = GraphSpace(#= #TODO生成图空间 =#)
-
-
-# "函数：构建Agent模型" #HACK 冗余
-# function create_systemicRiskModel(systemicRiskAgent::SystemicRiskAgent, para::Dict)
-#     return systemicRiskModel
-# end
-
-
 "函数：Agent模型步进" #BUG方案一
 function systemicRiskAgent_step!(A::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict, model::ModelComponent, A_data::AgentDataCollection)
     env[:isStep] = true
