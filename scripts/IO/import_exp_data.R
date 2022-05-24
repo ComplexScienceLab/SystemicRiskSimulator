@@ -11,74 +11,38 @@ library(readxl) # 读写Excel
 library(stringr) # 字符串
 library(nycflights13) #
 library(lubridate) # 操作日期时间
+library(hdf5r) # 操作文件其HDF5格式
+library(xlsx) # 操作
 
 
 ## 初始设置 --------------
-workaddress = getwd() # 获取工作路径
+workAddress = getwd() # 获取工作路径
+exp_foldername="test_20220523175447" # 当前实验文件夹
+folderpath_expoutputdata <- str_c("data/sims",exp_foldername,"exp_output_data",sep='/') # 导入数据文件夹
+folderpath_expprocess <- str_c("data/sims",exp_foldername,"analyses",sep='/') # 导出过程文件夹
+suffix_original <- "csv" # 导入数据格式
+suffix_import <- "xlsx" # 导出数据格式
 
+## 导入相关功能文件 -------------
+source(str_c(workAddress,  "scripts/tools/useful_functions.R", sep = '/'))
 
-library(hdf5r)
+## 设置相关变量操作文件 --------
+dir.create(folderpath_expprocess) # 创建相关分析文件夹
 
+fd_000 <- 
+  get_folder_info(
+    workAddress = workAddress,
+    folder_source = folderpath_expoutputdata,
+    folder_target = folderpath_expprocess,
+    suffix_source = suffix_original,
+    suffix_target = suffix_import
+  )
 
-## 函数区 -----------
-##+ 获取文件夹及其子文件信息 --------
-get_folder_info <-
-  function(workAddress,
-           folder_source,
-           folder_target,
-           suffix_source,
-           suffix_target) {
-    rootPath_source <-
-      str_c(workAddress,  folder_source, sep = '/') # 原始文件根路径
-    rootPath_target <-
-      str_c(workAddress, folder_target, sep = '/') # 目标文件根路径
-    fileNamesWithSuffix <-
-      dir(
-        rootPath_source,
-        all.files = F,
-        full.names = F,
-        no.. = T
-      ) # 文件名含后缀名
-    regularPattern <- str_c(".*[^(\\.", suffix_source, ")]")
-    fileNames <-
-      fileNamesWithSuffix %>% str_extract(pattern = regularPattern) # 纯文件名
-    filePath_source <-
-      dir(
-        rootPath_source,
-        pattern = "[^(\\~\\$)]",
-        all.files = F,
-        full.names = T,
-        no.. = T
-      ) # 文件名含后缀名
-    filePath_target <-
-      map2_chr(
-        rootPath_target,
-        str_c(fileNames, suffix_target, sep = '.') ,
-        str_c,
-        sep = '/',
-        collapse = ','
-      )   # 目标文件路径
-    
-    results <- list(
-      "fileNames" =
-        fileNames,
-      "fileNamesWithSuffix" =
-        fileNamesWithSuffix,
-      "filePath_source" =
-        filePath_source,
-      "filePath_target" =  filePath_target
-    )
-    
-    
-  }
+f_BB <- fd_000$filePath_source[which(fd_000$fileNamesWithSuffix=="BB_exp=1.csv")]
+f_BI <- fd_000$filePath_source[which(fd_000$fileNamesWithSuffix=="BI_exp=1.csv")]
 
+## 导入实验后之数据文件 ----------------
+BB_exp <- read_csv(f_BB)
+BI_exp <- read_csv(f_BI)
 
-## 导入实验数据文件，来自Julia实验过程 ----------------
-folderpath_original <- "data/exp_raw/test_data"
-folderpath_
-
-
-
-
-
-
+## 
