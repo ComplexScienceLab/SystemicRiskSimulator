@@ -12,7 +12,7 @@
 - env::EnvironmentVariables: 环境变量；
 - isDatetime::Bool = true: 是否加入日期时间；
 """
-function setExperimentsFolders(env::Dict; isDatetime::Bool = true)
+function setExperimentsFolders(env::Dict; isDatetime::Bool=true)
 
     # 设定日期时间字符串
     if isDatetime == true
@@ -30,7 +30,7 @@ function setExperimentsFolders(env::Dict; isDatetime::Bool = true)
         throw(DomainError(env[:foldernameTypeOfExperimentsData], "关键词取值错误！"))
     end
 
-    env[:foldernameOfExperimentsData] = str_manuallyName * str_datetime
+    env[:foldernameOfExperimentsData] = str_manuallyName * str_datetime * "exp_output_data"
     folderdir = env[:rootDirOfExperimentsData]
     env[:folderpathOfExperimentsData] = folderdir * env[:foldernameOfExperimentsData]
 
