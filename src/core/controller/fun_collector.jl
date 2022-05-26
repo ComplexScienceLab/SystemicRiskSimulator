@@ -131,9 +131,9 @@ function exportAgentData(A_data::AgentDataCollection; env::Dict=env, para::Dict=
     end
     CSV.write(datadir("$(env[:folderpathOfExperimentsData])","BI_exp=$(env[:id_experiment]).csv"), BI_data_export) # 导出为csv格式
 
-    ## 整理para之数据为一数据框，然后导出为csv格式
-    JSON
-    wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "|exp=$(env[:id_experiment]).jld2", connector="|", equals="=")), para)
+    ## 整理env之数据为一数据框，然后导出为csv格式
+    # wsave(datadir(env[:folderpathOfExperimentsData], savename(para, "|exp=$(env[:id_experiment]).jld2", connector="|", equals="=")), para)
+    
 end
 
 
