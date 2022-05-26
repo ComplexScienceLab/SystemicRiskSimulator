@@ -1,6 +1,6 @@
 """
 程序：设置环境变量EnvironmentVariables
-# Items: 
+# Items:  #HACK这个说明已经过时了，有很多新增的变量没有被列入该说明
 - init_method::String: 
   - "default": 默认，仅初始化；
   - "randomly": 随机生成；
@@ -59,6 +59,7 @@ dataId = 0; # 实验初始数据帧ID号；
 step = 0; # 当前步伐值为0。不要改动
 tau = 0; # 初始回合计次为0；
 id_experiment = 1; # 当前实验组编号；
+numExperiment = 0; # 实验组之实验个数；
 
 stateOfSchedule = :idle; # 调度运作状态。状态符有以下几种：`:idle`：闲置状态、`:indexing`：索引状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
 stateOfProcess = :initializing; # 程序所处时期状态。状态符有以下几种：`:initializing`：初始化状态、`:running`：运行状态、`:finishing`：结束收尾状态、

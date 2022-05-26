@@ -11,8 +11,10 @@
 # Arguments: 
 - env::EnvironmentVariables: 环境变量；
 - isDatetime::Bool = true: 是否加入日期时间；
+# Return:
+- env::EnvironmentVariables: 环境变量，此时内部内容已经被更新；
 """
-function setExperimentsFolders(env::Dict; isDatetime::Bool=true)
+function setExperimentsFolders!(env::Dict; isDatetime::Bool=true)
 
     # 设定日期时间字符串
     if isDatetime == true
