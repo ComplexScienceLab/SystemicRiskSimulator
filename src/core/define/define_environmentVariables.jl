@@ -28,6 +28,7 @@ env = @dict(
   step,
   tau,
   id_experiment,
+  numExperiment,
   stateOfSchedule,
   stateOfProcess,
   isStep,

@@ -31,9 +31,14 @@ include("../../src/include/Models.jl")
 
 ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
 list_combinationOfPara = dict_list(setOfValuesOfParameterVariables) # 完整名称为dict_paraValues。此处为了方便用于后续代码阅读，因此设置为p。
+env[:numExperiment] = length(list_combinationOfPara) # 获取实验组之实验个数
+df_combinationOfPara = vcat(DataFrame.(list_combinationOfPara)...) # 转换字典列表为数据框
+df_combinationOfPara[!, "expId"] = repeat(1:env[:numExperiment], inner=env[:numBank]) # 添加实验组id
+df_combinationOfPara[!, "id"] = collect(range(1:length(df_combinationOfPara))) # 添加id
+wsave(datadir(env[:folderpathOfExperimentsData], savename(list_combinationOfPara, ".csv")), list_combinationOfPara) # 导出字段列表为csv格式
 
 ## 创建主文件夹用于本批次实验
-env = setExperimentsFolders(env)
+env = setExperimentsFolders!(env)
 @test println("\n实验组名称：$(env[:foldernameOfExperimentsData])")
 
 ## 初始化参数变量
