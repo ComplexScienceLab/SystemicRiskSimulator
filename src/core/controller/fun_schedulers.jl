@@ -172,7 +172,6 @@ Argument:
 Return: 
 - stateOfSchedule::Symbol: 调度状态；
 """
-
 function scheduler_collecting(A::SystemicRiskAgent, A_data::AgentDataCollection=nothing; env::Dict=env)
     @test println("收集数据。")
     env[:dataId] += 1 # 累加数据帧ID号
