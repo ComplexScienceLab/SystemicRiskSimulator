@@ -28,7 +28,7 @@ function buildStage(stageContent::StageContent #=; stageSkeleton::Function=fun_s
         stageContent.modelFunction,
     )
 
-    @test println("已经生成阶段$(stageContent.functionName)")
+    @testprintln "已经生成阶段$(stageContent.functionName)"
 
     return stage
 end
@@ -66,7 +66,7 @@ function buildProcess(processContent::ProcessContent; processSkeleton::Function=
         list_stage,
     )
 
-    @test println("已经生成过程$(processContent.functionName)")
+    @testprintln "已经生成过程$(processContent.functionName)"
 
     return process
 end
@@ -104,7 +104,7 @@ function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_mode
         list_process,
     )
 
-    @test println("已经生成模型$(modelContent.functionName)")
+    @testprintln "已经生成模型$(modelContent.functionName)"
 
     return model
 end

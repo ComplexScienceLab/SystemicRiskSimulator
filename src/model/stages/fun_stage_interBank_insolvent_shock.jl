@@ -8,7 +8,7 @@
 function stage_interBank_insolvent_shock!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict,env::Dict)
     ## # 资不抵债银行间违约损失冲击阶段
     # env[:stageName] = "资不抵债银行间违约损失冲击阶段"
-    @test println("开始阶段$(env[:stageName])：")
+    @testprintln "开始阶段$(env[:stageName])："
 
     @. BB.A_BI_all[b] = max(BB.A_BI_all[b] - BB.Shock_def_t[b], 0.0) # 银行之银行间资产变动
     update_B_balanceSheet!(BB, BI, b, ib; byWay = "A_BI_all")
@@ -24,7 +24,7 @@ function stage_interBank_insolvent_shock!(BB::BankCommercial, BI::BankInterbank,
 
     # update_B_Shock!(BB, BI, b, ib; byWay = "clear Shock_B_A and Shock_B_Z") # 清零银行内资产负债冲击
 
-    @test println("结束阶段$(env[:stageName])。")
+    @testprintln "结束阶段$(env[:stageName])。"
     # return BB, BI
 end # function
 

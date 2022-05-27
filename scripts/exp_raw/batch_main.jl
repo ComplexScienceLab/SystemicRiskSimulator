@@ -30,8 +30,10 @@ include("../../src/include/Models.jl")
 
 ## 创建主文件夹用于本批次实验
 env = setExperimentsFolders!(env)
-@test println("\n实验组名称：$(env[:foldernameOfExperimentsData])")
 
+## 建立文件以记录log
+f=open(joinpath(env[:folderpathOfExperimentsOutputData],"outputlog.txt"),"w")
+@testprintln "\n实验组名称：$(env[:foldernameOfExperiments])"
 
 ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
 list_combinationOfPara = dict_list(setOfValuesOfParameterVariables) # 完整名称为dict_paraValues。此处为了方便用于后续代码阅读，因此设置为p。
@@ -39,14 +41,14 @@ env[:numExperiment] = length(list_combinationOfPara) # 获取实验组之实验�
 df_combinationOfPara = vcat(DataFrame.(list_combinationOfPara)...) # 转换字典列表为数据框
 df_combinationOfPara[!, "expId"] = repeat(1:env[:numExperiment], inner=env[:numBank]) # 添加实验组id
 df_combinationOfPara[!, "id"] = collect(range(1, size(df_combinationOfPara)[1], step=1)) # 添加id
-wsave(datadir(env[:folderpathOfExperimentsData], "paras.csv"), list_combinationOfPara) # 导出字段列表为csv格式
-CSV.write(datadir("$(env[:folderpathOfExperimentsData])", "paras.csv"), list_combinationOfPara) # 导出字段列表为csv格式
+# wsave(datadir(env[:folderpathOfExperimentsOutputData], "paras.csv"), list_combinationOfPara) # 导出字段列表为csv格式
+CSV.write(datadir("$(env[:folderpathOfExperimentsOutputData])", "paras.csv"), list_combinationOfPara) # 导出字段列表为csv格式
 
 ## 初始化参数变量
 # (i, para) = enumerate(list_combinationOfPara)
-@test println("\n列出所有实验组：")
+@testprintln "\n列出所有实验组："
 for (idx_para, para) in enumerate(list_combinationOfPara)
-    @test println("$(idx_para): $(para);")
+    @testprintln "$(idx_para): $(para);"
     modelContent = eval(Meta.parse("modelContent_" * para[:modelName]))
 end
 
@@ -101,15 +103,18 @@ for (i, para) in enumerate(list_combinationOfPara)
         env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(model)
     end
 
-    @test println("\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始：")
-    @test println("\n相关实验参数：$(para)")
+    @testprintln "\n实验$(env[:id_experiment])/$(length(list_combinationOfPara))开始："
+    @testprintln "\n相关实验参数：$(para)"
 
     ## 进行实验
     makesim(model, para, env)
 
-    @test println("本次实验结束，还剩下$(length(list_combinationOfPara)-env[:id_experiment])个实验。\n")
+    @testprintln "本次实验结束，还剩下$(length(list_combinationOfPara)-env[:id_experiment])个实验。\n"
 end # for
 
 println("实验组结束。")
+
+close(f)
+
 
 

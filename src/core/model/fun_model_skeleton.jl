@@ -26,9 +26,9 @@ function fun_model_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, model:
 
     if (env[:isModel])
         if (env[:tau] > 1)
-            @test println("\n继续模型：$(env[:modelName])")
+            @testprintln "\n继续模型：$(env[:modelName])"
         else
-            @test println("\n开始模型：$(env[:modelName])")
+            @testprintln "\n开始模型：$(env[:modelName])"
         end
     end
 
@@ -43,7 +43,7 @@ function fun_model_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, model:
 
     ## 判断是否结束步进
     if !env[:isStep]
-        @test println("步进已结束，跳出模型：$(env[:modelName])。")
+        @testprintln "步进已结束，跳出模型：$(env[:modelName])。"
     end
     # 判断是否结束模型
     if env[:stateOfSchedule] == :idle
@@ -51,7 +51,7 @@ function fun_model_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, model:
         env[:isExperiment] = false
     end
     if (!env[:isModel] || !env[:isExperiment])
-        @test println("结束模型：$(env[:modelName])。\n")
+        @testprintln "结束模型：$(env[:modelName])。\n"
     end
 
 

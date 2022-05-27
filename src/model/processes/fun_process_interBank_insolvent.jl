@@ -8,7 +8,7 @@
 function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
     ## 过程：资不抵债银行间违约损失传染冲击
     # env[:processName] = "资不抵债银行间违约损失传染冲击过程"
-    @test println("开始过程：$(env[:processName])：")
+    @testprintln "开始过程：$(env[:processName])："
 
     env[:indexStage] = 0 # 初始化阶段所在位置
     env[:isLoop] = true # 初始化循环状态
@@ -17,7 +17,7 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, par
     while env[:isLoop] == true
 
         env[:tau] += 1 # 回合累加一
-        @test println("开始回合$(env[:tau])")
+        @testprintln "开始回合$(env[:tau])"
 
         ## 设置临时变量
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)
@@ -28,12 +28,12 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, par
 
         ## # 资不抵债银行间违约损失冲击阶段
         # env[:stageName] = "资不抵债银行间违约损失冲击阶段"
-        # @test println("阶段：$(env[:stageName])")
+        # @testprintln "阶段：$(env[:stageName])"
         #= @scheduler_stage  =#BB, BI = stage_interBank_insolvent_shock!(BB, BI, b, ib, para, env)
 
         ## # 资不抵债银行间违约损失传染阶段
         # env[:stageName] = "资不抵债银行间违约损失传染阶段"
-        # @test println("阶段：$(env[:stageName])")
+        # @testprintln "阶段：$(env[:stageName])"
         #= @scheduler_stage  =#BB, BI = stage_interBank_insolvent_contagion!(BB, BI, b, ib, para, env)
 
 
@@ -54,7 +54,7 @@ function process_interBank_insolvent!(BB::BankCommercial, BI::BankInterbank, par
         
     end # while
     
-    @test println("结束过程：$(env[:processName])。")
+    @testprintln "结束过程：$(env[:processName])。"
 
     return BB, BI, para, env
 

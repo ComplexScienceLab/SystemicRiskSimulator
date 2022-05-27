@@ -10,7 +10,7 @@
   - default: 默认，固定命名方式
   - set manually: 手动设置名称
 - foldernamePrefixOfExperimentsData::String: 手动设置实验数据文件夹前缀名。默认"default"；
-- rootDirOfExperimentsData::String: 手动设置实验数据文件夹根路径。默认projectdir() * "/data/sims/"；
+- rootDirOfExperiments::String: 手动设置实验数据文件夹根路径。默认projectdir() * "/data/sims/"；
 - tau::Int16: 回合计数
 - processName::String: 过程名称
 - isEndRound::Bool: 结束回合判断
@@ -29,10 +29,10 @@
 ######### 设置环境变量 #########################################
 
 init_method = "set manually"; # 初始化数据方式；
-foldernameTypeOfExperimentsData = "set manually"; # 设置实验数据文件夹命名方式。默认"default"；
-foldernamePrefixOfExperimentsData = "test"; # 手动设置实验数据文件夹前缀名。默认"default"；
-rootDirOfExperimentsData = projectdir() * "/data/sims/"; # 手动设置实验数据文件夹根路径。默认projectdir( * "/data/sims/"；
-folderpathOfExperimentsData = ""; # 主文件夹路径之于实验。将由函数生成；
+foldernameTypeOfExperiments = "set manually"; # 设置实验文件夹命名方式。默认"default"；
+foldernamePrefixOfExperiments = "test"; # 手动设置实验文件夹前缀名。默认"default"；
+rootDirOfExperiments = projectdir() * "/data/sims"; # 手动设置实验文件夹根路径。默认projectdir( * "/data/sims/"；
+foldernameOfExperimentsOutputData = "exp_output_data" # 手动设置实验导出数据文件夹名称。
 
 
 
@@ -52,8 +52,9 @@ isTest = true # 是否处于测试状态
 
 
 ######### 初始化环境变量（不要改动！） #########################################
-
-foldernameOfExperimentsData = ""; # 实验数据文件夹名称
+folderpathOfExperiments = ""; # 主文件夹路径之于实验。将由函数生成；
+foldernameOfExperiments = ""; # 实验文件夹名称
+folderpathOfExperimentsOutputData = ""; # 实验导出数据文件夹名称
 
 dataId = 0; # 实验初始数据帧ID号；
 step = 0; # 当前步伐值为0。不要改动

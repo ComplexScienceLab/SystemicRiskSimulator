@@ -7,11 +7,17 @@
 ##########################################
 
 "宏：当测试时使用"
-macro test(content)
+macro testprintln(content)
     if env[:isTest]
-        return esc(content)
+        return esc(
+            quote
+                write(f,$(content));write(f,"\n");println($(content))
+            end
+        )
         # return :(content)
         # return $(content)
         # return :($(content))
     end
 end
+
+

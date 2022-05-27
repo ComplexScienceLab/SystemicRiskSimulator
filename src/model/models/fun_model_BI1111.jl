@@ -12,15 +12,15 @@ function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::D
 
     env[:indexProcess] = 0 # 初始化过程所在位置
     env[:stateOfSchedule] = :indexing
-    @test println("切换调度运作状态为$(env[:stateOfSchedule])")
+    @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
 
     env[:tau] = 0 # 初始化回合
 
     if (!env[:isModel])
         if (env[:tau] > 0)
-            @test println("继续模型model：\n")
+            @testprintln "继续模型model：\n"
         else
-            @test println("开始模型model：\n")
+            @testprintln "开始模型model：\n"
         end
     end
 
@@ -57,7 +57,7 @@ function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::D
 
     ## 判断是否结束
     if !env[:isStep]
-        @test println("步进已结束，跳出model_BI1111。")
+        @testprintln "步进已结束，跳出model_BI1111。"
     end
 
     if env[:stateOfSchedule] == :idle
@@ -66,7 +66,7 @@ function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::D
     end
 
     if (!env[:isModel] || !env[:isExperiment])
-        @test println("model_BI1111结束。")
+        @testprintln "model_BI1111结束。"
     end
 
 
