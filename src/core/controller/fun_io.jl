@@ -24,20 +24,21 @@ function setExperimentsFolders!(env::Dict; isDatetime::Bool=true)
     end
 
     ## 设定前缀字符串
-    if env[:foldernameTypeOfExperimentsData] == "default"
+    if env[:foldernameTypeOfExperiments] == "default"
         str_manuallyName = "default"
-    elseif env[:foldernameTypeOfExperimentsData] == "set manually"
-        str_manuallyName = env[:foldernamePrefixOfExperimentsData]
+    elseif env[:foldernameTypeOfExperiments] == "set manually"
+        str_manuallyName = env[:foldernamePrefixOfExperiments]
     else
-        throw(DomainError(env[:foldernameTypeOfExperimentsData], "关键词取值错误！"))
+        throw(DomainError(env[:foldernameTypeOfExperiments], "关键词取值错误！"))
     end
 
-    env[:foldernameOfExperimentsData] = str_manuallyName * str_datetime
-    env[:folderpathOfExperimentsData] = env[:rootDirOfExperimentsData] * env[:foldernameOfExperimentsData]
+    env[:foldernameOfExperiments] = str_manuallyName * str_datetime
+    env[:folderpathOfExperiments] = joinpath(env[:rootDirOfExperiments], env[:foldernameOfExperiments])
 
-    mkpath(env[:folderpathOfExperimentsData]) # 创建文件夹
-    cd("$(env[:folderpathOfExperimentsData])") 
-    mkdir("exp_output_data") # 创建文件夹，以导出实验输出数据
+    mkpath(env[:folderpathOfExperiments]) # 创建文件夹
+    env[:folderpathOfExperimentsOutputData] = joinpath(env[:folderpathOfExperiments], env[:foldernameOfExperimentsOutputData])
+    # cd("$(env[:folderpathOfExperiments])")
+    mkpath(env[:folderpathOfExperimentsOutputData]) # 创建文件夹，以导出实验输出数据
 
     return env
 end # functioin

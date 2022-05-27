@@ -8,7 +8,7 @@
 function stage_interBank_illiquity_contagion_shock!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict,env::Dict)
     ## # 流动性短缺银行间挤兑流动传染冲击
     # env[:stageName] = "流动性短缺银行间挤兑流动传染冲击阶段"
-    @test println("开始阶段$(env[:stageName])：")
+    @testprintln "开始阶段$(env[:stageName])："
 
     ##BUG 方式一：每个银行只有一次分配传染冲击之行为。
     i_nas = (BB.ilq .& .!BB.isAllocatedShock) # 临时设置示性变量，表示银行其未分配传染冲击。暨每个银行只有一次分配传染冲击之行为。
@@ -32,6 +32,6 @@ function stage_interBank_illiquity_contagion_shock!(BB::BankCommercial, BI::Bank
     # update_B_Shock!(BB, BI, b, ib; byWay = "Shock_BI_run_ilq") # 加总各单个债务银行遭受总银行间挤兑流动冲击
     # update_B_state!(BB, BI; to = "illiquity", from = "healthy") # 更新各银行之状态，从健康到流动性短缺
 
-    @test println("结束阶段$(env[:stageName])。")
+    @testprintln "结束阶段$(env[:stageName])。"
     # return BB, BI
 end # function

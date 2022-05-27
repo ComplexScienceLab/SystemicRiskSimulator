@@ -8,7 +8,7 @@
 function stage_interBank_illiquity_repay!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict,env::Dict)
     ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
     # env[:stageName] = "银行间挤兑流动执行借贷流量阶段"
-    @test println("开始阶段$(env[:stageName])：")
+    @testprintln "开始阶段$(env[:stageName])："
 
     BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b] = transfer_B_capital_reverse(BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b], BB.Li_P[b]) # 流动资产变动，因收回厂商贷款
     # @. BB.A_Q[b] *= (1 - para[:kappa_A_P]) #HACK 暂时还不用！
@@ -37,6 +37,6 @@ function stage_interBank_illiquity_repay!(BB::BankCommercial, BI::BankInterbank,
 
     update_B_transfer!(BB, BI, b, ib; byWay = "clear transfer all") # 清零所有不必要的借贷流量变量；
 
-    @test println("结束阶段$(env[:stageName])。")
+    @testprintln "结束阶段$(env[:stageName])。"
     # return BB, BI
 end # function

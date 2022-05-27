@@ -17,7 +17,7 @@ Argument:
 function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
     ## 过程：资不抵债银行间违约损失传染冲击
     env[:processName] = "资不抵债银行间违约损失传染冲击过程"
-    @test println("开始过程：$(env[:processName])：")
+    @testprintln "开始过程：$(env[:processName])："
 
     env[:indexStage] = 0 # 初始化阶段所在位置
     env[:isLoop] = true # 初始化循环状态
@@ -26,7 +26,7 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
     while env[:isLoop] == true
 
         env[:tau] += 1 # 回合累加一
-        @test println("开始回合$(env[:tau])")
+        @testprintln "开始回合$(env[:tau])"
 
         ## 设置临时变量
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)
@@ -45,7 +45,7 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
 
         # ## 判断是否结束
         # if !env[:isStep]
-        #     @test println("步进已结束，跳出$(env[:modelName])。")
+        #     @testprintln "步进已结束，跳出$(env[:modelName])。"
         # end
 
         # if env[:stateOfSchedule] == :idle
@@ -54,7 +54,7 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         # end
 
         # if (!env[:isModel] || !env[:isExperiment])
-        #     @test println("$(env[:modelName])结束。")
+        #     @testprintln "$(env[:modelName])结束。"
         # end
 
         # ## 设置临时变量
