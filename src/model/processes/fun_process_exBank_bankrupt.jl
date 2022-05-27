@@ -9,7 +9,7 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
 
         ## 过程：外生破产银行间挤兑流动传染冲击 #TODO增加参数，判断是否增加外生冲击。 #HACK这个过程可以暂时不使用。
         # env[:processName] = "外生破产银行间挤兑流动传染冲击过程"
-        @test println("开始过程：$(env[:processName])：")
+        @testprintln "开始过程：$(env[:processName])："
 
         env[:indexStage] = 0 # 初始化阶段所在位置
         env[:isLoop] = true # 初始化循环状态
@@ -17,7 +17,7 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         env[:isProcess] = true # 初始化过程状态
 
         env[:tau] += 1 # 回合累加一
-        @test println("开始回合$(env[:tau])")
+        @testprintln "开始回合$(env[:tau])"
 
         b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
@@ -41,7 +41,7 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
         isStep!(env) # 判断是否跳出本次过程
     
 
-        @test println("结束过程：$(env[:processName])。")
+        @testprintln "结束过程：$(env[:processName])。"
 
         return BB, BI, para, env
     end # if

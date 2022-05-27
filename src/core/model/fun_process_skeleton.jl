@@ -23,7 +23,7 @@ Return:
 - env::Dict: 环境变量；
 """
 function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, process::ProcessComponent, A_data::AgentDataCollection)
-    @test println("过程$(env[:indexProcess])：$(env[:processName])")
+    @testprintln "过程$(env[:indexProcess])：$(env[:processName])"
 
     env[:indexStage] = 0 # 初始化阶段所在位置
     env[:isStep] = true # 初始化步进状态
@@ -34,14 +34,14 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
 
         ## 回合数变动
         if (env[:loadedIndexStage] != 1)
-            @test println("\n继续回合：$(env[:tau])")
+            @testprintln "\n继续回合：$(env[:tau])"
         else
             env[:tau] += 1 # 回合累加一
-            @test println("\n开始回合：$(env[:tau])")
+            @testprintln "\n开始回合：$(env[:tau])"
         end
 
         env[:tau] += 1 # 回合累加一
-        @test println("开始回合$(env[:tau])：")
+        @testprintln "开始回合$(env[:tau])："
 
         ## 设置临时变量
         BB_Shock_t_t1 = deepcopy(A.BB.Shock_t)
@@ -54,7 +54,7 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
         for (idx_stage, stage) in enumerate(process.content)
             env[:indexStage] = idx_stage
             env[:stageName] = Symbol(stage.functionName)
-            @test println("阶段$(env[:indexStage])：$(env[:stageName])")
+            @testprintln "阶段$(env[:indexStage])：$(env[:stageName])"
 
             ## 调度并运行状态
             if env[:stateOfSchedule] == :loading
