@@ -25,6 +25,7 @@ struct ProcessComponent{ComponentInstanceType}
     textName::ItemTextName # 文本名称 name
     # conditionToContinueProcess::Expr # 判断条件用以结束过程 conditionToContinueProcess
     run::Function # 运行过程
+    # processContent::Array{ProcessComponent} # 阶段组件列表
     content::Array{StageComponent} # 阶段组件列表
 end
 
