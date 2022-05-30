@@ -14,9 +14,6 @@ macro testprintln(content)
                 write(f,$(content));write(f,"\n");println($(content))
             end
         )
-        # return :(content)
-        # return $(content)
-        # return :($(content))
     end
 end
 

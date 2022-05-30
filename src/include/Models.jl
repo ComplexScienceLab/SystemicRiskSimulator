@@ -14,9 +14,9 @@
 
 
 ## 集成名称集合文件
-include("../model/model_variables/set_models.jl")
-include("../model/model_variables/set_processes.jl")
-include("../model/model_variables/set_stages.jl")
+include("../model/model_sets/models_sets.jl")
+include("../model/model_sets/processes_sets.jl")
+include("../model/model_sets/stages_sets.jl")
 
 ## 集成阶段文件
 include("../model/stages/fun_stage_exBank_insolvent_shock.jl")
