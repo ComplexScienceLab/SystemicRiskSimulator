@@ -15,10 +15,8 @@ struct ProcessContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 functionName
     textName::ItemTextName # 文本名称 textName
-    # run!::Function # 函数
-    # conditionToContinueProcess::Expr # 判断条件用以结束过程 conditionToContinueProcess
+    # listProcessContent::Vector{ProcessContent} # 过程内容列表 listContentProcess
     listStageContent::Vector{StageContent} # 阶段内容列表 listStageContent
-    # modelFunction::Function # 函数
 end
 
 
@@ -27,9 +25,7 @@ struct ModelContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
-    # run!::Function # 函数
     listProcessContent::Vector{ProcessContent} # 过程内容列表 listContentProcess
-    # modelFunction::Function # 函数
 end
 
 
