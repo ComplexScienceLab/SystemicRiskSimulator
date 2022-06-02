@@ -36,7 +36,7 @@ f=open(joinpath(env[:folderpathOfExperimentsOutputData],"outputlog.txt"),"w")
 @testprintln "\n实验组名称：$(env[:foldernameOfExperiments])"
 
 ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
-list_combinationOfPara = dict_list(setOfValuesOfParameterVariables) # 完整名称为dict_paraValues。此处为了方便用于后续代码阅读，因此设置为p。
+list_combinationOfPara = dict_list(setOfValuesOfParameterVariables) # 组合排列多结构体成为列表
 env[:numExperiment] = length(list_combinationOfPara) # 获取实验组之实验个数
 df_combinationOfPara = vcat(DataFrame.(list_combinationOfPara)...) # 转换字典列表为数据框
 df_combinationOfPara[!, "expId"] = repeat(1:env[:numExperiment], inner=env[:numBank]) # 添加实验组id
@@ -53,7 +53,7 @@ for (idx_para, para) in enumerate(list_combinationOfPara)
 end
 
 ## 构建本次实验组所需的所有模型
-model = buildModel(modelContent_BI1111)
+# model = buildModel(modelContent_BI1111)
 if length(setOfValuesOfParameterVariables[:modelName]) > 1
     for modelName in setOfValuesOfParameterVariables[:modelName][2:end]
         modelContent = eval(Meta.parse("modelContent_$(modelName)"))

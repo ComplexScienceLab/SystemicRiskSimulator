@@ -12,7 +12,7 @@
 		"editor.fontLigatures": true,
 		"workbench.colorTheme": "MacOS Modern Light - Big Sur Xcode Default",
 		"workbench.preferredDarkColorTheme": "MacOS Modern Light - Big Sur Xcode Default",
-		"files.autoSave": "afterDelay",
+		"files.autoSave": "onFocusChange",
 		"editor.fontSize": 12
 	}
 }
