@@ -9,8 +9,27 @@
 using DrWatson
 @quickactivate "SystemicRisk" # 快速激活本项目
 
+include("../include/include_exp_files.jl")
 
-## 构建本次实验组所需的所有模型
+include("../../src/include/SystemicRiskSimulation.jl")
+
+include("../../src/include/Models.jl")
+
+
+## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
+list_combinationOfPara = dict_list(setOfValuesOfParameterVariables)
+
+## 初始化参数变量
+# (i, para) = enumerate(list_combinationOfPara)
+println("\n列出所有实验组：")
+for (idx_para, para) in enumerate(list_combinationOfPara)
+    println("$(idx_para): $(para);")
+    modelContent = eval(Meta.parse("modelContent_" * para[:modelName]))
+
+end
+
+
+## 导出本次实验组所需的所有模型
 model = buildModel(modelContent_BI1111)
 if length(setOfValuesOfParameterVariables[:modelName]) > 1
     for modelName in setOfValuesOfParameterVariables[:modelName][2:end]
@@ -20,3 +39,5 @@ if length(setOfValuesOfParameterVariables[:modelName]) > 1
         # end
     end
 end
+
+
