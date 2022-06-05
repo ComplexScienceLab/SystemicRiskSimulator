@@ -30,12 +30,12 @@ end
 
 
 ## 导出本次实验组所需的所有模型
-model = buildModel(modelContent_BI1111)
+model = exportModel!(modelContent_BI1111)
 if length(setOfValuesOfParameterVariables[:modelName]) > 1
     for modelName in setOfValuesOfParameterVariables[:modelName][2:end]
         modelContent = eval(Meta.parse("modelContent_$(modelName)"))
         # if true # FIXME如果不存在模型文件，则构建模型
-        model = buildModel(modelContent)
+        model = exportModel!(modelContent)
         # end
     end
 end
