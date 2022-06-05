@@ -16,7 +16,7 @@
 Argument: 
 - processContent::ProcessContent: 过程核心内容
 """
-function processExporter!(processContent::ModelContent; filepath_processSkeleton::String="test/fun_process_skeleton_template.jl")
+function processExporter!(processContent::ModelContent; filepath_processSkeleton::String="src/core/template/fun_process_skeleton_template.jl")
 
     ## 读取模型外围框架部分
     file_modelSkeleton = open(filepath_modelSkeleton, "r")

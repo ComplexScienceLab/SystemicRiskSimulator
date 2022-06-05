@@ -7,54 +7,58 @@
 ##########################################
 
 """
-通用模型框架：
+通用模型框架模板：
+
 Argument: 
-- BB::BankCommercial: 商业银行群变量；
-- BI::BankInterbank: 银行间邻接矩阵变量；
+- A::SystemicRiskAgent: Agent群变量；
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
+- model::ModelComponent: 模型组件实例；
+- A_data::AgentDataCollection: Agent群变量之数据；
+
+Return:
+- A::SystemicRiskAgent: Agent群变量；
+- para::Dict: 参数变量；
+- env::Dict: 环境变量；
+- A_data::AgentDataCollection: Agent群变量之数据；
 """
-function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict) # 此处需要修改函数名称为实际待生成函数模型名称
-
-    env[:indexProcess] = 0 # 初始化过程所在位置
-    # env[:stateOfSchedule] = :stepping
-    # @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
-
-    env[:tau] = 0 # 初始化回合
-
+function fun_model_skeleton_template!(A::SystemicRiskAgent, para::Dict, env::Dict, model::ModelComponent, A_data::AgentDataCollection)
     if (env[:isModel])
-        if (env[:tau] > 0)
-            @testprintln "继续模型model：\n"
+        if (env[:tau] > 1)
+            @testprintln "\n继续模型：$(env[:modelName])"
         else
-            @testprintln "开始模型model：\n"
+            @testprintln "\n开始模型：$(env[:modelName])"
         end
     end
 
-    ## 过程
+    ## 运行每个过程
+    for (idx_process, process) in enumerate(model.content)
+        env[:indexProcess] = idx_process
+        if env[:indexProcess] == env[:loadedIndexProcess] # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。
+            env[:processName] = Symbol(process.functionName)
+            A, para, env, A_data = runProcess!(A, para, env, process, A_data)
+        end
+    end # for
 
-    #=【插入表达式】=#
-
-    ## 判断是否结束
+    ## 判断是否结束步进
     if !env[:isStep]
-        @testprintln "步进已结束，跳出$(env[:modelName])。"
+        @testprintln "步进已结束，跳出模型：$(env[:modelName])。"
     end
-
+    # 判断是否结束模型
     if env[:stateOfSchedule] == :idle
         env[:isModel] = false
         env[:isExperiment] = false
     end
-
     if (!env[:isModel] || !env[:isExperiment])
-        @testprintln "$(env[:modelName])结束。"
+        @testprintln "结束模型：$(env[:modelName])。\n"
     end
 
 
     # return BB, BI, para, env
-    # return BB, BI, A_data.BB, A_data.BI, para, env
+    return A, para, env, A_data
 end # function
 
 # end # module
-
 
 
 

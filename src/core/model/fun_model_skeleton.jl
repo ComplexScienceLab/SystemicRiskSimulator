@@ -7,23 +7,22 @@
 ##########################################
 
 """
-TODO通用模型框架：
+通用模型框架：
 
 Argument: 
-- BB::BankCommercial: 商业银行群变量；
-- BI::BankInterbank: 银行间邻接矩阵变量；
+- A::SystemicRiskAgent: Agent群变量；
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
-- modelComponent::ModelComponent: 模型组件实例；
+- model::ModelComponent: 模型组件实例；
+- A_data::AgentDataCollection: Agent群变量之数据；
 
 Return:
-- BB::BankCommercial: 商业银行群变量；
-- BI::BankInterbank: 银行间邻接矩阵变量；
+- A::SystemicRiskAgent: Agent群变量；
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
+- A_data::AgentDataCollection: Agent群变量之数据；
 """
 function fun_model_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, model::ModelComponent, A_data::AgentDataCollection)
-
     if (env[:isModel])
         if (env[:tau] > 1)
             @testprintln "\n继续模型：$(env[:modelName])"
