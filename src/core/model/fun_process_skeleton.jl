@@ -7,20 +7,20 @@
 ##########################################
 
 """
-TODO通用过程框架：
+通用过程框架：
 
 Argument: 
-- BB::BankCommercial: 商业银行群变量；
-- BI::BankInterbank: 银行间邻接矩阵变量；
+- A::SystemicRiskAgent: Agent群变量；
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
-- processComponent::ProcessComponent: 过程组件实例；
+- process::ProcessComponent: 过程组件实例；
+- A_data::AgentDataCollection: Agent群变量之数据；
 
 Return:
-- BB::BankCommercial: 商业银行群变量；
-- BI::BankInterbank: 银行间邻接矩阵变量；
+- A::SystemicRiskAgent: Agent群变量；
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
+- A_data::AgentDataCollection: Agent群变量之数据；
 """
 function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, process::ProcessComponent, A_data::AgentDataCollection)
     @testprintln "过程$(env[:indexProcess])：$(env[:processName])"
