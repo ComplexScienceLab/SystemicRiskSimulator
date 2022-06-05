@@ -7,74 +7,85 @@
 ##########################################
 
 """
-通用过程框架：
+通用过程框架模板：
+
 Argument: 
-- BB::BankCommercial: 商业银行群变量；
-- BI::BankInterbank: 银行间邻接矩阵变量；
+- A::SystemicRiskAgent: Agent群变量；
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
+- process::ProcessComponent: 过程组件实例；
+- A_data::AgentDataCollection: Agent群变量之数据；
+
+Return:
+- A::SystemicRiskAgent: Agent群变量；
+- para::Dict: 参数变量；
+- env::Dict: 环境变量；
+- A_data::AgentDataCollection: Agent群变量之数据；
 """
-function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
-    ## 过程：资不抵债银行间违约损失传染冲击
-    env[:processName] = "资不抵债银行间违约损失传染冲击过程"
-    @testprintln "开始过程：$(env[:processName])："
+function fun_process_skeleton_template!(A::SystemicRiskAgent, para::Dict, env::Dict, process::ProcessComponent, A_data::AgentDataCollection)
+    @testprintln "过程$(env[:indexProcess])：$(env[:processName])"
 
     env[:indexStage] = 0 # 初始化阶段所在位置
-    env[:isLoop] = true # 初始化循环状态
+    env[:isStep] = true # 初始化步进状态
     env[:isRound] = true # 初始化回合状态
     env[:isProcess] = true # 初始化过程状态
+    env[:isLoop] = true # 初始化循环状态
     while env[:isLoop] == true
 
+        ## 回合数变动
+        if (env[:loadedIndexStage] != 1)
+            @testprintln "\n继续回合：$(env[:tau])"
+        else
+            env[:tau] += 1 # 回合累加一
+            @testprintln "\n开始回合：$(env[:tau])"
+        end
+
         env[:tau] += 1 # 回合累加一
-        @testprintln "开始回合$(env[:tau])"
+        @testprintln "开始回合$(env[:tau])："
 
         ## 设置临时变量
-        BB_Shock_t_t1 = deepcopy(BB.Shock_t)
-        BB_isv_t1 = deepcopy(BB.isv)
+        BB_Shock_t_t1 = deepcopy(A.BB.Shock_t)
+        BB_isv_t1 = deepcopy(A.BB.isv)
 
-        b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
-        ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
+        b = TypeState{1}(A.BB.on .|| A.BB.off) # 临时设置BB示性变量
+        ib = TypeState{2}((A.BB.on .|| A.BB.off) .&& (A.BB.on .|| A.BB.off)') # 临时设置BI示性变量
 
-        ##TODO 运行每一个阶段
-        for (j,s) in eval(Meta.parse(enumerate(env[:processName] * ".listStage")))
-            env[:indexStage] = j
-            env[:stageName] = Symbol(s)
-            expr = "BB, BI = " * String(s) * "!(BB, BI, b, ib, para)"
-            #= @scheduler_stage  =#Meta.parse(expr)
+        ## 运行每一个阶段
+        for (idx_stage, stage) in enumerate(process.content)
+            env[:indexStage] = idx_stage
+            env[:stageName] = Symbol(stage.functionName)
+            @testprintln "阶段$(env[:indexStage])：$(env[:stageName])"
+
+            ## 调度并运行状态
+            if env[:stateOfSchedule] == :loading
+                env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule]) # 调度读取
+            end
+            if env[:stateOfSchedule] == :stepping
+                runStage!(A.BB, A.BI, b, ib, para, env, stage)
+                env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
+            end
+
+            isStep!(env) # 判断是否继续运行步进
+            if env[:isStep] == false # 如果步进停止，则跳出该循环
+                break
+            end
+        end # for
+
+
+        env[:isProcess] = isProcess!(A.BB, BB_isv_t1, BB_Shock_t_t1, env[:isProcess], env[:stageName], process) # 判断是否继续运行过程
+
+        if env[:stateOfSchedule] == :saving
+            env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:isProcess]) # 调度存储
+        end
+        if (env[:stateOfSchedule] == :collecting && env[:stateOfProcess] == :running)
+            env[:stateOfSchedule] = scheduler_collecting(A, A_data)
         end
 
-        # ## 判断是否结束
-        # if !env[:isStep]
-        #     @testprintln "步进已结束，跳出$(env[:modelName])。"
-        # end
-
-        # if env[:stateOfSchedule] == :idle
-        #     env[:isModel] = false
-        #     env[:isExperiment] = false
-        # end
-
-        # if (!env[:isModel] || !env[:isExperiment])
-        #     @testprintln "$(env[:modelName])结束。"
-        # end
-
-        # ## 设置临时变量
-        # BB_t1 = deepcopy(BB)
-        # BI_t1 = deepcopy(BI)
-
-        ## TODO存储数据
-        # A_data.BB[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-        # A_data.BI[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
-
-        if BB.isv == BB_isv_t1 # 判定是否结束过程
-            env[:isProcess] = false
-        end
-        isRound!(env) # 判断是否结束回合
-        isLoop!(env) # 判断是否结束循环
-        isJumpOutModel!(env) # 判断是否跳出本次过程
-
+        isRound!(env) # 判断是否继续运行回合
+        isLoop!(env) # 判断是否继续运行循环
     end # while
 
-    return BB, BI, env
+    return A, para, env, A_data
 
 end # function
 
