@@ -1,12 +1,18 @@
-# %% [markdown]
-#  ## 导入安装包
+#!/usr/bin/env python
+# coding: utf-8
 
-# %%
+# %% [markdown]
+# # 预处理 
+# ## 导入安装包
+
+# In[1]:
+
+
 #
 # This example writes data to the existing empty dataset created by h5_crtdat.py and then reads it back.
 #
 # from msilib.schema import Font
-import imp
+
 import os
 
 import h5py
@@ -22,9 +28,11 @@ import pandas as pd
 
 
 # %% [markdown]
-#  ## 设置工作路径
+# ## 设置工作路径
 
-# %%
+# In[2]:
+
+
 print("start")
 # os.chdir("/Users/ethan/LocalFiles/ResearchFile/SystemicRisk")
 os.getcwd()
@@ -33,9 +41,11 @@ root_path = "/Users/ethan/LocalFiles/ResearchFile/SystemicRisk"
 
 
 # %% [markdown]
-#  ## 设置实验文件
+# ## 设置实验文件
 
-# %%
+# In[3]:
+
+
 folder_exp = "test_20220527153746"
 path_root_exp = os.path.join(root_path, "data/sims")
 path_exp = os.path.join(path_root_exp, folder_exp)
@@ -53,20 +63,25 @@ filepath_exp_data_BB = os.path.join(
     folderpath_exp_output_data, filename_exp_data_BB)
 
 
-# %% [markdown]
-#  # Pandas处理整个数据
 
 # %% [markdown]
-#  ## 获取数据源
+# # Pandas处理整个数据
 
-# %%
+# ## 获取数据源
+
+# In[ ]:
+
+
 df_dataBB = pd.read_csv(filepath_exp_data_BB)
 
 
-# %% [markdown]
-#  排序数据列
 
-# %%
+# %% [markdown]
+# ## 排序数据列
+
+# In[ ]:
+
+
 # heads = df_dataBB.columns.values
 # df_
 # df_dataBB.drop('')
@@ -74,9 +89,11 @@ df_dataBB = pd.read_csv(filepath_exp_data_BB)
 
 
 # %% [markdown]
-#  ## 创建实验后的Excel表格文件
+# xwings创建实验后的Excel表格文件
 
-# %%
+# In[ ]:
+
+
 wb = xw.Book()
 wb.save(filepath_excel_exp_data)
 ws = wb.sheets[0]
@@ -85,47 +102,106 @@ sheet_dataBI = wb.sheets.add(name="dataBI", after="dataBB")
 wb.save(filepath_excel_exp_data)
 wb.close()
 
-# %% [markdown]
-# 处理dataBB
 
 # %% [markdown]
-## 使用`xwings`
+# # 处理dataBB
+
+# ## 使用`openpyxl`
+
+openpyxl打开已经建好的Excel表格文件
+
 
 # %% [markdown]
-#  ## xwings打开已经建好的Excel表格文件
+# 加载工作簿
+xlwb = xl.load_workbook(filepath_excel_exp_data)
+# 获取sheet页
+xlws = xlwb['dataBB']
 
-# %%
+# sheet_dataBI = wb_xl['dataBI']
+
+# %% [markdown]
+# ## 计算相关参数
+
+num_cols = xlutils.column_index_from_string('CA')
+num_rows = xlws.max_row
+# cell010 = Cell(sheet_dataBB)
+
+
+# %% [markdown]
+# 冻结首行首列、更改单元格缩进、小数位数
+
+# In[12]:
+
+
+for i in xlws['A1':'CA1']:
+    for j in i:
+        j.alignment = xl.styles.Alignment(wrapText=True) # 单元格缩进
+        
+for i in xlws[]
+xlws.freeze_panes = 'I2'  # 冻结首行首列
+
+
+# %% [markdown]
+# 设置单元格尺寸
+# wb.active = True
+xlws.row_dimensions[1].height = 40.0
+xlws.columns['A:H']=8
+xlws.column_dimensions['A':'H'].width = 20.0
+xlws.column_dimensions['I':'CA'].width = 20.0
+# sheet_dataBB['B2'].font=Font(
+#     size=15,
+#     color='FF000000',
+# )
+
+
+
+
+# In[14]:
+xlwb.save(filepath_excel_exp_data)
+xlwb.close()
+xlwb = xl.load_workbook(filepath_excel_exp_data)
+
+
+# %% [markdown]
+# xwings打开已经建好的Excel表格文件
+
+# In[15]:
+
+
 app = xw.App(visible=True, add_book=False)
-app.display_alerts = False  # 显示Excel消息框
+app.display_alerts = True # 显示Excel消息框
 wb = app.books.open(filepath_excel_exp_data)
 ws = wb.sheets["dataBB"]
 # sheet_dataBI = wb.sheets["dataBI"]
 
 
 # %% [markdown]
-#  ## 加载相关数据
+### ## 加载相关数据
+# 表格载入pandas提供的数据
 
-# %% [markdown]
-#  表格载入pandas提供的数据
+# In[ ]:
 
-# %%
 
 ws.range('A1').value = df_dataBB
 wb.save(filepath_excel_exp_data)
 
 
 # %% [markdown]
-#  ## 设置单元格样式
+### ## 计算相关参数
 
-# %%
+# In[ ]:
+
+
 num_rows = ws.range('A1:CA41').rows.count
 num_cols = ws.range('A1:CA41').columns.count
 
 
 # %% [markdown]
-#  补全字段、设置字体
+# ### ## 补全字段、设置字体
 
-# %%
+# In[ ]:
+
+
 # sheet_dataBB.range('A1').resize(num_rows, num_cols).color = (255,255,255)
 ws.range('A1').resize(num_rows, num_cols).color = None
 ws.range('A1').resize(num_rows, num_cols).font.name = "Times"
@@ -134,122 +210,54 @@ ws.range('A1').value = "id"
 
 
 # %% [markdown]
-#  冻结首行首列
+### ## 冻结首行首列
 
-# %%
-ws.FreezePanes = False
-ws.api.SplitColumn = 2
-ws.api.SplitRow = 2
+# In[ ]:
+
+
+ws.api.FreezePanes = False
+ws.api.SplitColumn = 3
+ws.api.SplitRow = 3
 ws.api.FreezePanes = True
-# wb.save()
-
-# wb = xw.books.active
-# active_window = wb.app.api.ActiveWindow
-# active_window.FreezePanes = False
-# active_window.SplitColumn = 2  # 冻结至哪一列
-# active_window.SplitRow = 2  # 冻结至哪一行
-# active_window.FreezePanes = True
-
+wb.save()
 
 # %% [markdown]
-#  调整单元格宽高
+### ## 调整单元格宽高
 
-# %%
+# In[24]:
+
+
 # sel_010=sheet_dataBB.range('A1:CE1')
-ws["A1"].row_height = 80
-c1 = ws["A1:CE1"]
-c1.api.WrapText = True
-ws["A1"].resize(num_rows, num_cols).columns.autofit()
-ws["A1:H1"].column_width = 4
-ws["I1:CA1"].column_width = 8
-ws.range("I2:CA41").api.numberFormat = "0.0"
+# ws.range('A1').api.Font.Bold = True
+ws['A1'].row_height = 60
+c1 = ws['A1:CE1']
+c1.api.WrapText = False
+ws['A1'].resize(num_rows, num_cols).columns.autofit()
+ws['A1:H1'].column_width = 4
+ws['I1:CA1'].column_width = 8
+ws.range('I2:CA41').number_format="0.00"
+wb.save()
+
 # sheet_dataBB.range('A1').resize(num_rows, num_cols).rows.autofit()
 # sheet_dataBB.col()
 
 
-# %%
+
+# In[ ]:
 
 
-# %%
+api.
 
 
-# %% [markdown]
-#
-
-# %% [markdown]
-#
 
 # %% [markdown]
-#  ## 退出处理Excel表格
+# ## 退出处理Excel表格
 
-# %%
+# In[11]:
+
+
 wb.save(filepath_excel_exp_data)
 wb.close()
 app.quit()
 
 
-# %% [markdown]
-#  # 使用`openpyxl`
-
-# %% [markdown]
-# 加载表格
-
-# %%
-
-
-# ## openpyxl打开已经建好的Excel表格文件
-# 加载工作簿
-wb = xl.load_workbook(filepath_excel_exp_data)
-# 获取sheet页
-ws = wb['dataBB']
-sheet_dataBI = wb['dataBI']
-
-# %% 获取指定单元格cell
-num_cols = xlutils.column_index_from_string('CA')
-num_rows = ws.max_row
-# cell010 = Cell(sheet_dataBB)
-
-# %%
-
-
-# %% [markdown]
-# 冻结首行首列
-
-# %%
-
-ws.freeze_panes = 'B2'  # 冻结首行首列
-
-
-# %% [markdown]
-# 更改单元格缩进、小数位数
-
-# %%
-for i in ws['A1':'CA1']:
-    for j in i:
-        j.alignment = xl.styles.Alignment(wrapText=True) # 单元格缩进
-
-for i in ws['A1':'']:
-
-
-# %% [markdown]
-# 设置单元格尺寸
-
-# %%
-# ## 设置单元格尺寸
-# wb.active = True
-ws.row_dimensions[1].height = 40.0
-ws.column_dimensions['A'].width = 20.0
-ws.column_dimensions['B'].width = 20.0
-# sheet_dataBB['B2'].font=Font(
-#     size=15,
-#     color='FF000000',
-# )
-wb.save(filepath_excel_exp_data)
-# wb.close
-
-
-# %% [markdown]
-#
-
-# %% [markdown]
-#
