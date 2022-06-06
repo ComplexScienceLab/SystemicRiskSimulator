@@ -21,5 +21,5 @@ function stage_interBank_bankrupt_contagion_shock!(BB::BankCommercial, BI::BankI
     update_B_state!(BB, BI; to = "bankrupt", from = "any")
 
     @testprintln "结束阶段$(env[:stageName])。"
-    # return BB, BI
+    return BB, BI
 end # function

@@ -68,9 +68,9 @@ function fun_process_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict
         if BB.isv == BB_isv_t1 # 判定是否结束过程
             env[:isProcess] = false
         end
-        isRound!(env) # 判断是否结束回合
-        isLoop!(env) # 判断是否结束循环
-        isJumpOutModel!(env) # 判断是否跳出本次过程
+        isRound!() # 判断是否结束回合
+        isLoop!() # 判断是否结束循环
+        isJumpOutModel!() # 判断是否跳出本次过程
 
     end # while
 

@@ -38,5 +38,5 @@ function stage_interBank_illiquity_repay!(BB::BankCommercial, BI::BankInterbank,
     update_B_transfer!(BB, BI, b, ib; byWay = "clear transfer all") # 清零所有不必要的借贷流量变量；
 
     @testprintln "结束阶段$(env[:stageName])。"
-    # return BB, BI
+    return BB, BI
 end # function

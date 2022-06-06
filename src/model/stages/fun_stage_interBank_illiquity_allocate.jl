@@ -30,5 +30,5 @@ function stage_interBank_illiquity_allocate!(BB::BankCommercial, BI::BankInterba
     update_B_transfer!(BB, BI, b, ib; byWay = "Bo_BI")
 
     @testprintln "结束阶段$(env[:stageName])。"
-    # return BB, BI
+    return BB, BI
 end # function
