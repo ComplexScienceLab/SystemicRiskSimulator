@@ -31,5 +31,5 @@ function stage_exBank_insolvent_shock!(BB::BankCommercial, BI::BankInterbank, b:
     update_B_Shock!(BB, BI, b, ib; byWay="Shock_P_def_t") # 更新违约损失冲击目标变量Shock_def_t
 
     @testprintln "结束阶段$(env[:stageName])。"
-    # return BB, BI
+    return BB, BI
 end # function

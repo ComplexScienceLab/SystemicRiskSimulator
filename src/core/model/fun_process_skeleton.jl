@@ -61,11 +61,11 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
                 env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule]) # 调度读取
             end
             if env[:stateOfSchedule] == :stepping
-                runStage!(A.BB, A.BI, b, ib, para, env, stage)
+                A.BB, A.BI = runStage!(A.BB, A.BI, b, ib, para, env, stage)
                 env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
             end
 
-            isStep!(env) # 判断是否继续运行步进
+            isStep!() # 判断是否继续运行步进
             if env[:isStep] == false # 如果步进停止，则跳出该循环
                 break
             end
@@ -81,8 +81,8 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
             env[:stateOfSchedule] = scheduler_collecting(A, A_data)
         end
 
-        isRound!(env) # 判断是否继续运行回合
-        isLoop!(env) # 判断是否继续运行循环
+        isRound!() # 判断是否继续运行回合
+        isLoop!() # 判断是否继续运行循环
     end # while
 
     return A, para, env, A_data

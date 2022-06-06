@@ -24,7 +24,8 @@ Return:
 - A_data::AgentDataCollection: Agent群变量之数据；
 """
 function runModel!(A::SystemicRiskAgent, para::Dict, env::Dict, modelComponent::ModelComponent, A_data::AgentDataCollection)
-    return A, para, env, A_data = modelComponent.run(A, para, env, modelComponent, A_data)
+    A, para, env, A_data = modelComponent.run(A, para, env, modelComponent, A_data)
+    return A, para, env, A_data
 end
 
 
@@ -46,7 +47,8 @@ Return:
 - A_data::AgentDataCollection: Agent群变量之数据；
 """
 function runProcess!(A::SystemicRiskAgent, para::Dict, env::Dict, processComponent::ProcessComponent, A_data::AgentDataCollection)
-    return A, para, env, A_data = processComponent.run(A, para, env, processComponent, A_data)
+    A, para, env, A_data = processComponent.run(A, para, env, processComponent, A_data)
+    return A, para, env, A_data
 end
 
 
@@ -62,9 +64,14 @@ Argument:
 - para::Dict: 参数变量；
 - env::Dict: 环境变量；
 - stageComponent::StageComponent: 阶段组件实例；
+
+Return:
+- BB::BankCommercial: 商业银行群变量；
+- BI::BankInterbank: 银行间邻接矩阵变量；
 """
 function runStage!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict, stageComponent::StageComponent)
-    stageComponent.run(BB, BI, b, ib, para, env)
+    BB, BI = stageComponent.run(BB, BI, b, ib, para, env)
+    return BB, BI
 end
 
 
