@@ -41,11 +41,9 @@ env[:numExperiment] = length(list_combinationOfPara) # 获取实验组之实验�
 df_combinationOfPara = vcat(DataFrame.(list_combinationOfPara)...) # 转换字典列表为数据框
 df_combinationOfPara[!, "expId"] = repeat(1:env[:numExperiment], inner=env[:numBank]) # 添加实验组id
 df_combinationOfPara[!, "id"] = collect(range(1, size(df_combinationOfPara)[1], step=1)) # 添加id
-# wsave(datadir(env[:folderpathOfExperimentsOutputData], "paras.csv"), list_combinationOfPara) # 导出字段列表为csv格式
 CSV.write(datadir("$(env[:folderpathOfExperimentsOutputData])", "paras.csv"), list_combinationOfPara) # 导出字段列表为csv格式
 
 ## 初始化参数变量
-# (i, para) = enumerate(list_combinationOfPara)
 @testprintln "\n列出所有实验组："
 for (idx_para, para) in enumerate(list_combinationOfPara)
     @testprintln "$(idx_para): $(para);"
@@ -53,7 +51,7 @@ for (idx_para, para) in enumerate(list_combinationOfPara)
 end
 
 ## 构建本次实验组所需的所有模型
-# model = buildModel(modelContent_BI1111)
+model = buildModel(modelContent_BI1111) # 根据基准模型BI1111预先初始化model变量
 if length(setOfValuesOfParameterVariables[:modelName]) > 1
     for modelName in setOfValuesOfParameterVariables[:modelName][2:end]
         modelContent = eval(Meta.parse("modelContent_$(modelName)"))

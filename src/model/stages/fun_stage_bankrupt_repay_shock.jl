@@ -14,5 +14,5 @@ function stage_bankrupt_repay_shock!(BB::BankCommercial, BI::BankInterbank, b::T
     BB.Shock_BI_t[BB.br] = BB.Z_BI_all[BB.br] # 计算破产银行遭受偿还银行间负债冲击
 
     @testprintln "结束阶段$(env[:stageName])。"
-    # return BB, BI
+    return BB, BI
 end # function

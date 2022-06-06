@@ -63,6 +63,7 @@ end
 
 """
 函数：调度读取
+
 Argument: 
 - indexOfSchedulePosition::Vector{Any}: 调度位置索引列表；
 - indexProcess::Int: 当前过程之位置；
@@ -70,6 +71,7 @@ Argument:
 - loadedIndexProcess::Int: 读取的过程之位置；
 - loadedIndexStage::Int: 读取的阶段之位置；
 - stateOfSchedule::Symbol: 调度状态；
+
 Return: 
 - newStateOfSchedule::Symbol: 新的调度状态；
 """
@@ -97,9 +99,11 @@ end
 
 """
 函数：调度步进
+
 Argument: 
 - step::Int: 步进步数；
 - stepSize::Int: 步进尺寸；
+
 Return: 
 - isStep::Bool: 是否步进；
 - stateOfSchedule::Symbol: 调度状态；
@@ -121,11 +125,13 @@ end
 
 """
 函数：调度存储
+
 Argument: 
 - indexOfSchedulePosition::Vector{Any}: 调度位置索引列表；
 - indexProcess::Int: 当前过程之位置；
 - indexStage::Int: 当前阶段之位置；
 - isProcess::Bool: 是否在过程状态中；
+
 Return: 
 - savedIndexProcess::Int: 存储的过程之位置；
 - savedIndexStage::Int: 存储的阶段之位置；
@@ -170,8 +176,11 @@ end
 
 
 """
-TODO 函数：调度搜集数据
+函数：调度搜集数据
+
 Argument: 
+- A::SystemicRiskAgent: Agent群变量；
+- A_data::AgentDataCollection: Agent群变量之数据；
 
 Return: 
 - stateOfSchedule::Symbol: 调度状态；
@@ -258,7 +267,7 @@ macro scheduler_stage(stage)
 end # macro
 
 
-"#TODO宏：判断是否继续运行过程"
+"宏：判断是否继续运行过程" #HACK 或将废弃
 function isProcess!(BB::BankCommercial, BB_isv_t1::TypeState{1}, BB_Shock_t_t1::TypeMoney{1}, isProcess::Bool, stageFunctionName::Symbol, process::ProcessComponent)
     if stageFunctionName == process.content[end].functionName # 如果当前阶段是所处过程之最后的阶段，则继续判断，否则过程未结束，后续继续运行。
         if (
@@ -289,8 +298,8 @@ function isProcess!(BB::BankCommercial, BB_isv_t1::TypeState{1}, BB_Shock_t_t1::
     return isProcess
 end # function
 
-"#TODO函数：判断是否继续运行回合"
-function isRound!(env::Dict)
+"函数：判断是否继续运行回合"
+function isRound!(; env::Dict=env)
     if (env[:tau] < env[:maxNumOfTau])
         env[:isRound] = true
     else
@@ -299,18 +308,18 @@ function isRound!(env::Dict)
     end
 end
 
-"#TODO函数：判断是否继续步进"
-function isStep!(env::Dict)
+"函数：判断是否继续步进"
+function isStep!(; env::Dict=env)
     if !env[:isStep]
         @testprintln "暂时跳出模型$(env[:modelName])之过程$(env[:processName])之阶段$(env[:stageName])。"
     end
 end
 
 """
-TODO函数：判断是否继续运行循环。
+函数：判断是否继续运行循环。
 只有同时满足继续运行过程、继续步进、继续运行回合时，才继续运行循环。否则跳出循环。
 """
-function isLoop!(env::Dict)
+function isLoop!(; env::Dict=env)
     if (env[:isProcess] && env[:isStep] && env[:isRound])
         env[:isLoop] = true
     else

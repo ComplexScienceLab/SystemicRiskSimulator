@@ -47,9 +47,9 @@ function process_interBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para
         if BB.Shock_t == BB_Shock_t_t1 # 判定是否结束过程 #FIXME
             env[:isProcess] = false
         end
-        isRound!(env) # 判断是否结束回合
-        isLoop!(env) # 判断是否结束循环
-        isStep!(env) # 判断是否跳出本次过程
+        isRound!() # 判断是否结束回合
+        isLoop!() # 判断是否结束循环
+        isStep!() # 判断是否跳出本次过程
     
 
     end # while

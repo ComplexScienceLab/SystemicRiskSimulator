@@ -33,5 +33,5 @@ function stage_interBank_illiquity_contagion_shock!(BB::BankCommercial, BI::Bank
     # update_B_state!(BB, BI; to = "illiquity", from = "healthy") # 更新各银行之状态，从健康到流动性短缺
 
     @testprintln "结束阶段$(env[:stageName])。"
-    # return BB, BI
+    return BB, BI
 end # function
