@@ -63,14 +63,15 @@ end
 
 """
 函数：调度读取
-TODO Argument: 
-- indexOfSchedulePosition::Int: 调度位置索引列表；
+Argument: 
+- indexOfSchedulePosition::Vector{Any}: 调度位置索引列表；
 - indexProcess::Int: 当前过程之位置；
-- savedIndexProcess::Int: 存储的过程之位置；
-TODO Return: 
+- indexStage::Int: 当前阶段之位置；
 - loadedIndexProcess::Int: 读取的过程之位置；
 - loadedIndexStage::Int: 读取的阶段之位置；
 - stateOfSchedule::Symbol: 调度状态；
+Return: 
+- newStateOfSchedule::Symbol: 新的调度状态；
 """
 function scheduler_loading(indexOfSchedulePosition::Vector{Any}, indexProcess::Int, indexStage::Int, loadedIndexProcess::Int, loadedIndexStage::Int, stateOfSchedule::Symbol)
     @testprintln "调度读取中……"
@@ -120,13 +121,16 @@ end
 
 """
 函数：调度存储
-TODO Argument: 
-- indexOfSchedulePosition::Int: 调度位置索引列表；
+Argument: 
+- indexOfSchedulePosition::Vector{Any}: 调度位置索引列表；
 - indexProcess::Int: 当前过程之位置；
 - indexStage::Int: 当前阶段之位置；
-TODO Return: 
+- isProcess::Bool: 是否在过程状态中；
+Return: 
 - savedIndexProcess::Int: 存储的过程之位置；
-- savedIndexStage::Int: 存储的阶段之位置；；
+- savedIndexStage::Int: 存储的阶段之位置；
+- loadedIndexProcess::Int: 读取的过程之位置；
+- loadedIndexStage::Int: 读取的阶段之位置；
 - stateOfSchedule::Symbol: 调度状态；
 """
 function scheduler_saving(indexOfSchedulePosition::Vector{Any}, indexProcess::Int, indexStage::Int, isProcess::Bool)

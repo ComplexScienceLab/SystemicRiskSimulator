@@ -1,6 +1,6 @@
 "程序：定义模型及其相关的结构体"
 
-"定义组件"# HACK 较为抽象，暂时不会用。
+"定义组件"#HACK较为抽象，暂时不会用。
 struct Component{ComponentHierarchyType,ComponentInstanceType}
     name::String # 组件名称
     content::Union{ComponentHierarchyType,ComponentInstanceType} # 组件核心内容

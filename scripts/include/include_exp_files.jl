@@ -12,8 +12,6 @@ include("../variables/set_environmentVariables.jl")
 include("../variables/set_parameterVariables.jl")
 
 
-## TODO集成做实验函数文件
-
 
 
 
