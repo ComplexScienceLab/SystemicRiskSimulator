@@ -32,7 +32,7 @@ function initAgentDataCollection(A::SystemicRiskAgent; env::Dict=env)
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:indexProcess], :indexProcess), env[:indexProcess]),
         (getkey(env, env[:indexStage], :indexStage), env[:indexStage]),
-        (:dataBB, A.BB)
+        (:dataBB, deepcopy(A.BB))
     ])]
     BB_data = []
     append!(BB_data, BB_data_item) # 初始化banks之数据为一字典数组
@@ -42,12 +42,12 @@ function initAgentDataCollection(A::SystemicRiskAgent; env::Dict=env)
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:indexProcess], :indexProcess), env[:indexProcess]),
         (getkey(env, env[:indexStage], :indexStage), env[:indexStage]),
-        (:dataBI, A.BI)
+        (:dataBI, deepcopy(A.BI))
     ])]
     BI_data = []
     append!(BI_data, BI_data_item) # 初始化interbank之数据为一字典数组
 
-    A_data = AgentDataCollection(BB_data, BI_data)
+    A_data = AgentDataCollection(deepcopy(BB_data), deepcopy(BI_data))
     return A_data
 end
 
@@ -61,7 +61,7 @@ function collectAgentData(A::SystemicRiskAgent, A_data::AgentDataCollection; env
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:indexProcess], :indexProcess), env[:indexProcess]),
         (getkey(env, env[:indexStage], :indexStage), env[:indexStage]),
-        (:dataBB, A.BB)
+        (:dataBB, deepcopy(A.BB))
     ])]
     append!(A_data.BB, BB_data_item) # 收集banks之数据为一字典数组
 
@@ -70,7 +70,7 @@ function collectAgentData(A::SystemicRiskAgent, A_data::AgentDataCollection; env
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:indexProcess], :indexProcess), env[:indexProcess]),
         (getkey(env, env[:indexStage], :indexStage), env[:indexStage]),
-        (:dataBI, A.BI)
+        (:dataBI, deepcopy(A.BI))
     ])]
     append!(A_data.BI, BI_data_item) # 收集interbank之数据为一字典数组
     return A_data
