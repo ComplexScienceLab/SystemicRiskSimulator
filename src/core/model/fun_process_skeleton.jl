@@ -40,9 +40,6 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
             @testprintln "\n开始回合：$(env[:tau])"
         end
 
-        env[:tau] += 1 # 回合累加一
-        @testprintln "开始回合$(env[:tau])："
-
         ## 设置临时变量
         BB_Shock_t_t1 = deepcopy(A.BB.Shock_t)
         BB_isv_t1 = deepcopy(A.BB.isv)
