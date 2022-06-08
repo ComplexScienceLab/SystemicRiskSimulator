@@ -10,7 +10,7 @@
 ##########################################
 
 
-## 生成字典变量 #TODO 如何实现自动生成字典变量？
+## 生成字典变量 #HACK 如何实现自动生成字典变量？
 env = @dict(
   init_method,
   foldernameTypeOfExperiments,

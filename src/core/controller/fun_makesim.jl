@@ -33,6 +33,7 @@ function makesim(model::ModelComponent, para::Dict, env::Dict)
     #     # return BB, BI, A_data.BB, A_data.BI, env
     # end # while
 
+    ## 导出数据之于已经收集的
     env[:stateOfProcess] = :finishing
     collector(A; A_data, stateOfProcess=env[:stateOfProcess], para=para)
 
