@@ -69,9 +69,9 @@ Return:
 - BB::BankCommercial: 商业银行群变量；
 - BI::BankInterbank: 银行间邻接矩阵变量；
 """
-function runStage!(BB::BankCommercial, BI::BankInterbank, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict, stageComponent::StageComponent)
-    BB, BI = stageComponent.run(BB, BI, b, ib, para, env)
-    return BB, BI
+function runStage!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict, stageComponent::StageComponent)
+    A = stageComponent.run(A, b, ib, para, env)
+    return A
 end
 
 
