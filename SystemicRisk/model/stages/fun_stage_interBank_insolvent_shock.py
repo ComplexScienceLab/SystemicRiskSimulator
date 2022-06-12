@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：资不抵债银行间违约损失冲击阶段"
-function stage_interBank_insolvent_shock!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict)
+def stage_interBank_insolvent_shock(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:Dict, env:Dict):
     ## # 资不抵债银行间违约损失冲击阶段
     # env[:stageName] = "资不抵债银行间违约损失冲击阶段"
     @testprintln "开始阶段$(env[:stageName])："
@@ -26,5 +26,5 @@ function stage_interBank_insolvent_shock!(A::SystemicRiskAgent, b::TypeState{1},
 
     @testprintln "结束阶段$(env[:stageName])。"
     return BB, BI
-end # functions
+    pass # functions
 

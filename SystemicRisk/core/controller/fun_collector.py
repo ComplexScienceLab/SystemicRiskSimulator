@@ -11,15 +11,15 @@ function collector(A::SystemicRiskAgent; A_data::AgentDataCollection=AgentDataCo
     if stateOfProcess == :running
         A_data = collectAgentData(A, A_data)
         return A_data
-    elseif stateOfProcess == :initializing
+    elif stateOfProcess == :initializing
         A_data = initAgentDataCollection(A)
         return A_data
-    elseif stateOfProcess == :finishing
+    elif stateOfProcess == :finishing
         exportAgentData(A_data; para)
-    else
+    else:
         throw(DomainError(stateOfProcess, "关键词stateOfProcess取值错误！"))
-    end # if
-end
+        pass # if
+    pass
 
 
 ## 方案三 
@@ -49,7 +49,7 @@ function initAgentDataCollection(A::SystemicRiskAgent; env::Dict=env)
 
     A_data = AgentDataCollection(deepcopy(BB_data), deepcopy(BI_data))
     return A_data
-end
+    pass
 
 
 """
@@ -74,7 +74,7 @@ function collectAgentData(A::SystemicRiskAgent, A_data::AgentDataCollection; env
     ])]
     append!(A_data.BI, BI_data_item) # 收集interbank之数据为一字典数组
     return A_data
-end
+    pass
 
 """
 TODO函数：导出实验结果数据
@@ -94,9 +94,9 @@ function exportAgentData(A_data::AgentDataCollection; env::Dict=env, para::Dict=
         fieldValues = [getfield(v1[:dataBB], fieldName) for fieldName in fieldNames]
         for (i2, v2) in enumerate(fieldValues)
             BB_data[!, fieldNames[i2]] = v2
-        end
+            pass
         append!(BB_data_export, BB_data)
-    end
+        pass
     CSV.write(datadir("$(env[:folderpathOfExperimentsOutputData])","BB_exp=$(env[:id_experiment]).csv"), BB_data_export) # 导出为csv格式；
 
     ## 整理interbank之数据为一数据框
@@ -116,25 +116,25 @@ function exportAgentData(A_data::AgentDataCollection; env::Dict=env, para::Dict=
         for (i2, v2) in enumerate(fieldValues)
             if (typeof(v2) == TypeMoney{2} || typeof(v2) == TypeState{2} || typeof(v2) == TypeIds{2})
                 BI_data[!, fieldNames[i2]] = [v2'...] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
-            elseif typeof(v2) == TypeList{Any}
+            elif typeof(v2) == TypeList{Any}
                 ## 转换信息列表为矩阵形式
                 m2 = Matrix{Any}(falses(numRow, numCol))
                 for (i3, v3) in enumerate(v2)
                     for i4 in v3
-                        m2[i3, i4] = true
-                    end
-                end
+                        m2[i3, i4] = True
+                        pass
+                    pass
                 BI_data[!, fieldNames[i2]] = [m2'...] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
-            end
-        end
+                pass
+            pass
         append!(BI_data_export, BI_data)
-    end
+        pass
     CSV.write(datadir("$(env[:folderpathOfExperimentsOutputData])","BI_exp=$(env[:id_experiment]).csv"), BI_data_export) # 导出为csv格式
 
     ## 整理env之数据为一数据框，然后导出为csv格式
     # wsave(datadir(env[:folderpathOfExperimentsOutputData], savename(para, "|exp=$(env[:id_experiment]).jld2", connector="|", equals="=")), para)
     
-end
+    pass
 
 
 # ## 方案一 #HACK失败
@@ -147,7 +147,7 @@ end
 #     # append!(BI_data, [dict_fields_BI])
 #     A_data = AgentDataCollection(BB_data, BI_data)
 #     return A_data
-# end
+#     pass
 
 
 # """
@@ -158,12 +158,12 @@ end
 #     BB_data[!, :dataId] = fill(env[:dataId], env[:numBank])
 #     BB_data[!, :tau] = fill(env[:tau], env[:numBank])
 #     BB_data[!, :indexStage] = fill(env[:indexStage], env[:numBank])
-#     # agentsFields = fieldnames(typeof(A.BB))[4:end]
+#     # agentsFields = fieldnames(typeof(A.BB))[4:    pass]
 #     # agentsFields = collect(keys(struct2dict(A.BB)))
 #     # agentsValues = collect(values(struct2dict(A.BB)))
 #     for (k, v) in struct2dict(A.BB)
 #         BB_data[!, k] = v
-#     end
+#         pass
 #     append!(A_data.BB, BB_data) # 收集banks之数据为一数据框
 # 
 #     BI_data = DataFrame()
@@ -172,14 +172,14 @@ end
 #     BB_data[!, :indexStage] = fill(env[:indexStage], env[:numBank]^2)
 #     for (k, v) in struct2dict(A.BI)
 #         BB_data[1, k] = v
-#     end
+#         pass
 
 #     BI_data = merge(Dict([(:dataId, env[:dataId]), (:tau, env[:tau]), (:indexStage, env[:indexStage])]), struct2dict(A.BI))
 #     append!(A_data.BI, [BI_data]) # 收集banks之数据为一字典向量
 
 #     # A_data.BI[env[:tau]] = A.BI # 收集BI之数据为一结构体向量
 #     return A_data
-# end
+#     pass
 
 
 ## 方案二 #HACK失效
@@ -201,11 +201,11 @@ end
 #     # BI_data = DataFrame(keys(dict_fields_BI)) # 初始化带回合变量的银行间市场实例数据框
 #     # for (k, v) in struct2dict(A.BI)
 #     #     BI_data[1, k] = v
-#     # end
+#     #     pass
 #     # BI_data = StructArray([A.BI for i = 1:env[:maxNumOfTau]]) # 初始化带回合变量的银行间市场实例数组
 #     A_data = AgentDataCollection(BB_data, BI_data)
 #     return A_data
-# end
+#     pass
 
 
 # """
@@ -216,12 +216,12 @@ end
 #     BB_data[!, :dataId] = fill(env[:dataId], env[:numBank])
 #     BB_data[!, :tau] = fill(env[:tau], env[:numBank])
 #     BB_data[!, :indexStage] = fill(env[:indexStage], env[:numBank])
-#     # agentsFields = fieldnames(typeof(A.BB))[4:end]
+#     # agentsFields = fieldnames(typeof(A.BB))[4:    pass]
 #     # agentsFields = collect(keys(struct2dict(A.BB)))
 #     # agentsValues = collect(values(struct2dict(A.BB)))
 #     for (k, v) in struct2dict(A.BB)
 #         BB_data[!, k] = v
-#     end
+#         pass
 #     append!(A_data.BB, BB_data) # 收集banks之数据为一数据框
 
 #     # BI_data = DataFrame()
@@ -229,12 +229,12 @@ end
 #     # BI_data[1, :indexStage] = env[:indexStage]
 #     # for (k, v) in struct2dict(A.BI)
 #     #     BB_data[1, k] = v
-#     # end
+#     #     pass
 #     BI_data = merge(Dict([(:dataId, env[:dataId]), (:tau, env[:tau]), (:indexStage, env[:indexStage])]), struct2dict(A.BI))
 #     append!(A_data.BI, [BI_data]) # 收集banks之数据为一字典向量
 
 #     # A_data.BI[env[:tau]] = A.BI # 收集BI之数据为一结构体向量
 #     return A_data
-# end
+#     pass
 
 

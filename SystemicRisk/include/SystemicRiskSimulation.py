@@ -3,7 +3,7 @@
 ## 系统性风险仿真模拟
 
 ##########################################
-# #状态.可扩展
+# #状态/无用
 # 可引入新文件
 ##########################################
 
@@ -13,7 +13,7 @@ from SystemicRisk.core.define.define_type import *
 from SystemicRisk.core.define.define_enum import *
 from SystemicRisk.core.define.define_content import *
 from SystemicRisk.core.define.define_component import *
-from SystemicRisk.core.define.define_environmentVariables import *
+from SystemicRisk.core.define.define_environment_variables import *
 from SystemicRisk.core.define.define_agents import *
 from SystemicRisk.core.define.define_parameterVariables import *
 from SystemicRisk.core.define.define_agentDataCollection import *

@@ -3,7 +3,7 @@
 ## 系统性风险仿真模型
 
 ##########################################
-# #状态.可扩展
+# #状态/无用
 # 可引入新文件
 ##########################################
 
@@ -43,4 +43,4 @@ from SystemicRisk.model.models.fun_model_BI1111 import *
 from SystemicRisk.model.models.model_content import *
 
 
-# end # module
+#     pass # module

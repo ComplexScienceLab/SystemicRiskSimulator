@@ -22,23 +22,23 @@ Return:
 - env::Dict: 环境变量；
 - A_data::AgentDataCollection: Agent群变量之数据；
 """
-function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, process::ProcessComponent, A_data::AgentDataCollection)
+def fun_process_skeleton(A:SystemicRiskAgent, para:Dict, env:Dict, process:ProcessComponent, A_data:AgentDataCollection):
     @testprintln "过程$(env[:indexProcess])：$(env[:processName])"
 
     env[:indexStage] = 0 # 初始化阶段所在位置
-    env[:isStep] = true # 初始化步进状态
-    env[:isRound] = true # 初始化回合状态
-    env[:isProcess] = true # 初始化过程状态
-    env[:isLoop] = true # 初始化循环状态
-    while env[:isLoop] == true
+    env[:isStep] = True # 初始化步进状态
+    env[:isRound] = True # 初始化回合状态
+    env[:isProcess] = True # 初始化过程状态
+    env[:isLoop] = True # 初始化循环状态
+    while env[:isLoop] == True:
 
         ## 回合数变动
         if (env[:loadedIndexStage] != 1)
             @testprintln "\n继续回合：$(env[:tau])"
-        else
+        else:
             env[:tau] += 1 # 回合累加一
             @testprintln "\n开始回合：$(env[:tau])"
-        end
+            pass
 
         ## 设置临时变量
         BB_Shock_t_t1 = deepcopy(A.BB.Shock_t)
@@ -56,35 +56,35 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
             ## 调度并运行状态
             if env[:stateOfSchedule] == :loading
                 env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule]) # 调度读取
-            end
+                pass
             if env[:stateOfSchedule] == :stepping
                 A = runStage!(A, b, ib, para, env, stage)
                 env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
-            end
+                pass
 
             isStep!() # 判断是否继续运行步进
-            if env[:isStep] == false # 如果步进停止，则跳出该循环
+            if env[:isStep] == False: # 如果步进停止，则跳出该循环
                 break
-            end
-        end # for
+                pass
+            pass # for
 
 
         env[:isProcess] = isProcess!(A.BB, BB_isv_t1, BB_Shock_t_t1, env[:isProcess], env[:stageName], process) # 判断是否继续运行过程
 
         if env[:stateOfSchedule] == :saving
             env[:savedIndexProcess], env[:savedIndexStage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage], env[:isProcess]) # 调度存储
-        end
+            pass
         if (env[:stateOfSchedule] == :collecting && env[:stateOfProcess] == :running)
             env[:stateOfSchedule] = scheduler_collecting(A, A_data)
-        end
+            pass
 
         isRound!() # 判断是否继续运行回合
         isLoop!() # 判断是否继续运行循环
-    end # while
+        pass # while
 
     return A, para, env, A_data
 
-end # functions
+    pass # functions
 
 
 

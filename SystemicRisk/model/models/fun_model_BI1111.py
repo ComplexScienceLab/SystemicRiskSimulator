@@ -8,7 +8,7 @@
 
 # module model_BI1111
 
-function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+def model_BI1111(BB:BankCommercial, BI:BankInterbank, para:Dict, env:Dict):
 
     env[:indexProcess] = 0 # 初始化过程所在位置
     env[:stateOfSchedule] = :indexing
@@ -19,10 +19,10 @@ function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::D
     if (!env[:isModel])
         if (env[:tau] > 0)
             @testprintln "继续模型model：\n"
-        else
+        else:
             @testprintln "开始模型model：\n"
-        end
-    end
+            pass
+        pass
 
 
     ## 过程：银行外部违约损失传染冲击 #BUG测试宏和函数正确性
@@ -58,23 +58,23 @@ function model_BI1111!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::D
     ## 判断是否结束
     if !env[:isStep]
         @testprintln "步进已结束，跳出model_BI1111。"
-    end
+        pass
 
     if env[:stateOfSchedule] == :idle
-        env[:isModel] = false
-        env[:isExperiment] = false
-    end
+        env[:isModel] = False
+        env[:isExperiment] = False
+        pass
 
     if (!env[:isModel] || !env[:isExperiment])
         @testprintln "model_BI1111结束。"
-    end
+        pass
 
 
     return BB, BI, para, env
     # return BB, BI, A_data.BB, A_data.BI, para, env
-end # functions
+    pass # functions
 
-# end # module
+#     pass # module
 
 
 

@@ -12,6 +12,7 @@
 
 import os
 from enum import Enum
+import time
 
 from scripts.include.includpe_exp_files import *
 
@@ -20,7 +21,7 @@ from .core.define.define_type import *
 from .core.define.define_enum import *
 from .core.define.define_content import *
 from .core.define.define_component import *
-from .core.define.define_environmentVariables import *
+from .core.define.define_environment_variables import *
 from .core.define.define_agents import *
 from .core.define.define_parameterVariables import *
 from .core.define.define_agentDataCollection import *
