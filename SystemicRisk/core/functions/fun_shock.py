@@ -16,120 +16,120 @@
 # "汇总综合外生冲击。" #HACK无用
 # functions together_Shock_exBI!(bank::BankCommercial, bankState::TypeState{1})
 #     bank.Shock_exBI_t[bankState] = para[:theta_Shock_exBI_t] .* bank.Shock_P_def_t[bankState] + (1 - para[:theta_Shock_exBI_t]) .* bank.Shock_D_run_t[bankState]
-# end
+#     pass
 
 "汇总总冲击目标"
-function together_Shock_target!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_target(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_t[bankState] = bank.Shock_exBI_t[bankState] + bank.Shock_BI_t[bankState]
-end
+    pass
 
 "汇总总冲击源头"
-function together_Shock_source!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_source(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_s[bankState] = bank.Shock_exBI_s[bankState] + bank.Shock_BI_s[bankState]
-end
+    pass
 
 "汇总银行外冲击目标"
-function together_Shock_exBI_target!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_exBI_target(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_exBI_t[bankState] = bank.Shock_P_def_t[bankState] + bank.Shock_D_run_t[bankState]
-end
+    pass
 
 "汇总银行外冲击源头"
-function together_Shock_exBI_source!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_exBI_source(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_exBI_s[bankState] = bank.Shock_P_run_s[bankState] + bank.Shock_D_def_s[bankState]
-end
+    pass
 
 "汇总违约损失冲击目标"
-function together_Shock_def_target!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_def_target(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_def_t[bankState] = bank.Shock_P_def_t[bankState] + bank.Shock_BI_def_t[bankState]
-end
+    pass
 
 "汇总违约损失冲击源头"
-function together_Shock_def_source!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_def_source(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_def_s[bankState] = bank.Shock_D_def_s[bankState] + bank.Shock_BI_def_s[bankState]
-end
+    pass
 
 "汇总挤兑流动冲击目标"
-function together_Shock_run_target!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_run_target(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_run_t[bankState] = bank.Shock_D_run_t[bankState] + bank.Shock_BI_run_t[bankState]
-end
+    pass
 
 "汇总银行间流动性冲击目标。"
-function together_Shock_BI_run_target!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_BI_run_target(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_BI_run_t[bankState] = bank.Shock_BI_run_ilq_t[bankState] + bank.Shock_BI_run_br_t[bankState]
-end
+    pass
 
 "汇总挤兑流动冲击源头"
-function together_Shock_run_source!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_run_source(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_run_s[bankState] = bank.Shock_P_run_s[bankState] + bank.Shock_BI_run_s[bankState]
-end
+    pass
 
 "汇总银行间流动性冲击源头。"
-function together_Shock_BI_run_source!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_BI_run_source(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_BI_run_s[bankState] = bank.Shock_BI_run_ilq_s[bankState] + bank.Shock_BI_run_br_s[bankState]
-end
+    pass
 
 "汇总银行内资产负债冲击。"
-function together_Shock_B!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_B(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_B[bankState] = bank.Shock_B_A[bankState] + bank.Shock_B_Z[bankState]
-end
+    pass
 
 "汇总银行间冲击源头。"
-function together_Shock_BI_source!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_BI_source(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_BI_s[bankState] = bank.Shock_BI_def_s[bankState] + bank.Shock_BI_run_s[bankState]
-end
+    pass
 
 "汇总银行间流动性冲击。"
-function together_Shock_BI_run!(interbank::BankInterbank, interbankState::TypeState{2})
+def together_Shock_BI_run(interbank:BankInterbank, interbankState:TypeState{2}):
     interbank.Shock_BI_run[interbankState] = interbank.Shock_BI_run_ilq[interbankState] + interbank.Shock_BI_run_br[interbankState]
-end
+    pass
 
 "汇总银行间冲击。"
-function together_Shock_BI!(interbank::BankInterbank, interbankState::TypeState{2})
+def together_Shock_BI(interbank:BankInterbank, interbankState:TypeState{2}):
     interbank.Shock_BI[interbankState] = interbank.Shock_BI_def[interbankState] + interbank.Shock_BI_run[interbankState]
-end
+    pass
 
 "加总资不抵债银行之银行间违约损失冲击目标。"
-function sum_Shock_BI_def_target!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2})
+def sum_Shock_BI_def_target(bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}):
     bank.Shock_BI_def_t[bankState] = sum(interbank.Shock_BI_def .* interbank.on, dims = 2)[bankState]
-end
+    pass
 
 "加总流动性短缺银行之银行间流动性冲击目标。"
-function sum_Shock_BI_run_ilq_target!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2})
+def sum_Shock_BI_run_ilq_target(bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}):
     bank.Shock_BI_run_ilq_t[bankState] = sum(interbank.Shock_BI_run_ilq .* interbank.on, dims = 2)[bankState]
-end
+    pass
 
 "加总破产银行之银行间流动性冲击目标。"
-function sum_Shock_BI_run_br_target!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2})
+def sum_Shock_BI_run_br_target(bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}):
     bank.Shock_BI_run_br_t[bankState] = sum(interbank.Shock_BI_run_br .* interbank.on, dims = 2)[bankState]
-end
+    pass
 
 "汇总银行间冲击目标。"
-function together_Shock_BI_target!(bank::BankCommercial, bankState::TypeState{1})
+def together_Shock_BI_target(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_BI_t[bankState] = bank.Shock_BI_def_t[bankState] + bank.Shock_BI_run_t[bankState]
-end
+    pass
 
 #状态：暂不使用。"传导非银行间贷款损失外生冲击。"
-function conduct_Shock_L_exBI!(bank::BankCommercial, bankState::TypeState{1})
+def conduct_Shock_L_exBI(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_B_A[bankState] = bank.Shock_P_def_t[bankState]
-end
+    pass
 
 #状态：暂不使用。"传导存款损失外生冲击。"
-function conduct_Shock_D!(bank::BankCommercial, bankState::TypeState{1})
+def conduct_Shock_D(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_B_Z[bankState] = bank.Shock_D_run_t[bankState]
-end
+    pass
 
 #状态：暂不使用。"传导银行间违约损失冲击。"
-function conduct_Shock_BI_def_t!(bank::BankCommercial, bankState::TypeState{1})
+def conduct_Shock_BI_def_t(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_B_A[bankState] = bank.Shock_BI_def_t[bankState]
-end
+    pass
 
 #状态：暂不使用。"传导银行间挤兑流动冲击。"
-function conduct_Shock_BI_run_t!(bank::BankCommercial, bankState::TypeState{1})
+def conduct_Shock_BI_run_t(bank:BankCommercial, bankState:TypeState{1}):
     bank.Shock_B_A[bankState] = bank.Shock_BI_run_t[bankState]
-end
+    pass
 
 "清零本回合结束时所有不必要的冲击变量"
-function clear_Shock_BI_and_exBI!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2})
+def clear_Shock_BI_and_exBI(bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}):
     bank.Shock_P_def_t = zeros(env[:numBank])
     bank.Shock_D_run_t = zeros(env[:numBank])
     bank.Shock_P_run_s = zeros(env[:numBank])
@@ -143,13 +143,13 @@ function clear_Shock_BI_and_exBI!(bank::BankCommercial, interbank::BankInterbank
     bank.Shock_BI_def_t = zeros(env[:numBank])
     bank.Shock_BI_run_ilq_t = zeros(env[:numBank])
     bank.Shock_BI_run_br_t = zeros(env[:numBank])
-end
+    pass
 
 "清零本回合中期所有不必要的冲击变量"
-function clear_Shock_inB!(bank::BankCommercial)
+def clear_Shock_inB(bank:BankCommercial):
     bank.Shock_B_A = zeros(env[:numBank])
     bank.Shock_B_Z = zeros(env[:numBank])
-end
+    pass
 
 """
 更新各银行之冲击。
@@ -174,7 +174,7 @@ end
 - `Shock_BI_run_ilq_t`:  已知``Shock_{BI,run}[j,: }],:  \\in i_{ilq}``，更新其余冲击变量；
 - `Shock_BI_run_br_t`:  已知``Shock_{BI,run}[j,: }],:  \\in i_{br}``，更新其余冲击变量；
 """
-function update_B_Shock!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2}; byWay::String = "all")
+def update_B_Shock(bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}; byWay:String = "all"):
     if byWay == "all"
         together_Shock_B!(bank, bankState)
         together_Shock_BI_run_source!(bank, bankState)
@@ -194,7 +194,7 @@ function update_B_Shock!(bank::BankCommercial, interbank::BankInterbank, bankSta
         together_Shock_target!(bank, bankState)
         together_Shock_def_target!(bank, bankState)
         together_Shock_run_target!(bank, bankState)
-    elseif byWay == "clear Shock_BI and Shock_exBI"
+    elif byWay == "clear Shock_BI and Shock_exBI"
         clear_Shock_BI_and_exBI!(bank, interbank, bankState, interbankState)
         together_Shock_BI_run_source!(bank, TypeState{1}(bank.on .|| bank.off))
         together_Shock_BI_source!(bank, TypeState{1}(bank.on .|| bank.off))
@@ -213,43 +213,43 @@ function update_B_Shock!(bank::BankCommercial, interbank::BankInterbank, bankSta
         together_Shock_target!(bank, TypeState{1}(bank.on .|| bank.off))
         together_Shock_def_target!(bank, TypeState{1}(bank.on .|| bank.off))
         together_Shock_run_target!(bank, TypeState{1}(bank.on .|| bank.off))
-    elseif byWay == "clear Shock_B_A and Shock_B_Z"
+    elif byWay == "clear Shock_B_A and Shock_B_Z"
         clear_Shock_inB!(bank)
         together_Shock_B!(bank, TypeState{1}(bank.on .|| bank.off))
-    elseif byWay == "Shock_P_def_t"
+    elif byWay == "Shock_P_def_t"
         together_Shock_exBI_target!(bank, bankState)
         together_Shock_target!(bank, bankState)
         together_Shock_def_target!(bank, bankState)
-    elseif byWay == "Shock_P_run_s"
+    elif byWay == "Shock_P_run_s"
         together_Shock_exBI_source!(bank, bankState)
         together_Shock_source!(bank, bankState)
         together_Shock_run_source!(bank, bankState)
-    elseif byWay == "Shock_D_run_t"
+    elif byWay == "Shock_D_run_t"
         together_Shock_exBI_target!(bank, bankState)
         together_Shock_target!(bank, bankState)
         together_Shock_run_target!(bank, bankState)
-    elseif byWay == "Shock_D_def_s"
+    elif byWay == "Shock_D_def_s"
         together_Shock_exBI_source!(bank, bankState)
         together_Shock_source!(bank, bankState)
         together_Shock_def_source!(bank, bankState)
-    elseif byWay == "Shock_B_A" || byWay == "Shock_B_Z"
+    elif byWay == "Shock_B_A" || byWay == "Shock_B_Z"
         together_Shock_B!(bank, bankState)
-    elseif byWay == "Shock_BI_def_s"
+    elif byWay == "Shock_BI_def_s"
         together_Shock_BI_source!(bank, bankState)
         together_Shock_source!(bank, bankState)
         together_Shock_def_source!(bank, bankState)
-    elseif byWay == "Shock_BI_run_ilq_s" || byWay == "Shock_BI_run_br_s"
+    elif byWay == "Shock_BI_run_ilq_s" || byWay == "Shock_BI_run_br_s"
         together_Shock_BI_run_source!(bank, bankState)
         together_Shock_BI_source!(bank, bankState)
         together_Shock_source!(bank, bankState)
         together_Shock_run_source!(bank, bankState)
-    elseif byWay == "Shock_BI_def"
+    elif byWay == "Shock_BI_def"
         together_Shock_BI!(interbank, interbankState)
         sum_Shock_BI_def_target!(bank, interbank, bankState, interbankState)
         together_Shock_BI_target!(bank, bankState)
         together_Shock_target!(bank, bankState)
         together_Shock_def_target!(bank, bankState)
-    elseif byWay == "Shock_BI_run_ilq"
+    elif byWay == "Shock_BI_run_ilq"
         together_Shock_BI_run!(interbank, interbankState)
         together_Shock_BI!(interbank, interbankState)
         sum_Shock_BI_run_ilq_target!(bank, interbank, bankState, interbankState)
@@ -257,7 +257,7 @@ function update_B_Shock!(bank::BankCommercial, interbank::BankInterbank, bankSta
         together_Shock_BI_target!(bank, bankState)
         together_Shock_target!(bank, bankState)
         together_Shock_run_target!(bank, bankState)
-    elseif byWay == "Shock_BI_run_br"
+    elif byWay == "Shock_BI_run_br"
         together_Shock_BI_run!(interbank, interbankState)
         together_Shock_BI!(interbank, interbankState)
         sum_Shock_BI_run_br_target!(bank, interbank, bankState, interbankState)
@@ -265,21 +265,21 @@ function update_B_Shock!(bank::BankCommercial, interbank::BankInterbank, bankSta
         together_Shock_BI_target!(bank, bankState)
         together_Shock_target!(bank, bankState)
         together_Shock_run_target!(bank, bankState)
-    elseif byWay == "Shock_BI_def_t"
+    elif byWay == "Shock_BI_def_t"
         together_Shock_BI_target!(bank, bankState)
         together_Shock_target!(bank, bankState)
         together_Shock_def_target!(bank, bankState)
-    elseif byWay == "Shock_BI_run_ilq_t" || byWay == "Shock_BI_run_br_t"
+    elif byWay == "Shock_BI_run_ilq_t" || byWay == "Shock_BI_run_br_t"
         together_Shock_BI_run_target!(bank, bankState)
         together_Shock_BI_target!(bank, bankState)
         together_Shock_target!(bank, bankState)
         together_Shock_run_target!(bank, bankState)
-    else
+    else:
         throw(DomainError(byWay, "关键词取值错误！"))
-    end
+        pass
 
 
-end
+    pass
 
 
 

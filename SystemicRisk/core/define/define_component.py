@@ -5,7 +5,7 @@
 #     name::String # 组件名称
 #     content::Union{ComponentHierarchyType,ComponentInstanceType} # 组件核心内容
 #     run::Function # 运行组件
-# end
+#     pass
 
 
 "定义阶段组件"
@@ -15,7 +15,7 @@ struct StageComponent{ComponentInstanceType}
     textName::ItemTextName # 文本名称 name
     run::Function # 运行阶段
     # content::Array{StageComponent} # 阶段组件列表
-end
+    pass
 
 
 "定义过程组件"
@@ -27,7 +27,7 @@ struct ProcessComponent{ComponentInstanceType}
     run::Function # 运行过程
     # processContent::Array{ProcessComponent} # 阶段组件列表
     content::Array{StageComponent} # 阶段组件列表
-end
+    pass
 
 
 "定义模型组件"
@@ -37,7 +37,7 @@ struct ModelComponent{ComponentInstanceType}
     textName::ItemTextName # 文本名称 name
     run::Function # 运行模型
     content::Array{ProcessComponent} # 过程组件列表
-end
+    pass
 
 
 

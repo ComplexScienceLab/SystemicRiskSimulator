@@ -10,27 +10,29 @@
 函数：设置实验文件夹
 # Arguments: 
 - env::EnvironmentVariables: 环境变量；
-- isDatetime::Bool = true: 是否加入日期时间；
+- isDatetime::Bool = True: 是否加入日期时间；
 # Return:
 - env::EnvironmentVariables: 环境变量，此时内部内容已经被更新；
 """
-function setExperimentsFolders!(env::Dict; isDatetime::Bool=true)
+import time
 
-    # 设定日期时间字符串
-    if isDatetime == true
-        str_datetime = "_" * Dates.format(DateTime(now()), "YYYYmmddHHMMSS")
-    else
+def set_experiments_folders(env:dict=env, isDatetime:bool=True):
+
+    ## 设定日期时间字符串
+    if isDatetime == True:
+        str_datetime = "_" * time.strftime("%Y%m%d%H%M%S")
+    else:
         str_datetime = ""
-    end
+        pass
 
     ## 设定前缀字符串
-    if env[:foldernameTypeOfExperiments] == "default"
+    if env[:foldernameTypeOfExperiments] == "default":
         str_manuallyName = "default"
-    elseif env[:foldernameTypeOfExperiments] == "set manually"
+    elif env[:foldernameTypeOfExperiments] == "set manually":
         str_manuallyName = env[:foldernamePrefixOfExperiments]
-    else
+    else:
         throw(DomainError(env[:foldernameTypeOfExperiments], "关键词取值错误！"))
-    end
+        pass
 
     env[:foldernameOfExperiments] = str_manuallyName * str_datetime
     env[:folderpathOfExperiments] = joinpath(env[:rootDirOfExperiments], env[:foldernameOfExperiments])
@@ -41,7 +43,7 @@ function setExperimentsFolders!(env::Dict; isDatetime::Bool=true)
     mkpath(env[:folderpathOfExperimentsOutputData]) # 创建文件夹，以导出实验输出数据
 
     return env
-end # functioin
+    pass # functioin
 
 
 

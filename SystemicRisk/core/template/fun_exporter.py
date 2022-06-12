@@ -16,7 +16,7 @@
 Argument: 
 - processContent::ProcessContent: 过程核心内容
 """
-function exportProcess!(processContent::ModelContent; filepath_processSkeleton::String="src/core/template/fun_process_skeleton_template.jl")
+def exportProcess(processContent:ModelContent; filepath_processSkeleton:String="src/core/template/fun_process_skeleton_template.jl"):
 
     ## 读取过程外围框架部分
     file_processSkeleton = open(filepath_processSkeleton, "r")
@@ -43,13 +43,13 @@ function exportProcess!(processContent::ModelContent; filepath_processSkeleton::
         scheduler!(env)
         if env[:stateOfSchedule] == :stepping
             eval(Meta.parse(expr))
-        end
+            pass
         if env[:stateOfSchedule] == :collecting
             #TODO 收集数据
-        end
+            pass
 
         """
-    end
+        pass
     string_model = replace(string_model, re030 => target030)
     println("替换后的模型：\n" * string_model * "\n")
 
@@ -57,9 +57,9 @@ function exportProcess!(processContent::ModelContent; filepath_processSkeleton::
     run(`touch $(String(modelContent.functionName)).jl`)
     open("test/$(String(modelContent.functionName)).jl", "w") do file_model
         write(file_model, string_model)
-    end
+        pass
 
-end
+    pass
 
 
 """
@@ -71,7 +71,7 @@ end
 Argument: 
 - modelContent::ModelContent: 模型核心内容
 """
-function exportModel!(modelContent::ModelContent; filepath_modelSkeleton::String="test/fun_model_skeleton_template.jl")
+def exportModel(modelContent:ModelContent; filepath_modelSkeleton:String="test/fun_model_skeleton_template.jl"):
 
     ## 读取模型外围框架部分
     file_modelSkeleton = open(filepath_modelSkeleton, "r")
@@ -98,13 +98,13 @@ function exportModel!(modelContent::ModelContent; filepath_modelSkeleton::String
         scheduler!(env)
         if env[:stateOfSchedule] == :stepping
             eval(Meta.parse(expr))
-        end
+            pass
         if env[:stateOfSchedule] == :collecting
             #TODO 收集数据
-        end
+            pass
 
         """
-    end
+        pass
     string_model = replace(string_model, re030 => target030)
     println("替换后的模型：\n" * string_model * "\n")
 
@@ -112,9 +112,9 @@ function exportModel!(modelContent::ModelContent; filepath_modelSkeleton::String
     run(`touch $(String(modelContent.functionName)).jl`)
     open("test/$(String(modelContent.functionName)).jl", "w") do file_model
         write(file_model, string_model)
-    end
+        pass
 
-end
+    pass
 
 
 

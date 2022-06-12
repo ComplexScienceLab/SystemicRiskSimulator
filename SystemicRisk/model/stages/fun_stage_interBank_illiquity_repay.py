@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：银行间挤兑流动执行借贷流量阶段"
-function stage_interBank_illiquity_repay!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict,env::Dict)
+def stage_interBank_illiquity_repay(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:Dict,env:Dict):
     ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
     # env[:stageName] = "银行间挤兑流动执行借贷流量阶段"
     @testprintln "开始阶段$(env[:stageName])："
@@ -39,4 +39,4 @@ function stage_interBank_illiquity_repay!(A::SystemicRiskAgent, b::TypeState{1},
 
     @testprintln "结束阶段$(env[:stageName])。"
     return BB, BI
-end # functions
+    pass # functions

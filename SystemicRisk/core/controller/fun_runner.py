@@ -23,10 +23,10 @@ Return:
 - env::Dict: 环境变量；
 - A_data::AgentDataCollection: Agent群变量之数据；
 """
-function runModel!(A::SystemicRiskAgent, para::Dict, env::Dict, modelComponent::ModelComponent, A_data::AgentDataCollection)
+def runModel(A:SystemicRiskAgent, para:Dict, env:Dict, modelComponent:ModelComponent, A_data:AgentDataCollection):
     A, para, env, A_data = modelComponent.run(A, para, env, modelComponent, A_data)
     return A, para, env, A_data
-end
+    pass
 
 
 """
@@ -46,10 +46,10 @@ Return:
 - env::Dict: 环境变量；
 - A_data::AgentDataCollection: Agent群变量之数据；
 """
-function runProcess!(A::SystemicRiskAgent, para::Dict, env::Dict, processComponent::ProcessComponent, A_data::AgentDataCollection)
+def runProcess(A:SystemicRiskAgent, para:Dict, env:Dict, processComponent:ProcessComponent, A_data:AgentDataCollection):
     A, para, env, A_data = processComponent.run(A, para, env, processComponent, A_data)
     return A, para, env, A_data
-end
+    pass
 
 
 """
@@ -69,10 +69,10 @@ Return:
 - BB::BankCommercial: 商业银行群变量；
 - BI::BankInterbank: 银行间邻接矩阵变量；
 """
-function runStage!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict, stageComponent::StageComponent)
+def runStage(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:Dict, env:Dict, stageComponent:StageComponent):
     A = stageComponent.run(A, b, ib, para, env)
     return A
-end
+    pass
 
 
 

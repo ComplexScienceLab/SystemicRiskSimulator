@@ -16,7 +16,7 @@ Argument:
 Return:
 - stage::StageComponent: 阶段组件实例
 """
-function buildStage(stageContent::StageContent #=; stageSkeleton::Function=fun_stage_skeleton! =#)
+def buildStage(stageContent:StageContent #=; stageSkeleton:Function=fun_stage_skeleton =#):
     ## 获得阶段类型
     stageInstanceType = Symbol(stageContent.functionName)
 
@@ -31,7 +31,7 @@ function buildStage(stageContent::StageContent #=; stageSkeleton::Function=fun_s
     @testprintln "已经生成阶段$(stageContent.functionName)"
 
     return stage
-end
+    pass
 
 
 
@@ -45,7 +45,7 @@ Argument:
 Return:
 - process::ProcessComponent: 过程组件实例
 """
-function buildProcess(processContent::ProcessContent; processSkeleton::Function=fun_process_skeleton!)
+def buildProcess(processContent:ProcessContent; processSkeleton:Function=fun_process_skeleton):
     ## 获得过程类型
     processInstanceType = Symbol(processContent.functionName)
 
@@ -54,7 +54,7 @@ function buildProcess(processContent::ProcessContent; processSkeleton::Function=
     for stageContent in processContent.listStageContent
         stage = buildStage(stageContent)
         append!(list_stage, [stage])
-    end
+        pass
 
     ## 生成过程process
     process = ProcessComponent{processInstanceType}(
@@ -69,7 +69,7 @@ function buildProcess(processContent::ProcessContent; processSkeleton::Function=
     @testprintln "已经生成过程$(processContent.functionName)"
 
     return process
-end
+    pass
 
 
 
@@ -83,7 +83,7 @@ Argument:
 Return:
 - model::ModelComponent: 模型组件实例
 """
-function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_model_skeleton!)
+def buildModel(modelContent:ModelContent; modelSkeleton:Function=fun_model_skeleton):
 
     ## 获得模型类型
     modelInstanceType = Symbol(modelContent.functionName)
@@ -93,7 +93,7 @@ function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_mode
     for processContent in modelContent.listProcessContent
         process = buildProcess(processContent)
         append!(list_process, [process])
-    end
+        pass
 
     ## 生成模型model
     model = ModelComponent{modelInstanceType}(
@@ -107,5 +107,5 @@ function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_mode
     @testprintln "已经生成模型$(modelContent.functionName)"
 
     return model
-end
+    pass
 

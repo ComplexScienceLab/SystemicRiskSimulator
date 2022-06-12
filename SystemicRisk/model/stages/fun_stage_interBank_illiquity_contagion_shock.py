@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：流动性短缺银行间挤兑流动传染冲击阶段"
-function stage_interBank_illiquity_contagion_shock!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict,env::Dict)
+def stage_interBank_illiquity_contagion_shock(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:Dict,env:Dict):
     ## # 流动性短缺银行间挤兑流动传染冲击
     # env[:stageName] = "流动性短缺银行间挤兑流动传染冲击阶段"
     @testprintln "开始阶段$(env[:stageName])："
@@ -18,7 +18,7 @@ function stage_interBank_illiquity_contagion_shock!(A::SystemicRiskAgent, b::Typ
     @. A.BB.isAllocatedShock |= A.BB.ilq # 更新已经分配传染冲击的银行
     for i in findall(i_nas) # 流动性短缺银行计划收回资产，导致其对各债务银行之资产变动，造成流动性短缺银行间挤兑流动冲击
         @. A.BI.Shock_BI_run_ilq[A.BI.deb[i], i] = A.BI.A_BI[i, A.BI.deb[i]] * A.BB.Shock_BI_run_ilq_s[i] / A.BB.A_BI_all[i]
-    end
+        pass
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_BI_run_ilq") # 更新挤兑流动冲击源头变量Shock_run_t
     update_B_state!(BB, BI; to = "illiquity", from = "healthy")
 
@@ -28,10 +28,10 @@ function stage_interBank_illiquity_contagion_shock!(A::SystemicRiskAgent, b::Typ
     # @. A.BB.Shock_P_run_s[A.BB.ilq] = abs((A.BB.Shock_run_t[A.BB.ilq] - A.BB.A_Q[A.BB.ilq]) / (A.BB.A_P[A.BB.ilq] + A.BB.A_BI_all[A.BB.ilq]) * A.BB.A_P[A.BB.ilq]) # 银行内冲击传导至银行厂商贷款传染冲击
     # for i in findall(A.BB.on) # 流动性短缺银行计划收回资产，导致其对各债务银行之资产变动，造成流动性短缺银行间挤兑流动冲击
     #     @. A.BI.Shock_BI_run_ilq[A.BI.deb[i], i] = A.BI.A_BI[i, A.BI.deb[i]] * A.BB.Shock_BI_run_ilq_s[i] / A.BB.A_BI_all[i]
-    # end
+    #     pass
     # update_B_Shock!(BB, BI, b, ib; byWay = "Shock_BI_run_ilq") # 加总各单个债务银行遭受总银行间挤兑流动冲击
     # update_B_state!(BB, BI; to = "illiquity", from = "healthy") # 更新各银行之状态，从健康到流动性短缺
 
     @testprintln "结束阶段$(env[:stageName])。"
     return BB, BI
-end # functions
+    pass # functions

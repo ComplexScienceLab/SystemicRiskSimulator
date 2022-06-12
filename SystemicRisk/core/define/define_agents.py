@@ -89,7 +89,7 @@ mutable struct BankCommercial{NDIMS1,NDIMS2}
     listOfInsolvent::TypeList{Any} # 列表之于资不抵债的银行编号 listOfInsolvent
     listOfIlliquity::TypeList{Any} # 列表之于流动性短缺的银行编号 listOfIlliquity
     listOfBankrupt::TypeList{Any} # 列表之于破产的银行编号 listOfBankrupt
-end
+    pass
 # isDefault::TypeState{NDIMS2} # 示性向量之于银行是否违约
 # TODO 补充损失变量；
 # TODO 增加监管约束之状态；
@@ -128,7 +128,7 @@ mutable struct BankInterbank{NDIMS2}
     deb_ilq::TypeList{Any} # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquity
     cre_br::TypeList{Any} # 信息列表之于破产的银行之债权方银行编号 listOfCreditorsInBankrupt
     deb_br::TypeList{Any} # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
-end
+    pass
 
 
 
@@ -137,7 +137,7 @@ mutable struct SystemicRiskAgent <: AbstractAgent
     id::Int # 编号（必备的）
     BB::BankCommercial # 商业银行群
     BI::BankInterbank # 银行间邻接矩阵
-end
+    pass
 
 
 
