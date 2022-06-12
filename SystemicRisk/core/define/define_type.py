@@ -9,10 +9,10 @@
 
 
 # 定义个体抽象类型
-# abstract type Object end
-# abstract type Bank <:  Object end
-# abstract type BB <:  Bank end # 定义商业银行BankCommercial个体抽象类型
-# abstract type BS <:  Bank end # 定义影子银行BankShadow个体抽象类型
+# abstract type Object     pass
+# abstract type Bank <:  Object     pass
+# abstract type BB <:  Bank     pass # 定义商业银行BankCommercial个体抽象类型
+# abstract type BS <:  Bank     pass # 定义影子银行BankShadow个体抽象类型
 
 
 ## 定义类型别名
@@ -24,17 +24,17 @@ TypeState{NDIMS2} = Array{Bool,NDIMS2} # 一维向量状态类型
 TypeList{Any} = Array{Any} # 一维向量状态类型
 # EnvironmentVariables = Dict # 环境变量字典类型
 # ParameterVariables = Dict # 参数变量字典类型
-# primitive type EnvironmentVariables <: AbstractDict{Any,Any} end
+# primitive type EnvironmentVariables <: AbstractDict{Any,Any}     pass
 ItemId = Int8
 ItemFunctionName = Symbol
 ItemTextName = String
 # ItemList = Vector{ItemFunctionName}
 # ItemList = Vector{S}
-struct ComponentHierarchyType end # 定义组件层级结构类型：模型Model、过程Process、阶段Stage；
-struct ComponentInstanceType end # 定义组件元素类型，有具体的定义；
-struct ModelType end # 定义模型类型
-struct ProcessType end # 定义过程类型
-struct StageType end # 定义阶段类型
+struct ComponentHierarchyType     pass # 定义组件层级结构类型：模型Model、过程Process、阶段Stage；
+struct ComponentInstanceType     pass # 定义组件元素类型，有具体的定义；
+struct ModelType     pass # 定义模型类型
+struct ProcessType     pass # 定义过程类型
+struct StageType     pass # 定义阶段类型
 
 # ProcessItemList = Vector{ProcessContent}
 # ProcessItemList = Vector{StageContent}
@@ -45,5 +45,5 @@ struct StageType end # 定义阶段类型
 #     id::TypeIds{NDIMS2} # 编号
 #     abbr::TypeAbbrs{NDIMS2} # 缩写
 #     name::TypeNames{NDIMS2} # 全名
-# end
+#     pass
 

@@ -12,9 +12,9 @@ macro testprintln(content)
         return esc(
             quote
                 write(f,$(content));write(f,"\n");println($(content))
-            end
+                pass
         )
-    end
-end
+        pass
+    pass
 
 

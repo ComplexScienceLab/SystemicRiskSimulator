@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：破产银行应偿还负债冲击阶段"#HACK冗余，可以替代以
-function stage_bankrupt_repay_shock!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict)
+def stage_bankrupt_repay_shock(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:Dict, env:Dict):
     ## # 破产银行遭受偿还冲击
     @testprintln "开始阶段$(env[:stageName])："
 
@@ -15,4 +15,4 @@ function stage_bankrupt_repay_shock!(A::SystemicRiskAgent, b::TypeState{1}, ib::
 
     @testprintln "结束阶段$(env[:stageName])。"
     return BB, BI
-end # functions
+    pass # functions

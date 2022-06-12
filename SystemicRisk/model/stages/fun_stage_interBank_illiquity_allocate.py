@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：银行间挤兑流动分配借贷流量阶段"
-function stage_interBank_illiquity_allocate!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict,env::Dict)
+def stage_interBank_illiquity_allocate(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:Dict,env:Dict):
     ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
     # env[:stageName] = "银行间挤兑流动分配借贷流量阶段"
     @testprintln "开始阶段$(env[:stageName])："
@@ -26,9 +26,9 @@ function stage_interBank_illiquity_allocate!(A::SystemicRiskAgent, b::TypeState{
     update_B_transfer!(BB, BI, b, ib; byWay = "Bo_BI_all")
     for i in findall(A.BB.eBoBI) # 计算银行偿还各债权银行借款流量
         @. A.BI.Bo_BI[i, A.BI.cre[i]] = A.BI.Shock_BI_run_ilq[i, A.BI.cre[i]] * (A.BB.Bo_BI_all[i] / A.BB.Shock_BI_run_ilq_t[i])
-    end
+        pass
     update_B_transfer!(BB, BI, b, ib; byWay = "Bo_BI")
 
     @testprintln "结束阶段$(env[:stageName])。"
     return BB, BI
-end # functions
+    pass # functions

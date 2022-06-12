@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：银行外部挤兑流动冲击阶段"
-function stage_exBank_illiquity_shock!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict) #= BB_t1::BankCommercial, BI_t1::BankInterbank,  =#
+def stage_exBank_illiquity_shock(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:Dict, env:Dict) #= BB_t1::BankCommercial, BI_t1::BankInterbank,  =#:
     ## # 银行外部挤兑流动冲击阶段
     # env[:stageName] = "银行外部挤兑流动冲击阶段"
     @testprintln "开始阶段$(env[:stageName])："
@@ -16,4 +16,4 @@ function stage_exBank_illiquity_shock!(A::SystemicRiskAgent, b::TypeState{1}, ib
 
     @testprintln "结束阶段$(env[:stageName])。"
     return BB, BI
-end # functions
+    pass # functions

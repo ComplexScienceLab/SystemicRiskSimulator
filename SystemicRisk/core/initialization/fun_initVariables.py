@@ -17,7 +17,7 @@ function initModel()
         modelContent_BI1111 # 初始化为某个模型之内容
     )
     return model
-end
+    pass
 
 "仅初始化银行变量"
 function init_B_variables_only()
@@ -139,7 +139,7 @@ function init_B_variables_only()
 
     return bank, interbank
 
-end
+    pass
 
 
 
@@ -148,13 +148,13 @@ end
 #TODO"随机化初始化银行变量"
 function init_B_variables_randomly()
 
-end
+    pass
 
 
 #TODO"导入数据以初始化银行变量"
 function init_B_variables_importData()
 
-end
+    pass
 
 "手动设置以初始化银行变量" #FIXME 须提取手动初始化方式为单独的方式
 function initVariables_setManually()
@@ -275,7 +275,7 @@ function initVariables_setManually()
     )
 
     return bank, interbank
-end
+    pass
 
 
 ## 不同的方式
@@ -291,16 +291,16 @@ end
 function init_B_and_BI(; init_method::String)
     if init_method == "only init"
         BB, BI = init_B_variables_only()
-    elseif init_method == "randomly"
+    elif init_method == "randomly"
         BB, BI = init_B_variables_randomly()
-    elseif init_method == "import data"
+    elif init_method == "import data"
         BB, BI = init_B_variables_only()
         BB, BI, A_data.BB, A_data.BI = init_B_variables_importData() # 导入数据以初始化银行变量
-    elseif init_method == "set manually"
+    elif init_method == "set manually"
         BB, BI = initVariables_setManually() # 手动设置以初始化银行变量
-    else
+    else:
         throw(DomainError(init_method, "关键词取值错误！"))
-    end
+        pass
 
     ## 构建Agent模型
     A = SystemicRiskAgent(
@@ -332,7 +332,7 @@ function init_B_and_BI(; init_method::String)
 
 
     return A, A_data
-end
+    pass
 
 
 

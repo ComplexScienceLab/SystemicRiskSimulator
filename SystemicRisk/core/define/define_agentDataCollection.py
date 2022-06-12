@@ -9,7 +9,7 @@
 mutable struct AgentDataCollection
     BB::Vector
     BI::Vector
-end
+    pass
 
 
 

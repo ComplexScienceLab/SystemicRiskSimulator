@@ -13,10 +13,13 @@ from scripts.include.includpe_exp_files import *
 
 import SystemicRisk as sr
 
+# from SystemicRisk.core.functions.fun_state import  calc_listOfRelationInStateOfBanks
+
 
 
 ## 导入相关包
 import os
+import numpy as np
 from enum import Enum
 
 os.getcwd()
@@ -25,14 +28,14 @@ root_path = os.getcwd()
 
 if __name__ == "__main__":
 
-    
+
 
     ## 设定参数组合
 
     # list_combinationOfPara = @strdict model kappa_A_P kappa_BI
 
     ## 创建主文件夹用于本批次实验
-    env = setExperimentsFolders!(env)
+    env = sr.set_experiments_folders()
 
     ## 建立文件以记录log
     f = open(joinpath(env[:folderpathOfExperimentsOutputData], "outputlog.txt"), "w")
@@ -64,18 +67,18 @@ if __name__ == "__main__":
 
         "$(idx_para): $(para);"
         modelContent = eval(Meta.parse("modelContent_" * para[:modelName]))
-    end
+        pass
 
     ## 构建本次实验组所需的所有模型
     model = buildModel(modelContent_BI1111)  # 根据基准模型BI1111预先初始化model变量
     if length(setOfValuesOfParameterVariables[:modelName]) > 1
-        for modelName in setOfValuesOfParameterVariables[:modelName][2:end]
+        for modelName in setOfValuesOfParameterVariables[:modelName][2:    pass]
             modelContent = eval(Meta.parse("modelContent_$(modelName)"))
-            # if true # FIXME如果不存在模型文件，则构建模型
+            # if True: # FIXME如果不存在模型文件，则构建模型
             model = buildModel(modelContent)
-            # end
-        end
-    end
+            #     pass
+            pass
+        pass
 
     println("\n实验组开始：\n")
 
@@ -99,13 +102,13 @@ if __name__ == "__main__":
         env[:savedProcessName] = ""
         env[:stageName] = ""
         env[:savedStageName] = ""
-        env[:isStep] = true
-        env[:isLoop] = true
-        env[:isRound] = true
-        env[:isStage] = true
-        env[:isProcess] = true
-        env[:isModel] = true
-        env[:isExperiment] = true
+        env[:isStep] = True
+        env[:isLoop] = True
+        env[:isRound] = True
+        env[:isStage] = True
+        env[:isProcess] = True
+        env[:isModel] = True
+        env[:isExperiment] = True
         env[:stateOfSchedule] =:indexing
         env[:stateOfProcess] =:initializing
 
@@ -115,7 +118,7 @@ if __name__ == "__main__":
         ## 调度：生成位置索引
         if env[:stateOfSchedule] ==: indexing
         env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(model)
-    end
+        pass
 
 
     @testprintln
@@ -137,7 +140,7 @@ if __name__ == "__main__":
 
 
     "本次实验结束，还剩下$(length(list_combinationOfPara)-env[:id_experiment])个实验。\n"
-    end  # for
+        pass  # for
 
     println("实验组结束。")
 
