@@ -2,7 +2,7 @@
 
 
 "定义阶段组件内容结构体"
-struct StageContent
+class StageContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
@@ -11,7 +11,7 @@ struct StageContent
 
 
 "定义过程组件内容结构体"
-struct ProcessContent
+class ProcessContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 functionName
     textName::ItemTextName # 文本名称 textName
@@ -21,7 +21,7 @@ struct ProcessContent
 
 
 "定义模型组件内容结构体"
-struct ModelContent
+class ModelContent
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name

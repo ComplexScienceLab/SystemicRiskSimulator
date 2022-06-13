@@ -10,9 +10,16 @@
 # 可引入新文件
 ##########################################
 
+
+__version__ = '0.0.1.alpha'
+
+
 import os
 from enum import Enum
 import time
+import numpy as np
+
+
 
 from scripts.include.includpe_exp_files import *
 
@@ -40,6 +47,8 @@ from .core.controller.fun_runner import *
 from .core.controller.fun_collector import *
 from .core.controller.fun_agentModel import *
 from .core.controller.fun_makesim import *
+
+## 集成模板功能文件
 # from .core.template.fun_exporter import *
 
 ## 集成初始化函数文件

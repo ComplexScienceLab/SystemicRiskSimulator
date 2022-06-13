@@ -8,7 +8,7 @@
 
 "宏：当测试时使用"
 macro testprintln(content)
-    if env[:isTest]
+    if env['isTest']
         return esc(
             quote
                 write(f,$(content));write(f,"\n");println($(content))
