@@ -213,7 +213,7 @@ def update_isOff_from_isOn(bank:BankCommercial, interbank:BankInterbank):
 
 "计算示性向量之于银行退出的，来自破产的。"
 def calc_isOff_from_isBankrupt(bank:BankCommercial, interbank:BankInterbank):
-    calc_isOff!(bank, interbank)
+    calc_isOff(bank, interbank)
     interbank.cre_br = []
     interbank.deb_br = []
     pass
@@ -287,8 +287,8 @@ function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Ve
     else:
         throw(DomainError(byWay, "关键词取值错误！"))
         pass
-    listOfRelationInStateOfBanks = [[] for i in 1: env[:numBank]]
-    for i in 1: env[:numBank]
+    listOfRelationInStateOfBanks = [[] for i in 1: env['numBank']]
+    for i in 1: env['numBank']
         listOfRelationInStateOfBanks[i] = findall(isExposure[i, : ]) # 获取对应状态下的债权或者债务关系的银行列表
         pass
     return listOfRelationInStateOfBanks
@@ -328,30 +328,30 @@ function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Ve
 def update_B_state(bank:BankCommercial, interbank:BankInterbank; to:String = "any", from:String = "any"):
     if to == "any": #FIXME 这个可能有缺陷
         if from == "any"
-            init_listOfRelationInStateOfBanks!(bank, interbank)
-            calc_isInsolvent!(bank, interbank)
-            calc_isIlliquity!(bank, interbank)
-            calc_isHealthy!(bank, interbank)
-            calc_isBankrupt!(bank, interbank)
-            together_isOn!(bank, interbank)
-            # calc_isOff!(bank, interbank)
-            # calc_isOn!(bank, interbank)
+            init_listOfRelationInStateOfBanks(bank, interbank)
+            calc_isInsolvent(bank, interbank)
+            calc_isIlliquity(bank, interbank)
+            calc_isHealthy(bank, interbank)
+            calc_isBankrupt(bank, interbank)
+            together_isOn(bank, interbank)
+            # calc_isOff(bank, interbank)
+            # calc_isOn(bank, interbank)
         elif from == "healthy"
-            calc_isInsolvent_from_isHealthy!(bank, interbank)
-            update_isHealthy_from_isInsolvent!(bank, interbank)
-            calc_isIlliquity_from_isHealthy!(bank, interbank)
-            update_isHealthy_from_isIlliquity!(bank, interbank)
+            calc_isInsolvent_from_isHealthy(bank, interbank)
+            update_isHealthy_from_isInsolvent(bank, interbank)
+            calc_isIlliquity_from_isHealthy(bank, interbank)
+            update_isHealthy_from_isIlliquity(bank, interbank)
         elif from == "insolvent"
-            calc_isHealthy_from_isInsolvent!(bank, interbank)
-            update_isInsolvent_from_isHealthy!(bank, interbank)
-            calc_isBankrupt_from_isInsolvent!(bank, interbank)
+            calc_isHealthy_from_isInsolvent(bank, interbank)
+            update_isInsolvent_from_isHealthy(bank, interbank)
+            calc_isBankrupt_from_isInsolvent(bank, interbank)
         elif from == "illiquity"
-            calc_isHealthy_from_isIlliquity!(bank, interbank)
-            update_isIlliquity_from_isHealthy!(bank, interbank)
-            calc_isBankrupt_from_isIlliquity!(bank, interbank)
+            calc_isHealthy_from_isIlliquity(bank, interbank)
+            update_isIlliquity_from_isHealthy(bank, interbank)
+            calc_isBankrupt_from_isIlliquity(bank, interbank)
         elif from == "bankrupt"
-            calc_isOff_from_isBankrupt!(bank, interbank)
-            update_isOn_from_isOff!(bank, interbank)
+            calc_isOff_from_isBankrupt(bank, interbank)
+            update_isOn_from_isOff(bank, interbank)
             interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
             interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
         elif from == "off"
@@ -361,17 +361,17 @@ def update_B_state(bank:BankCommercial, interbank:BankInterbank; to:String = "an
             pass
     elif to == "healthy"
         if from == "any"
-            calc_isHealthy!(bank, interbank)
-            update_isInsolvent_from_isHealthy!(bank, interbank)
-            update_isIlliquity_from_isHealthy!(bank, interbank)
+            calc_isHealthy(bank, interbank)
+            update_isInsolvent_from_isHealthy(bank, interbank)
+            update_isIlliquity_from_isHealthy(bank, interbank)
         elif from == "healthy"
             @testprintln "无须更新！"
         elif from == "insolvent"
-            calc_isHealthy_from_isInsolvent!(bank, interbank)
-            calc_isInsolvent_from_isHealthy!(bank, interbank)
+            calc_isHealthy_from_isInsolvent(bank, interbank)
+            calc_isInsolvent_from_isHealthy(bank, interbank)
         elif from == "illiquity"
-            calc_isHealthy_from_isIlliquity!(bank, interbank)
-            update_isIlliquity_from_isHealthy!(bank, interbank)
+            calc_isHealthy_from_isIlliquity(bank, interbank)
+            update_isIlliquity_from_isHealthy(bank, interbank)
         elif from == "bankrupt"
             @testprintln "无须更新！"
         elif from == "off"
@@ -381,18 +381,18 @@ def update_B_state(bank:BankCommercial, interbank:BankInterbank; to:String = "an
             pass
     elif to == "insolvent"
         if from == "any"
-            calc_isInsolvent!(bank, interbank)
-            update_isHealthy_from_isInsolvent!(bank, interbank)
+            calc_isInsolvent(bank, interbank)
+            update_isHealthy_from_isInsolvent(bank, interbank)
         elif from == "healthy"
-            calc_isInsolvent_from_isHealthy!(bank, interbank)
-            update_isHealthy_from_isInsolvent!(bank, interbank)
+            calc_isInsolvent_from_isHealthy(bank, interbank)
+            update_isHealthy_from_isInsolvent(bank, interbank)
         elif from == "insolvent"
             @testprintln "无须更新！"
         elif from == "illiquity"
-            # calc_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
-            # calc_isHealthy_from_isIlliquity!(bank, interbank) # 错误，可以删除！
-            # calc_isHealthy_from_isInsolvent!(bank, interbank) # 错误，可以删除！
-            # calc_isInsolvent_from_isHealthy!(bank, interbank) # 错误，可以删除！
+            # calc_isIlliquity_from_isHealthy(bank, interbank) # 错误，可以删除！
+            # calc_isHealthy_from_isIlliquity(bank, interbank) # 错误，可以删除！
+            # calc_isHealthy_from_isInsolvent(bank, interbank) # 错误，可以删除！
+            # calc_isInsolvent_from_isHealthy(bank, interbank) # 错误，可以删除！
             @testprintln "无须更新！"
         elif from == "bankrupt"
             @testprintln "无须更新！"
@@ -403,15 +403,15 @@ def update_B_state(bank:BankCommercial, interbank:BankInterbank; to:String = "an
             pass
     elif to == "illiquity"
         if from == "any"
-            calc_isIlliquity!(bank, interbank)
-            update_isHealthy_from_isIlliquity!(bank, interbank)
+            calc_isIlliquity(bank, interbank)
+            update_isHealthy_from_isIlliquity(bank, interbank)
         elif from == "healthy"
-            calc_isIlliquity_from_isHealthy!(bank, interbank)
-            update_isHealthy_from_isIlliquity!(bank, interbank)
+            calc_isIlliquity_from_isHealthy(bank, interbank)
+            update_isHealthy_from_isIlliquity(bank, interbank)
         elif from == "insolvent"
-            # calc_isHealthy_from_isInsolvent!(bank, interbank) # 错误，可以删除！
-            # update_isInsolvent_from_isHealthy!(bank, interbank) # 错误，可以删除！
-            # update_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
+            # calc_isHealthy_from_isInsolvent(bank, interbank) # 错误，可以删除！
+            # update_isInsolvent_from_isHealthy(bank, interbank) # 错误，可以删除！
+            # update_isIlliquity_from_isHealthy(bank, interbank) # 错误，可以删除！
             @testprintln "无须更新！"
         elif from == "illiquity"
             @testprintln "无须更新！"
@@ -424,18 +424,18 @@ def update_B_state(bank:BankCommercial, interbank:BankInterbank; to:String = "an
             pass
     elif to == "bankrupt"
         if from == "any"
-            calc_isBankrupt!(bank, interbank)
+            calc_isBankrupt(bank, interbank)
         elif from == "healthy"
-            calc_isInsolvent_from_isHealthy!(bank, interbank)
-            update_isHealthy_from_isInsolvent!(bank, interbank)
-            calc_isIlliquity!(bank, interbank)
-            update_isHealthy_from_isIlliquity!(bank, interbank)
-            calc_isBankrupt_from_isInsolvent!(bank, interbank)
-            calc_isBankrupt_from_isIlliquity!(bank, interbank)
+            calc_isInsolvent_from_isHealthy(bank, interbank)
+            update_isHealthy_from_isInsolvent(bank, interbank)
+            calc_isIlliquity(bank, interbank)
+            update_isHealthy_from_isIlliquity(bank, interbank)
+            calc_isBankrupt_from_isInsolvent(bank, interbank)
+            calc_isBankrupt_from_isIlliquity(bank, interbank)
         elif from == "insolvent"
-            calc_isBankrupt_from_isInsolvent!(bank, interbank)
+            calc_isBankrupt_from_isInsolvent(bank, interbank)
         elif from == "illiquity"
-            calc_isBankrupt_from_isIlliquity!(bank, interbank)
+            calc_isBankrupt_from_isIlliquity(bank, interbank)
         elif from == "bankrupt"
             @testprintln "无须更新！"
         elif from == "off"
@@ -445,8 +445,8 @@ def update_B_state(bank:BankCommercial, interbank:BankInterbank; to:String = "an
             pass
     elif to == "off"
         if from == "any"
-            calc_isOff!(bank, interbank)
-            update_isOn_from_isOff!(bank, interbank)
+            calc_isOff(bank, interbank)
+            update_isOn_from_isOff(bank, interbank)
         elif from == "healthy"
             @testprintln "无须更新！"
         elif from == "insolvent"
@@ -454,9 +454,9 @@ def update_B_state(bank:BankCommercial, interbank:BankInterbank; to:String = "an
         elif from == "illiquity"
             @testprintln "无须更新！"
         elif from == "bankrupt"
-            calc_isOff_from_isBankrupt!(bank, interbank)
-            update_isOn_from_isOff!(bank, interbank)
-            update_isBankrupt_from_isOff!(bank, interbank)
+            calc_isOff_from_isBankrupt(bank, interbank)
+            update_isOn_from_isOff(bank, interbank)
+            update_isBankrupt_from_isOff(bank, interbank)
             interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
             interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
         elif from == "off"
@@ -466,50 +466,50 @@ def update_B_state(bank:BankCommercial, interbank:BankInterbank; to:String = "an
             pass
     elif to == "on"
         if from == "any"
-            together_isOn!(bank, interbank)
-            update_isOff_from_isOn!(bank, interbank)
+            together_isOn(bank, interbank)
+            update_isOff_from_isOn(bank, interbank)
         else:
             throw(DomainError(byWay, "关键词from取值错误！"))
             pass
     elif to == "needed repay BI"
         if from == "any"
-            calc_isNeededBoBI!(bank, interbank)
+            calc_isNeededBoBI(bank, interbank)
         else:
             throw(DomainError(byWay, "关键词from取值错误！"))
             pass
     elif to == "enabled repay BI"
         if from == "any"
-            calc_isEnabledBoBI!(bank, interbank)
+            calc_isEnabledBoBI(bank, interbank)
         elif from == "needed repay BI"
-            calc_isEnabledBoBI_from_isNeededBoBI!(bank, interbank)
+            calc_isEnabledBoBI_from_isNeededBoBI(bank, interbank)
         else:
             throw(DomainError(byWay, "关键词from取值错误！"))
             pass
     elif to == "needed repay Z_D"
         if from == "any"
-            calc_isNeededBoD!(bank, interbank)
+            calc_isNeededBoD(bank, interbank)
         else:
             throw(DomainError(byWay, "关键词from取值错误！"))
             pass
     elif to == "enabled repay Z_D"
         if from == "any"
-            calc_isEnabledBoD!(bank, interbank)
+            calc_isEnabledBoD(bank, interbank)
         elif from == "needed repay Z_D"
-            calc_isEnabledBoD_from_isNeededBoD!(bank, interbank)
+            calc_isEnabledBoD_from_isNeededBoD(bank, interbank)
         else:
             throw(DomainError(byWay, "关键词from取值错误！"))
             pass
     elif to == "needed collect A_P"
         if from == "any"
-            calc_isNeededLiP!(bank, interbank)
+            calc_isNeededLiP(bank, interbank)
         else:
             throw(DomainError(byWay, "关键词from取值错误！"))
             pass
     elif to == "enabled collect A_P"
         if from == "any"
-            calc_isEnabledLiP!(bank, interbank)
+            calc_isEnabledLiP(bank, interbank)
         elif from == "needed collect A_P"
-            calc_isEnabledLiP_from_isNeededLiP!(bank, interbank)
+            calc_isEnabledLiP_from_isNeededLiP(bank, interbank)
         else:
             throw(DomainError(byWay, "关键词from取值错误！"))
             pass

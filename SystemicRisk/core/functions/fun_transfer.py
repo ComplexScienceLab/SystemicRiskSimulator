@@ -117,16 +117,16 @@ def sum_transfer_Li_BI(bank:BankCommercial, interbank:BankInterbank, bankState:T
 
 "清零所有流量变量值"
 def clear_all_transfer(bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}):
-    bank.Lo_BI_all[bankState] = zeros(env[:numBank])[bankState]
-    bank.Lo_P[bankState] = zeros(env[:numBank])[bankState]
-    bank.Li_BI_all[bankState] = zeros(env[:numBank])[bankState]
-    bank.Li_P[bankState] = zeros(env[:numBank])[bankState]
-    bank.Bi_BI_all[bankState] = zeros(env[:numBank])[bankState]
-    bank.Bi_D[bankState] = zeros(env[:numBank])[bankState]
-    bank.Bo_BI_all[bankState] = zeros(env[:numBank])[bankState]
-    bank.Bo_D[bankState] = zeros(env[:numBank])[bankState]
-    interbank.Lo_BI[interbankState] = zeros(env[:numBank],env[:numBank])[interbankState]
-    interbank.Bo_BI[interbankState] = zeros(env[:numBank],env[:numBank])[interbankState]
+    bank.Lo_BI_all[bankState] = zeros(env['numBank'])[bankState]
+    bank.Lo_P[bankState] = zeros(env['numBank'])[bankState]
+    bank.Li_BI_all[bankState] = zeros(env['numBank'])[bankState]
+    bank.Li_P[bankState] = zeros(env['numBank'])[bankState]
+    bank.Bi_BI_all[bankState] = zeros(env['numBank'])[bankState]
+    bank.Bi_D[bankState] = zeros(env['numBank'])[bankState]
+    bank.Bo_BI_all[bankState] = zeros(env['numBank'])[bankState]
+    bank.Bo_D[bankState] = zeros(env['numBank'])[bankState]
+    interbank.Lo_BI[interbankState] = zeros(env['numBank'],env['numBank'])[interbankState]
+    interbank.Bo_BI[interbankState] = zeros(env['numBank'],env['numBank'])[interbankState]
     pass
 
 """
@@ -150,83 +150,83 @@ def clear_all_transfer(bank:BankCommercial, interbank:BankInterbank, bankState:T
 """
 def update_B_transfer(bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}; byWay:String = "all"):
     if byWay == "all"
-        clear_all_transfer!(bank, interbank, bankState, interbankState)
-        alter_transfer_Lo_BI!(interbank, interbankState)
-        sum_transfer_Bi_BI!(bank, interbank, bankState, interbankState)
-        alter_transfer_Bo_BI!(interbank, interbankState)
-        sum_transfer_Li_BI!(bank, interbank, bankState, interbankState)
-        together_transfer_B_Lo_exBI!(bank, bankState)
-        together_transfer_B_Lo_all!(bank, bankState)
-        together_transfer_B_Li_exBI!(bank, bankState)
-        together_transfer_B_Li_all!(bank, bankState)
-        together_transfer_B_Bi_exBI!(bank, bankState)
-        together_transfer_B_Bi_all!(bank, bankState)
-        together_transfer_B_Bo_exBI!(bank, bankState)
-        together_transfer_B_Bo_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        clear_all_transfer(bank, interbank, bankState, interbankState)
+        alter_transfer_Lo_BI(interbank, interbankState)
+        sum_transfer_Bi_BI(bank, interbank, bankState, interbankState)
+        alter_transfer_Bo_BI(interbank, interbankState)
+        sum_transfer_Li_BI(bank, interbank, bankState, interbankState)
+        together_transfer_B_Lo_exBI(bank, bankState)
+        together_transfer_B_Lo_all(bank, bankState)
+        together_transfer_B_Li_exBI(bank, bankState)
+        together_transfer_B_Li_all(bank, bankState)
+        together_transfer_B_Bi_exBI(bank, bankState)
+        together_transfer_B_Bi_all(bank, bankState)
+        together_transfer_B_Bo_exBI(bank, bankState)
+        together_transfer_B_Bo_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "clear transfer all"
-        clear_all_transfer!(bank, interbank, bankState, interbankState)
-        alter_transfer_Lo_BI!(interbank, TypeState{2}((bank.on .|| bank.off) .&& (bank.on .|| bank.off)'))
-        sum_transfer_Bi_BI!(bank, interbank, TypeState{1}(bank.on .|| bank.off), TypeState{2}((bank.on .|| bank.off) .&& (bank.on .|| bank.off)'))
-        alter_transfer_Bo_BI!(interbank, TypeState{2}((bank.on .|| bank.off) .&& (bank.on .|| bank.off)'))
-        sum_transfer_Li_BI!(bank, interbank, TypeState{1}(bank.on .|| bank.off), TypeState{2}((bank.on .|| bank.off) .&& (bank.on .|| bank.off)'))
-        together_transfer_B_Lo_exBI!(bank, TypeState{1}(bank.on .|| bank.off))
-        together_transfer_B_Lo_all!(bank, TypeState{1}(bank.on .|| bank.off))
-        together_transfer_B_Li_exBI!(bank, TypeState{1}(bank.on .|| bank.off))
-        together_transfer_B_Li_all!(bank, TypeState{1}(bank.on .|| bank.off))
-        together_transfer_B_Bi_exBI!(bank, TypeState{1}(bank.on .|| bank.off))
-        together_transfer_B_Bi_all!(bank, TypeState{1}(bank.on .|| bank.off))
-        together_transfer_B_Bo_exBI!(bank, TypeState{1}(bank.on .|| bank.off))
-        together_transfer_B_Bo_all!(bank, TypeState{1}(bank.on .|| bank.off))
-        together_T_all!(bank, TypeState{1}(bank.on .|| bank.off))
+        clear_all_transfer(bank, interbank, bankState, interbankState)
+        alter_transfer_Lo_BI(interbank, TypeState{2}((bank.on .|| bank.off) .&& (bank.on .|| bank.off)'))
+        sum_transfer_Bi_BI(bank, interbank, TypeState{1}(bank.on .|| bank.off), TypeState{2}((bank.on .|| bank.off) .&& (bank.on .|| bank.off)'))
+        alter_transfer_Bo_BI(interbank, TypeState{2}((bank.on .|| bank.off) .&& (bank.on .|| bank.off)'))
+        sum_transfer_Li_BI(bank, interbank, TypeState{1}(bank.on .|| bank.off), TypeState{2}((bank.on .|| bank.off) .&& (bank.on .|| bank.off)'))
+        together_transfer_B_Lo_exBI(bank, TypeState{1}(bank.on .|| bank.off))
+        together_transfer_B_Lo_all(bank, TypeState{1}(bank.on .|| bank.off))
+        together_transfer_B_Li_exBI(bank, TypeState{1}(bank.on .|| bank.off))
+        together_transfer_B_Li_all(bank, TypeState{1}(bank.on .|| bank.off))
+        together_transfer_B_Bi_exBI(bank, TypeState{1}(bank.on .|| bank.off))
+        together_transfer_B_Bi_all(bank, TypeState{1}(bank.on .|| bank.off))
+        together_transfer_B_Bo_exBI(bank, TypeState{1}(bank.on .|| bank.off))
+        together_transfer_B_Bo_all(bank, TypeState{1}(bank.on .|| bank.off))
+        together_T_all(bank, TypeState{1}(bank.on .|| bank.off))
 elif byWay == "Lo_P"
-        together_transfer_B_Lo_exBI!(bank, bankState)
-        together_transfer_B_Lo_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        together_transfer_B_Lo_exBI(bank, bankState)
+        together_transfer_B_Lo_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Li_P"
-        together_transfer_B_Li_exBI!(bank, bankState)
-        together_transfer_B_Li_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        together_transfer_B_Li_exBI(bank, bankState)
+        together_transfer_B_Li_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Bi_D"
-        together_transfer_B_Bi_exBI!(bank, bankState)
-        together_transfer_B_Bi_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        together_transfer_B_Bi_exBI(bank, bankState)
+        together_transfer_B_Bi_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Bo_D"
-        together_transfer_B_Bo_exBI!(bank, bankState)
-        together_transfer_B_Bo_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        together_transfer_B_Bo_exBI(bank, bankState)
+        together_transfer_B_Bo_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Lo_BI_all"
-        together_transfer_B_Lo_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        together_transfer_B_Lo_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Li_BI_all"
-        together_transfer_B_Li_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        together_transfer_B_Li_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Bi_BI_all"
-        together_transfer_B_Bi_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        together_transfer_B_Bi_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Bo_BI_all"
-        together_transfer_B_Bo_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        together_transfer_B_Bo_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Lo_BI"
-        alter_transfer_Lo_BI!(interbank, interbankState)
-        sum_transfer_Bi_BI!(bank, interbank, bankState, interbankState)
-        together_transfer_B_Bi_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        alter_transfer_Lo_BI(interbank, interbankState)
+        sum_transfer_Bi_BI(bank, interbank, bankState, interbankState)
+        together_transfer_B_Bi_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Bi_BI"
-        alter_transfer_Bi_BI!(interbank, interbankState)
-        sum_transfer_Bi_BI!(bank, interbank, bankState, interbankState)
-        together_transfer_B_Bi_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        alter_transfer_Bi_BI(interbank, interbankState)
+        sum_transfer_Bi_BI(bank, interbank, bankState, interbankState)
+        together_transfer_B_Bi_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Bo_BI"
-        alter_transfer_Bo_BI!(interbank, interbankState)
-        sum_transfer_Li_BI!(bank, interbank, bankState, interbankState)
-        together_transfer_B_Li_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        alter_transfer_Bo_BI(interbank, interbankState)
+        sum_transfer_Li_BI(bank, interbank, bankState, interbankState)
+        together_transfer_B_Li_all(bank, bankState)
+        together_T_all(bank, bankState)
     elif byWay == "Li_BI"
-        alter_transfer_Li_BI!(interbank, interbankState)
-        sum_transfer_Li_BI!(bank, interbank, bankState, interbankState)
-        together_transfer_B_Li_all!(bank, bankState)
-        together_T_all!(bank, bankState)
+        alter_transfer_Li_BI(interbank, interbankState)
+        sum_transfer_Li_BI(bank, interbank, bankState, interbankState)
+        together_transfer_B_Li_all(bank, bankState)
+        together_T_all(bank, bankState)
     else:
         throw(DomainError(byWay, "关键词取值错误！"))
         pass

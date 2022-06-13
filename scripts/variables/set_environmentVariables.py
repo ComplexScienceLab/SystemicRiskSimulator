@@ -41,7 +41,7 @@ maxNumOfTau = 100  # 单个过程最大回合数；
 numBank = 5  # 银行个数；
 numAssets = 3  # 资产种类数；
 
-tauForTest = 4  # test变量，用于打断点。相关语句：env[:tau]>=env[:tauForTest]；
+tauForTest = 4  # test变量，用于打断点。相关语句：env['tau']>=env['tauForTest']；
 isTest = True  # 是否处于测试状态
 
 ###########################

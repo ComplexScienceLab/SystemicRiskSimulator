@@ -8,16 +8,16 @@
 
 # module model_BI1111
 
-def model_BI1111(BB:BankCommercial, BI:BankInterbank, para:Dict, env:Dict):
+def model_BI1111(BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
 
-    env[:indexProcess] = 0 # 初始化过程所在位置
-    env[:stateOfSchedule] = :indexing
-    @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
+    env['indexProcess'] = 0 # 初始化过程所在位置
+    env['stateOfSchedule'] = StateOfSchedule.indexing
+    @testprintln "切换调度运作状态为$(env['stateOfSchedule'])"
 
-    env[:tau] = 0 # 初始化回合
+    env['tau'] = 0 # 初始化回合
 
-    if (!env[:isModel])
-        if (env[:tau] > 0)
+    if (!env['isModel'])
+        if (env['tau'] > 0)
             @testprintln "继续模型model：\n"
         else:
             @testprintln "开始模型model：\n"
@@ -26,46 +26,46 @@ def model_BI1111(BB:BankCommercial, BI:BankInterbank, para:Dict, env:Dict):
 
 
     ## 过程：银行外部违约损失传染冲击 #BUG测试宏和函数正确性
-    env[:processName] = "银行外部违约损失传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_exBank_insolvent!(BB, BI, para, env)
+    env['processName'] = "银行外部违约损失传染冲击过程"
+    #= @scheduler_process  =#BB, BI, env = process_exBank_insolvent(BB, BI, para, env)
 
     ## 过程：资不抵债银行间违约损失传染冲击
-    env[:processName] = "资不抵债银行间违约损失传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_interBank_insolvent!(BB, BI, para, env)
+    env['processName'] = "资不抵债银行间违约损失传染冲击过程"
+    #= @scheduler_process  =#BB, BI, env = process_interBank_insolvent(BB, BI, para, env)
 
     ## 过程：外部挤兑流动传染冲击
-    env[:processName] = "银行外部挤兑流动传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_exBank_illiquity!(BB, BI, para, env)
+    env['processName'] = "银行外部挤兑流动传染冲击过程"
+    #= @scheduler_process  =#BB, BI, env = process_exBank_illiquity(BB, BI, para, env)
 
     ## 过程：流动性短缺银行间挤兑流动传染冲击
-    env[:processName] = "流动性短缺银行间挤兑流动传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_interBank_illiquity!(BB, BI, para, env)
+    env['processName'] = "流动性短缺银行间挤兑流动传染冲击过程"
+    #= @scheduler_process  =#BB, BI, env = process_interBank_illiquity(BB, BI, para, env)
 
     ## 过程：外生破产银行间挤兑流动传染冲击 #HACK暂时不用
-    # env[:processName] = "外生破产银行间挤兑流动传染冲击过程"
-    # @run_process BB, BI, env = process_exBank_bankrupt!(BB, BI, para, env)
+    # env['processName'] = "外生破产银行间挤兑流动传染冲击过程"
+    # @run_process BB, BI, env = process_exBank_bankrupt(BB, BI, para, env)
 
     ## 过程：破产银行间挤兑流动传染冲击
-    env[:processName] = "破产银行间挤兑流动传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_interBank_bankrupt!(BB, BI, para, env)
+    env['processName'] = "破产银行间挤兑流动传染冲击过程"
+    #= @scheduler_process  =#BB, BI, env = process_interBank_bankrupt(BB, BI, para, env)
 
 
-    # update_B_balanceSheet!(BB, BI,b,ib; byWay = "calc all E_all") # 更新计算各银行之所有者权益
-    # A_data.BB[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据
-    # A_data.BI[env[:tau]] = deepcopy(BI) # 存储该回合传染结果数据
+    # update_B_balanceSheet(BB, BI,b,ib; byWay = "calc all E_all") # 更新计算各银行之所有者权益
+    # A_data.BB[env['tau']] = deepcopy(BB) # 存储该回合传染结果数据
+    # A_data.BI[env['tau']] = deepcopy(BI) # 存储该回合传染结果数据
     #TODO 最终破产清算
 
     ## 判断是否结束
-    if !env[:isStep]
+    if !env['isStep']
         @testprintln "步进已结束，跳出model_BI1111。"
         pass
 
-    if env[:stateOfSchedule] == :idle
-        env[:isModel] = False
-        env[:isExperiment] = False
+    if env['stateOfSchedule'] == StateOfSchedule.idle
+        env['isModel'] = False
+        env['isExperiment'] = False
         pass
 
-    if (!env[:isModel] || !env[:isExperiment])
+    if (!env['isModel'] || !env['isExperiment'])
         @testprintln "model_BI1111结束。"
         pass
 
