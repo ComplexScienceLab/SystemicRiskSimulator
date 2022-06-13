@@ -12,26 +12,26 @@
 
 Argument: 
 - modelContent::ModelContent: 被调度的模型内容；
-- env::Dict: 环境变量；
+- env::dict: 环境变量；
 
 Return: 
-- env::Dict: 环境变量；
+- env::dict: 环境变量；
 """
-def scheduler(env:Dict, A:SystemicRiskAgent, A_data:AgentDataCollection)#= component::Union{ModelComponent,ProcessComponent},  =#:
-    if env[:stateOfSchedule] == :loading
-        env[:loadedIndexProcess], env[:loadedIndexStage], env[:stateOfSchedule] = scheduler_loading(env[:indexOfSchedulePosition], env[:indexProcess], env[:savedIndexProcess], env[:stateOfSchedule]) # 读取
+def scheduler(env:dict, A:SystemicRiskAgent, A_data:AgentDataCollection)#= component::Union{ModelComponent,ProcessComponent},  =#:
+    if env['stateOfSchedule'] == StateOfSchedule.loading
+        env['loadedIndexProcess'], env['loadedIndexStage'], env['stateOfSchedule'] = scheduler_loading(env['indexOfSchedulePosition'], env['indexProcess'], env['savedIndexProcess'], env['stateOfSchedule']) # 读取
         pass
-    if env[:stateOfSchedule] == :stepping
-        env[:step], env[:isStep], env[:stateOfSchedule] = scheduler_stepping(env[:step], env[:stepSize]) # 步进
+    if env['stateOfSchedule'] == StateOfSchedule.stepping
+        env['step'], env['isStep'], env['stateOfSchedule'] = scheduler_stepping(env['step'], env['stepSize']) # 步进
         pass
-    if env[:stateOfSchedule] == :saving
-        env[:savedIndexProcess], env[:savedIndexStage], env[:stateOfSchedule] = scheduler_saving(env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage]) # 存储
+    if env['stateOfSchedule'] == StateOfSchedule.saving
+        env['savedIndexProcess'], env['savedIndexStage'], env['stateOfSchedule'] = scheduler_saving(env['indexOfSchedulePosition'], env['indexProcess'], env['indexStage']) # 存储
         pass
-    if env[:stateOfSchedule] == :collecting
-        env[:stateOfSchedule] = scheduler_collecting(A, A_data)
+    if env['stateOfSchedule'] == StateOfSchedule.collecting
+        env['stateOfSchedule'] = scheduler_collecting(A, A_data)
         pass
-    # if (stateOfSchedule == :indexing): #HACK 冗余
-    #     env[:indexOfSchedulePosition], env[:stateOfSchedule] = scheduler_indexing(component) # 索引
+    # if (stateOfSchedule == StateOfSchedule.indexing): #HACK 冗余
+    #     env['indexOfSchedulePosition'], env['stateOfSchedule'] = scheduler_indexing(component) # 索引
     #     pass
     pass # functions
 
@@ -49,13 +49,13 @@ Return:
 function scheduler_indexing(model::ModelComponent)
     indexOfSchedulePosition = []
     for i in 1:length(model.content)
-        append!(indexOfSchedulePosition, [[i, []]])
+        append(indexOfSchedulePosition, [[i, []]])
         for j in 1:length(model.content[i].content)
-            push!(indexOfSchedulePosition[i][2], j)
+            push(indexOfSchedulePosition[i][2], j)
             pass
         pass
     @testprintln "索引完成。值为：$(indexOfSchedulePosition)"
-    stateOfSchedule = :saving
+    stateOfSchedule = StateOfSchedule.saving
     @testprintln "切换调度运作状态为$(stateOfSchedule)"
     return indexOfSchedulePosition, stateOfSchedule
     pass
@@ -80,9 +80,9 @@ function scheduler_loading(indexOfSchedulePosition::Vector{Any}, indexProcess::I
     newStateOfSchedule = stateOfSchedule
     if (indexProcess == loadedIndexProcess && indexStage == loadedIndexStage): # 如果待读取过程和阶段是应该读取的过程和阶段，则继续判断，否则跳到下一阶段尝试读取
         if (!(indexOfSchedulePosition[indexProcess][1] == length(indexOfSchedulePosition[:, 1]) && indexOfSchedulePosition[indexProcess][2][indexStage] == length(indexOfSchedulePosition[indexProcess][2])) && isProcess == True): # 如果待读取过程不是该模型之最后一个过程之最后一个阶段，且继续运行过程，则继续读取，否则说明程序之模型部分已经运行到终点了，此时应停止读取，然后改状态为idle。
-            newStateOfSchedule = :stepping # 切换调度运作状态为步进
+            newStateOfSchedule = StateOfSchedule.stepping # 切换调度运作状态为步进
         else:
-            newStateOfSchedule = :idle # 切换调度运作状态为待命
+            newStateOfSchedule = StateOfSchedule.idle # 切换调度运作状态为待命
             pass
         @testprintln "调度读取完毕。切换调度运作状态为$(newStateOfSchedule)。"
         pass
@@ -91,9 +91,9 @@ function scheduler_loading(indexOfSchedulePosition::Vector{Any}, indexProcess::I
 
 
 # "函数：调度步进"
-# functions scheduler_stepping(process::Symbol, env::Dict=env, savedIndexProcess::Int)
+# functions scheduler_stepping(process::Symbol, env::dict=env, savedIndexProcess::Int)
 #     $(process)
-#     scheduler_altToSavingState!(env)
+#     scheduler_altToSavingState(env)
 #     pass
 
 
@@ -112,11 +112,11 @@ function scheduler_stepping(step::Int, stepSize::Int)
     step += 1
     if step % stepSize == 0: # 是否完成本次步进
         isStep = False
-        stateOfSchedule = :saving # 切换调度运作状态为存储
+        stateOfSchedule = StateOfSchedule.saving # 切换调度运作状态为存储
         @testprintln "步进停止。切换调度运作状态为saving"
     else:
         isStep = True
-        stateOfSchedule = :stepping
+        stateOfSchedule = StateOfSchedule.stepping
         @testprintln "步进继续："
         pass
     return step, isStep, stateOfSchedule
@@ -167,7 +167,7 @@ function scheduler_saving(indexOfSchedulePosition::Vector{Any}, indexProcess::In
         pass # if
     @testprintln "下次读取的过程和阶段：$(loadedIndexProcess)，$(loadedIndexStage)。"
 
-    stateOfSchedule = :collecting # 切换调度运作状态为收集数据
+    stateOfSchedule = StateOfSchedule.collecting # 切换调度运作状态为收集数据
     @testprintln "切换调度运作状态为$(stateOfSchedule)"
 
     return savedIndexProcess, savedIndexStage, loadedIndexProcess, loadedIndexStage, stateOfSchedule
@@ -185,11 +185,11 @@ Argument:
 Return: 
 - stateOfSchedule::Symbol: 调度状态；
 """
-function scheduler_collecting(A::SystemicRiskAgent, A_data::AgentDataCollection=nothing; env::Dict=env)
+function scheduler_collecting(A::SystemicRiskAgent, A_data::AgentDataCollection=nothing; env::dict=env)
     @testprintln "收集数据。"
-    env[:dataId] += 1 # 累加数据帧ID号
-    collector(A; A_data, stateOfProcess=env[:stateOfProcess]) # 收集数据
-    stateOfSchedule = :loading  # 切换调度运作状态为读取
+    env['dataId'] += 1 # 累加数据帧ID号
+    collector(A; A_data, stateOfProcess=env['stateOfProcess']) # 收集数据
+    stateOfSchedule = StateOfSchedule.loading  # 切换调度运作状态为读取
     @testprintln "切换调度运作状态为$(stateOfSchedule)"
     return stateOfSchedule
     pass
@@ -200,26 +200,26 @@ function scheduler_collecting(A::SystemicRiskAgent, A_data::AgentDataCollection=
 macro scheduler_process(process)
     return esc(
         quote
-            if (env[:stateOfSchedule] == :loading && env[:processName] == env[:savedProcessName])
+            if (env['stateOfSchedule'] == StateOfSchedule.loading && env['processName'] == env['savedProcessName'])
                 scheduler_loading()
-                env[:stateOfSchedule] = :stepping # 切换调度运作状态为存储
-                @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
-            elif (env[:stateOfSchedule] == :stepping)
+                env['stateOfSchedule'] = StateOfSchedule.stepping # 切换调度运作状态为存储
+                @testprintln "切换调度运作状态为$(env['stateOfSchedule'])"
+            elif (env['stateOfSchedule'] == StateOfSchedule.stepping)
                 scheduler_stepping(process; env)
-                env[:stateOfSchedule] = :saving # 切换调度运作状态为存储
-                @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
-            elif (env[:stateOfSchedule] == :saving)
-                env[:savedIndexProcess], env[:savedIndexStage] = scheduler_saving(env[:stateOfSchedule], env[:indexOfSchedulePosition], env[:indexProcess], env[:indexStage])
-                env[:stateOfSchedule] = :collecting # 切换调度运作状态为收集数据
-                @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
-            elif (env[:stateOfSchedule] == :collecting)
+                env['stateOfSchedule'] = StateOfSchedule.saving # 切换调度运作状态为存储
+                @testprintln "切换调度运作状态为$(env['stateOfSchedule'])"
+            elif (env['stateOfSchedule'] == StateOfSchedule.saving)
+                env['savedIndexProcess'], env['savedIndexStage'] = scheduler_saving(env['stateOfSchedule'], env['indexOfSchedulePosition'], env['indexProcess'], env['indexStage'])
+                env['stateOfSchedule'] = StateOfSchedule.collecting # 切换调度运作状态为收集数据
+                @testprintln "切换调度运作状态为$(env['stateOfSchedule'])"
+            elif (env['stateOfSchedule'] == StateOfSchedule.collecting)
                 scheduler_collecting()
-                env[:stateOfSchedule] = :loading  # 切换调度运作状态为读取
-                @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
-            elif (env[:stateOfSchedule] == :indexing)
-                env[:indexOfSchedulePosition] = scheduler_indexing(modelContent, env[:stateOfSchedule])
-                env[:stateOfSchedule] = :loading  # 切换调度运作状态为读取
-                @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
+                env['stateOfSchedule'] = StateOfSchedule.loading  # 切换调度运作状态为读取
+                @testprintln "切换调度运作状态为$(env['stateOfSchedule'])"
+            elif (env['stateOfSchedule'] == StateOfSchedule.indexing)
+                env['indexOfSchedulePosition'] = scheduler_indexing(modelContent, env['stateOfSchedule'])
+                env['stateOfSchedule'] = StateOfSchedule.loading  # 切换调度运作状态为读取
+                @testprintln "切换调度运作状态为$(env['stateOfSchedule'])"
                 pass # if
 
             pass # quote
@@ -233,33 +233,33 @@ macro scheduler_process(process)
 macro scheduler_stage(stage)
     expr = esc(
         quote
-            # @testprintln "阶段：$(env[:stageName])"
-            if (env[:stateOfSchedule] == :stepping)
+            # @testprintln "阶段：$(env['stageName'])"
+            if (env['stateOfSchedule'] == StateOfSchedule.stepping)
                 $(stage)
                 scheduler_stepping(env)
-            elif (env[:stateOfSchedule] == :loading && env[:stageName] == env[:savedStageName])
-                env[:stateOfSchedule] = :stepping # 切换调度运作状态为步进
-                @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
-                env[:isStep] = True
+            elif (env['stateOfSchedule'] == StateOfSchedule.loading && env['stageName'] == env['savedStageName'])
+                env['stateOfSchedule'] = StateOfSchedule.stepping # 切换调度运作状态为步进
+                @testprintln "切换调度运作状态为$(env['stateOfSchedule'])"
+                env['isStep'] = True
                 @testprintln "步进开始"
                 $(stage)
-                env[:isStep] = scheduler_stepping(env[:step], env[:stepSize])
-                stateOfSchedule = :saving # 切换调度运作状态为存储
+                env['isStep'] = scheduler_stepping(env['step'], env['stepSize'])
+                stateOfSchedule = StateOfSchedule.saving # 切换调度运作状态为存储
                 @testprintln "切换调度运作状态为$(stateOfSchedule)"
 
-            elif (env[:stateOfSchedule] == :saving)
-                env[:savedIndexStage] = env[:indexStage]
-                @testprintln "下一次步进运行的阶段：$(env[:stageName])。"
-                env[:stateOfSchedule] = :collecting # 切换调度运作状态为收集数据
+            elif (env['stateOfSchedule'] == StateOfSchedule.saving)
+                env['savedIndexStage'] = env['indexStage']
+                @testprintln "下一次步进运行的阶段：$(env['stageName'])。"
+                env['stateOfSchedule'] = StateOfSchedule.collecting # 切换调度运作状态为收集数据
                 #TODO 收集数据
-                @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
-                env[:stateOfSchedule] = :loading  # 切换调度运作状态为读取
-                @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
+                @testprintln "切换调度运作状态为$(env['stateOfSchedule'])"
+                env['stateOfSchedule'] = StateOfSchedule.loading  # 切换调度运作状态为读取
+                @testprintln "切换调度运作状态为$(env['stateOfSchedule'])"
                 # break
-                # elif (env[:stateOfSchedule] == :indexing)
-                #     env[:indexStage] += 1
-                #     push!(env[:indexOfSchedulePosition][env[:indexProcess]], env[:indexStage])
-                #     @testprintln "env[:indexOfSchedulePosition]=$(env[:indexOfSchedulePosition])"
+                # elif (env['stateOfSchedule'] == StateOfSchedule.indexing)
+                #     env['indexStage'] += 1
+                #     push(env['indexOfSchedulePosition'][env['indexProcess']], env['indexStage'])
+                #     @testprintln "env['indexOfSchedulePosition']=$(env['indexOfSchedulePosition'])"
                 pass
             pass # quote
     )
@@ -276,42 +276,42 @@ def isProcess(BB:BankCommercial, BB_isv_t1:TypeState{1}, BB_Shock_t_t1:TypeMoney
             process.functionName == :process_exBank_bankrupt
         )
             isProcess = False
-            @testprintln "结束过程：$(env[:processName])。"
+            @testprintln "结束过程：$(env['processName'])。"
         elif (
             process.functionName == :process_interBank_insolvent
         )
             if BB.isv == BB_isv_t1: # 判断是否继续运行过程: #BUG，可能存在逻辑问题
                 isProcess = False
-                @testprintln "结束过程：$(env[:processName])。"
+                @testprintln "结束过程：$(env['processName'])。"
                 pass
         else:
             if BB.Shock_t == BB_Shock_t_t1: # 判断是否继续运行过程
                 isProcess = False
-                @testprintln "结束过程：$(env[:processName])。"
+                @testprintln "结束过程：$(env['processName'])。"
                 pass
             pass # if
     else:
         isProcess = True
-        println("继续过程：$(env[:processName])。")
+        println("继续过程：$(env['processName'])。")
         pass # if
 
     return isProcess
     pass # functions
 
 "函数：判断是否继续运行回合"
-def isRound(; env:Dict=env):
-    if (env[:tau] < env[:maxNumOfTau])
-        env[:isRound] = True
+def isRound( env:dict=env):
+    if (env['tau'] < env['maxNumOfTau'])
+        env['isRound'] = True
     else:
-        env[:isRound] = False
-        @testprintln "结束回合$(env[:processName])。"
+        env['isRound'] = False
+        @testprintln "结束回合$(env['processName'])。"
         pass
     pass
 
 "函数：判断是否继续步进"
-def isStep(; env:Dict=env):
-    if !env[:isStep]
-        @testprintln "暂时跳出模型$(env[:modelName])之过程$(env[:processName])之阶段$(env[:stageName])。"
+def isStep( env:dict=env):
+    if !env['isStep']
+        @testprintln "暂时跳出模型$(env['modelName'])之过程$(env['processName'])之阶段$(env['stageName'])。"
         pass
     pass
 
@@ -319,12 +319,12 @@ def isStep(; env:Dict=env):
 函数：判断是否继续运行循环。
 只有同时满足继续运行过程、继续步进、继续运行回合时，才继续运行循环。否则跳出循环。
 """
-def isLoop(; env:Dict=env):
-    if (env[:isProcess] && env[:isStep] && env[:isRound])
-        env[:isLoop] = True
+def isLoop( env:dict=env):
+    if (env['isProcess'] && env['isStep'] && env['isRound'])
+        env['isLoop'] = True
     else:
-        env[:isLoop] = False
-        @testprintln "跳出过程$(env[:processName])之循环。"
+        env['isLoop'] = False
+        @testprintln "跳出过程$(env['processName'])之循环。"
         pass
     pass
 

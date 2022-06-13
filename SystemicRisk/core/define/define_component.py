@@ -1,7 +1,7 @@
 "程序：定义模型及其相关的结构体"
 
 # "定义综合组件"# HACK 较为抽象，暂时不会用。
-# struct Component{ComponentHierarchyType,ComponentInstanceType}
+# class Component{ComponentHierarchyType,ComponentInstanceType}
 #     name::String # 组件名称
 #     content::Union{ComponentHierarchyType,ComponentInstanceType} # 组件核心内容
 #     run::Function # 运行组件
@@ -9,7 +9,7 @@
 
 
 "定义阶段组件"
-struct StageComponent{ComponentInstanceType}
+class StageComponent:
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
@@ -19,7 +19,7 @@ struct StageComponent{ComponentInstanceType}
 
 
 "定义过程组件"
-struct ProcessComponent{ComponentInstanceType}
+class ProcessComponent:
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name
@@ -31,7 +31,7 @@ struct ProcessComponent{ComponentInstanceType}
 
 
 "定义模型组件"
-struct ModelComponent{ComponentInstanceType}
+class ModelComponent:
     id::ItemId # 编号 id
     functionName::ItemFunctionName # 函数名称 name
     textName::ItemTextName # 文本名称 name

@@ -53,7 +53,7 @@ def buildProcess(processContent:ProcessContent; processSkeleton:Function=fun_pro
     list_stage = Vector{StageComponent}([])
     for stageContent in processContent.listStageContent
         stage = buildStage(stageContent)
-        append!(list_stage, [stage])
+        append(list_stage, [stage])
         pass
 
     ## 生成过程process
@@ -92,7 +92,7 @@ def buildModel(modelContent:ModelContent; modelSkeleton:Function=fun_model_skele
     list_process = Vector{ProcessComponent}([])
     for processContent in modelContent.listProcessContent
         process = buildProcess(processContent)
-        append!(list_process, [process])
+        append(list_process, [process])
         pass
 
     ## 生成模型model
