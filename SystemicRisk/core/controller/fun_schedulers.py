@@ -11,13 +11,13 @@
 函数：调度器 #HACK 或将废弃
 
 Argument: 
-- modelContent::ModelContent: 被调度的模型内容；
-- env::dict: 环境变量；
+- modelContent:ModelContent: 被调度的模型内容；
+- env:dict: 环境变量；
 
 Return: 
-- env::dict: 环境变量；
+- env:dict: 环境变量；
 """
-def scheduler(env:dict, A:SystemicRiskAgent, A_data:AgentDataCollection)#= component::Union{ModelComponent,ProcessComponent},  =#:
+def scheduler(env:dict, A:SystemicRiskAgent, A_data:AgentDataCollection)#= component:Union{ModelComponent,ProcessComponent},  =#:
     if env['state_of_schedule'] == StateOfSchedule.loading
         env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule'] = scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['saved_index_process'], env['state_of_schedule']) # 读取
         pass
@@ -40,13 +40,13 @@ def scheduler(env:dict, A:SystemicRiskAgent, A_data:AgentDataCollection)#= compo
 函数：调度索引
 
 Argument: 
-- modelContent::ModelContent: 被调度的模型内容；
+- modelContent:ModelContent: 被调度的模型内容；
 
 Return: 
-- index_of_schedule_position::Array 调度位置索引列表；
-- state_of_schedule::Symbol: 调度状态；
+- index_of_schedule_position:Array 调度位置索引列表；
+- state_of_schedule:Symbol: 调度状态；
 """
-function scheduler_indexing(model::ModelComponent)
+function scheduler_indexing(model:ModelComponent)
     index_of_schedule_position = []
     for i in 1:length(model.content)
         append(index_of_schedule_position, [[i, []]])
@@ -65,17 +65,17 @@ function scheduler_indexing(model::ModelComponent)
 函数：调度读取
 
 Argument: 
-- index_of_schedule_position::Vector{Any}: 调度位置索引列表；
-- index_process::Int: 当前过程之位置；
-- index_stage::Int: 当前阶段之位置；
-- loadedIndexProcess::Int: 读取的过程之位置；
-- loadedIndexStage::Int: 读取的阶段之位置；
-- state_of_schedule::Symbol: 调度状态；
+- index_of_schedule_position:Vector{Any}: 调度位置索引列表；
+- index_process:Int: 当前过程之位置；
+- index_stage:Int: 当前阶段之位置；
+- loadedIndexProcess:Int: 读取的过程之位置；
+- loadedIndexStage:Int: 读取的阶段之位置；
+- state_of_schedule:Symbol: 调度状态；
 
 Return: 
-- newStateOfSchedule::Symbol: 新的调度状态；
+- newStateOfSchedule:Symbol: 新的调度状态；
 """
-function scheduler_loading(index_of_schedule_position::Vector{Any}, index_process::Int, index_stage::Int, loadedIndexProcess::Int, loadedIndexStage::Int, state_of_schedule::Symbol)
+function scheduler_loading(index_of_schedule_position:Vector{Any}, index_process:Int, index_stage:Int, loadedIndexProcess:Int, loadedIndexStage:Int, state_of_schedule:Symbol)
     @testprintln "调度读取中……"
     newStateOfSchedule = state_of_schedule
     if (index_process == loadedIndexProcess && index_stage == loadedIndexStage): # 如果待读取过程和阶段是应该读取的过程和阶段，则继续判断，否则跳到下一阶段尝试读取
@@ -91,7 +91,7 @@ function scheduler_loading(index_of_schedule_position::Vector{Any}, index_proces
 
 
 # "函数：调度步进"
-# functions scheduler_stepping(process::Symbol, env::dict=env, saved_index_process::Int)
+# functions scheduler_stepping(process:Symbol, env:dict=env, saved_index_process:Int)
 #     $(process)
 #     scheduler_altToSavingState(env)
 #     pass
@@ -101,14 +101,14 @@ function scheduler_loading(index_of_schedule_position::Vector{Any}, index_proces
 函数：调度步进
 
 Argument: 
-- step::Int: 步进步数；
-- step_size::Int: 步进尺寸；
+- step:Int: 步进步数；
+- step_size:Int: 步进尺寸；
 
 Return: 
-- is_step::Bool: 是否步进；
-- state_of_schedule::Symbol: 调度状态；
+- is_step:Bool: 是否步进；
+- state_of_schedule:Symbol: 调度状态；
 """
-function scheduler_stepping(step::Int, step_size::Int)
+function scheduler_stepping(step:Int, step_size:Int)
     step += 1
     if step % step_size == 0: # 是否完成本次步进
         is_step = False
@@ -127,19 +127,19 @@ function scheduler_stepping(step::Int, step_size::Int)
 函数：调度存储
 
 Argument: 
-- index_of_schedule_position::Vector{Any}: 调度位置索引列表；
-- index_process::Int: 当前过程之位置；
-- index_stage::Int: 当前阶段之位置；
-- is_rocess::Bool: 是否在过程状态中；
+- index_of_schedule_position:Vector{Any}: 调度位置索引列表；
+- index_process:Int: 当前过程之位置；
+- index_stage:Int: 当前阶段之位置；
+- is_rocess:Bool: 是否在过程状态中；
 
 Return: 
-- saved_index_process::Int: 存储的过程之位置；
-- saved_index_stage::Int: 存储的阶段之位置；
-- loadedIndexProcess::Int: 读取的过程之位置；
-- loadedIndexStage::Int: 读取的阶段之位置；
-- state_of_schedule::Symbol: 调度状态；
+- saved_index_process:Int: 存储的过程之位置；
+- saved_index_stage:Int: 存储的阶段之位置；
+- loadedIndexProcess:Int: 读取的过程之位置；
+- loadedIndexStage:Int: 读取的阶段之位置；
+- state_of_schedule:Symbol: 调度状态；
 """
-function scheduler_saving(index_of_schedule_position::Vector{Any}, index_process::Int, index_stage::Int, is_rocess::Bool)
+function scheduler_saving(index_of_schedule_position:Vector{Any}, index_process:Int, index_stage:Int, is_rocess:Bool)
 
     saved_index_process = index_of_schedule_position[index_process][1]
     saved_index_stage = index_of_schedule_position[index_process][2][index_stage]
@@ -179,13 +179,13 @@ function scheduler_saving(index_of_schedule_position::Vector{Any}, index_process
 函数：调度搜集数据
 
 Argument: 
-- A::SystemicRiskAgent: Agent群变量；
-- A_data::AgentDataCollection: Agent群变量之数据；
+- A:SystemicRiskAgent: Agent群变量；
+- A_data:AgentDataCollection: Agent群变量之数据；
 
 Return: 
-- state_of_schedule::Symbol: 调度状态；
+- state_of_schedule:Symbol: 调度状态；
 """
-function scheduler_collecting(A::SystemicRiskAgent, A_data::AgentDataCollection=nothing; env::dict=env)
+function scheduler_collecting(A:SystemicRiskAgent, A_data:AgentDataCollection=nothing; env:dict=env)
     @testprintln "收集数据。"
     env['data_id'] += 1 # 累加数据帧ID号
     collector(A; A_data, state_of_process=env['state_of_process']) # 收集数据

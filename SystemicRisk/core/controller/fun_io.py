@@ -9,10 +9,10 @@
 """
 函数：设置实验文件夹
 # Arguments: 
-- env::EnvironmentVariables: 环境变量；
-- isDatetime::Bool = True: 是否加入日期时间；
+- env:EnvironmentVariables: 环境变量；
+- isDatetime:Bool = True: 是否加入日期时间；
 # Return:
-- env::EnvironmentVariables: 环境变量，此时内部内容已经被更新；
+- env:EnvironmentVariables: 环境变量，此时内部内容已经被更新；
 """
 import time
 

@@ -7,7 +7,7 @@
 
 
 "函数：运行一次仿真"
-function makesim(model::ModelComponent, para::dict, env::dict)
+function makesim(model:ModelComponent, para:dict, env:dict)
 
     ## 初始化agent及其模型
     A, M, A_data = init_systemicRiskAgent(para, env)

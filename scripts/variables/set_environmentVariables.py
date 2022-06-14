@@ -1,23 +1,23 @@
 """
 程序：设置环境变量EnvironmentVariables
 # Items:  #HACK这个说明已经过时了，有很多新增的变量没有被列入该说明
-- init_method::String:
+- init_method:String:
   - "default": 默认，仅初始化；
   - "randomly": 随机生成；
   - "import data": 导入外部数据；
   - "set manually": 手动设置；
-- foldernameTypeOfExperimentsData::String: 设置实验数据文件夹命名方式。默认"default"；
+- foldernameTypeOfExperimentsData:String: 设置实验数据文件夹命名方式。默认"default"；
   - default: 默认，固定命名方式
   - set manually: 手动设置名称
-- foldernamePrefixOfExperimentsData::String: 手动设置实验数据文件夹前缀名。默认"default"；
-- root_dir_of_experiments::String: 手动设置实验数据文件夹根路径。默认projectdir() * "/data/sims/"；
-- tau::Int16: 回合计数
-- process_name::String: 过程名称
-- isEndRound::Bool: 结束回合判断
-- num_bank::Int16: 银行个数
-- num_assets::Int16: 资产总类数
-- max_num_of_tau::Int16: 最大回合数
-- tau_for_test::Int16: test变量，用于打断点
+- foldernamePrefixOfExperimentsData:String: 手动设置实验数据文件夹前缀名。默认"default"；
+- root_dir_of_experiments:String: 手动设置实验数据文件夹根路径。默认projectdir() * "/data/sims/"；
+- tau:Int16: 回合计数
+- process_name:String: 过程名称
+- isEndRound:Bool: 结束回合判断
+- num_bank:Int16: 银行个数
+- num_assets:Int16: 资产总类数
+- max_num_of_tau:Int16: 最大回合数
+- tau_for_test:Int16: test变量，用于打断点
 """
 
 ##########################################
@@ -28,7 +28,7 @@
 
 ######### 设置环境变量 #########################################
 import os
-from SystemicRisk.core.define.define_enum import StateOfSchedule
+from SystemicRisk.core.define.define_enum import EStateOfSchedule
 
 init_method = "set manually"  # 初始化数据方式；
 foldername_type_of_experiments = "set manually"  # 设置实验文件夹命名方式。默认"default"；
@@ -58,8 +58,8 @@ tau = 0  # 初始回合计次为0；
 id_experiment = 1  # 当前实验组编号；
 num_experiment = 0  # 实验组之实验个数；
 
-state_of_schedule = StateOfSchedule.idle  # 调度运作状态。状态符有以下几种：`:idle`：闲置状态、`:indexing`：索引状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
-state_of_process = StateOfSchedule.initializing  # 程序所处时期状态。状态符有以下几种：`:initializing`：初始化状态、`:running`：运行状态、`:finishing`：结束收尾状态、
+state_of_schedule = EStateOfSchedule.idle  # 调度运作状态。状态符有以下几种：`:idle`：闲置状态、`:indexing`：索引状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
+state_of_process = EStateOfSchedule.initializing  # 程序所处时期状态。状态符有以下几种：`:initializing`：初始化状态、`:running`：运行状态、`:finishing`：结束收尾状态、
 
 is_step = True  # 是否处于步进状态；
 is_loop = True  # 是否处于循环状态

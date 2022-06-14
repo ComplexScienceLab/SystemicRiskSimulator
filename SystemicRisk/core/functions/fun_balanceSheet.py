@@ -29,7 +29,7 @@ def together_B_A_exBI(bank:BankCommercial, bankList:TypeState{1}):
     pass
 
 # "更新各银行之银行总负债``Z_{B}``。"
-# functions update_B_Z_all(bank::BankCommercial, interbank::BankInterbank, byWay::String = "all")
+# functions update_B_Z_all(bank:BankCommercial, interbank:BankInterbank, byWay:String = "all")
 #     if byWay == "all"
 #         together_B_Z_exBI(bank,bankList)
 #         together_B_Z_BI(bank, interbank,bankList,interbankList)
@@ -95,7 +95,7 @@ def alter_A_BI(interbank:BankInterbank):
 """
 更新各银行间之资产负债矩阵。
 # Arguments
-`byWay::String`:  参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
+`byWay:String`:  参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
 - `Z_BI`:  已知``Z_{BI}``，更新其余银行间资产负债变量；
 - `A_BI`:  已知``A_{BI}``，更新其余银行间资产负债变量；
 """
@@ -114,7 +114,7 @@ def update_BI_balanceSheet(interbank:BankInterbank; byWay:String):
 """
 更新各银行之资产负债表变量。
 # Arguments
-`byWay::String`:  参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
+`byWay:String`:  参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
 - `all`:  更新各银行之所有资产负债表变量；
 - `A_exBI`:  已知``A_{-BI}``，更新各银行之其余相关的资产负债表变量；
 - `A_P`:  已知``L_{-BI}``，更新各银行之其余相关的资产负债表变量；
@@ -191,7 +191,7 @@ def update_B_balanceSheet(bank:BankCommercial, interbank:BankInterbank, bankList
     pass
 
 
-# functions update_B_balanceSheet(bank::BankCommercial, interbank::BankInterbank; byWay::String)
+# functions update_B_balanceSheet(bank:BankCommercial, interbank:BankInterbank; byWay:String)
 #     update_B_A_all(bank, interbank, byWay = byWay)
 #     update_B_Z_all(bank, interbank, byWay = byWay)
 #     update_B_E_all(bank,byWay=byWay)
@@ -201,7 +201,7 @@ def update_B_balanceSheet(bank:BankCommercial, interbank:BankInterbank, bankList
 
 
 # "更新各银行之银行总资产``A_{B}``。"
-# functions update_B_A_all(bank::BankCommercial, interbank::BankInterbank; byWay::String = "all")
+# functions update_B_A_all(bank:BankCommercial, interbank:BankInterbank; byWay:String = "all")
 #     if byWay == "all"
 #     elif byWay == "A_exBI" || byWay == "A_P" || byWay == "A_Q" || byWay == "A_R"
 #         together_B_A_exBI(bank,bankList)

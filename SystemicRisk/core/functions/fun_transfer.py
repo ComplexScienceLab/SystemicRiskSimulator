@@ -18,7 +18,7 @@
 `shock`: 相关冲击；
 `flow`: 流量；
 """
-function transfer_B_capital_reverse(target::TypeMoney, source::TypeMoney, shock::TypeMoney, flow::TypeMoney)
+function transfer_B_capital_reverse(target:TypeMoney, source:TypeMoney, shock:TypeMoney, flow:TypeMoney)
     target += flow
     source -= flow
     shock -= flow
@@ -33,7 +33,7 @@ function transfer_B_capital_reverse(target::TypeMoney, source::TypeMoney, shock:
 `shock`: 相关冲击；
 `flow`: 流量；
 """
-function transfer_B_capital_reduce(target::TypeMoney, source::TypeMoney, shock::TypeMoney, flow::TypeMoney)
+function transfer_B_capital_reduce(target:TypeMoney, source:TypeMoney, shock:TypeMoney, flow:TypeMoney)
     target -= flow
     source -= flow
     shock -= flow
@@ -132,7 +132,7 @@ def clear_all_transfer(bank:BankCommercial, interbank:BankInterbank, bankState:T
 """
 更新各银行之借贷流量变量。
 # Arguments
-`byWay::String`:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
+`byWay:String`:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
 - `all`:  更新全部借贷流量变量；
 - `clear transfer all`:  清零所有不必要的借贷流量变量；
 - `Lo_P`:  已知``Lo_{B,P}``，更新其余借贷流量变量；
