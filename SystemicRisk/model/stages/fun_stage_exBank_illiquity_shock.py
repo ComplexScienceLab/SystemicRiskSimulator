@@ -7,13 +7,13 @@
 "函数：银行外部挤兑流动冲击阶段"
 def stage_exBank_illiquity_shock(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict, env:dict) #= BB_t1::BankCommercial, BI_t1::BankInterbank,  =#:
     ## # 银行外部挤兑流动冲击阶段
-    # env['stageName'] = "银行外部挤兑流动冲击阶段"
-    @testprintln "开始阶段$(env['stageName'])："
+    # env['stage_name'] = "银行外部挤兑流动冲击阶段"
+    @testprintln "开始阶段$(env['stage_name'])："
 
     A.BB.Shock_D_run_t[para['list_Shock_exBI_t']] = para['Shock_exBI_run_t'][para['list_Shock_exBI_t']] # 生成居民存款挤兑流动冲击
     update_B_Shock(BB, BI, b, ib; byWay="Shock_D_run_t") # 居民存款挤兑流动冲击传导至银行内负债冲击
     update_B_state(BB, BI; to="illiquity", from="healthy") # 更新各银行之状态，从健康到流动性短缺
 
-    @testprintln "结束阶段$(env['stageName'])。"
+    @testprintln "结束阶段$(env['stage_name'])。"
     return BB, BI
     pass # functions

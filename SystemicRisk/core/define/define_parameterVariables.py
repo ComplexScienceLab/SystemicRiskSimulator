@@ -10,7 +10,7 @@ from scripts.variables.set_parameterVariables import *
 
 ## 生成字典变量
 setOfValuesOfParameterVariables = dict(
-    modelName=modelName,
+    model_name=model_name,
     Shock_exBI_def_t=Shock_exBI_def_t,
     Shock_exBI_run_t=Shock_exBI_run_t,
     list_Shock_exBI_t=list_Shock_exBI_t,
