@@ -7,7 +7,7 @@
 ##########################################
 
 
-function collector(A::SystemicRiskAgent; A_data::AgentDataCollection=AgentDataCollection([], []), state_of_process::Symbol=StateOfSchedule.running, env::dict=env, para::dict=dict([]))
+function collector(A:SystemicRiskAgent; A_data:AgentDataCollection=AgentDataCollection([], []), state_of_process:Symbol=StateOfSchedule.running, env:dict=env, para:dict=dict([]))
     if state_of_process == StateOfSchedule.running
         A_data = collectAgentData(A, A_data)
         return A_data
@@ -26,7 +26,7 @@ function collector(A::SystemicRiskAgent; A_data::AgentDataCollection=AgentDataCo
 """
 TODO函数：初始化实验数据容器
 """
-function initAgentDataCollection(A::SystemicRiskAgent; env::dict=env)
+function initAgentDataCollection(A:SystemicRiskAgent; env:dict=env)
     BB_data_item = [dict([
         (getkey(env, env['data_id'], :data_id), env['data_id']),
         (getkey(env, env['tau'], :tau), env['tau']),
@@ -55,7 +55,7 @@ function initAgentDataCollection(A::SystemicRiskAgent; env::dict=env)
 """
 TODO函数：收集数据并存储
 """
-function collectAgentData(A::SystemicRiskAgent, A_data::AgentDataCollection; env::dict=env)
+function collectAgentData(A:SystemicRiskAgent, A_data:AgentDataCollection; env:dict=env)
     BB_data_item = [dict([
         (getkey(env, env['data_id'], :data_id), env['data_id']),
         (getkey(env, env['tau'], :tau), env['tau']),
@@ -79,7 +79,7 @@ function collectAgentData(A::SystemicRiskAgent, A_data::AgentDataCollection; env
 """
 TODO函数：导出实验结果数据
 """
-function exportAgentData(A_data::AgentDataCollection; env::dict=env, para::dict=para)
+function exportAgentData(A_data:AgentDataCollection; env:dict=env, para:dict=para)
 
     ## 整理banks之数据为一数据框
     BB_data_export = DataFrame()
@@ -138,7 +138,7 @@ function exportAgentData(A_data::AgentDataCollection; env::dict=env, para::dict=
 
 
 # ## 方案一 #HACK失败
-# functions initAgentDataCollection(A::SystemicRiskAgent)
+# functions initAgentDataCollection(A:SystemicRiskAgent)
 #     dict_fields_BB = merge(dict([(:data_id, 1), (:tau, Vector{Int}(ones(env['num_bank']))), (:index_stage, Vector{Int}(ones(env['num_bank'])))]), struct2dict(A.BB))
 #     BB_data = DataFrame(dict_fields_BB) # 初始化带回合变量的商业银行实例数据框
 #     # BI_data = []
@@ -153,7 +153,7 @@ function exportAgentData(A_data::AgentDataCollection; env::dict=env, para::dict=
 # """
 # 函数：收集数据并存储
 # """
-# functions collector(A::SystemicRiskAgent, A_data::AgentDataCollection; env::dict=env)
+# functions collector(A:SystemicRiskAgent, A_data:AgentDataCollection; env:dict=env)
 #     BB_data = DataFrame()
 #     BB_data[!, :data_id] = fill(env['data_id'], env['num_bank'])
 #     BB_data[!, :tau] = fill(env['tau'], env['num_bank'])
@@ -186,7 +186,7 @@ function exportAgentData(A_data::AgentDataCollection; env::dict=env, para::dict=
 # """
 # 函数：初始化待收集数据容器
 # """
-# functions initAgentDataCollection(A::SystemicRiskAgent)
+# functions initAgentDataCollection(A:SystemicRiskAgent)
 #     # dict01 = dict([(:id, collect(range(1, env['num_bank'], step=1))), (:tau, ones(env['num_bank'])), (:index_stage, ones(env['num_bank']))])
 #     # dict02 = struct2dict(A.BB)
 #     # dict_fields = dict([collect(dict01); collect(dict02)])
@@ -211,7 +211,7 @@ function exportAgentData(A_data::AgentDataCollection; env::dict=env, para::dict=
 # """
 # 函数：收集数据并存储
 # """
-# functions collector(A::SystemicRiskAgent, A_data::AgentDataCollection; env::dict=env)
+# functions collector(A:SystemicRiskAgent, A_data:AgentDataCollection; env:dict=env)
 #     BB_data = DataFrame()
 #     BB_data[!, :data_id] = fill(env['data_id'], env['num_bank'])
 #     BB_data[!, :tau] = fill(env['tau'], env['num_bank'])
