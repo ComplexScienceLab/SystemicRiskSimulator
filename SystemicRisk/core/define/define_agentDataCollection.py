@@ -5,10 +5,13 @@
 ##########################################
 
 
-"#TODO 结构体：定义待收集数据类型"
+
 class AgentDataCollection
-    BB::Vector
-    BI::Vector
+    """
+    #TODO 结构体：定义待收集数据类型
+    """
+    BB:Vector
+    BI:Vector
     pass
 
 

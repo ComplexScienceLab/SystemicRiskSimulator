@@ -269,16 +269,16 @@ def calc_isEnabledLiP_from_isNeededLiP(bank:BankCommercial, interbank:BankInterb
 """
 计算信息列表之于各状态银行之各关联银行。
 # Arguments
-- `interbank::BankInterbank`:  银行间主体。
-- `listOfRelationInStateOfBanks::Array`:  列表之于各银行之各状态之关系。
-- `isState::Vector`:  示性向量之于各银行之状态。
-- `goal::String`:  参数，确定计算债务方或债权方。
+- `interbank:BankInterbank`:  银行间主体。
+- `listOfRelationInStateOfBanks:Array`:  列表之于各银行之各状态之关系。
+- `isState:Vector`:  示性向量之于各银行之状态。
+- `goal:String`:  参数，确定计算债务方或债权方。
     - `debtor`:  计算对应的债务方银行；
     - `creditor`:  计算对应的债权方银行；
 # Returns
 - `listOfRelationInStateOfBanks`:  返回对应状态下的债权或者债务关系的银行列表；
 """
-function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Vector, goal::String)
+function calc_listOfRelationInStateOfBanks(interbank:BankInterbank; isState:Vector, goal:String)
     # 计算示性矩阵之于银行间风险敞口的
     if goal == "debtor"
         isExposure = ((interbank.A_BI .> 0.0) .&& isState)
@@ -300,7 +300,7 @@ function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Ve
 
 # Arguments
 
-`to::String`:  参数，转移状态目标；
+`to:String`:  参数，转移状态目标；
 - `any`:  到任意状态；
 - `healthy`:  到健康状态；
 - `insolvent`:  到资不抵债状态；
@@ -314,7 +314,7 @@ function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Ve
 - `needed collect A_P`:  到是否可以收回厂商贷款状态；
 - `enabled collect A_P`:  到是否可以收回厂商贷款状态；
 
-`from::String`:  参数，转移状态源头；
+`from:String`:  参数，转移状态源头；
 - `any`:  从任意状态出发；
 - `healthy`:  从健康状态出发；
 - `insolvent`:  从资不抵债状态出发；
