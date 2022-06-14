@@ -31,10 +31,10 @@ type_list = list  # 一维向量状态类型
 # EnvironmentVariables = dict # 环境变量字典类型
 # ParameterVariables = dict # 参数变量字典类型
 # primitive type EnvironmentVariables <: AbstractDict{Any,Any}     pass
-# ItemId = Int8
-# ItemFunctionName = Symbol
-# ItemTextName = String
-# # ItemList = Vector{ItemFunctionName}
+type_item_id = np.dtype(np.int8)
+type_item_function_name = np.dtype(np.str)
+type_item_text_name = np.dtype(np.str)
+# ItemList = Vector{ItemFunctionName}
 # # ItemList = Vector{S}
 # class ComponentHierarchyType     pass # 定义组件层级结构类型：模型Model、过程Process、阶段Stage；
 # class ComponentInstanceType     pass # 定义组件元素类型，有具体的定义；
@@ -48,7 +48,7 @@ type_list = list  # 一维向量状态类型
 
 # "定义个体复合类型。"
 # class Objects{NDIMS2}
-#     id::TypeIds{NDIMS2} # 编号
-#     abbr::TypeAbbrs{NDIMS2} # 缩写
-#     name::TypeNames{NDIMS2} # 全名
+#     id:TypeIds{NDIMS2} # 编号
+#     abbr:TypeAbbrs{NDIMS2} # 缩写
+#     name:TypeNames{NDIMS2} # 全名
 #     pass
