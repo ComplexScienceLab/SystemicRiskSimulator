@@ -23,14 +23,14 @@ Return:
 - A_data::AgentDataCollection: Agent群变量之数据；
 """
 def fun_process_skeleton_template(A:SystemicRiskAgent, para:dict, env:dict, process:ProcessComponent, A_data:AgentDataCollection):
-    @testprintln "过程$(env['indexProcess'])：$(env['processName'])"
+    @testprintln "过程$(env['index_process'])：$(env['process_name'])"
 
-    env['indexStage'] = 0 # 初始化阶段所在位置
-    env['isStep'] = True # 初始化步进状态
-    env['isRound'] = True # 初始化回合状态
-    env['isProcess'] = True # 初始化过程状态
-    env['isLoop'] = True # 初始化循环状态
-    while env['isLoop'] == True:
+    env['index_stage'] = 0 # 初始化阶段所在位置
+    env['is_step'] = True # 初始化步进状态
+    env['is_round'] = True # 初始化回合状态
+    env['is_rocess'] = True # 初始化过程状态
+    env['is_loop'] = True # 初始化循环状态
+    while env['is_loop'] == True:
 
         ## 回合数变动
         if (env['loadedIndexStage'] != 1)
@@ -52,37 +52,37 @@ def fun_process_skeleton_template(A:SystemicRiskAgent, para:dict, env:dict, proc
 
         ## 运行每一个阶段
         for (idx_stage, stage) in enumerate(process.content)
-            env['indexStage'] = idx_stage
-            env['stageName'] = Symbol(stage.functionName)
-            @testprintln "阶段$(env['indexStage'])：$(env['stageName'])"
+            env['index_stage'] = idx_stage
+            env['stage_name'] = Symbol(stage.functionName)
+            @testprintln "阶段$(env['index_stage'])：$(env['stage_name'])"
 
             ## 调度并运行状态
-            if env['stateOfSchedule'] == StateOfSchedule.loading
-                env['stateOfSchedule'] = scheduler_loading(env['indexOfSchedulePosition'], env['indexProcess'], env['indexStage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['stateOfSchedule']) # 调度读取
+            if env['state_of_schedule'] == StateOfSchedule.loading
+                env['state_of_schedule'] = scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule']) # 调度读取
                 pass
-            if env['stateOfSchedule'] == StateOfSchedule.stepping
+            if env['state_of_schedule'] == StateOfSchedule.stepping
                 #=【插入表达式】=#
-                env['step'], env['isStep'], env['stateOfSchedule'] = scheduler_stepping(env['step'], env['stepSize']) # 步进
+                env['step'], env['is_step'], env['state_of_schedule'] = scheduler_stepping(env['step'], env['step_size']) # 步进
                 pass
 
-            isStep() # 判断是否继续运行步进
-            if env['isStep'] == False: # 如果步进停止，则跳出该循环
+            is_step() # 判断是否继续运行步进
+            if env['is_step'] == False: # 如果步进停止，则跳出该循环
                 break
                 pass
             pass # for
 
 
-        env['isProcess'] = isProcess(A.BB, BB_isv_t1, BB_Shock_t_t1, env['isProcess'], env['stageName'], process) # 判断是否继续运行过程
+        env['is_rocess'] = is_rocess(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_rocess'], env['stage_name'], process) # 判断是否继续运行过程
 
-        if env['stateOfSchedule'] == StateOfSchedule.saving
-            env['savedIndexProcess'], env['savedIndexStage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['stateOfSchedule'] = scheduler_saving(env['indexOfSchedulePosition'], env['indexProcess'], env['indexStage'], env['isProcess']) # 调度存储
+        if env['state_of_schedule'] == StateOfSchedule.saving
+            env['saved_index_process'], env['saved_index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule'] = scheduler_saving(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['is_rocess']) # 调度存储
             pass
-        if (env['stateOfSchedule'] == StateOfSchedule.collecting && env['stateOfProcess'] == StateOfSchedule.running)
-            env['stateOfSchedule'] = scheduler_collecting(A, A_data)
+        if (env['state_of_schedule'] == StateOfSchedule.collecting && env['state_of_process'] == StateOfSchedule.running)
+            env['state_of_schedule'] = scheduler_collecting(A, A_data)
             pass
 
-        isRound() # 判断是否继续运行回合
-        isLoop() # 判断是否继续运行循环
+        is_round() # 判断是否继续运行回合
+        is_loop() # 判断是否继续运行循环
         pass # while
 
     return A, para, env, A_data
