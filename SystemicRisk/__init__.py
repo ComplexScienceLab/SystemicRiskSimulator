@@ -27,7 +27,7 @@ from scripts.include.includpe_exp_files import *
 from .core.define.define_type import *
 from .core.define.define_enum import *
 from .core.define.define_content import *
-from .core.define.define_component import *
+from .core.define.component import *
 from .core.define.define_environment_variables import *
 from .core.define.define_agents import *
 from .core.define.define_parameterVariables import *
@@ -43,7 +43,7 @@ from .core.controller.fun_tools import *
 from .core.controller.fun_io import *
 from .core.controller.fun_schedulers import *
 from .core.controller.fun_builder import *
-from .core.controller.fun_runner import *
+from .core.controller.model_runner import *
 from .core.controller.fun_collector import *
 from .core.controller.fun_agentModel import *
 from .core.controller.fun_makesim import *

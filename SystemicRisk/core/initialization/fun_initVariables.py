@@ -282,13 +282,13 @@ function initVariables_setManually()
 """
 初始化银行变量
 # Arguments
-`init_method::String`:  参数，初始化方式；
+`init_method:String`:  参数，初始化方式；
 - `only init`:  仅单纯初始化；
 - `randomly`:  生成随机数据以初始化；
 - `import data`:  导入数据以初始化
 - `manually`:  手动设置以初始化；
 """
-function init_B_and_BI( init_method::String)
+function init_B_and_BI( init_method:String)
     if init_method == "only init"
         BB, BI = init_B_variables_only()
     elif init_method == "randomly"

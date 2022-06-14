@@ -10,17 +10,17 @@
 通用过程框架：
 
 Argument: 
-- A::SystemicRiskAgent: Agent群变量；
-- para::dict: 参数变量；
-- env::dict: 环境变量；
-- process::ProcessComponent: 过程组件实例；
-- A_data::AgentDataCollection: Agent群变量之数据；
+- A:SystemicRiskAgent: Agent群变量；
+- para:dict: 参数变量；
+- env:dict: 环境变量；
+- process:ProcessComponent: 过程组件实例；
+- A_data:AgentDataCollection: Agent群变量之数据；
 
 Return:
-- A::SystemicRiskAgent: Agent群变量；
-- para::dict: 参数变量；
-- env::dict: 环境变量；
-- A_data::AgentDataCollection: Agent群变量之数据；
+- A:SystemicRiskAgent: Agent群变量；
+- para:dict: 参数变量；
+- env:dict: 环境变量；
+- A_data:AgentDataCollection: Agent群变量之数据；
 """
 def fun_process_skeleton(A:SystemicRiskAgent, para:dict, env:dict, process:ProcessComponent, A_data:AgentDataCollection):
     @testprintln "过程$(env['index_process'])：$(env['process_name'])"

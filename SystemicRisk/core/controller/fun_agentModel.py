@@ -33,7 +33,7 @@ def systemicRiskAgent_step(A:SystemicRiskAgent, para:dict, env:dict, model:Model
     pass
 
 # "函数：Agent模型步进" #BUG方案二
-# functions systemicRiskAgent_step(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::dict, env::dict)
+# functions systemicRiskAgent_step(systemicRiskAgent:SystemicRiskAgent, systemicRiskModel:ABM, para:dict, env:dict)
 #     env['is_step'] = True
 #     systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
 #     _, _ = run(systemicRiskModel, systemicRiskAgent_step!, env['max_num_of_tau'])

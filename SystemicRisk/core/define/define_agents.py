@@ -274,7 +274,7 @@ class BankInterbank:
     pass
 
 
-class SystemicRiskAgents:
+class SystemicRiskAgent:
     """
     综合SystemicRiskAgents类型
     """
