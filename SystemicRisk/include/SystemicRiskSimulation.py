@@ -12,7 +12,7 @@
 from SystemicRisk.core.define.define_type import *
 from SystemicRisk.core.define.define_enum import *
 from SystemicRisk.core.define.define_content import *
-from SystemicRisk.core.define.define_component import *
+from SystemicRisk.core.define.component import *
 from SystemicRisk.core.define.define_environment_variables import *
 from SystemicRisk.core.define.define_agents import *
 from SystemicRisk.core.define.define_parameterVariables import *
@@ -28,7 +28,7 @@ from SystemicRisk.core.controller.fun_tools import *
 from SystemicRisk.core.controller.fun_io import *
 from SystemicRisk.core.controller.fun_schedulers import *
 from SystemicRisk.core.controller.fun_builder import *
-from SystemicRisk.core.controller.fun_runner import *
+from SystemicRisk.core.controller.model_runner import *
 from SystemicRisk.core.controller.fun_collector import *
 from SystemicRisk.core.controller.fun_agentModel import *
 from SystemicRisk.core.controller.fun_makesim import *

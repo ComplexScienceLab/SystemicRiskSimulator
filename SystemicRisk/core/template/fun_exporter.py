@@ -14,7 +14,7 @@
 2. 插入模型核心内容modelContent至模型外围框架modelSkeleton内，组合成模型model；
 3. 写出模型model为文件model.jl；
 Argument: 
-- processContent::ProcessContent: 过程核心内容
+- processContent:ProcessContent: 过程核心内容
 """
 def exportProcess(processContent:ModelContent; filepath_processSkeleton:String="src/core/template/fun_process_skeleton_template.jl"):
 
@@ -69,7 +69,7 @@ def exportProcess(processContent:ModelContent; filepath_processSkeleton:String="
 2. 插入模型核心内容modelContent至模型外围框架modelSkeleton内，组合成模型model；
 3. 写出模型model为文件model.jl；
 Argument: 
-- modelContent::ModelContent: 模型核心内容
+- modelContent:ModelContent: 模型核心内容
 """
 def exportModel(modelContent:ModelContent; filepath_modelSkeleton:String="test/fun_model_skeleton_template.jl"):
 
