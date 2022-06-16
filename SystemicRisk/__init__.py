@@ -48,6 +48,10 @@ from .core.controller.fun_collector import *
 from .core.controller.fun_agentModel import *
 from .core.controller.fun_makesim import *
 
+## 集成管理功能文件
+from .core.manager.model_manager import *
+from .core.manager.agents_manager import *
+
 ## 集成模板功能文件
 # from .core.template.fun_exporter import *
 
