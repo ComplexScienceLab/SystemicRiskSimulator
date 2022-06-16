@@ -5,9 +5,9 @@
 ##########################################
 #状态/使用
 ##########################################
-from SystemicRisk import AgentDataCollection
-from SystemicRisk.core.define.define_agents import *
-from SystemicRisk.core.define.component import *
+from SystemicRisk import AgentDataCollection,SystemicRiskAgent,ModelManager
+from SystemicRisk.core.define.define_type import *
+
 
 
 class ModelRunner:
@@ -32,7 +32,7 @@ class ModelRunner:
     - env:dict: 环境变量；
     - A_data:AgentDataCollection: Agent群变量之数据；
     """
-    def run_model(A:SystemicRiskAgent, para:dict, env:dict, modelComponent:ModelComponent, A_data:AgentDataCollection):
+    def run_model(A:SystemicRiskAgent, para:dict, env:dict, modelComponent:ModelManager.model_component, A_data:AgentDataCollection):
         A, para, env, A_data = modelComponent.run(A, para, env, modelComponent, A_data)
         return A, para, env, A_data
         pass
@@ -55,7 +55,7 @@ class ModelRunner:
     - env:dict: 环境变量；
     - A_data:AgentDataCollection: Agent群变量之数据；
     """
-    def run_process(A:SystemicRiskAgent, para:dict, env:dict, processComponent:ProcessComponent, A_data:AgentDataCollection):
+    def run_process(A:SystemicRiskAgent, para:dict, env:dict, processComponent:ModelManager.process_component, A_data:AgentDataCollection):
         A, para, env, A_data = processComponent.run(A, para, env, processComponent, A_data)
         return A, para, env, A_data
         pass
@@ -78,7 +78,7 @@ class ModelRunner:
     - BB:BankCommercial: 商业银行群变量；
     - BI:BankInterbank: 银行间邻接矩阵变量；
     """
-    def run_stage(A:SystemicRiskAgent, b:type_state, ib:type_state, para:dict, env:dict, stageComponent:StageComponent):
+    def run_stage(A:SystemicRiskAgent, b:type_state, ib:type_state, para:dict, env:dict, stageComponent:ModelManager.stage_component):
         A = stageComponent.run(A, b, ib, para, env)
         return A
         pass
