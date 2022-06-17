@@ -97,7 +97,7 @@ if __name__ == "__main__":
         env['step'] = 0
         env['tau'] = 0
         env['saved_model_name'] = ""
-        env['model_name'] = model.functionName
+        env['model_name'] = model.function_name
         env['process_name'] = ""
         env['savedProcessName'] = ""
         env['stage_name'] = ""
@@ -133,6 +133,7 @@ if __name__ == "__main__":
     "\n相关实验参数：$(para)"
 
     ## 进行实验
+
     makesim(model, para, env)
 
 
