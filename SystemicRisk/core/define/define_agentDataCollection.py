@@ -1,17 +1,17 @@
 "结构体：定义待收集数据类型"
 
 ##########################################
-#状态/使用
+#状态/开发
 ##########################################
 
+from SystemicRisk import *
 
-
-class AgentDataCollection
+class AgentDataCollection:
     """
-    #TODO 结构体：定义待收集数据类型
+    #TODO 定义待收集数据类型
     """
-    BB:Vector
-    BI:Vector
+    BB:list
+    BI:list
     pass
 
 
