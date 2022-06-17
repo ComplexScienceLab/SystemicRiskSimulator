@@ -4,6 +4,9 @@
 #状态/使用
 ##########################################
 
+from SystemicRisk import SystemicRiskAgent
+
+
 "函数：银行间挤兑流动执行借贷流量阶段"
 def stage_interBank_illiquity_repay(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict,env:dict):
     ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
