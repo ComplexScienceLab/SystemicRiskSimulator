@@ -271,14 +271,14 @@ macro scheduler_stage(stage)
 def is_rocess(BB:BankCommercial, BB_isv_t1:TypeState{1}, BB_Shock_t_t1:TypeMoney{1}, is_rocess:Bool, stageFunctionName:Symbol, process:ProcessComponent):
     if stageFunctionName == process.content[    pass].functionName: # 如果当前阶段是所处过程之最后的阶段，则继续判断，否则过程未结束，后续继续运行。
         if (
-            process.functionName == :process_exBank_insolvent ||
+            process.function_name == :process_exBank_insolvent ||
             process.functionName == :process_exBank_illiquity ||
             process.functionName == :process_exBank_bankrupt
         )
             is_rocess = False
             @testprintln "结束过程：$(env['process_name'])。"
         elif (
-            process.functionName == :process_interBank_insolvent
+                process.function_name == :process_interBank_insolvent
         )
             if BB.isv == BB_isv_t1: # 判断是否继续运行过程: #BUG，可能存在逻辑问题
                 is_rocess = False
