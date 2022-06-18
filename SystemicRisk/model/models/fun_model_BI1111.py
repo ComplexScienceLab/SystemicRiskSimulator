@@ -12,15 +12,15 @@ def model_BI1111(BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
 
     env['index_process'] = 0 # 初始化过程所在位置
     env['state_of_schedule'] = StateOfSchedule.indexing
-    @testprintln "切换调度运作状态为$(env['state_of_schedule'])"
+    # @testprintln "切换调度运作状态为$(env['state_of_schedule'])"
 
     env['tau'] = 0 # 初始化回合
 
     if (!env['is_model'])
         if (env['tau'] > 0)
-            @testprintln "继续模型model：\n"
+            # @testprintln "继续模型model：\n"
         else:
-            @testprintln "开始模型model：\n"
+            # @testprintln "开始模型model：\n"
             pass
         pass
 
@@ -57,7 +57,7 @@ def model_BI1111(BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
 
     ## 判断是否结束
     if !env['is_step']
-        @testprintln "步进已结束，跳出model_BI1111。"
+        # @testprintln "步进已结束，跳出model_BI1111。"
         pass
 
     if env['state_of_schedule'] == StateOfSchedule.idle
@@ -66,7 +66,7 @@ def model_BI1111(BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
         pass
 
     if (!env['is_model'] || !env['is_experiment'])
-        @testprintln "model_BI1111结束。"
+        # @testprintln "model_BI1111结束。"
         pass
 
 

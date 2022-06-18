@@ -25,9 +25,9 @@ Return:
 def fun_model_skeleton_template(A:SystemicRiskAgent, para:dict, env:dict, model:ModelComponent, A_data:AgentDataCollection):
     if (env['is_model'])
         if (env['tau'] > 1)
-            @testprintln "\n继续模型：$(env['model_name'])"
+            # @testprintln "\n继续模型：$(env['model_name'])"
         else:
-            @testprintln "\n开始模型：$(env['model_name'])"
+            # @testprintln "\n开始模型：$(env['model_name'])"
             pass
         pass
 
@@ -42,7 +42,7 @@ def fun_model_skeleton_template(A:SystemicRiskAgent, para:dict, env:dict, model:
 
     ## 判断是否结束步进
     if !env['is_step']
-        @testprintln "步进已结束，跳出模型：$(env['model_name'])。"
+        # @testprintln "步进已结束，跳出模型：$(env['model_name'])。"
         pass
     # 判断是否结束模型
     if env['state_of_schedule'] == StateOfSchedule.idle
@@ -50,7 +50,7 @@ def fun_model_skeleton_template(A:SystemicRiskAgent, para:dict, env:dict, model:
         env['is_experiment'] = False
         pass
     if (!env['is_model'] || !env['is_experiment'])
-        @testprintln "结束模型：$(env['model_name'])。\n"
+        # @testprintln "结束模型：$(env['model_name'])。\n"
         pass
 
 
