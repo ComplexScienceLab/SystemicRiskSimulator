@@ -23,7 +23,7 @@ Return:
 - A_data:AgentDataCollection: Agent群变量之数据；
 """
 def fun_process_skeleton(A:SystemicRiskAgent, para:dict, env:dict, process:ProcessComponent, A_data:AgentDataCollection):
-    @testprintln "过程$(env['index_process'])：$(env['process_name'])"
+    # @testprintln "过程$(env['index_process'])：$(env['process_name'])"
 
     env['index_stage'] = 0 # 初始化阶段所在位置
     env['is_step'] = True # 初始化步进状态
@@ -34,10 +34,10 @@ def fun_process_skeleton(A:SystemicRiskAgent, para:dict, env:dict, process:Proce
 
         ## 回合数变动
         if (env['loadedIndexStage'] != 1)
-            @testprintln "\n继续回合：$(env['tau'])"
+            # @testprintln "\n继续回合：$(env['tau'])"
         else:
             env['tau'] += 1 # 回合累加一
-            @testprintln "\n开始回合：$(env['tau'])"
+            # @testprintln "\n开始回合：$(env['tau'])"
             pass
 
         ## 设置临时变量
@@ -51,7 +51,7 @@ def fun_process_skeleton(A:SystemicRiskAgent, para:dict, env:dict, process:Proce
         for (idx_stage, stage) in enumerate(process.content)
             env['index_stage'] = idx_stage
             env['stage_name'] = Symbol(stage.functionName)
-            @testprintln "阶段$(env['index_stage'])：$(env['stage_name'])"
+            # @testprintln "阶段$(env['index_stage'])：$(env['stage_name'])"
 
             ## 调度并运行状态
             if env['state_of_schedule'] == StateOfSchedule.loading

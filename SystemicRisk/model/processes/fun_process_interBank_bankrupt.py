@@ -8,7 +8,7 @@ def process_interBank_bankrupt(BB:BankCommercial, BI:BankInterbank, para:dict, e
 
     ## 过程：破产银行间挤兑流动传染冲击 #BUG
     # env['process_name'] = "破产银行间挤兑流动传染冲击过程"
-    @testprintln "开始过程：$(env['process_name'])："
+    # @testprintln "开始过程：$(env['process_name'])："
 
     env['index_stage'] = 0 # 初始化阶段所在位置
     env['is_loop'] = True # 初始化循环状态
@@ -17,7 +17,7 @@ def process_interBank_bankrupt(BB:BankCommercial, BI:BankInterbank, para:dict, e
     while env['is_loop'] == True:
 
         env['tau'] += 1 # 回合累加一
-        @testprintln "开始回合$(env['tau'])"
+        # @testprintln "开始回合$(env['tau'])"
 
         b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
         ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
@@ -27,17 +27,17 @@ def process_interBank_bankrupt(BB:BankCommercial, BI:BankInterbank, para:dict, e
 
         ## # 破产银行间挤兑流动传染冲击阶段
         # env['stage_name'] = "破产银行间挤兑流动传染冲击阶段"
-        # @testprintln "阶段：$(env['stage_name'])"
+        # # @testprintln "阶段：$(env['stage_name'])"
         #= @scheduler_stage  =#BB, BI = stage_interBank_bankrupt_contagion_shock(BB, BI, b, ib, para, env)
 
         ## # 破产银行间挤兑流动分配借贷流量阶段
         # env['stage_name'] = "银行间挤兑流动分配借贷流量阶段"
-        # @testprintln "阶段：$(env['stage_name'])"
+        # # @testprintln "阶段：$(env['stage_name'])"
         #= @scheduler_stage  =#BB, BI = stage_interBank_illiquity_allocate(BB, BI, b, ib, para, env)
 
         ## # 破产银行间挤兑流动执行借贷流量阶段
         # env['stage_name'] = "银行间挤兑流动执行借贷流量阶段"
-        # @testprintln "阶段：$(env['stage_name'])"
+        # # @testprintln "阶段：$(env['stage_name'])"
         #= @scheduler_stage  =#BB, BI = stage_interBank_illiquity_repay(BB, BI, b, ib, para, env)
 
         ## TODO存储数据
@@ -54,7 +54,7 @@ def process_interBank_bankrupt(BB:BankCommercial, BI:BankInterbank, para:dict, e
 
         pass # while
     
-    @testprintln "结束过程：$(env['process_name'])。"
+    # @testprintln "结束过程：$(env['process_name'])。"
 
     return BB, BI, para, env
     pass # if
