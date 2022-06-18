@@ -8,7 +8,7 @@
 def stage_interBank_illiquity_allocate(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict,env:dict):
     ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
     # env['stage_name'] = "银行间挤兑流动分配借贷流量阶段"
-    @testprintln "开始阶段$(env['stage_name'])："
+    # @testprintln "开始阶段$(env['stage_name'])："
 
     update_B_state(BB, BI; to = "needed collect A_P", from = "any")
     update_B_state(BB, BI; to = "enabled collect A_P", from = "any")
@@ -29,6 +29,6 @@ def stage_interBank_illiquity_allocate(A:SystemicRiskAgent, b:TypeState{1}, ib:T
         pass
     update_B_transfer(BB, BI, b, ib; byWay = "Bo_BI")
 
-    @testprintln "结束阶段$(env['stage_name'])。"
+    # @testprintln "结束阶段$(env['stage_name'])。"
     return BB, BI
     pass # functions

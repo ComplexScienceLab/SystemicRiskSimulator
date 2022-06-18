@@ -11,7 +11,7 @@ from SystemicRisk import SystemicRiskAgent
 def stage_interBank_illiquity_repay(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict,env:dict):
     ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
     # env['stage_name'] = "银行间挤兑流动执行借贷流量阶段"
-    @testprintln "开始阶段$(env['stage_name'])："
+    # @testprintln "开始阶段$(env['stage_name'])："
 
     A.BB.A_Q[b], A.BB.A_P[b], A.BB.Shock_P_run_s[b] = transfer_B_capital_reverse(A.BB.A_Q[b], A.BB.A_P[b], A.BB.Shock_P_run_s[b], A.BB.Li_P[b]) # 流动资产变动，因收回厂商贷款
     # @. A.BB.A_Q[b] *= (1 - para['kappa_A_P']) #HACK 暂时还不用！
@@ -40,6 +40,6 @@ def stage_interBank_illiquity_repay(A:SystemicRiskAgent, b:TypeState{1}, ib:Type
 
     update_B_transfer(BB, BI, b, ib; byWay = "clear transfer all") # 清零所有不必要的借贷流量变量；
 
-    @testprintln "结束阶段$(env['stage_name'])。"
+    # @testprintln "结束阶段$(env['stage_name'])。"
     return BB, BI
     pass # functions

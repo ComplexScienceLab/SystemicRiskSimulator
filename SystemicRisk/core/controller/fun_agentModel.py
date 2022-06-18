@@ -29,14 +29,14 @@ def systemicRiskAgent_step(A:SystemicRiskAgent, para:dict, env:dict, model:Model
     A, para, env, A_data = runModel(A, para, env, model, A_data) # 运行具体的模型，通过运行模型组件的方式
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = fun_model_skeleton(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = modelComponent.run(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
-    # _, _ = run(systemicRiskModel, systemicRiskAgent_step!, env['max_num_of_tau'])
+    # _, _ = run(systemicRiskModel, systemicRiskAgent_step, env['max_num_of_tau'])
     pass
 
 # "函数：Agent模型步进" #BUG方案二
 # functions systemicRiskAgent_step(systemicRiskAgent:SystemicRiskAgent, systemicRiskModel:ABM, para:dict, env:dict)
 #     env['is_step'] = True
 #     systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
-#     _, _ = run(systemicRiskModel, systemicRiskAgent_step!, env['max_num_of_tau'])
+#     _, _ = run(systemicRiskModel, systemicRiskAgent_step, env['max_num_of_tau'])
 #     pass
 
 

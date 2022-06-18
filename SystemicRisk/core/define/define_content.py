@@ -26,21 +26,22 @@ class StageContent(Content):
     """
     定义阶段组件内容结构体
     """
-    modelFunction: ModelRunner.run_stage()  # 函数
+    model_function: ModelRunner.run_stage()  # 函数
 
-    def __init__(self, id, function_name, text_name):
+    def __init__(self, id, function_name, text_name,model_function):
         Content.__init__(id, function_name, text_name)
+        self.model_function=model_function
         pass
 
     pass
 
 
-class ProcessContent:
+class ProcessContent(Content):
     """
     定义过程组件内容结构体
     """
     # listProcessContent:Vector{ProcessContent} # 过程内容列表 listContentProcess
-    listStageContent: list  # 阶段内容列表 listStageContent
+    listStage_content: list  # 阶段内容列表 listStageContent
 
     def __init__(self, id, function_name, text_name):
         Content.__init__(id, function_name, text_name)
@@ -49,11 +50,11 @@ class ProcessContent:
     pass
 
 
-class ModelContent:
+class ModelContent(Content):
     """
     定义模型组件内容结构体
     """
-    listProcessContent: list  # 过程内容列表 listContentProcess
+    listProcess_content: list  # 过程内容列表 listContentProcess
 
     def __init__(self, id, function_name, text_name):
         Content.__init__(id, function_name, text_name)
