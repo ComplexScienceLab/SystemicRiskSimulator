@@ -8,7 +8,7 @@
 def stage_interBank_insolvent_shock(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict, env:dict):
     ## # 资不抵债银行间违约损失冲击阶段
     # env['stage_name'] = "资不抵债银行间违约损失冲击阶段"
-    @testprintln "开始阶段$(env['stage_name'])："
+    # @testprintln "开始阶段$(env['stage_name'])："
 
     @. A.BB.A_BI_all[b] = max(A.BB.A_BI_all[b] - A.BB.Shock_def_t[b], 0.0) # 银行之银行间资产变动
     update_B_balanceSheet(BB, BI, b, ib; byWay="A_BI_all")
@@ -24,7 +24,7 @@ def stage_interBank_insolvent_shock(A:SystemicRiskAgent, b:TypeState{1}, ib:Type
 
     # update_B_Shock(BB, BI, b, ib; byWay = "clear Shock_B_A and Shock_B_Z") # 清零银行内资产负债冲击
 
-    @testprintln "结束阶段$(env['stage_name'])。"
+    # @testprintln "结束阶段$(env['stage_name'])。"
     return BB, BI
     pass # functions
 

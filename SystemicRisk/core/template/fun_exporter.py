@@ -29,7 +29,7 @@ def exportProcess(processContent:ModelContent; filepath_processSkeleton:String="
     println("替换前的过程：\n" * string_process * "\n")
 
     ## 依次替换文本内容
-    re010 = "fun_model_skeleton_template!" # 替换模型名称
+    re010 = "fun_model_skeleton_template" # 替换模型名称
     string_model = replace(string_process, re010 = > String(modelContent.function_name) * "!")
     # re020 = "#=【插入过程列表】=#"
     # target020 = """enumerate(para['model_name'] * ".listProcess")"""
@@ -84,7 +84,7 @@ def exportModel(modelContent:ModelContent; filepath_modelSkeleton:String="test/f
     println("替换前的模型：\n" * string_model * "\n")
 
     ## 依次替换文本内容
-    re010 = "fun_model_skeleton!" # 替换模型名称
+    re010 = "fun_model_skeleton" # 替换模型名称
     string_model = replace(string_model, re010 = > String(modelContent.function_name) * "!")
     # re020 = "#=【插入过程列表】=#"
     # target020 = """enumerate(para['model_name'] * ".listProcess")"""
