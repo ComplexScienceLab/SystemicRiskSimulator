@@ -29,9 +29,9 @@ class ExperimentManager:
         # maxnum = 0
         # while env['is_model'] == True && maxnum <= 20:
         #     maxnum += 1
-        #     step(systemicRiskModel, systemicRiskAgent_step!, env['step_size'])
-        #     # _, _ = run(systemicRiskModel, systemicRiskAgent_step!, 1)
-        #     _, _ = run(systemicRiskModel, systemicRiskAgent_step!, env['max_num_of_tau'])
+        #     step(systemicRiskModel, systemicRiskAgent_step, env['step_size'])
+        #     # _, _ = run(systemicRiskModel, systemicRiskAgent_step, 1)
+        #     _, _ = run(systemicRiskModel, systemicRiskAgent_step, env['max_num_of_tau'])
         #     # return BB, BI, A_data.BB, A_data.BI, env
         #     pass # while
 

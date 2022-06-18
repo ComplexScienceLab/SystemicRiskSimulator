@@ -8,7 +8,7 @@
 def process_interBank_insolvent(BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
     ## 过程：资不抵债银行间违约损失传染冲击
     # env['process_name'] = "资不抵债银行间违约损失传染冲击过程"
-    @testprintln "开始过程：$(env['process_name'])："
+    # @testprintln "开始过程：$(env['process_name'])："
 
     env['index_stage'] = 0 # 初始化阶段所在位置
     env['is_loop'] = True # 初始化循环状态
@@ -17,7 +17,7 @@ def process_interBank_insolvent(BB:BankCommercial, BI:BankInterbank, para:dict, 
     while env['is_loop'] == True:
 
         env['tau'] += 1 # 回合累加一
-        @testprintln "开始回合$(env['tau'])"
+        # @testprintln "开始回合$(env['tau'])"
 
         ## 设置临时变量
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)
@@ -28,12 +28,12 @@ def process_interBank_insolvent(BB:BankCommercial, BI:BankInterbank, para:dict, 
 
         ## # 资不抵债银行间违约损失冲击阶段
         # env['stage_name'] = "资不抵债银行间违约损失冲击阶段"
-        # @testprintln "阶段：$(env['stage_name'])"
+        # # @testprintln "阶段：$(env['stage_name'])"
         #= @scheduler_stage  =#BB, BI = stage_interBank_insolvent_shock(BB, BI, b, ib, para, env)
 
         ## # 资不抵债银行间违约损失传染阶段
         # env['stage_name'] = "资不抵债银行间违约损失传染阶段"
-        # @testprintln "阶段：$(env['stage_name'])"
+        # # @testprintln "阶段：$(env['stage_name'])"
         #= @scheduler_stage  =#BB, BI = stage_interBank_insolvent_contagion(BB, BI, b, ib, para, env)
 
 
@@ -54,7 +54,7 @@ def process_interBank_insolvent(BB:BankCommercial, BI:BankInterbank, para:dict, 
         
         pass # while
     
-    @testprintln "结束过程：$(env['process_name'])。"
+    # @testprintln "结束过程：$(env['process_name'])。"
 
     return BB, BI, para, env
 
