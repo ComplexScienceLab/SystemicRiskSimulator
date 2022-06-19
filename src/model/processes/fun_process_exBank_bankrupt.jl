@@ -8,13 +8,13 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
     if BB_t0.br != FALSE1 # 当最初存在已经判定倒闭的银行时执行以下过程 #FIXME 存在一些不协调的代码风格
 
         ## 过程：外生破产银行间挤兑流动传染冲击 #TODO增加参数，判断是否增加外生冲击。 #HACK这个过程可以暂时不使用。
-        # env[:processName] = "外生破产银行间挤兑流动传染冲击过程"
-        @testprintln "开始过程：$(env[:processName])："
+        # env[:process_name] = "外生破产银行间挤兑流动传染冲击过程"
+        @testprintln "开始过程：$(env[:process_name])："
 
-        env[:indexStage] = 0 # 初始化阶段所在位置
-        env[:isLoop] = true # 初始化循环状态
-        env[:isRound] = true # 初始化回合状态
-        env[:isProcess] = true # 初始化过程状态
+        env[:index_stage] = 0 # 初始化阶段所在位置
+        env[:is_loop] = true # 初始化循环状态
+        env[:is_round] = true # 初始化回合状态
+        env[:is_process] = true # 初始化过程状态
 
         env[:tau] += 1 # 回合累加一
         @testprintln "开始回合$(env[:tau])"
@@ -34,14 +34,14 @@ function process_exBank_bankrupt!(BB::BankCommercial, BI::BankInterbank, para::D
 
 
         if BB.Shock_t == BB_Shock_t_t1 # 判定是否结束过程 #FIXME
-            env[:isProcess] = false
+            env[:is_process] = false
         end
-        isRound!() # 判断是否结束回合
-        isLoop!() # 判断是否结束循环
-        isStep!() # 判断是否跳出本次过程
+        is_round!() # 判断是否结束回合
+        is_loop!() # 判断是否结束循环
+        is_step!() # 判断是否跳出本次过程
     
 
-        @testprintln "结束过程：$(env[:processName])。"
+        @testprintln "结束过程：$(env[:process_name])。"
 
         return BB, BI, para, env
     end # if

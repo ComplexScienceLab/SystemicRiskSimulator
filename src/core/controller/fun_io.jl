@@ -24,21 +24,21 @@ function setExperimentsFolders!(env::Dict; isDatetime::Bool=true)
     end
 
     ## 设定前缀字符串
-    if env[:foldernameTypeOfExperiments] == "default"
+    if env[:foldername_type_of_experiments] == "default"
         str_manuallyName = "default"
-    elseif env[:foldernameTypeOfExperiments] == "set manually"
-        str_manuallyName = env[:foldernamePrefixOfExperiments]
+    elseif env[:foldername_type_of_experiments] == "set manually"
+        str_manuallyName = env[:foldername_prefix_of_experiments]
     else
-        throw(DomainError(env[:foldernameTypeOfExperiments], "关键词取值错误！"))
+        throw(DomainError(env[:foldername_type_of_experiments], "关键词取值错误！"))
     end
 
-    env[:foldernameOfExperiments] = str_manuallyName * str_datetime
-    env[:folderpathOfExperiments] = joinpath(env[:rootDirOfExperiments], env[:foldernameOfExperiments])
+    env[:foldername_of_experiments] = str_manuallyName * str_datetime
+    env[:folderpath_of_experiments] = joinpath(env[:root_dir_of_experiments], env[:foldername_of_experiments])
 
-    mkpath(env[:folderpathOfExperiments]) # 创建文件夹
-    env[:folderpathOfExperimentsOutputData] = joinpath(env[:folderpathOfExperiments], env[:foldernameOfExperimentsOutputData])
-    # cd("$(env[:folderpathOfExperiments])")
-    mkpath(env[:folderpathOfExperimentsOutputData]) # 创建文件夹，以导出实验输出数据
+    mkpath(env[:folderpath_of_experiments]) # 创建文件夹
+    env[:folderpath_of_experiments_output_data] = joinpath(env[:folderpath_of_experiments], env[:foldername_of_experiments_output_data])
+    # cd("$(env[:folderpath_of_experiments])")
+    mkpath(env[:folderpath_of_experiments_output_data]) # 创建文件夹，以导出实验输出数据
 
     return env
 end # functioin

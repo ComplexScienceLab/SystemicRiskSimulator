@@ -7,8 +7,8 @@
 "函数：银行外部违约损失冲击阶段"
 function stage_exBank_insolvent_shock!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict)
     ## # 银行外部违约损失冲击阶段
-    # env[:stageName] = "银行外部违约损失冲击阶段"
-    @testprintln "开始阶段$(env[:stageName])："
+    # env[:stage_name] = "银行外部违约损失冲击阶段"
+    @testprintln "开始阶段$(env[:stage_name])："
 
     A.BB.Shock_P_def_t[para[:list_Shock_exBI_t]] = para[:Shock_exBI_def_t][para[:list_Shock_exBI_t]] # 生成厂商贷款违约损失冲击
     update_B_Shock!(BB, BI, b, ib; byWay="Shock_P_def_t") # 厂商贷款违约损失冲击传导至银行内资产冲击
@@ -27,9 +27,9 @@ function stage_exBank_insolvent_shock!(A::SystemicRiskAgent, b::TypeState{1}, ib
 
     # update_B_Shock!(BB, BI, b, ib; byWay = "clear Shock_B_A and Shock_B_Z") # 清零银行内资产负债冲击
 
-    A.BB.Shock_P_def_t[A.BB.isv] = zeros(env[:numBank])[A.BB.isv] # 清零银行间和银行外冲击变量
+    A.BB.Shock_P_def_t[A.BB.isv] = zeros(env[:num_bank])[A.BB.isv] # 清零银行间和银行外冲击变量
     update_B_Shock!(BB, BI, b, ib; byWay="Shock_P_def_t") # 更新违约损失冲击目标变量Shock_def_t
 
-    @testprintln "结束阶段$(env[:stageName])。"
+    @testprintln "结束阶段$(env[:stage_name])。"
     return BB, BI
 end # function

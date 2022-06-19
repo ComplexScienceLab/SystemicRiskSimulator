@@ -81,7 +81,7 @@ end
 
 
 
-para = load("test/data/kappa_A_P=0.0|kappa_BI=0.0|modelName=BI1111._1.jld2")
+para = load("test/data/kappa_A_P=0.0|kappa_BI=0.0|model_name=BI1111._1.jld2")
 BBjld2 = load("test/data/BB1.jld2")
 BBjld2["dataBB"]
 
@@ -90,7 +90,7 @@ dump(BI["dataBI"])
 
 BIjld2["dataBI"][1]
 BIjld2["dataBI"][1][:ilq]
-BIjld2["dataBI"][2][:dataId]
+BIjld2["dataBI"][2][:data_id]
 
 
 BBh5 = read("test/data/BB1.h5")
@@ -101,7 +101,7 @@ dump(BI["dataBI"])
 
 BIh5["dataBI"][1]
 BIh5["dataBI"][1][:ilq]
-BIh5["dataBI"][2][:dataId]
+BIh5["dataBI"][2][:data_id]
 
 BIh5 = load("BIarray1.h5")
 typeof(BIh5)
