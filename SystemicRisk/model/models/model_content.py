@@ -5,10 +5,13 @@
 ##########################################
 #状态/可扩展
 ##########################################
+from SystemicRisk.core import ModelContent
+from SystemicRisk.model import *
+
 
 modelContent_BI1111 = ModelContent(
     1, # 编号 id
-    :model_BI1111, # 函数名称 functionName
+    'model_BI1111', # 函数名称 functionName
     "模型BI1111", # 文本名称 textName
     [
         processContent_exBank_insolvent,
