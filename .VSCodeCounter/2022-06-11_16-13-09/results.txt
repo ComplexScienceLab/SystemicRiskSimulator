@@ -1,0 +1,166 @@
+Date : 2022-06-11 16:13:09
+Directory : /Users/ethan/LocalFiles/ResearchFile/SystemicRisk
+Total : 101 files,  4873 codes, 1493 comments, 1732 blanks, all 8098 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| Julia              |         79 |      3,728 |      1,335 |      1,387 |      6,450 |
+| JSON               |          2 |        637 |          0 |        106 |        743 |
+| R                  |          5 |        246 |         31 |         62 |        339 |
+| Python             |          7 |        175 |        127 |        165 |        467 |
+| XML                |          5 |         34 |          0 |          0 |         34 |
+| Markdown           |          1 |         27 |          0 |          7 |         34 |
+| JSON with Comments |          1 |         16 |          0 |          1 |         17 |
+| R DCF              |          1 |         10 |          0 |          4 |         14 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                   |        101 |      4,873 |      1,493 |      1,732 |      8,098 |
+| .idea                                                                                                               |          5 |         34 |          0 |          0 |         34 |
+| .idea/inspectionProfiles                                                                                            |          1 |          6 |          0 |          0 |          6 |
+| .virtual_documents                                                                                                  |          1 |        129 |          0 |        106 |        235 |
+| .virtual_documents/scripts                                                                                          |          1 |        129 |          0 |        106 |        235 |
+| .virtual_documents/scripts/IO                                                                                       |          1 |        129 |          0 |        106 |        235 |
+| pysrc                                                                                                               |          4 |         22 |         21 |         20 |         63 |
+| pysrc/core                                                                                                          |          2 |         22 |         21 |         18 |         61 |
+| pysrc/core/controller                                                                                               |          1 |         21 |         15 |         12 |         48 |
+| pysrc/core/initialization                                                                                           |          1 |          1 |          6 |          6 |         13 |
+| pysrc/include                                                                                                       |          2 |          0 |          0 |          2 |          2 |
+| scripts                                                                                                             |         14 |      1,073 |        195 |        312 |      1,580 |
+| scripts/IO                                                                                                          |          4 |        766 |        109 |        138 |      1,013 |
+| scripts/analyse                                                                                                     |          1 |          0 |          0 |          1 |          1 |
+| scripts/exp_raw                                                                                                     |          3 |        155 |         52 |         95 |        302 |
+| scripts/include                                                                                                     |          2 |          3 |          5 |         11 |         19 |
+| scripts/tools                                                                                                       |          1 |         53 |          3 |         11 |         67 |
+| scripts/variables                                                                                                   |          2 |         81 |         22 |         45 |        148 |
+| scripts/visualization                                                                                               |          1 |         15 |          4 |         11 |         30 |
+| src                                                                                                                 |         53 |      2,935 |        705 |        873 |      4,513 |
+| src/core                                                                                                            |         28 |      2,397 |        438 |        597 |      3,432 |
+| src/core/controller                                                                                                 |          8 |        564 |        185 |        170 |        919 |
+| src/core/define                                                                                                     |          8 |        254 |         61 |         76 |        391 |
+| src/core/functions                                                                                                  |          6 |      1,015 |        112 |        201 |      1,328 |
+| src/core/initialization                                                                                             |          1 |        278 |         25 |         37 |        340 |
+| src/core/model                                                                                                      |          2 |        103 |         17 |         45 |        165 |
+| src/core/template                                                                                                   |          3 |        183 |         38 |         68 |        289 |
+| src/include                                                                                                         |          2 |         62 |         30 |         33 |        125 |
+| src/model                                                                                                           |         23 |        476 |        237 |        243 |        956 |
+| src/model/model_sets                                                                                                |          3 |         27 |         12 |          3 |         42 |
+| src/model/models                                                                                                    |          2 |         41 |         30 |         37 |        108 |
+| src/model/processes                                                                                                 |          7 |        191 |        115 |        125 |        431 |
+| src/model/stages                                                                                                    |         11 |        217 |         80 |         78 |        375 |
+| test                                                                                                                |         20 |        615 |        572 |        403 |      1,590 |
+| test/2022-04-21                                                                                                     |          8 |        216 |         26 |         87 |        329 |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                            | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/.idea/SystemicRisk.iml                                            | XML                |         10 |          0 |          0 |         10 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/.idea/inspectionProfiles/profiles_settings.xml                    | XML                |          6 |          0 |          0 |          6 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/.idea/misc.xml                                                    | XML                |          4 |          0 |          0 |          4 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/.idea/modules.xml                                                 | XML                |          8 |          0 |          0 |          8 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/.idea/vcs.xml                                                     | XML                |          6 |          0 |          0 |          6 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/.virtual_documents/scripts/IO/export_exp_data_to_excel.ipynb      | JSON               |        129 |          0 |        106 |        235 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/README.md                                                         | Markdown           |         27 |          0 |          7 |         34 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/SystemicRisk.Rproj                                                | R DCF              |         10 |          0 |          4 |         14 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/SystemicRisk.code-workspace                                       | JSON with Comments |         16 |          0 |          1 |         17 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/intro.jl                                                          | Julia              |         12 |          0 |          6 |         18 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/pysrc/core/controller/fun_io.py                                   | Python             |         21 |         15 |         12 |         48 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/pysrc/core/initialization/set_paramaterVariable.py                | Python             |          1 |          6 |          6 |         13 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/pysrc/include/Models.py                                           | Python             |          0 |          0 |          1 |          1 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/pysrc/include/SystemicRiskSimulation.py                           | Python             |          0 |          0 |          1 |          1 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/IO/export_exp_data_to_excel.ipynb                         | JSON               |        508 |          0 |          0 |        508 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/IO/export_exp_data_to_excel.py                            | Python             |         80 |         85 |         99 |        264 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/IO/import_exp_data.R                                      | R                  |         31 |          8 |          9 |         48 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/IO/transform_original_data.R                              | R                  |        147 |         16 |         30 |        193 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/analyse/analyse_balance_sheet.R                           | R                  |          0 |          0 |          1 |          1 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/exp_raw/batch_export_models.jl                            | Julia              |         18 |         10 |         16 |         44 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/exp_raw/batch_main.jl                                     | Julia              |         64 |         21 |         34 |        119 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/exp_raw/batch_main.py                                     | Python             |         73 |         21 |         45 |        139 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/include/include_exp_files.jl                              | Julia              |          3 |          5 |         10 |         18 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/include/include_exp_files.py                              | Python             |          0 |          0 |          1 |          1 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/tools/useful_functions.R                                  | R                  |         53 |          3 |         11 |         67 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/variables/set_environmentVariables.jl                     | Julia              |         60 |          9 |         31 |        100 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/variables/set_parameterVariables.jl                       | Julia              |         21 |         13 |         14 |         48 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/scripts/visualization/visualize_data.R                            | R                  |         15 |          4 |         11 |         30 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/controller/fun_agentModel.jl                             | Julia              |         13 |         19 |         13 |         45 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/controller/fun_builder.jl                                | Julia              |         70 |         12 |         30 |        112 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/controller/fun_collector.jl                              | Julia              |        111 |         99 |         31 |        241 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/controller/fun_io.jl                                     | Julia              |         27 |          9 |         12 |         48 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/controller/fun_makesim.jl                                | Julia              |         13 |         17 |         10 |         40 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/controller/fun_runner.jl                                 | Julia              |         58 |          4 |         19 |         81 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/controller/fun_schedulers.jl                             | Julia              |        261 |         21 |         49 |        331 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/controller/fun_tools.jl                                  | Julia              |         11 |          4 |          6 |         21 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/define/define_agentDataCollection.jl                     | Julia              |          6 |          3 |          8 |         17 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/define/define_agents.jl                                  | Julia              |        120 |          8 |         17 |        145 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/define/define_component.jl                               | Julia              |         24 |          9 |         11 |         44 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/define/define_consts.jl                                  | Julia              |         17 |          4 |          4 |         25 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/define/define_content.jl                                 | Julia              |         22 |          1 |          9 |         32 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/define/define_environmentVariables.jl                    | Julia              |         41 |          7 |          8 |         56 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/define/define_parameterVariables.jl                      | Julia              |          9 |          6 |          7 |         22 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/define/define_type.jl                                    | Julia              |         15 |         23 |         12 |         50 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/functions/fun_balanceSheet.jl                            | Julia              |        125 |         56 |         41 |        222 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/functions/fun_loss.jl                                    | Julia              |          3 |          6 |         23 |         32 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/functions/fun_measure.jl                                 | Julia              |          1 |          8 |         14 |         23 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/functions/fun_shock.jl                                   | Julia              |        232 |         14 |         49 |        295 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/functions/fun_state.jl                                   | Julia              |        453 |         20 |         47 |        520 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/functions/fun_transfer.jl                                | Julia              |        201 |          8 |         27 |        236 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/initialization/fun_initVariables.jl                      | Julia              |        278 |         25 |         37 |        340 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/model/fun_model_skeleton.jl                              | Julia              |         42 |          9 |         17 |         68 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/model/fun_process_skeleton.jl                            | Julia              |         61 |          8 |         28 |         97 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/template/fun_exporter.jl                                 | Julia              |         79 |         20 |         23 |        122 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/template/fun_model_skeleton_template.jl                  | Julia              |         42 |          9 |         16 |         67 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/core/template/fun_process_skeleton_template.jl                | Julia              |         62 |          9 |         29 |        100 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/include/Models.jl                                             | Julia              |         24 |         12 |         13 |         49 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/include/SystemicRiskSimulation.jl                             | Julia              |         38 |         18 |         20 |         76 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/model_sets/models_sets.jl                               | Julia              |          5 |          4 |          1 |         10 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/model_sets/processes_sets.jl                            | Julia              |          9 |          4 |          1 |         14 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/model_sets/stages_sets.jl                               | Julia              |         13 |          4 |          1 |         18 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/models/fun_model_BI1111.jl                              | Julia              |         29 |         25 |         28 |         82 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/models/model_content.jl                                 | Julia              |         12 |          5 |          9 |         26 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/processes/fun_process_exBank_bankrupt.jl                | Julia              |         23 |         11 |         16 |         50 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/processes/fun_process_exBank_illiquity.jl               | Julia              |         22 |         13 |         15 |         50 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/processes/fun_process_exBank_insolvent.jl               | Julia              |         25 |         19 |         22 |         66 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/processes/fun_process_interBank_bankrupt.jl             | Julia              |         23 |         21 |         17 |         61 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/processes/fun_process_interBank_illiquity.jl            | Julia              |         26 |         13 |         22 |         61 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/processes/fun_process_interBank_insolvent.jl            | Julia              |         25 |         20 |         19 |         64 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/processes/process_content.jl                            | Julia              |         47 |         18 |         14 |         79 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_bankrupt_repay_shock.jl                | Julia              |          9 |          5 |          5 |         19 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_exBank_bankrupt_contagion.jl           | Julia              |          7 |          7 |          6 |         20 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_exBank_illiquity_shock.jl              | Julia              |          9 |          6 |          5 |         20 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_exBank_insolvent_shock.jl              | Julia              |         22 |          7 |          7 |         36 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_interBank_bankrupt_contagion_shock.jl  | Julia              |         15 |          6 |          5 |         26 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_interBank_illiquity_allocate.jl        | Julia              |         23 |          6 |          6 |         35 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_interBank_illiquity_contagion_shock.jl | Julia              |         16 |         16 |          6 |         38 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_interBank_illiquity_repay.jl           | Julia              |         26 |          8 |          9 |         43 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_interBank_insolvent_contagion.jl       | Julia              |         12 |          7 |          6 |         25 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/fun_stage_interBank_insolvent_shock.jl           | Julia              |         17 |          7 |          7 |         31 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/src/model/stages/stage_content.jl                                 | Julia              |         61 |          5 |         16 |         82 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/2022-04-21/content.jl                                        | Julia              |         45 |          1 |         15 |         61 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/2022-04-21/define.jl                                         | Julia              |         12 |          6 |          6 |         24 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/2022-04-21/define_component.jl                               | Julia              |         51 |          1 |         18 |         70 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/2022-04-21/fun_builder.jl                                    | Julia              |         55 |         11 |         25 |         91 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/2022-04-21/fun_runner.jl                                     | Julia              |         16 |          4 |         13 |         33 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/2022-04-21/fun_stage.jl                                      | Julia              |         12 |          0 |          4 |         16 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/2022-04-21/skeleton.jl                                       | Julia              |         15 |          2 |          2 |         19 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/2022-04-21/test2022-04-21.jl                                 | Julia              |         10 |          1 |          4 |         15 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/fun_model_skeleton_template.jl                               | Julia              |         30 |         12 |         21 |         63 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/fun_process_skeleton_template.jl                             | Julia              |         37 |         25 |         27 |         89 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/model_exporter.jl                                            | Julia              |         79 |         20 |         23 |        122 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/process_content.jl                                           | Julia              |          1 |          4 |          8 |         13 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/runtests.jl                                                  | Julia              |          2 |        333 |        104 |        439 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/runtests2.jl                                                 | Julia              |         30 |         24 |         23 |         77 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/stage_content.jl                                             | Julia              |         36 |         12 |         14 |         62 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/test2022-05-05.jl                                            | Julia              |         17 |         53 |         20 |         90 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/test2022-05-12.jl                                            | Julia              |         75 |         19 |         25 |        119 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/test20220415.jl                                              | Julia              |          5 |          6 |          5 |         16 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/test_2022-04-16.jl                                           | Julia              |         38 |         19 |         23 |         80 |
+| /Users/ethan/LocalFiles/ResearchFile/SystemicRisk/test/test_2022-04-17.jl                                           | Julia              |         49 |         19 |         23 |         91 |
+| Total                                                                                                               |                    |      4,873 |      1,493 |      1,732 |      8,098 |
++---------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
