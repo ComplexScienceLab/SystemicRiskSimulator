@@ -24,10 +24,10 @@ function modelSkeleton(modelContent::ModelContent)
 end
 
 ## 定义生成模型
-function buildModel(modelName::String, modelContent::ModelContent; modelSkeleton::Function=modelSkeleton)
-    modelType = Symbol(modelName)
+function buildModel(model_name::String, modelContent::ModelContent; modelSkeleton::Function=modelSkeleton)
+    modelType = Symbol(model_name)
     model = GeneralModel{modelType}(
-        modelName,
+        model_name,
         modelContent,
         modelSkeleton
     )

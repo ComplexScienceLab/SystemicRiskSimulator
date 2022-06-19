@@ -13,7 +13,7 @@ function init_systemicRiskAgent!(para::Dict, env::Dict)
     systemicRiskAgent, systemicRiskAgent_data = init_B_and_BI(; init_method=env[:init_method])
 
     ## 调度状态
-    env[:stateOfSchedule] = :loading
+    env[:state_of_schedule] = :loading
 
     # ## 构建Agent模型
     # systemicRiskAgent = SystemicRiskAgent(
@@ -27,18 +27,18 @@ end
 
 "函数：Agent模型步进" #BUG方案一
 function systemicRiskAgent_step!(A::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict, model::ModelComponent, A_data::AgentDataCollection)
-    env[:isStep] = true
+    env[:is_step] = true
     A, para, env, A_data = runModel!(A, para, env, model, A_data) # 运行具体的模型，通过运行模型组件的方式
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = fun_model_skeleton!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
     # systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = modelComponent.run!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # HACK冗余
-    # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
+    # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:max_num_of_tau])
 end
 
 # "函数：Agent模型步进" #BUG方案二
 # function systemicRiskAgent_step!(systemicRiskAgent::SystemicRiskAgent, systemicRiskModel::ABM, para::Dict, env::Dict)
-#     env[:isStep] = true
+#     env[:is_step] = true
 #     systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111!(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
-#     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:maxNumOfTau])
+#     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:max_num_of_tau])
 # end
 
 

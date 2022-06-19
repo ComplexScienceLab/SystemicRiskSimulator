@@ -130,25 +130,25 @@ end
 
 "清零本回合结束时所有不必要的冲击变量"
 function clear_Shock_BI_and_exBI!(bank::BankCommercial, interbank::BankInterbank, bankState::TypeState{1}, interbankState::TypeState{2})
-    bank.Shock_P_def_t = zeros(env[:numBank])
-    bank.Shock_D_run_t = zeros(env[:numBank])
-    bank.Shock_P_run_s = zeros(env[:numBank])
-    bank.Shock_D_def_s = zeros(env[:numBank])
-    bank.Shock_BI_def_s = zeros(env[:numBank])
-    bank.Shock_BI_run_ilq_s = zeros(env[:numBank])
-    bank.Shock_BI_run_br_s = zeros(env[:numBank])
-    interbank.Shock_BI_def = zeros(env[:numBank],env[:numBank])
-    interbank.Shock_BI_run_ilq = zeros(env[:numBank],env[:numBank])
-    interbank.Shock_BI_run_br = zeros(env[:numBank],env[:numBank])
-    bank.Shock_BI_def_t = zeros(env[:numBank])
-    bank.Shock_BI_run_ilq_t = zeros(env[:numBank])
-    bank.Shock_BI_run_br_t = zeros(env[:numBank])
+    bank.Shock_P_def_t = zeros(env[:num_bank])
+    bank.Shock_D_run_t = zeros(env[:num_bank])
+    bank.Shock_P_run_s = zeros(env[:num_bank])
+    bank.Shock_D_def_s = zeros(env[:num_bank])
+    bank.Shock_BI_def_s = zeros(env[:num_bank])
+    bank.Shock_BI_run_ilq_s = zeros(env[:num_bank])
+    bank.Shock_BI_run_br_s = zeros(env[:num_bank])
+    interbank.Shock_BI_def = zeros(env[:num_bank],env[:num_bank])
+    interbank.Shock_BI_run_ilq = zeros(env[:num_bank],env[:num_bank])
+    interbank.Shock_BI_run_br = zeros(env[:num_bank],env[:num_bank])
+    bank.Shock_BI_def_t = zeros(env[:num_bank])
+    bank.Shock_BI_run_ilq_t = zeros(env[:num_bank])
+    bank.Shock_BI_run_br_t = zeros(env[:num_bank])
 end
 
 "清零本回合中期所有不必要的冲击变量"
 function clear_Shock_inB!(bank::BankCommercial)
-    bank.Shock_B_A = zeros(env[:numBank])
-    bank.Shock_B_Z = zeros(env[:numBank])
+    bank.Shock_B_A = zeros(env[:num_bank])
+    bank.Shock_B_Z = zeros(env[:num_bank])
 end
 
 """

@@ -24,16 +24,16 @@ list_combinationOfPara = dict_list(setOfValuesOfParameterVariables)
 println("\n列出所有实验组：")
 for (idx_para, para) in enumerate(list_combinationOfPara)
     println("$(idx_para): $(para);")
-    modelContent = eval(Meta.parse("modelContent_" * para[:modelName]))
+    modelContent = eval(Meta.parse("modelContent_" * para[:model_name]))
 
 end
 
 
 ## 导出本次实验组所需的所有模型
 model = exportModel!(modelContent_BI1111)
-if length(setOfValuesOfParameterVariables[:modelName]) > 1
-    for modelName in setOfValuesOfParameterVariables[:modelName][2:end]
-        modelContent = eval(Meta.parse("modelContent_$(modelName)"))
+if length(setOfValuesOfParameterVariables[:model_name]) > 1
+    for model_name in setOfValuesOfParameterVariables[:model_name][2:end]
+        modelContent = eval(Meta.parse("modelContent_$(model_name)"))
         # if true # FIXME如果不存在模型文件，则构建模型
         model = exportModel!(modelContent)
         # end
