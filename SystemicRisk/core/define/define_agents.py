@@ -5,7 +5,7 @@
 ##########################################
 # 状态/使用
 ##########################################
-import numpy as np
+# import numpy as np
 
 from SystemicRisk.core.define.define_environment_variables import env
 from SystemicRisk.core.define.define_type import *
@@ -239,7 +239,7 @@ class BankInterbank:
     deb_br: typeList  # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
 
     def __init__(self):
-        self.id = np.arange(0 + 1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])),  # 编号
+        self.id = np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])),  # 编号
         self.abbr = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间资产邻接矩阵 A_BI
         self.name = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间负债邻接矩阵 Z_BI
         self.A_BI = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间贷款流出邻接矩阵 Lo_BI
