@@ -54,7 +54,7 @@ class ModelBuilder:
         list_stage = []
         for stageContent in process_content.listStageContent:
             stage = self.buildStage(stageContent)
-            append(list_stage, [stage])
+            list_stage.append([stage])
             pass
 
         ## 生成过程process
@@ -92,7 +92,7 @@ class ModelBuilder:
         list_process = []
         for processContent in modelContent.listProcessContent:
             process = self.buildProcess(processContent)
-            append(list_process, [process])
+            list_process.append([process])
             pass
 
         ## 生成模型model

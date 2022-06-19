@@ -14,19 +14,19 @@ from SystemicRisk.core import SystemicRiskAgent, AgentDataCollection, StateOfSch
 class ModelCollector:
 
     def collector(A: SystemicRiskAgent, A_data: AgentDataCollection = AgentDataCollection([], []), stateOfProcess=StateOfScheduleEnum.running, env: dict = env, para: dict = dict([])):
-        if stateOfProcess == StateOfScheduleEnum.running:
-            A_data = collectAgentData(A, A_data)
-            return A_data
-        elif stateOfProcess == StateOfScheduleEnum.initializing:
-            A_data = initAgentDataCollection(A)
-            return A_data
-
-        elif stateOfProcess == StateOfScheduleEnum.finishing:
-            exportAgentData(A_data, para)
-
-        else:
-            throw(DomainError(stateOfProcess, "关键词stateOfProcess取值错误！"))
-        pass  # if:
+        try:
+            if stateOfProcess == StateOfScheduleEnum.running:
+                A_data = collectAgentData(A, A_data)
+                return A_data
+            elif stateOfProcess == StateOfScheduleEnum.initializing:
+                A_data = initAgentDataCollection(A)
+                return A_data
+            elif stateOfProcess == StateOfScheduleEnum.finishing:
+                exportAgentData(A_data, para)
+            else:
+                pass  # if:
+        except KeyError:
+            print("关键词" + str(stateOfProcess) + "取值错误！")
 
     pass
 
