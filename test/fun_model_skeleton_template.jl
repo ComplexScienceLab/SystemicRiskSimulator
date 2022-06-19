@@ -16,13 +16,13 @@ Argument:
 """
 function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict) # 此处需要修改函数名称为实际待生成函数模型名称
 
-    env[:indexProcess] = 0 # 初始化过程所在位置
-    # env[:stateOfSchedule] = :stepping
-    # @testprintln "切换调度运作状态为$(env[:stateOfSchedule])"
+    env[:index_process] = 0 # 初始化过程所在位置
+    # env[:state_of_schedule] = :stepping
+    # @testprintln "切换调度运作状态为$(env[:state_of_schedule])"
 
     env[:tau] = 0 # 初始化回合
 
-    if (env[:isModel])
+    if (env[:is_model])
         if (env[:tau] > 0)
             @testprintln "继续模型model：\n"
         else
@@ -35,17 +35,17 @@ function fun_model_skeleton!(BB::BankCommercial, BI::BankInterbank, para::Dict, 
     #=【插入表达式】=#
 
     ## 判断是否结束
-    if !env[:isStep]
-        @testprintln "步进已结束，跳出$(env[:modelName])。"
+    if !env[:is_step]
+        @testprintln "步进已结束，跳出$(env[:model_name])。"
     end
 
-    if env[:stateOfSchedule] == :idle
-        env[:isModel] = false
-        env[:isExperiment] = false
+    if env[:state_of_schedule] == :idle
+        env[:is_model] = false
+        env[:is_experiment] = false
     end
 
-    if (!env[:isModel] || !env[:isExperiment])
-        @testprintln "$(env[:modelName])结束。"
+    if (!env[:is_model] || !env[:is_experiment])
+        @testprintln "$(env[:model_name])结束。"
     end
 
 

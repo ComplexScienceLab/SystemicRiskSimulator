@@ -32,19 +32,19 @@ function exportProcess!(processContent::ModelContent; filepath_processSkeleton::
     re010 = "fun_model_skeleton_template!" # 替换模型名称
     string_model = replace(string_process, re010 => String(modelContent.functionName) * "!")
     # re020 = "#=【插入过程列表】=#"
-    # target020 = """enumerate(para[:modelName] * ".listProcess")"""
+    # target020 = """enumerate(para[:model_name] * ".listProcess")"""
     # string_model = replace(string_model, re020 => target020)
     re030 = "#=【插入表达式】=#"
     target030 = ""
     for p in modelContent.listProcess
         target030 *= """
-        env[:processName] = "$(p.textName)"
+        env[:process_name] = "$(p.textName)"
         BB, BI, env = $(String(p.functionName))!(BB, BI, para, env)
         scheduler!(env)
-        if env[:stateOfSchedule] == :stepping
+        if env[:state_of_schedule] == :stepping
             eval(Meta.parse(expr))
         end
-        if env[:stateOfSchedule] == :collecting
+        if env[:state_of_schedule] == :collecting
             #TODO 收集数据
         end
 
@@ -87,19 +87,19 @@ function exportModel!(modelContent::ModelContent; filepath_modelSkeleton::String
     re010 = "fun_model_skeleton!" # 替换模型名称
     string_model = replace(string_model, re010 => String(modelContent.functionName) * "!")
     # re020 = "#=【插入过程列表】=#"
-    # target020 = """enumerate(para[:modelName] * ".listProcess")"""
+    # target020 = """enumerate(para[:model_name] * ".listProcess")"""
     # string_model = replace(string_model, re020 => target020)
     re030 = "#=【插入表达式】=#"
     target030 = ""
     for p in modelContent.listProcess
         target030 *= """
-        env[:processName] = "$(p.textName)"
+        env[:process_name] = "$(p.textName)"
         BB, BI, env = $(String(p.functionName))!(BB, BI, para, env)
         scheduler!(env)
-        if env[:stateOfSchedule] == :stepping
+        if env[:state_of_schedule] == :stepping
             eval(Meta.parse(expr))
         end
-        if env[:stateOfSchedule] == :collecting
+        if env[:state_of_schedule] == :collecting
             #TODO 收集数据
         end
 

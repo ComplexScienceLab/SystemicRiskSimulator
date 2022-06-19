@@ -287,8 +287,8 @@ function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Ve
     else
         throw(DomainError(byWay, "关键词取值错误！"))
     end
-    listOfRelationInStateOfBanks = [[] for i in 1: env[:numBank]]
-    for i in 1: env[:numBank]
+    listOfRelationInStateOfBanks = [[] for i in 1: env[:num_bank]]
+    for i in 1: env[:num_bank]
         listOfRelationInStateOfBanks[i] = findall(isExposure[i, : ]) # 获取对应状态下的债权或者债务关系的银行列表
     end
     return listOfRelationInStateOfBanks
