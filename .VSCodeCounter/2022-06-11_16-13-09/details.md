@@ -100,17 +100,17 @@ Total : 101 files,  4873 codes, 1493 comments, 1732 blanks, all 8098 lines
 | [test/2022-04-21/fun_stage.jl](/test/2022-04-21/fun_stage.jl) | Julia | 12 | 0 | 4 | 16 |
 | [test/2022-04-21/skeleton.jl](/test/2022-04-21/skeleton.jl) | Julia | 15 | 2 | 2 | 19 |
 | [test/2022-04-21/test2022-04-21.jl](/test/2022-04-21/test2022-04-21.jl) | Julia | 10 | 1 | 4 | 15 |
-| [test/fun_model_skeleton_template.jl](/test/fun_model_skeleton_template.jl) | Julia | 30 | 12 | 21 | 63 |
-| [test/fun_process_skeleton_template.jl](/test/fun_process_skeleton_template.jl) | Julia | 37 | 25 | 27 | 89 |
-| [test/model_exporter.jl](/test/model_exporter.jl) | Julia | 79 | 20 | 23 | 122 |
-| [test/process_content.jl](/test/process_content.jl) | Julia | 1 | 4 | 8 | 13 |
-| [test/runtests.jl](/test/runtests.jl) | Julia | 2 | 333 | 104 | 439 |
-| [test/runtests2.jl](/test/runtests2.jl) | Julia | 30 | 24 | 23 | 77 |
-| [test/stage_content.jl](/test/stage_content.jl) | Julia | 36 | 12 | 14 | 62 |
-| [test/test2022-05-05.jl](/test/test2022-05-05.jl) | Julia | 17 | 53 | 20 | 90 |
-| [test/test2022-05-12.jl](/test/test2022-05-12.jl) | Julia | 75 | 19 | 25 | 119 |
-| [test/test20220415.jl](/test/test20220415.jl) | Julia | 5 | 6 | 5 | 16 |
-| [test/test_2022-04-16.jl](/test/test_2022-04-16.jl) | Julia | 38 | 19 | 23 | 80 |
-| [test/test_2022-04-17.jl](/test/test_2022-04-17.jl) | Julia | 49 | 19 | 23 | 91 |
+| [test/fun_model_skeleton_template.jl](/draft/fun_model_skeleton_template.jl) | Julia | 30 | 12 | 21 | 63 |
+| [test/fun_process_skeleton_template.jl](/draft/fun_process_skeleton_template.jl) | Julia | 37 | 25 | 27 | 89 |
+| [test/model_exporter.jl](/draft/model_exporter.jl) | Julia | 79 | 20 | 23 | 122 |
+| [test/process_content.jl](/draft/process_content.jl) | Julia | 1 | 4 | 8 | 13 |
+| [test/runtests.jl](/draft/runtests.jl) | Julia | 2 | 333 | 104 | 439 |
+| [test/runtests2.jl](/draft/runtests2.jl) | Julia | 30 | 24 | 23 | 77 |
+| [test/stage_content.jl](/draft/stage_content.jl) | Julia | 36 | 12 | 14 | 62 |
+| [test/test2022-05-05.jl](/draft/test2022-05-05.jl) | Julia | 17 | 53 | 20 | 90 |
+| [test/test2022-05-12.jl](/draft/test2022-05-12.jl) | Julia | 75 | 19 | 25 | 119 |
+| [test/test20220415.jl](/draft/test20220415.jl) | Julia | 5 | 6 | 5 | 16 |
+| [test/test_2022-04-16.jl](/draft/test_2022-04-16.jl) | Julia | 38 | 19 | 23 | 80 |
+| [test/test_2022-04-17.jl](/draft/test_2022-04-17.jl) | Julia | 49 | 19 | 23 | 91 |
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

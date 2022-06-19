@@ -28,7 +28,7 @@
 
 ######### 设置环境变量 #########################################
 import os
-from SystemicRisk.core.define.define_enum import EStateOfSchedule
+from SystemicRisk.core.define.define_enum import StateOfScheduleEnum
 
 init_method = "set manually"  # 初始化数据方式；
 foldername_type_of_experiments = "set manually"  # 设置实验文件夹命名方式。默认"default"；
@@ -58,8 +58,8 @@ tau = 0  # 初始回合计次为0；
 id_experiment = 1  # 当前实验组编号；
 num_experiment = 0  # 实验组之实验个数；
 
-state_of_schedule = EStateOfSchedule.idle  # 调度运作状态。状态符有以下几种：`:idle`：闲置状态、`:indexing`：索引状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
-state_of_process = EStateOfSchedule.initializing  # 程序所处时期状态。状态符有以下几种：`:initializing`：初始化状态、`:running`：运行状态、`:finishing`：结束收尾状态、
+state_of_schedule = StateOfScheduleEnum.idle  # 调度运作状态。状态符有以下几种：`:idle`：闲置状态、`:indexing`：索引状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
+state_of_process = StateOfScheduleEnum.initializing  # 程序所处时期状态。状态符有以下几种：`:initializing`：初始化状态、`:running`：运行状态、`:finishing`：结束收尾状态、
 
 is_step = True  # 是否处于步进状态；
 is_loop = True  # 是否处于循环状态
