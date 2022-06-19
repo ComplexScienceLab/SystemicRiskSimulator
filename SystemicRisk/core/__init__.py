@@ -37,7 +37,7 @@ from .manager.agents_manager import *
 # from .core.template.fun_exporter import *
 
 ## 集成初始化函数文件
-from .initialization.fun_initVariables import *
+from SystemicRisk.core.controller.model_setter import *
 
 ## 集成功能函数文件
 from .functions.fun_balanceSheet import *
