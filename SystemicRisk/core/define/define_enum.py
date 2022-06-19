@@ -1,3 +1,15 @@
 from enum import Enum
 
-EStateOfSchedule = Enum('idle', 'indexing', 'stepping', 'saving', 'loading', 'collecting', 'running')
+
+# StateOfScheduleEnum = Enum('idle', 'indexing', 'stepping', 'saving', 'loading', 'collecting', 'running')
+
+
+class StateOfScheduleEnum(Enum):
+    idle = 'idle',
+    indexing = 'indexing',
+    stepping = 'stepping',
+    loading = 'loading',
+    collecting = 'collecting',
+    running = 'running'
+    finishing = 'finishing'
+    pass
