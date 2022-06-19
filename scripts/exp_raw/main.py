@@ -97,7 +97,7 @@ if __name__ == "__main__":
         env['step'] = 0
         env['tau'] = 0
         env['saved_model_name'] = ""
-        env['model_name'] = model.function_name
+        env['model_name'] = model.functionName
         env['process_name'] = ""
         env['savedProcessName'] = ""
         env['stage_name'] = ""
