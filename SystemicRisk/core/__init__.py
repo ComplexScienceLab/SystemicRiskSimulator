@@ -23,9 +23,9 @@ from .controller.fun_tools import *
 ## 集成调度功能文件
 from .controller.fun_io import *
 from .controller.fun_schedulers import *
-from .controller.fun_builder import *
+from .controller.model_builder import *
 from .controller.model_runner import *
-from .controller.fun_collector import *
+from .controller.model_collector import *
 from .controller.fun_agentModel import *
 from .controller.fun_makesim import *
 

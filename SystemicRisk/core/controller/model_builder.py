@@ -20,15 +20,15 @@ class ModelBuilder:
 
     def build_stage(stage_content: StageContent):
         ## 获得阶段类型
-        stageInstanceType = stage_content.function_name
+        stageInstanceType = stage_content.functionName
 
         ## 生成阶段stage
         stage = StageComponent
         {stageInstanceType}(
             stage_content.id,
-            stage_content.function_name,
-            stage_content.text_name,
-            stage_content.model_function,
+            stage_content.functionName,
+            stage_content.textName,
+            stage_content.modelFunction,
         )
 
         # @testprintln "已经生成阶段$(stageContent.functionName)"
@@ -49,7 +49,7 @@ class ModelBuilder:
 
     def buildProcess(process_content: ProcessContent, processSkeleton = fun_process_skeleton):
         ## 获得过程类型
-        processInstanceType = process_content.function_name
+        processInstanceType = process_content.functionName
 
         ## 生成子阶段组件列表
         list_stage = []
@@ -62,8 +62,8 @@ class ModelBuilder:
         process = ProcessComponent
         {processInstanceType}(
             process_content.id,
-            process_content.function_name,
-            process_content.text_name,
+            process_content.functionName,
+            process_content.textName,
             # processContent.conditionToContinueProcess,
             processSkeleton,
             list_stage,
@@ -88,7 +88,7 @@ class ModelBuilder:
     def buildModel(modelContent: ModelContent, modelSkeleton = fun_model_skeleton):
 
         ## 获得模型类型
-        modelInstanceType = modelContent.function_name
+        modelInstanceType = modelContent.functionName
 
         ## 生成子过程组件列表
         list_process = []
@@ -100,8 +100,8 @@ class ModelBuilder:
         ## 生成模型model
         model = ModelComponent(
             modelContent.id,
-            modelContent.function_name,
-            modelContent.text_name,
+            modelContent.functionName,
+            modelContent.textName,
             modelSkeleton,
             list_process,
         )

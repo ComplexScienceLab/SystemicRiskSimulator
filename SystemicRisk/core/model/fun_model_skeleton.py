@@ -35,7 +35,7 @@ def fun_model_skeleton(A:SystemicRiskAgent, para:dict, env:dict, model:ModelComp
     for (idx_process, process) in enumerate(model.content)
         env['index_process'] = idx_process
         if env['index_process'] == env['loadedIndexProcess']: # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。
-            env['process_name'] = Symbol(process.function_name)
+            env['process_name'] = Symbol(process.functionName)
             A, para, env, A_data = runProcess(A, para, env, process, A_data)
             pass
         pass # for
