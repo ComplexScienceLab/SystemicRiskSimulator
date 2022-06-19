@@ -70,7 +70,7 @@ Return:
 - BI::BankInterbank: 银行间邻接矩阵变量；
 """
 function runStage!(A::SystemicRiskAgent, b::TypeState{1}, ib::TypeState{2}, para::Dict, env::Dict, stageComponent::StageComponent)
-    A = stageComponent.run(A, b, ib, para, env)
+    A.BB, A.BI = stageComponent.run(A.BB, A.BI, b, ib, para, env)
     return A
 end
 
