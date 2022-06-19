@@ -8,9 +8,9 @@ class Component:
     """
     定义公共组件
     """
-    id: type_item_id  # 编号 id
-    function_name: type_item_function_name  # 函数名称 name
-    text_name: type_item_text_name  # 文本名称 name
+    id: typeItemId  # 编号 id
+    function_name: typeItemFunctionName  # 函数名称 name
+    text_name: typeItemTextName  # 文本名称 name
 
     def __init__(self, id, function_name, text_name):
         self.id = id

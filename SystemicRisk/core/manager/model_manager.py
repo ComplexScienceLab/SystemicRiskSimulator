@@ -16,8 +16,8 @@ class ModelManager:
     """
     模型管理器
     """
-    model_component: ModelComponent
-    process_component: ProcessComponent
-    stage_component: StageComponent
-    model_runner: ModelRunner
+    modelComponent: ModelComponent
+    processComponent: ProcessComponent
+    stageComponent: StageComponent
+    modelRunner: ModelRunner
     pass

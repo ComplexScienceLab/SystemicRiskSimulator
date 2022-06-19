@@ -9,12 +9,12 @@
 import numpy as np
 
 ## 定义类型别名
-type_ids = np.dtype(np.int16)  # 向量编号类型
-type_abbr = np.dtype(np.str)  # 向量缩写类型
-type_name = np.dtype(np.str)  # 向量名称类型
-type_money = np.dtype(np.float32)  # 向量资金类型
-type_state = np.dtype(np.bool)  # 一维向量状态类型
-type_list = list  # 一维向量状态类型
+typeIds = np.dtype(np.int16)  # 向量编号类型
+typeAbbr = np.dtype(np.str)  # 向量缩写类型
+typeName = np.dtype(np.str)  # 向量名称类型
+typeMoney = np.dtype(np.float32)  # 向量资金类型
+typeState = np.dtype(np.bool)  # 一维向量状态类型
+typeList = list  # 一维向量状态类型
 
 # HACK无用
 # 定义个体抽象类型
@@ -31,9 +31,9 @@ type_list = list  # 一维向量状态类型
 # EnvironmentVariables = dict # 环境变量字典类型
 # ParameterVariables = dict # 参数变量字典类型
 # primitive type EnvironmentVariables <: AbstractDict{Any,Any}     pass
-type_item_id = np.dtype(np.int8)
-type_item_function_name = np.dtype(np.str)
-type_item_text_name = np.dtype(np.str)
+typeItemId = np.dtype(np.int8)
+typeItemFunctionName = np.dtype(np.str)
+typeItemTextName = np.dtype(np.str)
 # ItemList = Vector{ItemFunctionName}
 # # ItemList = Vector{S}
 # class ComponentHierarchyType     pass # 定义组件层级结构类型：模型Model、过程Process、阶段Stage；
