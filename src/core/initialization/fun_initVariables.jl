@@ -10,7 +10,7 @@
 # export obj_BI,initObj
 
 
-"初始化模型变量ModelComponent"
+"初始化模型变量ModelComponent" #FIXME有错误，需要解决
 function initModel()
     model = ModelComponent(
         model_BI1111!, # 任意初始化为某个过程
