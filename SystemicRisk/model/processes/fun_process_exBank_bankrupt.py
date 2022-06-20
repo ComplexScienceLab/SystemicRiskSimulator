@@ -19,8 +19,8 @@ def process_exBank_bankrupt(self, BB:BankCommercial, BI:BankInterbank, para:dict
         env['tau'] += 1 # 回合累加一
         # @testprintln "开始回合$(env['tau'])"
 
-        b = TypeState{1}(BB.on | BB.off) # 临时设置BB示性变量
-        ib = TypeState{2}((BB.on | BB.off) & (BB.on | BB.off)') # 临时设置BI示性变量
+        b = TypeState(BB.on | BB.off) # 临时设置BB示性变量
+        ib = TypeState((BB.on | BB.off) & (BB.on | BB.off)') # 临时设置BI示性变量
 
         ## 设置临时变量
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)

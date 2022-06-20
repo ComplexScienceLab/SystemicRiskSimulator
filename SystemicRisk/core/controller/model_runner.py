@@ -67,8 +67,8 @@ class ModelRunner:
     Argument: 
     - BB:BankCommercial: 商业银行群变量；
     - BI:BankInterbank: 银行间邻接矩阵变量；
-    - b:TypeState{1}: 商业银行群示性向量；
-    - ib:TypeState{2}: 银行间邻接矩阵示性矩阵；
+    - b:TypeState: 商业银行群示性向量；
+    - ib:TypeState: 银行间邻接矩阵示性矩阵；
     - para:dict: 参数变量；
     - env:dict: 环境变量；
     - stageComponent:StageComponent: 阶段组件实例；

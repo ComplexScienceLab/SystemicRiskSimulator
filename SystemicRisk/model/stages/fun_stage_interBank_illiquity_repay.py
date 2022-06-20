@@ -8,7 +8,7 @@ from SystemicRisk import SystemicRiskAgent
 
 
 "函数：银行间挤兑流动执行借贷流量阶段"
-def stage_interBank_illiquity_repay(self, A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict,env:dict):
+def stage_interBank_illiquity_repay(self, A:SystemicRiskAgent, b:TypeState, ib:TypeState, para:dict,env:dict):
     ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
     # env['stage_name'] = "银行间挤兑流动执行借贷流量阶段"
     # @testprintln "开始阶段$(env['stage_name'])："
