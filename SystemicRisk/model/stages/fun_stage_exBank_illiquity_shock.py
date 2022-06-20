@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：银行外部挤兑流动冲击阶段"
-def stage_exBank_illiquity_shock(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict, env:dict) #= BB_t1:BankCommercial, BI_t1:BankInterbank,  =#:
+def stage_exBank_illiquity_shock(self, A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict, env:dict) #= BB_t1:BankCommercial, BI_t1:BankInterbank,  =#:
     ## # 银行外部挤兑流动冲击阶段
     # env['stage_name'] = "银行外部挤兑流动冲击阶段"
     # @testprintln "开始阶段$(env['stage_name'])："

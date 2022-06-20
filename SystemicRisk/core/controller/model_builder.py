@@ -18,7 +18,7 @@ class ModelBuilder:
     - stage:StageComponent: 阶段组件实例
     """
 
-    def build_stage(self, stage_content: StageContent):
+    def build_stage(self, self, stage_content: StageContent):
         ## 获得阶段类型
         stageInstanceType = stage_content.functionName
 
@@ -46,7 +46,7 @@ class ModelBuilder:
     - process:ProcessComponent: 过程组件实例
     """
 
-    def buildProcess(self, process_content: ProcessContent, processSkeleton=fun_process_skeleton):
+    def buildProcess(self, self, process_content: ProcessContent, processSkeleton=fun_process_skeleton):
         ## 获得过程类型
         processInstanceType = process_content.functionName
 
@@ -83,7 +83,7 @@ class ModelBuilder:
     - model:ModelComponent: 模型组件实例
     """
 
-    def buildModel(self, modelContent: ModelContent, modelSkeleton=fun_model_skeleton):
+    def buildModel(self, self, modelContent: ModelContent, modelSkeleton=fun_model_skeleton):
 
         ## 获得模型类型
         modelInstanceType = modelContent.functionName
