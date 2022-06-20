@@ -11,7 +11,7 @@ def stage_interBank_illiquity_contagion_shock(self, A:SystemicRiskAgent, b:TypeS
     # @testprintln "开始阶段$(env['stage_name'])："
 
     ##BUG 方式一：每个银行只有一次分配传染冲击之行为。
-    i_nas = (A.BB.ilq .& .!A.BB.isAllocatedShock) # 临时设置示性变量，表示银行其未分配传染冲击。暨每个银行只有一次分配传染冲击之行为。
+    i_nas = (A.BB.ilq .& ~A.BB.isAllocatedShock) # 临时设置示性变量，表示银行其未分配传染冲击。暨每个银行只有一次分配传染冲击之行为。
     @. A.BB.Shock_BI_run_ilq_s[i_nas] = abs((A.BB.Shock_run_t[i_nas] - A.BB.A_Q[i_nas]) / (A.BB.A_P[i_nas] + A.BB.A_BI_all[i_nas]) * A.BB.A_BI_all[i_nas]) # 计算应银行内冲击传导至银行间传染冲击
     update_B_Shock(BB, BI, b, ib; byWay = "Shock_BI_run_ilq_s") # 更新挤兑流动冲击源头变量Shock_run_t
     @. A.BB.Shock_P_run_s[i_nas] = abs((A.BB.Shock_run_t[i_nas] - A.BB.A_Q[i_nas]) / (A.BB.A_P[i_nas] + A.BB.A_BI_all[i_nas]) * A.BB.A_P[i_nas]) # 银行内冲击传导至银行厂商贷款传染冲击
