@@ -34,7 +34,7 @@ def process_exBank_illiquity(self, BB:BankCommercial, BI:BankInterbank, para:dic
     # A_data.BB[env['tau']] = deepcopy(BB) # 存储该回合传染结果数据
     # A_data.BI[env['tau']] = deepcopy(BI) # 存储该回合传染结果数据
 
-    if BB.Shock_t == BB_Shock_t_t1: # 判定是否结束过程: #FIXME
+    if BB.Shock_t == BB_Shock_t_t1: # 判定是否结束过程: #FIXME:
         env['is_rocess'] = False
         pass
     is_round() # 判断是否结束回合
