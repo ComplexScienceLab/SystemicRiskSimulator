@@ -7,7 +7,7 @@
 ##########################################
 
 
-
+"初始化银行之状态关系列表"
 function init_listOfRelationInStateOfBanks!(bank::BankCommercial, interbank::BankInterbank)
     interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
     interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
