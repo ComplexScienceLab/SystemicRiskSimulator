@@ -32,12 +32,12 @@ class BalanceSheet:
 
     # "更新各银行之银行总负债``Z_{B}``。"
     # functions update_B_Z_all(bank:BankCommercial, interbank:BankInterbank, byWay:String = "all")
-    #     if byWay == "all"
+    #     if byWay == "all":
     #         together_B_Z_exBI(bank,bankList)
     #         together_B_Z_BI(bank, interbank,bankList,interbankList)
-    #     elif byWay == "Z_exBI" || byWay == "Z_D"
+    #     elif byWay == "Z_exBI" || byWay == "Z_D":
     #         together_B_Z_exBI(bank,bankList)
-    #     elif byWay == "Z_BI"
+    #     elif byWay == "Z_BI":
     #         together_B_Z_BI(bank, interbank,bankList,interbankList)
     #     else:
     #         throw(DomainError(byWay, "关键词取值错误！"))
@@ -102,9 +102,9 @@ class BalanceSheet:
     - `A_BI`:  已知``A_{BI}``，更新其余银行间资产负债变量；
     """
     def update_BI_balanceSheet(self, interbank:BankInterbank; byWay:String):
-        if byWay == "Z_BI"
+        if byWay == "Z_BI":
             interbank.A_BI = interbank.Z_BI'
-        elif byWay == "A_BI"
+        elif byWay == "A_BI":
             interbank.Z_BI = interbank.A_BI'
         else:
             throw(DomainError(byWay, "关键词取值错误！"))
@@ -137,7 +137,7 @@ class BalanceSheet:
     - `alter to A_BI from Z_BI`:  已知``Z_{BI}[i,j]``，转换得到``A_{BI}[i,j]``；
     """
     def update_B_balanceSheet(self, bank:BankCommercial, interbank:BankInterbank, bankList:TypeState{1}, interbankList:TypeState{2}; byWay:String):
-        if byWay == "all"
+        if byWay == "all":
             together_B_A_exBI(bank, bankList)
             sum_B_A_BI(bank, interbank, bankList, interbankList)
             together_B_A_all(bank, bankList)
@@ -145,42 +145,42 @@ class BalanceSheet:
             sum_B_Z_BI(bank, interbank, bankList, interbankList)
             together_B_Z_all(bank, bankList)
             calc_B_E_all(bank, bankList)
-        elif byWay == "A_exBI" || byWay == "A_P" || byWay == "A_Q" || byWay == "A_R" || byWay == "A_other"
+        elif byWay == "A_exBI" || byWay == "A_P" || byWay == "A_Q" || byWay == "A_R" || byWay == "A_other":
             together_B_A_exBI(bank, bankList)
             together_B_A_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "A_BI_all"
+        elif byWay == "A_BI_all":
             together_B_A_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "Z_exBI" || byWay == "Z_D" || byWay == "Z_other"
+        elif byWay == "Z_exBI" || byWay == "Z_D" || byWay == "Z_other":
             together_B_Z_exBI(bank, bankList)
             together_B_Z_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "Z_BI_all"
+        elif byWay == "Z_BI_all":
             together_B_Z_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "E_all and Z_all"
+        elif byWay == "E_all and Z_all":
             calc_B_A_all(bank, bankList)
-        elif byWay == "E_all and A_all"
+        elif byWay == "E_all and A_all":
             calc_B_Z_all(bank, bankList)
-        elif byWay == "calc all E_all"
+        elif byWay == "calc all E_all":
             calc_B_E_all_at_all_bank(bank, bankList)
-        elif byWay == "sum A_BI"
+        elif byWay == "sum A_BI":
             sum_B_A_BI(bank, interbank, bankList, interbankList)
             together_B_A_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "sum Z_BI"
+        elif byWay == "sum Z_BI":
             sum_B_Z_BI(bank, interbank, bankList, interbankList)
             together_B_Z_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "alter to Z_BI from A_BI"
+        elif byWay == "alter to Z_BI from A_BI":
             # sum_B_A_BI(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # together_B_A_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             alter_A_BI(interbank)
             # sum_B_Z_BI(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # together_B_Z_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "alter to A_BI from Z_BI"
+        elif byWay == "alter to A_BI from Z_BI":
             # sum_B_Z_BI(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # together_B_Z_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             alter_Z_BI(interbank)
@@ -204,10 +204,10 @@ class BalanceSheet:
 
         # "更新各银行之银行总资产``A_{B}``。"
         # functions update_B_A_all(bank:BankCommercial, interbank:BankInterbank; byWay:String = "all")
-        #     if byWay == "all"
-        #     elif byWay == "A_exBI" || byWay == "A_P" || byWay == "A_Q" || byWay == "A_R"
+        #     if byWay == "all":
+        #     elif byWay == "A_exBI" || byWay == "A_P" || byWay == "A_Q" || byWay == "A_R":
         #         together_B_A_exBI(bank,bankList)
-        #     elif byWay == "A_BI"
+        #     elif byWay == "A_BI":
         #         together_B_A_BI(bank, interbank,bankList,interbankList)
         #     else:
         #         throw(DomainError(byWay, "关键词取值错误！"))
