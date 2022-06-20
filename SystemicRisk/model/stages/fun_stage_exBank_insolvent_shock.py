@@ -27,7 +27,7 @@ def stage_exBank_insolvent_shock(self, A:SystemicRiskAgent, b:TypeState{1}, ib:T
 
     # update_B_Shock(BB, BI, b, ib; byWay = "clear Shock_B_A and Shock_B_Z") # 清零银行内资产负债冲击
 
-    A.BB.Shock_P_def_t[A.BB.isv] = zeros(env['num_bank'])[A.BB.isv] # 清零银行间和银行外冲击变量
+    A.BB.Shock_P_def_t[A.BB.isv] = np.zeros(env['num_bank'])[A.BB.isv] # 清零银行间和银行外冲击变量
     update_B_Shock(BB, BI, b, ib; byWay="Shock_P_def_t") # 更新违约损失冲击目标变量Shock_def_t
 
     # @testprintln "结束阶段$(env['stage_name'])。"

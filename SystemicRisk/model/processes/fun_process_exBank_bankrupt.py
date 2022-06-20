@@ -5,7 +5,7 @@
 "函数：外生破产银行间挤兑流动传染冲击过程"#HACK暂时不用
 def process_exBank_bankrupt(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
 
-    if BB_t0.br != FALSE1: # 当最初存在已经判定倒闭的银行时执行以下过程: #FIXME 存在一些不协调的代码风格
+    if BB_t0.br != FALSE1: # 当最初存在已经判定倒闭的银行时执行以下过程: #FIXME 存在一些不协调的代码风格:
 
         ## 过程：外生破产银行间挤兑流动传染冲击 #TODO增加参数，判断是否增加外生冲击。 #HACK这个过程可以暂时不使用。
         # env['process_name'] = "外生破产银行间挤兑流动传染冲击过程"
@@ -33,7 +33,7 @@ def process_exBank_bankrupt(self, BB:BankCommercial, BI:BankInterbank, para:dict
         # A_data.BI[env['tau']] = deepcopy(BI) # 存储该回合传染结果数据
 
 
-        if BB.Shock_t == BB_Shock_t_t1: # 判定是否结束过程: #FIXME
+        if BB.Shock_t == BB_Shock_t_t1: # 判定是否结束过程: #FIXME:
             env['is_rocess'] = False
             pass
         is_round() # 判断是否结束回合
@@ -44,7 +44,7 @@ def process_exBank_bankrupt(self, BB:BankCommercial, BI:BankInterbank, para:dict
         # @testprintln "结束过程：$(env['process_name'])。"
 
         return BB, BI, para, env
-        pass # if
+        pass # if:
 
 
     pass # functions

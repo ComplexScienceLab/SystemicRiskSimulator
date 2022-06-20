@@ -19,16 +19,16 @@ import time
 def set_experiments_folders(self, env:dict=env, isDatetime:bool=True):
 
     ## 设定日期时间字符串
-    if isDatetime == True:
+    if isDatetime == True::
         str_datetime = "_" * time.strftime("%Y%m%d%H%M%S")
     else:
         str_datetime = ""
         pass
 
     ## 设定前缀字符串
-    if env['foldername_type_of_experiments'] == "default":
+    if env['foldername_type_of_experiments'] == "default"::
         str_manuallyName = "default"
-    elif env['foldername_type_of_experiments'] == "set manually":
+    elif env['foldername_type_of_experiments'] == "set manually"::
         str_manuallyName = env['foldername_prefix_of_experiments']
     else:
         throw(DomainError(env['foldername_type_of_experiments'], "关键词取值错误！"))

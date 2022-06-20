@@ -46,18 +46,18 @@ def exportProcess(self, processContent:ModelContent; filepath_processSkeleton:St
         env[:process_name] = "$(p.textName)"
         data, BI, env = $(String(p.functionName))!(data, BI, para, env)
         scheduler!(env)
-        if env[:state_of_schedule] == :stepping
+        if env[:state_of_schedule] == :stepping:
             eval(Meta.parse(expr))
         end
-        if env[:state_of_schedule] == :collecting
+        if env[:state_of_schedule] == :collecting:
 ========
         env['process_name'] = "$(p.textName)"
         BB, BI, env = $(String(p.functionName))!(BB, BI, para, env)
         scheduler(env)
-        if env['state_of_schedule'] == StateOfSchedule.stepping
+        if env['state_of_schedule'] == StateOfSchedule.stepping:
             eval(Meta.parse(expr))
             pass
-        if env['state_of_schedule'] == StateOfSchedule.collecting
+        if env['state_of_schedule'] == StateOfSchedule.collecting:
 >>>>>>>> python:SystemicRisk/core/template/fun_exporter.py
             #TODO 收集数据
             pass
@@ -115,18 +115,18 @@ def exportModel(self, modelContent:ModelContent; filepath_modelSkeleton:String="
         env[:process_name] = "$(p.textName)"
         data, BI, env = $(String(p.functionName))!(data, BI, para, env)
         scheduler!(env)
-        if env[:state_of_schedule] == :stepping
+        if env[:state_of_schedule] == :stepping:
             eval(Meta.parse(expr))
         end
-        if env[:state_of_schedule] == :collecting
+        if env[:state_of_schedule] == :collecting:
 ========
         env['process_name'] = "$(p.textName)"
         BB, BI, env = $(String(p.functionName))!(BB, BI, para, env)
         scheduler(env)
-        if env['state_of_schedule'] == StateOfSchedule.stepping
+        if env['state_of_schedule'] == StateOfSchedule.stepping:
             eval(Meta.parse(expr))
             pass
-        if env['state_of_schedule'] == StateOfSchedule.collecting
+        if env['state_of_schedule'] == StateOfSchedule.collecting:
 >>>>>>>> python:SystemicRisk/core/template/fun_exporter.py
             #TODO 收集数据
             pass

@@ -5,9 +5,7 @@
 ##########################################
 
 
-
-
-from SystemicRisk.core import BankCommercial,BankInterbank,TypeState
+from SystemicRisk.core import np,BankCommercial,BankInterbank,TypeState,env
 
 
 
@@ -137,25 +135,25 @@ class Shock:
 
     "清零本回合结束时所有不必要的冲击变量"
     def clear_Shock_BI_and_exBI(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState, interbankState:TypeState):
-        bank.Shock_P_def_t = zeros(env['num_bank'])
-        bank.Shock_D_run_t = zeros(env['num_bank'])
-        bank.Shock_P_run_s = zeros(env['num_bank'])
-        bank.Shock_D_def_s = zeros(env['num_bank'])
-        bank.Shock_BI_def_s = zeros(env['num_bank'])
-        bank.Shock_BI_run_ilq_s = zeros(env['num_bank'])
-        bank.Shock_BI_run_br_s = zeros(env['num_bank'])
-        interbank.Shock_BI_def = zeros(self, env['num_bank'],env['num_bank'])
-        interbank.Shock_BI_run_ilq = zeros(env['num_bank'],env['num_bank'])
-        interbank.Shock_BI_run_br = zeros(env['num_bank'],env['num_bank'])
-        bank.Shock_BI_def_t = zeros(env['num_bank'])
-        bank.Shock_BI_run_ilq_t = zeros(env['num_bank'])
-        bank.Shock_BI_run_br_t = zeros(env['num_bank'])
+        bank.Shock_P_def_t = np.zeros(env['num_bank'])
+        bank.Shock_D_run_t = np.zeros(env['num_bank'])
+        bank.Shock_P_run_s = np.zeros(env['num_bank'])
+        bank.Shock_D_def_s = np.zeros(env['num_bank'])
+        bank.Shock_BI_def_s = np.zeros(env['num_bank'])
+        bank.Shock_BI_run_ilq_s = np.zeros(env['num_bank'])
+        bank.Shock_BI_run_br_s = np.zeros(env['num_bank'])
+        interbank.Shock_BI_def = np.zeros(self, env['num_bank'],env['num_bank'])
+        interbank.Shock_BI_run_ilq = np.zeros(env['num_bank'],env['num_bank'])
+        interbank.Shock_BI_run_br = np.zeros(env['num_bank'],env['num_bank'])
+        bank.Shock_BI_def_t = np.zeros(env['num_bank'])
+        bank.Shock_BI_run_ilq_t = np.zeros(env['num_bank'])
+        bank.Shock_BI_run_br_t = np.zeros(env['num_bank'])
         pass
 
     "清零本回合中期所有不必要的冲击变量"
     def clear_Shock_inB(self, bank:BankCommercial):
-        bank.Shock_B_A = zeros(env['num_bank'])
-        bank.Shock_B_Z = zeros(env['num_bank'])
+        bank.Shock_B_A = np.zeros(env['num_bank'])
+        bank.Shock_B_Z = np.zeros(env['num_bank'])
         pass
 
     """
@@ -182,7 +180,7 @@ class Shock:
     - `Shock_BI_run_br_t`:  已知``Shock_{BI,run}[j,: }],:  \\in i_{br}``，更新其余冲击变量；
     """
     def update_B_Shock(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState, interbankState:TypeState; byWay:String = "all"):
-        if byWay == "all"
+        if byWay == "all":
             together_Shock_B(bank, bankState)
             together_Shock_BI_run_source(bank, bankState)
             together_Shock_BI_source(bank, bankState)
@@ -201,7 +199,7 @@ class Shock:
             together_Shock_target(bank, bankState)
             together_Shock_def_target(bank, bankState)
             together_Shock_run_target(bank, bankState)
-        elif byWay == "clear Shock_BI and Shock_exBI"
+        elif byWay == "clear Shock_BI and Shock_exBI":
             clear_Shock_BI_and_exBI(bank, interbank, bankState, interbankState)
             together_Shock_BI_run_source(bank, TypeState(bank.on | bank.off))
             together_Shock_BI_source(bank, TypeState(bank.on | bank.off))
@@ -220,43 +218,43 @@ class Shock:
             together_Shock_target(bank, TypeState(bank.on | bank.off))
             together_Shock_def_target(bank, TypeState(bank.on | bank.off))
             together_Shock_run_target(bank, TypeState(bank.on | bank.off))
-        elif byWay == "clear Shock_B_A and Shock_B_Z"
+        elif byWay == "clear Shock_B_A and Shock_B_Z":
             clear_Shock_inB(bank)
             together_Shock_B(bank, TypeState(bank.on | bank.off))
-        elif byWay == "Shock_P_def_t"
+        elif byWay == "Shock_P_def_t":
             together_Shock_exBI_target(bank, bankState)
             together_Shock_target(bank, bankState)
             together_Shock_def_target(bank, bankState)
-        elif byWay == "Shock_P_run_s"
+        elif byWay == "Shock_P_run_s":
             together_Shock_exBI_source(bank, bankState)
             together_Shock_source(bank, bankState)
             together_Shock_run_source(bank, bankState)
-        elif byWay == "Shock_D_run_t"
+        elif byWay == "Shock_D_run_t":
             together_Shock_exBI_target(bank, bankState)
             together_Shock_target(bank, bankState)
             together_Shock_run_target(bank, bankState)
-        elif byWay == "Shock_D_def_s"
+        elif byWay == "Shock_D_def_s":
             together_Shock_exBI_source(bank, bankState)
             together_Shock_source(bank, bankState)
             together_Shock_def_source(bank, bankState)
-        elif byWay == "Shock_B_A" || byWay == "Shock_B_Z"
+        elif byWay == "Shock_B_A" || byWay == "Shock_B_Z":
             together_Shock_B(bank, bankState)
-        elif byWay == "Shock_BI_def_s"
+        elif byWay == "Shock_BI_def_s":
             together_Shock_BI_source(bank, bankState)
             together_Shock_source(bank, bankState)
             together_Shock_def_source(bank, bankState)
-        elif byWay == "Shock_BI_run_ilq_s" || byWay == "Shock_BI_run_br_s"
+        elif byWay == "Shock_BI_run_ilq_s" || byWay == "Shock_BI_run_br_s":
             together_Shock_BI_run_source(bank, bankState)
             together_Shock_BI_source(bank, bankState)
             together_Shock_source(bank, bankState)
             together_Shock_run_source(bank, bankState)
-        elif byWay == "Shock_BI_def"
+        elif byWay == "Shock_BI_def":
             together_Shock_BI(interbank, interbankState)
             sum_Shock_BI_def_target(bank, interbank, bankState, interbankState)
             together_Shock_BI_target(bank, bankState)
             together_Shock_target(bank, bankState)
             together_Shock_def_target(bank, bankState)
-        elif byWay == "Shock_BI_run_ilq"
+        elif byWay == "Shock_BI_run_ilq":
             together_Shock_BI_run(interbank, interbankState)
             together_Shock_BI(interbank, interbankState)
             sum_Shock_BI_run_ilq_target(bank, interbank, bankState, interbankState)
@@ -264,7 +262,7 @@ class Shock:
             together_Shock_BI_target(bank, bankState)
             together_Shock_target(bank, bankState)
             together_Shock_run_target(bank, bankState)
-        elif byWay == "Shock_BI_run_br"
+        elif byWay == "Shock_BI_run_br":
             together_Shock_BI_run(interbank, interbankState)
             together_Shock_BI(interbank, interbankState)
             sum_Shock_BI_run_br_target(bank, interbank, bankState, interbankState)
@@ -272,11 +270,11 @@ class Shock:
             together_Shock_BI_target(bank, bankState)
             together_Shock_target(bank, bankState)
             together_Shock_run_target(bank, bankState)
-        elif byWay == "Shock_BI_def_t"
+        elif byWay == "Shock_BI_def_t":
             together_Shock_BI_target(bank, bankState)
             together_Shock_target(bank, bankState)
             together_Shock_def_target(bank, bankState)
-        elif byWay == "Shock_BI_run_ilq_t" || byWay == "Shock_BI_run_br_t"
+        elif byWay == "Shock_BI_run_ilq_t" || byWay == "Shock_BI_run_br_t":
             together_Shock_BI_run_target(bank, bankState)
             together_Shock_BI_target(bank, bankState)
             together_Shock_target(bank, bankState)

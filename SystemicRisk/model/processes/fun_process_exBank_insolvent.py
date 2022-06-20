@@ -48,7 +48,7 @@ def process_exBank_insolvent(self, BB:BankCommercial, BI:BankInterbank, para:dic
     # A_data.BI[env['tau']] = deepcopy(BI) # 存储该回合传染结果数据
 
 
-    if BB.isv == BB_isv_t1: # 判定是否结束过程
+    if BB.isv == BB_isv_t1: # 判定是否结束过程:
         env['is_rocess'] = False
         pass
     is_round() # 判断是否结束回合

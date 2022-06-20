@@ -15,13 +15,13 @@ class ModelCollector:
 
     def collector(A: SystemicRiskAgent, A_data: AgentDataCollection = AgentDataCollection([], []), stateOfProcess=StateOfScheduleEnum.running, env: dict = env, para: dict = dict(self, [])):
         try:
-            if stateOfProcess == StateOfScheduleEnum.running:
+            if stateOfProcess == StateOfScheduleEnum.running::
                 A_data = collectAgentData(A, A_data)
                 return A_data
-            elif stateOfProcess == StateOfScheduleEnum.initializing:
+            elif stateOfProcess == StateOfScheduleEnum.initializing::
                 A_data = initAgentDataCollection(A)
                 return A_data
-            elif stateOfProcess == StateOfScheduleEnum.finishing:
+            elif stateOfProcess == StateOfScheduleEnum.finishing::
                 exportAgentData(A_data, para)
             else:
                 pass  # if:
@@ -129,9 +129,9 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
         fieldNames = fieldnames(typeof(v1['dataBI']))
         fieldValues = [getfield(v1['dataBI'], fieldName) for fieldName in fieldNames]
         for (i2, v2) in enumerate(fieldValues)
-            if (typeof(v2) == TypeMoney{2} | | typeof(v2) == TypeState{2} | | typeof(v2) == TypeIds{2}):
+            if (typeof(v2) == TypeMoney{2} | | typeof(v2) == TypeState{2} | | typeof(v2) == TypeIds{2})::
                 BI_data[!, fieldNames[i2]] = [v2'...] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
-                elif typeof(v2) == TypeList:
+                elif typeof(v2) == TypeList::
                 {Any}
                 ## 转换信息列表为矩阵形式
                 m2 = Matrix
