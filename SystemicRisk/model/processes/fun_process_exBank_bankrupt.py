@@ -3,7 +3,7 @@
 ##########################################
 
 "函数：外生破产银行间挤兑流动传染冲击过程"#HACK暂时不用
-def process_exBank_bankrupt(BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
+def process_exBank_bankrupt(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
 
     if BB_t0.br != FALSE1: # 当最初存在已经判定倒闭的银行时执行以下过程: #FIXME 存在一些不协调的代码风格
 
@@ -19,8 +19,8 @@ def process_exBank_bankrupt(BB:BankCommercial, BI:BankInterbank, para:dict, env:
         env['tau'] += 1 # 回合累加一
         # @testprintln "开始回合$(env['tau'])"
 
-        b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
-        ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
+        b = TypeState{1}(BB.on | BB.off) # 临时设置BB示性变量
+        ib = TypeState{2}((BB.on | BB.off) & (BB.on | BB.off)') # 临时设置BI示性变量
 
         ## 设置临时变量
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)

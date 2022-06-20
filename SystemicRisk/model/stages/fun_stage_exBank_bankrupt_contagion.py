@@ -5,7 +5,7 @@
 ##########################################
 
 #TODO"函数：外生破产银行间挤兑流动冲击阶段"
-def stage_exBank_bankrupt_contagion(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict, env:dict):
+def stage_exBank_bankrupt_contagion(self, A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict, env:dict):
     ## # 外生破产银行间挤兑流动传染
     # env['stage_name'] = "外生破产银行间挤兑流动冲击阶段"
     # @testprintln "开始阶段$(env['stage_name'])："

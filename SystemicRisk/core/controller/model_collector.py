@@ -13,7 +13,7 @@ from SystemicRisk.core import SystemicRiskAgent, AgentDataCollection, StateOfSch
 
 class ModelCollector:
 
-    def collector(A: SystemicRiskAgent, A_data: AgentDataCollection = AgentDataCollection([], []), stateOfProcess=StateOfScheduleEnum.running, env: dict = env, para: dict = dict([])):
+    def collector(A: SystemicRiskAgent, A_data: AgentDataCollection = AgentDataCollection([], []), stateOfProcess=StateOfScheduleEnum.running, env: dict = env, para: dict = dict(self, [])):
         try:
             if stateOfProcess == StateOfScheduleEnum.running:
                 A_data = collectAgentData(A, A_data)
@@ -37,7 +37,7 @@ TODO函数：初始化实验数据容器
 """
 
 
-def initAgentDataCollection(A: SystemicRiskAgent, env: dict = env):
+def initAgentDataCollection(self, A: SystemicRiskAgent, env: dict = env):
     BB_data_item = [dict([
         (getkey(env, env['data_id'], :data_id), env['data_id']),
         (getkey(env, env['tau'], :tau), env['tau']),
@@ -68,7 +68,7 @@ TODO函数：收集数据并存储
 """
 
 
-def collectAgentData(A: SystemicRiskAgent, A_data: AgentDataCollection, env: dict = env):
+def collectAgentData(self, A: SystemicRiskAgent, A_data: AgentDataCollection, env: dict = env):
     BB_data_item = [dict([
         (getkey(env, env['data_id'], :data_id), env['data_id']),
         (getkey(env, env['tau'], :tau), env['tau']),
@@ -95,7 +95,7 @@ TODO函数：导出实验结果数据
 """
 
 
-def exportAgentData(A_data: AgentDataCollection, env: dict = env, para: dict = para):
+def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: dict = para):
     ## 整理banks之数据为一数据框
     BB_data_export = DataFrame()
     BB_data = DataFrame()
