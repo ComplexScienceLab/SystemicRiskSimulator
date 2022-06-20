@@ -9,12 +9,12 @@
 import numpy as np
 
 ## 定义类型别名
-typeIds = np.dtype(np.int16)  # 向量编号类型
-typeAbbr = np.dtype(np.str)  # 向量缩写类型
-typeName = np.dtype(np.str)  # 向量名称类型
-typeMoney = np.dtype(np.float32)  # 向量资金类型
-typeState = np.dtype(np.bool)  # 一维向量状态类型
-typeList = list  # 一维向量状态类型
+TypeIds = np.dtype(np.int16)  # 向量编号类型
+TypeAbbr = np.dtype(np.str)  # 向量缩写类型
+TypeName = np.dtype(np.str)  # 向量名称类型
+TypeMoney = np.dtype(np.float32)  # 向量资金类型
+TypeState = np.dtype(np.bool)  # 一维向量状态类型
+TypeList = list  # 一维向量状态类型
 
 # HACK无用
 # 定义个体抽象类型

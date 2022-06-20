@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于外部违约损失传染冲击"
-def process_exBank_insolvent(BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
+def process_exBank_insolvent(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
 
 
     ## 过程：银行外部违约损失传染冲击

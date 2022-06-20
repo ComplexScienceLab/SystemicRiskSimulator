@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于资不抵债银行间违约损失传染冲击"
-def process_interBank_insolvent(BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
+def process_interBank_insolvent(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
     ## 过程：资不抵债银行间违约损失传染冲击
     # env['process_name'] = "资不抵债银行间违约损失传染冲击过程"
     # @testprintln "开始过程：$(env['process_name'])："
@@ -23,8 +23,8 @@ def process_interBank_insolvent(BB:BankCommercial, BI:BankInterbank, para:dict, 
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)
         BB_isv_t1 = deepcopy(BB.isv)
 
-        b = TypeState{1}(BB.on .|| BB.off) # 临时设置BB示性变量
-        ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
+        b = TypeState{1}(BB.on | BB.off) # 临时设置BB示性变量
+        ib = TypeState{2}((BB.on | BB.off) & (BB.on | BB.off)') # 临时设置BI示性变量
 
         ## # 资不抵债银行间违约损失冲击阶段
         # env['stage_name'] = "资不抵债银行间违约损失冲击阶段"

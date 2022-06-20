@@ -22,7 +22,7 @@ Return:
 - env:dict: 环境变量；
 - A_data:AgentDataCollection: Agent群变量之数据；
 """
-def fun_process_skeleton(A:SystemicRiskAgent, para:dict, env:dict, process:ProcessComponent, A_data:AgentDataCollection):
+def fun_process_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, process:ProcessComponent, A_data:AgentDataCollection):
     # @testprintln "过程$(env['index_process'])：$(env['process_name'])"
 
     env['index_stage'] = 0 # 初始化阶段所在位置
@@ -44,8 +44,8 @@ def fun_process_skeleton(A:SystemicRiskAgent, para:dict, env:dict, process:Proce
         BB_Shock_t_t1 = deepcopy(A.BB.Shock_t)
         BB_isv_t1 = deepcopy(A.BB.isv)
 
-        b = TypeState{1}(A.BB.on .|| A.BB.off) # 临时设置BB示性变量
-        ib = TypeState{2}((A.BB.on .|| A.BB.off) .&& (A.BB.on .|| A.BB.off)') # 临时设置BI示性变量
+        b = TypeState{1}(A.BB.on | A.BB.off) # 临时设置BB示性变量
+        ib = TypeState{2}((A.BB.on | A.BB.off) & (A.BB.on | A.BB.off)') # 临时设置BI示性变量
 
         ## 运行每一个阶段
         for (idx_stage, stage) in enumerate(process.content)

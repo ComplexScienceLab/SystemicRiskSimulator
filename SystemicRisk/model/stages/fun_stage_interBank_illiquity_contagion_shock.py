@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：流动性短缺银行间挤兑流动传染冲击阶段"
-def stage_interBank_illiquity_contagion_shock(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict,env:dict):
+def stage_interBank_illiquity_contagion_shock(self, A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict,env:dict):
     ## # 流动性短缺银行间挤兑流动传染冲击
     # env['stage_name'] = "流动性短缺银行间挤兑流动传染冲击阶段"
     # @testprintln "开始阶段$(env['stage_name'])："

@@ -22,7 +22,7 @@ Return:
 - env:dict: 环境变量；
 - A_data:AgentDataCollection: Agent群变量之数据；
 """
-def fun_model_skeleton(A:SystemicRiskAgent, para:dict, env:dict, model:ModelComponent, A_data:AgentDataCollection):
+def fun_model_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, model:ModelComponent, A_data:AgentDataCollection):
     if (env['is_model'])
         if (env['tau'] > 1)
             # @testprintln "\n继续模型：$(env['model_name'])"
