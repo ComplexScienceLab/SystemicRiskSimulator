@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：资不抵债银行间违约损失传染阶段"
-def stage_interBank_insolvent_contagion(A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict, env:dict):
+def stage_interBank_insolvent_contagion(self, A:SystemicRiskAgent, b:TypeState{1}, ib:TypeState{2}, para:dict, env:dict):
     ## # 资不抵债银行间违约损失传染阶段
     # env['stage_name'] = "资不抵债银行间违约损失传染阶段"
     # @testprintln "开始阶段$(env['stage_name'])："

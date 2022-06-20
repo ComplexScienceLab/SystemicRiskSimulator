@@ -32,7 +32,7 @@ class ModelRunner:
     - A_data:AgentDataCollection: Agent群变量之数据；
     """
 
-    def run_model(A: SystemicRiskAgent, para: dict, env: dict, modelComponent: ModelManager.modelComponent, agentData: AgentDataCollection):
+    def run_model(self, A: SystemicRiskAgent, para: dict, env: dict, modelComponent: ModelManager.modelComponent, agentData: AgentDataCollection):
         A, para, env, agentData = modelComponent.run(A, para, env, modelComponent, agentData)
         return A, para, env, agentData
         pass
@@ -55,7 +55,7 @@ class ModelRunner:
     - A_data:AgentDataCollection: Agent群变量之数据；
     """
 
-    def run_process(A: SystemicRiskAgent, para: dict, env: dict, processComponent: ModelManager.processComponent, agentData: AgentDataCollection):
+    def run_process(self, A: SystemicRiskAgent, para: dict, env: dict, processComponent: ModelManager.processComponent, agentData: AgentDataCollection):
         A, para, env, agentData = processComponent.run(A, para, env, processComponent, agentData)
         return A, para, env, agentData
         pass
@@ -78,7 +78,7 @@ class ModelRunner:
     - BI:BankInterbank: 银行间邻接矩阵变量；
     """
 
-    def run_stage(A: SystemicRiskAgent, b: typeState, ib: typeState, para: dict, env: dict, stageComponent: ModelManager.stageComponent):
+    def run_stage(self, A: SystemicRiskAgent, b: TypeState, ib: TypeState, para: dict, env: dict, stageComponent: ModelManager.stageComponent):
         A = stageComponent.run(A, b, ib, para, env)
         return A
         pass

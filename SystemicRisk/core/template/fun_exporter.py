@@ -16,7 +16,7 @@
 Argument: 
 - processContent:ProcessContent: 过程核心内容
 """
-def exportProcess(processContent:ModelContent; filepath_processSkeleton:String="src/core/template/fun_process_skeleton_template.jl"):
+def exportProcess(self, processContent:ModelContent; filepath_processSkeleton:String="src/core/template/fun_process_skeleton_template.jl"):
 
     ## 读取过程外围框架部分
     file_processSkeleton = open(filepath_processSkeleton, "r")
@@ -85,7 +85,7 @@ def exportProcess(processContent:ModelContent; filepath_processSkeleton:String="
 Argument: 
 - modelContent:ModelContent: 模型核心内容
 """
-def exportModel(modelContent:ModelContent; filepath_modelSkeleton:String="test/fun_model_skeleton_template.jl"):
+def exportModel(self, modelContent:ModelContent; filepath_modelSkeleton:String="test/fun_model_skeleton_template.jl"):
 
     ## 读取模型外围框架部分
     file_modelSkeleton = open(filepath_modelSkeleton, "r")

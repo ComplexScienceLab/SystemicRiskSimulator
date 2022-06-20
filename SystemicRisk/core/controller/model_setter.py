@@ -9,6 +9,11 @@
 from SystemicRisk.core.define.define_agents import *
 from SystemicRisk.model.models.model_content import *
 
+
+def init_B_variables_only(self, ):
+    pass
+
+
 class ModelSetter:
     """
     设置模型及其变量
@@ -18,36 +23,34 @@ class ModelSetter:
     
     
     #TODO"随机化初始化银行变量"
-    def init_B_variables_randomly(self):
-    
+    def init_B_variables_randomly(self, self):
         pass
     
     
     #TODO"导入数据以初始化银行变量"
-    def init_B_variables_importData(self):
-
+    def init_B_variables_importData(self, self):
         pass
     
     "手动设置以初始化银行变量" #FIXME 须提取手动初始化方式为单独的方式
-    def initVariables_setManually(self):
+    def initVariables_setManually(self, self):
         ## 初始化商业银行群
         bank:BankCommercial = BankCommercial(
             np.arange(1, env['num_bank'], step=1), # 编号 id
-            ["1", "2", "3", "4", "5"], # 缩写 abbr
-            ["BK1", "BK2", "BK3", "BK4", "BK5"], # 全名 name
+            np.array("1", "2", "3", "4", "5"), # 缩写 abbr
+            np.array(["BK1", "BK2", "BK3", "BK4", "BK5"]), # 全名 name
             np.zeros(env['num_bank']), # 总资产 A_all: $A_all=A_BI+A_exBI$
-            [2185.24, 398.37, 730.99, 1357.75, 2717.39], # 银行间资产加总 A_BI_all
+            np.array([2185.24, 398.37, 730.99, 1357.75, 2717.39]), # 银行间资产加总 A_BI_all
             np.zeros(env['num_bank']), # 非银行间资产 A_exBI: $A_exBI=A_P+A_Q+A_R+A_other$
-            [1631.73, 4303.24, 3379.72, 4351.47, 620.69], # 银行贷款给生产部门之资产（非流动性资产） A_P
-            [477.125, 587.693, 513.847, 713.662, 417.257], # 银行持有超额准备金（流动性资产） A_Q
+            np.array([1631.73, 4303.24, 3379.72, 4351.47, 620.69]), # 银行贷款给生产部门之资产（非流动性资产） A_P
+            np.array([477.125, 587.693, 513.847, 713.662, 417.257]), # 银行持有超额准备金（流动性资产） A_Q
             np.zeros(env['num_bank']), # 银行持有法定准备金（非流动性资产） A_R
             np.zeros(env['num_bank']), # 银行持有的其它资产（非流动性资产） A_other
             np.zeros(env['num_bank']), # 总负债 Z_all: $Z_total=Z_BI+Z_exBI$
-            [959.6, 1844.24, 1253.34, 2851.85, 480.71], # 银行间负债加总 Z_BI_all
+            np.array([959.6, 1844.24, 1253.34, 2851.85, 480.71]), # 银行间负债加总 Z_BI_all
             np.zeros(env['num_bank']), # 非银行间负债 Z_exBI: $Z_exBI=Z_D+Z_other$
-            [3160.99, 3231.37, 3184.36, 3311.51, 3122.9], # 银行获得居民部门存款（非流动性负债） Z_D
+            np.array([3160.99, 3231.37, 3184.36, 3311.51, 3122.9]), # 银行获得居民部门存款（非流动性负债） Z_D
             np.zeros(env['num_bank']), # 银行持有的其他负债（非流动性负债） Z_other
-            [216.83, 267.13, 233.56, 324.39, 189.66], # 所有者权益 E_all
+            np.array([216.83, 267.13, 233.56, 324.39, 189.66]), # 所有者权益 E_all
             np.zeros(env['num_bank']), # 总交易流量 Transfer_all: $Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
             np.zeros(env['num_bank']), # 总贷款流出 Lo_all: $Lo_all=Lo_BI_all+Lo_exBI$
             np.zeros(env['num_bank']), # 银行间贷款流出 Lo_BI_all
@@ -115,8 +118,8 @@ class ModelSetter:
         ## 初始化银行间邻接矩阵
         interbank = BankInterbank(
             np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])), # 编号
-            [[0 1728.55 0 134.46 322.23]; 109.35 0 289.02 0 0; 730.99 0 0 0 0; 119.26 115.69 964.32 0 158.48; 0 0 0 2717.39 0], # 银行间资产邻接矩阵 A_BI
-            [0 1728.55 0 134.46 322.23; 109.35 0 289.02 0 0; 730.99 0 0 0 0; 119.26 115.69 964.32 0 158.48; 0 0 0 2717.39 0]', # 银行间负债邻接矩阵 Z_BI
+            np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48], [0, 0, 0, 2717.39, 0]]), # 银行间资产邻接矩阵 A_BI
+            np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48],[0, 0, 0, 2717.39, 0]]).T, # 银行间负债邻接矩阵 Z_BI
             np.np.zeros((env['num_bank'], env['num_bank'])), # 银行间贷款流出邻接矩阵 Lo_BI
             np.np.zeros((env['num_bank'], env['num_bank'])), # 银行间贷款流入邻接矩阵 Li_BI
             np.np.zeros((env['num_bank'], env['num_bank'])), # 银行间借款流入邻接矩阵 Bo_BI
@@ -136,14 +139,14 @@ class ModelSetter:
             np.full((env['num_bank'], env['num_bank']),False), # 信息邻接矩阵之于银行间资不抵债的 isInsolvent
             np.full((env['num_bank'], env['num_bank']),False), # 信息邻接矩阵之于银行间流动性短缺的 isIlliquity
             np.full((env['num_bank'], env['num_bank']),False), # 信息邻接矩阵之于银行间破产的 isBankrupt
-            [], # 信息列表之于各银行之债权方银行编号 listOfCreditors
-            [], # 信息列表之于各银行之债务方银行编号 listOfDebtors
-            [], # 信息列表之于资不抵债的银行之债权方银行编号 listOfCreditorsInInsolvent
-            [], # 信息列表之于资不抵债的银行之债务方银行编号 listOfDebtorsInInsolvent
-            [], # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquity
-            [], # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquity
-            [], # 信息列表之于破产的银行之债权方银行编号 listOfCreditorsInBankrupt
-            [] # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
+            np.array([]), # 信息列表之于各银行之债权方银行编号 listOfCreditors
+            np.array([]), # 信息列表之于各银行之债务方银行编号 listOfDebtors
+            np.array([]), # 信息列表之于资不抵债的银行之债权方银行编号 listOfCreditorsInInsolvent
+            np.array([]), # 信息列表之于资不抵债的银行之债务方银行编号 listOfDebtorsInInsolvent
+            np.array([]), # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquity
+            np.array([]), # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquity
+            np.array([]), # 信息列表之于破产的银行之债权方银行编号 listOfCreditorsInBankrupt
+            np.array([]) # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
         )
     
         return bank, interbank
@@ -160,20 +163,30 @@ class ModelSetter:
     - `import data`:  导入数据以初始化
     - `manually`:  手动设置以初始化；
     """
-    def init_B_and_BI(self init_method:String):
-        if init_method == "only init"
+    def init_B_and_BI(self, self,init_method:str):
+        """
+
+        :param init_method:
+            - `only init`:  仅单纯初始化；
+            - `randomly`:  生成随机数据以初始化；
+            - `import data`:  导入数据以初始化
+            - `manually`:  手动设置以初始化；
+        :return:
+        """
+        # if init_method == "only init":
+        #     BB, BI = init_B_variables_only()
+        if init_method == "randomly":
+            BB, BI = self.init_B_variables_randomly()
+        elif init_method == "import data":
             BB, BI = init_B_variables_only()
-        elif init_method == "randomly"
-            BB, BI = init_B_variables_randomly()
-        elif init_method == "import data"
-            BB, BI = init_B_variables_only()
-            BB, BI, A_data.BB, A_data.BI = init_B_variables_importData() # 导入数据以初始化银行变量
-        elif init_method == "set manually"
-            BB, BI = initVariables_setManually() # 手动设置以初始化银行变量
+            BB, BI, A_data.BB, A_data.BI = self.init_B_variables_importData() # 导入数据以初始化银行变量
+        elif init_method == "set manually":
+            BB, BI = self.initVariables_setManually() # 手动设置以初始化银行变量
         else:
-            throw(DomainError(init_method, "关键词取值错误！"))
             pass
-    
+
+        return BB,BI
+
         ## 构建Agent模型
         A = SystemicRiskAgent(
             1, # 编号（必备的）
@@ -189,8 +202,8 @@ class ModelSetter:
         # A_data.BI = StructArray([BI for i = 1:env['max_num_of_tau']]) # 初始化带回合变量的银行间市场实例数组
     
         ## 更新各银行之变量，在第一回合初始时
-        b = TypeState(BB.on .|| BB.off) # 临时设置BB示性变量
-        ib = TypeState((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
+        b = (BB.on | BB.off) # 临时设置BB示性变量
+        ib = ((BB.on | BB.off) & (BB.on | BB.off)).T # 临时设置BI示性变量
         update_B_Shock(BB, BI, b, ib; byWay="all") # 更新各银行之所有冲击变量，在第一回合开始时
         update_B_balanceSheet(BB, BI, b, ib; byWay="all") # 更新各银行之资产负债表变量
         update_B_state(BB, BI; to="any", from="any") # 更新各银行之状态示性变量
@@ -199,10 +212,7 @@ class ModelSetter:
         # A_data.BB_0 = deepcopy(BB)
         # A_data.BI_0 = deepcopy(BI)
         # A_data_0 = deepcopy(A)
-    
-    
-    
-    
+
         return A, A_data
         pass
     
