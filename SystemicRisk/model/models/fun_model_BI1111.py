@@ -16,8 +16,8 @@ def model_BI1111(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict)
 
     env['tau'] = 0 # 初始化回合
 
-    if (!env['is_model'])
-        if (env['tau'] > 0)
+    if (!env['is_model']):
+        if (env['tau'] > 0):
             # @testprintln "继续模型model：\n"
         else:
             # @testprintln "开始模型model：\n"
@@ -56,16 +56,16 @@ def model_BI1111(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict)
     #TODO 最终破产清算
 
     ## 判断是否结束
-    if !env['is_step']
+    if !env['is_step']:
         # @testprintln "步进已结束，跳出model_BI1111。"
         pass
 
-    if env['state_of_schedule'] == StateOfSchedule.idle
+    if env['state_of_schedule'] == StateOfSchedule.idle:
         env['is_model'] = False
         env['is_experiment'] = False
         pass
 
-    if (!env['is_model'] || !env['is_experiment'])
+    if (!env['is_model'] || !env['is_experiment']):
         # @testprintln "model_BI1111结束。"
         pass
 
