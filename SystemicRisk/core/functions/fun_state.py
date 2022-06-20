@@ -25,7 +25,7 @@ class BankState:
         condition = (bank.E_all >= LESS1 & bank.A_Q >= LESS1 & bank.Shock_def_t + LESS1 <= bank.E_all & bank.Shock_run_t + LESS1 <= bank.A_Q & bank.on)
         if bank.hel != condition:
             bank.hel = condition
-            interbank.hel = (bank.hel & bank.hel')
+            interbank.hel = (bank.hel & bank.hel.T)
             pass
         pass
     
@@ -34,16 +34,16 @@ class BankState:
         condition = (bank.E_all >= LESS1 & bank.A_Q >= LESS1 & bank.Shock_def_t + LESS1 <= bank.E_all & bank.on)
         if bank.hel != condition:
             bank.hel = condition
-            interbank.hel = (bank.hel & bank.hel')
+            interbank.hel = (bank.hel & bank.hel.T)
             pass
         pass
     
     "更新示性向量之于银行健康的，来自资不抵债的。"
     def update_isHealthy_from_isInsolvent(self, bank:BankCommercial, interbank:BankInterbank):
-        condition = (.!(bank.isv | bank.ilq) & bank.on)
+        condition = (~(bank.isv | bank.ilq) & bank.on)
         if bank.hel != condition:
             bank.hel = condition
-            interbank.hel = (bank.hel & bank.hel')
+            interbank.hel = (bank.hel & bank.hel.T)
             pass
         pass
     
@@ -52,16 +52,16 @@ class BankState:
         condition = (bank.E_all >= LESS1 & bank.A_Q >= LESS1 & bank.Shock_run_t + LESS1 <= bank.A_Q & bank.on)
         if bank.hel != condition:
             bank.hel = condition
-            interbank.hel = (bank.hel & bank.hel')
+            interbank.hel = (bank.hel & bank.hel.T)
             pass
         pass
     
     "更新示性向量之于银行健康的，来自流动性短缺的。" # 内容同于update_isHealthy_from_isInsolvent
     def update_isHealthy_from_isIlliquity(self, bank:BankCommercial, interbank:BankInterbank):
-        condition = (.!(bank.isv | bank.ilq) & bank.on)
+        condition = (~(bank.isv | bank.ilq) & bank.on)
         if bank.hel != condition:
             bank.hel = condition
-            interbank.hel = (bank.hel & bank.hel')
+            interbank.hel = (bank.hel & bank.hel.T)
             pass
         pass
     
@@ -72,9 +72,9 @@ class BankState:
         condition = ((bank.A_all < bank.Z_all + LESS1 | bank.E_all < LESS1 | bank.Shock_def_t + LESS1 > bank.E_all) & bank.on)
         if bank.isv != condition:
             bank.isv = condition
-            interbank.isv = (bank.isv | bank.isv')
-            interbank.cre_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "creditor")
-            interbank.deb_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "debtor")
+            interbank.isv = (bank.isv | bank.isv.T)
+            interbank.cre_isv = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.isv, goal = "creditor")
+            interbank.deb_isv = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.isv, goal = "debtor")
             pass
         pass
     
@@ -83,9 +83,9 @@ class BankState:
         condition = ((bank.A_all < bank.Z_all + LESS1 | bank.E_all < LESS1 | bank.Shock_def_t + LESS1 > bank.E_all) & bank.on)
         if bank.isv != condition:
             bank.isv = condition
-            interbank.isv = (bank.isv | bank.isv')
-            interbank.cre_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "creditor")
-            interbank.deb_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "debtor")
+            interbank.isv = (bank.isv | bank.isv.T)
+            interbank.cre_isv = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.isv, goal = "creditor")
+            interbank.deb_isv = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.isv, goal = "debtor")
             pass
         pass
     
@@ -94,9 +94,9 @@ class BankState:
         condition = ((bank.A_all < bank.Z_all + LESS1 | bank.E_all < LESS1 | bank.Shock_def_t + LESS1 > bank.E_all) & bank.on)
         if bank.isv != condition:
             bank.isv = condition
-            interbank.isv = (bank.isv | bank.isv')
-            interbank.cre_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "creditor")
-            interbank.deb_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "debtor")
+            interbank.isv = (bank.isv | bank.isv.T)
+            interbank.cre_isv = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.isv, goal = "creditor")
+            interbank.deb_isv = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.isv, goal = "debtor")
             pass
         pass
     
@@ -105,9 +105,9 @@ class BankState:
         condition = ((bank.Shock_run_t + LESS1 >= bank.A_Q) & bank.on)
         if bank.ilq != condition:
             bank.ilq = condition
-            interbank.ilq = (bank.ilq | bank.ilq')
-            interbank.cre_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "creditor")
-            interbank.deb_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "debtor")
+            interbank.ilq = (bank.ilq | bank.ilq.T)
+            interbank.cre_ilq = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.ilq, goal = "creditor")
+            interbank.deb_ilq = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.ilq, goal = "debtor")
             pass
         pass
     
@@ -116,9 +116,9 @@ class BankState:
         condition = ((bank.Shock_run_t + LESS1 >= bank.A_Q) & bank.on)
         if bank.ilq != condition:
             bank.ilq = condition
-            interbank.ilq = (bank.ilq | bank.ilq')
-            interbank.cre_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "creditor")
-            interbank.deb_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "debtor")
+            interbank.ilq = (bank.ilq | bank.ilq.T)
+            interbank.cre_ilq = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.ilq, goal = "creditor")
+            interbank.deb_ilq = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.ilq, goal = "debtor")
             pass
         pass
     
@@ -127,9 +127,9 @@ class BankState:
         condition = ((bank.Shock_run_t + LESS1 >= bank.A_Q) & bank.on)
         if bank.ilq != condition:
             bank.ilq = condition
-            interbank.ilq = (bank.ilq | bank.ilq')
-            interbank.cre_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "creditor")
-            interbank.deb_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "debtor")
+            interbank.ilq = (bank.ilq | bank.ilq.T)
+            interbank.cre_ilq = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.ilq, goal = "creditor")
+            interbank.deb_ilq = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.ilq, goal = "debtor")
             pass
         pass
     
@@ -138,9 +138,9 @@ class BankState:
         condition = (bank.isv | bank.ilq)
         if bank.br != condition:
             bank.br = condition
-            interbank.br = (bank.br & bank.br')
-            interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-            interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+            interbank.br = (bank.br & bank.br.T)
+            interbank.cre_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "creditor")
+            interbank.deb_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "debtor")
             pass
         pass
     
@@ -149,9 +149,9 @@ class BankState:
         condition = (bank.isv | bank.ilq)
         if bank.br != condition:
             bank.br = condition
-            interbank.br = (bank.br & bank.br')
-            interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-            interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+            interbank.br = (bank.br & bank.br.T)
+            interbank.cre_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "creditor")
+            interbank.deb_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "debtor")
             pass
         pass
     
@@ -160,9 +160,9 @@ class BankState:
         condition = (bank.isv | bank.ilq)
         if bank.br != condition:
             bank.br = condition
-            interbank.br = (bank.br & bank.br')
-            interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-            interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+            interbank.br = (bank.br & bank.br.T)
+            interbank.cre_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "creditor")
+            interbank.deb_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "debtor")
             pass
         pass
     
@@ -171,9 +171,9 @@ class BankState:
         condition = (bank.hel | bank.isv | bank.ilq | bank.br)
         if bank.on != condition:
             bank.on = condition
-            interbank.on = (bank.on & bank.on')
-            # interbank.listOfCreditorsInOn = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor") #HACK，未定义，无用。
-            # interbank.listOfDebtorsInOn = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor") #HACK，未定义，无用。
+            interbank.on = (bank.on & bank.on.T)
+            # interbank.listOfCreditorsInOn = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.on, goal = "creditor") #HACK，未定义，无用。
+            # interbank.listOfDebtorsInOn = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.on, goal = "debtor") #HACK，未定义，无用。
             pass
         pass
     
@@ -181,21 +181,21 @@ class BankState:
     def update_isBankrupt_from_isOff(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (bank.off)
         if bank.br == condition:
-            bank.br[: ] = FALSE1
-            interbank.br = (bank.br & bank.br')
-            interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-            interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+            bank.br[: ] = np.false(env['num_bank'])
+            interbank.br = (bank.br & bank.br.T)
+            interbank.cre_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "creditor")
+            interbank.deb_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "debtor")
             pass
         pass
     
     "更新示性向量之于银行存在的，来自退出的。"
     def update_isOn_from_isOff(self, bank:BankCommercial, interbank:BankInterbank):
-        condition = (.!bank.off)
+        condition = (~bank.off)
         if bank.on != condition:
             bank.on = condition
-            interbank.on = (bank.on & bank.on')
-            interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-            interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+            interbank.on = (bank.on & bank.on.T)
+            interbank.cre_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "creditor")
+            interbank.deb_br = self.calc_listOfRelationInStateOfBanks(interbank, isState = bank.br, goal = "debtor")
             pass
         pass
     
@@ -204,22 +204,22 @@ class BankState:
         condition = bank.br | bank.off
         if bank.off != condition:
             bank.off = condition
-            interbank.off = (bank.off & bank.off')
+            interbank.off = (bank.off & bank.off.T)
             pass
         pass
     
     "更新示性向量之于银行退出的，来自存在的。"
     def update_isOff_from_isOn(self, bank:BankCommercial, interbank:BankInterbank):
-        condition = .!bank.on
+        condition = ~bank.on
         if bank.off != condition:
             bank.off = condition
-            interbank.off = (bank.off & bank.off')
+            interbank.off = (bank.off & bank.off.T)
             pass
         pass
     
     "计算示性向量之于银行退出的，来自破产的。"
     def calc_isOff_from_isBankrupt(self, bank:BankCommercial, interbank:BankInterbank):
-        calc_isOff(bank, interbank)
+        self.calc_isOff(bank, interbank)
         interbank.cre_br = []
         interbank.deb_br = []
         pass
@@ -278,20 +278,19 @@ class BankState:
     - `interbank:BankInterbank`:  银行间主体。
     - `listOfRelationInStateOfBanks:Array`:  列表之于各银行之各状态之关系。
     - `isState:Vector`:  示性向量之于各银行之状态。
-    - `goal:String`:  参数，确定计算债务方或债权方。
+    - `goal:str`:  参数，确定计算债务方或债权方。
         - `debtor`:  计算对应的债务方银行；
         - `creditor`:  计算对应的债权方银行；
     # Returns
     - `listOfRelationInStateOfBanks`:  返回对应状态下的债权或者债务关系的银行列表；
     """
-    def calc_listOfRelationInStateOfBanks(self, interbank:BankInterbank, isState:Vector, goal:String):
+    def calc_listOfRelationInStateOfBanks(self, interbank:BankInterbank, isState:Vector, goal:str):
         # 计算示性矩阵之于银行间风险敞口的
         if goal == "debtor":
             isExposure = ((interbank.A_BI > 0.0) & isState)
         elif goal == "creditor":
             isExposure = ((interbank.Z_BI > 0.0) & isState)
         else:
-            throw(DomainError(byWay, "关键词取值错误！"))
             pass
         listOfRelationInStateOfBanks = [[] for i in 1: env['num_bank']]
         for i in 1: env['num_bank']
@@ -331,7 +330,7 @@ class BankState:
     - `needed repay Z_D`:  到是否需要偿还居民存款状态；
     - `needed collect A_P`:  到是否可以收回厂商贷款状态；
     """
-    def update_B_state(self, bank:BankCommercial, interbank:BankInterbank; to:String = "any", from:String = "any"):
+    def update_B_state(self, bank:BankCommercial, interbank:BankInterbank, to:String = "any", from:String = "any"):
         if to == "any": #FIXME 这个可能有缺陷:
             if from == "any":
                 init_listOfRelationInStateOfBanks(bank, interbank)
@@ -358,8 +357,8 @@ class BankState:
             elif from == "bankrupt":
                 calc_isOff_from_isBankrupt(bank, interbank)
                 update_isOn_from_isOff(bank, interbank)
-                interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
-                interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
+                interbank.cre = calc_listOfRelationInStateOfBanks(interbank, isState = bank.on, goal = "creditor")
+                interbank.deb = calc_listOfRelationInStateOfBanks(interbank, isState = bank.on, goal = "debtor")
             elif from == "off":
                 # @testprintln "无须更新！"
             else:
@@ -463,8 +462,8 @@ class BankState:
                 calc_isOff_from_isBankrupt(bank, interbank)
                 update_isOn_from_isOff(bank, interbank)
                 update_isBankrupt_from_isOff(bank, interbank)
-                interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
-                interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
+                interbank.cre = calc_listOfRelationInStateOfBanks(interbank, isState = bank.on, goal = "creditor")
+                interbank.deb = calc_listOfRelationInStateOfBanks(interbank, isState = bank.on, goal = "debtor")
             elif from == "off":
                 # @testprintln "无须更新！"
             else:
