@@ -268,11 +268,11 @@ macro scheduler_stage(stage)
 
 
 "宏：判断是否继续运行过程" #HACK 或将废弃
-def is_rocess(self, BB:BankCommercial, BB_isv_t1:TypeState{1}, BB_Shock_t_t1:TypeMoney{1}, is_rocess:Bool, stageFunctionName:Symbol, process:ProcessComponent):
+def is_rocess(self, BB:BankCommercial, BB_isv_t1:TypeState, BB_Shock_t_t1:TypeMoney{1}, is_rocess:Bool, stageFunctionName:Symbol, process:ProcessComponent):
     if stageFunctionName == process.content[    pass].functionName: # 如果当前阶段是所处过程之最后的阶段，则继续判断，否则过程未结束，后续继续运行。:
         if (:
-            process.functionName == :process_exBank_insolvent ||
-            process.functionName == :process_exBank_illiquity ||
+            process.functionName == :process_exBank_insolvent |
+            process.functionName == :process_exBank_illiquity |
             process.functionName == :process_exBank_bankrupt
         )
             is_rocess = False
