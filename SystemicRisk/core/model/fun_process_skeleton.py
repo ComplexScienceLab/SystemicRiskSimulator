@@ -44,8 +44,8 @@ def fun_process_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, process
         BB_Shock_t_t1 = deepcopy(A.BB.Shock_t)
         BB_isv_t1 = deepcopy(A.BB.isv)
 
-        b = TypeState{1}(A.BB.on | A.BB.off) # 临时设置BB示性变量
-        ib = TypeState{2}((A.BB.on | A.BB.off) & (A.BB.on | A.BB.off)') # 临时设置BI示性变量
+        b = TypeState(A.BB.on | A.BB.off) # 临时设置BB示性变量
+        ib = TypeState((A.BB.on | A.BB.off) & (A.BB.on | A.BB.off)') # 临时设置BI示性变量
 
         ## 运行每一个阶段
         for (idx_stage, stage) in enumerate(process.content)

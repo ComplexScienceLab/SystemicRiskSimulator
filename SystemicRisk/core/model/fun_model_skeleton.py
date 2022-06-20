@@ -49,7 +49,7 @@ def fun_model_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, model:Mod
         env['is_model'] = False
         env['is_experiment'] = False
         pass
-    if (!env['is_model'] || !env['is_experiment']):
+    if (!env['is_model'] | !env['is_experiment']):
         # @testprintln "结束模型：$(env['model_name'])。\n"
         pass
 

@@ -16,7 +16,7 @@
 
 
 "计算各银行之银行间损失。"
-calc_B_Loss(interbank_Loss)=sum(interbank_Loss,dims=2)
+calc_B_Loss(interbank_Loss)=np.sum(interbank_Loss,dims=2)
 
 
 

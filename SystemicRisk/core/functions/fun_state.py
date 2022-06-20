@@ -6,7 +6,7 @@
 #状态/使用
 ##########################################
 
-from SystemicRisk.core import BankCommercial,BankInterbank,TypeState,LESS1,LESS2
+from SystemicRisk.core import np,env,BankCommercial,BankInterbank,TypeState,LESS1,LESS2
 
 
 class BankState:
