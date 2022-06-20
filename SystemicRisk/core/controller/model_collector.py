@@ -129,7 +129,7 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
         fieldNames = fieldnames(typeof(v1['dataBI']))
         fieldValues = [getfield(v1['dataBI'], fieldName) for fieldName in fieldNames]
         for (i2, v2) in enumerate(fieldValues)
-            if (typeof(v2) == TypeMoney{2} | | typeof(v2) == TypeState{2} | | typeof(v2) == TypeIds{2})::
+            if (typeof(v2) == TypeMoney{2} | | typeof(v2) == TypeState | | typeof(v2) == TypeIds{2})::
                 BI_data[!, fieldNames[i2]] = [v2'...] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
                 elif typeof(v2) == TypeList::
                 {Any}

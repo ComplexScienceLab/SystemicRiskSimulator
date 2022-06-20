@@ -6,7 +6,7 @@
 #状态/使用
 ##########################################
 
-from SystemicRisk.core import BankCommercial,BankInterbank,TypeState
+from SystemicRisk.core import np,env,BankCommercial,BankInterbank,TypeState
 
 
 class BankTransfer:
@@ -44,82 +44,82 @@ class BankTransfer:
         pass
 
     "汇总各银行之总交易流量``T_{all}``。"
-    def together_T_all(self, bank:BankCommercial, bankState:TypeState{1}):
+    def together_T_all(self, bank:BankCommercial, bankState:TypeState):
         bank.T_all[bankState] = bank.Lo_all[bankState] + bank.Bi_all[bankState] + bank.Bo_all[bankState] + bank.Li_all[bankState]
         pass
 
     "汇总各银行之总贷款流出``Lo_{B}``。"
-    def together_transfer_B_Lo_all(self, bank:BankCommercial, bankState:TypeState{1}):
+    def together_transfer_B_Lo_all(self, bank:BankCommercial, bankState:TypeState):
         bank.Lo_all[bankState] = bank.Lo_BI_all[bankState] + bank.Lo_exBI[bankState]
         pass
 
     "汇总各银行之非银行间贷款流出``Lo_{-BI}``。"
-    def together_transfer_B_Lo_exBI(self, bank:BankCommercial, bankState:TypeState{1}):
+    def together_transfer_B_Lo_exBI(self, bank:BankCommercial, bankState:TypeState):
         bank.Lo_exBI[bankState] = bank.Lo_P[bankState]
         pass
 
     "汇总各银行之总贷款流入``Li_{B}``。"
-    def together_transfer_B_Li_all(self, bank:BankCommercial, bankState:TypeState{1}):
+    def together_transfer_B_Li_all(self, bank:BankCommercial, bankState:TypeState):
         bank.Li_all[bankState] = bank.Li_BI_all[bankState] + bank.Li_exBI[bankState]
         pass
 
     "汇总各银行之非银行间贷款流入``Li_{-BI}``。"
-    def together_transfer_B_Li_exBI(self, bank:BankCommercial, bankState:TypeState{1}):
+    def together_transfer_B_Li_exBI(self, bank:BankCommercial, bankState:TypeState):
         bank.Li_exBI[bankState] = bank.Li_P[bankState]
         pass
 
     "汇总各银行之总借款流出``Bo_{B}``。"
-    def together_transfer_B_Bo_all(self, bank:BankCommercial, bankState:TypeState{1}):
+    def together_transfer_B_Bo_all(self, bank:BankCommercial, bankState:TypeState):
         bank.Bo_all[bankState] = bank.Bo_BI_all[bankState] + bank.Bo_exBI[bankState]
         pass
 
     "汇总各银行之非银行间借款流出``Bo_{-BI}``。"
-    def together_transfer_B_Bo_exBI(self, bank:BankCommercial, bankState:TypeState{1}):
+    def together_transfer_B_Bo_exBI(self, bank:BankCommercial, bankState:TypeState):
         bank.Bo_exBI[bankState] = bank.Bo_D[bankState]
         pass
 
     "汇总各银行之总借款流入``Bi_{B}``。"
-    def together_transfer_B_Bi_all(self, bank:BankCommercial, bankState:TypeState{1}):
+    def together_transfer_B_Bi_all(self, bank:BankCommercial, bankState:TypeState):
         bank.Bi_all[bankState] = bank.Bi_BI_all[bankState] + bank.Bi_exBI[bankState]
         pass
 
     "汇总各银行之非银行间借款流入``Bi_{-BI}``。"
-    def together_transfer_B_Bi_exBI(self, bank:BankCommercial, bankState:TypeState{1}):
+    def together_transfer_B_Bi_exBI(self, bank:BankCommercial, bankState:TypeState):
         bank.Bi_exBI[bankState] = bank.Bi_D[bankState]
         pass
 
     "转换银行间贷款流出``Lo_{BI}``为银行间借款流入``Bi_{BI}``。"
-    def alter_transfer_Lo_BI(self, interbank:BankInterbank, interbankState:TypeState{2}):
+    def alter_transfer_Lo_BI(self, interbank:BankInterbank, interbankState:TypeState):
         interbank.Bi_BI = interbank.Lo_BI'
         pass
 
     "转换银行间借款流入``Bi_{BI}``为银行间贷款流出``Lo_{BI}``。"
-    def alter_transfer_Bi_BI(self, interbank:BankInterbank, interbankState:TypeState{2}):
+    def alter_transfer_Bi_BI(self, interbank:BankInterbank, interbankState:TypeState):
         interbank.Lo_BI = interbank.Bi_BI'
         pass
 
     "转换银行间借款流出``Bo_{BI}``为银行间贷款流入``Li_{BI}``。"
-    def alter_transfer_Bo_BI(self, interbank:BankInterbank, interbankState:TypeState{2}):
+    def alter_transfer_Bo_BI(self, interbank:BankInterbank, interbankState:TypeState):
         interbank.Li_BI = interbank.Bo_BI'
         pass
 
     "转换银行间贷款流入``Li_{BI}``为银行间借款流出``Bo_{BI}``。"
-    def alter_transfer_Li_BI(self, interbank:BankInterbank, interbankState:TypeState{2}):
+    def alter_transfer_Li_BI(self, interbank:BankInterbank, interbankState:TypeState):
         interbank.Bo_BI = interbank.Li_BI'
         pass
 
     "加总各银行之银行间借款流入``Bi_{B}``，通过银行间借款流入邻接矩阵``Bi_{BI}``。"
-    def sum_transfer_Bi_BI(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}):
-        bank.Bi_BI_all[: ] = sum(interbank.Bi_BI .* interbankState, dims = 2)
+    def sum_transfer_Bi_BI(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState, interbankState:TypeState):
+        bank.Bi_BI_all[: ] = np.sum(interbank.Bi_BI * interbankState, dims = 2)
         pass
 
     "加总各银行之银行间贷款流入``Li_{B}``，通过银行间贷款流入邻接矩阵``Li_{BI}``。"
-    def sum_transfer_Li_BI(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}):
-        bank.Li_BI_all[: ] = sum(interbank.Li_BI .* interbankState, dims = 2)
+    def sum_transfer_Li_BI(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState, interbankState:TypeState):
+        bank.Li_BI_all[: ] = np.sum(interbank.Li_BI * interbankState, dims = 2)
         pass
 
     "清零所有流量变量值"
-    def clear_all_transfer(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}):
+    def clear_all_transfer(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState, interbankState:TypeState):
         bank.Lo_BI_all[bankState] = np.zeros(env['num_bank'])[bankState]
         bank.Lo_P[bankState] = np.zeros(env['num_bank'])[bankState]
         bank.Li_BI_all[bankState] = np.zeros(env['num_bank'])[bankState]
@@ -135,7 +135,7 @@ class BankTransfer:
     """
     更新各银行之借贷流量变量。
     # Arguments
-    `byWay:String`:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
+    `byWay:str`:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
     - `all`:  更新全部借贷流量变量；
     - `clear transfer all`:  清零所有不必要的借贷流量变量；
     - `Lo_P`:  已知``Lo_{B,P}``，更新其余借贷流量变量；
@@ -151,7 +151,7 @@ class BankTransfer:
     - `Bo_BI`:  已知``Bo_{BI}``，更新其余借贷流量变量；
     - `Li_BI`:  已知``Li_{BI}``，更新其余借贷流量变量；
     """
-    def update_B_transfer(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState{1}, interbankState:TypeState{2}; byWay:String = "all"):
+    def update_B_transfer(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState, interbankState:TypeState; byWay:str = "all"):
         if byWay == "all":
             clear_all_transfer(bank, interbank, bankState, interbankState)
             alter_transfer_Lo_BI(interbank, interbankState)
@@ -169,19 +169,19 @@ class BankTransfer:
             together_T_all(bank, bankState)
         elif byWay == "clear transfer all":
             clear_all_transfer(bank, interbank, bankState, interbankState)
-            alter_transfer_Lo_BI(interbank, TypeState{2}((bank.on | bank.off) & (bank.on | bank.off)'))
-            sum_transfer_Bi_BI(bank, interbank, TypeState{1}(bank.on | bank.off), TypeState{2}((bank.on | bank.off) & (bank.on | bank.off)'))
-            alter_transfer_Bo_BI(interbank, TypeState{2}((bank.on | bank.off) & (bank.on | bank.off)'))
-            sum_transfer_Li_BI(bank, interbank, TypeState{1}(bank.on | bank.off), TypeState{2}((bank.on | bank.off) & (bank.on | bank.off)'))
-            together_transfer_B_Lo_exBI(bank, TypeState{1}(bank.on | bank.off))
-            together_transfer_B_Lo_all(bank, TypeState{1}(bank.on | bank.off))
-            together_transfer_B_Li_exBI(bank, TypeState{1}(bank.on | bank.off))
-            together_transfer_B_Li_all(bank, TypeState{1}(bank.on | bank.off))
-            together_transfer_B_Bi_exBI(bank, TypeState{1}(bank.on | bank.off))
-            together_transfer_B_Bi_all(bank, TypeState{1}(bank.on | bank.off))
-            together_transfer_B_Bo_exBI(bank, TypeState{1}(bank.on | bank.off))
-            together_transfer_B_Bo_all(bank, TypeState{1}(bank.on | bank.off))
-            together_T_all(bank, TypeState{1}(bank.on | bank.off))
+            alter_transfer_Lo_BI(interbank, TypeState((bank.on | bank.off) & (bank.on | bank.off)'))
+            sum_transfer_Bi_BI(bank, interbank, TypeState(bank.on | bank.off), TypeState((bank.on | bank.off) & (bank.on | bank.off)'))
+            alter_transfer_Bo_BI(interbank, TypeState((bank.on | bank.off) & (bank.on | bank.off)'))
+            sum_transfer_Li_BI(bank, interbank, TypeState(bank.on | bank.off), TypeState((bank.on | bank.off) & (bank.on | bank.off)'))
+            together_transfer_B_Lo_exBI(bank, TypeState(bank.on | bank.off))
+            together_transfer_B_Lo_all(bank, TypeState(bank.on | bank.off))
+            together_transfer_B_Li_exBI(bank, TypeState(bank.on | bank.off))
+            together_transfer_B_Li_all(bank, TypeState(bank.on | bank.off))
+            together_transfer_B_Bi_exBI(bank, TypeState(bank.on | bank.off))
+            together_transfer_B_Bi_all(bank, TypeState(bank.on | bank.off))
+            together_transfer_B_Bo_exBI(bank, TypeState(bank.on | bank.off))
+            together_transfer_B_Bo_all(bank, TypeState(bank.on | bank.off))
+            together_T_all(bank, TypeState(bank.on | bank.off))
     elif byWay == "Lo_P":
             together_transfer_B_Lo_exBI(bank, bankState)
             together_transfer_B_Lo_all(bank, bankState)

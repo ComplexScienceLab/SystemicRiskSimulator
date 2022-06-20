@@ -65,7 +65,7 @@ def model_BI1111(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict)
         env['is_experiment'] = False
         pass
 
-    if (!env['is_model'] || !env['is_experiment']):
+    if (!env['is_model'] | !env['is_experiment']):
         # @testprintln "model_BI1111结束。"
         pass
 
