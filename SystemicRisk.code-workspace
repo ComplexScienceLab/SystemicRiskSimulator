@@ -9,7 +9,6 @@
 		// 	"editor.background": "#fffdeb"
 		// },
 		"editor.fontLigatures": true,
-		"workbench.colorTheme": "MacOS Modern Dark - Xcode Catalina",
 		"files.autoSave": "onFocusChange"
 	}
 }
