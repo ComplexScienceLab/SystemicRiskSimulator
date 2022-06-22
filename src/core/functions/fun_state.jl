@@ -300,7 +300,7 @@ end
 
 # Arguments
 
-`to::String`:  参数，转移状态目标；
+`target::String`:  参数，转移状态目标；
 - `any`:  到任意状态；
 - `healthy`:  到健康状态；
 - `insolvent`:  到资不抵债状态；
@@ -314,7 +314,7 @@ end
 - `needed collect A_P`:  到是否可以收回厂商贷款状态；
 - `enabled collect A_P`:  到是否可以收回厂商贷款状态；
 
-`from::String`:  参数，转移状态源头；
+`source::String`:  参数，转移状态源头；
 - `any`:  从任意状态出发；
 - `healthy`:  从健康状态出发；
 - `insolvent`:  从资不抵债状态出发；
@@ -325,9 +325,9 @@ end
 - `needed repay Z_D`:  到是否需要偿还居民存款状态；
 - `needed collect A_P`:  到是否可以收回厂商贷款状态；
 """
-function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::String = "any", from::String = "any")
-    if to == "any" #FIXME 这个可能有缺陷
-        if from == "any"
+function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target::String = "any", source::String = "any")
+    if target == "any" #FIXME 这个可能有缺陷
+        if source == "any"
             init_listOfRelationInStateOfBanks!(bank, interbank)
             calc_isInsolvent!(bank, interbank)
             calc_isIlliquity!(bank, interbank)
@@ -336,184 +336,184 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; to::Str
             together_isOn!(bank, interbank)
             # calc_isOff!(bank, interbank)
             # calc_isOn!(bank, interbank)
-        elseif from == "healthy"
+        elseif source == "healthy"
             calc_isInsolvent_from_isHealthy!(bank, interbank)
             update_isHealthy_from_isInsolvent!(bank, interbank)
             calc_isIlliquity_from_isHealthy!(bank, interbank)
             update_isHealthy_from_isIlliquity!(bank, interbank)
-        elseif from == "insolvent"
+        elseif source == "insolvent"
             calc_isHealthy_from_isInsolvent!(bank, interbank)
             update_isInsolvent_from_isHealthy!(bank, interbank)
             calc_isBankrupt_from_isInsolvent!(bank, interbank)
-        elseif from == "illiquity"
+        elseif source == "illiquity"
             calc_isHealthy_from_isIlliquity!(bank, interbank)
             update_isIlliquity_from_isHealthy!(bank, interbank)
             calc_isBankrupt_from_isIlliquity!(bank, interbank)
-        elseif from == "bankrupt"
+        elseif source == "bankrupt"
             calc_isOff_from_isBankrupt!(bank, interbank)
             update_isOn_from_isOff!(bank, interbank)
             interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
             interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
-        elseif from == "off"
+        elseif source == "off"
             @testprintln "无须更新！"
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "healthy"
-        if from == "any"
+    elseif target == "healthy"
+        if source == "any"
             calc_isHealthy!(bank, interbank)
             update_isInsolvent_from_isHealthy!(bank, interbank)
             update_isIlliquity_from_isHealthy!(bank, interbank)
-        elseif from == "healthy"
+        elseif source == "healthy"
             @testprintln "无须更新！"
-        elseif from == "insolvent"
+        elseif source == "insolvent"
             calc_isHealthy_from_isInsolvent!(bank, interbank)
             calc_isInsolvent_from_isHealthy!(bank, interbank)
-        elseif from == "illiquity"
+        elseif source == "illiquity"
             calc_isHealthy_from_isIlliquity!(bank, interbank)
             update_isIlliquity_from_isHealthy!(bank, interbank)
-        elseif from == "bankrupt"
+        elseif source == "bankrupt"
             @testprintln "无须更新！"
-        elseif from == "off"
+        elseif source == "off"
             @testprintln "无须更新！"
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "insolvent"
-        if from == "any"
+    elseif target == "insolvent"
+        if source == "any"
             calc_isInsolvent!(bank, interbank)
             update_isHealthy_from_isInsolvent!(bank, interbank)
-        elseif from == "healthy"
+        elseif source == "healthy"
             calc_isInsolvent_from_isHealthy!(bank, interbank)
             update_isHealthy_from_isInsolvent!(bank, interbank)
-        elseif from == "insolvent"
+        elseif source == "insolvent"
             @testprintln "无须更新！"
-        elseif from == "illiquity"
+        elseif source == "illiquity"
             # calc_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
             # calc_isHealthy_from_isIlliquity!(bank, interbank) # 错误，可以删除！
             # calc_isHealthy_from_isInsolvent!(bank, interbank) # 错误，可以删除！
             # calc_isInsolvent_from_isHealthy!(bank, interbank) # 错误，可以删除！
             @testprintln "无须更新！"
-        elseif from == "bankrupt"
+        elseif source == "bankrupt"
             @testprintln "无须更新！"
-        elseif from == "off"
+        elseif source == "off"
             @testprintln "无须更新！"
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "illiquity"
-        if from == "any"
+    elseif target == "illiquity"
+        if source == "any"
             calc_isIlliquity!(bank, interbank)
             update_isHealthy_from_isIlliquity!(bank, interbank)
-        elseif from == "healthy"
+        elseif source == "healthy"
             calc_isIlliquity_from_isHealthy!(bank, interbank)
             update_isHealthy_from_isIlliquity!(bank, interbank)
-        elseif from == "insolvent"
+        elseif source == "insolvent"
             # calc_isHealthy_from_isInsolvent!(bank, interbank) # 错误，可以删除！
             # update_isInsolvent_from_isHealthy!(bank, interbank) # 错误，可以删除！
             # update_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
             @testprintln "无须更新！"
-        elseif from == "illiquity"
+        elseif source == "illiquity"
             @testprintln "无须更新！"
-        elseif from == "bankrupt"
+        elseif source == "bankrupt"
             @testprintln "无须更新！"
-        elseif from == "off"
+        elseif source == "off"
             @testprintln "无须更新！"
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "bankrupt"
-        if from == "any"
+    elseif target == "bankrupt"
+        if source == "any"
             calc_isBankrupt!(bank, interbank)
-        elseif from == "healthy"
+        elseif source == "healthy"
             calc_isInsolvent_from_isHealthy!(bank, interbank)
             update_isHealthy_from_isInsolvent!(bank, interbank)
             calc_isIlliquity!(bank, interbank)
             update_isHealthy_from_isIlliquity!(bank, interbank)
             calc_isBankrupt_from_isInsolvent!(bank, interbank)
             calc_isBankrupt_from_isIlliquity!(bank, interbank)
-        elseif from == "insolvent"
+        elseif source == "insolvent"
             calc_isBankrupt_from_isInsolvent!(bank, interbank)
-        elseif from == "illiquity"
+        elseif source == "illiquity"
             calc_isBankrupt_from_isIlliquity!(bank, interbank)
-        elseif from == "bankrupt"
+        elseif source == "bankrupt"
             @testprintln "无须更新！"
-        elseif from == "off"
+        elseif source == "off"
             @testprintln "无须更新！"
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "off"
-        if from == "any"
+    elseif target == "off"
+        if source == "any"
             calc_isOff!(bank, interbank)
             update_isOn_from_isOff!(bank, interbank)
-        elseif from == "healthy"
+        elseif source == "healthy"
             @testprintln "无须更新！"
-        elseif from == "insolvent"
+        elseif source == "insolvent"
             @testprintln "无须更新！"
-        elseif from == "illiquity"
+        elseif source == "illiquity"
             @testprintln "无须更新！"
-        elseif from == "bankrupt"
+        elseif source == "bankrupt"
             calc_isOff_from_isBankrupt!(bank, interbank)
             update_isOn_from_isOff!(bank, interbank)
             update_isBankrupt_from_isOff!(bank, interbank)
             interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
             interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
-        elseif from == "off"
+        elseif source == "off"
             @testprintln "无须更新！"
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "on"
-        if from == "any"
+    elseif target == "on"
+        if source == "any"
             together_isOn!(bank, interbank)
             update_isOff_from_isOn!(bank, interbank)
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "needed repay BI"
-        if from == "any"
+    elseif target == "needed repay BI"
+        if source == "any"
             calc_isNeededBoBI!(bank, interbank)
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "enabled repay BI"
-        if from == "any"
+    elseif target == "enabled repay BI"
+        if source == "any"
             calc_isEnabledBoBI!(bank, interbank)
-        elseif from == "needed repay BI"
+        elseif source == "needed repay BI"
             calc_isEnabledBoBI_from_isNeededBoBI!(bank, interbank)
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "needed repay Z_D"
-        if from == "any"
+    elseif target == "needed repay Z_D"
+        if source == "any"
             calc_isNeededBoD!(bank, interbank)
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "enabled repay Z_D"
-        if from == "any"
+    elseif target == "enabled repay Z_D"
+        if source == "any"
             calc_isEnabledBoD!(bank, interbank)
-        elseif from == "needed repay Z_D"
+        elseif source == "needed repay Z_D"
             calc_isEnabledBoD_from_isNeededBoD!(bank, interbank)
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "needed collect A_P"
-        if from == "any"
+    elseif target == "needed collect A_P"
+        if source == "any"
             calc_isNeededLiP!(bank, interbank)
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif to == "enabled collect A_P"
-        if from == "any"
+    elseif target == "enabled collect A_P"
+        if source == "any"
             calc_isEnabledLiP!(bank, interbank)
-        elseif from == "needed collect A_P"
+        elseif source == "needed collect A_P"
             calc_isEnabledLiP_from_isNeededLiP!(bank, interbank)
         else
-            throw(DomainError(byWay, "关键词from取值错误！"))
+            throw(DomainError(byWay, "关键词source取值错误！"))
         end
     else
-        throw(DomainError(to, "关键词to取值错误！"))
+        throw(DomainError(target, "关键词target取值错误！"))
     end
 end # function
