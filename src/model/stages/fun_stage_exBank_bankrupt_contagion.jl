@@ -11,7 +11,7 @@ function stage_exBank_bankrupt_contagion!(BB::BankCommercial, BI::BankInterbank,
     @testprintln "开始阶段$(env[:stage_name])："
     
     BB.br[para[:list_Shock_exBI_t]] = para[:Shock_exBI_t][para[:list_Shock_exBI_t]]
-    update_B_state!(BB, BI; to="bankrupt", from="any")
+    update_B_state!(BB, BI; target="bankrupt", source="any")
 
     @testprintln "结束阶段$(env[:stage_name])。"
     return BB, BI
