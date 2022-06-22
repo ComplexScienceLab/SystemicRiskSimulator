@@ -45,7 +45,7 @@ def fun_model_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, model:Mod
         # @testprintln "步进已结束，跳出模型：$(env['model_name'])。"
         pass
     # 判断是否结束模型
-    if env['state_of_schedule'] == StateOfSchedule.idle:
+    if env['state_of_schedule'] == StateOfScheduleEnum.idle:
         env['is_model'] = False
         env['is_experiment'] = False
         pass

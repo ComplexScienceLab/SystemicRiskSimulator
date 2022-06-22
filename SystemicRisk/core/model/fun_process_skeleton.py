@@ -54,10 +54,10 @@ def fun_process_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, process
             # @testprintln "阶段$(env['index_stage'])：$(env['stage_name'])"
 
             ## 调度并运行状态
-            if env['state_of_schedule'] == StateOfSchedule.loading:
+            if env['state_of_schedule'] == StateOfScheduleEnum.loading:
                 env['state_of_schedule'] = scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule']) # 调度读取
                 pass
-            if env['state_of_schedule'] == StateOfSchedule.stepping:
+            if env['state_of_schedule'] == StateOfScheduleEnum.stepping:
                 A = runStage(A, b, ib, para, env, stage)
                 env['step'], env['is_step'], env['state_of_schedule'] = scheduler_stepping(env['step'], env['step_size']) # 步进
                 pass
@@ -71,10 +71,10 @@ def fun_process_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, process
 
         env['is_rocess'] = is_rocess(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_rocess'], env['stage_name'], process) # 判断是否继续运行过程
 
-        if env['state_of_schedule'] == StateOfSchedule.saving:
+        if env['state_of_schedule'] == StateOfScheduleEnum.saving:
             env['saved_index_process'], env['saved_index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule'] = scheduler_saving(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['is_rocess']) # 调度存储
             pass
-        if (env['state_of_schedule'] == StateOfSchedule.collecting && env['state_of_process'] == StateOfSchedule.running):
+        if (env['state_of_schedule'] == StateOfScheduleEnum.collecting & env['state_of_process'] == StateOfScheduleEnum.running):
             env['state_of_schedule'] = scheduler_collecting(A, A_data)
             pass
 

@@ -11,7 +11,7 @@
 def model_BI1111(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
 
     env['index_process'] = 0 # 初始化过程所在位置
-    env['state_of_schedule'] = StateOfSchedule.indexing
+    env['state_of_schedule'] = StateOfScheduleEnum.indexing
     # @testprintln "切换调度运作状态为$(env['state_of_schedule'])"
 
     env['tau'] = 0 # 初始化回合
@@ -60,7 +60,7 @@ def model_BI1111(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict)
         # @testprintln "步进已结束，跳出model_BI1111。"
         pass
 
-    if env['state_of_schedule'] == StateOfSchedule.idle:
+    if env['state_of_schedule'] == StateOfScheduleEnum.idle:
         env['is_model'] = False
         env['is_experiment'] = False
         pass
