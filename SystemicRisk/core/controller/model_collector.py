@@ -5,10 +5,7 @@
 ##########################################
 # 状态/开发
 ##########################################
-
-from enum import Enum
-
-from SystemicRisk.core import SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env
+from SystemicRisk.core import deepcopy,SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env
 
 
 class ModelCollector:
@@ -38,25 +35,29 @@ TODO函数：初始化实验数据容器
 
 
 def initAgentDataCollection(self, A: SystemicRiskAgent, env: dict = env):
-    BB_data_item = [dict([
-        (getkey(env, env['data_id'], :data_id), env['data_id']),
-        (getkey(env, env['tau'], :tau), env['tau']),
-    (getkey(env, env['index_process'], :index_process), env['index_process']),
-    (getkey(env, env['index_stage'], :index_stage), env['index_stage']),
-    (:dataBB, deepcopy(A.BB))
-    ])]
+    BB_data_item = dict(
+        {
+            list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
+            list(env.keys())[list(env.keys()).index('tau')]: env['tau'],
+            list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
+            list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
+            'dataBB': deepcopy(A.BB)
+        }
+    )
     BB_data = []
-    append(BB_data, BB_data_item)  # 初始化banks之数据为一字典数组
+    BB_data.append(BB_data_item) # 初始化banks之数据为一字典数组
 
-    BI_data_item = [dict([
-        (getkey(env, env['data_id'], :data_id), env['data_id']),
-        (getkey(env, env['tau'], :tau), env['tau']),
-    (getkey(env, env['index_process'], :index_process), env['index_process']),
-    (getkey(env, env['index_stage'], :index_stage), env['index_stage']),
-    (:dataBI, deepcopy(A.BI))
-    ])]
+    BI_data_item = dict(
+        {
+            list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
+            list(env.keys())[list(env.keys()).index('tau')]: env['tau'],
+            list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
+            list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
+            'dataBI': deepcopy(A.BI)
+        }
+    )
     BI_data = []
-    append(BI_data, BI_data_item)  # 初始化interbank之数据为一字典数组
+    BI_data.append(BI_data_item) # 初始化interbank之数据为一字典数组
 
     A_data = AgentDataCollection(deepcopy(BB_data), deepcopy(BI_data))
     return A_data
@@ -69,23 +70,28 @@ TODO函数：收集数据并存储
 
 
 def collectAgentData(self, A: SystemicRiskAgent, A_data: AgentDataCollection, env: dict = env):
-    BB_data_item = [dict([
-        (getkey(env, env['data_id'], :data_id), env['data_id']),
-        (getkey(env, env['tau'], :tau), env['tau']),
-    (getkey(env, env['index_process'], :index_process), env['index_process']),
-    (getkey(env, env['index_stage'], :index_stage), env['index_stage']),
-    (:dataBB, deepcopy(A.BB))
-    ])]
-    append(A_data.BB, BB_data_item)  # 收集banks之数据为一字典数组
+    BB_data_item = dict(
+        {
+            list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
+            list(env.keys())[list(env.keys()).index('tau')]: env['tau'],
+            list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
+            list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
+            'dataBB': deepcopy(A.BB)
+        }
+    )
+    A_data.BB.append(BB_data_item)  # 收集banks之数据为一字典数组
 
-    BI_data_item = [dict([
-        (getkey(env, env['data_id'], :data_id), env['data_id']),
-        (getkey(env, env['tau'], :tau), env['tau']),
-    (getkey(env, env['index_process'], :index_process), env['index_process']),
-    (getkey(env, env['index_stage'], :index_stage), env['index_stage']),
-    (:dataBI, deepcopy(A.BI))
-    ])]
-    append(A_data.BI, BI_data_item)  # 收集interbank之数据为一字典数组
+    BI_data_item = dict(
+        {
+            list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
+            list(env.keys())[list(env.keys()).index('tau')]: env['tau'],
+            list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
+            list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
+            'dataBI': deepcopy(A.BI)
+        }
+    )
+
+    A_data.BI.append(BI_data_item)  # 收集interbank之数据为一字典数组
     return A_data
     pass
 
@@ -110,7 +116,7 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
         for (i2, v2) in enumerate(fieldValues)
             BB_data[!, fieldNames[i2]] = v2
             pass
-        append(BB_data_export, BB_data)
+        BB_data_export.append(BB_data)
         pass
     CSV.write(datadir("$(env['folderpath_of_experiments_output_data'])", "BB_exp=$(env['id_experiment']).csv"), BB_data_export)  # 导出为csv格式；
 
@@ -144,7 +150,7 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
                 BI_data[!, fieldNames[i2]] =[m2'...] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
                 pass
                 pass
-                append(BI_data_export, BI_data)
+                BI_data_export.append(BI_data)
                 pass
                 CSV.write(datadir("$(env['folderpath_of_experiments_output_data'])", "BI_exp=$(env['id_experiment']).csv"), BI_data_export)  # 导出为csv格式
 
