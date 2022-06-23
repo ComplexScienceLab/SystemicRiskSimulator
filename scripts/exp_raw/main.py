@@ -53,18 +53,14 @@ if __name__ == "__main__":
     list_combinationOfPara = dict_to_product_list(setOfValuesOfParameterVariables)  # 组合排列多结构体成为列表
     env['num_experiment'] = len(list_combinationOfPara)  # 获取实验组之实验个数
     df_combinationOfPara = pd.DataFrame(np.asarray(list_combinationOfPara),columns=setOfValuesOfParameterVariables.keys())  # 转换字典列表为数据框
-    #NOW df_combinationOfPara[!, "expId"] = repeat(1: env['num_experiment'], inner = env['num_bank'])  # 添加实验组id
-    df_combinationOfPara[!, "id"] = collect(range(1, size(df_combinationOfPara)[1], step=1))  # 添加id
-    CSV.write(datadir("$(env['folderpath_of_experiments_output_data'])", "paras.csv"),
-              list_combinationOfPara)  # 导出字段列表为csv格式
-
+    df_combinationOfPara.insert(loc=0,column='exp_id',value=np.repeat(list(range(1,env['num_experiment']+1)),repeats=env['num_bank'],axis=0)) # 添加实验组id
+    df_combinationOfPara.insert(loc=0,column='id',value=list(range(1,len(df_combinationOfPara)+1)),axis=0) # 添加数据项id
+    df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'],"paras.csv"),df_combinationOfPara) # 导出字段列表为csv格式
 
     ## 初始化参数变量
     # @testprintln "\n列出所有实验组："
     for (idx_para, para) in enumerate(list_combinationOfPara)
-        @testprintln
-
-
+        # @testprintln
         "$(idx_para): $(para);"
         modelContent = eval(Meta.parse("modelContent_" * para['model_name']))
         pass
