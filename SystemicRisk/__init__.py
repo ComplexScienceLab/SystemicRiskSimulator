@@ -11,6 +11,7 @@
 __version__ = '0.0.1.alpha'
 
 import os
+import itertools
 from enum import Enum
 import time
 import numpy as np
@@ -23,4 +24,4 @@ from copy import deepcopy
 from .core import *
 
 ## 集成模型包
-from model import *
+from .model import *

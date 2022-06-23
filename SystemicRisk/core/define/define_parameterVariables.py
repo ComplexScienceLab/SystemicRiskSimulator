@@ -3,7 +3,7 @@
 ## 程序：定义参数变量ParameterVariables
 
 ##########################################
-#状态/使用
+# 状态/使用
 ##########################################
 
 from scripts.variables.set_parameterVariables import *
@@ -19,4 +19,3 @@ setOfValuesOfParameterVariables = dict(
 )
 
 # para = setOfValuesOfParameterVariables # 别名
-
