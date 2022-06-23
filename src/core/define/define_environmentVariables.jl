@@ -46,10 +46,14 @@ env = @dict(
   saved_model_name,
   index_process,
   process_name,
+  saved_process_name,
   saved_index_process,
+  loaded_index_process,
   index_stage,
   stage_name,
+  saved_stage_name,
   saved_index_stage,
+  loaded_index_stage,
 )
 
 # env = environmentVariables # 别名
