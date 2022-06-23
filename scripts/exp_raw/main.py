@@ -38,13 +38,10 @@ if __name__ == "__main__":
     env = sr.set_experiments_folders()
 
     ## 建立文件以记录log
-    f = open(joinpath(env['folderpath_of_experiments_output_data'], "outputlog.txt"), "w")
+    f = open(os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"),"w")
 
 
-    @testprintln
-
-
-    "\n实验组名称：$(env['foldername_of_experiments'])"
+    # @testprintln "\n实验组名称：$(env['foldername_of_experiments'])"
 
     ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
     list_combinationOfPara = dict_list(setOfValuesOfParameterVariables)  # 组合排列多结构体成为列表
@@ -57,10 +54,7 @@ if __name__ == "__main__":
 
 
     ## 初始化参数变量
-    @testprintln
-
-
-    "\n列出所有实验组："
+    # @testprintln "\n列出所有实验组："
     for (idx_para, para) in enumerate(list_combinationOfPara)
         @testprintln
 
