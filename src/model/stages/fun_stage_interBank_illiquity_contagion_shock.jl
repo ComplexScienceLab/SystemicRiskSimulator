@@ -20,7 +20,7 @@ function stage_interBank_illiquity_contagion_shock!(BB::BankCommercial, BI::Bank
         @. BI.Shock_BI_run_ilq[BI.deb[i], i] = BI.A_BI[i, BI.deb[i]] * BB.Shock_BI_run_ilq_s[i] / BB.A_BI_all[i]
     end
     update_B_Shock!(BB, BI, b, ib; byWay = "Shock_BI_run_ilq") # 更新挤兑流动冲击源头变量Shock_run_t
-    update_B_state!(BB, BI; to = "illiquity", from = "healthy")
+    update_B_state!(BB, BI; target = "illiquity", source = "healthy")
 
     # ##BUG 方式二：每个银行可以有多次分配传染冲击之行为。
     # @. BB.Shock_BI_run_ilq_s[BB.ilq] = abs((BB.Shock_run_t[BB.ilq] - BB.A_Q[BB.ilq]) / (BB.A_P[BB.ilq] + BB.A_BI_all[BB.ilq]) * BB.A_BI_all[BB.ilq]) # 计算应银行内冲击传导至银行间传染冲击
@@ -30,7 +30,7 @@ function stage_interBank_illiquity_contagion_shock!(BB::BankCommercial, BI::Bank
     #     @. BI.Shock_BI_run_ilq[BI.deb[i], i] = BI.A_BI[i, BI.deb[i]] * BB.Shock_BI_run_ilq_s[i] / BB.A_BI_all[i]
     # end
     # update_B_Shock!(BB, BI, b, ib; byWay = "Shock_BI_run_ilq") # 加总各单个债务银行遭受总银行间挤兑流动冲击
-    # update_B_state!(BB, BI; to = "illiquity", from = "healthy") # 更新各银行之状态，从健康到流动性短缺
+    # update_B_state!(BB, BI; target = "illiquity", source = "healthy") # 更新各银行之状态，从健康到流动性短缺
 
     @testprintln "结束阶段$(env[:stage_name])。"
     return BB, BI
