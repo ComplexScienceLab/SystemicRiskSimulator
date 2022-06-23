@@ -39,9 +39,9 @@ f=open(joinpath(env[:folderpath_of_experiments_output_data],"outputlog.txt"),"w"
 list_combinationOfPara = dict_list(setOfValuesOfParameterVariables) # 组合排列多结构体成为列表
 env[:num_experiment] = length(list_combinationOfPara) # 获取实验组之实验个数
 df_combinationOfPara = vcat(DataFrame.(list_combinationOfPara)...) # 转换字典列表为数据框
-df_combinationOfPara[!, "expId"] = repeat(1:env[:num_experiment], inner=env[:num_bank]) # 添加实验组id
+df_combinationOfPara[!, "exp_id"] = repeat(1:env[:num_experiment], inner=env[:num_bank]) # 添加实验组id
 df_combinationOfPara[!, "id"] = collect(range(1, size(df_combinationOfPara)[1], step=1)) # 添加id
-CSV.write(datadir("$(env[:folderpath_of_experiments_output_data])", "paras.csv"), list_combinationOfPara) # 导出字段列表为csv格式
+CSV.write(datadir("$(env[:folderpath_of_experiments_output_data])", "paras.csv"), df_combinationOfPara) # 导出字段列表为csv格式
 
 ## 初始化参数变量
 @testprintln "\n列出所有实验组："
@@ -73,16 +73,16 @@ for (i, para) in enumerate(list_combinationOfPara)
     env[:index_stage] = 1
     env[:saved_index_process] = 1
     env[:saved_index_stage] = 1
-    env[:loadedIndexProcess] = 1
-    env[:loadedIndexStage] = 1
+    env[:loaded_index_process] = 1
+    env[:loaded_index_stage] = 1
     env[:step] = 0
     env[:tau] = 0
     env[:saved_model_name] = ""
     env[:model_name] = model.functionName
     env[:process_name] = ""
-    env[:savedProcessName] = ""
+    env[:saved_process_name] = ""
     env[:stage_name] = ""
-    env[:savedStageName] = ""
+    env[:saved_stage_name] = ""
     env[:is_step] = true
     env[:is_loop] = true
     env[:is_round] = true
