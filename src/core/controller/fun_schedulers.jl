@@ -19,7 +19,7 @@ Return:
 """
 function scheduler!(env::Dict, A::SystemicRiskAgent, A_data::AgentDataCollection)#= component::Union{ModelComponent,ProcessComponent},  =#
     if env[:state_of_schedule] == :loading
-        env[:loadedIndexProcess], env[:loadedIndexStage], env[:state_of_schedule] = scheduler_loading(env[:index_of_schedule_position], env[:index_process], env[:saved_index_process], env[:state_of_schedule]) # 读取
+        env[:loaded_index_process], env[:loaded_index_stage], env[:state_of_schedule] = scheduler_loading(env[:index_of_schedule_position], env[:index_process], env[:saved_index_process], env[:state_of_schedule]) # 读取
     end
     if env[:state_of_schedule] == :stepping
         env[:step], env[:is_step], env[:state_of_schedule] = scheduler_stepping(env[:step], env[:step_size]) # 步进
@@ -200,7 +200,7 @@ end
 macro scheduler_process(process)
     return esc(
         quote
-            if (env[:state_of_schedule] == :loading && env[:process_name] == env[:savedProcessName])
+            if (env[:state_of_schedule] == :loading && env[:process_name] == env[:saved_process_name])
                 scheduler_loading()
                 env[:state_of_schedule] = :stepping # 切换调度运作状态为存储
                 @testprintln "切换调度运作状态为$(env[:state_of_schedule])"
@@ -237,7 +237,7 @@ macro scheduler_stage(stage)
             if (env[:state_of_schedule] == :stepping)
                 $(stage)
                 scheduler_stepping(env)
-            elseif (env[:state_of_schedule] == :loading && env[:stage_name] == env[:savedStageName])
+            elseif (env[:state_of_schedule] == :loading && env[:stage_name] == env[:saved_stage_name])
                 env[:state_of_schedule] = :stepping # 切换调度运作状态为步进
                 @testprintln "切换调度运作状态为$(env[:state_of_schedule])"
                 env[:is_step] = true
