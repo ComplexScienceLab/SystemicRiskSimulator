@@ -6,21 +6,26 @@
 # #状态/开发
 ##########################################
 
-## 导入相关文件及其内容
-from scripts.include.includpe_exp_files import *
-# from SystemicRisk.include.SystemicRiskSimulation import *
-# from SystemicRisk.include.Models import *
-
-import SystemicRisk as sr
-
-# from SystemicRisk.core.functions.fun_state import  calc_listOfRelationInStateOfBanks
-
-
 
 ## 导入相关包
 import os
 import numpy as np
 from enum import Enum
+import pandas as pd
+
+
+## 导入相关文件及其内容
+import SystemicRisk as sr
+from scripts.include.includpe_exp_files import *
+# from SystemicRisk.include.SystemicRiskSimulation import *
+# from SystemicRisk.include.Models import *
+
+from SystemicRisk.core import dict_to_product_list,setOfValuesOfParameterVariables,BankState
+
+
+
+
+
 
 os.getcwd()
 
@@ -35,6 +40,7 @@ if __name__ == "__main__":
     # list_combinationOfPara = @strdict model kappa_A_P kappa_BI
 
     ## 创建主文件夹用于本批次实验
+
     env = sr.set_experiments_folders()
 
     ## 建立文件以记录log
@@ -44,10 +50,10 @@ if __name__ == "__main__":
     # @testprintln "\n实验组名称：$(env['foldername_of_experiments'])"
 
     ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
-    list_combinationOfPara = dict_list(setOfValuesOfParameterVariables)  # 组合排列多结构体成为列表
-    env['num_experiment'] = length(list_combinationOfPara)  # 获取实验组之实验个数
-    df_combinationOfPara = vcat(DataFrame.(list_combinationOfPara)...)  # 转换字典列表为数据框
-    df_combinationOfPara[!, "expId"] = repeat(1: env['num_experiment'], inner = env['num_bank'])  # 添加实验组id
+    list_combinationOfPara = dict_to_product_list(setOfValuesOfParameterVariables)  # 组合排列多结构体成为列表
+    env['num_experiment'] = len(list_combinationOfPara)  # 获取实验组之实验个数
+    df_combinationOfPara = pd.DataFrame(np.asarray(list_combinationOfPara),columns=setOfValuesOfParameterVariables.keys())  # 转换字典列表为数据框
+    #NOW df_combinationOfPara[!, "expId"] = repeat(1: env['num_experiment'], inner = env['num_bank'])  # 添加实验组id
     df_combinationOfPara[!, "id"] = collect(range(1, size(df_combinationOfPara)[1], step=1))  # 添加id
     CSV.write(datadir("$(env['folderpath_of_experiments_output_data'])", "paras.csv"),
               list_combinationOfPara)  # 导出字段列表为csv格式
