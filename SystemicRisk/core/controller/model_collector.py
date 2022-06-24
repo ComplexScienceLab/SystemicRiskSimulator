@@ -5,6 +5,8 @@
 ##########################################
 # 状态/开发
 ##########################################
+import pandas as pd
+
 from SystemicRisk.core import deepcopy,SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env
 
 
@@ -103,17 +105,17 @@ TODO函数：导出实验结果数据
 
 def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: dict = para):
     ## 整理banks之数据为一数据框
-    BB_data_export = DataFrame()
-    BB_data = DataFrame()
+    BB_data_export = pd.DataFrame()
+    BB_data = pd.DataFrame()
     numRow = size(getfield(A_data.BB[1]['dataBB'], fieldnames(typeof(A_data.BB[1]['dataBB']))[1]))[1]
-    for (i1, v1) in enumerate(A_data.BB)
+    for (i1, v1) in enumerate(A_data.BB):
         BB_data[!,:data_id] = fill(v1['data_id'], numRow)
         BB_data[!,:tau] = fill(v1['tau'], numRow)
         BB_data[!,:index_process] = fill(v1['index_process'], numRow)
         BB_data[!,:index_stage] = fill(v1['index_stage'], numRow)
         fieldNames = fieldnames(typeof(v1['dataBB']))
         fieldValues = [getfield(v1['dataBB'], fieldName) for fieldName in fieldNames]
-        for (i2, v2) in enumerate(fieldValues)
+        for (i2, v2) in enumerate(fieldValues):
             BB_data[!, fieldNames[i2]] = v2
             pass
         BB_data_export.append(BB_data)
@@ -124,7 +126,7 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
     BI_data_export = DataFrame()
     BI_data = DataFrame()
     numRow, numCol = size(getfield(A_data.BI[1]['dataBI'], fieldnames(typeof(A_data.BI[1]['dataBI']))[1]))
-    for (i1, v1) in enumerate(A_data.BI)
+    for (i1, v1) in enumerate(A_data.BI):
         BI_data[!,:data_id] = fill(v1['data_id'], numRow * numCol)
         BI_data[!,:tau] = fill(v1['tau'], numRow * numCol)
         BI_data[!,:index_process] = fill(v1['index_process'], numRow * numCol)
@@ -134,16 +136,14 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
         BI_data[!,:col] = repeat(1: numCol, outer = numRow)
         fieldNames = fieldnames(typeof(v1['dataBI']))
         fieldValues = [getfield(v1['dataBI'], fieldName) for fieldName in fieldNames]
-        for (i2, v2) in enumerate(fieldValues)
+        for (i2, v2) in enumerate(fieldValues):
             if (typeof(v2) == TypeMoney{2} | | typeof(v2) == TypeState | | typeof(v2) == TypeIds{2}):
                 BI_data[!, fieldNames[i2]] = [v2'...] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
                 elif typeof(v2) == TypeList:
-                {Any}
                 ## 转换信息列表为矩阵形式
-                m2 = Matrix
-                {Any}(falses(numRow, numCol))
+                m2 = Matrix(falses(numRow, numCol))
                 for (i3, v3) in enumerate(v2)
-                for i4 in v3
+                for i4 in v3:
                 m2[i3, i4] = True
                 pass
                 pass
