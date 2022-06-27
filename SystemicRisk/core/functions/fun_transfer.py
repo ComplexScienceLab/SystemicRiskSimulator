@@ -248,6 +248,7 @@ class BankTransfer:
             self.together_transfer_B_Li_all(bank, bankState)
             self.together_T_all(bank, bankState)
         else:
+            raise Exception("关键词byWay取词错误".format(byWay))
             pass
         pass
 

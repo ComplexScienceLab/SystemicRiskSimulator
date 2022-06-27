@@ -280,6 +280,7 @@ class Shock:
             self.together_Shock_target(bank, bankState)
             self.together_Shock_run_target(bank, bankState)
         else:
+            raise Exception("关键词byWay取词错误".format(byWay))
             pass
 
 

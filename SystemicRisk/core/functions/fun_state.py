@@ -363,6 +363,7 @@ class BankState:
                 pass
                 # @testprintln "无须更新！"
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "healthy":
             if source == "any":
@@ -385,6 +386,7 @@ class BankState:
                 # @testprintln "无须更新！"
                 pass
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "insolvent":
             if source == "any":
@@ -410,6 +412,7 @@ class BankState:
                 # @testprintln "无须更新！"
                 pass
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "illiquity":
             if source == "any":
@@ -434,6 +437,7 @@ class BankState:
                 # @testprintln "无须更新！"
                 pass
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "bankrupt":
             if source == "any":
@@ -456,6 +460,7 @@ class BankState:
                 # @testprintln "无须更新！"
                 pass
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "off":
             if source == "any":
@@ -480,17 +485,20 @@ class BankState:
                 # @testprintln "无须更新！"
                 pass
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "on":
             if source == "any":
                 self.together_isOn(bank, interbank)
                 self.update_isOff_from_isOn(bank, interbank)
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "needed repay BI":
             if source == "any":
                 self.calc_isNeededBoBI(bank, interbank)
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "enabled repay BI":
             if source == "any":
@@ -498,11 +506,13 @@ class BankState:
             elif source == "needed repay BI":
                 self.calc_isEnabledBoBI_from_isNeededBoBI(bank, interbank)
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "needed repay Z_D":
             if source == "any":
                 self.calc_isNeededBoD(bank, interbank)
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "enabled repay Z_D":
             if source == "any":
@@ -510,11 +520,13 @@ class BankState:
             elif source == "needed repay Z_D":
                 self.calc_isEnabledBoD_from_isNeededBoD(bank, interbank)
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "needed collect A_P":
             if source == "any":
                 self.calc_isNeededLiP(bank, interbank)
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == "enabled collect A_P":
             if source == "any":
@@ -522,8 +534,10 @@ class BankState:
             elif source == "needed collect A_P":
                 self.calc_isEnabledLiP_from_isNeededLiP(bank, interbank)
             else:
+                raise Exception("关键词source取词错误".format(source))
                 pass
         else:
+            raise Exception("关键词target取词错误".format(target))
             pass
         pass # functions
 
