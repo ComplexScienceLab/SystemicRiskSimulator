@@ -187,6 +187,7 @@ class BalanceSheet:
             # together_B_A_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
         else:
+            raise Exception("关键词byWay取词错误".format(byWay))
             pass
         pass
 
