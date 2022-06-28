@@ -5,11 +5,17 @@
 ##########################################
 
 "函数：破产银行应偿还负债冲击阶段"#HACK冗余，可以替代以
+
+from SystemicRisk.core import TypeState, BankInterbank, BankCommercial, BankState
+
+
+# from SystemicRisk.model.stages import *
+
 def stage_bankrupt_repay_shock(self, BB:BankCommercial, BI:BankInterbank, b:TypeState, ib:TypeState, para:dict, env:dict):
     ## # 破产银行遭受偿还冲击
     # @testprintln "开始阶段$(env['stage_name'])："
 
-    update_B_state(BB, BI; to="bankrupt", from="any")
+    BankState.update_B_state(BB, BI, target = "bankrupt", source = "any")
     BB.Shock_D_run_t[BB.br] = BB.Zm_D[BB.br] # 计算破产银行遭受偿还居民存款冲击
     BB.Shock_BI_t[BB.br] = BB.Z_BI_all[BB.br] # 计算破产银行遭受偿还银行间负债冲击
 
