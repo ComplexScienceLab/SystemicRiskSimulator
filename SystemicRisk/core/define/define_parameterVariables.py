@@ -6,6 +6,8 @@
 # 状态/使用
 ##########################################
 
+
+
 from scripts.variables.set_parameterVariables import *
 
 ## 生成字典变量
@@ -18,4 +20,4 @@ setOfValuesOfParameterVariables = dict(
     kappa_BI=kappa_BI,
 )
 
-# para = setOfValuesOfParameterVariables # 别名
+para = setOfValuesOfParameterVariables # 别名
