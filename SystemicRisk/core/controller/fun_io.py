@@ -5,6 +5,7 @@
 ##########################################
 #状态/使用
 ##########################################
+import os.path
 
 """
 函数：设置实验文件夹
@@ -14,7 +15,8 @@
 # Return:
 - env:EnvironmentVariables: 环境变量，此时内部内容已经被更新；
 """
-import time
+
+from SystemicRisk import time,env
 
 def set_experiments_folders(self, env:dict=env, isDatetime:bool=True):
 
@@ -31,16 +33,16 @@ def set_experiments_folders(self, env:dict=env, isDatetime:bool=True):
     elif env['foldername_type_of_experiments'] == "set manually":
         str_manuallyName = env['foldername_prefix_of_experiments']
     else:
-        throw(DomainError(env['foldername_type_of_experiments'], "关键词取值错误！"))
+        raise Exception("关键词取值错误！".format(env['foldername_type_of_experiments']))
         pass
 
     env['foldername_of_experiments'] = str_manuallyName * str_datetime
-    env['folderpath_of_experiments'] = joinpath(env['root_dir_of_experiments'], env['foldername_of_experiments'])
+    env['folderpath_of_experiments'] = os.path.join(env['root_dir_of_experiments'], env['foldername_of_experiments'])
 
-    mkpath(env['folderpath_of_experiments']) # 创建文件夹
-    env['folderpath_of_experiments_output_data'] = joinpath(env['folderpath_of_experiments'], env['foldername_of_experiments_output_data'])
+    os.mkdir(env['folderpath_of_experiments']) # 创建文件夹
+    env['folderpath_of_experiments_output_data'] = os.path.join(env['folderpath_of_experiments'], env['foldername_of_experiments_output_data'])
     # cd("$(env['folderpath_of_experiments'])")
-    mkpath(env['folderpath_of_experiments_output_data']) # 创建文件夹，以导出实验输出数据
+    os.mkdir(env['folderpath_of_experiments_output_data']) # 创建文件夹，以导出实验输出数据
 
     return env
     pass # functioin

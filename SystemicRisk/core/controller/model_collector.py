@@ -5,9 +5,10 @@
 ##########################################
 # 状态/开发
 ##########################################
-import pandas as pd
+import os.path
 
-from SystemicRisk.core import deepcopy,SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env
+from SystemicRisk.core import np,pd,deepcopy,SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env,para
+
 
 
 class ModelCollector:
@@ -107,33 +108,33 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
     ## 整理banks之数据为一数据框
     BB_data_export = pd.DataFrame()
     BB_data = pd.DataFrame()
-    numRow = size(getfield(A_data.BB[1]['dataBB'], fieldnames(typeof(A_data.BB[1]['dataBB']))[1]))[1]
+    numRow = np.size(A_data.BB[0]['dataBB'][0])[0]
     for (i1, v1) in enumerate(A_data.BB):
-        BB_data[!,:data_id] = fill(v1['data_id'], numRow)
-        BB_data[!,:tau] = fill(v1['tau'], numRow)
-        BB_data[!,:index_process] = fill(v1['index_process'], numRow)
-        BB_data[!,:index_stage] = fill(v1['index_stage'], numRow)
-        fieldNames = fieldnames(typeof(v1['dataBB']))
-        fieldValues = [getfield(v1['dataBB'], fieldName) for fieldName in fieldNames]
+        BB_data['data_id'] = np.full(v1['data_id'], numRow)
+        BB_data['tau'] = np.full(v1['tau'], numRow)
+        BB_data['index_process'] = np.full(v1['index_process'], numRow)
+        BB_data['index_stage'] = np.full(v1['index_stage'], numRow)
+        fieldNames = list(v1['dataBB'].keys())
+        fieldValues = list(v1['dataBB'].values())
         for (i2, v2) in enumerate(fieldValues):
-            BB_data[!, fieldNames[i2]] = v2
+            BB_data[fieldNames[i2]] = v2
             pass
         BB_data_export.append(BB_data)
         pass
-    CSV.write(datadir("$(env['folderpath_of_experiments_output_data'])", "BB_exp=$(env['id_experiment']).csv"), BB_data_export)  # 导出为csv格式；
+    BB_data_export.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "BB_exp="+env['id_experiment']+".csv")) # 导出为csv格式；
 
     ## 整理interbank之数据为一数据框
-    BI_data_export = DataFrame()
-    BI_data = DataFrame()
-    numRow, numCol = size(getfield(A_data.BI[1]['dataBI'], fieldnames(typeof(A_data.BI[1]['dataBI']))[1]))
+    BI_data_export = pd.DataFrame()
+    BI_data = pd.DataFrame()
+    numRow, numCol = np.size(A_data.BI[0]['dataBI'][0])
     for (i1, v1) in enumerate(A_data.BI):
-        BI_data[!,:data_id] = fill(v1['data_id'], numRow * numCol)
-        BI_data[!,:tau] = fill(v1['tau'], numRow * numCol)
-        BI_data[!,:index_process] = fill(v1['index_process'], numRow * numCol)
-        BI_data[!,:index_stage] = fill(v1['index_stage'], numRow * numCol)
-        BI_data[!,:index_stage] = fill(v1['index_stage'], numRow * numCol)
-        BI_data[!,:row] = repeat(1: numRow, inner = numCol)
-        BI_data[!,:col] = repeat(1: numCol, outer = numRow)
+        BI_data['data_id'] = np.full(v1['data_id'], numRow * numCol)
+        BI_data['tau'] = np.full(v1['tau'], numRow * numCol)
+        BI_data['index_process'] = np.full(v1['index_process'], numRow * numCol)
+        BI_data['index_stage'] = np.full(v1['index_stage'], numRow * numCol)
+        BI_data['index_stage'] = np.full(v1['index_stage'], numRow * numCol)
+        BI_data['row'] = repeat(1: numRow, inner = numCol)
+        BI_data['col'] = repeat(1: numCol, outer = numRow)
         fieldNames = fieldnames(typeof(v1['dataBI']))
         fieldValues = [getfield(v1['dataBI'], fieldName) for fieldName in fieldNames]
         for (i2, v2) in enumerate(fieldValues):
