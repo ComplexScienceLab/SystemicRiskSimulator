@@ -7,8 +7,7 @@
 ##########################################
 import os.path
 
-from SystemicRisk.core import np,pd,deepcopy,SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env,para
-
+from SystemicRisk.core import np, pd, deepcopy, SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env, para, TypeMoney, TypeState, TypeIds, TypeList
 
 
 class ModelCollector:
@@ -133,29 +132,29 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
         BI_data['index_process'] = np.full(v1['index_process'], numRow * numCol)
         BI_data['index_stage'] = np.full(v1['index_stage'], numRow * numCol)
         BI_data['index_stage'] = np.full(v1['index_stage'], numRow * numCol)
-        BI_data['row'] = repeat(1: numRow, inner = numCol)
-        BI_data['col'] = repeat(1: numCol, outer = numRow)
-        fieldNames = fieldnames(typeof(v1['dataBI']))
-        fieldValues = [getfield(v1['dataBI'], fieldName) for fieldName in fieldNames]
+        BI_data['row'] = np.repeat(range(1,numRow+1), numCol)
+        BI_data['col'] = np.tile(range(1,numCol+1), numRow)
+        fieldNames = list(v1['dataBI'].keys())
+        fieldValues = list(v1['dataBI'].values())
         for (i2, v2) in enumerate(fieldValues):
-            if (typeof(v2) == TypeMoney{2} | | typeof(v2) == TypeState | | typeof(v2) == TypeIds{2}):
-                BI_data[!, fieldNames[i2]] = [v2'...] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
-                elif typeof(v2) == TypeList:
+            if (isinstance(v2,TypeMoney) | isinstance(v2,TypeState) | isinstance(v2,TypeIds)):
+                BI_data[fieldNames[i2]] = [v2.T] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
+            elif isinstance(v2,TypeList):
                 ## 转换信息列表为矩阵形式
-                m2 = Matrix(falses(numRow, numCol))
-                for (i3, v3) in enumerate(v2)
-                for i4 in v3:
-                m2[i3, i4] = True
-                pass
-                pass
-                BI_data[!, fieldNames[i2]] =[m2'...] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
-                pass
-                pass
-                BI_data_export.append(BI_data)
-                pass
-                CSV.write(datadir("$(env['folderpath_of_experiments_output_data'])", "BI_exp=$(env['id_experiment']).csv"), BI_data_export)  # 导出为csv格式
+                m2 = np.full((numRow, numCol),False)
+                for (i3, v3) in enumerate(v2):
+                    for i4 in v3:
+                        m2[i3, i4] = True
+                        pass
+                    pass
+                BI_data[fieldNames[i2]] =[m2.T] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
+                pass # if
+            pass # for
+            BI_data_export.append(BI_data)
+        pass # for
+    BI_data_export.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "BI_exp="+env['id_experiment']+".csv")) # 导出为csv格式；
 
-                ## 整理env之数据为一数据框，然后导出为csv格式
-                # wsave(datadir(env['folderpath_of_experiments_output_data'], savename(para, "|exp=$(env['id_experiment']).jld2", connector="|", equals="=")), para)
+    ## 整理env之数据为一数据框，然后导出为csv格式
+    # wsave(datadir(env['folderpath_of_experiments_output_data'], savename(para, "|exp=$(env['id_experiment']).jld2", connector="|", equals="=")), para)
 
-                pass
+    pass # def
