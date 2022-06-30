@@ -4,8 +4,7 @@
 
 # from SystemicRisk.core.define.define_agents import *
 # from SystemicRisk.model.models.model_content import *
-from SystemicRisk.core import np, env
-from SystemicRisk.core import BankCommercial, BankInterbank
+from SystemicRisk.core import np, env, BankCommercial, BankInterbank, AgentDataCollection
 
 
 #
@@ -17,6 +16,8 @@ class ModelSetter:
     """
     设置模型及其变量
     """
+
+    A_data = AgentDataCollection()
 
     # TODO"随机化初始化银行变量"
     def init_B_variables_randomly(self):
@@ -159,7 +160,7 @@ class ModelSetter:
     - `manually`:  手动设置以初始化；
     """
 
-    def init_B_and_BI(self, init_method: str):
+    def init_B_and_BI(self, init_method: str, A_data: AgentDataCollection):
         """
 
         :param init_method:
@@ -192,8 +193,7 @@ class ModelSetter:
 
         # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组
         A_data = nothing
-        A_data = collector(A;
-        state_of_process = env['state_of_process'])
+        A_data = collector(A, state_of_process=env['state_of_process'])
 
         # A_data.BB = StructArray([BB for i = 1:env['max_num_of_tau']]) # 初始化带回合变量的商业银行实例数组
         # A_data.BI = StructArray([BI for i = 1:env['max_num_of_tau']]) # 初始化带回合变量的银行间市场实例数组
@@ -202,11 +202,8 @@ class ModelSetter:
         b = (BB.on | BB.off)  # 临时设置BB示性变量
         ib = ((BB.on | BB.off) & (BB.on | BB.off)).T  # 临时设置BI示性变量
         update_B_Shock(BB, BI, b, ib, byWay="all")  # 更新各银行之所有冲击变量，在第一回合开始时
-        update_B_balanceSheet(BB, BI, b, ib;
-        byWay = "all")  # 更新各银行之资产负债表变量
-        update_B_state(BB, BI;
-        to = "any",
-        from="any")  # 更新各银行之状态示性变量
+        update_B_balanceSheet(BB, BI, b, ib, byWay="all")  # 更新各银行之资产负债表变量
+        update_B_state(BB, BI, target="any", source="any")  # 更新各银行之状态示性变量
 
         ## 存储初始数据
         # A_data.BB_0 = deepcopy(BB)
