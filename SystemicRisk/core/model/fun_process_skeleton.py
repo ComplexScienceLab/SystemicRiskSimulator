@@ -5,6 +5,7 @@
 ##########################################
 #状态/开发
 ##########################################
+from SystemicRisk.core import deepcopy,SystemicRiskAgent, ProcessComponent, AgentDataCollection,StateOfScheduleEnum,ModelSchedulers,ModelRunner
 
 """
 通用过程框架：
@@ -35,6 +36,7 @@ def fun_process_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, process
         ## 回合数变动
         if (env['loadedIndexStage'] != 1):
             # @testprintln "\n继续回合：$(env['tau'])"
+            pass
         else:
             env['tau'] += 1 # 回合累加一
             # @testprintln "\n开始回合：$(env['tau'])"
@@ -44,42 +46,42 @@ def fun_process_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, process
         BB_Shock_t_t1 = deepcopy(A.BB.Shock_t)
         BB_isv_t1 = deepcopy(A.BB.isv)
 
-        b = TypeState(A.BB.on | A.BB.off) # 临时设置BB示性变量
-        ib = TypeState((A.BB.on | A.BB.off) & (A.BB.on | A.BB.off)') # 临时设置BI示性变量
+        b = (A.BB.on | A.BB.off) # 临时设置BB示性变量
+        ib = (A.BB.on | A.BB.off) & (A.BB.on | A.BB.off).T # 临时设置BI示性变量
 
         ## 运行每一个阶段
-        for (idx_stage, stage) in enumerate(process.content)
+        for (idx_stage, stage) in enumerate(process.content):
             env['index_stage'] = idx_stage
-            env['stage_name'] = Symbol(stage.functionName)
+            env['stage_name'] = str(stage.functionName)
             # @testprintln "阶段$(env['index_stage'])：$(env['stage_name'])"
 
             ## 调度并运行状态
             if env['state_of_schedule'] == StateOfScheduleEnum.loading:
-                env['state_of_schedule'] = scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule']) # 调度读取
+                env['state_of_schedule'] = ModelSchedulers.scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule']) # 调度读取
                 pass
             if env['state_of_schedule'] == StateOfScheduleEnum.stepping:
-                A = runStage(A, b, ib, para, env, stage)
-                env['step'], env['is_step'], env['state_of_schedule'] = scheduler_stepping(env['step'], env['step_size']) # 步进
+                A = ModelRunner.runStage(A, b, ib, para, env, stage)
+                env['step'], env['is_step'], env['state_of_schedule'] = ModelSchedulers.scheduler_stepping(env['step'], env['step_size']) # 步进
                 pass
 
-            is_step() # 判断是否继续运行步进
+            ModelSchedulers.is_step() # 判断是否继续运行步进
             if env['is_step'] == False: # 如果步进停止，则跳出该循环:
                 break
                 pass
             pass # for
 
 
-        env['is_rocess'] = is_rocess(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_rocess'], env['stage_name'], process) # 判断是否继续运行过程
+        env['is_rocess'] = ModelSchedulers.is_process(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_rocess'], env['stage_name'], process) # 判断是否继续运行过程
 
         if env['state_of_schedule'] == StateOfScheduleEnum.saving:
-            env['saved_index_process'], env['saved_index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule'] = scheduler_saving(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['is_rocess']) # 调度存储
+            env['saved_index_process'], env['saved_index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule'] = ModelSchedulers.scheduler_saving(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['is_rocess']) # 调度存储
             pass
         if (env['state_of_schedule'] == StateOfScheduleEnum.collecting & env['state_of_process'] == StateOfScheduleEnum.running):
-            env['state_of_schedule'] = scheduler_collecting(A, A_data)
+            env['state_of_schedule'] = ModelSchedulers.scheduler_collecting(A, A_data)
             pass
 
-        is_round() # 判断是否继续运行回合
-        is_loop() # 判断是否继续运行循环
+        ModelSchedulers.is_round() # 判断是否继续运行回合
+        ModelSchedulers.is_loop() # 判断是否继续运行循环
         pass # while
 
     return A, para, env, A_data

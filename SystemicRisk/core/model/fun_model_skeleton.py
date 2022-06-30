@@ -6,6 +6,8 @@
 #状态/开发
 ##########################################
 
+from SystemicRisk.core import SystemicRiskAgent, ModelComponent, AgentDataCollection,ModelRunner,StateOfScheduleEnum
+
 """
 通用模型框架：
 
@@ -26,22 +28,23 @@ def fun_model_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, model:Mod
     if (env['is_model']):
         if (env['tau'] > 1):
             # @testprintln "\n继续模型：$(env['model_name'])"
+            pass
         else:
             # @testprintln "\n开始模型：$(env['model_name'])"
             pass
         pass
 
     ## 运行每个过程
-    for (idx_process, process) in enumerate(model.content)
+    for (idx_process, process) in enumerate(model.content):
         env['index_process'] = idx_process
         if env['index_process'] == env['loadedIndexProcess']: # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。:
-            env['process_name'] = Symbol(process.functionName)
-            A, para, env, A_data = runProcess(A, para, env, process, A_data)
+            env['process_name'] = str(process.functionName)
+            A, para, env, A_data = ModelRunner.runProcess(A, para, env, process, A_data)
             pass
         pass # for
 
     ## 判断是否结束步进
-    if !env['is_step']:
+    if ~env['is_step']:
         # @testprintln "步进已结束，跳出模型：$(env['model_name'])。"
         pass
     # 判断是否结束模型
@@ -49,7 +52,7 @@ def fun_model_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, model:Mod
         env['is_model'] = False
         env['is_experiment'] = False
         pass
-    if (!env['is_model'] | !env['is_experiment']):
+    if (~env['is_model'] | ~env['is_experiment']):
         # @testprintln "结束模型：$(env['model_name'])。\n"
         pass
 
