@@ -20,7 +20,7 @@ from scripts.variables.set_environmentVariables import *
 from scripts.variables.set_parameterVariables import *
 # from SystemicRisk.include.SystemicRiskSimulation import *
 # from SystemicRisk.include.Models import *
-from SystemicRisk.core import Tools, ModelSetter, ModelRunner, ModelSchedulers, setOfValuesOfParameterVariables, BankState, ModelBuilder, StateOfScheduleEnum, ModelIO
+from SystemicRisk.core import Tools, ModelSetter, ModelRunner, ModelScheduler, setOfValuesOfParameterVariables, BankState, ModelBuilder, StateOfScheduleEnum, ModelIO
 from SystemicRisk.model import modelContent_BI1111
 
 os.getcwd()
@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
         ## 调度：生成位置索引
         if env['state_of_schedule'] == StateOfScheduleEnum.indexing:
-            env['index_of_schedule_position'], env['state_of_schedule'] = ModelSchedulers.scheduler_indexing(model)
+            env['index_of_schedule_position'], env['state_of_schedule'] = ModelScheduler.scheduler_indexing(model)
             pass
 
         # @testprintln    "\n实验$(env['id_experiment'])/$(length(list_combinationOfPara))开始："

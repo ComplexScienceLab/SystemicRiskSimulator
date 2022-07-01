@@ -5,7 +5,7 @@
 ##########################################
 #状态/开发
 ##########################################
-from SystemicRisk.core import deepcopy,SystemicRiskAgent, ProcessComponent, AgentDataCollection,StateOfScheduleEnum,ModelSchedulers,ModelRunner
+from SystemicRisk.core import deepcopy,SystemicRiskAgent, ProcessComponent, AgentDataCollection,StateOfScheduleEnum,ModelScheduler,ModelRunner
 
 """
 通用过程框架：
@@ -57,31 +57,31 @@ def fun_process_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, process
 
             ## 调度并运行状态
             if env['state_of_schedule'] == StateOfScheduleEnum.loading:
-                env['state_of_schedule'] = ModelSchedulers.scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule']) # 调度读取
+                env['state_of_schedule'] = ModelScheduler.scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule']) # 调度读取
                 pass
             if env['state_of_schedule'] == StateOfScheduleEnum.stepping:
                 A = ModelRunner.runStage(A, b, ib, para, env, stage)
-                env['step'], env['is_step'], env['state_of_schedule'] = ModelSchedulers.scheduler_stepping(env['step'], env['step_size']) # 步进
+                env['step'], env['is_step'], env['state_of_schedule'] = ModelScheduler.scheduler_stepping(env['step'], env['step_size']) # 步进
                 pass
 
-            ModelSchedulers.is_step() # 判断是否继续运行步进
+            ModelScheduler.is_step() # 判断是否继续运行步进
             if env['is_step'] == False: # 如果步进停止，则跳出该循环:
                 break
                 pass
             pass # for
 
 
-        env['is_rocess'] = ModelSchedulers.is_process(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_rocess'], env['stage_name'], process) # 判断是否继续运行过程
+        env['is_rocess'] = ModelScheduler.is_process(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_rocess'], env['stage_name'], process) # 判断是否继续运行过程
 
         if env['state_of_schedule'] == StateOfScheduleEnum.saving:
-            env['saved_index_process'], env['saved_index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule'] = ModelSchedulers.scheduler_saving(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['is_rocess']) # 调度存储
+            env['saved_index_process'], env['saved_index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule'] = ModelScheduler.scheduler_saving(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['is_rocess']) # 调度存储
             pass
         if (env['state_of_schedule'] == StateOfScheduleEnum.collecting & env['state_of_process'] == StateOfScheduleEnum.running):
-            env['state_of_schedule'] = ModelSchedulers.scheduler_collecting(A, A_data)
+            env['state_of_schedule'] = ModelScheduler.scheduler_collecting(A, A_data)
             pass
 
-        ModelSchedulers.is_round() # 判断是否继续运行回合
-        ModelSchedulers.is_loop() # 判断是否继续运行循环
+        ModelScheduler.is_round() # 判断是否继续运行回合
+        ModelScheduler.is_loop() # 判断是否继续运行循环
         pass # while
 
     return A, para, env, A_data
