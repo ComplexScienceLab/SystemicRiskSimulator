@@ -4,7 +4,8 @@
 
 # from SystemicRisk.core.define.define_agents import *
 # from SystemicRisk.model.models.model_content import *
-from SystemicRisk.core import np, env, BankCommercial, BankInterbank, AgentDataCollection
+from SystemicRisk.core import np, env, BankCommercial, BankInterbank
+from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection
 
 
 #

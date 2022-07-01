@@ -5,7 +5,8 @@
 ##########################################
 #状态/开发
 ##########################################
-from SystemicRisk.core import deepcopy,SystemicRiskAgent, ProcessComponent, AgentDataCollection,StateOfScheduleEnum,ModelScheduler,ModelRunner
+from SystemicRisk.core import deepcopy,SystemicRiskAgent, ProcessComponent
+from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection,StateOfScheduleEnum,ModelScheduler,ModelRunner
 
 """
 通用过程框架：
