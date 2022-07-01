@@ -6,7 +6,14 @@
 # 状态/开发
 ##########################################
 
-from SystemicRisk.core import np, env, SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, ModelComponent, ModelCollector
+# from SystemicRisk.core import np, env, SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, ModelComponent, ModelCollector
+from SystemicRisk import np
+from SystemicRisk.core.define.define_environment_variables import env
+from SystemicRisk.core.define.define_agents import SystemicRiskAgent
+from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection
+from SystemicRisk.core.define.define_enum import StateOfScheduleEnum
+from SystemicRisk.core.define.define_component import ModelComponent
+from SystemicRisk.core.controller.model_collector import ModelCollector
 
 
 class ModelScheduler:

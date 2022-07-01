@@ -31,8 +31,8 @@ class BaseInterAgents:
     pass
 
 
-# class BankCommercial(BaseAgents):
-class BankCommercial:
+# class BankCommercial:
+class BankCommercial(BaseAgents):
     """
     商业银行群复合类
     """
@@ -197,11 +197,13 @@ class BankCommercial:
         self.listOfInsolvent = np.full(env['num_bank'], list),  # 列表之于资不抵债的银行编号 listOfInsolvent
         self.listOfIlliquity = np.full(env['num_bank'], list),  # 列表之于流动性短缺的银行编号 listOfIlliquity
         self.listOfBankrupt = np.full(env['num_bank'], list)  # 列表之于破产的银行编号 listOfBankrupt
-        pass
+        pass # init
+
+    pass # class
 
 
-# class BankInterbank(BaseInterAgents):
-class BankInterbank:
+# class BankInterbank:
+class BankInterbank(BaseInterAgents):
     """
     银行间邻接矩阵复合类
     """
@@ -269,9 +271,9 @@ class BankInterbank:
         self.deb_isv = [],  # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquity
         self.cre_ilq = [],  # 信息列表之于破产的银行之债权方银行编号 listOfCreditorsInBankrupt
         self.deb_ilq = []  # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
-        pass
+        pass # init
 
-    pass
+    pass # class
 
 
 class SystemicRiskAgent:
