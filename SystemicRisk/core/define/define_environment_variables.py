@@ -7,11 +7,12 @@
 # 备注：改成用字典表示
 ##########################################
 
-
 from scripts.variables.set_environmentVariables import *
 
+# exec()
+
 ## 生成字典变量 #HACK 如何实现自动生成字典变量？
-env = dict(
+environmentVariables = dict(
     init_method=init_method,
     foldername_type_of_experiments=foldername_type_of_experiments,
     foldername_prefix_of_experiments=foldername_prefix_of_experiments,
@@ -52,4 +53,4 @@ env = dict(
     saved_index_stage=saved_index_stage,
 )
 
-# env = environmentVariables # 别名
+env = environmentVariables  # 别名

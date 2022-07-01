@@ -6,7 +6,9 @@
 #状态/开发
 ##########################################
 
-from SystemicRisk.core import SystemicRiskAgent, ModelComponent, AgentDataCollection,ModelRunner,StateOfScheduleEnum
+from SystemicRisk.core import SystemicRiskAgent
+from SystemicRisk.core.define.define_component import ModelComponent
+from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection,ModelRunner,StateOfScheduleEnum
 
 """
 通用模型框架：

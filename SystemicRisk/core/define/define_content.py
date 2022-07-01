@@ -1,8 +1,7 @@
 "程序：定义模型内容结构体"
 
 from SystemicRisk.core.define.define_type import *
-from SystemicRisk.core import ModelRunner
-
+# from SystemicRisk.core.controller.model_runner import ModelRunner
 
 
 class Content:
@@ -26,7 +25,8 @@ class StageContent(Content):
     """
     定义阶段组件内容结构体
     """
-    modelFunction: ModelRunner.run_stage()  # 函数
+    # modelFunction = ModelRunner.run_stage  # 函数
+    modelFunction = None  # 函数
 
     def __init__(self, id, function_name, text_name, model_function):
         Content.__init__(id, function_name, text_name)

@@ -21,7 +21,7 @@ from copy import deepcopy
 # from scripts.include.include_exp_files import *
 
 ## 集成核心文件
-from .core import *
+# from .core import *
 
 ## 集成模型包
-from .model import *
+# from .model import *

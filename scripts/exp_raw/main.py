@@ -16,11 +16,19 @@ import pandas as pd
 ## 导入相关文件及其内容
 # import SystemicRisk as sr
 # from scripts.include.includpe_exp_files import *
-from scripts.variables.set_environmentVariables import *
-from scripts.variables.set_parameterVariables import *
 # from SystemicRisk.include.SystemicRiskSimulation import *
 # from SystemicRisk.include.Models import *
-from SystemicRisk.core import Tools, ModelSetter, ModelRunner, ModelScheduler, setOfValuesOfParameterVariables, BankState, ModelBuilder, StateOfScheduleEnum, ModelIO
+# from SystemicRisk.core.define.define_enum import StateOfScheduleEnum
+from SystemicRisk.core.define.define_parameterVariables import para
+from scripts.variables.set_environmentVariables import *
+# from scripts.variables.set_parameterVariables import *
+from SystemicRisk.core.controller.fun_tools import Tools
+# from SystemicRisk.core.controller.model_setter import ModelSetter
+from SystemicRisk.core.controller.model_runner import ModelRunner
+from SystemicRisk.core.controller.fun_scheduler import ModelScheduler
+# from SystemicRisk.core.functions.fun_state import BankState
+from SystemicRisk.core.controller.model_builder import ModelBuilder
+from SystemicRisk.core.controller.fun_io import ModelIO
 from SystemicRisk.model import modelContent_BI1111
 
 os.getcwd()
@@ -43,9 +51,9 @@ if __name__ == "__main__":
     # @testprintln "\n实验组名称：$(env['foldername_of_experiments'])"
 
     ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
-    list_combinationOfPara = Tools.dict_to_product_list(setOfValuesOfParameterVariables)  # 组合排列多结构体成为列表
+    list_combinationOfPara = Tools.dict_to_product_list(para)  # 组合排列多结构体成为列表
     env['num_experiment'] = len(list_combinationOfPara)  # 获取实验组之实验个数
-    df_combinationOfPara = pd.DataFrame(np.asarray(list_combinationOfPara), columns=setOfValuesOfParameterVariables.keys())  # 转换字典列表为数据框
+    df_combinationOfPara = pd.DataFrame(np.asarray(list_combinationOfPara), columns=para.keys())  # 转换字典列表为数据框
     df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
     df_combinationOfPara.insert(loc=0, column='id', value=list(range(1, len(df_combinationOfPara) + 1)), axis=0)  # 添加数据项id
     df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "paras.csv"), df_combinationOfPara)  # 导出字段列表为csv格式
@@ -59,8 +67,8 @@ if __name__ == "__main__":
 
     ## 构建本次实验组所需的所有模型
     model = ModelBuilder.buildModel(modelContent_BI1111)  # 根据基准模型BI1111预先初始化model变量
-    if len(setOfValuesOfParameterVariables['model_name']) > 1:
-        for model_name in setOfValuesOfParameterVariables['model_name'][1:-1]:
+    if len(para['model_name']) > 1:
+        for model_name in para['model_name'][1:-1]:
             modelContent = eval("modelContent_" + model_name)
             # if True: # FIXME如果不存在模型文件，则构建模型
             model = ModelBuilder.buildModel(modelContent)
