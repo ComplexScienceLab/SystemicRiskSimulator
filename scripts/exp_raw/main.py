@@ -14,13 +14,13 @@ from enum import Enum
 import pandas as pd
 
 ## 导入相关文件及其内容
-import SystemicRisk as sr
-from scripts.include.includpe_exp_files import *
+# import SystemicRisk as sr
+# from scripts.include.includpe_exp_files import *
+from scripts.variables.set_environmentVariables import *
+from scripts.variables.set_parameterVariables import *
 # from SystemicRisk.include.SystemicRiskSimulation import *
 # from SystemicRisk.include.Models import *
-
-
-from SystemicRisk.core import Tools, RunModel, ModelSchedulers, setOfValuesOfParameterVariables, BankState, ModelBuilder, StateOfScheduleEnum as S
+from SystemicRisk.core import Tools, ModelSetter, ModelRunner, ModelSchedulers, setOfValuesOfParameterVariables, BankState, ModelBuilder, StateOfScheduleEnum, ModelIO
 from SystemicRisk.model import modelContent_BI1111
 
 os.getcwd()
@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     ## 创建主文件夹用于本批次实验
 
-    env = sr.set_experiments_folders()
+    env = ModelIO.set_experiments_folders()
 
     ## 建立文件以记录log
     f = open(os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"), "w")
@@ -97,14 +97,14 @@ if __name__ == "__main__":
         env['is_rocess'] = True
         env['is_model'] = True
         env['is_experiment'] = True
-        env['state_of_schedule'] = S.indexing
-        env['state_of_process'] = S.idle
+        env['state_of_schedule'] = StateOfScheduleEnum.indexing
+        env['state_of_process'] = StateOfScheduleEnum.idle
 
         ## 生成模型内容
         # modelComponent = eval(Meta.parse(para['model_name']))
 
         ## 调度：生成位置索引
-        if env['state_of_schedule'] == S.indexing:
+        if env['state_of_schedule'] == StateOfScheduleEnum.indexing:
             env['index_of_schedule_position'], env['state_of_schedule'] = ModelSchedulers.scheduler_indexing(model)
             pass
 
@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
         ## 进行实验
 
-        RunModel.makesim(model, para, env)
+        ModelRunner.makesim(model, para, env)
 
         # @testprintln    "本次实验结束，还剩下$(length(list_combinationOfPara)-env['id_experiment'])个实验。\n"
         pass  # for
@@ -122,4 +122,4 @@ if __name__ == "__main__":
     print("实验组结束。")
 
     f.close()
-    pass # main
+    pass  # main

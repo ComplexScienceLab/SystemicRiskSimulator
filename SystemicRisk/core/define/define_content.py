@@ -1,17 +1,16 @@
 "程序：定义模型内容结构体"
 import numpy as np
 
-from SystemicRisk import ModelRunner
-from SystemicRisk.core.define.define_type import *
-
+from SystemicRisk.core import ModelRunner, TypeItemId, TypeItemFunctionName, TypeItemTextName
 
 class Content:
     """
     定义抽象内容
+
     """
-    id: typeItemId  # 编号 id
-    functionName: np.dtype(np.str)  # 函数名称 name
-    textName: np.dtype(np.str)  # 文本名称 name
+    id: TypeItemId  # 编号 id
+    functionName: TypeItemFunctionName  # 函数名称 name
+    textName: TypeItemTextName  # 文本名称 name
 
     def __init__(self, id, function_name, text_name):
         self.id = id

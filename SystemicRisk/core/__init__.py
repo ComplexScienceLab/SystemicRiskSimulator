@@ -26,7 +26,6 @@ from .controller.fun_schedulers import *
 from .controller.model_builder import *
 from .controller.model_runner import *
 from .controller.model_collector import *
-from .controller.fun_agentModel import *
 from .controller.fun_makesim import *
 
 ## 集成管理功能文件
