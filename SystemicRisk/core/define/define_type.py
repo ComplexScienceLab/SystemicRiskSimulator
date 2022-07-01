@@ -31,9 +31,9 @@ TypeList = list  # 一维向量状态类型
 # EnvironmentVariables = dict # 环境变量字典类型
 # ParameterVariables = dict # 参数变量字典类型
 # primitive type EnvironmentVariables <: AbstractDict{Any,Any}     pass
-typeItemId = np.dtype(np.int8)
-typeItemFunctionName = np.dtype(np.str)
-typeItemTextName = np.dtype(np.str)
+TypeItemId = np.dtype(np.int8)
+TypeItemFunctionName = np.dtype(np.str)
+TypeItemTextName = np.dtype(np.str)
 # ItemList = Vector{ItemFunctionName}
 # # ItemList = Vector{S}
 # class ComponentHierarchyType     pass # 定义组件层级结构类型：模型Model、过程Process、阶段Stage；
