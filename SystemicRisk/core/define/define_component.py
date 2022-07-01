@@ -1,7 +1,7 @@
 "程序：定义模型及其相关的结构体"
 
 from define_type import *
-from SystemicRisk import ModelRunner
+from SystemicRisk.core import ModelRunner
 
 
 class Component:

@@ -9,7 +9,7 @@
 from SystemicRisk.core import np, env, SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, ModelComponent, ModelCollector
 
 
-class ModelSchedulers:
+class ModelScheduler:
     """
     函数：调度器 #HACK 或将废弃
 
