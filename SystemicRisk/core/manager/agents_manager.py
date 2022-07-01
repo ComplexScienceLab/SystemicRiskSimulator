@@ -11,7 +11,8 @@ class agents_manager:
     """
     主体众管理器
     """
-    agent:SystemicRiskAgent
+    a:SystemicRiskAgent
+
 
 
     pass

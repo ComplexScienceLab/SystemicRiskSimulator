@@ -9,7 +9,7 @@
 # 状态/开发
 ##########################################
 
-from SystemicRisk import ModelComponent, ProcessComponent, StageComponent, ModelRunner
+from SystemicRisk.core import ModelComponent, ProcessComponent, StageComponent, ModelContent, ModelRunner, ProcessContent, StageContent, ModelBuilder, ModelScheduler, ModelCollector, ModelSetter
 
 
 class ModelManager:
@@ -19,5 +19,12 @@ class ModelManager:
     modelComponent: ModelComponent
     processComponent: ProcessComponent
     stageComponent: StageComponent
-    modelRunner: ModelRunner
+    modelContent: ModelContent
+    processContent: ProcessContent
+    stageContent: StageContent
+    run: ModelRunner
+    build: ModelBuilder
+    schedule: ModelScheduler
+    collect: ModelCollector
+    set: ModelSetter
     pass
