@@ -3,7 +3,8 @@
 ##########################################
 # 状态/使用
 ##########################################
-from SystemicRisk.core import ModelContent, ProcessContent, StageContent, ModelComponent, ProcessComponent, StageComponent, fun_model_skeleton, fun_process_skeleton
+from SystemicRisk.core import ModelContent, ProcessContent, StageContent
+from SystemicRisk.core.define.define_component import ModelComponent, ProcessComponent, StageComponent, fun_model_skeleton, fun_process_skeleton
 
 
 class ModelBuilder:

@@ -7,7 +7,10 @@
 ##########################################
 import os.path
 
-from SystemicRisk.core import np, pd, deepcopy, SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env, para, TypeMoney, TypeState, TypeIds, TypeList
+from SystemicRisk.core import np, pd, deepcopy
+from SystemicRisk.core.define.define_agents import SystemicRiskAgent
+from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection
+from SystemicRisk.core.define.define_enum import StateOfScheduleEnum, env, para, TypeMoney, TypeState, TypeIds, TypeList
 
 
 class ModelCollector:

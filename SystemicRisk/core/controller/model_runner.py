@@ -5,7 +5,11 @@
 ##########################################
 # 状态/使用
 ##########################################
-from SystemicRisk.core import SystemicRiskAgent, ModelManager, AgentDataCollection, TypeState
+# from SystemicRisk.core import SystemicRiskAgent, ModelComponent, ProcessComponent, StageComponent, AgentDataCollection, TypeState
+from SystemicRisk.core.define.define_type import *
+from SystemicRisk.core.define.define_agents import SystemicRiskAgent
+from SystemicRisk.core.define.define_component import ModelComponent, ProcessComponent, StageComponent
+from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection
 
 
 class ModelRunner:
@@ -31,7 +35,8 @@ class ModelRunner:
     - A_data:AgentDataCollection: Agent群变量之数据；
     """
 
-    def run_model(self, A: SystemicRiskAgent, para: dict, env: dict, modelComponent: ModelManager.modelComponent, agentData: AgentDataCollection):
+    @staticmethod
+    def run_model(self, A: SystemicRiskAgent, para: dict, env: dict, modelComponent: ModelComponent, agentData: AgentDataCollection):
         A, para, env, agentData = modelComponent.run(A, para, env, modelComponent, agentData)
         return A, para, env, agentData
         pass
@@ -54,7 +59,8 @@ class ModelRunner:
     - A_data:AgentDataCollection: Agent群变量之数据；
     """
 
-    def run_process(self, A: SystemicRiskAgent, para: dict, env: dict, processComponent: ModelManager.processComponent, agentData: AgentDataCollection):
+    @staticmethod
+    def run_process(A: SystemicRiskAgent, para: dict, env: dict, processComponent: ProcessComponent, agentData: AgentDataCollection):
         A, para, env, agentData = processComponent.run(A, para, env, processComponent, agentData)
         return A, para, env, agentData
         pass
@@ -77,7 +83,8 @@ class ModelRunner:
     - BI:BankInterbank: 银行间邻接矩阵变量；
     """
 
-    def run_stage(self, A: SystemicRiskAgent, b: TypeState, ib: TypeState, para: dict, env: dict, stageComponent: ModelManager.stageComponent):
+    @classmethod
+    def run_stage(A: SystemicRiskAgent, b: TypeState, ib: TypeState, para: dict, env: dict, stageComponent: StageComponent):
         A = stageComponent.run(A, b, ib, para, env)
         return A
         pass
