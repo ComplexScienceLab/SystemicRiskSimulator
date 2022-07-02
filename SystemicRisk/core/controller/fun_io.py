@@ -16,7 +16,17 @@ import os.path
 - env:EnvironmentVariables: 环境变量，此时内部内容已经被更新；
 """
 
-from SystemicRisk.core import time, env
+# from SystemicRisk.core import time, env
+pass  # end import
+
+
+
+import time
+from SystemicRisk.core.define.define_environment_variables import env
+pass  # end import
+
+
+
 
 class ModelIO:
 

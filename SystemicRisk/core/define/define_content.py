@@ -2,6 +2,7 @@
 
 from SystemicRisk.core.define.define_type import *
 # from SystemicRisk.core.controller.model_runner import ModelRunner
+pass  # end import
 
 
 class Content:

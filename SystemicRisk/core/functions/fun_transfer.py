@@ -7,6 +7,8 @@
 ##########################################
 
 from SystemicRisk.core import np, env, BankCommercial, BankInterbank, TypeState, TypeMoney
+pass  # end import
+
 
 
 class BankTransfer:

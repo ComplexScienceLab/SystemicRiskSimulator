@@ -7,6 +7,9 @@
 ##########################################
 
 from SystemicRisk.core import np,env
+pass  # end import
+
+
 
 # const FALSE1 = np.full(env['num_bank'],False) # 一维false布尔向量常量
 # const FALSE2 = np.full((env['num_bank'], env['num_bank']),False) # 二维方阵false布尔向量常量
