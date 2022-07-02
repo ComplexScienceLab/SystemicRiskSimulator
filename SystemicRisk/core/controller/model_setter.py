@@ -2,10 +2,20 @@
 # 状态/扩展
 ##########################################
 
-# from SystemicRisk.core.define.define_agents import *
+# from SystemicRisk.core import np, env, BankCommercial, BankInterbank, AgentDataCollection
+pass  # end import
+
+
+
+import numpy as np
+from SystemicRisk.core.define.define_agents import BankCommercial
 # from SystemicRisk.model.models.model_content import *
 from SystemicRisk.core import np, env, BankCommercial, BankInterbank
 from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection
+pass  # end import
+
+
+
 
 
 #
@@ -18,7 +28,7 @@ class ModelSetter:
     设置模型及其变量
     """
 
-    A_data = AgentDataCollection()
+    A_data = AgentDataCollection([],[])
 
     # TODO"随机化初始化银行变量"
     def init_B_variables_randomly(self):

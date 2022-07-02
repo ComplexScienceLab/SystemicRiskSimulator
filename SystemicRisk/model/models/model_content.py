@@ -5,8 +5,12 @@
 ##########################################
 #状态/可扩展
 ##########################################
+
 from SystemicRisk.core import ModelContent
 from SystemicRisk.model import *
+pass  # end import
+
+
 
 
 modelContent_BI1111 = ModelContent(

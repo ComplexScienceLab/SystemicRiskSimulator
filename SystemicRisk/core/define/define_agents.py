@@ -5,10 +5,19 @@
 ##########################################
 # 状态/使用
 ##########################################
-# import numpy as np
+
+# from SystemicRisk.core import env
+# from SystemicRisk.core.define.define_type import *
+pass  # end import
+
+
 
 from SystemicRisk.core.define.define_environment_variables import env
 from SystemicRisk.core.define.define_type import *
+pass  # end import
+
+
+
 
 
 class BaseAgents:

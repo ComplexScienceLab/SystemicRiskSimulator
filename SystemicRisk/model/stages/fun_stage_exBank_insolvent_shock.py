@@ -4,7 +4,20 @@
 # 状态/使用
 ##########################################
 
-from SystemicRisk.core import np, TypeState, BankInterbank, BankCommercial, BankState, Shock, BalanceSheet
+# from SystemicRisk.core import np, TypeState, BankInterbank, BankCommercial, BankState, Shock, BalanceSheet
+pass  # end import
+
+
+import numpy as np
+from SystemicRisk.core.define.define_type import TypeState
+from SystemicRisk.core.define.define_agents import BankCommercial,BankInterbank
+from SystemicRisk.core.functions.fun_state import BankState
+from SystemicRisk.core.functions.fun_shock import Shock
+from SystemicRisk.core.functions.fun_balanceSheet import BalanceSheet
+pass  # end import
+
+
+
 
 "函数：银行外部违约损失冲击阶段"
 

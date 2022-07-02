@@ -2,6 +2,8 @@
 
 from SystemicRisk.core.define.define_type import *
 # from SystemicRisk.core import ModelRunner
+pass  # end import
+
 
 
 class Component:

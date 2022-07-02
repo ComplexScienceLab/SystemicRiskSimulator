@@ -3,12 +3,22 @@
 ## 函数：通用模型框架
 
 ##########################################
-#状态/开发
+# 状态/开发
 ##########################################
 
-from SystemicRisk.core import SystemicRiskAgent
+# from SystemicRisk.core import SystemicRiskAgent, ModelComponent, AgentDataCollection, ModelRunner, StateOfScheduleEnum
+pass  # end import
+
+from SystemicRisk.core.define.define_enum import StateOfScheduleEnum
+from SystemicRisk.core.define.define_agents import SystemicRiskAgent
 from SystemicRisk.core.define.define_component import ModelComponent
-from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection,ModelRunner,StateOfScheduleEnum
+from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection
+from SystemicRisk.core.controller.model_runner import ModelRunner
+pass  # end import
+
+
+
+
 
 """
 通用模型框架：
@@ -26,7 +36,9 @@ Return:
 - env:dict: 环境变量；
 - A_data:AgentDataCollection: Agent群变量之数据；
 """
-def fun_model_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, model:ModelComponent, A_data:AgentDataCollection):
+
+
+def fun_model_skeleton(self, A: SystemicRiskAgent, para: dict, env: dict, model: ModelComponent, A_data: AgentDataCollection):
     if (env['is_model']):
         if (env['tau'] > 1):
             # @testprintln "\n继续模型：$(env['model_name'])"
@@ -39,11 +51,11 @@ def fun_model_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, model:Mod
     ## 运行每个过程
     for (idx_process, process) in enumerate(model.content):
         env['index_process'] = idx_process
-        if env['index_process'] == env['loadedIndexProcess']: # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。:
+        if env['index_process'] == env['loadedIndexProcess']:  # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。:
             env['process_name'] = str(process.functionName)
             A, para, env, A_data = ModelRunner.runProcess(A, para, env, process, A_data)
             pass
-        pass # for
+        pass  # for
 
     ## 判断是否结束步进
     if ~env['is_step']:
@@ -58,15 +70,8 @@ def fun_model_skeleton(self, A:SystemicRiskAgent, para:dict, env:dict, model:Mod
         # @testprintln "结束模型：$(env['model_name'])。\n"
         pass
 
-
     # return BB, BI, para, env
     return A, para, env, A_data
-    pass # functions
+    pass  # functions
 
 #     pass # module
-
-
-
-
-
-

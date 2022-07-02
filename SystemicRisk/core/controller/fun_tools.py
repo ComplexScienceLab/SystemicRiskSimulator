@@ -6,7 +6,16 @@
 # 状态/开发
 ##########################################
 
-from SystemicRisk.core import itertools, env
+# from SystemicRisk.core import itertools, env
+pass  # end import
+
+
+
+import itertools
+from SystemicRisk.core.define.define_environment_variables import env
+pass  # end import
+
+
 
 
 class Tools:

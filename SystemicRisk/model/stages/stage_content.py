@@ -5,8 +5,12 @@
 ##########################################
 # 状态/可扩展
 ##########################################
+
 from SystemicRisk.core import StageContent
 from SystemicRisk.model import *
+pass  # end import
+
+
 
 stageContent_exBank_insolvent_shock = StageContent(
     1,  # 编号 id

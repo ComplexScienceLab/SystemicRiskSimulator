@@ -6,10 +6,18 @@
 # 状态/使用
 ##########################################
 # from SystemicRisk.core import SystemicRiskAgent, ModelComponent, ProcessComponent, StageComponent, AgentDataCollection, TypeState
+pass  # end import
+
+
+
 from SystemicRisk.core.define.define_type import *
 from SystemicRisk.core.define.define_agents import SystemicRiskAgent
 from SystemicRisk.core.define.define_component import ModelComponent, ProcessComponent, StageComponent
 from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection
+pass  # end import
+
+
+
 
 
 class ModelRunner:
