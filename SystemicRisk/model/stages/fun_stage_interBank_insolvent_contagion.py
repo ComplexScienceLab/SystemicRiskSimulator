@@ -5,6 +5,8 @@
 ##########################################
 
 from SystemicRisk.core import np, TypeState, BankInterbank, BankCommercial, BankState, Shock, BalanceSheet
+pass  # end import
+
 
 "函数：资不抵债银行间违约损失传染阶段"
 def stage_interBank_insolvent_contagion(self, BB:BankCommercial, BI:BankInterbank, b:TypeState, ib:TypeState, para:dict, env:dict):

@@ -4,7 +4,14 @@
 # 状态/开发
 ##########################################
 
-from SystemicRisk import *
+# from SystemicRisk.core import BankCommercial, BankInterbank
+pass  # end import
+
+from SystemicRisk.
+pass  # end import
+
+
+
 
 
 class AgentDataCollection:
@@ -14,7 +21,7 @@ class AgentDataCollection:
     BB: list
     BI: list
 
-    def __init__(self):
+    def __init__(self, BB:BankCommercial, BI:BankInterbank):
         self.BB = []
         self.BI = []
         pass

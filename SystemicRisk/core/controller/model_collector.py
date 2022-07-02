@@ -5,12 +5,24 @@
 ##########################################
 # 状态/开发
 ##########################################
-import os.path
+# from SystemicRisk.core import np, pd, deepcopy, SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env, para, TypeMoney, TypeState, TypeIds, TypeList
+pass  # end import
 
-from SystemicRisk.core import np, pd, deepcopy
+
+
+import os.path
+import numpy as np, pandas as pd
+from copy import deepcopy
+from SystemicRisk.core.define.define_type import *
+from SystemicRisk.core.define.define_parameterVariables import para
+from SystemicRisk.core.define.define_environment_variables import env
 from SystemicRisk.core.define.define_agents import SystemicRiskAgent
 from SystemicRisk.core.define.define_agentDataCollection import AgentDataCollection
-from SystemicRisk.core.define.define_enum import StateOfScheduleEnum, env, para, TypeMoney, TypeState, TypeIds, TypeList
+from SystemicRisk.core.define.define_enum import StateOfScheduleEnum
+pass  # end import
+
+
+
 
 
 class ModelCollector:
@@ -50,7 +62,7 @@ def initAgentDataCollection(self, A: SystemicRiskAgent, env: dict = env):
         }
     )
     BB_data = []
-    BB_data.append(BB_data_item) # 初始化banks之数据为一字典数组
+    BB_data.append(BB_data_item)  # 初始化banks之数据为一字典数组
 
     BI_data_item = dict(
         {
@@ -62,7 +74,7 @@ def initAgentDataCollection(self, A: SystemicRiskAgent, env: dict = env):
         }
     )
     BI_data = []
-    BI_data.append(BI_data_item) # 初始化interbank之数据为一字典数组
+    BI_data.append(BI_data_item)  # 初始化interbank之数据为一字典数组
 
     A_data = AgentDataCollection(deepcopy(BB_data), deepcopy(BI_data))
     return A_data
@@ -123,7 +135,7 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
             pass
         BB_data_export.append(BB_data)
         pass
-    BB_data_export.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "BB_exp="+env['id_experiment']+".csv")) # 导出为csv格式；
+    BB_data_export.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "BB_exp=" + env['id_experiment'] + ".csv"))  # 导出为csv格式；
 
     ## 整理interbank之数据为一数据框
     BI_data_export = pd.DataFrame()
@@ -135,29 +147,29 @@ def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: di
         BI_data['index_process'] = np.full(v1['index_process'], numRow * numCol)
         BI_data['index_stage'] = np.full(v1['index_stage'], numRow * numCol)
         BI_data['index_stage'] = np.full(v1['index_stage'], numRow * numCol)
-        BI_data['row'] = np.repeat(range(1,numRow+1), numCol)
-        BI_data['col'] = np.tile(range(1,numCol+1), numRow)
+        BI_data['row'] = np.repeat(range(1, numRow + 1), numCol)
+        BI_data['col'] = np.tile(range(1, numCol + 1), numRow)
         fieldNames = list(v1['dataBI'].keys())
         fieldValues = list(v1['dataBI'].values())
         for (i2, v2) in enumerate(fieldValues):
-            if (isinstance(v2,TypeMoney) | isinstance(v2,TypeState) | isinstance(v2,TypeIds)):
-                BI_data[fieldNames[i2]] = [v2.T] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
-            elif isinstance(v2,TypeList):
+            if (isinstance(v2, TypeMoney) | isinstance(v2, TypeState) | isinstance(v2, TypeIds)):
+                BI_data[fieldNames[i2]] = [v2.T]  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
+            elif isinstance(v2, TypeList):
                 ## 转换信息列表为矩阵形式
-                m2 = np.full((numRow, numCol),False)
+                m2 = np.full((numRow, numCol), False)
                 for (i3, v3) in enumerate(v2):
                     for i4 in v3:
                         m2[i3, i4] = True
                         pass
                     pass
-                BI_data[fieldNames[i2]] =[m2.T] # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
-                pass # if
-            pass # for
+                BI_data[fieldNames[i2]] = [m2.T]  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
+                pass  # if
+            pass  # for
             BI_data_export.append(BI_data)
-        pass # for
-    BI_data_export.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "BI_exp="+env['id_experiment']+".csv")) # 导出为csv格式；
+        pass  # for
+    BI_data_export.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "BI_exp=" + env['id_experiment'] + ".csv"))  # 导出为csv格式；
 
     ## 整理env之数据为一数据框，然后导出为csv格式
     # wsave(datadir(env['folderpath_of_experiments_output_data'], savename(para, "|exp=$(env['id_experiment']).jld2", connector="|", equals="=")), para)
 
-    pass # def
+    pass  # def

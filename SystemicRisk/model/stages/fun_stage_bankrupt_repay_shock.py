@@ -7,6 +7,8 @@
 "函数：破产银行应偿还负债冲击阶段"  # HACK冗余，可以替代以
 
 from SystemicRisk.core import TypeState, BankInterbank, BankCommercial, BankState
+pass  # end import
+
 
 
 # from SystemicRisk.model.stages import *

@@ -6,8 +6,10 @@
 # 状态/可扩展
 ##########################################
 
-from SystemicRisk.core import ProcessContent
-from SystemicRisk.model import *
+# from SystemicRisk.core import ProcessContent
+pass  # end import
+
+
 
 processContent_exBank_insolvent = ProcessContent(
     1,  # 编号 id

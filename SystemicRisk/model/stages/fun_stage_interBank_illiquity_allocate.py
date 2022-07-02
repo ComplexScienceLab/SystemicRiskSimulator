@@ -5,6 +5,8 @@
 ##########################################
 
 from SystemicRisk.core import np, TypeState, BankInterbank, BankCommercial, BankState, Shock, BalanceSheet,BankTransfer
+pass  # end import
+
 
 "函数：银行间挤兑流动分配借贷流量阶段"
 def stage_interBank_illiquity_allocate(self, BB:BankCommercial, BI:BankInterbank, b:TypeState, ib:TypeState, para:dict,env:dict):
