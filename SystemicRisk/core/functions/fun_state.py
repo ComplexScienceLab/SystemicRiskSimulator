@@ -7,7 +7,13 @@
 ##########################################
 
 # from SystemicRisk.core import np,env,BankCommercial,BankInterbank,TypeState,LESS1,LESS2
-from SystemicRisk.core import np,env,BankCommercial,BankInterbank,TypeState,LESS1,LESS2
+pass  # end import
+
+import numpy as np
+from SystemicRisk.core.define.define_consts import LESS1,LESS2
+from SystemicRisk.core.define.define_type import *
+from SystemicRisk.core.define.define_environment_variables import env
+from SystemicRisk.core.define.define_agents import  BankCommercial,BankInterbank
 pass  # end import
 
 

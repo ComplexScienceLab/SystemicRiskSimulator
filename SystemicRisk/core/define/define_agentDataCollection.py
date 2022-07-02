@@ -7,11 +7,8 @@
 # from SystemicRisk.core import BankCommercial, BankInterbank
 pass  # end import
 
-from SystemicRisk.
+from SystemicRisk.core.define.define_agents import BankCommercial, BankInterbank
 pass  # end import
-
-
-
 
 
 class AgentDataCollection:
@@ -21,7 +18,7 @@ class AgentDataCollection:
     BB: list
     BI: list
 
-    def __init__(self, BB:BankCommercial, BI:BankInterbank):
+    def __init__(self, BB: BankCommercial, BI: BankInterbank):
         self.BB = []
         self.BI = []
         pass
