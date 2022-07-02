@@ -8,8 +8,10 @@
 ##########################################
 
 from scripts.variables.set_environmentVariables import *
+pass  # end import
 
-# exec()
+
+# exec("../../scripts/variables/set_environmentVariables.py")
 
 ## 生成字典变量 #HACK 如何实现自动生成字典变量？
 environmentVariables = dict(

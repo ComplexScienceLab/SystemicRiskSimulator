@@ -5,6 +5,8 @@
 ##########################################
 
 from SystemicRisk.core import TypeState, BankInterbank, BankCommercial, BankState
+pass  # end import
+
 
 
 # TODO"函数：外生破产银行间挤兑流动冲击阶段"

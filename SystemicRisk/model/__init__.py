@@ -15,14 +15,12 @@ from .stages.fun_stage_exBank_bankrupt_contagion import *
 from .stages.fun_stage_interBank_bankrupt_contagion_shock import *
 from .stages.fun_stage_bankrupt_repay_shock import *
 from .stages.stage_content import *
+pass  # end import
+
+
+
 
 ## 集成过程文件
-from .processes.fun_process_exBank_insolvent import *
-from .processes.fun_process_interBank_insolvent import *
-from .processes.fun_process_exBank_illiquity import *
-from .processes.fun_process_interBank_illiquity import *
-from .processes.fun_process_exBank_bankrupt import *
-from .processes.fun_process_interBank_bankrupt import *
 from .processes.process_content import *
 
 ## 集成模型文件

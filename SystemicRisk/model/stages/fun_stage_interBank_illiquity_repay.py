@@ -5,6 +5,8 @@
 ##########################################
 
 from SystemicRisk.core import np, TypeState, BankInterbank, BankCommercial, BankState, Shock, BalanceSheet, BankTransfer
+pass  # end import
+
 
 "函数：银行间挤兑流动执行借贷流量阶段"
 

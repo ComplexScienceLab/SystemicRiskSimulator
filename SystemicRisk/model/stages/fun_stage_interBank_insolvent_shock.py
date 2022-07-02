@@ -5,6 +5,8 @@
 ##########################################
 
 from SystemicRisk.core import np, TypeState, BankInterbank, BankCommercial, BankState, Shock, BalanceSheet
+pass  # end import
+
 
 "函数：资不抵债银行间违约损失冲击阶段"
 
