@@ -6,7 +6,7 @@
 # 状态/可扩展
 ##########################################
 
-from SystemicRisk.core import StageContent
+from SystemicRisk.core.define.define_content import StageContent
 from SystemicRisk.model import *
 pass  # end import
 
