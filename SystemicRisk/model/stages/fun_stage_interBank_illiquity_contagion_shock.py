@@ -4,8 +4,13 @@
 # 状态/使用
 ##########################################
 
-from SystemicRisk.core import np, BankCommercial, BankInterbank, Shock, BankState
-from SystemicRisk.core.define.define_type import *
+import numpy as np
+
+from SystemicRisk.core.define.define_type import TypeState
+from SystemicRisk.core.define.define_agents import BankInterbank, BankCommercial
+from SystemicRisk.core.functions.fun_state import BankState
+from SystemicRisk.core.functions.fun_shock import Shock
+from SystemicRisk.core.functions.fun_balanceSheet import BalanceSheet
 pass  # end import
 
 "函数：流动性短缺银行间挤兑流动传染冲击阶段"

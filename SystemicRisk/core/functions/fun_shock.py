@@ -4,8 +4,10 @@
 #状态/使用
 ##########################################
 
-
-from SystemicRisk.core import np,BankCommercial,BankInterbank,TypeState,env
+import numpy as np
+from SystemicRisk.core.define.define_agents import BankCommercial,BankInterbank
+from SystemicRisk.core.define.define_type import TypeState
+from SystemicRisk.core.define.define_environment_variables import env
 pass  # end import
 
 
