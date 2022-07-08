@@ -6,7 +6,11 @@
 # 状态/使用
 ##########################################
 
-from SystemicRisk.core import np, BankCommercial, BankInterbank, TypeState, LESS1, env
+import numpy as np
+from SystemicRisk.core.define.define_agents import BankCommercial, BankInterbank
+from SystemicRisk.core.define.define_type import TypeState
+from SystemicRisk.core.define.define_consts import LESS1
+from SystemicRisk.core.define.define_environment_variables import env
 pass  # end import
 
 

@@ -4,7 +4,15 @@
 # 状态/使用
 ##########################################
 
-from SystemicRisk.core import np, TypeState, BankInterbank, BankCommercial, BankState, Shock, BalanceSheet, BankTransfer
+import numpy as np
+
+from SystemicRisk.core.define.define_type import TypeState
+from SystemicRisk.core.define.define_agents import BankInterbank, BankCommercial
+from SystemicRisk.core.functions.fun_state import BankState
+from SystemicRisk.core.functions.fun_shock import Shock
+from SystemicRisk.core.functions.fun_balanceSheet import BalanceSheet
+from SystemicRisk.core.functions.fun_transfer import BankTransfer
+
 pass  # end import
 
 

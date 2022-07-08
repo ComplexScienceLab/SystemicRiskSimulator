@@ -4,7 +4,11 @@
 # 状态/暂时用不到
 ##########################################
 
-from SystemicRisk.core import TypeState, BankInterbank, BankCommercial, BankState
+import numpy as np
+
+from SystemicRisk.core.define.define_type import TypeState
+from SystemicRisk.core.define.define_agents import BankInterbank, BankCommercial
+from SystemicRisk.core.functions.fun_state import BankState
 pass  # end import
 
 
