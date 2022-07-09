@@ -18,7 +18,7 @@ class AgentDataCollection:
     BB: list
     BI: list
 
-    def __init__(BB: BankCommercial, BI: BankInterbank):
+    def __init__(self, BB: BankCommercial, BI: BankInterbank):
         self.BB = []
         self.BI = []
         pass
