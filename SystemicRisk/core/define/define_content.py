@@ -1,6 +1,7 @@
 "程序：定义模型内容结构体"
 
 from SystemicRisk.core.define.define_type import *
+
 # from SystemicRisk.core.controller.model_runner import ModelRunner
 pass  # end import
 
@@ -30,7 +31,7 @@ class StageContent(Content):
     modelFunction = None  # 函数
 
     def __init__(self, id, function_name, text_name, model_function):
-        Content.__init__(id, function_name, text_name)
+        super().__init__(id, function_name, text_name)
         self.modelFunction = model_function
         pass
 
@@ -44,8 +45,8 @@ class ProcessContent(Content):
     # listProcessContent:Vector{ProcessContent} # 过程内容列表 listContentProcess
     listStageContent: list  # 阶段内容列表 listStageContent
 
-    def __init__(self, id, function_name, text_name, listStageContent):
-        Content.__init__(id, function_name, text_name)
+    def __init__(self, id, function_name, text_name, listStageContent: list):
+        super().__init__(id, function_name, text_name)
         self.listStageContent = listStageContent
         pass
 
@@ -58,8 +59,8 @@ class ModelContent(Content):
     """
     listProcessContent: list  # 过程内容列表 listContentProcess
 
-    def __init__(self, id, function_name, text_name, listProcessContent):
-        Content.__init__(id, function_name, text_name)
+    def __init__(self, id, function_name, text_name, listProcessContent: list):
+        super().__init__(id, function_name, text_name)
         self.listProcessContent = listProcessContent
         pass
 

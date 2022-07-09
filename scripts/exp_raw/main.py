@@ -29,7 +29,7 @@ from SystemicRisk.core.controller.fun_scheduler import ModelScheduler
 # from SystemicRisk.core.functions.fun_state import BankState
 from SystemicRisk.core.controller.model_builder import ModelBuilder
 from SystemicRisk.core.controller.fun_io import ModelIO
-from SystemicRisk.model import modelContent_BI1111
+from SystemicRisk.model.models import modelContent_BI1111
 
 # end import
 
