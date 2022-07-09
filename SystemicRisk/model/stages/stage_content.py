@@ -7,7 +7,7 @@
 ##########################################
 
 from SystemicRisk.core.define.define_content import StageContent
-from SystemicRisk.model import *
+from SystemicRisk.model.stages import *
 pass  # end import
 
 

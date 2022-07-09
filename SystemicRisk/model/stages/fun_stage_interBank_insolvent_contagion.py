@@ -8,7 +8,6 @@ import numpy as np
 
 from SystemicRisk.core.define.define_type import TypeState
 from SystemicRisk.core.define.define_agents import BankInterbank, BankCommercial
-from SystemicRisk.core.functions.fun_state import BankState
 from SystemicRisk.core.functions.fun_shock import Shock
 from SystemicRisk.core.functions.fun_balanceSheet import BalanceSheet
 pass  # end import

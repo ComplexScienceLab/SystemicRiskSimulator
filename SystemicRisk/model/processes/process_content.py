@@ -5,11 +5,12 @@
 ##########################################
 # 状态/可扩展
 ##########################################
+import numpy as np
 
-# from SystemicRisk.core import ProcessContent
+from SystemicRisk.core.define.define_content import ProcessContent, ModelContent, StageContent
+from SystemicRisk.model.stages import *
+
 pass  # end import
-
-
 
 processContent_exBank_insolvent = ProcessContent(
     1,  # 编号 id
@@ -36,7 +37,7 @@ processContent_interBank_insolvent = ProcessContent(
 
 processContent_exBank_illiquity = ProcessContent(
     3,  # 编号 id
-    'process_exBank_illiquity'  # 函数名称 functionName
+    'process_exBank_illiquity',  # 函数名称 functionName
     "银行外部挤兑流动传染冲击过程",  # 文本名称 textName
     # '(BB.Shock_t == BB_Shock_t_t1)' # 判断条件用以结束过程 conditionToContinueProcess
     [
@@ -46,7 +47,7 @@ processContent_exBank_illiquity = ProcessContent(
 
 processContent_interBank_illiquity = ProcessContent(
     4,  # 编号 id
-    'process_interBank_illiquity'  # 函数名称 functionName
+    'process_interBank_illiquity',  # 函数名称 functionName
     "流动性短缺银行间挤兑流动传染冲击过程",  # 文本名称 textName
     # '(BB.Shock_t == BB_Shock_t_t1)' # 判断条件用以结束过程 conditionToContinueProcess
     [
@@ -68,11 +69,11 @@ processContent_interBank_illiquity = ProcessContent(
 
 processContent_interBank_bankrupt = ProcessContent(
     6,  # 编号 id
-    'process_exBank_bankrupt'  # 函数名称 functionName
+    'process_exBank_bankrupt',  # 函数名称 functionName
     "破产银行间挤兑流动传染冲击过程",  # 文本名称 textName
     # '(BB.Shock_t == BB_Shock_t_t1)' # 判断条件用以结束过程 conditionToContinueProcess
     [
-        stageContent_interBank_bankrupt_contagion_shock,
+        # stageContent_interBank_bankrupt_contagion_shock,
         stageContent_interBank_illiquity_allocate,
         stageContent_interBank_illiquity_repay,
     ]  # 阶段内容列表 listContentStage
