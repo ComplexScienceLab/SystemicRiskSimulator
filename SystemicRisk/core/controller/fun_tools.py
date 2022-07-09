@@ -31,7 +31,7 @@ class Tools:
     #         pass
     #     pass
 
-    def test_println(self, content):
+    def test_println(content):
         if env['is_test']:
             expr = \
                 """
@@ -40,7 +40,7 @@ class Tools:
 
         pass
 
-    def dict_to_product_list(self, d: dict):
+    def dict_to_product_list(d: dict):
         """
         各字典之列表型元素转列表，其元素为字典，列表个元素间关系符合笛卡尔积。
         :param self:

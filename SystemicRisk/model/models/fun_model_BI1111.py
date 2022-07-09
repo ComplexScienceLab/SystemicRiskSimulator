@@ -8,7 +8,7 @@
 
 # module model_BI1111
 
-def model_BI1111(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
+def model_BI1111(BB:BankCommercial, BI:BankInterbank, para:dict, env:dict):
 
     env['index_process'] = 0 # 初始化过程所在位置
     env['state_of_schedule'] = StateOfScheduleEnum.indexing

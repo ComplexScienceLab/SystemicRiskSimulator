@@ -27,7 +27,7 @@ pass  # end import
 class RunModel:
     "#TODO初始化systemicRiskAgent和systemicRiskModel"
 
-    def init_systemicRiskAgent(self, para: dict = para, env: dict = env):
+    def init_systemicRiskAgent(para: dict = para, env: dict = env):
         systemicRiskAgent, systemicRiskAgent_data = ModelSetter.init_B_and_BI(init_method=env['init_method'])
 
         ## 调度状态
@@ -37,7 +37,7 @@ class RunModel:
         pass
 
     "函数：Agent模型步进"  # BUG方案一
-    def systemicRiskAgent_step(self, A: SystemicRiskAgent, para: dict, env: dict, model: ModelComponent, A_data: AgentDataCollection):
+    def systemicRiskAgent_step(A: SystemicRiskAgent, para: dict, env: dict, model: ModelComponent, A_data: AgentDataCollection):
         env['is_step'] = True
         A, para, env, A_data = ModelRunner.runModel(A, para, env, model, A_data)  # 运行具体的模型，通过运行模型组件的方式
         pass
@@ -53,7 +53,7 @@ class RunModel:
 
     "函数：运行一次仿真"
 
-    def makesim(self, model: ModelComponent, para: dict = para, env: dict = env):
+    def makesim(model: ModelComponent, para: dict = para, env: dict = env):
         ## 初始化agent及其模型
         A, M, A_data = self.init_systemicRiskAgent(self, para, env)
         # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)
