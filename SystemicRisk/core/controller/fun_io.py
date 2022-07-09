@@ -19,13 +19,10 @@ import os.path
 # from SystemicRisk.core import time, env
 pass  # end import
 
-
-
 import time
 from SystemicRisk.core.define.define_environment_variables import env
+
 pass  # end import
-
-
 
 
 class ModelIO:
@@ -33,7 +30,7 @@ class ModelIO:
     def set_experiments_folders(env: dict = env, isDatetime: bool = True):
         ## 设定日期时间字符串
         if isDatetime == True:
-            str_datetime = "_" * time.strftime("%Y%m%d%H%M%S")
+            str_datetime = "_" + time.strftime("%Y%m%d%H%M%S")
         else:
             str_datetime = ""
             pass
@@ -47,7 +44,7 @@ class ModelIO:
             raise Exception("关键词取值错误！".format(env['foldername_type_of_experiments']))
             pass
 
-        env['foldername_of_experiments'] = str_manuallyName * str_datetime
+        env['foldername_of_experiments'] = str_manuallyName + str_datetime
         env['folderpath_of_experiments'] = os.path.join(env['root_dir_of_experiments'], env['foldername_of_experiments'])
 
         os.mkdir(env['folderpath_of_experiments'])  # 创建文件夹
@@ -58,4 +55,4 @@ class ModelIO:
         return env
         pass  # functioin
 
-    pass # class
+    pass  # class

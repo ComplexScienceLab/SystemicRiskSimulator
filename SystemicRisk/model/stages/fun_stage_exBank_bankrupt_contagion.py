@@ -14,7 +14,7 @@ pass  # end import
 
 
 # TODO"函数：外生破产银行间挤兑流动冲击阶段"
-def stage_exBank_bankrupt_contagion(BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
+def stage_exBank_bankrupt_contagion(self, BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
     ## # 外生破产银行间挤兑流动传染
     # env['stage_name'] = "外生破产银行间挤兑流动冲击阶段"
     # @testprintln "开始阶段$(env['stage_name'])："

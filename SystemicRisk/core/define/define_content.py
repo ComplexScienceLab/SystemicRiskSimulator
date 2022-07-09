@@ -14,7 +14,7 @@ class Content:
     functionName: TypeItemFunctionName  # 函数名称 name
     textName: TypeItemTextName  # 文本名称 name
 
-    def __init__(id, function_name, text_name):
+    def __init__(self, id, function_name, text_name):
         self.id = id
         self.functionName = function_name
         self.textName = text_name
@@ -30,7 +30,7 @@ class StageContent(Content):
     # modelFunction = ModelRunner.run_stage  # 函数
     modelFunction = None  # 函数
 
-    def __init__(id, function_name, text_name, model_function):
+    def __init__(self, id, function_name, text_name, model_function):
         super().__init__(id, function_name, text_name)
         self.modelFunction = model_function
         pass
@@ -45,7 +45,7 @@ class ProcessContent(Content):
     # listProcessContent:Vector{ProcessContent} # 过程内容列表 listContentProcess
     listStageContent: list  # 阶段内容列表 listStageContent
 
-    def __init__(id, function_name, text_name, listStageContent: list):
+    def __init__(self, id, function_name, text_name, listStageContent: list):
         super().__init__(id, function_name, text_name)
         self.listStageContent = listStageContent
         pass
@@ -59,7 +59,7 @@ class ModelContent(Content):
     """
     listProcessContent: list  # 过程内容列表 listContentProcess
 
-    def __init__(id, function_name, text_name, listProcessContent: list):
+    def __init__(self, id, function_name, text_name, listProcessContent: list):
         super().__init__(id, function_name, text_name)
         self.listProcessContent = listProcessContent
         pass

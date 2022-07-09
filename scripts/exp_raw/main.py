@@ -20,6 +20,7 @@ import pandas as pd
 # from SystemicRisk.include.Models import *
 # from SystemicRisk.core.define.define_enum import StateOfScheduleEnum
 from SystemicRisk.core.define.define_parameterVariables import para
+from SystemicRisk.core.define.define_environment_variables import env
 from scripts.variables.set_environmentVariables import *
 # from scripts.variables.set_parameterVariables import *
 from SystemicRisk.core.controller.fun_tools import Tools
@@ -46,6 +47,7 @@ if __name__ == "__main__":
     ## 创建主文件夹用于本批次实验
 
     env = ModelIO.set_experiments_folders()
+    env['project_root_path'] = root_path
 
     ## 建立文件以记录log
     f = open(os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"), "w")
