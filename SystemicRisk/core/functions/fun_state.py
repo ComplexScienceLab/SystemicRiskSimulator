@@ -22,7 +22,7 @@ pass  # end import
 
 class BankState:
 
-    def init_listOfRelationInStateOfBanks(bank:BankCommercial, interbank:BankInterbank):
+    def init_listOfRelationInStateOfBanks(self, bank:BankCommercial, interbank:BankInterbank):
         """
         初始化银行状态关系列表
         """
@@ -32,7 +32,7 @@ class BankState:
 
 
     "计算示性向量之于银行健康的。"
-    def calc_isHealthy(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isHealthy(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (bank.E_all >= LESS1 & bank.A_Q >= LESS1 & bank.Shock_def_t + LESS1 <= bank.E_all & bank.Shock_run_t + LESS1 <= bank.A_Q & bank.on)
         if bank.hel != condition:
             bank.hel = condition
@@ -41,7 +41,7 @@ class BankState:
         pass
 
     "计算示性向量之于银行健康的，来自资不抵债的。"
-    def calc_isHealthy_from_isInsolvent(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isHealthy_from_isInsolvent(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (bank.E_all >= LESS1 & bank.A_Q >= LESS1 & bank.Shock_def_t + LESS1 <= bank.E_all & bank.on)
         if bank.hel != condition:
             bank.hel = condition
@@ -50,7 +50,7 @@ class BankState:
         pass
 
     "更新示性向量之于银行健康的，来自资不抵债的。"
-    def update_isHealthy_from_isInsolvent(bank:BankCommercial, interbank:BankInterbank):
+    def update_isHealthy_from_isInsolvent(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (~(bank.isv | bank.ilq) & bank.on)
         if bank.hel != condition:
             bank.hel = condition
@@ -59,7 +59,7 @@ class BankState:
         pass
 
     "计算示性向量之于银行健康的，来自流动性短缺的。" # 内容同于calc_isHealthy。
-    def calc_isHealthy_from_isIlliquity(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isHealthy_from_isIlliquity(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (bank.E_all >= LESS1 & bank.A_Q >= LESS1 & bank.Shock_run_t + LESS1 <= bank.A_Q & bank.on)
         if bank.hel != condition:
             bank.hel = condition
@@ -68,7 +68,7 @@ class BankState:
         pass
 
     "更新示性向量之于银行健康的，来自流动性短缺的。" # 内容同于update_isHealthy_from_isInsolvent
-    def update_isHealthy_from_isIlliquity(bank:BankCommercial, interbank:BankInterbank):
+    def update_isHealthy_from_isIlliquity(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (~(bank.isv | bank.ilq) & bank.on)
         if bank.hel != condition:
             bank.hel = condition
@@ -79,7 +79,7 @@ class BankState:
 
 
     "计算示性向量之于银行资不抵债的。"
-    def calc_isInsolvent(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isInsolvent(self, bank:BankCommercial, interbank:BankInterbank):
         condition = ((bank.A_all < bank.Z_all + LESS1 | bank.E_all < LESS1 | bank.Shock_def_t + LESS1 > bank.E_all) & bank.on)
         if bank.isv != condition:
             bank.isv = condition
@@ -90,7 +90,7 @@ class BankState:
         pass
 
     "计算示性向量之于银行资不抵债的，来自健康的。"
-    def calc_isInsolvent_from_isHealthy(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isInsolvent_from_isHealthy(self, bank:BankCommercial, interbank:BankInterbank):
         condition = ((bank.A_all < bank.Z_all + LESS1 | bank.E_all < LESS1 | bank.Shock_def_t + LESS1 > bank.E_all) & bank.on)
         if bank.isv != condition:
             bank.isv = condition
@@ -101,7 +101,7 @@ class BankState:
         pass
 
     "更新示性向量之于银行资不抵债的，来自健康的。" # 内容同于calc_isInsolvent_from_isHealthy
-    def update_isInsolvent_from_isHealthy(bank:BankCommercial, interbank:BankInterbank):
+    def update_isInsolvent_from_isHealthy(self, bank:BankCommercial, interbank:BankInterbank):
         condition = ((bank.A_all < bank.Z_all + LESS1 | bank.E_all < LESS1 | bank.Shock_def_t + LESS1 > bank.E_all) & bank.on)
         if bank.isv != condition:
             bank.isv = condition
@@ -112,7 +112,7 @@ class BankState:
         pass
 
     "计算示性向量之于银行流动性短缺的。"
-    def calc_isIlliquity(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isIlliquity(self, bank:BankCommercial, interbank:BankInterbank):
         condition = ((bank.Shock_run_t + LESS1 >= bank.A_Q) & bank.on)
         if bank.ilq != condition:
             bank.ilq = condition
@@ -123,7 +123,7 @@ class BankState:
         pass
 
     "计算示性向量之于银行流动性短缺的，来自健康的。" # 内容同于calc_isIlliquity
-    def calc_isIlliquity_from_isHealthy(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isIlliquity_from_isHealthy(self, bank:BankCommercial, interbank:BankInterbank):
         condition = ((bank.Shock_run_t + LESS1 >= bank.A_Q) & bank.on)
         if bank.ilq != condition:
             bank.ilq = condition
@@ -134,7 +134,7 @@ class BankState:
         pass
 
     "更新示性向量之于银行流动性短缺的，来自健康的。" # 内容同于calc_isIlliquity
-    def update_isIlliquity_from_isHealthy(bank:BankCommercial, interbank:BankInterbank):
+    def update_isIlliquity_from_isHealthy(self, bank:BankCommercial, interbank:BankInterbank):
         condition = ((bank.Shock_run_t + LESS1 >= bank.A_Q) & bank.on)
         if bank.ilq != condition:
             bank.ilq = condition
@@ -145,7 +145,7 @@ class BankState:
         pass
 
     "计算示性向量之于银行破产的。"
-    def calc_isBankrupt(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isBankrupt(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (bank.isv | bank.ilq)
         if bank.br != condition:
             bank.br = condition
@@ -156,7 +156,7 @@ class BankState:
         pass
 
     "计算示性向量之于破产的，来自资不抵债的。" # 同于calc_isBankrupt
-    def calc_isBankrupt_from_isInsolvent(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isBankrupt_from_isInsolvent(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (bank.isv | bank.ilq)
         if bank.br != condition:
             bank.br = condition
@@ -167,7 +167,7 @@ class BankState:
         pass
 
     "计算示性向量之于破产的，来自流动性短缺的。" # 同于calc_isBankrupt
-    def calc_isBankrupt_from_isIlliquity(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isBankrupt_from_isIlliquity(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (bank.isv | bank.ilq)
         if bank.br != condition:
             bank.br = condition
@@ -178,7 +178,7 @@ class BankState:
         pass
 
     "计算示性向量之于银行存在的。"
-    def together_isOn(bank:BankCommercial, interbank:BankInterbank):
+    def together_isOn(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (bank.hel | bank.isv | bank.ilq | bank.br)
         if bank.on != condition:
             bank.on = condition
@@ -189,7 +189,7 @@ class BankState:
         pass
 
     "更新示性向量之于银行破产的，来自退出的。" #FIXME，有一定不稳定的风险。
-    def update_isBankrupt_from_isOff(bank:BankCommercial, interbank:BankInterbank):
+    def update_isBankrupt_from_isOff(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (bank.off)
         if bank.br == condition:
             bank.br[: ] = np.false(env['num_bank'])
@@ -200,7 +200,7 @@ class BankState:
         pass
 
     "更新示性向量之于银行存在的，来自退出的。"
-    def update_isOn_from_isOff(bank:BankCommercial, interbank:BankInterbank):
+    def update_isOn_from_isOff(self, bank:BankCommercial, interbank:BankInterbank):
         condition = (~bank.off)
         if bank.on != condition:
             bank.on = condition
@@ -211,7 +211,7 @@ class BankState:
         pass
 
     "计算示性向量之于银行退出的。"
-    def calc_isOff(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isOff(self, bank:BankCommercial, interbank:BankInterbank):
         condition = bank.br | bank.off
         if bank.off != condition:
             bank.off = condition
@@ -220,7 +220,7 @@ class BankState:
         pass
 
     "更新示性向量之于银行退出的，来自存在的。"
-    def update_isOff_from_isOn(bank:BankCommercial, interbank:BankInterbank):
+    def update_isOff_from_isOn(self, bank:BankCommercial, interbank:BankInterbank):
         condition = ~bank.on
         if bank.off != condition:
             bank.off = condition
@@ -229,54 +229,54 @@ class BankState:
         pass
 
     "计算示性向量之于银行退出的，来自破产的。"
-    def calc_isOff_from_isBankrupt(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isOff_from_isBankrupt(self, bank:BankCommercial, interbank:BankInterbank):
         self.calc_isOff(bank, interbank)
         interbank.cre_br = []
         interbank.deb_br = []
         pass
 
     "计算示性向量之于银行需要偿还银行间负债的。"
-    def calc_isNeededBoBI(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isNeededBoBI(self, bank:BankCommercial, interbank:BankInterbank):
         bank.nBoBI = (bank.Shock_BI_run_ilq_t > 0 & bank.on)
         pass
 
     "计算示性向量之于银行能够偿还银行间负债的。"
-    def calc_isEnabledBoBI(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isEnabledBoBI(self, bank:BankCommercial, interbank:BankInterbank):
         bank.eBoBI = (bank.Shock_BI_run_ilq_t > 0 & bank.A_Q > 0 & bank.on)
         pass
 
     "计算示性向量之于银行能够偿还银行间负债的，从需要偿还银行间负债的。"
-    def calc_isEnabledBoBI_from_isNeededBoBI(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isEnabledBoBI_from_isNeededBoBI(self, bank:BankCommercial, interbank:BankInterbank):
         bank.eBoBI = (bank.nBoBI & bank.A_Q > 0)
         pass
 
     "计算示性向量之于银行需要偿还居民部门存款的。"
-    def calc_isNeededBoD(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isNeededBoD(self, bank:BankCommercial, interbank:BankInterbank):
         bank.nBoD = (bank.Shock_D_run_t > 0 & bank.on)
         pass
 
     "计算示性向量之于银行能够偿还居民部门存款的。"
-    def calc_isEnabledBoD(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isEnabledBoD(self, bank:BankCommercial, interbank:BankInterbank):
         bank.eBoD = (bank.Shock_D_run_t > 0 & bank.A_Q > 0 & bank.on)
         pass
 
     "计算示性向量之于银行能够偿还居民部门存款的，从需要偿还居民部门存款的。"
-    def calc_isEnabledBoD_from_isNeededBoD(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isEnabledBoD_from_isNeededBoD(self, bank:BankCommercial, interbank:BankInterbank):
         bank.eBoD = (bank.nBoD & bank.A_Q > 0)
         pass
 
     "计算示性向量之于银行需要收回厂商贷款的。"
-    def calc_isNeededLiP(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isNeededLiP(self, bank:BankCommercial, interbank:BankInterbank):
         bank.nLiP = (bank.Shock_P_run_s > 0 & bank.on)
         pass
 
     "计算示性向量之于银行能够收回厂商贷款的。"
-    def calc_isEnabledLiP(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isEnabledLiP(self, bank:BankCommercial, interbank:BankInterbank):
         bank.eLiP = (bank.Shock_P_run_s > 0 & bank.on) #HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
     "计算示性向量之于银行能够收回厂商贷款的，从需要收回厂商贷款的。"
-    def calc_isEnabledLiP_from_isNeededLiP(bank:BankCommercial, interbank:BankInterbank):
+    def calc_isEnabledLiP_from_isNeededLiP(self, bank:BankCommercial, interbank:BankInterbank):
         bank.eLiP = (bank.nLiP) #HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
@@ -295,7 +295,7 @@ class BankState:
     # Returns
     - `listOfRelationInStateOfBanks`:  返回对应状态下的债权或者债务关系的银行列表；
     """
-    def calc_listOfRelationInStateOfBanks(interbank:BankInterbank, isState:TypeState, goal:str):
+    def calc_listOfRelationInStateOfBanks(self, interbank:BankInterbank, isState:TypeState, goal:str):
         # 计算示性矩阵之于银行间风险敞口的
         if goal == "debtor":
             isExposure = ((interbank.A_BI > 0.0) & isState)
@@ -341,7 +341,7 @@ class BankState:
     - `needed repay Z_D`:  到是否需要偿还居民存款状态；
     - `needed collect A_P`:  到是否可以收回厂商贷款状态；
     """
-    def update_B_state(bank:BankCommercial, interbank:BankInterbank, target:str = "any", source:str = "any"):
+    def update_B_state(self, bank:BankCommercial, interbank:BankInterbank, target:str = "any", source:str = "any"):
         if target == "any": #FIXME 这个可能有缺陷:
             if source == "any":
                 self.init_listOfRelationInStateOfBanks(bank, interbank)

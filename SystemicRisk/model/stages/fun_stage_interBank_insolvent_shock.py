@@ -16,7 +16,7 @@ pass  # end import
 "函数：资不抵债银行间违约损失冲击阶段"
 
 
-def stage_interBank_insolvent_shock(BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
+def stage_interBank_insolvent_shock(self, BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
     ## # 资不抵债银行间违约损失冲击阶段
     # env['stage_name'] = "资不抵债银行间违约损失冲击阶段"
     # @testprintln "开始阶段$(env['stage_name'])："

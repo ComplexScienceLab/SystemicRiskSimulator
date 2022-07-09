@@ -260,12 +260,12 @@ class BankInterbank(BaseInterAgents):
         self.Bo_BI = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间冲击 Shock_BI: $Shock_BI=Shock_BI_def+Shock_BI_run$
         self.Bi_BI = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间违约损失冲击 Shock_BI_def
         self.Shock_BI = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间挤兑流动冲击 Shock_BI_run: $Shock_BI_run=Shock_BI_run_ilq+Shock_BI_run_br$
-        self.Shock_BI_def = np.zeros((env['num_bank'], env['num_bank'])),  # 流动性短缺银行银行间挤兑流动冲击 Shock_BI_run_ilq
+        self.Shock_BI_def = np.zeros((self, env['num_bank'], env['num_bank'])),  # 流动性短缺银行银行间挤兑流动冲击 Shock_BI_run_ilq
         self.Shock_BI_run = np.zeros((env['num_bank'], env['num_bank'])),  # 破产银行银行间挤兑流动冲击 Shock_BI_run_br
         self.Shock_BI_run_ilq = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间市场冲击损失 Loss_BI
         self.Shock_BI_run_br = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间资产负债违约冲击损失 Loss_BI_def
         self.Loss_BI = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间负债流动性挤兑冲击损失 Loss_BI_run
-        self.Loss_BI_def = np.zeros((env['num_bank'], env['num_bank'])),  # 信息邻接矩阵之于是否有银行间敞口 isExposure
+        self.Loss_BI_def = np.zeros((self, env['num_bank'], env['num_bank'])),  # 信息邻接矩阵之于是否有银行间敞口 isExposure
         self.Loss_BI_run = np.full((env['num_bank'], env['num_bank']), True),  # 信息邻接矩阵之于银行间存在的 isOn
         self.isExposure = np.full((env['num_bank'], env['num_bank']), False),  # 信息邻接矩阵之于银行间已退出不存在的 isOff
         self.on = np.full((env['num_bank'], env['num_bank']), True),  # 信息邻接矩阵之于银行间健康的 isHealthy
@@ -293,7 +293,7 @@ class SystemicRiskAgent:
     BB: BankCommercial  # 商业银行群
     BI: BankInterbank  # 银行间邻接矩阵
 
-    def __init__(BB: BankCommercial, BI: BankInterbank):
+    def __init__(self, BB: BankCommercial, BI: BankInterbank):
         self.id = 1
         self.BB = BB
         self.BI = BI

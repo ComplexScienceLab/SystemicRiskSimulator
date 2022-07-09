@@ -51,7 +51,7 @@ TODO函数：初始化实验数据容器
 """
 
 
-def initAgentDataCollection(A: SystemicRiskAgent, env: dict = env):
+def initAgentDataCollection(self, A: SystemicRiskAgent, env: dict = env):
     BB_data_item = dict(
         {
             list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
@@ -86,7 +86,7 @@ TODO函数：收集数据并存储
 """
 
 
-def collectAgentData(A: SystemicRiskAgent, A_data: AgentDataCollection, env: dict = env):
+def collectAgentData(self, A: SystemicRiskAgent, A_data: AgentDataCollection, env: dict = env):
     BB_data_item = dict(
         {
             list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
@@ -118,7 +118,7 @@ TODO函数：导出实验结果数据
 """
 
 
-def exportAgentData(A_data: AgentDataCollection, env: dict = env, para: dict = para):
+def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: dict = para):
     ## 整理banks之数据为一数据框
     BB_data_export = pd.DataFrame()
     BB_data = pd.DataFrame()
