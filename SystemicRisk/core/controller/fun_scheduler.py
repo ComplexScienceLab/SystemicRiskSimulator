@@ -32,7 +32,7 @@ class ModelScheduler:
     - env:dict: 环境变量；
     """
 
-    def scheduler(self, env: dict, A: SystemicRiskAgent, A_data: AgentDataCollection):
+    def scheduler(env: dict, A: SystemicRiskAgent, A_data: AgentDataCollection):
         if env['state_of_schedule'] == StateOfScheduleEnum.loading:
             env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule'] = self.scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['saved_index_process'], env['state_of_schedule'])  # 读取
             pass
@@ -61,7 +61,7 @@ class ModelScheduler:
     - state_of_schedule:Symbol: 调度状态；
     """
 
-    def scheduler_indexing(self, model: ModelComponent):
+    def scheduler_indexing(model: ModelComponent):
         index_of_schedule_position = []
         for i in range(len(model.content)):
             index_of_schedule_position.append([i, []])
@@ -198,7 +198,7 @@ class ModelScheduler:
     - state_of_schedule:Symbol: 调度状态；
     """
 
-    def scheduler_collecting(self, A: SystemicRiskAgent, A_data: AgentDataCollection = np.nan, env: dict = env):
+    def scheduler_collecting(A: SystemicRiskAgent, A_data: AgentDataCollection = np.nan, env: dict = env):
         # @testprintln "收集数据。"
         env['data_id'] += 1  # 累加数据帧ID号
         ModelCollector.collector(A, A_data, state_of_process=env['state_of_process'])  # 收集数据
@@ -276,7 +276,7 @@ class ModelScheduler:
     #     pass # macro
 
     # "宏：判断是否继续运行过程" #HACK 或将废弃
-    # def is_rocess(self, BB:BankCommercial, BB_isv_t1:TypeState, BB_Shock_t_t1:TypeMoney{1}, is_rocess:bool, stageFunctionName:Symbol, process:ProcessComponent):
+    # def is_rocess(BB:BankCommercial, BB_isv_t1:TypeState, BB_Shock_t_t1:TypeMoney{1}, is_rocess:bool, stageFunctionName:Symbol, process:ProcessComponent):
     #     if stageFunctionName == process.content[    pass].functionName: # 如果当前阶段是所处过程之最后的阶段，则继续判断，否则过程未结束，后续继续运行。:
     #         if (:
     #             process.functionName == :process_exBank_insolvent |
@@ -308,7 +308,7 @@ class ModelScheduler:
 
     "函数：判断是否继续运行回合"
 
-    def is_round(self, env: dict = env):
+    def is_round(env: dict = env):
         if (env['tau'] < env['max_num_of_tau']):
             env['is_round'] = True
         else:
@@ -319,7 +319,7 @@ class ModelScheduler:
 
     "函数：判断是否继续步进"
 
-    def is_step(self, env: dict = env):
+    def is_step(env: dict = env):
         if ~env['is_step']:
             # @testprintln "暂时跳出模型$(env['model_name'])之过程$(env['process_name'])之阶段$(env['stage_name'])。"
             pass
@@ -330,7 +330,7 @@ class ModelScheduler:
     只有同时满足继续运行过程、继续步进、继续运行回合时，才继续运行循环。否则跳出循环。
     """
 
-    def is_loop(self, env: dict = env):
+    def is_loop(env: dict = env):
         if (env['is_rocess'] & env['is_step'] & env['is_round']):
             env['is_loop'] = True
         else:

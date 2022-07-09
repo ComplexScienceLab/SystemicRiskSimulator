@@ -40,7 +40,7 @@ Return:
 """
 
 
-def fun_process_skeleton(self, A: SystemicRiskAgent, para: dict, env: dict, process: ProcessComponent, A_data: AgentDataCollection):
+def fun_process_skeleton(A: SystemicRiskAgent, para: dict, env: dict, process: ProcessComponent, A_data: AgentDataCollection):
     # @testprintln "过程$(env['index_process'])：$(env['process_name'])"
 
     env['index_stage'] = 0  # 初始化阶段所在位置
