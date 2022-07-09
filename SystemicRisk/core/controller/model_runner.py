@@ -44,7 +44,7 @@ class ModelRunner:
     """
 
     @staticmethod
-    def run_model(self, A: SystemicRiskAgent, para: dict, env: dict, modelComponent: ModelComponent, agentData: AgentDataCollection):
+    def run_model(A: SystemicRiskAgent, para: dict, env: dict, modelComponent: ModelComponent, agentData: AgentDataCollection):
         A, para, env, agentData = modelComponent.run(A, para, env, modelComponent, agentData)
         return A, para, env, agentData
         pass
