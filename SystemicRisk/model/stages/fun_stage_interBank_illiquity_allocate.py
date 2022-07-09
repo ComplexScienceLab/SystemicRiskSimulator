@@ -14,7 +14,7 @@ pass  # end import
 
 
 "函数：银行间挤兑流动分配借贷流量阶段"
-def stage_interBank_illiquity_allocate(self, BB:BankCommercial, BI:BankInterbank, b:TypeState, ib:TypeState, para:dict,env:dict):
+def stage_interBank_illiquity_allocate(BB:BankCommercial, BI:BankInterbank, b:TypeState, ib:TypeState, para:dict,env:dict):
     ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
     # env['stage_name'] = "银行间挤兑流动分配借贷流量阶段"
     # @testprintln "开始阶段$(env['stage_name'])："

@@ -17,7 +17,7 @@ pass  # end import
 
 # from SystemicRisk.model.stages import *
 
-def stage_bankrupt_repay_shock(self, BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
+def stage_bankrupt_repay_shock(BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
     ## # 破产银行遭受偿还冲击
     # @testprintln "开始阶段$(env['stage_name'])："
 

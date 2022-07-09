@@ -16,7 +16,7 @@ pass  # end import
 "函数：流动性短缺银行间挤兑流动传染冲击阶段"
 
 
-def stage_interBank_illiquity_contagion_shock(self, BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
+def stage_interBank_illiquity_contagion_shock(BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
     ## # 流动性短缺银行间挤兑流动传染冲击
     # env['stage_name'] = "流动性短缺银行间挤兑流动传染冲击阶段"
     # @testprintln "开始阶段$(env['stage_name'])："

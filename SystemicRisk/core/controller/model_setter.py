@@ -171,7 +171,7 @@ class ModelSetter:
     - `manually`:  手动设置以初始化；
     """
 
-    def init_B_and_BI(self, init_method: str, A_data: AgentDataCollection):
+    def init_B_and_BI(init_method: str, A_data: AgentDataCollection):
         """
 
         :param init_method:

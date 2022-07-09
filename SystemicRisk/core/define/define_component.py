@@ -14,7 +14,7 @@ class Component:
     function_name: TypeItemFunctionName  # 函数名称 name
     text_name: TypeItemTextName  # 文本名称 name
 
-    def __init__(self, id, function_name, text_name):
+    def __init__(id, function_name, text_name):
         self.id = id
         self.function_name = function_name
         self.text_name = text_name
@@ -32,7 +32,7 @@ class StageComponent(Component):
 
     # content:Array{StageComponent} # 阶段组件列表
 
-    def __init__(self, id, function_name, text_name):
+    def __init__(id, function_name, text_name):
         Component.__init__(id, function_name, text_name)
 
     pass
@@ -48,7 +48,7 @@ class ProcessComponent(Component):
     # processContent:Array{ProcessComponent} # 阶段组件列表
     content: list  # 阶段组件列表
 
-    def __init__(self, id, function_name, text_name):
+    def __init__(id, function_name, text_name):
         Component.__init__(id, function_name, text_name)
 
     pass
@@ -62,7 +62,7 @@ class ModelComponent(Component):
     run = None  # 运行模型
     content: list  # 过程组件列表
 
-    def __init__(self, id, function_name, text_name):
+    def __init__(id, function_name, text_name):
         Component.__init__(id, function_name, text_name)
 
     pass
