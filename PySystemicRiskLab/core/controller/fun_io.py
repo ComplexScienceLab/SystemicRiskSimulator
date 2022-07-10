@@ -45,7 +45,7 @@ class ModelIO:
             pass
 
         env['foldername_of_experiments'] = str_manuallyName + str_datetime
-        env['folderpath_of_experiments'] = os.path.join(env['root_dir_of_experiments'], env['foldername_of_experiments'])
+        env['folderpath_of_experiments'] = os.path.join(env['folderpath_project'], env['root_dir_of_experiments'], env['foldername_of_experiments'])
 
         os.mkdir(env['folderpath_of_experiments'])  # 创建文件夹
         env['folderpath_of_experiments_output_data'] = os.path.join(env['folderpath_of_experiments'], env['foldername_of_experiments_output_data'])

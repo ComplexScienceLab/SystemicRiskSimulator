@@ -19,6 +19,7 @@ import pandas as pd
 # from PySystemicRiskLab.include.SystemicRiskSimulation import *
 # from PySystemicRiskLab.include.Models import *
 # from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.tools.Tools import get_project_rootpath
 from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.define.define_environment_variables import env
 from scripts.variables.set_environmentVariables import *
@@ -46,8 +47,8 @@ if __name__ == "__main__":
 
     ## 创建主文件夹用于本批次实验
 
+    env['folderpath_project'] = get_project_rootpath()
     env = ModelIO.set_experiments_folders()
-    env['project_root_path'] = root_path
 
     ## 建立文件以记录log
     f = open(os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"), "w")
