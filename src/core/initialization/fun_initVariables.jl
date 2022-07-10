@@ -10,7 +10,7 @@
 # export obj_BI,initObj
 
 
-"初始化模型变量ModelComponent"
+"初始化模型变量ModelComponent" #FIXME有错误，需要解决
 function initModel()
     model = ModelComponent(
         model_BI1111!, # 任意初始化为某个过程
@@ -321,7 +321,7 @@ function init_B_and_BI(; init_method::String)
     ib = TypeState{2}((BB.on .|| BB.off) .&& (BB.on .|| BB.off)') # 临时设置BI示性变量
     update_B_Shock!(BB, BI, b, ib; byWay="all") # 更新各银行之所有冲击变量，在第一回合开始时
     update_B_balanceSheet!(BB, BI, b, ib; byWay="all") # 更新各银行之资产负债表变量
-    update_B_state!(BB, BI; to="any", from="any") # 更新各银行之状态示性变量
+    update_B_state!(BB, BI; target="any", source="any") # 更新各银行之状态示性变量
 
     ## 存储初始数据
     # A_data.BB_0 = deepcopy(BB)
