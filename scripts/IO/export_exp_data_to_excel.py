@@ -34,7 +34,7 @@ import pandas as pd
 
 
 print("start")
-# os.chdir("/Users/ethan/LocalFiles/ResearchFile/SystemicRisk")
+# os.chdir("/Users/ethan/LocalFiles/ResearchFile/PySystemicRiskLab")
 os.getcwd()
 # root_path = os.getcwd()
 root_path = "/Users/ethan/LocalFiles/ResearchFile/SystemicRisk"
