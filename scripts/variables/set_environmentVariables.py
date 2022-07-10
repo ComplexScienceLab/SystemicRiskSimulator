@@ -33,7 +33,7 @@ from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 init_method = "set manually"  # 初始化数据方式；
 foldername_type_of_experiments = "set manually"  # 设置实验文件夹命名方式。默认"default"；
 foldername_prefix_of_experiments = "test"  # 手动设置实验文件夹前缀名。默认"default"；
-root_dir_of_experiments = "data/sims"  # 手动设置实验文件夹根路径。默认projectdir( * "/data/sims/"；
+root_dir_of_experiments = "data/sims"  # 手动设置实验文件夹根路径。默认"/data/sims/"；
 foldername_of_experiments_output_data = "exp_output_data"  # 手动设置实验导出数据文件夹名称。
 
 step_size = 1  # 设置步进跨度；如果该数值设置较大，则相当于直接运行程序；
