@@ -7,9 +7,10 @@
 
 from PySystemicRiskLab import os
 
+## 借鉴来源：[PyCharm项目获取项目路径的方法](https://blog.csdn.net/weixin_42787086/article/details/124625385)
 def get_project_rootpath():
     """
-    获取项目根目录。此函数的能力体现在，不论当前module被import到任何位置，都可以正确获取项目根目录
+    获取项目根目录。此函数的能力体现在，不论当前module被import到任何位置，都可以正确获取项目根目录。
     :return:
     """
     path = os.path.realpath(os.curdir)
