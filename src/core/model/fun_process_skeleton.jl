@@ -33,7 +33,7 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
     while env[:is_loop] == true
 
         ## 回合数变动
-        if (env[:loadedIndexStage] != 1)
+        if (env[:loaded_index_stage] != 1)
             @testprintln "\n继续回合：$(env[:tau])"
         else
             env[:tau] += 1 # 回合累加一
@@ -55,7 +55,7 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
 
             ## 调度并运行状态
             if env[:state_of_schedule] == :loading
-                env[:state_of_schedule] = scheduler_loading(env[:index_of_schedule_position], env[:index_process], env[:index_stage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:state_of_schedule]) # 调度读取
+                env[:state_of_schedule] = scheduler_loading(env[:index_of_schedule_position], env[:index_process], env[:index_stage], env[:loaded_index_process], env[:loaded_index_stage], env[:state_of_schedule]) # 调度读取
             end
             if env[:state_of_schedule] == :stepping
                 A = runStage!(A, b, ib, para, env, stage)
@@ -72,7 +72,7 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
         env[:is_process] = is_process!(A.BB, BB_isv_t1, BB_Shock_t_t1, env[:is_process], env[:stage_name], process) # 判断是否继续运行过程
 
         if env[:state_of_schedule] == :saving
-            env[:saved_index_process], env[:saved_index_stage], env[:loadedIndexProcess], env[:loadedIndexStage], env[:state_of_schedule] = scheduler_saving(env[:index_of_schedule_position], env[:index_process], env[:index_stage], env[:is_process]) # 调度存储
+            env[:saved_index_process], env[:saved_index_stage], env[:loaded_index_process], env[:loaded_index_stage], env[:state_of_schedule] = scheduler_saving(env[:index_of_schedule_position], env[:index_process], env[:index_stage], env[:is_process]) # 调度存储
         end
         if (env[:state_of_schedule] == :collecting && env[:state_of_process] == :running)
             env[:state_of_schedule] = scheduler_collecting(A, A_data)
