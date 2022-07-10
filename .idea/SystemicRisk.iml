@@ -5,8 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/src" />
-      <excludeFolder url="file://$MODULE_DIR$/SystemicRisk/core/manager" />
-      <excludeFolder url="file://$MODULE_DIR$/SystemicRisk/core/template" />
+      <excludeFolder url="file://$MODULE_DIR$/PySystemicRiskLab/core/manager" />
+      <excludeFolder url="file://$MODULE_DIR$/PySystemicRiskLab/core/template" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.9 (SystemicRisk)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
