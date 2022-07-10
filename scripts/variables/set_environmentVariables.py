@@ -28,7 +28,7 @@
 
 ######### 设置环境变量 #########################################
 import os
-from SystemicRisk.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 
 init_method = "set manually"  # 初始化数据方式；
 foldername_type_of_experiments = "set manually"  # 设置实验文件夹命名方式。默认"default"；
