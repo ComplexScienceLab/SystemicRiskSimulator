@@ -33,7 +33,7 @@ function stage_interBank_illiquity_repay!(BB::BankCommercial, BI::BankInterbank,
     BB.A_Q[b] += (BB.Li_BI_all[b] - BB.Bo_BI_all[b]) # 各银行流动资金变动，当收回相应的银行间贷款、偿还相应的银行间借款时
     update_B_balanceSheet!(BB, BI, b, ib; byWay = "A_Q")
 
-    update_B_state!(BB, BI; to = "healthy", from = "illiquity") # 更新银行状态之流动性短缺的与健康的
+    update_B_state!(BB, BI; target = "healthy", source = "illiquity") # 更新银行状态之流动性短缺的与健康的
 
     update_B_transfer!(BB, BI, b, ib; byWay = "clear transfer all") # 清零所有不必要的借贷流量变量；
 
