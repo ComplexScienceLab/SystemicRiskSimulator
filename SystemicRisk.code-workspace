@@ -5,13 +5,10 @@
 		}
 	],
 	"settings": {
-		"workbench.colorCustomizations": {
-		
-			"editor.background": "#fffdeb"
-		},
+		// "workbench.colorCustomizations": {
+		// 	"editor.background": "#fffdeb"
+		// },
 		"editor.fontLigatures": true,
-		"workbench.colorTheme": "MacOS Modern Light - Big Sur Xcode Default",
-		"workbench.preferredDarkColorTheme": "MacOS Modern Light - Big Sur Xcode Default",
 		"files.autoSave": "onFocusChange"
 	}
 }
