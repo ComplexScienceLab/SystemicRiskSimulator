@@ -1,10 +1,22 @@
-"函数区：输入输出流"
+"函数区：工具集"
 
-## 函数区：输入输出流
+## 函数区：工具集
 
 ##########################################
 #状态/使用
 ##########################################
+
+"宏：当测试时使用"
+macro testprintln(content)
+    if env[:is_test]
+        return esc(
+            quote
+                write(f,$(content));write(f,"\n");println($(content))
+            end
+        )
+    end
+end
+
 
 """
 函数：设置实验文件夹
@@ -42,6 +54,8 @@ function setExperimentsFolders!(env::Dict; isDatetime::Bool=true)
 
     return env
 end # functioin
+
+
 
 
 
