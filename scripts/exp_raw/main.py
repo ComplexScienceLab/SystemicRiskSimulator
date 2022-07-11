@@ -8,9 +8,7 @@
 
 
 ## 导入相关包
-import os
 import numpy as np
-from enum import Enum
 import pandas as pd
 
 ## 导入相关文件及其内容
@@ -19,18 +17,16 @@ import pandas as pd
 # from PySystemicRiskLab.include.SystemicRiskSimulation import *
 # from PySystemicRiskLab.include.Models import *
 # from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
-from PySystemicRiskLab.tools.Tools import get_project_rootpath
+from PySystemicRiskLab.tools.fun_tools import Tools
 from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.define.define_environment_variables import env
 from scripts.variables.set_environmentVariables import *
 # from scripts.variables.set_parameterVariables import *
-from PySystemicRiskLab.core.controller.fun_tools import Tools
 # from PySystemicRiskLab.core.controller.model_setter import ModelSetter
 from PySystemicRiskLab.core.controller.model_runner import ModelRunner
 from PySystemicRiskLab.core.controller.fun_scheduler import ModelScheduler
 # from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.controller.model_builder import ModelBuilder
-from PySystemicRiskLab.core.controller.fun_io import ModelIO
 from PySystemicRiskLab.model.models import modelContent_BI1111
 
 # end import
@@ -47,8 +43,8 @@ if __name__ == "__main__":
 
     ## 创建主文件夹用于本批次实验
 
-    env['folderpath_project'] = get_project_rootpath()
-    env = ModelIO.set_experiments_folders()
+    env['folderpath_project'] = Tools().get_project_rootpath()
+    env = Tools().set_experiments_folders()
 
     ## 建立文件以记录log
     f = open(os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"), "w")
@@ -56,7 +52,7 @@ if __name__ == "__main__":
     # @testprintln "\n实验组名称：$(env['foldername_of_experiments'])"
 
     ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
-    list_combinationOfPara = Tools.dict_to_product_list(para)  # 组合排列多结构体成为列表
+    list_combinationOfPara = Tools().dict_to_product_list(para)  # 组合排列多结构体成为列表
     env['num_experiment'] = len(list_combinationOfPara)  # 获取实验组之实验个数
     df_combinationOfPara = pd.DataFrame(np.asarray(list_combinationOfPara), columns=para.keys())  # 转换字典列表为数据框
     df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
