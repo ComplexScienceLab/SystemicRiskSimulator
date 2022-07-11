@@ -40,10 +40,9 @@ include("../core/define/define_agentDataCollection.jl")
 include("../core/define/define_consts.jl")
 
 ## 集成工具功能文件
-include("../core/controller/fun_tools.jl")
+include("../tools/fun_tools.jl")
 
 ## 集成调度功能文件
-include("../core/controller/fun_io.jl")
 include("../core/controller/fun_schedulers.jl")
 include("../core/controller/fun_builder.jl")
 include("../core/controller/fun_runner.jl")
