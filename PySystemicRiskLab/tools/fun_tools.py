@@ -51,7 +51,7 @@ class Tools:
         return pdl
         pass
 
-    def set_experiments_folders(env: dict = env, isDatetime: bool = True):
+    def set_experiments_folders(self, env: dict = env, isDatetime: bool = True):
         ## 设定日期时间字符串
         if isDatetime == True:
             str_datetime = "_" + time.strftime("%Y%m%d%H%M%S")
