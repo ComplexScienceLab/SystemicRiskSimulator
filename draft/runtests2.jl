@@ -7,14 +7,14 @@
 
 using DataFrames
 
-# include("../src/core/controller/fun_tools.jl")
-# include("../src/core/define/define_type.jl")
-# include("../src/core/define/define_model.jl")
-# include("../src/model/models/model_content.jl")
-# include("../src/model/processes/process_content.jl")
-# include("../src/model/stages/stage_content.jl")
-# include("../src/model/models/fun_model_skeleton.jl")
-# include("../src/model/models/fun_model_BI1111.jl")
+# include("../JuliaSystemicRiskLab/core/controller/fun_tools.jl")
+# include("../JuliaSystemicRiskLab/core/define/define_type.jl")
+# include("../JuliaSystemicRiskLab/core/define/define_model.jl")
+# include("../JuliaSystemicRiskLab/model/models/model_content.jl")
+# include("../JuliaSystemicRiskLab/model/processes/process_content.jl")
+# include("../JuliaSystemicRiskLab/model/stages/stage_content.jl")
+# include("../JuliaSystemicRiskLab/model/models/fun_model_skeleton.jl")
+# include("../JuliaSystemicRiskLab/model/models/fun_model_BI1111.jl")
 
 
 # 模型内容结构体

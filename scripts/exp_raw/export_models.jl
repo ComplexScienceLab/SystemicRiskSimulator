@@ -11,9 +11,9 @@ using DrWatson
 
 include("../include/include_exp_files.jl")
 
-include("../../src/include/SystemicRiskSimulation.jl")
+include("../../JuliaSystemicRiskLab/include/SystemicRiskSimulation.jl")
 
-include("../../src/include/Models.jl")
+include("../../JuliaSystemicRiskLab/include/Models.jl")
 
 
 ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
