@@ -23,8 +23,8 @@
         {
             "type": "julia",
             "request": "launch",
-            "name": "Launch batch_main.jl file",
-            "program": "${workspaceFolder}/scripts/exp_raw/batch_main.jl",
+            "name": "Launch main.jl file",
+            "program": "${workspaceFolder}/scripts/exp_raw/main.jl",
             "stopOnEntry": false,
             "cwd": "${workspaceFolder}",
             "juliaEnv": "${command:activeJuliaEnvironment}"
