@@ -22,7 +22,7 @@
 
 ##########################################
 #状态/可扩展
-# 开发说明：[相关的修改项](file:///../../src/core/define/define_environmentVariables.jl)
+# 开发说明：[相关的修改项](file:///../../JuliaSystemicRiskLab/core/define/define_environmentVariables.jl)
 ##########################################
 
 
