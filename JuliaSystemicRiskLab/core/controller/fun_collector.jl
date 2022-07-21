@@ -97,7 +97,7 @@ function exportAgentData(A_data::AgentDataCollection; env::Dict=env, para::Dict=
         end
         append!(BB_data_export, BB_data)
     end
-    CSV.write(datadir("$(env[:folderpath_of_experiments_output_data])","BB_exp=$(env[:id_experiment]).csv"), BB_data_export) # 导出为csv格式；
+    CSV.write(datadir("$(env[:folderpath_of_experiments_output_data])", "BB_exp=$(env[:id_experiment]).csv"), BB_data_export) # 导出为csv格式；
 
     ## 整理interbank之数据为一数据框
     BI_data_export = DataFrame()
@@ -129,11 +129,11 @@ function exportAgentData(A_data::AgentDataCollection; env::Dict=env, para::Dict=
         end
         append!(BI_data_export, BI_data)
     end
-    CSV.write(datadir("$(env[:folderpath_of_experiments_output_data])","BI_exp=$(env[:id_experiment]).csv"), BI_data_export) # 导出为csv格式
+    CSV.write(datadir("$(env[:folderpath_of_experiments_output_data])", "BI_exp=$(env[:id_experiment]).csv"), BI_data_export) # 导出为csv格式
 
     ## 整理env之数据为一数据框，然后导出为csv格式
     # wsave(datadir(env[:folderpath_of_experiments_output_data], savename(para, "|exp=$(env[:id_experiment]).jld2", connector="|", equals="=")), para)
-    
+
 end
 
 
@@ -238,3 +238,13 @@ end
 # end
 
 
+"""
+TODO函数：导出控制参数数据
+"""
+function exportParameterData(list_combinationOfPara; env::Dict=env)
+    env[:num_experiment] = length(list_combinationOfPara) # 获取实验组之实验个数
+    df_combinationOfPara = vcat(DataFrame.(list_combinationOfPara)...) # 转换字典列表为数据框
+    df_combinationOfPara[!, "exp_id"] = repeat(1:env[:num_experiment], inner=env[:num_bank]) # 添加实验组id
+    df_combinationOfPara[!, "id"] = collect(range(1, size(df_combinationOfPara)[1], step=1)) # 添加id
+    CSV.write(datadir("$(env[:folderpath_of_experiments_output_data])", "paras.csv"), df_combinationOfPara) # 导出字段列表为csv格式
+end # function
