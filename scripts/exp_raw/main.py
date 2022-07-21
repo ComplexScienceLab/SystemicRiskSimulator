@@ -28,6 +28,7 @@ from PySystemicRiskLab.core.controller.fun_scheduler import ModelScheduler
 # from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.controller.model_builder import ModelBuilder
 from PySystemicRiskLab.model.models import modelContent_BI1111
+from PySystemicRiskLab.core.controller.model_collector import ModelCollector
 
 # end import
 
@@ -53,15 +54,17 @@ if __name__ == "__main__":
 
     ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
     list_combinationOfPara = Tools().dict_to_product_list(para)  # 组合排列多结构体成为列表
-    env['num_experiment'] = len(list_combinationOfPara)  # 获取实验组之实验个数
-    df_010 = pd.DataFrame(list_combinationOfPara, columns=para.keys())  # 转换字典列表为数据框
-    li_010 = [df_010.apply(lambda x: pd.Series(x[i]), axis=1).stack().reset_index(level=1, drop=True) for i in range(df_010.columns.__len__())]
-    li_020 = [np.array(li_010[i]).repeat(repeats=env['num_bank']) for i in range(li_010.__len__())]
-    df_combinationOfPara = pd.DataFrame(li_020).T
-    df_combinationOfPara.columns=para.keys()
-    df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
-    df_combinationOfPara.insert(loc=0, column='id', value=list(range(1, len(df_combinationOfPara) + 1)), axis=0)  # 添加数据项id
-    df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "paras.csv"), df_combinationOfPara)  # 导出字段列表为csv格式
+    # env['num_experiment'] = len(list_combinationOfPara)  # 获取实验组之实验个数
+    # df_010 = pd.DataFrame(list_combinationOfPara, columns=para.keys())  # 转换字典列表为数据框
+    # li_010 = [df_010.apply(lambda x: pd.Series(x[i]), axis=1).stack().reset_index(level=1, drop=True) for i in range(df_010.columns.__len__())]
+    # li_020 = [np.array(li_010[i]).repeat(repeats=env['num_bank']) for i in range(li_010.__len__())]
+    # df_combinationOfPara = pd.DataFrame(li_020).T
+    # df_combinationOfPara.columns=para.keys()
+    # df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
+    # df_combinationOfPara.insert(loc=0, column='id', value=list(range(1, len(df_combinationOfPara) + 1)), axis=0)  # 添加数据项id
+    # df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "paras.csv"), df_combinationOfPara)  # 导出字段列表为csv格式
+
+    ModelCollector.exportParameterData(ModelCollector,list_combinationOfPara=list_combinationOfPara) # 导出控制参数数据
 
     ## 初始化参数变量
     # @testprintln "\n列出所有实验组："
