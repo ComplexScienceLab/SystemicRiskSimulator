@@ -1,9 +1,9 @@
 "程序：定义模型及其相关的结构体"
 
 from PySystemicRiskLab.core.define.define_type import *
+
 # from PySystemicRiskLab.core import ModelRunner
 pass  # end import
-
 
 
 class Component:
@@ -11,16 +11,16 @@ class Component:
     定义公共组件
     """
     id: TypeItemId  # 编号 id
-    function_name: TypeItemFunctionName  # 函数名称 name
-    text_name: TypeItemTextName  # 文本名称 name
+    functionName: TypeItemFunctionName  # 函数名称 name
+    textName: TypeItemTextName  # 文本名称 name
 
     def __init__(self, id, function_name, text_name):
         self.id = id
-        self.function_name = function_name
-        self.text_name = text_name
+        self.functionName = function_name
+        self.textName = text_name
         pass
 
-    pass
+    pass  # class
 
 
 class StageComponent(Component):
@@ -32,10 +32,12 @@ class StageComponent(Component):
 
     # content:Array{StageComponent} # 阶段组件列表
 
-    def __init__(self, id, function_name, text_name):
-        Component.__init__(id, function_name, text_name)
+    def __init__(self, id, function_name, text_name, model_function):
+        Component.__init__(self, id, function_name, text_name)
+        self.modelFunction = model_function
+        pass
 
-    pass
+    pass  # class
 
 
 class ProcessComponent(Component):
@@ -48,10 +50,13 @@ class ProcessComponent(Component):
     # processContent:Array{ProcessComponent} # 阶段组件列表
     content: list  # 阶段组件列表
 
-    def __init__(self, id, function_name, text_name):
-        Component.__init__(id, function_name, text_name)
+    def __init__(self, id, function_name, text_name, run, content: list):
+        Component.__init__(self, id, function_name, text_name)
+        self.run = run
+        self.content = content
+        pass
 
-    pass
+    pass  # class
 
 
 class ModelComponent(Component):
@@ -62,7 +67,11 @@ class ModelComponent(Component):
     run = None  # 运行模型
     content: list  # 过程组件列表
 
-    def __init__(self, id, function_name, text_name):
-        Component.__init__(id, function_name, text_name)
+    def __init__(self, id, function_name, text_name, run, content: list):
+        Component.__init__(self, id, function_name, text_name)
+        self.run = run
+        self.content = content
+
+        pass
 
     pass

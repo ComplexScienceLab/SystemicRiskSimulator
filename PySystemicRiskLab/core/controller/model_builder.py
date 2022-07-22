@@ -30,7 +30,7 @@ class ModelBuilder:
     - stage:StageComponent: 阶段组件实例
     """
 
-    def build_stage(self, stage_content: StageContent):
+    def buildStage(stage_content: StageContent):
         ## 获得阶段类型
         stageInstanceType = stage_content.functionName
 
@@ -58,14 +58,14 @@ class ModelBuilder:
     - process:ProcessComponent: 过程组件实例
     """
 
-    def buildProcess(self, process_content: ProcessContent, processSkeleton=fun_process_skeleton):
+    def buildProcess(process_content: ProcessContent, processSkeleton=fun_process_skeleton):
         ## 获得过程类型
         processInstanceType = process_content.functionName
 
         ## 生成子阶段组件列表
         list_stage = []
         for stageContent in process_content.listStageContent:
-            stage = self.buildStage(stageContent)
+            stage = ModelBuilder.buildStage(stageContent)
             list_stage.append([stage])
             pass
 
@@ -95,7 +95,7 @@ class ModelBuilder:
     - model:ModelComponent: 模型组件实例
     """
 
-    def buildModel(self, modelContent: ModelContent, modelSkeleton=fun_model_skeleton):
+    def buildModel(modelContent: ModelContent, modelSkeleton=fun_model_skeleton):
 
         ## 获得模型类型
         modelInstanceType = modelContent.functionName
@@ -103,7 +103,7 @@ class ModelBuilder:
         ## 生成子过程组件列表
         list_process = []
         for processContent in modelContent.listProcessContent:
-            process = self.buildProcess(processContent)
+            process = ModelBuilder.buildProcess(processContent)
             list_process.append([process])
             pass
 
