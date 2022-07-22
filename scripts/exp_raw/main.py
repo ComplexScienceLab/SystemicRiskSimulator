@@ -64,7 +64,7 @@ if __name__ == "__main__":
     # df_combinationOfPara.insert(loc=0, column='id', value=list(range(1, len(df_combinationOfPara) + 1)), axis=0)  # 添加数据项id
     # df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "paras.csv"), df_combinationOfPara)  # 导出字段列表为csv格式
 
-    ModelCollector.exportParameterData(ModelCollector,list_combinationOfPara=list_combinationOfPara) # 导出控制参数数据
+    ModelCollector.exportParameterData(ModelCollector, list_combinationOfPara=list_combinationOfPara)  # 导出控制参数数据
 
     ## 初始化参数变量
     # @testprintln "\n列出所有实验组："
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     ## 构建本次实验组所需的所有模型
     model = ModelBuilder.buildModel(modelContent_BI1111)  # 根据基准模型BI1111预先初始化model变量
     if len(para['model_name']) > 1:
-        for model_name in para['model_name'][1:-1]:
+        for model_name in para['model_name']:
             modelContent = eval("modelContent_" + model_name)
             # if True: # FIXME如果不存在模型文件，则构建模型
             model = ModelBuilder.buildModel(modelContent)
