@@ -27,7 +27,7 @@ class StageContent(Content):
     """
     定义阶段组件内容结构体
     """
-    # modelFunction = ModelRunner.run_stage  # 函数
+    # model_function = ModelRunner.run_stage  # 函数
     modelFunction = None  # 函数
 
     def __init__(self, id, function_name, text_name, model_function):
