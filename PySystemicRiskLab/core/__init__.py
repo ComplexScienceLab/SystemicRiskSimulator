@@ -48,8 +48,8 @@
 # from .functions.fun_measure import *
 #
 # ## 集成通用框架文件
-# from .model.fun_process_skeleton import *
-# from .model.fun_model_skeleton import *
+# from .models.fun_process_skeleton import *
+# from .models.fun_model_skeleton import *
 #
 #
 #

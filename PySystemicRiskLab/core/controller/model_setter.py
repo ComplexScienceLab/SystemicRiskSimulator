@@ -9,7 +9,7 @@ pass  # end import
 
 import numpy as np
 from PySystemicRiskLab.core.define.define_agents import BankCommercial
-# from PySystemicRiskLab.model.models.model_content import *
+# from PySystemicRiskLab.models.models.model_content import *
 from PySystemicRiskLab.core import np, env, BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 pass  # end import

@@ -25,7 +25,7 @@ def stage_interBank_illiquity_repay(self, BB: BankCommercial, BI: BankInterbank,
     # @testprintln "开始阶段$(env['stage_name'])："
 
     BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b] = BankTransfer.transfer_B_capital_reverse(BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b], BB.Li_P[b])  # 流动资产变动，因收回厂商贷款
-    # BB.A_Q[b] *= (1 - para['kappa_A_P']) #HACK 暂时还不用！
+    # BB.A_Q[b] *= (1 - paras['kappa_A_P']) #HACK 暂时还不用！
     BalanceSheet.update_B_balanceSheet(BB, BI, b, ib, byWay="A_Q")
     BalanceSheet.update_B_balanceSheet(BB, BI, b, ib, byWay="A_P")
     Shock.update_B_Shock(BB, BI, b, ib, byWay="Shock_P_run_s")

@@ -27,14 +27,14 @@ pass  # end import
 
 Argument: 
 - A:SystemicRiskAgent: Agent群变量；
-- para:dict: 参数变量；
+- paras:dict: 参数变量；
 - env:dict: 环境变量；
 - process:ProcessComponent: 过程组件实例；
 - A_data:AgentDataCollection: Agent群变量之数据；
 
 Return:
 - A:SystemicRiskAgent: Agent群变量；
-- para:dict: 参数变量；
+- paras:dict: 参数变量；
 - env:dict: 环境变量；
 - A_data:AgentDataCollection: Agent群变量之数据；
 """

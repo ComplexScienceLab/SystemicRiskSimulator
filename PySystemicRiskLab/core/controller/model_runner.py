@@ -31,14 +31,14 @@ class ModelRunner:
     
     Argument: 
     - A:SystemicRiskAgent: Agent群变量；
-    - para:dict: 参数变量；
+    - paras:dict: 参数变量；
     - env:dict: 环境变量；
     - modelComponent:ModelComponent: 模型组件实例；
     - A_data:AgentDataCollection: Agent群变量之数据；
     
     Return:
     - A:SystemicRiskAgent: Agent群变量；
-    - para:dict: 参数变量；
+    - paras:dict: 参数变量；
     - env:dict: 环境变量；
     - A_data:AgentDataCollection: Agent群变量之数据；
     """
@@ -55,14 +55,14 @@ class ModelRunner:
     
     Argument: 
     - A:SystemicRiskAgent: Agent群变量；
-    - para:dict: 参数变量；
+    - paras:dict: 参数变量；
     - env:dict: 环境变量；
     - processComponent:ProcessComponent: 过程组件实例；
     - A_data:AgentDataCollection: Agent群变量之数据；
     
     Return:
     - A:SystemicRiskAgent: Agent群变量；
-    - para:dict: 参数变量；
+    - paras:dict: 参数变量；
     - env:dict: 环境变量；
     - A_data:AgentDataCollection: Agent群变量之数据；
     """
@@ -82,7 +82,7 @@ class ModelRunner:
     - BI:BankInterbank: 银行间邻接矩阵变量；
     - b:TypeState: 商业银行群示性向量；
     - ib:TypeState: 银行间邻接矩阵示性矩阵；
-    - para:dict: 参数变量；
+    - paras:dict: 参数变量；
     - env:dict: 环境变量；
     - stageComponent:StageComponent: 阶段组件实例；
     

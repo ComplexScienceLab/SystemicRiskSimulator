@@ -6,16 +6,11 @@
 # from PySystemicRiskLab.core import ModelContent, ProcessContent, StageContent, ModelComponent, ProcessComponent, StageComponent, fun_model_skeleton, fun_process_skeleton
 pass  # end import
 
-
-
 from PySystemicRiskLab.core.define.define_content import ModelContent, ProcessContent, StageContent
 from PySystemicRiskLab.core.define.define_component import ModelComponent, ProcessComponent, StageComponent
 from PySystemicRiskLab.core.model import fun_model_skeleton, fun_process_skeleton
+
 pass  # end import
-
-
-
-
 
 
 class ModelBuilder:
@@ -30,7 +25,7 @@ class ModelBuilder:
     - stage:StageComponent: 阶段组件实例
     """
 
-    def buildStage(stage_content: StageContent):
+    def buildStage(self, stage_content: StageContent):
         ## 获得阶段类型
         stageInstanceType = stage_content.functionName
 
@@ -58,14 +53,14 @@ class ModelBuilder:
     - process:ProcessComponent: 过程组件实例
     """
 
-    def buildProcess(process_content: ProcessContent, processSkeleton=fun_process_skeleton):
+    def buildProcess(self, process_content: ProcessContent, processSkeleton=fun_process_skeleton):
         ## 获得过程类型
         processInstanceType = process_content.functionName
 
         ## 生成子阶段组件列表
         list_stage = []
         for stageContent in process_content.listStageContent:
-            stage = ModelBuilder.buildStage(stageContent)
+            stage = self.buildStage(stageContent)
             list_stage.append([stage])
             pass
 
@@ -92,10 +87,10 @@ class ModelBuilder:
     - modelSkeleton:Function = fun_model_skeleton: 模型架构函数；
     
     Return:
-    - model:ModelComponent: 模型组件实例
+    - models:ModelComponent: 模型组件实例
     """
 
-    def buildModel(modelContent: ModelContent, modelSkeleton=fun_model_skeleton):
+    def buildModel(self, modelContent, modelSkeleton=fun_model_skeleton):
 
         ## 获得模型类型
         modelInstanceType = modelContent.functionName
@@ -103,7 +98,7 @@ class ModelBuilder:
         ## 生成子过程组件列表
         list_process = []
         for processContent in modelContent.listProcessContent:
-            process = ModelBuilder.buildProcess(processContent)
+            process = self.buildProcess(processContent)
             list_process.append([process])
             pass
 
