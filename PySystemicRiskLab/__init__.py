@@ -25,4 +25,4 @@ from dataclasses import dataclass
 # from .core import *
 
 ## 集成模型包
-# from .model import *
+# from .models import *

@@ -15,7 +15,7 @@ pass  # end import
 
 
 
-# from PySystemicRiskLab.model.stages import *
+# from PySystemicRiskLab.models.stages import *
 
 def stage_bankrupt_repay_shock(self, BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
     ## # 破产银行遭受偿还冲击
