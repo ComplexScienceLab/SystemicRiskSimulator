@@ -43,6 +43,7 @@ include("../model/processes/process_content.jl")
 
 ## 集成模型文件
 include("../model/models/fun_model_BI1111.jl")
+# include("../model/models/fun_model_BI1112.jl")
 include("../model/models/model_content.jl")
 
 

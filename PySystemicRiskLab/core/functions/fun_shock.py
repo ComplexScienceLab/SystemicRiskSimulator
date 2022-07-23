@@ -23,7 +23,7 @@ class Shock:
 
     # "汇总综合外生冲击。" #HACK无用
     # functions together_Shock_exBI(bank:BankCommercial, bankState:TypeState)
-    #     bank.Shock_exBI_t[bankState] = para['theta_Shock_exBI_t'] * bank.Shock_P_def_t[bankState] + (1 - para['theta_Shock_exBI_t']) * bank.Shock_D_run_t[bankState]
+    #     bank.Shock_exBI_t[bankState] = paras['theta_Shock_exBI_t'] * bank.Shock_P_def_t[bankState] + (1 - paras['theta_Shock_exBI_t']) * bank.Shock_D_run_t[bankState]
     #     pass
 
     

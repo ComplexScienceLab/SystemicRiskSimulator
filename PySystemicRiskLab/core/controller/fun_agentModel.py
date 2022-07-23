@@ -4,13 +4,13 @@
 # 状态/开发
 ##########################################
 
-# from PySystemicRiskLab.core import env, para, SystemicRiskAgent, ModelSetter, StateOfScheduleEnum, ModelComponent, AgentDataCollection, ModelRunner, ModelCollector
+# from PySystemicRiskLab.core import env, paras, SystemicRiskAgent, ModelSetter, StateOfScheduleEnum, ModelComponent, AgentDataCollection, ModelRunner, ModelCollector
 pass  # end import
 
 
 
 from PySystemicRiskLab.core.define.define_environment_variables import env
-from PySystemicRiskLab.core.define.define_parameterVariables import para
+from PySystemicRiskLab.core.define.define_parameterVariables import paras
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.controller.model_setter import ModelSetter
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
@@ -27,7 +27,7 @@ pass  # end import
 class RunModel:
     "#TODO初始化systemicRiskAgent和systemicRiskModel"
 
-    def init_systemicRiskAgent(self, para: dict = para, env: dict = env):
+    def init_systemicRiskAgent(self, para: dict = paras, env: dict = env):
         systemicRiskAgent, systemicRiskAgent_data = ModelSetter.init_B_and_BI(init_method=env['init_method'])
 
         ## 调度状态
@@ -43,9 +43,9 @@ class RunModel:
         pass
 
     # "函数：Agent模型步进" #BUG方案二
-    # functions systemicRiskAgent_step(systemicRiskAgent:SystemicRiskAgent, systemicRiskModel:ABM, para:dict, env:dict)
+    # functions systemicRiskAgent_step(systemicRiskAgent:SystemicRiskAgent, systemicRiskModel:ABM, paras:dict, env:dict)
     #     env['is_step'] = True
-    #     systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env = model_BI1111(systemicRiskAgent.bank, systemicRiskAgent.interbank, para, env) # 调用具体的模型
+    #     systemicRiskAgent.bank, systemicRiskAgent.interbank, paras, env = model_BI1111(systemicRiskAgent.bank, systemicRiskAgent.interbank, paras, env) # 调用具体的模型
     #     _, _ = run(systemicRiskModel, systemicRiskAgent_step, env['max_num_of_tau'])
     #     pass
 
@@ -53,10 +53,10 @@ class RunModel:
 
     "函数：运行一次仿真"
 
-    def makesim(self, model: ModelComponent, para: dict = para, env: dict = env):
+    def makesim(self, model: ModelComponent, para: dict = paras, env: dict = env):
         ## 初始化agent及其模型
         A, M, A_data = self.init_systemicRiskAgent(self, para, env)
-        # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)
+        # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, paras)
 
         ##BUG 测试具体模型。
         maxnum = 0

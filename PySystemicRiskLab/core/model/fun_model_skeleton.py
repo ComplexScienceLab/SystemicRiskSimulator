@@ -25,14 +25,14 @@ pass  # end import
 
 Argument: 
 - A:SystemicRiskAgent: Agent群变量；
-- para:dict: 参数变量；
+- paras:dict: 参数变量；
 - env:dict: 环境变量；
-- model:ModelComponent: 模型组件实例；
+- models:ModelComponent: 模型组件实例；
 - A_data:AgentDataCollection: Agent群变量之数据；
 
 Return:
 - A:SystemicRiskAgent: Agent群变量；
-- para:dict: 参数变量；
+- paras:dict: 参数变量；
 - env:dict: 环境变量；
 - A_data:AgentDataCollection: Agent群变量之数据；
 """
@@ -70,7 +70,7 @@ def fun_model_skeleton(self, A: SystemicRiskAgent, para: dict, env: dict, model:
         # @testprintln "结束模型：$(env['model_name'])。\n"
         pass
 
-    # return BB, BI, para, env
+    # return BB, BI, paras, env
     return A, para, env, A_data
     pass  # functions
 

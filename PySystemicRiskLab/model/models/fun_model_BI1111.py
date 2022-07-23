@@ -27,27 +27,27 @@ def model_BI1111(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict)
 
     ## 过程：银行外部违约损失传染冲击 #BUG测试宏和函数正确性
     env['process_name'] = "银行外部违约损失传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_exBank_insolvent(BB, BI, para, env)
+    #= @scheduler_process  =#BB, BI, env = process_exBank_insolvent(BB, BI, paras, env)
 
     ## 过程：资不抵债银行间违约损失传染冲击
     env['process_name'] = "资不抵债银行间违约损失传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_interBank_insolvent(BB, BI, para, env)
+    #= @scheduler_process  =#BB, BI, env = process_interBank_insolvent(BB, BI, paras, env)
 
     ## 过程：外部挤兑流动传染冲击
     env['process_name'] = "银行外部挤兑流动传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_exBank_illiquity(BB, BI, para, env)
+    #= @scheduler_process  =#BB, BI, env = process_exBank_illiquity(BB, BI, paras, env)
 
     ## 过程：流动性短缺银行间挤兑流动传染冲击
     env['process_name'] = "流动性短缺银行间挤兑流动传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_interBank_illiquity(BB, BI, para, env)
+    #= @scheduler_process  =#BB, BI, env = process_interBank_illiquity(BB, BI, paras, env)
 
     ## 过程：外生破产银行间挤兑流动传染冲击 #HACK暂时不用
     # env['process_name'] = "外生破产银行间挤兑流动传染冲击过程"
-    # @run_process BB, BI, env = process_exBank_bankrupt(BB, BI, para, env)
+    # @run_process BB, BI, env = process_exBank_bankrupt(BB, BI, paras, env)
 
     ## 过程：破产银行间挤兑流动传染冲击
     env['process_name'] = "破产银行间挤兑流动传染冲击过程"
-    #= @scheduler_process  =#BB, BI, env = process_interBank_bankrupt(BB, BI, para, env)
+    #= @scheduler_process  =#BB, BI, env = process_interBank_bankrupt(BB, BI, paras, env)
 
 
     # update_B_balanceSheet(BB, BI,b,ib; byWay = "calc all E_all") # 更新计算各银行之所有者权益
@@ -71,7 +71,7 @@ def model_BI1111(self, BB:BankCommercial, BI:BankInterbank, para:dict, env:dict)
 
 
     return BB, BI, para, env
-    # return BB, BI, A_data.BB, A_data.BI, para, env
+    # return BB, BI, A_data.BB, A_data.BI, paras, env
     pass # functions
 
 #     pass # module

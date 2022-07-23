@@ -47,20 +47,25 @@ for (idx_para, para) in enumerate(list_combinationOfPara)
 end
 
 ## 构建本次实验组所需的所有模型
-model = buildModel(modelContent_BI1111) # 根据基准模型BI1111预先初始化model变量
-if length(setOfValuesOfParameterVariables[:model_name]) > 1
-    for model_name in setOfValuesOfParameterVariables[:model_name][2:end]
-        modelContent = eval(Meta.parse("modelContent_$(model_name)"))
-        # if true # FIXME如果不存在模型文件，则构建模型
-        model = buildModel(modelContent)
-        # end
-    end
+models = Dict()
+# append!(models, buildModel(modelContent_BI1111)) # 根据基准模型BI1111预先初始化model变量
+# if length(setOfValuesOfParameterVariables[:model_name]) > 1
+for model_name in unique(setOfValuesOfParameterVariables[:model_name])
+    modelContent = eval(Meta.parse("modelContent_$(model_name)"))
+    # if true # FIXME如果不存在模型文件，则构建模型
+    # local model = Dict([(model_name,buildModel(modelContent))])
+    local model = buildModel(modelContent)
+    models[model_name] = model  #NOW
+    # append!(models, model)
+    # end
 end
+# end
 
 println("\n实验组开始：\n")
 
 ## 主循环
 for (i, para) in enumerate(list_combinationOfPara)
+    local model = models[para[:model_name]] # NOW获取当前循环的模型
     env[:id_experiment] = i # 设定当前实验编号
     # 重置环境变量
     env[:index_of_schedule_position] = []
