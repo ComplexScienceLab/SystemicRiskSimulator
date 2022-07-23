@@ -5,14 +5,14 @@
 ##########################################
 # 状态/开发
 ##########################################
-# from PySystemicRiskLab.core import np, pd, deepcopy, SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env, para, TypeMoney, TypeState, TypeIds, TypeList
+# from PySystemicRiskLab.core import np, pd, deepcopy, SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env, paras, TypeMoney, TypeState, TypeIds, TypeList
 pass  # end import
 
 import os.path
 import numpy as np, pandas as pd
 from copy import deepcopy
 from PySystemicRiskLab.core.define.define_type import *
-from PySystemicRiskLab.core.define.define_parameterVariables import para
+from PySystemicRiskLab.core.define.define_parameterVariables import paras
 from PySystemicRiskLab.core.define.define_environment_variables import env
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
@@ -134,7 +134,7 @@ class ModelCollector:
 
 
 
-    def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: dict = para):
+    def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: dict = paras):
         """
         导出实验结果数据
         :param A_data:
@@ -198,12 +198,12 @@ class ModelCollector:
         BI_data_export.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "BI_exp=" + env['id_experiment'] + ".csv"))  # 导出为csv格式；
 
         ## 整理env之数据为一数据框，然后导出为csv格式
-        # wsave(datadir(env['folderpath_of_experiments_output_data'], savename(para, "|exp=$(env['id_experiment']).jld2", connector="|", equals="=")), para)
+        # wsave(datadir(env['folderpath_of_experiments_output_data'], savename(paras, "|exp=$(env['id_experiment']).jld2", connector="|", equals="=")), paras)
 
         pass  # def
 
 
-    def exportParameterData(self,list_combinationOfPara, para=para):
+    def exportParameterData(self, list_combinationOfPara, para=paras):
         """
         导出控制参数数据
         :param list_combinationOfPara:
@@ -221,7 +221,7 @@ class ModelCollector:
         # li_010 = [df_010.apply(lambda x: pd.Series(x[i]), axis=1).stack().reset_index(level=1, drop=True) for i in range(df_010.columns.__len__())]
         # li_020 = [np.array(li_010[i]) for i in range(li_010.__len__())]
         # df_combinationOfPara = pd.DataFrame(li_020).T
-        # df_combinationOfPara.columns = para.keys()
+        # df_combinationOfPara.columns = paras.keys()
         df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1,env['num_bank']+1)),reps=env['num_experiment']))  # 添加数据项id
         df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
         # df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "paras.csv"), df_combinationOfPara)  # 导出字段列表为csv格式

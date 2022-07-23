@@ -24,4 +24,4 @@ setOfValuesOfParameterVariables = dict(
     kappa_BI=kappa_BI,
 )
 
-para = setOfValuesOfParameterVariables # 别名
+paras = setOfValuesOfParameterVariables # 别名
