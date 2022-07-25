@@ -40,7 +40,7 @@ end # function
 函数：调度索引
 
 Argument: 
-- modelContent::ModelContent: 被调度的模型内容；
+- model::ModelContent: 被调度的模型内容；
 
 Return: 
 - index_of_schedule_position::Array 调度位置索引列表；
