@@ -7,21 +7,9 @@
 ##########################################
 
 
+from PyScripts.settings.set_parameterVariables import set_parameterVariables
 
-from scripts.variables.set_parameterVariables import *
 pass  # end import
 
-
-
-
 ## 生成字典变量
-setOfValuesOfParameterVariables = dict(
-    model_name=model_name,
-    Shock_exBI_def_t=Shock_exBI_def_t,
-    Shock_exBI_run_t=Shock_exBI_run_t,
-    list_Shock_exBI_t=list_Shock_exBI_t,
-    kappa_A_P=kappa_A_P,
-    kappa_BI=kappa_BI,
-)
-
-paras = setOfValuesOfParameterVariables # 别名
+paras = set_parameterVariables  # 别名

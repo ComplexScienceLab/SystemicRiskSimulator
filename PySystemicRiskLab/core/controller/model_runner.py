@@ -43,8 +43,8 @@ class ModelRunner:
     - A_data:AgentDataCollection: Agent群变量之数据；
     """
 
-    @staticmethod
-    def run_model(self, A: SystemicRiskAgent, para: dict, env: dict, modelComponent: ModelComponent, agentData: AgentDataCollection):
+    @classmethod
+    def run_model(cls, A: SystemicRiskAgent, para: dict, env: dict, modelComponent: ModelComponent, agentData: AgentDataCollection):
         A, para, env, agentData = modelComponent.run(A, para, env, modelComponent, agentData)
         return A, para, env, agentData
         pass

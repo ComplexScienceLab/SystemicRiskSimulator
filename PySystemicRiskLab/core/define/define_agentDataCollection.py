@@ -8,6 +8,7 @@
 pass  # end import
 
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
+
 pass  # end import
 
 
@@ -18,9 +19,16 @@ class AgentDataCollection:
     BB: list
     BI: list
 
+    # # @classmethod
+    # def __init__(self):
+    #     self.BB = []
+    #     self.BI = []
+    #     pass
+
+    # @classmethod
     def __init__(self, BB: BankCommercial, BI: BankInterbank):
-        self.BB = []
-        self.BI = []
+        self.BB = BB
+        self.BI = BI
         pass
 
     pass
