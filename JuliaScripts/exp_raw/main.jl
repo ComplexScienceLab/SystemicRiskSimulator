@@ -17,6 +17,7 @@ include("../../JuliaSystemicRiskLab/include/SystemicRiskSimulation.jl")
 
 include("../../JuliaSystemicRiskLab/include/Models.jl")
 
+# include("../settings/set_agentsVariables.jl")
 
 
 
@@ -26,7 +27,7 @@ include("../../JuliaSystemicRiskLab/include/Models.jl")
 
 ## 设定参数组合
 
-# list_combinationOfPara = @strdict model kappa_A_P kappa_BI
+# list_combinationOfPara = @strdict model kappa_A_P kappa_BI #HACK无用
 
 ## 创建主文件夹用于本批次实验
 env = setExperimentsFolders!(env)
@@ -47,17 +48,11 @@ for (idx_para, para) in enumerate(list_combinationOfPara)
 end
 
 ## 构建本次实验组所需的所有模型
-models = Dict()
-# append!(models, buildModel(modelContent_BI1111)) # 根据基准模型BI1111预先初始化model变量
-# if length(setOfValuesOfParameterVariables[:model_name]) > 1
+models = Dict() # 初始化模型们
 for model_name in unique(setOfValuesOfParameterVariables[:model_name])
-    modelContent = eval(Meta.parse("modelContent_$(model_name)"))
-    # if true # FIXME如果不存在模型文件，则构建模型
-    # local model = Dict([(model_name,buildModel(modelContent))])
+    modelContent = eval(Meta.parse("modelContent_$(model_name)")) # 依次构建模型们
     local model = buildModel(modelContent)
-    models[model_name] = model  #NOW
-    # append!(models, model)
-    # end
+    models[model_name] = model
 end
 # end
 
@@ -65,7 +60,7 @@ println("\n实验组开始：\n")
 
 ## 主循环
 for (i, para) in enumerate(list_combinationOfPara)
-    local model = models[para[:model_name]] # NOW获取当前循环的模型
+    local model = models[para[:model_name]] # 获取当前循环的模型
     env[:id_experiment] = i # 设定当前实验编号
     # 重置环境变量
     env[:index_of_schedule_position] = []

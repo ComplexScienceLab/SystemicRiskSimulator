@@ -1,6 +1,6 @@
-"系统性风险仿真模拟"
+"系统性风险实验室"
 
-## 系统性风险仿真模拟
+## 系统性风险实验室
 
 ##########################################
 #状态/可扩展
@@ -34,6 +34,14 @@ include("../core/define/define_component.jl")
 include("../core/define/define_environmentVariables.jl")
 include("../core/define/define_agents.jl")
 include("../core/define/define_parameterVariables.jl")
+
+# ## 设置设置项
+# env[:num_bank]
+include("../../JuliaScripts/settings/set_agentsVariables.jl")
+
+## 集成定义文件
+
+include("../core/define/define_agentsVariables.jl")
 include("../core/define/define_agentDataCollection.jl")
 
 ## 集成定义常数文件

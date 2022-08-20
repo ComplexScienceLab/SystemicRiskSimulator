@@ -8,25 +8,20 @@
 
 
 ## 导入相关包
-import numpy as np
-import pandas as pd
+# import os
+# import numpy as np
+# import pandas as pd
+from PySystemicRiskLab import *
 
 ## 导入相关文件及其内容
-# import PySystemicRiskLab as sr
-# from scripts.include.includpe_exp_files import *
-# from PySystemicRiskLab.include.SystemicRiskSimulation import *
-# from PySystemicRiskLab.include.Models import *
-# from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.controller.fun_agentModel import AgentsModel
 from PySystemicRiskLab.core.model.fun_model_skeleton import fun_model_skeleton
 from PySystemicRiskLab.tools.fun_tools import Tools
 from PySystemicRiskLab.core.define.define_parameterVariables import paras
 from PySystemicRiskLab.core.define.define_environment_variables import env
-from scripts.variables.set_environmentVariables import *
-# from scripts.variables.set_parameterVariables import *
-# from PySystemicRiskLab.core.controller.model_setter import ModelSetter
+from PyScripts.settings.set_environmentVariables import *
 from PySystemicRiskLab.core.controller.model_runner import ModelRunner
 from PySystemicRiskLab.core.controller.fun_scheduler import ModelScheduler
-# from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.controller.model_builder import ModelBuilder
 from PySystemicRiskLab.model.models.model_content import *  # 导入所有模型
 from PySystemicRiskLab.core.controller.model_collector import ModelCollector
@@ -65,7 +60,7 @@ if __name__ == "__main__":
     # df_combinationOfPara.insert(loc=0, column='id', value=list(range(1, len(df_combinationOfPara) + 1)), axis=0)  # 添加数据项id
     # df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "paras.csv"), df_combinationOfPara)  # 导出字段列表为csv格式
 
-    ModelCollector.exportParameterData(ModelCollector, list_combinationOfPara=list_combinationOfPara)  # 导出控制参数数据
+    ModelCollector.exportParameterData(list_combinationOfPara=list_combinationOfPara)  # 导出控制参数数据
 
     ## 初始化参数变量
     # @testprintln "\n列出所有实验组："
@@ -75,7 +70,7 @@ if __name__ == "__main__":
         pass
 
     ## 构建本次实验组所需的所有模型
-    model_builder = ModelBuilder()
+    # model_builder = ModelBuilder()
     models = {}  # 构建模型列表集合
     # models.append(model_builder.buildModel(modelContent_BI1111))  # 根据基准模型BI1111预先初始化model变量
     # models = model_builder.buildModel(ModelBuilder,modelContent_BI1111)  # 根据基准模型BI1111预先初始化model变量
@@ -84,7 +79,7 @@ if __name__ == "__main__":
     # setOfModel=list(set(list_combinationOfPara['model_name']))
     for (i, model_name) in enumerate(paras['model_name']):
         modelContent = eval("modelContent_" + model_name)
-        model = model_builder.buildModel(modelContent)
+        model = ModelBuilder.buildModel(modelContent)
         models[model_name] = model
         pass
 
@@ -106,7 +101,7 @@ if __name__ == "__main__":
         env['step'] = 0
         env['tau'] = 0
         env['saved_model_name'] = ""
-        env['model_name'] = models.functionName
+        env['model_name'] = model.functionName
         env['process_name'] = ""
         env['savedProcessName'] = ""
         env['stage_name'] = ""
@@ -126,7 +121,7 @@ if __name__ == "__main__":
 
         ## 调度：生成位置索引
         if env['state_of_schedule'] == StateOfScheduleEnum.indexing:
-            env['index_of_schedule_position'], env['state_of_schedule'] = ModelScheduler.scheduler_indexing(models)
+            env['index_of_schedule_position'], env['state_of_schedule'] = ModelScheduler.scheduler_indexing(model)
             pass
 
         # @testprintln    "\n实验$(env['id_experiment'])/$(length(list_combinationOfPara))开始："
@@ -135,7 +130,7 @@ if __name__ == "__main__":
 
         ## 进行实验
 
-        ModelRunner.makesim(models, para, env)
+        AgentsModel.makesim(model, para, env)
 
         # @testprintln    "本次实验结束，还剩下$(length(list_combinationOfPara)-env['id_experiment'])个实验。\n"
         pass  # for

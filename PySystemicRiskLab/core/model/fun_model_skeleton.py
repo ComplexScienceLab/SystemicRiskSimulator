@@ -38,7 +38,8 @@ Return:
 """
 
 
-def fun_model_skeleton(self, A: SystemicRiskAgent, para: dict, env: dict, model: ModelComponent, A_data: AgentDataCollection):
+@classmethod
+def fun_model_skeleton(cls, A: SystemicRiskAgent, para: dict, env: dict, model: ModelComponent, A_data: AgentDataCollection):
     if (env['is_model']):
         if (env['tau'] > 1):
             # @testprintln "\n继续模型：$(env['model_name'])"

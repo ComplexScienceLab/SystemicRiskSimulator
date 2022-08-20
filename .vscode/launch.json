@@ -24,7 +24,7 @@
             "type": "julia",
             "request": "launch",
             "name": "Launch main.jl file",
-            "program": "${workspaceFolder}/scripts/exp_raw/main.jl",
+            "program": "${workspaceFolder}/JuliaScripts/exp_raw/main.jl",
             "stopOnEntry": false,
             "cwd": "${workspaceFolder}",
             "juliaEnv": "${command:activeJuliaEnvironment}"
