@@ -7,17 +7,15 @@
 ##########################################
 
 import numpy as np
+
 pass  # end import
 
-
-
-
 ## 定义类型别名
-TypeIds = np.dtype(np.int16)  # 向量编号类型
-TypeAbbr = np.dtype(np.str)  # 向量缩写类型
-TypeName = np.dtype(np.str)  # 向量名称类型
-TypeMoney = np.dtype(np.float32)  # 向量资金类型
-TypeState = np.dtype(np.bool)  # 一维向量状态类型
+TypeIds = np.array(np.dtype(np.int16))  # 向量编号类型
+TypeAbbr = np.array(np.dtype(np.str))  # 向量缩写类型
+TypeName = np.array(np.dtype(np.str))  # 向量名称类型
+TypeMoney = np.array(np.dtype(np.float32))  # 向量资金类型
+TypeState = np.array(np.dtype(np.bool))  # 一维向量状态类型
 TypeList = list  # 一维向量状态类型
 
 # HACK无用
@@ -35,9 +33,9 @@ TypeList = list  # 一维向量状态类型
 # EnvironmentVariables = dict # 环境变量字典类型
 # ParameterVariables = dict # 参数变量字典类型
 # primitive type EnvironmentVariables <: AbstractDict{Any,Any}     pass
-TypeItemId = np.dtype(np.int8)
-TypeItemFunctionName = np.dtype(np.str)
-TypeItemTextName = np.dtype(np.str)
+TypeItemId = np.array(np.dtype(np.int8))
+TypeItemFunctionName = np.array(np.dtype(np.str))
+TypeItemTextName = np.array(np.dtype(np.str))
 # ItemList = Vector{ItemFunctionName}
 # # ItemList = Vector{S}
 # class ComponentHierarchyType     pass # 定义组件层级结构类型：模型Model、过程Process、阶段Stage；

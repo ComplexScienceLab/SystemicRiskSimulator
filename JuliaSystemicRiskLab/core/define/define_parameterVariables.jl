@@ -7,15 +7,17 @@
 ##########################################
 
 
-## 生成字典变量
-setOfValuesOfParameterVariables = @dict(
-    model_name,
-    Shock_exBI_def_t,
-    Shock_exBI_run_t,
-    list_Shock_exBI_t,
-    kappa_A_P,
-    kappa_BI
-)
+## 生成字典变量 #TODO 如何实现自动生成字典变量？
+# setOfValuesOfParameterVariables = @dict(
+#     model_name,
+#     Shock_exBI_def_t,
+#     Shock_exBI_run_t,
+#     list_Shock_exBI_t,
+#     kappa_A_P,
+#     kappa_BI
+# )
+
+setOfValuesOfParameterVariables = Dict(pairs(set_parameterVariables))
 
 # para = setOfValuesOfParameterVariables # 别名
 

@@ -11,8 +11,8 @@
 
 ## 集成设置变量文件
 
-from scripts.variables.set_environmentVariables import *
-from scripts.variables.set_parameterVariables import *
+from PyScripts.settings.set_environmentVariables import *
+from PyScripts.settings.set_parameterVariables import *
 # end import
 
 

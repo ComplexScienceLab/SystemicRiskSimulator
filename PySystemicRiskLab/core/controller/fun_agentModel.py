@@ -4,31 +4,33 @@
 # 状态/开发
 ##########################################
 
-# from PySystemicRiskLab.core import env, paras, SystemicRiskAgent, ModelSetter, StateOfScheduleEnum, ModelComponent, AgentDataCollection, ModelRunner, ModelCollector
+# from PySystemicRiskLab.core import env, paras, SystemicRiskAgent, ModelInitVariable, StateOfScheduleEnum, ModelComponent, AgentDataCollection, ModelRunner, ModelCollector
+import dataclasses
+
 pass  # end import
-
-
 
 from PySystemicRiskLab.core.define.define_environment_variables import env
 from PySystemicRiskLab.core.define.define_parameterVariables import paras
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
-from PySystemicRiskLab.core.controller.model_setter import ModelSetter
+from PySystemicRiskLab.core.controller.model_initVariable import ModelInitVariable
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 from PySystemicRiskLab.core.define.define_component import ModelComponent
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.controller.model_runner import ModelRunner
 from PySystemicRiskLab.core.controller.fun_scheduler import ModelCollector
+
 pass  # end import
 
 
+@dataclasses.dataclass
+class AgentsModel:
+    # TODO初始化systemicRiskAgent和systemicRiskModel
 
+    modelInitVariable = ModelInitVariable()
 
-
-class RunModel:
-    "#TODO初始化systemicRiskAgent和systemicRiskModel"
-
-    def init_systemicRiskAgent(self, para: dict = paras, env: dict = env):
-        systemicRiskAgent, systemicRiskAgent_data = ModelSetter.init_B_and_BI(init_method=env['init_method'])
+    @classmethod
+    def init_systemicRiskAgent(cls, A_data: AgentDataCollection = AgentDataCollection([], []), para: dict = paras, env: dict = env):
+        systemicRiskAgent, systemicRiskAgent_data = cls.modelInitVariable.init_B_and_BI(init_method=env['init_method'])
 
         ## 调度状态
         env['state_of_schedule'] = StateOfScheduleEnum.loading
@@ -36,26 +38,22 @@ class RunModel:
         return systemicRiskAgent, systemicRiskAgent_data
         pass
 
-    "函数：Agent模型步进"  # BUG方案一
-    def systemicRiskAgent_step(self, A: SystemicRiskAgent, para: dict, env: dict, model: ModelComponent, A_data: AgentDataCollection):
+    "函数：Agent模型步进"
+
+    @classmethod
+    def systemicRiskAgent_step(cls, A: SystemicRiskAgent, para: dict, env: dict, model: ModelComponent, A_data: AgentDataCollection):
         env['is_step'] = True
         A, para, env, A_data = ModelRunner.runModel(A, para, env, model, A_data)  # 运行具体的模型，通过运行模型组件的方式
         pass
-
-    # "函数：Agent模型步进" #BUG方案二
-    # functions systemicRiskAgent_step(systemicRiskAgent:SystemicRiskAgent, systemicRiskModel:ABM, paras:dict, env:dict)
-    #     env['is_step'] = True
-    #     systemicRiskAgent.bank, systemicRiskAgent.interbank, paras, env = model_BI1111(systemicRiskAgent.bank, systemicRiskAgent.interbank, paras, env) # 调用具体的模型
-    #     _, _ = run(systemicRiskModel, systemicRiskAgent_step, env['max_num_of_tau'])
-    #     pass
 
     pass  # class
 
     "函数：运行一次仿真"
 
-    def makesim(self, model: ModelComponent, para: dict = paras, env: dict = env):
+    @classmethod
+    def makesim(cls, model: ModelComponent, para: dict = paras, env: dict = env):
         ## 初始化agent及其模型
-        A, M, A_data = self.init_systemicRiskAgent(self, para, env)
+        A, M, A_data = cls.init_systemicRiskAgent(para, env)
         # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, paras)
 
         ##BUG 测试具体模型。
@@ -63,7 +61,7 @@ class RunModel:
         env['state_of_process'] = StateOfScheduleEnum.running
         while env['is_model'] == True & maxnum <= 20:  # HACK可能需要设置最大次数maxnum
             maxnum += 1
-            self.systemicRiskAgent_step(self, A, M, para, env, model, A_data)
+            cls.systemicRiskAgent_step(A, M, para, env, model, A_data)
             # return BB, BI, A_data.BB, A_data.BI, env
             pass  # while
 
@@ -79,7 +77,7 @@ class RunModel:
 
         ## 导出数据之于已经收集的
         env['state_of_process'] = StateOfScheduleEnum.finishing
-        ModelCollector.collector(self, A, A_data, state_of_process=env['state_of_process'], para=para)
+        ModelCollector.collector(A, A_data, para=para)
 
         pass  # function
 

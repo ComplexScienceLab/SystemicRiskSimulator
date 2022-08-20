@@ -8,8 +8,10 @@
 
 ## 集成设置变量文件
 
-include("../variables/set_environmentVariables.jl")
-include("../variables/set_parameterVariables.jl")
+include("../settings/set_environmentVariables.jl")
+include("../settings/set_parameterVariables.jl")
+# num_bank = env[:num_bank]
+# include("../settings/set_agentsVariables.jl")
 
 
 

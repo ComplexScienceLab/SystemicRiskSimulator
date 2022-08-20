@@ -23,31 +23,29 @@ pass  # end import
 
 class ModelCollector:
 
-    def collector(self, A: SystemicRiskAgent, A_data: AgentDataCollection = AgentDataCollection([], []), stateOfProcess=StateOfScheduleEnum.running, env: dict = env, para: dict = dict([])):
+    @classmethod
+    def collector(cls, A: SystemicRiskAgent, A_data: AgentDataCollection = AgentDataCollection([],[]), stateOfProcess=StateOfScheduleEnum, env: dict = env, para: dict = dict([])):
         """
-        收集数据器
-        :param A: 系统性风险个体众
-        :type A: SystemicRiskAgent
-        :param A_data: 待收集的数据之于系统性风险个体众
-        :type A_data: AgentDataCollection
-        :param stateOfProcess: 过程之状态
-        :type stateOfProcess: stateOfProcess
-        :param env: 环境参数
-        :type env:
-        :param para: 控制参数
-        :type para:
-        :return: TODO
-        :rtype:
+
+        Args:
+            A (SystemicRiskAgent):系统性风险个体众
+            A_data (AgentDataCollection):待收集的数据之于系统性风险个体众
+            stateOfProcess (StateOfScheduleEnum):过程之状态
+            env (dict):环境参数
+            para (dict):控制参数
+
+        Returns:
+
         """
         try:
             if stateOfProcess == StateOfScheduleEnum.running:
-                A_data = self.collectAgentData(A, A_data)
+                A_data = cls.collectAgentData(A, A_data)
                 return A_data
             elif stateOfProcess == StateOfScheduleEnum.initializing:
-                A_data = self.initAgentDataCollection(A)
+                A_data = cls.initAgentDataCollection(A)
                 return A_data
             elif stateOfProcess == StateOfScheduleEnum.finishing:
-                self.exportAgentData(A_data, para)
+                cls.exportAgentData(A_data, para)
             else:
                 pass  # if:
         except KeyError:
@@ -55,15 +53,16 @@ class ModelCollector:
 
     pass
 
-    def initAgentDataCollection(self, A: SystemicRiskAgent, env: dict = env):
+    @classmethod
+    def initAgentDataCollection(cls, A: SystemicRiskAgent, env: dict = env):
         """
-        初始化实验数据容器
-        :param A:
-        :type A:
-        :param env:
-        :type env:
-        :return:
-        :rtype:
+
+        Args:
+            A ():
+            env ():
+
+        Returns:
+
         """
         BB_data_item = dict(
             {
@@ -93,9 +92,8 @@ class ModelCollector:
         return A_data
         pass
 
-
-
-    def collectAgentData(self, A: SystemicRiskAgent, A_data: AgentDataCollection, env: dict = env):
+    @classmethod
+    def collectAgentData(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, env: dict = env):
         """
         收集数据并存储
         :param A:
@@ -132,9 +130,8 @@ class ModelCollector:
         return A_data
         pass
 
-
-
-    def exportAgentData(self, A_data: AgentDataCollection, env: dict = env, para: dict = paras):
+    @classmethod
+    def exportAgentData(cls, A_data: AgentDataCollection, env: dict = env, para: dict = paras):
         """
         导出实验结果数据
         :param A_data:
@@ -202,8 +199,8 @@ class ModelCollector:
 
         pass  # def
 
-
-    def exportParameterData(self, list_combinationOfPara, para=paras):
+    @classmethod
+    def exportParameterData(cls, list_combinationOfPara, para=paras):
         """
         导出控制参数数据
         :param list_combinationOfPara:
@@ -215,14 +212,14 @@ class ModelCollector:
         """
         env['num_experiment'] = len(list_combinationOfPara)  # 获取实验组之实验个数
         df_010 = pd.DataFrame(list_combinationOfPara, columns=para.keys())  # 转换字典列表为数据框
-        li_types=[type(df_010.iloc[0,i]) for i in range(df_010.columns.__len__())] # 获取列表，元素为数据框之各列之元素之类型
-        id_type_is_lsit=li_types.index(list) # 获取索引值为类型为list的
-        df_combinationOfPara=df_010.explode(df_010.keys()[id_type_is_lsit])
+        li_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
+        id_type_is_lsit = li_types.index(list)  # 获取索引值为类型为list的
+        df_combinationOfPara = df_010.explode(df_010.keys()[id_type_is_lsit])
         # li_010 = [df_010.apply(lambda x: pd.Series(x[i]), axis=1).stack().reset_index(level=1, drop=True) for i in range(df_010.columns.__len__())]
         # li_020 = [np.array(li_010[i]) for i in range(li_010.__len__())]
         # df_combinationOfPara = pd.DataFrame(li_020).T
         # df_combinationOfPara.columns = paras.keys()
-        df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1,env['num_bank']+1)),reps=env['num_experiment']))  # 添加数据项id
+        df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1, env['num_bank'] + 1)), reps=env['num_experiment']))  # 添加数据项id
         df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
         # df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "paras.csv"), df_combinationOfPara)  # 导出字段列表为csv格式
         pass  # def
