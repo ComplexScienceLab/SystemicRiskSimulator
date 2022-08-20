@@ -55,7 +55,7 @@ function fun_process_skeleton!(A::SystemicRiskAgent, para::Dict, env::Dict, proc
 
             ## 调度并运行状态
             if env[:state_of_schedule] == :loading
-                env[:state_of_schedule] = scheduler_loading(env[:index_of_schedule_position], env[:index_process], env[:index_stage], env[:loaded_index_process], env[:loaded_index_stage], env[:state_of_schedule]) # 调度读取
+                env[:state_of_schedule] = scheduler_loading(env[:index_of_schedule_position], env[:index_process], env[:index_stage], env[:loaded_index_process], env[:loaded_index_stage], env[:state_of_schedule], env[:is_process]) # 调度读取
             end
             if env[:state_of_schedule] == :stepping
                 A = runStage!(A, b, ib, para, env, stage)

@@ -26,7 +26,8 @@ class Tools:
     #         pass
     #     pass
 
-    def test_println(self, content):
+    @classmethod
+    def test_println(cls, content):
         if env['is_test']:
             expr = \
                 """
@@ -35,7 +36,8 @@ class Tools:
 
         pass
 
-    def dict_to_product_list(self, d: dict):
+    @classmethod
+    def dict_to_product_list(cls, d: dict):
         """
         各字典之列表型元素转列表，其元素为字典，列表个元素间关系符合笛卡尔积。
         :param self:
@@ -51,7 +53,8 @@ class Tools:
         return pdl
         pass
 
-    def set_experiments_folders(self, env: dict = env, isDatetime: bool = True):
+    @classmethod
+    def set_experiments_folders(cls, env: dict = env, isDatetime: bool = True):
         ## 设定日期时间字符串
         if isDatetime == True:
             str_datetime = "_" + time.strftime("%Y%model_name%d%H%M%S")
@@ -80,7 +83,8 @@ class Tools:
         pass  # functioin
 
     ## 借鉴来源：[PyCharm项目获取项目路径的方法](https://blog.csdn.net/weixin_42787086/article/details/124625385)
-    def get_project_rootpath(self):
+    @classmethod
+    def get_project_rootpath(cls):
         """
         获取项目根目录。此函数的能力体现在，不论当前module被import到任何位置，都可以正确获取项目根目录。
         :return:

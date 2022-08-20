@@ -183,7 +183,7 @@ class Shock:
     - `Shock_BI_run_ilq_t`:  已知``Shock_{BI,run}[j,: }],:  \\in i_{ilq}``，更新其余冲击变量；
     - `Shock_BI_run_br_t`:  已知``Shock_{BI,run}[j,: }],:  \\in i_{br}``，更新其余冲击变量；
     """
-    def update_B_Shock(self, bank:BankCommercial, interbank:BankInterbank, bankState:TypeState, interbankState:TypeState, byWay:str = "all"):
+    def update_B_Shock(self, bank:BankCommercial, interbank:BankInterbank, bankState, interbankState, byWay:str = "all"):
         if byWay == "all":
             self.together_Shock_B(bank, bankState)
             self.together_Shock_BI_run_source(bank, bankState)
