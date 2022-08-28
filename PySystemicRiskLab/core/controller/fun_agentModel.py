@@ -38,20 +38,18 @@ class AgentsModel:
         return systemicRiskAgent, systemicRiskAgent_data
         pass
 
-    "函数：Agent模型步进"
-
     @classmethod
     def systemicRiskAgent_step(cls, A: SystemicRiskAgent, para: dict, env: dict, model: ModelComponent, A_data: AgentDataCollection):
+        """函数：Agent模型步进"""
         env['is_step'] = True
         A, para, env, A_data = ModelRunner.runModel(A, para, env, model, A_data)  # 运行具体的模型，通过运行模型组件的方式
         pass
 
     pass  # class
 
-    "函数：运行一次仿真"
-
     @classmethod
     def makesim(cls, model: ModelComponent, para: dict = paras, env: dict = env):
+        """函数：运行一次仿真"""
         ## 初始化agent及其模型
         A, M, A_data = cls.init_systemicRiskAgent(para, env)
         # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, paras)

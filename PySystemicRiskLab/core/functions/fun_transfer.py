@@ -1,147 +1,136 @@
-"功能函数集：计算商业银行之资金转移。"
-
-## 功能函数集：计算商业银行之资金转移。
-
 ##########################################
 # 状态/使用
 ##########################################
 
 import numpy as np
-from PySystemicRiskLab.core.define.define_environment_variables import env
+
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
+from PySystemicRiskLab.core.define.define_environment_variables import env
 from PySystemicRiskLab.core.define.define_type import TypeState, TypeMoney
+
 pass  # end import
 
 
-
 class BankTransfer:
-    ## 函数区
+    """计算商业银行之资金转移。"""
 
-    """
-    转移资金（资金等量反向变化）。
-    # Arguments
-    `target`: 转移目的地；
-    `source`: 转移源；
-    `shock`: 相关冲击；
-    `flow`: 流量；
-    """
+    def transfer_B_capital_reverse(self, target: TypeMoney, source: TypeMoney, shock: TypeMoney, flow: TypeMoney):
+        """
+        转移资金（资金等量反向变化）。
 
-    def transfer_B_capital_reverse(target: TypeMoney, source: TypeMoney, shock: TypeMoney, flow: TypeMoney):
+        Args:
+            target (): 转移目的地；
+            source (): 转移源；
+            shock (): 相关冲击；
+            flow (): 流量；
+
+        Returns:
+            target, source, shock
+
+        """
         target += flow
         source -= flow
         shock -= flow
         return target, source, shock
         pass
 
-    """
-    同减资金（资金等量同向减少）。
-    # Arguments
-    `target`: 转移目的地；
-    `source`: 转移源；
-    `shock`: 相关冲击；
-    `flow`: 流量；
-    """
+    def transfer_B_capital_reduce(self, target: TypeMoney, source: TypeMoney, shock: TypeMoney, flow: TypeMoney):
+        """
+        同减资金（资金等量同向减少）。
 
-    def transfer_B_capital_reduce(target: TypeMoney, source: TypeMoney, shock: TypeMoney, flow: TypeMoney):
+        Args:
+            target (): 转移目的地；
+            source (): 转移源；
+            shock (): 相关冲击；
+            flow (): 流量；
+
+        Returns:target, source, shock
+
+        """
+
         target -= flow
         source -= flow
         shock -= flow
         return target, source, shock
         pass
 
-    "汇总各银行之总交易流量``T_{all}``。"
-
     def together_T_all(self, bank: BankCommercial, bankState: TypeState):
+        """汇总各银行之总交易流量``T_{all}``。"""
         bank.T_all[bankState] = bank.Lo_all[bankState] + bank.Bi_all[bankState] + bank.Bo_all[bankState] + bank.Li_all[bankState]
         pass
 
-    "汇总各银行之总贷款流出``Lo_{B}``。"
-
     def together_transfer_B_Lo_all(self, bank: BankCommercial, bankState: TypeState):
+        """汇总各银行之总贷款流出``Lo_{B}``。"""
         bank.Lo_all[bankState] = bank.Lo_BI_all[bankState] + bank.Lo_exBI[bankState]
         pass
 
-    "汇总各银行之非银行间贷款流出``Lo_{-BI}``。"
-
     def together_transfer_B_Lo_exBI(self, bank: BankCommercial, bankState: TypeState):
+        """汇总各银行之非银行间贷款流出``Lo_{-BI}``。"""
         bank.Lo_exBI[bankState] = bank.Lo_P[bankState]
         pass
 
-    "汇总各银行之总贷款流入``Li_{B}``。"
-
     def together_transfer_B_Li_all(self, bank: BankCommercial, bankState: TypeState):
+        """汇总各银行之总贷款流入``Li_{B}``。"""
         bank.Li_all[bankState] = bank.Li_BI_all[bankState] + bank.Li_exBI[bankState]
         pass
 
-    "汇总各银行之非银行间贷款流入``Li_{-BI}``。"
-
     def together_transfer_B_Li_exBI(self, bank: BankCommercial, bankState: TypeState):
+        """汇总各银行之非银行间贷款流入``Li_{-BI}``。"""
         bank.Li_exBI[bankState] = bank.Li_P[bankState]
         pass
 
-    "汇总各银行之总借款流出``Bo_{B}``。"
-
     def together_transfer_B_Bo_all(self, bank: BankCommercial, bankState: TypeState):
+        """汇总各银行之总借款流出``Bo_{B}``。"""
         bank.Bo_all[bankState] = bank.Bo_BI_all[bankState] + bank.Bo_exBI[bankState]
         pass
 
-    "汇总各银行之非银行间借款流出``Bo_{-BI}``。"
-
     def together_transfer_B_Bo_exBI(self, bank: BankCommercial, bankState: TypeState):
+        """汇总各银行之非银行间借款流出``Bo_{-BI}``。"""
         bank.Bo_exBI[bankState] = bank.Bo_D[bankState]
         pass
 
-    "汇总各银行之总借款流入``Bi_{B}``。"
-
     def together_transfer_B_Bi_all(self, bank: BankCommercial, bankState: TypeState):
+        """汇总各银行之总借款流入``Bi_{B}``。"""
         bank.Bi_all[bankState] = bank.Bi_BI_all[bankState] + bank.Bi_exBI[bankState]
         pass
 
-    "汇总各银行之非银行间借款流入``Bi_{-BI}``。"
-
     def together_transfer_B_Bi_exBI(self, bank: BankCommercial, bankState: TypeState):
+        """汇总各银行之非银行间借款流入``Bi_{-BI}``。"""
         bank.Bi_exBI[bankState] = bank.Bi_D[bankState]
         pass
 
-    "转换银行间贷款流出``Lo_{BI}``为银行间借款流入``Bi_{BI}``。"
-
     def alter_transfer_Lo_BI(self, interbank: BankInterbank, interbankState: TypeState):
+        """转换银行间贷款流出``Lo_{BI}``为银行间借款流入``Bi_{BI}``。"""
         interbank.Bi_BI = interbank.Lo_BI.T
         pass
 
-    "转换银行间借款流入``Bi_{BI}``为银行间贷款流出``Lo_{BI}``。"
-
     def alter_transfer_Bi_BI(self, interbank: BankInterbank, interbankState: TypeState):
+        """转换银行间借款流入``Bi_{BI}``为银行间贷款流出``Lo_{BI}``。"""
         interbank.Lo_BI = interbank.Bi_BI.T
         pass
 
-    "转换银行间借款流出``Bo_{BI}``为银行间贷款流入``Li_{BI}``。"
-
     def alter_transfer_Bo_BI(self, interbank: BankInterbank, interbankState: TypeState):
+        """转换银行间借款流出``Bo_{BI}``为银行间贷款流入``Li_{BI}``。"""
         interbank.Li_BI = interbank.Bo_BI.T
         pass
 
-    "转换银行间贷款流入``Li_{BI}``为银行间借款流出``Bo_{BI}``。"
-
     def alter_transfer_Li_BI(self, interbank: BankInterbank, interbankState: TypeState):
+        """转换银行间贷款流入``Li_{BI}``为银行间借款流出``Bo_{BI}``。"""
         interbank.Bo_BI = interbank.Li_BI.T
         pass
 
-    "加总各银行之银行间借款流入``Bi_{B}``，通过银行间借款流入邻接矩阵``Bi_{BI}``。"
-
     def sum_transfer_Bi_BI(self, bank: BankCommercial, interbank: BankInterbank, bankState: TypeState, interbankState: TypeState):
+        """加总各银行之银行间借款流入``Bi_{B}``，通过银行间借款流入邻接矩阵``Bi_{BI}``。"""
         bank.Bi_BI_all[:] = np.sum(interbank.Bi_BI * interbankState, dims=2)
         pass
 
-    "加总各银行之银行间贷款流入``Li_{B}``，通过银行间贷款流入邻接矩阵``Li_{BI}``。"
-
     def sum_transfer_Li_BI(self, bank: BankCommercial, interbank: BankInterbank, bankState: TypeState, interbankState: TypeState):
+        """加总各银行之银行间贷款流入``Li_{B}``，通过银行间贷款流入邻接矩阵``Li_{BI}``。"""
         bank.Li_BI_all[:] = np.sum(interbank.Li_BI * interbankState, dims=2)
         pass
 
-    "清零所有流量变量值"
-
     def clear_all_transfer(self, bank: BankCommercial, interbank: BankInterbank, bankState: TypeState, interbankState: TypeState):
+        """清零所有流量变量值"""
         bank.Lo_BI_all[bankState] = np.zeros(env['num_bank'])[bankState]
         bank.Lo_P[bankState] = np.zeros(env['num_bank'])[bankState]
         bank.Li_BI_all[bankState] = np.zeros(env['num_bank'])[bankState]
@@ -157,8 +146,9 @@ class BankTransfer:
     def update_B_transfer(self, bank: BankCommercial, interbank: BankInterbank, bankState: TypeState, interbankState: TypeState, byWay: str = "all"):
         """
         更新各银行之借贷流量变量。
-        # Arguments
-        `byWay:str`:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
+
+        参数`byWay`可选项：
+
         - `all`:  更新全部借贷流量变量；
         - `clear transfer all`:  清零所有不必要的借贷流量变量；
         - `Lo_P`:  已知``Lo_{B,P}``，更新其余借贷流量变量；
@@ -173,7 +163,18 @@ class BankTransfer:
         - `Bi_BI`:  已知``Bi_{BI}``，更新其余借贷流量变量；
         - `Bo_BI`:  已知``Bo_{BI}``，更新其余借贷流量变量；
         - `Li_BI`:  已知``Li_{BI}``，更新其余借贷流量变量；
+
+        Args:
+            bank (): 商业银行众
+            interbank (): 商业银行间市场
+            bankState (): 银行之状态
+            interbankState (): 银行间市场之状态
+            byWay (): 参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
+
+        Returns:
+
         """
+
         if byWay == "all":
             self.clear_all_transfer(bank, interbank, bankState, interbankState)
             self.alter_transfer_Lo_BI(interbank, interbankState)
@@ -255,6 +256,6 @@ class BankTransfer:
         else:
             raise Exception("关键词byWay取词错误".format(byWay))
             pass
-        pass
+        pass  # function
 
     pass  # class
