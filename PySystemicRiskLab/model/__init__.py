@@ -3,8 +3,6 @@
 # 可引入新文件
 ##########################################
 
-import PySystemicRiskLab
-
 ## 集成名称集合文件
 from .model_sets.models_sets import *
 from .model_sets.processes_sets import *

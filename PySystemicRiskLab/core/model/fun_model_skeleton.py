@@ -9,11 +9,12 @@
 # from PySystemicRiskLab.core import SystemicRiskAgent, ModelComponent, AgentDataCollection, ModelRunner, StateOfScheduleEnum
 pass  # end import
 
-from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.controller.model_runner import ModelRunner
+from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_component import ModelComponent
-from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
-from PySystemicRiskLab.core.controller.model_runner import ModelRunner
+from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+
 pass  # end import
 
 

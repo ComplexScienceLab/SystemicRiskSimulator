@@ -6,11 +6,10 @@
 
 "函数：破产银行应偿还负债冲击阶段"  # HACK冗余，可以替代以
 
-import numpy as np
-
-from PySystemicRiskLab.core.define.define_type import TypeState
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
+from PySystemicRiskLab.core.define.define_type import TypeState
 from PySystemicRiskLab.core.functions.fun_state import BankState
+
 pass  # end import
 
 

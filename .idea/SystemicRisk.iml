@@ -2,9 +2,13 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/PySystemicRiskLab" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/src" />
+      <excludeFolder url="file://$MODULE_DIR$/PySystemicRiskLab/core/manager" />
+      <excludeFolder url="file://$MODULE_DIR$/PySystemicRiskLab/core/template" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (SystemicRisk)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (SystemicRisk)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
@@ -14,5 +18,12 @@
     <option name="format" value="GOOGLE" />
     <option name="myDocStringFormat" value="Google" />
     <option name="renderExternalDocumentation" value="true" />
+  </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/PySystemicRiskLab" />
+      </list>
+    </option>
   </component>
 </module>

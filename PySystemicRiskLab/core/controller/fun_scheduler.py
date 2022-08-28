@@ -10,19 +10,22 @@
 pass  # end import
 
 from PySystemicRiskLab import np
-from PySystemicRiskLab.core.define.define_environment_variables import env
-from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
-from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
-from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
-from PySystemicRiskLab.core.define.define_component import ModelComponent
 from PySystemicRiskLab.core.controller.model_collector import ModelCollector
+from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
+from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
+from PySystemicRiskLab.core.define.define_component import ModelComponent
+from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.define.define_environment_variables import env
 
 pass  # end import
 
 
 class ModelScheduler:
-    """
-    函数：调度器 #HACK 或将废弃
+
+    @classmethod
+    def scheduler(cls, env: dict, A: SystemicRiskAgent, A_data: AgentDataCollection):
+        """
+        函数：调度器 #HACK 或将废弃
 
     Argument:
     - modelContent:ModelContent: 被调度的模型内容；
@@ -31,6 +34,7 @@ class ModelScheduler:
     Return:
     - env:dict: 环境变量；
     """
+
     @classmethod
     def scheduler(cls, env: dict, A: SystemicRiskAgent, A_data: AgentDataCollection):
         if env['state_of_schedule'] == StateOfScheduleEnum.loading:
@@ -54,22 +58,14 @@ class ModelScheduler:
     函数：调度索引
     
     Argument: 
-    - model:ModelContent: 被调度的模型内容；
+    - modelContent:ModelContent: 被调度的模型内容；
     
     Return: 
     - index_of_schedule_position:Array 调度位置索引列表；
     - state_of_schedule:Symbol: 调度状态；
     """
-    @classmethod
-    def scheduler_indexing(cls, model: ModelComponent)->(list,object):
-        """
-        调度索引
-        Args:
-            model (ModelComponent):被调度的模型内容
 
-        Returns:
-            (index_of_schedule_position 调度位置索引列表, state_of_schedule 调度状态)
-        """
+    def scheduler_indexing(self, model: ModelComponent):
         index_of_schedule_position = []
         for i in range(len(model.content)):
             index_of_schedule_position.append([i, []])
@@ -81,7 +77,7 @@ class ModelScheduler:
         state_of_schedule = StateOfScheduleEnum.saving
         # @testprintln "切换调度运作状态为$(state_of_schedule)"
         return index_of_schedule_position, state_of_schedule
-        pass
+        pass  # function
 
     """
     函数：调度读取
@@ -97,8 +93,8 @@ class ModelScheduler:
     Return: 
     - newStateOfSchedule:Symbol: 新的调度状态；
     """
-    @classmethod
-    def scheduler_loading(cls,index_of_schedule_position: list, index_process: int, index_stage: int, loadedIndexProcess: int, loadedIndexStage: int, state_of_schedule: StateOfScheduleEnum):
+
+    def scheduler_loading(index_of_schedule_position: list, index_process: int, index_stage: int, loadedIndexProcess: int, loadedIndexStage: int, state_of_schedule: StateOfScheduleEnum):
         # @testprintln "调度读取中……"
         newStateOfSchedule = state_of_schedule
         if (index_process == loadedIndexProcess & index_stage == loadedIndexStage):  # 如果待读取过程和阶段是应该读取的过程和阶段，则继续判断，否则跳到下一阶段尝试读取:
@@ -110,36 +106,27 @@ class ModelScheduler:
             # @testprintln "调度读取完毕。切换调度运作状态为$(newStateOfSchedule)。"
             pass
         return newStateOfSchedule
-        pass
+        pass  # function
 
     # "函数：调度步进"
     # functions self.scheduler_stepping(process:Symbol, env:dict=env, saved_index_process:int)
     #     $(process)
     #     self.scheduler_altToSavingState(env)
     #     pass
+
     """
     函数：调度步进
-
+    
     Argument: 
     - step:int: 步进步数；
     - step_size:int: 步进尺寸；
-
+    
     Return: 
     - is_step:bool: 是否步进；
     - state_of_schedule:Symbol: 调度状态；
     """
 
-    @classmethod
-    def scheduler_stepping(cls,step: int, step_size: int)->int:
-        """
-        调度步进
-        :param step: 步进步数
-        :type step: int
-        :param step_size: 步进尺寸
-        :type step_size: int
-        :return: is_step
-        :rtype: bool
-        """
+    def scheduler_stepping(step: int, step_size: int):
         step += 1
         if step % step_size == 0:  # 是否完成本次步进:
             is_step = False
@@ -151,7 +138,7 @@ class ModelScheduler:
             # @testprintln "步进继续："
             pass
         return step, is_step, state_of_schedule
-        pass
+        pass  # function
 
     """
     函数：调度存储
@@ -169,8 +156,8 @@ class ModelScheduler:
     - loadedIndexStage:int: 读取的阶段之位置；
     - state_of_schedule:Symbol: 调度状态；
     """
-    @classmethod
-    def scheduler_saving(cls,index_of_schedule_position: list, index_process: int, index_stage: int, is_rocess: bool):
+
+    def scheduler_saving(index_of_schedule_position: list, index_process: int, index_stage: int, is_rocess: bool):
 
         saved_index_process = index_of_schedule_position[index_process][0]
         saved_index_stage = index_of_schedule_position[index_process][1][index_stage]
@@ -202,7 +189,7 @@ class ModelScheduler:
         # @testprintln "切换调度运作状态为$(state_of_schedule)"
 
         return saved_index_process, saved_index_stage, loadedIndexProcess, loadedIndexStage, state_of_schedule
-        pass
+        pass  # function
 
     """
     函数：调度搜集数据
@@ -215,15 +202,14 @@ class ModelScheduler:
     - state_of_schedule:Symbol: 调度状态；
     """
 
-    @classmethod
-    def scheduler_collecting(cls, A: SystemicRiskAgent, A_data: AgentDataCollection = np.nan, env: dict = env):
+    def scheduler_collecting(self, A: SystemicRiskAgent, A_data: AgentDataCollection = np.nan, env: dict = env):
         # @testprintln "收集数据。"
         env['data_id'] += 1  # 累加数据帧ID号
         ModelCollector.collector(A, A_data)  # 收集数据
         state_of_schedule = StateOfScheduleEnum.loading  # 切换调度运作状态为读取
         # @testprintln "切换调度运作状态为$(state_of_schedule)"
         return state_of_schedule
-        pass
+        pass  # function
 
     # "宏：调度当前过程。" #HACK 或将废弃
     # macro self.scheduler_process(process)
@@ -326,8 +312,7 @@ class ModelScheduler:
 
     "函数：判断是否继续运行回合"
 
-    @classmethod
-    def is_round(cls, env: dict = env):
+    def is_round(self, env: dict = env):
         if (env['tau'] < env['max_num_of_tau']):
             env['is_round'] = True
         else:
@@ -338,26 +323,24 @@ class ModelScheduler:
 
     "函数：判断是否继续步进"
 
-    @classmethod
-    def is_step(cls, env: dict = env):
+    def is_step(self, env: dict = env):
         if ~env['is_step']:
             # @testprintln "暂时跳出模型$(env['model_name'])之过程$(env['process_name'])之阶段$(env['stage_name'])。"
             pass
-        pass
+        pass  # function
 
     """
     函数：判断是否继续运行循环。
     只有同时满足继续运行过程、继续步进、继续运行回合时，才继续运行循环。否则跳出循环。
     """
 
-    @classmethod
-    def is_loop(cls, env: dict = env):
+    def is_loop(self, env: dict = env):
         if (env['is_rocess'] & env['is_step'] & env['is_round']):
             env['is_loop'] = True
         else:
             env['is_loop'] = False
             # @testprintln "跳出过程$(env['process_name'])之循环。"
             pass
-        pass
+        pass  # function
 
     pass  # class
