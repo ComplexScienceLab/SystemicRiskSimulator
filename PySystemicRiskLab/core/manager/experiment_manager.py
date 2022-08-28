@@ -8,9 +8,8 @@ from SystemicRisk.core import env, para, ModelComponent, StateOfScheduleEnum, Mo
 
 
 class ExperimentManager:
-    "函数：运行一次仿真"
-
     def makesim(model: ModelComponent, para: dict = para, env: dict = env):
+        """函数：运行一次仿真"""
         ## 初始化agent及其模型
         A, M, A_data = ModelSetter.init_systemicRiskAgent(para, env)
         # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, para)

@@ -5,9 +5,8 @@
 ##########################################
 # 状态/可扩展
 ##########################################
-import numpy as np
 
-from PySystemicRiskLab.core.define.define_content import ProcessContent, ModelContent, StageContent
+from PySystemicRiskLab.core.define.define_content import ProcessContent
 from PySystemicRiskLab.model.stages import *
 
 pass  # end import

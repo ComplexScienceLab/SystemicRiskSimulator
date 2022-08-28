@@ -6,10 +6,11 @@
 
 import numpy as np
 
-from PySystemicRiskLab.core.define.define_type import TypeState
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
-from PySystemicRiskLab.core.functions.fun_state import BankState
+from PySystemicRiskLab.core.define.define_type import TypeState
 from PySystemicRiskLab.core.functions.fun_shock import Shock
+from PySystemicRiskLab.core.functions.fun_state import BankState
+
 pass  # end import
 
 "函数：破产银行间挤兑流动传染冲击阶段"

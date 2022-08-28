@@ -6,10 +6,11 @@
 
 import numpy as np
 
-from PySystemicRiskLab.core.define.define_type import TypeState
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
-from PySystemicRiskLab.core.functions.fun_shock import Shock
+from PySystemicRiskLab.core.define.define_type import TypeState
 from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
+from PySystemicRiskLab.core.functions.fun_shock import Shock
+
 pass  # end import
 
 "函数：资不抵债银行间违约损失传染阶段"
