@@ -4,13 +4,11 @@
 # 状态/使用
 ##########################################
 
-import numpy as np
-
-from PySystemicRiskLab.core.define.define_type import TypeState
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
-from PySystemicRiskLab.core.functions.fun_state import BankState
-from PySystemicRiskLab.core.functions.fun_shock import Shock
+from PySystemicRiskLab.core.define.define_type import TypeState
 from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
+from PySystemicRiskLab.core.functions.fun_shock import Shock
+from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.functions.fun_transfer import BankTransfer
 
 pass  # end import

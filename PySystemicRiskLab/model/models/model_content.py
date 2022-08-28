@@ -6,7 +6,6 @@
 # 状态/可扩展
 ##########################################
 
-import PySystemicRiskLab.model.models
 from PySystemicRiskLab.core.define.define_content import ModelContent
 # from PySystemicRiskLab.models import processContent_exBank_insolvent, processContent_interBank_insolvent, processContent_exBank_illiquity, processContent_interBank_illiquity
 from PySystemicRiskLab.model.processes import *
