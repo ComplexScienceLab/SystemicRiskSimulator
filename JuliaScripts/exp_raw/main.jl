@@ -108,7 +108,9 @@ end # for
 
 println("实验组结束。")
 
+
 close(f)
 
+#TODO 加一个自动打开日志文件的代码。
 
 

@@ -7,6 +7,8 @@
 # 开发说明：[相关的修改项](file:///../../src/core/define/define_parameterVariables.jl)
 ##########################################
 
+from PySystemicRiskLab import np
+pass  # end import
 
 set_parameterVariables = dict(
 
@@ -20,19 +22,19 @@ set_parameterVariables = dict(
 
     ## 外生违约损失冲击
     Shock_exBI_def_t=[
-        [1631.73, 0.0, 0.0, 0.0, 0.0],
-        [0.0, 0.0, 0.0, 0.0, 0.0],
+        np.array([1631.73, 0.0, 0.0, 0.0, 0.0]),
+        np.array([0.0, 0.0, 0.0, 0.0, 0.0]),
     ],
 
     ## 外生挤兑流动冲击
     Shock_exBI_run_t=[
-        [0.0, 0.0, 0.0, 0.0, 0.0],
-        [3160.99, 0.0, 0.0, 0.0, 0.0],  # BUG 这里应该改成实际的全部量；
+        np.array([0.0, 0.0, 0.0, 0.0, 0.0]),
+        np.array([3160.99, 0.0, 0.0, 0.0, 0.0]),  # BUG 这里应该改成实际的全部量；
     ],
 
     ## 指定遭受初始外生冲击的银行示性列表
     list_Shock_exBI_t=[
-        [True, False, False, False, False]
+        np.array([True, False, False, False, False]),
     ],
 
     ## 银行抛售厂商贷款资产价格折扣率。默认0.0。#HACK目前暂时不考虑这个参数！

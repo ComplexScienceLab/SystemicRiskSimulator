@@ -121,12 +121,12 @@ class BankTransfer:
 
     def sum_transfer_Bi_BI(self, bank: BankCommercial, interbank: BankInterbank, bankState: TypeState, interbankState: TypeState):
         """加总各银行之银行间借款流入``Bi_{B}``，通过银行间借款流入邻接矩阵``Bi_{BI}``。"""
-        bank.Bi_BI_all[:] = np.sum(interbank.Bi_BI * interbankState, dims=2)
+        bank.Bi_BI_all[:] = np.sum(interbank.Bi_BI * interbankState, axis=1).reshape(-1,1)
         pass
 
     def sum_transfer_Li_BI(self, bank: BankCommercial, interbank: BankInterbank, bankState: TypeState, interbankState: TypeState):
         """加总各银行之银行间贷款流入``Li_{B}``，通过银行间贷款流入邻接矩阵``Li_{BI}``。"""
-        bank.Li_BI_all[:] = np.sum(interbank.Li_BI * interbankState, dims=2)
+        bank.Li_BI_all[:] = np.sum(interbank.Li_BI * interbankState, axis=1).reshape(-1,1)
         pass
 
     def clear_all_transfer(self, bank: BankCommercial, interbank: BankInterbank, bankState: TypeState, interbankState: TypeState):
@@ -147,22 +147,22 @@ class BankTransfer:
         """
         更新各银行之借贷流量变量。
 
-        参数`byWay`可选项：
+        参数``byWay``可选项：
 
-        - `all`:  更新全部借贷流量变量；
-        - `clear transfer all`:  清零所有不必要的借贷流量变量；
-        - `Lo_P`:  已知``Lo_{B,P}``，更新其余借贷流量变量；
-        - `Li_P`:  已知``Li_{B,P}``，更新其余借贷流量变量；
-        - `Bi_D`:  已知``Bi_{B,D}``，更新其余借贷流量变量；
-        - `Bo_D`:  已知``Bo_{B,D}``，更新其余借贷流量变量；
-        - `Lo_BI_all`:  已知``Lo_{BI}[i,: ]``，更新其余借贷流量变量；
-        - `Li_BI_all`:  已知``Li_{BI}[i,: ]``，更新其余借贷流量变量；
-        - `Bi_BI_all`:  已知``Bi_{BI}[i,: ]``，更新其余借贷流量变量；
-        - `Bo_BI_all`:  已知``Bo_{BI}[i,: ]``，更新其余借贷流量变量；
-        - `Lo_BI`:  已知``Lo_{BI}``，更新其余借贷流量变量；
-        - `Bi_BI`:  已知``Bi_{BI}``，更新其余借贷流量变量；
-        - `Bo_BI`:  已知``Bo_{BI}``，更新其余借贷流量变量；
-        - `Li_BI`:  已知``Li_{BI}``，更新其余借贷流量变量；
+        - ``all``:  更新全部借贷流量变量；
+        - ``clear transfer all``:  清零所有不必要的借贷流量变量；
+        - ``Lo_P``:  已知``Lo_{B,P}``，更新其余借贷流量变量；
+        - ``Li_P``:  已知``Li_{B,P}``，更新其余借贷流量变量；
+        - ``Bi_D``:  已知``Bi_{B,D}``，更新其余借贷流量变量；
+        - ``Bo_D``:  已知``Bo_{B,D}``，更新其余借贷流量变量；
+        - ``Lo_BI_all``:  已知``Lo_{BI}[i,: ]``，更新其余借贷流量变量；
+        - ``Li_BI_all``:  已知``Li_{BI}[i,: ]``，更新其余借贷流量变量；
+        - ``Bi_BI_all``:  已知``Bi_{BI}[i,: ]``，更新其余借贷流量变量；
+        - ``Bo_BI_all``:  已知``Bo_{BI}[i,: ]``，更新其余借贷流量变量；
+        - ``Lo_BI``:  已知``Lo_{BI}``，更新其余借贷流量变量；
+        - ``Bi_BI``:  已知``Bi_{BI}``，更新其余借贷流量变量；
+        - ``Bo_BI``:  已知``Bo_{BI}``，更新其余借贷流量变量；
+        - ``Li_BI``:  已知``Li_{BI}``，更新其余借贷流量变量；
 
         Args:
             bank (): 商业银行众

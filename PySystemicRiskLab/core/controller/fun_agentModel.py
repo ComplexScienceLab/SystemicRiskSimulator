@@ -5,12 +5,10 @@
 ##########################################
 
 # from PySystemicRiskLab.core import env, paras, SystemicRiskAgent, ModelInitVariable, StateOfScheduleEnum, ModelComponent, AgentDataCollection, ModelRunner, ModelCollector
-import dataclasses
 
-pass  # end import
-
+from PySystemicRiskLab import dataclass, logging
 from PySystemicRiskLab.core.define.define_environment_variables import env
-from PySystemicRiskLab.core.define.define_parameterVariables import paras
+from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.controller.model_initVariable import ModelInitVariable
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
@@ -22,14 +20,13 @@ from PySystemicRiskLab.core.controller.fun_scheduler import ModelCollector
 pass  # end import
 
 
-@dataclasses.dataclass
+@dataclass
 class AgentsModel:
-    # TODO初始化systemicRiskAgent和systemicRiskModel
-
     modelInitVariable = ModelInitVariable()
 
+    # def init_systemicRiskAgent(cls, A_data: AgentDataCollection = AgentDataCollection([], []), para: dict = paras, env: dict = env):
     @classmethod
-    def init_systemicRiskAgent(cls, A_data: AgentDataCollection = AgentDataCollection([], []), para: dict = paras, env: dict = env):
+    def init_systemicRiskAgent(cls, env: dict = env):
         systemicRiskAgent, systemicRiskAgent_data = cls.modelInitVariable.init_B_and_BI(init_method=env['init_method'])
 
         ## 调度状态
@@ -48,30 +45,22 @@ class AgentsModel:
     pass  # class
 
     @classmethod
-    def makesim(cls, model: ModelComponent, para: dict = paras, env: dict = env):
+    def makesim(cls, model: ModelComponent, para: dict = para, env: dict = env):
         """函数：运行一次仿真"""
         ## 初始化agent及其模型
-        A, M, A_data = cls.init_systemicRiskAgent(para, env)
-        # systemicRiskModel = create_systemicRiskModel(systemicRiskAgent, paras)
+        A, A_data = cls.init_systemicRiskAgent(env)
 
-        ##BUG 测试具体模型。
-        maxnum = 0
+        num_step_of_model = 0
         env['state_of_process'] = StateOfScheduleEnum.running
-        while env['is_model'] == True & maxnum <= 20:  # HACK可能需要设置最大次数maxnum
-            maxnum += 1
-            cls.systemicRiskAgent_step(A, M, para, env, model, A_data)
-            # return BB, BI, A_data.BB, A_data.BI, env
+        # logging.debug("过程之状态 = %s", env['state_of_process'])
+        while (env['is_model'] == True and num_step_of_model <= env['max_num_steps_of_model']):
+            num_step_of_model += 1
+            cls.systemicRiskAgent_step(A, para, env, model, A_data)
             pass  # while
 
-        ##BUG 测试Agents框架
-        # maxnum = 0
-        # while env[:is_model] == true && maxnum <= 20
-        #     maxnum += 1
-        #     step!(systemicRiskModel, systemicRiskAgent_step!, env[:step_size])
-        #     # _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, 1)
-        #     _, _ = run!(systemicRiskModel, systemicRiskAgent_step!, env[:max_num_of_tau])
-        #     # return BB, BI, A_data.BB, A_data.BI, env
-        # end # while
+        if num_step_of_model >= env['max_num_steps_of_model']:
+            logging.info("超过该模型最大步进次数，强制跳出循环。")
+            pass
 
         ## 导出数据之于已经收集的
         env['state_of_process'] = StateOfScheduleEnum.finishing

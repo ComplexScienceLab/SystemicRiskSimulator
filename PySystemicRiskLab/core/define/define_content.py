@@ -29,12 +29,12 @@ class StageContent(Content):
     定义阶段组件内容结构体
     """
     # model_function = ModelRunner.run_stage  # 函数
-    modelFunction = None  # 函数
+    stageFunction = None  # 函数
 
     # @classmethod
     def __init__(self, id, function_name, text_name, model_function):
         super().__init__(id, function_name, text_name)
-        self.modelFunction = model_function
+        self.stageFunction = model_function
         pass
 
     pass
@@ -44,13 +44,13 @@ class ProcessContent(Content):
     """
     定义过程组件内容结构体
     """
-    # listProcessContent:Vector{ProcessContent} # 过程内容列表 listContentProcess
-    listStageContent: list  # 阶段内容列表 listStageContent
+    # list_process_content:Vector{ProcessContent} # 过程内容列表 listContentProcess
+    listStageContent: list  # 阶段内容列表 list_stage_content
 
     # @classmethod
-    def __init__(self, id, function_name, text_name, listStageContent: list):
+    def __init__(self, id, function_name, text_name, list_stage_content: list):
         super().__init__(id, function_name, text_name)
-        self.listStageContent = listStageContent
+        self.listStageContent = list_stage_content
         pass
 
     pass
@@ -63,9 +63,9 @@ class ModelContent(Content):
     listProcessContent: list  # 过程内容列表 listContentProcess
 
     # @classmethod
-    def __init__(self, id, function_name, text_name, listProcessContent: list):
+    def __init__(self, id, function_name, text_name, list_process_content: list):
         super().__init__(id, function_name, text_name)
-        self.listProcessContent = listProcessContent
+        self.listProcessContent = list_process_content
         pass
 
     pass

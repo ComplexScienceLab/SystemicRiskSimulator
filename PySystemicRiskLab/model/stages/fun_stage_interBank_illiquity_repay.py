@@ -3,7 +3,7 @@
 ##########################################
 # 状态/使用
 ##########################################
-
+from PySystemicRiskLab import logging
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import TypeState
 from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
@@ -17,10 +17,10 @@ pass  # end import
 "函数：银行间挤兑流动执行借贷流量阶段"
 
 
-def stage_interBank_illiquity_repay(self, BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
+def stage_interBank_illiquity_repay(BB: BankCommercial, BI: BankInterbank, b: TypeState, ib: TypeState, para: dict, env: dict):
     ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
     # env['stage_name'] = "银行间挤兑流动执行借贷流量阶段"
-    # @testprintln "开始阶段$(env['stage_name'])："
+    logging.debug("开始阶段%s：",env['stage_name'])
 
     BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b] = BankTransfer.transfer_B_capital_reverse(BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b], BB.Li_P[b])  # 流动资产变动，因收回厂商贷款
     # BB.A_Q[b] *= (1 - paras['kappa_A_P']) #HACK 暂时还不用！
@@ -49,6 +49,6 @@ def stage_interBank_illiquity_repay(self, BB: BankCommercial, BI: BankInterbank,
 
     BankTransfer.update_B_transfer(BB, BI, b, ib, byWay="clear transfer all")  # 清零所有不必要的借贷流量变量；
 
-    # @testprintln "结束阶段$(env['stage_name'])。"
+    logging.debug("结束阶段%s。",env['stage_name'])
     return BB, BI
     pass  # functions
