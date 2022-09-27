@@ -6,18 +6,18 @@
 # 状态/开发
 ##########################################
 # from PySystemicRiskLab.core import np, pd, deepcopy, SystemicRiskAgent, AgentDataCollection, StateOfScheduleEnum, env, paras, TypeMoney, TypeState, TypeIds, TypeList
+import logging
+
 pass  # end import
 
 import os.path
-from copy import deepcopy
 
-import pandas as pd
-
+from PySystemicRiskLab import  np,pd,deepcopy
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 from PySystemicRiskLab.core.define.define_environment_variables import env
-from PySystemicRiskLab.core.define.define_parameterVariables import paras
+from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.define.define_type import *
 
 pass  # end import
@@ -26,7 +26,7 @@ pass  # end import
 class ModelCollector:
 
     @classmethod
-    def collector(cls, A: SystemicRiskAgent, A_data: AgentDataCollection = AgentDataCollection([],[]), stateOfProcess=StateOfScheduleEnum, env: dict = env, para: dict = dict([])):
+    def collector(cls, A: SystemicRiskAgent, A_data: AgentDataCollection = AgentDataCollection([], []), stateOfProcess=StateOfScheduleEnum, env: dict = env, para: dict = dict([])):
         """
 
         Args:
@@ -51,7 +51,7 @@ class ModelCollector:
             else:
                 pass  # if:
         except KeyError:
-            print("关键词" + str(stateOfProcess) + "取值错误！")
+            logging.error("关键词" + str(stateOfProcess) + "取值错误！")
 
     pass
 
@@ -133,7 +133,7 @@ class ModelCollector:
         pass
 
     @classmethod
-    def exportAgentData(cls, A_data: AgentDataCollection, env: dict = env, para: dict = paras):
+    def exportAgentData(cls, A_data: AgentDataCollection, env: dict = env, para: dict = para):
         """
         导出实验结果数据
         :param A_data:
@@ -202,7 +202,7 @@ class ModelCollector:
         pass  # def
 
     @classmethod
-    def exportParameterData(cls, list_combinationOfPara, para=paras):
+    def exportParameterData(cls, list_combinationOfPara, para=para):
         """
         导出控制参数数据
         :param list_combinationOfPara:
@@ -215,8 +215,8 @@ class ModelCollector:
         env['num_experiment'] = len(list_combinationOfPara)  # 获取实验组之实验个数
         df_010 = pd.DataFrame(list_combinationOfPara, columns=para.keys())  # 转换字典列表为数据框
         li_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
-        id_type_is_lsit = li_types.index(list)  # 获取索引值为类型为list的
-        df_combinationOfPara = df_010.explode(df_010.keys()[id_type_is_lsit])
+        id_type_is_list = li_types.index(np.ndarray)  # 获取索引值为类型为list的
+        df_combinationOfPara = df_010.explode(df_010.keys()[id_type_is_list])
         # li_010 = [df_010.apply(lambda x: pd.Series(x[i]), axis=1).stack().reset_index(level=1, drop=True) for i in range(df_010.columns.__len__())]
         # li_020 = [np.array(li_010[i]) for i in range(li_010.__len__())]
         # df_combinationOfPara = pd.DataFrame(li_020).T

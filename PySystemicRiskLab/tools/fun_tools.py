@@ -57,7 +57,7 @@ class Tools:
     def set_experiments_folders(cls, env: dict = env, isDatetime: bool = True):
         ## 设定日期时间字符串
         if isDatetime == True:
-            str_datetime = "_" + time.strftime("%Y%model_name%d%H%M%S")
+            str_datetime = "_" + time.strftime("%Y%m%d%H%M%S")
         else:
             str_datetime = ""
             pass

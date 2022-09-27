@@ -28,15 +28,16 @@ class StageComponent(Component):
     """
     定义阶段组件
     """
-    # run: ModelRunner.run_model()  # 运行阶段
+    # run: ModelRunner.runModel()  # 运行阶段
     run = None  # 运行阶段
 
     # content:Array{StageComponent} # 阶段组件列表
 
     # @classmethod
     def __init__(self, id, function_name, text_name, model_function):
-        Component.__init__(Component, id, function_name, text_name)
-        self.modelFunction = model_function
+        # super(StageComponent, self).__init__()
+        super().__init__(id, function_name, text_name)
+        self.run = model_function
         pass
 
     pass  # class
@@ -54,7 +55,7 @@ class ProcessComponent(Component):
 
     # @classmethod
     def __init__(self, id, function_name, text_name, run, content: list):
-        Component.__init__(self, id, function_name, text_name)
+        super().__init__(id, function_name, text_name)
         self.run = run
         self.content = content
         pass
@@ -72,10 +73,9 @@ class ModelComponent(Component):
 
     # @classmethod
     def __init__(self, id, function_name, text_name, run, content: list):
-        Component.__init__(self, id, function_name, text_name)
+        super().__init__(id, function_name, text_name)
         self.run = run
         self.content = content
-
         pass
 
-    pass
+    pass  # class

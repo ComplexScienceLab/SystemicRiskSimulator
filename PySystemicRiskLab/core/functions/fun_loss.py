@@ -20,5 +20,5 @@ pass  # end import
 
 
 def calc_B_Loss(interbank_Loss):
-    np.sum(interbank_Loss, dims=2)
+    np.sum(interbank_Loss, axis=1).reshape(-1,1)
     pass

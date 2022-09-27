@@ -30,9 +30,6 @@ function scheduler!(env::Dict, A::SystemicRiskAgent, A_data::AgentDataCollection
     if env[:state_of_schedule] == :collecting
         env[:state_of_schedule] = scheduler_collecting(A, A_data)
     end
-    # if (state_of_schedule == :indexing) #HACK 冗余
-    #     env[:index_of_schedule_position], env[:state_of_schedule] = scheduler_indexing(component) # 索引
-    # end
 end # function
 
 
@@ -46,11 +43,11 @@ Return:
 - index_of_schedule_position::Array 调度位置索引列表；
 - state_of_schedule::Symbol: 调度状态；
 """
-function scheduler_indexing(model::ModelComponent)
+function scheduler_indexing(model::ModelComponent) #HACK 调度索引是否改成「列表「字典「列表」」」？
     index_of_schedule_position = []
-    for i in 1:length(model.content)
+    for i in 1:length(model.content) # 获取模型的内容，暨过程
         append!(index_of_schedule_position, [[i, []]])
-        for j in 1:length(model.content[i].content)
+        for j in 1:length(model.content[i].content) # 获取过程的内容，暨阶段
             push!(index_of_schedule_position[i][2], j)
         end
     end
@@ -79,22 +76,19 @@ function scheduler_loading(index_of_schedule_position::Vector{Any}, index_proces
     @testprintln "调度读取中……"
     newStateOfSchedule = state_of_schedule
     if (index_process == loadedIndexProcess && index_stage == loadedIndexStage) # 如果待读取过程和阶段是应该读取的过程和阶段，则继续判断，否则跳到下一阶段尝试读取
-        if (!(index_of_schedule_position[index_process][1] == length(index_of_schedule_position[:, 1]) && index_of_schedule_position[index_process][2][index_stage] == length(index_of_schedule_position[index_process][2])) && is_process == true) # 如果待读取过程不是该模型之最后一个过程之最后一个阶段，且继续运行过程，则继续读取，否则说明程序之模型部分已经运行到终点了，此时应停止读取，然后改状态为idle。
+        if (!(index_of_schedule_position[index_process][1] == length(index_of_schedule_position[:, 1]) && index_of_schedule_position[index_process][2][index_stage] == length(index_of_schedule_position[end][2])) && is_process == true) # 如果待读取过程不是该模型之最后一个过程之最后一个阶段，且继续运行过程，则继续读取，否则说明程序之模型部分已经运行到终点了，此时应停止读取，然后改状态为idle。
             newStateOfSchedule = :stepping # 切换调度运作状态为步进
+            @testprintln "调度读取成功。切换调度运作状态为$(newStateOfSchedule)。"
         else
             newStateOfSchedule = :idle # 切换调度运作状态为待命
+            # @testprintln "调度读取中……。切换调度运作状态为$(newStateOfSchedule)。"
         end
-        @testprintln "调度读取完毕。切换调度运作状态为$(newStateOfSchedule)。"
+        # @testprintln "调度读取中……。切换调度运作状态为$(newStateOfSchedule)。"
     end
     return newStateOfSchedule
 end
 
 
-# "函数：调度步进"
-# function scheduler_stepping(process::Symbol, env::Dict=env, saved_index_process::Int)
-#     $(process)
-#     scheduler_altToSavingState!(env)
-# end
 
 
 """
@@ -251,7 +245,7 @@ end
 #                 env[:saved_index_stage] = env[:index_stage]
 #                 @testprintln "下一次步进运行的阶段：$(env[:stage_name])。"
 #                 env[:state_of_schedule] = :collecting # 切换调度运作状态为收集数据
-#                 #TODO 收集数据
+#                 ## 收集数据
 #                 @testprintln "切换调度运作状态为$(env[:state_of_schedule])"
 #                 env[:state_of_schedule] = :loading  # 切换调度运作状态为读取
 #                 @testprintln "切换调度运作状态为$(env[:state_of_schedule])"
