@@ -12,4 +12,4 @@ from PyScripts.settings.set_parameterVariables import set_parameterVariables
 pass  # end import
 
 ## 生成字典变量
-paras = set_parameterVariables  # 别名
+para = set_parameterVariables  # 别名

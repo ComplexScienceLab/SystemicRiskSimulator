@@ -28,12 +28,12 @@ def fun_process_skeleton_template(self, A:SystemicRiskAgent, para:dict, env:dict
     env['index_stage'] = 0 # 初始化阶段所在位置
     env['is_step'] = True # 初始化步进状态
     env['is_round'] = True # 初始化回合状态
-    env['is_rocess'] = True # 初始化过程状态
+    env['is_process'] = True # 初始化过程状态
     env['is_loop'] = True # 初始化循环状态
     while env['is_loop'] == True:
 
         ## 回合数变动
-        if (env['loadedIndexStage'] != 1):
+        if (env['loaded_index_stage'] != 1):
             # @testprintln "\n继续回合：$(env['tau'])"
         else:
             env['tau'] += 1 # 回合累加一
@@ -58,7 +58,7 @@ def fun_process_skeleton_template(self, A:SystemicRiskAgent, para:dict, env:dict
 
             ## 调度并运行状态
             if env['state_of_schedule'] == StateOfScheduleEnum.loading:
-                env['state_of_schedule'] = scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule']) # 调度读取
+                env['state_of_schedule'] = scheduler_loading(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['loaded_index_process'], env['loaded_index_stage'], env['state_of_schedule']) # 调度读取
                 pass
             if env['state_of_schedule'] == StateOfScheduleEnum.stepping:
                 #=【插入表达式】=#
@@ -72,10 +72,10 @@ def fun_process_skeleton_template(self, A:SystemicRiskAgent, para:dict, env:dict
             pass # for
 
 
-        env['is_rocess'] = is_rocess(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_rocess'], env['stage_name'], process) # 判断是否继续运行过程
+        env['is_process'] = is_rocess(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_process'], env['stage_name'], process) # 判断是否继续运行过程
 
         if env['state_of_schedule'] == StateOfScheduleEnum.saving:
-            env['saved_index_process'], env['saved_index_stage'], env['loadedIndexProcess'], env['loadedIndexStage'], env['state_of_schedule'] = scheduler_saving(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['is_rocess']) # 调度存储
+            env['saved_index_process'], env['saved_index_stage'], env['loaded_index_process'], env['loaded_index_stage'], env['state_of_schedule'] = scheduler_saving(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['is_process']) # 调度存储
             pass
         if (env['state_of_schedule'] == StateOfScheduleEnum.collecting & env['state_of_process'] == StateOfScheduleEnum.running):
             env['state_of_schedule'] = scheduler_collecting(A, A_data)

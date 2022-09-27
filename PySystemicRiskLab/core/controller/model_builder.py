@@ -4,9 +4,11 @@
 # from PySystemicRiskLab.core import ModelContent, ProcessContent, StageContent, ModelComponent, ProcessComponent, StageComponent, fun_model_skeleton, fun_process_skeleton
 pass  # end import
 
+from PySystemicRiskLab import deepcopy, np, logging
 from PySystemicRiskLab.core.define.define_component import ModelComponent, ProcessComponent, StageComponent
 from PySystemicRiskLab.core.define.define_content import ProcessContent, StageContent
-from PySystemicRiskLab.core.model import fun_model_skeleton, fun_process_skeleton
+from PySystemicRiskLab.core.model.fun_model_skeleton import ModelSkeleton
+from PySystemicRiskLab.core.model.fun_process_skeleton import ProcessSkeleton
 
 pass  # end import
 
@@ -31,19 +33,19 @@ class ModelBuilder:
 
         ## 生成阶段stage
         stage = StageComponent(
-            stage_content.id,
-            stage_content.functionName,
-            stage_content.textName,
-            stage_content.modelFunction,
+            id=stage_content.id,
+            function_name=stage_content.functionName,
+            text_name=stage_content.textName,
+            model_function=deepcopy(stage_content.stageFunction),
         )
 
-        # @testprintln "已经生成阶段$(stageContent.functionName)"
+        logging.debug("已经生成阶段%s", stage_content.functionName)
 
         return stage
         pass  # function
 
     @classmethod
-    def buildProcess(cls, process_content: ProcessContent, processSkeleton=fun_process_skeleton):
+    def buildProcess(cls, process_content: ProcessContent, processSkeleton=ProcessSkeleton.fun_process_skeleton):
         """
         函数：过程实例生成器
 
@@ -59,29 +61,25 @@ class ModelBuilder:
         processInstanceType = process_content.functionName
 
         ## 生成子阶段组件列表
-        list_stage = []
-        for stageContent in process_content.listStageContent:
-            stage = cls.buildStage(stageContent)
-            list_stage.append(stage)
-            pass
+        list_stage = [cls.buildStage(stageContent) for stageContent in process_content.listStageContent]
 
         ## 生成过程process
         process = ProcessComponent(
-            process_content.id,
-            process_content.functionName,
-            process_content.textName,
+            id=process_content.id,
+            function_name=process_content.functionName,
+            text_name=process_content.textName,
             # processContent.conditionToContinueProcess,
-            processSkeleton,
-            list_stage,
+            run=processSkeleton,
+            content=list_stage,
         )
 
-        # @testprintln "已经生成过程$(processContent.functionName)"
+        logging.debug("已经生成过程%s", process_content.functionName)
 
         return process
         pass  # function
 
     @classmethod
-    def buildModel(cls, modelContent, modelSkeleton=fun_model_skeleton):
+    def buildModel(cls, modelContent, modelSkeleton=ModelSkeleton.fun_model_skeleton):
         """
         函数：模型实例生成器
 
@@ -97,22 +95,18 @@ class ModelBuilder:
         modelInstanceType = modelContent.functionName
 
         ## 生成子过程组件列表
-        list_process = []
-        for processContent in modelContent.listProcessContent:
-            process = cls.buildProcess(processContent)
-            list_process.append(process)
-            pass
+        list_process = [cls.buildProcess(processContent) for processContent in modelContent.listProcessContent]
 
         ## 生成模型model
         model = ModelComponent(
-            modelContent.id,
-            modelContent.functionName,
-            modelContent.textName,
-            modelSkeleton,
-            list_process,
+            id=modelContent.id,
+            function_name=modelContent.functionName,
+            text_name=modelContent.textName,
+            run=modelSkeleton,
+            content=list_process,
         )
 
-        # @testprintln "已经生成模型$(modelContent.functionName)"
+        logging.debug("已经生成模型%s", modelContent.functionName)
 
         return model
         pass  # function

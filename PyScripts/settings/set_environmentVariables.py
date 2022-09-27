@@ -42,8 +42,11 @@ set_environmentVariables = dict(
     num_bank=5,  # 银行个数；
     num_assets=3,  # 资产种类数；
 
+
+    ## 调试专用变量：
     tau_for_test=4,  # test变量，用于打断点。相关语句：env['tau']>=env['tau_for_test']；
     is_test=True,  # 是否处于测试状态
+    max_num_steps_of_model=20, # 单个模型最大步进次数
 
     ###########################
 
@@ -76,11 +79,11 @@ set_environmentVariables = dict(
     index_process=1,  # 索引状态下，标记当前所在过程之位置
     process_name="",  # 运行的过程之名称；
     saved_index_process="",  # 存储的过程之位置；
-    loadedIndexProcess="",  # 读取的过程之位置；
+    loaded_index_process="",  # 读取的过程之位置；
     index_stage=1,  # 索引状态下，标记当前所在阶段之位置
     stage_name="",  # 运行的阶段之名称；
     saved_index_stage="",  # 存储的当前阶段之位置；
-    loadedIndexStage="",  # 读取的当前阶段之位置；
+    loaded_index_stage="",  # 读取的当前阶段之位置；
 
     ###########################
 

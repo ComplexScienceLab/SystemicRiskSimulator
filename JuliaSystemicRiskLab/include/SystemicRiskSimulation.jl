@@ -56,7 +56,6 @@ include("../core/controller/fun_builder.jl")
 include("../core/controller/fun_runner.jl")
 include("../core/controller/fun_collector.jl")
 include("../core/controller/fun_agentModel.jl")
-include("../core/controller/fun_makesim.jl")
 include("../core/template/fun_exporter.jl")
 
 ## 集成初始化函数文件
