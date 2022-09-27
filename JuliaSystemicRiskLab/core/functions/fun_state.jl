@@ -9,8 +9,8 @@
 
 "初始化银行之状态关系列表"
 function init_listOfRelationInStateOfBanks!(bank::BankCommercial, interbank::BankInterbank)
-    interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
-    interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
+    interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState=bank.on, goal="creditor")
+    interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState=bank.on, goal="debtor")
 end
 
 
@@ -67,8 +67,8 @@ function calc_isInsolvent!(bank::BankCommercial, interbank::BankInterbank)
     if bank.isv != condition
         bank.isv = condition
         interbank.isv = (bank.isv .|| bank.isv')
-        interbank.cre_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "creditor")
-        interbank.deb_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "debtor")
+        interbank.cre_isv = calc_listOfRelationInStateOfBanks(interbank; isState=bank.isv, goal="creditor")
+        interbank.deb_isv = calc_listOfRelationInStateOfBanks(interbank; isState=bank.isv, goal="debtor")
     end
 end
 
@@ -78,8 +78,8 @@ function calc_isInsolvent_from_isHealthy!(bank::BankCommercial, interbank::BankI
     if bank.isv != condition
         bank.isv = condition
         interbank.isv = (bank.isv .|| bank.isv')
-        interbank.cre_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "creditor")
-        interbank.deb_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "debtor")
+        interbank.cre_isv = calc_listOfRelationInStateOfBanks(interbank; isState=bank.isv, goal="creditor")
+        interbank.deb_isv = calc_listOfRelationInStateOfBanks(interbank; isState=bank.isv, goal="debtor")
     end
 end
 
@@ -89,8 +89,8 @@ function update_isInsolvent_from_isHealthy!(bank::BankCommercial, interbank::Ban
     if bank.isv != condition
         bank.isv = condition
         interbank.isv = (bank.isv .|| bank.isv')
-        interbank.cre_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "creditor")
-        interbank.deb_isv = calc_listOfRelationInStateOfBanks(interbank; isState = bank.isv, goal = "debtor")
+        interbank.cre_isv = calc_listOfRelationInStateOfBanks(interbank; isState=bank.isv, goal="creditor")
+        interbank.deb_isv = calc_listOfRelationInStateOfBanks(interbank; isState=bank.isv, goal="debtor")
     end
 end
 
@@ -100,8 +100,8 @@ function calc_isIlliquity!(bank::BankCommercial, interbank::BankInterbank)
     if bank.ilq != condition
         bank.ilq = condition
         interbank.ilq = (bank.ilq .|| bank.ilq')
-        interbank.cre_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "creditor")
-        interbank.deb_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "debtor")
+        interbank.cre_ilq = calc_listOfRelationInStateOfBanks(interbank; isState=bank.ilq, goal="creditor")
+        interbank.deb_ilq = calc_listOfRelationInStateOfBanks(interbank; isState=bank.ilq, goal="debtor")
     end
 end
 
@@ -111,8 +111,8 @@ function calc_isIlliquity_from_isHealthy!(bank::BankCommercial, interbank::BankI
     if bank.ilq != condition
         bank.ilq = condition
         interbank.ilq = (bank.ilq .|| bank.ilq')
-        interbank.cre_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "creditor")
-        interbank.deb_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "debtor")
+        interbank.cre_ilq = calc_listOfRelationInStateOfBanks(interbank; isState=bank.ilq, goal="creditor")
+        interbank.deb_ilq = calc_listOfRelationInStateOfBanks(interbank; isState=bank.ilq, goal="debtor")
     end
 end
 
@@ -122,8 +122,8 @@ function update_isIlliquity_from_isHealthy!(bank::BankCommercial, interbank::Ban
     if bank.ilq != condition
         bank.ilq = condition
         interbank.ilq = (bank.ilq .|| bank.ilq')
-        interbank.cre_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "creditor")
-        interbank.deb_ilq = calc_listOfRelationInStateOfBanks(interbank; isState = bank.ilq, goal = "debtor")
+        interbank.cre_ilq = calc_listOfRelationInStateOfBanks(interbank; isState=bank.ilq, goal="creditor")
+        interbank.deb_ilq = calc_listOfRelationInStateOfBanks(interbank; isState=bank.ilq, goal="debtor")
     end
 end
 
@@ -133,8 +133,8 @@ function calc_isBankrupt!(bank::BankCommercial, interbank::BankInterbank)
     if bank.br != condition
         bank.br = condition
         interbank.br = (bank.br .&& bank.br')
-        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="creditor")
+        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="debtor")
     end
 end
 
@@ -144,8 +144,8 @@ function calc_isBankrupt_from_isInsolvent!(bank::BankCommercial, interbank::Bank
     if bank.br != condition
         bank.br = condition
         interbank.br = (bank.br .&& bank.br')
-        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="creditor")
+        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="debtor")
     end
 end
 
@@ -155,8 +155,8 @@ function calc_isBankrupt_from_isIlliquity!(bank::BankCommercial, interbank::Bank
     if bank.br != condition
         bank.br = condition
         interbank.br = (bank.br .&& bank.br')
-        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="creditor")
+        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="debtor")
     end
 end
 
@@ -175,10 +175,10 @@ end
 function update_isBankrupt_from_isOff!(bank::BankCommercial, interbank::BankInterbank)
     condition = (bank.off)
     if bank.br == condition
-        bank.br[: ] = FALSE1
+        bank.br[:] = FALSE1
         interbank.br = (bank.br .&& bank.br')
-        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="creditor")
+        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="debtor")
     end
 end
 
@@ -188,8 +188,8 @@ function update_isOn_from_isOff!(bank::BankCommercial, interbank::BankInterbank)
     if bank.on != condition
         bank.on = condition
         interbank.on = (bank.on .&& bank.on')
-        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "creditor")
-        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState = bank.br, goal = "debtor")
+        interbank.cre_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="creditor")
+        interbank.deb_br = calc_listOfRelationInStateOfBanks(interbank; isState=bank.br, goal="debtor")
     end
 end
 
@@ -287,9 +287,9 @@ function calc_listOfRelationInStateOfBanks(interbank::BankInterbank; isState::Ve
     else
         throw(DomainError(byWay, "关键词取值错误！"))
     end
-    listOfRelationInStateOfBanks = [[] for i in 1: env[:num_bank]]
-    for i in 1: env[:num_bank]
-        listOfRelationInStateOfBanks[i] = findall(isExposure[i, : ]) # 获取对应状态下的债权或者债务关系的银行列表
+    listOfRelationInStateOfBanks = [[] for i in 1:env[:num_bank]]
+    for i in 1:env[:num_bank]
+        listOfRelationInStateOfBanks[i] = findall(isExposure[i, :]) # 获取对应状态下的债权或者债务关系的银行列表
     end
     return listOfRelationInStateOfBanks
 end
@@ -325,7 +325,7 @@ end
 - `needed repay Z_D`:  到是否需要偿还居民存款状态；
 - `needed collect A_P`:  到是否可以收回厂商贷款状态；
 """
-function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target::String = "any", source::String = "any")
+function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target::String="any", source::String="any")
     if target == "any" #FIXME 这个可能有缺陷
         if source == "any"
             init_listOfRelationInStateOfBanks!(bank, interbank)
@@ -352,8 +352,8 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
         elseif source == "bankrupt"
             calc_isOff_from_isBankrupt!(bank, interbank)
             update_isOn_from_isOff!(bank, interbank)
-            interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
-            interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
+            interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState=bank.on, goal="creditor")
+            interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState=bank.on, goal="debtor")
         elseif source == "off"
             @testprintln "无须更新！"
         else
@@ -457,8 +457,8 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
             calc_isOff_from_isBankrupt!(bank, interbank)
             update_isOn_from_isOff!(bank, interbank)
             update_isBankrupt_from_isOff!(bank, interbank)
-            interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "creditor")
-            interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState = bank.on, goal = "debtor")
+            interbank.cre = calc_listOfRelationInStateOfBanks(interbank; isState=bank.on, goal="creditor")
+            interbank.deb = calc_listOfRelationInStateOfBanks(interbank; isState=bank.on, goal="debtor")
         elseif source == "off"
             @testprintln "无须更新！"
         else

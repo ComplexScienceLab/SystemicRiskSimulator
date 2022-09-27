@@ -33,7 +33,7 @@ import pandas as pd
 # In[2]:
 
 
-print("start")
+logging.info("start")
 # os.chdir("/Users/ethan/LocalFiles/ResearchFile/PySystemicRiskLab")
 os.getcwd()
 # root_path = os.getcwd()
