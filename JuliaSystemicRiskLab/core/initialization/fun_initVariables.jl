@@ -156,7 +156,7 @@ function set_imported_values_to_Bank_variables()
 
 end
 
-"手动设置以初始化银行变量" #FIXME 须提取手动初始化方式为单独的方式
+"手动设置以初始化银行变量"
 function set_manually_values_to_Bank_variables()
 
     # include("../../../JuliaScripts/settings/set_agentsVariables.jl")
