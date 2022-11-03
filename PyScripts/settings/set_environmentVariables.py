@@ -25,7 +25,7 @@
 # 开发说明：[相关的修改项](file:///../../src/core/define/define_environmentVariables.jl)
 ##########################################
 
-from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum, StateOfProcessEnum
 
 set_environmentVariables = dict(
 
@@ -62,7 +62,7 @@ set_environmentVariables = dict(
     num_experiment=0,  # 实验组之实验个数；
 
     state_of_schedule=StateOfScheduleEnum.idle,  # 调度运作状态。状态符有以下几种：`:idle`：闲置状态、`:indexing`：索引状态、`:stepping`：步进状态、`:saving`：存储状态、`:loading`：读取状态、`:collecting`：收集数据状态、`:running`：运行状态；
-    state_of_process=StateOfScheduleEnum.idle,  # 程序所处时期状态。状态符有以下几种：`:initializing`：初始化状态、`:running`：运行状态、`:finishing`：结束收尾状态、
+    state_of_process=StateOfProcessEnum.initializing,  # 程序所处时期状态。状态符有以下几种：`:initializing`：初始化状态、`:running`：运行状态、`:finishing`：结束收尾状态、
 
     is_step=True,  # 是否处于步进状态；
     is_loop=True,  # 是否处于循环状态

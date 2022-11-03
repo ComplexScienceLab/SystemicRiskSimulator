@@ -63,11 +63,11 @@ class ModelSkeleton:
             pass
 
         ## 判断是否结束模型，暨结束本次实验
-        if env['state_of_schedule'] == StateOfScheduleEnum.idle:
+        if env['state_of_schedule'] == StateOfScheduleEnum.idle:  # BUG
             env['is_model'] = False
             env['is_experiment'] = False
             pass
-        if (~env['is_model'] | ~env['is_experiment']):
+        if (not env['is_model']) or (not env['is_experiment']):
             logging.debug("结束模型：%s。\n", env['model_name'])
             pass
 

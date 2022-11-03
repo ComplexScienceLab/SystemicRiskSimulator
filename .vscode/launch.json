@@ -4,6 +4,30 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "Python: Project Main File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/PyScripts/exp_raw/main.py",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Python: File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "stopOnEntry": true,
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
         // {
         //     "type": "julia",
         //     "request": "launch",
@@ -29,6 +53,5 @@
             "cwd": "${workspaceFolder}",
             "juliaEnv": "${command:activeJuliaEnvironment}"
         }
-
     ]
 }

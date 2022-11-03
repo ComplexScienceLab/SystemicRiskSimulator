@@ -10,6 +10,7 @@ from PySystemicRiskLab.core.controller.model_collector import ModelCollector
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
+from PySystemicRiskLab.core.define.define_type import *
 # from PySystemicRiskLab.models.models.model_content import *
 from PySystemicRiskLab.core.define.define_agentsVariables import bankCommercial_dict, bankInterbank_dict
 from PySystemicRiskLab.core.define.define_environment_variables import env
@@ -32,66 +33,66 @@ class ModelInitVariable:
     def set_default_values_to_B_variables(cls):
         bank: BankCommercial = BankCommercial(
             id=np.arange(1, env['num_bank'], step=1),  # 编号 id
-            abbr=np.full((env['num_bank'],1), ""),  # 缩写 abbr
-            name=np.full((env['num_bank'],1), ""),  # 全名 name
-            A_all=np.zeros((env['num_bank'],1)),  # 总资产 A_all: $A_all=A_BI+A_exBI$
-            A_BI_all=np.zeros((env['num_bank'],1)),  # 银行间资产加总 A_BI_all
-            A_exBI=np.zeros((env['num_bank'],1)),  # 非银行间资产 A_exBI: $A_exBI=A_P+A_Q+A_R+A_other$
-            A_P=np.zeros((env['num_bank'],1)),  # 银行贷款给生产部门之资产（非流动性资产） A_P
-            A_Q=np.zeros((env['num_bank'],1)),  # 银行持有超额准备金（流动性资产） A_Q
-            A_R=np.zeros((env['num_bank'],1)),  # 银行持有法定准备金（非流动性资产） A_R
-            A_other=np.zeros((env['num_bank'],1)),  # 银行持有的其它资产（非流动性资产） A_other
-            Z_all=np.zeros((env['num_bank'],1)),  # 总负债 Z_all: $Z_total=Z_BI+Z_exBI$
-            Z_BI_all=np.zeros((env['num_bank'],1)),  # 银行间负债加总 Z_BI_all
-            Z_exBI=np.zeros((env['num_bank'],1)),  # 非银行间负债 Z_exBI: $Z_exBI=Z_D+Z_other$
-            Z_D=np.zeros((env['num_bank'],1)),  # 银行获得居民部门存款（非流动性负债） Z_D
-            Z_other=np.zeros((env['num_bank'],1)),  # 银行持有的其他负债（非流动性负债） Z_other
-            E_all=np.zeros((env['num_bank'],1)),  # 所有者权益 E_all
-            T_all=np.zeros((env['num_bank'],1)),  # 总贷款流出 Lo_all: $Lo_all=Lo_BI_all+Lo_exBI$
-            Lo_all=np.zeros((env['num_bank'],1)),  # 银行间贷款流出 Lo_BI_all
-            Lo_BI_all=np.zeros((env['num_bank'],1)),  # 非银行间贷款流出 Lo_exBI: $Lo_exBI=Lo_P$
-            Lo_exBI=np.zeros((env['num_bank'],1)),  # 银行贷款流出给生产部门 Lo_P
-            Lo_P=np.zeros((env['num_bank'],1)),  # 总交易流量 Transfer_all: $Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
-            Li_all=np.zeros((env['num_bank'],1)),  # 总贷款流入 Li_all: $Li_all=Li_BI_all+Li_exBI$
-            Li_BI_all=np.zeros((env['num_bank'],1)),  # 银行间贷款流入 Li_BI_all
-            Li_exBI=np.zeros((env['num_bank'],1)),  # 非银行间贷款流入 Li_exBI: $Li_exBI=Li_D$
-            Li_P=np.zeros((env['num_bank'],1)),  # 银行贷款流入从生产部门 Li_P
-            Bi_all=np.zeros((env['num_bank'],1)),  # 总借款流入 Bi_all: $Bi_all=Bi_BI_all+Bi_exBI$
-            Bi_BI_all=np.zeros((env['num_bank'],1)),  # 银行间借款流入 Bi_BI_all
-            Bi_exBI=np.zeros((env['num_bank'],1)),  # 非银行间借款流入 Bi_exBI: $Bi_exBI=Bi_D$
-            Bi_D=np.zeros((env['num_bank'],1)),  # 银行借款流入从居民部门 Bi_D
-            Bo_all=np.zeros((env['num_bank'],1)),  # 总借款流出 Bo_all: $Bo_all=Bo_BI_all+Bo_exBI$
-            Bo_BI_all=np.zeros((env['num_bank'],1)),  # 银行间借款流出 Bo_BI_all
-            Bo_exBI=np.zeros((env['num_bank'],1)),  # 非银行间借款流出 Bo_exBI: $Bo_exBI=Bo_P$
-            Bo_D=np.zeros((env['num_bank'],1)),  # 银行借款流出给居民部门 Bo_D
-            Shock_t=np.zeros((env['num_bank'],1)),  # 总冲击目标 Shock_t $Shock_t = Shock_exBI_t+Shock_BI_t$
-            Shock_s=np.zeros((env['num_bank'],1)),  # 总冲击源头 Shock_s $Shock_s = Shock_exBI_s+Shock_BI_s$
-            Shock_def_t=np.zeros((env['num_bank'],1)),  # 总违约损失冲击目标 Shock_def_t $Shock_def_t = Shock_exBI_def_t+Shock_BI_def_t$
-            Shock_def_s=np.zeros((env['num_bank'],1)),  # 总违约损失冲击源头 Shock_def_s $Shock_def_s = Shock_exBI_def_s+Shock_BI_def_s$
-            Shock_run_t=np.zeros((env['num_bank'],1)),  # 总挤兑流动冲击目标 Shock_run_t $Shock_run_t = Shock_exBI_run_t+Shock_BI_run_t$
-            Shock_run_s=np.zeros((env['num_bank'],1)),  # 总挤兑流动冲击源头 Shock_run_s $Shock_run_s = Shock_exBI_run_s+Shock_BI_run_s$
-            Shock_exBI_t=np.zeros((env['num_bank'],1)),  # 非银行间借贷冲击目标 Shock_exBI_t $Shock_exBI_t = Shock_P_def_t+Shock_D_run_t$
-            Shock_exBI_s=np.zeros((env['num_bank'],1)),  # 非银行间借贷冲击源头 Shock_exBI_s $Shock_exBI_s = Shock_P_run_s+Shock_D_def_s$
-            Shock_P_run_s=np.zeros((env['num_bank'],1)),  # 银行之厂商贷款挤兑流动冲击源头 Shock_P_run_s
-            Shock_P_def_t=np.zeros((env['num_bank'],1)),  # 银行之厂商贷款违约损失冲击目标 Shock_P_def_t
-            Shock_D_def_s=np.zeros((env['num_bank'],1)),  # 银行存款违约损失冲击源头 Shock_D_def_s
-            Shock_D_run_t=np.zeros((env['num_bank'],1)),  # 银行存款挤兑流动冲击目标 Shock_D_run_t
-            Shock_B=np.zeros((env['num_bank'],1)),  # 银行内资产负债冲击 Shock_B $Shock_B=Shock_B_A+Shock_B_Z$
-            Shock_B_A=np.zeros((env['num_bank'],1)),  # 银行内资产负债之银行间资产端冲击 Shock_B_A
-            Shock_B_Z=np.zeros((env['num_bank'],1)),  # 银行内资产负债之银行间负债端冲击 Shock_B_Z
-            Shock_BI_s=np.zeros((env['num_bank'],1)),  # 银行间冲击源头 Shock_BI_s $Shock_BI_s=Shock_BI_def_s+Shock_BI_run_s$
-            Shock_BI_t=np.zeros((env['num_bank'],1)),  # 银行间冲击目标 Shock_BI_t $Shock_BI_t=Shock_BI_def_t+Shock_BI_run_t$
-            Shock_BI_def_s=np.zeros((env['num_bank'],1)),  # 银行间违约损失冲击源头 Shock_BI_def_s
-            Shock_BI_def_t=np.zeros((env['num_bank'],1)),  # 银行间违约损失冲击目标 Shock_BI_def_t
-            Shock_BI_run_s=np.zeros((env['num_bank'],1)),  # 银行间挤兑流动冲击源头 Shock_BI_run_s $Shock_BI_run_s=Shock_BI_run_ilq_s+Shock_BI_run_br_s$
-            Shock_BI_run_t=np.zeros((env['num_bank'],1)),  # 银行间挤兑流动冲击目标 Shock_BI_run_t $Shock_BI_run_t+Shock_BI_run_ilq_t+Shock_BI_run_br_t$
-            Shock_BI_run_ilq_s=np.zeros((env['num_bank'],1)),  # 银行间流动性短缺挤兑流动冲击源头 Shock_BI_run_ilq_s
-            Shock_BI_run_ilq_t=np.zeros((env['num_bank'],1)),  # 银行间流动性短缺挤兑流动冲击目标 Shock_BI_run_ilq_t
-            Shock_BI_run_br_s=np.zeros((env['num_bank'],1)),  # 银行间倒闭挤兑流动冲击源头 Shock_BI_run_br_s
-            Shock_BI_run_br_t=np.zeros((env['num_bank'],1)),  # 银行间倒闭挤兑流动冲击目标 Shock_BI_run_br_t
-            Loss_BI=np.zeros((env['num_bank'],1)),  # 银行间市场冲击损失 Loss_BI
-            Loss_BI_def_t=np.zeros((env['num_bank'],1)),  # 银行间资产负债违约冲击损失 Loss_BI_def_t
-            Loss_BI_run_t=np.zeros((env['num_bank'],1)),  # 银行间负债流动性挤兑冲击损失 Loss_BI_run_t
+            abbr=np.full((env['num_bank'], 1), ""),  # 缩写 abbr
+            name=np.full((env['num_bank'], 1), ""),  # 全名 name
+            A_all=np.zeros((env['num_bank'], 1)),  # 总资产 A_all: $A_all=A_BI+A_exBI$
+            A_BI_all=np.zeros((env['num_bank'], 1)),  # 银行间资产加总 A_BI_all
+            A_exBI=np.zeros((env['num_bank'], 1)),  # 非银行间资产 A_exBI: $A_exBI=A_P+A_Q+A_R+A_other$
+            A_P=np.zeros((env['num_bank'], 1)),  # 银行贷款给生产部门之资产（非流动性资产） A_P
+            A_Q=np.zeros((env['num_bank'], 1)),  # 银行持有超额准备金（流动性资产） A_Q
+            A_R=np.zeros((env['num_bank'], 1)),  # 银行持有法定准备金（非流动性资产） A_R
+            A_other=np.zeros((env['num_bank'], 1)),  # 银行持有的其它资产（非流动性资产） A_other
+            Z_all=np.zeros((env['num_bank'], 1)),  # 总负债 Z_all: $Z_total=Z_BI+Z_exBI$
+            Z_BI_all=np.zeros((env['num_bank'], 1)),  # 银行间负债加总 Z_BI_all
+            Z_exBI=np.zeros((env['num_bank'], 1)),  # 非银行间负债 Z_exBI: $Z_exBI=Z_D+Z_other$
+            Z_D=np.zeros((env['num_bank'], 1)),  # 银行获得居民部门存款（非流动性负债） Z_D
+            Z_other=np.zeros((env['num_bank'], 1)),  # 银行持有的其他负债（非流动性负债） Z_other
+            E_all=np.zeros((env['num_bank'], 1)),  # 所有者权益 E_all
+            T_all=np.zeros((env['num_bank'], 1)),  # 总贷款流出 Lo_all: $Lo_all=Lo_BI_all+Lo_exBI$
+            Lo_all=np.zeros((env['num_bank'], 1)),  # 银行间贷款流出 Lo_BI_all
+            Lo_BI_all=np.zeros((env['num_bank'], 1)),  # 非银行间贷款流出 Lo_exBI: $Lo_exBI=Lo_P$
+            Lo_exBI=np.zeros((env['num_bank'], 1)),  # 银行贷款流出给生产部门 Lo_P
+            Lo_P=np.zeros((env['num_bank'], 1)),  # 总交易流量 Transfer_all: $Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
+            Li_all=np.zeros((env['num_bank'], 1)),  # 总贷款流入 Li_all: $Li_all=Li_BI_all+Li_exBI$
+            Li_BI_all=np.zeros((env['num_bank'], 1)),  # 银行间贷款流入 Li_BI_all
+            Li_exBI=np.zeros((env['num_bank'], 1)),  # 非银行间贷款流入 Li_exBI: $Li_exBI=Li_D$
+            Li_P=np.zeros((env['num_bank'], 1)),  # 银行贷款流入从生产部门 Li_P
+            Bi_all=np.zeros((env['num_bank'], 1)),  # 总借款流入 Bi_all: $Bi_all=Bi_BI_all+Bi_exBI$
+            Bi_BI_all=np.zeros((env['num_bank'], 1)),  # 银行间借款流入 Bi_BI_all
+            Bi_exBI=np.zeros((env['num_bank'], 1)),  # 非银行间借款流入 Bi_exBI: $Bi_exBI=Bi_D$
+            Bi_D=np.zeros((env['num_bank'], 1)),  # 银行借款流入从居民部门 Bi_D
+            Bo_all=np.zeros((env['num_bank'], 1)),  # 总借款流出 Bo_all: $Bo_all=Bo_BI_all+Bo_exBI$
+            Bo_BI_all=np.zeros((env['num_bank'], 1)),  # 银行间借款流出 Bo_BI_all
+            Bo_exBI=np.zeros((env['num_bank'], 1)),  # 非银行间借款流出 Bo_exBI: $Bo_exBI=Bo_P$
+            Bo_D=np.zeros((env['num_bank'], 1)),  # 银行借款流出给居民部门 Bo_D
+            Shock_t=np.zeros((env['num_bank'], 1)),  # 总冲击目标 Shock_t $Shock_t = Shock_exBI_t+Shock_BI_t$
+            Shock_s=np.zeros((env['num_bank'], 1)),  # 总冲击源头 Shock_s $Shock_s = Shock_exBI_s+Shock_BI_s$
+            Shock_def_t=np.zeros((env['num_bank'], 1)),  # 总违约损失冲击目标 Shock_def_t $Shock_def_t = Shock_exBI_def_t+Shock_BI_def_t$
+            Shock_def_s=np.zeros((env['num_bank'], 1)),  # 总违约损失冲击源头 Shock_def_s $Shock_def_s = Shock_exBI_def_s+Shock_BI_def_s$
+            Shock_run_t=np.zeros((env['num_bank'], 1)),  # 总挤兑流动冲击目标 Shock_run_t $Shock_run_t = Shock_exBI_run_t+Shock_BI_run_t$
+            Shock_run_s=np.zeros((env['num_bank'], 1)),  # 总挤兑流动冲击源头 Shock_run_s $Shock_run_s = Shock_exBI_run_s+Shock_BI_run_s$
+            Shock_exBI_t=np.zeros((env['num_bank'], 1)),  # 非银行间借贷冲击目标 Shock_exBI_t $Shock_exBI_t = Shock_P_def_t+Shock_D_run_t$
+            Shock_exBI_s=np.zeros((env['num_bank'], 1)),  # 非银行间借贷冲击源头 Shock_exBI_s $Shock_exBI_s = Shock_P_run_s+Shock_D_def_s$
+            Shock_P_run_s=np.zeros((env['num_bank'], 1)),  # 银行之厂商贷款挤兑流动冲击源头 Shock_P_run_s
+            Shock_P_def_t=np.zeros((env['num_bank'], 1)),  # 银行之厂商贷款违约损失冲击目标 Shock_P_def_t
+            Shock_D_def_s=np.zeros((env['num_bank'], 1)),  # 银行存款违约损失冲击源头 Shock_D_def_s
+            Shock_D_run_t=np.zeros((env['num_bank'], 1)),  # 银行存款挤兑流动冲击目标 Shock_D_run_t
+            Shock_B=np.zeros((env['num_bank'], 1)),  # 银行内资产负债冲击 Shock_B $Shock_B=Shock_B_A+Shock_B_Z$
+            Shock_B_A=np.zeros((env['num_bank'], 1)),  # 银行内资产负债之银行间资产端冲击 Shock_B_A
+            Shock_B_Z=np.zeros((env['num_bank'], 1)),  # 银行内资产负债之银行间负债端冲击 Shock_B_Z
+            Shock_BI_s=np.zeros((env['num_bank'], 1)),  # 银行间冲击源头 Shock_BI_s $Shock_BI_s=Shock_BI_def_s+Shock_BI_run_s$
+            Shock_BI_t=np.zeros((env['num_bank'], 1)),  # 银行间冲击目标 Shock_BI_t $Shock_BI_t=Shock_BI_def_t+Shock_BI_run_t$
+            Shock_BI_def_s=np.zeros((env['num_bank'], 1)),  # 银行间违约损失冲击源头 Shock_BI_def_s
+            Shock_BI_def_t=np.zeros((env['num_bank'], 1)),  # 银行间违约损失冲击目标 Shock_BI_def_t
+            Shock_BI_run_s=np.zeros((env['num_bank'], 1)),  # 银行间挤兑流动冲击源头 Shock_BI_run_s $Shock_BI_run_s=Shock_BI_run_ilq_s+Shock_BI_run_br_s$
+            Shock_BI_run_t=np.zeros((env['num_bank'], 1)),  # 银行间挤兑流动冲击目标 Shock_BI_run_t $Shock_BI_run_t+Shock_BI_run_ilq_t+Shock_BI_run_br_t$
+            Shock_BI_run_ilq_s=np.zeros((env['num_bank'], 1)),  # 银行间流动性短缺挤兑流动冲击源头 Shock_BI_run_ilq_s
+            Shock_BI_run_ilq_t=np.zeros((env['num_bank'], 1)),  # 银行间流动性短缺挤兑流动冲击目标 Shock_BI_run_ilq_t
+            Shock_BI_run_br_s=np.zeros((env['num_bank'], 1)),  # 银行间倒闭挤兑流动冲击源头 Shock_BI_run_br_s
+            Shock_BI_run_br_t=np.zeros((env['num_bank'], 1)),  # 银行间倒闭挤兑流动冲击目标 Shock_BI_run_br_t
+            Loss_BI=np.zeros((env['num_bank'], 1)),  # 银行间市场冲击损失 Loss_BI
+            Loss_BI_def_t=np.zeros((env['num_bank'], 1)),  # 银行间资产负债违约冲击损失 Loss_BI_def_t
+            Loss_BI_run_t=np.zeros((env['num_bank'], 1)),  # 银行间负债流动性挤兑冲击损失 Loss_BI_run_t
             # FIXME 以下带注释部分，用于测试几种不同的形状之影响
             # on=np.full(env['num_bank'], True),  # 示性向量之于银行是否存在 isOn
             # off=np.full(env['num_bank'], False),  # 示性向量之于银行是否已退出不存在 isOff
@@ -106,24 +107,23 @@ class ModelInitVariable:
             # nLiP=np.full(env['num_bank'], False),  # 示性向量之于银行是否需要收回厂商贷款 isNeededLiP
             # eLiP=np.full(env['num_bank'], True),  # 示性向量之于银行是否可以收回厂商贷款 isEnabledLiP
             # isAllocatedShock=np.full((env['num_bank'], 1), False),  # 示性向量之于银行是否已经分配传染冲击 isAllocatedShock
-            on=np.full((env['num_bank'],1), True),  # 示性向量之于银行是否存在 isOn
-            off=np.full((env['num_bank'],1), False),  # 示性向量之于银行是否已退出不存在 isOff
-            hel=np.full((env['num_bank'],1), True),  # 示性向量之于银行是否健康 isHealthy
-            isv=np.full((env['num_bank'],1), False),  # 示性向量之于银行是否资不抵债 isInsolvent
-            ilq=np.full((env['num_bank'],1), False),  # 示性向量之于银行是否流动性短缺 isIlliquity
-            br=np.full((env['num_bank'],1), False),  # 示性向量之于银行是否破产 isBankrupt
-            nBoBI=np.full((env['num_bank'],1), False),  # 示性向量之于银行是否需要偿还借款 isNeededBoBI
-            eBoBI=np.full((env['num_bank'],1), True),  # 示性向量之于银行是否可以偿还借款 isEnabledBoBI
-            nBoD=np.full((env['num_bank'],1), False),  # 示性向量之于银行是否需要偿还居民部门存款 isNeededBoD
-            eBoD=np.full((env['num_bank'],1), True),  # 示性向量之于银行是否可以偿还居民部门存款 isEnabledBoD
-            nLiP=np.full((env['num_bank'],1), False),  # 示性向量之于银行是否需要收回厂商贷款 isNeededLiP
-            eLiP=np.full((env['num_bank'],1), True),  # 示性向量之于银行是否可以收回厂商贷款 isEnabledLiP
+            on=np.full((env['num_bank'], 1), True),  # 示性向量之于银行是否存在 isOn
+            off=np.full((env['num_bank'], 1), False),  # 示性向量之于银行是否已退出不存在 isOff
+            hel=np.full((env['num_bank'], 1), True),  # 示性向量之于银行是否健康 isHealthy
+            isv=np.full((env['num_bank'], 1), False),  # 示性向量之于银行是否资不抵债 isInsolvent
+            ilq=np.full((env['num_bank'], 1), False),  # 示性向量之于银行是否流动性短缺 isIlliquity
+            br=np.full((env['num_bank'], 1), False),  # 示性向量之于银行是否破产 isBankrupt
+            nBoBI=np.full((env['num_bank'], 1), False),  # 示性向量之于银行是否需要偿还借款 isNeededBoBI
+            eBoBI=np.full((env['num_bank'], 1), True),  # 示性向量之于银行是否可以偿还借款 isEnabledBoBI
+            nBoD=np.full((env['num_bank'], 1), False),  # 示性向量之于银行是否需要偿还居民部门存款 isNeededBoD
+            eBoD=np.full((env['num_bank'], 1), True),  # 示性向量之于银行是否可以偿还居民部门存款 isEnabledBoD
+            nLiP=np.full((env['num_bank'], 1), False),  # 示性向量之于银行是否需要收回厂商贷款 isNeededLiP
+            eLiP=np.full((env['num_bank'], 1), True),  # 示性向量之于银行是否可以收回厂商贷款 isEnabledLiP
             isAllocatedShock=np.full((env['num_bank'], 1), False),  # 示性向量之于银行是否已经分配传染冲击 isAllocatedShock
             listOfExist=np.full(env['num_bank'], list),  # 列表之于存在的银行编号 listOfExist
             listOfInsolvent=np.full(env['num_bank'], list),  # 列表之于资不抵债的银行编号 listOfInsolvent
             listOfIlliquity=np.full(env['num_bank'], list),  # 列表之于流动性短缺的银行编号 listOfIlliquity
             listOfBankrupt=np.full(env['num_bank'], list),  # 列表之于破产的银行编号 listOfBankrupt
-
 
             # id=np.arange(1, env['num_bank'], step=1),  # 编号 id
             # abbr=np.full(env['num_bank'], ""),  # 缩写 abbr
@@ -206,7 +206,7 @@ class ModelInitVariable:
         )
 
         interbank: BankInterbank = BankInterbank(
-            id=np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])),  # 编号
+            id=np.array(np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])),dtype=TypeIds),  # 编号
             A_BI=np.zeros((env['num_bank'], env['num_bank'])),  # 银行间资产邻接矩阵 A_BI
             Z_BI=np.zeros((env['num_bank'], env['num_bank'])),  # 银行间负债邻接矩阵 Z_BI
             Lo_BI=np.zeros((env['num_bank'], env['num_bank'])),  # 银行间贷款流出邻接矩阵 Lo_BI
@@ -255,7 +255,6 @@ class ModelInitVariable:
         bank, interbank = cls.set_default_values_to_B_variables
         pass
 
-
     @classmethod
     def set_manually_values_to_Bank_variables(cls):
         """手动设置以初始化银行变量"""  # FIXME 须提取手动初始化方式为单独的方式
@@ -263,8 +262,6 @@ class ModelInitVariable:
 
         bank.__dict__.update(bankCommercial_dict)
         interbank.__dict__.update(bankInterbank_dict)
-
-
 
         # ## 初始化商业银行群
         # bank: BankCommercial = BankCommercial(
@@ -385,7 +382,6 @@ class ModelInitVariable:
         return bank, interbank
         pass  # function
 
-
     # @classmethod
     def init_B_and_BI(self, init_method: str):
         """
@@ -404,7 +400,7 @@ class ModelInitVariable:
         Args:
             init_method ():
 
-        Returns:
+        Returns: A, A_data
 
         """
 
@@ -431,11 +427,12 @@ class ModelInitVariable:
         )
 
         # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组
-        A_data = ModelCollector.collector(A, stateOfProcess=env['state_of_process'])
+        A_data = AgentDataCollection([], [])
+        A_data = ModelCollector.collector(A, A_data, stateOfProcess=env['state_of_process'])
 
         ## 更新各银行之变量，在第一回合初始时
-        b = (BB.on | BB.off).reshape(-1,1)  # 临时设置BB示性变量
-        ib = ((BB.on | BB.off).reshape(-1,1) & (BB.on | BB.off).reshape(1,-1))  # 临时设置BI示性变量
+        b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置BB示性变量
+        ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置BI示性变量
         Shock.update_B_Shock(BB, BI, b, ib, byWay="all")  # 更新各银行之所有冲击变量，在第一回合开始时
         Shock.update_B_Shock(BB, BI, b, ib, byWay="all")  # 更新各银行之所有冲击变量，在第一回合开始时
         BalanceSheet.update_B_balanceSheet(BB, BI, b, ib, byWay="all")  # 更新各银行之资产负债表变量
@@ -448,6 +445,5 @@ class ModelInitVariable:
 
         return A, A_data
         pass  # function
-
 
     pass  # class

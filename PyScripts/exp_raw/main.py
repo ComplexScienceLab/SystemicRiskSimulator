@@ -6,10 +6,19 @@
 # #状态/开发
 ##########################################
 ## 导入相关包
+
+## 以下部分只能被启用于：当没有在项目根路径设置`.env`文件之PYTHONPATH环境时。
+# import sys,os
+# os.getcwd()
+# root_path = os.getcwd()
+# sys.path.append(os.path.join(root_path))
+####
+
 from PySystemicRiskLab import os, np, pd, logging
 
 ## 导入相关文件及其内容
 from PySystemicRiskLab.core.controller.fun_agentModel import AgentsModel
+from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum, StateOfProcessEnum
 from PySystemicRiskLab.core.model.fun_model_skeleton import ModelSkeleton
 from PySystemicRiskLab.core.model.fun_process_skeleton import ProcessSkeleton
 from PySystemicRiskLab.tools.fun_tools import Tools
@@ -95,7 +104,7 @@ if __name__ == "__main__":
         env['is_model'] = True
         env['is_experiment'] = True
         env['state_of_schedule'] = StateOfScheduleEnum.indexing
-        env['state_of_process'] = StateOfScheduleEnum.idle
+        env['state_of_process'] = StateOfProcessEnum.initializing
 
         ## 调度：生成位置索引
         if env['state_of_schedule'] == StateOfScheduleEnum.indexing:
@@ -104,7 +113,7 @@ if __name__ == "__main__":
 
         logging.info("实验" + str(env['id_experiment']) + "/" + str(len(env['list_combinationOfPara'])) + "开始：\n")
 
-        logging.info("相关实验参数：" + str(para)+"\n")
+        logging.info("相关实验参数：" + str(para) + "\n")
 
         ## 进行实验
 
