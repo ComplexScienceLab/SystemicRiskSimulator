@@ -16,7 +16,7 @@ from PySystemicRiskLab.core.controller.model_runner import ModelRunner
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_component import ProcessComponent
-from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum, StateOfProcessEnum
 
 pass  # end import
 
@@ -51,11 +51,11 @@ class ProcessSkeleton:
 
             ## 回合数变动
             if (env['loaded_index_stage'] != 1):
-                logging.debug("继续回合：%s\n", env['tau'])
+                logging.debug("\n继续回合：%s\n", env['tau'])
                 pass
             else:
                 env['tau'] += 1  # 回合累加一
-                logging.debug("开始回合：%s\n", env['tau'])
+                logging.debug("\n开始回合：%s\n", env['tau'])
                 pass
 
             ## 设置临时变量
@@ -93,7 +93,7 @@ class ProcessSkeleton:
             if env['state_of_schedule'] == StateOfScheduleEnum.saving:
                 env['saved_index_process'], env['saved_index_stage'], env['loaded_index_process'], env['loaded_index_stage'], env['state_of_schedule'] = ModelScheduler.scheduler_saving(env['index_process'], env['index_stage'], env['is_process'], env['index_of_schedule_position'])  # 调度存储
                 pass
-            if (env['state_of_schedule'] == StateOfScheduleEnum.collecting) and (env['state_of_process'] == StateOfScheduleEnum.running):
+            if (env['state_of_schedule'] == StateOfScheduleEnum.collecting) and (env['state_of_process'] == StateOfProcessEnum.running):
                 env['state_of_schedule'] = ModelScheduler.scheduler_collecting(A, A_data)
                 # logging.debug("调度状态 = %s", env['state_of_schedule'])
                 pass

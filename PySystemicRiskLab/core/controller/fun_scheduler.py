@@ -37,21 +37,21 @@ class ModelScheduler:
 
         Args:
             env (dict): 环境参数
-            A (SystemicRiskAgent): Agent
-            A_data (AgentDataCollection):
+            A (SystemicRiskAgent): 系统性风险主体众
+            A_data (AgentDataCollection): 系统性风险主体众数据集
 
         Returns:
 
         """
 
         if env['state_of_schedule'] == StateOfScheduleEnum.loading:
-            env['loaded_index_process'], env['loaded_index_stage'], env['state_of_schedule'] = cls.scheduler_loading(env['index_process'], env['saved_index_process'], env['state_of_schedule'])  # 读取
+            env['state_of_schedule'] = cls.scheduler_loading(env['index_process'], env['index_stage'], env['loaded_index_process'], env['saved_index_process'], env['state_of_schedule'], env['is_process'])  # 读取
             pass
         if env['state_of_schedule'] == StateOfScheduleEnum.stepping:
             env['step'], env['is_step'], env['state_of_schedule'] = cls.scheduler_stepping(env['step'], env['step_size'])  # 步进
             pass
         if env['state_of_schedule'] == StateOfScheduleEnum.saving:
-            env['saved_index_process'], env['saved_index_stage'], env['state_of_schedule'] = cls.scheduler_saving(env['index_process'], env['index_stage'], env['is_process'])  # 存储
+            env['saved_index_process'], env['saved_index_stage'], env['loaded_index_process'], env['loaded_index_stage'], env['state_of_schedule'] = cls.scheduler_saving(env['index_process'], env['index_stage'], env['is_process'], env['index_of_schedule_position'])  # 存储
             pass
         if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
             env['state_of_schedule'] = cls.scheduler_collecting(A, A_data)
@@ -90,7 +90,7 @@ class ModelScheduler:
         pass  # function
 
     @classmethod
-    def scheduler_loading(cls, index_process: int, index_stage: int, loaded_index_process: int, loaded_index_stage: int, state_of_schedule: StateOfScheduleEnum, index_of_schedule_position: tuple):
+    def scheduler_loading(cls, index_process: int, index_stage: int, loaded_index_process: int, loaded_index_stage: int, state_of_schedule: StateOfScheduleEnum, is_process: bool):
         """
         函数：调度读取
 
@@ -100,7 +100,7 @@ class ModelScheduler:
             loaded_index_process (int): 读取的过程之位置
             loaded_index_stage (int): 读取的阶段之位置
             state_of_schedule (Symbol): 调度状态
-            index_of_schedule_position (tuple): 调度位置索引列表``env['index_of_schedule_position']``
+            is_process (bool): 是否继续过程
 
 
         Returns: newStateOfSchedule
@@ -108,15 +108,29 @@ class ModelScheduler:
         """
         logging.debug("调度读取中……")
         newStateOfSchedule = state_of_schedule
-        if (index_process == loaded_index_process) & (index_stage == loaded_index_stage):  # 如果待读取过程和阶段是应该读取的过程和阶段，则继续判断，否则跳到下一阶段尝试读取:
-            if not ((cls.get_process_index(index_process, env['index_of_schedule_position']) == cls.get_model_length(env['index_of_schedule_position'])) and (cls.get_stage_index(index_process, index_stage, env['index_of_schedule_position']) == cls.get_process_length(index_process, env['index_of_schedule_position']))) and (
-                    env['is_process'] == True):  # 如果待读取过程不是该模型之最后一个过程之最后一个阶段，且继续运行过程，则继续读取，否则说明程序之模型部分已经运行到终点了，此时应停止读取，然后改状态为idle。
+        # 如果待读取过程和阶段是应该读取的过程和阶段，则继续判断，否则跳到下一阶段尝试读取
+        if (index_process == loaded_index_process) & (index_stage == loaded_index_stage):
+            pass  # if
+            # 如果待读取过程不是该模型之最后一个过程之最后一个阶段，且继续运行过程，则读取成功。
+            if not ((cls.get_process_index(index_process, env['index_of_schedule_position']) == cls.get_model_length(env['index_of_schedule_position'])) and (cls.get_stage_index(index_process, index_stage, env['index_of_schedule_position']) == cls.get_process_length(index_process, env['index_of_schedule_position']))) and (is_process == True):
                 newStateOfSchedule = StateOfScheduleEnum.stepping  # 切换调度运作状态为步进
                 logging.debug("调度读取成功。切换调度运作状态为%s。", newStateOfSchedule)
-            else:
+            # 如果待读取过程是该模型之最后一个过程之最后一个阶段，且不继续运行过程，则说明程序之模型部分已经运行到终点了，此时应停止读取，然后改状态为idle。
+            elif (cls.get_process_index(index_process, env['index_of_schedule_position']) == cls.get_model_length(env['index_of_schedule_position'])) and (cls.get_stage_index(index_process, index_stage, env['index_of_schedule_position']) == cls.get_process_length(index_process, env['index_of_schedule_position'])) and (is_process == False):
                 newStateOfSchedule = StateOfScheduleEnum.idle  # 切换调度运作状态为待命
                 pass
-            pass
+
+            # 如果所处的过程未结束，则读取成功：
+            if is_process:
+                newStateOfSchedule = StateOfScheduleEnum.stepping  # 切换调度运作状态为步进
+                logging.debug("调度读取成功。切换调度运作状态为%s。", newStateOfSchedule)
+                pass  # if
+            # 如果所处的过程结束，则读取完毕，暨程序之模型部分已经运行到终点了
+            else:
+                newStateOfSchedule = StateOfScheduleEnum.idle  # 切换调度运作状态为待命
+                pass  # else
+            pass  # if
+
         return newStateOfSchedule
         pass  # function
 
@@ -162,30 +176,35 @@ class ModelScheduler:
 
         """
 
-        saved_index_process = cls.get_process_index(index_process, env['index_of_schedule_position'])
-        saved_index_stage = cls.get_stage_index(index_process, index_stage, env['index_of_schedule_position'])
+        saved_index_process = cls.get_process_index(index_process, index_of_schedule_position)
+        saved_index_stage = cls.get_stage_index(index_process, index_stage, index_of_schedule_position)
         logging.debug("存储的过程和阶段：%s，%s。", saved_index_process, saved_index_stage)
 
         ## 计算索引之于待读取的下一阶段
-        loaded_index_process = None
-        loaded_index_stage = None
-        if is_process:  # 如果所处的过程未结束，则继续判断，否则读取下一过程之初始阶段:
-            if cls.get_stage_index(index_process, index_stage, env['index_of_schedule_position']) < cls.get_stage_index(index_process, -1, env['index_of_schedule_position']):  # 如果当前阶段不是其所处过程之最后一个阶段，则读取所处过程之下一阶段，否则读取所处过程之第一个阶段:
-                loaded_index_process = cls.get_process_index(index_process, env['index_of_schedule_position'])
-                loaded_index_stage = cls.get_stage_index(index_process, index_stage + 1, env['index_of_schedule_position'])
+        if is_process:  # 如果所处的过程未结束，则继续判断：
+            # 如果当前阶段不是其所处过程之最后一个阶段，则读取所处过程之下一阶段，
+            if cls.get_stage_index(index_process, index_stage, index_of_schedule_position) < cls.get_stage_index(index_process, -1, index_of_schedule_position):
+                loaded_index_process = cls.get_process_index(index_process, index_of_schedule_position)
+                loaded_index_stage = cls.get_stage_index(index_process, index_stage + 1, index_of_schedule_position)
+                pass  # if
+            # 否则如果当前阶段是其所处过程之最后一个阶段，则读取所处过程之第一个阶段。
             else:
-                loaded_index_process = cls.get_process_index(index_process, env['index_of_schedule_position'])
-                loaded_index_stage = cls.get_stage_index(index_process, 1, env['index_of_schedule_position'])
-                pass  # if:
+                loaded_index_process = cls.get_process_index(index_process, index_of_schedule_position)
+                loaded_index_stage = cls.get_stage_index(index_process, 1, index_of_schedule_position)
+                pass  # else
         else:  # 如果所处的过程结束，则继续判断
-            if cls.get_process_index(index_process, env['index_of_schedule_position']) < cls.get_model_length(env['index_of_schedule_position']):  # 如果当前过程不是该模型之最后一个过程，则读取当前过程之下一个过程之第一个阶段，否则只读取当前存储的阶段，暨程序之模型部分已经运行到终点了。:
-                loaded_index_process = cls.get_process_index(index_process + 1, env['index_of_schedule_position'])
-                loaded_index_stage = cls.get_stage_index(index_process + 1, 1, env['index_of_schedule_position'])
+            # 如果当前过程不是该模型之最后一个过程，则读取当前过程之下一个过程之第一个阶段，
+            if cls.get_process_index(index_process, index_of_schedule_position) < cls.get_model_length(index_of_schedule_position):
+                loaded_index_process = cls.get_process_index(index_process + 1, index_of_schedule_position)
+                loaded_index_stage = cls.get_stage_index(index_process + 1, 1, index_of_schedule_position)
+                pass  # if
+            # 否则如果当前过程是该模型之最后一个过程，则只读取当前存储的阶段，暨程序之模型部分已经运行到终点了。
             else:
                 loaded_index_process = saved_index_process
                 loaded_index_stage = saved_index_stage
-                pass  # if:
-            pass  # if:
+                pass  # else
+            pass  # else
+
         logging.debug("下次读取的过程和阶段：%s，%s。", loaded_index_process, loaded_index_stage)
 
         state_of_schedule = StateOfScheduleEnum.collecting  # 切换调度运作状态为收集数据
@@ -209,7 +228,7 @@ class ModelScheduler:
         """
         logging.debug("收集数据：")
         env['data_id'] += 1  # 累加数据帧ID号
-        ModelCollector.collector(A, A_data, env['state_of_schedule'])  # 收集数据
+        ModelCollector.collector(A, A_data, env['state_of_process'], env)  # 收集数据
         state_of_schedule = StateOfScheduleEnum.loading  # 切换调度运作状态为读取
         logging.debug("完成收集数据，切换调度运作状态为%s", state_of_schedule)
         return state_of_schedule
@@ -281,7 +300,7 @@ class ModelScheduler:
     @classmethod
     def is_process(cls, A: SystemicRiskAgent, BB_isv_t1: TypeState, BB_Shock_t_t1: TypeMoney, is_process: bool, stageFunctionName: str, process: ProcessComponent):
         """
-        判断是否继续运行过程 # HACK 或将废弃
+        判断是否继续运行过程
 
         Args:
             A (SystemicRiskAgent): Agent群变量
@@ -353,7 +372,7 @@ class ModelScheduler:
             env['is_loop'] = True
         else:
             env['is_loop'] = False
-            logging.debug("跳出过程%s之循环。", env['process_name'])
+            logging.debug("跳出过程%s之循环。\n", env['process_name'])
             pass
         pass  # function
 

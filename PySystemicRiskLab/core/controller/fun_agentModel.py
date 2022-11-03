@@ -11,7 +11,7 @@ from PySystemicRiskLab.core.define.define_environment_variables import env
 from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.controller.model_initVariable import ModelInitVariable
-from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum, StateOfProcessEnum
 from PySystemicRiskLab.core.define.define_component import ModelComponent
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.controller.model_runner import ModelRunner
@@ -51,7 +51,7 @@ class AgentsModel:
         A, A_data = cls.init_systemicRiskAgent(env)
 
         num_step_of_model = 0
-        env['state_of_process'] = StateOfScheduleEnum.running
+        env['state_of_process'] = StateOfProcessEnum.running
         # logging.debug("过程之状态 = %s", env['state_of_process'])
         while (env['is_model'] == True and num_step_of_model <= env['max_num_steps_of_model']):
             num_step_of_model += 1
@@ -63,8 +63,8 @@ class AgentsModel:
             pass
 
         ## 导出数据之于已经收集的
-        env['state_of_process'] = StateOfScheduleEnum.finishing
-        ModelCollector.collector(A, A_data, para=para)
+        env['state_of_process'] = StateOfProcessEnum.finishing
+        ModelCollector.collector(A, A_data, env['state_of_process'], env, para)
 
         pass  # function
 

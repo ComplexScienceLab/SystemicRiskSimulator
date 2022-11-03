@@ -215,7 +215,7 @@ class BankInterbank(BaseInterAgents):
     """
     银行间邻接矩阵复合类
     """
-    id = np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank']))  # 编号
+    id: TypeIds = np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank']))  # 编号
     A_BI = np.zeros((env['num_bank'], env['num_bank']))  # 银行间资产邻接矩阵 A_BI
     Z_BI = np.zeros((env['num_bank'], env['num_bank']))  # 银行间负债邻接矩阵 Z_BI
     Lo_BI = np.zeros((env['num_bank'], env['num_bank']))  # 银行间贷款流出邻接矩阵 Lo_BI

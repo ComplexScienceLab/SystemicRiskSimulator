@@ -10,11 +10,12 @@ from PySystemicRiskLab.core.define.define_environment_variables import env
 from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.controller.model_initVariable import ModelInitVariable
-from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum, StateOfProcessEnum
 from PySystemicRiskLab.core.define.define_component import ModelComponent
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.controller.model_runner import ModelRunner
 from PySystemicRiskLab.core.controller.fun_scheduler import ModelCollector
+
 
 class ExperimentManager:
     def makesim(model: ModelComponent, para: dict = para, env: dict = env):
@@ -25,7 +26,7 @@ class ExperimentManager:
 
         ##BUG 测试具体模型。
         maxnum = 0
-        env['state_of_process'] = StateOfScheduleEnum.running
+        env['state_of_process'] = StateOfProcessEnum.running
         while env['is_model'] == True & maxnum <= 20:  # HACK可能需要设置最大次数maxnum
             maxnum += 1
             RunModel.systemicRiskAgent_step(A, M, para, env, model, A_data)
@@ -43,7 +44,7 @@ class ExperimentManager:
         #     pass # while
 
         ## 导出数据之于已经收集的
-        env['state_of_process'] = StateOfScheduleEnum.finishing
+        env['state_of_process'] = StateOfProcessEnum.finishing
         ModelCollector.collector(A, A_data, state_of_process=env['state_of_process'], para=para)
 
         pass  # functions
