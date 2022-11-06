@@ -258,14 +258,14 @@ set_interbankVariables = dict(
     isv=np.full((env['num_bank'], env['num_bank']), False),  # 信息邻接矩阵之于银行间资不抵债的 isInsolvent
     ilq=np.full((env['num_bank'], env['num_bank']), False),  # 信息邻接矩阵之于银行间流动性短缺的 isIlliquity
     br=np.full((env['num_bank'], env['num_bank']), False),  # 信息邻接矩阵之于银行间破产的 isBankrupt
-    cre=np.full(env['num_bank'], list),  # 信息列表之于各银行之债权方银行编号 listOfCreditors
-    deb=np.full(env['num_bank'], list),  # 信息列表之于各银行之债务方银行编号 listOfDebtors
-    cre_isv=np.full(env['num_bank'], list),  # 信息列表之于资不抵债的银行之债权方银行编号 listOfCreditorsInInsolvent
-    deb_isv=np.full(env['num_bank'], list),  # 信息列表之于资不抵债的银行之债务方银行编号 listOfDebtorsInInsolvent
-    cre_ilq=np.full(env['num_bank'], list),  # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquity
-    deb_ilq=np.full(env['num_bank'], list),  # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquity
-    cre_br=np.full(env['num_bank'], list),  # 信息列表之于破产的银行之债权方银行编号 listOfCreditorsInBankrupt
-    deb_br=np.full(env['num_bank'], list),  # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
+    cre=np.array([np.array([], dtype=list) for _ in range(env['num_bank'])]),  # 信息列表之于各银行之债权方银行编号 listOfCreditors
+    deb=np.array([np.array([], dtype=list) for _ in range(env['num_bank'])]),  # 信息列表之于各银行之债务方银行编号 listOfDebtors
+    cre_isv=np.array([np.array([], dtype=list) for _ in range(env['num_bank'])]),  # 信息列表之于资不抵债的银行之债权方银行编号 listOfCreditorsInInsolvent
+    deb_isv=np.array([np.array([], dtype=list) for _ in range(env['num_bank'])]),  # 信息列表之于资不抵债的银行之债务方银行编号 listOfDebtorsInInsolvent
+    cre_ilq=np.array([np.array([], dtype=list) for _ in range(env['num_bank'])]),  # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquity
+    deb_ilq=np.array([np.array([], dtype=list) for _ in range(env['num_bank'])]),  # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquity
+    cre_br=np.array([np.array([], dtype=list) for _ in range(env['num_bank'])]),  # 信息列表之于破产的银行之债权方银行编号 listOfCreditorsInBankrupt
+    deb_br=np.array([np.array([], dtype=list) for _ in range(env['num_bank'])]),  # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
 
     ###########################
 )

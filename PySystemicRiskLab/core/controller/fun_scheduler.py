@@ -337,7 +337,7 @@ class ModelScheduler:
                 pass  # if:
         else:
             is_process = True
-            logging.info("继续过程：", env['process_name'], "。")
+            logging.info("继续过程：%s。", env['process_name'])
             pass  # if:
 
         return is_process

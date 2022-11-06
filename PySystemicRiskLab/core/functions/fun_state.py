@@ -256,8 +256,8 @@ class BankState:
     def calc_isOff_from_isBankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
         """算示性向量之于银行退出的，来自破产的。"""
         cls.calc_isOff(bank, interbank)
-        interbank.cre_br = []
-        interbank.deb_br = []
+        interbank.cre_br = np.array([])
+        interbank.deb_br = np.array([])
         pass
 
     @classmethod
@@ -340,7 +340,7 @@ class BankState:
             isExposure = ((interbank.Z_BI > 0.0) & isState)
         else:
             pass
-        listOfRelationInStateOfBanks = [None for i in range(env['num_bank'])]
+        listOfRelationInStateOfBanks = np.array([np.array(None) for i in range(env['num_bank'])])
         for i in range(env['num_bank']):
             listOfRelationInStateOfBanks[i] = np.where(isExposure[i, :])[0]  # 获取对应状态下的债权或者债务关系的银行列表
             pass
