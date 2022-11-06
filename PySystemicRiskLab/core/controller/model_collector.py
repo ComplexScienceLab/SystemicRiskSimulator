@@ -182,16 +182,25 @@ class ModelCollector:
                 # if type(v2)==TypeIds:
                 #     print("这个是id类型！")
                 if (v2.dtype == np.float_ or v2.dtype == np.bool_ or v2.dtype == np.int16):
-                    BI_data[fieldNames[i2]] = v2.reshape((numRow * numCol, 1))  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
+                    BI_data[fieldNames[i2]] = v2.flatten()  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
                 elif v2.dtype == list:
-                    ## 转换信息列表为矩阵形式
+                    ## 转换信息列表为矩阵形式 # HACK能否用现成的功能函数代替？
                     m2 = np.full((numRow, numCol), False)
+                    if v2 is []:
+                        continue
                     for (i3, v3) in enumerate(v2):
+                        if v3 is []:
+                            m2[i3, :] = False
+                            continue
                         for i4 in v3:
-                            m2[i3, i4] = True
+                            if i4 in v3:
+                                m2[i3, i4] = True
+                                pass
+                            else:
+                                m2[i3, i4] = False
                             pass
                         pass
-                    BI_data[fieldNames[i2]] = [m2.T]  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
+                    BI_data[fieldNames[i2]] = m2.T.flatten  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
                     pass  # if
                 pass  # for
                 BI_data_export = pd.concat([BI_data_export, BI_data])
