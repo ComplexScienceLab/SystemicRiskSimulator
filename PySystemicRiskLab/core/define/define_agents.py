@@ -293,13 +293,13 @@ class SystemicRiskAgent:
     """
     综合SystemicRiskAgents类型
     """
-    id: int  # 编号（必备的）
+    id_agent: int  # 编号（必备的）
     BB: BankCommercial  # 商业银行群
     BI: BankInterbank  # 银行间邻接矩阵
 
     # @classmethod
-    def __init__(self, id, BB: BankCommercial, BI: BankInterbank):
-        self.id = id
+    def __init__(self, id_agent, BB: BankCommercial, BI: BankInterbank):
+        self.id_agent = id_agent
         self.BB = BB
         self.BI = BI
         pass

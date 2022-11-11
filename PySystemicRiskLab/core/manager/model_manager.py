@@ -14,7 +14,7 @@ from SystemicRisk.core import ModelComponent, ProcessComponent, StageComponent, 
 
 class ModelManager:
     """
-    模型管理器
+    模型管理机
     """
     modelComponent: ModelComponent
     processComponent: ProcessComponent

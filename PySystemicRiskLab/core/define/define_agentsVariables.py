@@ -18,7 +18,7 @@ bankInterbank_dict = set_interbankVariables  # 别名
 
 #HACK 以下无用
 # setOfValuesOfBankCommercialVariables = dict(
-#     id=bankCommercial_id,
+#     id_agent=bankCommercial_id,
 #     abbr=bankCommercial_abbr,
 #     name=bankCommercial_name,
 #     A_all=bankCommercial_A_all,
@@ -100,7 +100,7 @@ bankInterbank_dict = set_interbankVariables  # 别名
 
 #HACK 以下无用
 # setOfValuesOfInterbankVariables = dict(
-#     id=interbank_id,
+#     id_agent=interbank_id,
 #     A_BI=interbank_A_BI,
 #     Z_BI=interbank_Z_BI,
 #     Lo_BI=interbank_Lo_BI,
