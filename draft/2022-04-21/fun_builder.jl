@@ -1,4 +1,4 @@
-"生成器"
+"生成机"
 
 ##########################################
 #状态/开发
@@ -7,7 +7,7 @@
 
 
 """
-函数：阶段生成器
+函数：阶段生成机
 """
 function buildStage(stageContent::StageContent; stageSkeleton::Function = fun_stage_skeleton!)
     ## 获得阶段类型
@@ -30,7 +30,7 @@ end
 
 
 """
-函数：过程生成器
+函数：过程生成机
 """
 function buildProcess(processContent::ProcessContent; processSkeleton::Function = fun_process_skeleton!)
     ## 获得过程类型
@@ -60,7 +60,7 @@ end
 
 
 """
-函数：模型生成器
+函数：模型生成机
 """
 function buildModel(modelContent::ModelContent; modelSkeleton::Function = fun_model_skeleton!)
 

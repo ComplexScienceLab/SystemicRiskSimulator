@@ -24,7 +24,7 @@ end
 
 ## 方案三 
 """
-TODO函数：初始化实验数据容器
+TODO函数：初始化实验数据容机
 """
 function initAgentDataCollection(A::SystemicRiskAgent; env::Dict=env)
     BB_data_item = [Dict([
@@ -184,7 +184,7 @@ end
 
 ## 方案二 #HACK失效
 # """
-# 函数：初始化待收集数据容器
+# 函数：初始化待收集数据容机
 # """
 # function initAgentDataCollection(A::SystemicRiskAgent)
 #     # dict01 = Dict([(:id, collect(range(1, env[:num_bank], step=1))), (:tau, ones(env[:num_bank])), (:index_stage, ones(env[:num_bank]))])

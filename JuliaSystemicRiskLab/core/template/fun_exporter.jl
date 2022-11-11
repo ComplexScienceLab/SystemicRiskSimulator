@@ -1,6 +1,6 @@
-"模型导出器"
+"模型导出机"
 
-## 模型导出器
+## 模型导出机
 
 ##########################################
 #状态/开发
@@ -8,7 +8,7 @@
 
 
 """
-函数：过程导出器
+函数：过程导出机
 做如下事情：
 1. 调取模型核心内容modelContent、模型外围框架modelSkeleton；
 2. 插入模型核心内容modelContent至模型外围框架modelSkeleton内，组合成模型model；
@@ -63,7 +63,7 @@ end
 
 
 """
-函数：模型导出器
+函数：模型导出机
 做如下事情：
 1. 调取模型核心内容modelContent、模型外围框架modelSkeleton；
 2. 插入模型核心内容modelContent至模型外围框架modelSkeleton内，组合成模型model；
