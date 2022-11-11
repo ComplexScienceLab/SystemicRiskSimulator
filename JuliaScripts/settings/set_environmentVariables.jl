@@ -38,7 +38,7 @@ folderpath_of_experiments = "", # 主文件夹路径之于实验。将由函数�
 foldername_of_experiments = "", # 实验文件夹名称
 folderpath_of_experiments_output_data = "", # 实验导出数据文件夹名称
 
-data_id = 0, # 实验初始数据帧ID号；
+id_data = 0, # 实验初始数据帧ID号；
 step = 0, # 当前步伐值为0。不要改动
 tau = 0, # 初始回合计次为0；
 id_experiment = 1, # 当前实验组编号；
