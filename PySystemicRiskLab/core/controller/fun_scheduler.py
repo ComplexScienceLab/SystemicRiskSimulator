@@ -1,6 +1,6 @@
-"调度器"
+"调度机"
 
-## 调度器
+## 调度机
 
 ##########################################
 # 状态/开发
@@ -33,7 +33,7 @@ class ModelScheduler:
     @classmethod
     def scheduler(cls, env: dict, A: SystemicRiskAgent, A_data: AgentDataCollection):
         """
-        函数：调度器 #HACK 或将废弃
+        函数：调度机 #HACK 或将废弃
 
         Args:
             env (dict): 环境参数

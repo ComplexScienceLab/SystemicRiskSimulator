@@ -1,6 +1,6 @@
-"模型运行器"
+"模型运行机"
 
-## 模型运行器
+## 模型运行机
 
 ##########################################
 # 状态/使用
@@ -19,13 +19,13 @@ pass  # end import
 
 class ModelRunner:
     """
-    模型运行器
+    模型运行机
     """
 
     @classmethod
     def runModel(cls, A: SystemicRiskAgent, para: dict, env: dict, modelComponent: ModelComponent, agentData: AgentDataCollection):
         """
-        模型运行器。
+        模型运行机。
         输入参数将被直接修改。
 
         Args:
@@ -45,7 +45,7 @@ class ModelRunner:
     @classmethod
     def runProcess(cls, A: SystemicRiskAgent, para: dict, env: dict, processComponent: ProcessComponent, agentData: AgentDataCollection):
         """
-        过程运行器。
+        过程运行机。
         输入参数将被直接修改。
 
         Args:
@@ -65,7 +65,7 @@ class ModelRunner:
     @classmethod
     def runStage(cls, A: SystemicRiskAgent, b: TypeState, ib: TypeState, para: dict, env: dict, stageComponent: StageComponent):
         """
-        阶段运行器。
+        阶段运行机。
         输入参数将被直接修改。
 
         Args:

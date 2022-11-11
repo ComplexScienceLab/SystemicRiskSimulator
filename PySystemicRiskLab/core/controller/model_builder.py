@@ -14,12 +14,12 @@ pass  # end import
 
 
 class ModelBuilder:
-    """模型生成器"""
+    """模型生成机"""
 
     @classmethod
     def buildStage(cls, stage_content: StageContent):
         """
-        函数：阶段实例生成器
+        函数：阶段实例生成机
 
         Args:
             stage_content (StageContent): 阶段核心内容
@@ -47,7 +47,7 @@ class ModelBuilder:
     @classmethod
     def buildProcess(cls, process_content: ProcessContent, processSkeleton=ProcessSkeleton.fun_process_skeleton):
         """
-        函数：过程实例生成器
+        函数：过程实例生成机
 
         Args:
             process_content (ProcessContent): 过程核心内容
@@ -81,7 +81,7 @@ class ModelBuilder:
     @classmethod
     def buildModel(cls, modelContent, modelSkeleton=ModelSkeleton.fun_model_skeleton):
         """
-        函数：模型实例生成器
+        函数：模型实例生成机
 
         Args:
             modelContent (ModelContent): 模型核心内容
