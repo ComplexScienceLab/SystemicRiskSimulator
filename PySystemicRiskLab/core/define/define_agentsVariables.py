@@ -16,6 +16,7 @@ bankCommercial_dict = set_bankCommercialVariables  # 别名
 ## 生成字典变量 interbank
 bankInterbank_dict = set_interbankVariables  # 别名
 
+#HACK 以下无用
 # setOfValuesOfBankCommercialVariables = dict(
 #     id=bankCommercial_id,
 #     abbr=bankCommercial_abbr,
@@ -97,7 +98,7 @@ bankInterbank_dict = set_interbankVariables  # 别名
 #     listOfBankrupt=bankCommercial_listOfBankrupt,
 # )
 
-
+#HACK 以下无用
 # setOfValuesOfInterbankVariables = dict(
 #     id=interbank_id,
 #     A_BI=interbank_A_BI,

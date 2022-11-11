@@ -53,7 +53,7 @@ class ModelSkeleton:
             if env['index_process'] == env['loaded_index_process']:  # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。:
                 env['process_name'] = str(process.functionName)
                 # logging.debug("过程 = %i，名称 = %s", env['index_process'], env['process_name'])
-                A, para, env, A_data = ModelRunner.runProcess(A, para, env, process, A_data)  # BUG 为什么A_data是None？
+                A, para, env, A_data = ModelRunner.runProcess(A, para, env, process, A_data)
                 pass
             pass  # for
 

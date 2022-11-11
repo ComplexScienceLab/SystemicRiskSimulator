@@ -8,7 +8,7 @@ pass  # end import
 ######### 设置模型变量 #########################################
 
 # ## 初始化商业银行群 bank_commercial
-# id = np.arange(1, env['num_bank'] + 1, step=1)  # 编号 id
+# id_agent = np.arange(1, env['num_bank'] + 1, step=1)  # # agent 编号 id
 # abbr = np.array(["1", "2", "3", "4", "5"])  # 缩写 abbr
 # name = np.array(["BK1", "BK2", "BK3", "BK4", "BK5"])  # 全名 name
 # A_all = np.zeros((env['num_bank'], 1))  # 总资产 A_all: $A_all=A_BI+A_exBI$
@@ -102,7 +102,7 @@ pass  # end import
 # listOfBankrupt = np.full(env['num_bank'], list)  # 列表之于破产的银行编号 listOfBankrupt
 
 # ## 初始化银行间邻接矩阵 interbank
-# id:TypeIds = np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])),  # 编号
+# id_agent:TypeIds = np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])),  # agent 之间之关联编号 id
 # A_BI = np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48], [0, 0, 0, 2717.39, 0]]),  # 银行间资产邻接矩阵 A_BI
 # Z_BI = np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48], [0, 0, 0, 2717.39, 0]]).T,  # 银行间负债邻接矩阵 Z_BI
 # Lo_BI = np.zeros((env['num_bank'], env['num_bank'])),  # 银行间贷款流出邻接矩阵 Lo_BI
@@ -139,7 +139,7 @@ set_bankCommercialVariables = dict(
     ######### 设置模型变量 #########################################
 
     ## 初始化商业银行群 bank_commercial
-    id=np.arange(1, env['num_bank'] + 1, step=1),  # 编号 id
+    id_agent=np.arange(1, env['num_bank'] + 1, step=1),  # agent 之编号 id
     abbr=np.array(["1", "2", "3", "4", "5"]),  # 缩写 abbr
     name=np.array(["BK1", "BK2", "BK3", "BK4", "BK5"]),  # 全名 name
     A_all=np.zeros((env['num_bank'], 1)),  # 总资产 A_all: $A_all=A_BI+A_exBI$
@@ -236,7 +236,7 @@ set_bankCommercialVariables = dict(
 set_interbankVariables = dict(
 
     ## 初始化银行间邻接矩阵 interbank
-    id=np.array(np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])), dtype=np.int16),  # 编号
+    id_agent=np.array(np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])), dtype=np.int16),  # agent 之间之关联编号 id
     A_BI=np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48], [0, 0, 0, 2717.39, 0]]),  # 银行间资产邻接矩阵 A_BI
     Z_BI=np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48], [0, 0, 0, 2717.39, 0]]).T,  # 银行间负债邻接矩阵 Z_BI
     Lo_BI=np.zeros((env['num_bank'], env['num_bank'])),  # 银行间贷款流出邻接矩阵 Lo_BI

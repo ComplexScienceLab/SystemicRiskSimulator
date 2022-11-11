@@ -68,4 +68,24 @@ class ModelContent(Content):
         self.listProcessContent = list_process_content
         pass
 
-    pass
+    # @classmethod
+    # def showModelContent(cls, modelContent):
+    #     """
+    #     显示模型之内容结构
+    #
+    #     Args:
+    #         modelContent:
+    #
+    #     Returns:
+    #
+    #     """
+    #
+    #     print(ModelContent.textName)
+    #     hierarchy = 1  # 结构层所在层数
+    #     for process_com in ModelContent.listProcessContent:
+    #         print(" " * hierarchy + process_content.textName)
+    #         hierarchy = 2
+    #         for stage_content in process_content:
+    #             pass  # function
+
+    pass  # class

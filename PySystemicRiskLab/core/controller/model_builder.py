@@ -14,7 +14,7 @@ pass  # end import
 
 
 class ModelBuilder:
-    "模型生成器"
+    """模型生成器"""
 
     @classmethod
     def buildStage(cls, stage_content: StageContent):
