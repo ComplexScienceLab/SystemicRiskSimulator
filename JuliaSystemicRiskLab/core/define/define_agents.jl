@@ -134,7 +134,7 @@ end
 
 "定义综合Agent类型"
 mutable struct SystemicRiskAgent <: AbstractAgent
-    id_agent::Int # 编号（必备的）
+    id::Int # 编号（必备，且只能命名为id）
     BB::BankCommercial # 商业银行群
     BI::BankInterbank # 银行间邻接矩阵
 end
