@@ -32,7 +32,7 @@ class ModelInitVariable:
     @classmethod
     def set_default_values_to_B_variables(cls):
         bank: BankCommercial = BankCommercial(
-            id=np.arange(1, env['num_bank'], step=1),  # 编号 id
+            id_agent=np.arange(1, env['num_bank'], step=1),  # agent 之编号 id
             abbr=np.full((env['num_bank'], 1), ""),  # 缩写 abbr
             name=np.full((env['num_bank'], 1), ""),  # 全名 name
             A_all=np.zeros((env['num_bank'], 1)),  # 总资产 A_all: $A_all=A_BI+A_exBI$
@@ -125,7 +125,7 @@ class ModelInitVariable:
             listOfIlliquity=np.full(env['num_bank'], list),  # 列表之于流动性短缺的银行编号 listOfIlliquity
             listOfBankrupt=np.full(env['num_bank'], list),  # 列表之于破产的银行编号 listOfBankrupt
 
-            # id=np.arange(1, env['num_bank'], step=1),  # 编号 id
+            # id_agent=np.arange(1, env['num_bank'], step=1),  # agent 之编号 id
             # abbr=np.full(env['num_bank'], ""),  # 缩写 abbr
             # name=np.full(env['num_bank'], ""),  # 全名 name
             # A_all=np.zeros(env['num_bank']),  # 总资产 A_all: $A_all=A_BI+A_exBI$
@@ -206,7 +206,7 @@ class ModelInitVariable:
         )
 
         interbank: BankInterbank = BankInterbank(
-            id=np.array(np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])),dtype=TypeIds),  # 编号
+            id_agent=np.array(np.arange(1, env['num_bank'] * env['num_bank'] + 1).reshape((env['num_bank'], env['num_bank'])),dtype=TypeIds),  # agent 之间之关联编号 id
             A_BI=np.zeros((env['num_bank'], env['num_bank'])),  # 银行间资产邻接矩阵 A_BI
             Z_BI=np.zeros((env['num_bank'], env['num_bank'])),  # 银行间负债邻接矩阵 Z_BI
             Lo_BI=np.zeros((env['num_bank'], env['num_bank'])),  # 银行间贷款流出邻接矩阵 Lo_BI
@@ -265,7 +265,7 @@ class ModelInitVariable:
 
         # ## 初始化商业银行群
         # bank: BankCommercial = BankCommercial(
-        #     id=np.arange(1, env['num_bank'] + 1, step=1),  # 编号 id
+        #     id_agent=np.arange(1, env['num_bank'] + 1, step=1),  # agent 之间之关联编号 id
         #     abbr=np.array(["1", "2", "3", "4", "5"]),  # 缩写 abbr
         #     name=np.array(["BK1", "BK2", "BK3", "BK4", "BK5"]),  # 全名 name
         #     A_all=np.zeros((env['num_bank'], 1)),  # 总资产 A_all: $A_all=A_BI+A_exBI$

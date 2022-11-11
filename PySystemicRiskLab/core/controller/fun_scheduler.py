@@ -227,7 +227,7 @@ class ModelScheduler:
 
         """
         logging.debug("收集数据：")
-        env['data_id'] += 1  # 累加数据帧ID号
+        env['id_data'] += 1  # 累加数据帧ID号
         ModelCollector.collector(A, A_data, env['state_of_process'], env)  # 收集数据
         state_of_schedule = StateOfScheduleEnum.loading  # 切换调度运作状态为读取
         logging.debug("完成收集数据，切换调度运作状态为%s", state_of_schedule)

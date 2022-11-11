@@ -69,7 +69,7 @@ class ModelCollector:
         """
         BB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
+                list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
                 list(env.keys())[list(env.keys()).index('tau')]: env['tau'],
                 list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
                 list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
@@ -81,7 +81,7 @@ class ModelCollector:
 
         BI_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
+                list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
                 list(env.keys())[list(env.keys()).index('tau')]: env['tau'],
                 list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
                 list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
@@ -110,7 +110,7 @@ class ModelCollector:
         """
         BB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
+                list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
                 list(env.keys())[list(env.keys()).index('tau')]: env['tau'],
                 list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
                 list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
@@ -121,7 +121,7 @@ class ModelCollector:
 
         BI_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('data_id')]: env['data_id'],
+                list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
                 list(env.keys())[list(env.keys()).index('tau')]: env['tau'],
                 list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
                 list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
@@ -151,7 +151,7 @@ class ModelCollector:
         BB_data = pd.DataFrame()
         numRow, numCol = np.shape(A_data.BB[0]['dataBB'].A_all)
         for (i1, v1) in enumerate(A_data.BB):
-            BB_data['data_id'] = np.full(numRow, v1['data_id'])
+            BB_data['id_data'] = np.full(numRow, v1['id_data'])
             BB_data['tau'] = np.full(numRow, v1['tau'])
             BB_data['index_process'] = np.full(numRow, v1['index_process'])
             BB_data['index_stage'] = np.full(numRow, v1['index_stage'])
@@ -160,8 +160,8 @@ class ModelCollector:
             for (i2, v2) in enumerate(fieldValues):
                 BB_data[fieldNames[i2]] = v2
                 pass
-            BB_data_export = pd.concat([BB_data_export, BB_data])
-            pass
+            BB_data_export = pd.concat([BB_data_export, BB_data])  # 追加`BB_data`至`BB_data_expert`
+            pass  # for
         BB_data_export.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "BB_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
 
         ## 整理interbank之数据为一数据框
@@ -169,7 +169,7 @@ class ModelCollector:
         BI_data = pd.DataFrame()
         numRow, numCol = np.shape(A_data.BI[0]['dataBI'].A_BI)
         for (i1, v1) in enumerate(A_data.BI):
-            BI_data['data_id'] = np.full(numRow * numCol, v1['data_id'])
+            BI_data['id_data'] = np.full(numRow * numCol, v1['id_data'])
             BI_data['tau'] = np.full(numRow * numCol, v1['tau'])
             BI_data['index_process'] = np.full(numRow * numCol, v1['index_process'])
             BI_data['index_stage'] = np.full(numRow * numCol, v1['index_stage'])
@@ -192,18 +192,19 @@ class ModelCollector:
                         if v3 is []:
                             m2[i3, :] = False
                             continue
+                            pass  # if
                         for i4 in v3:
                             if i4 in v3:
                                 m2[i3, i4] = True
-                                pass
+                                pass  # if
                             else:
                                 m2[i3, i4] = False
-                            pass
-                        pass
-                    BI_data[fieldNames[i2]] = m2.T.flatten  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
+                                pass  # else
+                            pass  # for
+                    BI_data[fieldNames[i2]] = m2.T.flatten()  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
                     pass  # if
                 pass  # for
-                BI_data_export = pd.concat([BI_data_export, BI_data])
+            BI_data_export = pd.concat([BI_data_export, BI_data])  # 追加当前`BI_data`至`BI_data_expert`
             pass  # for
         BI_data_export.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "BI_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
 
