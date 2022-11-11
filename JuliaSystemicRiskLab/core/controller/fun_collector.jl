@@ -24,11 +24,11 @@ end
 
 ## 方案三 
 """
-TODO函数：初始化实验数据容器
+TODO函数：初始化实验数据容机
 """
 function initAgentDataCollection(A::SystemicRiskAgent; env::Dict=env)
     BB_data_item = [Dict([
-        (getkey(env, env[:data_id], :data_id), env[:data_id]),
+        (getkey(env, env[:id_data], :id_data), env[:id_data]),
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:index_process], :index_process), env[:index_process]),
         (getkey(env, env[:index_stage], :index_stage), env[:index_stage]),
@@ -38,7 +38,7 @@ function initAgentDataCollection(A::SystemicRiskAgent; env::Dict=env)
     append!(BB_data, BB_data_item) # 初始化banks之数据为一字典数组
 
     BI_data_item = [Dict([
-        (getkey(env, env[:data_id], :data_id), env[:data_id]),
+        (getkey(env, env[:id_data], :id_data), env[:id_data]),
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:index_process], :index_process), env[:index_process]),
         (getkey(env, env[:index_stage], :index_stage), env[:index_stage]),
@@ -57,7 +57,7 @@ TODO函数：收集数据并存储
 """
 function collectAgentData(A::SystemicRiskAgent, A_data::AgentDataCollection; env::Dict=env)
     BB_data_item = [Dict([
-        (getkey(env, env[:data_id], :data_id), env[:data_id]),
+        (getkey(env, env[:id_data], :id_data), env[:id_data]),
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:index_process], :index_process), env[:index_process]),
         (getkey(env, env[:index_stage], :index_stage), env[:index_stage]),
@@ -66,7 +66,7 @@ function collectAgentData(A::SystemicRiskAgent, A_data::AgentDataCollection; env
     append!(A_data.BB, BB_data_item) # 收集banks之数据为一字典数组
 
     BI_data_item = [Dict([
-        (getkey(env, env[:data_id], :data_id), env[:data_id]),
+        (getkey(env, env[:id_data], :id_data), env[:id_data]),
         (getkey(env, env[:tau], :tau), env[:tau]),
         (getkey(env, env[:index_process], :index_process), env[:index_process]),
         (getkey(env, env[:index_stage], :index_stage), env[:index_stage]),
@@ -86,7 +86,7 @@ function exportAgentData(A_data::AgentDataCollection; env::Dict=env, para::Dict=
     BB_data = DataFrame()
     numRow = size(getfield(A_data.BB[1][:dataBB], fieldnames(typeof(A_data.BB[1][:dataBB]))[1]))[1]
     for (i1, v1) in enumerate(A_data.BB)
-        BB_data[!, :data_id] = fill(v1[:data_id], numRow)
+        BB_data[!, :id_data] = fill(v1[:id_data], numRow)
         BB_data[!, :tau] = fill(v1[:tau], numRow)
         BB_data[!, :index_process] = fill(v1[:index_process], numRow)
         BB_data[!, :index_stage] = fill(v1[:index_stage], numRow)
@@ -104,7 +104,7 @@ function exportAgentData(A_data::AgentDataCollection; env::Dict=env, para::Dict=
     BI_data = DataFrame()
     numRow, numCol = size(getfield(A_data.BI[1][:dataBI], fieldnames(typeof(A_data.BI[1][:dataBI]))[1]))
     for (i1, v1) in enumerate(A_data.BI)
-        BI_data[!, :data_id] = fill(v1[:data_id], numRow * numCol)
+        BI_data[!, :id_data] = fill(v1[:id_data], numRow * numCol)
         BI_data[!, :tau] = fill(v1[:tau], numRow * numCol)
         BI_data[!, :index_process] = fill(v1[:index_process], numRow * numCol)
         BI_data[!, :index_stage] = fill(v1[:index_stage], numRow * numCol)
@@ -139,10 +139,10 @@ end
 
 # ## 方案一 #HACK失败
 # function initAgentDataCollection(A::SystemicRiskAgent)
-#     dict_fields_BB = merge(Dict([(:data_id, 1), (:tau, Vector{Int}(ones(env[:num_bank]))), (:index_stage, Vector{Int}(ones(env[:num_bank])))]), struct2dict(A.BB))
+#     dict_fields_BB = merge(Dict([(:id_data, 1), (:tau, Vector{Int}(ones(env[:num_bank]))), (:index_stage, Vector{Int}(ones(env[:num_bank])))]), struct2dict(A.BB))
 #     BB_data = DataFrame(dict_fields_BB) # 初始化带回合变量的商业银行实例数据框
 #     # BI_data = []
-#     dict_fields_BI = merge(Dict([(:data_id, 1), (:tau, Vector{Int}(ones(env[:num_bank]))), (:index_stage, Vector{Int}(ones(env[:num_bank]))), (:bankRow, collect(range(1, env[:num_bank], step=1))), (:bankCol, collect(range(1, env[:num_bank], step=1)))]), struct2dict(A.BI)) # 初始化带回合变量的银行间市场实例字典向量
+#     dict_fields_BI = merge(Dict([(:id_data, 1), (:tau, Vector{Int}(ones(env[:num_bank]))), (:index_stage, Vector{Int}(ones(env[:num_bank]))), (:bankRow, collect(range(1, env[:num_bank], step=1))), (:bankCol, collect(range(1, env[:num_bank], step=1)))]), struct2dict(A.BI)) # 初始化带回合变量的银行间市场实例字典向量
 #     BI_data = DataFrames(dict_fields_BI)
 #     # append!(BI_data, [dict_fields_BI])
 #     A_data = AgentDataCollection(BB_data, BI_data)
@@ -155,7 +155,7 @@ end
 # """
 # function collector(A::SystemicRiskAgent, A_data::AgentDataCollection; env::Dict=env)
 #     BB_data = DataFrame()
-#     BB_data[!, :data_id] = fill(env[:data_id], env[:num_bank])
+#     BB_data[!, :id_data] = fill(env[:id_data], env[:num_bank])
 #     BB_data[!, :tau] = fill(env[:tau], env[:num_bank])
 #     BB_data[!, :index_stage] = fill(env[:index_stage], env[:num_bank])
 #     # agentsFields = fieldnames(typeof(A.BB))[4:end]
@@ -167,14 +167,14 @@ end
 #     append!(A_data.BB, BB_data) # 收集banks之数据为一数据框
 # 
 #     BI_data = DataFrame()
-#     BB_data[!, :data_id] = fill(env[:data_id], env[:num_bank]^2)
+#     BB_data[!, :id_data] = fill(env[:id_data], env[:num_bank]^2)
 #     BB_data[!, :tau] = fill(env[:tau], env[:num_bank]^2)
 #     BB_data[!, :index_stage] = fill(env[:index_stage], env[:num_bank]^2)
 #     for (k, v) in struct2dict(A.BI)
 #         BB_data[1, k] = v
 #     end
 
-#     BI_data = merge(Dict([(:data_id, env[:data_id]), (:tau, env[:tau]), (:index_stage, env[:index_stage])]), struct2dict(A.BI))
+#     BI_data = merge(Dict([(:id_data, env[:id_data]), (:tau, env[:tau]), (:index_stage, env[:index_stage])]), struct2dict(A.BI))
 #     append!(A_data.BI, [BI_data]) # 收集banks之数据为一字典向量
 
 #     # A_data.BI[env[:tau]] = A.BI # 收集BI之数据为一结构体向量
@@ -184,18 +184,18 @@ end
 
 ## 方案二 #HACK失效
 # """
-# 函数：初始化待收集数据容器
+# 函数：初始化待收集数据容机
 # """
 # function initAgentDataCollection(A::SystemicRiskAgent)
 #     # dict01 = Dict([(:id, collect(range(1, env[:num_bank], step=1))), (:tau, ones(env[:num_bank])), (:index_stage, ones(env[:num_bank]))])
 #     # dict02 = struct2dict(A.BB)
 #     # dict_fields = Dict([collect(dict01); collect(dict02)])
-#     dict_fields_BB = merge(Dict([(:data_id, 1), (:tau, ones(env[:num_bank])), (:index_stage, ones(env[:num_bank]))]), struct2dict(A.BB))
+#     dict_fields_BB = merge(Dict([(:id_data, 1), (:tau, ones(env[:num_bank])), (:index_stage, ones(env[:num_bank]))]), struct2dict(A.BB))
 #     # BB = StructArray([BB for i = 1:env[:max_num_of_tau]]) # 初始化带回合变量的商业银行实例数组
 #     BB_data = DataFrame(dict_fields_BB) # 初始化带回合变量的商业银行实例数据框
 #     # dict_fields_BI = merge(Dict([(:tau, 1), (:index_stage, 1)]), struct2dict(A.BI))
 #     BI_data = []
-#     dict_fields_BI = merge(Dict([(:data_id, 1), (:tau, 1), (:index_stage, 1)]), struct2dict(A.BI)) # 初始化带回合变量的银行间市场实例字典向量
+#     dict_fields_BI = merge(Dict([(:id_data, 1), (:tau, 1), (:index_stage, 1)]), struct2dict(A.BI)) # 初始化带回合变量的银行间市场实例字典向量
 #     append!(BI_data, [dict_fields_BI])
 #     # dict_fields_BI = merge(Dict([(:tau, 1), (:index_stage, 1)]))
 #     # BI_data = DataFrame(keys(dict_fields_BI)) # 初始化带回合变量的银行间市场实例数据框
@@ -213,7 +213,7 @@ end
 # """
 # function collector(A::SystemicRiskAgent, A_data::AgentDataCollection; env::Dict=env)
 #     BB_data = DataFrame()
-#     BB_data[!, :data_id] = fill(env[:data_id], env[:num_bank])
+#     BB_data[!, :id_data] = fill(env[:id_data], env[:num_bank])
 #     BB_data[!, :tau] = fill(env[:tau], env[:num_bank])
 #     BB_data[!, :index_stage] = fill(env[:index_stage], env[:num_bank])
 #     # agentsFields = fieldnames(typeof(A.BB))[4:end]
@@ -230,7 +230,7 @@ end
 #     # for (k, v) in struct2dict(A.BI)
 #     #     BB_data[1, k] = v
 #     # end
-#     BI_data = merge(Dict([(:data_id, env[:data_id]), (:tau, env[:tau]), (:index_stage, env[:index_stage])]), struct2dict(A.BI))
+#     BI_data = merge(Dict([(:id_data, env[:id_data]), (:tau, env[:tau]), (:index_stage, env[:index_stage])]), struct2dict(A.BI))
 #     append!(A_data.BI, [BI_data]) # 收集banks之数据为一字典向量
 
 #     # A_data.BI[env[:tau]] = A.BI # 收集BI之数据为一结构体向量
@@ -244,7 +244,7 @@ TODO函数：导出控制参数数据
 function exportParameterData(list_combinationOfPara; env::Dict=env)
     env[:num_experiment] = length(list_combinationOfPara) # 获取实验组之实验个数
     df_combinationOfPara = vcat(DataFrame.(list_combinationOfPara)...) # 转换字典列表为数据框
-    df_combinationOfPara[!, "exp_id"] = repeat(1:env[:num_experiment], inner=env[:num_bank]) # 添加实验组id
-    df_combinationOfPara[!, "id"] = collect(range(1, size(df_combinationOfPara)[1], step=1)) # 添加id
+    df_combinationOfPara[!, "id_exp"] = repeat(1:env[:num_experiment], inner=env[:num_bank]) # 添加实验组id
+    df_combinationOfPara[!, "id_agent"] = collect(range(1, size(df_combinationOfPara)[1], step=1)) # 添加id
     CSV.write(datadir("$(env[:folderpath_of_experiments_output_data])", "paras.csv"), df_combinationOfPara) # 导出字段列表为csv格式
 end # function

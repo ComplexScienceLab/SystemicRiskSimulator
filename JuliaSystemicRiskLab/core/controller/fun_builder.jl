@@ -1,4 +1,4 @@
-"生成器"
+"生成机"
 
 ##########################################
 #状态/使用
@@ -7,7 +7,7 @@
 
 
 """
-函数：阶段实例生成器
+函数：阶段实例生成机
 
 Argument: 
 - stageContent::StageContent: 阶段核心内容；
@@ -36,7 +36,7 @@ end
 
 
 """
-函数：过程实例生成器
+函数：过程实例生成机
 
 Argument: 
 - processContent::ProcessContent: 过程核心内容；
@@ -74,7 +74,7 @@ end
 
 
 """
-函数：模型实例生成器
+函数：模型实例生成机
 
 Argument: 
 - modelContent::ModelContent: 模型核心内容；

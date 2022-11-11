@@ -55,7 +55,7 @@ end
 println(typeof(expr))
 println(expr)
 
-# 模型生成器
+# 模型生成机
 function modelBuilder(modelContent::ModelContent, modelSkeleton::Expr)
     # 载入modelSkeleton和modelContent。插modelContent入modelSkeleton，生成新的model，保存为文件："model.jl"
     println("插入模型核心内容。")

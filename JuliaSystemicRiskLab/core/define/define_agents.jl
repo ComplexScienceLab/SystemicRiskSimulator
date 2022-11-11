@@ -11,7 +11,7 @@
 
 "定义商业银行群复合类型。"
 mutable struct BankCommercial{NDIMS1,NDIMS2}
-    id::TypeIds{NDIMS1} # 编号 id
+    id_agent::TypeIds{NDIMS1} # 编号 id_agent
     abbr::TypeAbbrs{NDIMS1} # 缩写 abbr
     name::TypeNames{NDIMS1} # 全名 name
     A_all::TypeMoney{NDIMS2} # 总资产 A_all: $A_all=A_BI+A_exBI$
@@ -98,7 +98,7 @@ end
 
 "定义银行间邻接矩阵复合类型。"
 mutable struct BankInterbank{NDIMS2}
-    id::TypeIds{NDIMS2} # 编号
+    id_agent::TypeIds{NDIMS2} # 编号
     A_BI::TypeMoney{NDIMS2} # 银行间资产邻接矩阵 A_BI
     Z_BI::TypeMoney{NDIMS2} # 银行间负债邻接矩阵 Z_BI
     Lo_BI::TypeMoney{NDIMS2} # 银行间贷款流出邻接矩阵 Lo_BI
@@ -134,7 +134,7 @@ end
 
 "定义综合Agent类型"
 mutable struct SystemicRiskAgent <: AbstractAgent
-    id::Int # 编号（必备的）
+    id::Int # 编号（必备，且只能命名为id）
     BB::BankCommercial # 商业银行群
     BI::BankInterbank # 银行间邻接矩阵
 end
