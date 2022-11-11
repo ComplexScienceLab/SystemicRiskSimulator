@@ -23,7 +23,7 @@ end
 function set_default_values_to_B_variables()
     ## 初始化商业银行实例
     bank = BankCommercial{1,1}(
-        collect(range(1, env[:num_bank], step=1)), # 编号 id
+        collect(range(1, env[:num_bank], step=1)), # 编号 id_agent
         fill("", env[:num_bank]), # 缩写 abbr
         fill("", env[:num_bank]), # 全名 name
         ones(env[:num_bank]), # 总资产 A_all: $A_all=A_BI+A_exBI$
@@ -194,8 +194,8 @@ function set_manually_values_to_Bank_variables()
 
     # ## 初始化商业银行群
     # bank = BankCommercial{1,1}(
-    #     bankCommercial[:id]
-    # #      collect(range(1, env[:num_bank], step=1)), # 编号 id
+    #     bankCommercial[:id_agent]
+    # #      collect(range(1, env[:num_bank], step=1)), # 编号 id_agent
     # #     ["1", "2", "3", "4", "5"], # 缩写 abbr
     # #     ["BK1", "BK2", "BK3", "BK4", "BK5"], # 全名 name
     # #     zeros(env[:num_bank]), # 总资产 A_all: $A_all=A_BI+A_exBI$

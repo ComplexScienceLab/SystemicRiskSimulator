@@ -1,6 +1,6 @@
-"调度器"
+"调度机"
 
-## 调度器
+## 调度机
 
 ##########################################
 #状态/使用
@@ -8,7 +8,7 @@
 
 
 """
-函数：调度器 #HACK 或将废弃
+函数：调度机 #HACK 或将废弃
 
 Argument: 
 - modelContent::ModelContent: 被调度的模型内容；
@@ -181,7 +181,7 @@ Return:
 """
 function scheduler_collecting(A::SystemicRiskAgent, A_data::AgentDataCollection=nothing; env::Dict=env)
     @testprintln "收集数据。"
-    env[:data_id] += 1 # 累加数据帧ID号
+    env[:id_data] += 1 # 累加数据帧ID号
     collector(A; A_data, state_of_process=env[:state_of_process]) # 收集数据
     state_of_schedule = :loading  # 切换调度运作状态为读取
     @testprintln "切换调度运作状态为$(state_of_schedule)"

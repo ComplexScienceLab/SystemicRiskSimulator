@@ -42,7 +42,7 @@ struct StageType end # 定义阶段类型
 
 # "定义个体复合类型。"
 # mutable struct Objects{NDIMS2}
-#     id::TypeIds{NDIMS2} # 编号
+#     id_agent::TypeIds{NDIMS2} # 编号
 #     abbr::TypeAbbrs{NDIMS2} # 缩写
 #     name::TypeNames{NDIMS2} # 全名
 # end
