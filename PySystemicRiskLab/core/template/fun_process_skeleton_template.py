@@ -72,7 +72,7 @@ def fun_process_skeleton_template(self, A:SystemicRiskAgent, para:dict, env:dict
             pass # for
 
 
-        env['is_process'] = is_rocess(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_process'], env['stage_name'], process) # 判断是否继续运行过程
+        env['is_process'] = is_process(A.BB, BB_isv_t1, BB_Shock_t_t1, env['is_process'], env['stage_name'], process) # 判断是否继续运行过程
 
         if env['state_of_schedule'] == StateOfScheduleEnum.saving:
             env['saved_index_process'], env['saved_index_stage'], env['loaded_index_process'], env['loaded_index_stage'], env['state_of_schedule'] = scheduler_saving(env['index_of_schedule_position'], env['index_process'], env['index_stage'], env['is_process']) # 调度存储

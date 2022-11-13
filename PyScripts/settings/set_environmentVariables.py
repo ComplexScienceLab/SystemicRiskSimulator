@@ -68,7 +68,7 @@ set_environmentVariables = dict(
     is_loop=True,  # 是否处于循环状态
     is_round=True,  # 是否处于回合状态；
     is_stage=True,  # 是否处于阶段状态；
-    is_rocess=True,  # 是否处于过程状态；
+    is_process=True,  # 是否处于过程状态；
     is_model=True,  # 是否处于模型状态；
     is_experiment=True,  # 是否处于当前状态的一次实验；
 
