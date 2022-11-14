@@ -37,7 +37,7 @@ stageContent_exBank_illiquity_shock = StageContent(
     id=4,  # 编号 id
     function_name='stage_exBank_illiquity_shock',  # 函数名称 functionName
     text_name="银行外部挤兑流动冲击阶段",  # 文本名称 textName
-    model_function=stage_exBank_insolvent_shock  # 函数 run
+    model_function=stage_exBank_illiquity_shock  # 函数 run
 )
 
 stageContent_interBank_illiquity_contagion_shock = StageContent(
