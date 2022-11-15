@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
     logging.info("实验组结束。")
 
-    ## 默认程序打开输出文件查看
-    os.system(r"open " + os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"))
+    # ## 默认程序打开输出文件查看
+    # os.system(r"open " + os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"))
 
     pass  # main

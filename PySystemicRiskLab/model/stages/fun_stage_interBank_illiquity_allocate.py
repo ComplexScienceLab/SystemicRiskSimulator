@@ -28,7 +28,7 @@ def stage_interBank_illiquity_allocate(BB:BankCommercial, BI:BankInterbank, b:Ty
     BankState.update_B_state(BB, BI, target = "enabled repay Z_D", source = "any")
     BankState.update_B_state(BB, BI, target = "needed repay BI", source = "any")
     BankState.update_B_state(BB, BI, target = "enabled repay BI", source = "any")
-    BB.Bo_all[BB.eBoBI|BB.eBoD] = min(BB.A_Q[BB.eBoBI|BB.eBoD], BB.Shock_run_t[BB.eBoBI|BB.eBoD]) # 计算银行偿还借款总流量
+    BB.Bo_all[BB.eBoBI|BB.eBoD] = np.minimum(BB.A_Q[BB.eBoBI|BB.eBoD], BB.Shock_run_t[BB.eBoBI|BB.eBoD]) # 计算银行偿还借款总流量
     BB.Bo_D[BB.eBoBI|BB.eBoD] = BB.Shock_D_run_t[BB.eBoBI|BB.eBoD] * (BB.Bo_all[BB.eBoBI|BB.eBoD] / BB.Shock_run_t[BB.eBoBI|BB.eBoD]) # 计算银行偿还居民借款流量
     BB.Bo_BI_all[BB.eBoBI|BB.eBoD] = BB.Shock_BI_run_ilq_t[BB.eBoBI|BB.eBoD] * (BB.Bo_all[BB.eBoBI|BB.eBoD] / BB.Shock_run_t[BB.eBoBI|BB.eBoD]) # 计算银行偿还银行间借款流量
     BankTransfer.update_B_transfer(BB, BI, b, ib, byWay = "Bo_D") #HACK 这个必须放在这里！
