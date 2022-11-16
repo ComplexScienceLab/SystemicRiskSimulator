@@ -17,7 +17,7 @@ set_parameterVariables = dict(
     ## 指定待运行的模型
     model_name=[
         'BI1111',
-        'BI1112',
+        'BI0000',
     ],
 
     ## 外生违约损失冲击

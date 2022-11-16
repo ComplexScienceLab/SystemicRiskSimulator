@@ -26,10 +26,10 @@ modelContent_BI1111 = ModelContent(
 )
 
 # BUG 这个是为了凑数，防止出现遍历的时候只能遍历字符串的bug。
-modelContent_BI1112 = ModelContent(
+modelContent_BI0000 = ModelContent(
     id=2,  # 编号 id
-    function_name='model_BI1112',  # 函数名称 functionName
-    text_name="模型BI1112",  # 文本名称 textName
+    function_name='model_BI0000',  # 函数名称 functionName
+    text_name="模型BI0000",  # 文本名称 textName
     list_process_content=[
         processContent_exBank_insolvent,
         processContent_interBank_insolvent,
