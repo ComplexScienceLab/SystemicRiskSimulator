@@ -7,8 +7,8 @@
 set_processName = Set([
     :process_exBank_insolvent,
     :process_interBank_insolvent,
-    :process_exBank_illiquity,
-    :process_interBank_illiquity,
+    :process_exBank_illiquid,
+    :process_interBank_illiquid,
     :process_exBank_bankrupt,
     :process_interBank_bankrupt,
 ])

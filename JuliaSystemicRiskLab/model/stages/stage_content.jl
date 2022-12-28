@@ -29,32 +29,32 @@ stageContent_interBank_insolvent_contagion = StageContent(
     stage_interBank_insolvent_contagion! # 函数 run
 )
 
-stageContent_exBank_illiquity_shock = StageContent(
+stageContent_exBank_illiquid_shock = StageContent(
     4, # 编号 id
-    :stage_exBank_illiquity_shock, # 函数名称 functionName
+    :stage_exBank_illiquid_shock, # 函数名称 functionName
     "银行外部挤兑流动冲击阶段", # 文本名称 textName
     stage_exBank_insolvent_shock! # 函数 run
 )
 
-stageContent_interBank_illiquity_contagion_shock = StageContent(
+stageContent_interBank_illiquid_contagion_shock = StageContent(
     5, # 编号 id
-    :stage_interBank_illiquity_contagion_shock, # 函数名称 functionName
+    :stage_interBank_illiquid_contagion_shock, # 函数名称 functionName
     "流动性短缺银行间挤兑流动传染冲击阶段", # 文本名称 textName
-    stage_interBank_illiquity_contagion_shock! # 函数 run
+    stage_interBank_illiquid_contagion_shock! # 函数 run
 )
 
-stageContent_interBank_illiquity_allocate = StageContent(
+stageContent_interBank_illiquid_allocate = StageContent(
     6, # 编号 id
-    :stage_interBank_illiquity_allocate, # 函数名称 functionName
+    :stage_interBank_illiquid_allocate, # 函数名称 functionName
     "银行间挤兑流动分配借贷流量阶段", # 文本名称 textName
-    stage_interBank_illiquity_allocate! # 函数 run
+    stage_interBank_illiquid_allocate! # 函数 run
 )
 
-stageContent_interBank_illiquity_repay = StageContent(
+stageContent_interBank_illiquid_repay = StageContent(
     7, # 编号 id
-    :stage_interBank_illiquity_repay, # 函数名称 functionName
+    :stage_interBank_illiquid_repay, # 函数名称 functionName
     "银行间挤兑流动执行借贷流量阶段", # 文本名称 textName
-    stage_interBank_illiquity_repay! # 函数 run
+    stage_interBank_illiquid_repay! # 函数 run
 )
 
 stageContent_exBank_bankrupt_contagion = StageContent(

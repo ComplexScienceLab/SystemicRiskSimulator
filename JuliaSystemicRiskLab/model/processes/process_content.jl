@@ -29,25 +29,25 @@ processContent_interBank_insolvent = ProcessContent(
     ] # 阶段内容列表 listContentStage
 )
 
-processContent_exBank_illiquity = ProcessContent(
+processContent_exBank_illiquid = ProcessContent(
     3, # 编号 id
-    :process_exBank_illiquity, # 函数名称 functionName
+    :process_exBank_illiquid, # 函数名称 functionName
     "银行外部挤兑流动传染冲击过程", # 文本名称 textName
     # :(BB.Shock_t == BB_Shock_t_t1), # 判断条件用以结束过程 conditionToContinueProcess
     [
-        stageContent_exBank_illiquity_shock,
+        stageContent_exBank_illiquid_shock,
     ] # 阶段内容列表 listContentStage
 )
 
-processContent_interBank_illiquity = ProcessContent(
+processContent_interBank_illiquid = ProcessContent(
     4, # 编号 id
-    :process_interBank_illiquity, # 函数名称 functionName
+    :process_interBank_illiquid, # 函数名称 functionName
     "流动性短缺银行间挤兑流动传染冲击过程", # 文本名称 textName
     # :(BB.Shock_t == BB_Shock_t_t1), # 判断条件用以结束过程 conditionToContinueProcess
     [
-        stageContent_interBank_illiquity_contagion_shock,
-        stageContent_interBank_illiquity_allocate,
-        stageContent_interBank_illiquity_repay,
+        stageContent_interBank_illiquid_contagion_shock,
+        stageContent_interBank_illiquid_allocate,
+        stageContent_interBank_illiquid_repay,
     ] # 阶段内容列表 listContentStage
 )
 
@@ -68,8 +68,8 @@ processContent_interBank_bankrupt = ProcessContent(
     # :(BB.Shock_t == BB_Shock_t_t1), # 判断条件用以结束过程 conditionToContinueProcess
     [
         stageContent_interBank_bankrupt_contagion_shock,
-        stageContent_interBank_illiquity_allocate,
-        stageContent_interBank_illiquity_repay,
+        stageContent_interBank_illiquid_allocate,
+        stageContent_interBank_illiquid_repay,
     ] # 阶段内容列表 listContentStage
 )
 
