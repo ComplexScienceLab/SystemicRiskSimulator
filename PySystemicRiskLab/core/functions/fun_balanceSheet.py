@@ -2,15 +2,13 @@
 
 ## 功能函数集：计算商业银行之资产负债表结构。
 
-##########################################
-# 状态/使用
-##########################################
+
 
 from PySystemicRiskLab import np
 
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_consts import LESS1
-from PySystemicRiskLab.core.define.define_type import TypeState
+from PySystemicRiskLab.core.define.define_type import StateType
 
 pass  # end import
 
@@ -19,76 +17,76 @@ class BalanceSheet:
     ## 函数区
 
     @classmethod
-    def together_B_A_all(cls, bank: BankCommercial, bankList: TypeState):
+    def together_B_A_all(cls, bank: BankCommercial, bankList: StateType):
         """汇总各银行之总资产。"""
         bank.A_all[bankList] = bank.A_BI_all[bankList] + bank.A_exBI[bankList]
         pass
 
     @classmethod
-    def sum_B_A_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankList: TypeState, interbankList: TypeState):
+    def sum_B_A_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankList: StateType, interbankList: StateType):
         """加总各银行之银行间总资产，通过银行间资产邻接矩阵。"""
         bank.A_BI_all[:] = np.sum(interbank.A_BI * interbankList, axis=1).reshape(-1,1)
         pass
 
     @classmethod
-    def together_B_A_exBI(cls, bank: BankCommercial, bankList: TypeState):
+    def together_B_A_exBI(cls, bank: BankCommercial, bankList: StateType):
         """汇总各银行之非银行间资产``A_{-BI}``。"""
         bank.A_exBI[bankList] = bank.A_P[bankList] + bank.A_Q[bankList] + bank.A_R[bankList] + bank.A_other[bankList]
         pass
 
     # "更新各银行之银行总负债``Z_{B}``。"
-    # functions update_B_Z_all(bank:BankCommercial, interbank:BankInterbank, byWay:str = "all")
-    #     if byWay == "all":
+    # functions update_B_Z_all(bank:BankCommercial, interbank:BankInterbank, by_way:str = "all")
+    #     if by_way == 'all':
     #         together_B_Z_exBI(bank,bankList)
     #         together_B_Z_BI(bank, interbank,bankList,interbankList)
-    #     elif byWay == "Z_exBI" | byWay == "Z_D":
+    #     elif by_way == 'Z_exBI' | by_way == 'Z_D':
     #         together_B_Z_exBI(bank,bankList)
-    #     elif byWay == "Z_BI":
+    #     elif by_way == 'Z_BI':
     #         together_B_Z_BI(bank, interbank,bankList,interbankList)
     #     else:
-    #         throw(DomainError(byWay, "关键词取值错误！"))
+    #         throw(DomainError(by_way, "关键词取值错误！"))
     #         pass
     #     together_B_Z_all(bank,bankList)
     #     pass
 
     @classmethod
-    def together_B_Z_all(cls, bank: BankCommercial, bankList: TypeState):
+    def together_B_Z_all(cls, bank: BankCommercial, bankList: StateType):
         """汇总各银行之总负债。"""
         bank.Z_all[bankList] = bank.Z_BI_all[bankList] + bank.Z_exBI[bankList]
         pass
 
     @classmethod
-    def sum_B_Z_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankList: TypeState, interbankList: TypeState):
+    def sum_B_Z_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankList: StateType, interbankList: StateType):
         """加总各银行之银行间总负债，通过银行间负债邻接矩阵。"""
         bank.Z_BI_all[:] = np.sum(interbank.Z_BI * interbankList, axis=1).reshape(-1,1)
         pass
 
     @classmethod
-    def together_B_Z_exBI(cls, bank: BankCommercial, bankList: TypeState):
+    def together_B_Z_exBI(cls, bank: BankCommercial, bankList: StateType):
         """汇总各银行之非银行间负债``Z_{-BI}``。"""
         bank.Z_exBI[bankList] = bank.Z_D[bankList] + bank.Z_other[bankList]
         pass
 
     @classmethod
-    def calc_B_E_all(cls, bank: BankCommercial, bankList: TypeState):
+    def calc_B_E_all(cls, bank: BankCommercial, bankList: StateType):
         """计算各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
         bank.E_all[bankList] = np.maximum(bank.A_all[bankList] - bank.Z_all[bankList] - LESS1[bankList], 0.0)
         pass
 
     @classmethod
-    def calc_B_E_all_at_all_bank(cls, bank: BankCommercial, bankList: TypeState):
+    def calc_B_E_all_at_all_bank(cls, bank: BankCommercial, bankList: StateType):
         """计算银行体系内包括已退出银行在内的所有各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
         bank.E_all[:] = np.maximum(bank.A_all - bank.Z_all - LESS1, 0.0)
         pass
 
     @classmethod
-    def calc_B_A_all(cls, bank: BankCommercial, bankList: TypeState):
+    def calc_B_A_all(cls, bank: BankCommercial, bankList: StateType):
         """计算各银行之总资产``A_{B}``，通过所有者权益和总负债。"""
         bank.A_all[bankList] = bank.E_all[bankList] + bank.Z_all[bankList]
         pass
 
     @classmethod
-    def calc_B_Z_all(cls, bank: BankCommercial, bankList: TypeState):
+    def calc_B_Z_all(cls, bank: BankCommercial, bankList: StateType):
         """计算各银行之总负债``Z_{B}``，通过所有者权益和总资产。"""
         bank.Z_all[bankList] = bank.A_all[bankList] - bank.E_all[bankList]
         pass
@@ -106,11 +104,11 @@ class BalanceSheet:
         pass
 
     @classmethod
-    def update_B_balanceSheet(cls, bank: BankCommercial, interbank: BankInterbank, bankList: TypeState, interbankList: TypeState, byWay: str):
+    def update_B_balance_sheet(cls, bank: BankCommercial, interbank: BankInterbank, bankList: StateType, interbankList: StateType, by_way: str):
         """
         更新各银行之资产负债表变量。#状态/停用
 
-        参数``byWay``之可选项：
+        参数``by_way``之可选项：
 
         - ``all``:  更新各银行之所有资产负债表变量；
         - ``A_exBI``:  已知``A_{-BI}``，更新各银行之其余相关的资产负债表变量；
@@ -136,12 +134,12 @@ class BalanceSheet:
             interbank (): 商业银行间市场
             bankList (): 银行列表
             interbankList (): 银行间市场列表
-            byWay (): 参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
+            by_way (): 参数，通过该参数指定的变量作为已知变量，更新其他相关各变量。
 
         Returns:
 
         """
-        if byWay == "all":
+        if by_way == 'all':
             cls.together_B_A_exBI(bank, bankList)
             cls.sum_B_A_BI(bank, interbank, bankList, interbankList)
             cls.together_B_A_all(bank, bankList)
@@ -149,42 +147,42 @@ class BalanceSheet:
             cls.sum_B_Z_BI(bank, interbank, bankList, interbankList)
             cls.together_B_Z_all(bank, bankList)
             cls.calc_B_E_all(bank, bankList)
-        elif byWay == "A_exBI" or byWay == "A_P" or byWay == "A_Q" or byWay == "A_R" or byWay == "A_other":
+        elif by_way == 'A_exBI' or by_way == 'A_P' or by_way == 'A_Q' or by_way == 'A_R' or by_way == 'A_other':
             cls.together_B_A_exBI(bank, bankList)
             cls.together_B_A_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "A_BI_all":
+        elif by_way == 'A_BI_all':
             cls.together_B_A_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "Z_exBI" or byWay == "Z_D" or byWay == "Z_other":
+        elif by_way == 'Z_exBI' or by_way == 'Z_D' or by_way == 'Z_other':
             cls.together_B_Z_exBI(bank, bankList)
             cls.together_B_Z_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "Z_BI_all":
+        elif by_way == 'Z_BI_all':
             cls.together_B_Z_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "E_all and Z_all":
+        elif by_way == 'E_all and Z_all':
             cls.calc_B_A_all(bank, bankList)
-        elif byWay == "E_all and A_all":
+        elif by_way == 'E_all and A_all':
             cls.calc_B_Z_all(bank, bankList)
-        elif byWay == "calc all E_all":
+        elif by_way == 'calc all E_all':
             cls.calc_B_E_all_at_all_bank(bank, bankList)
-        elif byWay == "sum A_BI":
+        elif by_way == 'sum A_BI':
             cls.sum_B_A_BI(bank, interbank, bankList, interbankList)
             cls.together_B_A_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "sum Z_BI":
+        elif by_way == 'sum Z_BI':
             cls.sum_B_Z_BI(bank, interbank, bankList, interbankList)
             cls.together_B_Z_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "alter to Z_BI from A_BI":
+        elif by_way == 'alter to Z_BI from A_BI':
             # sum_B_A_BI(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # together_B_A_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             cls.alter_A_BI(interbank)
             # sum_B_Z_BI(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # together_B_Z_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif byWay == "alter to A_BI from Z_BI":
+        elif by_way == 'alter to A_BI from Z_BI':
             # sum_B_Z_BI(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # together_B_Z_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             cls.alter_Z_BI(interbank)
@@ -192,25 +190,25 @@ class BalanceSheet:
             # together_B_A_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
         else:
-            raise Exception("关键词byWay取词错误".format(byWay))
+            raise Exception("关键词by_way取词错误".format(by_way))
             pass
         pass
 
-        # functions update_B_balanceSheet(bank:BankCommercial, interbank:BankInterbank; byWay:str)
-        #     update_B_A_all(bank, interbank, byWay = byWay)
-        #     update_B_Z_all(bank, interbank, byWay = byWay)
-        #     update_B_E_all(bank,byWay=byWay)
+        # functions update_B_balance_sheet(bank:BankCommercial, interbank:BankInterbank; by_way:str)
+        #     update_B_A_all(bank, interbank, by_way = by_way)
+        #     update_B_Z_all(bank, interbank, by_way = by_way)
+        #     update_B_E_all(bank,by_way=by_way)
         #     pass
 
         # "更新各银行之银行总资产``A_{B}``。"
-        # functions update_B_A_all(bank:BankCommercial, interbank:BankInterbank; byWay:str = "all")
-        #     if byWay == "all":
-        #     elif byWay == "A_exBI" | byWay == "A_P" | byWay == "A_Q" | byWay == "A_R":
+        # functions update_B_A_all(bank:BankCommercial, interbank:BankInterbank; by_way:str = "all")
+        #     if by_way == 'all':
+        #     elif by_way == 'A_exBI' | by_way == 'A_P' | by_way == 'A_Q' | by_way == 'A_R':
         #         together_B_A_exBI(bank,bankList)
-        #     elif byWay == "A_BI":
+        #     elif by_way == 'A_BI':
         #         together_B_A_BI(bank, interbank,bankList,interbankList)
         #     else:
-        #         throw(DomainError(byWay, "关键词取值错误！"))
+        #         throw(DomainError(by_way, "关键词取值错误！"))
         #         pass
         #     together_B_A_all(bank,bankList)
         #     pass

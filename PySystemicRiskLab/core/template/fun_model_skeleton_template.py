@@ -1,6 +1,6 @@
-"函数：通用模型框架"
+"通用模型框架"
 
-## 函数：通用模型框架
+## 通用模型框架
 
 ##########################################
 #状态/开发
@@ -13,7 +13,7 @@ Argument:
 - A:SystemicRiskAgent: Agent群变量；
 - para:dict: 参数变量；
 - env:dict: 环境变量；
-- model:ModelComponent: 模型组件实例；
+- models:ModelModule: 模型模块实例；
 - A_data:AgentDataCollection: Agent群变量之数据；
 
 Return:
@@ -30,11 +30,11 @@ def fun_model_skeleton_template(self, A:SystemicRiskAgent, para:dict, env:dict, 
             pass
         pass
 
-    ## 运行每个过程
+    ## 处理每个过程
     for (idx_process, process) in enumerate(model.content)
         env['index_process'] = idx_process
         if env['index_process'] == env['loaded_index_process']: # 调度读取：如果当前过程等于待读取的过程，则进入继续读取。:
-            env['process_name'] = Symbol(process.functionName)
+            env['process_name'] = Symbol(process.entity_name)
             A, para, env, A_data = runProcess(A, para, env, process, A_data)
             pass
         pass # for
@@ -55,7 +55,7 @@ def fun_model_skeleton_template(self, A:SystemicRiskAgent, para:dict, env:dict, 
 
     # return BB, BI, para, env
     return A, para, env, A_data
-    pass # functions
+    pass  # method
 
 #     pass # module
 

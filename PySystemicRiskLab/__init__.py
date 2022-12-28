@@ -2,16 +2,17 @@
 
 ## 系统性风险仿真模拟
 
-##########################################
-# #状态/可扩展
-# 可引入新文件
-##########################################
 
+__version__ = '0.0.3.alpha'
 
-__version__ = '0.0.1.alpha'
-
-from dataclasses import dataclass
+## 导入重要的包 #HACK不能删除这些包
 import os
+from os import path
+import re
+from pathlib import Path, PurePath
+import importlib
+import pkgutil
+from dataclasses import dataclass
 import itertools
 from enum import Enum
 import time
@@ -20,11 +21,9 @@ import pandas as pd
 from copy import deepcopy
 from dataclasses import dataclass
 import logging
+from typing import Union, Any, Optional
+from queue import LifoQueue
+from treelib import Node, Tree
 
-# from scripts.include.include_exp_files import *
-
-## 集成核心文件
-# from .core import *
-
-## 集成模型包
-# from .models import *
+# env = {}
+# env["folderpath_project"] = os.getcwd()

@@ -1,15 +1,8 @@
-"程序：定义参数变量ParameterVariables"
+"程序：定义参数变量parameter_variables"
 
-## 程序：定义参数变量ParameterVariables
-
-##########################################
-# 状态/使用
-##########################################
-
-
-from PyScripts.settings.set_parameterVariables import set_parameterVariables
+from PyScripts.settings.set_parameter_variables import set_parameter_variables
 
 pass  # end import
 
 ## 生成字典变量
-para = set_parameterVariables  # 别名
+para = set_parameter_variables  # 别名

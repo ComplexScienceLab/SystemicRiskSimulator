@@ -1,12 +1,5 @@
 "结构体：定义待收集数据类型"
 
-##########################################
-# 状态/开发
-##########################################
-
-# from PySystemicRiskLab.core import BankCommercial, BankInterbank
-pass  # end import
-
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 
 pass  # end import
