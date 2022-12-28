@@ -42,7 +42,7 @@ function update_isHealthy_from_isInsolvent!(bank::BankCommercial, interbank::Ban
 end
 
 "计算示性向量之于银行健康的，来自流动性短缺的。" # 内容同于calc_isHealthy!。
-function calc_isHealthy_from_isIlliquity!(bank::BankCommercial, interbank::BankInterbank)
+function calc_isHealthy_from_isIlliquid!(bank::BankCommercial, interbank::BankInterbank)
     condition = (bank.E_all .>= LESS1 .&& bank.A_Q .>= LESS1 .&& bank.Shock_run_t + LESS1 .<= bank.A_Q .&& bank.on)
     if bank.hel != condition
         bank.hel = condition
@@ -51,7 +51,7 @@ function calc_isHealthy_from_isIlliquity!(bank::BankCommercial, interbank::BankI
 end
 
 "更新示性向量之于银行健康的，来自流动性短缺的。" # 内容同于update_isHealthy_from_isInsolvent!
-function update_isHealthy_from_isIlliquity!(bank::BankCommercial, interbank::BankInterbank)
+function update_isHealthy_from_isIlliquid!(bank::BankCommercial, interbank::BankInterbank)
     condition = (.!(bank.isv .|| bank.ilq) .&& bank.on)
     if bank.hel != condition
         bank.hel = condition
@@ -95,7 +95,7 @@ function update_isInsolvent_from_isHealthy!(bank::BankCommercial, interbank::Ban
 end
 
 "计算示性向量之于银行流动性短缺的。"
-function calc_isIlliquity!(bank::BankCommercial, interbank::BankInterbank)
+function calc_isIlliquid!(bank::BankCommercial, interbank::BankInterbank)
     condition = ((bank.Shock_run_t + LESS1 .>= bank.A_Q) .&& bank.on)
     if bank.ilq != condition
         bank.ilq = condition
@@ -105,8 +105,8 @@ function calc_isIlliquity!(bank::BankCommercial, interbank::BankInterbank)
     end
 end
 
-"计算示性向量之于银行流动性短缺的，来自健康的。" # 内容同于calc_isIlliquity!
-function calc_isIlliquity_from_isHealthy!(bank::BankCommercial, interbank::BankInterbank)
+"计算示性向量之于银行流动性短缺的，来自健康的。" # 内容同于calc_isIlliquid!
+function calc_isIlliquid_from_isHealthy!(bank::BankCommercial, interbank::BankInterbank)
     condition = ((bank.Shock_run_t + LESS1 .>= bank.A_Q) .&& bank.on)
     if bank.ilq != condition
         bank.ilq = condition
@@ -116,8 +116,8 @@ function calc_isIlliquity_from_isHealthy!(bank::BankCommercial, interbank::BankI
     end
 end
 
-"更新示性向量之于银行流动性短缺的，来自健康的。" # 内容同于calc_isIlliquity!
-function update_isIlliquity_from_isHealthy!(bank::BankCommercial, interbank::BankInterbank)
+"更新示性向量之于银行流动性短缺的，来自健康的。" # 内容同于calc_isIlliquid!
+function update_isIlliquid_from_isHealthy!(bank::BankCommercial, interbank::BankInterbank)
     condition = ((bank.Shock_run_t + LESS1 .>= bank.A_Q) .&& bank.on)
     if bank.ilq != condition
         bank.ilq = condition
@@ -150,7 +150,7 @@ function calc_isBankrupt_from_isInsolvent!(bank::BankCommercial, interbank::Bank
 end
 
 "计算示性向量之于破产的，来自流动性短缺的。" # 同于calc_isBankrupt!
-function calc_isBankrupt_from_isIlliquity!(bank::BankCommercial, interbank::BankInterbank)
+function calc_isBankrupt_from_isIlliquid!(bank::BankCommercial, interbank::BankInterbank)
     condition = (bank.isv .|| bank.ilq)
     if bank.br != condition
         bank.br = condition
@@ -330,7 +330,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
         if source == "any"
             init_listOfRelationInStateOfBanks!(bank, interbank)
             calc_isInsolvent!(bank, interbank)
-            calc_isIlliquity!(bank, interbank)
+            calc_isIlliquid!(bank, interbank)
             calc_isHealthy!(bank, interbank)
             calc_isBankrupt!(bank, interbank)
             together_isOn!(bank, interbank)
@@ -339,16 +339,16 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
         elseif source == "healthy"
             calc_isInsolvent_from_isHealthy!(bank, interbank)
             update_isHealthy_from_isInsolvent!(bank, interbank)
-            calc_isIlliquity_from_isHealthy!(bank, interbank)
-            update_isHealthy_from_isIlliquity!(bank, interbank)
+            calc_isIlliquid_from_isHealthy!(bank, interbank)
+            update_isHealthy_from_isIlliquid!(bank, interbank)
         elseif source == "insolvent"
             calc_isHealthy_from_isInsolvent!(bank, interbank)
             update_isInsolvent_from_isHealthy!(bank, interbank)
             calc_isBankrupt_from_isInsolvent!(bank, interbank)
         elseif source == "illiquid"
-            calc_isHealthy_from_isIlliquity!(bank, interbank)
-            update_isIlliquity_from_isHealthy!(bank, interbank)
-            calc_isBankrupt_from_isIlliquity!(bank, interbank)
+            calc_isHealthy_from_isIlliquid!(bank, interbank)
+            update_isIlliquid_from_isHealthy!(bank, interbank)
+            calc_isBankrupt_from_isIlliquid!(bank, interbank)
         elseif source == "bankrupt"
             calc_isOff_from_isBankrupt!(bank, interbank)
             update_isOn_from_isOff!(bank, interbank)
@@ -363,15 +363,15 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
         if source == "any"
             calc_isHealthy!(bank, interbank)
             update_isInsolvent_from_isHealthy!(bank, interbank)
-            update_isIlliquity_from_isHealthy!(bank, interbank)
+            update_isIlliquid_from_isHealthy!(bank, interbank)
         elseif source == "healthy"
             @testprintln "无须更新！"
         elseif source == "insolvent"
             calc_isHealthy_from_isInsolvent!(bank, interbank)
             calc_isInsolvent_from_isHealthy!(bank, interbank)
         elseif source == "illiquid"
-            calc_isHealthy_from_isIlliquity!(bank, interbank)
-            update_isIlliquity_from_isHealthy!(bank, interbank)
+            calc_isHealthy_from_isIlliquid!(bank, interbank)
+            update_isIlliquid_from_isHealthy!(bank, interbank)
         elseif source == "bankrupt"
             @testprintln "无须更新！"
         elseif source == "off"
@@ -389,8 +389,8 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
         elseif source == "insolvent"
             @testprintln "无须更新！"
         elseif source == "illiquid"
-            # calc_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
-            # calc_isHealthy_from_isIlliquity!(bank, interbank) # 错误，可以删除！
+            # calc_isIlliquid_from_isHealthy!(bank, interbank) # 错误，可以删除！
+            # calc_isHealthy_from_isIlliquid!(bank, interbank) # 错误，可以删除！
             # calc_isHealthy_from_isInsolvent!(bank, interbank) # 错误，可以删除！
             # calc_isInsolvent_from_isHealthy!(bank, interbank) # 错误，可以删除！
             @testprintln "无须更新！"
@@ -403,15 +403,15 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
         end
     elseif target == "illiquid"
         if source == "any"
-            calc_isIlliquity!(bank, interbank)
-            update_isHealthy_from_isIlliquity!(bank, interbank)
+            calc_isIlliquid!(bank, interbank)
+            update_isHealthy_from_isIlliquid!(bank, interbank)
         elseif source == "healthy"
-            calc_isIlliquity_from_isHealthy!(bank, interbank)
-            update_isHealthy_from_isIlliquity!(bank, interbank)
+            calc_isIlliquid_from_isHealthy!(bank, interbank)
+            update_isHealthy_from_isIlliquid!(bank, interbank)
         elseif source == "insolvent"
             # calc_isHealthy_from_isInsolvent!(bank, interbank) # 错误，可以删除！
             # update_isInsolvent_from_isHealthy!(bank, interbank) # 错误，可以删除！
-            # update_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
+            # update_isIlliquid_from_isHealthy!(bank, interbank) # 错误，可以删除！
             @testprintln "无须更新！"
         elseif source == "illiquid"
             @testprintln "无须更新！"
@@ -428,14 +428,14 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
         elseif source == "healthy"
             calc_isInsolvent_from_isHealthy!(bank, interbank)
             update_isHealthy_from_isInsolvent!(bank, interbank)
-            calc_isIlliquity!(bank, interbank)
-            update_isHealthy_from_isIlliquity!(bank, interbank)
+            calc_isIlliquid!(bank, interbank)
+            update_isHealthy_from_isIlliquid!(bank, interbank)
             calc_isBankrupt_from_isInsolvent!(bank, interbank)
-            calc_isBankrupt_from_isIlliquity!(bank, interbank)
+            calc_isBankrupt_from_isIlliquid!(bank, interbank)
         elseif source == "insolvent"
             calc_isBankrupt_from_isInsolvent!(bank, interbank)
         elseif source == "illiquid"
-            calc_isBankrupt_from_isIlliquity!(bank, interbank)
+            calc_isBankrupt_from_isIlliquid!(bank, interbank)
         elseif source == "bankrupt"
             @testprintln "无须更新！"
         elseif source == "off"

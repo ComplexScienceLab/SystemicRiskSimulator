@@ -88,7 +88,7 @@ function set_default_values_to_B_variables()
         falses(env[:num_bank]), # 示性向量之于银行是否已退出不存在 isOff
         trues(env[:num_bank]), # 示性向量之于银行是否健康 isHealthy
         falses(env[:num_bank]), # 示性向量之于银行是否资不抵债 isInsolvent
-        falses(env[:num_bank]), # 示性向量之于银行是否流动性短缺 isIlliquity
+        falses(env[:num_bank]), # 示性向量之于银行是否流动性短缺 isIlliquid
         falses(env[:num_bank]), # 示性向量之于银行是否破产 isBankrupt
         falses(env[:num_bank]), # 示性向量之于银行是否需要偿还借款 isNeededBoBI
         trues(env[:num_bank]), # 示性向量之于银行是否可以偿还借款 isEnabledBoBI
@@ -99,7 +99,7 @@ function set_default_values_to_B_variables()
         falses(env[:num_bank]), # 示性向量之于银行是否已经分配传染冲击 isAllocatedShock
         fill(missing, env[:num_bank]),  # 列表之于存在的银行编号 listOfExist
         fill(missing, env[:num_bank]),  # 列表之于资不抵债的银行编号 listOfInsolvent
-        fill(missing, env[:num_bank]),  # 列表之于流动性短缺的银行编号 listOfIlliquity
+        fill(missing, env[:num_bank]),  # 列表之于流动性短缺的银行编号 listOfIlliquid
         fill(missing, env[:num_bank])  # 列表之于破产的银行编号 listOfBankrupt
     )
 
@@ -125,14 +125,14 @@ function set_default_values_to_B_variables()
         falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间已退出不存在的 isOff
         trues(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间健康的 isHealthy
         falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间资不抵债的 isInsolvent
-        falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间流动性短缺的 isIlliquity
+        falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间流动性短缺的 isIlliquid
         falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间破产的 isBankrupt
         [], # 信息列表之于各银行之债权方银行编号 listOfCreditors
         [], # 信息列表之于各银行之债务方银行编号 listOfDebtors
         [], # 信息列表之于资不抵债的银行之债权方银行编号 listOfCreditorsInInsolvent
         [], # 信息列表之于资不抵债的银行之债务方银行编号 listOfDebtorsInInsolvent
-        [], # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquity
-        [], # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquity
+        [], # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquid
+        [], # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquid
         [], # 信息列表之于破产的银行之债权方银行编号 listOfCreditorsInBankrupt
         [] # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
     )
@@ -260,7 +260,7 @@ function set_manually_values_to_Bank_variables()
     # #     falses(env[:num_bank]), # 示性向量之于银行是否已退出不存在 isOff
     # #     trues(env[:num_bank]), # 示性向量之于银行是否健康 isHealthy
     # #     falses(env[:num_bank]), # 示性向量之于银行是否资不抵债 isInsolvent
-    # #     falses(env[:num_bank]), # 示性向量之于银行是否流动性短缺 isIlliquity
+    # #     falses(env[:num_bank]), # 示性向量之于银行是否流动性短缺 isIlliquid
     # #     falses(env[:num_bank]), # 示性向量之于银行是否破产 isBankrupt
     # #     falses(env[:num_bank]), # 示性向量之于银行是否需要偿还借款 isNeededBoBI
     # #     trues(env[:num_bank]), # 示性向量之于银行是否可以偿还借款 isEnabledBoBI
@@ -271,7 +271,7 @@ function set_manually_values_to_Bank_variables()
     # #     falses(env[:num_bank]), # 示性向量之于银行是否已经分配传染冲击 isAllocatedShock
     # #     fill(missing, env[:num_bank]), # 列表之于存在的银行编号 listOfExist
     # #     fill(missing, env[:num_bank]), # 列表之于资不抵债的银行编号 listOfInsolvent
-    # #     fill(missing, env[:num_bank]), # 列表之于流动性短缺的银行编号 listOfIlliquity
+    # #     fill(missing, env[:num_bank]), # 列表之于流动性短缺的银行编号 listOfIlliquid
     # #     fill(missing, env[:num_bank])  # 列表之于破产的银行编号 listOfBankrupt
     # )
 
@@ -297,14 +297,14 @@ function set_manually_values_to_Bank_variables()
     # #     falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间已退出不存在的 isOff
     # #     trues(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间健康的 isHealthy
     # #     falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间资不抵债的 isInsolvent
-    # #     falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间流动性短缺的 isIlliquity
+    # #     falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间流动性短缺的 isIlliquid
     # #     falses(env[:num_bank], env[:num_bank]), # 信息邻接矩阵之于银行间破产的 isBankrupt
     # #     [], # 信息列表之于各银行之债权方银行编号 listOfCreditors
     # #     [], # 信息列表之于各银行之债务方银行编号 listOfDebtors
     # #     [], # 信息列表之于资不抵债的银行之债权方银行编号 listOfCreditorsInInsolvent
     # #     [], # 信息列表之于资不抵债的银行之债务方银行编号 listOfDebtorsInInsolvent
-    # #     [], # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquity
-    # #     [], # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquity
+    # #     [], # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquid
+    # #     [], # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquid
     # #     [], # 信息列表之于破产的银行之债权方银行编号 listOfCreditorsInBankrupt
     # #     [] # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
     # )

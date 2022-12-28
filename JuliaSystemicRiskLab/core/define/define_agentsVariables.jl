@@ -90,7 +90,7 @@ bankInterbank_dict = Dict(pairs(set_interbankVariables))
 #     banks_isAllocatedShock,
 #     banks_listOfExist,
 #     banks_listOfInsolvent,
-#     banks_listOfIlliquity,
+#     banks_listOfIlliquid,
 #     banks_listOfBankrupt,
 # )
 
