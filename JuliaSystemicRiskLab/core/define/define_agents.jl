@@ -76,7 +76,7 @@ mutable struct BankCommercial{NDIMS1,NDIMS2}
     off::TypeState{NDIMS2} # 示性向量之于银行是否已退出不存在 isOff
     hel::TypeState{NDIMS2} # 示性向量之于银行是否健康 isHealthy
     isv::TypeState{NDIMS2} # 示性向量之于银行是否资不抵债 isInsolvent
-    ilq::TypeState{NDIMS2} # 示性向量之于银行是否流动性短缺 isIlliquity
+    ilq::TypeState{NDIMS2} # 示性向量之于银行是否流动性短缺 isIlliquid
     br::TypeState{NDIMS2} # 示性向量之于银行是否破产 isBankrupt
     nBoBI::TypeState{NDIMS2} # 示性向量之于银行是否需要偿还银行间借款 isNeededBoBI
     eBoBI::TypeState{NDIMS2} # 示性向量之于银行是否可以偿还银行间借款 isEnabledBoBI
@@ -87,7 +87,7 @@ mutable struct BankCommercial{NDIMS1,NDIMS2}
     isAllocatedShock::TypeState{NDIMS2} # 示性向量之于银行是否已经分配传染冲击 isAllocatedShock
     listOfExist::TypeList{Any} # 列表之于存在的银行编号 listOfExist
     listOfInsolvent::TypeList{Any} # 列表之于资不抵债的银行编号 listOfInsolvent
-    listOfIlliquity::TypeList{Any} # 列表之于流动性短缺的银行编号 listOfIlliquity
+    listOfIlliquid::TypeList{Any} # 列表之于流动性短缺的银行编号 listOfIlliquid
     listOfBankrupt::TypeList{Any} # 列表之于破产的银行编号 listOfBankrupt
 end
 # isDefault::TypeState{NDIMS2} # 示性向量之于银行是否违约
@@ -118,14 +118,14 @@ mutable struct BankInterbank{NDIMS2}
     off::TypeState{NDIMS2} # 信息邻接矩阵之于银行间已退出不存在的 isOff
     hel::TypeState{NDIMS2} # 信息邻接矩阵之于银行间健康的 isHealthy
     isv::TypeState{NDIMS2} # 信息邻接矩阵之于银行间资不抵债的 isInsolvent
-    ilq::TypeState{NDIMS2} # 信息邻接矩阵之于银行间流动性短缺的 isIlliquity
+    ilq::TypeState{NDIMS2} # 信息邻接矩阵之于银行间流动性短缺的 isIlliquid
     br::TypeState{NDIMS2} # 信息邻接矩阵之于银行间破产的 isBankrupt
     cre::TypeList{Any} # 信息列表之于各银行之债权方银行编号 listOfCreditors
     deb::TypeList{Any} # 信息列表之于各银行之债务方银行编号 listOfDebtors
     cre_isv::TypeList{Any} # 信息列表之于资不抵债的银行之债权方银行编号 listOfCreditorsInInsolvent
     deb_isv::TypeList{Any} # 信息列表之于资不抵债的银行之债务方银行编号 listOfDebtorsInInsolvent
-    cre_ilq::TypeList{Any} # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquity
-    deb_ilq::TypeList{Any} # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquity
+    cre_ilq::TypeList{Any} # 信息列表之于流动性短缺的银行之债权方银行编号 listOfCreditorsInIlliquid
+    deb_ilq::TypeList{Any} # 信息列表之于流动性短缺的银行之债务方银行编号 listOfDebtorsInIlliquid
     cre_br::TypeList{Any} # 信息列表之于破产的银行之债权方银行编号 listOfCreditorsInBankrupt
     deb_br::TypeList{Any} # 信息列表之于破产的银行之债务方银行编号 listOfDebtorsInBankrupt
 end
