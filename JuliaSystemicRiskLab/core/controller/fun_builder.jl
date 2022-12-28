@@ -1,4 +1,4 @@
-"生成机"
+"安装机"
 
 ##########################################
 #状态/使用
@@ -7,7 +7,7 @@
 
 
 """
-函数：阶段实例生成机
+函数：安装机
 
 Argument: 
 - stageContent::StageContent: 阶段核心内容；
@@ -20,7 +20,7 @@ function buildStage(stageContent::StageContent #=; stageSkeleton::Function=fun_s
     ## 获得阶段类型
     stageInstanceType = Symbol(stageContent.functionName)
 
-    ## 生成阶段stage
+    ## 安装阶段stage
     stage = StageComponent{stageInstanceType}(
         stageContent.id,
         stageContent.functionName,
@@ -28,7 +28,7 @@ function buildStage(stageContent::StageContent #=; stageSkeleton::Function=fun_s
         stageContent.modelFunction,
     )
 
-    @testprintln "已经生成阶段$(stageContent.functionName)"
+    @testprintln "已经安装阶段$(stageContent.functionName)"
 
     return stage
 end
@@ -36,7 +36,7 @@ end
 
 
 """
-函数：过程实例生成机
+函数：过程实例安装机
 
 Argument: 
 - processContent::ProcessContent: 过程核心内容；
@@ -49,14 +49,14 @@ function buildProcess(processContent::ProcessContent; processSkeleton::Function=
     ## 获得过程类型
     processInstanceType = Symbol(processContent.functionName)
 
-    ## 生成子阶段组件列表
+    ## 安装子阶段组件列表
     list_stage = Vector{StageComponent}([])
     for stageContent in processContent.listStageContent
         stage = buildStage(stageContent)
         append!(list_stage, [stage])
     end
 
-    ## 生成过程process
+    ## 安装过程process
     process = ProcessComponent{processInstanceType}(
         processContent.id,
         processContent.functionName,
@@ -66,7 +66,7 @@ function buildProcess(processContent::ProcessContent; processSkeleton::Function=
         list_stage,
     )
 
-    @testprintln "已经生成过程$(processContent.functionName)"
+    @testprintln "已经安装过程$(processContent.functionName)"
 
     return process
 end
@@ -74,7 +74,7 @@ end
 
 
 """
-函数：模型实例生成机
+函数：模型实例安装机
 
 Argument: 
 - modelContent::ModelContent: 模型核心内容；
@@ -88,14 +88,14 @@ function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_mode
     ## 获得模型类型
     modelInstanceType = Symbol(modelContent.functionName)
 
-    ## 生成子过程组件列表
+    ## 安装子过程组件列表
     list_process = Vector{ProcessComponent}([])
     for processContent in modelContent.listProcessContent
         process = buildProcess(processContent)
         append!(list_process, [process])
     end
 
-    ## 生成模型model
+    ## 安装模型model
     model = ModelComponent{modelInstanceType}(
         modelContent.id,
         modelContent.functionName,
@@ -104,7 +104,7 @@ function buildModel(modelContent::ModelContent; modelSkeleton::Function=fun_mode
         list_process,
     )
 
-    @testprintln "已经生成模型$(modelContent.functionName)"
+    @testprintln "已经安装模型$(modelContent.functionName)"
 
     return model
 end

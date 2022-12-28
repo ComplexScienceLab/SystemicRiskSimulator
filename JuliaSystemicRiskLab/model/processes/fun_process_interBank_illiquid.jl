@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于流动性短缺银行间挤兑流动传染冲击"
-function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function process_interBank_illiquid!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
     ## 过程：流动性短缺银行间挤兑流动传染冲击
     # env[:process_name] = "流动性短缺银行间挤兑流动传染冲击过程"
@@ -27,13 +27,13 @@ function process_interBank_illiquity!(BB::BankCommercial, BI::BankInterbank, par
         BB_Shock_t_t1 = deepcopy(BB.Shock_t)
 
         ## # 流动性短缺银行间挤兑流动传染冲击阶段
-        BB, BI = stage_interBank_illiquity_contagion_shock!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
+        BB, BI = stage_interBank_illiquid_contagion_shock!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
 
         ## # 流动性短缺银行间挤兑流动分配借贷流量阶段
-        BB, BI = stage_interBank_illiquity_allocate!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
+        BB, BI = stage_interBank_illiquid_allocate!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
 
         ## # 流动性短缺银行间挤兑流动执行借贷流量阶段
-        BB, BI = stage_interBank_illiquity_repay!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
+        BB, BI = stage_interBank_illiquid_repay!(BB, BI, b, ib, para, env)        #= @scheduler_stage  =#
 
         ## TODO存储数据
         # A_data.BB[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据

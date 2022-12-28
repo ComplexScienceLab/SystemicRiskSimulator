@@ -5,7 +5,7 @@
 ##########################################
 
 "函数：过程之于银行外部挤兑流动冲击"
-function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
+function process_exBank_illiquid!(BB::BankCommercial, BI::BankInterbank, para::Dict, env::Dict)
 
     ## 过程：银行外部挤兑流动传染冲击
     # env[:process_name] = "银行外部挤兑流动传染冲击过程"
@@ -28,7 +28,7 @@ function process_exBank_illiquity!(BB::BankCommercial, BI::BankInterbank, para::
     ## # 银行外部挤兑流动冲击阶段
     # env[:stage_name] = "银行外部挤兑流动冲击阶段"
     # @testprintln "阶段：$(env[:stage_name])"
-    BB, BI = stage_exBank_illiquity_shock!(BB, BI, b, ib, para, env)    #= @scheduler_stage  =#
+    BB, BI = stage_exBank_illiquid_shock!(BB, BI, b, ib, para, env)    #= @scheduler_stage  =#
 
     ## TODO存储数据
     # A_data.BB[env[:tau]] = deepcopy(BB) # 存储该回合传染结果数据

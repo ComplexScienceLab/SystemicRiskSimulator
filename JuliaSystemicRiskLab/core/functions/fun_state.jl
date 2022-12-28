@@ -304,7 +304,7 @@ end
 - `any`:  到任意状态；
 - `healthy`:  到健康状态；
 - `insolvent`:  到资不抵债状态；
-- `illiquity`:  到流动性短缺状态；
+- `illiquid`:  到流动性短缺状态；
 - `bankrupt`:  到破产状态；
 - `off`:  到退出状态；
 - `needed repay BI`:  到是否需要偿还银行间借款状态；
@@ -318,7 +318,7 @@ end
 - `any`:  从任意状态出发；
 - `healthy`:  从健康状态出发；
 - `insolvent`:  从资不抵债状态出发；
-- `illiquity`:  从流动性短缺状态出发；
+- `illiquid`:  从流动性短缺状态出发；
 - `bankrupt`:  从破产状态出发；
 - `off`:  从退出状态出发；
 - `needed repay BI`:  到是否需要偿还银行间借款状态；
@@ -345,7 +345,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
             calc_isHealthy_from_isInsolvent!(bank, interbank)
             update_isInsolvent_from_isHealthy!(bank, interbank)
             calc_isBankrupt_from_isInsolvent!(bank, interbank)
-        elseif source == "illiquity"
+        elseif source == "illiquid"
             calc_isHealthy_from_isIlliquity!(bank, interbank)
             update_isIlliquity_from_isHealthy!(bank, interbank)
             calc_isBankrupt_from_isIlliquity!(bank, interbank)
@@ -369,7 +369,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
         elseif source == "insolvent"
             calc_isHealthy_from_isInsolvent!(bank, interbank)
             calc_isInsolvent_from_isHealthy!(bank, interbank)
-        elseif source == "illiquity"
+        elseif source == "illiquid"
             calc_isHealthy_from_isIlliquity!(bank, interbank)
             update_isIlliquity_from_isHealthy!(bank, interbank)
         elseif source == "bankrupt"
@@ -388,7 +388,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
             update_isHealthy_from_isInsolvent!(bank, interbank)
         elseif source == "insolvent"
             @testprintln "无须更新！"
-        elseif source == "illiquity"
+        elseif source == "illiquid"
             # calc_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
             # calc_isHealthy_from_isIlliquity!(bank, interbank) # 错误，可以删除！
             # calc_isHealthy_from_isInsolvent!(bank, interbank) # 错误，可以删除！
@@ -401,7 +401,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
         else
             throw(DomainError(byWay, "关键词source取值错误！"))
         end
-    elseif target == "illiquity"
+    elseif target == "illiquid"
         if source == "any"
             calc_isIlliquity!(bank, interbank)
             update_isHealthy_from_isIlliquity!(bank, interbank)
@@ -413,7 +413,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
             # update_isInsolvent_from_isHealthy!(bank, interbank) # 错误，可以删除！
             # update_isIlliquity_from_isHealthy!(bank, interbank) # 错误，可以删除！
             @testprintln "无须更新！"
-        elseif source == "illiquity"
+        elseif source == "illiquid"
             @testprintln "无须更新！"
         elseif source == "bankrupt"
             @testprintln "无须更新！"
@@ -434,7 +434,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
             calc_isBankrupt_from_isIlliquity!(bank, interbank)
         elseif source == "insolvent"
             calc_isBankrupt_from_isInsolvent!(bank, interbank)
-        elseif source == "illiquity"
+        elseif source == "illiquid"
             calc_isBankrupt_from_isIlliquity!(bank, interbank)
         elseif source == "bankrupt"
             @testprintln "无须更新！"
@@ -451,7 +451,7 @@ function update_B_state!(bank::BankCommercial, interbank::BankInterbank; target:
             @testprintln "无须更新！"
         elseif source == "insolvent"
             @testprintln "无须更新！"
-        elseif source == "illiquity"
+        elseif source == "illiquid"
             @testprintln "无须更新！"
         elseif source == "bankrupt"
             calc_isOff_from_isBankrupt!(bank, interbank)

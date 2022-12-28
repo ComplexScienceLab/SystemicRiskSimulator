@@ -266,7 +266,7 @@ function is_process!(BB::BankCommercial, BB_isv_t1::TypeState{1}, BB_Shock_t_t1:
     if stageFunctionName == process.content[end].functionName # 如果当前阶段是所处过程之最后的阶段，则继续判断，否则过程未结束，后续继续运行。
         if (
             process.functionName == :process_exBank_insolvent ||
-            process.functionName == :process_exBank_illiquity ||
+            process.functionName == :process_exBank_illiquid ||
             process.functionName == :process_exBank_bankrupt
         )
             is_process = false
