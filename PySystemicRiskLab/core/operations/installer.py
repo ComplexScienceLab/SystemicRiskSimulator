@@ -6,7 +6,7 @@ from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCo
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank, SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 from PySystemicRiskLab.core.define.define_entity import Entity
-from PySystemicRiskLab.core.define.define_environment_variables import env
+from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.define.define_type import IdsType
 from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
@@ -263,7 +263,7 @@ class DataInstaller:
         )
 
         return bank, interbank
-        pass  # fun
+        pass  # method
 
     @classmethod
     def set_randomly_values_to_Bank_variables(cls):

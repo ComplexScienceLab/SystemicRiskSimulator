@@ -4,10 +4,9 @@
 #状态/使用
 ##########################################
 
-import numpy as np
-
+from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
-from PySystemicRiskLab.core.define.define_environment_variables import env
+from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import StateType
 
 pass  # end import

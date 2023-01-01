@@ -4,7 +4,7 @@
 
 from PySystemicRiskLab import Any, deepcopy
 from PySystemicRiskLab.core.define.define_type import EnvironmentVariableType
-from PySystemicRiskLab.core.define.define_environment_variables import env
+from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_entity import Entity
 from PySystemicRiskLab.core.operations.processor import Processor  # HACK不能删除
 

@@ -2,7 +2,7 @@
 
 from PySystemicRiskLab import os, time, itertools, pkgutil, importlib, re, logging
 from PySystemicRiskLab.core.define.define_type import EnvironmentVariableType
-from PySystemicRiskLab.core.define.define_environment_variables import env
+from PySystemicRiskLab.core.define.define_environmentVariables import env
 
 pass  # end import
 

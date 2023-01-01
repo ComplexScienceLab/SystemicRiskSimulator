@@ -121,7 +121,7 @@ class Operator:
             logging.info("相关实验参数：" + str(para) + "\n")
 
             ## 安装本次实验所需的数据
-            A = DataInstaller.init_B_and_BI(init_method=env['init_method'])
+            A = DataInstaller.install_data(init_method=env['init_method'])
             A_data = Collector.collect(A, None, env)
             pass  # if
 

@@ -3,7 +3,7 @@
 
 
 
-from PySystemicRiskLab.core.define.define_environment_variables import env
+from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import *
 
 pass  # end import
@@ -197,7 +197,7 @@ if __name__ == "__main__":
     bankCommercial = BankCommercial(
         id_agent=np.arange(1, env['num_bank'] + 1, step=1),  # agent 之编号 id
         abbr=np.array(["1", "2", "3", "4", "5"]),  # 缩写 abbr
-        name=np.array(["BK1", "BK2", "BK3", "BK4", "BK5"]),  # 全名 name
+        name=np.array(["Bank_1", "Bank_2", "Bank_3", "Bank_4", "Bank_5"]),  # 全名 name
         A_all=np.zeros((env['num_bank'], 1)),  # 总资产 A_all: $A_all=A_BI+A_exBI$
         A_BI_all=np.array([[2185.24, 398.37, 730.99, 1357.75, 2717.39]]),  # 银行间资产加总 A_BI_all
         A_exBI=np.zeros((env['num_bank'], 1)),  # 非银行间资产 A_exBI: $A_exBI=A_P+A_Q+A_R+A_other$

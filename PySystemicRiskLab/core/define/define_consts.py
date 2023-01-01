@@ -9,7 +9,7 @@ pass  # end import
 
 import numpy as np
 
-from PySystemicRiskLab.core.define.define_environment_variables import env
+from PySystemicRiskLab.core.define.define_environmentVariables import env
 
 pass  # end import
 

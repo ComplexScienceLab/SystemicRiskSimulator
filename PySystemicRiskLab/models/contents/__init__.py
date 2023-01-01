@@ -2,7 +2,7 @@
 
 ## 方案1：用于自行导入以下内容
 from PySystemicRiskLab import Path, re, pkgutil, importlib
-from PySystemicRiskLab.core.define.define_environment_variables import env
+from PySystemicRiskLab.core.define.define_environmentVariables import env
 
 folderpath_package = Path(__file__).parent  # 获取包文件夹路径
 pattern = r"[\/\\]"

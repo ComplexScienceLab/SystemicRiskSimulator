@@ -7,7 +7,7 @@ from PySystemicRiskLab import pd, deepcopy, path, Optional, logging
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
-from PySystemicRiskLab.core.define.define_environment_variables import env
+from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import *
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
 
