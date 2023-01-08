@@ -3,10 +3,9 @@
 ## 功能函数集：计算商业银行之资产负债表结构。
 
 
+from PySystemicRiskLab import np, pd
 
-from PySystemicRiskLab import np
-
-from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
+# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_consts import LESS1
 from PySystemicRiskLab.core.define.define_type import StateType
 
@@ -17,25 +16,25 @@ class BalanceSheet:
     ## 函数区
 
     @classmethod
-    def together_B_A_all(cls, bank: BankCommercial, bankList: StateType):
+    def together_B_A_all(cls, bank: pd.Series, bankList: StateType):
         """汇总各银行之总资产。"""
         bank.A_all[bankList] = bank.A_BI_all[bankList] + bank.A_exBI[bankList]
         pass
 
     @classmethod
-    def sum_B_A_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankList: StateType, interbankList: StateType):
+    def sum_B_A_BI(cls, bank: pd.Series, interbank: pd.Series, bankList: StateType, interbankList: StateType):
         """加总各银行之银行间总资产，通过银行间资产邻接矩阵。"""
-        bank.A_BI_all[:] = np.sum(interbank.A_BI * interbankList, axis=1).reshape(-1,1)
+        bank.A_BI_all[:] = np.sum(interbank.A_BI * interbankList, axis=1).reshape(-1, 1)
         pass
 
     @classmethod
-    def together_B_A_exBI(cls, bank: BankCommercial, bankList: StateType):
+    def together_B_A_exBI(cls, bank: pd.Series, bankList: StateType):
         """汇总各银行之非银行间资产``A_{-BI}``。"""
         bank.A_exBI[bankList] = bank.A_P[bankList] + bank.A_Q[bankList] + bank.A_R[bankList] + bank.A_other[bankList]
         pass
 
     # "更新各银行之银行总负债``Z_{B}``。"
-    # functions update_B_Z_all(bank:BankCommercial, interbank:BankInterbank, by_way:str = "all")
+    # functions update_B_Z_all(bank: pd.Series, interbank: pd.Series, by_way:str = "all")
     #     if by_way == 'all':
     #         together_B_Z_exBI(bank,bankList)
     #         together_B_Z_BI(bank, interbank,bankList,interbankList)
@@ -50,61 +49,61 @@ class BalanceSheet:
     #     pass
 
     @classmethod
-    def together_B_Z_all(cls, bank: BankCommercial, bankList: StateType):
+    def together_B_Z_all(cls, bank: pd.Series, bankList: StateType):
         """汇总各银行之总负债。"""
         bank.Z_all[bankList] = bank.Z_BI_all[bankList] + bank.Z_exBI[bankList]
         pass
 
     @classmethod
-    def sum_B_Z_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankList: StateType, interbankList: StateType):
+    def sum_B_Z_BI(cls, bank: pd.Series, interbank: pd.Series, bankList: StateType, interbankList: StateType):
         """加总各银行之银行间总负债，通过银行间负债邻接矩阵。"""
-        bank.Z_BI_all[:] = np.sum(interbank.Z_BI * interbankList, axis=1).reshape(-1,1)
+        bank.Z_BI_all[:] = np.sum(interbank.Z_BI * interbankList, axis=1).reshape(-1, 1)
         pass
 
     @classmethod
-    def together_B_Z_exBI(cls, bank: BankCommercial, bankList: StateType):
+    def together_B_Z_exBI(cls, bank: pd.Series, bankList: StateType):
         """汇总各银行之非银行间负债``Z_{-BI}``。"""
         bank.Z_exBI[bankList] = bank.Z_D[bankList] + bank.Z_other[bankList]
         pass
 
     @classmethod
-    def calc_B_E_all(cls, bank: BankCommercial, bankList: StateType):
+    def calc_B_E_all(cls, bank: pd.Series, bankList: StateType):
         """计算各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
         bank.E_all[bankList] = np.maximum(bank.A_all[bankList] - bank.Z_all[bankList] - LESS1[bankList], 0.0)
         pass
 
     @classmethod
-    def calc_B_E_all_at_all_bank(cls, bank: BankCommercial, bankList: StateType):
+    def calc_B_E_all_at_all_bank(cls, bank: pd.Series, bankList: StateType):
         """计算银行体系内包括已退出银行在内的所有各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
         bank.E_all[:] = np.maximum(bank.A_all - bank.Z_all - LESS1, 0.0)
         pass
 
     @classmethod
-    def calc_B_A_all(cls, bank: BankCommercial, bankList: StateType):
+    def calc_B_A_all(cls, bank: pd.Series, bankList: StateType):
         """计算各银行之总资产``A_{B}``，通过所有者权益和总负债。"""
         bank.A_all[bankList] = bank.E_all[bankList] + bank.Z_all[bankList]
         pass
 
     @classmethod
-    def calc_B_Z_all(cls, bank: BankCommercial, bankList: StateType):
+    def calc_B_Z_all(cls, bank: pd.Series, bankList: StateType):
         """计算各银行之总负债``Z_{B}``，通过所有者权益和总资产。"""
         bank.Z_all[bankList] = bank.A_all[bankList] - bank.E_all[bankList]
         pass
 
     @classmethod
-    def alter_Z_BI(cls, interbank: BankInterbank):
+    def alter_Z_BI(cls, interbank: pd.Series):
         """转换银行间负债为资产。"""
         interbank.A_BI = interbank.Z_BI.T
         pass
 
     @classmethod
-    def alter_A_BI(cls, interbank: BankInterbank):
+    def alter_A_BI(cls, interbank: pd.Series):
         """转换银行间资产为负债。"""
         interbank.Z_BI = interbank.A_BI.T
         pass
 
     @classmethod
-    def update_B_balance_sheet(cls, bank: BankCommercial, interbank: BankInterbank, bankList: StateType, interbankList: StateType, by_way: str):
+    def update_B_balance_sheet(cls, bank: pd.Series, interbank: pd.Series, bankList: StateType, interbankList: StateType, by_way: str):
         """
         更新各银行之资产负债表变量。#状态/停用
 
@@ -194,14 +193,14 @@ class BalanceSheet:
             pass
         pass
 
-        # functions update_B_balance_sheet(bank:BankCommercial, interbank:BankInterbank; by_way:str)
+        # functions update_B_balance_sheet(bank: pd.Series, interbank: pd.Series; by_way:str)
         #     update_B_A_all(bank, interbank, by_way = by_way)
         #     update_B_Z_all(bank, interbank, by_way = by_way)
         #     update_B_E_all(bank,by_way=by_way)
         #     pass
 
         # "更新各银行之银行总资产``A_{B}``。"
-        # functions update_B_A_all(bank:BankCommercial, interbank:BankInterbank; by_way:str = "all")
+        # functions update_B_A_all(bank: pd.Series, interbank: pd.Series; by_way:str = "all")
         #     if by_way == 'all':
         #     elif by_way == 'A_exBI' | by_way == 'A_P' | by_way == 'A_Q' | by_way == 'A_R':
         #         together_B_A_exBI(bank,bankList)

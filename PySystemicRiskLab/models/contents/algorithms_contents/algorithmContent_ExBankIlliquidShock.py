@@ -2,8 +2,8 @@
 
 
 
-from PySystemicRiskLab import logging
-from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
+from PySystemicRiskLab import logging, pd
+# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.functions.fun_shock import Shock
 from PySystemicRiskLab.core.functions.fun_state import BankState
@@ -13,7 +13,7 @@ pass  # end import
 
 
 
-def algorithmContent_ExBankIlliquidShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):  # = BB_t1:BankCommercial, BI_t1:BankInterbank,  =#:
+def algorithmContent_ExBankIlliquidShock(BB: pd.Series, BI: pd.Series, b: StateType, ib: StateType, para: dict, env: dict):  # = BB_t1:BankCommercial, BI_t1:BankInterbank,  =#:
     ## # 银行外部挤兑流动冲击算法
     # env['stage_name'] = "银行外部挤兑流动冲击算法"
     

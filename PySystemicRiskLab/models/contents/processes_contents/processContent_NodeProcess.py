@@ -4,7 +4,7 @@
 
 pass  # end import
 
-from PySystemicRiskLab import logging, deepcopy,dataclass
+from PySystemicRiskLab import logging, pd, deepcopy,dataclass
 from PySystemicRiskLab.core.operations.operator import Operator
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection

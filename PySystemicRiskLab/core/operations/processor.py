@@ -1,7 +1,7 @@
 """
 处理机
 """
-from PySystemicRiskLab import logging, deepcopy, dataclass
+from PySystemicRiskLab import logging, pd, deepcopy, dataclass
 from PySystemicRiskLab.tools.tools import Tools
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent

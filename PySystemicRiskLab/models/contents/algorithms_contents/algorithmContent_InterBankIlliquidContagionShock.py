@@ -2,8 +2,8 @@
 
 
 
-from PySystemicRiskLab import np, logging
-from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
+from PySystemicRiskLab import logging, np, pd
+# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.functions.fun_shock import Shock
 from PySystemicRiskLab.core.functions.fun_state import BankState
@@ -12,7 +12,7 @@ pass  # end import
 
 
 
-def algorithmContent_InterBankIlliquidContagionShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def algorithmContent_InterBankIlliquidContagionShock(BB: pd.Series, BI: pd.Series, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 流动性短缺银行间挤兑流动传染冲击
     # env['stage_name'] = "流动性短缺银行间挤兑流动传染冲击算法"
     

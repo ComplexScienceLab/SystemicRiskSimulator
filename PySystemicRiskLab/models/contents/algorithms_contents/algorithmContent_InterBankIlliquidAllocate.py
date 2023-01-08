@@ -4,8 +4,8 @@
 # 状态/使用
 ##########################################
 
-from PySystemicRiskLab import np, logging
-from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
+from PySystemicRiskLab import logging, np, pd
+# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.functions.fun_transfer import BankTransfer
@@ -13,7 +13,7 @@ from PySystemicRiskLab.core.functions.fun_transfer import BankTransfer
 pass  # end import
 
 
-def algorithmContent_InterBankIlliquidAllocate(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def algorithmContent_InterBankIlliquidAllocate(BB: pd.Series, BI: pd.Series, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 流动性短缺银行间挤兑流动分配借贷流量算法
     # env['stage_name'] = "银行间挤兑流动分配借贷流量算法"
 

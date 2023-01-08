@@ -19,11 +19,11 @@ proccssEntityData_InterBankIlliquid = dict(
     ]),
     process=list([
         dict(
-            condition="A.BB.ilq.any() != A_data.BB[env['round']-1]['dataBB'].ilq.any()",
+            condition="A.BB.ilq.any() != A_data.BB.ilq[env['round']-1].any()",
             flow="processEntity_InterBankIlliquid",
         ),
         dict(
-            condition="A.BB.ilq.all() == A_data.BB[env['round']-1]['dataBB'].ilq.all()",
+            condition="A.BB.ilq.all() == A_data.BB.ilq[env['round']-1].all()",
             flow=None,
         ),
         # dict( #HACK 先暂时不考虑，因为这个过程还未完成。目前为了测试调度框架。

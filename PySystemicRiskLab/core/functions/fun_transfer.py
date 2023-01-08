@@ -1,8 +1,11 @@
+"功能函数集：计算转移。"
 
+##########################################
+# 状态/使用
+##########################################
 
-import numpy as np
-
-from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
+from PySystemicRiskLab import np, pd
+# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import StateType, MoneyType
 
@@ -55,97 +58,97 @@ class BankTransfer:
         pass
 
     @classmethod
-    def together_T_all(cls, bank: BankCommercial, bankState: StateType):
+    def together_T_all(cls, bank: pd.Series, bankState: StateType):
         """汇总各银行之总交易流量``T_{all}``。"""
         bank.T_all[bankState] = bank.Lo_all[bankState] + bank.Bi_all[bankState] + bank.Bo_all[bankState] + bank.Li_all[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Lo_all(cls, bank: BankCommercial, bankState: StateType):
+    def together_transfer_B_Lo_all(cls, bank: pd.Series, bankState: StateType):
         """汇总各银行之总贷款流出``Lo_{B}``。"""
         bank.Lo_all[bankState] = bank.Lo_BI_all[bankState] + bank.Lo_exBI[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Lo_exBI(cls, bank: BankCommercial, bankState: StateType):
+    def together_transfer_B_Lo_exBI(cls, bank: pd.Series, bankState: StateType):
         """汇总各银行之非银行间贷款流出``Lo_{-BI}``。"""
         bank.Lo_exBI[bankState] = bank.Lo_P[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Li_all(cls, bank: BankCommercial, bankState: StateType):
+    def together_transfer_B_Li_all(cls, bank: pd.Series, bankState: StateType):
         """汇总各银行之总贷款流入``Li_{B}``。"""
         bank.Li_all[bankState] = bank.Li_BI_all[bankState] + bank.Li_exBI[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Li_exBI(cls, bank: BankCommercial, bankState: StateType):
+    def together_transfer_B_Li_exBI(cls, bank: pd.Series, bankState: StateType):
         """汇总各银行之非银行间贷款流入``Li_{-BI}``。"""
         bank.Li_exBI[bankState] = bank.Li_P[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Bo_all(cls, bank: BankCommercial, bankState: StateType):
+    def together_transfer_B_Bo_all(cls, bank: pd.Series, bankState: StateType):
         """汇总各银行之总借款流出``Bo_{B}``。"""
         bank.Bo_all[bankState] = bank.Bo_BI_all[bankState] + bank.Bo_exBI[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Bo_exBI(cls, bank: BankCommercial, bankState: StateType):
+    def together_transfer_B_Bo_exBI(cls, bank: pd.Series, bankState: StateType):
         """汇总各银行之非银行间借款流出``Bo_{-BI}``。"""
         bank.Bo_exBI[bankState] = bank.Bo_D[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Bi_all(cls, bank: BankCommercial, bankState: StateType):
+    def together_transfer_B_Bi_all(cls, bank: pd.Series, bankState: StateType):
         """汇总各银行之总借款流入``Bi_{B}``。"""
         bank.Bi_all[bankState] = bank.Bi_BI_all[bankState] + bank.Bi_exBI[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Bi_exBI(cls, bank: BankCommercial, bankState: StateType):
+    def together_transfer_B_Bi_exBI(cls, bank: pd.Series, bankState: StateType):
         """汇总各银行之非银行间借款流入``Bi_{-BI}``。"""
         bank.Bi_exBI[bankState] = bank.Bi_D[bankState]
         pass
 
     @classmethod
-    def alter_transfer_Lo_BI(cls, interbank: BankInterbank, interbankState: StateType):
+    def alter_transfer_Lo_BI(cls, interbank: pd.Series, interbankState: StateType):
         """转换银行间贷款流出``Lo_{BI}``为银行间借款流入``Bi_{BI}``。"""
         interbank.Bi_BI = interbank.Lo_BI.T
         pass
 
     @classmethod
-    def alter_transfer_Bi_BI(cls, interbank: BankInterbank, interbankState: StateType):
+    def alter_transfer_Bi_BI(cls, interbank: pd.Series, interbankState: StateType):
         """转换银行间借款流入``Bi_{BI}``为银行间贷款流出``Lo_{BI}``。"""
         interbank.Lo_BI = interbank.Bi_BI.T
         pass
 
     @classmethod
-    def alter_transfer_Bo_BI(cls, interbank: BankInterbank, interbankState: StateType):
+    def alter_transfer_Bo_BI(cls, interbank: pd.Series, interbankState: StateType):
         """转换银行间借款流出``Bo_{BI}``为银行间贷款流入``Li_{BI}``。"""
         interbank.Li_BI = interbank.Bo_BI.T
         pass
 
     @classmethod
-    def alter_transfer_Li_BI(cls, interbank: BankInterbank, interbankState: StateType):
+    def alter_transfer_Li_BI(cls, interbank: pd.Series, interbankState: StateType):
         """转换银行间贷款流入``Li_{BI}``为银行间借款流出``Bo_{BI}``。"""
         interbank.Bo_BI = interbank.Li_BI.T
         pass
 
     @classmethod
-    def sum_transfer_Bi_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
+    def sum_transfer_Bi_BI(cls, bank: pd.Series, interbank: pd.Series, bankState: StateType, interbankState: StateType):
         """加总各银行之银行间借款流入``Bi_{B}``，通过银行间借款流入邻接矩阵``Bi_{BI}``。"""
         bank.Bi_BI_all[:] = np.sum(interbank.Bi_BI * interbankState, axis=1).reshape(-1, 1)
         pass
 
     @classmethod
-    def sum_transfer_Li_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
+    def sum_transfer_Li_BI(cls, bank: pd.Series, interbank: pd.Series, bankState: StateType, interbankState: StateType):
         """加总各银行之银行间贷款流入``Li_{B}``，通过银行间贷款流入邻接矩阵``Li_{BI}``。"""
         bank.Li_BI_all[:] = np.sum(interbank.Li_BI * interbankState, axis=1).reshape(-1, 1)
         pass
 
     @classmethod
-    def clear_all_transfer(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
+    def clear_all_transfer(cls, bank: pd.Series, interbank: pd.Series, bankState: StateType, interbankState: StateType):
         """清零所有流量变量值"""
         bank.Lo_BI_all[bankState] = np.zeros((env['num_bank'], 1))[bankState]
         bank.Lo_P[bankState] = np.zeros((env['num_bank'], 1))[bankState]
@@ -160,7 +163,7 @@ class BankTransfer:
         pass
 
     @classmethod
-    def update_B_transfer(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str = "all"):
+    def update_B_transfer(cls, bank: pd.Series, interbank: pd.Series, bankState: StateType, interbankState: StateType, by_way: str = "all"):
         """
         更新各银行之借贷流量变量。
 

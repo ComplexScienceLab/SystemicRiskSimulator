@@ -8,6 +8,7 @@ __version__ = '0.0.3.alpha'
 ## 导入重要的包 #HACK不能删除这些包
 import os
 from os import path
+import warnings
 import re
 from pathlib import Path, PurePath
 import importlib

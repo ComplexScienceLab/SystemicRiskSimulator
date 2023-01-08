@@ -1,16 +1,17 @@
 "结构体：定义待收集数据类型"
 
-from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
+from PySystemicRiskLab import pd
+# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 
 pass  # end import
 
 
 class AgentDataCollection:
     """
-    #TODO 定义待收集数据类型
+    个体众数据集
     """
-    BB: list
-    BI: list
+    BB: pd.Series
+    BI: pd.Series
 
     # # @classmethod
     # def __init__(self):
@@ -19,7 +20,7 @@ class AgentDataCollection:
     #     pass
 
     # @classmethod
-    def __init__(self, BB: BankCommercial, BI: BankInterbank):
+    def __init__(self, BB: pd.Series, BI: pd.Series):
         self.BB = BB
         self.BI = BI
         pass

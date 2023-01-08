@@ -2,7 +2,7 @@
 执行机
 """
 
-from PySystemicRiskLab import logging
+from PySystemicRiskLab import logging, pd
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_entity import Entity

@@ -1,8 +1,8 @@
 """银行间挤兑流动执行借贷流量算法"""
 
 
-from PySystemicRiskLab import logging
-from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
+from PySystemicRiskLab import logging, pd
+# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
 from PySystemicRiskLab.core.functions.fun_shock import Shock
@@ -14,7 +14,7 @@ pass  # end import
 
 
 
-def algorithmContent_InterBankIlliquidRepay(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def algorithmContent_InterBankIlliquidRepay(BB: pd.Series, BI: pd.Series, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 流动性短缺银行间挤兑流动执行借贷流量算法
     # env['stage_name'] = "银行间挤兑流动执行借贷流量算法"
     
