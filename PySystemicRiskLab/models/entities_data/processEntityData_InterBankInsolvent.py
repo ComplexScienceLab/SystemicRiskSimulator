@@ -18,11 +18,11 @@ processEntityData_InterBankInsolvent = dict(
     ]),
     process=list([
         dict(
-            condition="A.BB.isv.any() != A_data.BB.isv[env['round']-1].any()",
+            condition="A.BB.isv.any() != A_data.BB[env['round']-1]['dataBB'].isv.any()",
             flow="processEntity_InterBankInsolvent",
         ),
         dict(
-            condition="A.BB.isv.all() == A_data.BB.isv[env['round']-1].all()",
+            condition="A.BB.isv.all() == A_data.BB[env['round']-1]['dataBB'].isv.all()",
             flow="processEntity_ExBankIlliquid",
         ),
     ]),

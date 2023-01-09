@@ -10,7 +10,8 @@ from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.operations.collector import Collector
 from PySystemicRiskLab.core.operations.executer import Executer
-from PySystemicRiskLab.core.operations.installer import ModelInstaller, DataInstaller
+from PySystemicRiskLab.core.operations.model_installer import ModelInstaller
+from PySystemicRiskLab.core.operations.data_installer import DataInstaller
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
 from PySystemicRiskLab.tools.tools import Tools
 

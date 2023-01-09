@@ -2,8 +2,8 @@
 
 
 
-from PySystemicRiskLab import logging, np, pd
-# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
+from PySystemicRiskLab import np, logging
+from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.functions.fun_shock import Shock
 from PySystemicRiskLab.core.functions.fun_state import BankState
@@ -12,7 +12,7 @@ pass  # end import
 
 
 
-def algorithmContent_InterBankIlliquidContagionShock(BB: pd.Series, BI: pd.Series, b: StateType, ib: StateType, para: dict, env: dict):
+def algorithmContent_InterBankIlliquidContagionShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 流动性短缺银行间挤兑流动传染冲击
     # env['stage_name'] = "流动性短缺银行间挤兑流动传染冲击算法"
     
@@ -23,7 +23,7 @@ def algorithmContent_InterBankIlliquidContagionShock(BB: pd.Series, BI: pd.Serie
     BB.Shock_P_run_s[i_nas] = abs((BB.Shock_run_t[i_nas] - BB.A_Q[i_nas]) / (BB.A_P[i_nas] + BB.A_BI_all[i_nas]) * BB.A_P[i_nas])  # 银行内冲击传导至银行厂商贷款传染冲击
     BB.is_allocated_Shock |= BB.ilq  # 更新已经分配传染冲击的银行
     for i in np.where(i_nas)[0]:  # 流动性短缺银行计划收回资产，导致其对各债务银行之资产变动，造成流动性短缺银行间挤兑流动冲击
-        BI.Shock_BI_run_ilq[BI.deb[i], i] = BI.A_BI[i, BI.deb[i]] * BB.Shock_BI_run_ilq_s[i] / BB.A_BI_all[i]
+        BI.Shock_BI_run_ilq[BI.deb_ilq[i], i] = BI.A_BI[i, BI.deb_ilq[i]] * BB.Shock_BI_run_ilq_s[i] / BB.A_BI_all[i]
         pass
     Shock.update_B_Shock(BB, BI, b, ib, by_way='Shock_BI_run_ilq')  # 更新挤兑流动冲击源头变量Shock_run_t
     BankState.update_B_state(BB, BI, target='illiquid', source='healthy')

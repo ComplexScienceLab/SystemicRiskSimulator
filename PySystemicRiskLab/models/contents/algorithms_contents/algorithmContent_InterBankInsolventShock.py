@@ -2,8 +2,8 @@
 
 
 
-from PySystemicRiskLab import logging, np, pd
-# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
+from PySystemicRiskLab import np, logging
+from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
 from PySystemicRiskLab.core.functions.fun_shock import Shock
@@ -13,7 +13,7 @@ pass  # end import
 
 
 
-def algorithmContent_InterBankInsolventShock(BB: pd.Series, BI: pd.Series, b: StateType, ib: StateType, para: dict, env: dict):
+def algorithmContent_InterBankInsolventShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 资不抵债银行间违约损失冲击算法
     # env['stage_name'] = "资不抵债银行间违约损失冲击算法"
     

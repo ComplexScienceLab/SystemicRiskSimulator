@@ -4,8 +4,8 @@
 # 状态/使用
 ##########################################
 
-from PySystemicRiskLab import np, pd
-# from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
+from PySystemicRiskLab import np
+from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import StateType
 
@@ -20,144 +20,144 @@ class Shock:
     ## 函数区
 
     # "汇总综合外生冲击。" #HACK无用
-    # functions together_Shock_exBI(bank: pd.Series, bankState:StateType)
+    # functions together_Shock_exBI(bank:BankCommercial, bankState:StateType)
     #     bank.Shock_exBI_t[bankState] = paras['theta_Shock_exBI_t'] * bank.Shock_P_def_t[bankState] + (1 - paras['theta_Shock_exBI_t']) * bank.Shock_D_run_t[bankState]
     #     pass
 
     @classmethod
-    def together_Shock_target(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_target(cls, bank: BankCommercial, bankState: StateType):
         """汇总总冲击目标"""
         bank.Shock_t[bankState] = bank.Shock_exBI_t[bankState] + bank.Shock_BI_t[bankState]
         pass
 
     @classmethod
-    def together_Shock_source(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_source(cls, bank: BankCommercial, bankState: StateType):
         """总总冲击源头"""
         bank.Shock_s[bankState] = bank.Shock_exBI_s[bankState] + bank.Shock_BI_s[bankState]
         pass
 
     @classmethod
-    def together_Shock_exBI_target(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_exBI_target(cls, bank: BankCommercial, bankState: StateType):
         """总银行外冲击目标"""
         bank.Shock_exBI_t[bankState] = bank.Shock_P_def_t[bankState] + bank.Shock_D_run_t[bankState]
         pass
 
     @classmethod
-    def together_Shock_exBI_source(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_exBI_source(cls, bank: BankCommercial, bankState: StateType):
         """总银行外冲击源头"""
         bank.Shock_exBI_s[bankState] = bank.Shock_P_run_s[bankState] + bank.Shock_D_def_s[bankState]
         pass
 
     @classmethod
-    def together_Shock_def_target(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_def_target(cls, bank: BankCommercial, bankState: StateType):
         """总违约损失冲击目标"""
         bank.Shock_def_t[bankState] = bank.Shock_P_def_t[bankState] + bank.Shock_BI_def_t[bankState]
         pass
 
     @classmethod
-    def together_Shock_def_source(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_def_source(cls, bank: BankCommercial, bankState: StateType):
         """总违约损失冲击源头"""
         bank.Shock_def_s[bankState] = bank.Shock_D_def_s[bankState] + bank.Shock_BI_def_s[bankState]
         pass
 
     @classmethod
-    def together_Shock_run_target(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_run_target(cls, bank: BankCommercial, bankState: StateType):
         """总挤兑流动冲击目标"""
         bank.Shock_run_t[bankState] = bank.Shock_D_run_t[bankState] + bank.Shock_BI_run_t[bankState]
         pass
 
     @classmethod
-    def together_Shock_BI_run_target(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_BI_run_target(cls, bank: BankCommercial, bankState: StateType):
         """总银行间流动性冲击目标。"""
         bank.Shock_BI_run_t[bankState] = bank.Shock_BI_run_ilq_t[bankState] + bank.Shock_BI_run_br_t[bankState]
         pass
 
     @classmethod
-    def together_Shock_run_source(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_run_source(cls, bank: BankCommercial, bankState: StateType):
         """总挤兑流动冲击源头"""
         bank.Shock_run_s[bankState] = bank.Shock_P_run_s[bankState] + bank.Shock_BI_run_s[bankState]
         pass
 
     @classmethod
-    def together_Shock_BI_run_source(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_BI_run_source(cls, bank: BankCommercial, bankState: StateType):
         """总银行间流动性冲击源头。"""
         bank.Shock_BI_run_s[bankState] = bank.Shock_BI_run_ilq_s[bankState] + bank.Shock_BI_run_br_s[bankState]
         pass
 
     @classmethod
-    def together_Shock_B(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_B(cls, bank: BankCommercial, bankState: StateType):
         """总银行内资产负债冲击。"""
         bank.Shock_B[bankState] = bank.Shock_B_A[bankState] + bank.Shock_B_Z[bankState]
         pass
 
     @classmethod
-    def together_Shock_BI_source(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_BI_source(cls, bank: BankCommercial, bankState: StateType):
         """总银行间冲击源头。"""
         bank.Shock_BI_s[bankState] = bank.Shock_BI_def_s[bankState] + bank.Shock_BI_run_s[bankState]
         pass
 
     @classmethod
-    def together_Shock_BI_run(cls, interbank: pd.Series, interbankState: StateType):
+    def together_Shock_BI_run(cls, interbank: BankInterbank, interbankState: StateType):
         """总银行间流动性冲击。"""
         interbank.Shock_BI_run[interbankState] = interbank.Shock_BI_run_ilq[interbankState] + interbank.Shock_BI_run_br[interbankState]
         pass
 
     @classmethod
-    def together_Shock_BI(cls, interbank: pd.Series, interbankState: StateType):
+    def together_Shock_BI(cls, interbank: BankInterbank, interbankState: StateType):
         """总银行间冲击。"""
         interbank.Shock_BI[interbankState] = interbank.Shock_BI_def[interbankState] + interbank.Shock_BI_run[interbankState]
         pass
 
     @classmethod
-    def sum_Shock_BI_def_target(cls, bank: pd.Series, interbank: pd.Series, bankState: StateType, interbankState: StateType):
+    def sum_Shock_BI_def_target(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """总资不抵债银行之银行间违约损失冲击目标。"""
         bank.Shock_BI_def_t[bankState] = np.sum(interbank.Shock_BI_def * interbank.on, axis=1).reshape(-1, 1)[bankState]
         pass
 
     @classmethod
-    def sum_Shock_BI_run_ilq_target(cls, bank: pd.Series, interbank: pd.Series, bankState: StateType, interbankState: StateType):
+    def sum_Shock_BI_run_ilq_target(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """总流动性短缺银行之银行间流动性冲击目标。"""
         bank.Shock_BI_run_ilq_t[bankState] = np.sum(interbank.Shock_BI_run_ilq * interbank.on, axis=1).reshape(-1, 1)[bankState]
         pass
 
     @classmethod
-    def sum_Shock_BI_run_br_target(cls, bank: pd.Series, interbank: pd.Series, bankState: StateType, interbankState: StateType):
+    def sum_Shock_BI_run_br_target(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """总破产银行之银行间流动性冲击目标。"""
         bank.Shock_BI_run_br_t[bankState] = np.sum(interbank.Shock_BI_run_br * interbank.on, axis=1).reshape(-1, 1)[bankState]
         pass
 
     @classmethod
-    def together_Shock_BI_target(cls, bank: pd.Series, bankState: StateType):
+    def together_Shock_BI_target(cls, bank: BankCommercial, bankState: StateType):
         """总银行间冲击目标。"""
         bank.Shock_BI_t[bankState] = bank.Shock_BI_def_t[bankState] + bank.Shock_BI_run_t[bankState]
         pass
 
     @classmethod
-    def conduct_Shock_L_exBI(cls, bank: pd.Series, bankState: StateType):
+    def conduct_Shock_L_exBI(cls, bank: BankCommercial, bankState: StateType):
 
         bank.Shock_B_A[bankState] = bank.Shock_P_def_t[bankState]
         pass
 
     @classmethod
-    def conduct_Shock_D(cls, bank: pd.Series, bankState: StateType):
+    def conduct_Shock_D(cls, bank: BankCommercial, bankState: StateType):
         """传导存款损失外生冲击。"""  # 状态：暂不使用。
         bank.Shock_B_Z[bankState] = bank.Shock_D_run_t[bankState]
         pass
 
     @classmethod
-    def conduct_Shock_BI_def_t(cls, bank: pd.Series, bankState: StateType):
+    def conduct_Shock_BI_def_t(cls, bank: BankCommercial, bankState: StateType):
         """传导银行间违约损失冲击。"""  # 状态：暂不使用。
         bank.Shock_B_A[bankState] = bank.Shock_BI_def_t[bankState]
         pass
 
     @classmethod
-    def conduct_Shock_BI_run_t(cls, bank: pd.Series, bankState: StateType):
+    def conduct_Shock_BI_run_t(cls, bank: BankCommercial, bankState: StateType):
         """传导银行间挤兑流动冲击。"""  # 状态：暂不使用。
         bank.Shock_B_A[bankState] = bank.Shock_BI_run_t[bankState]
         pass
 
     @classmethod
-    def clear_Shock_BI_and_exBI(cls, bank: pd.Series, interbank: pd.Series, bankState: StateType, interbankState: StateType):
+    def clear_Shock_BI_and_exBI(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """清零本回合结束时所有不必要的冲击变量"""
         bank.Shock_P_def_t = np.zeros(env['num_bank'])
         bank.Shock_D_run_t = np.zeros(env['num_bank'])
@@ -175,7 +175,7 @@ class Shock:
         pass
 
     @classmethod
-    def clear_Shock_inB(cls, bank: pd.Series):
+    def clear_Shock_inB(cls, bank: BankCommercial):
         """清零本回合中期所有不必要的冲击变量"""
 
         bank.Shock_B_A = np.zeros(env['num_bank'])
@@ -183,7 +183,7 @@ class Shock:
         pass
 
     @classmethod
-    def update_B_Shock(cls, bank: pd.Series, interbank: pd.Series, bankState, interbankState, by_way: str = "all"):
+    def update_B_Shock(cls, bank: BankCommercial, interbank: BankInterbank, bankState, interbankState, by_way: str = "all"):
         """
         更新各银行之冲击。
         
