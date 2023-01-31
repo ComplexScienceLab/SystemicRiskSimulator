@@ -127,8 +127,7 @@ class Operator:
             pass  # if
 
         env = Scheduler.schedule(env)
-        model_algorithm = model.content  # 获取模型之内容
-        model_algorithm, A, A_data, para, env = Executer.execute_branch_entity(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
+        model, A, A_data, para, env = Executer.execute_branch_entity(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
         env['is_continue_process'] = False  # 不再继续运行过程
 
         ## 导出数据之于已经收集的

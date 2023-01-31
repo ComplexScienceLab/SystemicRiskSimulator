@@ -36,7 +36,6 @@ class Builder:
         ## 导入模型、过程、算法内容
         import PySystemicRiskLab.models.contents
         env['list_algorithm_contents'] = Tools.import_modules_from_package(env['folderpath_import_modules'], r"content_")
-        # env['list_algorithm_contents'] =Tools.import_modules_from_package(env['folderpath_project']+'/PySystemicRiskLab/models/contents')
 
         ## 生成算法内容列表
         algorithmContents = env['list_algorithm_contents']
@@ -57,7 +56,6 @@ class Builder:
         ## 生成节点实体列表
         for algorithmEntity in algorithmEntities.values():
             nodeEntities = {}
-            # nodeEntity = Entity(entityData)
             if algorithmEntity.container is not None:
                 for node in algorithmEntity.container:
                     if node is not None:
@@ -79,18 +77,6 @@ class Builder:
                 ## 构建容器：将容器之值替换成节点实体字典列表之值
                 algorithmEntity.container = nodeEntities
                 del nodeEntities
-
-                # ## 构建过程：将过程之内容改成箭头实体字典列表之内容 #HACK 废弃字典形式，改成列表形式
-                # for node in algorithmEntity.container.values():
-                #     arrowEntities = {}
-                #     if node.process is not None:
-                #         for idx_arrow, arrow in enumerate(node.process):
-                #             if arrow['arrow'] is not None:
-                #                 arrow_name = "arrow_" + idx_arrow.__str__()
-                #                 arrow['arrow']['name'] = arrow_name  # 补充name信息
-                #                 arrowEntities[arrow['arrow']['name']] = arrow['arrow']
-                #         algorithmEntity.container[node.attribute.entity_name].process = arrowEntities
-                #         del arrowEntities
 
                 ## 构建过程：将过程之值改成箭头实体列表之值
                 for node in algorithmEntity.container.values():
@@ -166,33 +152,6 @@ class Builder:
                 pass  # if
             pass  # for
 
-        # ## 装配算法实体之节点：将算法实体之节点之值链接至对应的同层的节点实体
-        # for algorithmEntity in algorithmEntities.values():
-        #     if (
-        #             algorithmEntity.attribute.node_type == {"container node", "process node"} and
-        #             algorithmEntity.attribute.content_type == {"algorithm content"}
-        #     ) or (
-        #             algorithmEntity.attribute.node_type == {"content node"} and
-        #             algorithmEntity.attribute.content_type == {"algorithm content"}
-        #     ) or (
-        #             algorithmEntity.attribute.node_type == {"process node"} and
-        #             algorithmEntity.attribute.content_type == {"process content"}
-        #     ):
-        #         if algorithmEntity.node is None:
-        #             algorithmEntity.node = nodeEntity  # 算法实体指向对应的节点实体
-        #             pass  # if
-        #         pass  # if
-        #     if (
-        #             algorithmEntity.attribute.node_type == {"container node", "process node"} and
-        #             algorithmEntity.attribute.content_type == {"model content"}
-        #     ):
-        #         if algorithmEntity.node is None:
-        #             algorithmEntity.node = nodeEntity  # 算法实体指向对应的节点实体
-        #             pass  # if
-        #         pass  # if
-        #         algorithmEntity.execute = algorithmContents[algorithmEntity.execute]
-        #     pass  # for
-
         ## 生成模型节点实体（暨根节点实体，简称模型实体）字典列表
         modelEntities = {}
         for algorithmEntity in algorithmEntities.values():
@@ -216,63 +175,6 @@ class Builder:
         return modelEntities
         pass  # method
 
-    # @classmethod #HACK旧的后续可删除
-    # def build_entities(cls, env: EnvironmentVariableType = env):
-    #     """
-    #     构建实体众
-    #
-    #     Args:
-    #         env(EnvironmentVariableType): 环境变量集
-    #
-    #     Returns:
-    #         entities: 实体列表, contents: 内容列表
-    #
-    #     """
-    #
-    #     ## 导入相关模块（#NOTE 动态导入，严禁删除）
-    #     ## 导入模型、过程、算法初始态实体之数据内容
-    #     import PySystemicRiskLab.models.entities_data
-    #     env['list_entityData'] = Tools.import_modules_from_package(env['folderpath_import_modules'], r"entityData_")
-    #     ## 导入模型、过程、算法内容
-    #     import PySystemicRiskLab.models.contents
-    #     env['list_algorithm_contents'] = Tools.import_modules_from_package(env['folderpath_import_modules'], r"content_")
-    #     # env['list_algorithm_contents'] =Tools.import_modules_from_package(env['folderpath_project']+'/PySystemicRiskLab/models/contents')
-    #
-    #     ## 根据实体数据列表之数据，生成相应的实体对象，然后组成实体列表
-    #     entities = {}
-    #     for entityData_name, entityData in env['list_entityData'].items():
-    #         entity = Entity(entityData)  # 构造每个实体
-    #         entities[entityData_name] = deepcopy(entity)
-    #
-    #     ## 生成内容列表
-    #     contents = env['list_algorithm_contents']
-    #
-    #     ## 根据实体列表，将其之实体之内容改成实体对象数据格式与实际内容格式
-    #     for entity_name, entity in entities.items():  # 遍历每个实体
-    #         # pattern = r'\"(.*)\"'
-    #         # repl = r""
-    #         if entity.attribute.content_name is None:
-    #             entity.attribute.content_name = entity.content  # 补充实体之特性之内容名称`content_name`
-    #         if entity.container is not None:
-    #             for idx_container_item, container_item in enumerate(entity.container):  # 遍历容器之每项之内容改成实体对象数据格式
-    #                 entity.container[idx_container_item] = entities[container_item]
-    #         if entity.process is not None:
-    #             for idx_process_item, process_item in enumerate(entity.process):  # 遍历过程之每项之内容改成实体对象数据格式
-    #                 if process_item['flow'] is not None:
-    #                     process_item['flow'] = entities[process_item['flow']]
-    #         if entity.content is not None:  # 遍历内容之每项之内容改成实体之内容对象数据格式
-    #             if (entity.attribute.node_type == {"process node"} and entity.attribute.content_type == {"model content"}) or (entity.attribute.node_type == {"container node", "process node"} and entity.attribute.content_type == {"algorithm content"}):
-    #                 entity.content = eval(entity.content)
-    #             if entity.attribute.node_type == {"terminal node"} and entity.attribute.content_type == {"algorithm content"}:
-    #                 entity.content = contents[entity.content]
-    #             # entity.content = {entity.content: contents[entity.content]}
-    #
-    #     # ## 根据实体列表之各实体之名称，生成相应的全局变量之于实体  #HACK 未生成，放弃
-    #     # for entity_name, entity in entities.items():
-    #     #     globals()[entity_name] = entity
-    #
-    #     return entities, contents
-    #     pass  # method
 
     @classmethod
     def build_entity(cls, entityData: Any):  # HACK 无用
@@ -293,6 +195,4 @@ class Builder:
 
     pass  # class
 
-    @classmethod
-    def build_process(cls, entityData: Any):  # TODO
-        pass
+
