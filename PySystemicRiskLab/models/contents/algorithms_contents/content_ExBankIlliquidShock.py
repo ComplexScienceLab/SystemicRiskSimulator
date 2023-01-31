@@ -9,7 +9,7 @@ from PySystemicRiskLab.core.functions.fun_state import BankState
 pass  # end import
 
 
-def algorithmContent_ExBankIlliquidShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):  # = BB_t1:BankCommercial, BI_t1:BankInterbank,  =#:
+def content_ExBankIlliquidShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):  # = BB_t1:BankCommercial, BI_t1:BankInterbank,  =#:
     ## # 银行外部挤兑流动冲击算法
     # env['stage_name'] = "银行外部挤兑流动冲击算法"
 

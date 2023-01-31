@@ -13,7 +13,7 @@ pass  # end import
 
 # from PySystemicRiskLab.models_entities.algorithms_contents import *
 
-def algorithmContent_BankruptRepayShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def content_BankruptRepayShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 破产银行遭受偿还冲击
     
     BankState.update_B_state(BB, BI, target='bankrupt', source='any')

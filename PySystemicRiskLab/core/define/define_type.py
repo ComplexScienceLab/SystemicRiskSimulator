@@ -3,7 +3,7 @@
 ## 定义类型，模式3-1
 
 
-from PySystemicRiskLab import np, Union, Any
+from PySystemicRiskLab import np, Union, Any, Optional
 
 pass  # end import
 
@@ -17,10 +17,12 @@ ListType = np.dtype([('list', list)])  # 一维向量状态类型
 ItemIdType = np.array(np.dtype(np.int8))
 ItemFunctionNameType = np.array(np.dtype(np.str))
 ItemTextNameType = np.array(np.dtype(np.str))
-ContentAspectType = Union[str, list, Any]
-AttributeAspectType = np.dtype({'names': ['id', 'entity_name', 'text_name', 'content_type'], 'formats': ['i4', 'U', 'U', 'U']})
-NodeAspectType = Any
-ContainerAspectType = np.dtype(list)
-ProcessAspectType = np.dtype({'names': ['flow', 'condition'], 'formats': [np.void, 'U']})
+ContentComponentType = Union[str, list, Any]
+AttributeComponentType = np.dtype({'names': ['id', 'entity_name', 'text_name', 'content_type'], 'formats': ['i4', 'U', 'U', 'U']})
+NodeComponentType = Union[str, list, Any]  # HACK 可能需要修改
+ArrowComponentType = Union[str, list, Any]
+ContainerComponentType = Union[list, dict, str, Any]
+ProcessComponentType = np.dtype({'names': ['flow', 'condition'], 'formats': [np.void, 'U']})
+ExecuteComponentType = Union[str, list, Any]
 EnvironmentVariableType = Union[dict, Any]  # 环境变量类型 #HACK暂时没用到，目前用的是dict。
 ParameterVariableType = Union[dict, Any]  # 参数变量类型 #HACK暂时没用到，目前用的是dict。

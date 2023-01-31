@@ -14,7 +14,7 @@ pass  # end import
 
 
 # TODO"外生破产银行间挤兑流动冲击算法"
-def algorithmContent_ExBankBankruptContagion(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def content_ExBankBankruptContagion(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 外生破产银行间挤兑流动传染
     # env['stage_name'] = "外生破产银行间挤兑流动冲击算法"
     

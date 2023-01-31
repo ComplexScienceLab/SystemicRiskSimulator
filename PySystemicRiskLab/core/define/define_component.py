@@ -1,13 +1,13 @@
 """
-定义方面
+定义组件
 """
 from PySystemicRiskLab import Any
 from PySystemicRiskLab.core.define.define_type import *
 
 
-class AttributeAspect:
+class AttributeComponent:
     """
-    特征方面
+    特征组件
     """
 
     id: int  # 事物之编号
@@ -19,7 +19,7 @@ class AttributeAspect:
 
     def __init__(self, attribute: dict):
         """
-        初始化特征方面
+        初始化特征组件
 
         Args:
             attribute: 特征
@@ -39,12 +39,12 @@ class AttributeAspect:
     pass  # class
 
 
-class ContentAspect:
+class ContentComponent:
     """
-    内容方面
+    内容组件
     """
 
-    content: NodeAspectType
+    content: NodeComponentType
 
     def __init__(self, content):
         """
@@ -58,12 +58,12 @@ class ContentAspect:
     pass  # class
 
 
-class ContainerAspect:
+class ContainerComponent:
     """
-    容器方面
+    容器组件
     """
 
-    container: ContainerAspectType
+    container: ContainerComponentType
 
     def __init__(self, container):
         """
@@ -77,12 +77,12 @@ class ContainerAspect:
     pass  # class
 
 
-class ProcessAspect:
+class ProcessComponent:
     """
-    过程方面
+    过程组件
     """
 
-    process: ProcessAspectType
+    process: ProcessComponentType
 
     def __init__(self, process):
         """
@@ -91,6 +91,43 @@ class ProcessAspect:
             process: 过程之内容
         """
         self.process = process
+        pass  # method
+
+    pass  # class
+
+class ExecuteComponent:
+    """
+    执行组件
+    """
+
+    execute: ExecuteComponentType
+
+    def __init__(self, execute):
+        """
+
+        Args:
+            execute: 执行之内容
+        """
+        self.execute = execute
+        pass  # method
+
+    pass  # class
+
+
+class NodeComponent:
+    """
+    节点组件
+    """
+
+    node: NodeComponentType
+
+    def __init__(self, node):
+        """
+
+        Args:
+            node: 过程之内容
+        """
+        self.node = node
         pass  # method
 
     pass  # class

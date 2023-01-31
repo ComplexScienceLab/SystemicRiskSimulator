@@ -9,7 +9,7 @@ from PySystemicRiskLab.core.functions.fun_shock import Shock
 pass  # end import
 
 
-def algorithmContent_InterBankInsolventContagion(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def content_InterBankInsolventContagion(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 资不抵债银行间违约损失传染算法
     # env['stage_name'] = "资不抵债银行间违约损失传染算法"
 

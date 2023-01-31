@@ -12,7 +12,7 @@ pass  # end import
 
 
 
-def algorithmContent_InterBankBankruptContagionShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def content_InterBankBankruptContagionShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 破产银行间挤兑流动传染冲击
     # env['stage_name'] = "破产银行间挤兑流动传染冲击算法"
     

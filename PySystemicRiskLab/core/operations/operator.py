@@ -2,9 +2,7 @@
 运作机
 """
 
-from PySystemicRiskLab import os, logging, dataclass, Optional
-from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
-from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
+from PySystemicRiskLab import os, logging, dataclass
 from PySystemicRiskLab.core.define.define_entity import Entity
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 from PySystemicRiskLab.core.define.define_parameterVariables import para
@@ -60,7 +58,7 @@ class Operator:
 
         # ## 构建、安装本次实验组所需的所有模型
         # ### 导入实体数据，生成实体集、内容集并返回
-        # entities, contents = ModelBuilder.build_entities(env)
+        # entities, contents = Builder.build_entities(env)
         # ### 生成模型列表
         # models = {}
         # for (i, model_name) in enumerate(para['model_name']):
@@ -76,21 +74,21 @@ class Operator:
         pass  # method
 
     @classmethod
-    def operate_experiment(cls, env: dict, para: dict, entity: Entity):
+    def operate_experiment(cls, env: dict, para: dict, model: Entity):
         """
         运作实验
 
         Args:
             env (dict): 环境变量，默认env
             para (dict): 参数变量，默认para
-            entity (Entity): 过程实体
+            model (Entity): 模型实体
 
         Returns:
 
         """
 
         env = Scheduler.schedule(env)
-        if env['state_of_schedule'] == StateOfScheduleEnum.initializing:
+        if env['state_of_schedule'] == StateOfScheduleEnum.initializing:  # NOW检查是否要更新
             # 重置环境变量
             env['index_of_schedule_position'] = []
             env['index_model'] = 1
@@ -116,6 +114,8 @@ class Operator:
             env['is_model'] = True
             env['is_experiment'] = True
             env['test_continous_loop_of_model'] = 0
+            env['current_node_name'] = None
+            env['model_process_state'] = "has not process"
 
             logging.info("实验" + str(env['id_experiment']) + "/" + str(len(env['list_combination_of_para'])) + "开始：\n")
 
@@ -126,19 +126,10 @@ class Operator:
             A_data = Collector.collect(A, None, env)
             pass  # if
 
-        # test_continous_loop_of_model = 0  # 设置模型运行最大步数
-        # while (env['is_model'] == True and test_continous_loop_of_model <= env['test_max_count_continous_loop_of_model']):
-        #     test_continous_loop_of_model += 1
-
         env = Scheduler.schedule(env)
-        A, A_data, para, env = Executer.execute_branch_node(entity, A, A_data, para, env)  # 执行具体的模型，通过执行模型模块的方式 #BUG
+        model_algorithm = model.content  # 获取模型之内容
+        model_algorithm, A, A_data, para, env = Executer.execute_branch_entity(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
         env['is_continue_process'] = False  # 不再继续运行过程
-
-        # if test_continous_loop_of_model >= env['test_max_count_continous_loop_of_model']:
-        #     logging.info("超过该模型最大步进次数，强制跳出循环。")
-        #     pass  # if
-        #
-        # pass # while
 
         ## 导出数据之于已经收集的
         env = Scheduler.schedule(env)

@@ -13,7 +13,7 @@ pass  # end import
 
 
 
-def algorithmContent_InterBankInsolventShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def content_InterBankInsolventShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 资不抵债银行间违约损失冲击算法
     # env['stage_name'] = "资不抵债银行间违约损失冲击算法"
     

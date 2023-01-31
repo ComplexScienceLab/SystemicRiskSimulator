@@ -13,7 +13,7 @@ class Module:
     functionName: ItemFunctionNameType  # 函数名称 name
     textName: ItemTextNameType  # 文本名称 name
     contentType: str  # 内容之类型
-    content: ContentAspectType  # 内容
+    content: ContentComponentType  # 内容
     execute: None  # 执行
 
     def __init__(self, id, function_name, text_name, content_type, content, execute):
@@ -51,7 +51,7 @@ class ProcessModule(Module): #HACK 无用
     定义过程模块
     """
     # conditionToContinueProcess:Expr # 判断条件用以结束过程 conditionToContinueProcess
-    # execute: Executer.execute_branch_node()  # 执行过程
+    # execute: Executer.execute_branch_entity()  # 执行过程
     execute = None  # 执行过程
     # processEntity:Array{ProcessModule} # 算法模块列表
     content: list  # 算法模块列表

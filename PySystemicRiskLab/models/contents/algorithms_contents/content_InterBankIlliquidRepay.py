@@ -14,7 +14,7 @@ pass  # end import
 
 
 
-def algorithmContent_InterBankIlliquidRepay(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def content_InterBankIlliquidRepay(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 流动性短缺银行间挤兑流动执行借贷流量算法
     # env['stage_name'] = "银行间挤兑流动执行借贷流量算法"
     

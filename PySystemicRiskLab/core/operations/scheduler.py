@@ -29,7 +29,7 @@ class Scheduler:
             env (dict): 环境变量
             A (SystemicRiskAgent): 系统性风险主体众，可选
             A_data (AgentDataCollection): 系统性风险主体众数据集，可选
-            entity (Entity): 实体，可选
+            entity (Entity): 实体，可选 #HACK无用可移除
 
         Returns: env 环境变量
 
@@ -60,7 +60,7 @@ class Scheduler:
         pass  # method
 
     @classmethod
-    def schedule_loading(cls, state_of_schedule: StateOfScheduleEnum, index_process: int, index_stage: int, loaded_index_process: int, loaded_index_stage: int, is_process: bool):  # HACK 暂时不需要，也还没有做对应重构。
+    def schedule_loading(cls, state_of_schedule: StateOfScheduleEnum, index_process: int, index_stage: int, loaded_index_process: int, loaded_index_stage: int, is_process: bool):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """
         调度读取
 
@@ -105,7 +105,7 @@ class Scheduler:
         pass  # method
 
     @classmethod
-    def schedule_stepping(cls, state_of_schedule: StateOfScheduleEnum, step: int, step_size: int):  # HACK 暂时不需要，也还没有做对应重构。
+    def schedule_stepping(cls, state_of_schedule: StateOfScheduleEnum, step: int, step_size: int):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """
         调度步进
 
@@ -141,7 +141,7 @@ class Scheduler:
         Returns: state_of_schedule 调度状态
 
         """
-        if is_continue_process is True:  # NOW
+        if is_continue_process is True:
             state_of_schedule = StateOfScheduleEnum.collecting
         else:
             state_of_schedule = StateOfScheduleEnum.ending
@@ -151,7 +151,7 @@ class Scheduler:
         pass  # method
 
     @classmethod
-    def schedule_saving(cls, state_of_schedule: StateOfScheduleEnum, index_process: int, index_stage: int, is_process: bool, index_of_schedule_position: tuple):  # HACK 暂时不需要，也还没有做对应重构。
+    def schedule_saving(cls, state_of_schedule: StateOfScheduleEnum, index_process: int, index_stage: int, is_process: bool, index_of_schedule_position: tuple):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """
         调度存储
 
@@ -318,7 +318,7 @@ class Scheduler:
         pass  # method
 
     @classmethod
-    def get_process_index(cls, index_process: int, index_of_schedule_position: tuple):  # HACK 暂时不需要，也还没有做对应重构。
+    def get_process_index(cls, index_process: int, index_of_schedule_position: tuple):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """
         获取过程之索引。
 
@@ -333,7 +333,7 @@ class Scheduler:
         pass
 
     @classmethod
-    def get_stage_index(cls, index_process: int, index_stage: int, index_of_schedule_position: tuple):  # HACK 暂时不需要，也还没有做对应重构。
+    def get_stage_index(cls, index_process: int, index_stage: int, index_of_schedule_position: tuple):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """
         获取阶段之索引。
 
@@ -352,7 +352,7 @@ class Scheduler:
         pass
 
     @classmethod
-    def get_model_length(cls, index_of_schedule_position: tuple):  # HACK 暂时不需要，也还没有做对应重构。
+    def get_model_length(cls, index_of_schedule_position: tuple):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """
         获取模型之内容之列表之长度（暨过程个数）
 
@@ -366,7 +366,7 @@ class Scheduler:
         pass
 
     @classmethod
-    def get_process_length(cls, index_process: int, index_of_schedule_position: tuple):  # HACK 暂时不需要，也还没有做对应重构。
+    def get_process_length(cls, index_process: int, index_of_schedule_position: tuple):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """
         获取过程之内容之列表之长度（暨该过程之阶段个数）
 
@@ -381,7 +381,7 @@ class Scheduler:
         pass
 
     @classmethod
-    def is_process(cls, A: SystemicRiskAgent, BB_isv_t1: StateType, BB_Shock_t_t1: MoneyType, is_process: bool, stageFunctionName: str, process):  # HACK 暂时不需要，也还没有做对应重构。
+    def is_process(cls, A: SystemicRiskAgent, BB_isv_t1: StateType, BB_Shock_t_t1: MoneyType, is_process: bool, stageFunctionName: str, process):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """
         判断是否继续运作过程
 
@@ -427,7 +427,7 @@ class Scheduler:
         pass  # method
 
     @classmethod
-    def is_round(cls, env: dict):  # HACK 暂时不需要，也还没有做对应重构。
+    def is_round(cls, env: dict):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """判断是否继续运作回合"""
         if (env['round'] < env['test_max_num_of_round']):
             env['is_round'] = True
@@ -438,7 +438,7 @@ class Scheduler:
         pass  # method
 
     @classmethod
-    def is_step(cls, env: dict):  # HACK 暂时不需要，也还没有做对应重构。
+    def is_step(cls, env: dict):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """判断是否继续步进"""
         if ~env['is_step']:
             logging.debug("                        暂时跳出模型%s之过程%s之阶段%s。", env['model_name'], env['process_name'], env['stage_name'])
@@ -446,7 +446,7 @@ class Scheduler:
         pass  # method
 
     @classmethod
-    def is_loop(cls, env: dict):  # HACK 暂时不需要，也还没有做对应重构。
+    def is_loop(cls, env: dict):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
         """
         判断是否继续运作循环。
         只有同时满足继续运作过程、继续步进、继续运作回合时，才继续运作循环。否则跳出循环。

@@ -3,10 +3,11 @@
 ## 系统性风险仿真模拟
 
 
-__version__ = '0.0.3.alpha'
+__version__ = '0.0.4.alpha'
 
-## 导入重要的包 #HACK不能删除这些包
+## 导入第三方包（#NOTE 动态导入，严禁删除）
 import os
+from goto import with_goto,goto,label
 from os import path
 import warnings
 import re

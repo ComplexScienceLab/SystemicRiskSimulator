@@ -13,7 +13,7 @@ from PySystemicRiskLab.core.functions.fun_transfer import BankTransfer
 pass  # end import
 
 
-def algorithmContent_InterBankIlliquidAllocate(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
+def content_InterBankIlliquidAllocate(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
     ## # 流动性短缺银行间挤兑流动分配借贷流量算法
     # env['stage_name'] = "银行间挤兑流动分配借贷流量算法"
 

@@ -1,4 +1,8 @@
-"程序：定义环境变量EnvironmentVariables"
+"""
+程序：定义环境变量EnvironmentVariables。
+
+记得这里发生变更时，要手动检查`Operator.operate_experiment`相关位置是否要更新。
+"""
 import os
 
 from PyScripts.settings.set_environment_variables import set_environment_variables
@@ -12,7 +16,7 @@ pass  # end import
 # 生成字典变量
 env: EnvironmentVariableType = {}
 
-######### 初始化环境变量（不要改动！） #########################################
+######### 定义以下环境变量（不要改动！） #########################################
 env['folderpath_of_experiments'] = ""  # 主文件夹路径之于实验。将由函数生成；
 env['foldername_of_experiments'] = ""  # 实验文件夹名称
 env['folderpath_of_experiments_output_data'] = ""  # 实验导出数据文件夹名称
@@ -47,7 +51,20 @@ env['index_stage'] = 1  # 索引状态下，标记当前所在阶段之位置
 env['stage_name'] = ""  # 运行的阶段之名称；
 env['saved_index_stage'] = ""  # 存储的当前阶段之位置；
 env['loaded_index_stage'] = ""  # 读取的当前阶段之位置；
-env['folderpath_project'] = os.getcwd()  # 获取当前项目路径
+env['folderpath_project'] = os.getcwd()  # 获取当前项目路径；
+env['folderpath_import_modules'] = ""  # 获取当前需要导入的模块所在总路径；
+
+"""
+env['model_process_state'] 表示当前模型根节点处理状态
+如果用可视化标记节点颜色表示标记状态，那么：
+
+- 标记是白色`"has not process"`说明还没处理过该节点，也没有在处理；
+- 标记是绿色`"process now"`说明正在处理该节点；
+- 标记是黄色`"process inner"`说明正在处理该节点之内层节点；
+- 标记是红色`"has processed"`说明已经处理完该节点，但是表示接下来不会再准备处理该节点；
+"""
+env['model_process_state'] = "has not process"
+
 
 ## 测试程序专用
 env['test_continous_loop_of_model'] = 0  # 计次单个模型连续循环次数

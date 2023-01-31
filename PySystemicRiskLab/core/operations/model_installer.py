@@ -6,7 +6,7 @@ from PySystemicRiskLab import deepcopy, Node, re
 from PySystemicRiskLab.core.define.define_entity import Entity
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_parameterVariables import para
-from PySystemicRiskLab.core.operations.builder import ModelBuilder
+from PySystemicRiskLab.core.operations.builder import Builder
 
 pass  # end import
 
@@ -24,11 +24,11 @@ class ModelInstaller:
         """
         ## 构建、安装本次实验组所需的所有模型
         ### 导入实体数据，生成实体集、内容集并返回
-        entities, contents = ModelBuilder.build_entities(env)
+        entities = Builder.build_entities(env)
         ### 生成模型列表
         models = {}
         for (i, model_name) in enumerate(para['model_name']):
-            model = eval("entities['modelEntity_Model" + model_name + "']")
+            model = eval("entities['entity_" + model_name + "']")
 
             ## 对于每一个模型，根据已经生成的模型，生成索引遍历序列，用于后序遍历所有节点。                                                                                                                                                                                                 遍历序列，用于后序遍历所有节点。
             # install_entity_queue = cls.build_postorder_traversial(model)  # HACK暂时不需要用  #FIXME 程序运行错误
@@ -43,7 +43,7 @@ class ModelInstaller:
     @classmethod
     def build_postorder_traversial(cls, modelEntity: Entity):
         """
-        根据已经生成的模型，生成遍历序列，用于后序遍历所有节点。
+        根据已经生成的模型，生成遍历序列，用于后序遍历所有节点。 #HACK 暂时还没有用到
 
         Args:
             modelEntity: 模型实体

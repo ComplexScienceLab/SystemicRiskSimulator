@@ -1,6 +1,6 @@
 "函数区：工具集"
 
-from PySystemicRiskLab import os, time, itertools, pkgutil, importlib, re, logging
+from PySystemicRiskLab import os, time, Path, itertools, pkgutil, importlib, re, logging
 from PySystemicRiskLab.core.define.define_type import EnvironmentVariableType
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 
@@ -102,48 +102,102 @@ class Tools:
         pass  # method
 
     @classmethod
-    def import_modules_from_package(cls, folder_path: str, package_modulepath: str, env: EnvironmentVariableType = env):
+    def import_modules_from_package(cls, folderpath: str, pattern:str):
         """
         从包批量导入模块与方法
 
         Args:
-            folder_path: 文件夹路径
-            package_modulepath: 模块路径
+            folderpath: 包所在路径
             env: 环境变量
 
         Returns:
             env += env['list_entityData']
         """
-        # import os, pkgutil, importlib
 
-        ## 生成文件夹路径
-        # folder_path=cls.translatePackagePathToFolderPath(modulepath_package)
-        # folderpath_package = os.path.dirname(folder_path)  # 获取包文件夹路径
-        package_path = cls.translate_packagepath_to_folderpath(package_modulepath)
-        entity_files = []
-        entityData = {}  # 实体数据集合
-        i = 0
-        n = 0
-        for _, name, _ in pkgutil.iter_modules([package_path]):
-            entity_files.append(importlib.import_module('.' + name, package_modulepath))
-            for c in dir(entity_files[i]):
-                if not c.startswith("__"):
-                    entityData.update({entity_files[i].__dict__.get(c)['attribute']['entity_name']: entity_files[i].__dict__.get(c)})
-                    n += 1
-                    # globals()[c] = list_entity_files[i].__dict__.get(c)
-            i += 1
-        env['list_entityData'] = entityData
-        return env
+        # folderpath = cls._translate_package_form_path_to_folder_form_path(package_form_path) # NOTE 仅当如果用到以模块形式的包之路径的时候启用。
+        module_form_path_package = cls._translate_folder_form_path_to_package_form_path(folderpath[0])
+
+        ## 遍历以导入内容函数
+        idx_file = 0
+        list_files = []  # 文件列表
+        list_contents = {}  # 内容列表
+
+        for module_finder_01, name_01, is_pkg in pkgutil.walk_packages([folderpath[0].__str__()]):
+            if is_pkg:  # 如果路径下面还有一级子文件夹
+                for module_finder_02, name_02, _ in pkgutil.iter_modules([Path(module_finder_01.path).joinpath(name_01).__str__()]):
+                    list_files.append(importlib.import_module("." + name_02, module_form_path_package + "." + Path(module_finder_02.path).name))
+                    if re.search(pattern, Path(list_files[idx_file].__str__()).name) is not None:
+                        for content in dir(list_files[idx_file]):
+                            if re.search(pattern, content.__str__()) is not None:
+                                list_contents.update({name_02: list_files[idx_file].__dict__.get(content)})
+                    idx_file += 1
+            else:  # 如果路径下面没有子文件夹
+                # for module_finder, name_01, _ in pkgutil.iter_modules([folderpath[0].__str__()]):
+                list_files.append(importlib.import_module("." + name_01, module_form_path_package))
+                for content in dir(list_files[idx_file]):
+                    if not content.startswith("__"):
+                        list_contents.update({list_files[idx_file].__dict__.get(content)['attribute']['entity_name']: list_files[idx_file].__dict__.get(content)})
+                idx_file += 1
+
+        return list_contents
+
+        ## HACK无用
+        # # import os, pkgutil, importlib
+        #
+        # ## 生成文件夹路径
+        # # folderpath=cls._translate_package_form_path_to_folder_form_path(package_form_path)
+        # # folder_form_path = os.path.dirname(folderpath)  # 获取包文件夹路径
+        # package_path = cls._translate_package_form_path_to_folder_form_path(package_form_path)
+        # entity_files = []
+        # entityData = {}  # 实体数据集合
+        # i = 0
+        # n = 0
+        # for _, name, _ in pkgutil.iter_modules([package_path]):
+        #     entity_files.append(importlib.import_module('.' + name, package_form_path))
+        #     for c in dir(entity_files[i]):
+        #         if not c.startswith("__"):
+        #             entityData.update({entity_files[i].__dict__.get(c)['attribute']['entity_name']: entity_files[i].__dict__.get(c)})
+        #             n += 1
+        #             # globals()[c] = list_entity_files[i].__dict__.get(c)
+        #     i += 1
+        # env['list_entityData'] = entityData
+        # return env
+
         pass  # method
 
     @classmethod
-    def translate_packagepath_to_folderpath(cls, package_modulepath: str):
-        """TODO"""
+    def _translate_folder_form_path_to_package_form_path(cls, folder_form_path: str):
+        """
+        转换文件夹形式的包之相对路径为模块形式的包之相对路径
+
+        Args:
+            folder_form_path (): 文件夹形式的包之相对路径
+
+        Returns: 模块形式的包之相对路径
+
+        """
+        folder_form_path = Path(folder_form_path)  # 获取包文件夹路径
+        pattern = r"[\/\\]"
+        repl = r"."
+        return re.sub(pattern, repl, Path(folder_form_path).relative_to(Path.cwd()).__str__())
+        pass  # method
+
+    @classmethod
+    def _translate_package_form_path_to_folder_form_path(cls, package_form_path: str):
+        """
+        转换模块形式的包之相对路径为文件夹形式的包之绝对路径
+
+        Args:
+            package_form_path (str): 以模块形式的包之路径
+
+        Returns: 包所在的绝对路径
+
+        """
         pattern = r"\."
-        repl = r"\/"
-        result = re.sub(pattern, repl, package_modulepath)
-        os.path.abspath(package_modulepath)
-        pass
+        repl = r"/"
+        result = re.sub(pattern, repl, package_form_path)
+        return os.path.abspath(result)
+        pass  # method
 
     # @classmethod TODO 显示模型之实体结构
     # def showModelContent(cls, modelEntity):
