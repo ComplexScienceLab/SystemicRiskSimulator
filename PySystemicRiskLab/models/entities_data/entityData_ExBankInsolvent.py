@@ -1,5 +1,5 @@
 """
-银行外部违约损失过程初始态实体
+外部资产违约损失过程初始态实体
 """
 
 # import here
@@ -9,7 +9,7 @@ entityData_ExBankInsolvent = dict(
     attribute=dict(
         id=2010,
         entity_name="entity_ExBankInsolvent",
-        text_name="银行外部违约损失过程",
+        text_name="外部资产违约损失过程",
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
     ),

@@ -1,4 +1,4 @@
-"""流动性短缺银行间挤兑流动传染冲击算法"""
+"""流动性短缺银行间挤兑流动传染算法"""
 
 
 
@@ -13,8 +13,8 @@ pass  # end import
 
 
 def content_InterBankIlliquidContagionShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
-    ## # 流动性短缺银行间挤兑流动传染冲击
-    # env['stage_name'] = "流动性短缺银行间挤兑流动传染冲击算法"
+    ## # 流动性短缺银行间挤兑流动传染
+    # env['stage_name'] = "流动性短缺银行间挤兑流动传染算法"
     
     ##BUG 方式一：每个银行只有一次分配传染冲击之行为。
     i_nas = (BB.ilq & ~BB.is_allocated_Shock)  # 临时设置示性变量，表示银行其未分配传染冲击。暨每个银行只有一次分配传染冲击之行为。

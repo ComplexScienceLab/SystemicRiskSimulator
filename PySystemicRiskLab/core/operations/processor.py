@@ -2,9 +2,8 @@
 处理机。
 #NOTE：如果不是因为Python语言会出现循环调用的情况，那么会将这里的一些功能和内容放入`operator`。
 """
-import logging
 
-from PySystemicRiskLab import dataclass
+from PySystemicRiskLab import dataclass, logging
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_entity import Entity
@@ -26,6 +25,7 @@ class Processor:
         处理所有类型的实体。
 
         TODO：HACK：目前采用的是以栈的形式处理，这样的缺点是受到python自带的栈深度限制。后续方便的话要改成用遍历动态多叉树生成序列的形式处理。
+        NOTE：这里略去了功能：对特殊节点调用`Excuter`。因为就目前的程序来说，没必要进一步复杂化，直接在`Processor`内处理即可。
 
         Args:
             node (Entity): 节点实体（NOTE：本函数中，特指节点实体而非算法实体。算法实体表示`entity`。）

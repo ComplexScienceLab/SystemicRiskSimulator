@@ -1,5 +1,5 @@
 """
-流动性短缺银行间挤兑流动传染冲击过程初始态实体
+流动性短缺银行间挤兑流动传染过程初始态实体
 """
 
 # import here
@@ -10,7 +10,7 @@ entityData_InterBankIlliquidContagionShock = dict(
     attribute=dict(
         id=4050,
         entity_name="entity_InterBankIlliquidContagionShock",
-        text_name="流动性短缺银行间挤兑流动传染冲击",
+        text_name="流动性短缺银行间挤兑流动传染",
         node_type={"content node"},
         content_type={"algorithm content"},
     ),

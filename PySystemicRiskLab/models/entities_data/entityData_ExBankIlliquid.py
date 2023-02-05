@@ -1,5 +1,5 @@
 """
-银行外部挤兑流动过程初始态实体
+银行存款挤兑流动过程初始态实体
 """
 
 # import here
@@ -8,7 +8,7 @@ entityData_ExBankIlliquid = dict(
     attribute=dict(
         id=2030,
         entity_name="entity_ExBankIlliquid",
-        text_name="银行外部挤兑流动过程",
+        text_name="银行存款挤兑流动过程",
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
     ),

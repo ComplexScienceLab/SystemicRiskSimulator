@@ -1,4 +1,4 @@
-"""银行外部违约损失冲击"""
+"""外部资产违约损失冲击"""
 
 from PySystemicRiskLab import np, logging
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
@@ -11,8 +11,8 @@ pass  # end import
 
 
 def content_ExBankInsolventShock(BB: BankCommercial, BI: BankInterbank, b: StateType, ib: StateType, para: dict, env: dict):
-    ## # 银行外部违约损失冲击算法
-    # env['stage_name'] = "银行外部违约损失冲击算法"
+    ## # 外部资产违约损失冲击算法
+    # env['stage_name'] = "外部资产违约损失冲击算法"
 
     BB.Shock_P_def_t = BB.A_P * np.array([para['Shock_exBI_def_t_percentage']]).T  # 生成厂商贷款违约损失冲击
     Shock.update_B_Shock(BB, BI, b, ib, by_way='Shock_P_def_t')  # 厂商贷款违约损失冲击传导至银行内资产冲击

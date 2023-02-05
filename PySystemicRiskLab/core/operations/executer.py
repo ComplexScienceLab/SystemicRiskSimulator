@@ -76,7 +76,7 @@ class Executer:
         pass  # method
 
     # @classmethod
-    # def execute_special_entity(cls, node:Entity): #HACK 无用
+    # def execute_special_entity(cls, node:Entity): #HACK暂时不需要使用
     #     """
     #     执行特殊实体。特殊实体指：开始节点实体、结束节点实体。
     #
@@ -98,5 +98,8 @@ class Executer:
     #     logging.debug("- 出过程：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
     #
     #     pass  # method
+
+    def execute
+
 
     pass  # class
