@@ -70,15 +70,15 @@ class Collector:
     #     BB_data = pd.DataFrame()
     #     BB_data = pd.concat([BB_data, BB_df], ignore_index=True)
     #
-    #     BI_df = A.BI.to_frame().transpose()
-    #     BI_df.insert(loc=0, column='id_data', value=env['id_data'])
-    #     BI_df.insert(loc=1, column='round', value=env['round'])
-    #     BI_df.insert(loc=2, column='index_process', value=env['index_process'])
-    #     BI_df.insert(loc=3, column='index_stage', value=env['index_stage'])
-    #     BI_data = pd.DataFrame()
-    #     BI_data = pd.concat([BI_data, BI_df], ignore_index=True)
+    #     IB_df = A.IB.to_frame().transpose()
+    #     IB_df.insert(loc=0, column='id_data', value=env['id_data'])
+    #     IB_df.insert(loc=1, column='round', value=env['round'])
+    #     IB_df.insert(loc=2, column='index_process', value=env['index_process'])
+    #     IB_df.insert(loc=3, column='index_stage', value=env['index_stage'])
+    #     IB_data = pd.DataFrame()
+    #     IB_data = pd.concat([IB_data, IB_df], ignore_index=True)
     #
-    #     A_data = AgentDataCollection(BB_data, BI_data)
+    #     A_data = AgentDataCollection(BB_data, IB_data)
     #     return A_data
     #     pass
     #
@@ -104,12 +104,12 @@ class Collector:
     #     BB_df.insert(loc=3, column='index_stage', value=env['index_stage'])
     #     A_data.BB = pd.concat([A_data.BB, BB_df], ignore_index=True)
     #
-    #     BI_df = A.BI.to_frame().transpose()
-    #     BI_df.insert(loc=0, column='id_data', value=env['id_data'])
-    #     BI_df.insert(loc=1, column='round', value=env['round'])
-    #     BI_df.insert(loc=2, column='index_process', value=env['index_process'])
-    #     BI_df.insert(loc=3, column='index_stage', value=env['index_stage'])
-    #     A_data.BI = pd.concat([A_data.BI, BI_df], ignore_index=True)
+    #     IB_df = A.IB.to_frame().transpose()
+    #     IB_df.insert(loc=0, column='id_data', value=env['id_data'])
+    #     IB_df.insert(loc=1, column='round', value=env['round'])
+    #     IB_df.insert(loc=2, column='index_process', value=env['index_process'])
+    #     IB_df.insert(loc=3, column='index_stage', value=env['index_stage'])
+    #     A_data.IB = pd.concat([A_data.IB, IB_df], ignore_index=True)
     #
     #     return A_data
     #     pass
@@ -124,8 +124,8 @@ class Collector:
     #     ```python
     #     list_type_of_columns_01 = [A_data.BB[v].dtype for v in A_data.BB.columns]
     #     list_type_of_columns_02 = [A_data.BB[v][0].dtype for v in A_data.BB.columns]
-    #     list_type_of_columns_01 = [A_data.BI[v].dtype for v in A_data.BI.columns]
-    #     list_type_of_columns_02 = [A_data.BI[v][0].dtype for v in A_data.BI.columns]
+    #     list_type_of_columns_01 = [A_data.IB[v].dtype for v in A_data.IB.columns]
+    #     list_type_of_columns_02 = [A_data.IB[v][0].dtype for v in A_data.IB.columns]
     #     ```
     #
     #     Args:
@@ -154,20 +154,20 @@ class Collector:
     #
     #     ## 整理interbank之数据为一数据框
     #     list_columns_for_transform = [
-    #         v for i, v in enumerate(A_data.BI.columns) if (
-    #                 A_data.BI[v].dtype == np.dtype('O') and
-    #                 A_data.BI[v][0].dtype == np.dtype('O')
+    #         v for i, v in enumerate(A_data.IB.columns) if (
+    #                 A_data.IB[v].dtype == np.dtype('O') and
+    #                 A_data.IB[v][0].dtype == np.dtype('O')
     #         )
     #     ]  # 获取需要转换形式的列
     #
     #     ## 转换信息列表为矩阵形式，插入数据框  #HACK 能否用现成的功能函数代替？
     #     for v1 in list_columns_for_transform:
-    #         for i2 in range(A_data.BI[v1].size):
+    #         for i2 in range(A_data.IB[v1].size):
     #             m = np.full((num_bank, num_bank), False)
-    #             if A_data.BI[v1][i2] is []:
-    #                 A_data.BI[v1][i2] = np.nan
+    #             if A_data.IB[v1][i2] is []:
+    #                 A_data.IB[v1][i2] = np.nan
     #                 continue
-    #             for (i3, v3) in enumerate(A_data.BI[v1][i2]):
+    #             for (i3, v3) in enumerate(A_data.IB[v1][i2]):
     #                 if v3 is []:
     #                     m[i3, :] = False
     #                     continue
@@ -180,34 +180,34 @@ class Collector:
     #                         pass  # if
     #                     pass  # for
     #                 pass  # for
-    #             A_data.BI[v1][i2] = m  # 赋值矩阵给数据框之元素，于数据框之相应的位置
+    #             A_data.IB[v1][i2] = m  # 赋值矩阵给数据框之元素，于数据框之相应的位置
     #             pass  # for
     #         pass  # for
     #
     #     ## 生成agent矩阵之坐标，以矩阵形式，插入数据框
     #     row_coord, col_coord = np.mgrid[0:num_bank:1, 0:num_bank:1]
-    #     A_data.BI.insert(loc=A_data.BI.columns.get_loc('index_stage') + 1, column="col", value=np.dtype('O'))
-    #     for i, _ in enumerate(A_data.BI.col):
-    #         A_data.BI.col[i] = col_coord.astype('int16')
-    #     A_data.BI.insert(loc=A_data.BI.columns.get_loc('index_stage') + 1, column="row", value=np.dtype('O'))
-    #     for i, _ in enumerate(A_data.BI.row):
-    #         A_data.BI.row[i] = row_coord.astype('int16')
+    #     A_data.IB.insert(loc=A_data.IB.columns.get_loc('index_stage') + 1, column="col", value=np.dtype('O'))
+    #     for i, _ in enumerate(A_data.IB.col):
+    #         A_data.IB.col[i] = col_coord.astype('int16')
+    #     A_data.IB.insert(loc=A_data.IB.columns.get_loc('index_stage') + 1, column="row", value=np.dtype('O'))
+    #     for i, _ in enumerate(A_data.IB.row):
+    #         A_data.IB.row[i] = row_coord.astype('int16')
     #
     #     list_columns_for_explode = [
-    #         v for i, v in enumerate(A_data.BI.columns) if (
-    #                 A_data.BI[v].dtype == np.dtype('O') and (
-    #                 A_data.BI[v][0].dtype == np.dtype('int16') or
-    #                 A_data.BI[v][0].dtype == np.dtype('int64') or
-    #                 A_data.BI[v][0].dtype == np.dtype('<U1') or
-    #                 A_data.BI[v][0].dtype == np.dtype('<U6') or
-    #                 A_data.BI[v][0].dtype == np.dtype('float64') or
-    #                 A_data.BI[v][0].dtype == np.dtype('bool')
+    #         v for i, v in enumerate(A_data.IB.columns) if (
+    #                 A_data.IB[v].dtype == np.dtype('O') and (
+    #                 A_data.IB[v][0].dtype == np.dtype('int16') or
+    #                 A_data.IB[v][0].dtype == np.dtype('int64') or
+    #                 A_data.IB[v][0].dtype == np.dtype('<U1') or
+    #                 A_data.IB[v][0].dtype == np.dtype('<U6') or
+    #                 A_data.IB[v][0].dtype == np.dtype('float64') or
+    #                 A_data.IB[v][0].dtype == np.dtype('bool')
     #         )
     #         )
     #     ]  # 获取需要展平的列
     #
-    #     BI_data_export = A_data.BI.explode(list_columns_for_explode).explode(list_columns_for_explode)  # 展平相关的列，面板化数据框
-    #     BI_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "BI_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
+    #     IB_data_export = A_data.IB.explode(list_columns_for_explode).explode(list_columns_for_explode)  # 展平相关的列，面板化数据框
+    #     IB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
     #
     #     pass  # method
 
@@ -236,19 +236,19 @@ class Collector:
         BB_data = []
         BB_data.append(BB_data_item)  # 初始化banks之数据为一字典数组
 
-        BI_data_item = dict(
+        IB_data_item = dict(
             {
                 list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
                 list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
-                'dataBI': deepcopy(A.BI)
+                'dataIB': deepcopy(A.IB)
             }
         )
-        BI_data = []
-        BI_data.append(BI_data_item)  # 初始化interbank之数据为一字典数组
+        IB_data = []
+        IB_data.append(IB_data_item)  # 初始化interbank之数据为一字典数组
 
-        A_data = AgentDataCollection(deepcopy(BB_data), deepcopy(BI_data))
+        A_data = AgentDataCollection(deepcopy(BB_data), deepcopy(IB_data))
         return A_data
         pass
 
@@ -277,17 +277,17 @@ class Collector:
         )
         A_data.BB.append(BB_data_item)  # 收集banks之数据为一字典数组
 
-        BI_data_item = dict(
+        IB_data_item = dict(
             {
                 list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
                 list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
-                'dataBI': deepcopy(A.BI)
+                'dataIB': deepcopy(A.IB)
             }
         )
 
-        A_data.BI.append(BI_data_item)  # 收集interbank之数据为一字典数组
+        A_data.IB.append(IB_data_item)  # 收集interbank之数据为一字典数组
         return A_data
         pass
 
@@ -323,24 +323,24 @@ class Collector:
         BB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "BB_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
 
         ## 整理interbank之数据为一数据框
-        BI_data_export = pd.DataFrame()
-        BI_data = pd.DataFrame()
-        numRow, numCol = np.shape(A_data.BI[0]['dataBI'].A_BI)
-        for (i1, v1) in enumerate(A_data.BI):
-            BI_data['id_data'] = np.full(numRow * numCol, v1['id_data'])
-            BI_data['round'] = np.full(numRow * numCol, v1['round'])
-            BI_data['index_process'] = np.full(numRow * numCol, v1['index_process'])
-            BI_data['index_stage'] = np.full(numRow * numCol, v1['index_stage'])
-            BI_data['index_stage'] = np.full(numRow * numCol, v1['index_stage'])
-            BI_data['row'] = np.repeat(range(1, numRow + 1), numCol)
-            BI_data['col'] = np.tile(range(1, numCol + 1), numRow)
-            fieldNames = list(v1['dataBI'].__dict__.keys())
-            fieldValues = list(v1['dataBI'].__dict__.values())
+        IB_data_export = pd.DataFrame()
+        IB_data = pd.DataFrame()
+        numRow, numCol = np.shape(A_data.IB[0]['dataIB'].A_IB)
+        for (i1, v1) in enumerate(A_data.IB):
+            IB_data['id_data'] = np.full(numRow * numCol, v1['id_data'])
+            IB_data['round'] = np.full(numRow * numCol, v1['round'])
+            IB_data['index_process'] = np.full(numRow * numCol, v1['index_process'])
+            IB_data['index_stage'] = np.full(numRow * numCol, v1['index_stage'])
+            IB_data['index_stage'] = np.full(numRow * numCol, v1['index_stage'])
+            IB_data['row'] = np.repeat(range(1, numRow + 1), numCol)
+            IB_data['col'] = np.tile(range(1, numCol + 1), numRow)
+            fieldNames = list(v1['dataIB'].__dict__.keys())
+            fieldValues = list(v1['dataIB'].__dict__.values())
             for (i2, v2) in enumerate(fieldValues):
                 # if type(v2)==IdsType:
                 #     print("这个是id类型！")
                 if (v2.dtype == np.float_ or v2.dtype == np.bool_ or v2.dtype == np.int16):
-                    BI_data[fieldNames[i2]] = v2.flatten()  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
+                    IB_data[fieldNames[i2]] = v2.flatten()  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
                 elif v2.dtype == list:
                     ## 转换信息列表为矩阵形式  #HACK能否用现成的功能函数代替？
                     m2 = np.full((numRow, numCol), False)
@@ -359,12 +359,12 @@ class Collector:
                                 m2[i3, i4] = False
                                 pass  # else
                             pass  # for
-                    BI_data[fieldNames[i2]] = m2.T.flatten()  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
+                    IB_data[fieldNames[i2]] = m2.T.flatten()  # 赋值相应的字段之矩阵给数据框之相应的字段之数据列
                     pass  # if
                 pass  # for
-            BI_data_export = pd.concat([BI_data_export, BI_data])  # 追加当前`BI_data`至`BI_data_expert`
+            IB_data_export = pd.concat([IB_data_export, IB_data])  # 追加当前`IB_data`至`IB_data_expert`
             pass  # for
-        BI_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "BI_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
+        IB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
 
         pass  # method
 

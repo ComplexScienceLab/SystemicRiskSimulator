@@ -10,18 +10,18 @@ class AgentDataCollection:
     #TODO 定义待收集数据类型
     """
     BB: list
-    BI: list
+    IB: list
 
     # # @classmethod
     # def __init__(self):
     #     self.BB = []
-    #     self.BI = []
+    #     self.IB = []
     #     pass
 
     # @classmethod
-    def __init__(self, BB: BankCommercial, BI: BankInterbank):
+    def __init__(self, BB: BankCommercial, IB: BankInterbank):
         self.BB = BB
-        self.BI = BI
+        self.IB = IB
         pass
 
     pass

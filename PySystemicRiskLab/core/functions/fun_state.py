@@ -265,21 +265,21 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isNeededBoBI(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行需要偿还银行间负债的。"""
-        bank.is_needed_BoBI = ((bank.Shock_BI_run_ilq_t > 0) & bank.on)
+        bank.is_needed_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoBI(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isEnabledBoIB(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行能够偿还银行间负债的。"""
-        bank.is_enabled_BoBI = ((bank.Shock_BI_run_ilq_t > 0) & (bank.A_Q > 0) & bank.on)
+        bank.is_enabled_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & (bank.A_Q > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoBI_from_isNeededBoBI(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isEnabledBoIB_from_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行能够偿还银行间负债的，从需要偿还银行间负债的。"""
-        bank.is_enabled_BoBI = (bank.is_needed_BoBI & (bank.A_Q > 0))
+        bank.is_enabled_BoIB = (bank.is_needed_BoIB & (bank.A_Q > 0))
         pass
 
     @classmethod
@@ -338,9 +338,9 @@ class BankState:
 
         # 计算示性矩阵之于银行间风险敞口的
         if goal == "debtor":
-            is_exposure = ((interbank.A_BI > 0.0) & isState)
+            is_exposure = ((interbank.A_IB > 0.0) & isState)
         elif goal == "creditor":
-            is_exposure = ((interbank.Z_BI > 0.0) & isState)
+            is_exposure = ((interbank.Z_IB > 0.0) & isState)
         else:
             pass
         list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(env['num_bank'])])
@@ -363,8 +363,8 @@ class BankState:
         - ``illiquid``:  到流动性短缺状态；
         - ``bankrupt``:  到破产状态；
         - ``off``:  到退出状态；
-        - ``needed repay BI``:  到是否需要偿还银行间借款状态；
-        - ``enabled repay BI``:  到是否可以偿还银行间借款状态；
+        - ``needed repay IB``:  到是否需要偿还银行间借款状态；
+        - ``enabled repay IB``:  到是否可以偿还银行间借款状态；
         - ``needed repay Z_D``:  到是否需要偿还居民存款状态；
         - ``enabled repay Z_D``:  到是否需要偿还借款状态；
         - ``needed collect A_P``:  到是否可以收回厂商贷款状态；
@@ -378,7 +378,7 @@ class BankState:
         - ``illiquid``:  从流动性短缺状态出发；
         - ``bankrupt``:  从破产状态出发；
         - ``off``:  从退出状态出发；
-        - ``needed repay BI``:  到是否需要偿还银行间借款状态；
+        - ``needed repay IB``:  到是否需要偿还银行间借款状态；
         - ``needed repay Z_D``:  到是否需要偿还居民存款状态；
         - ``needed collect A_P``:  到是否可以收回厂商贷款状态；
 
@@ -554,17 +554,17 @@ class BankState:
             else:
                 raise Exception("关键词source取词错误".format(source))
                 pass
-        elif target == 'needed repay BI':
+        elif target == 'needed repay IB':
             if source == 'any':
-                cls.calc_isNeededBoBI(bank, interbank)
+                cls.calc_isNeededBoIB(bank, interbank)
             else:
                 raise Exception("关键词source取词错误".format(source))
                 pass
-        elif target == 'enabled repay BI':
+        elif target == 'enabled repay IB':
             if source == 'any':
-                cls.calc_isEnabledBoBI(bank, interbank)
-            elif source == 'needed repay BI':
-                cls.calc_isEnabledBoBI_from_isNeededBoBI(bank, interbank)
+                cls.calc_isEnabledBoIB(bank, interbank)
+            elif source == 'needed repay IB':
+                cls.calc_isEnabledBoIB_from_isNeededBoIB(bank, interbank)
             else:
                 raise Exception("关键词source取词错误".format(source))
                 pass

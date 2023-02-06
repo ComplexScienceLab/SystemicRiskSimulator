@@ -48,7 +48,7 @@ def fun_process_skeleton_template(self, A:SystemicRiskAgent, para:dict, env:dict
         BB_isv_t1 = deepcopy(A.BB.isv)
 
         b = TypeState(A.BB.on | A.BB.off) # 临时设置BB示性变量
-        ib = TypeState((A.BB.on | A.BB.off) & (A.BB.on | A.BB.off)') # 临时设置BI示性变量
+        ib = TypeState((A.BB.on | A.BB.off) & (A.BB.on | A.BB.off)') # 临时设置IB示性变量
 
         ## 处理每一个阶段
         for (idx_stage, stage) in enumerate(process.content)

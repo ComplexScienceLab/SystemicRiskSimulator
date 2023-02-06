@@ -61,100 +61,100 @@ class BankTransfer:
     @classmethod
     def together_transfer_B_Lo_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总贷款流出``Lo_{B}``。"""
-        bank.Lo_all[bankState] = bank.Lo_BI_all[bankState] + bank.Lo_exBI[bankState]
+        bank.Lo_all[bankState] = bank.Lo_IB_all[bankState] + bank.Lo_exIB[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Lo_exBI(cls, bank: BankCommercial, bankState: StateType):
-        """汇总各银行之非银行间贷款流出``Lo_{-BI}``。"""
-        bank.Lo_exBI[bankState] = bank.Lo_P[bankState]
+    def together_transfer_B_Lo_exIB(cls, bank: BankCommercial, bankState: StateType):
+        """汇总各银行之非银行间贷款流出``Lo_{-IB}``。"""
+        bank.Lo_exIB[bankState] = bank.Lo_P[bankState]
         pass
 
     @classmethod
     def together_transfer_B_Li_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总贷款流入``Li_{B}``。"""
-        bank.Li_all[bankState] = bank.Li_BI_all[bankState] + bank.Li_exBI[bankState]
+        bank.Li_all[bankState] = bank.Li_IB_all[bankState] + bank.Li_exIB[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Li_exBI(cls, bank: BankCommercial, bankState: StateType):
-        """汇总各银行之非银行间贷款流入``Li_{-BI}``。"""
-        bank.Li_exBI[bankState] = bank.Li_P[bankState]
+    def together_transfer_B_Li_exIB(cls, bank: BankCommercial, bankState: StateType):
+        """汇总各银行之非银行间贷款流入``Li_{-IB}``。"""
+        bank.Li_exIB[bankState] = bank.Li_P[bankState]
         pass
 
     @classmethod
     def together_transfer_B_Bo_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总借款流出``Bo_{B}``。"""
-        bank.Bo_all[bankState] = bank.Bo_BI_all[bankState] + bank.Bo_exBI[bankState]
+        bank.Bo_all[bankState] = bank.Bo_IB_all[bankState] + bank.Bo_exIB[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Bo_exBI(cls, bank: BankCommercial, bankState: StateType):
-        """汇总各银行之非银行间借款流出``Bo_{-BI}``。"""
-        bank.Bo_exBI[bankState] = bank.Bo_D[bankState]
+    def together_transfer_B_Bo_exIB(cls, bank: BankCommercial, bankState: StateType):
+        """汇总各银行之非银行间借款流出``Bo_{-IB}``。"""
+        bank.Bo_exIB[bankState] = bank.Bo_D[bankState]
         pass
 
     @classmethod
     def together_transfer_B_Bi_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总借款流入``Bi_{B}``。"""
-        bank.Bi_all[bankState] = bank.Bi_BI_all[bankState] + bank.Bi_exBI[bankState]
+        bank.Bi_all[bankState] = bank.Bi_IB_all[bankState] + bank.Bi_exIB[bankState]
         pass
 
     @classmethod
-    def together_transfer_B_Bi_exBI(cls, bank: BankCommercial, bankState: StateType):
-        """汇总各银行之非银行间借款流入``Bi_{-BI}``。"""
-        bank.Bi_exBI[bankState] = bank.Bi_D[bankState]
+    def together_transfer_B_Bi_exIB(cls, bank: BankCommercial, bankState: StateType):
+        """汇总各银行之非银行间借款流入``Bi_{-IB}``。"""
+        bank.Bi_exIB[bankState] = bank.Bi_D[bankState]
         pass
 
     @classmethod
-    def alter_transfer_Lo_BI(cls, interbank: BankInterbank, interbankState: StateType):
-        """转换银行间贷款流出``Lo_{BI}``为银行间借款流入``Bi_{BI}``。"""
-        interbank.Bi_BI = interbank.Lo_BI.T
+    def alter_transfer_Lo_IB(cls, interbank: BankInterbank, interbankState: StateType):
+        """转换银行间贷款流出``Lo_{IB}``为银行间借款流入``Bi_{IB}``。"""
+        interbank.Bi_IB = interbank.Lo_IB.T
         pass
 
     @classmethod
-    def alter_transfer_Bi_BI(cls, interbank: BankInterbank, interbankState: StateType):
-        """转换银行间借款流入``Bi_{BI}``为银行间贷款流出``Lo_{BI}``。"""
-        interbank.Lo_BI = interbank.Bi_BI.T
+    def alter_transfer_Bi_IB(cls, interbank: BankInterbank, interbankState: StateType):
+        """转换银行间借款流入``Bi_{IB}``为银行间贷款流出``Lo_{IB}``。"""
+        interbank.Lo_IB = interbank.Bi_IB.T
         pass
 
     @classmethod
-    def alter_transfer_Bo_BI(cls, interbank: BankInterbank, interbankState: StateType):
-        """转换银行间借款流出``Bo_{BI}``为银行间贷款流入``Li_{BI}``。"""
-        interbank.Li_BI = interbank.Bo_BI.T
+    def alter_transfer_Bo_IB(cls, interbank: BankInterbank, interbankState: StateType):
+        """转换银行间借款流出``Bo_{IB}``为银行间贷款流入``Li_{IB}``。"""
+        interbank.Li_IB = interbank.Bo_IB.T
         pass
 
     @classmethod
-    def alter_transfer_Li_BI(cls, interbank: BankInterbank, interbankState: StateType):
-        """转换银行间贷款流入``Li_{BI}``为银行间借款流出``Bo_{BI}``。"""
-        interbank.Bo_BI = interbank.Li_BI.T
+    def alter_transfer_Li_IB(cls, interbank: BankInterbank, interbankState: StateType):
+        """转换银行间贷款流入``Li_{IB}``为银行间借款流出``Bo_{IB}``。"""
+        interbank.Bo_IB = interbank.Li_IB.T
         pass
 
     @classmethod
-    def sum_transfer_Bi_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
-        """加总各银行之银行间借款流入``Bi_{B}``，通过银行间借款流入邻接矩阵``Bi_{BI}``。"""
-        bank.Bi_BI_all[:] = np.sum(interbank.Bi_BI * interbankState, axis=1).reshape(-1, 1)
+    def sum_transfer_Bi_IB(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
+        """加总各银行之银行间借款流入``Bi_{B}``，通过银行间借款流入邻接矩阵``Bi_{IB}``。"""
+        bank.Bi_IB_all[:] = np.sum(interbank.Bi_IB * interbankState, axis=1).reshape(-1, 1)
         pass
 
     @classmethod
-    def sum_transfer_Li_BI(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
-        """加总各银行之银行间贷款流入``Li_{B}``，通过银行间贷款流入邻接矩阵``Li_{BI}``。"""
-        bank.Li_BI_all[:] = np.sum(interbank.Li_BI * interbankState, axis=1).reshape(-1, 1)
+    def sum_transfer_Li_IB(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
+        """加总各银行之银行间贷款流入``Li_{B}``，通过银行间贷款流入邻接矩阵``Li_{IB}``。"""
+        bank.Li_IB_all[:] = np.sum(interbank.Li_IB * interbankState, axis=1).reshape(-1, 1)
         pass
 
     @classmethod
     def clear_all_transfer(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """清零所有流量变量值"""
-        bank.Lo_BI_all[bankState] = np.zeros((env['num_bank'], 1))[bankState]
+        bank.Lo_IB_all[bankState] = np.zeros((env['num_bank'], 1))[bankState]
         bank.Lo_P[bankState] = np.zeros((env['num_bank'], 1))[bankState]
-        bank.Li_BI_all[bankState] = np.zeros((env['num_bank'], 1))[bankState]
+        bank.Li_IB_all[bankState] = np.zeros((env['num_bank'], 1))[bankState]
         bank.Li_P[bankState] = np.zeros((env['num_bank'], 1))[bankState]
-        bank.Bi_BI_all[bankState] = np.zeros((env['num_bank'], 1))[bankState]
+        bank.Bi_IB_all[bankState] = np.zeros((env['num_bank'], 1))[bankState]
         bank.Bi_D[bankState] = np.zeros((env['num_bank'], 1))[bankState]
-        bank.Bo_BI_all[bankState] = np.zeros((env['num_bank'], 1))[bankState]
+        bank.Bo_IB_all[bankState] = np.zeros((env['num_bank'], 1))[bankState]
         bank.Bo_D[bankState] = np.zeros((env['num_bank'], 1))[bankState]
-        interbank.Lo_BI[interbankState] = np.zeros((env['num_bank'], env['num_bank']))[interbankState]
-        interbank.Bo_BI[interbankState] = np.zeros((env['num_bank'], env['num_bank']))[interbankState]
+        interbank.Lo_IB[interbankState] = np.zeros((env['num_bank'], env['num_bank']))[interbankState]
+        interbank.Bo_IB[interbankState] = np.zeros((env['num_bank'], env['num_bank']))[interbankState]
         pass
 
     @classmethod
@@ -170,14 +170,14 @@ class BankTransfer:
         - ``Li_P``:  已知``Li_{B,P}``，更新其余借贷流量变量；
         - ``Bi_D``:  已知``Bi_{B,D}``，更新其余借贷流量变量；
         - ``Bo_D``:  已知``Bo_{B,D}``，更新其余借贷流量变量；
-        - ``Lo_BI_all``:  已知``Lo_{BI}[i,: ]``，更新其余借贷流量变量；
-        - ``Li_BI_all``:  已知``Li_{BI}[i,: ]``，更新其余借贷流量变量；
-        - ``Bi_BI_all``:  已知``Bi_{BI}[i,: ]``，更新其余借贷流量变量；
-        - ``Bo_BI_all``:  已知``Bo_{BI}[i,: ]``，更新其余借贷流量变量；
-        - ``Lo_BI``:  已知``Lo_{BI}``，更新其余借贷流量变量；
-        - ``Bi_BI``:  已知``Bi_{BI}``，更新其余借贷流量变量；
-        - ``Bo_BI``:  已知``Bo_{BI}``，更新其余借贷流量变量；
-        - ``Li_BI``:  已知``Li_{BI}``，更新其余借贷流量变量；
+        - ``Lo_IB_all``:  已知``Lo_{IB}[i,: ]``，更新其余借贷流量变量；
+        - ``Li_IB_all``:  已知``Li_{IB}[i,: ]``，更新其余借贷流量变量；
+        - ``Bi_IB_all``:  已知``Bi_{IB}[i,: ]``，更新其余借贷流量变量；
+        - ``Bo_IB_all``:  已知``Bo_{IB}[i,: ]``，更新其余借贷流量变量；
+        - ``Lo_IB``:  已知``Lo_{IB}``，更新其余借贷流量变量；
+        - ``Bi_IB``:  已知``Bi_{IB}``，更新其余借贷流量变量；
+        - ``Bo_IB``:  已知``Bo_{IB}``，更新其余借贷流量变量；
+        - ``Li_IB``:  已知``Li_{IB}``，更新其余借贷流量变量；
 
         Args:
             bank (): 商业银行众
@@ -192,80 +192,80 @@ class BankTransfer:
 
         if by_way == 'all':
             cls.clear_all_transfer(bank, interbank, bankState, interbankState)
-            cls.alter_transfer_Lo_BI(interbank, interbankState)
-            cls.sum_transfer_Bi_BI(bank, interbank, bankState, interbankState)
-            cls.alter_transfer_Bo_BI(interbank, interbankState)
-            cls.sum_transfer_Li_BI(bank, interbank, bankState, interbankState)
-            cls.together_transfer_B_Lo_exBI(bank, bankState)
+            cls.alter_transfer_Lo_IB(interbank, interbankState)
+            cls.sum_transfer_Bi_IB(bank, interbank, bankState, interbankState)
+            cls.alter_transfer_Bo_IB(interbank, interbankState)
+            cls.sum_transfer_Li_IB(bank, interbank, bankState, interbankState)
+            cls.together_transfer_B_Lo_exIB(bank, bankState)
             cls.together_transfer_B_Lo_all(bank, bankState)
-            cls.together_transfer_B_Li_exBI(bank, bankState)
+            cls.together_transfer_B_Li_exIB(bank, bankState)
             cls.together_transfer_B_Li_all(bank, bankState)
-            cls.together_transfer_B_Bi_exBI(bank, bankState)
+            cls.together_transfer_B_Bi_exIB(bank, bankState)
             cls.together_transfer_B_Bi_all(bank, bankState)
-            cls.together_transfer_B_Bo_exBI(bank, bankState)
+            cls.together_transfer_B_Bo_exIB(bank, bankState)
             cls.together_transfer_B_Bo_all(bank, bankState)
             cls.together_T_all(bank, bankState)
         elif by_way == 'clear transfer all':
             cls.clear_all_transfer(bank, interbank, bankState, interbankState)
-            cls.alter_transfer_Lo_BI(interbank, ((bank.on | bank.off) & (bank.on | bank.off).T))
-            cls.sum_transfer_Bi_BI(bank, interbank, (bank.on | bank.off), ((bank.on | bank.off) & (bank.on | bank.off).T))
-            cls.alter_transfer_Bo_BI(interbank, ((bank.on | bank.off) & (bank.on | bank.off).T))
-            cls.sum_transfer_Li_BI(bank, interbank, (bank.on | bank.off), ((bank.on | bank.off) & (bank.on | bank.off).T))
-            cls.together_transfer_B_Lo_exBI(bank, (bank.on | bank.off))
+            cls.alter_transfer_Lo_IB(interbank, ((bank.on | bank.off) & (bank.on | bank.off).T))
+            cls.sum_transfer_Bi_IB(bank, interbank, (bank.on | bank.off), ((bank.on | bank.off) & (bank.on | bank.off).T))
+            cls.alter_transfer_Bo_IB(interbank, ((bank.on | bank.off) & (bank.on | bank.off).T))
+            cls.sum_transfer_Li_IB(bank, interbank, (bank.on | bank.off), ((bank.on | bank.off) & (bank.on | bank.off).T))
+            cls.together_transfer_B_Lo_exIB(bank, (bank.on | bank.off))
             cls.together_transfer_B_Lo_all(bank, (bank.on | bank.off))
-            cls.together_transfer_B_Li_exBI(bank, (bank.on | bank.off))
+            cls.together_transfer_B_Li_exIB(bank, (bank.on | bank.off))
             cls.together_transfer_B_Li_all(bank, (bank.on | bank.off))
-            cls.together_transfer_B_Bi_exBI(bank, (bank.on | bank.off))
+            cls.together_transfer_B_Bi_exIB(bank, (bank.on | bank.off))
             cls.together_transfer_B_Bi_all(bank, (bank.on | bank.off))
-            cls.together_transfer_B_Bo_exBI(bank, (bank.on | bank.off))
+            cls.together_transfer_B_Bo_exIB(bank, (bank.on | bank.off))
             cls.together_transfer_B_Bo_all(bank, (bank.on | bank.off))
             cls.together_T_all(bank, (bank.on | bank.off))
         elif by_way == 'Lo_P':
-            cls.together_transfer_B_Lo_exBI(bank, bankState)
+            cls.together_transfer_B_Lo_exIB(bank, bankState)
             cls.together_transfer_B_Lo_all(bank, bankState)
             cls.together_T_all(bank, bankState)
         elif by_way == 'Li_P':
-            cls.together_transfer_B_Li_exBI(bank, bankState)
+            cls.together_transfer_B_Li_exIB(bank, bankState)
             cls.together_transfer_B_Li_all(bank, bankState)
             cls.together_T_all(bank, bankState)
         elif by_way == 'Bi_D':
-            cls.together_transfer_B_Bi_exBI(bank, bankState)
+            cls.together_transfer_B_Bi_exIB(bank, bankState)
             cls.together_transfer_B_Bi_all(bank, bankState)
             cls.together_T_all(bank, bankState)
         elif by_way == 'Bo_D':
-            cls.together_transfer_B_Bo_exBI(bank, bankState)
+            cls.together_transfer_B_Bo_exIB(bank, bankState)
             cls.together_transfer_B_Bo_all(bank, bankState)
             cls.together_T_all(bank, bankState)
-        elif by_way == 'Lo_BI_all':
+        elif by_way == 'Lo_IB_all':
             cls.together_transfer_B_Lo_all(bank, bankState)
             cls.together_T_all(bank, bankState)
-        elif by_way == 'Li_BI_all':
+        elif by_way == 'Li_IB_all':
             cls.together_transfer_B_Li_all(bank, bankState)
             cls.together_T_all(bank, bankState)
-        elif by_way == 'Bi_BI_all':
+        elif by_way == 'Bi_IB_all':
             cls.together_transfer_B_Bi_all(bank, bankState)
             cls.together_T_all(bank, bankState)
-        elif by_way == 'Bo_BI_all':
+        elif by_way == 'Bo_IB_all':
             cls.together_transfer_B_Bo_all(bank, bankState)
             cls.together_T_all(bank, bankState)
-        elif by_way == 'Lo_BI':
-            cls.alter_transfer_Lo_BI(interbank, interbankState)
-            cls.sum_transfer_Bi_BI(bank, interbank, bankState, interbankState)
+        elif by_way == 'Lo_IB':
+            cls.alter_transfer_Lo_IB(interbank, interbankState)
+            cls.sum_transfer_Bi_IB(bank, interbank, bankState, interbankState)
             cls.together_transfer_B_Bi_all(bank, bankState)
             cls.together_T_all(bank, bankState)
-        elif by_way == 'Bi_BI':
-            cls.alter_transfer_Bi_BI(interbank, interbankState)
-            cls.sum_transfer_Bi_BI(bank, interbank, bankState, interbankState)
+        elif by_way == 'Bi_IB':
+            cls.alter_transfer_Bi_IB(interbank, interbankState)
+            cls.sum_transfer_Bi_IB(bank, interbank, bankState, interbankState)
             cls.together_transfer_B_Bi_all(bank, bankState)
             cls.together_T_all(bank, bankState)
-        elif by_way == 'Bo_BI':
-            cls.alter_transfer_Bo_BI(interbank, interbankState)
-            cls.sum_transfer_Li_BI(bank, interbank, bankState, interbankState)
+        elif by_way == 'Bo_IB':
+            cls.alter_transfer_Bo_IB(interbank, interbankState)
+            cls.sum_transfer_Li_IB(bank, interbank, bankState, interbankState)
             cls.together_transfer_B_Li_all(bank, bankState)
             cls.together_T_all(bank, bankState)
-        elif by_way == 'Li_BI':
-            cls.alter_transfer_Li_BI(interbank, interbankState)
-            cls.sum_transfer_Li_BI(bank, interbank, bankState, interbankState)
+        elif by_way == 'Li_IB':
+            cls.alter_transfer_Li_IB(interbank, interbankState)
+            cls.sum_transfer_Li_IB(bank, interbank, bankState, interbankState)
             cls.together_transfer_B_Li_all(bank, bankState)
             cls.together_T_all(bank, bankState)
         else:

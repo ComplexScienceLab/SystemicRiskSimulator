@@ -10,11 +10,11 @@ from PySystemicRiskLab.core.define.define_entity import Entity
 
 pass  # end import
 
-modelEntity_BI1111 = Entity(
+modelEntity_IB1111 = Entity(
     id=1111,
 )
 
-modelEntity_BI0000 = Entity(  # BUG 这个是为了凑数，防止出现遍历的时候只能遍历字符串的bug。
+modelEntity_IB0000 = Entity(  # BUG 这个是为了凑数，防止出现遍历的时候只能遍历字符串的bug。
     id=0000,
 )
 

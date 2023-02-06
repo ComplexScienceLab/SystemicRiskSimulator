@@ -42,7 +42,7 @@ class Processor:
         if node.attribute.node_type == {"content node"} and node.attribute.content_type == {"algorithm content"}:
             ## 设置临时变量
             b = (A.BB.on | A.BB.off)  # BB示性变量
-            ib = (A.BB.on | A.BB.off) & (A.BB.on | A.BB.off).T  # BI示性变量
+            ib = (A.BB.on | A.BB.off) & (A.BB.on | A.BB.off).T  # IB示性变量
 
             ## 执行终端节点内容
             if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
@@ -125,7 +125,7 @@ class Processor:
         return node, A, A_data, para, env
         pass  # method
 
-    ## TODO 后续需要用到类似`content_BI1111.content`的时候再继续
+    ## TODO 后续需要用到类似`content_IB1111.content`的时候再继续
     @classmethod
     def process_entity(cls, entity: Entity):  # TODO处理过程类型的实体
         """

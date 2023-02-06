@@ -53,7 +53,7 @@ def fun_model_skeleton_template(self, A:SystemicRiskAgent, para:dict, env:dict, 
         pass
 
 
-    # return BB, BI, para, env
+    # return BB, IB, para, env
     return A, para, env, A_data
     pass  # method
 

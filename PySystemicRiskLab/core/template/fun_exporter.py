@@ -44,7 +44,7 @@ def exportProcess(self, processContent:ModelContent; filepath_processSkeleton:St
         target030 *= """
 <<<<<<<< HEAD:draft/model_exporter.jl
         env[:process_name] = "$(p.text_name)"
-        data, BI, env = $(String(p.entity_name))!(data, BI, para, env)
+        data, IB, env = $(String(p.entity_name))!(data, IB, para, env)
         scheduler!(env)
         if env[:state_of_schedule] == :stepping:
             eval(Meta.parse(expr))
@@ -52,7 +52,7 @@ def exportProcess(self, processContent:ModelContent; filepath_processSkeleton:St
         if env[:state_of_schedule] == :collecting:
 ========
         env['process_name'] = "$(p.text_name)"
-        BB, BI, env = $(String(p.entity_name))!(BB, BI, para, env)
+        BB, IB, env = $(String(p.entity_name))!(BB, IB, para, env)
         scheduler(env)
         if env['state_of_schedule'] == StateOfScheduleEnum.stepping:
             eval(Meta.parse(expr))
@@ -113,7 +113,7 @@ def exportModel(self, modelContent:ModelContent; filepath_modelSkeleton:String="
         target030 *= """
 <<<<<<<< HEAD:draft/model_exporter.jl
         env[:process_name] = "$(p.text_name)"
-        data, BI, env = $(String(p.entity_name))!(data, BI, para, env)
+        data, IB, env = $(String(p.entity_name))!(data, IB, para, env)
         scheduler!(env)
         if env[:state_of_schedule] == :stepping:
             eval(Meta.parse(expr))
@@ -121,7 +121,7 @@ def exportModel(self, modelContent:ModelContent; filepath_modelSkeleton:String="
         if env[:state_of_schedule] == :collecting:
 ========
         env['process_name'] = "$(p.text_name)"
-        BB, BI, env = $(String(p.entity_name))!(BB, BI, para, env)
+        BB, IB, env = $(String(p.entity_name))!(BB, IB, para, env)
         scheduler(env)
         if env['state_of_schedule'] == StateOfScheduleEnum.stepping:
             eval(Meta.parse(expr))
