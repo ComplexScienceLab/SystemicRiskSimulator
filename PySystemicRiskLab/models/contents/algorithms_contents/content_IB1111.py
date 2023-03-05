@@ -21,12 +21,12 @@ def content_IB1111():  #TODO等需要的时候再写
     process_04 = b.build_process("entity_InterBankIlliquid")
     process_05 = b.build_process("entity_InterBankBankrupt")
 
-    p.process_entity(process_00)
-    p.process_entity(process_01)
-    condition_01, out_flow_entity = p.process_condition(process_01)
+    p.process_processEntity(process_00)
+    p.process_processEntity(process_01)
+    condition_01, out_flow_entity = p.process_conditionEntity(process_01)
     for c in condition_01:
         if c is True:
-            p.process_entity("entity_ExBankInsolvent")
+            p.process_processEntity("entity_ExBankInsolvent")
 
     label .process_02
 

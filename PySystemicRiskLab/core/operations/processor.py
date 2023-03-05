@@ -8,6 +8,7 @@ from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCo
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_entity import Entity
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.operations.collector import Collector
 from PySystemicRiskLab.core.operations.executer import Executer
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
@@ -20,7 +21,7 @@ class Processor:
     """
 
     @classmethod
-    def process(cls, node: Entity, A: SystemicRiskAgent, A_data: AgentDataCollection, para, env):
+    def process_entity(cls, node: Entity, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict):
         """
         处理所有类型的实体。
 
@@ -28,7 +29,7 @@ class Processor:
         NOTE：这里略去了功能：对特殊节点调用`Excuter`。因为就目前的程序来说，没必要进一步复杂化，直接在`Processor`内处理即可。
 
         Args:
-            node (Entity): 节点实体（NOTE：本函数中，特指节点实体而非算法实体。算法实体表示`entity`。）
+            node (Entity): 节点实体（NOTE：本函数中，特指节点实体而非算法实体。在这里，算法实体简称以`entity`。）
             A (SystemicRiskAgent): Agent群变量
             A_data (AgentDataCollection): Agent群变量之数据
             para (dict): 参数变量
@@ -44,14 +45,21 @@ class Processor:
             b = (A.BB.on | A.BB.off)  # BB示性变量
             ib = (A.BB.on | A.BB.off) & (A.BB.on | A.BB.off).T  # IB示性变量
 
+            # ## 执行终端节点内容 #BUG
+            # A = Executer.execute_terminal_entity(A, A_data, para, env, node)
+            #
+            # ## 收集数据
+            # A_data, env = Collector.collect(A, A_data, env)
+
             ## 执行终端节点内容
             if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
                 env = Scheduler.schedule(env, node)
                 if env['state_of_schedule'] == StateOfScheduleEnum.running:
-                    A = Executer.execute_terminal_entity(A, b, ib, para, env, node)
+                    A, A_data, env = Executer.execute_terminal_entity(A, A_data, para, env, node)
 
-            ## 收集数据
-            A_data, env = Collector.collect(A, A_data, env)
+            # ## 执行终端节点内容
+            # if env['state_of_schedule'] == StateOfScheduleEnum.running:
+            #     A, A_data, env = Executer.execute_terminal_entity(A, A_data, para, env, node)
 
             ## 标记为已经处理过
             node.attribute.other['process_state'] = "has processed"
@@ -78,15 +86,8 @@ class Processor:
             ## 继续循环处理该节点之内层的前向的节点，直到处理完结束节点为止。
             while not (inner_forward_node.attribute.other['process_state'] == "has processed" and inner_forward_node.attribute.entity_name == "node_END"):
                 ## 处理过程之内容（#NOTE：在设计的时候，就应该保证，同一个`arrow`之各个条件里，只能有一个条件是`True`，然后被处理于后续的时候）
-                conditions = []  # 条件结果列表
-                for arrow in inner_forward_node.process:  ## 判断每个条件
-                    condition = eval(arrow['condition'])  # 计算条件值
-                    logging.debug("        条件【%s】是 %s", arrow['condition'], condition)
-                    conditions.append(condition)
-                inner_forward_node = inner_forward_node.process[conditions.index(True)]['direction']  # 判断在当前条件下，符合条件的前向的节点
-                logging.debug("        方向是【节点：%s，算法：%s %s】", inner_forward_node.attribute.entity_name, inner_forward_node.content.attribute.entity_name, inner_forward_node.content.attribute.text_name)
                 if inner_forward_node.attribute.node_type == {"content node"} and inner_forward_node.attribute.content_type == {"algorithm content"}:
-                    inner_forward_node, A, A_data, para, env = Executer.execute_terminal_entity(inner_forward_node, A, A_data, para, env)  ## 执行该节点之内层的前向的节点实体
+                    A, A_data, env = Executer.execute_terminal_entity(A, A_data, para, env, inner_forward_node)  ## 执行该节点之内层的前向的节点实体
                 elif (
                         inner_forward_node.attribute.node_type == {"process node", "container node"} and inner_forward_node.attribute.content_type == {"algorithm content"}
                 ) or (
@@ -98,17 +99,29 @@ class Processor:
                     if inner_forward_node.attribute.entity_name == "node_START":
                         inner_forward_node.attribute.other['process_state'] = "has processed"
                         pass  # if
-
                     ## 如果是结束节点
                     if inner_forward_node.attribute.entity_name == "node_END":
                         inner_forward_node.attribute.other['process_state'] = "has processed"
                         pass  # if
+                    pass  # if
 
+                ## 处理流向
+                conditions = []  # 条件结果列表
+                if inner_forward_node.process.__len__() is not 0:
+                    for arrow in inner_forward_node.process:  ## 判断每个条件
+                        condition = eval(arrow['condition'])  # 计算条件值
+                        logging.debug("        条件【%s】是 %s", arrow['condition'], condition)
+                        conditions.append(condition)
+                        pass  # for
+                    inner_forward_node = inner_forward_node.process[conditions.index(True)]['direction']  # 判断在当前条件下，符合条件的前向的节点
+                    logging.debug("        方向是【节点：%s，算法：%s %s】", inner_forward_node.attribute.entity_name, inner_forward_node.content.attribute.entity_name, inner_forward_node.content.attribute.text_name)
+                    pass  # if
+                else:  # 结束节点
                     pass  # if
 
                 pass  # while
 
-            node.attribute.other['process_state'] == "has processed"  # 标记节点之处理状态为处理完成
+            node.attribute.other['process_state'] == "has processed"  # 标记节点之处理状态为处理完成 #BUG
 
         ## 如果实体之节点之类型是 {"process node"}，且内容之类型是 {"process content"}（NOTE：开始节点`node_START`、结束节点`node_END`），则处理：
         if node.attribute.node_type == {"process node"} and node.attribute.content_type == {"process content"}:
@@ -127,7 +140,7 @@ class Processor:
 
     ## TODO 后续需要用到类似`content_IB1111.content`的时候再继续
     @classmethod
-    def process_entity(cls, entity: Entity):  # TODO处理过程类型的实体
+    def process_processEntity(cls, entity: Entity):  # TODO处理过程类型的实体
         """
         Args:
             entity ():
@@ -135,11 +148,10 @@ class Processor:
         pass  # method
 
     @classmethod
-    def process_condition(cls, entity: Entity):  # TODO 处理过程类型的实体之条件
+    def process_conditionEntity(cls, entity: Entity):  # TODO 处理过程类型的实体之条件
         conditions = []  # 条件列表
         for (i, out_flow_entity) in enumerate(entity.process):  ## 判断每个条件
-            condition = eval(out_flow_entity['condition']) if out_flow_entity[
-                                                                  'condition'] is not None else None  # NOTE 其实判断None这个条件是多余的，因为
+            condition = eval(out_flow_entity['condition']) if out_flow_entity['condition'] is not None else None  # NOTE 其实判断None这个条件是多余的，因为
             logging.debug("        条件【%s】是 %s", out_flow_entity['condition'], condition)
             conditions.append(condition)
         out_flow_entity = entity.process[conditions.index(True)]['flow']

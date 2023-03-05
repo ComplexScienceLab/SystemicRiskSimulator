@@ -3,7 +3,7 @@
 """
 
 ##########################################
-# 状态/可扩展
+#状态/可扩展
 ##########################################
 
 from PySystemicRiskLab.core.define.define_entity import Entity

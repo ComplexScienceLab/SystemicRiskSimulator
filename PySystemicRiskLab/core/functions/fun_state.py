@@ -351,7 +351,7 @@ class BankState:
         pass
 
     @classmethod
-    def update_B_state(cls, bank: BankCommercial, interbank: BankInterbank, target: str = "any", source: str = "any"):
+    def update_B_state(cls, bank: BankCommercial, interbank: BankInterbank, target: str = 'any', source: str = 'any'):
         """
         更新各银行之状态。
 

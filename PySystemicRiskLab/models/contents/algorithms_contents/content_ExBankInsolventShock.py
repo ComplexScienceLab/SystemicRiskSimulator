@@ -31,7 +31,7 @@ def content_ExBankInsolventShock(BB: BankCommercial, IB: BankInterbank, b: State
     # BB.Z_D[BB.isv] -= BB.Shock_D_def_s[BB.isv]  # 存款负债变动，由于违约
     # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='Z_D')  # 更新资产负债表，通过Z_D或Z_IB_all
 
-    # Shock.update_B_Shock(BB, IB, b, ib, by_way = "clear Shock_B_A and Shock_B_Z") # 清零银行内资产负债冲击
+    # Shock.update_B_Shock(BB, IB, b, ib, by_way = 'clear Shock_B_A and Shock_B_Z') # 清零银行内资产负债冲击
 
     # BB.Shock_P_def_t[BB.isv] = np.zeros((env['num_bank'], 1))[BB.isv]  # 清零银行间和银行外冲击变量
     # Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_P_def_t')  # 更新违约损失冲击目标变量Shock_def_t

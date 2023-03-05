@@ -34,7 +34,7 @@ class BalanceSheet:
         pass
 
     # "更新各银行之银行总负债``Z_{B}``。"
-    # functions update_B_Z_all(bank:BankCommercial, interbank:BankInterbank, by_way:str = "all")
+    # functions update_B_Z_all(bank:BankCommercial, interbank:BankInterbank, by_way:str='all')
     #     if by_way == 'all':
     #         together_B_Z_exIB(bank,bankList)
     #         together_B_Z_IB(bank, interbank,bankList,interbankList)
@@ -105,7 +105,7 @@ class BalanceSheet:
     @classmethod
     def update_B_balance_sheet(cls, bank: BankCommercial, interbank: BankInterbank, bankList: StateType, interbankList: StateType, by_way: str):
         """
-        更新各银行之资产负债表变量。#状态/停用
+        更新各银行之资产负债表变量。
 
         参数``by_way``之可选项：
 
@@ -200,7 +200,7 @@ class BalanceSheet:
         #     pass
 
         # "更新各银行之银行总资产``A_{B}``。"
-        # functions update_B_A_all(bank:BankCommercial, interbank:BankInterbank; by_way:str = "all")
+        # functions update_B_A_all(bank:BankCommercial, interbank:BankInterbank; by_way:str='all')
         #     if by_way == 'all':
         #     elif by_way == 'A_exIB' | by_way == 'A_P' | by_way == 'A_Q' | by_way == 'A_R':
         #         together_B_A_exIB(bank,bankList)

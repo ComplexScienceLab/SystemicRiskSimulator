@@ -10,7 +10,7 @@ entityData_START = dict(
         node_type={"process node"},
         content_type={"process content"},
     ),
-    execute="Processor.process",
+    execute="Processor.process_entity",
     content=None,
     container=None,
 )

@@ -3,7 +3,7 @@
 ## 模块之银行间市场IB1111
 
 ##########################################
-#状态/开发
+#状态/废弃
 ##########################################
 
 # module model_IB1111
@@ -50,7 +50,7 @@ def model_IB1111(self, BB:BankCommercial, IB:BankInterbank, para:dict, env:dict)
     #= @scheduler_process  =#BB, IB, env = processEntity_InterBankBankrupt(BB, IB, paras, env)
 
 
-    # update_B_balance_sheet(BB, IB,b,ib; by_way = "calc all E_all") # 更新计算各银行之所有者权益
+    # update_B_balance_sheet(BB, IB,b,ib; by_way = 'calc all E_all') # 更新计算各银行之所有者权益
     # A_data.BB[env['tau']] = deepcopy(BB) # 存储该回合传染结果数据
     # A_data.IB[env['tau']] = deepcopy(IB) # 存储该回合传染结果数据
     #TODO 最终破产清算

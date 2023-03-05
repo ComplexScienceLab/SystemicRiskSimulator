@@ -11,7 +11,7 @@ entityData_IB1111 = dict(
         node_type={"container node", "process node"},
         content_type={"model content"},
     ),
-    execute="Processor.process",
+    execute="Processor.process_entity",
     content="content_IB1111",
     container=list([
         dict(
@@ -35,13 +35,13 @@ entityData_IB1111 = dict(
                 process=list([
                     dict(
                         arrow=dict(
-                            condition="A.BB.isv.any() != A_data.BB[env['round']-1]['dataBB'].isv.any()",
+                            condition="(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()",
                             direction="node_02",
                         ),
                     ),
                     dict(
                         arrow=dict(
-                            condition="A.BB.isv.all() == A_data.BB[env['round']-1]['dataBB'].isv.all()",
+                            condition="(A.BB.isv == A_data.BB[env['round']-1]['dataBB'].isv).all()",
                             direction="node_03",
                         ),
                     ),
@@ -55,13 +55,13 @@ entityData_IB1111 = dict(
                 process=list([
                     dict(
                         arrow=dict(
-                            condition="A.BB.isv.any() != A_data.BB[env['round']-1]['dataBB'].isv.any()",
+                            condition="(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()",
                             direction="node_02",
                         ),
                     ),
                     dict(
                         arrow=dict(
-                            condition="A.BB.isv.all() == A_data.BB[env['round']-1]['dataBB'].isv.all()",
+                            condition="(A.BB.isv == A_data.BB[env['round']-1]['dataBB'].isv).all()",
                             direction="node_03",
                         ),
                     ),
@@ -75,13 +75,13 @@ entityData_IB1111 = dict(
                 process=list([
                     dict(
                         arrow=dict(
-                            condition="A.BB.ilq.any() != A_data.BB[env['round']-1]['dataBB'].ilq.any()",
+                            condition="(A.BB.ilq != A_data.BB[env['round']-1]['dataBB'].ilq).any()",
                             direction="node_04",
                         ),
                     ),
                     dict(
                         arrow=dict(
-                            condition="A.BB.ilq.all() == A_data.BB[env['round']-1]['dataBB'].ilq.all()",
+                            condition="(A.BB.ilq == A_data.BB[env['round']-1]['dataBB'].ilq).all()",
                             direction="node_END",
                         ),
                     ),
@@ -95,13 +95,13 @@ entityData_IB1111 = dict(
                 process=list([
                     dict(
                         arrow=dict(
-                            condition="A.BB.ilq.any() != A_data.BB[env['round']-1]['dataBB'].ilq.any()",
+                            condition="(A.BB.ilq != A_data.BB[env['round']-1]['dataBB'].ilq).any()",
                             direction="node_04",
                         ),
                     ),
                     dict(
                         arrow=dict(
-                            condition="A.BB.ilq.all() == A_data.BB[env['round']-1]['dataBB'].ilq.all()",
+                            condition="(A.BB.ilq == A_data.BB[env['round']-1]['dataBB'].ilq).all()",
                             direction="node_END",
                         ),
                     ),

@@ -12,7 +12,7 @@ entityData_ExBankIlliquid = dict(
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
     ),
-    execute="Processor.process",
+    execute="Processor.process_entity",
     content=None,  # TODO等需要的时候再写
     container=list([
         dict(

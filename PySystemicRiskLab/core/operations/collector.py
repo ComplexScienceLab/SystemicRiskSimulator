@@ -22,20 +22,20 @@ class Collector:
         运作收集数据
 
         Args:
-            env (dict): 环境变量
             A (Optional[SystemicRiskAgent]): Agent群变量
             A_data (Optional[AgentDataCollection]): Agent群变量之数据
+            env (dict): 环境变量
 
         Returns:
             如果是初始化数据，则返回 A_data；如果是收集数据，则返回 A_data, env；如果是导出数据，则无返回；
 
         """
-        if env['state_of_schedule'] == StateOfScheduleEnum.running:
+        if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
             env = Scheduler.schedule(env)
             logging.debug("                收集数据")
             env['id_data'] += 1  # 累加数据帧ID号
             A_data = Collector.collect_agent_data(A, A_data, env)
-            env = Scheduler.schedule(env)
+            # env = Scheduler.schedule(env)
             return A_data, env
         elif env['state_of_schedule'] == StateOfScheduleEnum.initializing:
             logging.debug("                初始化数据")

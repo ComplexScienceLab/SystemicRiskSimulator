@@ -6,7 +6,10 @@ from PySystemicRiskLab import logging
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_entity import Entity
+from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 from PySystemicRiskLab.core.define.define_type import *
+from PySystemicRiskLab.core.operations.collector import Collector
+from PySystemicRiskLab.core.operations.scheduler import Scheduler
 
 pass  # end import
 
@@ -46,15 +49,14 @@ class Executer:
         pass  # method
 
     @classmethod
-    def execute_terminal_entity(cls, A: SystemicRiskAgent, b: StateType, ib: StateType, para: dict, env: dict, node: Entity):
+    def execute_terminal_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, node: Entity):
         """
         执行终端实体。
         输入参数将被直接修改。
 
         Args:
             A (SystemicRiskAgent): Agent群变量
-            b (StateType): 商业银行群示性向量
-            ib (StateType): 银行间邻接矩阵示性矩阵
+            A_data (Optional[AgentDataCollection]): Agent群变量之数据
             para (dict): 参数变量
             env (dict): 环境变量
             node (Entity): 节点实体（NOTE：本函数中，特指节点实体而非算法实体。算法实体表示`entity`。）
@@ -68,11 +70,17 @@ class Executer:
 
         env['round'] += 1  # 计次回合数
 
-        A.BB, A.BI = entity.execute(A.BB, A.BI, b, ib, para, env)
+        A.BB, A.IB = entity.execute(A.BB, A.IB, A.b, A.ib, para, env)
+
+        ## 收集数据 #BUG
+        if env['state_of_schedule'] == StateOfScheduleEnum.running:
+            env = Scheduler.schedule(env, node)
+            if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
+                A_data, env = Collector.collect(A, A_data, env)
 
         logging.debug("- - 结束阶段：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
 
-        return A
+        return A, A_data, env
         pass  # method
 
     # @classmethod
@@ -98,8 +106,5 @@ class Executer:
     #     logging.debug("- 出过程：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
     #
     #     pass  # method
-
-    def execute
-
 
     pass  # class

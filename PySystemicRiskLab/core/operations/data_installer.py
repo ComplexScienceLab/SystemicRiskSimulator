@@ -7,6 +7,7 @@ from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInte
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import IdsType
 from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
+from PySystemicRiskLab.core.functions.fun_transfer import BankTransfer
 from PySystemicRiskLab.core.functions.fun_shock import Shock
 from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
@@ -360,13 +361,7 @@ class DataInstaller:
             raise ("关键词" + str(init_method) + "取值错误！")
             pass
 
-        ## 构建Agent模型
-        ## NOTE 当用对象字段数据结构时：
-        A = SystemicRiskAgent(
-            1,  # 编号（必备的）
-            BB,  # 商业银行群
-            IB  # 银行间邻接矩阵
-        )
+
 
         # ## NOTE 当用pandas数据结构时：
         # A = pd.Series([BB, IB], index=['BB', 'IB'])
@@ -377,11 +372,21 @@ class DataInstaller:
         ## 更新各银行之变量，在第一回合初始时 # BUG
         b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置BB示性变量
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
-        Shock.update_B_Shock(BB, IB, b, ib, by_way='all')  # 更新各银行之所有冲击变量，在第一回合开始时
+        BankTransfer.update_B_transfer(BB, IB, b, ib, by_way='all')  # 更新各银行之所有交易变量，在第一回合开始时
         Shock.update_B_Shock(BB, IB, b, ib, by_way='all')  # 更新各银行之所有冲击变量，在第一回合开始时
         BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='all')  # 更新各银行之资产负债表变量
         BankState.update_B_state(BB, IB, target='any', source='any')  # 更新各银行之状态示性变量
 
+        ## 构建Agent模型
+        ## NOTE 当用对象字段数据结构时。
+        #HACK 注意这时候`b`、`ib`变量在后续过程中没有发生变动，几乎就是一个鸡肋的携带物。
+        A = SystemicRiskAgent(
+            1,  # 编号（必备的）
+            BB,  # 商业银行群
+            b, # 商业银行群示性变量
+            IB,  # 银行间邻接矩阵
+            ib, # 银行间邻接矩阵示性变量
+        )
         return A
         pass  # method
 

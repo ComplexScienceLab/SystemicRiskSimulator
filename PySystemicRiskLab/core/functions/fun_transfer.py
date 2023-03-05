@@ -1,5 +1,4 @@
-import numpy as np
-
+from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import StateType, MoneyType
@@ -158,7 +157,7 @@ class BankTransfer:
         pass
 
     @classmethod
-    def update_B_transfer(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str = "all"):
+    def update_B_transfer(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str='all'):
         """
         更新各银行之借贷流量变量。
 

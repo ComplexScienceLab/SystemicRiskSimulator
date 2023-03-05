@@ -1,8 +1,5 @@
 "功能函数集：计算冲击。"
 
-##########################################
-# 状态/使用
-##########################################
 
 from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
@@ -140,19 +137,19 @@ class Shock:
 
     @classmethod
     def conduct_Shock_D(cls, bank: BankCommercial, bankState: StateType):
-        """传导存款损失外生冲击。"""  # 状态：暂不使用。
+        """传导存款损失外生冲击。"""  #状态/暂不使用。
         bank.Shock_B_Z[bankState] = bank.Shock_D_run_t[bankState]
         pass
 
     @classmethod
     def conduct_Shock_IB_def_t(cls, bank: BankCommercial, bankState: StateType):
-        """传导银行间违约损失冲击。"""  # 状态：暂不使用。
+        """传导银行间违约损失冲击。"""  #状态/暂不使用。
         bank.Shock_B_A[bankState] = bank.Shock_IB_def_t[bankState]
         pass
 
     @classmethod
     def conduct_Shock_IB_run_t(cls, bank: BankCommercial, bankState: StateType):
-        """传导银行间挤兑流动冲击。"""  # 状态：暂不使用。
+        """传导银行间挤兑流动冲击。"""  #状态/暂不使用。
         bank.Shock_B_A[bankState] = bank.Shock_IB_run_t[bankState]
         pass
 
@@ -183,7 +180,7 @@ class Shock:
         pass
 
     @classmethod
-    def update_B_Shock(cls, bank: BankCommercial, interbank: BankInterbank, bankState, interbankState, by_way: str = "all"):
+    def update_B_Shock(cls, bank: BankCommercial, interbank: BankInterbank, bankState, interbankState, by_way: str='all'):
         """
         更新各银行之冲击。
         
@@ -228,6 +225,7 @@ class Shock:
 
         Args:
             by_way:str:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
+
         """
         if by_way == 'all':
             cls.together_Shock_B(bank, bankState)

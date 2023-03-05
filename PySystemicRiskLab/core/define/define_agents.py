@@ -1,8 +1,5 @@
 "结构体：定义各类Agents，基于模式3-1"
 
-
-
-
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import *
 
@@ -29,7 +26,7 @@ class BaseInterAgents:
     pass
 
 
-class BankCommercial(BaseAgents): #TODO有必要改成动态创建类属性
+class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     """
     商业银行群复合类
     """
@@ -112,7 +109,6 @@ class BankCommercial(BaseAgents): #TODO有必要改成动态创建类属性
     list_illiquid = np.NaN  # = np.full((env['num_bank'], 1), list)  # 列表之于流动性短缺的银行编号 list_illiquid
     list_bankrupt = np.NaN  # = np.full((env['num_bank'], 1), list)  # 列表之于破产的银行编号 list_bankrupt
 
-
     # TODO 补充损失变量；
     # TODO 增加监管约束之状态；
 
@@ -162,7 +158,6 @@ class BankInterbank(BaseInterAgents):
     cre_br = []  # 信息列表之于破产的银行之债权方银行编号 list_creditors_in_bankrupt
     deb_br = []  # 信息列表之于破产的银行之债务方银行编号 list_debtors_in_bankrupt
 
-
     def __init__(self, *args, **kwargs):
         for index, key in enumerate(self.__dir__()):
             if not key.startswith('__'):
@@ -180,12 +175,16 @@ class SystemicRiskAgent:
     """
     id_agent: int  # 编号（必备的）
     BB: BankCommercial  # 商业银行群
+    b: StateType  # 商业银行群示性向量
     IB: BankInterbank  # 银行间邻接矩阵
+    ib: StateType  # 银行间邻接矩阵示性矩阵
 
-    def __init__(self, id_agent, BB: BankCommercial, IB: BankInterbank):
+    def __init__(self, id_agent, BB: BankCommercial, b: StateType, IB: BankInterbank, ib: StateType):
         self.id_agent = id_agent
         self.BB = BB
+        self.b = b
         self.IB = IB
+        self.ib = ib
         pass
 
     pass
