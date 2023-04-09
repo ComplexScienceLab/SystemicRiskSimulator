@@ -2,5 +2,8 @@
     "spellright.language": [],
     "spellright.documentTypes": [
         "latex"
-    ]
+    ],
+    "[python]": {
+        "editor.maxTokenizationLineLength": 1000
+    }
 }

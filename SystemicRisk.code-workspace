@@ -10,12 +10,21 @@
 		// },
 		"editor.fontLigatures": true,
 		"files.autoSave": "onFocusChange",
-		"editor.fontSize": 14
+		"editor.fontSize": 15,
+		"editor.fontFamily": "Times New Roman, Songti SC, STZhongsong, Menlo, Monaco, 'Courier New', monospace, Luxi Mono"
 	},
 	"launch": {
 		"version": "0.2.0",
 		"configurations": [
-
+			{
+				"name": "Launch active JS file",
+				"program": "${file}",
+				"request": "launch",
+				"skipFiles": [
+					"<node_internals>/**"
+				],
+				"type": "node"
+			},
 			{
 				"type": "julia",
 				"request": "launch",

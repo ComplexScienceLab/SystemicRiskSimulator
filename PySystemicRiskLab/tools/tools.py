@@ -1,6 +1,6 @@
 "函数区：工具集"
 
-from PySystemicRiskLab import os, time, Path, itertools, pkgutil, importlib, re, logging
+from PySystemicRiskLab import os, time, Path, itertools, pkgutil, importlib, re, logging, np
 from PySystemicRiskLab.core.define.define_type import EnvironmentVariableType
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 
@@ -19,6 +19,14 @@ class Tools:
     #         )
     #         pass
     #     pass
+
+    def extract_number(pattern, filename):
+        match = re.search(pattern, filename)
+        if match:
+            return int(match.group(1))
+        else:
+            return 0
+
 
     @classmethod
     def test_println(cls, content):
@@ -102,7 +110,7 @@ class Tools:
         pass  # method
 
     @classmethod
-    def import_modules_from_package(cls, folderpath: str, pattern:str):
+    def import_modules_from_package(cls, folderpath: str, pattern: str):
         """
         从包批量导入模块与方法
 
@@ -243,6 +251,24 @@ class Tools:
         logging.debug("循环运行到第 %s 步。", str(env['test_continous_loop_of_model']))
         env['test_continous_loop_of_model'] += 1
         return env
+        pass  # method
+
+    @classmethod
+    def MinMaxScaler(cls, data: list, min_max_range: tuple):
+        """
+        指定范围，归一化数组之各元素到范围内。
+        
+        Args:
+            data (list): 待处理的列表
+            min_max_range (tuple): 范围，(最小范围, 最大范围)
+
+        Returns: 列表形式的归一化数组。
+        """
+
+        data_numpy = np.asarray(data)
+        transformed_data = ((data_numpy - np.min(data_numpy)) / (np.max(data_numpy) - np.min(data_numpy))) * (min_max_range[1] - min_max_range[0]) + min_max_range[0]
+        return (list(transformed_data))
+        # list(MinMaxScaler(feature_range=(0.1, 5)).fit_transform(np.asarray(A_IB).reshape(-1, 1)))
         pass  # method
 
     pass  # class
