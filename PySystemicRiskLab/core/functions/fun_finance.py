@@ -30,10 +30,10 @@ class Finance:
         bank_last = deepcopy(bank)
         interbank_last = deepcopy(interbank)
         for k, v in bank.__dict__.items():
-            if v.any() != bank_last[k].any():
+            if (v != bank_last.__dict__[k]).any():
                 update_variable_name, update_variable_value = k, v
         for k, v in interbank.__dict__.items():
-            if v.any() != interbank_last[k].any():
+            if (v != interbank_last.__dict__[k]).any():
                 update_variable_name, update_variable_value = k, v
             pass  # for
 

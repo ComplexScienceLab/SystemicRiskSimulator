@@ -107,7 +107,7 @@ class Processor:
 
                 ## 处理流向
                 conditions = []  # 条件结果列表
-                if inner_forward_node.process.__len__() is not 0:
+                if inner_forward_node.process.__len__() != 0:
                     for arrow in inner_forward_node.process:  ## 判断每个条件
                         condition = eval(arrow['condition'])  # 计算条件值
                         logging.debug("        条件【%s】是 %s", arrow['condition'], condition)
