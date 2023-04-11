@@ -59,7 +59,7 @@ class BankTransfer:
 
     @classmethod
     def together_transfer_B_Lo_all(cls, bank: BankCommercial, bankState: StateType):
-        """汇总各银行之总贷款流出``Lo_{B}``。"""
+        """汇总各银行之总贷款流出（贷款方发款出去）``Lo_{B}``。"""
         bank.Lo_all[bankState] = bank.Lo_IB_all[bankState] + bank.Lo_exIB[bankState]
         pass
 
@@ -71,7 +71,7 @@ class BankTransfer:
 
     @classmethod
     def together_transfer_B_Li_all(cls, bank: BankCommercial, bankState: StateType):
-        """汇总各银行之总贷款流入``Li_{B}``。"""
+        """汇总各银行之总贷款流入（贷款方收款回来）``Li_{B}``。"""
         bank.Li_all[bankState] = bank.Li_IB_all[bankState] + bank.Li_exIB[bankState]
         pass
 
@@ -83,7 +83,7 @@ class BankTransfer:
 
     @classmethod
     def together_transfer_B_Bo_all(cls, bank: BankCommercial, bankState: StateType):
-        """汇总各银行之总借款流出``Bo_{B}``。"""
+        """汇总各银行之总借款流出（借款方还款出去）``Bo_{B}``。"""
         bank.Bo_all[bankState] = bank.Bo_IB_all[bankState] + bank.Bo_exIB[bankState]
         pass
 
@@ -95,7 +95,7 @@ class BankTransfer:
 
     @classmethod
     def together_transfer_B_Bi_all(cls, bank: BankCommercial, bankState: StateType):
-        """汇总各银行之总借款流入``Bi_{B}``。"""
+        """汇总各银行之总借款流入（借款方借款进来）``Bi_{B}``。"""
         bank.Bi_all[bankState] = bank.Bi_IB_all[bankState] + bank.Bi_exIB[bankState]
         pass
 

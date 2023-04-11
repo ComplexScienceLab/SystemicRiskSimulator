@@ -47,19 +47,19 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     Z_other = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行持有的其他负债（非流动性负债） Z_other
     E_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 所有者权益 E_all
     T_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 总交易流量 Transfer_all: $Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
-    Lo_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 总贷款流出 Lo_all: $Lo_all=Lo_IB_all+Lo_exIB$
+    Lo_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 总贷款流出（贷款方发款出去） Lo_all: $Lo_all=Lo_IB_all+Lo_exIB$
     Lo_IB_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行间贷款流出 Lo_IB_all
     Lo_exIB = np.NaN  # = np.zeros((env['num_bank'], 1))  # 非银行间贷款流出 Lo_exIB: $Lo_exIB=Lo_P$
     Lo_P = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行贷款流出给生产部门 Lo_P
-    Li_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 总贷款流入 Li_all: $Li_all=Li_IB_all+Li_exIB$
+    Li_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 总贷款流入（贷款方收款回来） Li_all: $Li_all=Li_IB_all+Li_exIB$
     Li_IB_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行间贷款流入 Li_IB_all
     Li_exIB = np.NaN  # = np.zeros((env['num_bank'], 1))  # 非银行间贷款流入 Li_exIB: $Li_exIB=Li_D$
     Li_P = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行贷款流入从生产部门 Li_P
-    Bi_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 总借款流入 Bi_all: $Bi_all=Bi_IB_all+Bi_exIB$
+    Bi_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 总借款流入（借款方借款进来） Bi_all: $Bi_all=Bi_IB_all+Bi_exIB$
     Bi_IB_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行间借款流入 Bi_IB_all
     Bi_exIB = np.NaN  # = np.zeros((env['num_bank'], 1))  # 非银行间借款流入 Bi_exIB: $Bi_exIB=Bi_D$
     Bi_D = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行借款流入从居民部门 Bi_D
-    Bo_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 总借款流出 Bo_all: $Bo_all=Bo_IB_all+Bo_exIB$
+    Bo_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 总借款流出（借款方还款出去） Bo_all: $Bo_all=Bo_IB_all+Bo_exIB$
     Bo_IB_all = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行间借款流出 Bo_IB_all
     Bo_exIB = np.NaN  # = np.zeros((env['num_bank'], 1))  # 非银行间借款流出 Bo_exIB: $Bo_exIB=Bo_P$
     Bo_D = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行借款流出给居民部门 Bo_D
@@ -211,19 +211,19 @@ if __name__ == "__main__":
         Z_other=np.zeros((env['num_bank'], 1)),  # 银行持有的其他负债（非流动性负债） Z_other
         E_all=np.array([[216.83, 267.13, 233.56, 324.39, 189.66]]),  # 所有者权益 E_all
         T_all=np.zeros((env['num_bank'], 1)),  # 总交易流量 Transfer_all: $Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
-        Lo_all=np.zeros((env['num_bank'], 1)),  # 总贷款流出 Lo_all: $Lo_all=Lo_IB_all+Lo_exIB$
+        Lo_all=np.zeros((env['num_bank'], 1)),  # 总贷款流出（贷款方发款出去） Lo_all: $Lo_all=Lo_IB_all+Lo_exIB$
         Lo_IB_all=np.zeros((env['num_bank'], 1)),  # 银行间贷款流出 Lo_IB_all
         Lo_exIB=np.zeros((env['num_bank'], 1)),  # 非银行间贷款流出 Lo_exIB: $Lo_exIB=Lo_P$
         Lo_P=np.zeros((env['num_bank'], 1)),  # 银行贷款流出给生产部门 Lo_P
-        Li_all=np.zeros((env['num_bank'], 1)),  # 总贷款流入 Li_all: $Li_all=Li_IB_all+Li_exIB$
+        Li_all=np.zeros((env['num_bank'], 1)),  # 总贷款流入（贷款方收款回来） Li_all: $Li_all=Li_IB_all+Li_exIB$
         Li_IB_all=np.zeros((env['num_bank'], 1)),  # 银行间贷款流入 Li_IB_all
         Li_exIB=np.zeros((env['num_bank'], 1)),  # 非银行间贷款流入 Li_exIB: $Li_exIB=Li_D$
         Li_P=np.zeros((env['num_bank'], 1)),  # 银行贷款流入从生产部门 Li_P
-        Bi_all=np.zeros((env['num_bank'], 1)),  # 总借款流入 Bi_all: $Bi_all=Bi_IB_all+Bi_exIB$
+        Bi_all=np.zeros((env['num_bank'], 1)),  # 总借款流入（借款方借款进来） Bi_all: $Bi_all=Bi_IB_all+Bi_exIB$
         Bi_IB_all=np.zeros((env['num_bank'], 1)),  # 银行间借款流入 Bi_IB_all
         Bi_exIB=np.zeros((env['num_bank'], 1)),  # 非银行间借款流入 Bi_exIB: $Bi_exIB=Bi_D$
         Bi_D=np.zeros((env['num_bank'], 1)),  # 银行借款流入从居民部门 Bi_D
-        Bo_all=np.zeros((env['num_bank'], 1)),  # 总借款流出 Bo_all: $Bo_all=Bo_IB_all+Bo_exIB$
+        Bo_all=np.zeros((env['num_bank'], 1)),  # 总借款流出（借款方还款出去） Bo_all: $Bo_all=Bo_IB_all+Bo_exIB$
         Bo_IB_all=np.zeros((env['num_bank'], 1)),  # 银行间借款流出 Bo_IB_all
         Bo_exIB=np.zeros((env['num_bank'], 1)),  # 非银行间借款流出 Bo_exIB: $Bo_exIB=Bo_P$
         Bo_D=np.zeros((env['num_bank'], 1)),  # 银行借款流出给居民部门 Bo_D
