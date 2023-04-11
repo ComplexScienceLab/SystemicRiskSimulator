@@ -459,11 +459,11 @@ class BankState:
                 # @testprintln "无须更新！"
                 pass
             elif source == 'illiquid':
-                # calc_isIlliquid_from_isHealthy(bank, interbank) # 错误，可以删除！
+                # calc_isIlliquid_from_isHealthy(bank, interbank) #FIXME 错误，可以删除！
                 pass
-                # calc_isHealthy_from_isIlliquid(bank, interbank) # 错误，可以删除！
-                # calc_isHealthy_from_isInsolvent(bank, interbank) # 错误，可以删除！
-                # calc_isInsolvent_from_isHealthy(bank, interbank) # 错误，可以删除！
+                # calc_isHealthy_from_isIlliquid(bank, interbank) #FIXME 错误，可以删除！
+                # calc_isHealthy_from_isInsolvent(bank, interbank) #FIXME 错误，可以删除！
+                # calc_isInsolvent_from_isHealthy(bank, interbank) #FIXME 错误，可以删除！
                 # @testprintln "无须更新！"
             elif source == 'bankrupt':
                 # @testprintln "无须更新！"
@@ -482,9 +482,9 @@ class BankState:
                 cls.calc_isIlliquid_from_isHealthy(bank, interbank)
                 cls.update_isHealthy_from_isIlliquid(bank, interbank)
             elif source == 'insolvent':
-                # calc_isHealthy_from_isInsolvent(bank, interbank) # 错误，可以删除！
-                # update_isInsolvent_from_isHealthy(bank, interbank) # 错误，可以删除！
-                # update_isIlliquid_from_isHealthy(bank, interbank) # 错误，可以删除！
+                # calc_isHealthy_from_isInsolvent(bank, interbank) #FIXME 错误，可以删除！
+                # update_isInsolvent_from_isHealthy(bank, interbank) #FIXME 错误，可以删除！
+                # update_isIlliquid_from_isHealthy(bank, interbank) #FIXME 错误，可以删除！
                 # @testprintln "无须更新！"
                 pass
             elif source == 'illiquid':

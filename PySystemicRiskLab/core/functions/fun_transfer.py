@@ -190,7 +190,6 @@ class BankTransfer:
         """
 
         if by_way == 'all':
-            cls.clear_all_transfer(bank, interbank, bankState, interbankState)
             cls.alter_transfer_Lo_IB(interbank, interbankState)
             cls.sum_transfer_Bi_IB(bank, interbank, bankState, interbankState)
             cls.alter_transfer_Bo_IB(interbank, interbankState)
