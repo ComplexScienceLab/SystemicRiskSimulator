@@ -52,7 +52,7 @@ class BankTransfer:
         pass
 
     @classmethod
-    def together_T_all(cls, bank: BankCommercial, bankState: StateType):
+    def together_transfer_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总交易流量``T_{all}``。"""
         bank.T_all[bankState] = bank.Lo_all[bankState] + bank.Bi_all[bankState] + bank.Bo_all[bankState] + bank.Li_all[bankState]
         pass
@@ -202,7 +202,7 @@ class BankTransfer:
             cls.together_transfer_B_Bi_all(bank, bankState)
             cls.together_transfer_B_Bo_exIB(bank, bankState)
             cls.together_transfer_B_Bo_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'clear transfer all':
             cls.clear_all_transfer(bank, interbank, bankState, interbankState)
             cls.alter_transfer_Lo_IB(interbank, ((bank.on | bank.off) & (bank.on | bank.off).T))
@@ -217,55 +217,55 @@ class BankTransfer:
             cls.together_transfer_B_Bi_all(bank, (bank.on | bank.off))
             cls.together_transfer_B_Bo_exIB(bank, (bank.on | bank.off))
             cls.together_transfer_B_Bo_all(bank, (bank.on | bank.off))
-            cls.together_T_all(bank, (bank.on | bank.off))
+            cls.together_transfer_all(bank, (bank.on | bank.off))
         elif by_way == 'Lo_P':
             cls.together_transfer_B_Lo_exIB(bank, bankState)
             cls.together_transfer_B_Lo_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Li_P':
             cls.together_transfer_B_Li_exIB(bank, bankState)
             cls.together_transfer_B_Li_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Bi_D':
             cls.together_transfer_B_Bi_exIB(bank, bankState)
             cls.together_transfer_B_Bi_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Bo_D':
             cls.together_transfer_B_Bo_exIB(bank, bankState)
             cls.together_transfer_B_Bo_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Lo_IB_all':
             cls.together_transfer_B_Lo_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Li_IB_all':
             cls.together_transfer_B_Li_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Bi_IB_all':
             cls.together_transfer_B_Bi_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Bo_IB_all':
             cls.together_transfer_B_Bo_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Lo_IB':
             cls.alter_transfer_Lo_IB(interbank, interbankState)
             cls.sum_transfer_Bi_IB(bank, interbank, bankState, interbankState)
             cls.together_transfer_B_Bi_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Bi_IB':
             cls.alter_transfer_Bi_IB(interbank, interbankState)
             cls.sum_transfer_Bi_IB(bank, interbank, bankState, interbankState)
             cls.together_transfer_B_Bi_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Bo_IB':
             cls.alter_transfer_Bo_IB(interbank, interbankState)
             cls.sum_transfer_Li_IB(bank, interbank, bankState, interbankState)
             cls.together_transfer_B_Li_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         elif by_way == 'Li_IB':
             cls.alter_transfer_Li_IB(interbank, interbankState)
             cls.sum_transfer_Li_IB(bank, interbank, bankState, interbankState)
             cls.together_transfer_B_Li_all(bank, bankState)
-            cls.together_T_all(bank, bankState)
+            cls.together_transfer_all(bank, bankState)
         else:
             raise Exception("关键词by_way取词错误".format(by_way))
             pass
