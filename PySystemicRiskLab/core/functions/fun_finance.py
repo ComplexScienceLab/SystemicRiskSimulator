@@ -12,9 +12,8 @@ class Finance:
     财务相关的功能
     """
 
-    
-    update_variable_name: str
-    update_variable_value: Union[MoneyType, StateType, ListType]
+    update_variable_name: str = None
+    update_variable_value = None
 
     @classmethod
     def get_update_variable(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -32,9 +31,9 @@ class Finance:
                 cls.update_variable_name, cls.update_variable_value = k, v
             pass  # for
         pass  # def
-    
+
     @classmethod
-    def update_finance_calculation(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, update_type='auto', by_way: str = 'all', target: str = 'any', source: str = 'any'): #NOW
+    def update_finance_calculation(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, update_type='auto', by_way: str = 'all', target: str = 'any', source: str = 'any'):  # NOW
         """
         更新财务计算。
 
@@ -48,7 +47,7 @@ class Finance:
 
         ## 按照`update_type`类型更新财务变量
         if update_type == 'auto':  # 按照变动变量自动更新财务变量
-            cls.get_update_variable(bank,interbank)
+            cls.get_update_variable(bank, interbank)
             BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way=cls.update_variable_name)  # 更新交易
             Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way=cls.update_variable_name)  # 更新冲击
             BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way=cls.update_variable_name)  # 更新资产负债表
