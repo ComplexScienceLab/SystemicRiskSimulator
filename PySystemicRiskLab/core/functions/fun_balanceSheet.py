@@ -33,7 +33,7 @@ class BalanceSheet:
         bank.A_exIB[bankList] = bank.A_P[bankList] + bank.A_Q[bankList] + bank.A_R[bankList] + bank.A_other[bankList]
         pass
 
-    # "更新各银行之银行总负债``Z_{B}``。"
+    # "更新各银行之银行总负债``Z_{B}``。" #HACK无用
     # functions update_B_Z_all(bank:BankCommercial, interbank:BankInterbank, by_way:str='all')
     #     if by_way == 'all':
     #         together_B_Z_exIB(bank,bankList)
@@ -67,25 +67,27 @@ class BalanceSheet:
         pass
 
     @classmethod
-    def calc_B_E_all(cls, bank: BankCommercial, bankList: StateType):
+    def calc_B_E_all(cls, bank: BankCommercial, bankList: StateType):#BUG是否考虑E_all负数？还是手动计算？
         """计算各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
-        bank.E_all[bankList] = np.maximum(bank.A_all[bankList] - bank.Z_all[bankList] - LESS1[bankList], 0.0)
+        bank.E_all[bankList] = bank.A_all[bankList] - bank.Z_all[bankList] - LESS1[bankList]
+        # bank.E_all[bankList] = np.maximum(bank.A_all[bankList] - bank.Z_all[bankList] - LESS1[bankList], 0.0)
         pass
 
     @classmethod
-    def calc_B_E_all_at_all_bank(cls, bank: BankCommercial, bankList: StateType):
+    def calc_B_E_all_at_all_bank(cls, bank: BankCommercial, bankList: StateType):#BUG是否多余？
         """计算银行体系内包括已退出银行在内的所有各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
-        bank.E_all[:] = np.maximum(bank.A_all - bank.Z_all - LESS1, 0.0)
+        bank.E_all[:] = bank.A_all - bank.Z_all - LESS1
+        # bank.E_all[:] = np.maximum(bank.A_all - bank.Z_all - LESS1, 0.0)
         pass
 
     @classmethod
-    def calc_B_A_all(cls, bank: BankCommercial, bankList: StateType):
+    def calc_B_A_all(cls, bank: BankCommercial, bankList: StateType):#BUG是否考虑E_all负数？
         """计算各银行之总资产``A_{B}``，通过所有者权益和总负债。"""
         bank.A_all[bankList] = bank.E_all[bankList] + bank.Z_all[bankList]
         pass
 
     @classmethod
-    def calc_B_Z_all(cls, bank: BankCommercial, bankList: StateType):
+    def calc_B_Z_all(cls, bank: BankCommercial, bankList: StateType):#BUG是否考虑E_all负数？
         """计算各银行之总负债``Z_{B}``，通过所有者权益和总资产。"""
         bank.Z_all[bankList] = bank.A_all[bankList] - bank.E_all[bankList]
         pass
@@ -149,7 +151,7 @@ class BalanceSheet:
         elif by_way == 'A_exIB' or by_way == 'A_P' or by_way == 'A_Q' or by_way == 'A_R' or by_way == 'A_other':
             cls.together_B_A_exIB(bank, bankList)
             cls.together_B_A_all(bank, bankList)
-            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
+            # calc_B_E_all(bank,bankList) #BUGHACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
         elif by_way == 'A_IB_all':
             cls.together_B_A_all(bank, bankList)
             # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
@@ -164,7 +166,7 @@ class BalanceSheet:
             cls.calc_B_A_all(bank, bankList)
         elif by_way == 'E_all and A_all':
             cls.calc_B_Z_all(bank, bankList)
-        elif by_way == 'calc all E_all':
+        elif by_way == 'calc all E_all': #HACK似乎没有用到过
             cls.calc_B_E_all_at_all_bank(bank, bankList)
         elif by_way == 'sum A_IB':
             cls.sum_B_A_IB(bank, interbank, bankList, interbankList)

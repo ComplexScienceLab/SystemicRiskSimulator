@@ -24,7 +24,7 @@ class BankState:
     @classmethod
     def calc_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行健康的。"""
-        condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & bank.on)
+        condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
         if (bank.hel != condition).any():
             bank.hel = condition
             interbank.hel = (bank.hel & bank.hel.T)
@@ -34,7 +34,7 @@ class BankState:
     @classmethod
     def calc_isHealthy_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行健康的，来自资不抵债的。"""
-        condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & bank.on)
+        condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.on))
         if (bank.hel != condition).any():
             bank.hel = condition
             interbank.hel = (bank.hel & bank.hel.T)
@@ -161,7 +161,7 @@ class BankState:
     @classmethod
     def calc_isBankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行破产的。"""
-        condition = (bank.isv | bank.ilq)
+        condition = (bank.isv | bank.ilq) #TODO 这个仅仅是目前基准算法简化的做法
         if (bank.br != condition).any():
             bank.br = condition
             interbank.br = (bank.br & bank.br.T)

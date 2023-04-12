@@ -76,8 +76,8 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     Shock_D_def_s = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行存款违约损失冲击源头 Shock_D_def_s
     Shock_D_run_t = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行存款挤兑流动冲击目标 Shock_D_run_t
     Shock_B = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行内资产负债冲击 Shock_B $Shock_B=Shock_B_A+Shock_B_Z$
-    Shock_B_A = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行内资产负债之银行间资产端冲击 Shock_B_A
-    Shock_B_Z = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行内资产负债之银行间负债端冲击 Shock_B_Z
+    Shock_B_A = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行内资产负债之银行间资产端冲击 Shock_B_A #HACK无用
+    Shock_B_Z = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行内资产负债之银行间负债端冲击 Shock_B_Z #HACK无用
     Shock_IB_s = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行间冲击源头 Shock_IB_s $Shock_IB_s=Shock_IB_def_s+Shock_IB_run_s$
     Shock_IB_t = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行间冲击目标 Shock_IB_t $Shock_IB_t=Shock_IB_def_t+Shock_IB_run_t$
     Shock_IB_def_s = np.NaN  # = np.zeros((env['num_bank'], 1))  # 银行间违约损失冲击源头 Shock_IB_def_s
