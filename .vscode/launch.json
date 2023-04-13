@@ -19,6 +19,20 @@
             "envFile": "${workspaceFolder}/.env"
         },
         {
+            "name": "Python: Project Visualize Data File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/PyScripts/visualization/visualize_data.py",
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
             "name": "Python: File",
             "type": "python",
             "request": "launch",
