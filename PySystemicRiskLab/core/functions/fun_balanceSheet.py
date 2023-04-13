@@ -151,45 +151,55 @@ class BalanceSheet:
         elif by_way == 'A_exIB' or by_way == 'A_P' or by_way == 'A_Q' or by_way == 'A_R' or by_way == 'A_other':
             cls.together_B_A_exIB(bank, bankList)
             cls.together_B_A_all(bank, bankList)
-            # calc_B_E_all(bank,bankList) #BUGHACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
+            cls.calc_B_E_all(bank, bankList)  # BUGHACK 冗余。不能调用，只能在外部手动计算。
         elif by_way == 'A_IB_all':
             cls.together_B_A_all(bank, bankList)
-            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
+            cls.calc_B_E_all(bank, bankList)  # HACK 冗余。不能调用，只能在外部手动计算。
         elif by_way == 'Z_exIB' or by_way == 'Z_D' or by_way == 'Z_other':
             cls.together_B_Z_exIB(bank, bankList)
             cls.together_B_Z_all(bank, bankList)
-            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
+            cls.calc_B_E_all(bank, bankList)  # HACK 冗余。不能调用，只能在外部手动计算。
         elif by_way == 'Z_IB_all':
             cls.together_B_Z_all(bank, bankList)
-            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
+            cls.calc_B_E_all(bank, bankList)  # HACK 冗余。不能调用，只能在外部手动计算。
         # elif by_way == 'E_all and Z_all': #HACK似乎没有用到过
         #     cls.calc_B_A_all(bank, bankList)
         # elif by_way == 'E_all and A_all':#HACK似乎没有用到过
         #     cls.calc_B_Z_all(bank, bankList)
         # elif by_way == 'calc all E_all': #HACK似乎没有用到过
         #     cls.calc_B_E_all_at_all_bank(bank, bankList)
-        elif by_way == 'sum A_IB':
+        elif by_way == 'A_IB':
+            cls.alter_A_IB(interbank)
             cls.sum_B_A_IB(bank, interbank, bankList, interbankList)
             cls.together_B_A_all(bank, bankList)
-            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif by_way == 'sum Z_IB':
+            cls.calc_B_E_all(bank, bankList)  # HACK 冗余。不能调用，只能在外部手动计算。
+        elif by_way == 'Z_IB':
+            cls.alter_Z_IB(interbank)
             cls.sum_B_Z_IB(bank, interbank, bankList, interbankList)
             cls.together_B_Z_all(bank, bankList)
-            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif by_way == 'alter to Z_IB from A_IB':
-            # sum_B_A_IB(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-            # together_B_A_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
+            cls.calc_B_E_all(bank, bankList)  # HACK 冗余。不能调用，只能在外部手动计算。
+        elif by_way == 'sum A_IB':#HACK似乎冗余。
+            cls.sum_B_A_IB(bank, interbank, bankList, interbankList)
+            cls.together_B_A_all(bank, bankList)
+            cls.calc_B_E_all(bank, bankList) #HACK 冗余。不能调用，只能在外部手动计算。
+        elif by_way == 'sum Z_IB':#HACK似乎冗余。
+            cls.sum_B_Z_IB(bank, interbank, bankList, interbankList)
+            cls.together_B_Z_all(bank, bankList)
+            cls.calc_B_E_all(bank, bankList) #HACK 冗余。不能调用，只能在外部手动计算。
+        elif by_way == 'alter to Z_IB from A_IB':#HACK似乎冗余。
+            # sum_B_A_IB(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。
+            # together_B_A_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。
             cls.alter_A_IB(interbank)
-            # sum_B_Z_IB(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-            # together_B_Z_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-        elif by_way == 'alter to A_IB from Z_IB':
-            # sum_B_Z_IB(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-            # together_B_Z_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
+            # sum_B_Z_IB(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。
+            # together_B_Z_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。
+            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。
+        elif by_way == 'alter to A_IB from Z_IB':#HACK似乎冗余。
+            # sum_B_Z_IB(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。
+            # together_B_Z_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。
             cls.alter_Z_IB(interbank)
-            # sum_B_A_IB(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-            # together_B_A_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
-            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。此处可以删除。
+            # sum_B_A_IB(bank, interbank,bankList,interbankList) #HACK 冗余。不能调用，只能在外部手动计算。
+            # together_B_A_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。
+            # calc_B_E_all(bank,bankList) #HACK 冗余。不能调用，只能在外部手动计算。
         else:
             raise Exception("关键词by_way取词错误".format(by_way))
             pass

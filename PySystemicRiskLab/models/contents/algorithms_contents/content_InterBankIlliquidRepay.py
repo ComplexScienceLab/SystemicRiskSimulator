@@ -34,10 +34,10 @@ def content_InterBankIlliquidRepay(BB: BankCommercial, IB: BankInterbank, b: Sta
     BB.Shock_IB_run_ilq_s[b] -= BB.Li_IB_all[b]  # 各银行之银行间挤兑流动冲击源头变动，当收回相应的银行间贷款时
     Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_IB_run_ilq_s')
     IB.Z_IB[ib] -= IB.Bo_IB[ib]  # 各银行间负债变动，当偿还相应的银行间借款时
-    BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='sum Z_IB')
+    BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='sum Z_IB')#BUG
     BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='alter to A_IB from Z_IB')
     # IB.A_IB[ib] += IB.Li_IB[ib]' # 各银行间资产变动，当收回相应的银行间贷款时
-    BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='sum A_IB')
+    BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='sum A_IB')#BUG
     BB.A_Q[b] += (BB.Li_IB_all[b] - BB.Bo_IB_all[b])  # 各银行流动资金变动，当收回相应的银行间贷款、偿还相应的银行间借款时
     BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='A_Q')
 
