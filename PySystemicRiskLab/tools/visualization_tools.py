@@ -102,7 +102,7 @@ def get_graph_data_info(data_str: str, r: int, df_BB: pd.DataFrame, df_IB: pd.Da
     pass  # def
 
 
-def draw_interbank_flow_graph(d: dict, data_str: str, r: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame):
+def draw_interbank_flow_graph(d: dict, data_str: str, r: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame):  # TODO绘制的时候要各时期各银行图形尺寸按比例
     """
     绘制单独的银行间资金网络图
 
@@ -238,10 +238,6 @@ def get_one_bank_accounts_data(df_BB: pd.DataFrame, round: int, id_agent: int):
                     'value': df_BB[(df_BB['round'] == round) & (df_BB['id_agent'] == id_agent)]['Z_IB_all'].values[0],
                     'color': '#D9E8D6',
                 },
-                'E_all': {
-                    'value': df_BB[(df_BB['round'] == round) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
-                    'color': '#FFFF98',
-                },
             },
             'level 2': {
                 'Z_exIB': {
@@ -252,16 +248,28 @@ def get_one_bank_accounts_data(df_BB: pd.DataFrame, round: int, id_agent: int):
                     'value': df_BB[(df_BB['round'] == round) & (df_BB['id_agent'] == id_agent)]['Z_IB_all'].values[0],
                     'color': '#D9E8D6',
                 },
-                'E_all': {
-                    'value': df_BB[(df_BB['round'] == round) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
-                    'color': '#FFFF98',
-                },
             },
             'level 1': {
                 'Z_all': {
                     'value': df_BB[(df_BB['round'] == round) & (df_BB['id_agent'] == id_agent)]['Z_all'].values[0],
                     'color': '#EEEEEE',
                 },
+            },
+        },
+        'equity': {
+            'level 3': {
+                'E_all': {
+                    'value': df_BB[(df_BB['round'] == round) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
+                    'color': '#FFFF98',
+                },
+            },
+            'level 2': {
+                'E_all': {
+                    'value': df_BB[(df_BB['round'] == round) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
+                    'color': '#FFFF98',
+                },
+            },
+            'level 1': {
                 'E_all': {
                     'value': df_BB[(df_BB['round'] == round) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
                     'color': '#FFFF98',
@@ -269,7 +277,6 @@ def get_one_bank_accounts_data(df_BB: pd.DataFrame, round: int, id_agent: int):
             },
         },
     }
-
     return accounts
     pass  # def
 
@@ -336,15 +343,19 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
 
     ## 资产负债表各列各项
     # boxs_width = [width / 6, width / 6, width / 6, width / 6, width / 6, width / 6]  # 设置资产负债表之账户之各侧边柱子之宽度
-    boxs_width = [width * 4 / 18, width * 3 / 18, width * 2 / 18, width * 2 / 18, width * 3 / 18, width * 4 / 18]  # 设置资产负债表之账户之各侧边柱子之宽度
-    nib_x = [reduce(lambda x, y: x + y, boxs_width[0:i + 1]) - boxs_width[i] for i in range(len(boxs_width))]  # 设置笔尖之x方向的位置之资产负债表之账户之各侧边柱子之起点
+    boxs_width = [width * 5 / 24, width * 4 / 24, width * 3 / 24, width * 3 / 24, width * 4 / 24, width * 5 / 24]  # 设置资产负债表之账户之各侧边柱子之宽度
+    nibs_x = [reduce(lambda x, y: x + y, boxs_width[0:i + 1]) - boxs_width[i] for i in range(len(boxs_width))]  # 设置笔尖之x方向的位置之资产负债表之账户之各侧边柱子之起点
     o = [0, 1, 2, 5, 4, 3]  # 设置资产负债表之账户之各侧边柱子之绘制次序
-    i = 0  # 资产负债表之账户之各侧边柱子之绘制标记
-    for accounts_type in accounts:
+    # a = 0  # 资产负债表之账户之绘制索引
+    # nib_equity_x = width // 2 if accounts['equity']['E_all']['value'] >= 0 else 0  # 笔尖起始坐标之equity之开始位置之x坐标
+    nibs_y = [0,0,0,0,0,0]  # 列表之笔尖起始坐标之开始位置之y坐标
+    p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
+    for accounts_type in list(accounts.keys())[:-1]:
         for level in accounts[accounts_type]:
-            nib = (border + nib_x[o[i]], border + title_height)  # 笔尖起始坐标之新柱子之开始位置
+            nib = (border + nibs_x[o[p]], border + title_height)  # 笔尖起始坐标之新柱子之开始位置
             count_balance_is_zero = 0
             items_balance_is_zero = []
+            # s = 1  # 资产负债表值账户之各侧边柱子之各柱节之绘制索引
             for name, balance in accounts[accounts_type][level].items():
                 if balance['value'] != 0:
                     ## 绘制单个项目对应的矩形
@@ -352,7 +363,7 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
                         dw.Rectangle(
                             x=nib[0],
                             y=nib[1],
-                            width=boxs_width[o[i]],
+                            width=boxs_width[o[p]],
                             height=int(height * (balance['value'] / max_money)),
                             fill=balance['color'],
                             fill_opacity=1.0,
@@ -365,25 +376,76 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
                         dw.Text(
                             name + '\n' + str(round(balance['value'])),
                             font_size=6,
-                            x=nib[0] + boxs_width[o[i]] // 2,
+                            x=nib[0] + boxs_width[o[p]] // 2,
                             y=nib[1] + int(height * (balance['value'] / max_money)) // 2,
                             text_anchor='middle',
                             dominant_baseline='middle',
                             font_family='Times New Roman',
                         )
                     )
-                    nib = (border + nib_x[o[i]], int(nib[1] + height * (balance['value'] / max_money)))  # 笔尖起始坐标之该柱子之下一个项目之柱子段之开始位置
-                else:
+                    nib = (border + nibs_x[o[p]], int(nib[1] + height * (balance['value'] / max_money)))  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
+                    # if s < len(accounts[accounts_type][level]):
+                    #     nib = (border + nibs_x[o[p]], int(nib[1] + height * (balance['value'] / max_money)))  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
+                    #     s += 1
+                    # else:
+                    #     nibs_y = nib[1]
+                else:  # 如果柱节高度为0...
                     count_balance_is_zero += 1
                     items_balance_is_zero.append((name, balance['value'], nib[1]))
-
-                for (name, balance['value'], nib_y) in items_balance_is_zero:
-                    pass
-
+                    pass  # if
+                for (name, balance['value'], nib_y) in items_balance_is_zero:  # TODO尝试标记那些柱节高度为0的值
+                    pass  # for
                 pass  # for
-            i += 1
+            nibs_y[o[p]]=nib[1]
+            p += 1
             pass  # for
+        # nib_equity = nibs_y if nibs_y < nib_equity else nib_equity
+        # a += 1
         pass  # for
+
+    ## 绘制项目equity对应的矩形
+    o = [5, 4, 3] if accounts['equity']['level 1']['E_all']['value'] >= 0 else [0, 1, 2]  # 设置资产负债表之账户之各侧边柱子之绘制次序
+    p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
+    for accounts_type in list(accounts.keys())[-1:]:
+        for level in accounts[accounts_type]:
+            nib = (border + nibs_x[o[p]], border + nibs_y[o[p]])  # 笔尖起始坐标之新柱子之开始位置
+            count_balance_is_zero = 0
+            items_balance_is_zero = []
+            s = 1  # 资产负债表值账户之各侧边柱子之各柱节之绘制索引
+            for name, balance in accounts[accounts_type][level].items():
+                # nib = (border + nib_equity_x, border + nib_equity)  # 笔尖起始坐标之equity之开始位置
+                balance['color'] = balance['color'] if balance['value'] >= 0 else '#FFFFFF'  # 设置资产负债表之账户之各侧边柱子之绘制次序
+                balanceSheet_svg.append(
+                    dw.Rectangle(
+                        x=nib[0],
+                        y=nib[1],
+                        width=boxs_width[o[p]],
+                        height=int(height * (balance['value'] / max_money)),
+                        fill=balance['color'],
+                        fill_opacity=1.0,
+                        stroke='rgb(50%,50%,50%)',
+                        stroke_width=2,
+                    )
+                )
+                ## 绘制项目equity对应的文本标签
+                balanceSheet_svg.append(
+                    dw.Text(
+                        name + '\n' + str(round(balance['value'])),
+                        font_size=6,
+                        x=nib[0] + boxs_width[o[p]] // 2,
+                        y=nib[1] + int(height * (balance['value'] / max_money)) // 2,
+                        text_anchor='middle',
+                        dominant_baseline='middle',
+                        font_family='Times New Roman',
+                    )
+                )
+                pass  # for
+            p += 1
+            pass  # for
+        # nib_equity = nibs_y if nibs_y < nib_equity else nib_equity
+        # a += 1
+        pass  # for
+
     return balanceSheet_svg
     pass  # def
 
