@@ -348,7 +348,7 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
     o = [0, 1, 2, 5, 4, 3]  # 设置资产负债表之账户之各侧边柱子之绘制次序
     # a = 0  # 资产负债表之账户之绘制索引
     # nib_equity_x = width // 2 if accounts['equity']['E_all']['value'] >= 0 else 0  # 笔尖起始坐标之equity之开始位置之x坐标
-    nibs_y = [0,0,0,0,0,0]  # 列表之笔尖起始坐标之开始位置之y坐标
+    nibs_y = [0, 0, 0, 0, 0, 0]  # 列表之笔尖起始坐标之开始位置之y坐标
     p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
     for accounts_type in list(accounts.keys())[:-1]:
         for level in accounts[accounts_type]:
@@ -396,7 +396,7 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
                 for (name, balance['value'], nib_y) in items_balance_is_zero:  # TODO尝试标记那些柱节高度为0的值
                     pass  # for
                 pass  # for
-            nibs_y[o[p]]=nib[1]
+            nibs_y[o[p]] = nib[1]
             p += 1
             pass  # for
         # nib_equity = nibs_y if nibs_y < nib_equity else nib_equity
@@ -408,7 +408,7 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
     p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
     for accounts_type in list(accounts.keys())[-1:]:
         for level in accounts[accounts_type]:
-            nib = (border + nibs_x[o[p]], border + nibs_y[o[p]])  # 笔尖起始坐标之新柱子之开始位置
+            nib = (border + nibs_x[o[p]], nibs_y[o[p]])  # 笔尖起始坐标之新柱子之开始位置
             count_balance_is_zero = 0
             items_balance_is_zero = []
             s = 1  # 资产负债表值账户之各侧边柱子之各柱节之绘制索引
