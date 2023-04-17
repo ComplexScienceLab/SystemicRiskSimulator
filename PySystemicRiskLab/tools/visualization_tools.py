@@ -88,8 +88,8 @@ def get_graph_data_info(data_str: str, r: int, df_BB: pd.DataFrame, df_IB: pd.Da
     d['edges_width'] = Tools.MinMaxScaler(
         d['edges_data_value'],
         (
-            0.5 * min(df_IB[df_IB['round'] == r][data_str]) / paras['min_value_IB'],
-            5 * min(df_IB[df_IB['round'] == r][data_str]) / paras['min_value_IB']
+            0.5 * (min(df_IB[df_IB['round'] == r][data_str]) + 0.01) / (paras['min_value_IB'] + 0.01),
+            5 * (min(df_IB[df_IB['round'] == r][data_str]) + 0.01) / (paras['min_value_IB'] + 0.01)
         )
     )  # 边的宽度
     # Z_IB_all = df_BB[df_BB['round'] == r]['Z_IB_all'].tolist()  # 相关的点之值
