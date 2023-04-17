@@ -4,7 +4,7 @@ from PySystemicRiskLab import dw, pd, ig, np, plt, reduce
 from PySystemicRiskLab.tools.tools import Tools
 
 
-def get_graph_data_info(data_str: str, r: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame):
+def get_graph_data_info(data_str: str, r: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, paras):
     """
     获取网络图数据信息
     Args:
@@ -12,18 +12,20 @@ def get_graph_data_info(data_str: str, r: int, df_BB: pd.DataFrame, df_IB: pd.Da
         r (int): 轮次
         df_BB (pd.DataFrame): 银行数据框
         df_IB (pd.DataFrame): 银行间数据框
-
+        paras (dict): 参数集
+        
     Returns: d 字典格式的数据集
 
     """
     ## 获取相关的节点与边信息
     d = {}  # 待使用的图数据
 
-    d['banks_name'] = list(df_BB[df_BB['round'] == r]['name'])
-    d['bank_id'] = list(df_BB[df_BB['round'] == r]['id_agent'])
+    d['banks_name'] = list(df_BB[df_BB['round'] == r]['name'])  # 银行名称
+    d['bank_id'] = list(df_BB[df_BB['round'] == r]['id_agent'])  # 银行id
 
-    d['vertices'] = list(df_BB[df_BB['round'] == r]['id_agent'] - 1)
+    d['vertices'] = list(df_BB[df_BB['round'] == r]['id_agent'] - 1)  # 节点
 
+    # 银行状态
     bank_hel = df_BB[df_BB['round'] == r]['hel'].tolist()
     bank_isv = df_BB[df_BB['round'] == r]['isv'].tolist()
     bank_ilq = df_BB[df_BB['round'] == r]['ilq'].tolist()
@@ -73,8 +75,23 @@ def get_graph_data_info(data_str: str, r: int, df_BB: pd.DataFrame, df_IB: pd.Da
     # edges = [list(zip(df_IB[df_IB['round'] == r]['row'] - 1, df_IB[df_IB['round'] == r]['col'] - 1))[j - r * num_items_in_a_round_in_IB] for j in data['edge_data_idx']]  # 相关的边索引（银行编号从1开始计数的）
     d['edges'] = [list(zip(df_IB[df_IB['round'] == r]['row'] - 1, df_IB[df_IB['round'] == r]['col'] - 1))[j] for j in d['edges_data_idx']]  # 相关的边的索引，以两点索引表示（银行编号从1开始计数的）
     d['vertices_data_value'] = df_BB[df_BB['round'] == r][(data_str + '_all')].tolist()  # 相关的点之值
-    d['vertices_size'] = list(np.sqrt(np.asarray(Tools.MinMaxScaler(df_BB[df_BB['round'] == r][(data_str + '_all')], (0.1, 1)))))
+    d['vertices_size'] = list(np.sqrt(np.asarray(
+        Tools.MinMaxScaler(
+            df_BB[df_BB['round'] == r][(data_str + '_all')],
+            (
+                0.1 * min(df_BB[df_BB['round'] == r][(data_str + '_all')]) / paras['min_value_BB'],
+                1.0 * max(df_BB[df_BB['round'] == r][(data_str + '_all')]) / paras['max_value_BB']
+            )
+        )
+    )))  # 节点尺寸
     d['edges_data_value'] = df_IB[(df_IB['round'] == r) & (df_IB[data_str] > 0)][data_str].values.tolist()  # 相关的边之值
+    d['edges_width'] = Tools.MinMaxScaler(
+        d['edges_data_value'],
+        (
+            0.5 * min(df_IB[df_IB['round'] == r][data_str]) / paras['min_value_IB'],
+            5 * min(df_IB[df_IB['round'] == r][data_str]) / paras['min_value_IB']
+        )
+    )  # 边的宽度
     # Z_IB_all = df_BB[df_BB['round'] == r]['Z_IB_all'].tolist()  # 相关的点之值
     # Z_IB = df_IB[(df_IB['round'] == r)&(df_IB['Z_IB'] > 0)].values.tolist()  # 相关的边之值
     # edge_labels = list(zip(d['edges_data_value'],Z_IB))  # 边之标签值
@@ -138,7 +155,7 @@ def draw_interbank_flow_graph(d: dict, data_str: str, r: int, df_BB: pd.DataFram
     g.es['color'] = '#CCCCCC'
     g.vs['size'] = d['vertices_size']
     g.es['label'] = [round(i) for i in g.es[data_str]]
-    g.es['width'] = Tools.MinMaxScaler(d['edges_data_value'], (0.5, 3))
+    g.es['width'] = d['edges_width']
 
     ## 生成可视化图
     fig, ax = plt.subplots(
@@ -282,14 +299,14 @@ def get_one_bank_accounts_data(df_BB: pd.DataFrame, round: int, id_agent: int):
 
 
 ## 绘制单个银行资产负债表
-def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: int = 600, height: int = 600, title_height: int = 15, border: int = 5):
+def draw_one_bank_BalanceSheet(accounts, bank_name, r, paras: dict, width: int = 600, height: int = 600, title_height: int = 15, border: int = 5):
     """
     绘制单个银行资产负债表
     Args:
         accounts (): 资产项目信息
         bank_name (str): 银行名称
         r (int): 轮次
-        max_money (float): 总资金
+        paras (dict): 参数集
         width (int): 资产负债表宽度
         height (int): 资产负债表高度
         title_height (int): 标题高度
@@ -364,7 +381,7 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
                             x=nib[0],
                             y=nib[1],
                             width=boxs_width[o[p]],
-                            height=int(height * (balance['value'] / max_money)),
+                            height=int(height * (balance['value'] / paras['max_value_BB'])),
                             fill=balance['color'],
                             fill_opacity=1.0,
                             stroke='rgb(50%,50%,50%)',
@@ -377,15 +394,15 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
                             name + '\n' + str(round(balance['value'])),
                             font_size=6,
                             x=nib[0] + boxs_width[o[p]] // 2,
-                            y=nib[1] + int(height * (balance['value'] / max_money)) // 2,
+                            y=nib[1] + int(height * (balance['value'] / paras['max_value_BB'])) // 2,
                             text_anchor='middle',
                             dominant_baseline='middle',
                             font_family='Times New Roman',
                         )
                     )
-                    nib = (border + nibs_x[o[p]], int(nib[1] + height * (balance['value'] / max_money)))  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
+                    nib = (border + nibs_x[o[p]], int(nib[1] + height * (balance['value'] / paras['max_value_BB'])))  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
                     # if s < len(accounts[accounts_type][level]):
-                    #     nib = (border + nibs_x[o[p]], int(nib[1] + height * (balance['value'] / max_money)))  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
+                    #     nib = (border + nibs_x[o[p]], int(nib[1] + height * (balance['value'] / paras['max_value_BB'])))  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
                     #     s += 1
                     # else:
                     #     nibs_y = nib[1]
@@ -420,7 +437,7 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
                         x=nib[0],
                         y=nib[1],
                         width=boxs_width[o[p]],
-                        height=int(height * (balance['value'] / max_money)),
+                        height=int(height * (balance['value'] / paras['max_value_BB'])),
                         fill=balance['color'],
                         fill_opacity=1.0,
                         stroke='rgb(50%,50%,50%)',
@@ -433,7 +450,7 @@ def draw_one_bank_BalanceSheet(accounts, bank_name, r, max_money: float, width: 
                         name + '\n' + str(round(balance['value'])),
                         font_size=6,
                         x=nib[0] + boxs_width[o[p]] // 2,
-                        y=nib[1] + int(height * (balance['value'] / max_money)) // 2,
+                        y=nib[1] + int(height * (balance['value'] / paras['max_value_BB'])) // 2,
                         text_anchor='middle',
                         dominant_baseline='middle',
                         font_family='Times New Roman',
