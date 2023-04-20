@@ -88,7 +88,7 @@ class Operator:
         """
 
         env = Scheduler.schedule(env)
-        if env['state_of_schedule'] == StateOfScheduleEnum.initializing:  # NOW检查是否要更新
+        if env['state_of_schedule'] == StateOfScheduleEnum.initializing:  # TODO检查是否要更新
             # 重置环境变量
             env['index_of_schedule_position'] = []
             env['index_model'] = 1
