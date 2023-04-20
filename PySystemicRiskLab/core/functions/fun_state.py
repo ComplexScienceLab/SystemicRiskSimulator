@@ -34,7 +34,7 @@ class BankState:
     @classmethod
     def calc_isHealthy_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行健康的，来自资不抵债的。"""
-        condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.on))
+        condition = ((bank.E_all >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.on))
         if (bank.hel != condition).any():
             bank.hel = condition
             interbank.hel = (bank.hel & bank.hel.T)
@@ -57,7 +57,7 @@ class BankState:
         计算示性向量之于银行健康的，来自流动性短缺的。
         内容同于calc_isHealthy。
         """
-        condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & bank.on)
+        condition = ((bank.A_Q >= LESS1) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
         if (bank.hel != condition).any():
             bank.hel = condition
             interbank.hel = (bank.hel & bank.hel.T)
@@ -119,7 +119,7 @@ class BankState:
     @classmethod
     def calc_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行流动性短缺的。"""
-        condition = ((bank.Shock_run_t + LESS1 >= bank.A_Q) & bank.on)
+        condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
         if (bank.ilq != condition).any():
             bank.ilq = condition
             interbank.ilq = (bank.ilq | bank.ilq.T)
@@ -134,7 +134,7 @@ class BankState:
         计算示性向量之于银行流动性短缺的，来自健康的。
         内容同于calc_isIlliquid
         """
-        condition = ((bank.Shock_run_t + LESS1 >= bank.A_Q) & bank.on)
+        condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
         if (bank.ilq != condition).any():
             bank.ilq = condition
             interbank.ilq = (bank.ilq | bank.ilq.T)
@@ -149,7 +149,7 @@ class BankState:
         更新示性向量之于银行流动性短缺的，来自健康的。
         内容同于calc_isIlliquid
         """
-        condition = ((bank.Shock_run_t + LESS1 >= bank.A_Q) & bank.on)
+        condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
         if (bank.ilq != condition).any():
             bank.ilq = condition
             interbank.ilq = (bank.ilq | bank.ilq.T)
@@ -161,7 +161,7 @@ class BankState:
     @classmethod
     def calc_isBankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行破产的。"""
-        condition = (bank.isv | bank.ilq) #TODO 这个仅仅是目前基准算法简化的做法
+        condition = (bank.isv | bank.ilq)  # TODO 这个仅仅是目前基准算法简化的做法
         if (bank.br != condition).any():
             bank.br = condition
             interbank.br = (bank.br & bank.br.T)
@@ -216,7 +216,7 @@ class BankState:
     def update_isBankrupt_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank):  # FIXME，有一定不稳定的风险。
         """更新示性向量之于银行破产的，来自退出的。"""
         condition = (bank.off)
-        if bank.br == condition:
+        if (bank.br == condition).all():
             bank.br = np.full((env['num_bank'], 1), False)
             interbank.br = (bank.br & bank.br.T)
             interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
