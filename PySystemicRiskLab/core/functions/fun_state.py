@@ -26,9 +26,11 @@ class BankState:
     def calc_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行健康的。"""
         condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
-        if (bank.hel != condition).any():
+        difference = (bank.hel != condition)
+        if difference.any():
             bank.hel = condition
             interbank.hel = (bank.hel & bank.hel.T)
+            return difference
             pass
         pass
 
@@ -43,13 +45,21 @@ class BankState:
         pass
 
     @classmethod
-    def update_isHealthy_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):
-        """新示性向量之于银行健康的，来自资不抵债的。"""
-        condition = (~(bank.isv | bank.ilq) & bank.on)
-        if (bank.hel != condition).any():
-            bank.hel = condition
-            interbank.hel = (bank.hel & bank.hel.T)
-            pass
+    def update_isHealthy_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
+        """
+        新示性向量之于银行健康的，来自资不抵债的。健康状态与资不抵债状态互斥
+
+        Args:
+            cls ():
+            bank ():
+            interbank ():
+            difference ():
+
+        Returns:
+
+        """
+        bank.hel[difference] = ~bank.hel[difference]
+        # bank.hel = ((~bank.hel & difference) | (bank.hel & ~difference)) & bank.on  # NOTE和上面的语句实现结果是等价的，但是运算速度可能慢一点
         pass
 
     @classmethod
@@ -82,11 +92,13 @@ class BankState:
     def calc_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行资不抵债的。"""
         condition = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
-        if (bank.isv != condition).any():
+        difference = (bank.isv != condition)
+        if difference.any():
             bank.isv = condition
             interbank.isv = (bank.isv | bank.isv.T)
             interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="creditor")
             interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="debtor")
+            return difference
             pass
         pass
 
