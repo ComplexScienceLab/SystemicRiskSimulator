@@ -2,10 +2,11 @@
 
 ## 功能函数集：计算构建银行与银行间相关状态及其转换。
 
+from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_consts import LESS1
 from PySystemicRiskLab.core.define.define_environmentVariables import env
-from PySystemicRiskLab.core.define.define_type import *
+from PySystemicRiskLab.core.define.define_type import StateType
 
 pass  # end import
 
@@ -32,7 +33,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isHealthy_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isHealthy_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
         """计算示性向量之于银行健康的，来自资不抵债的。"""
         condition = ((bank.E_all >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.on))
         if (bank.hel != condition).any():
@@ -52,7 +53,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isHealthy_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isHealthy_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
         """
         计算示性向量之于银行健康的，来自流动性短缺的。
         内容同于calc_isHealthy。
@@ -90,7 +91,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isInsolvent_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isInsolvent_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
         """计算示性向量之于银行资不抵债的，来自健康的。"""
         condition = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
         if (bank.isv != condition).any():
@@ -129,7 +130,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isIlliquid_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isIlliquid_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
         """
         计算示性向量之于银行流动性短缺的，来自健康的。
         内容同于calc_isIlliquid
@@ -171,7 +172,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isBankrupt_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isBankrupt_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
         """
         计算示性向量之于破产的，来自资不抵债的。
         同于calc_isBankrupt
@@ -186,7 +187,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isBankrupt_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isBankrupt_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
         """
         计算示性向量之于破产的，来自流动性短缺的。
         同于calc_isBankrupt
@@ -213,7 +214,7 @@ class BankState:
         pass
 
     @classmethod
-    def update_isBankrupt_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank):  # FIXME，有一定不稳定的风险。
+    def update_isBankrupt_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank):  # FIXME，有一定的不稳定的风险。#HACK可能不需要，而且有问题
         """更新示性向量之于银行破产的，来自退出的。"""
         condition = (bank.off)
         if (bank.br == condition).all():
@@ -257,7 +258,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isOff_from_isBankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_isOff_from_isBankrupt(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
         """计算示性向量之于银行退出的，来自破产的。"""
         cls.calc_isOff(bank, interbank)
         interbank.cre_br = np.array([])
