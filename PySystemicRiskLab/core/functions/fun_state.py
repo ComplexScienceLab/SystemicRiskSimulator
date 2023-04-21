@@ -45,6 +45,14 @@ class BankState:
         pass
 
     @classmethod
+    def update_target_from_source(cls,bank:BankCommercial,interbank:BankInterbank,target_state:StateType,source_state:StateType):#NOW
+        difference=
+        # bank.hel = ((~bank.hel & difference) | (bank.hel & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        bank.hel[difference] = ~bank.hel[difference]
+        interbank.hel[difference & difference.T] = ~interbank.hel[difference & difference.T]
+        pass # def
+
+    @classmethod
     def update_isHealthy_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
         """
         新示性向量之于银行健康的，来自资不抵债的。健康状态与资不抵债状态互斥
@@ -459,16 +467,15 @@ class BankState:
                 cls.calc_isHealthy(bank, interbank)
                 cls.calc_isBankrupt(bank, interbank)
                 cls.together_isOn(bank, interbank)
-                # calc_isOff(bank, interbank)
-                # calc_isOn(bank, interbank)
+                # calc_isOff(bank, interbank) # TODO后续添加
+                # calc_isOn(bank, interbank) # TODO后续添加
             elif source == 'healthy':
-                cls.calc_isInsolvent_from_isHealthy(bank, interbank)
-                cls.update_isHealthy_from_isInsolvent(bank, interbank)
-                cls.calc_isIlliquid_from_isHealthy(bank, interbank)
-                cls.update_isHealthy_from_isIlliquid(bank, interbank)
+                difference=cls.calc_isInsolvent(bank, interbank)
+                cls.update_isInsolvent_from_isHealthy(bank, interbank,difference)
+                cls.update_isIlliquid_from_isHealthy(bank, interbank,difference)
             elif source == 'insolvent':
-                cls.calc_isHealthy_from_isInsolvent(bank, interbank)
-                cls.update_isInsolvent_from_isHealthy(bank, interbank)
+                difference=cls.calc_isInsolvent(bank, interbank)
+                cls.update_isInsolvent_from_isHealthy(bank, interbank,difference)
                 cls.calc_isBankrupt_from_isInsolvent(bank, interbank)
             elif source == 'illiquid':
                 cls.calc_isHealthy_from_isIlliquid(bank, interbank)
