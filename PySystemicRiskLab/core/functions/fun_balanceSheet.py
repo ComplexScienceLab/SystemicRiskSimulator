@@ -4,7 +4,6 @@
 
 
 from PySystemicRiskLab import np
-
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_consts import LESS1
 from PySystemicRiskLab.core.define.define_type import StateType
