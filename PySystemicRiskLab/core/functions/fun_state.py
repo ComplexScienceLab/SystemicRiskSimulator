@@ -51,15 +51,16 @@ class BankState:
 
         Args:
             cls ():
-            bank ():
-            interbank ():
-            difference ():
+            bank (BankCommercial): 商业银行个体众
+            interbank (BankInterbank): 商业银行间个体众
+            difference (StateType): 源状态的变动示性向量
 
         Returns:
 
         """
+        # bank.hel = ((~bank.hel & difference) | (bank.hel & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
         bank.hel[difference] = ~bank.hel[difference]
-        # bank.hel = ((~bank.hel & difference) | (bank.hel & ~difference)) & bank.on  # NOTE和上面的语句实现结果是等价的，但是运算速度可能慢一点
+        interbank.hel[difference & difference.T] = ~interbank.hel[difference & difference.T]
         pass
 
     @classmethod
@@ -76,16 +77,21 @@ class BankState:
         pass
 
     @classmethod
-    def update_isHealthy_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):
+    def update_isHealthy_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
         """
         更新示性向量之于银行健康的，来自流动性短缺的。
-        内容同于update_isHealthy_from_isInsolvent
+        Args:
+            cls ():
+            bank (BankCommercial): 商业银行个体众
+            interbank (BankInterbank): 商业银行间个体众
+            difference (StateType): 源状态的变动示性向量
+
+        Returns:
+
         """
-        condition = (~(bank.isv | bank.ilq) & bank.on)
-        if (bank.hel != condition).any():
-            bank.hel = condition
-            interbank.hel = (bank.hel & bank.hel.T)
-            pass
+        # bank.hel = ((~bank.hel & difference) | (bank.hel & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        bank.hel[difference] = ~bank.hel[difference]
+        interbank.hel[difference & difference.T] = ~interbank.hel[difference & difference.T]
         pass
 
     @classmethod
@@ -115,18 +121,24 @@ class BankState:
         pass
 
     @classmethod
-    def update_isInsolvent_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):
+    def update_isInsolvent_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
         """
         更新示性向量之于银行资不抵债的，来自健康的。
-        内容同于calc_isInsolvent_from_isHealthy
+
+        Args:
+            cls ():
+            bank (BankCommercial): 商业银行个体众
+            interbank (BankInterbank): 商业银行间个体众
+            difference (StateType): 源状态的变动示性向量
+
+        Returns:
+
         """
-        condition = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
-        if (bank.isv != condition).any():
-            bank.isv = condition
-            interbank.isv = (bank.isv | bank.isv.T)
-            interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="creditor")
-            interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="debtor")
-            pass
+        # bank.isv = ((~bank.isv & difference) | (bank.isv & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        bank.isv[difference] = ~bank.isv[difference]
+        interbank.isv[difference & difference.T] = ~interbank.isv[difference & difference.T]
+        interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="creditor")
+        interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="debtor")
         pass
 
     @classmethod
@@ -157,18 +169,24 @@ class BankState:
         pass
 
     @classmethod
-    def update_isIlliquid_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):
+    def update_isIlliquid_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
         """
         更新示性向量之于银行流动性短缺的，来自健康的。
-        内容同于calc_isIlliquid
+
+        Args:
+            cls ():
+            bank (BankCommercial): 商业银行个体众
+            interbank (BankInterbank): 商业银行间个体众
+            difference (StateType): 源状态的变动示性向量
+
+        Returns:
+
         """
-        condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
-        if (bank.ilq != condition).any():
-            bank.ilq = condition
-            interbank.ilq = (bank.ilq | bank.ilq.T)
-            interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="creditor")
-            interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
-            pass
+        # bank.ilq = ((~bank.ilq & difference) | (bank.ilq & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        bank.ilq[difference] = ~bank.ilq[difference]
+        interbank.ilq[difference & difference.T] = ~interbank.ilq[difference & difference.T]
+        interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="creditor")
+        interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
         pass
 
     @classmethod
@@ -226,27 +244,45 @@ class BankState:
         pass
 
     @classmethod
-    def update_isBankrupt_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank):  # FIXME，有一定的不稳定的风险。#HACK可能不需要，而且有问题
-        """更新示性向量之于银行破产的，来自退出的。"""
-        condition = (bank.off)
-        if (bank.br == condition).all():
-            bank.br = np.full((env['num_bank'], 1), False)
-            interbank.br = (bank.br & bank.br.T)
-            interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
-            interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
-            pass
+    def update_isBankrupt_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):  # FIXME，有一定的不稳定的风险。#HACK可能不需要，而且有问题
+        """
+        更新示性向量之于银行破产的，来自退出的。
+
+        Args:
+            cls ():
+            bank (BankCommercial): 商业银行个体众
+            interbank (BankInterbank): 商业银行间个体众
+            difference (StateType): 源状态的变动示性向量
+
+        Returns:
+
+        """
+        # bank.br = ((~bank.br & difference) | (bank.br & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        bank.br[difference] = ~bank.br[difference]
+        interbank.br[difference & difference.T] = ~interbank.br[difference & difference.T]
+        interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
+        interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
         pass
 
     @classmethod
-    def update_isOn_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank):
-        """新示性向量之于银行存在的，来自退出的。"""
-        condition = (~bank.off)
-        if (bank.on != condition).any():
-            bank.on = condition
-            interbank.on = (bank.on & bank.on.T)
-            interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
-            interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
-            pass
+    def update_isOn_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
+        """
+        新示性向量之于银行存在的，来自退出的。
+
+        Args:
+            cls ():
+            bank (BankCommercial): 商业银行个体众
+            interbank (BankInterbank): 商业银行间个体众
+            difference (StateType): 源状态的变动示性向量
+
+        Returns:
+
+        """
+        # bank.on = ((~bank.on & difference) | (bank.on & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        bank.on[difference] = ~bank.on[difference]
+        interbank.on[difference & difference.T] = ~interbank.on[difference & difference.T]
+        interbank.cre_on = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="creditor")
+        interbank.deb_on = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="debtor")
         pass
 
     @classmethod
@@ -260,13 +296,24 @@ class BankState:
         pass
 
     @classmethod
-    def update_isOff_from_isOn(cls, bank: BankCommercial, interbank: BankInterbank):
-        """新示性向量之于银行退出的，来自存在的。"""
-        condition = ~bank.on
-        if (bank.off != condition).any():
-            bank.off = condition
-            interbank.off = (bank.off & bank.off.T)
-            pass
+    def update_isOff_from_isOn(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
+        """
+        新示性向量之于银行退出的，来自存在的。
+
+        Args:
+            cls ():
+            bank (BankCommercial): 商业银行个体众
+            interbank (BankInterbank): 商业银行间个体众
+            difference (StateType): 源状态的变动示性向量
+
+        Returns:
+
+        """
+        # bank.off = ((~bank.off & difference) | (bank.off & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        bank.off[difference] = ~bank.off[difference]
+        interbank.off[difference & difference.T] = ~interbank.off[difference & difference.T]
+        interbank.cre_off = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.off, goal="creditor")
+        interbank.deb_off = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.off, goal="debtor")
         pass
 
     @classmethod
