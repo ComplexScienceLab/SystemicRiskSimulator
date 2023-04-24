@@ -12,6 +12,8 @@ pass  # end import
 
 
 class BankState:
+    bank: BankCommercial
+    interbank: BankInterbank
 
     @classmethod
     def init_list_of_relation_in_state_of_banks(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -21,6 +23,13 @@ class BankState:
         interbank.cre = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="creditor")
         interbank.deb = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="debtor")
         pass
+
+    @classmethod
+    def update_state_to_target_from_source(cls, target_state: StateType, target_inter_state: StateType & StateType.T, source_state_difference: StateType):  # NOW
+        # target_state = ((~target_state & source_state_difference) | (target_state & ~source_state_difference)) & cls.bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        target_state[source_state_difference] = ~target_state[source_state_difference]
+        target_inter_state[source_state_difference & source_state_difference.T] = ~target_inter_state[source_state_difference & source_state_difference.T]
+        pass  # def
 
     @classmethod
     def calc_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -44,45 +53,37 @@ class BankState:
             pass
         pass
 
-    @classmethod
-    def update_target_from_source(cls,bank:BankCommercial,interbank:BankInterbank,target_state:StateType,source_state:StateType):#NOW
-        difference=
-        # bank.hel = ((~bank.hel & difference) | (bank.hel & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
-        bank.hel[difference] = ~bank.hel[difference]
-        interbank.hel[difference & difference.T] = ~interbank.hel[difference & difference.T]
-        pass # def
+    # @classmethod
+    # def update_isHealthy_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
+    #     """
+    #     新示性向量之于银行健康的，来自资不抵债的。健康状态与资不抵债状态互斥
+    #
+    #     Args:
+    #         cls ():
+    #         bank (BankCommercial): 商业银行个体众
+    #         interbank (BankInterbank): 商业银行间个体众
+    #         difference (StateType): 源状态的变动示性向量
+    #
+    #     Returns:
+    #
+    #     """
+    #     # bank.hel = ((~bank.hel & difference) | (bank.hel & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+    #     bank.hel[difference] = ~bank.hel[difference]
+    #     interbank.hel[difference & difference.T] = ~interbank.hel[difference & difference.T]
+    #     pass
 
-    @classmethod
-    def update_isHealthy_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
-        """
-        新示性向量之于银行健康的，来自资不抵债的。健康状态与资不抵债状态互斥
-
-        Args:
-            cls ():
-            bank (BankCommercial): 商业银行个体众
-            interbank (BankInterbank): 商业银行间个体众
-            difference (StateType): 源状态的变动示性向量
-
-        Returns:
-
-        """
-        # bank.hel = ((~bank.hel & difference) | (bank.hel & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
-        bank.hel[difference] = ~bank.hel[difference]
-        interbank.hel[difference & difference.T] = ~interbank.hel[difference & difference.T]
-        pass
-
-    @classmethod
-    def calc_isHealthy_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
-        """
-        计算示性向量之于银行健康的，来自流动性短缺的。
-        内容同于calc_isHealthy。
-        """
-        condition = ((bank.A_Q >= LESS1) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
-        if (bank.hel != condition).any():
-            bank.hel = condition
-            interbank.hel = (bank.hel & bank.hel.T)
-            pass
-        pass
+    # @classmethod
+    # def calc_isHealthy_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
+    #     """
+    #     计算示性向量之于银行健康的，来自流动性短缺的。
+    #     内容同于calc_isHealthy。
+    #     """
+    #     condition = ((bank.A_Q >= LESS1) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
+    #     if (bank.hel != condition).any():
+    #         bank.hel = condition
+    #         interbank.hel = (bank.hel & bank.hel.T)
+    #         pass
+    #     pass
 
     @classmethod
     def update_isHealthy_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
@@ -116,17 +117,17 @@ class BankState:
             pass
         pass
 
-    @classmethod
-    def calc_isInsolvent_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
-        """计算示性向量之于银行资不抵债的，来自健康的。"""
-        condition = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
-        if (bank.isv != condition).any():
-            bank.isv = condition
-            interbank.isv = (bank.isv | bank.isv.T)
-            interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="creditor")
-            interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="debtor")
-            pass
-        pass
+    # @classmethod
+    # def calc_isInsolvent_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
+    #     """计算示性向量之于银行资不抵债的，来自健康的。"""
+    #     condition = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
+    #     if (bank.isv != condition).any():
+    #         bank.isv = condition
+    #         interbank.isv = (bank.isv | bank.isv.T)
+    #         interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="creditor")
+    #         interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="debtor")
+    #         pass
+    #     pass
 
     @classmethod
     def update_isInsolvent_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
@@ -153,28 +154,30 @@ class BankState:
     def calc_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行流动性短缺的。"""
         condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
-        if (bank.ilq != condition).any():
+        difference = (bank.ilq != condition)
+        if difference.any():
             bank.ilq = condition
             interbank.ilq = (bank.ilq | bank.ilq.T)
             interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="creditor")
             interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
+            return difference
             pass
         pass
 
-    @classmethod
-    def calc_isIlliquid_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
-        """
-        计算示性向量之于银行流动性短缺的，来自健康的。
-        内容同于calc_isIlliquid
-        """
-        condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
-        if (bank.ilq != condition).any():
-            bank.ilq = condition
-            interbank.ilq = (bank.ilq | bank.ilq.T)
-            interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="creditor")
-            interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
-            pass
-        pass
+    # @classmethod
+    # def calc_isIlliquid_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
+    #     """
+    #     计算示性向量之于银行流动性短缺的，来自健康的。
+    #     内容同于calc_isIlliquid
+    #     """
+    #     condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
+    #     if (bank.ilq != condition).any():
+    #         bank.ilq = condition
+    #         interbank.ilq = (bank.ilq | bank.ilq.T)
+    #         interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="creditor")
+    #         interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
+    #         pass
+    #     pass
 
     @classmethod
     def update_isIlliquid_from_isHealthy(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
@@ -201,43 +204,45 @@ class BankState:
     def calc_isBankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行破产的。"""
         condition = (bank.isv | bank.ilq)  # TODO 这个仅仅是目前基准算法简化的做法
-        if (bank.br != condition).any():
+        difference = (bank.br != condition)
+        if difference.any():
             bank.br = condition
             interbank.br = (bank.br & bank.br.T)
             interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
             interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
+            return difference
             pass
         pass
 
-    @classmethod
-    def calc_isBankrupt_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
-        """
-        计算示性向量之于破产的，来自资不抵债的。
-        同于calc_isBankrupt
-        """
-        condition = (bank.isv | bank.ilq)
-        if (bank.br != condition).any():
-            bank.br = condition
-            interbank.br = (bank.br & bank.br.T)
-            interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
-            interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
-            pass
-        pass
+    # @classmethod
+    # def calc_isBankrupt_from_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
+    #     """
+    #     计算示性向量之于破产的，来自资不抵债的。
+    #     同于calc_isBankrupt
+    #     """
+    #     condition = (bank.isv | bank.ilq)
+    #     if (bank.br != condition).any():
+    #         bank.br = condition
+    #         interbank.br = (bank.br & bank.br.T)
+    #         interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
+    #         interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
+    #         pass
+    #     pass
 
-    @classmethod
-    def calc_isBankrupt_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
-        """
-        计算示性向量之于破产的，来自流动性短缺的。
-        同于calc_isBankrupt
-        """
-        condition = (bank.isv | bank.ilq)
-        if (bank.br != condition).any():
-            bank.br = condition
-            interbank.br = (bank.br & bank.br.T)
-            interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
-            interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
-            pass
-        pass
+    # @classmethod
+    # def calc_isBankrupt_from_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK可能不需要，而且有问题
+    #     """
+    #     计算示性向量之于破产的，来自流动性短缺的。
+    #     同于calc_isBankrupt
+    #     """
+    #     condition = (bank.isv | bank.ilq)
+    #     if (bank.br != condition).any():
+    #         bank.br = condition
+    #         interbank.br = (bank.br & bank.br.T)
+    #         interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
+    #         interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
+    #         pass
+    #     pass
 
     @classmethod
     def together_isOn(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -251,26 +256,26 @@ class BankState:
             pass
         pass
 
-    @classmethod
-    def update_isBankrupt_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):  # FIXME，有一定的不稳定的风险。#HACK可能不需要，而且有问题
-        """
-        更新示性向量之于银行破产的，来自退出的。
-
-        Args:
-            cls ():
-            bank (BankCommercial): 商业银行个体众
-            interbank (BankInterbank): 商业银行间个体众
-            difference (StateType): 源状态的变动示性向量
-
-        Returns:
-
-        """
-        # bank.br = ((~bank.br & difference) | (bank.br & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
-        bank.br[difference] = ~bank.br[difference]
-        interbank.br[difference & difference.T] = ~interbank.br[difference & difference.T]
-        interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
-        interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
-        pass
+    # @classmethod
+    # def update_isBankrupt_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):  # FIXME，有一定的不稳定的风险。#HACK可能不需要，而且有问题
+    #     """
+    #     更新示性向量之于银行破产的，来自退出的。
+    #
+    #     Args:
+    #         cls ():
+    #         bank (BankCommercial): 商业银行个体众
+    #         interbank (BankInterbank): 商业银行间个体众
+    #         difference (StateType): 源状态的变动示性向量
+    #
+    #     Returns:
+    #
+    #     """
+    #     # bank.br = ((~bank.br & difference) | (bank.br & ~difference)) & bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+    #     bank.br[difference] = ~bank.br[difference]
+    #     interbank.br[difference & difference.T] = ~interbank.br[difference & difference.T]
+    #     interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
+    #     interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
+    #     pass
 
     @classmethod
     def update_isOn_from_isOff(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType):
@@ -462,39 +467,42 @@ class BankState:
         if target == 'any':  # FIXME 这个可能有缺陷:
             if source == 'any':
                 cls.init_list_of_relation_in_state_of_banks(bank, interbank)
-                cls.calc_isInsolvent(bank, interbank)
-                cls.calc_isIlliquid(bank, interbank)
-                cls.calc_isHealthy(bank, interbank)
-                cls.calc_isBankrupt(bank, interbank)
+                _=cls.calc_isInsolvent(bank, interbank)
+                _=cls.calc_isIlliquid(bank, interbank)
+                _=cls.calc_isHealthy(bank, interbank)
+                _=cls.calc_isBankrupt(bank, interbank)
                 cls.together_isOn(bank, interbank)
                 # calc_isOff(bank, interbank) # TODO后续添加
                 # calc_isOn(bank, interbank) # TODO后续添加
             elif source == 'healthy':
-                difference=cls.calc_isInsolvent(bank, interbank)
-                cls.update_isInsolvent_from_isHealthy(bank, interbank,difference)
-                cls.update_isIlliquid_from_isHealthy(bank, interbank,difference)
+                hel_difference = cls.calc_isHealthy(bank, interbank)
+                _=cls.calc_isInsolvent(bank,interbank)
+                _=cls.calc_isIlliquid(bank,interbank)
+                cls.update_state_to_target_from_source(bank.hel, interbank.hel, isv_difference)
+                ilq_difference = cls.calc_isIlliquid(bank, interbank)
+                cls.update_state_to_target_from_source(bank.hel, interbank.hel, ilq_difference)
             elif source == 'insolvent':
-                difference=cls.calc_isInsolvent(bank, interbank)
-                cls.update_isInsolvent_from_isHealthy(bank, interbank,difference)
-                cls.calc_isBankrupt_from_isInsolvent(bank, interbank)
+                isv_difference = cls.calc_isInsolvent(bank, interbank)
+                cls.update_state_to_target_from_source(bank.hel, interbank.hel, isv_difference)
+                # br_difference = cls.calc_isBankrupt(bank, interbank)
             elif source == 'illiquid':
-                cls.calc_isHealthy_from_isIlliquid(bank, interbank)
-                cls.update_isIlliquid_from_isHealthy(bank, interbank)
-                cls.calc_isBankrupt_from_isIlliquid(bank, interbank)
+                ilq_difference = cls.calc_isIlliquid(bank, interbank)
+                cls.update_state_to_target_from_source(bank.hel, interbank.hel, ilq_difference)
+                # br_difference = cls.calc_isBankrupt(bank, interbank)
             elif source == 'bankrupt':
-                cls.calc_isOff_from_isBankrupt(bank, interbank)
-                cls.update_isOn_from_isOff(bank, interbank)
-                interbank.cre = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="creditor")
-                interbank.deb = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="debtor")
+                cls.calc_isBankrupt(bank, interbank)
+                # HACK是否需要加入破产到退出呢？
             elif source == 'off':
+                off_difference = cls.calc_isOff(bank, interbank)
+                cls.update_state_to_target_from_source(bank.br, interbank.br, off_difference)
+                cls.together_isOn(bank, interbank)
                 pass
-                # @testprintln "无须更新！"
             else:
                 raise Exception("关键词source取词错误".format(source))
                 pass
         elif target == 'healthy':
             if source == 'any':
-                cls.calc_isHealthy(bank, interbank)
+                hel_difference=cls.calc_isHealthy(bank, interbank)
                 cls.update_isInsolvent_from_isHealthy(bank, interbank)
                 cls.update_isIlliquid_from_isHealthy(bank, interbank)
             elif source == 'healthy':
