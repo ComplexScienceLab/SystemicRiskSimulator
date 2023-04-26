@@ -12,6 +12,7 @@ from PySystemicRiskLab.core.operations.model_installer import ModelInstaller
 from PySystemicRiskLab.core.operations.data_installer import DataInstaller
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
 from PySystemicRiskLab.tools.tools import Tools
+from PySystemicRiskLab.core.functions.fun_state import BankState
 
 pass  # end import
 
@@ -123,6 +124,7 @@ class Operator:
 
             ## 安装本次实验所需的数据
             A = DataInstaller.install_data(init_method=env['init_method'])
+            BankState.build_indices_of_states_relation()
             A_data = Collector.collect(A, None, env)
             pass  # if
 
