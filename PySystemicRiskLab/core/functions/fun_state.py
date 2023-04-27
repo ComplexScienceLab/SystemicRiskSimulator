@@ -13,63 +13,112 @@ class BankState:
     bank: BankCommercial
     interbank: BankInterbank
 
-    states_list = np.array((
-        'on', 'hel', 'isv', 'ilq', 'br', 'off'
-    ))
+    ## 状态集合列表`states_list`
+    states_list = []
 
-    relation_of_states_table = np.array(
-        (
-            ('同', '父', '父', '父', '父', '无'),
-            ('子', '同', '惑', '惑', '无', '无'),
-            ('子', '斥', '同', '无', '手', '无'),
-            ('子', '斥', '无', '同', '手', '无'),
-            ('子', '无', '惑', '惑', '同', '手'),
-            ('无', '无', '无', '无', '斥', '同'),
-        )
-    )
+    ## 计算状态函数集合列表`calc_state_functions_list`
+    calc_state_functions_list = []
 
+    # @property
+    # def calc_state_functions_list(cls):
+    #     calc_state_functions_list = [cls.calc_isOn, cls.calc_isHealthy, cls.calc_isInsolvent, cls.calc_isIlliquid, cls.calc_isBankrupt, cls.calc_isOff]
+    #     return calc_state_functions_list
+    #     pass  # def
+
+    ## 状态关系集合列表`relation_states_list`
+    relation_states_list = []
+
+    ## 更新状态函数集合列表`update_state_functions_list`
+    update_state_functions_list = []
+    # @property
+    # def update_state_functions_list(cls):
+    #     return [cls.update_if_equity, cls.update_if_handle, cls.update_if_none, cls.update_if_uncertain, cls.update_if_parent, cls.update_if_child, cls.update_if_exclusive]
+    #     pass  # def
+
+    ## 状态关系邻接矩阵`relation_adjacent_matrix`
+    relation_adjacent_matrix = []
+
+    ## 计算状态函数字典`calc_states_dict`
+    calc_states_dict = {}
+
+    ## 更新状态函数字典`update_states_dict`
+    update_states_dict = {}
+
+    ## 状态关系索引表`relation_indices`
     relation_indices = []
 
-    @property
-    def calc_states_list(cls):
-        return [cls.calc_isOn, cls.calc_isHealthy, cls.calc_isInsolvent, cls.calc_isIlliquid, cls.calc_isBankrupt, cls.calc_isOff]
+    # @property
+    # def relation_indices(self):
+    #     xx, yy = np.meshgrid(self.states_list, self.states_list)
+    #     self.relation_indices = np.column_stack([xx.ravel(), yy.ravel(), self.relation_adjacent_matrix.ravel()])
+    #     return self.relation_indices
+    #     pass  # def
 
+    ## 状态对应更新关系字典列表`states_relation_adjacent_dict_list`
+    states_relation_adjacent_dict_list = {}
 
     @classmethod
-    def __init__(cls):
+    def build_state_const_variables(cls):
+        """
+        构建状态常量变量。
+        Returns:
+
+        """
+        ## 设置状态集合列表`states_list`
+        cls.states_list = [
+            'on',
+            'hel',
+            'isv',
+            'ilq',
+            'br',
+            'off',
+        ]
+
+        ## 计算状态函数集合列表`calc_state_functions_list`
+        cls.calc_state_functions_list = [cls.calc_isOn, cls.calc_isHealthy, cls.calc_isInsolvent, cls.calc_isIlliquid, cls.calc_isBankrupt, cls.calc_isOff]
+
+        ## 设置状态关系集合列表`relation_states_list`
+        cls.relation_states_list = [
+            '同',
+            '手',
+            '无',
+            '惑',
+            '父',
+            '子',
+            '斥',
+        ]
+        ## 构建待计算的状态字典列表`calc_states_dict`
+        cls.calc_states_dict = [{i[0]: i[1]} for i in zip(cls.states_list, cls.calc_state_functions_list)]
+
+        ## 设置状态关系邻接矩阵`relation_adjacent_matrix`
+        cls.relation_adjacent_matrix = [
+            ['同', '父', '父', '父', '父', '无', ],
+            ['子', '同', '惑', '惑', '无', '无', ],
+            ['子', '斥', '同', '无', '手', '无', ],
+            ['子', '斥', '无', '同', '手', '无', ],
+            ['子', '无', '惑', '惑', '同', '手', ],
+            ['无', '无', '无', '无', '斥', '同', ],
+        ]
+
         ## 构建状态关系索引表。
         xx, yy = np.meshgrid(cls.states_list, cls.states_list)
-        cls.relation_indices = np.column_stack([xx.ravel(), yy.ravel(), cls.relation_of_states_table.ravel()])
+        cls.relation_indices = np.column_stack([xx.ravel(), yy.ravel(), np.asarray(cls.relation_adjacent_matrix).ravel()])
 
-        ## 构建待计算的状态字典列表
-        calc_states_list = zip(cls.states_list.tolist(), cls.calc_states_list)
+        ## 更新状态函数集合列表`update_state_functions_list`
+        cls.update_state_functions_list = [cls.update_if_equity, cls.update_if_handle, cls.update_if_none, cls.update_if_uncertain, cls.update_if_parent, cls.update_if_child, cls.update_if_exclusive]
+
+        ## 构建待更新的状态字典列表`update_states_dict`
+        cls.update_states_dict = [{i[0]: i[1]} for i in zip(cls.relation_states_list, cls.update_state_functions_list)]
+
+        ## 根据`relation_adjacent_matrix`构建待更新的状态计算方法列表
+        for i, row in enumerate(cls.relation_adjacent_matrix):
+            cls.states_relation_adjacent_dict_list[cls.states_list[i]] = np.array([cls.update_states_dict[j] for j in row])
+            pass
 
         ## 构建状态转移字典列表
-        cls.state_transitions_list = zip(cls.states_list, cls.states_list, cls.state_transitions_table)
+        cls.state_transitions_list = zip(cls.states_list, cls.states_list, cls.relation_adjacent_matrix)
 
-        ## 构建状态关系索引表
-        cls.build_indices_of_states_relation()
         pass  # def
-
-    @property
-    def relation_indices(cls):
-        xx, yy = np.meshgrid(cls.states_list, cls.states_list)
-        return np.column_stack([xx.ravel(), yy.ravel(), cls.relation_of_states_table.ravel()])
-        pass  # def
-
-    @classmethod
-    def build_indices_of_states_relation(cls):
-        """
-        构建状态关系索引表。
-
-        这个在运作初始化阶段执行一次即可。
-        """
-        xx, yy = np.meshgrid(cls.states_list, cls.states_list)
-        cls.relation_indices = np.column_stack([xx.ravel(), yy.ravel(), cls.relation_of_states_table.ravel()])
-        # return relation_indices
-        pass  # def
-
-
 
     @classmethod
     def calc_state(cls, state: StateType):
@@ -82,12 +131,28 @@ class BankState:
         Returns:
 
         """
-        ## 计算状态
-        cls.calc_states_listcalc_states_list[0]
+        ## 根据状态计算相应的状态
+        cls.calc_states_dict[state](cls.bank, cls.interbank)
 
-        state_difference = None # 状态变动部分
+        state_difference = None  # 状态变动部分
         return state_difference
         pass
+
+    @classmethod
+    def update_state(cls, state: [StateType]):
+        """
+        更新状态
+
+        Args:
+            state (StateType): 待更新的状态
+
+        Returns:
+
+        """
+        ## 根据状态之间的关系更新相应的状态
+        cls.update_states_dict[state](cls.bank, cls.interbank)
+
+        pass  # def
 
     @classmethod
     def get_relation_of_states(cls, source_state: StateType, target_state: StateType):
@@ -108,8 +173,9 @@ class BankState:
 
 	    其它可以推导关系，标记【推】；
         """
-        relation = cls.relation_indices[(cls.relation_indices[:, 0] == source_state) & (cls.relation_indices[:, 1] == target_state), 2]
-        return relation
+        # return cls.relation_indices[(cls.relation_indices[:, 0] == source_state) & (cls.relation_indices[:, 1] == target_state), 2]
+        return cls.relation_indices[(cls.relation_indices[:, 0] == source_state), 2]
+        pass  # def
 
     @classmethod
     def init_list_of_relation_in_state_of_banks(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -214,6 +280,7 @@ class BankState:
     @classmethod
     def update_if_child(cls, source_state: StateType, target_state: StateType):
         "当关系是【子】的时候，更新"
+
         pass  # def
 
     @classmethod
@@ -376,6 +443,7 @@ class BankState:
         cls.calc_state(way)
 
         ## 决策是否更新向状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
+        relations = cls.get_relation_of_states(way)
 
         ## 需要更新的状态，更新相应的向状态；
 
@@ -594,5 +662,3 @@ class BankState:
         pass  # method
 
     pass  # class
-
-
