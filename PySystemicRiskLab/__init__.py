@@ -21,7 +21,7 @@ from enum import Enum
 import time
 import numpy as np
 import pandas as pd
-from copy import deepcopy
+from copy import deepcopy, copy
 from dataclasses import dataclass
 import logging
 from typing import Union, Any, Optional
