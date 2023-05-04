@@ -545,7 +545,7 @@ class BankState:
         pass
 
     @classmethod
-    def update_B_state(cls, way: str = 'any'):  # TODO重命名成update_banks_states
+    def update_B_state(cls, bank: BankCommercial, interbank: BankInterbank, way: str = 'any'):  # TODO重命名成update_banks_states
         """
         更新各银行之状态。
 
@@ -574,6 +574,9 @@ class BankState:
         Returns:
 
         """
+
+        cls.bank = bank
+        cls.interbank = interbank
 
         ## 1. 指定而计算源状态；
         cls.is_states_changed_array = copy(FALSE1)

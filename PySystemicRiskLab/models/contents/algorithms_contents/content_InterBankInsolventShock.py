@@ -20,7 +20,7 @@ def content_InterBankInsolventShock(BB: BankCommercial, IB: BankInterbank, b: St
     BB.A_IB_all[b] = np.maximum(BB.A_IB_all[b] - BB.Shock_def_t[b], 0.0)  # 银行之银行间资产变动
     BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='A_IB_all')
     BB.E_all[BB.on] = np.maximum(BB.E_all[BB.on] - BB.Shock_def_t[BB.on], 0.0)  # 银行之所有者权益变动
-    BankState.update_B_state(BB, IB, target='insolvent', source='healthy')  # 更新各银行之状态，从健康到资不抵债
+    BankState.update_B_state(BB, IB, way='healthy')  # 更新各银行之状态，从健康到资不抵债
     BB.Shock_IB_def_s[BB.isv] = abs((BB.Shock_def_t[BB.isv] - BB.E_all[BB.isv]) / (BB.Z_IB_all[BB.isv] + BB.Z_D[BB.isv]) * BB.Z_IB_all[BB.isv])  # 计算应银行内冲击传导至银行间传染冲击
     Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_IB_def_s')  # 更新违约损失冲击源头变量Shock_def_s
     BB.Shock_D_def_s[BB.isv] = abs((BB.Shock_def_t[BB.isv] - BB.E_all[BB.isv]) / (BB.Z_IB_all[BB.isv] + BB.Z_D[BB.isv]) * BB.Z_D[BB.isv])  # 计算应银行内冲击传导至银行存款传染冲击
