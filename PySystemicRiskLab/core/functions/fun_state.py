@@ -1,9 +1,8 @@
 """功能函数集：计算构建银行与银行间相关状态及其转换。"""
 
 from PySystemicRiskLab import np, copy
-from PySystemicRiskLab.core.define.define_consts import FALSE1
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
-from PySystemicRiskLab.core.define.define_consts import LESS1
+from PySystemicRiskLab.core.define.define_consts import LESS1, FALSE1, FALSE2
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import StateType
 
@@ -11,6 +10,8 @@ pass  # end import
 
 
 class BankState:
+    is_changed_state_matrix = copy(FALSE2)
+    target_interstates_grid_matrix = None
     bank: BankCommercial
     interbank: BankInterbank
 
@@ -375,7 +376,7 @@ class BankState:
     #     pass  # def
 
     @classmethod
-    def update_states(cls, relations: StateType):
+    def update_states(cls):
         """
         批量更新多个状态。
 
@@ -385,9 +386,17 @@ class BankState:
         Returns:
 
         """
-        ## 根据状态之间的关系更新相应的状态
-        =cls.update_state_functions_adjacent_matrix[cls.source_states_grid_matrix, cls.target_states_grid_matrix](cls.bank, cls.interbank)
+        # 根据状态之间的关系更新相应的状态
+        # cls.target_states_grid_matrix,cls.target_interstates_grid_matrix,cls.is_changed_state_matrix=cls.update_state_functions_adjacent_matrix[cls.source_states_grid_matrix, cls.target_states_grid_matrix](cls.bank, cls.interbank)
 
+        results_1 = np.zeros((3, 3, 3, 3))
+        results_2 = np.full((3, 3), '')
+
+        for i in range(len(cls.states_list)):
+            for j in range(len(cls.states_list)):
+                cls.target_states_grid_matrix[i][j], cls.target_interstates_grid_matrix[i][j], cls.is_changed_state_matrix[i][j] = cls.update_state_functions_adjacent_matrix[i][j](cls.source_states_grid_matrix[i][j], cls.target_states_grid_matrix[i][j])
+
+        is_states_changed_array = cls.is_changed_state_matrix.any(axis=0)
         # cls.update_state_functions_dicts[state](cls.bank, cls.interbank)
         # cls.update_state_functions_adjacent_matrix()
         pass
@@ -536,7 +545,7 @@ class BankState:
         pass
 
     @classmethod
-    def update_B_state(cls, way: str = 'any'):  # TODO重命名成update_bank_states
+    def update_B_state(cls, way: str = 'any'):  # TODO重命名成update_banks_states
         """
         更新各银行之状态。
 
@@ -571,29 +580,25 @@ class BankState:
         state_changes = cls.calc_state(way)
         cls.is_states_changed_array[np.where(way == cls.states_list)] = state_changes.any()  # 记录是否有状态更新
 
-        ## 决策是否根据初始计算的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
-        # states_relations = cls.get_relation_of_states(way, mode='target')
-        states_relations = cls.get_relation_of_states(way, mode='all')
+        # ## 决策是否根据初始计算的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
+        # states_relations = cls.get_relation_of_states(way, mode='all')
 
         ## 根据需要更新的状态，更新相应的汇状态；
         # =cls.update_state_functions_adjacent_matrix[cls.source_states_grid_matrix,cls.target_states_grid_matrix](cls.bank, cls.interbank)
-        cls.update_states(states_relations)  # NOW需要厘清关系之内容？需要实现返回值？
+        cls.update_states()
 
         ## 重复更新状态，直至无状态需要更新；
         while cls.is_states_changed_array.any() == True:
-            ## 决策是否根据更新后的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
-            states_relations = cls.get_relation_of_states(way, mode='all')
+            # ## 决策是否根据更新后的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
+            # states_relations = cls.get_relation_of_states(way, mode='all')
+            #
+            # ## 根据需要更新的状态，更新相应的汇状态；
+            # for i, r in enumerate(states_relations):
+            #     states_changes = cls.update_state(states_relations)
+            #     cls.is_states_changed_array[np.where(way == cls.states_list)] = states_changes[i].any()  # 记录是否有状态更新
 
-            ## 根据需要更新的状态，更新相应的汇状态；
-            for i, r in enumerate(states_relations):
-                states_changes = cls.update_state(states_relations)
-                cls.is_states_changed_array[np.where(way == cls.states_list)] = states_changes[i].any()  # 记录是否有状态更新
-
-            # cls.is_states_changed_array = np.array([False for i in range(len(cls.states_list))])
-            # for i in range(len(cls.states_list)):
-            #     cls.update_state(cls.states_list[i])
-            #     pass
-            # pass#HACK AI补全的
+            ## 根据需要更新的状态，更新相应的汇状态
+            cls.update_states()
 
             pass  # while
 
