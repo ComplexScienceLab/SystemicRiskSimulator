@@ -215,6 +215,19 @@ class BankState:
         pass
 
     @classmethod
+    def calc_states(cls):
+        """
+        计算多个状态#NOW
+
+        Returns:
+
+        """
+        # if mode=
+
+
+        pass
+
+    @classmethod
     def calc_state(cls, state: StateType):
         """
         计算状态。#TODO
@@ -545,11 +558,16 @@ class BankState:
         pass
 
     @classmethod
-    def update_B_state(cls, bank: BankCommercial, interbank: BankInterbank, way: str = 'any'):  # TODO重命名成update_banks_states
+    def update_B_state(cls, bank: BankCommercial, interbank: BankInterbank, way: str = 'any',mode:str='all'):  # TODO重命名成update_banks_states
         """
         更新各银行之状态。
 
-        参数``target``可选项：#TODO
+        Args:
+            bank(BankCommercial): 银行个体众
+            interbank(BankInterbank): 银行间个体众
+
+
+        参数``way``可选项：#TODO
 
         - ``any``:  到任意状态；
         - ``healthy``:  到健康状态；
@@ -565,11 +583,7 @@ class BankState:
         - ``enabled collect A_P``:  到是否可以收回厂商贷款状态；
 
 
-        Args:
-            bank ():
-            interbank ():
-            target (): 参数，转移状态目标；
-            source (): 参数，转移状态源头；
+
 
         Returns:
 
@@ -580,15 +594,18 @@ class BankState:
 
         ## 1. 指定而计算源状态；
         cls.is_states_changed_array = copy(FALSE1)
-        state_changes = cls.calc_state(way)
+        if way=='any':
+            cls.calc_states()
+        else:
+            state_changes = cls.calc_state(cls.states_list[way])
+
+
         cls.is_states_changed_array[np.where(way == cls.states_list)] = state_changes.any()  # 记录是否有状态更新
 
         # ## 决策是否根据初始计算的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
         # states_relations = cls.get_relation_of_states(way, mode='all')
 
         ## 根据需要更新的状态，更新相应的汇状态；
-        # =cls.update_state_functions_adjacent_matrix[cls.source_states_grid_matrix,cls.target_states_grid_matrix](cls.bank, cls.interbank)
-        cls.update_states()
 
         ## 重复更新状态，直至无状态需要更新；
         while cls.is_states_changed_array.any() == True:

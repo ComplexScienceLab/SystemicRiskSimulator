@@ -124,8 +124,10 @@ class Operator:
 
             ## 安装本次实验所需的数据
             A = DataInstaller.install_data(init_method=env['init_method'])
-            BankState.build_indices_of_states_relation()
             A_data = Collector.collect(A, None, env)
+
+            ## 构建本次实验所需的状态数据
+            BankState.build_state_const_variables()
             pass  # if
 
         env = Scheduler.schedule(env)
