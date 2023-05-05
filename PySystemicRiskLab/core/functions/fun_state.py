@@ -2,7 +2,7 @@
 
 from PySystemicRiskLab import np, copy
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
-from PySystemicRiskLab.core.define.define_consts import LESS1, FALSE1, FALSE2
+from PySystemicRiskLab.core.define.define_consts import *
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import StateType
 
@@ -10,8 +10,6 @@ pass  # end import
 
 
 class BankState:
-    is_changed_state_matrix = copy(FALSE2)
-    target_interstates_grid_matrix = None
     bank: BankCommercial
     interbank: BankInterbank
 
@@ -33,8 +31,8 @@ class BankState:
     ## 计算状态函数集合列表`calc_state_functions_list`
     calc_state_functions_list: list
 
-    ## 计算状态函数集合字典列表`calc_state_functions_dicts`
-    calc_state_functions_dicts: list
+    ## 计算状态函数集合字典集`calc_state_functions_dicts`
+    calc_state_functions_dicts: dict
 
     ## 状态关系集合列表`state_relations_list`
     state_relations_list: list
@@ -45,25 +43,28 @@ class BankState:
     ## 更新状态函数集合列表`update_state_functions_list`
     update_state_functions_list: list
 
-    ## 更新状态函数字典列表`update_state_functions_dicts`
-    update_state_functions_dicts: list
+    ## 更新状态函数字典集`update_state_functions_dicts`
+    update_state_functions_dicts: dict
 
-    ## 更新状态关系函数邻接矩阵
+    ## 更新状态函数邻接字典`update_state_functions_adjacent_dicts`
+    update_state_functions_adjacent_dicts: dict = {}
+
+    ## 更新状态关系函数邻接矩阵`update_state_functions_adjacent_matrix`
     update_state_functions_adjacent_matrix: np.array
 
     ## 状态关系索引表`states_relations_indices_table`
     states_relations_indices_table: list
 
-    ## 状态对应更新关系字典列表`update_state_functions_adjacent_dict_list`
-    update_state_functions_adjacent_dict_list: dict
-
     @classmethod
-    def build_state_const_variables(cls):
+    def build_state_const_variables(cls, bank: BankCommercial, interbank: BankInterbank):
         """
         构建各类状态常量变量。
         Returns:
 
         """
+
+        cls.bank = bank
+        cls.interbank = interbank
 
         ## 示性向量之各状态是否已经更新
         cls.is_states_changed_array = copy(FALSE1)
@@ -98,11 +99,14 @@ class BankState:
             cls.calc_isOff
         ]
 
-        ## 构建状态函数集合列表字典`calc_state_functions_dicts`
-        cls.calc_state_functions_dicts = [{i[0]: i[1]} for i in zip(cls.states_list, cls.calc_state_functions_list)]
+        ## 是否改变状态矩阵`is_changed_state_matrix`
+        cls.is_changed_state_matrix = np.full((len(cls.states_list), len(cls.states_list)), False)
 
-        ## 构建状态数据列表字典`state_data_dict`
-        cls.state_data_dict = [{i[0]: i[1]} for i in zip(cls.states_list, cls.state_data_list)]
+        ## 计算状态函数集合字典集`calc_state_functions_dicts`
+        cls.calc_state_functions_dicts = dict(zip(cls.states_list, cls.calc_state_functions_list))
+
+        ## 构建状态数据列表字典`state_data_dicts`
+        cls.state_data_dicts = [{i[0]: i[1]} for i in zip(cls.states_list, cls.state_data_list)]
 
         ## 构建源与汇状态数据网格矩阵（笛卡尔积矩阵）`states_data_grid_matrix`
         cls.source_states_data_grid_matrix, cls.target_states_data_grid_matrix = np.meshgrid(cls.state_data_list, cls.state_data_list)
@@ -124,6 +128,9 @@ class BankState:
             '子',
             '斥',
         ]
+
+        ## 设置目标交互状态网格矩阵`target_interstates_grid_matrix`
+        cls.target_interstates_grid_matrix = np.empty((len(cls.states_list), len(cls.states_list)), dtype=object)
 
         ## 设置状态关系邻接矩阵`state_relations_adjacent_matrix`
         cls.state_relations_adjacent_matrix = [
@@ -152,14 +159,15 @@ class BankState:
             cls.update_if_exclusive,
         ]
 
-        ## 构建更新状态函数字典列表`update_state_functions_dicts`
-        cls.update_state_functions_dicts = [{i[0]: i[1]} for i in zip(cls.state_relations_list, cls.update_state_functions_list)]
+        ## 构建更新状态函数字典集`update_state_functions_dicts`
+        cls.update_state_functions_dicts = dict(zip(cls.state_relations_list, cls.update_state_functions_list))
 
-        ## 根据`state_relations_adjacent_matrix`构建更新状态关系函数各源状态对应的汇状态邻接数组字典。该数据顶层是字典数组，每个键是状态名，每个值是一个数组，其是该状态对应的状态关系邻接矩阵之一行之状态关系名对应的更新函数。
+        ## 根据`state_relations_adjacent_matrix`构建更新状态函数邻接字典`update_state_functions_adjacent_dicts`。该数据顶层是字典数组，每个键是状态名，每个值是一个数组，其是该状态对应的状态关系邻接矩阵之一行之状态关系名对应的更新函数。
         for i, row in enumerate(cls.state_relations_adjacent_matrix):
-            cls.update_state_functions_adjacent_dict_list[cls.states_list[i]] = np.array([cls.update_state_functions_dicts[j] for j in row])
+            cls.update_state_functions_adjacent_dicts.update({cls.states_list[i]: np.array([cls.update_state_functions_dicts[j] for j in row])})
 
-        ## 根据`state_relations_adjacent_matrix`构建更新状态关系函数邻接矩阵。矩阵每个元素是一个更新状态函数，对应状态关系邻接矩阵之元素之状态关系名。
+        ## 根据`state_relations_adjacent_matrix`构建更新状态关系函数邻接矩阵`update_state_functions_adjacent_matrix`。矩阵每个元素是一个更新状态函数，对应状态关系邻接矩阵之元素之状态关系名。
+        cls.update_state_functions_adjacent_matrix = np.empty((len(cls.states_list), len(cls.states_list)), dtype=object)
         for i, row in enumerate(cls.state_relations_adjacent_matrix):
             for j, col in enumerate(row):
                 cls.update_state_functions_adjacent_matrix[i, j] = cls.update_state_functions_dicts[col]

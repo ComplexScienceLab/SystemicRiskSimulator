@@ -127,7 +127,7 @@ class Operator:
             A_data = Collector.collect(A, None, env)
 
             ## 构建本次实验所需的状态数据
-            BankState.build_state_const_variables()
+            BankState.build_state_const_variables(A.BB, A.IB)
             pass  # if
 
         env = Scheduler.schedule(env)
