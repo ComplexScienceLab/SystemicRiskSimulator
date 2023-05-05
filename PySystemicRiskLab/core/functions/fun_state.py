@@ -215,20 +215,31 @@ class BankState:
         pass
 
     @classmethod
-    def calc_states(cls):
+    def calc_states(cls, mode: str = 'all', state_str: str = 'any'):
         """
-        计算多个状态#NOW
+        计算多个状态
 
         Returns:
 
         """
-        # if mode=
+        if mode == 'all':  # NOW
+            for calc_state_function in cls.calc_state_functions_list:
+                return calc_state_function(cls.bank, cls.interbank)
+            pass
+        elif mode == 'target':  # TODO暂时没有设计这个模式
+            pass
+        elif mode == 'one':
+            ## 根据状态计算相应的状态
+            return cls.calc_state_functions_dicts[state_str](cls.bank, cls.interbank)
+            # state_changes = cls.calc_state(cls.states_list[way])
+            pass
+        else:
+            raise ValueError("参数`mode`的值不正确。")
 
-
-        pass
+        pass  # def
 
     @classmethod
-    def calc_state(cls, state: StateType):
+    def calc_state(cls, state: StateType):  # HACK无用
         """
         计算状态。#TODO
 
@@ -240,7 +251,7 @@ class BankState:
         """
         ## 根据状态计算相应的状态
         return cls.calc_state_functions_dicts[state](cls.bank, cls.interbank)
-        pass
+        pass  # def
 
     @classmethod
     def calc_isOn(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -402,8 +413,8 @@ class BankState:
         # 根据状态之间的关系更新相应的状态
         # cls.target_states_grid_matrix,cls.target_interstates_grid_matrix,cls.is_changed_state_matrix=cls.update_state_functions_adjacent_matrix[cls.source_states_grid_matrix, cls.target_states_grid_matrix](cls.bank, cls.interbank)
 
-        results_1 = np.zeros((3, 3, 3, 3))
-        results_2 = np.full((3, 3), '')
+        # results_1 = np.zeros((3, 3, 3, 3))
+        # results_2 = np.full((3, 3), '')
 
         for i in range(len(cls.states_list)):
             for j in range(len(cls.states_list)):
@@ -415,7 +426,7 @@ class BankState:
         pass
 
     @classmethod
-    def update_state(cls, source_state: StateType, target_state: StateType):
+    def update_state(cls, source_state: StateType, target_state: StateType):  # HACK无用可以删除
         """
         更新单个状态。
 
@@ -558,7 +569,7 @@ class BankState:
         pass
 
     @classmethod
-    def update_B_state(cls, bank: BankCommercial, interbank: BankInterbank, way: str = 'any',mode:str='all'):  # TODO重命名成update_banks_states
+    def update_B_state(cls, bank: BankCommercial, interbank: BankInterbank, way: str = 'any'):  # TODO重命名成update_banks_states
         """
         更新各银行之状态。
 
@@ -594,11 +605,11 @@ class BankState:
 
         ## 1. 指定而计算源状态；
         cls.is_states_changed_array = copy(FALSE1)
-        if way=='any':
-            cls.calc_states()
+        if way == 'any':
+            state_changes = cls.calc_states(mode='all')
         else:
-            state_changes = cls.calc_state(cls.states_list[way])
-
+            state_changes = cls.calc_states(mode='one', state_str=way)
+            # state_changes = cls.calc_state(cls.states_list[way])
 
         cls.is_states_changed_array[np.where(way == cls.states_list)] = state_changes.any()  # 记录是否有状态更新
 

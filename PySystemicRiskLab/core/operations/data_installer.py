@@ -372,10 +372,10 @@ class DataInstaller:
         ## 更新各银行之变量，在第一回合初始时 # BUG
         b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置BB示性变量
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
-        BankTransfer.update_B_transfer(BB, IB, b, ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时
-        Shock.update_B_Shock(BB, IB, b, ib, by_way='all')  # 更新各银行之所有冲击变量，在第一回合开始时
-        BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='all')  # 更新各银行之资产负债表变量
-        BankState.update_B_state(BB, IB, way='any')  # 更新各银行之状态示性变量
+        # BankTransfer.update_B_transfer(BB, IB, b, ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时
+        # Shock.update_B_Shock(BB, IB, b, ib, by_way='all')  # 更新各银行之所有冲击变量，在第一回合开始时
+        # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='all')  # 更新各银行之资产负债表变量
+        # BankState.update_B_state(BB, IB, way='any')  # 更新各银行之状态示性变量
 
         ## 构建Agent模型
         ## NOTE 当用对象字段数据结构时。
