@@ -72,10 +72,10 @@ class BankState:
         ## 设置状态集合列表`states_list`
         cls.states_list = [
             'on',
-            'hel',
-            'isv',
-            'ilq',
-            'br',
+            'healthy',
+            'insolvent',
+            'illiquid',
+            'bankrupt',
             'off',
         ]
 
@@ -172,8 +172,8 @@ class BankState:
             for j, col in enumerate(row):
                 cls.update_state_functions_adjacent_matrix[i, j] = cls.update_state_functions_dicts[col]
 
-        ## 构建源、汇交互状态网格矩阵（笛卡尔积矩阵）`source_inter_states_grid_matrix`、`target_inter_states_grid_matrix`#NOW
-        cls.source_inter_states_grid_matrix, cls.target_inter_states_grid_matrix = np.meshgrid(cls.inter_states_list, cls.inter_states_list)
+        # ## 构建源、汇交互状态网格矩阵（笛卡尔积矩阵）`source_inter_states_grid_matrix`、`target_inter_states_grid_matrix`#NOW
+        # cls.source_inter_states_grid_matrix, cls.target_inter_states_grid_matrix = np.meshgrid(cls.inter_states_list, cls.inter_states_list)
         pass  # def
 
     @classmethod
@@ -283,8 +283,8 @@ class BankState:
         if changes.any():
             bank.hel = condition
             interbank.hel = (bank.hel & bank.hel.T)
-            return changes
             pass
+        return changes
         pass
 
     @classmethod
@@ -297,8 +297,8 @@ class BankState:
             interbank.isv = (bank.isv | bank.isv.T)
             interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="creditor")
             interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="debtor")
-            return changes
             pass
+        return changes
         pass
 
     @classmethod
@@ -311,8 +311,8 @@ class BankState:
             interbank.ilq = (bank.ilq | bank.ilq.T)
             interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="creditor")
             interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
-            return changes
             pass
+        return changes
         pass
 
     @classmethod
@@ -325,8 +325,8 @@ class BankState:
             interbank.br = (bank.br & bank.br.T)
             interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
             interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
-            return changes
             pass
+        return changes
         pass
 
     @classmethod
@@ -337,8 +337,8 @@ class BankState:
         if (bank.off != condition).any():
             bank.off = condition
             interbank.off = (bank.off & bank.off.T)
-            return changes
             pass
+        return changes
         pass
 
     @classmethod
