@@ -122,12 +122,15 @@ class Operator:
 
             logging.info("相关实验参数：" + str(para) + "\n")
 
-            ## 安装本次实验所需的数据
+            ## 安装本次实验所需的多主体数据
             A = DataInstaller.install_data(init_method=env['init_method'])
             A_data = Collector.collect(A, None, env)
 
             ## 构建本次实验所需的状态数据
             BankState.build_state_const_variables(A.BB, A.IB)
+
+            ## 初始化本次实验所需的多主体数据
+            A = DataInstaller.initialize_data(A, para, env)
             pass  # if
 
         env = Scheduler.schedule(env)

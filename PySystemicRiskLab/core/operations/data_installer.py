@@ -369,13 +369,9 @@ class DataInstaller:
         # # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组 #HACK无用
         # A_data = Collector.collect(A, None, env)
 
-        ## 更新各银行之变量，在第一回合初始时 # BUG
-        b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置BB示性变量
+      
+        b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置A.BB示性变量
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
-        # BankTransfer.update_B_transfer(BB, IB, b, ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？
-        # Shock.update_B_Shock(BB, IB, b, ib, by_way='all')  # 更新各银行之所有冲击变量，在第一回合开始时
-        # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='all')  # 更新各银行之资产负债表变量
-        # BankState.update_B_state(BB, IB, way='any')  # 更新各银行之状态示性变量
 
         ## 构建Agent模型
         ## NOTE 当用对象字段数据结构时。
@@ -389,5 +385,15 @@ class DataInstaller:
         )
         return A
         pass  # method
+    @classmethod
+    def initialize_data(cls, A, para, env):
+        ## 更新各银行之变量，在第一回合初始时 # BUG
+        BankTransfer.update_B_transfer(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
+        Shock.update_B_Shock(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有冲击变量，在第一回合开始时
+        BalanceSheet.update_B_balance_sheet(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之资产负债表变量
+        BankState.update_B_state(A.BB, A.IB, way='any')  # 更新各银行之状态示性变量
+        return A
+        pass
 
     pass  # class
+
