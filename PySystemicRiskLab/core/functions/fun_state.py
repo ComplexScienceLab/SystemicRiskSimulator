@@ -14,7 +14,10 @@ class BankState:
     interbank: BankInterbank
 
     ## 是否变动状态列表`is_states_changed_array`
-    is_states_changed_array: bool
+    is_states_changed_array: np.array
+
+    ## 是否变动状态矩阵`is_states_changed_matrix`
+    is_states_changed_matrix = np.array
 
     ## 状态集合列表`states_list`
     states_list: list
@@ -24,6 +27,9 @@ class BankState:
 
     ## 汇状态网格矩阵（笛卡尔积矩阵）`target_states_grid_matrix`
     target_states_grid_matrix: np.array
+
+    ## 汇交互状态网格矩阵（笛卡尔积矩阵）`target_interstates_grid_matrix`
+    target_interstates_grid_matrix = np.array
 
     ## 状态数据集合列表`state_data_list`
     state_data_list: list
@@ -63,7 +69,7 @@ class BankState:
 
         """
 
-        cls.bank = bank
+        cls.bank = bank  # BUG提前赋值会不会导致后续的bank变量不会更新？下同。
         cls.interbank = interbank
 
         ## 示性向量之各状态是否已经更新
@@ -79,15 +85,15 @@ class BankState:
             'off',
         ]
 
-        ## 设置状态集合数据列表`state_data_list`
-        cls.state_data_list = [
-            cls.bank.on,
-            cls.bank.hel,
-            cls.bank.isv,
-            cls.bank.ilq,
-            cls.bank.br,
-            cls.bank.off,
-        ]
+        # ## 设置状态集合数据列表`state_data_list`#HACK暂时不引入bank、interbank
+        # cls.state_data_list = [
+        #     cls.bank.on,
+        #     cls.bank.hel,
+        #     cls.bank.isv,
+        #     cls.bank.ilq,
+        #     cls.bank.br,
+        #     cls.bank.off,
+        # ]
 
         ## 计算状态函数集合列表`calc_state_functions_list`
         cls.calc_state_functions_list = [
@@ -99,17 +105,17 @@ class BankState:
             cls.calc_isOff
         ]
 
-        ## 是否改变状态矩阵`is_changed_state_matrix`
-        cls.is_changed_state_matrix = np.full((len(cls.states_list), len(cls.states_list)), False)
+        ## 是否改变状态矩阵`is_states_changed_matrix`
+        cls.is_states_changed_matrix = np.full((len(cls.states_list), len(cls.states_list)), False)
 
         ## 计算状态函数集合字典集`calc_state_functions_dicts`
         cls.calc_state_functions_dicts = dict(zip(cls.states_list, cls.calc_state_functions_list))
 
-        ## 构建状态数据列表字典`state_data_dicts`
-        cls.state_data_dicts = [{i[0]: i[1]} for i in zip(cls.states_list, cls.state_data_list)]
+        # ## 构建状态数据列表字典`state_data_dicts` #HACK暂时不引入bank、interbank
+        # cls.state_data_dicts = [{i[0]: i[1]} for i in zip(cls.states_list, cls.state_data_list)]
 
-        ## 构建源与汇状态数据网格矩阵（笛卡尔积矩阵）`states_data_grid_matrix`
-        cls.source_states_data_grid_matrix, cls.target_states_data_grid_matrix = np.meshgrid(cls.state_data_list, cls.state_data_list)
+        # ## 构建源与汇状态数据网格矩阵（笛卡尔积矩阵）`states_data_grid_matrix`#HACK暂时不引入bank、interbank
+        # cls.source_states_data_grid_matrix, cls.target_states_data_grid_matrix = np.meshgrid(cls.state_data_list, cls.state_data_list)
 
         ## 设置状态关系集合列表`state_relations_list`
         ## 同一种状态标记【同】；
@@ -172,7 +178,7 @@ class BankState:
             for j, col in enumerate(row):
                 cls.update_state_functions_adjacent_matrix[i, j] = cls.update_state_functions_dicts[col]
 
-        # ## 构建源、汇交互状态网格矩阵（笛卡尔积矩阵）`source_inter_states_grid_matrix`、`target_inter_states_grid_matrix`#NOW
+        # ## 构建源、汇交互状态网格矩阵（笛卡尔积矩阵）`source_inter_states_grid_matrix`、`target_inter_states_grid_matrix`#HACK暂时不需要
         # cls.source_inter_states_grid_matrix, cls.target_inter_states_grid_matrix = np.meshgrid(cls.inter_states_list, cls.inter_states_list)
         pass  # def
 
@@ -222,29 +228,32 @@ class BankState:
         interbank.deb = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="debtor")
         pass
 
-    @classmethod
-    def calc_states(cls, mode: str = 'all', state_str: str = 'any'):
-        """
-        计算多个状态
-
-        Returns:
-
-        """
-        if mode == 'all':  # NOW
-            for calc_state_function in cls.calc_state_functions_list:
-                return calc_state_function(cls.bank, cls.interbank)
-            pass
-        elif mode == 'target':  # TODO暂时没有设计这个模式
-            pass
-        elif mode == 'one':
-            ## 根据状态计算相应的状态
-            return cls.calc_state_functions_dicts[state_str](cls.bank, cls.interbank)
-            # state_changes = cls.calc_state(cls.states_list[way])
-            pass
-        else:
-            raise ValueError("参数`mode`的值不正确。")
-
-        pass  # def
+    # @classmethod
+    # def calc_states(cls, mode: str = 'all', way: str = 'any'): #TODO无用可以删除
+    #     """
+    #     计算多个状态
+    #
+    #     Returns:
+    #
+    #     """
+    #     if mode == 'all':
+    #         for i, calc_state_function in enumerate(cls.calc_state_functions_list):
+    #             changes = calc_state_function(cls.bank, cls.interbank)
+    #             cls.is_states_changed_array[i] = changes.any()
+    #     elif mode == 'target':  # HACK暂时没有设计这个模式
+    #         pass
+    #     elif mode == 'one':
+    #         ## 根据状态计算相应的状态
+    #         changes = cls.calc_state_functions_dicts[way](cls.bank, cls.interbank)
+    #         cls.is_states_changed_array[np.where(way == cls.states_list)] = changes.any()
+    #
+    #         # state_changes = cls.calc_state(cls.states_list[way])
+    #     else:
+    #         raise ValueError("参数`mode`的值不正确。")
+    #         pass  # if
+    #
+    #     cls.is_states_changed_array
+    #     pass  # def
 
     @classmethod
     def calc_state(cls, state: StateType):  # HACK无用
@@ -271,8 +280,8 @@ class BankState:
             interbank.on = (bank.on & bank.on.T)
             # interbank.listOfCreditorsInOn = cls.calc_list_of_relation_in_state_of_banks(interbank, isState = bank.on, goal = "creditor") #HACK，未定义，无用。
             # interbank.listOfDebtorsInOn = cls.calc_list_of_relation_in_state_of_banks(interbank, isState = bank.on, goal = "debtor") #HACK，未定义，无用。
-            return changes
             pass
+        return changes
         pass
 
     @classmethod
@@ -342,13 +351,13 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO
+    def calc_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未改进
         """计算示性向量之于银行需要偿还银行间负债的。"""
         bank.is_needed_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO
+    def calc_isEnabledBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未改进
         """计算示性向量之于银行能够偿还银行间负债的。"""
         bank.is_enabled_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & (bank.A_Q > 0) & bank.on)
         pass
@@ -360,78 +369,64 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO
+    def calc_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未改进
         """计算示性向量之于银行需要偿还居民部门存款的。"""
         bank.is_needed_BoD = ((bank.Shock_D_run_t > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO
+    def calc_isEnabledBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未改进
         """计算示性向量之于银行能够偿还居民部门存款的。"""
         bank.is_enabled_BoD = ((bank.Shock_D_run_t > 0) & (bank.A_Q > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoD_from_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO
+    def calc_isEnabledBoD_from_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未改进
         """计算示性向量之于银行能够偿还居民部门存款的，从需要偿还居民部门存款的。"""
         bank.is_enabled_BoD = (bank.is_needed_BoD & (bank.A_Q > 0))
         pass
 
     @classmethod
-    def calc_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO
+    def calc_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未改进
         """计算示性向量之于银行需要收回厂商贷款的。"""
         bank.is_needed_LiP = ((bank.Shock_P_run_s > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO
+    def calc_isEnabledLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未改进
         """计算示性向量之于银行能够收回厂商贷款的。"""
         bank.is_enabled_LiP = ((bank.Shock_P_run_s > 0) & bank.on)  # HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
     @classmethod
-    def calc_isEnabledLiP_from_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO
+    def calc_isEnabledLiP_from_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未改进
         """计算示性向量之于银行能够收回厂商贷款的，从需要收回厂商贷款的。"""
         bank.is_enabled_LiP = (bank.is_needed_LiP)  # HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
-    # @classmethod #TODO无用可以删除
-    # def is_updated_relation_of_states(cls, source_state: StateType, target_state: StateType):
-    #     """判断是否有更新状态之关系"""
-    #     pass  # def
-    #
     # @classmethod
-    # def update_state_to_target_from_source(cls, target_state: StateType, target_inter_state: StateType & StateType.T, source_state_changes: StateType):  # NOW
-    #     # target_state = ((~target_state & source_state_changes) | (target_state & ~source_state_changes)) & cls.bank.on  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
-    #     target_state[source_state_changes] = ~target_state[source_state_changes]
-    #     target_inter_state[source_state_changes & source_state_changes.T] = ~target_inter_state[source_state_changes & source_state_changes.T]
-    #     pass  # def
-
-    @classmethod
-    def update_states(cls):
-        """
-        批量更新多个状态。
-
-        Args:
-            state (StateType): 待更新的状态
-
-        Returns:
-
-        """
-        # 根据状态之间的关系更新相应的状态
-        # cls.target_states_grid_matrix,cls.target_interstates_grid_matrix,cls.is_changed_state_matrix=cls.update_state_functions_adjacent_matrix[cls.source_states_grid_matrix, cls.target_states_grid_matrix](cls.bank, cls.interbank)
-
-        # results_1 = np.zeros((3, 3, 3, 3))
-        # results_2 = np.full((3, 3), '')
-
-        for i in range(len(cls.states_list)):
-            for j in range(len(cls.states_list)):
-                cls.target_states_grid_matrix[i][j], cls.target_interstates_grid_matrix[i][j], cls.is_changed_state_matrix[i][j] = cls.update_state_functions_adjacent_matrix[i][j](cls.source_states_grid_matrix[i][j], cls.target_states_grid_matrix[i][j])
-
-        is_states_changed_array = cls.is_changed_state_matrix.any(axis=0)
-        # cls.update_state_functions_dicts[state](cls.bank, cls.interbank)
-        # cls.update_state_functions_adjacent_matrix()
-        pass
+    # def update_states(cls): # TODO 无用可删除
+    #     """
+    #     批量更新多个状态。
+    #
+    #     Returns:
+    #         is_states_changed_array 是否变动状态向量
+    #
+    #     """
+    #     # 根据状态之间的关系更新相应的状态
+    #     # cls.target_states_grid_matrix,cls.target_interstates_grid_matrix,cls.is_states_changed_matrix=cls.update_state_functions_adjacent_matrix[cls.source_states_grid_matrix, cls.target_states_grid_matrix](cls.bank, cls.interbank)
+    #
+    #     # results_1 = np.zeros((3, 3, 3, 3))
+    #     # results_2 = np.full((3, 3), '')
+    #
+    #     for i in range(len(cls.states_list)):
+    #         for j in range(len(cls.states_list)):
+    #             cls.target_states_grid_matrix[i][j], cls.target_interstates_grid_matrix[i][j], cls.is_states_changed_matrix[i][j] = cls.update_state_functions_adjacent_matrix[i][j](cls.source_states_grid_matrix[i][j], cls.target_states_grid_matrix[i][j])
+    #
+    #     is_states_changed_array = cls.is_states_changed_matrix.any(axis=0)
+    #     return is_states_changed_array
+    #     # return cls.is_states_changed_matrix.any(axis=0)
+    #     pass
 
     @classmethod
     def update_state(cls, source_state: StateType, target_state: StateType):  # HACK无用可以删除
@@ -569,7 +564,7 @@ class BankState:
             is_exposure = ((interbank.Z_IB > 0.0) & isState)
         else:
             pass
-        list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(env['num_bank'])])
+        list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(env['num_bank'])])  # BUG TODO：用None会导致整个数据类型变成object，而不是array，所以需要改成np.nan
         for i in range(env['num_bank']):
             list_of_relation_in_state_of_banks[i] = np.where(is_exposure[i, :])[0]  # 获取对应状态下的债权或者债务关系的银行列表
             pass
@@ -613,13 +608,18 @@ class BankState:
 
         ## 1. 指定而计算源状态；
         cls.is_states_changed_array = copy(FALSE1)
-        if way == 'any':
-            state_changes = cls.calc_states(mode='all')
-        else:
-            state_changes = cls.calc_states(mode='one', state_str=way)
-            # state_changes = cls.calc_state(cls.states_list[way])
 
-        cls.is_states_changed_array[np.where(way == cls.states_list)] = state_changes.any()  # 记录是否有状态更新
+        if way == 'any':  # NOW
+            for i, calc_state_function in enumerate(cls.calc_state_functions_list):
+                changes = calc_state_function(cls.bank, cls.interbank)
+                cls.is_states_changed_array[i] = changes.any()
+        else:
+            ## 根据状态计算相应的状态
+            changes = cls.calc_state_functions_dicts[way](cls.bank, cls.interbank)
+            cls.is_states_changed_array[np.where(way == cls.states_list)] = changes.any()
+
+            # state_changes = cls.calc_state(cls.states_list[way])
+            pass  # if
 
         # ## 决策是否根据初始计算的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
         # states_relations = cls.get_relation_of_states(way, mode='all')
@@ -636,8 +636,12 @@ class BankState:
             #     states_changes = cls.update_state(states_relations)
             #     cls.is_states_changed_array[np.where(way == cls.states_list)] = states_changes[i].any()  # 记录是否有状态更新
 
-            ## 根据需要更新的状态，更新相应的汇状态
-            cls.update_states()
+            ## 根据需要更新的状态，更新相应的汇状态 # TODO 目前没有设计mode，所以暂时不需要
+            for i in range(len(cls.states_list)):
+                for j in range(len(cls.states_list)):
+                    cls.target_states_grid_matrix[i][j], cls.target_interstates_grid_matrix[i][j], cls.is_states_changed_matrix[i][j] = cls.update_state_functions_adjacent_matrix[i][j](cls.source_states_grid_matrix[i][j], cls.target_states_grid_matrix[i][j])
+
+            cls.is_states_changed_array = cls.is_states_changed_matrix.any(axis=0)
 
             pass  # while
 
