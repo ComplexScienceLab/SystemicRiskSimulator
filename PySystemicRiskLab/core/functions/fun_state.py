@@ -444,32 +444,32 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_if_equity(cls, source_state: StateType, target_state: StateType):
+    def update_if_equity(cls, source_state: StateType, target_state: StateType, changes: StateType):
         "当关系是【同】的时候，更新"
         pass  # def
 
     @classmethod
-    def update_if_handle(cls, source_state: StateType, target_state: StateType):
+    def update_if_handle(cls, source_state: StateType, target_state: StateType, changes: StateType):
         "当关系是【手】的时候，更新"
         pass  # def
 
     @classmethod
-    def update_if_none(cls, source_state: StateType, target_state: StateType):
+    def update_if_none(cls, source_state: StateType, target_state: StateType, changes: StateType):
         "当关系是【无】的时候，更新"
         pass  # def
 
     @classmethod
-    def update_if_uncertain(cls, source_state: StateType, target_state: StateType):
+    def update_if_uncertain(cls, source_state: StateType, target_state: StateType, changes: StateType):
         "当关系是【惑】的时候，更新"
         pass  # def
 
     @classmethod
-    def update_if_parent(cls, source_state: StateType, target_state: StateType):
+    def update_if_parent(cls, source_state: StateType, target_state: StateType, changes: StateType):
         "当关系是【父】的时候，更新"
         pass  # def
 
     @classmethod
-    def update_if_child(cls, source_state: StateType, target_state: StateType, changes: StateType):
+    def update_if_child(cls, source_state: StateType, source_inter_state:(StateType & StateType.T), target_state: StateType, changes: StateType):
         """
         当关系是【子】的时候，更新
 
@@ -480,7 +480,7 @@ class BankState:
 
         Returns:
             target_state (StateType): 计算后的目标状态
-            target_interbank_state (StateType): 计算后的目标状态之银行间关系
+            target_inter_state (StateType): 计算后的目标状态之银行间关系
             is_changed_state (bool): 是否有更新状态
 
         """
@@ -488,8 +488,8 @@ class BankState:
         is_changed_state = (target_state[changes] != source_state[changes]).any()
         if is_changed_state:
             target_state[changes] = source_state[changes]
-            target_interbank_state = (target_state & target_state.T)
-        return target_state, target_interbank_state, is_changed_state
+            target_inter_state = (target_state & target_state.T)
+        return target_state, target_inter_state, is_changed_state
         pass  # def
 
     @classmethod
@@ -504,7 +504,7 @@ class BankState:
 
         Returns:
             target_state (StateType): 计算后的目标状态
-            target_interbank_state (StateType): 计算后的目标状态之银行间关系
+            target_inter_state (StateType): 计算后的目标状态之银行间关系
             is_changed_state (bool): 是否有更新状态
 
         """
@@ -512,8 +512,8 @@ class BankState:
         is_changed_state = (target_state[changes] != ~source_state[changes]).any()
         if is_changed_state:
             target_state[changes] = ~source_state[changes]
-            target_interbank_state = (target_state & target_state.T)
-        return target_state, target_interbank_state, is_changed_state
+            target_inter_state = (target_state & target_state.T)
+        return target_state, target_inter_state, is_changed_state
         pass  # def
 
     @classmethod
@@ -607,7 +607,7 @@ class BankState:
         cls.interbank = interbank
 
         ## 1. 指定而计算源状态；
-        cls.is_states_changed_array = copy(FALSE1)
+        cls.is_states_changed_array = np.full((len(cls.states_list), 1), False)
 
         if way == 'any':  # NOW
             for i, calc_state_function in enumerate(cls.calc_state_functions_list):
@@ -616,7 +616,7 @@ class BankState:
         else:
             ## 根据状态计算相应的状态
             changes = cls.calc_state_functions_dicts[way](cls.bank, cls.interbank)
-            cls.is_states_changed_array[np.where(way == cls.states_list)] = changes.any()
+            cls.is_states_changed_array[cls.states_list.index(way)] = changes.any()
 
             # state_changes = cls.calc_state(cls.states_list[way])
             pass  # if

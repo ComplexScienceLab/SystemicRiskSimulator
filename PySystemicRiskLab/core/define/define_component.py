@@ -52,8 +52,8 @@ class ContentComponent:
         Args:
             content: 内容
         """
+        self.attribute = None
         self.content = content
-        pass  # method
 
     pass  # class
 
