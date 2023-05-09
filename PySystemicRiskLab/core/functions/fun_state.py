@@ -58,7 +58,12 @@ class BankState:
     ## 状态关系邻接矩阵`state_relations_adjacent_matrix`
     state_relations_adjacent_matrix: list
 
-    ## 状态关系实体编号邻接矩阵`state_relation_entities_adjacent_matrix`
+    ## 汇状态关系列表`target_state_relations_list`
+    target_state_relations_list: list
+
+    ## 状态关系实体编号邻接矩阵`state_relation_entities_adjacent_matrix`。#HACK 目前暂时用不到
+    ## 用于标记、区别具体的多状态关系，避免发生混淆。其中编号`0`是特殊编号，表示没有特殊标记。
+    ## 例如对于同一个汇状态`s_t0`，有两个状态关系`s_t0 = s_t1 + s_t2`和`s_t0 = s_t3 + s_t4`，则这两个状态关系在矩阵中，`s_t1`与`s_t2`之实体编号均为`1`，`s_t3`与`s_t4`之实体编号均为`2`。
     state_relation_entities_adjacent_matrix: list
 
     ## 更新状态函数集合列表`update_state_functions_list`
@@ -70,8 +75,17 @@ class BankState:
     ## 更新状态函数邻接字典`update_state_functions_adjacent_dicts`
     update_state_functions_adjacent_dicts: dict
 
+    ## 更新汇状态函数集合列表`update_target_state_functions_list`
+    update_target_state_functions_list: list
+
+    ## 更新汇状态函数字典`update_target_state_functions_dicts`
+    update_target_state_functions_dicts: dict
+
     ## 更新状态关系函数邻接矩阵`update_state_functions_adjacent_matrix`
     update_state_functions_adjacent_matrix: np.array
+
+    ## 更新汇状态关系函数邻接矩阵`update_target_state_functions_adjacent_matrix`
+    update_target_state_functions_adjacent_matrix: np.array
 
     ## 状态关系索引表`states_relations_indices_table`
     states_relations_indices_table: list
@@ -120,7 +134,7 @@ class BankState:
 
         cls.num_states = len(cls.states_list)
 
-        ## 设置状态集合数据列表`state_data_list`#HACK暂时不引入bank、interbank
+        ## 设置状态集合数据列表`state_data_list` # BUG提前赋值会不会导致后续的bank变量不会更新？下同。#HACK暂时不引入bank、interbank
         cls.state_data_list = [
             cls.bank.on,
             cls.bank.hel,
@@ -132,12 +146,12 @@ class BankState:
 
         ## 计算状态函数集合列表`calc_state_functions_list`
         cls.calc_state_functions_list = [
-            cls.calc_isOn,
+            cls.calc_state_on,
             cls.calc_isHealthy,
-            cls.calc_isInsolvent,
-            cls.calc_isIlliquid,
-            cls.calc_isBankrupt,
-            cls.calc_isOff
+            cls.calc_state_insolvent,
+            cls.calc_state_illiquid,
+            cls.calc_state_bankrupt,
+            cls.calc_state_off
         ]
 
         ## 是否改变状态矩阵`is_states_changed_matrix`
@@ -149,7 +163,7 @@ class BankState:
         ## 构建状态数据列表字典`state_data_dicts` #HACK暂时不引入bank、interbank
         cls.state_data_dicts = dict(zip(cls.states_list, cls.state_data_list))
 
-        # ## 构建交互状态数据列表字典`interstate_data_dicts`
+        # ## 构建交互状态数据列表字典`interstate_data_dicts` #HACK可能不需要
         # # cls.interstate_data_dicts = cls.state_data_dicts & cls.state_data_dicts.T
         # cls.interstate_data_dicts = dict(zip((cls.states_list & cls.states_list.T), (cls.state_data_list & cls.states_list.T)))
 
@@ -164,8 +178,8 @@ class BankState:
         ## 包含关系，标记【母】
         ## 被包含关系，标记【子】；
         ## 互相排斥关系，标记【非】；
-        ## 全部的相关的源状态全部都是假，汇状态才是真。先非运算，再与运算关系，标记【非与】；
         ## 其它可以推导关系，标记【推】；
+        ## 全部的相关的源状态全部都是假，汇状态才是真。先非运算，再与运算关系，标记【非与】；
         cls.state_relations_list = [  # NOW
             '同',
             '手',
@@ -173,8 +187,8 @@ class BankState:
             '疑',
             '母',
             '子',
+            '斥',
             '非',
-            '非与',
             '推',
         ]
 
@@ -192,29 +206,58 @@ class BankState:
 
         ## 设置更新状态函数集合列表`update_state_functions_list`
         cls.update_state_functions_list = [
-            cls.update_if_equity,
-            cls.update_if_handle,
-            cls.update_if_none,
-            cls.update_if_uncertain,
-            cls.update_if_parent,
-            cls.update_if_child,
-            cls.update_if_nand,
+            cls.update_state_if_equity,
+            cls.update_state_if_handle,
+            cls.update_state_if_none,
+            cls.update_state_if_uncertain,
+            cls.update_state_if_parent,
+            cls.update_state_if_child,
+            cls.update_state_if_exclusive,
+            cls.update_state_if_nand,
+            cls.update_state_if_drive,
         ]
 
         ## 构建更新状态函数字典集`update_state_functions_dicts`
         cls.update_state_functions_dicts = dict(zip(cls.state_relations_list, cls.update_state_functions_list))
 
-        ## 设置状态关系邻接矩阵`state_relations_adjacent_matrix`
-        cls.state_relations_adjacent_matrix = [
-            ['同', '母', '母', '母', '母', '非', ],
-            ['子', '同', '疑', '疑', '无', '无', ],
-            ['子', '非与', '同', '无', '手', '无', ],
-            ['子', '非与', '无', '同', '手', '无', ],
-            ['子', '无', '疑', '疑', '同', '手', ],
-            ['非', '无', '无', '无', '无', '同', ],
+        ## 设置汇状态关系集合列表`target_state_relations_list`
+        ## 不存在直接关系标记【无】；
+        ## 全部的相关的源状态全部都是假，汇状态才是真。先非运算，再与运算关系，标记【非与】；
+        cls.target_state_relations_list = [
+            '无',
+            '与',
         ]
 
-        ## 设置状态关系实体编号邻接矩阵`state_relation_entities_adjacent_matrix`
+        ## 设置更新汇状态函数集合列表`update_target_state_functions_list`
+        cls.update_target_state_functions_list = [
+            cls.update_target_state_if_none,
+            cls.update_target_state_if_nandAnd,
+        ]
+
+        ## 设置更新汇状态函数字典集`update_target_state_functions_dicts`#NOW
+        cls.update_target_state_functions_dicts = dict(zip(cls.target_state_relations_list, cls.update_target_state_functions_list))
+
+        ## 设置状态关系邻接矩阵`state_relations_adjacent_matrix`
+        cls.state_relations_adjacent_matrix = [
+            ['同', '母', '母', '母', '母', '斥', ],
+            ['子', '同', '疑', '疑', '无', '无', ],
+            ['子', '非', '同', '无', '手', '无', ],
+            ['子', '非', '无', '同', '手', '无', ],
+            ['子', '无', '疑', '疑', '同', '手', ],
+            ['斥', '无', '无', '无', '无', '同', ],
+        ]
+
+        ## 设置汇状态关系列表`target_state_relations_list`
+        cls.target_state_relations_list = [
+            ['无', '无', '无', '无', '无', '无', ],
+            ['无', '无', '无', '无', '无', '无', ],
+            ['无', '与', '无', '无', '无', '无', ],
+            ['无', '与', '无', '无', '无', '无', ],
+            ['无', '无', '无', '无', '无', '无', ],
+            ['无', '无', '无', '无', '无', '无', ],
+        ]
+
+        ## 设置状态关系实体编号邻接矩阵`state_relation_entities_adjacent_matrix` #HACK 目前暂时用不到
         cls.state_relation_entities_adjacent_matrix = [
             [0, 0, 0, 0, 0, 0, ],
             [0, 0, 0, 0, 0, 0, ],
@@ -224,16 +267,21 @@ class BankState:
             [0, 0, 0, 0, 0, 0, ],
         ]
 
-        ## 根据`state_relations_adjacent_matrix`构建更新状态函数邻接字典`update_state_functions_adjacent_dicts`。该数据顶层是字典数组，每个键是状态名，每个值是一个数组，其是该状态对应的状态关系邻接矩阵之一行之状态关系名对应的更新函数。
+        ## 根据`state_relations_adjacent_matrix`构建更新状态函数邻接字典`update_state_functions_adjacent_dicts`。该数据顶层是字典数组，每个键是状态名，每个值是一个数组，其是该状态对应的状态关系邻接矩阵之一行之状态关系名对应的更新函数。 #HACK 暂时没有被用到
         cls.update_state_functions_adjacent_dicts = {}
         for i, row in enumerate(cls.state_relations_adjacent_matrix):
             cls.update_state_functions_adjacent_dicts.update({cls.states_list[i]: np.array([cls.update_state_functions_dicts[j] for j in row])})
 
-        ## 根据`state_relations_adjacent_matrix`构建更新状态关系函数邻接矩阵`update_state_functions_adjacent_matrix`。矩阵每个元素是一个更新状态函数，对应状态关系邻接矩阵之元素之状态关系名。
+        ## 根据`state_relations_adjacent_matrix`构建更新状态关系函数邻接矩阵`update_state_functions_adjacent_matrix`。矩阵每个元素是一个更新状态函数，对应状态关系邻接矩阵`state_relations_adjacent_matrix`之元素之状态关系名。。
         cls.update_state_functions_adjacent_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
         for i, row in enumerate(cls.state_relations_adjacent_matrix):
             for j, col in enumerate(row):
                 cls.update_state_functions_adjacent_matrix[i, j] = cls.update_state_functions_dicts[col]
+
+        ## 根据`target_state_relation_list`构建更新汇状态关系函数数组`update_target_state_functions_adjacent_matrix`。数组每个元素是一个更新汇状态函数，对应汇状态关系列表`target_state_relations_list`之元素之状态关系名。
+        cls.update_target_state_functions_adjacent_matrix = np.array(cls.num_states, dtype=object)
+        for i, col in enumerate(cls.target_state_relations_list):
+            cls.update_target_state_functions_adjacent_matrix[i] = cls.update_state_functions_dicts[col]
 
         # ## 构建源、汇交互状态网格矩阵（笛卡尔积矩阵）`source_inter_states_grid_matrix`、`target_inter_states_grid_matrix`#HACK暂时不需要
         # cls.source_inter_states_grid_matrix, cls.target_inter_states_grid_matrix = np.meshgrid(cls.inter_states_list, cls.inter_states_list)
@@ -315,7 +363,7 @@ class BankState:
     #     pass  # def
 
     @classmethod
-    def calc_isOn(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_state_on(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行存在的。"""  # TODO
         condition = (bank.hel | bank.isv | bank.ilq | bank.br)
         source_state_changes = (bank.on != condition)
@@ -341,7 +389,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isInsolvent(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_state_insolvent(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行资不抵债的。"""
         condition = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
         source_state_changes = (bank.isv != condition)
@@ -355,7 +403,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isIlliquid(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_state_illiquid(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行流动性短缺的。"""
         condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
         source_state_changes = (bank.ilq != condition)
@@ -369,7 +417,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isBankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_state_bankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行破产的。"""
         condition = (bank.isv | bank.ilq)  # TODO 这个仅仅是目前基准算法简化的做法
         source_state_changes = (bank.br != condition)
@@ -383,7 +431,7 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isOff(cls, bank: BankCommercial, interbank: BankInterbank):
+    def calc_state_off(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行退出的。"""
         condition = bank.br | bank.off
         source_state_changes = (bank.off != condition)
@@ -448,21 +496,6 @@ class BankState:
         bank.is_enabled_LiP = (bank.is_needed_LiP)  # HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
-    @classmethod
-    def update_target_states(cls, param, param1, param2):  # NOW
-        """
-        更新各汇状态
-
-        Args:
-            param ():
-            param1 ():
-            param2 ():
-
-        Returns:
-
-        """
-        pass
-
     # @classmethod
     # def update_states(cls): # TODO 无用可删除
     #     """
@@ -503,7 +536,7 @@ class BankState:
     #     pass  # def
 
     @classmethod
-    def update_if_equity(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_state_if_equity(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
         当关系是【同】的时候，更新
 
@@ -526,7 +559,7 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_if_handle(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_state_if_handle(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
         当关系是【手】的时候，更新
 
@@ -549,7 +582,7 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_if_none(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_state_if_none(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
         当关系是【无】的时候，更新
 
@@ -572,7 +605,7 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_if_uncertain(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_state_if_uncertain(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
         当关系是【疑】的时候，更新
 
@@ -595,7 +628,7 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_if_parent(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_state_if_parent(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
         当关系是【母】的时候，更新
 
@@ -618,7 +651,7 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_if_child(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_state_if_child(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
         当关系是【子】的时候，更新
 
@@ -651,7 +684,7 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_if_nand(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_state_if_exclusive(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
         当关系是【非】的时候，更新
 
@@ -676,7 +709,7 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_if_nandAnd(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_state_if_nand(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
         当关系是【非与】的时候，更新
 
@@ -697,6 +730,78 @@ class BankState:
         if is_changed_state:
             target_state[source_state_changes] = ~source_state[source_state_changes]
             target_interstate = (target_state & target_state.T)
+        return target_state, target_interstate, is_changed_state
+        pass  # def
+
+    @classmethod
+    def update_state_if_drive(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+        """
+        当关系是【推】的时候，更新
+
+        Args:
+            source_state (StateType): 源状态
+            source_interstate (StateType & StateType.T): 源交互状态
+            source_state_changes (StateType): 源状态的变动示性向量
+            target_state (StateType): 目标状态
+
+        Returns:
+            target_state (StateType): 计算后的目标状态
+            target_interstate (StateType): 计算后的目标状态之银行间关系
+            is_changed_state (bool): 是否有更新状态
+
+        """
+
+        target_state = source_state
+        target_interstate = source_interstate
+        is_changed_state = False
+        return target_state, target_interstate, is_changed_state
+        pass  # def
+
+    @classmethod
+    def update_target_state_if_none(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):  # NOW
+        """
+        当关系是【无】的时候，更新
+
+        Args:
+            source_state (StateType): 源状态
+            source_interstate (StateType & StateType.T): 源交互状态
+            source_state_changes (StateType): 源状态的变动示性向量
+            target_state (StateType): 目标状态
+
+        Returns:
+            target_state (StateType): 计算后的目标状态
+            target_interstate (StateType): 计算后的目标状态之银行间关系
+            is_changed_state (bool): 是否有更新状态
+
+        """
+
+        target_state = source_state
+        target_interstate = source_interstate
+        is_changed_state = False
+        return target_state, target_interstate, is_changed_state
+        pass  # def
+
+    @classmethod
+    def update_target_state_if_and(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):  # NOW
+        """
+        当关系是【与】的时候，更新
+
+        Args:
+            source_state (StateType): 源状态
+            source_interstate (StateType & StateType.T): 源交互状态
+            source_state_changes (StateType): 源状态的变动示性向量
+            target_state (StateType): 目标状态
+
+        Returns:
+            target_state (StateType): 计算后的目标状态
+            target_interstate (StateType): 计算后的目标状态之银行间关系
+            is_changed_state (bool): 是否有更新状态
+
+        """
+
+        target_state = source_state
+        target_interstate = source_interstate
+        is_changed_state = False
         return target_state, target_interstate, is_changed_state
         pass  # def
 
@@ -827,7 +932,7 @@ class BankState:
 
             ## 根据汇状态数据矩阵，和相应的状态关系，进一步运算累加所有汇状态数据矩阵、汇交互状态数据矩阵，得到各汇状态数据数组，以反映状态更新情况 #NOW
             for j in range(cls.num_states):
-                cls.target_states_data_array, cls.target_interstates_data_array[i][j], is_states_changed_array = cls.update_target_states(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
+                cls.target_states_data_array, cls.target_interstates_data_array[i][j], is_states_changed_array = cls.update_target_state_functions_adjacent_matrix(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
 
             # cls.target_states_data_array, cls.target_interstates_data_array[i][j], is_states_changed_array = cls.update_target_states(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
 
