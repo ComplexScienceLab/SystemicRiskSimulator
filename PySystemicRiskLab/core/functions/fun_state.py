@@ -174,7 +174,7 @@ class BankState:
             '母',
             '子',
             '非',
-            '非与'
+            '非与',
             '推',
         ]
 
@@ -198,7 +198,7 @@ class BankState:
             cls.update_if_uncertain,
             cls.update_if_parent,
             cls.update_if_child,
-            cls.update_if_exclusive,
+            cls.update_if_nand,
         ]
 
         ## 构建更新状态函数字典集`update_state_functions_dicts`
@@ -651,9 +651,34 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_if_exclusive(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_if_nand(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
         当关系是【非】的时候，更新
+
+        Args:
+            source_state (StateType): 源状态
+            source_interstate (StateType & StateType.T): 源交互状态
+            source_state_changes (StateType): 源状态的变动示性向量
+            target_state (StateType): 目标状态
+
+        Returns:
+            target_state (StateType): 计算后的目标状态
+            target_interstate (StateType): 计算后的目标状态之银行间关系
+            is_changed_state (bool): 是否有更新状态
+
+        """
+        # target_state= (~target_state & source_state_changes) | (target_state & ~source_state_changes)  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        is_changed_state = (target_state[source_state_changes] != ~source_state[source_state_changes]).any()
+        if is_changed_state:
+            target_state[source_state_changes] = ~source_state[source_state_changes]
+            target_interstate = (target_state & target_state.T)
+        return target_state, target_interstate, is_changed_state
+        pass  # def
+
+    @classmethod
+    def update_if_nandAnd(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+        """
+        当关系是【非与】的时候，更新
 
         Args:
             source_state (StateType): 源状态
