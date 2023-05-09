@@ -13,6 +13,9 @@ class BankState:
     bank: BankCommercial
     interbank: BankInterbank
 
+    ## 状态数量`num_states`
+    num_states: int
+
     ## 是否变动状态列表`is_states_changed_array`
     is_states_changed_array: np.array
 
@@ -53,7 +56,10 @@ class BankState:
     state_relations_list: list
 
     ## 状态关系邻接矩阵`state_relations_adjacent_matrix`
-    state_relations_adjacent_matrix: np.array
+    state_relations_adjacent_matrix: list
+
+    ## 状态关系实体编号邻接矩阵`state_relation_entities_adjacent_matrix`
+    state_relation_entities_adjacent_matrix: list
 
     ## 更新状态函数集合列表`update_state_functions_list`
     update_state_functions_list: list
@@ -70,10 +76,28 @@ class BankState:
     ## 状态关系索引表`states_relations_indices_table`
     states_relations_indices_table: list
 
+    ## 汇交互状态数据数组`target_interstates_data_array`
+    target_interstates_data_array: np.array
+
+    ## 源交互状态数据数组`source_interstates_data_array`
+    source_interstates_data_matrix: np.array
+
+    ## 源状态变动矩阵`source_states_changes_matrix`
+    source_states_changes_matrix: np.array
+
+    ## 源状态数据矩阵`source_states_data_matrix`
+    source_states_data_matrix: np.array
+
+    ## 汇状态数据矩阵`target_states_data_matrix`
+    target_states_data_matrix: np.array
+
+    ## 汇交互状态数据矩阵`target_interstates_data_matrix`
+    target_interstates_data_matrix: np.array
+
     @classmethod
     def build_state_const_variables(cls, bank: BankCommercial, interbank: BankInterbank):
         """
-        构建各类状态常量变量。
+        构建各类状态常量变量。#TODO
         Returns:
 
         """
@@ -81,8 +105,8 @@ class BankState:
         cls.bank = bank  # BUG提前赋值会不会导致后续的bank变量不会更新？下同。
         cls.interbank = interbank
 
-        # ## 示性向量之各状态是否已经更新 #TODO无用
-        # cls.is_states_changed_array = np.full((len(cls.states_list), 1), False)
+        ## 示性向量之各状态是否已经更新 #HACK 这个实际上是重复的
+        cls.is_states_changed_array = np.full((cls.num_states, 1), False)
 
         ## 设置状态集合列表`states_list`
         cls.states_list = [
@@ -93,6 +117,8 @@ class BankState:
             'bankrupt',
             'off',
         ]
+
+        cls.num_states = len(cls.states_list)
 
         ## 设置状态集合数据列表`state_data_list`#HACK暂时不引入bank、interbank
         cls.state_data_list = [
@@ -115,7 +141,7 @@ class BankState:
         ]
 
         ## 是否改变状态矩阵`is_states_changed_matrix`
-        cls.is_states_changed_matrix = np.full((len(cls.states_list), len(cls.states_list)), False)
+        cls.is_states_changed_matrix = np.full((cls.num_states, cls.num_states), False)
 
         ## 计算状态函数集合字典集`calc_state_functions_dicts`
         cls.calc_state_functions_dicts = dict(zip(cls.states_list, cls.calc_state_functions_list))
@@ -134,32 +160,26 @@ class BankState:
         ## 同一种状态标记【同】；
         ## 手动更新标记【手】；
         ## 不存在直接关系标记【无】；
-        ## 非确定的关系标记【惑】；
-        ## 父子关系，分别标记【父】、【子】；
-        ## 互相排斥关系，标记【斥】；
+        ## 非确定的关系标记【疑】；
+        ## 包含关系，标记【母】
+        ## 被包含关系，标记【子】；
+        ## 互相排斥关系，标记【非】；
+        ## 全部的相关的源状态全部都是假，汇状态才是真。先非运算，再与运算关系，标记【非与】；
         ## 其它可以推导关系，标记【推】；
-        cls.state_relations_list = [
+        cls.state_relations_list = [  # NOW
             '同',
             '手',
             '无',
-            '惑',
-            '父',
+            '疑',
+            '母',
             '子',
-            '斥',
+            '非',
+            '非与'
+            '推',
         ]
 
         ## 设置目标交互状态网格矩阵`target_interstates_grid_matrix`
-        cls.target_interstates_grid_matrix = np.empty((len(cls.states_list), len(cls.states_list)), dtype=object)
-
-        ## 设置状态关系邻接矩阵`state_relations_adjacent_matrix`
-        cls.state_relations_adjacent_matrix = [
-            ['同', '父', '父', '父', '父', '无', ],
-            ['子', '同', '惑', '惑', '无', '无', ],
-            ['子', '斥', '同', '无', '手', '无', ],
-            ['子', '斥', '无', '同', '手', '无', ],
-            ['子', '无', '惑', '惑', '同', '手', ],
-            ['无', '无', '无', '无', '斥', '同', ],
-        ]
+        cls.target_interstates_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
 
         ## 分别构建源、汇状态网格矩阵（笛卡尔积矩阵）`state_grid_matrix`
         cls.target_states_grid_matrix, cls.source_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list)
@@ -184,39 +204,46 @@ class BankState:
         ## 构建更新状态函数字典集`update_state_functions_dicts`
         cls.update_state_functions_dicts = dict(zip(cls.state_relations_list, cls.update_state_functions_list))
 
+        ## 设置状态关系邻接矩阵`state_relations_adjacent_matrix`
+        cls.state_relations_adjacent_matrix = [
+            ['同', '母', '母', '母', '母', '非', ],
+            ['子', '同', '疑', '疑', '无', '无', ],
+            ['子', '非与', '同', '无', '手', '无', ],
+            ['子', '非与', '无', '同', '手', '无', ],
+            ['子', '无', '疑', '疑', '同', '手', ],
+            ['非', '无', '无', '无', '无', '同', ],
+        ]
+
+        ## 设置状态关系实体编号邻接矩阵`state_relation_entities_adjacent_matrix`
+        cls.state_relation_entities_adjacent_matrix = [
+            [0, 0, 0, 0, 0, 0, ],
+            [0, 0, 0, 0, 0, 0, ],
+            [0, 1, 0, 0, 0, 0, ],
+            [0, 1, 0, 0, 0, 0, ],
+            [0, 0, 0, 0, 0, 0, ],
+            [0, 0, 0, 0, 0, 0, ],
+        ]
+
         ## 根据`state_relations_adjacent_matrix`构建更新状态函数邻接字典`update_state_functions_adjacent_dicts`。该数据顶层是字典数组，每个键是状态名，每个值是一个数组，其是该状态对应的状态关系邻接矩阵之一行之状态关系名对应的更新函数。
         cls.update_state_functions_adjacent_dicts = {}
         for i, row in enumerate(cls.state_relations_adjacent_matrix):
             cls.update_state_functions_adjacent_dicts.update({cls.states_list[i]: np.array([cls.update_state_functions_dicts[j] for j in row])})
 
         ## 根据`state_relations_adjacent_matrix`构建更新状态关系函数邻接矩阵`update_state_functions_adjacent_matrix`。矩阵每个元素是一个更新状态函数，对应状态关系邻接矩阵之元素之状态关系名。
-        cls.update_state_functions_adjacent_matrix = np.empty((len(cls.states_list), len(cls.states_list)), dtype=object)
+        cls.update_state_functions_adjacent_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
         for i, row in enumerate(cls.state_relations_adjacent_matrix):
             for j, col in enumerate(row):
                 cls.update_state_functions_adjacent_matrix[i, j] = cls.update_state_functions_dicts[col]
 
         # ## 构建源、汇交互状态网格矩阵（笛卡尔积矩阵）`source_inter_states_grid_matrix`、`target_inter_states_grid_matrix`#HACK暂时不需要
         # cls.source_inter_states_grid_matrix, cls.target_inter_states_grid_matrix = np.meshgrid(cls.inter_states_list, cls.inter_states_list)
+
         pass  # def
 
     @classmethod
     def get_relation_of_states(cls, source_state: StateType, target_state: StateType, mode: str = 'all'):  # HACK暂时用不到
         """
         获取两个状态之间的关系。
-
-        同一种状态标记【同】；
-
-        手动更新标记【手】；
-
-        不存在直接关系标记【无】；
-
-        非确定的关系标记【惑】；
-
-        父子关系，分别标记【父】、【子】；
-
-        互相排斥关系，标记【斥】；
-
-        其它可以推导关系，标记【推】；
 
         Args:
             source_state (StateType): 源状态
@@ -421,6 +448,21 @@ class BankState:
         bank.is_enabled_LiP = (bank.is_needed_LiP)  # HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
+    @classmethod
+    def update_target_states(cls, param, param1, param2):  # NOW
+        """
+        更新各汇状态
+
+        Args:
+            param ():
+            param1 ():
+            param2 ():
+
+        Returns:
+
+        """
+        pass
+
     # @classmethod
     # def update_states(cls): # TODO 无用可删除
     #     """
@@ -436,8 +478,8 @@ class BankState:
     #     # results_1 = np.zeros((3, 3, 3, 3))
     #     # results_2 = np.full((3, 3), '')
     #
-    #     for i in range(len(cls.states_list)):
-    #         for j in range(len(cls.states_list)):
+    #     for i in range(cls.num_states):
+    #         for j in range(cls.num_states):
     #             cls.target_states_grid_matrix[i][j], cls.target_interstates_grid_matrix[i][j], cls.is_states_changed_matrix[i][j] = cls.update_state_functions_adjacent_matrix[i][j](cls.source_states_grid_matrix[i][j], cls.target_states_grid_matrix[i][j])
     #
     #     is_states_changed_array = cls.is_states_changed_matrix.any(axis=0)
@@ -477,7 +519,10 @@ class BankState:
             is_changed_state (bool): 是否有更新状态
 
         """
-        return source_state, source_interstate, False
+        target_state = source_state
+        target_interstate = source_interstate
+        is_changed_state = False
+        return target_state, target_interstate, is_changed_state
         pass  # def
 
     @classmethod
@@ -497,7 +542,10 @@ class BankState:
             is_changed_state (bool): 是否有更新状态
 
         """
-        return source_state, source_interstate, False
+        target_state = source_state
+        target_interstate = source_interstate
+        is_changed_state = False
+        return target_state, target_interstate, is_changed_state
         pass  # def
 
     @classmethod
@@ -517,13 +565,16 @@ class BankState:
             is_changed_state (bool): 是否有更新状态
 
         """
-        return source_state, source_interstate, False
+        target_state = source_state
+        target_interstate = source_interstate
+        is_changed_state = False
+        return target_state, target_interstate, is_changed_state
         pass  # def
 
     @classmethod
     def update_if_uncertain(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
-        当关系是【惑】的时候，更新
+        当关系是【疑】的时候，更新
 
         Args:
             source_state (StateType): 源状态
@@ -537,13 +588,16 @@ class BankState:
             is_changed_state (bool): 是否有更新状态
 
         """
-        return source_state, source_interstate, False
+        target_state = source_state
+        target_interstate = source_interstate
+        is_changed_state = False
+        return target_state, target_interstate, is_changed_state
         pass  # def
 
     @classmethod
     def update_if_parent(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
-        当关系是【父】的时候，更新
+        当关系是【母】的时候，更新
 
         Args:
             source_state (StateType): 源状态
@@ -557,7 +611,10 @@ class BankState:
             is_changed_state (bool): 是否有更新状态
 
         """
-        return source_state, source_interstate, False
+        target_state = source_state
+        target_interstate = source_interstate
+        is_changed_state = False
+        return target_state, target_interstate, is_changed_state
         pass  # def
 
     @classmethod
@@ -577,18 +634,26 @@ class BankState:
             is_changed_state (bool): 是否有更新状态
 
         """
-        # target_state= (~target_state & source_state_changes) | (target_state & ~source_state_changes)  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
-        is_changed_state = (target_state[source_state_changes] != source_state[source_state_changes]).any()
-        if is_changed_state:
-            target_state[source_state_changes] = source_state[source_state_changes]
-            target_interstate = (target_state & target_state.T)
+
+        ## NOTE：本项目不考虑【子】状态更新，以下代码段不需要用到
+        # # target_state= (~target_state & source_state_changes) | (target_state & ~source_state_changes)  # NOTE和下面一行的语句实现结果是等价的，但是运算速度可能慢一点
+        # is_changed_state = (target_state[source_state_changes] != source_state[source_state_changes]).any()
+        # if is_changed_state:
+        #     target_state[source_state_changes] = source_state[source_state_changes]
+        #     target_interstate = (target_state & target_state.T)
+        # return target_state, target_interstate, is_changed_state
+
+        target_state = source_state
+        target_interstate = source_interstate
+        is_changed_state = False
         return target_state, target_interstate, is_changed_state
+
         pass  # def
 
     @classmethod
     def update_if_exclusive(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
         """
-        当关系是【斥】的时候，更新
+        当关系是【非】的时候，更新
 
         Args:
             source_state (StateType): 源状态
@@ -701,7 +766,7 @@ class BankState:
         cls.interbank = interbank
 
         ## 1. 指定而计算源状态；
-        cls.is_states_changed_array = np.full((len(cls.states_list), 1), False)
+        cls.is_states_changed_array = np.full((cls.num_states, 1), False)
 
         if way == 'any':
             for i, calc_state_function in enumerate(cls.calc_state_functions_list):
@@ -730,11 +795,18 @@ class BankState:
             #     states_changes = cls.update_state(states_relations)
             #     cls.is_states_changed_array[np.where(way == cls.states_list)] = states_changes[i].any()  # 记录是否有状态更新
 
-            ## 根据需要更新的状态，更新相应的汇状态
-            for i in range(len(cls.states_list)):
-                for j in range(len(cls.states_list)):
-                    cls.state_data_dicts[cls.target_states_grid_matrix[i][j]], cls.interstate_data_dicts[cls.target_interstates_grid_matrix[i][j]], cls.is_states_changed_matrix[i][j] = cls.update_state_functions_adjacent_matrix[i][j](cls.state_data_dicts[cls.source_states_grid_matrix[i][j]], cls.state_data_dicts[cls.target_states_grid_matrix[i][j]])
+            ## 根据需要更新的状态，更新相应的汇状态数据矩阵
+            for i in range(cls.num_states):
+                for j in range(cls.num_states):
+                    cls.target_states_data_matrix[i][j], cls.is_states_changed_matrix[i][j] = cls.update_state_functions_adjacent_matrix[i][j](cls.source_states_data_matrix[i][j], cls.source_states_changes_matrix[i][j], cls.source_interstates_data_matrix[i][j], cls.target_states_data_matrix[i][j])
 
+            ## 根据汇状态数据矩阵，和相应的状态关系，进一步运算累加所有汇状态数据矩阵、汇交互状态数据矩阵，得到各汇状态数据数组，以反映状态更新情况 #NOW
+            for j in range(cls.num_states):
+                cls.target_states_data_array, cls.target_interstates_data_array[i][j], is_states_changed_array = cls.update_target_states(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
+
+            # cls.target_states_data_array, cls.target_interstates_data_array[i][j], is_states_changed_array = cls.update_target_states(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
+
+            ## 记录是否有状态更新
             cls.is_states_changed_array = cls.is_states_changed_matrix.any(axis=0)
 
             pass  # while
@@ -742,217 +814,5 @@ class BankState:
         ## 更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。
         cls.update_all_cre_and_deb()
         pass  # def
-
-        # if target == 'any':  # FIXME 这个可能有缺陷:
-        #     if source == 'any':
-        #         cls.init_list_of_relation_in_state_of_banks(bank, interbank)
-        #         _ = cls.calc_isInsolvent(bank, interbank)
-        #         _ = cls.calc_isIlliquid(bank, interbank)
-        #         _ = cls.calc_isHealthy(bank, interbank)
-        #         _ = cls.calc_isBankrupt(bank, interbank)
-        #         cls.together_isOn(bank, interbank)
-        #         # calc_isOff(bank, interbank) # TODO后续添加
-        #         # calc_isOn(bank, interbank) # TODO后续添加
-        #     elif source == 'healthy':
-        #         hel_changes = cls.calc_isHealthy(bank, interbank)
-        #         _ = cls.calc_isInsolvent(bank, interbank)
-        #         _ = cls.calc_isIlliquid(bank, interbank)
-        #         cls.update_state_to_target_from_source(bank.hel, interbank.hel, isv_changes)
-        #         ilq_changes = cls.calc_isIlliquid(bank, interbank)
-        #         cls.update_state_to_target_from_source(bank.hel, interbank.hel, ilq_changes)
-        #     elif source == 'insolvent':
-        #         isv_changes = cls.calc_isInsolvent(bank, interbank)
-        #         cls.update_state_to_target_from_source(bank.hel, interbank.hel, isv_changes)
-        #         # br_changes = cls.calc_isBankrupt(bank, interbank)
-        #     elif source == 'illiquid':
-        #         ilq_changes = cls.calc_isIlliquid(bank, interbank)
-        #         cls.update_state_to_target_from_source(bank.hel, interbank.hel, ilq_changes)
-        #         # br_changes = cls.calc_isBankrupt(bank, interbank)
-        #     elif source == 'bankrupt':
-        #         cls.calc_isBankrupt(bank, interbank)
-        #         # HACK是否需要加入破产到退出呢？
-        #     elif source == 'off':
-        #         off_changes = cls.calc_isOff(bank, interbank)
-        #         cls.update_state_to_target_from_source(bank.br, interbank.br, off_changes)
-        #         cls.together_isOn(bank, interbank)
-        #         pass
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'healthy':
-        #     if source == 'any':
-        #         hel_changes = cls.calc_isHealthy(bank, interbank)
-        #         cls.update_isInsolvent_from_isHealthy(bank, interbank)
-        #         cls.update_isIlliquid_from_isHealthy(bank, interbank)
-        #     elif source == 'healthy':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'insolvent':
-        #         cls.calc_isHealthy_from_isInsolvent(bank, interbank)
-        #         cls.calc_isInsolvent_from_isHealthy(bank, interbank)
-        #     elif source == 'illiquid':
-        #         cls.calc_isHealthy_from_isIlliquid(bank, interbank)
-        #         cls.update_isIlliquid_from_isHealthy(bank, interbank)
-        #     elif source == 'bankrupt':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'off':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'insolvent':
-        #     if source == 'any':
-        #         cls.calc_isInsolvent(bank, interbank)
-        #         cls.update_isHealthy_from_isInsolvent(bank, interbank)
-        #     elif source == 'healthy':
-        #         cls.calc_isInsolvent_from_isHealthy(bank, interbank)
-        #         cls.update_isHealthy_from_isInsolvent(bank, interbank)
-        #     elif source == 'insolvent':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'illiquid':
-        #         # calc_isIlliquid_from_isHealthy(bank, interbank) #FIXME 错误，可以删除！
-        #         pass
-        #         # calc_isHealthy_from_isIlliquid(bank, interbank) #FIXME 错误，可以删除！
-        #         # calc_isHealthy_from_isInsolvent(bank, interbank) #FIXME 错误，可以删除！
-        #         # calc_isInsolvent_from_isHealthy(bank, interbank) #FIXME 错误，可以删除！
-        #         # @testprintln "无须更新！"
-        #     elif source == 'bankrupt':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'off':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'illiquid':
-        #     if source == 'any':
-        #         cls.calc_isIlliquid(bank, interbank)
-        #         cls.update_isHealthy_from_isIlliquid(bank, interbank)
-        #     elif source == 'healthy':
-        #         cls.calc_isIlliquid_from_isHealthy(bank, interbank)
-        #         cls.update_isHealthy_from_isIlliquid(bank, interbank)
-        #     elif source == 'insolvent':
-        #         # calc_isHealthy_from_isInsolvent(bank, interbank) #FIXME 错误，可以删除！
-        #         # update_isInsolvent_from_isHealthy(bank, interbank) #FIXME 错误，可以删除！
-        #         # update_isIlliquid_from_isHealthy(bank, interbank) #FIXME 错误，可以删除！
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'illiquid':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'bankrupt':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'off':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'bankrupt':
-        #     if source == 'any':
-        #         cls.calc_isBankrupt(bank, interbank)
-        #     elif source == 'healthy':
-        #         cls.calc_isInsolvent_from_isHealthy(bank, interbank)
-        #         cls.update_isHealthy_from_isInsolvent(bank, interbank)
-        #         cls.calc_isIlliquid(bank, interbank)
-        #         cls.update_isHealthy_from_isIlliquid(bank, interbank)
-        #         cls.calc_isBankrupt_from_isInsolvent(bank, interbank)
-        #         cls.calc_isBankrupt_from_isIlliquid(bank, interbank)
-        #     elif source == 'insolvent':
-        #         cls.calc_isBankrupt_from_isInsolvent(bank, interbank)
-        #     elif source == 'illiquid':
-        #         cls.calc_isBankrupt_from_isIlliquid(bank, interbank)
-        #     elif source == 'bankrupt':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'off':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'off':
-        #     if source == 'any':
-        #         cls.calc_isOff(bank, interbank)
-        #         cls.update_isOn_from_isOff(bank, interbank)
-        #     elif source == 'healthy':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'insolvent':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'illiquid':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     elif source == 'bankrupt':
-        #         cls.calc_isOff_from_isBankrupt(bank, interbank)
-        #         cls.update_isOn_from_isOff(bank, interbank)
-        #         cls.update_isBankrupt_from_isOff(bank, interbank)
-        #         interbank.cre = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="creditor")
-        #         interbank.deb = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="debtor")
-        #     elif source == 'off':
-        #         # @testprintln "无须更新！"
-        #         pass
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'on':
-        #     if source == 'any':
-        #         cls.together_isOn(bank, interbank)
-        #         cls.update_isOff_from_isOn(bank, interbank)
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'needed repay IB':
-        #     if source == 'any':
-        #         cls.calc_isNeededBoIB(bank, interbank)
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'enabled repay IB':
-        #     if source == 'any':
-        #         cls.calc_isEnabledBoIB(bank, interbank)
-        #     elif source == 'needed repay IB':
-        #         cls.calc_isEnabledBoIB_from_isNeededBoIB(bank, interbank)
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'needed repay Z_D':
-        #     if source == 'any':
-        #         cls.calc_isNeededBoD(bank, interbank)
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'enabled repay Z_D':
-        #     if source == 'any':
-        #         cls.calc_isEnabledBoD(bank, interbank)
-        #     elif source == 'needed repay Z_D':
-        #         cls.calc_isEnabledBoD_from_isNeededBoD(bank, interbank)
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'needed collect A_P':
-        #     if source == 'any':
-        #         cls.calc_isNeededLiP(bank, interbank)
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # elif target == 'enabled collect A_P':
-        #     if source == 'any':
-        #         cls.calc_isEnabledLiP(bank, interbank)
-        #     elif source == 'needed collect A_P':
-        #         cls.calc_isEnabledLiP_from_isNeededLiP(bank, interbank)
-        #     else:
-        #         raise Exception("关键词source取词错误".format(source))
-        #         pass
-        # else:
-        #     raise Exception("关键词target取词错误".format(target))
-        #     pass
-        # pass  # method
 
     pass  # class
