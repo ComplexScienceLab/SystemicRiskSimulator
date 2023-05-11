@@ -302,7 +302,7 @@ class BankState:
             unique_vals = np.unique(cls.state_relation_entities_adjacent_matrix[:, j])
             entity_indices = np.where(cls.state_relation_entities_adjacent_matrix[:, j] == val)[0].tolist()
             for val in unique_vals:
-                entity_indices_tuple = (val, [cls.state_relations_adjacent_matrix_02[entity_indices[0], j]],cls.update_state_functions_dicts_02[[cls.state_relations_adjacent_matrix_02[entity_indices[0], j]]], entity_indices)
+                entity_indices_tuple = (val, [cls.state_relations_adjacent_matrix_02[entity_indices[0], j]], cls.update_state_functions_dicts_02[[cls.state_relations_adjacent_matrix_02[entity_indices[0], j]]], entity_indices)
             cls.state_entity_indices_list.append(entity_indices_tuple)
 
         # ## 构建源、【汇交互状态网格矩阵】（笛卡尔积矩阵）`source_inter_states_grid_matrix`、`target_inter_states_grid_matrix`#HACK暂时不需要
@@ -933,7 +933,7 @@ class BankState:
 
             ## 根据【汇状态数据矩阵】，和相应的状态关系，进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
             for j, col in enumerate(cls.state_entity_indices_list):
-                cls.target_states_data_array[j], cls.target_interstates_data_array[j], cls.is_states_changed_array[j] = cls.update_state_functions_adjacent_matrix_02[cls.state_entity_indices_list[j][2],j](?) #NOW
+                cls.target_states_data_array[j], cls.target_interstates_data_array[j], cls.is_states_changed_array[j] = cls.update_state_functions_adjacent_matrix_02[cls.state_entity_indices_list[j][2]](cls.target_states_data_matrix[cls.state_entity_indices_list[j][3], j], cls.is_states_changed_matrix[cls.state_entity_indices_list[j][3], j])  # NOW
                 cls.target_interstates_data_array[j] = (cls.target_states_data_array[j] & cls.target_states_data_array[j].T)
 
             # for j in range(cls.num_states):
