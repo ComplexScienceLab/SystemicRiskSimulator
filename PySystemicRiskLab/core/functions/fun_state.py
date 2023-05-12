@@ -1,6 +1,6 @@
 """功能函数集：计算构建银行与银行间相关状态及其转换。"""
 
-from PySystemicRiskLab import np, copy
+from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_consts import *
 from PySystemicRiskLab.core.define.define_environmentVariables import env
@@ -16,8 +16,8 @@ class BankState:
     ## 【状态数量】`num_states`
     num_states: int
 
-    ## 【是否变动状态列表】`is_states_changed_array`
-    is_states_changed_array: np.array
+    # ## 【是否变动状态列表】`is_states_changed_array`
+    # is_states_changed_array: np.array
 
     ## 【是否变动状态矩阵】`is_states_changed_matrix`
     is_states_changed_matrix = np.array
@@ -31,14 +31,20 @@ class BankState:
     ## 【汇状态网格矩阵】（笛卡尔积矩阵）`target_states_grid_matrix`
     target_states_grid_matrix: np.array
 
-    ## 【源汇状态关系网格矩阵】`states_relations_grid_matrix`
-    states_relation_grid_matrix: np.array
+    ## 【源状态关系网格矩阵】`source_states_data_grid_matrix`
+    source_states_data_grid_matrix: np.array
+
+    ## 【汇状态关系网格矩阵】`target_states_data_grid_matrix`
+    target_states_data_grid_matrix: np.array
 
     ## 【汇交互状态网格矩阵】（笛卡尔积矩阵）`target_interstates_grid_matrix`
     target_interstates_grid_matrix = np.array
 
-    ## 【状态数据集合数组】`states_data_array`
-    states_data_array: np.array
+    ## 【状态数据集合列表】`states_data_list`
+    states_data_list: list
+
+    ## 【交互状态数据集合列表】`interstates_data_list`
+    interstates_data_list: list
 
     ## 【状态数据集合字典集】`state_data_dicts`
     state_data_dicts: dict
@@ -99,8 +105,8 @@ class BankState:
     ## 【状态关系索引表】`states_relations_indices_table`
     states_relations_indices_table: list
 
-    ## 【汇状态数据数组】`target_states_data_array`
-    target_states_data_array: np.array
+    # ## 【汇状态数据数组】`target_states_data_array`
+    # target_states_data_array: np.array
 
     ## 【汇交互状态数据数组】`target_interstates_data_array`
     target_interstates_data_array: np.array
@@ -131,8 +137,8 @@ class BankState:
         cls.bank = bank  # BUG提前赋值会不会导致后续的bank变量不会更新？下同。
         cls.interbank = interbank
 
-        ## 示性向量之各状态是否已经更新 #HACK 这个实际上是重复的
-        cls.is_states_changed_array = np.full((cls.num_states, 1), False)
+        # ## 示性向量之各状态是否已经更新
+        # cls.is_states_changed_array = np.full((cls.num_states, 1), False)
 
         ## 设置【状态集合列表】`states_list`
         cls.states_list = [
@@ -146,15 +152,25 @@ class BankState:
 
         cls.num_states = len(cls.states_list)
 
-        ## 设置状态集合数据列表`states_data_array` # BUG提前赋值会不会导致后续的bank变量不会更新？下同。#HACK暂时不引入bank、interbank
-        cls.states_data_array =np.array( [
+        ## 设置【状态集合数据列表】`states_data_list` # BUG提前赋值会不会导致后续的bank变量所指向的地址不再是一脉相承的bank呢？
+        cls.states_data_list = [
             cls.bank.on,
             cls.bank.hel,
             cls.bank.isv,
             cls.bank.ilq,
             cls.bank.br,
             cls.bank.off,
-        ])
+        ]
+
+        ## 设置【交互状态集合数据列表】`interstates_data_list`  # BUG提前赋值会不会导致后续的interbank变量所指向的地址不再是一脉相承的interbank呢？
+        cls.interstates_data_list = [
+            cls.interbank.on,
+            cls.interbank.hel,
+            cls.interbank.isv,
+            cls.interbank.ilq,
+            cls.interbank.br,
+            cls.interbank.off,
+        ]
 
         ## 【计算状态函数集合列表】`calc_state_functions_list`
         cls.calc_state_functions_list = [
@@ -173,17 +189,17 @@ class BankState:
         cls.calc_state_functions_dicts = dict(zip(cls.states_list, cls.calc_state_functions_list))
 
         ## 构建状态数据列表字典`state_data_dicts` #HACK暂时不引入bank、interbank
-        cls.state_data_dicts = dict(zip(cls.states_list, cls.states_data_array))
+        cls.state_data_dicts = dict(zip(cls.states_list, cls.states_data_list))
 
-        # ## 构建交互状态数据列表字典`interstate_data_dicts` #HACK可能不需要
-        # # cls.interstate_data_dicts = cls.state_data_dicts & cls.state_data_dicts.T
-        # cls.interstate_data_dicts = dict(zip((cls.states_list & cls.states_list.T), (cls.states_data_array & cls.states_list.T)))
+        ## 构建交互状态数据列表字典`interstate_data_dicts` #HACK可能不需要
+        # cls.interstate_data_dicts = cls.state_data_dicts & cls.state_data_dicts.T
+        cls.interstate_data_dicts = dict(zip((cls.states_list & cls.states_list.T), (cls.states_data_list & cls.states_list.T)))
 
         ## 构建【源状态网格矩阵】`source_states_grid_matrix`、【汇状态网格矩阵】（笛卡尔积矩阵）`target_states_grid_matrix`
-        cls.source_states_grid_matrix, cls.target_states_grid_matrix = np.meshgrid(cls.states_data_array, cls.states_data_array, indexing='ij')
+        cls.source_states_grid_matrix, cls.target_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list, indexing='ij')
 
-        ## 构建【源状态数据网格矩阵】`source_states_data_grid_matrix`、【汇状态数据网格矩阵】（笛卡尔积矩阵）`target_states_data_grid_matrix`
-        cls.source_states_data_grid_matrix, cls.target_states_data_grid_matrix = np.meshgrid(cls.state_data_dicts[cls.states_data_array], cls.state_data_dicts[cls.states_data_array], indexing='ij')
+        # ## 构建【源状态数据网格矩阵】`source_states_data_grid_matrix`、【汇状态数据网格矩阵】（笛卡尔积矩阵）`target_states_data_grid_matrix`
+        # cls.source_states_data_grid_matrix, cls.target_states_data_grid_matrix = np.meshgrid(cls.state_data_dicts[cls.states_data_list], cls.state_data_dicts[cls.states_data_list], indexing='ij')
 
         ## 设置【状态关系集合列表01】`state_relations_list_01`
         ## 同一种状态标记【同】；
@@ -210,7 +226,7 @@ class BankState:
         cls.target_interstates_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
 
         ## 分别构建【源状态网格矩阵】、【汇状态网格矩阵】（笛卡尔积矩阵）`state_grid_matrix`
-        cls.source_states_grid_matrix ,cls.target_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list,indexing='ij')
+        cls.source_states_grid_matrix, cls.target_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list, indexing='ij')
 
         ## 构建【源汇状态关系网格矩阵】`states_relations_grid_matrix`
         cls.states_relation_grid_matrix = np.stack((cls.source_states_grid_matrix, cls.target_states_grid_matrix), axis=-1)
@@ -284,7 +300,6 @@ class BankState:
         # cls.update_state_functions_adjacent_dicts_01 = {}
         # for i, row in enumerate(cls.state_relations_adjacent_matrix_01):
         #     cls.update_state_functions_adjacent_dicts_01.update({cls.states_list[i]: np.array([cls.update_state_functions_dicts_01[j] for j in row])})
-
 
         ## 根据`state_relations_adjacent_matrix_01`构建`update_state_functions_adjacent_matrix_01`。矩阵每个元素是一个更新状态函数，对应【状态关系邻接矩阵01】`state_relations_adjacent_matrix_01`之元素之状态关系名。。
         cls.update_state_functions_adjacent_matrix_01 = np.empty((cls.num_states, cls.num_states), dtype=object)
@@ -716,13 +731,12 @@ class BankState:
         pass  # def
 
     @classmethod
-    def update_state_if_nand(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):
+    def update_state_if_nand(cls, source_state: StateType, source_state_changes: StateType, target_state: StateType):
         """
         当关系是【非】的时候，更新
 
         Args:
             source_state (StateType): 源状态
-            source_interstate (StateType & StateType.T): 源交互状态
             source_state_changes (StateType): 源状态的变动示性向量
             target_state (StateType): 目标状态
 
@@ -736,8 +750,7 @@ class BankState:
         is_changed_state = (target_state[source_state_changes] != ~source_state[source_state_changes]).any()
         if is_changed_state:
             target_state[source_state_changes] = ~source_state[source_state_changes]
-            target_interstate = (target_state & target_state.T)
-        return target_state, target_interstate, is_changed_state
+        return target_state, is_changed_state
         pass  # def
 
     # @classmethod
@@ -765,49 +778,35 @@ class BankState:
     #     pass  # def
 
     @classmethod
-    def update_target_state_if_none(cls, target_state_from_source_states: StateType, is_changed_state: StateType):  # NOW
+    def update_target_state_if_none(cls, target_state_from_source_states: np.array):
         """
         当关系是【无】的时候，更新
 
         Args:
-            source_states (StateType): 关于该汇状态的所有源状态数组
-            source_interstate (StateType & StateType.T): 源交互状态
-            source_state_changes (StateType): 源状态的变动示性向量
-            target_state (StateType): 目标状态
+            target_state_from_source_states (np.array): 目标状态相关的各源状态
 
         Returns:
             target_state (StateType): 计算后的目标状态
-            target_interstate (StateType): 计算后的目标状态之银行间关系
-            is_changed_state (bool): 是否有更新状态
 
         """
-
         target_state = target_state_from_source_states.all(axis=0)
-        # target_interstate = source_interstate
-        is_changed_state = False
-        return target_state, is_changed_state
+        return target_state
         pass  # def
 
     @classmethod
-    def update_target_state_if_and(cls, target_state_from_source_states: StateType, is_changed_state: StateType):  # NOW
+    def update_target_state_if_and(cls, target_state_from_source_states: np.array):
         """
         当关系是【与】的时候，更新
 
         Args:
-            source_state (StateType): 源状态
-            source_interstate (StateType & StateType.T): 源交互状态
-            source_state_changes (StateType): 源状态的变动示性向量
-            target_state (StateType): 目标状态
+            target_state_from_source_states (np.array): 目标状态相关的各源状态
 
         Returns:
             target_state (StateType): 计算后的目标状态
-            target_interstate (StateType): 计算后的目标状态之银行间关系
-            is_changed_state (bool): 是否有更新状态
 
         """
         target_state = target_state_from_source_states.all(axis=0)
-        is_changed_state = False
-        return target_state, is_changed_state
+        return target_state
         pass  # def
 
     @classmethod
@@ -897,76 +896,78 @@ class BankState:
 
         """
 
-        cls.bank = bank  # BUG要考虑赋值之后类变量改变之后没有返过来赋值回原变量的问题
-        cls.interbank = interbank
+        ## 设置状态集合数据数组`states_data_array`
+        states_data_array = np.copy(cls.states_data_list)
 
-        ## 1. 指定而计算源状态；
-        cls.is_states_changed_array = np.full((cls.num_states, 1), False)
+        ## 设置交互状态集合数据数组`interstates_data_array`
+        interstates_data_array = np.copy(cls.interstates_data_list)
 
-
+        ## 指定而计算源状态；
+        states_data_changes_matrix = np.full((env['num_bank'], cls.num_states), False)  # 示性矩阵之各状态数据变动情况。每列表示单个状态之各主体变量是否变动。
+        is_states_data_changed_array = states_data_changes_matrix.any(axis=0)  # 示性向量之各状态数据是否已经变动。每个元素表示单个状态是否变动。
         if way == 'any':
             # for i, calc_state_function in enumerate(cls.calc_state_functions_list):
-            #     source_state_changes = calc_state_function(cls.bank, cls.interbank)
-            #     cls.is_states_changed_array[i] = source_state_changes.any()
+            #     state_changes = calc_state_function(cls.bank, cls.interbank)
+            #     cls.is_states_data_changed_array[i] = state_changes.any()
             for i in range(cls.num_states):
-                source_state_changes = cls.calc_state_functions_list[i](cls.bank, cls.interbank)
-                cls.is_states_changed_array[i] = source_state_changes.any()
+                states_data_changes_matrix[:, i] = cls.calc_state_functions_list[i](bank, interbank)
+            is_states_data_changed_array = states_data_changes_matrix.any(axis=0)
         else:
-            ## 根据状态计算相应的状态
-            source_state_changes = cls.calc_state_functions_dicts[way](cls.bank, cls.interbank)
-            cls.is_states_changed_array[cls.states_list == way] = source_state_changes.any()
+            ## 根据指定需要计算的状态计算相应的状态
+            states_data_changes_matrix[:, cls.states_list == way] = cls.calc_state_functions_dicts[way](bank, interbank)
+            is_states_data_changed_array[:, cls.states_list == way] = states_data_changes_matrix[cls.states_list == way].any()
 
             # state_changes = cls.calc_state(cls.states_list[way])
             pass  # if
 
-        # ## 决策是否根据初始计算的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
-        # states_relations = cls.get_relation_of_states(way, mode='all')
+        ## 构建【源状态数据网格矩阵】`source_states_data_grid_matrix`、【汇状态数据网格矩阵】（笛卡尔积矩阵）`target_states_data_grid_matrix`
+        source_states_data_grid_matrix, target_states_data_grid_matrix = np.meshgrid(states_data_array, states_data_array, indexing='ij')
+        source_states_changes_grid_matrix, target_states_changes_grid_matrix = np.meshgrid(states_data_changes_matrix, states_data_changes_matrix, indexing='ij')
 
-        ## 根据需要更新的状态，更新相应的汇状态；
+        ## 决策是否根据初始计算的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策。重复更新状态，直至无状态需要更新；
+        while is_states_data_changed_array.any() == True:
+            states_data_array_old: np.array = states_data_array.copy()
 
-        ## 重复更新状态，直至无状态需要更新；
-        while cls.is_states_changed_array.any() == True:
-
-
-
-            # ## 决策是否根据更新后的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
-            # states_relations = cls.get_relation_of_states(way, mode='all')
-            #
-            # ## 根据需要更新的状态，更新相应的汇状态；
-            # for i, r in enumerate(states_relations):
-            #     states_changes = cls.update_state(states_relations)
-            #     cls.is_states_changed_array[np.where(way == cls.states_list)] = states_changes[i].any()  # 记录是否有状态更新
-
-            ## 根据需要更新的状态，更新相应的【汇状态数据矩阵】
+            ## 根据需要更新的状态，用【更新状态关系函数邻接矩阵01】更新相应的【汇状态数据矩阵】
             for i in range(cls.num_states):
                 for j in range(cls.num_states):
-                    cls.target_states_data_matrix[i][j], cls.is_states_changed_matrix[i][j] = cls.update_state_functions_adjacent_matrix_01[i][j](cls.source_states_data_matrix[i][j], cls.source_states_changes_matrix[i][j], cls.target_states_data_matrix[i][j])
+                    target_states_data_grid_matrix[i][j], is_states_data_changed_array[i][j] = cls.update_state_functions_adjacent_matrix_01[i][j](states_data_array[i], states_data_changes_matrix[i], states_data_array[j])
 
-            ## 根据【汇状态数据矩阵】，和相应的状态关系，进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
+            ## 根据【汇状态数据矩阵】，和相应的状态关系，用【更新状态关系函数邻接矩阵02】进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
             for j, col in enumerate(cls.state_entity_indices_list):
-                cls.target_states_data_array[j], cls.target_interstates_data_array[j], cls.is_states_changed_array[j] = cls.update_state_functions_adjacent_matrix_02[cls.state_entity_indices_list[j][2]](cls.target_states_data_matrix[cls.state_entity_indices_list[j][3], j], cls.is_states_changed_matrix[cls.state_entity_indices_list[j][3], j])  # NOW
-                cls.target_interstates_data_array[j] = (cls.target_states_data_array[j] & cls.target_states_data_array[j].T)
-                cls.is_states_changed_array[j] =cls.states_data_array
+                states_data_array[j] = cls.update_state_functions_adjacent_matrix_02[cls.state_entity_indices_list[j][2]](target_states_data_grid_matrix[cls.state_entity_indices_list[j][3], j], cls.is_states_changed_matrix[cls.state_entity_indices_list[j][3], j])  # NOW
+                is_states_data_changed_array[j] = states_data_array
 
             # for j in range(cls.num_states):
-            #     cls.target_states_data_array[j], cls.target_interstates_data_array[j], is_states_changed_array = cls.update_state_functions_adjacent_matrix_02(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
+            #     target_states_data_array[j], cls.target_interstates_data_array[j], is_states_data_changed_array = cls.update_state_functions_adjacent_matrix_02(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
 
-            # cls.target_states_data_array, cls.target_interstates_data_array[i][j], is_states_changed_array = cls.update_target_states(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
+            # target_states_data_array, cls.target_interstates_data_array[i][j], is_states_data_changed_array = cls.update_target_states(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
 
-            # ## 记录是否有状态更新
-            # cls.is_states_changed_array = cls.is_states_changed_matrix.any(axis=0)
+            ## 记录是否有状态更新
+            states_data_changes_matrix = states_data_array ^ states_data_array_old
+            is_states_data_changed_array = states_data_changes_matrix.any(axis=0)
 
-            cls.states_data_array=copy(cls.target_states_data_array)
             pass  # while
 
-        ## 更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。
-        cls.interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="creditor")
-        cls.interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="debtor")
-        cls.interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="creditor")
-        cls.interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="debtor")
-        cls.interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="creditor")
-        cls.interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="debtor")
+        ## 计算交互状态并赋值回原来的各主体
+        for i in range(cls.num_states):
+            interstates_data_array[i] = (states_data_array[i] & states_data_array[i].T)
 
+        ## 更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。
+        interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="creditor")
+        interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="debtor")
+        interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="creditor")
+        interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="debtor")
+        interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="creditor")
+        interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="debtor")
+
+        for i in range(cls.num_states):
+            cls.states_data_list[i] = states_data_array[i].copy()
+            cls.interstates_data_list[i] = interstates_data_array[i].copy()
+
+        # cls.bank = bank  # BUG要考虑赋值之后类变量改变之后没有返过来赋值回原变量的问题
+        # cls.interbank = interbank
+        # return bank, interbank
         pass  # def
 
     pass  # class
