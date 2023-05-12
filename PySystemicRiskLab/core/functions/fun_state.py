@@ -37,8 +37,8 @@ class BankState:
     ## 【汇交互状态网格矩阵】（笛卡尔积矩阵）`target_interstates_grid_matrix`
     target_interstates_grid_matrix = np.array
 
-    ## 【状态数据集合列表】`state_data_list`
-    state_data_list: list
+    ## 【状态数据集合数组】`states_data_array`
+    states_data_array: np.array
 
     ## 【状态数据集合字典集】`state_data_dicts`
     state_data_dicts: dict
@@ -54,6 +54,9 @@ class BankState:
 
     ## 【状态关系集合列表01】`state_relations_list_01`
     state_relations_list_01: list
+
+    ## 【状态关系集合列表02】`state_relations_list_02`
+    state_relations_list_02: list
 
     ## 【状态关系邻接矩阵01】`state_relations_adjacent_matrix_01`
     state_relations_adjacent_matrix_01: np.array
@@ -108,7 +111,7 @@ class BankState:
     ## 【源状态变动矩阵】`source_states_changes_matrix`
     source_states_changes_matrix: np.array
 
-    ## 【源状态数据矩阵】`source_states_data_matrix`
+    ## 【状态数据矩阵】`source_states_data_matrix`
     source_states_data_matrix: np.array
 
     ## 【汇状态数据矩阵】`target_states_data_matrix`
@@ -143,15 +146,15 @@ class BankState:
 
         cls.num_states = len(cls.states_list)
 
-        ## 设置状态集合数据列表`state_data_list` # BUG提前赋值会不会导致后续的bank变量不会更新？下同。#HACK暂时不引入bank、interbank
-        cls.state_data_list = [
+        ## 设置状态集合数据列表`states_data_array` # BUG提前赋值会不会导致后续的bank变量不会更新？下同。#HACK暂时不引入bank、interbank
+        cls.states_data_array =np.array( [
             cls.bank.on,
             cls.bank.hel,
             cls.bank.isv,
             cls.bank.ilq,
             cls.bank.br,
             cls.bank.off,
-        ]
+        ])
 
         ## 【计算状态函数集合列表】`calc_state_functions_list`
         cls.calc_state_functions_list = [
@@ -170,14 +173,17 @@ class BankState:
         cls.calc_state_functions_dicts = dict(zip(cls.states_list, cls.calc_state_functions_list))
 
         ## 构建状态数据列表字典`state_data_dicts` #HACK暂时不引入bank、interbank
-        cls.state_data_dicts = dict(zip(cls.states_list, cls.state_data_list))
+        cls.state_data_dicts = dict(zip(cls.states_list, cls.states_data_array))
 
         # ## 构建交互状态数据列表字典`interstate_data_dicts` #HACK可能不需要
         # # cls.interstate_data_dicts = cls.state_data_dicts & cls.state_data_dicts.T
-        # cls.interstate_data_dicts = dict(zip((cls.states_list & cls.states_list.T), (cls.state_data_list & cls.states_list.T)))
+        # cls.interstate_data_dicts = dict(zip((cls.states_list & cls.states_list.T), (cls.states_data_array & cls.states_list.T)))
 
-        ## 构建源与汇状态数据网格矩阵（笛卡尔积矩阵）`states_data_grid_matrix`#HACK暂时不引入bank、interbank
-        cls.source_states_data_grid_matrix, cls.target_states_data_grid_matrix = np.meshgrid(cls.state_data_list, cls.state_data_list)
+        ## 构建【源状态网格矩阵】`source_states_grid_matrix`、【汇状态网格矩阵】（笛卡尔积矩阵）`target_states_grid_matrix`
+        cls.source_states_grid_matrix, cls.target_states_grid_matrix = np.meshgrid(cls.states_data_array, cls.states_data_array, indexing='ij')
+
+        ## 构建【源状态数据网格矩阵】`source_states_data_grid_matrix`、【汇状态数据网格矩阵】（笛卡尔积矩阵）`target_states_data_grid_matrix`
+        cls.source_states_data_grid_matrix, cls.target_states_data_grid_matrix = np.meshgrid(cls.state_data_dicts[cls.states_data_array], cls.state_data_dicts[cls.states_data_array], indexing='ij')
 
         ## 设置【状态关系集合列表01】`state_relations_list_01`
         ## 同一种状态标记【同】；
@@ -203,8 +209,8 @@ class BankState:
         ## 设置目标交互状态网格矩阵`target_interstates_grid_matrix`
         cls.target_interstates_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
 
-        ## 分别构建源、【汇状态网格矩阵】（笛卡尔积矩阵）`state_grid_matrix`
-        cls.target_states_grid_matrix, cls.source_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list)
+        ## 分别构建【源状态网格矩阵】、【汇状态网格矩阵】（笛卡尔积矩阵）`state_grid_matrix`
+        cls.source_states_grid_matrix ,cls.target_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list,indexing='ij')
 
         ## 构建【源汇状态关系网格矩阵】`states_relations_grid_matrix`
         cls.states_relation_grid_matrix = np.stack((cls.source_states_grid_matrix, cls.target_states_grid_matrix), axis=-1)
@@ -274,10 +280,11 @@ class BankState:
             [0, 0, 0, 0, 0, 0, ],
         ])
 
-        ## 根据`state_relations_adjacent_matrix_01`构建【更新状态函数邻接字典】`update_state_functions_adjacent_dicts_01`。该数据顶层是字典数组，每个键是状态名，每个值是一个数组，其是该状态对应的【状态关系邻接矩阵01】之一行之状态关系名对应的更新函数。 #HACK 暂时没有被用到
-        cls.update_state_functions_adjacent_dicts_01 = {}
-        for i, row in enumerate(cls.state_relations_adjacent_matrix_01):
-            cls.update_state_functions_adjacent_dicts_01.update({cls.states_list[i]: np.array([cls.update_state_functions_dicts_01[j] for j in row])})
+        # ## 根据`state_relations_adjacent_matrix_01`构建【更新状态函数邻接字典】`update_state_functions_adjacent_dicts_01`。该数据顶层是字典数组，每个键是状态名，每个值是一个数组，其是该状态对应的【状态关系邻接矩阵01】之一行之状态关系名对应的更新函数。 #HACK 暂时没有被用到
+        # cls.update_state_functions_adjacent_dicts_01 = {}
+        # for i, row in enumerate(cls.state_relations_adjacent_matrix_01):
+        #     cls.update_state_functions_adjacent_dicts_01.update({cls.states_list[i]: np.array([cls.update_state_functions_dicts_01[j] for j in row])})
+
 
         ## 根据`state_relations_adjacent_matrix_01`构建`update_state_functions_adjacent_matrix_01`。矩阵每个元素是一个更新状态函数，对应【状态关系邻接矩阵01】`state_relations_adjacent_matrix_01`之元素之状态关系名。。
         cls.update_state_functions_adjacent_matrix_01 = np.empty((cls.num_states, cls.num_states), dtype=object)
@@ -334,7 +341,7 @@ class BankState:
     #     pass  # def
 
     @classmethod
-    def init_list_of_relation_in_state_of_banks(cls, bank: BankCommercial, interbank: BankInterbank):
+    def init_list_of_relation_in_state_of_banks(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK暂时用不到
         """
         初始化银行状态关系列表
         """
@@ -758,7 +765,7 @@ class BankState:
     #     pass  # def
 
     @classmethod
-    def update_target_state_if_none(cls, target_state_from_source_states: StateType, source_state_changes: StateType, source_interstate, is_changed_state: StateType):  # NOW
+    def update_target_state_if_none(cls, target_state_from_source_states: StateType, is_changed_state: StateType):  # NOW
         """
         当关系是【无】的时候，更新
 
@@ -775,15 +782,14 @@ class BankState:
 
         """
 
-        target_state = target_state_from_source_states
-        target_interstate = (target_state & target_state.T)
-        target_interstate = source_interstate
+        target_state = target_state_from_source_states.all(axis=0)
+        # target_interstate = source_interstate
         is_changed_state = False
-        return target_state, target_interstate, is_changed_state
+        return target_state, is_changed_state
         pass  # def
 
     @classmethod
-    def update_target_state_if_and(cls, source_state: StateType, source_state_changes: StateType, source_interstate, target_state: StateType):  # NOW
+    def update_target_state_if_and(cls, target_state_from_source_states: StateType, is_changed_state: StateType):  # NOW
         """
         当关系是【与】的时候，更新
 
@@ -799,15 +805,13 @@ class BankState:
             is_changed_state (bool): 是否有更新状态
 
         """
-
-        target_state = source_state
-        target_interstate = source_interstate
+        target_state = target_state_from_source_states.all(axis=0)
         is_changed_state = False
-        return target_state, target_interstate, is_changed_state
+        return target_state, is_changed_state
         pass  # def
 
     @classmethod
-    def update_all_cre_and_deb(cls):
+    def update_all_cre_and_deb(cls):  # HACK暂时用不到
         """更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。"""
         cls.interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="creditor")
         cls.interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="debtor")
@@ -899,9 +903,13 @@ class BankState:
         ## 1. 指定而计算源状态；
         cls.is_states_changed_array = np.full((cls.num_states, 1), False)
 
+
         if way == 'any':
-            for i, calc_state_function in enumerate(cls.calc_state_functions_list):
-                source_state_changes = calc_state_function(cls.bank, cls.interbank)
+            # for i, calc_state_function in enumerate(cls.calc_state_functions_list):
+            #     source_state_changes = calc_state_function(cls.bank, cls.interbank)
+            #     cls.is_states_changed_array[i] = source_state_changes.any()
+            for i in range(cls.num_states):
+                source_state_changes = cls.calc_state_functions_list[i](cls.bank, cls.interbank)
                 cls.is_states_changed_array[i] = source_state_changes.any()
         else:
             ## 根据状态计算相应的状态
@@ -918,6 +926,9 @@ class BankState:
 
         ## 重复更新状态，直至无状态需要更新；
         while cls.is_states_changed_array.any() == True:
+
+
+
             # ## 决策是否根据更新后的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策；
             # states_relations = cls.get_relation_of_states(way, mode='all')
             #
@@ -935,6 +946,7 @@ class BankState:
             for j, col in enumerate(cls.state_entity_indices_list):
                 cls.target_states_data_array[j], cls.target_interstates_data_array[j], cls.is_states_changed_array[j] = cls.update_state_functions_adjacent_matrix_02[cls.state_entity_indices_list[j][2]](cls.target_states_data_matrix[cls.state_entity_indices_list[j][3], j], cls.is_states_changed_matrix[cls.state_entity_indices_list[j][3], j])  # NOW
                 cls.target_interstates_data_array[j] = (cls.target_states_data_array[j] & cls.target_states_data_array[j].T)
+                cls.is_states_changed_array[j] =cls.states_data_array
 
             # for j in range(cls.num_states):
             #     cls.target_states_data_array[j], cls.target_interstates_data_array[j], is_states_changed_array = cls.update_state_functions_adjacent_matrix_02(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
@@ -944,10 +956,17 @@ class BankState:
             # ## 记录是否有状态更新
             # cls.is_states_changed_array = cls.is_states_changed_matrix.any(axis=0)
 
+            cls.states_data_array=copy(cls.target_states_data_array)
             pass  # while
 
         ## 更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。
-        cls.update_all_cre_and_deb()
+        cls.interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="creditor")
+        cls.interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="debtor")
+        cls.interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="creditor")
+        cls.interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="debtor")
+        cls.interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="creditor")
+        cls.interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="debtor")
+
         pass  # def
 
     pass  # class
