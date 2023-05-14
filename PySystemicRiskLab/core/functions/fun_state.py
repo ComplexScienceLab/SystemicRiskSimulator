@@ -193,7 +193,7 @@ class BankState:
 
         ## 构建交互状态数据列表字典`interstate_data_dicts` #HACK可能不需要
         # cls.interstate_data_dicts = cls.state_data_dicts & cls.state_data_dicts.T
-        cls.interstate_data_dicts = dict(zip((cls.states_list & cls.states_list.T), (cls.states_data_list & cls.states_list.T)))
+        cls.interstate_data_dicts = dict(zip(cls.states_list, cls.interstates_data_list))
 
         ## 构建【源状态网格矩阵】`source_states_grid_matrix`、【汇状态网格矩阵】（笛卡尔积矩阵）`target_states_grid_matrix`
         cls.source_states_grid_matrix, cls.target_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list, indexing='ij')
@@ -222,18 +222,6 @@ class BankState:
             '非',
         ]
 
-        ## 设置目标交互状态网格矩阵`target_interstates_grid_matrix`
-        cls.target_interstates_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
-
-        ## 分别构建【源状态网格矩阵】、【汇状态网格矩阵】（笛卡尔积矩阵）`state_grid_matrix`
-        cls.source_states_grid_matrix, cls.target_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list, indexing='ij')
-
-        ## 构建【源汇状态关系网格矩阵】`states_relations_grid_matrix`
-        cls.states_relation_grid_matrix = np.stack((cls.source_states_grid_matrix, cls.target_states_grid_matrix), axis=-1)
-
-        ## 构建【状态关系索引表】`states_relations_indices_table`
-        cls.states_relations_indices_table = np.column_stack([cls.source_states_grid_matrix.ravel(), cls.target_states_grid_matrix.ravel(), np.asarray(cls.state_relations_adjacent_matrix_01).ravel()])
-
         ## 设置【更新状态函数集合列表01】`update_state_functions_list_01`
         cls.update_state_functions_list_01 = [
             cls.update_state_if_equity,
@@ -245,26 +233,6 @@ class BankState:
             cls.update_state_if_exclusive,
             cls.update_state_if_nand,
         ]
-
-        ## 构建【更新状态函数字典集01】`update_state_functions_dicts_01`
-        cls.update_state_functions_dicts_01 = dict(zip(cls.state_relations_list_01, cls.update_state_functions_list_01))
-
-        ## 设置状态关系集合列表02`state_relations_list_02`
-        ## 不存在直接关系标记【无】；
-        ## 全部的相关的源状态全部都是假，汇状态才是真。先非运算，再与运算关系，标记【非与】；
-        cls.state_relations_list_02 = [
-            '无',
-            '与',
-        ]
-
-        ## 设置【更新状态函数集合列表02】`update_state_functions_list_02`
-        cls.update_state_functions_list_02 = [
-            cls.update_target_state_if_none,
-            cls.update_target_state_if_and,
-        ]
-
-        ## 设置更新状态函数字典集02`update_state_functions_dicts_02`#NOW
-        cls.update_state_functions_dicts_02 = dict(zip(cls.state_relations_list_02, cls.update_state_functions_list_02))
 
         ## 设置【状态关系邻接矩阵01】`state_relations_adjacent_matrix_01`
         cls.state_relations_adjacent_matrix_01 = [
@@ -286,7 +254,7 @@ class BankState:
             ['无', '无', '无', '无', '无', '无', ],
         ])
 
-        ## 设置【状态关系实体编号邻接矩阵】`state_relation_entities_adjacent_matrix` #HACK 目前暂时用不到
+        ## 设置【状态关系实体编号邻接矩阵】`state_relation_entities_adjacent_matrix`
         cls.state_relation_entities_adjacent_matrix = np.array([
             [0, 0, 0, 0, 0, 0, ],
             [0, 0, 0, 0, 0, 0, ],
@@ -295,6 +263,38 @@ class BankState:
             [0, 0, 0, 0, 0, 0, ],
             [0, 0, 0, 0, 0, 0, ],
         ])
+
+        ## 设置状态关系集合列表02`state_relations_list_02`
+        ## 不存在直接关系标记【无】；
+        ## 全部的相关的源状态全部都是假，汇状态才是真。先非运算，再与运算关系，标记【非与】；
+        cls.state_relations_list_02 = [
+            '无',
+            '与',
+        ]
+
+        ## 设置【更新状态函数集合列表02】`update_state_functions_list_02`
+        cls.update_state_functions_list_02 = [
+            cls.update_target_state_if_none,
+            cls.update_target_state_if_and,
+        ]
+
+        ## 设置目标交互状态网格矩阵`target_interstates_grid_matrix`
+        cls.target_interstates_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
+
+        ## 分别构建【源状态网格矩阵】、【汇状态网格矩阵】（笛卡尔积矩阵）`state_grid_matrix`
+        cls.source_states_grid_matrix, cls.target_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list, indexing='ij')
+
+        ## 构建【源汇状态关系网格矩阵】`states_relations_grid_matrix`
+        cls.states_relation_grid_matrix = np.stack((cls.source_states_grid_matrix, cls.target_states_grid_matrix), axis=-1)
+
+        ## 构建【状态关系索引表】`states_relations_indices_table`
+        cls.states_relations_indices_table = np.column_stack([cls.source_states_grid_matrix.ravel(), cls.target_states_grid_matrix.ravel(), np.asarray(cls.state_relations_adjacent_matrix_01).ravel()])
+
+        ## 构建【更新状态函数字典集01】`update_state_functions_dicts_01`
+        cls.update_state_functions_dicts_01 = dict(zip(cls.state_relations_list_01, cls.update_state_functions_list_01))
+
+        ## 设置更新状态函数字典集02`update_state_functions_dicts_02`
+        cls.update_state_functions_dicts_02 = dict(zip(cls.state_relations_list_02, cls.update_state_functions_list_02))
 
         # ## 根据`state_relations_adjacent_matrix_01`构建【更新状态函数邻接字典】`update_state_functions_adjacent_dicts_01`。该数据顶层是字典数组，每个键是状态名，每个值是一个数组，其是该状态对应的【状态关系邻接矩阵01】之一行之状态关系名对应的更新函数。 #HACK 暂时没有被用到
         # cls.update_state_functions_adjacent_dicts_01 = {}
@@ -308,7 +308,7 @@ class BankState:
                 cls.update_state_functions_adjacent_matrix_01[i, j] = cls.update_state_functions_dicts_01[col]
 
         ## 根据`state_relations_adjacent_matrix_02`构建`update_state_functions_adjacent_matrix_02`。数组每个元素是一个更新汇状态函数，对应【状态关系邻接矩阵02】`state_relations_adjacent_matrix_02`之元素之状态关系名。
-        cls.update_state_functions_adjacent_matrix_02 = np.array((cls.num_states, cls.num_states), dtype=object)
+        cls.update_state_functions_adjacent_matrix_02 = np.empty((cls.num_states, cls.num_states), dtype=object)
         for i, row in enumerate(cls.state_relations_adjacent_matrix_02):
             for j, col in enumerate(row):
                 cls.update_state_functions_adjacent_matrix_02[i, j] = cls.update_state_functions_dicts_02[col]
@@ -322,9 +322,9 @@ class BankState:
         cls.state_entity_indices_list = []
         for j in range(len(cls.state_relation_entities_adjacent_matrix)):
             unique_vals = np.unique(cls.state_relation_entities_adjacent_matrix[:, j])
-            entity_indices = np.where(cls.state_relation_entities_adjacent_matrix[:, j] == val)[0].tolist()
             for val in unique_vals:
-                entity_indices_tuple = (val, [cls.state_relations_adjacent_matrix_02[entity_indices[0], j]], cls.update_state_functions_dicts_02[[cls.state_relations_adjacent_matrix_02[entity_indices[0], j]]], entity_indices)
+                entity_indices = np.where(cls.state_relation_entities_adjacent_matrix[:, j] == val)[0].tolist()
+                entity_indices_tuple = (val, cls.state_relations_adjacent_matrix_02[entity_indices[0], j], cls.update_state_functions_dicts_02[cls.state_relations_adjacent_matrix_02[entity_indices[0], j]], entity_indices)
             cls.state_entity_indices_list.append(entity_indices_tuple)
 
         # ## 构建源、【汇交互状态网格矩阵】（笛卡尔积矩阵）`source_inter_states_grid_matrix`、`target_inter_states_grid_matrix`#HACK暂时不需要
@@ -897,10 +897,11 @@ class BankState:
         """
 
         ## 设置状态集合数据数组`states_data_array`
-        states_data_array = np.copy(cls.states_data_list)
+        # states_data_array=np.empty(cls.num_states, dtype=object)
+        states_data_array = np.asarray(cls.states_data_list)
 
         ## 设置交互状态集合数据数组`interstates_data_array`
-        interstates_data_array = np.copy(cls.interstates_data_list)
+        interstates_data_array = np.asarray(cls.interstates_data_list)
 
         ## 指定而计算源状态；
         states_data_changes_matrix = np.full((env['num_bank'], cls.num_states), False)  # 示性矩阵之各状态数据变动情况。每列表示单个状态之各主体变量是否变动。
@@ -910,32 +911,33 @@ class BankState:
             #     state_changes = calc_state_function(cls.bank, cls.interbank)
             #     cls.is_states_data_changed_array[i] = state_changes.any()
             for i in range(cls.num_states):
-                states_data_changes_matrix[:, i] = cls.calc_state_functions_list[i](bank, interbank)
+                states_data_changes_matrix[:, i] = np.squeeze(cls.calc_state_functions_list[i](bank, interbank))
             is_states_data_changed_array = states_data_changes_matrix.any(axis=0)
         else:
             ## 根据指定需要计算的状态计算相应的状态
-            states_data_changes_matrix[:, cls.states_list == way] = cls.calc_state_functions_dicts[way](bank, interbank)
-            is_states_data_changed_array[:, cls.states_list == way] = states_data_changes_matrix[cls.states_list == way].any()
+            states_data_changes_matrix[:, cls.states_list.index(way)] = np.squeeze(cls.calc_state_functions_dicts[way](bank, interbank))
+            is_states_data_changed_array[cls.states_list.index(way)] = states_data_changes_matrix[cls.states_list.index(way)].any()
 
             # state_changes = cls.calc_state(cls.states_list[way])
             pass  # if
 
         ## 构建【源状态数据网格矩阵】`source_states_data_grid_matrix`、【汇状态数据网格矩阵】（笛卡尔积矩阵）`target_states_data_grid_matrix`
-        source_states_data_grid_matrix, target_states_data_grid_matrix = np.meshgrid(states_data_array, states_data_array, indexing='ij')
+        # source_states_data_grid_matrix, target_states_data_grid_matrix = np.meshgrid(states_data_array[:, , ], states_data_array, indexing='ij')
         source_states_changes_grid_matrix, target_states_changes_grid_matrix = np.meshgrid(states_data_changes_matrix, states_data_changes_matrix, indexing='ij')
 
         ## 决策是否根据初始计算的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策。重复更新状态，直至无状态需要更新；
-        while is_states_data_changed_array.any() == True:
+        while is_states_data_changed_array.any():
             states_data_array_old: np.array = states_data_array.copy()
 
             ## 根据需要更新的状态，用【更新状态关系函数邻接矩阵01】更新相应的【汇状态数据矩阵】
+            target_states_data_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
             for i in range(cls.num_states):
                 for j in range(cls.num_states):
-                    target_states_data_grid_matrix[i][j], is_states_data_changed_array[i][j] = cls.update_state_functions_adjacent_matrix_01[i][j](states_data_array[i], states_data_changes_matrix[i], states_data_array[j])
+                    target_states_data_grid_matrix[i][j], _ = cls.update_state_functions_adjacent_matrix_01[i][j](states_data_array[i], states_data_changes_matrix[:, i], states_data_array[j])  # TODO 删除对应具体函数的无用输出参数
 
             ## 根据【汇状态数据矩阵】，和相应的状态关系，用【更新状态关系函数邻接矩阵02】进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
             for j, col in enumerate(cls.state_entity_indices_list):
-                states_data_array[j] = cls.update_state_functions_adjacent_matrix_02[cls.state_entity_indices_list[j][2]](target_states_data_grid_matrix[cls.state_entity_indices_list[j][3], j], cls.is_states_changed_matrix[cls.state_entity_indices_list[j][3], j])  # NOW
+                states_data_array[j] = cls.state_entity_indices_list[j][2](target_states_data_grid_matrix[cls.state_entity_indices_list[j][3], j]) #NOW 输入数据需要转成(n,5)的形式
                 is_states_data_changed_array[j] = states_data_array
 
             # for j in range(cls.num_states):
