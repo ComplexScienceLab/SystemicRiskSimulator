@@ -268,13 +268,20 @@ class BankState:
         ## 四元组之第一个元素与第二个元素一一对应。它们分别是`state_relation_entities_adjacent_matrix`、`state_relations_adjacent_matrix_02`之列之唯一的值。
         ## 第三个元素是`state_relations_adjacent_matrix_02`之列之唯一的值作为键，对应字典`update_state_functions_dicts_02`之值。
         ## 第四个元素是`state_relation_entities_adjacent_matrix`之列之唯一值所在索引构成的列表。
+        ## 第五个元素是`state_relation_entities_adjacent_matrix`之列值。
         cls.state_entity_indices_list = []
-        for j in range(len(cls.state_relation_entities_adjacent_matrix)):
+        for j in range(cls.num_states):
             unique_vals = np.unique(cls.state_relation_entities_adjacent_matrix[:, j])
             for val in unique_vals:
                 entity_indices = np.where(cls.state_relation_entities_adjacent_matrix[:, j] == val)[0].tolist()
-                entity_indices_tuple = (val, cls.state_relations_adjacent_matrix_02[entity_indices[0], j], cls.update_state_functions_dicts_02[cls.state_relations_adjacent_matrix_02[entity_indices[0], j]], entity_indices)
-            cls.state_entity_indices_list.append(entity_indices_tuple)
+                entity_indices_tuple = (
+                    val,
+                    cls.state_relations_adjacent_matrix_02[entity_indices[0], j],
+                    cls.update_state_functions_dicts_02[cls.state_relations_adjacent_matrix_02[entity_indices[0], j]],
+                    entity_indices,
+                    j,
+                )
+                cls.state_entity_indices_list.append(entity_indices_tuple)
 
         pass  # def
 
@@ -315,13 +322,16 @@ class BankState:
         """计算示性向量之于银行存在的。"""  # TODO
         condition = (bank.hel | bank.isv | bank.ilq | bank.br)
         source_state_changes = (bank.on != condition)
-        if source_state_changes.any():
-            bank.on = condition
-            interbank.on = (bank.on & bank.on.T)
-            # interbank.listOfCreditorsInOn = cls.calc_list_of_relation_in_state_of_banks(interbank, isState = bank.on, goal = "creditor") #HACK，未定义，无用。
-            # interbank.listOfDebtorsInOn = cls.calc_list_of_relation_in_state_of_banks(interbank, isState = bank.on, goal = "debtor") #HACK，未定义，无用。
-            pass
-        return source_state_changes
+        return condition.squeeze(), source_state_changes.squeeze()
+        # return condition, source_state_changes
+
+        # if source_state_changes.any():
+        #     bank.on = condition
+        #     interbank.on = (bank.on & bank.on.T)
+        #     # interbank.listOfCreditorsInOn = cls.calc_list_of_relation_in_state_of_banks(interbank, isState = bank.on, goal = "creditor") #HACK，未定义，无用。
+        #     # interbank.listOfDebtorsInOn = cls.calc_list_of_relation_in_state_of_banks(interbank, isState = bank.on, goal = "debtor") #HACK，未定义，无用。
+        #     pass
+        # return source_state_changes
         pass
 
     @classmethod
@@ -329,11 +339,14 @@ class BankState:
         """计算示性向量之于银行健康的。"""  # TODO
         condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
         source_state_changes = (bank.hel != condition)
-        if source_state_changes.any():
-            bank.hel = condition
-            interbank.hel = (bank.hel & bank.hel.T)
-            pass
-        return source_state_changes
+        return condition.squeeze(), source_state_changes.squeeze()
+        # return condition, source_state_changes
+
+        # if source_state_changes.any():
+        #     bank.hel = condition
+        #     interbank.hel = (bank.hel & bank.hel.T)
+        #     pass
+        # return source_state_changes
         pass
 
     @classmethod
@@ -341,13 +354,16 @@ class BankState:
         """计算示性向量之于银行资不抵债的。"""  # TODO
         condition = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
         source_state_changes = (bank.isv != condition)
-        if source_state_changes.any():
-            bank.isv = condition
-            interbank.isv = (bank.isv | bank.isv.T)
-            interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="creditor")
-            interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="debtor")
-            pass
-        return source_state_changes
+        return condition.squeeze(), source_state_changes.squeeze()
+        # return condition, source_state_changes
+
+        # if source_state_changes.any():
+        #     bank.isv = condition
+        #     interbank.isv = (bank.isv | bank.isv.T)
+        #     interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="creditor")
+        #     interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="debtor")
+        #     pass
+        # return source_state_changes
         pass
 
     @classmethod
@@ -355,13 +371,16 @@ class BankState:
         """计算示性向量之于银行流动性短缺的。"""  # TODO
         condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
         source_state_changes = (bank.ilq != condition)
-        if source_state_changes.any():
-            bank.ilq = condition
-            interbank.ilq = (bank.ilq | bank.ilq.T)
-            interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="creditor")
-            interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
-            pass
-        return source_state_changes
+        return condition.squeeze(), source_state_changes.squeeze()
+        # return condition, source_state_changes
+
+        # if source_state_changes.any():
+        #     bank.ilq = condition
+        #     interbank.ilq = (bank.ilq | bank.ilq.T)
+        #     interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="creditor")
+        #     interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
+        #     pass
+        # return source_state_changes
         pass
 
     @classmethod
@@ -369,13 +388,16 @@ class BankState:
         """计算示性向量之于银行破产的。"""  # TODO
         condition = (bank.isv | bank.ilq)  # TODO 这个仅仅是目前基准算法简化的做法
         source_state_changes = (bank.br != condition)
-        if source_state_changes.any():
-            bank.br = condition
-            interbank.br = (bank.br & bank.br.T)
-            interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
-            interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
-            pass
-        return source_state_changes
+        return condition.squeeze(), source_state_changes.squeeze()
+        # return condition, source_state_changes
+
+        # if source_state_changes.any():
+        #     bank.br = condition
+        #     interbank.br = (bank.br & bank.br.T)
+        #     interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
+        #     interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
+        #     pass
+        # return source_state_changes
         pass
 
     @classmethod
@@ -383,11 +405,14 @@ class BankState:
         """计算示性向量之于银行退出的。"""  # TODO
         condition = bank.br | bank.off
         source_state_changes = (bank.off != condition)
-        if (bank.off != condition).any():
-            bank.off = condition
-            interbank.off = (bank.off & bank.off.T)
-            pass
-        return source_state_changes
+        return condition.squeeze(), source_state_changes.squeeze()
+        # return condition, source_state_changes
+
+        # if (bank.off != condition).any():
+        #     bank.off = condition
+        #     interbank.off = (bank.off & bank.off.T)
+        #     pass
+        # return source_state_changes
         pass
 
     @classmethod
@@ -458,7 +483,7 @@ class BankState:
             target_state (StateType): 计算后的目标状态
 
         """
-        target_state = source_state
+        # target_state[source_state_changes] = source_state[source_state_changes]
         return target_state
         pass  # def
 
@@ -476,7 +501,7 @@ class BankState:
             target_state (StateType): 计算后的目标状态
 
         """
-        target_state = source_state
+        # target_state[source_state_changes] = source_state[source_state_changes]
         return target_state
         pass  # def
 
@@ -494,7 +519,7 @@ class BankState:
             target_state (StateType): 计算后的目标状态
 
         """
-        target_state = source_state
+        # target_state[source_state_changes] = source_state[source_state_changes]
         return target_state
         pass  # def
 
@@ -512,7 +537,7 @@ class BankState:
             target_state (StateType): 计算后的目标状态
 
         """
-        target_state = source_state
+        # target_state[source_state_changes] = source_state[source_state_changes]
         return target_state
         pass  # def
 
@@ -530,7 +555,7 @@ class BankState:
             target_state (StateType): 计算后的目标状态
 
         """
-        target_state = source_state
+        # target_state[source_state_changes] = source_state[source_state_changes]
         return target_state
         pass  # def
 
@@ -556,9 +581,8 @@ class BankState:
         #     target_state[source_state_changes] = source_state[source_state_changes]
         # return target_state, target_interstate, is_changed_state
 
-        target_state = source_state
+        # target_state[source_state_changes] = source_state[source_state_changes]
         return target_state
-
         pass  # def
 
     @classmethod
@@ -715,7 +739,7 @@ class BankState:
         """
 
         ## 设置状态集合数据数组`states_data_array`
-        states_data_array = np.asarray(cls.states_data_list)
+        states_data_array = np.asarray(cls.states_data_list).squeeze()
 
         ## 设置交互状态集合数据数组`interstates_data_array`
         interstates_data_array = np.asarray(cls.interstates_data_list)
@@ -725,11 +749,11 @@ class BankState:
         is_states_data_changed_array = states_data_changes_matrix.any(axis=1)  # 示性向量之各状态数据是否已经变动。每个元素表示单个状态是否变动。
         if way == 'any':
             for i in range(cls.num_states):
-                states_data_changes_matrix[i, :] = np.squeeze(cls.calc_state_functions_list[i](bank, interbank))  # 遍历计算各状态数据变动情况
+                states_data_array[i, :], states_data_changes_matrix[i, :] = cls.calc_state_functions_list[i](bank, interbank)  # 遍历计算各状态数据变动情况
             is_states_data_changed_array = states_data_changes_matrix.any(axis=1)
         else:
             ## 根据指定需要计算的状态计算相应的状态
-            states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way](bank, interbank)) #BUG bank相关的状态变量没有返回值
+            states_data_array[cls.states_list.index(way), :], states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way](bank, interbank))
             is_states_data_changed_array[cls.states_list.index(way)] = states_data_changes_matrix[cls.states_list.index(way), :].any()
             pass  # if
 
@@ -742,15 +766,22 @@ class BankState:
             target_states_data_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
             for i in range(cls.num_states):
                 for j in range(cls.num_states):
-                    target_states_data_grid_matrix[i][j] = cls.update_state_functions_adjacent_matrix_01[i][j](states_data_array[i], states_data_changes_matrix[i, :], states_data_array[j])  # TODO 删除对应具体函数的无用输出参数
+                    target_states_data_grid_matrix[i][j] = cls.update_state_functions_adjacent_matrix_01[i][j](states_data_array[i].copy(), states_data_changes_matrix[i, :], states_data_array[j].copy())  # FIXME输出结果错误
 
             ## 根据【汇状态数据矩阵】，和相应的状态关系，用【更新状态关系函数邻接矩阵02】进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
-            for j, col in enumerate(cls.state_entity_indices_list):
-                states_data_matrix = np.stack([x.reshape(-1) for x in target_states_data_grid_matrix[cls.state_entity_indices_list[j][3], j]])  # 输入数据是(m,)的形式，表示符合条件的状态构成的变量维度。每个元素形式(n,1)，表示主体众维度。需要转换成(m,n)。
-                states_data_array[j] = np.expand_dims(cls.state_entity_indices_list[j][2](states_data_matrix), axis=1)  # 代入【更新状态关系函数邻接矩阵02】对应的【状态更新函数】，得到更新后的【状态数据数组】。
+            for i in range(len(cls.state_entity_indices_list)):
+                states_data_matrix = np.stack([x.reshape(-1) for x in target_states_data_grid_matrix[cls.state_entity_indices_list[i][3], cls.state_entity_indices_list[i][4]]])  # 输入数据是(m,)的形式，表示符合条件的状态构成的变量维度。每个元素形式(n,1)，表示主体众维度。需要转换成(m,n)。 #BUG
+                states_data_array[i] = cls.state_entity_indices_list[i][2](states_data_matrix)  # 代入【更新状态关系函数邻接矩阵02】对应的【状态更新函数】，得到更新后的【状态数据数组】。
+
+            # ## 根据【汇状态数据矩阵】，和相应的状态关系，用【更新状态关系函数邻接矩阵02】进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
+            # for j, col in enumerate(cls.state_entity_indices_list):
+            #     states_data_matrix = np.stack([x.reshape(-1) for x in target_states_data_grid_matrix[cls.state_entity_indices_list[j][4], j]])  # 输入数据是(m,)的形式，表示符合条件的状态构成的变量维度。每个元素形式(n,1)，表示主体众维度。需要转换成(m,n)。
+            #     states_data_array[j] = cls.state_entity_indices_list[j][2](states_data_matrix)  # 代入【更新状态关系函数邻接矩阵02】对应的【状态更新函数】，得到更新后的【状态数据数组】。
+            #     # states_data_array[j] = np.expand_dims(cls.state_entity_indices_list[j][2](states_data_matrix), axis=1)  # 代入【更新状态关系函数邻接矩阵02】对应的【状态更新函数】，得到更新后的【状态数据数组】。
 
             ## 记录是否有状态更新
-            states_data_changes_matrix = (states_data_array ^ states_data_array_old).squeeze()
+            states_data_changes_matrix = states_data_array ^ states_data_array_old
+            # states_data_changes_matrix = (states_data_array ^ states_data_array_old).squeeze()
             is_states_data_changed_array = states_data_changes_matrix.any(axis=1)
 
             loop_count += 1
