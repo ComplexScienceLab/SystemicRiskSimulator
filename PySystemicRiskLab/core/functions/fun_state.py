@@ -898,25 +898,26 @@ class BankState:
 
         ## 设置状态集合数据数组`states_data_array`
         # states_data_array=np.empty(cls.num_states, dtype=object)
+        # states_data_array = np.squeeze(np.asarray(cls.states_data_list)).T
         states_data_array = np.asarray(cls.states_data_list)
 
         ## 设置交互状态集合数据数组`interstates_data_array`
         interstates_data_array = np.asarray(cls.interstates_data_list)
 
         ## 指定而计算源状态；
-        states_data_changes_matrix = np.full((env['num_bank'], cls.num_states), False)  # 示性矩阵之各状态数据变动情况。每列表示单个状态之各主体变量是否变动。
-        is_states_data_changed_array = states_data_changes_matrix.any(axis=0)  # 示性向量之各状态数据是否已经变动。每个元素表示单个状态是否变动。
+        states_data_changes_matrix = np.full((cls.num_states, env['num_bank']), False)  # 示性矩阵之各状态数据变动情况。每列表示单个状态之各主体变量是否变动。
+        is_states_data_changed_array = states_data_changes_matrix.any(axis=1)  # 示性向量之各状态数据是否已经变动。每个元素表示单个状态是否变动。
         if way == 'any':
             # for i, calc_state_function in enumerate(cls.calc_state_functions_list):
             #     state_changes = calc_state_function(cls.bank, cls.interbank)
             #     cls.is_states_data_changed_array[i] = state_changes.any()
             for i in range(cls.num_states):
-                states_data_changes_matrix[:, i] = np.squeeze(cls.calc_state_functions_list[i](bank, interbank))
-            is_states_data_changed_array = states_data_changes_matrix.any(axis=0)
+                states_data_changes_matrix[i, :] = np.squeeze(cls.calc_state_functions_list[i](bank, interbank))  # 遍历计算各状态数据变动情况
+            is_states_data_changed_array = states_data_changes_matrix.any(axis=1)
         else:
             ## 根据指定需要计算的状态计算相应的状态
-            states_data_changes_matrix[:, cls.states_list.index(way)] = np.squeeze(cls.calc_state_functions_dicts[way](bank, interbank))
-            is_states_data_changed_array[cls.states_list.index(way)] = states_data_changes_matrix[cls.states_list.index(way)].any()
+            states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way](bank, interbank))
+            is_states_data_changed_array[cls.states_list.index(way)] = states_data_changes_matrix[cls.states_list.index(way), :].any()
 
             # state_changes = cls.calc_state(cls.states_list[way])
             pass  # if
@@ -926,6 +927,7 @@ class BankState:
         source_states_changes_grid_matrix, target_states_changes_grid_matrix = np.meshgrid(states_data_changes_matrix, states_data_changes_matrix, indexing='ij')
 
         ## 决策是否根据初始计算的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策。重复更新状态，直至无状态需要更新；
+        loop_count = 0
         while is_states_data_changed_array.any():
             states_data_array_old: np.array = states_data_array.copy()
 
@@ -933,12 +935,13 @@ class BankState:
             target_states_data_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
             for i in range(cls.num_states):
                 for j in range(cls.num_states):
-                    target_states_data_grid_matrix[i][j], _ = cls.update_state_functions_adjacent_matrix_01[i][j](states_data_array[i], states_data_changes_matrix[:, i], states_data_array[j])  # TODO 删除对应具体函数的无用输出参数
+                    target_states_data_grid_matrix[i][j], _ = cls.update_state_functions_adjacent_matrix_01[i][j](states_data_array[i], states_data_changes_matrix[i, :], states_data_array[j])  # TODO 删除对应具体函数的无用输出参数
 
             ## 根据【汇状态数据矩阵】，和相应的状态关系，用【更新状态关系函数邻接矩阵02】进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
             for j, col in enumerate(cls.state_entity_indices_list):
-                states_data_array[j] = cls.state_entity_indices_list[j][2](target_states_data_grid_matrix[cls.state_entity_indices_list[j][3], j]) #NOW 输入数据需要转成(n,5)的形式
-                is_states_data_changed_array[j] = states_data_array
+                states_data_matrix = np.stack([x.reshape(-1) for x in target_states_data_grid_matrix[cls.state_entity_indices_list[j][3], j]])  # 输入数据是(m,)的形式，表示符合条件的状态构成的变量维度。每个元素形式(n,1)，表示主体众维度。需要转换成(m,n)。
+                states_data_array[j] = np.expand_dims(cls.state_entity_indices_list[j][2](states_data_matrix), axis=1)  # 代入【更新状态关系函数邻接矩阵02】对应的【状态更新函数】，得到更新后的【状态数据数组】。
+                # is_states_data_changed_array[j] = states_data_array
 
             # for j in range(cls.num_states):
             #     target_states_data_array[j], cls.target_interstates_data_array[j], is_states_data_changed_array = cls.update_state_functions_adjacent_matrix_02(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
@@ -946,9 +949,10 @@ class BankState:
             # target_states_data_array, cls.target_interstates_data_array[i][j], is_states_data_changed_array = cls.update_target_states(cls.target_states_data_matrix[:, j], cls.source_interstates_data_matrix[:, j], cls.is_states_changed_matrix[:, j])
 
             ## 记录是否有状态更新
-            states_data_changes_matrix = states_data_array ^ states_data_array_old
-            is_states_data_changed_array = states_data_changes_matrix.any(axis=0)
+            states_data_changes_matrix = (states_data_array ^ states_data_array_old).squeeze()
+            is_states_data_changed_array = states_data_changes_matrix.any(axis=1)
 
+            loop_count += 1
             pass  # while
 
         ## 计算交互状态并赋值回原来的各主体
