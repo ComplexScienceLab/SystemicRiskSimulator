@@ -326,7 +326,7 @@ class BankState:
 
     @classmethod
     def calc_state_healthy(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行健康的。"""# TODO
+        """计算示性向量之于银行健康的。"""  # TODO
         condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
         source_state_changes = (bank.hel != condition)
         if source_state_changes.any():
@@ -338,7 +338,7 @@ class BankState:
 
     @classmethod
     def calc_state_insolvent(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行资不抵债的。"""# TODO
+        """计算示性向量之于银行资不抵债的。"""  # TODO
         condition = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
         source_state_changes = (bank.isv != condition)
         if source_state_changes.any():
@@ -352,7 +352,7 @@ class BankState:
 
     @classmethod
     def calc_state_illiquid(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行流动性短缺的。"""# TODO
+        """计算示性向量之于银行流动性短缺的。"""  # TODO
         condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
         source_state_changes = (bank.ilq != condition)
         if source_state_changes.any():
@@ -366,7 +366,7 @@ class BankState:
 
     @classmethod
     def calc_state_bankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行破产的。"""# TODO
+        """计算示性向量之于银行破产的。"""  # TODO
         condition = (bank.isv | bank.ilq)  # TODO 这个仅仅是目前基准算法简化的做法
         source_state_changes = (bank.br != condition)
         if source_state_changes.any():
@@ -380,7 +380,7 @@ class BankState:
 
     @classmethod
     def calc_state_off(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行退出的。"""# TODO
+        """计算示性向量之于银行退出的。"""  # TODO
         condition = bank.br | bank.off
         source_state_changes = (bank.off != condition)
         if (bank.off != condition).any():
@@ -391,55 +391,55 @@ class BankState:
         pass
 
     @classmethod
-    def calc_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  #TODO 未适配
+    def calc_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
         """计算示性向量之于银行需要偿还银行间负债的。"""
         bank.is_needed_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  #TODO 未适配
+    def calc_isEnabledBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
         """计算示性向量之于银行能够偿还银行间负债的。"""
         bank.is_enabled_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & (bank.A_Q > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoIB_from_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  #TODO 未适配
+    def calc_isEnabledBoIB_from_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
         """计算示性向量之于银行能够偿还银行间负债的，从需要偿还银行间负债的。"""
         bank.is_enabled_BoIB = (bank.is_needed_BoIB & (bank.A_Q > 0))
         pass
 
     @classmethod
-    def calc_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  #TODO 未适配
+    def calc_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
         """计算示性向量之于银行需要偿还居民部门存款的。"""
         bank.is_needed_BoD = ((bank.Shock_D_run_t > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoD(cls, bank: BankCommercial, interbank: BankInterbank):  #TODO 未适配
+    def calc_isEnabledBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
         """计算示性向量之于银行能够偿还居民部门存款的。"""
         bank.is_enabled_BoD = ((bank.Shock_D_run_t > 0) & (bank.A_Q > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoD_from_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  #TODO 未适配
+    def calc_isEnabledBoD_from_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
         """计算示性向量之于银行能够偿还居民部门存款的，从需要偿还居民部门存款的。"""
         bank.is_enabled_BoD = (bank.is_needed_BoD & (bank.A_Q > 0))
         pass
 
     @classmethod
-    def calc_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  #TODO 未适配
+    def calc_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
         """计算示性向量之于银行需要收回厂商贷款的。"""
         bank.is_needed_LiP = ((bank.Shock_P_run_s > 0) & bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledLiP(cls, bank: BankCommercial, interbank: BankInterbank):  #TODO 未适配
+    def calc_isEnabledLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
         """计算示性向量之于银行能够收回厂商贷款的。"""
         bank.is_enabled_LiP = ((bank.Shock_P_run_s > 0) & bank.on)  # HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
     @classmethod
-    def calc_isEnabledLiP_from_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  #TODO 未适配
+    def calc_isEnabledLiP_from_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
         """计算示性向量之于银行能够收回厂商贷款的，从需要收回厂商贷款的。"""
         bank.is_enabled_LiP = (bank.is_needed_LiP)  # HACK后续可能会补充条件 & producer.A_Q > 0
         pass
@@ -729,7 +729,7 @@ class BankState:
             is_states_data_changed_array = states_data_changes_matrix.any(axis=1)
         else:
             ## 根据指定需要计算的状态计算相应的状态
-            states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way](bank, interbank))
+            states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way](bank, interbank)) #BUG bank相关的状态变量没有返回值
             is_states_data_changed_array[cls.states_list.index(way)] = states_data_changes_matrix[cls.states_list.index(way), :].any()
             pass  # if
 
