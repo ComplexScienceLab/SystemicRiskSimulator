@@ -771,7 +771,7 @@ class BankState:
             ## 根据【汇状态数据矩阵】，和相应的状态关系，用【更新状态关系函数邻接矩阵02】进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
             for i in range(len(cls.state_entity_indices_list)):
                 states_data_matrix = np.stack([x.reshape(-1) for x in target_states_data_grid_matrix[cls.state_entity_indices_list[i][3], cls.state_entity_indices_list[i][4]]])  # 输入数据是(m,)的形式，表示符合条件的状态构成的变量维度。每个元素形式(n,1)，表示主体众维度。需要转换成(m,n)。 #BUG
-                states_data_array[i] = cls.state_entity_indices_list[i][2](states_data_matrix)  # 代入【更新状态关系函数邻接矩阵02】对应的【状态更新函数】，得到更新后的【状态数据数组】。
+                states_data_array[cls.state_entity_indices_list[i][4]] = cls.state_entity_indices_list[i][2](states_data_matrix)  # 代入【更新状态关系函数邻接矩阵02】对应的【状态更新函数】，得到更新后的【状态数据数组】。
 
             # ## 根据【汇状态数据矩阵】，和相应的状态关系，用【更新状态关系函数邻接矩阵02】进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
             # for j, col in enumerate(cls.state_entity_indices_list):
@@ -789,20 +789,20 @@ class BankState:
 
         ## 计算交互状态
         for i in range(cls.num_states):
-            interstates_data_array[i] = (states_data_array[i] & states_data_array[i].T)
+            interstates_data_array[i] = (np.expand_dims(states_data_array[i], axis=1) & np.expand_dims(states_data_array[i], axis=0))  # BUG是否应该用「与」运算？
 
-        ## 更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。
+        ## 数据赋值回原来的各主体
+        for i in range(cls.num_states):
+            cls.states_data_list[i][:] = np.expand_dims(states_data_array[i,:], axis=1)
+            cls.interstates_data_list[i] = interstates_data_array[i].copy()
+
+        ## 更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。#FIXME
         interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="creditor")
         interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="debtor")
         interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="creditor")
         interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="debtor")
         interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="creditor")
         interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="debtor")
-
-        ## 数据赋值回原来的各主体
-        for i in range(cls.num_states):
-            cls.states_data_list[i] = states_data_array[i].copy()
-            cls.interstates_data_list[i] = interstates_data_array[i].copy()
 
         # cls.bank = bank  # BUG要考虑赋值之后类变量改变之后没有返过来赋值回原变量的问题
         # cls.interbank = interbank
