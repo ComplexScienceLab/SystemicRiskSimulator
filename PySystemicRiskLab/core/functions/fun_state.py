@@ -749,11 +749,11 @@ class BankState:
         is_states_data_changed_array = states_data_changes_matrix.any(axis=1)  # 示性向量之各状态数据是否已经变动。每个元素表示单个状态是否变动。
         if way == 'any':
             for i in range(cls.num_states):
-                states_data_array[i, :], states_data_changes_matrix[i, :] = cls.calc_state_functions_list[i](bank, interbank)  # 遍历计算各状态数据变动情况
+                states_data_array[i, :], states_data_changes_matrix[i, :] = cls.calc_state_functions_list[i](cls.bank, cls.interbank)  # 遍历计算各状态数据变动情况
             is_states_data_changed_array = states_data_changes_matrix.any(axis=1)
         else:
             ## 根据指定需要计算的状态计算相应的状态
-            states_data_array[cls.states_list.index(way), :], states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way](bank, interbank))
+            states_data_array[cls.states_list.index(way), :], states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way](cls.bank, cls.interbank))
             is_states_data_changed_array[cls.states_list.index(way)] = states_data_changes_matrix[cls.states_list.index(way), :].any()
             pass  # if
 
@@ -797,12 +797,12 @@ class BankState:
             cls.interstates_data_list[i] = interstates_data_array[i].copy()
 
         ## 更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。#FIXME
-        interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="creditor")
-        interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="debtor")
-        interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="creditor")
-        interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="debtor")
-        interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="creditor")
-        interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="debtor")
+        cls.interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="creditor")
+        cls.interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="debtor")
+        cls.interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="creditor")
+        cls.interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.ilq, goal="debtor")
+        cls.interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="creditor")
+        cls.interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="debtor")
 
         # cls.bank = bank  # BUG要考虑赋值之后类变量改变之后没有返过来赋值回原变量的问题
         # cls.interbank = interbank
