@@ -19,21 +19,6 @@ class BankState:
     ## 【状态集合列表】`states_list`
     states_list: list
 
-    # ## 【源状态网格矩阵】（笛卡尔积矩阵）`source_states_grid_matrix`#TODO 删除
-    # source_states_grid_matrix: np.array
-
-    # ## 【汇状态网格矩阵】（笛卡尔积矩阵）`target_states_grid_matrix`#TODO 删除
-    # target_states_grid_matrix: np.array
-
-    # ## 【源状态关系网格矩阵】`source_states_data_grid_matrix`#TODO 删除
-    # source_states_data_grid_matrix: np.array
-
-    # ## 【汇状态关系网格矩阵】`target_states_data_grid_matrix`#TODO 删除
-    # target_states_data_grid_matrix: np.array
-
-    # ## 【汇交互状态网格矩阵】（笛卡尔积矩阵）`target_interstates_grid_matrix`#TODO 删除
-    # target_interstates_grid_matrix = np.array
-
     ## 【状态数据集合列表】`states_data_list`
     states_data_list: list
 
@@ -96,12 +81,17 @@ class BankState:
     @classmethod
     def build_state_const_variables(cls, bank: BankCommercial, interbank: BankInterbank):
         """
-        构建各类状态常量变量。#TODO
+        构建各类状态常量变量。
+        
+        Args:
+            bank(BankCommercial): 银行个体众；
+            interbank(BankInterbank): 银行间个体众；
+        
         Returns:
-
+    
         """
 
-        cls.bank = bank  # BUG提前赋值会不会导致后续的bank变量不会更新？下同。
+        cls.bank = bank
         cls.interbank = interbank
 
         ## 设置【状态集合列表】`states_list`
@@ -116,7 +106,7 @@ class BankState:
 
         cls.num_states = len(cls.states_list)
 
-        ## 设置【状态集合数据列表】`states_data_list` # BUG提前赋值会不会导致后续的bank变量所指向的地址不再是一脉相承的bank呢？
+        ## 设置【状态集合数据列表】`states_data_list` 
         cls.states_data_list = [
             cls.bank.on,
             cls.bank.hel,
@@ -126,7 +116,7 @@ class BankState:
             cls.bank.off,
         ]
 
-        ## 设置【交互状态集合数据列表】`interstates_data_list`  # BUG提前赋值会不会导致后续的interbank变量所指向的地址不再是一脉相承的interbank呢？
+        ## 设置【交互状态集合数据列表】`interstates_data_list`
         cls.interstates_data_list = [
             cls.interbank.on,
             cls.interbank.hel,
@@ -145,9 +135,6 @@ class BankState:
             cls.calc_state_bankrupt,
             cls.calc_state_off
         ]
-
-        # ## 【是否改变状态矩阵】`is_states_changed_matrix`#TODO 删除
-        # cls.is_states_changed_matrix = np.full((cls.num_states, cls.num_states), False)
 
         ## 【计算状态函数集合字典集】`calc_state_functions_dicts`
         cls.calc_state_functions_dicts = dict(zip(cls.states_list, cls.calc_state_functions_list))
@@ -232,15 +219,6 @@ class BankState:
             cls.update_target_state_if_and,
         ]
 
-        # ## 设置目标交互状态网格矩阵`target_interstates_grid_matrix` #TODO 删除
-        # cls.target_interstates_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
-
-        # ## 分别构建【源状态网格矩阵】、【汇状态网格矩阵】（笛卡尔积矩阵）`state_grid_matrix`#TODO 删除
-        # cls.source_states_grid_matrix, cls.target_states_grid_matrix = np.meshgrid(cls.states_list, cls.states_list, indexing='ij')
-
-        # ## 构建【源汇状态关系网格矩阵】`states_relations_grid_matrix`#TODO 删除
-        # cls.states_relation_grid_matrix = np.stack((cls.source_states_grid_matrix, cls.target_states_grid_matrix), axis=-1)
-
         # ## 构建【状态关系索引表】`states_relations_indices_table` #HACK 暂时用不到
         # cls.states_relations_indices_table = np.column_stack([cls.source_states_grid_matrix.ravel(), cls.target_states_grid_matrix.ravel(), np.asarray(cls.state_relations_adjacent_matrix_01).ravel()])
 
@@ -318,155 +296,147 @@ class BankState:
         pass
 
     @classmethod
-    def calc_state_on(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行存在的。"""  # TODO
-        condition = (bank.hel | bank.isv | bank.ilq | bank.br)
-        source_state_changes = (bank.on != condition)
-        return condition.squeeze(), source_state_changes.squeeze()
-        # return condition, source_state_changes
-
-        # if source_state_changes.any():
-        #     bank.on = condition
-        #     interbank.on = (bank.on & bank.on.T)
-        #     # interbank.listOfCreditorsInOn = cls.calc_list_of_relation_in_state_of_banks(interbank, isState = bank.on, goal = "creditor") #HACK，未定义，无用。
-        #     # interbank.listOfDebtorsInOn = cls.calc_list_of_relation_in_state_of_banks(interbank, isState = bank.on, goal = "debtor") #HACK，未定义，无用。
-        #     pass
-        # return source_state_changes
+    def calc_state_on(cls):
+        """
+        计算示性向量之于银行存在的。
+        
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+            
+        """
+        result = (cls.bank.hel | cls.bank.isv | cls.bank.ilq | cls.bank.br)
+        source_state_changes = (cls.bank.on != result)
+        return result.squeeze(), source_state_changes.squeeze()
         pass
 
     @classmethod
-    def calc_state_healthy(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行健康的。"""  # TODO
-        condition = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
-        source_state_changes = (bank.hel != condition)
-        return condition.squeeze(), source_state_changes.squeeze()
-        # return condition, source_state_changes
+    def calc_state_healthy(cls):
+        """
+        计算示性向量之于银行健康的。
 
-        # if source_state_changes.any():
-        #     bank.hel = condition
-        #     interbank.hel = (bank.hel & bank.hel.T)
-        #     pass
-        # return source_state_changes
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = ((cls.bank.E_all >= LESS1) & (cls.bank.A_Q >= LESS1) & (cls.bank.Shock_def_t + LESS1 <= cls.bank.E_all) & (cls.bank.Shock_run_t + LESS1 <= cls.bank.A_Q) & (cls.bank.on))
+        source_state_changes = (cls.bank.hel != result)
+        return result.squeeze(), source_state_changes.squeeze()
         pass
 
     @classmethod
-    def calc_state_insolvent(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行资不抵债的。"""  # TODO
-        condition = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
-        source_state_changes = (bank.isv != condition)
-        return condition.squeeze(), source_state_changes.squeeze()
-        # return condition, source_state_changes
+    def calc_state_insolvent(cls):
+        """
+        计算示性向量之于银行资不抵债的。
 
-        # if source_state_changes.any():
-        #     bank.isv = condition
-        #     interbank.isv = (bank.isv | bank.isv.T)
-        #     interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="creditor")
-        #     interbank.deb_isv = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.isv, goal="debtor")
-        #     pass
-        # return source_state_changes
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = (((cls.bank.A_all < cls.bank.Z_all + LESS1) | (cls.bank.E_all < LESS1) | (cls.bank.Shock_def_t + LESS1 > cls.bank.E_all)) & cls.bank.on)
+        source_state_changes = (cls.bank.isv != result)
+        return result.squeeze(), source_state_changes.squeeze()
         pass
 
     @classmethod
-    def calc_state_illiquid(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行流动性短缺的。"""  # TODO
-        condition = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
-        source_state_changes = (bank.ilq != condition)
-        return condition.squeeze(), source_state_changes.squeeze()
-        # return condition, source_state_changes
+    def calc_state_illiquid(cls):
+        """
+        计算示性向量之于银行流动性短缺的。
 
-        # if source_state_changes.any():
-        #     bank.ilq = condition
-        #     interbank.ilq = (bank.ilq | bank.ilq.T)
-        #     interbank.cre_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="creditor")
-        #     interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
-        #     pass
-        # return source_state_changes
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = (((cls.bank.A_Q < LESS1) | (cls.bank.Shock_run_t + LESS1 > cls.bank.A_Q)) & cls.bank.on)
+        source_state_changes = (cls.bank.ilq != result)
+        return result.squeeze(), source_state_changes.squeeze()
         pass
 
     @classmethod
-    def calc_state_bankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行破产的。"""  # TODO
-        condition = (bank.isv | bank.ilq)  # TODO 这个仅仅是目前基准算法简化的做法
-        source_state_changes = (bank.br != condition)
-        return condition.squeeze(), source_state_changes.squeeze()
-        # return condition, source_state_changes
+    def calc_state_bankrupt(cls):
+        """
+        计算示性向量之于银行破产的。
 
-        # if source_state_changes.any():
-        #     bank.br = condition
-        #     interbank.br = (bank.br & bank.br.T)
-        #     interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
-        #     interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
-        #     pass
-        # return source_state_changes
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = (cls.bank.isv | cls.bank.ilq)  # TODO 这个仅仅是目前基准算法简化的做法
+        source_state_changes = (cls.bank.br != result)
+        return result.squeeze(), source_state_changes.squeeze()
         pass
 
     @classmethod
-    def calc_state_off(cls, bank: BankCommercial, interbank: BankInterbank):
-        """计算示性向量之于银行退出的。"""  # TODO
-        condition = bank.br | bank.off
-        source_state_changes = (bank.off != condition)
-        return condition.squeeze(), source_state_changes.squeeze()
-        # return condition, source_state_changes
+    def calc_state_off(cls):
+        """
+        计算示性向量之于银行退出的。
 
-        # if (bank.off != condition).any():
-        #     bank.off = condition
-        #     interbank.off = (bank.off & bank.off.T)
-        #     pass
-        # return source_state_changes
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = cls.bank.br | cls.bank.off
+        source_state_changes = (cls.bank.off != result)
+        return result.squeeze(), source_state_changes.squeeze()
         pass
 
     @classmethod
-    def calc_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
+    def calc_isNeededBoIB(cls):  # TODO 未适配
         """计算示性向量之于银行需要偿还银行间负债的。"""
-        bank.is_needed_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & bank.on)
+        cls.bank.is_needed_BoIB = ((cls.bank.Shock_IB_run_ilq_t > 0) & cls.bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
+    def calc_isEnabledBoIB(cls):  # TODO 未适配
         """计算示性向量之于银行能够偿还银行间负债的。"""
-        bank.is_enabled_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & (bank.A_Q > 0) & bank.on)
+        cls.bank.is_enabled_BoIB = ((cls.bank.Shock_IB_run_ilq_t > 0) & (cls.bank.A_Q > 0) & cls.bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoIB_from_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
+    def calc_isEnabledBoIB_from_isNeededBoIB(cls):  # TODO 未适配
         """计算示性向量之于银行能够偿还银行间负债的，从需要偿还银行间负债的。"""
-        bank.is_enabled_BoIB = (bank.is_needed_BoIB & (bank.A_Q > 0))
+        cls.bank.is_enabled_BoIB = (cls.bank.is_needed_BoIB & (cls.bank.A_Q > 0))
         pass
 
     @classmethod
-    def calc_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
+    def calc_isNeededBoD(cls):  # TODO 未适配
         """计算示性向量之于银行需要偿还居民部门存款的。"""
-        bank.is_needed_BoD = ((bank.Shock_D_run_t > 0) & bank.on)
+        cls.bank.is_needed_BoD = ((cls.bank.Shock_D_run_t > 0) & cls.bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
+    def calc_isEnabledBoD(cls):  # TODO 未适配
         """计算示性向量之于银行能够偿还居民部门存款的。"""
-        bank.is_enabled_BoD = ((bank.Shock_D_run_t > 0) & (bank.A_Q > 0) & bank.on)
+        cls.bank.is_enabled_BoD = ((cls.bank.Shock_D_run_t > 0) & (cls.bank.A_Q > 0) & cls.bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledBoD_from_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
+    def calc_isEnabledBoD_from_isNeededBoD(cls):  # TODO 未适配
         """计算示性向量之于银行能够偿还居民部门存款的，从需要偿还居民部门存款的。"""
-        bank.is_enabled_BoD = (bank.is_needed_BoD & (bank.A_Q > 0))
+        cls.bank.is_enabled_BoD = (cls.bank.is_needed_BoD & (cls.bank.A_Q > 0))
         pass
 
     @classmethod
-    def calc_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
+    def calc_isNeededLiP(cls):  # TODO 未适配
         """计算示性向量之于银行需要收回厂商贷款的。"""
-        bank.is_needed_LiP = ((bank.Shock_P_run_s > 0) & bank.on)
+        cls.bank.is_needed_LiP = ((cls.bank.Shock_P_run_s > 0) & cls.bank.on)
         pass
 
     @classmethod
-    def calc_isEnabledLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
+    def calc_isEnabledLiP(cls):  # TODO 未适配
         """计算示性向量之于银行能够收回厂商贷款的。"""
-        bank.is_enabled_LiP = ((bank.Shock_P_run_s > 0) & bank.on)  # HACK后续可能会补充条件 & producer.A_Q > 0
+        cls.bank.is_enabled_LiP = ((cls.bank.Shock_P_run_s > 0) & cls.bank.on)  # HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
     @classmethod
-    def calc_isEnabledLiP_from_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):  # TODO 未适配
+    def calc_isEnabledLiP_from_isNeededLiP(cls):  # TODO 未适配
         """计算示性向量之于银行能够收回厂商贷款的，从需要收回厂商贷款的。"""
-        bank.is_enabled_LiP = (bank.is_needed_LiP)  # HACK后续可能会补充条件 & producer.A_Q > 0
+        cls.bank.is_enabled_LiP = (cls.bank.is_needed_LiP)  # HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
     @classmethod
@@ -709,7 +679,7 @@ class BankState:
         pass
 
     @classmethod
-    def update_B_state(cls, bank: BankCommercial, interbank: BankInterbank, way: str = 'any'):  # TODO重命名成update_banks_states
+    def update_B_state(cls, way: str = 'any'):  # TODO重命名成update_banks_states
         """
         更新各银行之状态。
 
@@ -793,7 +763,7 @@ class BankState:
 
         ## 数据赋值回原来的各主体
         for i in range(cls.num_states):
-            cls.states_data_list[i][:] = np.expand_dims(states_data_array[i,:], axis=1)
+            cls.states_data_list[i][:] = np.expand_dims(states_data_array[i, :], axis=1)
             cls.interstates_data_list[i] = interstates_data_array[i].copy()
 
         ## 更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。#FIXME
