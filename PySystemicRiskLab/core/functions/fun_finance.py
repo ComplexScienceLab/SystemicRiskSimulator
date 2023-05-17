@@ -33,7 +33,7 @@ class Finance:
         pass  # def
 
     @classmethod
-    def update_finance_calculation(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, update_type='auto', by_way: str = 'all', target: str = 'any', source: str = 'any'):  # NOW
+    def update_finance_calculation(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, update_type='auto', by_way: str = 'all',  source: str = 'any'):  # NOW
         """
         更新财务计算。
 
@@ -51,32 +51,32 @@ class Finance:
             BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way=cls.update_variable_name)  # 更新交易
             Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way=cls.update_variable_name)  # 更新冲击
             BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way=cls.update_variable_name)  # 更新资产负债表
-            BankState.update_states(bank, interbank, target='any', source='any')  # 更新状态
+            BankState.update_states(way='any')  # 更新状态
         if update_type == 'all':
             BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way='all')  # 更新交易
             Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way='all')  # 更新冲击
             BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way='all')  # 更新资产负债表
-            BankState.update_states(bank, interbank, target='any', source='any')  # 更新状态
+            BankState.update_states(way='any')  # 更新状态
         elif update_type == 'transfer':
             BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way=by_way)  # 更新交易
             Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way='all')  # 更新冲击
             BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way='all')  # 更新资产负债表
-            BankState.update_states(bank, interbank, target='any', source='any')  # 更新状态
+            BankState.update_states(way='any')  # 更新状态
         elif update_type == 'shock':
             BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way='all')  # 更新交易
             Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way=by_way)  # 更新冲击
             BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way='all')  # 更新资产负债表
-            BankState.update_states(bank, interbank, target='any', source='any')  # 更新状态
+            BankState.update_states(way='any')  # 更新状态
         elif update_type == 'balance sheet':
             BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way='all')  # 更新交易
             Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way='all')  # 更新冲击
             BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way=by_way)  # 更新资产负债表
-            BankState.update_states(bank, interbank, target='any', source='any')  # 更新状态
+            BankState.update_states(way='any')  # 更新状态
         elif update_type == 'state':
             BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way='all')  # 更新交易
             Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way='all')  # 更新冲击
             BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way='all')  # 更新资产负债表
-            BankState.update_states(bank, interbank, target=target, source=source)  # 更新状态
+            BankState.update_states( way=source)  # 更新状态
         else:
             raise Exception("关键词update_type取词错误".format(update_type))
             pass

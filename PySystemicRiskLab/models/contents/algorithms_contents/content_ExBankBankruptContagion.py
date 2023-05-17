@@ -20,6 +20,7 @@ def content_ExBankBankruptContagion(BB: BankCommercial, IB: BankInterbank, b: St
     
     BB.br[para['list_Shock_exIB_t']] = para['Shock_exIB_t'][para['list_Shock_exIB_t']]
     BankState.update_states(way='any')
+    # BankState.update_B_state(BB, IB, target='bankrupt', source='any')
 
     return BB, IB
 

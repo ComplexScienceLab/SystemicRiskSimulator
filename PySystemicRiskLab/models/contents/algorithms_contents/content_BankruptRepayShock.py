@@ -17,6 +17,7 @@ def content_BankruptRepayShock(BB: BankCommercial, IB: BankInterbank, b: StateTy
     ## # 破产银行遭受偿还冲击
     
     BankState.update_states(way='any')
+    # BankState.update_B_state(BB, IB, target='bankrupt', source='any')
     BB.Shock_D_run_t[BB.br] = BB.Z_D[BB.br]  # 计算破产银行遭受偿还居民存款冲击
     BB.Shock_IB_t[BB.br] = BB.Z_IB_all[BB.br]  # 计算破产银行遭受偿还银行间负债冲击
 

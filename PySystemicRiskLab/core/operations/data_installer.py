@@ -361,39 +361,36 @@ class DataInstaller:
             raise ("关键词" + str(init_method) + "取值错误！")
             pass
 
-
-
         # ## NOTE 当用pandas数据结构时：
         # A = pd.Series([BB, IB], index=['BB', 'IB'])
 
         # # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组 #HACK无用
         # A_data = Collector.collect(A, None, env)
 
-      
         b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置A.BB示性变量
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
 
         ## 构建Agent模型
         ## NOTE 当用对象字段数据结构时。
-        #HACK 注意这时候`b`、`ib`变量在后续过程中没有发生变动，几乎就是一个鸡肋的携带物。目前暂时保留，后续再处理。
+        # HACK 注意这时候`b`、`ib`变量在后续过程中没有发生变动，几乎就是一个鸡肋的携带物。目前暂时保留，后续再处理。
         A = SystemicRiskAgent(
             1,  # 编号（必备的）
             BB,  # 商业银行群
-            b, # 商业银行群示性变量
+            b,  # 商业银行群示性变量
             IB,  # 银行间邻接矩阵
-            ib, # 银行间邻接矩阵示性变量
+            ib,  # 银行间邻接矩阵示性变量
         )
         return A
         pass  # method
+
     @classmethod
     def initialize_data(cls, A, para, env):
         ## 更新各银行之变量，在第一回合初始时 # BUG
         BankTransfer.update_B_transfer(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
         Shock.update_B_Shock(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有冲击变量，在第一回合开始时
         BalanceSheet.update_B_balance_sheet(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之资产负债表变量
-        BankState.update_states(A.BB, A.IB, way='any')  # 更新各银行之状态示性变量
+        BankState.update_states(way='any')  # 更新各银行之状态示性变量
         return A
         pass
 
     pass  # class
-
