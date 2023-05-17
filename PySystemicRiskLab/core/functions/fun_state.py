@@ -679,14 +679,12 @@ class BankState:
         pass
 
     @classmethod
-    def update_B_state(cls, way: str = 'any'):  # TODO重命名成update_banks_states
+    def update_states(cls, way: str = 'any'):
         """
         更新各银行之状态。
 
         Args:
-            bank(BankCommercial): 银行个体众
-            interbank(BankInterbank): 银行间个体众
-
+            way (str): 参数，确定更新方式。
 
         参数``way``可选项：#TODO
 
@@ -704,7 +702,7 @@ class BankState:
         - ``enabled collect A_P``:  到是否可以收回厂商贷款状态；
 
 
-        Returns: #TODO
+        Returns: None
 
         """
 

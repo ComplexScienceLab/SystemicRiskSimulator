@@ -41,7 +41,7 @@ def content_InterBankIlliquidRepay(BB: BankCommercial, IB: BankInterbank, b: Sta
     BB.A_Q[b] += (BB.Li_IB_all[b] - BB.Bo_IB_all[b])  # 各银行流动资金变动，当收回相应的银行间贷款、偿还相应的银行间借款时
     BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='A_Q')
 
-    BankState.update_B_state(BB, IB, way='illiquid')  # 更新银行状态之流动性短缺的与健康的
+    BankState.update_states(BB, IB, way='illiquid')  # 更新银行状态之流动性短缺的与健康的
 
     BankTransfer.update_B_transfer(BB, IB, b, ib, by_way='clear transfer all')  # 清零所有不必要的借贷流量变量；#BUG这个是否有必要？
 

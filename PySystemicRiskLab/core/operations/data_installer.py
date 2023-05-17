@@ -391,7 +391,7 @@ class DataInstaller:
         BankTransfer.update_B_transfer(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
         Shock.update_B_Shock(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有冲击变量，在第一回合开始时
         BalanceSheet.update_B_balance_sheet(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之资产负债表变量
-        BankState.update_B_state(A.BB, A.IB, way='any')  # 更新各银行之状态示性变量
+        BankState.update_states(A.BB, A.IB, way='any')  # 更新各银行之状态示性变量
         return A
         pass
 
