@@ -19,8 +19,8 @@ def content_ExBankBankruptContagion(BB: BankCommercial, IB: BankInterbank, b: St
     # env['stage_name'] = "外生破产银行间挤兑流动冲击算法"
     
     BB.br[para['list_Shock_exIB_t']] = para['Shock_exIB_t'][para['list_Shock_exIB_t']]
-    BankState.update_states(way='any')
-    # BankState.update_B_state(BB, IB, target='bankrupt', source='any')
+    BankState.update_states(way='bankrupt')
+    # BankState.update_B_state(BB, IB, target='bankrupt', source='any') #FIXME
 
     return BB, IB
 

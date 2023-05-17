@@ -29,7 +29,7 @@ def content_ExBankInsolventShock(BB: BankCommercial, IB: BankInterbank, b: State
     BB.A_P[b] = np.maximum(BB.A_P[b] - BB.Shock_P_def_t[b], 0.0)  # 银行之非银行间资产变动
     BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='A_P')
     BankState.update_states(way='insolvent')
-    # BankState.update_B_state(BB, IB, target='insolvent', source='healthy')
+    # BankState.update_B_state(BB, IB, target='insolvent', source='healthy') #FIXME
 
 
     ## HACK以下片段是复制自`content_InterBankInsolventShock`的
