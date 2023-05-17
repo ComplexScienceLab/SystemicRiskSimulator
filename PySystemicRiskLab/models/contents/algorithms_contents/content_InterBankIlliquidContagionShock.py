@@ -26,7 +26,7 @@ def content_InterBankIlliquidContagionShock(BB: BankCommercial, IB: BankInterban
         IB.Shock_IB_run_ilq[IB.deb_ilq[i], i] = IB.A_IB[i, IB.deb_ilq[i]] * BB.Shock_IB_run_ilq_s[i] / BB.A_IB_all[i]
         pass
     Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_IB_run_ilq')  # 更新挤兑流动冲击源头变量Shock_run_t
-    BankState.update_states(BB, IB, way='healthy')
+    BankState.update_states(way='healthy')
 
     # ##BUG 方式二：每个银行可以有多次分配传染冲击之行为。
     # BB.Shock_IB_run_ilq_s[BB.ilq] = abs((BB.Shock_run_t[BB.ilq] - BB.A_Q[BB.ilq]) / (BB.A_P[BB.ilq] + BB.A_IB_all[BB.ilq]) * BB.A_IB_all[BB.ilq]) # 计算应银行内冲击传导至银行间传染冲击
@@ -36,7 +36,7 @@ def content_InterBankIlliquidContagionShock(BB: BankCommercial, IB: BankInterban
     #     IB.Shock_IB_run_ilq[IB.deb[i], i] = IB.A_IB[i, IB.deb[i]] * BB.Shock_IB_run_ilq_s[i] / BB.A_IB_all[i]
     #     pass
     # update_B_Shock(BB, IB, b, ib, by_way = 'Shock_IB_run_ilq') # 加总各单个债务银行遭受总银行间挤兑流动冲击
-    # update_states(BB, IB, target='illiquid', source='healthy') # 更新各银行之状态，从健康到流动性短缺
+    # update_states(target='illiquid', source='healthy') # 更新各银行之状态，从健康到流动性短缺
 
     return BB, IB
     pass  # method
