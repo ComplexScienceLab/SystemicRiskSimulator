@@ -717,13 +717,18 @@ class BankState:
         is_states_data_changed_array = states_data_changes_matrix.any(axis=1)  # 示性向量之各状态数据是否已经变动。每个元素表示单个状态是否变动。
         if way == 'any':
             for i in range(cls.num_states):
-                states_data_array[i, :], states_data_changes_matrix[i, :] = cls.calc_state_functions_list[i](cls.bank, cls.interbank)  # 遍历计算各状态数据变动情况
+                states_data_array[i, :], states_data_changes_matrix[i, :] = cls.calc_state_functions_list[i]()  # 遍历计算各状态数据变动情况
             is_states_data_changed_array = states_data_changes_matrix.any(axis=1)
         else:
             ## 根据指定需要计算的状态计算相应的状态
-            states_data_array[cls.states_list.index(way), :], states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way](cls.bank, cls.interbank))
+            states_data_array[cls.states_list.index(way), :], states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way]())
             is_states_data_changed_array[cls.states_list.index(way)] = states_data_changes_matrix[cls.states_list.index(way), :].any()
             pass  # if
+
+        target_states_data_grid_matrix = np.full((cls.num_states, cls.num_states, env['num_bank']), np.copy(NONE1).squeeze())
+        for i in range(cls.num_states):
+            for j in range(cls.num_states):
+                target_states_data_grid_matrix[i,j] = states_data_array[j].copy()
 
         ## 决策是否根据初始计算的源状态更新汇状态：根据状态关系表、是否自动更新情况、状态更新情况决策。重复更新状态，直至无状态需要更新；
         loop_count = 0
@@ -731,10 +736,10 @@ class BankState:
             states_data_array_old: np.array = states_data_array.copy()
 
             ## 根据需要更新的状态，用【更新状态关系函数邻接矩阵01】更新相应的【汇状态数据矩阵】
-            target_states_data_grid_matrix = np.empty((cls.num_states, cls.num_states), dtype=object)
-            for i in range(cls.num_states):
+            # for i in range(cls.num_states):
+            for i in np.where(is_states_data_changed_array)[0]:
                 for j in range(cls.num_states):
-                    target_states_data_grid_matrix[i][j] = cls.update_state_functions_adjacent_matrix_01[i][j](states_data_array[i].copy(), states_data_changes_matrix[i, :], states_data_array[j].copy())  # FIXME输出结果错误
+                    target_states_data_grid_matrix[i,j] = cls.update_state_functions_adjacent_matrix_01[i,j](states_data_array[i].copy(), states_data_changes_matrix[i, :], states_data_array[j].copy())  # FIXME输出结果错误
 
             ## 根据【汇状态数据矩阵】，和相应的状态关系，用【更新状态关系函数邻接矩阵02】进一步运算累加所有【汇状态数据矩阵】，得到各【汇状态数据数组】，以反映状态更新情况
             for i in range(len(cls.state_entity_indices_list)):
