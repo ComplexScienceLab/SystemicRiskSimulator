@@ -17,20 +17,14 @@ def content_InterBankIlliquidAllocate(BB: BankCommercial, IB: BankInterbank, b: 
     ## # 流动性短缺银行间挤兑流动分配借贷流量算法
     # env['stage_name'] = "银行间挤兑流动分配借贷流量算法"
 
-    BankState.update_states(way='needed collect A_P')
-    # BankState.update_B_state(BB, IB, target='needed collect A_P', source='any') #FIXME
-    BankState.update_states(way='enabled collect A_P')
+    BankState.calc_isEnabledLiP(BB, IB)
     # BankState.update_B_state(BB, IB, target='enabled collect A_P', source='any') #FIXME
     BB.Li_P[BB.is_enabled_LiP] = BB.Shock_P_run_s[BB.is_enabled_LiP]  # 计算银行收回厂商贷款流量
     BankTransfer.update_B_transfer(BB, IB, b, ib, by_way='Li_P')
 
-    BankState.update_states(way='needed repay Z_D')
-    # BankState.update_B_state(BB, IB, target='needed repay Z_D', source='any') #FIXME
-    BankState.update_states(way='enabled repay Z_D')
+    BankState.calc_isEnabledBoD(BB,IB)
     # BankState.update_B_state(BB, IB, target='enabled repay Z_D', source='any') #FIXME
-    BankState.update_states(way='needed repay IB')
-    # BankState.update_B_state(BB, IB, target='needed repay IB', source='any') #FIXME
-    BankState.update_states(way='enabled repay IB')
+    BankState.calc_isEnabledBoIB(BB, IB)
     # BankState.update_B_state(BB, IB, target='enabled repay IB', source='any')e #FIXME
     BB.Bo_all[BB.is_enabled_BoIB | BB.is_enabled_BoD] = np.minimum(BB.A_Q[BB.is_enabled_BoIB | BB.is_enabled_BoD], BB.Shock_run_t[BB.is_enabled_BoIB | BB.is_enabled_BoD])  # 计算银行偿还借款总流量 #BUG
     BB.Bo_D[BB.is_enabled_BoIB | BB.is_enabled_BoD] = BB.Shock_D_run_t[BB.is_enabled_BoIB | BB.is_enabled_BoD] * (BB.Bo_all[BB.is_enabled_BoIB | BB.is_enabled_BoD] / BB.Shock_run_t[BB.is_enabled_BoIB | BB.is_enabled_BoD])  # 计算银行偿还居民借款流量

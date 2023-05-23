@@ -22,8 +22,8 @@ class BankState:
     ## 【状态数据集合列表】`states_data_list`
     states_data_list: list
 
-    ## 【交互状态数据集合列表】`interstates_data_list`
-    interstates_data_list: list
+    # ## 【交互状态数据集合列表】`interstates_data_list`
+    # interstates_data_list: list
 
     ## 【计算状态函数集合列表】`calc_state_functions_list`
     calc_state_functions_list: np.array
@@ -102,6 +102,12 @@ class BankState:
             'illiquid',
             'bankrupt',
             'off',
+            # 'needed repay IB',
+            # 'enabled repay IB',
+            # 'needed repay Z_D',
+            # 'enabled repay Z_D',
+            # 'needed collect A_P',
+            # 'enabled collect A_P',
         ]
 
         cls.num_states = len(cls.states_list)
@@ -114,17 +120,23 @@ class BankState:
             cls.bank.ilq,
             cls.bank.br,
             cls.bank.off,
+            # cls.bank.is_needed_BoIB, #HACK 以下的已经注释了的部分，仅用于在外部手动计算，不需要更新
+            # cls.bank.is_enabled_BoIB,
+            # cls.bank.is_needed_BoD,
+            # cls.bank.is_enabled_BoD,
+            # cls.bank.is_needed_LiP,
+            # cls.bank.is_enabled_LiP,
         ]
 
-        ## 设置【交互状态集合数据列表】`interstates_data_list`
-        cls.interstates_data_list = [
-            cls.interbank.on,
-            cls.interbank.hel,
-            cls.interbank.isv,
-            cls.interbank.ilq,
-            cls.interbank.br,
-            cls.interbank.off,
-        ]
+        # ## 设置【交互状态集合数据列表】`interstates_data_list` #TODO无用
+        # cls.interstates_data_list = [
+        #     cls.interbank.on,
+        #     cls.interbank.hel,
+        #     cls.interbank.isv,
+        #     cls.interbank.ilq,
+        #     cls.interbank.br,
+        #     cls.interbank.off,
+        # ]
 
         ## 【计算状态函数集合列表】`calc_state_functions_list`
         cls.calc_state_functions_list = [
@@ -133,7 +145,13 @@ class BankState:
             cls.calc_state_insolvent,
             cls.calc_state_illiquid,
             cls.calc_state_bankrupt,
-            cls.calc_state_off
+            cls.calc_state_off,
+            # cls.calc_isNeededBoIB, #HACK 以下的已经注释了的部分，仅用于在外部手动计算，不需要更新
+            # cls.calc_isEnabledBoIB,
+            # cls.calc_isNeededBoD,
+            # cls.calc_isEnabledBoD,
+            # cls.calc_isNeededLiP,
+            # cls.calc_isEnabledLiP,
         ]
 
         ## 【计算状态函数集合字典集】`calc_state_functions_dicts`
@@ -264,7 +282,7 @@ class BankState:
         pass  # def
 
     # @classmethod
-    # def get_relation_of_states(cls, source_state: StateType, target_state: StateType, mode: str = 'all'):  # HACK暂时用不到
+    # def get_relation_of_states(cls, source_state: StateType, target_state: StateType, mode: str = 'all'):  # HACK不需要
     #     """
     #     获取两个状态之间的关系。
     #
@@ -286,14 +304,14 @@ class BankState:
     #         raise ValueError("参数`mode`的值不正确。")
     #     pass  # def
 
-    @classmethod
-    def init_list_of_relation_in_state_of_banks(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK暂时用不到
-        """
-        初始化银行状态关系列表
-        """
-        interbank.cre = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="creditor")
-        interbank.deb = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="debtor")
-        pass
+    # @classmethod
+    # def init_list_of_relation_in_state_of_banks(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK不需要
+    #     """
+    #     初始化银行状态关系列表
+    #     """
+    #     interbank.cre = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="creditor")
+    #     interbank.deb = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.on, goal="debtor")
+    #     pass
 
     @classmethod
     def calc_state_on(cls):
@@ -385,59 +403,61 @@ class BankState:
         return result.squeeze(), source_state_changes.squeeze()
         pass
 
-    @classmethod
-    def calc_isNeededBoIB(cls):  # TODO 未适配
-        """计算示性向量之于银行需要偿还银行间负债的。"""
-        cls.bank.is_needed_BoIB = ((cls.bank.Shock_IB_run_ilq_t > 0) & cls.bank.on)
-        pass
+    ## #NOTE 以下的几个计算函数将在算法内容中单独使用，不用于联动同步计算。
+
+    # @classmethod
+    # def calc_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):
+    #     """计算示性向量之于银行需要偿还银行间负债的。""" # HACK虽然无用，但是可以先保留
+    #     bank.is_needed_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & bank.on)
+    #     pass
 
     @classmethod
-    def calc_isEnabledBoIB(cls):  # TODO 未适配
+    def calc_isEnabledBoIB(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行能够偿还银行间负债的。"""
-        cls.bank.is_enabled_BoIB = ((cls.bank.Shock_IB_run_ilq_t > 0) & (cls.bank.A_Q > 0) & cls.bank.on)
+        bank.is_enabled_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & (bank.A_Q > 0) & bank.on)
         pass
 
-    @classmethod
-    def calc_isEnabledBoIB_from_isNeededBoIB(cls):  # TODO 未适配
-        """计算示性向量之于银行能够偿还银行间负债的，从需要偿还银行间负债的。"""
-        cls.bank.is_enabled_BoIB = (cls.bank.is_needed_BoIB & (cls.bank.A_Q > 0))
-        pass
+    # @classmethod
+    # def calc_isEnabledBoIB_from_isNeededBoIB(cls, bank: BankCommercial, interbank: BankInterbank):
+    #     """计算示性向量之于银行能够偿还银行间负债的，从需要偿还银行间负债的。""" # HACK虽然无用，但是可以先保留
+    #     bank.is_enabled_BoIB = (bank.is_needed_BoIB & (bank.A_Q > 0))
+    #     pass
+
+    # @classmethod
+    # def calc_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):
+    #     """计算示性向量之于银行需要偿还居民部门存款的。""" # HACK虽然无用，但是可以先保留
+    #     bank.is_needed_BoD = ((bank.Shock_D_run_t > 0) & bank.on)
+    #     pass
 
     @classmethod
-    def calc_isNeededBoD(cls):  # TODO 未适配
-        """计算示性向量之于银行需要偿还居民部门存款的。"""
-        cls.bank.is_needed_BoD = ((cls.bank.Shock_D_run_t > 0) & cls.bank.on)
-        pass
-
-    @classmethod
-    def calc_isEnabledBoD(cls):  # TODO 未适配
+    def calc_isEnabledBoD(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行能够偿还居民部门存款的。"""
-        cls.bank.is_enabled_BoD = ((cls.bank.Shock_D_run_t > 0) & (cls.bank.A_Q > 0) & cls.bank.on)
+        bank.is_enabled_BoD = ((bank.Shock_D_run_t > 0) & (bank.A_Q > 0) & bank.on)
         pass
 
-    @classmethod
-    def calc_isEnabledBoD_from_isNeededBoD(cls):  # TODO 未适配
-        """计算示性向量之于银行能够偿还居民部门存款的，从需要偿还居民部门存款的。"""
-        cls.bank.is_enabled_BoD = (cls.bank.is_needed_BoD & (cls.bank.A_Q > 0))
-        pass
+    # @classmethod
+    # def calc_isEnabledBoD_from_isNeededBoD(cls, bank: BankCommercial, interbank: BankInterbank):
+    #     """计算示性向量之于银行能够偿还居民部门存款的，从需要偿还居民部门存款的。""" # HACK虽然无用，但是可以先保留
+    #     bank.is_enabled_BoD = (bank.is_needed_BoD & (bank.A_Q > 0))
+    #     pass
+
+    # @classmethod
+    # def calc_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):
+    #     """计算示性向量之于银行需要收回厂商贷款的。""" # HACK虽然无用，但是可以先保留
+    #     bank.is_needed_LiP = ((bank.Shock_P_run_s > 0) & bank.on)
+    #     pass
 
     @classmethod
-    def calc_isNeededLiP(cls):  # TODO 未适配
-        """计算示性向量之于银行需要收回厂商贷款的。"""
-        cls.bank.is_needed_LiP = ((cls.bank.Shock_P_run_s > 0) & cls.bank.on)
-        pass
-
-    @classmethod
-    def calc_isEnabledLiP(cls):  # TODO 未适配
+    def calc_isEnabledLiP(cls, bank: BankCommercial, interbank: BankInterbank):
         """计算示性向量之于银行能够收回厂商贷款的。"""
-        cls.bank.is_enabled_LiP = ((cls.bank.Shock_P_run_s > 0) & cls.bank.on)  # HACK后续可能会补充条件 & producer.A_Q > 0
+        bank.is_enabled_LiP = ((bank.Shock_P_run_s > 0) & bank.on)  # HACK后续可能会补充条件 & producer.A_Q > 0
         pass
 
-    @classmethod
-    def calc_isEnabledLiP_from_isNeededLiP(cls):  # TODO 未适配
-        """计算示性向量之于银行能够收回厂商贷款的，从需要收回厂商贷款的。"""
-        cls.bank.is_enabled_LiP = (cls.bank.is_needed_LiP)  # HACK后续可能会补充条件 & producer.A_Q > 0
-        pass
+    # @classmethod
+    # def calc_isEnabledLiP_from_isNeededLiP(cls, bank: BankCommercial, interbank: BankInterbank):
+    #     """计算示性向量之于银行能够收回厂商贷款的，从需要收回厂商贷款的。""" # HACK虽然无用，但是可以先保留
+    #     bank.is_enabled_LiP = (bank.is_needed_LiP)  # HACK后续可能会补充条件 & producer.A_Q > 0
+    #     pass
 
     @classmethod
     def update_state_if_equity(cls, source_state: StateType, source_state_changes: StateType, target_state: StateType):
@@ -636,15 +656,15 @@ class BankState:
         cls.interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.br, goal="debtor")
         pass  # def
 
-    @classmethod
-    def together_isOn(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK虽然无用，但是可以先保留
-        """汇总示性向量之于银行存在的。"""
-        condition = (bank.hel | bank.isv | bank.ilq | bank.br)
-        if (bank.on != condition).any():
-            bank.on = condition
-            interbank.on = (bank.on & bank.on.T)
-            pass
-        pass
+    # @classmethod
+    # def together_isOn(cls, bank: BankCommercial, interbank: BankInterbank):  # HACK虽然无用，但是可以先保留
+    #     """汇总示性向量之于银行存在的。"""
+    #     condition = (bank.hel | bank.isv | bank.ilq | bank.br)
+    #     if (bank.on != condition).any():
+    #         bank.on = condition
+    #         interbank.on = (bank.on & bank.on.T)
+    #         pass
+    #     pass
 
     @classmethod
     def calc_list_of_relation_in_state_of_banks(cls, interbank: BankInterbank, isState: StateType, goal: str):
@@ -671,7 +691,7 @@ class BankState:
             is_exposure = ((interbank.Z_IB > 0.0) & isState)
         else:
             pass
-        list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(env['num_bank'])])  # BUG TODO：用None会导致整个数据类型变成object，而不是array，所以需要改成np.nan
+        list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(env['num_bank'])])
         for i in range(env['num_bank']):
             list_of_relation_in_state_of_banks[i] = np.where(is_exposure[i, :])[0]  # 获取对应状态下的债权或者债务关系的银行列表
             pass
@@ -686,7 +706,7 @@ class BankState:
         Args:
             way (str): 参数，确定更新方式。
 
-        参数``way``可选项：#TODO
+        参数``way``可选项：
 
         - ``any``:  到任意状态；
         - ``healthy``:  到健康状态；
@@ -694,12 +714,6 @@ class BankState:
         - ``illiquid``:  到流动性短缺状态；
         - ``bankrupt``:  到破产状态；
         - ``off``:  到退出状态；
-        - ``needed repay IB``:  到是否需要偿还银行间借款状态；
-        - ``enabled repay IB``:  到是否可以偿还银行间借款状态；
-        - ``needed repay Z_D``:  到是否需要偿还居民存款状态；
-        - ``enabled repay Z_D``:  到是否需要偿还借款状态；
-        - ``needed collect A_P``:  到是否可以收回厂商贷款状态；
-        - ``enabled collect A_P``:  到是否可以收回厂商贷款状态；
 
 
         Returns: None
@@ -709,8 +723,8 @@ class BankState:
         ## 设置状态集合数据数组`states_data_array`
         states_data_array = np.asarray(cls.states_data_list).squeeze()
 
-        ## 设置交互状态集合数据数组`interstates_data_array`
-        interstates_data_array = np.asarray(cls.interstates_data_list)
+        # ## 设置交互状态集合数据数组`interstates_data_array`
+        # interstates_data_array = np.asarray(cls.interstates_data_list)
 
         ## 指定而计算源状态；
         states_data_changes_matrix = np.full((cls.num_states, env['num_bank']), False)  # 示性矩阵之各状态数据变动情况。每列表示单个状态之各主体变量是否变动。
@@ -719,10 +733,12 @@ class BankState:
             for i in range(cls.num_states):
                 states_data_array[i, :], states_data_changes_matrix[i, :] = cls.calc_state_functions_list[i]()  # 遍历计算各状态数据变动情况
             is_states_data_changed_array = states_data_changes_matrix.any(axis=1)
-        else:
+        elif way in cls.states_list:
             ## 根据指定需要计算的状态计算相应的状态
             states_data_array[cls.states_list.index(way), :], states_data_changes_matrix[cls.states_list.index(way), :] = np.squeeze(cls.calc_state_functions_dicts[way]())
             is_states_data_changed_array[cls.states_list.index(way)] = states_data_changes_matrix[cls.states_list.index(way), :].any()
+        else:
+            raise Exception("关键词 way 取词错误".format(way))
             pass  # if
 
         target_states_data_grid_matrix = np.full((cls.num_states, cls.num_states, env['num_bank']), np.copy(NONE1).squeeze())
@@ -748,20 +764,19 @@ class BankState:
 
             ## 记录是否有状态更新
             states_data_changes_matrix = states_data_array ^ states_data_array_old
-            # states_data_changes_matrix = (states_data_array ^ states_data_array_old).squeeze()
             is_states_data_changed_array = states_data_changes_matrix.any(axis=1)
 
             loop_count += 1
             pass  # while
 
-        ## 计算交互状态
-        for i in range(cls.num_states):
-            interstates_data_array[i] = (np.expand_dims(states_data_array[i], axis=1) & np.expand_dims(states_data_array[i], axis=0))
+        # ## 计算交互状态 #TODO无用
+        # for i in range(cls.num_states):
+        #     interstates_data_array[i] = (np.expand_dims(states_data_array[i], axis=1) & np.expand_dims(states_data_array[i], axis=0))
 
-            ## 数据赋值回原来的各主体
+        ## 数据赋值回原来的各主体
         for i in range(cls.num_states):
             cls.states_data_list[i][:] = np.expand_dims(states_data_array[i, :], axis=1)
-            cls.interstates_data_list[i] = interstates_data_array[i].copy()
+            # cls.interstates_data_list[i] = interstates_data_array[i].copy() #HACK不需要
 
         ## 更新银行间市场interbank之各状态下之信息列表之于各银行之债权方与债务方之银行编号。#FIXME
         cls.interbank.cre_isv = cls.calc_list_of_relation_in_state_of_banks(cls.interbank, isState=cls.bank.isv, goal="creditor")
