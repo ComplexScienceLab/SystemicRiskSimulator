@@ -178,157 +178,157 @@ class Shock:
     #     bank.Shock_B_Z = np.zeros(env['num_bank'])
     #     pass
 
-    @classmethod
-    def update_B_Shock(cls, bank: BankCommercial, interbank: BankInterbank, bankState, interbankState, by_way: str = 'all'):
-        """
-        更新各银行之冲击。
-        
-        参数``by_way``可选值：
-        
-            ``all``:  更新全部冲击变量；
-                    
-            ``clear Shock_IB and Shock_exIB``:  清零本回合结束时，除了``Shock_{B}``系列的变量以外的，所有不必要的冲击变量，暨所有``Shock_{IB}``系列的变量、``Shock_{exIB}``系列的变量；
-            
-            ``clear Shock_B_A and Shock_B_Z``:  清零银行内资产负债冲击变量；#HACK无用
-            
-            ``Shock_P_def_t``:  已知``Shock_{P,def}[i]``，更新其余冲击变量；
-            
-            ``Shock_P_run_s``:  已知``Shock_{P,run}[i]``，更新其余冲击变量；
-            
-            ``Shock_D_run_t``:  已知``Shock_{D,run}[i]``，更新其余冲击变量；
-            
-            ``Shock_D_def_s``:  已知``Shock_{D,def}[i]``，更新其余冲击变量；
-            
-            ``Shock_B_A``:  已知``Shock_{B,b}``，更新其余冲击变量；
-            
-            ``Shock_B_Z``:  已知``Shock_{B,Z}``，更新其余冲击变量；
-            
-            ``Shock_IB_def_s``:  已知``Shock_{IB,def}[: ,i_{isv}]``，更新其余冲击变量；
-            
-            ``Shock_IB_run_ilq_s``:  已知``Shock_{IB,run}[: ,i_{ilq}]``，更新其余冲击变量；
-            
-            ``Shock_IB_run_br_s``:  已知``Shock_{IB,run}[: ,i_{br}]``，更新其余冲击变量；
-            
-            ``Shock_IB_def``:  已知``Shock_{IB,def}[j,i_{isv}]``，更新其余冲击变量；
-            
-            ``Shock_IB_run_ilq``:  已知``Shock_{IB,run}[j,i_{ilq}]``，更新其余冲击变量；
-            
-            ``Shock_IB_run_br``:  已知``Shock_{IB,run}[j,i_{br}]``，更新其余冲击变量；
-            
-            ``Shock_IB_def_t``:  已知``Shock_{IB,def}[j,: }],:  \\in i_{isv}``，更新其余冲击变量；
-            
-            ``Shock_IB_run_ilq_t``:  已知``Shock_{IB,run}[j,: }],:  \\in i_{ilq}``，更新其余冲击变量；
-            
-            ``Shock_IB_run_br_t``:  已知``Shock_{IB,run}[j,: }],:  \\in i_{br}``，更新其余冲击变量；
-            
-
-        Args:
-            by_way:str:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
-
-        """
-        if by_way == 'all':
-            # cls.together_Shock_B(bank, bankState) #HACK无用
-            cls.together_Shock_IB_run_source(bank, bankState)
-            cls.together_Shock_IB_source(bank, bankState)
-            cls.together_Shock_exIB_source(bank, bankState)
-            cls.together_Shock_source(bank, bankState)
-            cls.together_Shock_def_source(bank, bankState)
-            cls.together_Shock_run_source(bank, bankState)
-            cls.together_Shock_IB_run(interbank, interbankState)
-            cls.together_Shock_IB(interbank, interbankState)
-            cls.sum_Shock_IB_def_target(bank, interbank, bankState, interbankState)
-            cls.sum_Shock_IB_run_ilq_target(bank, interbank, bankState, interbankState)
-            cls.sum_Shock_IB_run_br_target(bank, interbank, bankState, interbankState)
-            cls.together_Shock_IB_run_target(bank, bankState)
-            cls.together_Shock_IB_target(bank, bankState)
-            cls.together_Shock_exIB_target(bank, bankState)
-            cls.together_Shock_target(bank, bankState)
-            cls.together_Shock_def_target(bank, bankState)
-            cls.together_Shock_run_target(bank, bankState)
-        elif by_way == 'clear Shock_IB and Shock_exIB':
-            cls.clear_Shock_IB_and_exIB(bank, interbank, bankState, interbankState)
-            cls.together_Shock_IB_run_source(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_IB_source(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_exIB_source(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_source(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_def_source(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_run_source(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_IB_run(interbank, StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-            cls.together_Shock_IB(interbank, StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-            cls.sum_Shock_IB_def_target(bank, interbank, StateType((bank.on) | (bank.off)), StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-            cls.sum_Shock_IB_run_ilq_target(bank, interbank, StateType((bank.on) | (bank.off)), StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-            cls.sum_Shock_IB_run_br_target(bank, interbank, StateType((bank.on) | (bank.off)), StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-            cls.together_Shock_IB_run_target(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_IB_target(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_exIB_target(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_target(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_def_target(bank, StateType((bank.on) | (bank.off)))
-            cls.together_Shock_run_target(bank, StateType((bank.on) | (bank.off)))
-        # elif by_way == 'clear Shock_B_A and Shock_B_Z': #HACK无用
-        #     cls.clear_Shock_inB(bank)
-        #     cls.together_Shock_B(bank, StateType((bank.on) | (bank.off)))
-        elif by_way == 'Shock_P_def_t':
-            cls.together_Shock_exIB_target(bank, bankState)
-            cls.together_Shock_target(bank, bankState)
-            cls.together_Shock_def_target(bank, bankState)
-        elif by_way == 'Shock_P_run_s':
-            cls.together_Shock_exIB_source(bank, bankState)
-            cls.together_Shock_source(bank, bankState)
-            cls.together_Shock_run_source(bank, bankState)
-        elif by_way == 'Shock_D_run_t':
-            cls.together_Shock_exIB_target(bank, bankState)
-            cls.together_Shock_target(bank, bankState)
-            cls.together_Shock_run_target(bank, bankState)
-        elif by_way == 'Shock_D_def_s':
-            cls.together_Shock_exIB_source(bank, bankState)
-            cls.together_Shock_source(bank, bankState)
-            cls.together_Shock_def_source(bank, bankState)
-        # elif by_way == 'Shock_B_A' or by_way == 'Shock_B_Z': #HACK无用
-        #     cls.together_Shock_B(bank, bankState)
-        elif by_way == 'Shock_IB_def_s':
-            cls.together_Shock_IB_source(bank, bankState)
-            cls.together_Shock_source(bank, bankState)
-            cls.together_Shock_def_source(bank, bankState)
-        elif by_way == 'Shock_IB_run_ilq_s' or by_way == 'Shock_IB_run_br_s':
-            cls.together_Shock_IB_run_source(bank, bankState)
-            cls.together_Shock_IB_source(bank, bankState)
-            cls.together_Shock_source(bank, bankState)
-            cls.together_Shock_run_source(bank, bankState)
-        elif by_way == 'Shock_IB_def':
-            cls.together_Shock_IB(interbank, interbankState)
-            cls.sum_Shock_IB_def_target(bank, interbank, bankState, interbankState)
-            cls.together_Shock_IB_target(bank, bankState)
-            cls.together_Shock_target(bank, bankState)
-            cls.together_Shock_def_target(bank, bankState)
-        elif by_way == 'Shock_IB_run_ilq':
-            cls.together_Shock_IB_run(interbank, interbankState)
-            cls.together_Shock_IB(interbank, interbankState)
-            cls.sum_Shock_IB_run_ilq_target(bank, interbank, bankState, interbankState)
-            cls.together_Shock_IB_run_target(bank, bankState)
-            cls.together_Shock_IB_target(bank, bankState)
-            cls.together_Shock_target(bank, bankState)
-            cls.together_Shock_run_target(bank, bankState)
-        elif by_way == 'Shock_IB_run_br':
-            cls.together_Shock_IB_run(interbank, interbankState)
-            cls.together_Shock_IB(interbank, interbankState)
-            cls.sum_Shock_IB_run_br_target(bank, interbank, bankState, interbankState)
-            cls.together_Shock_IB_run_target(bank, bankState)
-            cls.together_Shock_IB_target(bank, bankState)
-            cls.together_Shock_target(bank, bankState)
-            cls.together_Shock_run_target(bank, bankState)
-        elif by_way == 'Shock_IB_def_t':
-            cls.together_Shock_IB_target(bank, bankState)
-            cls.together_Shock_target(bank, bankState)
-            cls.together_Shock_def_target(bank, bankState)
-        elif by_way == 'Shock_IB_run_ilq_t' or by_way == 'Shock_IB_run_br_t':
-            cls.together_Shock_IB_run_target(bank, bankState)
-            cls.together_Shock_IB_target(bank, bankState)
-            cls.together_Shock_target(bank, bankState)
-            cls.together_Shock_run_target(bank, bankState)
-        else:
-            raise Exception("关键词by_way取词错误".format(by_way))
-            pass
-
-        pass
+    # @classmethod
+    # def update_B_Shock(cls, bank: BankCommercial, interbank: BankInterbank, bankState, interbankState, by_way: str = 'all'):
+    #     """
+    #     更新各银行之冲击。
+    #
+    #     参数``by_way``可选值：
+    #
+    #         ``all``:  更新全部冲击变量；
+    #
+    #         ``clear Shock_IB and Shock_exIB``:  清零本回合结束时，除了``Shock_{B}``系列的变量以外的，所有不必要的冲击变量，暨所有``Shock_{IB}``系列的变量、``Shock_{exIB}``系列的变量；
+    #
+    #         ``clear Shock_B_A and Shock_B_Z``:  清零银行内资产负债冲击变量；#HACK无用
+    #
+    #         ``Shock_P_def_t``:  已知``Shock_{P,def}[i]``，更新其余冲击变量；
+    #
+    #         ``Shock_P_run_s``:  已知``Shock_{P,run}[i]``，更新其余冲击变量；
+    #
+    #         ``Shock_D_run_t``:  已知``Shock_{D,run}[i]``，更新其余冲击变量；
+    #
+    #         ``Shock_D_def_s``:  已知``Shock_{D,def}[i]``，更新其余冲击变量；
+    #
+    #         ``Shock_B_A``:  已知``Shock_{B,b}``，更新其余冲击变量；
+    #
+    #         ``Shock_B_Z``:  已知``Shock_{B,Z}``，更新其余冲击变量；
+    #
+    #         ``Shock_IB_def_s``:  已知``Shock_{IB,def}[: ,i_{isv}]``，更新其余冲击变量；
+    #
+    #         ``Shock_IB_run_ilq_s``:  已知``Shock_{IB,run}[: ,i_{ilq}]``，更新其余冲击变量；
+    #
+    #         ``Shock_IB_run_br_s``:  已知``Shock_{IB,run}[: ,i_{br}]``，更新其余冲击变量；
+    #
+    #         ``Shock_IB_def``:  已知``Shock_{IB,def}[j,i_{isv}]``，更新其余冲击变量；
+    #
+    #         ``Shock_IB_run_ilq``:  已知``Shock_{IB,run}[j,i_{ilq}]``，更新其余冲击变量；
+    #
+    #         ``Shock_IB_run_br``:  已知``Shock_{IB,run}[j,i_{br}]``，更新其余冲击变量；
+    #
+    #         ``Shock_IB_def_t``:  已知``Shock_{IB,def}[j,: }],:  \\in i_{isv}``，更新其余冲击变量；
+    #
+    #         ``Shock_IB_run_ilq_t``:  已知``Shock_{IB,run}[j,: }],:  \\in i_{ilq}``，更新其余冲击变量；
+    #
+    #         ``Shock_IB_run_br_t``:  已知``Shock_{IB,run}[j,: }],:  \\in i_{br}``，更新其余冲击变量；
+    #
+    #
+    #     Args:
+    #         by_way:str:  参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
+    #
+    #     """
+    #     if by_way == 'all':
+    #         # cls.together_Shock_B(bank, bankState) #HACK无用
+    #         cls.together_Shock_IB_run_source(bank, bankState)
+    #         cls.together_Shock_IB_source(bank, bankState)
+    #         cls.together_Shock_exIB_source(bank, bankState)
+    #         cls.together_Shock_source(bank, bankState)
+    #         cls.together_Shock_def_source(bank, bankState)
+    #         cls.together_Shock_run_source(bank, bankState)
+    #         cls.together_Shock_IB_run(interbank, interbankState)
+    #         cls.together_Shock_IB(interbank, interbankState)
+    #         cls.sum_Shock_IB_def_target(bank, interbank, bankState, interbankState)
+    #         cls.sum_Shock_IB_run_ilq_target(bank, interbank, bankState, interbankState)
+    #         cls.sum_Shock_IB_run_br_target(bank, interbank, bankState, interbankState)
+    #         cls.together_Shock_IB_run_target(bank, bankState)
+    #         cls.together_Shock_IB_target(bank, bankState)
+    #         cls.together_Shock_exIB_target(bank, bankState)
+    #         cls.together_Shock_target(bank, bankState)
+    #         cls.together_Shock_def_target(bank, bankState)
+    #         cls.together_Shock_run_target(bank, bankState)
+    #     elif by_way == 'clear Shock_IB and Shock_exIB':
+    #         cls.clear_Shock_IB_and_exIB(bank, interbank, bankState, interbankState)
+    #         cls.together_Shock_IB_run_source(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_IB_source(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_exIB_source(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_source(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_def_source(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_run_source(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_IB_run(interbank, StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
+    #         cls.together_Shock_IB(interbank, StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
+    #         cls.sum_Shock_IB_def_target(bank, interbank, StateType((bank.on) | (bank.off)), StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
+    #         cls.sum_Shock_IB_run_ilq_target(bank, interbank, StateType((bank.on) | (bank.off)), StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
+    #         cls.sum_Shock_IB_run_br_target(bank, interbank, StateType((bank.on) | (bank.off)), StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
+    #         cls.together_Shock_IB_run_target(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_IB_target(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_exIB_target(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_target(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_def_target(bank, StateType((bank.on) | (bank.off)))
+    #         cls.together_Shock_run_target(bank, StateType((bank.on) | (bank.off)))
+    #     # elif by_way == 'clear Shock_B_A and Shock_B_Z': #HACK无用
+    #     #     cls.clear_Shock_inB(bank)
+    #     #     cls.together_Shock_B(bank, StateType((bank.on) | (bank.off)))
+    #     elif by_way == 'Shock_P_def_t':
+    #         cls.together_Shock_exIB_target(bank, bankState)
+    #         cls.together_Shock_target(bank, bankState)
+    #         cls.together_Shock_def_target(bank, bankState)
+    #     elif by_way == 'Shock_P_run_s':
+    #         cls.together_Shock_exIB_source(bank, bankState)
+    #         cls.together_Shock_source(bank, bankState)
+    #         cls.together_Shock_run_source(bank, bankState)
+    #     elif by_way == 'Shock_D_run_t':
+    #         cls.together_Shock_exIB_target(bank, bankState)
+    #         cls.together_Shock_target(bank, bankState)
+    #         cls.together_Shock_run_target(bank, bankState)
+    #     elif by_way == 'Shock_D_def_s':
+    #         cls.together_Shock_exIB_source(bank, bankState)
+    #         cls.together_Shock_source(bank, bankState)
+    #         cls.together_Shock_def_source(bank, bankState)
+    #     # elif by_way == 'Shock_B_A' or by_way == 'Shock_B_Z': #HACK无用
+    #     #     cls.together_Shock_B(bank, bankState)
+    #     elif by_way == 'Shock_IB_def_s':
+    #         cls.together_Shock_IB_source(bank, bankState)
+    #         cls.together_Shock_source(bank, bankState)
+    #         cls.together_Shock_def_source(bank, bankState)
+    #     elif by_way == 'Shock_IB_run_ilq_s' or by_way == 'Shock_IB_run_br_s':
+    #         cls.together_Shock_IB_run_source(bank, bankState)
+    #         cls.together_Shock_IB_source(bank, bankState)
+    #         cls.together_Shock_source(bank, bankState)
+    #         cls.together_Shock_run_source(bank, bankState)
+    #     elif by_way == 'Shock_IB_def':
+    #         cls.together_Shock_IB(interbank, interbankState)
+    #         cls.sum_Shock_IB_def_target(bank, interbank, bankState, interbankState)
+    #         cls.together_Shock_IB_target(bank, bankState)
+    #         cls.together_Shock_target(bank, bankState)
+    #         cls.together_Shock_def_target(bank, bankState)
+    #     elif by_way == 'Shock_IB_run_ilq':
+    #         cls.together_Shock_IB_run(interbank, interbankState)
+    #         cls.together_Shock_IB(interbank, interbankState)
+    #         cls.sum_Shock_IB_run_ilq_target(bank, interbank, bankState, interbankState)
+    #         cls.together_Shock_IB_run_target(bank, bankState)
+    #         cls.together_Shock_IB_target(bank, bankState)
+    #         cls.together_Shock_target(bank, bankState)
+    #         cls.together_Shock_run_target(bank, bankState)
+    #     elif by_way == 'Shock_IB_run_br':
+    #         cls.together_Shock_IB_run(interbank, interbankState)
+    #         cls.together_Shock_IB(interbank, interbankState)
+    #         cls.sum_Shock_IB_run_br_target(bank, interbank, bankState, interbankState)
+    #         cls.together_Shock_IB_run_target(bank, bankState)
+    #         cls.together_Shock_IB_target(bank, bankState)
+    #         cls.together_Shock_target(bank, bankState)
+    #         cls.together_Shock_run_target(bank, bankState)
+    #     elif by_way == 'Shock_IB_def_t':
+    #         cls.together_Shock_IB_target(bank, bankState)
+    #         cls.together_Shock_target(bank, bankState)
+    #         cls.together_Shock_def_target(bank, bankState)
+    #     elif by_way == 'Shock_IB_run_ilq_t' or by_way == 'Shock_IB_run_br_t':
+    #         cls.together_Shock_IB_run_target(bank, bankState)
+    #         cls.together_Shock_IB_target(bank, bankState)
+    #         cls.together_Shock_target(bank, bankState)
+    #         cls.together_Shock_run_target(bank, bankState)
+    #     else:
+    #         raise Exception("关键词by_way取词错误".format(by_way))
+    #         pass
+    #
+    #     pass
 
     pass  # class
