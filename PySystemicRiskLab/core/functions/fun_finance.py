@@ -418,8 +418,99 @@ class Finance:
         """转换银行间资产为负债。"""
         interbank.Z_IB = interbank.A_IB.T
         pass
-    
-    
+
+    ## NOTE：功能函数集：计算构建银行与银行间相关状态及其转换。
+
+    @classmethod
+    def calc_state_on(cls, bank: BankCommercial):
+        """
+        计算示性向量之于银行存在的。
+
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = (bank.hel | bank.isv | bank.ilq | bank.br)
+        source_state_changes = (bank.on != result)
+        return result.squeeze(), source_state_changes.squeeze()
+        pass
+
+    @classmethod
+    def calc_state_healthy(cls, bank: BankCommercial):
+        """
+        计算示性向量之于银行健康的。
+
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
+        source_state_changes = (bank.hel != result)
+        return result.squeeze(), source_state_changes.squeeze()
+        pass
+
+    @classmethod
+    def calc_state_insolvent(cls, bank: BankCommercial):
+        """
+        计算示性向量之于银行资不抵债的。
+
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
+        source_state_changes = (bank.isv != result)
+        return result.squeeze(), source_state_changes.squeeze()
+        pass
+
+    @classmethod
+    def calc_state_illiquid(cls, bank: BankCommercial):
+        """
+        计算示性向量之于银行流动性短缺的。
+
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
+        source_state_changes = (bank.ilq != result)
+        return result.squeeze(), source_state_changes.squeeze()
+        pass
+
+    @classmethod
+    def calc_state_bankrupt(cls, bank: BankCommercial):
+        """
+        计算示性向量之于银行破产的。
+
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = (bank.isv | bank.ilq)  # TODO 这个仅仅是目前基准算法简化的做法
+        source_state_changes = (bank.br != result)
+        return result.squeeze(), source_state_changes.squeeze()
+        pass
+
+    @classmethod
+    def calc_state_off(cls, bank: BankCommercial):
+        """
+        计算示性向量之于银行退出的。
+
+        Returns:
+            result: 示性向量之计算后的。
+            source_state_changes: 示性向量之源状态改变的。
+
+        """
+        result = bank.br | bank.off
+        source_state_changes = (bank.off != result)
+        return result.squeeze(), source_state_changes.squeeze()
+        pass
+
     ## NOTE 其他功能部分
 
     update_variable_name: str = None
@@ -456,6 +547,29 @@ class Finance:
 
         """
 
+        if by_way == 'insolvent':
+            cls.calc_state_insolvent(bank)
+            cls.update_state_healthy_from_insolvent(bank)
+        elif by_way == 'illiquid':
+            cls.calc_state_illiquid(bank)
+            cls.update_state_healthy_from_illiquid(bank)
+        elif by_way == 'bankrupt':
+            cls.calc_state_bankrupt(bank)
+            cls.update_
+        elif by_way == 'off':
+        elif by_way == 'healthy':
+            cls.calc_state_healthy(bank)
+        elif by_way=='on':
+            cls.calc_state_on(bank)
+        elif by_way == 'all':
+            cls.calc_state_on(bank)
+            cls.calc_state_healthy(bank)
+            cls.calc_state_insolvent(bank)
+            cls.calc_state_illiquid(bank)
+            cls.calc_state_bankrupt(bank)
+            cls.calc_state_off(bank)
+
+        pass  # def
 
     # @classmethod
     # def update_finance_calculation(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, update_type='auto', by_way: str = 'all', way: str = 'any'):
