@@ -9,6 +9,8 @@ pass  # end import
 class BankTransfer:
     """计算商业银行之资金转移。"""
 
+    ## NOTE：功能函数集：计算商业银行之资金转移。
+
     @classmethod
     def transfer_B_capital_reverse(cls, target: MoneyType, source: MoneyType, shock: MoneyType, flow: MoneyType):
         """

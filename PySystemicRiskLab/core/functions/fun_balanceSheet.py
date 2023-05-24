@@ -1,6 +1,6 @@
 "功能函数集：计算商业银行之资产负债表结构。"
 
-## 功能函数集：计算商业银行之资产负债表结构。
+
 
 
 from PySystemicRiskLab import np
@@ -13,6 +13,8 @@ pass  # end import
 
 class BalanceSheet:
     ## 函数区
+
+    ## NOTE：功能函数集：计算商业银行之资产负债表结构。
 
     @classmethod
     def together_B_A_all(cls, bank: BankCommercial, bankList: StateType):

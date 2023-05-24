@@ -13,7 +13,7 @@ pass  # end import
 
 class Shock:
 
-    ## 函数区
+    ## NOTE：功能函数集：计算冲击。
 
     # "汇总综合外生冲击。" #HACK无用
     # functions together_Shock_exIB(bank:BankCommercial, bankState:StateType)

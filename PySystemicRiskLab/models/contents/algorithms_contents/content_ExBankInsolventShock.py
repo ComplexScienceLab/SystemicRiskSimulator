@@ -16,37 +16,25 @@ def content_ExBankInsolventShock(BB: BankCommercial, IB: BankInterbank, b: State
     # env['stage_name'] = "外部资产违约损失冲击算法"
 
     # TODO BUG新的
-    # BB.Shock_P_def_t = BB.A_P * np.array([para['Shock_exIB_def_t_percentage']]).T  # 生成厂商贷款违约损失冲击
-    # Finance.update_finance_calculation(BB, IB, b, ib, update_type="shock", by_way='Shock_P_def_t')  # 厂商贷款违约损失冲击传导至银行内资产冲击
-    # BB.A_P[b] -= BB.Shock_def_t[b]  # 银行之非银行间资产变动
-    # Finance.update_finance_calculation(BB, IB, b, ib, update_type="balance sheet", by_way='A_P', target='insolvent', source='healthy')  # 厂商贷款违约损失冲击传导至银行内资产冲击
-    # # Finance.update_finance_calculation(BB, IB, b, ib, update_type="auto", target='insolvent', source='healthy')
-
-    # BUG原来的
     BB.Shock_P_def_t = BB.A_P * np.array([para['Shock_exIB_def_t_percentage']]).T  # 生成厂商贷款违约损失冲击
-    Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_P_def_t')  # 厂商贷款违约损失冲击传导至银行内资产冲击
-    # BB.A_P[b] -= BB.Shock_def_t[b]  # 银行之非银行间资产变动
+    Finance.update_finance_calculation(BB, IB, b, ib, update_type="shock", by_way='Shock_P_def_t')  # 厂商贷款违约损失冲击传导至银行内资产冲击
+    # Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_P_def_t')  # 厂商贷款违约损失冲击传导至银行内资产冲击
     BB.A_P[b] = np.maximum(BB.A_P[b] - BB.Shock_P_def_t[b], 0.0)  # 银行之非银行间资产变动
-    BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='A_P')
-    BankState.update_states(way='insolvent')
+    Finance.update_finance_calculation(BB, IB, b, ib, update_type="balance sheet", by_way='A_P', way='insolvent')  # 厂商贷款违约损失冲击传导至银行内资产冲击
+    # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='A_P')
+    Finance.update_finance_calculation(BB, IB, b, ib, update_type="state", by_way='A_P', way='insolvent')  # 厂商贷款违约损失冲击传导至银行内资产冲击
+    # BankState.update_states(way='insolvent')
     # BankState.update_B_state(BB, IB, target='insolvent', source='healthy') #FIXME
 
+    # BUG原来的
+    # BB.Shock_P_def_t = BB.A_P * np.array([para['Shock_exIB_def_t_percentage']]).T  # 生成厂商贷款违约损失冲击
+    # Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_P_def_t')  # 厂商贷款违约损失冲击传导至银行内资产冲击
+    # # BB.A_P[b] -= BB.Shock_def_t[b]  # 银行之非银行间资产变动
+    # BB.A_P[b] = np.maximum(BB.A_P[b] - BB.Shock_P_def_t[b], 0.0)  # 银行之非银行间资产变动
+    # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='A_P')
+    # BankState.update_states(way='insolvent')
+    # # BankState.update_B_state(BB, IB, target='insolvent', source='healthy') #FIXME
 
-    ## HACK以下片段是复制自`content_InterBankInsolventShock`的
-    # BB.E_all[BB.on] = np.maximum(BB.E_all[BB.on] - BB.Shock_def_t[BB.on], 0.0)  # 银行之所有者权益变动
-    # BankState.update_states(way='healthy')  # 更新各银行之状态，从健康到资不抵债
-    # BB.Shock_IB_def_s[BB.isv] = abs((BB.Shock_def_t[BB.isv] - BB.E_all[BB.isv]) / (BB.Z_IB_all[BB.isv] + BB.Z_D[BB.isv]) * BB.Z_IB_all[BB.isv])  # 计算应银行内冲击传导至银行间传染冲击
-    # Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_IB_def_s')  # 更新违约损失冲击源头变量Shock_def_s
-    # BB.Shock_D_def_s[BB.isv] = abs((BB.Shock_def_t[BB.isv] - BB.E_all[BB.isv]) / (BB.Z_IB_all[BB.isv] + BB.Z_D[BB.isv]) * BB.Z_D[BB.isv])  # 计算应银行内冲击传导至银行存款传染冲击
-    # BB.Z_IB_all[BB.isv] -= BB.Shock_IB_def_s[BB.isv]  # 银行间负债变动，由于违约
-    # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='Z_IB_all')  # 更新资产负债表，通过Z_D或Z_IB_all
-    # BB.Z_D[BB.isv] -= BB.Shock_D_def_s[BB.isv]  # 存款负债变动，由于违约
-    # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='Z_D')  # 更新资产负债表，通过Z_D或Z_IB_all
-
-    # Shock.update_B_Shock(BB, IB, b, ib, by_way = 'clear Shock_B_A and Shock_B_Z') # 清零银行内资产负债冲击
-
-    # BB.Shock_P_def_t[BB.isv] = np.zeros((env['num_bank'], 1))[BB.isv]  # 清零银行间和银行外冲击变量
-    # Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_P_def_t')  # 更新违约损失冲击目标变量Shock_def_t
 
     return BB, IB
     pass  # method

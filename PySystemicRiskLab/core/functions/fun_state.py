@@ -13,6 +13,8 @@ class BankState:
     bank: BankCommercial
     interbank: BankInterbank
 
+    ## NOTE：功能函数集：计算构建银行与银行间相关状态及其转换。
+
     ## 【状态数量】`num_states`
     num_states: int
 
