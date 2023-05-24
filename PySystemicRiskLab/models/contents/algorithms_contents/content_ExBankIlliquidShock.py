@@ -14,6 +14,7 @@ def content_ExBankIlliquidShock(BB: BankCommercial, IB: BankInterbank, b: StateT
     # env['stage_name'] = "银行存款挤兑流动冲击算法"
 
     BB.Shock_D_run_t = BB.Z_D * np.array([para['Shock_exIB_run_t_percentage']]).T  # 生成居民存款挤兑流动冲击
+    F
     Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_D_run_t')  # 居民存款挤兑流动冲击传导至银行内负债冲击
     BankState.update_states(way='illiquid')  # 更新各银行之状态，从健康到流动性短缺
     # BankState.update_B_state(BB, IB, target='illiquid', source='healthy')  # 更新各银行之状态，从健康到流动性短缺 #FIXME

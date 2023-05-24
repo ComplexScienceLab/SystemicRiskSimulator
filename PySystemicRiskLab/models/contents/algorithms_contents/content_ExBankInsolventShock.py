@@ -22,7 +22,6 @@ def content_ExBankInsolventShock(BB: BankCommercial, IB: BankInterbank, b: State
     BB.A_P[b] = np.maximum(BB.A_P[b] - BB.Shock_P_def_t[b], 0.0)  # 银行之非银行间资产变动
     Finance.update_variables(BB, IB, b, ib, by_way='A_P')  # 厂商贷款违约损失冲击传导至银行内资产冲击
     # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='A_P')
-    Finance.update_variables(BB, IB, b, ib, update_type="state", by_way='A_P', way='insolvent')  # 厂商贷款违约损失冲击传导至银行内资产冲击
     # BankState.update_states(way='insolvent')
     # BankState.update_B_state(BB, IB, target='insolvent', source='healthy') #FIXME
 

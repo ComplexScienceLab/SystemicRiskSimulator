@@ -18,10 +18,11 @@ def content_InterBankInsolventContagion(BB: BankCommercial, IB: BankInterbank, b
         IB.Shock_IB_def[IB.cre_isv[i], i] = np.abs(IB.Z_IB[i, IB.cre_isv[i]] * BB.Shock_IB_def_s[i] / BB.Z_IB_all[i])  #BUG `IB.cre` 被改成 `IB.cre_isv`；
         IB.Z_IB[i, IB.cre_isv[i]] -= IB.Shock_IB_def[IB.cre_isv[i], i]
         pass
-    # HACK以下部分是否提取出来在算法1结束之前使用
-    Finance.update_finance_calculation(BB, IB, b, ib, by_way='alter to A_IB from Z_IB')  # 更新银行间资产负债
+    ## NOTE 本来是在每个变量更新后就更新的，但是现在放到上述变量一批次计算完之后更新，以便提升性能。
+    Finance.update_variables(BB, IB, b, ib, by_way='Z_IB')
     # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='alter to A_IB from Z_IB')  # 转换银行间资产负债邻接矩阵
-    Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_IB_def')  # 更新违约损失冲击目标变量Shock_def_t
+    Finance.update_variables(BB, IB, b, ib, by_way='Shock_IB_def')
+    # Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_IB_def')  # 更新违约损失冲击目标变量Shock_def_t
 
     return BB, IB
     pass  # method
