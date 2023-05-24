@@ -3,7 +3,7 @@
 ## 系统性风险仿真模拟
 
 
-__version__ = '0.0.5.alpha'
+__version__ = '0.0.6.alpha'
 
 ## 导入第三方包（#NOTE 动态导入，严禁删除）
 import os
