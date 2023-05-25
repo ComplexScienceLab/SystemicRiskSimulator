@@ -2,7 +2,6 @@
 
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import StateType
-from PySystemicRiskLab.core.functions.fun_transfer import BankTransfer
 from PySystemicRiskLab.core.functions.fun_finance import Finance
 
 pass  # end import
@@ -14,13 +13,13 @@ def content_InterBankIlliquidRepay(BB: BankCommercial, IB: BankInterbank, b: Sta
     ## # 流动性短缺银行间挤兑流动执行借贷流量算法
     # env['stage_name'] = "银行间挤兑流动执行借贷流量算法"
     
-    BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b] = BankTransfer.transfer_B_capital_reverse(BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b], BB.Li_P[b])  # 流动资产变动，因收回厂商贷款
+    BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b] = Finance.transfer_B_capital_reverse(BB.A_Q[b], BB.A_P[b], BB.Shock_P_run_s[b], BB.Li_P[b])  # 流动资产变动，因收回厂商贷款
     # BB.A_Q[b] *= (1 - paras['kappa_A_P']) #HACK 暂时还不用！
     Finance.update_finance_variables(BB, IB, b, ib, by_way='A_Q')
     Finance.update_finance_variables(BB, IB, b, ib, by_way='A_P')
     Finance.update_finance_variables(BB, IB, b, ib, by_way='Shock_P_run_s')
 
-    BB.Z_D[b], BB.A_Q[b], BB.Shock_D_run_t[b] = BankTransfer.transfer_B_capital_reduce(BB.Z_D[b], BB.A_Q[b], BB.Shock_D_run_t[b], BB.Bo_D[b])  # 流动资产变动，因偿还居民存款
+    BB.Z_D[b], BB.A_Q[b], BB.Shock_D_run_t[b] = Finance.transfer_B_capital_reduce(BB.Z_D[b], BB.A_Q[b], BB.Shock_D_run_t[b], BB.Bo_D[b])  # 流动资产变动，因偿还居民存款
     Finance.update_finance_variables(BB, IB, b, ib, by_way='Z_D')
     Finance.update_finance_variables(BB, IB, b, ib, by_way='A_Q')
     Finance.update_finance_variables(BB, IB, b, ib, by_way='Shock_D_run_t')

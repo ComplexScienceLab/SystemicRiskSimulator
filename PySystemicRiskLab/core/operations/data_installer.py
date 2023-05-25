@@ -6,13 +6,9 @@ from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank, SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import IdsType
-from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
-from PySystemicRiskLab.core.functions.fun_shock import Shock
-from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 from PySystemicRiskLab.core.functions.fun_finance import Finance
-
 
 pass  # end import
 
@@ -381,11 +377,12 @@ class DataInstaller:
             IB,  # 银行间邻接矩阵
             ib,  # 银行间邻接矩阵示性变量
         )
+        cls.initialize_data(A)  # 更新各银行之变量，在第一回合初始时
         return A
         pass  # method
 
     @classmethod
-    def initialize_data(cls, A, para, env):
+    def initialize_data(cls, A):
         ## 更新各银行之变量，在第一回合初始时 # BUG
         Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
         Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有变量，在第一回合开始时

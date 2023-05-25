@@ -11,8 +11,8 @@ from PySystemicRiskLab.core.operations.executer import Executer
 from PySystemicRiskLab.core.operations.model_installer import ModelInstaller
 from PySystemicRiskLab.core.operations.data_installer import DataInstaller
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
+from PySystemicRiskLab.core.functions.fun_finance import Finance
 from PySystemicRiskLab.tools.tools import Tools
-from PySystemicRiskLab.core.functions.fun_state import BankState
 
 pass  # end import
 
@@ -126,11 +126,11 @@ class Operator:
             A = DataInstaller.install_data(init_method=env['init_method'])
             A_data = Collector.collect(A, None, env)
 
-            ## 构建本次实验所需的状态数据
-            BankState.build_state_const_variables(A.BB, A.IB)
+            # ## 构建本次实验所需的状态数据
+            # Finance.build_state_const_variables(A.BB, A.IB)
 
-            ## 初始化本次实验所需的多主体数据
-            A = DataInstaller.initialize_data(A, para, env)
+            # ## 初始化本次实验所需的多主体数据
+            # A = DataInstaller.initialize_data(A, para, env)
             pass  # if
 
         env = Scheduler.schedule(env)

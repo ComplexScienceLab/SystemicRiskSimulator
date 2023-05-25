@@ -2,7 +2,6 @@ from PySystemicRiskLab import np, deepcopy
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_type import StateType, MoneyType
 from PySystemicRiskLab.core.define.define_environmentVariables import env
-from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.define.define_consts import LESS1
 
 
@@ -829,7 +828,6 @@ class Finance:
             - ``sum Z_IB``:  已知``Z_{IB}[i,j]``，加总各银行变量``Z_{IB}[i,: ]``；
             - ``alter to Z_IB from A_IB``:  已知``A_{IB}[i,j]``，转换得到``Z_{IB}[i,j]``；
             - ``alter to A_IB from Z_IB``:  已知``Z_{IB}[i,j]``，转换得到``A_{IB}[i,j]``；
-
 
         Args:
             bank (): 商业银行众
