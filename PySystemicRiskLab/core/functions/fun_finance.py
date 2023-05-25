@@ -983,16 +983,16 @@ class Finance:
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)  # BUG 检查是否正确。
             cls.update_states(bank, bankState, by_way='insolvent')  # BUG
-        elif by_way == 'sum A_IB':
-            cls.sum_B_A_IB(bank, interbank, bankState, interbankState)
-            cls.together_B_A_all(bank, bankState)
-            cls.calc_B_E_all(bank, bankState)
-            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
-        elif by_way == 'sum Z_IB':
-            cls.sum_B_Z_IB(bank, interbank, bankState, interbankState)
-            cls.together_B_Z_all(bank, bankState)
-            cls.calc_B_E_all(bank, bankState)
-            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
+        # elif by_way == 'sum A_IB':  # HACK似乎冗余。
+        #     cls.sum_B_A_IB(bank, interbank, bankState, interbankState)
+        #     cls.together_B_A_all(bank, bankState)
+        #     cls.calc_B_E_all(bank, bankState)
+        #     cls.update_states(bank, bankState, by_way='insolvent')  # BUG
+        # elif by_way == 'sum Z_IB':  # HACK似乎冗余。
+        #     cls.sum_B_Z_IB(bank, interbank, bankState, interbankState)
+        #     cls.together_B_Z_all(bank, bankState)
+        #     cls.calc_B_E_all(bank, bankState)
+        #     cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'alter to Z_IB from A_IB':  # HACK似乎冗余。
             cls.alter_A_IB(interbank)
         elif by_way == 'alter to A_IB from Z_IB':  # HACK似乎冗余。
