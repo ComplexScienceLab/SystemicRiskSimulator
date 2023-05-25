@@ -4,7 +4,7 @@
 #状态/使用
 ##########################################
 
-from PySystemicRiskLab import np, logging
+from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.functions.fun_state import BankState

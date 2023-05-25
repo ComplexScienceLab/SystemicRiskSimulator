@@ -1,9 +1,8 @@
 """流动性短缺银行间挤兑流动传染算法"""
 
-from PySystemicRiskLab import np, logging
+from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import StateType
-from PySystemicRiskLab.core.functions.fun_shock import Shock
 from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.functions.fun_finance import Finance
 

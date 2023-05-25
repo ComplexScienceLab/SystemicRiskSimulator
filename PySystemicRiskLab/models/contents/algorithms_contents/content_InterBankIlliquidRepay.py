@@ -1,7 +1,5 @@
 """银行间挤兑流动执行借贷流量算法"""
 
-
-from PySystemicRiskLab import logging
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet

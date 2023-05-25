@@ -1,10 +1,8 @@
 """资不抵债银行资产违约损失冲击算法"""
 
-from PySystemicRiskLab import np, logging
+from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import StateType
-from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
-from PySystemicRiskLab.core.functions.fun_shock import Shock
 from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.functions.fun_finance import Finance
 

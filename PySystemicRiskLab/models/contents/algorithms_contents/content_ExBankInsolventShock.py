@@ -1,12 +1,9 @@
 """外部资产违约损失冲击"""
 
-from PySystemicRiskLab import np, logging
+from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_type import StateType
 from PySystemicRiskLab.core.functions.fun_finance import Finance
-from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
-from PySystemicRiskLab.core.functions.fun_shock import Shock
-from PySystemicRiskLab.core.functions.fun_state import BankState
 
 pass  # end import
 
