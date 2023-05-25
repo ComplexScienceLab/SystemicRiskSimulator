@@ -1,10 +1,7 @@
-from PySystemicRiskLab import np, deepcopy, Union
+from PySystemicRiskLab import np, deepcopy
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
-from PySystemicRiskLab.core.define.define_type import StateType, MoneyType, ListType
+from PySystemicRiskLab.core.define.define_type import StateType, MoneyType
 from PySystemicRiskLab.core.define.define_environmentVariables import env
-from PySystemicRiskLab.core.functions.fun_transfer import BankTransfer
-from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
-from PySystemicRiskLab.core.functions.fun_shock import Shock
 from PySystemicRiskLab.core.functions.fun_state import BankState
 from PySystemicRiskLab.core.define.define_consts import LESS1
 
@@ -419,12 +416,15 @@ class Finance:
         interbank.Z_IB = interbank.A_IB.T
         pass
 
-    ## NOTE：功能函数集：计算构建银行与银行间相关状态及其转换。
+    ## NOTE：功能函数集：银行与银行间相关状态及其转换。
 
     @classmethod
     def calc_state_on(cls, bank: BankCommercial, interbank: BankInterbank):
         """
         计算示性向量之于银行存在的。
+        Args:
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
 
         Returns:
             result: 示性向量之计算后的。
@@ -442,6 +442,9 @@ class Finance:
     def calc_state_healthy(cls, bank: BankCommercial, interbank: BankInterbank):
         """
         计算示性向量之于银行健康的。
+        Args:
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
 
         Returns:
             result: 示性向量之计算后的。
@@ -459,6 +462,9 @@ class Finance:
     def calc_state_insolvent(cls, bank: BankCommercial, interbank: BankInterbank):
         """
         计算示性向量之于银行资不抵债的。
+        Args:
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
 
         Returns:
             result: 示性向量之计算后的。
@@ -476,6 +482,9 @@ class Finance:
     def calc_state_illiquid(cls, bank: BankCommercial, interbank: BankInterbank):
         """
         计算示性向量之于银行流动性短缺的。
+        Args:
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
 
         Returns:
             result: 示性向量之计算后的。
@@ -493,6 +502,9 @@ class Finance:
     def calc_state_bankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
         """
         计算示性向量之于银行破产的。
+        Args:
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
 
         Returns:
             result: 示性向量之计算后的。
@@ -510,6 +522,9 @@ class Finance:
     def calc_state_off(cls, bank: BankCommercial, interbank: BankInterbank):
         """
         计算示性向量之于银行退出的。
+        Args:
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
 
         Returns:
             result: 示性向量之计算后的。
@@ -524,17 +539,57 @@ class Finance:
         pass  # def
 
     @classmethod
-    def update_state_healthy_from_insolvent(cls, bank: BankCommercial, interbank: BankInterbank, difference: StateType): #NOW
+    def update_state_healthy_from_insolvent(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):  # NOW
         """
+        更新示性向量之于银行健康的，从资不抵债的。
 
         Args:
-            bank ():
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
+            source_state_changes (StateType): 示性向量之源状态改变的。
 
         Returns:
+            None
 
         """
-        bank.hel[difference] = ~bank.hel[difference]
-        interbank.hel[difference & difference.T] = ~interbank.hel[difference & difference.T]
+        bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] & bank.ilq[source_state_changes])
+        interbank.hel = (bank.hel & bank.hel.T)
+        pass  # def
+
+    @classmethod
+    def update_state_healthy_from_illiquid(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):  # NOW
+        """
+        更新示性向量之于银行健康的，从流动性短缺的的。
+
+        Args:
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
+            source_state_changes (StateType): 示性向量之源状态改变的。
+
+        Returns:
+            None
+
+        """
+        bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] & bank.ilq[source_state_changes])
+        interbank.hel = (bank.hel & bank.hel.T)
+        pass  # def
+
+    @classmethod
+    def update_state_on_from_off(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):  # NOW
+        """
+        更新示性向量之于银行健康的，从流动性短缺的的。
+
+        Args:
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
+            source_state_changes (StateType): 示性向量之源状态改变的。
+
+        Returns:
+            None
+
+        """
+        bank.on[source_state_changes] = ~bank.off[source_state_changes]
+        interbank.on = (bank.on & bank.on.T)
         pass  # def
 
     ## NOTE 其他功能部分
@@ -565,36 +620,36 @@ class Finance:
         更新各状态。
 
         Args:
-            bank (): 
-            interbank (): 
-            by_way (): 
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
+            by_way (str): 更新方式
 
         Returns:
 
         """
 
         if by_way == 'insolvent':
-            cls.calc_state_insolvent(bank)
-            cls.update_state_healthy_from_insolvent(bank)
+            source_state_changes = cls.calc_state_insolvent(bank, interbank)
+            cls.update_state_healthy_from_insolvent(bank, interbank, source_state_changes)
         elif by_way == 'illiquid':
-            cls.calc_state_illiquid(bank)
-            cls.update_state_healthy_from_illiquid(bank)
+            source_state_changes = cls.calc_state_illiquid(bank, interbank)
+            cls.update_state_healthy_from_illiquid(bank, interbank, source_state_changes)
         elif by_way == 'bankrupt':
-            cls.calc_state_bankrupt(bank)
+            _ = cls.calc_state_bankrupt(bank, interbank)
         elif by_way == 'off':
-            cls.calc_state_off(bank)
-            cls.update_state_on_from_off(bank)
+            source_state_changes = cls.calc_state_off(bank, interbank)
+            cls.update_state_on_from_off(bank, interbank, source_state_changes)
         elif by_way == 'healthy':
-            cls.calc_state_healthy(bank)
+            _ = cls.calc_state_healthy(bank, interbank)
         elif by_way == 'on':
-            cls.calc_state_on(bank)
+            _ = cls.calc_state_on(bank, interbank)
         elif by_way == 'all':
-            cls.calc_state_on(bank)
-            cls.calc_state_healthy(bank)
-            cls.calc_state_insolvent(bank)
-            cls.calc_state_illiquid(bank)
-            cls.calc_state_bankrupt(bank)
-            cls.calc_state_off(bank)
+            _ = cls.calc_state_on(bank, interbank)
+            _ = cls.calc_state_healthy(bank, interbank)
+            _ = cls.calc_state_insolvent(bank, interbank)
+            _ = cls.calc_state_illiquid(bank, interbank)
+            _ = cls.calc_state_bankrupt(bank, interbank)
+            _ = cls.calc_state_off(bank, interbank)
 
         pass  # def
 
