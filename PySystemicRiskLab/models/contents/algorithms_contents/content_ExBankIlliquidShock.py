@@ -3,8 +3,8 @@
 from PySystemicRiskLab import np
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import StateType
-from PySystemicRiskLab.core.functions.fun_shock import Shock
-from PySystemicRiskLab.core.functions.fun_state import BankState
+from PySystemicRiskLab.core.functions.fun_finance import Finance
+
 
 pass  # end import
 
@@ -14,11 +14,7 @@ def content_ExBankIlliquidShock(BB: BankCommercial, IB: BankInterbank, b: StateT
     # env['stage_name'] = "银行存款挤兑流动冲击算法"
 
     BB.Shock_D_run_t = BB.Z_D * np.array([para['Shock_exIB_run_t_percentage']]).T  # 生成居民存款挤兑流动冲击
-    F
-    Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_D_run_t')  # 居民存款挤兑流动冲击传导至银行内负债冲击
-    BankState.update_states(way='illiquid')  # 更新各银行之状态，从健康到流动性短缺
-    # BankState.update_B_state(BB, IB, target='illiquid', source='healthy')  # 更新各银行之状态，从健康到流动性短缺 #FIXME
-
+    Finance.update_finance_variables(BB, IB, b, ib, by_way='Shock_D_run_t')  # 居民存款挤兑流动冲击传导至银行内资产冲击
 
     return BB, IB
     pass  # method

@@ -538,6 +538,43 @@ class Finance:
         return source_state_changes
         pass  # def
 
+    ## #NOTE 以下的几个计算函数将在算法内容中单独使用，不用于联动同步计算。
+
+    @classmethod
+    def calc_state_isEnabledBoIB(cls, bank: BankCommercial):
+        """
+        计算示性向量之于银行能够偿还银行间负债的。
+        Args:
+            bank (BankCommercial): 银行个体众
+
+        """
+        bank.is_enabled_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & (bank.A_Q > 0) & bank.on)
+        pass
+
+    @classmethod
+    def calc_state_isEnabledBoD(cls, bank: BankCommercial):
+        """
+        计算示性向量之于银行能够偿还居民部门存款的。
+        Args:
+            bank (BankCommercial): 银行个体众
+
+        """
+
+        bank.is_enabled_BoD = ((bank.Shock_D_run_t > 0) & (bank.A_Q > 0) & bank.on)
+        pass
+
+    @classmethod
+    def calc_state_isEnabledLiP(cls, bank: BankCommercial):
+        """
+        计算示性向量之于银行能够收回厂商贷款的。
+        Args:
+            bank (BankCommercial): 银行个体众
+
+        """
+
+        bank.is_enabled_LiP = ((bank.Shock_P_run_s > 0) & bank.on)  # HACK后续可能会补充条件 & producer.A_Q > 0
+        pass
+
     @classmethod
     def update_state_healthy_from_insolvent(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):  # NOW
         """
@@ -592,6 +629,63 @@ class Finance:
         interbank.on = (bank.on & bank.on.T)
         pass  # def
 
+    @classmethod
+    def update_states(cls, bank: BankCommercial, interbank: BankInterbank, by_way: str = 'all'):
+        """
+        更新各状态。
+
+        Args:
+            bank (BankCommercial): 银行个体众
+            interbank (BankInterbank): 银行间个体众
+            by_way (str): 更新方式
+
+        by_way:
+            - ``all``:  计算所有的状态；
+            - ``healthy``:  从健康状态计算；
+            - ``insolvent``:  从资不抵债状态计算；
+            - ``illiquid``:  从流动性短缺状态计算；
+            - ``bankrupt``:  从破产状态计算；
+            - ``off``:  从退出状态计算；
+            - ``enabled repay IB``:  从是否可以偿还银行间借款状态计算；
+            - ``enabled repay Z_D``:  从是否需要偿还借款状态计算；
+            - ``enabled collect A_P``:  从是否可以收回厂商贷款状态计算；
+
+
+        Returns:
+
+        """
+
+        if by_way == 'insolvent':
+            source_state_changes = cls.calc_state_insolvent(bank, interbank)
+            cls.update_state_healthy_from_insolvent(bank, interbank, source_state_changes)
+        elif by_way == 'illiquid':
+            source_state_changes = cls.calc_state_illiquid(bank, interbank)
+            cls.update_state_healthy_from_illiquid(bank, interbank, source_state_changes)
+        elif by_way == 'bankrupt':
+            _ = cls.calc_state_bankrupt(bank, interbank)
+        elif by_way == 'off':
+            source_state_changes = cls.calc_state_off(bank, interbank)
+            cls.update_state_on_from_off(bank, interbank, source_state_changes)
+        elif by_way == 'healthy':
+            _ = cls.calc_state_healthy(bank, interbank)
+        elif by_way == 'on':
+            _ = cls.calc_state_on(bank, interbank)
+        elif by_way == 'enabled repay IB':
+            cls.calc_state_isEnabledBoIB(bank)
+        elif by_way == 'enabled repay Z_D':
+            cls.calc_state_isEnabledBoD(bank)
+        elif by_way == 'enabled collect A_P':
+            cls.calc_state_isEnabledLiP(bank)
+        elif by_way == 'all':
+            _ = cls.calc_state_on(bank, interbank)
+            _ = cls.calc_state_healthy(bank, interbank)
+            _ = cls.calc_state_insolvent(bank, interbank)
+            _ = cls.calc_state_illiquid(bank, interbank)
+            _ = cls.calc_state_bankrupt(bank, interbank)
+            _ = cls.calc_state_off(bank, interbank)
+
+        pass  # def
+
     ## NOTE 其他功能部分
 
     update_variable_name: str = None
@@ -615,101 +709,12 @@ class Finance:
         pass  # def
 
     @classmethod
-    def update_states(cls, bank: BankCommercial, interbank: BankInterbank, by_way: str = 'all'):  # NOW
-        """
-        更新各状态。
-
-        Args:
-            bank (BankCommercial): 银行个体众
-            interbank (BankInterbank): 银行间个体众
-            by_way (str): 更新方式
-
-        Returns:
-
-        """
-
-        if by_way == 'insolvent':
-            source_state_changes = cls.calc_state_insolvent(bank, interbank)
-            cls.update_state_healthy_from_insolvent(bank, interbank, source_state_changes)
-        elif by_way == 'illiquid':
-            source_state_changes = cls.calc_state_illiquid(bank, interbank)
-            cls.update_state_healthy_from_illiquid(bank, interbank, source_state_changes)
-        elif by_way == 'bankrupt':
-            _ = cls.calc_state_bankrupt(bank, interbank)
-        elif by_way == 'off':
-            source_state_changes = cls.calc_state_off(bank, interbank)
-            cls.update_state_on_from_off(bank, interbank, source_state_changes)
-        elif by_way == 'healthy':
-            _ = cls.calc_state_healthy(bank, interbank)
-        elif by_way == 'on':
-            _ = cls.calc_state_on(bank, interbank)
-        elif by_way == 'all':
-            _ = cls.calc_state_on(bank, interbank)
-            _ = cls.calc_state_healthy(bank, interbank)
-            _ = cls.calc_state_insolvent(bank, interbank)
-            _ = cls.calc_state_illiquid(bank, interbank)
-            _ = cls.calc_state_bankrupt(bank, interbank)
-            _ = cls.calc_state_off(bank, interbank)
-
-        pass  # def
-
-    # @classmethod
-    # def update_finance_calculation(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, update_type='auto', by_way: str = 'all', way: str = 'any'):
-    #     """
-    #     更新财务计算。
-    # 
-    #     遍历哪个变量数据发生了变化，然后以那个变量为起点按照关联式子，链式更新，直到关联末端的变量更新完为止。
-    # 
-    #     关键字如下：TODO
-    # 
-    #     Returns:
-    # 
-    #     """
-    # 
-    #     ## 按照`update_type`类型更新财务变量
-    #     if update_type == 'auto':  # 按照变动变量自动更新财务变量
-    #         cls.get_update_variable(bank, interbank)
-    #         BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way=cls.update_variable_name)  # 更新交易
-    #         Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way=cls.update_variable_name)  # 更新冲击
-    #         BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way=cls.update_variable_name)  # 更新资产负债表
-    #         BankState.update_states(way='any')  # 更新状态
-    #     if update_type == 'all':
-    #         BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way='all')  # 更新交易
-    #         Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way='all')  # 更新冲击
-    #         BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way='all')  # 更新资产负债表
-    #         BankState.update_states(way='any')  # 更新状态
-    #     elif update_type == 'transfer':
-    #         BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way=by_way)  # 更新交易
-    #         Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way='all')  # 更新冲击
-    #         BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way='all')  # 更新资产负债表
-    #         BankState.update_states(way='any')  # 更新状态
-    #     elif update_type == 'shock':
-    #         Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way=by_way)  # 更新冲击
-    #         BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way='all')  # 更新交易
-    #         BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way='all')  # 更新资产负债表
-    #         BankState.update_states(way='any')  # 更新状态
-    #     elif update_type == 'balance sheet':
-    #         BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way=by_way)  # 更新资产负债表
-    #         BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way='all')  # 更新交易
-    #         Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way='all')  # 更新冲击
-    #         BankState.update_states(way='any')  # 更新状态
-    #     elif update_type == 'state':
-    #         BankState.update_states(way=way)  # 更新状态
-    #         BankTransfer.update_B_transfer(bank, interbank, bankState, interbankState, by_way='all')  # 更新交易
-    #         Shock.update_B_Shock(bank, interbank, bankState, interbankState, by_way='all')  # 更新冲击
-    #         BalanceSheet.update_B_balance_sheet(bank, interbank, bankState, interbankState, by_way='all')  # 更新资产负债表
-    #     else:
-    #         raise Exception("关键词update_type取词错误".format(update_type))
-    #         pass
-    #     pass  # method
-
-    @classmethod
-    def update_variables(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str = 'all'):  # NOW
+    def update_finance_variables(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str = 'all'):  # NOW
         """
         更新各银行之借贷流量变量。
 
         - 总体部分：
-            - ``all``:  更新全部借贷流量变量、冲击变量、各银行之所有资产负债表变量；
+            - ``all``:  更新全部借贷流量变量、冲击变量、各银行之所有资产负债表变量、各银行之状态变量；
 
         - 商业银行之资金转移部分：
 
@@ -850,6 +855,7 @@ class Finance:
             cls.together_Shock_exIB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_def_target(bank, bankState)
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'Shock_P_run_s':
             cls.together_Shock_exIB_source(bank, bankState)
             cls.together_Shock_source(bank, bankState)
@@ -858,6 +864,7 @@ class Finance:
             cls.together_Shock_exIB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_run_target(bank, bankState)
+            cls.update_states(bank, bankState, by_way='illiquid')  # BUG
         elif by_way == 'Shock_D_def_s':
             cls.together_Shock_exIB_source(bank, bankState)
             cls.together_Shock_source(bank, bankState)
@@ -879,6 +886,7 @@ class Finance:
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_def_target(bank, bankState)
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'Shock_IB_run_ilq':
             cls.together_Shock_IB_run(interbank, interbankState)
             cls.together_Shock_IB(interbank, interbankState)
@@ -887,6 +895,7 @@ class Finance:
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_run_target(bank, bankState)
+            cls.update_states(bank, bankState, by_way='illiquid')  # BUG
         elif by_way == 'Shock_IB_run_br':
             cls.together_Shock_IB_run(interbank, interbankState)
             cls.together_Shock_IB(interbank, interbankState)
@@ -895,15 +904,18 @@ class Finance:
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_run_target(bank, bankState)
+            cls.update_states(bank, bankState, by_way='illiquid')  # BUG
         elif by_way == 'Shock_IB_def_t':
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_def_target(bank, bankState)
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'Shock_IB_run_ilq_t' or by_way == 'Shock_IB_run_br_t':
             cls.together_Shock_IB_run_target(bank, bankState)
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_run_target(bank, bankState)
+            cls.update_states(bank, bankState, by_way='illiquid')  # BUG
         elif by_way == 'clear Shock_IB and Shock_exIB':
             cls.clear_Shock_IB_and_exIB(bank, interbank, bankState, interbankState)
             cls.together_Shock_IB_run_source(bank, StateType((bank.on) | (bank.off)))
@@ -922,32 +934,35 @@ class Finance:
             cls.together_Shock_exIB_target(bank, StateType((bank.on) | (bank.off)))
             cls.together_Shock_target(bank, StateType((bank.on) | (bank.off)))
             cls.together_Shock_def_target(bank, StateType((bank.on) | (bank.off)))
+            cls.update_states(bank, interbank, by_way='insolvent')  # BUG
             cls.together_Shock_run_target(bank, StateType((bank.on) | (bank.off)))
-        # elif by_way == 'clear Shock_B_A and Shock_B_Z': #HACK无用
-        #     cls.clear_Shock_inB(bank)
-        #     cls.together_Shock_B(bank, StateType((bank.on) | (bank.off)))
+            cls.update_states(bank, interbank, by_way='illiquid')  # BUG
 
         ## NOTE：功能函数集：更新商业银行之资产负债表结构。
         elif by_way == 'A_exIB' or by_way == 'A_P' or by_way == 'A_R' or by_way == 'A_other':
             cls.together_B_A_exIB(bank, bankState)
             cls.together_B_A_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
-            BankState.calc_state_insolvent()
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'A_Q':
             cls.together_B_A_exIB(bank, bankState)
             cls.together_B_A_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
-            BankState.calc_state_illiquid()
+            cls.update_states(bank, bankState, by_way='illiquid')  # BUG
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'A_IB_all':
             cls.together_B_A_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'Z_exIB' or by_way == 'Z_D' or by_way == 'Z_other':
             cls.together_B_Z_exIB(bank, bankState)
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'Z_IB_all':
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         # elif by_way == 'E_all and Z_all': #HACK似乎没有用到过
         #     cls.calc_B_A_all(bank, bankState)
         # elif by_way == 'E_all and A_all':#HACK似乎没有用到过
@@ -959,6 +974,7 @@ class Finance:
             cls.sum_B_A_IB(bank, interbank, bankState, interbankState)
             cls.together_B_A_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'Z_IB':
             cls.alter_Z_IB(interbank)
             cls.sum_B_A_IB(bank, interbank, bankState, interbankState)
@@ -966,28 +982,29 @@ class Finance:
             cls.sum_B_Z_IB(bank, interbank, bankState, interbankState)
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)  # BUG 检查是否正确。
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'sum A_IB':
             cls.sum_B_A_IB(bank, interbank, bankState, interbankState)
             cls.together_B_A_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'sum Z_IB':
             cls.sum_B_Z_IB(bank, interbank, bankState, interbankState)
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
+            cls.update_states(bank, bankState, by_way='insolvent')  # BUG
         elif by_way == 'alter to Z_IB from A_IB':  # HACK似乎冗余。
-            # sum_B_A_IB(bank, interbank,bankState,interbankState) #HACK 冗余。不能调用，只能在外部手动计算。
-            # together_B_A_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
             cls.alter_A_IB(interbank)
-            # sum_B_Z_IB(bank, interbank,bankState,interbankState) #HACK 冗余。不能调用，只能在外部手动计算。
-            # together_B_Z_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
-            # calc_B_E_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
         elif by_way == 'alter to A_IB from Z_IB':  # HACK似乎冗余。
-            # sum_B_Z_IB(bank, interbank,bankState,interbankState) #HACK 冗余。不能调用，只能在外部手动计算。
-            # together_B_Z_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
             cls.alter_Z_IB(interbank)
-            # sum_B_A_IB(bank, interbank,bankState,interbankState) #HACK 冗余。不能调用，只能在外部手动计算。
-            # together_B_A_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
-            # calc_B_E_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
+
+        ## NOTE：功能函数集：更新银行之状态变量。
+        elif by_way == 'enabled collect A_P':
+            cls.update_states(bank, interbank, by_way='enabled collect A_P')
+        elif by_way == 'enabled repay Z_D':
+            cls.update_states(bank, interbank, by_way='enabled repay Z_D')
+        elif by_way == 'enabled repay IB':
+            cls.update_states(bank, interbank, by_way='enabled repay IB')
 
         ## NOTE 对于所有的进行更新。
         elif by_way == 'all':
@@ -1032,249 +1049,7 @@ class Finance:
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
 
-        # if by_way == 'all':
-        #     BankTransfer.alter_transfer_Lo_IB(interbank, interbankState)
-        #     BankTransfer.sum_transfer_Bi_IB(bank, interbank, bankState, interbankState)
-        #     BankTransfer.alter_transfer_Bo_IB(interbank, interbankState)
-        #     BankTransfer.sum_transfer_Li_IB(bank, interbank, bankState, interbankState)
-        #     BankTransfer.together_transfer_B_Lo_exIB(bank, bankState)
-        #     BankTransfer.together_transfer_B_Lo_all(bank, bankState)
-        #     BankTransfer.together_transfer_B_Li_exIB(bank, bankState)
-        #     BankTransfer.together_transfer_B_Li_all(bank, bankState)
-        #     BankTransfer.together_transfer_B_Bi_exIB(bank, bankState)
-        #     BankTransfer.together_transfer_B_Bi_all(bank, bankState)
-        #     BankTransfer.together_transfer_B_Bo_exIB(bank, bankState)
-        #     BankTransfer.together_transfer_B_Bo_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        #
-        #     # Shock.together_Shock_B(bank, bankState) #HACK无用
-        #     Shock.together_Shock_IB_run_source(bank, bankState)
-        #     Shock.together_Shock_IB_source(bank, bankState)
-        #     Shock.together_Shock_exIB_source(bank, bankState)
-        #     Shock.together_Shock_source(bank, bankState)
-        #     Shock.together_Shock_def_source(bank, bankState)
-        #     Shock.together_Shock_run_source(bank, bankState)
-        #     Shock.together_Shock_IB_run(interbank, interbankState)
-        #     Shock.together_Shock_IB(interbank, interbankState)
-        #     Shock.sum_Shock_IB_def_target(bank, interbank, bankState, interbankState)
-        #     Shock.sum_Shock_IB_run_ilq_target(bank, interbank, bankState, interbankState)
-        #     Shock.sum_Shock_IB_run_br_target(bank, interbank, bankState, interbankState)
-        #     Shock.together_Shock_IB_run_target(bank, bankState)
-        #     Shock.together_Shock_IB_target(bank, bankState)
-        #     Shock.together_Shock_exIB_target(bank, bankState)
-        #     Shock.together_Shock_target(bank, bankState)
-        #     Shock.together_Shock_def_target(bank, bankState)
-        #     Shock.together_Shock_run_target(bank, bankState)
-        #
-        #     BalanceSheet.together_B_A_exIB(bank, bankState)
-        #     BalanceSheet.sum_B_A_IB(bank, interbank, bankState, interbankState)
-        #     BalanceSheet.together_B_A_all(bank, bankState)
-        #     BalanceSheet.together_B_Z_exIB(bank, bankState)
-        #     BalanceSheet.sum_B_Z_IB(bank, interbank, bankState, interbankState)
-        #     BalanceSheet.together_B_Z_all(bank, bankState)
-        #     BalanceSheet.calc_B_E_all(bank, bankState)
-        #
-        # ## NOTE：功能函数集：更新商业银行之资金转移。
-        # elif by_way == 'clear transfer all':
-        #     BankTransfer.clear_all_transfer(bank, interbank, bankState, interbankState)
-        #     BankTransfer.alter_transfer_Lo_IB(interbank, ((bank.on | bank.off) & (bank.on | bank.off).T))
-        #     BankTransfer.sum_transfer_Bi_IB(bank, interbank, (bank.on | bank.off), ((bank.on | bank.off) & (bank.on | bank.off).T))
-        #     BankTransfer.alter_transfer_Bo_IB(interbank, ((bank.on | bank.off) & (bank.on | bank.off).T))
-        #     BankTransfer.sum_transfer_Li_IB(bank, interbank, (bank.on | bank.off), ((bank.on | bank.off) & (bank.on | bank.off).T))
-        #     BankTransfer.together_transfer_B_Lo_exIB(bank, (bank.on | bank.off))
-        #     BankTransfer.together_transfer_B_Lo_all(bank, (bank.on | bank.off))
-        #     BankTransfer.together_transfer_B_Li_exIB(bank, (bank.on | bank.off))
-        #     BankTransfer.together_transfer_B_Li_all(bank, (bank.on | bank.off))
-        #     BankTransfer.together_transfer_B_Bi_exIB(bank, (bank.on | bank.off))
-        #     BankTransfer.together_transfer_B_Bi_all(bank, (bank.on | bank.off))
-        #     BankTransfer.together_transfer_B_Bo_exIB(bank, (bank.on | bank.off))
-        #     BankTransfer.together_transfer_B_Bo_all(bank, (bank.on | bank.off))
-        #     BankTransfer.together_transfer_all(bank, (bank.on | bank.off))
-        # elif by_way == 'Lo_P':
-        #     BankTransfer.together_transfer_B_Lo_exIB(bank, bankState)
-        #     BankTransfer.together_transfer_B_Lo_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Li_P':
-        #     BankTransfer.together_transfer_B_Li_exIB(bank, bankState)
-        #     BankTransfer.together_transfer_B_Li_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Bi_D':
-        #     BankTransfer.together_transfer_B_Bi_exIB(bank, bankState)
-        #     BankTransfer.together_transfer_B_Bi_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Bo_D':
-        #     BankTransfer.together_transfer_B_Bo_exIB(bank, bankState)
-        #     BankTransfer.together_transfer_B_Bo_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Lo_IB_all':
-        #     BankTransfer.together_transfer_B_Lo_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Li_IB_all':
-        #     BankTransfer.together_transfer_B_Li_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Bi_IB_all':
-        #     BankTransfer.together_transfer_B_Bi_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Bo_IB_all':
-        #     BankTransfer.together_transfer_B_Bo_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Lo_IB':
-        #     BankTransfer.alter_transfer_Lo_IB(interbank, interbankState)
-        #     BankTransfer.sum_transfer_Bi_IB(bank, interbank, bankState, interbankState)
-        #     BankTransfer.together_transfer_B_Bi_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Bi_IB':
-        #     BankTransfer.alter_transfer_Bi_IB(interbank, interbankState)
-        #     BankTransfer.sum_transfer_Bi_IB(bank, interbank, bankState, interbankState)
-        #     BankTransfer.together_transfer_B_Bi_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Bo_IB':
-        #     BankTransfer.alter_transfer_Bo_IB(interbank, interbankState)
-        #     BankTransfer.sum_transfer_Li_IB(bank, interbank, bankState, interbankState)
-        #     BankTransfer.together_transfer_B_Li_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        # elif by_way == 'Li_IB':
-        #     BankTransfer.alter_transfer_Li_IB(interbank, interbankState)
-        #     BankTransfer.sum_transfer_Li_IB(bank, interbank, bankState, interbankState)
-        #     BankTransfer.together_transfer_B_Li_all(bank, bankState)
-        #     BankTransfer.together_transfer_all(bank, bankState)
-        #
-        # ## NOTE：功能函数集：更新冲击。
-        # elif by_way == 'clear Shock_IB and Shock_exIB':
-        #     Shock.clear_Shock_IB_and_exIB(bank, interbank, bankState, interbankState)
-        #     Shock.together_Shock_IB_run_source(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_IB_source(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_exIB_source(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_source(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_def_source(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_run_source(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_IB_run(interbank, StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-        #     Shock.together_Shock_IB(interbank, StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-        #     Shock.sum_Shock_IB_def_target(bank, interbank, StateType((bank.on) | (bank.off)), StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-        #     Shock.sum_Shock_IB_run_ilq_target(bank, interbank, StateType((bank.on) | (bank.off)), StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-        #     Shock.sum_Shock_IB_run_br_target(bank, interbank, StateType((bank.on) | (bank.off)), StateType(((bank.on) | (bank.off)) & (bank.on | bank.off).T))
-        #     Shock.together_Shock_IB_run_target(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_IB_target(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_exIB_target(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_target(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_def_target(bank, StateType((bank.on) | (bank.off)))
-        #     Shock.together_Shock_run_target(bank, StateType((bank.on) | (bank.off)))
-        # # elif by_way == 'clear Shock_B_A and Shock_B_Z': #HACK无用
-        # #     Shock.clear_Shock_inB(bank)
-        # #     Shock.together_Shock_B(bank, StateType((bank.on) | (bank.off)))
-        # elif by_way == 'Shock_P_def_t':
-        #     Shock.together_Shock_exIB_target(bank, bankState)
-        #     Shock.together_Shock_target(bank, bankState)
-        #     Shock.together_Shock_def_target(bank, bankState)
-        # elif by_way == 'Shock_P_run_s':
-        #     Shock.together_Shock_exIB_source(bank, bankState)
-        #     Shock.together_Shock_source(bank, bankState)
-        #     Shock.together_Shock_run_source(bank, bankState)
-        # elif by_way == 'Shock_D_run_t':
-        #     Shock.together_Shock_exIB_target(bank, bankState)
-        #     Shock.together_Shock_target(bank, bankState)
-        #     Shock.together_Shock_run_target(bank, bankState)
-        # elif by_way == 'Shock_D_def_s':
-        #     Shock.together_Shock_exIB_source(bank, bankState)
-        #     Shock.together_Shock_source(bank, bankState)
-        #     Shock.together_Shock_def_source(bank, bankState)
-        # # elif by_way == 'Shock_B_A' or by_way == 'Shock_B_Z': #HACK无用
-        # #     Shock.together_Shock_B(bank, bankState)
-        # elif by_way == 'Shock_IB_def_s':
-        #     Shock.together_Shock_IB_source(bank, bankState)
-        #     Shock.together_Shock_source(bank, bankState)
-        #     Shock.together_Shock_def_source(bank, bankState)
-        # elif by_way == 'Shock_IB_run_ilq_s' or by_way == 'Shock_IB_run_br_s':
-        #     Shock.together_Shock_IB_run_source(bank, bankState)
-        #     Shock.together_Shock_IB_source(bank, bankState)
-        #     Shock.together_Shock_source(bank, bankState)
-        #     Shock.together_Shock_run_source(bank, bankState)
-        # elif by_way == 'Shock_IB_def':
-        #     Shock.together_Shock_IB(interbank, interbankState)
-        #     Shock.sum_Shock_IB_def_target(bank, interbank, bankState, interbankState)
-        #     Shock.together_Shock_IB_target(bank, bankState)
-        #     Shock.together_Shock_target(bank, bankState)
-        #     Shock.together_Shock_def_target(bank, bankState)
-        # elif by_way == 'Shock_IB_run_ilq':
-        #     Shock.together_Shock_IB_run(interbank, interbankState)
-        #     Shock.together_Shock_IB(interbank, interbankState)
-        #     Shock.sum_Shock_IB_run_ilq_target(bank, interbank, bankState, interbankState)
-        #     Shock.together_Shock_IB_run_target(bank, bankState)
-        #     Shock.together_Shock_IB_target(bank, bankState)
-        #     Shock.together_Shock_target(bank, bankState)
-        #     Shock.together_Shock_run_target(bank, bankState)
-        # elif by_way == 'Shock_IB_run_br':
-        #     Shock.together_Shock_IB_run(interbank, interbankState)
-        #     Shock.together_Shock_IB(interbank, interbankState)
-        #     Shock.sum_Shock_IB_run_br_target(bank, interbank, bankState, interbankState)
-        #     Shock.together_Shock_IB_run_target(bank, bankState)
-        #     Shock.together_Shock_IB_target(bank, bankState)
-        #     Shock.together_Shock_target(bank, bankState)
-        #     Shock.together_Shock_run_target(bank, bankState)
-        # elif by_way == 'Shock_IB_def_t':
-        #     Shock.together_Shock_IB_target(bank, bankState)
-        #     Shock.together_Shock_target(bank, bankState)
-        #     Shock.together_Shock_def_target(bank, bankState)
-        # elif by_way == 'Shock_IB_run_ilq_t' or by_way == 'Shock_IB_run_br_t':
-        #     Shock.together_Shock_IB_run_target(bank, bankState)
-        #     Shock.together_Shock_IB_target(bank, bankState)
-        #     Shock.together_Shock_target(bank, bankState)
-        #     Shock.together_Shock_run_target(bank, bankState)
-        #
-        # ## NOTE：功能函数集：更新商业银行之资产负债表结构。
-        # elif by_way == 'A_exIB' or by_way == 'A_P' or by_way == 'A_Q' or by_way == 'A_R' or by_way == 'A_other':
-        #     BalanceSheet.together_B_A_exIB(bank, bankState)
-        #     BalanceSheet.together_B_A_all(bank, bankState)
-        #     BalanceSheet.calc_B_E_all(bank, bankState)
-        #     BankState.calc_state_insolvent()
-        # elif by_way == 'A_IB_all':
-        #     BalanceSheet.together_B_A_all(bank, bankState)
-        #     BalanceSheet.calc_B_E_all(bank, bankState)
-        # elif by_way == 'Z_exIB' or by_way == 'Z_D' or by_way == 'Z_other':
-        #     BalanceSheet.together_B_Z_exIB(bank, bankState)
-        #     BalanceSheet.together_B_Z_all(bank, bankState)
-        #     BalanceSheet.calc_B_E_all(bank, bankState)
-        # elif by_way == 'Z_IB_all':
-        #     BalanceSheet.together_B_Z_all(bank, bankState)
-        #     BalanceSheet.calc_B_E_all(bank, bankState)
-        # # elif by_way == 'E_all and Z_all': #HACK似乎没有用到过
-        # #     BalanceSheet.calc_B_A_all(bank, bankState)
-        # # elif by_way == 'E_all and A_all':#HACK似乎没有用到过
-        # #     BalanceSheet.calc_B_Z_all(bank, bankState)
-        # # elif by_way == 'calc all E_all': #HACK似乎没有用到过
-        # #     BalanceSheet.calc_B_E_all_at_all_bank(bank, bankState)
-        # elif by_way == 'A_IB':
-        #     BalanceSheet.alter_A_IB(interbank)
-        #     BalanceSheet.sum_B_A_IB(bank, interbank, bankState, interbankState)
-        #     BalanceSheet.together_B_A_all(bank, bankState)
-        #     BalanceSheet.calc_B_E_all(bank, bankState)
-        # elif by_way == 'Z_IB':
-        #     BalanceSheet.alter_Z_IB(interbank)
-        #     BalanceSheet.sum_B_Z_IB(bank, interbank, bankState, interbankState)
-        #     BalanceSheet.together_B_Z_all(bank, bankState)
-        #     BalanceSheet.calc_B_E_all(bank, bankState)
-        # elif by_way == 'sum A_IB':
-        #     BalanceSheet.sum_B_A_IB(bank, interbank, bankState, interbankState)
-        #     BalanceSheet.together_B_A_all(bank, bankState)
-        #     BalanceSheet.calc_B_E_all(bank, bankState)
-        # elif by_way == 'sum Z_IB':
-        #     BalanceSheet.sum_B_Z_IB(bank, interbank, bankState, interbankState)
-        #     BalanceSheet.together_B_Z_all(bank, bankState)
-        #     BalanceSheet.calc_B_E_all(bank, bankState)
-        # elif by_way == 'alter to Z_IB from A_IB':  # HACK似乎冗余。
-        #     # sum_B_A_IB(bank, interbank,bankState,interbankState) #HACK 冗余。不能调用，只能在外部手动计算。
-        #     # together_B_A_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
-        #     BalanceSheet.alter_A_IB(interbank)
-        #     # sum_B_Z_IB(bank, interbank,bankState,interbankState) #HACK 冗余。不能调用，只能在外部手动计算。
-        #     # together_B_Z_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
-        #     # calc_B_E_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
-        # elif by_way == 'alter to A_IB from Z_IB':  # HACK似乎冗余。
-        #     # sum_B_Z_IB(bank, interbank,bankState,interbankState) #HACK 冗余。不能调用，只能在外部手动计算。
-        #     # together_B_Z_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
-        #     BalanceSheet.alter_Z_IB(interbank)
-        #     # sum_B_A_IB(bank, interbank,bankState,interbankState) #HACK 冗余。不能调用，只能在外部手动计算。
-        #     # together_B_A_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
-        #     # calc_B_E_all(bank,bankState) #HACK 冗余。不能调用，只能在外部手动计算。
+            cls.update_states(bank, interbank, by_way='all')
 
         else:
             raise Exception("关键词by_way取词错误".format(by_way))

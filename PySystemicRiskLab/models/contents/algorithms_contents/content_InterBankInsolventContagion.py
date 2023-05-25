@@ -3,8 +3,6 @@
 from PySystemicRiskLab import np, logging
 from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial
 from PySystemicRiskLab.core.define.define_type import StateType
-from PySystemicRiskLab.core.functions.fun_balanceSheet import BalanceSheet
-from PySystemicRiskLab.core.functions.fun_shock import Shock
 from PySystemicRiskLab.core.functions.fun_finance import Finance
 
 pass  # end import
@@ -19,10 +17,8 @@ def content_InterBankInsolventContagion(BB: BankCommercial, IB: BankInterbank, b
         IB.Z_IB[i, IB.cre_isv[i]] -= IB.Shock_IB_def[IB.cre_isv[i], i]
         pass
     ## NOTE 本来是在每个变量更新后就更新的，但是现在放到上述变量一批次计算完之后更新，以便提升性能。
-    Finance.update_variables(BB, IB, b, ib, by_way='Z_IB')
-    # BalanceSheet.update_B_balance_sheet(BB, IB, b, ib, by_way='alter to A_IB from Z_IB')  # 转换银行间资产负债邻接矩阵
-    Finance.update_variables(BB, IB, b, ib, by_way='Shock_IB_def')
-    # Shock.update_B_Shock(BB, IB, b, ib, by_way='Shock_IB_def')  # 更新违约损失冲击目标变量Shock_def_t
+    Finance.update_finance_variables(BB, IB, b, ib, by_way='Z_IB')
+    Finance.update_finance_variables(BB, IB, b, ib, by_way='Shock_IB_def')
 
     return BB, IB
     pass  # method
