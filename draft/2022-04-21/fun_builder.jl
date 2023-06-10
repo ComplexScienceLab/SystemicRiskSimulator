@@ -1,0 +1,90 @@
+"生成机"
+
+##########################################
+#状态/开发
+##########################################
+
+
+
+"""
+函数：阶段生成机
+"""
+function buildStage(stageContent::StageContent; stageSkeleton::Function = fun_stage_skeleton!)
+    ## 获得阶段类型
+    stageInstanceType = Symbol(stageContent.functionName)
+
+    ## 生成阶段stage
+    stage = StageComponent{stageInstanceType}(
+        stageContent.id,
+        stageContent.functionName,
+        stageContent.textName,
+        stageContent.modelFunction,
+    )
+
+    println("已经生成阶段$(stageContent.functionName)")
+
+    return stage
+end
+
+
+
+
+"""
+函数：过程生成机
+"""
+function buildProcess(processContent::ProcessContent; processSkeleton::Function = fun_process_skeleton!)
+    ## 获得过程类型
+    modelType = Symbol(processContent.functionName)
+
+    ## 生成子阶段组件列表
+    list_stage = Vector{StageComponent}([])
+    for stageContent in processContent.listStageContent
+        stage = buildStage(stageContent)
+        append!(list_stage, [stage])
+    end
+
+    ## 生成过程process
+    process = ProcessComponent{modelType}(
+        processContent.id,
+        processContent.functionName,
+        processContent.textName,
+        processSkeleton,
+        list_stage,
+    )
+
+    println("已经生成过程$(processContent.functionName)")
+
+    return process
+end
+
+
+
+"""
+函数：模型生成机
+"""
+function buildModel(modelContent::ModelContent; modelSkeleton::Function = fun_model_skeleton!)
+
+    ## 获得模型类型
+    modelType = Symbol(modelContent.functionName)
+
+    ## 生成子过程组件列表
+    list_process = Vector{ProcessComponent}([])
+    for processContent in modelContent.listProcessContent
+        process = buildProcess(processContent)
+        append!(list_process, [process])
+    end
+
+    ## 生成模型model
+    model = ModelComponent{modelType}(
+        modelContent.id,
+        modelContent.functionName,
+        modelContent.textName,
+        modelSkeleton,
+        list_process,
+    )
+
+    println("已经生成模型$(modelContent.functionName)")
+
+    return model
+end
+
