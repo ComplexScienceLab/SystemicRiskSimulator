@@ -2,8 +2,9 @@
 安装模型机
 """
 
-from PySystemicRiskLab import deepcopy, Node, re
+from PySystemicRiskLab import deepcopy, re
 from PySystemicRiskLab.core.define.define_entity import Entity
+from PySystemicRiskLab.core.operations.entity_manager import EntityManager
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.operations.builder import Builder
@@ -23,21 +24,27 @@ class ModelInstaller:
             models: 模型字典集
         """
         ## 构建、安装本次实验组所需的所有模型
-        ### 导入实体数据，生成实体集、内容集并返回
-        entities = Builder.build_entities(env)
-        ### 生成模型列表
-        models = {}
-        for (i, model_name) in enumerate(para['model_name']):
-            model = eval("entities['entity_" + model_name + "']")
 
-            ## 对于每一个模型，根据已经生成的模型，生成索引遍历序列，用于后序遍历所有节点。                                                                                                                                                                                                 遍历序列，用于后序遍历所有节点。
-            # install_entity_queue = cls.build_postorder_traversial(model)  # HACK暂时不需要用  #FIXME 程序运行错误
+        ## 导入实体数据，生成实体集、内容集并返回 #BUG，二选一
+        # entities = Builder.build_entities_by_node_component(env)
+        entities = Builder.build_entities_by_process_and_container_component(env)
 
-            ## 模型列表
-            models[model_name] = model
-            pass
+        ## 生成待运行的模型列表
+        return EntityManager.modelEntities
 
-        return models
+        # models = {}
+        # for (i, model_name) in enumerate(para['model_name']):
+        #     model = eval("entities['entity_" + model_name + "']")  # 获取每一个待运行的模型实体
+        #
+        #     ## 对于每一个模型，根据已经生成的模型，生成索引遍历序列，用于后序遍历所有节点。                                                                                                                                                                                                 遍历序列，用于后序遍历所有节点。
+        #     # install_entity_queue = cls.build_postorder_traversial(model)  # HACK暂时不需要用  #FIXME 程序运行错误
+        #
+        #     ## 模型列表
+        #     models[model_name] = model
+        #     pass
+        #
+        # return models
+
         pass  # method
 
     @classmethod
@@ -97,21 +104,21 @@ class ModelInstaller:
         return initEntity, initEntity_name, container_content, content_type
         pass  # method
 
-    @classmethod
-    def build_node(cls, entity: Entity):  # HACK 无用
-        """
-        构建单个节点
-
-        Args:
-            entity (Entity): 实体
-
-        Returns:
-            node: 节点
-        """
-        is_expand = True if entity.attribute.content_type != "algorithm" else False  # 如果内容类型是算法，则节点是叶子节点，不可展开
-        node = Node(tag=entity.attribute.entity_name, expanded=is_expand, data=entity.content)
-        node.fpointer = entity.container
-        return node
-        pass  # method
+    # @classmethod
+    # def build_node(cls, entity: Entity):  # HACK 无用
+    #     """
+    #     构建单个节点
+    #
+    #     Args:
+    #         entity (Entity): 实体
+    #
+    #     Returns:
+    #         node: 节点
+    #     """
+    #     is_expand = True if entity.attribute.content_type != "algorithm" else False  # 如果内容类型是算法，则节点是叶子节点，不可展开
+    #     node = Node(tag=entity.attribute.entity_name, expanded=is_expand, data=entity.content)
+    #     node.fpointer = entity.container
+    #     return node
+    #     pass  # method
 
     pass  # class

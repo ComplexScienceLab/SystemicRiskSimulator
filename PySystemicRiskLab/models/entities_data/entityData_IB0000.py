@@ -5,7 +5,7 @@
 #
 # entityData_IB0000 = dict(
 #     attribute=dict(
-#         id=2000,
+#         id="user2000",
 #         entity_name="entity_IB0000",
 #         text_name="模型算法IB0000",
 #         node_type={"container node", "process node"},
@@ -13,7 +13,7 @@
 #     ),
 #     execute="Processor.process",
 #     content="content_IB0000",
-#     container=list([
+#     node=list([
 #         dict(
 #             node=dict(
 #                 name="node_START",

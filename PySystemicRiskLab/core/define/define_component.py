@@ -1,39 +1,117 @@
 """
 定义组件
+
+#HACK 没有做覆盖性的单元测试。目前只要求能够在主程序中正确运行就好。
 """
-from PySystemicRiskLab import Any
+from PySystemicRiskLab import Any, Union, logging
 from PySystemicRiskLab.core.define.define_type import *
+from PySystemicRiskLab.tools.tools import Tools
 
 
 class AttributeComponent:
     """
-    特征组件
+    特征组件。
+
+    用于描述一个事物的特征。
+
+    具有的特征有：
+
+    - id (Union[str, None]): 事物之编号
+    - entity_name (Union[str, None]): 事物之名称
+    - text_name (Union[str, None]): 事物之文本名称
+    - content_type (Union[str, None]): 事物之内容类型
+    - content_name (Union[str, None]): 事物之内容名称
+    - other (Union[dict, Any]): 事物之其他特征
+
     """
 
-    id: int  # 事物之编号
-    entity_name: str  # 事物之名称
-    text_name: str  # 事物之文本名称
-    content_type: str  # 事物之内容类型
+    id: Union[str, None]  # 事物之编号
+    entity_name: Union[str, None]  # 事物之名称
+    text_name: Union[str, None]  # 事物之文本名称
+    content_type: Union[str, None]  # 事物之内容类型
     content_name: Union[str, None]  # 事物之内容名称
-    other: Union[dict, Any, None]  # 事物之其他特征
+    other: Union[dict, Any]  # 事物之其他特征
 
-    def __init__(self, attribute: dict):
+    # def __init__(self, attribute: AttributeComponentType=None, id: Union[str, None] = None, name: Union[str, None] = None):
+    def __init__(self, attribute: AttributeComponentType = None, **kwargs):
         """
-        初始化特征组件
+        初始化特征组件。
 
         Args:
-            attribute: 特征
+            attribute: 特征数据
+            kwargs (): 其它参数
+
+        > [!note]
+        > 以下是赋值的要求：
+
+        - 如果`attribute`不为空，那么要求`**kwargs`设置为空；
+
+        - 如果`attribute`为空且`**kwargs`不为空，那么要求`**kwargs`里面不能有`attribute`；
+
         """
-        self.id = attribute['id']
-        self.entity_name = attribute['entity_name']
-        self.text_name = attribute['text_name']
-        self.node_type = attribute['node_type']
-        self.content_type = attribute['content_type']
-        self.content_name = None
-        self.other = {}
-        for k, v in attribute.items():
-            if not (k == "id" or k == "entity_name" or k == "text_name" or k == "node_type" or k == "content_type"):
-                self.other.update({k: v})
+
+        ## 如果`attribute`不为空，那么直接设置`attribute`之内容，否则设置`**kwargs`之内容
+        if attribute is not None:
+            kwargs = None
+            if attribute['id'] is not None:
+                self.id = str(attribute['id']).zfill(8)
+            else:
+                raise ValueError("id不能为空")  # 如果id为空，则报错
+                pass  # if
+            if attribute['entity_name'] is not None:
+                self.entity_name = attribute['entity_name']
+            else:
+                raise ValueError("entity_name不能为空")  # 如果entity_name为空，则报错
+                pass  # if
+            self.text_name = attribute['text_name'] if 'text_name' in attribute.keys() else None
+            self.node_type = attribute['node_type'] if 'node_type' in attribute.keys() else None
+            self.content_type = attribute['content_type'] if 'content_type' in attribute.keys() else None
+            self.content_name = attribute['content_name'] if 'content_name' in attribute.keys() else None
+            ## 创建其他特征字典
+            self.other = dict()
+            for k, v in attribute.items():
+                if not (k == "id" or k == "entity_name" or k == "text_name" or k == "node_type" or k == "content_type"):
+                    self.other.update({k: v})
+                    pass  # if
+                pass  # for
+        else:
+            if kwargs['id'] is not None:
+                self.id = kwargs['id']
+            else:
+                raise ValueError("id不能为空")  # 如果id为空，则报错
+                pass  # if
+            if kwargs['entity_name'] is not None:
+                self.entity_name = kwargs['entity_name']
+            else:
+                raise ValueError("entity_name不能为空")  # 如果entity_name为空，则报错
+                pass  # if
+            self.text_name = kwargs['text_name'] if 'text_name' in kwargs.keys() else None
+            self.node_type = kwargs['node_type'] if 'node_type' in kwargs.keys() else None
+            self.content_type = kwargs['content_type'] if 'content_type' in kwargs.keys() else None
+            self.content_name = kwargs['content_name'] if 'content_name' in kwargs.keys() else None
+            ## 创建其他特征字典
+            self.other = dict()
+            for k, v in kwargs.items():
+                if not (k == "id" or k == "entity_name" or k == "text_name" or k == "node_type" or k == "content_type"):
+                    self.other.update({k: v})
+                    pass  # if
+                pass  # for
+            # ## 创建其他特征字典
+            # self.other = {}
+            # for k, v in kwargs.items():
+            #     if not (k == "id" or k == "entity_name" or k == "text_name" or k == "node_type" or k == "content_type"):
+            #         if k in kwargs.keys():
+            #             self.other.update({k: v})
+            #             continue
+            #         else:
+            #             break
+            #             pass#if
+            #     else:
+            #         continue
+            #         pass  # if
+            #     pass  # for
+            pass  # if
+
         pass  # method
 
     pass  # class
@@ -52,8 +130,7 @@ class ContentComponent:
         Args:
             content: 内容
         """
-        self.attribute = None
-        self.content = content
+        self.content = content if content is not None else None
 
     pass  # class
 
@@ -71,7 +148,7 @@ class ContainerComponent:
         Args:
             container: 容器之内容
         """
-        self.container = container
+        self.container = container if container is not None else None
         pass  # method
 
     pass  # class
@@ -90,10 +167,11 @@ class ProcessComponent:
         Args:
             process: 过程之内容
         """
-        self.process = process
+        self.process = process if process is not None else None
         pass  # method
 
     pass  # class
+
 
 class ExecuteComponent:
     """
@@ -108,7 +186,7 @@ class ExecuteComponent:
         Args:
             execute: 执行之内容
         """
-        self.execute = execute
+        self.execute = execute if execute is not None else None
         pass  # method
 
     pass  # class
@@ -125,9 +203,28 @@ class NodeComponent:
         """
 
         Args:
-            node: 过程之内容
+            node: 节点之内容
         """
-        self.node = node
+        self.node = node if node is not None else None
+        pass  # method
+
+    pass  # class
+
+
+class ConditionComponent:
+    """
+    条件组件
+    """
+
+    condition: ConditionComponentType
+
+    def __init__(self, condition):
+        """
+
+        Args:
+            condition: 条件之内容
+        """
+        self.condition = condition if condition is not None else None
         pass  # method
 
     pass  # class

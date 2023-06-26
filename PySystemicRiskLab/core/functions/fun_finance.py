@@ -575,7 +575,7 @@ class Finance:
         pass
 
     @classmethod
-    def update_state_healthy_from_insolvent(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):  # NOW
+    def update_state_healthy_from_insolvent(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):
         """
         更新示性向量之于银行健康的，从资不抵债的。
 
@@ -593,7 +593,7 @@ class Finance:
         pass  # def
 
     @classmethod
-    def update_state_healthy_from_illiquid(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):  # NOW
+    def update_state_healthy_from_illiquid(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):
         """
         更新示性向量之于银行健康的，从流动性短缺的的。
 
@@ -611,7 +611,7 @@ class Finance:
         pass  # def
 
     @classmethod
-    def update_state_on_from_off(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):  # NOW
+    def update_state_on_from_off(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):
         """
         更新示性向量之于银行健康的，从流动性短缺的的。
 
@@ -738,8 +738,7 @@ class Finance:
             interbank.deb_ilq = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.ilq, goal="debtor")
             interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
             interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
-            pass#if
-
+            pass  # if
 
         pass  # def
 
@@ -766,7 +765,7 @@ class Finance:
         pass  # def
 
     @classmethod
-    def update_finance_variables(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str = 'all'):  # NOW
+    def update_finance_variables(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str = 'all'):
         """
         更新各银行之借贷流量变量。
 

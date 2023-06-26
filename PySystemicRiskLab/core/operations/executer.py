@@ -20,6 +20,42 @@ class Executer:
     """
 
     @classmethod
+    def execute_algorithm_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, node: Entity):
+        """
+        执行算法实体。
+
+        NOTE：输入参数将被直接修改。
+
+        Args:
+            A (SystemicRiskAgent): Agent群变量
+            A_data (Optional[AgentDataCollection]): Agent群变量之数据
+            para (dict): 参数变量
+            env (dict): 环境变量
+            node (Entity): 节点实体（NOTE：本函数中，特指节点实体而非算法实体。算法实体表示`entity`。）
+
+        Returns: agent
+
+        """
+        entity = node.content  # 获取节点实体对应的算法实体
+
+        logging.debug("- - 开始执行：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
+
+        env['round'] += 1  # 计次回合数
+
+        A.BB, A.IB = entity.execute(A.BB, A.IB, A.b, A.ib, para, env)
+
+        ## 收集数据 #BUG #NOW 改成每执行一步都搜集数据
+        if env['state_of_schedule'] == StateOfScheduleEnum.running:
+            env = Scheduler.schedule(env, node)
+            if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
+                A_data, env = Collector.collect(A, A_data, env)
+
+        logging.debug("- - 结束执行：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
+
+        return A, A_data, env
+        pass  # method
+
+    @classmethod
     def execute_branch_entity(cls, node: Entity, agent: SystemicRiskAgent, agentData: AgentDataCollection, para: dict, env: dict):
         """
         执行分支实体。
@@ -64,13 +100,13 @@ class Executer:
         Returns: agent
 
         """
-        entity = node.content  # 获取节点实体对应的算法实体
+        algorithmEntity = node.content  # 获取节点实体对应的算法实体
 
-        logging.debug("- - 开始阶段：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
+        logging.debug("- - 开始阶段：%s %s", algorithmEntity.attribute.text_name, algorithmEntity.attribute.entity_name)
 
         env['round'] += 1  # 计次回合数
 
-        A.BB, A.IB = entity.execute(A.BB, A.IB, A.b, A.ib, para, env)
+        A.BB, A.IB = algorithmEntity.execute(A.BB, A.IB, A.b, A.ib, para, env)
 
         ## 收集数据 #BUG
         if env['state_of_schedule'] == StateOfScheduleEnum.running:
@@ -78,7 +114,7 @@ class Executer:
             if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
                 A_data, env = Collector.collect(A, A_data, env)
 
-        logging.debug("- - 结束阶段：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
+        logging.debug("- - 结束阶段：%s %s", algorithmEntity.attribute.text_name, algorithmEntity.attribute.entity_name)
 
         return A, A_data, env
         pass  # method

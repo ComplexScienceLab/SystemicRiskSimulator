@@ -8,13 +8,16 @@ pass  # end import
 
 entityData_ExBankIlliquidShock = dict(
     attribute=dict(
-        id=4040,
+        id="user4040",
         entity_name="entity_ExBankIlliquidShock",
         text_name="银行存款挤兑流动冲击",
         node_type={"content node"},
         content_type={"algorithm content"},
     ),
     execute="content_ExBankIlliquidShock",
-    content=None,
+    process=None,
     container=None,
+    condition=None,
+    node=None,
+    content=None,
 )

@@ -1,6 +1,6 @@
 "函数区：工具集"
 
-from PySystemicRiskLab import os, time, Path, itertools, pkgutil, importlib, re, logging, np
+from PySystemicRiskLab import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string
 from PySystemicRiskLab.core.define.define_type import EnvironmentVariableType
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 
@@ -9,24 +9,12 @@ pass  # end import
 
 class Tools:
 
-    # TODO"宏：当测试时使用"
-    # macro testprintln(content):
-    #     if env['is_test']:
-    #         return esc(
-    #             quote
-    #                 write(f,$(content));write(f,"\n");println($(content))
-    #                 pass
-    #         )
-    #         pass
-    #     pass
-
     def extract_number(pattern, filename):
         match = re.search(pattern, filename)
         if match:
             return int(match.group(1))
         else:
             return 0
-
 
     @classmethod
     def test_println(cls, content):
@@ -207,26 +195,6 @@ class Tools:
         return os.path.abspath(result)
         pass  # method
 
-    # @classmethod TODO 显示模型之实体结构
-    # def showModelContent(cls, modelEntity):
-    #     """
-    #     显示模型之实体结构
-    #
-    #     Args:
-    #         modelEntity:
-    #
-    #     Returns:
-    #
-    #     """
-    #
-    #     print(ModelEntity.text_name)
-    #     hierarchy = 1  # 结构层所在层数
-    #     for process_com in ModelEntity.content:
-    #         print(" " * hierarchy + process_entities.text_name)
-    #         hierarchy = 2
-    #         for algorithmEntity in process_entities:
-    #             pass  # method
-
     @classmethod
     def test_count_loop_in_model(cls, env):
         """
@@ -270,5 +238,21 @@ class Tools:
         return (list(transformed_data))
         # list(MinMaxScaler(feature_range=(0.1, 5)).fit_transform(np.asarray(A_IB).reshape(-1, 1)))
         pass  # method
+
+    @classmethod
+    def generate_unique_identifier(cls):
+        """
+        随机生成一个8位的英文大小写字母和阿拉伯数字混合的字符串作为id。
+
+        注意，区分大小写。
+
+        Returns:
+            str: id字符串
+        """
+        while True:
+            # 生成一个随机的字符串
+            new_identifier = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+
+            return new_identifier
 
     pass  # class

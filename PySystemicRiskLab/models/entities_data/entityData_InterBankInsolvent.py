@@ -4,15 +4,25 @@
 
 entityData_InterBankInsolvent = dict(
     attribute=dict(
-        id=2020,
+        id="user2020",
         entity_name="entity_InterBankInsolvent",
         text_name="资不抵债银行间违约损失过程",
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
     ),
-    execute="Processor.process_entity",
-    content=None,  # TODO等需要的时候再写
-    container=list([
+    # execute="Processor.process_entity_by_node_component",
+    execute="Processor.process_entity_by_process_and_container_component",
+    # execute=None,
+    process="content_InterBankInsolvent",
+    container=dict({
+        "node_START": "entity_START",
+        "node_01": "entity_InterBankInsolventContagion",
+        "node_02": "entity_InterBankInsolventShock",
+        "node_END": "entity_END",
+    }),
+    condition=None,
+    content=None,
+    node=list([
         dict(
             node=dict(
                 name="node_START",

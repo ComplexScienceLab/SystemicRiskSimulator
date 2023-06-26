@@ -2,8 +2,8 @@
 运作机
 """
 
-from PySystemicRiskLab import os, logging, dataclass
-from PySystemicRiskLab.core.define.define_entity import Entity
+from PySystemicRiskLab import os, logging, dataclass, Any
+from PySystemicRiskLab.core.operations.entity_manager import EntityManager
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.operations.collector import Collector
@@ -11,7 +11,9 @@ from PySystemicRiskLab.core.operations.executer import Executer
 from PySystemicRiskLab.core.operations.model_installer import ModelInstaller
 from PySystemicRiskLab.core.operations.data_installer import DataInstaller
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
-from PySystemicRiskLab.core.functions.fun_finance import Finance
+from PySystemicRiskLab.core.operations.builder import Builder
+from PySystemicRiskLab.core.operations.processor import Processor
+
 from PySystemicRiskLab.tools.tools import Tools
 
 pass  # end import
@@ -24,7 +26,7 @@ class Operator:
     """
 
     @classmethod
-    def operate_installing(cls, env):
+    def operate_installing(cls, env, para):
         """
         运作安装
 
@@ -55,11 +57,27 @@ class Operator:
         ## 导出控制参数数据
         Collector.export_parameter_data(list_combination_of_para=env['list_combination_of_para'], para=para)
 
-        models = ModelInstaller.install_model()
+        ## 构建本次实验组所需的所有模型
+        ## 导入实体数据，生成实体集、内容集并返回 #BUG，二选一
+        Builder.build_entities_by_process_and_container_component(env)  # BUG 会不会出现不能处理多个模型的情形？
+        # entities = Builder.build_entities_by_node_component(env)
+        # EntityManager.init()  # 初始化实体管理器
+        # models = ModelInstaller.install_model()
+
+        # ## 构建、安装本次实验组所需的所有模型
+        # models = {}
+        # for (i, model_name) in enumerate(para['model_name']):
+        #     model = eval("entities['modelEntity_Model" + model_name + "']")
+        #
+        #     ## 导入实体数据，生成实体集、内容集并返回 #BUG，二选一
+        #     # entities = Builder.build_entities_by_node_component(env)
+        #     Builder.build_entities_by_process_and_container_component(env)  # BUG 会不会出现不能处理多个模型的情形？
+        #     models.update({model_name: model})  # 模型列表
+        #     pass  # for
 
         # ## 构建、安装本次实验组所需的所有模型
         # ### 导入实体数据，生成实体集、内容集并返回
-        # entities, contents = Builder.build_entities(env)
+        # entities, contents = Builder.build_entities_by_node_component(env)
         # ### 生成模型列表
         # models = {}
         # for (i, model_name) in enumerate(para['model_name']):
@@ -70,12 +88,12 @@ class Operator:
         #     models[model_name] = model  # 模型列表
         #     pass
 
-        return env, models
+        return env, EntityManager.modelEntities
 
         pass  # method
 
     @classmethod
-    def operate_experiment(cls, env: dict, para: dict, model: Entity):
+    def operate_experiment(cls, env: dict, para: dict, model: Any):
         """
         运作实验
 
@@ -133,9 +151,15 @@ class Operator:
             # A = DataInstaller.initialize_data(A, para, env)
             pass  # if
 
+        ## BUG如果使用`Processor.process_entity_by_process_and_container_component()`
         env = Scheduler.schedule(env)
-        model, A, A_data, para, env = Executer.execute_branch_entity(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
+        model, A, A_data, para, env = Processor.process_entity_by_process_and_container_component(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
         env['is_continue_process'] = False  # 不再继续运行过程
+
+        # ## BUG如果使用`Processor.process_entity_by_node_component()`
+        # env = Scheduler.schedule(env)
+        # model, A, A_data, para, env = Executer.execute_branch_entity(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
+        # env['is_continue_process'] = False  # 不再继续运行过程
 
         ## 导出数据之于已经收集的
         env = Scheduler.schedule(env)

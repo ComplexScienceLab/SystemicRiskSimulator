@@ -11,7 +11,8 @@
 		"editor.fontLigatures": true,
 		"files.autoSave": "onFocusChange",
 		"editor.fontSize": 15,
-		"editor.fontFamily": "Times New Roman, Songti SC, STZhongsong, Menlo, Monaco, 'Courier New', monospace, Luxi Mono"
+		"editor.fontFamily": "Times New Roman, Songti SC, STZhongsong, Menlo, Monaco, 'Courier New', monospace, Luxi Mono",
+		"r.lsp.promptToInstall": false
 	},
 	"launch": {
 		"version": "0.2.0",

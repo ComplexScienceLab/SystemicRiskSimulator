@@ -7,15 +7,24 @@
 entityData_ExBankInsolvent = dict(
 
     attribute=dict(
-        id=2010,
+        id="user2010",
         entity_name="entity_ExBankInsolvent",
         text_name="外部资产违约损失过程",
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
     ),
-    execute="Processor.process_entity",
-    content=None,  # TODO等需要的时候再写
-    container=list([
+    # execute="Processor.process_entity_by_node_component",
+    execute="Processor.process_entity_by_process_and_container_component",
+    # execute=None,
+    process="content_ExBankInsolvent",
+    container=dict({
+        "node_START": "entity_START",
+        "node_01": "entity_ExBankInsolventShock",
+        "node_END": "entity_END",
+    }),
+    condition=None,
+    content=None,
+    node=list([
         dict(
             node=dict(
                 name="node_START",

@@ -8,13 +8,16 @@ pass  # end import
 
 entityData_InterBankIlliquidAllocate = dict(
     attribute=dict(
-        id=4060,
+        id="user4060",
         entity_name="entity_InterBankIlliquidAllocate",
         text_name="银行间挤兑流动分配借贷流量",
         node_type={"content node"},
         content_type={"algorithm content"},
     ),
     execute="content_InterBankIlliquidAllocate",
-    content=None,
+    process=None,
     container=None,
+    condition=None,
+    content=None,
+    node=None,
 )

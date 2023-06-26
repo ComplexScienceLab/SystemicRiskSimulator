@@ -6,15 +6,24 @@
 
 entityData_ExBankIlliquid = dict(
     attribute=dict(
-        id=2030,
+        id="user2030",
         entity_name="entity_ExBankIlliquid",
         text_name="银行存款挤兑流动过程",
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
     ),
-    execute="Processor.process_entity",
-    content=None,  # TODO等需要的时候再写
-    container=list([
+    # execute="Processor.process_entity_by_node_component",
+    execute="Processor.process_entity_by_process_and_container_component",
+    # execute=None,
+    process="content_ExBankIlliquid",
+    container=dict({
+        "node_START": "entity_START",
+        "node_01": "entity_ExBankIlliquidShock",
+        "node_END": "entity_END",
+    }),
+    condition=None,
+    content=None,
+    node=list([
         dict(
             node=dict(
                 name="node_START",

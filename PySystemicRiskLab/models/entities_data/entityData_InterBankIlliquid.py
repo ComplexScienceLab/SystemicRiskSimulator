@@ -4,15 +4,26 @@
 
 entityData_InterBankIlliquid = dict(
     attribute=dict(
-        id=2040,
+        id="user2040",
         entity_name="entity_InterBankIlliquid",
         text_name="流动性短缺银行间挤兑流动过程",
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
     ),
-    execute="Processor.process_entity",
-    content=None,  # TODO 等需要的时候再写
-    container=list([
+    # execute="Processor.process_entity_by_node_component",
+    execute="Processor.process_entity_by_process_and_container_component",
+    # execute=None,
+    process="content_InterBankIlliquid",
+    container=dict({
+        "node_START": "entity_START",
+        "node_01": "entity_InterBankIlliquidContagionShock",
+        "node_02": "entity_InterBankIlliquidAllocate",
+        "node_03": "entity_InterBankIlliquidRepay",
+        "node_END": "entity_END",
+    }),
+    condition=None,
+    content=None,
+    node=list([
         dict(
             node=dict(
                 name="node_START",

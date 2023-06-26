@@ -1,4 +1,6 @@
-"""程序：定义模型实体"""
+"""
+定义实体
+"""
 
 from PySystemicRiskLab.core.define.define_component import *
 
@@ -7,92 +9,112 @@ pass  # end import
 
 class Entity:
     """
-    定义实体
+    实体。
+
+    实体是系统中的基本单元。实体是一个有特征的对象，它可以是一个节点、一个内容、一个容器、一个过程、一个条件、一个执行器。
+
+    实体的特征是由实体的组件决定的。实体的组件包括：实体特征、实体内容、实体容器、实体过程、实体节点、实体条件、实体执行器。
+
+    包含的组件有：
+
+    - attribute: AttributeComponentType: 实体特征
+    - content: Union[ContentComponent, None]: 实体内容
+    - process: Union[ProcessComponent, None]: 实体过程
+    - container: Union[ContainerComponent, None]: 实体容器
+    - condition: Union[ConditionComponent, None]: 实体条件
+    - execute: Union[ExecuteComponent, None]: 实体执行器
+    - node: Union[NodeComponent, None]: 实体节点
     """
 
     attribute: AttributeComponent
-    content: ContentComponent
-    container: ContainerComponent
-    process: ProcessComponent
-    node: NodeComponent
-    execute: ExecuteComponent
+    content: Union[ContentComponent, None]
+    process: Union[ProcessComponent, None]
+    container: Union[ContainerComponent, None]
+    condition: Union[ConditionComponent, None]
+    execute: Union[ExecuteComponent, None]
+    node: Union[NodeComponent, None]
 
-    def __init__(self, entityData: Any):
+    def __init__(self, entityData: Any = None, **kwargs):
         """
-        attribute: AttributeComponent
-        content: ContentComponent
-        container: ContainerComponent
-        process: ProcessComponent
-        node: NodeComponent
-        execute: ExecuteComponent
+        初始化。创建实体
 
         Args:
-            entityData ():
+            entityData (Any): 事先设置好的实体数据
+            attribute (AttributeComponentType): 实体特征
+            **kwargs (): 其它参数
+
+        > [!note]
+        > 以下是赋值的要求：
+
+        - 如果`entityData`不为空，那么要求`**kwargs`设置为空；
+
+        - 如果`entityData`不为空，那么要求`entityData`数据必须符合格式要求。
+
+        - 如果`entityData`为空且`**kwargs`不为空，那么要求`**kwargs`里面不能有`entityData`；
+
+        - `**kwargs`之所有键名应该与实体类在各组件字段名称保持一致，除了`attribute.other`字段之外；
+
+        - 最好不要在实例化`entity`时赋值`attribute.other`字段。建议在实例化之后，再赋值`attribute.other`字段；
+
+        - 当所有参数都为空的时候，将创建一个具有随机`id`、随机`name`的空实体。
+
+
+        Returns:
+            entity (Entity): 实体
+
         """
-        self.attribute = AttributeComponent(entityData['attribute'])
-        self.content = entityData['content'] if entityData['content'] is not None else None
-        self.container = entityData['container'] if entityData['container'] is not None else None
-        # self.process = entityData['process'] if entityData['process'] is not None else None
-        # self.node = entityData['node'] if entityData['node'] is not None else None
-        self.execute = entityData['execute'] if entityData['execute'] is not None else None
-        pass  # method
 
-    # def __init__(self, property_content: AttributeComponent, content: ContentComponent, container: ContainerComponent, process: ProcessComponent):
-    #     self.attribute = property_content
-    #     self.content = content
-    #     self.container = container
-    #     self.process = process
-    #     pass  # method
+        ## 如果`entityData`不为空，那么直接设置`entityData`数据，否则设置`**kwargs`数据。
+        if entityData is not None:
+            kwargs = None
+            self.attribute = AttributeComponent(attribute=entityData['attribute'])  # HACK 如果`entityData['attribute']`为空，那么entityData数据不符合要求。这里并未给出检查条件。
+            self.content = entityData['content']
+            self.execute = entityData['execute']
+            self.process = entityData['process']
+            self.container = entityData['container']
+            self.condition = entityData['condition']
+            self.node = entityData['node']
+            # self.content = ContentComponent(content=entityData['content'])
+            # self.execute = ExecuteComponent(execute=entityData['execute'])
+            # self.process = ProcessComponent(process=entityData['process'])
+            # self.container = ContainerComponent(container=entityData['container'])
+            # self.condition = ConditionComponent(condition=entityData['condition'])
+            # self.node = NodeComponent(node=entityData['node'])
+        elif kwargs is not None:  # 如果`attribute`不为空，那么直接设置`attribute`数据至`AttributeComponent`，否则设置`**kwargs`至`AttributeComponent`。
+            if 'attribute' in kwargs.keys():  # 有`attribute`组件，就直接通过`attribute`组件创建`attribute`组件
+                self.attribute = AttributeComponent(attribute=kwargs['attribute'])
+            elif 'attribute' not in kwargs.keys():  # 没有`attribute`组件，就通过其它键值对创建`attribute`组件
+                self.attribute = AttributeComponent(attribute=None, **kwargs)
+                pass  # if
+            ## 一次创建其它组件
+            self.content = kwargs['content'] if 'content' in kwargs.keys() else None
+            self.execute = kwargs['execute'] if 'execute' in kwargs.keys() else None
+            self.process = kwargs['process'] if 'process' in kwargs.keys() else None
+            self.container = kwargs['container'] if 'container' in kwargs.keys() else None
+            self.condition = kwargs['condition'] if 'condition' in kwargs.keys() else None
+            self.node = kwargs['node'] if 'node' in kwargs.keys() else None
+            # self.content = ContentComponent(content=kwargs['content']) if kwargs['content'] in kwargs.keys() else ContentComponent(None)
+            # self.execute = ExecuteComponent(execute=kwargs['execute']) if kwargs['execute'] in kwargs.keys() else ExecuteComponent(None)
+            # self.process = ProcessComponent(process=kwargs['process']) if kwargs['process'] in kwargs.keys() else ProcessComponent(None)
+            # self.container = ContainerComponent(container=kwargs['container']) if kwargs['container'] in kwargs.keys() else ContainerComponent(None)
+            # self.condition = ConditionComponent(condition=kwargs['condition']) if kwargs['condition'] in kwargs.keys() else ConditionComponent(None)
+            # self.node = NodeComponent(node=kwargs['node']) if kwargs['node'] in kwargs.keys() else NodeComponent(None)
+        else:  # HACK其实这种情况不可能发生。因为已经自动生成了`id`和`name`。
+            self.attribute = AttributeComponent(None)
+            self.content = None
+            self.execute = None
+            self.process = None
+            self.container = None
+            self.condition = None
+            self.node = None
+            # self.content = ContentComponent(None)
+            # self.execute = ExecuteComponent(None)
+            # self.process = ProcessComponent(None)
+            # self.container = ContainerComponent(None)
+            # self.condition = ConditionComponent(None)
+            # self.node = NodeComponent(None)
+            pass  # if
 
-    # @clsassmethod
-    # def installEntity(cls,):
-    #
-    #     pas  # method
+        pass  # def
 
     pass  # class
-
-# class AlgorithmEntity(Entity):  # HACK 无用
-#     """
-#     定义算法实体
-#     """
-#     # content = Executer.execute  # 函数
-#     content = None  # 函数
-#
-#     # @classmethod
-#     def __init__(self, id, entity_name, text_name, content):
-#         super().__init__(id, entity_name, text_name)
-#         self.content = content
-#         pass
-#
-#     pass
-#
-#
-# class ProcessEntity(Entity):  # HACK 无用
-#     """
-#     定义过程实体
-#     """
-#     # content:Vector{ProcessEntity} # 过程实体列表 listContentProcess
-#     content: list  # 阶段实体列表 content
-#
-#     # @classmethod
-#     def __init__(self, id, entity_name, text_name, content: list):
-#         super().__init__(id, entity_name, text_name)
-#         self.content = content
-#         pass
-#
-#     pass
-#
-#
-# class ModelEntity(Entity):  # HACK 无用
-#     """
-#     定义模型实体
-#     """
-#     content: list  # 过程实体列表 listContentProcess
-#
-#     # @classmethod
-#     def __init__(self, id, entity_name, text_name, content: list):
-#         super().__init__(id, entity_name, text_name)
-#         self.content = content
-#         pass
-#
-#     pass  # class
