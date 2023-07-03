@@ -39,6 +39,8 @@ env['is_model'] = False  # 是否处于模型状态；
 env['is_experiment'] = False  # 是否处于当前状态的一次实验；
 env['is_continue_process'] = False  # 是否继续运行过程
 
+env['A_data'] = None  # 多主体数据
+
 env['index_model'] = 1  # 索引状态下，标记当前所在模型之位置
 env['model_name'] = ""  # 运行的模型之名称
 env['saved_model_name'] = ""  # 存储的模型之名称
@@ -64,7 +66,6 @@ env['model_process_state'] 表示当前模型根节点处理状态
 - 标记是红色`"has processed"`说明已经处理完该节点，但是表示接下来不会再准备处理该节点；
 """
 env['model_process_state'] = "has not process"
-
 
 ## 测试程序专用
 env['test_continous_loop_of_model'] = 0  # 计次单个模型连续循环次数

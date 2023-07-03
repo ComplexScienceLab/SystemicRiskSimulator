@@ -9,7 +9,7 @@ from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import *
-from PySystemicRiskLab.core.operations.scheduler import Scheduler
+# from PySystemicRiskLab.core.operations.scheduler import Scheduler
 
 pass  # end import
 
@@ -23,7 +23,7 @@ class Collector:
 
         Args:
             A (Optional[SystemicRiskAgent]): Agent群变量
-            A_data (Optional[AgentDataCollection]): Agent群变量之数据
+            A_data (Optional[AgentDataCollection]): Agent群变量之数据 #TODO 该形参可以被并入env
             env (dict): 环境变量
 
         Returns:
@@ -31,7 +31,7 @@ class Collector:
 
         """
         if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
-            env = Scheduler.schedule(env)
+            # env = Scheduler.schedule(env)
             logging.debug("                收集数据")
             env['id_data'] += 1  # 累加数据帧ID号
             A_data = Collector.collect_agent_data(A, A_data, env)

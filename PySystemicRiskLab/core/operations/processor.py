@@ -25,8 +25,6 @@ class Processor:
         """
         处理所有类型的实体，通过过程与容器组件。
 
-        TODO：HACK：目前采用的是以栈的形式处理，这样的缺点是受到python自带的栈深度限制。后续方便的话要改成用遍历动态多叉树生成序列的形式处理。
-
         NOTE：这里略去了功能：对特殊节点调用`Excuter`。因为就目前的程序来说，没必要进一步复杂化，直接在`Processor`内处理即可。
 
         Args:
@@ -52,10 +50,10 @@ class Processor:
                 continue
             elif instruction[1] == 'execute':  # 当前指令是执行语句时
                 if not (instruction[2].attribute.entity_name == 'node_START' or instruction[2].attribute.entity_name == 'node_END'):
-                    # logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.id}")
-                    A, A_data, env = Executer.execute_terminal_entity(A, A_data, para, env, instruction[2])  # BUG
+                    # logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.id}") #BUG
+                    A, A_data, env = Executer.execute_algorithm_entity(A, A_data, para, env, instruction[2])
                     line_number += 1
-                else:
+                else:  # 当前指令开始或结束节点时
                     logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.id}")
                     line_number += 1
                 continue
@@ -71,13 +69,21 @@ class Processor:
                         break
                         pass  # if
                     pass  # while
+
+                # # BUG #NOW
+                # conditions = []  # 条件列表
+                # condition01 = (random.sample(range(1, 100), 1)[0] > 10)
+                # conditions.append(condition01)
+                # condition02 = ~condition01
+                # conditions.append(condition02)
+
                 conditions = []  # 条件列表
-                for instruction_ifgoto in instructions_ifgoto:  ## 判断每个条件
+                for instruction_ifgoto in instructions_ifgoto:  ## 判断每个条件 #BUG
                     condition = eval(instruction_ifgoto[2]) if instruction_ifgoto[2] is not None else None  # NOTE 其实判断None这个条件是多余的
                     logging.debug(f"    条件{instruction_ifgoto[2]}是 {condition}")
                     conditions.append(condition)
                     pass  # for
-                line_number = instructions_ifgoto[conditions.index(True)][5]  # 获取下一个节点所在的行号
+                line_number = instructions_ifgoto[conditions.index(True)][5]  # 获取下一个节点所在的行号 #FIXME
                 logging.debug(f"    流至节点{instructions_ifgoto[conditions.index(True)][4].attribute.entity_name} {instructions_ifgoto[conditions.index(True)][4].attribute.id}，跳转行{line_number}")
                 continue
             else:
@@ -94,7 +100,7 @@ class Processor:
         """
         处理所有类型的实体，通过节点组件。
 
-        #FIXME 这里没有做适配，因为目前还没有用到。以后有需要可以做非递归算法适配。
+        #FIXME 这里没有做适配。因此目前用不到。因为目前还没有用到。以后有需要可以做非递归算法适配。
 
         #TODO：HACK：目前采用的是以栈的形式处理，这样的缺点是受到python自带的栈深度限制。后续方便的话要改成用遍历动态多叉树生成序列的形式处理。
 
@@ -125,7 +131,7 @@ class Processor:
 
             ## 执行终端节点内容
             if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
-                env = Scheduler.schedule(env, node)
+                env = Scheduler.schedule(env)
                 if env['state_of_schedule'] == StateOfScheduleEnum.running:
                     A, A_data, env = Executer.execute_terminal_entity(A, A_data, para, env, node)
 

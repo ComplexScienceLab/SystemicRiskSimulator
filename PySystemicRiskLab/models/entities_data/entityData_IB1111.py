@@ -24,14 +24,6 @@ entityData_IB1111 = dict(
         "node_END": "entity_END",
     }),
     condition=dict({
-        # "node_01_condition_01": "random.sample(range(1,100),1)[0]>10", #BUG 这个是测试用的条件，下面的是实际用的
-        # "node_01_condition_02": "random.sample(range(1,100),1)[0]>10",
-        # "node_02_condition_01": "random.sample(range(1,100),1)[0]>10",
-        # "node_02_condition_02": "random.sample(range(1,100),1)[0]>10",
-        # "node_03_condition_01": "random.sample(range(1,100),1)[0]>10",
-        # "node_03_condition_02": "random.sample(range(1,100),1)[0]>10",
-        # "node_04_condition_01": "random.sample(range(1,100),1)[0]>10",
-        # "node_04_condition_02": "random.sample(range(1,100),1)[0]>10",
         "node_01_condition_01": "(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()",
         "node_01_condition_02": "(A.BB.isv == A_data.BB[env['round']-1]['dataBB'].isv).all()",
         "node_02_condition_01": "(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()",

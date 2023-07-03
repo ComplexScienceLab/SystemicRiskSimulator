@@ -1,4 +1,6 @@
-"结构体：定义各类Agents，基于模式3-1"
+"""
+结构体：定义各类Agents，基于模式3-1
+"""
 
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import *

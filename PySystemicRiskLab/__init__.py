@@ -3,12 +3,11 @@
 ## 系统性风险仿真模拟
 
 
-__version__ = '0.0.7.alpha'
+__version__ = '0.0.8.alpha'
 
 ## 导入第三方包（#NOTE 动态导入，严禁删除）
 import os
 import glob
-# from goto import with_goto, goto, label
 from os import path
 import warnings
 import re
@@ -25,15 +24,12 @@ from copy import deepcopy, copy
 from dataclasses import dataclass
 import logging
 from typing import Union, Any, Optional
-# from queue import LifoQueue
-# from treelib import Node, Tree
-# import igraph as ig
-# import matplotlib.pyplot as plt
-# import drawsvg as dw
-# from IPython.display import SVG
-# import fitz
-# from svglib.svglib import svg2rlg
-# from reportlab.graphics import renderPDF
+import igraph as ig
+import matplotlib.pyplot as plt
+import drawsvg as dw
+import fitz
+from svglib.svglib import svg2rlg
+from reportlab.graphics import renderPDF
 from functools import reduce
 import random
 import string

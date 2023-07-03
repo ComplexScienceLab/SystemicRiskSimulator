@@ -189,6 +189,8 @@ def draw_interbank_flow_graph(d: dict, data_str: str, r: int, df_BB: pd.DataFram
     # 显示图像
     # plt.show()
 
+    plt.close()
+
     return fig
     pass  # def
 

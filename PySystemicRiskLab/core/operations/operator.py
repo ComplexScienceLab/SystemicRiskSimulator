@@ -5,14 +5,15 @@
 from PySystemicRiskLab import os, logging, dataclass, Any
 from PySystemicRiskLab.core.operations.entity_manager import EntityManager
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
-from PySystemicRiskLab.core.define.define_parameterVariables import para
+# from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.operations.collector import Collector
-from PySystemicRiskLab.core.operations.executer import Executer
-from PySystemicRiskLab.core.operations.model_installer import ModelInstaller
+# from PySystemicRiskLab.core.operations.executer import Executer
+# from PySystemicRiskLab.core.operations.model_installer import ModelInstaller
 from PySystemicRiskLab.core.operations.data_installer import DataInstaller
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
 from PySystemicRiskLab.core.operations.builder import Builder
 from PySystemicRiskLab.core.operations.processor import Processor
+# from PySystemicRiskLab.core.functions.fun_finance import Finance
 
 from PySystemicRiskLab.tools.tools import Tools
 
@@ -135,14 +136,19 @@ class Operator:
             env['test_continous_loop_of_model'] = 0
             env['current_node_name'] = None
             env['model_process_state'] = "has not process"
+            env['A_data'] = None
 
             logging.info("实验" + str(env['id_experiment']) + "/" + str(len(env['list_combination_of_para'])) + "开始：\n")
 
             logging.info("相关实验参数：" + str(para) + "\n")
 
-            ## 安装本次实验所需的多主体数据
-            A = DataInstaller.install_data(init_method=env['init_method'])
-            A_data = Collector.collect(A, None, env)
+            # ## 新建本次实验所需的变量更新器
+            # env['update'] = Executer.execute(Finance.update_finance_variables)
+            # update = Executer.execute(Finance.update_finance_variables)
+
+            ## 初始化
+            A = DataInstaller.install_data(init_method=env['init_method'])  # 安装本次实验所需的多主体数据
+            env['A_data'] = Collector.collect(A, env['A_data'], env)  # 收集初始数据
 
             # ## 构建本次实验所需的状态数据
             # Finance.build_state_const_variables(A.BB, A.IB)
@@ -151,12 +157,12 @@ class Operator:
             # A = DataInstaller.initialize_data(A, para, env)
             pass  # if
 
-        ## BUG如果使用`Processor.process_entity_by_process_and_container_component()`
-        env = Scheduler.schedule(env)
-        model, A, A_data, para, env = Processor.process_entity_by_process_and_container_component(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
+        ## HACK 如果使用`Processor.process_entity_by_process_and_container_component()`
+        env = Scheduler.schedule(env)  # 调度状态变成`running`
+        model, A, env['A_data'], para, env = Processor.process_entity_by_process_and_container_component(model, A, env['A_data'], para, env)  # 执行具体的模型，通过执行模型实体的方式
         env['is_continue_process'] = False  # 不再继续运行过程
 
-        # ## BUG如果使用`Processor.process_entity_by_node_component()`
+        # ## HACK 如果使用`Processor.process_entity_by_node_component()`
         # env = Scheduler.schedule(env)
         # model, A, A_data, para, env = Executer.execute_branch_entity(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
         # env['is_continue_process'] = False  # 不再继续运行过程
@@ -164,7 +170,7 @@ class Operator:
         ## 导出数据之于已经收集的
         env = Scheduler.schedule(env)
         if env['state_of_schedule'] == StateOfScheduleEnum.ending:
-            Collector.collect(None, A_data, env)
+            Collector.collect(None, env['A_data'], env)
 
         ## 结束本次实验
         env = Scheduler.schedule(env)
