@@ -9,6 +9,7 @@ from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import *
+
 # from PySystemicRiskLab.core.operations.scheduler import Scheduler
 
 pass  # end import
@@ -33,7 +34,7 @@ class Collector:
         if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
             # env = Scheduler.schedule(env)
             logging.debug("                收集数据")
-            env['id_data'] += 1  # 累加数据帧ID号
+            # env['id_data'] += 1  # 累加数据帧ID号
             A_data = Collector.collect_agent_data(A, A_data, env)
             # env = Scheduler.schedule(env)
             return A_data, env
@@ -226,10 +227,11 @@ class Collector:
         """
         BB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
+                list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'], (env['step'] + 1) * env['num_bank']),
+                list(env.keys())[list(env.keys()).index('step')]: env['step'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
-                list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
-                list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
+                # list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
+                # list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
                 'dataBB': deepcopy(A.BB)
             }
         )
@@ -238,10 +240,11 @@ class Collector:
 
         IB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
+                list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'] ** 2, (env['step'] + 1) * env['num_bank'] ** 2),
+                list(env.keys())[list(env.keys()).index('step')]: env['step'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
-                list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
-                list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
+                # list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
+                # list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
                 'dataIB': deepcopy(A.IB)
             }
         )
@@ -268,10 +271,11 @@ class Collector:
         """
         BB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
+                list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'], (env['step'] + 1) * env['num_bank']),
+                list(env.keys())[list(env.keys()).index('step')]: env['step'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
-                list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
-                list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
+                # list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
+                # list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
                 'dataBB': deepcopy(A.BB)
             }
         )
@@ -279,10 +283,11 @@ class Collector:
 
         IB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('id_data')]: env['id_data'],
+                list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'] ** 2, (env['step'] + 1) * env['num_bank'] ** 2),
+                list(env.keys())[list(env.keys()).index('step')]: env['step'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
-                list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
-                list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
+                # list(env.keys())[list(env.keys()).index('index_process')]: env['index_process'],
+                # list(env.keys())[list(env.keys()).index('index_stage')]: env['index_stage'],
                 'dataIB': deepcopy(A.IB)
             }
         )
@@ -310,9 +315,10 @@ class Collector:
         numRow, numCol = np.shape(A_data.BB[0]['dataBB'].A_all)
         for (i1, v1) in enumerate(A_data.BB):
             BB_data['id_data'] = np.full(numRow, v1['id_data'])
+            BB_data['step'] = np.full(numRow, v1['step'])
             BB_data['round'] = np.full(numRow, v1['round'])
-            BB_data['index_process'] = np.full(numRow, v1['index_process'])
-            BB_data['index_stage'] = np.full(numRow, v1['index_stage'])
+            # BB_data['index_process'] = np.full(numRow, v1['index_process'])
+            # BB_data['index_stage'] = np.full(numRow, v1['index_stage'])
             fieldNames = list(v1['dataBB'].__dict__.keys())
             fieldValues = list(v1['dataBB'].__dict__.values())
             for (i2, v2) in enumerate(fieldValues):
@@ -320,18 +326,21 @@ class Collector:
                 pass
             BB_data_export = pd.concat([BB_data_export, BB_data])  # 追加`BB_data`至`BB_data_expert`
             pass  # for
-        BB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "BB_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
+        BB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "BB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
 
         ## 整理interbank之数据为一数据框
         IB_data_export = pd.DataFrame()
         IB_data = pd.DataFrame()
-        numRow, numCol = np.shape(A_data.IB[0]['dataIB'].A_IB)
+        # numRow, numCol = np.shape(A_data.IB[0]['dataIB'].A_IB)
+        numRow, numCol = env['num_bank'], env['num_bank']
         for (i1, v1) in enumerate(A_data.IB):
-            IB_data['id_data'] = np.full(numRow * numCol, v1['id_data'])
+            # IB_data['id_data'] = np.full(numRow * numCol, v1['id_data'])
+            IB_data['id_data'] = v1['id_data']
+            IB_data['step'] = np.full(numRow * numCol, v1['step'])
             IB_data['round'] = np.full(numRow * numCol, v1['round'])
-            IB_data['index_process'] = np.full(numRow * numCol, v1['index_process'])
-            IB_data['index_stage'] = np.full(numRow * numCol, v1['index_stage'])
-            IB_data['index_stage'] = np.full(numRow * numCol, v1['index_stage'])
+            # IB_data['index_process'] = np.full(numRow * numCol, v1['index_process'])
+            # IB_data['index_stage'] = np.full(numRow * numCol, v1['index_stage'])
+            # IB_data['index_stage'] = np.full(numRow * numCol, v1['index_stage'])
             IB_data['row'] = np.repeat(range(1, numRow + 1), numCol)
             IB_data['col'] = np.tile(range(1, numCol + 1), numRow)
             fieldNames = list(v1['dataIB'].__dict__.keys())
@@ -364,7 +373,7 @@ class Collector:
                 pass  # for
             IB_data_export = pd.concat([IB_data_export, IB_data])  # 追加当前`IB_data`至`IB_data_expert`
             pass  # for
-        IB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
+        IB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
 
         pass  # method
 

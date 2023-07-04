@@ -37,7 +37,7 @@ class Executer:
 
         """
         Finance.update_finance_variables(Agent.BB, Agent.IB, Agent.b, Agent.ib, by_way=update_way)  # 更新金融变量
-
+        env['step'] += 1  # 步进加一
         env = Scheduler.schedule(env)  # 调度状态变成`collecting`
         env['A_data'], env = Collector.collect(Agent, env['A_data'], env)  # 收集数据
 
