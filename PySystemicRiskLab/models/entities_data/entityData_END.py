@@ -6,7 +6,7 @@ entityData_END = dict(
     attribute=dict(
         id="user9999",
         entity_name="entity_END",
-        text_name="结束",
+        text_name="结束过程",
         node_type={"process node"},
         content_type={"process content"},
     ),

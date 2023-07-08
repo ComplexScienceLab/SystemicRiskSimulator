@@ -49,7 +49,7 @@ class Processor:
                 line_number += 1
                 continue
             elif instruction[1] == 'execute':  # 当前指令是执行语句时
-                if not (instruction[2].attribute.entity_name == 'node_START' or instruction[2].attribute.entity_name == 'node_END'):
+                if not (instruction[2].attribute.entity_name == 'entity_START' or instruction[2].attribute.entity_name == 'entity_END'):
                     # logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.id}") #BUG
                     A, A_data, env = Executer.execute_algorithm_entity(A, A_data, para, env, instruction[2])
                     line_number += 1
@@ -70,7 +70,7 @@ class Processor:
                         pass  # if
                     pass  # while
 
-                # # BUG #NOW
+                # #TODO BUG添加测试用的跳转语句
                 # conditions = []  # 条件列表
                 # condition01 = (random.sample(range(1, 100), 1)[0] > 10)
                 # conditions.append(condition01)

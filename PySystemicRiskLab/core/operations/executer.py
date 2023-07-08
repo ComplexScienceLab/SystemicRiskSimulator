@@ -24,7 +24,7 @@ class Executer:
     @classmethod
     def step_update(cls, update_way: str, Agent: SystemicRiskAgent, para: dict, env: dict):
         """
-        执行一次步进更新#NOW
+        执行一次步进更新
 
         Args:
             update_way (str): 更新方式
@@ -46,58 +46,8 @@ class Executer:
 
         pass  # def
 
-    # ## NOTE：执行机，以装饰器形式，执行一次更新。
-    # # @classmethod
-    # # def execute(cls, env: dict, A: SystemicRiskAgent, A_data: AgentDataCollection):
-    # @classmethod
-    # # @staticmethod
-    # def execute(cls, func):
-    #     """
-    #     执行机装饰器
-    #
-    #     Args:
-    #         func ():
-    #
-    #     Returns:
-    #
-    #     """
-    #
-    #     def decorator(*args, **kwargs):
-    #         ## 执行函数
-    #         kwargs['env'] = Scheduler.schedule(kwargs['env'])  # 调度状态变成`running`
-    #         func(*args, **kwargs)  # 真正执行函数的地方
-    #
-    #         ## 收集数据 #BUG #NOW 改成每执行一步都搜集数据
-    #         kwargs['env'] = Scheduler.schedule(kwargs['env'])  # 调度状态变成`collecting`
-    #         kwargs['A_data'], kwargs['env'] = Collector.collect(kwargs['A'], kwargs['A_data'], kwargs['env'])
-    #
-    #         logging.debug("运行一次调度")
-    #         pass
-    #
-    #     return decorator
-
-    # ## NOTE：调度机，以装饰器形式，调度各功能函数。
-    # @classmethod
-    # def execute(cls,env:dict):
-    #     def wrapper(func):
-    #         def decorator(*args, **kwargs):
-    #             ## 执行函数
-    #             kwargs['env'] = Scheduler.schedule(env)  # 调度状态变成`running`
-    #             func(*args, **kwargs)  # 真正执行函数的地方
-    #
-    #             ## 收集数据
-    #             kwargs['env'] = Scheduler.schedule(kwargs['env'])  # 调度状态变成`collecting`
-    #             kwargs['A_data'], kwargs['env'] = Collector.collect(kwargs['A'], kwargs['A_data'], kwargs['env'])
-    #
-    #             print("运行一次调度")
-    #             pass
-    #
-    #         return decorator
-    #
-    #     return wrapper
-
     @classmethod
-    def execute_algorithm_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, node: Entity):
+    def execute_algorithm_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, entity: Entity):
         """
         执行算法实体。
 
@@ -108,17 +58,17 @@ class Executer:
             A_data (Optional[AgentDataCollection]): Agent群变量之数据
             para (dict): 参数变量
             env (dict): 环境变量
-            node (Entity): 节点实体（NOTE：本函数中，特指节点实体而非算法实体。算法实体表示`entity`。）
+            entity (Entity): 算法实体
 
         Returns: agent
 
         """
-        entity = node.content  # 获取节点实体对应的算法实体
+        # entity = node.content  # 获取节点实体对应的算法实体
 
         logging.debug("- - 开始执行：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
 
         env['round'] += 1  # 计次回合数
-
+        env['process_name'] = entity.attribute.text_name  # 执行的过程名称
         A.BB, A.IB = entity.execute(A, para, env)
 
         # ## 收集数据

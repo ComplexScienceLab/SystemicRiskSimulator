@@ -7,21 +7,20 @@ pass  # end import
 
 class AgentDataCollection:
     """
-    #TODO 定义待收集数据类型
+    定义待收集数据类型
+
+    Args:
+        BB (BankCommercial): 银行个体众；
+        IB (BankInterbank): 银行间个体众；
+
     """
     BB: list
     IB: list
-
-    # # @classmethod
-    # def __init__(self):
-    #     self.BB = []
-    #     self.IB = []
-    #     pass
 
     # @classmethod
     def __init__(self, BB: BankCommercial, IB: BankInterbank):
         self.BB = BB
         self.IB = IB
-        pass
+        pass  # def
 
-    pass
+    pass  # class

@@ -25,25 +25,12 @@ class ModelInstaller:
         """
         ## 构建、安装本次实验组所需的所有模型
 
-        ## 导入实体数据，生成实体集、内容集并返回 #BUG，二选一
-        # entities = Builder.build_entities_by_node_component(env)
+        ## 导入实体数据，生成实体集、内容集并返回
+        # entities = Builder.build_entities_by_node_component(env) #BUG还未适配
         entities = Builder.build_entities_by_process_and_container_component(env)
 
         ## 生成待运行的模型列表
         return EntityManager.modelEntities
-
-        # models = {}
-        # for (i, model_name) in enumerate(para['model_name']):
-        #     model = eval("entities['entity_" + model_name + "']")  # 获取每一个待运行的模型实体
-        #
-        #     ## 对于每一个模型，根据已经生成的模型，生成索引遍历序列，用于后序遍历所有节点。                                                                                                                                                                                                 遍历序列，用于后序遍历所有节点。
-        #     # install_entity_queue = cls.build_postorder_traversial(model)  # HACK暂时不需要用  #FIXME 程序运行错误
-        #
-        #     ## 模型列表
-        #     models[model_name] = model
-        #     pass
-        #
-        # return models
 
         pass  # method
 

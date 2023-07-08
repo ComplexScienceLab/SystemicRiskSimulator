@@ -59,35 +59,8 @@ class Operator:
         Collector.export_parameter_data(list_combination_of_para=env['list_combination_of_para'], para=para)
 
         ## 构建本次实验组所需的所有模型
-        ## 导入实体数据，生成实体集、内容集并返回 #BUG，二选一
+        ## 导入实体数据，生成实体集、内容集并返回
         Builder.build_entities_by_process_and_container_component(env)  # BUG 会不会出现不能处理多个模型的情形？
-        # entities = Builder.build_entities_by_node_component(env)
-        # EntityManager.init()  # 初始化实体管理器
-        # models = ModelInstaller.install_model()
-
-        # ## 构建、安装本次实验组所需的所有模型
-        # models = {}
-        # for (i, model_name) in enumerate(para['model_name']):
-        #     model = eval("entities['modelEntity_Model" + model_name + "']")
-        #
-        #     ## 导入实体数据，生成实体集、内容集并返回 #BUG，二选一
-        #     # entities = Builder.build_entities_by_node_component(env)
-        #     Builder.build_entities_by_process_and_container_component(env)  # BUG 会不会出现不能处理多个模型的情形？
-        #     models.update({model_name: model})  # 模型列表
-        #     pass  # for
-
-        # ## 构建、安装本次实验组所需的所有模型
-        # ### 导入实体数据，生成实体集、内容集并返回
-        # entities, contents = Builder.build_entities_by_node_component(env)
-        # ### 生成模型列表
-        # models = {}
-        # for (i, model_name) in enumerate(para['model_name']):
-        #     model = eval("entities['modelEntity_Model" + model_name + "']")
-        #
-        #     ### 对于每一个模型，根据已经生成的模型，生成索引序列                                                                                                                                                                                                 遍历序列，用于后序遍历所有节点。
-        #     # install_entity_queue = ModelInstaller.build_postorder_traversial(model) #HACK暂时不用
-        #     models[model_name] = model  # 模型列表
-        #     pass
 
         return env, EntityManager.modelEntities
 
@@ -108,43 +81,21 @@ class Operator:
         """
 
         env = Scheduler.schedule(env)
-        if env['state_of_schedule'] == StateOfScheduleEnum.initializing:  # TODO检查是否要更新
+        if env['state_of_schedule'] == StateOfScheduleEnum.initializing:
             # 重置环境变量
             env['index_of_schedule_position'] = []
-            # env['index_model'] = 1
-            # env['index_process'] = 1
-            # env['index_stage'] = 1
-            # env['saved_index_process'] = 1
-            # env['saved_index_stage'] = 1
-            # env['loaded_index_process'] = 1
-            # env['loaded_index_stage'] = 1
             env['step'] = 0
             env['round'] = 0
-            # env['saved_model_name'] = ""
             env['model_name'] = para['model_name']
-            # env['process_name'] = ""
-            # env['stage_name'] = ""
-            # env['is_step'] = False
-            # env['is_loop'] = True
-            # env['is_round'] = True
-            # env['is_terminalProcess'] = True
-            # env['is_process'] = True
-            # env['running_mode'] = "continue running mode"
+            env['process_name'] = "开始"
             env['is_continue_process'] = True
-            # env['is_model'] = True
-            # env['is_experiment'] = True
             env['test_continous_loop_of_model'] = 0
-            # env['current_node_name'] = None
             env['model_process_state'] = "has not process"
             env['A_data'] = None
 
             logging.info("实验" + str(env['id_experiment']) + "/" + str(len(env['list_combination_of_para'])) + "开始：\n")
 
             logging.info("相关实验参数：" + str(para) + "\n")
-
-            # ## 新建本次实验所需的变量更新器
-            # env['update'] = Executer.execute(Finance.update_finance_variables)
-            # update = Executer.execute(Finance.update_finance_variables)
 
             ## 初始化
             A = DataInstaller.install_data(init_method=env['init_method'])  # 安装本次实验所需的多主体数据

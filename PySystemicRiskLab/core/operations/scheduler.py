@@ -20,34 +20,6 @@ class Scheduler:
     调度机，负责模型运作过程中的各种调度。
     """
 
-    # ## NOTE：调度机，以装饰器形式，调度各功能函数。
-    # # @classmethod
-    # # def scheduler(cls, env: dict, A: SystemicRiskAgent, A_data: AgentDataCollection):
-    # @classmethod
-    # def scheduler(cls, func):
-    #     """
-    #     调度机装饰器
-    #
-    #     Args:
-    #         func ():
-    #
-    #     Returns:
-    #
-    #     """
-    #     def decorator(*args, **kwargs):
-    #         ## 执行函数
-    #         kwargs['env'] = Scheduler.schedule(kwargs['env'])  # 调度状态变成`running`
-    #         func(*args, **kwargs)  # 真正执行函数的地方
-    #
-    #         ## 收集数据 #BUG #NOW 改成每执行一步都搜集数据
-    #         kwargs['env'] = Scheduler.schedule(kwargs['env'])  # 调度状态变成`collecting`
-    #         kwargs['A_data'], kwargs['env'] = Collector.collect(kwargs['A'], kwargs['A_data'], kwargs['env'])
-    #
-    #         logging.debug("运行一次调度")
-    #         pass
-    #
-    #     return decorator
-
     @classmethod
     def schedule(cls, env: dict):
         """

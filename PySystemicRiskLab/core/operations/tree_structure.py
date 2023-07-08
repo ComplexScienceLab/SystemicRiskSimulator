@@ -376,7 +376,7 @@ class Tree:
         return result
         pass  # def
 
-    def print_tree(self, node: Union[Entity, None] = None, info: str = 'entity_name', prefix="", _is_tail=True):  # TODO 由于树结构可能会很大，需要改成非递归的方式
+    def print_tree(self, node: Union[Entity, None] = None, info: str = 'entity_name', prefix="", _is_tail=True):  # NOTE 由于目前预计其生成树结构之规模小，因此无需改成非递归的方式。
         """
         以类似Linux中tree命令的输出结果打印树结构及其相关信息。
 

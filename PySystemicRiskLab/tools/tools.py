@@ -62,12 +62,13 @@ class Tools:
             pass
 
         env['foldername_of_experiments'] = str_manuallyName + str_datetime
-        env['folderpath_of_experiments'] = os.path.join(env['folderpath_project'], env['root_dir_of_experiments'], env['foldername_of_experiments'])
+        env['folderpath_of_experiments'] = Path(env['folderpath_project'], env['root_dir_of_experiments'], env['foldername_of_experiments'])
+        env['folderpath_of_experiments'] = Path(env['folderpath_project'], env['root_dir_of_experiments'], env['foldername_of_experiments'])
 
-        os.mkdir(env['folderpath_of_experiments'])  # 创建文件夹
-        env['folderpath_of_experiments_output_data'] = os.path.join(env['folderpath_of_experiments'], env['foldername_of_experiments_output_data'])
+        env['folderpath_of_experiments'].mkdir(parents=True, exist_ok=True)  # 创建文件夹
+        env['folderpath_of_experiments_output_data'] = Path(env['folderpath_of_experiments'], env['foldername_of_experiments_output_data'])
         # cd("$(env['folderpath_of_experiments'])")
-        os.mkdir(env['folderpath_of_experiments_output_data'])  # 创建文件夹，以导出实验输出数据
+        env['folderpath_of_experiments_output_data'].mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
 
         return env
         pass  # method
@@ -136,28 +137,6 @@ class Tools:
                 idx_file += 1
 
         return list_contents
-
-        ## HACK无用
-        # # import os, pkgutil, importlib
-        #
-        # ## 生成文件夹路径
-        # # folderpath=cls._translate_package_form_path_to_folder_form_path(package_form_path)
-        # # folder_form_path = os.path.dirname(folderpath)  # 获取包文件夹路径
-        # package_path = cls._translate_package_form_path_to_folder_form_path(package_form_path)
-        # entity_files = []
-        # entityData = {}  # 实体数据集合
-        # i = 0
-        # n = 0
-        # for _, name, _ in pkgutil.iter_modules([package_path]):
-        #     entity_files.append(importlib.import_module('.' + name, package_form_path))
-        #     for c in dir(entity_files[i]):
-        #         if not c.startswith("__"):
-        #             entityData.update({entity_files[i].__dict__.get(c)['attribute']['entity_name']: entity_files[i].__dict__.get(c)})
-        #             n += 1
-        #             # globals()[c] = list_entity_files[i].__dict__.get(c)
-        #     i += 1
-        # env['list_entityData'] = entityData
-        # return env
 
         pass  # method
 
