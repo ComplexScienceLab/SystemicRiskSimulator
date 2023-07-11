@@ -28,4 +28,5 @@ MISSING1 = np.full((env['num_bank'], 1), np.NaN)  # 一维缺失值向量常量
 MISSING2 = np.full((env['num_bank'], env['num_bank']), np.NaN)  # 二维方阵确失值常量
 NONE1 = np.empty((env['num_bank'], 1), dtype=object)  # 一维空向量常量
 NONE2 = np.empty((env['num_bank'], env['num_bank']), dtype=object)  # 二维空向量常量
-RANGE1 = np.arange(1, env['num_bank'] + 1, step=1)  # 一维步进向量常量
+RANGE1 = np.arange(0, env['num_bank'], step=1)  # 一维步进向量常量（从0开始）
+RANGE2 = np.arange(0, env['num_bank'] * env['num_bank'], step=1).reshape((env['num_bank'], env['num_bank']))  # 二维方阵步进向量常量（从0开始）

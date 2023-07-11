@@ -65,10 +65,11 @@ class Executer:
         """
         # entity = node.content  # 获取节点实体对应的算法实体
 
-        logging.debug("- - 开始执行：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
+        logging.debug("    开始执行算法内容：")
 
         env['round'] += 1  # 计次回合数
-        env['process_name'] = entity.attribute.text_name  # 执行的过程名称
+        env['step'] = 0  # 步进归零
+        env['process_name'] = entity.attribute.entity_name  # 执行的过程名称（英文名称）
         A.BB, A.IB = entity.execute(A, para, env)
 
         # ## 收集数据
@@ -77,13 +78,13 @@ class Executer:
         #     if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
         #         A_data, env = Collector.collect(A, A_data, env)
 
-        logging.debug("- - 结束执行：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
+        logging.debug("    结束执行算法内容。")
 
         return A, A_data, env
         pass  # method
 
     @classmethod
-    def execute_branch_entity(cls, node: Entity, agent: SystemicRiskAgent, agentData: AgentDataCollection, para: dict, env: dict):  # HACK 没有适配，暂时不用
+    def execute_branch_entity(cls, node: Entity, agent: SystemicRiskAgent, agentData: AgentDataCollection, para: dict, env: dict):  # HACK 没有适配，已经无用
         """
         执行分支实体。
         输入参数将被直接修改。
@@ -112,7 +113,7 @@ class Executer:
         pass  # method
 
     @classmethod
-    def execute_terminal_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, node: Entity):  # HACK 没有适配，暂时不用
+    def execute_terminal_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, node: Entity):  # HACK 没有适配，已经无用
         """
         执行终端实体。
         输入参数将被直接修改。
@@ -145,29 +146,5 @@ class Executer:
 
         return A, A_data, env
         pass  # method
-
-    # @classmethod
-    # def execute_special_entity(cls, node:Entity): #HACK暂时不需要使用
-    #     """
-    #     执行特殊实体。特殊实体指：开始节点实体、结束节点实体。
-    #
-    #     Args:
-    #         node (Entity): 节点实体（NOTE：本函数中，特指节点实体而非算法实体。算法实体表示`entity`。）
-    #
-    #     Returns: node
-    #
-    #     """
-    #
-    #     entity = node.content  # 获取节点实体对应的算法实体
-    #
-    #     # if node.attribute.node_type == {"process node", "container node"}:
-    #     logging.debug("- 入过程：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
-    #
-    #     node, agent, agentData, para, env = entity.execute(node)
-    #
-    #     # if node.attribute.node_type == {"process node", "container node"}:
-    #     logging.debug("- 出过程：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
-    #
-    #     pass  # method
 
     pass  # class

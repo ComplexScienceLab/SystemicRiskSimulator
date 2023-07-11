@@ -9,7 +9,7 @@ pass  # end import
 entityData_ExBankIlliquidShock = dict(
     attribute=dict(
         id="user4040",
-        entity_name="entity_ExBankIlliquidShock",
+        entity_name="ExBankIlliquidShock",
         text_name="银行存款挤兑流动冲击",
         node_type={"content node"},
         content_type={"algorithm content"},

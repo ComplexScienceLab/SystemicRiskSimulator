@@ -6,7 +6,7 @@
 entityData_IB1111 = dict(
     attribute=dict(
         id="user2000",
-        entity_name="entity_IB1111",
+        entity_name="IB1111",
         text_name="模型算法IB1111",
         node_type={"container node", "process node"},
         content_type={"model content", "algorithm content"},
@@ -16,12 +16,12 @@ entityData_IB1111 = dict(
     # execute=None,
     process="content_IB1111",
     container=dict({
-        "node_START": "entity_START",
-        "node_01": "entity_ExBankInsolvent",
-        "node_02": "entity_InterBankInsolvent",
-        "node_03": "entity_ExBankIlliquid",
-        "node_04": "entity_InterBankIlliquid",
-        "node_END": "entity_END",
+        "node_START": "START",
+        "node_01": "ExBankInsolvent",
+        "node_02": "InterBankInsolvent",
+        "node_03": "ExBankIlliquid",
+        "node_04": "InterBankIlliquid",
+        "node_END": "END",
     }),
     condition=dict({
         "node_01_condition_01": "(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()",

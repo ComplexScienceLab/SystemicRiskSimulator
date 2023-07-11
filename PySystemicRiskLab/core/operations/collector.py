@@ -227,7 +227,7 @@ class Collector:
         """
         BB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'], (env['step'] + 1) * env['num_bank']),
+                # list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] , (env['step'] + 1) ),
                 list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('step')]: env['step'],
@@ -239,7 +239,7 @@ class Collector:
 
         IB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'] ** 2, (env['step'] + 1) * env['num_bank'] ** 2),
+                # list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'] ** 2, (env['step'] + 1) * env['num_bank'] ** 2),
                 list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('step')]: env['step'],
@@ -269,7 +269,7 @@ class Collector:
         """
         BB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'], (env['step'] + 1) * env['num_bank']),
+                # list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'], (env['step'] + 1) * env['num_bank']),
                 list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('step')]: env['step'],
@@ -280,7 +280,7 @@ class Collector:
 
         IB_data_item = dict(
             {
-                list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'] ** 2, (env['step'] + 1) * env['num_bank'] ** 2),
+                # list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'] ** 2, (env['step'] + 1) * env['num_bank'] ** 2),
                 list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
                 list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('step')]: env['step'],
@@ -310,7 +310,7 @@ class Collector:
         BB_data = pd.DataFrame()
         numRow, numCol = np.shape(A_data.BB[0]['dataBB'].A_all)
         for (i1, v1) in enumerate(A_data.BB):
-            BB_data['id_data'] = np.full(numRow, v1['id_data'])
+            # BB_data['id_data'] = np.full(numRow, v1['id_data'])
             BB_data['process_name'] = np.full(numRow, v1['process_name'])
             BB_data['round'] = np.full(numRow, v1['round'])
             BB_data['step'] = np.full(numRow, v1['step'])
@@ -321,6 +321,8 @@ class Collector:
                 pass
             BB_data_export = pd.concat([BB_data_export, BB_data])  # 追加`BB_data`至`BB_data_expert`
             pass  # for
+        BB_data_export.insert(0, 'id', range(len(BB_data_export)))  # 添加id列
+        BB_data_export.insert(1, 'id_data', np.repeat(range(len(BB_data_export) // env['num_bank']), env['num_bank']))  # 添加id_data列
         BB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "BB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
 
         ## 整理interbank之数据为一数据框
@@ -330,7 +332,7 @@ class Collector:
         numRow, numCol = env['num_bank'], env['num_bank']
         for (i1, v1) in enumerate(A_data.IB):
             # IB_data['id_data'] = np.full(numRow * numCol, v1['id_data'])
-            IB_data['id_data'] = v1['id_data']
+            # IB_data['id_data'] = v1['id_data']
             IB_data['process_name'] = np.full(numRow * numCol, v1['process_name'])
             IB_data['round'] = np.full(numRow * numCol, v1['round'])
             IB_data['step'] = np.full(numRow * numCol, v1['step'])
@@ -366,6 +368,8 @@ class Collector:
                 pass  # for
             IB_data_export = pd.concat([IB_data_export, IB_data])  # 追加当前`IB_data`至`IB_data_expert`
             pass  # for
+        IB_data_export.insert(0, 'id', range(len(IB_data_export)))  # 添加id列
+        IB_data_export.insert(1, 'id_data', np.repeat(range(len(IB_data_export) // env['num_bank'] ** 2), env['num_bank'] ** 2))  # 添加id_data列
         IB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
 
         pass  # method

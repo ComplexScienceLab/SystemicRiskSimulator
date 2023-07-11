@@ -23,21 +23,21 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, par
     ## 获取相关的节点与边信息
     data = {}  # 待使用的图数据
 
-    data['banks_name'] = list(df_BB[df_BB[paras['time_granularity']] == time]['name'])  # 银行名称
-    data['bank_id'] = list(df_BB[df_BB[paras['time_granularity']] == time]['id_agent'])  # 银行id
-    data['process_name'] = list(df_BB[df_BB[paras['time_granularity']] == time]['process_name'])
-    data['round'] = list(df_BB[df_BB[paras['time_granularity']] == time]['round'])
-    data['step'] = list(df_BB[df_BB[paras['time_granularity']] == time]['step'])
+    data['banks_name'] = list(df_BB[df_BB[paras['name_time']] == time]['name'])  # 银行名称
+    data['bank_id'] = list(df_BB[df_BB[paras['name_time']] == time]['id_agent'])  # 银行id
+    data['process_name'] = list(df_BB[df_BB[paras['name_time']] == time]['process_name'])
+    data['round'] = list(df_BB[df_BB[paras['name_time']] == time]['round'])
+    data['step'] = list(df_BB[df_BB[paras['name_time']] == time]['step'])
 
-    data['vertices'] = list(df_BB[df_BB[paras['time_granularity']] == time]['id_agent'] - 1)  # 节点
+    data['vertices'] = list(df_BB[df_BB[paras['name_time']] == time]['id_agent'] - 1)  # 节点
 
     # 银行状态
-    bank_hel = df_BB[df_BB[paras['time_granularity']] == time]['hel'].tolist()
-    bank_isv = df_BB[df_BB[paras['time_granularity']] == time]['isv'].tolist()
-    bank_ilq = df_BB[df_BB[paras['time_granularity']] == time]['ilq'].tolist()
-    # bank_nrr = df_BB[df_BB[paras['time_granularity']] == time]['-rr'].tolist()  #TODO 后续添加新状态
-    bank_br = df_BB[df_BB[paras['time_granularity']] == time]['br'].tolist()
-    bank_off = df_BB[df_BB[paras['time_granularity']] == time]['off'].tolist()
+    bank_hel = df_BB[df_BB[paras['name_time']] == time]['hel'].tolist()
+    bank_isv = df_BB[df_BB[paras['name_time']] == time]['isv'].tolist()
+    bank_ilq = df_BB[df_BB[paras['name_time']] == time]['ilq'].tolist()
+    # bank_nrr = df_BB[df_BB[paras['name_time']] == time]['-rr'].tolist()  #TODO 后续添加新状态
+    bank_br = df_BB[df_BB[paras['name_time']] == time]['br'].tolist()
+    bank_off = df_BB[df_BB[paras['name_time']] == time]['off'].tolist()
 
     data['banks_state'] = []  # 银行状态
     for i in range(len(data['vertices'])):
@@ -76,30 +76,30 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, par
     # vertex_labels = A_IB_all  # 点之标签值
     # edge_labels = A_IB  # 边之标签值
 
-    # data['edge_data_idx'] = df_IB[df_IB[paras['time_granularity']] == time][df_IB[df_IB[paras['time_granularity']] == time]['data['edges_data_value']'] > 0].index.tolist()  # 相关的索引
-    data['edges_data_idx'] = (df_IB[(df_IB[paras['time_granularity']] == time) & (df_IB[paras['data_name']] > 0)]['id_agent'].values - 1).tolist()  # 相关的边索引
-    # edges = [list(zip(df_IB[df_IB[paras['time_granularity']] == time]['row'] - 1, df_IB[df_IB[paras['time_granularity']] == time]['col'] - 1))[j - time * num_items_in_a_round_in_IB] for j in data['edge_data_idx']]  # 相关的边索引（银行编号从1开始计数的）
-    data['edges'] = [list(zip(df_IB[df_IB[paras['time_granularity']] == time]['row'] - 1, df_IB[df_IB[paras['time_granularity']] == time]['col'] - 1))[j] for j in data['edges_data_idx']]  # 相关的边的索引，以两点索引表示（银行编号从1开始计数的）
-    data['vertices_data_value'] = df_BB[df_BB[paras['time_granularity']] == time][(paras['data_name'] + '_all')].tolist()  # 相关的点之值
+    # data['edge_data_idx'] = df_IB[df_IB[paras['name_time']] == time][df_IB[df_IB[paras['name_time']] == time]['data['edges_data_value']'] > 0].index.tolist()  # 相关的索引
+    data['edges_data_idx'] = (df_IB[(df_IB[paras['name_time']] == time) & (df_IB[paras['data_name']] > 0)]['id_agent'].values).tolist()  # 相关的边索引
+    # edges = [list(zip(df_IB[df_IB[paras['name_time']] == time]['row'] - 1, df_IB[df_IB[paras['name_time']] == time]['col'] - 1))[j - time * num_items_in_a_time_in_IB] for j in data['edge_data_idx']]  # 相关的边索引（银行编号从0开始计数的）
+    data['edges'] = [list(zip(df_IB[df_IB[paras['name_time']] == time]['row'] - 1, df_IB[df_IB[paras['name_time']] == time]['col'] - 1))[j] for j in data['edges_data_idx']]  # 相关的边的索引，以两点索引表示（银行编号从0开始计数的）
+    data['vertices_data_value'] = df_BB[df_BB[paras['name_time']] == time][(paras['data_name'] + '_all')].tolist()  # 相关的点之值
     data['vertices_size'] = list(np.sqrt(np.asarray(
         Tools.MinMaxScaler(
-            df_BB[df_BB[paras['time_granularity']] == time][(paras['data_name'] + '_all')],
+            df_BB[df_BB[paras['name_time']] == time][(paras['data_name'] + '_all')],
             (
-                0.1 * min(df_BB[df_BB[paras['time_granularity']] == time][(paras['data_name'] + '_all')]) / paras['min_value_BB'],
-                1.0 * max(df_BB[df_BB[paras['time_granularity']] == time][(paras['data_name'] + '_all')]) / paras['max_value_BB']
+                0.1 * min(df_BB[df_BB[paras['name_time']] == time][(paras['data_name'] + '_all')]) / paras['min_value_BB'],
+                1.0 * max(df_BB[df_BB[paras['name_time']] == time][(paras['data_name'] + '_all')]) / paras['max_value_BB']
             )
         )
     )))  # 节点尺寸
-    data['edges_data_value'] = df_IB[(df_IB[paras['time_granularity']] == time) & (df_IB[paras['data_name']] > 0)][paras['data_name']].values.tolist()  # 相关的边之值
+    data['edges_data_value'] = df_IB[(df_IB[paras['name_time']] == time) & (df_IB[paras['data_name']] > 0)][paras['data_name']].values.tolist()  # 相关的边之值
     data['edges_width'] = Tools.MinMaxScaler(
         data['edges_data_value'],
         (
-            0.5 * (min(df_IB[df_IB[paras['time_granularity']] == time][paras['data_name']]) + 0.01) / (paras['min_value_IB'] + 0.01),
-            5 * (min(df_IB[df_IB[paras['time_granularity']] == time][paras['data_name']]) + 0.01) / (paras['min_value_IB'] + 0.01)
+            0.5 * (min(df_IB[df_IB[paras['name_time']] == time][paras['data_name']]) + 0.01) / (paras['min_value_IB'] + 0.01),
+            5 * (min(df_IB[df_IB[paras['name_time']] == time][paras['data_name']]) + 0.01) / (paras['min_value_IB'] + 0.01)
         )
     )  # 边的宽度
-    # Z_IB_all = df_BB[df_BB[paras['time_granularity']] == time]['Z_IB_all'].tolist()  # 相关的点之值
-    # Z_IB = df_IB[(df_IB[paras['time_granularity']] == time)&(df_IB['Z_IB'] > 0)].values.tolist()  # 相关的边之值
+    # Z_IB_all = df_BB[df_BB[paras['name_time']] == time]['Z_IB_all'].tolist()  # 相关的点之值
+    # Z_IB = df_IB[(df_IB[paras['name_time']] == time)&(df_IB['Z_IB'] > 0)].values.tolist()  # 相关的边之值
     # edge_labels = list(zip(data['edges_data_value'],Z_IB))  # 边之标签值
     # vertex_labels = data['vertices_data_value']  # 点之标签值
     # edge_labels = data['edges_data_value']  # 边之标签值
@@ -144,12 +144,12 @@ def draw_interbank_flow_graph(data: dict, paras: dict):
     )
 
     ## 绘制标题
-    if paras['time_granularity'] == 'step':
+    if paras['time_granularity'] == '步进粒度':
         dw_text = rf"{paras['data_name']}    {paras['process_name']}    round {str(paras['round'])}    step {str(paras['step'])}"
-    elif paras['time_granularity'] == 'round':
+    elif paras['time_granularity'] == '轮次粒度':
         dw_text = rf"{paras['data_name']}    {paras['process_name']}    round {str(paras['round'])}"  # TODO 未测试
     else:
-        raise ValueError('`time_granularity` 必须是 `step` 或 `round`')
+        raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
 
     ## 添加节点和边
@@ -204,8 +204,6 @@ def draw_interbank_flow_graph(data: dict, paras: dict):
 
     plt.close()  # 关闭图像
 
-    plt.close()
-
     return fig
     pass  # def
 
@@ -228,39 +226,39 @@ def get_one_bank_accounts_data(df_BB: pd.DataFrame, time: int, id_agent: int, pa
         'asset': {
             'level 3': {
                 'A_P': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['A_P'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['A_P'].values[0],
                     'color': '#FBE7CF',
                 },
                 'A_Q': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['A_Q'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['A_Q'].values[0],
                     'color': '#DDE8FA',
                 },
                 'A_R': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['A_R'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['A_R'].values[0],
                     'color': '#DFC942',
                 },
                 'A_other': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['A_other'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['A_other'].values[0],
                     'color': '#FFFFFF',
                 },
                 'A_IB_all': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['A_IB_all'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['A_IB_all'].values[0],
                     'color': '#F1D0CD',
                 },
             },
             'level 2': {
                 'A_exIB': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['A_exIB'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['A_exIB'].values[0],
                     'color': '#F9F7EE',
                 },
                 'A_IB_all': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['A_IB_all'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['A_IB_all'].values[0],
                     'color': '#F1D0CD',
                 },
             },
             'level 1': {
                 'A_all': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['A_all'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['A_all'].values[0],
                     'color': '#EEEEEE',
                 },
             },
@@ -268,27 +266,27 @@ def get_one_bank_accounts_data(df_BB: pd.DataFrame, time: int, id_agent: int, pa
         'liability': {
             'level 3': {
                 'Z_D': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['Z_D'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['Z_D'].values[0],
                     'color': '#DFD6E6',
                 },
                 'Z_IB_all': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['Z_IB_all'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['Z_IB_all'].values[0],
                     'color': '#D9E8D6',
                 },
             },
             'level 2': {
                 'Z_exIB': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['Z_exIB'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['Z_exIB'].values[0],
                     'color': '#DFD6E6',
                 },
                 'Z_IB_all': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['Z_IB_all'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['Z_IB_all'].values[0],
                     'color': '#D9E8D6',
                 },
             },
             'level 1': {
                 'Z_all': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['Z_all'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['Z_all'].values[0],
                     'color': '#EEEEEE',
                 },
             },
@@ -296,19 +294,19 @@ def get_one_bank_accounts_data(df_BB: pd.DataFrame, time: int, id_agent: int, pa
         'equity': {
             'level 3': {
                 'E_all': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
                     'color': '#FFFF98',
                 },
             },
             'level 2': {
                 'E_all': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
                     'color': '#FFFF98',
                 },
             },
             'level 1': {
                 'E_all': {
-                    'value': df_BB[(df_BB[paras['time_granularity']] == time) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
+                    'value': df_BB[(df_BB[paras['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['E_all'].values[0],
                     'color': '#FFFF98',
                 },
             },
@@ -365,12 +363,12 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, paras: dict, width: int = 60
     # )
 
     ## 绘制标题
-    if paras['time_granularity'] == 'step':
+    if paras['time_granularity'] == '步进粒度':
         dw_text = rf"{paras['bank_name']}    {paras['process_name']}    round {str(paras['round'])}    step {str(paras['step'])}"
-    elif paras['time_granularity'] == 'round':
+    elif paras['time_granularity'] == '轮次粒度':
         dw_text = rf"{paras['bank_name']}    {paras['process_name']}    round {str(paras['round'])}"  # TODO 未测试
     else:
-        raise ValueError('`time_granularity` 必须是 `step` 或 `round`')
+        raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
 
     balanceSheet_svg.append(
@@ -381,7 +379,7 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, paras: dict, width: int = 60
             y=border + title_height // 2,
             text_anchor='middle',
             dominant_baseline='middle',
-            font_family=paras['zh_font_family'],
+            font_family=paras['en_font_family'],
         )
     )
 

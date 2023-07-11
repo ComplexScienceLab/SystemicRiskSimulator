@@ -8,7 +8,7 @@ entityData_ExBankInsolvent = dict(
 
     attribute=dict(
         id="user2010",
-        entity_name="entity_ExBankInsolvent",
+        entity_name="ExBankInsolvent",
         text_name="外部资产违约损失过程",
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
@@ -18,9 +18,9 @@ entityData_ExBankInsolvent = dict(
     # execute=None,
     process="content_ExBankInsolvent",
     container=dict({
-        "node_START": "entity_START",
-        "node_01": "entity_ExBankInsolventShock",
-        "node_END": "entity_END",
+        "node_START": "START",
+        "node_01": "ExBankInsolventShock",
+        "node_END": "END",
     }),
     condition=None,
     content=None,

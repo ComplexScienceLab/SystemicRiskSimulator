@@ -87,7 +87,7 @@ class Operator:
             env['step'] = 0
             env['round'] = 0
             env['model_name'] = para['model_name']
-            env['process_name'] = "开始"
+            env['process_name'] = "START"
             env['is_continue_process'] = True
             env['test_continous_loop_of_model'] = 0
             env['model_process_state'] = "has not process"

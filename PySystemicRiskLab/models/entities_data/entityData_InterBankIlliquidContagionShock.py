@@ -9,7 +9,7 @@ pass  # end import
 entityData_InterBankIlliquidContagionShock = dict(
     attribute=dict(
         id="user4050",
-        entity_name="entity_InterBankIlliquidContagionShock",
+        entity_name="InterBankIlliquidContagionShock",
         text_name="流动性短缺银行间挤兑流动传染",
         node_type={"content node"},
         content_type={"algorithm content"},

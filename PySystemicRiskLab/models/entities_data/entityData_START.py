@@ -5,7 +5,7 @@
 entityData_START = dict(
     attribute=dict(
         id="user0000",
-        entity_name="entity_START",
+        entity_name="START",
         text_name="开始过程",
         node_type={"process node"},
         content_type={"process content"},

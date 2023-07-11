@@ -199,11 +199,11 @@ class Compiler:
                     logging.debug(f"{instructions_line_number}\t{instructions[instructions_line_number - 1][1]}\t\t{compile_algorithmEntity.container[tokens[2]].attribute.entity_name} {compile_algorithmEntity.container[tokens[2]].attribute.id}")
                     instructions_line_number += 1  # 下一指令行号
                     instructions.append((instructions_line_number, 'execute', compile_algorithmEntity.container[tokens[2]].content))  # 生成指令`execute <nodeEntity之algorithmContent>`。
-                    logging.debug(f"{instructions_line_number}\t{instructions[instructions_line_number - 1][1]}\t\t{compile_algorithmEntity.container[tokens[2]].content.attribute.entity_name} {compile_algorithmEntity.container[tokens[2]].content.attribute.id} {compile_algorithmEntity.container[tokens[2]].content.attribute.entity_name} {compile_algorithmEntity.container[tokens[2]].content.attribute.text_name}")
+                    logging.debug(f"{instructions_line_number}\t{instructions[instructions_line_number - 1][1]}\t\t{compile_algorithmEntity.container[tokens[2]].content.attribute.entity_name} {compile_algorithmEntity.container[tokens[2]].content.attribute.id}")
                     instructions_line_number += 1  # 下一指令行号
                 elif tokens[0] == 'if' and tokens[2] == 'goto':  # 如果是连续的指令`if XXX goto XXX`，则编译判别条件
                     instructions.append((instructions_line_number, tokens[0], compile_algorithmEntity.condition[tokens[1]].content, tokens[2], compile_algorithmEntity.container[tokens[3]], None))  # 生成指令。但是该指令之内容是文本形式的判别条件，需要在执行过程时再解析。
-                    logging.debug(f"{instructions_line_number}\t{tokens[0]}\t\t{compile_algorithmEntity.condition[tokens[1]].content}\t\t{tokens[2]}\t\t{compile_algorithmEntity.container[tokens[3]].attribute.entity_name} {compile_algorithmEntity.container[tokens[3]].attribute.id} {compile_algorithmEntity.container[tokens[3]].content.attribute.entity_name} {compile_algorithmEntity.container[tokens[3]].content.attribute.text_name}")
+                    logging.debug(f"{instructions_line_number}\t{tokens[0]}\t\t{compile_algorithmEntity.condition[tokens[1]].content}\t\t{tokens[2]}\t\t{compile_algorithmEntity.container[tokens[3]].attribute.entity_name} {compile_algorithmEntity.container[tokens[3]].attribute.id}")
                     instructions_line_number += 1  # 下一指令行号
                 elif tokens[0] == 'define' and tokens[1] == 'process':  # 如果是根节点之指令`define process xxx`，则编译成`node xxx`
                     instructions.append((instructions_line_number, 'node', compile_nodeEntity))

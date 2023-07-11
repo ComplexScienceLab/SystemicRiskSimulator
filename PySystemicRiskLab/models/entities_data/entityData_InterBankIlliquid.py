@@ -5,7 +5,7 @@
 entityData_InterBankIlliquid = dict(
     attribute=dict(
         id="user2040",
-        entity_name="entity_InterBankIlliquid",
+        entity_name="InterBankIlliquid",
         text_name="流动性短缺银行间挤兑流动过程",
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
@@ -15,11 +15,11 @@ entityData_InterBankIlliquid = dict(
     # execute=None,
     process="content_InterBankIlliquid",
     container=dict({
-        "node_START": "entity_START",
-        "node_01": "entity_InterBankIlliquidContagionShock",
-        "node_02": "entity_InterBankIlliquidAllocate",
-        "node_03": "entity_InterBankIlliquidRepay",
-        "node_END": "entity_END",
+        "node_START": "START",
+        "node_01": "InterBankIlliquidContagionShock",
+        "node_02": "InterBankIlliquidAllocate",
+        "node_03": "InterBankIlliquidRepay",
+        "node_END": "END",
     }),
     condition=None,
     content=None,

@@ -7,7 +7,7 @@
 entityData_ExBankIlliquid = dict(
     attribute=dict(
         id="user2030",
-        entity_name="entity_ExBankIlliquid",
+        entity_name="ExBankIlliquid",
         text_name="银行存款挤兑流动过程",
         node_type={"container node", "process node"},
         content_type={"algorithm content"},
@@ -17,9 +17,9 @@ entityData_ExBankIlliquid = dict(
     # execute=None,
     process="content_ExBankIlliquid",
     container=dict({
-        "node_START": "entity_START",
-        "node_01": "entity_ExBankIlliquidShock",
-        "node_END": "entity_END",
+        "node_START": "START",
+        "node_01": "ExBankIlliquidShock",
+        "node_END": "END",
     }),
     condition=None,
     content=None,

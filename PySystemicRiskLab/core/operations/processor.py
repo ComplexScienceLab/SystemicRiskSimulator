@@ -49,12 +49,12 @@ class Processor:
                 line_number += 1
                 continue
             elif instruction[1] == 'execute':  # 当前指令是执行语句时
-                if not (instruction[2].attribute.entity_name == 'entity_START' or instruction[2].attribute.entity_name == 'entity_END'):
-                    # logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.id}") #BUG
+                if not (instruction[2].attribute.entity_name == 'START' or instruction[2].attribute.entity_name == 'END'):
+                    logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.text_name}") #BUG
                     A, A_data, env = Executer.execute_algorithm_entity(A, A_data, para, env, instruction[2])
                     line_number += 1
                 else:  # 当前指令开始或结束节点时
-                    logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.id}")
+                    logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.text_name}")
                     line_number += 1
                 continue
             elif instruction[1] == 'if' and instruction[3] == 'goto':  # 当前指令是判断跳转语句时
@@ -78,13 +78,13 @@ class Processor:
                 # conditions.append(condition02)
 
                 conditions = []  # 条件列表
-                for instruction_ifgoto in instructions_ifgoto:  ## 判断每个条件 #BUG
+                for instruction_ifgoto in instructions_ifgoto:  ## 判断每个条件
                     condition = eval(instruction_ifgoto[2]) if instruction_ifgoto[2] is not None else None  # NOTE 其实判断None这个条件是多余的
                     logging.debug(f"    条件{instruction_ifgoto[2]}是 {condition}")
                     conditions.append(condition)
                     pass  # for
-                line_number = instructions_ifgoto[conditions.index(True)][5]  # 获取下一个节点所在的行号 #FIXME
-                logging.debug(f"    流至节点{instructions_ifgoto[conditions.index(True)][4].attribute.entity_name} {instructions_ifgoto[conditions.index(True)][4].attribute.id}，跳转行{line_number}")
+                line_number = instructions_ifgoto[conditions.index(True)][5]  # 获取下一个节点所在的行号
+                logging.debug(f"    流至节点{instructions_ifgoto[conditions.index(True)][4].attribute.entity_name}，对应算法{instructions_ifgoto[conditions.index(True)][4].content.attribute.entity_name} {instructions_ifgoto[conditions.index(True)][4].content.attribute.text_name}，跳转行{line_number}")
                 continue
             else:
                 raise ValueError("【%s】不是有效的指令类型。" % (instruction))
