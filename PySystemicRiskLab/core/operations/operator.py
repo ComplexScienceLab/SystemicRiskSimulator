@@ -80,7 +80,8 @@ class Operator:
 
         """
 
-        env = Scheduler.schedule(env)
+        if env['state_of_schedule'] == StateOfScheduleEnum.idle:
+            Scheduler.schedule(env)
         if env['state_of_schedule'] == StateOfScheduleEnum.initializing:
             # 重置环境变量
             env['index_of_schedule_position'] = []
@@ -88,7 +89,6 @@ class Operator:
             env['round'] = 0
             env['model_name'] = para['model_name']
             env['process_name'] = "START"
-            env['is_continue_process'] = True
             env['test_continous_loop_of_model'] = 0
             env['model_process_state'] = "has not process"
             env['A_data'] = None
@@ -109,24 +109,24 @@ class Operator:
             pass  # if
 
         ## HACK 如果使用`Processor.process_entity_by_process_and_container_component()`
-        env = Scheduler.schedule(env)  # 调度状态变成`running`
+        Scheduler.schedule(env)  # 调度状态变成`running`
         model, A, env['A_data'], para, env = Processor.process_entity_by_process_and_container_component(model, A, env['A_data'], para, env)  # 执行具体的模型，通过执行模型实体的方式
-        env['is_continue_process'] = False  # 不再继续运行过程
+        if env['state_of_schedule'] == StateOfScheduleEnum.running:
+            env['is_continue_process'] = False  # 不再继续运行过程
+            Scheduler.schedule(env)  # 调度状态变成`ending`
 
         # ## HACK 如果使用`Processor.process_entity_by_node_component()`
-        # env = Scheduler.schedule(env)
+        # Scheduler.schedule(env)
         # model, A, A_data, para, env = Executer.execute_branch_entity(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
         # env['is_continue_process'] = False  # 不再继续运行过程
 
-        ## 导出数据之于已经收集的
-        env = Scheduler.schedule(env)
+        ## 导出数据之于已经收集的，然后结束本次实验
         if env['state_of_schedule'] == StateOfScheduleEnum.ending:
             Collector.collect(None, env['A_data'], env)
-
-        ## 结束本次实验
-        env = Scheduler.schedule(env)
-        if env['state_of_schedule'] == StateOfScheduleEnum.idle:
+            Scheduler.schedule(env)
             logging.info("本次实验结束，还剩下" + str(len(env['list_combination_of_para']) - env['id_experiment']) + "个实验。\n\n")
+
+        # if env['state_of_schedule'] == StateOfScheduleEnum.idle:
 
         pass  # method
 

@@ -22,13 +22,13 @@ class Executer:
 
     ## NOTE：执行一次步进更新。
     @classmethod
-    def step_update(cls, update_way: str, Agent: SystemicRiskAgent, para: dict, env: dict):
+    def step_update(cls, update_way: str, A: SystemicRiskAgent, para: dict, env: dict):
         """
         执行一次步进更新
 
         Args:
             update_way (str): 更新方式
-            Agent (SystemicRiskAgent): 多主体
+            A (SystemicRiskAgent): 多主体
             para (dict): 参数集
             env (dict): 环境变量集
 
@@ -36,12 +36,18 @@ class Executer:
             env (dict): 环境变量集
 
         """
-        Finance.update_finance_variables(Agent.BB, Agent.IB, Agent.b, Agent.ib, by_way=update_way)  # 更新金融变量
+        Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         env['step'] += 1  # 步进加一
-        env = Scheduler.schedule(env)  # 调度状态变成`collecting`
-        env['A_data'], env = Collector.collect(Agent, env['A_data'], env)  # 收集数据
+        if env['state_of_schedule'] == StateOfScheduleEnum.running:
+            Scheduler.schedule(env)  # 调度状态变成`collecting`或者`ending`
 
-        env = Scheduler.schedule(env)  # 调度状态变成`running`
+        if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
+            env['A_data'], env = Collector.collect(A, env['A_data'], env)  # 收集数据
+            Scheduler.schedule(env)  # 调度状态变成`running`
+        elif env['state_of_schedule'] == StateOfScheduleEnum.ending:
+            # Scheduler.schedule(env)  # 调度状态变成`idle`
+            pass  # if
+
         return env
 
         pass  # def
@@ -70,11 +76,11 @@ class Executer:
         env['round'] += 1  # 计次回合数
         env['step'] = 0  # 步进归零
         env['process_name'] = entity.attribute.entity_name  # 执行的过程名称（英文名称）
-        A.BB, A.IB = entity.execute(A, para, env)
+        A, env = entity.execute(A, para, env)
 
         # ## 收集数据
         # if env['state_of_schedule'] == StateOfScheduleEnum.running:
-        #     env = Scheduler.schedule(env)
+        #     Scheduler.schedule(env)
         #     if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
         #         A_data, env = Collector.collect(A, A_data, env)
 
@@ -138,7 +144,7 @@ class Executer:
 
         ## 收集数据 #BUG
         if env['state_of_schedule'] == StateOfScheduleEnum.running:
-            env = Scheduler.schedule(env)
+            Scheduler.schedule(env)
             if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
                 A_data, env = Collector.collect(A, A_data, env)
 

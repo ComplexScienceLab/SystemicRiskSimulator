@@ -32,11 +32,11 @@ class Collector:
 
         """
         if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
-            # env = Scheduler.schedule(env)
+            # Scheduler.schedule(env)
             logging.debug("                收集数据")
             # env['id_data'] += 1  # 累加数据帧ID号
             A_data = Collector.collect_agent_data(A, A_data, env)
-            # env = Scheduler.schedule(env)
+            # Scheduler.schedule(env)
             return A_data, env
         elif env['state_of_schedule'] == StateOfScheduleEnum.initializing:
             logging.debug("                初始化数据")

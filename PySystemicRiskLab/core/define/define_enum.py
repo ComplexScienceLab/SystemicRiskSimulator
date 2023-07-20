@@ -36,7 +36,7 @@ class StateOfScheduleEnum(Enum):
     pass
 
 
-# class StateOfCollectingEnum(Enum):
+# class StateOfCollectingEnum(Enum): #TODO 无用可以删除
 #     """
 #     收集模型数据时，模型所处的状态。状态符有以下几种：
 #

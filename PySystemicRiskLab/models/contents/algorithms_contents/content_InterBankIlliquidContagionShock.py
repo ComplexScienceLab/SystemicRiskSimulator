@@ -36,5 +36,5 @@ def content_InterBankIlliquidContagionShock(A: SystemicRiskAgent, para: dict, en
     # update_B_Shock(A.BB, A.IB, A.b, A.ib, by_way = 'Shock_IB_run_ilq') # 加总各单个债务银行遭受总银行间挤兑流动冲击
     # update_states(target='illiquid', source='healthy') # 更新各银行之状态，从健康到流动性短缺
 
-    return A.BB, A.IB
+    return A, env
     pass  # method

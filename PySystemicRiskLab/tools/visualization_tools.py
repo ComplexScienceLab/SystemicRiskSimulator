@@ -29,7 +29,7 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, par
     data['round'] = list(df_BB[df_BB[paras['name_time']] == time]['round'])
     data['step'] = list(df_BB[df_BB[paras['name_time']] == time]['step'])
 
-    data['vertices'] = list(df_BB[df_BB[paras['name_time']] == time]['id_agent'] - 1)  # 节点
+    data['vertices'] = list(df_BB[df_BB[paras['name_time']] == time]['id_agent'])  # 节点
 
     # 银行状态
     bank_hel = df_BB[df_BB[paras['name_time']] == time]['hel'].tolist()

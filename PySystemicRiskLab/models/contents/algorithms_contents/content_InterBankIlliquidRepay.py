@@ -46,5 +46,5 @@ def content_InterBankIlliquidRepay(A: SystemicRiskAgent, para: dict, env: dict):
     Executer.step_update('clear transfer all', A, para, env)  # 清零所有不必要的借贷流量变量；#BUG这个是否有必要？
     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 清零所有不必要的借贷流量变量；#BUG这个是否有必要？
 
-    return A.BB, A.IB
+    return A, env
     pass  # method

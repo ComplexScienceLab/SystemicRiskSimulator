@@ -16,15 +16,15 @@ class Tools:
         else:
             return 0
 
-    @classmethod
-    def test_println(cls, content):
-        if env['is_test']:
-            expr = \
-                """
-                write
-                """
-
-        pass  # method
+    # @classmethod
+    # def test_println(cls, content): # TODO 无用，可以删除
+    #     if env['is_test']:
+    #         expr = \
+    #             """
+    #             write
+    #             """
+    #
+    #     pass  # method
 
     @classmethod
     def dict_to_product_list(cls, d: dict):
@@ -174,31 +174,31 @@ class Tools:
         return os.path.abspath(result)
         pass  # method
 
-    @classmethod
-    def test_count_loop_in_model(cls, env):
-        """
-        测试用，计次单个模型连续循环次数。如果超过已经设定的最大连续循环次数，则抛出异常并退出。
-
-        使用方法：
-
-        ```python
-        env = Tools.test_count_loop_in_model(env)  # BUG 用于临时调试
-        ```
-
-        Args:
-            env (dict): 环境变量
-
-        Returns:
-
-        """
-        ## 如果单个模型连续循环计次超过已经设定的最大连续循环次数，则强制退出
-        if env['test_continous_loop_of_model'] > env['test_max_count_continous_loop_of_model']:
-            logging.error("错误！超过单个模型最大连续循环次数 %s，强制结束运行该模型！", env['test_max_count_continous_loop_of_model'])
-            raise Exception("错误！超过单个模型最大连续循环次数 %s，强制结束运行该模型！")
-        logging.debug("循环运行到第 %s 步。", str(env['test_continous_loop_of_model']))
-        env['test_continous_loop_of_model'] += 1
-        return env
-        pass  # method
+    # @classmethod
+    # def test_count_loop_in_model(cls, env):
+    #     """
+    #     测试用，计次单个模型连续循环次数。如果超过已经设定的最大连续循环次数，则抛出异常并退出。 #TODO 无用，待删除
+    #
+    #     使用方法：
+    #
+    #     ```python
+    #     env = Tools.test_count_loop_in_model(env)  # BUG 用于临时调试
+    #     ```
+    #
+    #     Args:
+    #         env (dict): 环境变量
+    #
+    #     Returns:
+    #
+    #     """
+    #     ## 如果单个模型连续循环计次超过已经设定的最大连续循环次数，则强制退出
+    #     if env['round'] > env['test_max_num_of_round']:
+    #         logging.error("错误！超过单个模型最大连续循环次数 %s，强制结束运行该模型！", env['test_max_num_of_round'])
+    #         raise Exception("错误！超过单个模型最大连续循环次数 %s，强制结束运行该模型！")
+    #     logging.debug("循环运行到第 %s 步。", str(env['round']))
+    #     env['round'] += 1
+    #     return env
+    #     pass  # method
 
     @classmethod
     def MinMaxScaler(cls, data: list, min_max_range: tuple):

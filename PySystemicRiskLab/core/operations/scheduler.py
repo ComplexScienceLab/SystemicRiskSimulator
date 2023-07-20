@@ -8,6 +8,7 @@ from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCo
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 # from PySystemicRiskLab.core.define.define_entity import Entity
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+
 # from PySystemicRiskLab.core.define.define_environmentVariables import env
 
 # from PySystemicRiskLab.core.operations.collector import Collector
@@ -32,7 +33,7 @@ class Scheduler:
 
         """
         if env['state_of_schedule'] is StateOfScheduleEnum.running:
-            env['state_of_schedule'] = cls.schedule_running(env['state_of_schedule'], env['is_continue_process'])
+            env['state_of_schedule'] = cls.schedule_running(env['state_of_schedule'], env)
         elif env['state_of_schedule'] is StateOfScheduleEnum.collecting:
             env['state_of_schedule'] = cls.schedule_collecting(env['state_of_schedule'], env['running_mode'])
         # elif env['state_of_schedule'] is StateOfScheduleEnum.loading:
@@ -44,7 +45,7 @@ class Scheduler:
         # elif env['state_of_schedule'] is StateOfScheduleEnum.indexing:
         #     env['index_of_schedule_position'], env['state_of_schedule'] = cls.schedule_indexing(entity)
         elif env['state_of_schedule'] is StateOfScheduleEnum.initializing:
-            env['state_of_schedule'] = cls.schedule_initializing(env['state_of_schedule'], env['running_mode'])
+            env['state_of_schedule'] = cls.schedule_initializing(env['state_of_schedule'], env['running_mode'], env)
         elif env['state_of_schedule'] is StateOfScheduleEnum.ending:
             env['state_of_schedule'] = cls.schedule_ending(env['state_of_schedule'])
         elif env['state_of_schedule'] is StateOfScheduleEnum.idle:
@@ -128,17 +129,41 @@ class Scheduler:
     #     pass  # method
 
     @classmethod
-    def schedule_running(cls, state_of_schedule: StateOfScheduleEnum, is_continue_process: bool):
+    def schedule_running(cls, state_of_schedule: StateOfScheduleEnum, env: dict):
         """
 
         Args:
             state_of_schedule (StateOfScheduleEnum): 调度状态
-            is_continue_process (bool) 是否继续运行过程
 
-        Returns: state_of_schedule 调度状态
+        Returns:
+            state_of_schedule 调度状态
+            env 环境变量集
 
         """
-        if is_continue_process is True:
+
+        # TODO以下无用
+        # cls.is_continue_round(env)
+        # cls.is_continue_process(env)
+
+        ## 判断是否继续运作轮次
+        if (env['round'] < env['test_max_num_of_round']):
+            env['is_continue_round'] = True
+        else:
+            env['is_continue_round'] = False
+            logging.error("                        超出最大轮次限制，强制结束运作轮次！")
+            print("                        超出最大轮次限制，强制结束运作轮次！")
+            pass
+
+        ## 判断是否继续运作。只有同时满足继续运行过程、继续运行轮次时，才继续运作。否则不再继续运作。
+        if (env['is_continue_round'] and env['is_continue_process']):
+            env['is_continue_operation'] = True
+        else:
+            env['is_continue_operation'] = False
+            logging.debug("                        不再继续运作。")
+            pass
+
+        ## 切换调度状态
+        if env['is_continue_operation'] is True:
             state_of_schedule = StateOfScheduleEnum.collecting
         else:
             state_of_schedule = StateOfScheduleEnum.ending
@@ -258,20 +283,23 @@ class Scheduler:
     #     pass  # method
 
     @classmethod
-    def schedule_initializing(cls, state_of_schedule: StateOfScheduleEnum, running_mode: str):
+    def schedule_initializing(cls, state_of_schedule: StateOfScheduleEnum, running_mode: str, env: dict):
         """
         调度初始状态。
 
         Args:
             state_of_schedule (StateOfScheduleEnum): 调度状态
             running_mode (str): 运行模式
+            env (dict): 环境变量集
 
         Returns:
             state_of_schedule: 调度状态
         """
         if running_mode == "continue running mode":
+            env['is_continue_round'] = True
+            env['is_continue_process'] = True
             state_of_schedule = StateOfScheduleEnum.running
-        elif running_mode == "step mode":
+        elif running_mode == "step mode":  # HACK暂时不需要
             state_of_schedule = StateOfScheduleEnum.saving
 
         logging.debug("                        切换调度状态为%s", state_of_schedule)
@@ -424,13 +452,14 @@ class Scheduler:
     #     pass  # method
 
     # @classmethod
-    # def is_round(cls, env: dict):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
-    #     """判断是否继续运作回合"""
-    #     if (env['round'] < env['test_max_num_of_round']):
-    #         env['is_round'] = True
+    # def is_continue_round(cls, env: dict): #TODO无用，可删除
+    #     """判断是否继续运作轮次"""
+    #     if (env['round'] < env['test_max_num_of_round'] and env['is_continue_process']):
+    #         env['is_continue_round'] = True
     #     else:
-    #         env['is_round'] = False
-    #         logging.debug("                        结束回合%s。", env['process_name'])
+    #         env['is_continue_round'] = False
+    #         logging.error("                        超出最大轮次限制，强制结束运作轮次！")
+    #         print("                        超出最大轮次限制，强制结束运作轮次！")
     #         pass
     #     pass  # method
 
@@ -443,12 +472,27 @@ class Scheduler:
     #     pass  # method
 
     # @classmethod
+    # def is_continue_process(cls, env: dict): #TODO无用，可删除
+    #     """
+    #     判断是否继续运作循环。
+    #     只有同时满足继续运作过程、继续步进、继续运作回合时，才继续运作循环。否则跳出循环。
+    #     """
+    #     # cls.is_continue_round(env)
+    #     if (env['is_continue_round']):
+    #         env['is_continue_process'] = True
+    #     else:
+    #         env['is_continue_process'] = False
+    #         logging.debug("                        不再继续运行过程。")
+    #         pass
+    #     pass  # method
+
+    # @classmethod
     # def is_loop(cls, env: dict):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
     #     """
     #     判断是否继续运作循环。
     #     只有同时满足继续运作过程、继续步进、继续运作回合时，才继续运作循环。否则跳出循环。
     #     """
-    #     if (env['is_process'] and env['is_step'] and env['is_round']):
+    #     if (env['is_process'] and env['is_step'] and env['is_continue_round']):
     #         env['is_loop'] = True
     #     else:
     #         env['is_loop'] = False

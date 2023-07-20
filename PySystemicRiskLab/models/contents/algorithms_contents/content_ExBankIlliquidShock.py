@@ -17,5 +17,5 @@ def content_ExBankIlliquidShock(A: SystemicRiskAgent, para: dict, env: dict):  #
     Executer.step_update('Shock_D_run_t', A, para, env)  # 居民存款挤兑流动冲击传导至银行内资产冲击
     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_D_run_t')  # 居民存款挤兑流动冲击传导至银行内资产冲击
 
-    return A.BB, A.IB
+    return A, env
     pass  # method

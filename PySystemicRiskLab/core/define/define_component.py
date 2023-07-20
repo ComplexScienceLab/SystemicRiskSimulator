@@ -3,9 +3,7 @@
 
 #HACK 没有做覆盖性的单元测试。目前只要求能够在主程序中正确运行就好。
 """
-from PySystemicRiskLab import Any, Union, logging
 from PySystemicRiskLab.core.define.define_type import *
-from PySystemicRiskLab.tools.tools import Tools
 
 
 class AttributeComponent:
@@ -32,7 +30,6 @@ class AttributeComponent:
     content_name: Union[str, None]  # 事物之内容名称
     other: Union[dict, Any]  # 事物之其他特征
 
-    # def __init__(self, attribute: AttributeComponentType=None, id: Union[str, None] = None, name: Union[str, None] = None):
     def __init__(self, attribute: AttributeComponentType = None, **kwargs):
         """
         初始化特征组件。
@@ -96,20 +93,6 @@ class AttributeComponent:
                     self.other.update({k: v})
                     pass  # if
                 pass  # for
-            # ## 创建其他特征字典
-            # self.other = {}
-            # for k, v in kwargs.items():
-            #     if not (k == "id" or k == "entity_name" or k == "text_name" or k == "node_type" or k == "content_type"):
-            #         if k in kwargs.keys():
-            #             self.other.update({k: v})
-            #             continue
-            #         else:
-            #             break
-            #             pass#if
-            #     else:
-            #         continue
-            #         pass  # if
-            #     pass  # for
             pass  # if
 
         pass  # method

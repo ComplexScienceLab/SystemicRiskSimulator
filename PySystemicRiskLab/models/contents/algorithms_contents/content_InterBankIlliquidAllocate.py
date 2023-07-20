@@ -39,5 +39,5 @@ def content_InterBankIlliquidAllocate(A: SystemicRiskAgent, para: dict, env: dic
     Executer.step_update('Bo_IB', A, para, env)
     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Bo_IB')
 
-    return A.BB, A.IB
+    return A, env
     pass  # method

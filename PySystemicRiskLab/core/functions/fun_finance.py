@@ -594,7 +594,7 @@ class Finance:
             None
 
         """
-        bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] & bank.ilq[source_state_changes])
+        bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] | bank.ilq[source_state_changes])
         interbank.hel = (bank.hel & bank.hel.T)
         pass  # def
 
@@ -612,7 +612,7 @@ class Finance:
             None
 
         """
-        bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] & bank.ilq[source_state_changes])
+        bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] | bank.ilq[source_state_changes])
         interbank.hel = (bank.hel & bank.hel.T)
         pass  # def
 
@@ -836,13 +836,15 @@ class Finance:
             - ``alter to A_IB from Z_IB``:  已知``Z_{IB}[i,j]``，转换得到``A_{IB}[i,j]``；
 
         Args:
-            bank (): 商业银行众
-            interbank (): 商业银行间市场
-            bankState (): 银行之状态
-            interbankState (): 银行间市场之状态
-            by_way (): 参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
+            bank (BankCommercial): 商业银行众
+            interbank (BankInterbank): 商业银行间市场
+            bankState (StateType): 银行之状态
+            interbankState (StateType): 银行间市场之状态
+            by_way (str): 参数，通过该参数指定的变量作为已知变量，驱动，以更新其他相关各变量。
 
         Returns:
+            bank (BankCommercial): 商业银行众
+            interbank (BankInterbank): 商业银行间市场
 
         """
 
@@ -1117,6 +1119,8 @@ class Finance:
             raise Exception("关键词by_way取词错误".format(by_way))
             pass  # if
 
+        return bank, interbank
+
         pass  # method
 
-        pass  # class
+    pass  # class

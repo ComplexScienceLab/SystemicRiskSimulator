@@ -42,7 +42,7 @@ class Processor:
         algorithmEntity = model.content
         process = algorithmEntity.process
         line_number = 1  # 当前指令所在行号
-        while line_number <= len(process):  # 当指令位置在指令序列内时
+        while ((line_number <= len(process)) and (env['state_of_schedule'] == StateOfScheduleEnum.running)):  # 当指令位置在指令序列内时，且满足调度条件时，运行过程指令
             instruction = process[line_number - 1]
             if instruction[1] == 'node':  # 当前指令是标记节点位置语句时
                 logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.id}")
@@ -50,7 +50,7 @@ class Processor:
                 continue
             elif instruction[1] == 'execute':  # 当前指令是执行语句时
                 if not (instruction[2].attribute.entity_name == 'START' or instruction[2].attribute.entity_name == 'END'):
-                    logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.text_name}") #BUG
+                    logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.text_name}")  # BUG
                     A, A_data, env = Executer.execute_algorithm_entity(A, A_data, para, env, instruction[2])
                     line_number += 1
                 else:  # 当前指令开始或结束节点时
@@ -131,7 +131,7 @@ class Processor:
 
             ## 执行终端节点内容
             if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
-                env = Scheduler.schedule(env)
+                Scheduler.schedule(env)
                 if env['state_of_schedule'] == StateOfScheduleEnum.running:
                     A, A_data, env = Executer.execute_terminal_entity(A, A_data, para, env, node)
 

@@ -16,5 +16,5 @@ def content_BankruptRepayShock(A: SystemicRiskAgent, para: dict, env: dict):
     A.BB.Shock_D_run_t[A.BB.br] = A.BB.Z_D[A.BB.br]  # 计算破产银行遭受偿还居民存款冲击
     A.BB.Shock_IB_t[A.BB.br] = A.BB.Z_IB_all[A.BB.br]  # 计算破产银行遭受偿还银行间负债冲击
 
-    return A.BB, A.IB
+    return A, env
     pass  # method

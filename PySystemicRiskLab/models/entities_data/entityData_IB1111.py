@@ -24,7 +24,7 @@ entityData_IB1111 = dict(
         "node_END": "END",
     }),
     condition=dict({
-        "node_01_condition_01": "(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()",
+        "node_01_condition_01": "(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()", # BUG 因为改用`step`，所以可能存在错误
         "node_01_condition_02": "(A.BB.isv == A_data.BB[env['round']-1]['dataBB'].isv).all()",
         "node_02_condition_01": "(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()",
         "node_02_condition_02": "(A.BB.isv == A_data.BB[env['round']-1]['dataBB'].isv).all()",

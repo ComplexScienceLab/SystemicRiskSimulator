@@ -32,5 +32,5 @@ def content_InterBankInsolventShock(A: SystemicRiskAgent, para: dict, env: dict)
 
     # update_B_Shock(A.BB, A.IB, A.b, A.ib, by_way = 'clear Shock_B_A and Shock_B_Z') # 清零银行内资产负债冲击
 
-    return A.BB, A.IB
+    return A, env
     pass  # method

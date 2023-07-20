@@ -20,6 +20,6 @@ def content_ExBankBankruptContagion(A: SystemicRiskAgent, para: dict, env: dict)
     Executer.step_update('bankrupt', A, para, env)
     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='bankrupt')
 
-    return A.BB, A.IB
+    return A, env
 
     pass  # method

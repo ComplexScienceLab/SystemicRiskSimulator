@@ -23,5 +23,5 @@ def content_InterBankBankruptContagionShock(A: SystemicRiskAgent, para: dict, en
     BankState.update_states(way='bankrupt')
     # BankState.update_B_state(A.BB, A.IB, target='bankrupt', source='any') #FIXME
 
-    return A.BB, A.IB
+    return A, env
     pass  # method

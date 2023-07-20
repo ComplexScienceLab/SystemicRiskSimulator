@@ -74,12 +74,6 @@ class Entity:
             self.container = entityData['container']
             self.condition = entityData['condition']
             self.node = entityData['node']
-            # self.content = ContentComponent(content=entityData['content'])
-            # self.execute = ExecuteComponent(execute=entityData['execute'])
-            # self.process = ProcessComponent(process=entityData['process'])
-            # self.container = ContainerComponent(container=entityData['container'])
-            # self.condition = ConditionComponent(condition=entityData['condition'])
-            # self.node = NodeComponent(node=entityData['node'])
         elif kwargs is not None:  # 如果`attribute`不为空，那么直接设置`attribute`数据至`AttributeComponent`，否则设置`**kwargs`至`AttributeComponent`。
             if 'attribute' in kwargs.keys():  # 有`attribute`组件，就直接通过`attribute`组件创建`attribute`组件
                 self.attribute = AttributeComponent(attribute=kwargs['attribute'])
@@ -93,12 +87,6 @@ class Entity:
             self.container = kwargs['container'] if 'container' in kwargs.keys() else None
             self.condition = kwargs['condition'] if 'condition' in kwargs.keys() else None
             self.node = kwargs['node'] if 'node' in kwargs.keys() else None
-            # self.content = ContentComponent(content=kwargs['content']) if kwargs['content'] in kwargs.keys() else ContentComponent(None)
-            # self.execute = ExecuteComponent(execute=kwargs['execute']) if kwargs['execute'] in kwargs.keys() else ExecuteComponent(None)
-            # self.process = ProcessComponent(process=kwargs['process']) if kwargs['process'] in kwargs.keys() else ProcessComponent(None)
-            # self.container = ContainerComponent(container=kwargs['container']) if kwargs['container'] in kwargs.keys() else ContainerComponent(None)
-            # self.condition = ConditionComponent(condition=kwargs['condition']) if kwargs['condition'] in kwargs.keys() else ConditionComponent(None)
-            # self.node = NodeComponent(node=kwargs['node']) if kwargs['node'] in kwargs.keys() else NodeComponent(None)
         else:  # HACK其实这种情况不可能发生。因为已经自动生成了`id`和`name`。
             self.attribute = AttributeComponent(None)
             self.content = None
@@ -107,12 +95,6 @@ class Entity:
             self.container = None
             self.condition = None
             self.node = None
-            # self.content = ContentComponent(None)
-            # self.execute = ExecuteComponent(None)
-            # self.process = ProcessComponent(None)
-            # self.container = ContainerComponent(None)
-            # self.condition = ConditionComponent(None)
-            # self.node = NodeComponent(None)
             pass  # if
 
         pass  # def
