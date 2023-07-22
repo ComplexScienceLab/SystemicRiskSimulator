@@ -154,7 +154,7 @@ class Tools:
         folder_form_path = Path(folder_form_path)  # 获取包文件夹路径
         pattern = r"[\/\\]"
         repl = r"."
-        return re.sub(pattern, repl, Path(folder_form_path).relative_to(Path.cwd()).__str__())
+        return re.sub(pattern, repl, Path(folder_form_path).relative_to(env['folderpath_project']).__str__())
         pass  # method
 
     @classmethod
