@@ -81,7 +81,7 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, par
     # edges = [list(zip(df_IB[df_IB[paras['name_time']] == time]['row'] - 1, df_IB[df_IB[paras['name_time']] == time]['col'] - 1))[j - time * num_items_in_a_time_in_IB] for j in data['edge_data_idx']]  # 相关的边索引（银行编号从0开始计数的）
     data['edges'] = [list(zip(df_IB[df_IB[paras['name_time']] == time]['row'] - 1, df_IB[df_IB[paras['name_time']] == time]['col'] - 1))[j] for j in data['edges_data_idx']]  # 相关的边的索引，以两点索引表示（银行编号从0开始计数的）
     data['vertices_data_value'] = df_BB[df_BB[paras['name_time']] == time][(paras['data_name'] + '_all')].tolist()  # 相关的点之值
-    data['vertices_size'] = list(np.sqrt(np.asarray(
+    data['vertices_size'] = list(np.sqrt(np.asarray( #BUG 在Win系统运行警告：RuntimeWarning: invalid value encountered in sqrt
         Tools.MinMaxScaler(
             df_BB[df_BB[paras['name_time']] == time][(paras['data_name'] + '_all')],
             (
