@@ -3,7 +3,7 @@
 #NOTE：如果不是因为Python语言会出现循环调用的情况，那么会将这里的一些功能和内容放入`operator`。
 """
 
-from PySystemicRiskLab import dataclass, logging, random
+from PySystemicRiskLab import dataclass, logging, re, random
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_entity import Entity
@@ -80,7 +80,14 @@ class Processor:
                 conditions = []  # 条件列表
                 for instruction_ifgoto in instructions_ifgoto:  ## 判断每个条件
                     condition = eval(instruction_ifgoto[2]) if instruction_ifgoto[2] is not None else None  # NOTE 其实判断None这个条件是多余的
-                    logging.debug(f"    条件{instruction_ifgoto[2]}是 {condition}")
+                    # logging.debug(f"    条件{instruction_ifgoto[2]}是 {condition}") #DEBUG 通用的打印日志，适用于打印所有的条件语句
+
+                    ## DEBUG 以下是专用的日志，适用于打印当前的条件语句
+                    condition_str = instruction_ifgoto[2]
+                    pattern = re.compile(r"env\[['\"]round['\"]\]-1")
+                    matched_str = pattern.search(condition_str)
+                    logging.debug(f"    条件{re.sub(pattern.pattern, f'[{eval(matched_str.group())}]', condition_str)}是 {condition}")
+
                     conditions.append(condition)
                     pass  # for
                 line_number = instructions_ifgoto[conditions.index(True)][5]  # 获取下一个节点所在的行号
