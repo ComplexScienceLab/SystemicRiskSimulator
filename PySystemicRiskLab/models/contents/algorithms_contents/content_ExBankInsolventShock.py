@@ -11,7 +11,18 @@ pass  # end import
 
 
 def content_ExBankInsolventShock(A: SystemicRiskAgent, para: dict, env: dict):
-    ## # 外部资产违约损失冲击算法
+    """
+    外部资产违约损失冲击算法
+
+    Args:
+        A ():
+        para ():
+        env ():
+
+    Returns:
+
+    """
+
     # env['stage_name'] = "外部资产违约损失冲击算法"
 
     A.BB.Shock_P_def_t = A.BB.A_P * np.array([para['Shock_exIB_def_t_percentage']]).T  # 生成厂商贷款违约损失冲击

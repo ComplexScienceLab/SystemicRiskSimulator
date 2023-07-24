@@ -70,7 +70,7 @@ class Processor:
                         pass  # if
                     pass  # while
 
-                # #TODO BUG添加测试用的跳转语句
+                # DEBUG添加测试用的跳转语句
                 # conditions = []  # 条件列表
                 # condition01 = (random.sample(range(1, 100), 1)[0] > 10)
                 # conditions.append(condition01)
