@@ -5,16 +5,24 @@
 ##########################################
 
 from PySystemicRiskLab import np
-from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial, SystemicRiskAgent
-from PySystemicRiskLab.core.define.define_type import StateType
-# from PySystemicRiskLab.core.functions.fun_finance import Finance
+from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.operations.executer import Executer
 
 pass  # end import
 
 
 def content_InterBankIlliquidAllocate(A: SystemicRiskAgent, para: dict, env: dict):
-    ## # 流动性短缺银行间挤兑流动分配借贷流量算法
+    """
+    流动性短缺银行间挤兑流动分配借贷流量算法
+
+    Args:
+        A ():
+        para ():
+        env ():
+
+    Returns:
+
+    """
 
     Executer.step_update('enabled collect A_P', A, para, env)  # 计算是否可以偿还银行间借款状态
 # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='enabled collect A_P')  # 计算是否可以偿还银行间借款状态

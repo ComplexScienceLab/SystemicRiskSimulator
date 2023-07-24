@@ -1,16 +1,25 @@
 """资不抵债银行资产违约损失冲击算法"""
 
 from PySystemicRiskLab import np
-from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial, SystemicRiskAgent
-from PySystemicRiskLab.core.define.define_type import StateType
-# from PySystemicRiskLab.core.functions.fun_finance import Finance
+from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.operations.executer import Executer
 
 pass  # end import
 
 
 def content_InterBankInsolventShock(A: SystemicRiskAgent, para: dict, env: dict):
-    ## # 资不抵债银行资产违约损失冲击算法
+    """
+    资不抵债银行资产违约损失冲击算法
+
+    Args:
+        A ():
+        para ():
+        env ():
+
+    Returns:
+
+    """
+
     # env['stage_name'] = "资不抵债银行资产违约损失冲击算法"
 
     A.BB.A_IB_all[A.b] = np.maximum(A.BB.A_IB_all[A.b] - A.BB.Shock_def_t[A.b], 0.0)  # 银行之银行间资产变动

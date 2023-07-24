@@ -180,7 +180,7 @@ class Finance:
 
     @classmethod
     def together_Shock_source(cls, bank: BankCommercial, bankState: StateType):
-        """总总冲击源头"""
+        """汇总总冲击源头"""
         bank.Shock_s[bankState] = bank.Shock_exIB_s[bankState] + bank.Shock_IB_s[bankState]
         pass
 
