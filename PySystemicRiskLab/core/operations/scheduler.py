@@ -2,12 +2,11 @@
 调度机
 """
 
-from PySystemicRiskLab import np, logging, Optional
-# from PySystemicRiskLab.core.define.define_type import StateType, MoneyType
+from PySystemicRiskLab import logging
 from PySystemicRiskLab.core.define.define_agentDataCollection import AgentDataCollection
 from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
-# from PySystemicRiskLab.core.define.define_entity import Entity
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
+from PySystemicRiskLab.core.define.define_environmentVariables import env
 
 # from PySystemicRiskLab.core.define.define_environmentVariables import env
 
@@ -141,10 +140,6 @@ class Scheduler:
 
         """
 
-        # TODO以下无用
-        # cls.is_continue_round(env)
-        # cls.is_continue_process(env)
-
         ## 判断是否继续运作轮次
         if (env['round'] < env['test_max_num_of_round']):
             env['is_continue_round'] = True
@@ -167,7 +162,7 @@ class Scheduler:
             state_of_schedule = StateOfScheduleEnum.collecting
         else:
             state_of_schedule = StateOfScheduleEnum.ending
-        logging.debug("                        切换调度状态为%s", state_of_schedule)
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
 
         return state_of_schedule
         pass  # method
@@ -248,7 +243,7 @@ class Scheduler:
         elif running_mode == "step mode":
             state_of_schedule = StateOfScheduleEnum.loading
 
-        logging.debug("                        切换调度状态为%s", state_of_schedule)
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
 
         return state_of_schedule
         pass  # method
@@ -302,7 +297,7 @@ class Scheduler:
         elif running_mode == "step mode":  # HACK暂时不需要
             state_of_schedule = StateOfScheduleEnum.saving
 
-        logging.debug("                        切换调度状态为%s", state_of_schedule)
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
 
         return state_of_schedule
         pass  # method
@@ -320,7 +315,7 @@ class Scheduler:
         """
         state_of_schedule = StateOfScheduleEnum.idle
 
-        logging.debug("                        切换调度状态为%s", state_of_schedule)
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
 
         return state_of_schedule
         pass  # method
@@ -337,7 +332,7 @@ class Scheduler:
         """
         state_of_schedule = StateOfScheduleEnum.initializing
 
-        logging.debug("                        切换调度状态为%s", state_of_schedule)
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
 
         return state_of_schedule
         pass  # method
