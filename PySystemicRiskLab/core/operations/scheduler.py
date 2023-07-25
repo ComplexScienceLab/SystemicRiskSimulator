@@ -162,7 +162,7 @@ class Scheduler:
             state_of_schedule = StateOfScheduleEnum.collecting
         else:
             state_of_schedule = StateOfScheduleEnum.ending
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
 
         return state_of_schedule
         pass  # method
@@ -240,10 +240,70 @@ class Scheduler:
 
         if running_mode == "continue running mode":
             state_of_schedule = StateOfScheduleEnum.running
-        elif running_mode == "step mode":
+        elif running_mode == "stepping running mode":
             state_of_schedule = StateOfScheduleEnum.loading
 
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
+
+        return state_of_schedule
+        pass  # method
+
+    @classmethod
+    def schedule_initializing(cls, state_of_schedule: StateOfScheduleEnum, running_mode: str, env: dict):
+        """
+        调度初始状态。
+
+        Args:
+            state_of_schedule (StateOfScheduleEnum): 调度状态
+            running_mode (str): 运行模式
+            env (dict): 环境变量集
+
+        Returns:
+            state_of_schedule: 调度状态
+        """
+        if running_mode == "continue running mode":
+            env['is_continue_round'] = True
+            env['is_continue_process'] = True
+            state_of_schedule = StateOfScheduleEnum.running
+        elif running_mode == "stepping running mode":  # HACK暂时不需要
+            state_of_schedule = StateOfScheduleEnum.saving
+
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
+
+        return state_of_schedule
+        pass  # method
+
+    @classmethod
+    def schedule_ending(cls, state_of_schedule: StateOfScheduleEnum):
+        """
+        调度收尾状态。
+
+        Args:
+            state_of_schedule (StateOfScheduleEnum): 调度状态
+
+        Returns:
+            state_of_schedule: 调度状态
+        """
+        state_of_schedule = StateOfScheduleEnum.idle
+
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
+
+        return state_of_schedule
+        pass  # method
+
+    @classmethod
+    def schedule_idle(cls, state_of_schedule: StateOfScheduleEnum):
+        """
+
+        Args:
+            state_of_schedule (StateOfScheduleEnum): 调度状态
+
+        Returns:
+             state_of_schedule: 调度状态
+        """
+        state_of_schedule = StateOfScheduleEnum.initializing
+
+        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
 
         return state_of_schedule
         pass  # method
@@ -276,66 +336,6 @@ class Scheduler:
     #
     #     return state_of_schedule, index_of_schedule_position
     #     pass  # method
-
-    @classmethod
-    def schedule_initializing(cls, state_of_schedule: StateOfScheduleEnum, running_mode: str, env: dict):
-        """
-        调度初始状态。
-
-        Args:
-            state_of_schedule (StateOfScheduleEnum): 调度状态
-            running_mode (str): 运行模式
-            env (dict): 环境变量集
-
-        Returns:
-            state_of_schedule: 调度状态
-        """
-        if running_mode == "continue running mode":
-            env['is_continue_round'] = True
-            env['is_continue_process'] = True
-            state_of_schedule = StateOfScheduleEnum.running
-        elif running_mode == "step mode":  # HACK暂时不需要
-            state_of_schedule = StateOfScheduleEnum.saving
-
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
-
-        return state_of_schedule
-        pass  # method
-
-    @classmethod
-    def schedule_ending(cls, state_of_schedule: StateOfScheduleEnum):
-        """
-        调度收尾状态。
-
-        Args:
-            state_of_schedule (StateOfScheduleEnum): 调度状态
-
-        Returns:
-            state_of_schedule: 调度状态
-        """
-        state_of_schedule = StateOfScheduleEnum.idle
-
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
-
-        return state_of_schedule
-        pass  # method
-
-    @classmethod
-    def schedule_idle(cls, state_of_schedule: StateOfScheduleEnum):
-        """
-
-        Args:
-            state_of_schedule (StateOfScheduleEnum): 调度状态
-
-        Returns:
-             state_of_schedule: 调度状态
-        """
-        state_of_schedule = StateOfScheduleEnum.initializing
-
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，step={env['step']}")
-
-        return state_of_schedule
-        pass  # method
 
     # @classmethod
     # def get_process_index(cls, index_process: int, index_of_schedule_position: tuple):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。

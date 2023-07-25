@@ -27,7 +27,7 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, par
     data['bank_id'] = list(df_BB[df_BB[paras['name_time']] == time]['id_agent'])  # 银行id
     data['process_name'] = list(df_BB[df_BB[paras['name_time']] == time]['process_name'])
     data['round'] = list(df_BB[df_BB[paras['name_time']] == time]['round'])
-    data['step'] = list(df_BB[df_BB[paras['name_time']] == time]['step'])
+    data['phase'] = list(df_BB[df_BB[paras['name_time']] == time]['phase'])
 
     data['vertices'] = list(df_BB[df_BB[paras['name_time']] == time]['id_agent'])  # 节点
 
@@ -145,9 +145,9 @@ def draw_interbank_flow_graph(data: dict, paras: dict):
 
     ## 绘制标题
     if paras['time_granularity'] == '步进粒度':
-        dw_text = rf"{paras['data_name']}    {paras['process_name']}    round {str(paras['round'])}    step {str(paras['step'])}"
+        dw_text = rf"{paras['data_name']}    {paras['process_name']}    s = {str(paras['step'])}    r = {str(paras['round'])}    p = {str(paras['phase'])}"
     elif paras['time_granularity'] == '轮次粒度':
-        dw_text = rf"{paras['data_name']}    {paras['process_name']}    round {str(paras['round'])}"  # TODO 未测试
+        dw_text = rf"{paras['data_name']}    {paras['process_name']}    r = {str(paras['round'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -364,9 +364,9 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, paras: dict, width: int = 60
 
     ## 绘制标题
     if paras['time_granularity'] == '步进粒度':
-        dw_text = rf"{paras['bank_name']}    {paras['process_name']}    round {str(paras['round'])}    step {str(paras['step'])}"
+        dw_text = rf"{paras['bank_name']}    {paras['process_name']}    s = {str(paras['step'])}    r = {str(paras['round'])}    p = {str(paras['phase'])}"
     elif paras['time_granularity'] == '轮次粒度':
-        dw_text = rf"{paras['bank_name']}    {paras['process_name']}    round {str(paras['round'])}"  # TODO 未测试
+        dw_text = rf"{paras['bank_name']}    {paras['process_name']}    r = {str(paras['round'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if

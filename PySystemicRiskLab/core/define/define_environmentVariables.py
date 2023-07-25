@@ -20,9 +20,10 @@ env['foldername_of_experiments'] = ""  # 实验文件夹名称
 env['folderpath_of_experiments_output_data'] = ""  # 实验导出数据文件夹名称
 
 env['id_data'] = 0  # 实验初始数据帧ID号；
-env['step'] = 0  # 当前步伐值为0。不要改动
-env['round'] = 0  # 初始回合计次为0；
-env['time'] = 0  # 初始时期计次为0；
+env['round'] = 0  # 初始轮次计次为0；
+env['phase'] = 0  # 当前逐相为0。不要改动
+env['step'] = 0  # 单次实验的当前步进为0。不要改动
+env['time'] = 0  # 初始时期计次为0；#TODO 似乎没有用到
 env['id_experiment'] = 1  # 当前实验组编号；
 env['num_experiment'] = 0  # 实验组之实验个数；
 

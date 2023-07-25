@@ -227,10 +227,10 @@ class Collector:
         """
         BB_data_item = dict(
             {
-                # list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] , (env['step'] + 1) ),
                 list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
-                list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('step')]: env['step'],
+                list(env.keys())[list(env.keys()).index('round')]: env['round'],
+                list(env.keys())[list(env.keys()).index('phase')]: env['phase'],
                 'dataBB': deepcopy(A.BB)
             }
         )
@@ -239,10 +239,10 @@ class Collector:
 
         IB_data_item = dict(
             {
-                # list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'] ** 2, (env['step'] + 1) * env['num_bank'] ** 2),
                 list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
-                list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('step')]: env['step'],
+                list(env.keys())[list(env.keys()).index('round')]: env['round'],
+                list(env.keys())[list(env.keys()).index('phase')]: env['phase'],
                 'dataIB': deepcopy(A.IB)
             }
         )
@@ -269,10 +269,10 @@ class Collector:
         """
         BB_data_item = dict(
             {
-                # list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'], (env['step'] + 1) * env['num_bank']),
                 list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
-                list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('step')]: env['step'],
+                list(env.keys())[list(env.keys()).index('round')]: env['round'],
+                list(env.keys())[list(env.keys()).index('phase')]: env['phase'],
                 'dataBB': deepcopy(A.BB)
             }
         )
@@ -280,10 +280,10 @@ class Collector:
 
         IB_data_item = dict(
             {
-                # list(env.keys())[list(env.keys()).index('id_data')]: range(env['step'] * env['num_bank'] ** 2, (env['step'] + 1) * env['num_bank'] ** 2),
                 list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
-                list(env.keys())[list(env.keys()).index('round')]: env['round'],
                 list(env.keys())[list(env.keys()).index('step')]: env['step'],
+                list(env.keys())[list(env.keys()).index('round')]: env['round'],
+                list(env.keys())[list(env.keys()).index('phase')]: env['phase'],
                 'dataIB': deepcopy(A.IB)
             }
         )
@@ -312,8 +312,9 @@ class Collector:
         for (i1, v1) in enumerate(A_data.BB):
             # BB_data['id_data'] = np.full(numRow, v1['id_data'])
             BB_data['process_name'] = np.full(numRow, v1['process_name'])
-            BB_data['round'] = np.full(numRow, v1['round'])
             BB_data['step'] = np.full(numRow, v1['step'])
+            BB_data['round'] = np.full(numRow, v1['round'])
+            BB_data['phase'] = np.full(numRow, v1['phase'])
             fieldNames = list(v1['dataBB'].__dict__.keys())
             fieldValues = list(v1['dataBB'].__dict__.values())
             for (i2, v2) in enumerate(fieldValues):
@@ -334,8 +335,9 @@ class Collector:
             # IB_data['id_data'] = np.full(numRow * numCol, v1['id_data'])
             # IB_data['id_data'] = v1['id_data']
             IB_data['process_name'] = np.full(numRow * numCol, v1['process_name'])
-            IB_data['round'] = np.full(numRow * numCol, v1['round'])
             IB_data['step'] = np.full(numRow * numCol, v1['step'])
+            IB_data['round'] = np.full(numRow * numCol, v1['round'])
+            IB_data['phase'] = np.full(numRow * numCol, v1['phase'])
             IB_data['row'] = np.repeat(range(1, numRow + 1), numCol)
             IB_data['col'] = np.tile(range(1, numCol + 1), numRow)
             fieldNames = list(v1['dataIB'].__dict__.keys())

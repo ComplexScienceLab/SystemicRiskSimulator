@@ -85,8 +85,10 @@ class Operator:
         if env['state_of_schedule'] == StateOfScheduleEnum.initializing:
             # 重置环境变量
             env['index_of_schedule_position'] = []
-            env['step'] = 0
             env['round'] = 0
+            env['phase'] = 0
+            env['step'] = 0
+            env['time'] = 0  # TODO 似乎没有用到
             env['model_name'] = para['model_name']
             env['process_name'] = "START"
             env['test_continous_loop_of_model'] = 0
