@@ -50,7 +50,7 @@ class Processor:
                 continue
             elif instruction[1] == 'execute':  # 当前指令是执行语句时
                 if not (instruction[2].attribute.entity_name == 'START' or instruction[2].attribute.entity_name == 'END'):
-                    logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.text_name}")  # BUG
+                    logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.text_name}")
                     A, A_data, env = Executer.execute_algorithm_entity(A, A_data, para, env, instruction[2])
                     line_number += 1
                 else:  # 当前指令开始或结束节点时
