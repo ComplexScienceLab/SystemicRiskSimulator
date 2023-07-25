@@ -162,7 +162,7 @@ class Scheduler:
             state_of_schedule = StateOfScheduleEnum.collecting
         else:
             state_of_schedule = StateOfScheduleEnum.ending
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
+        logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
         pass  # method
@@ -243,7 +243,7 @@ class Scheduler:
         elif running_mode == "stepping running mode":
             state_of_schedule = StateOfScheduleEnum.loading
 
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
+        logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
         pass  # method
@@ -268,7 +268,7 @@ class Scheduler:
         elif running_mode == "stepping running mode":  # HACK暂时不需要
             state_of_schedule = StateOfScheduleEnum.saving
 
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
+        logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
         pass  # method
@@ -286,7 +286,7 @@ class Scheduler:
         """
         state_of_schedule = StateOfScheduleEnum.idle
 
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
+        logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
         pass  # method
@@ -303,7 +303,7 @@ class Scheduler:
         """
         state_of_schedule = StateOfScheduleEnum.initializing
 
-        logging.debug(f"                切换调度状态为{state_of_schedule}，round={env['round']}，phase={env['phase']}")
+        logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
         pass  # method
