@@ -2,7 +2,7 @@
 安装、初始化数据机
 """
 
-from PySystemicRiskLab import np, copy, deepcopy
+from PySystemicRiskLab import np, pd, copy, deepcopy
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank, SystemicRiskAgent
 from PySystemicRiskLab.core.define.define_consts import RANGE1, RANGE2, ZEROS1, ZEROS2, FALSE1, FALSE2, TRUE1, TRUE2
 from PySystemicRiskLab.core.define.define_environmentVariables import env
@@ -178,18 +178,18 @@ class DataInstaller:
     def set_manually_values_to_Bank_variables(cls):
         """手动设置以初始化银行变量"""
 
-        ## NOTE 当用对象字段数据结构时：
-        bank, interbank = cls.set_default_values_to_B_variables()
-        bank.__dict__ = deepcopy(dict_bankCommercial)
-        interbank.__dict__ = deepcopy(dict_bankInterbank)
+        # ## NOTE 当用对象字段数据结构时：
+        # bank, interbank = cls.set_default_values_to_B_variables()
+        # bank.__dict__ = deepcopy(dict_bankCommercial)
+        # interbank.__dict__ = deepcopy(dict_bankInterbank)
 
-        # ## NOTE 当用pandas数据结构时：
-        # bank = pd.Series()
-        # for k, v in dict_bankCommercial.items():
-        #     bank[k] = v
-        # interbank = pd.Series()
-        # for k, v in dict_bankInterbank.items():
-        #     interbank[k] = v
+        ## NOTE 当用pandas数据结构时：
+        bank = pd.Series()
+        for k, v in dict_bankCommercial.items():
+            bank[k] = v
+        interbank = pd.Series()
+        for k, v in dict_bankInterbank.items():
+            interbank[k] = v
 
         return bank, interbank
         pass  # method
@@ -228,9 +228,6 @@ class DataInstaller:
             raise ("关键词" + str(init_method) + "取值错误！")
             pass
 
-        # ## NOTE 当用pandas数据结构时：
-        # A = pd.Series([BB, IB], index=['BB', 'IB'])
-
         # # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组 #HACK无用
         # A_data = Collector.collect(A, None, env)
 
@@ -238,15 +235,19 @@ class DataInstaller:
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
 
         ## 构建Agent模型
-        ## NOTE 当用对象字段数据结构时。
-        # HACK 注意这时候`b`、`ib`变量在后续过程中没有发生变动，几乎就是一个鸡肋的携带物。目前暂时保留，后续再处理。
-        A = SystemicRiskAgent(
-            0,  # 编号（必备的）
-            BB,  # 商业银行群
-            b,  # 商业银行群示性变量
-            IB,  # 银行间邻接矩阵
-            ib,  # 银行间邻接矩阵示性变量
-        )
+
+        ## NOTE 当用pandas数据结构时：
+        A = pd.Series([BB, IB, b, ib], index=['BB', 'IB', 'b', 'ib'])
+
+        # ## NOTE 当用对象字段数据结构时。
+        # # HACK 注意这时候`b`、`ib`变量在后续过程中没有发生变动，几乎就是一个鸡肋的携带物。目前暂时保留，后续再处理。
+        # A = SystemicRiskAgent(
+        #     0,  # 编号（必备的）
+        #     BB,  # 商业银行群
+        #     b,  # 商业银行群示性变量
+        #     IB,  # 银行间邻接矩阵
+        #     ib,  # 银行间邻接矩阵示性变量
+        # )
         cls.initialize_data(A)  # 更新各银行之变量，在第一回合初始时
         return A
         pass  # method
