@@ -72,7 +72,7 @@ class Operator:
             env['step'] = 0
             env['time'] = 0  # TODO 似乎没有用到
             env['model_name'] = para['model_name']
-            env['process_name'] = np.array("START")
+            env['process_name'] = "START"
             env['test_continous_loop_of_model'] = 0
             env['model_process_state'] = "has not process"
             env['A_data'] = None
