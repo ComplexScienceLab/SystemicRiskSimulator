@@ -175,8 +175,7 @@ def draw_interbank_flow_graph(data: dict, env: dict):
     )
 
     # plt.show()  # 显示图像
-
-    plt.close()  # 关闭图像
+    # plt.close()  # 关闭图像
 
     return fig
     pass  # def
