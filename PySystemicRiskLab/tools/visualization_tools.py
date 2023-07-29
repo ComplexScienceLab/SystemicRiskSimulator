@@ -9,7 +9,6 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, par
     获取网络图数据信息。
 
     Args:
-        paras['data_name'] (str): 数据类型
         time (int): 时间
         df_BB (pd.DataFrame): 银行数据框
         df_IB (pd.DataFrame): 银行间数据框
@@ -56,25 +55,6 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, par
             print('位于节点' + str(i))
             raise Exception("判断 i 之状态错误".format(str(i)))
             pass  # for
-    # for i in range(len(data['vertices'])):
-    #     if bank_hel[i] == True and bank_isv[i] == False and bank_ilq[i] == False and bank_br[i] == False:
-    #         data['banks_state'].append('hel')
-    #     elif bank_hel[i] == False and bank_isv[i] == True and bank_ilq[i] == False and bank_br[i] == False:
-    #         data['banks_state'].append('isv')
-    #     elif bank_hel[i] == False and bank_isv[i] == False and bank_ilq[i] == True and bank_br[i] == False:
-    #         data['banks_state'].append('ilq')
-    #     elif bank_hel[i] == False and bank_isv[i] == False and bank_ilq[i] == True and bank_br[i] == False:
-    #         data['banks_state'].append('ilq')
-    #     elif bank_hel[i] == False and bank_isv[i] == False and bank_ilq[i] == False and bank_br[i] == True:
-    #         data['banks_state'].append('br')
-    #     else:
-    #         print(i)
-    #         raise Exception("判断 i 之状态错误".format(str(i)))
-    #         pass  # for
-
-    # edge_labels = list(zip(A_IB,Z_IB))  # 边之标签值
-    # vertex_labels = A_IB_all  # 点之标签值
-    # edge_labels = A_IB  # 边之标签值
 
     # data['edge_data_idx'] = df_IB[df_IB[paras['name_time']] == time][df_IB[df_IB[paras['name_time']] == time]['data['edges_data_value']'] > 0].index.tolist()  # 相关的索引
     data['edges_data_idx'] = (df_IB[(df_IB[paras['name_time']] == time) & (df_IB[paras['data_name']] > 0)]['id_agent'].values).tolist()  # 相关的边索引
@@ -98,11 +78,6 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, par
             5 * (min(df_IB[df_IB[paras['name_time']] == time][paras['data_name']]) + 0.01) / (paras['min_value_IB'] + 0.01)
         )
     )  # 边的宽度
-    # Z_IB_all = df_BB[df_BB[paras['name_time']] == time]['Z_IB_all'].tolist()  # 相关的点之值
-    # Z_IB = df_IB[(df_IB[paras['name_time']] == time)&(df_IB['Z_IB'] > 0)].values.tolist()  # 相关的边之值
-    # edge_labels = list(zip(data['edges_data_value'],Z_IB))  # 边之标签值
-    # vertex_labels = data['vertices_data_value']  # 点之标签值
-    # edge_labels = data['edges_data_value']  # 边之标签值
 
     state_colors = {
         'hel': '#F1D0CB',  # 浅红色
@@ -131,7 +106,6 @@ def draw_interbank_flow_graph(data: dict, paras: dict):
 
     Args:
         data (dict): 网络流数据集
-        paras['data_name'] (str): 数据类型
         paras (dict): 参数集
 
     Returns:
@@ -384,12 +358,9 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, paras: dict, width: int = 60
     )
 
     ## 资产负债表各列各项
-    # boxs_width = [width / 6, width / 6, width / 6, width / 6, width / 6, width / 6]  # 设置资产负债表之账户之各侧边柱子之宽度
     boxs_width = [width * 5 / 24, width * 4 / 24, width * 3 / 24, width * 3 / 24, width * 4 / 24, width * 5 / 24]  # 设置资产负债表之账户之各侧边柱子之宽度
     nibs_x = [reduce(lambda x, y: x + y, boxs_width[0:i + 1]) - boxs_width[i] for i in range(len(boxs_width))]  # 设置笔尖之x方向的位置之资产负债表之账户之各侧边柱子之起点
     o = [0, 1, 2, 5, 4, 3]  # 设置资产负债表之账户之各侧边柱子之绘制次序
-    # a = 0  # 资产负债表之账户之绘制索引
-    # nib_equity_x = width // 2 if accounts_data['equity']['E_all']['value'] >= 0 else 0  # 笔尖起始坐标之equity之开始位置之x坐标
     nibs_y = [0, 0, 0, 0, 0, 0]  # 列表之笔尖起始坐标之开始位置之y坐标
     p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
     for accounts_type in list(accounts_data.keys())[:-1]:
@@ -397,7 +368,6 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, paras: dict, width: int = 60
             nib = (border + nibs_x[o[p]], border + title_height)  # 笔尖起始坐标之新柱子之开始位置
             count_balance_is_zero = 0
             items_balance_is_zero = []
-            # s = 1  # 资产负债表值账户之各侧边柱子之各柱节之绘制索引
             for name, balance in accounts_data[accounts_type][level].items():
                 if balance['value'] != 0:
                     ## 绘制单个项目对应的矩形
@@ -426,11 +396,6 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, paras: dict, width: int = 60
                         )
                     )
                     nib = (border + nibs_x[o[p]], int(nib[1] + height * (balance['value'] / paras['max_value_BB'])))  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
-                    # if s < len(accounts_data[accounts_type][level]):
-                    #     nib = (border + nibs_x[o[p]], int(nib[1] + height * (balance['value'] / paras['max_value_BB'])))  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
-                    #     s += 1
-                    # else:
-                    #     nibs_y = nib[1]
                 else:  # 如果柱节高度为0...
                     count_balance_is_zero += 1
                     items_balance_is_zero.append((name, balance['value'], nib[1]))
@@ -441,8 +406,6 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, paras: dict, width: int = 60
             nibs_y[o[p]] = nib[1]
             p += 1
             pass  # for
-        # nib_equity = nibs_y if nibs_y < nib_equity else nib_equity
-        # a += 1
         pass  # for
 
     ## 绘制项目equity对应的矩形
@@ -455,7 +418,6 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, paras: dict, width: int = 60
             items_balance_is_zero = []
             s = 1  # 资产负债表值账户之各侧边柱子之各柱节之绘制索引
             for name, balance in accounts_data[accounts_type][level].items():
-                # nib = (border + nib_equity_x, border + nib_equity)  # 笔尖起始坐标之equity之开始位置
                 balance['color'] = balance['color'] if balance['value'] >= 0 else '#FFFFFF'  # 设置资产负债表之账户之各侧边柱子之绘制次序
                 balanceSheet_svg.append(
                     dw.Rectangle(
@@ -484,8 +446,6 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, paras: dict, width: int = 60
                 pass  # for
             p += 1
             pass  # for
-        # nib_equity = nibs_y if nibs_y < nib_equity else nib_equity
-        # a += 1
         pass  # for
 
     return balanceSheet_svg
