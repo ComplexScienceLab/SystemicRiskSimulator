@@ -52,11 +52,11 @@ class Collector:
 
     ## NOTE 当用pandas数据结构时：
     @classmethod
-    def init_agent_data_collection(cls, A: SystemicRiskAgent, env: dict):
+    def init_agent_data_collection(cls, A: pd.Series, env: dict):
         """
 
         Args:
-            A (SystemicRiskAgent): 系统性风险个体众
+            A (pd.Series): 系统性风险个体众
             env (dict): 环境变量
 
         Returns:
@@ -64,7 +64,12 @@ class Collector:
 
         """
 
-        BB_df = A.BB.to_frame().transpose()
+        # [BB[i]=np.copy(A.BB[i]) for i in A.BB.index]
+        BB = pd.Series()
+        for i in A.BB.index:
+            BB[i] = deepcopy(A.BB[i])
+        # BB=A.BB.apply(lambda x:np.copy(x))
+        BB_df = BB.to_frame().transpose()
         BB_df.insert(loc=0, column='process_name', value=env['process_name'])
         BB_df.insert(loc=1, column='step', value=env['step'])
         BB_df.insert(loc=2, column='round', value=env['round'])
@@ -72,7 +77,12 @@ class Collector:
         BB_data = pd.DataFrame()
         BB_data = pd.concat([BB_data, BB_df], ignore_index=True)
 
-        IB_df = A.IB.to_frame().transpose()
+        # IB = pd.Series.copy(A.IB)
+        IB = pd.Series()
+        for i in A.IB.index:
+            IB[i] = deepcopy(A.IB[i])
+        # IB=A.BB.apply(lambda x:np.copy(x))
+        IB_df = IB.to_frame().transpose()
         IB_df.insert(loc=0, column='process_name', value=env['process_name'])
         IB_df.insert(loc=1, column='step', value=env['step'])
         IB_df.insert(loc=2, column='round', value=env['round'])
@@ -80,7 +90,8 @@ class Collector:
         IB_data = pd.DataFrame()
         IB_data = pd.concat([IB_data, IB_df], ignore_index=True)
 
-        A_data = AgentDataCollection(BB_data, IB_data)
+        # A_data = AgentDataCollection(BB_data, IB_data)
+        A_data = pd.Series([BB_data, IB_data], index=['BB', 'IB'])
         return A_data
         pass
 
@@ -98,21 +109,35 @@ class Collector:
             A_data: 待收集的数据
 
         """
+        # BB_data, IB_data = A_data.BB, A_data.IB
 
-        BB_df = A.BB.to_frame().transpose()
+        # BB_df = A.BB.to_frame().transpose()
+        # BB = deepcopy(A.BB)
+        BB = pd.Series()
+        for i in A.BB.index:
+            BB[i] = deepcopy(A.BB[i])
+        BB_df = BB.to_frame().transpose()
         BB_df.insert(loc=0, column='process_name', value=env['process_name'])
         BB_df.insert(loc=1, column='step', value=env['step'])
         BB_df.insert(loc=2, column='round', value=env['round'])
         BB_df.insert(loc=3, column='phase', value=env['phase'])
         A_data.BB = pd.concat([A_data.BB, BB_df], ignore_index=True)
+        # BB_data = pd.concat([BB_data, BB_df], ignore_index=True)
 
-        IB_df = A.IB.to_frame().transpose()
+        # IB_df = A.IB.to_frame().transpose()
+        # IB = deepcopy(A.IB)
+        IB = pd.Series()
+        for i in A.IB.index:
+            IB[i] = deepcopy(A.IB[i])
+        IB_df = IB.to_frame().transpose()
         IB_df.insert(loc=0, column='process_name', value=env['process_name'])
         IB_df.insert(loc=1, column='step', value=env['step'])
         IB_df.insert(loc=2, column='round', value=env['round'])
         IB_df.insert(loc=3, column='phase', value=env['phase'])
         A_data.IB = pd.concat([A_data.IB, IB_df], ignore_index=True)
+        # IB_data = pd.concat([IB_data, IB_df], ignore_index=True)
 
+        # A_data.BB, A_data.IB = BB_data, IB_data
         return A_data
         pass
 

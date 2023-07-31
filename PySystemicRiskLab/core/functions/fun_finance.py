@@ -153,16 +153,16 @@ class Finance:
     @classmethod
     def clear_all_transfer(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """清零所有流量变量值"""
-        bank.Lo_IB_all[bankState] = copy(ZEROS1)[bankState]
-        bank.Lo_P[bankState] = copy(ZEROS1)[bankState]
-        bank.Li_IB_all[bankState] = copy(ZEROS1)[bankState]
-        bank.Li_P[bankState] = copy(ZEROS1)[bankState]
-        bank.Bi_IB_all[bankState] = copy(ZEROS1)[bankState]
-        bank.Bi_D[bankState] = copy(ZEROS1)[bankState]
-        bank.Bo_IB_all[bankState] = copy(ZEROS1)[bankState]
-        bank.Bo_D[bankState] = copy(ZEROS1)[bankState]
-        interbank.Lo_IB[interbankState] = copy(ZEROS2)[interbankState]
-        interbank.Bo_IB[interbankState] = copy(ZEROS2)[interbankState]
+        bank.Lo_IB_all[bankState] = deepcopy(ZEROS1)[bankState]
+        bank.Lo_P[bankState] = deepcopy(ZEROS1)[bankState]
+        bank.Li_IB_all[bankState] = deepcopy(ZEROS1)[bankState]
+        bank.Li_P[bankState] = deepcopy(ZEROS1)[bankState]
+        bank.Bi_IB_all[bankState] = deepcopy(ZEROS1)[bankState]
+        bank.Bi_D[bankState] = deepcopy(ZEROS1)[bankState]
+        bank.Bo_IB_all[bankState] = deepcopy(ZEROS1)[bankState]
+        bank.Bo_D[bankState] = deepcopy(ZEROS1)[bankState]
+        interbank.Lo_IB[interbankState] = deepcopy(ZEROS2)[interbankState]
+        interbank.Bo_IB[interbankState] = deepcopy(ZEROS2)[interbankState]
         pass
 
     ## NOTE：功能函数集：计算冲击。
