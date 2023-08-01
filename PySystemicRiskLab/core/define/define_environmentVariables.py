@@ -38,6 +38,9 @@ env['process_name'] = ""  # 运行的过程之名称；
 env['folderpath_project'] = os.getcwd()  # 获取当前项目路径；
 env['folderpath_import_modules'] = ""  # 获取当前需要导入的模块所在总路径；
 
+env['df_BB'] = None  # Pandas格式的银行数据
+env['df_IB'] = None  # Pandas格式的银行间数据
+
 # """
 # env['model_process_state'] 表示当前模型根节点处理状态 #HACK 无用，但是可以保留作为借鉴
 # 如果用可视化标记节点颜色表示标记状态，那么：
