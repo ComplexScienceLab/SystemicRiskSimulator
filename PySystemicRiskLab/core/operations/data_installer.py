@@ -90,20 +90,6 @@ class DataInstaller:
             Loss_IB=deepcopy(ZEROS1),  # 银行间市场冲击损失 Loss_IB
             Loss_IB_def_t=deepcopy(ZEROS1),  # 银行间资产负债违约冲击损失 Loss_IB_def_t
             Loss_IB_run_t=deepcopy(ZEROS1),  # 银行间负债流动性挤兑冲击损失 Loss_IB_run_t
-            # FIXME 以下带注释部分，用于测试几种不同的形状之影响
-            # on=deepcopy(TRUE1),  # 示性向量之于银行是否存在 is_on
-            # off=deepcopy(FALSE1),  # 示性向量之于银行是否已退出不存在 is_off
-            # hel=deepcopy(TRUE1),  # 示性向量之于银行是否健康 is_healthy
-            # isv=deepcopy(FALSE1),  # 示性向量之于银行是否资不抵债 is_insolvent
-            # ilq=deepcopy(FALSE1),  # 示性向量之于银行是否流动性短缺 is_illiquid
-            # br=deepcopy(FALSE1),  # 示性向量之于银行是否破产 is_bankrupt
-            # is_needed_BoIB=deepcopy(FALSE1),  # 示性向量之于银行是否需要偿还借款 is_needed_BoIB
-            # is_enabled_BoIB=deepcopy(TRUE1),  # 示性向量之于银行是否可以偿还借款 is_enabled_BoIB
-            # is_needed_BoD=deepcopy(FALSE1),  # 示性向量之于银行是否需要偿还居民部门存款 is_needed_BoD
-            # is_enabled_BoD=deepcopy(TRUE1),  # 示性向量之于银行是否可以偿还居民部门存款 is_enabled_BoD
-            # is_needed_LiP=deepcopy(FALSE1),  # 示性向量之于银行是否需要收回厂商贷款 is_needed_LiP
-            # is_enabled_LiP=deepcopy(TRUE1),  # 示性向量之于银行是否可以收回厂商贷款 is_enabled_LiP
-            # is_allocated_Shock=deepcopy(FALSE1),  # 示性向量之于银行是否已经分配传染冲击 is_allocated_Shock
             on=deepcopy(TRUE1),  # 示性向量之于银行是否存在 is_on
             off=deepcopy(FALSE1),  # 示性向量之于银行是否已退出不存在 is_off
             hel=deepcopy(TRUE1),  # 示性向量之于银行是否健康 is_healthy
@@ -186,10 +172,10 @@ class DataInstaller:
         ## NOTE 当用pandas数据结构时：
         bank = pd.Series()
         for k, v in dict_bankCommercial.items():
-            bank[k] = v
+            bank[k] = v  # BUG 需要改成 bank[k] = v.copy()，否则会出现引用错乱
         interbank = pd.Series()
         for k, v in dict_bankInterbank.items():
-            interbank[k] = v
+            interbank[k] = v  # BUG 需要改成 interbank[k] = v.copy()，否则会出现引用错乱
 
         return bank, interbank
         pass  # method
@@ -208,6 +194,8 @@ class DataInstaller:
         - ``import data``:  导入数据以初始化
 
         - ``manually``:  手动设置以初始化；
+
+        在算法中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值做处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
 
         Args:
             init_method ():
@@ -231,16 +219,17 @@ class DataInstaller:
         # # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组 #HACK无用
         # A_data = Collector.collect(A, None, env)
 
+        # TODO 后续需要统一这两个变量的用法，防止混乱使用
         b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置A.BB示性变量
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
 
         ## 构建Agent模型
+        # NOTE 注意这时候`b`、`ib`变量在后续过程中没有发生变动。
 
-        ## NOTE 当用pandas数据结构时：
+        ## HACK 当用pandas数据结构时：
         A = pd.Series([BB, IB, b, ib], index=['BB', 'IB', 'b', 'ib'])
 
-        # ## NOTE 当用对象字段数据结构时。
-        # # HACK 注意这时候`b`、`ib`变量在后续过程中没有发生变动，几乎就是一个鸡肋的携带物。目前暂时保留，后续再处理。
+        # ## HACK 当用对象字段数据结构时。
         # A = SystemicRiskAgent(
         #     0,  # 编号（必备的）
         #     BB,  # 商业银行群

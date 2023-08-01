@@ -3,8 +3,7 @@
 
 记得这里发生变更时，要手动检查`Operator.operate_experiment`相关位置是否要更新。
 """
-import os
-
+from PySystemicRiskLab import os
 from PyScripts.settings.set_environment_variables import set_environment_variables
 from PySystemicRiskLab.core.define.define_type import EnvironmentVariableType
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
