@@ -1,17 +1,25 @@
 """外部资产违约损失冲击"""
 
 from PySystemicRiskLab import np
-from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank, SystemicRiskAgent
-from PySystemicRiskLab.core.define.define_type import StateType
-# from PySystemicRiskLab.core.functions.fun_finance import Finance
+from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.operations.executer import Executer
-from PySystemicRiskLab.core.operations.scheduler import Scheduler
 
 pass  # end import
 
 
 def content_ExBankInsolventShock(A: SystemicRiskAgent, para: dict, env: dict):
-    ## # 外部资产违约损失冲击算法
+    """
+    外部资产违约损失冲击算法
+
+    Args:
+        A ():
+        para ():
+        env ():
+
+    Returns:
+
+    """
+
     # env['stage_name'] = "外部资产违约损失冲击算法"
 
     A.BB.Shock_P_def_t = A.BB.A_P * np.array([para['Shock_exIB_def_t_percentage']]).T  # 生成厂商贷款违约损失冲击

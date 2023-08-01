@@ -1,16 +1,25 @@
 """流动性短缺银行间挤兑流动传染算法"""
 
 from PySystemicRiskLab import np
-from PySystemicRiskLab.core.define.define_agents import BankInterbank, BankCommercial, SystemicRiskAgent
-from PySystemicRiskLab.core.define.define_type import StateType
-# from PySystemicRiskLab.core.functions.fun_finance import Finance
+from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
 from PySystemicRiskLab.core.operations.executer import Executer
 
 pass  # end import
 
 
 def content_InterBankIlliquidContagionShock(A: SystemicRiskAgent, para: dict, env: dict):
-    ## # 流动性短缺银行间挤兑流动传染
+    """
+    流动性短缺银行间挤兑流动传染
+
+    Args:
+        A ():
+        para ():
+        env ():
+
+    Returns:
+
+    """
+
     # env['stage_name'] = "流动性短缺银行间挤兑流动传染算法"
 
     ## BUG 方式一：每个银行只有一次分配传染冲击之行为。

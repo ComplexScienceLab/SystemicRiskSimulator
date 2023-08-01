@@ -37,6 +37,7 @@ class Executer:
 
         """
         Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
+        env['phase'] += 1  # 逐相加一
         env['step'] += 1  # 步进加一
         if env['state_of_schedule'] == StateOfScheduleEnum.running:
             Scheduler.schedule(env)  # 调度状态变成`collecting`或者`ending`
@@ -73,8 +74,8 @@ class Executer:
 
         logging.debug("    开始执行算法内容：")
 
-        env['round'] += 1  # 计次回合数
-        env['step'] = 0  # 步进归零
+        env['round'] += 1  # 计次轮次数
+        env['phase'] = 0  # 逐相归零
         env['process_name'] = entity.attribute.entity_name  # 执行的过程名称（英文名称）
         A, env = entity.execute(A, para, env)
 

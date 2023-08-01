@@ -3,8 +3,7 @@
 
 记得这里发生变更时，要手动检查`Operator.operate_experiment`相关位置是否要更新。
 """
-import os
-
+from PySystemicRiskLab import os
 from PyScripts.settings.set_environment_variables import set_environment_variables
 from PySystemicRiskLab.core.define.define_type import EnvironmentVariableType
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
@@ -20,9 +19,10 @@ env['foldername_of_experiments'] = ""  # 实验文件夹名称
 env['folderpath_of_experiments_output_data'] = ""  # 实验导出数据文件夹名称
 
 env['id_data'] = 0  # 实验初始数据帧ID号；
-env['step'] = 0  # 当前步伐值为0。不要改动
-env['round'] = 0  # 初始回合计次为0；
-env['time'] = 0  # 初始时期计次为0；
+env['round'] = 0  # 初始轮次计次为0；
+env['phase'] = 0  # 当前逐相为0。不要改动
+env['step'] = 0  # 单次实验的当前步进为0。不要改动
+env['time'] = 0  # 初始时期计次为0；#TODO 似乎没有用到
 env['id_experiment'] = 1  # 当前实验组编号；
 env['num_experiment'] = 0  # 实验组之实验个数；
 
@@ -37,6 +37,9 @@ env['model_name'] = ""  # 运行的模型之名称
 env['process_name'] = ""  # 运行的过程之名称；
 env['folderpath_project'] = os.getcwd()  # 获取当前项目路径；
 env['folderpath_import_modules'] = ""  # 获取当前需要导入的模块所在总路径；
+
+env['df_BB'] = None  # Pandas格式的银行数据
+env['df_IB'] = None  # Pandas格式的银行间数据
 
 # """
 # env['model_process_state'] 表示当前模型根节点处理状态 #HACK 无用，但是可以保留作为借鉴

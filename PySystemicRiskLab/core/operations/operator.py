@@ -2,18 +2,14 @@
 运作机
 """
 
-from PySystemicRiskLab import os, logging, dataclass, Any
+from PySystemicRiskLab import os, np, logging, dataclass, Any
 from PySystemicRiskLab.core.operations.entity_manager import EntityManager
 from PySystemicRiskLab.core.define.define_enum import StateOfScheduleEnum
-# from PySystemicRiskLab.core.define.define_parameterVariables import para
 from PySystemicRiskLab.core.operations.collector import Collector
-# from PySystemicRiskLab.core.operations.executer import Executer
-# from PySystemicRiskLab.core.operations.model_installer import ModelInstaller
 from PySystemicRiskLab.core.operations.data_installer import DataInstaller
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
 from PySystemicRiskLab.core.operations.builder import Builder
 from PySystemicRiskLab.core.operations.processor import Processor
-# from PySystemicRiskLab.core.functions.fun_finance import Finance
 
 from PySystemicRiskLab.tools.tools import Tools
 
@@ -37,20 +33,6 @@ class Operator:
         Returns:
 
         """
-
-        ## 获取项目路径
-        env['folderpath_project'] = Tools.get_project_rootpath()
-
-        ## 生成实验组文件夹用于本批次实验
-        env = Tools.set_experiments_folders()
-
-        ## 设置日志
-        logging.basicConfig(
-            level=env['test_logging'],
-            filename=os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"),  # 建立文件以记录log
-        )
-
-        logging.debug("\n实验组名称：%s", env['foldername_of_experiments'])
 
         ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
         env['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 组合排列多结构体成为列表
@@ -85,8 +67,10 @@ class Operator:
         if env['state_of_schedule'] == StateOfScheduleEnum.initializing:
             # 重置环境变量
             env['index_of_schedule_position'] = []
-            env['step'] = 0
             env['round'] = 0
+            env['phase'] = 0
+            env['step'] = 0
+            env['time'] = 0  # TODO 似乎没有用到
             env['model_name'] = para['model_name']
             env['process_name'] = "START"
             env['test_continous_loop_of_model'] = 0
