@@ -171,10 +171,10 @@ class DataInstaller:
 
         ## NOTE 当用pandas数据结构时：
         bank = pd.Series()
-        for k, v in dict_bankCommercial.items():
+        for k, v in deepcopy(dict_bankCommercial).items():
             bank[k] = v  # BUG 需要改成 bank[k] = v.copy()，否则会出现引用错乱
         interbank = pd.Series()
-        for k, v in dict_bankInterbank.items():
+        for k, v in deepcopy(dict_bankInterbank).items():
             interbank[k] = v  # BUG 需要改成 interbank[k] = v.copy()，否则会出现引用错乱
 
         return bank, interbank
