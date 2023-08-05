@@ -36,12 +36,11 @@ class Executer:
             env (dict): 环境变量集
 
         """
+
         Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
-        env['phase'] += 1  # 逐相加一
-        env['step'] += 1  # 步进加一
+
         if env['state_of_schedule'] == StateOfScheduleEnum.running:
             Scheduler.schedule(env)  # 调度状态变成`collecting`或者`ending`
-
         if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
             env['A_data'], env = Collector.collect(A, env['A_data'], env)  # 收集数据
             Scheduler.schedule(env)  # 调度状态变成`running`
@@ -49,8 +48,10 @@ class Executer:
             # Scheduler.schedule(env)  # 调度状态变成`idle`
             pass  # if
 
-        return env
+        env['step'] += 1  # 步进加一
+        env['phase'] += 1  # 逐相加一
 
+        return env
         pass  # def
 
     @classmethod
@@ -74,8 +75,9 @@ class Executer:
 
         logging.debug("    开始执行算法内容：")
 
-        env['round'] += 1  # 计次轮次数
-        env['phase'] = 0  # 逐相归零
+        env['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+        env['phase'] = 1  # 逐相复位（起始为1）
+        # env['step'] += 1  # 步进加一
         env['process_name'] = entity.attribute.entity_name  # 执行的过程名称（英文名称）
         A, env = entity.execute(A, para, env)
 

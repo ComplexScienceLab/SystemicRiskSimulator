@@ -119,9 +119,9 @@ def draw_interbank_flow_graph(data: dict, env: dict):
 
     ## 绘制标题
     if env['time_granularity'] == '步进粒度':
-        dw_text = rf"{env['data_name']}    {env['process_name']}    s = {str(env['step'])}    r = {str(env['round'])}    p = {str(env['phase'])}"
+        dw_text = rf"{env['data_name']}    {env['process_name']}    s={str(env['step'])}    r={str(env['round'])}    p={str(env['phase'])}"
     elif env['time_granularity'] == '轮次粒度':
-        dw_text = rf"{env['data_name']}    {env['process_name']}    r = {str(env['round'])}"  # TODO 未测试
+        dw_text = rf"{env['data_name']}    {env['process_name']}    r={str(env['round'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -337,9 +337,9 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, env: dict, width: int = 600,
 
     ## 绘制标题
     if env['time_granularity'] == '步进粒度':
-        dw_text = rf"{env['bank_name']}    {env['process_name']}    s = {str(env['step'])}    r = {str(env['round'])}    p = {str(env['phase'])}"
+        dw_text = rf"{env['bank_name']}    {env['process_name']}    s={str(env['step'])}    r={str(env['round'])}    p={str(env['phase'])}"
     elif env['time_granularity'] == '轮次粒度':
-        dw_text = rf"{env['bank_name']}    {env['process_name']}    r = {str(env['round'])}"  # TODO 未测试
+        dw_text = rf"{env['bank_name']}    {env['process_name']}    r={str(env['round'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if

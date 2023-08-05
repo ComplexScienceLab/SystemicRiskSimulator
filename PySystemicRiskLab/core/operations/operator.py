@@ -84,6 +84,7 @@ class Operator:
             ## 初始化
             A = DataInstaller.install_data(init_method=env['init_method'])  # 安装本次实验所需的多主体数据
             env['A_data'] = Collector.collect(A, env['A_data'], env)  # 收集初始数据
+            env['step'] += 1
 
             # ## 构建本次实验所需的状态数据
             # Finance.build_state_const_variables(A.BB, A.IB)
