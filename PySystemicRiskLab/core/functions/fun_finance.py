@@ -914,7 +914,7 @@ class Finance:
             cls.together_transfer_all(bank, (bank.on | bank.off))
 
 
-        ## NOTE：功能函数集：更新冲击。
+        ## NOTE：功能函数集：更新冲击、状态。
         elif by_way == 'Shock_P_def_t':
             cls.together_Shock_exIB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
