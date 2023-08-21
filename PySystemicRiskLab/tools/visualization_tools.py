@@ -61,23 +61,23 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, env
     # edges = [list(zip(df_IB[df_IB[env['name_time']] == time]['row'] - 1, df_IB[df_IB[env['name_time']] == time]['col'] - 1))[j - time * num_items_in_a_time_in_IB] for j in data['edge_data_idx']]  # 相关的边索引（银行编号从0开始计数的）
     data['edges'] = [list(zip(df_IB[df_IB[env['name_time']] == time]['row'], df_IB[df_IB[env['name_time']] == time]['col']))[j] for j in data['edges_data_idx']]  # 相关的边的索引，以两点索引表示（银行编号从0开始计数的）
     data['vertices_data_value'] = df_BB[df_BB[env['name_time']] == time][(env['data_name'] + '_all')].tolist()  # 相关的点之值
-    data['vertices_size'] = list(np.sqrt(np.asarray(  # BUG 在Win系统运行警告：RuntimeWarning: invalid value encountered in sqrt
+    data['vertices_size'] = list(np.sqrt(np.asarray(  # 节点尺寸
         Tools.MinMaxScaler(
             df_BB[df_BB[env['name_time']] == time][(env['data_name'] + '_all')],
             (
-                0.1 * min(df_BB[df_BB[env['name_time']] == time][(env['data_name'] + '_all')]) / env['min_value_BB'],
-                1.0 * max(df_BB[df_BB[env['name_time']] == time][(env['data_name'] + '_all')]) / env['max_value_BB']
+                0.05 * ((min(df_BB[df_BB[env['name_time']] == time][(env['data_name'] + '_all')]) - env['min_value_BB'] + 0.00001) / (env['max_value_BB'] - env['min_value_BB'] + 0.00001)),
+                1.0 * ((max(df_BB[df_BB[env['name_time']] == time][(env['data_name'] + '_all')]) - env['min_value_BB'] + 0.00001) / (env['max_value_BB'] - env['min_value_BB'] + 0.00001))
             )
         )
-    )))  # 节点尺寸
+    )))
     data['edges_data_value'] = df_IB[(df_IB[env['name_time']] == time) & (df_IB[env['data_name']] > 0)][env['data_name']].values.tolist()  # 相关的边之值
-    data['edges_width'] = Tools.MinMaxScaler(
+    data['edges_width'] = Tools.MinMaxScaler(  # 边的宽度
         data['edges_data_value'],
         (
-            0.5 * (min(df_IB[df_IB[env['name_time']] == time][env['data_name']]) + 0.01) / (env['min_value_IB'] + 0.01),
-            5 * (min(df_IB[df_IB[env['name_time']] == time][env['data_name']]) + 0.01) / (env['min_value_IB'] + 0.01)
+            1 * ((min(df_IB[df_IB[env['name_time']] == time][env['data_name']]) - env['min_value_IB'] + 0.00001) / (env['max_value_IB'] - env['min_value_IB'] + 0.00001)),
+            5 * ((max(df_IB[df_IB[env['name_time']] == time][env['data_name']]) - env['min_value_IB'] + 0.00001) / (env['max_value_IB'] - env['min_value_IB'] + 00.0001)),
         )
-    )  # 边的宽度
+    )
 
     state_colors = {
         'hel': '#F1D0CB',  # 浅红色
@@ -146,7 +146,7 @@ def draw_interbank_flow_graph(data: dict, env: dict):
     g.es['width'] = data['edges_width']
 
     ## 生成可视化图
-    fig, ax = plt.subplots(
+    fig, ax = plt.subplots(  # BUG 运行警告：RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
         figsize=(5, 5),
         dpi=400,
     )
