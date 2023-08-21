@@ -10,6 +10,7 @@ import platform
 import os
 import glob
 from os import path
+import shutil
 import warnings
 import re
 from pathlib import Path, PurePath

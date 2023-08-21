@@ -1,6 +1,6 @@
 "函数区：工具集"
 
-from PySystemicRiskLab import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string
+from PySystemicRiskLab import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil
 from PySystemicRiskLab.core.define.define_type import EnvironmentVariableType
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 
@@ -172,6 +172,30 @@ class Tools:
         repl = r"/"
         result = re.sub(pattern, repl, package_form_path)
         return os.path.abspath(result)
+        pass  # method
+
+    @classmethod
+    def delete_and_recreate_folder(cls, folderpath):
+        """
+        删除非空文件夹并重新创建文件夹。
+
+        这个功能比较危险，因为会删除非空文件夹，所以要求用户确认操作。
+
+        Args:
+            folderpath (Path): 文件夹路径
+
+        """
+        folder_path = Path(folderpath)
+        if folder_path.exists() and folder_path.is_dir():
+            confirmation = input("确认要删除文件夹及其内容吗？(y/n): ")
+            if confirmation.lower() == 'y':
+                shutil.rmtree(folder_path)
+                folder_path.mkdir()
+                print("文件夹已成功删除并重新创建。")
+            else:
+                print("操作已取消。")
+        else:
+            print("文件夹不存在。")
         pass  # method
 
     # @classmethod
