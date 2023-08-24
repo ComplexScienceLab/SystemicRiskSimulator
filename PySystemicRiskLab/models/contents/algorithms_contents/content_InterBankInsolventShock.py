@@ -23,7 +23,7 @@ def content_InterBankInsolventShock(A: SystemicRiskAgent, para: dict, env: dict)
     # env['stage_name'] = "资不抵债银行资产违约损失冲击算法"
 
     A.BB.A_IB_all[A.b] = np.maximum(A.BB.A_IB_all[A.b] - A.BB.Shock_def_t[A.b], 0.0)  # 银行之银行间资产变动
-    Executer.step_update('Shock_IB_def_s', A, para, env)  # 更新银行间资产
+    Executer.step_update('A_IB_all', A, para, env)  # 更新银行间资产
     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='A_IB_all')  # 更新银行间资产
     A.BB.E_all[A.BB.on] = np.maximum(A.BB.E_all[A.BB.on] - A.BB.Shock_def_t[A.BB.on], 0.0)  # 银行之所有者权益变动
     A.BB.Shock_IB_def_s[A.BB.isv] = abs((A.BB.Shock_def_t[A.BB.isv] - A.BB.E_all[A.BB.isv]) / (A.BB.Z_IB_all[A.BB.isv] + A.BB.Z_D[A.BB.isv]) * A.BB.Z_IB_all[A.BB.isv])  # 计算应银行内冲击传导至银行间传染冲击
