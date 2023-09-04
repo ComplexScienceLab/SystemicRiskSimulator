@@ -40,7 +40,7 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     A_all = np.NaN  # = deepcopy(ZEROS1)  # 总资产 A_all: $A_all=A_IB+A_exIB$
     A_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产加总 A_IB_all
     A_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
-    A_P = np.NaN  # = deepcopy(ZEROS1)  # 银行贷款给生产部门之资产（非流动性资产） A_P
+    A_P = np.NaN  # = deepcopy(ZEROS1)  # 银行贷款给非金融部门（非银行金融部门）之资产（非流动性资产） A_P
     A_Q = np.NaN  # = deepcopy(ZEROS1)  # 银行持有超额准备金（流动性资产） A_Q
     A_R = np.NaN  # = deepcopy(ZEROS1)  # 银行持有法定准备金（非流动性资产） A_R
     A_other = np.NaN  # = deepcopy(ZEROS1)  # 银行持有的其它资产（非流动性资产） A_other
