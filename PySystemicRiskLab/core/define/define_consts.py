@@ -9,11 +9,12 @@ pass  # end import
 import numpy as np
 
 from PySystemicRiskLab.core.define.define_environmentVariables import env
+from dataclasses import dataclass
 
 pass  # end import
 
 
-class Constants:
+class CONST:
     """
     常量类
 
@@ -42,6 +43,7 @@ class Constants:
 
     """
 
+    @classmethod
     def __init__(cls, num):
         cls.FALSE1 = np.full((num, 1), False)  # 一维false布尔向量常量
         cls.FALSE2 = np.full((num, num), False)  # 二维方阵false布尔向量常量
