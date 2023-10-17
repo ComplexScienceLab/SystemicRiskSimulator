@@ -4,10 +4,10 @@
 
 ## 基于《方意_荆中博_2022_外部冲击下系统性金融风险的生成机制》附录一：最大信息熵算法
 
-import numpy as np
+from PySystemicRiskLab import np
 
 
-def calculate_bilateral_exposure(A_IB, Z_IB, TOL):
+def calculate_bilateral_exposure(A_IB, Z_IB):
     """
     通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
@@ -18,12 +18,13 @@ def calculate_bilateral_exposure(A_IB, Z_IB, TOL):
     Args:
         A_IB (): 各银行之银行间资产
         Z_IB (): 各银行之银行间负债
-        TOL (): 收敛容忍度
 
     Returns:
         A_IB_ij (): 银行间资产矩阵
         Z_IB_ij (): 银行间负债矩阵
     """
+    iteration_threshold = 0.01  # 迭代阈值
+    precition_threshold = 0.0000000000001  # 分母精度阈值
 
     N = A_IB.shape[0]  # 获取银行数量
     A_IB_total = np.sum(A_IB)  # 计算银行间总资产
@@ -45,21 +46,23 @@ def calculate_bilateral_exposure(A_IB, Z_IB, TOL):
             if np.sum(X_ij_prev[:, i]) == 0:  # 行约束迭代
                 X_ij_star[:, i] = 0
             else:
-                X_ij_star[:, i] = X_ij_prev[:, i] * Z_IB_i_star[i] / np.sum(X_ij_prev[:, i])
+                denominator = np.sum(X_ij_prev[:, i]) if np.sum(X_ij_prev[:, i]) > precition_threshold else precition_threshold
+                X_ij_star[:, i] = X_ij_prev[:, i] * Z_IB_i_star[i] / denominator
 
             if np.sum(X_ij_prev[i, :]) == 0:  # 列约束迭代
                 X_ij_star[i, :] = 0
             else:
-                X_ij_star[i, :] = X_ij_prev[i, :] * A_IB_i_star[i] / np.sum(X_ij_prev[i, :])
+                denominator = np.sum(X_ij_prev[i, :]) if np.sum(X_ij_prev[i, :]) > precition_threshold else precition_threshold
+                X_ij_star[i, :] = X_ij_prev[i, :] * A_IB_i_star[i] / denominator
 
-        if np.max(np.abs(X_ij_star - X_ij_prev)) <= TOL:  # 检查是否满足收敛条件
+        if np.allclose(X_ij_star, X_ij_prev, atol=iteration_threshold):  # 判断是否达到收敛
             break
 
         t += 1
 
-    X_ij = X_ij_star * np.max([A_IB_total, Z_IB_total])  # 计算最终的双边敞口矩阵
-    A_IB_ij = X_ij  # 银行间资产矩阵
-    Z_IB_ij = X_ij.T.copy()  # 银行间负债矩阵
+    # X_ij = X_ij_star * np.max([A_IB_total, Z_IB_total])  # 计算最终的双边敞口矩阵
+    A_IB_ij = X_ij_star * np.max([A_IB_total, Z_IB_total])  # 计算最终的银行间资产矩阵
+    Z_IB_ij = A_IB_ij.T.copy()  # 计算最终的银行间负债矩阵
     return A_IB_ij, Z_IB_ij
 
 # ## 基于以下程序之 Stata 版本翻译成的 Python 版本： #HACK 感觉这个版本不太合适
