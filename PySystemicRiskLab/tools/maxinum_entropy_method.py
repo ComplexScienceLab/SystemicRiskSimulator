@@ -6,13 +6,14 @@
 
 import numpy as np
 
+
 def calculate_bilateral_exposure(IA, IB, TOL):
     N = IA.shape[0]  # 获取银行数量
-    IA = np.sum(IA)  # 计算银行间总资产
-    IB = np.sum(IB)  # 计算银行间总负债
-    if IA != IB:  # 如果总资产不等于总负债
-        IA = np.append(IA, np.max(IB-IA, 0))  # 创建虚拟银行以平衡总资产和总负债
-        IB = np.append(IB, np.max(IA-IB, 0))
+    IA_total = np.sum(IA)  # 计算银行间总资产
+    IB_total = np.sum(IB)  # 计算银行间总负债
+    if IA_total != IB_total:  # 如果总资产不等于总负债
+        IA = np.append(IA, np.max(IB_total - IA_total, 0))  # 创建虚拟银行以平衡总资产和总负债
+        IB = np.append(IB, np.max(IA_total - IB_total, 0))
         N += 1  # 银行数量加1
 
     IA_i_star = IA / np.max([IA, IB])  # 标准化银行间资产负债矩阵
@@ -39,12 +40,10 @@ def calculate_bilateral_exposure(IA, IB, TOL):
 
         t += 1
 
-    X_ij = X_ij_star * np.max([IA, IB])  # 计算最终的双边敞口矩阵
-    return X_ij
-
-
-
-
+    X_ij = X_ij_star * np.max([IA_total, IB_total])  # 计算最终的双边敞口矩阵
+    A_IB_ij = X_ij  # 银行间资产矩阵
+    Z_IB_ij = X_ij.T.copy()  # 银行间负债矩阵
+    return A_IB_ij, Z_IB_ij
 
 # ## 基于以下程序之 Stata 版本翻译成的 Python 版本： #HACK 感觉这个版本不太合适
 # 熵值法通用程序 *********
