@@ -4,7 +4,10 @@
 
 ## 基于《方意_荆中博_2022_外部冲击下系统性金融风险的生成机制》附录一：最大信息熵算法
 
-from PySystemicRiskLab import np
+from PySystemicRiskLab import np, plt, time
+import pandas as pd
+# import lux
+import seaborn as sns
 
 
 def calculate_bilateral_exposure(A_IB, Z_IB):
@@ -23,8 +26,8 @@ def calculate_bilateral_exposure(A_IB, Z_IB):
         A_IB_ij (): 银行间资产矩阵
         Z_IB_ij (): 银行间负债矩阵
     """
-    iteration_threshold = 0.01  # 迭代阈值
-    precition_threshold = 0.0000000000001  # 分母精度阈值
+    iteration_threshold = 1e-1  # 迭代阈值
+    precition_threshold = 1e-8  # 分母精度阈值
 
     N = A_IB.shape[0]  # 获取银行数量
     A_IB_total = np.sum(A_IB)  # 计算银行间总资产
@@ -37,6 +40,24 @@ def calculate_bilateral_exposure(A_IB, Z_IB):
     A_IB_i_star = A_IB / np.max([A_IB, Z_IB])  # 标准化银行间资产负债矩阵
     Z_IB_i_star = Z_IB / np.max([A_IB, Z_IB])
     X_ij_star = np.outer(A_IB_i_star, Z_IB_i_star)  # 初始化准双边敞口，通过外积计算
+
+    # 可视化初始的标准双边敞口矩阵为热力图
+    # 创建热力图的颜色映射方案
+    cmap = sns.diverging_palette(255, 0, s=99, as_cmap=True)
+    cmap.set_bad(color='white')
+
+    # 可视化初始数据之热力图
+    sns.heatmap(X_ij_star, cmap=cmap, vmin=0, vmax=1, cbar=True)
+
+    fig = plt.figure()  # 创建图形对象
+    ax = fig.add_subplot(111)  # 添加子图
+    ax.title('Iteration: 0')
+    ax.xlabel('X-axis')
+    ax.ylabel('Y-axis')
+    ax.show()
+
+    # 添加时间间隔
+    time.sleep(0.5)
 
     t = 1
     while True:
@@ -55,10 +76,35 @@ def calculate_bilateral_exposure(A_IB, Z_IB):
                 denominator = np.sum(X_ij_prev[i, :]) if np.sum(X_ij_prev[i, :]) > precition_threshold else precition_threshold
                 X_ij_star[i, :] = X_ij_prev[i, :] * A_IB_i_star[i] / denominator
 
+        # 可视化迭代数据之热力图
+        # 清除子图内容
+        ax.clear()
+
+        # 创建热力图
+        sns.heatmap(X_ij_star, cmap=cmap, vmin=0, vmax=1, cbar=True)
+
+        # 添加小于0的黑色掩码
+        mask = X_ij_star < 0
+        sns.heatmap(mask, cmap='gray', alpha=0.3, cbar=False, mask=mask)
+
+        # 设置标题和轴标签
+        ax.title('Iteration: {}'.format(t))
+        ax.xlabel('X-axis')
+        ax.ylabel('Y-axis')
+
+        # 显示图像
+        plt.show()
+
+        # 添加时间间隔
+        time.sleep(0.5)
+
         if np.allclose(X_ij_star, X_ij_prev, atol=iteration_threshold):  # 判断是否达到收敛
             break
+        # if np.max(np.abs(X_ij_star - X_ij_prev)) <= iteration_threshold:  # 检查是否满足收敛条件
+        #     break
 
         t += 1
+        # print("第 %s 次迭代。" % t)
 
     # X_ij = X_ij_star * np.max([A_IB_total, Z_IB_total])  # 计算最终的双边敞口矩阵
     A_IB_ij = X_ij_star * np.max([A_IB_total, Z_IB_total])  # 计算最终的银行间资产矩阵
