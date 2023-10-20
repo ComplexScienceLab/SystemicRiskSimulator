@@ -257,5 +257,55 @@ class Tools:
             new_identifier = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
 
             return new_identifier
+        pass  # method
+
+    @classmethod
+    def get_folder_info(cls, workAddress, folder_source, folder_target, suffix_source, suffix_target):
+        """
+        获取文件夹及其子文件信息
+
+        Args:
+            workAddress (str): 工作路径
+            folder_source (str): 源文件夹名称
+            folder_target (str): 目标文件夹名称
+            suffix_source (str): 源文件后缀名
+            suffix_target (str): 目标文件后缀名
+
+        Returns:
+            dict: 文件夹及其子文件信息
+        """
+        rootPath_source = os.path.join(workAddress, folder_source)  # 原始文件根路径
+        rootPath_target = os.path.join(workAddress, folder_target)  # 目标文件根路径
+        fileNamesWithSuffix = [f for f in os.listdir(rootPath_source) if f.endswith(suffix_source)]  # 文件名含后缀名
+        regularPattern = re.compile(f".*[^(\\.{suffix_source})]")
+        fileNames = [re.search(regularPattern, f).group() for f in fileNamesWithSuffix]  # 纯文件名
+        filePath_source = [os.path.join(rootPath_source, f) for f in fileNamesWithSuffix]  # 文件路径
+        filePath_target = [os.path.join(rootPath_target, f"{name}{suffix_target}") for name in fileNames]  # 目标文件路径
+
+        results = {
+            "fileNames": fileNames,
+            "fileNamesWithSuffix": fileNamesWithSuffix,
+            "filePath_source": filePath_source,
+            "filePath_target": filePath_target
+        }
+
+        return results
+        pass  # method
+
+    def get_fields_info(cls, list_tibble):
+        """
+        获取表头字段
+
+        Args:
+            list_tibble (list): 表格列表
+
+        Returns:
+            list: 表头字段列表
+        """
+        list_string_field = []
+        for i in range(len(list_tibble)):
+            list_string_field.append(list_tibble[i].iloc[0, :].astype(str).tolist())
+        return list_string_field
+        pass  # method
 
     pass  # class
