@@ -51,10 +51,10 @@ def calculate_bilateral_exposure(A_IB, Z_IB):
 
     fig = plt.figure()  # 创建图形对象
     ax = fig.add_subplot(111)  # 添加子图
-    ax.title('Iteration: 0')
-    ax.xlabel('X-axis')
-    ax.ylabel('Y-axis')
-    ax.show()
+    ax.set_title('Iteration: 0')
+    ax.set_xlabel('X-axis')
+    ax.set_ylabel('Y-axis')
+    plt.show()
 
     # 添加时间间隔
     time.sleep(0.5)
@@ -88,9 +88,9 @@ def calculate_bilateral_exposure(A_IB, Z_IB):
         sns.heatmap(mask, cmap='gray', alpha=0.3, cbar=False, mask=mask)
 
         # 设置标题和轴标签
-        ax.title('Iteration: {}'.format(t))
-        ax.xlabel('X-axis')
-        ax.ylabel('Y-axis')
+        ax.set_title('Iteration: {}'.format(t))
+        ax.set_xlabel('X-axis')
+        ax.set_ylabel('Y-axis')
 
         # 显示图像
         plt.show()
