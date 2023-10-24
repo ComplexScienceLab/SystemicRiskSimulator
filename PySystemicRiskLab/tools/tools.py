@@ -260,12 +260,12 @@ class Tools:
         pass  # method
 
     @classmethod
-    def get_folder_info(cls, workAddress, folder_source, folder_target, suffix_source, suffix_target):
+    def get_folder_info(cls, work_address, folder_source, folder_target, suffix_source, suffix_target):
         """
         获取文件夹及其子文件信息
 
         Args:
-            workAddress (str): 工作路径
+            work_address (str): 工作路径
             folder_source (str): 源文件夹名称
             folder_target (str): 目标文件夹名称
             suffix_source (str): 源文件后缀名
@@ -274,8 +274,8 @@ class Tools:
         Returns:
             dict: 文件夹及其子文件信息
         """
-        rootPath_source = os.path.join(workAddress, folder_source)  # 原始文件根路径
-        rootPath_target = os.path.join(workAddress, folder_target)  # 目标文件根路径
+        rootPath_source = os.path.join(work_address, folder_source)  # 原始文件根路径
+        rootPath_target = os.path.join(work_address, folder_target)  # 目标文件根路径
         fileNamesWithSuffix = [f for f in os.listdir(rootPath_source) if f.endswith(suffix_source)]  # 文件名含后缀名
         regularPattern = re.compile(f".*[^(\\.{suffix_source})]")
         fileNames = [re.search(regularPattern, f).group() for f in fileNamesWithSuffix]  # 纯文件名
@@ -292,6 +292,7 @@ class Tools:
         return results
         pass  # method
 
+    @classmethod
     def get_fields_info(cls, list_tibble):
         """
         获取表头字段
