@@ -26,8 +26,8 @@ def calculate_bilateral_exposure(A_IB, Z_IB):
         A_IB_ij (): 银行间资产矩阵
         Z_IB_ij (): 银行间负债矩阵
     """
-    iteration_threshold = 1e-1  # 迭代阈值
-    precition_threshold = 1e-8  # 分母精度阈值
+    iteration_threshold = 1e-2  # 迭代阈值
+    precition_threshold = 1e-10  # 分母精度阈值
 
     N = A_IB.shape[0]  # 获取银行数量
     A_IB_total = np.sum(A_IB)  # 计算银行间总资产
@@ -40,6 +40,7 @@ def calculate_bilateral_exposure(A_IB, Z_IB):
     A_IB_i_star = A_IB / np.max([A_IB, Z_IB])  # 标准化银行间资产负债矩阵
     Z_IB_i_star = Z_IB / np.max([A_IB, Z_IB])
     X_ij_star = np.outer(A_IB_i_star, Z_IB_i_star)  # 初始化准双边敞口，通过外积计算
+    # X_ij_star = np.outer(A_IB_i_star, Z_IB_i_star) / np.sum(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
 
     # 可视化初始的标准双边敞口矩阵为热力图
     # 创建热力图的颜色映射方案
@@ -107,8 +108,9 @@ def calculate_bilateral_exposure(A_IB, Z_IB):
         # print("第 %s 次迭代。" % t)
 
     # X_ij = X_ij_star * np.max([A_IB_total, Z_IB_total])  # 计算最终的双边敞口矩阵
-    A_IB_ij = X_ij_star * np.max([A_IB_total, Z_IB_total])  # 计算最终的银行间资产矩阵
-    Z_IB_ij = A_IB_ij.T.copy()  # 计算最终的银行间负债矩阵
+    # A_IB_ij = X_ij_star * np.max([A_IB_total, Z_IB_total])  # 计算最终的银行间资产矩阵
+    A_IB_ij = X_ij_star / X_ij_star.sum() * np.max([A_IB_total, Z_IB_total])  # 计算最终的银行间资产矩阵
+    Z_IB_ij = A_IB_ij.copy().T  # 计算最终的银行间负债矩阵
     return A_IB_ij, Z_IB_ij
 
 # ## 基于以下程序之 Stata 版本翻译成的 Python 版本： #HACK 感觉这个版本不太合适
