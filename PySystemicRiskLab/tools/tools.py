@@ -1,6 +1,6 @@
 "函数区：工具集"
 
-from PySystemicRiskLab import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil
+from PySystemicRiskLab import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil, locale
 from PySystemicRiskLab.core.define.define_type import EnvironmentVariableType
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 
@@ -274,6 +274,7 @@ class Tools:
         Returns:
             dict: 文件夹及其子文件信息
         """
+        locale.setlocale(locale.LC_ALL, 'zh_CN.UTF-8')  # 设置中文拼音排序
         rootPath_source = os.path.join(work_address, folder_source)  # 原始文件根路径
         rootPath_target = os.path.join(work_address, folder_target)  # 目标文件根路径
         fileNamesWithSuffix = [f for f in os.listdir(rootPath_source) if f.endswith(suffix_source)]  # 文件名含后缀名
@@ -281,6 +282,11 @@ class Tools:
         fileNames = [re.search(regularPattern, f).group() for f in fileNamesWithSuffix]  # 纯文件名
         filePath_source = [os.path.join(rootPath_source, f) for f in fileNamesWithSuffix]  # 文件路径
         filePath_target = [os.path.join(rootPath_target, f"{name}{suffix_target}") for name in fileNames]  # 目标文件路径
+        # 排序列表
+        fileNames.sort(key=locale.strxfrm)
+        fileNamesWithSuffix.sort(key=locale.strxfrm)
+        filePath_source.sort(key=locale.strxfrm)
+        filePath_target.sort(key=locale.strxfrm)
 
         results = {
             "fileNames": fileNames,
