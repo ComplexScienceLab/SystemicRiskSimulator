@@ -1,9 +1,10 @@
 """
 结构体：定义各类Agents，基于模式3-1
 """
+import numpy as np
 
 from PySystemicRiskLab import deepcopy
-from PySystemicRiskLab.core.define.define_consts import RANGE1, RANGE2, ZEROS1, ZEROS2, FALSE1, FALSE2, TRUE1, TRUE2
+from PySystemicRiskLab.core.define.define_consts import CONST
 from PySystemicRiskLab.core.define.define_environmentVariables import env
 from PySystemicRiskLab.core.define.define_type import *
 
@@ -40,7 +41,7 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     A_all = np.NaN  # = deepcopy(ZEROS1)  # 总资产 A_all: $A_all=A_IB+A_exIB$
     A_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产加总 A_IB_all
     A_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
-    A_P = np.NaN  # = deepcopy(ZEROS1)  # 银行贷款给生产部门之资产（非流动性资产） A_P
+    A_P = np.NaN  # = deepcopy(ZEROS1)  # 银行贷款给非金融部门（非银行金融部门）之资产（非流动性资产） A_P
     A_Q = np.NaN  # = deepcopy(ZEROS1)  # 银行持有超额准备金（流动性资产） A_Q
     A_R = np.NaN  # = deepcopy(ZEROS1)  # 银行持有法定准备金（非流动性资产） A_R
     A_other = np.NaN  # = deepcopy(ZEROS1)  # 银行持有的其它资产（非流动性资产） A_other
@@ -131,36 +132,36 @@ class BankInterbank(BaseInterAgents):
     """
     银行间邻接矩阵复合类
     """
-    id_agent: IdsType = np.array(deepcopy(RANGE2), dtype=np.int16)  # agent 之间之关联编号 id
-    A_IB = deepcopy(ZEROS2)  # 银行间资产邻接矩阵 A_IB
-    Z_IB = deepcopy(ZEROS2)  # 银行间负债邻接矩阵 Z_IB
-    Lo_IB = deepcopy(ZEROS2)  # 银行间贷款流出邻接矩阵 Lo_IB
-    Li_IB = deepcopy(ZEROS2)  # 银行间贷款流入邻接矩阵 Li_IB
-    Bo_IB = deepcopy(ZEROS2)  # 银行间借款流入邻接矩阵 Bo_IB
-    Bi_IB = deepcopy(ZEROS2)  # 银行间借款流出邻接矩阵 Bi_IB
-    Shock_IB = deepcopy(ZEROS2)  # 银行间冲击 Shock_IB: $Shock_IB=Shock_IB_def+Shock_IB_run$
-    Shock_IB_def = deepcopy(ZEROS2)  # 银行间违约损失冲击 Shock_IB_def
-    Shock_IB_run = deepcopy(ZEROS2)  # 银行间挤兑流动冲击 Shock_IB_run: $Shock_IB_run=Shock_IB_run_ilq+Shock_IB_run_br$
-    Shock_IB_run_ilq = deepcopy(ZEROS2)  # 流动性短缺银行银行间挤兑流动冲击 Shock_IB_run_ilq
-    Shock_IB_run_br = deepcopy(ZEROS2)  # 破产银行银行间挤兑流动冲击 Shock_IB_run_br
-    Loss_IB = deepcopy(ZEROS2)  # 银行间市场冲击损失 Loss_IB
-    Loss_IB_def = deepcopy(ZEROS2)  # 银行间资产负债违约冲击损失 Loss_IB_def
-    Loss_IB_run = deepcopy(TRUE2)  # 银行间负债流动性挤兑冲击损失 Loss_IB_run
-    is_exposure = deepcopy(FALSE2)  # 信息邻接矩阵之于是否有银行间敞口 is_exposure
-    on = deepcopy(TRUE2)  # 信息邻接矩阵之于银行间存在的 is_on
-    off = deepcopy(FALSE2)  # 信息邻接矩阵之于银行间已退出不存在的 is_off
-    hel = deepcopy(FALSE2)  # 信息邻接矩阵之于银行间健康的 is_healthy
-    isv = deepcopy(FALSE2)  # 信息邻接矩阵之于银行间资不抵债的 is_insolvent
-    ilq = np.array([])  # 信息邻接矩阵之于银行间流动性短缺的 is_illiquid
-    br = np.array([])  # 信息邻接矩阵之于银行间破产的 is_bankrupt
-    cre = np.array([])  # 信息列表之于各银行之债权方银行编号 list_creditors
-    deb = np.array([])  # 信息列表之于各银行之债务方银行编号 list_debtors
-    cre_isv = []  # 信息列表之于资不抵债的银行之债权方银行编号 list_creditors_in_insolvent
-    deb_isv = []  # 信息列表之于资不抵债的银行之债务方银行编号 list_debtors_in_insolvent
-    cre_ilq = []  # 信息列表之于流动性短缺的银行之债权方银行编号 list_creditors_in_illiquid
-    deb_ilq = []  # 信息列表之于流动性短缺的银行之债务方银行编号 list_debtors_in_illiquid
-    cre_br = []  # 信息列表之于破产的银行之债权方银行编号 list_creditors_in_bankrupt
-    deb_br = []  # 信息列表之于破产的银行之债务方银行编号 list_debtors_in_bankrupt
+    id_agent = np.NaN  # agent 之间之关联编号 id
+    A_IB = np.NaN  # 银行间资产邻接矩阵 A_IB
+    Z_IB = np.NaN  # 银行间负债邻接矩阵 Z_IB
+    Lo_IB = np.NaN  # 银行间贷款流出邻接矩阵 Lo_IB
+    Li_IB = np.NaN  # 银行间贷款流入邻接矩阵 Li_IB
+    Bo_IB = np.NaN  # 银行间借款流入邻接矩阵 Bo_IB
+    Bi_IB = np.NaN  # 银行间借款流出邻接矩阵 Bi_IB
+    Shock_IB = np.NaN  # 银行间冲击 Shock_IB: $Shock_IB=Shock_IB_def+Shock_IB_run$
+    Shock_IB_def = np.NaN  # 银行间违约损失冲击 Shock_IB_def
+    Shock_IB_run = np.NaN  # 银行间挤兑流动冲击 Shock_IB_run: $Shock_IB_run=Shock_IB_run_ilq+Shock_IB_run_br$
+    Shock_IB_run_ilq = np.NaN  # 流动性短缺银行银行间挤兑流动冲击 Shock_IB_run_ilq
+    Shock_IB_run_br = np.NaN  # 破产银行银行间挤兑流动冲击 Shock_IB_run_br
+    Loss_IB = np.NaN  # 银行间市场冲击损失 Loss_IB
+    Loss_IB_def = np.NaN  # 银行间资产负债违约冲击损失 Loss_IB_def
+    Loss_IB_run = np.NaN  # 银行间负债流动性挤兑冲击损失 Loss_IB_run
+    is_exposure = np.NaN  # 信息邻接矩阵之于是否有银行间敞口 is_exposure
+    on = np.NaN  # 信息邻接矩阵之于银行间存在的 is_on
+    off = np.NaN  # 信息邻接矩阵之于银行间已退出不存在的 is_off
+    hel = np.NaN  # 信息邻接矩阵之于银行间健康的 is_healthy
+    isv = np.NaN  # 信息邻接矩阵之于银行间资不抵债的 is_insolvent
+    ilq = np.NaN  # 信息邻接矩阵之于银行间流动性短缺的 is_illiquid
+    br = np.NaN  # 信息邻接矩阵之于银行间破产的 is_bankrupt
+    cre = np.NaN  # 信息列表之于各银行之债权方银行编号 list_creditors
+    deb = np.NaN  # 信息列表之于各银行之债务方银行编号 list_debtors
+    cre_isv = np.NaN  # 信息列表之于资不抵债的银行之债权方银行编号 list_creditors_in_insolvent
+    deb_isv = np.NaN  # 信息列表之于资不抵债的银行之债务方银行编号 list_debtors_in_insolvent
+    cre_ilq = np.NaN  # 信息列表之于流动性短缺的银行之债权方银行编号 list_creditors_in_illiquid
+    deb_ilq = np.NaN  # 信息列表之于流动性短缺的银行之债务方银行编号 list_debtors_in_illiquid
+    cre_br = np.NaN  # 信息列表之于破产的银行之债权方银行编号 list_creditors_in_bankrupt
+    deb_br = np.NaN  # 信息列表之于破产的银行之债务方银行编号 list_debtors_in_bankrupt
 
     def __init__(self, *args, **kwargs):
         for index, key in enumerate(self.__dir__()):
@@ -192,4 +193,3 @@ class SystemicRiskAgent:
         pass
 
     pass
-

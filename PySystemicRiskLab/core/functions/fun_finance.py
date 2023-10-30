@@ -2,7 +2,7 @@ from PySystemicRiskLab import np, copy, deepcopy
 from PySystemicRiskLab.core.define.define_agents import BankCommercial, BankInterbank
 from PySystemicRiskLab.core.define.define_type import StateType, MoneyType
 from PySystemicRiskLab.core.define.define_environmentVariables import env
-from PySystemicRiskLab.core.define.define_consts import ZEROS1, ZEROS2, LESS1
+from PySystemicRiskLab.core.define.define_consts import CONST
 from PySystemicRiskLab.core.operations.collector import Collector
 # from PySystemicRiskLab.core.operations.executer import Executer
 from PySystemicRiskLab.core.operations.scheduler import Scheduler
@@ -153,16 +153,16 @@ class Finance:
     @classmethod
     def clear_all_transfer(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """清零所有流量变量值"""
-        bank.Lo_IB_all[bankState] = deepcopy(ZEROS1)[bankState]
-        bank.Lo_P[bankState] = deepcopy(ZEROS1)[bankState]
-        bank.Li_IB_all[bankState] = deepcopy(ZEROS1)[bankState]
-        bank.Li_P[bankState] = deepcopy(ZEROS1)[bankState]
-        bank.Bi_IB_all[bankState] = deepcopy(ZEROS1)[bankState]
-        bank.Bi_D[bankState] = deepcopy(ZEROS1)[bankState]
-        bank.Bo_IB_all[bankState] = deepcopy(ZEROS1)[bankState]
-        bank.Bo_D[bankState] = deepcopy(ZEROS1)[bankState]
-        interbank.Lo_IB[interbankState] = deepcopy(ZEROS2)[interbankState]
-        interbank.Bo_IB[interbankState] = deepcopy(ZEROS2)[interbankState]
+        bank.Lo_IB_all[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
+        bank.Lo_P[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
+        bank.Li_IB_all[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
+        bank.Li_P[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
+        bank.Bi_IB_all[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
+        bank.Bi_D[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
+        bank.Bo_IB_all[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
+        bank.Bo_D[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
+        interbank.Lo_IB[interbankState] = CONST(env['num_bank']).ZEROS2.copy()[interbankState]
+        interbank.Bo_IB[interbankState] = CONST(env['num_bank']).ZEROS2.copy()[interbankState]
         pass
 
     ## NOTE：功能函数集：计算冲击。
@@ -386,15 +386,15 @@ class Finance:
     @classmethod
     def calc_B_E_all(cls, bank: BankCommercial, bankList: StateType):  # BUG是否考虑E_all负数？还是手动计算？
         """计算各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
-        bank.E_all[bankList] = bank.A_all[bankList] - bank.Z_all[bankList] - LESS1[bankList]  # 允许E_all为负数
-        # bank.E_all[bankState] = np.maximum(bank.A_all[bankState] - bank.Z_all[bankState] - LESS1[bankState], 0.0)
+        bank.E_all[bankList] = bank.A_all[bankList] - bank.Z_all[bankList] - CONST(env['num_bank']).LESS1[bankList]  # 允许E_all为负数
+        # bank.E_all[bankState] = np.maximum(bank.A_all[bankState] - bank.Z_all[bankState] - CONST(env['num_bank']).LESS1[bankState], 0.0)
         pass
 
     # @classmethod
     # def calc_B_E_all_at_all_bank(cls, bank: BankCommercial, bankState: StateType):  # HACK没有用到过
     #     """计算银行体系内包括已退出银行在内的所有各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
-    #     bank.E_all[:] = bank.A_all - bank.Z_all - LESS1
-    #     # bank.E_all[:] = np.maximum(bank.A_all - bank.Z_all - LESS1, 0.0)
+    #     bank.E_all[:] = bank.A_all - bank.Z_all - CONST(env['num_bank']).LESS1
+    #     # bank.E_all[:] = np.maximum(bank.A_all - bank.Z_all - CONST(env['num_bank']).LESS1, 0.0)
     #     pass
 
     # @classmethod
@@ -456,7 +456,7 @@ class Finance:
             source_state_changes: 示性向量之源状态改变的。
 
         """
-        result = ((bank.E_all >= LESS1) & (bank.A_Q >= LESS1) & (bank.Shock_def_t + LESS1 <= bank.E_all) & (bank.Shock_run_t + LESS1 <= bank.A_Q) & (bank.on))
+        result = ((bank.E_all >= CONST(env['num_bank']).LESS1) & (bank.A_Q >= CONST(env['num_bank']).LESS1) & (bank.Shock_def_t + CONST(env['num_bank']).LESS1 <= bank.E_all) & (bank.Shock_run_t + CONST(env['num_bank']).LESS1 <= bank.A_Q) & (bank.on))
         source_state_changes = (bank.hel != result)
         bank.hel = result
         interbank.hel = (bank.hel & bank.hel.T)
@@ -476,7 +476,7 @@ class Finance:
             source_state_changes: 示性向量之源状态改变的。
 
         """
-        result = (((bank.A_all < bank.Z_all + LESS1) | (bank.E_all < LESS1) | (bank.Shock_def_t + LESS1 > bank.E_all)) & bank.on)
+        result = (((bank.A_all < bank.Z_all + CONST(env['num_bank']).LESS1) | (bank.E_all < CONST(env['num_bank']).LESS1) | (bank.Shock_def_t + CONST(env['num_bank']).LESS1 > bank.E_all)) & bank.on)
         source_state_changes = (bank.isv != result)
         bank.isv = result
         interbank.isv = (bank.isv & bank.isv.T)
@@ -496,7 +496,7 @@ class Finance:
             source_state_changes: 示性向量之源状态改变的。
 
         """
-        result = (((bank.A_Q < LESS1) | (bank.Shock_run_t + LESS1 > bank.A_Q)) & bank.on)
+        result = (((bank.A_Q < CONST(env['num_bank']).LESS1) | (bank.Shock_run_t + CONST(env['num_bank']).LESS1 > bank.A_Q)) & bank.on)
         source_state_changes = (bank.ilq != result)
         bank.ilq = result
         interbank.ilq = (bank.ilq & bank.ilq.T)

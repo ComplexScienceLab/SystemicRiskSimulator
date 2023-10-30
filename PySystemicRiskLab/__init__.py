@@ -39,6 +39,7 @@ from matplotlib.font_manager import FontProperties
 from functools import reduce
 import random
 import string
+import locale
 
 # env = {}
 # env["folderpath_project"] = os.getcwd()
