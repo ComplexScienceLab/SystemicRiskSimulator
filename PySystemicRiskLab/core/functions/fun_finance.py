@@ -380,7 +380,7 @@ class Finance:
     @classmethod
     def together_B_Z_exIB(cls, bank: BankCommercial, bankList: StateType):
         """汇总各银行之非银行间负债``Z_{-IB}``。"""
-        bank.Z_exIB[bankList] = bank.Z_D[bankList] + bank.Z_other[bankList]
+        bank.Z_exIB[bankList] = bank.Z_D[bankList] + bank.Z_CB[bankList] + bank.Z_other[bankList]
         pass
 
     @classmethod
@@ -825,6 +825,7 @@ class Finance:
             - ``A_IB_all``:  已知``A_{IB}[i,: ]``，更新各银行之其余相关的资产负债表变量；
             - ``Z_exIB``:  已知``Z_{exIB}``，更新各银行之其余相关的资产负债表变量；
             - ``Z_D``:  已知``D_{B}``，更新各银行之其余相关的资产负债表变量；
+            - ``Z_CB``:  已知``Z_{CB}``，更新各银行之其余相关的资产负债表变量；
             - ``Z_other``:  已知``Z_{other}``，更新各银行之其余相关的资产负债表变量；
             - ``Z_IB_all``:  已知``Z_{IB}[i,: ]``，更新各银行之其余相关的资产负债表变量；
             - ``E_all and Z_all``:  已知``E_{B}``和``Z_{B}``，更新各银行之其余相关的资产负债表变量；
@@ -1018,7 +1019,7 @@ class Finance:
             cls.together_B_A_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
             cls.update_states(bank, interbank, by_way='insolvent')  # BUG
-        elif by_way == 'Z_exIB' or by_way == 'Z_D' or by_way == 'Z_other':
+        elif by_way == 'Z_exIB' or by_way == 'Z_D' or by_way == 'Z_CB' or by_way == 'Z_other':
             cls.together_B_Z_exIB(bank, bankState)
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
