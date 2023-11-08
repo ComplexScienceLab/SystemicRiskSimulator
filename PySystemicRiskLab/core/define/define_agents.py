@@ -44,12 +44,13 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     A_P = np.NaN  # = deepcopy(ZEROS1)  # 银行贷款给非金融部门（非银行金融部门）之资产（非流动性资产） A_P
     A_Q = np.NaN  # = deepcopy(ZEROS1)  # 银行持有超额准备金（流动性资产） A_Q
     A_R = np.NaN  # = deepcopy(ZEROS1)  # 银行持有法定准备金（非流动性资产） A_R
-    A_other = np.NaN  # = deepcopy(ZEROS1)  # 银行持有的其它资产（非流动性资产） A_other
+    A_other = np.NaN  # = deepcopy(ZEROS1)  # 银行持有的其它资产（NOTE 包括：研究不涉及的资产科目、会计科目之其他资产、不重要且不明确的资产科目） A_other
     Z_all = np.NaN  # = deepcopy(ZEROS1)  # 总负债 Z_all: $Z_total=Z_IB+Z_exIB$
     Z_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债加总 Z_IB_all
-    Z_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间负债 Z_exIB: $Z_exIB=Z_D+Z_other$
+    Z_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间负债 Z_exIB: $Z_exIB=Z_D+Z_CB+Z_other$
+    Z_CB = np.NaN  # = deepcopy(ZEROS1)  # 持有央行之负债 Z_CB
     Z_D = np.NaN  # = deepcopy(ZEROS1)  # 银行获得居民部门存款（非流动性负债） Z_D
-    Z_other = np.NaN  # = deepcopy(ZEROS1)  # 银行持有的其他负债（非流动性负债） Z_other
+    Z_other = np.NaN  # = deepcopy(ZEROS1)  # 银行持有的其他负债（NOTE 包括：研究不涉及的负债科目、会计科目之其他负债、不重要且不明确的负债科目） Z_other
     E_all = np.NaN  # = deepcopy(ZEROS1)  # 所有者权益 E_all
     T_all = np.NaN  # = deepcopy(ZEROS1)  # 总交易流量 Transfer_all: $Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
     Lo_all = np.NaN  # = deepcopy(ZEROS1)  # 总贷款流出（贷款方发款出去） Lo_all: $Lo_all=Lo_IB_all+Lo_exIB$
