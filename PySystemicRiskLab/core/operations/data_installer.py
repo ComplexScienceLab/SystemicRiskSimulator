@@ -26,8 +26,14 @@ class DataInstaller:
     A_data = AgentDataCollection([], [])
 
     @classmethod
-    def set_default_values_to_B_variables(cls):
+    def set_default_values_to_Bank_variables(cls):
+        """
+        设置默认值给银行主体众、银行间主体众变量。
 
+        Returns:
+            bank(BankCommercial): 银行主体众
+            interbank(BankInterbank): 银行间主体众
+        """
         bank: BankCommercial = BankCommercial(
             id_agent=CONST(env['num_bank']).RANGE1.copy(),  # agent 之编号 id
             abbr=np.full((env['num_bank'], 1), ""),  # 缩写 abbr
@@ -150,15 +156,24 @@ class DataInstaller:
     @classmethod
     def set_randomly_values_to_Bank_variables(cls):
         # TODO """随机化初始化银行变量"""
-        # bank, interbank = cls.set_default_values_to_B_variables()
+        # bank, interbank = cls.set_default_values_to_Bank_variables()
         pass
 
         pass
 
     @classmethod
-    def set_imported_values_to_Bank_variables(cls):
-        # TODO """导入数据以初始化银行变量"""
-        # bank, interbank = cls.set_default_values_to_B_variables
+    def set_imported_values_to_Bank_variables(cls,):
+        """
+        导入数据以初始化银行主体众、银行间主体众变量
+
+        Returns:
+            bank(BankCommercial): 银行主体众
+            interbank(BankInterbank): 银行间主体众
+
+        """
+        # NOW """导入数据以初始化银行变量"""
+        bank, interbank = cls.set_default_values_to_Bank_variables
+
         pass
 
     @classmethod
@@ -166,7 +181,7 @@ class DataInstaller:
         """手动设置以初始化银行变量"""
 
         # ## NOTE 当用对象字段数据结构时：
-        # bank, interbank = cls.set_default_values_to_B_variables()
+        # bank, interbank = cls.set_default_values_to_Bank_variables()
         # bank.__dict__ = deepcopy(dict_bankCommercial)
         # interbank.__dict__ = deepcopy(dict_bankInterbank)
 
@@ -206,7 +221,7 @@ class DataInstaller:
         """
 
         if init_method == "only init":
-            BB, IB = cls.set_default_values_to_B_variables()
+            BB, IB = cls.set_default_values_to_Bank_variables()
         elif init_method == "randomly":
             BB, IB = cls.set_randomly_values_to_Bank_variables()  # TODO 按需添加
         elif init_method == "import data":
