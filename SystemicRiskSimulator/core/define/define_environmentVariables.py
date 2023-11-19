@@ -4,7 +4,7 @@
 记得这里发生变更时，要手动检查`Operator.operate_experiment`相关位置是否要更新。
 """
 from SystemicRiskSimulator import os
-from Scripts.settings.set_environment_variables import set_environment_variables
+from Samples.settings.set_environment_variables import set_environment_variables
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
 
