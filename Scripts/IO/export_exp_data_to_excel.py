@@ -39,7 +39,7 @@ logging.info("start")
 # os.chdir("/Users/ethan/LocalFiles/ResearchFile/SystemicRiskSimulator")
 os.getcwd()
 # root_path = os.getcwd()
-root_path = "/Users/ethan/LocalFiles/ResearchFile/SystemicRisk"
+root_path = "/"
 
 
 # %% [markdown]
