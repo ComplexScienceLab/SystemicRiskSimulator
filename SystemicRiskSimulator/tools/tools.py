@@ -27,21 +27,44 @@ class Tools:
     #     pass  # method
 
     @classmethod
-    def dict_to_product_list(cls, d: dict):
-        """
-        各字典之列表型元素转列表，其元素为字典，列表个元素间关系符合笛卡尔积。
-        :param self:
-        :param d:dict:参与转换的字典，字典之每个值都是列表。
-        :return: pdl:list: 笛卡尔积字典列表 product lict list；
-        """
-        t = list(d.values())
-        l = list(itertools.product(*t, repeat=1))
-        pdl = []
-        for v in l:
-            pdl.append(dict(zip(d.keys(), v)))
-            pass
-        return pdl
-        pass  # method
+    class Tools:
+        @classmethod
+        def dict_to_product_list(cls, d: dict) -> list:
+            """
+            将字典的值转换为字典列表，其中列表的元素表示字典的笛卡尔积。输入字典中的每个值都应该是一个列表。
+
+            Args:
+                d (dict): 要转换的字典。
+
+            Returns:
+                list: 表示笛卡尔积的字典列表。
+
+            Example:
+                >>> d = {'a': [1, 2], 'b': [3, 4]}
+                >>> Tools.dict_to_product_list(d)
+                [{'a': 1, 'b': 3}, {'a': 1, 'b': 4}, {'a': 2, 'b': 3}, {'a': 2, 'b': 4}]
+            """
+            t = list(d.values())
+            l = list(itertools.product(*t, repeat=1))
+            pdl = [dict(zip(d.keys(), v)) for v in l]
+            return pdl
+            pass  # def
+        
+    # def dict_to_product_list(cls, d: dict):
+    #     """
+    #     各字典之列表型元素转列表，其元素为字典，列表个元素间关系符合笛卡尔积。
+    #     :param self:
+    #     :param d:dict:参与转换的字典，字典之每个值都是列表。
+    #     :return: pdl:list: 笛卡尔积字典列表 product lict list；
+    #     """
+    #     t = list(d.values())
+    #     l = list(itertools.product(*t, repeat=1))
+    #     pdl = []
+    #     for v in l:
+    #         pdl.append(dict(zip(d.keys(), v)))
+    #         pass
+    #     return pdl
+    #     pass  # method
 
     @classmethod
     def set_experiments_folders(cls, env: EnvironmentVariableType = env, is_datetime: bool = True):
