@@ -40,7 +40,14 @@ from SystemicRiskSimulator.core.operations.operator import Operator
 env['folderpath_project'] = Tools.get_project_rootpath()
 
 ## 生成实验组文件夹用于本批次实验
-env = Tools.set_experiments_folders()
+env['foldername_of_experiments'], env['folderpath_of_experiments'], env['folderpath_of_experiments_output_data'] = Tools.set_experiments_folders(
+    env['type_of_experiments_foldername'],
+    env['folderpath_project'],
+    env['root_dir_of_experiments'],
+    env['foldername_of_experiments_output_data'],
+    env['foldername_prefix_of_experiments'],
+    is_datetime=True
+)
 
 ## 设置日志
 logger = logging.getLogger()

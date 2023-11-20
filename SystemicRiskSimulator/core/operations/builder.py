@@ -31,11 +31,11 @@ class Builder:
         ## 导入相关模块（#NOTE 动态导入，严禁删除）
         ## 导入模型、过程、算法初始态实体之数据内容
         import SystemicRiskSimulator.models.entities_data
-        list_entityData = Tools.import_modules_from_package(env['folderpath_import_modules'], r"entityData_")
+        list_entityData = Tools.import_modules_from_package(env['folderpath_import_modules'], r"entityData_", env['folderpath_project'])
 
         ## 导入模型、过程、算法内容
         import SystemicRiskSimulator.models.contents
-        algorithmContents = Tools.import_modules_from_package(env['folderpath_import_modules'], r"content_")
+        algorithmContents = Tools.import_modules_from_package(env['folderpath_import_modules'], r"content_", env['folderpath_project'])
 
         ## 根据算法实体数据列表之数据，生成相应的算法实体对象，然后组成算法实体列表
         for entityData in list_entityData.values():
@@ -170,10 +170,10 @@ class Builder:
         ## 导入相关模块（#NOTE 动态导入，严禁删除）
         ## 导入模型、过程、算法初始态实体之数据内容
         import SystemicRiskSimulator.models.entities_data
-        env['list_entityData'] = Tools.import_modules_from_package(env['folderpath_import_modules'], r"entityData_")
+        env['list_entityData'] = Tools.import_modules_from_package(env['folderpath_import_modules'], r"entityData_", env['folderpath_project'])
         ## 导入模型、过程、算法内容
         import SystemicRiskSimulator.models.contents
-        env['list_algorithm_contents'] = Tools.import_modules_from_package(env['folderpath_import_modules'], r"content_")
+        env['list_algorithm_contents'] = Tools.import_modules_from_package(env['folderpath_import_modules'], r"content_", env['folderpath_project'])
 
         ## 生成算法内容列表
         algorithmContents = env['list_algorithm_contents']

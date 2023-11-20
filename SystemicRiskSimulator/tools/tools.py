@@ -2,7 +2,7 @@
 
 from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil, locale
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
-from SystemicRiskSimulator.core.define.define_environmentVariables import env
+# from SystemicRiskSimulator.core.define.define_environmentVariables import env
 
 pass  # end import
 
@@ -16,41 +16,29 @@ class Tools:
         else:
             return 0
 
-    # @classmethod
-    # def test_println(cls, content): # TODO 无用，可以删除
-    #     if env['is_test']:
-    #         expr = \
-    #             """
-    #             write
-    #             """
-    #
-    #     pass  # function
-
     @classmethod
-    class Tools:
-        @classmethod
-        def dict_to_product_list(cls, d: dict) -> list:
-            """
-            将字典的值转换为字典列表，其中列表的元素表示字典的笛卡尔积。输入字典中的每个值都应该是一个列表。
+    def dict_to_product_list(cls, d: dict) -> list:
+        """
+        将字典的值转换为字典列表，其中列表的元素表示字典的笛卡尔积。输入字典中的每个值都应该是一个列表。
 
-            Args:
-                d (dict): 要转换的字典。
+        Args:
+            d (dict): 要转换的字典。
 
-            Returns:
-                list: 表示笛卡尔积的字典列表。
+        Returns:
+            list: 表示笛卡尔积的字典列表。
 
-            Example:
-                ```python
-                 d = {'a': [1, 2], 'b': [3, 4]}
-                 Tools.dict_to_product_list(d)
-                [{'a': 1, 'b': 3}, {'a': 1, 'b': 4}, {'a': 2, 'b': 3}, {'a': 2, 'b': 4}]
-                ```
-            """
-            t = list(d.values())
-            l = list(itertools.product(*t, repeat=1))
-            pdl = [dict(zip(d.keys(), v)) for v in l]
-            return pdl
-            pass  # function
+        Example:
+            ```python
+             d = {'a': [1, 2], 'b': [3, 4]}
+             Tools.dict_to_product_list(d)
+            [{'a': 1, 'b': 3}, {'a': 1, 'b': 4}, {'a': 2, 'b': 3}, {'a': 2, 'b': 4}]
+            ```
+        """
+        t = list(d.values())
+        l = list(itertools.product(*t, repeat=1))
+        pdl = [dict(zip(d.keys(), v)) for v in l]
+        return pdl
+        pass  # function
         
     # def dict_to_product_list(cls, d: dict):
     #     """
@@ -69,7 +57,24 @@ class Tools:
     #     pass  # function
 
     @classmethod
-    def set_experiments_folders(cls, env: EnvironmentVariableType = env, is_datetime: bool = True):
+    def set_experiments_folders(cls, type_of_experiments_foldername:str, folderpath_project:str, root_dir_of_experiments:str, foldername_of_experiments_output_data:str, foldername_prefix_of_experiments:str, is_datetime: bool = True):
+        """
+        设置实验文件夹。
+
+        Args:
+            type_of_experiments_foldername (str): 实验文件夹命名方式。取值："default": 默认方式，"set manually": 手动设置方式。默认"default"；
+            folderpath_project (str): 项目文件夹路径
+            root_dir_of_experiments (str): 实验文件夹根路径
+            foldername_of_experiments_output_data (str): 实验导出数据文件夹名称
+            foldername_prefix_of_experiments (str): 实验文件夹前缀名
+            is_datetime (bool): 是否使用日期时间字符串。默认True；
+
+        Returns:
+            foldername_of_experiments (str): 实验文件夹名称
+            folderpath_of_experiments (str): 实验文件夹路径
+            folderpath_of_experiments_output_data (str): 实验导出数据文件夹路径
+        """
+
         ## 设定日期时间字符串
         if is_datetime == True:
             str_datetime = "_" + time.strftime("%Y%m%d%H%M%S")
@@ -78,24 +83,24 @@ class Tools:
             pass
 
         ## 设定前缀字符串
-        if env['foldername_type_of_experiments'] == "default":
+        if type_of_experiments_foldername == "default":
             str_manuallyName = "default"
-        elif env['foldername_type_of_experiments'] == "set manually":
-            str_manuallyName = env['foldername_prefix_of_experiments']
+        elif type_of_experiments_foldername == "set manually":
+            str_manuallyName = foldername_prefix_of_experiments
         else:
-            raise Exception("关键词取值错误！".format(env['foldername_type_of_experiments']))
+            raise Exception("关键词取值错误！".format(type_of_experiments_foldername))
             pass
 
-        env['foldername_of_experiments'] = str_manuallyName + str_datetime
-        env['folderpath_of_experiments'] = Path(env['folderpath_project'], env['root_dir_of_experiments'], env['foldername_of_experiments'])
-        env['folderpath_of_experiments'] = Path(env['folderpath_project'], env['root_dir_of_experiments'], env['foldername_of_experiments'])
+        foldername_of_experiments = str_manuallyName + str_datetime
+        # folderpath_of_experiments = Path(folderpath_project, root_dir_of_experiments, foldername_of_experiments)
+        folderpath_of_experiments = Path(folderpath_project, root_dir_of_experiments, foldername_of_experiments)
 
-        env['folderpath_of_experiments'].mkdir(parents=True, exist_ok=True)  # 创建文件夹
-        env['folderpath_of_experiments_output_data'] = Path(env['folderpath_of_experiments'], env['foldername_of_experiments_output_data'])
-        # cd("$(env['folderpath_of_experiments'])")
-        env['folderpath_of_experiments_output_data'].mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
+        folderpath_of_experiments.mkdir(parents=True, exist_ok=True)  # 创建文件夹 #BUG 如果文件夹已经存在怎么办？
+        folderpath_of_experiments_output_data = Path(folderpath_of_experiments, foldername_of_experiments_output_data)
+        # cd("$(folderpath_of_experiments)")
+        folderpath_of_experiments_output_data.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
 
-        return env
+        return foldername_of_experiments, folderpath_of_experiments, folderpath_of_experiments_output_data
         pass  # function
 
     ## 借鉴来源：[PyCharm项目获取项目路径的方法](https://blog.csdn.net/weixin_42787086/article/details/124625385)
@@ -148,21 +153,21 @@ class Tools:
 
 
     @classmethod
-    def import_modules_from_package(cls, folderpath: str, pattern: str):
+    def import_modules_from_package(cls, folderpath: str, pattern: str,folderpath_project:str):
         """
         从包批量导入模块与方法
 
         Args:
             folderpath: 包所在路径
             pattern: 匹配模式
-            env: 环境变量
+            folderpath_project: 项目文件夹路径
 
         Returns:
-            env += env['list_entityData']
+            list_contents: 内容列表
         """
 
         # folderpath = cls._translate_package_form_path_to_folder_form_path(package_form_path) # NOTE 仅当如果用到以模块形式的包之路径的时候启用。
-        module_form_path_package = cls._translate_folder_form_path_to_package_form_path(folderpath[0])
+        module_form_path_package = cls._translate_folder_form_path_to_package_form_path(folderpath[0],folderpath_project)
 
         ## 遍历以导入内容函数
         idx_file = 0
@@ -191,7 +196,7 @@ class Tools:
         pass  # function
 
     @classmethod
-    def _translate_folder_form_path_to_package_form_path(cls, folder_form_path: str):
+    def _translate_folder_form_path_to_package_form_path(cls, folder_form_path: str,folderpath_project:str):
         """
         转换文件夹形式的包之相对路径为模块形式的包之相对路径
 
@@ -204,7 +209,7 @@ class Tools:
         folder_form_path = Path(folder_form_path)  # 获取包文件夹路径
         pattern = r"[\/\\]"
         repl = r"."
-        return re.sub(pattern, repl, Path(folder_form_path).relative_to(env['folderpath_project']).__str__())
+        return re.sub(pattern, repl, Path(folder_form_path).relative_to(folderpath_project).__str__())
         pass  # function
 
     @classmethod
@@ -248,31 +253,6 @@ class Tools:
             print("文件夹不存在。")
         pass  # function
 
-    # @classmethod
-    # def test_count_loop_in_model(cls, env):
-    #     """
-    #     测试用，计次单个模型连续循环次数。如果超过已经设定的最大连续循环次数，则抛出异常并退出。 #TODO 无用，待删除
-    #
-    #     使用方法：
-    #
-    #     ```python
-    #     env = Tools.test_count_loop_in_model(env)  # BUG 用于临时调试
-    #     ```
-    #
-    #     Args:
-    #         env (dict): 环境变量
-    #
-    #     Returns:
-    #
-    #     """
-    #     ## 如果单个模型连续循环计次超过已经设定的最大连续循环次数，则强制退出
-    #     if env['round'] > env['test_max_num_of_round']:
-    #         logging.error("错误！超过单个模型最大连续循环次数 %s，强制结束运行该模型！", env['test_max_num_of_round'])
-    #         raise Exception("错误！超过单个模型最大连续循环次数 %s，强制结束运行该模型！")
-    #     logging.debug("循环运行到第 %s 步。", str(env['round']))
-    #     env['round'] += 1
-    #     return env
-    #     pass  # function
 
     @classmethod
     def MinMaxScaler(cls, data: list, min_max_range: tuple):
