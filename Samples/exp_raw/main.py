@@ -8,11 +8,32 @@
 
 
 # %% 导入相关包
-from SystemicRiskSimulator import platform, os, logging, warnings
-from SystemicRiskSimulator.core.operations.operator import Operator
-from SystemicRiskSimulator.core.define.define_environmentVariables import env
-from SystemicRiskSimulator.core.define.define_parameterVariables import para
+from SystemicRiskSimulator import platform, Path, logging, warnings, os
 from SystemicRiskSimulator.tools.tools import Tools
+
+folderpaths = {}
+folderpaths['folderpath_settings_environments'] = r"Samples/settings/environments"
+folderpaths['folderpath_settings_parameters'] = r"Samples/settings/parameters"
+folderpaths['folderpath_settings_agents'] = r"Samples/settings/agents"
+
+# from Samples.settings.set_environments_variables import set_environments_variables
+# 如果 settings 有内容，那么就删除，否则就从其他文件夹中复制之后再导入
+Tools.delete_and_recreate_folder(Path("SystemicRiskSimulator/settings/environments"))
+Tools.copy_files_from_other_folders(folderpaths['folderpath_settings_environments'], 'SystemicRiskSimulator/settings/environments')
+from SystemicRiskSimulator.core.define.define_environmentVariables import env
+
+Tools.delete_and_recreate_folder(Path("SystemicRiskSimulator/settings/parameters"))
+Tools.copy_files_from_other_folders(folderpaths['folderpath_settings_parameters'], 'SystemicRiskSimulator/settings/parameters')
+from SystemicRiskSimulator.core.define.define_parameterVariables import para
+
+Tools.delete_and_recreate_folder(Path("SystemicRiskSimulator/settings/agents"))
+Tools.copy_files_from_other_folders(folderpaths['folderpath_settings_agents'], 'SystemicRiskSimulator/settings/agents')
+# from SystemicRiskSimulator.core.define.define_agentVariables import agent
+
+from SystemicRiskSimulator.core.operations.operator import Operator
+
+# from SystemicRiskSimulator.core.define.define_environmentVariables import env
+# from SystemicRiskSimulator.core.define.define_parameterVariables import para
 
 # %% 初始化
 ## 获取项目路径

@@ -5,7 +5,7 @@
 from SystemicRiskSimulator import np
 pass  # end import
 
-set_parameter_variables = dict(
+set_parameters_variables = dict(
 
     ######### 设置参数变量 #########################################
 

@@ -123,6 +123,30 @@ class Tools:
 
         pass  # function
 
+
+    @classmethod
+    def copy_files_from_other_folders(cls, source_folderpath: str, target_folderpath: str):
+        """
+        从指定的文件夹复制其全部的子文件夹及其子文件到目标文件夹。
+
+        Args:
+            folderpath: 文件夹所在路径
+
+        Returns:
+
+        """
+        source_folderpath = Path(source_folderpath)
+        for file in source_folderpath.iterdir():
+            if file.is_dir():
+                shutil.copytree(file, Path(target_folderpath, file.name))
+            else:
+                shutil.copy(file, target_folderpath)
+                pass  # if
+            pass  # for
+        pass  # function
+
+
+
     @classmethod
     def import_modules_from_package(cls, folderpath: str, pattern: str):
         """
@@ -130,6 +154,7 @@ class Tools:
 
         Args:
             folderpath: 包所在路径
+            pattern: 匹配模式
             env: 环境变量
 
         Returns:
@@ -200,7 +225,7 @@ class Tools:
         pass  # function
 
     @classmethod
-    def delete_and_recreate_folder(cls, folderpath):
+    def delete_and_recreate_folder(cls, folderpath, is_auto_confirmation: bool = False):
         """
         删除非空文件夹并重新创建文件夹。
 
@@ -213,7 +238,7 @@ class Tools:
         folder_path = Path(folderpath)
         if folder_path.exists() and folder_path.is_dir():
             confirmation = input("确认要删除文件夹及其内容吗？(y/n): ")
-            if confirmation.lower() == 'y':
+            if confirmation.lower() == 'y' or is_auto_confirmation == True:
                 shutil.rmtree(folder_path)
                 folder_path.mkdir()
                 print("文件夹已成功删除并重新创建。")
