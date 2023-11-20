@@ -313,21 +313,21 @@ class Builder:
         return modelEntities
         pass  # function
 
-    @classmethod
-    def build_entity(cls, entityData: Any):  # HACK 无用
-        """
-        通过实体之数据构造实体对象
-
-        Args:
-            entityData: 实体数据
-
-        Returns:
-            entity: 实体对象（初始态）
-        """
-        entity = None
-        str_build_specific_entity = "Entity(list_entityData)"
-        entity = eval(str_build_specific_entity)
-        return entity
-        pass  # function
+    # @classmethod
+    # def build_entity(cls, entityData: Any):  # TODO 无用删除
+    #     """
+    #     通过实体之数据构造实体对象
+    #
+    #     Args:
+    #         entityData: 实体数据
+    #
+    #     Returns:
+    #         entity: 实体对象（初始态）
+    #     """
+    #     entity = None
+    #     str_build_specific_entity = "Entity(list_entityData)"
+    #     entity = eval(str_build_specific_entity)
+    #     return entity
+    #     pass  # function
 
     pass  # class

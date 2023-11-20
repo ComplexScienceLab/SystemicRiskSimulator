@@ -91,21 +91,5 @@ class ModelInstaller:
         return initEntity, initEntity_name, container_content, content_type
         pass  # function
 
-    # @classmethod
-    # def build_node(cls, entity: Entity):  # HACK 无用
-    #     """
-    #     构建单个节点
-    #
-    #     Args:
-    #         entity (Entity): 实体
-    #
-    #     Returns:
-    #         node: 节点
-    #     """
-    #     is_expand = True if entity.attribute.content_type != "algorithm" else False  # 如果内容类型是算法，则节点是叶子节点，不可展开
-    #     node = Node(tag=entity.attribute.entity_name, expanded=is_expand, data=entity.content)
-    #     node.fpointer = entity.container
-    #     return node
-    #     pass  # function
 
     pass  # class

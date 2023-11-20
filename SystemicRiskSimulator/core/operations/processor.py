@@ -81,7 +81,6 @@ class Processor:
                 for instruction_ifgoto in instructions_ifgoto:  ## 判断每个条件
                     condition = eval(instruction_ifgoto[2]) if instruction_ifgoto[2] is not None else None  # NOTE 其实判断None这个条件是多余的
 
-                    # logging.debug(f"    条件{instruction_ifgoto[2]}是 {condition}") #DEBUG 通用的打印日志，适用于打印所有的条件语句
                     A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1]
                     ## DEBUG 以下是专用的日志，适用于打印当前的条件语句
                     condition_str = instruction_ifgoto[2]
