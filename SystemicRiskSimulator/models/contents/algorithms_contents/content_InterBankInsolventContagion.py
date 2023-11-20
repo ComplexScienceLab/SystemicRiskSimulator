@@ -33,4 +33,4 @@ def content_InterBankInsolventContagion(A: SystemicRiskAgent, para: dict, env: d
     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_def')
 
     return A, env
-    pass  # method
+    pass  # function

@@ -54,7 +54,7 @@ class Scheduler:
             pass  # if
 
         return env
-        pass  # method
+        pass  # function
 
     # @classmethod
     # def schedule_loading(cls, state_of_schedule: StateOfScheduleEnum, index_process: int, index_stage: int, loaded_index_process: int, loaded_index_stage: int, is_process: bool):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
@@ -99,7 +99,7 @@ class Scheduler:
     #         # pass  # if
     #
     #     return state_of_schedule
-    #     pass  # method
+    #     pass  # function
 
     # @classmethod
     # def schedule_stepping(cls, state_of_schedule: StateOfScheduleEnum, step: int, step_size: int):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
@@ -125,7 +125,7 @@ class Scheduler:
     #         is_step = True
     #         pass
     #     return state_of_schedule, step, is_step
-    #     pass  # method
+    #     pass  # function
 
     @classmethod
     def schedule_running(cls, state_of_schedule: StateOfScheduleEnum, env: dict):
@@ -165,7 +165,7 @@ class Scheduler:
         logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
-        pass  # method
+        pass  # function
 
     # @classmethod
     # def schedule_saving(cls, state_of_schedule: StateOfScheduleEnum, index_process: int, index_stage: int, is_process: bool, index_of_schedule_position: tuple):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
@@ -222,7 +222,7 @@ class Scheduler:
     #     logging.debug("                        切换调度状态为%s", state_of_schedule)
     #
     #     return saved_index_process, saved_index_stage, loaded_index_process, loaded_index_stage, state_of_schedule
-    #     pass  # method
+    #     pass  # function
 
     @classmethod
     def schedule_collecting(cls, state_of_schedule: StateOfScheduleEnum, running_mode: str):
@@ -246,7 +246,7 @@ class Scheduler:
         logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
-        pass  # method
+        pass  # function
 
     @classmethod
     def schedule_initializing(cls, state_of_schedule: StateOfScheduleEnum, running_mode: str, env: dict):
@@ -271,7 +271,7 @@ class Scheduler:
         logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
-        pass  # method
+        pass  # function
 
     @classmethod
     def schedule_ending(cls, state_of_schedule: StateOfScheduleEnum):
@@ -289,7 +289,7 @@ class Scheduler:
         logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
-        pass  # method
+        pass  # function
 
     @classmethod
     def schedule_idle(cls, state_of_schedule: StateOfScheduleEnum):
@@ -306,7 +306,7 @@ class Scheduler:
         logging.debug(f"                切换调度状态为{state_of_schedule}，step = {env['step']}，round = {env['round']}，phase = {env['phase']}")
 
         return state_of_schedule
-        pass  # method
+        pass  # function
 
     # @classmethod
     # def schedule_indexing(cls, state_of_schedule: StateOfScheduleEnum, entity: Entity):  # TODO 移走  #HACK 暂时不需要，也还没有做对应重构。
@@ -335,7 +335,7 @@ class Scheduler:
     #     logging.debug("                        切换调度状态为%s", state_of_schedule)
     #
     #     return state_of_schedule, index_of_schedule_position
-    #     pass  # method
+    #     pass  # function
 
     # @classmethod
     # def get_process_index(cls, index_process: int, index_of_schedule_position: tuple):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
@@ -444,7 +444,7 @@ class Scheduler:
     #         pass  # if:
     #
     #     return is_process
-    #     pass  # method
+    #     pass  # function
 
     # @classmethod
     # def is_continue_round(cls, env: dict): #TODO无用，可删除
@@ -456,7 +456,7 @@ class Scheduler:
     #         logging.error("                        超出最大轮次限制，强制结束运作轮次！")
     #         print("                        超出最大轮次限制，强制结束运作轮次！")
     #         pass
-    #     pass  # method
+    #     pass  # function
 
     # @classmethod
     # def is_step(cls, env: dict):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
@@ -464,7 +464,7 @@ class Scheduler:
     #     if ~env['is_step']:
     #         logging.debug("                        暂时跳出模型%s之过程%s之阶段%s。", env['model_name'], env['process_name'], env['stage_name'])
     #         pass
-    #     pass  # method
+    #     pass  # function
 
     # @classmethod
     # def is_continue_process(cls, env: dict): #TODO无用，可删除
@@ -479,7 +479,7 @@ class Scheduler:
     #         env['is_continue_process'] = False
     #         logging.debug("                        不再继续运行过程。")
     #         pass
-    #     pass  # method
+    #     pass  # function
 
     # @classmethod
     # def is_loop(cls, env: dict):  # HACK 暂时不需要。还没有做对应重构，已经不能直接用于当前版本的程序了。
@@ -493,6 +493,6 @@ class Scheduler:
     #         env['is_loop'] = False
     #         logging.debug("                        跳出过程%s之循环。\n", env['process_name'])
     #         pass
-    #     pass  # method
+    #     pass  # function
 
     pass  # class

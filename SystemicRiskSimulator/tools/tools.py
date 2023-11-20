@@ -24,7 +24,7 @@ class Tools:
     #             write
     #             """
     #
-    #     pass  # method
+    #     pass  # function
 
     @classmethod
     class Tools:
@@ -50,7 +50,7 @@ class Tools:
             l = list(itertools.product(*t, repeat=1))
             pdl = [dict(zip(d.keys(), v)) for v in l]
             return pdl
-            pass  # def
+            pass  # function
         
     # def dict_to_product_list(cls, d: dict):
     #     """
@@ -66,7 +66,7 @@ class Tools:
     #         pdl.append(dict(zip(d.keys(), v)))
     #         pass
     #     return pdl
-    #     pass  # method
+    #     pass  # function
 
     @classmethod
     def set_experiments_folders(cls, env: EnvironmentVariableType = env, is_datetime: bool = True):
@@ -96,7 +96,7 @@ class Tools:
         env['folderpath_of_experiments_output_data'].mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
 
         return env
-        pass  # method
+        pass  # function
 
     ## 借鉴来源：[PyCharm项目获取项目路径的方法](https://blog.csdn.net/weixin_42787086/article/details/124625385)
     @classmethod
@@ -121,7 +121,7 @@ class Tools:
                     return path
             path = os.path.dirname(path)
 
-        pass  # method
+        pass  # function
 
     @classmethod
     def import_modules_from_package(cls, folderpath: str, pattern: str):
@@ -163,7 +163,7 @@ class Tools:
 
         return list_contents
 
-        pass  # method
+        pass  # function
 
     @classmethod
     def _translate_folder_form_path_to_package_form_path(cls, folder_form_path: str):
@@ -180,7 +180,7 @@ class Tools:
         pattern = r"[\/\\]"
         repl = r"."
         return re.sub(pattern, repl, Path(folder_form_path).relative_to(env['folderpath_project']).__str__())
-        pass  # method
+        pass  # function
 
     @classmethod
     def _translate_package_form_path_to_folder_form_path(cls, package_form_path: str):
@@ -197,7 +197,7 @@ class Tools:
         repl = r"/"
         result = re.sub(pattern, repl, package_form_path)
         return os.path.abspath(result)
-        pass  # method
+        pass  # function
 
     @classmethod
     def delete_and_recreate_folder(cls, folderpath):
@@ -221,7 +221,7 @@ class Tools:
                 print("操作已取消。")
         else:
             print("文件夹不存在。")
-        pass  # method
+        pass  # function
 
     # @classmethod
     # def test_count_loop_in_model(cls, env):
@@ -247,7 +247,7 @@ class Tools:
     #     logging.debug("循环运行到第 %s 步。", str(env['round']))
     #     env['round'] += 1
     #     return env
-    #     pass  # method
+    #     pass  # function
 
     @classmethod
     def MinMaxScaler(cls, data: list, min_max_range: tuple):
@@ -265,7 +265,7 @@ class Tools:
         transformed_data = ((data_numpy - np.min(data_numpy)) / (np.max(data_numpy) - np.min(data_numpy))) * (min_max_range[1] - min_max_range[0]) + min_max_range[0]
         return (list(transformed_data))
         # list(MinMaxScaler(feature_range=(0.1, 5)).fit_transform(np.asarray(A_IB).reshape(-1, 1)))
-        pass  # method
+        pass  # function
 
     @classmethod
     def generate_unique_identifier(cls):
@@ -282,7 +282,7 @@ class Tools:
             new_identifier = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
 
             return new_identifier
-        pass  # method
+        pass  # function
 
     @classmethod
     def get_folder_info(cls, work_address, folder_source, folder_target, suffix_source, suffix_target):
@@ -321,7 +321,7 @@ class Tools:
         }
 
         return results
-        pass  # method
+        pass  # function
 
     @classmethod
     def get_fields_info(cls, list_tibble):
@@ -338,6 +338,6 @@ class Tools:
         for i in range(len(list_tibble)):
             list_string_field.append(list_tibble[i].iloc[0, :].astype(str).tolist())
         return list_string_field
-        pass  # method
+        pass  # function
 
     pass  # class

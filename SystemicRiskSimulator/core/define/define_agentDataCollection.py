@@ -21,6 +21,6 @@ class AgentDataCollection:
     def __init__(self, BB: pd.DataFrame, IB: pd.DataFrame):
         self.BB = BB
         self.IB = IB
-        pass  # def
+        pass  # function
 
     pass  # class

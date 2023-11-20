@@ -32,7 +32,7 @@ class ModelInstaller:
         ## 生成待运行的模型列表
         return EntityManager.modelEntities
 
-        pass  # method
+        pass  # function
 
     @classmethod
     def build_postorder_traversial(cls, modelEntity: Entity):
@@ -67,7 +67,7 @@ class ModelInstaller:
                 queue_entities[entity.attribute.entity_name] = deepcopy(entity)  # 该节点之内容加入结果集
         return queue_entities
 
-        pass  # method
+        pass  # function
 
     @classmethod
     def get_info_of_init_entity_that_corresponding_of_entity(cls, entity: Entity):  # HACK 无用
@@ -89,7 +89,7 @@ class ModelInstaller:
         content_type = initEntity['property_content']['content_type']
 
         return initEntity, initEntity_name, container_content, content_type
-        pass  # method
+        pass  # function
 
     # @classmethod
     # def build_node(cls, entity: Entity):  # HACK 无用
@@ -106,6 +106,6 @@ class ModelInstaller:
     #     node = Node(tag=entity.attribute.entity_name, expanded=is_expand, data=entity.content)
     #     node.fpointer = entity.container
     #     return node
-    #     pass  # method
+    #     pass  # function
 
     pass  # class

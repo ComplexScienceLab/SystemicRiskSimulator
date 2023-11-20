@@ -43,4 +43,4 @@ def content_ExBankInsolventShock(A: SystemicRiskAgent, para: dict, env: dict):
     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_D')  # 更新资产负债表，通过Z_D或Z_IB_all
 
     return A, env
-    pass  # method
+    pass  # function

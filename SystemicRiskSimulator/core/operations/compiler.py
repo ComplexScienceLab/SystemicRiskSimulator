@@ -246,6 +246,6 @@ class Compiler:
             pass  # for
 
         return instructions
-        pass  # def
+        pass  # function
 
     pass  # class

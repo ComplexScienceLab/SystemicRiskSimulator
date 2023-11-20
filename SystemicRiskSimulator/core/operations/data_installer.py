@@ -151,7 +151,7 @@ class DataInstaller:
         )
 
         return bank, interbank
-        pass  # method
+        pass  # function
 
     @classmethod
     def set_randomly_values_to_Bank_variables(cls):
@@ -194,7 +194,7 @@ class DataInstaller:
             interbank[k] = v  # BUG 需要改成 interbank[k] = v.copy()，否则会出现引用错乱
 
         return bank, interbank
-        pass  # method
+        pass  # function
 
     @classmethod
     def install_data(cls, init_method: str):
@@ -255,7 +255,7 @@ class DataInstaller:
         # )
         cls.initialize_data(A)  # 更新各银行之变量，在第一回合初始时
         return A
-        pass  # method
+        pass  # function
 
     @classmethod
     def initialize_data(cls, A):

@@ -22,4 +22,4 @@ def content_ExBankBankruptContagion(A: SystemicRiskAgent, para: dict, env: dict)
 
     return A, env
 
-    pass  # method
+    pass  # function

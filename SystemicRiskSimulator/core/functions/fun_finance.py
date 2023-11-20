@@ -441,7 +441,7 @@ class Finance:
         bank.on = result
         interbank.on = (bank.on & bank.on.T)
         return source_state_changes
-        pass  # def
+        pass  # function
 
     @classmethod
     def calc_state_healthy(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -461,7 +461,7 @@ class Finance:
         bank.hel = result
         interbank.hel = (bank.hel & bank.hel.T)
         return source_state_changes
-        pass  # def
+        pass  # function
 
     @classmethod
     def calc_state_insolvent(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -481,7 +481,7 @@ class Finance:
         bank.isv = result
         interbank.isv = (bank.isv & bank.isv.T)
         return source_state_changes
-        pass  # def
+        pass  # function
 
     @classmethod
     def calc_state_illiquid(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -501,7 +501,7 @@ class Finance:
         bank.ilq = result
         interbank.ilq = (bank.ilq & bank.ilq.T)
         return source_state_changes
-        pass  # def
+        pass  # function
 
     @classmethod
     def calc_state_bankrupt(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -521,7 +521,7 @@ class Finance:
         bank.br = result
         interbank.br = (bank.br & bank.br.T)
         return source_state_changes
-        pass  # def
+        pass  # function
 
     @classmethod
     def calc_state_off(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -541,7 +541,7 @@ class Finance:
         bank.off = result
         interbank.off = (bank.off & bank.off.T)
         return source_state_changes
-        pass  # def
+        pass  # function
 
     ## #NOTE 以下的几个计算函数将在算法内容中单独使用，不用于联动同步计算。
 
@@ -596,7 +596,7 @@ class Finance:
         """
         bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] | bank.ilq[source_state_changes])
         interbank.hel = (bank.hel & bank.hel.T)
-        pass  # def
+        pass  # function
 
     @classmethod
     def update_state_healthy_from_illiquid(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):
@@ -614,7 +614,7 @@ class Finance:
         """
         bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] | bank.ilq[source_state_changes])
         interbank.hel = (bank.hel & bank.hel.T)
-        pass  # def
+        pass  # function
 
     @classmethod
     def update_state_on_from_off(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):
@@ -632,7 +632,7 @@ class Finance:
         """
         bank.on[source_state_changes] = ~bank.off[source_state_changes]
         interbank.on = (bank.on & bank.on.T)
-        pass  # def
+        pass  # function
 
     @classmethod
     def calc_list_of_relation_in_state_of_banks(cls, interbank: BankInterbank, isState: StateType, goal: str):
@@ -676,7 +676,7 @@ class Finance:
         interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
         interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
 
-        pass  # def
+        pass  # function
 
     @classmethod
     def update_states(cls, bank: BankCommercial, interbank: BankInterbank, by_way: str = 'all'):
@@ -746,7 +746,7 @@ class Finance:
             interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
             pass  # if
 
-        pass  # def
+        pass  # function
 
     ## NOTE 其他功能部分
 
@@ -768,7 +768,7 @@ class Finance:
             else:
                 cls.update_variable_name, cls.update_variable_value = k, v
             pass  # for
-        pass  # def
+        pass  # function
 
     # @Executer.execute #TODO删除
     @classmethod
@@ -1122,6 +1122,6 @@ class Finance:
 
         return bank, interbank
 
-        pass  # method
+        pass  # function
 
     pass  # class

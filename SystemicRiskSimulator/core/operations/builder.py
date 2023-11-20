@@ -152,7 +152,7 @@ class Builder:
             modelAlgorithmEntity.process = compile_process
             pass  # for
 
-        pass  # def
+        pass  # function
 
     @classmethod
     def build_entities_by_node_component(cls, env: EnvironmentVariableType = env):  # FIXME 已经过时
@@ -311,7 +311,7 @@ class Builder:
             pass  # for
 
         return modelEntities
-        pass  # method
+        pass  # function
 
     @classmethod
     def build_entity(cls, entityData: Any):  # HACK 无用
@@ -328,6 +328,6 @@ class Builder:
         str_build_specific_entity = "Entity(list_entityData)"
         entity = eval(str_build_specific_entity)
         return entity
-        pass  # method
+        pass  # function
 
     pass  # class

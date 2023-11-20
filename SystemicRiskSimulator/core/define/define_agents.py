@@ -124,7 +124,7 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
                 setattr(self, key, kwargs[key])
                 pass
             pass
-        pass  # method
+        pass  # function
 
     pass  # class
 
@@ -170,7 +170,7 @@ class BankInterbank(BaseInterAgents):
                 setattr(self, key, kwargs[key])
                 pass
             pass
-        pass  # method
+        pass  # function
 
     pass  # class
 

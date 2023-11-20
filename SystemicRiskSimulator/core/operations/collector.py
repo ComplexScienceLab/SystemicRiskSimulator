@@ -48,7 +48,7 @@ class Collector:
             Collector.export_agent_data(A_data, env)
         else:
             pass
-        pass  # method
+        pass  # function
 
     ## NOTE 当用 Pandas 之数据结构时：
     @classmethod
@@ -241,7 +241,7 @@ class Collector:
         # IB_data_export = A_data.IB.explode(list_columns_for_explode).explode(list_columns_for_explode)  # 展平相关的列，面板化数据框
         # IB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"))  # 导出为csv格式；
 
-        pass  # method
+        pass  # function
 
         # ## NOTE 当用对象字段数据结构时：
         # @classmethod
@@ -408,7 +408,7 @@ class Collector:
         #     IB_data_export.insert(1, 'id_data', np.repeat(range(len(IB_data_export) // env['num_bank'] ** 2), env['num_bank'] ** 2))  # 添加id_data列
         #     IB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
 
-        pass  # method
+        pass  # function
 
     @classmethod
     def export_parameter_data(cls, list_combination_of_para: list, para: dict):
@@ -434,4 +434,4 @@ class Collector:
         df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1, env['num_bank'] + 1)), reps=env['num_experiment']))  # 添加数据项id
         df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
         # df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "paras.csv"), df_combinationOfPara)  # 导出字段列表为csv格式
-        pass  # method
+        pass  # function

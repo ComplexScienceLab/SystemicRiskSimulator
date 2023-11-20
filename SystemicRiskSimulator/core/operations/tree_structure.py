@@ -24,7 +24,7 @@ class Tree:
         self.root_node = EntityManager.create_entity(entity_name='root', node_type={"tree node"})  # 创建根节点
         EntityManager.add_treeNodeEntity(self.root_node)  # 将根节点添加到树节点实体字典中
         self.root_node.attribute.other['parent'] = None
-        pass  # def
+        pass  # function
 
     def get_root(self) -> Entity:
         """
@@ -33,7 +33,7 @@ class Tree:
 
         """
         return self.root_node
-        pass  # def
+        pass  # function
 
     def get_parent(self, item: Union[str, Entity]) -> Union[Entity, None]:
         """
@@ -54,7 +54,7 @@ class Tree:
             logging.info("当前节点是根节点，没有父节点。")
             return None
 
-        pass  # def
+        pass  # function
 
     def get_node_by_id(self, id: str) -> Union[Entity, None]:
         """
@@ -68,7 +68,7 @@ class Tree:
 
         """
         return EntityManager.treeEntities[id] if id in EntityManager.treeEntities else None
-        pass  # def
+        pass  # function
 
     def get_content(self, item: Union[str, Entity]):
         """
@@ -84,7 +84,7 @@ class Tree:
         node = self._distinguish_node_format_and_type(item)
 
         return node.content
-        pass  # def
+        pass  # function
 
     def get_children(self, item: Union[str, Entity]):
         """
@@ -105,7 +105,7 @@ class Tree:
             return []
             pass  # if
 
-        pass  # def
+        pass  # function
 
     def get_child(self, item: Union[str, Entity], child_item: Union[str, Entity]) -> Union[Entity, None]:
         """
@@ -144,7 +144,7 @@ class Tree:
             logging.info(f"节点{node.attribute.entity_name}之子节点不存在。")
             return None
 
-        pass  # def
+        pass  # function
 
     def create_and_add_node(self, id: Union[str, None] = None, entity_name: Union[str, None] = None, content: Union[Entity, None] = None, parent_item: Union[str, Entity, None] = None) -> Entity:
         """
@@ -166,7 +166,7 @@ class Tree:
         self.add_child(child_item=node, parent_item=parent_item)
         return node
 
-        pass  # def
+        pass  # function
 
     def add_child(self, child_item: Union[str, Entity, None], parent_item: Union[str, Entity, None] = None):
         """
@@ -204,7 +204,7 @@ class Tree:
 
         EntityManager.add_treeNodeEntity(child_node)  # 添加到树实体集
 
-        pass  # def
+        pass  # function
 
     def add_children(self, childern: list, parent: Union[str, Entity, None]):
         """
@@ -259,7 +259,7 @@ class Tree:
                 return curr_node
             stack.extend(reversed(curr_node.container))
         return None
-        pass  # def
+        pass  # function
 
     def remove_node(self, node: Entity, is_link_children_node: bool = False) -> bool:
         """
@@ -292,7 +292,7 @@ class Tree:
         EntityManager.treeEntities.pop(node.attribute.id)  # 从树实体集中移除该节点实体
 
         return True  # 有父节点，移除成功
-        pass  # def
+        pass  # function
 
     def preorder_traversal(root_node: Entity) -> list:  # HACK 未做单元测试。虽然需要改成自定义的Stack结构，但是目前不怎么做。
         """
@@ -318,7 +318,7 @@ class Tree:
             pass  # while
 
         return result
-        pass  # def
+        pass  # function
 
     def inorder_traversal(root_node: Entity) -> list:  # HACK 未做单元测试。虽然需要改成自定义的Stack结构，但是目前不怎么做。
         """
@@ -346,7 +346,7 @@ class Tree:
             curr_node = curr_node.container[1] if len(curr_node.container) > 1 else None
 
         return result
-        pass  # def
+        pass  # function
 
     def postorder_traversal(root_node: Entity) -> list:  # HACK 未做单元测试。虽然需要改成自定义的Stack结构，但是目前不怎么做。
         """
@@ -374,7 +374,7 @@ class Tree:
                     stack.append((child, False))
 
         return result
-        pass  # def
+        pass  # function
 
     def print_tree(self, node: Union[Entity, None] = None, info: str = 'entity_name', prefix="", _is_tail=True):  # NOTE 由于目前预计其生成树结构之规模小，因此无需改成非递归的方式。
         """
@@ -418,7 +418,7 @@ class Tree:
         # else:
         #     pass  # if
 
-        pass  # def
+        pass  # function
 
     # def print_tree(self):  # HACK 未能运行起来。后续需要改进。需要广度优先遍历生成前缀字符串。需要前序遍历生成打印顺序。
     #     """
@@ -449,7 +449,7 @@ class Tree:
     #         else:
     #             node =;
     #             stack.pop()
-    #     pass  # def
+    #     pass  # function
 
     def _distinguish_node_format(self, item: Union[str, Entity, None]):
         """
@@ -477,7 +477,7 @@ class Tree:
             return None
             pass  # if
 
-        pass  # def
+        pass  # function
 
     def _distinguish_node_format_and_type(self, item: Union[str, Entity, None]):
         """
@@ -543,7 +543,7 @@ class Tree:
             return None
             pass  # if
 
-    pass  # def
+    pass  # function
 
 
 pass  # class

@@ -36,4 +36,4 @@ def content_ExBankIlliquidShock(A: SystemicRiskAgent, para: dict, env: dict):  #
     Executer.step_update('Shock_IB_run_ilq', A, para, env)  # 更新挤兑流动冲击源头变量Shock_run_t
 
     return A, env
-    pass  # method
+    pass  # function

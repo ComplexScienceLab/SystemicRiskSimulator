@@ -97,6 +97,6 @@ class Entity:
             self.node = None
             pass  # if
 
-        pass  # def
+        pass  # function
 
     pass  # class

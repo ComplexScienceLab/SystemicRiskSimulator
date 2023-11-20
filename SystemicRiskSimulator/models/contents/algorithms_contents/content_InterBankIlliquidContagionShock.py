@@ -46,4 +46,4 @@ def content_InterBankIlliquidContagionShock(A: SystemicRiskAgent, para: dict, en
     # update_states(target='illiquid', source='healthy') # 更新各银行之状态，从健康到流动性短缺
 
     return A, env
-    pass  # method
+    pass  # function

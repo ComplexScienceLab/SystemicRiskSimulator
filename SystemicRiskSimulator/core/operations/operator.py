@@ -46,7 +46,7 @@ class Operator:
 
         return env, EntityManager.modelEntities
 
-        pass  # method
+        pass  # function
 
     @classmethod
     def operate_experiment(cls, env: dict, para: dict, model: Any):
@@ -113,7 +113,7 @@ class Operator:
 
         # if env['state_of_schedule'] == StateOfScheduleEnum.idle:
 
-        pass  # method
+        pass  # function
 
     # @classmethod
     # def operate_running(cls):

@@ -23,7 +23,7 @@ class Stack:
         初始化。
         """
         self.content = []
-        pass  # def
+        pass  # function
 
     def is_empty(self):
         """
@@ -33,7 +33,7 @@ class Stack:
 
         """
         return len(self.content) == 0
-        pass  # def
+        pass  # function
 
     def push(self, items: Union[str, list, Entity]):
         """
@@ -55,7 +55,7 @@ class Stack:
             self.content.extend([item.attribute.id for item in items_list])
             pass  # if
 
-        pass  # def
+        pass  # function
 
     def pop(self) -> Entity:
         """
@@ -67,7 +67,7 @@ class Stack:
             raise Exception("Stack 是空的")
         item_id = self.content.pop()
         return EntityManager.entities[item_id]
-        pass  # def
+        pass  # function
 
     def peek(self) -> Entity:
         """
@@ -79,7 +79,7 @@ class Stack:
             raise Exception("Stack 是空的")
         item_id = self.content[-1]
         return EntityManager.entities[item_id]
-        pass  # def
+        pass  # function
 
     def size(self) -> int:
         """
@@ -88,7 +88,7 @@ class Stack:
             栈的大小。
         """
         return len(self.content)
-        pass  # def
+        pass  # function
 
     def print_stack(self, mode='return'):
         """
@@ -113,4 +113,4 @@ class Stack:
                 pass  # if
             pass  # if
 
-        pass  # def
+        pass  # function

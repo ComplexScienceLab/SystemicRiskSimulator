@@ -52,7 +52,7 @@ class Executer:
         env['phase'] += 1  # 逐相加一
 
         return env
-        pass  # def
+        pass  # function
 
     @classmethod
     def execute_algorithm_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, entity: Entity):
@@ -90,7 +90,7 @@ class Executer:
         logging.debug("    结束执行算法内容。")
 
         return A, A_data, env
-        pass  # method
+        pass  # function
 
     @classmethod
     def execute_branch_entity(cls, node: Entity, agent: SystemicRiskAgent, agentData: AgentDataCollection, para: dict, env: dict):  # HACK 没有适配，已经无用
@@ -119,7 +119,7 @@ class Executer:
         logging.debug("- 出过程：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
 
         return node, agent, agentData, para, env
-        pass  # method
+        pass  # function
 
     @classmethod
     def execute_terminal_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, node: Entity):  # HACK 没有适配，已经无用
@@ -154,6 +154,6 @@ class Executer:
         logging.debug("- - 结束阶段：%s %s", algorithmEntity.attribute.text_name, algorithmEntity.attribute.entity_name)
 
         return A, A_data, env
-        pass  # method
+        pass  # function
 
     pass  # class

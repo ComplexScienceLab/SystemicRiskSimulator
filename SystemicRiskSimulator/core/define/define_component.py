@@ -95,7 +95,7 @@ class AttributeComponent:
                 pass  # for
             pass  # if
 
-        pass  # method
+        pass  # function
 
     pass  # class
 
@@ -132,7 +132,7 @@ class ContainerComponent:
             container: 容器之内容
         """
         self.container = container if container is not None else None
-        pass  # method
+        pass  # function
 
     pass  # class
 
@@ -151,7 +151,7 @@ class ProcessComponent:
             process: 过程之内容
         """
         self.process = process if process is not None else None
-        pass  # method
+        pass  # function
 
     pass  # class
 
@@ -170,7 +170,7 @@ class ExecuteComponent:
             execute: 执行之内容
         """
         self.execute = execute if execute is not None else None
-        pass  # method
+        pass  # function
 
     pass  # class
 
@@ -189,7 +189,7 @@ class NodeComponent:
             node: 节点之内容
         """
         self.node = node if node is not None else None
-        pass  # method
+        pass  # function
 
     pass  # class
 
@@ -208,6 +208,6 @@ class ConditionComponent:
             condition: 条件之内容
         """
         self.condition = condition if condition is not None else None
-        pass  # method
+        pass  # function
 
     pass  # class

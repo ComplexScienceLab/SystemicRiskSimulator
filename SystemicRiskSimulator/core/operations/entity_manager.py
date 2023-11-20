@@ -209,7 +209,7 @@ class EntityManager:
         del entity
         logging.info(f"已删除实体。id：{id}，名称：{name}。")
 
-        pass  # def
+        pass  # function
 
     @classmethod
     def add_entity(cls, entity: Entity):
@@ -224,7 +224,7 @@ class EntityManager:
         """
         cls.entities.update({entity.attribute.id: entity})
         logging.info(f"已添加实体到 entities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
-        pass  # def
+        pass  # function
 
     @classmethod
     def add_treeNodeEntity(cls, entity: Entity):
@@ -242,7 +242,7 @@ class EntityManager:
         ):
             cls.treeEntities.update({entity.attribute.id: entity})
             logging.info(f"已添加实体到 treeEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
-        pass  # def
+        pass  # function
 
     @classmethod
     def add_algorithmEntity(cls, entity: Entity):
@@ -270,7 +270,7 @@ class EntityManager:
         ):
             cls.algorithmEntities.update({entity.attribute.entity_name: entity})
             logging.info(f"已添加实体到 algorithmEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
-        pass  # def
+        pass  # function
 
     @classmethod
     def add_modelAlgorithmEntity(cls, entity: Entity):
@@ -294,7 +294,7 @@ class EntityManager:
         ):
             cls.modelAlgorithmEntities.update({entity.attribute.entity_name: entity})
             logging.info(f"已添加实体到 modelAlgorithmEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
-        pass  # def
+        pass  # function
 
     @classmethod
     def add_modelEntity(cls, entity: Entity):
@@ -321,7 +321,7 @@ class EntityManager:
         ):
             cls.modelEntities.update({entity.attribute.entity_name: entity})
             logging.info(f"已添加实体到 modelEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
-        pass  # def
+        pass  # function
 
     @classmethod
     def _distinguish_is_need_create_new_id(cls, id: Union[str, None]) -> bool:
@@ -345,6 +345,6 @@ class EntityManager:
             return False
             pass  # if
 
-        pass  # def
+        pass  # function
 
     pass  # class

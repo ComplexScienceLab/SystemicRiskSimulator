@@ -101,7 +101,7 @@ class Processor:
 
         return model, A, A_data, para, env
 
-        pass  # def
+        pass  # function
 
     @classmethod
     def process_entity_by_node_component(cls, node: Entity, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict):
@@ -222,7 +222,7 @@ class Processor:
             pass  # if
 
         return node, A, A_data, para, env
-        pass  # method
+        pass  # function
 
     # @classmethod
     # def process_processEntity(cls, entity: Entity):
@@ -230,7 +230,7 @@ class Processor:
     #     Args:
     #         entity ():
     #     """
-    #     pass  # method
+    #     pass  # function
 
     # @classmethod
     # def process_conditionEntity(cls, entity: Entity):  # 处理过程类型的实体之条件
@@ -242,6 +242,6 @@ class Processor:
     #     out_flow_entity = entity.process[conditions.index(True)]['flow']
     #
     #     return conditions, out_flow_entity
-    #     pass  # method
+    #     pass  # function
 
     pass  # class

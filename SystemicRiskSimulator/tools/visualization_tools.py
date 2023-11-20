@@ -97,7 +97,7 @@ def get_graph_data_info(time: int, df_BB: pd.DataFrame, df_IB: pd.DataFrame, env
     data['vertices_label'] = [data['banks_name'][i] + '\n' + str(round(data['vertices_data_value'][i])) for i in data['vertices']]
 
     return data
-    pass  # def
+    pass  # function
 
 
 def draw_interbank_flow_graph(data: dict, env: dict):
@@ -178,7 +178,7 @@ def draw_interbank_flow_graph(data: dict, env: dict):
     # plt.close()  # 关闭图像
 
     return fig
-    pass  # def
+    pass  # function
 
 
 def get_one_bank_accounts_data(df_BB: pd.DataFrame, time: int, id_agent: int, env: dict):
@@ -286,7 +286,7 @@ def get_one_bank_accounts_data(df_BB: pd.DataFrame, time: int, id_agent: int, en
         },
     }
     return accounts
-    pass  # def
+    pass  # function
 
 
 ## 绘制单个银行资产负债表
@@ -448,4 +448,4 @@ def draw_one_bank_BalanceSheet(accounts_data: dict, env: dict, width: int = 600,
         pass  # for
 
     return balanceSheet_svg
-    pass  # def
+    pass  # function
