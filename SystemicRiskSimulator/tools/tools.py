@@ -2,6 +2,7 @@
 
 from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil, locale
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
+
 # from SystemicRiskSimulator.core.define.define_environmentVariables import env
 
 pass  # end import
@@ -39,7 +40,7 @@ class Tools:
         pdl = [dict(zip(d.keys(), v)) for v in l]
         return pdl
         pass  # function
-        
+
     # def dict_to_product_list(cls, d: dict):
     #     """
     #     各字典之列表型元素转列表，其元素为字典，列表个元素间关系符合笛卡尔积。
@@ -57,16 +58,16 @@ class Tools:
     #     pass  # function
 
     @classmethod
-    def set_experiments_folders(cls, type_of_experiments_foldername:str, folderpath_project:str, root_dir_of_experiments:str, foldername_of_experiments_output_data:str, foldername_prefix_of_experiments:str, is_datetime: bool = True):
+    def set_experiments_folders(cls, folderpath_project: str, root_dir_of_experiments: str, foldername_of_experiments_output_data: str, foldername_prefix_of_experiments: str, type_of_experiments_foldername: str = "default", is_datetime: bool = True):
         """
         设置实验文件夹。
 
         Args:
-            type_of_experiments_foldername (str): 实验文件夹命名方式。取值："default": 默认方式，"set manually": 手动设置方式。默认"default"；
             folderpath_project (str): 项目文件夹路径
             root_dir_of_experiments (str): 实验文件夹根路径
             foldername_of_experiments_output_data (str): 实验导出数据文件夹名称
             foldername_prefix_of_experiments (str): 实验文件夹前缀名
+            type_of_experiments_foldername (str): 实验文件夹命名方式。取值："default": 默认方式，"set manually": 手动设置方式。默认"default"；
             is_datetime (bool): 是否使用日期时间字符串。默认True；
 
         Returns:
@@ -92,7 +93,7 @@ class Tools:
             pass
 
         foldername_of_experiments = str_manuallyName + str_datetime
-        # folderpath_of_experiments = Path(folderpath_project, root_dir_of_experiments, foldername_of_experiments)
+        # folderpath_of_experiments = Path(str_folderpath_project, root_dir_of_experiments, foldername_of_experiments)
         folderpath_of_experiments = Path(folderpath_project, root_dir_of_experiments, foldername_of_experiments)
 
         folderpath_of_experiments.mkdir(parents=True, exist_ok=True)  # 创建文件夹 #BUG 如果文件夹已经存在怎么办？
@@ -128,53 +129,51 @@ class Tools:
 
         pass  # function
 
-
     @classmethod
-    def copy_files_from_other_folders(cls, source_folderpath: str, target_folderpath: str):
+    def copy_files_from_other_folders(cls, str_source_folderpath: str, str_target_folderpath: str):
         """
         从指定的文件夹复制其全部的子文件夹及其子文件到目标文件夹。
 
         Args:
-            folderpath: 文件夹所在路径
+            str_source_folderpath (str): 源文件夹相对路径字符串
+            str_target_folderpath (str): 目标文件夹相对路径字符串
 
         Returns:
-
+            None
         """
-        source_folderpath = Path(source_folderpath)
-        for file in source_folderpath.iterdir():
+        str_source_folderpath = Path(Tools.get_project_rootpath(), str_source_folderpath)
+        for file in str_source_folderpath.iterdir():
             if file.is_dir():
-                shutil.copytree(file, Path(target_folderpath, file.name))
+                shutil.copytree(file, Path(Tools.get_project_rootpath(), str_target_folderpath, file.name))
             else:
-                shutil.copy(file, target_folderpath)
+                shutil.copy(file, Path(Tools.get_project_rootpath(), str_target_folderpath))
                 pass  # if
             pass  # for
         pass  # function
 
-
-
     @classmethod
-    def import_modules_from_package(cls, folderpath: str, pattern: str,folderpath_project:str):
+    def import_modules_from_package(cls, str_folderpath: str, pattern: str, str_folderpath_project: str):
         """
         从包批量导入模块与方法
 
         Args:
-            folderpath: 包所在路径
-            pattern: 匹配模式
-            folderpath_project: 项目文件夹路径
+            str_folderpath (str): 包所在路径字符串
+            pattern (str): 匹配模式
+            str_folderpath_project (str): 项目文件夹路径字符串
 
         Returns:
             list_contents: 内容列表
         """
 
-        # folderpath = cls._translate_package_form_path_to_folder_form_path(package_form_path) # NOTE 仅当如果用到以模块形式的包之路径的时候启用。
-        module_form_path_package = cls._translate_folder_form_path_to_package_form_path(folderpath[0],folderpath_project)
+        # str_folderpath = cls._translate_package_form_path_to_folder_form_path(str_package_form_path) # NOTE 仅当如果用到以模块形式的包之路径的时候启用。
+        module_form_path_package = cls._translate_folder_form_path_to_package_form_path(str_folderpath[0], str_folderpath_project)
 
         ## 遍历以导入内容函数
         idx_file = 0
         list_files = []  # 文件列表
         list_contents = {}  # 内容列表
 
-        for module_finder_01, name_01, is_pkg in pkgutil.walk_packages([folderpath[0].__str__()]):
+        for module_finder_01, name_01, is_pkg in pkgutil.walk_packages([str_folderpath[0].__str__()]):
             if is_pkg:  # 如果路径下面还有一级子文件夹
                 for module_finder_02, name_02, _ in pkgutil.iter_modules([Path(module_finder_01.path).joinpath(name_01).__str__()]):
                     list_files.append(importlib.import_module("." + name_02, module_form_path_package + "." + Path(module_finder_02.path).name))
@@ -184,7 +183,7 @@ class Tools:
                                 list_contents.update({name_02: list_files[idx_file].__dict__.get(content)})
                     idx_file += 1
             else:  # 如果路径下面没有子文件夹
-                # for module_finder, name_01, _ in pkgutil.iter_modules([folderpath[0].__str__()]):
+                # for module_finder, name_01, _ in pkgutil.iter_modules([str_folderpath[0].__str__()]):
                 list_files.append(importlib.import_module("." + name_01, module_form_path_package))
                 for content in dir(list_files[idx_file]):
                     if not content.startswith("__"):
@@ -196,63 +195,71 @@ class Tools:
         pass  # function
 
     @classmethod
-    def _translate_folder_form_path_to_package_form_path(cls, folder_form_path: str,folderpath_project:str):
+    def _translate_folder_form_path_to_package_form_path(cls, str_folder_form_path: str, str_folderpath_project: str):
         """
         转换文件夹形式的包之相对路径为模块形式的包之相对路径
 
         Args:
-            folder_form_path (): 文件夹形式的包之相对路径
+            str_folder_form_path (str): 文件夹形式的包之路径字符串
+            str_folderpath_project (str): 项目文件夹路径字符串
 
         Returns: 模块形式的包之相对路径
 
         """
-        folder_form_path = Path(folder_form_path)  # 获取包文件夹路径
+        str_folder_form_path = Path(str_folder_form_path)  # 获取包文件夹路径
         pattern = r"[\/\\]"
         repl = r"."
-        return re.sub(pattern, repl, Path(folder_form_path).relative_to(folderpath_project).__str__())
+        return re.sub(pattern, repl, Path(str_folder_form_path).relative_to(str_folderpath_project).__str__())
         pass  # function
 
     @classmethod
-    def _translate_package_form_path_to_folder_form_path(cls, package_form_path: str):
+    def _translate_package_form_path_to_folder_form_path(cls, str_package_form_path: str):
         """
         转换模块形式的包之相对路径为文件夹形式的包之绝对路径
 
         Args:
-            package_form_path (str): 以模块形式的包之路径
+            str_package_form_path (str): 以模块形式的包之路径字符串
 
         Returns: 包所在的绝对路径
 
         """
         pattern = r"\."
         repl = r"/"
-        result = re.sub(pattern, repl, package_form_path)
+        result = re.sub(pattern, repl, str_package_form_path)
         return os.path.abspath(result)
         pass  # function
 
     @classmethod
-    def delete_and_recreate_folder(cls, folderpath, is_auto_confirmation: bool = False):
+    def _delete_and_recreate_folder(cls, str_folderpath, is_auto_confirmation: bool = False):
         """
         删除非空文件夹并重新创建文件夹。
 
         这个功能比较危险，因为会删除非空文件夹，所以要求用户确认操作。
 
         Args:
-            folderpath (Path): 文件夹路径
+            str_folderpath (str): 文件夹相对路径字符串
 
         """
-        folder_path = Path(folderpath)
+        confirmation = 'n'
+        folder_path = Path(Tools.get_project_rootpath(), str_folderpath)
         if folder_path.exists() and folder_path.is_dir():
-            confirmation = input("确认要删除文件夹及其内容吗？(y/n): ")
-            if confirmation.lower() == 'y' or is_auto_confirmation == True:
-                shutil.rmtree(folder_path)
-                folder_path.mkdir()
-                print("文件夹已成功删除并重新创建。")
+            if len(list(folder_path.glob('*'))) > 0:
+                if is_auto_confirmation == True:
+                    confirmation = 'y'
+                else:
+                    confirmation = input(f"确认要删除文件夹{str_folderpath}及其内容吗？(y/n): ")
+
+                if confirmation.lower() == 'y':
+                    shutil.rmtree(folder_path)
+                    folder_path.mkdir()
+                    print("文件夹已成功删除并重新创建。")
+                else:
+                    print("操作已取消。")
             else:
-                print("操作已取消。")
+                print("文件夹为空，无需删除。")
         else:
             print("文件夹不存在。")
         pass  # function
-
 
     @classmethod
     def MinMaxScaler(cls, data: list, min_max_range: tuple):

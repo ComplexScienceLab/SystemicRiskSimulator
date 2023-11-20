@@ -18,16 +18,16 @@ folderpaths['folderpath_settings_agents'] = r"Samples/settings/agents"
 
 # from Samples.settings.set_environments_variables import set_environments_variables
 # 如果 settings 有内容，那么就删除，否则就从其他文件夹中复制之后再导入
-Tools.delete_and_recreate_folder(Path("SystemicRiskSimulator/settings/environments"))
-Tools.copy_files_from_other_folders(folderpaths['folderpath_settings_environments'], 'SystemicRiskSimulator/settings/environments')
+Tools._delete_and_recreate_folder("SystemicRiskSimulator/settings/environments", is_auto_confirmation=True)
+Tools.copy_files_from_other_folders(folderpaths['folderpath_settings_environments'], "SystemicRiskSimulator/settings/environments")
 from SystemicRiskSimulator.core.define.define_environmentVariables import env
 
-Tools.delete_and_recreate_folder(Path("SystemicRiskSimulator/settings/parameters"))
-Tools.copy_files_from_other_folders(folderpaths['folderpath_settings_parameters'], 'SystemicRiskSimulator/settings/parameters')
+Tools._delete_and_recreate_folder("SystemicRiskSimulator/settings/parameters", is_auto_confirmation=True)
+Tools.copy_files_from_other_folders(folderpaths['folderpath_settings_parameters'], "SystemicRiskSimulator/settings/parameters")
 from SystemicRiskSimulator.core.define.define_parameterVariables import para
 
-Tools.delete_and_recreate_folder(Path("SystemicRiskSimulator/settings/agents"))
-Tools.copy_files_from_other_folders(folderpaths['folderpath_settings_agents'], 'SystemicRiskSimulator/settings/agents')
+Tools._delete_and_recreate_folder("SystemicRiskSimulator/settings/agents", is_auto_confirmation=True)
+Tools.copy_files_from_other_folders(folderpaths['folderpath_settings_agents'], "SystemicRiskSimulator/settings/agents")
 # from SystemicRiskSimulator.core.define.define_agentVariables import agent
 
 from SystemicRiskSimulator.core.operations.operator import Operator
@@ -40,14 +40,7 @@ from SystemicRiskSimulator.core.operations.operator import Operator
 env['folderpath_project'] = Tools.get_project_rootpath()
 
 ## 生成实验组文件夹用于本批次实验
-env['foldername_of_experiments'], env['folderpath_of_experiments'], env['folderpath_of_experiments_output_data'] = Tools.set_experiments_folders(
-    env['type_of_experiments_foldername'],
-    env['folderpath_project'],
-    env['root_dir_of_experiments'],
-    env['foldername_of_experiments_output_data'],
-    env['foldername_prefix_of_experiments'],
-    is_datetime=True
-)
+env['foldername_of_experiments'], env['folderpath_of_experiments'], env['folderpath_of_experiments_output_data'] = Tools.set_experiments_folders(env['folderpath_project'], env['root_dir_of_experiments'], env['foldername_of_experiments_output_data'], env['foldername_prefix_of_experiments'], env['type_of_experiments_foldername'], is_datetime=True)
 
 ## 设置日志
 logger = logging.getLogger()

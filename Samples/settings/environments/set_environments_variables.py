@@ -9,7 +9,7 @@
 set_environments_variables = dict(
 
     init_method="set manually",  # 初始化数据方式；
-    foldername_type_of_experiments="set manually",  # 设置实验文件夹命名方式。默认"default"；
+    type_of_experiments_foldername="set manually",  # 设置实验文件夹命名方式。默认"default"；
     foldername_prefix_of_experiments="test",  # 手动设置实验文件夹前缀名。默认"default"；
     root_dir_of_experiments="data/sims",  # 手动设置实验文件夹根路径。默认"/data/sims/"；
     foldername_of_experiments_output_data="exp_output_data",  # 手动设置实验导出数据文件夹名称。

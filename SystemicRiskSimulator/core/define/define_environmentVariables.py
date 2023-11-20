@@ -59,7 +59,7 @@ env['test_max_num_of_round'] = None,  # 处理最大回合数（测试用）；
 
 ###########################
 
-env.update(set_environment_variables)  # 更新环境变量设置项
+env.update(set_environments_variables)  # 更新环境变量设置项
 
 if __name__ == "__main__":
     print(env)
