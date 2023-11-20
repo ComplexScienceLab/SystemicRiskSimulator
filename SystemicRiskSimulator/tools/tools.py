@@ -40,9 +40,11 @@ class Tools:
                 list: 表示笛卡尔积的字典列表。
 
             Example:
-                >>> d = {'a': [1, 2], 'b': [3, 4]}
-                >>> Tools.dict_to_product_list(d)
+                ```python
+                 d = {'a': [1, 2], 'b': [3, 4]}
+                 Tools.dict_to_product_list(d)
                 [{'a': 1, 'b': 3}, {'a': 1, 'b': 4}, {'a': 2, 'b': 3}, {'a': 2, 'b': 4}]
+                ```
             """
             t = list(d.values())
             l = list(itertools.product(*t, repeat=1))
