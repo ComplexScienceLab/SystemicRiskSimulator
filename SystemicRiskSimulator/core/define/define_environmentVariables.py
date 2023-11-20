@@ -3,8 +3,7 @@
 
 记得这里发生变更时，要手动检查`Operator.operate_experiment`相关位置是否要更新。
 """
-from SystemicRiskSimulator import os
-from Samples.settings.set_environment_variables import set_environment_variables
+from SystemicRiskSimulator import Path
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
 
@@ -35,7 +34,7 @@ env['A_data'] = None  # 多主体数据
 
 env['model_name'] = ""  # 运行的模型之名称
 env['process_name'] = ""  # 运行的过程之名称；
-env['folderpath_project'] = os.getcwd()  # 获取当前项目路径；
+env['folderpath_project'] = Path.cwd()  # 获取当前项目路径；
 env['folderpath_import_modules'] = ""  # 获取当前需要导入的模块所在总路径；
 
 env['df_BB'] = None  # Pandas格式的银行数据
