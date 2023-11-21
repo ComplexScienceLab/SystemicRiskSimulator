@@ -1,5 +1,5 @@
 "函数区：工具集"
-from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil, locale, Any
+from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil, locale, Union
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
 
 # from SystemicRiskSimulator.core.define.define_environmentVariables import env
@@ -156,15 +156,15 @@ class Tools:
         pass  # function
 
     @classmethod
-    def _copy_files_from_other_folders(cls, folderpath_source: Any(str, Path), folderpath_target: Any(str, Path), is_auto_confirmation: bool = False):
+    def _copy_files_from_other_folders(cls, folderpath_source: Union[str, Path], folderpath_target: Union[str, Path], is_auto_confirmation: bool = False):
         """
         从指定的文件夹复制其全部的子文件夹及其子文件到目标文件夹。
 
         这个功能比较危险，因为可能会出现复制文件夹到其它位置的操作，所以要求用户确认操作。
 
         Args:
-            folderpath_source Any(str, Path): 源文件夹相对路径字符串或者Path对象
-            folderpath_target Any(str, Path): 目标文件夹相对路径字符串或者Path对象
+            folderpath_source Union[str, Path]: 源文件夹相对路径字符串或者Path对象
+            folderpath_target Union[str, Path]: 目标文件夹相对路径字符串或者Path对象
             is_auto_confirmation (bool): 是否自动确认操作。默认False。
 
         Returns:
@@ -184,7 +184,7 @@ class Tools:
             if is_auto_confirmation == True:
                 confirmation = 'y'
             else:
-                confirmation = input(rf"确认要复制文件夹{folderpath_source}及其内容到{folderpath_target}吗？(y/[n]): ")
+                confirmation = input(rf"确认要复制文件夹 {folderpath_source} 及其内容到 {folderpath_target} 吗？(y/[n]): ")
 
             if confirmation.lower() == 'y':
                 for file in folderpath_source.iterdir():
@@ -195,12 +195,12 @@ class Tools:
                         shutil.copy(file, Path(folderpath_target))
                         pass  # if
                     pass  # for
-                print(f"文件夹{folderpath_source}已成功复制到{folderpath_target}。")
+                print(f"文件夹 {folderpath_source.name} 已成功复制到 {folderpath_target.name} ！")
             else:
-                print("操作已取消。")
+                print("复制操作已取消！")
                 pass  # if
         else:
-            print(f"{folderpath_source}文件夹不存在。")
+            print(f"文件夹 {folderpath_source.name} 不存在！")
             pass  # if
 
         pass  # function
@@ -284,14 +284,14 @@ class Tools:
         pass  # function
 
     @classmethod
-    def _delete_and_recreate_folder(cls, folderpath_target: Any(str, Path), is_auto_confirmation: bool = False):
+    def _delete_and_recreate_folder(cls, folderpath_target: Union[str, Path], is_auto_confirmation: bool = False):
         """
         删除非空文件夹并重新创建文件夹。
 
         这个功能比较危险，因为会删除非空文件夹，所以要求用户确认操作。
 
         Args:
-            folderpath_target Any(str, Path): 文件夹相对路径字符串或者Path对象
+            folderpath_target Union[str, Path]: 文件夹相对路径字符串或者Path对象
             is_auto_confirmation (bool): 是否自动确认操作。默认False。
 
         """
@@ -307,18 +307,18 @@ class Tools:
                 if is_auto_confirmation == True:
                     confirmation = 'y'
                 else:
-                    confirmation = input(rf"确认要删除文件夹{folderpath_target}及其内容吗？(y/[n]): ")
+                    confirmation = input(rf"确认要删除文件夹 {folderpath_target} 及其内容吗？(y/[n]): ")
 
                 if confirmation.lower() == 'y':
                     shutil.rmtree(folder_path)
                     folder_path.mkdir()
-                    print("文件夹已成功删除并重新创建。")
+                    print(f"文件夹 {folderpath_target.name} 已成功删除并重新创建！")
                 else:
-                    print("操作已取消。")
+                    print("删除重建操作已取消！")
             else:
-                print("文件夹为空，无需删除。")
+                print(f"文件夹 {folderpath_target.name} 为空，无需删除！")
         else:
-            print("文件夹不存在。")
+            print(f"文件夹 {folderpath_target.name} 不存在！")
         pass  # function
 
     @classmethod

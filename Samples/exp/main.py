@@ -6,15 +6,15 @@
 # #状态/测试
 ##########################################
 
-
-# %% 导入相关包
-from SystemicRiskSimulator import platform, Path, logging, warnings, os
-from SystemicRiskSimulator.tools.tools import Tools
-
+# %% 设置项
 folderpaths = {}
 folderpaths['folderpath_settings_environments'] = r"Samples/settings/environments"
 folderpaths['folderpath_settings_parameters'] = r"Samples/settings/parameters"
 folderpaths['folderpath_settings_agents'] = r"Samples/settings/agents"
+
+# %% 导入相关包
+from SystemicRiskSimulator import platform, logging, warnings, os
+from SystemicRiskSimulator.tools.tools import Tools
 
 # from Samples.settings.set_environments_variables import set_environments_variables
 # 如果 settings 有内容，那么就删除，否则就从其他文件夹中复制之后再导入

@@ -28,7 +28,7 @@ class ModelInstaller:
 
         ## 复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下
         Tools._delete_and_recreate_folder("SystemicRiskSimulator/models", is_auto_confirmation=False)
-        Tools._copy_files_from_other_folders(env['folderpath_models'], "SystemicRiskSimulator/models")
+        Tools._copy_files_from_other_folders(env['folderpath_models'], "SystemicRiskSimulator/models", is_auto_confirmation=False)
 
         ## 导入实体数据，生成实体集、内容集并返回
         # entities = Builder.build_entities_by_node_component(env) #BUG还未适配，暂时用不到
@@ -95,6 +95,5 @@ class ModelInstaller:
 
         return initEntity, initEntity_name, container_content, content_type
         pass  # function
-
 
     pass  # class
