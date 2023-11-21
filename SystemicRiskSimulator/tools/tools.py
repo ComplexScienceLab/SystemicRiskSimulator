@@ -1,6 +1,5 @@
 "函数区：工具集"
-
-from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil, locale
+from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil, locale, Any
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
 
 # from SystemicRiskSimulator.core.define.define_environmentVariables import env
@@ -58,15 +57,20 @@ class Tools:
     #     pass  # function
 
     @classmethod
-    def set_experiments_folders(cls, folderpath_project: str, root_dir_of_experiments: str, foldername_of_experiments_output_data: str, foldername_prefix_of_experiments: str, type_of_experiments_foldername: str = "default", is_datetime: bool = True):
+    def set_experiments_folders(cls, foldername_prefix_of_experiments: str, foldername_of_experiments_output_data: str, str_folderpath_root_dir_of_experiments: str, str_folderpath_models: str, str_folderpath_settings_environments: str, str_folderpath_settings_parameters: str, str_folderpath_settings_agents: str, type_of_experiments_foldername: str = "default", is_datetime: bool = True):
         """
-        设置实验文件夹。
+        设置实验相关的文件夹。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹。
+
+        根据【实验文件夹根路径】、【实验导出数据文件夹名称】、【实验文件夹前缀名】、【实验文件夹命名方式】，生成【实验文件夹名称】、【实验文件夹路径】、【实验导出数据文件夹路径】。
 
         Args:
-            folderpath_project (str): 项目文件夹路径
-            root_dir_of_experiments (str): 实验文件夹根路径
-            foldername_of_experiments_output_data (str): 实验导出数据文件夹名称
             foldername_prefix_of_experiments (str): 实验文件夹前缀名
+            foldername_of_experiments_output_data (str): 实验导出数据文件夹名称
+            str_folderpath_root_dir_of_experiments (str): 实验文件夹根相对路径字符串
+            str_folderpath_models (str): 模型文件夹相对路径字符串
+            str_folderpath_settings_environments (str): 实验设置项之环境设置项文件夹相对路径字符串
+            str_folderpath_settings_parameters (str): 实验设置项之参数设置项文件夹相对路径字符串
+            str_folderpath_settings_agents (str): 实验设置项之实验个体众数据初始化设置项文件夹相对路径字符串
             type_of_experiments_foldername (str): 实验文件夹命名方式。取值："default": 默认方式，"set manually": 手动设置方式。默认"default"；
             is_datetime (bool): 是否使用日期时间字符串。默认True；
 
@@ -76,32 +80,54 @@ class Tools:
             folderpath_of_experiments_output_data (str): 实验导出数据文件夹路径
         """
 
-        ## 设定日期时间字符串
-        if is_datetime == True:
+        ## 设置项目文件夹路径
+        folderpath_project = Tools.get_project_rootpath()
+
+        ## 设定实验结果导出文件夹
+        if is_datetime is True:  # 设定日期时间字符串
             str_datetime = "_" + time.strftime("%Y%m%d%H%M%S")
         else:
             str_datetime = ""
             pass
 
-        ## 设定前缀字符串
-        if type_of_experiments_foldername == "default":
+        if type_of_experiments_foldername == "default":  # 设定前缀字符串
             str_manuallyName = "default"
         elif type_of_experiments_foldername == "set manually":
             str_manuallyName = foldername_prefix_of_experiments
         else:
             raise Exception("关键词取值错误！".format(type_of_experiments_foldername))
-            pass
+            pass  # if
 
         foldername_of_experiments = str_manuallyName + str_datetime
-        # folderpath_of_experiments = Path(str_folderpath_project, root_dir_of_experiments, foldername_of_experiments)
-        folderpath_of_experiments = Path(folderpath_project, root_dir_of_experiments, foldername_of_experiments)
+        # folderpath_of_experiments = Path(str_folderpath_project, folderpath_root_dir_of_experiments, foldername_of_experiments)
+        folderpath_of_experiments = Path(folderpath_project, str_folderpath_root_dir_of_experiments, foldername_of_experiments)
 
-        folderpath_of_experiments.mkdir(parents=True, exist_ok=True)  # 创建文件夹 #BUG 如果文件夹已经存在怎么办？
+        folderpath_of_experiments.mkdir(parents=True, exist_ok=True)  # BUG 如果文件夹已经存在怎么办？
         folderpath_of_experiments_output_data = Path(folderpath_of_experiments, foldername_of_experiments_output_data)
         # cd("$(folderpath_of_experiments)")
         folderpath_of_experiments_output_data.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
 
-        return foldername_of_experiments, folderpath_of_experiments, folderpath_of_experiments_output_data
+        ## 设定实验输入数据文件夹 #TODO
+
+        ## 设定实验设置项文件夹
+        folderpath_settings_environments = Path(folderpath_project, str_folderpath_settings_environments)
+        folderpath_settings_parameters = Path(folderpath_project, str_folderpath_settings_parameters)
+        folderpath_settings_agents = Path(folderpath_project, str_folderpath_settings_agents)
+
+        ## 设定模型文件夹
+        folderpath_models = Path(folderpath_project, str_folderpath_models)
+
+        return (
+            foldername_of_experiments,
+            folderpath_project,
+            folderpath_of_experiments,
+            folderpath_of_experiments_output_data,
+            folderpath_models,
+            folderpath_settings_environments,
+            folderpath_settings_parameters,
+            folderpath_settings_agents,
+        )
+
         pass  # function
 
     ## 借鉴来源：[PyCharm项目获取项目路径的方法](https://blog.csdn.net/weixin_42787086/article/details/124625385)
@@ -130,25 +156,53 @@ class Tools:
         pass  # function
 
     @classmethod
-    def copy_files_from_other_folders(cls, str_source_folderpath: str, str_target_folderpath: str):
+    def _copy_files_from_other_folders(cls, folderpath_source: Any(str, Path), folderpath_target: Any(str, Path), is_auto_confirmation: bool = False):
         """
         从指定的文件夹复制其全部的子文件夹及其子文件到目标文件夹。
 
+        这个功能比较危险，因为可能会出现复制文件夹到其它位置的操作，所以要求用户确认操作。
+
         Args:
-            str_source_folderpath (str): 源文件夹相对路径字符串
-            str_target_folderpath (str): 目标文件夹相对路径字符串
+            folderpath_source Any(str, Path): 源文件夹相对路径字符串或者Path对象
+            folderpath_target Any(str, Path): 目标文件夹相对路径字符串或者Path对象
+            is_auto_confirmation (bool): 是否自动确认操作。默认False。
 
         Returns:
             None
         """
-        str_source_folderpath = Path(Tools.get_project_rootpath(), str_source_folderpath)
-        for file in str_source_folderpath.iterdir():
-            if file.is_dir():
-                shutil.copytree(file, Path(Tools.get_project_rootpath(), str_target_folderpath, file.name))
+
+        confirmation = 'n'
+
+        folderpath_project = Tools.get_project_rootpath()
+
+        if isinstance(folderpath_source, str):
+            folderpath_source = Path(folderpath_project, folderpath_source)
+        if isinstance(folderpath_target, str):
+            folderpath_target = Path(folderpath_project, folderpath_target)
+
+        if folderpath_source.exists() and folderpath_source.is_dir():
+            if is_auto_confirmation == True:
+                confirmation = 'y'
             else:
-                shutil.copy(file, Path(Tools.get_project_rootpath(), str_target_folderpath))
+                confirmation = input(rf"确认要复制文件夹{folderpath_source}及其内容到{folderpath_target}吗？(y/[n]): ")
+
+            if confirmation.lower() == 'y':
+                for file in folderpath_source.iterdir():
+                    if file.is_dir():
+
+                        shutil.copytree(file, Path(folderpath_target, file.name))
+                    else:
+                        shutil.copy(file, Path(folderpath_target))
+                        pass  # if
+                    pass  # for
+                print(f"文件夹{folderpath_source}已成功复制到{folderpath_target}。")
+            else:
+                print("操作已取消。")
                 pass  # if
-            pass  # for
+        else:
+            print(f"{folderpath_source}文件夹不存在。")
+            pass  # if
+
         pass  # function
 
     @classmethod
@@ -230,24 +284,30 @@ class Tools:
         pass  # function
 
     @classmethod
-    def _delete_and_recreate_folder(cls, str_folderpath, is_auto_confirmation: bool = False):
+    def _delete_and_recreate_folder(cls, folderpath_target: Any(str, Path), is_auto_confirmation: bool = False):
         """
         删除非空文件夹并重新创建文件夹。
 
         这个功能比较危险，因为会删除非空文件夹，所以要求用户确认操作。
 
         Args:
-            str_folderpath (str): 文件夹相对路径字符串
+            folderpath_target Any(str, Path): 文件夹相对路径字符串或者Path对象
+            is_auto_confirmation (bool): 是否自动确认操作。默认False。
 
         """
+        folderpath_project = Tools.get_project_rootpath()
+
+        if isinstance(folderpath_target, str):
+            folderpath_target = Path(folderpath_project, folderpath_target)
+
         confirmation = 'n'
-        folder_path = Path(Tools.get_project_rootpath(), str_folderpath)
+        folder_path = Path(folderpath_project, folderpath_target)
         if folder_path.exists() and folder_path.is_dir():
             if len(list(folder_path.glob('*'))) > 0:
                 if is_auto_confirmation == True:
                     confirmation = 'y'
                 else:
-                    confirmation = input(f"确认要删除文件夹{str_folderpath}及其内容吗？(y/n): ")
+                    confirmation = input(rf"确认要删除文件夹{folderpath_target}及其内容吗？(y/[n]): ")
 
                 if confirmation.lower() == 'y':
                     shutil.rmtree(folder_path)
