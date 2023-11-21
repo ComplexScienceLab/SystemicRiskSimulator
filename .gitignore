@@ -10,10 +10,15 @@ venv/
 
 .idea/
 
-!data/exp_raw/test_data
-!data/import_data
-!data/original_data
-!data/tibble_data
+SystemicRiskSimulator/settings
+SystemicRiskSimulator/agents
+SystemicRiskSimulator/models
+SystemicRiskSimulator/data
+
+data/exp_raw/test_data
+data/import_data
+data/original_data
+data/tibble_data
 
 draft/
 
@@ -578,6 +583,7 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+
 
 
 
