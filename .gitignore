@@ -11,14 +11,10 @@ venv/
 .idea/
 
 SystemicRiskSimulator/settings
-SystemicRiskSimulator/agents
 SystemicRiskSimulator/models
 SystemicRiskSimulator/data
 
-data/exp_raw/test_data
-data/import_data
-data/original_data
-data/tibble_data
+data
 
 draft/
 
