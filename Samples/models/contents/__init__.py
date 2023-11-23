@@ -2,4 +2,4 @@
 
 from SystemicRiskSimulator.core.define.define_environmentVariables import env
 
-env['folderpath_import_modules'] = __path__
+env['folderpath_import_modules'] = __path__  # 导入模块文件夹路径

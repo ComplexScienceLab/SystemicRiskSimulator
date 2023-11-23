@@ -1,4 +1,4 @@
-"""外生破产银行间挤兑流动冲击算法"""
+"""外生破产银行间挤兑流动冲击模型"""
 
 ##########################################
 # 状态/开发
@@ -11,10 +11,10 @@ from SystemicRiskSimulator.core.operations.executer import Executer
 pass  # end import
 
 
-# TODO"外生破产银行间挤兑流动冲击算法"
+# TODO"外生破产银行间挤兑流动冲击模型"
 def content_ExBankBankruptContagion(A: SystemicRiskAgent, para: dict, env: dict):
     ## # 外生破产银行间挤兑流动传染
-    # env['stage_name'] = "外生破产银行间挤兑流动冲击算法"
+    # env['stage_name'] = "外生破产银行间挤兑流动冲击模型"
 
     A.BB.br[para['list_Shock_exIB_t']] = para['Shock_exIB_t'][para['list_Shock_exIB_t']]
     Executer.step_update('bankrupt', A, para, env)

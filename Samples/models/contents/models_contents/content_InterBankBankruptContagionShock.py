@@ -1,4 +1,4 @@
-"""破产银行间挤兑流动传染冲击算法"""
+"""破产银行间挤兑流动传染冲击模型"""
 
 from SystemicRiskSimulator import np
 from SystemicRiskSimulator.core.define.define_agents import BankInterbank, BankCommercial, SystemicRiskAgent
@@ -9,7 +9,7 @@ pass  # end import
 
 def content_InterBankBankruptContagionShock(A: SystemicRiskAgent, para: dict, env: dict):
     ## # 破产银行间挤兑流动传染冲击
-    # env['stage_name'] = "破产银行间挤兑流动传染冲击算法"
+    # env['stage_name'] = "破产银行间挤兑流动传染冲击模型"
 
     BankState.update_states(way='any')
     # BankState.update_B_state(A.BB, A.IB, target='bankrupt', source='any') #FIXME

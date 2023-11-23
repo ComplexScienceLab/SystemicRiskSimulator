@@ -1,5 +1,5 @@
 """
-资不抵债银行间违约损失过程算法
+资不抵债银行间违约损失过程模型
 """
 
 content_InterBankInsolvent = \

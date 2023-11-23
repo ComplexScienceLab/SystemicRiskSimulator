@@ -1,15 +1,21 @@
-"""资不抵债银行间违约损失传染算法"""
+"""资不抵债银行间违约损失传染模型"""
 
+<<<<<<< HEAD:PySystemicRiskLab/models/contents/algorithms_contents/content_InterBankInsolventContagion.py
+from PySystemicRiskLab import np
+from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
+from PySystemicRiskLab.core.operations.executer import Executer
+=======
 from SystemicRiskSimulator import np
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.operations.executer import Executer
+>>>>>>> dev:SystemicRiskSimulator/models/contents/algorithms_contents/content_InterBankInsolventContagion.py
 
 pass  # end import
 
 
 def content_InterBankInsolventContagion(A: SystemicRiskAgent, para: dict, env: dict):
     """
-    资不抵债银行间违约损失传染算法
+    资不抵债银行间违约损失传染模型
 
     Args:
         A ():
@@ -20,7 +26,7 @@ def content_InterBankInsolventContagion(A: SystemicRiskAgent, para: dict, env: d
 
     """
 
-    # env['stage_name'] = "资不抵债银行间违约损失传染算法"
+    # env['stage_name'] = "资不抵债银行间违约损失传染模型"
 
     for i in np.where(A.BB.isv[:, 0])[0]:  # 资不抵债银行违约，导致其对各债权银行负债变动，造成银行间违约冲击
         A.IB.Shock_IB_def[A.IB.cre_isv[i], i] = np.abs(A.IB.Z_IB[i, A.IB.cre_isv[i]] * A.BB.Shock_IB_def_s[i] / A.BB.Z_IB_all[i])  # BUG `A.IB.cre` 被改成 `A.IB.cre_isv`；

@@ -33,7 +33,7 @@ set_environments_variables = dict(
     test_max_num_of_round=24,  # 最大运行轮次数（测试用）；
 
     ## 使用的程序版本类型设置：
-    is_use_simple_form_version_algorithm=True,  # 是否使用简化形式的版本的算法形式。默认True。如果是，则表示不采用带有多文件多模块的旧版本的算法表示形式，而是直接采用简化的单文件算法
+    is_use_simple_form_version_model=True,  # 是否使用简化形式的版本的模型形式。默认True。如果是，则表示不采用带有多文件多模块的旧版本的模型表示形式，而是直接采用简化的单文件模型
 
     ###########################
 

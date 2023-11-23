@@ -1,5 +1,5 @@
 """
-外部资产违约损失冲击过程初始态实体
+外部资产违约损失冲击过程模型之初始态
 """
 
 # import here
@@ -11,8 +11,11 @@ entityData_ExBankInsolventShock = dict(
         id="user4010",
         entity_name="ExBankInsolventShock",
         text_name="外部资产违约损失冲击",
-        node_type={"content node"},
-        content_type={"algorithm content"},
+        entity_type={"template entity"},
+        structure_type={"content structure"},
+        container_type={"leaf container"},
+        process_type={"executive process"},
+        content_type={"model content"},
     ),
     execute="content_ExBankInsolventShock",
     process=None,

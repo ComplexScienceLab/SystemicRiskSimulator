@@ -1,5 +1,5 @@
 """
-资不抵债银行资产违约损失冲击过程初始态实体
+资不抵债银行资产违约损失冲击过程模型之初始态
 """
 
 # import here
@@ -11,8 +11,11 @@ entityData_InterBankInsolventShock = dict(
         id="user4020",
         entity_name="InterBankInsolventShock",
         text_name="资不抵债银行资产违约损失冲击",
-        node_type={"content node"},
-        content_type={"algorithm content"},
+        entity_type={"template entity"},
+        structure_type={"content structure"},
+        container_type={"leaf container"},
+        process_type={"executive process"},
+        content_type={"model content"},
     ),
     execute="content_InterBankInsolventShock",
     process=None,

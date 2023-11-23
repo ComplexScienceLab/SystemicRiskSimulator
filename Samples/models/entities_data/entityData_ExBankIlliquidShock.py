@@ -1,5 +1,5 @@
 """
-银行存款挤兑流动冲击过程初始态实体
+银行存款挤兑流动冲击过程模型之初始态
 """
 
 # import here
@@ -11,8 +11,11 @@ entityData_ExBankIlliquidShock = dict(
         id="user4040",
         entity_name="ExBankIlliquidShock",
         text_name="银行存款挤兑流动冲击",
-        node_type={"content node"},
-        content_type={"algorithm content"},
+        entity_type={"template entity"},
+        structure_type={"content structure"},
+        container_type={"leaf container"},
+        process_type={"executive process"},
+        content_type={"model content"},
     ),
     execute="content_ExBankIlliquidShock",
     process=None,

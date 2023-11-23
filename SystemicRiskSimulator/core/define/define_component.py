@@ -17,6 +17,10 @@ class AttributeComponent:
     - id (Union[str, None]): 事物之编号
     - entity_name (Union[str, None]): 事物之名称
     - text_name (Union[str, None]): 事物之文本名称
+    - entity_type (Union[str, None]): 事物之实体类型
+    - structure_type (Union[str, None]): 事物之结构类型
+    - container_type (Union[str, None]): 事物之容器类型
+    - process_type (Union[str, None]): 事物之过程类型
     - content_type (Union[str, None]): 事物之内容类型
     - content_name (Union[str, None]): 事物之内容名称
     - other (Union[dict, Any]): 事物之其他特征
@@ -26,6 +30,10 @@ class AttributeComponent:
     id: Union[str, None]  # 事物之编号
     entity_name: Union[str, None]  # 事物之名称
     text_name: Union[str, None]  # 事物之文本名称
+    entity_type: Union[str, None]  # 事物之实体类型
+    structure_type: Union[str, None]  # 事物之结构类型
+    container_type: Union[str, None]  # 事物之容器类型
+    process_type: Union[str, None]  # 事物之过程类型
     content_type: Union[str, None]  # 事物之内容类型
     content_name: Union[str, None]  # 事物之内容名称
     other: Union[dict, Any]  # 事物之其他特征
@@ -61,13 +69,16 @@ class AttributeComponent:
                 raise ValueError("entity_name不能为空")  # 如果entity_name为空，则报错
                 pass  # if
             self.text_name = attribute['text_name'] if 'text_name' in attribute.keys() else None
-            self.node_type = attribute['node_type'] if 'node_type' in attribute.keys() else None
+            self.entity_type = attribute['entity_type'] if 'entity_type' in attribute.keys() else None
+            self.structure_type = attribute['structure_type'] if 'structure_type' in attribute.keys() else None
+            self.container_type = attribute['container_type'] if 'container_type' in attribute.keys() else None
+            self.process_type = attribute['process_type'] if 'process_type' in attribute.keys() else None
             self.content_type = attribute['content_type'] if 'content_type' in attribute.keys() else None
             self.content_name = attribute['content_name'] if 'content_name' in attribute.keys() else None
             ## 创建其他特征字典
             self.other = dict()
             for k, v in attribute.items():
-                if not (k == "id" or k == "entity_name" or k == "text_name" or k == "node_type" or k == "content_type"):
+                if not (k == "id" or k == "entity_name" or k == "text_name" or k == "entity_type" or k == "structure_type" or k == "container_type" or k == "process_type" or k == "content_type" or k == "content_name"):
                     self.other.update({k: v})
                     pass  # if
                 pass  # for
@@ -83,13 +94,16 @@ class AttributeComponent:
                 raise ValueError("entity_name不能为空")  # 如果entity_name为空，则报错
                 pass  # if
             self.text_name = kwargs['text_name'] if 'text_name' in kwargs.keys() else None
-            self.node_type = kwargs['node_type'] if 'node_type' in kwargs.keys() else None
+            self.entity_type = kwargs['entity_type'] if 'entity_type' in kwargs.keys() else None
+            self.structure_type = kwargs['structure_type'] if 'structure_type' in kwargs.keys() else None
+            self.container_type = kwargs['container_type'] if 'container_type' in kwargs.keys() else None
+            self.process_type = kwargs['process_type'] if 'process_type' in kwargs.keys() else None
             self.content_type = kwargs['content_type'] if 'content_type' in kwargs.keys() else None
             self.content_name = kwargs['content_name'] if 'content_name' in kwargs.keys() else None
             ## 创建其他特征字典
             self.other = dict()
             for k, v in kwargs.items():
-                if not (k == "id" or k == "entity_name" or k == "text_name" or k == "node_type" or k == "content_type"):
+                if not (k == "id" or k == "entity_name" or k == "text_name" or k == "entity_type" or k == "structure_type" or k == "container_type" or k == "process_type" or k == "content_type" or k == "content_name"):
                     self.other.update({k: v})
                     pass  # if
                 pass  # for

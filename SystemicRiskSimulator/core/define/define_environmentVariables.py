@@ -36,8 +36,8 @@ env['A_data'] = None  # 多主体数据
 
 env['model_name'] = ""  # 运行的模型之名称
 env['process_name'] = ""  # 运行的过程之名称；
-env['folderpath_project'] = Path.cwd()  # 获取当前项目路径；
-env['folderpath_import_modules'] = ""  # 获取当前需要导入的模块所在总路径；
+env['folderpath_project'] = Path.cwd()  # 当前项目路径；
+env['folderpath_import_modules'] = ""  # 当前需要导入的模块所在总路径；
 
 env['df_BB'] = None  # Pandas格式的银行数据
 env['df_IB'] = None  # Pandas格式的银行间数据

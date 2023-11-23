@@ -1,4 +1,4 @@
-"""破产银行应偿还负债冲击算法"""  # HACK冗余，可以替代以？
+"""破产银行应偿还负债冲击模型"""  # HACK冗余，可以替代以？
 
 from SystemicRiskSimulator.core.define.define_agents import BankInterbank, BankCommercial, SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_type import StateType
@@ -6,7 +6,7 @@ from SystemicRiskSimulator.core.define.define_type import StateType
 pass  # end import
 
 
-# from SystemicRiskSimulator.models_entities.algorithms_contents import *
+# from SystemicRiskSimulator.models_entities.models_contents import *
 
 def content_BankruptRepayShock(A: SystemicRiskAgent, para: dict, env: dict):
     ## # 破产银行遭受偿还冲击

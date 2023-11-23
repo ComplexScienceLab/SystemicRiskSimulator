@@ -18,16 +18,16 @@ from SystemicRiskSimulator.tools.tools import Tools
 
 # from Samples.settings.set_environments_variables import set_environments_variables
 # 如果 settings 有内容，那么就删除，否则就从其他文件夹中复制之后再导入
-Tools._delete_and_recreate_folder("SystemicRiskSimulator/settings/environments", is_auto_confirmation=False)
-Tools._copy_files_from_other_folders(folderpaths['folderpath_settings_environments'], "SystemicRiskSimulator/settings/environments")
+Tools._delete_and_recreate_folder("SystemicRiskSimulator/settings/environments", is_auto_confirmation=True)
+Tools._copy_files_from_other_folders(folderpaths['folderpath_settings_environments'], "SystemicRiskSimulator/settings/environments", is_auto_confirmation=True)
 from SystemicRiskSimulator.core.define.define_environmentVariables import env
 
-Tools._delete_and_recreate_folder("SystemicRiskSimulator/settings/parameters", is_auto_confirmation=False)
-Tools._copy_files_from_other_folders(folderpaths['folderpath_settings_parameters'], "SystemicRiskSimulator/settings/parameters")
+Tools._delete_and_recreate_folder("SystemicRiskSimulator/settings/parameters", is_auto_confirmation=True)
+Tools._copy_files_from_other_folders(folderpaths['folderpath_settings_parameters'], "SystemicRiskSimulator/settings/parameters", is_auto_confirmation=True)
 from SystemicRiskSimulator.core.define.define_parameterVariables import para
 
-Tools._delete_and_recreate_folder("SystemicRiskSimulator/settings/agents", is_auto_confirmation=False)
-Tools._copy_files_from_other_folders(folderpaths['folderpath_settings_agents'], "SystemicRiskSimulator/settings/agents")
+Tools._delete_and_recreate_folder("SystemicRiskSimulator/settings/agents", is_auto_confirmation=True)
+Tools._copy_files_from_other_folders(folderpaths['folderpath_settings_agents'], "SystemicRiskSimulator/settings/agents", is_auto_confirmation=True)
 # from SystemicRiskSimulator.core.define.define_agentVariables import agent
 
 from SystemicRiskSimulator.core.operations.operator import Operator
@@ -71,7 +71,7 @@ logger.addHandler(log_console_handler)
 
 logging.debug("\n实验组名称：%s", env['foldername_of_experiments'])
 
-# %% 预安装模型，包括算法和数据
+# %% 预安装模型、数据
 warnings.filterwarnings("ignore")
 
 ## 初始化、构建、安装模型

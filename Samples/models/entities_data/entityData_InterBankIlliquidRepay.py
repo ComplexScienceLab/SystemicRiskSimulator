@@ -1,5 +1,5 @@
 """
-银行间挤兑流动执行借贷流量过程初始态实体
+银行间挤兑流动执行借贷流量过程模型之初始态
 """
 
 # import here
@@ -11,8 +11,11 @@ entityData_InterBankIlliquidRepay = dict(
         id="user4070",
         entity_name="InterBankIlliquidRepay",
         text_name="银行间挤兑流动执行借贷流量",
-        node_type={"content node"},
-        content_type={"algorithm content"},
+        entity_type={"template entity"},
+        structure_type={"content structure"},
+        container_type={"leaf container"},
+        process_type={"executive process"},
+        content_type={"model content"},
     ),
     execute="content_InterBankIlliquidRepay",
     process=None,

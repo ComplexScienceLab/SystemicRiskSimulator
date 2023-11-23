@@ -2,7 +2,7 @@
 运作机
 """
 
-from SystemicRiskSimulator import os, np, logging, dataclass, Any
+from SystemicRiskSimulator import os, time, np, logging, dataclass, Any
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
 from SystemicRiskSimulator.core.operations.collector import Collector
@@ -43,13 +43,16 @@ class Operator:
         ## 构建本次实验组所需的所有模型
 
         ## 复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下
-        Tools._delete_and_recreate_folder("SystemicRiskSimulator/models", is_auto_confirmation=False)
-        Tools._copy_files_from_other_folders(env['folderpath_models'], "SystemicRiskSimulator/models")
+        Tools._delete_and_recreate_folder("SystemicRiskSimulator/models", is_auto_confirmation=True)
+        Tools._copy_files_from_other_folders(env['folderpath_models'], "SystemicRiskSimulator/models", is_auto_confirmation=True)
+
+        # 暂停1秒，等待文件复制
+        time.sleep(1)
 
         ## 导入实体数据，生成实体集、内容集并返回
         Builder.build_entities_by_process_and_container_component(env)  # BUG 会不会出现不能处理多个模型的情形？
 
-        return env, EntityManager.modelEntities
+        return env, EntityManager.mainModelInstanceEntities
 
         pass  # function
 

@@ -64,7 +64,6 @@ class Collector:
 
         """
 
-        # [BB[i]=np.copy(A.BB[i]) for i in A.BB.index] #TODO无用可删除
         ## 初始化数据框用以存储agent数据
         BB_data = pd.DataFrame()
         IB_data = pd.DataFrame()

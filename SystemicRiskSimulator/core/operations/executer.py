@@ -55,9 +55,9 @@ class Executer:
         pass  # function
 
     @classmethod
-    def execute_algorithm_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, entity: Entity):
+    def execute_model_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, entity: Entity):
         """
-        执行算法实体。
+        执行模型实体（模型模板实体）。
 
         NOTE：输入参数将被直接修改。
 
@@ -66,14 +66,14 @@ class Executer:
             A_data (Optional[AgentDataCollection]): Agent群变量之数据
             para (dict): 参数变量
             env (dict): 环境变量
-            entity (Entity): 算法实体
+            entity (Entity): 模型实体
 
         Returns: agent
 
         """
-        # entity = node.content  # 获取节点实体对应的算法实体
+        # entity = node.content  # 获取节点实体对应的模型实体
 
-        logging.debug("    开始执行算法内容：")
+        logging.debug("    开始执行模型内容：")
 
         env['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
         env['phase'] = 1  # 逐相复位（起始为1）
@@ -87,73 +87,10 @@ class Executer:
         #     if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
         #         A_data, env = Collector.collect(A, A_data, env)
 
-        logging.debug("    结束执行算法内容。")
+        logging.debug("    结束执行模型内容。")
 
         return A, A_data, env
         pass  # function
 
-    # @classmethod
-    # def execute_branch_entity(cls, node: Entity, agent: SystemicRiskAgent, agentData: AgentDataCollection, para: dict, env: dict):  # HACK 没有适配，已经无用
-    #     """
-    #     执行分支实体。
-    #     输入参数将被直接修改。
-    #
-    #     Args:
-    #         node (Entity): 节点实体（NOTE：本函数中，特指节点实体而非算法实体。算法实体表示`entity`。）
-    #         agent (SystemicRiskAgent): Agent群变量
-    #         agentData (AgentDataCollection): Agent群变量之数据
-    #         para (dict): 参数变量
-    #         env (dict): 环境变量
-    #
-    #     Returns: modelEntity, A, para, env, agentData
-    #
-    #     """
-    #     entity = node.content  # 获取节点实体对应的算法实体
-    #
-    #     # if node.attribute.node_type == {"process node", "container node"}:
-    #     logging.debug("- 入过程：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
-    #
-    #     node, agent, agentData, para, env = entity.execute(node, agent, agentData, para, env)
-    #
-    #     # if node.attribute.node_type == {"process node", "container node"}:
-    #     logging.debug("- 出过程：%s %s", entity.attribute.text_name, entity.attribute.entity_name)
-    #
-    #     return node, agent, agentData, para, env
-    #     pass  # function
-    #
-    # @classmethod
-    # def execute_terminal_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, node: Entity):  # HACK 没有适配，已经无用
-    #     """
-    #     执行终端实体。
-    #     输入参数将被直接修改。
-    #
-    #     Args:
-    #         A (SystemicRiskAgent): Agent群变量
-    #         A_data (Optional[AgentDataCollection]): Agent群变量之数据
-    #         para (dict): 参数变量
-    #         env (dict): 环境变量
-    #         node (Entity): 节点实体（NOTE：本函数中，特指节点实体而非算法实体。算法实体表示`entity`。）
-    #
-    #     Returns: agent
-    #
-    #     """
-    #     algorithmEntity = node.content  # 获取节点实体对应的算法实体
-    #
-    #     logging.debug("- - 开始阶段：%s %s", algorithmEntity.attribute.text_name, algorithmEntity.attribute.entity_name)
-    #
-    #     env['round'] += 1  # 计次回合数
-    #
-    #     A.BB, A.IB = algorithmEntity.execute(A.BB, A.IB, A.b, A.ib, para, env)
-    #
-    #     ## 收集数据 #BUG
-    #     if env['state_of_schedule'] == StateOfScheduleEnum.running:
-    #         Scheduler.schedule(env)
-    #         if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
-    #             A_data, env = Collector.collect(A, A_data, env)
-    #
-    #     logging.debug("- - 结束阶段：%s %s", algorithmEntity.attribute.text_name, algorithmEntity.attribute.entity_name)
-    #
-    #     return A, A_data, env
-    #     pass  # function
 
     pass  # class

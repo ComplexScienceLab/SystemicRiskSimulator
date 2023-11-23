@@ -16,18 +16,19 @@ class EntityManager:
 
     其中可用变量如下：
     entities：实体字典。键是实体`id`，值是实体。
-    algorithmEntities：算法实体字典。键是实体名称`entity_name`，值是实体。
-    modelEntities：模型实体字典。键是实体名称`entity_name`，值是实体。
-    treeEntities：树实体字典。键是实体`id`，值是实体。
+    modelEntities：模型实体（模型模板实体）字典。键是实体名称`entity_name`，值是实体。
+    mainModelInstanceEntities：主模型实例实体字典。键是实体名称`entity_name`，值是实体。
+    mainModelTemplateEntities：主模型实体（主模型模板实体）字典。键是实体名称`entity_name`，值是实体。
+    treeEntities：树实体（树实例实体）字典。键是实体`id`，值是实体。
 
     管理所有存在变量空间的实体变量。
     """
 
     entities: dict = {}  # 实体字典。键是实体`id`，值是实体。
-    algorithmEntities: dict = {}  # 算法实体字典。键是实体名称`entity_name`，值是实体。
-    modelEntities: dict = {}  # 模型实体（模型节点实体）字典。键是实体名称`entity_name`，值是实体。
-    modelAlgorithmEntities: dict = {}  # 模型算法字典。键是实体名称`entity_name`，值是实体。
-    treeEntities: dict = {}  # 树实体字典。键是实体`id`，值是实体。
+    modelEntities: dict = {}  # 模型实体（模型模板实体）字典。键是实体名称`entity_name`，值是实体。
+    mainModelInstanceEntities: dict = {}  # 模型实体（模型实例实体）字典。键是实体名称`entity_name`，值是实体。
+    mainModelTemplateEntities: dict = {}  # 主模型实体（主模型模板实体）字典。键是实体名称`entity_name`，值是实体。
+    treeEntities: dict = {}  # 树实体（树实例实体）字典。键是实体`id`，值是实体。
 
     @classmethod
     def create_entity(cls, entityData: Any = None, **kwargs):
@@ -50,7 +51,7 @@ class EntityManager:
 
         如果新建的节点`id`与变量区中现有的节点的`id`重复，或者前4位是`"user"`，那么就重新生成新的不重复的`id`，然后返回相应的信息。
 
-        创建一个新实体之后，根据实体之节点属性`attribute.node_type`、实体之内容属性`attribute.content_type`，加入新建的实体`id`到实体列表。
+        创建一个新实体之后，根据实体之实体属性`attribute.entity_type`、实体之结构属性`attribute.structure_type`、实体之容器属性`attribute.container_type`、实体之过程属性`attribute.process_type`、实体之内容属性`attribute.content_type`，加入新建的实体`id`到实体列表。
 
         **kwargs: 其它参数
 
@@ -145,33 +146,14 @@ class EntityManager:
             ## 根据上述判断，创建实体
             entity = Entity(entityData=None, **kwargs)
 
-            # ## 设置节点类型
-            # is_need_set_nodeType = None  # 初始化是否需要设置节点类型
-            # if 'node_type' in kwargs.keys():  # 如果有键`node_type`，并且有值，就设置节点类型，否则不设置。
-            #     if kwargs['node_type'] is None:
-            #         is_need_set_nodeType = False
-            #     else:
-            #         is_need_set_nodeType = True
-            #         pass  # if
-            # else:
-            #     is_need_set_nodeType = False
-            #     pass  # if
-            #
-            # ## 根据上述判断，创建实体
-            # if is_need_set_nodeType:
-            #     entity = Entity(entityData=None, id=new_id, entity_name=new_name, node_type=kwargs['node_type'])
-            # else:
-            #     entity = Entity(entityData=None, id=new_id, entity_name=new_name)
-            #     pass  # if
-
         pass  # if
 
         ## 将新建的实体id加入各个实体列表
         cls.add_entity(entity)
-        cls.add_algorithmEntity(entity)
-        cls.add_modelEntity(entity)
-        cls.add_modelAlgorithmEntity(entity)
-        cls.add_treeNodeEntity(entity)
+        cls.add_modelTemplateEntity(entity)
+        cls.add_mainModelInstanceEntity(entity)
+        cls.add_mainModelTemplateEntity(entity)
+        cls._add_treeNodeEntity(entity)
         return entity
 
     @classmethod
@@ -195,12 +177,12 @@ class EntityManager:
         if id in cls.entities.keys():
             cls.entities.pop(id)
             logging.info(f"已从 entities 移除实体")
-        if name in cls.algorithmEntities.keys():
-            cls.algorithmEntities.pop(name)
-            logging.info(f"已从 algorithmEntities 移除实体")
         if name in cls.modelEntities.keys():
             cls.modelEntities.pop(name)
             logging.info(f"已从 modelEntities 移除实体")
+        if name in cls.mainModelInstanceEntities.keys():
+            cls.mainModelInstanceEntities.pop(name)
+            logging.info(f"已从 mainModelInstanceEntities 移除实体")
         if id in cls.treeEntities.keys():
             cls.treeEntities.pop(id)
             logging.info(f"已从 treeEntities 移除实体")
@@ -227,7 +209,7 @@ class EntityManager:
         pass  # function
 
     @classmethod
-    def add_treeNodeEntity(cls, entity: Entity):
+    def _add_treeNodeEntity(cls, entity: Entity):
         """
         添加树实体到树实体字典。键是实体`id`，值是实体。
 
@@ -238,16 +220,16 @@ class EntityManager:
 
         """
         if (
-                entity.attribute.node_type == {"tree node"}
+                entity.attribute.structure_type == {"tree structure"}
         ):
-            cls.treeEntities.update({entity.attribute.id: entity})
+            cls.treeEntities.update({entity.attribute.id: entity}) # 如果键名重复，会覆盖原来的键值对
             logging.info(f"已添加实体到 treeEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
         pass  # function
 
     @classmethod
-    def add_algorithmEntity(cls, entity: Entity):
+    def add_modelTemplateEntity(cls, entity: Entity):
         """
-        添加算法实体到算法实体字典。键是实体名称`entity_name`，值是实体。
+        添加模型实体（模型模板实体）到模型实体字典。键是实体名称`entity_name`，值是实体。
 
         Args:
             entity (Entity): 实体
@@ -256,71 +238,78 @@ class EntityManager:
 
         """
         if (
-                entity.attribute.node_type == {"container node", "process node"} and
-                entity.attribute.content_type == {"algorithm content"}
+                entity.attribute.entity_type == {"template entity"} and
+                entity.attribute.structure_type == {"container structure", "process structure"} and
+                entity.attribute.container_type == {"branch container"} and
+                entity.attribute.process_type == {"executive process"} and
+                entity.attribute.content_type == {"model content"}
         ) or (
-                entity.attribute.node_type == {"container node", "process node"} and
-                entity.attribute.content_type == {"model content", "algorithm content"}
+                entity.attribute.entity_type == {"template entity"} and
+                entity.attribute.structure_type == {"container structure", "process structure"} and
+                entity.attribute.container_type == {"root container"} and
+                entity.attribute.process_type == {"executive process"} and
+                entity.attribute.content_type == {"model content"}
         ) or (
-                entity.attribute.node_type == {"content node"} and
-                entity.attribute.content_type == {"algorithm content"}
+                entity.attribute.entity_type == {"template entity"} and
+                entity.attribute.structure_type == {"content structure"} and
+                entity.attribute.container_type == {"leaf container"} and
+                entity.attribute.process_type == {"executive process"} and
+                entity.attribute.content_type == {"model content"}
         ) or (
-                entity.attribute.node_type == {"process node"} and
-                entity.attribute.content_type == {"process content"}
-        ):
-            cls.algorithmEntities.update({entity.attribute.entity_name: entity})
-            logging.info(f"已添加实体到 algorithmEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
-        pass  # function
-
-    @classmethod
-    def add_modelAlgorithmEntity(cls, entity: Entity):
-        """
-        添加模型算法实体到模型算法实体字典。键是实体名称`entity_name`，值是实体。
-
-        Args:
-            entity (Entity): 实体
-
-        Returns:
-
-        """
-
-        # if (
-        #         entity.attribute.node_type == {"container node"} and
-        #         entity.attribute.content_type == {"model content", "node content"}
-        # ):
-        if (
-                entity.attribute.node_type == {"container node", "process node"} and
-                entity.attribute.content_type == {"model content", "algorithm content"}
-        ):
-            cls.modelAlgorithmEntities.update({entity.attribute.entity_name: entity})
-            logging.info(f"已添加实体到 modelAlgorithmEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
-        pass  # function
-
-    @classmethod
-    def add_modelEntity(cls, entity: Entity):
-        """
-        添加模型实体（模型节点实体）到模型实体字典。键是实体名称`entity_name`，值是实体。
-
-        Args:
-            entity (Entity): 实体
-
-        Returns:
-
-        """
-
-        # if (
-        #         entity.attribute.node_type == {"container node", "process node"} and
-        #         entity.attribute.content_type == {"model content", "algorithm content"}
-        # ) or (
-        #         entity.attribute.node_type == {"container node"} and
-        #         entity.attribute.content_type == {"model content", "node content"}
-        # ):
-        if (
-                entity.attribute.node_type == {"container node"} and
-                entity.attribute.content_type == {"model content", "node content"}
+                entity.attribute.entity_type == {"template entity"} and
+                entity.attribute.structure_type == {"process structure"} and
+                entity.attribute.container_type == {"leaf container"} and
+                entity.attribute.process_type == {"schedule process"} and
+                entity.attribute.content_type == {"model content"}
         ):
             cls.modelEntities.update({entity.attribute.entity_name: entity})
             logging.info(f"已添加实体到 modelEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
+        pass  # function
+
+    @classmethod
+    def add_mainModelTemplateEntity(cls, entity: Entity):
+        """
+        添加主模型实体（主模型模板实体）到主模型实体字典。键是实体名称`entity_name`，值是实体。
+
+        Args:
+            entity (Entity): 实体
+
+        Returns:
+
+        """
+
+        if (
+                entity.attribute.entity_type == {"template entity"} and
+                entity.attribute.structure_type == {"container structure", "process structure"} and
+                entity.attribute.container_type == {"root container"} and
+                entity.attribute.process_type == {"executive process"} and
+                entity.attribute.content_type == {"model content"}
+        ):
+            cls.mainModelTemplateEntities.update({entity.attribute.entity_name: entity})
+            logging.info(f"已添加实体到 mainModelTemplateEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
+        pass  # function
+
+    @classmethod
+    def add_mainModelInstanceEntity(cls, entity: Entity):
+        """
+        添加主模型实例实体到主模型实例实体字典。键是实体名称`entity_name`，值是实体。
+
+        Args:
+            entity (Entity): 实体
+
+        Returns:
+
+        """
+
+        if (
+                entity.attribute.entity_type == {"instance entity"} and
+                entity.attribute.structure_type == {"container structure", "process structure"} and
+                entity.attribute.container_type == {"root container"} and
+                entity.attribute.process_type == {"executive process"} and
+                entity.attribute.content_type == {"model content", "node content"}
+        ):
+            cls.mainModelInstanceEntities.update({entity.attribute.entity_name: entity})
+            logging.info(f"已添加实体到 mainModelInstanceEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
         pass  # function
 
     @classmethod

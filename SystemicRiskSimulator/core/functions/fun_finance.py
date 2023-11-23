@@ -516,7 +516,7 @@ class Finance:
             source_state_changes: 示性向量之源状态改变的。
 
         """
-        result = (bank.isv | bank.ilq)  # TODO 这个仅仅是目前基准算法简化的做法
+        result = (bank.isv | bank.ilq)  # TODO 这个仅仅是目前基准模型简化的做法
         source_state_changes = (bank.br != result)
         bank.br = result
         interbank.br = (bank.br & bank.br.T)
@@ -543,7 +543,7 @@ class Finance:
         return source_state_changes
         pass  # function
 
-    ## #NOTE 以下的几个计算函数将在算法内容中单独使用，不用于联动同步计算。
+    ## #NOTE 以下的几个计算函数将在模型内容中单独使用，不用于联动同步计算。
 
     @classmethod
     def calc_state_isEnabledBoIB(cls, bank: BankCommercial):
@@ -770,7 +770,6 @@ class Finance:
             pass  # for
         pass  # function
 
-    # @Executer.execute #TODO删除
     @classmethod
     def update_finance_variables(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str = 'all'):
         """

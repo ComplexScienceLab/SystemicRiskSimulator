@@ -1,4 +1,4 @@
-"""银行存款挤兑流动冲击算法"""
+"""银行存款挤兑流动冲击模型"""
 
 from SystemicRiskSimulator import np
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
@@ -9,7 +9,7 @@ pass  # end import
 
 def content_ExBankIlliquidShock(A: SystemicRiskAgent, para: dict, env: dict):  # = BB_t1:BankCommercial, IB_t1:BankInterbank,  =#:
     """
-    银行存款挤兑流动冲击算法
+    银行存款挤兑流动冲击模型
 
     Args:
         A ():
@@ -20,7 +20,7 @@ def content_ExBankIlliquidShock(A: SystemicRiskAgent, para: dict, env: dict):  #
 
     """
 
-    # env['stage_name'] = "银行存款挤兑流动冲击算法"
+    # env['stage_name'] = "银行存款挤兑流动冲击模型"
 
     A.BB.Shock_D_run_t = A.BB.Z_D * np.array([para['Shock_exIB_run_t_percentage']]).T  # 生成居民存款挤兑流动冲击
     Executer.step_update('Shock_D_run_t', A, para, env)  # 居民存款挤兑流动冲击传导至银行内资产冲击

@@ -1,5 +1,5 @@
 """
-流动性短缺银行间挤兑流动传染过程初始态实体
+流动性短缺银行间挤兑流动传染过程模型之初始态
 """
 
 # import here
@@ -11,8 +11,11 @@ entityData_InterBankIlliquidContagionShock = dict(
         id="user4050",
         entity_name="InterBankIlliquidContagionShock",
         text_name="流动性短缺银行间挤兑流动传染",
-        node_type={"content node"},
-        content_type={"algorithm content"},
+        entity_type={"template entity"},
+        structure_type={"content structure"},
+        container_type={"leaf container"},
+        process_type={"executive process"},
+        content_type={"model content"},
     ),
     execute="content_InterBankIlliquidContagionShock",
     process=None,

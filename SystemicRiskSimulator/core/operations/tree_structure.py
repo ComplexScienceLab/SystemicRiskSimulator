@@ -21,8 +21,8 @@ class Tree:
         """
         初始化根节点
         """
-        self.root_node = EntityManager.create_entity(entity_name='root', node_type={"tree node"})  # 创建根节点
-        EntityManager.add_treeNodeEntity(self.root_node)  # 将根节点添加到树节点实体字典中
+        self.root_node = EntityManager.create_entity(entity_name='root', structure_type={"tree structure"})  # 创建根节点
+        # EntityManager._add_treeNodeEntity(self.root_node)  # 将根节点添加到树节点实体字典中
         self.root_node.attribute.other['parent'] = None
         pass  # function
 
@@ -162,7 +162,7 @@ class Tree:
             创建的节点。
 
         """
-        node = EntityManager.create_entity(entityData=None, id=id, entity_name=entity_name, node_type={"tree node"}, content=content)
+        node = EntityManager.create_entity(entityData=None, id=id, entity_name=entity_name, structure_type={"tree structure"}, content=content)
         self.add_child(child_item=node, parent_item=parent_item)
         return node
 
@@ -202,7 +202,7 @@ class Tree:
             parent_node.container = {child_node.attribute.entity_name: child_node}
             pass  # if
 
-        EntityManager.add_treeNodeEntity(child_node)  # 添加到树实体集
+        # EntityManager._add_treeNodeEntity(child_node)  # 添加到树实体集
 
         pass  # function
 
@@ -234,9 +234,9 @@ class Tree:
                 parent_node.container = {child_node.attribute.id: child_node for child_node in childern}
             pass  # if
 
-        ## 添加到树实体集
-        for child in childern_nodes:
-            EntityManager.add_treeNodeEntity(child)
+        # ## 添加到树实体集
+        # for child in childern_nodes:
+        #     EntityManager._add_treeNodeEntity(child)
 
         pass
 
@@ -504,7 +504,7 @@ class Tree:
                 for entity in EntityManager.entities.values():
                     if item == entity.attribute.id:
                         node = entity
-                        type_name = "算法实体之节点实体"
+                        type_name = "模型实体之节点实体"
                         break
                     else:
                         node = None
@@ -518,15 +518,15 @@ class Tree:
                 type_name = "树节点实体"
             elif item in EntityManager.entities.values():
                 node = item
-                type_name = "算法实体之节点实体"
+                type_name = "模型实体之节点实体"
             else:
                 node = None
             pass
 
         if type_name == "树节点实体":
             result_node = node
-        elif type_name == "算法实体之节点实体":
-            ## 根据算法实体之节点实体获取树节点实体。
+        elif type_name == "模型实体之节点实体":
+            ## 根据模型实体之节点实体获取树节点实体。
             for tree_entity in EntityManager.treeEntities.values():
                 if node.attribute.id == tree_entity.content.attribute.id:
                     result_node = tree_entity

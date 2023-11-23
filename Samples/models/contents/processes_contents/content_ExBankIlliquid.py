@@ -1,5 +1,5 @@
 """
-银行存款挤兑流动过程算法
+银行存款挤兑流动过程模型
 """
 
 content_ExBankIlliquid = \

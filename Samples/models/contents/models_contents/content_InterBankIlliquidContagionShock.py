@@ -1,4 +1,4 @@
-"""流动性短缺银行间挤兑流动传染算法"""
+"""流动性短缺银行间挤兑流动传染模型"""
 
 from SystemicRiskSimulator import np
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
@@ -20,7 +20,7 @@ def content_InterBankIlliquidContagionShock(A: SystemicRiskAgent, para: dict, en
 
     """
 
-    # env['stage_name'] = "流动性短缺银行间挤兑流动传染算法"
+    # env['stage_name'] = "流动性短缺银行间挤兑流动传染模型"
 
     ## DEBUG 方式一：每个银行只有一次分配传染冲击之行为。感觉这个比较简单。
     i_nas = (A.BB.ilq & ~A.BB.is_allocated_Shock)  # 临时设置示性变量，表示银行其未分配传染冲击。暨每个银行只有一次分配传染冲击之行为。

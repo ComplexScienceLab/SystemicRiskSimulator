@@ -1,5 +1,5 @@
 """
-外部资产违约损失过程算法
+外部资产违约损失过程模型
 """
 
 content_ExBankInsolvent = \

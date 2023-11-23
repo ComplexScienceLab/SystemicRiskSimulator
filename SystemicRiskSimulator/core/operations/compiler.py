@@ -17,11 +17,11 @@ class Compiler:
 
     编译后的指令列表有几种形式的元组：
 
-    - `node XXX`。3元组。元素1是指令行号；元素2是指令`node`；元素3是指令内容是算法实体之节点实体；
+    - `node XXX`。3元组。元素1是指令行号；元素2是指令`node`；元素3是指令内容是模型模板实体之节点实体（模型实例实体）；
 
-    - `execute XXX`。3元组。元素1是指令行号；元素2是指令`execute`；元素3是指令内容是算法实体之内容变量；
+    - `execute XXX`。3元组。元素1是指令行号；元素2是指令`execute`；元素3是指令内容是模型模板实体之内容变量；
 
-    - `if XXX goto XXX`。6元组。元素1是指令行号；元素2是指令`if`；元素3是指令内容是算法实体之条件实体，呈现以字符串形式的内容；元素4是指令`goto`；元素5是指令内容是算法实体之节点实体；元素6是标记元素5对应的节点所在的指令行号；
+    - `if XXX goto XXX`。6元组。元素1是指令行号；元素2是指令`if`；元素3是指令内容是模型模板实体之条件实体，呈现以字符串形式的内容；元素4是指令`goto`；元素5是指令内容是模型模板实体之节点实体（模型实例实体）；元素6是标记元素5对应的节点所在的指令行号；
 
     """
 
@@ -34,18 +34,18 @@ class Compiler:
 
         1. 构建编译树；
 
-                遍历所有节点实体过程，生成编译树用于生成编译序列。
+                遍历所有节点实体过程，生成编译树。
 
         2. 生成编译序列；
 
-            该功能是生成一个编译序列，以记录编制整个程序代码段完整的编译路径。
+            该功能是根据编译树生成一个编译序列，以记录编制整个程序代码段完整的编译路径。
 
         3. 编译；
 
             该功能是根据编译序列，执行编译过程，生成编译指令列表。
 
         Args:
-            model_nodeEntity (Entity): 待编译的模型实体（模型节点实体）。
+            model_nodeEntity (Entity): 待编译的模型实体（模型实例实体）。
 
         Returns:
 
@@ -64,13 +64,13 @@ class Compiler:
             compile_tree_node = build_tree_stack.pop()  # 弹出节点，进行处理。
             logging.debug(f"栈弹出节点{compile_tree_node.attribute.entity_name}，变成{build_tree_stack.print_stack(mode='return')}。")
             compile_nodeEntity = compile_tree_node.content  # 获取编译树节点之对应的节点实体
-            compile_algorithmEntity = compile_nodeEntity.content  # 获取编译树节点之对应的节点实体
-            if compile_algorithmEntity.process is not None:
+            compile_modelEntity = compile_nodeEntity.content  # 获取编译树节点之对应的节点实体
+            if compile_modelEntity.process is not None:
                 compile_tree_node.attribute.other = {'is_terminal': False}
             else:
                 compile_tree_node.attribute.other = {'is_terminal': True}
                 pass  # if
-            code_process_content = compile_algorithmEntity.process  # 获取算法实体之过程，其内容是代码段
+            code_process_content = compile_modelEntity.process  # 获取模型模板实体之过程，其内容是代码段
             code_lines = code_process_content.split('\n')  # 将代码分割成很多行
             compile_tree_node.attribute.other['start_line_number'] = 1  # 设置编译树节点之起始行号
             compile_tree_node.attribute.other['end_line_number'] = len(code_lines)  # 设置编译树节点之结束行号
@@ -85,7 +85,7 @@ class Compiler:
                 if tokens[0] == 'execute' and (tokens[1] == 'process'):
                     sub_process_name = tokens[2]  # 获取子过程名称
                     compile_tree_sub_node = compile_tree.create_and_add_node(entity_name=sub_process_name, parent_item=compile_tree_node)  # 创建编译树子节点实体
-                    compile_tree_sub_node.content = compile_algorithmEntity.container[sub_process_name]  # 设置编译树子节点之内容为该算法实体之子节点实体
+                    compile_tree_sub_node.content = compile_modelEntity.container[sub_process_name]  # 设置编译树子节点之内容为该模型模板实体之子节点实体
                     sub_node_list.append(compile_tree_sub_node)  # 暂存编译树子节点实体。等待遍历完当前节点实体的所有子节点实体后，再压入栈。
                     pass  # if
                 ## 如果指令是`end define`，则标记位置，表示该过程编译结束
@@ -93,7 +93,7 @@ class Compiler:
                     break
                     pass  # if
                 pass  # for
-            if len(sub_node_list) == 0:  # 如果当前算法节点没有子节点，则标记该编译树节点为终端节点，否则标记为非终端节点
+            if len(sub_node_list) == 0:  # 如果当前模型模板实体节点没有子节点，则标记该编译树节点为终端节点，否则标记为非终端节点
                 compile_tree_node.attribute.other['is_terminal'] = True
                 continue
             else:
@@ -110,7 +110,7 @@ class Compiler:
         ## 遍历编译树生成编译序列。
         ## NOTE：从树的遍历算法上看，本质上是中序遍历。从应用上来比喻，相当于实现从头到尾的跳步阅读行为。
         logging.debug(f"\n\n\n开始遍历编译树生成编译序列：\n")
-        compile_order_list = []  # 编译序列列表。每个元素是一个5元组。元素1是编译树节点实体，元素2是待编译的节点实体，元素3是待编译的算法实体，元素4是待编译的节点之过程之代码段之开始编译的行号，元素5是待编译的节点之过程之代码段之停止编译的行号。
+        compile_order_list = []  # 编译序列列表。每个元素是一个5元组。元素1是编译树节点实体，元素2是待编译的节点实体，元素3是待编译的模型模板实体，元素4是待编译的节点之过程之代码段之开始编译的行号，元素5是待编译的节点之过程之代码段之停止编译的行号。
         precompile_stack = Stack()  # 预编译栈。，栈之元素是待编译的节点之id。
         precompile_stack.push(compile_tree.root_node)  # 将根节点压入栈
         ## 遍历编译树，生成编译序列
@@ -131,9 +131,9 @@ class Compiler:
                     pass  # if
                 pass  # if
             compile_nodeEntity = compile_tree_node.content  # 获取编译树节点之对应的节点实体
-            compile_algorithmEntity = compile_nodeEntity.content  # 获取编译树节点之对应的节点实体
-            logging.debug(f'编译树节点{compile_tree_node.attribute.entity_name}，对应的算法实体之节点实体{compile_nodeEntity.attribute.entity_name}，对应的算法实体{compile_algorithmEntity.attribute.entity_name}')
-            code_process_content = compile_algorithmEntity.process  # 获取算法实体之过程，其内容是代码段
+            compile_modelEntity = compile_nodeEntity.content  # 获取编译树节点之对应的节点实体
+            logging.debug(f'编译树节点{compile_tree_node.attribute.entity_name}，对应的模型模板实体之节点实体{compile_nodeEntity.attribute.entity_name}，对应的模型模板实体{compile_modelEntity.attribute.entity_name}')
+            code_process_content = compile_modelEntity.process  # 获取模型模板实体之过程，其内容是代码段
             code_lines = code_process_content.split('\n')  # 将代码分割成很多行
             ## 逐行扫描代码段，生成编译序列
             line_number = compile_tree_node.attribute.other['start_line_number']  # 记录当前行号
@@ -147,8 +147,8 @@ class Compiler:
                 tokens = line.strip().split(' ')  # 分割代码行为关键字和参数
                 ## 如果指令是`execute process xxx`，则说明需要进入该子过程编译。添加编译树子节点实体到编译树中。
                 if tokens[0] == 'execute' and (tokens[1] == 'process'):
-                    compile_tree_node.attribute.other['end_line_number'] = line_number  # 标记需要编译的当前算法实体之过程代码段之结束行号到当前编译树节点实体之特征。
-                    compile_order_list.append((compile_tree_node, compile_nodeEntity, compile_algorithmEntity, compile_tree_node.attribute.other['start_line_number'], compile_tree_node.attribute.other['end_line_number']))  # 添加当前编译节点、编译起止行号、特征之是否终端节点到编译序列中
+                    compile_tree_node.attribute.other['end_line_number'] = line_number  # 标记需要编译的当前模型模板实体之过程代码段之结束行号到当前编译树节点实体之特征。
+                    compile_order_list.append((compile_tree_node, compile_nodeEntity, compile_modelEntity, compile_tree_node.attribute.other['start_line_number'], compile_tree_node.attribute.other['end_line_number']))  # 添加当前编译节点、编译起止行号、特征之是否终端节点到编译序列中
                     compile_tree_node.attribute.other['start_line_number'] = line_number + 1  # 更新当前编译节点之过程代码段之初始位置
                     break  # 停止扫描当前编译节点之过程，转而扫描子节点。
                     pass  # if
@@ -161,8 +161,8 @@ class Compiler:
                     pass  # if
                 ## 如果指令是`end define`，则标记位置，表示该过程编译结束
                 if tokens[0] == 'end' and tokens[1] == 'define':
-                    compile_tree_node.attribute.other['end_line_number'] = line_number  # 标记需要编译的当前算法实体之过程代码段之结束行号到当前编译树节点实体之特征。
-                    compile_order_list.append((compile_tree_node, compile_nodeEntity, compile_algorithmEntity, compile_tree_node.attribute.other['start_line_number'], compile_tree_node.attribute.other['end_line_number']))  # 添加当前编译节点、编译起止行号到编译序列中。
+                    compile_tree_node.attribute.other['end_line_number'] = line_number  # 标记需要编译的当前模型模板实体之过程代码段之结束行号到当前编译树节点实体之特征。
+                    compile_order_list.append((compile_tree_node, compile_nodeEntity, compile_modelEntity, compile_tree_node.attribute.other['start_line_number'], compile_tree_node.attribute.other['end_line_number']))  # 添加当前编译节点、编译起止行号到编译序列中。
                     break  # 停止扫描当前编译节点之过程，转而扫描父节点。
                 ## 如果是其他指令
                 else:
@@ -174,7 +174,7 @@ class Compiler:
         ## 打印编译序列
         logging.debug(f"\n\n编译序列：\n")
         for i in range(len(compile_order_list)):
-            logging.debug(f"树节点：{compile_order_list[i][0].attribute.entity_name}、节点：{compile_order_list[i][1].attribute.entity_name}、算法：{compile_order_list[i][2].attribute.entity_name}、起止行({str(compile_order_list[i][3])}, {str(compile_order_list[i][4])})")
+            logging.debug(f"树节点：{compile_order_list[i][0].attribute.entity_name}、节点：{compile_order_list[i][1].attribute.entity_name}、模型：{compile_order_list[i][2].attribute.entity_name}、起止行({str(compile_order_list[i][3])}, {str(compile_order_list[i][4])})")
 
         ## 编译阶段
 
@@ -183,8 +183,8 @@ class Compiler:
         instructions = []  # 编译后的指令列表。
         instructions_line_number = 1  # 指令行号
         for compile_item in compile_order_list:
-            compile_tree_node, compile_nodeEntity, compile_algorithmEntity, start_line_number, end_line_number = compile_item[0], compile_item[1], compile_item[2], compile_item[3], compile_item[4]  # 获取编译节点实体、编译起止行号
-            code_process_content = compile_algorithmEntity.process  # 获取算法实体之过程，其内容是代码段
+            compile_tree_node, compile_nodeEntity, compile_modelEntity, start_line_number, end_line_number = compile_item[0], compile_item[1], compile_item[2], compile_item[3], compile_item[4]  # 获取编译节点实体、编译起止行号
+            code_process_content = compile_modelEntity.process  # 获取模型模板实体之过程，其内容是代码段
             code_lines = code_process_content.split('\n')  # 将代码分割成很多行
             ## 逐行扫描代码段，生成编译序列
             for line in code_lines[start_line_number:end_line_number + 1]:
@@ -194,16 +194,16 @@ class Compiler:
                     pass  # if
                 tokens = line.strip().split(' ')  # 分割代码行为关键字和参数
                 ## 判断指令类型做相应的编译处理
-                if tokens[0] == 'execute' and tokens[1] == 'content':  # 如果指令是`execute content`，则需要编译算法内容
-                    instructions.append((instructions_line_number, 'node', compile_algorithmEntity.container[tokens[2]]))  # 生成指令`node <nodeEntity>`
-                    logging.debug(f"{instructions_line_number}\t{instructions[instructions_line_number - 1][1]}\t\t{compile_algorithmEntity.container[tokens[2]].attribute.entity_name} {compile_algorithmEntity.container[tokens[2]].attribute.id}")
+                if tokens[0] == 'execute' and tokens[1] == 'content':  # 如果指令是`execute content`，则需要编译模型内容
+                    instructions.append((instructions_line_number, 'node', compile_modelEntity.container[tokens[2]]))  # 生成指令`node <nodeEntity>`
+                    logging.debug(f"{instructions_line_number}\t{instructions[instructions_line_number - 1][1]}\t\t{compile_modelEntity.container[tokens[2]].attribute.entity_name} {compile_modelEntity.container[tokens[2]].attribute.id}")
                     instructions_line_number += 1  # 下一指令行号
-                    instructions.append((instructions_line_number, 'execute', compile_algorithmEntity.container[tokens[2]].content))  # 生成指令`execute <nodeEntity之algorithmContent>`。
-                    logging.debug(f"{instructions_line_number}\t{instructions[instructions_line_number - 1][1]}\t\t{compile_algorithmEntity.container[tokens[2]].content.attribute.entity_name} {compile_algorithmEntity.container[tokens[2]].content.attribute.id}")
+                    instructions.append((instructions_line_number, 'execute', compile_modelEntity.container[tokens[2]].content))  # 生成指令`execute <nodeEntity之modelContent>`。
+                    logging.debug(f"{instructions_line_number}\t{instructions[instructions_line_number - 1][1]}\t\t{compile_modelEntity.container[tokens[2]].content.attribute.entity_name} {compile_modelEntity.container[tokens[2]].content.attribute.id}")
                     instructions_line_number += 1  # 下一指令行号
                 elif tokens[0] == 'if' and tokens[2] == 'goto':  # 如果是连续的指令`if XXX goto XXX`，则编译判别条件
-                    instructions.append((instructions_line_number, tokens[0], compile_algorithmEntity.condition[tokens[1]].content, tokens[2], compile_algorithmEntity.container[tokens[3]], None))  # 生成指令。但是该指令之内容是文本形式的判别条件，需要在执行过程时再解析。
-                    logging.debug(f"{instructions_line_number}\t{tokens[0]}\t\t{compile_algorithmEntity.condition[tokens[1]].content}\t\t{tokens[2]}\t\t{compile_algorithmEntity.container[tokens[3]].attribute.entity_name} {compile_algorithmEntity.container[tokens[3]].attribute.id}")
+                    instructions.append((instructions_line_number, tokens[0], compile_modelEntity.condition[tokens[1]].content, tokens[2], compile_modelEntity.container[tokens[3]], None))  # 生成指令。但是该指令之内容是文本形式的判别条件，需要在执行过程时再解析。
+                    logging.debug(f"{instructions_line_number}\t{tokens[0]}\t\t{compile_modelEntity.condition[tokens[1]].content}\t\t{tokens[2]}\t\t{compile_modelEntity.container[tokens[3]].attribute.entity_name} {compile_modelEntity.container[tokens[3]].attribute.id}")
                     instructions_line_number += 1  # 下一指令行号
                 elif tokens[0] == 'define' and tokens[1] == 'process':  # 如果是根节点之指令`define process xxx`，则编译成`node xxx`
                     instructions.append((instructions_line_number, 'node', compile_nodeEntity))

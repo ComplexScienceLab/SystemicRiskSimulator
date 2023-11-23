@@ -1,5 +1,5 @@
 """
-资不抵债银行间违约损失传染过程初始态实体
+资不抵债银行间违约损失传染过程模型之初始态
 """
 
 # import here
@@ -11,8 +11,11 @@ entityData_InterBankInsolventContagion = dict(
         id="user4030",
         entity_name="InterBankInsolventContagion",
         text_name="资不抵债银行间违约损失传染",
-        node_type={"content node"},
-        content_type={"algorithm content"},
+        entity_type={"template entity"},
+        structure_type={"content structure"},
+        container_type={"leaf container"},
+        process_type={"executive process"},
+        content_type={"model content"},
     ),
     execute="content_InterBankInsolventContagion",
     process=None,

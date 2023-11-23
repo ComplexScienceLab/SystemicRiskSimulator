@@ -1,15 +1,21 @@
-"""银行间挤兑流动执行借贷流量算法"""
+"""银行间挤兑流动执行借贷流量模型"""
 
+<<<<<<< HEAD:PySystemicRiskLab/models/contents/algorithms_contents/content_InterBankIlliquidRepay.py
+from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
+from PySystemicRiskLab.core.functions.fun_finance import Finance
+from PySystemicRiskLab.core.operations.executer import Executer
+=======
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.functions.fun_finance import Finance
 from SystemicRiskSimulator.core.operations.executer import Executer
+>>>>>>> dev:SystemicRiskSimulator/models/contents/algorithms_contents/content_InterBankIlliquidRepay.py
 
 pass  # end import
 
 
 def content_InterBankIlliquidRepay(A: SystemicRiskAgent, para: dict, env: dict):
     """
-    流动性短缺银行间挤兑流动执行借贷流量算法
+    流动性短缺银行间挤兑流动执行借贷流量模型
 
     Args:
         A ():
@@ -20,7 +26,7 @@ def content_InterBankIlliquidRepay(A: SystemicRiskAgent, para: dict, env: dict):
 
     """
 
-    # env['stage_name'] = "银行间挤兑流动执行借贷流量算法"
+    # env['stage_name'] = "银行间挤兑流动执行借贷流量模型"
 
     A.BB.A_Q[A.b], A.BB.A_P[A.b], A.BB.Shock_P_run_s[A.b] = Finance.transfer_B_capital_reverse(A.BB.A_Q[A.b], A.BB.A_P[A.b], A.BB.Shock_P_run_s[A.b], A.BB.Li_P[A.b])  # 流动资产变动，因收回厂商贷款
     # A.BB.A_Q[A.b] *= (1 - paras['kappa_A_P']) #HACK 暂时还不用！

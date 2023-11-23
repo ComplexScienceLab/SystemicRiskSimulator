@@ -2,7 +2,6 @@
 from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil, locale, Union
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
 
-# from SystemicRiskSimulator.core.define.define_environmentVariables import env
 
 pass  # end import
 
@@ -40,21 +39,6 @@ class Tools:
         return pdl
         pass  # function
 
-    # def dict_to_product_list(cls, d: dict):
-    #     """
-    #     各字典之列表型元素转列表，其元素为字典，列表个元素间关系符合笛卡尔积。
-    #     :param self:
-    #     :param d:dict:参与转换的字典，字典之每个值都是列表。
-    #     :return: pdl:list: 笛卡尔积字典列表 product lict list；
-    #     """
-    #     t = list(d.values())
-    #     l = list(itertools.product(*t, repeat=1))
-    #     pdl = []
-    #     for v in l:
-    #         pdl.append(dict(zip(d.keys(), v)))
-    #         pass
-    #     return pdl
-    #     pass  # function
 
     @classmethod
     def set_experiments_folders(cls, foldername_prefix_of_experiments: str, foldername_of_experiments_output_data: str, str_folderpath_root_dir_of_experiments: str, str_folderpath_models: str, str_folderpath_settings_environments: str, str_folderpath_settings_parameters: str, str_folderpath_settings_agents: str, type_of_experiments_foldername: str = "default", is_datetime: bool = True):
@@ -237,7 +221,6 @@ class Tools:
                                 list_contents.update({name_02: list_files[idx_file].__dict__.get(content)})
                     idx_file += 1
             else:  # 如果路径下面没有子文件夹
-                # for module_finder, name_01, _ in pkgutil.iter_modules([str_folderpath[0].__str__()]):
                 list_files.append(importlib.import_module("." + name_01, module_form_path_package))
                 for content in dir(list_files[idx_file]):
                     if not content.startswith("__"):
@@ -336,7 +319,6 @@ class Tools:
         data_numpy = np.asarray(data)
         transformed_data = ((data_numpy - np.min(data_numpy)) / (np.max(data_numpy) - np.min(data_numpy))) * (min_max_range[1] - min_max_range[0]) + min_max_range[0]
         return (list(transformed_data))
-        # list(MinMaxScaler(feature_range=(0.1, 5)).fit_transform(np.asarray(A_IB).reshape(-1, 1)))
         pass  # function
 
     @classmethod

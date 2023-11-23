@@ -1,5 +1,5 @@
 """
-结束实体
+结束实体模型之初始态
 """
 
 entityData_END = dict(
@@ -7,12 +7,13 @@ entityData_END = dict(
         id="user9999",
         entity_name="END",
         text_name="结束过程",
-        node_type={"process node"},
-        content_type={"process content"},
+        entity_type={"template entity"},
+        structure_type={"process structure"},
+        container_type={"leaf container"},
+        process_type={"schedule process"},
+        content_type={"model content"},
     ),
-    # execute="Processor.process_entity_by_node_component",
     execute="Processor.process_entity_by_process_and_container_component",
-    # execute=None,
     process=None,
     container=None,
     condition=None,

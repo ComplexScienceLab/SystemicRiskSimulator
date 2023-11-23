@@ -1,4 +1,4 @@
-"""银行间挤兑流动分配借贷流量算法"""
+"""银行间挤兑流动分配借贷流量模型"""
 
 ##########################################
 # 状态/使用
@@ -13,7 +13,7 @@ pass  # end import
 
 def content_InterBankIlliquidAllocate(A: SystemicRiskAgent, para: dict, env: dict):
     """
-    流动性短缺银行间挤兑流动分配借贷流量算法
+    流动性短缺银行间挤兑流动分配借贷流量模型
 
     Args:
         A ():
