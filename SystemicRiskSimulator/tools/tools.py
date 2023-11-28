@@ -1,5 +1,5 @@
 "函数区：工具集"
-from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, np, random, string, shutil, locale
+from SystemicRiskSimulator import time, Path, itertools, pkgutil, importlib, re, np, random, string, shutil, locale
 
 pass  # end import
 
@@ -187,7 +187,7 @@ class Tools:
         else:  # 获取指定项目之根路径
             current_project_rootpath = Tools._get_current_project_rootpath()
             folderpath_relativepath_project = Path(folderpath_relativepath_project)
-            folderpath_project = current_project_rootpath / folderpath_relativepath_project
+            folderpath_project = (current_project_rootpath / Path(folderpath_relativepath_project, foldername_project)).resolve()
             return folderpath_project
             pass  # if
         pass  # function
@@ -316,7 +316,7 @@ class Tools:
         pattern = r"\."
         repl = r"/"
         result = re.sub(pattern, repl, str_package_form_path)
-        return os.path.abspath(result)
+        return Path(result).resolve()
         pass  # function
 
     @classmethod
@@ -407,13 +407,13 @@ class Tools:
             dict: 文件夹及其子文件信息
         """
         locale.setlocale(locale.LC_ALL, 'zh_CN.UTF-8')  # 设置中文拼音排序
-        rootPath_source = os.path.join(work_address, folder_source)  # 原始文件根路径
-        rootPath_target = os.path.join(work_address, folder_target)  # 目标文件根路径
-        fileNamesWithSuffix = [f for f in os.listdir(rootPath_source) if f.endswith(suffix_source)]  # 文件名含后缀名
+        rootPath_source = Path(work_address, folder_source)  # 原始文件根路径
+        rootPath_target = Path(work_address, folder_target)  # 目标文件根路径
+        fileNamesWithSuffix = [f.name for f in rootPath_source.glob(f'*{suffix_source}')]  # 文件名含后缀名 #DEBUG 还没有测试过
         regularPattern = re.compile(f".*[^(\\.{suffix_source})]")
         fileNames = [re.search(regularPattern, f).group() for f in fileNamesWithSuffix]  # 纯文件名
-        filePath_source = [os.path.join(rootPath_source, f) for f in fileNamesWithSuffix]  # 文件路径
-        filePath_target = [os.path.join(rootPath_target, f"{name}{suffix_target}") for name in fileNames]  # 目标文件路径
+        filePath_source = [Path(rootPath_source, f) for f in fileNamesWithSuffix]  # 文件路径
+        filePath_target = [Path(rootPath_target, f"{name}{suffix_target}") for name in fileNames]  # 目标文件路径
         # 排序列表
         fileNames.sort(key=locale.strxfrm)
         fileNamesWithSuffix.sort(key=locale.strxfrm)

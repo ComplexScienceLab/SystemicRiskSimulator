@@ -43,8 +43,8 @@ class Operator:
         ## 构建本次实验组所需的所有模型
 
         ## 复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下
-        Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=False)
-        Tools._copy_files_from_other_folders(env['folderpath_models'], Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=False)
+        Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=env['is_auto_confirmation'])
+        Tools._copy_files_from_other_folders(env['folderpath_models'], Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=env['is_auto_confirmation'])
 
         # 暂停1秒，等待文件复制
         time.sleep(1)
@@ -73,7 +73,7 @@ class Operator:
         if env['state_of_schedule'] == StateOfScheduleEnum.idle:
             Scheduler.schedule(env)
         if env['state_of_schedule'] == StateOfScheduleEnum.initializing:
-            # 重置环境变量
+            # 重置环境变量  # TODO 需要整理一下这几个待重置的环境变量
             env['index_of_schedule_position'] = []
             env['round'] = 0
             env['phase'] = 0
@@ -89,7 +89,7 @@ class Operator:
 
             logging.info("相关实验参数：" + str(para) + "\n")
 
-            ## 初始化
+            ## 初始化 agents 数据
             A = DataInstaller.install_data(init_method=env['init_method'])  # 安装本次实验所需的多主体数据
             env['A_data'] = Collector.collect(A, env['A_data'], env)  # 收集初始数据
             env['step'] += 1

@@ -13,7 +13,7 @@ pass  # end import
 # 生成字典变量
 env: EnvironmentVariableType = {}
 
-######### 定义以下环境变量（不要改动！） #########################################
+######### 定义以下环境变量（不要改动！） ######################################### #TODO 需要整理
 env['folderpath_of_experiments'] = ""  # 主文件夹路径之于实验。将由函数生成；
 env['foldername_of_experiments'] = ""  # 实验文件夹名称
 env['folderpath_of_experiments_output_data'] = ""  # 实验导出数据文件夹名称

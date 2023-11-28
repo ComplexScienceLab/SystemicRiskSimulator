@@ -8,7 +8,7 @@
 
 set_environments_variables = dict(
 
-    init_method="set manually",  # 初始化数据方式；
+    init_method="import data",  # 初始化数据方式；
     type_of_experiments_foldername="set manually",  # 设置实验文件夹命名方式。默认"set manually"；
     foldername_prefix_of_experiments="test",  # 手动设置实验文件夹前缀名。默认"default"；
     foldername_of_experiments_output_data="exp_output_data",  # 手动设置实验导出数据文件夹名称。
@@ -20,8 +20,10 @@ set_environments_variables = dict(
     folderpath_data=r"Samples/data",  # 数据所在的文件夹
     running_mode="continue running mode",  # 运行模式。取值："continue running mode": 持续运行模式, "stepping running mode": 步进运行模式}，否则一路直接运行。默认"continue running mode"； #BUG 暂时还没有重构"stepping running mode"的情况，因此设置为该模式会出错
     step_size=1,  # 设置步进跨度；如果该数值设置较大，则相当于直接处理程序；
+    is_auto_confirmation=True,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
+    is_auto_open_outputlog=True,  # 是否自动打开输出日志文件。默认 True；
 
-    num_bank=5,  # 银行个数；
+    num_bank=None,  # 手动输入银行个数（NOTE：如果设置具体值，必须保证是正确的。如果设置为 None 或者不设置，那么会自动计算该变量值然后覆盖设置值）；
     num_assets=1,  # 资产种类数；
 
     ## 调试专用变量：

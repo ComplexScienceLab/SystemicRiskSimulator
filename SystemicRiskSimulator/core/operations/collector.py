@@ -1,13 +1,12 @@
 "函数区：收集数据"
 
 ## 函数区：收集数据
-from SystemicRiskSimulator import pd, path, Optional, logging
+from SystemicRiskSimulator import pd, Path, Optional, logging
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
 from SystemicRiskSimulator.core.define.define_environmentVariables import env
 from SystemicRiskSimulator.core.define.define_type import *
-
 
 pass  # end import
 
@@ -158,8 +157,8 @@ class Collector:
         """
 
         ## 导出为pkl格式
-        pd.to_pickle(A_data.BB, path.join(env['folderpath_of_experiments_output_data'], "BB_exp=" + str(env['id_experiment']) + ".pkl"))  # 导出为pkl格式
-        pd.to_pickle(A_data.IB, path.join(env['folderpath_of_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".pkl"))  # 导出为pkl格式
+        pd.to_pickle(A_data.BB, Path(env['folderpath_of_experiments_output_data'], r"BB_exp=" + str(env['id_experiment']) + r".pkl"))  # 导出为pkl格式
+        pd.to_pickle(A_data.IB, Path(env['folderpath_of_experiments_output_data'], r"IB_exp=" + str(env['id_experiment']) + r".pkl"))  # 导出为pkl格式
 
         pass  # function
 
@@ -344,17 +343,32 @@ class Collector:
 
         """
         env['num_experiment'] = len(list_combination_of_para)  # 获取实验组之实验个数
+
+        # env['num_bank'] = len(para['list_id_bank'])  if env['num_bank'] is None else env['num_bank']
         df_010 = pd.DataFrame(list_combination_of_para, columns=para.keys())  # 转换字典列表为数据框
-        li_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
-        id_type_is_list = li_types.index(np.ndarray)  # 获取索引值为类型为list的
-        df_combinationOfPara = df_010.explode(df_010.keys()[id_type_is_list])
-        # li_010 = [df_010.apply(lambda x: pd.Series(x[i]), axis=1).stack().reset_index(level=1, drop=True) for i in range(df_010.columns.__len__())]
-        # li_020 = [np.array(li_010[i]) for i in range(li_010.__len__())]
-        # df_combinationOfPara = pd.DataFrame(li_020).T
-        # df_combinationOfPara.columns = paras.keys()
+        list_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
+        id_type_is_array = list_types.index(np.ndarray)  # 获取索引值为类型为数组类型的
+
+        ## 获取银行个数
+        is_need_to_get_num_bank = False
+        if 'num_bank' in env.keys():
+            if env['num_bank'] is None:
+                is_need_to_get_num_bank = True
+                pass  # if
+        else:
+            is_need_to_get_num_bank = True
+            pass  # if
+
+        if is_need_to_get_num_bank:
+            env['num_bank'] = len(para[list(para.keys())[id_type_is_array]][0])  # 获取字典 `para` 在索引 `id_type_is_array` 对应的变量。该变量是一个列表。获取该列表第一个元素。该元素是一个数组。获取该数组大小，作为银行个数
+
+        ## 展开数组类型的参数，得到一个新的数据框变量。该变量具有所有参数组合。后续在实验组循环中，每次取一行，作为本次实验的参数。
+        df_combinationOfPara = df_010.explode(df_010.keys()[id_type_is_array])
         df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1, env['num_bank'] + 1)), reps=env['num_experiment']))  # 添加数据项id
         df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
-        # df_combinationOfPara.to_csv(os.path.join(env['folderpath_of_experiments_output_data'], "paras.csv"), df_combinationOfPara)  # 导出字段列表为csv格式
+
+        ## 导出实验参数为 csv 格式
+        df_combinationOfPara.to_csv(Path(env['folderpath_of_experiments_output_data'], r"paras.csv"))  # 导出字段列表为csv格式
         pass  # function
 
     pass  # class

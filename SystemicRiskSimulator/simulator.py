@@ -18,7 +18,7 @@ def simulator(config: dict):
     global env, para
 
     # %% 首先导入相关包
-    from SystemicRiskSimulator import platform, logging, warnings, os, Path
+    from SystemicRiskSimulator import os, platform, logging, warnings, Path
     from SystemicRiskSimulator.tools.tools import Tools
 
     # %% 初始化
@@ -26,8 +26,8 @@ def simulator(config: dict):
     config['folderpath_simulator'] = Tools.get_project_rootpath(config['foldername_simulator'], config['folderpath_realpath_simulator'])
     config['folderpath_project'] = Tools.get_project_rootpath()
     # 如果 settings 之 enviroments 有内容，那么就删除，否则就从其他文件夹中复制之后再导入
-    Tools._delete_and_recreate_folder(Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/settings/environments"), is_auto_confirmation=False)
-    Tools._copy_files_from_other_folders(Path(config['folderpath_project'], config['folderpath_settings_environments']), Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/settings/environments"), is_auto_confirmation=False)
+    Tools._delete_and_recreate_folder(Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/settings/environments"), is_auto_confirmation=True)
+    Tools._copy_files_from_other_folders(Path(config['folderpath_project'], config['folderpath_settings_environments']), Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/settings/environments"), is_auto_confirmation=True)
     from SystemicRiskSimulator.core.define.define_environmentVariables import env
 
     ## 生成实验相关的文件夹用于本批次实验
@@ -55,12 +55,12 @@ def simulator(config: dict):
         is_datetime=True,
     )
 
-    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/parameters"), is_auto_confirmation=False)
-    Tools._copy_files_from_other_folders(env['folderpath_settings_parameters'], Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/parameters"), is_auto_confirmation=False)
+    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/parameters"), is_auto_confirmation=env['is_auto_confirmation'])
+    Tools._copy_files_from_other_folders(env['folderpath_settings_parameters'], Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/parameters"), is_auto_confirmation=env['is_auto_confirmation'])
     from SystemicRiskSimulator.core.define.define_parameterVariables import para
 
-    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/agents"), is_auto_confirmation=False)
-    Tools._copy_files_from_other_folders(env['folderpath_settings_agents'], Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/agents"), is_auto_confirmation=False)
+    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/agents"), is_auto_confirmation=env['is_auto_confirmation'])
+    Tools._copy_files_from_other_folders(env['folderpath_settings_agents'], Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/agents"), is_auto_confirmation=env['is_auto_confirmation'])
     # from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 
     from SystemicRiskSimulator.core.operations.operator import Operator
@@ -68,7 +68,7 @@ def simulator(config: dict):
     ## 设置日志
     logger = logging.getLogger()
     logger.setLevel(env['test_logging'])
-    log_file_handler = logging.FileHandler(os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"))
+    log_file_handler = logging.FileHandler(Path(env['folderpath_of_experiments_output_data'], "outputlog.txt"))
     logger.addHandler(log_file_handler)
     log_console_handler = logging.StreamHandler()
     logger.addHandler(log_console_handler)
@@ -92,18 +92,21 @@ def simulator(config: dict):
 
     # %% 清理
     ## 删除设置文件夹、模型文件夹内的所有文件，但是保留文件夹
-    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/environments"), is_auto_confirmation=False)
-    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/parameters"), is_auto_confirmation=False)
-    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/agents"), is_auto_confirmation=False)
-    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=False)
+    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/environments"), is_auto_confirmation=env['is_auto_confirmation'])
+    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/parameters"), is_auto_confirmation=env['is_auto_confirmation'])
+    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/settings/agents"), is_auto_confirmation=env['is_auto_confirmation'])
+    Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=env['is_auto_confirmation'])
+
     ## 默认程序打开输出文件查看
-    system = platform.system()
-    if system == 'Darwin':
-        os.system(r"open " + os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"))
-    elif system == 'Windows':
-        os.startfile(os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"))
-    elif system == 'Linux':
-        os.system('xdg-open ' + os.path.join(env['folderpath_of_experiments_output_data'], "outputlog.txt"))
-    else:
-        print("Unsupported operating system")
+    if env['is_auto_open_outputlog']:
+        system = platform.system()
+        if system == 'Darwin':
+            os.system(r"open " + str(Path(env['folderpath_of_experiments_output_data'], r"outputlog.txt")))
+        elif system == 'Windows':
+            os.startfile(str(Path(env['folderpath_of_experiments_output_data'], r"outputlog.txt")))
+        elif system == 'Linux':
+            os.system('xdg-open ' + str(Path(env['folderpath_of_experiments_output_data'], r"outputlog.txt")))
+        else:
+            print("Unsupported operating system")
+            pass  # if
         pass  # if

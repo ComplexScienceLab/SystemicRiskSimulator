@@ -30,11 +30,11 @@ class Builder:
         ## 导入相关模块（#NOTE 动态导入，严禁删除。如果 IDE 报错，是正常的。因为这个是在程序运行时动态导入。）
         ## 导入模型之初始态实体之数据内容
         import SystemicRiskSimulator.data.models.entities_data
-        list_entityData = Tools.import_modules_from_package(env['folderpath_import_modules'], r"entityData_", env['folderpath_project'])
+        list_entityData = Tools.import_modules_from_package(env['folderpath_import_modules'], r"entityData_", env['folderpath_simulator'])
 
         ## 导入模型之内容
         import SystemicRiskSimulator.data.models.contents
-        modelContents = Tools.import_modules_from_package(env['folderpath_import_modules'], r"content_", env['folderpath_project'])
+        modelContents = Tools.import_modules_from_package(env['folderpath_import_modules'], r"content_", env['folderpath_simulator'])
 
         ## 根据模型实体数据列表之数据，生成相应的模型实体对象，然后组成模型实体列表
         for entityData in list_entityData.values():

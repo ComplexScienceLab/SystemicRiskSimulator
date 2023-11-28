@@ -7,7 +7,6 @@ from SystemicRiskSimulator.core.define.define_agents import BankCommercial, Bank
 from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_environmentVariables import env
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
-from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 from SystemicRiskSimulator.core.functions.fun_finance import Finance
 
 pass  # end import
@@ -21,6 +20,69 @@ class DataInstaller:
     A_data = AgentDataCollection([], [])
 
     @classmethod
+    def set_imported_values_to_Bank_variables(cls):
+        """
+        导入数据以初始化银行主体众、银行间主体众变量
+
+        Returns:
+            bank(BankCommercial): 银行主体众
+            interbank(BankInterbank): 银行间主体众
+
+        """
+        # dict_bankCommercial, dict_bankInterbank = cls.set_default_values_to_Bank_variables
+        from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
+
+        with open(Path(env['folderpath_settings_agents'], "BankCommercial.pkl"), 'rb') as f:
+            dict_bankCommercial = pickle.load(f)
+        with open(Path(env['folderpath_settings_agents'], "BankInterbank.pkl"), 'rb') as f:
+            dict_bankInterbank = pickle.load(f)
+
+        # ## NOTE 当用对象字段数据结构时：
+        # bank, interbank = cls.set_default_values_to_Bank_variables()
+        # bank.__dict__ = deepcopy(dict_bankCommercial)
+        # interbank.__dict__ = deepcopy(dict_bankInterbank)
+
+        ## NOTE 当用pandas数据结构时：
+        bank = pd.Series()
+        for k, v in deepcopy(dict_bankCommercial).items():
+            bank[k] = v
+        interbank = pd.Series()
+        for k, v in deepcopy(dict_bankInterbank).items():
+            interbank[k] = v
+
+        return bank, interbank
+
+        pass  # function
+
+    @classmethod
+    def set_manually_values_to_Bank_variables(cls):
+        """手动设置以初始化银行变量"""
+
+        from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
+
+        # ## NOTE 当用对象字段数据结构时：
+        # bank, interbank = cls.set_default_values_to_Bank_variables()
+        # bank.__dict__ = deepcopy(dict_bankCommercial)
+        # interbank.__dict__ = deepcopy(dict_bankInterbank)
+
+        ## NOTE 当用pandas数据结构时：
+        bank = pd.Series()
+        for k, v in deepcopy(dict_bankCommercial).items():
+            bank[k] = v
+        interbank = pd.Series()
+        for k, v in deepcopy(dict_bankInterbank).items():
+            interbank[k] = v
+
+        return bank, interbank
+        pass  # function
+
+    # @classmethod
+    # def set_randomly_values_to_Bank_variables(cls):
+    #     # """随机化初始化银行变量 HACK 这个功能以后有需要再实现。"""
+    #     # bank, interbank = cls.set_default_values_to_Bank_variables()
+    #     pass  # function
+
+    @classmethod
     def set_default_values_to_Bank_variables(cls):
         """
         设置默认值给银行主体众、银行间主体众变量。
@@ -29,7 +91,7 @@ class DataInstaller:
             bank(BankCommercial): 银行主体众
             interbank(BankInterbank): 银行间主体众
         """
-        bank: BankCommercial = BankCommercial(
+        bankCommercial: BankCommercial = BankCommercial(
             id_agent=CONST(env['num_bank']).RANGE1.copy(),  # agent 之编号 id
             abbr=np.full((env['num_bank'], 1), ""),  # 缩写 abbr
             name=np.full((env['num_bank'], 1), ""),  # 全名 name
@@ -112,7 +174,7 @@ class DataInstaller:
 
         )
 
-        interbank: BankInterbank = BankInterbank(
+        bankInterbank: BankInterbank = BankInterbank(
             id_agent=CONST(env['num_bank']).RANGE2.copy(),  # agent 之间之关联编号 id
             A_IB=CONST(env['num_bank']).ZEROS2.copy(),  # 银行间资产邻接矩阵 A_IB
             Z_IB=CONST(env['num_bank']).ZEROS2.copy(),  # 银行间负债邻接矩阵 Z_IB
@@ -145,39 +207,9 @@ class DataInstaller:
             deb_br=[],  # 信息列表之于破产的银行之债务方银行编号 list_debtors_in_bankrupt
         )
 
-        return bank, interbank
-        pass  # function
-
-    # @classmethod
-    # def set_randomly_values_to_Bank_variables(cls):
-    #     # """随机化初始化银行变量 HACK 这个功能以后有需要再实现。"""
-    #     # bank, interbank = cls.set_default_values_to_Bank_variables()
-    #     pass  # function
-
-    @classmethod
-    def set_imported_values_to_Bank_variables(cls):
-        """
-        导入数据以初始化银行主体众、银行间主体众变量 #DEBUG导入数据以初始化银行变量
-
-        Returns:
-            bank(BankCommercial): 银行主体众
-            interbank(BankInterbank): 银行间主体众
-
-        """
-        bank, interbank = cls.set_default_values_to_Bank_variables
-
-        with open(Path(env['folderpath_settings_agents'], '/BankCommercial.pkl'), 'rb') as f:
-            bank = pickle.load(f)
-        with open(Path(env['folderpath_settings_agents'], '/BankInterbank.pkl'), 'rb') as f:
-            interbank = pickle.load(f)
-
-        return bank, interbank
-
-        pass  # function
-
-    @classmethod
-    def set_manually_values_to_Bank_variables(cls):
-        """手动设置以初始化银行变量"""
+        ## 获取各 agents 之字段数据结构为字典变量
+        dict_bankCommercial = vars(bankCommercial)
+        dict_bankInterbank = vars(bankInterbank)
 
         # ## NOTE 当用对象字段数据结构时：
         # bank, interbank = cls.set_default_values_to_Bank_variables()
@@ -202,13 +234,13 @@ class DataInstaller:
 
         参数init_method可选项：
 
-        - ``only init``:  仅单纯初始化；
-
-        - ``randomly``:  生成随机数据以初始化；
-
         - ``import data``:  导入数据以初始化
 
         - ``manually``:  手动设置以初始化；
+
+        - ``randomly``:  生成随机数据以初始化； #HACK 按需添加
+
+        - ``only init``:  仅单纯初始化；
 
         在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值做处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
 
@@ -219,22 +251,24 @@ class DataInstaller:
 
         """
 
-        if init_method == "only init":
-            BB, IB = cls.set_default_values_to_Bank_variables()
-        elif init_method == "randomly":
-            BB, IB = cls.set_randomly_values_to_Bank_variables()  # TODO 按需添加
-        elif init_method == "import data":
-            BB, IB = cls.set_imported_values_to_Bank_variables()  # 导入数据以初始化银行变量 #TODO 按需添加
+        if init_method == "import data":
+            BB, IB = cls.set_imported_values_to_Bank_variables()  # 导入数据以初始化银行变量
         elif init_method == "set manually":
             BB, IB = cls.set_manually_values_to_Bank_variables()  # 手动设置以初始化银行变量
+        elif init_method == "randomly":
+            BB, IB = cls.set_randomly_values_to_Bank_variables()  # HACK 按需添加
+        elif init_method == "only init":
+            BB, IB = cls.set_default_values_to_Bank_variables()
         else:
             raise ("关键词" + str(init_method) + "取值错误！")
-            pass
+            pass  # if
+
+        env['num_bank'] = len(BB.on)  # 获取 agents 之个体数量
 
         # # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组 #HACK无用
         # A_data = Collector.collect(A, None, env)
 
-        # TODO 后续需要统一这两个变量的用法，防止混乱使用
+        # HACK 后续需要统一这两个变量的用法，防止混乱使用
         b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置A.BB示性变量
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
 
