@@ -7,17 +7,17 @@ from SystemicRiskSimulator.core.define.define_entity import Entity
 from SystemicRiskSimulator.core.operations.processor import Processor as p
 from SystemicRiskSimulator.core.operations.builder import Builder as b
 
-# from SystemicRiskSimulator.models.contents.models_contents.content_ExBankInsolventShock import content_ExBankInsolventShock
-# from SystemicRiskSimulator.models.contents.models_contents.content_ExBankIlliquidShock import content_ExBankIlliquidShock
-# from SystemicRiskSimulator.models.contents.models_contents.content_InterBankInsolventShock import content_InterBankInsolventShock
-# from SystemicRiskSimulator.models.contents.models_contents.content_InterBankInsolventContagion import content_InterBankInsolventContagion
-# from SystemicRiskSimulator.models.contents.models_contents.content_InterBankIlliquidContagionShock import content_InterBankIlliquidContagionShock
-# from SystemicRiskSimulator.models.contents.models_contents.content_InterBankIlliquidAllocate import content_InterBankIlliquidAllocate
-# from SystemicRiskSimulator.models.contents.models_contents.content_InterBankIlliquidRepay import content_InterBankIlliquidRepay
+# from SystemicRiskSimulator.data.models.contents.models_contents.content_ExBankInsolventShock import content_ExBankInsolventShock
+# from SystemicRiskSimulator.data.models.contents.models_contents.content_ExBankIlliquidShock import content_ExBankIlliquidShock
+# from SystemicRiskSimulator.data.models.contents.models_contents.content_InterBankInsolventShock import content_InterBankInsolventShock
+# from SystemicRiskSimulator.data.models.contents.models_contents.content_InterBankInsolventContagion import content_InterBankInsolventContagion
+# from SystemicRiskSimulator.data.models.contents.models_contents.content_InterBankIlliquidContagionShock import content_InterBankIlliquidContagionShock
+# from SystemicRiskSimulator.data.models.contents.models_contents.content_InterBankIlliquidAllocate import content_InterBankIlliquidAllocate
+# from SystemicRiskSimulator.data.models.contents.models_contents.content_InterBankIlliquidRepay import content_InterBankIlliquidRepay
 
 pass  # end import
 
-# import SystemicRiskSimulator.models.contents
+# import SystemicRiskSimulator.data.models.contents
 
 
 content_IB1111 = \

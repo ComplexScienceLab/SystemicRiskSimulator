@@ -1,6 +1,30 @@
-"函数区：可视化工具集"
+"""
+函数区：可视化工具集
+"""
 
-from SystemicRiskSimulator import dw, pd, ig, np, plt, reduce
+from SystemicRiskSimulator.core.define.define_environmentVariables import env
+
+if env['need_visualization']:  #DEBUG 还没有测试
+    import importlib
+
+    for package in env['visualization_packages']:
+        try:
+            importlib.import_module(package)
+        except ImportError:
+            print(f"{package} 未安装，正在进行安装...")
+            try:
+                import subprocess
+
+                subprocess.check_call(['pip3', 'install', package])
+                print(f"{package} 安装成功")
+            except Exception as e:
+                print(f"{package} 安装失败: {e}")
+    pass  # if
+
+    import matplotlib.pyplot as plt
+    import igraph as ig
+    import drawsvg as dw
+    from SystemicRiskSimulator import pd, np, reduce
 from SystemicRiskSimulator.tools.tools import Tools
 
 

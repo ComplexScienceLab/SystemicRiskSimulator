@@ -10,8 +10,6 @@ venv/
 
 .idea/
 
-SystemicRiskSimulator/settings
-SystemicRiskSimulator/models
 SystemicRiskSimulator/data
 Samples/data
 data

@@ -6,8 +6,7 @@
 from SystemicRiskSimulator import Path
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
-from SystemicRiskSimulator.tools.tools import Tools
-from SystemicRiskSimulator.settings.environments.set_environments_variables import set_environments_variables
+from SystemicRiskSimulator.data.settings.environments.set_environments_variables import set_environments_variables
 
 pass  # end import
 
@@ -18,6 +17,9 @@ env: EnvironmentVariableType = {}
 env['folderpath_of_experiments'] = ""  # 主文件夹路径之于实验。将由函数生成；
 env['foldername_of_experiments'] = ""  # 实验文件夹名称
 env['folderpath_of_experiments_output_data'] = ""  # 实验导出数据文件夹名称
+
+env['need_visualization'] = False  # 是否需要可视化
+env['visualization_packages'] = ['matplotlib', 'igraph', 'drawsvg']  # 可视化所需的第三方工具包
 
 env['id_data'] = 0  # 实验初始数据帧ID号；
 env['round'] = 0  # 初始轮次计次为0；
@@ -39,8 +41,8 @@ env['process_name'] = ""  # 运行的过程之名称；
 env['folderpath_project'] = Path.cwd()  # 当前项目路径；
 env['folderpath_import_modules'] = ""  # 当前需要导入的模块所在总路径；
 
-env['df_BB'] = None  # Pandas格式的银行数据
-env['df_IB'] = None  # Pandas格式的银行间数据
+env['df_BB'] = None  # Pandas格式的银行数据 #HACK 似乎无用
+env['df_IB'] = None  # Pandas格式的银行间数据 #HACK 似乎无用
 
 # """
 # env['model_process_state'] 表示当前模型根节点处理状态 #HACK 无用，但是可以保留作为借鉴
@@ -63,4 +65,4 @@ env.update(set_environments_variables)  # 更新环境变量设置项
 
 if __name__ == "__main__":
     print(env)
-    pass
+pass

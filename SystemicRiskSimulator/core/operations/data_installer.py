@@ -2,7 +2,7 @@
 安装、初始化数据机
 """
 
-from SystemicRiskSimulator import np, pd, copy, deepcopy
+from SystemicRiskSimulator import np, pd, copy, deepcopy, pickle, Path
 from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank, SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_environmentVariables import env
@@ -10,10 +10,6 @@ from SystemicRiskSimulator.core.define.define_type import IdsType
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 from SystemicRiskSimulator.core.functions.fun_finance import Finance
-
-# from SystemicRiskSimulator.core.operations.executer import Executer
-
-# from SystemicRiskSimulator.core.operations.executer import Executer
 
 pass  # end import
 
@@ -162,18 +158,21 @@ class DataInstaller:
         pass
 
     @classmethod
-    def set_imported_values_to_Bank_variables(cls,):
+    def set_imported_values_to_Bank_variables(cls, ):
         """
-        导入数据以初始化银行主体众、银行间主体众变量
+        导入数据以初始化银行主体众、银行间主体众变量 #DEBUG导入数据以初始化银行变量
 
         Returns:
             bank(BankCommercial): 银行主体众
             interbank(BankInterbank): 银行间主体众
 
         """
-        # NOW """导入数据以初始化银行变量"""
         bank, interbank = cls.set_default_values_to_Bank_variables
 
+        with open(Path(env['folderpath_settings_agents'], '/BankCommercial.pkl'), 'rb') as f:
+            bank = pickle.load(f)
+        with open(Path(env['folderpath_settings_agents'], '/BankInterbank.pkl'), 'rb') as f:
+            interbank = pickle.load(f)
         pass
 
     @classmethod
@@ -188,10 +187,10 @@ class DataInstaller:
         ## NOTE 当用pandas数据结构时：
         bank = pd.Series()
         for k, v in deepcopy(dict_bankCommercial).items():
-            bank[k] = v  # BUG 需要改成 bank[k] = v.copy()，否则会出现引用错乱
+            bank[k] = v
         interbank = pd.Series()
         for k, v in deepcopy(dict_bankInterbank).items():
-            interbank[k] = v  # BUG 需要改成 interbank[k] = v.copy()，否则会出现引用错乱
+            interbank[k] = v
 
         return bank, interbank
         pass  # function
@@ -225,7 +224,7 @@ class DataInstaller:
         elif init_method == "randomly":
             BB, IB = cls.set_randomly_values_to_Bank_variables()  # TODO 按需添加
         elif init_method == "import data":
-            BB, IB, cls.A_data.BB, cls.A_data.IB = cls.set_imported_values_to_Bank_variables()  # 导入数据以初始化银行变量 #TODO 按需添加
+            BB, IB = cls.set_imported_values_to_Bank_variables()  # 导入数据以初始化银行变量 #TODO 按需添加
         elif init_method == "set manually":
             BB, IB = cls.set_manually_values_to_Bank_variables()  # 手动设置以初始化银行变量
         else:

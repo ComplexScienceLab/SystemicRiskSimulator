@@ -2,7 +2,7 @@
 程序：设置模型变量ModelVariables
 """
 
-from SystemicRiskSimulator.settings.agents.set_agents_variables import set_bankCommercial_variables, set_bankInterbank_variables
+from SystemicRiskSimulator.data.settings.agents.set_agents_variables import set_bankCommercial_variables, set_bankInterbank_variables
 
 pass  # end import
 
