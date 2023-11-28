@@ -1,14 +1,8 @@
 """银行间挤兑流动执行借贷流量模型"""
 
-<<<<<<< HEAD:PySystemicRiskLab/models/contents/algorithms_contents/content_InterBankIlliquidRepay.py
-from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
-from PySystemicRiskLab.core.functions.fun_finance import Finance
-from PySystemicRiskLab.core.operations.executer import Executer
-=======
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.functions.fun_finance import Finance
 from SystemicRiskSimulator.core.operations.executer import Executer
->>>>>>> dev:SystemicRiskSimulator/models/contents/algorithms_contents/content_InterBankIlliquidRepay.py
 
 pass  # end import
 

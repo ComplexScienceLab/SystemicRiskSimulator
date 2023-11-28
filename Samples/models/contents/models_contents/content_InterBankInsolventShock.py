@@ -1,14 +1,8 @@
 """资不抵债银行资产违约损失冲击模型"""
 
-<<<<<<< HEAD:PySystemicRiskLab/models/contents/algorithms_contents/content_InterBankInsolventShock.py
-from PySystemicRiskLab import np
-from PySystemicRiskLab.core.define.define_agents import SystemicRiskAgent
-from PySystemicRiskLab.core.operations.executer import Executer
-=======
 from SystemicRiskSimulator import np
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.operations.executer import Executer
->>>>>>> dev:SystemicRiskSimulator/models/contents/algorithms_contents/content_InterBankInsolventShock.py
 
 pass  # end import
 
