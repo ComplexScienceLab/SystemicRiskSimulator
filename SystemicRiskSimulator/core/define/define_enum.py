@@ -26,7 +26,6 @@ class StateOfScheduleEnum(Enum):
 
     idle = 'idle',
     initializing = 'initializing',
-    # indexing = 'indexing',
     stepping = 'stepping',
     running = 'running',
     saving = 'saving',
@@ -36,20 +35,3 @@ class StateOfScheduleEnum(Enum):
     pass
 
 
-# class StateOfCollectingEnum(Enum): #TODO 无用可以删除
-#     """
-#     收集模型数据时，模型所处的状态。状态符有以下几种：
-#
-#     - ``idle`：闲置状态；
-#
-#     - `initializing`：初始状态；
-#
-#     - `running`：运行状态；
-#
-#     - `ending`：收尾状态；
-#     """
-#     idle = 'idle'
-#     initializing = 'initializing',
-#     running = 'running',
-#     ending = 'ending',
-#     pass

@@ -1,6 +1,5 @@
 "函数区：工具集"
-from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, logging, np, random, string, shutil, locale, Union
-from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
+from SystemicRiskSimulator import os, time, Path, itertools, pkgutil, importlib, re, np, random, string, shutil, locale
 
 pass  # end import
 

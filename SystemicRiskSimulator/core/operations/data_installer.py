@@ -2,11 +2,10 @@
 安装、初始化数据机
 """
 
-from SystemicRiskSimulator import np, pd, copy, deepcopy, pickle, Path
+from SystemicRiskSimulator import np, pd, deepcopy, pickle, Path
 from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank, SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_environmentVariables import env
-from SystemicRiskSimulator.core.define.define_type import IdsType
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 from SystemicRiskSimulator.core.functions.fun_finance import Finance
@@ -149,16 +148,14 @@ class DataInstaller:
         return bank, interbank
         pass  # function
 
-    @classmethod
-    def set_randomly_values_to_Bank_variables(cls):
-        # TODO """随机化初始化银行变量"""
-        # bank, interbank = cls.set_default_values_to_Bank_variables()
-        pass
-
-        pass
+    # @classmethod
+    # def set_randomly_values_to_Bank_variables(cls):
+    #     # """随机化初始化银行变量 HACK 这个功能以后有需要再实现。"""
+    #     # bank, interbank = cls.set_default_values_to_Bank_variables()
+    #     pass  # function
 
     @classmethod
-    def set_imported_values_to_Bank_variables(cls, ):
+    def set_imported_values_to_Bank_variables(cls):
         """
         导入数据以初始化银行主体众、银行间主体众变量 #DEBUG导入数据以初始化银行变量
 
@@ -173,7 +170,10 @@ class DataInstaller:
             bank = pickle.load(f)
         with open(Path(env['folderpath_settings_agents'], '/BankInterbank.pkl'), 'rb') as f:
             interbank = pickle.load(f)
-        pass
+
+        return bank, interbank
+
+        pass  # function
 
     @classmethod
     def set_manually_values_to_Bank_variables(cls):

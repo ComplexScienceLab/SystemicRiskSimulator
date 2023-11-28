@@ -7,7 +7,6 @@ from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_entity import Entity
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
-# from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.core.operations.scheduler import Scheduler
 from SystemicRiskSimulator.core.functions.fun_finance import Finance
 from SystemicRiskSimulator.core.operations.collector import Collector

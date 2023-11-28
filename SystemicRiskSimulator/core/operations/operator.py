@@ -2,7 +2,7 @@
 运作机
 """
 
-from SystemicRiskSimulator import Path, time, np, logging, dataclass, Any
+from SystemicRiskSimulator import Path, time, logging, dataclass, Any
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
 from SystemicRiskSimulator.core.operations.collector import Collector

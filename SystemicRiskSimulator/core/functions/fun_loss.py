@@ -4,7 +4,7 @@
 
 
 
-from SystemicRiskSimulator.core import np
+from SystemicRiskSimulator import np
 pass  # end import
 
 

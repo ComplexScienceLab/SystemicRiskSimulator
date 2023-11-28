@@ -2,7 +2,6 @@
 设置多主体变量
 """
 
-from SystemicRiskSimulator import deepcopy
 from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.core.define.define_environmentVariables import env

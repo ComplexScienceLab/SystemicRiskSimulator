@@ -3,7 +3,6 @@
 ## 程序：定义常量
 
 
-# from SystemicRiskSimulator.core import np, env
 pass  # end import
 
 import numpy as np

@@ -2,7 +2,6 @@
 构建机
 """
 
-from SystemicRiskSimulator import Any, deepcopy, re
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
 from SystemicRiskSimulator.core.define.define_environmentVariables import env
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager

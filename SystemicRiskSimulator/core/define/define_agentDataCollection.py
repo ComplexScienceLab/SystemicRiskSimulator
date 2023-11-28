@@ -1,6 +1,5 @@
 "结构体：定义待收集数据类型"
 from SystemicRiskSimulator import pd
-# from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank
 
 pass  # end import
 

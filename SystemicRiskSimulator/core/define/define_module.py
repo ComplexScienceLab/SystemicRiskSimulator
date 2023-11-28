@@ -1,6 +1,5 @@
 "程序：定义模型及其相关的结构体"
 
-from SystemicRiskSimulator.core.define.define_type import *
 
 pass  # end import
 

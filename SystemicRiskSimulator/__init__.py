@@ -44,5 +44,3 @@ import locale
 # import matplotlib.font_manager as fm
 # from matplotlib.font_manager import FontProperties
 
-# env = {}
-# env["folderpath_project"] = os.getcwd()
