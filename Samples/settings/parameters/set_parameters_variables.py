@@ -26,11 +26,6 @@ set_parameters_variables = dict(
         np.array([1.0, 0.0, 0.0, 0.0, 0.0]),
     ],
 
-    ## 指定遭受初始外生冲击的银行列表
-    list_Shock_exIB_t=[
-        np.array([True, False, False, False, False]),
-    ],
-
     ## 银行抛售厂商贷款资产价格折扣率。默认0.0。#HACK目前暂时不考虑这个参数！
     kappa_A_P=[
         0.0
