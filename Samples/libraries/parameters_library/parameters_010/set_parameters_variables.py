@@ -11,7 +11,7 @@ set_parameters_variables = dict(
 
     ## 指定待处理的模型
     model_name=[
-        'IB1111',
+        'IB1111_流程版',
     ],
 
     ## 外生违约损失冲击权重百分比

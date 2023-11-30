@@ -6,8 +6,8 @@
 entityData_IB1111 = dict(
     attribute=dict(
         id="user2000",
-        entity_name="IB1111",
-        text_name="模型IB1111",
+        entity_name="IB1111_流程版",
+        text_name="模型IB1111之标准流程版",
         entity_type={"template entity"},
         structure_type={"container structure", "process structure"},
         container_type={"root container"},
