@@ -24,7 +24,7 @@ if sgv['need_visualization']:  #DEBUG 还没有测试
     import matplotlib.pyplot as plt
     import igraph as ig
     import drawsvg as dw
-    from SystemicRiskSimulator import pd, np, reduce
+    from SystemicRiskSimulator.external_packages import pd, np, reduce
 from SystemicRiskSimulator.tools.tools import Tools
 
 

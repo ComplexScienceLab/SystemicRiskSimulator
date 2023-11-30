@@ -2,7 +2,7 @@
 
 
 
-from SystemicRiskSimulator import np
+from SystemicRiskSimulator.external_packages import np
 pass  # end import
 
 set_parameters_variables = dict(

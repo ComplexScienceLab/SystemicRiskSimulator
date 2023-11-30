@@ -3,7 +3,7 @@
 
 记得这里发生变更时，要手动检查`Operator.operate_experiment`相关位置是否要更新。
 """
-from SystemicRiskSimulator import Path
+from SystemicRiskSimulator.external_packages import Path
 from SystemicRiskSimulator.core.define.define_type import SimulatorGlobalVariableType
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
 from SystemicRiskSimulator.data.config.set_config_variables import set_config_variables

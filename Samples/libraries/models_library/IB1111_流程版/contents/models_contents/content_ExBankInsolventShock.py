@@ -1,6 +1,6 @@
 """外部资产违约损失冲击"""
 
-from SystemicRiskSimulator import np
+from SystemicRiskSimulator.external_packages import np
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.operations.executer import Executer
 

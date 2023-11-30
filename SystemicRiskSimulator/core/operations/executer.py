@@ -2,7 +2,7 @@
 执行机
 """
 
-from SystemicRiskSimulator import logging
+from SystemicRiskSimulator.external_packages import logging
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_entity import Entity

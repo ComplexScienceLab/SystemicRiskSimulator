@@ -3,7 +3,7 @@
 #NOTE：如果不是因为Python语言会出现循环调用的情况，那么会将这里的一些功能和内容放入`operator`。
 """
 
-from SystemicRiskSimulator import dataclass, logging, re, random
+from SystemicRiskSimulator.external_packages import dataclass, logging, re, random
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_entity import Entity

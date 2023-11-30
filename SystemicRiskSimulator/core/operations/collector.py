@@ -1,7 +1,7 @@
 "函数区：收集数据"
 
 ## 函数区：收集数据
-from SystemicRiskSimulator import pd, Path, Optional, logging
+from SystemicRiskSimulator.external_packages import pd, Path, Optional, logging
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum

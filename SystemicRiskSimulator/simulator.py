@@ -18,7 +18,7 @@ def simulator(config: dict):
     global sgv, para
 
     # %% 首先导入相关包
-    from SystemicRiskSimulator import os, platform, logging, warnings, Path
+    from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path
     from SystemicRiskSimulator.tools.tools import Tools
 
     # %% 初始化
@@ -73,7 +73,7 @@ def simulator(config: dict):
     log_console_handler = logging.StreamHandler()
     logger.addHandler(log_console_handler)
 
-    logging.info("\n实验组名称：%s" + sgv['foldername_experiments'] + "\n")
+    logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
     logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
     logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
     logging.info("\n相关实验 models 文件夹：" + sgv['folderpath_models'].name + "\n")

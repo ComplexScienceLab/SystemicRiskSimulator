@@ -1,5 +1,5 @@
 "函数区：工具集"
-from SystemicRiskSimulator import time, Path, itertools, pkgutil, importlib, re, np, random, string, shutil, locale
+from SystemicRiskSimulator.external_packages import time, Path, itertools, pkgutil, importlib, re, np, random, string, shutil, locale
 
 pass  # end import
 

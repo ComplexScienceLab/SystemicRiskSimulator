@@ -2,7 +2,7 @@
 模型IB1111
 """
 import random
-from SystemicRiskSimulator import logging
+from SystemicRiskSimulator.external_packages import logging
 from SystemicRiskSimulator.core.define.define_entity import Entity
 from SystemicRiskSimulator.core.operations.processor import Processor as p
 from SystemicRiskSimulator.core.operations.builder import Builder as b

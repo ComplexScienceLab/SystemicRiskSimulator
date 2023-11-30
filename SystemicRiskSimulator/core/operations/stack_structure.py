@@ -5,7 +5,7 @@
 
 """
 
-from SystemicRiskSimulator import Union
+from SystemicRiskSimulator.external_packages import Union
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.define.define_entity import Entity
 

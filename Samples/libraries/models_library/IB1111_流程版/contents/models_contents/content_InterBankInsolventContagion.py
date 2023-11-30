@@ -1,6 +1,6 @@
 """资不抵债银行间违约损失传染模型"""
 
-from SystemicRiskSimulator import np
+from SystemicRiskSimulator.external_packages import np
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.operations.executer import Executer
 

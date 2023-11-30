@@ -2,7 +2,7 @@
 安装、初始化数据机
 """
 
-from SystemicRiskSimulator import np, pd, deepcopy, pickle, Path
+from SystemicRiskSimulator.external_packages import np, pd, deepcopy, pickle, Path
 from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank, SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv

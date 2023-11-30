@@ -1,6 +1,6 @@
 """银行存款挤兑流动冲击模型"""
 
-from SystemicRiskSimulator import np
+from SystemicRiskSimulator.external_packages import np
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.operations.executer import Executer
 

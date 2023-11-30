@@ -1,4 +1,4 @@
-from SystemicRiskSimulator import np, deepcopy
+from SystemicRiskSimulator.external_packages import np, deepcopy
 from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank
 from SystemicRiskSimulator.core.define.define_type import StateType, MoneyType
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv

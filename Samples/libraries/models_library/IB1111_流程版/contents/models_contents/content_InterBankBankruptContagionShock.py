@@ -1,6 +1,6 @@
 """破产银行间挤兑流动传染冲击模型"""
 
-from SystemicRiskSimulator import np
+from SystemicRiskSimulator.external_packages import np
 from SystemicRiskSimulator.core.define.define_agents import BankInterbank, BankCommercial, SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_type import StateType
 

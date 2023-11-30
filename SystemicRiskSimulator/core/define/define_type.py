@@ -3,7 +3,7 @@
 ## 定义类型，模式3-1
 
 
-from SystemicRiskSimulator import np, Union, Any
+from SystemicRiskSimulator.external_packages import np, Union, Any
 
 pass  # end import
 

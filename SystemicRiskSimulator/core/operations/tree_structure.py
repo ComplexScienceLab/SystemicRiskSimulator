@@ -4,7 +4,7 @@
 #HACK 没有做覆盖性的单元测试。目前只要求能够在主程序中正确运行就好。
 
 """
-from SystemicRiskSimulator import Union, logging
+from SystemicRiskSimulator.external_packages import Union, logging
 from SystemicRiskSimulator.core.define.define_entity import Entity
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 

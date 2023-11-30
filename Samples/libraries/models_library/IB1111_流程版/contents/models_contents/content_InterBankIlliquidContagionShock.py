@@ -1,6 +1,6 @@
 """流动性短缺银行间挤兑流动传染模型"""
 
-from SystemicRiskSimulator import np
+from SystemicRiskSimulator.external_packages import np
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.operations.executer import Executer
 
