@@ -3,7 +3,7 @@
 """
 
 # 复制 settings 模块到模拟器的指定文件夹中
-from SystemicRiskSimulator import importlib,Path
+from SystemicRiskSimulator.external_packages import importlib,Path
 from SystemicRiskSimulator.tools.tools import Tools
 
 # 获取 settings 相关 python 文件之路径

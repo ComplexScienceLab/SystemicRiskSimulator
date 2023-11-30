@@ -3,7 +3,7 @@
 ## 定义类型，模式3-1
 
 
-from SystemicRiskSimulator import np, Union, Any
+from SystemicRiskSimulator.external_packages import np, Union, Any
 
 pass  # end import
 
@@ -28,5 +28,5 @@ ContainerComponentType = Union[list, dict, str, None]
 # ProcessComponentType = np.dtype({'names': ['flow', 'condition'], 'formats': [np.void, 'U']}) #TODO 无用可以删除
 ProcessComponentType = Union[dict, str, None]
 ExecuteComponentType = Union[str, list, None]
-EnvironmentVariableType = Union[dict, Any]  # 环境变量类型 #HACK暂时没用到，目前用的是dict。
+SimulatorGlobalVariableType = Union[dict, Any]  # 模拟器全局变量类型 #HACK暂时没用到，目前用的是dict。
 ParameterVariableType = Union[dict, Any]  # 参数变量类型 #HACK暂时没用到，目前用的是dict。

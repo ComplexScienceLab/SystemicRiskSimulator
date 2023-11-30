@@ -1,5 +1,5 @@
 "函数区：工具集"
-from SystemicRiskSimulator import time, Path, itertools, pkgutil, importlib, re, np, random, string, shutil, locale
+from SystemicRiskSimulator.external_packages import time, Path, itertools, pkgutil, importlib, re, np, random, string, shutil, locale
 
 pass  # end import
 
@@ -38,44 +38,44 @@ class Tools:
         pass  # function
 
     @classmethod
-    def set_experiments_folders(cls, foldername_prefix_of_experiments: str, foldername_of_experiments_output_data: str, str_folderpath_root_dir_of_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str, str_folderpath_models: str, str_folderpath_settings_environments: str, str_folderpath_settings_parameters: str, str_folderpath_settings_agents: str, type_of_experiments_foldername: str = "default", is_datetime: bool = True):
+    def set_experiments_folders(cls, foldername_prefix_experiments: str, foldername_experiments_output_data: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str, type_of_experiments_foldername: str = "default", is_datetime: bool = True):
         """
         设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹。
 
         根据【实验文件夹根路径】、【实验导出数据文件夹名称】、【实验文件夹前缀名】、【实验文件夹命名方式】，生成【实验文件夹名称】、【实验文件夹路径】、【实验导出数据文件夹路径】。
 
         Args:
-            foldername_prefix_of_experiments (str): 实验文件夹前缀名
-            foldername_of_experiments_output_data (str): 实验导出数据文件夹名称
-            str_folderpath_root_dir_of_experiments (str): 实验文件夹根相对路径字符串
+            foldername_prefix_experiments (str): 实验文件夹前缀名
+            foldername_experiments_output_data (str): 实验导出数据文件夹名称
+            str_folderpath_root_experiments (str): 实验文件夹根相对路径字符串
             str_foldername_simulator (str): 模拟器所在的项目之名称
             str_folderpath_realpath_simulator (str): 当前项目到模拟器所在的项目之相对路径
             str_folderpath_models (str): 模型文件夹相对路径字符串
-            str_folderpath_settings_environments (str): 实验设置项之环境设置项文件夹相对路径字符串
-            str_folderpath_settings_parameters (str): 实验设置项之参数设置项文件夹相对路径字符串
-            str_folderpath_settings_agents (str): 实验设置项之实验个体众数据初始化设置项文件夹相对路径字符串
+            str_folderpath_config (str): 实验配置项设置项文件夹相对路径字符串
+            str_folderpath_parameters (str): 实验参数设置项文件夹相对路径字符串
+            str_folderpath_agents (str): 实验实验个体众数据初始化设置项文件夹相对路径字符串
             type_of_experiments_foldername (str): 实验文件夹命名方式。取值："default": 默认方式，"set manually": 手动设置方式。默认"default"；
             is_datetime (bool): 是否使用日期时间字符串。默认True；
 
         Returns:
 
-            foldername_of_experiments (str): 实验文件夹名称
+            foldername_experiments (str): 实验文件夹名称
 
             folderpath_project (Path): 项目文件夹路径
 
             folderpath_simulator (Path): 模拟器工具文件夹路径
 
-            folderpath_of_experiments (Path): 实验文件夹路径
+            folderpath_experiments (Path): 实验文件夹路径
 
-            folderpath_of_experiments_output_data (Path): 实验导出数据文件夹路径
+            folderpath_experiments_output_data (Path): 实验导出数据文件夹路径
 
             folderpath_models (Path): 模型文件夹路径
 
-            folderpath_settings_environments (Path): 实验设置项之环境设置项文件夹路径
+            folderpath_config (Path): 实验配置项设置项文件夹路径
 
-            folderpath_settings_parameters (Path): 实验设置项之参数设置项文件夹路径
+            folderpath_parameters (Path): 实验参数设置项文件夹路径
 
-            folderpath_settings_agents (Path): 实验设置项之实验个体众数据初始化设置项文件夹路径
+            folderpath_agents (Path): 实验实验个体众数据初始化设置项文件夹路径
         """
 
         ## 设置项目文件夹路径
@@ -92,36 +92,34 @@ class Tools:
         if type_of_experiments_foldername == "default":  # 设定前缀字符串
             str_manuallyName = "default"
         elif type_of_experiments_foldername == "set manually":
-            str_manuallyName = foldername_prefix_of_experiments
+            str_manuallyName = foldername_prefix_experiments
         else:
             raise Exception("关键词取值错误！".format(type_of_experiments_foldername))
             pass  # if
 
-        foldername_of_experiments = str_manuallyName + str_datetime
-        folderpath_of_experiments = Path(folderpath_project, str_folderpath_root_dir_of_experiments, foldername_of_experiments)
+        foldername_experiments = str_manuallyName + str_datetime
+        folderpath_experiments = Path(folderpath_project, str_folderpath_root_experiments, foldername_experiments)
 
-        folderpath_of_experiments.mkdir(parents=True, exist_ok=True)
-        folderpath_of_experiments_output_data = Path(folderpath_of_experiments, foldername_of_experiments_output_data)
-        folderpath_of_experiments_output_data.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
+        folderpath_experiments.mkdir(parents=True, exist_ok=True)
+        folderpath_experiments_output_data = Path(folderpath_experiments, foldername_experiments_output_data)
+        folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
 
-        ## 设定实验设置项文件夹
-        folderpath_settings_environments = Path(folderpath_project, str_folderpath_settings_environments)  # 设定实验设置项之环境设置项文件夹
-        folderpath_settings_parameters = Path(folderpath_project, str_folderpath_settings_parameters)  # 设定实验设置项之参数设置项文件夹
-        folderpath_settings_agents = Path(folderpath_project, str_folderpath_settings_agents)  # 设定实验设置项之实验个体众数据初始化设置项文件夹
-
-        ## 设定模型文件夹
-        folderpath_models = Path(folderpath_project, str_folderpath_models)
+        ## 设定实验相关的一些重要的文件夹
+        folderpath_models = Path(folderpath_project, str_folderpath_models)  # 设定模型文件夹
+        folderpath_config = Path(folderpath_project, str_folderpath_config)  # 设定实验配置项设置项文件夹
+        folderpath_parameters = Path(folderpath_project, str_folderpath_parameters)  # 设定实验参数设置项文件夹
+        folderpath_agents = Path(folderpath_project, str_folderpath_agents)  # 设定实验实验个体众数据初始化设置项文件夹
 
         return (
-            foldername_of_experiments,
+            foldername_experiments,
             folderpath_project,
             folderpath_simulator,
-            folderpath_of_experiments,
-            folderpath_of_experiments_output_data,
+            folderpath_experiments,
+            folderpath_experiments_output_data,
             folderpath_models,
-            folderpath_settings_environments,
-            folderpath_settings_parameters,
-            folderpath_settings_agents,
+            folderpath_config,
+            folderpath_parameters,
+            folderpath_agents,
         )
 
         pass  # function

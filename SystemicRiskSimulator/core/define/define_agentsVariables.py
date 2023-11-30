@@ -2,7 +2,7 @@
 程序：设置 agents 变量
 """
 
-from SystemicRiskSimulator.data.settings.agents.set_agents_variables import set_bankCommercial_variables, set_bankInterbank_variables
+from SystemicRiskSimulator.data.agents.set_agents_variables import set_bankCommercial_variables, set_bankInterbank_variables
 
 pass  # end import
 

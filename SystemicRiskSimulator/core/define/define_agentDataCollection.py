@@ -1,5 +1,5 @@
 "结构体：定义待收集数据类型"
-from SystemicRiskSimulator import pd
+from SystemicRiskSimulator.external_packages import pd
 
 pass  # end import
 

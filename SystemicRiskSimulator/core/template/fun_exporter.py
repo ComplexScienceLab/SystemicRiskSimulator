@@ -43,21 +43,21 @@ def exportProcess(self, processContent:ModelContent; filepath_processSkeleton:St
     for p in modelContent.listProcess
         target030 *= """
 <<<<<<<< HEAD:draft/model_exporter.jl
-        env[:process_name] = "$(p.text_name)"
-        data, IB, env = $(String(p.entity_name))!(data, IB, para, env)
-        scheduler!(env)
-        if env[:state_of_schedule] == :stepping:
+        sgv[:process_name] = "$(p.text_name)"
+        data, IB, sgv = $(String(p.entity_name))!(data, IB, para, sgv)
+        scheduler!(sgv)
+        if sgv[:state_of_schedule] == :stepping:
             eval(Meta.parse(expr))
         end
-        if env[:state_of_schedule] == :collecting:
+        if sgv[:state_of_schedule] == :collecting:
 ========
-        env['process_name'] = "$(p.text_name)"
-        BB, IB, env = $(String(p.entity_name))!(BB, IB, para, env)
-        scheduler(env)
-        if env['state_of_schedule'] == StateOfScheduleEnum.stepping:
+        sgv['process_name'] = "$(p.text_name)"
+        BB, IB, sgv = $(String(p.entity_name))!(BB, IB, para, sgv)
+        scheduler(sgv)
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.stepping:
             eval(Meta.parse(expr))
             pass
-        if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:
 >>>>>>>> python:SystemicRiskSimulator/core/template/fun_exporter.py
             #TODO 收集数据
             pass
@@ -112,21 +112,21 @@ def exportModel(self, modelContent:ModelContent; filepath_modelSkeleton:String="
     for p in modelContent.listProcess
         target030 *= """
 <<<<<<<< HEAD:draft/model_exporter.jl
-        env[:process_name] = "$(p.text_name)"
-        data, IB, env = $(String(p.entity_name))!(data, IB, para, env)
-        scheduler!(env)
-        if env[:state_of_schedule] == :stepping:
+        sgv[:process_name] = "$(p.text_name)"
+        data, IB, sgv = $(String(p.entity_name))!(data, IB, para, sgv)
+        scheduler!(sgv)
+        if sgv[:state_of_schedule] == :stepping:
             eval(Meta.parse(expr))
         end
-        if env[:state_of_schedule] == :collecting:
+        if sgv[:state_of_schedule] == :collecting:
 ========
-        env['process_name'] = "$(p.text_name)"
-        BB, IB, env = $(String(p.entity_name))!(BB, IB, para, env)
-        scheduler(env)
-        if env['state_of_schedule'] == StateOfScheduleEnum.stepping:
+        sgv['process_name'] = "$(p.text_name)"
+        BB, IB, sgv = $(String(p.entity_name))!(BB, IB, para, sgv)
+        scheduler(sgv)
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.stepping:
             eval(Meta.parse(expr))
             pass
-        if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:
 >>>>>>>> python:SystemicRiskSimulator/core/template/fun_exporter.py
             #TODO 收集数据
             pass

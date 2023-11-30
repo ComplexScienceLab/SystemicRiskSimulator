@@ -2,7 +2,7 @@
 运作机
 """
 
-from SystemicRiskSimulator import Path, time, logging, dataclass, Any
+from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
 from SystemicRiskSimulator.core.operations.collector import Collector
@@ -23,103 +23,103 @@ class Operator:
     """
 
     @classmethod
-    def operate_installing(cls, env, para):
+    def operate_installing(cls, sgv, para):
         """
         运作安装
 
         Args:
-            env (dict): 环境变量
+            sgv (dict): 模拟器全局变量
 
         Returns:
 
         """
 
         ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
-        env['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 组合排列多结构体成为列表
+        sgv['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 组合排列多结构体成为列表
 
         ## 导出控制参数数据
-        Collector.export_parameter_data(list_combination_of_para=env['list_combination_of_para'], para=para)
+        Collector.export_parameter_data(list_combination_of_para=sgv['list_combination_of_para'], para=para)
 
         ## 构建本次实验组所需的所有模型
 
         ## 复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下
-        Tools._delete_and_recreate_folder(Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=env['is_auto_confirmation'])
-        Tools._copy_files_from_other_folders(env['folderpath_models'], Path(env['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=env['is_auto_confirmation'])
+        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        Tools._copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
 
         # 暂停1秒，等待文件复制
         time.sleep(1)
 
         ## 导入实体数据，生成实体集、内容集并返回
-        Builder.build_entities_by_process_and_container_component(env)  # BUG 会不会出现不能处理多个模型的情形？
+        Builder.build_entities_by_process_and_container_component(sgv)  # BUG 会不会出现不能处理多个模型的情形？
 
-        return env, EntityManager.mainModelInstanceEntities
+        return sgv, EntityManager.mainModelInstanceEntities
 
         pass  # function
 
     @classmethod
-    def operate_experiment(cls, env: dict, para: dict, model: Any):
+    def operate_experiment(cls, sgv: dict, para: dict, model: Any):
         """
         运作实验
 
         Args:
-            env (dict): 环境变量，默认env
+            sgv (dict): 模拟器全局变量，默认env
             para (dict): 参数变量，默认para
-            model (Entity): 模型实体
+            model (Any): 模型实体
 
         Returns:
 
         """
 
-        if env['state_of_schedule'] == StateOfScheduleEnum.idle:
-            Scheduler.schedule(env)
-        if env['state_of_schedule'] == StateOfScheduleEnum.initializing:
-            # 重置环境变量  # TODO 需要整理一下这几个待重置的环境变量
-            env['index_of_schedule_position'] = []
-            env['round'] = 0
-            env['phase'] = 0
-            env['step'] = 0
-            env['time'] = 0  # TODO 似乎没有用到
-            env['model_name'] = para['model_name']
-            env['process_name'] = "START"
-            env['test_continous_loop_of_model'] = 0
-            env['model_process_state'] = "has not process"
-            env['A_data'] = None
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.idle:
+            Scheduler.schedule(sgv)
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.initializing:
+            # 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
+            sgv['index_of_schedule_position'] = []
+            sgv['round'] = 0
+            sgv['phase'] = 0
+            sgv['step'] = 0
+            sgv['time'] = 0  # TODO 似乎没有用到
+            sgv['model_name'] = para['model_name']
+            sgv['process_name'] = "START"
+            sgv['test_continous_loop_of_model'] = 0
+            sgv['model_process_state'] = "has not process"
+            sgv['A_data'] = None
 
-            logging.info("实验" + str(env['id_experiment']) + "/" + str(len(env['list_combination_of_para'])) + "开始：\n")
+            logging.info("实验" + str(sgv['id_experiment']) + "/" + str(len(sgv['list_combination_of_para'])) + "开始：\n")
 
-            logging.info("相关实验参数：" + str(para) + "\n")
+            logging.info("\n相关实验参数：" + str(para) + "\n")
 
             ## 初始化 agents 数据
-            A = DataInstaller.install_data(init_method=env['init_method'])  # 安装本次实验所需的多主体数据
-            env['A_data'] = Collector.collect(A, env['A_data'], env)  # 收集初始数据
-            env['step'] += 1
+            A = DataInstaller.install_data(init_method=sgv['init_method'])  # 安装本次实验所需的多主体数据
+            sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
+            sgv['step'] += 1
 
             # ## 构建本次实验所需的状态数据
             # Finance.build_state_const_variables(A.BB, A.IB)
 
             # ## 初始化本次实验所需的多主体数据
-            # A = DataInstaller.initialize_data(A, para, env)
+            # A = DataInstaller.initialize_data(A, para, sgv)
             pass  # if
 
         ## HACK 如果使用`Processor.process_entity_by_process_and_container_component()`
-        Scheduler.schedule(env)  # 调度状态变成`running`
-        model, A, env['A_data'], para, env = Processor.process_entity_by_process_and_container_component(model, A, env['A_data'], para, env)  # 执行具体的模型，通过执行模型实体的方式
-        if env['state_of_schedule'] == StateOfScheduleEnum.running:
-            env['is_continue_process'] = False  # 不再继续运行过程
-            Scheduler.schedule(env)  # 调度状态变成`ending`
+        Scheduler.schedule(sgv)  # 调度状态变成`running`
+        model, A, sgv['A_data'], para, sgv = Processor.process_entity_by_process_and_container_component(model, A, sgv['A_data'], para, sgv)  # 执行具体的模型，通过执行模型实体的方式
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
+            sgv['is_continue_process'] = False  # 不再继续运行过程
+            Scheduler.schedule(sgv)  # 调度状态变成`ending`
 
-        # ## HACK 如果使用`Processor.process_entity_by_node_component()`
-        # Scheduler.schedule(env)
-        # model, A, A_data, para, env = Executer.execute_branch_entity(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
-        # env['is_continue_process'] = False  # 不再继续运行过程
+        # ## HACK 如果使用`Processor.process_entity_by_node_component()` #TODO 无用可删除
+        # Scheduler.schedule(sgv)
+        # model, A, A_data, para, sgv = Executer.execute_branch_entity(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
+        # sgv['is_continue_process'] = False  # 不再继续运行过程
 
         ## 导出数据之于已经收集的，然后结束本次实验
-        if env['state_of_schedule'] == StateOfScheduleEnum.ending:
-            Collector.collect(None, env['A_data'], env)
-            Scheduler.schedule(env)
-            logging.info("本次实验结束，还剩下" + str(len(env['list_combination_of_para']) - env['id_experiment']) + "个实验。\n\n")
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
+            Collector.collect(None, sgv['A_data'], sgv)
+            Scheduler.schedule(sgv)
+            logging.info("本次实验结束，还剩下" + str(len(sgv['list_combination_of_para']) - sgv['id_experiment']) + "个实验。\n\n")
 
-        # if env['state_of_schedule'] == StateOfScheduleEnum.idle:
+        # if sgv['state_of_schedule'] == StateOfScheduleEnum.idle:
 
         pass  # function
 

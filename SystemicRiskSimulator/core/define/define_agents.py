@@ -33,8 +33,8 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     商业银行群复合类
     """
     id_agent: IdsType = np.NaN  # = deepcopy(RANGE1) agent 之编号 id
-    abbr = np.NaN  # = np.full(env['num_bank'], "")
-    name = np.NaN  # = np.full(env['num_bank'], "")
+    abbr = np.NaN  # = np.full(sgv['num_bank'], "")
+    name = np.NaN  # = np.full(sgv['num_bank'], "")
     A_all = np.NaN  # = deepcopy(ZEROS1)  # 总资产 A_all: $A_all=A_IB+A_exIB$
     A_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产加总 A_IB_all
     A_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
@@ -107,10 +107,10 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     is_needed_LiP = np.NaN  # = deepcopy(FALSE1)  # 示性向量之于银行是否需要收回厂商贷款 is_needed_LiP
     is_enabled_LiP = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否可以收回厂商贷款 is_enabled_LiP
     is_allocated_Shock = np.NaN  # = deepcopy(FALSE1)  # 示性向量之于银行是否已经分配传染冲击 is_allocated_Shock
-    list_exist = np.NaN  # = np.full((env['num_bank'], 1), list)  # 列表之于存在的银行编号 list_exist
-    list_insolvent = np.NaN  # = np.full((env['num_bank'], 1), list)  # 列表之于资不抵债的银行编号 list_insolvent
-    list_illiquid = np.NaN  # = np.full((env['num_bank'], 1), list)  # 列表之于流动性短缺的银行编号 list_illiquid
-    list_bankrupt = np.NaN  # = np.full((env['num_bank'], 1), list)  # 列表之于破产的银行编号 list_bankrupt
+    list_exist = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于存在的银行编号 list_exist
+    list_insolvent = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于资不抵债的银行编号 list_insolvent
+    list_illiquid = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于流动性短缺的银行编号 list_illiquid
+    list_bankrupt = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于破产的银行编号 list_bankrupt
 
     # TODO 补充损失变量；
     # TODO 增加监管约束之状态；

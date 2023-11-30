@@ -2,7 +2,7 @@
 执行机
 """
 
-from SystemicRiskSimulator import logging
+from SystemicRiskSimulator.external_packages import logging
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_entity import Entity
@@ -21,7 +21,7 @@ class Executer:
 
     ## NOTE：执行一次步进更新。
     @classmethod
-    def step_update(cls, update_way: str, A: SystemicRiskAgent, para: dict, env: dict):
+    def step_update(cls, update_way: str, A: SystemicRiskAgent, para: dict, sgv: dict):
         """
         执行一次步进更新
 
@@ -29,32 +29,32 @@ class Executer:
             update_way (str): 更新方式
             A (SystemicRiskAgent): 多主体
             para (dict): 参数集
-            env (dict): 环境变量集
+            sgv (dict): 模拟器全局变量
 
         Returns:
-            env (dict): 环境变量集
+            sgv (dict): 模拟器全局变量
 
         """
 
         Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
 
-        if env['state_of_schedule'] == StateOfScheduleEnum.running:
-            Scheduler.schedule(env)  # 调度状态变成`collecting`或者`ending`
-        if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
-            env['A_data'], env = Collector.collect(A, env['A_data'], env)  # 收集数据
-            Scheduler.schedule(env)  # 调度状态变成`running`
-        elif env['state_of_schedule'] == StateOfScheduleEnum.ending:
-            # Scheduler.schedule(env)  # 调度状态变成`idle`
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
+            Scheduler.schedule(sgv)  # 调度状态变成`collecting`或者`ending`
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:
+            sgv['A_data'], sgv = Collector.collect(A, sgv['A_data'], sgv)  # 收集数据
+            Scheduler.schedule(sgv)  # 调度状态变成`running`
+        elif sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
+            # Scheduler.schedule(sgv)  # 调度状态变成`idle`
             pass  # if
 
-        env['step'] += 1  # 步进加一
-        env['phase'] += 1  # 逐相加一
+        sgv['step'] += 1  # 步进加一
+        sgv['phase'] += 1  # 逐相加一
 
-        return env
+        return sgv
         pass  # function
 
     @classmethod
-    def execute_model_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict, entity: Entity):
+    def execute_model_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict, entity: Entity):
         """
         执行模型实体（模型模板实体）。
 
@@ -64,7 +64,7 @@ class Executer:
             A (SystemicRiskAgent): Agent群变量
             A_data (Optional[AgentDataCollection]): Agent群变量之数据
             para (dict): 参数变量
-            env (dict): 环境变量
+            sgv (dict): 模拟器全局变量
             entity (Entity): 模型实体
 
         Returns: agent
@@ -74,21 +74,21 @@ class Executer:
 
         logging.debug("    开始执行模型内容：")
 
-        env['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
-        env['phase'] = 1  # 逐相复位（起始为1）
-        # env['step'] += 1  # 步进加一
-        env['process_name'] = entity.attribute.entity_name  # 执行的过程名称（英文名称）
-        A, env = entity.execute(A, para, env)
+        sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+        sgv['phase'] = 1  # 逐相复位（起始为1）
+        # sgv['step'] += 1  # 步进加一
+        sgv['process_name'] = entity.attribute.entity_name  # 执行的过程名称（英文名称）
+        A, sgv = entity.execute(A, para, sgv)
 
         # ## 收集数据
-        # if env['state_of_schedule'] == StateOfScheduleEnum.running:
-        #     Scheduler.schedule(env)
-        #     if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
-        #         A_data, env = Collector.collect(A, A_data, env)
+        # if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
+        #     Scheduler.schedule(sgv)
+        #     if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:
+        #         A_data, sgv = Collector.collect(A, A_data, sgv)
 
         logging.debug("    结束执行模型内容。")
 
-        return A, A_data, env
+        return A, A_data, sgv
         pass  # function
 
 

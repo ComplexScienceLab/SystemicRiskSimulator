@@ -2,8 +2,8 @@
 构建机
 """
 
-from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
-from SystemicRiskSimulator.core.define.define_environmentVariables import env
+from SystemicRiskSimulator.core.define.define_type import SimulatorGlobalVariableType
+from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.operations.compiler import Compiler
 from SystemicRiskSimulator.core.operations.processor import Processor  # NOTE 动态导入，严禁删除。如果 IDE 报错，是正常的。因为这个是在程序运行时动态导入。
@@ -16,12 +16,12 @@ class Builder:
     """构建机"""
 
     @classmethod
-    def build_entities_by_process_and_container_component(cls, env: EnvironmentVariableType = env):
+    def build_entities_by_process_and_container_component(cls, sgv: SimulatorGlobalVariableType = sgv):
         """
         构建实体众，通过过程与容器组件。
 
         Args:
-            env(EnvironmentVariableType): 环境变量集
+            sgv(SimulatorGlobalVariableType): 模拟器全局变量
 
         Returns:
             modelEntities: 模型实体（模型模板实体）列表, modelContents: 模型实体之内容（模型内容）列表
@@ -30,11 +30,11 @@ class Builder:
         ## 导入相关模块（#NOTE 动态导入，严禁删除。如果 IDE 报错，是正常的。因为这个是在程序运行时动态导入。）
         ## 导入模型之初始态实体之数据内容
         import SystemicRiskSimulator.data.models.entities_data
-        list_entityData = Tools.import_modules_from_package(env['folderpath_import_modules'], r"entityData_", env['folderpath_simulator'])
+        list_entityData = Tools.import_modules_from_package(sgv['folderpath_import_modules'], r"entityData_", sgv['folderpath_simulator'])
 
         ## 导入模型之内容
         import SystemicRiskSimulator.data.models.contents
-        modelContents = Tools.import_modules_from_package(env['folderpath_import_modules'], r"content_", env['folderpath_simulator'])
+        modelContents = Tools.import_modules_from_package(sgv['folderpath_import_modules'], r"content_", sgv['folderpath_simulator'])
 
         ## 根据模型实体数据列表之数据，生成相应的模型实体对象，然后组成模型实体列表
         for entityData in list_entityData.values():
