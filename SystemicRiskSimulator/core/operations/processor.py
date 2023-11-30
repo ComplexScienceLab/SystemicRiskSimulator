@@ -25,7 +25,7 @@ class Processor:
         NOTE：这里略去了功能：对特殊节点调用`Excuter`。因为就目前的程序来说，没必要进一步复杂化，直接在`Processor`内处理即可。
 
         Args:
-            model (Entity): 模型实体（NOTE：本函数中，特指模型实例实体而不是主模型模板实体。）
+            model (Any): 模型实体（NOTE：本函数中，特指模型实例实体而不是主模型模板实体。）
             A (SystemicRiskAgent): Agent群变量
             A_data (AgentDataCollection): Agent群变量之数据
             para (dict): 参数变量

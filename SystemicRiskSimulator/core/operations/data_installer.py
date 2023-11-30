@@ -32,9 +32,9 @@ class DataInstaller:
         # dict_bankCommercial, dict_bankInterbank = cls.set_default_values_to_Bank_variables
         from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 
-        with open(Path(env['folderpath_settings_agents'], "BankCommercial.pkl"), 'rb') as f:
+        with open(Path(env['folderpath_agents'], "BankCommercial.pkl"), 'rb') as f:
             dict_bankCommercial = pickle.load(f)
-        with open(Path(env['folderpath_settings_agents'], "BankInterbank.pkl"), 'rb') as f:
+        with open(Path(env['folderpath_agents'], "BankInterbank.pkl"), 'rb') as f:
             dict_bankInterbank = pickle.load(f)
 
         # ## NOTE 当用对象字段数据结构时：

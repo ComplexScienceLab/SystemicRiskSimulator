@@ -157,8 +157,8 @@ class Collector:
         """
 
         ## 导出为pkl格式
-        pd.to_pickle(A_data.BB, Path(env['folderpath_of_experiments_output_data'], r"BB_exp=" + str(env['id_experiment']) + r".pkl"))  # 导出为pkl格式
-        pd.to_pickle(A_data.IB, Path(env['folderpath_of_experiments_output_data'], r"IB_exp=" + str(env['id_experiment']) + r".pkl"))  # 导出为pkl格式
+        pd.to_pickle(A_data.BB, Path(env['folderpath_experiments_output_data'], r"BB_exp=" + str(env['id_experiment']) + r".pkl"))  # 导出为pkl格式
+        pd.to_pickle(A_data.IB, Path(env['folderpath_experiments_output_data'], r"IB_exp=" + str(env['id_experiment']) + r".pkl"))  # 导出为pkl格式
 
         pass  # function
 
@@ -276,7 +276,7 @@ class Collector:
     #         pass  # for
     #     BB_data_export.insert(0, 'id', range(len(BB_data_export)))  # 添加id列
     #     BB_data_export.insert(1, 'id_data', np.repeat(range(len(BB_data_export) // env['num_bank']), env['num_bank']))  # 添加id_data列
-    #     BB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "BB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
+    #     BB_data_export.to_csv(path.join(env['folderpath_experiments_output_data'], "BB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
     #
     #
     #     ## 整理interbank之数据为一数据框
@@ -325,7 +325,7 @@ class Collector:
     #         pass  # for
     #     IB_data_export.insert(0, 'id', range(len(IB_data_export)))  # 添加id列
     #     IB_data_export.insert(1, 'id_data', np.repeat(range(len(IB_data_export) // env['num_bank'] ** 2), env['num_bank'] ** 2))  # 添加id_data列
-    #     IB_data_export.to_csv(path.join(env['folderpath_of_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
+    #     IB_data_export.to_csv(path.join(env['folderpath_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
     #
     #     pass  # function
     #
@@ -368,7 +368,7 @@ class Collector:
         df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
 
         ## 导出实验参数为 csv 格式
-        df_combinationOfPara.to_csv(Path(env['folderpath_of_experiments_output_data'], r"paras.csv"))  # 导出字段列表为csv格式
+        df_combinationOfPara.to_csv(Path(env['folderpath_experiments_output_data'], r"paras.csv"))  # 导出字段列表为csv格式
         pass  # function
 
     pass  # class

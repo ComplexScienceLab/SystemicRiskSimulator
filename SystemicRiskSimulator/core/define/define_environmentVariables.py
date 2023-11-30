@@ -6,17 +6,17 @@
 from SystemicRiskSimulator import Path
 from SystemicRiskSimulator.core.define.define_type import EnvironmentVariableType
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
-from SystemicRiskSimulator.data.settings.environments.set_environments_variables import set_environments_variables
+from SystemicRiskSimulator.data.config.set_config_variables import set_config_variables
 
 pass  # end import
 
 # 生成字典变量
 env: EnvironmentVariableType = {}
 
-######### 定义以下环境变量（不要改动！） ######################################### #TODO 需要整理
-env['folderpath_of_experiments'] = ""  # 主文件夹路径之于实验。将由函数生成；
-env['foldername_of_experiments'] = ""  # 实验文件夹名称
-env['folderpath_of_experiments_output_data'] = ""  # 实验导出数据文件夹名称
+######### 定义以下项目内的全局变量（不要改动！） ######################################### #TODO 需要整理
+env['folderpath_experiments'] = ""  # 主文件夹路径之于实验。将由函数生成；
+env['foldername_experiments'] = ""  # 实验文件夹名称
+env['folderpath_experiments_output_data'] = ""  # 实验导出数据文件夹名称
 
 env['need_visualization'] = False  # 是否需要可视化
 env['visualization_packages'] = ['matplotlib', 'igraph', 'drawsvg']  # 可视化所需的第三方工具包
@@ -61,8 +61,6 @@ env['test_max_num_of_round'] = None,  # 处理最大回合数（测试用）；
 
 ###########################
 
-env.update(set_environments_variables)  # 更新环境变量设置项
-
-if __name__ == "__main__":
-    print(env)
-pass
+## 更新环境变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `env` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
+for key, value in set_config_variables.items():
+    env[key] = value

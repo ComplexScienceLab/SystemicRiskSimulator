@@ -64,7 +64,7 @@ class Operator:
         Args:
             env (dict): 环境变量，默认env
             para (dict): 参数变量，默认para
-            model (Entity): 模型实体
+            model (Any): 模型实体
 
         Returns:
 
@@ -108,7 +108,7 @@ class Operator:
             env['is_continue_process'] = False  # 不再继续运行过程
             Scheduler.schedule(env)  # 调度状态变成`ending`
 
-        # ## HACK 如果使用`Processor.process_entity_by_node_component()`
+        # ## HACK 如果使用`Processor.process_entity_by_node_component()` #TODO 无用可删除
         # Scheduler.schedule(env)
         # model, A, A_data, para, env = Executer.execute_branch_entity(model, A, A_data, para, env)  # 执行具体的模型，通过执行模型实体的方式
         # env['is_continue_process'] = False  # 不再继续运行过程

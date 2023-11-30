@@ -1,6 +1,6 @@
 "程序：定义参数变量parameter_variables"
 
-from SystemicRiskSimulator.data.settings.parameters.set_parameters_variables import set_parameters_variables
+from SystemicRiskSimulator.data.parameters.set_parameters_variables import set_parameters_variables
 
 pass  # end import
 
