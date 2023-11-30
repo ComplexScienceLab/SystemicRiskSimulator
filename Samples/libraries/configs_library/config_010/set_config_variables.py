@@ -13,6 +13,7 @@ set_config_variables = dict(
     foldername_prefix_experiments="test",  # 手动设置实验文件夹前缀名。默认"default"；
     foldername_experiments_output_data="exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
     folderpath_data=r"Samples/data",  # 数据所在的文件夹
+    simulator_version="v0.0.19_alpha",  # 模拟器版本号
     folderpath_root_experiments=r"Samples/data/sims",  # 手动设置实验文件夹根路径。默认"Samples/data/sims/"；
     folderpath_models=r"Samples/libraries/models_library/IB1111_流程版",  # 模型所在的文件夹
     folderpath_config=r"Samples/libraries/configs_library/config_010",  # 配置项设置所在的文件夹

@@ -87,7 +87,7 @@ class Operator:
 
             logging.info("实验" + str(sgv['id_experiment']) + "/" + str(len(sgv['list_combination_of_para'])) + "开始：\n")
 
-            logging.info("相关实验参数：" + str(para) + "\n")
+            logging.info("\n相关实验参数：" + str(para) + "\n")
 
             ## 初始化 agents 数据
             A = DataInstaller.install_data(init_method=sgv['init_method'])  # 安装本次实验所需的多主体数据

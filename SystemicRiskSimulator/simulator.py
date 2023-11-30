@@ -72,7 +72,14 @@ def simulator(config: dict):
     logger.addHandler(log_file_handler)
     log_console_handler = logging.StreamHandler()
     logger.addHandler(log_console_handler)
-    logging.debug("\n实验组名称：%s", sgv['foldername_experiments'])
+
+    logging.info("\n实验组名称：%s" + sgv['foldername_experiments'] + "\n")
+    logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
+    logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
+    logging.info("\n相关实验 models 文件夹：" + sgv['folderpath_models'].name + "\n")
+    logging.info("\n相关实验 agents 数据文件夹：" + sgv['folderpath_agents'].name + "\n")
+    logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
+    logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
 
     # %% 预安装模型、数据，运行实验组
     warnings.filterwarnings("ignore")
