@@ -1,5 +1,5 @@
 """
-程序：设置配置项变量EnvironmentVariables。
+程序：设置配置项变量 SimulatorGlobalVariables。
 
 记得这里发生变更时，要手动检查`Operator.operate_experiment`相关设置是否要更新。
 """
@@ -29,7 +29,7 @@ set_config_variables = dict(
     ## 调试专用变量：
     is_test=True,  # 是否处于测试状态
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)
-    test_round_for_test=4,  # test变量，用于打断点。相关语句：`env['round']>=env['test_round_for_test']`；
+    test_round_for_test=4,  # test变量，用于打断点。相关语句：`sgv['round']>=sgv['test_round_for_test']`；
     test_max_num_of_round=24,  # 最大运行轮次数（测试用）；
 
     ## 使用的程序版本类型设置：

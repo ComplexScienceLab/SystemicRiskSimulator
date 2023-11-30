@@ -8,7 +8,7 @@ pass  # end import
 
 # from SystemicRiskSimulator.models_entities.models_contents import *
 
-def content_BankruptRepayShock(A: SystemicRiskAgent, para: dict, env: dict):
+def content_BankruptRepayShock(A: SystemicRiskAgent, para: dict, sgv: dict):
     ## # 破产银行遭受偿还冲击
 
     BankState.update_states(way='bankrupt') #FIXME
@@ -16,5 +16,5 @@ def content_BankruptRepayShock(A: SystemicRiskAgent, para: dict, env: dict):
     A.BB.Shock_D_run_t[A.BB.br] = A.BB.Z_D[A.BB.br]  # 计算破产银行遭受偿还居民存款冲击
     A.BB.Shock_IB_t[A.BB.br] = A.BB.Z_IB_all[A.BB.br]  # 计算破产银行遭受偿还银行间负债冲击
 
-    return A, env
+    return A, sgv
     pass  # function

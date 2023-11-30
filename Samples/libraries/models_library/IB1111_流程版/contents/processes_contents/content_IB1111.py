@@ -58,14 +58,14 @@ content_IB1111 = \
 # condition_02 = "random.sample(range(1,100),1)<=10"
 # condition_01 = "random.sample(range(1,100),1)>10"
 # condition_02 = "random.sample(range(1,100),1)<=10"
-# # condition_01 = "(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()"
-# # condition_02 = "(A.BB.isv == A_data.BB[env['round']-1]['dataBB'].isv).all()"
-# # condition_01 = "(A.BB.isv != A_data.BB[env['round']-1]['dataBB'].isv).any()"
-# # condition_02 = "(A.BB.isv == A_data.BB[env['round']-1]['dataBB'].isv).all()"
-# # condition_01 = "(A.BB.ilq != A_data.BB[env['round']-1]['dataBB'].ilq).any()"
-# # condition_02 = "(A.BB.ilq == A_data.BB[env['round']-1]['dataBB'].ilq).all()"
-# # condition_01 = "(A.BB.ilq != A_data.BB[env['round']-1]['dataBB'].ilq).any()"
-# # condition_02 = "(A.BB.ilq == A_data.BB[env['round']-1]['dataBB'].ilq).all()"
+# # condition_01 = "(A.BB.isv != A_data.BB[sgv['round']-1]['dataBB'].isv).any()"
+# # condition_02 = "(A.BB.isv == A_data.BB[sgv['round']-1]['dataBB'].isv).all()"
+# # condition_01 = "(A.BB.isv != A_data.BB[sgv['round']-1]['dataBB'].isv).any()"
+# # condition_02 = "(A.BB.isv == A_data.BB[sgv['round']-1]['dataBB'].isv).all()"
+# # condition_01 = "(A.BB.ilq != A_data.BB[sgv['round']-1]['dataBB'].ilq).any()"
+# # condition_02 = "(A.BB.ilq == A_data.BB[sgv['round']-1]['dataBB'].ilq).all()"
+# # condition_01 = "(A.BB.ilq != A_data.BB[sgv['round']-1]['dataBB'].ilq).any()"
+# # condition_02 = "(A.BB.ilq == A_data.BB[sgv['round']-1]['dataBB'].ilq).all()"
 
 
 # ## 定义各实体之具体函数之内容

@@ -5,7 +5,7 @@ from SystemicRiskSimulator import pd, Path, Optional, logging
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
-from SystemicRiskSimulator.core.define.define_environmentVariables import env
+from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.core.define.define_type import *
 
 pass  # end import
@@ -14,45 +14,45 @@ pass  # end import
 class Collector:
 
     @classmethod
-    def collect(cls, A: Optional[SystemicRiskAgent], A_data: Optional[AgentDataCollection], env: dict):
+    def collect(cls, A: Optional[SystemicRiskAgent], A_data: Optional[AgentDataCollection], sgv: dict):
         """
         运作收集数据
 
         Args:
             A (Optional[SystemicRiskAgent]): Agent群变量
             A_data (Optional[AgentDataCollection]): Agent群变量之数据
-            env (dict): 环境变量
+            sgv (dict): 模拟器全局变量
 
         Returns:
-            如果是初始化数据，则返回 A_data；如果是收集数据，则返回 A_data, env；如果是导出数据，则无返回；
+            如果是初始化数据，则返回 A_data；如果是收集数据，则返回 A_data, sgv；如果是导出数据，则无返回；
 
         """
-        if env['state_of_schedule'] == StateOfScheduleEnum.collecting:
-            # Scheduler.schedule(env)
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:
+            # Scheduler.schedule(sgv)
             logging.debug("                    收集数据")
-            # env['id_data'] += 1  # 累加数据帧ID号
-            A_data = Collector.collect_agent_data(A, A_data, env)
-            # Scheduler.schedule(env)
-            return A_data, env
-        elif env['state_of_schedule'] == StateOfScheduleEnum.initializing:
+            # sgv['id_data'] += 1  # 累加数据帧ID号
+            A_data = Collector.collect_agent_data(A, A_data, sgv)
+            # Scheduler.schedule(sgv)
+            return A_data, sgv
+        elif sgv['state_of_schedule'] == StateOfScheduleEnum.initializing:
             logging.debug("                    初始化数据")
-            A_data = Collector.init_agent_data_collection(A, env)
+            A_data = Collector.init_agent_data_collection(A, sgv)
             return A_data
-        elif env['state_of_schedule'] == StateOfScheduleEnum.ending:
+        elif sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
             logging.debug("                    导出数据")
-            Collector.export_agent_data(A_data, env)
+            Collector.export_agent_data(A_data, sgv)
         else:
             pass
         pass  # function
 
     ## NOTE 当用 Pandas 之数据结构时：
     @classmethod
-    def init_agent_data_collection(cls, A: pd.Series, env: dict):
+    def init_agent_data_collection(cls, A: pd.Series, sgv: dict):
         """
 
         Args:
             A (pd.Series): 系统性风险个体众
-            env (dict): 环境变量
+            sgv (dict): 模拟器全局变量
 
         Returns:
             A_data: 待收集的数据
@@ -64,41 +64,41 @@ class Collector:
         IB_data = pd.DataFrame()
         A_data = AgentDataCollection(BB_data, IB_data)
 
-        env['series_BB'] = pd.Series()
+        sgv['series_BB'] = pd.Series()
         for i in A.BB.index:
-            env['series_BB'][i] = A.BB[i].copy()
-        env['df_BB'] = env['series_BB'].to_frame().transpose()
-        env['df_BB'].insert(loc=0, column='process_name', value=env['process_name'])
-        env['df_BB'].insert(loc=1, column='step', value=env['step'])
-        env['df_BB'].insert(loc=2, column='round', value=env['round'])
-        env['df_BB'].insert(loc=3, column='phase', value=env['phase'])
-        # BB_data = pd.concat([BB_data, env['df_BB']], ignore_index=True)
-        A_data.BB = pd.concat([A_data.BB, env['df_BB']], ignore_index=True)
+            sgv['series_BB'][i] = A.BB[i].copy()
+        sgv['df_BB'] = sgv['series_BB'].to_frame().transpose()
+        sgv['df_BB'].insert(loc=0, column='process_name', value=sgv['process_name'])
+        sgv['df_BB'].insert(loc=1, column='step', value=sgv['step'])
+        sgv['df_BB'].insert(loc=2, column='round', value=sgv['round'])
+        sgv['df_BB'].insert(loc=3, column='phase', value=sgv['phase'])
+        # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
+        A_data.BB = pd.concat([A_data.BB, sgv['df_BB']], ignore_index=True)
 
-        env['series_IB'] = pd.Series()
+        sgv['series_IB'] = pd.Series()
         for i in A.IB.index:
-            env['series_IB'][i] = A.IB[i].copy()
-        env['df_IB'] = env['series_IB'].to_frame().transpose()
-        env['df_IB'].insert(loc=0, column='process_name', value=env['process_name'])
-        env['df_IB'].insert(loc=1, column='step', value=env['step'])
-        env['df_IB'].insert(loc=2, column='round', value=env['round'])
-        env['df_IB'].insert(loc=3, column='phase', value=env['phase'])
-        # IB_data = pd.concat([IB_data, env['df_IB']], ignore_index=True)
-        A_data.IB = pd.concat([A_data.IB, env['df_IB']], ignore_index=True)
+            sgv['series_IB'][i] = A.IB[i].copy()
+        sgv['df_IB'] = sgv['series_IB'].to_frame().transpose()
+        sgv['df_IB'].insert(loc=0, column='process_name', value=sgv['process_name'])
+        sgv['df_IB'].insert(loc=1, column='step', value=sgv['step'])
+        sgv['df_IB'].insert(loc=2, column='round', value=sgv['round'])
+        sgv['df_IB'].insert(loc=3, column='phase', value=sgv['phase'])
+        # IB_data = pd.concat([IB_data, sgv['df_IB']], ignore_index=True)
+        A_data.IB = pd.concat([A_data.IB, sgv['df_IB']], ignore_index=True)
 
         # A_data = pd.Series([BB_data, IB_data], index=['BB', 'IB'])
         return A_data
         pass
 
     @classmethod
-    def collect_agent_data(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, env: dict):
+    def collect_agent_data(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict):
         """
         收集数据并存储
 
         Args:
             A (SystemicRiskAgent): 系统性风险个体众
             A_data (AgentDataCollection): 个体众数据集
-            env: 环境变量
+            sgv: 模拟器全局变量
 
         Returns:
             A_data: 待收集的数据
@@ -108,28 +108,28 @@ class Collector:
 
         # BB_df = A.BB.to_frame().transpose()
         # BB = deepcopy(A.BB)
-        # env['series_BB'] = pd.Series()
+        # sgv['series_BB'] = pd.Series()
         for i in A.BB.index:
-            env['series_BB'][i] = A.BB[i].copy()
-        env['df_BB'] = env['series_BB'].to_frame().transpose()
-        env['df_BB'].insert(loc=0, column='process_name', value=env['process_name'])
-        env['df_BB'].insert(loc=1, column='step', value=env['step'])
-        env['df_BB'].insert(loc=2, column='round', value=env['round'])
-        env['df_BB'].insert(loc=3, column='phase', value=env['phase'])
-        A_data.BB = pd.concat([A_data.BB, env['df_BB']], ignore_index=True)
-        # BB_data = pd.concat([BB_data, env['df_BB']], ignore_index=True)
+            sgv['series_BB'][i] = A.BB[i].copy()
+        sgv['df_BB'] = sgv['series_BB'].to_frame().transpose()
+        sgv['df_BB'].insert(loc=0, column='process_name', value=sgv['process_name'])
+        sgv['df_BB'].insert(loc=1, column='step', value=sgv['step'])
+        sgv['df_BB'].insert(loc=2, column='round', value=sgv['round'])
+        sgv['df_BB'].insert(loc=3, column='phase', value=sgv['phase'])
+        A_data.BB = pd.concat([A_data.BB, sgv['df_BB']], ignore_index=True)
+        # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
 
         # IB_df = A.IB.to_frame().transpose()
         # IB = deepcopy(A.IB)
-        # env['series_IB'] = pd.Series()
+        # sgv['series_IB'] = pd.Series()
         for i in A.IB.index:
-            env['series_IB'][i] = A.IB[i].copy()
-        env['df_IB'] = env['series_IB'].to_frame().transpose()
-        env['df_IB'].insert(loc=0, column='process_name', value=env['process_name'])
-        env['df_IB'].insert(loc=1, column='step', value=env['step'])
-        env['df_IB'].insert(loc=2, column='round', value=env['round'])
-        env['df_IB'].insert(loc=3, column='phase', value=env['phase'])
-        A_data.IB = pd.concat([A_data.IB, env['df_IB']], ignore_index=True)
+            sgv['series_IB'][i] = A.IB[i].copy()
+        sgv['df_IB'] = sgv['series_IB'].to_frame().transpose()
+        sgv['df_IB'].insert(loc=0, column='process_name', value=sgv['process_name'])
+        sgv['df_IB'].insert(loc=1, column='step', value=sgv['step'])
+        sgv['df_IB'].insert(loc=2, column='round', value=sgv['round'])
+        sgv['df_IB'].insert(loc=3, column='phase', value=sgv['phase'])
+        A_data.IB = pd.concat([A_data.IB, sgv['df_IB']], ignore_index=True)
         # IB_data = pd.concat([IB_data, IB_df], ignore_index=True)
 
         # A_data.BB, A_data.IB = BB_data, IB_data
@@ -137,7 +137,7 @@ class Collector:
         pass
 
     @classmethod
-    def export_agent_data(cls, A_data: AgentDataCollection, env: dict):
+    def export_agent_data(cls, A_data: AgentDataCollection, sgv: dict):
         """
         HACK导出实验结果数据
 
@@ -152,24 +152,24 @@ class Collector:
 
         Args:
             A_data: 个体众数据集
-            env(dict): 环境变量
+            sgv(dict): 模拟器全局变量
 
         """
 
         ## 导出为pkl格式
-        pd.to_pickle(A_data.BB, Path(env['folderpath_experiments_output_data'], r"BB_exp=" + str(env['id_experiment']) + r".pkl"))  # 导出为pkl格式
-        pd.to_pickle(A_data.IB, Path(env['folderpath_experiments_output_data'], r"IB_exp=" + str(env['id_experiment']) + r".pkl"))  # 导出为pkl格式
+        pd.to_pickle(A_data.BB, Path(sgv['folderpath_experiments_output_data'], r"BB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
+        pd.to_pickle(A_data.IB, Path(sgv['folderpath_experiments_output_data'], r"IB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
 
         pass  # function
 
     # ## NOTE 当用对象字段数据结构时：
     # @classmethod
-    # def init_agent_data_collection(cls, A: SystemicRiskAgent, env: dict):
+    # def init_agent_data_collection(cls, A: SystemicRiskAgent, sgv: dict):
     #     """
     #
     #     Args:
     #         A (SystemicRiskAgent): 系统性风险个体众
-    #         env (dict): 环境变量
+    #         sgv (dict): 模拟器全局变量
     #
     #     Returns:
     #         A_data: 待收集的数据
@@ -177,10 +177,10 @@ class Collector:
     #     """
     #     BB_data_item = dict(
     #         {
-    #             list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
-    #             list(env.keys())[list(env.keys()).index('step')]: env['step'],
-    #             list(env.keys())[list(env.keys()).index('round')]: env['round'],
-    #             list(env.keys())[list(env.keys()).index('phase')]: env['phase'],
+    #             list(sgv.keys())[list(sgv.keys()).index('process_name')]: sgv['process_name'],
+    #             list(sgv.keys())[list(sgv.keys()).index('step')]: sgv['step'],
+    #             list(sgv.keys())[list(sgv.keys()).index('round')]: sgv['round'],
+    #             list(sgv.keys())[list(sgv.keys()).index('phase')]: sgv['phase'],
     #             'dataBB': deepcopy(A.BB)
     #         }
     #     )
@@ -191,10 +191,10 @@ class Collector:
     #
     #     IB_data_item = dict(
     #         {
-    #             list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
-    #             list(env.keys())[list(env.keys()).index('step')]: env['step'],
-    #             list(env.keys())[list(env.keys()).index('round')]: env['round'],
-    #             list(env.keys())[list(env.keys()).index('phase')]: env['phase'],
+    #             list(sgv.keys())[list(sgv.keys()).index('process_name')]: sgv['process_name'],
+    #             list(sgv.keys())[list(sgv.keys()).index('step')]: sgv['step'],
+    #             list(sgv.keys())[list(sgv.keys()).index('round')]: sgv['round'],
+    #             list(sgv.keys())[list(sgv.keys()).index('phase')]: sgv['phase'],
     #             'dataIB': deepcopy(A.IB)
     #         }
     #     )
@@ -206,14 +206,14 @@ class Collector:
     #     pass
     #
     # @classmethod
-    # def collect_agent_data(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, env: dict):
+    # def collect_agent_data(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict):
     #     """
     #     收集数据并存储
     #
     #     Args:
     #         A (SystemicRiskAgent):
     #         A_data (AgentDataCollection):
-    #         env:
+    #         sgv:
     #
     #     Returns:
     #         A_data: 待收集的数据
@@ -221,10 +221,10 @@ class Collector:
     #     """
     #     BB_data_item = dict(
     #         {
-    #             list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
-    #             list(env.keys())[list(env.keys()).index('step')]: env['step'],
-    #             list(env.keys())[list(env.keys()).index('round')]: env['round'],
-    #             list(env.keys())[list(env.keys()).index('phase')]: env['phase'],
+    #             list(sgv.keys())[list(sgv.keys()).index('process_name')]: sgv['process_name'],
+    #             list(sgv.keys())[list(sgv.keys()).index('step')]: sgv['step'],
+    #             list(sgv.keys())[list(sgv.keys()).index('round')]: sgv['round'],
+    #             list(sgv.keys())[list(sgv.keys()).index('phase')]: sgv['phase'],
     #             'dataBB': deepcopy(A.BB)
     #         }
     #     )
@@ -232,10 +232,10 @@ class Collector:
     #
     #     IB_data_item = dict(
     #         {
-    #             list(env.keys())[list(env.keys()).index('process_name')]: env['process_name'],
-    #             list(env.keys())[list(env.keys()).index('step')]: env['step'],
-    #             list(env.keys())[list(env.keys()).index('round')]: env['round'],
-    #             list(env.keys())[list(env.keys()).index('phase')]: env['phase'],
+    #             list(sgv.keys())[list(sgv.keys()).index('process_name')]: sgv['process_name'],
+    #             list(sgv.keys())[list(sgv.keys()).index('step')]: sgv['step'],
+    #             list(sgv.keys())[list(sgv.keys()).index('round')]: sgv['round'],
+    #             list(sgv.keys())[list(sgv.keys()).index('phase')]: sgv['phase'],
     #             'dataIB': deepcopy(A.IB)
     #         }
     #     )
@@ -245,13 +245,13 @@ class Collector:
     #     pass
     #
     # @classmethod
-    # def export_agent_data(cls, A_data: AgentDataCollection, env: dict):
+    # def export_agent_data(cls, A_data: AgentDataCollection, sgv: dict):
     #     """
     #     导出实验结果数据
     #
     #     Args:
     #         A_data:
-    #         env(dict): 环境变量
+    #         sgv(dict): 模拟器全局变量
     #
     #     Returns:
     #
@@ -275,15 +275,15 @@ class Collector:
     #         BB_data_export = pd.concat([BB_data_export, BB_data])  # 追加`BB_data`至`BB_data_expert`
     #         pass  # for
     #     BB_data_export.insert(0, 'id', range(len(BB_data_export)))  # 添加id列
-    #     BB_data_export.insert(1, 'id_data', np.repeat(range(len(BB_data_export) // env['num_bank']), env['num_bank']))  # 添加id_data列
-    #     BB_data_export.to_csv(path.join(env['folderpath_experiments_output_data'], "BB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
+    #     BB_data_export.insert(1, 'id_data', np.repeat(range(len(BB_data_export) // sgv['num_bank']), sgv['num_bank']))  # 添加id_data列
+    #     BB_data_export.to_csv(path.join(sgv['folderpath_experiments_output_data'], "BB_exp=" + str(sgv['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
     #
     #
     #     ## 整理interbank之数据为一数据框
     #     IB_data_export = pd.DataFrame()
     #     IB_data = pd.DataFrame()
     #     # numRow, numCol = np.shape(A_data.IB[0]['dataIB'].A_IB)
-    #     numRow, numCol = env['num_bank'], env['num_bank']
+    #     numRow, numCol = sgv['num_bank'], sgv['num_bank']
     #     for (i1, v1) in enumerate(A_data.IB):
     #         # IB_data['id_data'] = np.full(numRow * numCol, v1['id_data'])
     #         # IB_data['id_data'] = v1['id_data']
@@ -324,8 +324,8 @@ class Collector:
     #         IB_data_export = pd.concat([IB_data_export, IB_data])  # 追加当前`IB_data`至`IB_data_expert`
     #         pass  # for
     #     IB_data_export.insert(0, 'id', range(len(IB_data_export)))  # 添加id列
-    #     IB_data_export.insert(1, 'id_data', np.repeat(range(len(IB_data_export) // env['num_bank'] ** 2), env['num_bank'] ** 2))  # 添加id_data列
-    #     IB_data_export.to_csv(path.join(env['folderpath_experiments_output_data'], "IB_exp=" + str(env['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
+    #     IB_data_export.insert(1, 'id_data', np.repeat(range(len(IB_data_export) // sgv['num_bank'] ** 2), sgv['num_bank'] ** 2))  # 添加id_data列
+    #     IB_data_export.to_csv(path.join(sgv['folderpath_experiments_output_data'], "IB_exp=" + str(sgv['id_experiment']) + ".csv"), index=False)  # 导出为csv格式；
     #
     #     pass  # function
     #
@@ -342,17 +342,17 @@ class Collector:
         Returns:
 
         """
-        env['num_experiment'] = len(list_combination_of_para)  # 获取实验组之实验个数
+        sgv['num_experiment'] = len(list_combination_of_para)  # 获取实验组之实验个数
 
-        # env['num_bank'] = len(para['list_id_bank'])  if env['num_bank'] is None else env['num_bank']
+        # sgv['num_bank'] = len(para['list_id_bank'])  if sgv['num_bank'] is None else sgv['num_bank']
         df_010 = pd.DataFrame(list_combination_of_para, columns=para.keys())  # 转换字典列表为数据框
         list_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
         id_type_is_array = list_types.index(np.ndarray)  # 获取索引值为类型为数组类型的
 
         ## 获取银行个数
         is_need_to_get_num_bank = False
-        if 'num_bank' in env.keys():
-            if env['num_bank'] is None:
+        if 'num_bank' in sgv.keys():
+            if sgv['num_bank'] is None:
                 is_need_to_get_num_bank = True
                 pass  # if
         else:
@@ -360,15 +360,15 @@ class Collector:
             pass  # if
 
         if is_need_to_get_num_bank:
-            env['num_bank'] = len(para[list(para.keys())[id_type_is_array]][0])  # 获取字典 `para` 在索引 `id_type_is_array` 对应的变量。该变量是一个列表。获取该列表第一个元素。该元素是一个数组。获取该数组大小，作为银行个数
+            sgv['num_bank'] = len(para[list(para.keys())[id_type_is_array]][0])  # 获取字典 `para` 在索引 `id_type_is_array` 对应的变量。该变量是一个列表。获取该列表第一个元素。该元素是一个数组。获取该数组大小，作为银行个数
 
         ## 展开数组类型的参数，得到一个新的数据框变量。该变量具有所有参数组合。后续在实验组循环中，每次取一行，作为本次实验的参数。
         df_combinationOfPara = df_010.explode(df_010.keys()[id_type_is_array])
-        df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1, env['num_bank'] + 1)), reps=env['num_experiment']))  # 添加数据项id
-        df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, env['num_experiment'] + 1)), repeats=env['num_bank'], axis=0))  # 添加实验组id
+        df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1, sgv['num_bank'] + 1)), reps=sgv['num_experiment']))  # 添加数据项id
+        df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, sgv['num_experiment'] + 1)), repeats=sgv['num_bank'], axis=0))  # 添加实验组id
 
         ## 导出实验参数为 csv 格式
-        df_combinationOfPara.to_csv(Path(env['folderpath_experiments_output_data'], r"paras.csv"))  # 导出字段列表为csv格式
+        df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_data'], r"paras.csv"))  # 导出字段列表为csv格式
         pass  # function
 
     pass  # class

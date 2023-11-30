@@ -25,14 +25,14 @@ entityData_IB1111 = dict(
         "node_END": "END",
     }),
     condition=dict({
-        "node_01_condition_01": r"(A.BB.isv != A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1].isv).any()",  # BUG
-        "node_01_condition_02": r"(A.BB.isv == A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1].isv).all()",
-        "node_02_condition_01": r"(A.BB.isv != A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1].isv).any()",
-        "node_02_condition_02": r"(A.BB.isv == A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1].isv).all()",
-        "node_03_condition_01": r"(A.BB.ilq != A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1].ilq).any()",
-        "node_03_condition_02": r"(A.BB.ilq == A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1].ilq).all()",
-        "node_04_condition_01": r"(A.BB.ilq != A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1].ilq).any()",
-        "node_04_condition_02": r"(A.BB.ilq == A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1].ilq).all()",
+        "node_01_condition_01": r"(A.BB.isv != A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].isv).any()",  # BUG
+        "node_01_condition_02": r"(A.BB.isv == A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].isv).all()",
+        "node_02_condition_01": r"(A.BB.isv != A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].isv).any()",
+        "node_02_condition_02": r"(A.BB.isv == A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].isv).all()",
+        "node_03_condition_01": r"(A.BB.ilq != A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].ilq).any()",
+        "node_03_condition_02": r"(A.BB.ilq == A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].ilq).all()",
+        "node_04_condition_01": r"(A.BB.ilq != A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].ilq).any()",
+        "node_04_condition_02": r"(A.BB.ilq == A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].ilq).all()",
     }),
     content=None,
     node=None,

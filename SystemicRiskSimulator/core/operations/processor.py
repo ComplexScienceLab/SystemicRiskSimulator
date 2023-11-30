@@ -18,7 +18,7 @@ class Processor:
     """
 
     @classmethod
-    def process_entity_by_process_and_container_component(cls, model: Entity, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, env: dict):
+    def process_entity_by_process_and_container_component(cls, model: Entity, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         处理所有类型的实体，通过过程与容器组件。
 
@@ -29,9 +29,9 @@ class Processor:
             A (SystemicRiskAgent): Agent群变量
             A_data (AgentDataCollection): Agent群变量之数据
             para (dict): 参数变量
-            env (dict): 环境变量
+            sgv (dict): 模拟器全局变量
 
-        Returns: entity: 模型模板实体, A: Agent群变量, para: 参数变量, env: 环境变量, A_data: Agent群变量之数据
+        Returns: entity: 模型模板实体, A: Agent群变量, para: 参数变量, sgv: 模拟器全局变量, A_data: Agent群变量之数据
 
         """
 
@@ -39,7 +39,7 @@ class Processor:
         modelEntity = model.content
         process = modelEntity.process
         line_number = 1  # 当前指令所在行号
-        while ((line_number <= len(process)) and (env['state_of_schedule'] == StateOfScheduleEnum.running)):  # 当指令位置在指令序列内时，且满足调度条件时，运行过程指令
+        while ((line_number <= len(process)) and (sgv['state_of_schedule'] == StateOfScheduleEnum.running)):  # 当指令位置在指令序列内时，且满足调度条件时，运行过程指令
             instruction = process[line_number - 1]
             if instruction[1] == 'node':  # 当前指令是标记节点位置语句时
                 logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.id}")
@@ -48,7 +48,7 @@ class Processor:
             elif instruction[1] == 'execute':  # 当前指令是执行语句时
                 if not (instruction[2].attribute.entity_name == 'START' or instruction[2].attribute.entity_name == 'END'):
                     logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.text_name}")
-                    A, A_data, env = Executer.execute_model_entity(A, A_data, para, env, instruction[2])
+                    A, A_data, sgv = Executer.execute_model_entity(A, A_data, para, sgv, instruction[2])
                     line_number += 1
                 else:  # 当前指令开始或结束节点时
                     logging.debug(f"处理行\t{instruction[0]}\t{instruction[1]}\t\t{instruction[2].attribute.entity_name} {instruction[2].attribute.text_name}")
@@ -78,10 +78,10 @@ class Processor:
                 for instruction_ifgoto in instructions_ifgoto:  ## 判断每个条件
                     condition = eval(instruction_ifgoto[2]) if instruction_ifgoto[2] is not None else None  # NOTE 其实判断None这个条件是多余的
 
-                    A_data.BB[A_data.BB['round'] == env['round'] - 1].iloc[-1]
+                    A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1]
                     ## DEBUG 以下是专用的日志，适用于打印当前的条件语句
                     condition_str = instruction_ifgoto[2]
-                    pattern = re.compile(r"env\[['\"]round['\"]\] - 1")
+                    pattern = re.compile(r"sgv\[['\"]round['\"]\] - 1")
                     matched_str = pattern.search(condition_str)
                     logging.debug(f"    条件{re.sub(pattern.pattern, f'[{eval(matched_str.group())}]', condition_str)}是 {condition}")
 
@@ -95,7 +95,7 @@ class Processor:
                 pass  # if
             pass  # while
 
-        return model, A, A_data, para, env
+        return model, A, A_data, para, sgv
 
         pass  # function
 

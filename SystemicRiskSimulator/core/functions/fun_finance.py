@@ -1,7 +1,7 @@
 from SystemicRiskSimulator import np, deepcopy
 from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank
 from SystemicRiskSimulator.core.define.define_type import StateType, MoneyType
-from SystemicRiskSimulator.core.define.define_environmentVariables import env
+from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.core.define.define_consts import CONST
 
 
@@ -149,16 +149,16 @@ class Finance:
     @classmethod
     def clear_all_transfer(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """清零所有流量变量值"""
-        bank.Lo_IB_all[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
-        bank.Lo_P[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
-        bank.Li_IB_all[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
-        bank.Li_P[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
-        bank.Bi_IB_all[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
-        bank.Bi_D[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
-        bank.Bo_IB_all[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
-        bank.Bo_D[bankState] = CONST(env['num_bank']).ZEROS1.copy()[bankState]
-        interbank.Lo_IB[interbankState] = CONST(env['num_bank']).ZEROS2.copy()[interbankState]
-        interbank.Bo_IB[interbankState] = CONST(env['num_bank']).ZEROS2.copy()[interbankState]
+        bank.Lo_IB_all[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
+        bank.Lo_P[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
+        bank.Li_IB_all[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
+        bank.Li_P[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
+        bank.Bi_IB_all[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
+        bank.Bi_D[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
+        bank.Bo_IB_all[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
+        bank.Bo_D[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
+        interbank.Lo_IB[interbankState] = CONST(sgv['num_bank']).ZEROS2.copy()[interbankState]
+        interbank.Bo_IB[interbankState] = CONST(sgv['num_bank']).ZEROS2.copy()[interbankState]
         pass
 
     ## NOTE：功能函数集：计算冲击。
@@ -303,27 +303,27 @@ class Finance:
     @classmethod
     def clear_Shock_IB_and_exIB(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):  # BUG是否乱清零？
         """清零本回合结束时所有不必要的冲击变量"""
-        bank.Shock_P_def_t = np.zeros(env['num_bank'])
-        bank.Shock_D_run_t = np.zeros(env['num_bank'])
-        bank.Shock_P_run_s = np.zeros(env['num_bank'])
-        bank.Shock_D_def_s = np.zeros(env['num_bank'])
-        bank.Shock_IB_def_s = np.zeros(env['num_bank'])
-        bank.Shock_IB_run_ilq_s = np.zeros(env['num_bank'])
-        bank.Shock_IB_run_br_s = np.zeros(env['num_bank'])
-        interbank.Shock_IB_def = np.zeros(env['num_bank'], env['num_bank'])
-        interbank.Shock_IB_run_ilq = np.zeros(env['num_bank'], env['num_bank'])
-        interbank.Shock_IB_run_br = np.zeros(env['num_bank'], env['num_bank'])
-        bank.Shock_IB_def_t = np.zeros(env['num_bank'])
-        bank.Shock_IB_run_ilq_t = np.zeros(env['num_bank'])
-        bank.Shock_IB_run_br_t = np.zeros(env['num_bank'])
+        bank.Shock_P_def_t = np.zeros(sgv['num_bank'])
+        bank.Shock_D_run_t = np.zeros(sgv['num_bank'])
+        bank.Shock_P_run_s = np.zeros(sgv['num_bank'])
+        bank.Shock_D_def_s = np.zeros(sgv['num_bank'])
+        bank.Shock_IB_def_s = np.zeros(sgv['num_bank'])
+        bank.Shock_IB_run_ilq_s = np.zeros(sgv['num_bank'])
+        bank.Shock_IB_run_br_s = np.zeros(sgv['num_bank'])
+        interbank.Shock_IB_def = np.zeros(sgv['num_bank'], sgv['num_bank'])
+        interbank.Shock_IB_run_ilq = np.zeros(sgv['num_bank'], sgv['num_bank'])
+        interbank.Shock_IB_run_br = np.zeros(sgv['num_bank'], sgv['num_bank'])
+        bank.Shock_IB_def_t = np.zeros(sgv['num_bank'])
+        bank.Shock_IB_run_ilq_t = np.zeros(sgv['num_bank'])
+        bank.Shock_IB_run_br_t = np.zeros(sgv['num_bank'])
         pass
 
     # @classmethod
     # def clear_Shock_inB(cls, bank: BankCommercial):
     #     """清零本回合中期所有不必要的冲击变量"""  # HACK无用
     #
-    #     bank.Shock_B_A = np.zeros(env['num_bank'])
-    #     bank.Shock_B_Z = np.zeros(env['num_bank'])
+    #     bank.Shock_B_A = np.zeros(sgv['num_bank'])
+    #     bank.Shock_B_Z = np.zeros(sgv['num_bank'])
     #     pass
 
     ## NOTE：功能函数集：计算商业银行之资产负债表结构。
@@ -382,15 +382,15 @@ class Finance:
     @classmethod
     def calc_B_E_all(cls, bank: BankCommercial, bankList: StateType):  # BUG是否考虑E_all负数？还是手动计算？
         """计算各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
-        bank.E_all[bankList] = bank.A_all[bankList] - bank.Z_all[bankList] - CONST(env['num_bank']).LESS1[bankList]  # 允许E_all为负数
-        # bank.E_all[bankState] = np.maximum(bank.A_all[bankState] - bank.Z_all[bankState] - CONST(env['num_bank']).LESS1[bankState], 0.0)
+        bank.E_all[bankList] = bank.A_all[bankList] - bank.Z_all[bankList] - CONST(sgv['num_bank']).LESS1[bankList]  # 允许E_all为负数
+        # bank.E_all[bankState] = np.maximum(bank.A_all[bankState] - bank.Z_all[bankState] - CONST(sgv['num_bank']).LESS1[bankState], 0.0)
         pass
 
     # @classmethod
     # def calc_B_E_all_at_all_bank(cls, bank: BankCommercial, bankState: StateType):  # HACK没有用到过
     #     """计算银行体系内包括已退出银行在内的所有各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
-    #     bank.E_all[:] = bank.A_all - bank.Z_all - CONST(env['num_bank']).LESS1
-    #     # bank.E_all[:] = np.maximum(bank.A_all - bank.Z_all - CONST(env['num_bank']).LESS1, 0.0)
+    #     bank.E_all[:] = bank.A_all - bank.Z_all - CONST(sgv['num_bank']).LESS1
+    #     # bank.E_all[:] = np.maximum(bank.A_all - bank.Z_all - CONST(sgv['num_bank']).LESS1, 0.0)
     #     pass
 
     # @classmethod
@@ -452,7 +452,7 @@ class Finance:
             source_state_changes: 示性向量之源状态改变的。
 
         """
-        result = ((bank.E_all >= CONST(env['num_bank']).LESS1) & (bank.A_Q >= CONST(env['num_bank']).LESS1) & (bank.Shock_def_t + CONST(env['num_bank']).LESS1 <= bank.E_all) & (bank.Shock_run_t + CONST(env['num_bank']).LESS1 <= bank.A_Q) & (bank.on))
+        result = ((bank.E_all >= CONST(sgv['num_bank']).LESS1) & (bank.A_Q >= CONST(sgv['num_bank']).LESS1) & (bank.Shock_def_t + CONST(sgv['num_bank']).LESS1 <= bank.E_all) & (bank.Shock_run_t + CONST(sgv['num_bank']).LESS1 <= bank.A_Q) & (bank.on))
         source_state_changes = (bank.hel != result)
         bank.hel = result
         interbank.hel = (bank.hel & bank.hel.T)
@@ -472,7 +472,7 @@ class Finance:
             source_state_changes: 示性向量之源状态改变的。
 
         """
-        result = (((bank.A_all < bank.Z_all + CONST(env['num_bank']).LESS1) | (bank.E_all < CONST(env['num_bank']).LESS1) | (bank.Shock_def_t + CONST(env['num_bank']).LESS1 > bank.E_all)) & bank.on)
+        result = (((bank.A_all < bank.Z_all + CONST(sgv['num_bank']).LESS1) | (bank.E_all < CONST(sgv['num_bank']).LESS1) | (bank.Shock_def_t + CONST(sgv['num_bank']).LESS1 > bank.E_all)) & bank.on)
         source_state_changes = (bank.isv != result)
         bank.isv = result
         interbank.isv = (bank.isv & bank.isv.T)
@@ -492,7 +492,7 @@ class Finance:
             source_state_changes: 示性向量之源状态改变的。
 
         """
-        result = (((bank.A_Q < CONST(env['num_bank']).LESS1) | (bank.Shock_run_t + CONST(env['num_bank']).LESS1 > bank.A_Q)) & bank.on)
+        result = (((bank.A_Q < CONST(sgv['num_bank']).LESS1) | (bank.Shock_run_t + CONST(sgv['num_bank']).LESS1 > bank.A_Q)) & bank.on)
         source_state_changes = (bank.ilq != result)
         bank.ilq = result
         interbank.ilq = (bank.ilq & bank.ilq.T)
@@ -655,8 +655,8 @@ class Finance:
             is_exposure = ((interbank.Z_IB > 0.0) & isState)
         else:
             pass
-        list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(env['num_bank'])])
-        for i in range(env['num_bank']):
+        list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(sgv['num_bank'])])
+        for i in range(sgv['num_bank']):
             list_of_relation_in_state_of_banks[i] = np.where(is_exposure[i, :])[0]  # 获取对应状态下的债权或者债务关系的银行列表
             pass
         return list_of_relation_in_state_of_banks

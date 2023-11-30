@@ -7,9 +7,9 @@ from SystemicRiskSimulator.core.define.define_type import StateType
 pass  # end import
 
 
-def content_InterBankBankruptContagionShock(A: SystemicRiskAgent, para: dict, env: dict):
+def content_InterBankBankruptContagionShock(A: SystemicRiskAgent, para: dict, sgv: dict):
     ## # 破产银行间挤兑流动传染冲击
-    # env['stage_name'] = "破产银行间挤兑流动传染冲击模型"
+    # sgv['stage_name'] = "破产银行间挤兑流动传染冲击模型"
 
     BankState.update_states(way='any')
     # BankState.update_B_state(A.BB, A.IB, target='bankrupt', source='any') #FIXME
@@ -23,5 +23,5 @@ def content_InterBankBankruptContagionShock(A: SystemicRiskAgent, para: dict, en
     BankState.update_states(way='bankrupt')
     # BankState.update_B_state(A.BB, A.IB, target='bankrupt', source='any') #FIXME
 
-    return A, env
+    return A, sgv
     pass  # function
