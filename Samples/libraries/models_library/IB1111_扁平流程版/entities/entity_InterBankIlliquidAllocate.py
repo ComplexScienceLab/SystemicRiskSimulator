@@ -1,23 +1,23 @@
 """
-流动性短缺银行间挤兑流动传染过程模型之初始态
+银行间挤兑流动分配借贷流量过程模型之初始态
 """
 
 # import here
 
 pass  # end import
 
-entityData_InterBankIlliquidContagionShock = dict(
+entity_InterBankIlliquidAllocate = dict(
     attribute=dict(
-        id="user4050",
-        entity_name="InterBankIlliquidContagionShock",
-        text_name="流动性短缺银行间挤兑流动传染",
+        id="user4060",
+        entity_name="InterBankIlliquidAllocate",
+        text_name="银行间挤兑流动分配借贷流量",
         entity_type={"template entity"},
         structure_type={"content structure"},
         container_type={"leaf container"},
         process_type={"executive process"},
         content_type={"model content"},
     ),
-    execute="content_InterBankIlliquidContagionShock",
+    execute="content_InterBankIlliquidAllocate",
     process=None,
     container=None,
     condition=None,

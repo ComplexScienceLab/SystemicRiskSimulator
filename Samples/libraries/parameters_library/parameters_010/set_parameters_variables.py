@@ -1,8 +1,7 @@
 "程序：设置参数变量parameter_variables"
 
-
-
 from SystemicRiskSimulator.external_packages import np
+
 pass  # end import
 
 set_parameters_variables = dict(
@@ -11,7 +10,8 @@ set_parameters_variables = dict(
 
     ## 指定待处理的模型
     model_name=[
-        'IB1111_流程版',
+        'IB1111_非流程多函数版',
+        # 'IB1111_扁平流程版',
     ],
 
     ## 外生违约损失冲击权重百分比

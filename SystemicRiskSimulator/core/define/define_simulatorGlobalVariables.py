@@ -11,7 +11,7 @@ from SystemicRiskSimulator.data.config.set_config_variables import set_config_va
 pass  # end import
 
 # 生成字典变量
-sgv: SimulatorGlobalVariableType = {}
+sgv: SimulatorGlobalVariableType = dict()
 
 ######### 定义以下项目内的全局变量（不要改动！） ######################################### #TODO 需要整理
 sgv['folderpath_experiments'] = ""  # 主文件夹路径之于实验。将由函数生成；

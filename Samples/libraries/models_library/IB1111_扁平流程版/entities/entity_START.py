@@ -1,12 +1,12 @@
 """
-结束实体模型之初始态
+开始实体模型之初始态
 """
 
-entityData_END = dict(
+entity_START = dict(
     attribute=dict(
-        id="user9999",
-        entity_name="END",
-        text_name="结束过程",
+        id="user0000",
+        entity_name="START",
+        text_name="开始过程",
         entity_type={"template entity"},
         structure_type={"process structure"},
         container_type={"leaf container"},
@@ -17,6 +17,6 @@ entityData_END = dict(
     process=None,
     container=None,
     condition=None,
-    node=None,
     content=None,
+    node=None,
 )

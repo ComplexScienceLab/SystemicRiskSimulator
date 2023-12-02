@@ -6,7 +6,7 @@
 
 pass  # end import
 
-entityData_ExBankInsolventShock = dict(
+entity_ExBankInsolventShock = dict(
     attribute=dict(
         id="user4010",
         entity_name="ExBankInsolventShock",

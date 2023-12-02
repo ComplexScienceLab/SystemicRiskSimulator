@@ -50,7 +50,13 @@ class Operator:
         time.sleep(1)
 
         ## 导入实体数据，生成实体集、内容集并返回
-        Builder.build_entities_by_process_and_container_component(sgv)  # BUG 会不会出现不能处理多个模型的情形？
+        if sgv['is_use_flow_form_version_model']:
+            ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()`
+            Builder.build_entities_by_process_and_container_component(sgv)  # BUG 会不会出现不能处理多个模型的情形？
+        else:
+            ## NOTE 如果直接使用非流程版的形式的模型
+            Builder.build_entities_by_execute(sgv)
+            pass  # if
 
         return sgv, EntityManager.mainModelInstanceEntities
 
@@ -101,12 +107,21 @@ class Operator:
             # A = DataInstaller.initialize_data(A, para, sgv)
             pass  # if
 
-        ## HACK 如果使用`Processor.process_entity_by_process_and_container_component()`
-        Scheduler.schedule(sgv)  # 调度状态变成`running`
-        model, A, sgv['A_data'], para, sgv = Processor.process_entity_by_process_and_container_component(model, A, sgv['A_data'], para, sgv)  # 执行具体的模型，通过执行模型实体的方式
-        if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
-            sgv['is_continue_process'] = False  # 不再继续运行过程
-            Scheduler.schedule(sgv)  # 调度状态变成`ending`
+        if sgv['is_use_flow_form_version_model']:
+            ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()`
+            Scheduler.schedule(sgv)  # 调度状态变成`running`
+            model, A, sgv['A_data'], para, sgv = Processor.process_entity_by_process_and_container_component(model, A, sgv['A_data'], para, sgv)  # 执行具体的模型，通过执行模型实体的方式
+            if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
+                sgv['is_continue_process'] = False  # 不再继续运行过程
+                Scheduler.schedule(sgv)  # 调度状态变成`ending`
+        else:
+            ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_round']` 失效
+            Scheduler.schedule(sgv)  # 调度状态变成`running`
+            model, A, sgv['A_data'], para, sgv = Processor.process_entity_by_execute_component(model, A, sgv['A_data'], para, sgv)  # 执行具体的模型，通过执行模型实体的方式
+            if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
+                sgv['is_continue_process'] = False  # 不再继续运行过程
+                Scheduler.schedule(sgv)  # 调度状态变成`ending`
+            pass  # if
 
         # ## HACK 如果使用`Processor.process_entity_by_node_component()` #TODO 无用可删除
         # Scheduler.schedule(sgv)

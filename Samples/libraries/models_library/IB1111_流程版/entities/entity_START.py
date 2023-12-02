@@ -2,7 +2,7 @@
 开始实体模型之初始态
 """
 
-entityData_START = dict(
+entity_START = dict(
     attribute=dict(
         id="user0000",
         entity_name="START",

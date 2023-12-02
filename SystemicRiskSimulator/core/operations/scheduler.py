@@ -33,8 +33,8 @@ class Scheduler:
         """
         if sgv['state_of_schedule'] is StateOfScheduleEnum.running:
             sgv['state_of_schedule'] = cls.schedule_running(sgv['state_of_schedule'], sgv)
-        elif sgv['state_of_schedule'] is StateOfScheduleEnum.collecting:
-            sgv['state_of_schedule'] = cls.schedule_collecting(sgv['state_of_schedule'], sgv['running_mode'])
+        # elif sgv['state_of_schedule'] is StateOfScheduleEnum.collecting:
+        #     sgv['state_of_schedule'] = cls.schedule_collecting(sgv['state_of_schedule'], sgv['running_mode'])
         elif sgv['state_of_schedule'] is StateOfScheduleEnum.initializing:
             sgv['state_of_schedule'] = cls.schedule_initializing(sgv['state_of_schedule'], sgv['running_mode'], sgv)
         elif sgv['state_of_schedule'] is StateOfScheduleEnum.ending:
@@ -47,7 +47,6 @@ class Scheduler:
 
         return sgv
         pass  # function
-
 
     @classmethod
     def schedule_running(cls, state_of_schedule: StateOfScheduleEnum, sgv: dict):
@@ -80,39 +79,39 @@ class Scheduler:
             pass
 
         ## 切换调度状态
-        if sgv['is_continue_operation'] is True:
-            state_of_schedule = StateOfScheduleEnum.collecting
-        else:
+        if sgv['is_continue_operation'] is True:  # 如果继续运作，则切换调度状态为`running`
+            # state_of_schedule = StateOfScheduleEnum.collecting  #HACK 不再使用 `StateOfScheduleEnum.collecting` 无用可删除
+            pass
+        else:  # 如果不再继续运作，则切换调度状态为`ending`
             state_of_schedule = StateOfScheduleEnum.ending
         logging.debug(f"                切换调度状态为{state_of_schedule}，step = {sgv['step']}，round = {sgv['round']}，phase = {sgv['phase']}")
 
         return state_of_schedule
         pass  # function
 
-
-    @classmethod
-    def schedule_collecting(cls, state_of_schedule: StateOfScheduleEnum, running_mode: str):
-        """
-        调度搜集数据
-
-        Args:
-            state_of_schedule (StateOfScheduleEnum): 调度状态
-            running_mode (str): 运行模式
-
-        Returns:
-            state_of_schedule 调度状态
-
-        """
-
-        if running_mode == "continue running mode":
-            state_of_schedule = StateOfScheduleEnum.running
-        elif running_mode == "stepping running mode":
-            state_of_schedule = StateOfScheduleEnum.loading
-
-        logging.debug(f"                切换调度状态为{state_of_schedule}，step = {sgv['step']}，round = {sgv['round']}，phase = {sgv['phase']}")
-
-        return state_of_schedule
-        pass  # function
+    # @classmethod
+    # def schedule_collecting(cls, state_of_schedule: StateOfScheduleEnum, running_mode: str):
+    #     """
+    #     调度搜集数据
+    #
+    #     Args:
+    #         state_of_schedule (StateOfScheduleEnum): 调度状态
+    #         running_mode (str): 运行模式
+    #
+    #     Returns:
+    #         state_of_schedule 调度状态
+    #
+    #     """
+    #
+    #     if running_mode == "continue running mode":
+    #         state_of_schedule = StateOfScheduleEnum.running
+    #     elif running_mode == "stepping running mode":
+    #         state_of_schedule = StateOfScheduleEnum.loading
+    #
+    #     logging.debug(f"                切换调度状态为{state_of_schedule}，step = {sgv['step']}，round = {sgv['round']}，phase = {sgv['phase']}")
+    #
+    #     return state_of_schedule
+    #     pass  # function
 
     @classmethod
     def schedule_initializing(cls, state_of_schedule: StateOfScheduleEnum, running_mode: str, sgv: dict):
@@ -131,8 +130,8 @@ class Scheduler:
             sgv['is_continue_round'] = True
             sgv['is_continue_process'] = True
             state_of_schedule = StateOfScheduleEnum.running
-        elif running_mode == "stepping running mode":  # HACK暂时不需要
-            state_of_schedule = StateOfScheduleEnum.saving
+        # elif running_mode == "stepping running mode":  # HACK 不需要 `StateOfScheduleEnum.saving` 可以删除
+        #     state_of_schedule = StateOfScheduleEnum.saving
 
         logging.debug(f"                切换调度状态为{state_of_schedule}，step = {sgv['step']}，round = {sgv['round']}，phase = {sgv['phase']}")
 
@@ -173,6 +172,5 @@ class Scheduler:
 
         return state_of_schedule
         pass  # function
-
 
     pass  # class

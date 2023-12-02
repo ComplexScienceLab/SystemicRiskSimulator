@@ -1,0 +1,45 @@
+"""资不抵债银行资产违约损失冲击模型"""
+
+from SystemicRiskSimulator.external_packages import np
+from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
+from SystemicRiskSimulator.core.operations.executer import Executer
+
+pass  # end import
+
+
+def content_InterBankInsolventShock(A: SystemicRiskAgent, para: dict, sgv: dict):
+    """
+    资不抵债银行资产违约损失冲击模型
+
+    Args:
+        A ():
+        para ():
+        sgv ():
+
+    Returns:
+
+    """
+
+    # sgv['stage_name'] = "资不抵债银行资产违约损失冲击模型"
+
+    A.BB.A_IB_all[A.b] = np.maximum(A.BB.A_IB_all[A.b] - A.BB.Shock_def_t[A.b], 0.0)  # 银行之银行间资产变动
+    Executer.step_update('A_IB_all', A, para, sgv)  # 更新银行间资产
+    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='A_IB_all')  # 更新银行间资产
+    A.BB.E_all[A.BB.on] = np.maximum(A.BB.E_all[A.BB.on] - A.BB.Shock_def_t[A.BB.on], 0.0)  # 银行之所有者权益变动
+    A.BB.Shock_IB_def_s[A.BB.isv] = abs((A.BB.Shock_def_t[A.BB.isv] - A.BB.E_all[A.BB.isv]) / (A.BB.Z_IB_all[A.BB.isv] + A.BB.Z_D[A.BB.isv]) * A.BB.Z_IB_all[A.BB.isv])  # 计算应银行内冲击传导至银行间传染冲击
+    Executer.step_update('Shock_IB_def_s', A, para, sgv)  # 更新违约损失冲击源头变量Shock_def_s
+    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_def_s')  # 更新违约损失冲击源头变量Shock_def_s
+    A.BB.Shock_D_def_s[A.BB.isv] = abs((A.BB.Shock_def_t[A.BB.isv] - A.BB.E_all[A.BB.isv]) / (A.BB.Z_IB_all[A.BB.isv] + A.BB.Z_D[A.BB.isv]) * A.BB.Z_D[A.BB.isv])  # 计算应银行内冲击传导至银行存款传染冲击
+    Executer.step_update('Shock_D_def_s', A, para, sgv)  # 更新违约损失冲击源头变量Shock_def_s #BUG
+    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_D_def_s')  # 更新违约损失冲击源头变量Shock_def_s #BUG
+    A.BB.Z_IB_all[A.BB.isv] -= A.BB.Shock_IB_def_s[A.BB.isv]  # 银行间负债变动，由于违约
+    Executer.step_update('Z_IB_all', A, para, sgv)  # 更新资产负债表，通过Z_D或Z_IB_all
+    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_IB_all')  # 更新资产负债表，通过Z_D或Z_IB_all
+    A.BB.Z_D[A.BB.isv] -= A.BB.Shock_D_def_s[A.BB.isv]  # 存款负债变动，由于违约
+    Executer.step_update('Z_D', A, para, sgv)  # 更新资产负债表，通过Z_D或Z_IB_all
+    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_D')  # 更新资产负债表，通过Z_D或Z_IB_all
+
+    # update_B_Shock(A.BB, A.IB, A.b, A.ib, by_way = 'clear Shock_B_A and Shock_B_Z') # 清零银行内资产负债冲击
+
+    return A, sgv
+    pass  # function

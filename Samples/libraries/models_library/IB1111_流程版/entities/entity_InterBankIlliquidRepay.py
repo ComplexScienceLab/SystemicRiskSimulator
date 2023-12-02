@@ -1,26 +1,26 @@
 """
-银行存款挤兑流动冲击过程模型之初始态
+银行间挤兑流动执行借贷流量过程模型之初始态
 """
 
 # import here
 
 pass  # end import
 
-entityData_ExBankIlliquidShock = dict(
+entity_InterBankIlliquidRepay = dict(
     attribute=dict(
-        id="user4040",
-        entity_name="ExBankIlliquidShock",
-        text_name="银行存款挤兑流动冲击",
+        id="user4070",
+        entity_name="InterBankIlliquidRepay",
+        text_name="银行间挤兑流动执行借贷流量",
         entity_type={"template entity"},
         structure_type={"content structure"},
         container_type={"leaf container"},
         process_type={"executive process"},
         content_type={"model content"},
     ),
-    execute="content_ExBankIlliquidShock",
+    execute="content_InterBankIlliquidRepay",
     process=None,
     container=None,
     condition=None,
-    node=None,
     content=None,
+    node=None,
 )

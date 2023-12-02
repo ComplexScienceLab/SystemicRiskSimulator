@@ -222,7 +222,7 @@ class EntityManager:
         if (
                 entity.attribute.structure_type == {"tree structure"}
         ):
-            cls.treeEntities.update({entity.attribute.id: entity}) # 如果键名重复，会覆盖原来的键值对
+            cls.treeEntities.update({entity.attribute.id: entity})  # 如果键名重复，会覆盖原来的键值对
             logging.info(f"已添加实体到 treeEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
         pass  # function
 
@@ -246,6 +246,12 @@ class EntityManager:
         ) or (
                 entity.attribute.entity_type == {"template entity"} and
                 entity.attribute.structure_type == {"container structure", "process structure"} and
+                entity.attribute.container_type == {"root container"} and
+                entity.attribute.process_type == {"executive process"} and
+                entity.attribute.content_type == {"model content"}
+        ) or (
+                entity.attribute.entity_type == {"template entity"} and
+                entity.attribute.structure_type == {"content structure"} and
                 entity.attribute.container_type == {"root container"} and
                 entity.attribute.process_type == {"executive process"} and
                 entity.attribute.content_type == {"model content"}
@@ -284,6 +290,12 @@ class EntityManager:
                 entity.attribute.container_type == {"root container"} and
                 entity.attribute.process_type == {"executive process"} and
                 entity.attribute.content_type == {"model content"}
+        ) or (
+                entity.attribute.entity_type == {"template entity"} and
+                entity.attribute.structure_type == {"content structure"} and
+                entity.attribute.container_type == {"root container"} and
+                entity.attribute.process_type == {"executive process"} and
+                entity.attribute.content_type == {"model content"}
         ):
             cls.mainModelTemplateEntities.update({entity.attribute.entity_name: entity})
             logging.info(f"已添加实体到 mainModelTemplateEntities。id：「{entity.attribute.id}」，名称：「{entity.attribute.entity_name}」。")
@@ -304,6 +316,12 @@ class EntityManager:
         if (
                 entity.attribute.entity_type == {"instance entity"} and
                 entity.attribute.structure_type == {"container structure", "process structure"} and
+                entity.attribute.container_type == {"root container"} and
+                entity.attribute.process_type == {"executive process"} and
+                entity.attribute.content_type == {"model content", "node content"}
+        ) or (
+                entity.attribute.entity_type == {"instance entity"} and
+                entity.attribute.structure_type == {"content structure"} and
                 entity.attribute.container_type == {"root container"} and
                 entity.attribute.process_type == {"executive process"} and
                 entity.attribute.content_type == {"model content", "node content"}

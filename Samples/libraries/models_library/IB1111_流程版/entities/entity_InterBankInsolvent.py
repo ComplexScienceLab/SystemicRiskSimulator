@@ -1,14 +1,14 @@
 """
-银行存款挤兑流动过程模型之初始态
+资不抵债银行间违约损失过程模型之初始态
 """
 
 # import here
 
-entityData_ExBankIlliquid = dict(
+entity_InterBankInsolvent = dict(
     attribute=dict(
-        id="user2030",
-        entity_name="ExBankIlliquid",
-        text_name="银行存款挤兑流动过程",
+        id="user2020",
+        entity_name="InterBankInsolvent",
+        text_name="资不抵债银行间违约损失过程",
         entity_type={"template entity"},
         structure_type={"container structure", "process structure"},
         container_type={"branch container"},
@@ -16,10 +16,11 @@ entityData_ExBankIlliquid = dict(
         content_type={"model content"},
     ),
     execute="Processor.process_entity_by_process_and_container_component",
-    process="content_ExBankIlliquid",
+    process="content_InterBankInsolvent",
     container=dict({
         "node_START": "START",
-        "node_01": "ExBankIlliquidShock",
+        "node_01": "InterBankInsolventContagion",
+        "node_02": "InterBankInsolventShock",
         "node_END": "END",
     }),
     condition=None,
