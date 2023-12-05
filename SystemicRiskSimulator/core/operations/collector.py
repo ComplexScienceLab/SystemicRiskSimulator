@@ -27,7 +27,7 @@ class Collector:
             如果是初始化数据，则返回 A_data；如果是收集数据，则返回 A_data, sgv；如果是导出数据，则无返回；
 
         """
-        if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:
+        if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
             # Scheduler.schedule(sgv)
             logging.debug("                    收集数据")
             # sgv['id_data'] += 1  # 累加数据帧ID号
@@ -333,7 +333,7 @@ class Collector:
     @classmethod
     def export_parameter_data(cls, list_combination_of_para: list, para: dict):
         """
-        导出控制参数数据
+        导出控制参数数据 #BUG 存在导出 csv 数据格式问题
 
         Args:
             list_combination_of_para (list): 控制参数列表

@@ -26,8 +26,8 @@ def simulator(config: dict):
     config['folderpath_simulator'] = Tools.get_project_rootpath(config['foldername_simulator'], config['folderpath_realpath_simulator'])
     config['folderpath_project'] = Tools.get_project_rootpath()
     # 如果 settings 之 config 有内容，那么就删除，否则就从其他文件夹中复制之后再导入
-    Tools._delete_and_recreate_folder(Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=False)
-    Tools._copy_files_from_other_folders(Path(config['folderpath_project'], config['folderpath_config']), Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=False)
+    Tools._delete_and_recreate_folder(Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
+    Tools._copy_files_from_other_folders(Path(config['folderpath_project'], config['folderpath_config']), Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
     from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
     ## 生成实验相关的文件夹用于本批次实验
