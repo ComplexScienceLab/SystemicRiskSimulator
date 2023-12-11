@@ -1,5 +1,9 @@
 "函数区：工具集"
-from SystemicRiskSimulator.external_packages import time, Path, itertools, pkgutil, importlib, re, np, random, string, shutil, locale
+import logging
+
+from pandas import DataFrame
+
+from SystemicRiskSimulator.external_packages import time, Path, itertools, pkgutil, importlib, re, np, pd, random, string, shutil, locale
 
 pass  # end import
 
@@ -12,6 +16,58 @@ class Tools:
             return int(match.group(1))
         else:
             return 0
+
+    @classmethod
+    def _check_and_install_packages(cls, list_packages_name: list):
+        """
+        检查并安装列表中指定的工具包名的工具包。
+
+        Args:
+            list_packages_name (list): 待安装的工具包名列表
+
+        Returns:
+            (bool) 是否已经安装全部工具包
+
+        """
+        list_is_installed = list()
+        for package_name in list_packages_name:
+            try:
+                module = importlib.import_module(package_name)
+                logging.info(f"已经安装过了模块{package_name}")
+                del module  # BUG 这个可能存在误删除当前命名空间同名的其它模块的风险
+                list_is_installed.append(True)
+            except ImportError:
+                print(f"{package_name} 未安装，正在进行安装...")
+                try:
+                    import subprocess
+
+                    subprocess.check_call(['pip3', 'install', package_name])
+                    print(f"{package_name} 安装成功")
+                    list_is_installed.append(True)
+                except Exception as e:
+                    print(f"{package_name} 安装失败: {e}")
+                    list_is_installed.append(False)
+            pass  # for
+
+        return all(list_is_installed)
+        pass  # function
+
+    @classmethod
+    def _check_and_install_package(cls, str_package_name: str):
+        try:
+            importlib.import_module(str_package_name)
+            print(f"{str_package_name} is already installed")
+            return True
+        except ImportError:
+            print(f"{str_package_name} is not installed, installing...")
+            try:
+                import subprocess
+                subprocess.check_call(["pip", "install", str_package_name])
+                print(f"{str_package_name} has been installed")
+                return True
+            except Exception as e:
+                print(f"Failed to install {str_package_name}: {e}")
+                return False
 
     @classmethod
     def dict_to_product_list(cls, d: dict) -> list:
@@ -37,16 +93,52 @@ class Tools:
         return pdl
         pass  # function
 
+
+
     @classmethod
-    def set_experiments_folders(cls, foldername_prefix_experiments: str, foldername_experiments_output_data: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str, type_of_experiments_foldername: str = "default", is_datetime: bool = True):
+    def dict_to_product_dataFrame(cls, d: dict) -> DataFrame:
+        """
+        将字典的值转换为数据框，其中列表的元素表示字典的笛卡尔积。输入字典中的每个值都应该是一个列表。
+
+        Args:
+            d (dict): 要转换的字典。
+
+        Returns:
+            (pd.DataFrame): 表示笛卡尔积的字典列表。
+
+        Example:
+            ```python
+            d = {'a': [1, 2], 'b': [3, 4]}
+            dict_to_product_dataFrame(d)
+            ```
+            输出结果：
+            ```text
+                a  b
+            0  1  3
+            1  1  4
+            2  2  3
+            3  2  4
+            ```
+        """
+        t = list(d.values())
+        l = list(itertools.product(*t, repeat=1))
+        # pd_combination_of_para = [dict(zip(d.keys(), v)) for v in l]
+        pd_combination_of_para = pd.DataFrame(l, columns=d.keys())
+        return pd_combination_of_para
+        pass  # function
+
+
+
+    @classmethod
+    def set_experiments_folders(cls, foldername_experiments_output_data: str, foldername_experiments: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str):
         """
         设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹。
 
-        根据【实验文件夹根路径】、【实验导出数据文件夹名称】、【实验文件夹前缀名】、【实验文件夹命名方式】，生成【实验文件夹名称】、【实验文件夹路径】、【实验导出数据文件夹路径】。
+        根据【实验导出数据文件夹名称】、【实验文件夹名称】，生成【项目文件夹路径】、【模拟器工具文件夹路径】、【实验文件夹路径】、【实验导出数据文件夹路径】、【模型文件夹路径】、【实验配置项设置项文件夹路径】、【实验参数设置项文件夹路径】、【实验实验个体众数据初始化设置项文件夹路径】。
 
         Args:
-            foldername_prefix_experiments (str): 实验文件夹前缀名
             foldername_experiments_output_data (str): 实验导出数据文件夹名称
+            foldername_experiments (str): 实验文件夹名称
             str_folderpath_root_experiments (str): 实验文件夹根相对路径字符串
             str_foldername_simulator (str): 模拟器所在的项目之名称
             str_folderpath_realpath_simulator (str): 当前项目到模拟器所在的项目之相对路径
@@ -54,12 +146,8 @@ class Tools:
             str_folderpath_config (str): 实验配置项设置项文件夹相对路径字符串
             str_folderpath_parameters (str): 实验参数设置项文件夹相对路径字符串
             str_folderpath_agents (str): 实验实验个体众数据初始化设置项文件夹相对路径字符串
-            type_of_experiments_foldername (str): 实验文件夹命名方式。取值："default": 默认方式，"set manually": 手动设置方式。默认"default"；
-            is_datetime (bool): 是否使用日期时间字符串。默认True；
 
         Returns:
-
-            foldername_experiments (str): 实验文件夹名称
 
             folderpath_project (Path): 项目文件夹路径
 
@@ -82,27 +170,15 @@ class Tools:
         folderpath_project = Tools._get_current_project_rootpath()
         folderpath_simulator = Tools.get_project_rootpath(str_foldername_simulator, str_folderpath_realpath_simulator)
 
-        ## 设定实验结果导出文件夹
-        if is_datetime is True:  # 设定日期时间字符串
-            str_datetime = "_" + time.strftime("%Y%m%d%H%M%S")
-        else:
-            str_datetime = ""
-            pass
-
-        if type_of_experiments_foldername == "default":  # 设定前缀字符串
-            str_manuallyName = "default"
-        elif type_of_experiments_foldername == "set manually":
-            str_manuallyName = foldername_prefix_experiments
-        else:
-            raise Exception("关键词取值错误！".format(type_of_experiments_foldername))
-            pass  # if
-
-        foldername_experiments = str_manuallyName + str_datetime
         folderpath_experiments = Path(folderpath_project, str_folderpath_root_experiments, foldername_experiments)
 
         folderpath_experiments.mkdir(parents=True, exist_ok=True)
-        folderpath_experiments_output_data = Path(folderpath_experiments, foldername_experiments_output_data)
-        folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
+        if foldername_experiments_output_data is not None:
+            folderpath_experiments_output_data = Path(folderpath_experiments, foldername_experiments_output_data)
+            folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
+        else:
+            folderpath_experiments_output_data = None
+            pass
 
         ## 设定实验相关的一些重要的文件夹
         folderpath_models = Path(folderpath_project, str_folderpath_models)  # 设定模型文件夹
@@ -111,7 +187,6 @@ class Tools:
         folderpath_agents = Path(folderpath_project, str_folderpath_agents)  # 设定实验实验个体众数据初始化设置项文件夹
 
         return (
-            foldername_experiments,
             folderpath_project,
             folderpath_simulator,
             folderpath_experiments,
@@ -123,6 +198,36 @@ class Tools:
         )
 
         pass  # function
+
+    @classmethod
+    def set_foldername_experiments(cls, foldername_prefix_experiments: str, is_datetime: bool, type_of_experiments_foldername: str):
+        """
+        设定实验文件夹名称。
+
+        Args:
+            foldername_prefix_experiments (str): 实验文件夹前缀名称。默认"default"；
+            is_datetime (bool): 是否使用日期时间字符串。默认True；
+            type_of_experiments_foldername (str): 实验文件夹名称类型。取值："default"、"set manually"。默认"set manually"；
+
+        Returns:
+
+        """
+
+        ## 设定实验结果导出文件夹
+        if is_datetime is True:  # 设定日期时间字符串
+            str_datetime = "_" + time.strftime("%Y%m%d%H%M%S")
+        else:
+            str_datetime = ""
+            pass
+        if type_of_experiments_foldername == "default":  # 设定前缀字符串
+            str_manuallyName = "default"
+        elif type_of_experiments_foldername == "set manually":
+            str_manuallyName = foldername_prefix_experiments
+        else:
+            raise Exception("关键词取值错误！".format(type_of_experiments_foldername))
+            pass  # if
+        foldername_experiments = str_manuallyName + str_datetime
+        return foldername_experiments
 
     @classmethod
     def _get_current_project_rootpath(cls):

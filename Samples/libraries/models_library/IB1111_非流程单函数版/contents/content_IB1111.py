@@ -21,23 +21,17 @@ def content_IB1111(A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict
 
     A.BB.Shock_P_def_t = A.BB.A_P * np.array([para['Shock_exIB_def_t_percentage']]).T  # 生成厂商贷款违约损失冲击
     Executer.step_update('Shock_P_def_t', A, para, sgv)  # 厂商贷款违约损失冲击传导至银行内资产冲击
-    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_P_def_t')
     A.BB.A_P[A.BB.on] = np.maximum(A.BB.A_P[A.BB.on] - A.BB.Shock_P_def_t[A.BB.on], 0.0)  # 银行之非银行间资产变动
     Executer.step_update('A_P', A, para, sgv)  # 厂商贷款违约损失冲击传导至银行内资产冲击
-    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='A_P')  # 厂商贷款违约损失冲击传导至银行内资产冲击
     A.BB.E_all[A.BB.on] = np.maximum(A.BB.E_all[A.BB.on] - A.BB.Shock_def_t[A.BB.on], 0.0)  # 银行之所有者权益变动
     A.BB.Shock_IB_def_s[A.BB.isv] = abs((A.BB.Shock_def_t[A.BB.isv] - A.BB.E_all[A.BB.isv]) / (A.BB.Z_IB_all[A.BB.isv] + A.BB.Z_D[A.BB.isv]) * A.BB.Z_IB_all[A.BB.isv])  # 计算应银行内冲击传导至银行间传染冲击
     Executer.step_update('Shock_IB_def_s', A, para, sgv)  # 更新违约损失冲击源头变量Shock_def_s
-    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_def_s')  # 更新违约损失冲击源头变量Shock_def_s
     A.BB.Shock_D_def_s[A.BB.isv] = abs((A.BB.Shock_def_t[A.BB.isv] - A.BB.E_all[A.BB.isv]) / (A.BB.Z_IB_all[A.BB.isv] + A.BB.Z_D[A.BB.isv]) * A.BB.Z_D[A.BB.isv])  # 计算应银行内冲击传导至银行存款传染冲击
     Executer.step_update('Shock_D_def_s', A, para, sgv)  # 更新违约损失冲击源头变量Shock_def_s #BUG
-    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_D_def_s')  # 更新违约损失冲击源头变量Shock_def_s #BUG
     A.BB.Z_IB_all[A.BB.isv] -= A.BB.Shock_IB_def_s[A.BB.isv]  # 银行间负债变动，由于违约
     Executer.step_update('Z_IB_all', A, para, sgv)  # 更新资产负债表，通过Z_D或Z_IB_all
-    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_IB_all')  # 更新资产负债表，通过Z_D或Z_IB_all
     A.BB.Z_D[A.BB.isv] -= A.BB.Shock_D_def_s[A.BB.isv]  # 存款负债变动，由于违约
     Executer.step_update('Z_D', A, para, sgv)  # 更新资产负债表，通过Z_D或Z_IB_all
-    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_D')  # 更新资产负债表，通过Z_D或Z_IB_all
 
     ## node_01_condition_01
     if (A.BB.isv != A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].isv).any():
@@ -52,9 +46,7 @@ def content_IB1111(A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict
             pass
         ## NOTE：本来是在每个变量更新后就更新的，但是现在放到上述变量一批次计算完之后更新，以便提升性能。
         Executer.step_update('Z_IB', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_IB')
         Executer.step_update('Shock_IB_def', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_def')
 
         ## node_03 资不抵债银行资产违约损失冲击模型 content_InterBankInsolventShock
 
@@ -62,20 +54,15 @@ def content_IB1111(A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict
 
         A.BB.A_IB_all[A.b] = np.maximum(A.BB.A_IB_all[A.b] - A.BB.Shock_def_t[A.b], 0.0)  # 银行之银行间资产变动
         Executer.step_update('A_IB_all', A, para, sgv)  # 更新银行间资产
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='A_IB_all')  # 更新银行间资产
         A.BB.E_all[A.BB.on] = np.maximum(A.BB.E_all[A.BB.on] - A.BB.Shock_def_t[A.BB.on], 0.0)  # 银行之所有者权益变动
         A.BB.Shock_IB_def_s[A.BB.isv] = abs((A.BB.Shock_def_t[A.BB.isv] - A.BB.E_all[A.BB.isv]) / (A.BB.Z_IB_all[A.BB.isv] + A.BB.Z_D[A.BB.isv]) * A.BB.Z_IB_all[A.BB.isv])  # 计算应银行内冲击传导至银行间传染冲击
         Executer.step_update('Shock_IB_def_s', A, para, sgv)  # 更新违约损失冲击源头变量Shock_def_s
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_def_s')  # 更新违约损失冲击源头变量Shock_def_s
         A.BB.Shock_D_def_s[A.BB.isv] = abs((A.BB.Shock_def_t[A.BB.isv] - A.BB.E_all[A.BB.isv]) / (A.BB.Z_IB_all[A.BB.isv] + A.BB.Z_D[A.BB.isv]) * A.BB.Z_D[A.BB.isv])  # 计算应银行内冲击传导至银行存款传染冲击
         Executer.step_update('Shock_D_def_s', A, para, sgv)  # 更新违约损失冲击源头变量Shock_def_s #BUG
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_D_def_s')  # 更新违约损失冲击源头变量Shock_def_s #BUG
         A.BB.Z_IB_all[A.BB.isv] -= A.BB.Shock_IB_def_s[A.BB.isv]  # 银行间负债变动，由于违约
         Executer.step_update('Z_IB_all', A, para, sgv)  # 更新资产负债表，通过Z_D或Z_IB_all
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_IB_all')  # 更新资产负债表，通过Z_D或Z_IB_all
         A.BB.Z_D[A.BB.isv] -= A.BB.Shock_D_def_s[A.BB.isv]  # 存款负债变动，由于违约
         Executer.step_update('Z_D', A, para, sgv)  # 更新资产负债表，通过Z_D或Z_IB_all
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_D')  # 更新资产负债表，通过Z_D或Z_IB_all
 
         # update_B_Shock(A.BB, A.IB, A.b, A.ib, by_way = 'clear Shock_B_A and Shock_B_Z') # 清零银行内资产负债冲击
 
@@ -88,10 +75,8 @@ def content_IB1111(A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict
 
         A.BB.Shock_D_run_t = A.BB.Z_D * np.array([para['Shock_exIB_run_t_percentage']]).T  # 生成居民存款挤兑流动冲击
         Executer.step_update('Shock_D_run_t', A, para, sgv)  # 居民存款挤兑流动冲击传导至银行内资产冲击
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_D_run_t')  # 居民存款挤兑流动冲击传导至银行内资产冲击
         A.BB.Shock_IB_run_ilq_s[A.BB.ilq] = abs((A.BB.Shock_run_t[A.BB.ilq] - A.BB.A_Q[A.BB.ilq]) / (A.BB.A_P[A.BB.ilq] + A.BB.A_IB_all[A.BB.ilq]) * A.BB.A_IB_all[A.BB.ilq])  # 计算应银行内冲击传导至银行间传染冲击
         Executer.step_update('Shock_IB_run_ilq_s', A, para, sgv)  # 更新挤兑流动冲击源头变量Shock_run_t
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_run_ilq_s')  # 更新挤兑流动冲击源头变量Shock_run_t
         A.BB.Shock_P_run_s[A.BB.ilq] = abs((A.BB.Shock_run_t[A.BB.ilq] - A.BB.A_Q[A.BB.ilq]) / (A.BB.A_P[A.BB.ilq] + A.BB.A_IB_all[A.BB.ilq]) * A.BB.A_P[A.BB.ilq])  # 银行内冲击传导至银行厂商贷款传染冲击
         A.BB.is_allocated_Shock |= A.BB.ilq  # 更新已经分配传染冲击的银行
         for i in np.where(A.BB.ilq)[0]:  # 流动性短缺银行计划收回资产，导致其对各债务银行之资产变动，造成流动性短缺银行间挤兑流动冲击
@@ -111,14 +96,12 @@ def content_IB1111(A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict
         i_nas = (A.BB.ilq & ~A.BB.is_allocated_Shock)  # 临时设置示性变量，表示银行其未分配传染冲击。暨每个银行只有一次分配传染冲击之行为。
         A.BB.Shock_IB_run_ilq_s[i_nas] = abs((A.BB.Shock_run_t[i_nas] - A.BB.A_Q[i_nas]) / (A.BB.A_P[i_nas] + A.BB.A_IB_all[i_nas]) * A.BB.A_IB_all[i_nas])  # 计算应银行内冲击传导至银行间传染冲击
         Executer.step_update('Shock_IB_run_ilq_s', A, para, sgv)  # 更新挤兑流动冲击源头变量Shock_run_t
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_run_ilq_s')  # 更新挤兑流动冲击源头变量Shock_run_t
         A.BB.Shock_P_run_s[i_nas] = abs((A.BB.Shock_run_t[i_nas] - A.BB.A_Q[i_nas]) / (A.BB.A_P[i_nas] + A.BB.A_IB_all[i_nas]) * A.BB.A_P[i_nas])  # 银行内冲击传导至银行厂商贷款传染冲击
         A.BB.is_allocated_Shock |= A.BB.ilq  # 更新已经分配传染冲击的银行
         for i in np.where(i_nas)[0]:  # 流动性短缺银行计划收回资产，导致其对各债务银行之资产变动，造成流动性短缺银行间挤兑流动冲击
             A.IB.Shock_IB_run_ilq[A.IB.deb_ilq[i], i] = A.IB.A_IB[i, A.IB.deb_ilq[i]] * A.BB.Shock_IB_run_ilq_s[i] / A.BB.A_IB_all[i]
             pass
         Executer.step_update('Shock_IB_run_ilq', A, para, sgv)  # 更新挤兑流动冲击源头变量Shock_run_t
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_run_ilq')  # 更新挤兑流动冲击源头变量Shock_run_t
 
         # ##DEBUG 方式二：每个银行可以有多次分配传染冲击之行为。
         # A.BB.Shock_IB_run_ilq_s[A.BB.ilq] = abs((A.BB.Shock_run_t[A.BB.ilq] - A.BB.A_Q[A.BB.ilq]) / (A.BB.A_P[A.BB.ilq] + A.BB.A_IB_all[A.BB.ilq]) * A.BB.A_IB_all[A.BB.ilq]) # 计算应银行内冲击传导至银行间传染冲击
@@ -135,27 +118,20 @@ def content_IB1111(A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict
         # sgv['stage_name'] = "流动性短缺银行间挤兑流动分配借贷流量模型"
 
         Executer.step_update('enabled collect A_P', A, para, sgv)  # 计算是否可以偿还银行间借款状态
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='enabled collect A_P')  # 计算是否可以偿还银行间借款状态
         A.BB.Li_P[A.BB.is_enabled_LiP] = A.BB.Shock_P_run_s[A.BB.is_enabled_LiP]  # 计算银行收回厂商贷款流量
         Executer.step_update('Li_P', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Li_P')
 
         Executer.step_update('enabled repay Z_D', A, para, sgv)  # 计算是否需要偿还借款状态
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='enabled repay Z_D')  # 计算是否需要偿还借款状态
         Executer.step_update('enabled repay IB', A, para, sgv)  # 计算是否可以收回厂商贷款状态
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='enabled repay IB')  # 计算是否可以收回厂商贷款状态
         A.BB.Bo_all[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD] = np.minimum(A.BB.A_Q[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD], A.BB.Shock_run_t[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD])  # 计算银行偿还借款总流量 #BUG
         A.BB.Bo_D[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD] = A.BB.Shock_D_run_t[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD] * (A.BB.Bo_all[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD] / A.BB.Shock_run_t[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD])  # 计算银行偿还居民借款流量
         A.BB.Bo_IB_all[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD] = A.BB.Shock_IB_run_ilq_t[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD] * (A.BB.Bo_all[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD] / A.BB.Shock_run_t[A.BB.is_enabled_BoIB | A.BB.is_enabled_BoD])  # 计算银行偿还银行间借款流量
         Executer.step_update('Bo_D', A, para, sgv)  # HACK 这个必须放在这里！
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Bo_D')  # HACK 这个必须放在这里！
         Executer.step_update('Bo_IB_all', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Bo_IB_all')
         for i in np.where(A.BB.is_enabled_BoIB)[0]:  # 计算银行可以偿还各债权银行的借款流量
             A.IB.Bo_IB[i, A.IB.cre_ilq[i]] = A.IB.Shock_IB_run_ilq[i, A.IB.cre_ilq[i]] * (A.BB.Bo_IB_all[i] / A.BB.Shock_IB_run_ilq_t[i])
             pass
         Executer.step_update('Bo_IB', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Bo_IB')
 
         ## node_07 流动性短缺银行间挤兑流动执行借贷流量模型 content_InterBankIlliquidRepay
 
@@ -164,36 +140,25 @@ def content_IB1111(A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict
         A.BB.A_Q[A.b], A.BB.A_P[A.b], A.BB.Shock_P_run_s[A.b] = Finance.transfer_B_capital_reverse(A.BB.A_Q[A.b], A.BB.A_P[A.b], A.BB.Shock_P_run_s[A.b], A.BB.Li_P[A.b])  # 流动资产变动，因收回厂商贷款
         # A.BB.A_Q[A.b] *= (1 - paras['kappa_A_P']) #HACK 暂时还不用！
         Executer.step_update('A_Q', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='A_Q')
         Executer.step_update('A_P', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='A_P')
         Executer.step_update('Shock_P_run_s', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_P_run_s')
 
         A.BB.Z_D[A.b], A.BB.A_Q[A.b], A.BB.Shock_D_run_t[A.b] = Finance.transfer_B_capital_reduce(A.BB.Z_D[A.b], A.BB.A_Q[A.b], A.BB.Shock_D_run_t[A.b], A.BB.Bo_D[A.b])  # 流动资产变动，因偿还居民存款
         Executer.step_update('Z_D', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_D')
         Executer.step_update('A_Q', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='A_Q')
         Executer.step_update('Shock_D_run_t', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_D_run_t')
 
         A.IB.Shock_IB_run_ilq[A.ib] -= A.IB.Bo_IB[A.ib]  # 各银行间挤兑流动冲击变动，当偿还相应的银行间借款时
         Executer.step_update('Shock_IB_run_ilq', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_run_ilq')
         A.BB.Shock_IB_run_ilq_s[A.b] -= A.BB.Li_IB_all[A.b]  # 各银行之银行间挤兑流动冲击源头变动，当收回相应的银行间贷款时
         Executer.step_update('Shock_IB_run_ilq_s', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Shock_IB_run_ilq_s')
         A.IB.Z_IB[A.ib] -= A.IB.Bo_IB[A.ib]  # 各银行间负债变动，当偿还相应的银行间借款时
         Executer.step_update('Z_IB', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='Z_IB')
         # # A.IB.A_IB[A.ib] += A.IB.Li_IB[A.ib]' # 各银行间资产变动，当收回相应的银行间贷款时
         A.BB.A_Q[A.b] += (A.BB.Li_IB_all[A.b] - A.BB.Bo_IB_all[A.b])  # 各银行流动资金变动，当收回相应的银行间贷款、偿还相应的银行间借款时
         Executer.step_update('A_Q', A, para, sgv)
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='A_Q')
 
         Executer.step_update('clear transfer all', A, para, sgv)  # 清零所有不必要的借贷流量变量；#BUG这个是否有必要？
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 清零所有不必要的借贷流量变量；#BUG这个是否有必要？
 
     pass  # function
 

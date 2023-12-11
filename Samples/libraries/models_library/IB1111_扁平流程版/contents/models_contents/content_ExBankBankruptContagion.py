@@ -18,7 +18,6 @@ def content_ExBankBankruptContagion(A: SystemicRiskAgent, para: dict, sgv: dict)
 
     A.BB.br[para['list_Shock_exIB_t']] = para['Shock_exIB_t'][para['list_Shock_exIB_t']]
     Executer.step_update('bankrupt', A, para, sgv)
-    # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='bankrupt')
 
     return A, sgv
 

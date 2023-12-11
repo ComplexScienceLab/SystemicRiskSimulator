@@ -25,6 +25,8 @@ class Executer:
         """
         执行一次步进更新
 
+        更新方式具体见：`Finance.update_finance_variables` 对应的[文档](SystemicRiskSimulator/core/functions/fun_finance.py)。
+
         Args:
             update_way (str): 更新方式
             A (SystemicRiskAgent): 多主体

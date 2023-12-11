@@ -20,6 +20,7 @@ def simulator(config: dict):
     # %% 首先导入相关包
     from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path
     from SystemicRiskSimulator.tools.tools import Tools
+    # from SystemicRiskSimulator.core.operations.operator import Operator
 
     # %% 初始化
     ## 获取项目路径、模拟器工具路径
@@ -30,9 +31,13 @@ def simulator(config: dict):
     Tools._copy_files_from_other_folders(Path(config['folderpath_project'], config['folderpath_config']), Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
     from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
-    ## 生成实验相关的文件夹用于本批次实验
+    ## 设置相关的实验文件夹名称
+    if sgv['schedule_operation']['实验组模拟程序'] is True:
+        sgv['foldername_experiments'] = Tools.set_foldername_experiments(sgv['foldername_prefix_experiments'], sgv['is_datetime'], sgv['type_of_experiments_foldername'])
+        pass  # if
+
+    ## 生成实验相关的文件夹用于本批次运作
     (
-        sgv['foldername_experiments'],
         sgv['folderpath_project'],
         sgv['folderpath_simulator'],
         sgv['folderpath_experiments'],
@@ -42,8 +47,8 @@ def simulator(config: dict):
         sgv['folderpath_parameters'],
         sgv['folderpath_agents'],
     ) = Tools.set_experiments_folders(
-        foldername_prefix_experiments=sgv['foldername_prefix_experiments'],
         foldername_experiments_output_data=sgv['foldername_experiments_output_data'],
+        foldername_experiments=sgv['foldername_experiments'],
         str_folderpath_root_experiments=sgv['folderpath_root_experiments'],
         str_foldername_simulator=config['foldername_simulator'],
         str_folderpath_realpath_simulator=config['folderpath_realpath_simulator'],
@@ -51,9 +56,10 @@ def simulator(config: dict):
         str_folderpath_config=sgv['folderpath_config'],
         str_folderpath_parameters=sgv['folderpath_parameters'],
         str_folderpath_agents=sgv['folderpath_agents'],
-        type_of_experiments_foldername=sgv['type_of_experiments_foldername'],
-        is_datetime=True,
     )
+
+    # if sgv['schedule_operation']['实验组模拟程序'] is False and sgv['schedule_operation']['可视化结果程序'] is True:
+    #     pass  # if
 
     Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
     Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
@@ -81,21 +87,17 @@ def simulator(config: dict):
     logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
     logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
 
-    # %% 预安装模型、数据，运行实验组
-    warnings.filterwarnings("ignore")
-    ## 初始化、构建、安装模型
-    sgv, models = Operator.operate_installing(sgv, para)
-    ## 运行实验组
-    logging.debug("\n\n\n实验组开始：\n\n")
-    for (i, para) in enumerate(sgv['list_combination_of_para']):
-        model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型
-        sgv['id_experiment'] = i + 1  # 设定当前实验编号
+    # %% 是否运作实验程序
+    if sgv['schedule_operation']['实验组模拟程序']:
+        from SystemicRiskSimulator.programs.experiments_program import experiments_program
+        experiments_program(sgv, para)
+        pass  # if
 
-        ## 进行实验
-        Operator.operate_experiment(sgv, para, model)
-
-        pass  # for
-    logging.info("实验组结束。")
+    # %% 是否可视化结果程序
+    if sgv['schedule_operation']['可视化结果程序']:
+        from SystemicRiskSimulator.programs.visualize_data import visualize_data
+        visualize_data(sgv)
+        pass  # if
 
     # %% 清理
     ## 删除设置文件夹、模型文件夹内的所有文件，但是保留文件夹
@@ -103,17 +105,3 @@ def simulator(config: dict):
     Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
     Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
     Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
-
-    ## 默认程序打开输出文件查看
-    if sgv['is_auto_open_outputlog']:
-        system = platform.system()
-        if system == 'Darwin':
-            os.system(r"open " + str(Path(sgv['folderpath_experiments_output_data'], r"outputlog.txt")))
-        elif system == 'Windows':
-            os.startfile(str(Path(sgv['folderpath_experiments_output_data'], r"outputlog.txt")))
-        elif system == 'Linux':
-            os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_data'], r"outputlog.txt")))
-        else:
-            print("Unsupported operating system")
-            pass  # if
-        pass  # if

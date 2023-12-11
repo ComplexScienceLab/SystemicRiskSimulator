@@ -30,7 +30,7 @@ class DataInstaller:
 
         """
         # dict_bankCommercial, dict_bankInterbank = cls.set_default_values_to_Bank_variables
-        from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
+        # from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 
         with open(Path(sgv['folderpath_agents'], "BankCommercial.pkl"), 'rb') as f:
             dict_bankCommercial = pickle.load(f)
@@ -228,11 +228,11 @@ class DataInstaller:
         pass  # function
 
     @classmethod
-    def install_data(cls, init_method: str):
+    def install_data(cls, init_data_method: str):
         """
         不同的初始化方式。
 
-        参数init_method可选项：
+        参数init_data_method可选项：
 
         - ``import data``:  导入数据以初始化
 
@@ -245,22 +245,22 @@ class DataInstaller:
         在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值做处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
 
         Args:
-            init_method ():
+            init_data_method ():
 
         Returns: A
 
         """
 
-        if init_method == "import data":
+        if init_data_method == "import data":
             BB, IB = cls.set_imported_values_to_Bank_variables()  # 导入数据以初始化银行变量
-        elif init_method == "set manually":
+        elif init_data_method == "set manually":
             BB, IB = cls.set_manually_values_to_Bank_variables()  # 手动设置以初始化银行变量
-        elif init_method == "randomly":
+        elif init_data_method == "randomly":
             BB, IB = cls.set_randomly_values_to_Bank_variables()  # HACK 按需添加
-        elif init_method == "only init":
+        elif init_data_method == "only init":
             BB, IB = cls.set_default_values_to_Bank_variables()
         else:
-            raise ("关键词" + str(init_method) + "取值错误！")
+            raise ("关键词" + str(init_data_method) + "取值错误！")
             pass  # if
 
         sgv['num_bank'] = len(BB.on)  # 获取 agents 之个体数量

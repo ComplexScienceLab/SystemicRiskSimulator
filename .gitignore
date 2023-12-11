@@ -12,6 +12,10 @@ venv/
 
 SystemicRiskSimulator/data
 Samples/data
+Samples/code
+
+management/python 虚拟环境
+
 data
 
 draft/
@@ -577,8 +581,4 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
-
-
-
-
 

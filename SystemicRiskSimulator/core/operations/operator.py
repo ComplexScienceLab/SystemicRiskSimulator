@@ -2,7 +2,7 @@
 运作机
 """
 
-from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any
+from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any, pickle, pd
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
 from SystemicRiskSimulator.core.operations.collector import Collector
@@ -34,11 +34,26 @@ class Operator:
 
         """
 
-        ## 设置字典列表，由setOfParametersValues各参数之各可能的取值排列组合而成。此将用于做实验
-        sgv['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 组合排列多结构体成为列表
+        ## 导出配置数据
+        Collector.export_config_data(sgv)
 
-        ## 导出控制参数数据
-        Collector.export_parameter_data(list_combination_of_para=sgv['list_combination_of_para'], para=para)
+
+        ## 设置参数集
+        if sgv['init_parameters_method'] == "import data":
+            with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
+                sgv['list_combination_of_para'] = pd.read_pickle(f)
+            Collector.export_parameter_data(sgv['list_combination_of_para'])  # 导出控制参数数据
+        elif sgv['init_parameters_method'] == "set manually":
+            sgv['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
+            Collector.export_parameter_data(sgv['list_combination_of_para'], para)  # 导出控制参数数据
+        # if sgv['init_parameters_method'] == "import data":
+        #     with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
+        #         sgv['list_combination_of_para'] = pd.read_pickle(f)
+        #     sgv['list_combination_of_para'] = pd.DataFrame(sgv['list_combination_of_para']).to_dict('records')  # 转换为字典列表
+        #     Collector.export_parameter_data(sgv['list_combination_of_para'], para)  # 导出控制参数数据
+        # elif sgv['init_parameters_method'] == "set manually":
+        #     sgv['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
+        #     Collector.export_parameter_data(sgv['list_combination_of_para'], para)  # 导出控制参数数据
 
         ## 构建本次实验组所需的所有模型
 
@@ -52,7 +67,7 @@ class Operator:
         ## 导入实体数据，生成实体集、内容集并返回
         if sgv['is_use_flow_form_version_model']:
             ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()`
-            Builder.build_entities_by_process_and_container_component(sgv)  # BUG 会不会出现不能处理多个模型的情形？
+            Builder.build_entities_by_process_and_container_component(sgv)  # NOTE：一次只处理一个模型
         else:
             ## NOTE 如果直接使用非流程版的形式的模型
             Builder.build_entities_by_execute(sgv)
@@ -96,7 +111,7 @@ class Operator:
             logging.info("\n相关实验参数：" + str(para) + "\n")
 
             ## 初始化 agents 数据
-            A = DataInstaller.install_data(init_method=sgv['init_method'])  # 安装本次实验所需的多主体数据
+            A = DataInstaller.install_data(init_data_method=sgv['init_data_method'])  # 安装本次实验所需的多主体数据
             sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
             sgv['step'] += 1
 
@@ -139,8 +154,30 @@ class Operator:
         pass  # function
 
     # @classmethod
-    # def operate_running(cls):
+    # def operate_experiments(cls, sgv: dict,para:dict):
+    #     from SystemicRiskSimulator.programs.experiments_program import experiments_program
     #
-    #     pass  # class
+    #     ## 实验组模拟程序
+    #     experiments_program()
+    #
+    #     pass  # function
+
+    # @classmethod
+    # def operate_visualization(cls, sgv: dict):
+    #     """
+    #     运作可视化
+    #
+    #     Args:
+    #         sgv (dict): 模拟器全局变量
+    #
+    #     Returns:
+    #
+    #     """
+    #     from SystemicRiskSimulator.programs.visualize_data import visualize_data
+    #
+    #     ## 可视化结果程序
+    #     visualize_data(sgv)
+    #
+    #     pass  # function
 
     pass  # class

@@ -25,13 +25,14 @@ import string
 import locale
 
 ## NOTE 以下是绘图用的。如果不需要，可以注释掉。但是请先不要删除！因为目前开发期间，需要作为参考。后续可以删除。
-# import igraph as ig
-# import matplotlib.pyplot as plt
-# import drawsvg as dw
-# import fitz
-# from svglib.svglib import svg2rlg
-# from reportlab.graphics import renderPDF
-# from reportlab.pdfbase.ttfonts import TTFont
-# from reportlab.pdfbase import pdfmetrics
-# import matplotlib.font_manager as fm
-# from matplotlib.font_manager import FontProperties
+# if sgv['need_visualization']:
+#     import igraph as ig
+#     import matplotlib.pyplot as plt
+#     import drawsvg as dw
+#     import fitz
+#     from svglib.svglib import svg2rlg
+#     from reportlab.graphics import renderPDF
+#     from reportlab.pdfbase.ttfonts import TTFont
+#     from reportlab.pdfbase import pdfmetrics
+#     import matplotlib.font_manager as fm
+#     from matplotlib.font_manager import FontProperties

@@ -77,7 +77,6 @@ set_bankCommercial_variables = dict(
     Shock_IB_run_br_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间倒闭挤兑流动冲击目标 Shock_IB_run_br_t
     Loss_IB=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间市场冲击损失 Loss_IB
     Loss_IB_def_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间资产负债违约冲击损失 Loss_IB_def_t
-    Loss_IB_run_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间负债流动性挤兑冲击损失 Loss_IB_run_t
     on=CONST(sgv['num_bank']).TRUE1.copy(),  # 示性向量之于银行是否存在 is_on
     off=CONST(sgv['num_bank']).FALSE1.copy(),  # 示性向量之于银行是否已退出不存在 is_off
     hel=CONST(sgv['num_bank']).TRUE1.copy(),  # 示性向量之于银行是否健康 is_healthy
