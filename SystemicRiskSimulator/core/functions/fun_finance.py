@@ -1,4 +1,4 @@
-from SystemicRiskSimulator.external_packages import np, deepcopy
+from SystemicRiskSimulator.external_packages import np, deepcopy, logging
 from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank
 from SystemicRiskSimulator.core.define.define_type import StateType, MoneyType
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
@@ -34,8 +34,9 @@ class Finance:
         target += flow
         source -= flow
         shock -= flow
+        logging.debug(f"                    transfer_B_capital_reverse")
         return target, source, shock
-        pass
+        pass  # function
 
     @classmethod
     def transfer_B_capital_reduce(cls, target: MoneyType, source: MoneyType, shock: MoneyType, flow: MoneyType):
@@ -57,98 +58,114 @@ class Finance:
         target -= flow
         source -= flow
         shock -= flow
+        logging.debug(f"                    transfer_B_capital_reduce")
         return target, source, shock
-        pass
+        pass  # function
 
     @classmethod
     def together_transfer_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总交易流量``T_{all}``。"""
         bank.T_all[bankState] = bank.Lo_all[bankState] + bank.Bi_all[bankState] + bank.Bo_all[bankState] + bank.Li_all[bankState]
-        pass
+        logging.debug(f"                    together_transfer_all")
+        pass  # function
 
     @classmethod
     def together_transfer_B_Lo_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总贷款流出（贷款方发款出去）``Lo_{B}``。"""
         bank.Lo_all[bankState] = bank.Lo_IB_all[bankState] + bank.Lo_exIB[bankState]
-        pass
+        logging.debug(f"                    together_transfer_B_Lo_all")
+        pass  # function
 
     @classmethod
     def together_transfer_B_Lo_exIB(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之非银行间贷款流出``Lo_{-IB}``。"""
         bank.Lo_exIB[bankState] = bank.Lo_P[bankState]
-        pass
+        logging.debug(f"                    together_transfer_B_Lo_exIB")
+        pass  # function
 
     @classmethod
     def together_transfer_B_Li_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总贷款流入（贷款方收款回来）``Li_{B}``。"""
         bank.Li_all[bankState] = bank.Li_IB_all[bankState] + bank.Li_exIB[bankState]
-        pass
+        logging.debug(f"                    together_transfer_B_Li_all")
+        pass  # function  # function
 
     @classmethod
     def together_transfer_B_Li_exIB(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之非银行间贷款流入``Li_{-IB}``。"""
         bank.Li_exIB[bankState] = bank.Li_P[bankState]
-        pass
+        logging.debug(f"                    together_transfer_B_Li_exIB")
+        pass  # function
 
     @classmethod
     def together_transfer_B_Bo_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总借款流出（借款方还款出去）``Bo_{B}``。"""
         bank.Bo_all[bankState] = bank.Bo_IB_all[bankState] + bank.Bo_exIB[bankState]
-        pass
+        logging.debug(f"                    together_transfer_B_Bo_all")
+        pass  # function
 
     @classmethod
     def together_transfer_B_Bo_exIB(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之非银行间借款流出``Bo_{-IB}``。"""
         bank.Bo_exIB[bankState] = bank.Bo_D[bankState]
-        pass
+        logging.debug(f"                    together_transfer_B_Bo_exIB")
+        pass  # function
 
     @classmethod
     def together_transfer_B_Bi_all(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之总借款流入（借款方借款进来）``Bi_{B}``。"""
         bank.Bi_all[bankState] = bank.Bi_IB_all[bankState] + bank.Bi_exIB[bankState]
-        pass
+        logging.debug(f"                    together_transfer_B_Bi_all")
+        pass  # function
 
     @classmethod
     def together_transfer_B_Bi_exIB(cls, bank: BankCommercial, bankState: StateType):
         """汇总各银行之非银行间借款流入``Bi_{-IB}``。"""
         bank.Bi_exIB[bankState] = bank.Bi_D[bankState]
-        pass
+        logging.debug(f"                    together_transfer_B_Bi_exIB")
+        pass  # function
 
     @classmethod
     def alter_transfer_Lo_IB(cls, interbank: BankInterbank, interbankState: StateType):
         """转换银行间贷款流出``Lo_{IB}``为银行间借款流入``Bi_{IB}``。"""
         interbank.Bi_IB = interbank.Lo_IB.T
-        pass
+        logging.debug(f"                    alter_transfer_Lo_IB")
+        pass  # function
 
     @classmethod
     def alter_transfer_Bi_IB(cls, interbank: BankInterbank, interbankState: StateType):
         """转换银行间借款流入``Bi_{IB}``为银行间贷款流出``Lo_{IB}``。"""
         interbank.Lo_IB = interbank.Bi_IB.T
-        pass
+        logging.debug(f"                    alter_transfer_Bi_IB")
+        pass  # function
 
     @classmethod
     def alter_transfer_Bo_IB(cls, interbank: BankInterbank, interbankState: StateType):
         """转换银行间借款流出``Bo_{IB}``为银行间贷款流入``Li_{IB}``。"""
         interbank.Li_IB = interbank.Bo_IB.T
-        pass
+        logging.debug(f"                    alter_transfer_Bo_IB")
+        pass  # function
 
     @classmethod
     def alter_transfer_Li_IB(cls, interbank: BankInterbank, interbankState: StateType):
         """转换银行间贷款流入``Li_{IB}``为银行间借款流出``Bo_{IB}``。"""
         interbank.Bo_IB = interbank.Li_IB.T
-        pass
+        logging.debug(f"                    alter_transfer_Li_IB")
+        pass  # function
 
     @classmethod
     def sum_transfer_Bi_IB(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """加总各银行之银行间借款流入``Bi_{B}``，通过银行间借款流入邻接矩阵``Bi_{IB}``。"""
         bank.Bi_IB_all[:] = np.sum(interbank.Bi_IB * interbankState, axis=1).reshape(-1, 1)
-        pass
+        logging.debug(f"                    sum_transfer_Bi_IB")
+        pass  # function
 
     @classmethod
     def sum_transfer_Li_IB(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """加总各银行之银行间贷款流入``Li_{B}``，通过银行间贷款流入邻接矩阵``Li_{IB}``。"""
         bank.Li_IB_all[:] = np.sum(interbank.Li_IB * interbankState, axis=1).reshape(-1, 1)
-        pass
+        logging.debug(f"                    sum_transfer_Li_IB")
+        pass  # function
 
     @classmethod
     def clear_all_transfer(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
@@ -163,146 +180,168 @@ class Finance:
         bank.Bo_D[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
         interbank.Lo_IB[interbankState] = CONST(sgv['num_bank']).ZEROS2.copy()[interbankState]
         interbank.Bo_IB[interbankState] = CONST(sgv['num_bank']).ZEROS2.copy()[interbankState]
-        pass
+        logging.debug(f"                    clear_all_transfer")
+        pass  # function
 
     ## NOTE：功能函数集：计算冲击。
 
     # "汇总综合外生冲击。" #HACK无用
     # functions together_Shock_exIB(bank:BankCommercial, bankState:StateType)
     #     bank.Shock_exIB_t[bankState] = paras['theta_Shock_exIB_t'] * bank.Shock_P_def_t[bankState] + (1 - paras['theta_Shock_exIB_t']) * bank.Shock_D_run_t[bankState]
-    #     pass
+    #     pass  # function
 
     @classmethod
     def together_Shock_target(cls, bank: BankCommercial, bankState: StateType):
         """汇总总冲击目标"""
         bank.Shock_t[bankState] = bank.Shock_exIB_t[bankState] + bank.Shock_IB_t[bankState]
-        pass
+        logging.debug(f"                    together_Shock_target")
+        pass  # function
 
     @classmethod
     def together_Shock_source(cls, bank: BankCommercial, bankState: StateType):
         """汇总总冲击源头"""
         bank.Shock_s[bankState] = bank.Shock_exIB_s[bankState] + bank.Shock_IB_s[bankState]
-        pass
+        logging.debug(f"                    together_Shock_source")
+        pass  # function
 
     @classmethod
     def together_Shock_exIB_target(cls, bank: BankCommercial, bankState: StateType):
         """总银行外冲击目标"""
         bank.Shock_exIB_t[bankState] = bank.Shock_P_def_t[bankState] + bank.Shock_D_run_t[bankState]
-        pass
+        logging.debug(f"                    together_Shock_exIB_target")
+        pass  # function
 
     @classmethod
     def together_Shock_exIB_source(cls, bank: BankCommercial, bankState: StateType):
         """总银行外冲击源头"""
         bank.Shock_exIB_s[bankState] = bank.Shock_P_run_s[bankState] + bank.Shock_D_def_s[bankState]
-        pass
+        logging.debug(f"                    together_Shock_exIB_source")
+        pass  # function
 
     @classmethod
     def together_Shock_def_target(cls, bank: BankCommercial, bankState: StateType):
         """总违约损失冲击目标"""
         bank.Shock_def_t[bankState] = bank.Shock_P_def_t[bankState] + bank.Shock_IB_def_t[bankState]
-        pass
+        logging.debug(f"                    together_Shock_def_target")
+        pass  # function
 
     @classmethod
     def together_Shock_def_source(cls, bank: BankCommercial, bankState: StateType):
         """总违约损失冲击源头"""
         bank.Shock_def_s[bankState] = bank.Shock_D_def_s[bankState] + bank.Shock_IB_def_s[bankState]
-        pass
+        logging.debug(f"                    together_Shock_def_source")
+        pass  # function
 
     @classmethod
     def together_Shock_run_target(cls, bank: BankCommercial, bankState: StateType):
         """总挤兑流动冲击目标"""
         bank.Shock_run_t[bankState] = bank.Shock_D_run_t[bankState] + bank.Shock_IB_run_t[bankState]
-        pass
+        logging.debug(f"                    together_Shock_run_target")
+        pass  # function
 
     @classmethod
     def together_Shock_run_source(cls, bank: BankCommercial, bankState: StateType):
         """总挤兑流动冲击源头"""
         bank.Shock_run_s[bankState] = bank.Shock_P_run_s[bankState] + bank.Shock_IB_run_s[bankState]
-        pass
+        logging.debug(f"                    together_Shock_run_source")
+        pass  # function
 
     @classmethod
     def together_Shock_IB_run_target(cls, bank: BankCommercial, bankState: StateType):
         """总银行间流动性冲击目标。"""
         bank.Shock_IB_run_t[bankState] = bank.Shock_IB_run_ilq_t[bankState] + bank.Shock_IB_run_br_t[bankState]
-        pass
+        logging.debug(f"                    together_Shock_IB_run_target")
+        pass  # function
 
     @classmethod
     def together_Shock_IB_run_source(cls, bank: BankCommercial, bankState: StateType):
         """总银行间流动性冲击源头。"""
         bank.Shock_IB_run_s[bankState] = bank.Shock_IB_run_ilq_s[bankState] + bank.Shock_IB_run_br_s[bankState]
-        pass
+        logging.debug(f"                    together_Shock_IB_run_source")
+        pass  # function
 
     @classmethod
     def together_Shock_B(cls, bank: BankCommercial, bankState: StateType):  # BUG这个做什么的？似乎没有被用到。
         """总银行内资产负债冲击。"""
         bank.Shock_B[bankState] = bank.Shock_B_A[bankState] + bank.Shock_B_Z[bankState]
-        pass
+        logging.debug(f"                    together_Shock_B")
+        pass  # function
 
     @classmethod
     def together_Shock_IB_source(cls, bank: BankCommercial, bankState: StateType):
         """总银行间冲击源头。"""
         bank.Shock_IB_s[bankState] = bank.Shock_IB_def_s[bankState] + bank.Shock_IB_run_s[bankState]
-        pass
+        logging.debug(f"                    together_Shock_IB_source")
+        pass  # function
 
     @classmethod
     def together_Shock_IB_run(cls, interbank: BankInterbank, interbankState: StateType):
         """总银行间流动性冲击。"""
         interbank.Shock_IB_run[interbankState] = interbank.Shock_IB_run_ilq[interbankState] + interbank.Shock_IB_run_br[interbankState]
-        pass
+        logging.debug(f"                    together_Shock_IB_run")
+        pass  # function
 
     @classmethod
     def together_Shock_IB(cls, interbank: BankInterbank, interbankState: StateType):
         """总银行间冲击。"""
         interbank.Shock_IB[interbankState] = interbank.Shock_IB_def[interbankState] + interbank.Shock_IB_run[interbankState]
-        pass
+        logging.debug(f"                    together_Shock_IB")
+        pass  # function
 
     @classmethod
     def sum_Shock_IB_def_target(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """总资不抵债银行之银行间违约损失冲击目标。"""
         bank.Shock_IB_def_t[bankState] = np.sum(interbank.Shock_IB_def * interbankState, axis=1).reshape(-1, 1)[bankState]
-        pass
+        logging.debug(f"                    sum_Shock_IB_def_target")
+        pass  # function
 
     @classmethod
     def sum_Shock_IB_run_ilq_target(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """总流动性短缺银行之银行间流动性冲击目标。"""
         bank.Shock_IB_run_ilq_t[bankState] = np.sum(interbank.Shock_IB_run_ilq * interbankState, axis=1).reshape(-1, 1)[bankState]
-        pass
+        logging.debug(f"                    sum_Shock_IB_run_ilq_target")
+        pass  # function
 
     @classmethod
     def sum_Shock_IB_run_br_target(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """总破产银行之银行间流动性冲击目标。"""
         bank.Shock_IB_run_br_t[bankState] = np.sum(interbank.Shock_IB_run_br * interbankState, axis=1).reshape(-1, 1)[bankState]
-        pass
+        logging.debug(f"                    sum_Shock_IB_run_br_target")
+        pass  # function
 
     @classmethod
     def together_Shock_IB_target(cls, bank: BankCommercial, bankState: StateType):
         """总银行间冲击目标。"""
         bank.Shock_IB_t[bankState] = bank.Shock_IB_def_t[bankState] + bank.Shock_IB_run_t[bankState]
-        pass
+        logging.debug(f"                    together_Shock_IB_target")
+        pass  # function
 
     # @classmethod #TODO无用
     # def conduct_Shock_L_exIB(cls, bank: BankCommercial, bankState: StateType):
     #
     #     bank.Shock_B_A[bankState] = bank.Shock_P_def_t[bankState]
-    #     pass
+    #     pass  # function
 
     @classmethod
     def conduct_Shock_D(cls, bank: BankCommercial, bankState: StateType):
         """传导存款损失外生冲击。"""  # HACK暂不使用。
         bank.Shock_B_Z[bankState] = bank.Shock_D_run_t[bankState]
-        pass
+        logging.debug(f"                    conduct_Shock_D")
+        pass  # function
 
     @classmethod
     def conduct_Shock_IB_def_t(cls, bank: BankCommercial, bankState: StateType):
         """传导银行间违约损失冲击。"""  # HACK暂不使用。
         bank.Shock_B_A[bankState] = bank.Shock_IB_def_t[bankState]
-        pass
+        logging.debug(f"                    conduct_Shock_IB_def_t")
+        pass  # function
 
     @classmethod
     def conduct_Shock_IB_run_t(cls, bank: BankCommercial, bankState: StateType):
         """传导银行间挤兑流动冲击。"""  # HACK暂不使用。
         bank.Shock_B_A[bankState] = bank.Shock_IB_run_t[bankState]
-        pass
+        logging.debug(f"                    conduct_Shock_IB_run_t")
+        pass  # function
 
     @classmethod
     def clear_Shock_IB_and_exIB(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):  # BUG是否乱清零？
@@ -320,7 +359,8 @@ class Finance:
         bank.Shock_IB_def_t = np.zeros(sgv['num_bank'])
         bank.Shock_IB_run_ilq_t = np.zeros(sgv['num_bank'])
         bank.Shock_IB_run_br_t = np.zeros(sgv['num_bank'])
-        pass
+        logging.debug(f"                    clear_Shock_IB_and_exIB")
+        pass  # function
 
     # @classmethod
     # def clear_Shock_inB(cls, bank: BankCommercial):
@@ -328,7 +368,7 @@ class Finance:
     #
     #     bank.Shock_B_A = np.zeros(sgv['num_bank'])
     #     bank.Shock_B_Z = np.zeros(sgv['num_bank'])
-    #     pass
+    #     pass  # function
 
     ## NOTE：功能函数集：计算商业银行之资产负债表结构。
 
@@ -336,19 +376,22 @@ class Finance:
     def together_B_A_all(cls, bank: BankCommercial, bankList: StateType):
         """汇总各银行之总资产。"""
         bank.A_all[bankList] = bank.A_IB_all[bankList] + bank.A_exIB[bankList]
-        pass
+        logging.debug(f"                    together_B_A_all")
+        pass  # function
 
     @classmethod
     def sum_B_A_IB(cls, bank: BankCommercial, interbank: BankInterbank, bankList: StateType, interbankList: StateType):
         """加总各银行之银行间总资产，通过银行间资产邻接矩阵。"""
         bank.A_IB_all[:] = np.sum(interbank.A_IB * interbankList, axis=1).reshape(-1, 1)
-        pass
+        logging.debug(f"                    sum_B_A_IB")
+        pass  # function
 
     @classmethod
     def together_B_A_exIB(cls, bank: BankCommercial, bankList: StateType):
         """汇总各银行之非银行间资产``A_{-IB}``。"""
         bank.A_exIB[bankList] = bank.A_P[bankList] + bank.A_Q[bankList] + bank.A_R[bankList] + bank.A_other[bankList]
-        pass
+        logging.debug(f"                    together_B_A_exIB")
+        pass  # function
 
     # "更新各银行之银行总负债``Z_{B}``。" #HACK无用
     # functions update_B_Z_all(bank:BankCommercial, interbank:BankInterbank, by_way:str='all')
@@ -361,65 +404,71 @@ class Finance:
     #         together_B_Z_IB(bank, interbank,bankState,interbankState)
     #     else:
     #         throw(DomainError(by_way, "关键词取值错误！"))
-    #         pass
+    #         pass  # if
     #     together_B_Z_all(bank,bankState)
-    #     pass
+    #     pass  # function
 
     @classmethod
     def together_B_Z_all(cls, bank: BankCommercial, bankList: StateType):
         """汇总各银行之总负债。"""
         bank.Z_all[bankList] = bank.Z_IB_all[bankList] + bank.Z_exIB[bankList]
-        pass
+        logging.debug(f"                    together_B_Z_all")
+        pass  # function
 
     @classmethod
     def sum_B_Z_IB(cls, bank: BankCommercial, interbank: BankInterbank, bankList: StateType, interbankList: StateType):
         """加总各银行之银行间总负债，通过银行间负债邻接矩阵。"""
         bank.Z_IB_all[:] = np.sum(interbank.Z_IB * interbankList, axis=1).reshape(-1, 1)
-        pass
+        logging.debug(f"                    sum_B_Z_IB")
+        pass  # function
 
     @classmethod
     def together_B_Z_exIB(cls, bank: BankCommercial, bankList: StateType):
         """汇总各银行之非银行间负债``Z_{-IB}``。"""
         bank.Z_exIB[bankList] = bank.Z_D[bankList] + bank.Z_CB[bankList] + bank.Z_other[bankList]
-        pass
+        logging.debug(f"                    together_B_Z_exIB")
+        pass  # function
 
     @classmethod
     def calc_B_E_all(cls, bank: BankCommercial, bankList: StateType):  # BUG是否考虑E_all负数？还是手动计算？
         """计算各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
         bank.E_all[bankList] = bank.A_all[bankList] - bank.Z_all[bankList] - CONST(sgv['num_bank']).LESS1[bankList]  # 允许E_all为负数
         # bank.E_all[bankState] = np.maximum(bank.A_all[bankState] - bank.Z_all[bankState] - CONST(sgv['num_bank']).LESS1[bankState], 0.0)
-        pass
+        logging.debug(f"                    calc_B_E_all")
+        pass  # function
 
     # @classmethod
     # def calc_B_E_all_at_all_bank(cls, bank: BankCommercial, bankState: StateType):  # HACK没有用到过
     #     """计算银行体系内包括已退出银行在内的所有各银行之所有者权益``E_{B}``，通过总资产与总负债差值。"""
     #     bank.E_all[:] = bank.A_all - bank.Z_all - CONST(sgv['num_bank']).LESS1
     #     # bank.E_all[:] = np.maximum(bank.A_all - bank.Z_all - CONST(sgv['num_bank']).LESS1, 0.0)
-    #     pass
+    #     pass  # function
 
     # @classmethod
     # def calc_B_A_all(cls, bank: BankCommercial, bankState: StateType):  # HACK没有用到过
     #     """计算各银行之总资产``A_{B}``，通过所有者权益和总负债。"""
     #     bank.A_all[bankState] = bank.E_all[bankState] + bank.Z_all[bankState]
-    #     pass
+    #     pass  # function
 
     # @classmethod
     # def calc_B_Z_all(cls, bank: BankCommercial, bankState: StateType):  # HACK没有用到过
     #     """计算各银行之总负债``Z_{B}``，通过所有者权益和总资产。"""
     #     bank.Z_all[bankState] = bank.A_all[bankState] - bank.E_all[bankState]
-    #     pass
+    #     pass  # function
 
     @classmethod
     def alter_Z_IB(cls, interbank: BankInterbank):
         """转换银行间负债为资产。"""
         interbank.A_IB = interbank.Z_IB.T
-        pass
+        logging.debug(f"                    alter_Z_IB")
+        pass  # function
 
     @classmethod
     def alter_A_IB(cls, interbank: BankInterbank):
         """转换银行间资产为负债。"""
         interbank.Z_IB = interbank.A_IB.T
-        pass
+        logging.debug(f"                    alter_A_IB")
+        pass  # function
 
     ## NOTE：功能函数集：银行与银行间相关状态及其转换。
 
@@ -440,6 +489,7 @@ class Finance:
         source_state_changes = (bank.on != result)
         bank.on = result
         interbank.on = (bank.on & bank.on.T)
+        logging.debug(f"                    calc_state_on")
         return source_state_changes
         pass  # function
 
@@ -460,6 +510,7 @@ class Finance:
         source_state_changes = (bank.hel != result)
         bank.hel = result
         interbank.hel = (bank.hel & bank.hel.T)
+        logging.debug(f"                    calc_state_healthy")
         return source_state_changes
         pass  # function
 
@@ -480,6 +531,7 @@ class Finance:
         source_state_changes = (bank.isv != result)
         bank.isv = result
         interbank.isv = (bank.isv & bank.isv.T)
+        logging.debug(f"                    calc_state_insolvent")
         return source_state_changes
         pass  # function
 
@@ -500,6 +552,7 @@ class Finance:
         source_state_changes = (bank.ilq != result)
         bank.ilq = result
         interbank.ilq = (bank.ilq & bank.ilq.T)
+        logging.debug(f"                    calc_state_illiquid")
         return source_state_changes
         pass  # function
 
@@ -520,6 +573,7 @@ class Finance:
         source_state_changes = (bank.br != result)
         bank.br = result
         interbank.br = (bank.br & bank.br.T)
+        logging.debug(f"                    calc_state_bankrupt")
         return source_state_changes
         pass  # function
 
@@ -540,6 +594,7 @@ class Finance:
         source_state_changes = (bank.off != result)
         bank.off = result
         interbank.off = (bank.off & bank.off.T)
+        logging.debug(f"                    calc_state_off")
         return source_state_changes
         pass  # function
 
@@ -554,7 +609,8 @@ class Finance:
 
         """
         bank.is_enabled_BoIB = ((bank.Shock_IB_run_ilq_t > 0) & (bank.A_Q > 0) & bank.on)
-        pass
+        logging.debug(f"                    calc_state_isEnabledBoIB")
+        pass  # function
 
     @classmethod
     def calc_state_isEnabledBoD(cls, bank: BankCommercial):
@@ -566,7 +622,8 @@ class Finance:
         """
 
         bank.is_enabled_BoD = ((bank.Shock_D_run_t > 0) & (bank.A_Q > 0) & bank.on)
-        pass
+        logging.debug(f"                    calc_state_isEnabledBoD")
+        pass  # function
 
     @classmethod
     def calc_state_isEnabledLiP(cls, bank: BankCommercial):
@@ -578,7 +635,8 @@ class Finance:
         """
 
         bank.is_enabled_LiP = ((bank.Shock_P_run_s > 0) & bank.on)  # HACK后续可能会补充条件 & producer.A_Q > 0
-        pass
+        logging.debug(f"                    calc_state_isEnabledLiP")
+        pass  # function
 
     @classmethod
     def update_state_healthy_from_insolvent(cls, bank: BankCommercial, interbank: BankInterbank, source_state_changes: StateType):
@@ -596,6 +654,7 @@ class Finance:
         """
         bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] | bank.ilq[source_state_changes])
         interbank.hel = (bank.hel & bank.hel.T)
+        logging.debug(f"                    update_state_healthy_from_insolvent")
         pass  # function
 
     @classmethod
@@ -614,6 +673,7 @@ class Finance:
         """
         bank.hel[source_state_changes] = ~(bank.isv[source_state_changes] | bank.ilq[source_state_changes])
         interbank.hel = (bank.hel & bank.hel.T)
+        logging.debug(f"                    update_state_healthy_from_illiquid")
         pass  # function
 
     @classmethod
@@ -632,6 +692,7 @@ class Finance:
         """
         bank.on[source_state_changes] = ~bank.off[source_state_changes]
         interbank.on = (bank.on & bank.on.T)
+        logging.debug(f"                    update_state_on_from_off")
         pass  # function
 
     @classmethod
@@ -658,13 +719,14 @@ class Finance:
         elif goal == "creditor":
             is_exposure = ((interbank.Z_IB > 0.0) & isState)
         else:
-            pass
+            pass  # if
         list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(sgv['num_bank'])])
         for i in range(sgv['num_bank']):
             list_of_relation_in_state_of_banks[i] = np.where(is_exposure[i, :])[0]  # 获取对应状态下的债权或者债务关系的银行列表
-            pass
+            pass  # for
+        logging.debug(f"                    calc_list_of_relation_in_state_of_banks")
         return list_of_relation_in_state_of_banks
-        pass
+        pass  # function
 
     @classmethod
     def update_relation_in_state_of_banks(cls, bank: BankCommercial, interbank: BankInterbank):
@@ -676,6 +738,7 @@ class Finance:
         interbank.cre_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="creditor")
         interbank.deb_br = cls.calc_list_of_relation_in_state_of_banks(interbank, isState=bank.br, goal="debtor")
 
+        logging.debug(f"                    update_relation_in_state_of_banks")
         pass  # function
 
     @classmethod
@@ -769,7 +832,6 @@ class Finance:
                 cls.update_variable_name, cls.update_variable_value = k, v
             pass  # for
         pass  # function
-
 
     ## NOTE 总的金融变量更新部分（主入口）
 
@@ -922,7 +984,7 @@ class Finance:
             cls.together_Shock_exIB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_def_target(bank, bankState)
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         elif by_way == 'Shock_P_run_s':
             cls.together_Shock_exIB_source(bank, bankState)
             cls.together_Shock_source(bank, bankState)
@@ -931,7 +993,7 @@ class Finance:
             cls.together_Shock_exIB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_run_target(bank, bankState)
-            cls.update_states(bank, interbank, by_way='illiquid')  #DEBUG
+            cls.update_states(bank, interbank, by_way='illiquid')  # DEBUG
         elif by_way == 'Shock_D_def_s':
             cls.together_Shock_exIB_source(bank, bankState)
             cls.together_Shock_source(bank, bankState)
@@ -951,7 +1013,7 @@ class Finance:
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_def_target(bank, bankState)
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         elif by_way == 'Shock_IB_run_ilq':
             cls.together_Shock_IB_run(interbank, interbankState)
             cls.together_Shock_IB(interbank, interbankState)
@@ -960,7 +1022,7 @@ class Finance:
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_run_target(bank, bankState)
-            cls.update_states(bank, interbank, by_way='illiquid')  #DEBUG
+            cls.update_states(bank, interbank, by_way='illiquid')  # DEBUG
         elif by_way == 'Shock_IB_run_br':
             cls.together_Shock_IB_run(interbank, interbankState)
             cls.together_Shock_IB(interbank, interbankState)
@@ -969,18 +1031,18 @@ class Finance:
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_run_target(bank, bankState)
-            cls.update_states(bank, interbank, by_way='illiquid')  #DEBUG
+            cls.update_states(bank, interbank, by_way='illiquid')  # DEBUG
         elif by_way == 'Shock_IB_def_t':
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_def_target(bank, bankState)
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         elif by_way == 'Shock_IB_run_ilq_t' or by_way == 'Shock_IB_run_br_t':
             cls.together_Shock_IB_run_target(bank, bankState)
             cls.together_Shock_IB_target(bank, bankState)
             cls.together_Shock_target(bank, bankState)
             cls.together_Shock_run_target(bank, bankState)
-            cls.update_states(bank, interbank, by_way='illiquid')  #DEBUG
+            cls.update_states(bank, interbank, by_way='illiquid')  # DEBUG
         elif by_way == 'clear Shock_IB and Shock_exIB':
             cls.clear_Shock_IB_and_exIB(bank, interbank, bankState, interbankState)
             cls.together_Shock_IB_run_source(bank, StateType((bank.on) | (bank.off)))
@@ -999,36 +1061,36 @@ class Finance:
             cls.together_Shock_exIB_target(bank, StateType((bank.on) | (bank.off)))
             cls.together_Shock_target(bank, StateType((bank.on) | (bank.off)))
             cls.together_Shock_def_target(bank, StateType((bank.on) | (bank.off)))
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
             cls.together_Shock_run_target(bank, StateType((bank.on) | (bank.off)))
-            cls.update_states(bank, interbank, by_way='illiquid')  #DEBUG
-            cls.update_states(bank, interbank, by_way='all')  #DEBUG 是否多余
+            cls.update_states(bank, interbank, by_way='illiquid')  # DEBUG
+            cls.update_states(bank, interbank, by_way='all')  # DEBUG 是否多余
 
         ## NOTE：功能函数集：更新商业银行之资产负债表结构。
         elif by_way == 'A_P' or by_way == 'A_R' or by_way == 'A_other':
             cls.together_B_A_exIB(bank, bankState)
             cls.together_B_A_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         elif by_way == 'A_Q':
             cls.together_B_A_exIB(bank, bankState)
             cls.together_B_A_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
-            cls.update_states(bank, interbank, by_way='illiquid')  #DEBUG
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='illiquid')  # DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         elif by_way == 'A_IB_all':
             cls.together_B_A_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         elif by_way == 'Z_D' or by_way == 'Z_CB' or by_way == 'Z_other':
             cls.together_B_Z_exIB(bank, bankState)
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         elif by_way == 'Z_IB_all':
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         # elif by_way == 'E_all and Z_all': #HACK似乎没有用到过
         #     cls.calc_B_A_all(bank, bankState)
         # elif by_way == 'E_all and A_all':#HACK似乎没有用到过
@@ -1042,15 +1104,15 @@ class Finance:
             cls.sum_B_Z_IB(bank, interbank, bankState, interbankState)
             cls.together_B_Z_all(bank, bankState)
             cls.calc_B_E_all(bank, bankState)
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         elif by_way == 'Z_IB':
             cls.alter_Z_IB(interbank)
             cls.sum_B_Z_IB(bank, interbank, bankState, interbankState)
             cls.together_B_Z_all(bank, bankState)
             cls.sum_B_A_IB(bank, interbank, bankState, interbankState)
             cls.together_B_A_all(bank, bankState)
-            cls.calc_B_E_all(bank, bankState)  #DEBUG 检查是否正确。
-            cls.update_states(bank, interbank, by_way='insolvent')  #DEBUG
+            cls.calc_B_E_all(bank, bankState)  # DEBUG 检查是否正确。
+            cls.update_states(bank, interbank, by_way='insolvent')  # DEBUG
         # elif by_way == 'sum A_IB':  # HACK似乎冗余。
         #     cls.sum_B_A_IB(bank, interbank, bankState, interbankState)
         #     cls.together_B_A_all(bank, bankState)
@@ -1066,12 +1128,9 @@ class Finance:
         # elif by_way == 'alter to A_IB from Z_IB':  # HACK似乎冗余。
         #     cls.alter_Z_IB(interbank)
 
-
-
         # ## NOTE：#NOW 更新损失
         # elif by_way == ''
         #     cls.together_
-
 
         ## NOTE：功能函数集：更新银行之状态变量。
         elif by_way == 'enabled collect A_P':

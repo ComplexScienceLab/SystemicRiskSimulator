@@ -17,7 +17,7 @@ pass  # end import
 
 class Scheduler:
     """
-    调度机，负责模型运作过程中的各种调度。
+    调度机，负责模型运作过程中的各种调度。  #HACK 不再使用调度状态，可挪作他用、或者删除、或者保留作为备用
     """
 
     @classmethod

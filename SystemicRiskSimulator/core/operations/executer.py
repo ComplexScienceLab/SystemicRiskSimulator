@@ -38,12 +38,17 @@ class Executer:
 
         """
 
+        # logging.debug("               步进更新")
+        logging.debug(f"               步进 {sgv['step']} 相 {sgv['phase']}")
         Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
-        sgv['A_data'], sgv = Collector.collect(A, sgv['A_data'], sgv)  # 收集数据
+        # sgv['A_data'], sgv = Collector.collect(A, sgv['A_data'], sgv)  # 收集数据
+        # logging.debug("                    收集数据")
+        # sgv['id_data'] += 1  # 累加数据帧ID号
+        sgv['A_data'] = Collector.collect_agent_data(A, sgv['A_data'], sgv)
 
-        # if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
+        # if sgv['state_of_schedule'] == StateOfScheduleEnum.running:  #HACK 不再使用调度状态，可删除
         # Scheduler.schedule(sgv)  # 调度状态变成`collecting`或者`ending`
-        # if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:  #HACK 不再使用 `StateOfScheduleEnum.collecting` 无用可删除
+        # if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:
         #     sgv['A_data'], sgv = Collector.collect(A, sgv['A_data'], sgv)  # 收集数据
         #     Scheduler.schedule(sgv)  # 调度状态变成`running`
         # elif sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
@@ -83,11 +88,11 @@ class Executer:
         sgv['process_name'] = entity.attribute.entity_name  # 执行的过程之名称（英文名称）
         A, sgv = entity.execute(A, para, sgv)
 
-        if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
-            Scheduler.schedule(sgv)  # 调度状态变成`ending`或者继续`running`
-        elif sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
-            # Scheduler.schedule(sgv)  # 调度状态变成`idle`
-            pass  # if
+        # if sgv['state_of_schedule'] == StateOfScheduleEnum.running:  #HACK 不再使用调度状态，可删除
+        #     Scheduler.schedule(sgv)  # 调度状态变成`ending`或者继续`running`
+        # elif sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
+        #     # Scheduler.schedule(sgv)  # 调度状态变成`idle`
+        #     pass  # if
 
         logging.debug("    结束执行模型内容。")
 
@@ -121,11 +126,11 @@ class Executer:
         sgv['process_name'] = entity.attribute.entity_name  # 执行的过程之名称（英文名称）
         entity.execute(A, A_data, para, sgv)
 
-        if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
-            Scheduler.schedule(sgv)  # 调度状态变成`ending`或者继续`running`
-        elif sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
-            # Scheduler.schedule(sgv)  # 调度状态变成`idle`
-            pass  # if
+        # if sgv['state_of_schedule'] == StateOfScheduleEnum.running:  #HACK 不再使用调度状态，可删除
+        #     Scheduler.schedule(sgv)  # 调度状态变成`ending`或者继续`running`
+        # elif sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
+        #     # Scheduler.schedule(sgv)  # 调度状态变成`idle`
+        #     pass  # if
 
         logging.debug("    结束执行模型内容。")
 

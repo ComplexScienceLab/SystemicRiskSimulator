@@ -71,32 +71,37 @@ def simulator(config: dict):
 
     from SystemicRiskSimulator.core.operations.operator import Operator
 
-    ## 设置日志
-    logger = logging.getLogger()
-    logger.setLevel(sgv['test_logging'])
-    log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_data'], "outputlog.txt"))
-    logger.addHandler(log_file_handler)
-    log_console_handler = logging.StreamHandler()
-    logger.addHandler(log_console_handler)
-
-    logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
-    logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
-    logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
-    logging.info("\n相关实验 models 文件夹：" + sgv['folderpath_models'].name + "\n")
-    logging.info("\n相关实验 agents 数据文件夹：" + sgv['folderpath_agents'].name + "\n")
-    logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
-    logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
 
     # %% 是否运作实验程序
     if sgv['schedule_operation']['实验组模拟程序']:
+        ## 设置日志
+        logger = logging.getLogger()
+        logger.setLevel(sgv['test_logging'])
+        log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_data'], "outputlog.txt"))
+        logger.addHandler(log_file_handler)
+        log_console_handler = logging.StreamHandler()
+        logger.addHandler(log_console_handler)
+
+        logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
+        logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
+        logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
+        logging.info("\n相关实验 models 文件夹：" + sgv['folderpath_models'].name + "\n")
+        logging.info("\n相关实验 agents 数据文件夹：" + sgv['folderpath_agents'].name + "\n")
+        logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
+        logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
+
+        ## 运行实验组模拟程序
         from SystemicRiskSimulator.programs.experiments_program import experiments_program
         experiments_program(sgv, para)
+
+        ## 关闭日志
+        logger.removeHandler(log_file_handler)
         pass  # if
 
     # %% 是否可视化结果程序
     if sgv['schedule_operation']['可视化结果程序']:
-        from SystemicRiskSimulator.programs.visualize_data import visualize_data
-        visualize_data(sgv)
+        from SystemicRiskSimulator.programs.visualize_data_program import visualize_data_program
+        visualize_data_program(sgv)
         pass  # if
 
     # %% 清理
