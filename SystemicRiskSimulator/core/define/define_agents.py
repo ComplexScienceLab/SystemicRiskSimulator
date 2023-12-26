@@ -78,9 +78,9 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     Shock_P_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行之厂商贷款违约损失冲击目标 Shock_P_def_t
     Shock_D_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行存款违约损失冲击源头 Shock_D_def_s
     Shock_D_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行存款挤兑流动冲击目标 Shock_D_run_t
-    Shock_B = np.NaN  # = deepcopy(ZEROS1)  # 银行内资产负债冲击 Shock_B $Shock_B=Shock_B_A+Shock_B_Z$
-    Shock_B_A = np.NaN  # = deepcopy(ZEROS1)  # 银行内资产负债之银行间资产端冲击 Shock_B_A #HACK无用
-    Shock_B_Z = np.NaN  # = deepcopy(ZEROS1)  # 银行内资产负债之银行间负债端冲击 Shock_B_Z #HACK无用
+    Shock_B = np.NaN  # = deepcopy(ZEROS1)  # 银行内资产负债冲击 Shock_B $Shock_B=Shock_B_A+Shock_B_Z$  #HACK无用
+    Shock_B_A = np.NaN  # = deepcopy(ZEROS1)  # 银行内资产负债之银行间资产端冲击 Shock_B_A  #HACK无用
+    Shock_B_Z = np.NaN  # = deepcopy(ZEROS1)  # 银行内资产负债之银行间负债端冲击 Shock_B_Z  #HACK无用
     Shock_IB_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间冲击源头 Shock_IB_s $Shock_IB_s=Shock_IB_def_s+Shock_IB_run_s$
     Shock_IB_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间冲击目标 Shock_IB_t $Shock_IB_t=Shock_IB_def_t+Shock_IB_run_t$
     Shock_IB_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间违约损失冲击源头 Shock_IB_def_s
@@ -91,9 +91,24 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     Shock_IB_run_ilq_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间流动性短缺挤兑流动冲击目标 Shock_IB_run_ilq_t
     Shock_IB_run_br_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击源头 Shock_IB_run_br_s
     Shock_IB_run_br_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击目标 Shock_IB_run_br_t
-    Loss_IB = np.NaN  # = deepcopy(ZEROS1)  # 银行间市场冲击损失 Loss_IB
-    Loss_IB_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产负债违约冲击损失 Loss_IB_def_t
-    Loss_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失 Loss_IB_run_t
+    Loss_t = np.NaN  # = deepcopy(ZEROS1)  # 银行总损失目标 Loss_t
+    # Loss_s = np.NaN  # = deepcopy(ZEROS1)  # 银行总损失源头 Loss_s
+    Loss_exIB_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债总损失目标 Loss_exIB_t
+    # Loss_exIB_s =  np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债总损失源头 Loss_exIB_s
+    Loss_exIB_def_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债违约损失冲击损失目标 Loss_exIB_def_t
+    # Loss_exIB_def_s =  np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债违约损失冲击损失源头 Loss_exIB_def_s
+    Loss_exIB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间负债流动性挤兑冲击损失目标 Loss_exIB_run_t
+    # Loss_exIB_run_s =  np.NaN  # = deepcopy(ZEROS1)  # 非银行间负债流动性挤兑冲击损失源头 Loss_exIB_run_s
+    Loss_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行资产负债违约总损失目标 Loss_def_t
+    # Loss_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行资产负债违约总损失源头 Loss_def_s
+    Loss_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行负债流动性挤兑总损失目标 Loss_run_t
+    # Loss_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行负债流动性挤兑总损失源头 Loss_run_s
+    Loss_IB_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间市场冲击损失目标 Loss_IB_t
+    # Loss_IB_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间市场冲击损失源头 Loss_IB_s
+    Loss_IB_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产负债违约损失冲击损失目标 Loss_IB_def_t
+    # Loss_IB_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产负债违约损失冲击损失源头 Loss_IB_def_s
+    Loss_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失目标 Loss_IB_run_t
+    # Loss_IB_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失源头 Loss_IB_run_s
     on = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否存在 is_on
     off = np.NaN  # = deepcopy(FALSE1)  # 示性向量之于银行是否已退出不存在 is_off
     hel = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否健康 is_healthy
@@ -112,7 +127,6 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     list_illiquid = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于流动性短缺的银行编号 list_illiquid
     list_bankrupt = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于破产的银行编号 list_bankrupt
 
-    # TODO 补充损失变量；
     # TODO 增加监管约束之状态；
 
     def __init__(self, *args, **kwargs):

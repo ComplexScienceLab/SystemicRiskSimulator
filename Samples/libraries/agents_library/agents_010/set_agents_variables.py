@@ -2,13 +2,21 @@
 设置多主体变量
 """
 
+from SystemicRiskSimulator.external_packages import Path, pickle
 from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
+from SystemicRiskSimulator.tools.tools import Tools
 
 pass  # end import
 
+folderpath_project = Tools.get_project_rootpath()
+
 ######### 设置模型变量 #########################################
+
+
+## 设置 agents 初始数据列表
+list_agents_yearName = ['2012']
 
 set_bankCommercial_variables = dict(
 
@@ -75,8 +83,24 @@ set_bankCommercial_variables = dict(
     Shock_IB_run_ilq_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间流动性短缺挤兑流动冲击目标 Shock_IB_run_ilq_t
     Shock_IB_run_br_s=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间倒闭挤兑流动冲击源头 Shock_IB_run_br_s
     Shock_IB_run_br_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间倒闭挤兑流动冲击目标 Shock_IB_run_br_t
-    Loss_IB=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间市场冲击损失 Loss_IB
-    Loss_IB_def_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间资产负债违约冲击损失 Loss_IB_def_t
+    Loss_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行总损失目标 Loss_t
+    # Loss_s = CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行总损失源头 Loss_s
+    Loss_exIB_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 非银行间资产负债总损失目标 Loss_exIB_t
+    # Loss_exIB_s = CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 非银行间资产负债总损失源头 Loss_exIB_s
+    Loss_exIB_def_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 非银行间资产负债违约损失冲击损失目标 Loss_exIB_def_t
+    # Loss_exIB_def_s = CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 非银行间资产负债违约损失冲击损失源头 Loss_exIB_def_s
+    Loss_exIB_run_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 非银行间负债流动性挤兑冲击损失目标 Loss_exIB_run_t
+    # Loss_exIB_run_s = CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 非银行间负债流动性挤兑冲击损失源头 Loss_exIB_run_s
+    Loss_def_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行资产负债违约总损失目标 Loss_def_t
+    # Loss_def_s = CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行资产负债违约总损失源头 Loss_def_s
+    Loss_run_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行负债流动性挤兑总损失目标 Loss_run_t
+    # Loss_run_s = CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行负债流动性挤兑总损失源头 Loss_run_s
+    Loss_IB_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行间市场冲击损失目标 Loss_IB_t
+    # Loss_IB_s = CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行间市场冲击损失源头 Loss_IB_s
+    Loss_IB_def_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行间资产负债违约损失冲击损失目标 Loss_IB_def_t
+    # Loss_IB_def_s = CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行间资产负债违约损失冲击损失源头 Loss_IB_def_s
+    Loss_IB_run_t=CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失目标 Loss_IB_run_t
+    # Loss_IB_run_s = CONST(sgv['num_bank']).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失源头 Loss_IB_run_s
     on=CONST(sgv['num_bank']).TRUE1.copy(),  # 示性向量之于银行是否存在 is_on
     off=CONST(sgv['num_bank']).FALSE1.copy(),  # 示性向量之于银行是否已退出不存在 is_off
     hel=CONST(sgv['num_bank']).TRUE1.copy(),  # 示性向量之于银行是否健康 is_healthy
@@ -135,3 +159,12 @@ set_bankInterbank_variables = dict(
 
     ###########################
 )
+
+# %% # 导出 agents 变量
+
+folderpath_agents = Path(folderpath_project, "Samples/libraries/agents_library/agents_010")
+for year in list_agents_yearName:
+    with open(Path(folderpath_agents, "BankCommercial" + f"_year={year}" + ".pkl"), 'wb') as f:
+        pickle.dump(set_bankCommercial_variables, f)
+    with open(Path(folderpath_agents, "BankInterbank" + f"_year={year}" + ".pkl"), 'wb') as f:
+        pickle.dump(set_bankInterbank_variables, f)

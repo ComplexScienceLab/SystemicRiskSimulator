@@ -18,9 +18,8 @@ def simulator(config: dict):
     global sgv, para
 
     # %% 首先导入相关包
-    from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path
+    from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path, shutil
     from SystemicRiskSimulator.tools.tools import Tools
-    # from SystemicRiskSimulator.core.operations.operator import Operator
 
     # %% 初始化
     ## 获取项目路径、模拟器工具路径
@@ -42,6 +41,11 @@ def simulator(config: dict):
         sgv['folderpath_simulator'],
         sgv['folderpath_experiments'],
         sgv['folderpath_experiments_output_data'],
+        sgv['folderpath_experiments_output_log'],
+        sgv['folderpath_experiments_output_config'],
+        sgv['folderpath_experiments_output_parameters'],
+        sgv['folderpath_experiments_output_agents'],
+        sgv['folderpath_experiments_output_models'],
         sgv['folderpath_models'],
         sgv['folderpath_config'],
         sgv['folderpath_parameters'],
@@ -52,32 +56,32 @@ def simulator(config: dict):
         str_folderpath_root_experiments=sgv['folderpath_root_experiments'],
         str_foldername_simulator=config['foldername_simulator'],
         str_folderpath_realpath_simulator=config['folderpath_realpath_simulator'],
+        str_folderpath_realpath_outputData=config['folderpath_realpath_outputData'],
         str_folderpath_models=sgv['folderpath_models'],
         str_folderpath_config=sgv['folderpath_config'],
         str_folderpath_parameters=sgv['folderpath_parameters'],
         str_folderpath_agents=sgv['folderpath_agents'],
     )
 
-    # if sgv['schedule_operation']['实验组模拟程序'] is False and sgv['schedule_operation']['可视化结果程序'] is True:
-    #     pass  # if
-
-    Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    from SystemicRiskSimulator.core.define.define_parameterVariables import para
-
-    Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    Tools._copy_files_from_other_folders(sgv['folderpath_agents'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    # from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
-
-    from SystemicRiskSimulator.core.operations.operator import Operator
-
+    # from SystemicRiskSimulator.core.operations.operator import Operator
 
     # %% 是否运作实验程序
     if sgv['schedule_operation']['实验组模拟程序']:
+        ## 导入相关数据
+        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        shutil.copy(Path(sgv['folderpath_parameters'], r"set_parameters_variables.py"), sgv['folderpath_experiments_output_parameters'])  # 导出一份生成参数的代码文件到输出文件夹
+        from SystemicRiskSimulator.core.define.define_parameterVariables import para
+
+        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        Tools._copy_files_from_other_folders(sgv['folderpath_agents'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        Tools._copy_files_from_other_folders(sgv['folderpath_agents'], sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
+        # from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
+
         ## 设置日志
         logger = logging.getLogger()
         logger.setLevel(sgv['test_logging'])
-        log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_data'], "outputlog.txt"))
+        log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
         logger.addHandler(log_file_handler)
         log_console_handler = logging.StreamHandler()
         logger.addHandler(log_console_handler)
@@ -104,9 +108,9 @@ def simulator(config: dict):
         visualize_data_program(sgv)
         pass  # if
 
-    # %% 清理
-    ## 删除设置文件夹、模型文件夹内的所有文件，但是保留文件夹
-    Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        # %% 清理
+        ## 删除设置文件夹、模型文件夹内的所有文件，但是保留文件夹
+        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])

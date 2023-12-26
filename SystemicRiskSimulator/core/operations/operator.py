@@ -56,9 +56,10 @@ class Operator:
 
         ## 构建本次实验组所需的所有模型
 
-        ## 复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下
+        ## 复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下，另外导出一份到输出文件夹之配置文件夹下
         Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
         Tools._copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        Tools._copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
 
         ## 导入实体数据，生成实体集、内容集并返回
         if sgv['is_use_flow_form_version_model']:
@@ -108,7 +109,7 @@ class Operator:
         logging.info("\n相关实验参数：" + str(para) + "\n")
 
         ## 初始化 agents 数据
-        A = DataInstaller.install_data(init_data_method=sgv['init_data_method'])  # 安装本次实验所需的多主体数据
+        A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
         # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
         logging.debug("                    初始化数据")
         sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)

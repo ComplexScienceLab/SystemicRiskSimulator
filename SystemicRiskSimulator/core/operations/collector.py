@@ -354,73 +354,24 @@ class Collector:
         list_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
         id_type_is_array = list_types.index(np.ndarray)  # 获取索引值为类型为数组类型的
 
-        ## 获取银行个数
-        is_need_to_get_num_bank = False
-        if 'num_bank' in sgv.keys():
-            if sgv['num_bank'] is None:
-                is_need_to_get_num_bank = True
-                pass  # if
-        else:
-            is_need_to_get_num_bank = True
-            pass  # if
-
-        if is_need_to_get_num_bank:
-            sgv['num_bank'] = len(para[list(para.keys())[id_type_is_array]][0])  # 获取字典 `para` 在索引 `id_type_is_array` 对应的变量。该变量是一个列表。获取该列表第一个元素。该元素是一个数组。获取该数组大小，作为银行个数
-
-        ## 展开数组类型的参数，得到一个新的数据框变量。该变量具有所有参数组合。
-
-        # ## 导出实验参数为 csv 格式  #HACK 这个没有修复暂时用不了
-        # df_combinationOfPara = df_010.explode(df_010.keys()[id_type_is_array])
-        # df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1, sgv['num_bank'] + 1)), reps=sgv['num_experiment']))  # 添加数据项id
-        # df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, sgv['num_experiment'] + 1)), repeats=sgv['num_bank'], axis=0))  # 添加实验组id
-        # df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_data'], r"parameters.csv"))  # 导出字段列表为csv格式
-
-        ## 导出实验参数为 pkl 格式
-        df_combinationOfPara = df_010.copy()
-        # df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1, sgv['num_bank'] + 1)), reps=sgv['num_experiment']))  # 添加数据项id
-        df_combinationOfPara.insert(loc=0, column='exp_id', value=np.arange(1, sgv['num_experiment'] + 1))  # 添加实验组id
-        pd.to_pickle(df_combinationOfPara, Path(sgv['folderpath_experiments_output_data'], r"parameters.pkl"))
-
-        # if para is None:  # 如果参数变量为空，则直接从 combination_of_para 中获取参数变量相关的信息
-        #     sgv['num_experiment'] = len(combination_of_para)  # 获取实验组之实验个数
-        #     combination_of_para.insert(loc=0, column='exp_id', value=np.arange(1, sgv['num_experiment'] + 1))  # 添加实验组id
-        #     pd.to_pickle(combination_of_para, Path(sgv['folderpath_experiments_output_data'], r"parameters.pkl"))
-        # else:
-        #     sgv['num_experiment'] = len(combination_of_para)  # 获取实验组之实验个数
-        #
-        #     # sgv['num_bank'] = len(para['list_id_bank'])  if sgv['num_bank'] is None else sgv['num_bank']
-        #     df_010 = pd.DataFrame(combination_of_para, columns=para.keys())  # 转换字典列表为数据框
-        #     list_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
-        #     id_type_is_array = list_types.index(np.ndarray)  # 获取索引值为类型为数组类型的
-        #
-        #     ## 获取银行个数
-        #     is_need_to_get_num_bank = False
-        #     if 'num_bank' in sgv.keys():
-        #         if sgv['num_bank'] is None:
-        #             is_need_to_get_num_bank = True
-        #             pass  # if
-        #     else:
+        # ## 获取银行个数
+        # is_need_to_get_num_bank = False
+        # if 'num_bank' in sgv.keys():
+        #     if sgv['num_bank'] is None:
         #         is_need_to_get_num_bank = True
         #         pass  # if
-        #
-        #     if is_need_to_get_num_bank:
-        #         sgv['num_bank'] = len(para[list(para.keys())[id_type_is_array]][0])  # 获取字典 `para` 在索引 `id_type_is_array` 对应的变量。该变量是一个列表。获取该列表第一个元素。该元素是一个数组。获取该数组大小，作为银行个数
-        #
-        #     ## 展开数组类型的参数，得到一个新的数据框变量。该变量具有所有参数组合。
-        #
-        #     # ## 导出实验参数为 csv 格式  #HACK 这个没有修复暂时用不了
-        #     # df_combinationOfPara = df_010.explode(df_010.keys()[id_type_is_array])
-        #     # df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1, sgv['num_bank'] + 1)), reps=sgv['num_experiment']))  # 添加数据项id
-        #     # df_combinationOfPara.insert(loc=0, column='exp_id', value=np.repeat(list(range(1, sgv['num_experiment'] + 1)), repeats=sgv['num_bank'], axis=0))  # 添加实验组id
-        #     # df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_data'], r"parameters.csv"))  # 导出字段列表为csv格式
-        #
-        #     ## 导出实验参数为 pkl 格式
-        #     df_combinationOfPara = df_010.copy()
-        #     # df_combinationOfPara.insert(loc=0, column='id', value=np.tile(list(range(1, sgv['num_bank'] + 1)), reps=sgv['num_experiment']))  # 添加数据项id
-        #     df_combinationOfPara.insert(loc=0, column='exp_id', value=np.arange(1, sgv['num_experiment'] + 1))  # 添加实验组id
-        #     pd.to_pickle(df_combinationOfPara, Path(sgv['folderpath_experiments_output_data'], r"parameters.pkl"))
-        #
+        # else:
+        #     is_need_to_get_num_bank = True
         #     pass  # if
+        #
+        # if is_need_to_get_num_bank:
+        #     sgv['num_bank'] = len(para[list(para.keys())[id_type_is_array]][0])  # 获取字典 `para` 在索引 `id_type_is_array` 对应的变量。该变量是一个列表。获取该列表第一个元素。该元素是一个数组。获取该数组大小，作为银行个数
+
+        ## 导出实验参数为 pkl、csv格式到输出文件夹
+        df_combinationOfPara = df_010.copy()
+        df_combinationOfPara.insert(loc=0, column='exp_id', value=np.arange(1, sgv['num_experiment'] + 1))  # 添加实验组id
+        pd.to_pickle(df_combinationOfPara, Path(sgv['folderpath_experiments_output_parameters'], r"parameters.pkl"))
+        df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.csv"))
 
         pass  # function
 
@@ -436,7 +387,7 @@ class Collector:
 
         """
 
-        with open(Path(sgv['folderpath_experiments_output_data'], r"config.pkl"), "wb") as f:
+        with open(Path(sgv['folderpath_experiments_output_config'], r"config.pkl"), "wb") as f:
             pickle.dump(config_data, f)
 
         # pickle.dump(config_data, open(Path(sgv['folderpath_experiments_output_data'], r"config.pkl"), "wb"))  # 导出为pkl格式

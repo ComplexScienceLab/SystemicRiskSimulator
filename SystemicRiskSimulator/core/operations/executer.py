@@ -39,7 +39,7 @@ class Executer:
         """
 
         # logging.debug("               步进更新")
-        logging.debug(f"               步进 {sgv['step']} 相 {sgv['phase']}")
+        logging.debug(f"               步进：{sgv['step']}，相：{sgv['phase']}，更新源：{update_way}")
         Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         # sgv['A_data'], sgv = Collector.collect(A, sgv['A_data'], sgv)  # 收集数据
         # logging.debug("                    收集数据")

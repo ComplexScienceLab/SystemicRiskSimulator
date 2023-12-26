@@ -33,8 +33,9 @@ def experiments_program(sgv: dict, para: dict):
         model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型
         sgv['id_experiment'] = i + 1  # 设定当前实验编号
 
-        ## 进行实验
-        Operator.operate_experiment(sgv, para, model)
+        if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):
+            ## 进行实验
+            Operator.operate_experiment(sgv, para, model)
 
         pass  # for
 
@@ -51,11 +52,11 @@ def experiments_program(sgv: dict, para: dict):
     if sgv['is_auto_open_outputlog']:
         system = platform.system()
         if system == 'Darwin':
-            os.system(r"open " + str(Path(sgv['folderpath_experiments_output_data'], r"outputlog.txt")))
+            os.system(r"open " + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
         elif system == 'Windows':
-            os.startfile(str(Path(sgv['folderpath_experiments_output_data'], r"outputlog.txt")))
+            os.startfile(str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
         elif system == 'Linux':
-            os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_data'], r"outputlog.txt")))
+            os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
         else:
             print("Unsupported operating system")
             pass  # if

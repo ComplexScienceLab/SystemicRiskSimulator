@@ -3,7 +3,7 @@ import logging
 
 from pandas import DataFrame
 
-from SystemicRiskSimulator.external_packages import time, Path, itertools, pkgutil, importlib, re, np, pd, random, string, shutil, locale
+from SystemicRiskSimulator.external_packages import time, Path, itertools, pkgutil, importlib, re, np, pd, random, string, shutil, locale, Union
 
 pass  # end import
 
@@ -93,8 +93,6 @@ class Tools:
         return pdl
         pass  # function
 
-
-
     @classmethod
     def dict_to_product_dataFrame(cls, d: dict) -> DataFrame:
         """
@@ -127,10 +125,8 @@ class Tools:
         return pd_combination_of_para
         pass  # function
 
-
-
     @classmethod
-    def set_experiments_folders(cls, foldername_experiments_output_data: str, foldername_experiments: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str):
+    def set_experiments_folders(cls, foldername_experiments_output_data: str, foldername_experiments: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str,str_folderpath_realpath_outputData:str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str):
         """
         设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹。
 
@@ -142,6 +138,7 @@ class Tools:
             str_folderpath_root_experiments (str): 实验文件夹根相对路径字符串
             str_foldername_simulator (str): 模拟器所在的项目之名称
             str_folderpath_realpath_simulator (str): 当前项目到模拟器所在的项目之相对路径
+            str_folderpath_realpath_outputData (str): 当前项目到输出数据所在的项目之相对路径
             str_folderpath_models (str): 模型文件夹相对路径字符串
             str_folderpath_config (str): 实验配置项设置项文件夹相对路径字符串
             str_folderpath_parameters (str): 实验参数设置项文件夹相对路径字符串
@@ -169,16 +166,33 @@ class Tools:
         ## 设置项目文件夹路径
         folderpath_project = Tools._get_current_project_rootpath()
         folderpath_simulator = Tools.get_project_rootpath(str_foldername_simulator, str_folderpath_realpath_simulator)
+        folderpath_outputData = Tools.get_project_rootpath(str_foldername_simulator, str_folderpath_realpath_outputData)
 
-        folderpath_experiments = Path(folderpath_project, str_folderpath_root_experiments, foldername_experiments)
+        folderpath_experiments = Path(folderpath_outputData, str_folderpath_root_experiments, foldername_experiments)
 
         folderpath_experiments.mkdir(parents=True, exist_ok=True)
+
         if foldername_experiments_output_data is not None:
             folderpath_experiments_output_data = Path(folderpath_experiments, foldername_experiments_output_data)
             folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出数据
         else:
             folderpath_experiments_output_data = None
             pass
+
+        folderpath_experiments_output_log = Path(folderpath_experiments, "outputlog")
+        folderpath_experiments_output_log.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出日志
+
+        folderpath_experiments_output_config = Path(folderpath_experiments, "config")
+        folderpath_experiments_output_config.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出配置项设置
+
+        folderpath_experiments_output_parameters = Path(folderpath_experiments, "parameters")
+        folderpath_experiments_output_parameters.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出参数设置
+
+        folderpath_experiments_output_agents = Path(folderpath_experiments, "agents")
+        folderpath_experiments_output_agents.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出实验个体众数据初始化设置
+
+        folderpath_experiments_output_models = Path(folderpath_experiments, "models")
+        folderpath_experiments_output_models.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出模型文件夹
 
         ## 设定实验相关的一些重要的文件夹
         folderpath_models = Path(folderpath_project, str_folderpath_models)  # 设定模型文件夹
@@ -191,6 +205,11 @@ class Tools:
             folderpath_simulator,
             folderpath_experiments,
             folderpath_experiments_output_data,
+            folderpath_experiments_output_log,
+            folderpath_experiments_output_config,
+            folderpath_experiments_output_parameters,
+            folderpath_experiments_output_agents,
+            folderpath_experiments_output_models,
             folderpath_models,
             folderpath_config,
             folderpath_parameters,
@@ -462,20 +481,37 @@ class Tools:
         pass  # function
 
     @classmethod
-    def MinMaxScaler(cls, data: list, min_max_range: tuple):
+    def MinMaxScaler(cls, data: Union[list, np.ndarray], min_max_range: tuple) -> np.ndarray:
         """
         指定范围，归一化数组之各元素到范围内。
         
         Args:
-            data (list): 待处理的列表
+            data (Union[list, np.ndarray]): 待处理的数组
             min_max_range (tuple): 范围，(最小范围, 最大范围)
 
         Returns: 列表形式的归一化数组。
         """
+        if len(data) == 0:
+            raise Exception("列表为空！")
+            pass  # if
 
-        data_numpy = np.asarray(data)
-        transformed_data = ((data_numpy - np.min(data_numpy)) / (np.max(data_numpy) - np.min(data_numpy))) * (min_max_range[1] - min_max_range[0]) + min_max_range[0]
-        return (list(transformed_data))
+        if isinstance(data, list):
+            is_list = True
+            data_numpy = np.asarray(data)
+        elif isinstance(data, np.ndarray):
+            is_list = False
+            data_numpy = data
+        else:
+            raise Exception("错误的数据类型！")
+            pass  # if
+
+        transformed_data = ((data_numpy - np.min(data_numpy) + 0.0001) / (np.max(data_numpy) - np.min(data_numpy) + 0.0001)) * (min_max_range[1] - min_max_range[0]) + min_max_range[0]
+
+        return transformed_data
+        # if is_list:
+        #     return list(transformed_data)
+        # else:
+        #     return transformed_data
         pass  # function
 
     @classmethod
@@ -549,6 +585,27 @@ class Tools:
         for i in range(len(list_tibble)):
             list_string_field.append(list_tibble[i].iloc[0, :].astype(str).tolist())
         return list_string_field
+        pass  # function
+
+    @classmethod
+    def transform_one_of_expOutputData_from_panel_form_to_ndarray(cls, input_data: pd.Series, shape: tuple):
+        """
+        转换实验输出的数据当中的其中一个类别的数据，从序列形式转换成 ndarray 形式。
+        Args:
+            input_data (pd.Series): 待转换的数据
+            shape (tuple): 需要转换的数据形状
+
+        Returns:
+            result (np.ndarray): 转换后的数据
+
+        """
+
+        if shape == ('time', 'agents'):
+            arrays_list = []
+            for array in input_data:
+                arrays_list.append(array.flatten())
+            result = np.vstack(arrays_list)
+        return result
         pass  # function
 
     pass  # class

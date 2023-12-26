@@ -6,6 +6,7 @@ from SystemicRiskSimulator.external_packages import np, pd, deepcopy, pickle, Pa
 from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank, SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
+from SystemicRiskSimulator.core.define.define_parameterVariables import para
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.functions.fun_finance import Finance
 
@@ -20,9 +21,12 @@ class DataInstaller:
     A_data = AgentDataCollection([], [])
 
     @classmethod
-    def set_imported_values_to_Bank_variables(cls):
+    def set_imported_values_to_Bank_variables(cls, para: dict):
         """
         导入数据以初始化银行主体众、银行间主体众变量
+
+        Args:
+            para (dict): 参数集
 
         Returns:
             bank(BankCommercial): 银行主体众
@@ -32,9 +36,9 @@ class DataInstaller:
         # dict_bankCommercial, dict_bankInterbank = cls.set_default_values_to_Bank_variables
         # from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 
-        with open(Path(sgv['folderpath_agents'], "BankCommercial.pkl"), 'rb') as f:
+        with open(Path(sgv['folderpath_agents'], "BankCommercial" + f"_year={para['year']}" + ".pkl"), 'rb') as f:
             dict_bankCommercial = pickle.load(f)
-        with open(Path(sgv['folderpath_agents'], "BankInterbank.pkl"), 'rb') as f:
+        with open(Path(sgv['folderpath_agents'], "BankInterbank" + f"_year={para['year']}" + ".pkl"), 'rb') as f:
             dict_bankInterbank = pickle.load(f)
 
         # ## NOTE 当用对象字段数据结构时：
@@ -228,7 +232,7 @@ class DataInstaller:
         pass  # function
 
     @classmethod
-    def install_data(cls, init_data_method: str):
+    def install_data(cls, init_data_method: str, sgv: dict, para: dict):
         """
         不同的初始化方式。
 
@@ -245,14 +249,16 @@ class DataInstaller:
         在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值做处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
 
         Args:
-            init_data_method ():
+            init_data_method (): 初始化数据的方式
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
 
         Returns: A
 
         """
 
         if init_data_method == "import data":
-            BB, IB = cls.set_imported_values_to_Bank_variables()  # 导入数据以初始化银行变量
+            BB, IB = cls.set_imported_values_to_Bank_variables(para)  # 导入数据以初始化银行变量
         elif init_data_method == "set manually":
             BB, IB = cls.set_manually_values_to_Bank_variables()  # 手动设置以初始化银行变量
         elif init_data_method == "randomly":
