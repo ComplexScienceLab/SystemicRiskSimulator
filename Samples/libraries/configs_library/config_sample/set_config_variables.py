@@ -8,36 +8,33 @@
 
 set_config_variables = dict(
 
+    simulator_version=r"v0.0.27_alpha",  # 模拟器版本号
+
     schedule_operation=dict(
         实验组模拟程序=True,  # 默认 True
         可视化结果程序=False,  # 默认 False
     ),
-    # schedule_operation=dict(
-    #     实验组模拟程序=False,  # 默认 True
-    #     可视化结果程序=True,  # 默认 False
-    # ),
     init_data_method=r"import data",  # 初始化数据方式。初始化方式有如下："import data"、"set manually"、"randomly"、"only init"。默认"import data"；
     init_parameters_method=r"import data",  # 初始化参数方式。初始化方式有如下："import data"、"set manually"。默认"import data"；
     type_of_experiments_foldername=r"set manually",  # 设置实验文件夹命名方式。默认"set manually"；
-    foldername_prefix_experiments=r"test_验证模型正确性",  # 手动设置初始生成的实验文件夹前缀名。默认"default"；
+    foldername_prefix_experiments=r"样例演示",  # 手动设置初始生成的实验文件夹前缀名。默认"default"；
     is_datetime=True,  # 是否使用日期时间作为实验文件夹名称的一部分。默认 True；
-    foldername_experiments_output_data=r"exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
-    folderpath_data=r"Samples/data",  # 数据所在的文件夹
-    simulator_version=r"v0.0.26_alpha",  # 模拟器版本号
+    foldername_outputData=r"SystemicRiskSimulator",  # 输出数据所在工程文件夹名称
+    folderpath_realpath_outputData=r"../",  # 输出数据所在工程文件夹相对本实验项目根路径文件夹之相对路径
     folderpath_root_experiments=r"Samples/data/sims",  # 手动设置实验文件夹根路径。默认"Samples/data/sims/"；
+    foldername_experiments_output_data=r"exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
     folderpath_models=r"Samples/libraries/models_library/IB1111_sample",  # 模型所在的文件夹
     folderpath_config=r"Samples/libraries/configs_library/config_sample",  # 配置项设置所在的文件夹
     folderpath_parameters=r"Samples/libraries/parameters_library/parameters_sample",  # 参数设置所在的文件夹
-    folderpath_agents=r"Samples/libraries/agents_library/agents_sample",  # 个体众数据初始化所在的文件夹（#NOTE 仅用于`type_of_experiments_foldername = "set manually"`）
+    folderpath_agents=r"Samples/libraries/agents_library/agents_sample",  # 个体众数据初始化所在的文件夹
     list_agents_yearName=['2012'],  # 设置 agents 初始数据列表（按照年份名称）
     running_mode=r"continue running mode",  # 运行模式。取值："continue running mode": 持续运行模式, "stepping running mode": 步进运行模式}，否则一路直接运行。默认"continue running mode"； #BUG 暂时还没有重构"stepping running mode"的情况，因此设置为该模式会出错
     step_size=1,  # 设置步进跨度；如果该数值设置较大，则相当于直接处理程序；
-    # is_auto_confirmation=False,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
     list_idsExperiment_to_run=None,  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
 
-    num_bank=5,  # 手动输入银行个数（NOTE：如果设置具体值，必须保证是正确的。如果设置为 None 或者不设置，那么会自动计算该变量值然后覆盖设置值）；
-    num_assets=1,  # 资产种类数；
-    is_auto_confirmation=True,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
+    num_bank=5,  # 手动输入银行个数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
+    num_assets=1,  # 资产种类数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
+    is_auto_confirmation=False,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
     is_auto_open_outputlog=True,  # 是否自动打开输出日志文件。默认 True；
 
     ## 调试专用变量：
@@ -51,7 +48,7 @@ set_config_variables = dict(
 
     ## 设置可视化：
     need_visualization=True,  # 是否需要可视化。默认 False；
-    foldername_experiments=r'test_验证模型正确性_20231218180221_用于可视化',  # 实验文件夹名称
+    foldername_experiments=r'样例演示_20231227203220',  # 实验文件夹名称（NOTE：这个需要根据模拟程序运行完成之后自行查看相关的文件夹名称然后手动填入）
     foldername_plots=r'plots',  # 实验导出可视化的数据文件夹名称。
     foldername_plots_single_heatmaps=r'单个矩阵热力图',  # 实验导出可视化的单个矩阵热力图之文件夹之名称。
     foldername_plots_makeup_heatmaps=r'拼版矩阵热力图',  # 实验导出可视化的拼版矩阵热力图之文件夹之名称。
@@ -61,7 +58,7 @@ set_config_variables = dict(
     foldername_plots_makeup_balanceSheets=r'拼版资产负债表',  # 实验导出可视化的拼版资产负债表之文件夹之名称。
 
     visulization_process=dict(
-        导入Pandas格式的实验结果数据转换为面板形式再导出=False,  # 默认True。这个只需要运行一次即可。
+        导入Pandas格式的实验结果数据转换为面板形式再导出=False,  # 默认True。NOTE：这个只需要运行一次即可。
         导入面板形式的CSV数据预处理=False,  # 默认False
         读取面板形式的PKL格式的文件=True,  # 默认True
         绘制矩阵热图=False,  # 默认True
@@ -86,7 +83,7 @@ set_config_variables = dict(
             'isv': '#D9E8D6',  # 浅绿色
             'ilq': '#DDE8FA',  # 浅蓝色
             'ilq,isv': '#DFD6E6',  # 浅紫色
-            # '-rr': '#FDF3D0',  # 浅黄色 #TODO 后续添加新状态
+            # '-rr': '#FDF3D0',  # 浅黄色 # NOTE 后续可以根据需要自行添加新状态
             'br': '#CCCCCC',  # 灰色
             'off': '#999999',  # 深灰色
         },
@@ -113,15 +110,11 @@ set_config_variables = dict(
                 data_name=('Z_IB_all', 'A_IB_all', 'Z_IB'),
                 colormap=('#FFFFFF', '#0000FF'),
             ),
-            # dict(
-            #     data_name=('Loss_IB_t','Loss_IB_s','Loss_IB'), #TODO 补充。
-            #     colormap=('#FFFFFF', '#000000'),
-            # ),
             dict(
                 data_name=('Bo_IB_all', 'Li_IB_all', 'Bo_IB'),
                 colormap=('#FFFFFF', '#0000FF'),
             ),
-            # TODO 添加银行状态与债权债务关系网络
+            # NOTE 后续可以根据需要自行添加银行状态与债权债务关系网络
         ]
 
     ),

@@ -1,5 +1,7 @@
 """
 设置多主体变量
+
+NOTE 说明：这个初始数据全部是虚拟生成的数据，与真实数据无关，仅作为样例进行展示。虚拟数据生成的借鉴的来源：谭春枝所著的《基于复杂网络理论的银行间市场系统风险传染机制研究》
 """
 
 from SystemicRiskSimulator.external_packages import Path, pickle
@@ -113,13 +115,10 @@ set_bankCommercial_variables = dict(
     is_needed_LiP=CONST(sgv['num_bank']).FALSE1.copy(),  # 示性向量之于银行是否需要收回厂商贷款 is_needed_LiP
     is_enabled_LiP=CONST(sgv['num_bank']).TRUE1.copy(),  # 示性向量之于银行是否可以收回厂商贷款 is_enabled_LiP
     is_allocated_Shock=CONST(sgv['num_bank']).FALSE1.copy(),  # 示性向量之于银行是否已经分配传染冲击 is_allocated_Shock
-    list_exist=np.full(sgv['num_bank'], list),  # 列表之于存在的银行编号 list_exist  #HACK 似乎没用到
-    list_insolvent=np.full(sgv['num_bank'], list),  # 列表之于资不抵债的银行编号 list_insolvent  #HACK 似乎没用到
-    list_illiquid=np.full(sgv['num_bank'], list),  # 列表之于流动性短缺的银行编号 list_illiquid  #HACK 似乎没用到
-    list_bankrupt=np.full(sgv['num_bank'], list)  # 列表之于破产的银行编号 list_bankrupt  #HACK 似乎没用到
-    # TODO 补充损失变量；
-    # TODO 增加监管约束之状态；
-
+    list_exist=np.full(sgv['num_bank'], list),  # 列表之于存在的银行编号 list_exist
+    list_insolvent=np.full(sgv['num_bank'], list),  # 列表之于资不抵债的银行编号 list_insolvent
+    list_illiquid=np.full(sgv['num_bank'], list),  # 列表之于流动性短缺的银行编号 list_illiquid
+    list_bankrupt=np.full(sgv['num_bank'], list)  # 列表之于破产的银行编号 list_bankrupt
 )
 
 set_bankInterbank_variables = dict(
@@ -161,9 +160,8 @@ set_bankInterbank_variables = dict(
 
 # %% # 导出 agents 变量
 
-folderpath_agents = Path(folderpath_project, "Samples/libraries/agents_library/agents_sample")
 for year in sgv['list_agents_yearName']:
-    with open(Path(folderpath_agents, "BankCommercial" + f"_year={year}" + ".pkl"), 'wb') as f:
+    with open("./BankCommercial" + f"_year={year}" + ".pkl", 'wb') as f:
         pickle.dump(set_bankCommercial_variables, f)
-    with open(Path(folderpath_agents, "BankInterbank" + f"_year={year}" + ".pkl"), 'wb') as f:
+    with open("./BankInterbank" + f"_year={year}" + ".pkl", 'wb') as f:
         pickle.dump(set_bankInterbank_variables, f)

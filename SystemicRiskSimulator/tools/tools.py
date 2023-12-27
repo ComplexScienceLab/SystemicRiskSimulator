@@ -126,19 +126,20 @@ class Tools:
         pass  # function
 
     @classmethod
-    def set_experiments_folders(cls, foldername_experiments_output_data: str, foldername_experiments: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str,str_folderpath_realpath_outputData:str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str):
+    def set_experiments_folders(cls, foldername_experiments_output_data: str, foldername_experiments: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str,str_foldername_outputData:str,str_folderpath_realpath_outputData:str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str):
         """
-        设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹。
+        设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹等。
 
-        根据【实验导出数据文件夹名称】、【实验文件夹名称】，生成【项目文件夹路径】、【模拟器工具文件夹路径】、【实验文件夹路径】、【实验导出数据文件夹路径】、【模型文件夹路径】、【实验配置项设置项文件夹路径】、【实验参数设置项文件夹路径】、【实验实验个体众数据初始化设置项文件夹路径】。
+        根据【实验导出数据文件夹名称】、【实验文件夹名称】，生成【项目文件夹路径】、【模拟器工具文件夹路径】、【实验文件夹路径】、【实验导出数据文件夹路径】、【模型文件夹路径】、【实验配置项设置项文件夹路径】、【实验参数设置项文件夹路径】、【实验实验个体众数据初始化设置项文件夹路径】等。
 
         Args:
             foldername_experiments_output_data (str): 实验导出数据文件夹名称
             foldername_experiments (str): 实验文件夹名称
             str_folderpath_root_experiments (str): 实验文件夹根相对路径字符串
             str_foldername_simulator (str): 模拟器所在的项目之名称
-            str_folderpath_realpath_simulator (str): 当前项目到模拟器所在的项目之相对路径
-            str_folderpath_realpath_outputData (str): 当前项目到输出数据所在的项目之相对路径
+            str_folderpath_realpath_simulator (str): 当前项目根路径到模拟器所在的项目之相对路径
+            str_foldername_outputData (str): 输出数据所在的主文件夹之名称
+            str_folderpath_realpath_outputData (str): 当前项目根路径到输出数据所在的主文件夹之相对路径
             str_folderpath_models (str): 模型文件夹相对路径字符串
             str_folderpath_config (str): 实验配置项设置项文件夹相对路径字符串
             str_folderpath_parameters (str): 实验参数设置项文件夹相对路径字符串
@@ -166,7 +167,7 @@ class Tools:
         ## 设置项目文件夹路径
         folderpath_project = Tools._get_current_project_rootpath()
         folderpath_simulator = Tools.get_project_rootpath(str_foldername_simulator, str_folderpath_realpath_simulator)
-        folderpath_outputData = Tools.get_project_rootpath(str_foldername_simulator, str_folderpath_realpath_outputData)
+        folderpath_outputData = Tools.get_project_rootpath(str_foldername_outputData, str_folderpath_realpath_outputData)
 
         folderpath_experiments = Path(folderpath_outputData, str_folderpath_root_experiments, foldername_experiments)
 

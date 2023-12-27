@@ -1,9 +1,10 @@
 """
 模型IB1111
-"""
-import logging
 
-from SystemicRiskSimulator.external_packages import np
+NOTE 说明：这个模型仅作为样例进行展示。对于该模型的正确性并不做讨论。
+"""
+
+from SystemicRiskSimulator.external_packages import np, logging
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.executer import Executer

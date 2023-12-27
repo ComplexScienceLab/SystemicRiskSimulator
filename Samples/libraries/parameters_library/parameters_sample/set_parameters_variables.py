@@ -22,12 +22,12 @@ set_parameters_variables = dict(
         np.zeros(5, dtype=float),
     ],
 
-    # ## 银行抛售厂商贷款资产价格折扣率。默认0.0。#HACK目前暂时不考虑这个参数！
+    # ## 银行抛售厂商贷款资产价格折扣率。默认0.0。#NOTE 暂时不考虑这个参数。可以根据需要自行设置。
     # kappa_A_P=[
     #     0.0
     # ],
     #
-    # ## 银行抛售银行间贷款资产价格折扣率。默认0.0。#HACK目前暂时不考虑这个参数！
+    # ## 银行抛售银行间贷款资产价格折扣率。默认0.0。#NOTE 暂时不考虑这个参数。可以根据需要自行设置。
     # kappa_IB=[
     #     0.0
     # ],
@@ -74,9 +74,6 @@ for i in range(num_bank):
         Shock_exIB_run_t_percentage=array_eye[i],
     )
 
-
-
-
 # # 添加实验组：各银行同时遭受按比例递增的外生违约损失冲击
 # for v in array_step:
 #     df_parameters.loc[len(df_parameters)] = dict(
@@ -106,9 +103,8 @@ for i in range(num_bank):
 df_parameters['inner_id'] = np.arange(len(df_parameters), dtype=int)
 df_parameters['year'] = [list_agents_yearName] * len(df_parameters)
 df_parameters = df_parameters.explode('year')
-df_parameters = df_parameters.sort_values(by=['year', 'inner_id'],ignore_index=True)
+df_parameters = df_parameters.sort_values(by=['year', 'inner_id'], ignore_index=True)
 # df_parameters = df_parameters.reset_index(drop=True)
-
 
 
 # %% 转换为字典列表格式，然后导出到当前文件夹下
