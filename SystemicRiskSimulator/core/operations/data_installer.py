@@ -3,10 +3,10 @@
 """
 
 from SystemicRiskSimulator.external_packages import np, pd, deepcopy, pickle, Path
-from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank, SystemicRiskAgent
+from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank
 from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
-from SystemicRiskSimulator.core.define.define_parameterVariables import para
+# from SystemicRiskSimulator.core.define.define_parameterVariables import para
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.functions.fun_finance import Finance
 
@@ -33,8 +33,6 @@ class DataInstaller:
             interbank(BankInterbank): 银行间主体众
 
         """
-        # dict_bankCommercial, dict_bankInterbank = cls.set_default_values_to_Bank_variables
-        # from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 
         with open(Path(sgv['folderpath_agents'], "BankCommercial" + f"_year={para['year']}" + ".pkl"), 'rb') as f:
             dict_bankCommercial = pickle.load(f)
@@ -271,9 +269,6 @@ class DataInstaller:
 
         sgv['num_bank'] = len(BB.on)  # 获取 agents 之个体数量
 
-        # # 初始化带回合变量的商业银行实例数组、初始化带回合变量的银行间市场实例数组 #HACK无用
-        # A_data = Collector.collect(A, None, sgv)
-
         # HACK 后续需要统一这两个变量的用法，防止混乱使用
         b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置A.BB示性变量
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
@@ -298,7 +293,7 @@ class DataInstaller:
 
     @classmethod
     def initialize_data(cls, A):
-        ## 更新各银行之变量，在第一回合初始时 # BUG
+        ## 更新各银行之变量，在第一回合初始时
         # update=sgv['update']
         # @Executer.execute
         Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！

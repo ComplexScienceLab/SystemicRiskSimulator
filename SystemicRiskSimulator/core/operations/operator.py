@@ -4,10 +4,8 @@
 
 from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any, pickle, pd
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
-from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
 from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.data_installer import DataInstaller
-from SystemicRiskSimulator.core.operations.scheduler import Scheduler
 from SystemicRiskSimulator.core.operations.builder import Builder
 from SystemicRiskSimulator.core.operations.processor import Processor
 
@@ -45,14 +43,6 @@ class Operator:
         elif sgv['init_parameters_method'] == "set manually":
             sgv['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
             Collector.export_parameter_data(sgv['list_combination_of_para'], para)  # 导出控制参数数据
-        # if sgv['init_parameters_method'] == "import data":
-        #     with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
-        #         sgv['list_combination_of_para'] = pd.read_pickle(f)
-        #     sgv['list_combination_of_para'] = pd.DataFrame(sgv['list_combination_of_para']).to_dict('records')  # 转换为字典列表
-        #     Collector.export_parameter_data(sgv['list_combination_of_para'], para)  # 导出控制参数数据
-        # elif sgv['init_parameters_method'] == "set manually":
-        #     sgv['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
-        #     Collector.export_parameter_data(sgv['list_combination_of_para'], para)  # 导出控制参数数据
 
         ## 构建本次实验组所需的所有模型
 
@@ -88,9 +78,6 @@ class Operator:
 
         """
 
-        # if sgv['state_of_schedule'] == StateOfScheduleEnum.idle:  #HACK 不再使用调度状态，可删除
-        #     Scheduler.schedule(sgv)
-        # if sgv['state_of_schedule'] == StateOfScheduleEnum.initializing:
 
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
         sgv['index_of_schedule_position'] = []
@@ -115,36 +102,21 @@ class Operator:
         sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         sgv['step'] += 1
 
-        # ## 构建本次实验所需的状态数据
-        # Finance.build_state_const_variables(A.BB, A.IB)
-
-        # ## 初始化本次实验所需的多主体数据
-        # A = DataInstaller.initialize_data(A, para, sgv)
-
-        # pass  # if
-
         ## 运行实验
 
         sgv['experiment_start_time'] = time.time()  # 记录此次实验开始时间
 
         if sgv['is_use_flow_form_version_model']:
-            ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()`
-            # Scheduler.schedule(sgv)  # 调度状态变成`running`
-            model, A, sgv['A_data'], para, sgv = Processor.process_entity_by_process_and_container_component(model, A, sgv['A_data'], para, sgv)  # 执行具体的模型，通过执行模型实体的方式
-            sgv['is_continue_process'] = False  # 不再继续运行过程
-
-            # if sgv['state_of_schedule'] == StateOfScheduleEnum.running:  #HACK 不再使用调度状态，可删除
-            #     sgv['is_continue_process'] = False  # 不再继续运行过程
-            #     Scheduler.schedule(sgv)  # 调度状态变成`ending`
+            # ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()` HACK 已经过时，弃用，可删除。
+            # # Scheduler.schedule(sgv)  # 调度状态变成`running`
+            # model, A, sgv['A_data'], para, sgv = Processor.process_entity_by_process_and_container_component(model, A, sgv['A_data'], para, sgv)  # 执行具体的模型，通过执行模型实体的方式
+            # sgv['is_continue_process'] = False  # 不再继续运行过程
+            pass
         else:
             ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_round']` 失效
             # Scheduler.schedule(sgv)  # 调度状态变成`running`
             model, A, sgv['A_data'], para, sgv = Processor.process_entity_by_execute_component(model, A, sgv['A_data'], para, sgv)  # 执行具体的模型，通过执行模型实体的方式
             sgv['is_continue_process'] = False  # 不再继续运行过程
-
-            # if sgv['state_of_schedule'] == StateOfScheduleEnum.running:  #HACK 不再使用调度状态，可删除
-            #     sgv['is_continue_process'] = False  # 不再继续运行过程
-            #     Scheduler.schedule(sgv)  # 调度状态变成`ending`
             pass  # if
 
         sgv['experiment_end_time'] = time.time()  # 记录此次实验结束时间
@@ -160,16 +132,7 @@ class Operator:
         sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
-        # Scheduler.schedule(sgv)  #HACK 不再使用调度状态，可删除
-
         logging.info("本次实验结束，还剩下" + str(len(sgv['list_combination_of_para']) - sgv['id_experiment']) + "个实验。\n\n")
-
-        # if sgv['state_of_schedule'] == StateOfScheduleEnum.ending:  #HACK 不再使用调度状态，可删除
-        #     # Collector.collect(None, sgv['A_data'], sgv)
-        #     logging.debug("                    导出数据")
-        #     Collector.export_agent_data(sgv['A_data'], sgv)
-        #     Scheduler.schedule(sgv)
-        #     logging.info("本次实验结束，还剩下" + str(len(sgv['list_combination_of_para']) - sgv['id_experiment']) + "个实验。\n\n")
 
         pass  # function
 

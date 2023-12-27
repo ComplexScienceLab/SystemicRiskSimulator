@@ -2,7 +2,7 @@
 实体管理机
 """
 
-from SystemicRiskSimulator.external_packages import np, logging
+from SystemicRiskSimulator.external_packages import logging
 from SystemicRiskSimulator.core.define.define_component import *
 from SystemicRiskSimulator.core.define.define_entity import Entity
 from SystemicRiskSimulator.tools.tools import Tools

@@ -82,8 +82,8 @@ def ExBankInsolventShock(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
 
-    Executer.step_update('clear all Shock_source', A, para, sgv)  # 清零所有冲击源头变量 Shock_source
-    Executer.step_update('clear all Shock_IB', A, para, sgv)  # 清零所有银行间冲击变量 Shock_IB
+    # Executer.step_update('clear all Shock_source', A, para, sgv)  # 清零所有冲击源头变量 Shock_source
+    # Executer.step_update('clear all Shock_IB', A, para, sgv)  # 清零所有银行间冲击变量 Shock_IB
 
     A.BB.Shock_P_def_t = A.BB.A_P * np.array([para['Shock_exIB_def_t_percentage']]).T  # 厂商贷款违约损失冲击
     Executer.step_update('Shock_P_def_t', A, para, sgv)  # 厂商贷款违约损失冲击传导至银行内资产冲击
@@ -129,7 +129,7 @@ def InterBankInsolventContagion(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
 
-    Executer.step_update('clear all Shock_target', A, para, sgv)  # 清零所有冲击目标变量 Shock_target
+    # Executer.step_update('clear all Shock_target', A, para, sgv)  # 清零所有冲击目标变量 Shock_target
 
     for i in np.where(A.BB.isv[:, 0])[0]:  # 资不抵债银行违约，导致其对各债权银行负债变动，造成银行间违约冲击
         A.IB.Shock_IB_def[A.IB.cre_isv[i], i] = np.abs(A.IB.Z_IB[i, A.IB.cre_isv[i]] * A.BB.Shock_IB_def_s[i] / A.BB.Z_IB_all[i])
@@ -164,8 +164,8 @@ def InterBankInsolventShock(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
 
-    Executer.step_update('clear all Shock_source', A, para, sgv)  # 清零所有冲击源头变量 Shock_source
-    Executer.step_update('clear all Shock_IB', A, para, sgv)  # 清零所有银行间冲击变量 Shock_IB
+    # Executer.step_update('clear all Shock_source', A, para, sgv)  # 清零所有冲击源头变量 Shock_source
+    # Executer.step_update('clear all Shock_IB', A, para, sgv)  # 清零所有银行间冲击变量 Shock_IB
 
     A.BB.Loss_IB_def_t[A.BB.on] = np.maximum(0, A.BB.Shock_IB_def_t[A.BB.on] - A.BB.E_all[A.BB.on])  # 银行间违约损失冲击损失
     Executer.step_update('Loss_IB_def_t', A, para, sgv)
@@ -207,8 +207,8 @@ def ExBankIlliquidShock(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
 
-    Executer.step_update('clear all Shock_source', A, para, sgv)  # 清零所有冲击源头变量 Shock_source
-    Executer.step_update('clear all Shock_IB', A, para, sgv)  # 清零所有银行间冲击变量 Shock_IB
+    # Executer.step_update('clear all Shock_source', A, para, sgv)  # 清零所有冲击源头变量 Shock_source
+    # Executer.step_update('clear all Shock_IB', A, para, sgv)  # 清零所有银行间冲击变量 Shock_IB
 
     A.BB.Shock_D_run_t = A.BB.Z_D * np.array([para['Shock_exIB_run_t_percentage']]).T  # 生成居民存款挤兑流动冲击
     Executer.step_update('Shock_D_run_t', A, para, sgv)  # 居民存款挤兑流动冲击传导至银行内资产冲击
@@ -351,7 +351,7 @@ def InterBankIlliquidRepay(A: SystemicRiskAgent, para: dict, sgv: dict):
     A.BB.A_Q[A.b] += (A.BB.Li_IB_all[A.b] - A.BB.Bo_IB_all[A.b])  # 各银行流动资金变动，当收回相应的银行间贷款、偿还相应的银行间借款时
     Executer.step_update('A_Q', A, para, sgv)
 
-    Executer.step_update('clear transfer all', A, para, sgv)  # 清零所有不必要的借贷流量变量；
+    # Executer.step_update('clear transfer all', A, para, sgv)  # 清零所有不必要的借贷流量变量；
 
     return A, sgv
     pass  # function

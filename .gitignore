@@ -4,9 +4,11 @@
 
 *.ffs_db
 *.pyc
+*.pkl
 
 # paths that include data files
 venv/
+backup/
 
 .idea/
 

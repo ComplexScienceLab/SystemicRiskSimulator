@@ -49,17 +49,6 @@ sgv['vis'] = dict(),  # 可视化相关的宏观变量
 sgv['df_BB'] = None  # Pandas格式的银行数据
 sgv['df_IB'] = None  # Pandas格式的银行间数据
 
-# """
-# sgv['model_process_state'] 表示当前模型根节点处理状态 #HACK 无用，但是可以保留作为借鉴
-# 如果用可视化标记节点颜色表示标记状态，那么：
-#
-# - 标记是白色`"has not process"`说明还没处理过该节点，也没有在处理；
-# - 标记是绿色`"process now"`说明正在处理该节点；
-# - 标记是黄色`"process inner"`说明正在处理该节点之内层节点；
-# - 标记是红色`"has processed"`说明已经处理完该节点，但是表示接下来不会再准备处理该节点；
-# """
-# sgv['model_process_state'] = "has not process"
-
 ## 测试程序专用
 sgv['test_continous_loop_of_model'] = 0  # 计次单个模型连续循环次数
 sgv['test_max_num_of_round'] = None,  # 处理最大回合数（测试用）；
