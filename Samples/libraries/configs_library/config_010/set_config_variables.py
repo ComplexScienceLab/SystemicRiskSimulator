@@ -8,14 +8,14 @@
 
 set_config_variables = dict(
 
-    # schedule_operation=dict(
-    #     实验组模拟程序=True,  # 默认 True
-    #     可视化结果程序=False,  # 默认 False
-    # ),
     schedule_operation=dict(
-        实验组模拟程序=False,  # 默认 True
-        可视化结果程序=True,  # 默认 False
+        实验组模拟程序=True,  # 默认 True
+        可视化结果程序=False,  # 默认 False
     ),
+    # schedule_operation=dict(
+    #     实验组模拟程序=False,  # 默认 True
+    #     可视化结果程序=True,  # 默认 False
+    # ),
     init_data_method=r"import data",  # 初始化数据方式。初始化方式有如下："import data"、"set manually"、"randomly"、"only init"。默认"import data"；
     init_parameters_method=r"import data",  # 初始化参数方式。初始化方式有如下："import data"、"set manually"。默认"import data"；
     type_of_experiments_foldername=r"set manually",  # 设置实验文件夹命名方式。默认"set manually"；

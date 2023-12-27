@@ -769,7 +769,7 @@ class Finance:
 
         Args:
             interbank (BankInterbank): BankInterbank
-            isState ():
+            isState (StateType): 示性向量之于银行指定的状态。
             goal (str): 参数，确定计算债务方或债权方。
 
         Returns: list_of_relation_in_state_of_banks
