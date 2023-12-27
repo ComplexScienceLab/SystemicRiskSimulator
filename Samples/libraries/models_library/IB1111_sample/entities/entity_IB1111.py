@@ -6,7 +6,7 @@
 entity_IB1111 = dict(
     attribute=dict(
         id="user2000",
-        entity_name="IB1111_非流程多函数版",
+        entity_name="IB1111_sample",
         text_name="模型IB1111之非流程多函数版",
         entity_type={"template entity"},
         structure_type={"content structure"},

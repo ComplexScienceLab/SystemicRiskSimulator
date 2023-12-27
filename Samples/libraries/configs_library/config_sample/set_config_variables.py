@@ -23,13 +23,12 @@ set_config_variables = dict(
     is_datetime=True,  # 是否使用日期时间作为实验文件夹名称的一部分。默认 True；
     foldername_experiments_output_data=r"exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
     folderpath_data=r"Samples/data",  # 数据所在的文件夹
-    simulator_version=r"v0.0.24_alpha",  # 模拟器版本号
+    simulator_version=r"v0.0.26_alpha",  # 模拟器版本号
     folderpath_root_experiments=r"Samples/data/sims",  # 手动设置实验文件夹根路径。默认"Samples/data/sims/"；
-    folderpath_models=r"Samples/libraries/models_library/IB1111_非流程多函数版",  # 模型所在的文件夹
-    # folderpath_models=r"Samples/libraries/models_library/IB1111_扁平流程版",  # 模型所在的文件夹
-    folderpath_config=r"Samples/libraries/configs_library/config_010",  # 配置项设置所在的文件夹
-    folderpath_parameters=r"Samples/libraries/parameters_library/parameters_010",  # 参数设置所在的文件夹
-    folderpath_agents=r"Samples/libraries/agents_library/agents_010",  # 个体众数据初始化所在的文件夹（#NOTE 仅用于`type_of_experiments_foldername = "set manually"`）
+    folderpath_models=r"Samples/libraries/models_library/IB1111_sample",  # 模型所在的文件夹
+    folderpath_config=r"Samples/libraries/configs_library/config_sample",  # 配置项设置所在的文件夹
+    folderpath_parameters=r"Samples/libraries/parameters_library/parameters_sample",  # 参数设置所在的文件夹
+    folderpath_agents=r"Samples/libraries/agents_library/agents_sample",  # 个体众数据初始化所在的文件夹（#NOTE 仅用于`type_of_experiments_foldername = "set manually"`）
     list_agents_yearName=['2012'],  # 设置 agents 初始数据列表（按照年份名称）
     running_mode=r"continue running mode",  # 运行模式。取值："continue running mode": 持续运行模式, "stepping running mode": 步进运行模式}，否则一路直接运行。默认"continue running mode"； #BUG 暂时还没有重构"stepping running mode"的情况，因此设置为该模式会出错
     step_size=1,  # 设置步进跨度；如果该数值设置较大，则相当于直接处理程序；

@@ -5,7 +5,6 @@
 from SystemicRiskSimulator.external_packages import Path, pickle
 from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_type import *
-from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.tools.tools import Tools
 
 pass  # end import
@@ -14,9 +13,9 @@ folderpath_project = Tools.get_project_rootpath()
 
 ######### 设置模型变量 #########################################
 
-
-## 设置 agents 初始数据列表
-list_agents_yearName = ['2012']
+sgv = {}
+sgv['list_agents_yearName'] = ['2012']  # 设置 agents 初始数据列表
+sgv['num_bank'] = 5
 
 set_bankCommercial_variables = dict(
 
@@ -162,8 +161,8 @@ set_bankInterbank_variables = dict(
 
 # %% # 导出 agents 变量
 
-folderpath_agents = Path(folderpath_project, "Samples/libraries/agents_library/agents_010")
-for year in list_agents_yearName:
+folderpath_agents = Path(folderpath_project, "Samples/libraries/agents_library/agents_sample")
+for year in sgv['list_agents_yearName']:
     with open(Path(folderpath_agents, "BankCommercial" + f"_year={year}" + ".pkl"), 'wb') as f:
         pickle.dump(set_bankCommercial_variables, f)
     with open(Path(folderpath_agents, "BankInterbank" + f"_year={year}" + ".pkl"), 'wb') as f:

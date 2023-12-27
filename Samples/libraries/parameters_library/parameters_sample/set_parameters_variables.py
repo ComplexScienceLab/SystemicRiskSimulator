@@ -9,7 +9,7 @@ set_parameters_variables = dict(
 
     ## 指定待处理的模型
     model_name=[
-        'IB1111_非流程多函数版',
+        'IB1111_sample',
     ],
 
     ## 外生违约损失冲击权重百分比
@@ -53,7 +53,7 @@ array_eye = np.eye(num_bank, dtype=float)
 # 添加实验组：各银行单独遭受全部的外生违约损失冲击
 for i in range(num_bank):
     df_parameters.loc[len(df_parameters)] = dict(
-        model_name='IB1111_非流程多函数版',
+        model_name='IB1111_sample',
         Shock_exIB_def_t_percentage=array_eye[i],
         Shock_exIB_run_t_percentage=np.zeros(num_bank, dtype=float),
     )
@@ -61,7 +61,7 @@ for i in range(num_bank):
 # 添加实验组：各银行单独遭受全部的外生挤兑流动冲击
 for i in range(num_bank):
     df_parameters.loc[len(df_parameters)] = dict(
-        model_name='IB1111_非流程多函数版',
+        model_name='IB1111_sample',
         Shock_exIB_def_t_percentage=np.zeros(num_bank, dtype=float),
         Shock_exIB_run_t_percentage=array_eye[i],
     )
@@ -69,7 +69,7 @@ for i in range(num_bank):
 # 添加实验组：各银行单独遭受全部的外生违约损失冲击与外生挤兑流动冲击
 for i in range(num_bank):
     df_parameters.loc[len(df_parameters)] = dict(
-        model_name='IB1111_非流程多函数版',
+        model_name='IB1111_sample',
         Shock_exIB_def_t_percentage=array_eye[i],
         Shock_exIB_run_t_percentage=array_eye[i],
     )
@@ -80,7 +80,7 @@ for i in range(num_bank):
 # # 添加实验组：各银行同时遭受按比例递增的外生违约损失冲击
 # for v in array_step:
 #     df_parameters.loc[len(df_parameters)] = dict(
-#         model_name='IB1111_非流程多函数版',
+#         model_name='IB1111_sample',
 #         Shock_exIB_def_t_percentage=np.ones(num_bank, dtype=float) * v,
 #         Shock_exIB_run_t_percentage=np.zeros(num_bank, dtype=float),
 #     )
@@ -88,7 +88,7 @@ for i in range(num_bank):
 # # 添加实验组：各银行同时遭受按比例递增的外生挤兑流动冲击
 # for v in array_step:
 #     df_parameters.loc[len(df_parameters)] = dict(
-#         model_name='IB1111_非流程多函数版',
+#         model_name='IB1111_sample',
 #         Shock_exIB_def_t_percentage=np.zeros(num_bank, dtype=float),
 #         Shock_exIB_run_t_percentage=np.ones(num_bank, dtype=float) * v,
 #     )
@@ -96,7 +96,7 @@ for i in range(num_bank):
 # # 添加实验组：各银行同时遭受按比例递增的外生违约损失冲击与外生挤兑流动冲击
 # for v in array_step:
 #     df_parameters.loc[len(df_parameters)] = dict(
-#         model_name='IB1111_非流程多函数版',
+#         model_name='IB1111_sample',
 #         Shock_exIB_def_t_percentage=np.ones(num_bank, dtype=float) * v,
 #         Shock_exIB_run_t_percentage=np.ones(num_bank, dtype=float) * v,
 #     )
