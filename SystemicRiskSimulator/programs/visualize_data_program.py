@@ -125,8 +125,8 @@ def visualize_data_program(sgv: dict):
         ## NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV格式数据。
         print("导入Pandas格式的实验结果数据转换为面板形式再导出")
 
-        list_filepath_pkl_BB = glob.glob(str(sgv['folderpath_experiments_output_data'] / 'BB_exp*.pkl'))  # 获取实验组输出数据pkl格式之BB数据之文件列表
-
+        # list_filepath_pkl_BB = glob.glob(str(sgv['folderpath_experiments_output_data'] / 'BB_exp*.pkl'))  # 获取实验组输出数据pkl格式之BB数据之文件列表
+        list_filepath_pkl_BB = list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl'))  # 获取实验组输出数据pkl格式之BB数据之文件列表
         for filepath_pkl_BB in list_filepath_pkl_BB:
             df_BB = pd.read_pickle(filepath_pkl_BB)
             num_agent = df_BB['id_agent'][0].shape[0]  # 获取个体数
@@ -155,14 +155,15 @@ def visualize_data_program(sgv: dict):
 
             df_BB_panel = df_BB_panel.reset_index(drop=True)  # 重置索引
 
-            filename_pkl_BB = filepath_pkl_BB.split('/')[-1]
+            filename_pkl_BB = Path(filepath_pkl_BB).name
             filename_pkl_BB_panel = filename_pkl_BB.replace('BB_', 'BB_panel_')
             filepath_pkl_BB_panal = Path(sgv['folderpath_plots'], filename_pkl_BB_panel)  # 面板数据文件路径
             df_BB_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为pkl格式
             df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为csv格式；
             pass  # for
 
-        list_filepath_pkl_IB = glob.glob(str(sgv['folderpath_experiments_output_data'] / 'IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
+        # list_filepath_pkl_IB = glob.glob(str(sgv['folderpath_experiments_output_data'] / 'IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
+        list_filepath_pkl_IB = list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
         for filepath_pkl_IB in list_filepath_pkl_IB:
             df_IB = pd.read_pickle(filepath_pkl_IB)
             df_IB_panel = deepcopy(df_IB)
@@ -229,7 +230,7 @@ def visualize_data_program(sgv: dict):
 
             df_IB_panel = df_IB_panel.reset_index(drop=True)  # 重置索引
 
-            filename_pkl_IB = filepath_pkl_IB.split('/')[-1]
+            filename_pkl_IB = Path(filepath_pkl_IB).name
             filename_pkl_IB_panel = filename_pkl_IB.replace('IB_', 'IB_panel_')
             filepath_pkl_IB_panal = Path(sgv['folderpath_plots'], filename_pkl_IB_panel)  # 面板数据文件路径
             df_IB_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为pkl格式
