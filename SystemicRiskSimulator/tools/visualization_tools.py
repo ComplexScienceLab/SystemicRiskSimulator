@@ -366,7 +366,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     ### 设置各节点之尺寸、颜色、标签
     min_vertices_size_in_one_graph = (min(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最小值
     max_vertices_size_in_one_graph = (max(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最大值
-    df_vertices_data['vertices_size'] = 40.0 * np.sqrt(np.asarray(
+    df_vertices_data['vertices_size'] = 40.0 * np.sqrt(np.abs(np.asarray(
         Tools.MinMaxScaler(
             df_vertices_data['vertices_value'].values,
             (
@@ -374,8 +374,8 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
                 1.0 + 1.0 * (max_vertices_size_in_one_graph)
             )
         )  # 计算各节点之尺寸
-    ))  # 设置各节点之尺寸
-    df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][','.join(s)] for s in list_data_banksState]  # 设置各节点之颜色
+    )))  # 设置各节点之尺寸
+    df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][','.join(s)] if v >= 0 else '#000000' for s, v in zip(list_data_banksState, df_vertices_data['vertices_value'].values)]  # 设置各节点之颜色，如果是节点值是负数那么是黑色
     df_vertices_data['vertices_label'] = [list_data_banksName[i] + '\n' + str(round(list_vertices_value[i])) for i in range(len(list_vertices_value))]  # 设置各节点之标签
 
     ### 生成各边集之信息
