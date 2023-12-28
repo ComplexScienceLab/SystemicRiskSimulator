@@ -101,8 +101,8 @@ def visualize_data_program(sgv: dict):
     ### 处理相关导入导出文件夹
 
     # sgv['folderpath_experiments'] = Path(sgv['folderpath_project'], sgv['folderpath_root_experiments'], sgv['foldername_experiments'])
-    sgv['folderpath_experiments_output_data'] = Path(sgv['folderpath_experiments'], sgv['foldername_experiments_output_data'])
-    sgv['folderpath_plots'] = Path(sgv['folderpath_experiments_output_data'], sgv['foldername_plots'])
+    # sgv['folderpath_experiments_output_data'] = Path(sgv['folderpath_experiments'], sgv['foldername_experiments_output_data'])
+    sgv['folderpath_plots'] = Path(sgv['folderpath_experiments'], sgv['foldername_plots'])
     sgv['folderpath_plots'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_plots_single_heatmaps'] = Path(sgv['folderpath_plots'], sgv['foldername_plots_single_heatmaps'])
     sgv['folderpath_plots_single_heatmaps'].mkdir(parents=True, exist_ok=True)
