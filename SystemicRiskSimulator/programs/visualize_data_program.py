@@ -251,14 +251,14 @@ def visualize_data_program(sgv: dict):
         match_pattern_in_vertical_direction = r'(?<=[IB]B_panel_exp=).+?(?=[(\.csv)])'
         match_pattern_in_horizontal_direction = r'[IB]B'
         sorted_list_filepath_csv_panel = sorted(list_filepath_csv_panel, key=lambda name: (
-            int(re.search(match_pattern_in_vertical_direction, name)[0]),
-            re.search(match_pattern_in_horizontal_direction, name)[0],
+            int(re.search(match_pattern_in_vertical_direction, str(name))[0]),
+            re.search(match_pattern_in_horizontal_direction, str(name))[0],
         ))
 
         ## 获取所有实验之索引
         experiments_indices = []
         for filepath in sorted_list_filepath_csv_panel:
-            match = re.search(r'exp=(\d+)', filepath)
+            match = re.search(r'exp=(\d+)', str(filepath))
             if match:
                 experiments_indices.append(int(match.group(1)))
             pass  # for
@@ -309,7 +309,7 @@ def visualize_data_program(sgv: dict):
 
         pass  # if 导入面板形式的CSV数据预处理
 
-    # %% [markdown] # NOTE 可视化
+    # %% [markdown] # 导入面板形式的PKL数据预处理
 
     if (sgv['visulization_process']['读取面板形式的PKL格式的文件']):
         # ##  NOTE 导入面板形式的PKL数据预处理
@@ -323,14 +323,14 @@ def visualize_data_program(sgv: dict):
         match_pattern_in_vertical_direction = r'(?<=[IB]B_panel_exp=).+?(?=[(\.pkl)])'
         match_pattern_in_horizontal_direction = r'[IB]B'
         sorted_pkl_panel_file_list = sorted(pkl_panel_file_list, key=lambda name: (
-            int(re.search(match_pattern_in_vertical_direction, name)[0]),
-            re.search(match_pattern_in_horizontal_direction, name)[0],
+            int(re.search(match_pattern_in_vertical_direction, str(name))[0]),
+            re.search(match_pattern_in_horizontal_direction, str(name))[0],
         ))
 
         ## 获取所有实验之索引
         experiments_indices = []
         for filepath in sorted_pkl_panel_file_list:
-            match = re.search(r'exp=(\d+)', filepath)
+            match = re.search(r'exp=(\d+)', str(filepath))
             if match:
                 experiments_indices.append(int(match.group(1)))
             pass  # for
