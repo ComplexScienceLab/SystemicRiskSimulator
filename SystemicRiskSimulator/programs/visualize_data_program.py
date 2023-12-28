@@ -125,7 +125,6 @@ def visualize_data_program(sgv: dict):
         ## NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV格式数据。
         print("导入Pandas格式的实验结果数据转换为面板形式再导出")
 
-        # list_filepath_pkl_BB = glob.glob(str(sgv['folderpath_experiments_output_data'] / 'BB_exp*.pkl'))  # 获取实验组输出数据pkl格式之BB数据之文件列表
         list_filepath_pkl_BB = list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl'))  # 获取实验组输出数据pkl格式之BB数据之文件列表
         for filepath_pkl_BB in list_filepath_pkl_BB:
             df_BB = pd.read_pickle(filepath_pkl_BB)
@@ -162,7 +161,6 @@ def visualize_data_program(sgv: dict):
             df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为csv格式；
             pass  # for
 
-        # list_filepath_pkl_IB = glob.glob(str(sgv['folderpath_experiments_output_data'] / 'IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
         list_filepath_pkl_IB = list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
         for filepath_pkl_IB in list_filepath_pkl_IB:
             df_IB = pd.read_pickle(filepath_pkl_IB)
@@ -247,7 +245,7 @@ def visualize_data_program(sgv: dict):
 
         print("导入面板形式的CSV数据预处理")
 
-        list_filepath_csv_panel = glob.glob(str(sgv['folderpath_plots'] / f'*.csv'))  # 获取实验组输出数据csv格式的文件列表
+        list_filepath_csv_panel = list(sgv['folderpath_plots'].glob('*.csv'))  # 获取实验组输出数据csv格式的文件列表
 
         ## 排序，优先按照银行名称，其次按照时间。
         match_pattern_in_vertical_direction = r'(?<=[IB]B_panel_exp=).+?(?=[(\.csv)])'
@@ -319,7 +317,7 @@ def visualize_data_program(sgv: dict):
 
         print("读取面板形式的PKL格式的文件")
 
-        pkl_panel_file_list = glob.glob(str(sgv['folderpath_plots'] / '*_panel_*.pkl'))  # 获取实验组输出数据pkl格式之文件列表
+        pkl_panel_file_list = list(sgv['folderpath_plots'].glob('*_panel_*.pkl'))  # 获取实验组输出数据pkl格式之文件列表
 
         ## 排序，优先按照银行名称，其次按照时间。
         match_pattern_in_vertical_direction = r'(?<=[IB]B_panel_exp=).+?(?=[(\.pkl)])'
