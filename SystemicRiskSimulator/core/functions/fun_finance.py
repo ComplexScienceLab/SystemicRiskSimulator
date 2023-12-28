@@ -8,8 +8,6 @@ from SystemicRiskSimulator.core.define.define_consts import CONST
 class Finance:
     """
     财务相关的功能。
-
-    TODO 这个可以优化提升时间性能，避免大量的串行的判断语句。例如采用字典值调用函数。
     """
 
     ## NOTE：功能函数集：计算商业银行之资金转移。
@@ -1396,21 +1394,6 @@ class Finance:
             interbank (BankInterbank): 商业银行间市场
 
         """
-
-        # # TODO 将其内容转换成字典便于提升查找速度
-        # # 创建一个字典，映射 by_way 的值到对应的方法
-        # update_methods = {
-        #     'Lo_P': cls.update_by_Lo_P,
-        #     'Li_P': cls.update_by_Li_P,
-        #     # ... 其他的映射 ...
-        # }
-        #
-        # # 使用字典来调用对应的方法
-        # if by_way in update_methods:
-        #     update_methods[by_way](bank, interbank, bankState, interbankState)
-        # else:
-        #     # 处理 by_way 值无效的情况
-        #     pass
 
         ## NOTE：功能函数集：更新商业银行之资金转移。
         if by_way == 'Lo_P':
