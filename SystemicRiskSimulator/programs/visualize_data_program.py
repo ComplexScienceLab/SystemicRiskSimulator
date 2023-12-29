@@ -334,6 +334,13 @@ def visualize_data_program(sgv: dict):
             pass  # for
         experiments_indices = sorted(list(set(experiments_indices)))  # 去重
 
+        ## 获取需要做的实验组之索引
+        if sgv['vis']['list_idsExperiment_to_vis'] is None:
+            experiments_indices_to_vis = experiments_indices
+        else:
+            experiments_indices_to_vis = sgv['vis']['list_idsExperiment_to_vis']
+            pass
+
         pass  # if 读取面板形式的PKL格式的文件
 
     ## NOTE 依次读取面板形式的PKL格式的文件，预处理每次实验
@@ -359,7 +366,7 @@ def visualize_data_program(sgv: dict):
             print("准备拼接资产负债表")
             Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
-        for i_exp in experiments_indices:  # FIXME
+        for i_exp in experiments_indices_to_vis:
             pkl_BB_00 = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
             pkl_IB_00 = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
@@ -635,8 +642,6 @@ def visualize_data_program(sgv: dict):
 
                 print("绘制资金流网络图：实验" + str(i_exp))
 
-                # for i_exp in experiments_indices:
-
                 sgv['vis']['zh_font_family'] = zh_font_family
                 sgv['vis']['en_font_family'] = en_font_family
 
@@ -889,8 +894,6 @@ def visualize_data_program(sgv: dict):
                 # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
 
                 print("绘制资产负债表：实验" + str(i_exp))
-
-                # for i_exp in experiments_indices:
 
                 sgv['vis']['zh_font_family'] = zh_font_family
                 sgv['vis']['en_font_family'] = en_font_family
@@ -1400,8 +1403,6 @@ def visualize_data_program(sgv: dict):
                 # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
 
                 print("拼接资产负债表：实验" + str(i_exp))
-
-                # for i_exp in experiments_indices:
 
                 ## 声明与定义变量
                 match_pattern_of_agent_name = fr"(?<=name=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之个体名称之正则表达式文本
