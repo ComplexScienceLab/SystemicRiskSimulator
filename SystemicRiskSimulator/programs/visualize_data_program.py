@@ -117,12 +117,11 @@ def visualize_data_program(sgv: dict):
     sgv['folderpath_plots_makeup_balanceSheets'] = Path(sgv['folderpath_plots'], sgv['foldername_plots_makeup_balanceSheets'])
     sgv['folderpath_plots_makeup_balanceSheets'].mkdir(parents=True, exist_ok=True)
 
-    # %% [markdown] # NOTE 预处理数据
+    # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV格式数据。
 
     print("执行：")
 
     if (sgv['visulization_process']['导入Pandas格式的实验结果数据转换为面板形式再导出']):
-        ## NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV格式数据。
         print("导入Pandas格式的实验结果数据转换为面板形式再导出")
 
         list_filepath_pkl_BB = list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl'))  # 获取实验组输出数据pkl格式之BB数据之文件列表
@@ -309,10 +308,9 @@ def visualize_data_program(sgv: dict):
 
         pass  # if 导入面板形式的CSV数据预处理
 
-    # %% [markdown] # 导入面板形式的PKL数据预处理
+    # %% [markdown] ##  NOTE 导入面板形式的PKL数据预处理
 
     if (sgv['visulization_process']['读取面板形式的PKL格式的文件']):
-        # ##  NOTE 导入面板形式的PKL数据预处理
         # 依次读取面板形式的PKL格式的文件，预处理每次实验
 
         print("读取面板形式的PKL格式的文件")
