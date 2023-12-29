@@ -2,6 +2,7 @@
 构建机
 """
 
+from SystemicRiskSimulator.external_packages import Path
 from SystemicRiskSimulator.core.define.define_type import SimulatorGlobalVariableType
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
@@ -28,22 +29,23 @@ class Builder:
         ## 导入相关模块（#NOTE 动态导入，严禁删除。如果 IDE 报错，是正常的。因为这个是在程序运行时动态导入。）
         ## 导入模型之初始态实体之数据内容
         import SystemicRiskSimulator.data.models.entities
-        list_entityData = Tools.import_modules_from_package(sgv['folderpath_import_modules'], r"entity_", sgv['folderpath_simulator'])
+        # list_entityData = Tools.import_modules_from_package(sgv['folderpath_import_modules'], r"entity_", sgv['folderpath_simulator'])
+        list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
 
-        ## 导入模型之内容
+        ## 导入模型之内容（#NOTE 动态导入，严禁删除。如果 IDE 报错，是正常的。因为这个是在程序运行时动态导入。）
         import SystemicRiskSimulator.data.models.contents
-        modelContents = Tools.import_modules_from_package(sgv['folderpath_import_modules'], r"content_", sgv['folderpath_simulator'])
+        modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
 
         ## 根据模型实体数据列表之数据，生成相应的模型实体对象，然后组成模型实体列表
         for entityData in list_entityData.values():
             EntityManager.create_entity(entityData=entityData)  # 根据实体数据，创建每个实体
             pass  # for
 
-        ## 补充模型实体之特征
-        for modelEntity in EntityManager.modelEntities.values():
-            if modelEntity.attribute.content_name is None:
-                modelEntity.attribute.content_name = modelEntity.content  # 内容名称`content_name`
-            pass  # for
+        # 补充模型实体之特征
+        # for modelEntity in EntityManager.modelEntities.values():
+        #     if modelEntity.attribute.content_name is None:
+        #         modelEntity.attribute.content_name = modelEntity.content  # 内容名称`content_name`
+        #     pass  # for
 
         ## 生成模型实体之实例（对应一个节点实体）
         for modelEntity in EntityManager.modelEntities.values():
@@ -73,7 +75,11 @@ class Builder:
                     modelEntity.attribute.process_type == {"executive process"} and
                     modelEntity.attribute.content_type == {"model content"}
             ):
+                # modelEntity.execute = dict()
+                # modelEntity.execute['model'] = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
+                # modelEntity.execute['finance'] = modelContents[modelEntity.content]  # 设置执行器之值是具体的模型内容
                 modelEntity.execute = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
+                modelEntity.content = modelContents[modelEntity.content]  # 设置内容器之值是具体的模型相关的功能函数
                 pass  # if
             pass  # for
 

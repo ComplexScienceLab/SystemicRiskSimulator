@@ -1382,7 +1382,7 @@ class Finance:
             - ``alter to Z_IB from A_IB``:  已知``A_{IB}[i,j]``，转换得到``Z_{IB}[i,j]``；
             - ``alter to A_IB from Z_IB``:  已知``Z_{IB}[i,j]``，转换得到``A_{IB}[i,j]``；
 
-        Args:fun_finance.py
+        Args:content_finance.py
             bank (BankCommercial): 商业银行众
             interbank (BankInterbank): 商业银行间市场
             bankState (StateType): 银行之状态
