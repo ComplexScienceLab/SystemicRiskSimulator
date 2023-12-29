@@ -26,14 +26,11 @@ class Builder:
             modelEntities: 模型实体（模型模板实体）列表, modelContents: 模型实体之内容（模型内容）列表
 
         """
-        ## 导入相关模块（#NOTE 动态导入，严禁删除。如果 IDE 报错，是正常的。因为这个是在程序运行时动态导入。）
-        ## 导入模型之初始态实体之数据内容
-        import SystemicRiskSimulator.data.models.entities
-        # list_entityData = Tools.import_modules_from_package(sgv['folderpath_import_modules'], r"entity_", sgv['folderpath_simulator'])
+        ## 导入相关模块
+        ## 导入模型之初始态实体之数据内容（NOTE 动态导入）
         list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
 
-        ## 导入模型之内容（#NOTE 动态导入，严禁删除。如果 IDE 报错，是正常的。因为这个是在程序运行时动态导入。）
-        import SystemicRiskSimulator.data.models.contents
+        ## 导入模型之内容（NOTE 动态导入）
         modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
 
         ## 根据模型实体数据列表之数据，生成相应的模型实体对象，然后组成模型实体列表

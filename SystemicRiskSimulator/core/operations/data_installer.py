@@ -8,7 +8,8 @@ from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 # from SystemicRiskSimulator.core.define.define_parameterVariables import para
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
-from SystemicRiskSimulator.core.functions.fun_finance import Finance
+
+# from SystemicRiskSimulator.core.functions.fun_finance import Finance
 
 pass  # end import
 
@@ -287,18 +288,19 @@ class DataInstaller:
         #     IB,  # 银行间邻接矩阵
         #     ib,  # 银行间邻接矩阵示性变量
         # )
-        cls.initialize_data(A)  # 更新各银行之变量，在第一回合初始时
+
+        # cls.initialize_data(A)  # 更新各银行之变量，在第一回合初始时 #HACK 无用可删除
         return A
         pass  # function
 
-    @classmethod
-    def initialize_data(cls, A):
-        ## 更新各银行之变量，在第一回合初始时
-        # update=sgv['update']
-        # @Executer.execute
-        Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
-        Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有变量，在第一回合开始时
-        return A
-        pass
+    # @classmethod
+    # def initialize_data(cls, A):  #HACK 无用可删除
+    #     ## 更新各银行之变量，在第一回合初始时
+    #     # update=sgv['update']
+    #     # @Executer.execute
+    #     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
+    #     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有变量，在第一回合开始时
+    #     return A
+    #     pass  # function
 
     pass  # class

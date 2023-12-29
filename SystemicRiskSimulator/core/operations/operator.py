@@ -78,7 +78,6 @@ class Operator:
 
         """
 
-
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
         sgv['index_of_schedule_position'] = []
         sgv['round'] = 0
