@@ -95,9 +95,9 @@ class DataInstaller:
             interbank(BankInterbank): 银行间主体众
         """
         bankCommercial: BankCommercial = BankCommercial(
-            id_agent=CONST(sgv['num_bank']).RANGE1.copy(),  # agent 之编号 id
-            abbr=np.full((sgv['num_bank'], 1), ""),  # 缩写 abbr
-            name=np.full((sgv['num_bank'], 1), ""),  # 全名 name
+            id_agent=CONST(sgv['num_bank']).RANGE1.copy() - 1,  # agent 之编号 id
+            abbr=CONST(sgv['num_bank']).BLANK1.copy(),  # 缩写 abbr
+            name=CONST(sgv['num_bank']).BLANK1.copy(),  # 全名 name
             A_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 总资产 A_all: $A_all=A_IB+A_exIB$
             A_IB_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间资产加总 A_IB_all
             A_exIB=CONST(sgv['num_bank']).ZEROS1.copy(),  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
@@ -178,7 +178,7 @@ class DataInstaller:
         )
 
         bankInterbank: BankInterbank = BankInterbank(
-            id_agent=CONST(sgv['num_bank']).RANGE2.copy(),  # agent 之间之关联编号 id
+            id_agent=CONST(sgv['num_bank']).RANGE2 - 1,  # agent 之间之关联编号 id
             A_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间资产邻接矩阵 A_IB
             Z_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间负债邻接矩阵 Z_IB
             Lo_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间贷款流出邻接矩阵 Lo_IB

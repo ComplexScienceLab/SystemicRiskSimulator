@@ -24,8 +24,8 @@ set_bankCommercial_variables = dict(
     ######### 设置模型变量 #########################################
 
     ## 初始化商业银行群 bank_commercial
-    id_agent=CONST(sgv['num_bank']).RANGE1.copy(),  # agent 之编号 id
-    abbr=np.array([str(i) for i in range(1, sgv['num_bank'] + 1)]),  # 缩写 abbr
+    id_agent=CONST(sgv['num_bank']).RANGE1.copy() - 1,  # agent 之编号 id
+    abbr=CONST(sgv['num_bank']).RANGE1.copy(),  # 缩写 abbr
     name=np.array(["Bank_1", "Bank_2", "Bank_3", "Bank_4", "Bank_5"]),  # 全名 name
     A_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 总资产 A_all: $A_all=A_IB+A_exIB$
     A_IB_all=np.array([[2185.24, 398.37, 730.99, 1357.75, 2717.39]]).T,  # 银行间资产加总 A_IB_all
@@ -124,7 +124,7 @@ set_bankCommercial_variables = dict(
 set_bankInterbank_variables = dict(
 
     ## 初始化银行间邻接矩阵 interbank
-    id_agent=CONST(sgv['num_bank']).RANGE2,  # agent 之间之关联编号 id
+    id_agent=CONST(sgv['num_bank']).RANGE2 - 1,  # agent 之间之关联编号 id
     A_IB=np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48], [0, 0, 0, 2717.39, 0]]),  # 银行间资产邻接矩阵 A_IB
     Z_IB=np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48], [0, 0, 0, 2717.39, 0]]).T,  # 银行间负债邻接矩阵 Z_IB
     Lo_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间贷款流出邻接矩阵 Lo_IB
