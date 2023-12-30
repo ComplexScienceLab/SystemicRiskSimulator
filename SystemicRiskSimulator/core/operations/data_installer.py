@@ -271,7 +271,7 @@ class DataInstaller:
         sgv['num_bank'] = len(BB.on)  # 获取 agents 之个体数量
 
         # HACK 后续需要统一这两个变量的用法，防止混乱使用
-        b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置A.BB示性变量
+        b = (BB.on | BB.off)  # 临时设置A.BB示性变量
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
 
         ## 构建Agent模型
