@@ -119,11 +119,11 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     data_banksState_color = [sgv['vis']['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
 
     ### 计算银行关系矩阵数据（包括债权债务关系）
-    data_banksRelation = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'Z_IB'].values.reshape(data_vector1.size, data_vector2.size)
+    data_banksRelation = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
     data_banksRelation_color = np.empty((data_vector1.size, data_vector2.size), dtype=object)
     for i in range(data_banksRelation.shape[0]):
         for j in range(data_banksRelation.shape[1]):
-            data_banksRelation_color[i, j] = sgv['vis']['dict_relation_colors']['cre'] if data_banksRelation[i, j] > 0 else sgv['vis']['dict_relation_colors']['deb']
+            data_banksRelation_color[i, j] = sgv['vis']['dict_relation_colors']['cre'] if data_banksRelation[i, j] > 0 else sgv['vis']['dict_relation_colors']['deb']  # FIXME
             pass  # for
         pass  # for
 
@@ -145,7 +145,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
         vector2_labels_color=data_banksState_color,
         matrix_data=matrix.reshape(data_vector1.size, data_vector2.size),
         matrix_values=data_matrix.reshape(data_vector1.size, data_vector2.size),
-        matrix_labels_color=data_banksRelation,
+        matrix_labels_color=data_banksRelation_color,
         colormap=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color),
     )
 
@@ -175,7 +175,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     import matplotlib.colors as colors
 
     ### 获取、调整该可视化所需要的数据
-    vector1_data, vector1_values, vector1_labels, vector1_labels_color, vector2_data, vector2_values, vector2_labels, vector2_labels_color, matrix_data, matrix_values, matrix_labels_color, color_map = np.flipud(vis_data['vector1_data'].astype(float)), np.flipud(vis_data['vector1_values']), np.flipud(vis_data['vector1_labels']), vis_data['vector1_labels_color'], vis_data['vector2_data'], vis_data['vector2_values'], vis_data['vector2_labels'], vis_data['vector2_labels_color'], np.flipud(vis_data['matrix_data'].astype(float)), np.flipud(vis_data['matrix_values']), vis_data['matrix_labels_color'], vis_data['colormap']
+    vector1_data, vector1_values, vector1_labels, vector1_labels_color, vector2_data, vector2_values, vector2_labels, vector2_labels_color, matrix_data, matrix_values, matrix_labels_color, color_map = np.flipud(vis_data['vector1_data'].astype(float)), np.flipud(vis_data['vector1_values']), np.flipud(vis_data['vector1_labels']), np.flipud(vis_data['vector1_labels_color']), vis_data['vector2_data'], vis_data['vector2_values'], vis_data['vector2_labels'], vis_data['vector2_labels_color'], np.flipud(vis_data['matrix_data'].astype(float)), np.flipud(vis_data['matrix_values']), np.flipud(vis_data['matrix_labels_color']), vis_data['colormap']
 
     # ## 示例数据  #NOTE 仅在测试该功能期间使用
     # matrix_values = np.random.rand(5, 5)
@@ -221,11 +221,12 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_matrix.set_yticklabels([])
     for i in range(matrix_data.shape[0]):  # 在每个方格中添加文本显示值
         for j in range(matrix_data.shape[1]):
+            if i == matrix_data.shape[1] - j:
+                continue
             if matrix_values[i, j] == 0:
-                # continue
-                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='white', fontsize=12, bbox=dict(facecolor=matrix_labels_color, edgecolor='black', boxstyle='round,pad=0.3'))
+                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color=matrix_labels_color[i, j], fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor=matrix_labels_color[i, j], boxstyle='round,pad=0.3'))
             else:
-                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='black', fontsize=12, bbox=dict(facecolor=matrix_labels_color, edgecolor='black', boxstyle='round,pad=0.3'))
+                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor='black', boxstyle='round,pad=0.3'))
                 pass  # if
             pass  # for
         pass  # for
@@ -238,13 +239,13 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_vector1.set_xticks([])
     ax_vector1.set_xticklabels([])
     ax_vector1.set_yticks(np.arange(len(vector1_labels)) + 0.5)
-    ax_vector1.set_yticklabels(vector1_labels, rotation='vertical')
+    ax_vector1.set_yticklabels(vector1_labels, rotation='vertical', fontsize=16)
     for i in range(vector1_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector1_values[i] == 0:
             # continue
-            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='white', fontsize=12, bbox=dict(facecolor=vector1_labels_color, edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='white', fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
         else:
-            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='black', fontsize=12, bbox=dict(facecolor=vector1_labels_color, edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
             pass  # if
         pass  # for
 
@@ -254,16 +255,16 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
 
     ax_vector2.set_title('')
     ax_vector2.set_xticks(np.arange(len(vector2_labels)) + 0.5)
-    ax_vector2.set_xticklabels(vector2_labels)
+    ax_vector2.set_xticklabels(vector2_labels, fontsize=16)
     ax_vector2.xaxis.tick_top()
     ax_vector2.set_yticks([])
     ax_vector2.set_yticklabels([])
     for i in range(vector2_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector2_values[i] == 0:
             # continue
-            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='white', fontsize=12, bbox=dict(facecolor=vector2_labels_color, edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='white', fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
         else:
-            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='black', fontsize=12, bbox=dict(facecolor=vector2_labels_color, edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
             pass  # if
         pass  # for
 
@@ -763,7 +764,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
     svg_balanceSheet.append(
         dw.Text(
             dw_text,
-            font_size=12,
+            font_size=18,
             x=width // 2,
             y=border + title_height // 2,
             text_anchor='middle',
@@ -811,7 +812,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         svg_balanceSheet.append(
             dw.Text(
                 account_data.subject + '\n' + str(round(account_data.value)),
-                font_size=12,
+                font_size=18,
                 x=account_data.position[0] + account_data.size[0] // 2,
                 y=account_data.position[1] + account_data.size[1] // 2,
                 text_anchor='middle',
@@ -827,7 +828,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
             svg_balanceSheet.append(
                 dw.Text(
                     shock_data.subject + '\n' + str(round(shock_data.value)),
-                    font_size=12,
+                    font_size=18,
                     x=shock_data.position[0] + shock_data.size[0] // 3,
                     y=shock_data.position[1] + shock_data.size[1] // 3,
                     fill='blue',
