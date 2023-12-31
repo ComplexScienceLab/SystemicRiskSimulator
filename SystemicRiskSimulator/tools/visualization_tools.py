@@ -221,7 +221,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_matrix.set_yticklabels([])
     for i in range(matrix_data.shape[0]):  # 在每个方格中添加文本显示值
         for j in range(matrix_data.shape[1]):
-            if i == matrix_data.shape[1] - j:
+            if i == matrix_data.shape[1] - 1 - j:
                 continue
             if matrix_values[i, j] == 0:
                 ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color=matrix_labels_color[i, j], fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor=matrix_labels_color[i, j], boxstyle='round,pad=0.3'))
