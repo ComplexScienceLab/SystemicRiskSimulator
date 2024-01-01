@@ -8,10 +8,13 @@ if sgv['need_visualization']:
     import matplotlib.pyplot as plt
     import igraph as ig
     import drawsvg as dw
+    import fitz
+    from svglib.svglib import svg2rlg
+    from reportlab.graphics import renderPDF
 
     pass  # if
 
-from SystemicRiskSimulator.external_packages import pd, np, reduce, Any
+from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re, Path
 from SystemicRiskSimulator.tools.tools import Tools
 
 
@@ -852,4 +855,203 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         pass  # for
 
     return svg_balanceSheet
+    pass  # function
+
+
+def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction: tuple, order_of_paging_in_horizontal_and_vertical_direction: tuple, order_of_match_pattern_in_horizontal_and_vertical_direction: tuple, list_fig_files: list, i_exp: int):
+    """
+    将多个图像拼接、分页到一个 PDF 文件中。 
+
+    Args:
+        order_of_variable_mean_in_horizontal_and_vertical_direction (tuple): 横向与纵向的变量含义之顺序
+        order_of_paging_in_horizontal_and_vertical_direction (tuple): 横向与纵向的分页顺序
+        order_of_match_pattern_in_horizontal_and_vertical_direction (tuple): 横向与纵向的匹配文本之顺序
+        list_fig_files (list): 图像文件列表
+        i_exp (int): 实验索引
+
+    Returns:
+        merged_pdf_file: 合并之后的 PDF 文件
+
+    """
+
+    ## 声明与定义变量
+    num_figure_in_horizontal_direction: Optional[int] = None  # 横向的图片数量
+    num_figure_in_vertical_direction: Optional[int] = None  # 纵向的图片数量
+    max_num_of_figures_in_horizontal_direction_per_page: Optional[int] = None  # 每页横向的最大图片数量
+    max_num_of_figures_in_vertical_direction_per_page: Optional[int] = None  # 每页纵向的最大图片数量
+    match_pattern_in_vertical_direction: Optional[str] = None  # 纵向需要匹配的文本
+    match_pattern_in_horizontal_direction: Optional[str] = None  # 横向需要匹配的文本
+    num_figure_in_horizontal_direction_per_page: Optional[int] = None  # 每页之横向之图片数量
+    num_figure_in_vertical_direction_per_page: Optional[int] = None  # 每页之纵向之图片数量
+    num_figure_in_paging_direction: Optional[int] = None  # 分页方向之图片数量
+    num_figure_in_no_paging_direction: Optional[int] = None  # 不分页方向之图片数量
+    max_num_of_figures_in_paging_direction_per_page: Optional[int] = None  # 每页之分页方向之最大图片数量
+    max_num_of_figures_in_no_paging_direction_per_page: Optional[int] = None  # 每页之不分页方向之最大图片数量
+    match_pattern_in_paging_direction: Optional[str] = None  # 分页方向需要匹配的文本
+    match_pattern_in_no_paging_direction: Optional[str] = None  # 不分页方向需要匹配的文本
+    num_figure_in_paging_direction_per_page: Optional[int] = None  # 每页之分页方向之图片数量
+    num_figure_in_no_paging_direction_per_page: Optional[int] = None  # 每页之不分页方向之图片数量
+    single_plot_size_width: Optional[float] = None  # 单个图之宽度
+    single_plot_size_height: Optional[float] = None  # 单个图之高度
+    single_plot_size_in_paging_direction: Optional[float] = None  # 单个图之在分页方向之尺寸
+    single_plot_size_in_no_paging_direction: Optional[float] = None  # 单个图之在不分页方向之尺寸
+
+    ## 赋值设置项
+    num_figure_in_horizontal_direction, num_figure_in_vertical_direction = order_of_variable_mean_in_horizontal_and_vertical_direction[0], order_of_variable_mean_in_horizontal_and_vertical_direction[1]
+    max_num_of_figures_in_horizontal_direction_per_page, max_num_of_figures_in_vertical_direction_per_page = order_of_paging_in_horizontal_and_vertical_direction[0], order_of_paging_in_horizontal_and_vertical_direction[1]  # `None`表示不限制。
+    match_pattern_in_horizontal_direction, match_pattern_in_vertical_direction = order_of_match_pattern_in_horizontal_and_vertical_direction[0], order_of_match_pattern_in_horizontal_and_vertical_direction[1]
+
+    ## 计算相关的变量
+    # 根据文件类型，获取相关的变量
+    if Path(list_fig_files[0]).suffix == '.pdf':
+        original_file_suffix = 'pdf'
+    elif Path(list_fig_files[0]).suffix == '.svg':
+        original_file_suffix = 'svg'
+    else:
+        raise ValueError('不支持的文件类型！')
+        pass  # if
+
+    if original_file_suffix == 'pdf':
+        single_plot_pdf = fitz.open(list_fig_files[0])
+        single_plot_size_width = single_plot_pdf.load_page(0).rect[2]  # 获取单个图的尺寸（这里所有图的尺寸都是一样的）
+        single_plot_size_height = single_plot_pdf.load_page(0).rect[3]
+        single_plot_pdf.close()
+    elif original_file_suffix == 'svg':
+        single_plot_size_width = svg2rlg(list_fig_files[0]).width  # 获取单个图的尺寸（这里所有图的尺寸都是一样的）
+        single_plot_size_height = svg2rlg(list_fig_files[0]).height
+        pass  # if
+
+    ## 判断分页的方向
+    if max_num_of_figures_in_horizontal_direction_per_page is not None and max_num_of_figures_in_vertical_direction_per_page is None:
+        paging_direction = 'horizontal'
+    elif max_num_of_figures_in_vertical_direction_per_page is not None and max_num_of_figures_in_horizontal_direction_per_page is None:
+        paging_direction = 'vertical'
+    elif max_num_of_figures_in_vertical_direction_per_page is not None and max_num_of_figures_in_horizontal_direction_per_page is not None:
+        paging_direction = 'none'
+    else:
+        raise ValueError('不可以双向都分页！')
+        pass  # if
+
+    ## 根据分页的方向，赋值分页与不分页方向之相关变量
+    if paging_direction == 'horizontal':
+        num_figure_in_paging_direction = num_figure_in_horizontal_direction
+        num_figure_in_no_paging_direction = num_figure_in_vertical_direction
+        max_num_of_figures_in_paging_direction_per_page = max_num_of_figures_in_horizontal_direction_per_page
+        max_num_of_figures_in_no_paging_direction_per_page = max_num_of_figures_in_vertical_direction_per_page
+        match_pattern_in_paging_direction = match_pattern_in_horizontal_direction
+        match_pattern_in_no_paging_direction = match_pattern_in_vertical_direction
+        single_plot_size_in_paging_direction = single_plot_size_width
+        single_plot_size_in_no_paging_direction = single_plot_size_height
+        num_figure_in_paging_direction_per_page = min(num_figure_in_paging_direction, max_num_of_figures_in_paging_direction_per_page) if max_num_of_figures_in_paging_direction_per_page is not None else num_figure_in_paging_direction
+        num_figure_in_no_paging_direction_per_page = min(num_figure_in_no_paging_direction, max_num_of_figures_in_no_paging_direction_per_page) if max_num_of_figures_in_no_paging_direction_per_page is not None else num_figure_in_no_paging_direction
+        num_figure_in_horizontal_direction_per_page = num_figure_in_paging_direction_per_page
+        num_figure_in_vertical_direction_per_page = num_figure_in_no_paging_direction_per_page
+    elif paging_direction == 'vertical':
+        num_figure_in_paging_direction = num_figure_in_vertical_direction
+        num_figure_in_no_paging_direction = num_figure_in_horizontal_direction
+        max_num_of_figures_in_paging_direction_per_page = max_num_of_figures_in_vertical_direction_per_page
+        max_num_of_figures_in_no_paging_direction_per_page = max_num_of_figures_in_horizontal_direction_per_page
+        match_pattern_in_paging_direction = match_pattern_in_vertical_direction
+        match_pattern_in_no_paging_direction = match_pattern_in_horizontal_direction
+        single_plot_size_in_paging_direction = single_plot_size_height
+        single_plot_size_in_no_paging_direction = single_plot_size_width
+        num_figure_in_paging_direction_per_page = min(num_figure_in_paging_direction, max_num_of_figures_in_paging_direction_per_page) if max_num_of_figures_in_paging_direction_per_page is not None else num_figure_in_paging_direction
+        num_figure_in_no_paging_direction_per_page = min(num_figure_in_no_paging_direction, max_num_of_figures_in_no_paging_direction_per_page) if max_num_of_figures_in_no_paging_direction_per_page is not None else num_figure_in_no_paging_direction
+        num_figure_in_horizontal_direction_per_page = num_figure_in_no_paging_direction_per_page
+        num_figure_in_vertical_direction_per_page = num_figure_in_paging_direction_per_page
+    elif paging_direction == 'none':  # 如果不分页，那么默认按照纵向分页的情况处理
+        num_figure_in_paging_direction = num_figure_in_vertical_direction
+        num_figure_in_no_paging_direction = num_figure_in_horizontal_direction
+        max_num_of_figures_in_paging_direction_per_page = max_num_of_figures_in_vertical_direction_per_page
+        max_num_of_figures_in_no_paging_direction_per_page = max_num_of_figures_in_horizontal_direction_per_page
+        match_pattern_in_paging_direction = match_pattern_in_vertical_direction
+        match_pattern_in_no_paging_direction = match_pattern_in_horizontal_direction
+        single_plot_size_in_paging_direction = single_plot_size_height
+        single_plot_size_in_no_paging_direction = single_plot_size_width
+        num_figure_in_paging_direction_per_page = min(num_figure_in_paging_direction, max_num_of_figures_in_paging_direction_per_page) if max_num_of_figures_in_paging_direction_per_page is not None else num_figure_in_paging_direction
+        num_figure_in_no_paging_direction_per_page = min(num_figure_in_no_paging_direction, max_num_of_figures_in_no_paging_direction_per_page) if max_num_of_figures_in_no_paging_direction_per_page is not None else num_figure_in_no_paging_direction
+        num_figure_in_horizontal_direction_per_page = num_figure_in_no_paging_direction_per_page
+        num_figure_in_vertical_direction_per_page = num_figure_in_paging_direction_per_page
+        pass  # if
+
+    total_figures_per_page = num_figure_in_horizontal_direction_per_page * num_figure_in_vertical_direction_per_page  # 每页最大总图数
+    num_pages = int(np.ceil(len(list_fig_files) / total_figures_per_page))  # 最大总页数
+
+    ## 排序，优先按照需要分页的方向，其次按照不需要分页的方向。
+    sorted_pkl_panel_file_list = sorted(list_fig_files, key=lambda name: (
+        re.search(match_pattern_in_paging_direction, name)[0] if not re.search(match_pattern_in_paging_direction, name)[0].isdigit() else int(re.search(match_pattern_in_paging_direction, name)[0]),
+        re.search(match_pattern_in_no_paging_direction, name)[0] if not re.search(match_pattern_in_no_paging_direction, name)[0].isdigit() else int(re.search(match_pattern_in_no_paging_direction, name)[0]),
+    ))
+
+    ## 分页处理
+    merged_pdf = fitz.open()  # 新建需要合并的pdf
+    for page_idx in range(num_pages):
+
+        ## 创建一个新的分页
+        merged_pdf_page = merged_pdf.new_page(
+            # -1, # 这里不需要指定页码，fitz会自动分配
+            width=single_plot_size_width * num_figure_in_horizontal_direction_per_page,
+            height=single_plot_size_height * num_figure_in_vertical_direction_per_page,
+        )
+
+        ## 对于该新的分页，逐个导入单幅pdf，临时装订pdf
+        binded_pdf = fitz.open()  # 创建一个空白pdf用于装订单幅pdf
+        for i in range(total_figures_per_page):
+            idx = page_idx * total_figures_per_page + i
+            if idx >= len(list_fig_files):
+                break
+            filepath = sorted_pkl_panel_file_list[idx]
+            if original_file_suffix == 'svg':
+                svg_file = svg2rlg(filepath)
+                renderPDF.drawToFile(svg_file, filepath.split('.')[0] + '.pdf')
+                single_pdf_file = fitz.open(filepath.split('.')[0] + '.pdf')
+            elif original_file_suffix == 'pdf':
+                single_pdf_file = fitz.open(filepath)
+                pass  # if
+            binded_pdf.insert_pdf(single_pdf_file)
+            single_pdf_file.close()
+            pass  # for
+
+        ## 设置装订的pdf之每个图在该新的分页之位置
+        page_content_positions = []
+        for i in range(num_figure_in_paging_direction_per_page):
+            if (
+                    paging_direction != 'none'  # 如果是存在分页的情况
+                    and page_idx == num_pages - 1  # 如果是最后一页
+                    and num_figure_in_paging_direction % num_figure_in_paging_direction_per_page != 0  # 如果最后一页不是满页的情况
+                    and i >= num_figure_in_paging_direction % num_figure_in_paging_direction_per_page  # 如果该索引处于空行或者空列
+            ):
+                break  # 需要分页方向跳过最后一页的空行或者空列
+                pass  # if
+            for j in range(num_figure_in_no_paging_direction_per_page):
+                if paging_direction == 'horizontal':
+                    page_content_positions.append(
+                        fitz.Rect(single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * (i + 1), single_plot_size_in_no_paging_direction * (j + 1))
+                    )
+                elif paging_direction == 'vertical':
+                    page_content_positions.append(
+                        fitz.Rect(single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * (j + 1), single_plot_size_in_paging_direction * (i + 1))
+                    )
+                elif paging_direction == 'none':
+                    page_content_positions.append(
+                        fitz.Rect(single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * (j + 1), single_plot_size_in_paging_direction * (i + 1))
+                    )
+                    pass  # if
+                pass  # for
+            pass  # for
+
+        ## 将装订的pdf之每个图放到该新的分页之对应的位置
+        for i_fig, page in enumerate(binded_pdf):
+            merged_pdf_page.show_pdf_page(page_content_positions[i_fig], binded_pdf, page.number)
+            pass  # for
+
+        binded_pdf.close()
+        pass  # for
+
+    return merged_pdf
+
+    # ## 保存
+    # merged_pdf.save(Path(sgv['folderpath_plots_makeup_heatmaps'], 'IB_exp=' + str(i_exp) + '.pdf'))
+    # merged_pdf.close()
+
     pass  # function
