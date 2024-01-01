@@ -218,33 +218,34 @@ class Tools:
         pass  # function
 
     @classmethod
-    def set_foldername_experiments(cls, foldername_prefix_experiments: str, is_datetime: bool, type_of_experiments_foldername: str):
+    def set_foldername_experiments(cls, foldername_prefix_experiments: str, foldername_set_manually: str, is_datetime: bool, type_of_experiments_foldername: str):
         """
         设定实验文件夹名称。
 
         Args:
-            foldername_prefix_experiments (str): 实验文件夹前缀名称。默认"default"；
+            foldername_prefix_experiments (str): 实验文件夹前缀名称。默认"default"。用于 `type_of_experiments_foldername=r"default"`；；
+            foldername_set_manually (str): 手动设置生成的实验文件夹全名。用于 `type_of_experiments_foldername=r"set manually"`；
             is_datetime (bool): 是否使用日期时间字符串。默认True；
-            type_of_experiments_foldername (str): 实验文件夹名称类型。取值："default"、"set manually"。默认"set manually"；
+            type_of_experiments_foldername (str): 实验文件夹名称类型。取值："default"、"set manually"。默认"default"；
 
         Returns:
 
         """
 
         ## 设定实验结果导出文件夹
-        if is_datetime is True:  # 设定日期时间字符串
-            str_datetime = "_" + time.strftime("%Y%m%d%H%M%S")
-        else:
-            str_datetime = ""
-            pass
         if type_of_experiments_foldername == "default":  # 设定前缀字符串
-            str_manuallyName = "default"
-        elif type_of_experiments_foldername == "set manually":
             str_manuallyName = foldername_prefix_experiments
+            if is_datetime is True:  # 设定日期时间字符串
+                str_datetime = "_" + time.strftime("%Y%m%d%H%M%S")
+            else:
+                str_datetime = ""
+                pass  # if
+            foldername_experiments = str_manuallyName + str_datetime
+        elif type_of_experiments_foldername == "set manually":
+            foldername_experiments = foldername_set_manually
         else:
             raise Exception("关键词取值错误！".format(type_of_experiments_foldername))
             pass  # if
-        foldername_experiments = str_manuallyName + str_datetime
         return foldername_experiments
 
     @classmethod

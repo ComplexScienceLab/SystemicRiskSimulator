@@ -32,7 +32,7 @@ def simulator(config: dict):
 
     ## 设置相关的实验文件夹名称
     if sgv['schedule_operation']['实验组模拟程序'] is True:
-        sgv['foldername_experiments'] = Tools.set_foldername_experiments(sgv['foldername_prefix_experiments'], sgv['is_datetime'], sgv['type_of_experiments_foldername'])
+        sgv['foldername_experiments'] = Tools.set_foldername_experiments(sgv['foldername_prefix_experiments'], sgv['foldername_set_manually'], sgv['is_datetime'], sgv['type_of_experiments_foldername'])
         pass  # if
 
     ## 生成实验相关的文件夹用于本批次运作
