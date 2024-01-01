@@ -490,7 +490,7 @@ def visualize_data_program(sgv: dict):
 
                 ### #NOTE 这组配置表示按照数据类别横向，按照时间纵向。这里每页轴向的最大图片数量只能设置最多单个轴的，不能同时设置两个轴的，否则运行结果可能会错乱。
                 order_of_variable_mean_in_horizontal_and_vertical_direction = [num_dataTypes_for_heatmap_figs, sgv['vis']['num_time']]
-                order_of_paging_in_horizontal_and_vertical_direction = [None, 6]
+                order_of_paging_in_horizontal_and_vertical_direction = [None, 1]
                 order_of_match_pattern_in_horizontal_and_vertical_direction = [match_pattern_of_data_name, match_pattern_of_name_time]
 
                 ## 赋值设置项
@@ -746,7 +746,7 @@ def visualize_data_program(sgv: dict):
 
                 ### #NOTE 这组配置表示按照数据类别横向，按照时间纵向。这里每页轴向的最大图片数量只能设置最多单个轴的，不能同时设置两个轴的，否则运行结果可能会错乱。
                 order_of_variable_mean_in_horizontal_and_vertical_direction = [num_dataTypes_for_graph_figs, sgv['vis']['num_time']]
-                order_of_paging_in_horizontal_and_vertical_direction = [None, 6]
+                order_of_paging_in_horizontal_and_vertical_direction = [None, 1]
                 order_of_match_pattern_in_horizontal_and_vertical_direction = [match_pattern_of_data_name, match_pattern_of_name_time]
 
                 ## 赋值设置项
@@ -1437,7 +1437,7 @@ def visualize_data_program(sgv: dict):
 
                 ### #NOTE 这组配置表示按照银行横向，按照时间纵向。这里每页轴向的最大图片数量只能设置最多单个轴的，不能同时设置两个轴的，否则运行结果可能会错乱。
                 order_of_variable_mean_in_horizontal_and_vertical_direction = [sgv['vis']['num_items_in_a_time_in_BB'], sgv['vis']['num_time']]
-                order_of_paging_in_horizontal_and_vertical_direction = [None, 6]
+                order_of_paging_in_horizontal_and_vertical_direction = [None, 1]
                 order_of_match_pattern_in_horizontal_and_vertical_direction = [match_pattern_of_agent_name, match_pattern_of_name_time]
 
                 ## 赋值设置项
