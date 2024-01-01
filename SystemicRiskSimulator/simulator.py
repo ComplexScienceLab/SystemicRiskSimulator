@@ -32,7 +32,7 @@ def simulator(config: dict):
 
     ## 设置相关的实验文件夹名称
     if sgv['schedule_operation']['实验组模拟程序'] is True:
-        sgv['foldername_experiments'] = Tools.set_foldername_experiments(sgv['foldername_prefix_experiments'], sgv['is_datetime'], sgv['type_of_experiments_foldername'])
+        sgv['foldername_experiments'] = Tools.set_foldername_experiments(sgv['foldername_prefix_experiments'], sgv['foldername_set_manually'], sgv['is_datetime'], sgv['type_of_experiments_foldername'])
         pass  # if
 
     ## 生成实验相关的文件夹用于本批次运作
@@ -85,11 +85,17 @@ def simulator(config: dict):
         ## 设置日志
         logger = logging.getLogger()
         logger.setLevel(sgv['test_logging'])
+        if Path(sgv['folderpath_experiments_output_log'], "outputlog.txt").exists():
+            os.remove(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))  # 如果原来的日志存在，那么就删除重建
+            pass  # if
         log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
         logger.addHandler(log_file_handler)
         log_console_handler = logging.StreamHandler()
         logger.addHandler(log_console_handler)
 
+        if sgv['is_develope_model']:
+            logging.info("\n------------ 开发与调试模式！ ---------------\n")
+            pass  # if
         logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
         logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
         logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
