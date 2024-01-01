@@ -662,14 +662,24 @@ def visualize_data_program(sgv: dict):
                             edge_width=5,
                         ),
                         dict(
-                            edge_type='Shock_IB_run_ilq',
+                            edge_type='Shock_IB_def',
                             edge_color='#FF0000',
-                            edge_width=3,
+                            edge_width=5,
+                        ),
+                        dict(
+                            edge_type='Shock_IB_run_ilq',
+                            edge_color='#0000FF',
+                            edge_width=5,
+                        ),
+                        dict(
+                            edge_type='Shock_IB_run_br',
+                            edge_color='#ED00FF',
+                            edge_width=5,
                         ),
                         dict(
                             edge_type='Bo_IB',
                             edge_color='#E7C300',
-                            edge_width=1,
+                            edge_width=5,
                         ),
                     ]
 

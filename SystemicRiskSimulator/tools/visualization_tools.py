@@ -207,26 +207,21 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
 
     ## 创建 Figure、GridSpec
     fig = plt.figure(figsize=(width, height), dpi=dpi)
-    gs = gridspec.GridSpec(2, 2, width_ratios=[1, vector2_data.size], height_ratios=[1, vector1_data.size])
+    gs = gridspec.GridSpec(3, 3, width_ratios=[1, vector2_data.size, 0.5], height_ratios=[0.5, 1, vector1_data.size])
 
     ## 添加标题与相关的信息
-    ax_info = fig.add_subplot(gs[0, 0])
-    [spine.set_visible(False) for spine in ax_info.spines.values()]
+    ax_info = fig.add_subplot(gs[0, :])  # 创建一个新的子图，覆盖整个图像的顶部
+    ax_info.axis('off')
     if sgv_vis['time_granularity'] == '步进粒度':
-        dw_text = f"{sgv_vis['data_name'][2]}\n{sgv_vis['process_name']}\ns={str(sgv_vis['step'])}\nr={str(sgv_vis['round'])}\np={str(sgv_vis['phase'])}"
+        dw_text = f"{sgv_vis['data_name'][2]}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}    s = {str(sgv_vis['step'])}    p = {str(sgv_vis['phase'])}"
     elif sgv_vis['time_granularity'] == '轮次粒度':
-        dw_text = f"{sgv_vis['data_name'][2]}\n{sgv_vis['process_name']}\nr={str(sgv_vis['round'])}"  # TODO 未测试
+        dw_text = f"{sgv_vis['data_name'][2]}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
-        pass  # if
-    ax_info.text(0, 1, dw_text, ha='left', va='top', color='black', fontsize=18)
-    ax_info.set_xticks([])
-    ax_info.set_xticklabels([])
-    ax_info.set_yticks([])
-    ax_info.set_yticklabels([])
+    ax_info.text(0.5, 1.0, dw_text, ha='center', va='center', color='black', fontsize=24)  # 在子图的中心添加文本
 
     ## 绘制矩阵热图
-    ax_matrix = fig.add_subplot(gs[1, 1])
+    ax_matrix = fig.add_subplot(gs[2, 1])
     im_matrix = ax_matrix.pcolormesh(matrix_data.astype(float), cmap=cmap, edgecolors='black', linewidths=0.1, vmin=0, vmax=1)
 
     ax_matrix.set_title('')
@@ -247,7 +242,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
         pass  # for
 
     ## 绘制向量1的热图
-    ax_vector1 = fig.add_subplot(gs[1, 0])
+    ax_vector1 = fig.add_subplot(gs[2, 0])
     ax_vector1.pcolormesh(vector1_data[:, np.newaxis].astype(float), cmap=cmap, edgecolors='black', linewidths=0.1, vmin=0, vmax=1)
 
     ax_vector1.set_title('')
@@ -265,7 +260,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
         pass  # for
 
     ## 绘制向量2的热图
-    ax_vector2 = fig.add_subplot(gs[0, 1])
+    ax_vector2 = fig.add_subplot(gs[1, 1])
     ax_vector2.pcolormesh(vector2_data[np.newaxis, :].astype(float), cmap=cmap, edgecolors='black', linewidths=0.1, vmin=0, vmax=1)
 
     ax_vector2.set_title('')
@@ -284,7 +279,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
         pass  # for
 
     ## 在热图的右侧手动添加颜色条
-    cbar_ax = fig.add_axes([0.92, 0.15, 0.02, 0.7])
+    cbar_ax = fig.add_axes([0.875, 0.1, 0.03, 0.7])
     cbar = fig.colorbar(im_matrix, cax=cbar_ax)
     ticks_cbar = Tools.MinMaxScaler(np.linspace(color_map[0], color_map[2], 10), (0, 1))
     labels_cbar = [f'{tick:.0f}' for tick in np.linspace(color_map[0], color_map[2], 10)]
@@ -503,9 +498,9 @@ def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 
 
     ## 绘制标题
     if sgv_vis['time_granularity'] == '步进粒度':
-        dw_text = rf"{sgv_vis['data_name']}    {sgv_vis['process_name']}    s={str(sgv_vis['step'])}    r={str(sgv_vis['round'])}    p={str(sgv_vis['phase'])}"
+        dw_text = rf"{sgv_vis['data_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}    s = {str(sgv_vis['step'])}    p = {str(sgv_vis['phase'])}"
     elif sgv_vis['time_granularity'] == '轮次粒度':
-        dw_text = rf"{sgv_vis['data_name']}    {sgv_vis['process_name']}    r={str(sgv_vis['round'])}"  # DEBUG 未测试
+        dw_text = rf"{sgv_vis['data_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -600,8 +595,8 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
         is_value_changed = False if np.isclose(df_accounts_data.loc[account_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
-            df_accounts_data.loc[account_data.Index, 'stroke_color'] = '#B7B700'
-            df_accounts_data.loc[account_data.Index, 'stroke_width'] = 4
+            df_accounts_data.loc[account_data.Index, 'stroke_color'] = '#000000'
+            df_accounts_data.loc[account_data.Index, 'stroke_width'] = 6
             pass  # if
         pass  # for
 
@@ -692,8 +687,8 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), shock_data.subject].values[0]
         is_value_changed = False if np.isclose(df_shocks_data.loc[shock_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
-            df_shocks_data.loc[shock_data.Index, 'stroke_color'] = '#B7B700'
-            df_shocks_data.loc[shock_data.Index, 'stroke_width'] = 3
+            df_shocks_data.loc[shock_data.Index, 'stroke_color'] = '#000000'
+            df_shocks_data.loc[shock_data.Index, 'stroke_width'] = 6
             pass  # if
 
         account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == shock_data.side) & (df_accounts_data['level'] == shock_data.level) & (df_accounts_data['subject'] == shock_data.align), 'subject'].idxmax()
@@ -769,9 +764,9 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制标题
     if sgv_vis['time_granularity'] == '步进粒度':
-        dw_text = rf"{sgv_vis['bank_name']}    {sgv_vis['process_name']}    s={str(sgv_vis['step'])}    r={str(sgv_vis['round'])}    p={str(sgv_vis['phase'])}"
+        dw_text = rf"{sgv_vis['bank_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}    s = {str(sgv_vis['step'])}    p = {str(sgv_vis['phase'])}"
     elif sgv_vis['time_granularity'] == '轮次粒度':
-        dw_text = rf"{sgv_vis['bank_name']}    {sgv_vis['process_name']}    r={str(sgv_vis['round'])}"  # DEBUG 未测试
+        dw_text = rf"{sgv_vis['bank_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
