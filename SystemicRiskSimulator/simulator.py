@@ -93,6 +93,9 @@ def simulator(config: dict):
         log_console_handler = logging.StreamHandler()
         logger.addHandler(log_console_handler)
 
+        if sgv['is_develope_model']:
+            logging.info("\n------------ 开发与调试模式！ ---------------\n")
+            pass  # if
         logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
         logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
         logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
