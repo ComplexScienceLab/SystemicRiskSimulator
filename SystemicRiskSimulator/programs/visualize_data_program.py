@@ -438,7 +438,7 @@ def visualize_data_program(sgv: dict):
                         sgv['vis']['round'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['round'].values[0]
                         sgv['vis']['phase'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['phase'].values[0]
                         ## 获取相关的节点与边信息
-                        data_vis_one_time_heatmap = generate_one_interbank_matrix_heatmaps_data_info(df_BB_panel, df_IB_panel, df_data_types['colormap'].values[i], t, sgv['vis']['data_name'], sgv['vis'])
+                        data_vis_one_time_heatmap = generate_one_interbank_matrix_heatmaps_data_info(df_BB_panel, df_IB_panel, df_data_types['colormap'].values[i], df_data_types['relations'].values[i], t, sgv['vis']['data_name'], sgv['vis'])
                         ## 用 matplotlib 绘制
                         fig_heatmap = draw_one_interbank_matrix_heatmaps(data_vis_one_time_heatmap, sgv['vis'])
                         fig_heatmap.savefig(Path(sgv['folderpath_plots_single_heatmaps'], 'IB_exp=' + str(i_exp) + '+data=' + sgv['vis']['data_name'][2] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存

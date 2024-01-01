@@ -15,7 +15,7 @@ from SystemicRiskSimulator.external_packages import pd, np, reduce, Any
 from SystemicRiskSimulator.tools.tools import Tools
 
 
-def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, colormap: tuple, time: int, dataName: tuple, sgv_vis: dict):
+def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, colormap: tuple, relations: str, time: int, dataName: tuple, sgv_vis: dict):
     """
     生成矩阵热图相关的数据信息。
 
@@ -23,6 +23,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
         df_BB (pd.DataFrame): 银行数据框
         df_IB (pd.DataFrame): 银行间数据框
         colormap (tuple): 颜色映射元组（包括最小数值对应的颜色、最大数值对应的颜色）
+        relations (str): 需要绘制的银行间关系
         time (int): 时间
         dataName (tuple): 数据类型名称元组（包括竖向的向量1、横向的向量2、矩阵之名称）
         sgv_vis (dict): 模拟器全局变量
@@ -119,11 +120,25 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     data_banksState_color = [sgv['vis']['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
 
     ### 计算银行关系矩阵数据（包括债权债务关系）
-    data_banksRelation = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
-    data_banksRelation_color = np.empty((data_vector1.size, data_vector2.size), dtype=object)
-    for i in range(data_banksRelation.shape[0]):
-        for j in range(data_banksRelation.shape[1]):
-            data_banksRelation_color[i, j] = sgv['vis']['dict_relation_colors']['cre'] if data_banksRelation[i, j] > 0 else sgv['vis']['dict_relation_colors']['deb']  # FIXME
+    data_A_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
+    data_debtors = data_A_IB > 0.0
+    data_Z_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'Z_IB'].values.reshape(data_vector1.size, data_vector2.size)
+    data_creditors = data_Z_IB > 0.0
+    data_banksRelation = None
+    relation_color = ''
+    data_banksRelation_color = np.full((data_vector1.size, data_vector2.size), '#FFFFFF', dtype=object)
+    if relations == 'cre':
+        data_banksRelation = data_creditors
+        relation_color = sgv['vis']['dict_relation_colors']['cre']
+    elif relations == 'deb':
+        data_banksRelation = data_debtors
+        relation_color = sgv['vis']['dict_relation_colors']['deb']
+        pass  # if
+    for i in range(data_banksRelation_color.shape[0]):
+        for j in range(data_banksRelation_color.shape[1]):
+            if data_banksRelation[i, j] > 0:
+                data_banksRelation_color[i, j] = relation_color
+                pass  # if
             pass  # for
         pass  # for
 
@@ -243,7 +258,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     for i in range(vector1_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector1_values[i] == 0:
             # continue
-            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='white', fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color=vector1_labels_color[i], fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor=vector1_labels_color[i], boxstyle='round,pad=0.3'))
         else:
             ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
             pass  # if
@@ -262,7 +277,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     for i in range(vector2_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector2_values[i] == 0:
             # continue
-            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='white', fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color=vector2_labels_color[i], fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor=vector2_labels_color[i], boxstyle='round,pad=0.3'))
         else:
             ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
             pass  # if
