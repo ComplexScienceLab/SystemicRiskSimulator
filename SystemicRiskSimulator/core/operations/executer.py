@@ -6,8 +6,6 @@ from SystemicRiskSimulator.external_packages import logging
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_entity import Entity
-from SystemicRiskSimulator.core.functions.fun_finance import Finance
-from SystemicRiskSimulator.core.operations.collector import Collector
 
 pass  # end import
 
@@ -19,25 +17,29 @@ class Executer:
 
     ## NOTE：执行一次步进更新。
     @classmethod
-    def step_update(cls, update_way: str, A: SystemicRiskAgent, para: dict, sgv: dict):
+    def step_update(cls, function, update_way: str, A: SystemicRiskAgent, para: dict, sgv: dict):
         """
         执行一次步进更新
 
-        更新方式具体见：`Finance.update_finance_variables` 对应的[文档](SystemicRiskSimulator/core/functions/fun_finance.py)。
+        更新方式具体见：`Finance.update_finance_variables` 对应的[文档](SystemicRiskSimulator/core/functions/content_finance.py)。
 
         Args:
             update_way (str): 更新方式
             A (SystemicRiskAgent): 多主体
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
+            function (function): 相关的需要步进更新的功能函数
 
         Returns:
             sgv (dict): 模拟器全局变量
 
         """
+        # from SystemicRiskSimulator.data.models.contents.content_finance import Finance
+        from SystemicRiskSimulator.core.operations.collector import Collector
 
         logging.debug(f"               步进：{sgv['step']}，相：{sgv['phase']}，更新源：{update_way}")
-        Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
+        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
+        function.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         sgv['A_data'] = Collector.collect_agent_data(A, sgv['A_data'], sgv)
 
         sgv['step'] += 1  # 步进加一

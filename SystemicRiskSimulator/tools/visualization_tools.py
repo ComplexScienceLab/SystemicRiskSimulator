@@ -15,7 +15,7 @@ from SystemicRiskSimulator.external_packages import pd, np, reduce, Any
 from SystemicRiskSimulator.tools.tools import Tools
 
 
-def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, colormap: tuple, time: int, dataName: tuple, sgv_vis: dict):
+def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, colormap: tuple, relations: str, time: int, dataName: tuple, sgv_vis: dict):
     """
     生成矩阵热图相关的数据信息。
 
@@ -23,6 +23,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
         df_BB (pd.DataFrame): 银行数据框
         df_IB (pd.DataFrame): 银行间数据框
         colormap (tuple): 颜色映射元组（包括最小数值对应的颜色、最大数值对应的颜色）
+        relations (str): 需要绘制的银行间关系
         time (int): 时间
         dataName (tuple): 数据类型名称元组（包括竖向的向量1、横向的向量2、矩阵之名称）
         sgv_vis (dict): 模拟器全局变量
@@ -53,31 +54,31 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     data_vector2 = df_BB[df_BB[sgv_vis['name_time']] == time][dataName_vector2].values  # 向量2之数据
     data_matrix = df_IB.loc[df_IB[sgv_vis['name_time']] == time, dataName_matrix].values  # 矩阵之数据
 
-    # banks_hel = df_BB[df_BB[sgv_vis['name_time']] == time]['hel']  # 银行状态数据
-    # banks_isv = df_BB[df_BB[sgv_vis['name_time']] == time]['isv']
-    # banks_ilq = df_BB[df_BB[sgv_vis['name_time']] == time]['ilq']
-    # # banks_nrr = df_BB[df_BB[sgv_vis['name_time']] == time]['-rr']  #TODO 后续添加新状态
-    # banks_br = df_BB[df_BB[sgv_vis['name_time']] == time]['br']
-    # banks_off = df_BB[df_BB[sgv_vis['name_time']] == time]['off']
-    #
-    # list_data_banksState = []  # 银行状态数据
-    # for i in range(len(data_banksId)):
-    #     list_data_banksState.append(set())
-    #     if banks_hel[i]:
-    #         list_data_banksState[i].add('hel')
-    #     elif banks_off[i]:
-    #         list_data_banksState[i].add('off')
-    #     elif banks_isv[i]:
-    #         list_data_banksState[i].add('isv')
-    #     elif banks_ilq[i]:
-    #         list_data_banksState[i].add('ilq')
-    #     elif banks_br[i]:
-    #         list_data_banksState[i].add('br')
-    #     else:
-    #         print('位于节点' + str(i))
-    #         raise Exception("判断 i 之状态错误".format(str(i)))
-    #         pass  # for
-    #
+    banks_hel = df_BB[df_BB[sgv_vis['name_time']] == time]['hel'].values  # 银行状态数据
+    banks_isv = df_BB[df_BB[sgv_vis['name_time']] == time]['isv'].values
+    banks_ilq = df_BB[df_BB[sgv_vis['name_time']] == time]['ilq'].values
+    # banks_nrr = df_BB[df_BB[sgv_vis['name_time']] == time]['-rr'].values  #TODO 后续添加新状态
+    banks_br = df_BB[df_BB[sgv_vis['name_time']] == time]['br'].values
+    banks_off = df_BB[df_BB[sgv_vis['name_time']] == time]['off'].values
+
+    ### 银行状态数据
+    list_data_banksState = []
+    for i in range(len(data_banksId)):
+        list_data_banksState.append(set())
+        if banks_hel[i]:
+            list_data_banksState[i].add('hel')
+        elif banks_off[i]:
+            list_data_banksState[i].add('off')
+        elif banks_isv[i]:
+            list_data_banksState[i].add('isv')
+        elif banks_ilq[i]:
+            list_data_banksState[i].add('ilq')
+        elif banks_br[i]:
+            list_data_banksState[i].add('br')
+        else:
+            print('位于节点' + str(i))
+            raise Exception("判断 i 之状态错误".format(str(i)))
+            pass  # for
 
     ## 生成相关的数据之可视化信息
 
@@ -115,6 +116,32 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     ).astype(float)
     matrix[np.isclose(matrix, 0.0, atol=1e-4)] = 0.0
 
+    ### 获取银行状态数据之颜色
+    data_banksState_color = [sgv['vis']['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
+
+    ### 计算银行关系矩阵数据（包括债权债务关系）
+    data_A_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
+    data_debtors = data_A_IB > 0.0
+    data_Z_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'Z_IB'].values.reshape(data_vector1.size, data_vector2.size)
+    data_creditors = data_Z_IB > 0.0
+    data_banksRelation = None
+    relation_color = ''
+    data_banksRelation_color = np.full((data_vector1.size, data_vector2.size), '#FFFFFF', dtype=object)
+    if relations == 'cre':
+        data_banksRelation = data_creditors
+        relation_color = sgv['vis']['dict_relation_colors']['cre']
+    elif relations == 'deb':
+        data_banksRelation = data_debtors
+        relation_color = sgv['vis']['dict_relation_colors']['deb']
+        pass  # if
+    for i in range(data_banksRelation_color.shape[0]):
+        for j in range(data_banksRelation_color.shape[1]):
+            if data_banksRelation[i, j] > 0:
+                data_banksRelation_color[i, j] = relation_color
+                pass  # if
+            pass  # for
+        pass  # for
+
     ### 生成颜色映射信息
     colormap_min_value = sgv_vis['min_BB_value_in_all_panel']
     colormap_min_color = colormap[0]
@@ -126,12 +153,15 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
         vector1_data=vector1,
         vector1_values=data_vector1,
         vector1_labels=data_banksName,
+        vector1_labels_color=data_banksState_color,
         vector2_data=vector2,
         vector2_values=data_vector2,
         vector2_labels=data_banksName,
+        vector2_labels_color=data_banksState_color,
         matrix_data=matrix.reshape(data_vector1.size, data_vector2.size),
         matrix_values=data_matrix.reshape(data_vector1.size, data_vector2.size),
-        colormap=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color)
+        matrix_labels_color=data_banksRelation_color,
+        colormap=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color),
     )
 
     return data
@@ -160,7 +190,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     import matplotlib.colors as colors
 
     ### 获取、调整该可视化所需要的数据
-    vector1_data, vector1_values, vector1_labels, vector2_data, vector2_values, vector2_labels, matrix_data, matrix_values, color_map = np.flipud(vis_data['vector1_data'].astype(float)), np.flipud(vis_data['vector1_values']), np.flipud(vis_data['vector1_labels']), vis_data['vector2_data'], vis_data['vector2_values'], vis_data['vector2_labels'], np.flipud(vis_data['matrix_data'].astype(float)), np.flipud(vis_data['matrix_values']), vis_data['colormap']
+    vector1_data, vector1_values, vector1_labels, vector1_labels_color, vector2_data, vector2_values, vector2_labels, vector2_labels_color, matrix_data, matrix_values, matrix_labels_color, color_map = np.flipud(vis_data['vector1_data'].astype(float)), np.flipud(vis_data['vector1_values']), np.flipud(vis_data['vector1_labels']), np.flipud(vis_data['vector1_labels_color']), vis_data['vector2_data'], vis_data['vector2_values'], vis_data['vector2_labels'], vis_data['vector2_labels_color'], np.flipud(vis_data['matrix_data'].astype(float)), np.flipud(vis_data['matrix_values']), np.flipud(vis_data['matrix_labels_color']), vis_data['colormap']
 
     # ## 示例数据  #NOTE 仅在测试该功能期间使用
     # matrix_values = np.random.rand(5, 5)
@@ -206,9 +236,13 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_matrix.set_yticklabels([])
     for i in range(matrix_data.shape[0]):  # 在每个方格中添加文本显示值
         for j in range(matrix_data.shape[1]):
-            if matrix_values[i, j] == 0:
+            if i == matrix_data.shape[1] - 1 - j:
                 continue
-            ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='white', fontsize=12, bbox=dict(facecolor='black', edgecolor='black', boxstyle='round,pad=0.3'))
+            if matrix_values[i, j] == 0:
+                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color=matrix_labels_color[i, j], fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor=matrix_labels_color[i, j], boxstyle='round,pad=0.3'))
+            else:
+                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor='black', boxstyle='round,pad=0.3'))
+                pass  # if
             pass  # for
         pass  # for
 
@@ -220,11 +254,14 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_vector1.set_xticks([])
     ax_vector1.set_xticklabels([])
     ax_vector1.set_yticks(np.arange(len(vector1_labels)) + 0.5)
-    ax_vector1.set_yticklabels(vector1_labels, rotation='vertical')
+    ax_vector1.set_yticklabels(vector1_labels, rotation='vertical', fontsize=16)
     for i in range(vector1_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector1_values[i] == 0:
-            continue
-        ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='white', fontsize=12, bbox=dict(facecolor='black', edgecolor='black', boxstyle='round,pad=0.3'))
+            # continue
+            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color=vector1_labels_color[i], fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor=vector1_labels_color[i], boxstyle='round,pad=0.3'))
+        else:
+            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
+            pass  # if
         pass  # for
 
     ## 绘制向量2的热图
@@ -233,14 +270,17 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
 
     ax_vector2.set_title('')
     ax_vector2.set_xticks(np.arange(len(vector2_labels)) + 0.5)
-    ax_vector2.set_xticklabels(vector2_labels)
+    ax_vector2.set_xticklabels(vector2_labels, fontsize=16)
     ax_vector2.xaxis.tick_top()
     ax_vector2.set_yticks([])
     ax_vector2.set_yticklabels([])
     for i in range(vector2_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector2_values[i] == 0:
-            continue
-        ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='white', fontsize=12, bbox=dict(facecolor='black', edgecolor='black', boxstyle='round,pad=0.3'))
+            # continue
+            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color=vector2_labels_color[i], fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor=vector2_labels_color[i], boxstyle='round,pad=0.3'))
+        else:
+            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
+            pass  # if
         pass  # for
 
     ## 在热图的右侧手动添加颜色条
@@ -366,7 +406,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     ### 设置各节点之尺寸、颜色、标签
     min_vertices_size_in_one_graph = (min(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最小值
     max_vertices_size_in_one_graph = (max(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最大值
-    df_vertices_data['vertices_size'] = 40.0 * np.sqrt(np.asarray(
+    df_vertices_data['vertices_size'] = 40.0 * np.sqrt(np.abs(np.asarray(
         Tools.MinMaxScaler(
             df_vertices_data['vertices_value'].values,
             (
@@ -374,8 +414,8 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
                 1.0 + 1.0 * (max_vertices_size_in_one_graph)
             )
         )  # 计算各节点之尺寸
-    ))  # 设置各节点之尺寸
-    df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][','.join(s)] for s in list_data_banksState]  # 设置各节点之颜色
+    )))  # 设置各节点之尺寸
+    df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][','.join(s)] if v >= 0 else '#000000' for s, v in zip(list_data_banksState, df_vertices_data['vertices_value'].values)]  # 设置各节点之颜色，如果是节点值是负数那么是黑色
     df_vertices_data['vertices_label'] = [list_data_banksName[i] + '\n' + str(round(list_vertices_value[i])) for i in range(len(list_vertices_value))]  # 设置各节点之标签
 
     ### 生成各边集之信息
@@ -417,7 +457,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
         if ~(df_edges_data['edges_type'] == edgeType.edge_type).any():  # 如果指定类型的边集是空集的话则略过处理
             continue
             pass  # if
-        df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_width'] = 5.0 * np.sqrt(np.asarray(  #BUG 警告：【FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value 'XXXX.XX' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.】
+        df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_width'] = 5.0 * np.sqrt(np.asarray(  # BUG 警告：【FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value 'XXXX.XX' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.】
             Tools.MinMaxScaler(
                 df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_value'].values,
                 (
@@ -569,7 +609,8 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
     boxs_width = [sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24]  # 设置资产负债表之账户之各侧边柱子之宽度
     nibs_x = [reduce(lambda x, y: x + y, boxs_width[0:i + 1]) - boxs_width[i] for i in range(len(boxs_width))]  # 设置笔尖之x方向的位置之资产负债表之账户之各侧边柱子之起点
     o = [2, 1, 0, 3, 4, 5]  # 设置资产负债表之账户之各侧边柱子之绘制次序
-
+    count_subject_values_is_zero = 0
+    items_subject_values_is_zero = []
     nibs_y = [0, 0, 0, 0, 0, 0]  # 列表之笔尖起始坐标之开始位置之y坐标
     p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
     grouped_by_dataType = df_accounts_data.groupby('data_type')
@@ -738,7 +779,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
     svg_balanceSheet.append(
         dw.Text(
             dw_text,
-            font_size=12,
+            font_size=18,
             x=width // 2,
             y=border + title_height // 2,
             text_anchor='middle',
@@ -786,7 +827,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         svg_balanceSheet.append(
             dw.Text(
                 account_data.subject + '\n' + str(round(account_data.value)),
-                font_size=12,
+                font_size=18,
                 x=account_data.position[0] + account_data.size[0] // 2,
                 y=account_data.position[1] + account_data.size[1] // 2,
                 text_anchor='middle',
@@ -802,7 +843,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
             svg_balanceSheet.append(
                 dw.Text(
                     shock_data.subject + '\n' + str(round(shock_data.value)),
-                    font_size=12,
+                    font_size=18,
                     x=shock_data.position[0] + shock_data.size[0] // 3,
                     y=shock_data.position[1] + shock_data.size[1] // 3,
                     fill='blue',

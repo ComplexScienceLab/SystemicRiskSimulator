@@ -8,7 +8,8 @@ from SystemicRiskSimulator.core.define.define_consts import CONST
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 # from SystemicRiskSimulator.core.define.define_parameterVariables import para
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
-from SystemicRiskSimulator.core.functions.fun_finance import Finance
+
+# from SystemicRiskSimulator.core.functions.fun_finance import Finance
 
 pass  # end import
 
@@ -94,9 +95,9 @@ class DataInstaller:
             interbank(BankInterbank): 银行间主体众
         """
         bankCommercial: BankCommercial = BankCommercial(
-            id_agent=CONST(sgv['num_bank']).RANGE1.copy(),  # agent 之编号 id
-            abbr=np.full((sgv['num_bank'], 1), ""),  # 缩写 abbr
-            name=np.full((sgv['num_bank'], 1), ""),  # 全名 name
+            id_agent=CONST(sgv['num_bank']).RANGE1.copy() - 1,  # agent 之编号 id
+            abbr=CONST(sgv['num_bank']).BLANK1.copy(),  # 缩写 abbr
+            name=CONST(sgv['num_bank']).BLANK1.copy(),  # 全名 name
             A_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 总资产 A_all: $A_all=A_IB+A_exIB$
             A_IB_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间资产加总 A_IB_all
             A_exIB=CONST(sgv['num_bank']).ZEROS1.copy(),  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
@@ -177,7 +178,7 @@ class DataInstaller:
         )
 
         bankInterbank: BankInterbank = BankInterbank(
-            id_agent=CONST(sgv['num_bank']).RANGE2.copy(),  # agent 之间之关联编号 id
+            id_agent=CONST(sgv['num_bank']).RANGE2 - 1,  # agent 之间之关联编号 id
             A_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间资产邻接矩阵 A_IB
             Z_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间负债邻接矩阵 Z_IB
             Lo_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间贷款流出邻接矩阵 Lo_IB
@@ -270,7 +271,7 @@ class DataInstaller:
         sgv['num_bank'] = len(BB.on)  # 获取 agents 之个体数量
 
         # HACK 后续需要统一这两个变量的用法，防止混乱使用
-        b = (BB.on | BB.off).reshape(-1, 1)  # 临时设置A.BB示性变量
+        b = (BB.on | BB.off)  # 临时设置A.BB示性变量
         ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
 
         ## 构建Agent模型
@@ -287,18 +288,19 @@ class DataInstaller:
         #     IB,  # 银行间邻接矩阵
         #     ib,  # 银行间邻接矩阵示性变量
         # )
-        cls.initialize_data(A)  # 更新各银行之变量，在第一回合初始时
+
+        # cls.initialize_data(A)  # 更新各银行之变量，在第一回合初始时 #HACK 无用可删除
         return A
         pass  # function
 
-    @classmethod
-    def initialize_data(cls, A):
-        ## 更新各银行之变量，在第一回合初始时
-        # update=sgv['update']
-        # @Executer.execute
-        Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
-        Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有变量，在第一回合开始时
-        return A
-        pass
+    # @classmethod
+    # def initialize_data(cls, A):  #HACK 无用可删除
+    #     ## 更新各银行之变量，在第一回合初始时
+    #     # update=sgv['update']
+    #     # @Executer.execute
+    #     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
+    #     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有变量，在第一回合开始时
+    #     return A
+    #     pass  # function
 
     pass  # class

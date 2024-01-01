@@ -38,7 +38,7 @@ set_config_variables = dict(
     is_auto_open_outputlog=True,  # 是否自动打开输出日志文件。默认 True；
 
     ## 调试专用变量：
-    is_test=True,  # 是否处于测试状态
+    is_develope_model=True,  # 是否处于测试状态
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)
     test_round_for_test=4,  # test变量，用于打断点。相关语句：`sgv['round']>=sgv['test_round_for_test']`；
     test_max_num_of_round=100,  # 最大运行轮次数（测试用）；

@@ -1,9 +1,7 @@
 "函数区：工具集"
-import logging
 
+from SystemicRiskSimulator.external_packages import logging, time, Path, itertools, pkgutil, importlib, re, np, pd, random, string, shutil, locale, Union
 from pandas import DataFrame
-
-from SystemicRiskSimulator.external_packages import time, Path, itertools, pkgutil, importlib, re, np, pd, random, string, shutil, locale, Union
 
 pass  # end import
 
@@ -126,7 +124,7 @@ class Tools:
         pass  # function
 
     @classmethod
-    def set_experiments_folders(cls, foldername_experiments_output_data: str, foldername_experiments: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str,str_foldername_outputData:str,str_folderpath_realpath_outputData:str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str):
+    def set_experiments_folders(cls, foldername_experiments_output_data: str, foldername_experiments: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str, str_foldername_outputData: str, str_folderpath_realpath_outputData: str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str):
         """
         设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹等。
 
@@ -380,14 +378,14 @@ class Tools:
         """
 
         # str_folderpath = cls._translate_package_form_path_to_folder_form_path(str_package_form_path) # NOTE 仅当如果用到以模块形式的包之路径的时候启用。
-        module_form_path_package = cls._translate_folder_form_path_to_package_form_path(str_folderpath[0], str_folderpath_project)
+        module_form_path_package = cls._translate_folder_form_path_to_package_form_path(str_folderpath, str_folderpath_project)
 
         ## 遍历以导入内容函数
         idx_file = 0
         list_files = []  # 文件列表
         list_contents = {}  # 内容列表
 
-        for module_finder_01, name_01, is_pkg in pkgutil.walk_packages([str_folderpath[0].__str__()]):
+        for module_finder_01, name_01, is_pkg in pkgutil.walk_packages([str_folderpath.__str__()]):
             if is_pkg:  # 如果路径下面还有一级子文件夹
                 for module_finder_02, name_02, _ in pkgutil.iter_modules([Path(module_finder_01.path).joinpath(name_01).__str__()]):
                     list_files.append(importlib.import_module("." + name_02, module_form_path_package + "." + Path(module_finder_02.path).name))
