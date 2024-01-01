@@ -48,7 +48,9 @@ class Operator:
 
         ## 如果处于测试状态，那么就不需要复制模型库里的模型到模拟器里了
         if sgv['is_develope_model']:
-            Tools._copy_files_from_other_folders(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 如果处于开发调试模式，则复制正在开发的模型到输出文件夹之配置文件夹下
+            # 如果处于开发调试模式，则复制正在开发的模型到输出文件夹之配置文件夹下
+            Tools._delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
+            Tools._copy_files_from_other_folders(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
         else:
             # 如果处于应用实验状态，则复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下，另外导出一份到输出文件夹之配置文件夹下
             Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])

@@ -319,6 +319,9 @@ class Tools:
         """
         从指定的文件夹复制其全部的子文件夹及其子文件到目标文件夹。
 
+        一些特殊文件夹会被忽略：
+        - `__pycache__`：Python 编译之后的文件夹
+
         这个功能比较危险，因为可能会出现复制文件夹到其它位置的操作，所以要求用户确认操作。
 
         Args:
@@ -348,7 +351,8 @@ class Tools:
             if confirmation.lower() == 'y':
                 for file in folderpath_source.iterdir():
                     if file.is_dir():
-
+                        if file.name == "__pycache__":  # 忽略特殊文件夹
+                            continue
                         shutil.copytree(file, Path(folderpath_target, file.name))
                     else:
                         shutil.copy(file, Path(folderpath_target))
