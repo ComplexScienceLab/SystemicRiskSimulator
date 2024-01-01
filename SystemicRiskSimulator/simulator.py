@@ -85,6 +85,9 @@ def simulator(config: dict):
         ## 设置日志
         logger = logging.getLogger()
         logger.setLevel(sgv['test_logging'])
+        if Path(sgv['folderpath_experiments_output_log'], "outputlog.txt").exists():
+            os.remove(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))  # 如果原来的日志存在，那么就删除重建
+            pass  # if
         log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
         logger.addHandler(log_file_handler)
         log_console_handler = logging.StreamHandler()
