@@ -2,6 +2,7 @@
 模型IB1111
 
 NOTE 说明：这个模型仅作为样例进行展示。对于该模型的正确性并不做讨论。
+FIXME 警告：这个模型已经过时，不一定能够运行成功。后续有时间的话将进行适配。
 """
 
 from SystemicRiskSimulator.external_packages import np, logging
