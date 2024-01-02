@@ -27,6 +27,8 @@ import string
 import locale
 import subprocess
 import base64
+from multiprocessing import Pool
+import multiprocessing
 
 ## NOTE 以下是绘图用的。如果不需要，可以注释掉。但是请先不要删除！因为目前开发期间，需要作为参考。后续可以删除。
 # if sgv['need_visualization']:
