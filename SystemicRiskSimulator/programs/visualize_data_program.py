@@ -16,7 +16,7 @@ Returns:
 # from SystemicRiskSimulator.core.functions.fun_visualize_data import fun_visualize_data
 
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
-from SystemicRiskSimulator.external_packages import platform, Path, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool
+from SystemicRiskSimulator.external_packages import platform, Path, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool, multiprocessing
 
 
 def main():
@@ -426,7 +426,8 @@ def main():
                     pass  # for
 
                 ## 绘图
-                with Pool() as p:
+                num_cores = int(multiprocessing.cpu_count() * 3 / 4)  # 设置用于计算的 CPU 核心数
+                with Pool(num_cores) as p:
                     p.map(process_one_heatmap, tasks)  # 使用多进程并行处理
                     pass  # with
 
