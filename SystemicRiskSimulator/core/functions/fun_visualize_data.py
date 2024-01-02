@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 
-def visualize_data_program(sgv: dict):
+def fun_visualize_data(sgv: dict):
     """
-    可视化结果程序。
+    可视化结果功能函数。
 
     BUG 2023-07-11：
     改标注在图上的文本语言为英文。暂时不建议用中文标注在图上。因为如果使用中文，不能任意设置字体族；
