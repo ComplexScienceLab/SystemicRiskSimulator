@@ -1,5 +1,6 @@
 ## 导入第三方包（#NOTE 动态使用，严禁删除。如果 IDE 显示没有被使用，是正常的。因为这个是在其他文件内被导入使用的）
 import platform
+import sys
 import os
 import glob
 import shutil
@@ -24,6 +25,8 @@ from functools import reduce
 import random
 import string
 import locale
+import subprocess
+import base64
 
 ## NOTE 以下是绘图用的。如果不需要，可以注释掉。但是请先不要删除！因为目前开发期间，需要作为参考。后续可以删除。
 # if sgv['need_visualization']:
