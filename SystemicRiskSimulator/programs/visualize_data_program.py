@@ -346,69 +346,36 @@ def visualize_data_program(sgv: dict):
     if (sgv['visulization_process']['读取面板形式的PKL格式的文件'] or sgv['visulization_process']['导入面板形式的CSV数据预处理']):
 
         if (sgv['visulization_process']['绘制矩阵热图']):
+            ## #NOTE 绘制矩阵热图
+            # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
             print("准备绘制矩阵热图")
             Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
-        if (sgv['visulization_process']['拼接矩阵热图']):
-            print("准备拼接矩阵热图")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
-        if (sgv['visulization_process']['绘制资金流网络图']):
-            print("准备绘制资金流网络图")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
-        if (sgv['visulization_process']['拼接资金流网络图']):
-            print("准备拼接资金流网络图")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
-        if (sgv['visulization_process']['绘制资产负债表']):
-            print("准备绘制资产负债表")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
-        if (sgv['visulization_process']['拼接资产负债表']):
-            print("准备拼接资产负债表")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
-        for i_exp in experiments_indices_to_vis:
-            pkl_BB_00 = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-            pkl_IB_00 = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+            for i_exp in experiments_indices_to_vis:
 
-            ## 预处理数据表
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
-            ## 去除空列、调整列顺序
-            pkl_BB_10 = deepcopy(pkl_BB_00.loc[:, ~pkl_BB_00.columns.str.contains('^Unnamed')])
-            pkl_IB_10 = deepcopy(pkl_IB_00.loc[:, ~pkl_IB_00.columns.str.contains('^Unnamed')])
-
-            ## 提前列`row`、`col`
-            cols_sorted_10 = ['id_agent']
-            cols_sorted_10 = cols_sorted_10 + [s for s in pkl_BB_10.columns if not s in cols_sorted_10]
-            df_BB_panel = pkl_BB_10[cols_sorted_10]
-            cols_sorted_10 = ['row', 'col']
-            cols_sorted_10 = cols_sorted_10 + [s for s in pkl_IB_10.columns if not s in cols_sorted_10]
-            df_IB_panel = pkl_IB_10[cols_sorted_10]
-
-            ## 一些变量
-            num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-            num_IB_id = len(df_IB_panel)  # 数据表IB之行数
-            num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-            num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
-            num_step = num_idData  # 总的步进数（是从0开始计数的)
-            ## 根据时间粒度参数，确定时间轴名称及其长度
-            if sgv['vis']['time_granularity'] == '步进粒度':
-                sgv['vis']['name_time'] = 'step'
-                sgv['vis']['num_time'] = num_step
-            elif sgv['vis']['time_granularity'] == '轮次粒度':
-                sgv['vis']['name_time'] = 'round'
-                sgv['vis']['num_time'] = num_round
-            else:
-                raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
-                pass  # if
-            sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-            sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
-            num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
-            num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
-
-            ## 可视化
-
-            if (sgv['visulization_process']['绘制矩阵热图']):
-
-                ## NOTE 绘制矩阵热图
-                # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'round'
+                    sgv['vis']['num_time'] = num_round
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
                 print("绘制矩阵热图：实验" + str(i_exp))
 
@@ -445,11 +412,42 @@ def visualize_data_program(sgv: dict):
 
                 # pass  # for
 
-                pass  # if 绘制矩阵热图
+                pass  # for
 
-            if (sgv['visulization_process']['拼接矩阵热图']):
-                ## NOTE 拼接矩阵热图
-                # 导入各自的矩阵热图，按照横向数据类别纵向时间，拼接成大图
+            pass  # if 绘制矩阵热图
+
+        if (sgv['visulization_process']['拼接矩阵热图']):
+            ## #NOTE 拼接矩阵热图
+            # 导入各自的矩阵热图，按照横向数据类别纵向时间，拼接成大图
+
+            print("准备拼接矩阵热图")
+            Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            for i_exp in experiments_indices_to_vis:
+
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'round'
+                    sgv['vis']['num_time'] = num_round
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
                 print("拼接矩阵热图：实验" + str(i_exp))
 
@@ -474,12 +472,41 @@ def visualize_data_program(sgv: dict):
                 merged_pdf.save(Path(sgv['folderpath_plots_makeup_heatmaps'], 'IB_exp=' + str(i_exp) + '.pdf'))
                 merged_pdf.close()
 
-                pass  # if 拼接矩阵热图
+                pass  # for
 
-            if (sgv['visulization_process']['绘制资金流网络图']):
+            pass  # if 拼接矩阵热图
 
-                ## NOTE 绘制资金流网络图
-                # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
+        if (sgv['visulization_process']['绘制资金流网络图']):
+            ## #NOTE 绘制资金流网络图
+            # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
+            print("准备绘制资金流网络图")
+            Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            for i_exp in experiments_indices_to_vis:
+
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'round'
+                    sgv['vis']['num_time'] = num_round
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
                 print("绘制资金流网络图：实验" + str(i_exp))
 
@@ -552,13 +579,41 @@ def visualize_data_program(sgv: dict):
                         pass  # for
                     pass  # for
 
-                # pass  # for
+                pass  # for  实验编号
 
-                pass  # if 绘制资金流网络图
+            pass  # if 绘制资金流网络图
 
-            if (sgv['visulization_process']['拼接资金流网络图']):
-                ## NOTE 拼接资金流网络图
-                # 导入各自的网络图，按照横向数据类别纵向时间，拼接成大图
+        if (sgv['visulization_process']['拼接资金流网络图']):
+            ## #NOTE 拼接资金流网络图
+            # 导入各自的网络图，按照横向数据类别纵向时间，拼接成大图
+            print("准备拼接资金流网络图")
+            Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            for i_exp in experiments_indices_to_vis:
+
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'round'
+                    sgv['vis']['num_time'] = num_round
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
                 print("拼接资金流网络图：实验" + str(i_exp))
 
@@ -582,12 +637,41 @@ def visualize_data_program(sgv: dict):
                 merged_pdf.save(Path(sgv['folderpath_plots_makeup_graphs'], 'IB_exp=' + str(i_exp) + '.pdf'))
                 merged_pdf.close()
 
-                pass  # if 拼接资金流网络图
+                pass  # for  实验编号
 
-            if (sgv['visulization_process']['绘制资产负债表']):
+            pass  # if 拼接资金流网络图
 
-                ## NOTE 绘制资产负债表
-                # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
+        if (sgv['visulization_process']['绘制资产负债表']):
+            ## #NOTE 绘制资产负债表
+            # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
+            print("准备绘制资产负债表")
+            Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            for i_exp in experiments_indices_to_vis:
+
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'round'
+                    sgv['vis']['num_time'] = num_round
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
                 print("绘制资产负债表：实验" + str(i_exp))
 
@@ -1090,13 +1174,41 @@ def visualize_data_program(sgv: dict):
                         pass  # for
                     pass  # for
 
-                # pass  # for
+                pass  # for  实验编号
 
-                pass  # if 绘制资产负债表
+            pass  # if 绘制资产负债表
 
-            if (sgv['visulization_process']['拼接资产负债表']):
-                ## NOTE 拼接资产负债表
-                # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
+        if (sgv['visulization_process']['拼接资产负债表']):
+            ## #NOTE 拼接资产负债表
+            # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
+            print("准备拼接资产负债表")
+            Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            for i_exp in experiments_indices_to_vis:
+
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'round'
+                    sgv['vis']['num_time'] = num_round
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
                 print("拼接资产负债表：实验" + str(i_exp))
 
@@ -1118,10 +1230,14 @@ def visualize_data_program(sgv: dict):
                 merged_pdf.save(Path(sgv['folderpath_plots_makeup_balanceSheets'], 'BB_exp=' + str(i_exp) + '.pdf'))
                 merged_pdf.close()
 
-                pass  # if 拼接资产负债表
+                pass  # for  实验编号
 
-            pass  # for  实验编号
+            pass  # if 拼接资产负债表
 
+
+
+    else:
+        print("没有可用的数据，无法进行可视化！程序退出。")
         pass  # if  判断是否已经导入数据
 
     pass  # function
