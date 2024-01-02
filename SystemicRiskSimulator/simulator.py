@@ -18,7 +18,7 @@ def simulator(config: dict):
     global sgv, para
 
     # %% 首先导入相关包
-    from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path, shutil
+    from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path, shutil, datetime
     from SystemicRiskSimulator.tools.tools import Tools
 
     # %% 初始化
@@ -96,6 +96,7 @@ def simulator(config: dict):
         if sgv['is_develope_model']:
             logging.info("\n------------ 开发与调试模式！ ---------------\n")
             pass  # if
+        logging.info("\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n")
         logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
         logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
         logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
