@@ -18,7 +18,7 @@ def simulator(config: dict):
     global sgv, para
 
     # %% 首先导入相关包
-    from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path, shutil, datetime
+    from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path, shutil, datetime, time
     from SystemicRiskSimulator.tools.tools import Tools
 
     # %% 初始化
@@ -116,7 +116,10 @@ def simulator(config: dict):
     # %% 是否可视化结果程序
     if sgv['schedule_operation']['可视化结果程序']:
         from SystemicRiskSimulator.programs.visualize_data_program import visualize_data_program
+        start_time = time.time()
         visualize_data_program(sgv)
+        end_time = time.time()
+        print(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
         pass  # if
 
     # %% 清理
