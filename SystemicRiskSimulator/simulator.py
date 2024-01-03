@@ -1,8 +1,6 @@
 """
 系统性风险模拟器入口
 """
-import base64
-
 
 def simulator(config: dict):
     """
@@ -19,7 +17,7 @@ def simulator(config: dict):
     global sgv, para
 
     # %% 首先导入相关包
-    from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path, shutil, datetime, time, subprocess, pickle
+    from SystemicRiskSimulator.external_packages import os, platform, logging, Path, shutil, datetime, time, subprocess, pickle, base64
     from SystemicRiskSimulator.tools.tools import Tools
 
     # %% 初始化
