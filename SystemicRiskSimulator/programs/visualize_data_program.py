@@ -25,6 +25,9 @@ def main():
     sgv_pkl = base64.b64decode(sgv_base64)
     sgv = pickle.loads(sgv_pkl)
 
+    if sgv['is_ignore_warning']:
+        warnings.filterwarnings("ignore")  # 忽略警告
+
     # %% 初始化
 
     # from SystemicRiskSimulator.tools.tools import Tools
@@ -1273,6 +1276,9 @@ def main():
     else:
         print("没有可用的数据，无法进行可视化！程序退出。")
         pass  # if  判断是否已经导入数据
+
+    if sgv['is_ignore_warning']:
+        warnings.filterwarnings("default")  # 恢复警告
 
     pass  # function
 
