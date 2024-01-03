@@ -151,6 +151,17 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     colormap_max_value = sgv_vis['max_BB_value_in_all_panel']
     colormap_max_color = colormap[1]
 
+    ### 生成其他信息
+    others = dict(
+        color_map=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color),
+        time_granularity=sgv_vis['time_granularity'],
+        data_name=dataName_matrix,
+        process_name=sgv_vis['process_name'],
+        round=sgv_vis['round'],
+        step=sgv_vis['step'],
+        phase=sgv_vis['phase']
+    )
+
     ### 汇总生成的数据
     data = dict(
         vector1_data=vector1,
@@ -164,7 +175,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
         matrix_data=matrix.reshape(data_vector1.size, data_vector2.size),
         matrix_values=data_matrix.reshape(data_vector1.size, data_vector2.size),
         matrix_labels_color=data_banksRelation_color,
-        colormap=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color),
+        others=others,
     )
 
     return data
@@ -193,7 +204,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     import matplotlib.colors as colors
 
     ### 获取、调整该可视化所需要的数据
-    vector1_data, vector1_values, vector1_labels, vector1_labels_color, vector2_data, vector2_values, vector2_labels, vector2_labels_color, matrix_data, matrix_values, matrix_labels_color, color_map = np.flipud(vis_data['vector1_data'].astype(float)), np.flipud(vis_data['vector1_values']), np.flipud(vis_data['vector1_labels']), np.flipud(vis_data['vector1_labels_color']), vis_data['vector2_data'], vis_data['vector2_values'], vis_data['vector2_labels'], vis_data['vector2_labels_color'], np.flipud(vis_data['matrix_data'].astype(float)), np.flipud(vis_data['matrix_values']), np.flipud(vis_data['matrix_labels_color']), vis_data['colormap']
+    vector1_data, vector1_values, vector1_labels, vector1_labels_color, vector2_data, vector2_values, vector2_labels, vector2_labels_color, matrix_data, matrix_values, matrix_labels_color, others = np.flipud(vis_data['vector1_data'].astype(float)), np.flipud(vis_data['vector1_values']), np.flipud(vis_data['vector1_labels']), np.flipud(vis_data['vector1_labels_color']), vis_data['vector2_data'], vis_data['vector2_values'], vis_data['vector2_labels'], vis_data['vector2_labels_color'], np.flipud(vis_data['matrix_data'].astype(float)), np.flipud(vis_data['matrix_values']), np.flipud(vis_data['matrix_labels_color']), vis_data['others']
 
     # ## 示例数据  #NOTE 仅在测试该功能期间使用
     # matrix_values = np.random.rand(5, 5)
@@ -205,8 +216,8 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     # vector2_labels = ['bank1', 'bank2', 'bank3', 'bank4', 'bank5']
 
     ## 创建自定义的颜色映射
-    cmap = LinearSegmentedColormap.from_list('custom', [(0, color_map[1]), (1, color_map[3])], N=256)
-    norm_color_data = colors.Normalize(vmin=color_map[0], vmax=color_map[2])
+    cmap = LinearSegmentedColormap.from_list('custom', [(0, others['color_map'][1]), (1, others['color_map'][3])], N=256)
+    norm_color_data = colors.Normalize(vmin=others['color_map'][0], vmax=others['color_map'][2])
 
     ## 创建 Figure、GridSpec
     fig = plt.figure(figsize=(width, height), dpi=dpi)
@@ -215,10 +226,10 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ## 添加标题与相关的信息
     ax_info = fig.add_subplot(gs[0, :])  # 创建一个新的子图，覆盖整个图像的顶部
     ax_info.axis('off')
-    if sgv_vis['time_granularity'] == '步进粒度':
-        dw_text = f"{sgv_vis['data_name'][2]}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}    s = {str(sgv_vis['step'])}    p = {str(sgv_vis['phase'])}"
-    elif sgv_vis['time_granularity'] == '轮次粒度':
-        dw_text = f"{sgv_vis['data_name'][2]}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}"  # TODO 未测试
+    if others['time_granularity'] == '步进粒度':
+        dw_text = f"{others['data_name']}    {others['process_name']}    r = {str(others['round'])}    s = {str(others['step'])}    p = {str(others['phase'])}"
+    elif others['time_granularity'] == '轮次粒度':
+        dw_text = f"{others['data_name']}    {others['process_name']}    r = {str(others['round'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
     ax_info.text(0.5, 1.0, dw_text, ha='center', va='center', color='black', fontsize=24)  # 在子图的中心添加文本
@@ -237,9 +248,9 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
             if i == matrix_data.shape[1] - 1 - j:
                 continue
             if matrix_values[i, j] == 0:
-                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color=matrix_labels_color[i, j], fontsize=28, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor=matrix_labels_color[i, j], boxstyle='round,pad=0.3'))
+                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color=matrix_labels_color[i, j], fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor=matrix_labels_color[i, j], boxstyle='round,pad=0.3'))
             else:
-                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='black', fontsize=28, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor='black', boxstyle='round,pad=0.3'))
+                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor='black', boxstyle='round,pad=0.3'))
                 pass  # if
             pass  # for
         pass  # for
@@ -256,9 +267,9 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     for i in range(vector1_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector1_values[i] == 0:
             # continue
-            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color=vector1_labels_color[i], fontsize=28, bbox=dict(facecolor=vector1_labels_color[i], edgecolor=vector1_labels_color[i], boxstyle='round,pad=0.3'))
+            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color=vector1_labels_color[i], fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor=vector1_labels_color[i], boxstyle='round,pad=0.3'))
         else:
-            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='black', fontsize=28, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
             pass  # if
         pass  # for
 
@@ -275,17 +286,17 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     for i in range(vector2_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector2_values[i] == 0:
             # continue
-            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color=vector2_labels_color[i], fontsize=28, bbox=dict(facecolor=vector2_labels_color[i], edgecolor=vector2_labels_color[i], boxstyle='round,pad=0.3'))
+            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color=vector2_labels_color[i], fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor=vector2_labels_color[i], boxstyle='round,pad=0.3'))
         else:
-            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='black', fontsize=28, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
             pass  # if
         pass  # for
 
     ## 在热图的右侧手动添加颜色条
     cbar_ax = fig.add_axes([0.875, 0.1, 0.03, 0.7])
     cbar = fig.colorbar(im_matrix, cax=cbar_ax)
-    ticks_cbar = Tools.MinMaxScaler(np.linspace(color_map[0], color_map[2], 10), (0, 1))
-    labels_cbar = [f'{tick:.0f}' for tick in np.linspace(color_map[0], color_map[2], 10)]
+    ticks_cbar = Tools.MinMaxScaler(np.linspace(others['color_map'][0], others['color_map'][2], 10), (0, 1))
+    labels_cbar = [f'{tick:.0f}' for tick in np.linspace(others['color_map'][0], others['color_map'][2], 10)]
     cbar.set_ticks(ticks_cbar)
     cbar.set_ticklabels(labels_cbar)
 
