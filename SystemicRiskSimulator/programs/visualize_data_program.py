@@ -306,7 +306,7 @@ def main():
 
             ## 根据时间粒度参数，确定时间轴名称及其长度
             if sgv['vis']['time_granularity'] == '步进粒度':
-                sgv['vis']['name_time'] = 'id_data'
+                sgv['vis']['name_time'] = 'id_data' #BUG 这个是否正确？是否应该改成 'step' ？
                 sgv['vis']['num_time'] = num_step
             elif sgv['vis']['time_granularity'] == '轮次粒度':
                 sgv['vis']['name_time'] = 'round'
