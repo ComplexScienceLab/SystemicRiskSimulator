@@ -306,7 +306,7 @@ def main():
 
             ## 根据时间粒度参数，确定时间轴名称及其长度
             if sgv['vis']['time_granularity'] == '步进粒度':
-                sgv['vis']['name_time'] = 'id_data' #BUG 这个是否正确？是否应该改成 'step' ？
+                sgv['vis']['name_time'] = 'id_data'  # BUG 这个是否正确？是否应该改成 'step' ？
                 sgv['vis']['num_time'] = num_step
             elif sgv['vis']['time_granularity'] == '轮次粒度':
                 sgv['vis']['name_time'] = 'round'
@@ -425,7 +425,7 @@ def main():
                     pass  # for
 
                 ## 绘图
-                num_cores = int(multiprocessing.cpu_count() * 3 / 4)  # 设置用于计算的 CPU 核心数
+                num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
                 with Pool(num_cores) as p:
                     p.map(process_one_heatmap, tasks)  # 使用多进程并行处理
                     pass  # with
@@ -537,15 +537,17 @@ def main():
                 sgv['vis']['zh_font_family'] = zh_font_family
                 sgv['vis']['en_font_family'] = en_font_family
 
-                ## 设置项
+                ### 计算各银行主体之代表性的类型之数据之最大值和最小值
+                sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
+                sgv['vis']['min_BB_value_in_all_panel'] = 0
 
-                ## 绘图
+                ### 计算各银行主体间之代表性的类型之数据之最大值和最小值
+                sgv['vis']['max_IB_value_in_all_panel'] = df_IB_panel['A_IB'].max()
+                sgv['vis']['min_IB_value_in_all_panel'] = 0
+
+                ## 创建一个任务列表，其中每个任务都是一个元组，包含所有需要传递给函数的参数
+                tasks = []
                 for d in sgv['vis']['list_dataNames_for_graph_figs']:
-                    sgv['vis']['data_name'] = d
-
-                    ## 设置不同点集对应的属性
-                    verticeTypes = d + '_all'
-
                     ## 设置不同边集对应的属性
                     list_data_edgeTypes = [
                         dict(
@@ -575,14 +577,6 @@ def main():
                         ),
                     ]
 
-                    ### 计算各银行主体之代表性的类型之数据之最大值和最小值
-                    sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
-                    sgv['vis']['min_BB_value_in_all_panel'] = 0
-
-                    ### 计算各银行主体间之代表性的类型之数据之最大值和最小值
-                    sgv['vis']['max_IB_value_in_all_panel'] = df_IB_panel['A_IB'].max()
-                    sgv['vis']['min_IB_value_in_all_panel'] = 0
-
                     for t in range(sgv['vis']['num_time']):
                         ## 初始化参数
                         data_vis_one_time_graph = {}
@@ -590,18 +584,27 @@ def main():
                         data_vis_one_time_graph['vertices'] = pd.DataFrame()
                         data_vis_one_time_graph['edges'] = pd.DataFrame()
 
-                        ## 生成相关的参数
-                        sgv['vis']['process_name'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['process_name'].values[0]
-                        sgv['vis']['step'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['step'].values[0]
-                        sgv['vis']['round'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['round'].values[0]
-                        sgv['vis']['phase'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['phase'].values[0]
-                        ## 获取相关的节点与边信息
-                        data_vis_one_time_graph = generate_one_interbank_graph_data_info(df_BB_panel, df_IB_panel, data_vis_one_time_graph, t, d, sgv['vis'])
-                        ## 用 igraph 绘制
-                        fig_graph = draw_one_interbank_flow_graph(data_vis_one_time_graph, sgv['vis'])
-                        fig_graph.savefig(Path(sgv['folderpath_plots_single_graphs'], 'IB_exp=' + str(i_exp) + '+data=' + sgv['vis']['data_name'] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
+                        tasks.append((sgv, df_BB_panel, df_IB_panel, data_vis_one_time_graph, i_exp, d, t))
                         pass  # for
                     pass  # for
+
+                ## 绘图
+                num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
+                with Pool(num_cores) as p:
+                    p.map(process_one_graph, tasks)  # 使用多进程并行处理
+                    pass  # with
+
+                # ## 绘图
+                # for d in sgv['vis']['list_dataNames_for_graph_figs']:
+                #     # sgv['vis']['data_name'] = d
+                #
+                #     # ## 设置不同点集对应的属性
+                #     # verticeTypes = d + '_all'
+                #
+                #     for t in range(sgv['vis']['num_time']):
+                #         process_one_graph(sgv, df_BB_panel, df_IB_panel, data_vis_one_time_graph, i_exp, d, t)
+                #         pass  # for
+                #     pass  # for
 
                 pass  # for  实验编号
 
@@ -1183,6 +1186,8 @@ def main():
                 sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
                 sgv['vis']['min_BB_value_in_all_panel'] = 0
 
+                ## 创建一个任务列表，其中每个任务都是一个元组，包含所有需要传递给函数的参数
+                tasks = []
                 for i in range(sgv['vis']['num_items_in_a_time_in_BB']):
                     for t in range(sgv['vis']['num_time']):
                         ## 初始化数据
@@ -1190,19 +1195,15 @@ def main():
                         data_vis_one_bank_BalanceSheet['accounts'] = pd.DataFrame(list_accounts_data)
                         data_vis_one_bank_BalanceSheet['shocks'] = pd.DataFrame(list_shocks_data)
 
-                        ## 生成绘制资产负债表所需的数据
-                        data_vis_one_bank_BalanceSheet = generate_one_bank_accounts_data(df_BB_panel, data_vis_one_bank_BalanceSheet, t, i, sgv['vis'])
-                        ## 生成相关的参数
-                        sgv['vis']['bank_name'] = df_BB_panel[(df_BB_panel[sgv['vis']['name_time']] == t) & (df_BB_panel['id_agent'] == i)]['name'].values[0]
-                        sgv['vis']['process_name'] = df_BB_panel[(df_BB_panel[sgv['vis']['name_time']] == t) & (df_BB_panel['id_agent'] == i)]['process_name'].values[0]
-                        sgv['vis']['step'] = df_BB_panel[(df_BB_panel[sgv['vis']['name_time']] == t) & (df_BB_panel['id_agent'] == i)]['step'].values[0]
-                        sgv['vis']['round'] = df_BB_panel[(df_BB_panel[sgv['vis']['name_time']] == t) & (df_BB_panel['id_agent'] == i)]['round'].values[0]
-                        sgv['vis']['phase'] = df_BB_panel[(df_BB_panel[sgv['vis']['name_time']] == t) & (df_BB_panel['id_agent'] == i)]['phase'].values[0]
-                        ## 用 drawsvg 绘制资产负债表
-                        svg_one_bank_balanceSheet = draw_one_bank_BalanceSheet(data_vis_one_bank_BalanceSheet, sgv['vis'], width=sgv['vis']['one_bank_BalanceSheet_width'], height=sgv['vis']['one_bank_BalanceSheet_height'], title_height=sgv['vis']['one_bank_BalanceSheet_title_height'], border=sgv['vis']['one_bank_BalanceSheet_border'])
-                        svg_one_bank_balanceSheet.save_svg(Path(sgv['folderpath_plots_single_balanceSheets'], 'BB_exp=' + str(i_exp) + '+name=' + sgv['vis']['bank_name'] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.svg'))  # 保存
+                        tasks.append((sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
                         pass  # for
                     pass  # for
+
+                ## 绘图
+                num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
+                with Pool(num_cores) as p:
+                    p.map(process_one_balanceSheet, tasks)  # 使用多进程并行处理
+                    pass  # with
 
                 pass  # for  实验编号
 
@@ -1300,16 +1301,80 @@ def process_one_heatmap(args):
     """
     sgv, df_BB_panel, df_IB_panel, d, i_exp, t, i = args
 
-    ## 生成相关的参数
-    sgv['vis']['process_name'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['process_name'].values[0]
-    sgv['vis']['step'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['step'].values[0]
-    sgv['vis']['round'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['round'].values[0]
-    sgv['vis']['phase'] = df_BB_panel[df_BB_panel[sgv['vis']['name_time']] == t]['phase'].values[0]
     ## 获取相关的节点与边信息
     data_vis_one_time_heatmap = generate_one_interbank_matrix_heatmaps_data_info(df_BB_panel, df_IB_panel, d['colormap'], d['relations'], t, d['data_name'], sgv['vis'])
+
     ## 用 matplotlib 绘制
     fig_heatmap = draw_one_interbank_matrix_heatmaps(data_vis_one_time_heatmap, sgv['vis'])
     fig_heatmap.savefig(Path(sgv['folderpath_plots_single_heatmaps'], 'IB_exp=' + str(i_exp) + '+data=' + d['data_name'][2] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
+
+    pass  # function
+
+
+def process_one_graph(args):
+    """
+    处理需要绘制的单个网络图。
+
+    首先获取相关的节点与边信息，然后用 igraph 绘制，最后保存。
+
+    参数元组 args 信息如下：
+        - args[0]: sgv (dict): 一个字典，包含了所有的参数。
+        - args[1]: df_BB_panel (pandas.DataFrame): 数据表BB。
+        - args[2]: df_IB_panel (pandas.DataFrame): 数据表IB。
+        - args[3]: data_vis_one_time_graph (dict): 用于绘制网络图的数据。
+        - args[4]: i_exp (int): 实验编号。
+        - args[5]: d (pandas.Series): 数据类别。
+        - args[6]: t (int): 时间。
+
+    Args:
+        args: 一个元组，包含了需要的参数。
+
+    Returns:
+        None
+
+    """
+    sgv, df_BB_panel, df_IB_panel, data_vis_one_time_graph, i_exp, d, t = args
+
+    ## 获取相关的节点与边信息
+    data_vis_one_time_graph = generate_one_interbank_graph_data_info(df_BB_panel, df_IB_panel, data_vis_one_time_graph, t, d, sgv['vis'])
+
+    ## 用 igraph 绘制
+    fig_graph = draw_one_interbank_flow_graph(data_vis_one_time_graph)
+    fig_graph.savefig(Path(sgv['folderpath_plots_single_graphs'], 'IB_exp=' + str(i_exp) + '+data=' + d + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
+
+    pass  # function
+
+
+def process_one_balanceSheet(args):
+    """
+    处理需要绘制的单个资产负债表。
+
+    首先获取相关的节点与边信息，然后用 drawsvg 绘制，最后保存。
+
+    参数元组 args 信息如下：
+        - args[0]: sgv (dict): 一个字典，包含了所有的参数。
+        - args[1]: df_BB_panel (pandas.DataFrame): 数据表BB。
+        - args[2]: data_vis_one_bank_BalanceSheet (dict): 用于绘制资产负债表的数据。
+        - args[3]: i_exp (int): 实验编号。
+        - args[4]: i (int): 银行编号。
+        - args[5]: t (int): 时间。
+
+    Args:
+        args: 一个元组，包含了需要的参数。
+
+    Returns:
+          None
+
+    """
+
+    sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t = args
+
+    ## 生成绘制资产负债表所需的数据
+    data_vis_one_bank_BalanceSheet = generate_one_bank_accounts_data(df_BB_panel, data_vis_one_bank_BalanceSheet, t, i, sgv['vis'])
+
+    ## 用 drawsvg 绘制资产负债表
+    svg_one_bank_balanceSheet = draw_one_bank_BalanceSheet(data_vis_one_bank_BalanceSheet, sgv['vis'], width=sgv['vis']['one_bank_BalanceSheet_width'], height=sgv['vis']['one_bank_BalanceSheet_height'], title_height=sgv['vis']['one_bank_BalanceSheet_title_height'], border=sgv['vis']['one_bank_BalanceSheet_border'])
+    svg_one_bank_balanceSheet.save_svg(Path(sgv['folderpath_plots_single_balanceSheets'], 'BB_exp=' + str(i_exp) + '+name=' + data_vis_one_bank_BalanceSheet['others']['bank_name'] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.svg'))  # 保存
 
     pass  # function
 

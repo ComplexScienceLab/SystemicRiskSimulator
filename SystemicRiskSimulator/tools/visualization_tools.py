@@ -17,6 +17,8 @@ if sgv['need_visualization']:
 from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re, Path
 from SystemicRiskSimulator.tools.tools import Tools
 
+del sgv
+
 
 def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, colormap: tuple, relations: str, time: int, dataName: tuple, sgv_vis: dict):
     """
@@ -120,7 +122,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     matrix[np.isclose(matrix, 0.0, atol=1e-4)] = 0.0
 
     ### 获取银行状态数据之颜色
-    data_banksState_color = [sgv['vis']['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
+    data_banksState_color = [sgv_vis['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
 
     ### 计算银行关系矩阵数据（包括债权债务关系）
     data_A_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
@@ -132,10 +134,10 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     data_banksRelation_color = np.full((data_vector1.size, data_vector2.size), '#FFFFFF', dtype=object)
     if relations == 'cre':
         data_banksRelation = data_creditors
-        relation_color = sgv['vis']['dict_relation_colors']['cre']
+        relation_color = sgv_vis['dict_relation_colors']['cre']
     elif relations == 'deb':
         data_banksRelation = data_debtors
-        relation_color = sgv['vis']['dict_relation_colors']['deb']
+        relation_color = sgv_vis['dict_relation_colors']['deb']
         pass  # if
     for i in range(data_banksRelation_color.shape[0]):
         for j in range(data_banksRelation_color.shape[1]):
@@ -156,10 +158,10 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
         color_map=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color),
         time_granularity=sgv_vis['time_granularity'],
         data_name=dataName_matrix,
-        process_name=sgv_vis['process_name'],
-        round=sgv_vis['round'],
-        step=sgv_vis['step'],
-        phase=sgv_vis['phase']
+        process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
+        step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
+        round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],
+        phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
     )
 
     ### 汇总生成的数据
@@ -479,21 +481,34 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
         df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_label'] = [f'{round(v)}' for i, v in enumerate(df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_value'])]  # 设置各边之标签
         pass  # for
 
-    data = {}  # 待使用的图数据
-    data['edge_types'] = df_data_edgeTypes
-    data['vertices'] = df_vertices_data
-    data['edges'] = df_edges_data
+    ## 生成其他信息
+    others = dict(
+        time_granularity=sgv_vis['time_granularity'],
+        data_name=data_name,
+        process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
+        step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
+        round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],
+        phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
+    )
+
+    # 待使用的图数据
+    data = dict(
+        edge_types=df_data_edgeTypes,
+        vertices=df_vertices_data,
+        edges=df_edges_data,
+        others=others,
+    )
+
     return data
     pass  # function
 
 
-def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 5, height: float = 5, dpi: int = 72):
+def draw_one_interbank_flow_graph(vis_data: dict, width: float = 5, height: float = 5, dpi: int = 72):
     """
     绘制单独的银行间资金网络图
 
     Args:
         vis_data (dict): 网络流数据集
-        sgv_vis (dict): 模拟器全局变量
         width (float): 图片宽度（英寸）
         height (float): 图片高度（英寸）
         dpi (int): DPI
@@ -503,7 +518,7 @@ def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 
         fig: matplotlib格式的图像对象
 
     """
-    vertices_data, edges_data = vis_data['vertices'], vis_data['edges']
+    edge_types, vertices_data, edges_data, others = vis_data['edge_types'], vis_data['vertices'], vis_data['edges'], vis_data['others']
 
     ## 创建图对象
     g = ig.Graph(
@@ -511,10 +526,10 @@ def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 
     )
 
     ## 绘制标题
-    if sgv_vis['time_granularity'] == '步进粒度':
-        dw_text = rf"{sgv_vis['data_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}    s = {str(sgv_vis['step'])}    p = {str(sgv_vis['phase'])}"
-    elif sgv_vis['time_granularity'] == '轮次粒度':
-        dw_text = rf"{sgv_vis['data_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}"  # DEBUG 未测试
+    if others['time_granularity'] == '步进粒度':
+        dw_text = rf"{others['data_name']}    {others['process_name']}    r = {str(others['round'])}    s = {str(others['step'])}    p = {str(others['phase'])}"
+    elif others['time_granularity'] == '轮次粒度':
+        dw_text = rf"{others['data_name']}    {others['process_name']}    r = {str(others['round'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -526,7 +541,7 @@ def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 
     # ## 设置图之顶点与边之数值
     # g.vs['name'] = vertices_data['banks_name']
     # g.vs['health_state'] = vertices_data['data_banksState']
-    # g.vs[(sgv_vis['data_name'] + '_all')] = vis_data['vertices_data_value']
+    # g.vs[(others['data_name'] + '_all')] = vis_data['vertices_data_value']
     # g.es[sgv_vis['data_name']] = vis_data['edges_data_value']
     # g.es['type']
     # # del g.es['A_IB']
@@ -591,17 +606,6 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
     """
 
     df_accounts_data, df_shocks_data = dict_vis_data['accounts'], dict_vis_data['shocks']
-
-    # sgv_vis['max_value_BB'] = 0  # 获取资产负债数据之最大值
-    # for i in range(sgv_vis['num_items_in_a_time_in_BB']):  # 计算资产负债数据最值
-    #     for t in range(sgv_vis['num_time']):
-    #         if df_BB[(df_BB[sgv_vis['name_time']] == t) & (df_BB['id_agent'] == i)]['A_all'].values[0] > sgv_vis['max_value_BB']:
-    #             sgv_vis['max_value_BB'] = df_BB[(df_BB[sgv_vis['name_time']] == t) & (df_BB['id_agent'] == i)]['A_all'].values[0]
-    #         if df_BB[(df_BB[sgv_vis['name_time']] == t) & (df_BB['id_agent'] == i)]['Z_all'].values[0] > sgv_vis['max_value_BB']:
-    #             sgv_vis['max_value_BB'] = df_BB[(df_BB[sgv_vis['name_time']] == t) & (df_BB['id_agent'] == i)]['Z_all'].values[0]
-    #             pass  # if
-    #         pass  # for
-    #     pass  # for
 
     ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
     for account_data in df_accounts_data.itertuples():
@@ -723,9 +727,22 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
         pass  # for
 
-    data = {}
-    data['accounts'] = df_accounts_data
-    data['shocks'] = df_shocks_data
+    ## 生成其他信息
+    others = dict(
+        time_granularity=sgv_vis['time_granularity'],
+        bank_name=df_BB[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['name'].values[0],
+        process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
+        step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
+        round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],
+        phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
+    )
+
+    data = dict(
+        accounts=df_accounts_data,
+        shocks=df_shocks_data,
+        others=others,
+    )
+
     return data
     pass  # function
 
@@ -745,7 +762,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         svg_balanceSheet: 单个银行的资产负债表svg格式数据
 
     """
-    accounts_data, shocks_data = vis_data['accounts'], vis_data['shocks']
+    accounts_data, shocks_data, others = vis_data['accounts'], vis_data['shocks'], vis_data['others']
 
     svg_balanceSheet = dw.Drawing(border + width + border, border + title_height + height + border, id_prefix='Balance Sheet')
 
@@ -777,10 +794,10 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
     # )
 
     ## 绘制标题
-    if sgv_vis['time_granularity'] == '步进粒度':
-        dw_text = rf"{sgv_vis['bank_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}    s = {str(sgv_vis['step'])}    p = {str(sgv_vis['phase'])}"
-    elif sgv_vis['time_granularity'] == '轮次粒度':
-        dw_text = rf"{sgv_vis['bank_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}"  # DEBUG 未测试
+    if others['time_granularity'] == '步进粒度':
+        dw_text = rf"{others['bank_name']}    {others['process_name']}    r = {str(others['round'])}    s = {str(others['step'])}    p = {str(others['phase'])}"
+    elif others['time_granularity'] == '轮次粒度':
+        dw_text = rf"{others['bank_name']}    {others['process_name']}    r = {str(others['round'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -1060,9 +1077,5 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
         pass  # for
 
     return merged_pdf
-
-    # ## 保存
-    # merged_pdf.save(Path(sgv['folderpath_plots_makeup_heatmaps'], 'IB_exp=' + str(i_exp) + '.pdf'))
-    # merged_pdf.close()
 
     pass  # function
