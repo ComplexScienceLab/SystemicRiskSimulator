@@ -77,7 +77,7 @@ def main():
         zh_font_family = 'Songti SC'
         en_font_family = 'Times New Roman'
     elif platform.system() == 'Windows':  # Windows系统
-        # zh_font_family = 'STZhongsong'
+        zh_font_family = 'SimHei'
         en_font_family = 'Times New Roman'
     else:  # 其他系统
         zh_font_family = 'Arial'
