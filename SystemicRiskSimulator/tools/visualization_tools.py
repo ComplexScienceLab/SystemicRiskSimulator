@@ -400,7 +400,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
 
     ### 初始化各节点之标签、尺寸、颜色
     list_vertices_label = [''] * len(list_vertices)
-    list_vertices_size = [0] * len(list_vertices)
+    list_vertices_size = [0.0] * len(list_vertices)
     list_vertices_color = ['#000000'] * len(list_vertices)
 
     ### 节点数据框
@@ -445,7 +445,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
 
     ### 初始化各边之标签、宽度、颜色
     list_edges_label = [''] * len(list_edges_idx)
-    list_edges_width = [0] * len(list_edges_idx)
+    list_edges_width = [0.0] * len(list_edges_idx)
     list_edges_color = ['#000000'] * len(list_edges_idx)
 
     ### 边数据框
@@ -468,7 +468,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
         if ~(df_edges_data['edges_type'] == edgeType.edge_type).any():  # 如果指定类型的边集是空集的话则略过处理
             continue
             pass  # if
-        df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_width'] = 5.0 * np.sqrt(np.asarray(  # BUG 警告：【FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value 'XXXX.XX' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.】
+        df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_width'] = 5.0 * np.sqrt(np.asarray(
             Tools.MinMaxScaler(
                 df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_value'].values,
                 (
@@ -555,7 +555,7 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 5, height: floa
     g.es['width'] = edges_data['edges_width']
 
     ## 生成可视化图
-    fig, ax = plt.subplots(  # BUG 运行警告：RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+    fig, ax = plt.subplots(
         figsize=(width, height),
         dpi=dpi,
     )
@@ -609,7 +609,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
     for account_data in df_accounts_data.itertuples():
-        df_accounts_data.loc[account_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]  # BUG 警告：【FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value 'XXXX.XX' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.】
+        df_accounts_data.loc[account_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
         value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
         is_value_changed = False if np.isclose(df_accounts_data.loc[account_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
@@ -701,7 +701,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     ## 计算各冲击变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
     for shock_data in df_shocks_data.itertuples():
-        df_shocks_data.loc[shock_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), shock_data.subject].values[0]  # BUG 警告：【FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value 'XXXX.XX' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.】
+        df_shocks_data.loc[shock_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), shock_data.subject].values[0]
         value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), shock_data.subject].values[0]
         is_value_changed = False if np.isclose(df_shocks_data.loc[shock_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
