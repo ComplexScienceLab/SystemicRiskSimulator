@@ -107,7 +107,7 @@ class Operator:
         logging.debug("                    初始化数据")
         # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         A_data = Collector.init_agent_data_collection(A, sgv)
-        sgv['step'] += 1
+        # sgv['step'] += 1
 
         ## 运行实验
 
