@@ -91,6 +91,9 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     Shock_IB_run_ilq_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间流动性短缺挤兑流动冲击目标 Shock_IB_run_ilq_t
     Shock_IB_run_br_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击源头 Shock_IB_run_br_s
     Shock_IB_run_br_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击目标 Shock_IB_run_br_t
+    Default_IB_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间违约量 Default_IB_s
+    Default_exIB_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间存款违约量 Default_exIB_s
+    # TODO 添加违约量，用累积的违约冲击表示。
     Loss_t = np.NaN  # = deepcopy(ZEROS1)  # 银行总损失目标 Loss_t
     # Loss_s = np.NaN  # = deepcopy(ZEROS1)  # 银行总损失源头 Loss_s
     Loss_exIB_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债总损失目标 Loss_exIB_t
@@ -156,6 +159,7 @@ class BankInterbank(BaseInterAgents):
     Shock_IB_run = np.NaN  # 银行间挤兑流动冲击 Shock_IB_run: $Shock_IB_run=Shock_IB_run_ilq+Shock_IB_run_br$
     Shock_IB_run_ilq = np.NaN  # 流动性短缺银行银行间挤兑流动冲击 Shock_IB_run_ilq
     Shock_IB_run_br = np.NaN  # 破产银行银行间挤兑流动冲击 Shock_IB_run_br
+    Default_IB = np.NaN  # 银行间违约量 Default_IB
     Loss_IB = np.NaN  # 银行间市场冲击损失 Loss_IB
     Loss_IB_def = np.NaN  # 银行间资产负债违约冲击损失 Loss_IB_def
     Loss_IB_run = np.NaN  # 银行间负债流动性挤兑冲击损失 Loss_IB_run
