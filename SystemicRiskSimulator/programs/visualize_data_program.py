@@ -412,7 +412,7 @@ def main():
                 df_data_types = pd.DataFrame(sgv['vis']['list_dataTypes_for_heatmaps'])
 
                 ### 计算各银行主体之代表性的类型之数据之最大值和最小值
-                sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
+                sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_IB_all'].max()
                 sgv['vis']['min_BB_value_in_all_panel'] = 0
 
                 ### 计算各银行主体间之代表性的类型之数据之最大值和最小值

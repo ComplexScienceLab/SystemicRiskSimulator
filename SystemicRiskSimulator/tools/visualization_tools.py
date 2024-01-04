@@ -614,7 +614,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         is_value_changed = False if np.isclose(df_accounts_data.loc[account_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
             df_accounts_data.loc[account_data.Index, 'stroke_color'] = '#000000'
-            df_accounts_data.loc[account_data.Index, 'stroke_width'] = 6
+            df_accounts_data.loc[account_data.Index, 'stroke_width'] = 3
             pass  # if
         pass  # for
 
