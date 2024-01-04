@@ -428,10 +428,15 @@ def main():
                     pass  # for
 
                 ## 绘图
-                num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
-                with Pool(num_cores) as p:
-                    p.map(process_one_heatmap, tasks)  # 使用多进程并行处理
-                    pass  # with
+                if sgv['is_enable_multiprocessing']:  # 多进程并行处理
+                    num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
+                    with Pool(num_cores) as p:
+                        p.map(process_one_heatmap, tasks)
+                        pass  # with
+                else:  # 串行处理
+                    for i in range(len(tasks)):
+                        process_one_heatmap(tasks[i])
+                        pass  # for
 
                 pass  # for
 
@@ -592,22 +597,15 @@ def main():
                     pass  # for
 
                 ## 绘图
-                num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
-                with Pool(num_cores) as p:
-                    p.map(process_one_graph, tasks)  # 使用多进程并行处理
-                    pass  # with
-
-                # ## 绘图
-                # for d in sgv['vis']['list_dataNames_for_graph_figs']:
-                #     # sgv['vis']['data_name'] = d
-                #
-                #     # ## 设置不同点集对应的属性
-                #     # verticeTypes = d + '_all'
-                #
-                #     for t in range(sgv['vis']['num_time']):
-                #         process_one_graph(sgv, df_BB_panel, df_IB_panel, data_vis_one_time_graph, i_exp, d, t)
-                #         pass  # for
-                #     pass  # for
+                if sgv['is_enable_multiprocessing']:  # 多进程并行处理
+                    num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
+                    with Pool(num_cores) as p:
+                        p.map(process_one_graph, tasks)
+                        pass  # with
+                else:  # 串行处理
+                    for i in range(len(tasks)):
+                        process_one_graph(tasks[i])
+                        pass  # for
 
                 pass  # for  实验编号
 
@@ -1203,10 +1201,15 @@ def main():
                     pass  # for
 
                 ## 绘图
-                num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
-                with Pool(num_cores) as p:
-                    p.map(process_one_balanceSheet, tasks)  # 使用多进程并行处理
-                    pass  # with
+                if sgv['is_enable_multiprocessing']:  # 多进程并行处理
+                    num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
+                    with Pool(num_cores) as p:
+                        p.map(process_one_balanceSheet, tasks)  # 使用多进程并行处理
+                        pass  # with
+                else:  # 串行处理
+                    for i in range(len(tasks)):
+                        process_one_balanceSheet(tasks[i])
+                        pass  # for
 
                 pass  # for  实验编号
 
