@@ -20,7 +20,7 @@ class Executer:
 
     ## NOTE：执行一次步进更新。
     @classmethod
-    def step_update(cls, function, update_way: str, A: SystemicRiskAgent, A_data: pd.DataFrame, para: dict, sgv: dict):
+    def step_update(cls, function, update_way: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         执行一次步进更新
 
@@ -29,6 +29,7 @@ class Executer:
         Args:
             update_way (str): 更新方式
             A (SystemicRiskAgent): 多主体
+            A_data (AgentDataCollection): 多主体之数据
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
             function (function): 相关的需要步进更新的功能函数
