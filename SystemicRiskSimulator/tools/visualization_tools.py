@@ -229,9 +229,9 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_info = fig.add_subplot(gs[0, :])  # 创建一个新的子图，覆盖整个图像的顶部
     ax_info.axis('off')
     if others['time_granularity'] == '步进粒度':
-        dw_text = f"{others['data_name']}    {others['process_name']}    r = {str(others['round'])}    s = {str(others['step'])}    p = {str(others['phase'])}"
+        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['round'])}    s={str(others['step'])}    p={str(others['phase'])}"
     elif others['time_granularity'] == '轮次粒度':
-        dw_text = f"{others['data_name']}    {others['process_name']}    r = {str(others['round'])}"  # TODO 未测试
+        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['round'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
     ax_info.text(0.5, 1.0, dw_text, ha='center', va='center', color='black', fontsize=24)  # 在子图的中心添加文本
@@ -527,9 +527,9 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 5, height: floa
 
     ## 绘制标题
     if others['time_granularity'] == '步进粒度':
-        dw_text = rf"{others['data_name']}    {others['process_name']}    r = {str(others['round'])}    s = {str(others['step'])}    p = {str(others['phase'])}"
+        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['round'])}   s={str(others['step'])}   p={str(others['phase'])}"
     elif others['time_granularity'] == '轮次粒度':
-        dw_text = rf"{others['data_name']}    {others['process_name']}    r = {str(others['round'])}"  # DEBUG 未测试
+        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['round'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -559,7 +559,7 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 5, height: floa
         figsize=(width, height),
         dpi=dpi,
     )
-    fig.suptitle(dw_text)
+    fig.suptitle(dw_text, fontsize=16)
     # ax.set_title = vis_data['banks_name']
     layout = g.layout(layout='auto')
     # layout = g.layout(layout='circle')
@@ -795,9 +795,9 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制标题
     if others['time_granularity'] == '步进粒度':
-        dw_text = rf"{others['bank_name']}    {others['process_name']}    r = {str(others['round'])}    s = {str(others['step'])}    p = {str(others['phase'])}"
+        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['round'])}   s={str(others['step'])}   p={str(others['phase'])}"
     elif others['time_granularity'] == '轮次粒度':
-        dw_text = rf"{others['bank_name']}    {others['process_name']}    r = {str(others['round'])}"  # DEBUG 未测试
+        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['round'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -805,7 +805,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
     svg_balanceSheet.append(
         dw.Text(
             dw_text,
-            font_size=18,
+            font_size=16,
             x=width // 2,
             y=border + title_height // 2,
             text_anchor='middle',
