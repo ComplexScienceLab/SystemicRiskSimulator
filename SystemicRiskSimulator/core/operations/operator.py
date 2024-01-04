@@ -91,7 +91,6 @@ class Operator:
         sgv['round'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
-        sgv['time'] = 0  # TODO 似乎没有用到
         sgv['model_name'] = para['model_name']
         sgv['process_name'] = "START"
         sgv['test_continous_loop_of_model'] = 0
