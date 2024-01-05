@@ -14,7 +14,7 @@ if sgv['need_visualization']:
 
     pass  # if
 
-from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re, Path
+from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re, Path, deepcopy
 from SystemicRiskSimulator.tools.tools import Tools
 
 del sgv
@@ -1165,7 +1165,7 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
             pass  # for
 
         ## 设置装订的pdf之每个图在该新的分页之位置
-        page_content_positions = []
+        adjasted_page_content_positions = []
         for i in range(num_figure_in_paging_direction_per_page):
             if (
                     paging_direction != 'none'  # 如果是存在分页的情况
@@ -1177,15 +1177,15 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
                 pass  # if
             for j in range(num_figure_in_no_paging_direction_per_page):
                 if paging_direction == 'horizontal':
-                    page_content_positions.append(
+                    adjasted_page_content_positions.append(
                         fitz.Rect(single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * (i + 1), single_plot_size_in_no_paging_direction * (j + 1))
                     )
                 elif paging_direction == 'vertical':
-                    page_content_positions.append(
+                    adjasted_page_content_positions.append(
                         fitz.Rect(single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * (j + 1), single_plot_size_in_paging_direction * (i + 1))
                     )
                 elif paging_direction == 'none':
-                    page_content_positions.append(
+                    adjasted_page_content_positions.append(
                         fitz.Rect(single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * (j + 1), single_plot_size_in_paging_direction * (i + 1))
                     )
                     pass  # if
@@ -1194,11 +1194,58 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
 
         ## 将装订的pdf之每个图放到该新的分页之对应的位置
         for i_fig, page in enumerate(binded_pdf):
-            merged_pdf_page.show_pdf_page(page_content_positions[i_fig], binded_pdf, page.number)
+            merged_pdf_page.show_pdf_page(adjasted_page_content_positions[i_fig], binded_pdf, page.number)
             pass  # for
 
-        binded_pdf.close()
         pass  # for
+
+    binded_pdf.close()
+
+    ## 自适应换行
+    ## 如果分页的方向是分为每页仅仅是 1 行的情况下，考虑将每一页仅有一行的所有图像自适应换行，此时设定每一行 3 个图像。这样做的目的是防止拼接的每一页的图像显得过于狭长。
+    if num_figure_in_paging_direction_per_page == 1:
+        is_adjast_horizontal_direction = True
+        max_num_figure_for_adjast_in_no_paging_direction = 3
+        num_figure_in_no_paging_direction_per_page_for_adjast = min(max_num_figure_for_adjast_in_no_paging_direction, num_figure_in_no_paging_direction_per_page)  # 计算自适应调整之后分页的那一个方向的图片数
+        # total_figures_per_page = num_figure_in_paging_direction_per_page * num_figure_in_no_paging_direction_per_page  # 每页最大总图数
+        num_figure_in_paging_direction_per_page_for_adjast = int(np.ceil(total_figures_per_page / num_figure_in_no_paging_direction_per_page_for_adjast))  # 计算自适应调整之后不分页的那一个方向的一个页面的图片数
+    else:
+        is_adjast_horizontal_direction = False
+        pass  # if
+
+    if is_adjast_horizontal_direction:  # 创建一个新的自适应分行的 adjasted_pdf
+        adjasted_pdf = fitz.open()
+        adjasted_page_content_positions = []  # 设置自适应分行的pdf之每个图在该新的分页之位置
+        for i in range(num_figure_in_no_paging_direction_per_page_for_adjast):
+            for j in range(num_figure_in_paging_direction_per_page_for_adjast):
+                adjasted_page_content_positions.append(
+                    fitz.Rect(single_plot_size_in_no_paging_direction * i, single_plot_size_in_paging_direction * j, single_plot_size_in_no_paging_direction * (i + 1), single_plot_size_in_paging_direction * (j + 1))
+                )
+                pass  # for
+            pass  # for
+        merged_page_content_positions = []  # 设置对应的源pdf之每个图在该新的分页之位置
+        for i in range(num_figure_in_horizontal_direction_per_page):
+            for j in range(num_figure_in_vertical_direction_per_page):
+                merged_page_content_positions.append(
+                    fitz.Rect(single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * (i + 1), single_plot_size_in_no_paging_direction * (j + 1))
+                )
+                pass  # for
+            pass  # for
+        for i_page, page in enumerate(merged_pdf):  # 遍历merged_pdf中的每一页
+            adjasted_pdf_page = adjasted_pdf.new_page(
+                # -1, # 这里不需要指定页码，fitz会自动分配
+                width=single_plot_size_width * num_figure_in_no_paging_direction_per_page_for_adjast,
+                height=single_plot_size_height * num_figure_in_paging_direction_per_page_for_adjast,
+            )
+
+            for i_fig in range(total_figures_per_page):  # 将装订的pdf之每个图放到该新的分页之对应的位置
+                adjasted_pdf_page.show_pdf_page(adjasted_page_content_positions[i_fig], merged_pdf, i_page, clip=merged_page_content_positions[i_fig])
+                pass  # for
+
+            pass  # for
+
+        return adjasted_pdf
+        pass  # if
 
     return merged_pdf
 
