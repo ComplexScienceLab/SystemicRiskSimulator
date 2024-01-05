@@ -713,7 +713,8 @@ def main():
                 sgv['vis']['en_font_family'] = en_font_family
 
                 ## NOTE：设置绘制资产负债表相关的数据
-                ## 资产负债表账户数据（字典列表形式）
+
+                ### 资产负债表账户数据（字典列表形式）
                 list_accounts_data = [
                     dict(
                         data_type='asset',
@@ -893,7 +894,7 @@ def main():
                     ),
                 ]
 
-                ## 冲击数据（字典列表形式）
+                ### 冲击数据（字典列表形式）
                 list_shocks_data = [
                     dict(
                         data_type='shock_def_t',
@@ -1183,6 +1184,131 @@ def main():
                     ),
                 ]
 
+                ### 损失数据
+                list_losses_data = [
+                    dict(
+                        data_type='loss',
+                        level='level 3',
+                        subject='Loss_exIB_def_t',
+                        value=0.0,
+                        fill_color='#666666',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_P',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='loss',
+                        level='level 3',
+                        subject='Loss_IB_def_t',
+                        value=0.0,
+                        fill_color='#666666',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_IB_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='loss',
+                        level='level 2',
+                        subject='Loss_def_t',
+                        value=0.0,
+                        fill_color='#666666',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_exIB',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='loss',
+                        level='level 1',
+                        subject='Loss_t',
+                        value=0.0,
+                        fill_color='#666666',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                ]
+
+                ### 违约数据
+                list_default_data = [
+                    dict(
+                        data_type='default',
+                        level='level 3',
+                        subject='Default_exIB_s',
+                        value=0.0,
+                        fill_color='#A68E17',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_D',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='default',
+                        level='level 3',
+                        subject='Default_IB_s',
+                        value=0.0,
+                        fill_color='#A68E17',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_IB_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='default',
+                        level='level 2',
+                        subject='Default_exIB_s',
+                        value=0.0,
+                        fill_color='#A68E17',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_exIB',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='default',
+                        level='level 2',
+                        subject='Default_IB_s',
+                        value=0.0,
+                        fill_color='#A68E17',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_IB_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='default',
+                        level='level 1',
+                        subject='Default_s',
+                        value=0.0,
+                        fill_color='#A68E17',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                ]
+
                 ### 计算各银行主体之代表性的类型之数据之最大值和最小值
                 sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
                 sgv['vis']['min_BB_value_in_all_panel'] = 0
@@ -1195,6 +1321,8 @@ def main():
                         data_vis_one_bank_BalanceSheet = {}
                         data_vis_one_bank_BalanceSheet['accounts'] = pd.DataFrame(list_accounts_data)
                         data_vis_one_bank_BalanceSheet['shocks'] = pd.DataFrame(list_shocks_data)
+                        data_vis_one_bank_BalanceSheet['losses'] = pd.DataFrame(list_losses_data)
+                        data_vis_one_bank_BalanceSheet['defaults'] = pd.DataFrame(list_default_data)
 
                         tasks.append((sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
                         pass  # for

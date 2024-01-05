@@ -605,7 +605,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     """
 
-    df_accounts_data, df_shocks_data = dict_vis_data['accounts'], dict_vis_data['shocks']
+    df_accounts_data, df_shocks_data, df_losses_data, df_defaults_data = dict_vis_data['accounts'], dict_vis_data['shocks'], dict_vis_data['losses'], dict_vis_data['defaults']
 
     ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
     for account_data in df_accounts_data.itertuples():
@@ -614,7 +614,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         is_value_changed = False if np.isclose(df_accounts_data.loc[account_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
             df_accounts_data.loc[account_data.Index, 'stroke_color'] = '#000000'
-            df_accounts_data.loc[account_data.Index, 'stroke_width'] = 3
+            df_accounts_data.loc[account_data.Index, 'stroke_width'] = 2
             pass  # if
         pass  # for
 
@@ -706,24 +706,72 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         is_value_changed = False if np.isclose(df_shocks_data.loc[shock_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
             df_shocks_data.loc[shock_data.Index, 'stroke_color'] = '#000000'
-            df_shocks_data.loc[shock_data.Index, 'stroke_width'] = 6
+            df_shocks_data.loc[shock_data.Index, 'stroke_width'] = 2
             pass  # if
 
         account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == shock_data.side) & (df_accounts_data['level'] == shock_data.level) & (df_accounts_data['subject'] == shock_data.align), 'subject'].idxmax()
         account_position = df_accounts_data.loc[account_idx, 'position']
         account_size = df_accounts_data.loc[account_idx, 'size']
         df_shocks_data.at[shock_data.Index, 'size'] = (
-            int(account_size[0] * 0.4),
+            int(account_size[0] * (3 / 13)),
             int(sgv_vis['one_bank_BalanceSheet_height'] * (df_shocks_data.loc[shock_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
         )
         if shock_data.data_type[-2:] == '_t':
-            offsetScale_by_dataType = 1 / 11
+            offsetScale_by_dataType = 1 / 13
         elif shock_data.data_type[-2:] == '_s':
-            offsetScale_by_dataType = 6 / 11
+            offsetScale_by_dataType = 9 / 13
             pass  # if
         df_shocks_data.at[shock_data.Index, 'position'] = (
             account_position[0] + int(account_size[0] * offsetScale_by_dataType),
             account_position[1] + int(account_size[1] - df_shocks_data.loc[shock_data.Index, 'size'][1])
+        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
+        pass  # for
+
+    ## 计算各损失变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
+    for loss_data in df_losses_data.itertuples():
+        df_losses_data.loc[loss_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), loss_data.subject].values[0]
+        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), loss_data.subject].values[0]
+        is_value_changed = False if np.isclose(df_losses_data.loc[loss_data.Index, 'value'], value_last, atol=1e0) else True
+        if is_value_changed:
+            df_losses_data.loc[loss_data.Index, 'stroke_color'] = '#000000'
+            df_losses_data.loc[loss_data.Index, 'stroke_width'] = 2
+            pass  # if
+
+        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == loss_data.side) & (df_accounts_data['level'] == loss_data.level) & (df_accounts_data['subject'] == loss_data.align), 'subject'].idxmax()
+        account_position = df_accounts_data.loc[account_idx, 'position']
+        account_size = df_accounts_data.loc[account_idx, 'size']
+        df_losses_data.at[loss_data.Index, 'size'] = (
+            int(account_size[0] * (3 / 13)),
+            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_losses_data.loc[loss_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
+        )
+        offsetScale_by_dataType = 5 / 13
+        df_losses_data.at[loss_data.Index, 'position'] = (
+            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
+            account_position[1] + int(account_size[1] - df_losses_data.loc[loss_data.Index, 'size'][1])
+        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
+        pass  # for
+
+    ## 计算各违约变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
+    for default_data in df_defaults_data.itertuples():
+        df_defaults_data.loc[default_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), default_data.subject].values[0]
+        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), default_data.subject].values[0]
+        is_value_changed = False if np.isclose(df_defaults_data.loc[default_data.Index, 'value'], value_last, atol=1e0) else True
+        if is_value_changed:
+            df_defaults_data.loc[default_data.Index, 'stroke_color'] = '#000000'
+            df_defaults_data.loc[default_data.Index, 'stroke_width'] = 2
+            pass  # if
+
+        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == default_data.side) & (df_accounts_data['level'] == default_data.level) & (df_accounts_data['subject'] == default_data.align), 'subject'].idxmax()
+        account_position = df_accounts_data.loc[account_idx, 'position']
+        account_size = df_accounts_data.loc[account_idx, 'size']
+        df_defaults_data.at[default_data.Index, 'size'] = (
+            int(account_size[0] * (3 / 13)),
+            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_defaults_data.loc[default_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
+        )
+        offsetScale_by_dataType = 5 / 13
+        df_defaults_data.at[default_data.Index, 'position'] = (
+            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
+            account_position[1] + int(account_size[1] - df_defaults_data.loc[default_data.Index, 'size'][1])
         )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
         pass  # for
 
@@ -740,6 +788,8 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
     data = dict(
         accounts=df_accounts_data,
         shocks=df_shocks_data,
+        losses=df_losses_data,
+        defaults=df_defaults_data,
         others=others,
     )
 
@@ -762,7 +812,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         svg_balanceSheet: 单个银行的资产负债表svg格式数据
 
     """
-    accounts_data, shocks_data, others = vis_data['accounts'], vis_data['shocks'], vis_data['others']
+    accounts_data, shocks_data, losses_data, defaults_data, others = vis_data['accounts'], vis_data['shocks'], vis_data['losses'], vis_data['defaults'], vis_data['others']
 
     svg_balanceSheet = dw.Drawing(border + width + border, border + title_height + height + border, id_prefix='Balance Sheet')
 
@@ -832,7 +882,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各冲击变量之各列各项之矩形
     for shock_data in shocks_data.itertuples():
-        if shock_data.size[1] != 0:  # 如果矩形高度为0，则不绘制
+        if shock_data.value != 0:  # 如果值为0，则不绘制
             svg_balanceSheet.append(
                 dw.Rectangle(
                     x=shock_data.position[0],
@@ -843,6 +893,42 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
                     fill_opacity=1.0,
                     stroke=shock_data.stroke_color,
                     stroke_width=shock_data.stroke_width
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各损失变量之各列各项之矩形
+    for loss_data in losses_data.itertuples():
+        if loss_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Rectangle(
+                    x=loss_data.position[0],
+                    y=loss_data.position[1],
+                    width=loss_data.size[0],
+                    height=loss_data.size[1],
+                    fill=loss_data.fill_color,
+                    fill_opacity=1.0,
+                    stroke=loss_data.stroke_color,
+                    stroke_width=loss_data.stroke_width
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各违约变量之各列各项之矩形
+    for default_data in defaults_data.itertuples():
+        if default_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Rectangle(
+                    x=default_data.position[0],
+                    y=default_data.position[1],
+                    width=default_data.size[0],
+                    height=default_data.size[1],
+                    fill=default_data.fill_color,
+                    fill_opacity=1.0,
+                    stroke=default_data.stroke_color,
+                    stroke_width=default_data.stroke_width
                 )
             )
             pass  # if
@@ -865,7 +951,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各冲击变量之各列各项之文本
     for shock_data in shocks_data.itertuples():
-        if shock_data.size[1] != 0:  # 如果矩形高度为0，则不绘制
+        if shock_data.value != 0:  # 如果值为0，则不绘制
             svg_balanceSheet.append(
                 dw.Text(
                     shock_data.subject + '\n' + str(round(shock_data.value)),
@@ -873,6 +959,44 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
                     x=shock_data.position[0] + shock_data.size[0] // 3,
                     y=shock_data.position[1] + shock_data.size[1] // 3,
                     fill='blue',
+                    background='white',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各损失变量之各列各项之文本
+    for loss_data in losses_data.itertuples():
+        if loss_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Text(
+                    loss_data.subject + '\n' + str(round(loss_data.value)),
+                    font_size=18,
+                    x=loss_data.position[0] + loss_data.size[0] // 3,
+                    y=loss_data.position[1] + loss_data.size[1] // 3,
+                    fill='white',
+                    background='white',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各违约变量之各列各项之文本
+    for default_data in defaults_data.itertuples():
+        if default_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Text(
+                    default_data.subject + '\n' + str(round(default_data.value)),
+                    font_size=18,
+                    x=default_data.position[0] + default_data.size[0] // 3,
+                    y=default_data.position[1] + default_data.size[1] // 3,
+                    fill='yellow',
                     background='white',
                     text_anchor='middle',
                     dominant_baseline='middle',
