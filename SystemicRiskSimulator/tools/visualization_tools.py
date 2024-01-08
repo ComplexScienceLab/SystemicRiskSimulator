@@ -1205,11 +1205,23 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
     ## 如果分页的方向是分为每页仅仅是 1 行的情况下，考虑将每一页仅有一行的所有图像自适应换行，此时设定每一行 3 个图像。这样做的目的是防止拼接的每一页的图像显得过于狭长。
     if num_figure_in_paging_direction_per_page == 1:
         is_adjast_horizontal_direction = True
-        max_num_figure_for_adjast_in_no_paging_direction = 3
-        num_figure_in_no_paging_direction_per_page_for_adjast = min(max_num_figure_for_adjast_in_no_paging_direction, num_figure_in_no_paging_direction_per_page)  # 计算自适应调整之后分页的那一个方向的图片数
-        max_num_figure_for_adjast_in_horizontal_direction_per_page = 3
+        ### 获取当前显示器长宽比。根据总的图片数，分配与长宽比最接近的每行、每列图片数
+        from screeninfo import get_monitors
+        import math
+        monitor = get_monitors()[0]
+        width = monitor.width
+        height = monitor.height
+        aspect_ratio = width / height
+        max_num_figure_for_adjast_in_vertical_direction_per_page = max_num_figure_for_adjast_in_horizontal_direction_per_page = math.floor(math.sqrt(total_figures_per_page))
+        while max_num_figure_for_adjast_in_horizontal_direction_per_page * max_num_figure_for_adjast_in_vertical_direction_per_page < total_figures_per_page:
+            if max_num_figure_for_adjast_in_horizontal_direction_per_page / max_num_figure_for_adjast_in_vertical_direction_per_page > aspect_ratio:
+                max_num_figure_for_adjast_in_vertical_direction_per_page += 1
+            else:
+                max_num_figure_for_adjast_in_horizontal_direction_per_page += 1
+                pass  # if
+            pass  # while
+
         num_figure_for_adjast_in_horizontal_direction_per_page = min(max_num_figure_for_adjast_in_horizontal_direction_per_page, num_figure_in_no_paging_direction_per_page)  # 计算自适应调整之后分页的那一个方向的图片数
-        # total_figures_per_page = num_figure_in_paging_direction_per_page * num_figure_in_no_paging_direction_per_page  # 每页最大总图数
         num_figure_for_adjast_in_vertical_direction_per_page = int(np.ceil(total_figures_per_page / num_figure_for_adjast_in_horizontal_direction_per_page))  # 计算自适应调整之后不分页的那一个方向的一个页面的图片数
     else:
         is_adjast_horizontal_direction = False
