@@ -185,7 +185,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     pass  # function
 
 
-def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: float = 10, height: float = 10, dpi=100):
+def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: float = 10, height: float = 10, dpi: int = 72):
     """
     绘制单独的银行间矩阵热图
 
@@ -261,7 +261,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
         dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['round'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
-    ax_info.text(0.5, 1.0, dw_text, ha='center', va='center', color='black', fontsize=24)  # 在子图的中心添加文本
+    ax_info.text(0.5, 1.0, dw_text, ha='center', va='center', color='black', fontsize=16)  # 在子图的中心添加文本
 
     ## 绘制矩阵热图
     ax_matrix = fig.add_subplot(gs[2, 1])
@@ -444,7 +444,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     ### 设置各节点之尺寸、颜色、标签
     min_vertices_size_in_one_graph = (min(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最小值
     max_vertices_size_in_one_graph = (max(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最大值
-    df_vertices_data['vertices_size'] = 40.0 * np.sqrt(np.abs(np.asarray(
+    df_vertices_data['vertices_size'] = 80.0 * np.sqrt(np.abs(np.asarray(
         Tools.MinMaxScaler(
             df_vertices_data['vertices_value'].values,
             (
@@ -495,7 +495,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
         if ~(df_edges_data['edges_type'] == edgeType.edge_type).any():  # 如果指定类型的边集是空集的话则略过处理
             continue
             pass  # if
-        df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_width'] = 5.0 * np.sqrt(np.asarray(
+        df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_width'] = 10.0 * np.sqrt(np.asarray(
             Tools.MinMaxScaler(
                 df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_value'].values,
                 (
@@ -530,7 +530,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     pass  # function
 
 
-def draw_one_interbank_flow_graph(vis_data: dict, width: float = 5, height: float = 5, dpi: int = 72):
+def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: float = 10, dpi: int = 72):
     """
     绘制单独的银行间资金网络图
 
@@ -598,7 +598,7 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 5, height: floa
         layout=layout,
         edge_width=g.es['width'],
         vertex_label=g.vs['label'],
-        vertex_label_size=8,
+        vertex_label_size=16,
         # vertex_frame_color='red',
         vertex_frame_width=0.1,
         edge_label=g.es['label'],
@@ -607,7 +607,7 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 5, height: floa
         edge_color=g.es['color'],
         edge_background=None,
         edge_font=1,
-        edge_label_size=8,
+        edge_label_size=16,
     )
 
     # plt.show()  # 显示图像  #NOTE 仅在测试该功能期间使用
