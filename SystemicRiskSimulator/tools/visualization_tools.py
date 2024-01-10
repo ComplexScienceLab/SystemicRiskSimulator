@@ -122,7 +122,8 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     matrix[np.isclose(matrix, 0.0, atol=1e-4)] = 0.0
 
     ### 获取银行状态数据之颜色
-    data_banksState_color = [sgv_vis['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
+    data_banksState_color = [sgv_vis['dict_state_colors'][','.join(s)] for s in list_data_banksState]
+    # data_banksState_color = [sgv_vis['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
 
     ### 计算银行关系矩阵数据（包括债权债务关系）
     data_A_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
@@ -206,7 +207,33 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     import matplotlib.colors as colors
 
     ### 获取、调整该可视化所需要的数据
-    vector1_data, vector1_values, vector1_labels, vector1_labels_color, vector2_data, vector2_values, vector2_labels, vector2_labels_color, matrix_data, matrix_values, matrix_labels_color, others = np.flipud(vis_data['vector1_data'].astype(float)), np.flipud(vis_data['vector1_values']), np.flipud(vis_data['vector1_labels']), np.flipud(vis_data['vector1_labels_color']), vis_data['vector2_data'], vis_data['vector2_values'], vis_data['vector2_labels'], vis_data['vector2_labels_color'], np.flipud(vis_data['matrix_data'].astype(float)), np.flipud(vis_data['matrix_values']), np.flipud(vis_data['matrix_labels_color']), vis_data['others']
+    (
+        vector1_data,
+        vector1_values,
+        vector1_labels,
+        vector1_labels_color,
+        vector2_data,
+        vector2_values,
+        vector2_labels,
+        vector2_labels_color,
+        matrix_data,
+        matrix_values,
+        matrix_labels_color,
+        others
+    ) = (
+        np.flipud(vis_data['vector1_data'].astype(float)),
+        np.flipud(vis_data['vector1_values']),
+        np.flipud(vis_data['vector1_labels']),
+        np.flipud(vis_data['vector1_labels_color']),
+        vis_data['vector2_data'],
+        vis_data['vector2_values'],
+        vis_data['vector2_labels'],
+        vis_data['vector2_labels_color'],
+        np.flipud(vis_data['matrix_data'].astype(float)),
+        np.flipud(vis_data['matrix_values']),
+        np.flipud(vis_data['matrix_labels_color']),
+        vis_data['others']
+    )
 
     # ## 示例数据  #NOTE 仅在测试该功能期间使用
     # matrix_values = np.random.rand(5, 5)
