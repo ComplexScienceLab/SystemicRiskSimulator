@@ -19,7 +19,7 @@ class Processor:
     @classmethod
     def process_entity_by_execute_component(cls, model: Entity, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
-        处理所有类型的实体，通过执行组件。这个适用于非流程版形式的模型实体。
+        处理所有类型的实体，通过执行组件。这个适用于非流程版形式的模型实体。#HACK 似乎无用了。
 
         Args:
             model (Any): 模型实体（NOTE：本函数中，特指模型实例实体而不是主模型模板实体。）

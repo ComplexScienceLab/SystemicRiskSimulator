@@ -1,11 +1,14 @@
 """
 执行机
 """
+import pandas as pd
 
 from SystemicRiskSimulator.external_packages import logging
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_entity import Entity
+# from SystemicRiskSimulator.data.models.contents.content_finance import Finance
+from SystemicRiskSimulator.core.operations.collector import Collector
 
 pass  # end import
 
@@ -17,7 +20,7 @@ class Executer:
 
     ## NOTE：执行一次步进更新。
     @classmethod
-    def step_update(cls, function, update_way: str, A: SystemicRiskAgent, para: dict, sgv: dict):
+    def step_update(cls, function, update_way: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         执行一次步进更新
 
@@ -26,6 +29,7 @@ class Executer:
         Args:
             update_way (str): 更新方式
             A (SystemicRiskAgent): 多主体
+            A_data (AgentDataCollection): 多主体之数据
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
             function (function): 相关的需要步进更新的功能函数
@@ -34,13 +38,11 @@ class Executer:
             sgv (dict): 模拟器全局变量
 
         """
-        # from SystemicRiskSimulator.data.models.contents.content_finance import Finance
-        from SystemicRiskSimulator.core.operations.collector import Collector
 
         logging.debug(f"               步进：{sgv['step']}，相：{sgv['phase']}，更新源：{update_way}")
         # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         function.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
-        sgv['A_data'] = Collector.collect_agent_data(A, sgv['A_data'], sgv)
+        Collector.collect_agent_data(A, A_data, sgv)
 
         sgv['step'] += 1  # 步进加一
         sgv['phase'] += 1  # 逐相加一
@@ -51,7 +53,7 @@ class Executer:
     @classmethod
     def execute_main_model_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict, entity: Entity):
         """
-        执行非流程版本的模型实体（模型模板实体）。
+        执行非流程版本的模型实体（模型模板实体）。#HACK 似乎无用了。
 
         NOTE：输入参数将被直接修改。
 

@@ -2,7 +2,6 @@
 系统性风险模拟器入口
 """
 
-
 def simulator(config: dict):
     """
     系统性风险模拟器入口
@@ -18,7 +17,7 @@ def simulator(config: dict):
     global sgv, para
 
     # %% 首先导入相关包
-    from SystemicRiskSimulator.external_packages import os, platform, logging, warnings, Path, shutil
+    from SystemicRiskSimulator.external_packages import os, platform, logging, Path, shutil, datetime, time, subprocess, pickle, base64
     from SystemicRiskSimulator.tools.tools import Tools
 
     # %% 初始化
@@ -96,6 +95,7 @@ def simulator(config: dict):
         if sgv['is_develope_model']:
             logging.info("\n------------ 开发与调试模式！ ---------------\n")
             pass  # if
+        logging.info("\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n")
         logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
         logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
         logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
@@ -114,8 +114,12 @@ def simulator(config: dict):
 
     # %% 是否可视化结果程序
     if sgv['schedule_operation']['可视化结果程序']:
-        from SystemicRiskSimulator.programs.visualize_data_program import visualize_data_program
-        visualize_data_program(sgv)
+        sgv_pkl = pickle.dumps(sgv)
+        sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
+        start_time = time.time()
+        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/visualize_data_program.py')), sgv_base64])
+        end_time = time.time()
+        print(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
         pass  # if
 
     # %% 清理

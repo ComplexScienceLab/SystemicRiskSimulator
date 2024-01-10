@@ -64,31 +64,32 @@ class Collector:
         IB_data = pd.DataFrame()
         A_data = AgentDataCollection(BB_data, IB_data)
 
-        sgv['series_BB'] = pd.Series()
-        for i in A.BB.index:
-            sgv['series_BB'][i] = A.BB[i].copy()
-        sgv['df_BB'] = sgv['series_BB'].to_frame().transpose()
-        sgv['df_BB'].insert(loc=0, column='process_name', value=sgv['process_name'])
-        sgv['df_BB'].insert(loc=1, column='step', value=sgv['step'])
-        sgv['df_BB'].insert(loc=2, column='round', value=sgv['round'])
-        sgv['df_BB'].insert(loc=3, column='phase', value=sgv['phase'])
-        # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
-        A_data.BB = pd.concat([A_data.BB, sgv['df_BB']], ignore_index=True)
+        # sgv['series_BB'] = pd.Series()
+        # for i in A.BB.index:
+        #     sgv['series_BB'][i] = A.BB[i].copy()
+        # sgv['df_BB'] = sgv['series_BB'].to_frame().transpose()
+        # sgv['df_BB'].insert(loc=0, column='process_name', value=sgv['process_name'])
+        # sgv['df_BB'].insert(loc=1, column='step', value=sgv['step'])
+        # sgv['df_BB'].insert(loc=2, column='round', value=sgv['round'])
+        # sgv['df_BB'].insert(loc=3, column='phase', value=sgv['phase'])
+        # # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
+        # A_data.BB = pd.concat([A_data.BB, sgv['df_BB']], ignore_index=True)
+        #
+        # sgv['series_IB'] = pd.Series()
+        # for i in A.IB.index:
+        #     sgv['series_IB'][i] = A.IB[i].copy()
+        # sgv['df_IB'] = sgv['series_IB'].to_frame().transpose()
+        # sgv['df_IB'].insert(loc=0, column='process_name', value=sgv['process_name'])
+        # sgv['df_IB'].insert(loc=1, column='step', value=sgv['step'])
+        # sgv['df_IB'].insert(loc=2, column='round', value=sgv['round'])
+        # sgv['df_IB'].insert(loc=3, column='phase', value=sgv['phase'])
+        # # IB_data = pd.concat([IB_data, sgv['df_IB']], ignore_index=True)
+        # A_data.IB = pd.concat([A_data.IB, sgv['df_IB']], ignore_index=True)
+        #
+        # # A_data = pd.Series([BB_data, IB_data], index=['BB', 'IB'])
 
-        sgv['series_IB'] = pd.Series()
-        for i in A.IB.index:
-            sgv['series_IB'][i] = A.IB[i].copy()
-        sgv['df_IB'] = sgv['series_IB'].to_frame().transpose()
-        sgv['df_IB'].insert(loc=0, column='process_name', value=sgv['process_name'])
-        sgv['df_IB'].insert(loc=1, column='step', value=sgv['step'])
-        sgv['df_IB'].insert(loc=2, column='round', value=sgv['round'])
-        sgv['df_IB'].insert(loc=3, column='phase', value=sgv['phase'])
-        # IB_data = pd.concat([IB_data, sgv['df_IB']], ignore_index=True)
-        A_data.IB = pd.concat([A_data.IB, sgv['df_IB']], ignore_index=True)
-
-        # A_data = pd.Series([BB_data, IB_data], index=['BB', 'IB'])
         return A_data
-        pass
+        pass  # function
 
     @classmethod
     def collect_agent_data(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict):
@@ -109,32 +110,33 @@ class Collector:
         # BB_df = A.BB.to_frame().transpose()
         # BB = deepcopy(A.BB)
         # sgv['series_BB'] = pd.Series()
+        series_BB = pd.Series()
         for i in A.BB.index:
-            sgv['series_BB'][i] = A.BB[i].copy()
-        sgv['df_BB'] = sgv['series_BB'].to_frame().transpose()
-        sgv['df_BB'].insert(loc=0, column='process_name', value=sgv['process_name'])
-        sgv['df_BB'].insert(loc=1, column='step', value=sgv['step'])
-        sgv['df_BB'].insert(loc=2, column='round', value=sgv['round'])
-        sgv['df_BB'].insert(loc=3, column='phase', value=sgv['phase'])
-        A_data.BB = pd.concat([A_data.BB, sgv['df_BB']], ignore_index=True)
+            series_BB[i] = A.BB[i].copy()
+        df_BB = series_BB.to_frame().transpose()
+        df_BB.insert(loc=0, column='process_name', value=sgv['process_name'])
+        df_BB.insert(loc=1, column='step', value=sgv['step'])
+        df_BB.insert(loc=2, column='round', value=sgv['round'])
+        df_BB.insert(loc=3, column='phase', value=sgv['phase'])
+        A_data.BB = pd.concat([A_data.BB, df_BB], ignore_index=True)
         # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
 
         # IB_df = A.IB.to_frame().transpose()
         # IB = deepcopy(A.IB)
-        # sgv['series_IB'] = pd.Series()
+        series_IB = pd.Series()
         for i in A.IB.index:
-            sgv['series_IB'][i] = A.IB[i].copy()
-        sgv['df_IB'] = sgv['series_IB'].to_frame().transpose()
-        sgv['df_IB'].insert(loc=0, column='process_name', value=sgv['process_name'])
-        sgv['df_IB'].insert(loc=1, column='step', value=sgv['step'])
-        sgv['df_IB'].insert(loc=2, column='round', value=sgv['round'])
-        sgv['df_IB'].insert(loc=3, column='phase', value=sgv['phase'])
-        A_data.IB = pd.concat([A_data.IB, sgv['df_IB']], ignore_index=True)
+            series_IB[i] = A.IB[i].copy()
+        df_IB = series_IB.to_frame().transpose()
+        df_IB.insert(loc=0, column='process_name', value=sgv['process_name'])
+        df_IB.insert(loc=1, column='step', value=sgv['step'])
+        df_IB.insert(loc=2, column='round', value=sgv['round'])
+        df_IB.insert(loc=3, column='phase', value=sgv['phase'])
+        A_data.IB = pd.concat([A_data.IB, df_IB], ignore_index=True)
         # IB_data = pd.concat([IB_data, IB_df], ignore_index=True)
 
         # A_data.BB, A_data.IB = BB_data, IB_data
-        return A_data
-        pass
+        # return A_data
+        pass  # function
 
     @classmethod
     def export_agent_data(cls, A_data: AgentDataCollection, sgv: dict):
@@ -172,7 +174,8 @@ class Collector:
     #         sgv (dict): 模拟器全局变量
     #
     #     Returns:
-    #         A_data: 待收集的数据
+    #         A_data: 待收集的
+    #         数据
     #
     #     """
     #     BB_data_item = dict(

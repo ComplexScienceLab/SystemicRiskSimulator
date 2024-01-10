@@ -109,6 +109,9 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     # Loss_IB_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产负债违约损失冲击损失源头 Loss_IB_def_s
     Loss_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失目标 Loss_IB_run_t
     # Loss_IB_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失源头 Loss_IB_run_s
+    Default_IB_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间违约量 Default_IB_s
+    Default_exIB_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间存款违约量 Default_exIB_s
+    Default_s = np.NaN  # = deepcopy(ZEROS1)  # 银行总违约量 Default_s
     on = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否存在 is_on
     off = np.NaN  # = deepcopy(FALSE1)  # 示性向量之于银行是否已退出不存在 is_off
     hel = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否健康 is_healthy
@@ -159,6 +162,7 @@ class BankInterbank(BaseInterAgents):
     Loss_IB = np.NaN  # 银行间市场冲击损失 Loss_IB
     Loss_IB_def = np.NaN  # 银行间资产负债违约冲击损失 Loss_IB_def
     Loss_IB_run = np.NaN  # 银行间负债流动性挤兑冲击损失 Loss_IB_run
+    Default_IB = np.NaN  # 银行间违约量 Default_IB
     is_exposure = np.NaN  # 信息邻接矩阵之于是否有银行间敞口 is_exposure
     on = np.NaN  # 信息邻接矩阵之于银行间存在的 is_on
     off = np.NaN  # 信息邻接矩阵之于银行间已退出不存在的 is_off

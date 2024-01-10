@@ -14,8 +14,10 @@ if sgv['need_visualization']:
 
     pass  # if
 
-from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re, Path
+from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re, Path, deepcopy
 from SystemicRiskSimulator.tools.tools import Tools
+
+del sgv
 
 
 def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, colormap: tuple, relations: str, time: int, dataName: tuple, sgv_vis: dict):
@@ -120,7 +122,8 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     matrix[np.isclose(matrix, 0.0, atol=1e-4)] = 0.0
 
     ### 获取银行状态数据之颜色
-    data_banksState_color = [sgv['vis']['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
+    data_banksState_color = [sgv_vis['dict_state_colors'][','.join(s)] for s in list_data_banksState]
+    # data_banksState_color = [sgv_vis['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
 
     ### 计算银行关系矩阵数据（包括债权债务关系）
     data_A_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
@@ -132,10 +135,10 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     data_banksRelation_color = np.full((data_vector1.size, data_vector2.size), '#FFFFFF', dtype=object)
     if relations == 'cre':
         data_banksRelation = data_creditors
-        relation_color = sgv['vis']['dict_relation_colors']['cre']
+        relation_color = sgv_vis['dict_relation_colors']['cre']
     elif relations == 'deb':
         data_banksRelation = data_debtors
-        relation_color = sgv['vis']['dict_relation_colors']['deb']
+        relation_color = sgv_vis['dict_relation_colors']['deb']
         pass  # if
     for i in range(data_banksRelation_color.shape[0]):
         for j in range(data_banksRelation_color.shape[1]):
@@ -151,6 +154,17 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     colormap_max_value = sgv_vis['max_BB_value_in_all_panel']
     colormap_max_color = colormap[1]
 
+    ### 生成其他信息
+    others = dict(
+        color_map=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color),
+        time_granularity=sgv_vis['time_granularity'],
+        data_name=dataName_matrix,
+        process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
+        step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
+        round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],
+        phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
+    )
+
     ### 汇总生成的数据
     data = dict(
         vector1_data=vector1,
@@ -164,7 +178,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
         matrix_data=matrix.reshape(data_vector1.size, data_vector2.size),
         matrix_values=data_matrix.reshape(data_vector1.size, data_vector2.size),
         matrix_labels_color=data_banksRelation_color,
-        colormap=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color),
+        others=others,
     )
 
     return data
@@ -193,7 +207,33 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     import matplotlib.colors as colors
 
     ### 获取、调整该可视化所需要的数据
-    vector1_data, vector1_values, vector1_labels, vector1_labels_color, vector2_data, vector2_values, vector2_labels, vector2_labels_color, matrix_data, matrix_values, matrix_labels_color, color_map = np.flipud(vis_data['vector1_data'].astype(float)), np.flipud(vis_data['vector1_values']), np.flipud(vis_data['vector1_labels']), np.flipud(vis_data['vector1_labels_color']), vis_data['vector2_data'], vis_data['vector2_values'], vis_data['vector2_labels'], vis_data['vector2_labels_color'], np.flipud(vis_data['matrix_data'].astype(float)), np.flipud(vis_data['matrix_values']), np.flipud(vis_data['matrix_labels_color']), vis_data['colormap']
+    (
+        vector1_data,
+        vector1_values,
+        vector1_labels,
+        vector1_labels_color,
+        vector2_data,
+        vector2_values,
+        vector2_labels,
+        vector2_labels_color,
+        matrix_data,
+        matrix_values,
+        matrix_labels_color,
+        others
+    ) = (
+        np.flipud(vis_data['vector1_data'].astype(float)),
+        np.flipud(vis_data['vector1_values']),
+        np.flipud(vis_data['vector1_labels']),
+        np.flipud(vis_data['vector1_labels_color']),
+        vis_data['vector2_data'],
+        vis_data['vector2_values'],
+        vis_data['vector2_labels'],
+        vis_data['vector2_labels_color'],
+        np.flipud(vis_data['matrix_data'].astype(float)),
+        np.flipud(vis_data['matrix_values']),
+        np.flipud(vis_data['matrix_labels_color']),
+        vis_data['others']
+    )
 
     # ## 示例数据  #NOTE 仅在测试该功能期间使用
     # matrix_values = np.random.rand(5, 5)
@@ -205,8 +245,8 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     # vector2_labels = ['bank1', 'bank2', 'bank3', 'bank4', 'bank5']
 
     ## 创建自定义的颜色映射
-    cmap = LinearSegmentedColormap.from_list('custom', [(0, color_map[1]), (1, color_map[3])], N=256)
-    norm_color_data = colors.Normalize(vmin=color_map[0], vmax=color_map[2])
+    cmap = LinearSegmentedColormap.from_list('custom', [(0, others['color_map'][1]), (1, others['color_map'][3])], N=256)
+    norm_color_data = colors.Normalize(vmin=others['color_map'][0], vmax=others['color_map'][2])
 
     ## 创建 Figure、GridSpec
     fig = plt.figure(figsize=(width, height), dpi=dpi)
@@ -215,10 +255,10 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ## 添加标题与相关的信息
     ax_info = fig.add_subplot(gs[0, :])  # 创建一个新的子图，覆盖整个图像的顶部
     ax_info.axis('off')
-    if sgv_vis['time_granularity'] == '步进粒度':
-        dw_text = f"{sgv_vis['data_name'][2]}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}    s = {str(sgv_vis['step'])}    p = {str(sgv_vis['phase'])}"
-    elif sgv_vis['time_granularity'] == '轮次粒度':
-        dw_text = f"{sgv_vis['data_name'][2]}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}"  # TODO 未测试
+    if others['time_granularity'] == '步进粒度':
+        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['round'])}    s={str(others['step'])}    p={str(others['phase'])}"
+    elif others['time_granularity'] == '轮次粒度':
+        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['round'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
     ax_info.text(0.5, 1.0, dw_text, ha='center', va='center', color='black', fontsize=24)  # 在子图的中心添加文本
@@ -237,9 +277,9 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
             if i == matrix_data.shape[1] - 1 - j:
                 continue
             if matrix_values[i, j] == 0:
-                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color=matrix_labels_color[i, j], fontsize=28, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor=matrix_labels_color[i, j], boxstyle='round,pad=0.3'))
+                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color=matrix_labels_color[i, j], fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor=matrix_labels_color[i, j], boxstyle='round,pad=0.3'))
             else:
-                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='black', fontsize=28, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor='black', boxstyle='round,pad=0.3'))
+                ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor='black', boxstyle='round,pad=0.3'))
                 pass  # if
             pass  # for
         pass  # for
@@ -256,9 +296,9 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     for i in range(vector1_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector1_values[i] == 0:
             # continue
-            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color=vector1_labels_color[i], fontsize=28, bbox=dict(facecolor=vector1_labels_color[i], edgecolor=vector1_labels_color[i], boxstyle='round,pad=0.3'))
+            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color=vector1_labels_color[i], fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor=vector1_labels_color[i], boxstyle='round,pad=0.3'))
         else:
-            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='black', fontsize=28, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
             pass  # if
         pass  # for
 
@@ -275,17 +315,17 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     for i in range(vector2_data.shape[0]):  # 在每个方格中添加文本显示值
         if vector2_values[i] == 0:
             # continue
-            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color=vector2_labels_color[i], fontsize=28, bbox=dict(facecolor=vector2_labels_color[i], edgecolor=vector2_labels_color[i], boxstyle='round,pad=0.3'))
+            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color=vector2_labels_color[i], fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor=vector2_labels_color[i], boxstyle='round,pad=0.3'))
         else:
-            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='black', fontsize=28, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
+            ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
             pass  # if
         pass  # for
 
     ## 在热图的右侧手动添加颜色条
     cbar_ax = fig.add_axes([0.875, 0.1, 0.03, 0.7])
     cbar = fig.colorbar(im_matrix, cax=cbar_ax)
-    ticks_cbar = Tools.MinMaxScaler(np.linspace(color_map[0], color_map[2], 10), (0, 1))
-    labels_cbar = [f'{tick:.0f}' for tick in np.linspace(color_map[0], color_map[2], 10)]
+    ticks_cbar = Tools.MinMaxScaler(np.linspace(others['color_map'][0], others['color_map'][2], 10), (0, 1))
+    labels_cbar = [f'{tick:.0f}' for tick in np.linspace(others['color_map'][0], others['color_map'][2], 10)]
     cbar.set_ticks(ticks_cbar)
     cbar.set_ticklabels(labels_cbar)
 
@@ -387,7 +427,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
 
     ### 初始化各节点之标签、尺寸、颜色
     list_vertices_label = [''] * len(list_vertices)
-    list_vertices_size = [0] * len(list_vertices)
+    list_vertices_size = [0.0] * len(list_vertices)
     list_vertices_color = ['#000000'] * len(list_vertices)
 
     ### 节点数据框
@@ -432,7 +472,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
 
     ### 初始化各边之标签、宽度、颜色
     list_edges_label = [''] * len(list_edges_idx)
-    list_edges_width = [0] * len(list_edges_idx)
+    list_edges_width = [0.0] * len(list_edges_idx)
     list_edges_color = ['#000000'] * len(list_edges_idx)
 
     ### 边数据框
@@ -455,7 +495,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
         if ~(df_edges_data['edges_type'] == edgeType.edge_type).any():  # 如果指定类型的边集是空集的话则略过处理
             continue
             pass  # if
-        df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_width'] = 5.0 * np.sqrt(np.asarray(  # BUG 警告：【FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value 'XXXX.XX' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.】
+        df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_width'] = 5.0 * np.sqrt(np.asarray(
             Tools.MinMaxScaler(
                 df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_value'].values,
                 (
@@ -468,21 +508,34 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
         df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_label'] = [f'{round(v)}' for i, v in enumerate(df_edges_data.loc[(df_edges_data['edges_type'] == edgeType.edge_type), 'edges_value'])]  # 设置各边之标签
         pass  # for
 
-    data = {}  # 待使用的图数据
-    data['edge_types'] = df_data_edgeTypes
-    data['vertices'] = df_vertices_data
-    data['edges'] = df_edges_data
+    ## 生成其他信息
+    others = dict(
+        time_granularity=sgv_vis['time_granularity'],
+        data_name=data_name,
+        process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
+        step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
+        round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],
+        phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
+    )
+
+    # 待使用的图数据
+    data = dict(
+        edge_types=df_data_edgeTypes,
+        vertices=df_vertices_data,
+        edges=df_edges_data,
+        others=others,
+    )
+
     return data
     pass  # function
 
 
-def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 5, height: float = 5, dpi: int = 72):
+def draw_one_interbank_flow_graph(vis_data: dict, width: float = 5, height: float = 5, dpi: int = 72):
     """
     绘制单独的银行间资金网络图
 
     Args:
         vis_data (dict): 网络流数据集
-        sgv_vis (dict): 模拟器全局变量
         width (float): 图片宽度（英寸）
         height (float): 图片高度（英寸）
         dpi (int): DPI
@@ -492,7 +545,7 @@ def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 
         fig: matplotlib格式的图像对象
 
     """
-    vertices_data, edges_data = vis_data['vertices'], vis_data['edges']
+    edge_types, vertices_data, edges_data, others = vis_data['edge_types'], vis_data['vertices'], vis_data['edges'], vis_data['others']
 
     ## 创建图对象
     g = ig.Graph(
@@ -500,10 +553,10 @@ def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 
     )
 
     ## 绘制标题
-    if sgv_vis['time_granularity'] == '步进粒度':
-        dw_text = rf"{sgv_vis['data_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}    s = {str(sgv_vis['step'])}    p = {str(sgv_vis['phase'])}"
-    elif sgv_vis['time_granularity'] == '轮次粒度':
-        dw_text = rf"{sgv_vis['data_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}"  # DEBUG 未测试
+    if others['time_granularity'] == '步进粒度':
+        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['round'])}   s={str(others['step'])}   p={str(others['phase'])}"
+    elif others['time_granularity'] == '轮次粒度':
+        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['round'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -515,7 +568,7 @@ def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 
     # ## 设置图之顶点与边之数值
     # g.vs['name'] = vertices_data['banks_name']
     # g.vs['health_state'] = vertices_data['data_banksState']
-    # g.vs[(sgv_vis['data_name'] + '_all')] = vis_data['vertices_data_value']
+    # g.vs[(others['data_name'] + '_all')] = vis_data['vertices_data_value']
     # g.es[sgv_vis['data_name']] = vis_data['edges_data_value']
     # g.es['type']
     # # del g.es['A_IB']
@@ -529,11 +582,11 @@ def draw_one_interbank_flow_graph(vis_data: dict, sgv_vis: dict, width: float = 
     g.es['width'] = edges_data['edges_width']
 
     ## 生成可视化图
-    fig, ax = plt.subplots(  # BUG 运行警告：RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+    fig, ax = plt.subplots(
         figsize=(width, height),
         dpi=dpi,
     )
-    fig.suptitle(dw_text)
+    fig.suptitle(dw_text, fontsize=16)
     # ax.set_title = vis_data['banks_name']
     layout = g.layout(layout='auto')
     # layout = g.layout(layout='circle')
@@ -579,27 +632,16 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     """
 
-    df_accounts_data, df_shocks_data = dict_vis_data['accounts'], dict_vis_data['shocks']
-
-    # sgv_vis['max_value_BB'] = 0  # 获取资产负债数据之最大值
-    # for i in range(sgv_vis['num_items_in_a_time_in_BB']):  # 计算资产负债数据最值
-    #     for t in range(sgv_vis['num_time']):
-    #         if df_BB[(df_BB[sgv_vis['name_time']] == t) & (df_BB['id_agent'] == i)]['A_all'].values[0] > sgv_vis['max_value_BB']:
-    #             sgv_vis['max_value_BB'] = df_BB[(df_BB[sgv_vis['name_time']] == t) & (df_BB['id_agent'] == i)]['A_all'].values[0]
-    #         if df_BB[(df_BB[sgv_vis['name_time']] == t) & (df_BB['id_agent'] == i)]['Z_all'].values[0] > sgv_vis['max_value_BB']:
-    #             sgv_vis['max_value_BB'] = df_BB[(df_BB[sgv_vis['name_time']] == t) & (df_BB['id_agent'] == i)]['Z_all'].values[0]
-    #             pass  # if
-    #         pass  # for
-    #     pass  # for
+    df_accounts_data, df_shocks_data, df_losses_data, df_defaults_data = dict_vis_data['accounts'], dict_vis_data['shocks'], dict_vis_data['losses'], dict_vis_data['defaults']
 
     ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
     for account_data in df_accounts_data.itertuples():
-        df_accounts_data.loc[account_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]  # BUG 警告：【FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value 'XXXX.XX' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.】
+        df_accounts_data.loc[account_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
         value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
         is_value_changed = False if np.isclose(df_accounts_data.loc[account_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
             df_accounts_data.loc[account_data.Index, 'stroke_color'] = '#000000'
-            df_accounts_data.loc[account_data.Index, 'stroke_width'] = 6
+            df_accounts_data.loc[account_data.Index, 'stroke_width'] = 2
             pass  # if
         pass  # for
 
@@ -686,25 +728,25 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     ## 计算各冲击变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
     for shock_data in df_shocks_data.itertuples():
-        df_shocks_data.loc[shock_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), shock_data.subject].values[0]  # BUG 警告：【FutureWarning: Setting an item of incompatible dtype is deprecated and will raise in a future error of pandas. Value 'XXXX.XX' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.】
+        df_shocks_data.loc[shock_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), shock_data.subject].values[0]
         value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), shock_data.subject].values[0]
         is_value_changed = False if np.isclose(df_shocks_data.loc[shock_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
             df_shocks_data.loc[shock_data.Index, 'stroke_color'] = '#000000'
-            df_shocks_data.loc[shock_data.Index, 'stroke_width'] = 6
+            df_shocks_data.loc[shock_data.Index, 'stroke_width'] = 2
             pass  # if
 
         account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == shock_data.side) & (df_accounts_data['level'] == shock_data.level) & (df_accounts_data['subject'] == shock_data.align), 'subject'].idxmax()
         account_position = df_accounts_data.loc[account_idx, 'position']
         account_size = df_accounts_data.loc[account_idx, 'size']
         df_shocks_data.at[shock_data.Index, 'size'] = (
-            int(account_size[0] * 0.4),
+            int(account_size[0] * (3 / 13)),
             int(sgv_vis['one_bank_BalanceSheet_height'] * (df_shocks_data.loc[shock_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
         )
         if shock_data.data_type[-2:] == '_t':
-            offsetScale_by_dataType = 1 / 11
+            offsetScale_by_dataType = 1 / 13
         elif shock_data.data_type[-2:] == '_s':
-            offsetScale_by_dataType = 6 / 11
+            offsetScale_by_dataType = 9 / 13
             pass  # if
         df_shocks_data.at[shock_data.Index, 'position'] = (
             account_position[0] + int(account_size[0] * offsetScale_by_dataType),
@@ -712,9 +754,72 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
         pass  # for
 
-    data = {}
-    data['accounts'] = df_accounts_data
-    data['shocks'] = df_shocks_data
+    ## 计算各损失变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
+    for loss_data in df_losses_data.itertuples():
+        df_losses_data.loc[loss_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), loss_data.subject].values[0]
+        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), loss_data.subject].values[0]
+        is_value_changed = False if np.isclose(df_losses_data.loc[loss_data.Index, 'value'], value_last, atol=1e0) else True
+        if is_value_changed:
+            df_losses_data.loc[loss_data.Index, 'stroke_color'] = '#000000'
+            df_losses_data.loc[loss_data.Index, 'stroke_width'] = 2
+            pass  # if
+
+        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == loss_data.side) & (df_accounts_data['level'] == loss_data.level) & (df_accounts_data['subject'] == loss_data.align), 'subject'].idxmax()
+        account_position = df_accounts_data.loc[account_idx, 'position']
+        account_size = df_accounts_data.loc[account_idx, 'size']
+        df_losses_data.at[loss_data.Index, 'size'] = (
+            int(account_size[0] * (3 / 13)),
+            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_losses_data.loc[loss_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
+        )
+        offsetScale_by_dataType = 5 / 13
+        df_losses_data.at[loss_data.Index, 'position'] = (
+            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
+            account_position[1] + int(account_size[1] - df_losses_data.loc[loss_data.Index, 'size'][1])
+        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
+        pass  # for
+
+    ## 计算各违约变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
+    for default_data in df_defaults_data.itertuples():
+        df_defaults_data.loc[default_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), default_data.subject].values[0]
+        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), default_data.subject].values[0]
+        is_value_changed = False if np.isclose(df_defaults_data.loc[default_data.Index, 'value'], value_last, atol=1e0) else True
+        if is_value_changed:
+            df_defaults_data.loc[default_data.Index, 'stroke_color'] = '#000000'
+            df_defaults_data.loc[default_data.Index, 'stroke_width'] = 2
+            pass  # if
+
+        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == default_data.side) & (df_accounts_data['level'] == default_data.level) & (df_accounts_data['subject'] == default_data.align), 'subject'].idxmax()
+        account_position = df_accounts_data.loc[account_idx, 'position']
+        account_size = df_accounts_data.loc[account_idx, 'size']
+        df_defaults_data.at[default_data.Index, 'size'] = (
+            int(account_size[0] * (3 / 13)),
+            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_defaults_data.loc[default_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
+        )
+        offsetScale_by_dataType = 5 / 13
+        df_defaults_data.at[default_data.Index, 'position'] = (
+            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
+            account_position[1] + int(account_size[1] - df_defaults_data.loc[default_data.Index, 'size'][1])
+        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
+        pass  # for
+
+    ## 生成其他信息
+    others = dict(
+        time_granularity=sgv_vis['time_granularity'],
+        bank_name=df_BB[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['name'].values[0],
+        process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
+        step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
+        round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],
+        phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
+    )
+
+    data = dict(
+        accounts=df_accounts_data,
+        shocks=df_shocks_data,
+        losses=df_losses_data,
+        defaults=df_defaults_data,
+        others=others,
+    )
+
     return data
     pass  # function
 
@@ -734,7 +839,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         svg_balanceSheet: 单个银行的资产负债表svg格式数据
 
     """
-    accounts_data, shocks_data = vis_data['accounts'], vis_data['shocks']
+    accounts_data, shocks_data, losses_data, defaults_data, others = vis_data['accounts'], vis_data['shocks'], vis_data['losses'], vis_data['defaults'], vis_data['others']
 
     svg_balanceSheet = dw.Drawing(border + width + border, border + title_height + height + border, id_prefix='Balance Sheet')
 
@@ -766,10 +871,10 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
     # )
 
     ## 绘制标题
-    if sgv_vis['time_granularity'] == '步进粒度':
-        dw_text = rf"{sgv_vis['bank_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}    s = {str(sgv_vis['step'])}    p = {str(sgv_vis['phase'])}"
-    elif sgv_vis['time_granularity'] == '轮次粒度':
-        dw_text = rf"{sgv_vis['bank_name']}    {sgv_vis['process_name']}    r = {str(sgv_vis['round'])}"  # DEBUG 未测试
+    if others['time_granularity'] == '步进粒度':
+        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['round'])}   s={str(others['step'])}   p={str(others['phase'])}"
+    elif others['time_granularity'] == '轮次粒度':
+        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['round'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -777,7 +882,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
     svg_balanceSheet.append(
         dw.Text(
             dw_text,
-            font_size=18,
+            font_size=16,
             x=width // 2,
             y=border + title_height // 2,
             text_anchor='middle',
@@ -804,7 +909,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各冲击变量之各列各项之矩形
     for shock_data in shocks_data.itertuples():
-        if shock_data.size[1] != 0:  # 如果矩形高度为0，则不绘制
+        if shock_data.value != 0:  # 如果值为0，则不绘制
             svg_balanceSheet.append(
                 dw.Rectangle(
                     x=shock_data.position[0],
@@ -815,6 +920,42 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
                     fill_opacity=1.0,
                     stroke=shock_data.stroke_color,
                     stroke_width=shock_data.stroke_width
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各损失变量之各列各项之矩形
+    for loss_data in losses_data.itertuples():
+        if loss_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Rectangle(
+                    x=loss_data.position[0],
+                    y=loss_data.position[1],
+                    width=loss_data.size[0],
+                    height=loss_data.size[1],
+                    fill=loss_data.fill_color,
+                    fill_opacity=1.0,
+                    stroke=loss_data.stroke_color,
+                    stroke_width=loss_data.stroke_width
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各违约变量之各列各项之矩形
+    for default_data in defaults_data.itertuples():
+        if default_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Rectangle(
+                    x=default_data.position[0],
+                    y=default_data.position[1],
+                    width=default_data.size[0],
+                    height=default_data.size[1],
+                    fill=default_data.fill_color,
+                    fill_opacity=1.0,
+                    stroke=default_data.stroke_color,
+                    stroke_width=default_data.stroke_width
                 )
             )
             pass  # if
@@ -837,7 +978,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各冲击变量之各列各项之文本
     for shock_data in shocks_data.itertuples():
-        if shock_data.size[1] != 0:  # 如果矩形高度为0，则不绘制
+        if shock_data.value != 0:  # 如果值为0，则不绘制
             svg_balanceSheet.append(
                 dw.Text(
                     shock_data.subject + '\n' + str(round(shock_data.value)),
@@ -845,6 +986,44 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
                     x=shock_data.position[0] + shock_data.size[0] // 3,
                     y=shock_data.position[1] + shock_data.size[1] // 3,
                     fill='blue',
+                    background='white',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各损失变量之各列各项之文本
+    for loss_data in losses_data.itertuples():
+        if loss_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Text(
+                    loss_data.subject + '\n' + str(round(loss_data.value)),
+                    font_size=18,
+                    x=loss_data.position[0] + loss_data.size[0] // 3,
+                    y=loss_data.position[1] + loss_data.size[1] // 3,
+                    fill='white',
+                    background='white',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各违约变量之各列各项之文本
+    for default_data in defaults_data.itertuples():
+        if default_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Text(
+                    default_data.subject + '\n' + str(round(default_data.value)),
+                    font_size=18,
+                    x=default_data.position[0] + default_data.size[0] // 3,
+                    y=default_data.position[1] + default_data.size[1] // 3,
+                    fill='yellow',
                     background='white',
                     text_anchor='middle',
                     dominant_baseline='middle',
@@ -1013,7 +1192,7 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
             pass  # for
 
         ## 设置装订的pdf之每个图在该新的分页之位置
-        page_content_positions = []
+        adjasted_page_content_positions = []
         for i in range(num_figure_in_paging_direction_per_page):
             if (
                     paging_direction != 'none'  # 如果是存在分页的情况
@@ -1025,15 +1204,15 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
                 pass  # if
             for j in range(num_figure_in_no_paging_direction_per_page):
                 if paging_direction == 'horizontal':
-                    page_content_positions.append(
+                    adjasted_page_content_positions.append(
                         fitz.Rect(single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * (i + 1), single_plot_size_in_no_paging_direction * (j + 1))
                     )
                 elif paging_direction == 'vertical':
-                    page_content_positions.append(
+                    adjasted_page_content_positions.append(
                         fitz.Rect(single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * (j + 1), single_plot_size_in_paging_direction * (i + 1))
                     )
                 elif paging_direction == 'none':
-                    page_content_positions.append(
+                    adjasted_page_content_positions.append(
                         fitz.Rect(single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * (j + 1), single_plot_size_in_paging_direction * (i + 1))
                     )
                     pass  # if
@@ -1042,16 +1221,73 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
 
         ## 将装订的pdf之每个图放到该新的分页之对应的位置
         for i_fig, page in enumerate(binded_pdf):
-            merged_pdf_page.show_pdf_page(page_content_positions[i_fig], binded_pdf, page.number)
+            merged_pdf_page.show_pdf_page(adjasted_page_content_positions[i_fig], binded_pdf, page.number)
             pass  # for
 
-        binded_pdf.close()
         pass  # for
 
-    return merged_pdf
+    binded_pdf.close()
 
-    # ## 保存
-    # merged_pdf.save(Path(sgv['folderpath_plots_makeup_heatmaps'], 'IB_exp=' + str(i_exp) + '.pdf'))
-    # merged_pdf.close()
+    ## 自适应换行
+    ## 如果分页的方向是分为每页仅仅是 1 行的情况下，考虑将每一页仅有一行的所有图像自适应换行，此时设定每一行 3 个图像。这样做的目的是防止拼接的每一页的图像显得过于狭长。
+    if num_figure_in_paging_direction_per_page == 1:
+        is_adjast_horizontal_direction = True
+        ### 获取当前显示器长宽比。根据总的图片数，分配与长宽比最接近的每行、每列图片数
+        from screeninfo import get_monitors
+        import math
+        monitor = get_monitors()[0]
+        width = monitor.width
+        height = monitor.height
+        aspect_ratio = width / height
+        max_num_figure_for_adjast_in_vertical_direction_per_page = max_num_figure_for_adjast_in_horizontal_direction_per_page = math.floor(math.sqrt(total_figures_per_page))
+        while max_num_figure_for_adjast_in_horizontal_direction_per_page * max_num_figure_for_adjast_in_vertical_direction_per_page < total_figures_per_page:
+            if max_num_figure_for_adjast_in_horizontal_direction_per_page / max_num_figure_for_adjast_in_vertical_direction_per_page > aspect_ratio:
+                max_num_figure_for_adjast_in_vertical_direction_per_page += 1
+            else:
+                max_num_figure_for_adjast_in_horizontal_direction_per_page += 1
+                pass  # if
+            pass  # while
+
+        num_figure_for_adjast_in_horizontal_direction_per_page = min(max_num_figure_for_adjast_in_horizontal_direction_per_page, num_figure_in_no_paging_direction_per_page)  # 计算自适应调整之后分页的那一个方向的图片数
+        num_figure_for_adjast_in_vertical_direction_per_page = int(np.ceil(total_figures_per_page / num_figure_for_adjast_in_horizontal_direction_per_page))  # 计算自适应调整之后不分页的那一个方向的一个页面的图片数
+    else:
+        is_adjast_horizontal_direction = False
+        pass  # if
+
+    if is_adjast_horizontal_direction:  # 创建一个新的自适应分行的 adjasted_pdf
+        adjasted_pdf = fitz.open()
+        adjasted_page_content_positions = []  # 设置自适应分行的pdf之每个图在该新的分页之位置
+        for i in range(num_figure_for_adjast_in_vertical_direction_per_page):
+            for j in range(num_figure_for_adjast_in_horizontal_direction_per_page):
+                adjasted_page_content_positions.append(
+                    fitz.Rect(single_plot_size_width * j, single_plot_size_height * i, single_plot_size_width * (j + 1), single_plot_size_height * (i + 1))
+                )
+                pass  # for
+            pass  # for
+        merged_page_content_positions = []  # 设置对应的源pdf之每个图在该新的分页之位置
+        for i in range(num_figure_in_paging_direction_per_page):
+            for j in range(num_figure_in_no_paging_direction_per_page):
+                merged_page_content_positions.append(
+                    fitz.Rect(single_plot_size_in_no_paging_direction * j, single_plot_size_in_paging_direction * i, single_plot_size_in_no_paging_direction * (j + 1), single_plot_size_in_paging_direction * (i + 1))
+                )
+                pass  # for
+            pass  # for
+        for i_page, page in enumerate(merged_pdf):  # 遍历merged_pdf中的每一页
+            adjasted_pdf_page = adjasted_pdf.new_page(
+                # -1, # 这里不需要指定页码，fitz会自动分配
+                width=single_plot_size_width * num_figure_for_adjast_in_horizontal_direction_per_page,
+                height=single_plot_size_height * num_figure_for_adjast_in_vertical_direction_per_page,
+            )
+
+            for i_fig in range(total_figures_per_page):  # 将装订的pdf之每个图放到该新的分页之对应的位置
+                adjasted_pdf_page.show_pdf_page(adjasted_page_content_positions[i_fig], merged_pdf, i_page, clip=merged_page_content_positions[i_fig])
+                pass  # for
+
+            pass  # for
+
+        return adjasted_pdf
+        pass  # if
+
+    return merged_pdf
 
     pass  # function

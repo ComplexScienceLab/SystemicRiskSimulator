@@ -18,7 +18,10 @@ def experiments_program(sgv: dict, para: dict):
     """
 
     # %% 预安装模型、数据，运行实验组
-    warnings.filterwarnings("ignore")
+
+    if sgv['is_ignore_warning']:
+        warnings.filterwarnings("ignore")  # 忽略警告
+
     ## 初始化、构建、安装模型
     sgv, models = Operator.operate_installing(sgv, para)
     ## 运行实验组
@@ -61,5 +64,8 @@ def experiments_program(sgv: dict, para: dict):
             print("Unsupported operating system")
             pass  # if
         pass  # if
+
+    if sgv['is_ignore_warning']:
+        warnings.filterwarnings("default")  # 恢复警告
 
     pass  # function
