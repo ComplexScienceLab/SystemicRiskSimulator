@@ -131,7 +131,7 @@ def main():
     sgv['folderpath_plots_makeup_balanceSheets'] = Path(sgv['folderpath_plots'], sgv['foldername_plots_makeup_balanceSheets'])
     sgv['folderpath_plots_makeup_balanceSheets'].mkdir(parents=True, exist_ok=True)
 
-    # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV格式数据。
+    # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。
 
     # %%
 
@@ -172,8 +172,11 @@ def main():
             filename_pkl_BB = Path(filepath_pkl_BB).name
             filename_pkl_BB_panel = filename_pkl_BB.replace('BB_', 'BB_panel_')
             filepath_pkl_BB_panal = Path(sgv['folderpath_plots'], filename_pkl_BB_panel)  # 面板数据文件路径
-            df_BB_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为pkl格式
-            df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为csv格式；
+            df_BB_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为 pkl 格式
+            df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
+            with pd.ExcelWriter(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+                df_BB_panel.to_excel(writer, sheet_name='BB_panel')
+                pass  # with
             pass  # for
 
         list_filepath_pkl_IB = list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
@@ -246,8 +249,11 @@ def main():
             filename_pkl_IB = Path(filepath_pkl_IB).name
             filename_pkl_IB_panel = filename_pkl_IB.replace('IB_', 'IB_panel_')
             filepath_pkl_IB_panal = Path(sgv['folderpath_plots'], filename_pkl_IB_panel)  # 面板数据文件路径
-            df_IB_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为pkl格式
-            df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为csv格式；
+            df_IB_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为 pkl 格式
+            df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
+            with pd.ExcelWriter(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+                df_IB_panel.to_excel(writer, sheet_name='IB_panel')
+                pass  # with
             pass  # for
 
         pass  # if 导入Pandas格式的实验结果数据转换为面板形式再导出
