@@ -81,6 +81,9 @@ def simulator(config: dict):
         Tools._copy_files_from_other_folders(sgv['folderpath_agents'], sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
         # from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
 
+        ## 获取一些系统信息
+        sgv['system_platform'] = platform.system()
+
         ## 设置日志
         logger = logging.getLogger()
         logger.setLevel(sgv['test_logging'])
