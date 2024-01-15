@@ -680,11 +680,11 @@ def main():
 
             pass  # if 拼接资金流网络图
 
-        # %% [markdown] ## #NOTE 绘制资产负债表
+        # %% [markdown] ## #NOTE 绘制资产负债表图
         # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
 
         # %%
-        if (sgv['visulization_process']['绘制资产负债表']):
+        if (sgv['visulization_process']['绘制资产负债表图']):
 
             print("准备绘制资产负债表")
             Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
@@ -715,7 +715,7 @@ def main():
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
-                print("绘制资产负债表：实验" + str(i_exp))
+                print("绘制资产负债表图：实验" + str(i_exp))
 
                 sgv['vis']['zh_font_family'] = zh_font_family
                 sgv['vis']['en_font_family'] = en_font_family
@@ -1349,15 +1349,15 @@ def main():
 
                 pass  # for  实验编号
 
-            pass  # if 绘制资产负债表
+            pass  # if 绘制资产负债表图
 
-        # %% [markdown] ## #NOTE 拼接资产负债表
+        # %% [markdown] ## #NOTE 拼接资产负债表图
         # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
 
         # %%
 
-        if (sgv['visulization_process']['拼接资产负债表']):
-            print("准备拼接资产负债表")
+        if (sgv['visulization_process']['拼接资产负债表图']):
+            print("准备拼接资产负债表图")
             Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
@@ -1386,7 +1386,7 @@ def main():
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
-                print("拼接资产负债表：实验" + str(i_exp))
+                print("拼接资产负债表图：实验" + str(i_exp))
 
                 ## 声明与定义变量
                 match_pattern_of_agent_name = fr"(?<=name=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之个体名称之正则表达式文本
@@ -1408,7 +1408,7 @@ def main():
 
                 pass  # for  实验编号
 
-            pass  # if 拼接资产负债表
+            pass  # if 拼接资产负债表图
 
         # %% [markdown] ## #NOTE 可视化银行状态表格
         # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
@@ -1646,7 +1646,7 @@ def process_one_balanceSheet(args):
     ## 生成绘制资产负债表所需的数据
     data_vis_one_bank_BalanceSheet = generate_one_bank_accounts_data(df_BB_panel, data_vis_one_bank_BalanceSheet, t, i, sgv['vis'])
 
-    ## 用 drawsvg 绘制资产负债表
+    ## 用 drawsvg 绘制资产负债表图
     svg_one_bank_balanceSheet = draw_one_bank_BalanceSheet(data_vis_one_bank_BalanceSheet, sgv['vis'], width=sgv['vis']['one_bank_BalanceSheet_width'], height=sgv['vis']['one_bank_BalanceSheet_height'], title_height=sgv['vis']['one_bank_BalanceSheet_title_height'], border=sgv['vis']['one_bank_BalanceSheet_border'])
     svg_one_bank_balanceSheet.save_svg(Path(sgv['folderpath_plots_single_balanceSheets'], 'BB_exp=' + str(i_exp) + '+name=' + data_vis_one_bank_BalanceSheet['others']['bank_name'] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.svg'))  # 保存
 
