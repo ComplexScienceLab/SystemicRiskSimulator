@@ -130,6 +130,8 @@ def main():
     sgv['folderpath_plots_single_balanceSheets'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_plots_makeup_balanceSheets'] = Path(sgv['folderpath_plots'], sgv['foldername_plots_makeup_balanceSheets'])
     sgv['folderpath_plots_makeup_balanceSheets'].mkdir(parents=True, exist_ok=True)
+    sgv['folderpath_visualize_banksStates_table'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_banksStates_table'])
+    sgv['folderpath_visualize_banksStates_table'].mkdir(parents=True, exist_ok=True)
 
     # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。
 
@@ -1408,7 +1410,136 @@ def main():
 
             pass  # if 拼接资产负债表
 
+        # %% [markdown] ## #NOTE 可视化银行状态表格
+        # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
 
+        # %%
+
+        if (sgv['visulization_process']['银行状态表格可视化']):
+
+            from openpyxl import load_workbook
+            from openpyxl.styles import PatternFill
+            from openpyxl.utils import get_column_letter
+
+            print("准备可视化银行状态表格")
+            Tools._delete_and_recreate_folder(sgv['folderpath_visualize_banksStates_table'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            for i_exp in experiments_indices_to_vis:
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'round'
+                    sgv['vis']['num_time'] = num_round
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
+
+                print("可视化银行状态表格：实验" + str(i_exp))
+
+                ##NOTE 设置相关数据
+
+                ### 状态相关的列名
+                columns_states = [
+                    'on',
+                    'off',
+                    'hel',
+                    'isv',
+                    'ilq',
+                    'br',
+                    'is_needed_BoIB',
+                    'is_enabled_BoIB',
+                    'is_needed_BoD',
+                    'is_enabled_BoD',
+                    'is_needed_LiP',
+                    'is_enabled_LiP',
+                    'is_allocated_Shock',
+                ]
+
+                ### 需要提取的列名
+                columnsName_ext = [
+                    'id',
+                    'id_data',
+                    'process_name',
+                    'step',
+                    'round',
+                    'phase',
+                    'id_agent',
+                    'abbr',
+                    'name',
+                    'on',
+                    'off',
+                    'hel',
+                    'isv',
+                    'ilq',
+                    'br',
+                    'is_needed_BoIB',
+                    'is_enabled_BoIB',
+                    'is_needed_BoD',
+                    'is_enabled_BoD',
+                    'is_needed_LiP',
+                    'is_enabled_LiP',
+                    'is_allocated_Shock',
+                ]
+
+                ### 需要调整列边距的列名
+                columnsName_adjust = [
+                    'id',
+                    'id_data',
+                    'step',
+                    'round',
+                    'phase',
+                    'id_agent',
+                ]
+
+                df_BankStates = df_BB_panel[columnsName_ext]  # 提取所需列
+
+                df_BankStates.to_excel(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'), index=False)  # 将数据写入新的 Excel 文件
+
+                wb_BankStates = load_workbook(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 使用 openpyxl 打开新的 Excel 文件
+                sheet_BankStates = wb_BankStates.active
+
+                sheet_BankStates.freeze_panes = "J2"  # 冻结窗格
+
+                col_indices = [df_BankStates.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+                for col_index in col_indices:
+                    col_letter = get_column_letter(col_index)
+                    sheet_BankStates.column_dimensions[col_letter].width = 5
+
+                # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+                fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+                for i, row in enumerate(sheet_BankStates.iter_rows(min_row=2)):  # 跳过第一行表头
+                    if i % (2 * sgv['num_bank']) < sgv['num_bank']:  # 每间隔指定的行填充一次背景色
+                        for cell in row:
+                            cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+                for col in columns_states:  # 遍历每一列
+                    col_index = df_BankStates.columns.get_loc(col) + 1
+                    col_letter = get_column_letter(col_index)
+                    rng = sheet_BankStates[col_letter]
+                    for cell in rng:  # 遍历每一个单元格
+                        if cell.value == True:
+                            cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+                wb_BankStates.save(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 保存 Excel 文件
+
+                pass  # for
+
+            pass  # if
 
     else:
         print("没有可用的数据，无法进行可视化！程序退出。")
