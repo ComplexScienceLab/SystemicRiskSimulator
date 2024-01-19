@@ -67,6 +67,9 @@ def main():
     from reportlab.pdfbase import pdfmetrics
     import matplotlib.font_manager as fm
     # from matplotlib.font_manager import FontProperties
+    from openpyxl import load_workbook
+    from openpyxl.styles import PatternFill
+    from openpyxl.utils import get_column_letter
 
     # %% ## NOTE 设置字体与绘图工具包的一些配置
 
@@ -179,6 +182,45 @@ def main():
             with pd.ExcelWriter(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
                 df_BB_panel.to_excel(writer, sheet_name='BB_panel')
                 pass  # with
+
+            ## 重新读取 xlsx 格式然后格式化
+            ### 需要调整列边距的列名
+            columnsName_adjust = [
+                'id',
+                'id_data',
+                'step',
+                'round',
+                'phase',
+                'id_agent',
+            ]
+
+            wb_BB_panel = load_workbook(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+            sheet_BB_panel = wb_BB_panel.active
+
+            sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
+
+            col_indices = [df_BB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+            for col_index in col_indices:
+                col_letter = get_column_letter(col_index)
+                sheet_BB_panel.column_dimensions[col_letter].width = 5
+
+            # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+            fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+            for i, row in enumerate(sheet_BB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+                if i % (2 * sgv['num_bank']) < sgv['num_bank']:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+                    for cell in row:
+                        cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+            # for col in columns_states:  # 遍历每一列
+            #     col_index = df_BB_panel.columns.get_loc(col) + 1
+            #     col_letter = get_column_letter(col_index)
+            #     rng = sheet_BB_panel[col_letter]
+            #     for cell in rng:  # 遍历每一个单元格
+            #         if cell.value == True:
+            #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+            wb_BB_panel.save(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+
             pass  # for
 
         list_filepath_pkl_IB = list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
@@ -256,6 +298,48 @@ def main():
             with pd.ExcelWriter(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
                 df_IB_panel.to_excel(writer, sheet_name='IB_panel')
                 pass  # with
+
+            ## 重新读取 xlsx 格式然后格式化
+            ### 需要调整列边距的列名
+            columnsName_adjust = [
+                'id',
+                'id_data',
+                'process_name',
+                'step',
+                'round',
+                'phase',
+                'id_agent',
+                'row',
+                'col',
+            ]
+
+            wb_IB_panel = load_workbook(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+            sheet_IB_panel = wb_IB_panel.active
+
+            sheet_IB_panel.freeze_panes = "K2"  # 冻结窗格
+
+            col_indices = [df_IB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+            for col_index in col_indices:
+                col_letter = get_column_letter(col_index)
+                sheet_IB_panel.column_dimensions[col_letter].width = 5
+
+            # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+            fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+            for i, row in enumerate(sheet_IB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+                if i % (2 * sgv['num_bank'] ** 2) < sgv['num_bank'] ** 2:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+                    for cell in row:
+                        cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+            # for col in columns_states:  # 遍历每一列
+            #     col_index = df_BB_panel.columns.get_loc(col) + 1
+            #     col_letter = get_column_letter(col_index)
+            #     rng = sheet_IB_panel[col_letter]
+            #     for cell in rng:  # 遍历每一个单元格
+            #         if cell.value == True:
+            #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+            wb_IB_panel.save(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+
             pass  # for
 
         pass  # if 导入Pandas格式的实验结果数据转换为面板形式再导出
@@ -1417,10 +1501,6 @@ def main():
 
         if (sgv['visulization_process']['银行状态表格可视化']):
 
-            from openpyxl import load_workbook
-            from openpyxl.styles import PatternFill
-            from openpyxl.utils import get_column_letter
-
             print("准备可视化银行状态表格")
             Tools._delete_and_recreate_folder(sgv['folderpath_visualize_banksStates_table'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
@@ -1510,19 +1590,19 @@ def main():
 
                 df_BankStates.to_excel(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'), index=False)  # 将数据写入新的 Excel 文件
 
-                wb_BankStates = load_workbook(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 使用 openpyxl 打开新的 Excel 文件
-                sheet_BankStates = wb_BankStates.active
+                wb_BB_panel = load_workbook(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 使用 openpyxl 打开新的 Excel 文件
+                sheet_BB_panel = wb_BB_panel.active
 
-                sheet_BankStates.freeze_panes = "J2"  # 冻结窗格
+                sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
 
                 col_indices = [df_BankStates.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
                 for col_index in col_indices:
                     col_letter = get_column_letter(col_index)
-                    sheet_BankStates.column_dimensions[col_letter].width = 5
+                    sheet_BB_panel.column_dimensions[col_letter].width = 5
 
                 # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
                 fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
-                for i, row in enumerate(sheet_BankStates.iter_rows(min_row=2)):  # 跳过第一行表头
+                for i, row in enumerate(sheet_BB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
                     if i % (2 * sgv['num_bank']) < sgv['num_bank']:  # 每间隔指定的行填充一次背景色
                         for cell in row:
                             cell.fill = fill  # 将该行的背景色设置为浅灰色
@@ -1530,12 +1610,12 @@ def main():
                 for col in columns_states:  # 遍历每一列
                     col_index = df_BankStates.columns.get_loc(col) + 1
                     col_letter = get_column_letter(col_index)
-                    rng = sheet_BankStates[col_letter]
+                    rng = sheet_BB_panel[col_letter]
                     for cell in rng:  # 遍历每一个单元格
                         if cell.value == True:
                             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
 
-                wb_BankStates.save(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 保存 Excel 文件
+                wb_BB_panel.save(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 保存 Excel 文件
 
                 pass  # for
 
