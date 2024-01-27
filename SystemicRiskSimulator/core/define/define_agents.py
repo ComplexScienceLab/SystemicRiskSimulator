@@ -115,9 +115,11 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     Default_D_run_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间存款违约量 Default_exIB_s
     # Default_exIB_P_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间存款违约量 Default_exIB_s
     Default_s = np.NaN  # = deepcopy(ZEROS1)  # 银行总违约量 Default_s
-    Repay_D_run_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间存款偿付量 Repay_D_run_t
-    Repay_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间借款偿还量 Repay_IB_run_t
+    Repay_D_run_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间存款挤兑偿付量 Repay_D_run_t
+    Repay_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间借款挤兑偿还量 Repay_IB_run_t
+    Repay_run_t = np.NaN  # = deepcopy(ZEROS1)  # 挤兑总偿还量 Repay_run_t
     Recover_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间借款收回量 Recover_IB_run_t
+    Recover_run_t = np.NaN  # = deepcopy(ZEROS1)  # 挤兑总收回量 Recover_run_t
     on = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否存在 is_on
     off = np.NaN  # = deepcopy(FALSE1)  # 示性向量之于银行是否已退出不存在 is_off
     hel = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否健康 is_healthy
