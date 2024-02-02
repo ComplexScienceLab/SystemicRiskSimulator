@@ -172,6 +172,8 @@ class BankInterbank(BaseInterAgents):
     Loss_IB_def = np.NaN  # 银行间资产负债违约冲击损失 Loss_IB_def
     Loss_IB_run = np.NaN  # 银行间负债流动性挤兑冲击损失 Loss_IB_run
     Default_IB = np.NaN  # 银行间违约量 Default_IB
+    Repay_IB_run = np.NaN  # 银行间借款偿还量 Repay_IB
+    Recover_IB_run = np.NaN  # 银行间借款收回量 Recover_IB
     is_exposure = np.NaN  # 信息邻接矩阵之于是否有银行间敞口 is_exposure
     on = np.NaN  # 信息邻接矩阵之于银行间存在的 is_on
     off = np.NaN  # 信息邻接矩阵之于银行间已退出不存在的 is_off
