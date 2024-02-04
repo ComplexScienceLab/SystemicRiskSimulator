@@ -92,23 +92,14 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     Shock_IB_run_br_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击源头 Shock_IB_run_br_s
     Shock_IB_run_br_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击目标 Shock_IB_run_br_t
     Loss_t = np.NaN  # = deepcopy(ZEROS1)  # 银行总损失目标 Loss_t
-    # Loss_s = np.NaN  # = deepcopy(ZEROS1)  # 银行总损失源头 Loss_s
     Loss_exIB_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债总损失目标 Loss_exIB_t
-    # Loss_exIB_s =  np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债总损失源头 Loss_exIB_s
     Loss_exIB_def_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债违约损失冲击损失目标 Loss_exIB_def_t
-    # Loss_exIB_def_s =  np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债违约损失冲击损失源头 Loss_exIB_def_s
     Loss_exIB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间负债流动性挤兑冲击损失目标 Loss_exIB_run_t
-    # Loss_exIB_run_s =  np.NaN  # = deepcopy(ZEROS1)  # 非银行间负债流动性挤兑冲击损失源头 Loss_exIB_run_s
     Loss_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行资产负债违约总损失目标 Loss_def_t
-    # Loss_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行资产负债违约总损失源头 Loss_def_s
     Loss_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行负债流动性挤兑总损失目标 Loss_run_t
-    # Loss_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行负债流动性挤兑总损失源头 Loss_run_s
     Loss_IB_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间市场冲击损失目标 Loss_IB_t
-    # Loss_IB_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间市场冲击损失源头 Loss_IB_s
     Loss_IB_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产负债违约损失冲击损失目标 Loss_IB_def_t
-    # Loss_IB_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产负债违约损失冲击损失源头 Loss_IB_def_s
     Loss_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失目标 Loss_IB_run_t
-    # Loss_IB_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失源头 Loss_IB_run_s
     Default_s = np.NaN  # = deepcopy(ZEROS1)  # 银行总违约量 Default_s
     Default_IB_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间违约量 Default_IB_s
     Default_IB_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间在违约损失冲击的违约量 Default_IB_s
@@ -134,10 +125,10 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     is_needed_LiP = np.NaN  # = deepcopy(FALSE1)  # 示性向量之于银行是否需要收回厂商贷款 is_needed_LiP
     is_enabled_LiP = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否可以收回厂商贷款 is_enabled_LiP
     is_allocated_Shock = np.NaN  # = deepcopy(FALSE1)  # 示性向量之于银行是否已经分配传染冲击 is_allocated_Shock
-    list_exist = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于存在的银行编号 list_exist
-    list_insolvent = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于资不抵债的银行编号 list_insolvent
-    list_illiquid = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于流动性短缺的银行编号 list_illiquid
-    list_bankrupt = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于破产的银行编号 list_bankrupt
+    # list_exist = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于存在的银行编号 list_exist
+    # list_insolvent = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于资不抵债的银行编号 list_insolvent
+    # list_illiquid = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于流动性短缺的银行编号 list_illiquid
+    # list_bankrupt = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于破产的银行编号 list_bankrupt
 
     # TODO 增加监管约束之状态；
 
@@ -174,21 +165,21 @@ class BankInterbank(BaseInterAgents):
     Default_IB = np.NaN  # 银行间违约量 Default_IB
     Repay_IB_run = np.NaN  # 银行间借款偿还量 Repay_IB
     Recover_IB_run = np.NaN  # 银行间借款收回量 Recover_IB
-    is_exposure = np.NaN  # 信息邻接矩阵之于是否有银行间敞口 is_exposure
+    # is_exposure = np.NaN  # 信息邻接矩阵之于是否有银行间敞口 is_exposure
     on = np.NaN  # 信息邻接矩阵之于银行间存在的 is_on
     off = np.NaN  # 信息邻接矩阵之于银行间已退出不存在的 is_off
     hel = np.NaN  # 信息邻接矩阵之于银行间健康的 is_healthy
     isv = np.NaN  # 信息邻接矩阵之于银行间资不抵债的 is_insolvent
     ilq = np.NaN  # 信息邻接矩阵之于银行间流动性短缺的 is_illiquid
     br = np.NaN  # 信息邻接矩阵之于银行间破产的 is_bankrupt
-    cre = np.NaN  # 信息列表之于各银行之债权方银行编号 list_creditors
-    deb = np.NaN  # 信息列表之于各银行之债务方银行编号 list_debtors
-    cre_isv = np.NaN  # 信息列表之于资不抵债的银行之债权方银行编号 list_creditors_in_insolvent
-    deb_isv = np.NaN  # 信息列表之于资不抵债的银行之债务方银行编号 list_debtors_in_insolvent
-    cre_ilq = np.NaN  # 信息列表之于流动性短缺的银行之债权方银行编号 list_creditors_in_illiquid
-    deb_ilq = np.NaN  # 信息列表之于流动性短缺的银行之债务方银行编号 list_debtors_in_illiquid
-    cre_br = np.NaN  # 信息列表之于破产的银行之债权方银行编号 list_creditors_in_bankrupt
-    deb_br = np.NaN  # 信息列表之于破产的银行之债务方银行编号 list_debtors_in_bankrupt
+    # cre = np.NaN  # 信息列表之于各银行之债权方银行编号 list_creditors
+    # deb = np.NaN  # 信息列表之于各银行之债务方银行编号 list_debtors
+    # cre_isv = np.NaN  # 信息列表之于资不抵债的银行之债权方银行编号 list_creditors_in_insolvent
+    # deb_isv = np.NaN  # 信息列表之于资不抵债的银行之债务方银行编号 list_debtors_in_insolvent
+    # cre_ilq = np.NaN  # 信息列表之于流动性短缺的银行之债权方银行编号 list_creditors_in_illiquid
+    # deb_ilq = np.NaN  # 信息列表之于流动性短缺的银行之债务方银行编号 list_debtors_in_illiquid
+    # cre_br = np.NaN  # 信息列表之于破产的银行之债权方银行编号 list_creditors_in_bankrupt
+    # deb_br = np.NaN  # 信息列表之于破产的银行之债务方银行编号 list_debtors_in_bankrupt
 
     def __init__(self, *args, **kwargs):
         for index, key in enumerate(self.__dir__()):
