@@ -104,7 +104,9 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     Default_IB_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间违约量 Default_IB_s
     Default_IB_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间在违约损失冲击的违约量 Default_IB_s
     Default_IB_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间在挤兑流动冲击的违约量 Default_IB_s
-    Default_D_run_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间存款违约量 Default_D_run_s
+    Default_exIB_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间违约量 Default_exIB_s
+    Default_D_def_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间在违约损失冲击的存款违约量 Default_D_def_s
+    Default_D_run_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间在挤兑流动冲击的存款违约量 Default_D_run_s
     # Default_P_def_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间贷款违约量 Default_P_def_t
     Repay_run_t = np.NaN  # = deepcopy(ZEROS1)  # 挤兑总偿还量 Repay_run_t
     Repay_D_run_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间存款挤兑偿付量 Repay_D_run_t
