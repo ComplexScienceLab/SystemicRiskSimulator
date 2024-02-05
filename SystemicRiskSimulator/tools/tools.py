@@ -1,7 +1,6 @@
 "函数区：工具集"
 
-from SystemicRiskSimulator.external_packages import logging, time, Path, itertools, pkgutil, importlib, re, np, pd, random, string, shutil, locale, Union
-from pandas import DataFrame
+from SystemicRiskSimulator.external_packages import logging, time, Path, itertools, pkgutil, importlib, re, np, pd, random, string, shutil, locale, Union, DataFrame
 
 pass  # end import
 
