@@ -632,7 +632,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     """
 
-    df_accounts_data, df_shocks_data, df_losses_data, df_defaults_data = dict_vis_data['accounts'], dict_vis_data['shocks'], dict_vis_data['losses'], dict_vis_data['defaults']
+    df_accounts_data, df_shocks_data, df_losses_data, df_defaults_data, df_recovers_data, df_repays_data = dict_vis_data['accounts'], dict_vis_data['shocks'], dict_vis_data['losses'], dict_vis_data['defaults'], dict_vis_data['recovers'], dict_vis_data['repays']
 
     ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
     for account_data in df_accounts_data.itertuples():
@@ -802,6 +802,54 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
         pass  # for
 
+    ## 计算各收回变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
+    for recover_data in df_recovers_data.itertuples():
+        df_recovers_data.loc[recover_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), recover_data.subject].values[0]
+        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), recover_data.subject].values[0]
+        is_value_changed = False if np.isclose(df_recovers_data.loc[recover_data.Index, 'value'], value_last, atol=1e0) else True
+        if is_value_changed:
+            df_recovers_data.loc[recover_data.Index, 'stroke_color'] = '#000000'
+            df_recovers_data.loc[recover_data.Index, 'stroke_width'] = 2
+            pass  # if
+
+        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == recover_data.side) & (df_accounts_data['level'] == recover_data.level) & (df_accounts_data['subject'] == recover_data.align), 'subject'].idxmax()
+        account_position = df_accounts_data.loc[account_idx, 'position']
+        account_size = df_accounts_data.loc[account_idx, 'size']
+        df_recovers_data.at[recover_data.Index, 'size'] = (
+            int(account_size[0] * (3 / 13)),
+            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_recovers_data.loc[recover_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
+        )
+        offsetScale_by_dataType = 5 / 13
+        df_recovers_data.at[recover_data.Index, 'position'] = (
+            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
+            account_position[1] + int(account_size[1] - df_recovers_data.loc[recover_data.Index, 'size'][1])
+        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
+        pass  # for
+
+    ## 计算各偿还变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
+    for repay_data in df_repays_data.itertuples():
+        df_repays_data.loc[repay_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), repay_data.subject].values[0]
+        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), repay_data.subject].values[0]
+        is_value_changed = False if np.isclose(df_repays_data.loc[repay_data.Index, 'value'], value_last, atol=1e0) else True
+        if is_value_changed:
+            df_repays_data.loc[repay_data.Index, 'stroke_color'] = '#000000'
+            df_repays_data.loc[repay_data.Index, 'stroke_width'] = 2
+            pass  # if
+
+        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == repay_data.side) & (df_accounts_data['level'] == repay_data.level) & (df_accounts_data['subject'] == repay_data.align), 'subject'].idxmax()
+        account_position = df_accounts_data.loc[account_idx, 'position']
+        account_size = df_accounts_data.loc[account_idx, 'size']
+        df_repays_data.at[repay_data.Index, 'size'] = (
+            int(account_size[0] * (3 / 13)),
+            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_repays_data.loc[repay_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
+        )
+        offsetScale_by_dataType = 5 / 13
+        df_repays_data.at[repay_data.Index, 'position'] = (
+            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
+            account_position[1] + int(account_size[1] - df_repays_data.loc[repay_data.Index, 'size'][1])
+        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
+        pass  # for
+
     ## 生成其他信息
     others = dict(
         time_granularity=sgv_vis['time_granularity'],
@@ -817,6 +865,8 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         shocks=df_shocks_data,
         losses=df_losses_data,
         defaults=df_defaults_data,
+        recovers=df_recovers_data,
+        repays=df_repays_data,
         others=others,
     )
 
@@ -839,7 +889,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         svg_balanceSheet: 单个银行的资产负债表svg格式数据
 
     """
-    accounts_data, shocks_data, losses_data, defaults_data, others = vis_data['accounts'], vis_data['shocks'], vis_data['losses'], vis_data['defaults'], vis_data['others']
+    accounts_data, shocks_data, losses_data, defaults_data, recovers_data, repays_data, others = vis_data['accounts'], vis_data['shocks'], vis_data['losses'], vis_data['defaults'], vis_data['recovers'], vis_data['repays'], vis_data['others']
 
     svg_balanceSheet = dw.Drawing(border + width + border, border + title_height + height + border, id_prefix='Balance Sheet')
 
@@ -961,6 +1011,42 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
             pass  # if
         pass  # for
 
+    ## 绘制各收回变量之各列各项之矩形
+    for recover_data in recovers_data.itertuples():
+        if recover_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Rectangle(
+                    x=recover_data.position[0],
+                    y=recover_data.position[1],
+                    width=recover_data.size[0],
+                    height=recover_data.size[1],
+                    fill=recover_data.fill_color,
+                    fill_opacity=1.0,
+                    stroke=recover_data.stroke_color,
+                    stroke_width=recover_data.stroke_width
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各偿还变量之各列各项之矩形
+    for repay_data in repays_data.itertuples():
+        if repay_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Rectangle(
+                    x=repay_data.position[0],
+                    y=repay_data.position[1],
+                    width=repay_data.size[0],
+                    height=repay_data.size[1],
+                    fill=repay_data.fill_color,
+                    fill_opacity=1.0,
+                    stroke=repay_data.stroke_color,
+                    stroke_width=repay_data.stroke_width
+                )
+            )
+            pass  # if
+        pass  # for
+
     ## 绘制资产负债表各列各项之文本
     for account_data in accounts_data.itertuples():
         svg_balanceSheet.append(
@@ -1030,6 +1116,48 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
                     x=default_data.position[0] + default_data.size[0] // 3,
                     y=default_data.position[1] + default_data.size[1] // 3,
                     fill='#F5DF5D',
+                    stroke='black',
+                    stroke_width=0.5,
+                    # background='white',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各收回变量之各列各项之文本
+    for recover_data in recovers_data.itertuples():
+        if recover_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Text(
+                    recover_data.subject + '\n' + str(round(recover_data.value)),
+                    font_size=18,
+                    x=recover_data.position[0] + recover_data.size[0] // 3,
+                    y=recover_data.position[1] + recover_data.size[1] // 3,
+                    fill='#999999',
+                    stroke='black',
+                    stroke_width=0.5,
+                    # background='white',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+            pass  # if
+        pass  # for
+
+    ## 绘制各偿还变量之各列各项之文本
+    for repay_data in repays_data.itertuples():
+        if repay_data.value != 0:  # 如果值为0，则不绘制
+            svg_balanceSheet.append(
+                dw.Text(
+                    repay_data.subject + '\n' + str(round(repay_data.value)),
+                    font_size=18,
+                    x=repay_data.position[0] + repay_data.size[0] // 3,
+                    y=repay_data.position[1] + repay_data.size[1] // 3,
+                    fill='#999999',
                     stroke='black',
                     stroke_width=0.5,
                     # background='white',

@@ -1473,7 +1473,7 @@ def main():
                         level='level 3',
                         subject='Recover_P_run_s',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#0000FF',
                         stroke_color='gray',
                         stroke_width=1,
                         side='asset',
@@ -1486,7 +1486,7 @@ def main():
                         level='level 3',
                         subject='Recover_IB_run_s',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#0000FF',
                         stroke_color='gray',
                         stroke_width=1,
                         side='asset',
@@ -1499,7 +1499,7 @@ def main():
                         level='level 2',
                         subject='Recover_P_run_s',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#0000FF',
                         stroke_color='gray',
                         stroke_width=1,
                         side='asset',
@@ -1512,7 +1512,7 @@ def main():
                         level='level 2',
                         subject='Recover_IB_run_s',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#0000FF',
                         stroke_color='gray',
                         stroke_width=1,
                         side='asset',
@@ -1525,7 +1525,7 @@ def main():
                         level='level 1',
                         subject='Recover_run_s',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#0000FF',
                         stroke_color='gray',
                         stroke_width=1,
                         side='asset',
@@ -1542,7 +1542,7 @@ def main():
                         level='level 3',
                         subject='Repay_D_run_t',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#FFFF00',
                         stroke_color='gray',
                         stroke_width=1,
                         side='liability',
@@ -1555,7 +1555,7 @@ def main():
                         level='level 3',
                         subject='Repay_IB_run_t',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#FFFF00',
                         stroke_color='gray',
                         stroke_width=1,
                         side='liability',
@@ -1568,7 +1568,7 @@ def main():
                         level='level 2',
                         subject='Repay_D_run_t',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#FFFF00',
                         stroke_color='gray',
                         stroke_width=1,
                         side='liability',
@@ -1581,7 +1581,7 @@ def main():
                         level='level 2',
                         subject='Repay_IB_run_t',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#FFFF00',
                         stroke_color='gray',
                         stroke_width=1,
                         side='liability',
@@ -1594,7 +1594,7 @@ def main():
                         level='level 1',
                         subject='Repay_run_t',
                         value=0.0,
-                        fill_color='#A68E17',
+                        fill_color='#FFFF00',
                         stroke_color='gray',
                         stroke_width=1,
                         side='liability',
@@ -1618,6 +1618,8 @@ def main():
                         data_vis_one_bank_BalanceSheet['shocks'] = pd.DataFrame(list_shocks_data)
                         data_vis_one_bank_BalanceSheet['losses'] = pd.DataFrame(list_losses_data)
                         data_vis_one_bank_BalanceSheet['defaults'] = pd.DataFrame(list_default_data)
+                        data_vis_one_bank_BalanceSheet['recovers'] = pd.DataFrame(list_recover_data)
+                        data_vis_one_bank_BalanceSheet['repays'] = pd.DataFrame(list_repay_data)
 
                         tasks.append((sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
                         pass  # for
