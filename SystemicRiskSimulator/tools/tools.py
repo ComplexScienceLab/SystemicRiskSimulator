@@ -611,4 +611,49 @@ class Tools:
         return result
         pass  # function
 
+    @classmethod
+    def generate_agents_definitions_from_dicts_to_new_classes_as_python_file(cls, filepath_dicts: str, filepath_classes: str):
+        """
+        从初始化 Agents 的字典生成对应的类，但是不做设置。该类导出为一个 Python文件。DEBUG 还没有做任何测试！
+
+        Warnings:
+            警告：这个功能会直接改写文件，所以请务必做好备份！
+
+        Args:
+            filepath_dicts (str): 字典文件路径
+            filepath_classes (str): 类文件路径
+
+        Returns:
+            None
+
+        """
+        import numpy as np
+        import ast
+        import re
+
+        # 读取set_agents_variables.py文件
+        with open('libraries/agents_library/agents_test/set_agents_variables.py', 'r') as file:
+            lines = file.readlines()
+
+        # 使用正则表达式和ast模块找到字典定义
+        dict_strings = re.findall(r'set_bankCommercial_variables = (.*?)\n\nset_bankInterbank_variables', ''.join(lines), re.DOTALL)
+        dicts = [ast.literal_eval(dict_string) for dict_string in dict_strings]
+
+        # 获取每个键值对后面的注释
+        comments = re.findall(r'# (.*?)\n', ''.join(lines))
+
+        # 创建新的Python文件
+        with open('new_classes.py', 'w') as file:
+            for i, dict_ in enumerate(dicts):
+                # 写入类定义的开始部分
+                file.write(f'class Bank{i+1}:\n')
+                file.write('    def __init__(self):\n')
+
+                # 为每个键生成一个类属性
+                for j, key in enumerate(dict_.keys()):
+                    file.write(f'        self.{key} = np.NaN  # {comments[j]}\n')
+
+                # 在类之间添加空行
+                file.write('\n')
+
     pass  # class
