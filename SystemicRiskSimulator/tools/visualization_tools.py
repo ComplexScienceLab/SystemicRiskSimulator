@@ -11,7 +11,6 @@ if sgv['need_visualization']:
     import fitz
     from svglib.svglib import svg2rlg
     from reportlab.graphics import renderPDF
-    import numpy as np
     import matplotlib.gridspec as gridspec
     from matplotlib.colors import LinearSegmentedColormap
     import matplotlib.colors as colors
@@ -204,11 +203,6 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
         fig: matplotlib格式的图像对象
 
     """
-    # import numpy as np
-    # import matplotlib.pyplot as plt
-    # import matplotlib.gridspec as gridspec
-    # from matplotlib.colors import LinearSegmentedColormap
-    # import matplotlib.colors as colors
 
     ### 获取、调整该可视化所需要的数据
     (
