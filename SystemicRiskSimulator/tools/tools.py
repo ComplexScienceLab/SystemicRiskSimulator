@@ -352,7 +352,10 @@ class Tools:
                     if file.is_dir():
                         if file.name == "__pycache__":  # 忽略特殊文件夹
                             continue
-                        shutil.copytree(file, Path(folderpath_target, file.name))
+                        target_path = Path(folderpath_target, file.name)
+                        if target_path.exists() and target_path.is_dir():
+                            shutil.rmtree(target_path)
+                        shutil.copytree(file, target_path)
                     else:
                         shutil.copy(file, Path(folderpath_target))
                         pass  # if
