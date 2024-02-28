@@ -5,7 +5,7 @@
 """
 from SystemicRiskSimulator.external_packages import Path
 from SystemicRiskSimulator.core.define.define_type import SimulatorGlobalVariableType
-from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
+from SystemicRiskSimulator.core.define.define_enum import ScheduleState
 from SystemicRiskSimulator.data.config.set_config_variables import set_config_variables
 
 pass  # end import
@@ -32,7 +32,7 @@ sgv['time'] = 0  # 初始时期计次为0；#TODO 似乎没有用到
 sgv['id_experiment'] = 1  # 当前实验组编号；
 sgv['num_experiment'] = 0  # 实验组之实验个数；
 
-sgv['state_of_schedule'] = StateOfScheduleEnum.idle
+sgv['state_of_schedule'] = ScheduleState.idle
 
 sgv['is_continue_round'] = False  # 是否处于回合状态；
 sgv['is_continue_process'] = False  # 是否继续运行过程

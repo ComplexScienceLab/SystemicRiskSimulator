@@ -54,10 +54,10 @@ def exportProcess(self, processContent:ModelContent; filepath_processSkeleton:St
         sgv['process_name'] = "$(p.text_name)"
         BB, IB, sgv = $(String(p.entity_name))!(BB, IB, para, sgv)
         scheduler(sgv)
-        if sgv['state_of_schedule'] == StateOfScheduleEnum.stepping:
+        if sgv['state_of_schedule'] == ScheduleState.stepping:
             eval(Meta.parse(expr))
             pass
-        if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:
+        if sgv['state_of_schedule'] == ScheduleState.collecting:
 >>>>>>>> python:SystemicRiskSimulator/core/template/fun_exporter.py
             #TODO 收集数据
             pass
@@ -123,10 +123,10 @@ def exportModel(self, modelContent:ModelContent; filepath_modelSkeleton:String="
         sgv['process_name'] = "$(p.text_name)"
         BB, IB, sgv = $(String(p.entity_name))!(BB, IB, para, sgv)
         scheduler(sgv)
-        if sgv['state_of_schedule'] == StateOfScheduleEnum.stepping:
+        if sgv['state_of_schedule'] == ScheduleState.stepping:
             eval(Meta.parse(expr))
             pass
-        if sgv['state_of_schedule'] == StateOfScheduleEnum.collecting:
+        if sgv['state_of_schedule'] == ScheduleState.collecting:
 >>>>>>>> python:SystemicRiskSimulator/core/template/fun_exporter.py
             #TODO 收集数据
             pass

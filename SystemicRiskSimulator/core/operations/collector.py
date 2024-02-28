@@ -4,7 +4,7 @@
 from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, logging
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
-from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
+from SystemicRiskSimulator.core.define.define_enum import ScheduleState
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.core.define.define_type import *
 
@@ -27,18 +27,18 @@ class Collector:
     #         如果是初始化数据，则返回 A_data；如果是收集数据，则返回 A_data, sgv；如果是导出数据，则无返回；
     #
     #     """
-    #     if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
+    #     if sgv['state_of_schedule'] == ScheduleState.running:
     #         # Scheduler.schedule(sgv)
     #         logging.debug("                    收集数据")
     #         # sgv['id_data'] += 1  # 累加数据帧ID号
     #         A_data = Collector.collect_agent_data(A, A_data, sgv)
     #         # Scheduler.schedule(sgv)
     #         return A_data, sgv
-    #     elif sgv['state_of_schedule'] == StateOfScheduleEnum.initializing:
+    #     elif sgv['state_of_schedule'] == ScheduleState.initializing:
     #         logging.debug("                    初始化数据")
     #         A_data = Collector.init_agent_data_collection(A, sgv)
     #         return A_data
-    #     elif sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
+    #     elif sgv['state_of_schedule'] == ScheduleState.ending:
     #         logging.debug("                    导出数据")
     #         Collector.export_agent_data(A_data, sgv)
     #     else:
