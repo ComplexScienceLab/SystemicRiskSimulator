@@ -20,9 +20,9 @@ class Executer:
 
     ## NOTE：执行一次步进更新。
     @classmethod
-    def step_update(cls, function, update_way: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def variable_step_update(cls, function, update_way: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
-        执行一次步进更新
+        执行一次变量变更级别的步进更新
 
         更新方式具体见：`Finance.update_finance_variables` 对应的[文档](SystemicRiskSimulator/core/functions/content_finance.py)。
 
