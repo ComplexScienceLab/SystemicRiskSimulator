@@ -28,15 +28,30 @@ class Builder:
         """
         ## 导入相关模块
         ## 导入模型之初始态实体之数据内容（NOTE 动态导入）
-        list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
 
-        ## 导入模型之内容（NOTE 动态导入）
-        modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
+        if sgv['is_use_Gymnasium_model']:
+            ## NOTE 如果使用由`Gymnasium`自定义的模型
+            # ## 导入由`Gymnasium`自定义的环境模型 #HACK 这个暂时不开发，因为可以直接用后文的「导入模型之内容类（由`Gymnasium`自定义的）...」
+            # gymEnvContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/gym_env')), r"gym_env_", sgv['folderpath_simulator'])
+            ## 导入实体之内容
+            list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
+            ## 导入模型之内容类（由`Gymnasium`自定义的）（NOTE 动态导入）
+            modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"model_", sgv['folderpath_simulator'])
 
-        ## 根据模型实体数据列表之数据，生成相应的模型实体对象，然后组成模型实体列表
-        for entityData in list_entityData.values():
-            EntityManager.create_entity(entityData=entityData)  # 根据实体数据，创建每个实体
-            pass  # for
+            ## 根据模型实体数据列表之数据，生成相应的模型实体对象，然后组成模型实体列表
+            for entityData in list_entityData.values():
+                EntityManager.create_entity(entityData=entityData)
+                pass  # for
+        else:
+            ## NOTE 如果使用模拟器自带的模型，不使用由`Gymnasium`自定义的模型
+            ## 导入实体之内容
+            list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
+            ## 导入模型之内容（NOTE 动态导入）
+            modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
+            ## 根据模型实体数据列表之数据，生成相应的模型实体对象，然后组成模型实体列表
+            for entityData in list_entityData.values():
+                EntityManager.create_entity(entityData=entityData)  # 根据实体数据，创建每个实体
+                pass  # for
 
         # 补充模型实体之特征
         # for modelEntity in EntityManager.modelEntities.values():
