@@ -27,12 +27,12 @@ class Executer:
         更新方式具体见：`Finance.update_finance_variables` 对应的[文档](SystemicRiskSimulator/core/functions/content_finance.py)。
 
         Args:
+            function (function): 相关的需要步进更新的功能函数
             update_way (str): 更新方式
             A (SystemicRiskAgent): 多主体
             A_data (AgentDataCollection): 多主体之数据
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
-            function (function): 相关的需要步进更新的功能函数
 
         Returns:
             sgv (dict): 模拟器全局变量
