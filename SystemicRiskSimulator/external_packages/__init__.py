@@ -16,6 +16,7 @@ import time
 import datetime
 import numpy as np
 import pandas as pd
+from pandas import DataFrame
 from copy import deepcopy, copy
 from dataclasses import dataclass
 import logging

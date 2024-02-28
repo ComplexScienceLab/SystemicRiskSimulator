@@ -67,16 +67,19 @@ def main():
     from reportlab.pdfbase import pdfmetrics
     import matplotlib.font_manager as fm
     # from matplotlib.font_manager import FontProperties
+    from openpyxl import load_workbook
+    from openpyxl.styles import PatternFill
+    from openpyxl.utils import get_column_letter
 
     # %% ## NOTE 设置字体与绘图工具包的一些配置
 
     # %%
 
     ### 设置绘图时的字体 #NOTE：如果想要自定义字体，那么请开启下面的一段代码
-    if platform.system() == 'Darwin':  # MacOS系统
+    if sgv['system_platform'] == 'Darwin':  # MacOS系统
         zh_font_family = 'Songti SC'
         en_font_family = 'Times New Roman'
-    elif platform.system() == 'Windows':  # Windows系统
+    elif sgv['system_platform'] == 'Windows':  # Windows系统
         zh_font_family = 'SimHei'
         en_font_family = 'Times New Roman'
     else:  # 其他系统
@@ -130,8 +133,10 @@ def main():
     sgv['folderpath_plots_single_balanceSheets'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_plots_makeup_balanceSheets'] = Path(sgv['folderpath_plots'], sgv['foldername_plots_makeup_balanceSheets'])
     sgv['folderpath_plots_makeup_balanceSheets'].mkdir(parents=True, exist_ok=True)
+    sgv['folderpath_visualize_banksStates_table'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_banksStates_table'])
+    sgv['folderpath_visualize_banksStates_table'].mkdir(parents=True, exist_ok=True)
 
-    # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV格式数据。
+    # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。
 
     # %%
 
@@ -172,8 +177,50 @@ def main():
             filename_pkl_BB = Path(filepath_pkl_BB).name
             filename_pkl_BB_panel = filename_pkl_BB.replace('BB_', 'BB_panel_')
             filepath_pkl_BB_panal = Path(sgv['folderpath_plots'], filename_pkl_BB_panel)  # 面板数据文件路径
-            df_BB_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为pkl格式
-            df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为csv格式；
+            df_BB_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为 pkl 格式
+            df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
+            with pd.ExcelWriter(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+                df_BB_panel.to_excel(writer, sheet_name='BB_panel')
+                pass  # with
+
+            ## 重新读取 xlsx 格式然后格式化
+            ### 需要调整列边距的列名
+            columnsName_adjust = [
+                'id',
+                'id_data',
+                'step',
+                'round',
+                'phase',
+                'id_agent',
+            ]
+
+            wb_BB_panel = load_workbook(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+            sheet_BB_panel = wb_BB_panel.active
+
+            sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
+
+            col_indices = [df_BB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+            for col_index in col_indices:
+                col_letter = get_column_letter(col_index)
+                sheet_BB_panel.column_dimensions[col_letter].width = 5
+
+            # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+            fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+            for i, row in enumerate(sheet_BB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+                if i % (2 * sgv['num_bank']) < sgv['num_bank']:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+                    for cell in row:
+                        cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+            # for col in columns_states:  # 遍历每一列
+            #     col_index = df_BB_panel.columns.get_loc(col) + 1
+            #     col_letter = get_column_letter(col_index)
+            #     rng = sheet_BB_panel[col_letter]
+            #     for cell in rng:  # 遍历每一个单元格
+            #         if cell.value == True:
+            #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+            wb_BB_panel.save(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+
             pass  # for
 
         list_filepath_pkl_IB = list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
@@ -246,8 +293,53 @@ def main():
             filename_pkl_IB = Path(filepath_pkl_IB).name
             filename_pkl_IB_panel = filename_pkl_IB.replace('IB_', 'IB_panel_')
             filepath_pkl_IB_panal = Path(sgv['folderpath_plots'], filename_pkl_IB_panel)  # 面板数据文件路径
-            df_IB_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为pkl格式
-            df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为csv格式；
+            df_IB_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为 pkl 格式
+            df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
+            with pd.ExcelWriter(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+                df_IB_panel.to_excel(writer, sheet_name='IB_panel')
+                pass  # with
+
+            ## 重新读取 xlsx 格式然后格式化
+            ### 需要调整列边距的列名
+            columnsName_adjust = [
+                'id',
+                'id_data',
+                'process_name',
+                'step',
+                'round',
+                'phase',
+                'id_agent',
+                'row',
+                'col',
+            ]
+
+            wb_IB_panel = load_workbook(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+            sheet_IB_panel = wb_IB_panel.active
+
+            sheet_IB_panel.freeze_panes = "K2"  # 冻结窗格
+
+            col_indices = [df_IB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+            for col_index in col_indices:
+                col_letter = get_column_letter(col_index)
+                sheet_IB_panel.column_dimensions[col_letter].width = 5
+
+            # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+            fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+            for i, row in enumerate(sheet_IB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+                if i % (2 * sgv['num_bank'] ** 2) < sgv['num_bank'] ** 2:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+                    for cell in row:
+                        cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+            # for col in columns_states:  # 遍历每一列
+            #     col_index = df_BB_panel.columns.get_loc(col) + 1
+            #     col_letter = get_column_letter(col_index)
+            #     rng = sheet_IB_panel[col_letter]
+            #     for cell in rng:  # 遍历每一个单元格
+            #         if cell.value == True:
+            #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+            wb_IB_panel.save(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+
             pass  # for
 
         pass  # if 导入Pandas格式的实验结果数据转换为面板形式再导出
@@ -672,11 +764,11 @@ def main():
 
             pass  # if 拼接资金流网络图
 
-        # %% [markdown] ## #NOTE 绘制资产负债表
+        # %% [markdown] ## #NOTE 绘制资产负债表图
         # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
 
         # %%
-        if (sgv['visulization_process']['绘制资产负债表']):
+        if (sgv['visulization_process']['绘制资产负债表图']):
 
             print("准备绘制资产负债表")
             Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
@@ -707,7 +799,7 @@ def main():
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
-                print("绘制资产负债表：实验" + str(i_exp))
+                print("绘制资产负债表图：实验" + str(i_exp))
 
                 sgv['vis']['zh_font_family'] = zh_font_family
                 sgv['vis']['en_font_family'] = en_font_family
@@ -1191,7 +1283,7 @@ def main():
                         level='level 3',
                         subject='Loss_exIB_def_t',
                         value=0.0,
-                        fill_color='#666666',
+                        fill_color='#808080',
                         stroke_color='gray',
                         stroke_width=1,
                         side='asset',
@@ -1204,7 +1296,33 @@ def main():
                         level='level 3',
                         subject='Loss_IB_def_t',
                         value=0.0,
-                        fill_color='#666666',
+                        fill_color='#808080',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_IB_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='loss',
+                        level='level 3',
+                        subject='Loss_exIB_run_t',
+                        value=0.0,
+                        fill_color='#808080',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_P',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='loss',
+                        level='level 3',
+                        subject='Loss_IB_run_t',
+                        value=0.0,
+                        fill_color='#808080',
                         stroke_color='gray',
                         stroke_width=1,
                         side='asset',
@@ -1217,7 +1335,20 @@ def main():
                         level='level 2',
                         subject='Loss_def_t',
                         value=0.0,
-                        fill_color='#666666',
+                        fill_color='#808080',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_exIB',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='loss',
+                        level='level 2',
+                        subject='Loss_run_t',
+                        value=0.0,
+                        fill_color='#808080',
                         stroke_color='gray',
                         stroke_width=1,
                         side='asset',
@@ -1230,7 +1361,7 @@ def main():
                         level='level 1',
                         subject='Loss_t',
                         value=0.0,
-                        fill_color='#666666',
+                        fill_color='#808080',
                         stroke_color='gray',
                         stroke_width=1,
                         side='asset',
@@ -1245,7 +1376,7 @@ def main():
                     dict(
                         data_type='default',
                         level='level 3',
-                        subject='Default_exIB_s',
+                        subject='Default_D_def_s',
                         value=0.0,
                         fill_color='#A68E17',
                         stroke_color='gray',
@@ -1258,7 +1389,33 @@ def main():
                     dict(
                         data_type='default',
                         level='level 3',
-                        subject='Default_IB_s',
+                        subject='Default_IB_def_s',
+                        value=0.0,
+                        fill_color='#A68E17',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_IB_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='default',
+                        level='level 3',
+                        subject='Default_D_run_s',
+                        value=0.0,
+                        fill_color='#A68E17',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_D',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='default',
+                        level='level 3',
+                        subject='Default_IB_run_s',
                         value=0.0,
                         fill_color='#A68E17',
                         stroke_color='gray',
@@ -1309,6 +1466,144 @@ def main():
                     ),
                 ]
 
+                ### 收回数据
+                list_recover_data = [
+                    dict(
+                        data_type='recover',
+                        level='level 3',
+                        subject='Recover_P_run_s',
+                        value=0.0,
+                        fill_color='#0000FF',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_P',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='recover',
+                        level='level 3',
+                        subject='Recover_IB_run_s',
+                        value=0.0,
+                        fill_color='#0000FF',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_IB_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='recover',
+                        level='level 2',
+                        subject='Recover_P_run_s',
+                        value=0.0,
+                        fill_color='#0000FF',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_exIB',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='recover',
+                        level='level 2',
+                        subject='Recover_IB_run_s',
+                        value=0.0,
+                        fill_color='#0000FF',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_IB_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='recover',
+                        level='level 1',
+                        subject='Recover_run_s',
+                        value=0.0,
+                        fill_color='#0000FF',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='asset',
+                        align='A_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                ]
+
+                ### 偿还数据
+                list_repay_data = [
+                    dict(
+                        data_type='repay',
+                        level='level 3',
+                        subject='Repay_D_run_t',
+                        value=0.0,
+                        fill_color='#FFFF00',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_D',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='repay',
+                        level='level 3',
+                        subject='Repay_IB_run_t',
+                        value=0.0,
+                        fill_color='#FFFF00',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_IB_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='repay',
+                        level='level 2',
+                        subject='Repay_D_run_t',
+                        value=0.0,
+                        fill_color='#FFFF00',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_exIB',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='repay',
+                        level='level 2',
+                        subject='Repay_IB_run_t',
+                        value=0.0,
+                        fill_color='#FFFF00',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_IB_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                    dict(
+                        data_type='repay',
+                        level='level 1',
+                        subject='Repay_run_t',
+                        value=0.0,
+                        fill_color='#FFFF00',
+                        stroke_color='gray',
+                        stroke_width=1,
+                        side='liability',
+                        align='Z_all',
+                        position=(0, 0),
+                        size=(0, 0),
+                    ),
+                ]
+
                 ### 计算各银行主体之代表性的类型之数据之最大值和最小值
                 sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
                 sgv['vis']['min_BB_value_in_all_panel'] = 0
@@ -1323,6 +1618,8 @@ def main():
                         data_vis_one_bank_BalanceSheet['shocks'] = pd.DataFrame(list_shocks_data)
                         data_vis_one_bank_BalanceSheet['losses'] = pd.DataFrame(list_losses_data)
                         data_vis_one_bank_BalanceSheet['defaults'] = pd.DataFrame(list_default_data)
+                        data_vis_one_bank_BalanceSheet['recovers'] = pd.DataFrame(list_recover_data)
+                        data_vis_one_bank_BalanceSheet['repays'] = pd.DataFrame(list_repay_data)
 
                         tasks.append((sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
                         pass  # for
@@ -1341,15 +1638,15 @@ def main():
 
                 pass  # for  实验编号
 
-            pass  # if 绘制资产负债表
+            pass  # if 绘制资产负债表图
 
-        # %% [markdown] ## #NOTE 拼接资产负债表
+        # %% [markdown] ## #NOTE 拼接资产负债表图
         # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
 
         # %%
 
-        if (sgv['visulization_process']['拼接资产负债表']):
-            print("准备拼接资产负债表")
+        if (sgv['visulization_process']['拼接资产负债表图']):
+            print("准备拼接资产负债表图")
             Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
@@ -1378,7 +1675,7 @@ def main():
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
-                print("拼接资产负债表：实验" + str(i_exp))
+                print("拼接资产负债表图：实验" + str(i_exp))
 
                 ## 声明与定义变量
                 match_pattern_of_agent_name = fr"(?<=name=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之个体名称之正则表达式文本
@@ -1400,9 +1697,134 @@ def main():
 
                 pass  # for  实验编号
 
-            pass  # if 拼接资产负债表
+            pass  # if 拼接资产负债表图
 
+        # %% [markdown] ## #NOTE 可视化银行状态表格
+        # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
 
+        # %%
+
+        if (sgv['visulization_process']['银行状态表格可视化']):
+
+            print("准备可视化银行状态表格")
+            Tools._delete_and_recreate_folder(sgv['folderpath_visualize_banksStates_table'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            for i_exp in experiments_indices_to_vis:
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'round'
+                    sgv['vis']['num_time'] = num_round
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
+
+                print("可视化银行状态表格：实验" + str(i_exp))
+
+                ##NOTE 设置相关数据
+
+                ### 状态相关的列名
+                columns_states = [
+                    'on',
+                    'off',
+                    'hel',
+                    'isv',
+                    'ilq',
+                    'br',
+                    'is_needed_BoIB',
+                    'is_enabled_BoIB',
+                    'is_needed_BoD',
+                    'is_enabled_BoD',
+                    'is_needed_LiP',
+                    'is_enabled_LiP',
+                    'is_allocated_Shock',
+                ]
+
+                ### 需要提取的列名
+                columnsName_ext = [
+                    'id',
+                    'id_data',
+                    'process_name',
+                    'step',
+                    'round',
+                    'phase',
+                    'id_agent',
+                    'abbr',
+                    'name',
+                    'on',
+                    'off',
+                    'hel',
+                    'isv',
+                    'ilq',
+                    'br',
+                    'is_needed_BoIB',
+                    'is_enabled_BoIB',
+                    'is_needed_BoD',
+                    'is_enabled_BoD',
+                    'is_needed_LiP',
+                    'is_enabled_LiP',
+                    'is_allocated_Shock',
+                ]
+
+                ### 需要调整列边距的列名
+                columnsName_adjust = [
+                    'id',
+                    'id_data',
+                    'step',
+                    'round',
+                    'phase',
+                    'id_agent',
+                ]
+
+                df_BankStates = df_BB_panel[columnsName_ext]  # 提取所需列
+
+                df_BankStates.to_excel(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'), index=False)  # 将数据写入新的 Excel 文件
+
+                wb_BB_panel = load_workbook(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 使用 openpyxl 打开新的 Excel 文件
+                sheet_BB_panel = wb_BB_panel.active
+
+                sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
+
+                col_indices = [df_BankStates.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+                for col_index in col_indices:
+                    col_letter = get_column_letter(col_index)
+                    sheet_BB_panel.column_dimensions[col_letter].width = 5
+
+                # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+                fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+                for i, row in enumerate(sheet_BB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+                    if i % (2 * sgv['num_bank']) < sgv['num_bank']:  # 每间隔指定的行填充一次背景色
+                        for cell in row:
+                            cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+                for col in columns_states:  # 遍历每一列
+                    col_index = df_BankStates.columns.get_loc(col) + 1
+                    col_letter = get_column_letter(col_index)
+                    rng = sheet_BB_panel[col_letter]
+                    for cell in rng:  # 遍历每一个单元格
+                        if cell.value == True:
+                            cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+                wb_BB_panel.save(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 保存 Excel 文件
+
+                pass  # for
+
+            pass  # if
 
     else:
         print("没有可用的数据，无法进行可视化！程序退出。")
@@ -1509,7 +1931,7 @@ def process_one_balanceSheet(args):
     ## 生成绘制资产负债表所需的数据
     data_vis_one_bank_BalanceSheet = generate_one_bank_accounts_data(df_BB_panel, data_vis_one_bank_BalanceSheet, t, i, sgv['vis'])
 
-    ## 用 drawsvg 绘制资产负债表
+    ## 用 drawsvg 绘制资产负债表图
     svg_one_bank_balanceSheet = draw_one_bank_BalanceSheet(data_vis_one_bank_BalanceSheet, sgv['vis'], width=sgv['vis']['one_bank_BalanceSheet_width'], height=sgv['vis']['one_bank_BalanceSheet_height'], title_height=sgv['vis']['one_bank_BalanceSheet_title_height'], border=sgv['vis']['one_bank_BalanceSheet_border'])
     svg_one_bank_balanceSheet.save_svg(Path(sgv['folderpath_plots_single_balanceSheets'], 'BB_exp=' + str(i_exp) + '+name=' + data_vis_one_bank_BalanceSheet['others']['bank_name'] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.svg'))  # 保存
 

@@ -65,8 +65,8 @@ set_config_variables = dict(
         拼接矩阵热图=False,  # 默认True
         绘制资金流网络图=True,  # 默认True
         拼接资金流网络图=True,  # 默认True
-        绘制资产负债表=False,  # 默认True
-        拼接资产负债表=False,  # 默认True
+        绘制资产负债表图=False,  # 默认True
+        拼接资产负债表图=False,  # 默认True
     ),
 
     vis=dict(
