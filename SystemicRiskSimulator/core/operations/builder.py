@@ -30,13 +30,19 @@ class Builder:
         ## 导入模型之初始态实体之数据内容（NOTE 动态导入）
 
         if sgv['is_use_Gymnasium_model']:
-            ## NOTE 如果使用由`Gymnasium`自定义的模型
-            # ## 导入由`Gymnasium`自定义的环境模型 #HACK 这个暂时不开发，因为可以直接用后文的「导入模型之内容类（由`Gymnasium`自定义的）...」
-            # gymEnvContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/gym_env')), r"gym_env_", sgv['folderpath_simulator'])
+            ## #NOTE 如果使用由`Gymnasium`自定义的模型
+            ### #NOTE 子方案一：自定义的模型内容与基于 Gym 构建的模型分成两个文件 #DEBUG
             ## 导入实体之内容
             list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
-            ## 导入模型之内容类（由`Gymnasium`自定义的）（NOTE 动态导入）
+            ## 导入模型之内容（NOTE 动态导入）
             modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"model_", sgv['folderpath_simulator'])
+            ## 导入由`Gymnasium`自定义的环境模型（NOTE 动态导入）
+            gymEnvContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/gym_env')), r"gym_env_", sgv['folderpath_simulator'])
+            # ### #NOTE 子方案二：自定义的模型内容与基于 Gym 构建的模型合在一个类里面 #DEBUG
+            # ## 导入实体之内容
+            # list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
+            # ## 导入模型之内容类（由`Gymnasium`自定义的）（NOTE 动态导入）
+            # modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/gym_model')), r"gym_model_", sgv['folderpath_simulator'])
 
             ## 根据模型实体数据列表之数据，生成相应的模型实体对象，然后组成模型实体列表
             for entityData in list_entityData.values():

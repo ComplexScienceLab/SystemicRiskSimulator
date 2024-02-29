@@ -62,7 +62,7 @@ class Operator:
         ## 导入实体数据，生成实体集、内容集并返回
         if sgv['is_use_flow_form_version_model']:
             ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()`
-            Builder.build_entities_by_process_and_container_component(sgv)  # NOTE：一次只处理一个模型
+            Builder.build_entities_by_process_and_container_component(sgv)  # NOTE：一次只处理一个模型 #HACK 已经过时，可以删除
         else:
             ## NOTE 如果直接使用非流程版的形式的模型
             Builder.build_entities_by_execute(sgv)
