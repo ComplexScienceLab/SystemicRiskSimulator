@@ -30,7 +30,7 @@ class Builder:
         ## 导入模型之初始态实体之数据内容（NOTE 动态导入）
 
         if sgv['is_use_Gymnasium_model']:
-            ## #NOTE 如果使用由`Gymnasium`自定义的模型
+            ## #NOTE 如果使用由强化学习工具包自定义的模型 #DEBUG
             ### #NOTE 子方案一：自定义的模型内容与基于 Gym 构建的模型分成两个文件 #DEBUG
             ## 导入实体之内容
             list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
@@ -49,7 +49,7 @@ class Builder:
                 EntityManager.create_entity(entityData=entityData)
                 pass  # for
         else:
-            ## NOTE 如果使用模拟器自带的模型，不使用由`Gymnasium`自定义的模型
+            ## NOTE 如果使用模拟器自带的模型，不使用由强化学习工具包自定义的模型 #DEBUG
             ## 导入实体之内容
             list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
             ## 导入模型之内容（NOTE 动态导入）

@@ -121,19 +121,26 @@ class Operator:
         else:
             ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_round']` 失效
 
-            # Scheduler.schedule(sgv)  # 调度状态变成`running`
+            if sgv['is_use_Gymnasium_model']:
+                ## #NOTE 如果使用由强化学习工具包自定义的模型 #DEBUG
+                pass  # if #NOW
+            else:
+                ## NOTE 如果使用模拟器自带的模型，不使用由强化学习工具包自定义的模型 #DEBUG
 
-            # model, A, A_data, para, sgv = Processor.process_entity_by_execute_component(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
+                # Scheduler.schedule(sgv)  # 调度状态变成`running`
 
-            modelEntity = model.content  # 获取节点实体对应的模型实体
+                # model, A, A_data, para, sgv = Processor.process_entity_by_execute_component(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
 
-            logging.debug("    开始执行模型内容：")
-            sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
-            modelEntity.execute(A, A_data, para, sgv)
+                modelEntity = model.content  # 获取节点实体对应的模型实体
 
-            logging.debug("    结束执行模型内容。")
+                logging.debug("    开始执行模型内容：")
+                sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+                modelEntity.execute(A, A_data, para, sgv)
 
-            sgv['is_continue_process'] = False  # 不再继续运行过程
+                logging.debug("    结束执行模型内容。")
+
+                sgv['is_continue_process'] = False  # 不再继续运行过程
+                pass  # if
             pass  # if
 
         sgv['experiment_end_time'] = time.time()  # 记录此次实验结束时间
