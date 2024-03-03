@@ -65,15 +65,8 @@ class Operator:
             Builder.build_entities_by_process_and_container_component(sgv)  # NOTE：一次只处理一个模型 #HACK 已经过时，可以删除
         else:
             ## NOTE 如果直接使用非流程版的形式的模型
-            if sgv['is_use_Gymnasium_model']:
-                ## #NOTE 如果使用由强化学习工具包自定义的模型 #DEBUG
-                Builder.build_entities_by_execute(sgv) #NOW
-                pass  # if
-            else:
-                Builder.build_entities_by_execute(sgv)
-                ## NOTE 如果使用模拟器自带的模型，不使用由强化学习工具包自定义的模型 #DEBUG
-                pass  # if
-            pass  # if
+            Builder.build_entities_by_execute(sgv)
+        pass  # if
 
         return sgv, EntityManager.mainModelInstanceEntities
 
@@ -129,10 +122,10 @@ class Operator:
             ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_round']` 失效
 
             if sgv['is_use_Gymnasium_model']:
-                ## #NOTE 如果使用由强化学习工具包自定义的模型 #DEBUG
+                ## #NOTE 如果使用由强化学习环境工具包自定义的模型 #DEBUG
                 pass  # if #NOW
             else:
-                ## NOTE 如果使用模拟器自带的模型，不使用由强化学习工具包自定义的模型 #DEBUG
+                ## NOTE 如果使用模拟器自带的模型，不使用由强化学习环境工具包自定义的模型 #DEBUG
 
                 # Scheduler.schedule(sgv)  # 调度状态变成`running`
 
