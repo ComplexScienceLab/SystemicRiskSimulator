@@ -37,7 +37,7 @@ class Builder:
             ## 导入模型之内容（NOTE 动态导入）
             modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
             ## 导入由强化学习环境工具包自定义的环境模型（NOTE 动态导入）
-            modelContents.update(Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/environments')), r"environment_", sgv['folderpath_simulator']))
+            modelContents.update(Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"environment_", sgv['folderpath_simulator']))
             # ### #NOTE 子方案二：自定义的模型内容与由强化学习环境工具包自定义的环境模型合在一个类里面 #DEBUG
             # ## 导入实体之内容
             # list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])

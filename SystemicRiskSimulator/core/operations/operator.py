@@ -80,7 +80,7 @@ class Operator:
         Args:
             sgv (dict): 模拟器全局变量，默认env
             para (dict): 参数变量，默认para
-            model (Any): 模型实体
+            model (Any): 模型节点实体
 
         Returns:
 
@@ -121,26 +121,42 @@ class Operator:
         else:
             ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_round']` 失效
 
+            # Scheduler.schedule(sgv)  # 调度状态变成`running`
+
+            # model, A, A_data, para, sgv = Processor.process_entity_by_execute_component(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
+
+            modelEntity = model.content  # 获取节点实体对应的模型实体
+
+            logging.debug("    开始执行模型内容：")
+            sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+
             if sgv['is_use_Gymnasium_model']:
                 ## #NOTE 如果使用由强化学习环境工具包自定义的模型 #DEBUG
-                pass  # if #NOW
+                # from pettingzoo.test import parallel_api_test
+                env = modelEntity.execute(A, A_data, para, sgv)  # NOW
+                env.reset()
+                for agent in env.agent_iter():
+                    observation, reward, termination, truncation, info = env.last()
+
+                    if termination or truncation:
+                        action = None
+                    else:
+                        # this is where you would insert your policy
+                        action = env.action_space(agent).sample()
+
+                    env.step(action)
+                env.close()
+                # parallel_api_test(env, num_cycles=1_000)
+                pass  # if
             else:
                 ## NOTE 如果使用模拟器自带的模型，不使用由强化学习环境工具包自定义的模型 #DEBUG
-
-                # Scheduler.schedule(sgv)  # 调度状态变成`running`
-
-                # model, A, A_data, para, sgv = Processor.process_entity_by_execute_component(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
-
-                modelEntity = model.content  # 获取节点实体对应的模型实体
-
-                logging.debug("    开始执行模型内容：")
-                sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
                 modelEntity.execute(A, A_data, para, sgv)
-
-                logging.debug("    结束执行模型内容。")
-
-                sgv['is_continue_process'] = False  # 不再继续运行过程
                 pass  # if
+
+            logging.debug("    结束执行模型内容。")
+
+            sgv['is_continue_process'] = False  # 不再继续运行过程
+
             pass  # if
 
         sgv['experiment_end_time'] = time.time()  # 记录此次实验结束时间
