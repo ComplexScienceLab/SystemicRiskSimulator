@@ -132,21 +132,8 @@ class Operator:
 
             if sgv['is_use_Gymnasium_model']:
                 ## #NOTE 如果使用由强化学习环境工具包自定义的模型 #DEBUG
-                # from pettingzoo.test import parallel_api_test
-                env = modelEntity.execute(A, A_data, para, sgv)  # NOW
-                env.reset()
-                for agent in env.agent_iter():
-                    observation, reward, termination, truncation, info = env.last()
-
-                    if termination or truncation:
-                        action = None
-                    else:
-                        # this is where you would insert your policy
-                        action = env.action_space(agent).sample()
-
-                    env.step(action)
-                env.close()
-                # parallel_api_test(env, num_cycles=1_000)
+                env = modelEntity.environment(A, A_data, para, sgv)  # NOW
+                modelEntity.operate(env)
                 pass  # if
             else:
                 ## NOTE 如果使用模拟器自带的模型，不使用由强化学习环境工具包自定义的模型 #DEBUG

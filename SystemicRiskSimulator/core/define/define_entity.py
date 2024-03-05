@@ -23,6 +23,8 @@ class Entity:
     - container: Union[ContainerComponent, None]: 实体容器
     - condition: Union[ConditionComponent, None]: 实体条件
     - execute: Union[ExecuteComponent, None]: 实体执行器
+    - operate: Union[OperateComponent, None]: 实体运作器
+    - environment: Union[EnvironmentComponent, None]: 实体环境
     - node: Union[NodeComponent, None]: 实体节点
     """
 
@@ -32,6 +34,8 @@ class Entity:
     container: Union[ContainerComponent, None]
     condition: Union[ConditionComponent, None]
     execute: Union[ExecuteComponent, None]
+    operate: Union[OperateComponent, None]
+    environment: Union[EnvironmentComponent, None]
     node: Union[NodeComponent, None]
 
     def __init__(self, entityData: Any = None, **kwargs):
@@ -70,6 +74,8 @@ class Entity:
             self.attribute = AttributeComponent(attribute=entityData['attribute'])  # HACK 如果`entityData['attribute']`为空，那么entityData数据不符合要求。这里并未给出检查条件。
             self.content = entityData['content']
             self.execute = entityData['execute']
+            self.operate = entityData['operate']
+            self.environment = entityData['environment']
             self.process = entityData['process']
             self.container = entityData['container']
             self.condition = entityData['condition']
@@ -83,6 +89,8 @@ class Entity:
             ## 一次创建其它组件
             self.content = kwargs['content'] if 'content' in kwargs.keys() else None
             self.execute = kwargs['execute'] if 'execute' in kwargs.keys() else None
+            self.operate = kwargs['operate'] if 'operate' in kwargs.keys() else None
+            self.environment = kwargs['environment'] if 'environment' in kwargs.keys() else None
             self.process = kwargs['process'] if 'process' in kwargs.keys() else None
             self.container = kwargs['container'] if 'container' in kwargs.keys() else None
             self.condition = kwargs['condition'] if 'condition' in kwargs.keys() else None
@@ -91,6 +99,8 @@ class Entity:
             self.attribute = AttributeComponent(None)
             self.content = None
             self.execute = None
+            self.operate = None
+            self.environment = None
             self.process = None
             self.container = None
             self.condition = None

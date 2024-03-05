@@ -28,5 +28,7 @@ ContainerComponentType = Union[list, dict, str, None]
 # ProcessComponentType = np.dtype({'names': ['flow', 'condition'], 'formats': [np.void, 'U']}) #TODO 无用可以删除
 ProcessComponentType = Union[dict, str, None]
 ExecuteComponentType = Union[str, list, None]
+OperateComponentType = Union[str, list, None]
+EnvironmentComponentType = Union[str, list, None]
 SimulatorGlobalVariableType = Union[dict, Any]  # 模拟器全局变量类型 #HACK暂时没用到，目前用的是dict。
 ParameterVariableType = Union[dict, Any]  # 参数变量类型 #HACK暂时没用到，目前用的是dict。

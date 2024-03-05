@@ -38,6 +38,8 @@ class Builder:
             modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
             ## 导入由强化学习环境工具包自定义的环境模型（NOTE 动态导入）
             modelContents.update(Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"environment_", sgv['folderpath_simulator']))
+            ## 导入由强化学习环境工具包自定义的运作器（NOTE 动态导入）
+            modelContents.update(Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/operators')), r"operator_", sgv['folderpath_simulator']))
             # ### #NOTE 子方案二：自定义的模型内容与由强化学习环境工具包自定义的环境模型合在一个类里面 #DEBUG
             # ## 导入实体之内容
             # list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
@@ -48,6 +50,57 @@ class Builder:
             for entityData in list_entityData.values():
                 EntityManager.create_entity(entityData=entityData)
                 pass  # for
+
+            # 补充模型实体之特征
+            # for modelEntity in EntityManager.modelEntities.values():
+            #     if modelEntity.attribute.content_name is None:
+            #         modelEntity.attribute.content_name = modelEntity.content  # 内容名称`content_name`
+            #     pass  # for
+
+            ## 生成模型实体之实例（对应一个节点实体）
+            for modelEntity in EntityManager.modelEntities.values():
+                nodeEntities = {}
+                if modelEntity.container is not None:
+                    for node_name, node_value in modelEntity.container.items():
+                        nodeEntity = EntityManager.create_entity()  # 构造一个空节点实体
+                        nodeEntity.attribute.entity_name = node_name  # 设置节点实体之名称
+                        nodeEntity.attribute.entity_type = {"instance entity"}  # 设置节点实体之实体类型
+                        nodeEntity.attribute.structure_type = {"content structure"}  # 设置节点实体之结构类型
+                        nodeEntity.attribute.content_type = {"node content"}  # 设置节点实体之内容类型
+                        if nodeEntity.content is None:
+                            nodeEntity.content = node_value  # 设置节点实体之内容组件。此时，其内容为模型实体之字符串数据，需要进一步装配。#BUG 是否应该放在content而不是execute？
+                            pass  # if
+                        nodeEntities[node_name] = nodeEntity  # 生成节点实体字典列表
+                        pass  # for
+                    modelEntity.container = nodeEntities  # 构建节点：将节点组件之值替换成节点实体字典列表之值
+                    pass  # if
+                pass  # for
+
+            ## 装配模型实体之执行器、内容器之值链接至对应的模型内容功能函数
+            for modelEntity in EntityManager.modelEntities.values():
+                if (
+                        modelEntity.attribute.entity_type == {"template entity"} and
+                        modelEntity.attribute.structure_type == {"content structure"} and
+                        modelEntity.attribute.container_type == {"root container"} and
+                        modelEntity.attribute.process_type == {"executive process"} and
+                        modelEntity.attribute.content_type == {"model content"}
+                ):
+                    # modelEntity.execute = dict()
+                    # modelEntity.execute['model'] = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
+                    # modelEntity.execute['finance'] = modelContents[modelEntity.content]  # 设置执行器之值是具体的模型内容
+                    modelEntity.content = modelContents[modelEntity.content]  # 设置内容器之值是具体的模型相关的功能函数
+                    modelEntity.environment = modelContents[modelEntity.environment]  # 设置环境之值是具体的模型相关的功能函数
+                    modelEntity.operate = modelContents[modelEntity.operate]  # 设置运作器之值是具体的模型相关的功能函数
+                    pass  # if
+                pass  # for
+
+            ## 生成模型实例实体用于存放对应的主模型实体
+            for mainModelTemplateEntity in EntityManager.mainModelTemplateEntities.values():
+                mainModelInstanceEntity_name = mainModelTemplateEntity.attribute.entity_name
+                mainModelInstanceEntity = EntityManager.create_entity(entity_name='model_' + mainModelInstanceEntity_name, entity_type={"instance entity"}, structure_type={"container structure", "process structure"}, container_type={"root container"}, process_type={"executive process"}, content_type={"model content", "node content"})  # 构造一个空实体
+                mainModelInstanceEntity.content = mainModelTemplateEntity  # 设置模型实例实体之内容组件为主模型实体
+                pass  # for
+
         else:
             ## NOTE 如果使用模拟器自带的模型，不使用由强化学习环境工具包自定义的模型 #DEBUG
             ## 导入实体之内容
@@ -59,56 +112,56 @@ class Builder:
                 EntityManager.create_entity(entityData=entityData)  # 根据实体数据，创建每个实体
                 pass  # for
 
+            # 补充模型实体之特征
+            # for modelEntity in EntityManager.modelEntities.values():
+            #     if modelEntity.attribute.content_name is None:
+            #         modelEntity.attribute.content_name = modelEntity.content  # 内容名称`content_name`
+            #     pass  # for
+
+            ## 生成模型实体之实例（对应一个节点实体）
+            for modelEntity in EntityManager.modelEntities.values():
+                nodeEntities = {}
+                if modelEntity.container is not None:
+                    for node_name, node_value in modelEntity.container.items():
+                        nodeEntity = EntityManager.create_entity()  # 构造一个空节点实体
+                        nodeEntity.attribute.entity_name = node_name  # 设置节点实体之名称
+                        nodeEntity.attribute.entity_type = {"instance entity"}  # 设置节点实体之实体类型
+                        nodeEntity.attribute.structure_type = {"content structure"}  # 设置节点实体之结构类型
+                        nodeEntity.attribute.content_type = {"node content"}  # 设置节点实体之内容类型
+                        if nodeEntity.content is None:
+                            nodeEntity.content = node_value  # 设置节点实体之内容组件。此时，其内容为模型实体之字符串数据，需要进一步装配。#BUG 是否应该放在content而不是execute？
+                            pass  # if
+                        nodeEntities[node_name] = nodeEntity  # 生成节点实体字典列表
+                        pass  # for
+                    modelEntity.container = nodeEntities  # 构建节点：将节点组件之值替换成节点实体字典列表之值
+                    pass  # if
+                pass  # for
+
+            ## 装配模型实体之执行器、内容器之值链接至对应的模型内容功能函数
+            for modelEntity in EntityManager.modelEntities.values():
+                if (
+                        modelEntity.attribute.entity_type == {"template entity"} and
+                        modelEntity.attribute.structure_type == {"content structure"} and
+                        modelEntity.attribute.container_type == {"root container"} and
+                        modelEntity.attribute.process_type == {"executive process"} and
+                        modelEntity.attribute.content_type == {"model content"}
+                ):
+                    # modelEntity.execute = dict()
+                    # modelEntity.execute['model'] = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
+                    # modelEntity.execute['finance'] = modelContents[modelEntity.content]  # 设置执行器之值是具体的模型内容
+                    modelEntity.execute = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
+                    modelEntity.content = modelContents[modelEntity.content]  # 设置内容器之值是具体的模型相关的功能函数
+                    pass  # if
+                pass  # for
+
+            ## 生成模型实例实体用于存放对应的主模型实体
+            for mainModelTemplateEntity in EntityManager.mainModelTemplateEntities.values():
+                mainModelInstanceEntity_name = mainModelTemplateEntity.attribute.entity_name
+                mainModelInstanceEntity = EntityManager.create_entity(entity_name='model_' + mainModelInstanceEntity_name, entity_type={"instance entity"}, structure_type={"container structure", "process structure"}, container_type={"root container"}, process_type={"executive process"}, content_type={"model content", "node content"})  # 构造一个空实体
+                mainModelInstanceEntity.content = mainModelTemplateEntity  # 设置模型实例实体之内容组件为主模型实体
+                pass  # for
+
             pass  # if
-
-        # 补充模型实体之特征
-        # for modelEntity in EntityManager.modelEntities.values():
-        #     if modelEntity.attribute.content_name is None:
-        #         modelEntity.attribute.content_name = modelEntity.content  # 内容名称`content_name`
-        #     pass  # for
-
-        ## 生成模型实体之实例（对应一个节点实体）
-        for modelEntity in EntityManager.modelEntities.values():
-            nodeEntities = {}
-            if modelEntity.container is not None:
-                for node_name, node_value in modelEntity.container.items():
-                    nodeEntity = EntityManager.create_entity()  # 构造一个空节点实体
-                    nodeEntity.attribute.entity_name = node_name  # 设置节点实体之名称
-                    nodeEntity.attribute.entity_type = {"instance entity"}  # 设置节点实体之实体类型
-                    nodeEntity.attribute.structure_type = {"content structure"}  # 设置节点实体之结构类型
-                    nodeEntity.attribute.content_type = {"node content"}  # 设置节点实体之内容类型
-                    if nodeEntity.content is None:
-                        nodeEntity.content = node_value  # 设置节点实体之内容组件。此时，其内容为模型实体之字符串数据，需要进一步装配。#BUG 是否应该放在content而不是execute？
-                        pass  # if
-                    nodeEntities[node_name] = nodeEntity  # 生成节点实体字典列表
-                    pass  # for
-                modelEntity.container = nodeEntities  # 构建节点：将节点组件之值替换成节点实体字典列表之值
-                pass  # if
-            pass  # for
-
-        ## 装配模型实体之执行器、内容器之值链接至对应的模型内容功能函数
-        for modelEntity in EntityManager.modelEntities.values():
-            if (
-                    modelEntity.attribute.entity_type == {"template entity"} and
-                    modelEntity.attribute.structure_type == {"content structure"} and
-                    modelEntity.attribute.container_type == {"root container"} and
-                    modelEntity.attribute.process_type == {"executive process"} and
-                    modelEntity.attribute.content_type == {"model content"}
-            ):
-                # modelEntity.execute = dict()
-                # modelEntity.execute['model'] = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
-                # modelEntity.execute['finance'] = modelContents[modelEntity.content]  # 设置执行器之值是具体的模型内容
-                modelEntity.execute = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
-                modelEntity.content = modelContents[modelEntity.content]  # 设置内容器之值是具体的模型相关的功能函数
-                pass  # if
-            pass  # for
-
-        ## 生成模型实例实体用于存放对应的主模型实体
-        for mainModelTemplateEntity in EntityManager.mainModelTemplateEntities.values():
-            mainModelInstanceEntity_name = mainModelTemplateEntity.attribute.entity_name
-            mainModelInstanceEntity = EntityManager.create_entity(entity_name='model_' + mainModelInstanceEntity_name, entity_type={"instance entity"}, structure_type={"container structure", "process structure"}, container_type={"root container"}, process_type={"executive process"}, content_type={"model content", "node content"})  # 构造一个空实体
-            mainModelInstanceEntity.content = mainModelTemplateEntity  # 设置模型实例实体之内容组件为主模型实体
-            pass  # for
 
         pass  # function
 

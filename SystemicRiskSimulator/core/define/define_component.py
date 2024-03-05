@@ -189,6 +189,44 @@ class ExecuteComponent:
     pass  # class
 
 
+class OperateComponent:
+    """
+    运作组件
+    """
+
+    operate: OperateComponentType
+
+    def __init__(self, operate):
+        """
+
+        Args:
+            operate: 运作之内容
+        """
+        self.operate = operate if operate is not None else None
+        pass  # function
+
+    pass  # class
+
+
+class EnvironmentComponent:
+    """
+    环境组件
+    """
+
+    environment: EnvironmentComponentType
+
+    def __init__(self, environment):
+        """
+
+        Args:
+            environment: 环境之内容
+        """
+        self.environment = environment if environment is not None else None
+        pass  # function
+
+    pass  # class
+
+
 class NodeComponent:
     """
     节点组件
