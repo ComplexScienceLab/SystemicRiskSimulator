@@ -38,7 +38,16 @@ def experiments_program(sgv: dict, para: dict):
 
         if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):
             ## 进行实验
-            Operator.operate_experiment(sgv, para, model)
+            if sgv['is_use_Gymnasium_model']:
+                ## #NOTE 如果使用由强化学习环境工具包自定义的模型 #DEBUG 正在测试中
+                A, A_data, sgv, para, model = Operator.operate_reset_experiment(sgv, para, model)
+                A, A_data, sgv, para, model = Operator.operate_step_experiment(A, A_data, sgv, para, model)
+                # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
+                Operator.operate_end_experiment(A_data, sgv)
+            else:
+                ## NOTE 如果使用模拟器自带的模型，不使用由强化学习环境工具包自定义的模型 #DEBUG 还没测试过
+                Operator.operate_run_experiment(sgv, para, model)
+                pass  # if
 
         pass  # for
 
