@@ -131,8 +131,8 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     # list_insolvent = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于资不抵债的银行编号 list_insolvent
     # list_illiquid = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于流动性短缺的银行编号 list_illiquid
     # list_bankrupt = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于破产的银行编号 list_bankrupt
-
     # TODO 增加监管约束之状态；
+    rewards = np.NaN,  # 各银行之奖励 rewards （类似效用函数）
 
     def __init__(self, *args, **kwargs):
         for index, key in enumerate(self.__dir__()):
@@ -174,6 +174,7 @@ class BankInterbank(BaseInterAgents):
     isv = np.NaN  # 信息邻接矩阵之于银行间资不抵债的 is_insolvent
     ilq = np.NaN  # 信息邻接矩阵之于银行间流动性短缺的 is_illiquid
     br = np.NaN  # 信息邻接矩阵之于银行间破产的 is_bankrupt
+
     # cre = np.NaN  # 信息列表之于各银行之债权方银行编号 list_creditors
     # deb = np.NaN  # 信息列表之于各银行之债务方银行编号 list_debtors
     # cre_isv = np.NaN  # 信息列表之于资不抵债的银行之债权方银行编号 list_creditors_in_insolvent
