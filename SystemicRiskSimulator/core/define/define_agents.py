@@ -14,7 +14,7 @@ class BaseAgents:
     """
     id: IdsType
     abbr: AbbrType
-    name: NameType
+    fullName: NameType
     pass
 
 
@@ -34,7 +34,7 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     """
     id_agent: IdsType = np.NaN  # = deepcopy(RANGE1) agent 之编号 id
     abbr = np.NaN  # = np.full(sgv['num_bank'], "")
-    name = np.NaN  # = np.full(sgv['num_bank'], "")
+    fullName = np.NaN  # = np.full(sgv['num_bank'], "")
     A_all = np.NaN  # = deepcopy(ZEROS1)  # 总资产 A_all: $A_all=A_IB+A_exIB$
     A_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产加总 A_IB_all
     A_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$

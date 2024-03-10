@@ -56,7 +56,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     dataName_vector1, dataName_vector2, dataName_matrix = dataName[0], dataName[1], dataName[2]
 
     ## 获取各银行个体之相关的数据
-    data_banksName = df_BB[df_BB[sgv_vis['name_time']] == time]['name'].values  # 银行名称
+    data_banksName = df_BB[df_BB[sgv_vis['name_time']] == time]['fullName'].values  # 银行名称
     data_banksId = df_BB[df_BB[sgv_vis['name_time']] == time]['id_agent'].values  # 银行id
     data_vector1 = df_BB[df_BB[sgv_vis['name_time']] == time][dataName_vector1].values  # 向量1之数据
     data_vector2 = df_BB[df_BB[sgv_vis['name_time']] == time][dataName_vector2].values  # 向量2之数据
@@ -360,7 +360,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     list_edgeTypes_name = df_data_edgeTypes['edge_type'].tolist()
 
     ## 获取各银行个体之相关的数据
-    list_data_banksName = df_BB[df_BB[sgv_vis['name_time']] == time]['name'].tolist()  # 银行名称
+    list_data_banksName = df_BB[df_BB[sgv_vis['name_time']] == time]['fullName'].tolist()  # 银行名称
     list_data_banksId = df_BB[df_BB[sgv_vis['name_time']] == time]['id_agent'].tolist()  # 银行id
     list_data_processName = df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].tolist()  # 模型过程名称
     list_data_steps = df_BB[df_BB[sgv_vis['name_time']] == time]['step'].tolist()  # 模型步长
@@ -851,7 +851,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
     ## 生成其他信息
     others = dict(
         time_granularity=sgv_vis['time_granularity'],
-        bank_name=df_BB[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['name'].values[0],
+        bank_name=df_BB[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['fullName'].values[0],
         process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
         step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
         round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],

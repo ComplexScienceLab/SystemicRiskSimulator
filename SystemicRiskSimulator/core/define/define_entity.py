@@ -95,7 +95,7 @@ class Entity:
             self.container = kwargs['container'] if 'container' in kwargs.keys() else None
             self.condition = kwargs['condition'] if 'condition' in kwargs.keys() else None
             self.node = kwargs['node'] if 'node' in kwargs.keys() else None
-        else:  # HACK其实这种情况不可能发生。因为已经自动生成了`id`和`name`。
+        else:  # HACK其实这种情况不可能发生。因为已经自动生成了`id`和`fullName`。
             self.attribute = AttributeComponent(None)
             self.content = None
             self.execute = None

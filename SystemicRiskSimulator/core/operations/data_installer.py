@@ -97,7 +97,7 @@ class DataInstaller:
         bankCommercial: BankCommercial = BankCommercial(
             id_agent=CONST(sgv['num_bank']).RANGE1.copy() - 1,  # agent 之编号 id
             abbr=CONST(sgv['num_bank']).BLANK1.copy(),  # 缩写 abbr
-            name=CONST(sgv['num_bank']).BLANK1.copy(),  # 全名 name
+            fullName=CONST(sgv['num_bank']).BLANK1.copy(),  # 全名 fullName
             A_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 总资产 A_all: $A_all=A_IB+A_exIB$
             A_IB_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间资产加总 A_IB_all
             A_exIB=CONST(sgv['num_bank']).ZEROS1.copy(),  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$

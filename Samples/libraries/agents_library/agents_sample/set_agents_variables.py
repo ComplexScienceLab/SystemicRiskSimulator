@@ -26,7 +26,7 @@ set_bankCommercial_variables = dict(
     ## 初始化商业银行群 bank_commercial
     id_agent=CONST(sgv['num_bank']).RANGE1.copy() - 1,  # agent 之编号 id
     abbr=CONST(sgv['num_bank']).RANGE1.copy(),  # 缩写 abbr
-    name=np.array(["Bank_1", "Bank_2", "Bank_3", "Bank_4", "Bank_5"]),  # 全名 name
+    fullName=np.array(["Bank_1", "Bank_2", "Bank_3", "Bank_4", "Bank_5"]),  # 全名 fullName
     A_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 总资产 A_all: $A_all=A_IB+A_exIB$
     A_IB_all=np.array([[2185.24, 398.37, 730.99, 1357.75, 2717.39]]).T,  # 银行间资产加总 A_IB_all
     A_exIB=CONST(sgv['num_bank']).ZEROS1.copy(),  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
