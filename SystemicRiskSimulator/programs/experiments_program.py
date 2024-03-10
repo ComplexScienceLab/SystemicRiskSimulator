@@ -40,7 +40,7 @@ def experiments_program(sgv: dict, para: dict):
             ## 进行实验
             if sgv['is_use_Gymnasium_model']:
                 ## #NOTE 如果使用由强化学习环境工具包自定义的模型 #DEBUG 正在测试中
-                A, A_data, sgv, para, model = Operator.operate_reset_experiment(sgv, para, model)
+                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
                 A, A_data, sgv, para, model = Operator.operate_step_experiment(A, A_data, sgv, para, model)
                 # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
                 Operator.operate_end_experiment(A_data, sgv)
