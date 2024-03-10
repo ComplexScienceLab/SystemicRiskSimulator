@@ -223,25 +223,16 @@ class Operator:
         env = modelEntity.environment(A, A_data, para, sgv)  # NOW
         observations, infos = env.reset()
 
-        # parallel_env = parallel_wrapper_fn(env)
+        while env.agents:
+            pettingzoo_agents_actions = env.convert_actions_to_pettingzoo(name=env.A.BB.name, Default_IB=env.A.IB.Default_IB)
+            observations, rewards, terminations, truncations, infos = env.step(pettingzoo_agents_actions)
+            pass  # while
 
-        while env.agents:  # NOW
-
-        parallel_env
-        for agent in env.agent_iter():
-            observation, reward, termination, truncation, info = env.last()
-
-            if termination or truncation:
-                action = None
-            else:
-                # this is where you would insert your policy
-                action = env.action_space(agent).sample()
-
-            env.step(action)
-        parallel_env.close()
+        env.close()
         # parallel_api_test(env, num_cycles=1_000)
 
         # modelEntity.operate(env)
+        return A, A_data, sgv, para
 
         pass  # function
 

@@ -39,7 +39,9 @@ class Executer:
         sgv['phase'] = 1  # 逐相复位（起始为1）
         sgv['process_name'] = process_name
         logging.debug(f"        轮次：{sgv['round']}，模型：{sgv['process_name']}")
-        A, sgv = function(A, A_data, para, sgv)  # 更新金融变量
+        A, sgv = function(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+
+
         # NOW
 
         return A, sgv
@@ -69,7 +71,7 @@ class Executer:
 
         logging.debug(f"                步进：{sgv['step']}，相：{sgv['phase']}，更新源：{update_way}")
         # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
-        function.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
+        function.update_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         Collector.collect_agent_data(A, A_data, sgv)
 
         sgv['step'] += 1  # 步进加一

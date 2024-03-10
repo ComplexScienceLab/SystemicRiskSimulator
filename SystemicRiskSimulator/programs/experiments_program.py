@@ -68,7 +68,7 @@ def experiments_program(sgv: dict, para: dict):
         elif system == 'Windows':
             os.startfile(str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
         elif system == 'Linux':
-            os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
+            os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))  #DEBUG 还没测试过
         else:
             print("Unsupported operating system")
             pass  # if
