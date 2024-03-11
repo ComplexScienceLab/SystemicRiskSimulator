@@ -223,9 +223,12 @@ class Operator:
         env = modelEntity.environment(A, A_data, para, sgv)  # NOW
         observations, infos = env.reset()
 
-        while env.agents: #FIXME
+        while env.agents:
             pettingzoo_agents_actions = env.convert_actions_to_pettingzoo(fullName=env.A.BB.fullName, Default_IB=env.A.IB.Default_IB)
             observations, rewards, terminations, truncations, infos = env.step(pettingzoo_agents_actions)
+            if sgv['round'] > sgv['test_max_num_of_round']:
+                raise Exception("超过了最大回合数！强制停止！")
+                pass  # if
             pass  # while
 
         env.close()
