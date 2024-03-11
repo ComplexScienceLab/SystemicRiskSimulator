@@ -19,12 +19,12 @@ class Executer:
     """
 
     @classmethod
-    def round_step_update(cls, function, process_name: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def round_step_update(cls, model_content, turn:int,process_name: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
 
         Args:
-            function (function): 相关的需要步进更新的功能函数
+            model_content (class): 相关的需要步进更新的功能类
             A (SystemicRiskAgent): 多主体
             A_data (AgentDataCollection): 多主体之数据
             para (dict): 参数集
@@ -35,14 +35,12 @@ class Executer:
             sgv (dict): 模拟器全局变量
 
         """
-        sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+        sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
         sgv['phase'] = 1  # 逐相复位（起始为1）
         sgv['process_name'] = process_name
         logging.debug(f"        轮次：{sgv['round']}，模型：{sgv['process_name']}")
-        A, sgv = function(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
-
-
-        # NOW
+        A, sgv = model_content.content_model_process(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+        # A, sgv = model_content.execute_model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
         return A, sgv
 
@@ -83,7 +81,7 @@ class Executer:
     @classmethod
     def execute_main_model_entity(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict, entity: Entity):
         """
-        执行非流程版本的模型实体（模型模板实体）。#HACK 似乎无用了。
+        执行过程版本（非流程版本）的模型实体（模型模板实体）。#HACK 似乎无用了。
 
         NOTE：输入参数将被直接修改。
 

@@ -220,7 +220,7 @@ class Operator:
         logging.debug("    开始执行模型内容：")
         sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
-        env = modelEntity.environment(A, A_data, para, sgv)  # NOW
+        env = modelEntity.environment(A, A_data, para, sgv, modelEntity.content)  # NOW
         observations, infos = env.reset()
 
         while env.agents:
