@@ -19,7 +19,7 @@ class Executer:
     """
 
     @classmethod
-    def round_step_update(cls, model_content, turn:int,process_name: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def turn_step_update(cls, model_content, turn:int,process_name: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
 
@@ -38,7 +38,7 @@ class Executer:
         sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
         sgv['phase'] = 1  # 逐相复位（起始为1）
         sgv['process_name'] = process_name
-        logging.debug(f"        轮次：{sgv['round']}，模型：{sgv['process_name']}")
+        logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
         A, sgv = model_content.content_model_process(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
         # A, sgv = model_content.execute_model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
@@ -99,7 +99,7 @@ class Executer:
 
         logging.debug("    开始执行模型内容：")
 
-        # sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+        # sgv['turn'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
         # sgv['phase'] = 1  # 逐相复位（起始为1）
         # # sgv['step'] += 1  # 步进加一
         sgv['process_name'] = entity.attribute.entity_name  # 执行的过程之名称（英文名称）

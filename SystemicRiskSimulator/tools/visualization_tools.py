@@ -164,7 +164,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
         data_name=dataName_matrix,
         process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
         step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
-        round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],
+        turn=df_BB[df_BB[sgv_vis['name_time']] == time]['turn'].values[0],
         phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
     )
 
@@ -254,9 +254,9 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_info = fig.add_subplot(gs[0, :])  # 创建一个新的子图，覆盖整个图像的顶部
     ax_info.axis('off')
     if others['time_granularity'] == '步进粒度':
-        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['round'])}    s={str(others['step'])}    p={str(others['phase'])}"
+        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['turn'])}    s={str(others['step'])}    p={str(others['phase'])}"
     elif others['time_granularity'] == '轮次粒度':
-        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['round'])}"  # TODO 未测试
+        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['turn'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
     ax_info.text(0.5, 1.0, dw_text, ha='center', va='center', color='black', fontsize=16)  # 在子图的中心添加文本
@@ -364,7 +364,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     list_data_banksId = df_BB[df_BB[sgv_vis['name_time']] == time]['id_agent'].tolist()  # 银行id
     list_data_processName = df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].tolist()  # 模型过程名称
     list_data_steps = df_BB[df_BB[sgv_vis['name_time']] == time]['step'].tolist()  # 模型步长
-    list_data_rounds = df_BB[df_BB[sgv_vis['name_time']] == time]['round'].tolist()  # 模型轮次
+    list_data_turns = df_BB[df_BB[sgv_vis['name_time']] == time]['turn'].tolist()  # 模型轮次
     list_data_phases = df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].tolist()  # 模型相步
     list_data_dataName = df_BB[df_BB[sgv_vis['name_time']] == time][list_edgeTypes_name[0] + '_all'].tolist()  # 节点数据名称
     list_data_A_Q = df_BB[df_BB[sgv_vis['name_time']] == time]['A_Q'].tolist()  # A_Q
@@ -512,7 +512,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
         data_name=data_name,
         process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
         step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
-        round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],
+        turn=df_BB[df_BB[sgv_vis['name_time']] == time]['turn'].values[0],
         phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
     )
 
@@ -552,9 +552,9 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: flo
 
     ## 绘制标题
     if others['time_granularity'] == '步进粒度':
-        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['round'])}   s={str(others['step'])}   p={str(others['phase'])}"
+        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}   s={str(others['step'])}   p={str(others['phase'])}"
     elif others['time_granularity'] == '轮次粒度':
-        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['round'])}"  # DEBUG 未测试
+        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -854,7 +854,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         bank_name=df_BB[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent)]['fullName'].values[0],
         process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
         step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
-        round=df_BB[df_BB[sgv_vis['name_time']] == time]['round'].values[0],
+        turn=df_BB[df_BB[sgv_vis['name_time']] == time]['turn'].values[0],
         phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
     )
 
@@ -920,9 +920,9 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制标题
     if others['time_granularity'] == '步进粒度':
-        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['round'])}   s={str(others['step'])}   p={str(others['phase'])}"
+        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['turn'])}   s={str(others['step'])}   p={str(others['phase'])}"
     elif others['time_granularity'] == '轮次粒度':
-        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['round'])}"  # DEBUG 未测试
+        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['turn'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if

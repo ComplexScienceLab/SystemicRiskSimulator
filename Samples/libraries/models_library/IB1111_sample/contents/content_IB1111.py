@@ -31,10 +31,10 @@ def content_IB1111(A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict
     ## node_01
     A, sgv = ExBankInsolventShock(A, para, sgv)
 
-    # if(A.BB.isv == A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].isv).all():
+    # if(A.BB.isv == A_data.BB[A_data.BB['turn'] == sgv['turn'] - 1].iloc[-1].isv).all():
     #     is_goto_node_04 = True
 
-    while (A.BB.isv != A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].isv).any():
+    while (A.BB.isv != A_data.BB[A_data.BB['turn'] == sgv['turn'] - 1].iloc[-1].isv).any():
         ## node_02
         A, sgv = InterBankInsolventContagion(A, para, sgv)
 
@@ -48,7 +48,7 @@ def content_IB1111(A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict
     ## node_04
     A, sgv = ExBankIlliquidShock(A, para, sgv)
 
-    while (A.BB.ilq != A_data.BB[A_data.BB['round'] == sgv['round'] - 1].iloc[-1].ilq).any():
+    while (A.BB.ilq != A_data.BB[A_data.BB['turn'] == sgv['turn'] - 1].iloc[-1].ilq).any():
         ## node_05
         A, sgv = InterBankIlliquidContagionShock(A, para, sgv)
 
@@ -78,11 +78,11 @@ def ExBankInsolventShock(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     """
 
-    sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+    sgv['turn'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
     sgv['phase'] = 1  # 逐相复位（起始为1）
     sgv['process_name'] = "ExBankInsolventShock"
 
-    logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
+    logging.debug(f"          轮次 {sgv['turn']} 模型 {sgv['process_name']}")
 
     # Executer.variable_step_update('clear all Shock_source', A, para, sgv)  # 清零所有冲击源头变量 Shock_source
     # Executer.variable_step_update('clear all Shock_IB', A, para, sgv)  # 清零所有银行间冲击变量 Shock_IB
@@ -125,11 +125,11 @@ def InterBankInsolventContagion(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     """
 
-    sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+    sgv['turn'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
     sgv['phase'] = 1  # 逐相复位（起始为1）
     sgv['process_name'] = "InterBankInsolventContagion"
 
-    logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
+    logging.debug(f"          轮次 {sgv['turn']} 模型 {sgv['process_name']}")
 
     # Executer.variable_step_update('clear all Shock_target', A, para, sgv)  # 清零所有冲击目标变量 Shock_target
 
@@ -160,11 +160,11 @@ def InterBankInsolventShock(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     """
 
-    sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+    sgv['turn'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
     sgv['phase'] = 1  # 逐相复位（起始为1）
     sgv['process_name'] = "InterBankInsolventShock"
 
-    logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
+    logging.debug(f"          轮次 {sgv['turn']} 模型 {sgv['process_name']}")
 
     # Executer.variable_step_update('clear all Shock_source', A, para, sgv)  # 清零所有冲击源头变量 Shock_source
     # Executer.variable_step_update('clear all Shock_IB', A, para, sgv)  # 清零所有银行间冲击变量 Shock_IB
@@ -203,11 +203,11 @@ def ExBankIlliquidShock(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     """
 
-    sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+    sgv['turn'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
     sgv['phase'] = 1  # 逐相复位（起始为1）
     sgv['process_name'] = "ExBankIlliquidShock"
 
-    logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
+    logging.debug(f"          轮次 {sgv['turn']} 模型 {sgv['process_name']}")
 
     # Executer.variable_step_update('clear all Shock_source', A, para, sgv)  # 清零所有冲击源头变量 Shock_source
     # Executer.variable_step_update('clear all Shock_IB', A, para, sgv)  # 清零所有银行间冲击变量 Shock_IB
@@ -244,11 +244,11 @@ def InterBankIlliquidContagionShock(A: SystemicRiskAgent, para: dict, sgv: dict)
 
     """
 
-    sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+    sgv['turn'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
     sgv['phase'] = 1  # 逐相复位（起始为1）
     sgv['process_name'] = "InterBankIlliquidContagionShock"
 
-    logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
+    logging.debug(f"          轮次 {sgv['turn']} 模型 {sgv['process_name']}")
 
     ## DEBUG 方式一：每个银行只有一次分配传染冲击之行为。感觉这个比较简单。
     i_nas = (A.BB.ilq & ~A.BB.is_allocated_Shock)  # 临时设置示性变量，表示银行其未分配传染冲击。暨每个银行只有一次分配传染冲击之行为。
@@ -288,11 +288,11 @@ def InterBankIlliquidAllocate(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     """
 
-    sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+    sgv['turn'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
     sgv['phase'] = 1  # 逐相复位（起始为1）
     sgv['process_name'] = "InterBankIlliquidAllocate"
 
-    logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
+    logging.debug(f"          轮次 {sgv['turn']} 模型 {sgv['process_name']}")
 
     Executer.variable_step_update('enabled collect A_P', A, para, sgv)  # 计算是否可以收回厂商贷款状态
     A.BB.Li_P[A.BB.is_enabled_LiP] = A.BB.Shock_P_run_s[A.BB.is_enabled_LiP]  # 计算银行收回厂商贷款流量
@@ -327,11 +327,11 @@ def InterBankIlliquidRepay(A: SystemicRiskAgent, para: dict, sgv: dict):
 
     """
 
-    sgv['round'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
+    sgv['turn'] += 1  # 计次轮次数（由于开始轮次是`START`，所以记为0）
     sgv['phase'] = 1  # 逐相复位（起始为1）
     sgv['process_name'] = "InterBankIlliquidRepay"
 
-    logging.debug(f"          轮次 {sgv['round']} 模型 {sgv['process_name']}")
+    logging.debug(f"          轮次 {sgv['turn']} 模型 {sgv['process_name']}")
 
     A.BB.A_Q[A.b], A.BB.A_P[A.b], A.BB.Shock_P_run_s[A.b] = Finance.transfer_B_capital_reverse(A.BB.A_Q[A.b], A.BB.A_P[A.b], A.BB.Shock_P_run_s[A.b], A.BB.Li_P[A.b])  # 流动资产变动，因收回厂商贷款
     Executer.variable_step_update('A_Q', A, para, sgv)

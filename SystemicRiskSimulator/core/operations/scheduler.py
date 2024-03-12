@@ -476,12 +476,12 @@ class Scheduler:
         pass  # method
 
     @classmethod
-    def is_round(cls, env: dict):  # HACK 暂时不需要，也还没有做对应重构。
+    def is_turn(cls, env: dict):  # HACK 暂时不需要，也还没有做对应重构。
         """判断是否继续运作回合"""
-        if (sgv['round'] < sgv['max_num_of_round']):
-            sgv['is_round'] = True
+        if (sgv['turn'] < sgv['max_num_of_turn']):
+            sgv['is_turn'] = True
         else:
-            sgv['is_round'] = False
+            sgv['is_turn'] = False
             logging.debug("        结束回合%s。", sgv['process_name'])
             pass
         pass  # method
@@ -500,7 +500,7 @@ class Scheduler:
         判断是否继续运作循环。
         只有同时满足继续运作过程、继续步进、继续运作回合时，才继续运作循环。否则跳出循环。
         """
-        if (sgv['is_process'] and sgv['is_step'] and sgv['is_round']):
+        if (sgv['is_process'] and sgv['is_step'] and sgv['is_turn']):
             sgv['is_loop'] = True
         else:
             sgv['is_loop'] = False

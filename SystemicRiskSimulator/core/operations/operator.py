@@ -89,7 +89,7 @@ class Operator:
 
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
         sgv['index_of_schedule_position'] = []
-        sgv['round'] = 0
+        sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
         sgv['model_name'] = para['model_name']
@@ -120,7 +120,7 @@ class Operator:
             # sgv['is_continue_process'] = False  # 不再继续运行过程
             pass
         else:
-            ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_round']` 失效
+            ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_turn']` 失效
 
             # Scheduler.schedule(sgv)  # 调度状态变成`running`
 
@@ -170,7 +170,7 @@ class Operator:
         """
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
         sgv['index_of_schedule_position'] = []
-        sgv['round'] = 0
+        sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
         sgv['model_name'] = para['model_name']
@@ -226,7 +226,7 @@ class Operator:
         while env.agents:
             pettingzoo_agents_actions = env.convert_actions_to_pettingzoo(fullName=env.A.BB.fullName, Default_IB=env.A.IB.Default_IB)
             observations, rewards, terminations, truncations, infos = env.step(pettingzoo_agents_actions)
-            if sgv['round'] > sgv['test_max_num_of_round']:
+            if sgv['turn'] > sgv['test_max_num_of_turn']:
                 raise Exception("超过了最大回合数！强制停止！")
                 pass  # if
             pass  # while

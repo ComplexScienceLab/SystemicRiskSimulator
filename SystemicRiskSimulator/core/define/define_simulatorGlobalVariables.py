@@ -25,7 +25,7 @@ sgv['is_installed_packages_for_visualization'] = False  # 是否已经安装了�
 sgv['visualization_packages'] = ['matplotlib', 'igraph', 'drawsvg', 'pymupdf', 'svglib', 'screeninfo', 'openpyxl']  # 可视化所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
 
 sgv['id_data'] = 0  # 实验初始数据帧ID号；
-sgv['round'] = 0  # 初始轮次计次为0；
+sgv['turn'] = 0  # 初始轮次计次为0；
 sgv['phase'] = 0  # 当前逐相为0。不要改动
 sgv['step'] = 0  # 单次实验的当前步进为0。不要改动
 sgv['time'] = 0  # 初始时期计次为0；#TODO 似乎没有用到
@@ -34,7 +34,7 @@ sgv['num_experiment'] = 0  # 实验组之实验个数；
 
 sgv['state_of_schedule'] = ScheduleState.idle
 
-sgv['is_continue_round'] = False  # 是否处于回合状态；
+sgv['is_continue_turn'] = False  # 是否处于回合状态；
 sgv['is_continue_process'] = False  # 是否继续运行过程
 
 sgv['A_data'] = None  # 多主体数据
@@ -57,7 +57,7 @@ sgv['is_use_Gymnasium_model'] = False  # 是否使用用于强化学习的环境
 
 ## 测试程序专用
 sgv['test_continous_loop_of_model'] = 0  # 计次单个模型连续循环次数
-sgv['test_max_num_of_round'] = None,  # 处理最大回合数（测试用）；
+sgv['test_max_num_of_turn'] = None,  # 处理最大回合数（测试用）；
 
 ###########################
 
