@@ -67,7 +67,7 @@ class Executer:
         sgv['phase'] = 1  # 逐相复位（起始为1）
         sgv['process_name'] = process_name
         logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
-        A, sgv = model_content.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+        model_content.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
         # A, sgv = model_content.step_model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
         return A, sgv
