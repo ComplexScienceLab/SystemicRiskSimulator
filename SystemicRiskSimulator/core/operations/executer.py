@@ -18,8 +18,36 @@ class Executer:
     执行机
     """
 
+    # @classmethod
+    # def turn_step_update(cls, model_content, turn: int, process_name: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    #     """
+    #     执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
+    #
+    #     Args:
+    #         model_content (class): 相关的需要步进更新的功能类
+    #         A (SystemicRiskAgent): 多主体
+    #         A_data (AgentDataCollection): 多主体之数据
+    #         para (dict): 参数集
+    #         sgv (dict): 模拟器全局变量
+    #
+    #     Returns:
+    #         A (SystemicRiskAgent): 多主体
+    #         sgv (dict): 模拟器全局变量
+    #
+    #     """
+    #     sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
+    #     sgv['phase'] = 1  # 逐相复位（起始为1）
+    #     sgv['process_name'] = process_name
+    #     logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
+    #     A, sgv = model_content.content_model_process(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+    #     # A, sgv = model_content.execute_model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+    #
+    #     return A, sgv
+    #
+    #     pass  # function
+
     @classmethod
-    def turn_step_update(cls, model_content, turn:int,process_name: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def turn_step_update(cls, model_content, process_name: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
 
@@ -39,8 +67,8 @@ class Executer:
         sgv['phase'] = 1  # 逐相复位（起始为1）
         sgv['process_name'] = process_name
         logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
-        A, sgv = model_content.content_model_process(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
-        # A, sgv = model_content.execute_model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+        A, sgv = model_content.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+        # A, sgv = model_content.step_model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
         return A, sgv
 
