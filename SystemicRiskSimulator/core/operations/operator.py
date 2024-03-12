@@ -224,6 +224,7 @@ class Operator:
         observations, infos = env.reset()
 
         while env.agents:
+            actions = {agent: env.action_space(agent).sample() for agent in env.agents}  # NOW 需要添加动作策略，包括随机采样、自定义采样等
             pettingzoo_agents_actions = env.convert_actions_to_pettingzoo(fullName=env.A.BB.fullName, Default_IB=env.A.IB.Default_IB)
             observations, rewards, terminations, truncations, infos = env.step(pettingzoo_agents_actions)
             if sgv['turn'] > sgv['test_max_num_of_turn']:
