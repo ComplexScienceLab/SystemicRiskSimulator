@@ -37,9 +37,9 @@ class Builder:
             ## 导入模型之内容（NOTE 动态导入）
             modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
             ## 导入由强化学习环境工具包自定义的环境模型（NOTE 动态导入）
-            modelContents.update(Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"environment_", sgv['folderpath_simulator']))
+            modelEnvironment = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"environment_", sgv['folderpath_simulator'])
             ## 导入由强化学习环境工具包自定义的运作器（NOTE 动态导入）
-            modelContents.update(Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/operators')), r"operator_", sgv['folderpath_simulator']))
+            modelOperate = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/operators')), r"operator_", sgv['folderpath_simulator'])
             # ### #NOTE 子方案二：自定义的模型内容与由强化学习环境工具包自定义的环境模型合在一个类里面 #DEBUG
             # ## 导入实体之内容
             # list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
@@ -88,9 +88,10 @@ class Builder:
                     # modelEntity.execute = dict()
                     # modelEntity.execute['model'] = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
                     # modelEntity.execute['finance'] = modelContents[modelEntity.content]  # 设置执行器之值是具体的模型内容
-                    modelEntity.content = modelContents[modelEntity.content]  # 设置内容器之值是具体的模型相关的功能函数
-                    modelEntity.environment = modelContents[modelEntity.environment]  # 设置环境之值是具体的模型相关的功能函数
-                    modelEntity.operate = modelContents[modelEntity.operate]  # 设置运作器之值是具体的模型相关的功能函数
+                    modelEntity.content = modelContents  # 设置内容器之值是具体的模型相关的功能函数
+                    # modelEntity.content = modelContents[modelEntity.content]  # 设置内容器之值是具体的模型相关的功能函数
+                    modelEntity.environment = modelEnvironment  # 设置环境之值是具体的模型相关的功能函数
+                    modelEntity.operate = modelOperate  # 设置运作器之值是具体的模型相关的功能函数
                     pass  # if
                 pass  # for
 
