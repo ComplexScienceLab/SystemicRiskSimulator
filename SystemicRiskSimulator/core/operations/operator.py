@@ -220,10 +220,10 @@ class Operator:
         logging.debug("    开始执行模型内容：")
         sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
-        modelOperate = modelEntity.operate
-        modelEntityContent = modelEntity.content
+        process = modelEntity.process
+        # modelEntityContent = modelEntity.content
 
-        modelOperate(modelEntityContent,A, A_data, para, sgv)
+        process(modelEntity, A, A_data, para, sgv)
         #
         # modelContent=modelEntityContent['content_IB41111']
         # modelAgents = modelEntityContent['content_agents']
