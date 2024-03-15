@@ -176,6 +176,7 @@ class Operator:
         sgv['model_name'] = para['model_name']
         sgv['process_name'] = "START"
         sgv['test_continous_loop_of_model'] = 0
+        sgv['is_continue_process'] = True
         # sgv['A_data'] = None
 
         logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(len(sgv['list_combination_of_para'])) + "开始：\n")
