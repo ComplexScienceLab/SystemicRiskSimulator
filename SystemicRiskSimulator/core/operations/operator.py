@@ -224,7 +224,7 @@ class Operator:
         process = modelEntity.process
         # modelEntityContent = modelEntity.content
 
-        process(modelEntity, A, A_data, para, sgv)
+        A, A_data, para, sgv = process(modelEntity, A, A_data, para, sgv)
         #
         # modelContent=modelEntityContent['content_IB41111']
         # modelAgents = modelEntityContent['content_agents']
