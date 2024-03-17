@@ -1678,7 +1678,7 @@ def main():
                 print("拼接资产负债表图：实验" + str(i_exp))
 
                 ## 声明与定义变量
-                match_pattern_of_agent_name = fr"(?<=fullName=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之个体名称之正则表达式文本
+                match_pattern_of_agent_name = fr"(?<=name=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之个体名称之正则表达式文本
                 match_pattern_of_name_time = fr"(?<={sgv['vis']['name_time']}=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之时间名称之正则表达式文本
 
                 ## 设置参数
