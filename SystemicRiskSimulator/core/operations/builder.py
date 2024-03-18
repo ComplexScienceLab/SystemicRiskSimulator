@@ -29,8 +29,8 @@ class Builder:
         ## 导入相关模块
         ## 导入模型之初始态实体之数据内容（NOTE 动态导入）
 
-        if sgv['is_use_Gymnasium_model']:
-            ## #NOTE 如果使用由强化学习环境工具包自定义的模型 #DEBUG
+        if sgv['is_use_PettingZoo_environments']:
+            ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型 #DEBUG
             ### #NOTE 子方案一：自定义的模型内容与由强化学习环境工具包自定义的环境模型分成两个文件 #DEBUG
             ## 导入实体之内容
             list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity", sgv['folderpath_simulator'])

@@ -38,8 +38,8 @@ def experiments_program(sgv: dict, para: dict):
 
         if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):
             ## 进行实验
-            if sgv['is_use_Gymnasium_model']:
-                ## #NOTE 如果使用由强化学习环境工具包自定义的模型 #DEBUG 正在测试中
+            if sgv['is_use_PettingZoo_environments']:
+                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型 #DEBUG 正在测试中
                 A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
                 A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
                 # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
