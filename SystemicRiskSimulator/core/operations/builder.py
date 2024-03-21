@@ -37,9 +37,9 @@ class Builder:
             ## 导入模型之内容（NOTE 动态导入）
             modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
             ## 导入使用强化学习环境工具包自定义的环境模型（NOTE 动态导入）
-            modelEnvironment = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"Environment", sgv['folderpath_simulator'])
-            ## 导入使用强化学习算法工具包自定义的算法模型（NOTE 动态导入）
-            modelAlgorithm = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"Train", sgv['folderpath_simulator'])
+            modelEnvironment = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"Environment|Train", sgv['folderpath_simulator'])
+            # ## 导入使用强化学习算法工具包自定义的算法模型（NOTE 动态导入）
+            # modelAlgorithm = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"Train", sgv['folderpath_simulator'])
             ## 导入使用强化学习环境工具包自定义的运行过程（NOTE 动态导入）
             modelProcess = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/process')), r"process", sgv['folderpath_simulator'])
             # ### #NOTE 子方案二：自定义的模型内容与使用强化学习环境工具包自定义的环境模型合在一个类里面 #HACK 这个方案暂时无用，也没有实现。
@@ -92,7 +92,8 @@ class Builder:
                     # modelEntity.execute['finance'] = modelContents[modelEntity.content]  # 设置执行器之值是具体的模型内容
                     modelEntity.content = modelContents  # 设置内容器之值是具体的模型相关的功能函数
                     # modelEntity.content = modelContents[modelEntity.content]  # 设置内容器之值是具体的模型相关的功能函数
-                    modelEntity.environment = modelEnvironment[modelEntity.environment]  # 设置环境之值是具体的模型相关的功能函数
+                    modelEntity.environment = modelEnvironment  # 设置环境之值是具体的模型相关的功能函数
+                    # modelEntity.environment = modelEnvironment[modelEntity.environment]  # 设置环境之值是具体的模型相关的功能函数
                     modelEntity.process = modelProcess[modelEntity.process]  # 设置运作器之值是具体的模型相关的功能函数
                     pass  # if
                 pass  # for
