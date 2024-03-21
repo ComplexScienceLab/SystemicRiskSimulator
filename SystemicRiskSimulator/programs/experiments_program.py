@@ -45,7 +45,7 @@ def experiments_program(sgv: dict, para: dict):
                 # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
                 Operator.operate_end_experiment(A_data, sgv)
             else:
-                ## NOTE 如果使用模拟器自带的模型，不使用由强化学习环境工具包自定义的模型 #DEBUG 还没测试过
+                ## NOTE 如果使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
                 Operator.operate_run_experiment(sgv, para, model)
                 pass  # if
 

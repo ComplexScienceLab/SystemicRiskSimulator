@@ -159,7 +159,7 @@ class Operator:
     @classmethod
     def operate_reset_experiment(cls, sgv: dict, para: dict):
         """
-        运作初始化实验。用于使用由强化学习环境工具包自定义的模型。
+        运作初始化实验。用于使用使用强化学习环境工具包自定义的模型。
 
         Args:
             sgv (dict): 模拟器全局变量，默认env
@@ -199,7 +199,7 @@ class Operator:
     @classmethod
     def operate_step_experiment(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
-        运作步进实验。用于使用由强化学习环境工具包自定义的模型。#NOW
+        运作步进实验。用于使用使用强化学习环境工具包自定义的模型。#NOW
 
         Args:
             A (SystemicRiskAgent): 多主体
