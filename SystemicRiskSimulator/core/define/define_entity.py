@@ -25,6 +25,7 @@ class Entity:
     - execute: Union[ExecuteComponent, None]: 实体执行器
     - operate: Union[OperateComponent, None]: 实体运作器
     - environment: Union[EnvironmentComponent, None]: 实体环境
+    - algorithm: Union[AlgorithmComponent, None]: 实体算法
     - node: Union[NodeComponent, None]: 实体节点
     """
 
@@ -36,6 +37,7 @@ class Entity:
     execute: Union[ExecuteComponent, None]
     operate: Union[OperateComponent, None]
     environment: Union[EnvironmentComponent, None]
+    algorithm: Union[AlgorithmComponent, None]
     node: Union[NodeComponent, None]
 
     def __init__(self, entityData: Any = None, **kwargs):
@@ -76,6 +78,7 @@ class Entity:
             self.execute = entityData['execute']
             self.operate = entityData['operate']
             self.environment = entityData['environment']
+            self.algorithm = entityData['algorithm']
             self.process = entityData['process']
             self.container = entityData['container']
             self.condition = entityData['condition']
@@ -91,6 +94,7 @@ class Entity:
             self.execute = kwargs['execute'] if 'execute' in kwargs.keys() else None
             self.operate = kwargs['operate'] if 'operate' in kwargs.keys() else None
             self.environment = kwargs['environment'] if 'environment' in kwargs.keys() else None
+            self.algorithm = kwargs['algorithm'] if 'algorithm' in kwargs.keys() else None
             self.process = kwargs['process'] if 'process' in kwargs.keys() else None
             self.container = kwargs['container'] if 'container' in kwargs.keys() else None
             self.condition = kwargs['condition'] if 'condition' in kwargs.keys() else None
@@ -101,6 +105,7 @@ class Entity:
             self.execute = None
             self.operate = None
             self.environment = None
+            self.algorithm = None
             self.process = None
             self.container = None
             self.condition = None

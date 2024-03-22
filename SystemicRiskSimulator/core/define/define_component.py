@@ -227,6 +227,25 @@ class EnvironmentComponent:
     pass  # class
 
 
+class AlgorithmComponent:
+    """
+    算法组件
+    """
+
+    algorithm: AlgorithmComponentType
+
+    def __init__(self, algorithm):
+        """
+
+        Args:
+            algorithm: 环境之内容
+        """
+        self.algorithm = algorithm if algorithm is not None else None
+        pass  # function
+
+    pass  # class
+
+
 class NodeComponent:
     """
     节点组件
