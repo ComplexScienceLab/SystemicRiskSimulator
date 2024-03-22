@@ -118,7 +118,9 @@ set_bankCommercial_variables = dict(
     list_exist=np.full(sgv['num_bank'], list),  # 列表之于存在的银行编号 list_exist
     list_insolvent=np.full(sgv['num_bank'], list),  # 列表之于资不抵债的银行编号 list_insolvent
     list_illiquid=np.full(sgv['num_bank'], list),  # 列表之于流动性短缺的银行编号 list_illiquid
-    list_bankrupt=np.full(sgv['num_bank'], list)  # 列表之于破产的银行编号 list_bankrupt
+    list_bankrupt=np.full(sgv['num_bank'], list),  # 列表之于破产的银行编号 list_bankrupt
+    strategic_level=np.full(sgv['num_bank'], 'well'),  # 各银行之智库之谋略水平，用于模拟决策风格。可选值 'excellence'、'well'、'fixed'。默认值 'well'
+    fixed_policy=np.full(sgv['num_bank'], 'learned'),  # 各银行之智库之固定策略。当 `strategic_level == 'fixed'` 的时候生效
 )
 
 set_bankInterbank_variables = dict(

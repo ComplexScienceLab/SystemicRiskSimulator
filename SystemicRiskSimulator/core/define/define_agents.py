@@ -133,7 +133,9 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     # list_bankrupt = np.NaN  # = np.full((sgv['num_bank'], 1), list)  # 列表之于破产的银行编号 list_bankrupt
     # TODO 增加监管约束之状态；
 
-    rewards = np.NaN,  # 各银行之奖励 rewards （类似效用函数）
+    rewards = np.NaN  # 各银行之奖励 rewards （类似效用函数）
+    strategic_level = np.NaN  # 各银行之智库之谋略水平，用于模拟决策风格。可选值 'excellence'、'well'、'fixed'。默认值 'well'
+    fixed_policy = np.NaN  # 各银行之智库之固定策略。当 `strategic_level == 'fixed'` 的时候生效
 
     def __init__(self, *args, **kwargs):
         for index, key in enumerate(self.__dir__()):
