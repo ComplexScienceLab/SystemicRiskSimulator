@@ -85,7 +85,7 @@ def experiments_program(sgv: dict, para: dict):
                 # observations, infos = env_PettingZoo.reset()
 
                 def env_creator(env_config):
-                    return env_PettingZoo()  # 返回你的环境实例
+                    return PettingZooEnv(env_PettingZoo)  # 返回环境实例
 
                 # 注册自定义的 PettingZoo 环境
                 register_env(env_name, env_creator)
@@ -105,20 +105,20 @@ def experiments_program(sgv: dict, para: dict):
                         num_rollout_workers=0,
                         num_envs_per_worker=1,
                     )
-                    .multi_agent(
-                        policies={
-                            "policy_default_averagePercentage": PolicySpec(policy_class=content_agents.policy_default_averagePercentage),
-                            "policy_default_randomPercentage": PolicySpec(policy_class=content_agents.policy_default_randomPercentage),
-                            "learned": PolicySpec(
-                                config=AlgorithmConfig.overrides(
-                                    model={"use_lstm": False},
-                                    framework_str="torch",
-                                )
-                            ),
-                        },
-                        policy_mapping_fn=process.select_policy,  # 选择的策略
-                        policies_to_train=["learned"],
-                    )
+                    # .multi_agent(
+                    #     policies={
+                    #         "policy_default_averagePercentage": PolicySpec(policy_class=content_agents.policy_default_averagePercentage),
+                    #         "policy_default_randomPercentage": PolicySpec(policy_class=content_agents.policy_default_randomPercentage),
+                    #         "learned": PolicySpec(
+                    #             config=AlgorithmConfig.overrides(
+                    #                 model={"use_lstm": False},
+                    #                 framework_str="torch",
+                    #             )
+                    #         ),
+                    #     },
+                    #     # policy_mapping_fn=process.select_policy,  # 选择的策略
+                    #     policies_to_train=["learned"],
+                    # )
                     .reporting(metrics_num_episodes_for_smoothing=200)
                     .training(num_sgd_iter=10)
                 )
@@ -129,18 +129,25 @@ def experiments_program(sgv: dict, para: dict):
 
                 sgv['experiment_start_time'] = time.time()  # 记录此次实验开始时间
 
-                ray.init()
+                algo = config.build()
 
-                tune.Tuner(
-                    "PPO",
-                    run_config=air.RunConfig(
-                        stop=stop,
-                        checkpoint_config=air.CheckpointConfig(
-                            checkpoint_frequency=10,
-                        ),
-                    ),
-                    param_space=config,
-                ).fit()
+                for i in range(10):
+                    result = algo.train()
+                    print(result)
+
+
+                # ray.init()
+                #
+                # tune.Tuner(
+                #     "PPO",
+                #     run_config=air.RunConfig(
+                #         stop=stop,
+                #         checkpoint_config=air.CheckpointConfig(
+                #             checkpoint_frequency=10,
+                #         ),
+                #     ),
+                #     param_space=config,
+                # ).fit()
 
                 ## 收尾实验
                 Operator.operate_end_experiment(A_data, sgv)
