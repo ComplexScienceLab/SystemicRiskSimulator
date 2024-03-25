@@ -38,15 +38,114 @@ def experiments_program(sgv: dict, para: dict):
 
         if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):
             ## 进行实验
-            if sgv['is_use_PettingZoo_environments']:
-                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型 #DEBUG 正在测试中
+            if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
+                ## NOTE 如果只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
+                ## 运行实验
+                Operator.operate_run_experiment(sgv, para, model)
+            elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is False:
+                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
+                ## 重置实验
                 A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+                ## 步进式运行实验
                 A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
                 # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
+                ## 收尾实验
                 Operator.operate_end_experiment(A_data, sgv)
+            elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True:
+                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 时
+
+                ## 导入包
+                import ray
+                from ray import air, tune
+                from ray.tune.registry import register_env
+                from ray.rllib.policy.policy import PolicySpec
+                from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
+
+                from ray.rllib.algorithms.algorithm_config import AlgorithmConfig
+                from ray.rllib.algorithms.ppo import (
+                    PPO,
+                    PPOConfig,
+                    PPOTorchPolicy,
+                )
+
+                ## 重置实验
+                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+
+                env_name = model.attribute.entity_name
+
+                modelEntity = model.content  # 获取节点实体对应的模型实体
+
+                process = modelEntity.process
+
+                content_model = modelEntity.content['content_model']
+                content_agents = modelEntity.content['content_agents']
+                content_finance = modelEntity.content['content_finance']
+                env_PettingZoo = modelEntity.environment(A, A_data, para, sgv, content_model)
+
+                # observations, infos = env_PettingZoo.reset()
+
+                def env_creator(env_config):
+                    return env_PettingZoo()  # 返回你的环境实例
+
+                # 注册自定义的 PettingZoo 环境
+                register_env(env_name, env_creator)
+
+                # 停止条件
+                stop = {
+                    "training_iteration": sgv['stop_iters'],
+                    "timesteps_total": sgv['stop_timesteps'],
+                    "episode_reward_mean": sgv['stop_reward'],
+                }
+
+                config = (
+                    PPOConfig()
+                    .environment(env=env_name)
+                    .resources(num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")))
+                    .rollouts(
+                        num_rollout_workers=0,
+                        num_envs_per_worker=1,
+                    )
+                    .multi_agent(
+                        policies={
+                            "policy_default_averagePercentage": PolicySpec(policy_class=content_agents.policy_default_averagePercentage),
+                            "policy_default_randomPercentage": PolicySpec(policy_class=content_agents.policy_default_randomPercentage),
+                            "learned": PolicySpec(
+                                config=AlgorithmConfig.overrides(
+                                    model={"use_lstm": False},
+                                    framework_str="torch",
+                                )
+                            ),
+                        },
+                        policy_mapping_fn=process.select_policy,  # 选择的策略
+                        policies_to_train=["learned"],
+                    )
+                    .reporting(metrics_num_episodes_for_smoothing=200)
+                    .training(num_sgd_iter=10)
+                )
+
+                ## 运行实验
+                logging.debug("    开始执行模型内容：")
+                sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+
+                sgv['experiment_start_time'] = time.time()  # 记录此次实验开始时间
+
+                ray.init()
+
+                tune.Tuner(
+                    "PPO",
+                    run_config=air.RunConfig(
+                        stop=stop,
+                        checkpoint_config=air.CheckpointConfig(
+                            checkpoint_frequency=10,
+                        ),
+                    ),
+                    param_space=config,
+                ).fit()
+
+                ## 收尾实验
+                Operator.operate_end_experiment(A_data, sgv)
+
             else:
-                ## NOTE 如果使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
-                Operator.operate_run_experiment(sgv, para, model)
                 pass  # if
 
         pass  # for
@@ -68,7 +167,7 @@ def experiments_program(sgv: dict, para: dict):
         elif system == 'Windows':
             os.startfile(str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
         elif system == 'Linux':
-            os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))  #DEBUG 还没测试过
+            os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))  # #DEBUG 还没测试过
         else:
             print("Unsupported operating system")
             pass  # if
