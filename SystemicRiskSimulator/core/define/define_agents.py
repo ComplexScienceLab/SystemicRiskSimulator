@@ -35,85 +35,85 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     id_agent: IdsType = np.NaN  # = deepcopy(RANGE1) agent 之编号 id
     abbr = np.NaN  # = np.full(sgv['num_bank'], "")
     fullName = np.NaN  # = np.full(sgv['num_bank'], "")
-    A_all = np.NaN  # = deepcopy(ZEROS1)  # 总资产 A_all: $A_all=A_IB+A_exIB$
-    A_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产加总 A_IB_all
-    A_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
-    A_P = np.NaN  # = deepcopy(ZEROS1)  # 银行贷款给非金融部门（非银行金融部门）之资产（非流动性资产） A_P
-    A_Q = np.NaN  # = deepcopy(ZEROS1)  # 银行持有超额准备金（流动性资产） A_Q
-    A_R = np.NaN  # = deepcopy(ZEROS1)  # 银行持有法定准备金（非流动性资产） A_R
-    A_other = np.NaN  # = deepcopy(ZEROS1)  # 银行持有的其它资产（NOTE 包括：研究不涉及的资产科目、会计科目之其他资产、不重要且不明确的资产科目） A_other
-    Z_all = np.NaN  # = deepcopy(ZEROS1)  # 总负债 Z_all: $Z_total=Z_IB+Z_exIB$
-    Z_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债加总 Z_IB_all
-    Z_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间负债 Z_exIB: $Z_exIB=Z_D+Z_CB+Z_other$
-    Z_CB = np.NaN  # = deepcopy(ZEROS1)  # 持有央行之负债 Z_CB
-    Z_D = np.NaN  # = deepcopy(ZEROS1)  # 银行获得居民部门存款（非流动性负债） Z_D
-    Z_other = np.NaN  # = deepcopy(ZEROS1)  # 银行持有的其他负债（NOTE 包括：研究不涉及的负债科目、会计科目之其他负债、不重要且不明确的负债科目） Z_other
-    E_all = np.NaN  # = deepcopy(ZEROS1)  # 所有者权益 E_all
-    T_all = np.NaN  # = deepcopy(ZEROS1)  # 总交易流量 Transfer_all: $Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
-    Lo_all = np.NaN  # = deepcopy(ZEROS1)  # 总贷款流出（贷款方发款出去） Lo_all: $Lo_all=Lo_IB_all+Lo_exIB$
-    Lo_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间贷款流出 Lo_IB_all
-    Lo_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间贷款流出 Lo_exIB: $Lo_exIB=Lo_P$
-    Lo_P = np.NaN  # = deepcopy(ZEROS1)  # 银行贷款流出给生产部门 Lo_P
-    Li_all = np.NaN  # = deepcopy(ZEROS1)  # 总贷款流入（贷款方收款回来） Li_all: $Li_all=Li_IB_all+Li_exIB$
-    Li_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间贷款流入 Li_IB_all
-    Li_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间贷款流入 Li_exIB: $Li_exIB=Li_D$
-    Li_P = np.NaN  # = deepcopy(ZEROS1)  # 银行贷款流入从生产部门 Li_P
-    Bi_all = np.NaN  # = deepcopy(ZEROS1)  # 总借款流入（借款方借款进来） Bi_all: $Bi_all=Bi_IB_all+Bi_exIB$
-    Bi_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间借款流入 Bi_IB_all
-    Bi_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间借款流入 Bi_exIB: $Bi_exIB=Bi_D$
-    Bi_D = np.NaN  # = deepcopy(ZEROS1)  # 银行借款流入从居民部门 Bi_D
-    Bo_all = np.NaN  # = deepcopy(ZEROS1)  # 总借款流出（借款方还款出去） Bo_all: $Bo_all=Bo_IB_all+Bo_exIB$
-    Bo_IB_all = np.NaN  # = deepcopy(ZEROS1)  # 银行间借款流出 Bo_IB_all
-    Bo_exIB = np.NaN  # = deepcopy(ZEROS1)  # 非银行间借款流出 Bo_exIB: $Bo_exIB=Bo_P$
-    Bo_D = np.NaN  # = deepcopy(ZEROS1)  # 银行借款流出给居民部门 Bo_D
-    Shock_t = np.NaN  # = deepcopy(ZEROS1)  # 总冲击目标 Shock_t $Shock_t = Shock_exIB_t+Shock_IB_t$
-    Shock_s = np.NaN  # = deepcopy(ZEROS1)  # 总冲击源头 Shock_s $Shock_s = Shock_exIB_s+Shock_IB_s$
-    Shock_def_t = np.NaN  # = deepcopy(ZEROS1)  # 总违约损失冲击目标 Shock_def_t $Shock_def_t = Shock_P_def_t+Shock_D_run_t$
-    Shock_def_s = np.NaN  # = deepcopy(ZEROS1)  # 总违约损失冲击源头 Shock_def_s $Shock_def_s = Shock_exIB_def_s+Shock_IB_def_s$
-    Shock_run_t = np.NaN  # = deepcopy(ZEROS1)  # 总挤兑流动冲击目标 Shock_run_t $Shock_run_t = Shock_exIB_run_t+Shock_IB_run_t$
-    Shock_run_s = np.NaN  # = deepcopy(ZEROS1)  # 总挤兑流动冲击源头 Shock_run_s $Shock_run_s = Shock_exIB_run_s+Shock_IB_run_s$
-    Shock_exIB_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间借贷冲击目标 Shock_exIB_t $Shock_exIB_t = Shock_P_def_t+Shock_D_run_t$
-    Shock_exIB_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间借贷冲击源头 Shock_exIB_s $Shock_exIB_s = Shock_P_run_s+Shock_D_def_s$
-    Shock_P_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行之厂商贷款挤兑流动冲击源头 Shock_P_run_s
-    Shock_P_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行之厂商贷款违约损失冲击目标 Shock_P_def_t
-    Shock_D_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行存款违约损失冲击源头 Shock_D_def_s
-    Shock_D_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行存款挤兑流动冲击目标 Shock_D_run_t
-    Shock_B = np.NaN  # = deepcopy(ZEROS1)  # 银行内资产负债冲击 Shock_B $Shock_B=Shock_B_A+Shock_B_Z$  #HACK无用
-    Shock_B_A = np.NaN  # = deepcopy(ZEROS1)  # 银行内资产负债之银行间资产端冲击 Shock_B_A  #HACK无用
-    Shock_B_Z = np.NaN  # = deepcopy(ZEROS1)  # 银行内资产负债之银行间负债端冲击 Shock_B_Z  #HACK无用
-    Shock_IB_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间冲击源头 Shock_IB_s $Shock_IB_s=Shock_IB_def_s+Shock_IB_run_s$
-    Shock_IB_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间冲击目标 Shock_IB_t $Shock_IB_t=Shock_IB_def_t+Shock_IB_run_t$
-    Shock_IB_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间违约损失冲击源头 Shock_IB_def_s
-    Shock_IB_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间违约损失冲击目标 Shock_IB_def_t
-    Shock_IB_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间挤兑流动冲击源头 Shock_IB_run_s $Shock_IB_run_s=Shock_IB_run_ilq_s+Shock_IB_run_br_s$
-    Shock_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间挤兑流动冲击目标 Shock_IB_run_t $Shock_IB_run_t+Shock_IB_run_ilq_t+Shock_IB_run_br_t$
-    Shock_IB_run_ilq_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间流动性短缺挤兑流动冲击源头 Shock_IB_run_ilq_s
-    Shock_IB_run_ilq_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间流动性短缺挤兑流动冲击目标 Shock_IB_run_ilq_t
-    Shock_IB_run_br_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击源头 Shock_IB_run_br_s
-    Shock_IB_run_br_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击目标 Shock_IB_run_br_t
-    Loss_t = np.NaN  # = deepcopy(ZEROS1)  # 银行总损失目标 Loss_t
-    Loss_exIB_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债总损失目标 Loss_exIB_t
-    Loss_exIB_def_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间资产负债违约损失冲击损失目标 Loss_exIB_def_t
-    Loss_exIB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间负债流动性挤兑冲击损失目标 Loss_exIB_run_t
-    Loss_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行资产负债违约总损失目标 Loss_def_t
-    Loss_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行负债流动性挤兑总损失目标 Loss_run_t
-    Loss_IB_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间市场冲击损失目标 Loss_IB_t
-    Loss_IB_def_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间资产负债违约损失冲击损失目标 Loss_IB_def_t
-    Loss_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失目标 Loss_IB_run_t
-    Default_s = np.NaN  # = deepcopy(ZEROS1)  # 银行总违约量 Default_s
-    Default_IB_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间违约量 Default_IB_s
-    Default_IB_def_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间在违约损失冲击的违约量 Default_IB_s
-    Default_IB_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间在挤兑流动冲击的违约量 Default_IB_s
-    Default_exIB_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间违约量 Default_exIB_s
-    Default_D_def_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间在违约损失冲击的存款违约量 Default_D_def_s
-    Default_D_run_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间在挤兑流动冲击的存款违约量 Default_D_run_s
-    # Default_P_def_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间贷款违约量 Default_P_def_t
-    Repay_run_t = np.NaN  # = deepcopy(ZEROS1)  # 挤兑总偿还量 Repay_run_t
-    Repay_D_run_t = np.NaN  # = deepcopy(ZEROS1)  # 非银行间存款挤兑偿付量 Repay_D_run_t
-    Repay_IB_run_t = np.NaN  # = deepcopy(ZEROS1)  # 银行间借款挤兑偿还量 Repay_IB_run_t
-    Recover_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行挤兑总的收回量 Recover_run_s
-    Recover_IB_run_s = np.NaN  # = deepcopy(ZEROS1)  # 银行间借款收回量 Recover_IB_run_s
-    Recover_P_run_s = np.NaN  # = deepcopy(ZEROS1)  # 非银行间贷款挤兑收回量 Recover_P_run_s
+    A_all = MoneyType  # = deepcopy(ZEROS1)  # 总资产 A_all: $A_all=A_IB+A_exIB$
+    A_IB_all = MoneyType  # = deepcopy(ZEROS1)  # 银行间资产加总 A_IB_all
+    A_exIB = MoneyType  # = deepcopy(ZEROS1)  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
+    A_P = MoneyType  # = deepcopy(ZEROS1)  # 银行贷款给非金融部门（非银行金融部门）之资产（非流动性资产） A_P
+    A_Q = MoneyType  # = deepcopy(ZEROS1)  # 银行持有超额准备金（流动性资产） A_Q
+    A_R = MoneyType  # = deepcopy(ZEROS1)  # 银行持有法定准备金（非流动性资产） A_R
+    A_other = MoneyType  # = deepcopy(ZEROS1)  # 银行持有的其它资产（NOTE 包括：研究不涉及的资产科目、会计科目之其他资产、不重要且不明确的资产科目） A_other
+    Z_all = MoneyType  # = deepcopy(ZEROS1)  # 总负债 Z_all: $Z_total=Z_IB+Z_exIB$
+    Z_IB_all = MoneyType  # = deepcopy(ZEROS1)  # 银行间负债加总 Z_IB_all
+    Z_exIB = MoneyType  # = deepcopy(ZEROS1)  # 非银行间负债 Z_exIB: $Z_exIB=Z_D+Z_CB+Z_other$
+    Z_CB = MoneyType  # = deepcopy(ZEROS1)  # 持有央行之负债 Z_CB
+    Z_D = MoneyType  # = deepcopy(ZEROS1)  # 银行获得居民部门存款（非流动性负债） Z_D
+    Z_other = MoneyType  # = deepcopy(ZEROS1)  # 银行持有的其他负债（NOTE 包括：研究不涉及的负债科目、会计科目之其他负债、不重要且不明确的负债科目） Z_other
+    E_all = MoneyType  # = deepcopy(ZEROS1)  # 所有者权益 E_all
+    T_all = MoneyType  # = deepcopy(ZEROS1)  # 总交易流量 Transfer_all: $Transfer_all=Lo_all+Li_all+Bi_all+Bo_all$
+    Lo_all = MoneyType  # = deepcopy(ZEROS1)  # 总贷款流出（贷款方发款出去） Lo_all: $Lo_all=Lo_IB_all+Lo_exIB$
+    Lo_IB_all = MoneyType  # = deepcopy(ZEROS1)  # 银行间贷款流出 Lo_IB_all
+    Lo_exIB = MoneyType  # = deepcopy(ZEROS1)  # 非银行间贷款流出 Lo_exIB: $Lo_exIB=Lo_P$
+    Lo_P = MoneyType  # = deepcopy(ZEROS1)  # 银行贷款流出给生产部门 Lo_P
+    Li_all = MoneyType  # = deepcopy(ZEROS1)  # 总贷款流入（贷款方收款回来） Li_all: $Li_all=Li_IB_all+Li_exIB$
+    Li_IB_all = MoneyType  # = deepcopy(ZEROS1)  # 银行间贷款流入 Li_IB_all
+    Li_exIB = MoneyType  # = deepcopy(ZEROS1)  # 非银行间贷款流入 Li_exIB: $Li_exIB=Li_D$
+    Li_P = MoneyType  # = deepcopy(ZEROS1)  # 银行贷款流入从生产部门 Li_P
+    Bi_all = MoneyType  # = deepcopy(ZEROS1)  # 总借款流入（借款方借款进来） Bi_all: $Bi_all=Bi_IB_all+Bi_exIB$
+    Bi_IB_all = MoneyType  # = deepcopy(ZEROS1)  # 银行间借款流入 Bi_IB_all
+    Bi_exIB = MoneyType  # = deepcopy(ZEROS1)  # 非银行间借款流入 Bi_exIB: $Bi_exIB=Bi_D$
+    Bi_D = MoneyType  # = deepcopy(ZEROS1)  # 银行借款流入从居民部门 Bi_D
+    Bo_all = MoneyType  # = deepcopy(ZEROS1)  # 总借款流出（借款方还款出去） Bo_all: $Bo_all=Bo_IB_all+Bo_exIB$
+    Bo_IB_all = MoneyType  # = deepcopy(ZEROS1)  # 银行间借款流出 Bo_IB_all
+    Bo_exIB = MoneyType  # = deepcopy(ZEROS1)  # 非银行间借款流出 Bo_exIB: $Bo_exIB=Bo_P$
+    Bo_D = MoneyType  # = deepcopy(ZEROS1)  # 银行借款流出给居民部门 Bo_D
+    Shock_t = MoneyType  # = deepcopy(ZEROS1)  # 总冲击目标 Shock_t $Shock_t = Shock_exIB_t+Shock_IB_t$
+    Shock_s = MoneyType  # = deepcopy(ZEROS1)  # 总冲击源头 Shock_s $Shock_s = Shock_exIB_s+Shock_IB_s$
+    Shock_def_t = MoneyType  # = deepcopy(ZEROS1)  # 总违约损失冲击目标 Shock_def_t $Shock_def_t = Shock_P_def_t+Shock_D_run_t$
+    Shock_def_s = MoneyType  # = deepcopy(ZEROS1)  # 总违约损失冲击源头 Shock_def_s $Shock_def_s = Shock_exIB_def_s+Shock_IB_def_s$
+    Shock_run_t = MoneyType  # = deepcopy(ZEROS1)  # 总挤兑流动冲击目标 Shock_run_t $Shock_run_t = Shock_exIB_run_t+Shock_IB_run_t$
+    Shock_run_s = MoneyType  # = deepcopy(ZEROS1)  # 总挤兑流动冲击源头 Shock_run_s $Shock_run_s = Shock_exIB_run_s+Shock_IB_run_s$
+    Shock_exIB_t = MoneyType  # = deepcopy(ZEROS1)  # 非银行间借贷冲击目标 Shock_exIB_t $Shock_exIB_t = Shock_P_def_t+Shock_D_run_t$
+    Shock_exIB_s = MoneyType  # = deepcopy(ZEROS1)  # 非银行间借贷冲击源头 Shock_exIB_s $Shock_exIB_s = Shock_P_run_s+Shock_D_def_s$
+    Shock_P_run_s = MoneyType  # = deepcopy(ZEROS1)  # 银行之厂商贷款挤兑流动冲击源头 Shock_P_run_s
+    Shock_P_def_t = MoneyType  # = deepcopy(ZEROS1)  # 银行之厂商贷款违约损失冲击目标 Shock_P_def_t
+    Shock_D_def_s = MoneyType  # = deepcopy(ZEROS1)  # 银行存款违约损失冲击源头 Shock_D_def_s
+    Shock_D_run_t = MoneyType  # = deepcopy(ZEROS1)  # 银行存款挤兑流动冲击目标 Shock_D_run_t
+    Shock_B = MoneyType  # = deepcopy(ZEROS1)  # 银行内资产负债冲击 Shock_B $Shock_B=Shock_B_A+Shock_B_Z$  #HACK无用
+    Shock_B_A = MoneyType  # = deepcopy(ZEROS1)  # 银行内资产负债之银行间资产端冲击 Shock_B_A  #HACK无用
+    Shock_B_Z = MoneyType  # = deepcopy(ZEROS1)  # 银行内资产负债之银行间负债端冲击 Shock_B_Z  #HACK无用
+    Shock_IB_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间冲击源头 Shock_IB_s $Shock_IB_s=Shock_IB_def_s+Shock_IB_run_s$
+    Shock_IB_t = MoneyType  # = deepcopy(ZEROS1)  # 银行间冲击目标 Shock_IB_t $Shock_IB_t=Shock_IB_def_t+Shock_IB_run_t$
+    Shock_IB_def_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间违约损失冲击源头 Shock_IB_def_s
+    Shock_IB_def_t = MoneyType  # = deepcopy(ZEROS1)  # 银行间违约损失冲击目标 Shock_IB_def_t
+    Shock_IB_run_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间挤兑流动冲击源头 Shock_IB_run_s $Shock_IB_run_s=Shock_IB_run_ilq_s+Shock_IB_run_br_s$
+    Shock_IB_run_t = MoneyType  # = deepcopy(ZEROS1)  # 银行间挤兑流动冲击目标 Shock_IB_run_t $Shock_IB_run_t+Shock_IB_run_ilq_t+Shock_IB_run_br_t$
+    Shock_IB_run_ilq_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间流动性短缺挤兑流动冲击源头 Shock_IB_run_ilq_s
+    Shock_IB_run_ilq_t = MoneyType  # = deepcopy(ZEROS1)  # 银行间流动性短缺挤兑流动冲击目标 Shock_IB_run_ilq_t
+    Shock_IB_run_br_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击源头 Shock_IB_run_br_s
+    Shock_IB_run_br_t = MoneyType  # = deepcopy(ZEROS1)  # 银行间倒闭挤兑流动冲击目标 Shock_IB_run_br_t
+    Loss_t = MoneyType  # = deepcopy(ZEROS1)  # 银行总损失目标 Loss_t
+    Loss_exIB_t = MoneyType  # = deepcopy(ZEROS1)  # 非银行间资产负债总损失目标 Loss_exIB_t
+    Loss_exIB_def_t = MoneyType  # = deepcopy(ZEROS1)  # 非银行间资产负债违约损失冲击损失目标 Loss_exIB_def_t
+    Loss_exIB_run_t = MoneyType  # = deepcopy(ZEROS1)  # 非银行间负债流动性挤兑冲击损失目标 Loss_exIB_run_t
+    Loss_def_t = MoneyType  # = deepcopy(ZEROS1)  # 银行资产负债违约总损失目标 Loss_def_t
+    Loss_run_t = MoneyType  # = deepcopy(ZEROS1)  # 银行负债流动性挤兑总损失目标 Loss_run_t
+    Loss_IB_t = MoneyType  # = deepcopy(ZEROS1)  # 银行间市场冲击损失目标 Loss_IB_t
+    Loss_IB_def_t = MoneyType  # = deepcopy(ZEROS1)  # 银行间资产负债违约损失冲击损失目标 Loss_IB_def_t
+    Loss_IB_run_t = MoneyType  # = deepcopy(ZEROS1)  # 银行间负债流动性挤兑冲击损失目标 Loss_IB_run_t
+    Default_s = MoneyType  # = deepcopy(ZEROS1)  # 银行总违约量 Default_s
+    Default_IB_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间违约量 Default_IB_s
+    Default_IB_def_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间在违约损失冲击的违约量 Default_IB_s
+    Default_IB_run_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间在挤兑流动冲击的违约量 Default_IB_s
+    Default_exIB_s = MoneyType  # = deepcopy(ZEROS1)  # 非银行间违约量 Default_exIB_s
+    Default_D_def_s = MoneyType  # = deepcopy(ZEROS1)  # 非银行间在违约损失冲击的存款违约量 Default_D_def_s
+    Default_D_run_s = MoneyType  # = deepcopy(ZEROS1)  # 非银行间在挤兑流动冲击的存款违约量 Default_D_run_s
+    # Default_P_def_t = MoneyType  # = deepcopy(ZEROS1)  # 非银行间贷款违约量 Default_P_def_t
+    Repay_run_t = MoneyType  # = deepcopy(ZEROS1)  # 挤兑总偿还量 Repay_run_t
+    Repay_D_run_t = MoneyType  # = deepcopy(ZEROS1)  # 非银行间存款挤兑偿付量 Repay_D_run_t
+    Repay_IB_run_t = MoneyType  # = deepcopy(ZEROS1)  # 银行间借款挤兑偿还量 Repay_IB_run_t
+    Recover_run_s = MoneyType  # = deepcopy(ZEROS1)  # 银行挤兑总的收回量 Recover_run_s
+    Recover_IB_run_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间借款收回量 Recover_IB_run_s
+    Recover_P_run_s = MoneyType  # = deepcopy(ZEROS1)  # 非银行间贷款挤兑收回量 Recover_P_run_s
     on = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否存在 is_on
     off = np.NaN  # = deepcopy(FALSE1)  # 示性向量之于银行是否已退出不存在 is_off
     hel = np.NaN  # = deepcopy(TRUE1)  # 示性向量之于银行是否健康 is_healthy
@@ -153,23 +153,23 @@ class BankInterbank(BaseInterAgents):
     银行间邻接矩阵复合类
     """
     id_agent = np.NaN  # agent 之间之关联编号 id
-    A_IB = np.NaN  # 银行间资产邻接矩阵 A_IB
-    Z_IB = np.NaN  # 银行间负债邻接矩阵 Z_IB
-    Lo_IB = np.NaN  # 银行间贷款流出邻接矩阵 Lo_IB
-    Li_IB = np.NaN  # 银行间贷款流入邻接矩阵 Li_IB
-    Bo_IB = np.NaN  # 银行间借款流入邻接矩阵 Bo_IB
-    Bi_IB = np.NaN  # 银行间借款流出邻接矩阵 Bi_IB
-    Shock_IB = np.NaN  # 银行间冲击 Shock_IB: $Shock_IB=Shock_IB_def+Shock_IB_run$
-    Shock_IB_def = np.NaN  # 银行间违约损失冲击 Shock_IB_def
-    Shock_IB_run = np.NaN  # 银行间挤兑流动冲击 Shock_IB_run: $Shock_IB_run=Shock_IB_run_ilq+Shock_IB_run_br$
-    Shock_IB_run_ilq = np.NaN  # 流动性短缺银行银行间挤兑流动冲击 Shock_IB_run_ilq
-    Shock_IB_run_br = np.NaN  # 破产银行银行间挤兑流动冲击 Shock_IB_run_br
-    Loss_IB = np.NaN  # 银行间市场冲击损失 Loss_IB
-    Loss_IB_def = np.NaN  # 银行间资产负债违约冲击损失 Loss_IB_def
-    Loss_IB_run = np.NaN  # 银行间负债流动性挤兑冲击损失 Loss_IB_run
-    Default_IB = np.NaN  # 银行间违约量 Default_IB
-    Repay_IB_run = np.NaN  # 银行间借款偿还量 Repay_IB
-    Recover_IB_run = np.NaN  # 银行间借款收回量 Recover_IB
+    A_IB = MoneyType  # 银行间资产邻接矩阵 A_IB
+    Z_IB = MoneyType  # 银行间负债邻接矩阵 Z_IB
+    Lo_IB = MoneyType  # 银行间贷款流出邻接矩阵 Lo_IB
+    Li_IB = MoneyType  # 银行间贷款流入邻接矩阵 Li_IB
+    Bo_IB = MoneyType  # 银行间借款流入邻接矩阵 Bo_IB
+    Bi_IB = MoneyType  # 银行间借款流出邻接矩阵 Bi_IB
+    Shock_IB = MoneyType  # 银行间冲击 Shock_IB: $Shock_IB=Shock_IB_def+Shock_IB_run$
+    Shock_IB_def = MoneyType  # 银行间违约损失冲击 Shock_IB_def
+    Shock_IB_run = MoneyType  # 银行间挤兑流动冲击 Shock_IB_run: $Shock_IB_run=Shock_IB_run_ilq+Shock_IB_run_br$
+    Shock_IB_run_ilq = MoneyType  # 流动性短缺银行银行间挤兑流动冲击 Shock_IB_run_ilq
+    Shock_IB_run_br = MoneyType  # 破产银行银行间挤兑流动冲击 Shock_IB_run_br
+    Loss_IB = MoneyType  # 银行间市场冲击损失 Loss_IB
+    Loss_IB_def = MoneyType  # 银行间资产负债违约冲击损失 Loss_IB_def
+    Loss_IB_run = MoneyType  # 银行间负债流动性挤兑冲击损失 Loss_IB_run
+    Default_IB = MoneyType  # 银行间违约量 Default_IB
+    Repay_IB_run = MoneyType  # 银行间借款偿还量 Repay_IB
+    Recover_IB_run = MoneyType  # 银行间借款收回量 Recover_IB
     # is_exposure = np.NaN  # 信息邻接矩阵之于是否有银行间敞口 is_exposure
     on = np.NaN  # 信息邻接矩阵之于银行间存在的 is_on
     off = np.NaN  # 信息邻接矩阵之于银行间已退出不存在的 is_off
@@ -178,7 +178,7 @@ class BankInterbank(BaseInterAgents):
     ilq = np.NaN  # 信息邻接矩阵之于银行间流动性短缺的 is_illiquid
     br = np.NaN  # 信息邻接矩阵之于银行间破产的 is_bankrupt
 
-    theta_IB_def = np.NaN  # 银行间资产负债违约分配比例 theta_IB_def
+    theta_IB_def = np.float32  # 银行间资产负债违约分配比例 theta_IB_def
 
     # cre = np.NaN  # 信息列表之于各银行之债权方银行编号 list_creditors
     # deb = np.NaN  # 信息列表之于各银行之债务方银行编号 list_debtors

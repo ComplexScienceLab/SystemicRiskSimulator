@@ -11,7 +11,8 @@ pass  # end import
 IdsType = np.dtype([('id', np.int16)])  # 向量编号类型
 AbbrType = np.dtype([('abbr', np.str_)])  # 向量缩写类型
 NameType = np.dtype([('fullName', np.str_)])  # 向量名称类型
-MoneyType = np.dtype([('money', np.float_)])  # 向量资金类型
+# MoneyType = np.dtype([('money', np.float_)])  # 向量资金类型
+MoneyType = np.float32  # 向量资金类型
 StateType = np.dtype([('state', np.bool_)])  # 一维向量状态类型
 ListType = np.dtype([('list', list)])  # 一维向量状态类型
 ItemIdType = np.array(np.dtype(np.int8))
