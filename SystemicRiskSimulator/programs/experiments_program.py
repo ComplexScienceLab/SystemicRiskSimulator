@@ -59,8 +59,8 @@ def experiments_program(sgv: dict, para: dict):
                 from ray import air, tune
                 from ray.tune.registry import register_env
                 from ray.rllib.policy.policy import PolicySpec
-                from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
-
+                # from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
+                from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
                 from ray.rllib.algorithms.algorithm_config import AlgorithmConfig
                 from ray.rllib.algorithms.ppo import (
                     PPO,
@@ -85,7 +85,7 @@ def experiments_program(sgv: dict, para: dict):
                 # observations, infos = env_PettingZoo.reset()
 
                 def env_creator(env_config):
-                    return PettingZooEnv(env_PettingZoo)  # 返回环境实例
+                    return ParallelPettingZooEnv(env_PettingZoo)  # 返回环境实例
 
                 # 注册自定义的 PettingZoo 环境
                 register_env(env_name, env_creator)
@@ -99,7 +99,10 @@ def experiments_program(sgv: dict, para: dict):
 
                 config = (
                     PPOConfig()
-                    .environment(env=env_name)
+                    .environment(
+                        env=env_name,
+                        # disable_env_checking=True
+                    )
                     .resources(num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")))
                     .rollouts(
                         num_rollout_workers=0,
@@ -134,7 +137,6 @@ def experiments_program(sgv: dict, para: dict):
                 for i in range(10):
                     result = algo.train()
                     print(result)
-
 
                 # ray.init()
                 #
