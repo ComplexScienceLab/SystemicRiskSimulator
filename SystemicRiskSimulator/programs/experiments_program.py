@@ -101,7 +101,7 @@ def experiments_program(sgv: dict, para: dict):
                     PPOConfig()
                     .environment(
                         env=env_name,
-                        # disable_env_checking=True
+                        disable_env_checking=False,
                     )
                     .resources(num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")))
                     .rollouts(
