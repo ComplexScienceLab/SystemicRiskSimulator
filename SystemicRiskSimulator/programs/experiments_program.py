@@ -110,6 +110,7 @@ def experiments_program(sgv: dict, para: dict):
                     .rollouts(
                         num_rollout_workers=0,
                         num_envs_per_worker=1,
+                        rollout_fragment_length=1,
                     )
                     # .multi_agent(
                     #     policies={
@@ -125,8 +126,8 @@ def experiments_program(sgv: dict, para: dict):
                     #     # policy_mapping_fn=process.select_policy,  # 选择的策略
                     #     policies_to_train=["learned"],
                     # )
-                    .reporting(metrics_num_episodes_for_smoothing=3)
-                    .training(num_sgd_iter=2)
+                    .reporting(metrics_num_episodes_for_smoothing=1)
+                    .training(num_sgd_iter=1)
                 )
 
                 ## 运行实验
