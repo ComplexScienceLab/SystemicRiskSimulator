@@ -84,6 +84,8 @@ def experiments_program(sgv: dict, para: dict):
 
                 # observations, infos = env_PettingZoo.reset()
 
+                # ray.init()
+
                 def env_creator(env_config):
                     return ParallelPettingZooEnv(env_PettingZoo)  # 返回环境实例
 
@@ -97,6 +99,7 @@ def experiments_program(sgv: dict, para: dict):
                     "episode_reward_mean": sgv['stop_reward'],
                 }
 
+                # 配置项
                 config = (
                     PPOConfig()
                     .environment(
@@ -122,8 +125,8 @@ def experiments_program(sgv: dict, para: dict):
                     #     # policy_mapping_fn=process.select_policy,  # 选择的策略
                     #     policies_to_train=["learned"],
                     # )
-                    .reporting(metrics_num_episodes_for_smoothing=200)
-                    .training(num_sgd_iter=10)
+                    .reporting(metrics_num_episodes_for_smoothing=3)
+                    .training(num_sgd_iter=2)
                 )
 
                 ## 运行实验
@@ -136,9 +139,10 @@ def experiments_program(sgv: dict, para: dict):
 
                 for i in range(10):
                     result = algo.train()
+                    if i >= stop["training_iteration"] or result["timesteps_total"] >= stop["timesteps_total"] or result["episode_reward_mean"] >= stop["episode_reward_mean"]:
+                        break
                     print(result)
 
-                # ray.init()
                 #
                 # tune.Tuner(
                 #     "PPO",
@@ -156,6 +160,8 @@ def experiments_program(sgv: dict, para: dict):
 
             else:
                 pass  # if
+
+            pass  # if
 
         pass  # for
 
