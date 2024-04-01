@@ -1,6 +1,20 @@
 # -*- coding: utf-8 -*-
 import time
 
+## 导入包
+import ray
+from ray import air, tune
+from ray.tune.registry import register_env
+from ray.rllib.policy.policy import PolicySpec
+# from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
+from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
+from ray.rllib.algorithms.algorithm_config import AlgorithmConfig
+from ray.rllib.algorithms.ppo import (
+    PPO,
+    PPOConfig,
+    PPOTorchPolicy,
+)
+
 from SystemicRiskSimulator.external_packages import warnings, logging, platform, os, Path
 from SystemicRiskSimulator.core.operations.operator import Operator
 
@@ -54,19 +68,19 @@ def experiments_program(sgv: dict, para: dict):
             elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True:
                 ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 时
 
-                ## 导入包
-                import ray
-                from ray import air, tune
-                from ray.tune.registry import register_env
-                from ray.rllib.policy.policy import PolicySpec
-                # from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
-                from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
-                from ray.rllib.algorithms.algorithm_config import AlgorithmConfig
-                from ray.rllib.algorithms.ppo import (
-                    PPO,
-                    PPOConfig,
-                    PPOTorchPolicy,
-                )
+                # ## 导入包
+                # import ray
+                # from ray import air, tune
+                # from ray.tune.registry import register_env
+                # from ray.rllib.policy.policy import PolicySpec
+                # # from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
+                # from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
+                # from ray.rllib.algorithms.algorithm_config import AlgorithmConfig
+                # from ray.rllib.algorithms.ppo import (
+                #     PPO,
+                #     PPOConfig,
+                #     PPOTorchPolicy,
+                # )
 
                 ## 重置实验
                 A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
@@ -86,11 +100,12 @@ def experiments_program(sgv: dict, para: dict):
 
                 # ray.init()
 
-                def env_creator(env_config):
-                    return ParallelPettingZooEnv(env_PettingZoo)  # 返回环境实例
+                def env_creator(args):
+                    env = modelEntity.environment(A, A_data, para, sgv, content_model)
+                    return env  # 返回环境实例
 
                 # 注册自定义的 PettingZoo 环境
-                register_env(env_name, env_creator)
+                register_env(env_name, lambda config: ParallelPettingZooEnv(env_creator(config)))
 
                 # 停止条件
                 stop = {
@@ -104,30 +119,22 @@ def experiments_program(sgv: dict, para: dict):
                     PPOConfig()
                     .environment(
                         env=env_name,
+                        clip_actions=True,
+                        clip_rewards=True,
                         disable_env_checking=False,
                     )
                     .resources(num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")))
                     .rollouts(
                         num_rollout_workers=0,
                         num_envs_per_worker=1,
-                        rollout_fragment_length=1,
+                        rollout_fragment_length=128,
                     )
-                    # .multi_agent(
-                    #     policies={
-                    #         "policy_default_averagePercentage": PolicySpec(policy_class=content_agents.policy_default_averagePercentage),
-                    #         "policy_default_randomPercentage": PolicySpec(policy_class=content_agents.policy_default_randomPercentage),
-                    #         "learned": PolicySpec(
-                    #             config=AlgorithmConfig.overrides(
-                    #                 model={"use_lstm": False},
-                    #                 framework_str="torch",
-                    #             )
-                    #         ),
-                    #     },
-                    #     # policy_mapping_fn=process.select_policy,  # 选择的策略
-                    #     policies_to_train=["learned"],
-                    # )
+                    # .debugging(log_level="ERROR")
                     .reporting(metrics_num_episodes_for_smoothing=1)
-                    .training(num_sgd_iter=1)
+                    .training(
+                        num_sgd_iter=1,
+                        train_batch_size=512,
+                    )
                 )
 
                 ## 运行实验
@@ -137,8 +144,10 @@ def experiments_program(sgv: dict, para: dict):
                 sgv['experiment_start_time'] = time.time()  # 记录此次实验开始时间
 
                 algo = config.build()
+                # algo = PPO(config=config, env=env_name)
 
-                for i in range(10):
+
+                for i in range(1):
                     result = algo.train()
                     if i >= stop["training_iteration"] or result["timesteps_total"] >= stop["timesteps_total"] or result["episode_reward_mean"] >= stop["episode_reward_mean"]:
                         break
