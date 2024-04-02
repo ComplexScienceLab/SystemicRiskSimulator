@@ -1,20 +1,6 @@
 # -*- coding: utf-8 -*-
 import time
 
-## 导入包
-import ray
-from ray import air, tune
-from ray.tune.registry import register_env
-from ray.rllib.policy.policy import PolicySpec
-# from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
-from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
-from ray.rllib.algorithms.algorithm_config import AlgorithmConfig
-from ray.rllib.algorithms.ppo import (
-    PPO,
-    PPOConfig,
-    PPOTorchPolicy,
-)
-
 from SystemicRiskSimulator.external_packages import warnings, logging, platform, os, Path
 from SystemicRiskSimulator.core.operations.operator import Operator
 
@@ -68,19 +54,19 @@ def experiments_program(sgv: dict, para: dict):
             elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True:
                 ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 时
 
-                # ## 导入包
-                # import ray
-                # from ray import air, tune
-                # from ray.tune.registry import register_env
-                # from ray.rllib.policy.policy import PolicySpec
-                # # from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
-                # from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
-                # from ray.rllib.algorithms.algorithm_config import AlgorithmConfig
-                # from ray.rllib.algorithms.ppo import (
-                #     PPO,
-                #     PPOConfig,
-                #     PPOTorchPolicy,
-                # )
+                ## 导入包
+                import ray
+                from ray import air, tune
+                from ray.tune.registry import register_env
+                from ray.rllib.policy.policy import PolicySpec
+                # from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
+                from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
+                from ray.rllib.algorithms.algorithm_config import AlgorithmConfig
+                from ray.rllib.algorithms.ppo import (
+                    PPO,
+                    PPOConfig,
+                    PPOTorchPolicy,
+                )
 
                 ## 重置实验
                 A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
@@ -127,13 +113,14 @@ def experiments_program(sgv: dict, para: dict):
                     .rollouts(
                         num_rollout_workers=0,
                         num_envs_per_worker=1,
-                        rollout_fragment_length=128,
+                        rollout_fragment_length=32,
                     )
                     # .debugging(log_level="ERROR")
                     .reporting(metrics_num_episodes_for_smoothing=1)
                     .training(
                         num_sgd_iter=1,
-                        train_batch_size=512,
+                        sgd_minibatch_size=4,
+                        train_batch_size=32,
                     )
                 )
 
@@ -145,7 +132,6 @@ def experiments_program(sgv: dict, para: dict):
 
                 algo = config.build()
                 # algo = PPO(config=config, env=env_name)
-
 
                 for i in range(1):
                     result = algo.train()
