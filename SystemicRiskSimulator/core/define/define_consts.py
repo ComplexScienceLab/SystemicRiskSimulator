@@ -6,6 +6,7 @@
 pass  # end import
 
 import numpy as np
+from SystemicRiskSimulator.core.define.define_type import *
 
 pass  # end import
 
@@ -51,14 +52,14 @@ class CONST:
         cls.BLANK1 = np.full(num, "")  # 一维空字符串向量常量
         cls.BLANK2 = np.full((num, num), "")  # 一维方阵空字符串向量常量
         # cls.ZEROS1 = np.zeros((num, 1))  # 一维零向量常量
-        cls.ZEROS1 = np.zeros(num)  # 一维零向量常量
-        cls.ZEROS2 = np.zeros((num, num))  # 二维方阵零向量常量
+        cls.ZEROS1 = np.zeros(num, dtype=MoneyType)  # 一维零向量常量
+        cls.ZEROS2 = np.zeros((num, num), dtype=MoneyType)  # 二维方阵零向量常量
         # cls.LESS1 = np.zeros((num, 1)) + 0.0001  # 一维接近零的正数向量常量
-        cls.LESS1 = np.zeros(num) + 0.0001  # 一维接近零的正数向量常量
-        cls.LESS2 = np.zeros((num, num)) + 0.0001  # 二维方阵接近零的正数常量
+        cls.LESS1 = np.zeros(num, dtype=MoneyType) + 0.0001  # 一维接近零的正数向量常量
+        cls.LESS2 = np.zeros((num, num), dtype=MoneyType) + 0.0001  # 二维方阵接近零的正数常量
         # cls.ONES1 = np.ones((num, 1))  # 一维幺向量常量
-        cls.ONES1 = np.ones(num)  # 一维幺向量常量
-        cls.ONES2 = np.ones((num, num))  # 二维方阵幺向量常量
+        cls.ONES1 = np.ones(num, dtype=MoneyType)  # 一维幺向量常量
+        cls.ONES2 = np.ones((num, num), dtype=MoneyType)  # 二维方阵幺向量常量
         # cls.MISSING1 = np.full((num, 1), np.NaN)  # 一维缺失值向量常量
         cls.MISSING1 = np.full(num, np.NaN)  # 一维缺失值向量常量
         cls.MISSING2 = np.full((num, num), np.NaN)  # 二维方阵确失值常量

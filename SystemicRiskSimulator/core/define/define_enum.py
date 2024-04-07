@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class StateOfScheduleEnum(Enum):
+class ScheduleState(Enum):
     """
     调度状态枚举类。状态符有以下几种：
 

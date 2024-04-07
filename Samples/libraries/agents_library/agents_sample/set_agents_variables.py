@@ -26,7 +26,7 @@ set_bankCommercial_variables = dict(
     ## 初始化商业银行群 bank_commercial
     id_agent=CONST(sgv['num_bank']).RANGE1.copy() - 1,  # agent 之编号 id
     abbr=CONST(sgv['num_bank']).RANGE1.copy(),  # 缩写 abbr
-    name=np.array(["Bank_1", "Bank_2", "Bank_3", "Bank_4", "Bank_5"]),  # 全名 name
+    fullName=np.array(["Bank_1", "Bank_2", "Bank_3", "Bank_4", "Bank_5"]),  # 全名 fullName
     A_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 总资产 A_all: $A_all=A_IB+A_exIB$
     A_IB_all=np.array([[2185.24, 398.37, 730.99, 1357.75, 2717.39]]).T,  # 银行间资产加总 A_IB_all
     A_exIB=CONST(sgv['num_bank']).ZEROS1.copy(),  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
@@ -118,7 +118,9 @@ set_bankCommercial_variables = dict(
     list_exist=np.full(sgv['num_bank'], list),  # 列表之于存在的银行编号 list_exist
     list_insolvent=np.full(sgv['num_bank'], list),  # 列表之于资不抵债的银行编号 list_insolvent
     list_illiquid=np.full(sgv['num_bank'], list),  # 列表之于流动性短缺的银行编号 list_illiquid
-    list_bankrupt=np.full(sgv['num_bank'], list)  # 列表之于破产的银行编号 list_bankrupt
+    list_bankrupt=np.full(sgv['num_bank'], list),  # 列表之于破产的银行编号 list_bankrupt
+    strategic_style=np.full(sgv['num_bank'], 'well'),  # 各银行之智库之谋略风格，用于模拟决策风格。可选值 'excellence'、'well'、'fixed'。默认值 'well'
+    fixed_policy=np.full(sgv['num_bank'], 'learned'),  # 各银行之智库之固定策略。当 `strategic_style == 'fixed'` 的时候生效
 )
 
 set_bankInterbank_variables = dict(

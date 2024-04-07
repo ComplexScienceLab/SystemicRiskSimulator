@@ -4,7 +4,7 @@
 from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, logging
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
-from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
+from SystemicRiskSimulator.core.define.define_enum import ScheduleState
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.core.define.define_type import *
 
@@ -27,18 +27,18 @@ class Collector:
     #         如果是初始化数据，则返回 A_data；如果是收集数据，则返回 A_data, sgv；如果是导出数据，则无返回；
     #
     #     """
-    #     if sgv['state_of_schedule'] == StateOfScheduleEnum.running:
+    #     if sgv['state_of_schedule'] == ScheduleState.running:
     #         # Scheduler.schedule(sgv)
     #         logging.debug("                    收集数据")
     #         # sgv['id_data'] += 1  # 累加数据帧ID号
     #         A_data = Collector.collect_agent_data(A, A_data, sgv)
     #         # Scheduler.schedule(sgv)
     #         return A_data, sgv
-    #     elif sgv['state_of_schedule'] == StateOfScheduleEnum.initializing:
+    #     elif sgv['state_of_schedule'] == ScheduleState.initializing:
     #         logging.debug("                    初始化数据")
     #         A_data = Collector.init_agent_data_collection(A, sgv)
     #         return A_data
-    #     elif sgv['state_of_schedule'] == StateOfScheduleEnum.ending:
+    #     elif sgv['state_of_schedule'] == ScheduleState.ending:
     #         logging.debug("                    导出数据")
     #         Collector.export_agent_data(A_data, sgv)
     #     else:
@@ -70,7 +70,7 @@ class Collector:
         # sgv['df_BB'] = sgv['series_BB'].to_frame().transpose()
         # sgv['df_BB'].insert(loc=0, column='process_name', value=sgv['process_name'])
         # sgv['df_BB'].insert(loc=1, column='step', value=sgv['step'])
-        # sgv['df_BB'].insert(loc=2, column='round', value=sgv['round'])
+        # sgv['df_BB'].insert(loc=2, column='turn', value=sgv['turn'])
         # sgv['df_BB'].insert(loc=3, column='phase', value=sgv['phase'])
         # # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
         # A_data.BB = pd.concat([A_data.BB, sgv['df_BB']], ignore_index=True)
@@ -81,7 +81,7 @@ class Collector:
         # sgv['df_IB'] = sgv['series_IB'].to_frame().transpose()
         # sgv['df_IB'].insert(loc=0, column='process_name', value=sgv['process_name'])
         # sgv['df_IB'].insert(loc=1, column='step', value=sgv['step'])
-        # sgv['df_IB'].insert(loc=2, column='round', value=sgv['round'])
+        # sgv['df_IB'].insert(loc=2, column='turn', value=sgv['turn'])
         # sgv['df_IB'].insert(loc=3, column='phase', value=sgv['phase'])
         # # IB_data = pd.concat([IB_data, sgv['df_IB']], ignore_index=True)
         # A_data.IB = pd.concat([A_data.IB, sgv['df_IB']], ignore_index=True)
@@ -116,7 +116,7 @@ class Collector:
         df_BB = series_BB.to_frame().transpose()
         df_BB.insert(loc=0, column='process_name', value=sgv['process_name'])
         df_BB.insert(loc=1, column='step', value=sgv['step'])
-        df_BB.insert(loc=2, column='round', value=sgv['round'])
+        df_BB.insert(loc=2, column='turn', value=sgv['turn'])
         df_BB.insert(loc=3, column='phase', value=sgv['phase'])
         A_data.BB = pd.concat([A_data.BB, df_BB], ignore_index=True)
         # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
@@ -129,7 +129,7 @@ class Collector:
         df_IB = series_IB.to_frame().transpose()
         df_IB.insert(loc=0, column='process_name', value=sgv['process_name'])
         df_IB.insert(loc=1, column='step', value=sgv['step'])
-        df_IB.insert(loc=2, column='round', value=sgv['round'])
+        df_IB.insert(loc=2, column='turn', value=sgv['turn'])
         df_IB.insert(loc=3, column='phase', value=sgv['phase'])
         A_data.IB = pd.concat([A_data.IB, df_IB], ignore_index=True)
         # IB_data = pd.concat([IB_data, IB_df], ignore_index=True)
@@ -182,7 +182,7 @@ class Collector:
     #         {
     #             list(sgv.keys())[list(sgv.keys()).index('process_name')]: sgv['process_name'],
     #             list(sgv.keys())[list(sgv.keys()).index('step')]: sgv['step'],
-    #             list(sgv.keys())[list(sgv.keys()).index('round')]: sgv['round'],
+    #             list(sgv.keys())[list(sgv.keys()).index('turn')]: sgv['turn'],
     #             list(sgv.keys())[list(sgv.keys()).index('phase')]: sgv['phase'],
     #             'dataBB': deepcopy(A.BB)
     #         }
@@ -196,7 +196,7 @@ class Collector:
     #         {
     #             list(sgv.keys())[list(sgv.keys()).index('process_name')]: sgv['process_name'],
     #             list(sgv.keys())[list(sgv.keys()).index('step')]: sgv['step'],
-    #             list(sgv.keys())[list(sgv.keys()).index('round')]: sgv['round'],
+    #             list(sgv.keys())[list(sgv.keys()).index('turn')]: sgv['turn'],
     #             list(sgv.keys())[list(sgv.keys()).index('phase')]: sgv['phase'],
     #             'dataIB': deepcopy(A.IB)
     #         }
@@ -226,7 +226,7 @@ class Collector:
     #         {
     #             list(sgv.keys())[list(sgv.keys()).index('process_name')]: sgv['process_name'],
     #             list(sgv.keys())[list(sgv.keys()).index('step')]: sgv['step'],
-    #             list(sgv.keys())[list(sgv.keys()).index('round')]: sgv['round'],
+    #             list(sgv.keys())[list(sgv.keys()).index('turn')]: sgv['turn'],
     #             list(sgv.keys())[list(sgv.keys()).index('phase')]: sgv['phase'],
     #             'dataBB': deepcopy(A.BB)
     #         }
@@ -237,7 +237,7 @@ class Collector:
     #         {
     #             list(sgv.keys())[list(sgv.keys()).index('process_name')]: sgv['process_name'],
     #             list(sgv.keys())[list(sgv.keys()).index('step')]: sgv['step'],
-    #             list(sgv.keys())[list(sgv.keys()).index('round')]: sgv['round'],
+    #             list(sgv.keys())[list(sgv.keys()).index('turn')]: sgv['turn'],
     #             list(sgv.keys())[list(sgv.keys()).index('phase')]: sgv['phase'],
     #             'dataIB': deepcopy(A.IB)
     #         }
@@ -268,7 +268,7 @@ class Collector:
     #         # BB_data['id_data'] = np.full(numRow, v1['id_data'])
     #         BB_data['process_name'] = np.full(numRow, v1['process_name'])
     #         BB_data['step'] = np.full(numRow, v1['step'])
-    #         BB_data['round'] = np.full(numRow, v1['round'])
+    #         BB_data['turn'] = np.full(numRow, v1['turn'])
     #         BB_data['phase'] = np.full(numRow, v1['phase'])
     #         fieldNames = list(v1['dataBB'].__dict__.keys())
     #         fieldValues = list(v1['dataBB'].__dict__.values())
@@ -292,7 +292,7 @@ class Collector:
     #         # IB_data['id_data'] = v1['id_data']
     #         IB_data['process_name'] = np.full(numRow * numCol, v1['process_name'])
     #         IB_data['step'] = np.full(numRow * numCol, v1['step'])
-    #         IB_data['round'] = np.full(numRow * numCol, v1['round'])
+    #         IB_data['turn'] = np.full(numRow * numCol, v1['turn'])
     #         IB_data['phase'] = np.full(numRow * numCol, v1['phase'])
     #         IB_data['row'] = np.repeat(range(1, numRow + 1), numCol)
     #         IB_data['col'] = np.tile(range(1, numCol + 1), numRow)

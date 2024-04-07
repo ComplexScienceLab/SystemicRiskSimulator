@@ -40,11 +40,14 @@ set_config_variables = dict(
     ## 调试专用变量：
     is_develope_model=True,  # 是否处于测试状态
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)
-    test_round_for_test=4,  # test变量，用于打断点。相关语句：`sgv['round']>=sgv['test_round_for_test']`；
-    test_max_num_of_round=100,  # 最大运行轮次数（测试用）；
+    test_turn_for_test=4,  # test变量，用于打断点。相关语句：`sgv['turn']>=sgv['test_turn_for_test']`；
+    test_max_num_of_turn=100,  # 最大运行轮次数（测试用）；
 
     ## 使用的程序版本类型设置：
-    is_use_flow_form_version_model=False,  # 是否使用流程形式的版本的模型形式。默认False。如果 False ，则表示不采用带有多文件多模块的旧版本的模型表示形式，而是直接采用简化的单文件模型。
+    is_use_flow_form_version_model=False,  # 是否使用流程形式的版本的模型形式。默认 False。如果 False ，则表示不采用带有多文件多模块的旧版本的模型表示形式，而是直接采用简化的单文件模型。
+
+    ## 使用的模型类型类型设置：
+    is_use_Gymnasium_model=False,  # 是否使用用于强化学习的环境模型。默认 False。
 
     ## 设置可视化：
     need_visualization=True,  # 是否需要可视化。默认 False；
@@ -71,7 +74,7 @@ set_config_variables = dict(
 
     vis=dict(
         list_dataNames_for_graph_figs=['A_IB', 'Z_IB'],  # 数据类别
-        time_granularity=r'步进粒度',  # 绘制的时间线粒度的粒度，有：'轮次粒度'、'步进粒度'；默认'步进粒度'。#DEBUG 还没有验证和适配'round'。
+        time_granularity=r'步进粒度',  # 绘制的时间线粒度的粒度，有：'轮次粒度'、'步进粒度'；默认'步进粒度'。#DEBUG 还没有验证和适配'turn'。
         one_bank_BalanceSheet_width=600,  # 单个银行资产负债表的宽度
         one_bank_BalanceSheet_height=600,  # 单个银行资产负债表的高度
         one_bank_BalanceSheet_title_height=15,  # 单个银行资产负债表的标题高度

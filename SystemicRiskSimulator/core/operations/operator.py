@@ -1,8 +1,9 @@
 """
 运作机
 """
-
 from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any, pickle, pd
+from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
+from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.data_installer import DataInstaller
@@ -62,25 +63,25 @@ class Operator:
         ## 导入实体数据，生成实体集、内容集并返回
         if sgv['is_use_flow_form_version_model']:
             ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()`
-            Builder.build_entities_by_process_and_container_component(sgv)  # NOTE：一次只处理一个模型
+            Builder.build_entities_by_process_and_container_component(sgv)  # NOTE：一次只处理一个模型 #HACK 已经过时，可以删除
         else:
             ## NOTE 如果直接使用非流程版的形式的模型
             Builder.build_entities_by_execute(sgv)
-            pass  # if
+        pass  # if
 
         return sgv, EntityManager.mainModelInstanceEntities
 
         pass  # function
 
     @classmethod
-    def operate_experiment(cls, sgv: dict, para: dict, model: Any):
+    def operate_run_experiment(cls, sgv: dict, para: dict, model: Any):
         """
-        运作实验
+        运作运行实验。用于传统的 ABM 模型。
 
         Args:
             sgv (dict): 模拟器全局变量，默认env
             para (dict): 参数变量，默认para
-            model (Any): 模型实体
+            model (Any): 模型节点实体
 
         Returns:
 
@@ -88,7 +89,7 @@ class Operator:
 
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
         sgv['index_of_schedule_position'] = []
-        sgv['round'] = 0
+        sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
         sgv['model_name'] = para['model_name']
@@ -119,7 +120,7 @@ class Operator:
             # sgv['is_continue_process'] = False  # 不再继续运行过程
             pass
         else:
-            ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_round']` 失效
+            ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_turn']` 失效
 
             # Scheduler.schedule(sgv)  # 调度状态变成`running`
 
@@ -129,12 +130,133 @@ class Operator:
 
             logging.debug("    开始执行模型内容：")
             sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+
             modelEntity.execute(A, A_data, para, sgv)
 
             logging.debug("    结束执行模型内容。")
 
             sgv['is_continue_process'] = False  # 不再继续运行过程
+
             pass  # if
+
+        sgv['experiment_end_time'] = time.time()  # 记录此次实验结束时间
+        sgv['experiments_running_time'] += sgv['experiment_end_time'] - sgv['experiment_start_time']  # 累加此次实验运行时长
+
+        ## 导出数据之于已经收集的，然后结束本次实验
+
+        sgv['export_data_start_time'] = time.time()  # 记录此次导出数据开始时间
+
+        logging.debug("                    导出数据")
+        Collector.export_agent_data(A_data, sgv)
+
+        sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
+        sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
+
+        logging.info("本次实验结束，还剩下" + str(len(sgv['list_combination_of_para']) - sgv['id_experiment']) + "个实验。\n\n")
+
+        pass  # function
+
+    @classmethod
+    def operate_reset_experiment(cls, sgv: dict, para: dict):
+        """
+        运作初始化实验。用于使用使用强化学习环境工具包自定义的模型。
+
+        Args:
+            sgv (dict): 模拟器全局变量，默认env
+            para (dict): 参数变量，默认para
+
+        Returns:
+            A, A_data, sgv, para
+        """
+        ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
+        sgv['index_of_schedule_position'] = []
+        sgv['turn'] = 0
+        sgv['phase'] = 0
+        sgv['step'] = 0
+        sgv['model_name'] = para['model_name']
+        sgv['process_name'] = "START"
+        sgv['test_continous_loop_of_model'] = 0
+        sgv['is_continue_process'] = True
+        # sgv['A_data'] = None
+
+        logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(len(sgv['list_combination_of_para'])) + "开始：\n")
+
+        logging.info("\n相关实验参数：" + str(para) + "\n")
+
+        ## 初始化 agents 数据
+        A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
+        # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
+        logging.debug("                    初始化数据")
+        # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
+        A_data = Collector.init_agent_data_collection(A, sgv)
+        # sgv['step'] += 1
+
+        return A, A_data, sgv, para
+        pass  # function
+
+    # @classmethod
+    # def operate_step_experiment(cls, sgv: dict, para: dict, model: Any):
+    @classmethod
+    def operate_step_experiment(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+        """
+        运作步进实验。用于使用使用强化学习环境工具包自定义的模型。
+
+        Args:
+            A (SystemicRiskAgent): 多主体
+            A_data (AgentDataCollection): 多主体之数据
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数字典
+            model (Any): 模型节点实体
+
+        Returns:
+
+        """
+
+        ## 运行实验
+
+        sgv['experiment_start_time'] = time.time()  # 记录此次实验开始时间
+
+        modelEntity = model.content  # 获取节点实体对应的模型实体
+
+        logging.debug("    开始执行模型内容：")
+        sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+
+        process = modelEntity.process
+        # modelEntityContent = modelEntity.content
+
+        A, A_data, para, sgv = process(modelEntity, A, A_data, para, sgv)
+        #
+        # modelContent=modelEntityContent['content_IB41111']
+        # modelAgents = modelEntityContent['content_agents']
+        # modelFinance = modelEntityContent['content_finance']
+        # env = modelEntity.environment(A, A_data, para, sgv, modelContent)
+        # observations, infos = env.reset()
+        #
+        # while env.agents:
+        #     modelAgents.calc_policy_default_averagePercentage(A, A_data, sgv, para)
+        #     my_actions = A.IB.theta_IB_def[:, :]
+        #     actions = {agent: env.action_space(agent).sample() for agent in env.agents}  # NOW 需要添加动作策略，包括随机采样、自定义采样等
+        #     pettingzoo_agents_actions = env.convert_actions_to_pettingzoo(fullName=env.A.BB.fullName, Default_IB=env.A.IB.Default_IB)
+        #     observations, rewards, terminations, truncations, infos = env.step(pettingzoo_agents_actions)
+        #     if sgv['turn'] > sgv['test_max_num_of_turn']:
+        #         raise Exception("超过了最大回合数！强制停止！")
+        #         pass  # if
+        #     pass  # while
+        #
+        # env.close()
+        # # parallel_api_test(env, num_cycles=1_000)
+        #
+        # # modelEntity.operate(env)
+
+        return A, A_data, sgv, para
+
+        pass  # function
+
+    @classmethod
+    def operate_end_experiment(cls, A_data: AgentDataCollection, sgv: dict):
+        logging.debug("    结束执行模型内容。")
+
+        sgv['is_continue_process'] = False  # 不再继续运行过程
 
         sgv['experiment_end_time'] = time.time()  # 记录此次实验结束时间
         sgv['experiments_running_time'] += sgv['experiment_end_time'] - sgv['experiment_start_time']  # 累加此次实验运行时长

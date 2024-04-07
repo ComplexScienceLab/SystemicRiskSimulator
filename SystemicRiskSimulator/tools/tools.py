@@ -373,7 +373,7 @@ class Tools:
     @classmethod
     def import_modules_from_package(cls, str_folderpath: str, pattern: str, str_folderpath_project: str):
         """
-        从包批量导入模块与方法
+        从包批量导入模块与方法 #BUG 存在潜伏的问题，需要先筛选再根据 `pattern` 导，而不是先导入包再筛选。
 
         Args:
             str_folderpath (str): 包所在路径字符串

@@ -5,7 +5,7 @@
 """
 from SystemicRiskSimulator.external_packages import Path
 from SystemicRiskSimulator.core.define.define_type import SimulatorGlobalVariableType
-from SystemicRiskSimulator.core.define.define_enum import StateOfScheduleEnum
+from SystemicRiskSimulator.core.define.define_enum import ScheduleState
 from SystemicRiskSimulator.data.config.set_config_variables import set_config_variables
 
 pass  # end import
@@ -25,16 +25,16 @@ sgv['is_installed_packages_for_visualization'] = False  # 是否已经安装了�
 sgv['visualization_packages'] = ['matplotlib', 'igraph', 'drawsvg', 'pymupdf', 'svglib', 'screeninfo', 'openpyxl']  # 可视化所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
 
 sgv['id_data'] = 0  # 实验初始数据帧ID号；
-sgv['round'] = 0  # 初始轮次计次为0；
+sgv['turn'] = 0  # 初始轮次计次为0；
 sgv['phase'] = 0  # 当前逐相为0。不要改动
 sgv['step'] = 0  # 单次实验的当前步进为0。不要改动
 sgv['time'] = 0  # 初始时期计次为0；#TODO 似乎没有用到
 sgv['id_experiment'] = 1  # 当前实验组编号；
 sgv['num_experiment'] = 0  # 实验组之实验个数；
 
-sgv['state_of_schedule'] = StateOfScheduleEnum.idle
+sgv['state_of_schedule'] = ScheduleState.idle
 
-sgv['is_continue_round'] = False  # 是否处于回合状态；
+sgv['is_continue_turn'] = False  # 是否处于回合状态；
 sgv['is_continue_process'] = False  # 是否继续运行过程
 
 sgv['A_data'] = None  # 多主体数据
@@ -49,9 +49,15 @@ sgv['vis'] = dict(),  # 可视化相关的宏观变量
 sgv['df_BB'] = None  # Pandas格式的银行数据
 sgv['df_IB'] = None  # Pandas格式的银行间数据
 
+## 使用的程序版本类型设置：
+sgv['is_use_flow_form_version_model'] = False,  # 是否使用流程形式的版本的模型形式。默认 False。如果 False ，则表示不采用带有多文件多模块的旧版本的模型表示形式，而是直接采用简化的单文件模型。
+
+## 使用的模型类型类型设置：
+sgv['is_use_PettingZoo_environments'] = False  # 是否使用 PettingZoo 环境框架。默认 False。
+
 ## 测试程序专用
 sgv['test_continous_loop_of_model'] = 0  # 计次单个模型连续循环次数
-sgv['test_max_num_of_round'] = None,  # 处理最大回合数（测试用）；
+sgv['test_max_num_of_turn'] = None,  # 处理最大回合数（测试用）；
 
 ###########################
 

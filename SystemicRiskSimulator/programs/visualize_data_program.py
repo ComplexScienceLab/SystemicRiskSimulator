@@ -189,7 +189,7 @@ def main():
                 'id',
                 'id_data',
                 'step',
-                'round',
+                'turn',
                 'phase',
                 'id_agent',
             ]
@@ -306,7 +306,7 @@ def main():
                 'id_data',
                 'process_name',
                 'step',
-                'round',
+                'turn',
                 'phase',
                 'id_agent',
                 'row',
@@ -396,7 +396,7 @@ def main():
             num_BB_id = len(df_BB_panel)  # 数据表BB之行数
             num_IB_id = len(df_IB_panel)  # 数据表IB之行数
             num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-            num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+            num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
             num_step = num_idData  # 总的步进数（是从0开始计数的)
 
             ## 根据时间粒度参数，确定时间轴名称及其长度
@@ -404,8 +404,8 @@ def main():
                 sgv['vis']['name_time'] = 'id_data'  # BUG 这个是否正确？是否应该改成 'step' ？
                 sgv['vis']['num_time'] = num_step
             elif sgv['vis']['time_granularity'] == '轮次粒度':
-                sgv['vis']['name_time'] = 'round'
-                sgv['vis']['num_time'] = num_round
+                sgv['vis']['name_time'] = 'turn'
+                sgv['vis']['num_time'] = num_turn
             else:
                 raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                 pass  # if
@@ -479,15 +479,15 @@ def main():
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
                 num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
                     sgv['vis']['name_time'] = 'step'
                     sgv['vis']['num_time'] = num_step
                 elif sgv['vis']['time_granularity'] == '轮次粒度':
-                    sgv['vis']['name_time'] = 'round'
-                    sgv['vis']['num_time'] = num_round
+                    sgv['vis']['name_time'] = 'turn'
+                    sgv['vis']['num_time'] = num_turn
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
@@ -552,15 +552,15 @@ def main():
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
                 num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
                     sgv['vis']['name_time'] = 'step'
                     sgv['vis']['num_time'] = num_step
                 elif sgv['vis']['time_granularity'] == '轮次粒度':
-                    sgv['vis']['name_time'] = 'round'
-                    sgv['vis']['num_time'] = num_round
+                    sgv['vis']['name_time'] = 'turn'
+                    sgv['vis']['num_time'] = num_turn
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
@@ -615,15 +615,15 @@ def main():
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
                 num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
                     sgv['vis']['name_time'] = 'step'
                     sgv['vis']['num_time'] = num_step
                 elif sgv['vis']['time_granularity'] == '轮次粒度':
-                    sgv['vis']['name_time'] = 'round'
-                    sgv['vis']['num_time'] = num_round
+                    sgv['vis']['name_time'] = 'turn'
+                    sgv['vis']['num_time'] = num_turn
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
@@ -721,15 +721,15 @@ def main():
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
                 num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
                     sgv['vis']['name_time'] = 'step'
                     sgv['vis']['num_time'] = num_step
                 elif sgv['vis']['time_granularity'] == '轮次粒度':
-                    sgv['vis']['name_time'] = 'round'
-                    sgv['vis']['num_time'] = num_round
+                    sgv['vis']['name_time'] = 'turn'
+                    sgv['vis']['num_time'] = num_turn
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
@@ -782,15 +782,15 @@ def main():
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
                 num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
                     sgv['vis']['name_time'] = 'step'
                     sgv['vis']['num_time'] = num_step
                 elif sgv['vis']['time_granularity'] == '轮次粒度':
-                    sgv['vis']['name_time'] = 'round'
-                    sgv['vis']['num_time'] = num_round
+                    sgv['vis']['name_time'] = 'turn'
+                    sgv['vis']['num_time'] = num_turn
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
@@ -1658,15 +1658,15 @@ def main():
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
                 num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
                     sgv['vis']['name_time'] = 'step'
                     sgv['vis']['num_time'] = num_step
                 elif sgv['vis']['time_granularity'] == '轮次粒度':
-                    sgv['vis']['name_time'] = 'round'
-                    sgv['vis']['num_time'] = num_round
+                    sgv['vis']['name_time'] = 'turn'
+                    sgv['vis']['num_time'] = num_turn
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
@@ -1717,15 +1717,15 @@ def main():
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
                 num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_round = df_BB_panel['round'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
                     sgv['vis']['name_time'] = 'step'
                     sgv['vis']['num_time'] = num_step
                 elif sgv['vis']['time_granularity'] == '轮次粒度':
-                    sgv['vis']['name_time'] = 'round'
-                    sgv['vis']['num_time'] = num_round
+                    sgv['vis']['name_time'] = 'turn'
+                    sgv['vis']['num_time'] = num_turn
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
@@ -1761,11 +1761,11 @@ def main():
                     'id_data',
                     'process_name',
                     'step',
-                    'round',
+                    'turn',
                     'phase',
                     'id_agent',
                     'abbr',
-                    'name',
+                    'fullName',
                     'on',
                     'off',
                     'hel',
@@ -1786,7 +1786,7 @@ def main():
                     'id',
                     'id_data',
                     'step',
-                    'round',
+                    'turn',
                     'phase',
                     'id_agent',
                 ]

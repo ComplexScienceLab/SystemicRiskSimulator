@@ -10,8 +10,9 @@ pass  # end import
 ## 定义类型别名
 IdsType = np.dtype([('id', np.int16)])  # 向量编号类型
 AbbrType = np.dtype([('abbr', np.str_)])  # 向量缩写类型
-NameType = np.dtype([('name', np.str_)])  # 向量名称类型
-MoneyType = np.dtype([('money', np.float_)])  # 向量资金类型
+NameType = np.dtype([('fullName', np.str_)])  # 向量名称类型
+# MoneyType = np.dtype([('money', np.float_)])  # 向量资金类型
+MoneyType = np.float32  # 向量资金类型
 StateType = np.dtype([('state', np.bool_)])  # 一维向量状态类型
 ListType = np.dtype([('list', list)])  # 一维向量状态类型
 ItemIdType = np.array(np.dtype(np.int8))
@@ -28,5 +29,8 @@ ContainerComponentType = Union[list, dict, str, None]
 # ProcessComponentType = np.dtype({'names': ['flow', 'condition'], 'formats': [np.void, 'U']}) #TODO 无用可以删除
 ProcessComponentType = Union[dict, str, None]
 ExecuteComponentType = Union[str, list, None]
+OperateComponentType = Union[str, list, None]
+EnvironmentComponentType = Union[str, list, None]
+AlgorithmComponentType = Union[str, list, None]
 SimulatorGlobalVariableType = Union[dict, Any]  # 模拟器全局变量类型 #HACK暂时没用到，目前用的是dict。
 ParameterVariableType = Union[dict, Any]  # 参数变量类型 #HACK暂时没用到，目前用的是dict。
