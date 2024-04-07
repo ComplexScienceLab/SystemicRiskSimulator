@@ -16,7 +16,7 @@ from SystemicRiskSimulator.tools.tools import Tools
 pass  # end import
 
 
-@dataclass()
+# @dataclass()
 class Operator:
     """
     运作机
