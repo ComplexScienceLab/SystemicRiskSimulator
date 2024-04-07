@@ -103,7 +103,7 @@ class Builder:
             ## 导入实体之内容
             list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity", sgv['folderpath_simulator'])
             ## 导入模型之内容（NOTE 动态导入）
-            modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
+            modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"Content_", sgv['folderpath_simulator'])
             ## 导入使用强化学习环境工具包自定义的环境模型（NOTE 动态导入）
             # modelEnvironment = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"Environment|Train", sgv['folderpath_simulator'])
             modelEnvironment = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/env')), r"environment", sgv['folderpath_simulator'])

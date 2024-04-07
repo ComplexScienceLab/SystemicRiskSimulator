@@ -87,7 +87,7 @@ def experiments_program(sgv: dict, para: dict):
 
                 process = modelEntity.process
 
-                content_model = modelEntity.content['content_model']
+                content_model = modelEntity.content['Content_model']
                 content_agents = modelEntity.content['content_agents']
                 content_finance = modelEntity.content['content_finance']
                 env_PettingZoo = modelEntity.environment(A, A_data, para, sgv, content_model)
