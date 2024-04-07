@@ -54,6 +54,16 @@ def experiments_program(sgv: dict, para: dict):
             elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True:
                 ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 时
 
+
+                # 设置 RLlib 结果目录
+                if sgv['system_platform'] == 'Windows':
+                    os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
+                elif sgv['system_platform'] == 'Darwin':
+                    os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log'],"ray_results"))  # 设置 RLlib 的结果目录
+                elif sgv['system_platform'] == 'Linux':
+                    os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
+                    pass  # if
+
                 ## 导入包
                 import ray
                 from ray import air, tune
@@ -84,7 +94,8 @@ def experiments_program(sgv: dict, para: dict):
 
                 # observations, infos = env_PettingZoo.reset()
 
-                # ray.init()
+
+                ray.init()  # 初始化 Ray
 
                 def env_creator(args):
                     env = modelEntity.environment(A, A_data, para, sgv, content_model)
