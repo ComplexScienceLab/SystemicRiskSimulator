@@ -298,8 +298,8 @@ class DataInstaller:
     #     ## 更新各银行之变量，在第一回合初始时
     #     # update=sgv['update']
     #     # @Executer.execute
-    #     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
-    #     # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有变量，在第一回合开始时
+    #     # Finance.update_variables(A.BB, A.IB, A.b, A.ib, by_way='clear transfer all')  # 更新各银行之所有交易变量，在第一回合开始时#BUG 删除后是否影响后续实验初始化数据？有影响！
+    #     # Finance.update_variables(A.BB, A.IB, A.b, A.ib, by_way='all')  # 更新各银行之所有变量，在第一回合开始时
     #     return A
     #     pass  # function
 

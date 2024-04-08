@@ -82,7 +82,7 @@ class Executer:
         """
         执行一次变量变更级别的步进更新
 
-        更新方式具体见：`Finance.update_finance_variables` 对应的[文档](SystemicRiskSimulator/core/functions/content_finance.py)。
+        更新方式具体见：`Finance.update_variables` 对应的[文档](SystemicRiskSimulator/core/functions/content_finance.py)。
 
         Args:
             function (function): 相关的需要步进更新的功能函数
@@ -98,7 +98,7 @@ class Executer:
         """
 
         logging.debug(f"                步进：{sgv['step']}，相：{sgv['phase']}，更新源：{update_way}")
-        # Finance.update_finance_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
+        # Finance.update_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         function.update_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         Collector.collect_agent_data(A, A_data, sgv)
 

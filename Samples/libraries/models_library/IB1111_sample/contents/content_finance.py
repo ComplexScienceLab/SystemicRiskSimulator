@@ -1309,7 +1309,7 @@ class Finance:
     ## NOTE 总的金融变量更新部分（主入口）
 
     @classmethod
-    def update_finance_variables(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str = 'all'):
+    def update_variables(cls, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType, by_way: str = 'all'):
         """
         更新各银行之借贷流量变量。
 
