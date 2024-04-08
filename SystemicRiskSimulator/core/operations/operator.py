@@ -225,28 +225,6 @@ class Operator:
         # modelEntityContent = modelEntity.content
 
         A, A_data, para, sgv = process(modelEntity, A, A_data, para, sgv)
-        #
-        # modelContent=modelEntityContent['content_IB41111']
-        # modelAgents = modelEntityContent['content_agents']
-        # modelFinance = modelEntityContent['content_finance']
-        # env = modelEntity.environment(A, A_data, para, sgv, modelContent)
-        # observations, infos = env.reset()
-        #
-        # while env.agents:
-        #     modelAgents.calc_policy_default_averagePercentage(A, A_data, sgv, para)
-        #     my_actions = A.IB.theta_IB_def[:, :]
-        #     actions = {agent: env.action_space(agent).sample() for agent in env.agents}  # NOW 需要添加动作策略，包括随机采样、自定义采样等
-        #     pettingzoo_agents_actions = env.convert_actions_to_pettingzoo(fullName=env.A.BB.fullName, Default_IB=env.A.IB.Default_IB)
-        #     observations, rewards, terminations, truncations, infos = env.step(pettingzoo_agents_actions)
-        #     if sgv['turn'] > sgv['test_max_num_of_turn']:
-        #         raise Exception("超过了最大回合数！强制停止！")
-        #         pass  # if
-        #     pass  # while
-        #
-        # env.close()
-        # # parallel_api_test(env, num_cycles=1_000)
-        #
-        # # modelEntity.operate(env)
 
         return A, A_data, sgv, para
 

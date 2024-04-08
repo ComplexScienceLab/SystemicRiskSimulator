@@ -54,15 +54,14 @@ def experiments_program(sgv: dict, para: dict):
             elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True:
                 ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 时
 
-
-                # 设置 RLlib 结果目录
-                if sgv['system_platform'] == 'Windows':
-                    os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
-                elif sgv['system_platform'] == 'Darwin':
-                    os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log'],"ray_results"))  # 设置 RLlib 的结果目录
-                elif sgv['system_platform'] == 'Linux':
-                    os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
-                    pass  # if
+                # # 设置 RLlib 结果目录 #BUG 不起作用
+                # if sgv['system_platform'] == 'Windows':
+                #     os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
+                # elif sgv['system_platform'] == 'Darwin':
+                #     os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log'], "ray_results"))  # 设置 RLlib 的结果目录
+                # elif sgv['system_platform'] == 'Linux':
+                #     os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
+                #     pass  # if
 
                 ## 导入包
                 import ray
@@ -87,13 +86,12 @@ def experiments_program(sgv: dict, para: dict):
 
                 process = modelEntity.process
 
-                content_model = modelEntity.content['Content_model']
+                content_model = modelEntity.content['content_model']
                 content_agents = modelEntity.content['content_agents']
                 content_finance = modelEntity.content['content_finance']
                 env_PettingZoo = modelEntity.environment(A, A_data, para, sgv, content_model)
 
                 # observations, infos = env_PettingZoo.reset()
-
 
                 ray.init()  # 初始化 Ray
 
@@ -122,16 +120,24 @@ def experiments_program(sgv: dict, para: dict):
                     )
                     .resources(num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")))
                     .rollouts(
-                        num_rollout_workers=0,
-                        num_envs_per_worker=1,
-                        rollout_fragment_length=32,
+                        num_rollout_workers=0,  # 模拟器的数量
+                        num_envs_per_worker=1,  # 每个模拟器的环境数量
+                        rollout_fragment_length=32,  # 每个训练批次的长度
                     )
                     # .debugging(log_level="ERROR")
                     .reporting(metrics_num_episodes_for_smoothing=1)
                     .training(
-                        num_sgd_iter=1,
-                        sgd_minibatch_size=4,
-                        train_batch_size=32,
+                        train_batch_size=32,  # 训练批次大小
+                        lr=2e-5,  # 学习率
+                        gamma=0.99,  # 折扣因子
+                        lambda_=0.9,  # GAE 折扣因子
+                        use_gae=True,  # 是否使用 GAE
+                        clip_param=0.4,  # PPO 损失函数的 clip 参数
+                        grad_clip=None,  # 梯度裁剪
+                        entropy_coeff=0.1,  # 熵系数
+                        vf_loss_coeff=0.25,  # 值函数损失系数
+                        sgd_minibatch_size=4,  # SGD 小批量大小
+                        num_sgd_iter=1,  # SGD 迭代次数
                     )
                 )
 
