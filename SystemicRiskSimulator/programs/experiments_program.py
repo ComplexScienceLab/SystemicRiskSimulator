@@ -114,30 +114,34 @@ def experiments_program(sgv: dict, para: dict):
                     PPOConfig()
                     .environment(
                         env=env_name,
-                        clip_actions=True,
-                        clip_rewards=True,
-                        disable_env_checking=False,
+                        clip_actions=sgv['clip_actions'],
+                        clip_rewards=sgv['clip_rewards'],
+                        disable_env_checking=sgv['disable_env_checking'],
                     )
-                    .resources(num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")))
+                    .resources(
+                        num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")),
+                    )
                     .rollouts(
-                        num_rollout_workers=0,  # 模拟器的数量
-                        num_envs_per_worker=1,  # 每个模拟器的环境数量
-                        rollout_fragment_length=32,  # 每个训练批次的长度
+                        num_rollout_workers=sgv['num_rollout_workers'],
+                        num_envs_per_worker=sgv['num_envs_per_worker'],
+                        rollout_fragment_length=sgv['rollout_fragment_length'],
                     )
-                    # .debugging(log_level="ERROR")
-                    .reporting(metrics_num_episodes_for_smoothing=1)
+                    .debugging(log_level="ERROR")
+                    .reporting(
+                        metrics_num_episodes_for_smoothing=sgv['metrics_num_episodes_for_smoothing'],
+                    )
                     .training(
-                        train_batch_size=32,  # 训练批次大小
-                        lr=2e-5,  # 学习率
-                        gamma=0.99,  # 折扣因子
-                        lambda_=0.9,  # GAE 折扣因子
-                        use_gae=True,  # 是否使用 GAE
-                        clip_param=0.4,  # PPO 损失函数的 clip 参数
-                        grad_clip=None,  # 梯度裁剪
-                        entropy_coeff=0.1,  # 熵系数
-                        vf_loss_coeff=0.25,  # 值函数损失系数
-                        sgd_minibatch_size=4,  # SGD 小批量大小
-                        num_sgd_iter=1,  # SGD 迭代次数
+                        train_batch_size=sgv['train_batch_size'],
+                        lr=sgv['lr'],
+                        gamma=sgv['gamma'],
+                        lambda_=sgv['lambda_'],
+                        use_gae=sgv['use_gae'],
+                        clip_param=sgv['clip_param'],
+                        grad_clip=sgv['grad_clip'],
+                        entropy_coeff=sgv['entropy_coeff'],
+                        vf_loss_coeff=sgv['vf_loss_coeff'],
+                        sgd_minibatch_size=sgv['sgd_minibatch_size'],
+                        num_sgd_iter=sgv['num_sgd_iter'],
                     )
                 )
 
