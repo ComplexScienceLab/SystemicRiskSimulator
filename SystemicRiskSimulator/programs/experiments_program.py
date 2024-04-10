@@ -64,8 +64,10 @@ def experiments_program(sgv: dict, para: dict):
                 #     pass  # if
 
                 ## 导入包
+                # from torch.optim import Adam
                 import ray
                 from ray import air, tune
+                from ray.rllib.algorithms.callbacks import DefaultCallbacks
                 from ray.tune.registry import register_env
                 from ray.rllib.policy.policy import PolicySpec
                 # from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
@@ -91,6 +93,7 @@ def experiments_program(sgv: dict, para: dict):
                 content_finance = modelEntity.content['content_finance']
                 env_PettingZoo = modelEntity.environment(A, A_data, para, sgv, content_model)
 
+
                 # observations, infos = env_PettingZoo.reset()
 
                 ray.init()  # 初始化 Ray
@@ -109,15 +112,27 @@ def experiments_program(sgv: dict, para: dict):
                     "episode_reward_mean": sgv['stop_reward'],
                 }
 
+
+                # class MyCallbacks(DefaultCallbacks):
+                #     def on_train_result(self, trainer, result):
+                #         print("trainer.train() result: {}".format(result))
+                #         super().on_train_result(trainer, result)
+
                 # 配置项
                 config = (
                     PPOConfig()
+                    .experimental(_enable_new_api_stack=False)
                     .environment(
                         env=env_name,
                         clip_actions=sgv['clip_actions'],
                         clip_rewards=sgv['clip_rewards'],
                         disable_env_checking=sgv['disable_env_checking'],
                     )
+                    # .optimizer(
+                    #     type="adam",
+                    #     adam_eps=1e-8,
+                    #     grad_clip=None,
+                    # )
                     .resources(
                         num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")),
                     )
@@ -142,6 +157,7 @@ def experiments_program(sgv: dict, para: dict):
                         vf_loss_coeff=sgv['vf_loss_coeff'],
                         sgd_minibatch_size=sgv['sgd_minibatch_size'],
                         num_sgd_iter=sgv['num_sgd_iter'],
+                        # optimizer={Adam},
                     )
                 )
 

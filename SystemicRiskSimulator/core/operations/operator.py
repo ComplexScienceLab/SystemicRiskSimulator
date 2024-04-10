@@ -1,5 +1,5 @@
 """
-运作机
+运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
 from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any, pickle, pd
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
