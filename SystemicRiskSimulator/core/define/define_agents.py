@@ -134,8 +134,8 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     # TODO 增加监管约束之状态；
 
     rewards = np.NaN  # 各银行之奖励 rewards （类似效用函数）
-    strategic_style = np.NaN  # 各银行之智库之谋略风格，用于模拟决策风格。可选值 'excellence'、'well'、'fixed'。默认值 'well'
-    fixed_policy = np.NaN  # 各银行之智库之固定策略。当 `strategic_style == 'fixed'` 的时候生效
+    strategy_style = np.NaN,  # 各银行之智库之谋略风格，用于模拟决策风格。可选值 'excellence'、'well'、'fixed'。默认值 'well'
+    strategy_Default_IB_def_s = np.NaN,  # 各银行之智库之银行间在违约损失冲击的违约策略。当 `strategy_style == 'fixed'` 的时候生效
 
     def __init__(self, *args, **kwargs):
         for index, key in enumerate(self.__dir__()):
