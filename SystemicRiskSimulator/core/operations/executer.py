@@ -1,9 +1,7 @@
 """
 执行机
 """
-import pandas as pd
-
-from SystemicRiskSimulator.external_packages import logging
+from SystemicRiskSimulator.external_packages import logging, pd, deepcopy, dataclass
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_entity import Entity
@@ -13,6 +11,7 @@ from SystemicRiskSimulator.core.operations.collector import Collector
 pass  # end import
 
 
+@dataclass
 class Executer:
     """
     执行机
@@ -71,10 +70,12 @@ class Executer:
         sgv['phase'] = 1  # 逐相复位（起始为1）
         # sgv['process_name'] = process_name
         logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
-        model_content.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
-        # A, sgv = model_content.step_model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+        model_content.model_content(A, A_last, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
-        return A, sgv
+        # 深拷贝一份作为上一回合的数据
+        A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
+
+        return A, A_last, sgv
 
         pass  # function
 

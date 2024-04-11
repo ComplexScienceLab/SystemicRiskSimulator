@@ -1,8 +1,8 @@
 """
 结构体：定义各类Agents，基于模式3-1
 """
-import numpy as np
 
+from SystemicRiskSimulator.external_packages import np, deepcopy
 from SystemicRiskSimulator.core.define.define_type import *
 
 pass  # end import
@@ -218,4 +218,15 @@ class SystemicRiskAgent:
         self.ib = ib
         pass
 
-    pass
+    # def __deepcopy__(self, memo):   #HACK 无用可删除
+    #     new_copy = SystemicRiskAgent(
+    #         self.id_agent,
+    #         deepcopy(self.BB, memo),
+    #         deepcopy(self.b, memo),
+    #         deepcopy(self.IB, memo),
+    #         deepcopy(self.ib, memo)
+    #     )
+    #     return new_copy
+    #     pass  # function
+
+    pass  # class
