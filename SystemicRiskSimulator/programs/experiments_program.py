@@ -42,8 +42,8 @@ def experiments_program(sgv: dict, para: dict):
                 ## NOTE 如果只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
                 ## 运行实验
                 Operator.operate_run_experiment(sgv, para, model)
-            elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is False:
-                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
+            elif sgv['is_use_PettingZoo_environments'] is True and (sgv['is_use_RLlib_frameworks'] is False or sgv['RL_state'] == 'using'):
+                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时，或者强化学习状态是做运用时
                 ## 重置实验
                 A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
                 ## 步进式运行实验
@@ -51,22 +51,24 @@ def experiments_program(sgv: dict, para: dict):
                 # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
                 ## 收尾实验
                 Operator.operate_end_experiment(A_data, sgv)
-            elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True:
-                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 时
 
+            elif sgv['is_use_PettingZoo_environments'] is True and (sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'training'):
+                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做训练时
 
-                # 设置 RLlib 结果目录
-                if sgv['system_platform'] == 'Windows':
-                    os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
-                elif sgv['system_platform'] == 'Darwin':
-                    os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log'],"ray_results"))  # 设置 RLlib 的结果目录
-                elif sgv['system_platform'] == 'Linux':
-                    os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
-                    pass  # if
+                # # 设置 RLlib 结果目录 #BUG 不起作用
+                # if sgv['system_platform'] == 'Windows':
+                #     os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
+                # elif sgv['system_platform'] == 'Darwin':
+                #     os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log'], "ray_results"))  # 设置 RLlib 的结果目录
+                # elif sgv['system_platform'] == 'Linux':
+                #     os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
+                #     pass  # if
 
                 ## 导入包
+                # from torch.optim import Adam
                 import ray
                 from ray import air, tune
+                from ray.rllib.algorithms.callbacks import DefaultCallbacks
                 from ray.tune.registry import register_env
                 from ray.rllib.policy.policy import PolicySpec
                 # from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
@@ -94,7 +96,6 @@ def experiments_program(sgv: dict, para: dict):
 
                 # observations, infos = env_PettingZoo.reset()
 
-
                 ray.init()  # 初始化 Ray
 
                 def env_creator(args):
@@ -111,27 +112,51 @@ def experiments_program(sgv: dict, para: dict):
                     "episode_reward_mean": sgv['stop_reward'],
                 }
 
+                # class MyCallbacks(DefaultCallbacks):
+                #     def on_train_result(self, trainer, result):
+                #         print("trainer.train() result: {}".format(result))
+                #         super().on_train_result(trainer, result)
+
                 # 配置项
                 config = (
                     PPOConfig()
+                    .experimental(_enable_new_api_stack=False)
                     .environment(
                         env=env_name,
-                        clip_actions=True,
-                        clip_rewards=True,
-                        disable_env_checking=False,
+                        clip_actions=sgv['clip_actions'],
+                        clip_rewards=sgv['clip_rewards'],
+                        disable_env_checking=sgv['disable_env_checking'],
                     )
-                    .resources(num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")))
+                    # .optimizer(
+                    #     type="adam",
+                    #     adam_eps=1e-8,
+                    #     grad_clip=None,
+                    # )
+                    .resources(
+                        num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")),
+                    )
                     .rollouts(
-                        num_rollout_workers=0,
-                        num_envs_per_worker=1,
-                        rollout_fragment_length=32,
+                        num_rollout_workers=sgv['num_rollout_workers'],
+                        num_envs_per_worker=sgv['num_envs_per_worker'],
+                        rollout_fragment_length=sgv['rollout_fragment_length'],
                     )
-                    # .debugging(log_level="ERROR")
-                    .reporting(metrics_num_episodes_for_smoothing=1)
+                    .debugging(log_level="ERROR")
+                    .reporting(
+                        metrics_num_episodes_for_smoothing=sgv['metrics_num_episodes_for_smoothing'],
+                    )
                     .training(
-                        num_sgd_iter=1,
-                        sgd_minibatch_size=4,
-                        train_batch_size=32,
+                        train_batch_size=sgv['train_batch_size'],
+                        lr=sgv['lr'],
+                        gamma=sgv['gamma'],
+                        lambda_=sgv['lambda_'],
+                        use_gae=sgv['use_gae'],
+                        clip_param=sgv['clip_param'],
+                        grad_clip=sgv['grad_clip'],
+                        entropy_coeff=sgv['entropy_coeff'],
+                        vf_loss_coeff=sgv['vf_loss_coeff'],
+                        sgd_minibatch_size=sgv['sgd_minibatch_size'],
+                        num_sgd_iter=sgv['num_sgd_iter'],
+                        # optimizer={Adam},
                     )
                 )
 
@@ -150,7 +175,7 @@ def experiments_program(sgv: dict, para: dict):
                         break
                     print(result)
 
-                #
+                # #TODO 调参
                 # tune.Tuner(
                 #     "PPO",
                 #     run_config=air.RunConfig(

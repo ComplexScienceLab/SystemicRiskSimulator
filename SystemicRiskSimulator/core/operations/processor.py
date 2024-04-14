@@ -10,7 +10,7 @@ from SystemicRiskSimulator.core.define.define_entity import Entity
 from SystemicRiskSimulator.core.operations.executer import Executer
 
 
-@dataclass()
+# @dataclass()
 class Processor:
     """
     处理机
