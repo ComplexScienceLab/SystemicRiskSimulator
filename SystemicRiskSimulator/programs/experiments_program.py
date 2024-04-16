@@ -151,6 +151,7 @@ def experiments_program(sgv: dict, para: dict):
                         num_rollout_workers=sgv['num_rollout_workers'],
                         num_envs_per_worker=sgv['num_envs_per_worker'],
                         rollout_fragment_length=sgv['rollout_fragment_length'],
+                        batch_mode="complete_episodes",  # 可选值为 "complete_episodes" 或 "truncate_episodes"。这里建议用 "complete_episodes"。
                     )
                     .debugging(log_level="ERROR")
                     .reporting(
