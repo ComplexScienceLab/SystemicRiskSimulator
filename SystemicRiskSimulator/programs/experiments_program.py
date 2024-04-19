@@ -41,18 +41,14 @@ def experiments_program(sgv: dict, para: dict):
             if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
                 ## NOTE 如果只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
 
-                logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型。\n")  #DEBUG专用
+                logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型。\n")  # DEBUG专用
 
                 ## 运行实验
                 Operator.operate_run_experiment(sgv, para, model)
-            elif sgv['is_use_PettingZoo_environments'] is True and (sgv['is_use_RLlib_frameworks'] is False or sgv['RL_state'] == 'using'):
-                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时，或者强化学习状态是做运用时
 
-                if sgv['is_use_RLlib_frameworks'] is False:
-                    logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 进行训练。\n")  # DEBUG 专用
-                    if sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'using':
-                        logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")  # DEBUG 专用
-                    pass  # if
+            elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is False:
+                ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
+                logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 进行训练。\n")  # DEBUG 专用
 
                 ## 重置实验
                 A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
@@ -62,10 +58,22 @@ def experiments_program(sgv: dict, para: dict):
                 ## 收尾实验
                 Operator.operate_end_experiment(A_data, sgv)
 
-            elif sgv['is_use_PettingZoo_environments'] is True and (sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'training'):
+            elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'using':
+                ## #NOW #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
+                logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")  # DEBUG 专用
+
+                ## 重置实验
+                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+                ## 步进式运行实验
+                A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
+                # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
+                ## 收尾实验
+                Operator.operate_end_experiment(A_data, sgv)
+
+            elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'training':
                 ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做训练时
 
-                logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 进行训练。\n")  #DEBUG专用
+                logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 进行训练。\n")  # DEBUG专用
 
                 # # 设置 RLlib 结果目录 #BUG 不起作用
                 # if sgv['system_platform'] == 'Windows':
