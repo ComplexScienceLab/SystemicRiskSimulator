@@ -2,6 +2,7 @@
 系统性风险模拟器入口
 """
 
+
 def simulator(config: dict):
     """
     系统性风险模拟器入口
@@ -107,9 +108,17 @@ def simulator(config: dict):
         logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
         logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
 
-        ## 运行实验组模拟程序 #TODO 如果要做并行 RL 训练，需要考虑改成一个单独的程序做调用
-        from SystemicRiskSimulator.programs.experiments_program import experiments_program
-        experiments_program(sgv, para)
+        ## 运行实验组模拟程序 # NOW 如果要做并行仿真模拟或者并行 RL 训练，需要考虑改成一个单独的程序做调用
+        from SystemicRiskSimulator.programs.experiments_program import fun_experiments_program  # 原来的程序
+        fun_experiments_program(sgv, para)
+        sgv_pkl = pickle.dumps(sgv)
+        sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
+        para_pkl = pickle.dumps(para)
+        para_base64 = base64.b64encode(para_pkl).decode('utf-8')
+        start_time = time.time()
+        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64, para_base64])
+        end_time = time.time()
+        logging.info(f"\n实验组模拟程序运行总时长：{end_time - start_time} 秒。\n")
 
         ## 关闭日志
         logger.removeHandler(log_file_handler)
@@ -122,7 +131,7 @@ def simulator(config: dict):
         start_time = time.time()
         subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/visualize_data_program.py')), sgv_base64])
         end_time = time.time()
-        print(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
+        logging.info(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
         pass  # if
 
     # %% 清理
