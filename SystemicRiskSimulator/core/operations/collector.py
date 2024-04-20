@@ -5,7 +5,7 @@ from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, 
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_enum import ScheduleState
-from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
+# from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.core.define.define_type import *
 
 pass  # end import
@@ -334,13 +334,14 @@ class Collector:
     #
 
     @classmethod
-    def export_parameter_data(cls, combination_of_para: Union[list, pd.DataFrame], para: Optional[dict] = None):
+    def export_parameter_data(cls, sgv: dict, combination_of_para: Union[list, pd.DataFrame], para: Optional[dict] = None):
         """
         导出控制参数数据
 
         Args:
+            sgv (dict): 模拟器全局变量
             combination_of_para (list): 控制参数集之组合
-            para (dict): 参数变量
+            para (Optional[dict]): 参数变量。默认为 None
 
         Returns:
 
@@ -353,9 +354,9 @@ class Collector:
             df_010 = pd.DataFrame(combination_of_para, columns=para.keys())  # 转换字典列表为数据框
             pass  # if
 
-        # sgv['num_bank'] = len(para['list_id_bank'])  if sgv['num_bank'] is None else sgv['num_bank']
-        list_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
-        id_type_is_array = list_types.index(np.ndarray)  # 获取索引值为类型为数组类型的
+        # # sgv['num_bank'] = len(para['list_id_bank'])  if sgv['num_bank'] is None else sgv['num_bank']
+        # list_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
+        # id_type_is_array = list_types.index(np.ndarray)  # 获取索引值为类型为数组类型的
 
         # ## 获取银行个数
         # is_need_to_get_num_bank = False
@@ -370,18 +371,20 @@ class Collector:
         # if is_need_to_get_num_bank:
         #     sgv['num_bank'] = len(para[list(para.keys())[id_type_is_array]][0])  # 获取字典 `para` 在索引 `id_type_is_array` 对应的变量。该变量是一个列表。获取该列表第一个元素。该元素是一个数组。获取该数组大小，作为银行个数
 
-        ## 导出实验参数为 pkl、csv格式到输出文件夹
+        ## 导出实验参数为 pkl、csv、Excel xlsx格式到输出文件夹
         df_combinationOfPara = df_010.copy()
         df_combinationOfPara.insert(loc=0, column='exp_id', value=np.arange(1, sgv['num_experiment'] + 1))  # 添加实验组id
+        df_combinationOfPara.insert(loc=1, column='is_done', value=[False] * sgv['num_experiment'])  # 添加是否完成标记
         pd.to_pickle(df_combinationOfPara, Path(sgv['folderpath_experiments_output_parameters'], r"parameters.pkl"))
         df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.csv"))
+        df_combinationOfPara.to_excel(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.xlsx"), index=False)
 
         pass  # function
 
     @classmethod
-    def export_config_data(cls, config_data: dict):
+    def export_config_data(cls, sgv: dict):
         """
-        导出字典类型的配置数据为 pkl 格式
+        导出字典类型的配置数据（全局数据）为 pkl 格式
 
         Args:
             config_data (dict): 配置数据
@@ -391,7 +394,7 @@ class Collector:
         """
 
         with open(Path(sgv['folderpath_experiments_output_config'], r"config.pkl"), "wb") as f:
-            pickle.dump(config_data, f)
+            pickle.dump(sgv, f)
 
         # pickle.dump(config_data, open(Path(sgv['folderpath_experiments_output_data'], r"config.pkl"), "wb"))  # 导出为pkl格式
 

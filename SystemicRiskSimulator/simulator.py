@@ -109,8 +109,8 @@ def simulator(config: dict):
         logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
 
         ## 运行实验组模拟程序 # NOW 如果要做并行仿真模拟或者并行 RL 训练，需要考虑改成一个单独的程序做调用
-        from SystemicRiskSimulator.programs.experiments_program import fun_experiments_program  # 原来的程序
-        fun_experiments_program(sgv, para)
+        # from SystemicRiskSimulator.programs.experiments_program import fun_experiments_program  # 原来的程序
+        # fun_experiments_program(sgv, para)
         sgv_pkl = pickle.dumps(sgv)
         sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
         para_pkl = pickle.dumps(para)

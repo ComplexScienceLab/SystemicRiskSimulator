@@ -1,7 +1,7 @@
 """
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
-from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any, pickle, pd
+from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any, pickle, pd, Optional
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
@@ -23,28 +23,29 @@ class Operator:
     """
 
     @classmethod
-    def operate_installing(cls, sgv, para):
+    def operate_installing(cls, sgv, para: Optional[dict] = None):
         """
         运作安装
 
         Args:
             sgv (dict): 模拟器全局变量
+            para (Optional[dict]): 参数变量。默认为 None。如果 `init_parameters_method` 为 "set manually"，那么就需要设置此参数。
 
         Returns:
 
         """
 
-        ## 导出配置数据
-        Collector.export_config_data(sgv)
-
         ## 设置参数集
         if sgv['init_parameters_method'] == "import data":
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
-                sgv['list_combination_of_para'] = pd.read_pickle(f)
-            Collector.export_parameter_data(sgv['list_combination_of_para'])  # 导出控制参数数据
-        elif sgv['init_parameters_method'] == "set manually":
-            sgv['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
-            Collector.export_parameter_data(sgv['list_combination_of_para'], para)  # 导出控制参数数据
+                parameters_works = pd.read_pickle(f)
+            Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
+        elif sgv['init_parameters_method'] == "set manually":  # #HACK 这个选项几乎被废弃了。可以删除。
+            parameters_works = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
+            Collector.export_parameter_data(parameters_works, para)  # 导出控制参数数据
+            pass  # if
+
+        sgv['len_parameters_works'] = len(parameters_works)
 
         ## 构建本次实验组所需的所有模型
 
@@ -69,12 +70,15 @@ class Operator:
             Builder.build_entities_by_execute(sgv)
         pass  # if
 
-        return sgv, EntityManager.mainModelInstanceEntities
+        ## 导出配置数据
+        Collector.export_config_data(sgv)
+
+        return sgv, parameters_works, EntityManager.mainModelInstanceEntities
 
         pass  # function
 
     @classmethod
-    def operate_run_experiment(cls, sgv: dict, para: dict, model: Any):
+    def operate_run_experiment(cls, sgv: dict, para: dict, parameters_works, model: Any):
         """
         运作运行实验。用于传统的 ABM 模型。
 
@@ -97,7 +101,7 @@ class Operator:
         sgv['test_continous_loop_of_model'] = 0
         # sgv['A_data'] = None
 
-        logging.info("实验" + str(sgv['id_experiment']) + "/" + str(len(sgv['list_combination_of_para'])) + "开始：\n")
+        logging.info("实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
 
         logging.info("\n相关实验参数：" + str(para) + "\n")
 
@@ -152,7 +156,7 @@ class Operator:
         sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
-        logging.info("本次实验结束，还剩下" + str(len(sgv['list_combination_of_para']) - sgv['id_experiment']) + "个实验。\n\n")
+        logging.info("本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n")
 
         pass  # function
 
@@ -179,7 +183,7 @@ class Operator:
         sgv['is_continue_process'] = True
         # sgv['A_data'] = None
 
-        logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(len(sgv['list_combination_of_para'])) + "开始：\n")
+        logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
 
         logging.info("\n相关实验参数：" + str(para) + "\n")
 
@@ -249,7 +253,7 @@ class Operator:
         sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
-        logging.info("本次实验结束，还剩下" + str(len(sgv['list_combination_of_para']) - sgv['id_experiment']) + "个实验。\n\n")
+        logging.info("本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n")
 
         pass  # function
 
