@@ -33,9 +33,6 @@ class DataInstaller:
         Returns:
             bank(BankCommercial): 银行主体众
             interbank(BankInterbank): 银行间主体众
-            para (dict): 参数集
-            sgv (dict): 模拟器全局变量
-
         """
 
         with open(Path(sgv['folderpath_agents'], "BankCommercial" + f"_year={para['year']}" + ".pkl"), 'rb') as f:
@@ -56,7 +53,7 @@ class DataInstaller:
         for k, v in deepcopy(dict_bankInterbank).items():
             interbank[k] = v
 
-        return bank, interbank, para, sgv
+        return bank, interbank
 
         pass  # function
 
@@ -264,7 +261,7 @@ class DataInstaller:
         """
 
         if init_data_method == "import data":
-            BB, IB, para, sgv = cls.set_imported_values_to_Bank_variables(para, sgv)  # 导入数据以初始化银行变量
+            BB, IB = cls.set_imported_values_to_Bank_variables(para, sgv)  # 导入数据以初始化银行变量
         elif init_data_method == "set manually":
             BB, IB = cls.set_manually_values_to_Bank_variables()  # 手动设置以初始化银行变量
         elif init_data_method == "randomly":
@@ -297,7 +294,7 @@ class DataInstaller:
         # )
 
         # cls.initialize_data(A)  # 更新各银行之变量，在第一回合初始时 #HACK 无用可删除
-        return A, para, sgv
+        return A
         pass  # function
 
     # @classmethod
