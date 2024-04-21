@@ -71,11 +71,11 @@ def simulator(config: dict):
         ## 导入相关数据
         Tools._copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
 
-        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-        Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-        Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
-        # shutil.copy(Path(sgv['folderpath_parameters'], r"set_parameters_variables.py"), sgv['folderpath_experiments_output_parameters'])  # 导出一份生成参数的代码文件到输出文件夹
-        from SystemicRiskSimulator.core.define.define_parameterVariables import para
+        # Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        # Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+        # Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
+        # # shutil.copy(Path(sgv['folderpath_parameters'], r"set_parameters_variables.py"), sgv['folderpath_experiments_output_parameters'])  # 导出一份生成参数的代码文件到输出文件夹
+        # from SystemicRiskSimulator.core.define.define_parameterVariables import para
 
         Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
         Tools._copy_files_from_other_folders(sgv['folderpath_agents'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
@@ -113,10 +113,11 @@ def simulator(config: dict):
         # fun_experiments_program(sgv, para)
         sgv_pkl = pickle.dumps(sgv)
         sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
-        para_pkl = pickle.dumps(para)
-        para_base64 = base64.b64encode(para_pkl).decode('utf-8')
+        # para_pkl = pickle.dumps(para)
+        # para_base64 = base64.b64encode(para_pkl).decode('utf-8')
         start_time = time.time()
-        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64, para_base64])
+        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64])
+        # subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64, para_base64])
         end_time = time.time()
         logging.info(f"\n实验组模拟程序运行总时长：{end_time - start_time} 秒。\n")
 
