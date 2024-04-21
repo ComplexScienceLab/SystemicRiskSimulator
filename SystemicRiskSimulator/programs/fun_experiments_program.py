@@ -5,13 +5,13 @@ from SystemicRiskSimulator.external_packages import warnings, logging, platform,
 from SystemicRiskSimulator.core.operations.operator import Operator
 
 
-def experiments_program(sgv: dict, para: dict):
+def fun_experiments_program(sgv: dict, parameters_works: dict):
     """
     实验组模拟程序。用于运行实验组。
 
     Args:
         sgv (dict): 模拟器全局变量
-        para (dict): 参数字典
+        parameters_works (pandas.DataFrame): 参数作业数据框
 
     Returns:
 
@@ -32,11 +32,11 @@ def experiments_program(sgv: dict, para: dict):
 
     sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
-    for (i, para) in enumerate(sgv['list_combination_of_para']):
+    for (i, para) in enumerate(parameters_works):
         model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型
         sgv['id_experiment'] = i + 1  # 设定当前实验编号
 
-        if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):
+        if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):  # 如果没有设置要运行的实验编号列表，或者当前实验编号在要运行的实验编号列表中，那么继续。
             ## 进行实验
             if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
                 ## NOTE 如果只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
