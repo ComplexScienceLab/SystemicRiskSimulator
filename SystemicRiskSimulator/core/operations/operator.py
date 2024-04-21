@@ -78,13 +78,13 @@ class Operator:
         pass  # function
 
     @classmethod
-    def operate_run_experiment(cls, sgv: dict, para: dict, parameters_works, model: Any):
+    def operate_run_experiment(cls, sgv: dict, para: dict, model: Any):
         """
         运作运行实验。用于传统的 ABM 模型。
 
         Args:
-            sgv (dict): 模拟器全局变量，默认env
-            para (dict): 参数变量，默认para
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
             model (Any): 模型节点实体
 
         Returns:
@@ -166,8 +166,8 @@ class Operator:
         运作初始化实验。用于使用使用强化学习环境工具包自定义的模型。
 
         Args:
-            sgv (dict): 模拟器全局变量，默认env
-            para (dict): 参数变量，默认para
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
 
         Returns:
             A, A_data, sgv, para

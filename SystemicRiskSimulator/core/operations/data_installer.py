@@ -22,16 +22,19 @@ class DataInstaller:
     A_data = AgentDataCollection([], [])
 
     @classmethod
-    def set_imported_values_to_Bank_variables(cls, para: dict):
+    def set_imported_values_to_Bank_variables(cls, para: dict, sgv: dict):
         """
         导入数据以初始化银行主体众、银行间主体众变量
 
         Args:
             para (dict): 参数集
+            sgv (dict): 模拟器全局变量
 
         Returns:
             bank(BankCommercial): 银行主体众
             interbank(BankInterbank): 银行间主体众
+            para (dict): 参数集
+            sgv (dict): 模拟器全局变量
 
         """
 
@@ -53,7 +56,7 @@ class DataInstaller:
         for k, v in deepcopy(dict_bankInterbank).items():
             interbank[k] = v
 
-        return bank, interbank
+        return bank, interbank, para, sgv
 
         pass  # function
 
@@ -248,16 +251,20 @@ class DataInstaller:
         在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值做处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
 
         Args:
-            init_data_method (): 初始化数据的方式
+            init_data_method (str): 初始化数据的方式
             sgv (dict): 模拟器全局变量
             para (dict): 参数变量
 
-        Returns: A
+        Returns:
+            A (pd.Series): 系统性风险个体众
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
+
 
         """
 
         if init_data_method == "import data":
-            BB, IB = cls.set_imported_values_to_Bank_variables(para)  # 导入数据以初始化银行变量
+            BB, IB, para, sgv = cls.set_imported_values_to_Bank_variables(para, sgv)  # 导入数据以初始化银行变量
         elif init_data_method == "set manually":
             BB, IB = cls.set_manually_values_to_Bank_variables()  # 手动设置以初始化银行变量
         elif init_data_method == "randomly":
@@ -290,7 +297,7 @@ class DataInstaller:
         # )
 
         # cls.initialize_data(A)  # 更新各银行之变量，在第一回合初始时 #HACK 无用可删除
-        return A
+        return A, para, sgv
         pass  # function
 
     # @classmethod
