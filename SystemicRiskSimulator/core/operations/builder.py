@@ -98,7 +98,7 @@ class Builder:
                 pass  # for
 
         elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True:
-            ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型 #DEBUG
+            ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib  #DEBUG
             ### #NOTE 子方案一：自定义的模型内容与使用强化学习环境工具包自定义的环境模型分成两个文件 #DEBUG
             ## 导入实体之内容
             list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity", sgv['folderpath_simulator'])
