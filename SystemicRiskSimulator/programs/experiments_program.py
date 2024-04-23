@@ -23,6 +23,14 @@ def main():
     # para_pkl = base64.b64decode(para_base64)
     # paras_works = pickle.loads(para_pkl)
 
+    # 设置日志
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)
+    log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
+    logger.addHandler(log_file_handler)
+    log_console_handler = logging.StreamHandler()
+    logger.addHandler(log_console_handler)
+
     # %% 预安装模型、数据，运行实验组
 
     if sgv['is_ignore_warning']:
@@ -61,7 +69,12 @@ def main():
             p.map(fun_experiment_work, works)
             pass  # with
 
-        pass
+
+
+
+        ## #TODO 汇总各进程之日志到主进程之日志
+
+
     else:
         ## #NOTE：串行处理
         for i, para in parameters_works.iterrows():
@@ -102,6 +115,9 @@ def main():
             pass  # if
 
         pass  # if
+
+    ## 关闭主进程日志记录器
+    logger.removeHandler(log_file_handler)
 
     pass  # main
 

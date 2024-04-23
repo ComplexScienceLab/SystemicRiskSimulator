@@ -108,6 +108,9 @@ def simulator(config: dict):
         logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
         logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
 
+        ## 关闭日志记录器
+        logger.removeHandler(log_file_handler)
+
         ## 运行实验组模拟程序 # NOW 如果要做并行仿真模拟或者并行 RL 训练，需要考虑改成一个单独的程序做调用
         # from SystemicRiskSimulator.programs.experiments_program import fun_experiments_program  # 原来的程序
         # fun_experiments_program(sgv, para)
@@ -118,11 +121,17 @@ def simulator(config: dict):
         start_time = time.time()
         subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64])
         # subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64, para_base64])
+
+        ## 继续打开日志记录器
+        logger.addHandler(log_file_handler)
+        logger.addHandler(log_console_handler)
+
         end_time = time.time()
         logging.info(f"\n实验组模拟程序运行总时长：{end_time - start_time} 秒。\n")
 
         ## 关闭日志
         logger.removeHandler(log_file_handler)
+
         pass  # if
 
     # %% 是否可视化结果程序
