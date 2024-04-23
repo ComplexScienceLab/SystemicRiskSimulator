@@ -39,10 +39,12 @@ def fun_experiments_program(sgv: dict, parameters_works: dict):
         if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):  # 如果没有设置要运行的实验编号列表，或者当前实验编号在要运行的实验编号列表中，那么继续。
             ## 进行实验
             if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
-                ## NOTE 如果只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
+                ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
 
-                logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型。\n")  # DEBUG专用
+                logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")  # DEBUG专用
 
+                ## 重置实验
+                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
                 ## 运行实验
                 Operator.operate_run_experiment(sgv, para, model)
 
@@ -51,7 +53,7 @@ def fun_experiments_program(sgv: dict, parameters_works: dict):
                 logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 进行训练。\n")  # DEBUG 专用
 
                 ## 重置实验
-                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
                 ## 步进式运行实验
                 A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
                 # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
@@ -63,7 +65,7 @@ def fun_experiments_program(sgv: dict, parameters_works: dict):
                 logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")  # DEBUG 专用
 
                 ## 重置实验
-                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
                 ## 步进式运行实验
                 A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
                 # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)

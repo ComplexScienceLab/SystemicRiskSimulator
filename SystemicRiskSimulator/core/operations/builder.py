@@ -171,11 +171,11 @@ class Builder:
                 pass  # for
 
         else:
-            ## NOTE 如果使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型 #DEBUG
+            ## NOTE 如果使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型 #DEBUG
             ## 导入实体之内容
-            list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity_", sgv['folderpath_simulator'])
+            list_entityData = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/entities')), r"entity", sgv['folderpath_simulator'])
             ## 导入模型之内容（NOTE 动态导入）
-            modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"content_", sgv['folderpath_simulator'])
+            modelContents = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"[Cc]ontent_", sgv['folderpath_simulator'])
             ## 根据模型实体数据列表之数据，生成相应的模型实体对象，然后组成模型实体列表
             for entityData in list_entityData.values():
                 EntityManager.create_entity(entityData=entityData)  # 根据实体数据，创建每个实体
@@ -218,8 +218,8 @@ class Builder:
                     # modelEntity.execute = dict()
                     # modelEntity.execute['model'] = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
                     # modelEntity.execute['finance'] = modelContents[modelEntity.content]  # 设置执行器之值是具体的模型内容
-                    modelEntity.execute = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
-                    modelEntity.content = modelContents[modelEntity.content]  # 设置内容器之值是具体的模型相关的功能函数
+                    # modelEntity.execute = modelContents[modelEntity.execute]  # 设置执行器之值是具体的模型内容
+                    modelEntity.content = modelContents  # 设置内容器之值是具体的模型相关的功能函数
                     pass  # if
                 pass  # for
 

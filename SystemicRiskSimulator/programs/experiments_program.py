@@ -51,6 +51,11 @@ def main():
     #     pass  # for
     if sgv['is_enable_multiprocessing']:
         ## #TODO NOTE：多进程并行处理
+        para = para.to_dict()  # 将参数数据框转换为字典
+        # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
+        model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
+        sgv['id_experiment'] = i + 1  # 设定当前实验编号
+
         num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
         with Pool(num_cores) as p:
             p.map(fun_experiment_work, works)
@@ -58,11 +63,11 @@ def main():
 
         pass
     else:
-        ## #NOW #NOTE：串行处理
+        ## #NOTE：串行处理
         for i, para in parameters_works.iterrows():
             para = para.to_dict()  # 将参数数据框转换为字典
-
-            model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型
+            # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
+            model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
             sgv['id_experiment'] = i + 1  # 设定当前实验编号
 
             ## 运行一次实验作业
@@ -117,19 +122,21 @@ def fun_experiment_work(sgv: dict, para: pandas.Series, model: dict):
     if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):  # 如果没有设置要运行的实验编号列表，或者当前实验编号在要运行的实验编号列表中，那么继续。
         ## 进行实验
         if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
-            ## NOTE 如果只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
+            ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
 
-            logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用使用强化学习环境工具包自定义的模型。\n")  # DEBUG专用
+            logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")  # DEBUG专用
 
+            ## 重置实验
+            A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
             ## 运行实验
-            Operator.operate_run_experiment(sgv, para, model)
+            Operator.operate_run_experiment(A, A_last, A_data, sgv, para, model)
 
         elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is False:
             ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
             logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 进行训练。\n")  # DEBUG 专用
 
             ## 重置实验
-            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
             ## 步进式运行实验
             A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
             # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)

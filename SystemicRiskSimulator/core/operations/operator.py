@@ -1,15 +1,13 @@
 """
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
-from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any, pickle, pd, Optional
+from SystemicRiskSimulator.external_packages import Path, time, logging, deepcopy, Any, pickle, pd, Optional
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.data_installer import DataInstaller
 from SystemicRiskSimulator.core.operations.builder import Builder
-from SystemicRiskSimulator.core.operations.processor import Processor
-from SystemicRiskSimulator.core.operations.executer import Executer
 
 from SystemicRiskSimulator.tools.tools import Tools
 
@@ -35,7 +33,7 @@ class Operator:
 
         """
 
-        ## 设置参数集
+        ## 设置参数作业列表
         if sgv['init_parameters_method'] == "import data":
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
@@ -78,11 +76,14 @@ class Operator:
         pass  # function
 
     @classmethod
-    def operate_run_experiment(cls, sgv: dict, para: dict, model: Any):
+    def operate_run_experiment(cls, A: SystemicRiskAgent, A_last: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
         运作运行实验。用于传统的 ABM 模型。
 
         Args:
+            A (SystemicRiskAgent): 多主体
+            A_last (SystemicRiskAgent): 上一回合的多主体
+            A_data (AgentDataCollection): 多主体之数据
             sgv (dict): 模拟器全局变量
             para (dict): 参数变量
             model (Any): 模型节点实体
@@ -90,28 +91,6 @@ class Operator:
         Returns:
 
         """
-
-        ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
-        sgv['index_of_schedule_position'] = []
-        sgv['turn'] = 0
-        sgv['phase'] = 0
-        sgv['step'] = 0
-        sgv['model_name'] = para['model_name']
-        sgv['process_name'] = "START"
-        sgv['test_continous_loop_of_model'] = 0
-        # sgv['A_data'] = None
-
-        logging.info("实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
-
-        logging.info("\n相关实验参数：" + str(para) + "\n")
-
-        ## 初始化 agents 数据
-        A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
-        # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
-        logging.debug("                    初始化数据")
-        # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
-        A_data = Collector.init_agent_data_collection(A, sgv)
-        # sgv['step'] += 1
 
         ## 运行实验
 
@@ -132,10 +111,15 @@ class Operator:
 
             modelEntity = model.content  # 获取节点实体对应的模型实体
 
+            content_Agents = modelEntity.content['content_agents'](para['Strategy_default'])
+            content_Finance = modelEntity.content['content_finance']
+            content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
+
             logging.debug("    开始执行模型内容：")
             sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
-            modelEntity.execute(A, A_data, para, sgv)
+            # modelEntity.execute(A, A_data, para, sgv)
+            content_Model.content_model(A, A_last, A_data, para, sgv)
 
             logging.debug("    结束执行模型内容。")
 
@@ -161,7 +145,7 @@ class Operator:
         pass  # function
 
     @classmethod
-    def operate_reset_experiment(cls, sgv: dict, para: dict):
+    def operate_reset_experiment(cls, sgv: dict, para: dict, model: Any):
         """
         运作初始化实验。用于使用使用强化学习环境工具包自定义的模型。
 
@@ -172,12 +156,14 @@ class Operator:
         Returns:
             A, A_data, sgv, para
         """
+        modelEntity = model.content  # 获取节点实体对应的模型实体
+
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
         sgv['index_of_schedule_position'] = []
         sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
-        sgv['model_name'] = para['model_name']
+        sgv['model_name'] = modelEntity.attribute.entity_name
         sgv['process_name'] = "START"
         sgv['test_continous_loop_of_model'] = 0
         sgv['is_continue_process'] = True
@@ -189,13 +175,14 @@ class Operator:
 
         ## 初始化 agents 数据
         A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
+        A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
         # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
         logging.debug("                    初始化数据")
         # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         A_data = Collector.init_agent_data_collection(A, sgv)
         # sgv['step'] += 1
 
-        return A, A_data, sgv, para
+        return A, A_last, A_data, sgv, para
         pass  # function
 
     # @classmethod
