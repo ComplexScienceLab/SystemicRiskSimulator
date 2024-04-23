@@ -111,7 +111,7 @@ class Operator:
 
             modelEntity = model.content  # 获取节点实体对应的模型实体
 
-            content_Finance = modelEntity.content['content_finance']
+            content_Finance = modelEntity.content['content_finance']()
             if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
                 content_Agents = modelEntity.content['content_agents'](para['Strategy_default'])  #BUG 不能这样代入参数
                 content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
@@ -123,7 +123,7 @@ class Operator:
             sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
             # modelEntity.execute(A, A_data, para, sgv)
-            content_Model.content_model(A, A_last, A_data, para, sgv)
+            content_Model.model_content(A, A_last, A_data, para, sgv)
 
             logging.debug("    结束执行模型内容。")
 
