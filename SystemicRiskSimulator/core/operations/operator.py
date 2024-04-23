@@ -111,9 +111,13 @@ class Operator:
 
             modelEntity = model.content  # 获取节点实体对应的模型实体
 
-            content_Agents = modelEntity.content['content_agents'](para['Strategy_default'])
             content_Finance = modelEntity.content['content_finance']
-            content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
+            if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
+                content_Agents = modelEntity.content['content_agents'](para['Strategy_default'])  #BUG 不能这样代入参数
+                content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
+            else:
+                content_Model = modelEntity.content['content_model'](content_Finance)
+                pass  # if
 
             logging.debug("    开始执行模型内容：")
             sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
