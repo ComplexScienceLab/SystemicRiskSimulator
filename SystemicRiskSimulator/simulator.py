@@ -130,6 +130,7 @@ def simulator(config: dict):
         logging.info(f"\n实验组模拟程序运行总时长：{end_time - start_time} 秒。\n")
 
         ## 关闭日志
+        log_file_handler.close()
         logger.removeHandler(log_file_handler)
 
         pass  # if
