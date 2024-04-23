@@ -5,8 +5,9 @@ from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, 
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_enum import ScheduleState
-from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
+# from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.core.define.define_type import *
+from SystemicRiskSimulator.tools.tools import Tools
 
 pass  # end import
 
@@ -334,13 +335,14 @@ class Collector:
     #
 
     @classmethod
-    def export_parameter_data(cls, combination_of_para: Union[list, pd.DataFrame], para: Optional[dict] = None):
+    def export_parameter_data(cls, sgv: dict, combination_of_para: Union[list, pd.DataFrame], para: Optional[dict] = None):
         """
         导出控制参数数据
 
         Args:
+            sgv (dict): 模拟器全局变量
             combination_of_para (list): 控制参数集之组合
-            para (dict): 参数变量
+            para (Optional[dict]): 参数变量。默认为 None
 
         Returns:
 
@@ -348,14 +350,15 @@ class Collector:
 
         sgv['num_experiment'] = len(combination_of_para)  # 获取实验组之实验个数
         if para is None:  # 如果参数变量为空，则直接从 combination_of_para 中获取参数变量相关的信息
-            df_010 = pd.DataFrame(combination_of_para, columns=combination_of_para[0].keys())  # 转换字典列表为数据框
+            # df_010 = pd.DataFrame(combination_of_para, columns=combination_of_para[0].keys())  # 转换字典列表为数据框
+            pass  # if
         else:
             df_010 = pd.DataFrame(combination_of_para, columns=para.keys())  # 转换字典列表为数据框
             pass  # if
 
-        # sgv['num_bank'] = len(para['list_id_bank'])  if sgv['num_bank'] is None else sgv['num_bank']
-        list_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
-        id_type_is_array = list_types.index(np.ndarray)  # 获取索引值为类型为数组类型的
+        # # sgv['num_bank'] = len(para['list_id_bank'])  if sgv['num_bank'] is None else sgv['num_bank']
+        # list_types = [type(df_010.iloc[0, i]) for i in range(df_010.columns.__len__())]  # 获取列表，元素为数据框之各列之元素之类型
+        # id_type_is_array = list_types.index(np.ndarray)  # 获取索引值为类型为数组类型的
 
         # ## 获取银行个数
         # is_need_to_get_num_bank = False
@@ -370,18 +373,58 @@ class Collector:
         # if is_need_to_get_num_bank:
         #     sgv['num_bank'] = len(para[list(para.keys())[id_type_is_array]][0])  # 获取字典 `para` 在索引 `id_type_is_array` 对应的变量。该变量是一个列表。获取该列表第一个元素。该元素是一个数组。获取该数组大小，作为银行个数
 
-        ## 导出实验参数为 pkl、csv格式到输出文件夹
-        df_combinationOfPara = df_010.copy()
+        # ## 导出实验参数为 pkl、csv、Excel xlsx格式到输出文件夹
+        # df_combinationOfPara = df_010.copy()
+        # df_combinationOfPara.insert(loc=0, column='exp_id', value=np.arange(1, sgv['num_experiment'] + 1))  # 添加实验组id
+        # df_combinationOfPara.insert(loc=1, column='is_done', value=[False] * sgv['num_experiment'])  # 添加是否完成标记
+        # # 检查是否已经存在，如果文件已经存在则不再导出
+        # if not Path(sgv['folderpath_experiments_output_parameters'], r"parameters.pkl").exists():
+        #     pd.to_pickle(df_combinationOfPara, Path(sgv['folderpath_experiments_output_parameters'], r"parameters.pkl"))
+        # if not Path(sgv['folderpath_experiments_output_parameters'], r"parameters.csv").exists():
+        #     df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.csv"), index=False)
+        # if not Path(sgv['folderpath_experiments_output_parameters'], r"parameters.xlsx").exists():
+        #     df_combinationOfPara.to_excel(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.xlsx"), index=False)
+        #     pass  # if
+
+        ## 导出实验参数为 pkl、csv、Excel xlsx格式到输出文件夹
+        df_combinationOfPara = combination_of_para.copy()
         df_combinationOfPara.insert(loc=0, column='exp_id', value=np.arange(1, sgv['num_experiment'] + 1))  # 添加实验组id
-        pd.to_pickle(df_combinationOfPara, Path(sgv['folderpath_experiments_output_parameters'], r"parameters.pkl"))
-        df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.csv"))
+        df_combinationOfPara.insert(loc=1, column='is_done', value=[False] * sgv['num_experiment'])  # 添加是否完成标记
+
+        ### 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续重新生成参数作业数据
+        mtime_of_file_parameters_py = Path(sgv['folderpath_parameters'], r"set_parameters_variables.py").resolve().stat().st_mtime
+        mtime_of_file_parameters_pkl = Path(sgv['folderpath_parameters'], r"parameters.pkl").resolve().stat().st_mtime
+        filepath_parameters_works_pkl = Path(sgv['folderpath_experiments_output_parameters'], r"parameters_works.pkl").resolve()
+        if filepath_parameters_works_pkl.exists():  # 检查parameters_works.pkl文件是否存在
+            mtime_of_file_parameters_works_pkl = filepath_parameters_works_pkl.stat().st_mtime  # 获取parameters_works.pkl文件的最后修改时间
+            if (mtime_of_file_parameters_pkl > mtime_of_file_parameters_works_pkl) or (mtime_of_file_parameters_py > mtime_of_file_parameters_works_pkl):
+                is_generate_parameters_works_data = True
+                print("参数文件有更新，需要重新生成参数作业数据。")
+            else:
+                is_generate_parameters_works_data = False
+                print("参数文件没有更新，不需要重新生成参数作业数据。")
+        else:
+            is_generate_parameters_works_data = True
+            print("参数作业数据文件不存在，需要重新生成参数作业数据。")
+            pass  # if
+        if is_generate_parameters_works_data:
+            Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
+            # shutil.copy(Path(sgv['folderpath_parameters'], r"set_parameters_variables.py"), sgv['folderpath_experiments_output_parameters'])  # 导出一份生成参数的代码文件到输出文件夹
+            from SystemicRiskSimulator.core.define.define_parameterVariables import para
+
+            # pd.to_pickle(df_combinationOfPara, filepath_parameters_works_pkl)
+            # df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.csv"), index=False)
+            # df_combinationOfPara.to_excel(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.xlsx"), index=False)
+            pass
 
         pass  # function
 
     @classmethod
-    def export_config_data(cls, config_data: dict):
+    def export_config_data(cls, sgv: dict):
         """
-        导出字典类型的配置数据为 pkl 格式
+        导出字典类型的配置数据（全局数据）为 pkl 格式
 
         Args:
             config_data (dict): 配置数据
@@ -391,7 +434,7 @@ class Collector:
         """
 
         with open(Path(sgv['folderpath_experiments_output_config'], r"config.pkl"), "wb") as f:
-            pickle.dump(config_data, f)
+            pickle.dump(sgv, f)
 
         # pickle.dump(config_data, open(Path(sgv['folderpath_experiments_output_data'], r"config.pkl"), "wb"))  # 导出为pkl格式
 

@@ -1,8 +1,7 @@
 """
 可视化结果程序。
 
-BUG 2023-07-11：
-改标注在图上的文本语言为英文。暂时不建议用中文标注在图上。因为如果使用中文，不能任意设置字体族；
+BUG 2023-07-11：改标注在图上的文本语言为英文。暂时不建议用中文标注在图上。因为如果使用中文，不能任意设置字体族；
 
 Args:
     sgv: dict
@@ -148,7 +147,7 @@ def main():
         list_filepath_pkl_BB = list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl'))  # 获取实验组输出数据pkl格式之BB数据之文件列表
         for filepath_pkl_BB in list_filepath_pkl_BB:
             df_BB = pd.read_pickle(filepath_pkl_BB)
-            num_agent = df_BB['id_agent'][0].shape[0]  # 获取个体数
+            num_agent = df_BB['id_agent'][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
             df_BB_panel = df_BB.applymap(lambda x: x.flatten() if hasattr(x, 'flatten') else x)  # 压平二维数组
 
             ## 转换数据格式为numpy字符串格式

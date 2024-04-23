@@ -1,15 +1,13 @@
 """
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
-from SystemicRiskSimulator.external_packages import Path, time, logging, dataclass, Any, pickle, pd
+from SystemicRiskSimulator.external_packages import Path, time, logging, deepcopy, Any, pickle, pd, Optional
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.data_installer import DataInstaller
 from SystemicRiskSimulator.core.operations.builder import Builder
-from SystemicRiskSimulator.core.operations.processor import Processor
-from SystemicRiskSimulator.core.operations.executer import Executer
 
 from SystemicRiskSimulator.tools.tools import Tools
 
@@ -23,28 +21,29 @@ class Operator:
     """
 
     @classmethod
-    def operate_installing(cls, sgv, para):
+    def operate_installing(cls, sgv, para: Optional[dict] = None):
         """
         运作安装
 
         Args:
             sgv (dict): 模拟器全局变量
+            para (Optional[dict]): 参数变量。默认为 None。如果 `init_parameters_method` 为 "set manually"，那么就需要设置此参数。
 
         Returns:
 
         """
 
-        ## 导出配置数据
-        Collector.export_config_data(sgv)
-
-        ## 设置参数集
+        ## 设置参数作业列表
         if sgv['init_parameters_method'] == "import data":
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
-                sgv['list_combination_of_para'] = pd.read_pickle(f)
-            Collector.export_parameter_data(sgv['list_combination_of_para'])  # 导出控制参数数据
-        elif sgv['init_parameters_method'] == "set manually":
-            sgv['list_combination_of_para'] = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
-            Collector.export_parameter_data(sgv['list_combination_of_para'], para)  # 导出控制参数数据
+                parameters_works = pd.read_pickle(f)
+            Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
+        elif sgv['init_parameters_method'] == "set manually":  # #HACK 这个选项几乎被废弃了。可以删除。
+            parameters_works = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
+            Collector.export_parameter_data(parameters_works, para)  # 导出控制参数数据
+            pass  # if
+
+        sgv['len_parameters_works'] = len(parameters_works)
 
         ## 构建本次实验组所需的所有模型
 
@@ -69,45 +68,29 @@ class Operator:
             Builder.build_entities_by_execute(sgv)
         pass  # if
 
-        return sgv, EntityManager.mainModelInstanceEntities
+        ## 导出配置数据
+        Collector.export_config_data(sgv)
+
+        return sgv, parameters_works, EntityManager.mainModelInstanceEntities
 
         pass  # function
 
     @classmethod
-    def operate_run_experiment(cls, sgv: dict, para: dict, model: Any):
+    def operate_run_experiment(cls, A: SystemicRiskAgent, A_last: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
         运作运行实验。用于传统的 ABM 模型。
 
         Args:
-            sgv (dict): 模拟器全局变量，默认env
-            para (dict): 参数变量，默认para
+            A (SystemicRiskAgent): 多主体
+            A_last (SystemicRiskAgent): 上一回合的多主体
+            A_data (AgentDataCollection): 多主体之数据
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
             model (Any): 模型节点实体
 
         Returns:
 
         """
-
-        ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
-        sgv['index_of_schedule_position'] = []
-        sgv['turn'] = 0
-        sgv['phase'] = 0
-        sgv['step'] = 0
-        sgv['model_name'] = para['model_name']
-        sgv['process_name'] = "START"
-        sgv['test_continous_loop_of_model'] = 0
-        # sgv['A_data'] = None
-
-        logging.info("实验" + str(sgv['id_experiment']) + "/" + str(len(sgv['list_combination_of_para'])) + "开始：\n")
-
-        logging.info("\n相关实验参数：" + str(para) + "\n")
-
-        ## 初始化 agents 数据
-        A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
-        # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
-        logging.debug("                    初始化数据")
-        # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
-        A_data = Collector.init_agent_data_collection(A, sgv)
-        # sgv['step'] += 1
 
         ## 运行实验
 
@@ -128,10 +111,19 @@ class Operator:
 
             modelEntity = model.content  # 获取节点实体对应的模型实体
 
+            content_Finance = modelEntity.content['content_finance']()
+            if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
+                content_Agents = modelEntity.content['content_agents'](para['Strategy_default'])  #BUG 不能这样代入参数
+                content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
+            else:
+                content_Model = modelEntity.content['content_model'](content_Finance)
+                pass  # if
+
             logging.debug("    开始执行模型内容：")
             sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
-            modelEntity.execute(A, A_data, para, sgv)
+            # modelEntity.execute(A, A_data, para, sgv)
+            content_Model.model_content(A, A_last, A_data, para, sgv)
 
             logging.debug("    结束执行模型内容。")
 
@@ -152,46 +144,49 @@ class Operator:
         sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
-        logging.info("本次实验结束，还剩下" + str(len(sgv['list_combination_of_para']) - sgv['id_experiment']) + "个实验。\n\n")
+        logging.info("本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n")
 
         pass  # function
 
     @classmethod
-    def operate_reset_experiment(cls, sgv: dict, para: dict):
+    def operate_reset_experiment(cls, sgv: dict, para: dict, model: Any):
         """
         运作初始化实验。用于使用使用强化学习环境工具包自定义的模型。
 
         Args:
-            sgv (dict): 模拟器全局变量，默认env
-            para (dict): 参数变量，默认para
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
 
         Returns:
             A, A_data, sgv, para
         """
+        modelEntity = model.content  # 获取节点实体对应的模型实体
+
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
         sgv['index_of_schedule_position'] = []
         sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
-        sgv['model_name'] = para['model_name']
+        sgv['model_name'] = modelEntity.attribute.entity_name
         sgv['process_name'] = "START"
         sgv['test_continous_loop_of_model'] = 0
         sgv['is_continue_process'] = True
         # sgv['A_data'] = None
 
-        logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(len(sgv['list_combination_of_para'])) + "开始：\n")
+        logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
 
         logging.info("\n相关实验参数：" + str(para) + "\n")
 
         ## 初始化 agents 数据
         A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
+        A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
         # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
         logging.debug("                    初始化数据")
         # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         A_data = Collector.init_agent_data_collection(A, sgv)
         # sgv['step'] += 1
 
-        return A, A_data, sgv, para
+        return A, A_last, A_data, sgv, para
         pass  # function
 
     # @classmethod
@@ -249,7 +244,7 @@ class Operator:
         sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
-        logging.info("本次实验结束，还剩下" + str(len(sgv['list_combination_of_para']) - sgv['id_experiment']) + "个实验。\n\n")
+        logging.info("本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n")
 
         pass  # function
 
