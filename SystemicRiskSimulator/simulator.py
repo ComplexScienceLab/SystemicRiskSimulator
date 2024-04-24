@@ -86,11 +86,13 @@ def simulator(config: dict):
         sgv['system_platform'] = platform.system()
 
         ## 设置日志
+
+        for file in Path(sgv['folderpath_experiments_output_log']).glob("*.txt"):
+            file.unlink()  # 删除所有的 *.txt 文件（日志文件）
+            pass  # for
         logger = logging.getLogger()
         logger.setLevel(sgv['test_logging'])
-        if Path(sgv['folderpath_experiments_output_log'], "outputlog.txt").exists():
-            os.remove(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))  # 如果原来的日志存在，那么就删除重建
-            pass  # if
+
         log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
         logger.addHandler(log_file_handler)
         log_console_handler = logging.StreamHandler()

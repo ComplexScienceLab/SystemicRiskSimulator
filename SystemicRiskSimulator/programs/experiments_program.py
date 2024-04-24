@@ -3,7 +3,7 @@ import time
 
 import pandas
 
-from SystemicRiskSimulator.external_packages import warnings, logging, platform, os, Path, time, sys, base64, pickle, multiprocessing, Pool
+from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, base64, pickle, multiprocessing, Pool
 from SystemicRiskSimulator.core.operations.operator import Operator
 
 
@@ -23,7 +23,7 @@ def main():
     # para_pkl = base64.b64decode(para_base64)
     # paras_works = pickle.loads(para_pkl)
 
-    # 设置日志
+    ## 设置日志
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
     log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
@@ -51,29 +51,44 @@ def main():
 
     sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
-    # works = []
-    # for i, d in parameters_works.iterrows():
-    #     for w in range(sgv['vis']['num_time']):
-    #         works.append((sgv, parameters_works))
-    #         pass  # for
-    #     pass  # for
-    if sgv['is_enable_multiprocessing']:
-        ## #NOW TODO NOTE：多进程并行处理
-        para = para.to_dict()  # 将参数数据框转换为字典
-        # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
-        model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
-        sgv['id_experiment'] = i + 1  # 设定当前实验编号
+    model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
 
-        num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
+    if sgv['is_enable_multiprocessing']:
+        ## #NOTE：多进程并行处理
+        # para = para.to_dict()  # 将参数数据框转换为字典
+        # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
+
+        ## 并行计算时，关闭主进程日志记录器，改由子进程记录各自的日志
+        log_file_handler.close()
+        logger.removeHandler(log_file_handler)
+
+        num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 计算 CPU 核心数
+
+        ## 生成作业组
+        # sgv['id_experiment'] = 0  # 设定当前实验编号
+        works = []
+        for i, para in parameters_works.iterrows():
+            sgv_new = deepcopy(sgv)  # 复制全局变量
+            sgv_new['id_experiment'] = i  # 设定当前实验编号
+            work = (sgv_new, para, model)
+            works.append(work)
+            pass  # for
+
+        ## 并行运行实验作业
         with Pool(num_cores) as p:
-            p.map(fun_experiment_work, works)
+            p.starmap(fun_single_experiment_work, works)
             pass  # with
 
-
-
-
-        ## #TODO 汇总各进程之日志到主进程之日志
-
+        ## 并行处理之后，读取各个实验日志文件之内容追加到主进程日志文件之内容
+        if sgv['is_enable_multiprocessing']:
+            with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
+                for i, para in parameters_works.iterrows():
+                    with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i}.txt"), 'r') as f_sub:
+                        f.write(f_sub.read())
+                        pass  # with
+                    pass  # for
+                pass  # with
+            pass  # if
 
     else:
         ## #NOTE：串行处理
@@ -84,7 +99,7 @@ def main():
             sgv['id_experiment'] = i + 1  # 设定当前实验编号
 
             ## 运行一次实验作业
-            fun_experiment_work(sgv, para, model)
+            fun_single_experiment_work(sgv, para, model)
             pass  # for
 
         sgv['simulator_end_time'] = time.time()  # 记录模拟器结束运行时刻
@@ -114,18 +129,18 @@ def main():
             warnings.filterwarnings("default")  # 恢复警告
             pass  # if
 
-        pass  # if
+        ## 关闭该程序之主进程日志记录器
+        log_file_handler.close()
+        logger.removeHandler(log_file_handler)
 
-    ## 关闭主进程日志记录器
-    log_file_handler.close()
-    logger.removeHandler(log_file_handler)
+        pass  # if
 
     pass  # main
 
 
-def fun_experiment_work(sgv: dict, para: pandas.Series, model: dict):
+def fun_single_experiment_work(sgv: dict, para: pandas.Series, model: dict):
     """
-    实验组模拟程序。用于运行实验组。
+    实验模拟程序。用于运行单个实验。
 
     Args:
         sgv (dict): 模拟器全局变量
@@ -137,6 +152,19 @@ def fun_experiment_work(sgv: dict, para: pandas.Series, model: dict):
     """
 
     if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):  # 如果没有设置要运行的实验编号列表，或者当前实验编号在要运行的实验编号列表中，那么继续。
+
+        if sgv['is_enable_multiprocessing']:
+            ## 设置单独的实验日志
+            logger = logging.getLogger(f"outputlogger_{sgv['id_experiment']}")
+            logger.setLevel(logging.DEBUG)
+            log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"))
+            log_file_handler.setLevel(logging.DEBUG)
+            logger.addHandler(log_file_handler)
+            log_console_handler = logging.StreamHandler()
+            log_console_handler.setLevel(logging.DEBUG)
+            logger.addHandler(log_console_handler)
+            pass  # if
+
         ## 进行实验
         if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
             ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
@@ -313,13 +341,23 @@ def fun_experiment_work(sgv: dict, para: pandas.Series, model: dict):
             ## 收尾实验
             Operator.operate_end_experiment(A_data, sgv)
 
-        else:
             pass  # if
 
+        ## 关闭单独的实验日志记录器
+        if sgv['is_enable_multiprocessing']:
+            logger.removeHandler(log_file_handler)
+            log_file_handler.close()
+            logger.removeHandler(log_console_handler)
+            log_console_handler.close()
+            pass  # if
+
+    else:
         pass  # if
 
-    pass  # function
+    pass  # if
 
+
+pass  # function
 
 if __name__ == '__main__':
     main()
