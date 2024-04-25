@@ -2,6 +2,7 @@
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
 from SystemicRiskSimulator.external_packages import Path, time, logging, deepcopy, Any, pickle, pd, Optional
+from SystemicRiskSimulator.tools.logging_tools import log_message
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
@@ -113,38 +114,24 @@ class Operator:
 
             content_Finance = modelEntity.content['content_finance']()
             if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
-                content_Agents = modelEntity.content['content_agents'](para['Strategy_default'])  #BUG 不能这样代入参数
+                content_Agents = modelEntity.content['content_agents'](para['Strategy_default'])  # BUG 不能这样代入参数
                 content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
             else:
                 content_Model = modelEntity.content['content_model'](content_Finance)
                 pass  # if
 
-            logging.debug("    开始执行模型内容：")
+            log_message(
+                "    开始执行模型内容：",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+                f"logger_{sgv['id_experiment']}",
+            )
+
             sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
             # modelEntity.execute(A, A_data, para, sgv)
             content_Model.model_content(A, A_last, A_data, para, sgv)
 
-            logging.debug("    结束执行模型内容。")
-
-            sgv['is_continue_process'] = False  # 不再继续运行过程
-
             pass  # if
-
-        sgv['experiment_end_time'] = time.time()  # 记录此次实验结束时间
-        sgv['experiments_running_time'] += sgv['experiment_end_time'] - sgv['experiment_start_time']  # 累加此次实验运行时长
-
-        ## 导出数据之于已经收集的，然后结束本次实验
-
-        sgv['export_data_start_time'] = time.time()  # 记录此次导出数据开始时间
-
-        logging.debug("                    导出数据")
-        Collector.export_agent_data(A_data, sgv)
-
-        sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
-        sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
-
-        logging.info("本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n")
 
         pass  # function
 
@@ -173,15 +160,23 @@ class Operator:
         sgv['is_continue_process'] = True
         # sgv['A_data'] = None
 
-        logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
-
-        logging.info("\n相关实验参数：" + str(para) + "\n")
+        log_message(
+            "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n相关实验参数：" + str(para) + "\n",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            f"logger_{sgv['id_experiment']}",
+        )
 
         ## 初始化 agents 数据
         A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
         A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
         # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
-        logging.debug("                    初始化数据")
+
+        log_message(
+            "                    初始化数据",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            f"logger_{sgv['id_experiment']}",
+        )
+
         # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         A_data = Collector.init_agent_data_collection(A, sgv)
         # sgv['step'] += 1
@@ -213,7 +208,12 @@ class Operator:
 
         modelEntity = model.content  # 获取节点实体对应的模型实体
 
-        logging.debug("    开始执行模型内容：")
+        log_message(
+            "    开始执行模型内容：",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            f"logger_{sgv['id_experiment']}",
+        )
+
         sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
         process = modelEntity.process
@@ -227,7 +227,12 @@ class Operator:
 
     @classmethod
     def operate_end_experiment(cls, A_data: AgentDataCollection, sgv: dict):
-        logging.debug("    结束执行模型内容。")
+
+        log_message(
+            "    结束执行模型内容。",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            f"logger_{sgv['id_experiment']}",
+        )
 
         sgv['is_continue_process'] = False  # 不再继续运行过程
 
@@ -238,13 +243,22 @@ class Operator:
 
         sgv['export_data_start_time'] = time.time()  # 记录此次导出数据开始时间
 
-        logging.debug("                    导出数据")
+        log_message(
+            "                    导出数据",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            f"logger_{sgv['id_experiment']}",
+        )
+
         Collector.export_agent_data(A_data, sgv)
 
         sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
-        logging.info("本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n")
+        log_message(
+            "本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            f"logger_{sgv['id_experiment']}",
+        )
 
         pass  # function
 

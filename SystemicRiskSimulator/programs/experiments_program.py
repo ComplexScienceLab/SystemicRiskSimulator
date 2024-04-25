@@ -23,7 +23,7 @@ def main():
     # para_pkl = base64.b64decode(para_base64)
     # paras_works = pickle.loads(para_pkl)
 
-    ## 设置日志
+    ## 设置主进程日志
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
     log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
@@ -69,7 +69,7 @@ def main():
         works = []
         for i, para in parameters_works.iterrows():
             sgv_new = deepcopy(sgv)  # 复制全局变量
-            sgv_new['id_experiment'] = i  # 设定当前实验编号
+            sgv_new['id_experiment'] = i + 1  # 设定当前实验编号
             work = (sgv_new, para, model)
             works.append(work)
             pass  # for
@@ -83,7 +83,7 @@ def main():
         if sgv['is_enable_multiprocessing']:
             with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
                 for i, para in parameters_works.iterrows():
-                    with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i}.txt"), 'r') as f_sub:
+                    with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}.txt"), 'r') as f_sub:
                         f.write(f_sub.read())
                         pass  # with
                     pass  # for
@@ -153,21 +153,9 @@ def fun_single_experiment_work(sgv: dict, para: pandas.Series, model: dict):
 
     if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):  # 如果没有设置要运行的实验编号列表，或者当前实验编号在要运行的实验编号列表中，那么继续。
 
-        if sgv['is_enable_multiprocessing']:
-            ## 设置单独的实验日志
-            logger = logging.getLogger(f"outputlogger_{sgv['id_experiment']}")
-            logger.setLevel(logging.DEBUG)
-            log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"))
-            log_file_handler.setLevel(logging.DEBUG)
-            logger.addHandler(log_file_handler)
-            log_console_handler = logging.StreamHandler()
-            log_console_handler.setLevel(logging.DEBUG)
-            logger.addHandler(log_console_handler)
-            pass  # if
-
         ## 进行实验
         if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
-            ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型 #DEBUG 还没测试过
+            ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型
 
             logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")  # DEBUG专用
 
@@ -175,6 +163,10 @@ def fun_single_experiment_work(sgv: dict, para: pandas.Series, model: dict):
             A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
             ## 运行实验
             Operator.operate_run_experiment(A, A_last, A_data, sgv, para, model)
+
+            ## 收尾实验
+            Operator.operate_end_experiment(A_data, sgv)
+
 
         elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is False:
             ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
@@ -341,14 +333,6 @@ def fun_single_experiment_work(sgv: dict, para: pandas.Series, model: dict):
             ## 收尾实验
             Operator.operate_end_experiment(A_data, sgv)
 
-            pass  # if
-
-        ## 关闭单独的实验日志记录器
-        if sgv['is_enable_multiprocessing']:
-            logger.removeHandler(log_file_handler)
-            log_file_handler.close()
-            logger.removeHandler(log_console_handler)
-            log_console_handler.close()
             pass  # if
 
     else:

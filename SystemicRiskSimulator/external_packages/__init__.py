@@ -2,6 +2,7 @@
 import platform
 import sys
 import os
+import functools
 import glob
 import shutil
 import warnings
