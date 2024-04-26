@@ -25,7 +25,7 @@ def main():
 
     ## 设置主进程日志
     logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(sgv['test_logging'])
     log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
     logger.addHandler(log_file_handler)
     log_console_handler = logging.StreamHandler()
