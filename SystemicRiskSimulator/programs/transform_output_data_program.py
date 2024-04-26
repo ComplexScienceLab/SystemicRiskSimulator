@@ -1,6 +1,7 @@
 """
 预处理实验结果数据
 """
+
 # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。
 
 # %%
@@ -8,6 +9,14 @@
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
 from SystemicRiskSimulator.external_packages import platform, Path, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool, multiprocessing, warnings
+from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
+
+## NOTE 导入包
+
+if sgv['need_transformData']:
+    from openpyxl import load_workbook
+    from openpyxl.styles import PatternFill
+    from openpyxl.utils import get_column_letter
 
 
 def main():
@@ -39,14 +48,8 @@ def main():
     # from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
     from SystemicRiskSimulator.tools.tools import Tools
-    # if sgv['need_transform_output_data_packages']:
-    sgv['transform_output_data_packages'] = ['openpyxl']  # 可视化所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
-    sgv['is_installed_packages_for_visualization'] = Tools._check_and_install_packages(sgv['visualization_packages'])  # 安装可视化所需的第三方工具包
-
-    ## NOTE 导入包
-    from openpyxl import load_workbook
-    from openpyxl.styles import PatternFill
-    from openpyxl.utils import get_column_letter
+    list_transform_output_data_packages = ['openpyxl']  # 所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
+    Tools._check_and_install_packages(list_transform_output_data_packages)  # 安装所需的第三方工具包。#BUG 如果没有安装成功，请手动安装。
 
     # %% [markdown] 预处理数据
 
@@ -64,7 +67,7 @@ def main():
             num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
             works = []
             for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
-                works.append((filepath_pkl_BB, sgv['folderpath_experiments_output_data'], sgv['num_agent']))
+                works.append((filepath_pkl_BB, sgv['folderpath_experiments_output_data']))
                 pass  # for
 
             # 并行运行作业
@@ -86,7 +89,7 @@ def main():
             num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
             works = []
             for i, filepath_pkl_IB in enumerate(list_filepath_pkl_IB):
-                works.append((filepath_pkl_IB, sgv['folderpath_experiments_output_data'], sgv['num_agent']))
+                works.append((filepath_pkl_IB, sgv['folderpath_experiments_output_data']))
                 pass  # for
 
             # 并行运行作业
@@ -233,7 +236,7 @@ def transform_IB_exp_files(filepath_pkl_IB: Path, folderpath_exp_output_data: Pa
                 and df_IB[v][0].dtype == np.dtype('object')
         )
     ]
-    for v1 in list_columns_for_transform:  # BUG Pandas包警告 #HACK 这个功能似乎无用
+    for v1 in list_columns_for_transform:  # HACK 这个功能似乎无用
         for i2 in range(df_IB[v1].size):
             m = np.full((num_agent, num_agent), False)
             if df_IB.loc[i2, v1] is []:
@@ -263,7 +266,7 @@ def transform_IB_exp_files(filepath_pkl_IB: Path, folderpath_exp_output_data: Pa
         df_IB.col[i] = col_coord.astype('int16')
     df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="row", value=np.dtype('object'))
     for i, _ in enumerate(df_IB.row):
-        df_IB.row[i] = row_coord.astype('int16')
+        df_IB.row[i] = row_coord.astype('int16')  # BUG Pandas包警告
 
     ## 展平为面板形式
     list_columns_for_explode = [
@@ -323,7 +326,7 @@ def transform_IB_exp_files(filepath_pkl_IB: Path, folderpath_exp_output_data: Pa
     # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
     fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
     for i, row in enumerate(sheet_IB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
-        if i % (2 * sgv['num_bank'] ** 2) < sgv['num_bank'] ** 2:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+        if i % (2 * num_agent ** 2) < num_agent ** 2:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
             for cell in row:
                 cell.fill = fill  # 将该行的背景色设置为浅灰色
 
