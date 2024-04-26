@@ -153,17 +153,18 @@ def main():
             ## 转换数据格式为numpy字符串格式
             list_columns_for_transform_datatype = [
                 v for i, v in enumerate(df_BB.columns) if (
-                        df_BB[v].dtype == np.dtype('object') and
-                        type(df_BB[v][0]) == str
+                        df_BB[v].dtype == np.dtype('object')
+                        and type(df_BB[v][0]) == str
                 )
             ]
             for i in range(df_BB.__len__()):
                 df_BB[list_columns_for_transform_datatype[0]][i] = np.str_(df_BB[list_columns_for_transform_datatype[0]][i])  # BUG Pandas包警告
 
+            ## 展平为面板形式
             list_columns_for_explode = [
                 v for i, v in enumerate(df_BB.columns) if (
-                        df_BB[v].dtype == np.dtype('object') and
-                        df_BB[v][0].size == num_agent
+                        df_BB[v].dtype == np.dtype('object')
+                        and df_BB[v][0].size == num_agent
                 )
             ]  # 获取需要展平的列
 
@@ -237,8 +238,8 @@ def main():
             ## 转换数据格式为numpy字符串格式
             list_columns_for_transform_datatype = [
                 v for i, v in enumerate(df_IB.columns) if (
-                        df_IB[v].dtype == np.dtype('object') and
-                        type(df_IB[v][0]) == str
+                        df_IB[v].dtype == np.dtype('object')
+                        and type(df_IB[v][0]) == str
                 )
             ]
             for i in range(df_IB.__len__()):
@@ -247,11 +248,11 @@ def main():
             ## 转换信息列表为矩阵形式，插入数据框  #HACK 能否用现成的功能函数代替？
             list_columns_for_transform = [
                 v for i, v in enumerate(df_IB.columns) if (
-                        df_IB[v].dtype == np.dtype('object') and
-                        df_IB[v][0].dtype == np.dtype('object')
+                        df_IB[v].dtype == np.dtype('object')
+                        and df_IB[v][0].dtype == np.dtype('object')
                 )
             ]
-            for v1 in list_columns_for_transform:  # BUG Pandas包警告
+            for v1 in list_columns_for_transform:  # BUG Pandas包警告 #HACK 这个功能似乎无用
                 for i2 in range(df_IB[v1].size):
                     m = np.full((num_agent, num_agent), False)
                     if df_IB.loc[i2, v1] is []:
@@ -283,14 +284,16 @@ def main():
             for i, _ in enumerate(df_IB.row):
                 df_IB.row[i] = row_coord.astype('int16')
 
+            ## 展平为面板形式
             list_columns_for_explode = [
                 v for i, v in enumerate(df_IB.columns) if (
-                        df_IB[v].dtype == np.dtype('object') and
-                        df_IB[v][0].size == num_agent ** 2
+                        df_IB[v].dtype == np.dtype('object')
+                        and df_IB[v][0].size == num_agent ** 2
                 )
             ]  # 获取需要展平的列
 
-            df_IB_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
+            df_IB_panel = (df_IB.explode('id_agent')).explode('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
+            # df_IB_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
             for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
                 if col != 'id_agent':
                     df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
@@ -331,7 +334,7 @@ def main():
 
             sheet_IB_panel.freeze_panes = "K2"  # 冻结窗格
 
-            col_indices = [df_IB.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+            col_indices = [df_IB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
             for col_index in col_indices:
                 col_letter = get_column_letter(col_index)
                 sheet_IB_panel.column_dimensions[col_letter].width = 5
@@ -403,11 +406,11 @@ def main():
             df_BB_panel = csv_BB_10[cols_sorted_10]
             cols_sorted_10 = ['row', 'col']
             cols_sorted_10 = cols_sorted_10 + [s for s in csv_IB_10.columns if not s in cols_sorted_10]
-            df_IB = csv_IB_10[cols_sorted_10]
+            df_IB_panel = csv_IB_10[cols_sorted_10]
 
             ## 一些变量
             num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-            num_IB_id = len(df_IB)  # 数据表IB之行数
+            num_IB_id = len(df_IB_panel)  # 数据表IB之行数
             num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
             num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
             num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -486,11 +489,11 @@ def main():
             for i_exp in experiments_indices_to_vis:
 
                 df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB)  # 数据表IB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -521,14 +524,14 @@ def main():
                 sgv['vis']['min_BB_value_in_all_panel'] = 0
 
                 ### 计算各银行主体间之代表性的类型之数据之最大值和最小值
-                sgv['vis']['max_IB_value_in_all_panel'] = df_IB['A_IB'].max()
+                sgv['vis']['max_IB_value_in_all_panel'] = df_IB_panel['A_IB'].max()
                 sgv['vis']['min_IB_value_in_all_panel'] = 0
 
                 ## 创建一个任务列表，其中每个任务都是一个元组，包含所有需要传递给函数的参数
                 tasks = []
                 for i, d in df_data_types.iterrows():
                     for t in range(sgv['vis']['num_time']):
-                        tasks.append((sgv, df_BB_panel, df_IB, d, i_exp, t, i))
+                        tasks.append((sgv, df_BB_panel, df_IB_panel, d, i_exp, t, i))
                         pass  # for
                     pass  # for
 
@@ -559,11 +562,11 @@ def main():
             for i_exp in experiments_indices_to_vis:
 
                 df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB)  # 数据表IB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -622,11 +625,11 @@ def main():
             for i_exp in experiments_indices_to_vis:
 
                 df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB)  # 数据表IB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -655,7 +658,7 @@ def main():
                 sgv['vis']['min_BB_value_in_all_panel'] = 0
 
                 ### 计算各银行主体间之代表性的类型之数据之最大值和最小值
-                sgv['vis']['max_IB_value_in_all_panel'] = df_IB['A_IB'].max()
+                sgv['vis']['max_IB_value_in_all_panel'] = df_IB_panel['A_IB'].max()
                 sgv['vis']['min_IB_value_in_all_panel'] = 0
 
                 ## 创建一个任务列表，其中每个任务都是一个元组，包含所有需要传递给函数的参数
@@ -697,7 +700,7 @@ def main():
                         data_vis_one_time_graph['vertices'] = pd.DataFrame()
                         data_vis_one_time_graph['edges'] = pd.DataFrame()
 
-                        tasks.append((sgv, df_BB_panel, df_IB, data_vis_one_time_graph, i_exp, d, t))
+                        tasks.append((sgv, df_BB_panel, df_IB_panel, data_vis_one_time_graph, i_exp, d, t))
                         pass  # for
                     pass  # for
 
@@ -728,11 +731,11 @@ def main():
             for i_exp in experiments_indices_to_vis:
 
                 df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB)  # 数据表IB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -789,11 +792,11 @@ def main():
             for i_exp in experiments_indices_to_vis:
 
                 df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB)  # 数据表IB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -1665,11 +1668,11 @@ def main():
             for i_exp in experiments_indices_to_vis:
 
                 df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB)  # 数据表IB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -1724,11 +1727,11 @@ def main():
 
             for i_exp in experiments_indices_to_vis:
                 df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB)  # 数据表IB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
