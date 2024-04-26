@@ -146,27 +146,35 @@ def main():
 
         list_filepath_pkl_BB = list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl'))  # 获取实验组输出数据pkl格式之BB数据之文件列表
         for filepath_pkl_BB in list_filepath_pkl_BB:
-            df_BB = pd.read_pickle(filepath_pkl_BB)
-            num_agent = df_BB['id_agent'][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
-            df_BB_panel = df_BB.applymap(lambda x: x.flatten() if hasattr(x, 'flatten') else x)  # 压平二维数组
+            df_BB_original = pd.read_pickle(filepath_pkl_BB)
+            num_agent = df_BB_original['id_agent'][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
+            df_BB = df_BB_original.applymap(lambda x: x.flatten() if hasattr(x, 'flatten') else x)  # 压平二维数组
 
             ## 转换数据格式为numpy字符串格式
             list_columns_for_transform_datatype = [
-                v for i, v in enumerate(df_BB_panel.columns) if (
-                        df_BB_panel[v].dtype == np.dtype('object') and
-                        type(df_BB_panel[v][0]) == str
+                v for i, v in enumerate(df_BB.columns) if (
+                        df_BB[v].dtype == np.dtype('object')
+                        and type(df_BB[v][0]) == str
                 )
             ]
-            for i in range(df_BB_panel.__len__()):
-                df_BB_panel[list_columns_for_transform_datatype[0]][i] = np.str_(df_BB_panel[list_columns_for_transform_datatype[0]][i])  # BUG Pandas包警告
+            for i in range(df_BB.__len__()):
+                df_BB[list_columns_for_transform_datatype[0]][i] = np.str_(df_BB[list_columns_for_transform_datatype[0]][i])  # BUG Pandas包警告
 
+            ## 展平为面板形式
             list_columns_for_explode = [
-                v for i, v in enumerate(df_BB_panel.columns) if (
-                        df_BB_panel[v].dtype == np.dtype('object') and
-                        df_BB_panel[v][0].size == num_agent
+                v for i, v in enumerate(df_BB.columns) if (
+                        df_BB[v].dtype == np.dtype('object')
+                        and df_BB[v][0].size == num_agent
                 )
             ]  # 获取需要展平的列
-            df_BB_panel = df_BB_panel.explode(list_columns_for_explode)  # 展平，面板化数据框
+
+            df_BB_panel = df_BB.explode('id_agent')  # 只展开 'id_agent' 列
+            for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
+                if col != 'id_agent':
+                    df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack().reset_index(level=1, drop=True)
+                    pass  # if
+                pass  # for
+            df_BB_panel = df_BB_panel.reset_index(drop=True)  # 重置索引
 
             df_BB_panel.insert(0, 'id', range(len(df_BB_panel)))  # 添加id列
             df_BB_panel.insert(1, 'id_data', np.repeat(range(len(df_BB_panel) // num_agent), num_agent))  # 添加id_data列
@@ -224,33 +232,33 @@ def main():
 
         list_filepath_pkl_IB = list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
         for filepath_pkl_IB in list_filepath_pkl_IB:
-            df_IB = pd.read_pickle(filepath_pkl_IB)
-            df_IB_panel = deepcopy(df_IB)
+            df_IB_original = pd.read_pickle(filepath_pkl_IB)
+            df_IB = deepcopy(df_IB_original)
 
             ## 转换数据格式为numpy字符串格式
             list_columns_for_transform_datatype = [
-                v for i, v in enumerate(df_IB_panel.columns) if (
-                        df_IB_panel[v].dtype == np.dtype('object') and
-                        type(df_IB_panel[v][0]) == str
+                v for i, v in enumerate(df_IB.columns) if (
+                        df_IB[v].dtype == np.dtype('object')
+                        and type(df_IB[v][0]) == str
                 )
             ]
-            for i in range(df_IB_panel.__len__()):
-                df_IB_panel[list_columns_for_transform_datatype[0]][i] = np.str_(df_IB_panel[list_columns_for_transform_datatype[0]][i])  # BUG Pandas包警告
+            for i in range(df_IB.__len__()):
+                df_IB[list_columns_for_transform_datatype[0]][i] = np.str_(df_IB[list_columns_for_transform_datatype[0]][i])  # BUG Pandas包警告
 
             ## 转换信息列表为矩阵形式，插入数据框  #HACK 能否用现成的功能函数代替？
             list_columns_for_transform = [
-                v for i, v in enumerate(df_IB_panel.columns) if (
-                        df_IB_panel[v].dtype == np.dtype('object') and
-                        df_IB_panel[v][0].dtype == np.dtype('object')
+                v for i, v in enumerate(df_IB.columns) if (
+                        df_IB[v].dtype == np.dtype('object')
+                        and df_IB[v][0].dtype == np.dtype('object')
                 )
             ]
-            for v1 in list_columns_for_transform:  # BUG Pandas包警告
-                for i2 in range(df_IB_panel[v1].size):
+            for v1 in list_columns_for_transform:  # BUG Pandas包警告 #HACK 这个功能似乎无用
+                for i2 in range(df_IB[v1].size):
                     m = np.full((num_agent, num_agent), False)
-                    if df_IB_panel.loc[i2, v1] is []:
-                        df_IB_panel.loc[i2, v1] = np.nan
+                    if df_IB.loc[i2, v1] is []:
+                        df_IB.loc[i2, v1] = np.nan
                         continue
-                    for i3, v3 in enumerate(df_IB_panel.loc[i2, v1]):
+                    for i3, v3 in enumerate(df_IB.loc[i2, v1]):
                         if v3 is []:
                             m[i3, :] = False
                             continue
@@ -263,26 +271,35 @@ def main():
                                 pass  # if
                             pass  # for
                         pass  # for
-                    df_IB_panel[v1][i2] = m  # 赋值矩阵给数据框之元素，于数据框之相应的位置
+                    df_IB[v1][i2] = m  # 赋值矩阵给数据框之元素，于数据框之相应的位置
                     pass  # for
                 pass  # for
 
             ## 生成agent矩阵之坐标，以矩阵形式，插入数据框
             row_coord, col_coord = np.mgrid[0:num_agent:1, 0:num_agent:1]
-            df_IB_panel.insert(loc=df_IB_panel.columns.get_loc('id_agent') + 1, column="col", value=np.dtype('object'))
-            for i, _ in enumerate(df_IB_panel.col):
-                df_IB_panel.col[i] = col_coord.astype('int16')
-            df_IB_panel.insert(loc=df_IB_panel.columns.get_loc('id_agent') + 1, column="row", value=np.dtype('object'))
-            for i, _ in enumerate(df_IB_panel.row):
-                df_IB_panel.row[i] = row_coord.astype('int16')
+            df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="col", value=np.dtype('object'))
+            for i, _ in enumerate(df_IB.col):
+                df_IB.col[i] = col_coord.astype('int16')
+            df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="row", value=np.dtype('object'))
+            for i, _ in enumerate(df_IB.row):
+                df_IB.row[i] = row_coord.astype('int16')
 
+            ## 展平为面板形式
             list_columns_for_explode = [
-                v for i, v in enumerate(df_IB_panel.columns) if (
-                        df_IB_panel[v].dtype == np.dtype('object') and
-                        df_IB_panel[v][0].size == num_agent ** 2
+                v for i, v in enumerate(df_IB.columns) if (
+                        df_IB[v].dtype == np.dtype('object')
+                        and df_IB[v][0].size == num_agent ** 2
                 )
             ]  # 获取需要展平的列
-            df_IB_panel = df_IB_panel.explode(list_columns_for_explode).explode(list_columns_for_explode)  # 展平，面板化数据框
+
+            df_IB_panel = (df_IB.explode('id_agent')).explode('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
+            # df_IB_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
+            for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
+                if col != 'id_agent':
+                    df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
+                    pass  # if
+                pass  # for
+            df_IB_panel = df_IB_panel.reset_index(drop=True)  # 重置索引
 
             df_IB_panel.insert(0, 'id', range(len(df_IB_panel)))  # 添加id列
             df_IB_panel.insert(1, 'id_data', np.repeat(range(len(df_IB_panel) // num_agent ** 2), num_agent ** 2))  # 添加id_data列
