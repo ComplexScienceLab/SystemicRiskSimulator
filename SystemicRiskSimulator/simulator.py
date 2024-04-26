@@ -144,7 +144,7 @@ def simulator(config: dict):
         start_time = time.time()
         subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/transform_output_data_program.py')), sgv_base64])
         end_time = time.time()
-        logging.info(f"\n预处理实验结果程序运行总时长：{end_time - start_time} 秒。\n")
+        print(f"\n预处理实验结果程序运行总时长：{end_time - start_time} 秒。\n")
         pass  # if
 
     # %% 是否可视化结果程序
@@ -154,7 +154,7 @@ def simulator(config: dict):
         start_time = time.time()
         subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/visualize_data_program.py')), sgv_base64])
         end_time = time.time()
-        logging.info(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
+        print(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
         pass  # if
 
     # %% 清理

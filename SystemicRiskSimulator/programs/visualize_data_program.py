@@ -48,7 +48,8 @@ def main():
 
     from SystemicRiskSimulator.tools.tools import Tools
     if sgv['need_visualization']:
-        sgv['is_installed_packages_for_visualization'] = Tools._check_and_install_packages(sgv['visualization_packages'])  # 安装可视化所需的第三方工具包
+        visualization_packages = ['matplotlib', 'igraph', 'drawsvg', 'pymupdf', 'svglib', 'screeninfo', 'openpyxl']  # 可视化所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
+        is_installed_packages_for_visualization = Tools._check_and_install_packages(visualization_packages)  # 安装可视化所需的第三方工具包
 
     # %% [markdown] 预处理数据
 
@@ -66,9 +67,9 @@ def main():
     from reportlab.pdfbase import pdfmetrics
     import matplotlib.font_manager as fm
     # from matplotlib.font_manager import FontProperties
-    from openpyxl import load_workbook
-    from openpyxl.styles import PatternFill
-    from openpyxl.utils import get_column_letter
+    # from openpyxl import load_workbook
+    # from openpyxl.styles import PatternFill
+    # from openpyxl.utils import get_column_letter
 
     # %% ## NOTE 设置字体与绘图工具包的一些配置
 
@@ -527,11 +528,11 @@ def main():
                 sgv['vis']['max_IB_value_in_all_panel'] = df_IB_panel['A_IB'].max()
                 sgv['vis']['min_IB_value_in_all_panel'] = 0
 
-                ## 创建一个任务列表，其中每个任务都是一个元组，包含所有需要传递给函数的参数
-                tasks = []
+                ## 创建一个作业列表，其中每个作业都是一个元组，包含所有需要传递给函数的参数
+                works = []
                 for i, d in df_data_types.iterrows():
                     for t in range(sgv['vis']['num_time']):
-                        tasks.append((sgv, df_BB_panel, df_IB_panel, d, i_exp, t, i))
+                        works.append((sgv, df_BB_panel, df_IB_panel, d, i_exp, t, i))
                         pass  # for
                     pass  # for
 
@@ -539,11 +540,11 @@ def main():
                 if sgv['is_enable_multiprocessing']:  # 多进程并行处理
                     num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
                     with Pool(num_cores) as p:
-                        p.map(process_one_heatmap, tasks)
+                        p.map(process_one_heatmap, works)
                         pass  # with
                 else:  # 串行处理
-                    for i in range(len(tasks)):
-                        process_one_heatmap(tasks[i])
+                    for i in range(len(works)):
+                        process_one_heatmap(works[i])
                         pass  # for
 
                 pass  # for
@@ -661,8 +662,8 @@ def main():
                 sgv['vis']['max_IB_value_in_all_panel'] = df_IB_panel['A_IB'].max()
                 sgv['vis']['min_IB_value_in_all_panel'] = 0
 
-                ## 创建一个任务列表，其中每个任务都是一个元组，包含所有需要传递给函数的参数
-                tasks = []
+                ## 创建一个作业列表，其中每个作业都是一个元组，包含所有需要传递给函数的参数
+                works = []
                 for d in sgv['vis']['list_dataNames_for_graph_figs']:
                     ## 设置不同边集对应的属性
                     list_data_edgeTypes = [
@@ -700,7 +701,7 @@ def main():
                         data_vis_one_time_graph['vertices'] = pd.DataFrame()
                         data_vis_one_time_graph['edges'] = pd.DataFrame()
 
-                        tasks.append((sgv, df_BB_panel, df_IB_panel, data_vis_one_time_graph, i_exp, d, t))
+                        works.append((sgv, df_BB_panel, df_IB_panel, data_vis_one_time_graph, i_exp, d, t))
                         pass  # for
                     pass  # for
 
@@ -708,11 +709,11 @@ def main():
                 if sgv['is_enable_multiprocessing']:  # 多进程并行处理
                     num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
                     with Pool(num_cores) as p:
-                        p.map(process_one_graph, tasks)
+                        p.map(process_one_graph, works)
                         pass  # with
                 else:  # 串行处理
-                    for i in range(len(tasks)):
-                        process_one_graph(tasks[i])
+                    for i in range(len(works)):
+                        process_one_graph(works[i])
                         pass  # for
 
                 pass  # for  实验编号
@@ -1624,8 +1625,8 @@ def main():
                 sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
                 sgv['vis']['min_BB_value_in_all_panel'] = 0
 
-                ## 创建一个任务列表，其中每个任务都是一个元组，包含所有需要传递给函数的参数
-                tasks = []
+                ## 创建一个作业列表，其中每个作业都是一个元组，包含所有需要传递给函数的参数
+                works = []
                 for i in range(sgv['vis']['num_items_in_a_time_in_BB']):
                     for t in range(sgv['vis']['num_time']):
                         ## 初始化数据
@@ -1637,7 +1638,7 @@ def main():
                         data_vis_one_bank_BalanceSheet['recovers'] = pd.DataFrame(list_recover_data)
                         data_vis_one_bank_BalanceSheet['repays'] = pd.DataFrame(list_repay_data)
 
-                        tasks.append((sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
+                        works.append((sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
                         pass  # for
                     pass  # for
 
@@ -1645,11 +1646,11 @@ def main():
                 if sgv['is_enable_multiprocessing']:  # 多进程并行处理
                     num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
                     with Pool(num_cores) as p:
-                        p.map(process_one_balanceSheet, tasks)  # 使用多进程并行处理
+                        p.map(process_one_balanceSheet, works)  # 使用多进程并行处理
                         pass  # with
                 else:  # 串行处理
-                    for i in range(len(tasks)):
-                        process_one_balanceSheet(tasks[i])
+                    for i in range(len(works)):
+                        process_one_balanceSheet(works[i])
                         pass  # for
 
                 pass  # for  实验编号
