@@ -49,7 +49,6 @@ def main():
     sgv['experiments_running_time'] = 0  # 初始化实验组运行总时长
     sgv['export_data_running_time'] = 0  # 初始化导出数据运行总时长
 
-    sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
     model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
 
@@ -92,6 +91,9 @@ def main():
 
     else:
         ## #NOTE：串行处理
+
+        sgv['simulator_start_time'] = time.time()  # 记录串行运行模式下，模拟器开始运行时刻
+
         for i, para in parameters_works.iterrows():
             para = para.to_dict()  # 将参数数据框转换为字典
             # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
@@ -102,14 +104,10 @@ def main():
             fun_single_experiment_work(sgv, para, model)
             pass  # for
 
-        sgv['simulator_end_time'] = time.time()  # 记录模拟器结束运行时刻
-        sgv['simulator_running_time'] = sgv['simulator_end_time'] - sgv['simulator_start_time']  # 记录模拟器运行时长
+        sgv['simulator_end_time'] = time.time()  # 记录串行运行模式下，记录模拟器结束运行时刻
+        sgv['simulator_running_time'] = sgv['simulator_end_time'] - sgv['simulator_start_time']  # 记录串行运行模式下，模拟器运行时长
 
         logging.info(f"实验组结束。\n实验组运行总时长：{sgv['experiments_running_time']} 秒。\n导出数据运行总时长：{sgv['export_data_running_time']} 秒。\n模拟器运行总时长：{sgv['simulator_running_time']}秒。")
-
-        # sgv['experiments_end_time'] = 0  # 记录实验组结束运行时刻
-        # sgv['experiments_running_time'] = sgv['experiments_end_time'] - sgv['experiments_start_time']  # 记录实验组运行时长
-        # logging.info(f"实验组运行总的时长：{sgv['experiments_running_time']}秒。")
 
         ## 默认程序打开输出文件查看
         if sgv['is_auto_open_outputlog']:
