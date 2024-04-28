@@ -137,6 +137,16 @@ def simulator(config: dict):
 
         pass  # if
 
+    # %% 是否运作预处理实验结果程序
+    if sgv['schedule_operation']['预处理实验结果程序']:
+        sgv_pkl = pickle.dumps(sgv)
+        sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
+        start_time = time.time()
+        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/transform_output_data_program.py')), sgv_base64])
+        end_time = time.time()
+        print(f"\n预处理实验结果程序运行总时长：{end_time - start_time} 秒。\n")
+        pass  # if
+
     # %% 是否可视化结果程序
     if sgv['schedule_operation']['可视化结果程序']:
         sgv_pkl = pickle.dumps(sgv)
@@ -144,7 +154,7 @@ def simulator(config: dict):
         start_time = time.time()
         subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/visualize_data_program.py')), sgv_base64])
         end_time = time.time()
-        logging.info(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
+        print(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
         pass  # if
 
     # %% 清理

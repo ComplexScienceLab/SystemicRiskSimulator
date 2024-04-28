@@ -14,6 +14,9 @@ if sgv['need_visualization']:
     import matplotlib.gridspec as gridspec
     from matplotlib.colors import LinearSegmentedColormap
     import matplotlib.colors as colors
+    from openpyxl import load_workbook
+    from openpyxl.styles import PatternFill
+    from openpyxl.utils import get_column_letter
 
     pass  # if
 
