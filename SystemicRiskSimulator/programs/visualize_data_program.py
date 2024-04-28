@@ -14,8 +14,8 @@ Returns:
 # from SystemicRiskSimulator.external_packages import sys, pickle, base64, Pool, multiprocessing
 # from SystemicRiskSimulator.core.functions.fun_visualize_data import fun_visualize_data
 
-from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 from SystemicRiskSimulator.external_packages import platform, Path, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool, multiprocessing, warnings
+from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
 
 def main():
@@ -67,9 +67,9 @@ def main():
     from reportlab.pdfbase import pdfmetrics
     import matplotlib.font_manager as fm
     # from matplotlib.font_manager import FontProperties
-    # from openpyxl import load_workbook
-    # from openpyxl.styles import PatternFill
-    # from openpyxl.utils import get_column_letter
+    from openpyxl import load_workbook
+    from openpyxl.styles import PatternFill
+    from openpyxl.utils import get_column_letter
 
     # %% ## NOTE 设置字体与绘图工具包的一些配置
 
@@ -392,8 +392,8 @@ def main():
 
         ## 依次读取面板形式的CSV格式的文件，预处理每次实验
         for i_exp in experiments_indices:
-            csv_BB_00 = pd.read_csv(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.csv'))
-            csv_IB_00 = pd.read_csv(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.csv'))
+            csv_BB_00 = pd.read_csv(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.csv'))
+            csv_IB_00 = pd.read_csv(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.csv'))
 
             ## 预处理数据表
 
@@ -444,7 +444,7 @@ def main():
 
         print("读取面板形式的PKL格式的文件")
 
-        list_fig_files = list(sgv['folderpath_plots'].glob('*_panel_*.pkl'))  # 获取实验组输出数据pkl格式之文件列表
+        list_fig_files = list(sgv['folderpath_experiments_output_data'].glob('*_panel_*.pkl'))  # 获取实验组输出数据pkl格式之文件列表
 
         ## 排序，优先按照银行名称，其次按照时间。
         match_pattern_in_vertical_direction = r'(?<=[IB]B_panel_exp=).+?(?=[(\.pkl)])'
@@ -489,8 +489,8 @@ def main():
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
@@ -562,8 +562,8 @@ def main():
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
@@ -625,8 +625,8 @@ def main():
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
@@ -731,8 +731,8 @@ def main():
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
@@ -792,8 +792,8 @@ def main():
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
@@ -1668,8 +1668,8 @@ def main():
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
@@ -1727,8 +1727,8 @@ def main():
             Tools._delete_and_recreate_folder(sgv['folderpath_visualize_banksStates_table'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_plots'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_BB_id = len(df_BB_panel)  # 数据表BB之行数
@@ -1810,9 +1810,9 @@ def main():
 
                 df_BankStates = df_BB_panel[columnsName_ext]  # 提取所需列
 
-                df_BankStates.to_excel(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'), index=False)  # 将数据写入新的 Excel 文件
+                df_BankStates.to_excel(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_panel_exp=' + str(i_exp) + '.xlsx'), index=False)  # 将数据写入新的 Excel 文件
 
-                wb_BB_panel = load_workbook(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 使用 openpyxl 打开新的 Excel 文件
+                wb_BB_panel = load_workbook(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_panel_exp=' + str(i_exp) + '.xlsx'))  # 使用 openpyxl 打开新的 Excel 文件
                 sheet_BB_panel = wb_BB_panel.active
 
                 sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
@@ -1837,7 +1837,7 @@ def main():
                         if cell.value == True:
                             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
 
-                wb_BB_panel.save(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_exp=' + str(i_exp) + '.xlsx'))  # 保存 Excel 文件
+                wb_BB_panel.save(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_panel_exp=' + str(i_exp) + '.xlsx'))  # 保存 Excel 文件
 
                 pass  # for
 
