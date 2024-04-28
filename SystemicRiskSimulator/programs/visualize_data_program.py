@@ -601,7 +601,7 @@ def main():
                 order_of_paging_in_horizontal_and_vertical_direction = (None, 1)
                 order_of_match_pattern_in_horizontal_and_vertical_direction = (match_pattern_of_data_name, match_pattern_of_name_time)
 
-                list_fig_files = glob.glob(str(sgv['folderpath_plots_single_heatmaps'] / f'*exp={i_exp}*.pdf'))  # 获取所有当次实验文件列表
+                list_fig_files = glob.glob(str(sgv['folderpath_plots_single_heatmaps'] / f'*exp={i_exp}+*.pdf'))  # 获取所有当次实验文件列表
 
                 merged_pdf = merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction, order_of_paging_in_horizontal_and_vertical_direction, order_of_match_pattern_in_horizontal_and_vertical_direction, list_fig_files, i_exp)
 
