@@ -66,14 +66,16 @@ class Executer:
             sgv (dict): 模拟器全局变量
 
         """
+
+        # 深拷贝一份作为上一回合的数据
+        A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
+
         sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
         sgv['phase'] = 1  # 逐相复位（起始为1）
         # sgv['process_name'] = process_name
         logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
         content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
-        # 深拷贝一份作为上一回合的数据
-        A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
 
         return A, A_last, sgv
 
