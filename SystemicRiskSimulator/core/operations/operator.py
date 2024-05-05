@@ -126,7 +126,7 @@ class Operator:
                 f"logger_{sgv['id_experiment']}",
             )
 
-            sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+            # sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
             # modelEntity.execute(A, A_data, para, sgv)
             content_Model.model_content(A, A_last, A_data, para, sgv)

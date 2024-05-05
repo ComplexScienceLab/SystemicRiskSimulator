@@ -79,7 +79,10 @@ class AttributeComponent:
             self.other = dict()
             for k, v in attribute.items():
                 if not (k == "id" or k == "entity_name" or k == "text_name" or k == "entity_type" or k == "structure_type" or k == "container_type" or k == "process_type" or k == "content_type" or k == "content_name"):
-                    self.other.update({k: v})
+                    for kk, vv in v.items():
+                        self.other.update({kk: vv})
+                        pass  # for
+                    # self.other.update({k: v})
                     pass  # if
                 pass  # for
         else:
