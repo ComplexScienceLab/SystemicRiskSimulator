@@ -1,7 +1,7 @@
 """
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
-from SystemicRiskSimulator.external_packages import Path, time, logging, deepcopy, Any, pickle, pd, Optional
+from SystemicRiskSimulator.external_packages import Path, time, logging, deepcopy, Any, pickle, np, pd, Optional
 from SystemicRiskSimulator.tools.logging_tools import log_message
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
@@ -114,7 +114,7 @@ class Operator:
 
             content_Finance = modelEntity.content['content_finance']()
             if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
-                content_Agents = modelEntity.content['content_agents'](para['Strategy_default'])  # BUG 不能这样代入参数
+                content_Agents = modelEntity.content['content_agents'](np.array(para['Strategy_default']))  # BUG 不能这样代入参数
                 content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
             else:
                 content_Model = modelEntity.content['content_model'](content_Finance)
