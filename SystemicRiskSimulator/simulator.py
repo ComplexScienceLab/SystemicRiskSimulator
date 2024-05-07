@@ -87,9 +87,14 @@ def simulator(config: dict):
 
         ## 设置日志
 
-        for file in Path(sgv['folderpath_experiments_output_log']).glob("*.txt"):
-            file.unlink()  # 删除所有的 *.txt 文件（日志文件）
-            pass  # for
+        # 删除原有的主日志文件
+        for file in Path(sgv['folderpath_experiments_output_log']).glob("outputlog.txt"):
+            file.unlink()
+
+        # 删除原有的各子实验日志文件，但是保留作业状态标记日志文件。
+        for file in Path(sgv['folderpath_experiments_output_log']).glob("outputlog_*exp.txt"):
+            file.unlink()
+
         logger = logging.getLogger()
         logger.setLevel(sgv['test_logging'])
 

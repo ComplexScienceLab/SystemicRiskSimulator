@@ -1,7 +1,7 @@
 """
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
-from SystemicRiskSimulator.external_packages import Path, time, logging, deepcopy, Any, pickle, np, pd, Optional
+from SystemicRiskSimulator.external_packages import Path, time, os, logging, deepcopy, json, Any, pickle, np, pd, Optional
 from SystemicRiskSimulator.tools.logging_tools import log_message
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
@@ -38,6 +38,53 @@ class Operator:
         if sgv['init_parameters_method'] == "import data":
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
+
+                ## 统计实验组作业完成情况 #TODO 后续可以考虑用 SQLite 数据库实现。
+                # 列出实验日志文件夹内的所有文件名为 `f"outputlog_.*_DOING.txt"` 与 `f"outputlog_.*_DONE.txt"` 的文件，分别用一个列表存储
+                list_idsExp_DOING = []
+                list_idsExp_DONE = []
+                for file in os.listdir(sgv['folderpath_experiments_output_log']):
+                    if file.endswith("_DOING.txt") and file.startswith("outputlog_"):
+                        list_idsExp_DOING.append(file)
+                    elif file.endswith("_DONE.txt") and file.startswith("outputlog_"):
+                        list_idsExp_DONE.append(file)
+                        pass  # if
+                    pass  # for
+                # 读取文件列表，获取实验组作业完成情况
+                list_idsExp_DOING = [int(file.split("_")[1]) for file in list_idsExp_DOING]  # 之前运行中被中断的实验组 id
+                list_idsExp_DONE = [int(file.split("_")[1]) for file in list_idsExp_DONE]  # 已完成的实验组 id
+                list_idsExp_RAW = []  # 未运行过的实验组 id
+                for i in range(1, len(parameters_works) + 1):
+                    if i not in list_idsExp_DOING and i not in list_idsExp_DONE:
+                        list_idsExp_RAW.append(i)
+                        pass  # if
+                    pass  # for
+                list_idsExp_REGISTER = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, len(parameters_works) + 1))  # 注册过的计划运行的实验组 id
+                list_idsExp_TODO = []  # 实际上需要运行的实验组 id
+                for i in range(1, len(parameters_works) + 1):
+                    if i in list_idsExp_REGISTER and i not in list_idsExp_DONE:
+                        list_idsExp_TODO.append(i)
+                        pass  # if
+                    pass  # for
+
+                # 新建一个 json 文件，记录实验组作业完成情况。包括未开始的实验组 id 及其数量、正在进行但是被中断的实验组 id 及其数量、已完成的实验组 id 及其数量、完成率、中断率。
+                with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+                    json.dump({
+                        "计划运行的实验组 id": list_idsExp_TODO,
+                        "未运行过的实验组 id": list_idsExp_RAW,
+                        "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                        "已完成的实验组 id": list_idsExp_DONE,
+                        "完成率": len(list_idsExp_DONE) / len(parameters_works),
+                        "中断率": len(list_idsExp_DOING) / len(parameters_works),
+                    }, f)
+                    logging.info("实验组开始运行前，实验组作业完成状态情况如下：\n" + str({
+                        "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                        "完成率": len(list_idsExp_DONE) / len(parameters_works),
+                        "中断率": len(list_idsExp_DOING) / len(parameters_works),
+                    }))
+                    pass  # with
+                sgv['list_idsExp_TODO'] = list_idsExp_TODO
+                pass  # with
             Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
         elif sgv['init_parameters_method'] == "set manually":  # #HACK 这个选项几乎被废弃了。可以删除。
             parameters_works = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
@@ -147,6 +194,17 @@ class Operator:
         Returns:
             A, A_data, sgv, para
         """
+
+        ## 记录本次实验作业的完成状态为 "DOING"
+        if os.path.exists(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DONE.txt")):  # 查看是否有标记文件 "DONE"。如果有，则直接重命名标记文件为 "DOING"
+            os.rename(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DONE.txt"), Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DOING.txt"))
+        else:  # 如果没有标记文件 "DONE"
+            if not os.path.exists(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DOING.txt")):  # 如果不存在标记文件 "DOING"，则新建一个
+                with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DOING.txt"), 'w') as f:
+                    pass  # with
+                pass  # if
+            pass  # if
+
         modelEntity = model.content  # 获取节点实体对应的模型实体
 
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
@@ -173,7 +231,7 @@ class Operator:
 
         log_message(
             "                    初始化数据",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -253,6 +311,21 @@ class Operator:
 
         sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
+
+        ## 记录本次实验作业的完成状态为 "DONE"
+        if os.path.exists(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DOING.txt")):  # 查看是否有标记文件 "DOING"，如果有标记文件 "DOING"，则直接重命名标记文件为 "DONE"
+            os.rename(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DOING.txt"), Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DONE.txt"))
+        else:  # 如果没有标记文件 "DOING"
+            if not os.path.exists(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DONE.txt")):  # 如果不存在标记文件 "DONE"，则新建一个
+                with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DONE.txt"), 'w') as f:
+                    pass  # with
+                pass  # if
+            pass  # if
+
+        # 新建一个文件，记录本次实验作业的完成状态为 "DONE"，如果已经存在，则保留之
+        if not os.path.exists(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DONE.txt")):
+            os.rename(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DOING.txt"), Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_DONE.txt"))
+            pass  # if
 
         log_message(
             "本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n",
