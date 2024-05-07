@@ -1,8 +1,13 @@
+"""
+实验组模拟程序。用于运行实验组。
+
+#BUG 如果运行的文件批量太大，可能存在内存泄露的问题。建议每次运行的文件批量不要超过 10000 个。
+"""
+
 # -*- coding: utf-8 -*-
-import time
+
 
 import pandas
-
 from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, base64, pickle, multiprocessing, Pool
 from SystemicRiskSimulator.core.operations.operator import Operator
 
