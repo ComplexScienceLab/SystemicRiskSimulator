@@ -169,7 +169,7 @@ class Operator:
 
             log_message(
                 "    开始执行模型内容：",
-                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
             )
 
@@ -220,7 +220,7 @@ class Operator:
 
         log_message(
             "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n相关实验参数：" + str(para) + "\n",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -268,7 +268,7 @@ class Operator:
 
         log_message(
             "    开始执行模型内容：",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -288,7 +288,7 @@ class Operator:
 
         log_message(
             "    结束执行模型内容。",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -303,7 +303,7 @@ class Operator:
 
         log_message(
             "                    导出数据",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -329,7 +329,7 @@ class Operator:
 
         log_message(
             "本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
