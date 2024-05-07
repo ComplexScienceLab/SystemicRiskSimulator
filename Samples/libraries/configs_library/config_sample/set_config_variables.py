@@ -16,7 +16,7 @@ set_config_variables = dict(
     ),
     init_data_method=r"import data",  # 初始化数据方式。初始化方式有如下："import data"、"set manually"、"randomly"、"only init"。默认"import data"；
     init_parameters_method=r"import data",  # 初始化参数方式。初始化方式有如下："import data"、"set manually"。默认"import data"；
-    type_of_experiments_foldername=r"set manually",  # 设置实验文件夹命名方式。默认"set manually"；
+    type_of_experiments_foldername=r"manually",  # 设置实验文件夹命名方式。默认"manually"；
     foldername_prefix_experiments=r"样例演示",  # 手动设置初始生成的实验文件夹前缀名。默认"default"；
     is_datetime=True,  # 是否使用日期时间作为实验文件夹名称的一部分。默认 True；
     foldername_outputData=r"SystemicRiskSimulator",  # 输出数据所在工程文件夹名称
