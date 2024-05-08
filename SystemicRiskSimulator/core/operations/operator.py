@@ -42,7 +42,7 @@ class Operator:
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
 
-                ## 统计实验组作业完成情况
+                ## 统计实验组作业完成情况 #BUG  如果实验组作业数量很多，那么容易导致内存溢出导致报错！
                 time_start_统计实验组作业情况 = time.time()  # #DEBUG
                 # 创建 SQLite 数据库并初始化表格
                 conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
