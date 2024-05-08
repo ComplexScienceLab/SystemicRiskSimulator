@@ -86,7 +86,7 @@ def main():
         if sgv['is_enable_multiprocessing']:
             with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
                 for i, para in parameters_works.iterrows():
-                    with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt"), 'r') as f_sub:
+                    with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt"), 'r') as f_sub:  #BUG 如果前一次实验被删除了，那么这里会因为文件缺失而报错
                         f.write(f_sub.read())
                         pass  # with
                     pass  # for

@@ -38,10 +38,12 @@ class Operator:
 
         ## 设置参数作业列表
         if sgv['init_parameters_method'] == "import data":
+            time_start_导入参数数据 = time.time()  # #DEBUG
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
 
                 ## 统计实验组作业完成情况
+                time_start_统计实验组作业情况 = time.time()  # #DEBUG
                 # 创建 SQLite 数据库并初始化表格
                 conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                 cur = conn.cursor()
@@ -85,10 +87,16 @@ class Operator:
 
                 sgv['list_idsExp_TODO'] = list_idsExp_TODO
 
+                time_end_统计实验组作业情况 = time.time()  # #DEBUG
+                logging.info(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")
+
                 # 关闭数据库连接
                 conn.close()
-
                 pass  # with
+
+            time_end_导入参数数据 = time.time()  # #DEBUG
+            logging.info(f"导入参数数据完成，用时：{time_end_导入参数数据 - time_start_导入参数数据 - (time_end_统计实验组作业情况 - time_start_统计实验组作业情况)} 秒。")
+
             Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
         elif sgv['init_parameters_method'] == "set manually":  # #HACK 这个选项几乎被废弃了。可以删除。
             parameters_works = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
