@@ -1,7 +1,9 @@
 """
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
-from SystemicRiskSimulator.external_packages import Path, time, logging, deepcopy, Any, pickle, pd, Optional
+import sqlite3
+
+from SystemicRiskSimulator.external_packages import Path, time, os, logging, deepcopy, json, Any, pickle, np, pd, Optional
 from SystemicRiskSimulator.tools.logging_tools import log_message
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
@@ -36,8 +38,73 @@ class Operator:
 
         ## 设置参数作业列表
         if sgv['init_parameters_method'] == "import data":
+            time_start_导入参数数据 = time.time()  # #DEBUG
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
+
+                ## 统计实验组作业完成情况 #BUG  如果实验组作业数量很多，那么容易导致内存溢出导致报错！
+                time_start_统计实验组作业情况 = time.time()  # #DEBUG
+                # 创建 SQLite 数据库并初始化表格
+                conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                cur = conn.cursor()
+                cur.execute("""CREATE TABLE IF NOT EXISTS experiments
+                                    (id INTEGER PRIMARY KEY, status TEXT)""")
+                conn.commit()
+
+                # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
+                if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+                    cur.execute("UPDATE experiments SET status = 'RAW'")
+                    conn.commit()
+                    pass
+
+                # 检查实验组作业完成状态
+                cur.execute("SELECT id, status FROM experiments")
+                rows = cur.fetchall()
+
+
+                list_idsExp_DOING = []
+                list_idsExp_DONE = []
+                list_idsExp_RAW = []
+                for row in rows:
+                    exp_id, status = row
+                    if status == "DOING":
+                        list_idsExp_DOING.append(exp_id)
+                    elif status == "DONE":
+                        list_idsExp_DONE.append(exp_id)
+                    else:
+                        list_idsExp_RAW.append(exp_id)
+
+                list_idsExp_REGISTER = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, len(parameters_works) + 1))
+                list_idsExp_TODO = [i for i in list_idsExp_REGISTER if i not in list_idsExp_DONE]
+
+                # 保存实验组作业完成状态信息
+                with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+                    json.dump({
+                        "计划运行的实验组 id": list_idsExp_TODO,
+                        "未运行过的实验组 id": list_idsExp_RAW,
+                        "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                        "已完成的实验组 id": list_idsExp_DONE,
+                        "完成率": len(list_idsExp_DONE) / len(parameters_works),
+                        "中断率": len(list_idsExp_DOING) / len(parameters_works),
+                    }, f)
+                    logging.info("实验组开始运行前,实验组作业完成状态情况如下:\n" + str({
+                        "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                        "完成率": len(list_idsExp_DONE) / len(parameters_works),
+                        "中断率": len(list_idsExp_DOING) / len(parameters_works),
+                    }))
+
+                sgv['list_idsExp_TODO'] = list_idsExp_TODO
+
+                time_end_统计实验组作业情况 = time.time()  # #DEBUG
+                logging.info(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")
+
+                # 关闭数据库连接
+                conn.close()
+                pass  # with
+
+            time_end_导入参数数据 = time.time()  # #DEBUG
+            logging.info(f"导入参数数据完成，用时：{time_end_导入参数数据 - time_start_导入参数数据 - (time_end_统计实验组作业情况 - time_start_统计实验组作业情况)} 秒。")
+
             Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
         elif sgv['init_parameters_method'] == "set manually":  # #HACK 这个选项几乎被废弃了。可以删除。
             parameters_works = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
@@ -114,7 +181,7 @@ class Operator:
 
             content_Finance = modelEntity.content['content_finance']()
             if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
-                content_Agents = modelEntity.content['content_agents'](para['Strategy_default'])  # BUG 不能这样代入参数
+                content_Agents = modelEntity.content['content_agents'](np.array(para['Strategy_default']))  # BUG 不能这样代入参数
                 content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
             else:
                 content_Model = modelEntity.content['content_model'](content_Finance)
@@ -122,11 +189,11 @@ class Operator:
 
             log_message(
                 "    开始执行模型内容：",
-                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
             )
 
-            sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+            # sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
             # modelEntity.execute(A, A_data, para, sgv)
             content_Model.model_content(A, A_last, A_data, para, sgv)
@@ -147,6 +214,15 @@ class Operator:
         Returns:
             A, A_data, sgv, para
         """
+
+        ## 记录本次实验作业的完成状态为 "DOING"
+        # 更新实验组作业状态为 "DOING"
+        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+        cur = conn.cursor()
+        cur.execute("INSERT OR REPLACE INTO experiments (id, status) VALUES (?, 'DOING')", (sgv['id_experiment'],))
+        conn.commit()
+        conn.close()
+
         modelEntity = model.content  # 获取节点实体对应的模型实体
 
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
@@ -162,7 +238,7 @@ class Operator:
 
         log_message(
             "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n相关实验参数：" + str(para) + "\n",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -173,7 +249,7 @@ class Operator:
 
         log_message(
             "                    初始化数据",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -210,7 +286,7 @@ class Operator:
 
         log_message(
             "    开始执行模型内容：",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -230,7 +306,7 @@ class Operator:
 
         log_message(
             "    结束执行模型内容。",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -245,7 +321,7 @@ class Operator:
 
         log_message(
             "                    导出数据",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 
@@ -254,9 +330,17 @@ class Operator:
         sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
+        ## 记录本次实验作业的完成状态为 "DONE"
+        # 更新实验组作业状态为 "DONE"
+        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+        c = conn.cursor()
+        c.execute("UPDATE experiments SET status = 'DONE' WHERE id = ?", (sgv['id_experiment'],))
+        conn.commit()
+        conn.close()
+
         log_message(
             "本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}.txt"),
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
 

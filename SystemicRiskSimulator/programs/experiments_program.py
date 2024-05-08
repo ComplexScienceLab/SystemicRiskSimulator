@@ -1,8 +1,13 @@
+"""
+实验组模拟程序。用于运行实验组。
+
+#BUG 如果运行的文件批量太大，可能存在内存泄露的问题。建议每次运行的文件批量不要超过 10000 个。
+"""
+
 # -*- coding: utf-8 -*-
-import time
+
 
 import pandas
-
 from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, base64, pickle, multiprocessing, Pool
 from SystemicRiskSimulator.core.operations.operator import Operator
 
@@ -49,7 +54,6 @@ def main():
     sgv['experiments_running_time'] = 0  # 初始化实验组运行总时长
     sgv['export_data_running_time'] = 0  # 初始化导出数据运行总时长
 
-
     model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
 
     if sgv['is_enable_multiprocessing']:
@@ -82,7 +86,7 @@ def main():
         if sgv['is_enable_multiprocessing']:
             with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
                 for i, para in parameters_works.iterrows():
-                    with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}.txt"), 'r') as f_sub:
+                    with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt"), 'r') as f_sub:  #BUG 如果前一次实验被删除了，那么这里会因为文件缺失而报错
                         f.write(f_sub.read())
                         pass  # with
                     pass  # for
@@ -149,8 +153,8 @@ def fun_single_experiment_work(sgv: dict, para: pandas.Series, model: dict):
 
     """
 
-    if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):  # 如果没有设置要运行的实验编号列表，或者当前实验编号在要运行的实验编号列表中，那么继续。
-
+    # if (sgv['list_idsExperiment_to_run'] is None) or (sgv['id_experiment'] in sgv['list_idsExperiment_to_run']):  # 如果没有设置要运行的实验编号列表，或者当前实验编号在要运行的实验编号列表中，那么继续。
+    if sgv['id_experiment'] in sgv['list_idsExp_TODO']:  # 如果当前实验编号在实际上需要运行的实验组 id 列表中，那么继续。 #TODO 考虑移动到 Operator.operate_installing() 函数中
         ## 进行实验
         if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
             ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型
