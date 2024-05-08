@@ -137,34 +137,6 @@ def main():
 
         pass  # if
 
-    # ## 统计实验组作业完成情况
-    # # 列出实验日志文件夹内的所有文件名为 `f"outputlog_.*_DOING.txt"` 与 `f"outputlog_.*_DONE.txt"` 的文件，分别用一个列表存储
-    # list_outputlog_DOING = []
-    # list_outputlog_DONE = []
-    # for file in os.listdir(sgv['folderpath_experiments_output_log']):
-    #     if file.startswith("outputlog_") and file.endswith("_DOING.txt"):
-    #         list_outputlog_DOING.append(file)
-    #     elif file.startswith("outputlog_") and file.endswith("_DONE.txt"):
-    #         list_outputlog_DONE.append(file)
-    #         pass  # if
-    #     pass  # for
-    #
-    # # 读取文件列表，获取实验组作业完成情况
-    # list_outputlog_DOING = [int(file.split("_")[1]) for file in list_outputlog_DOING]
-    # list_outputlog_DONE = [int(file.split("_")[1]) for file in list_outputlog_DONE]
-    # list_outputlog_TODO = [i for i in range(1, len(parameters_works) + 1) if i not in list_outputlog_DOING and i not in list_outputlog_DONE]
-    #
-    # # 新建一个 json 文件，记录实验组作业完成情况。包括未开始的实验组 id 及其数量、正在进行但是被中断的实验组 id 及其数量、已完成的实验组 id 及其数量、完成率、中断率。
-    # with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_works_states.json"), 'w') as f:
-    #     json.dump({
-    #         "未开始的实验组 id": list_outputlog_TODO,
-    #         "正在进行但是被中断的实验组 id": list_outputlog_DOING,
-    #         "已完成的实验组 id": list_outputlog_DONE,
-    #         "完成率": len(list_outputlog_DONE) / len(parameters_works),
-    #         "中断率": len(list_outputlog_DOING) / len(parameters_works),
-    #     }, f)
-    #     pass  # with
-
     pass  # main
 
 
