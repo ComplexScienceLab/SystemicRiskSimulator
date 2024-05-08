@@ -1,9 +1,8 @@
 """
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
-import sqlite3
 
-from SystemicRiskSimulator.external_packages import Path, time, os, logging, deepcopy, json, Any, pickle, np, pd, Optional
+from SystemicRiskSimulator.external_packages import Path, time, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional
 from SystemicRiskSimulator.tools.logging_tools import log_message
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
@@ -42,25 +41,35 @@ class Operator:
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
 
-                ## 统计实验组作业完成情况 #BUG  如果实验组作业数量很多，那么容易导致内存溢出导致报错！
+                ## 创建或者连接 SQLite 数据库，统计实验组作业完成情况 #BUG  如果实验组作业数量很多，那么容易导致内存溢出导致报错！
                 time_start_统计实验组作业情况 = time.time()  # #DEBUG
-                # 创建 SQLite 数据库并初始化表格
-                conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-                cur = conn.cursor()
-                cur.execute("""CREATE TABLE IF NOT EXISTS experiments
+                # 如果是首次运行，那么创建数据库并初始化表格
+                if not os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
+                    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                    c = conn.cursor()
+                    c.execute("""CREATE TABLE IF NOT EXISTS experiments
                                     (id INTEGER PRIMARY KEY, status TEXT)""")
-                conn.commit()
+                    conn.commit()
+                    # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
+                    for i in range(1, len(parameters_works) + 1):
+                        c.execute("INSERT INTO experiments (id, status) VALUES (?, ?)", (i, "RAW"))
+                else:
+                    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                    c = conn.cursor()
+                    # c.execute("""CREATE TABLE IF NOT EXISTS experiments
+                    #                     (id INTEGER PRIMARY KEY, status TEXT)""")
+                    # conn.commit()
+                    pass
 
                 # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
                 if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-                    cur.execute("UPDATE experiments SET status = 'RAW'")
+                    c.execute("UPDATE experiments SET status = 'RAW'")
                     conn.commit()
                     pass
 
                 # 检查实验组作业完成状态
-                cur.execute("SELECT id, status FROM experiments")
-                rows = cur.fetchall()
-
+                c.execute("SELECT id, status FROM experiments")
+                rows = c.fetchall()
 
                 list_idsExp_DOING = []
                 list_idsExp_DONE = []
@@ -92,8 +101,7 @@ class Operator:
                         "完成率": len(list_idsExp_DONE) / len(parameters_works),
                         "中断率": len(list_idsExp_DOING) / len(parameters_works),
                     }))
-
-                sgv['list_idsExp_TODO'] = list_idsExp_TODO
+                    pass  # with
 
                 time_end_统计实验组作业情况 = time.time()  # #DEBUG
                 logging.info(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")
@@ -139,7 +147,7 @@ class Operator:
         ## 导出配置数据
         Collector.export_config_data(sgv)
 
-        return sgv, parameters_works, EntityManager.mainModelInstanceEntities
+        return sgv, list_idsExp_TODO, parameters_works, EntityManager.mainModelInstanceEntities
 
         pass  # function
 
@@ -218,8 +226,8 @@ class Operator:
         ## 记录本次实验作业的完成状态为 "DOING"
         # 更新实验组作业状态为 "DOING"
         conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-        cur = conn.cursor()
-        cur.execute("INSERT OR REPLACE INTO experiments (id, status) VALUES (?, 'DOING')", (sgv['id_experiment'],))
+        c = conn.cursor()
+        c.execute("INSERT OR REPLACE INTO experiments (id, status) VALUES (?, 'DOING')", (sgv['id_experiment'],))
         conn.commit()
         conn.close()
 
@@ -237,7 +245,7 @@ class Operator:
         # sgv['A_data'] = None
 
         log_message(
-            "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n相关实验参数：" + str(para) + "\n",
+            "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
             Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
             f"logger_{sgv['id_experiment']}",
         )
