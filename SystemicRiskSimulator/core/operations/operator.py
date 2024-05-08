@@ -51,9 +51,17 @@ class Operator:
                                     (id INTEGER PRIMARY KEY, status TEXT)""")
                 conn.commit()
 
+                # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
+                if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+                    cur.execute("UPDATE experiments SET status = 'RAW'")
+                    conn.commit()
+                    pass
+
                 # 检查实验组作业完成状态
                 cur.execute("SELECT id, status FROM experiments")
                 rows = cur.fetchall()
+
+
                 list_idsExp_DOING = []
                 list_idsExp_DONE = []
                 list_idsExp_RAW = []
