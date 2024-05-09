@@ -84,14 +84,14 @@ def main():
         # sgv['id_experiment'] = 0  # 设定当前实验编号
         works = []
         for i, para in parameters_works_TASK.iterrows():
-            exp_id = parameters_works_TASK.loc[i, 'exp_id']  # 获取当前实验编号
+            exp_id = int(parameters_works_TASK.loc[i, 'exp_id'])  # 获取当前实验编号
             work = (exp_id, sgv, para, model)
             works.append(work)
             pass  # for
 
         ## 并行运行实验作业
         with Pool(num_cores) as p:
-            p.imap(fun_single_experiment_work, works)
+            p.starmap(fun_single_experiment_work, works)
             pass  # with
 
         ## 并行处理之后，读取各个实验日志文件之内容追加到主进程日志文件之内容
@@ -117,10 +117,9 @@ def main():
             # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
             model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
             sgv['id_experiment'] = i + 1  # 设定当前实验编号
-            work = (sgv['id_experiment'], sgv, para, model)
 
             ## 运行一次实验作业
-            fun_single_experiment_work(work)
+            fun_single_experiment_work(sgv['id_experiment'], sgv, para, model)
             pass  # for
 
         sgv['simulator_end_time'] = time.time()  # 记录串行运行模式下，记录模拟器结束运行时刻
@@ -155,29 +154,19 @@ def main():
     pass  # main
 
 
-def fun_single_experiment_work(args):
+def fun_single_experiment_work(exp_id: int, sgv_original: dict, para: pandas.Series, model: dict):
     """
     实验模拟程序。用于运行单个实验。
 
-    实验作业参数元组包括：
-
-    - args[0]：exp_id，实验编号
-
-    - args[1]：sgv，模拟器全局变量
-
-    - args[2]：para，参数作业数据框
-
-    - args[3]：model，模型集字典
-
     Args:
-        args (tuple): 实验作业参数元组
+        exp_id (int): 实验编号
+        sgv_original (dict): 模拟器全局变量（原始的）
+        para (pandas.Series): 实验参数
+        model (dict): 模型
 
     Returns:
         None
     """
-
-    exp_id, sgv_original, para, model = args
-
     sgv = deepcopy(sgv_original)  # 复制全局变量，保证不同实验的全局变量的独立性
     sgv['id_experiment'] = exp_id  # 设定当前实验编号
 
