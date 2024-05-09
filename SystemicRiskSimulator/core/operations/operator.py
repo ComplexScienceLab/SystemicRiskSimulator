@@ -198,6 +198,7 @@ class Operator:
                     "    开始执行模型内容：",
                     Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                     f"logger_{sgv['id_experiment']}",
+                    is_enable_multiprocessing=sgv['is_enable_multiprocessing']
                 )
 
             # sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
@@ -248,6 +249,7 @@ class Operator:
                 "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing=sgv['is_enable_multiprocessing']
             )
 
         ## 初始化 agents 数据
@@ -260,6 +262,7 @@ class Operator:
                 "                    初始化数据",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing=sgv['is_enable_multiprocessing']
             )
 
         # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
@@ -298,6 +301,7 @@ class Operator:
                 "    开始执行模型内容：",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing=sgv['is_enable_multiprocessing']
             )
 
         sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
@@ -319,6 +323,7 @@ class Operator:
                 "    结束执行模型内容。",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing=sgv['is_enable_multiprocessing']
             )
 
         sgv['is_continue_process'] = False  # 不再继续运行过程
@@ -335,6 +340,7 @@ class Operator:
                 "                    导出数据",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing=sgv['is_enable_multiprocessing']
             )
 
         Collector.export_agent_data(A_data, sgv)
@@ -355,6 +361,7 @@ class Operator:
                 "本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing=sgv['is_enable_multiprocessing']
             )
 
         pass  # function
