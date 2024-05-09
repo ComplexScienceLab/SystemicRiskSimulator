@@ -48,6 +48,11 @@ def main():
         sgv, list_idsExp_TODO, parameters_works, models = Operator.operate_installing(sgv, parameters_works)  # #BUG 这里的 parameters_works 变量没有定义
         pass  # if
 
+    ##
+    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+    c = conn.cursor()
+    c.execute("SELECT id,status FROM experiments WHERE status='TODO'")
+
     ## 运行实验组
     logging.debug("\n\n\n实验组开始：\n\n")
 
@@ -79,24 +84,25 @@ def main():
         # sgv['id_experiment'] = 0  # 设定当前实验编号
         works = []
         for i, para in parameters_works_TODO.iterrows():
-            sgv_new = deepcopy(sgv)  # 复制全局变量  #BUG 在这里由于批次过大， 容易导致内存溢出 #NOW 如果需要在内存中复制，考虑运行完之后就删除。
-            sgv_new['id_experiment'] = i + 1  # 设定当前实验编号
-            work = (sgv_new, para, model)
+            exp_id = parameters_works_TODO.loc[i, 'exp_id']  # 获取当前实验编号
+            work = (exp_id, sgv, para, model)
             works.append(work)
             pass  # for
 
         ## 并行运行实验作业
         with Pool(num_cores) as p:
-            p.starmap(fun_single_experiment_work, works)
+            p.imap(fun_single_experiment_work, works)
             pass  # with
 
         ## 并行处理之后，读取各个实验日志文件之内容追加到主进程日志文件之内容
         if sgv['is_enable_multiprocessing']:
             with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
                 for i, para in parameters_works_TODO.iterrows():
-                    with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt"), 'r') as f_sub:  # BUG 如果前一次实验被删除了，那么这里会因为文件缺失而报错
-                        f.write(f_sub.read())
-                        pass  # with
+                    if Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt").exists():
+                        with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt"), 'r') as f_sub:
+                            f.write(f_sub.read())
+                            pass  # with
+                        pass  # if
                     pass  # for
                 pass  # with
             pass  # if
@@ -129,7 +135,7 @@ def main():
             elif system == 'Windows':
                 os.startfile(str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
             elif system == 'Linux':
-                os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))  # #DEBUG 还没测试过
+                os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))  # #BUG 还没测试过
             else:
                 print("Unsupported operating system")
                 pass  # if
@@ -148,18 +154,31 @@ def main():
     pass  # main
 
 
-def fun_single_experiment_work(sgv: dict, para: pandas.Series, model: dict):
+def fun_single_experiment_work(args):
     """
     实验模拟程序。用于运行单个实验。
 
+    实验作业参数元组包括：
+
+    - args[0]：exp_id，实验编号
+
+    - args[1]：sgv，模拟器全局变量
+
+    - args[2]：para，参数作业数据框
+
+    - args[3]：model，模型集字典
+
     Args:
-        sgv (dict): 模拟器全局变量
-        para (pandas.Series): 参数作业数据框
-        model (dict): 模型集字典
+        args (tuple): 实验作业参数元组
 
     Returns:
         None
     """
+
+    exp_id, sgv_original, para, model = args
+
+    sgv = deepcopy(sgv_original)  # 复制全局变量，保证不同实验的全局变量的独立性
+    sgv['id_experiment'] = exp_id  # 设定当前实验编号
 
     ## 进行实验作业
     if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
