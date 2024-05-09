@@ -193,11 +193,12 @@ class Operator:
                 content_Model = modelEntity.content['content_model'](content_Finance)
                 pass  # if
 
-            log_message(
-                "    开始执行模型内容：",
-                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-                f"logger_{sgv['id_experiment']}",
-            )
+            if not sgv['is_enable_multiprocessing']:
+                log_message(
+                    "    开始执行模型内容：",
+                    Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                    f"logger_{sgv['id_experiment']}",
+                )
 
             # sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
@@ -242,22 +243,24 @@ class Operator:
         sgv['is_continue_process'] = True
         # sgv['A_data'] = None
 
-        log_message(
-            "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-            f"logger_{sgv['id_experiment']}",
-        )
+        if not sgv['is_enable_multiprocessing']:
+            log_message(
+                "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+            )
 
         ## 初始化 agents 数据
         A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
         A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
         # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
 
-        log_message(
-            "                    初始化数据",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-            f"logger_{sgv['id_experiment']}",
-        )
+        if not sgv['is_enable_multiprocessing']:
+            log_message(
+                "                    初始化数据",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+            )
 
         # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         A_data = Collector.init_agent_data_collection(A, sgv)
@@ -290,11 +293,12 @@ class Operator:
 
         modelEntity = model.content  # 获取节点实体对应的模型实体
 
-        log_message(
-            "    开始执行模型内容：",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-            f"logger_{sgv['id_experiment']}",
-        )
+        if not sgv['is_enable_multiprocessing']:
+            log_message(
+                "    开始执行模型内容：",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+            )
 
         sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
@@ -310,11 +314,12 @@ class Operator:
     @classmethod
     def operate_end_experiment(cls, A_data: AgentDataCollection, sgv: dict):
 
-        log_message(
-            "    结束执行模型内容。",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-            f"logger_{sgv['id_experiment']}",
-        )
+        if not sgv['is_enable_multiprocessing']:
+            log_message(
+                "    结束执行模型内容。",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+            )
 
         sgv['is_continue_process'] = False  # 不再继续运行过程
 
@@ -325,11 +330,12 @@ class Operator:
 
         sgv['export_data_start_time'] = time.time()  # 记录此次导出数据开始时间
 
-        log_message(
-            "                    导出数据",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-            f"logger_{sgv['id_experiment']}",
-        )
+        if not sgv['is_enable_multiprocessing']:
+            log_message(
+                "                    导出数据",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+            )
 
         Collector.export_agent_data(A_data, sgv)
 
@@ -344,11 +350,12 @@ class Operator:
         conn.commit()
         conn.close()
 
-        log_message(
-            "本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n",
-            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-            f"logger_{sgv['id_experiment']}",
-        )
+        if not sgv['is_enable_multiprocessing']:
+            log_message(
+                "本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+            )
 
         pass  # function
 
