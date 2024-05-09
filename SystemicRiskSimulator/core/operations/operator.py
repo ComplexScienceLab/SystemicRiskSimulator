@@ -98,8 +98,9 @@ class Operator:
                 ## 绘制色带分布图，展示实验组 id 分布对应的作业完成状态信息。"RAW" 为黑色、"DOING" 为红色、"DONE" 为黄色。
                 import matplotlib.pyplot as plt
                 color_mapping = {"RAW": "black", "DOING": "red", "DONE": "yellow"}  # 创建颜色映射
+                color_mapping_01 = {"RAW": "yellow", "DOING": "red", "DONE": "gray"}  # 创建状态颜色映射，"RAW" 为黑色、"DOING" 为红色、"DONE" 为灰色。
                 ids = [row[0] for row in rows]
-                colors = [color_mapping[row[1]] for row in rows]  # 将状态转换为颜色
+                colors = [color_mapping_01[row[1]] for row in rows]  # 将状态转换为颜色
                 plt.figure(figsize=(10, 2))  # 设置图形大小
                 plt.bar(ids, [1] * len(ids), color=colors, width=1.0)  # 创建色带分布图
                 plt.xticks([])  # 隐藏 x 轴刻度
