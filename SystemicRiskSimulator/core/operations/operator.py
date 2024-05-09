@@ -37,11 +37,10 @@ class Operator:
 
         ## 设置参数作业列表
         if sgv['init_parameters_method'] == "import data":
-            time_start_导入参数数据 = time.time()  # #DEBUG
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
 
-                ## 创建或者连接 SQLite 数据库，统计实验组作业完成情况 #BUG  如果实验组作业数量很多，那么容易导致内存溢出导致报错！
+                ## 创建或者连接 SQLite 数据库，统计实验组作业完成情况
                 time_start_统计实验组作业情况 = time.time()  # #DEBUG
                 # 如果是首次运行，那么创建数据库并初始化表格
                 if not os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
@@ -56,21 +55,15 @@ class Operator:
                 else:
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
-                    # c.execute("""CREATE TABLE IF NOT EXISTS experiments
-                    #                     (id INTEGER PRIMARY KEY, status TEXT)""")
-                    # conn.commit()
                     pass
-
                 # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
                 if sgv['is_rerun_all_done_works_in_the_same_experiments']:
                     c.execute("UPDATE experiments SET status = 'RAW'")
                     conn.commit()
                     pass
-
                 # 检查实验组作业完成状态
                 c.execute("SELECT id, status FROM experiments")
                 rows = c.fetchall()
-
                 list_idsExp_DOING = []
                 list_idsExp_DONE = []
                 list_idsExp_RAW = []
@@ -82,10 +75,10 @@ class Operator:
                         list_idsExp_DONE.append(exp_id)
                     else:
                         list_idsExp_RAW.append(exp_id)
-
+                        pass  # if
+                    pass  # for
                 list_idsExp_REGISTER = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, len(parameters_works) + 1))
                 list_idsExp_TODO = [i for i in list_idsExp_REGISTER if i not in list_idsExp_DONE]
-
                 # 保存实验组作业完成状态信息
                 with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
                     json.dump({
@@ -96,22 +89,27 @@ class Operator:
                         "完成率": len(list_idsExp_DONE) / len(parameters_works),
                         "中断率": len(list_idsExp_DOING) / len(parameters_works),
                     }, f)
-                    logging.info("实验组开始运行前,实验组作业完成状态情况如下:\n" + str({
+                    logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
                         "之前运行中被中断的实验组 id": list_idsExp_DOING,
                         "完成率": len(list_idsExp_DONE) / len(parameters_works),
                         "中断率": len(list_idsExp_DOING) / len(parameters_works),
                     }))
                     pass  # with
-
+                ## 绘制色带分布图，展示实验组 id 分布对应的作业完成状态信息。"RAW" 为黑色、"DOING" 为红色、"DONE" 为黄色。
+                import matplotlib.pyplot as plt
+                color_mapping = {"RAW": "black", "DOING": "red", "DONE": "yellow"}  # 创建颜色映射
+                ids = [row[0] for row in rows]
+                colors = [color_mapping[row[1]] for row in rows]  # 将状态转换为颜色
+                plt.figure(figsize=(10, 2))  # 设置图形大小
+                plt.bar(ids, [1] * len(ids), color=colors, width=1.0)  # 创建色带分布图
+                plt.xticks([])  # 隐藏 x 轴刻度
+                plt.yticks([])  # 隐藏 y 轴刻度
+                plt.savefig(Path(sgv['folderpath_experiments_output_log'], "color_band_distribution.png"), bbox_inches='tight', pad_inches=0)  # 保存图形
                 time_end_统计实验组作业情况 = time.time()  # #DEBUG
-                logging.info(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")
+                logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")
 
-                # 关闭数据库连接
-                conn.close()
+                conn.close()  # 关闭数据库连接
                 pass  # with
-
-            time_end_导入参数数据 = time.time()  # #DEBUG
-            logging.info(f"导入参数数据完成，用时：{time_end_导入参数数据 - time_start_导入参数数据 - (time_end_统计实验组作业情况 - time_start_统计实验组作业情况)} 秒。")
 
             Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
         elif sgv['init_parameters_method'] == "set manually":  # #HACK 这个选项几乎被废弃了。可以删除。
