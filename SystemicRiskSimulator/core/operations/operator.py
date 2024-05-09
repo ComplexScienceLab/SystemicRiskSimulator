@@ -77,12 +77,12 @@ class Operator:
                         list_idsExp_RAW.append(exp_id)
                         pass  # if
                     pass  # for
-                list_idsExp_REGISTER = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, len(parameters_works) + 1))
-                list_idsExp_TODO = [i for i in list_idsExp_REGISTER if i not in list_idsExp_DONE]
+                list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, len(parameters_works) + 1))
+                list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
                 # 保存实验组作业完成状态信息
                 with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
                     json.dump({
-                        "计划运行的实验组 id": list_idsExp_TODO,
+                        "计划运行的实验组 id": list_idsExp_TASK,
                         "未运行过的实验组 id": list_idsExp_RAW,
                         "之前运行中被中断的实验组 id": list_idsExp_DOING,
                         "已完成的实验组 id": list_idsExp_DONE,
@@ -145,7 +145,7 @@ class Operator:
         ## 导出配置数据
         Collector.export_config_data(sgv)
 
-        return sgv, list_idsExp_TODO, parameters_works, EntityManager.mainModelInstanceEntities
+        return sgv, list_idsExp_TASK, parameters_works, EntityManager.mainModelInstanceEntities
 
         pass  # function
 

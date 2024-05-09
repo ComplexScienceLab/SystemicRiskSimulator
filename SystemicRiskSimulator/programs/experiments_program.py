@@ -43,15 +43,15 @@ def main():
 
     ## 初始化、构建、安装模型
     if sgv['init_parameters_method'] == 'import data':
-        sgv, list_idsExp_TODO, parameters_works, models = Operator.operate_installing(sgv)
+        sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv)
     elif sgv['init_parameters_method'] == 'set manually':
-        sgv, list_idsExp_TODO, parameters_works, models = Operator.operate_installing(sgv, parameters_works)  # #BUG 这里的 parameters_works 变量没有定义
+        sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv, parameters_works)  # #BUG 这里的 parameters_works 变量没有定义
         pass  # if
 
     ##
     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
     c = conn.cursor()
-    c.execute("SELECT id,status FROM experiments WHERE status='TODO'")
+    c.execute("SELECT id,status FROM experiments WHERE status='TASK'")
 
     ## 运行实验组
     logging.debug("\n\n\n实验组开始：\n\n")
@@ -64,10 +64,10 @@ def main():
     # # 连接实验组作业管理数据库
     # conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
     # c = conn.cursor()
-    # c.execute("SELECT id,status FROM experiments WHERE status='TODO'")
+    # c.execute("SELECT id,status FROM experiments WHERE status='TASK'")
     # rows = c.fetchall()
-    # list_idsExp_TODO = [row[0] for row in rows]  # 获取实际上需要运行的实验组 id 列表
-    parameters_works_TODO = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TODO)]  # 获取实际上需要运行的实验组参数作业数据框
+    # list_idsExp_TASK = [row[0] for row in rows]  # 获取实际上需要运行的实验组 id 列表
+    parameters_works_TASK = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
 
     if sgv['is_enable_multiprocessing']:
         ## #NOTE：多进程并行处理
@@ -83,8 +83,8 @@ def main():
         ## 生成作业组
         # sgv['id_experiment'] = 0  # 设定当前实验编号
         works = []
-        for i, para in parameters_works_TODO.iterrows():
-            exp_id = parameters_works_TODO.loc[i, 'exp_id']  # 获取当前实验编号
+        for i, para in parameters_works_TASK.iterrows():
+            exp_id = parameters_works_TASK.loc[i, 'exp_id']  # 获取当前实验编号
             work = (exp_id, sgv, para, model)
             works.append(work)
             pass  # for
@@ -97,7 +97,7 @@ def main():
         ## 并行处理之后，读取各个实验日志文件之内容追加到主进程日志文件之内容
         if sgv['is_enable_multiprocessing']:
             with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
-                for i, para in parameters_works_TODO.iterrows():
+                for i, para in parameters_works_TASK.iterrows():
                     if Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt").exists():
                         with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt"), 'r') as f_sub:
                             f.write(f_sub.read())
@@ -112,14 +112,15 @@ def main():
 
         sgv['simulator_start_time'] = time.time()  # 记录串行运行模式下，模拟器开始运行时刻
 
-        for i, para in parameters_works_TODO.iterrows():
+        for i, para in parameters_works_TASK.iterrows():
             para = para.to_dict()  # 将参数数据框转换为字典
             # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
             model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
             sgv['id_experiment'] = i + 1  # 设定当前实验编号
+            work = (sgv['id_experiment'], sgv, para, model)
 
             ## 运行一次实验作业
-            fun_single_experiment_work(sgv, para, model)
+            fun_single_experiment_work(work)
             pass  # for
 
         sgv['simulator_end_time'] = time.time()  # 记录串行运行模式下，记录模拟器结束运行时刻
