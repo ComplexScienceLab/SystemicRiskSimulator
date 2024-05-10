@@ -319,6 +319,7 @@ class Operator:
     @classmethod
     def operate_end_experiment(cls, A_data: AgentDataCollection, sgv: dict):
 
+        # if True:  # #HACK 如果需要调试，请使用这个替换下面的
         if not sgv['is_enable_multiprocessing']:
             log_message(
                 "    结束执行模型内容。",
