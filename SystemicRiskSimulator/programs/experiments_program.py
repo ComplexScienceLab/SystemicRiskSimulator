@@ -229,7 +229,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para: pandas.Ser
 
 
     elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is False:
-        ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
+        ## #NOW #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 进行训练。\n")  # DEBUG 专用
 
         ## 重置实验
@@ -241,7 +241,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para: pandas.Ser
         Operator.operate_end_experiment(A_data, sgv)
 
     elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'using':
-        ## #NOW #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
+        ## #TODO #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")  # DEBUG 专用
 
         ## 重置实验
@@ -253,7 +253,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para: pandas.Ser
         Operator.operate_end_experiment(A_data, sgv)
 
     elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'training':
-        ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做训练时
+        ## #TODO #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做训练时
 
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 进行训练。\n")  # DEBUG专用
 
