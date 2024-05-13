@@ -12,7 +12,11 @@ pass  # end import
 
 
 class Builder:
-    """构建机"""
+    """
+    构建机
+
+    #TODO 需要大简化其中的冗余功能。包括取消 entity 之类的文件。这些文件针对的是以前的完全流程化版本，现在不再适用，而且阅读、修改、维护困难。
+    """
 
     @classmethod
     def build_entities_by_execute(cls, sgv: SimulatorGlobalVariableType = sgv):
