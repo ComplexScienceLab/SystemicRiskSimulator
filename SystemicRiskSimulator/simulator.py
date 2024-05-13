@@ -121,7 +121,7 @@ def simulator(config: dict):
         ## 关闭日志记录器
         logger.removeHandler(log_file_handler)
 
-        ## 运行实验组模拟程序 # NOW 如果要做并行仿真模拟或者并行 RL 训练，需要考虑改成一个单独的程序做调用
+        ## 运行实验组模拟程序 # TODO 如果要做并行仿真模拟或者并行 RL 训练，需要考虑改成一个单独的程序做调用
         # from SystemicRiskSimulator.programs.experiments_program import fun_experiments_program  # 原来的程序
         # fun_experiments_program(sgv, para)
         sgv_pkl = pickle.dumps(sgv)
