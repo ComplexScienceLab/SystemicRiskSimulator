@@ -9,6 +9,7 @@
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
 from dask import delayed, compute
+import dask.dataframe as dd
 from SystemicRiskSimulator.external_packages import platform, Path, sqlite3, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool, multiprocessing, warnings, logging, json, sqlite3
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
@@ -139,15 +140,20 @@ def main():
 
         else:
 
-            # #NOTE：串行处理，用 dask 延迟任务
-            tasks_BB = []
+            # #NOTE：串行处理
             for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
                 exp_id = i + 1
-                task_BB = transform_BB_exp_files_delayed(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
-                tasks_BB.append(task_BB)
+                transform_BB_exp_files_delayed(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
                 pass  # for
 
-            results_BB = compute(*tasks_BB)
+            # #NOTE：串行处理，用 dask 延迟任务 #DEBUG
+            # tasks_BB = []
+            # for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
+            #     exp_id = i + 1
+            #     task_BB = transform_BB_exp_files_delayed(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+            #     tasks_BB.append(task_BB)
+            #     pass  # for
+            # results_BB = compute(*tasks_BB)
 
             pass  # if
 
@@ -167,15 +173,20 @@ def main():
                 pass  # with
 
         else:
-            # #NOTE：串行处理，用 dask 延迟任务
-            tasks_IB = []
+            # #NOTE：串行处理  #DEBUG
             for i, filepath_pkl_IB in enumerate(list_filepath_pkl_IB):
                 exp_id = i + 1
-                task_IB = transform_IB_exp_files_delayed(exp_id, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
-                tasks_IB.append(task_IB)
+                transform_IB_exp_files_delayed(exp_id, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
                 pass  # for
 
-            results_IB = compute(*tasks_IB)
+            # # #NOTE：串行处理，用 dask 延迟任务 #DEBUG
+            # tasks_IB = []
+            # for i, filepath_pkl_IB in enumerate(list_filepath_pkl_IB):
+            #     exp_id = i + 1
+            #     task_IB = transform_IB_exp_files_delayed(exp_id, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+            #     tasks_IB.append(task_IB)
+            #     pass  # for
+            # results_IB = compute(*tasks_IB)
 
             pass  # if
 
