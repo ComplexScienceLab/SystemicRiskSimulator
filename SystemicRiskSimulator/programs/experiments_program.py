@@ -8,8 +8,9 @@
 
 
 import pandas
-from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, sqlite3, base64, pickle, multiprocessing, Pool
+from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, sqlite3, base64, pickle, multiprocessing, Pool, json
 from SystemicRiskSimulator.core.operations.operator import Operator
+from SystemicRiskSimulator.tools.tools import Tools
 
 
 def main():
@@ -47,11 +48,6 @@ def main():
     elif sgv['init_parameters_method'] == 'set manually':
         sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv, parameters_works)  # #BUG 这里的 parameters_works 变量没有定义
         pass  # if
-
-    ##
-    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-    c = conn.cursor()
-    c.execute("SELECT id,status FROM experiments WHERE status='TASK'")
 
     ## 运行实验组
     logging.debug("\n\n\n实验组开始：\n\n")
@@ -150,6 +146,53 @@ def main():
         logger.removeHandler(log_file_handler)
 
         pass  # if
+
+    ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
+    time_start_统计实验组作业情况 = time.time()  # #DEBUG
+    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+    c = conn.cursor()
+    # 检查实验组作业完成状态
+    c.execute("SELECT id, status_实验组模拟程序 FROM experiments")
+    rows = c.fetchall()
+    list_idsExp_DOING = []
+    list_idsExp_DONE = []
+    list_idsExp_RAW = []
+    for row in rows:
+        exp_id, status_实验组模拟程序 = row
+        if status_实验组模拟程序 == "DOING":
+            list_idsExp_DOING.append(exp_id)
+        elif status_实验组模拟程序 == "DONE":
+            list_idsExp_DONE.append(exp_id)
+        else:
+            list_idsExp_RAW.append(exp_id)
+            pass  # if
+        pass  # for
+    # 保存实验组作业完成状态信息
+    with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+        json.dump({
+            "计划运行的实验组 id": list_idsExp_TASK,
+            "未运行过的实验组 id": list_idsExp_RAW,
+            "之前运行中被中断的实验组 id": list_idsExp_DOING,
+            "已完成的实验组 id": list_idsExp_DONE,
+            "完成率": len(list_idsExp_DONE) / len(parameters_works),
+            "中断率": len(list_idsExp_DOING) / len(parameters_works),
+        }, f)
+        logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
+            "之前运行中被中断的实验组 id": list_idsExp_DOING,
+            "完成率": len(list_idsExp_DONE) / len(parameters_works),
+            "中断率": len(list_idsExp_DOING) / len(parameters_works),
+        }))
+        pass  # with
+
+    # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之后的作业完成状态信息。
+    ids = [row[0] for row in rows]  # 获取实验组 id
+    status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+    Tools.draw_color_band_after_experiments(ids, status_实验组模拟程序_运行状态, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_after_实验组模拟程序.png"))
+
+    time_end_统计实验组作业情况 = time.time()  # #DEBUG
+    logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
+
+    conn.close()  # 关闭数据库连接
 
     pass  # main
 

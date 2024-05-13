@@ -664,24 +664,27 @@ class Tools:
         pass  # function
 
     @classmethod
-    def draw_color_band_before_experiments(ids: list, process_status: list, plans_status: list, tasks_status: list, filepath_to_save: Path):
+    def draw_color_band_before_experiments(cls, ids: list, process_status: list, list_idsExp_PLAN: list, list_idsExp_TASK: list, filepath_to_save: Path):
         """
         绘制实验组的状态分布图
 
         Args:
             ids (list): 实验组 id
             process_status (list): 实验组的处理状态
-            plans_status (list): 实验组的计划状态
-            tasks_status (list): 实验组的任务状态
+            list_idsExp_PLAN (list): 计划中的实验组 id
+            list_idsExp_TASK (list): 任务中的实验组 id
             filepath_to_save (Path): 保存文件路径
 
         Returns:
 
         """
         import matplotlib.pyplot as plt
-        color_mapping_01 = {"RAW": "yellow", "DOING": "red", "DONE": "gray"}  # 创建状态颜色映射
-        color_mapping_02 = {"PLAN": "blue"}
-        color_mapping_03 = {"TASK": "green"}
+
+        plans_status = ["PLAN" if i in list_idsExp_PLAN else "NOPLAN" for i in ids]  # 获取实验组作业计划状态
+        tasks_status = ["TASK" if i in list_idsExp_TASK else "NOTASK" for i in ids]  # 获取实验组作业任务状态
+        color_mapping_01 = {"RAW": "black", "DOING": "red", "DONE": "gray"}  # 创建状态颜色映射
+        color_mapping_02 = {"PLAN": "blue", "NOPLAN": "black"}
+        color_mapping_03 = {"TASK": "green", "NOTASK": "black"}
         fig, axs = plt.subplots(3, 1, figsize=(10, 6))  # 创建图形和子图
         colors_01 = [color_mapping_01[status] for status in process_status]  # 绘制第一行彩条
         axs[0].bar(ids, [1] * len(ids), color=colors_01, width=1.0)
@@ -700,7 +703,7 @@ class Tools:
         pass  # function
 
     @classmethod
-    def draw_color_band_after_experiments(ids: list, process_status: list, filepath_to_save: Path):
+    def draw_color_band_after_experiments(cls, ids: list, process_status: list, filepath_to_save: Path):
         """
         绘制实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
 
@@ -715,12 +718,12 @@ class Tools:
 
         """
         import matplotlib.pyplot as plt
-        color_mapping_01 = {"RAW": "yellow", "DOING": "red", "DONE": "gray"}  # 创建状态颜色映射
+        color_mapping_01 = {"RAW": "black", "DOING": "red", "DONE": "gray"}  # 创建状态颜色映射
         fig, axs = plt.subplots(1, 1, figsize=(10, 2))  # 创建图形和子图
         colors_01 = [color_mapping_01[status] for status in process_status]  # 绘制第一行彩条
-        axs[0].bar(ids, [1] * len(ids), color=colors_01, width=1.0)
-        axs[0].set_xticks([])
-        axs[0].set_yticks([])
+        axs.bar(ids, [1] * len(ids), color=colors_01, width=1.0)
+        axs.set_xticks([])
+        axs.set_yticks([])
         plt.savefig(filepath_to_save, bbox_inches='tight', pad_inches=0)  # 保存图形
 
         pass  # function

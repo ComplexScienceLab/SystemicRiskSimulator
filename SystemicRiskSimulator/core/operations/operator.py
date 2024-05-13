@@ -2,7 +2,7 @@
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
 
-from SystemicRiskSimulator.external_packages import Path, time, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional
+from SystemicRiskSimulator.external_packages import Path, time, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional, plt
 from SystemicRiskSimulator.tools.logging_tools import log_message
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
@@ -40,38 +40,39 @@ class Operator:
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
 
-                ## 创建或者连接 SQLite 数据库，统计实验组作业完成情况
+                ## 创建或者连接 SQLite 数据库，统计实验组之上一次的作业之完成情况
                 time_start_统计实验组作业情况 = time.time()  # #DEBUG
                 # 如果是首次运行，那么创建数据库并初始化表格
                 if not os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
                     c.execute("""CREATE TABLE IF NOT EXISTS experiments
-                                    (id INTEGER PRIMARY KEY, status TEXT)""")
+                                    (id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)""")
                     conn.commit()
                     # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
                     for i in range(1, len(parameters_works) + 1):
-                        c.execute("INSERT INTO experiments (id, status) VALUES (?, ?)", (i, "RAW"))
+                        c.execute("INSERT INTO experiments (id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
+                        pass  # for
                 else:
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
-                    pass
+                    pass  # if
                 # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
                 if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-                    c.execute("UPDATE experiments SET status = 'RAW'")
+                    c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
                     conn.commit()
-                    pass
+                    pass  # if
                 # 检查实验组作业完成状态
-                c.execute("SELECT id, status FROM experiments")
+                c.execute("SELECT id, status_实验组模拟程序 FROM experiments")
                 rows = c.fetchall()
                 list_idsExp_DOING = []
                 list_idsExp_DONE = []
                 list_idsExp_RAW = []
                 for row in rows:
-                    exp_id, status = row
-                    if status == "DOING":
+                    exp_id, status_实验组模拟程序 = row[0], row[1]
+                    if status_实验组模拟程序 == "DOING":
                         list_idsExp_DOING.append(exp_id)
-                    elif status == "DONE":
+                    elif status_实验组模拟程序 == "DONE":
                         list_idsExp_DONE.append(exp_id)
                     else:
                         list_idsExp_RAW.append(exp_id)
@@ -95,19 +96,14 @@ class Operator:
                         "中断率": len(list_idsExp_DOING) / len(parameters_works),
                     }))
                     pass  # with
-                ## 绘制色带分布图，展示实验组 id 分布对应的作业完成状态信息。"RAW" 为黑色、"DOING" 为红色、"DONE" 为黄色。
-                import matplotlib.pyplot as plt
-                color_mapping = {"RAW": "black", "DOING": "red", "DONE": "yellow"}  # 创建颜色映射
-                color_mapping_01 = {"RAW": "yellow", "DOING": "red", "DONE": "gray"}  # 创建状态颜色映射，"RAW" 为黑色、"DOING" 为红色、"DONE" 为灰色。
-                ids = [row[0] for row in rows]
-                colors = [color_mapping_01[row[1]] for row in rows]  # 将状态转换为颜色
-                plt.figure(figsize=(10, 2))  # 设置图形大小
-                plt.bar(ids, [1] * len(ids), color=colors, width=1.0)  # 创建色带分布图
-                plt.xticks([])  # 隐藏 x 轴刻度
-                plt.yticks([])  # 隐藏 y 轴刻度
-                plt.savefig(Path(sgv['folderpath_experiments_output_log'], "color_band_distribution.png"), bbox_inches='tight', pad_inches=0)  # 保存图形
+
+                # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
+                ids = [row[0] for row in rows]  # 获取实验组 id
+                status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+                Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
+
                 time_end_统计实验组作业情况 = time.time()  # #DEBUG
-                logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")
+                logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
 
                 conn.close()  # 关闭数据库连接
                 pass  # with
@@ -228,7 +224,7 @@ class Operator:
         # 更新实验组作业状态为 "DOING"
         conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
         c = conn.cursor()
-        c.execute("INSERT OR REPLACE INTO experiments (id, status) VALUES (?, 'DOING')", (sgv['id_experiment'],))
+        c.execute("INSERT OR REPLACE INTO experiments (id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
         conn.commit()
         conn.close()
 
@@ -354,7 +350,7 @@ class Operator:
         # 更新实验组作业状态为 "DONE"
         conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
         c = conn.cursor()
-        c.execute("UPDATE experiments SET status = 'DONE' WHERE id = ?", (sgv['id_experiment'],))
+        c.execute("UPDATE experiments SET status_实验组模拟程序 = 'DONE' WHERE id = ?", (sgv['id_experiment'],))
         conn.commit()
         conn.close()
 
