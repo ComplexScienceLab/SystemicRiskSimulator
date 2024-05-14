@@ -145,7 +145,7 @@ def main():
             # #NOTE：串行处理
             for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
                 exp_id = i + 1
-                transform_BB_exp_files_delayed(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+                transform_BB_exp_files(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
                 pass  # for
 
             # #NOTE：串行处理，用 dask 延迟任务 #DEBUG
@@ -178,7 +178,7 @@ def main():
             # #NOTE：串行处理  #DEBUG
             for i, filepath_pkl_IB in enumerate(list_filepath_pkl_IB):
                 exp_id = i + 1
-                transform_IB_exp_files_delayed(exp_id, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+                transform_IB_exp_files(exp_id, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
                 pass  # for
 
             # # #NOTE：串行处理，用 dask 延迟任务 #DEBUG
