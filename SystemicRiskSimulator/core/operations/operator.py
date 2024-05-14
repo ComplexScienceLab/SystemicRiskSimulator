@@ -208,6 +208,44 @@ class Operator:
         pass  # function
 
     @classmethod
+    def operate_reset_experiment_for_PettingZoo(cls, sgv: dict, para: dict):
+        """
+        运作初始化实验。用于使用基于 PettingZoo 、Gym 等强化学习环境工具包自定义的模型。
+
+        Args:
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
+
+        Returns:
+            A, A_data, sgv, para
+        """
+        ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
+        sgv['index_of_schedule_position'] = []
+        sgv['turn'] = 0
+        sgv['phase'] = 0
+        sgv['step'] = 0
+        # sgv['model_name'] = para['model_name']  #HACK 2024-05-14 最新版的 parameters 没有这个配置项了
+        sgv['process_name'] = "START"
+        sgv['test_continous_loop_of_model'] = 0
+        sgv['is_continue_process'] = True
+        # sgv['A_data'] = None
+
+        logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
+
+        logging.info("\n相关实验参数：" + str(para) + "\n")
+
+        ## 初始化 agents 数据
+        A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
+        # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
+        logging.debug("                    初始化数据")
+        # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
+        A_data = Collector.init_agent_data_collection(A, sgv)
+        # sgv['step'] += 1
+
+        return A, A_data, sgv, para
+        pass  # function
+
+    @classmethod
     def operate_reset_experiment(cls, sgv: dict, para: dict, model: Any):
         """
         运作初始化实验。用于使用使用强化学习环境工具包自定义的模型。
