@@ -245,7 +245,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para: pandas.Ser
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")  # DEBUG 专用
 
         ## 重置实验
-        A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+        A, A_last,A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
         ## 步进式运行实验
         A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
         # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
