@@ -1,5 +1,7 @@
 """
 预处理实验结果数据
+
+#NOTE 强烈建议用串行处理模式，暨 is_enable_multiprocessing = False。因为这样更安全、速度还更快一些。
 """
 
 # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。
