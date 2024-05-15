@@ -2,8 +2,8 @@
 运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
 
-from SystemicRiskSimulator.external_packages import Path, time, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional, plt
-from SystemicRiskSimulator.tools.logging_tools import log_message
+from SystemicRiskSimulator.external_packages import Path, timeit, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional, plt
+from SystemicRiskSimulator.tools.logging_tools import log_message, record_work_state
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
@@ -41,9 +41,12 @@ class Operator:
                 parameters_works = pd.read_pickle(f)
 
                 ## 创建或者连接 SQLite 数据库，统计实验组之上一次的作业之完成情况
-                time_start_统计实验组作业情况 = time.time()  # #DEBUG
+                time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
                 # 如果是首次运行，那么创建数据库并初始化表格
-                if not os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
+                if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+                    if os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
+                        os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                        pass  # if
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
                     c.execute("""CREATE TABLE IF NOT EXISTS experiments
@@ -53,15 +56,20 @@ class Operator:
                     for i in range(1, len(parameters_works) + 1):
                         c.execute("INSERT INTO experiments (id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
                         pass  # for
+                    # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
+                    if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+                        c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
+                        conn.commit()
+                        pass  # if
                 else:
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
                     pass  # if
-                # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
-                if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-                    c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
-                    conn.commit()
-                    pass  # if
+                # # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
+                # if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+                #     c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
+                #     conn.commit()
+                #     pass  # if
                 # 检查实验组作业完成状态
                 c.execute("SELECT id, status_实验组模拟程序 FROM experiments")
                 rows = c.fetchall()
@@ -102,7 +110,7 @@ class Operator:
                 status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
                 Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
 
-                time_end_统计实验组作业情况 = time.time()  # #DEBUG
+                time_end_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
                 logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
 
                 conn.close()  # 关闭数据库连接
@@ -165,7 +173,7 @@ class Operator:
 
         ## 运行实验
 
-        sgv['experiment_start_time'] = time.time()  # 记录此次实验开始时间
+        sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
 
         if sgv['is_use_flow_form_version_model']:
             # ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()` HACK 已经过时，弃用，可删除。
@@ -219,6 +227,9 @@ class Operator:
         Returns:
             A, A_data, sgv, para
         """
+
+        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
+
         ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
         sgv['index_of_schedule_position'] = []
         sgv['turn'] = 0
@@ -258,13 +269,14 @@ class Operator:
             A, A_data, sgv, para
         """
 
-        ## 记录本次实验作业的完成状态为 "DOING"
-        # 更新实验组作业状态为 "DOING"
-        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-        c = conn.cursor()
-        c.execute("INSERT OR REPLACE INTO experiments (id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
-        conn.commit()
-        conn.close()
+        # # 更新实验组作业状态为 "DOING"
+        # conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+        # c = conn.cursor()
+        # c.execute("INSERT OR REPLACE INTO experiments (id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
+        # conn.commit()
+        # conn.close()
+
+        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
 
         modelEntity = model.content  # 获取节点实体对应的模型实体
 
@@ -327,7 +339,7 @@ class Operator:
 
         ## 运行实验
 
-        sgv['experiment_start_time'] = time.time()  # 记录此次实验开始时间
+        sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
 
         modelEntity = model.content  # 获取节点实体对应的模型实体
 
@@ -364,12 +376,12 @@ class Operator:
 
         sgv['is_continue_process'] = False  # 不再继续运行过程
 
-        sgv['experiment_end_time'] = time.time()  # 记录此次实验结束时间
+        sgv['experiment_end_time'] = timeit.default_timer()  # 记录此次实验结束时间
         sgv['experiments_running_time'] += sgv['experiment_end_time'] - sgv['experiment_start_time']  # 累加此次实验运行时长
 
         ## 导出数据之于已经收集的，然后结束本次实验
 
-        sgv['export_data_start_time'] = time.time()  # 记录此次导出数据开始时间
+        sgv['export_data_start_time'] = timeit.default_timer()  # 记录此次导出数据开始时间
 
         if not sgv['is_enable_multiprocessing']:
             log_message(
@@ -381,16 +393,10 @@ class Operator:
 
         Collector.export_agent_data(A_data, sgv)
 
-        sgv['export_data_end_time'] = time.time()  # 记录此次导出数据结束时间
+        sgv['export_data_end_time'] = timeit.default_timer()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
-        ## 记录本次实验作业的完成状态为 "DONE"
-        # 更新实验组作业状态为 "DONE"
-        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-        c = conn.cursor()
-        c.execute("UPDATE experiments SET status_实验组模拟程序 = 'DONE' WHERE id = ?", (sgv['id_experiment'],))
-        conn.commit()
-        conn.close()
+        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DONE", sgv['folderpath_experiments_output_log'])
 
         if not sgv['is_enable_multiprocessing']:
             log_message(

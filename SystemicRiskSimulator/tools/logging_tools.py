@@ -2,7 +2,28 @@
 日志记录器工具
 """
 
-from SystemicRiskSimulator.external_packages import logging, Union, Path, functools
+from SystemicRiskSimulator.external_packages import logging, Union, Path, functools, sqlite3
+
+
+def record_work_state(id_experiment: int, state_column: str, state_value: str, folderpath_experiments_output_log: Path):
+    """
+    记录本次实验作业的状态
+
+    Args:
+        id_experiment (int): 实验组 id
+        state_column (str): 状态列名称
+        state_value (str): 状态值
+        folderpath_experiments_output_log (Path): 实验组输出日志文件夹路径
+
+    Returns:
+          None
+    """
+    conn = sqlite3.connect(Path(folderpath_experiments_output_log, "experiments_works_status.db"))
+    c = conn.cursor()
+    c.execute(f"UPDATE experiments SET {state_column} = ? WHERE id = ?", (state_value, id_experiment))
+    conn.commit()
+    conn.close()
+    pass  # function
 
 
 def log_decorator(filepath_log: Union[str, Path], logger_name=None, level_to_logFileHandler=logging.DEBUG, level_to_logConsoleHandler=logging.INFO):
