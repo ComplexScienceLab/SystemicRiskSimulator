@@ -7,7 +7,6 @@
 # -*- coding: utf-8 -*-
 
 
-import pandas
 from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, sqlite3, base64, pickle, multiprocessing, Pool, json
 from SystemicRiskSimulator.core.operations.operator import Operator
 from SystemicRiskSimulator.tools.tools import Tools
@@ -148,6 +147,7 @@ def main():
         pass  # if
 
     ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
+    num_parameters_works = len(parameters_works)
     time_start_统计实验组作业情况 = time.time()  # #DEBUG
     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
     c = conn.cursor()
@@ -174,13 +174,13 @@ def main():
             "未运行过的实验组 id": list_idsExp_RAW,
             "之前运行中被中断的实验组 id": list_idsExp_DOING,
             "已完成的实验组 id": list_idsExp_DONE,
-            "完成率": len(list_idsExp_DONE) / len(parameters_works),
-            "中断率": len(list_idsExp_DOING) / len(parameters_works),
+            "完成率": len(list_idsExp_DONE) / num_parameters_works,
+            "中断率": len(list_idsExp_DOING) / num_parameters_works,
         }, f)
         logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
             "之前运行中被中断的实验组 id": list_idsExp_DOING,
-            "完成率": len(list_idsExp_DONE) / len(parameters_works),
-            "中断率": len(list_idsExp_DOING) / len(parameters_works),
+            "完成率": len(list_idsExp_DONE) / num_parameters_works,
+            "中断率": len(list_idsExp_DOING) / num_parameters_works,
         }))
         pass  # with
 
@@ -197,7 +197,7 @@ def main():
     pass  # main
 
 
-def fun_single_experiment_work(exp_id: int, sgv_original: dict, para: pandas.Series, model: dict):
+def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dict):
     """
     实验模拟程序。用于运行单个实验。
 
@@ -245,7 +245,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para: pandas.Ser
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")  # DEBUG 专用
 
         ## 重置实验
-        A, A_last,A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
+        A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
         ## 步进式运行实验
         A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
         # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)

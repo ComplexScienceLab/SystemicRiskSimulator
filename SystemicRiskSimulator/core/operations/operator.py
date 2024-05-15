@@ -39,7 +39,7 @@ class Operator:
         if sgv['init_parameters_method'] == "import data":
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
-
+                num_parameters_works = len(parameters_works)
                 ## 创建或者连接 SQLite 数据库，统计实验组之上一次的作业之完成情况
                 time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
                 # 如果是首次运行，那么创建数据库并初始化表格
@@ -53,7 +53,7 @@ class Operator:
                                     (id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)""")
                     conn.commit()
                     # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
-                    for i in range(1, len(parameters_works) + 1):
+                    for i in range(1, num_parameters_works + 1):
                         c.execute("INSERT INTO experiments (id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
                         pass  # for
                     # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
@@ -86,7 +86,7 @@ class Operator:
                         list_idsExp_RAW.append(exp_id)
                         pass  # if
                     pass  # for
-                list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, len(parameters_works) + 1))
+                list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, num_parameters_works + 1))
                 list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
                 # 保存实验组作业完成状态信息
                 with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
@@ -95,13 +95,13 @@ class Operator:
                         "未运行过的实验组 id": list_idsExp_RAW,
                         "之前运行中被中断的实验组 id": list_idsExp_DOING,
                         "已完成的实验组 id": list_idsExp_DONE,
-                        "完成率": len(list_idsExp_DONE) / len(parameters_works),
-                        "中断率": len(list_idsExp_DOING) / len(parameters_works),
+                        "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                        "中断率": len(list_idsExp_DOING) / num_parameters_works,
                     }, f)
                     logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
                         "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                        "完成率": len(list_idsExp_DONE) / len(parameters_works),
-                        "中断率": len(list_idsExp_DOING) / len(parameters_works),
+                        "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                        "中断率": len(list_idsExp_DOING) / num_parameters_works,
                     }))
                     pass  # with
 
@@ -122,7 +122,7 @@ class Operator:
             Collector.export_parameter_data(parameters_works, para)  # 导出控制参数数据
             pass  # if
 
-        sgv['len_parameters_works'] = len(parameters_works)
+        sgv['len_parameters_works'] = num_parameters_works
 
         ## 构建本次实验组所需的所有模型
 
