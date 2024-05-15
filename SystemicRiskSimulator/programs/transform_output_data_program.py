@@ -12,8 +12,13 @@ from SystemicRiskSimulator.tools.visualization_tools import generate_one_interba
 
 from dask import delayed, compute
 import dask.dataframe as dd
+from dask.diagnostics import ProgressBar
+
 from SystemicRiskSimulator.external_packages import platform, Path, sqlite3, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool, multiprocessing, warnings, logging, json, sqlite3
+from multiprocessing import Lock
+
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
+from SystemicRiskSimulator.tools.logging_tools import record_work_state
 
 ## NOTE 导入包
 
@@ -21,6 +26,9 @@ if sgv['need_transformData']:
     from openpyxl import load_workbook
     from openpyxl.styles import PatternFill
     from openpyxl.utils import get_column_letter
+
+# 创建一个全局锁
+lock = Lock()
 
 
 def main():
@@ -115,23 +123,34 @@ def main():
                 "完成率": len(list_idsExp_DONE) / len(list_filepath_pkl_BB),
                 "中断率": len(list_idsExp_DOING) / len(list_filepath_pkl_BB),
             }))
-        # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
-        ids = [row[0] for row in rows]  # 获取实验组 id
-        status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-        Tools.draw_color_band_before_experiments(ids, status_预处理实验结果程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_预处理实验结果程序.png"))
+        # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
+        # ids = [row[0] for row in rows]  # 获取实验组 id
+        # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+        # Tools.draw_color_band_before_experiments(ids, status_预处理实验结果程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_预处理实验结果程序.png"))
         conn.close()
-
-        # 将函数包装为延迟任务
-        transform_BB_exp_files_delayed = delayed(transform_BB_exp_files)
-        transform_IB_exp_files_delayed = delayed(transform_IB_exp_files)
 
         ## 预处理 BB 实验结果数据
         if sgv['is_enable_multiprocessing']:
-            # #NOTE：多进程并行处理
+            # #NOTE：并行处理，用 dask 延迟任务 #DEBUG
+            # transform_BB_exp_files_delayed = delayed(transform_BB_exp_files)
+            #
+            # tasks_BB = []
+            # for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
+            #     exp_id = i + 1
+            #     print(f"BB exp_id = {exp_id}")
+            #     task_BB = transform_BB_exp_files_delayed(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+            #     tasks_BB.append(task_BB)
+            #     pass  # for
+            #
+            # with ProgressBar():
+            #     results_BB = compute(*tasks_BB)
+
+            # #NOTE：多进程并行处理 #DEBUG
             num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
             works = []
             for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
                 exp_id = i + 1
+                # print(f"BB exp_id = {exp_id}")
                 works.append((exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data']))
                 pass  # for
 
@@ -142,30 +161,36 @@ def main():
 
         else:
 
-            # #NOTE：串行处理
+            # #NOTE：串行处理 #DEBUG
             for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
                 exp_id = i + 1
+                # print(f"BB exp_id = {exp_id}")
                 transform_BB_exp_files(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
                 pass  # for
-
-            # #NOTE：串行处理，用 dask 延迟任务 #DEBUG
-            # tasks_BB = []
-            # for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
-            #     exp_id = i + 1
-            #     task_BB = transform_BB_exp_files_delayed(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
-            #     tasks_BB.append(task_BB)
-            #     pass  # for
-            # results_BB = compute(*tasks_BB)
 
             pass  # if
 
         list_filepath_pkl_IB = list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl'))  # 获取实验组输出数据pkl格式之IB数据之文件列表
         if sgv['is_enable_multiprocessing']:
-            # #NOTE：多进程并行处理
+
+            # #NOTE：并行处理，用 dask 延迟任务 #DEBUG
+            # transform_IB_exp_files_delayed = delayed(transform_IB_exp_files)
+            # tasks_IB = []
+            # for i, filepath_pkl_IB in enumerate(list_filepath_pkl_IB):
+            #     exp_id = i + 1
+            #     print(f"IB exp_id = {exp_id}")
+            #     task_IB = transform_IB_exp_files_delayed(exp_id, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+            #     tasks_IB.append(task_IB)
+            #     pass  # for
+            # with ProgressBar():
+            #     results_IB = compute(*tasks_IB)
+
+            # #NOTE：多进程并行处理 #DEBUG
             num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
             works = []
             for i, filepath_pkl_IB in enumerate(list_filepath_pkl_IB):
                 exp_id = i + 1
+                # print(f"IB exp_id = {exp_id}")
                 works.append((exp_id, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data']))
                 pass  # for
 
@@ -178,17 +203,9 @@ def main():
             # #NOTE：串行处理  #DEBUG
             for i, filepath_pkl_IB in enumerate(list_filepath_pkl_IB):
                 exp_id = i + 1
+                # print(f"IB exp_id = {exp_id}")
                 transform_IB_exp_files(exp_id, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
                 pass  # for
-
-            # # #NOTE：串行处理，用 dask 延迟任务 #DEBUG
-            # tasks_IB = []
-            # for i, filepath_pkl_IB in enumerate(list_filepath_pkl_IB):
-            #     exp_id = i + 1
-            #     task_IB = transform_IB_exp_files_delayed(exp_id, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
-            #     tasks_IB.append(task_IB)
-            #     pass  # for
-            # results_IB = compute(*tasks_IB)
 
             pass  # if
 
@@ -230,10 +247,10 @@ def main():
         }))
         pass  # with
 
-    # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之后的作业完成状态信息。
-    ids = [row[0] for row in rows]  # 获取实验组 id
-    status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-    Tools.draw_color_band_after_experiments(ids, status_预处理实验结果程序_运行状态, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_after_预处理实验结果程序.png"))
+    # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之后的作业完成状态信息。
+    # ids = [row[0] for row in rows]  # 获取实验组 id
+    # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+    # Tools.draw_color_band_after_experiments(ids, status_预处理实验结果程序_运行状态, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_after_预处理实验结果程序.png"))
 
     conn.close()  # 关闭数据库连接
 
@@ -254,13 +271,7 @@ def transform_BB_exp_files(exp_id: int, filepath_pkl_BB: Path, folderpath_experi
         None
     """
 
-    ## 记录本次实验作业的完成状态为 "DOING"
-    # 更新实验组作业状态为 "DOING"
-    conn = sqlite3.connect(Path(folderpath_experiments_output_log, "experiments_works_status.db"))
-    c = conn.cursor()
-    c.execute("INSERT OR REPLACE INTO experiments (id, status_预处理实验结果程序) VALUES (?, 'DOING')", (exp_id,))
-    conn.commit()
-    conn.close()
+    record_work_state(exp_id, 'status_预处理实验结果程序', 'DOING', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DOING"
 
     df_BB_original = pd.read_pickle(filepath_pkl_BB)
     num_agent = df_BB_original['id_agent'][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
@@ -346,13 +357,7 @@ def transform_BB_exp_files(exp_id: int, filepath_pkl_BB: Path, folderpath_experi
     #
     # wb_BB_panel.save(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
 
-    ## 记录本次实验作业的完成状态为 "DONE"
-    # 更新实验组作业状态为 "DONE"
-    conn = sqlite3.connect(Path(folderpath_experiments_output_log, "experiments_works_status.db"))
-    c = conn.cursor()
-    c.execute("UPDATE experiments SET status_预处理实验结果程序 = 'DONE' WHERE id = ?", (exp_id,))
-    conn.commit()
-    conn.close()
+    record_work_state(exp_id, 'status_预处理实验结果程序', 'DONE', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DONE"
 
     pass  # function
 
@@ -371,13 +376,7 @@ def transform_IB_exp_files(exp_id: int, filepath_pkl_IB: Path, folderpath_experi
         None
     """
 
-    ## 记录本次实验作业的完成状态为 "DOING"
-    # 更新实验组作业状态为 "DOING"
-    conn = sqlite3.connect(Path(folderpath_experiments_output_log, "experiments_works_status.db"))
-    c = conn.cursor()
-    c.execute("INSERT OR REPLACE INTO experiments (id, status_预处理实验结果程序) VALUES (?, 'DOING')", (exp_id,))
-    conn.commit()
-    conn.close()
+    record_work_state(exp_id, 'status_预处理实验结果程序', 'DOING', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DOING"
 
     df_IB_original = pd.read_pickle(filepath_pkl_IB)
     num_agent = df_IB_original['id_agent'][0].shape[0]
@@ -506,13 +505,7 @@ def transform_IB_exp_files(exp_id: int, filepath_pkl_IB: Path, folderpath_experi
     #
     # wb_IB_panel.save(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
 
-    ## 记录本次实验作业的完成状态为 "DONE"
-    # 更新实验组作业状态为 "DONE"
-    conn = sqlite3.connect(Path(folderpath_experiments_output_log, "experiments_works_status.db"))
-    c = conn.cursor()
-    c.execute("UPDATE experiments SET status_预处理实验结果程序 = 'DONE' WHERE id = ?", (exp_id,))
-    conn.commit()
-    conn.close()
+    record_work_state(exp_id, 'status_预处理实验结果程序', 'DONE', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DONE"
 
     pass  # function
 
