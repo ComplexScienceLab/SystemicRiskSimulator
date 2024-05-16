@@ -87,13 +87,16 @@ def simulator(config: dict):
 
         ## 设置日志
 
-        # 删除原有的主日志文件
-        for file in Path(sgv['folderpath_experiments_output_log']).glob("outputlog.txt"):
-            file.unlink()
+        if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+            # 删除原有的主日志文件
+            for file in Path(sgv['folderpath_experiments_output_log']).glob("outputlog.txt"):
+                file.unlink()
 
-        # 删除原有的各子实验日志文件，但是保留作业状态标记日志文件。
-        for file in Path(sgv['folderpath_experiments_output_log']).glob("outputlog_*exp.txt"):
-            file.unlink()
+            # 删除原有的各子实验日志文件，但是保留作业状态标记日志文件。
+            for file in Path(sgv['folderpath_experiments_output_log']).glob("outputlog_*exp.txt"):
+                file.unlink()
+
+            pass  # if
 
         logger = logging.getLogger()
         logger.setLevel(sgv['test_logging'])
@@ -118,7 +121,7 @@ def simulator(config: dict):
         ## 关闭日志记录器
         logger.removeHandler(log_file_handler)
 
-        ## 运行实验组模拟程序 # NOW 如果要做并行仿真模拟或者并行 RL 训练，需要考虑改成一个单独的程序做调用
+        ## 运行实验组模拟程序 # TODO 如果要做并行仿真模拟或者并行 RL 训练，需要考虑改成一个单独的程序做调用
         # from SystemicRiskSimulator.programs.experiments_program import fun_experiments_program  # 原来的程序
         # fun_experiments_program(sgv, para)
         sgv_pkl = pickle.dumps(sgv)
