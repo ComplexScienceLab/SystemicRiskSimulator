@@ -60,9 +60,9 @@ class CONST:
         # cls.ONES1 = np.ones((num, 1))  # 一维幺向量常量
         cls.ONES1 = np.ones(num, dtype=MoneyType)  # 一维幺向量常量
         cls.ONES2 = np.ones((num, num), dtype=MoneyType)  # 二维方阵幺向量常量
-        # cls.MISSING1 = np.full((num, 1), np.NaN)  # 一维缺失值向量常量
-        cls.MISSING1 = np.full(num, np.NaN)  # 一维缺失值向量常量
-        cls.MISSING2 = np.full((num, num), np.NaN)  # 二维方阵确失值常量
+        # cls.MISSING1 = np.full((num, 1), np.nan)  # 一维缺失值向量常量
+        cls.MISSING1 = np.full(num, np.nan)  # 一维缺失值向量常量
+        cls.MISSING2 = np.full((num, num), np.nan)  # 二维方阵确失值常量
         # cls.NONE1 = np.empty((num, 1), dtype=object)  # 一维空向量常量
         cls.NONE1 = np.empty(num, dtype=object)  # 一维空向量常量
         cls.NONE2 = np.empty((num, num), dtype=object)  # 二维空向量常量

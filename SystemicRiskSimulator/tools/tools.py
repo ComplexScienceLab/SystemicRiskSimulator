@@ -654,7 +654,7 @@ class Tools:
 
                 # 为每个键生成一个类属性
                 for j, key in enumerate(dict_.keys()):
-                    file.write(f'        self.{key} = np.NaN  # {comments[j]}\n')
+                    file.write(f'        self.{key} = np.nan  # {comments[j]}\n')
 
                 # 在类之间添加空行
                 file.write('\n')
