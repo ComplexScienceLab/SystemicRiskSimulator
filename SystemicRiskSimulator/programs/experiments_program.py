@@ -304,7 +304,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         env_PettingZoo = modelEntity.content['content_environment'](A, A_data, para, sgv, content_model)
         # observations, infos = env_PettingZoo.reset()
 
-        ray.init()  # 初始化 Ray
+        # ray.init()  # 初始化 Ray
 
         def env_creator(args):
             env = modelEntity.content['content_environment'](A, A_data, para, sgv, content_model)
