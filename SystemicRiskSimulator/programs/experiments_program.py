@@ -7,7 +7,7 @@
 # -*- coding: utf-8 -*-
 
 
-from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, sqlite3, base64, pickle, multiprocessing, Pool, json
+from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, sqlite3, base64, pickle, multiprocessing, Pool, json, np
 from SystemicRiskSimulator.core.operations.operator import Operator
 from SystemicRiskSimulator.tools.tools import Tools
 
@@ -16,6 +16,19 @@ def main(sgv):
     """
     实验组模拟程序。用于运行实验组。
     """
+    # # %% 设置工作目录。
+    # # folderpath_settings=Tools.setup_working_directory()
+    # if Path(sys.argv[0]).name == Path(__file__).name:
+    #     # 在控制台运行，切换到脚本所在的文件夹
+    #     folderpath = Path(__file__).resolve().parent
+    #     os.chdir(folderpath)
+    # else:
+    #     # 通过其他脚本运行，执行特定的代码
+    #     list_args = Tools.decode_args([*sys.argv[1:]])
+    #     folderpath = list_args[0]
+    #     pass  # if
+    #
+    # folderpath_parameters = folderpath
 
     # %% 预安装模型、数据，运行实验组
 
@@ -274,7 +287,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         )
 
         ## 重置实验
-        A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+        A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
 
         env_name = model.attribute.entity_name
 
@@ -282,17 +295,19 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
 
         process = modelEntity.process
 
-        content_model = modelEntity.content['content_model']
-        content_agents = modelEntity.content['content_agents']
-        content_finance = modelEntity.content['content_finance']
-        env_PettingZoo = modelEntity.environment(A, A_data, para, sgv, content_model)
-
+        # Content_agents = modelEntity.content['content_agents']
+        content_agents = modelEntity.content['content_agents'](np.array(para['Strategy_default']))
+        # Content_finance = modelEntity.content['content_finance']
+        content_finance = modelEntity.content['content_finance']()
+        # Content_model = modelEntity.content['content_model']
+        content_model = modelEntity.content['content_model'](content_finance, content_agents)
+        env_PettingZoo = modelEntity.content['content_environment'](A, A_data, para, sgv, content_model)
         # observations, infos = env_PettingZoo.reset()
 
         ray.init()  # 初始化 Ray
 
         def env_creator(args):
-            env = modelEntity.environment(A, A_data, para, sgv, content_model)
+            env = modelEntity.content['content_environment'](A, A_data, para, sgv, content_model)
             return env  # 返回环境实例
 
         # 注册自定义的 PettingZoo 环境
@@ -310,7 +325,33 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         #         print("trainer.train() result: {}".format(result))
         #         super().on_train_result(trainer, result)
 
-        # 配置项
+        # # 配置项
+        # config = {
+        #     "env": env_name,
+        #     "clip_actions": sgv['clip_actions'],
+        #     "clip_rewards": sgv['clip_rewards'],
+        #     "num_gpus": int(os.environ.get("RLLIB_NUM_GPUS", "0")),
+        #     "num_workers": sgv['num_rollout_workers'],
+        #     "num_envs_per_worker": sgv['num_envs_per_worker'],
+        #     "rollout_fragment_length": sgv['rollout_fragment_length'],
+        #     "batch_mode": "complete_episodes",  # 可选值为 "complete_episodes" 或 "truncate_episodes"。这里建议用 "complete_episodes"。
+        #     "log_level": "ERROR",
+        #     "metrics_num_episodes_for_smoothing": sgv['metrics_num_episodes_for_smoothing'],
+        #     "train_batch_size": sgv['train_batch_size'],
+        #     "lr": sgv['lr'],
+        #     "gamma": sgv['gamma'],
+        #     "lambda": sgv['lambda_'],
+        #     "use_gae": sgv['use_gae'],
+        #     "clip_param": sgv['clip_param'],
+        #     "grad_clip": sgv['grad_clip'],
+        #     "entropy_coeff": sgv['entropy_coeff'],
+        #     "vf_loss_coeff": sgv['vf_loss_coeff'],
+        #     "sgd_minibatch_size": sgv['sgd_minibatch_size'],
+        #     "num_sgd_iter": sgv['num_sgd_iter'],
+        #     # "optimizer": {Adam},  # 如果需要设置优化器，可以取消这行的注释，并替换 Adam 为的优化器
+        # }
+
+        # 配置项 #HACK 旧版已经无法兼容了，仅保留备存
         config = (
             PPOConfig()
             .experimental(_enable_new_api_stack=False)
@@ -318,13 +359,8 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
                 env=env_name,
                 clip_actions=sgv['clip_actions'],
                 clip_rewards=sgv['clip_rewards'],
-                disable_env_checking=sgv['disable_env_checking'],
+                # disable_env_checking=sgv['disable_env_checking'],
             )
-            # .optimizer(
-            #     type="adam",
-            #     adam_eps=1e-8,
-            #     grad_clip=None,
-            # )
             .resources(
                 num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")),
             )
@@ -378,7 +414,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         #             checkpoint_frequency=10,
         #         ),
         #     ),
-        #     param_space=config,
+        #     config=config.to_dict(),
         # ).fit()
 
         ## 收尾实验
