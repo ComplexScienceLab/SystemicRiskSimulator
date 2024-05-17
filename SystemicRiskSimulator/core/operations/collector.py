@@ -399,13 +399,13 @@ class Collector:
             mtime_of_file_parameters_works_pkl = filepath_parameters_works_pkl.stat().st_mtime  # 获取parameters_works.pkl文件的最后修改时间
             if (mtime_of_file_parameters_pkl > mtime_of_file_parameters_works_pkl) or (mtime_of_file_parameters_py > mtime_of_file_parameters_works_pkl):
                 is_generate_parameters_works_data = True
-                print("参数文件有更新，需要重新生成参数作业数据。")
+                print("参数文件有更新，需要重新导出参数作业数据。")
             else:
                 is_generate_parameters_works_data = False
-                print("参数文件没有更新，不需要重新生成参数作业数据。")
+                print("参数文件没有更新，不需要重新导出参数作业数据。")
         else:
             is_generate_parameters_works_data = True
-            print("参数作业数据文件不存在，需要重新生成参数作业数据。")
+            print("参数作业数据文件不存在，需要重新导出参数作业数据。")
             pass  # if
         if is_generate_parameters_works_data:
             Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
