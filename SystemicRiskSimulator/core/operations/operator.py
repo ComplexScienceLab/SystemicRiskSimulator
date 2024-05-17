@@ -43,17 +43,23 @@ class Operator:
                 ## SQLite 数据库统计实验组之上一次的作业之完成情况
                 time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
                 # 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续删除原有的作业数据库再重建
-                is_recreate_experiments_works_status_db = False
                 if os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
+                    is_exist_experiments_works_status_db = True
                     mtime_of_file_parameters_pkl = Path(sgv['folderpath_parameters'], "parameters.pkl").resolve().stat().st_mtime
                     mtime_of_file_experimentsWorksStatus_db = Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db").resolve().stat().st_mtime
                     if mtime_of_file_parameters_pkl > mtime_of_file_experimentsWorksStatus_db:
                         is_recreate_experiments_works_status_db = True
+                    else:
+                        is_recreate_experiments_works_status_db = False
                         pass  # if
+                else:
+                    is_exist_experiments_works_status_db = False
+                    is_recreate_experiments_works_status_db = True
                     pass  # if
-                if is_recreate_experiments_works_status_db:  # 如果需要重新创建实验组作业状态数据库
+                if is_exist_experiments_works_status_db:
                     os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-                    # 创建数据库并初始化表格
+                    pass  # if
+                if is_recreate_experiments_works_status_db:  # 创建数据库并初始化表格
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
                     c.execute("""CREATE TABLE IF NOT EXISTS experiments
