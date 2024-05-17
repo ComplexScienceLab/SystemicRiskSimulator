@@ -40,13 +40,20 @@ class Operator:
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
                 num_parameters_works = len(parameters_works)
-                ## 创建或者连接 SQLite 数据库，统计实验组之上一次的作业之完成情况
+                ## SQLite 数据库统计实验组之上一次的作业之完成情况
                 time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
-                # 如果是首次运行，那么创建数据库并初始化表格
-                if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-                    if os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
-                        os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                # 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续删除原有的作业数据库再重建
+                is_recreate_experiments_works_status_db = False
+                if os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
+                    mtime_of_file_parameters_pkl = Path(sgv['folderpath_parameters'], "parameters.pkl").resolve().stat().st_mtime
+                    mtime_of_file_experimentsWorksStatus_db = Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db").resolve().stat().st_mtime
+                    if mtime_of_file_parameters_pkl > mtime_of_file_experimentsWorksStatus_db:
+                        is_recreate_experiments_works_status_db = True
                         pass  # if
+                    pass  # if
+                if is_recreate_experiments_works_status_db:  # 如果需要重新创建实验组作业状态数据库
+                    os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                    # 创建数据库并初始化表格
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
                     c.execute("""CREATE TABLE IF NOT EXISTS experiments
@@ -56,20 +63,15 @@ class Operator:
                     for i in range(1, num_parameters_works + 1):
                         c.execute("INSERT INTO experiments (id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
                         pass  # for
-                    # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
+                else:
+                    # 连接现有数据库
+                    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                    c = conn.cursor()
                     if sgv['is_rerun_all_done_works_in_the_same_experiments']:
                         c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
                         conn.commit()
                         pass  # if
-                else:
-                    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-                    c = conn.cursor()
                     pass  # if
-                # # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
-                # if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-                #     c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
-                #     conn.commit()
-                #     pass  # if
                 # 检查实验组作业完成状态
                 c.execute("SELECT id, status_实验组模拟程序 FROM experiments")
                 rows = c.fetchall()
