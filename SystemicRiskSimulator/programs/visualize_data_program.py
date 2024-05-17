@@ -18,12 +18,7 @@ from SystemicRiskSimulator.external_packages import platform, Path, re, glob, pd
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
 
-def main():
-    # 从命令行参数获取配置字典
-    sgv_base64 = sys.argv[1]
-    sgv_pkl = base64.b64decode(sgv_base64)
-    sgv = pickle.loads(sgv_pkl)
-
+def main(sgv):
     if sgv['is_ignore_warning']:
         warnings.filterwarnings("ignore")  # 忽略警告
 
@@ -1956,4 +1951,9 @@ def process_one_balanceSheet(args):
 
 
 if __name__ == '__main__':
-    main()
+    # 从命令行参数获取配置字典
+    sgv_base64 = sys.argv[1]
+    sgv_pkl = base64.b64decode(sgv_base64)
+    sgv = pickle.loads(sgv_pkl)
+
+    main(sgv)

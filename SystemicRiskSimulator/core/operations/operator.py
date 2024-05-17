@@ -127,7 +127,7 @@ class Operator:
         ## 构建本次实验组所需的所有模型
 
         ## 如果处于测试状态，那么就不需要复制模型库里的模型到模拟器里了
-        if sgv['is_develope_model']:
+        if sgv['is_develope_mode'] and sgv['is_maintain_model_files_in_simulator_when_develope_mode']:
             # 如果处于开发调试模式，则复制正在开发的模型到输出文件夹之配置文件夹下
             Tools._delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
             Tools._copy_files_from_other_folders(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])

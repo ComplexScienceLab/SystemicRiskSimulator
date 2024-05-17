@@ -31,12 +31,7 @@ if sgv['need_transformData']:
 # lock = Lock()
 
 
-def main():
-    # 从命令行参数获取配置字典
-    sgv_base64 = sys.argv[1]
-    sgv_pkl = base64.b64decode(sgv_base64)
-    sgv = pickle.loads(sgv_pkl)
-
+def main(sgv):
     if sgv['is_ignore_warning']:
         warnings.filterwarnings("ignore")  # 忽略警告
 
@@ -162,8 +157,6 @@ def main():
                 pass  # for
 
             pass  # if
-
-
 
         pass  # if 导入Pandas格式的实验结果数据转换为面板形式再导出
 
@@ -446,7 +439,10 @@ def transform_exp_files(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Pat
     pass  # function
 
 
-
-
 if __name__ == '__main__':
-    main()
+    # 从命令行参数获取配置字典
+    sgv_base64 = sys.argv[1]
+    sgv_pkl = base64.b64decode(sgv_base64)
+    sgv = pickle.loads(sgv_pkl)
+
+    main(sgv)

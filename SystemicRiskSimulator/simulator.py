@@ -106,7 +106,7 @@ def simulator(config: dict):
         log_console_handler = logging.StreamHandler()
         logger.addHandler(log_console_handler)
 
-        if sgv['is_develope_model']:
+        if sgv['is_develope_mode']:
             logging.info("\n------------ 开发与调试模式！ ---------------\n")
             pass  # if
         logging.info("\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n")
@@ -122,22 +122,26 @@ def simulator(config: dict):
         logger.removeHandler(log_file_handler)
 
         ## 运行实验组模拟程序 # TODO 如果要做并行仿真模拟或者并行 RL 训练，需要考虑改成一个单独的程序做调用
-        # from SystemicRiskSimulator.programs.experiments_program import fun_experiments_program  # 原来的程序
-        # fun_experiments_program(sgv, para)
-        sgv_pkl = pickle.dumps(sgv)
-        sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
-        # para_pkl = pickle.dumps(para)
-        # para_base64 = base64.b64encode(para_pkl).decode('utf-8')
-        start_time = time.time()
-        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64])
-        # subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64, para_base64])
+        if not sgv['is_develope_mode']:
+            sgv_pkl = pickle.dumps(sgv)
+            sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
+            # para_pkl = pickle.dumps(para)
+            # para_base64 = base64.b64encode(para_pkl).decode('utf-8')
+            start_time = time.time()
+            subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64])
+            # subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64, para_base64])
+        else:
+            from SystemicRiskSimulator.programs.experiments_program import main
+            start_time = time.time()
+            main(sgv)
+            pass  # if
 
         ## 继续打开日志记录器
         logger.addHandler(log_file_handler)
         logger.addHandler(log_console_handler)
 
         end_time = time.time()
-        logging.info(f"\n实验组模拟程序运行总时长：{end_time - start_time} 秒。\n")
+        logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
 
         ## 关闭日志
         log_file_handler.close()
@@ -147,22 +151,58 @@ def simulator(config: dict):
 
     # %% 是否运作预处理实验结果程序
     if sgv['schedule_operation']['预处理实验结果程序']:
-        sgv_pkl = pickle.dumps(sgv)
-        sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
-        start_time = time.time()
-        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/transform_output_data_program.py')), sgv_base64])
+        if not sgv['is_develope_mode']:
+            sgv_pkl = pickle.dumps(sgv)
+            sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
+            start_time = time.time()
+            subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/transform_output_data_program.py')), sgv_base64])
+            end_time = time.time()
+            print(f"\n预处理实验结果程序运行总时长：{end_time - start_time} 秒。\n")
+        else:
+            from SystemicRiskSimulator.programs.transform_output_data_program import main
+            start_time = time.time()
+            main(sgv)
+            pass  # if
+
+        ## 继续打开日志记录器
+        logger.addHandler(log_file_handler)
+        logger.addHandler(log_console_handler)
+
         end_time = time.time()
-        print(f"\n预处理实验结果程序运行总时长：{end_time - start_time} 秒。\n")
+        logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
+
+        ## 关闭日志
+        log_file_handler.close()
+        logger.removeHandler(log_file_handler)
+
         pass  # if
 
     # %% 是否可视化结果程序
     if sgv['schedule_operation']['可视化结果程序']:
-        sgv_pkl = pickle.dumps(sgv)
-        sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
-        start_time = time.time()
-        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/visualize_data_program.py')), sgv_base64])
+        if not sgv['is_develope_mode']:
+            sgv_pkl = pickle.dumps(sgv)
+            sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
+            start_time = time.time()
+            subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/visualize_data_program.py')), sgv_base64])
+            end_time = time.time()
+            print(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
+        else:
+            from SystemicRiskSimulator.programs.visualize_data_program import main
+            start_time = time.time()
+            main(sgv)
+            pass  # if
+
+        ## 继续打开日志记录器
+        logger.addHandler(log_file_handler)
+        logger.addHandler(log_console_handler)
+
         end_time = time.time()
-        print(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
+        logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
+
+        ## 关闭日志
+        log_file_handler.close()
+        logger.removeHandler(log_file_handler)
+
         pass  # if
 
     # %% 清理
@@ -170,6 +210,6 @@ def simulator(config: dict):
     Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])
     Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
     Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    if not sgv['is_develope_model']:
+    if not sgv['is_maintain_model_files_in_simulator_when_develope_mode']:
         Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
         pass  # if

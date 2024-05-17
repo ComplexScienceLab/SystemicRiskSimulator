@@ -12,21 +12,12 @@ from SystemicRiskSimulator.core.operations.operator import Operator
 from SystemicRiskSimulator.tools.tools import Tools
 
 
-def main():
+def main(sgv):
     """
     实验组模拟程序。用于运行实验组。
     """
 
     # %% 预安装模型、数据，运行实验组
-
-    # 从命令行参数获取配置字典
-    sgv_base64 = sys.argv[1]
-    sgv_pkl = base64.b64decode(sgv_base64)
-    sgv = pickle.loads(sgv_pkl)
-
-    # para_base64 = sys.argv[2]
-    # para_pkl = base64.b64decode(para_base64)
-    # paras_works = pickle.loads(para_pkl)
 
     ## 设置主进程日志
     logger = logging.getLogger()
@@ -401,4 +392,9 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
 pass  # function
 
 if __name__ == '__main__':
-    main()
+    # 从命令行参数获取配置字典
+    sgv_base64 = sys.argv[1]
+    sgv_pkl = base64.b64decode(sgv_base64)
+    sgv = pickle.loads(sgv_pkl)
+
+    main(sgv)
