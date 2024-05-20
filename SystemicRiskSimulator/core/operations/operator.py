@@ -332,7 +332,7 @@ class Operator:
     @classmethod
     def operate_step_experiment(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
-        运作步进实验。用于使用使用强化学习环境工具包自定义的模型。
+        运作步进实验。用于使用强化学习环境工具包自定义的模型。
 
         Args:
             A (SystemicRiskAgent): 多主体
