@@ -666,7 +666,7 @@ class Tools:
     @classmethod
     def draw_color_band_before_experiments(cls, ids: list, process_status: list, list_idsExp_PLAN: list, list_idsExp_TASK: list, filepath_to_save: Path):
         """
-        绘制实验组的状态分布图
+        绘制实验组的状态分布图  #BUG 速度太慢，需要优化。
 
         Args:
             ids (list): 实验组 id
@@ -705,7 +705,7 @@ class Tools:
     @classmethod
     def draw_color_band_after_experiments(cls, ids: list, process_status: list, filepath_to_save: Path):
         """
-        绘制实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
+        绘制实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。  #BUG 速度太慢，需要优化。
 
         Args:
             ids (list): 实验组 id
