@@ -33,8 +33,8 @@ def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: 
     A_IB_total = np.sum(A_IB)  # 计算银行间总资产
     Z_IB_total = np.sum(Z_IB)  # 计算银行间总负债
     if A_IB_total != Z_IB_total:  # 如果总资产不等于总负债
-        A_IB = np.append(A_IB, np.max(Z_IB_total - A_IB_total, 0))  # 创建虚拟银行以平衡总资产和总负债
-        Z_IB = np.append(Z_IB, np.max(A_IB_total - Z_IB_total, 0))
+        A_IB = np.append(A_IB, np.maximum(Z_IB_total - A_IB_total, 0))  # 创建虚拟银行以平衡总资产和总负债
+        Z_IB = np.append(Z_IB, np.maximum(A_IB_total - Z_IB_total, 0))
         N += 1  # 银行数量加1
         is_add_virtual_bank = True  # 标记是否添加了虚拟银行
     else:
