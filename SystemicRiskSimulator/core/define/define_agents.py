@@ -178,7 +178,7 @@ class BankInterbank(BaseInterAgents):
     ilq = np.nan  # 信息邻接矩阵之于银行间流动性短缺的 is_illiquid
     br = np.nan  # 信息邻接矩阵之于银行间破产的 is_bankrupt
 
-    theta_IB_def = np.float32  # 银行间资产负债违约分配比例 theta_IB_def
+    theta_IB_def = MoneyType  # 银行间资产负债违约分配比例 theta_IB_def
 
     # cre = np.nan  # 信息列表之于各银行之债权方银行编号 list_creditors
     # deb = np.nan  # 信息列表之于各银行之债务方银行编号 list_debtors
