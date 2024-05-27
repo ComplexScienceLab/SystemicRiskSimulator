@@ -4,8 +4,8 @@
 基于《方意_荆中博_2022_外部冲击下系统性金融风险的生成机制》附录一：最大信息熵算法
 """
 
-import numpy as np
-import time
+from SystemicRiskSimulator.external_packages import np, time
+from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import adjust_A_IB_Z_IB_with_virtual_bank, adjust_A_IB_Z_IB_by_resize
 
 
 def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: bool = False, iteration_threshold: float = 1e-3, max_iteration: int = 30, denominator_precition_threshold: float = 1e-4):
@@ -29,16 +29,17 @@ def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: 
         Z_IB_ij (np.array): 银行间负债邻接矩阵
     """
 
+    is_add_virtual_bank = False  # 是否添加了虚拟银行
+
+    # ## #NOTE 调整方案一：添加虚拟银行
+    # A_IB, Z_IB, is_add_virtual_bank = adjust_A_IB_Z_IB_with_virtual_bank(A_IB, Z_IB)
+
+    ## #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+    A_IB, Z_IB = adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB)
+
     N = A_IB.shape[0]  # 获取银行数量
     A_IB_total = np.sum(A_IB)  # 计算银行间总资产
     Z_IB_total = np.sum(Z_IB)  # 计算银行间总负债
-    if A_IB_total != Z_IB_total:  # 如果总资产不等于总负债
-        A_IB = np.append(A_IB, np.maximum(Z_IB_total - A_IB_total, 0))  # 创建虚拟银行以平衡总资产和总负债
-        Z_IB = np.append(Z_IB, np.maximum(A_IB_total - Z_IB_total, 0))
-        N += 1  # 银行数量加1
-        is_add_virtual_bank = True  # 标记是否添加了虚拟银行
-    else:
-        is_add_virtual_bank = False
 
     A_IB_i_star = A_IB / np.max([A_IB, Z_IB])  # 标准化银行间资产负债矩阵
     Z_IB_i_star = Z_IB / np.max([A_IB, Z_IB])
