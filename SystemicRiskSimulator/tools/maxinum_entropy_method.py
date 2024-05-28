@@ -6,9 +6,10 @@
 
 from SystemicRiskSimulator.external_packages import np, time
 from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import adjust_A_IB_Z_IB_with_virtual_bank, adjust_A_IB_Z_IB_by_resize
+from scipy import optimize
 
 
-def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: bool = False, iteration_threshold: float = 1e-3, max_iteration: int = 30, denominator_precition_threshold: float = 1e-4):
+def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, target_density: float = 0.25, is_show_detal: bool = False, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
     """
     通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
@@ -19,6 +20,7 @@ def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: 
     Args:
         A_IB (np.array): 银行间资产邻接矩阵
         Z_IB (np.array): 银行间负债邻接矩阵
+        target_density (float): 邻接矩阵指定的密度。默认值 0.25
         is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float, optional): 迭代阈值。默认值 1e-3
         max_iteration (int, optional): 最大迭代次数。默认值 30
@@ -31,19 +33,41 @@ def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: 
 
     is_add_virtual_bank = False  # 是否添加了虚拟银行
 
+    ## 预处理维度
+    A_IB, Z_IB = A_IB.flatten(), Z_IB.flatten()
+
+    ## 调整银行资产负债表使得总资产与总负债相等
+
+    ## #NOTE 调整方案〇：无需调整
+    # A_IB_adjasted, Z_IB_adjasted = A_IB, Z_IB
+
     # ## #NOTE 调整方案一：添加虚拟银行
-    # A_IB, Z_IB, is_add_virtual_bank = adjust_A_IB_Z_IB_with_virtual_bank(A_IB, Z_IB)
+    # A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB, Z_IB)
 
     ## #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
-    A_IB, Z_IB = adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB)
+    A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB)
 
-    N = A_IB.shape[0]  # 获取银行数量
-    A_IB_total = np.sum(A_IB)  # 计算银行间总资产
-    Z_IB_total = np.sum(Z_IB)  # 计算银行间总负债
+    N = A_IB_adjasted.shape[0]  # 获取银行数量
 
-    A_IB_i_star = A_IB / np.max([A_IB, Z_IB])  # 标准化银行间资产负债矩阵
-    Z_IB_i_star = Z_IB / np.max([A_IB, Z_IB])
-    X_ij_star = np.outer(A_IB_i_star, Z_IB_i_star)  # 初始化准双边敞口，通过外积计算
+    ## 预置一些先验的元素值
+    X_ij_fixedVal = np.full((N, N), np.nan)  # 使用np.nan表示没有被预置的元素
+
+    # 预置规则 1：对角线为 0
+    np.fill_diagonal(X_ij_fixedVal, 0)
+
+    ## 根据预置的元素值，重新计算银行间资产负债矩阵之行和、列和
+    X_ij_mask = np.isnan(X_ij_fixedVal)  # 预置的元素值的掩码
+    A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(X_ij_mask, 0, X_ij_fixedVal), axis=1)
+    Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(X_ij_mask, 0, X_ij_fixedVal), axis=0)
+
+    A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])  # 标准化银行间资产负债矩阵
+    Z_IB_i_star = Z_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])
+    X_ij_star_0 = np.sqrt(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
+    # X_ij_star_0 = np.outer(A_IB_i_star, Z_IB_i_star)  # 初始化准双边敞口，通过外积计算
+    X_ij_star_prior_0 = np.zeros((N, N))  # 初始化准双边敞口
+    X_ij_star_prior_0[X_ij_mask] = X_ij_star_0[X_ij_mask] * (X_ij_star_0.sum() / np.outer(A_IB_i_star, Z_IB_i_star)[X_ij_mask].sum())  # 初始化准双边敞口，通过外积计算
+    X_ij_star_prior_0[~X_ij_mask] = X_ij_fixedVal[~X_ij_mask]
+    X_ij_star = X_ij_star_prior_0.copy()  # 初始化标准双边敞口矩阵
 
     if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
         import matplotlib.pyplot as plt
@@ -67,6 +91,27 @@ def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: 
     while iteration < max_iteration:
         X_ij_prev = X_ij_star.copy()  # 保存上一次迭代的双边敞口矩阵
 
+        # ## #NOTE 考虑预置元素 #BUG 这个方案运行之后的结果误差很大，以至于无法使用。原因未知。
+        # for i in range(N):
+        #     X_j_mask = np.isnan(X_ij_fixedVal[:, i])
+        #     if X_j_mask.any():
+        #         X_j_prev = np.sum(X_ij_prev[:, i][X_j_mask])
+        #         if X_j_prev == 0:  # 行约束迭代
+        #             X_ij_star[:, i][X_j_mask] = 0
+        #         else:
+        #             denominator = X_j_prev if X_j_prev > denominator_precition_threshold else denominator_precition_threshold
+        #             X_ij_star[:, i][X_j_mask] = X_ij_prev[:, i][X_j_mask] * Z_IB_i_star[i] / denominator
+        #
+        #     X_i_mask = np.isnan(X_ij_fixedVal[i, :])
+        #     if X_i_mask.any():
+        #         X_i_prev = np.sum(X_ij_prev[i, :][X_i_mask])
+        #         if X_i_prev == 0:  # 列约束迭代
+        #             X_ij_star[i, :][X_i_mask] = 0
+        #         else:
+        #             denominator = X_i_prev if X_i_prev > denominator_precition_threshold else denominator_precition_threshold
+        #             X_ij_star[i, :][X_i_mask] = X_ij_prev[i, :][X_i_mask] * A_IB_i_star[i] / denominator
+
+        ## NOTE 不考虑预置元素
         for i in range(N):
             if np.sum(X_ij_prev[:, i]) == 0:  # 行约束迭代
                 X_ij_star[:, i] = 0
@@ -87,7 +132,8 @@ def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: 
             # 创建热力图
             sns.heatmap(X_ij_star, cmap=cmap, vmin=0, vmax=X_ij_star.max(), cbar=True)
             # 添加小于0的黑色掩码
-            mask = X_ij_star < 0
+            mask = X_ij_mask
+            # mask = X_ij_star < 0
             sns.heatmap(mask, cmap='gray', alpha=0.3, cbar=False, mask=mask)
             # 设置标题和轴标签
             ax.set_title('Iteration: {}'.format(iteration))
@@ -106,8 +152,21 @@ def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: 
 
         pass  # while
 
-    A_IB_ij = X_ij_star / X_ij_star.sum() * np.max([A_IB_total, Z_IB_total])  # 计算最终的银行间资产矩阵
-    Z_IB_ij = A_IB_ij.copy().T  # 计算最终的银行间负债矩阵
+    ## #NOTE 计算不考虑预置值的最终的银行间资产矩阵
+    A_IB_ij = X_ij_star / X_ij_star.sum() * np.max([A_IB_adjasted_prior.sum(), Z_IB_adjasted_prior.sum()])  # 计算最终的银行间资产矩阵
+    Z_IB_ij = A_IB_ij.copy().T
+
+    # ## #NOTE 计算预置值之后的最终的银行间资产矩阵、银行间负债矩阵  #BUG 这个方案运行之后的结果误差很大，以至于无法使用。原因未知。
+    # A_IB_ij = np.zeros((N, N))
+    # A_IB_ij[X_ij_mask] = X_ij_star[X_ij_mask] * (np.max([A_IB_adjasted_prior.sum(), Z_IB_adjasted_prior.sum()]) / X_ij_star[X_ij_mask].sum())
+    # # A_IB_ij[X_ij_mask] = X_ij_star[X_ij_mask] / X_ij_star[X_ij_mask].sum() * np.max([A_IB_adjasted.sum(), Z_IB_adjasted.sum()])
+    # A_IB_ij[~X_ij_mask] = X_ij_fixedVal[~X_ij_mask]  # 计算包括预置部分的最终的银行间资产矩阵、银行间负债矩阵
+    # Z_IB_ij = A_IB_ij.copy().T
+
+    # #DEBUG 测试是否正确
+    print(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
+    print(f"行元素和：{np.round(A_IB_ij.sum(axis=1) - A_IB_adjasted)}")
+    print(f"列元素和：{np.round(A_IB_ij.sum(axis=0) - Z_IB_adjasted)}")
 
     print("计算最大熵值法计算边权重完成。")
 
@@ -117,12 +176,12 @@ def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, is_show_detal: 
         return A_IB_ij, Z_IB_ij
 
 # ## 基于以下程序之 Stata 版本翻译成的 Python 版本： #HACK 感觉这个版本不太合适于自己的情况
-# 熵值法通用程序 *********
-#
-# *          设计者：周晶
-#
-# *          单  位：中南财经政法大学工商管理学院农业经济系
-# *          电  邮：zhoucejing@126.com
+# # 熵值法通用程序 *********
+# #
+# # *          设计者：周晶
+# #
+# # *          单  位：中南财经政法大学工商管理学院农业经济系
+# # *          电  邮：zhoucejing@126.com
 #
 # import numpy as np
 #
