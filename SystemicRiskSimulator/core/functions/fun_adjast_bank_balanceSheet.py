@@ -60,12 +60,16 @@ def adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB):
         Z_IB_adjasted = Z_IB
 
     # 再进一步微调，使得总资产和总负债相等
-    if A_IB_adjasted.sum() != Z_IB_adjasted.sum():
+    times = 0
+    while np.abs(A_IB_adjasted.sum() - Z_IB_adjasted.sum()) > 1e-10 or times < 1000:
         diff = np.abs(A_IB_adjasted.sum() - Z_IB_adjasted.sum())
         if A_IB_adjasted.sum() > Z_IB_adjasted.sum():
             A_IB_adjasted[0] = A_IB_adjasted[0] - diff
         else:
             Z_IB_adjasted[0] = Z_IB_adjasted[0] - diff
+            pass  # if
+        times += 1
+        pass  # while
 
     # DEBUG 查看二者是否相等
     print(np.sum(A_IB_adjasted) == np.sum(Z_IB_adjasted))
