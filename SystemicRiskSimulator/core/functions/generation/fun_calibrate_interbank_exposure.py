@@ -12,8 +12,8 @@ def calibrate_interbank_exposure(A_IB, Z_IB, target_density, n_samples_calib=10,
     中的 calibrate_interbank_exposure 函数,并将结果转换为 NumPy 数组。
 
     Args:
-        A_IB (np.ndarray): 银行间资产邻接矩阵
-        Z_IB (np.ndarray): 银行间负债邻接矩阵
+        A_IB (np.ndarray): 银行间资产
+        Z_IB (np.ndarray): 银行间负债
         target_density (float): 目标密度
         n_samples_calib (int, optional): 校准时生成的矩阵样本数量。默认为 10。
         thin (int, optional): 校准时的稀疏化参数。默认为 100。
@@ -47,7 +47,7 @@ def calibrate_interbank_exposure(A_IB, Z_IB, target_density, n_samples_calib=10,
     Z_IB_r = numpy2ri.py2rpy(Z_IB_adjasted)
 
     # 调用 R 中的 calibrate_interbank_exposure 函数
-    model = systemicrisk.calibrate_ER(A_IB_r, Z_IB_r, target_density, n_samples_calib, thin)
+    model = systemicrisk.calibrate_ER(A_IB_r, Z_IB_r, float(target_density), n_samples_calib, thin)
     # 使用重构的模型生成样本
     reconstructed_L_r = systemicrisk.sample_HierarchicalModel(l=A_IB_r, a=Z_IB_r, model=model, nsamples=1, thin=thin)
 
