@@ -35,9 +35,9 @@ class DataInstaller:
             interbank(BankInterbank): 银行间主体众
         """
 
-        with open(Path(sgv['folderpath_agents'], "BankCommercial" + f"_year={para['year']}" + ".pkl"), 'rb') as f:
+        with open(Path(sgv['folderpath_agents'], f"BB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
             dict_bankCommercial = pickle.load(f)
-        with open(Path(sgv['folderpath_agents'], "BankInterbank" + f"_year={para['year']}" + ".pkl"), 'rb') as f:
+        with open(Path(sgv['folderpath_agents'], f"IB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
             dict_bankInterbank = pickle.load(f)
 
         # ## NOTE 当用对象字段数据结构时：
