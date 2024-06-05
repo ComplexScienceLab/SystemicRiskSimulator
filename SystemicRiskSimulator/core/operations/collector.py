@@ -1,6 +1,7 @@
 "函数区：收集数据"
-
+import numpy as np
 ## 函数区：收集数据
+from scipy.sparse import csc_matrix
 from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, logging
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
@@ -158,6 +159,80 @@ class Collector:
             sgv(dict): 模拟器全局变量
 
         """
+
+        ## 压缩数据
+        if sgv['is_compress_result_data']:
+
+            len_result_data = len(A_data.BB)
+            BB_compress = A_data.BB.copy()
+
+            # 遍历每一列
+            for column in A_data.BB.columns:
+                if (type(A_data.BB[column][0]) == np.ndarray
+                        and (
+                                type(A_data.BB[column][0][0]) == MoneyType
+                                or type(A_data.BB[column][0][0]) == np.int64
+                        )
+                ):  # 如果是浮点数、整型的 numpy 数组
+                    # 从第一行开始遍历每一行直到倒数第二行，计算差值
+                    BB_compress[column][i] = A_data.BB[column].iloc[:-1].diff().fillna(A_data.BB[column].iloc[:-1])
+                if (type(A_data.BB[column][0]) == np.ndarray
+                        and type(A_data.BB[column][0][0]) == np.bool_
+                ):  # 如果是布尔型的 numpy 数组
+                    for i in range(1, len_result_data - 1, 1):
+                        diff = A_data.BB[column].iloc[i] != A_data.BB[column].shift(-1).iloc[i - 1]
+                        BB_compress[column][i] = diff
+                elif (type(A_data.BB[column][0]) == np.ndarray
+                      and type(A_data.BB[column][0][0]) == str
+                ):  # 如果是字符串类型的 numpy 数组
+                    for i in range(1, len_result_data - 1, 1):
+                        diff = (A_data.BB[column].iloc[i] == A_data.BB[column].iloc[i - 1])
+                        BB_compress[column][i][diff] = ''
+                        pass  # for
+                elif (type(A_data.BB[column][0]) == str):  # 如果是字符串类型的 numpy 数组
+                    for i in range(1, len_result_data - 1, 1):
+                        if (A_data.BB[column].iloc[i] == A_data.BB[column].iloc[i - 1]):
+                            BB_compress[column][i] = ''
+                            pass  # if
+                        pass  # for
+
+                    pass  # if
+                pass  # for
+
+            IB_compress = A_data.IB.copy()
+            # 遍历每一列
+            for column in A_data.IB.columns:
+                if (type(A_data.IB[column][0]) == np.ndarray
+                        and (
+                                type(A_data.IB[column][0][0, 0]) == MoneyType
+                                or type(A_data.IB[column][0][0, 0]) == np.int64
+                        )
+                ):  # 如果是浮点数、整型的 numpy 数组
+                    # 从第一行开始遍历每一行直到倒数第二行，计算差值
+                    IB_compress[column] = A_data.IB[column].iloc[:-1].diff().fillna(A_data.IB[column].iloc[:-1])
+                if (type(A_data.IB[column][0]) == np.ndarray
+                        and type(A_data.IB[column][0][0, 0]) == np.bool_
+                ):  # 如果是布尔型的 numpy 数组
+                    for i in range(1, len_result_data - 1, 1):
+                        diff = A_data.IB[column].iloc[i] != A_data.IB[column].shift(-1).iloc[i - 1]
+                        IB_compress[column][i] = diff
+                elif (type(A_data.IB[column][0]) == np.ndarray
+                      and type(A_data.IB[column][0][0, 0]) == str
+                ):  # 如果是字符串类型的 numpy 数组
+                    for i in range(1, len_result_data - 1, 1):
+                        diff = (A_data.IB[column].iloc[i] == A_data.IB[column].iloc[i - 1])
+                        IB_compress[column][i][diff] = ''
+                        pass  # for
+                elif (type(A_data.IB[column][0]) == str):  # 如果是字符串类型的 numpy 数组
+                    for i in range(1, len_result_data - 1, 1):
+                        if (A_data.IB[column].iloc[i] == A_data.IB[column].iloc[i - 1]):
+                            IB_compress[column][i] = ''
+                        pass  # for
+
+                    pass  # if
+                pass  # for
+
+            pass  # if
 
         ## 导出为pkl格式
         pd.to_pickle(A_data.BB, Path(sgv['folderpath_experiments_output_data'], r"BB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
