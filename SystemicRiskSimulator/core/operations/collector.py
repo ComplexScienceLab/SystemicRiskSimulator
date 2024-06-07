@@ -162,19 +162,22 @@ class Collector:
 
         ## 压缩数据
         if sgv['is_compress_result_data']:
-            BB_compress, IB_compress = cls.compress_result_data(A_data)
-
-            # A_data.BB = BB_compress
-            # A_data.IB = IB_compress
+            A_data.BB, A_data.IB = cls.compress_result_data(A_data.BB, A_data.IB)
             pass  # if
 
-        # 解压数据 #DEBUG
-        if sgv['is_compress_result_data']:
-            BB_decompress, IB_decompress = cls.decompress_result_data(BB_compress, IB_compress)
-
-            A_data.BB = BB_decompress
-            A_data.IB = IB_decompress
-            pass  # if
+        ## 解压数据 #DEBUG 以下用于测试解压后的数据是否与原始数据一致
+        # if sgv['is_compress_result_data']:
+        #     BB_decompress, IB_decompress = cls.decompress_result_data(BB_compress, IB_compress)
+        #
+        #     A_data.BB = BB_decompress
+        #     A_data.IB = IB_decompress
+        #     pass  # if
+        # rs = []
+        # for i in range(len(A_data.BB)):
+        #     # rs.append(A_data.BB['Loss_t'][i] - BB_decompress['Loss_t'][i])
+        #     rs.append(A_data.IB['Shock_IB_def'][i] - IB_decompress['Shock_IB_def'][i])
+        #     # rs.append(A_data.BB['hel'][i] ^ BB_decompress['hel'][i])
+        #     # rs.append(A_data.IB['hel'][i] ^ IB_decompress['hel'][i])
 
         ## 导出为pkl格式
         pd.to_pickle(A_data.BB, Path(sgv['folderpath_experiments_output_data'], r"BB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
@@ -631,10 +634,10 @@ class Collector:
                 BB_decompress[column].iloc[len_result_data - 1] = BB_compress[column].iloc[len_result_data - 1].copy()
             elif (type(BB_compress[column].iloc[0]) == np.ndarray and type(BB_compress[column].iloc[0][0]) == np.bool_):  # 如果是布尔型的 numpy 数组
                 BB_decompress[column].iloc[0] = BB_compress[column].iloc[0].copy()
-                BB_decompress[column].iloc[1] = BB_compress[column].iloc[0] + BB_compress[column].iloc[1].toarray().ravel()
+                BB_decompress[column].iloc[1] = BB_compress[column].iloc[0] ^ BB_compress[column].iloc[1].toarray().ravel()
                 for i in range(2, len_result_data - 1, 1):
                     diff = BB_compress[column].iloc[i].toarray().ravel()
-                    BB_decompress[column].iloc[i] = BB_compress[column].iloc[i - 1].toarray().ravel() ^ diff
+                    BB_decompress[column].iloc[i] = BB_decompress[column].iloc[i - 1] ^ diff
                     pass  # for
                 BB_decompress[column].iloc[len_result_data - 1] = BB_compress[column].iloc[len_result_data - 1].copy()
             elif (type(BB_compress[column].iloc[0]) == np.ndarray and type(BB_compress[column].iloc[0][0]) == np.str_):  # 如果是字符串类型的 numpy 数组
@@ -702,7 +705,7 @@ class Collector:
                 IB_decompress[column].iloc[1] = IB_compress[column].iloc[0] + IB_compress[column].iloc[1].toarray()
                 for i in range(2, len_result_data - 1, 1):
                     diff = IB_compress[column].iloc[i].toarray()
-                    IB_decompress[column].iloc[i] = IB_compress[column].iloc[i - 1].toarray() ^ diff
+                    IB_decompress[column].iloc[i] = IB_decompress[column].iloc[i - 1] ^ diff
                     pass  # for
                 IB_decompress[column].iloc[len_result_data - 1] = IB_compress[column].iloc[len_result_data - 1].copy()
             elif (type(IB_compress[column].iloc[0]) == np.ndarray and type(IB_compress[column].iloc[0][0, 0]) == str):  # 如果是字符串类型的 numpy 数组
