@@ -64,11 +64,11 @@ class Operator:
                     c = conn.cursor()
                     c.execute("""CREATE TABLE IF NOT EXISTS experiments
                                     (id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)""")
-                    conn.commit()
                     # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
                     for i in range(1, num_parameters_works + 1):
                         c.execute("INSERT INTO experiments (id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
                         pass  # for
+                    conn.commit()
                 else:
                     # 连接现有数据库
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
