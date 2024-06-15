@@ -1,5 +1,19 @@
 """
-预处理实验结果数据
+预处理实验结果数据。
+
+该程序有以下的独立任务：
+- 导入Pandas格式的实验结果数据转换为面板形式再导出；
+- 导入Pandas格式的实验结果数据合并为一个文件；
+
+
+【导入Pandas格式的实验结果数据转换为面板形式再导出】思路：
+1. 分别读取多个实验结果数据文件，然后依次转换为面板形式的数据。
+2. 面板形式的数据依次导出为 PKL、CSV、xlsx 格式数据。
+
+【导入Pandas格式的实验结果数据合并为一个文件】思路：
+1. 依次读取多个实验结果数据文件，然后合并为一个文件。
+2. 合并后的数据表导出为 PKL、CSV、xlsx 格式数据。
+
 
 #NOTE 建议用并行处理模式，暨 is_enable_multiprocessing = True。因为这样速度快一些。
 """
@@ -45,91 +59,77 @@ def main(sgv):
     # %%
     print("执行：")
 
+    num_files_BB = len(list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
+    num_files_IB = len(list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
+    print(f"BB 文件数等于 IB 文件数？：{num_files_BB == num_files_IB}")  # DEBUG
+
+    ## 连接 SQLite 数据库，统计实验组作业完成情况（#HACK #NOTE 只能用于串行处理模式）
+    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+    c = conn.cursor()
+    # 如果没有列 status_预处理实验结果程序 ，那么添加该列
+    c.execute("PRAGMA table_info(experiments)")
+    if not any([v[1] == 'status_预处理实验结果程序' for v in c.fetchall()]):
+        c.execute("ALTER TABLE experiments ADD COLUMN status_预处理实验结果程序 TEXT DEFAULT 'RAW'")
+        conn.commit()
+        pass  # if
+    # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
+    if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+        c.execute("UPDATE experiments SET status_预处理实验结果程序 = 'RAW' WHERE status_预处理实验结果程序 = 'DONE'")
+        conn.commit()
+        pass  # if
+    # 检查实验组作业完成状态
+    c.execute("SELECT id, status_预处理实验结果程序 FROM experiments")
+    rows = c.fetchall()
+    list_idsExp_DOING = []
+    list_idsExp_DONE = []
+    list_idsExp_RAW = []
+    for row in rows:
+        exp_id, status_预处理实验结果程序 = row[0], row[1]
+        if status_预处理实验结果程序 == "DOING":
+            list_idsExp_DOING.append(exp_id)
+        elif status_预处理实验结果程序 == "DONE":
+            list_idsExp_DONE.append(exp_id)
+        else:
+            list_idsExp_RAW.append(exp_id)
+            pass  # if
+        pass  # for
+    list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, num_files_BB + 1))
+    list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
+    # 保存实验组作业完成状态信息
+    with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+        json.dump({
+            "计划运行的实验组 id": list_idsExp_TASK,
+            "未运行过的实验组 id": list_idsExp_RAW,
+            "之前运行中被中断的实验组 id": list_idsExp_DOING,
+            "已完成的实验组 id": list_idsExp_DONE,
+            "完成率": len(list_idsExp_DONE) / num_files_BB,
+            "中断率": len(list_idsExp_DOING) / num_files_BB,
+        }, f)
+        logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
+            "之前运行中被中断的实验组 id": list_idsExp_DOING,
+            "完成率": len(list_idsExp_DONE) / num_files_BB,
+            "中断率": len(list_idsExp_DOING) / num_files_BB,
+        }))
+    # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
+    # ids = [row[0] for row in rows]  # 获取实验组 id
+    # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+    # Tools.draw_color_band_before_experiments(ids, status_预处理实验结果程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_预处理实验结果程序.png"))
+    conn.close()
+
+    ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
+    list_filepath_pkl_BB = []
+    list_filepath_pkl_IB = []
+    for id in list_idsExp_TASK:
+        list_filepath_pkl_BB.extend(sgv['folderpath_experiments_output_data'].glob(f'BB_exp={id}.pkl'))
+        list_filepath_pkl_IB.extend(sgv['folderpath_experiments_output_data'].glob(f'IB_exp={id}.pkl'))
+        pass  # for
+
+    ## #NOTE 导入Pandas格式的实验结果数据转换为面板形式再导出
     if (sgv['transform_data']['导入Pandas格式的实验结果数据转换为面板形式再导出']):
         print("导入Pandas格式的实验结果数据转换为面板形式再导出")
 
-        # with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
-        #     parameters_works = pd.read_pickle(f)
-
-        num_files_BB = len(list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
-        num_files_IB = len(list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
-        print(f"BB 文件数等于 IB 文件数？：{num_files_BB == num_files_IB}")  # DEBUG
-
-        ## 连接 SQLite 数据库，统计实验组作业完成情况（#HACK #NOTE 只能用于串行处理模式）
-        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-        c = conn.cursor()
-        # 如果没有列 status_预处理实验结果程序 ，那么添加该列
-        c.execute("PRAGMA table_info(experiments)")
-        if not any([v[1] == 'status_预处理实验结果程序' for v in c.fetchall()]):
-            c.execute("ALTER TABLE experiments ADD COLUMN status_预处理实验结果程序 TEXT DEFAULT 'RAW'")
-            conn.commit()
-            pass  # if
-        # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
-        if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-            c.execute("UPDATE experiments SET status_预处理实验结果程序 = 'RAW' WHERE status_预处理实验结果程序 = 'DONE'")
-            conn.commit()
-            pass  # if
-        # 检查实验组作业完成状态
-        c.execute("SELECT id, status_预处理实验结果程序 FROM experiments")
-        rows = c.fetchall()
-        list_idsExp_DOING = []
-        list_idsExp_DONE = []
-        list_idsExp_RAW = []
-        for row in rows:
-            exp_id, status_预处理实验结果程序 = row[0], row[1]
-            if status_预处理实验结果程序 == "DOING":
-                list_idsExp_DOING.append(exp_id)
-            elif status_预处理实验结果程序 == "DONE":
-                list_idsExp_DONE.append(exp_id)
-            else:
-                list_idsExp_RAW.append(exp_id)
-                pass  # if
-            pass  # for
-        list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, num_files_BB + 1))
-        list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
-        # 保存实验组作业完成状态信息
-        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
-            json.dump({
-                "计划运行的实验组 id": list_idsExp_TASK,
-                "未运行过的实验组 id": list_idsExp_RAW,
-                "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                "已完成的实验组 id": list_idsExp_DONE,
-                "完成率": len(list_idsExp_DONE) / num_files_BB,
-                "中断率": len(list_idsExp_DOING) / num_files_BB,
-            }, f)
-            logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
-                "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                "完成率": len(list_idsExp_DONE) / num_files_BB,
-                "中断率": len(list_idsExp_DOING) / num_files_BB,
-            }))
-        # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
-        # ids = [row[0] for row in rows]  # 获取实验组 id
-        # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-        # Tools.draw_color_band_before_experiments(ids, status_预处理实验结果程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_预处理实验结果程序.png"))
-        conn.close()
-
-        ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
-        list_filepath_pkl_BB = []
-        list_filepath_pkl_IB = []
-        for id in list_idsExp_TASK:
-            list_filepath_pkl_BB.extend(sgv['folderpath_experiments_output_data'].glob(f'BB_exp={id}.pkl'))
-            list_filepath_pkl_IB.extend(sgv['folderpath_experiments_output_data'].glob(f'IB_exp={id}.pkl'))
-
-        ## 预处理实验结果数据
         if sgv['is_enable_multiprocessing']:
             # #NOTE：并行处理，用 dask 延迟任务 #HACK 不建议用，因为速度没有显著提升
-            # transform_BB_exp_files_delayed = delayed(transform_exp_files)
-            #
-            # tasks_BB = []
-            # for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
-            #     exp_id = i + 1
-            #     print(f"BB exp_id = {exp_id}")
-            #     task_BB = transform_BB_exp_files_delayed(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
-            #     tasks_BB.append(task_BB)
-            #     pass  # for
-            #
-            # with ProgressBar():
-            #     results_BB = compute(*tasks_BB)
 
             # #NOTE：多进程并行处理
             num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
@@ -143,7 +143,7 @@ def main(sgv):
 
             # 并行运行作业
             with Pool(num_cores) as p:
-                p.starmap(transform_exp_files, works)
+                p.starmap(fun_导入Pandas格式的实验结果数据转换为面板形式再导出, works)
                 pass  # with
 
         else:
@@ -153,12 +153,41 @@ def main(sgv):
                 filepath_pkl_BB = list_filepath_pkl_BB[i]
                 filepath_pkl_IB = list_filepath_pkl_IB[i]
                 print(f"exp_id = {exp_id}")
-                transform_exp_files(exp_id, filepath_pkl_BB, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+                fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id, filepath_pkl_BB, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
                 pass  # for
 
             pass  # if
 
         pass  # if 导入Pandas格式的实验结果数据转换为面板形式再导出
+
+    ## #TODO #NOTE 导入Pandas格式的实验结果数据合并为一个文件
+    if (sgv['transform_data']['导入Pandas格式的实验结果数据合并为一个文件']):
+        print("导入Pandas格式的实验结果数据合并为一个文件")
+
+        # #NOTE：串行处理
+        BB_columns = pd.read_pickle(list_filepath_pkl_BB[0]).columns
+        IB_columns = pd.read_pickle(list_filepath_pkl_BB[0]).columns
+
+        df_BB_combined = pd.DataFrame(columns=BB_columns)
+        df_IB_combined = pd.DataFrame(columns=IB_columns)
+        df_BB_combined = pd.concat([pd.read_pickle(filepath) for filepath in list_filepath_pkl_BB], ignore_index=True)
+        for i, exp_id in enumerate(list_idsExp_TASK):
+            df_BB_origin = pd.read_pickle(list_filepath_pkl_BB[i])
+            df_BB_origin['exp_id'] = exp_id  # 添加子文件实验 id 列
+            df_BB_combined = pd.concat([df_BB_combined, df_BB_origin], ignore_index=True)
+            df_IB_origin = pd.read_pickle(list_filepath_pkl_IB[i])
+            df_IB_origin['exp_id'] = exp_id  # 添加子文件实验 id 列
+            df_IB_combined = pd.concat([df_IB_combined, df_IB_origin], ignore_index=True)
+            pass  # for
+
+        # 重置索引以创建总 id 列
+        df_BB_combined.reset_index(inplace=True)
+        df_BB_combined.rename(columns={'index': 'total_id'}, inplace=True)
+
+        df_IB_combined.reset_index(inplace=True)
+        df_IB_combined.rename(columns={'index': 'total_id'}, inplace=True)
+
+        pass  # if 导入Pandas格式的实验结果数据合并为一个文件
 
     ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
@@ -206,7 +235,7 @@ def main(sgv):
     pass  # main
 
 
-def transform_exp_files(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Path, folderpath_experiments_output_log: Path, folderpath_exp_output_data: Path):
+def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Path, folderpath_experiments_output_log: Path, folderpath_exp_output_data: Path):
     """
     预处理单次实验之各实验结果数据
 
@@ -438,6 +467,22 @@ def transform_exp_files(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Pat
 
     pass  # function
 
+
+# def fun_导入Pandas格式的实验结果数据合并为一个文件(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Path, folderpath_experiments_output_log: Path, folderpath_exp_output_data: Path):
+#     """
+#     预处理单次实验之各实验结果数据
+#
+#     Args:
+#         exp_id: int: 实验组 id
+#         filepath_pkl_BB: Path: BB 实验结果数据文件路径
+#         filepath_pkl_IB: Path: IB 实验结果数据文件路径
+#         folderpath_experiments_output_log: Path: 实验组输出日志文件夹路径
+#         folderpath_exp_output_data: Path: 面板数据文件夹路径
+#
+#     Returns:
+#         None
+#     """
+#     pass  # function
 
 if __name__ == '__main__':
     # 从命令行参数获取配置字典
