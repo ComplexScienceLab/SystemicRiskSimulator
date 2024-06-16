@@ -166,26 +166,26 @@ def main(sgv):
 
         # #NOTE：串行处理
         BB_columns = pd.read_pickle(list_filepath_pkl_BB[0]).columns
-        IB_columns = pd.read_pickle(list_filepath_pkl_BB[0]).columns
+        IB_columns = pd.read_pickle(list_filepath_pkl_IB[0]).columns
 
-        df_BB_combined = pd.DataFrame(columns=BB_columns)
-        df_IB_combined = pd.DataFrame(columns=IB_columns)
-        df_BB_combined = pd.concat([pd.read_pickle(filepath) for filepath in list_filepath_pkl_BB], ignore_index=True)
+        df_BB_combined = pd.DataFrame(columns=['id_exp'] + list(BB_columns))
+        df_IB_combined = pd.DataFrame(columns=['id_exp'] + list(IB_columns))
+        # df_BB_combined = pd.concat([pd.read_pickle(filepath) for filepath in list_filepath_pkl_BB], ignore_index=True)
         for i, exp_id in enumerate(list_idsExp_TASK):
             df_BB_origin = pd.read_pickle(list_filepath_pkl_BB[i])
-            df_BB_origin['exp_id'] = exp_id  # 添加子文件实验 id 列
+            df_BB_origin['id_exp'] = int(exp_id)  # 添加子文件实验 id 列
             df_BB_combined = pd.concat([df_BB_combined, df_BB_origin], ignore_index=True)
             df_IB_origin = pd.read_pickle(list_filepath_pkl_IB[i])
-            df_IB_origin['exp_id'] = exp_id  # 添加子文件实验 id 列
+            df_IB_origin['id_exp'] = int(exp_id)  # 添加子文件实验 id 列
             df_IB_combined = pd.concat([df_IB_combined, df_IB_origin], ignore_index=True)
             pass  # for
 
         # 重置索引以创建总 id 列
         df_BB_combined.reset_index(inplace=True)
-        df_BB_combined.rename(columns={'index': 'total_id'}, inplace=True)
+        df_BB_combined.rename(columns={'index': 'id'}, inplace=True)
 
         df_IB_combined.reset_index(inplace=True)
-        df_IB_combined.rename(columns={'index': 'total_id'}, inplace=True)
+        df_IB_combined.rename(columns={'index': 'id'}, inplace=True)
 
         pass  # if 导入Pandas格式的实验结果数据合并为一个文件
 
