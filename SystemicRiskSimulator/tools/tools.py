@@ -596,7 +596,8 @@ class Tools:
     @classmethod
     def transform_one_of_expOutputData_from_panel_form_to_ndarray(cls, input_data: pd.Series, shape: tuple):
         """
-        转换实验输出的数据当中的其中一个类别的数据，从序列形式转换成 ndarray 形式。
+        转换实验输出的数据当中的其中一个类别的数据，从序列形式转换成 ndarray 形式。只有在面板化之后才需要
+
         Args:
             input_data (pd.Series): 待转换的数据
             shape (tuple): 需要转换的数据形状
