@@ -1,4 +1,5 @@
 """
+# #HACK 废弃开发这个功能，因为有替代品，不需要继续开发。
 根据 R 语言工具包 systemicrisk 之 函数 `default_clearing()` 重写的 Python 版本。功能一模一样。
 参考源链接 [default_clearing](https://rdrr.io/cran/systemicrisk/man/default_clearing.html) 。
 """
