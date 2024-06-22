@@ -5,6 +5,7 @@
 from SystemicRiskSimulator.external_packages import np, pd, deepcopy, pickle, Path
 from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank
 from SystemicRiskSimulator.core.define.define_consts import CONST
+from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 # from SystemicRiskSimulator.core.define.define_parameterVariables import para
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
@@ -95,8 +96,8 @@ class DataInstaller:
             interbank(BankInterbank): 银行间主体众
         """
         bankCommercial: BankCommercial = BankCommercial(
-            id_agent=CONST(sgv['num_bank']).RANGE1.copy() - 1,  # agent 之编号 id
-            abbr=CONST(sgv['num_bank']).BLANK1.copy(),  # 缩写 abbr
+            id_agent=(CONST(sgv['num_bank'], IdsType).RANGE1 - 1).copy(),  # agent 之编号 id
+            abbr=CONST(sgv['num_bank'], IdsType).RANGE1.astype(AbbrType).copy(),  # 缩写 abbr
             fullName=CONST(sgv['num_bank']).BLANK1.copy(),  # 全名 fullName
             A_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 总资产 A_all: $A_all=A_IB+A_exIB$
             A_IB_all=CONST(sgv['num_bank']).ZEROS1.copy(),  # 银行间资产加总 A_IB_all
@@ -178,7 +179,7 @@ class DataInstaller:
         )
 
         bankInterbank: BankInterbank = BankInterbank(
-            id_agent=CONST(sgv['num_bank']).RANGE2 - 1,  # agent 之间之关联编号 id
+            id_agent=(CONST(sgv['num_bank'],IdsType).RANGE2 - 1).copy(),  # agent 之间之关联编号 id
             A_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间资产邻接矩阵 A_IB
             Z_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间负债邻接矩阵 Z_IB
             Lo_IB=CONST(sgv['num_bank']).ZEROS2.copy(),  # 银行间贷款流出邻接矩阵 Lo_IB

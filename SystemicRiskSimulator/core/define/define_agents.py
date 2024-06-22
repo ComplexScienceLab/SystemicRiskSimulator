@@ -33,8 +33,8 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     商业银行群复合类
     """
     id_agent: IdsType = np.nan  # = deepcopy(RANGE1) agent 之编号 id
-    abbr = np.nan  # = np.full(sgv['num_bank'], "")
-    fullName = np.nan  # = np.full(sgv['num_bank'], "")
+    abbr: AbbrType = np.nan  # = np.full(sgv['num_bank'], "")
+    fullName: NameType = np.nan  # = np.full(sgv['num_bank'], "")
     A_all = MoneyType  # = deepcopy(ZEROS1)  # 总资产 A_all: $A_all=A_IB+A_exIB$
     A_IB_all = MoneyType  # = deepcopy(ZEROS1)  # 银行间资产加总 A_IB_all
     A_exIB = MoneyType  # = deepcopy(ZEROS1)  # 非银行间资产 A_exIB: $A_exIB=A_P+A_Q+A_R+A_other$
@@ -152,7 +152,7 @@ class BankInterbank(BaseInterAgents):
     """
     银行间邻接矩阵复合类
     """
-    id_agent = np.nan  # agent 之间之关联编号 id
+    id_agent: IdsType = np.nan  # agent 之间之关联编号 id
     A_IB = MoneyType  # 银行间资产邻接矩阵 A_IB
     Z_IB = MoneyType  # 银行间负债邻接矩阵 Z_IB
     Lo_IB = MoneyType  # 银行间贷款流出邻接矩阵 Lo_IB

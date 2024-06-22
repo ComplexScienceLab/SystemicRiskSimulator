@@ -484,11 +484,11 @@ class Collector:
                     BB_compress.at[i, column] = csr_array(diff.reshape(1, -1))
                     pass  # for
                 BB_compress.at[len_result_data - 1, column] = BB_origin.at[len_result_data - 1, column].copy()
-            elif (type(BB_origin.at[0, column]) == np.ndarray and type(BB_origin.at[0, column][0]) == np.int64):  # 如果是 IdsType 型的 numpy 数组
+            elif (type(BB_origin.at[0, column]) == np.ndarray and (type(BB_origin.at[0, column][0]) == IdsType or type(BB_origin.at[0, column][0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
                 BB_compress.at[0, column] = BB_origin.at[0, column].copy()
                 for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算不同
                     diff = BB_origin.at[i, column] != BB_origin.at[i - 1, column]
-                    BB_compress.at[i, column] = csr_array(diff.astype(np.int64).reshape(1, -1))
+                    BB_compress.at[i, column] = csr_array(diff.astype(IdsType).reshape(1, -1))
                     pass  # for
                 BB_compress.at[len_result_data - 1, column] = BB_origin.at[len_result_data - 1, column].copy()
             elif (type(BB_origin.at[0, column]) == np.ndarray and type(BB_origin.at[0, column][0]) == np.bool_):  # 如果是布尔型的 numpy 数组
@@ -498,7 +498,7 @@ class Collector:
                     BB_compress.at[i, column] = csr_array(diff.reshape(1, -1))  # 转换为稀疏数组
                     pass  # for
                 BB_compress.at[len_result_data - 1, column] = BB_origin.at[len_result_data - 1, column].copy()
-            elif (type(BB_origin.at[0, column]) == np.ndarray and type(BB_origin.at[0, column][0]) == np.str_):  # 如果是字符串类型的 numpy 数组
+            elif (type(BB_origin.at[0, column]) == np.ndarray and (type(BB_origin.at[0, column][0]) == NameType or type(BB_origin.at[0, column][0]) == AbbrType or type(BB_origin.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
                 BB_compress.at[0, column] = BB_origin.at[0, column].copy()
                 for i in range(1, len_result_data - 1, 1):
                     diff = (BB_origin.at[i, column] == BB_origin.at[i - 1, column])
@@ -543,11 +543,11 @@ class Collector:
                     IB_compress.at[i, column] = csr_array(diff)
                     pass  # for
                 IB_compress.at[len_result_data - 1, column] = IB_origin.at[len_result_data - 1, column].copy()
-            elif (type(IB_origin.at[0, column]) == np.ndarray and type(IB_origin.at[0, column][0, 0]) == np.int64):  # 如果是 IdsType 型的 numpy 数组
+            elif (type(IB_origin.at[0, column]) == np.ndarray and (type(IB_origin.at[0, column][0, 0]) == IdsType or type(IB_origin.at[0, column][0, 0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
                 IB_compress.at[0, column] = IB_origin.at[0, column].copy()
                 for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算不同
                     diff = IB_origin.at[i, column] != IB_origin.at[i - 1, column]
-                    IB_compress.at[i, column] = csr_array(diff.astype(np.int64))
+                    IB_compress.at[i, column] = csr_array(diff.astype(IdsType))
                     pass  # for
                 IB_compress.at[len_result_data - 1, column] = IB_origin.at[len_result_data - 1, column].copy()
             elif (type(IB_origin.at[0, column]) == np.ndarray and type(IB_origin.at[0, column][0, 0]) == np.bool_):  # 如果是布尔型的 numpy 数组
@@ -557,7 +557,7 @@ class Collector:
                     IB_compress.at[i, column] = csr_array(diff)  # 转换为稀疏数组
                     pass  # for
                 IB_compress.at[len_result_data - 1, column] = IB_origin.at[len_result_data - 1, column].copy()
-            elif (type(IB_origin.at[0, column]) == np.ndarray and type(IB_origin.at[0, column][0, 0]) == str):  # 如果是字符串类型的 numpy 数组
+            elif (type(IB_origin.at[0, column]) == np.ndarray and (type(IB_origin.at[0, column][0]) == NameType or type(IB_origin.at[0, column][0]) == AbbrType or type(IB_origin.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
                 IB_compress.at[0, column] = IB_origin.at[0, column].copy()
                 for i in range(1, len_result_data - 1, 1):
                     diff = (IB_origin.at[i, column] == IB_origin.at[i - 1, column])
@@ -623,7 +623,7 @@ class Collector:
                     BB_decompress.at[i, column] = BB_decompress.at[i - 1, column] + diff
                     pass  # for
                 BB_decompress.at[len_result_data - 1, column] = BB_compress.at[len_result_data - 1, column].copy()
-            elif (type(BB_compress.at[0, column]) == np.ndarray and type(BB_compress.at[0, column][0]) == np.int64):  # 如果是 IdsType 型的 numpy 数组
+            elif (type(BB_compress.at[0, column]) == np.ndarray and (type(BB_compress.at[0, column][0]) == IdsType or type(BB_compress.at[0, column][0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
                 last_not_none = BB_compress.at[0, column].copy()
                 BB_decompress.at[0, column] = last_not_none.copy()
                 for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
@@ -641,7 +641,7 @@ class Collector:
                     BB_decompress.at[i, column] = BB_decompress.at[i - 1, column] ^ diff
                     pass  # for
                 BB_decompress.at[len_result_data - 1, column] = BB_compress.at[len_result_data - 1, column].copy()
-            elif (type(BB_compress.at[0, column]) == np.ndarray and type(BB_compress.at[0, column][0]) == np.str_):  # 如果是字符串类型的 numpy 数组
+            elif (type(BB_compress.at[0, column]) == np.ndarray and (type(BB_compress.at[0, column][0]) == NameType or type(BB_compress.at[0, column][0]) == AbbrType or type(BB_compress.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
                 last_not_none = BB_compress.at[0, column].copy()
                 BB_decompress.at[0, column] = last_not_none.copy()
                 for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
@@ -691,7 +691,7 @@ class Collector:
                     IB_decompress.at[i, column] = IB_decompress.at[i - 1, column] + diff
                     pass  # for
                 IB_decompress.at[len_result_data - 1, column] = IB_compress.at[len_result_data - 1, column].copy()
-            elif (type(IB_compress.at[0, column]) == np.ndarray and type(IB_compress.at[0, column][0, 0]) == np.int64):  # 如果是 IdsType 型的 numpy 数组
+            elif (type(IB_compress.at[0, column]) == np.ndarray and (type(IB_compress.at[0, column][0, 0]) == IdsType or type(IB_compress.at[0, column][0, 0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
                 last_not_none = IB_compress.at[0, column].copy()
                 IB_decompress.at[0, column] = last_not_none.copy()
                 for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
@@ -709,7 +709,7 @@ class Collector:
                     IB_decompress.at[i, column] = IB_decompress.at[i - 1, column] ^ diff
                     pass  # for
                 IB_decompress.at[len_result_data - 1, column] = IB_compress.at[len_result_data - 1, column].copy()
-            elif (type(IB_compress.at[0, column]) == np.ndarray and type(IB_compress.at[0, column][0, 0]) == str):  # 如果是字符串类型的 numpy 数组
+            elif (type(IB_compress.at[0, column]) == np.ndarray and (type(IB_compress.at[0, column][0]) == NameType or type(IB_compress.at[0, column][0]) == AbbrType or type(IB_compress.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
                 last_not_none = IB_compress.at[0, column].copy()
                 IB_decompress.at[0, column] = last_not_none.copy()
                 for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同

@@ -8,9 +8,9 @@ from SystemicRiskSimulator.external_packages import np, Union, Any
 pass  # end import
 
 ## 定义类型别名
-IdsType = np.dtype([('id', np.int16)])  # 向量编号类型
-AbbrType = np.dtype([('abbr', np.str_)])  # 向量缩写类型
-NameType = np.dtype([('fullName', np.str_)])  # 向量名称类型
+IdsType = np.int16  # 向量编号类型
+AbbrType = np.str_  # 向量缩写类型
+NameType = np.str_  # 向量名称类型
 # MoneyType = np.dtype([('money', np.float_)])  # 向量资金类型
 MoneyType = np.float64  # 向量资金类型
 GymSpacesBoxType = np.float32  # gym 空间 Box 类型
