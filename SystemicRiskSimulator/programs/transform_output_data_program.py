@@ -168,26 +168,7 @@ def main(sgv):
         ## #NOTE：用 Pandas 串行处理
         time_start = timeit.default_timer()  # 计时开始
 
-        BB_columns = pd.read_pickle(list_filepath_pkl_BB[0]).columns
-        IB_columns = pd.read_pickle(list_filepath_pkl_IB[0]).columns
-
-        df_BB_combined = pd.DataFrame(columns=['id_exp'] + list(BB_columns))
-        df_IB_combined = pd.DataFrame(columns=['id_exp'] + list(IB_columns))
-        for i, exp_id in enumerate(list_idsExp_TASK):  # DEBUG
-            df_BB_origin = pd.read_pickle(list_filepath_pkl_BB[i])
-            df_BB_origin['id_exp'] = int(exp_id)
-            df_BB_combined = pd.concat([df_BB_combined, df_BB_origin], ignore_index=True)
-            df_IB_origin = pd.read_pickle(list_filepath_pkl_IB[i])
-            df_IB_origin['id_exp'] = int(exp_id)
-            df_IB_combined = pd.concat([df_IB_combined, df_IB_origin], ignore_index=True)
-            pass  # for
-
-        # 重置索引以创建总 id 列
-        df_BB_combined.reset_index(inplace=True)
-        df_BB_combined.rename(columns={'index': 'id'}, inplace=True)
-
-        df_IB_combined.reset_index(inplace=True)
-        df_IB_combined.rename(columns={'index': 'id'}, inplace=True)
+        fun_导入Pandas格式的实验结果数据合并为一个文件(list_filepath_pkl_BB, list_filepath_pkl_IB, list_idsExp_TASK)
 
         time_end = timeit.default_timer()  # 计时结束
         print(f"导入Pandas格式的实验结果数据合并为一个文件，耗时：{time_end - time_start} 秒")
@@ -224,8 +205,6 @@ def main(sgv):
         #
         # time_end = timeit.default_timer()  # 计时结束
         # print(f"导入Pandas格式的实验结果数据合并为一个文件，耗时：{time_end - time_start} 秒")
-
-
 
         ## #NOTE 用 SQLite 处理 #BUG 这个不能处理一些数据类型
         # # 创建两个新的 SQLite 数据库
@@ -548,6 +527,43 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
     record_work_state(exp_id, 'status_预处理实验结果程序', 'DONE', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DONE"
 
     pass  # function
+
+
+def fun_导入Pandas格式的实验结果数据合并为一个文件(list_filepath_pkl_BB, list_filepath_pkl_IB, list_idsExp_TASK):
+    """
+    导入Pandas格式的实验结果数据合并为一个文件
+
+    Args:
+        list_filepath_pkl_BB: List[Path]: BB 实验结果数据文件路径列表
+        list_filepath_pkl_IB: List[Path]: IB 实验结果数据文件路径列表
+        list_idsExp_TASK: List[int]: 实验组 id 列表
+
+    Returns:
+        df_BB_combined: DataFrame: 合并后的 BB 实验结果数据
+        df_IB_combined: DataFrame: 合并后的 IB 实验结果数据
+    """
+
+    BB_columns = pd.read_pickle(list_filepath_pkl_BB[0]).columns
+    IB_columns = pd.read_pickle(list_filepath_pkl_IB[0]).columns
+
+    df_BB_combined = pd.DataFrame(columns=['id_exp'] + list(BB_columns))
+    df_IB_combined = pd.DataFrame(columns=['id_exp'] + list(IB_columns))
+    for i, exp_id in enumerate(list_idsExp_TASK):
+        df_BB_origin = pd.read_pickle(list_filepath_pkl_BB[i])
+        df_BB_origin['id_exp'] = int(exp_id)
+        df_BB_combined = pd.concat([df_BB_combined, df_BB_origin], ignore_index=True)
+        df_IB_origin = pd.read_pickle(list_filepath_pkl_IB[i])
+        df_IB_origin['id_exp'] = int(exp_id)
+        df_IB_combined = pd.concat([df_IB_combined, df_IB_origin], ignore_index=True)
+
+    # 重置索引以创建总 id 列
+    df_BB_combined.reset_index(inplace=True)
+    df_BB_combined.rename(columns={'index': 'id'}, inplace=True)
+
+    df_IB_combined.reset_index(inplace=True)
+    df_IB_combined.rename(columns={'index': 'id'}, inplace=True)
+
+    return df_BB_combined, df_IB_combined
 
 
 # def fun_导入Pandas格式的实验结果数据合并为一个文件(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Path, folderpath_experiments_output_log: Path, folderpath_exp_output_data: Path):
