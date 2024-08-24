@@ -49,7 +49,7 @@ def main(sgv):
     if sgv['init_parameters_method'] == 'import data':
         sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv)
     elif sgv['init_parameters_method'] == 'set manually':
-        sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv, parameters_works)  # #BUG 这里的 parameters_works 变量没有定义
+        sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv, parameters_works)  # #BUG 这里的 parameters_works 变量没有定义。但是由于现在没有维护 "set manually" 的情况，因此事实上目前不需要修复
         pass  # if
 
     ## 运行实验组

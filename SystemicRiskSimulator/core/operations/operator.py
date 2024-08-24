@@ -125,7 +125,7 @@ class Operator:
                 pass  # with
 
             Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
-        elif sgv['init_parameters_method'] == "set manually":  # #HACK 这个选项几乎被废弃了。可以删除。
+        elif sgv['init_parameters_method'] == "set manually":  # #TODO HACK 这个选项几乎被废弃了。可以删除。
             parameters_works = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
             Collector.export_parameter_data(parameters_works, para)  # 导出控制参数数据
             pass  # if
@@ -134,16 +134,20 @@ class Operator:
 
         ## 构建本次实验组所需的所有模型
 
-        ## 如果处于测试状态，那么就不需要复制模型库里的模型到模拟器里了
-        if sgv['is_develope_mode'] and sgv['is_maintain_model_files_in_simulator_when_develope_mode']:
-            # 如果处于开发调试模式，则复制正在开发的模型到输出文件夹之配置文件夹下
-            Tools._delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
+        ### 判断属于什么运行模式
+        if ~(sgv['is_develope_mode'] and sgv['is_maintain_model_files_in_simulator_when_develope_mode']):
+            # 如果处于应用实验状态，则复制模型数据与内容到输出文件夹下
+            Tools._delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹之模型文件夹
+            Tools._copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 复制模型文件夹到输出文件夹之模型文件夹
+            # # 如果处于应用实验状态，则复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下，另外导出一份到输出文件夹之配置文件夹下
+            # Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            # Tools._copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            # Tools._copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
         else:
-            # 如果处于应用实验状态，则复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下，另外导出一份到输出文件夹之配置文件夹下
-            Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
+            # 如果处于开发调试模式，则不复制正在开发的模型文件夹
+            # # 如果处于开发调试模式，则复制正在开发的模型到输出文件夹之配置文件夹下 #NOW 可以删除
+            # Tools._delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
+            # Tools._copy_files_from_other_folders(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
             pass  # if
 
         ## 导入实体数据，生成实体集、内容集并返回

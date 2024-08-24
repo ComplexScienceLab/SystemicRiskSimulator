@@ -123,7 +123,20 @@ class Tools:
         pass  # function
 
     @classmethod
-    def set_experiments_folders(cls, foldername_experiments_output_data: str, foldername_experiments: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str, str_foldername_outputData: str, str_folderpath_realpath_outputData: str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str):
+    def set_experiments_folders(
+            cls,
+            foldername_experiments_output_data: str,
+            foldername_experiments: str,
+            str_folderpath_root_experiments: str,
+            str_foldername_simulator: str,
+            str_folderpath_realpath_simulator: str,
+            str_foldername_outputData: str,
+            str_folderpath_realpath_outputData: str,
+            str_folderpath_models: str,
+            str_folderpath_config: str,
+            str_folderpath_parameters: str,
+            str_folderpath_agents: str
+    ):
         """
         设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹等。
 
