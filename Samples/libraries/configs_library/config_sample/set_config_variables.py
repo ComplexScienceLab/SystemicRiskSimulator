@@ -43,8 +43,7 @@ set_config_variables = dict(
     test_turn_for_test=4,  # test变量，用于打断点。相关语句：`sgv['turn']>=sgv['test_turn_for_test']`；
     test_max_num_of_turn=100,  # 最大运行轮次数（测试用）；
 
-    ## 使用的程序版本类型设置：
-    is_use_flow_form_version_model=False,  # 是否使用流程形式的版本的模型形式。默认 False。如果 False ，则表示不采用带有多文件多模块的旧版本的模型表示形式，而是直接采用简化的单文件模型。
+
 
     ## 使用的模型类型类型设置：
     is_use_Gymnasium_model=False,  # 是否使用用于强化学习的环境模型。默认 False。

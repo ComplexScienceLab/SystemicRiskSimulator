@@ -48,9 +48,6 @@ sgv['process_name'] = ""  # 运行的过程之名称；
 # sgv['df_BB'] = None  # Pandas格式的银行数据
 # sgv['df_IB'] = None  # Pandas格式的银行间数据
 
-## 使用的程序版本类型设置：
-sgv['is_use_flow_form_version_model'] = False,  # 是否使用流程形式的版本的模型形式。默认 False。如果 False ，则表示不采用带有多文件多模块的旧版本的模型表示形式，而是直接采用简化的单文件模型。
-
 ## 使用的模型类型类型设置：
 sgv['is_use_PettingZoo_environments'] = False  # 是否使用 PettingZoo 环境框架。默认 False。
 

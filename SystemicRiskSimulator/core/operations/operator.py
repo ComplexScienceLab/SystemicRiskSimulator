@@ -151,12 +151,7 @@ class Operator:
             pass  # if
 
         ## 导入实体数据，生成实体集、内容集并返回
-        if sgv['is_use_flow_form_version_model']:
-            ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()`
-            Builder.build_entities_by_process_and_container_component(sgv)  # NOTE：一次只处理一个模型 #HACK 已经过时，可以删除
-        else:
-            ## NOTE 如果直接使用非流程版的形式的模型
-            Builder.build_entities_by_execute(sgv)
+        Builder.build_entities_by_execute(sgv)
         pass  # if
 
         ## 导出配置数据
@@ -187,43 +182,33 @@ class Operator:
 
         sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
 
-        if sgv['is_use_flow_form_version_model']:
-            # ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()` HACK 已经过时，弃用，可删除。
-            # # Scheduler.schedule(sgv)  # 调度状态变成`running`
-            # model, A, sgv['A_data'], para, sgv = Processor.process_entity_by_process_and_container_component(model, A, sgv['A_data'], para, sgv)  # 执行具体的模型，通过执行模型实体的方式
-            # sgv['is_continue_process'] = False  # 不再继续运行过程
-            pass
+        # Scheduler.schedule(sgv)  # 调度状态变成`running`
+
+        # model, A, A_data, para, sgv = Processor.process_entity_by_execute_component(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
+
+        modelEntity = model.content  # 获取节点实体对应的模型实体
+
+        content_Finance = modelEntity.content['content_finance']()
+        if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
+            content_Agents = modelEntity.content['content_agents'](np.array(para['Strategy_default']))  # BUG 不能这样代入参数
+            content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
         else:
-            ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_turn']` 失效
-
-            # Scheduler.schedule(sgv)  # 调度状态变成`running`
-
-            # model, A, A_data, para, sgv = Processor.process_entity_by_execute_component(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
-
-            modelEntity = model.content  # 获取节点实体对应的模型实体
-
-            content_Finance = modelEntity.content['content_finance']()
-            if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
-                content_Agents = modelEntity.content['content_agents'](np.array(para['Strategy_default']))  # BUG 不能这样代入参数
-                content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
-            else:
-                content_Model = modelEntity.content['content_model'](content_Finance)
-                pass  # if
-
-            if not sgv['is_enable_multiprocessing']:
-                log_message(
-                    "    开始执行模型内容：",
-                    Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-                    f"logger_{sgv['id_experiment']}",
-                    is_enable_multiprocessing=sgv['is_enable_multiprocessing']
-                )
-
-            # sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
-
-            # modelEntity.execute(A, A_data, para, sgv)
-            content_Model.model_content(A, A_last, A_data, para, sgv)
-
+            content_Model = modelEntity.content['content_model'](content_Finance)
             pass  # if
+
+        if not sgv['is_enable_multiprocessing']:
+            log_message(
+                "    开始执行模型内容：",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing=sgv['is_enable_multiprocessing']
+            )
+            pass  # if
+
+        # sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+
+        # modelEntity.execute(A, A_data, para, sgv)
+        content_Model.model_content(A, A_last, A_data, para, sgv)
 
         pass  # function
 
