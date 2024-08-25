@@ -247,7 +247,7 @@ class Operator:
         sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
-        # sgv['model_name'] = para['model_name']  #HACK 2024-05-14 最新版的 parameters 没有这个配置项了
+        # sgv['model_name'] = para['model_name']  #HACK 2024-05-14 此时刻版本之 parameters 没有这个配置项了
         sgv['process_name'] = "START"
         sgv['test_continous_loop_of_model'] = 0
         sgv['is_continue_process'] = True
