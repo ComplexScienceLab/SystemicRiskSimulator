@@ -242,16 +242,12 @@ class Operator:
 
         record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
 
-        ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
-        sgv['index_of_schedule_position'] = []
+        ## 重置模拟器全局变量
         sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
-        # sgv['model_name'] = para['model_name']  #HACK 2024-05-14 此时刻版本之 parameters 没有这个配置项了
         sgv['process_name'] = "START"
-        sgv['test_continous_loop_of_model'] = 0
         sgv['is_continue_process'] = True
-        # sgv['A_data'] = None
 
         logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
 
@@ -271,7 +267,7 @@ class Operator:
     @classmethod
     def operate_reset_experiment(cls, sgv: dict, para: dict, model: Any):
         """
-        运作初始化实验。用于使用使用强化学习环境工具包自定义的模型。
+        运作初始化实验。用于不使用强化学习训练的，自定义的模型。
 
         Args:
             sgv (dict): 模拟器全局变量
@@ -292,16 +288,13 @@ class Operator:
 
         modelEntity = model.content  # 获取节点实体对应的模型实体
 
-        ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
-        sgv['index_of_schedule_position'] = []
+        ## 重置模拟器全局变量
+
         sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
-        sgv['model_name'] = modelEntity.attribute.entity_name
         sgv['process_name'] = "START"
-        sgv['test_continous_loop_of_model'] = 0
         sgv['is_continue_process'] = True
-        # sgv['A_data'] = None
 
         if not sgv['is_enable_multiprocessing']:
             log_message(

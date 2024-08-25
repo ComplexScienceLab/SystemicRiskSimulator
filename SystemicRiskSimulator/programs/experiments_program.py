@@ -71,7 +71,6 @@ def main(sgv):
     if sgv['is_enable_multiprocessing']:
         ## #NOTE：多进程并行处理
         # para = para.to_dict()  # 将参数数据框转换为字典
-        # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
 
         ## 并行计算时，关闭主进程日志记录器，改由子进程记录各自的日志
         log_file_handler.close()
@@ -113,7 +112,6 @@ def main(sgv):
 
         for i, para in parameters_works_TASK.iterrows():
             para = para.to_dict()  # 将参数数据框转换为字典
-            # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
             model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
             sgv['id_experiment'] = i + 1  # 设定当前实验编号
 
