@@ -37,8 +37,8 @@ def main(sgv):
     # config['folderpath_simulator'] = Tools.get_project_rootpath(config['foldername_simulator'], config['folderpath_realpath_simulator'])
     # config['folderpath_project'] = Tools.get_project_rootpath()
     # # 如果 settings 之 config 有内容，那么就删除，否则就从其他文件夹中复制之后再导入
-    # Tools._delete_and_recreate_folder(Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
-    # Tools._copy_files_from_other_folders(Path(config['folderpath_project'], config['folderpath_config']), Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
+    # Tools.delete_and_recreate_folder(Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
+    # Tools.copy_files_from_other_folders(Path(config['folderpath_project'], config['folderpath_config']), Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
     # from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
     from SystemicRiskSimulator.tools.tools import Tools
@@ -476,7 +476,7 @@ def main(sgv):
 
         if (sgv['visulization_process']['绘制矩阵热图']):
             print("准备绘制矩阵热图")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+            Tools.delete_and_recreate_folder(sgv['folderpath_plots_single_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             # with Pool() as p:
             #     p.map(fun_visualize_data, [sgv])
@@ -553,7 +553,7 @@ def main(sgv):
 
         if (sgv['visulization_process']['拼接矩阵热图']):
             print("准备拼接矩阵热图")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+            Tools.delete_and_recreate_folder(sgv['folderpath_plots_makeup_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
 
@@ -616,7 +616,7 @@ def main(sgv):
         if (sgv['visulization_process']['绘制资金流网络图']):
 
             print("准备绘制资金流网络图")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+            Tools.delete_and_recreate_folder(sgv['folderpath_plots_single_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
 
@@ -722,7 +722,7 @@ def main(sgv):
 
         if (sgv['visulization_process']['拼接资金流网络图']):
             print("准备拼接资金流网络图")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+            Tools.delete_and_recreate_folder(sgv['folderpath_plots_makeup_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
 
@@ -783,7 +783,7 @@ def main(sgv):
         if (sgv['visulization_process']['绘制资产负债表图']):
 
             print("准备绘制资产负债表")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_single_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+            Tools.delete_and_recreate_folder(sgv['folderpath_plots_single_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
 
@@ -1659,7 +1659,7 @@ def main(sgv):
 
         if (sgv['visulization_process']['拼接资产负债表图']):
             print("准备拼接资产负债表图")
-            Tools._delete_and_recreate_folder(sgv['folderpath_plots_makeup_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+            Tools.delete_and_recreate_folder(sgv['folderpath_plots_makeup_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
 
@@ -1719,7 +1719,7 @@ def main(sgv):
         if (sgv['visulization_process']['银行状态表格可视化']):
 
             print("准备可视化银行状态表格")
-            Tools._delete_and_recreate_folder(sgv['folderpath_visualize_banksStates_table'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+            Tools.delete_and_recreate_folder(sgv['folderpath_visualize_banksStates_table'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
                 df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
