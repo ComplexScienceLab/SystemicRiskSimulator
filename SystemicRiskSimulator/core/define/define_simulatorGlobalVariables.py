@@ -57,6 +57,12 @@ sgv['test_max_num_of_turn'] = None,  # 处理最大回合数（测试用）；
 
 ###########################
 
+# # 使用 import_modules_from_package 函数从导出的文件夹导入模块
+# sgv = Tools.import_modules_from_package(sgv, sgv['folderpath_import_modules'])
+
 ## 更新模拟器全局变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `sgv` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
 for key, value in set_config_variables.items():
     sgv[key] = value
+# ## 更新模拟器全局变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `sgv` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
+# for key, value in set_config_variables.items():
+#     sgv[key] = value

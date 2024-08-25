@@ -429,11 +429,16 @@ class Collector:
             print("参数作业数据文件不存在，需要重新导出参数作业数据。")
             pass  # if
         if is_generate_parameters_works_data:
-            Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
-            # shutil.copy(Path(sgv['folderpath_parameters'], r"set_parameters_variables.py"), sgv['folderpath_experiments_output_parameters'])  # 导出一份生成参数的代码文件到输出文件夹
-            from SystemicRiskSimulator.core.define.define_parameterVariables import para
+            Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹之参数文件夹
+            Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到输出文件夹
+            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之 parameters 文件夹
+            Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到模拟器之 data 文件夹
+            # Tools.import_modules_from_package(sgv['folderpath_experiments_output_parameters'], r'parameter', sgv['folderpath_project'])
+
+            # Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            # Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+            # Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
+            # from SystemicRiskSimulator.core.define.define_parameterVariables import para  # #TODO #HACK 为什么这里要导入一次？
 
             # pd.to_pickle(df_combinationOfPara, filepath_parameters_works_pkl)
             # df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.csv"), index=False)
