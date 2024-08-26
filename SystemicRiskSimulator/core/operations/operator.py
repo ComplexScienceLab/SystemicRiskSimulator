@@ -141,15 +141,7 @@ class Operator:
             Tools.copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到输出文件夹之模型文件夹
             Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之模型文件夹
             Tools.copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到模拟器之 data 文件夹
-            # # 如果处于应用实验状态，则复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下，另外导出一份到输出文件夹之配置文件夹下
-            # Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            # Tools.copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            # Tools.copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
         else:
-            # 如果处于开发调试模式，且设定了保留模拟器 data 文件夹内的模型文件，则不复制正在开发的模型文件夹
-            # # 如果处于开发调试模式，则复制正在开发的模型到输出文件夹之配置文件夹下 #NOW 可以删除
-            # Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
-            # Tools.copy_files_from_other_folders(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
             pass  # if
 
         ## 导入实体数据，生成实体集、内容集并返回
@@ -242,9 +234,7 @@ class Operator:
 
         ## 初始化 agents 数据
         A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
-        # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
         logging.debug("                    初始化数据")
-        # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         A_data = Collector.init_agent_data_collection(A, sgv)
         # sgv['step'] += 1
 
@@ -294,7 +284,6 @@ class Operator:
         ## 初始化 agents 数据
         A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
         A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
-        # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
 
         ## 计算个体数量
         sgv['num_bank'] = len(A.BB['id_agent'])
@@ -307,15 +296,11 @@ class Operator:
                 is_enable_multiprocessing=sgv['is_enable_multiprocessing']
             )
 
-        # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         A_data = Collector.init_agent_data_collection(A, sgv)
-        # sgv['step'] += 1
 
         return A, A_last, A_data, sgv, para
         pass  # function
 
-    # @classmethod
-    # def operate_step_experiment(cls, sgv: dict, para: dict, model: Any):
     @classmethod
     def operate_step_experiment(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
@@ -349,7 +334,6 @@ class Operator:
         sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
         process = modelEntity.process
-        # modelEntityContent = modelEntity.content
 
         A, A_data, para, sgv = process(modelEntity, A, A_data, para, sgv)
 

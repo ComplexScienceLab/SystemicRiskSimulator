@@ -3,9 +3,7 @@
 
 记得这里发生变更时，要手动检查`Operator.operate_experiment`相关位置是否要更新。
 """
-from SystemicRiskSimulator.external_packages import Path
 from SystemicRiskSimulator.core.define.define_type import SimulatorGlobalVariableType
-from SystemicRiskSimulator.core.define.define_enum import ScheduleState
 from SystemicRiskSimulator.data.config.set_config_variables import set_config_variables
 
 pass  # end import
@@ -13,7 +11,7 @@ pass  # end import
 # 生成字典变量
 sgv: SimulatorGlobalVariableType = dict()
 
-######### 定义以下项目内的全局变量（不要随意改动！） ######################################### #TODO 需要整理
+######### 定义以下项目内的全局变量（不要随意改动！） #########################################
 # sgv['folderpath_experiments'] = ""  # 主文件夹路径之于实验。将由函数生成；
 # sgv['foldername_experiments'] = ""  # 实验文件夹名称
 # sgv['folderpath_experiments_output_data'] = ""  # 实验导出数据文件夹名称
@@ -57,12 +55,6 @@ sgv['test_max_num_of_turn'] = None,  # 处理最大回合数（测试用）；
 
 ###########################
 
-# # 使用 import_modules_from_package 函数从导出的文件夹导入模块
-# sgv = Tools.import_modules_from_package(sgv, sgv['folderpath_import_modules'])
-
 ## 更新模拟器全局变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `sgv` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
 for key, value in set_config_variables.items():
     sgv[key] = value
-# ## 更新模拟器全局变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `sgv` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
-# for key, value in set_config_variables.items():
-#     sgv[key] = value
