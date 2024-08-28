@@ -75,6 +75,8 @@ def main(sgv):
         ## 并行计算时，关闭主进程日志记录器，改由子进程记录各自的日志
         log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
         num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 计算 CPU 核心数
 
@@ -142,9 +144,11 @@ def main(sgv):
             warnings.filterwarnings("default")  # 恢复警告
             pass  # if
 
-        ## 关闭该程序之主进程日志记录器
+        ## 关闭日志记录器
         log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
         pass  # if
 

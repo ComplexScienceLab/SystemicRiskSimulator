@@ -76,7 +76,7 @@ def simulator(config: dict):
         Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹原来的 agents 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_agents'], sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 agents 文件夹到输出文件夹
         Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之原来的 agents 文件夹
-        Tools.copy_files_from_other_folders(sgv['folderpath_agents'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])# 导出一份 agents 文件夹到模拟器之 data 文件夹
+        Tools.copy_files_from_other_folders(sgv['folderpath_agents'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份 agents 文件夹到模拟器之 data 文件夹
 
         ## 获取一些系统信息
         sgv['system_platform'] = platform.system()
@@ -107,13 +107,16 @@ def simulator(config: dict):
         logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
         logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
         logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
-        logging.info("\n相关实验 models 文件夹：" + sgv['folderpath_models'].name + "\n")
         logging.info("\n相关实验 agents 数据文件夹：" + sgv['folderpath_agents'].name + "\n")
-        logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
         logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
+        logging.info("\n相关实验 models 文件夹：" + sgv['folderpath_models'].name + "\n")
+        logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
 
         ## 关闭日志记录器
+        log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
         ## 运行实验组模拟程序
         if not sgv['is_develope_mode']:
@@ -137,9 +140,11 @@ def simulator(config: dict):
         end_time = time.time()
         logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
 
-        ## 关闭日志
+        ## 关闭日志记录器
         log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
         pass  # if
 
@@ -165,9 +170,11 @@ def simulator(config: dict):
         end_time = time.time()
         logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
 
-        ## 关闭日志
+        ## 关闭日志记录器
         log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
         pass  # if
 
@@ -193,9 +200,11 @@ def simulator(config: dict):
         end_time = time.time()
         logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
 
-        ## 关闭日志
+        ## 关闭日志记录器
         log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
         pass  # if
 
