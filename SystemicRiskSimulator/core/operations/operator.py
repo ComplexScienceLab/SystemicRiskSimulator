@@ -56,9 +56,9 @@ class Operator:
                     is_exist_experiments_works_status_db = False
                     is_recreate_experiments_works_status_db = True
                     pass  # if
-                if is_exist_experiments_works_status_db:
-                    os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-                    pass  # if
+                # if is_exist_experiments_works_status_db and is_rerun_all_done_works_in_the_same_experiments:
+                #     os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                #     pass  # if
                 if is_recreate_experiments_works_status_db:  # 创建数据库并初始化表格
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
@@ -69,6 +69,8 @@ class Operator:
                         c.execute("INSERT INTO experiments (id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
                         pass  # for
                     conn.commit()
+                    is_exist_experiments_works_status_db = True
+                    is_recreate_experiments_works_status_db = False
                 else:
                     # 连接现有数据库
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
