@@ -150,6 +150,11 @@ def simulator(config: dict):
 
     # %% 是否运作预处理实验结果程序
     if sgv['schedule_operation']['预处理实验结果程序']:
+
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
+
+
         if not sgv['is_develope_mode']:
             sgv_pkl = pickle.dumps(sgv)
             sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
@@ -180,6 +185,11 @@ def simulator(config: dict):
 
     # %% 是否可视化结果程序
     if sgv['schedule_operation']['可视化结果程序']:
+
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
+
+
         if not sgv['is_develope_mode']:
             sgv_pkl = pickle.dumps(sgv)
             sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
