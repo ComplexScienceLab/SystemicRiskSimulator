@@ -338,7 +338,7 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
     df_BB_panel = df_BB.explode('id_agent')  # 只展开 'id_agent' 列
     for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
         if col != 'id_agent':
-            df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack().reset_index(level=0, drop=True).reset_index(drop=True)
+            df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack().reset_index(level=1, drop=True)
             pass  # if
         pass  # for
     df_BB_panel = df_BB_panel.reset_index(drop=True)  # 重置索引
@@ -354,48 +354,48 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
     df_BB_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为 pkl 格式
 
     ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
-    # df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
-    # with pd.ExcelWriter(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
-    #     df_BB_panel.to_excel(writer, sheet_name='BB_panel')
-    #     pass  # with
-    #
-    # ## 重新读取 xlsx 格式然后格式化
-    # ### 需要调整列边距的列名
-    # columnsName_adjust = [
-    #     'id',
-    #     'id_data',
-    #     'step',
-    #     'turn',
-    #     'phase',
-    #     'id_agent',
-    # ]
-    #
-    # wb_BB_panel = load_workbook(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
-    # sheet_BB_panel = wb_BB_panel.active
-    #
-    # sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
-    #
-    # col_indices = [df_BB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
-    # for col_index in col_indices:
+    df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
+    with pd.ExcelWriter(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+        df_BB_panel.to_excel(writer, sheet_name='BB_panel')
+        pass  # with
+
+    ## 重新读取 xlsx 格式然后格式化
+    ### 需要调整列边距的列名
+    columnsName_adjust = [
+        'id',
+        'id_data',
+        'step',
+        'turn',
+        'phase',
+        'id_agent',
+    ]
+
+    wb_BB_panel = load_workbook(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+    sheet_BB_panel = wb_BB_panel.active
+
+    sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
+
+    col_indices = [df_BB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+    for col_index in col_indices:
+        col_letter = get_column_letter(col_index)
+        sheet_BB_panel.column_dimensions[col_letter].width = 5
+
+    # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+    fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+    for i, row in enumerate(sheet_BB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+        if i % (2 * num_agent) < num_agent:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+            for cell in row:
+                cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+    # for col in columns_states:  # 遍历每一列
+    #     col_index = df_BB_panel.columns.get_loc(col) + 1
     #     col_letter = get_column_letter(col_index)
-    #     sheet_BB_panel.column_dimensions[col_letter].width = 5
-    #
-    # # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
-    # fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
-    # for i, row in enumerate(sheet_BB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
-    #     if i % (2 * num_agent) < num_agent:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
-    #         for cell in row:
-    #             cell.fill = fill  # 将该行的背景色设置为浅灰色
-    #
-    # # for col in columns_states:  # 遍历每一列
-    # #     col_index = df_BB_panel.columns.get_loc(col) + 1
-    # #     col_letter = get_column_letter(col_index)
-    # #     rng = sheet_BB_panel[col_letter]
-    # #     for cell in rng:  # 遍历每一个单元格
-    # #         if cell.value == True:
-    # #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
-    #
-    # wb_BB_panel.save(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+    #     rng = sheet_BB_panel[col_letter]
+    #     for cell in rng:  # 遍历每一个单元格
+    #         if cell.value == True:
+    #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+    wb_BB_panel.save(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
 
     df_IB_original = pd.read_pickle(filepath_pkl_IB)
     num_agent = df_IB_original['id_agent'][0].shape[0]
@@ -478,51 +478,51 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
     df_IB_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为 pkl 格式
 
     ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
-    # df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
-    # with pd.ExcelWriter(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
-    #     df_IB_panel.to_excel(writer, sheet_name='IB_panel')
-    #     pass  # with
-    #
-    # ## 重新读取 xlsx 格式然后格式化
-    # ### 需要调整列边距的列名
-    # columnsName_adjust = [
-    #     'id',
-    #     'id_data',
-    #     'process_name',
-    #     'step',
-    #     'turn',
-    #     'phase',
-    #     'id_agent',
-    #     'row',
-    #     'col',
-    # ]
-    #
-    # wb_IB_panel = load_workbook(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
-    # sheet_IB_panel = wb_IB_panel.active
-    #
-    # sheet_IB_panel.freeze_panes = "K2"  # 冻结窗格
-    #
-    # col_indices = [df_IB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
-    # for col_index in col_indices:
+    df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
+    with pd.ExcelWriter(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+        df_IB_panel.to_excel(writer, sheet_name='IB_panel')
+        pass  # with
+
+    ## 重新读取 xlsx 格式然后格式化
+    ### 需要调整列边距的列名
+    columnsName_adjust = [
+        'id',
+        'id_data',
+        'process_name',
+        'step',
+        'turn',
+        'phase',
+        'id_agent',
+        'row',
+        'col',
+    ]
+
+    wb_IB_panel = load_workbook(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+    sheet_IB_panel = wb_IB_panel.active
+
+    sheet_IB_panel.freeze_panes = "K2"  # 冻结窗格
+
+    col_indices = [df_IB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+    for col_index in col_indices:
+        col_letter = get_column_letter(col_index)
+        sheet_IB_panel.column_dimensions[col_letter].width = 5
+
+    # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+    fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+    for i, row in enumerate(sheet_IB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+        if i % (2 * num_agent ** 2) < num_agent ** 2:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+            for cell in row:
+                cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+    # for col in columns_states:  # 遍历每一列
+    #     col_index = df_BB_panel.columns.get_loc(col) + 1
     #     col_letter = get_column_letter(col_index)
-    #     sheet_IB_panel.column_dimensions[col_letter].width = 5
-    #
-    # # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
-    # fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
-    # for i, row in enumerate(sheet_IB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
-    #     if i % (2 * num_agent ** 2) < num_agent ** 2:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
-    #         for cell in row:
-    #             cell.fill = fill  # 将该行的背景色设置为浅灰色
-    #
-    # # for col in columns_states:  # 遍历每一列
-    # #     col_index = df_BB_panel.columns.get_loc(col) + 1
-    # #     col_letter = get_column_letter(col_index)
-    # #     rng = sheet_IB_panel[col_letter]
-    # #     for cell in rng:  # 遍历每一个单元格
-    # #         if cell.value == True:
-    # #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
-    #
-    # wb_IB_panel.save(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+    #     rng = sheet_IB_panel[col_letter]
+    #     for cell in rng:  # 遍历每一个单元格
+    #         if cell.value == True:
+    #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+    wb_IB_panel.save(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
 
     record_work_state(exp_id, 'status_预处理实验结果程序', 'DONE', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DONE"
 
