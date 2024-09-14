@@ -197,13 +197,13 @@ def simulator(config: dict):
         Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
 
-        logger = logging.getLogger()
-        logger.setLevel(sgv['test_logging'])
-
-        log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
-        logger.addHandler(log_file_handler)
-        log_console_handler = logging.StreamHandler()
-        logger.addHandler(log_console_handler)
+        # logger = logging.getLogger()
+        # logger.setLevel(sgv['test_logging'])
+        #
+        # log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
+        # logger.addHandler(log_file_handler)
+        # log_console_handler = logging.StreamHandler()
+        # logger.addHandler(log_console_handler)
 
         if not sgv['is_develope_mode']:
             sgv_pkl = pickle.dumps(sgv)
@@ -218,18 +218,18 @@ def simulator(config: dict):
             main(sgv)
             pass  # if
 
-        ## 继续打开日志记录器
-        logger.addHandler(log_file_handler)
-        logger.addHandler(log_console_handler)
-
-        end_time = time.time()
-        logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
-
-        ## 关闭日志记录器
-        log_file_handler.close()
-        logger.removeHandler(log_file_handler)
-        log_console_handler.close()
-        logger.removeHandler(log_console_handler)
+        # ## 继续打开日志记录器
+        # logger.addHandler(log_file_handler)
+        # logger.addHandler(log_console_handler)
+        #
+        # end_time = time.time()
+        # logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
+        #
+        # ## 关闭日志记录器
+        # log_file_handler.close()
+        # logger.removeHandler(log_file_handler)
+        # log_console_handler.close()
+        # logger.removeHandler(log_console_handler)
 
         pass  # if
 
