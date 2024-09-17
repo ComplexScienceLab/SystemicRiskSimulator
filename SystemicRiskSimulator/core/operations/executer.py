@@ -73,7 +73,7 @@ class Executer:
         sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
         sgv['phase'] = 1  # 逐相复位（起始为1）
         # sgv['process_name'] = process_name
-        logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
+        # logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
         content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
 
