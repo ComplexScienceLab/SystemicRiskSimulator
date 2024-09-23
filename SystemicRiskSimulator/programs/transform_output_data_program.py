@@ -338,6 +338,7 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
     df_BB_panel = df_BB.explode('id_agent')  # 只展开 'id_agent' 列
     for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
         if col != 'id_agent':
+            # df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack().reset_index(level=0, drop=True).reset_index(drop=True)
             df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack().reset_index(level=1, drop=True)
             pass  # if
         pass  # for
@@ -462,6 +463,7 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
     # df_IB_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
     for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
         if col != 'id_agent':
+            # df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=0, drop=True).reset_index(drop=True)  # 对于二维数组需要展开两次
             df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
             pass  # if
         pass  # for
