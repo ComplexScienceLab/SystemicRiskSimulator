@@ -751,7 +751,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         account_size = df_accounts_data.loc[account_idx, 'size']
         df_shocks_data.at[shock_data.Index, 'size'] = (
             int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (shock_data_value if not np.isnan(shock_data_value) else 0 / sgv_vis['max_BB_value_in_all_panel']))
+            int(sgv_vis['one_bank_BalanceSheet_height'] * ((shock_data_value if not np.isnan(shock_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
         )
         if shock_data.data_type[-2:] == '_t':
             offsetScale_by_dataType = 1 / 13
@@ -780,7 +780,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         account_size = df_accounts_data.loc[account_idx, 'size']
         df_losses_data.at[loss_data.Index, 'size'] = (
             int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (loss_data_value if not np.isnan(loss_data_value) else 0 / sgv_vis['max_BB_value_in_all_panel']))
+            int(sgv_vis['one_bank_BalanceSheet_height'] * ((loss_data_value if not np.isnan(loss_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
         )
         offsetScale_by_dataType = 5 / 13
         df_losses_data.at[loss_data.Index, 'position'] = (
@@ -805,7 +805,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         account_size = df_accounts_data.loc[account_idx, 'size']
         df_defaults_data.at[default_data.Index, 'size'] = (
             int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (default_data_value if not np.isnan(default_data_value) else 0 / sgv_vis['max_BB_value_in_all_panel']))
+            int(sgv_vis['one_bank_BalanceSheet_height'] * ((default_data_value if not np.isnan(default_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
         )
         offsetScale_by_dataType = 5 / 13
         df_defaults_data.at[default_data.Index, 'position'] = (
@@ -830,7 +830,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         account_size = df_accounts_data.loc[account_idx, 'size']
         df_recovers_data.at[recover_data.Index, 'size'] = (
             int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (recover_data_value if not np.isnan(recover_data_value) else 0 / sgv_vis['max_BB_value_in_all_panel']))
+            int(sgv_vis['one_bank_BalanceSheet_height'] * ((recover_data_value if not np.isnan(recover_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
         )
         offsetScale_by_dataType = 5 / 13
         df_recovers_data.at[recover_data.Index, 'position'] = (
@@ -855,7 +855,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         account_size = df_accounts_data.loc[account_idx, 'size']
         df_repays_data.at[repay_data.Index, 'size'] = (
             int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (repay_data_value if not np.isnan(repay_data_value) else 0 / sgv_vis['max_BB_value_in_all_panel']))
+            int(sgv_vis['one_bank_BalanceSheet_height'] * ((repay_data_value if not np.isnan(repay_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
         )
         offsetScale_by_dataType = 5 / 13
         df_repays_data.at[repay_data.Index, 'position'] = (
