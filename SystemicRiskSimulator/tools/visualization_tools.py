@@ -447,6 +447,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     )
 
     ### 设置各节点之尺寸、颜色、标签
+
     min_vertices_size_in_one_graph = (min(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最小值
     max_vertices_size_in_one_graph = (max(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最大值
     df_vertices_data['vertices_size'] = 80.0 * np.sqrt(np.abs(np.asarray(
@@ -459,7 +460,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
         )  # 计算各节点之尺寸
     )))  # 设置各节点之尺寸
     df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][','.join(s)] if (not np.isnan(v) and v >= 0) else '#000000' for s, v in zip(list_data_banksState, list_vertices_value)]  # 设置各节点之颜色，如果是节点值是负数那么是黑色
-    df_vertices_data['vertices_label'] = [list_data_banksName[i] + '\n' + str(round(list_vertices_value[i] if not np.isnan(list_vertices_value[i]) else 'NaN')) for i in range(len(list_vertices_value))]  # 设置各节点之标签
+    df_vertices_data['vertices_label'] = [list_data_banksName[i] + '\n' + str(round(list_vertices_value[i]) if not np.isnan(list_vertices_value[i]) else 'NaN') for i in range(len(list_vertices_value))]  # 设置各节点之标签
 
     ### 生成各边集之信息
     list_edges_idx = []
@@ -583,12 +584,12 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: flo
     g.vs['label'] = vertices_data['vertices_label']
     # g.vs['label'] = vertices_data['vertices_label'] if not np.isnan(vertices_data['vertices_label']) else 'NaN'
     g.vs['color'] = vertices_data['vertices_color']
-    g.vs['size'] = vertices_data['vertices_size']
-    # g.vs['size'] = vertices_data['vertices_size'] if not np.isnan(vertices_data['vertices_size']) else 0.0
+    # g.vs['size'] = vertices_data['vertices_size']
+    g.vs['size'] = [vertices_size if not np.isnan(vertices_size) else 0.0 for vertices_size in vertices_data['vertices_size']]
     g.es['color'] = edges_data['edges_color']
     g.es['label'] = edges_data['edges_label']
-    g.es['width'] = edges_data['edges_width']
-    # g.es['width'] = edges_data['edges_width'] if not np.isnan(edges_data['edges_width']) else 0.0
+    # g.es['width'] = edges_data['edges_width']
+    g.es['width'] = [edges_width if not np.isnan(edges_width) else 0.0 for edges_width in edges_data['edges_width']]
 
     ## 生成可视化图
     fig, ax = plt.subplots(
@@ -678,6 +679,12 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             for subject, subject_values in grouped_by_subject:
                 account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == data_type) & (df_accounts_data['level'] == level) & (df_accounts_data['subject'] == subject), 'subject'].idxmax()
                 df_accounts_data.at[account_idx, 'position'] = nib
+                # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
+                if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
+                    height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
+                else:
+                    height_size = int(1e6)
+                    pass  # if
                 df_accounts_data.at[account_idx, 'size'] = (
                     int(boxs_width[o[p]]),
                     int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / sgv_vis['max_BB_value_in_all_panel']))
@@ -687,9 +694,9 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
                 if subject_values['value'].iloc[0] != 0 or subject_values['value'].iloc[0] == 0:
                     nib = (
                         sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
-                        int(nib[1] + sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / sgv_vis['max_BB_value_in_all_panel']))
+                        int(nib[1] + height_size)
                     )  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
-                else:  # 如果柱节高度为0...
+                else:  # 如果柱节高度为0... #HACK #TODO 这个以后再处理
                     count_subject_values_is_zero += 1
                     items_subject_values_is_zero.append((subject, subject_values['value'].iloc[0], nib[1]))
                     pass  # if
@@ -720,9 +727,15 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             grouped_by_subject = level_values.groupby('subject')
             for subject, subject_values in grouped_by_subject:
                 account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == data_type) & (df_accounts_data['level'] == level) & (df_accounts_data['subject'] == subject), 'subject'].idxmax()
+                # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
+                if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
+                    height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
+                else:
+                    height_size = int(1e6)
+                    pass  # if
                 df_accounts_data.at[account_idx, 'size'] = (
                     int(boxs_width[o[p]]),
-                    int(sgv_vis['one_bank_BalanceSheet_height'] * (abs(subject_values['value'].iloc[0]) / sgv_vis['max_BB_value_in_all_panel']))
+                    height_size
                 )
                 df_accounts_data.at[account_idx, 'position'] = nib
                 df_accounts_data.at[account_idx, 'fill_color'] = subject_values['fill_color'].iloc[0] if subject_values['value'].iloc[0] >= 0 else '#FFFFFF'  # 如果 equity 是负数则更改其柱子之填充颜色
@@ -1063,19 +1076,37 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制资产负债表各列各项之文本
     for account_data in accounts_data.itertuples():
-        svg_balanceSheet.append(
-            dw.Text(
-                account_data.subject + '\n' + str(round(account_data.value)),
-                font_size=18,
-                x=account_data.position[0] + account_data.size[0] // 2,
-                y=account_data.position[1] + account_data.size[1] // 2,
-                stroke='none',
-                stroke_width=0.0,
-                text_anchor='middle',
-                dominant_baseline='middle',
-                font_family=sgv_vis['en_font_family'],
+        if np.isnan(account_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
+            svg_balanceSheet.append(
+                dw.Text(
+                    account_data.subject + '\n' + 'NaN',
+                    font_size=18,
+                    x=account_data.position[0] + account_data.size[0] // 2,
+                    y=account_data.position[1] + account_data.size[1] // 2,
+                    fill='red',
+                    stroke='black',
+                    stroke_width=0.5,
+                    background='red',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
             )
-        )
+        elif account_data.value != 0:  # 如果值不为0，则绘制
+            svg_balanceSheet.append(
+                dw.Text(
+                    account_data.subject + '\n' + str(round(account_data.value)),
+                    font_size=18,
+                    x=account_data.position[0] + account_data.size[0] // 2,
+                    y=account_data.position[1] + account_data.size[1] // 2,
+                    stroke='none',
+                    stroke_width=0.0,
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+            pass  # if
         pass  # for
 
     ## 绘制各冲击变量之各列各项之文本
