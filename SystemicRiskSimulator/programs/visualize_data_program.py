@@ -816,7 +816,8 @@ def main(sgv):
                 sgv['vis']['zh_font_family'] = zh_font_family
                 sgv['vis']['en_font_family'] = en_font_family
 
-                ## NOTE：设置绘制资产负债表相关的数据
+
+                ## #TODO 提取到配置项 #NOTE：设置绘制资产负债表相关的数据
 
                 ### 资产负债表账户数据（字典列表形式）
                 list_accounts_data = [
