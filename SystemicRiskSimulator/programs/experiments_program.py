@@ -158,7 +158,7 @@ def main(sgv):
     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
     c = conn.cursor()
     # 检查实验组作业完成状态
-    c.execute("SELECT id, status_实验组模拟程序 FROM experiments")
+    c.execute("SELECT exp_id, status_实验组模拟程序 FROM experiments")
     rows = c.fetchall()
     list_idsExp_DOING = []
     list_idsExp_DONE = []

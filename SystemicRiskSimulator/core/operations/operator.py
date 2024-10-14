@@ -63,10 +63,10 @@ class Operator:
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
                     c.execute("""CREATE TABLE IF NOT EXISTS experiments
-                                    (id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)""")
+                                    (exp_id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)""")
                     # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
                     for i in range(1, num_parameters_works + 1):
-                        c.execute("INSERT INTO experiments (id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
+                        c.execute("INSERT INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
                         pass  # for
                     conn.commit()
                     is_exist_experiments_works_status_db = True
@@ -81,7 +81,7 @@ class Operator:
                         pass  # if
                     pass  # if
                 # 检查实验组作业完成状态
-                c.execute("SELECT id, status_实验组模拟程序 FROM experiments")
+                c.execute("SELECT exp_id, status_实验组模拟程序 FROM experiments")
                 rows = c.fetchall()
                 list_idsExp_DOING = []
                 list_idsExp_DONE = []
@@ -259,7 +259,7 @@ class Operator:
         # # 更新实验组作业状态为 "DOING"
         # conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
         # c = conn.cursor()
-        # c.execute("INSERT OR REPLACE INTO experiments (id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
+        # c.execute("INSERT OR REPLACE INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
         # conn.commit()
         # conn.close()
 
