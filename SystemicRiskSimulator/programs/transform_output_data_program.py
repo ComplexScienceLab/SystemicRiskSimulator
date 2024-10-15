@@ -79,7 +79,7 @@ def main(sgv):
         conn.commit()
         pass  # if
     # 检查实验组作业完成状态
-    c.execute("SELECT id, status_预处理实验结果程序 FROM experiments")
+    c.execute("SELECT exp_id, status_预处理实验结果程序 FROM experiments")
     rows = c.fetchall()
     list_idsExp_DOING = []
     list_idsExp_DONE = []
