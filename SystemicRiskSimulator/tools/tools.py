@@ -123,7 +123,20 @@ class Tools:
         pass  # function
 
     @classmethod
-    def set_experiments_folders(cls, foldername_experiments_output_data: str, foldername_experiments: str, str_folderpath_root_experiments: str, str_foldername_simulator: str, str_folderpath_realpath_simulator: str, str_foldername_outputData: str, str_folderpath_realpath_outputData: str, str_folderpath_models: str, str_folderpath_config: str, str_folderpath_parameters: str, str_folderpath_agents: str):
+    def set_experiments_folders(
+            cls,
+            foldername_experiments_output_data: str,
+            foldername_experiments: str,
+            str_folderpath_root_experiments: str,
+            str_foldername_simulator: str,
+            str_folderpath_realpath_simulator: str,
+            str_foldername_outputData: str,
+            str_folderpath_realpath_outputData: str,
+            str_folderpath_models: str,
+            str_folderpath_config: str,
+            str_folderpath_parameters: str,
+            str_folderpath_agents: str
+    ):
         """
         设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹等。
 
@@ -314,7 +327,7 @@ class Tools:
         pass  # function
 
     @classmethod
-    def _copy_files_from_other_folders(cls, folderpath_source: Path, folderpath_target: Path, is_auto_confirmation: bool = False):
+    def copy_files_from_other_folders(cls, folderpath_source: Path, folderpath_target: Path, is_auto_confirmation: bool = False):
         """
         从指定的文件夹复制其全部的子文件夹及其子文件到目标文件夹。
 
@@ -449,7 +462,7 @@ class Tools:
         pass  # function
 
     @classmethod
-    def _delete_and_recreate_folder(cls, folderpath_target: Path, is_auto_confirmation: bool = False):
+    def delete_and_recreate_folder(cls, folderpath_target: Path, is_auto_confirmation: bool = False):
         """
         删除非空文件夹并重新创建文件夹。
 
@@ -596,7 +609,8 @@ class Tools:
     @classmethod
     def transform_one_of_expOutputData_from_panel_form_to_ndarray(cls, input_data: pd.Series, shape: tuple):
         """
-        转换实验输出的数据当中的其中一个类别的数据，从序列形式转换成 ndarray 形式。
+        转换实验输出的数据当中的其中一个类别的数据，从序列形式转换成 ndarray 形式。只有在面板化之后才需要
+
         Args:
             input_data (pd.Series): 待转换的数据
             shape (tuple): 需要转换的数据形状
@@ -654,7 +668,7 @@ class Tools:
 
                 # 为每个键生成一个类属性
                 for j, key in enumerate(dict_.keys()):
-                    file.write(f'        self.{key} = np.NaN  # {comments[j]}\n')
+                    file.write(f'        self.{key} = np.nan  # {comments[j]}\n')
 
                 # 在类之间添加空行
                 file.write('\n')
@@ -666,7 +680,7 @@ class Tools:
     @classmethod
     def draw_color_band_before_experiments(cls, ids: list, process_status: list, list_idsExp_PLAN: list, list_idsExp_TASK: list, filepath_to_save: Path):
         """
-        绘制实验组的状态分布图
+        绘制实验组的状态分布图  #BUG 速度太慢，需要优化。
 
         Args:
             ids (list): 实验组 id
@@ -705,7 +719,7 @@ class Tools:
     @classmethod
     def draw_color_band_after_experiments(cls, ids: list, process_status: list, filepath_to_save: Path):
         """
-        绘制实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
+        绘制实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。  #BUG 速度太慢，需要优化。
 
         Args:
             ids (list): 实验组 id

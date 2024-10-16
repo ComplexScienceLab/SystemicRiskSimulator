@@ -41,7 +41,7 @@ class CONST:
     """
 
     @classmethod
-    def __init__(cls, num):
+    def __init__(cls, num, type=MoneyType):
         # cls.FALSE1 = np.full((num, 1), False)  # 一维false布尔向量常量
         cls.FALSE1 = np.full(num, False)  # 一维false布尔向量常量
         cls.FALSE2 = np.full((num, num), False)  # 二维方阵false布尔向量常量
@@ -60,15 +60,15 @@ class CONST:
         # cls.ONES1 = np.ones((num, 1))  # 一维幺向量常量
         cls.ONES1 = np.ones(num, dtype=MoneyType)  # 一维幺向量常量
         cls.ONES2 = np.ones((num, num), dtype=MoneyType)  # 二维方阵幺向量常量
-        # cls.MISSING1 = np.full((num, 1), np.NaN)  # 一维缺失值向量常量
-        cls.MISSING1 = np.full(num, np.NaN)  # 一维缺失值向量常量
-        cls.MISSING2 = np.full((num, num), np.NaN)  # 二维方阵确失值常量
+        # cls.MISSING1 = np.full((num, 1), np.nan)  # 一维缺失值向量常量
+        cls.MISSING1 = np.full(num, np.nan)  # 一维缺失值向量常量
+        cls.MISSING2 = np.full((num, num), np.nan)  # 二维方阵确失值常量
         # cls.NONE1 = np.empty((num, 1), dtype=object)  # 一维空向量常量
         cls.NONE1 = np.empty(num, dtype=object)  # 一维空向量常量
         cls.NONE2 = np.empty((num, num), dtype=object)  # 二维空向量常量
         # cls.RANGE1 = np.arange(0, num, step=1).reshape((num, 1))  # 一维步进向量常量（从0开始）
-        cls.RANGE1 = np.arange(1, num + 1, step=1)  # 一维步进向量常量（从1开始）
-        cls.RANGE2 = np.arange(1, num * num + 1, step=1).reshape((num, num))  # 二维方阵步进向量常量（从1开始）
+        cls.RANGE1 = np.arange(1, num + 1, step=1, dtype=type)  # 一维步进向量常量（从1开始）
+        cls.RANGE2 = np.arange(1, num * num + 1, step=1, dtype=type).reshape((num, num))  # 二维方阵步进向量常量（从1开始）
         pass  # end init
 
     pass  # end class

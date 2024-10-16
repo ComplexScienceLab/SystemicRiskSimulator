@@ -15,6 +15,6 @@ from SystemicRiskSimulator.core.operations.executer import Executer
 
 class gymnasium_environment (gym.Env):
     """
-    多主体强化学习环境，基于 RLlib 的环境模型 #NOW
+    多主体强化学习环境，基于 RLlib 的环境模型
     """
     pass  # class

@@ -20,7 +20,7 @@ def record_work_state(id_experiment: int, state_column: str, state_value: str, f
     """
     conn = sqlite3.connect(Path(folderpath_experiments_output_log, "experiments_works_status.db"))
     c = conn.cursor()
-    c.execute(f"UPDATE experiments SET {state_column} = ? WHERE id = ?", (state_value, id_experiment))
+    c.execute(f"UPDATE experiments SET {state_column} = ? WHERE exp_id = ?", (state_value, id_experiment))
     conn.commit()
     conn.close()
     pass  # function

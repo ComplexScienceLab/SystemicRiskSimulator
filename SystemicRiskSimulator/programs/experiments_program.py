@@ -7,26 +7,30 @@
 # -*- coding: utf-8 -*-
 
 
-from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, sqlite3, base64, pickle, multiprocessing, Pool, json
+from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, sqlite3, base64, pickle, multiprocessing, Pool, json, np
 from SystemicRiskSimulator.core.operations.operator import Operator
 from SystemicRiskSimulator.tools.tools import Tools
 
 
-def main():
+def main(sgv):
     """
     实验组模拟程序。用于运行实验组。
     """
+    # # %% 设置工作目录。
+    # # folderpath_settings=Tools.setup_working_directory()
+    # if Path(sys.argv[0]).name == Path(__file__).name:
+    #     # 在控制台运行，切换到脚本所在的文件夹
+    #     folderpath = Path(__file__).resolve().parent
+    #     os.chdir(folderpath)
+    # else:
+    #     # 通过其他脚本运行，执行特定的代码
+    #     list_args = Tools.decode_args([*sys.argv[1:]])
+    #     folderpath = list_args[0]
+    #     pass  # if
+    #
+    # folderpath_parameters = folderpath
 
     # %% 预安装模型、数据，运行实验组
-
-    # 从命令行参数获取配置字典
-    sgv_base64 = sys.argv[1]
-    sgv_pkl = base64.b64decode(sgv_base64)
-    sgv = pickle.loads(sgv_pkl)
-
-    # para_base64 = sys.argv[2]
-    # para_pkl = base64.b64decode(para_base64)
-    # paras_works = pickle.loads(para_pkl)
 
     ## 设置主进程日志
     logger = logging.getLogger()
@@ -45,7 +49,7 @@ def main():
     if sgv['init_parameters_method'] == 'import data':
         sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv)
     elif sgv['init_parameters_method'] == 'set manually':
-        sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv, parameters_works)  # #BUG 这里的 parameters_works 变量没有定义
+        sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv, parameters_works)  # #BUG 这里的 parameters_works 变量没有定义。但是由于现在没有维护 "set manually" 的情况，因此事实上目前不需要修复
         pass  # if
 
     ## 运行实验组
@@ -67,11 +71,12 @@ def main():
     if sgv['is_enable_multiprocessing']:
         ## #NOTE：多进程并行处理
         # para = para.to_dict()  # 将参数数据框转换为字典
-        # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
 
         ## 并行计算时，关闭主进程日志记录器，改由子进程记录各自的日志
         log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
         num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 计算 CPU 核心数
 
@@ -109,7 +114,6 @@ def main():
 
         for i, para in parameters_works_TASK.iterrows():
             para = para.to_dict()  # 将参数数据框转换为字典
-            # model = models[f"model_{para['model_name']}"]  # 获取当前实验对应的模型。如果一次批处理不止一个模型，那么就用这个。
             model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
             sgv['id_experiment'] = i + 1  # 设定当前实验编号
 
@@ -140,9 +144,11 @@ def main():
             warnings.filterwarnings("default")  # 恢复警告
             pass  # if
 
-        ## 关闭该程序之主进程日志记录器
+        ## 关闭日志记录器
         log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
         pass  # if
 
@@ -152,7 +158,7 @@ def main():
     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
     c = conn.cursor()
     # 检查实验组作业完成状态
-    c.execute("SELECT id, status_实验组模拟程序 FROM experiments")
+    c.execute("SELECT exp_id, status_实验组模拟程序 FROM experiments")
     rows = c.fetchall()
     list_idsExp_DOING = []
     list_idsExp_DONE = []
@@ -184,10 +190,10 @@ def main():
         }))
         pass  # with
 
-    # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之后的作业完成状态信息。
-    ids = [row[0] for row in rows]  # 获取实验组 id
-    status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-    Tools.draw_color_band_after_experiments(ids, status_实验组模拟程序_运行状态, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_after_实验组模拟程序.png"))
+    ## 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之后的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
+    # ids = [row[0] for row in rows]  # 获取实验组 id
+    # status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+    # Tools.draw_color_band_after_experiments(ids, status_实验组模拟程序_运行状态, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_after_实验组模拟程序.png"))
 
     time_end_统计实验组作业情况 = time.time()  # #DEBUG
     logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
@@ -229,7 +235,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
 
 
     elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is False:
-        ## #NOW #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
+        ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 进行训练。\n")  # DEBUG 专用
 
         ## 重置实验
@@ -241,7 +247,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         Operator.operate_end_experiment(A_data, sgv)
 
     elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'using':
-        ## #TODO #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
+        ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")  # DEBUG 专用
 
         ## 重置实验
@@ -253,143 +259,15 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         Operator.operate_end_experiment(A_data, sgv)
 
     elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'training':
-        ## #TODO #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做训练时
+        ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做训练时
 
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 进行训练。\n")  # DEBUG专用
 
-        # # 设置 RLlib 结果目录 #BUG 不起作用
-        # if sgv['system_platform'] == 'Windows':
-        #     os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
-        # elif sgv['system_platform'] == 'Darwin':
-        #     os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log'], "ray_results"))  # 设置 RLlib 的结果目录
-        # elif sgv['system_platform'] == 'Linux':
-        #     os.environ["RLLIB_RESULTS_DIR"] = str(Path(sgv['folderpath_experiments_output_log']))  # 设置 RLlib 的结果目录
-        #     pass  # if
-
-        ## 导入包
-        # from torch.optim import Adam
-        import ray
-        from ray import air, tune
-        from ray.rllib.algorithms.callbacks import DefaultCallbacks
-        from ray.tune.registry import register_env
-        from ray.rllib.policy.policy import PolicySpec
-        # from ray.rllib.env.wrappers.pettingzoo_env import PettingZooEnv
-        from ray.rllib.env.wrappers.pettingzoo_env import ParallelPettingZooEnv
-        from ray.rllib.algorithms.algorithm_config import AlgorithmConfig
-        from ray.rllib.algorithms.ppo import (
-            PPO,
-            PPOConfig,
-            PPOTorchPolicy,
-        )
-
         ## 重置实验
-        A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
-
-        env_name = model.attribute.entity_name
-
-        modelEntity = model.content  # 获取节点实体对应的模型实体
-
-        process = modelEntity.process
-
-        content_model = modelEntity.content['content_model']
-        content_agents = modelEntity.content['content_agents']
-        content_finance = modelEntity.content['content_finance']
-        env_PettingZoo = modelEntity.environment(A, A_data, para, sgv, content_model)
-
-        # observations, infos = env_PettingZoo.reset()
-
-        ray.init()  # 初始化 Ray
-
-        def env_creator(args):
-            env = modelEntity.environment(A, A_data, para, sgv, content_model)
-            return env  # 返回环境实例
-
-        # 注册自定义的 PettingZoo 环境
-        register_env(env_name, lambda config: ParallelPettingZooEnv(env_creator(config)))
-
-        # 停止条件
-        stop = {
-            "training_iteration": sgv['stop_iters'],
-            "timesteps_total": sgv['stop_timesteps'],
-            "episode_reward_mean": sgv['stop_reward'],
-        }
-
-        # class MyCallbacks(DefaultCallbacks):
-        #     def on_train_result(self, trainer, result):
-        #         print("trainer.train() result: {}".format(result))
-        #         super().on_train_result(trainer, result)
-
-        # 配置项
-        config = (
-            PPOConfig()
-            .experimental(_enable_new_api_stack=False)
-            .environment(
-                env=env_name,
-                clip_actions=sgv['clip_actions'],
-                clip_rewards=sgv['clip_rewards'],
-                disable_env_checking=sgv['disable_env_checking'],
-            )
-            # .optimizer(
-            #     type="adam",
-            #     adam_eps=1e-8,
-            #     grad_clip=None,
-            # )
-            .resources(
-                num_gpus=int(os.environ.get("RLLIB_NUM_GPUS", "0")),
-            )
-            .rollouts(
-                num_rollout_workers=sgv['num_rollout_workers'],
-                num_envs_per_worker=sgv['num_envs_per_worker'],
-                rollout_fragment_length=sgv['rollout_fragment_length'],
-                batch_mode="complete_episodes",  # 可选值为 "complete_episodes" 或 "truncate_episodes"。这里建议用 "complete_episodes"。
-            )
-            .debugging(log_level="ERROR")
-            .reporting(
-                metrics_num_episodes_for_smoothing=sgv['metrics_num_episodes_for_smoothing'],
-            )
-            .training(
-                train_batch_size=sgv['train_batch_size'],
-                lr=sgv['lr'],
-                gamma=sgv['gamma'],
-                lambda_=sgv['lambda_'],
-                use_gae=sgv['use_gae'],
-                clip_param=sgv['clip_param'],
-                grad_clip=sgv['grad_clip'],
-                entropy_coeff=sgv['entropy_coeff'],
-                vf_loss_coeff=sgv['vf_loss_coeff'],
-                sgd_minibatch_size=sgv['sgd_minibatch_size'],
-                num_sgd_iter=sgv['num_sgd_iter'],
-                # optimizer={Adam},
-            )
-        )
-
-        ## 运行实验
-        logging.debug("    开始执行模型内容：")
-        sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
-
-        sgv['experiment_start_time'] = time.time()  # 记录此次实验开始时间
-
-        algo = config.build()
-        # algo = PPO(config=config, env=env_name)
-
-        for i in range(1):
-            result = algo.train()
-            if i >= stop["training_iteration"] or result["timesteps_total"] >= stop["timesteps_total"] or result["episode_reward_mean"] >= stop["episode_reward_mean"]:
-                break
-            print(result)
-
-        # #TODO 调参
-        # tune.Tuner(
-        #     "PPO",
-        #     run_config=air.RunConfig(
-        #         stop=stop,
-        #         checkpoint_config=air.CheckpointConfig(
-        #             checkpoint_frequency=10,
-        #         ),
-        #     ),
-        #     param_space=config,
-        # ).fit()
-
+        A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
+        ## 步进式运行实验
+        A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
+        # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
         ## 收尾实验
         Operator.operate_end_experiment(A_data, sgv)
 
@@ -401,4 +279,9 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
 pass  # function
 
 if __name__ == '__main__':
-    main()
+    # 从命令行参数获取配置字典
+    sgv_base64 = sys.argv[1]
+    sgv_pkl = base64.b64decode(sgv_base64)
+    sgv = pickle.loads(sgv_pkl)
+
+    main(sgv)

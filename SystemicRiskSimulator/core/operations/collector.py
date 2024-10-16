@@ -1,6 +1,7 @@
 "函数区：收集数据"
-
+import numpy as np
 ## 函数区：收集数据
+from scipy.sparse import csr_array
 from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, logging
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
@@ -158,6 +159,26 @@ class Collector:
             sgv(dict): 模拟器全局变量
 
         """
+
+        ## 压缩数据
+        if sgv['is_compress_result_data']:
+            A_data.BB, A_data.IB = cls.compress_result_data(A_data.BB, A_data.IB)
+            pass  # if
+
+        # # 解压数据 #DEBUG 以下用于测试解压后的数据是否与原始数据一致
+        # if sgv['is_compress_result_data']:
+        #     BB_decompress, IB_decompress = cls.decompress_result_data(A_data.BB, A_data.IB)
+        #     pass  # if
+        #
+        #     A_data.BB = BB_decompress
+        #     A_data.IB = IB_decompress
+        #     pass  # if
+        # compare = []  # 验证解压后的数据是否与原始数据一致
+        # for i in range(len(A_data.BB)):
+        #     # compare.append(A_data.BB['Loss_t'][i] - BB_decompress['Loss_t'][i])
+        #     compare.append(A_data.IB['Shock_IB_def'][i] - IB_decompress['Shock_IB_def'][i])
+        #     # compare.append(A_data.BB['hel'][i] ^ BB_decompress['hel'][i])
+        #     # compare.append(A_data.IB['hel'][i] ^ IB_decompress['hel'][i])
 
         ## 导出为pkl格式
         pd.to_pickle(A_data.BB, Path(sgv['folderpath_experiments_output_data'], r"BB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
@@ -399,24 +420,19 @@ class Collector:
             mtime_of_file_parameters_works_pkl = filepath_parameters_works_pkl.stat().st_mtime  # 获取parameters_works.pkl文件的最后修改时间
             if (mtime_of_file_parameters_pkl > mtime_of_file_parameters_works_pkl) or (mtime_of_file_parameters_py > mtime_of_file_parameters_works_pkl):
                 is_generate_parameters_works_data = True
-                print("参数文件有更新，需要重新生成参数作业数据。")
+                print("参数文件有更新，需要重新导出参数作业数据。")
             else:
                 is_generate_parameters_works_data = False
-                print("参数文件没有更新，不需要重新生成参数作业数据。")
+                print("参数文件没有更新，不需要重新导出参数作业数据。")
         else:
             is_generate_parameters_works_data = True
-            print("参数作业数据文件不存在，需要重新生成参数作业数据。")
+            print("参数作业数据文件不存在，需要重新导出参数作业数据。")
             pass  # if
         if is_generate_parameters_works_data:
-            Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
-            # shutil.copy(Path(sgv['folderpath_parameters'], r"set_parameters_variables.py"), sgv['folderpath_experiments_output_parameters'])  # 导出一份生成参数的代码文件到输出文件夹
-            from SystemicRiskSimulator.core.define.define_parameterVariables import para
-
-            # pd.to_pickle(df_combinationOfPara, filepath_parameters_works_pkl)
-            # df_combinationOfPara.to_csv(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.csv"), index=False)
-            # df_combinationOfPara.to_excel(Path(sgv['folderpath_experiments_output_parameters'], r"parameters.xlsx"), index=False)
+            Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹之参数文件夹
+            Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到输出文件夹
+            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之 parameters 文件夹
+            Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到模拟器之 data 文件夹
             pass
 
         pass  # function
@@ -437,5 +453,297 @@ class Collector:
             pickle.dump(sgv, f)
 
         # pickle.dump(config_data, open(Path(sgv['folderpath_experiments_output_data'], r"config.pkl"), "wb"))  # 导出为pkl格式
+
+    @classmethod
+    def compress_result_data(cls, BB_origin: pd.DataFrame, IB_origin: pd.DataFrame):
+        """
+        压缩实验结果数据
+
+        Args:
+            BB_origin (pd.DataFrame): 原始的 BB 实验结果数据 
+            IB_origin (pd.DataFrame): 原始的 IB 实验结果数据
+
+        Returns:
+            BB_compress (pd.DataFrame): 压缩后的 BB 实验结果数据
+            IB_compress (pd.DataFrame): 压缩后的 IB 实验结果数据
+
+        """
+        len_result_data = len(BB_origin)
+        BB_compress = pd.DataFrame(columns=BB_origin.columns, index=range(len_result_data))
+        # 遍历每一列
+        for column in BB_origin.columns:
+            if (type(BB_origin.at[0, column]) == np.ndarray and type(BB_origin.at[0, column][0]) == MoneyType):  # 如果是 MoneyType 型的 numpy 数组
+                BB_compress.at[0, column] = BB_origin.loc[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
+                    diff = BB_origin.at[i, column] - BB_origin.at[i - 1, column]
+                    BB_compress.at[i, column] = csr_array(diff.reshape(1, -1))
+                    pass  # for
+                BB_compress.at[len_result_data - 1, column] = BB_origin.at[len_result_data - 1, column].copy()
+            elif (type(BB_origin.at[0, column]) == np.ndarray and (type(BB_origin.at[0, column][0]) == IdsType or type(BB_origin.at[0, column][0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
+                BB_compress.at[0, column] = BB_origin.at[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算不同
+                    diff = BB_origin.at[i, column] != BB_origin.at[i - 1, column]
+                    BB_compress.at[i, column] = csr_array(diff.astype(IdsType).reshape(1, -1))
+                    pass  # for
+                BB_compress.at[len_result_data - 1, column] = BB_origin.at[len_result_data - 1, column].copy()
+            elif (type(BB_origin.at[0, column]) == np.ndarray and type(BB_origin.at[0, column][0]) == np.bool_):  # 如果是布尔型的 numpy 数组
+                BB_compress.at[0, column] = BB_origin.at[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):
+                    diff = BB_origin.at[i, column] != BB_origin.at[i - 1, column]
+                    BB_compress.at[i, column] = csr_array(diff.reshape(1, -1))  # 转换为稀疏数组
+                    pass  # for
+                BB_compress.at[len_result_data - 1, column] = BB_origin.at[len_result_data - 1, column].copy()
+            elif (type(BB_origin.at[0, column]) == np.ndarray and (type(BB_origin.at[0, column][0]) == NameType or type(BB_origin.at[0, column][0]) == AbbrType or type(BB_origin.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
+                BB_compress.at[0, column] = BB_origin.at[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):
+                    diff = (BB_origin.at[i, column] == BB_origin.at[i - 1, column])
+                    BB_compress.at[i, column] = BB_origin.at[i, column].copy()
+                    BB_compress.at[i, column][diff] = ''
+                    if diff.all():  # 如果元素全为相同，则整个数组直接设置为 None，否则相同的元素设置为空字符串
+                        BB_compress.at[i, column] = None
+                    else:
+                        BB_compress.at[i, column][diff] = ''
+                        pass  # if
+                    pass  # for
+                BB_compress.at[len_result_data - 1, column] = BB_origin.at[len_result_data - 1, column].copy()
+            elif (type(BB_origin.at[0, column]) == np.ndarray and BB_origin.at[0, column][0] == None):  # 如果值为 None 的 numpy 数组
+                BB_compress.at[0, column] = BB_origin.at[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):
+                    BB_compress.at[i, column] = None  # 这里设定，只要元素存在 None，则整个数组都没有被使用，直接设为 None
+                    pass  # for
+                BB_compress.at[len_result_data - 1, column] = BB_origin.at[len_result_data - 1, column].copy()
+            elif (type(BB_origin.at[0, column]) == str):  # 如果是字符串类型
+                BB_compress.at[0, column] = BB_origin.at[0, column]
+                for i in range(1, len_result_data - 1, 1):
+                    if (BB_origin.at[i, column] == BB_origin.at[i - 1, column]):
+                        BB_compress.at[i, column] = None
+                    else:
+                        BB_compress.at[i, column] = BB_origin.at[i, column]
+                        pass  # if
+                    pass  # for
+                BB_compress.at[len_result_data - 1, column] = BB_origin.at[len_result_data - 1, column]
+            else:
+                BB_compress[column] = BB_origin[column].copy()
+                pass  # if
+
+            pass  # for
+
+        IB_compress = pd.DataFrame(columns=IB_origin.columns).reindex(range(len_result_data))
+        # 遍历每一列
+        for column in IB_origin.columns:
+            if (type(IB_origin.at[0, column]) == np.ndarray and type(IB_origin.at[0, column][0, 0]) == MoneyType):  # 如果是 MoneyType 型的 numpy 数组
+                IB_compress.at[0, column] = IB_origin.at[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
+                    diff = IB_origin.at[i, column] - IB_origin.at[i - 1, column]
+                    IB_compress.at[i, column] = csr_array(diff)
+                    pass  # for
+                IB_compress.at[len_result_data - 1, column] = IB_origin.at[len_result_data - 1, column].copy()
+            elif (type(IB_origin.at[0, column]) == np.ndarray and (type(IB_origin.at[0, column][0, 0]) == IdsType or type(IB_origin.at[0, column][0, 0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
+                IB_compress.at[0, column] = IB_origin.at[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算不同
+                    diff = IB_origin.at[i, column] != IB_origin.at[i - 1, column]
+                    IB_compress.at[i, column] = csr_array(diff.astype(IdsType))
+                    pass  # for
+                IB_compress.at[len_result_data - 1, column] = IB_origin.at[len_result_data - 1, column].copy()
+            elif (type(IB_origin.at[0, column]) == np.ndarray and type(IB_origin.at[0, column][0, 0]) == np.bool_):  # 如果是布尔型的 numpy 数组
+                IB_compress.at[0, column] = IB_origin.at[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):
+                    diff = IB_origin.at[i, column] != IB_origin.at[i - 1, column]
+                    IB_compress.at[i, column] = csr_array(diff)  # 转换为稀疏数组
+                    pass  # for
+                IB_compress.at[len_result_data - 1, column] = IB_origin.at[len_result_data - 1, column].copy()
+            elif (type(IB_origin.at[0, column]) == np.ndarray and (type(IB_origin.at[0, column][0]) == NameType or type(IB_origin.at[0, column][0]) == AbbrType or type(IB_origin.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
+                IB_compress.at[0, column] = IB_origin.at[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):
+                    diff = (IB_origin.at[i, column] == IB_origin.at[i - 1, column])
+                    IB_compress.at[i, column] = IB_origin.at[i, column].copy()
+                    IB_compress.at[i, column][diff] = ''
+                    if diff.all():  # 如果元素全为相同，则整个数组直接设置为 None，否则相同的元素设置为空字符串
+                        IB_compress.at[i, column] = None
+                    else:
+                        IB_compress.at[i, column][diff] = ''
+                        pass  # if
+                    pass  # for
+                IB_compress.at[len_result_data - 1, column] = IB_origin.at[len_result_data - 1, column].copy()
+            elif (type(IB_origin.at[0, column]) == np.ndarray and IB_origin.at[0, column][0, 0] == None):  # 如果值为 None 的 numpy 数组
+                IB_compress.at[0, column] = IB_origin.at[0, column].copy()
+                for i in range(1, len_result_data - 1, 1):
+                    IB_compress.at[i, column] = None  # 这里设定，只要元素存在 None，则整个数组都没有被使用，直接设为 None
+                    pass  # for
+                IB_compress.at[len_result_data - 1, column] = IB_origin.at[len_result_data - 1, column].copy()
+            elif (type(IB_origin.at[0, column]) == str):  # 如果是字符串类型
+                IB_compress.at[0, column] = IB_origin.at[0, column]
+                for i in range(1, len_result_data - 1, 1):
+                    if (IB_origin.at[i, column] == IB_origin.at[i - 1, column]):
+                        IB_compress.at[i, column] = None
+                    else:
+                        IB_compress.at[i, column] = IB_origin.at[i, column]
+                        pass  # if
+                    pass  # for
+                IB_compress.at[len_result_data - 1, column] = IB_origin.at[len_result_data - 1, column]
+            else:  # 其他数据类型，直接复制原来的数据
+                IB_compress[column] = IB_origin[column].copy()
+                pass  # if
+
+            pass  # for
+
+        return BB_compress, IB_compress
+        pass  # function
+
+    @classmethod
+    def decompress_result_data(cls, BB_compress: pd.DataFrame, IB_compress: pd.DataFrame):
+        """
+        解压实验结果数据。
+
+        解压后的数据应该与原始的实验结果数据一样。
+
+        Args:
+            BB_compress (pd.DataFrame): 压缩后的 BB 实验结果数据
+            IB_compress (pd.DataFrame): 压缩后的 IB 实验结果数据
+
+        Returns:
+            BB_decompress (pd.DataFrame): 解压后的 BB 实验结果数据
+            IB_decompress (pd.DataFrame): 解压后的 IB 实验结果数据
+        """
+
+        len_result_data = len(BB_compress)
+        BB_decompress = pd.DataFrame(columns=BB_compress.columns, index=range(len_result_data))
+        # 遍历每一列
+        for column in BB_compress.columns:
+            if (type(BB_compress.at[0, column]) == np.ndarray and type(BB_compress.at[0, column][0]) == MoneyType):  # 如果是 MoneyType 型的 numpy 数组
+                BB_decompress.at[0, column] = BB_compress.at[0, column].copy()
+                BB_decompress.at[1, column] = BB_compress.at[0, column] + BB_compress.at[1, column].toarray().ravel()
+                for i in range(2, len_result_data - 1, 1):  # 从第三行开始遍历每一行直到倒数第二行，累加差值
+                    diff = BB_compress.at[i, column].toarray().ravel()
+                    BB_decompress.at[i, column] = BB_decompress.at[i - 1, column] + diff
+                    pass  # for
+                BB_decompress.at[len_result_data - 1, column] = BB_compress.at[len_result_data - 1, column].copy()
+            elif (type(BB_compress.at[0, column]) == np.ndarray and (type(BB_compress.at[0, column][0]) == IdsType or type(BB_compress.at[0, column][0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
+                last_not_none = BB_compress.at[0, column].copy()
+                BB_decompress.at[0, column] = last_not_none.copy()
+                for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
+                    diff = BB_compress.at[i, column].toarray().ravel()
+                    if not diff.all():  # 设定只有这种可能性
+                        BB_decompress.at[i, column] = last_not_none.copy()
+                        pass  # if
+                    pass  # for
+                BB_decompress.at[len_result_data - 1, column] = BB_compress.at[len_result_data - 1, column].copy()
+            elif (type(BB_compress.at[0, column]) == np.ndarray and type(BB_compress.at[0, column][0]) == np.bool_):  # 如果是布尔型的 numpy 数组
+                BB_decompress.at[0, column] = BB_compress.at[0, column].copy()
+                BB_decompress.at[1, column] = BB_compress.at[0, column] ^ BB_compress.at[1, column].toarray().ravel()
+                for i in range(2, len_result_data - 1, 1):
+                    diff = BB_compress.at[i, column].toarray().ravel()
+                    BB_decompress.at[i, column] = BB_decompress.at[i - 1, column] ^ diff
+                    pass  # for
+                BB_decompress.at[len_result_data - 1, column] = BB_compress.at[len_result_data - 1, column].copy()
+            elif (type(BB_compress.at[0, column]) == np.ndarray and (type(BB_compress.at[0, column][0]) == NameType or type(BB_compress.at[0, column][0]) == AbbrType or type(BB_compress.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
+                last_not_none = BB_compress.at[0, column].copy()
+                BB_decompress.at[0, column] = last_not_none.copy()
+                for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
+                    if BB_compress.at[i, column] is None:  # 如果是 None，则直接设置为前一行的值，否则与上一个非 None 值计算不同的部分，然后赋值
+                        BB_decompress.at[i, column] = last_not_none.copy()
+                    else:
+                        last_last_not_none = last_not_none.copy()
+                        last_not_none = BB_compress.at[i, column].copy()
+                        diff = (last_not_none == '')
+                        BB_decompress.at[i, column] = last_not_none.copy()
+                        BB_decompress.at[i, column][diff] = last_last_not_none[diff]
+                        pass  # if
+                    pass  # for
+                BB_decompress.at[len_result_data - 1, column] = BB_compress.at[len_result_data - 1, column].copy()
+            elif (type(BB_compress.at[0, column]) == np.ndarray and BB_compress.at[0, column][0] == None):  # 如果值为 None 的 numpy 数组
+                BB_decompress.at[0, column] = BB_compress.at[0, column]
+                for i in range(1, len_result_data - 1, 1):
+                    BB_decompress.at[i, column] = BB_compress.at[0, column].copy()  # 直接赋值为第一行的值
+                    pass  # for
+                BB_decompress.at[len_result_data - 1, column] = BB_compress.at[len_result_data - 1, column].copy()
+            elif (type(BB_compress.at[0, column]) == str):  # 如果是字符串类型
+                last_not_none = BB_compress.at[0, column]
+                BB_decompress.at[0, column] = last_not_none
+                for i in range(1, len_result_data - 1, 1):
+                    if BB_compress.at[i, column] is None:  # 如果是 None，则直接设置为前一行的值，否则与上一个非 None 值计算不同的部分，然后赋值
+                        BB_decompress.at[i, column] = last_not_none
+                    else:
+                        last_not_none = BB_compress.at[i, column]
+                        BB_decompress.at[i, column] = last_not_none
+                        pass  # if
+                    pass  # for
+                BB_decompress.at[len_result_data - 1, column] = BB_compress.at[len_result_data - 1, column]
+            else:  # 其他数据类型，直接复制原来的数据
+                BB_decompress[column] = BB_compress[column].copy()
+                pass  # if
+
+            pass  # for
+
+        IB_decompress = pd.DataFrame(columns=IB_compress.columns, index=range(len_result_data))
+        # 遍历每一列
+        for column in IB_compress.columns:
+            if (type(IB_compress.at[0, column]) == np.ndarray and type(IB_compress.at[0, column][0, 0]) == MoneyType):  # 如果是 MoneyType 型的 numpy 数组
+                IB_decompress.at[0, column] = IB_compress.at[0, column].copy()
+                IB_decompress.at[1, column] = IB_compress.at[0, column] + IB_compress.at[1, column].toarray()
+                for i in range(2, len_result_data - 1, 1):  # 从第三行开始遍历每一行直到倒数第二行，累加差值
+                    diff = IB_compress.at[i, column].toarray()
+                    IB_decompress.at[i, column] = IB_decompress.at[i - 1, column] + diff
+                    pass  # for
+                IB_decompress.at[len_result_data - 1, column] = IB_compress.at[len_result_data - 1, column].copy()
+            elif (type(IB_compress.at[0, column]) == np.ndarray and (type(IB_compress.at[0, column][0, 0]) == IdsType or type(IB_compress.at[0, column][0, 0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
+                last_not_none = IB_compress.at[0, column].copy()
+                IB_decompress.at[0, column] = last_not_none.copy()
+                for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
+                    diff = IB_compress.at[i, column].toarray()
+                    if not diff.all():  # 设定只有这种可能性
+                        IB_decompress.at[i, column] = last_not_none.copy()
+                        pass  # if
+                    pass  # for
+                IB_decompress.at[len_result_data - 1, column] = IB_compress.at[len_result_data - 1, column].copy()
+            elif (type(IB_compress.at[0, column]) == np.ndarray and type(IB_compress.at[0, column][0, 0]) == np.bool_):  # 如果是布尔型的 numpy 数组
+                IB_decompress.at[0, column] = IB_compress.at[0, column].copy()
+                IB_decompress.at[1, column] = IB_compress.at[0, column] + IB_compress.at[1, column].toarray()
+                for i in range(2, len_result_data - 1, 1):
+                    diff = IB_compress.at[i, column].toarray()
+                    IB_decompress.at[i, column] = IB_decompress.at[i - 1, column] ^ diff
+                    pass  # for
+                IB_decompress.at[len_result_data - 1, column] = IB_compress.at[len_result_data - 1, column].copy()
+            elif (type(IB_compress.at[0, column]) == np.ndarray and (type(IB_compress.at[0, column][0]) == NameType or type(IB_compress.at[0, column][0]) == AbbrType or type(IB_compress.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
+                last_not_none = IB_compress.at[0, column].copy()
+                IB_decompress.at[0, column] = last_not_none.copy()
+                for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
+                    if IB_compress.at[i, column] is None:  # 如果是 None，则直接设置为前一行的值，否则与上一个非 None 值计算不同的部分，然后赋值
+                        IB_decompress.at[i, column] = last_not_none.copy()
+                    else:
+                        last_last_not_none = last_not_none.copy()
+                        last_not_none = IB_compress.at[i, column].copy()
+                        diff = (last_not_none == '')
+                        IB_decompress.at[i, column] = last_not_none.copy()
+                        IB_decompress.at[i, column][diff] = last_last_not_none[diff]
+                        pass  # if
+                    pass  # for
+                IB_decompress.at[len_result_data - 1, column] = IB_compress.at[len_result_data - 1, column].copy()
+            elif (type(IB_compress.at[0, column]) == np.ndarray and IB_compress.at[0, column][0, 0] == None):  # 如果值为 None 的 numpy 数组
+                IB_decompress.at[0, column] = IB_compress.at[0, column]
+                for i in range(1, len_result_data - 1, 1):
+                    IB_decompress.at[i, column] = IB_compress.at[0, column].copy()  # 直接赋值为第一行的值
+                    pass  # for
+                IB_decompress.at[len_result_data - 1, column] = IB_compress.at[len_result_data - 1, column].copy()
+            elif (type(IB_compress.at[0, column]) == str):  # 如果是字符串类型
+                last_not_none = IB_compress.at[0, column]
+                IB_decompress.at[0, column] = last_not_none
+                for i in range(1, len_result_data - 1, 1):
+                    if IB_compress.at[i, column] is None:  # 如果是 None，则直接设置为前一行的值，否则与上一个非 None 值计算不同的部分，然后赋值
+                        IB_decompress.at[i, column] = last_not_none
+                    else:
+                        last_not_none = IB_compress.at[i, column]
+                        IB_decompress.at[i, column] = last_not_none
+                        pass  # if
+                    pass  # for
+                IB_decompress.at[len_result_data - 1, column] = IB_compress.at[len_result_data - 1, column]
+            else:  # 其他数据类型，直接复制原来的数据
+                IB_decompress[column] = IB_compress[column].copy()
+                pass  # if
+
+            pass  # for
+
+        return BB_decompress, IB_decompress
+        pass  # function
 
     pass  # class

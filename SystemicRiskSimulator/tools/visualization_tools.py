@@ -94,7 +94,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     ## 生成相关的数据之可视化信息
 
     ### 计算向量1、向量2、矩阵之实际可视化数值
-    min_value_in_one_heatmap = (data_vector1.min() - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)
+    min_value_in_one_heatmap = (data_vector1.min() - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # #BUG 这里很小的正数 0.0001 是为了避免除数为0，但是在一些情景下，可能依然不够小。后同。
     max_value_in_one_heatmap = (data_vector1.max() - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)
     vector1 = 1.0 * Tools.MinMaxScaler(
         data_vector1,
@@ -277,7 +277,9 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
         for j in range(matrix_data.shape[1]):
             if i == matrix_data.shape[1] - 1 - j:
                 continue
-            if matrix_values[i, j] == 0:
+            if np.isnan(matrix_values[i, j]):
+                ax_matrix.text(j + 0.5, i + 0.5, 'NaN', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor='red', edgecolor='black', boxstyle='round,pad=0.3'))
+            elif matrix_values[i, j] == 0:
                 ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color=matrix_labels_color[i, j], fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor=matrix_labels_color[i, j], boxstyle='round,pad=0.3'))
             else:
                 ax_matrix.text(j + 0.5, i + 0.5, f'{matrix_values[i, j]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=matrix_labels_color[i, j], edgecolor='black', boxstyle='round,pad=0.3'))
@@ -295,8 +297,9 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_vector1.set_yticks(np.arange(len(vector1_labels)) + 0.5)
     ax_vector1.set_yticklabels(vector1_labels, rotation='vertical', fontsize=16)
     for i in range(vector1_data.shape[0]):  # 在每个方格中添加文本显示值
-        if vector1_values[i] == 0:
-            # continue
+        if np.isnan(vector1_values[i]):
+            ax_vector1.text(0.5, i + 0.5, 'NaN', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor='red', edgecolor='black', boxstyle='round,pad=0.3'))
+        elif vector1_values[i] == 0:
             ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color=vector1_labels_color[i], fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor=vector1_labels_color[i], boxstyle='round,pad=0.3'))
         else:
             ax_vector1.text(0.5, i + 0.5, f'{vector1_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector1_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
@@ -314,8 +317,9 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_vector2.set_yticks([])
     ax_vector2.set_yticklabels([])
     for i in range(vector2_data.shape[0]):  # 在每个方格中添加文本显示值
-        if vector2_values[i] == 0:
-            # continue
+        if np.isnan(vector2_values[i]):
+            ax_vector2.text(i + 0.5, 0.5, 'NaN', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor='red', edgecolor='black', boxstyle='round,pad=0.3'))
+        elif vector2_values[i] == 0:
             ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color=vector2_labels_color[i], fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor=vector2_labels_color[i], boxstyle='round,pad=0.3'))
         else:
             ax_vector2.text(i + 0.5, 0.5, f'{vector2_values[i]:.0f}', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor=vector2_labels_color[i], edgecolor='black', boxstyle='round,pad=0.3'))
@@ -443,6 +447,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     )
 
     ### 设置各节点之尺寸、颜色、标签
+
     min_vertices_size_in_one_graph = (min(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最小值
     max_vertices_size_in_one_graph = (max(df_vertices_data['vertices_value']) - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # 计算单个资金流量网络图之节点尺寸之最大值
     df_vertices_data['vertices_size'] = 80.0 * np.sqrt(np.abs(np.asarray(
@@ -454,8 +459,8 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
             )
         )  # 计算各节点之尺寸
     )))  # 设置各节点之尺寸
-    df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][','.join(s)] if v >= 0 else '#000000' for s, v in zip(list_data_banksState, df_vertices_data['vertices_value'].values)]  # 设置各节点之颜色，如果是节点值是负数那么是黑色
-    df_vertices_data['vertices_label'] = [list_data_banksName[i] + '\n' + str(round(list_vertices_value[i])) for i in range(len(list_vertices_value))]  # 设置各节点之标签
+    df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][','.join(s)] if (not np.isnan(v) and v >= 0) else '#000000' for s, v in zip(list_data_banksState, list_vertices_value)]  # 设置各节点之颜色，如果是节点值是负数那么是黑色
+    df_vertices_data['vertices_label'] = [list_data_banksName[i] + '\n' + str(round(list_vertices_value[i]) if not np.isnan(list_vertices_value[i]) else 'NaN') for i in range(len(list_vertices_value))]  # 设置各节点之标签
 
     ### 生成各边集之信息
     list_edges_idx = []
@@ -487,6 +492,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
             edges_width=list_edges_width,
             edges_color=list_edges_color,
         )
+
     )
 
     ### 设置各边之宽度、颜色、标签
@@ -576,11 +582,14 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: flo
 
     ## 设置图之属性
     g.vs['label'] = vertices_data['vertices_label']
+    # g.vs['label'] = vertices_data['vertices_label'] if not np.isnan(vertices_data['vertices_label']) else 'NaN'
     g.vs['color'] = vertices_data['vertices_color']
-    g.vs['size'] = vertices_data['vertices_size']
+    # g.vs['size'] = vertices_data['vertices_size']
+    g.vs['size'] = [vertices_size if not np.isnan(vertices_size) else 0.0 for vertices_size in vertices_data['vertices_size']]
     g.es['color'] = edges_data['edges_color']
     g.es['label'] = edges_data['edges_label']
-    g.es['width'] = edges_data['edges_width']
+    # g.es['width'] = edges_data['edges_width']
+    g.es['width'] = [edges_width if not np.isnan(edges_width) else 0.0 for edges_width in edges_data['edges_width']]
 
     ## 生成可视化图
     fig, ax = plt.subplots(
@@ -633,6 +642,8 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     """
 
+    # #TODO 可视化资产负债表图标题移到下面位置
+
     df_accounts_data, df_shocks_data, df_losses_data, df_defaults_data, df_recovers_data, df_repays_data = dict_vis_data['accounts'], dict_vis_data['shocks'], dict_vis_data['losses'], dict_vis_data['defaults'], dict_vis_data['recovers'], dict_vis_data['repays']
 
     ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
@@ -670,18 +681,24 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             for subject, subject_values in grouped_by_subject:
                 account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == data_type) & (df_accounts_data['level'] == level) & (df_accounts_data['subject'] == subject), 'subject'].idxmax()
                 df_accounts_data.at[account_idx, 'position'] = nib
+                # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
+                if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
+                    height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
+                else:
+                    height_size = int(1e6)
+                    pass  # if
                 df_accounts_data.at[account_idx, 'size'] = (
                     int(boxs_width[o[p]]),
-                    int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / sgv_vis['max_BB_value_in_all_panel']))
+                    height_size
                 )
 
                 # if subject_values['value'].iloc[0]  != 0:
                 if subject_values['value'].iloc[0] != 0 or subject_values['value'].iloc[0] == 0:
                     nib = (
                         sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
-                        int(nib[1] + sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / sgv_vis['max_BB_value_in_all_panel']))
+                        int(nib[1] + height_size)
                     )  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
-                else:  # 如果柱节高度为0...
+                else:  # 如果柱节高度为0... #HACK #TODO 这个以后再处理
                     count_subject_values_is_zero += 1
                     items_subject_values_is_zero.append((subject, subject_values['value'].iloc[0], nib[1]))
                     pass  # if
@@ -712,9 +729,15 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             grouped_by_subject = level_values.groupby('subject')
             for subject, subject_values in grouped_by_subject:
                 account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == data_type) & (df_accounts_data['level'] == level) & (df_accounts_data['subject'] == subject), 'subject'].idxmax()
+                # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
+                if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
+                    height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
+                else:
+                    height_size = int(1e6)
+                    pass  # if
                 df_accounts_data.at[account_idx, 'size'] = (
                     int(boxs_width[o[p]]),
-                    int(sgv_vis['one_bank_BalanceSheet_height'] * (abs(subject_values['value'].iloc[0]) / sgv_vis['max_BB_value_in_all_panel']))
+                    height_size
                 )
                 df_accounts_data.at[account_idx, 'position'] = nib
                 df_accounts_data.at[account_idx, 'fill_color'] = subject_values['fill_color'].iloc[0] if subject_values['value'].iloc[0] >= 0 else '#FFFFFF'  # 如果 equity 是负数则更改其柱子之填充颜色
@@ -727,129 +750,46 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             pass  # for
         pass  # for
 
-    ## 计算各冲击变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
-    for shock_data in df_shocks_data.itertuples():
-        df_shocks_data.loc[shock_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), shock_data.subject].values[0]
-        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), shock_data.subject].values[0]
-        is_value_changed = False if np.isclose(df_shocks_data.loc[shock_data.Index, 'value'], value_last, atol=1e0) else True
-        if is_value_changed:
-            df_shocks_data.loc[shock_data.Index, 'stroke_color'] = '#000000'
-            df_shocks_data.loc[shock_data.Index, 'stroke_width'] = 2
-            pass  # if
+    ## 计算除了资产负债表各科目之外的其他变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
 
-        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == shock_data.side) & (df_accounts_data['level'] == shock_data.level) & (df_accounts_data['subject'] == shock_data.align), 'subject'].idxmax()
-        account_position = df_accounts_data.loc[account_idx, 'position']
-        account_size = df_accounts_data.loc[account_idx, 'size']
-        df_shocks_data.at[shock_data.Index, 'size'] = (
-            int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_shocks_data.loc[shock_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
-        )
-        if shock_data.data_type[-2:] == '_t':
-            offsetScale_by_dataType = 1 / 13
-        elif shock_data.data_type[-2:] == '_s':
-            offsetScale_by_dataType = 9 / 13
-            pass  # if
-        df_shocks_data.at[shock_data.Index, 'position'] = (
-            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
-            account_position[1] + int(account_size[1] - df_shocks_data.loc[shock_data.Index, 'size'][1])
-        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
-        pass  # for
+    # #NOW #TODO 提取到配置项
+    # 假设 df_BB, df_accounts_data, sgv_vis, time, id_agent 已经定义
+    # 创建一个 DataFrame 存储临时要运行的信息
+    config_data_to_vis_other_variables_for_one_bank_accounts = {
+        'df': [df_shocks_data, df_losses_data, df_defaults_data, df_recovers_data, df_repays_data],
+        # 'subject': ['shock_data', 'loss_data', 'default_data', 'recover_data', 'repay_data'],
+        'offsetScale_by_dataType': [1 / 13, 5 / 13, 5 / 13, 5 / 13, 5 / 13]
+    }
 
-    ## 计算各损失变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
-    for loss_data in df_losses_data.itertuples():
-        df_losses_data.loc[loss_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), loss_data.subject].values[0]
-        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), loss_data.subject].values[0]
-        is_value_changed = False if np.isclose(df_losses_data.loc[loss_data.Index, 'value'], value_last, atol=1e0) else True
-        if is_value_changed:
-            df_losses_data.loc[loss_data.Index, 'stroke_color'] = '#000000'
-            df_losses_data.loc[loss_data.Index, 'stroke_width'] = 2
-            pass  # if
+    df_data_to_vis_other_variables_for_one_bank_accounts = pd.DataFrame(config_data_to_vis_other_variables_for_one_bank_accounts)
+    for index, row in df_data_to_vis_other_variables_for_one_bank_accounts.iterrows():
+        for a_data in row['df'].itertuples():
+            a_data_value = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
+            row['df'].loc[a_data.Index, 'value'] = a_data_value
+            value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
+            is_value_changed = False if np.isclose(a_data_value, value_last, atol=1e0) else True
+            if is_value_changed:
+                row['df'].loc[a_data.Index, 'stroke_color'] = '#000000'
+                row['df'].loc[a_data.Index, 'stroke_width'] = 2
+                pass  # if
 
-        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == loss_data.side) & (df_accounts_data['level'] == loss_data.level) & (df_accounts_data['subject'] == loss_data.align), 'subject'].idxmax()
-        account_position = df_accounts_data.loc[account_idx, 'position']
-        account_size = df_accounts_data.loc[account_idx, 'size']
-        df_losses_data.at[loss_data.Index, 'size'] = (
-            int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_losses_data.loc[loss_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
-        )
-        offsetScale_by_dataType = 5 / 13
-        df_losses_data.at[loss_data.Index, 'position'] = (
-            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
-            account_position[1] + int(account_size[1] - df_losses_data.loc[loss_data.Index, 'size'][1])
-        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
-        pass  # for
-
-    ## 计算各违约变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
-    for default_data in df_defaults_data.itertuples():
-        df_defaults_data.loc[default_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), default_data.subject].values[0]
-        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), default_data.subject].values[0]
-        is_value_changed = False if np.isclose(df_defaults_data.loc[default_data.Index, 'value'], value_last, atol=1e0) else True
-        if is_value_changed:
-            df_defaults_data.loc[default_data.Index, 'stroke_color'] = '#000000'
-            df_defaults_data.loc[default_data.Index, 'stroke_width'] = 2
-            pass  # if
-
-        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == default_data.side) & (df_accounts_data['level'] == default_data.level) & (df_accounts_data['subject'] == default_data.align), 'subject'].idxmax()
-        account_position = df_accounts_data.loc[account_idx, 'position']
-        account_size = df_accounts_data.loc[account_idx, 'size']
-        df_defaults_data.at[default_data.Index, 'size'] = (
-            int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_defaults_data.loc[default_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
-        )
-        offsetScale_by_dataType = 5 / 13
-        df_defaults_data.at[default_data.Index, 'position'] = (
-            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
-            account_position[1] + int(account_size[1] - df_defaults_data.loc[default_data.Index, 'size'][1])
-        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
-        pass  # for
-
-    ## 计算各收回变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
-    for recover_data in df_recovers_data.itertuples():
-        df_recovers_data.loc[recover_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), recover_data.subject].values[0]
-        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), recover_data.subject].values[0]
-        is_value_changed = False if np.isclose(df_recovers_data.loc[recover_data.Index, 'value'], value_last, atol=1e0) else True
-        if is_value_changed:
-            df_recovers_data.loc[recover_data.Index, 'stroke_color'] = '#000000'
-            df_recovers_data.loc[recover_data.Index, 'stroke_width'] = 2
-            pass  # if
-
-        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == recover_data.side) & (df_accounts_data['level'] == recover_data.level) & (df_accounts_data['subject'] == recover_data.align), 'subject'].idxmax()
-        account_position = df_accounts_data.loc[account_idx, 'position']
-        account_size = df_accounts_data.loc[account_idx, 'size']
-        df_recovers_data.at[recover_data.Index, 'size'] = (
-            int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_recovers_data.loc[recover_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
-        )
-        offsetScale_by_dataType = 5 / 13
-        df_recovers_data.at[recover_data.Index, 'position'] = (
-            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
-            account_position[1] + int(account_size[1] - df_recovers_data.loc[recover_data.Index, 'size'][1])
-        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
-        pass  # for
-
-    ## 计算各偿还变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
-    for repay_data in df_repays_data.itertuples():
-        df_repays_data.loc[repay_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), repay_data.subject].values[0]
-        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), repay_data.subject].values[0]
-        is_value_changed = False if np.isclose(df_repays_data.loc[repay_data.Index, 'value'], value_last, atol=1e0) else True
-        if is_value_changed:
-            df_repays_data.loc[repay_data.Index, 'stroke_color'] = '#000000'
-            df_repays_data.loc[repay_data.Index, 'stroke_width'] = 2
-            pass  # if
-
-        account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == repay_data.side) & (df_accounts_data['level'] == repay_data.level) & (df_accounts_data['subject'] == repay_data.align), 'subject'].idxmax()
-        account_position = df_accounts_data.loc[account_idx, 'position']
-        account_size = df_accounts_data.loc[account_idx, 'size']
-        df_repays_data.at[repay_data.Index, 'size'] = (
-            int(account_size[0] * (3 / 13)),
-            int(sgv_vis['one_bank_BalanceSheet_height'] * (df_repays_data.loc[repay_data.Index, 'value'] / sgv_vis['max_BB_value_in_all_panel']))
-        )
-        offsetScale_by_dataType = 5 / 13
-        df_repays_data.at[repay_data.Index, 'position'] = (
-            account_position[0] + int(account_size[0] * offsetScale_by_dataType),
-            account_position[1] + int(account_size[1] - df_repays_data.loc[repay_data.Index, 'size'][1])
-        )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
-        pass  # for
+            account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == a_data.side) & (df_accounts_data['level'] == a_data.level) & (df_accounts_data['subject'] == a_data.align), 'subject'].idxmax()
+            account_position = df_accounts_data.loc[account_idx, 'position']
+            account_size = df_accounts_data.loc[account_idx, 'size']
+            row['df'].at[a_data.Index, 'size'] = (
+                int(account_size[0] * (3 / 13)),
+                int(sgv_vis['one_bank_BalanceSheet_height'] * ((a_data_value if not np.isnan(a_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
+            )
+            if a_data.data_type[-2:] == '_t':
+                row['offsetScale_by_dataType'] = 1 / 13
+            elif a_data.data_type[-2:] == '_s':
+                row['offsetScale_by_dataType'] = 9 / 13
+                pass  # if
+            row['df'].at[a_data.Index, 'position'] = (
+                account_position[0] + int(account_size[0] * row['offsetScale_by_dataType']),
+                account_position[1] + int(account_size[1] - row['df'].loc[a_data.Index, 'size'][1])
+            )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
+            pass  # for
 
     ## 生成其他信息
     others = dict(
@@ -958,9 +898,10 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         )
         pass  # for
 
+    # #NOW #TODO 合并以下重复代码段，并且提取到配置项
     ## 绘制各冲击变量之各列各项之矩形
     for shock_data in shocks_data.itertuples():
-        if shock_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(shock_data.value) or shock_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
             svg_balanceSheet.append(
                 dw.Rectangle(
                     x=shock_data.position[0],
@@ -978,7 +919,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各损失变量之各列各项之矩形
     for loss_data in losses_data.itertuples():
-        if loss_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(loss_data.value) or loss_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
             svg_balanceSheet.append(
                 dw.Rectangle(
                     x=loss_data.position[0],
@@ -996,7 +937,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各违约变量之各列各项之矩形
     for default_data in defaults_data.itertuples():
-        if default_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(default_data.value) or default_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
             svg_balanceSheet.append(
                 dw.Rectangle(
                     x=default_data.position[0],
@@ -1014,7 +955,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各收回变量之各列各项之矩形
     for recover_data in recovers_data.itertuples():
-        if recover_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(recover_data.value) or recover_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
             svg_balanceSheet.append(
                 dw.Rectangle(
                     x=recover_data.position[0],
@@ -1032,7 +973,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各偿还变量之各列各项之矩形
     for repay_data in repays_data.itertuples():
-        if repay_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(repay_data.value) or repay_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
             svg_balanceSheet.append(
                 dw.Rectangle(
                     x=repay_data.position[0],
@@ -1050,24 +991,58 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制资产负债表各列各项之文本
     for account_data in accounts_data.itertuples():
-        svg_balanceSheet.append(
-            dw.Text(
-                account_data.subject + '\n' + str(round(account_data.value)),
-                font_size=18,
-                x=account_data.position[0] + account_data.size[0] // 2,
-                y=account_data.position[1] + account_data.size[1] // 2,
-                stroke='none',
-                stroke_width=0.0,
-                text_anchor='middle',
-                dominant_baseline='middle',
-                font_family=sgv_vis['en_font_family'],
+        if np.isnan(account_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
+            svg_balanceSheet.append(
+                dw.Text(
+                    account_data.subject + '\n' + 'NaN',
+                    font_size=18,
+                    x=account_data.position[0] + account_data.size[0] // 2,
+                    y=account_data.position[1] + account_data.size[1] // 2,
+                    fill='red',
+                    stroke='black',
+                    stroke_width=0.5,
+                    background='red',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
             )
-        )
+        elif account_data.value != 0:  # 如果值不为0，则绘制
+            svg_balanceSheet.append(
+                dw.Text(
+                    account_data.subject + '\n' + str(round(account_data.value)),
+                    font_size=18,
+                    x=account_data.position[0] + account_data.size[0] // 2,
+                    y=account_data.position[1] + account_data.size[1] // 2,
+                    stroke='none',
+                    stroke_width=0.0,
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+            pass  # if
         pass  # for
 
     ## 绘制各冲击变量之各列各项之文本
     for shock_data in shocks_data.itertuples():
-        if shock_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(shock_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
+            svg_balanceSheet.append(
+                dw.Text(
+                    shock_data.subject + '\n' + 'NaN',
+                    font_size=18,
+                    x=shock_data.position[0] + shock_data.size[0] // 3,
+                    y=shock_data.position[1] + shock_data.size[1] // 3,
+                    fill='red',
+                    stroke='black',
+                    stroke_width=0.5,
+                    background='red',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+        elif shock_data.value != 0:  # 如果值不为0，则绘制
             svg_balanceSheet.append(
                 dw.Text(
                     shock_data.subject + '\n' + str(round(shock_data.value)),
@@ -1088,7 +1063,23 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各损失变量之各列各项之文本
     for loss_data in losses_data.itertuples():
-        if loss_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(loss_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
+            svg_balanceSheet.append(
+                dw.Text(
+                    loss_data.subject + '\n' + 'NaN',
+                    font_size=18,
+                    x=loss_data.position[0] + loss_data.size[0] // 3,
+                    y=loss_data.position[1] + loss_data.size[1] // 3,
+                    fill='red',
+                    stroke='black',
+                    stroke_width=0.5,
+                    background='red',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+        elif loss_data.value != 0:  # 如果值不为0，则绘制
             svg_balanceSheet.append(
                 dw.Text(
                     loss_data.subject + '\n' + str(round(loss_data.value)),
@@ -1109,7 +1100,23 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各违约变量之各列各项之文本
     for default_data in defaults_data.itertuples():
-        if default_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(default_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
+            svg_balanceSheet.append(
+                dw.Text(
+                    default_data.subject + '\n' + 'NaN',
+                    font_size=18,
+                    x=default_data.position[0] + default_data.size[0] // 3,
+                    y=default_data.position[1] + default_data.size[1] // 3,
+                    fill='red',
+                    stroke='black',
+                    stroke_width=0.5,
+                    background='red',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+        elif default_data.value != 0:  # 如果值不为0，则绘制
             svg_balanceSheet.append(
                 dw.Text(
                     default_data.subject + '\n' + str(round(default_data.value)),
@@ -1130,7 +1137,23 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各收回变量之各列各项之文本
     for recover_data in recovers_data.itertuples():
-        if recover_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(recover_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
+            svg_balanceSheet.append(
+                dw.Text(
+                    recover_data.subject + '\n' + 'NaN',
+                    font_size=18,
+                    x=recover_data.position[0] + recover_data.size[0] // 3,
+                    y=recover_data.position[1] + recover_data.size[1] // 3,
+                    fill='red',
+                    stroke='black',
+                    stroke_width=0.5,
+                    background='red',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+        elif recover_data.value != 0:  # 如果值不为0，则绘制
             svg_balanceSheet.append(
                 dw.Text(
                     recover_data.subject + '\n' + str(round(recover_data.value)),
@@ -1151,7 +1174,23 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
     ## 绘制各偿还变量之各列各项之文本
     for repay_data in repays_data.itertuples():
-        if repay_data.value != 0:  # 如果值为0，则不绘制
+        if np.isnan(repay_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
+            svg_balanceSheet.append(
+                dw.Text(
+                    repay_data.subject + '\n' + 'NaN',
+                    font_size=18,
+                    x=repay_data.position[0] + repay_data.size[0] // 3,
+                    y=repay_data.position[1] + repay_data.size[1] // 3,
+                    fill='red',
+                    stroke='black',
+                    stroke_width=0.5,
+                    background='red',
+                    text_anchor='middle',
+                    dominant_baseline='middle',
+                    font_family=sgv_vis['en_font_family'],
+                )
+            )
+        elif repay_data.value != 0:  # 如果值不为0，则绘制
             svg_balanceSheet.append(
                 dw.Text(
                     repay_data.subject + '\n' + str(round(repay_data.value)),

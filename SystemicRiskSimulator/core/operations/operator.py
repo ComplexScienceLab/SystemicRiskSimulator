@@ -40,38 +40,65 @@ class Operator:
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
                 num_parameters_works = len(parameters_works)
-                ## 创建或者连接 SQLite 数据库，统计实验组之上一次的作业之完成情况
+                ## SQLite 数据库统计实验组之上一次的作业之完成情况
                 time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
-                # 如果是首次运行，那么创建数据库并初始化表格
-                if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-                    if os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
-                        os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                # 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续删除原有的作业数据库再重建
+                if os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
+                    is_exist_experiments_works_status_db = True
+                    mtime_of_file_parameters_pkl = Path(sgv['folderpath_parameters'], "parameters.pkl").resolve().stat().st_mtime
+                    mtime_of_file_experimentsWorksStatus_db = Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db").resolve().stat().st_mtime
+                    if mtime_of_file_parameters_pkl > mtime_of_file_experimentsWorksStatus_db:
+                        is_mtime_of_file_parameters_pkl_changed = True
+                    else:
+                        is_mtime_of_file_parameters_pkl_changed = False
                         pass  # if
+                else:
+                    is_exist_experiments_works_status_db = False
+                    is_mtime_of_file_parameters_pkl_changed = True
+                    pass  # if
+                # if is_exist_experiments_works_status_db and is_rerun_all_done_works_in_the_same_experiments:
+                #     os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                #     pass  # if
+
+                if sgv['is_rerun_all_done_works_in_the_same_experiments'] or is_mtime_of_file_parameters_pkl_changed:
+                    is_recreate_experiments_works_status_db = True
+                    if is_exist_experiments_works_status_db:
+                        is_remove_experiments_works_status_db = True
+                    else:
+                        is_remove_experiments_works_status_db = False
+                        pass  # if
+                else:
+                    is_recreate_experiments_works_status_db = False
+                    is_remove_experiments_works_status_db = False
+                    pass  # if
+
+                if is_remove_experiments_works_status_db:
+                    os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                    pass  # if
+
+                if is_recreate_experiments_works_status_db:  # 创建数据库并初始化表格
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
                     c.execute("""CREATE TABLE IF NOT EXISTS experiments
-                                    (id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)""")
-                    conn.commit()
+                                    (exp_id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)""")
                     # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
                     for i in range(1, num_parameters_works + 1):
-                        c.execute("INSERT INTO experiments (id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
+                        c.execute("INSERT INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
                         pass  # for
-                    # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
+                    conn.commit()
+                    is_exist_experiments_works_status_db = True
+                    is_recreate_experiments_works_status_db = False
+                else:
+                    # 连接现有数据库
+                    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                    c = conn.cursor()
                     if sgv['is_rerun_all_done_works_in_the_same_experiments']:
                         c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
                         conn.commit()
                         pass  # if
-                else:
-                    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-                    c = conn.cursor()
                     pass  # if
-                # # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
-                # if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-                #     c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
-                #     conn.commit()
-                #     pass  # if
                 # 检查实验组作业完成状态
-                c.execute("SELECT id, status_实验组模拟程序 FROM experiments")
+                c.execute("SELECT exp_id, status_实验组模拟程序 FROM experiments")
                 rows = c.fetchall()
                 list_idsExp_DOING = []
                 list_idsExp_DONE = []
@@ -105,10 +132,10 @@ class Operator:
                     }))
                     pass  # with
 
-                # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
-                ids = [row[0] for row in rows]  # 获取实验组 id
-                status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-                Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
+                ### 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
+                # ids = [row[0] for row in rows]  # 获取实验组 id
+                # status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+                # Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
 
                 time_end_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
                 logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
@@ -117,7 +144,7 @@ class Operator:
                 pass  # with
 
             Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
-        elif sgv['init_parameters_method'] == "set manually":  # #HACK 这个选项几乎被废弃了。可以删除。
+        elif sgv['init_parameters_method'] == "set manually":  # #TODO HACK 这个选项几乎被废弃了。可以删除。
             parameters_works = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
             Collector.export_parameter_data(parameters_works, para)  # 导出控制参数数据
             pass  # if
@@ -126,25 +153,18 @@ class Operator:
 
         ## 构建本次实验组所需的所有模型
 
-        ## 如果处于测试状态，那么就不需要复制模型库里的模型到模拟器里了
-        if sgv['is_develope_model']:
-            # 如果处于开发调试模式，则复制正在开发的模型到输出文件夹之配置文件夹下
-            Tools._delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
+        ### 判断属于什么运行模式
+        if not (sgv['is_develope_mode'] and sgv['is_maintain_model_files_in_simulator_when_develope_mode']):
+            # 如果是应用实验状态，则复制模型数据与内容到输出文件夹下，另外导出一份到`SystemicRiskSimulator/models`文件夹下
+            Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹之模型文件夹
+            Tools.copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到输出文件夹之模型文件夹
+            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之模型文件夹
+            Tools.copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到模拟器之 data 文件夹
         else:
-            # 如果处于应用实验状态，则复制模型数据与内容到`SystemicRiskSimulator/models`文件夹下，另外导出一份到输出文件夹之配置文件夹下
-            Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
-            Tools._copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])
             pass  # if
 
         ## 导入实体数据，生成实体集、内容集并返回
-        if sgv['is_use_flow_form_version_model']:
-            ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()`
-            Builder.build_entities_by_process_and_container_component(sgv)  # NOTE：一次只处理一个模型 #HACK 已经过时，可以删除
-        else:
-            ## NOTE 如果直接使用非流程版的形式的模型
-            Builder.build_entities_by_execute(sgv)
+        Builder.build_entities_by_execute(sgv)
         pass  # if
 
         ## 导出配置数据
@@ -175,43 +195,33 @@ class Operator:
 
         sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
 
-        if sgv['is_use_flow_form_version_model']:
-            # ## NOTE 如果使用`Processor.process_entity_by_process_and_container_component()` HACK 已经过时，弃用，可删除。
-            # # Scheduler.schedule(sgv)  # 调度状态变成`running`
-            # model, A, sgv['A_data'], para, sgv = Processor.process_entity_by_process_and_container_component(model, A, sgv['A_data'], para, sgv)  # 执行具体的模型，通过执行模型实体的方式
-            # sgv['is_continue_process'] = False  # 不再继续运行过程
-            pass
+        # Scheduler.schedule(sgv)  # 调度状态变成`running`
+
+        # model, A, A_data, para, sgv = Processor.process_entity_by_execute_component(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
+
+        modelEntity = model.content  # 获取节点实体对应的模型实体
+
+        content_Finance = modelEntity.content['content_finance']()
+        if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
+            content_Agents = modelEntity.content['content_agents'](np.array(para['Strategy_default']))  # BUG 不能这样代入参数
+            content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
         else:
-            ## NOTE 如果直接使用非流程版的形式的模型。HACK 注意这个时候 `env['test_max_num_of_turn']` 失效
-
-            # Scheduler.schedule(sgv)  # 调度状态变成`running`
-
-            # model, A, A_data, para, sgv = Processor.process_entity_by_execute_component(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
-
-            modelEntity = model.content  # 获取节点实体对应的模型实体
-
-            content_Finance = modelEntity.content['content_finance']()
-            if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
-                content_Agents = modelEntity.content['content_agents'](np.array(para['Strategy_default']))  # BUG 不能这样代入参数
-                content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
-            else:
-                content_Model = modelEntity.content['content_model'](content_Finance)
-                pass  # if
-
-            if not sgv['is_enable_multiprocessing']:
-                log_message(
-                    "    开始执行模型内容：",
-                    Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-                    f"logger_{sgv['id_experiment']}",
-                    is_enable_multiprocessing=sgv['is_enable_multiprocessing']
-                )
-
-            # sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
-
-            # modelEntity.execute(A, A_data, para, sgv)
-            content_Model.model_content(A, A_last, A_data, para, sgv)
-
+            content_Model = modelEntity.content['content_model'](content_Finance)
             pass  # if
+
+        if not sgv['is_enable_multiprocessing']:
+            log_message(
+                "    开始执行模型内容：",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing=sgv['is_enable_multiprocessing']
+            )
+            pass  # if
+
+        # sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+
+        # modelEntity.execute(A, A_data, para, sgv)
+        content_Model.model_content(A, A_last, A_data, para, sgv)
 
         pass  # function
 
@@ -230,16 +240,12 @@ class Operator:
 
         record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
 
-        ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
-        sgv['index_of_schedule_position'] = []
+        ## 重置模拟器全局变量
         sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
-        # sgv['model_name'] = para['model_name']  #HACK 2024-05-14 最新版的 parameters 没有这个配置项了
         sgv['process_name'] = "START"
-        sgv['test_continous_loop_of_model'] = 0
         sgv['is_continue_process'] = True
-        # sgv['A_data'] = None
 
         logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
 
@@ -247,9 +253,7 @@ class Operator:
 
         ## 初始化 agents 数据
         A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
-        # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
         logging.debug("                    初始化数据")
-        # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         A_data = Collector.init_agent_data_collection(A, sgv)
         # sgv['step'] += 1
 
@@ -259,7 +263,7 @@ class Operator:
     @classmethod
     def operate_reset_experiment(cls, sgv: dict, para: dict, model: Any):
         """
-        运作初始化实验。用于使用使用强化学习环境工具包自定义的模型。
+        运作初始化实验。用于不使用强化学习训练的，自定义的模型。
 
         Args:
             sgv (dict): 模拟器全局变量
@@ -272,7 +276,7 @@ class Operator:
         # # 更新实验组作业状态为 "DOING"
         # conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
         # c = conn.cursor()
-        # c.execute("INSERT OR REPLACE INTO experiments (id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
+        # c.execute("INSERT OR REPLACE INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
         # conn.commit()
         # conn.close()
 
@@ -280,16 +284,13 @@ class Operator:
 
         modelEntity = model.content  # 获取节点实体对应的模型实体
 
-        ## 重置模拟器全局变量  # TODO 需要整理一下这几个待重置的模拟器全局变量
-        sgv['index_of_schedule_position'] = []
+        ## 重置模拟器全局变量
+
         sgv['turn'] = 0
         sgv['phase'] = 0
         sgv['step'] = 0
-        sgv['model_name'] = modelEntity.attribute.entity_name
         sgv['process_name'] = "START"
-        sgv['test_continous_loop_of_model'] = 0
         sgv['is_continue_process'] = True
-        # sgv['A_data'] = None
 
         if not sgv['is_enable_multiprocessing']:
             log_message(
@@ -302,7 +303,9 @@ class Operator:
         ## 初始化 agents 数据
         A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
         A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
-        # sgv['A_data'] = Collector.collect(A, sgv['A_data'], sgv)  # 收集初始数据
+
+        ## 计算个体数量
+        sgv['num_bank'] = len(A.BB['id_agent'])
 
         if not sgv['is_enable_multiprocessing']:
             log_message(
@@ -312,19 +315,15 @@ class Operator:
                 is_enable_multiprocessing=sgv['is_enable_multiprocessing']
             )
 
-        # sgv['A_data'] = Collector.init_agent_data_collection(A, sgv)
         A_data = Collector.init_agent_data_collection(A, sgv)
-        # sgv['step'] += 1
 
         return A, A_last, A_data, sgv, para
         pass  # function
 
-    # @classmethod
-    # def operate_step_experiment(cls, sgv: dict, para: dict, model: Any):
     @classmethod
     def operate_step_experiment(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
-        运作步进实验。用于使用使用强化学习环境工具包自定义的模型。
+        运作步进实验。用于使用强化学习环境工具包自定义的模型。
 
         Args:
             A (SystemicRiskAgent): 多主体
@@ -354,7 +353,6 @@ class Operator:
         sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
 
         process = modelEntity.process
-        # modelEntityContent = modelEntity.content
 
         A, A_data, para, sgv = process(modelEntity, A, A_data, para, sgv)
 

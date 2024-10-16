@@ -1,5 +1,19 @@
 """
-预处理实验结果数据
+预处理实验结果数据。
+
+该程序有以下的独立任务：
+- 导入Pandas格式的实验结果数据转换为面板形式再导出；
+- 导入Pandas格式的实验结果数据合并为一个文件；
+
+
+【导入Pandas格式的实验结果数据转换为面板形式再导出】思路：
+1. 分别读取多个实验结果数据文件，然后依次转换为面板形式的数据。
+2. 面板形式的数据依次导出为 PKL、CSV、xlsx 格式数据。
+
+【导入Pandas格式的实验结果数据合并为一个文件】思路：
+1. 依次读取多个实验结果数据文件，然后合并为一个文件。
+2. 合并后的数据表导出为 PKL、CSV、xlsx 格式数据。
+
 
 #NOTE 建议用并行处理模式，暨 is_enable_multiprocessing = True。因为这样速度快一些。
 """
@@ -25,18 +39,14 @@ if sgv['need_transformData']:
     from openpyxl import load_workbook
     from openpyxl.styles import PatternFill
     from openpyxl.utils import get_column_letter
+    import dask.dataframe as dd
 
 
 # 创建一个全局锁
 # lock = Lock()
 
 
-def main():
-    # 从命令行参数获取配置字典
-    sgv_base64 = sys.argv[1]
-    sgv_pkl = base64.b64decode(sgv_base64)
-    sgv = pickle.loads(sgv_pkl)
-
+def main(sgv):
     if sgv['is_ignore_warning']:
         warnings.filterwarnings("ignore")  # 忽略警告
 
@@ -50,91 +60,77 @@ def main():
     # %%
     print("执行：")
 
+    num_files_BB = len(list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
+    num_files_IB = len(list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
+    print(f"BB 文件数等于 IB 文件数？：{num_files_BB == num_files_IB}")  # DEBUG
+
+    ## 连接 SQLite 数据库，统计实验组作业完成情况（#HACK #NOTE 只能用于串行处理模式）
+    conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+    c = conn.cursor()
+    # 如果没有列 status_预处理实验结果程序 ，那么添加该列
+    c.execute("PRAGMA table_info(experiments)")
+    if not any([v[1] == 'status_预处理实验结果程序' for v in c.fetchall()]):
+        c.execute("ALTER TABLE experiments ADD COLUMN status_预处理实验结果程序 TEXT DEFAULT 'RAW'")
+        conn.commit()
+        pass  # if
+    # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
+    if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+        c.execute("UPDATE experiments SET status_预处理实验结果程序 = 'RAW' WHERE status_预处理实验结果程序 = 'DONE'")
+        conn.commit()
+        pass  # if
+    # 检查实验组作业完成状态
+    c.execute("SELECT exp_id, status_预处理实验结果程序 FROM experiments")
+    rows = c.fetchall()
+    list_idsExp_DOING = []
+    list_idsExp_DONE = []
+    list_idsExp_RAW = []
+    for row in rows:
+        exp_id, status_预处理实验结果程序 = row[0], row[1]
+        if status_预处理实验结果程序 == "DOING":
+            list_idsExp_DOING.append(exp_id)
+        elif status_预处理实验结果程序 == "DONE":
+            list_idsExp_DONE.append(exp_id)
+        else:
+            list_idsExp_RAW.append(exp_id)
+            pass  # if
+        pass  # for
+    list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, num_files_BB + 1))
+    list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
+    # 保存实验组作业完成状态信息
+    with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+        json.dump({
+            "计划运行的实验组 id": list_idsExp_TASK,
+            "未运行过的实验组 id": list_idsExp_RAW,
+            "之前运行中被中断的实验组 id": list_idsExp_DOING,
+            "已完成的实验组 id": list_idsExp_DONE,
+            "完成率": len(list_idsExp_DONE) / num_files_BB,
+            "中断率": len(list_idsExp_DOING) / num_files_BB,
+        }, f)
+        logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
+            "之前运行中被中断的实验组 id": list_idsExp_DOING,
+            "完成率": len(list_idsExp_DONE) / num_files_BB,
+            "中断率": len(list_idsExp_DOING) / num_files_BB,
+        }))
+    # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
+    # ids = [row[0] for row in rows]  # 获取实验组 id
+    # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+    # Tools.draw_color_band_before_experiments(ids, status_预处理实验结果程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_预处理实验结果程序.png"))
+    conn.close()
+
+    ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
+    list_filepath_pkl_BB = []
+    list_filepath_pkl_IB = []
+    for id in list_idsExp_TASK:
+        list_filepath_pkl_BB.extend(sgv['folderpath_experiments_output_data'].glob(f'BB_exp={id}.pkl'))
+        list_filepath_pkl_IB.extend(sgv['folderpath_experiments_output_data'].glob(f'IB_exp={id}.pkl'))
+        pass  # for
+
+    ## #NOTE 导入Pandas格式的实验结果数据转换为面板形式再导出
     if (sgv['transform_data']['导入Pandas格式的实验结果数据转换为面板形式再导出']):
         print("导入Pandas格式的实验结果数据转换为面板形式再导出")
 
-        # with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
-        #     parameters_works = pd.read_pickle(f)
-
-        num_files_BB = len(list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
-        num_files_IB = len(list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
-        print(f"BB 文件数等于 IB 文件数？：{num_files_BB == num_files_IB}")  # DEBUG
-
-        ## 连接 SQLite 数据库，统计实验组作业完成情况（#HACK #NOTE 只能用于串行处理模式）
-        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-        c = conn.cursor()
-        # 如果没有列 status_预处理实验结果程序 ，那么添加该列
-        c.execute("PRAGMA table_info(experiments)")
-        if not any([v[1] == 'status_预处理实验结果程序' for v in c.fetchall()]):
-            c.execute("ALTER TABLE experiments ADD COLUMN status_预处理实验结果程序 TEXT DEFAULT 'RAW'")
-            conn.commit()
-            pass  # if
-        # 如果重新运行所有已经完成的实验，那么重置所有实验组作业状态为 "RAW"
-        if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-            c.execute("UPDATE experiments SET status_预处理实验结果程序 = 'RAW' WHERE status_预处理实验结果程序 = 'DONE'")
-            conn.commit()
-            pass  # if
-        # 检查实验组作业完成状态
-        c.execute("SELECT id, status_预处理实验结果程序 FROM experiments")
-        rows = c.fetchall()
-        list_idsExp_DOING = []
-        list_idsExp_DONE = []
-        list_idsExp_RAW = []
-        for row in rows:
-            exp_id, status_预处理实验结果程序 = row[0], row[1]
-            if status_预处理实验结果程序 == "DOING":
-                list_idsExp_DOING.append(exp_id)
-            elif status_预处理实验结果程序 == "DONE":
-                list_idsExp_DONE.append(exp_id)
-            else:
-                list_idsExp_RAW.append(exp_id)
-                pass  # if
-            pass  # for
-        list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, num_files_BB + 1))
-        list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
-        # 保存实验组作业完成状态信息
-        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
-            json.dump({
-                "计划运行的实验组 id": list_idsExp_TASK,
-                "未运行过的实验组 id": list_idsExp_RAW,
-                "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                "已完成的实验组 id": list_idsExp_DONE,
-                "完成率": len(list_idsExp_DONE) / num_files_BB,
-                "中断率": len(list_idsExp_DOING) / num_files_BB,
-            }, f)
-            logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
-                "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                "完成率": len(list_idsExp_DONE) / num_files_BB,
-                "中断率": len(list_idsExp_DOING) / num_files_BB,
-            }))
-        # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
-        # ids = [row[0] for row in rows]  # 获取实验组 id
-        # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-        # Tools.draw_color_band_before_experiments(ids, status_预处理实验结果程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_预处理实验结果程序.png"))
-        conn.close()
-
-        ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
-        list_filepath_pkl_BB = []
-        list_filepath_pkl_IB = []
-        for id in list_idsExp_TASK:
-            list_filepath_pkl_BB.extend(sgv['folderpath_experiments_output_data'].glob(f'BB_exp={id}.pkl'))
-            list_filepath_pkl_IB.extend(sgv['folderpath_experiments_output_data'].glob(f'IB_exp={id}.pkl'))
-
-        ## 预处理实验结果数据
         if sgv['is_enable_multiprocessing']:
             # #NOTE：并行处理，用 dask 延迟任务 #HACK 不建议用，因为速度没有显著提升
-            # transform_BB_exp_files_delayed = delayed(transform_exp_files)
-            #
-            # tasks_BB = []
-            # for i, filepath_pkl_BB in enumerate(list_filepath_pkl_BB):
-            #     exp_id = i + 1
-            #     print(f"BB exp_id = {exp_id}")
-            #     task_BB = transform_BB_exp_files_delayed(exp_id, filepath_pkl_BB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
-            #     tasks_BB.append(task_BB)
-            #     pass  # for
-            #
-            # with ProgressBar():
-            #     results_BB = compute(*tasks_BB)
 
             # #NOTE：多进程并行处理
             num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
@@ -148,7 +144,7 @@ def main():
 
             # 并行运行作业
             with Pool(num_cores) as p:
-                p.starmap(transform_exp_files, works)
+                p.starmap(fun_导入Pandas格式的实验结果数据转换为面板形式再导出, works)
                 pass  # with
 
         else:
@@ -158,20 +154,107 @@ def main():
                 filepath_pkl_BB = list_filepath_pkl_BB[i]
                 filepath_pkl_IB = list_filepath_pkl_IB[i]
                 print(f"exp_id = {exp_id}")
-                transform_exp_files(exp_id, filepath_pkl_BB, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+                fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id, filepath_pkl_BB, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
                 pass  # for
 
             pass  # if
 
-
-
         pass  # if 导入Pandas格式的实验结果数据转换为面板形式再导出
+
+    ## #NOTE 导入Pandas格式的实验结果数据合并为一个文件
+    if (sgv['transform_data']['导入Pandas格式的实验结果数据合并为一个文件']):
+        print("导入Pandas格式的实验结果数据合并为一个文件")
+
+        ## #NOTE：用 Pandas 串行处理
+        time_start = timeit.default_timer()  # 计时开始
+
+        fun_导入Pandas格式的实验结果数据合并为一个文件(list_filepath_pkl_BB, list_filepath_pkl_IB, list_idsExp_TASK)
+
+        time_end = timeit.default_timer()  # 计时结束
+        print(f"导入Pandas格式的实验结果数据合并为一个文件，耗时：{time_end - time_start} 秒")
+
+        ## #NOTE：用 Dask 串行处理 #BUG 这个速度更慢，不采用
+        #
+        # time_start = timeit.default_timer()  # 计时开始
+        #
+        # BB_columns = pd.read_pickle(list_filepath_pkl_BB[0]).columns
+        # IB_columns = pd.read_pickle(list_filepath_pkl_IB[0]).columns
+        #
+        # list_df_BB = []
+        # list_df_IB = []
+        # for i, exp_id in enumerate(list_idsExp_TASK):
+        #     df_BB_origin = pd.read_pickle(list_filepath_pkl_BB[i])
+        #     df_BB_origin['id_exp'] = int(exp_id)  # 添加子文件实验 id 列
+        #     list_df_BB.append(dd.from_pandas(df_BB_origin, npartitions=10))
+        #
+        #     df_IB_origin = pd.read_pickle(list_filepath_pkl_IB[i])
+        #     df_IB_origin['id_exp'] = int(exp_id)  # 添加子文件实验 id 列
+        #     list_df_IB.append(dd.from_pandas(df_IB_origin, npartitions=10))
+        #
+        # # 一次性进行数据合并
+        # df_BB_combined = dd.concat(list_df_BB, ignore_index=True)
+        # df_IB_combined = dd.concat(list_df_IB, ignore_index=True)
+        #
+        # # 重置索引以创建总 id 列
+        # df_BB_combined = df_BB_combined.reset_index().rename(columns={'index': 'id'})
+        # df_IB_combined = df_IB_combined.reset_index().rename(columns={'index': 'id'})
+        #
+        # # 计算结果并将其转换回 pandas DataFrame
+        # df_BB_combined = df_BB_combined.compute()
+        # df_IB_combined = df_IB_combined.compute()
+        #
+        # time_end = timeit.default_timer()  # 计时结束
+        # print(f"导入Pandas格式的实验结果数据合并为一个文件，耗时：{time_end - time_start} 秒")
+
+        ## #NOTE 用 SQLite 处理 #BUG 这个不能处理一些数据类型
+        # # 创建两个新的 SQLite 数据库
+        # conn_BB = sqlite3.connect('combined_data_BB.db')
+        # conn_IB = sqlite3.connect('combined_data_IB.db')
+        #
+        # time_start = timeit.default_timer()  # 计时开始
+        #
+        # list_idsExp_TASK = list_idsExp_TASK[0:100]  # DEBUG 仅用于测试性能
+        #
+        # for i, exp_id in enumerate(list_idsExp_TASK):
+        #     # 读取 pickle 文件为 pandas DataFrame
+        #     df_BB_origin = pd.read_pickle(list_filepath_pkl_BB[i])
+        #     df_BB_origin['id_exp'] = int(exp_id)
+        #
+        #     df_IB_origin = pd.read_pickle(list_filepath_pkl_IB[i])
+        #     df_IB_origin['id_exp'] = int(exp_id)
+        #
+        #     # 将 DataFrame 转换为 SQL 表并存储在 SQLite 数据库中
+        #     df_BB_origin.to_sql(f'BB_{exp_id}', conn_BB, if_exists='replace', index=False)
+        #     df_IB_origin.to_sql(f'IB_{exp_id}', conn_IB, if_exists='replace', index=False)
+        #
+        # # 使用 SQL 查询将所有的表合并为一个大表
+        # query_BB = 'SELECT * FROM ' + ' UNION ALL SELECT * FROM '.join([f'BB_{exp_id}' for exp_id in list_idsExp_TASK])
+        # query_IB = 'SELECT * FROM ' + ' UNION ALL SELECT * FROM '.join([f'IB_{exp_id}' for exp_id in list_idsExp_TASK])
+        #
+        # df_BB_combined = pd.read_sql_query(query_BB, conn_BB)
+        # df_IB_combined = pd.read_sql_query(query_IB, conn_IB)
+        #
+        # # 重置索引以创建总 id 列
+        # df_BB_combined.reset_index(inplace=True)
+        # df_BB_combined.rename(columns={'index': 'id'}, inplace=True)
+        #
+        # df_IB_combined.reset_index(inplace=True)
+        # df_IB_combined.rename(columns={'index': 'id'}, inplace=True)
+        #
+        # # 关闭数据库连接
+        # conn_BB.close()
+        # conn_IB.close()
+        #
+        # time_end = timeit.default_timer()  # 计时结束
+        # print(f"导入Pandas格式的实验结果数据合并为一个文件，耗时：{time_end - time_start} 秒")
+
+        pass  # if 导入Pandas格式的实验结果数据合并为一个文件
 
     ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
     c = conn.cursor()
     # 检查实验组作业完成状态
-    c.execute("SELECT id, status_预处理实验结果程序 FROM experiments")
+    c.execute("SELECT exp_id, status_预处理实验结果程序 FROM experiments")
     rows = c.fetchall()
     list_idsExp_DOING = []
     list_idsExp_DONE = []
@@ -213,7 +296,7 @@ def main():
     pass  # main
 
 
-def transform_exp_files(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Path, folderpath_experiments_output_log: Path, folderpath_exp_output_data: Path):
+def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Path, folderpath_experiments_output_log: Path, folderpath_exp_output_data: Path):
     """
     预处理单次实验之各实验结果数据
 
@@ -255,7 +338,8 @@ def transform_exp_files(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Pat
     df_BB_panel = df_BB.explode('id_agent')  # 只展开 'id_agent' 列
     for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
         if col != 'id_agent':
-            df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack().reset_index(level=1, drop=True)
+            # df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).reset_index(level=1, drop=True)
+            df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).values
             pass  # if
         pass  # for
     df_BB_panel = df_BB_panel.reset_index(drop=True)  # 重置索引
@@ -271,48 +355,48 @@ def transform_exp_files(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Pat
     df_BB_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为 pkl 格式
 
     ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
-    # df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
-    # with pd.ExcelWriter(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
-    #     df_BB_panel.to_excel(writer, sheet_name='BB_panel')
-    #     pass  # with
-    #
-    # ## 重新读取 xlsx 格式然后格式化
-    # ### 需要调整列边距的列名
-    # columnsName_adjust = [
-    #     'id',
-    #     'id_data',
-    #     'step',
-    #     'turn',
-    #     'phase',
-    #     'id_agent',
-    # ]
-    #
-    # wb_BB_panel = load_workbook(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
-    # sheet_BB_panel = wb_BB_panel.active
-    #
-    # sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
-    #
-    # col_indices = [df_BB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
-    # for col_index in col_indices:
+    df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
+    with pd.ExcelWriter(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+        df_BB_panel.to_excel(writer, sheet_name='BB_panel')
+        pass  # with
+
+    ## 重新读取 xlsx 格式然后格式化
+    ### 需要调整列边距的列名
+    columnsName_adjust = [
+        'id',
+        'id_data',
+        'step',
+        'turn',
+        'phase',
+        'id_agent',
+    ]
+
+    wb_BB_panel = load_workbook(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+    sheet_BB_panel = wb_BB_panel.active
+
+    sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
+
+    col_indices = [df_BB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+    for col_index in col_indices:
+        col_letter = get_column_letter(col_index)
+        sheet_BB_panel.column_dimensions[col_letter].width = 5
+
+    # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+    fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+    for i, row in enumerate(sheet_BB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+        if i % (2 * num_agent) < num_agent:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+            for cell in row:
+                cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+    # for col in columns_states:  # 遍历每一列
+    #     col_index = df_BB_panel.columns.get_loc(col) + 1
     #     col_letter = get_column_letter(col_index)
-    #     sheet_BB_panel.column_dimensions[col_letter].width = 5
-    #
-    # # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
-    # fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
-    # for i, row in enumerate(sheet_BB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
-    #     if i % (2 * num_agent) < num_agent:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
-    #         for cell in row:
-    #             cell.fill = fill  # 将该行的背景色设置为浅灰色
-    #
-    # # for col in columns_states:  # 遍历每一列
-    # #     col_index = df_BB_panel.columns.get_loc(col) + 1
-    # #     col_letter = get_column_letter(col_index)
-    # #     rng = sheet_BB_panel[col_letter]
-    # #     for cell in rng:  # 遍历每一个单元格
-    # #         if cell.value == True:
-    # #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
-    #
-    # wb_BB_panel.save(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+    #     rng = sheet_BB_panel[col_letter]
+    #     for cell in rng:  # 遍历每一个单元格
+    #         if cell.value == True:
+    #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+    wb_BB_panel.save(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
 
     df_IB_original = pd.read_pickle(filepath_pkl_IB)
     num_agent = df_IB_original['id_agent'][0].shape[0]
@@ -379,7 +463,9 @@ def transform_exp_files(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Pat
     # df_IB_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
     for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
         if col != 'id_agent':
-            df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
+            # df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=0, drop=True).reset_index(drop=True)  # 对于二维数组需要展开两次
+            # df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack(dropna=False).reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
+            df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack(dropna=False).values  # 对于二维数组需要展开两次
             pass  # if
         pass  # for
     df_IB_panel = df_IB_panel.reset_index(drop=True)  # 重置索引
@@ -395,58 +481,114 @@ def transform_exp_files(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Pat
     df_IB_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为 pkl 格式
 
     ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
-    # df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
-    # with pd.ExcelWriter(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
-    #     df_IB_panel.to_excel(writer, sheet_name='IB_panel')
-    #     pass  # with
-    #
-    # ## 重新读取 xlsx 格式然后格式化
-    # ### 需要调整列边距的列名
-    # columnsName_adjust = [
-    #     'id',
-    #     'id_data',
-    #     'process_name',
-    #     'step',
-    #     'turn',
-    #     'phase',
-    #     'id_agent',
-    #     'row',
-    #     'col',
-    # ]
-    #
-    # wb_IB_panel = load_workbook(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
-    # sheet_IB_panel = wb_IB_panel.active
-    #
-    # sheet_IB_panel.freeze_panes = "K2"  # 冻结窗格
-    #
-    # col_indices = [df_IB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
-    # for col_index in col_indices:
+    df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
+    with pd.ExcelWriter(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+        df_IB_panel.to_excel(writer, sheet_name='IB_panel')
+        pass  # with
+
+    ## 重新读取 xlsx 格式然后格式化
+    ### 需要调整列边距的列名
+    columnsName_adjust = [
+        'id',
+        'id_data',
+        'process_name',
+        'step',
+        'turn',
+        'phase',
+        'id_agent',
+        'row',
+        'col',
+    ]
+
+    wb_IB_panel = load_workbook(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+    sheet_IB_panel = wb_IB_panel.active
+
+    sheet_IB_panel.freeze_panes = "K2"  # 冻结窗格
+
+    col_indices = [df_IB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+    for col_index in col_indices:
+        col_letter = get_column_letter(col_index)
+        sheet_IB_panel.column_dimensions[col_letter].width = 5
+
+    # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+    fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+    for i, row in enumerate(sheet_IB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+        if i % (2 * num_agent ** 2) < num_agent ** 2:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+            for cell in row:
+                cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+    # for col in columns_states:  # 遍历每一列
+    #     col_index = df_BB_panel.columns.get_loc(col) + 1
     #     col_letter = get_column_letter(col_index)
-    #     sheet_IB_panel.column_dimensions[col_letter].width = 5
-    #
-    # # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
-    # fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
-    # for i, row in enumerate(sheet_IB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
-    #     if i % (2 * num_agent ** 2) < num_agent ** 2:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
-    #         for cell in row:
-    #             cell.fill = fill  # 将该行的背景色设置为浅灰色
-    #
-    # # for col in columns_states:  # 遍历每一列
-    # #     col_index = df_BB_panel.columns.get_loc(col) + 1
-    # #     col_letter = get_column_letter(col_index)
-    # #     rng = sheet_IB_panel[col_letter]
-    # #     for cell in rng:  # 遍历每一个单元格
-    # #         if cell.value == True:
-    # #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
-    #
-    # wb_IB_panel.save(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+    #     rng = sheet_IB_panel[col_letter]
+    #     for cell in rng:  # 遍历每一个单元格
+    #         if cell.value == True:
+    #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+    wb_IB_panel.save(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
 
     record_work_state(exp_id, 'status_预处理实验结果程序', 'DONE', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DONE"
 
     pass  # function
 
 
+def fun_导入Pandas格式的实验结果数据合并为一个文件(list_filepath_pkl_BB, list_filepath_pkl_IB, list_idsExp_TASK):
+    """
+    导入Pandas格式的实验结果数据合并为一个文件
 
+    Args:
+        list_filepath_pkl_BB: List[Path]: BB 实验结果数据文件路径列表
+        list_filepath_pkl_IB: List[Path]: IB 实验结果数据文件路径列表
+        list_idsExp_TASK: List[int]: 实验组 id 列表
+
+    Returns:
+        df_BB_combined: DataFrame: 合并后的 BB 实验结果数据
+        df_IB_combined: DataFrame: 合并后的 IB 实验结果数据
+    """
+
+    BB_columns = pd.read_pickle(list_filepath_pkl_BB[0]).columns
+    IB_columns = pd.read_pickle(list_filepath_pkl_IB[0]).columns
+
+    df_BB_combined = pd.DataFrame(columns=['id_exp'] + list(BB_columns))
+    df_IB_combined = pd.DataFrame(columns=['id_exp'] + list(IB_columns))
+    for i, exp_id in enumerate(list_idsExp_TASK):
+        df_BB_origin = pd.read_pickle(list_filepath_pkl_BB[i])
+        df_BB_origin['id_exp'] = int(exp_id)
+        df_BB_combined = pd.concat([df_BB_combined, df_BB_origin], ignore_index=True)
+        df_IB_origin = pd.read_pickle(list_filepath_pkl_IB[i])
+        df_IB_origin['id_exp'] = int(exp_id)
+        df_IB_combined = pd.concat([df_IB_combined, df_IB_origin], ignore_index=True)
+
+    # 重置索引以创建总 id 列
+    df_BB_combined.reset_index(inplace=True)
+    df_BB_combined.rename(columns={'index': 'id'}, inplace=True)
+
+    df_IB_combined.reset_index(inplace=True)
+    df_IB_combined.rename(columns={'index': 'id'}, inplace=True)
+
+    return df_BB_combined, df_IB_combined
+
+
+# def fun_导入Pandas格式的实验结果数据合并为一个文件(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Path, folderpath_experiments_output_log: Path, folderpath_exp_output_data: Path):
+#     """
+#     预处理单次实验之各实验结果数据
+#
+#     Args:
+#         exp_id: int: 实验组 id
+#         filepath_pkl_BB: Path: BB 实验结果数据文件路径
+#         filepath_pkl_IB: Path: IB 实验结果数据文件路径
+#         folderpath_experiments_output_log: Path: 实验组输出日志文件夹路径
+#         folderpath_exp_output_data: Path: 面板数据文件夹路径
+#
+#     Returns:
+#         None
+#     """
+#     pass  # function
 
 if __name__ == '__main__':
-    main()
+    # 从命令行参数获取配置字典
+    sgv_base64 = sys.argv[1]
+    sgv_pkl = base64.b64decode(sgv_base64)
+    sgv = pickle.loads(sgv_pkl)
+
+    main(sgv)

@@ -53,6 +53,8 @@ class Executer:
         """
         #NOTE：执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
 
+        注意：如果不想要本轮次之上一回合的数据覆盖现有的上一轮次的数据，那么在使用该函数的时候，返回值可以设置不接收返回值 A_last 。例如 `A, _, sgv = Executer.update_turnStep_by_ABM(...)` 。
+
         Args:
             content (object): 相关的需要步进更新的功能类或者实例
             A (SystemicRiskAgent): 多主体
@@ -63,6 +65,7 @@ class Executer:
 
         Returns:
             A (SystemicRiskAgent): 多主体
+            A_last (SystemicRiskAgent): 上一回合的多主体
             sgv (dict): 模拟器全局变量
 
         """
@@ -73,7 +76,7 @@ class Executer:
         sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
         sgv['phase'] = 1  # 逐相复位（起始为1）
         # sgv['process_name'] = process_name
-        logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
+        # logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
         content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
 

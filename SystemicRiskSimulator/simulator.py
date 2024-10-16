@@ -1,6 +1,7 @@
 """
 系统性风险模拟器入口
 """
+from Samples.libraries.agents_library.agents_sample.set_agents_variables import folderpath_project
 
 
 def simulator(config: dict):
@@ -25,10 +26,9 @@ def simulator(config: dict):
     ## 获取项目路径、模拟器工具路径
     config['folderpath_project'] = Tools.get_project_rootpath()
     config['folderpath_simulator'] = Tools.get_project_rootpath(config['foldername_simulator'], config['folderpath_realpath_simulator'])
-    # 如果 settings 之 config 有内容，那么就删除，否则就从其他文件夹中复制之后再导入
-    Tools._delete_and_recreate_folder(Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
-    Tools._copy_files_from_other_folders(Path(config['folderpath_project'], config['folderpath_config']), Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
-    from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
+    config.update((Tools.import_modules_from_package(str(Path(config['folderpath_project'], config['folderpath_config'])), r'set_config_variables', config['folderpath_project']))['set_config_variables'])
+
+    sgv = config
 
     ## 设置相关的实验文件夹名称
     if sgv['schedule_operation']['实验组模拟程序'] is True:
@@ -69,18 +69,14 @@ def simulator(config: dict):
     # %% 是否运作实验程序
     if sgv['schedule_operation']['实验组模拟程序']:
         ## 导入相关数据
-        Tools._copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
-
-        # Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-        # Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-        # Tools._copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
-        # # shutil.copy(Path(sgv['folderpath_parameters'], r"set_parameters_variables.py"), sgv['folderpath_experiments_output_parameters'])  # 导出一份生成参数的代码文件到输出文件夹
-        # from SystemicRiskSimulator.core.define.define_parameterVariables import para
-
-        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
-        Tools._copy_files_from_other_folders(sgv['folderpath_agents'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
-        Tools._copy_files_from_other_folders(sgv['folderpath_agents'], sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
-        # from SystemicRiskSimulator.core.define.define_agentsVariables import dict_bankCommercial, dict_bankInterbank
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
+        Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])  # 删除模拟器之 data 文件夹之原来的 config 文件夹
+        Tools.copy_files_from_other_folders(sgv['folderpath_config'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份 config 文件夹到模拟器之 data 文件夹
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹原来的 agents 文件夹
+        Tools.copy_files_from_other_folders(sgv['folderpath_agents'], sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 agents 文件夹到输出文件夹
+        Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之原来的 agents 文件夹
+        Tools.copy_files_from_other_folders(sgv['folderpath_agents'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份 agents 文件夹到模拟器之 data 文件夹
 
         ## 获取一些系统信息
         sgv['system_platform'] = platform.system()
@@ -91,11 +87,9 @@ def simulator(config: dict):
             # 删除原有的主日志文件
             for file in Path(sgv['folderpath_experiments_output_log']).glob("outputlog.txt"):
                 file.unlink()
-
             # 删除原有的各子实验日志文件，但是保留作业状态标记日志文件。
             for file in Path(sgv['folderpath_experiments_output_log']).glob("outputlog_*exp.txt"):
                 file.unlink()
-
             pass  # if
 
         logger = logging.getLogger()
@@ -106,70 +100,151 @@ def simulator(config: dict):
         log_console_handler = logging.StreamHandler()
         logger.addHandler(log_console_handler)
 
-        if sgv['is_develope_model']:
+        if sgv['is_develope_mode']:
             logging.info("\n------------ 开发与调试模式！ ---------------\n")
             pass  # if
         logging.info("\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n")
         logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
         logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
         logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
-        logging.info("\n相关实验 models 文件夹：" + sgv['folderpath_models'].name + "\n")
         logging.info("\n相关实验 agents 数据文件夹：" + sgv['folderpath_agents'].name + "\n")
-        logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
         logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
+        logging.info("\n相关实验 models 文件夹：" + sgv['folderpath_models'].name + "\n")
+        logging.info("\n相关实验数据 experiments output data 文件夹：" + sgv['folderpath_experiments'].name + "\n")
 
         ## 关闭日志记录器
+        log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
-        ## 运行实验组模拟程序 # TODO 如果要做并行仿真模拟或者并行 RL 训练，需要考虑改成一个单独的程序做调用
-        # from SystemicRiskSimulator.programs.experiments_program import fun_experiments_program  # 原来的程序
-        # fun_experiments_program(sgv, para)
-        sgv_pkl = pickle.dumps(sgv)
-        sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
-        # para_pkl = pickle.dumps(para)
-        # para_base64 = base64.b64encode(para_pkl).decode('utf-8')
-        start_time = time.time()
-        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64])
-        # subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64, para_base64])
+        ## 运行实验组模拟程序
+        if not sgv['is_develope_mode']:
+            sgv_pkl = pickle.dumps(sgv)
+            sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
+            # para_pkl = pickle.dumps(para)
+            # para_base64 = base64.b64encode(para_pkl).decode('utf-8')
+            start_time = time.time()
+            subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64])
+            # subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/experiments_program.py')), sgv_base64, para_base64])
+        else:
+            from SystemicRiskSimulator.programs.experiments_program import main
+            start_time = time.time()
+            main(sgv)
+            pass  # if
 
         ## 继续打开日志记录器
         logger.addHandler(log_file_handler)
         logger.addHandler(log_console_handler)
 
         end_time = time.time()
-        logging.info(f"\n实验组模拟程序运行总时长：{end_time - start_time} 秒。\n")
+        logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
 
-        ## 关闭日志
+        ## 关闭日志记录器
         log_file_handler.close()
         logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
 
         pass  # if
 
     # %% 是否运作预处理实验结果程序
     if sgv['schedule_operation']['预处理实验结果程序']:
-        sgv_pkl = pickle.dumps(sgv)
-        sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
-        start_time = time.time()
-        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/transform_output_data_program.py')), sgv_base64])
+
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
+
+        logger = logging.getLogger()
+        logger.setLevel(sgv['test_logging'])
+
+        log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
+        logger.addHandler(log_file_handler)
+        log_console_handler = logging.StreamHandler()
+        logger.addHandler(log_console_handler)
+
+        if not sgv['is_develope_mode']:
+            sgv_pkl = pickle.dumps(sgv)
+            sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
+            start_time = time.time()
+            subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/transform_output_data_program.py')), sgv_base64])
+            end_time = time.time()
+            print(f"\n预处理实验结果程序运行总时长：{end_time - start_time} 秒。\n")
+        else:
+            from SystemicRiskSimulator.programs.transform_output_data_program import main
+            start_time = time.time()
+            main(sgv)
+            pass  # if
+
+        ## 继续打开日志记录器
+        logger.addHandler(log_file_handler)
+        logger.addHandler(log_console_handler)
+
         end_time = time.time()
-        print(f"\n预处理实验结果程序运行总时长：{end_time - start_time} 秒。\n")
+        logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
+
+        ## 关闭日志记录器
+        log_file_handler.close()
+        logger.removeHandler(log_file_handler)
+        log_console_handler.close()
+        logger.removeHandler(log_console_handler)
+
         pass  # if
 
     # %% 是否可视化结果程序
     if sgv['schedule_operation']['可视化结果程序']:
-        sgv_pkl = pickle.dumps(sgv)
-        sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
-        start_time = time.time()
-        subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/visualize_data_program.py')), sgv_base64])
-        end_time = time.time()
-        print(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
+
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
+
+        logger = logging.getLogger()
+        # logger.setLevel(sgv['test_logging'])
+        logger.setLevel('ERROR')  # #BUG 因为可视化程序出现大量的无意义的输出，需要后续解决。目前暂时屏蔽。
+
+        log_file_handler = logging.FileHandler(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"))
+        logger.addHandler(log_file_handler)
+        # log_console_handler = logging.StreamHandler()
+        # logger.addHandler(log_console_handler)
+
+        ## 关闭日志记录器
+        log_file_handler.close()
+        logger.removeHandler(log_file_handler)
+        # log_console_handler.close()
+        # logger.removeHandler(log_console_handler)
+        # del log_file_handler, log_console_handler, logger
+
+        if not sgv['is_develope_mode']:
+            sgv_pkl = pickle.dumps(sgv)
+            sgv_base64 = base64.b64encode(sgv_pkl).decode('utf-8')
+            start_time = time.time()
+            subprocess.run(["python", str(Path(sgv['folderpath_simulator'], 'SystemicRiskSimulator/programs/visualize_data_program.py')), sgv_base64])
+            end_time = time.time()
+            print(f"\n可视化数据运行总时长：{end_time - start_time} 秒。\n")
+        else:
+            from SystemicRiskSimulator.programs.visualize_data_program import main
+            start_time = time.time()
+            main(sgv)
+            pass  # if
+
+        # ## 继续打开日志记录器
+        # logger.addHandler(log_file_handler)
+        # logger.addHandler(log_console_handler)
+        #
+        # end_time = time.time()
+        # logging.info(f"\n模拟器运行时长：{end_time - start_time} 秒。\n")
+        #
+        # ## 关闭日志记录器
+        # log_file_handler.close()
+        # logger.removeHandler(log_file_handler)
+        # log_console_handler.close()
+        # logger.removeHandler(log_console_handler)
+
         pass  # if
 
     # %% 清理
-    ## 删除设置文件夹、模型文件夹内的所有文件，但是保留文件夹
-    Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
-    if not sgv['is_develope_model']:
-        Tools._delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
-        pass  # if
+    ## 删除设置文件夹、模型文件夹内的所有文件，但是保留文件夹  #HACK 无用，但是可以保留作为备用
+    # Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])
+    # Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])
+    # Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
+    # if not sgv['is_maintain_model_files_in_simulator_when_develope_mode']:
+    #     Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
+    #     pass  # if
