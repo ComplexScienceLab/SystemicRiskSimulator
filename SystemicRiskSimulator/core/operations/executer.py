@@ -79,6 +79,14 @@ class Executer:
         # logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
         content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
+        if sgv['step'] >= sgv['test_max_num_of_turn']:
+            if sgv['is_develope_mode']:  # #HACK 只有在开发模式下才开启这个判断
+                logging.error(f"模型第{sgv['step']}步，模型未能收敛。请检查模型逻辑是否正确！！！")
+                sgv['is_continue_process'] = False
+            else:
+                assert False, f"模型第{sgv['step']}步，模型未能收敛，程序以非正常方式退出。"  # #BUG 如果遇到并行运行模式，会出现什么情况？
+                pass  # if
+            pass  # if
 
         return A, A_last, sgv
 
