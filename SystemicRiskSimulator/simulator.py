@@ -16,7 +16,7 @@ def simulator(config: dict):
 
     """
 
-    global sgv, para
+    # global sgv, para
 
     # %% 首先导入相关包
     from SystemicRiskSimulator.external_packages import os, platform, logging, Path, shutil, datetime, time, subprocess, pickle, base64
@@ -28,7 +28,9 @@ def simulator(config: dict):
     config['folderpath_simulator'] = Tools.get_project_rootpath(config['foldername_simulator'], config['folderpath_realpath_simulator'])
     config.update((Tools.import_modules_from_package(str(Path(config['folderpath_project'], config['folderpath_config'])), r'set_config_variables', config['folderpath_project']))['set_config_variables'])
 
-    sgv = config
+    from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
+
+    sgv.update(config)
 
     ## 设置相关的实验文件夹名称
     if sgv['schedule_operation']['实验组模拟程序'] is True:
@@ -105,7 +107,7 @@ def simulator(config: dict):
             pass  # if
         logging.info("\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n")
         logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
-        logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
+        logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'][0] + "\n")
         logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
         logging.info("\n相关实验 agents 数据文件夹：" + sgv['folderpath_agents'].name + "\n")
         logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")

@@ -57,6 +57,6 @@ sgv['test_max_num_of_turn'] = None,  # 处理最大回合数（测试用）；
 
 ###########################
 
-## 更新模拟器全局变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `sgv` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
+## #BUG 这个是否有必要存在？ #TODO  更新模拟器全局变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `sgv` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
 for key, value in set_config_variables.items():
     sgv[key] = value
