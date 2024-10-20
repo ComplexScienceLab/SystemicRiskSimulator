@@ -120,7 +120,7 @@ def close_logger(logger: logging.Logger):
     pass  # function
 
 
-def log_message(message: str, filepath_log: Union[str, Path], logger_name=None, is_enable_multiprocessing: bool = True, level_to_logFileHandler=logging.DEBUG, level_to_logConsoleHandler=logging.INFO):
+def log_message(message: str, filepath_log: Union[str, Path], logger_name=None, is_enable_multiprocessing_for_run_model: bool = True, level_to_logFileHandler=logging.DEBUG, level_to_logConsoleHandler=logging.INFO):
     """
     记录日志消息
 
@@ -128,14 +128,14 @@ def log_message(message: str, filepath_log: Union[str, Path], logger_name=None, 
         message (str): 日志消息
         filepath_log (Optional[str, Path]): 日志文件路径
         logger_name (str): 日志记录器名称
-        is_enable_multiprocessing (bool): 是否启用多进程
+        is_enable_multiprocessing_for_run_model (bool): 是否启用多进程
         level_to_logFileHandler (int): 文件处理器级别。默认为 DEBUG
         level_to_logConsoleHandler (int): 控制台处理器级别为 INFO
 
     Returns:
         None
     """
-    if is_enable_multiprocessing:
+    if is_enable_multiprocessing_for_run_model:
         logger = get_logger(filepath_log, logger_name, level_to_logFileHandler, level_to_logConsoleHandler)
         logger.info(message)
         close_logger(logger)

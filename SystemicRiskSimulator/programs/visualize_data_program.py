@@ -532,7 +532,7 @@ def main(sgv):
                     pass  # for
 
                 ## 绘图
-                if sgv['is_enable_multiprocessing']:  # 多进程并行处理
+                if sgv['is_enable_multiprocessing_for_visualization']:  # 多进程并行处理
                     num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
                     with Pool(num_cores) as p:
                         p.map(process_one_heatmap, works)
@@ -701,7 +701,7 @@ def main(sgv):
                     pass  # for
 
                 ## 绘图
-                if sgv['is_enable_multiprocessing']:  # 多进程并行处理
+                if sgv['is_enable_multiprocessing_for_visualization']:  # 多进程并行处理
                     num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
                     with Pool(num_cores) as p:
                         p.map(process_one_graph, works)
@@ -1639,7 +1639,7 @@ def main(sgv):
                     pass  # for
 
                 ## 绘图
-                if sgv['is_enable_multiprocessing']:  # 多进程并行处理
+                if sgv['is_enable_multiprocessing_for_visualization']:  # 多进程并行处理
                     num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
                     with Pool(num_cores) as p:
                         p.map(process_one_balanceSheet, works)  # 使用多进程并行处理

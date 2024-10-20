@@ -68,7 +68,7 @@ def main(sgv):
     # list_idsExp_TASK = [row[0] for row in rows]  # 获取实际上需要运行的实验组 id 列表
     parameters_works_TASK = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
 
-    if sgv['is_enable_multiprocessing']:
+    if sgv['is_enable_multiprocessing_for_run_model']:
         ## #NOTE：多进程并行处理
         # para = para.to_dict()  # 将参数数据框转换为字典
 
@@ -95,7 +95,7 @@ def main(sgv):
             pass  # with
 
         ## 并行处理之后，读取各个实验日志文件之内容追加到主进程日志文件之内容
-        if sgv['is_enable_multiprocessing']:
+        if sgv['is_enable_multiprocessing_for_run_model']:
             with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
                 for i, para in parameters_works_TASK.iterrows():
                     if Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt").exists():
