@@ -752,7 +752,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     ## 计算除了资产负债表各科目之外的其他变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
 
-    # #NOW #TODO 提取到配置项
+    # #TODO 提取到配置项
     # 假设 df_BB, df_accounts_data, sgv_vis, time, id_agent 已经定义
     # 创建一个 DataFrame 存储临时要运行的信息
     config_data_to_vis_other_variables_for_one_bank_accounts = {
@@ -898,7 +898,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         )
         pass  # for
 
-    # #NOW #TODO 合并以下重复代码段，并且提取到配置项
+    # #TODO 合并以下重复代码段，并且提取到配置项
     ## 绘制各冲击变量之各列各项之矩形
     for shock_data in shocks_data.itertuples():
         if np.isnan(shock_data.value) or shock_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制

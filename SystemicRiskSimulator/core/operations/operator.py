@@ -1,26 +1,24 @@
 """
-运作机 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
+运作 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
 
-from SystemicRiskSimulator.external_packages import Path, timeit, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional, plt
+from SystemicRiskSimulator.external_packages import Path, timeit, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional
 from SystemicRiskSimulator.tools.logging_tools import log_message, record_work_state
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
-from SystemicRiskSimulator.core.operations.entity_manager import EntityManager
 from SystemicRiskSimulator.core.operations.collector import Collector
-from SystemicRiskSimulator.core.operations.data_installer import DataInstaller
-from SystemicRiskSimulator.core.operations.builder import Builder
 
 from SystemicRiskSimulator.tools.tools import Tools
 
 pass  # end import
 
 
-# @dataclass()
 class Operator:
     """
-    运作机
+    运作。包括安装数据、初始化数据等
     """
+
+    A_data = AgentDataCollection([], [])
 
     @classmethod
     def operate_installing(cls, sgv, para: Optional[dict] = None):
@@ -56,9 +54,6 @@ class Operator:
                     is_exist_experiments_works_status_db = False
                     is_mtime_of_file_parameters_pkl_changed = True
                     pass  # if
-                # if is_exist_experiments_works_status_db and is_rerun_all_done_works_in_the_same_experiments:
-                #     os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-                #     pass  # if
 
                 if sgv['is_rerun_all_done_works_in_the_same_experiments'] or is_mtime_of_file_parameters_pkl_changed:
                     is_recreate_experiments_works_status_db = True
@@ -132,10 +127,11 @@ class Operator:
                     }))
                     pass  # with
 
-                ### 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
-                # ids = [row[0] for row in rows]  # 获取实验组 id
-                # status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-                # Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
+                ## 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
+                ids = [row[0] for row in rows]  # 获取实验组 id
+                status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+                logging.info("绘制实验组作业状态色带分布图...")
+                Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
 
                 time_end_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
                 logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
@@ -164,13 +160,17 @@ class Operator:
             pass  # if
 
         ## 导入实体数据，生成实体集、内容集并返回
-        Builder.build_entities_by_execute(sgv)
+        # Builder.build_entities_by_execute(sgv)
+
+        ## 导入模型
+        model = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"[Cc]ontent_", sgv['folderpath_simulator'])
+
         pass  # if
 
         ## 导出配置数据
         Collector.export_config_data(sgv)
 
-        return sgv, list_idsExp_TASK, parameters_works, EntityManager.mainModelInstanceEntities
+        return sgv, list_idsExp_TASK, parameters_works, model
 
         pass  # function
 
@@ -195,18 +195,12 @@ class Operator:
 
         sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
 
-        # Scheduler.schedule(sgv)  # 调度状态变成`running`
-
-        # model, A, A_data, para, sgv = Processor.process_entity_by_execute_component(model, A, A_data, para, sgv)  # 执行具体的模型，通过执行模型实体的方式
-
-        modelEntity = model.content  # 获取节点实体对应的模型实体
-
-        content_Finance = modelEntity.content['content_finance']()
-        if len(modelEntity.attribute.other) != 0 and modelEntity.attribute.other['agents_strategies'] is not None:
-            content_Agents = modelEntity.content['content_agents'](np.array(para['Strategy_default']))  # BUG 不能这样代入参数
-            content_Model = modelEntity.content['content_model'](content_Finance, content_Agents)
+        content_Finance = model['content_finance']()  # 初始化 Content_Finance 之实例
+        if 'content_agents' in model.keys():  # 如果该模型有设计 Content_Agents
+            content_Agents = model['content_agents'](np.array(para['Strategy_default']))  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
+            content_Model = model['content_model'](content_Finance, content_Agents)  # 初始化 Content_Model 之实例
         else:
-            content_Model = modelEntity.content['content_model'](content_Finance)
+            content_Model = model['content_model'](content_Finance)  # 初始化 Content_Model 之实例
             pass  # if
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
@@ -218,9 +212,6 @@ class Operator:
             )
             pass  # if
 
-        # sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
-
-        # modelEntity.execute(A, A_data, para, sgv)
         content_Model.model_content(A, A_last, A_data, para, sgv)
 
         pass  # function
@@ -252,7 +243,7 @@ class Operator:
         logging.info("\n相关实验参数：" + str(para) + "\n")
 
         ## 初始化 agents 数据
-        A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
+        A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
         logging.debug("                    初始化数据")
         A_data = Collector.init_agent_data_collection(A, sgv)
         # sgv['step'] += 1
@@ -273,7 +264,7 @@ class Operator:
             A, A_data, sgv, para
         """
 
-        # # 更新实验组作业状态为 "DOING"
+        # # 更新实验组作业状态为 "DOING"  #HACK 这个可以删除
         # conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
         # c = conn.cursor()
         # c.execute("INSERT OR REPLACE INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
@@ -282,7 +273,7 @@ class Operator:
 
         record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
 
-        modelEntity = model.content  # 获取节点实体对应的模型实体
+        # modelEntity = model.content  # 获取节点实体对应的模型实体
 
         ## 重置模拟器全局变量
 
@@ -301,8 +292,8 @@ class Operator:
             )
 
         ## 初始化 agents 数据
-        A = DataInstaller.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
-        A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
+        A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
+        A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
 
         ## 计算个体数量
         sgv['num_bank'] = len(A.BB['id_agent'])
@@ -404,6 +395,96 @@ class Operator:
                 is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
             )
 
+        pass  # function
+
+    @classmethod
+    def set_imported_values_to_Bank_variables(cls, para: dict, sgv: dict):
+        """
+        导入数据以初始化银行主体众、银行间主体众变量
+
+        Args:
+            para (dict): 参数集
+            sgv (dict): 模拟器全局变量
+
+        Returns:
+            bank(BankCommercial): 银行主体众
+            interbank(BankInterbank): 银行间主体众
+        """
+
+        with open(Path(sgv['folderpath_agents'], 'agents', f"BB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+            dict_bankCommercial = pickle.load(f)
+        with open(Path(sgv['folderpath_agents'], 'agents', f"IB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+            dict_bankInterbank = pickle.load(f)
+
+        # ## NOTE 当用对象字段数据结构时：
+        # bank, interbank = cls.set_default_values_to_Bank_variables()
+        # bank.__dict__ = deepcopy(dict_bankCommercial)
+        # interbank.__dict__ = deepcopy(dict_bankInterbank)
+
+        ## NOTE 当用pandas数据结构时：
+        bank = pd.Series()
+        for k, v in deepcopy(dict_bankCommercial).items():
+            bank[k] = v
+        interbank = pd.Series()
+        for k, v in deepcopy(dict_bankInterbank).items():
+            interbank[k] = v
+
+        return bank, interbank
+
+        pass  # function
+
+    @classmethod
+    def install_data(cls, init_data_method: str, sgv: dict, para: dict):
+        """
+        不同的初始化方式。
+
+        参数init_data_method可选项：
+
+        - ``import data``:  导入数据以初始化
+
+        注意：在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值做处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
+
+        Args:
+            init_data_method (str): 初始化数据的方式
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
+
+        Returns:
+            A (pd.Series): 系统性风险个体众
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
+
+
+        """
+
+        if init_data_method == "import data":
+            BB, IB = cls.set_imported_values_to_Bank_variables(para, sgv)  # 导入数据以初始化银行变量
+        else:
+            raise ("关键词" + str(init_data_method) + "取值错误！")
+            pass  # if
+
+        sgv['num_bank'] = len(BB.on)  # 获取 agents 之个体数量
+
+        # HACK 后续需要统一这两个变量的用法，防止混乱使用
+        b = (BB.on | BB.off)  # 临时设置A.BB示性变量
+        ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
+
+        ## 构建Agent模型
+        # NOTE 注意这时候`b`、`ib`变量在后续过程中没有发生变动。
+
+        ## HACK 当用pandas数据结构时：
+        A = pd.Series([BB, IB, b, ib], index=['BB', 'IB', 'b', 'ib'])
+
+        # ## HACK 当用对象字段数据结构时。
+        # A = SystemicRiskAgent(
+        #     0,  # 编号（必备的）
+        #     BB,  # 商业银行群
+        #     b,  # 商业银行群示性变量
+        #     IB,  # 银行间邻接矩阵
+        #     ib,  # 银行间邻接矩阵示性变量
+        # )
+
+        return A
         pass  # function
 
     pass  # class

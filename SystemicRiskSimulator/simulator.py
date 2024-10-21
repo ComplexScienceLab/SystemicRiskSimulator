@@ -1,8 +1,6 @@
 """
 系统性风险模拟器入口
 """
-from Samples.libraries.agents_library.agents_sample.set_agents_variables import folderpath_project
-
 
 def simulator(config: dict):
     """
