@@ -6,7 +6,8 @@ from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sg
 
 if sgv['need_visualization']:
     import matplotlib.pyplot as plt
-    import igraph as ig
+    # import igraph as ig
+    import networkx as nx
     import drawsvg as dw
     import fitz
     from svglib.svglib import svg2rlg
@@ -540,14 +541,13 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
 
 def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: float = 10, dpi: int = 72):
     """
-    绘制单独的银行间资金网络图
+    绘制单独的银行间资金网络图（NetworkX 版本）
 
     Args:
         vis_data (dict): 网络流数据集
         width (float): 图片宽度（英寸）
         height (float): 图片高度（英寸）
         dpi (int): DPI
-
 
     Returns:
         fig: matplotlib格式的图像对象
@@ -556,76 +556,130 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: flo
     edge_types, vertices_data, edges_data, others = vis_data['edge_types'], vis_data['vertices'], vis_data['edges'], vis_data['others']
 
     ## 创建图对象
-    g = ig.Graph(
-        directed=True,
-    )
+    G = nx.DiGraph()
+
+    ## 添加节点和边
+    for vertex in vertices_data['vertices']:
+        G.add_node(vertex, label=vertices_data['vertices_label'][vertex], color=vertices_data['vertices_color'][vertex], size=vertices_data['vertices_size'][vertex])
+
+    for i, edge in enumerate(edges_data['edges']):
+        G.add_edge(edge[0], edge[1], label=edges_data['edges_label'][i], color=edges_data['edges_color'][i], width=edges_data['edges_width'][i])
 
     ## 绘制标题
     if others['time_granularity'] == '步进粒度':
         dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}   s={str(others['step'])}   p={str(others['phase'])}"
     elif others['time_granularity'] == '轮次粒度':
-        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}"  # DEBUG 未测试
+        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}"
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
-        pass  # if
-
-    ## 添加节点和边
-    g.add_vertices(vertices_data['vertices'])
-    g.add_edges(edges_data['edges'])
-
-    # ## 设置图之顶点与边之数值
-    # g.vs['name'] = vertices_data['banks_name']
-    # g.vs['health_state'] = vertices_data['data_banksState']
-    # g.vs[(others['data_name'] + '_all')] = vis_data['vertices_data_value']
-    # g.es[sgv_vis['data_name']] = vis_data['edges_data_value']
-    # g.es['type']
-    # # del g.es['A_IB']
-
-    ## 设置图之属性
-    g.vs['label'] = vertices_data['vertices_label']
-    # g.vs['label'] = vertices_data['vertices_label'] if not np.isnan(vertices_data['vertices_label']) else 'NaN'
-    g.vs['color'] = vertices_data['vertices_color']
-    # g.vs['size'] = vertices_data['vertices_size']
-    g.vs['size'] = [vertices_size if not np.isnan(vertices_size) else 0.0 for vertices_size in vertices_data['vertices_size']]
-    g.es['color'] = edges_data['edges_color']
-    g.es['label'] = edges_data['edges_label']
-    # g.es['width'] = edges_data['edges_width']
-    g.es['width'] = [edges_width if not np.isnan(edges_width) else 0.0 for edges_width in edges_data['edges_width']]
 
     ## 生成可视化图
-    fig, ax = plt.subplots(
-        figsize=(width, height),
-        dpi=dpi,
-    )
+    fig, ax = plt.subplots(figsize=(width, height), dpi=dpi)
     fig.suptitle(dw_text, fontsize=16)
-    # ax.set_title = vis_data['banks_name']
-    layout = g.layout(layout='auto')
-    # layout = g.layout(layout='circle')
-    ig.plot(
-        g,
-        target=ax,
-        title='a',
-        # bbox= (600,600),
-        layout=layout,
-        edge_width=g.es['width'],
-        vertex_label=g.vs['label'],
-        vertex_label_size=16,
-        # vertex_frame_color='red',
-        vertex_frame_width=0.1,
-        edge_label=g.es['label'],
-        edge_align_label=True,
-        edge_label_dist=100,
-        edge_color=g.es['color'],
-        edge_background=None,
-        edge_font=1,
-        edge_label_size=16,
-    )
 
-    # plt.show()  # 显示图像  #NOTE 仅在测试该功能期间使用
+    pos = nx.spring_layout(G)  # 使用 spring 布局
+    node_colors = [G.nodes[node]['color'] for node in G.nodes]
+    node_sizes = [G.nodes[node]['size'] * 100 for node in G.nodes]  # 调整节点大小
+    edge_colors = [G.edges[edge]['color'] for edge in G.edges]
+    edge_widths = [G.edges[edge]['width'] for edge in G.edges]
+    edge_labels = nx.get_edge_attributes(G, 'label')
+
+    nx.draw(G, pos, ax=ax, labels=nx.get_node_attributes(G, 'label'), node_color=node_colors, node_size=node_sizes, edge_color=edge_colors, width=edge_widths, with_labels=True, font_size=16)
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=16)
+
     plt.close()  # 关闭图像
 
     return fig
-    pass  # function
+
+
+# def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: float = 10, dpi: int = 72):
+#     """
+#     绘制单独的银行间资金网络图（igraph 版本）
+#
+#     Args:
+#         vis_data (dict): 网络流数据集
+#         width (float): 图片宽度（英寸）
+#         height (float): 图片高度（英寸）
+#         dpi (int): DPI
+#
+#
+#     Returns:
+#         fig: matplotlib格式的图像对象
+#
+#     """
+#     edge_types, vertices_data, edges_data, others = vis_data['edge_types'], vis_data['vertices'], vis_data['edges'], vis_data['others']
+#
+#     ## 创建图对象
+#     g = ig.Graph(
+#         directed=True,
+#     )
+#
+#     ## 绘制标题
+#     if others['time_granularity'] == '步进粒度':
+#         dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}   s={str(others['step'])}   p={str(others['phase'])}"
+#     elif others['time_granularity'] == '轮次粒度':
+#         dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}"  # DEBUG 未测试
+#     else:
+#         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+#         pass  # if
+#
+#     ## 添加节点和边
+#     g.add_vertices(vertices_data['vertices'])
+#     g.add_edges(edges_data['edges'])
+#
+#     # ## 设置图之顶点与边之数值
+#     # g.vs['name'] = vertices_data['banks_name']
+#     # g.vs['health_state'] = vertices_data['data_banksState']
+#     # g.vs[(others['data_name'] + '_all')] = vis_data['vertices_data_value']
+#     # g.es[sgv_vis['data_name']] = vis_data['edges_data_value']
+#     # g.es['type']
+#     # # del g.es['A_IB']
+#
+#     ## 设置图之属性
+#     g.vs['label'] = vertices_data['vertices_label']
+#     # g.vs['label'] = vertices_data['vertices_label'] if not np.isnan(vertices_data['vertices_label']) else 'NaN'
+#     g.vs['color'] = vertices_data['vertices_color']
+#     # g.vs['size'] = vertices_data['vertices_size']
+#     g.vs['size'] = [vertices_size if not np.isnan(vertices_size) else 0.0 for vertices_size in vertices_data['vertices_size']]
+#     g.es['color'] = edges_data['edges_color']
+#     g.es['label'] = edges_data['edges_label']
+#     # g.es['width'] = edges_data['edges_width']
+#     g.es['width'] = [edges_width if not np.isnan(edges_width) else 0.0 for edges_width in edges_data['edges_width']]
+#
+#     ## 生成可视化图
+#     fig, ax = plt.subplots(
+#         figsize=(width, height),
+#         dpi=dpi,
+#     )
+#     fig.suptitle(dw_text, fontsize=16)
+#     # ax.set_title = vis_data['banks_name']
+#     layout = g.layout(layout='auto')
+#     # layout = g.layout(layout='circle')
+#     ig.plot(
+#         g,
+#         target=ax,
+#         title='a',
+#         # bbox= (600,600),
+#         layout=layout,
+#         edge_width=g.es['width'],
+#         vertex_label=g.vs['label'],
+#         vertex_label_size=16,
+#         # vertex_frame_color='red',
+#         vertex_frame_width=0.1,
+#         edge_label=g.es['label'],
+#         edge_align_label=True,
+#         edge_label_dist=100,
+#         edge_color=g.es['color'],
+#         edge_background=None,
+#         edge_font=1,
+#         edge_label_size=16,
+#     )
+#
+#     # plt.show()  # 显示图像  #NOTE 仅在测试该功能期间使用
+#     plt.close()  # 关闭图像
+#
+#     return fig
+#     pass  # function
 
 
 def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, time: int, id_agent: int, sgv_vis: dict):
