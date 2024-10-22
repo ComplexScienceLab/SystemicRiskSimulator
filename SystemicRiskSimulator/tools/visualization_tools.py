@@ -1,5 +1,7 @@
 """
-函数区：可视化工具集
+函数区：可视化工具集。
+
+#NOTE 注意，如果在绘制网络图时，感觉速度慢，可以自行手动修改代码切换到 igraph 工具包代替 NetworkX 工具包。
 """
 
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
