@@ -478,26 +478,65 @@ class Tools:
         # if isinstance(folderpath_target, str):
         #     folderpath_target = Path(folderpath_project, folderpath_target)
 
-        confirmation = 'n'
-        # folder_path = folderpath_target
-        if folderpath_target.exists() and folderpath_target.is_dir():
-            if len(list(folderpath_target.glob('*'))) > 0:
-                if is_auto_confirmation == True:
-                    confirmation = 'y'
-                else:
-                    confirmation = input(rf"确认要删除文件夹 {folderpath_target} 及其内容吗？(y/[n]): ")
+        confirmation_01 = 'n'
+        confirmation_02 = 'n'
 
-                if confirmation.lower() == 'y':
-                    shutil.rmtree(folderpath_target)
-                    folderpath_target.mkdir()
-                    print(f"文件夹 {folderpath_target.name} 已成功删除并重新创建！")
-                else:
-                    print("删除重建操作已取消！")
-            else:
-                print(f"文件夹 {folderpath_target.name} 为空，无需删除！")
+        if folderpath_target.exists() and folderpath_target.is_dir():
+            is_exist_folderpath_target = True
         else:
-            print(f"文件夹 {folderpath_target.name} 不存在！")
-        pass  # function
+            is_exist_folderpath_target = False
+            pass  # if
+
+        is_exist_files = None
+        if is_exist_folderpath_target:
+            if len(list(folderpath_target.glob('*'))) > 0:
+                is_exist_files = True
+            else:
+                is_exist_files = False
+                pass  # if
+        else:
+            is_need_delete = False
+            confirmation_02 = input(f"文件夹 {folderpath_target} 不存在！是否创建？(y/[n]): ")
+            if confirmation_02.lower() == 'y':
+                is_need_recreate = True
+            else:
+                is_need_recreate = False
+                print("创建操作已取消！")
+                pass  # if
+            pass  # if
+
+        if is_exist_files is True:
+            if is_auto_confirmation == True:
+                confirmation_01 = 'y'
+            else:
+                confirmation_01 = input(rf"确认要删除并且重建文件夹 {folderpath_target} 及其内容吗？(y/[n]): ")
+                pass  # if
+            if confirmation_01.lower() == 'y':
+                is_need_delete = True
+                is_need_recreate = True
+            else:
+                is_need_delete = False
+                is_need_recreate = False
+                print("删除重建操作已取消！")
+                pass  # if
+        elif is_exist_files is False:
+            is_need_delete = False
+            is_need_recreate = False
+            print("文件夹为空，无需删除！")
+        else:
+            pass  # if
+
+        if is_need_delete:
+            shutil.rmtree(folderpath_target)
+            print(f"文件夹 {folderpath_target.name} 已成功删除！")
+            pass  # if
+
+        if is_need_recreate:
+            folderpath_target.mkdir()
+            print(f"文件夹 {folderpath_target.name} 已成功新建！")
+            pass  # if
+
+    pass  # function
 
     @classmethod
     def MinMaxScaler(cls, data: Union[list, np.ndarray], min_max_range: tuple) -> np.ndarray:
