@@ -321,7 +321,7 @@ class Tools:
         else:  # 获取指定项目之根路径
             current_project_rootpath = Tools._get_current_project_rootpath()
             folderpath_relativepath_project = Path(folderpath_relativepath_project)
-            folderpath_project = (current_project_rootpath / Path(folderpath_relativepath_project, foldername_project)).resolve()
+            folderpath_project = Path(current_project_rootpath, folderpath_relativepath_project, "../", foldername_project).resolve()
             return folderpath_project
             pass  # if
         pass  # function
