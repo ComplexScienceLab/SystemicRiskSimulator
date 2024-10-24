@@ -25,10 +25,10 @@ set_config_variables = dict(
     folderpath_realpath_outputData=r"../",  # 输出数据所在工程文件夹相对本实验项目根路径文件夹之相对路径
     folderpath_root_experiments=r"data/sims/",  # 手动设置实验文件夹根路径。默认"data/sims/"；
     foldername_experiments_output_data=r"exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
-    folderpath_models=r"libraries/models_library/model_sample_01",  # 模型所在的文件夹
-    folderpath_config=r"libraries/configs_library/config_sample_01",  # 配置项设置所在的文件夹
-    folderpath_parameters=r"libraries/parameters_library/parameters_sample_01",  # 参数设置所在的文件夹
-    folderpath_agents=r"libraries/agents_library/agents_sample_01",  # 个体众数据初始化所在的文件夹
+    folderpath_models=r"Samples/libraries/models_library/model_sample_01",  # 模型所在的文件夹
+    folderpath_config=r"Samples/libraries/configs_library/config_sample_01",  # 配置项设置所在的文件夹
+    folderpath_parameters=r"Samples/libraries/parameters_library/parameters_sample_01",  # 参数设置所在的文件夹
+    folderpath_agents=r"Samples/libraries/agents_library/agents_sample_01",  # 个体众数据初始化所在的文件夹
     list_agents_yearName=['2012'],  # 设置 agents 初始数据列表（按照年份名称） #DEBUG 调试专用
     running_mode=r"continue running mode",  # 运行模式。取值："continue running mode": 持续运行模式一路直接运行。默认"continue running mode"；
     step_size=1,  # 设置步进跨度；如果该数值设置较大，则相当于直接处理程序；
@@ -43,12 +43,12 @@ set_config_variables = dict(
 
     num_bank=5,  # 手动输入银行个数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
     num_assets=1,  # 资产种类数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
-    is_auto_confirmation=False,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
+    is_auto_confirmation=True,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
     is_auto_open_outputlog=False,  # 是否自动打开输出日志文件。默认 True；
     system_platform=sys.platform,  # 获取系统信息
 
     # 开发、调试模型专用变量：
-    is_develope_mode=False,  # 是否处于开发调试状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
+    is_develope_mode=True,  # 是否处于开发调试状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
     is_maintain_model_files_in_simulator_when_develope_mode=False,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。
     is_ignore_warning=False,  # 是否忽略警告。默认 False；
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)

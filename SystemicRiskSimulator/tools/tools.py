@@ -125,7 +125,6 @@ class Tools:
     @classmethod
     def set_experiments_folders(
             cls,
-            folderpath_project: Path,
             foldername_experiments_output_data: str,
             foldername_experiments: str,
             str_folderpath_root_experiments: str,
@@ -141,10 +140,9 @@ class Tools:
         """
         设置实验相关的文件夹路径。包括实验设置项文件夹、模型文件夹、实验导出数据文件夹、模拟器工具所在的文件夹等。
 
-        根据【项目文件夹】、【实验导出数据文件夹名称】、【实验文件夹名称】，生成【模拟器工具文件夹路径】、【实验文件夹路径】、【实验导出数据文件夹路径】、【模型文件夹路径】、【实验配置项设置项文件夹路径】、【实验参数设置项文件夹路径】、【实验实验个体众数据初始化设置项文件夹路径】等。
+        根据【实验导出数据文件夹名称】、【实验文件夹名称】，生成【项目文件夹路径】、【模拟器工具文件夹路径】、【实验文件夹路径】、【实验导出数据文件夹路径】、【模型文件夹路径】、【实验配置项设置项文件夹路径】、【实验参数设置项文件夹路径】、【实验实验个体众数据初始化设置项文件夹路径】等。
 
         Args:
-            folderpath_project (Path): 项目文件夹路径
             foldername_experiments_output_data (str): 实验导出数据文件夹名称
             foldername_experiments (str): 实验文件夹名称
             str_folderpath_root_experiments (str): 实验文件夹根相对路径字符串
@@ -158,6 +156,8 @@ class Tools:
             str_folderpath_agents (str): 实验实验个体众数据初始化设置项文件夹相对路径字符串
 
         Returns:
+
+            folderpath_project (Path): 项目文件夹路径
 
             folderpath_simulator (Path): 模拟器工具文件夹路径
 
@@ -175,7 +175,7 @@ class Tools:
         """
 
         ## 设置项目文件夹路径
-        # folderpath_project = Tools._get_current_project_rootpath()
+        folderpath_project = Tools._get_current_project_rootpath()
         folderpath_simulator = Tools.get_project_rootpath(str_foldername_simulator, str_folderpath_realpath_simulator)
         folderpath_outputData = Tools.get_project_rootpath(str_foldername_outputData, str_folderpath_realpath_outputData)
 
@@ -212,7 +212,7 @@ class Tools:
         folderpath_agents = Path(folderpath_project, str_folderpath_agents)  # 设定实验实验个体众数据初始化设置项文件夹
 
         return (
-            # folderpath_project,
+            folderpath_project,
             folderpath_simulator,
             folderpath_experiments,
             folderpath_experiments_output_data,
@@ -496,7 +496,11 @@ class Tools:
                 pass  # if
         else:
             is_need_delete = False
-            confirmation_02 = input(f"文件夹 {folderpath_target} 不存在！是否创建？(y/[n]): ")
+            if is_auto_confirmation == True:
+                confirmation_02 = 'y'
+            else:
+                confirmation_02 = input(f"文件夹 {folderpath_target} 不存在！是否创建？(y/[n]): ")
+                pass  # if
             if confirmation_02.lower() == 'y':
                 is_need_recreate = True
             else:

@@ -102,10 +102,10 @@ if __name__ == '__main__':
 
     # %%
     config = dict()
-    config['folderpath_config'] = r"libraries/configs_library/config_sample_01"  # 配置项文件夹路径
+    config['folderpath_config'] = r"Samples/libraries/configs_library/config_sample_01"  # 配置项文件夹路径
     config['foldername_simulator'] = r"SystemicRiskSimulator"  # 模拟器所在工程文件夹名称
-    config['folderpath_realpath_simulator'] = r"../"  # 模拟器所在工程文件夹相对本实验项目根路径文件夹之相对路径。这里设定文件夹 "Samples" 是本样例项目根路径文件夹。
-    config['is_auto_confirmation'] = True  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；#DEBUG #TODO 还需要改回默认值
+    config['folderpath_realpath_simulator'] = r"../"  # 从本实验项目根路径文件夹到模拟器所在工程文件夹之相对路径（不包括模拟器所在工程文件夹名称）。
+    config['is_auto_confirmation'] = False  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
 
     list_model_name = ['sample_01']  # 模型名称列表 #HACK 这个用不到
     list_agents_yearName = ['2012', '2013']  # 年份名称列表  #DEBUG 仅示例演示用。
@@ -116,7 +116,7 @@ if __name__ == '__main__':
 
     # %%
     ## 获取项目路径、模拟器工具路径
-    config['folderpath_project'] = Path(Tools.get_project_rootpath(), "Samples").resolve()  # 项目路径
+    config['folderpath_project'] = Tools.get_project_rootpath()
     config['folderpath_simulator'] = Tools.get_project_rootpath(config['foldername_simulator'], config['folderpath_realpath_simulator'])
     # 如果 settings 之 config 有内容，那么就删除，否则就从其他文件夹中复制之后再导入
     Tools.delete_and_recreate_folder(Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
@@ -127,7 +127,7 @@ if __name__ == '__main__':
 
     ## 生成实验相关的文件夹用于本批次运作
     (
-        # sgv['folderpath_project'],
+        sgv['folderpath_project'],
         sgv['folderpath_simulator'],
         sgv['folderpath_experiments'],
         sgv['folderpath_experiments_output_data'],
@@ -141,7 +141,7 @@ if __name__ == '__main__':
         sgv['folderpath_parameters'],
         sgv['folderpath_agents'],
     ) = Tools.set_experiments_folders(
-        folderpath_project=sgv['folderpath_project'],
+        # folderpath_project=sgv['folderpath_project'],
         foldername_experiments_output_data=sgv['foldername_experiments_output_data'],
         foldername_experiments=sgv['foldername_experiments'],
         str_folderpath_root_experiments=sgv['folderpath_root_experiments'],
