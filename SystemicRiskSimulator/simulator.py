@@ -250,3 +250,13 @@ def simulator(config: dict):
     # if not sgv['is_maintain_model_files_in_simulator_when_develope_mode']:
     #     Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
     #     pass  # if
+
+
+    # %% 结束
+    print("运行完毕！")
+
+    # #TODO 发送邮件通知
+
+
+    pass  # function
+
