@@ -1,12 +1,15 @@
 """
-函数区：可视化工具集
+函数区：可视化工具集。
+
+#NOTE 注意，如果在绘制网络图时，感觉速度慢，可以自行手动修改代码切换到 igraph 工具包代替 NetworkX 工具包。
 """
 
 from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
 if sgv['need_visualization']:
     import matplotlib.pyplot as plt
-    import igraph as ig
+    # import igraph as ig
+    import networkx as nx
     import drawsvg as dw
     import fitz
     from svglib.svglib import svg2rlg
@@ -65,6 +68,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     data_vector2 = df_BB[df_BB[sgv_vis['name_time']] == time][dataName_vector2].values  # 向量2之数据
     data_matrix = df_IB.loc[df_IB[sgv_vis['name_time']] == time, dataName_matrix].values  # 矩阵之数据
 
+    # #TODO 提取银行状态数据到配置项
     banks_hel = df_BB[df_BB[sgv_vis['name_time']] == time]['hel'].values  # 银行状态数据
     banks_isv = df_BB[df_BB[sgv_vis['name_time']] == time]['isv'].values
     banks_ilq = df_BB[df_BB[sgv_vis['name_time']] == time]['ilq'].values
@@ -539,14 +543,13 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
 
 def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: float = 10, dpi: int = 72):
     """
-    绘制单独的银行间资金网络图
+    绘制单独的银行间资金网络图（NetworkX 版本）
 
     Args:
         vis_data (dict): 网络流数据集
         width (float): 图片宽度（英寸）
         height (float): 图片高度（英寸）
         dpi (int): DPI
-
 
     Returns:
         fig: matplotlib格式的图像对象
@@ -555,76 +558,130 @@ def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: flo
     edge_types, vertices_data, edges_data, others = vis_data['edge_types'], vis_data['vertices'], vis_data['edges'], vis_data['others']
 
     ## 创建图对象
-    g = ig.Graph(
-        directed=True,
-    )
+    G = nx.DiGraph()
+
+    ## 添加节点和边
+    for vertex in vertices_data['vertices']:
+        G.add_node(vertex, label=vertices_data['vertices_label'][vertex], color=vertices_data['vertices_color'][vertex], size=vertices_data['vertices_size'][vertex])
+
+    for i, edge in enumerate(edges_data['edges']):
+        G.add_edge(edge[0], edge[1], label=edges_data['edges_label'][i], color=edges_data['edges_color'][i], width=edges_data['edges_width'][i])
 
     ## 绘制标题
     if others['time_granularity'] == '步进粒度':
         dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}   s={str(others['step'])}   p={str(others['phase'])}"
     elif others['time_granularity'] == '轮次粒度':
-        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}"  # DEBUG 未测试
+        dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}"
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
-        pass  # if
-
-    ## 添加节点和边
-    g.add_vertices(vertices_data['vertices'])
-    g.add_edges(edges_data['edges'])
-
-    # ## 设置图之顶点与边之数值
-    # g.vs['name'] = vertices_data['banks_name']
-    # g.vs['health_state'] = vertices_data['data_banksState']
-    # g.vs[(others['data_name'] + '_all')] = vis_data['vertices_data_value']
-    # g.es[sgv_vis['data_name']] = vis_data['edges_data_value']
-    # g.es['type']
-    # # del g.es['A_IB']
-
-    ## 设置图之属性
-    g.vs['label'] = vertices_data['vertices_label']
-    # g.vs['label'] = vertices_data['vertices_label'] if not np.isnan(vertices_data['vertices_label']) else 'NaN'
-    g.vs['color'] = vertices_data['vertices_color']
-    # g.vs['size'] = vertices_data['vertices_size']
-    g.vs['size'] = [vertices_size if not np.isnan(vertices_size) else 0.0 for vertices_size in vertices_data['vertices_size']]
-    g.es['color'] = edges_data['edges_color']
-    g.es['label'] = edges_data['edges_label']
-    # g.es['width'] = edges_data['edges_width']
-    g.es['width'] = [edges_width if not np.isnan(edges_width) else 0.0 for edges_width in edges_data['edges_width']]
 
     ## 生成可视化图
-    fig, ax = plt.subplots(
-        figsize=(width, height),
-        dpi=dpi,
-    )
+    fig, ax = plt.subplots(figsize=(width, height), dpi=dpi)
     fig.suptitle(dw_text, fontsize=16)
-    # ax.set_title = vis_data['banks_name']
-    layout = g.layout(layout='auto')
-    # layout = g.layout(layout='circle')
-    ig.plot(
-        g,
-        target=ax,
-        title='a',
-        # bbox= (600,600),
-        layout=layout,
-        edge_width=g.es['width'],
-        vertex_label=g.vs['label'],
-        vertex_label_size=16,
-        # vertex_frame_color='red',
-        vertex_frame_width=0.1,
-        edge_label=g.es['label'],
-        edge_align_label=True,
-        edge_label_dist=100,
-        edge_color=g.es['color'],
-        edge_background=None,
-        edge_font=1,
-        edge_label_size=16,
-    )
 
-    # plt.show()  # 显示图像  #NOTE 仅在测试该功能期间使用
+    pos = nx.spring_layout(G)  # 使用 spring 布局
+    node_colors = [G.nodes[node]['color'] for node in G.nodes]
+    node_sizes = [G.nodes[node]['size'] * 100 for node in G.nodes]  # 调整节点大小
+    edge_colors = [G.edges[edge]['color'] for edge in G.edges]
+    edge_widths = [G.edges[edge]['width'] for edge in G.edges]
+    edge_labels = nx.get_edge_attributes(G, 'label')
+
+    nx.draw(G, pos, ax=ax, labels=nx.get_node_attributes(G, 'label'), node_color=node_colors, node_size=node_sizes, edge_color=edge_colors, width=edge_widths, with_labels=True, font_size=16)
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=16)
+
     plt.close()  # 关闭图像
 
     return fig
-    pass  # function
+
+
+# def draw_one_interbank_flow_graph(vis_data: dict, width: float = 10, height: float = 10, dpi: int = 72):
+#     """
+#     绘制单独的银行间资金网络图（igraph 版本）
+#
+#     Args:
+#         vis_data (dict): 网络流数据集
+#         width (float): 图片宽度（英寸）
+#         height (float): 图片高度（英寸）
+#         dpi (int): DPI
+#
+#
+#     Returns:
+#         fig: matplotlib格式的图像对象
+#
+#     """
+#     edge_types, vertices_data, edges_data, others = vis_data['edge_types'], vis_data['vertices'], vis_data['edges'], vis_data['others']
+#
+#     ## 创建图对象
+#     g = ig.Graph(
+#         directed=True,
+#     )
+#
+#     ## 绘制标题
+#     if others['time_granularity'] == '步进粒度':
+#         dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}   s={str(others['step'])}   p={str(others['phase'])}"
+#     elif others['time_granularity'] == '轮次粒度':
+#         dw_text = rf"{others['data_name']}   {others['process_name']}   r={str(others['turn'])}"  # DEBUG 未测试
+#     else:
+#         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+#         pass  # if
+#
+#     ## 添加节点和边
+#     g.add_vertices(vertices_data['vertices'])
+#     g.add_edges(edges_data['edges'])
+#
+#     # ## 设置图之顶点与边之数值
+#     # g.vs['name'] = vertices_data['banks_name']
+#     # g.vs['health_state'] = vertices_data['data_banksState']
+#     # g.vs[(others['data_name'] + '_all')] = vis_data['vertices_data_value']
+#     # g.es[sgv_vis['data_name']] = vis_data['edges_data_value']
+#     # g.es['type']
+#     # # del g.es['A_IB']
+#
+#     ## 设置图之属性
+#     g.vs['label'] = vertices_data['vertices_label']
+#     # g.vs['label'] = vertices_data['vertices_label'] if not np.isnan(vertices_data['vertices_label']) else 'NaN'
+#     g.vs['color'] = vertices_data['vertices_color']
+#     # g.vs['size'] = vertices_data['vertices_size']
+#     g.vs['size'] = [vertices_size if not np.isnan(vertices_size) else 0.0 for vertices_size in vertices_data['vertices_size']]
+#     g.es['color'] = edges_data['edges_color']
+#     g.es['label'] = edges_data['edges_label']
+#     # g.es['width'] = edges_data['edges_width']
+#     g.es['width'] = [edges_width if not np.isnan(edges_width) else 0.0 for edges_width in edges_data['edges_width']]
+#
+#     ## 生成可视化图
+#     fig, ax = plt.subplots(
+#         figsize=(width, height),
+#         dpi=dpi,
+#     )
+#     fig.suptitle(dw_text, fontsize=16)
+#     # ax.set_title = vis_data['banks_name']
+#     layout = g.layout(layout='auto')
+#     # layout = g.layout(layout='circle')
+#     ig.plot(
+#         g,
+#         target=ax,
+#         title='a',
+#         # bbox= (600,600),
+#         layout=layout,
+#         edge_width=g.es['width'],
+#         vertex_label=g.vs['label'],
+#         vertex_label_size=16,
+#         # vertex_frame_color='red',
+#         vertex_frame_width=0.1,
+#         edge_label=g.es['label'],
+#         edge_align_label=True,
+#         edge_label_dist=100,
+#         edge_color=g.es['color'],
+#         edge_background=None,
+#         edge_font=1,
+#         edge_label_size=16,
+#     )
+#
+#     # plt.show()  # 显示图像  #NOTE 仅在测试该功能期间使用
+#     plt.close()  # 关闭图像
+#
+#     return fig
+#     pass  # function
 
 
 def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, time: int, id_agent: int, sgv_vis: dict):
@@ -644,16 +701,14 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     # #TODO 可视化资产负债表图标题移到下面位置
 
-    df_accounts_data, df_shocks_data, df_losses_data, df_defaults_data, df_recovers_data, df_repays_data = dict_vis_data['accounts'], dict_vis_data['shocks'], dict_vis_data['losses'], dict_vis_data['defaults'], dict_vis_data['recovers'], dict_vis_data['repays']
-
     ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
-    for account_data in df_accounts_data.itertuples():
-        df_accounts_data.loc[account_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
+    for account_data in dict_vis_data['accounts'].itertuples():
+        dict_vis_data['accounts'].loc[account_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
         value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
-        is_value_changed = False if np.isclose(df_accounts_data.loc[account_data.Index, 'value'], value_last, atol=1e0) else True
+        is_value_changed = False if np.isclose(dict_vis_data['accounts'].loc[account_data.Index, 'value'], value_last, atol=1e0) else True
         if is_value_changed:
-            df_accounts_data.loc[account_data.Index, 'stroke_color'] = '#000000'
-            df_accounts_data.loc[account_data.Index, 'stroke_width'] = 2
+            dict_vis_data['accounts'].loc[account_data.Index, 'stroke_color'] = '#000000'
+            dict_vis_data['accounts'].loc[account_data.Index, 'stroke_width'] = 2
             pass  # if
         pass  # for
 
@@ -665,7 +720,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
     items_subject_values_is_zero = []
     nibs_y = [0, 0, 0, 0, 0, 0]  # 列表之笔尖起始坐标之开始位置之y坐标
     p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
-    grouped_by_dataType = df_accounts_data.groupby('data_type')
+    grouped_by_dataType = dict_vis_data['accounts'].groupby('data_type')
     for data_type, dataType_values in grouped_by_dataType:
         if data_type == 'equity':
             continue
@@ -679,15 +734,15 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             items_balance_is_zero = []
             grouped_by_subject = level_values.groupby('subject')
             for subject, subject_values in grouped_by_subject:
-                account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == data_type) & (df_accounts_data['level'] == level) & (df_accounts_data['subject'] == subject), 'subject'].idxmax()
-                df_accounts_data.at[account_idx, 'position'] = nib
+                account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == data_type) & (dict_vis_data['accounts']['level'] == level) & (dict_vis_data['accounts']['subject'] == subject), 'subject'].idxmax()
+                dict_vis_data['accounts'].at[account_idx, 'position'] = nib
                 # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
                 if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
                     height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
                 else:
                     height_size = int(1e6)
                     pass  # if
-                df_accounts_data.at[account_idx, 'size'] = (
+                dict_vis_data['accounts'].at[account_idx, 'size'] = (
                     int(boxs_width[o[p]]),
                     height_size
                 )
@@ -711,9 +766,9 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         pass  # for
 
     ## 计算资产负债表之 equity 科目之对应的矩形之绘制位置、绘制尺寸
-    o = [3, 4, 5] if df_accounts_data.loc[(df_accounts_data['data_type'] == 'equity') & (df_accounts_data['level'] == 'level 1') & (df_accounts_data['subject'] == 'E_all'), 'value'].iloc[0] >= 0 else [2, 1, 0]  # 设置资产负债表之账户之各侧边柱子之绘制次序
+    o = [3, 4, 5] if dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == 'equity') & (dict_vis_data['accounts']['level'] == 'level 1') & (dict_vis_data['accounts']['subject'] == 'E_all'), 'value'].iloc[0] >= 0 else [2, 1, 0]  # 设置资产负债表之账户之各侧边柱子之绘制次序
     p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
-    grouped_by_dataType = df_accounts_data.groupby('data_type')
+    grouped_by_dataType = dict_vis_data['accounts'].groupby('data_type')
     for data_type, dataType_values in grouped_by_dataType:
         if data_type != 'equity':
             continue
@@ -728,19 +783,19 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             s = 1  # 资产负债表值账户之各侧边柱子之各柱节之绘制索引
             grouped_by_subject = level_values.groupby('subject')
             for subject, subject_values in grouped_by_subject:
-                account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == data_type) & (df_accounts_data['level'] == level) & (df_accounts_data['subject'] == subject), 'subject'].idxmax()
+                account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == data_type) & (dict_vis_data['accounts']['level'] == level) & (dict_vis_data['accounts']['subject'] == subject), 'subject'].idxmax()
                 # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
                 if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
                     height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
                 else:
                     height_size = int(1e6)
                     pass  # if
-                df_accounts_data.at[account_idx, 'size'] = (
+                dict_vis_data['accounts'].at[account_idx, 'size'] = (
                     int(boxs_width[o[p]]),
                     height_size
                 )
-                df_accounts_data.at[account_idx, 'position'] = nib
-                df_accounts_data.at[account_idx, 'fill_color'] = subject_values['fill_color'].iloc[0] if subject_values['value'].iloc[0] >= 0 else '#FFFFFF'  # 如果 equity 是负数则更改其柱子之填充颜色
+                dict_vis_data['accounts'].at[account_idx, 'position'] = nib
+                dict_vis_data['accounts'].at[account_idx, 'fill_color'] = subject_values['fill_color'].iloc[0] if subject_values['value'].iloc[0] >= 0 else '#FFFFFF'  # 如果 equity 是负数则更改其柱子之填充颜色
 
                 # if subject_values['value'].iloc[0]  != 0:
                 if subject_values['value'].iloc[0] != 0 or subject_values['value'].iloc[0] == 0:
@@ -751,32 +806,22 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         pass  # for
 
     ## 计算除了资产负债表各科目之外的其他变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
-
-    # #NOW #TODO 提取到配置项
-    # 假设 df_BB, df_accounts_data, sgv_vis, time, id_agent 已经定义
-    # 创建一个 DataFrame 存储临时要运行的信息
-    config_data_to_vis_other_variables_for_one_bank_accounts = {
-        'df': [df_shocks_data, df_losses_data, df_defaults_data, df_recovers_data, df_repays_data],
-        # 'subject': ['shock_data', 'loss_data', 'default_data', 'recover_data', 'repay_data'],
-        'offsetScale_by_dataType': [1 / 13, 5 / 13, 5 / 13, 5 / 13, 5 / 13]
-    }
-
-    df_data_to_vis_other_variables_for_one_bank_accounts = pd.DataFrame(config_data_to_vis_other_variables_for_one_bank_accounts)
+    df_data_to_vis_other_variables_for_one_bank_accounts = pd.DataFrame(sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts'])
     for index, row in df_data_to_vis_other_variables_for_one_bank_accounts.iterrows():
-        for a_data in row['df'].itertuples():
+        for a_data in dict_vis_data[row['df_dataName']].itertuples():
             a_data_value = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
-            row['df'].loc[a_data.Index, 'value'] = a_data_value
+            dict_vis_data[row['df_dataName']].loc[a_data.Index, 'value'] = a_data_value
             value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
             is_value_changed = False if np.isclose(a_data_value, value_last, atol=1e0) else True
             if is_value_changed:
-                row['df'].loc[a_data.Index, 'stroke_color'] = '#000000'
-                row['df'].loc[a_data.Index, 'stroke_width'] = 2
+                dict_vis_data[row['df_dataName']].loc[a_data.Index, 'stroke_color'] = '#000000'
+                dict_vis_data[row['df_dataName']].loc[a_data.Index, 'stroke_width'] = 2
                 pass  # if
 
-            account_idx = df_accounts_data.loc[(df_accounts_data['data_type'] == a_data.side) & (df_accounts_data['level'] == a_data.level) & (df_accounts_data['subject'] == a_data.align), 'subject'].idxmax()
-            account_position = df_accounts_data.loc[account_idx, 'position']
-            account_size = df_accounts_data.loc[account_idx, 'size']
-            row['df'].at[a_data.Index, 'size'] = (
+            account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == a_data.side) & (dict_vis_data['accounts']['level'] == a_data.level) & (dict_vis_data['accounts']['subject'] == a_data.align), 'subject'].idxmax()
+            account_position = dict_vis_data['accounts'].loc[account_idx, 'position']
+            account_size = dict_vis_data['accounts'].loc[account_idx, 'size']
+            dict_vis_data[row['df_dataName']].at[a_data.Index, 'size'] = (
                 int(account_size[0] * (3 / 13)),
                 int(sgv_vis['one_bank_BalanceSheet_height'] * ((a_data_value if not np.isnan(a_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
             )
@@ -785,9 +830,9 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             elif a_data.data_type[-2:] == '_s':
                 row['offsetScale_by_dataType'] = 9 / 13
                 pass  # if
-            row['df'].at[a_data.Index, 'position'] = (
+            dict_vis_data[row['df_dataName']].at[a_data.Index, 'position'] = (
                 account_position[0] + int(account_size[0] * row['offsetScale_by_dataType']),
-                account_position[1] + int(account_size[1] - row['df'].loc[a_data.Index, 'size'][1])
+                account_position[1] + int(account_size[1] - dict_vis_data[row['df_dataName']].loc[a_data.Index, 'size'][1])
             )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
             pass  # for
 
@@ -802,14 +847,9 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
     )
 
     data = dict(
-        accounts=df_accounts_data,
-        shocks=df_shocks_data,
-        losses=df_losses_data,
-        defaults=df_defaults_data,
-        recovers=df_recovers_data,
-        repays=df_repays_data,
         others=others,
     )
+    data.update({k: dict_vis_data[k] for k in dict_vis_data.keys()})
 
     return data
     pass  # function
@@ -830,7 +870,6 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         svg_balanceSheet: 单个银行的资产负债表svg格式数据
 
     """
-    accounts_data, shocks_data, losses_data, defaults_data, recovers_data, repays_data, others = vis_data['accounts'], vis_data['shocks'], vis_data['losses'], vis_data['defaults'], vis_data['recovers'], vis_data['repays'], vis_data['others']
 
     svg_balanceSheet = dw.Drawing(border + width + border, border + title_height + height + border, id_prefix='Balance Sheet')
 
@@ -862,10 +901,10 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
     # )
 
     ## 绘制标题
-    if others['time_granularity'] == '步进粒度':
-        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['turn'])}   s={str(others['step'])}   p={str(others['phase'])}"
-    elif others['time_granularity'] == '轮次粒度':
-        dw_text = rf"{others['bank_name']}   {others['process_name']}   r={str(others['turn'])}"  # DEBUG 未测试
+    if vis_data['others']['time_granularity'] == '步进粒度':
+        dw_text = rf"{vis_data['others']['bank_name']}   {vis_data['others']['process_name']}   r={str(vis_data['others']['turn'])}   s={str(vis_data['others']['step'])}   p={str(vis_data['others']['phase'])}"
+    elif vis_data['others']['time_granularity'] == '轮次粒度':
+        dw_text = rf"{vis_data['others']['bank_name']}   {vis_data['others']['process_name']}   r={str(vis_data['others']['turn'])}"  # DEBUG 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
@@ -883,7 +922,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
     )
 
     ## 绘制资产负债表各列各项之矩形
-    for account_data in accounts_data.itertuples():
+    for account_data in vis_data['accounts'].itertuples():
         svg_balanceSheet.append(
             dw.Rectangle(
                 x=account_data.position[0],
@@ -898,99 +937,29 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         )
         pass  # for
 
-    # #NOW #TODO 合并以下重复代码段，并且提取到配置项
-    ## 绘制各冲击变量之各列各项之矩形
-    for shock_data in shocks_data.itertuples():
-        if np.isnan(shock_data.value) or shock_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
-            svg_balanceSheet.append(
-                dw.Rectangle(
-                    x=shock_data.position[0],
-                    y=shock_data.position[1],
-                    width=shock_data.size[0],
-                    height=shock_data.size[1],
-                    fill=shock_data.fill_color,
-                    fill_opacity=1.0,
-                    stroke=shock_data.stroke_color,
-                    stroke_width=shock_data.stroke_width
+    ## 绘制资产负债表其它各变量之各列各项之矩形
+    df_data_to_vis_other_variables_for_one_bank_accounts = pd.DataFrame(sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts'])
+    for bank_BalanceSheet_other_data in [vis_data[name] for name in sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts']['df_dataName']]:
+        for one_rect_data in bank_BalanceSheet_other_data.itertuples():
+            if np.isnan(one_rect_data.value) or one_rect_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
+                svg_balanceSheet.append(
+                    dw.Rectangle(
+                        x=one_rect_data.position[0],
+                        y=one_rect_data.position[1],
+                        width=one_rect_data.size[0],
+                        height=one_rect_data.size[1],
+                        fill=one_rect_data.fill_color,
+                        fill_opacity=1.0,
+                        stroke=one_rect_data.stroke_color,
+                        stroke_width=one_rect_data.stroke_width,
+                    )
                 )
-            )
-            pass  # if
-        pass  # for
-
-    ## 绘制各损失变量之各列各项之矩形
-    for loss_data in losses_data.itertuples():
-        if np.isnan(loss_data.value) or loss_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
-            svg_balanceSheet.append(
-                dw.Rectangle(
-                    x=loss_data.position[0],
-                    y=loss_data.position[1],
-                    width=loss_data.size[0],
-                    height=loss_data.size[1],
-                    fill=loss_data.fill_color,
-                    fill_opacity=1.0,
-                    stroke=loss_data.stroke_color,
-                    stroke_width=loss_data.stroke_width
-                )
-            )
-            pass  # if
-        pass  # for
-
-    ## 绘制各违约变量之各列各项之矩形
-    for default_data in defaults_data.itertuples():
-        if np.isnan(default_data.value) or default_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
-            svg_balanceSheet.append(
-                dw.Rectangle(
-                    x=default_data.position[0],
-                    y=default_data.position[1],
-                    width=default_data.size[0],
-                    height=default_data.size[1],
-                    fill=default_data.fill_color,
-                    fill_opacity=1.0,
-                    stroke=default_data.stroke_color,
-                    stroke_width=default_data.stroke_width
-                )
-            )
-            pass  # if
-        pass  # for
-
-    ## 绘制各收回变量之各列各项之矩形
-    for recover_data in recovers_data.itertuples():
-        if np.isnan(recover_data.value) or recover_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
-            svg_balanceSheet.append(
-                dw.Rectangle(
-                    x=recover_data.position[0],
-                    y=recover_data.position[1],
-                    width=recover_data.size[0],
-                    height=recover_data.size[1],
-                    fill=recover_data.fill_color,
-                    fill_opacity=1.0,
-                    stroke=recover_data.stroke_color,
-                    stroke_width=recover_data.stroke_width
-                )
-            )
-            pass  # if
-        pass  # for
-
-    ## 绘制各偿还变量之各列各项之矩形
-    for repay_data in repays_data.itertuples():
-        if np.isnan(repay_data.value) or repay_data.value != 0:  # 如果值为 NaN 或者 0，则不绘制
-            svg_balanceSheet.append(
-                dw.Rectangle(
-                    x=repay_data.position[0],
-                    y=repay_data.position[1],
-                    width=repay_data.size[0],
-                    height=repay_data.size[1],
-                    fill=repay_data.fill_color,
-                    fill_opacity=1.0,
-                    stroke=repay_data.stroke_color,
-                    stroke_width=repay_data.stroke_width
-                )
-            )
-            pass  # if
+                pass  # if
+            pass  # for
         pass  # for
 
     ## 绘制资产负债表各列各项之文本
-    for account_data in accounts_data.itertuples():
+    for account_data in vis_data['accounts'].itertuples():
         if np.isnan(account_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
             svg_balanceSheet.append(
                 dw.Text(
@@ -1024,189 +993,42 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
             pass  # if
         pass  # for
 
-    ## 绘制各冲击变量之各列各项之文本
-    for shock_data in shocks_data.itertuples():
-        if np.isnan(shock_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
-            svg_balanceSheet.append(
-                dw.Text(
-                    shock_data.subject + '\n' + 'NaN',
-                    font_size=18,
-                    x=shock_data.position[0] + shock_data.size[0] // 3,
-                    y=shock_data.position[1] + shock_data.size[1] // 3,
-                    fill='red',
-                    stroke='black',
-                    stroke_width=0.5,
-                    background='red',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
+    for i, bank_BalanceSheet_other_data in enumerate([vis_data[name] for name in sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts']['df_dataName']]):
+        for one_text_data in bank_BalanceSheet_other_data.itertuples():
+            if np.isnan(one_text_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
+                svg_balanceSheet.append(
+                    dw.Text(
+                        one_text_data.subject + '\n' + 'NaN',
+                        font_size=18,
+                        x=one_text_data.position[0] + one_text_data.size[0] // 2,
+                        y=one_text_data.position[1] + one_text_data.size[1] // 2,
+                        fill='red',
+                        stroke='black',
+                        stroke_width=0.5,
+                        background='red',
+                        text_anchor='middle',
+                        dominant_baseline='middle',
+                        font_family=sgv_vis['en_font_family'],
+                    )
                 )
-            )
-        elif shock_data.value != 0:  # 如果值不为0，则绘制
-            svg_balanceSheet.append(
-                dw.Text(
-                    shock_data.subject + '\n' + str(round(shock_data.value)),
-                    font_size=18,
-                    x=shock_data.position[0] + shock_data.size[0] // 3,
-                    y=shock_data.position[1] + shock_data.size[1] // 3,
-                    fill='blue',
-                    stroke='black',
-                    stroke_width=0.5,
-                    # background='white',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
+            elif one_text_data.value != 0:  # 如果值不为0，则绘制
+                svg_balanceSheet.append(
+                    dw.Text(
+                        one_text_data.subject + '\n' + str(round(one_text_data.value)),
+                        font_size=18,
+                        x=one_text_data.position[0] + one_text_data.size[0] // sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts']['text_offsetScale_x'][i],
+                        y=one_text_data.position[1] + one_text_data.size[1] // sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts']['text_offsetScale_y'][i],
+                        fill=sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts']['text_fill'][i],
+                        stroke='black',
+                        stroke_width=0.5,
+                        # background='white',
+                        text_anchor='middle',
+                        dominant_baseline='middle',
+                        font_family=sgv_vis['en_font_family'],
+                    )
                 )
-            )
-            pass  # if
-        pass  # for
-
-    ## 绘制各损失变量之各列各项之文本
-    for loss_data in losses_data.itertuples():
-        if np.isnan(loss_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
-            svg_balanceSheet.append(
-                dw.Text(
-                    loss_data.subject + '\n' + 'NaN',
-                    font_size=18,
-                    x=loss_data.position[0] + loss_data.size[0] // 3,
-                    y=loss_data.position[1] + loss_data.size[1] // 3,
-                    fill='red',
-                    stroke='black',
-                    stroke_width=0.5,
-                    background='red',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
-                )
-            )
-        elif loss_data.value != 0:  # 如果值不为0，则绘制
-            svg_balanceSheet.append(
-                dw.Text(
-                    loss_data.subject + '\n' + str(round(loss_data.value)),
-                    font_size=18,
-                    x=loss_data.position[0] + loss_data.size[0] // 3,
-                    y=loss_data.position[1] + loss_data.size[1] // 3,
-                    fill='#D6D6D6',
-                    stroke='black',
-                    stroke_width=0.5,
-                    # background='white',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
-                )
-            )
-            pass  # if
-        pass  # for
-
-    ## 绘制各违约变量之各列各项之文本
-    for default_data in defaults_data.itertuples():
-        if np.isnan(default_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
-            svg_balanceSheet.append(
-                dw.Text(
-                    default_data.subject + '\n' + 'NaN',
-                    font_size=18,
-                    x=default_data.position[0] + default_data.size[0] // 3,
-                    y=default_data.position[1] + default_data.size[1] // 3,
-                    fill='red',
-                    stroke='black',
-                    stroke_width=0.5,
-                    background='red',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
-                )
-            )
-        elif default_data.value != 0:  # 如果值不为0，则绘制
-            svg_balanceSheet.append(
-                dw.Text(
-                    default_data.subject + '\n' + str(round(default_data.value)),
-                    font_size=18,
-                    x=default_data.position[0] + default_data.size[0] // 3,
-                    y=default_data.position[1] + default_data.size[1] // 3,
-                    fill='#F5DF5D',
-                    stroke='black',
-                    stroke_width=0.5,
-                    # background='white',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
-                )
-            )
-            pass  # if
-        pass  # for
-
-    ## 绘制各收回变量之各列各项之文本
-    for recover_data in recovers_data.itertuples():
-        if np.isnan(recover_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
-            svg_balanceSheet.append(
-                dw.Text(
-                    recover_data.subject + '\n' + 'NaN',
-                    font_size=18,
-                    x=recover_data.position[0] + recover_data.size[0] // 3,
-                    y=recover_data.position[1] + recover_data.size[1] // 3,
-                    fill='red',
-                    stroke='black',
-                    stroke_width=0.5,
-                    background='red',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
-                )
-            )
-        elif recover_data.value != 0:  # 如果值不为0，则绘制
-            svg_balanceSheet.append(
-                dw.Text(
-                    recover_data.subject + '\n' + str(round(recover_data.value)),
-                    font_size=18,
-                    x=recover_data.position[0] + recover_data.size[0] // 3,
-                    y=recover_data.position[1] + recover_data.size[1] // 3,
-                    fill='#999999',
-                    stroke='black',
-                    stroke_width=0.5,
-                    # background='white',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
-                )
-            )
-            pass  # if
-        pass  # for
-
-    ## 绘制各偿还变量之各列各项之文本
-    for repay_data in repays_data.itertuples():
-        if np.isnan(repay_data.value):  # 如果值为 NaN ，则标记 NaN，字颜色黑色，底色红色
-            svg_balanceSheet.append(
-                dw.Text(
-                    repay_data.subject + '\n' + 'NaN',
-                    font_size=18,
-                    x=repay_data.position[0] + repay_data.size[0] // 3,
-                    y=repay_data.position[1] + repay_data.size[1] // 3,
-                    fill='red',
-                    stroke='black',
-                    stroke_width=0.5,
-                    background='red',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
-                )
-            )
-        elif repay_data.value != 0:  # 如果值不为0，则绘制
-            svg_balanceSheet.append(
-                dw.Text(
-                    repay_data.subject + '\n' + str(round(repay_data.value)),
-                    font_size=18,
-                    x=repay_data.position[0] + repay_data.size[0] // 3,
-                    y=repay_data.position[1] + repay_data.size[1] // 3,
-                    fill='#999999',
-                    stroke='black',
-                    stroke_width=0.5,
-                    # background='white',
-                    text_anchor='middle',
-                    dominant_baseline='middle',
-                    font_family=sgv_vis['en_font_family'],
-                )
-            )
-            pass  # if
+                pass  # if
+            pass  # for
         pass  # for
 
     return svg_balanceSheet

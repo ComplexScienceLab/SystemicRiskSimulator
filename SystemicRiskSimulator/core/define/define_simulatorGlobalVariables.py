@@ -24,6 +24,9 @@ sgv: SimulatorGlobalVariableType = dict()
 # # sgv['is_installed_packages_for_visualization'] = False  # 是否已经安装了可视化所需的第三方工具包
 # # sgv['visualization_packages'] = ['matplotlib', 'igraph', 'drawsvg', 'pymupdf', 'svglib', 'screeninfo', 'openpyxl']  # 可视化所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
 
+sgv['simulator_version']=r"v0.0.41_alpha",  # 模拟器版本号。#NOTE 在这里更新版本号信息。注意，更新版本号的时候，需要同时更新 `README.md` 里的版本号。
+
+
 sgv['id_data'] = 0  # 实验初始数据帧ID号；
 sgv['turn'] = 0  # 初始轮次计次为0；
 sgv['phase'] = 0  # 当前逐相为0。不要改动
@@ -55,6 +58,6 @@ sgv['test_max_num_of_turn'] = None,  # 处理最大回合数（测试用）；
 
 ###########################
 
-## 更新模拟器全局变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `sgv` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
+## #BUG 这个是否有必要存在？ #TODO  更新模拟器全局变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `sgv` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
 for key, value in set_config_variables.items():
     sgv[key] = value

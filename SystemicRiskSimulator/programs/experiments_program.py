@@ -9,7 +9,6 @@
 
 from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, sqlite3, base64, pickle, multiprocessing, Pool, json, np
 from SystemicRiskSimulator.core.operations.operator import Operator
-from SystemicRiskSimulator.tools.tools import Tools
 
 
 def main(sgv):
@@ -47,9 +46,7 @@ def main(sgv):
 
     ## 初始化、构建、安装模型
     if sgv['init_parameters_method'] == 'import data':
-        sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv)
-    elif sgv['init_parameters_method'] == 'set manually':
-        sgv, list_idsExp_TASK, parameters_works, models = Operator.operate_installing(sgv, parameters_works)  # #BUG 这里的 parameters_works 变量没有定义。但是由于现在没有维护 "set manually" 的情况，因此事实上目前不需要修复
+        sgv, list_idsExp_TASK, parameters_works, model = Operator.operate_installing(sgv)
         pass  # if
 
     ## 运行实验组
@@ -58,7 +55,7 @@ def main(sgv):
     sgv['experiments_running_time'] = 0  # 初始化实验组运行总时长
     sgv['export_data_running_time'] = 0  # 初始化导出数据运行总时长
 
-    model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
+    # model = list(models.values())[0]  # 获取当前实验对应的模型
 
     # # 连接实验组作业管理数据库
     # conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
@@ -68,7 +65,7 @@ def main(sgv):
     # list_idsExp_TASK = [row[0] for row in rows]  # 获取实际上需要运行的实验组 id 列表
     parameters_works_TASK = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
 
-    if sgv['is_enable_multiprocessing']:
+    if sgv['is_enable_multiprocessing_for_run_model']:
         ## #NOTE：多进程并行处理
         # para = para.to_dict()  # 将参数数据框转换为字典
 
@@ -95,7 +92,7 @@ def main(sgv):
             pass  # with
 
         ## 并行处理之后，读取各个实验日志文件之内容追加到主进程日志文件之内容
-        if sgv['is_enable_multiprocessing']:
+        if sgv['is_enable_multiprocessing_for_run_model']:
             with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
                 for i, para in parameters_works_TASK.iterrows():
                     if Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt").exists():
@@ -114,7 +111,8 @@ def main(sgv):
 
         for i, para in parameters_works_TASK.iterrows():
             para = para.to_dict()  # 将参数数据框转换为字典
-            model = list(models.values())[0]  # 获取当前实验对应的模型。如果一次批处理只有一个模型，那么就用这个。
+            # model = list(models.values())[0]  # 获取当前实验对应的模型
+            model = model  # 获取当前实验对应的模型
             sgv['id_experiment'] = i + 1  # 设定当前实验编号
 
             ## 运行一次实验作业

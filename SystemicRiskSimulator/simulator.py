@@ -1,7 +1,6 @@
 """
 系统性风险模拟器入口
 """
-from Samples.libraries.agents_library.agents_sample.set_agents_variables import folderpath_project
 
 
 def simulator(config: dict):
@@ -16,7 +15,7 @@ def simulator(config: dict):
 
     """
 
-    global sgv, para
+    # global sgv, para
 
     # %% 首先导入相关包
     from SystemicRiskSimulator.external_packages import os, platform, logging, Path, shutil, datetime, time, subprocess, pickle, base64
@@ -26,9 +25,12 @@ def simulator(config: dict):
     ## 获取项目路径、模拟器工具路径
     config['folderpath_project'] = Tools.get_project_rootpath()
     config['folderpath_simulator'] = Tools.get_project_rootpath(config['foldername_simulator'], config['folderpath_realpath_simulator'])
-    config.update((Tools.import_modules_from_package(str(Path(config['folderpath_project'], config['folderpath_config'])), r'set_config_variables', config['folderpath_project']))['set_config_variables'])
 
-    sgv = config
+    from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
+    sgv.update((Tools.import_modules_from_package(str(Path(config['folderpath_project'], config['folderpath_config'])), r'set_config_variables', config['folderpath_project']))['set_config_variables'])
+    sgv.update(config)
+
+    config.update(sgv)
 
     ## 设置相关的实验文件夹名称
     if sgv['schedule_operation']['实验组模拟程序'] is True:
@@ -54,8 +56,8 @@ def simulator(config: dict):
         foldername_experiments_output_data=sgv['foldername_experiments_output_data'],
         foldername_experiments=sgv['foldername_experiments'],
         str_folderpath_root_experiments=sgv['folderpath_root_experiments'],
-        str_foldername_simulator=config['foldername_simulator'],
-        str_folderpath_realpath_simulator=config['folderpath_realpath_simulator'],
+        str_foldername_simulator=sgv['foldername_simulator'],
+        str_folderpath_realpath_simulator=sgv['folderpath_realpath_simulator'],
         str_foldername_outputData=sgv['foldername_outputData'],
         str_folderpath_realpath_outputData=sgv['folderpath_realpath_outputData'],
         str_folderpath_models=sgv['folderpath_models'],
@@ -69,9 +71,9 @@ def simulator(config: dict):
     # %% 是否运作实验程序
     if sgv['schedule_operation']['实验组模拟程序']:
         ## 导入相关数据
-        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
-        Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])  # 删除模拟器之 data 文件夹之原来的 config 文件夹
+        Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除模拟器之 data 文件夹之原来的 config 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_config'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份 config 文件夹到模拟器之 data 文件夹
         Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹原来的 agents 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_agents'], sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 agents 文件夹到输出文件夹
@@ -105,7 +107,7 @@ def simulator(config: dict):
             pass  # if
         logging.info("\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n")
         logging.info("\n实验组名称：" + sgv['foldername_experiments'] + "\n")
-        logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'] + "\n")
+        logging.info("\n模拟器 simulator 版本：" + sgv['simulator_version'][0] + "\n")
         logging.info("\n相关实验配置项 config 文件夹：" + sgv['folderpath_config'].name + "\n")
         logging.info("\n相关实验 agents 数据文件夹：" + sgv['folderpath_agents'].name + "\n")
         logging.info("\n相关实验参数 parameters 文件夹：" + sgv['folderpath_parameters'].name + "\n")
@@ -151,7 +153,7 @@ def simulator(config: dict):
     # %% 是否运作预处理实验结果程序
     if sgv['schedule_operation']['预处理实验结果程序']:
 
-        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
 
         logger = logging.getLogger()
@@ -193,7 +195,7 @@ def simulator(config: dict):
     # %% 是否可视化结果程序
     if sgv['schedule_operation']['可视化结果程序']:
 
-        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
 
         logger = logging.getLogger()
@@ -248,3 +250,13 @@ def simulator(config: dict):
     # if not sgv['is_maintain_model_files_in_simulator_when_develope_mode']:
     #     Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])
     #     pass  # if
+
+
+    # %% 结束
+    print("运行完毕！")
+
+    # #TODO 发送邮件通知
+
+
+    pass  # function
+

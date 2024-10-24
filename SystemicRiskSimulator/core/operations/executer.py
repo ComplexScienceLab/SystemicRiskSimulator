@@ -1,5 +1,5 @@
 """
-执行机
+执行
 """
 from SystemicRiskSimulator.external_packages import logging, pd, deepcopy, dataclass
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
@@ -14,39 +14,8 @@ pass  # end import
 @dataclass
 class Executer:
     """
-    执行机
+    执行
     """
-
-    # @classmethod
-    # def update_turnStep(cls, content, turn: int, process_name: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
-    #     """
-    #     执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
-    #
-    #     Args:
-    #         content (class): 相关的需要步进更新的功能类
-    #         A (SystemicRiskAgent): 多主体
-    #         A_data (AgentDataCollection): 多主体之数据
-    #         para (dict): 参数集
-    #         sgv (dict): 模拟器全局变量
-    #
-    #     Returns:
-    #         A (SystemicRiskAgent): 多主体
-    #         sgv (dict): 模拟器全局变量
-    #
-    #     """
-    #     sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
-    #     sgv['phase'] = 1  # 逐相复位（起始为1）
-    #     sgv['process_name'] = process_name
-    #     logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
-    #     A, sgv = content.content_model_process(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
-    #     # A, sgv = content.execute_model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
-    #
-    #     return A, sgv
-    #
-    #     pass  # function
-
-    # @classmethod
-    # def update_turnStep(cls, content, process_name: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
 
     @classmethod
     def update_turnStep_by_ABM(cls, content, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
@@ -79,6 +48,14 @@ class Executer:
         # logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
         content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
+        if sgv['step'] >= sgv['test_max_num_of_turn']:
+            if sgv['is_develope_mode']:  # #HACK 只有在开发模式下才开启这个判断
+                logging.error(f"实验{sgv['id_experiment']}，模型第{sgv['step']}步，模型未能收敛。请检查模型逻辑是否正确！！！")
+                sgv['is_continue_process'] = False
+            else:
+                assert False, f"实验{sgv['id_experiment']}，模型第{sgv['step']}步，模型未能收敛，程序以非正常方式退出。"  # #BUG 如果遇到并行运行模式，会出现什么情况？
+                pass  # if
+            pass  # if
 
         return A, A_last, sgv
 
@@ -149,7 +126,7 @@ class Executer:
     # @classmethod
     # def agentsRewards_variable_step_update(cls, content, update_way: str, A: SystemicRiskAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
     #     """
-    #     #NOTE：执行一次个体众奖励函数值变更级别的步进更新
+    #     #NOTE：执行一次个体众奖励函数值变更级别的步进更新  #HACK 似乎无用了。
     #
     #     Args:
     #         content (object): 相关的需要步进更新的功能类或者实例

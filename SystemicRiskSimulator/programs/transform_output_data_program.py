@@ -15,7 +15,7 @@
 2. 合并后的数据表导出为 PKL、CSV、xlsx 格式数据。
 
 
-#NOTE 建议用并行处理模式，暨 is_enable_multiprocessing = True。因为这样速度快一些。
+#NOTE 建议用并行处理模式，暨 is_enable_multiprocessing_for_transform_output_data = True。因为这样速度快一些。
 """
 
 # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。
@@ -129,7 +129,7 @@ def main(sgv):
     if (sgv['transform_data']['导入Pandas格式的实验结果数据转换为面板形式再导出']):
         print("导入Pandas格式的实验结果数据转换为面板形式再导出")
 
-        if sgv['is_enable_multiprocessing']:
+        if sgv['is_enable_multiprocessing_for_transform_output_data']:
             # #NOTE：并行处理，用 dask 延迟任务 #HACK 不建议用，因为速度没有显著提升
 
             # #NOTE：多进程并行处理

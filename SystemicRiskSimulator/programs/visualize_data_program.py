@@ -10,10 +10,6 @@ Returns:
     None
 
 """
-
-# from SystemicRiskSimulator.external_packages import sys, pickle, base64, Pool, multiprocessing
-# from SystemicRiskSimulator.core.functions.fun_visualize_data import fun_visualize_data
-
 from SystemicRiskSimulator.external_packages import platform, Path, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool, multiprocessing, warnings
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
@@ -43,7 +39,7 @@ def main(sgv):
 
     from SystemicRiskSimulator.tools.tools import Tools
     if sgv['need_visualization']:
-        visualization_packages = ['matplotlib', 'igraph', 'drawsvg', 'pymupdf', 'svglib', 'screeninfo', 'openpyxl']  # 可视化所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
+        visualization_packages = ['matplotlib', 'drawsvg', 'pymupdf', 'svglib', 'screeninfo', 'openpyxl']  # 可视化所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
         is_installed_packages_for_visualization = Tools._check_and_install_packages(visualization_packages)  # 安装可视化所需的第三方工具包
 
     # %% [markdown] 预处理数据
@@ -52,16 +48,11 @@ def main(sgv):
 
     ## NOTE 导入包
     from matplotlib import pyplot as plt
-    import igraph as ig
+    # import igraph as ig
     import matplotlib.pyplot as plt
-    # import drawsvg as dw
-    # import fitz
-    # from svglib.svglib import svg2rlg
-    # from reportlab.graphics import renderPDF
     from reportlab.pdfbase.ttfonts import TTFont
     from reportlab.pdfbase import pdfmetrics
     import matplotlib.font_manager as fm
-    # from matplotlib.font_manager import FontProperties
     from openpyxl import load_workbook
     from openpyxl.styles import PatternFill
     from openpyxl.utils import get_column_letter
@@ -102,9 +93,9 @@ def main(sgv):
     pdfmetrics.registerFont(TTFont(zh_font_family, zh_font_path))
     pdfmetrics.registerFont(TTFont(en_font_family, en_font_path))
 
-    ### 配置 igraph
-    ig.config['plotting.backend'] = 'matplotlib'
-    ig.config.save()
+    # ### 配置 igraph
+    # ig.config['plotting.backend'] = 'matplotlib'
+    # ig.config.save()
 
     # %% ## NOTE 配置导入导出文件夹
 
@@ -131,7 +122,7 @@ def main(sgv):
     sgv['folderpath_visualize_banksStates_table'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_banksStates_table'])
     sgv['folderpath_visualize_banksStates_table'].mkdir(parents=True, exist_ok=True)
 
-    # # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。
+    # # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。 #HACK 这个功能似乎无用
     #
     # # %%
     #
@@ -467,12 +458,145 @@ def main(sgv):
 
         pass  # if 读取面板形式的PKL格式的文件
 
-    # %% [markdown] ## NOTE 绘制矩阵热图
-    # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
 
-    # %%
+    # %% 绘制图
 
     if (sgv['visulization_process']['读取面板形式的PKL格式的文件'] or sgv['visulization_process']['导入面板形式的CSV数据预处理']):
+
+        # %% [markdown] ## #NOTE 绘制资产负债表图
+        # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
+
+        # %%
+        if (sgv['visulization_process']['绘制资产负债表图']):
+
+            print("准备绘制资产负债表")
+            Tools.delete_and_recreate_folder(sgv['folderpath_plots_single_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            for i_exp in experiments_indices_to_vis:
+
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'turn'
+                    sgv['vis']['num_time'] = num_turn
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
+
+                print("绘制资产负债表图：实验" + str(i_exp))
+
+                sgv['vis']['zh_font_family'] = zh_font_family
+                sgv['vis']['en_font_family'] = en_font_family
+
+                ### 计算各银行主体之代表性的类型之数据之最大值和最小值
+                sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
+                sgv['vis']['min_BB_value_in_all_panel'] = 0
+
+                ## 创建一个作业列表，其中每个作业都是一个元组，包含所有需要传递给函数的参数
+                works = []
+                for i in range(sgv['vis']['num_items_in_a_time_in_BB']):
+                    for t in range(sgv['vis']['num_time']):
+                        ## 初始化数据
+                        data_vis_one_bank_BalanceSheet = {}
+                        # 遍历数据类型
+                        for dataType_name in sgv['vis']['list_dataTypes_for_balanceSheets'].keys():
+                            data_vis_one_bank_BalanceSheet[dataType_name] = pd.DataFrame(sgv['vis']['list_dataTypes_for_balanceSheets'][dataType_name])
+                            pass  # for
+                        works.append((sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
+                        pass  # for
+                    pass  # for
+
+                ## 绘图
+                if sgv['is_enable_multiprocessing_for_visualization']:  # 多进程并行处理
+                    num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
+                    with Pool(num_cores) as p:
+                        p.map(process_one_balanceSheet, works)  # 使用多进程并行处理
+                        pass  # with
+                else:  # 串行处理
+                    for i in range(len(works)):
+                        process_one_balanceSheet(works[i])
+                        pass  # for
+
+                pass  # for  实验编号
+
+            pass  # if 绘制资产负债表图
+
+        # %% [markdown] ## #NOTE 拼接资产负债表图
+        # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
+
+        # %%
+
+        if (sgv['visulization_process']['拼接资产负债表图']):
+            print("准备拼接资产负债表图")
+            Tools.delete_and_recreate_folder(sgv['folderpath_plots_makeup_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            for i_exp in experiments_indices_to_vis:
+
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
+
+                ## 一些变量
+                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
+                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                ## 根据时间粒度参数，确定时间轴名称及其长度
+                if sgv['vis']['time_granularity'] == '步进粒度':
+                    sgv['vis']['name_time'] = 'step'
+                    sgv['vis']['num_time'] = num_step
+                elif sgv['vis']['time_granularity'] == '轮次粒度':
+                    sgv['vis']['name_time'] = 'turn'
+                    sgv['vis']['num_time'] = num_turn
+                else:
+                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
+                    pass  # if
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
+
+                print("拼接资产负债表图：实验" + str(i_exp))
+
+                ## 声明与定义变量
+                match_pattern_of_agent_name = fr"(?<=name=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之个体名称之正则表达式文本
+                match_pattern_of_name_time = fr"(?<={sgv['vis']['name_time']}=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之时间名称之正则表达式文本
+
+                ## 设置参数
+                ### #NOTE 这组配置表示按照银行横向，按照时间纵向。这里每页轴向的最大图片数量只能设置最多单个轴的，不能同时设置两个轴的，否则运行结果可能会错乱。
+                order_of_variable_mean_in_horizontal_and_vertical_direction = (sgv['vis']['num_items_in_a_time_in_BB'], sgv['vis']['num_time'])
+                order_of_paging_in_horizontal_and_vertical_direction = (None, 1)
+                order_of_match_pattern_in_horizontal_and_vertical_direction = (match_pattern_of_agent_name, match_pattern_of_name_time)
+
+                list_fig_files = glob.glob(str(sgv['folderpath_plots_single_balanceSheets'] / f'*exp={i_exp}+*.svg'))  # 获取所有当次实验文件列表
+
+                merged_pdf = merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction, order_of_paging_in_horizontal_and_vertical_direction, order_of_match_pattern_in_horizontal_and_vertical_direction, list_fig_files, i_exp)
+
+                ## 保存
+                merged_pdf.save(Path(sgv['folderpath_plots_makeup_balanceSheets'], 'BB_exp=' + str(i_exp) + '.pdf'))
+                merged_pdf.close()
+
+                pass  # for  实验编号
+
+            pass  # if 拼接资产负债表图
+
+        # %% [markdown] ## NOTE 绘制矩阵热图
+        # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
 
         if (sgv['visulization_process']['绘制矩阵热图']):
             print("准备绘制矩阵热图")
@@ -532,7 +656,7 @@ def main(sgv):
                     pass  # for
 
                 ## 绘图
-                if sgv['is_enable_multiprocessing']:  # 多进程并行处理
+                if sgv['is_enable_multiprocessing_for_visualization']:  # 多进程并行处理
                     num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
                     with Pool(num_cores) as p:
                         p.map(process_one_heatmap, works)
@@ -659,40 +783,12 @@ def main(sgv):
 
                 ## 创建一个作业列表，其中每个作业都是一个元组，包含所有需要传递给函数的参数
                 works = []
-                for d in sgv['vis']['list_dataNames_for_graph_figs']:
-                    ## 设置不同边集对应的属性
-                    list_data_edgeTypes = [
-                        dict(
-                            edge_type=d,
-                            edge_color='#CCCCCC',
-                            edge_width=5,
-                        ),
-                        dict(
-                            edge_type='Shock_IB_def',
-                            edge_color='#FF0000',
-                            edge_width=5,
-                        ),
-                        dict(
-                            edge_type='Shock_IB_run_ilq',
-                            edge_color='#0000FF',
-                            edge_width=5,
-                        ),
-                        dict(
-                            edge_type='Shock_IB_run_br',
-                            edge_color='#ED00FF',
-                            edge_width=5,
-                        ),
-                        dict(
-                            edge_type='Bo_IB',
-                            edge_color='#E7C300',
-                            edge_width=5,
-                        ),
-                    ]
+                for i, d in enumerate(sgv['vis']['list_dataNames_for_graph_figs']):
 
                     for t in range(sgv['vis']['num_time']):
                         ## 初始化参数
                         data_vis_one_time_graph = {}
-                        data_vis_one_time_graph['edge_types'] = pd.DataFrame(list_data_edgeTypes)
+                        data_vis_one_time_graph['edge_types'] = pd.DataFrame(sgv['vis']['list_data_edgeTypes_for_graph_figs'][i])
                         data_vis_one_time_graph['vertices'] = pd.DataFrame()
                         data_vis_one_time_graph['edges'] = pd.DataFrame()
 
@@ -701,7 +797,7 @@ def main(sgv):
                     pass  # for
 
                 ## 绘图
-                if sgv['is_enable_multiprocessing']:  # 多进程并行处理
+                if sgv['is_enable_multiprocessing_for_visualization']:  # 多进程并行处理
                     num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
                     with Pool(num_cores) as p:
                         p.map(process_one_graph, works)
@@ -776,944 +872,9 @@ def main(sgv):
 
             pass  # if 拼接资金流网络图
 
-        # %% [markdown] ## #NOTE 绘制资产负债表图
-        # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
-
-        # %%
-        if (sgv['visulization_process']['绘制资产负债表图']):
-
-            print("准备绘制资产负债表")
-            Tools.delete_and_recreate_folder(sgv['folderpath_plots_single_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
-
-            for i_exp in experiments_indices_to_vis:
-
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
-
-                ## 一些变量
-                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
-                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
-                num_step = num_idData  # 总的步进数（是从0开始计数的)
-                ## 根据时间粒度参数，确定时间轴名称及其长度
-                if sgv['vis']['time_granularity'] == '步进粒度':
-                    sgv['vis']['name_time'] = 'step'
-                    sgv['vis']['num_time'] = num_step
-                elif sgv['vis']['time_granularity'] == '轮次粒度':
-                    sgv['vis']['name_time'] = 'turn'
-                    sgv['vis']['num_time'] = num_turn
-                else:
-                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
-                    pass  # if
-                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
-                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
-                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
-
-                print("绘制资产负债表图：实验" + str(i_exp))
-
-                sgv['vis']['zh_font_family'] = zh_font_family
-                sgv['vis']['en_font_family'] = en_font_family
-
-
-                ## #TODO 提取到配置项 #NOTE：设置绘制资产负债表相关的数据
-
-                ### 资产负债表账户数据（字典列表形式）
-                list_accounts_data = [
-                    dict(
-                        data_type='asset',
-                        level='level 3',
-                        subject='A_P',
-                        value=0.0,
-                        fill_color='#FBE7CF',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='asset',
-                        level='level 3',
-                        subject='A_Q',
-                        value=0.0,
-                        fill_color='#DDE8FA',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='asset',
-                        level='level 3',
-                        subject='A_R',
-                        value=0.0,
-                        fill_color='#DFC942',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='asset',
-                        level='level 3',
-                        subject='A_other',
-                        value=0.0,
-                        fill_color='#FFFFFF',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='asset',
-                        level='level 3',
-                        subject='A_IB_all',
-                        value=0.0,
-                        fill_color='#F1D0CD',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='asset',
-                        level='level 2',
-                        subject='A_exIB',
-                        value=0.0,
-                        fill_color='#F9F7EE',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='asset',
-                        level='level 2',
-                        subject='A_IB_all',
-                        value=0.0,
-                        fill_color='#F1D0CD',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='asset',
-                        level='level 1',
-                        subject='A_all',
-                        value=0.0,
-                        fill_color='#EEEEEE',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='liability',
-                        level='level 3',
-                        subject='Z_D',
-                        value=0.0,
-                        fill_color='#DFD6E6',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='liability',
-                        level='level 3',
-                        subject='Z_IB_all',
-                        value=0.0,
-                        fill_color='#D9E8D6',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='liability',
-                        level='level 2',
-                        subject='Z_exIB',
-                        value=0.0,
-                        fill_color='#DFD6E6',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='liability',
-                        level='level 2',
-                        subject='Z_IB_all',
-                        value=0.0,
-                        fill_color='#D9E8D6',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='liability',
-                        level='level 1',
-                        subject='Z_all',
-                        value=0.0,
-                        fill_color='#EEEEEE',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='equity',
-                        level='level 3',
-                        subject='E_all',
-                        value=0.0,
-                        fill_color='#FFFF98',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='equity',
-                        level='level 2',
-                        subject='E_all',
-                        value=0.0,
-                        fill_color='#FFFF98',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='equity',
-                        level='level 1',
-                        subject='E_all',
-                        value=0.0,
-                        fill_color='#FFFF98',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                ]
-
-                ### 冲击数据（字典列表形式）
-                list_shocks_data = [
-                    dict(
-                        data_type='shock_def_t',
-                        level='level 3',
-                        subject='Shock_P_def_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_P',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_def_t',
-                        level='level 3',
-                        subject='Shock_IB_def_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_def_t',
-                        level='level 2',
-                        subject='Shock_P_def_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_exIB',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_def_t',
-                        level='level 2',
-                        subject='Shock_IB_def_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_def_t',
-                        level='level 1',
-                        subject='Shock_def_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_t',
-                        level='level 3',
-                        subject='Shock_IB_run_ilq_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_t',
-                        level='level 3',
-                        subject='Shock_IB_run_br_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_t',
-                        level='level 3',
-                        subject='Shock_D_run_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_D',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_t',
-                        level='level 2',
-                        subject='Shock_IB_run_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_t',
-                        level='level 2',
-                        subject='Shock_D_run_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_exIB',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_t',
-                        level='level 1',
-                        subject='Shock_run_t',
-                        value=0.0,
-                        fill_color='#FF0000',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_def_s',
-                        level='level 3',
-                        subject='Shock_D_def_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_D',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_def_s',
-                        level='level 3',
-                        subject='Shock_IB_def_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_def_s',
-                        level='level 2',
-                        subject='Shock_D_def_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_exIB',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_def_s',
-                        level='level 2',
-                        subject='Shock_IB_def_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_def_s',
-                        level='level 1',
-                        subject='Shock_def_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_s',
-                        level='level 3',
-                        subject='Shock_P_run_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_P',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_s',
-                        level='level 3',
-                        subject='Shock_IB_run_ilq_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_s',
-                        level='level 3',
-                        subject='Shock_IB_run_br_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_s',
-                        level='level 2',
-                        subject='Shock_P_run_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_exIB',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_s',
-                        level='level 2',
-                        subject='Shock_IB_run_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='shock_run_s',
-                        level='level 1',
-                        subject='Shock_run_s',
-                        value=0.0,
-                        fill_color='#00FF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                ]
-
-                ### 损失数据
-                list_losses_data = [
-                    dict(
-                        data_type='loss',
-                        level='level 3',
-                        subject='Loss_exIB_def_t',
-                        value=0.0,
-                        fill_color='#808080',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_P',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='loss',
-                        level='level 3',
-                        subject='Loss_IB_def_t',
-                        value=0.0,
-                        fill_color='#808080',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='loss',
-                        level='level 3',
-                        subject='Loss_exIB_run_t',
-                        value=0.0,
-                        fill_color='#808080',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_P',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='loss',
-                        level='level 3',
-                        subject='Loss_IB_run_t',
-                        value=0.0,
-                        fill_color='#808080',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='loss',
-                        level='level 2',
-                        subject='Loss_def_t',
-                        value=0.0,
-                        fill_color='#808080',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_exIB',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='loss',
-                        level='level 2',
-                        subject='Loss_run_t',
-                        value=0.0,
-                        fill_color='#808080',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_exIB',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='loss',
-                        level='level 1',
-                        subject='Loss_t',
-                        value=0.0,
-                        fill_color='#808080',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                ]
-
-                ### 违约数据
-                list_default_data = [
-                    dict(
-                        data_type='default',
-                        level='level 3',
-                        subject='Default_D_def_s',
-                        value=0.0,
-                        fill_color='#A68E17',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_D',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='default',
-                        level='level 3',
-                        subject='Default_IB_def_s',
-                        value=0.0,
-                        fill_color='#A68E17',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='default',
-                        level='level 3',
-                        subject='Default_D_run_s',
-                        value=0.0,
-                        fill_color='#A68E17',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_D',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='default',
-                        level='level 3',
-                        subject='Default_IB_run_s',
-                        value=0.0,
-                        fill_color='#A68E17',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='default',
-                        level='level 2',
-                        subject='Default_exIB_s',
-                        value=0.0,
-                        fill_color='#A68E17',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_exIB',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='default',
-                        level='level 2',
-                        subject='Default_IB_s',
-                        value=0.0,
-                        fill_color='#A68E17',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='default',
-                        level='level 1',
-                        subject='Default_s',
-                        value=0.0,
-                        fill_color='#A68E17',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                ]
-
-                ### 收回数据
-                list_recover_data = [
-                    dict(
-                        data_type='recover',
-                        level='level 3',
-                        subject='Recover_P_run_s',
-                        value=0.0,
-                        fill_color='#0000FF',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_P',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='recover',
-                        level='level 3',
-                        subject='Recover_IB_run_s',
-                        value=0.0,
-                        fill_color='#0000FF',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='recover',
-                        level='level 2',
-                        subject='Recover_P_run_s',
-                        value=0.0,
-                        fill_color='#0000FF',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_exIB',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='recover',
-                        level='level 2',
-                        subject='Recover_IB_run_s',
-                        value=0.0,
-                        fill_color='#0000FF',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='recover',
-                        level='level 1',
-                        subject='Recover_run_s',
-                        value=0.0,
-                        fill_color='#0000FF',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='asset',
-                        align='A_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                ]
-
-                ### 偿还数据
-                list_repay_data = [
-                    dict(
-                        data_type='repay',
-                        level='level 3',
-                        subject='Repay_D_run_t',
-                        value=0.0,
-                        fill_color='#FFFF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_D',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='repay',
-                        level='level 3',
-                        subject='Repay_IB_run_t',
-                        value=0.0,
-                        fill_color='#FFFF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='repay',
-                        level='level 2',
-                        subject='Repay_D_run_t',
-                        value=0.0,
-                        fill_color='#FFFF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_exIB',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='repay',
-                        level='level 2',
-                        subject='Repay_IB_run_t',
-                        value=0.0,
-                        fill_color='#FFFF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_IB_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                    dict(
-                        data_type='repay',
-                        level='level 1',
-                        subject='Repay_run_t',
-                        value=0.0,
-                        fill_color='#FFFF00',
-                        stroke_color='gray',
-                        stroke_width=1,
-                        side='liability',
-                        align='Z_all',
-                        position=(0, 0),
-                        size=(0, 0),
-                    ),
-                ]
-
-                ### 计算各银行主体之代表性的类型之数据之最大值和最小值
-                sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
-                sgv['vis']['min_BB_value_in_all_panel'] = 0
-
-                ## 创建一个作业列表，其中每个作业都是一个元组，包含所有需要传递给函数的参数
-                works = []
-                for i in range(sgv['vis']['num_items_in_a_time_in_BB']):
-                    for t in range(sgv['vis']['num_time']):
-                        ## 初始化数据
-                        data_vis_one_bank_BalanceSheet = {}
-                        data_vis_one_bank_BalanceSheet['accounts'] = pd.DataFrame(list_accounts_data)
-                        data_vis_one_bank_BalanceSheet['shocks'] = pd.DataFrame(list_shocks_data)
-                        data_vis_one_bank_BalanceSheet['losses'] = pd.DataFrame(list_losses_data)
-                        data_vis_one_bank_BalanceSheet['defaults'] = pd.DataFrame(list_default_data)
-                        data_vis_one_bank_BalanceSheet['recovers'] = pd.DataFrame(list_recover_data)
-                        data_vis_one_bank_BalanceSheet['repays'] = pd.DataFrame(list_repay_data)
-
-                        works.append((sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
-                        pass  # for
-                    pass  # for
-
-                ## 绘图
-                if sgv['is_enable_multiprocessing']:  # 多进程并行处理
-                    num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
-                    with Pool(num_cores) as p:
-                        p.map(process_one_balanceSheet, works)  # 使用多进程并行处理
-                        pass  # with
-                else:  # 串行处理
-                    for i in range(len(works)):
-                        process_one_balanceSheet(works[i])
-                        pass  # for
-
-                pass  # for  实验编号
-
-            pass  # if 绘制资产负债表图
-
-        # %% [markdown] ## #NOTE 拼接资产负债表图
-        # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
-
-        # %%
-
-        if (sgv['visulization_process']['拼接资产负债表图']):
-            print("准备拼接资产负债表图")
-            Tools.delete_and_recreate_folder(sgv['folderpath_plots_makeup_balanceSheets'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
-
-            for i_exp in experiments_indices_to_vis:
-
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel_exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel_exp=' + str(i_exp) + '.pkl'))
-
-                ## 一些变量
-                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
-                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
-                num_step = num_idData  # 总的步进数（是从0开始计数的)
-                ## 根据时间粒度参数，确定时间轴名称及其长度
-                if sgv['vis']['time_granularity'] == '步进粒度':
-                    sgv['vis']['name_time'] = 'step'
-                    sgv['vis']['num_time'] = num_step
-                elif sgv['vis']['time_granularity'] == '轮次粒度':
-                    sgv['vis']['name_time'] = 'turn'
-                    sgv['vis']['num_time'] = num_turn
-                else:
-                    raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
-                    pass  # if
-                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
-                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
-                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
-
-                print("拼接资产负债表图：实验" + str(i_exp))
-
-                ## 声明与定义变量
-                match_pattern_of_agent_name = fr"(?<=name=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之个体名称之正则表达式文本
-                match_pattern_of_name_time = fr"(?<={sgv['vis']['name_time']}=).+?(?=[\+(\.svg)])"  # 匹配相关含义的变量之时间名称之正则表达式文本
-
-                ## 设置参数
-                ### #NOTE 这组配置表示按照银行横向，按照时间纵向。这里每页轴向的最大图片数量只能设置最多单个轴的，不能同时设置两个轴的，否则运行结果可能会错乱。
-                order_of_variable_mean_in_horizontal_and_vertical_direction = (sgv['vis']['num_items_in_a_time_in_BB'], sgv['vis']['num_time'])
-                order_of_paging_in_horizontal_and_vertical_direction = (None, 1)
-                order_of_match_pattern_in_horizontal_and_vertical_direction = (match_pattern_of_agent_name, match_pattern_of_name_time)
-
-                list_fig_files = glob.glob(str(sgv['folderpath_plots_single_balanceSheets'] / f'*exp={i_exp}+*.svg'))  # 获取所有当次实验文件列表
-
-                merged_pdf = merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction, order_of_paging_in_horizontal_and_vertical_direction, order_of_match_pattern_in_horizontal_and_vertical_direction, list_fig_files, i_exp)
-
-                ## 保存
-                merged_pdf.save(Path(sgv['folderpath_plots_makeup_balanceSheets'], 'BB_exp=' + str(i_exp) + '.pdf'))
-                merged_pdf.close()
-
-                pass  # for  实验编号
-
-            pass  # if 拼接资产负债表图
 
         # %% [markdown] ## #NOTE 可视化银行状态表格
-        # 导入各自的资产负债表，按照横向时间纵向银行，拼接成大图
+        # 单独提取银行状态数据，处理成高亮可视化表格
 
         # %%
 
@@ -1749,7 +910,7 @@ def main(sgv):
 
                 print("可视化银行状态表格：实验" + str(i_exp))
 
-                ##NOTE 设置相关数据
+                ##NOTE 设置相关数据 #TODO 提取设置项到配置项文件
 
                 ### 状态相关的列名
                 columns_states = [
@@ -1887,7 +1048,7 @@ def process_one_graph(args):
     """
     处理需要绘制的单个网络图。
 
-    首先获取相关的节点与边信息，然后用 igraph 绘制，最后保存。
+    首先获取相关的节点与边信息，然后用 NetworkX 绘制，最后保存。
 
     参数元组 args 信息如下：
         - args[0]: sgv (dict): 一个字典，包含了所有的参数。
@@ -1910,7 +1071,7 @@ def process_one_graph(args):
     ## 获取相关的节点与边信息
     data_vis_one_time_graph = generate_one_interbank_graph_data_info(df_BB_panel, df_IB_panel, data_vis_one_time_graph, t, d, sgv['vis'])
 
-    ## 用 igraph 绘制
+    ## 用 NetworkX 绘制
     fig_graph = draw_one_interbank_flow_graph(data_vis_one_time_graph)
     fig_graph.savefig(Path(sgv['folderpath_plots_single_graphs'], 'IB_exp=' + str(i_exp) + '+data=' + d + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
 
