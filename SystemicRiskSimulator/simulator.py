@@ -2,6 +2,7 @@
 系统性风险模拟器入口
 """
 
+
 def simulator(config: dict):
     """
     系统性风险模拟器入口
@@ -24,11 +25,12 @@ def simulator(config: dict):
     ## 获取项目路径、模拟器工具路径
     config['folderpath_project'] = Tools.get_project_rootpath()
     config['folderpath_simulator'] = Tools.get_project_rootpath(config['foldername_simulator'], config['folderpath_realpath_simulator'])
-    config.update((Tools.import_modules_from_package(str(Path(config['folderpath_project'], config['folderpath_config'])), r'set_config_variables', config['folderpath_project']))['set_config_variables'])
 
     from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
-
+    sgv.update((Tools.import_modules_from_package(str(Path(config['folderpath_project'], config['folderpath_config'])), r'set_config_variables', config['folderpath_project']))['set_config_variables'])
     sgv.update(config)
+
+    config.update(sgv)
 
     ## 设置相关的实验文件夹名称
     if sgv['schedule_operation']['实验组模拟程序'] is True:
@@ -54,8 +56,8 @@ def simulator(config: dict):
         foldername_experiments_output_data=sgv['foldername_experiments_output_data'],
         foldername_experiments=sgv['foldername_experiments'],
         str_folderpath_root_experiments=sgv['folderpath_root_experiments'],
-        str_foldername_simulator=config['foldername_simulator'],
-        str_folderpath_realpath_simulator=config['folderpath_realpath_simulator'],
+        str_foldername_simulator=sgv['foldername_simulator'],
+        str_folderpath_realpath_simulator=sgv['folderpath_realpath_simulator'],
         str_foldername_outputData=sgv['foldername_outputData'],
         str_folderpath_realpath_outputData=sgv['folderpath_realpath_outputData'],
         str_folderpath_models=sgv['folderpath_models'],
@@ -69,9 +71,9 @@ def simulator(config: dict):
     # %% 是否运作实验程序
     if sgv['schedule_operation']['实验组模拟程序']:
         ## 导入相关数据
-        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
-        Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])  # 删除模拟器之 data 文件夹之原来的 config 文件夹
+        Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除模拟器之 data 文件夹之原来的 config 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_config'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份 config 文件夹到模拟器之 data 文件夹
         Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹原来的 agents 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_agents'], sgv['folderpath_experiments_output_agents'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 agents 文件夹到输出文件夹
@@ -151,7 +153,7 @@ def simulator(config: dict):
     # %% 是否运作预处理实验结果程序
     if sgv['schedule_operation']['预处理实验结果程序']:
 
-        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
 
         logger = logging.getLogger()
@@ -193,7 +195,7 @@ def simulator(config: dict):
     # %% 是否可视化结果程序
     if sgv['schedule_operation']['可视化结果程序']:
 
-        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=config['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
+        Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除输出文件夹原来的 config 文件夹
         Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出 config 文件夹到输出文件夹
 
         logger = logging.getLogger()
