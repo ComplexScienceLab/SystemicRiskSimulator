@@ -6,17 +6,17 @@ from SystemicRiskSimulator.external_packages import np, logging
 from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.executer import Executer
-from .content_finance import Content_Finance
+from .model_finance import ModelFinance
 
 
-class Content_Model:
+class ModelMain:
     """
     模型 sample 01
     """
 
-    content_Finance: Content_Finance
+    content_Finance: ModelFinance
 
-    def __init__(self, content_Finance: Content_Finance):
+    def __init__(self, content_Finance: ModelFinance):
         self.content_Finance = content_Finance
         pass  # function
 

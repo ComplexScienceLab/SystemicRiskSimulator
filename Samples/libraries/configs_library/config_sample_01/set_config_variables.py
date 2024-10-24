@@ -21,9 +21,9 @@ set_config_variables = dict(
 
     foldername_prefix_experiments=r"test_sample_01",  # 手动设置初始生成的实验文件夹前缀名。默认"default"。当设置实验文件夹命名方式取值 "default" 的时候激活；
     is_datetime=True,  # 是否使用日期时间作为实验文件夹名称的一部分。默认 True；
-    foldername_outputData=r"SystemicRiskData",  # 输出数据所在工程文件夹名称
-    folderpath_realpath_outputData=r"../",  # 输出数据所在工程文件夹相对本实验项目根路径文件夹之相对路径
-    folderpath_root_experiments=r"data/sims/",  # 手动设置实验文件夹根路径。默认"data/sims/"；
+    foldername_outputData=r"SystemicRiskSimulator",  # 输出数据总文件夹名称
+    folderpath_realpath_outputData=r".",  # 从本实验项目根路径文件夹到输出数据总文件夹之相对路径。
+    folderpath_root_experiments=r"Samples/data/sims/",  # 手动设置实验文件夹根路径。默认"data/sims/"；
     foldername_experiments_output_data=r"exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
     folderpath_models=r"Samples/libraries/models_library/model_sample_01",  # 模型所在的文件夹
     folderpath_config=r"Samples/libraries/configs_library/config_sample_01",  # 配置项设置所在的文件夹
@@ -41,8 +41,9 @@ set_config_variables = dict(
     # list_idsExperiment_to_run=list(range(1, 68 + 1)),  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
     list_idsExperiment_to_run=[46],  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
 
-    num_bank=5,  # 手动输入银行个数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
-    num_assets=1,  # 资产种类数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
+    num_bank=5,  # 手动输入最大的银行个数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
+    num_assets=1,  # 手动输入最大的资产种类数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
+
     is_auto_confirmation=True,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
     is_auto_open_outputlog=False,  # 是否自动打开输出日志文件。默认 True；
     system_platform=sys.platform,  # 获取系统信息

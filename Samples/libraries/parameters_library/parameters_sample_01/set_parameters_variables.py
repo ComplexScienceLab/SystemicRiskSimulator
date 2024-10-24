@@ -104,8 +104,8 @@ if __name__ == '__main__':
     config = dict()
     config['folderpath_config'] = r"Samples/libraries/configs_library/config_sample_01"  # 配置项文件夹路径
     config['foldername_simulator'] = r"SystemicRiskSimulator"  # 模拟器所在工程文件夹名称
-    config['folderpath_realpath_simulator'] = r"../"  # 从本实验项目根路径文件夹到模拟器所在工程文件夹之相对路径（不包括模拟器所在工程文件夹名称）。
-    config['is_auto_confirmation'] = False  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
+    config['folderpath_realpath_simulator'] = r"."  # 从本实验项目根路径文件夹到模拟器所在工程文件夹之相对路径。
+    config['is_auto_confirmation'] = True  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 True；
 
     list_model_name = ['sample_01']  # 模型名称列表 #HACK 这个用不到
     list_agents_yearName = ['2012', '2013']  # 年份名称列表  #DEBUG 仅示例演示用。

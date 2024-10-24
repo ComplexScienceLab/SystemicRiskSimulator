@@ -1,14 +1,18 @@
 from SystemicRiskSimulator.external_packages import np, deepcopy, logging
 from SystemicRiskSimulator.core.define.define_agents import BankCommercial, BankInterbank
 from SystemicRiskSimulator.core.define.define_type import StateType, MoneyType
-from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.core.define.define_consts import CONST
 
 
-class Content_Finance:
+class ModelFinance:
     """
     财务相关的功能。
     """
+
+
+    def __init__(self, num_bank: int):
+        self.num_bank = num_bank
+        pass
 
     ## NOTE：功能函数集：计算商业银行之资金转移。
 
@@ -150,16 +154,16 @@ class Content_Finance:
 
     def clear_all_transfer(self, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """清零所有流量变量值"""
-        bank.Lo_IB_all[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
-        bank.Lo_P[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
-        bank.Li_IB_all[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
-        bank.Li_P[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
-        bank.Bi_IB_all[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
-        bank.Bi_D[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
-        bank.Bo_IB_all[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
-        bank.Bo_D[bankState] = CONST(sgv['num_bank']).ZEROS1.copy()[bankState]
-        interbank.Lo_IB[interbankState] = CONST(sgv['num_bank']).ZEROS2.copy()[interbankState]
-        interbank.Bo_IB[interbankState] = CONST(sgv['num_bank']).ZEROS2.copy()[interbankState]
+        bank.Lo_IB_all[bankState] = CONST(self.num_bank).ZEROS1.copy()[bankState]
+        bank.Lo_P[bankState] = CONST(self.num_bank).ZEROS1.copy()[bankState]
+        bank.Li_IB_all[bankState] = CONST(self.num_bank).ZEROS1.copy()[bankState]
+        bank.Li_P[bankState] = CONST(self.num_bank).ZEROS1.copy()[bankState]
+        bank.Bi_IB_all[bankState] = CONST(self.num_bank).ZEROS1.copy()[bankState]
+        bank.Bi_D[bankState] = CONST(self.num_bank).ZEROS1.copy()[bankState]
+        bank.Bo_IB_all[bankState] = CONST(self.num_bank).ZEROS1.copy()[bankState]
+        bank.Bo_D[bankState] = CONST(self.num_bank).ZEROS1.copy()[bankState]
+        interbank.Lo_IB[interbankState] = CONST(self.num_bank).ZEROS2.copy()[interbankState]
+        interbank.Bo_IB[interbankState] = CONST(self.num_bank).ZEROS2.copy()[interbankState]
         logging.debug(f"                    clear_all_transfer")
         pass  # function
 
@@ -293,54 +297,54 @@ class Content_Finance:
 
     def clear_Shock_IB_and_exIB(self, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):  # BUG是否会出现乱清零的麻烦？
         """清零本回合结束时所有不必要的冲击变量"""
-        bank.Shock_P_def_t = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_D_run_t = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_P_run_s = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_D_def_s = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_def_s = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_run_ilq_s = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_run_br_s = CONST(sgv['num_bank']).ZEROS1.copy()
-        interbank.Shock_IB_def = CONST(sgv['num_bank']).ZEROS2.copy()
-        interbank.Shock_IB_run_ilq = CONST(sgv['num_bank']).ZEROS2.copy()
-        interbank.Shock_IB_run_br = CONST(sgv['num_bank']).ZEROS2.copy()
-        bank.Shock_IB_def_t = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_run_ilq_t = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_run_br_t = CONST(sgv['num_bank']).ZEROS1.copy()
+        bank.Shock_P_def_t = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_D_run_t = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_P_run_s = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_D_def_s = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_def_s = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_run_ilq_s = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_run_br_s = CONST(self.num_bank).ZEROS1.copy()
+        interbank.Shock_IB_def = CONST(self.num_bank).ZEROS2.copy()
+        interbank.Shock_IB_run_ilq = CONST(self.num_bank).ZEROS2.copy()
+        interbank.Shock_IB_run_br = CONST(self.num_bank).ZEROS2.copy()
+        bank.Shock_IB_def_t = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_run_ilq_t = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_run_br_t = CONST(self.num_bank).ZEROS1.copy()
         logging.debug(f"                    clear_Shock_IB_and_exIB")
         pass  # function
 
     def clear_Shock_target(self, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """清零所有不必要的目标冲击变量"""
-        bank.Shock_IB_def_t = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_run_ilq_t = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_run_br_t = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_P_def_t = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_D_run_t = CONST(sgv['num_bank']).ZEROS1.copy()
+        bank.Shock_IB_def_t = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_run_ilq_t = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_run_br_t = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_P_def_t = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_D_run_t = CONST(self.num_bank).ZEROS1.copy()
         logging.debug(f"                    clear_Shock_target")
         pass  # function
 
     def clear_Shock_source(self, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """清零所有不必要的源头冲击变量"""
-        bank.Shock_D_def_s = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_P_run_s = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_def_s = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_run_ilq_s = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_IB_run_br_s = CONST(sgv['num_bank']).ZEROS1.copy()
+        bank.Shock_D_def_s = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_P_run_s = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_def_s = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_run_ilq_s = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_IB_run_br_s = CONST(self.num_bank).ZEROS1.copy()
         logging.debug(f"                    clear_Shock_source")
         pass  # function
 
     def clear_Shock_IB(self, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):
         """清零所有不必要的银行间冲击变量"""
-        interbank.Shock_IB_def = CONST(sgv['num_bank']).ZEROS2.copy()
-        interbank.Shock_IB_run_ilq = CONST(sgv['num_bank']).ZEROS2.copy()
-        interbank.Shock_IB_run_br = CONST(sgv['num_bank']).ZEROS2.copy()
+        interbank.Shock_IB_def = CONST(self.num_bank).ZEROS2.copy()
+        interbank.Shock_IB_run_ilq = CONST(self.num_bank).ZEROS2.copy()
+        interbank.Shock_IB_run_br = CONST(self.num_bank).ZEROS2.copy()
         logging.debug(f"                    clear_Shock_IB")
         pass  # function
 
     def clear_Shock_inB(self, bank: BankCommercial):
         """清零本回合中期所有不必要的冲击变量"""  # HACK无用
-        bank.Shock_B_A = CONST(sgv['num_bank']).ZEROS1.copy()
-        bank.Shock_B_Z = CONST(sgv['num_bank']).ZEROS1.copy()
+        bank.Shock_B_A = CONST(self.num_bank).ZEROS1.copy()
+        bank.Shock_B_Z = CONST(self.num_bank).ZEROS1.copy()
         logging.debug(f"                    clear_Shock_inB")
         pass  # function
 
@@ -458,7 +462,7 @@ class Content_Finance:
 
     def calc_B_E_all(self, bank: BankCommercial, interbank: BankInterbank, bankState: StateType, interbankState: StateType):  # BUG是否考虑E_all负数？还是手动计算？
         """计算各银行之所有者权益``E_{B}``，通过总资产与总负债差值。#DEBUG"""
-        bank.E_all[bankState] = bank.A_all[bankState] - bank.Z_all[bankState] - CONST(sgv['num_bank']).LESS1[bankState]  # 允许E_all为负数
+        bank.E_all[bankState] = bank.A_all[bankState] - bank.Z_all[bankState] - CONST(self.num_bank).LESS1[bankState]  # 允许E_all为负数
         # bank.E_all[bankState] = np.maximum(bank.A_all[bankState] - bank.Z_all[bankState], 0.0)  # 不允许E_all为负数
         # bank.E_all[bankState] = bank.E_all[bankState]  # 这里改成了手动计算，并没有自动计算。请自行加入合理的计算逻辑表达式。
         logging.debug(f"                    calc_B_E_all")
@@ -511,12 +515,12 @@ class Content_Finance:
 
         """
         result = (
-                (bank.E_all >= CONST(sgv['num_bank']).LESS1) &
-                (bank.A_Q >= CONST(sgv['num_bank']).LESS1) &
-                # (bank.Shock_def_t + CONST(sgv['num_bank']).LESS1 <= bank.E_all) &
-                # (bank.Shock_run_t + CONST(sgv['num_bank']).LESS1 <= bank.A_Q) &
-                # (bank.Default_s + CONST(sgv['num_bank']).LESS1 <= bank.E_all) &
-                (bank.Loss_t + CONST(sgv['num_bank']).LESS1 <= bank.E_all) &
+                (bank.E_all >= CONST(self.num_bank).LESS1) &
+                (bank.A_Q >= CONST(self.num_bank).LESS1) &
+                # (bank.Shock_def_t + CONST(self.num_bank).LESS1 <= bank.E_all) &
+                # (bank.Shock_run_t + CONST(self.num_bank).LESS1 <= bank.A_Q) &
+                # (bank.Default_s + CONST(self.num_bank).LESS1 <= bank.E_all) &
+                (bank.Loss_t + CONST(self.num_bank).LESS1 <= bank.E_all) &
                 (bank.on)
         )
         source_state_changes = (bank.hel != result)
@@ -540,11 +544,11 @@ class Content_Finance:
         """
         result = (
                 (
-                        (bank.A_all < bank.Z_all + CONST(sgv['num_bank']).LESS1) |
-                        (bank.E_all < CONST(sgv['num_bank']).LESS1) |
-                        # (bank.Shock_def_t + CONST(sgv['num_bank']).LESS1 > bank.E_all) |
-                        # (bank.Default_s + CONST(sgv['num_bank']).LESS1 > bank.E_all) |
-                        (bank.Loss_t + CONST(sgv['num_bank']).LESS1 > bank.E_all)
+                        (bank.A_all < bank.Z_all + CONST(self.num_bank).LESS1) |
+                        (bank.E_all < CONST(self.num_bank).LESS1) |
+                        # (bank.Shock_def_t + CONST(self.num_bank).LESS1 > bank.E_all) |
+                        # (bank.Default_s + CONST(self.num_bank).LESS1 > bank.E_all) |
+                        (bank.Loss_t + CONST(self.num_bank).LESS1 > bank.E_all)
                 ) &
                 (bank.on)
         )
@@ -569,8 +573,8 @@ class Content_Finance:
         """
         result = (
                 (
-                        (bank.A_Q < CONST(sgv['num_bank']).LESS1) |
-                        (bank.Shock_run_t + CONST(sgv['num_bank']).LESS1 > bank.A_Q)
+                        (bank.A_Q < CONST(self.num_bank).LESS1) |
+                        (bank.Shock_run_t + CONST(self.num_bank).LESS1 > bank.A_Q)
                 ) &
                 (bank.on)
         )
@@ -738,8 +742,8 @@ class Content_Finance:
         # )
         # return is_exposure_of_creditor_in_state_of_banks
 
-        # list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(sgv['num_bank'])])  # TODO 无用
-        # for i in range(sgv['num_bank']):
+        # list_of_relation_in_state_of_banks = np.array([np.array(None) for i in range(self.num_bank)])  # TODO 无用
+        # for i in range(self.num_bank):
         #     list_of_relation_in_state_of_banks[i] = np.where(is_exposure_of_creditor_in_state_of_banks[i, :])[0]  # 获取对应状态下的债权或者债务关系的银行列表
         #     pass  # for
         # logging.debug(f"                    calc_list_of_relation_in_state_of_banks")
@@ -1534,7 +1538,7 @@ class Content_Finance:
             - ``alter to Z_IB from A_IB``:  已知``A_{IB}[i,j]``，转换得到``Z_{IB}[i,j]``；
             - ``alter to A_IB from Z_IB``:  已知``Z_{IB}[i,j]``，转换得到``A_{IB}[i,j]``；
 
-        Args:content_finance.py
+        Args:
             bank (BankCommercial): 商业银行众
             interbank (BankInterbank): 商业银行间市场
             bankState (StateType): 银行之状态

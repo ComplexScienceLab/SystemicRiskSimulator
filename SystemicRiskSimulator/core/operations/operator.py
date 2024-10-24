@@ -18,7 +18,7 @@ class Operator:
     运作。包括安装数据、初始化数据等
     """
 
-    A_data = AgentDataCollection([], [])
+    # A_data = AgentDataCollection([], [])
 
     @classmethod
     def operate_installing(cls, sgv, para: Optional[dict] = None):
@@ -154,16 +154,13 @@ class Operator:
             # 如果是应用实验状态，则复制模型数据与内容到输出文件夹下，另外导出一份到`SystemicRiskSimulator/models`文件夹下
             Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹之模型文件夹
             Tools.copy_files_from_other_folders(sgv['folderpath_models'], sgv['folderpath_experiments_output_models'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到输出文件夹之模型文件夹
-            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之模型文件夹
-            Tools.copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/models"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到模拟器之 data 文件夹
+            Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/model"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之模型文件夹
+            Tools.copy_files_from_other_folders(sgv['folderpath_models'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/model"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出模型文件夹到模拟器之 data 文件夹
         else:
             pass  # if
 
-        ## 导入实体数据，生成实体集、内容集并返回
-        # Builder.build_entities_by_execute(sgv)
-
         ## 导入模型
-        model = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/models/contents')), r"[Cc]ontent_", sgv['folderpath_simulator'])
+        model = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/model')), r"[Mm]odel", sgv['folderpath_simulator'])
 
         pass  # if
 
@@ -195,12 +192,15 @@ class Operator:
 
         sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
 
-        content_Finance = model['content_finance']()  # 初始化 Content_Finance 之实例
-        if 'content_agents' in model.keys():  # 如果该模型有设计 Content_Agents
-            content_Agents = model['content_agents'](np.array(para['Strategy_default']))  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
-            content_Model = model['content_model'](content_Finance, content_Agents)  # 初始化 Content_Model 之实例
+        # 计算个体数量
+        sgv['num_bank'] = len(A.BB['id_agent'])
+
+        content_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
+        if 'model_agents' in model.keys():  # 如果该模型有设计 Content_Agents
+            content_Agents = model['model_agents'](np.array(para['Strategy_default']))  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
+            content_Model = model['model_main'](content_Finance, content_Agents)  # 初始化 Content_Model 之实例
         else:
-            content_Model = model['content_model'](content_Finance)  # 初始化 Content_Model 之实例
+            content_Model = model['model_main'](content_Finance)  # 初始化 Content_Model 之实例
             pass  # if
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
