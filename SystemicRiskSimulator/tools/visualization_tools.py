@@ -4,29 +4,22 @@
 #NOTE 注意，如果在绘制网络图时，感觉速度慢，可以自行手动修改代码切换到 igraph 工具包代替 NetworkX 工具包。
 """
 
-from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
-
-if sgv['need_visualization']:
-    import matplotlib.pyplot as plt
-    # import igraph as ig
-    import networkx as nx
-    import drawsvg as dw
-    import fitz
-    from svglib.svglib import svg2rlg
-    from reportlab.graphics import renderPDF
-    import matplotlib.gridspec as gridspec
-    from matplotlib.colors import LinearSegmentedColormap
-    import matplotlib.colors as colors
-    from openpyxl import load_workbook
-    from openpyxl.styles import PatternFill
-    from openpyxl.utils import get_column_letter
-
-    pass  # if
+import matplotlib.pyplot as plt
+# import igraph as ig
+import networkx as nx
+import drawsvg as dw
+import fitz
+from svglib.svglib import svg2rlg
+from reportlab.graphics import renderPDF
+import matplotlib.gridspec as gridspec
+from matplotlib.colors import LinearSegmentedColormap
+import matplotlib.colors as colors
+from openpyxl import load_workbook
+from openpyxl.styles import PatternFill
+from openpyxl.utils import get_column_letter
 
 from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re, Path, deepcopy
 from SystemicRiskSimulator.tools.tools import Tools
-
-del sgv
 
 
 def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, colormap: tuple, relations: str, time: int, dataName: tuple, sgv_vis: dict):

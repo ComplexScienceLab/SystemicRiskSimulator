@@ -38,9 +38,6 @@ def main(sgv):
     # from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
     from SystemicRiskSimulator.tools.tools import Tools
-    if sgv['need_visualization']:
-        visualization_packages = ['matplotlib', 'drawsvg', 'pymupdf', 'svglib', 'screeninfo', 'openpyxl']  # 可视化所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
-        is_installed_packages_for_visualization = Tools._check_and_install_packages(visualization_packages)  # 安装可视化所需的第三方工具包
 
     # %% [markdown] 预处理数据
 

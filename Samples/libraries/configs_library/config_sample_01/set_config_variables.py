@@ -68,7 +68,6 @@ set_config_variables = dict(
     foldername_experiments=r'test_sample_01',  # 实验文件夹名称
 
     # NOTE 设置预处理实验结果数据：
-    need_transformData=True,  # 是否需要转换数据。默认 True；
     is_enable_multiprocessing_for_transform_output_data=True,  # 是否启用多进程。默认 True；
     transform_data=dict(
         导入Pandas格式的实验结果数据转换为面板形式再导出=True,  # 默认 True。（NOTE：这个只需要运行一次即可。）
@@ -76,7 +75,6 @@ set_config_variables = dict(
     ),
 
     # NOTE 设置可视化：
-    need_visualization=True,  # 是否需要可视化。默认 False；
     is_enable_multiprocessing_for_visualization=True,  # 可视化期间，是否启用多进程。默认 True；
     foldername_plots=r'plots',  # 实验导出可视化的数据文件夹名称。
     foldername_plots_single_heatmaps=r'单个矩阵热力图',  # 实验导出可视化的单个矩阵热力图之文件夹之名称。

@@ -15,7 +15,6 @@
 2. 合并后的数据表导出为 PKL、CSV、xlsx 格式数据。
 
 
-#NOTE 建议用并行处理模式，暨 is_enable_multiprocessing_for_transform_output_data = True。因为这样速度快一些。
 """
 
 # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。
@@ -26,20 +25,17 @@
 # from dask import delayed, compute
 # import dask.dataframe as dd
 # from dask.diagnostics import ProgressBar
+## NOTE 导入包
 
 from SystemicRiskSimulator.external_packages import platform, Path, sqlite3, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool, multiprocessing, warnings, logging, json, sqlite3, timeit, os
 # from multiprocessing import Lock
 
-from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 from SystemicRiskSimulator.tools.logging_tools import record_work_state
 
-## NOTE 导入包
-
-if sgv['need_transformData']:
-    from openpyxl import load_workbook
-    from openpyxl.styles import PatternFill
-    from openpyxl.utils import get_column_letter
-    import dask.dataframe as dd
+from openpyxl import load_workbook
+from openpyxl.styles import PatternFill
+from openpyxl.utils import get_column_letter
+# import dask.dataframe as dd
 
 
 # 创建一个全局锁
