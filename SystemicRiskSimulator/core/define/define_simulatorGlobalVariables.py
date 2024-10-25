@@ -4,7 +4,7 @@
 记得这里发生变更时，要手动检查`Operator.operate_experiment`相关位置是否要更新。
 """
 from SystemicRiskSimulator.core.define.define_type import SimulatorGlobalVariableType
-from SystemicRiskSimulator.data.config.set_config_variables import set_config_variables
+# from SystemicRiskSimulator.data.config.set_config_variables import set_config_variables
 
 pass  # end import
 
@@ -59,5 +59,5 @@ sgv['test_max_num_of_turn'] = None,  # 处理最大回合数（测试用）；
 ###########################
 
 ## #BUG 这个是否有必要存在？ #TODO  更新模拟器全局变量。遍历 `set_config_variables` 里的字典键值对，然后合并入 `sgv` 里对应的键值对。如果键值对已经存在，那么就覆盖。如果键值对不存在，那么就新增。
-for key, value in set_config_variables.items():
-    sgv[key] = value
+# for key, value in set_config_variables.items():
+#     sgv[key] = value

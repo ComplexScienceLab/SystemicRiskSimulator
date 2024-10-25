@@ -536,7 +536,7 @@ class Tools:
             pass  # if
 
         if is_need_recreate:
-            folderpath_target.mkdir()
+            folderpath_target.mkdir(parents=True, exist_ok=True)
             print(f"文件夹 {folderpath_target.name} 已成功新建！")
             pass  # if
 
