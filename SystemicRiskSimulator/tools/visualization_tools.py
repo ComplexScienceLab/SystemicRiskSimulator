@@ -343,7 +343,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
 
 def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, dict_vis_data: dict, time: int, data_name: str, sgv_vis: dict):
     """
-    生成网络图数据信息。
+    生成网络图数据信息。 #TODO 需要重构
 
     Args:
         df_BB (pd.DataFrame): 银行数据框
