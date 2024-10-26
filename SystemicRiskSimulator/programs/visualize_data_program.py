@@ -38,9 +38,6 @@ def main(sgv):
     # from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
 
     from SystemicRiskSimulator.tools.tools import Tools
-    if sgv['need_visualization']:
-        visualization_packages = ['matplotlib', 'drawsvg', 'pymupdf', 'svglib', 'screeninfo', 'openpyxl']  # 可视化所需的第三方工具包 #NOTE 如果需要添加新的包，请在此处添加
-        is_installed_packages_for_visualization = Tools._check_and_install_packages(visualization_packages)  # 安装可视化所需的第三方工具包
 
     # %% [markdown] 预处理数据
 
@@ -910,71 +907,17 @@ def main(sgv):
 
                 print("可视化银行状态表格：实验" + str(i_exp))
 
-                ##NOTE 设置相关数据 #TODO 提取设置项到配置项文件
 
-                ### 状态相关的列名
-                columns_states = [
-                    'on',
-                    'off',
-                    'hel',
-                    'isv',
-                    'ilq',
-                    'br',
-                    'is_needed_BoIB',
-                    'is_enabled_BoIB',
-                    'is_needed_BoD',
-                    'is_enabled_BoD',
-                    'is_needed_LiP',
-                    'is_enabled_LiP',
-                    'is_allocated_Shock',
-                ]
-
-                ### 需要提取的列名
-                columnsName_ext = [
-                    'id',
-                    'id_data',
-                    'process_name',
-                    'step',
-                    'turn',
-                    'phase',
-                    'id_agent',
-                    'abbr',
-                    'fullName',
-                    'on',
-                    'off',
-                    'hel',
-                    'isv',
-                    'ilq',
-                    'br',
-                    'is_needed_BoIB',
-                    'is_enabled_BoIB',
-                    'is_needed_BoD',
-                    'is_enabled_BoD',
-                    'is_needed_LiP',
-                    'is_enabled_LiP',
-                    'is_allocated_Shock',
-                ]
-
-                ### 需要调整列边距的列名
-                columnsName_adjust = [
-                    'id',
-                    'id_data',
-                    'step',
-                    'turn',
-                    'phase',
-                    'id_agent',
-                ]
-
-                df_BankStates = df_BB_panel[columnsName_ext]  # 提取所需列
+                df_BankStates = df_BB_panel[sgv['vis']['columnsName_extract']]  # 提取所需列
 
                 df_BankStates.to_excel(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_panel_exp=' + str(i_exp) + '.xlsx'), index=False)  # 将数据写入新的 Excel 文件
 
                 wb_BB_panel = load_workbook(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_panel_exp=' + str(i_exp) + '.xlsx'))  # 使用 openpyxl 打开新的 Excel 文件
                 sheet_BB_panel = wb_BB_panel.active
 
-                sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
+                sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格  #BUG  后续这个直接设定的单元格地址可能存在问题
 
-                col_indices = [df_BankStates.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+                col_indices = [df_BankStates.columns.get_loc(col_name) + 1 for col_name in sgv['vis']['columnsName_adjust']]  # 调整列宽
                 for col_index in col_indices:
                     col_letter = get_column_letter(col_index)
                     sheet_BB_panel.column_dimensions[col_letter].width = 5
@@ -986,7 +929,7 @@ def main(sgv):
                         for cell in row:
                             cell.fill = fill  # 将该行的背景色设置为浅灰色
 
-                for col in columns_states:  # 遍历每一列
+                for col in sgv['vis']['columns_states']:  # 遍历每一列
                     col_index = df_BankStates.columns.get_loc(col) + 1
                     col_letter = get_column_letter(col_index)
                     rng = sheet_BB_panel[col_letter]

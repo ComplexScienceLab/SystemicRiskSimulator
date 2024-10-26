@@ -4,29 +4,22 @@
 #NOTE 注意，如果在绘制网络图时，感觉速度慢，可以自行手动修改代码切换到 igraph 工具包代替 NetworkX 工具包。
 """
 
-from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
-
-if sgv['need_visualization']:
-    import matplotlib.pyplot as plt
-    # import igraph as ig
-    import networkx as nx
-    import drawsvg as dw
-    import fitz
-    from svglib.svglib import svg2rlg
-    from reportlab.graphics import renderPDF
-    import matplotlib.gridspec as gridspec
-    from matplotlib.colors import LinearSegmentedColormap
-    import matplotlib.colors as colors
-    from openpyxl import load_workbook
-    from openpyxl.styles import PatternFill
-    from openpyxl.utils import get_column_letter
-
-    pass  # if
+import matplotlib.pyplot as plt
+# import igraph as ig
+import networkx as nx
+import drawsvg as dw
+import fitz
+from svglib.svglib import svg2rlg
+from reportlab.graphics import renderPDF
+import matplotlib.gridspec as gridspec
+from matplotlib.colors import LinearSegmentedColormap
+import matplotlib.colors as colors
+from openpyxl import load_workbook
+from openpyxl.styles import PatternFill
+from openpyxl.utils import get_column_letter
 
 from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re, Path, deepcopy
 from SystemicRiskSimulator.tools.tools import Tools
-
-del sgv
 
 
 def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, colormap: tuple, relations: str, time: int, dataName: tuple, sgv_vis: dict):
@@ -350,7 +343,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
 
 def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, dict_vis_data: dict, time: int, data_name: str, sgv_vis: dict):
     """
-    生成网络图数据信息。
+    生成网络图数据信息。 #TODO 需要重构
 
     Args:
         df_BB (pd.DataFrame): 银行数据框
@@ -408,25 +401,33 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
             pass  # for
 
     ### 获取银行间数据之索引
-    list_data_idx_AIBorZIB = (df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[0]] > 0)]['id_agent'].values).tolist()  # 银行间借贷数据之索引
-    list_data_idx_ShockIBRunIlq = (df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[1]] > 0)]['id_agent'].values).tolist()  # 银行间之流动性短缺挤兑冲击数据之索引
-    list_data_idx_BoIB = (df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[2]] > 0)]['id_agent'].values).tolist()  # 银行间之还款流量数据之索引
+    if len(list_edgeTypes_name) <= 2:
+        list_data_idx_AIBorZIB = (df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[0]] > 0)]['id_agent'].values).tolist()  # 银行间借贷数据之索引
+        list_data_idx_ShockIBRunIlq = (df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[1]] > 0)]['id_agent'].values).tolist()  # 银行间之流动性短缺挤兑冲击数据之索引
+    else:
+        list_data_idx_BoIB = (df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[2]] > 0)]['id_agent'].values).tolist()  # 银行间之还款流量数据之索引
 
     ### 获取银行间数据之类型
-    list_dataType_AIBorZIB = [list_edgeTypes_name[0]] * len(list_data_idx_AIBorZIB)
-    list_dataType_ShockIBRunIlq = [list_edgeTypes_name[1]] * len(list_data_idx_ShockIBRunIlq)
-    list_dataType_BoIB = [list_edgeTypes_name[2]] * len(list_data_idx_BoIB)
+    if len(list_edgeTypes_name) <= 2:
+        list_dataType_AIBorZIB = [list_edgeTypes_name[0]] * len(list_data_idx_AIBorZIB)
+        list_dataType_ShockIBRunIlq = [list_edgeTypes_name[1]] * len(list_data_idx_ShockIBRunIlq)
+    else:
+        list_dataType_BoIB = [list_edgeTypes_name[2]] * len(list_data_idx_BoIB)
 
     ### 获取银行间数据之边集。边集数据结构是元组列表。元素是元组。元组是边的两个顶点 id 值。
     edges_all = list(zip(df_IB[df_IB[sgv_vis['name_time']] == time]['row'], df_IB[df_IB[sgv_vis['name_time']] == time]['col']))  # 全连接数据之边集，以两点索引表示（银行编号从0开始计数的）
-    list_edges_AIBorZIB = [edges_all[i] for i in list_data_idx_AIBorZIB]  # 银行间借贷数据之边集
-    list_edges_ShockIBRunIlq = [edges_all[i] for i in list_data_idx_ShockIBRunIlq]  # 银行间之流动性短缺挤兑冲击数据之边集
-    list_edges_BoIB = [edges_all[i] for i in list_data_idx_BoIB]  # 银行间之还款流量数据之边集
+    if len(list_edgeTypes_name) <= 2:
+        list_edges_AIBorZIB = [edges_all[i] for i in list_data_idx_AIBorZIB]  # 银行间借贷数据之边集
+        list_edges_ShockIBRunIlq = [edges_all[i] for i in list_data_idx_ShockIBRunIlq]  # 银行间之流动性短缺挤兑冲击数据之边集
+    else:
+        list_edges_BoIB = [edges_all[i] for i in list_data_idx_BoIB]  # 银行间之还款流量数据之边集
 
     ### 获取银行间数据之内容
-    list_data_values_AIBorZIB = df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[0]] > 0)][list_edgeTypes_name[0]].values.tolist()  # 银行间借贷数据之值
-    list_data_values_ShockIBRunIlq = df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[1]] > 0)][list_edgeTypes_name[1]].values.tolist()  # 银行间之流动性短缺挤兑冲击数据之值
-    list_data_values_BoIB = df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[2]] > 0)][list_edgeTypes_name[2]].values.tolist()  # 银行间之还款流量数据之值
+    if len(list_edgeTypes_name) <= 2:
+        list_data_values_AIBorZIB = df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[0]] > 0)][list_edgeTypes_name[0]].values.tolist()  # 银行间借贷数据之值
+        list_data_values_ShockIBRunIlq = df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[1]] > 0)][list_edgeTypes_name[1]].values.tolist()  # 银行间之流动性短缺挤兑冲击数据之值
+    else:
+        list_data_values_BoIB = df_IB[(df_IB[sgv_vis['name_time']] == time) & (df_IB[list_edgeTypes_name[2]] > 0)][list_edgeTypes_name[2]].values.tolist()  # 银行间之还款流量数据之值
 
     ## 生成相关的数据之可视化信息
 
@@ -468,17 +469,31 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
 
     ### 生成各边集之信息
     list_edges_idx = []
-    for list_idx in [list_data_idx_AIBorZIB, list_data_idx_ShockIBRunIlq, list_data_idx_BoIB]:  # 拼接总的边集索引
-        list_edges_idx.extend(list_idx)
-    list_edges_type = []
-    for list_idx in [list_dataType_AIBorZIB, list_dataType_ShockIBRunIlq, list_dataType_BoIB]:  # 拼接总的边集类型
-        list_edges_type.extend(list_idx)
-    list_edges_value = []
-    for list_idx in [list_data_values_AIBorZIB, list_data_values_ShockIBRunIlq, list_data_values_BoIB]:  # 拼接总的边集值
-        list_edges_value.extend(list_idx)
-    list_edges = []
-    for list_idx in [list_edges_AIBorZIB, list_edges_ShockIBRunIlq, list_edges_BoIB]:  # 拼接总的边集列表
-        list_edges.extend(list_idx)
+    if len(list_edgeTypes_name) <= 2:
+        for list_idx in [list_data_idx_AIBorZIB, list_data_idx_ShockIBRunIlq]:  # 拼接总的边集索引
+            list_edges_idx.extend(list_idx)
+        list_edges_type = []
+        for list_idx in [list_dataType_AIBorZIB, list_dataType_ShockIBRunIlq]:  # 拼接总的边集类型
+            list_edges_type.extend(list_idx)
+        list_edges_value = []
+        for list_idx in [list_data_values_AIBorZIB, list_data_values_ShockIBRunIlq]:  # 拼接总的边集值
+            list_edges_value.extend(list_idx)
+        list_edges = []
+        for list_idx in [list_edges_AIBorZIB, list_edges_ShockIBRunIlq]:  # 拼接总的边集列表
+            list_edges.extend(list_idx)
+    else:
+        for list_idx in [list_data_idx_AIBorZIB, list_data_idx_ShockIBRunIlq, list_data_idx_BoIB]:  # 拼接总的边集索引
+            list_edges_idx.extend(list_idx)
+        list_edges_type = []
+        for list_idx in [list_dataType_AIBorZIB, list_dataType_ShockIBRunIlq, list_dataType_BoIB]:  # 拼接总的边集类型
+            list_edges_type.extend(list_idx)
+        list_edges_value = []
+        for list_idx in [list_data_values_AIBorZIB, list_data_values_ShockIBRunIlq, list_data_values_BoIB]:  # 拼接总的边集值
+            list_edges_value.extend(list_idx)
+        list_edges = []
+        for list_idx in [list_edges_AIBorZIB, list_edges_ShockIBRunIlq, list_edges_BoIB]:  # 拼接总的边集列表
+            list_edges.extend(list_idx)
+        pass  # if
 
     ### 初始化各边之标签、宽度、颜色
     list_edges_label = [''] * len(list_edges_idx)

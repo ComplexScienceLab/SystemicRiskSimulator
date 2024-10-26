@@ -13,8 +13,8 @@
 # %%
 from SystemicRiskSimulator.external_packages import sys, Path, np, pd, pickle, itertools, time, reduce, random, logging
 from SystemicRiskSimulator.tools.tools import Tools
-from dask.delayed import delayed
-import dask.dataframe as dd
+# from dask.delayed import delayed
+# import dask.dataframe as dd
 
 pass  # end import
 
@@ -24,7 +24,7 @@ pass  # end import
 def _generate_all_parameter_combinations(list_agents_params, dict_list_combinations_Shock_exIB_def_t_percentage_in_agentsItems, dict_list_combinations_Strategy_default_in_agentsItems):
     inner_id = 0
 
-    @delayed
+    # @delayed
     def _generate_parameter_combinations(inner_id, id_agents_para, year, density):
         combinations_for_each_agentsParam = list(
             itertools.product(
@@ -73,7 +73,7 @@ def _generate_all_parameter_combinations(list_agents_params, dict_list_combinati
     pass  # function
 
 
-@delayed
+# @delayed
 def save_parameter_combinations(df_parameters, filename):
     """
     异步保存参数组合
@@ -118,12 +118,10 @@ if __name__ == '__main__':
     ## 获取项目路径、模拟器工具路径
     config['folderpath_project'] = Tools.get_project_rootpath()
     config['folderpath_simulator'] = Tools.get_project_rootpath(config['foldername_simulator'], config['folderpath_realpath_simulator'])
-    # 如果 settings 之 config 有内容，那么就删除，否则就从其他文件夹中复制之后再导入
-    Tools.delete_and_recreate_folder(Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
-    Tools.copy_files_from_other_folders(Path(config['folderpath_project'], config['folderpath_config']), Path(config['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=config['is_auto_confirmation'])
     from SystemicRiskSimulator.core.define.define_simulatorGlobalVariables import sgv
-
+    sgv.update((Tools.import_modules_from_package(str(Path(config['folderpath_project'], config['folderpath_config'])), r'set_config_variables', config['folderpath_project']))['set_config_variables'])
     sgv.update(config)
+
 
     ## 生成实验相关的文件夹用于本批次运作
     (
@@ -141,12 +139,11 @@ if __name__ == '__main__':
         sgv['folderpath_parameters'],
         sgv['folderpath_agents'],
     ) = Tools.set_experiments_folders(
-        # folderpath_project=sgv['folderpath_project'],
         foldername_experiments_output_data=sgv['foldername_experiments_output_data'],
         foldername_experiments=sgv['foldername_experiments'],
         str_folderpath_root_experiments=sgv['folderpath_root_experiments'],
-        str_foldername_simulator=config['foldername_simulator'],
-        str_folderpath_realpath_simulator=config['folderpath_realpath_simulator'],
+        str_foldername_simulator=sgv['foldername_simulator'],
+        str_folderpath_realpath_simulator=sgv['folderpath_realpath_simulator'],
         str_foldername_outputData=sgv['foldername_outputData'],
         str_folderpath_realpath_outputData=sgv['folderpath_realpath_outputData'],
         str_folderpath_models=sgv['folderpath_models'],
@@ -155,8 +152,9 @@ if __name__ == '__main__':
         str_folderpath_agents=sgv['folderpath_agents'],
     )
 
+    Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除模拟器之 data 文件夹之原来的 config 文件夹
     Tools.copy_files_from_other_folders(sgv['folderpath_config'], sgv['folderpath_experiments_output_config'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份到输出文件夹
-
+    Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之原来的 agents 文件夹
     Tools.copy_files_from_other_folders(sgv['folderpath_agents'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/agents"), is_auto_confirmation=sgv['is_auto_confirmation'])
 
     # 导入 agents 之参数
@@ -359,7 +357,7 @@ if __name__ == '__main__':
             df_parameters['exp_id'] = np.arange(1, len(df_parameters) + 1)  # 在最后添加 exp_id 列
             df_parameters = df_parameters[['exp_id'] + [col for col in df_parameters.columns if col != 'exp_id']]  # exp_id 移到第一列
 
-            # %% #NOTE 使用 dask 实现的高性能版本的生成参数组合
+            # # %% #NOTE 使用 dask 实现的高性能版本的生成参数组合
             # list_agents_params = df_agents_BB[['id_agents_para', 'yearName', 'networkDensity']].values.tolist()
             #
             # df_parameters = _generate_all_parameter_combinations(  # #NOTE 以下位置填入你的组合
@@ -382,8 +380,8 @@ if __name__ == '__main__':
             print("正在保存参数组合为数据框形式的 pkl 格式文件……")
             save_pkl = save_parameter_combinations(df_parameters, "./parameters.pkl")
 
-            # 等待所有保存操作完成
-            dd.compute(save_pkl)
+            # # 等待所有保存操作完成
+            # dd.compute(save_pkl)
 
             if is_save_to_csv:
                 print("正在保存参数组合为 csv 格式文件……")

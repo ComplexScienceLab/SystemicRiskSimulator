@@ -68,7 +68,6 @@ set_config_variables = dict(
     foldername_experiments=r'test_sample_01',  # 实验文件夹名称
 
     # NOTE 设置预处理实验结果数据：
-    need_transformData=True,  # 是否需要转换数据。默认 True；
     is_enable_multiprocessing_for_transform_output_data=True,  # 是否启用多进程。默认 True；
     transform_data=dict(
         导入Pandas格式的实验结果数据转换为面板形式再导出=True,  # 默认 True。（NOTE：这个只需要运行一次即可。）
@@ -76,7 +75,6 @@ set_config_variables = dict(
     ),
 
     # NOTE 设置可视化：
-    need_visualization=True,  # 是否需要可视化。默认 False；
     is_enable_multiprocessing_for_visualization=True,  # 可视化期间，是否启用多进程。默认 True；
     foldername_plots=r'plots',  # 实验导出可视化的数据文件夹名称。
     foldername_plots_single_heatmaps=r'单个矩阵热力图',  # 实验导出可视化的单个矩阵热力图之文件夹之名称。
@@ -90,12 +88,12 @@ set_config_variables = dict(
     visulization_process=dict(
         导入面板形式的CSV数据预处理=False,  # 默认 False
         读取面板形式的PKL格式的文件=True,  # 默认 True
-        绘制矩阵热图=True,  # 默认 True
-        拼接矩阵热图=True,  # 默认 True
-        绘制资金流网络图=True,  # 默认 True
-        拼接资金流网络图=True,  # 默认 True
         绘制资产负债表图=True,  # 默认 True
         拼接资产负债表图=True,  # 默认 True
+        绘制矩阵热图=True,  # 默认 True
+        拼接矩阵热图=True,  # 默认 True
+        绘制资金流网络图=True,  # 默认 False
+        拼接资金流网络图=True,  # 默认 False
         银行状态表格可视化=True,  # 默认 True
     ),
 
@@ -111,70 +109,6 @@ set_config_variables = dict(
         one_bank_BalanceSheet_title_height=21,  # 单个银行资产负债表的标题高度
         one_bank_BalanceSheet_border=16,  # 单个银行资产负债表的边框宽度
 
-        # 设置 graph 数据类别
-        list_dataNames_for_graph_figs=[
-            'A_IB',
-            'Z_IB'
-        ],
-
-        # 根据设置 graph 数据类别，设置不同边集对应的属性
-        list_data_edgeTypes_for_graph_figs=[
-            [
-                dict(
-                    edge_type='A_IB',
-                    edge_color='#CCCCCC',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Shock_IB_def',
-                    edge_color='#FF0000',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Shock_IB_run_ilq',
-                    edge_color='#0000FF',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Shock_IB_run_br',
-                    edge_color='#ED00FF',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Bo_IB',
-                    edge_color='#E7C300',
-                    edge_width=5,
-                ),
-            ],
-            [
-                dict(
-                    edge_type='Z_IB',
-                    edge_color='#CCCCCC',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Shock_IB_def',
-                    edge_color='#FF0000',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Shock_IB_run_ilq',
-                    edge_color='#0000FF',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Shock_IB_run_br',
-                    edge_color='#ED00FF',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Bo_IB',
-                    edge_color='#E7C300',
-                    edge_width=5,
-                ),
-            ]
-        ],
-
         # 设置各银行状态之颜色
         dict_state_colors={
             'hel': '#F1D0CB',  # 浅红色
@@ -189,7 +123,7 @@ set_config_variables = dict(
             'deb': '#68ED8A',  # 绿色
         },
 
-        # 设置矩阵热力图不同数据对应的属性
+        # #NOTE 设置矩阵热力图不同数据对应的属性
         list_dataTypes_for_heatmaps=[
             dict(
                 data_name=('A_IB_all', 'Z_IB_all', 'A_IB'),
@@ -212,16 +146,6 @@ set_config_variables = dict(
                 relations='cre',
             ),
             dict(
-                data_name=('Shock_IB_run_ilq_s', 'Shock_IB_run_ilq_t', 'Shock_IB_run_ilq'),
-                colormap=('#FFFFFF', '#FF0000'),
-                relations='deb',
-            ),
-            dict(
-                data_name=('Shock_IB_run_br_s', 'Shock_IB_run_br_t', 'Shock_IB_run_br'),
-                colormap=('#FFFFFF', '#FF0000'),
-                relations='deb',
-            ),
-            dict(
                 data_name=('Z_IB_all', 'A_IB_all', 'Z_IB'),
                 colormap=('#FFFFFF', '#554EE6'),
                 relations='cre',
@@ -237,7 +161,7 @@ set_config_variables = dict(
             text_fill=['blue', '#D6D6D6', '#F5DF5D']
         ),
 
-        # 设置资产负债表图不同数据对应的属性
+        # #NOTE 设置资产负债表图不同数据对应的属性
         list_dataTypes_for_balanceSheets=dict(
             # 资产负债表账户数据（字典列表形式）
             accounts=[
@@ -487,84 +411,6 @@ set_config_variables = dict(
                     size=(0, 0),
                 ),
                 dict(
-                    data_type='shock_run_t',
-                    level='level 3',
-                    subject='Shock_IB_run_ilq_t',
-                    value=0.0,
-                    fill_color='#FF0000',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_t',
-                    level='level 3',
-                    subject='Shock_IB_run_br_t',
-                    value=0.0,
-                    fill_color='#FF0000',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_t',
-                    level='level 3',
-                    subject='Shock_D_run_t',
-                    value=0.0,
-                    fill_color='#FF0000',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_D',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_t',
-                    level='level 2',
-                    subject='Shock_IB_run_t',
-                    value=0.0,
-                    fill_color='#FF0000',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_t',
-                    level='level 2',
-                    subject='Shock_D_run_t',
-                    value=0.0,
-                    fill_color='#FF0000',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_exIB',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_t',
-                    level='level 1',
-                    subject='Shock_run_t',
-                    value=0.0,
-                    fill_color='#FF0000',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
                     data_type='shock_def_s',
                     level='level 3',
                     subject='Shock_D_def_s',
@@ -629,84 +475,6 @@ set_config_variables = dict(
                     position=(0, 0),
                     size=(0, 0),
                 ),
-                dict(
-                    data_type='shock_run_s',
-                    level='level 3',
-                    subject='Shock_P_run_s',
-                    value=0.0,
-                    fill_color='#00FF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_P',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_s',
-                    level='level 3',
-                    subject='Shock_IB_run_ilq_s',
-                    value=0.0,
-                    fill_color='#00FF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_s',
-                    level='level 3',
-                    subject='Shock_IB_run_br_s',
-                    value=0.0,
-                    fill_color='#00FF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_s',
-                    level='level 2',
-                    subject='Shock_P_run_s',
-                    value=0.0,
-                    fill_color='#00FF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_exIB',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_s',
-                    level='level 2',
-                    subject='Shock_IB_run_s',
-                    value=0.0,
-                    fill_color='#00FF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_run_s',
-                    level='level 1',
-                    subject='Shock_run_s',
-                    value=0.0,
-                    fill_color='#00FF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
             ],
 
             # 损失数据
@@ -739,47 +507,8 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='loss',
-                    level='level 3',
-                    subject='Loss_exIB_run_t',
-                    value=0.0,
-                    fill_color='#808080',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_P',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='loss',
-                    level='level 3',
-                    subject='Loss_IB_run_t',
-                    value=0.0,
-                    fill_color='#808080',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='loss',
                     level='level 2',
                     subject='Loss_def_t',
-                    value=0.0,
-                    fill_color='#808080',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_exIB',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='loss',
-                    level='level 2',
-                    subject='Loss_run_t',
                     value=0.0,
                     fill_color='#808080',
                     stroke_color='gray',
@@ -834,32 +563,6 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='default',
-                    level='level 3',
-                    subject='Default_D_run_s',
-                    value=0.0,
-                    fill_color='#A68E17',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_D',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='default',
-                    level='level 3',
-                    subject='Default_IB_run_s',
-                    value=0.0,
-                    fill_color='#A68E17',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='default',
                     level='level 2',
                     subject='Default_exIB_s',
                     value=0.0,
@@ -899,145 +602,81 @@ set_config_variables = dict(
                 ),
             ],
 
-            # 收回数据
-            recover=[
+        ),
+
+        # #NOTE 设置 graph 数据类别
+        list_dataNames_for_graph_figs=[
+            'A_IB',
+            'Z_IB'
+        ],
+
+        # 根据设置 graph 数据类别，设置不同边集对应的属性
+        list_data_edgeTypes_for_graph_figs=[
+            [
                 dict(
-                    data_type='recover',
-                    level='level 3',
-                    subject='Recover_P_run_s',
-                    value=0.0,
-                    fill_color='#0000FF',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_P',
-                    position=(0, 0),
-                    size=(0, 0),
+                    edge_type='A_IB',
+                    edge_color='#CCCCCC',
+                    edge_width=5,
                 ),
                 dict(
-                    data_type='recover',
-                    level='level 3',
-                    subject='Recover_IB_run_s',
-                    value=0.0,
-                    fill_color='#0000FF',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='recover',
-                    level='level 2',
-                    subject='Recover_P_run_s',
-                    value=0.0,
-                    fill_color='#0000FF',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_exIB',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='recover',
-                    level='level 2',
-                    subject='Recover_IB_run_s',
-                    value=0.0,
-                    fill_color='#0000FF',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='recover',
-                    level='level 1',
-                    subject='Recover_run_s',
-                    value=0.0,
-                    fill_color='#0000FF',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_all',
-                    position=(0, 0),
-                    size=(0, 0),
+                    edge_type='Shock_IB_def',
+                    edge_color='#FF0000',
+                    edge_width=5,
                 ),
             ],
-
-            # 偿还数据
-            repay=[
+            [
                 dict(
-                    data_type='repay',
-                    level='level 3',
-                    subject='Repay_D_run_t',
-                    value=0.0,
-                    fill_color='#FFFF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_D',
-                    position=(0, 0),
-                    size=(0, 0),
+                    edge_type='Z_IB',
+                    edge_color='#CCCCCC',
+                    edge_width=5,
                 ),
                 dict(
-                    data_type='repay',
-                    level='level 3',
-                    subject='Repay_IB_run_t',
-                    value=0.0,
-                    fill_color='#FFFF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='repay',
-                    level='level 2',
-                    subject='Repay_D_run_t',
-                    value=0.0,
-                    fill_color='#FFFF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_exIB',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='repay',
-                    level='level 2',
-                    subject='Repay_IB_run_t',
-                    value=0.0,
-                    fill_color='#FFFF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='repay',
-                    level='level 1',
-                    subject='Repay_run_t',
-                    value=0.0,
-                    fill_color='#FFFF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_all',
-                    position=(0, 0),
-                    size=(0, 0),
+                    edge_type='Shock_IB_def',
+                    edge_color='#FF0000',
+                    edge_width=5,
                 ),
             ]
+        ],
 
-        )
+
+
+        # #NOTE 设置银行状态表格的一些配置
+        # 状态相关的列名
+        columns_states=[
+            'on',
+            'off',
+            'hel',
+            'isv',
+            'br',
+        ],
+
+        # 需要提取的列名
+        columnsName_extract=[
+            'id',
+            'id_data',
+            'process_name',
+            'step',
+            'turn',
+            'phase',
+            'id_agent',
+            'abbr',
+            'fullName',
+            'on',
+            'off',
+            'hel',
+            'isv',
+            'br',
+        ],
+
+        # 需要调整列边距的列名
+        columnsName_adjust=[
+            'id',
+            'id_data',
+            'step',
+            'turn',
+            'phase',
+            'id_agent',
+        ],
 
     ),
     ###########################
