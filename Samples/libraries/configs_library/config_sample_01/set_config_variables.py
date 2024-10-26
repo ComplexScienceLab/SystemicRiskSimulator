@@ -8,9 +8,9 @@ import sys
 set_config_variables = dict(
 
     schedule_operation=dict(
-        实验组模拟程序=False,  # 默认 True
+        实验组模拟程序=True,  # 默认 True
         预处理实验结果程序=True,  # 默认 True
-        可视化结果程序=False,  # 默认 False
+        可视化结果程序=True,  # 默认 False
     ),
     init_data_method=r"import data",  # 初始化数据方式。初始化方式有如下："import data"、"set manually"、"randomly"、"only init"。默认"import data"；
     init_parameters_method=r"import data",  # 初始化参数方式。初始化方式有如下："import data"、"set manually"。默认"import data"；
@@ -88,12 +88,12 @@ set_config_variables = dict(
     visulization_process=dict(
         导入面板形式的CSV数据预处理=False,  # 默认 False
         读取面板形式的PKL格式的文件=True,  # 默认 True
-        绘制矩阵热图=True,  # 默认 True
-        拼接矩阵热图=True,  # 默认 True
-        绘制资金流网络图=True,  # 默认 True
-        拼接资金流网络图=True,  # 默认 True
         绘制资产负债表图=True,  # 默认 True
         拼接资产负债表图=True,  # 默认 True
+        绘制矩阵热图=True,  # 默认 True
+        拼接矩阵热图=True,  # 默认 True
+        绘制资金流网络图=True,  # 默认 False
+        拼接资金流网络图=True,  # 默认 False
         银行状态表格可视化=True,  # 默认 True
     ),
 
@@ -109,40 +109,6 @@ set_config_variables = dict(
         one_bank_BalanceSheet_title_height=21,  # 单个银行资产负债表的标题高度
         one_bank_BalanceSheet_border=16,  # 单个银行资产负债表的边框宽度
 
-        # 设置 graph 数据类别
-        list_dataNames_for_graph_figs=[
-            'A_IB',
-            'Z_IB'
-        ],
-
-        # 根据设置 graph 数据类别，设置不同边集对应的属性
-        list_data_edgeTypes_for_graph_figs=[
-            [
-                dict(
-                    edge_type='A_IB',
-                    edge_color='#CCCCCC',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Shock_IB_def',
-                    edge_color='#FF0000',
-                    edge_width=5,
-                ),
-            ],
-            [
-                dict(
-                    edge_type='Z_IB',
-                    edge_color='#CCCCCC',
-                    edge_width=5,
-                ),
-                dict(
-                    edge_type='Shock_IB_def',
-                    edge_color='#FF0000',
-                    edge_width=5,
-                ),
-            ]
-        ],
-
         # 设置各银行状态之颜色
         dict_state_colors={
             'hel': '#F1D0CB',  # 浅红色
@@ -157,7 +123,7 @@ set_config_variables = dict(
             'deb': '#68ED8A',  # 绿色
         },
 
-        # 设置矩阵热力图不同数据对应的属性
+        # #NOTE 设置矩阵热力图不同数据对应的属性
         list_dataTypes_for_heatmaps=[
             dict(
                 data_name=('A_IB_all', 'Z_IB_all', 'A_IB'),
@@ -195,7 +161,7 @@ set_config_variables = dict(
             text_fill=['blue', '#D6D6D6', '#F5DF5D']
         ),
 
-        # 设置资产负债表图不同数据对应的属性
+        # #NOTE 设置资产负债表图不同数据对应的属性
         list_dataTypes_for_balanceSheets=dict(
             # 资产负债表账户数据（字典列表形式）
             accounts=[
@@ -636,7 +602,81 @@ set_config_variables = dict(
                 ),
             ],
 
-        )
+        ),
+
+        # #NOTE 设置 graph 数据类别
+        list_dataNames_for_graph_figs=[
+            'A_IB',
+            'Z_IB'
+        ],
+
+        # 根据设置 graph 数据类别，设置不同边集对应的属性
+        list_data_edgeTypes_for_graph_figs=[
+            [
+                dict(
+                    edge_type='A_IB',
+                    edge_color='#CCCCCC',
+                    edge_width=5,
+                ),
+                dict(
+                    edge_type='Shock_IB_def',
+                    edge_color='#FF0000',
+                    edge_width=5,
+                ),
+            ],
+            [
+                dict(
+                    edge_type='Z_IB',
+                    edge_color='#CCCCCC',
+                    edge_width=5,
+                ),
+                dict(
+                    edge_type='Shock_IB_def',
+                    edge_color='#FF0000',
+                    edge_width=5,
+                ),
+            ]
+        ],
+
+
+
+        # #NOTE 设置银行状态表格的一些配置
+        # 状态相关的列名
+        columns_states=[
+            'on',
+            'off',
+            'hel',
+            'isv',
+            'br',
+        ],
+
+        # 需要提取的列名
+        columnsName_extract=[
+            'id',
+            'id_data',
+            'process_name',
+            'step',
+            'turn',
+            'phase',
+            'id_agent',
+            'abbr',
+            'fullName',
+            'on',
+            'off',
+            'hel',
+            'isv',
+            'br',
+        ],
+
+        # 需要调整列边距的列名
+        columnsName_adjust=[
+            'id',
+            'id_data',
+            'step',
+            'turn',
+            'phase',
+            'id_agent',
+        ],
 
     ),
     ###########################
