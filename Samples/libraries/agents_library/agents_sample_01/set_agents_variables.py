@@ -42,15 +42,15 @@ for year in list_年份:
             Shock_s=CONST(num_bank).ZEROS1.copy(),  # 总冲击源头 Shock_s $Shock_s = Shock_exIB_s+Shock_IB_s$
             Shock_def_t=CONST(num_bank).ZEROS1.copy(),  # 总违约损失冲击目标 Shock_def_t $Shock_def_t = Shock_exIB_def_t+Shock_IB_def_t$
             Shock_def_s=CONST(num_bank).ZEROS1.copy(),  # 总违约损失冲击源头 Shock_def_s $Shock_def_s = Shock_exIB_def_s+Shock_IB_def_s$
-            Shock_exIB_t=CONST(num_bank).ZEROS1.copy(),  # 非银行间借贷冲击目标 Shock_exIB_t $Shock_exIB_t = Shock_P_def_t+Shock_D_run_t$
-            Shock_exIB_s=CONST(num_bank).ZEROS1.copy(),  # 非银行间借贷冲击源头 Shock_exIB_s $Shock_exIB_s = Shock_P_run_s+Shock_D_def_s$
+            Shock_exIB_t=CONST(num_bank).ZEROS1.copy(),  # 非银行间借贷冲击目标 Shock_exIB_t $Shock_exIB_t = Shock_P_def_t$
+            Shock_exIB_s=CONST(num_bank).ZEROS1.copy(),  # 非银行间借贷冲击源头 Shock_exIB_s $Shock_exIB_s = Shock_D_def_s$
             Shock_P_def_t=CONST(num_bank).ZEROS1.copy(),  # 银行之厂商贷款违约损失冲击目标 Shock_P_def_t
             Shock_D_def_s=CONST(num_bank).ZEROS1.copy(),  # 银行存款违约损失冲击源头 Shock_D_def_s
             Shock_B=CONST(num_bank).ZEROS1.copy(),  # 银行内资产负债冲击 Shock_B $Shock_B=Shock_B_A+Shock_B_Z$
             Shock_B_A=CONST(num_bank).ZEROS1.copy(),  # 银行内资产负债之银行间资产端冲击 Shock_B_A
             Shock_B_Z=CONST(num_bank).ZEROS1.copy(),  # 银行内资产负债之银行间负债端冲击 Shock_B_Z
-            Shock_IB_s=CONST(num_bank).ZEROS1.copy(),  # 银行间冲击源头 Shock_IB_s $Shock_IB_s=Shock_IB_def_s+Shock_IB_run_s$
-            Shock_IB_t=CONST(num_bank).ZEROS1.copy(),  # 银行间冲击目标 Shock_IB_t $Shock_IB_t=Shock_IB_def_t+Shock_IB_run_t$
+            Shock_IB_s=CONST(num_bank).ZEROS1.copy(),  # 银行间冲击源头 Shock_IB_s $Shock_IB_s=Shock_IB_def_s$
+            Shock_IB_t=CONST(num_bank).ZEROS1.copy(),  # 银行间冲击目标 Shock_IB_t $Shock_IB_t=Shock_IB_def_t$
             Shock_IB_def_s=CONST(num_bank).ZEROS1.copy(),  # 银行间违约损失冲击源头 Shock_IB_def_s
             Shock_IB_def_t=CONST(num_bank).ZEROS1.copy(),  # 银行间违约损失冲击目标 Shock_IB_def_t
             Loss_t=CONST(num_bank).ZEROS1.copy(),  # = deepcopy(ZEROS1)  # 银行总损失目标 Loss_t
@@ -68,7 +68,6 @@ for year in list_年份:
             off=CONST(num_bank).FALSE1.copy(),  # 示性向量之于银行是否已退出不存在 is_off
             hel=CONST(num_bank).TRUE1.copy(),  # 示性向量之于银行是否健康 is_healthy
             isv=CONST(num_bank).FALSE1.copy(),  # 示性向量之于银行是否资不抵债 is_insolvent
-            ilq=CONST(num_bank).FALSE1.copy(),  # 示性向量之于银行是否流动性短缺 is_illiquid
             br=CONST(num_bank).FALSE1.copy(),  # 示性向量之于银行是否破产 is_bankrupt
         )
 
@@ -79,9 +78,8 @@ for year in list_年份:
             id_agent=(CONST(num_bank, IdsType).RANGE2 - 1).copy(),  # agent 之间之关联编号 id
             A_IB=np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48], [0, 0, 0, 2717.39, 0]], dtype=MoneyType),  # 银行间资产邻接矩阵 A_IB
             Z_IB=np.array([[0, 1728.55, 0, 134.46, 322.23], [109.35, 0, 289.02, 0, 0], [730.99, 0, 0, 0, 0], [119.26, 115.69, 964.32, 0, 158.48], [0, 0, 0, 2717.39, 0]], dtype=MoneyType).T,  # 银行间负债邻接矩阵 Z_IB
-            Shock_IB=CONST(num_bank).ZEROS2.copy(),  # 银行间冲击 Shock_IB: $Shock_IB=Shock_IB_def+Shock_IB_run$
+            Shock_IB=CONST(num_bank).ZEROS2.copy(),  # 银行间冲击 Shock_IB: $Shock_IB=Shock_IB_def$
             Shock_IB_def=CONST(num_bank).ZEROS2.copy(),  # 银行间违约损失冲击 Shock_IB_def
-            Shock_IB_run=CONST(num_bank).ZEROS2.copy(),  # 银行间挤兑流动冲击 Shock_IB_run: $Shock_IB_run=Shock_IB_run_ilq+Shock_IB_run_br$
             Loss_IB=CONST(num_bank).ZEROS2.copy(),  # 银行间市场冲击损失 Loss_IB
             Loss_IB_def=CONST(num_bank).ZEROS2.copy(),  # 银行间资产负债违约冲击损失 Loss_IB_def
             Default_IB=CONST(num_bank).ZEROS2.copy(),  # 银行间违约量 Default_IB
@@ -90,7 +88,6 @@ for year in list_年份:
             hel=CONST(num_bank).TRUE2.copy(),  # 信息邻接矩阵之于银行间健康的 is_healthy
             isv=CONST(num_bank).FALSE2.copy(),  # 信息邻接矩阵之于银行间资不抵债的 is_insolvent
             br=CONST(num_bank).FALSE2.copy(),  # 信息邻接矩阵之于银行间破产的 is_bankrupt
-            # theta_IB_def=CONST(num_bank).ZEROS2.copy(),  # 银行间资产负债违约分配比例 theta_IB_def
 
             ###########################
         )
