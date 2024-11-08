@@ -196,8 +196,9 @@ class Operator:
         sgv['num_bank'] = len(A.BB['id_agent'])
 
         content_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
+        # content_Agents = model['model_agents'](content_Finance)  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
         if 'model_agents' in model.keys():  # 如果该模型有设计 Content_Agents
-            content_Agents = model['model_agents'](np.array(para['Strategy_default']))  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
+            content_Agents = model['model_agents'](np.array(para['Strategy_default']))  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
             content_Model = model['model_main'](content_Finance, content_Agents)  # 初始化 Content_Model 之实例
         else:
             content_Model = model['model_main'](content_Finance)  # 初始化 Content_Model 之实例

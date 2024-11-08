@@ -1,5 +1,5 @@
 """
-结构体：定义各类Agents，基于模式3-1
+结构体：定义各类Agents，基于模式3-1  #HACK #TODO 这个已经被提取到各个模型文件中了，这里不再需要。仅作为参考。
 """
 
 from SystemicRiskSimulator.external_packages import np, deepcopy
