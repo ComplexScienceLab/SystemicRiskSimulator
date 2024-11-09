@@ -61,32 +61,23 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     data_vector2 = df_BB[df_BB[sgv_vis['name_time']] == time][dataName_vector2].values  # 向量2之数据
     data_matrix = df_IB.loc[df_IB[sgv_vis['name_time']] == time, dataName_matrix].values  # 矩阵之数据
 
-    # #TODO 提取银行状态数据到配置项
-    banks_hel = df_BB[df_BB[sgv_vis['name_time']] == time]['hel'].values  # 银行状态数据
-    banks_isv = df_BB[df_BB[sgv_vis['name_time']] == time]['isv'].values
-    banks_ilq = df_BB[df_BB[sgv_vis['name_time']] == time]['ilq'].values
-    # banks_nrr = df_BB[df_BB[sgv_vis['name_time']] == time]['-rr'].values  #TODO 后续添加新状态
-    banks_br = df_BB[df_BB[sgv_vis['name_time']] == time]['br'].values
-    banks_off = df_BB[df_BB[sgv_vis['name_time']] == time]['off'].values
-
     ### 银行状态数据
+    banks_state = {}
+    for banksState_dataType in sgv_vis['list_dataTypes_for_banksState']:
+        banks_state[banksState_dataType] = df_BB[df_BB[sgv_vis['name_time']] == time][banksState_dataType].values
+        pass  # for
     list_data_banksState = []
     for i in range(len(data_banksId)):
         list_data_banksState.append(set())
-        if banks_hel[i]:
-            list_data_banksState[i].add('hel')
-        elif banks_off[i]:
-            list_data_banksState[i].add('off')
-        elif banks_isv[i]:
-            list_data_banksState[i].add('isv')
-        elif banks_ilq[i]:
-            list_data_banksState[i].add('ilq')
-        elif banks_br[i]:
-            list_data_banksState[i].add('br')
-        else:
-            print('位于节点' + str(i))
-            raise Exception("判断 i 之状态错误".format(str(i)))
+        for k, v in banks_state.items():
+            if v[i]:
+                list_data_banksState[i].add(k)
+                pass  # if
+            if k not in sgv_vis['list_dataTypes_for_banksState']:
+                raise Exception(f"位于节点 {i} 判断 {k} 之状态错误！")
+                pass  # if
             pass  # for
+        pass  # for
 
     ## 生成相关的数据之可视化信息
 
@@ -376,29 +367,25 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     list_data_Shock_run_ilq_s = df_BB[df_BB[sgv_vis['name_time']] == time][list_edgeTypes_name[1] + '_s'].tolist()  # Shock_run_ilq_s
     # list_vertices_data = [list_data_vertices.extend(list_bank) for list_bank in [list_data_A_Q, list_data_Shock_run_ilq_t, data['Shock_run_ilq_s']]]  # 拼接总的节点索引
 
-    banks_hel = df_BB[df_BB[sgv_vis['name_time']] == time]['hel'].tolist()  # 银行状态数据
-    banks_isv = df_BB[df_BB[sgv_vis['name_time']] == time]['isv'].tolist()
-    banks_ilq = df_BB[df_BB[sgv_vis['name_time']] == time]['ilq'].tolist()
-    # banks_nrr = df_BB[df_BB[sgv_vis['name_time']] == time]['-rr'].tolist()  #TODO 后续添加新状态
-    banks_br = df_BB[df_BB[sgv_vis['name_time']] == time]['br'].tolist()
-    banks_off = df_BB[df_BB[sgv_vis['name_time']] == time]['off'].tolist()
+    data_banksId = df_BB[df_BB[sgv_vis['name_time']] == time]['id_agent'].values  # 银行id
 
-    list_data_banksState = []  # 银行状态数据
+    ### 银行状态数据
+    banks_state = {}
+    for banksState_dataType in sgv_vis['list_dataTypes_for_banksState']:
+        banks_state[banksState_dataType] = df_BB[df_BB[sgv_vis['name_time']] == time][banksState_dataType].values
+        pass  # for
+    list_data_banksState = []
     for i in range(len(list_data_banksId)):
         list_data_banksState.append(set())
-        if banks_hel[i]:
-            list_data_banksState[i].add('hel')
-        elif banks_off[i]:
-            list_data_banksState[i].add('off')
-        elif banks_isv[i]:
-            list_data_banksState[i].add('isv')
-        elif banks_ilq[i]:
-            list_data_banksState[i].add('ilq')
-        elif banks_br[i]:
-            list_data_banksState[i].add('br')
-        else:
-            raise Exception(f"位于节点 {i} 判断 {i} 之状态错误！")
+        for k, v in banks_state.items():
+            if v[i]:
+                list_data_banksState[i].add(k)
+                pass  # if
+            if k not in sgv_vis['list_dataTypes_for_banksState']:
+                raise Exception(f"位于节点 {i} 判断 {k} 之状态错误！")
+                pass  # if
             pass  # for
+        pass  # for
 
     ### 获取银行间数据之索引
     if len(list_edgeTypes_name) <= 2:
