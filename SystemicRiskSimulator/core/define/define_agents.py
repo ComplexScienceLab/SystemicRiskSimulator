@@ -114,8 +114,8 @@ class BankCommercial(BaseAgents):  # TODO有必要改成动态创建类属性
     Recover_run_s = MoneyType  # = deepcopy(ZEROS1)  # 银行挤兑总的收回量 Recover_run_s
     Recover_IB_run_s = MoneyType  # = deepcopy(ZEROS1)  # 银行间借款收回量 Recover_IB_run_s
     Recover_P_run_s = MoneyType  # = deepcopy(ZEROS1)  # 非银行间贷款挤兑收回量 Recover_P_run_s
-    on = np.nan  # = deepcopy(TRUE1)  # 示性向量之于银行是否存在 is_on
-    off = np.nan  # = deepcopy(FALSE1)  # 示性向量之于银行是否已退出不存在 is_off
+    exist = np.nan  # = deepcopy(TRUE1)  # 示性向量之于银行是否存在 is_exist
+    exit = np.nan  # = deepcopy(FALSE1)  # 示性向量之于银行是否已退出不存在 is_exit
     hel = np.nan  # = deepcopy(TRUE1)  # 示性向量之于银行是否健康 is_healthy
     isv = np.nan  # = deepcopy(FALSE1)  # 示性向量之于银行是否资不抵债 is_insolvent
     ilq = np.nan  # = deepcopy(FALSE1)  # 示性向量之于银行是否流动性短缺 is_illiquid
@@ -171,8 +171,8 @@ class BankInterbank(BaseInterAgents):
     Repay_IB_run = MoneyType  # 银行间借款偿还量 Repay_IB
     Recover_IB_run = MoneyType  # 银行间借款收回量 Recover_IB
     # is_exposure = np.nan  # 信息邻接矩阵之于是否有银行间敞口 is_exposure
-    on = np.nan  # 信息邻接矩阵之于银行间存在的 is_on
-    off = np.nan  # 信息邻接矩阵之于银行间已退出不存在的 is_off
+    exist = np.nan  # 信息邻接矩阵之于银行间存在的 is_exist
+    exit = np.nan  # 信息邻接矩阵之于银行间已退出不存在的 is_exit
     hel = np.nan  # 信息邻接矩阵之于银行间健康的 is_healthy
     isv = np.nan  # 信息邻接矩阵之于银行间资不抵债的 is_insolvent
     ilq = np.nan  # 信息邻接矩阵之于银行间流动性短缺的 is_illiquid
