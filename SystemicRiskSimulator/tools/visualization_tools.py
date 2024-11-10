@@ -1039,7 +1039,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
 def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction: tuple, order_of_paging_in_horizontal_and_vertical_direction: tuple, order_of_match_pattern_in_horizontal_and_vertical_direction: tuple, list_fig_files: list, i_exp: int):
     """
-    将多个图像拼接、分页到一个 PDF 文件中。 
+    将多个图像拼接、分页到一个 PDF 文件中。   #BUG 如果单页图像刚好填充一整页面，可能会出现乱序问题。
 
     Args:
         order_of_variable_mean_in_horizontal_and_vertical_direction (tuple): 横向与纵向的变量含义之顺序
