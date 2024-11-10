@@ -703,140 +703,297 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     # #TODO 可视化资产负债表图标题移到下面位置
 
-    ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
-    for account_data in dict_vis_data['accounts'].itertuples():
-        dict_vis_data['accounts'].loc[account_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
-        value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
-        is_value_changed = False if np.isclose(dict_vis_data['accounts'].loc[account_data.Index, 'value'], value_last, atol=1e0) else True
-        if is_value_changed:
-            dict_vis_data['accounts'].loc[account_data.Index, 'stroke_color'] = '#000000'
-            dict_vis_data['accounts'].loc[account_data.Index, 'stroke_width'] = 2
-            pass  # if
-        pass  # for
+    # 判断资产负债表单侧有几列
+    # 如果找不到 level='level 3'，则是单侧 2 列的资产负债表
 
-    ## 计算资产负债表各资产负债科目之各项数据对应的矩形之绘制位置、绘制尺寸
-    boxs_width = [sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24]  # 设置资产负债表之账户之各侧边柱子之宽度
-    nibs_x = [reduce(lambda x, y: x + y, boxs_width[0:i + 1]) - boxs_width[i] for i in range(len(boxs_width))]  # 设置笔尖之x方向的位置之资产负债表之账户之各侧边柱子之起点
-    o = [2, 1, 0, 3, 4, 5]  # 设置资产负债表之账户之各侧边柱子之绘制次序
-    count_subject_values_is_zero = 0
-    items_subject_values_is_zero = []
-    nibs_y = [0, 0, 0, 0, 0, 0]  # 列表之笔尖起始坐标之开始位置之y坐标
-    p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
-    grouped_by_dataType = dict_vis_data['accounts'].groupby('data_type')
-    for data_type, dataType_values in grouped_by_dataType:
-        if data_type == 'equity':
-            continue
-        grouped_by_level = dataType_values.groupby('level')
-        for level, level_values in grouped_by_level:
-            nib = (
-                sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
-                sgv_vis['one_bank_BalanceSheet_border'] + sgv_vis['one_bank_BalanceSheet_title_height']
-            )  # 笔尖起始坐标之新柱子之开始位置
-            count_balance_is_zero = 0
-            items_balance_is_zero = []
-            grouped_by_subject = level_values.groupby('subject')
-            for subject, subject_values in grouped_by_subject:
-                account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == data_type) & (dict_vis_data['accounts']['level'] == level) & (dict_vis_data['accounts']['subject'] == subject), 'subject'].idxmax()
-                dict_vis_data['accounts'].at[account_idx, 'position'] = nib
-                # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
-                if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
-                    height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
-                else:
-                    height_size = int(1e6)
-                    pass  # if
-                dict_vis_data['accounts'].at[account_idx, 'size'] = (
-                    int(boxs_width[o[p]]),
-                    height_size
-                )
-
-                # if subject_values['value'].iloc[0]  != 0:
-                if subject_values['value'].iloc[0] != 0 or subject_values['value'].iloc[0] == 0:
-                    nib = (
-                        sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
-                        int(nib[1] + height_size)
-                    )  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
-                else:  # 如果柱节高度为0... #HACK #TODO 这个以后再处理
-                    count_subject_values_is_zero += 1
-                    items_subject_values_is_zero.append((subject, subject_values['value'].iloc[0], nib[1]))
-                    pass  # if
-                # for (subject, subject_values['value'].iloc[0], nib_y) in items_subject_values_is_zero:  # HACK 如果有必要的话尝试标记那些柱节高度为0的值
-                #     pass  # for
-                pass  # for
-            nibs_y[o[p]] = nib[1]
-            p += 1
+    for k1, v1 in dict_vis_data.items():
+        for v2 in v1.itertuples():
+            if v2.level == 'level 3':
+                num_column_one_side = 3
+                break
+            else:
+                num_column_one_side = 2
+                pass  # if
             pass  # for
         pass  # for
 
-    ## 计算资产负债表之 equity 科目之对应的矩形之绘制位置、绘制尺寸
-    o = [3, 4, 5] if dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == 'equity') & (dict_vis_data['accounts']['level'] == 'level 1') & (dict_vis_data['accounts']['subject'] == 'E_all'), 'value'].iloc[0] >= 0 else [2, 1, 0]  # 设置资产负债表之账户之各侧边柱子之绘制次序
-    p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
-    grouped_by_dataType = dict_vis_data['accounts'].groupby('data_type')
-    for data_type, dataType_values in grouped_by_dataType:
-        if data_type != 'equity':
-            continue
-        grouped_by_level = dataType_values.groupby('level')
-        for level, level_values in grouped_by_level:
-            nib = (
-                sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
-                int(nibs_y[o[p]])
-            )  # 笔尖起始坐标之新柱子之开始位置
-            count_balance_is_zero = 0
-            items_balance_is_zero = []
-            s = 1  # 资产负债表值账户之各侧边柱子之各柱节之绘制索引
-            grouped_by_subject = level_values.groupby('subject')
-            for subject, subject_values in grouped_by_subject:
-                account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == data_type) & (dict_vis_data['accounts']['level'] == level) & (dict_vis_data['accounts']['subject'] == subject), 'subject'].idxmax()
-                # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
-                if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
-                    height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
-                else:
-                    height_size = int(1e6)
-                    pass  # if
-                dict_vis_data['accounts'].at[account_idx, 'size'] = (
-                    int(boxs_width[o[p]]),
-                    height_size
-                )
-                dict_vis_data['accounts'].at[account_idx, 'position'] = nib
-                dict_vis_data['accounts'].at[account_idx, 'fill_color'] = subject_values['fill_color'].iloc[0] if subject_values['value'].iloc[0] >= 0 else '#FFFFFF'  # 如果 equity 是负数则更改其柱子之填充颜色
-
-                # if subject_values['value'].iloc[0]  != 0:
-                if subject_values['value'].iloc[0] != 0 or subject_values['value'].iloc[0] == 0:
-                    pass  # if
-                pass  # for
-            p += 1
-            pass  # for
-        pass  # for
-
-    ## 计算除了资产负债表各科目之外的其他变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
-    df_data_to_vis_other_variables_for_one_bank_accounts = pd.DataFrame(sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts'])
-    for index, row in df_data_to_vis_other_variables_for_one_bank_accounts.iterrows():
-        for a_data in dict_vis_data[row['df_dataName']].itertuples():
-            a_data_value = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
-            dict_vis_data[row['df_dataName']].loc[a_data.Index, 'value'] = a_data_value
-            value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
-            is_value_changed = False if np.isclose(a_data_value, value_last, atol=1e0) else True
+    # 如果是单侧 3 列的资产负债表
+    if num_column_one_side == 3:
+        ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
+        for account_data in dict_vis_data['accounts'].itertuples():
+            dict_vis_data['accounts'].loc[account_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
+            value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
+            is_value_changed = False if np.isclose(dict_vis_data['accounts'].loc[account_data.Index, 'value'], value_last, atol=1e0) else True
             if is_value_changed:
-                dict_vis_data[row['df_dataName']].loc[a_data.Index, 'stroke_color'] = '#000000'
-                dict_vis_data[row['df_dataName']].loc[a_data.Index, 'stroke_width'] = 2
+                dict_vis_data['accounts'].loc[account_data.Index, 'stroke_color'] = '#000000'
+                dict_vis_data['accounts'].loc[account_data.Index, 'stroke_width'] = 2
                 pass  # if
-
-            account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == a_data.side) & (dict_vis_data['accounts']['level'] == a_data.level) & (dict_vis_data['accounts']['subject'] == a_data.align), 'subject'].idxmax()
-            account_position = dict_vis_data['accounts'].loc[account_idx, 'position']
-            account_size = dict_vis_data['accounts'].loc[account_idx, 'size']
-            dict_vis_data[row['df_dataName']].at[a_data.Index, 'size'] = (
-                int(account_size[0] * (3 / 13)),
-                int(sgv_vis['one_bank_BalanceSheet_height'] * ((a_data_value if not np.isnan(a_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
-            )
-            if a_data.data_type[-2:] == '_t':
-                row['offsetScale_by_dataType'] = 1 / 13
-            elif a_data.data_type[-2:] == '_s':
-                row['offsetScale_by_dataType'] = 9 / 13
-                pass  # if
-            dict_vis_data[row['df_dataName']].at[a_data.Index, 'position'] = (
-                account_position[0] + int(account_size[0] * row['offsetScale_by_dataType']),
-                account_position[1] + int(account_size[1] - dict_vis_data[row['df_dataName']].loc[a_data.Index, 'size'][1])
-            )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
             pass  # for
+
+        ## 计算资产负债表各资产负债科目之各项数据对应的矩形之绘制位置、绘制尺寸
+        boxs_width = [sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24]  # 设置资产负债表之账户之各侧边柱子之宽度
+        nibs_x = [reduce(lambda x, y: x + y, boxs_width[0:i + 1]) - boxs_width[i] for i in range(len(boxs_width))]  # 设置笔尖之x方向的位置之资产负债表之账户之各侧边柱子之起点
+        o = [2, 1, 0, 3, 4, 5]  # 设置资产负债表之账户之各侧边柱子之绘制次序
+        count_subject_values_is_zero = 0
+        items_subject_values_is_zero = []
+        nibs_y = [0, 0, 0, 0, 0, 0]  # 列表之笔尖起始坐标之开始位置之y坐标
+        p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
+        grouped_by_dataType = dict_vis_data['accounts'].groupby('data_type')
+        for data_type, dataType_values in grouped_by_dataType:
+            if data_type == 'equity':
+                continue
+            grouped_by_level = dataType_values.groupby('level')
+            for level, level_values in grouped_by_level:
+                nib = (
+                    sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
+                    sgv_vis['one_bank_BalanceSheet_border'] + sgv_vis['one_bank_BalanceSheet_title_height']
+                )  # 笔尖起始坐标之新柱子之开始位置
+                count_balance_is_zero = 0
+                items_balance_is_zero = []
+                grouped_by_subject = level_values.groupby('subject')
+                for subject, subject_values in grouped_by_subject:
+                    account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == data_type) & (dict_vis_data['accounts']['level'] == level) & (dict_vis_data['accounts']['subject'] == subject), 'subject'].idxmax()
+                    dict_vis_data['accounts'].at[account_idx, 'position'] = nib
+                    # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
+                    if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
+                        height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
+                    else:
+                        height_size = int(1e6)  # #BUG 最好抛出异常
+                        pass  # if
+                    dict_vis_data['accounts'].at[account_idx, 'size'] = (
+                        int(boxs_width[o[p]]),
+                        height_size
+                    )
+
+                    # if subject_values['value'].iloc[0]  != 0:
+                    if subject_values['value'].iloc[0] != 0 or subject_values['value'].iloc[0] == 0:
+                        nib = (
+                            sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
+                            int(nib[1] + height_size)
+                        )  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
+                    else:  # 如果柱节高度为0... #HACK #TODO 这个以后再处理
+                        count_subject_values_is_zero += 1
+                        items_subject_values_is_zero.append((subject, subject_values['value'].iloc[0], nib[1]))
+                        pass  # if
+                    # for (subject, subject_values['value'].iloc[0], nib_y) in items_subject_values_is_zero:  # HACK 如果有必要的话尝试标记那些柱节高度为0的值
+                    #     pass  # for
+                    pass  # for
+                nibs_y[o[p]] = nib[1]
+                p += 1
+                pass  # for
+            pass  # for
+
+        ## 计算资产负债表之 equity 科目之对应的矩形之绘制位置、绘制尺寸
+        o = [3, 4, 5] if dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == 'equity') & (dict_vis_data['accounts']['level'] == 'level 1') & (dict_vis_data['accounts']['subject'] == 'E_all'), 'value'].iloc[0] >= 0 else [2, 1, 0]  # 设置资产负债表之账户之各侧边柱子之绘制次序
+        p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
+        grouped_by_dataType = dict_vis_data['accounts'].groupby('data_type')
+        for data_type, dataType_values in grouped_by_dataType:
+            if data_type != 'equity':
+                continue
+            grouped_by_level = dataType_values.groupby('level')
+            for level, level_values in grouped_by_level:
+                nib = (
+                    sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
+                    int(nibs_y[o[p]])
+                )  # 笔尖起始坐标之新柱子之开始位置
+                count_balance_is_zero = 0
+                items_balance_is_zero = []
+                s = 1  # 资产负债表值账户之各侧边柱子之各柱节之绘制索引
+                grouped_by_subject = level_values.groupby('subject')
+                for subject, subject_values in grouped_by_subject:
+                    account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == data_type) & (dict_vis_data['accounts']['level'] == level) & (dict_vis_data['accounts']['subject'] == subject), 'subject'].idxmax()
+                    # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
+                    if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
+                        height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
+                    else:
+                        height_size = int(1e6)
+                        pass  # if
+                    dict_vis_data['accounts'].at[account_idx, 'size'] = (
+                        int(boxs_width[o[p]]),
+                        height_size
+                    )
+                    dict_vis_data['accounts'].at[account_idx, 'position'] = nib
+                    dict_vis_data['accounts'].at[account_idx, 'fill_color'] = subject_values['fill_color'].iloc[0] if subject_values['value'].iloc[0] >= 0 else '#FFFFFF'  # 如果 equity 是负数则更改其柱子之填充颜色
+
+                    # if subject_values['value'].iloc[0]  != 0:
+                    if subject_values['value'].iloc[0] != 0 or subject_values['value'].iloc[0] == 0:
+                        pass  # if
+                    pass  # for
+                p += 1
+                pass  # for
+            pass  # for
+
+        ## 计算除了资产负债表各科目之外的其他变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
+        df_data_to_vis_other_variables_for_one_bank_accounts = pd.DataFrame(sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts'])
+        for index, row in df_data_to_vis_other_variables_for_one_bank_accounts.iterrows():
+            for a_data in dict_vis_data[row['df_dataName']].itertuples():
+                a_data_value = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
+                dict_vis_data[row['df_dataName']].loc[a_data.Index, 'value'] = a_data_value
+                value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
+                is_value_changed = False if np.isclose(a_data_value, value_last, atol=1e0) else True
+                if is_value_changed:
+                    dict_vis_data[row['df_dataName']].loc[a_data.Index, 'stroke_color'] = '#000000'
+                    dict_vis_data[row['df_dataName']].loc[a_data.Index, 'stroke_width'] = 2
+                    pass  # if
+
+                account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == a_data.side) & (dict_vis_data['accounts']['level'] == a_data.level) & (dict_vis_data['accounts']['subject'] == a_data.align), 'subject'].idxmax()
+                account_position = dict_vis_data['accounts'].loc[account_idx, 'position']
+                account_size = dict_vis_data['accounts'].loc[account_idx, 'size']
+                dict_vis_data[row['df_dataName']].at[a_data.Index, 'size'] = (
+                    int(account_size[0] * (3 / 13)),
+                    int(sgv_vis['one_bank_BalanceSheet_height'] * ((a_data_value if not np.isnan(a_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
+                )
+                if a_data.data_type[-2:] == '_t':
+                    row['offsetScale_by_dataType'] = 1 / 13
+                elif a_data.data_type[-2:] == '_s':
+                    row['offsetScale_by_dataType'] = 9 / 13
+                    pass  # if
+                dict_vis_data[row['df_dataName']].at[a_data.Index, 'position'] = (
+                    account_position[0] + int(account_size[0] * row['offsetScale_by_dataType']),
+                    account_position[1] + int(account_size[1] - dict_vis_data[row['df_dataName']].loc[a_data.Index, 'size'][1])
+                )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
+                pass  # for
+            pass  # for
+        pass  # if
+
+    # 如果是单侧 2 列的资产负债表
+    if num_column_one_side == 2:
+        ## 计算资产负债表各列各项数据之值、变动值对应的矩形之高亮框
+        for account_data in dict_vis_data['accounts'].itertuples():
+            dict_vis_data['accounts'].loc[account_data.Index, 'value'] = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
+            value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), account_data.subject].values[0]
+            is_value_changed = False if np.isclose(dict_vis_data['accounts'].loc[account_data.Index, 'value'], value_last, atol=1e0) else True
+            if is_value_changed:
+                dict_vis_data['accounts'].loc[account_data.Index, 'stroke_color'] = '#000000'
+                dict_vis_data['accounts'].loc[account_data.Index, 'stroke_width'] = 2
+                pass  # if
+            pass  # for
+
+        ## 计算资产负债表各资产负债科目之各项数据对应的矩形之绘制位置、绘制尺寸
+        boxs_width = [sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24]  # 设置资产负债表之账户之各侧边柱子之宽度
+        nibs_x = [reduce(lambda x, y: x + y, boxs_width[0:i + 1]) - boxs_width[i] for i in range(len(boxs_width))]  # 设置笔尖之x方向的位置之资产负债表之账户之各侧边柱子之起点
+        o = [1, 0, 2, 3]  # 设置资产负债表之账户之各侧边柱子之绘制次序
+        count_subject_values_is_zero = 0
+        items_subject_values_is_zero = []
+        nibs_y = [0, 0, 0, 0]  # 列表之笔尖起始坐标之开始位置之y坐标
+        p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
+        grouped_by_dataType = dict_vis_data['accounts'].groupby('data_type')
+        for data_type, dataType_values in grouped_by_dataType:
+            if data_type == 'equity':
+                continue
+            grouped_by_level = dataType_values.groupby('level')
+            for level, level_values in grouped_by_level:
+                nib = (
+                    sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
+                    sgv_vis['one_bank_BalanceSheet_border'] + sgv_vis['one_bank_BalanceSheet_title_height']
+                )  # 笔尖起始坐标之新柱子之开始位置
+                count_balance_is_zero = 0
+                items_balance_is_zero = []
+                grouped_by_subject = level_values.groupby('subject')
+                for subject, subject_values in grouped_by_subject:
+                    account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == data_type) & (dict_vis_data['accounts']['level'] == level) & (dict_vis_data['accounts']['subject'] == subject), 'subject'].idxmax()
+                    dict_vis_data['accounts'].at[account_idx, 'position'] = nib
+                    # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
+                    if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
+                        height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
+                    else:
+                        height_size = int(1e6)  # #BUG 最好抛出异常
+                        pass  # if
+                    dict_vis_data['accounts'].at[account_idx, 'size'] = (
+                        int(boxs_width[o[p]]),
+                        height_size
+                    )
+
+                    # if subject_values['value'].iloc[0]  != 0:
+                    if subject_values['value'].iloc[0] != 0 or subject_values['value'].iloc[0] == 0:
+                        nib = (
+                            sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
+                            int(nib[1] + height_size)
+                        )  # 笔尖起始坐标之该柱子之下一个项目之柱节之开始位置
+                    else:  # 如果柱节高度为0... #HACK #TODO 这个以后再处理
+                        count_subject_values_is_zero += 1
+                        items_subject_values_is_zero.append((subject, subject_values['value'].iloc[0], nib[1]))
+                        pass  # if
+                    # for (subject, subject_values['value'].iloc[0], nib_y) in items_subject_values_is_zero:  # HACK 如果有必要的话尝试标记那些柱节高度为0的值
+                    #     pass  # for
+                    pass  # for
+                nibs_y[o[p]] = nib[1]
+                p += 1
+                pass  # for
+            pass  # for
+
+        ## 计算资产负债表之 equity 科目之对应的矩形之绘制位置、绘制尺寸
+        o = [3, 4, 5] if dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == 'equity') & (dict_vis_data['accounts']['level'] == 'level 1') & (dict_vis_data['accounts']['subject'] == 'E_all'), 'value'].iloc[0] >= 0 else [2, 1, 0]  # 设置资产负债表之账户之各侧边柱子之绘制次序
+        p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
+        grouped_by_dataType = dict_vis_data['accounts'].groupby('data_type')
+        for data_type, dataType_values in grouped_by_dataType:
+            if data_type != 'equity':
+                continue
+            grouped_by_level = dataType_values.groupby('level')
+            for level, level_values in grouped_by_level:
+                nib = (
+                    sgv_vis['one_bank_BalanceSheet_border'] + int(nibs_x[o[p]]),
+                    int(nibs_y[o[p]])
+                )  # 笔尖起始坐标之新柱子之开始位置
+                count_balance_is_zero = 0
+                items_balance_is_zero = []
+                s = 1  # 资产负债表值账户之各侧边柱子之各柱节之绘制索引
+                grouped_by_subject = level_values.groupby('subject')
+                for subject, subject_values in grouped_by_subject:
+                    account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == data_type) & (dict_vis_data['accounts']['level'] == level) & (dict_vis_data['accounts']['subject'] == subject), 'subject'].idxmax()
+                    # 判断如果有一个数值出现 NaN 则设置其高度为一个很大的数，以便于在绘制时显示异常，从而提示这里有错误
+                    if not (np.isnan(subject_values['value'].iloc[0]) or np.isnan(sgv_vis['max_BB_value_in_all_panel'])):
+                        height_size = int(sgv_vis['one_bank_BalanceSheet_height'] * (subject_values['value'].iloc[0] / (sgv_vis['max_BB_value_in_all_panel'] if not np.isnan(sgv_vis['max_BB_value_in_all_panel']) else 'NaN')))
+                    else:
+                        height_size = int(1e6)
+                        pass  # if
+                    dict_vis_data['accounts'].at[account_idx, 'size'] = (
+                        int(boxs_width[o[p]]),
+                        height_size
+                    )
+                    dict_vis_data['accounts'].at[account_idx, 'position'] = nib
+                    dict_vis_data['accounts'].at[account_idx, 'fill_color'] = subject_values['fill_color'].iloc[0] if subject_values['value'].iloc[0] >= 0 else '#FFFFFF'  # 如果 equity 是负数则更改其柱子之填充颜色
+
+                    # if subject_values['value'].iloc[0]  != 0:
+                    if subject_values['value'].iloc[0] != 0 or subject_values['value'].iloc[0] == 0:
+                        pass  # if
+                    pass  # for
+                p += 1
+                pass  # for
+            pass  # for
+
+        ## 计算除了资产负债表各科目之外的其他变量之数据之值、变动值对应的矩形之高亮框、绘制位置、绘制尺寸
+        df_data_to_vis_other_variables_for_one_bank_accounts = pd.DataFrame(sgv_vis['config_data_to_vis_other_variables_for_one_bank_accounts'])
+        for index, row in df_data_to_vis_other_variables_for_one_bank_accounts.iterrows():
+            for a_data in dict_vis_data[row['df_dataName']].itertuples():
+                a_data_value = df_BB.loc[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
+                dict_vis_data[row['df_dataName']].loc[a_data.Index, 'value'] = a_data_value
+                value_last = df_BB.loc[(df_BB[sgv_vis['name_time']] == (time - 1 if time != 0 else 0)) & (df_BB['id_agent'] == id_agent), a_data.subject].values[0]
+                is_value_changed = False if np.isclose(a_data_value, value_last, atol=1e0) else True
+                if is_value_changed:
+                    dict_vis_data[row['df_dataName']].loc[a_data.Index, 'stroke_color'] = '#000000'
+                    dict_vis_data[row['df_dataName']].loc[a_data.Index, 'stroke_width'] = 2
+                    pass  # if
+
+                account_idx = dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == a_data.side) & (dict_vis_data['accounts']['level'] == a_data.level) & (dict_vis_data['accounts']['subject'] == a_data.align), 'subject'].idxmax()
+                account_position = dict_vis_data['accounts'].loc[account_idx, 'position']
+                account_size = dict_vis_data['accounts'].loc[account_idx, 'size']
+                dict_vis_data[row['df_dataName']].at[a_data.Index, 'size'] = (
+                    int(account_size[0] * (3 / 13)),
+                    int(sgv_vis['one_bank_BalanceSheet_height'] * ((a_data_value if not np.isnan(a_data_value) else 0) / sgv_vis['max_BB_value_in_all_panel']))
+                )
+                if a_data.data_type[-2:] == '_t':
+                    row['offsetScale_by_dataType'] = 1 / 13
+                elif a_data.data_type[-2:] == '_s':
+                    row['offsetScale_by_dataType'] = 9 / 13
+                    pass  # if
+                dict_vis_data[row['df_dataName']].at[a_data.Index, 'position'] = (
+                    account_position[0] + int(account_size[0] * row['offsetScale_by_dataType']),
+                    account_position[1] + int(account_size[1] - dict_vis_data[row['df_dataName']].loc[a_data.Index, 'size'][1])
+                )  # 笔尖起始坐标之新柱子之开始位置。该坐标值应该与资产负债表之关联的科目之 y 坐标值下对齐。
+                pass  # for
+            pass  # for
+        pass  # if
 
     ## 生成其他信息
     others = dict(
