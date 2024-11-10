@@ -2,7 +2,7 @@
 from scipy.sparse import csr_array
 from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
-from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
+from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.tools.tools import Tools
 
@@ -58,12 +58,12 @@ class Collector:
         pass  # function
 
     @classmethod
-    def collect_agent_data(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict):
+    def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict):
         """
         收集数据并存储
 
         Args:
-            A (SystemicRiskAgent): 系统性风险个体众
+            A (ModelAgent): 系统性风险个体众
             A_data (AgentDataCollection): 个体众数据集
             sgv: 模拟器全局变量
 
@@ -152,11 +152,11 @@ class Collector:
 
     # ## NOTE 当用对象字段数据结构时：
     # @classmethod
-    # def init_agent_data_collection(cls, A: SystemicRiskAgent, sgv: dict):
+    # def init_agent_data_collection(cls, A: ModelAgent, sgv: dict):
     #     """
     #
     #     Args:
-    #         A (SystemicRiskAgent): 系统性风险个体众
+    #         A (ModelAgent): 系统性风险个体众
     #         sgv (dict): 模拟器全局变量
     #
     #     Returns:
@@ -195,12 +195,12 @@ class Collector:
     #     pass
     #
     # @classmethod
-    # def collect_agent_data(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict):
+    # def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict):
     #     """
     #     收集数据并存储
     #
     #     Args:
-    #         A (SystemicRiskAgent):
+    #         A (ModelAgent):
     #         A_data (AgentDataCollection):
     #         sgv:
     #

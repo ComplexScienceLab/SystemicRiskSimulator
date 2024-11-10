@@ -200,7 +200,7 @@ class BankInterbank(BaseInterAgents):
     pass  # class
 
 
-class SystemicRiskAgent:
+class ModelAgent:
     """
     综合SystemicRiskAgents类型
     """
@@ -219,7 +219,7 @@ class SystemicRiskAgent:
         pass
 
     # def __deepcopy__(self, memo):   #HACK 无用可删除
-    #     new_copy = SystemicRiskAgent(
+    #     new_copy = ModelAgent(
     #         self.id_agent,
     #         deepcopy(self.BB, memo),
     #         deepcopy(self.b, memo),

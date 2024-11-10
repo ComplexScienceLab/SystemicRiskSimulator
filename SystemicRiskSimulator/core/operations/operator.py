@@ -4,7 +4,7 @@
 
 from SystemicRiskSimulator.external_packages import Path, timeit, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional
 from SystemicRiskSimulator.tools.logging_tools import log_message, record_work_state
-from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
+from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.collector import Collector
 
@@ -172,13 +172,13 @@ class Operator:
         pass  # function
 
     @classmethod
-    def operate_run_experiment(cls, A: SystemicRiskAgent, A_last: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    def operate_run_experiment(cls, A: ModelAgent, A_last: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
         运作运行实验。用于传统的 ABM 模型。
 
         Args:
-            A (SystemicRiskAgent): 多主体
-            A_last (SystemicRiskAgent): 上一回合的多主体
+            A (ModelAgent): 多主体
+            A_last (ModelAgent): 上一回合的多主体
             A_data (AgentDataCollection): 多主体之数据
             sgv (dict): 模拟器全局变量
             para (dict): 参数变量
@@ -294,7 +294,7 @@ class Operator:
 
         ## 初始化 agents 数据
         A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
-        A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
+        A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
 
         ## 计算个体数量
         sgv['num_bank'] = len(A.BB['id_agent'])
@@ -313,12 +313,12 @@ class Operator:
         pass  # function
 
     @classmethod
-    def operate_step_experiment(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    def operate_step_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
         运作步进实验。用于使用强化学习环境工具包自定义的模型。
 
         Args:
-            A (SystemicRiskAgent): 多主体
+            A (ModelAgent): 多主体
             A_data (AgentDataCollection): 多主体之数据
             sgv (dict): 模拟器全局变量
             para (dict): 参数字典
@@ -477,7 +477,7 @@ class Operator:
         A = pd.Series([BB, IB, b, ib], index=['BB', 'IB', 'b', 'ib'])
 
         # ## HACK 当用对象字段数据结构时。
-        # A = SystemicRiskAgent(
+        # A = ModelAgent(
         #     0,  # 编号（必备的）
         #     BB,  # 商业银行群
         #     b,  # 商业银行群示性变量
