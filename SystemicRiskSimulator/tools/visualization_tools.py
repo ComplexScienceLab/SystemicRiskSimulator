@@ -703,9 +703,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
 
     # #TODO 可视化资产负债表图标题移到下面位置
 
-    # 判断资产负债表单侧有几列
-    # 如果找不到 level='level 3'，则是单侧 2 列的资产负债表
-
+    # 判断资产负债表单侧有几列。如果找不到 level='level 3'，则是单侧 2 列的资产负债表
     for k1, v1 in dict_vis_data.items():
         for v2 in v1.itertuples():
             if v2.level == 'level 3':
@@ -870,7 +868,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             pass  # for
 
         ## 计算资产负债表各资产负债科目之各项数据对应的矩形之绘制位置、绘制尺寸
-        boxs_width = [sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 3 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 5 / 24]  # 设置资产负债表之账户之各侧边柱子之宽度
+        boxs_width = [sgv_vis['one_bank_BalanceSheet_width'] * 8 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 4 / 24, sgv_vis['one_bank_BalanceSheet_width'] * 8 / 24]  # 设置资产负债表之账户之各侧边柱子之宽度
         nibs_x = [reduce(lambda x, y: x + y, boxs_width[0:i + 1]) - boxs_width[i] for i in range(len(boxs_width))]  # 设置笔尖之x方向的位置之资产负债表之账户之各侧边柱子之起点
         o = [1, 0, 2, 3]  # 设置资产负债表之账户之各侧边柱子之绘制次序
         count_subject_values_is_zero = 0
@@ -923,7 +921,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             pass  # for
 
         ## 计算资产负债表之 equity 科目之对应的矩形之绘制位置、绘制尺寸
-        o = [3, 4, 5] if dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == 'equity') & (dict_vis_data['accounts']['level'] == 'level 1') & (dict_vis_data['accounts']['subject'] == 'E_all'), 'value'].iloc[0] >= 0 else [2, 1, 0]  # 设置资产负债表之账户之各侧边柱子之绘制次序
+        o = [2, 3] if dict_vis_data['accounts'].loc[(dict_vis_data['accounts']['data_type'] == 'equity') & (dict_vis_data['accounts']['level'] == 'level 1') & (dict_vis_data['accounts']['subject'] == 'E_all'), 'value'].iloc[0] >= 0 else [1, 0]  # 设置资产负债表之账户之各侧边柱子之绘制次序
         p = 0  # 资产负债表之账户之各侧边柱子之绘制索引
         grouped_by_dataType = dict_vis_data['accounts'].groupby('data_type')
         for data_type, dataType_values in grouped_by_dataType:
