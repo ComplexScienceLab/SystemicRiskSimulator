@@ -77,7 +77,7 @@ class Collector:
         # BB = deepcopy(A.BB)
         # sgv['series_BB'] = pd.Series()
         series_BB = pd.Series()
-        for i in A.BB.index:
+        for i in A.BB.index:  #TODO 添加需要收集哪些具体给定的字段
             series_BB[i] = A.BB[i].copy()
         df_BB = series_BB.to_frame().transpose()
         df_BB.insert(loc=0, column='process_name', value=sgv['process_name'])
