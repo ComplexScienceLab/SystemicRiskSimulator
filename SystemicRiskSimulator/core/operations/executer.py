@@ -90,7 +90,7 @@ class Executer:
         pass  # function
 
     @classmethod
-    def update_variableStep(cls, content, update_way: str, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def update_variableStep(cls, content, update_way: str, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict, is_collect=True):
         """
         #NOTE：执行一次变量变更级别的步进更新
 
@@ -103,6 +103,7 @@ class Executer:
             A_data (AgentDataCollection): 多主体之数据
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
+            is_collect (bool): 是否收集当前步进之数据。默认为 True。
 
         Returns:
             None
@@ -112,7 +113,7 @@ class Executer:
         logging.debug(f"                步进：{sgv['step']}，相：{sgv['phase']}，更新源：{update_way}")
         # Finance.update_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         content.update_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
-        if sgv['is_use_RLlib_frameworks'] is False or sgv['RL_state'] == 'using':
+        if is_collect or sgv['is_use_RLlib_frameworks'] is False or sgv['RL_state'] == 'using':
             Collector.collect_agent_data(A, A_data, sgv)
             pass  # if
 
