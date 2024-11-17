@@ -459,7 +459,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     for i, bank_states in enumerate(list_data_banksState):
         for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
             if state in bank_states:
-                df_vertices_data['vertices_color'][i] = sgv_vis['dict_state_colors'][state] if (not np.isnan(vertices_value) and vertices_value >= 0) else '#000000'
+                df_vertices_data['vertices_color'][i] = sgv_vis['dict_state_colors'][state] if (not np.isnan(list_vertices_value[i]) and list_vertices_value[i] >= 0) else '#000000'
                 break
 
     df_vertices_data['vertices_label'] = [list_data_banksName[i] + '\n' + str(round(list_vertices_value[i]) if not np.isnan(list_vertices_value[i]) else 'NaN') for i in range(len(list_vertices_value))]  # 设置各节点之标签
