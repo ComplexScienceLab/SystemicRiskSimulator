@@ -116,8 +116,12 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     matrix[np.isclose(matrix, 0.0, atol=1e-4)] = 0.0
 
     ### 获取银行状态数据之颜色
-    # data_banksState_color = [sgv_vis['dict_state_colors'][','.join(s)] for s in list_data_banksState]
-    data_banksState_color = [sgv_vis['dict_state_colors'][list(list_data_banksState[i])[0]] for i in range(data_vector1.size)]
+    data_banksState_color = [None] * data_vector1.size
+    for i, bank_states in enumerate(list_data_banksState):
+        for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到 data_banksState_color 中
+            if state in bank_states:
+                data_banksState_color[i] = sgv_vis['dict_state_colors'][state]
+                break
 
     ### 计算银行关系矩阵数据（包括债权债务关系）
     data_A_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
@@ -451,8 +455,13 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
             )
         )  # 计算各节点之尺寸
     )))  # 设置各节点之尺寸
-    # df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][','.join(s)] if (not np.isnan(v) and v >= 0) else '#000000' for s, v in zip(list_data_banksState, list_vertices_value)]  # 设置各节点之颜色，如果是节点值是负数那么是黑色
-    df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][list(s)[0]] if (not np.isnan(v) and v >= 0) else '#000000' for s, v in zip(list_data_banksState, list_vertices_value)]  # 设置各节点之颜色，如果是节点值是负数那么是黑色    # df_vertices_data['vertices_color'] = [sgv_vis['dict_state_colors'][','.join(s)] if (not np.isnan(v) and v >= 0) else '#000000' for s, v in zip(list_data_banksState, list_vertices_value)]  # 设置各节点之颜色，如果是节点值是负数那么是黑色
+    df_vertices_data['vertices_color'] = [None] * len(list_vertices_value)
+    for i, bank_states in enumerate(list_data_banksState):
+        for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到 data_banksState_color 中
+            if state in bank_states:
+                df_vertices_data['vertices_color'][i] = sgv_vis['dict_state_colors'][state] if (not np.isnan(vertices_value) and vertices_value >= 0) else '#000000'
+                break
+
     df_vertices_data['vertices_label'] = [list_data_banksName[i] + '\n' + str(round(list_vertices_value[i]) if not np.isnan(list_vertices_value[i]) else 'NaN') for i in range(len(list_vertices_value))]  # 设置各节点之标签
 
     ### 生成各边集之信息
