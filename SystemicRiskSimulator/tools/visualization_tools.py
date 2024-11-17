@@ -118,7 +118,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     ### 获取银行状态数据之颜色
     data_banksState_color = [None] * data_vector1.size
     for i, bank_states in enumerate(list_data_banksState):
-        for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到 data_banksState_color 中
+        for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
             if state in bank_states:
                 data_banksState_color[i] = sgv_vis['dict_state_colors'][state]
                 break
@@ -457,7 +457,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     )))  # 设置各节点之尺寸
     df_vertices_data['vertices_color'] = [None] * len(list_vertices_value)
     for i, bank_states in enumerate(list_data_banksState):
-        for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到 data_banksState_color 中
+        for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
             if state in bank_states:
                 df_vertices_data['vertices_color'][i] = sgv_vis['dict_state_colors'][state] if (not np.isnan(vertices_value) and vertices_value >= 0) else '#000000'
                 break
@@ -1003,6 +1003,12 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
             pass  # for
         pass  # if
 
+    ### 银行状态数据
+    for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
+        if df_BB[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent)][state].values[0]:
+            bankState_color = sgv_vis['dict_state_colors'][state]
+            break
+
     ## 生成其他信息
     others = dict(
         time_granularity=sgv_vis['time_granularity'],
@@ -1011,6 +1017,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
         turn=df_BB[df_BB[sgv_vis['name_time']] == time]['turn'].values[0],
         phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
+        bank_sate_color=bankState_color
     )
 
     data = dict(
@@ -1076,15 +1083,30 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
         pass  # if
 
+    # 计算文本的宽度和高度
+    text_width = len(dw_text) * 8  # 假设每个字符的宽度为16
+    text_height = 16  # 字体大小为16
+
+    # 绘制文字背景颜色矩形
+    svg_balanceSheet.append(
+        dw.Rectangle(
+            x=width // 2 - text_width // 2,
+            y=border + title_height // 2 - text_height,
+            width=text_width,
+            height=text_height,
+            fill=vis_data['others']['bank_sate_color'],
+        )
+    )
     svg_balanceSheet.append(
         dw.Text(
             dw_text,
-            font_size=16,
+            font_size=text_height,
             x=width // 2,
             y=border + title_height // 2,
             text_anchor='middle',
             dominant_baseline='middle',
             font_family=sgv_vis['zh_font_family'],
+            # fill=vis_data['others']['bank_sate_color'],  # 添加文本颜色
         )
     )
 
