@@ -401,41 +401,41 @@ class Operator:
 
         pass  # function
 
-    @classmethod
-    def set_imported_values_to_Bank_variables(cls, para: dict, sgv: dict):
-        """
-        导入数据以初始化银行主体众、银行间主体众变量
-
-        Args:
-            para (dict): 参数集
-            sgv (dict): 模拟器全局变量
-
-        Returns:
-            bank(BankCommercial): 银行主体众
-            interbank(BankInterbank): 银行间主体众
-        """
-
-        with open(Path(sgv['folderpath_agents'], 'agents', f"BB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
-            dict_bankCommercial = pickle.load(f)
-        with open(Path(sgv['folderpath_agents'], 'agents', f"IB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
-            dict_bankInterbank = pickle.load(f)
-
-        # ## NOTE 当用对象字段数据结构时：
-        # bank, interbank = cls.set_default_values_to_Bank_variables()
-        # bank.__dict__ = deepcopy(dict_bankCommercial)
-        # interbank.__dict__ = deepcopy(dict_bankInterbank)
-
-        ## NOTE 当用pandas数据结构时：
-        bank = pd.Series()
-        for k, v in deepcopy(dict_bankCommercial).items():
-            bank[k] = v
-        interbank = pd.Series()
-        for k, v in deepcopy(dict_bankInterbank).items():
-            interbank[k] = v
-
-        return bank, interbank
-
-        pass  # function
+    # @classmethod
+    # def set_imported_values_to_Bank_variables(cls, para: dict, sgv: dict):
+    #     """
+    #     导入数据以初始化银行主体众、银行间主体众变量
+    #
+    #     Args:
+    #         para (dict): 参数集
+    #         sgv (dict): 模拟器全局变量
+    #
+    #     Returns:
+    #         bank(BankCommercial): 银行主体众
+    #         interbank(BankInterbank): 银行间主体众
+    #     """
+    #
+    #     with open(Path(sgv['folderpath_agents'], 'agents', f"BB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+    #         dict_bankCommercial = pickle.load(f)
+    #     with open(Path(sgv['folderpath_agents'], 'agents', f"IB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+    #         dict_bankInterbank = pickle.load(f)
+    #
+    #     # ## NOTE 当用对象字段数据结构时：
+    #     # bank, interbank = cls.set_default_values_to_Bank_variables()
+    #     # bank.__dict__ = deepcopy(dict_bankCommercial)
+    #     # interbank.__dict__ = deepcopy(dict_bankInterbank)
+    #
+    #     ## NOTE 当用pandas数据结构时：
+    #     bank = pd.Series()
+    #     for k, v in deepcopy(dict_bankCommercial).items():
+    #         bank[k] = v
+    #     interbank = pd.Series()
+    #     for k, v in deepcopy(dict_bankInterbank).items():
+    #         interbank[k] = v
+    #
+    #     return bank, interbank
+    #
+    #     pass  # function
 
     @classmethod
     def install_data(cls, init_data_method: str, sgv: dict, para: dict):
@@ -446,7 +446,7 @@ class Operator:
 
         - ``import data``:  导入数据以初始化
 
-        注意：在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值做处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
+        注意：在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值赋值处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
 
         Args:
             init_data_method (str): 初始化数据的方式
@@ -461,23 +461,64 @@ class Operator:
 
         """
 
-        if init_data_method == "import data":
-            BB, IB = cls.set_imported_values_to_Bank_variables(para, sgv)  # 导入数据以初始化银行变量
-        else:
-            raise ("关键词" + str(init_data_method) + "取值错误！")
-            pass  # if
+        # if init_data_method == "import data":
+        #     BB, IB = cls.set_imported_values_to_Bank_variables(para, sgv)  # 导入数据以初始化银行变量
+        # else:
+        #     raise ("关键词" + str(init_data_method) + "取值错误！")
+        #     pass  # if
 
-        sgv['num_bank'] = len(BB.exist)  # 获取 agents 之个体数量
+        dict_agents_data = {}
+        for i, agents_data in enumerate(sgv['list_agents_data']):
+            with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+                dict_agents_data[agents_data] = pickle.load(f)
+            pass  # for
 
-        # HACK 后续需要统一这两个变量的用法，防止混乱使用
-        b = (BB.exist | BB.exit)  # 临时设置A.BB示性变量
-        ib = ((BB.exist | BB.exit).reshape(-1, 1) & (BB.exist | BB.exit).reshape(1, -1))  # 临时设置IB示性变量
+        # with open(Path(sgv['folderpath_agents'], 'agents', f"IB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+        #     dict_bankInterbank = pickle.load(f)
+
+        # ## NOTE 当用对象字段数据结构时：
+        # bank, interbank = cls.set_default_values_to_Bank_variables()
+        # bank.__dict__ = deepcopy(dict_bankCommercial)
+        # interbank.__dict__ = deepcopy(dict_bankInterbank)
+
+        ## NOTE 当用pandas数据结构时：
+
+        A = pd.Series()
+        for k, v in dict_agents_data.items():
+            A[k] = pd.Series()
+            for k1, v1 in deepcopy(v).items():
+                A[k][k1] = v1
+            pass  # for
+
+        # for k, v in dict_agents_data.items():
+        #     if k == 'BB':
+        #         BB = pd.Series()
+        #         for k, v in deepcopy(v).items():
+        #             BB[k] = v
+        #     elif k == 'IB':
+        #         IB = pd.Series()
+        #         for k, v in deepcopy(v).items():
+        #             IB[k] = v
+        #     pass
+
+        # BB = pd.Series()
+        # for k, v in deepcopy(dict_bankCommercial).items():
+        #     BB[k] = v
+        # IB = pd.Series()
+        # for k, v in deepcopy(dict_bankInterbank).items():
+        #     IB[k] = v
+
+        # sgv['num_bank'] = len(BB.exist)  # 获取 agents 之个体数量
+
+        # # HACK 后续需要统一这两个变量的用法，防止混乱使用
+        # b = (BB.exist | BB.exit)  # 临时设置A.BB示性变量
+        # ib = ((BB.exist | BB.exit).reshape(-1, 1) & (BB.exist | BB.exit).reshape(1, -1))  # 临时设置IB示性变量
 
         ## 构建Agent模型
         # NOTE 注意这时候`b`、`ib`变量在后续过程中没有发生变动。
 
         ## HACK 当用pandas数据结构时：
-        A = pd.Series([BB, IB, b, ib], index=['BB', 'IB', 'b', 'ib'])
+        # A = pd.Series([BB, IB, b, ib], index=['BB', 'IB', 'b', 'ib'])
 
         # ## HACK 当用对象字段数据结构时。
         # A = ModelAgent(
