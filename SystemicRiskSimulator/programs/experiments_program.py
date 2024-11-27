@@ -224,9 +224,12 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")  # DEBUG专用
 
         ## 重置实验
-        A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
+        A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
+        # A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
+
         ## 运行实验
-        Operator.operate_run_experiment(A, A_last, A_data, sgv, para, model)
+        Operator.operate_run_experiment(A, A_data, sgv, para, model)
+        # Operator.operate_run_experiment(A, A_last, A_data, sgv, para, model)
 
         ## 收尾实验
         Operator.operate_end_experiment(A_data, sgv)
@@ -237,7 +240,8 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 进行训练。\n")  # DEBUG 专用
 
         ## 重置实验
-        A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
+        A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
+        # A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
         ## 步进式运行实验
         A, A_data, sgv, para = Operator.operate_step_experiment(A, A_data, sgv, para, model)
         # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)

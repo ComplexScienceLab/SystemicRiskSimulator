@@ -172,7 +172,8 @@ class Operator:
         pass  # function
 
     @classmethod
-    def operate_run_experiment(cls, A: ModelAgent, A_last: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    # def operate_run_experiment(cls, A: ModelAgent, A_last: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    def operate_run_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
         运作运行实验。用于传统的 ABM 模型。
 
@@ -213,7 +214,8 @@ class Operator:
             )
             pass  # if
 
-        content_Model.model_content(A, A_last, A_data, para, sgv)
+        # content_Model.model_content(A, A_last, A_data, para, sgv)
+        content_Model.model_content(A, A_data, para, sgv)
 
         pass  # function
 
@@ -294,7 +296,7 @@ class Operator:
 
         ## 初始化 agents 数据
         A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
-        A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
+        # A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
 
         ## 计算个体数量
         sgv['num_bank'] = len(A.BB['id_agent'])
@@ -309,7 +311,8 @@ class Operator:
 
         A_data = Collector.init_agent_data_collection(A, sgv)
 
-        return A, A_last, A_data, sgv, para
+        return A, A_data, sgv, para
+        # return A, A_last, A_data, sgv, para
         pass  # function
 
     @classmethod
