@@ -309,7 +309,7 @@ class Operator:
                 is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
             )
 
-        A_data = Collector.init_agent_data_collection(A, sgv)
+        A_data = Collector.init_agent_data_collection(A, sgv, para)
 
         return A, A_data, sgv, para
         # return A, A_last, A_data, sgv, para

@@ -1,6 +1,7 @@
 ## 函数区：收集数据
+
 from scipy.sparse import csr_array
-from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional
+from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, deepcopy
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_type import *
@@ -13,12 +14,13 @@ class Collector:
 
     ## NOTE 当用 Pandas 之数据结构时：
     @classmethod
-    def init_agent_data_collection(cls, A: pd.Series, sgv: dict):
+    def init_agent_data_collection(cls, A: pd.Series, sgv: dict, para: dict):
         """
 
         Args:
             A (pd.Series): 系统性风险个体众
             sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
 
         Returns:
             A_data: 待收集的数据
@@ -26,9 +28,23 @@ class Collector:
         """
 
         ## 初始化数据框用以存储agent数据
-        BB_data = pd.DataFrame()
-        IB_data = pd.DataFrame()
-        A_data = AgentDataCollection(BB_data, IB_data)
+
+        dict_agents_data = {}
+        for i, agents_data in enumerate(sgv['list_agents_data']):
+            with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+                dict_agents_data[agents_data] = pickle.load(f)
+            pass  # for
+
+        A_data = pd.Series()
+        for k, v in dict_agents_data.items():
+            A_data[k] = pd.DataFrame()
+            # for k1, v1 in deepcopy(v).items():
+            #     A_data[k][k1] = v1
+            # pass  # for
+
+        # BB_data = pd.DataFrame()
+        # IB_data = pd.DataFrame()
+        # A_data = AgentDataCollection(BB_data, IB_data)
 
         # sgv['series_BB'] = pd.Series()
         # for i in A.BB.index:
