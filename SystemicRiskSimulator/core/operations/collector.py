@@ -29,10 +29,26 @@ class Collector:
 
         ## 初始化数据框用以存储agent数据
 
+        # #HACK 改之前的收集 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
+        # dict_agents_data = {}
+        # for i, agents_data in enumerate(sgv['list_agents_data']):
+        #     with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+        #         dict_agents_data[agents_data] = pickle.load(f)
+        #     pass  # for
+
+        # #HACK 改之后的收集 agents 数据文件代码
         dict_agents_data = {}
-        for i, agents_data in enumerate(sgv['list_agents_data']):
-            with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
-                dict_agents_data[agents_data] = pickle.load(f)
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            agents_filename = f"{para_01}"
+            for para_02 in sgv['list_agents_data_filename_para_02']:
+                if isinstance(para[para_02], float):
+                    agents_filename += f"-{para_02}={float(para[para_02]):.2f}"
+                else:
+                    agents_filename += f"-{para_02}={para[para_02]}"
+                pass  # for
+            agents_filename += ".pkl"
+            with open(Path(sgv['folderpath_agents'], 'agents', agents_filename), 'rb') as f:
+                dict_agents_data[para_01] = pickle.load(f)
             pass  # for
 
         A_data = pd.Series()
