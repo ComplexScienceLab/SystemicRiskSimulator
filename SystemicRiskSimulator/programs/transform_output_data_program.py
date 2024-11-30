@@ -35,6 +35,8 @@ from SystemicRiskSimulator.tools.logging_tools import record_work_state
 from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 from openpyxl.utils import get_column_letter
+
+
 # import dask.dataframe as dd
 
 
@@ -56,8 +58,8 @@ def main(sgv):
     # %%
     print("执行：")
 
-    num_files_BB = len(list(sgv['folderpath_experiments_output_data'].glob('BB_exp*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
-    num_files_IB = len(list(sgv['folderpath_experiments_output_data'].glob('IB_exp*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
+    num_files_BB = len(list(sgv['folderpath_experiments_output_data'].glob('BB-exp*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
+    num_files_IB = len(list(sgv['folderpath_experiments_output_data'].glob('IB-exp*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
     print(f"BB 文件数等于 IB 文件数？：{num_files_BB == num_files_IB}")  # DEBUG
 
     ## 连接 SQLite 数据库，统计实验组作业完成情况（#HACK #NOTE 只能用于串行处理模式）
@@ -114,11 +116,23 @@ def main(sgv):
     conn.close()
 
     ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
-    list_filepath_pkl_BB = []
-    list_filepath_pkl_IB = []
-    for id in list_idsExp_TASK:
-        list_filepath_pkl_BB.extend(sgv['folderpath_experiments_output_data'].glob(f'BB_exp={id}.pkl'))
-        list_filepath_pkl_IB.extend(sgv['folderpath_experiments_output_data'].glob(f'IB_exp={id}.pkl'))
+
+    # #HACK 改之前的处理结果数据代码，对于未适配的 set_config_variables.py 文件而言，如果没有
+    # list_filepath_pkl_BB = []
+    # list_filepath_pkl_IB = []
+    # for id in list_idsExp_TASK:
+    #     list_filepath_pkl_BB.extend(sgv['folderpath_experiments_output_data'].glob(f'BB_exp={id}.pkl'))
+    #     list_filepath_pkl_IB.extend(sgv['folderpath_experiments_output_data'].glob(f'IB_exp={id}.pkl'))
+    #     pass  # for
+
+    # #HACK 改之后的处理结果数据代码
+    dict_filepath_pkl = dict()
+    for para_01 in sgv['list_agents_data_filename_para_01']:
+        list_filepath_pkl = []
+        for id in list_idsExp_TASK:
+            list_filepath_pkl.extend(sgv['folderpath_experiments_output_data'].glob(f'{para_01}-exp={id}.pkl'))
+            pass  # for
+        dict_filepath_pkl[para_01] = list_filepath_pkl
         pass  # for
 
     ## #NOTE 导入Pandas格式的实验结果数据转换为面板形式再导出
@@ -128,7 +142,7 @@ def main(sgv):
         if sgv['is_enable_multiprocessing_for_transform_output_data']:
             # #NOTE：并行处理，用 dask 延迟任务 #HACK 不建议用，因为速度没有显著提升
 
-            # #NOTE：多进程并行处理
+            # #NOTE：多进程并行处理  #FIXME 没有适配改之后的处理结果数据代码，暂时不能用
             num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
             works = []
             for i, exp_id in enumerate(list_idsExp_TASK):
@@ -146,11 +160,13 @@ def main(sgv):
         else:
 
             # #NOTE：串行处理
-            for i, exp_id in enumerate(list_idsExp_TASK):
-                filepath_pkl_BB = list_filepath_pkl_BB[i]
-                filepath_pkl_IB = list_filepath_pkl_IB[i]
-                print(f"exp_id = {exp_id}")
-                fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id, filepath_pkl_BB, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+            for para_01 in sgv['list_agents_data_filename_para_01']:
+                filepath_pkl = dict()
+                for i, exp_id in enumerate(list_idsExp_TASK):
+                    filepath_pkl[para_01] = dict_filepath_pkl[para_01][i]
+                    print(f"exp_id = {exp_id}")
+                    fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id, filepath_pkl, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data'])
+                    pass  # for
                 pass  # for
 
             pass  # if
@@ -164,7 +180,7 @@ def main(sgv):
         ## #NOTE：用 Pandas 串行处理
         time_start = timeit.default_timer()  # 计时开始
 
-        fun_导入Pandas格式的实验结果数据合并为一个文件(list_filepath_pkl_BB, list_filepath_pkl_IB, list_idsExp_TASK)
+        fun_导入Pandas格式的实验结果数据合并为一个文件(dict_filepath_pkl, list_idsExp_TASK)
 
         time_end = timeit.default_timer()  # 计时结束
         print(f"导入Pandas格式的实验结果数据合并为一个文件，耗时：{time_end - time_start} 秒")
@@ -292,7 +308,7 @@ def main(sgv):
     pass  # main
 
 
-def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl_BB: Path, filepath_pkl_IB: Path, folderpath_experiments_output_log: Path, folderpath_exp_output_data: Path):
+def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl: dict, folderpath_experiments_output_log: Path, folderpath_exp_output_data: Path):
     """
     预处理单次实验之各实验结果数据
 
@@ -309,219 +325,229 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
 
     record_work_state(exp_id, 'status_预处理实验结果程序', 'DOING', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DOING"
 
-    df_BB_original = pd.read_pickle(filepath_pkl_BB)
-    num_agent = df_BB_original['id_agent'][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
-    df_BB = df_BB_original.map(lambda x: x.flatten() if hasattr(x, 'flatten') else x)  # 压平二维数组
+    for para_01 in filepath_pkl.keys():
+        # 根据文件名前缀判断数据类型  #BUG 这个存在风险，因为文件名前缀可能不遵循约定，后续扩展可能会有变化
+        if not para_01.startswith('I'):  # 说明是 1D 的数据
 
-    ## 转换数据格式为numpy字符串格式
-    list_columns_for_transform_datatype = [
-        v for i, v in enumerate(df_BB.columns) if (
-                df_BB[v].dtype == np.dtype('object')
-                and type(df_BB[v][0]) == str
-        )
-    ]
-    for i in range(df_BB.__len__()):
-        df_BB.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_BB[list_columns_for_transform_datatype[0]][i])
+            df_1D_original = pd.read_pickle(filepath_pkl[para_01])
+            num_size = df_1D_original['id_agent'][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
+            df_1D = df_1D_original.map(lambda x: x.flatten() if hasattr(x, 'flatten') else x)  # 压平二维数组
 
-        ## 展平为面板形式
-    list_columns_for_explode = [
-        v for i, v in enumerate(df_BB.columns) if (
-                df_BB[v].dtype == np.dtype('object')
-                and df_BB[v][0].size == num_agent
-        )
-    ]  # 获取需要展平的列
+            ## 转换数据格式为numpy字符串格式
+            list_columns_for_transform_datatype = [
+                v for i, v in enumerate(df_1D.columns) if (
+                        df_1D[v].dtype == np.dtype('object')
+                        and type(df_1D[v][0]) == str
+                )
+            ]
+            for i in range(df_1D.__len__()):
+                df_1D.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_1D[list_columns_for_transform_datatype[0]][i])
 
-    df_BB_panel = df_BB.explode('id_agent')  # 只展开 'id_agent' 列
-    for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
-        if col != 'id_agent':
-            # df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).reset_index(level=1, drop=True)
-            df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).values
-            pass  # if
-        pass  # for
-    df_BB_panel = df_BB_panel.reset_index(drop=True)  # 重置索引
+                ## 展平为面板形式
+            list_columns_for_explode = [
+                v for i, v in enumerate(df_1D.columns) if (
+                        df_1D[v].dtype == np.dtype('object')
+                        and df_1D[v][0].size == num_size
+                )
+            ]  # 获取需要展平的列
 
-    df_BB_panel.insert(0, 'id', range(len(df_BB_panel)))  # 添加id列
-    df_BB_panel.insert(1, 'id_data', np.repeat(range(len(df_BB_panel) // num_agent), num_agent))  # 添加id_data列
-
-    df_BB_panel = df_BB_panel.reset_index(drop=True)  # 重置索引
-
-    filename_pkl_BB = Path(filepath_pkl_BB).name
-    filename_pkl_BB_panel = filename_pkl_BB.replace('BB_', 'BB_panel_')
-    filepath_pkl_BB_panal = Path(folderpath_exp_output_data, filename_pkl_BB_panel)  # 面板数据文件路径
-    df_BB_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为 pkl 格式
-
-    ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
-    df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
-    with pd.ExcelWriter(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
-        df_BB_panel.to_excel(writer, sheet_name='BB_panel')
-        pass  # with
-
-    ## 重新读取 xlsx 格式然后格式化
-    ### 需要调整列边距的列名
-    columnsName_adjust = [
-        'id',
-        'id_data',
-        'step',
-        'turn',
-        'phase',
-        'id_agent',
-    ]
-
-    wb_BB_panel = load_workbook(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
-    sheet_BB_panel = wb_BB_panel.active
-
-    sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
-
-    col_indices = [df_BB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
-    for col_index in col_indices:
-        col_letter = get_column_letter(col_index)
-        sheet_BB_panel.column_dimensions[col_letter].width = 5
-
-    # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
-    fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
-    for i, row in enumerate(sheet_BB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
-        if i % (2 * num_agent) < num_agent:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
-            for cell in row:
-                cell.fill = fill  # 将该行的背景色设置为浅灰色
-
-    # for col in columns_states:  # 遍历每一列
-    #     col_index = df_BB_panel.columns.get_loc(col) + 1
-    #     col_letter = get_column_letter(col_index)
-    #     rng = sheet_BB_panel[col_letter]
-    #     for cell in rng:  # 遍历每一个单元格
-    #         if cell.value == True:
-    #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
-
-    wb_BB_panel.save(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
-
-    df_IB_original = pd.read_pickle(filepath_pkl_IB)
-    num_agent = df_IB_original['id_agent'][0].shape[0]
-    df_IB = deepcopy(df_IB_original)
-
-    ## 转换数据格式为numpy字符串格式
-    list_columns_for_transform_datatype = [
-        v for i, v in enumerate(df_IB.columns) if (
-                df_IB[v].dtype == np.dtype('object')
-                and type(df_IB[v][0]) == str
-        )
-    ]
-    for i in range(df_IB.__len__()):
-        df_IB.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_IB[list_columns_for_transform_datatype[0]][i])
-
-        ## 转换信息列表为矩阵形式，插入数据框  #HACK 能否用现成的功能函数代替？
-    list_columns_for_transform = [
-        v for i, v in enumerate(df_IB.columns) if (
-                df_IB[v].dtype == np.dtype('object')
-                and df_IB[v][0].dtype == np.dtype('object')
-        )
-    ]
-    for v1 in list_columns_for_transform:  # HACK 这个功能似乎无用
-        for i2 in range(df_IB[v1].size):
-            m = np.full((num_agent, num_agent), False)
-            if df_IB.loc[i2, v1] is []:
-                df_IB.loc[i2, v1] = np.nan
-                continue
-            for i3, v3 in enumerate(df_IB.loc[i2, v1]):
-                if v3 is []:
-                    m[i3, :] = False
-                    continue
+            df_1D_panel = df_1D.explode('id_agent')  # 只展开 'id_agent' 列
+            for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
+                if col != 'id_agent':
+                    # df_1D_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).reset_index(level=1, drop=True)
+                    df_1D_panel[col] = df_1D.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).values
                     pass  # if
-                for i4 in v3:
-                    if i4 in v3:
-                        m[i3, i4] = True
-                    else:
-                        m[i3, i4] = False
-                        pass  # if
+                pass  # for
+            df_1D_panel = df_1D_panel.reset_index(drop=True)  # 重置索引
+
+            df_1D_panel.insert(0, 'id', range(len(df_1D_panel)))  # 添加id列
+            df_1D_panel.insert(1, 'id_data', np.repeat(range(len(df_1D_panel) // num_size), num_size))  # 添加id_data列
+
+            df_1D_panel = df_1D_panel.reset_index(drop=True)  # 重置索引
+
+            filename_pkl_1D = Path(filepath_pkl[para_01]).name
+            filename_pkl_1D_panel = filename_pkl_1D.replace(f'{para_01}-', f'{para_01}_panel-')
+            filepath_pkl_1D_panal = Path(folderpath_exp_output_data, filename_pkl_1D_panel)  # 面板数据文件路径
+            df_1D_panel.to_pickle(Path(filepath_pkl_1D_panal))  # 导出为 pkl 格式
+
+            ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
+            df_1D_panel.to_csv(Path(str(filepath_pkl_1D_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
+            with pd.ExcelWriter(Path(str(filepath_pkl_1D_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+                df_1D_panel.to_excel(writer, sheet_name=f'{para_01}_panel')
+                pass  # with
+
+            ## 重新读取 xlsx 格式然后格式化
+            ### 需要调整列边距的列名
+            columnsName_adjust = [
+                'id',
+                'id_data',
+                'step',
+                'turn',
+                'phase',
+                'id_agent',
+            ]
+
+            wb_1D_panel = load_workbook(Path(str(filepath_pkl_1D_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+            sheet_1D_panel = wb_1D_panel.active
+
+            sheet_1D_panel.freeze_panes = "J2"  # 冻结窗格
+
+            col_indices = [df_1D_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+            for col_index in col_indices:
+                col_letter = get_column_letter(col_index)
+                sheet_1D_panel.column_dimensions[col_letter].width = 5
+
+            # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+            fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+            for i, row in enumerate(sheet_1D_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+                if i % (2 * num_size) < num_size:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+                    for cell in row:
+                        cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+            # for col in columns_states:  # 遍历每一列
+            #     col_index = df_1D_panel.columns.get_loc(col) + 1
+            #     col_letter = get_column_letter(col_index)
+            #     rng = sheet_1D_panel[col_letter]
+            #     for cell in rng:  # 遍历每一个单元格
+            #         if cell.value == True:
+            #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+            wb_1D_panel.save(Path(str(filepath_pkl_1D_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+
+        else:  # 说明是 2D 的数据
+
+            df_2D_original = pd.read_pickle(filepath_pkl[para_01])
+            (num_row, num_col) = df_2D_original['id_agent'][0].shape
+            df_IB = deepcopy(df_2D_original)
+
+            ## 转换数据格式为numpy字符串格式
+            list_columns_for_transform_datatype = [
+                v for i, v in enumerate(df_IB.columns) if (
+                        df_IB[v].dtype == np.dtype('object')
+                        and type(df_IB[v][0]) == str
+                )
+            ]
+            for i in range(df_IB.__len__()):
+                df_IB.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_IB[list_columns_for_transform_datatype[0]][i])
+
+                ## 转换信息列表为矩阵形式，插入数据框  #HACK 能否用现成的功能函数代替？
+            list_columns_for_transform = [
+                v for i, v in enumerate(df_IB.columns) if (
+                        df_IB[v].dtype == np.dtype('object')
+                        and df_IB[v][0].dtype == np.dtype('object')
+                )
+            ]
+            for v1 in list_columns_for_transform:  # HACK 这个功能似乎无用
+                for i2 in range(df_IB[v1].size):
+                    m = np.full((num_row, num_col), False)
+                    if df_IB.loc[i2, v1] is []:
+                        df_IB.loc[i2, v1] = np.nan
+                        continue
+                    for i3, v3 in enumerate(df_IB.loc[i2, v1]):
+                        if v3 is []:
+                            m[i3, :] = False
+                            continue
+                            pass  # if
+                        for i4 in v3:
+                            if i4 in v3:
+                                m[i3, i4] = True
+                            else:
+                                m[i3, i4] = False
+                                pass  # if
+                            pass  # for
+                        pass  # for
+                    df_IB[v1][i2] = m  # 赋值矩阵给数据框之元素，于数据框之相应的位置
                     pass  # for
                 pass  # for
-            df_IB[v1][i2] = m  # 赋值矩阵给数据框之元素，于数据框之相应的位置
-            pass  # for
-        pass  # for
 
-    ## 生成agent矩阵之坐标，以矩阵形式，插入数据框
-    row_coord, col_coord = np.mgrid[0:num_agent:1, 0:num_agent:1]
-    df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="col", value=np.dtype('object'))
-    for i, _ in enumerate(df_IB.col):
-        df_IB.at[i, 'col'] = col_coord.astype('int16')
-    df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="row", value=np.dtype('object'))
-    for i, _ in enumerate(df_IB.row):
-        df_IB.at[i, 'row'] = row_coord.astype('int16')
+            ## 生成agent矩阵之坐标，以矩阵形式，插入数据框
+            row_coord, col_coord = np.mgrid[0:num_row:1, 0:num_col:1]
+            df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="col", value=np.dtype('object'))
+            for i, _ in enumerate(df_IB.col):
+                df_IB.at[i, 'col'] = col_coord.astype('int16')
+            df_IB.insert(loc=df_IB.columns.get_loc('id_agent') + 1, column="row", value=np.dtype('object'))
+            for i, _ in enumerate(df_IB.row):
+                df_IB.at[i, 'row'] = row_coord.astype('int16')
 
-        ## 展平为面板形式
-    list_columns_for_explode = [
-        v for i, v in enumerate(df_IB.columns) if (
-                df_IB[v].dtype == np.dtype('object')
-                and df_IB[v][0].size == num_agent ** 2
-        )
-    ]  # 获取需要展平的列
+                ## 展平为面板形式
+            list_columns_for_explode = [
+                v for i, v in enumerate(df_IB.columns) if (
+                        df_IB[v].dtype == np.dtype('object')
+                        and df_IB[v][0].size == (num_row * num_col)
+                )
+            ]  # 获取需要展平的列
 
-    df_IB_panel = (df_IB.explode('id_agent')).explode('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
-    # df_IB_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
-    for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
-        if col != 'id_agent':
-            # df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=0, drop=True).reset_index(drop=True)  # 对于二维数组需要展开两次
-            # df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack(dropna=False).reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
-            df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack(dropna=False).values  # 对于二维数组需要展开两次
+            df_2D_panel = (df_IB.explode('id_agent')).explode('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
+            # df_2D_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
+            for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
+                if col != 'id_agent':
+                    # df_2D_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=0, drop=True).reset_index(drop=True)  # 对于二维数组需要展开两次
+                    # df_2D_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack(dropna=False).reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
+                    df_2D_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack(dropna=False).values  # 对于二维数组需要展开两次
+                    pass  # if
+                pass  # for
+            df_2D_panel = df_2D_panel.reset_index(drop=True)  # 重置索引
+
+            df_2D_panel.insert(0, 'id', range(len(df_2D_panel)))  # 添加id列
+            df_2D_panel.insert(1, 'id_data', np.repeat(range(len(df_2D_panel) // (num_row * num_col)), (num_row * num_col)))  # 添加id_data列
+
+            df_2D_panel = df_2D_panel.reset_index(drop=True)  # 重置索引
+
+            filename_pkl_2D = Path(filepath_pkl[para_01]).name
+            filename_pkl_2D_panel = filename_pkl_2D.replace('IB_', 'IB_panel_')
+            filepath_pkl_2D_panal = Path(folderpath_exp_output_data, filename_pkl_2D_panel)  # 面板数据文件路径
+            df_2D_panel.to_pickle(Path(filepath_pkl_2D_panal))  # 导出为 pkl 格式
+
+            ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
+            df_2D_panel.to_csv(Path(Path(str(filepath_pkl_2D_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
+            with pd.ExcelWriter(Path(str(filepath_pkl_2D_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
+                df_2D_panel.to_excel(writer, sheet_name=f'{para_01}_panel')
+                pass  # with
+
+            ## 重新读取 xlsx 格式然后格式化
+            ### 需要调整列边距的列名
+            columnsName_adjust = [
+                'id',
+                'id_data',
+                'process_name',
+                'step',
+                'turn',
+                'phase',
+                'id_agent',
+                'row',
+                'col',
+            ]
+
+            wb_2D_panel = load_workbook(Path(str(filepath_pkl_2D_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
+            sheet_2D_panel = wb_2D_panel.active
+
+            sheet_2D_panel.freeze_panes = "K2"  # 冻结窗格
+
+            col_indices = [df_2D_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+            for col_index in col_indices:
+                col_letter = get_column_letter(col_index)
+                sheet_2D_panel.column_dimensions[col_letter].width = 5
+
+            # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
+            fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
+            for i, row in enumerate(sheet_2D_panel.iter_rows(min_row=2)):  # 跳过第一行表头
+                if i % (2 * (num_row * num_col)) < (num_row * num_col):  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
+                    for cell in row:
+                        cell.fill = fill  # 将该行的背景色设置为浅灰色
+
+            # for col in columns_states:  # 遍历每一列
+            #     col_index = df_1D_panel.columns.get_loc(col) + 1
+            #     col_letter = get_column_letter(col_index)
+            #     rng = sheet_2D_panel[col_letter]
+            #     for cell in rng:  # 遍历每一个单元格
+            #         if cell.value == True:
+            #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
+
+            wb_2D_panel.save(Path(str(filepath_pkl_2D_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
+
             pass  # if
+
         pass  # for
-    df_IB_panel = df_IB_panel.reset_index(drop=True)  # 重置索引
-
-    df_IB_panel.insert(0, 'id', range(len(df_IB_panel)))  # 添加id列
-    df_IB_panel.insert(1, 'id_data', np.repeat(range(len(df_IB_panel) // num_agent ** 2), num_agent ** 2))  # 添加id_data列
-
-    df_IB_panel = df_IB_panel.reset_index(drop=True)  # 重置索引
-
-    filename_pkl_IB = Path(filepath_pkl_IB).name
-    filename_pkl_IB_panel = filename_pkl_IB.replace('IB_', 'IB_panel_')
-    filepath_pkl_IB_panal = Path(folderpath_exp_output_data, filename_pkl_IB_panel)  # 面板数据文件路径
-    df_IB_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为 pkl 格式
-
-    ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
-    df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
-    with pd.ExcelWriter(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
-        df_IB_panel.to_excel(writer, sheet_name='IB_panel')
-        pass  # with
-
-    ## 重新读取 xlsx 格式然后格式化
-    ### 需要调整列边距的列名
-    columnsName_adjust = [
-        'id',
-        'id_data',
-        'process_name',
-        'step',
-        'turn',
-        'phase',
-        'id_agent',
-        'row',
-        'col',
-    ]
-
-    wb_IB_panel = load_workbook(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 使用 openpyxl 打开面板形式的 Excel 文件
-    sheet_IB_panel = wb_IB_panel.active
-
-    sheet_IB_panel.freeze_panes = "K2"  # 冻结窗格
-
-    col_indices = [df_IB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
-    for col_index in col_indices:
-        col_letter = get_column_letter(col_index)
-        sheet_IB_panel.column_dimensions[col_letter].width = 5
-
-    # 对于列 'id_data'，其单元格的值每间隔指定的行，对应的单元格背景色就变色。改变的颜色按照无色、浅灰色交替循环。
-    fill = PatternFill(start_color="EEEEEE", end_color="EEEEEE", fill_type="solid")
-    for i, row in enumerate(sheet_IB_panel.iter_rows(min_row=2)):  # 跳过第一行表头
-        if i % (2 * num_agent ** 2) < num_agent ** 2:  # 每间隔指定的行填充一次背景色 #BUG 如果设置的银行数量不正确，那么绘制不符合预期。
-            for cell in row:
-                cell.fill = fill  # 将该行的背景色设置为浅灰色
-
-    # for col in columns_states:  # 遍历每一列
-    #     col_index = df_BB_panel.columns.get_loc(col) + 1
-    #     col_letter = get_column_letter(col_index)
-    #     rng = sheet_IB_panel[col_letter]
-    #     for cell in rng:  # 遍历每一个单元格
-    #         if cell.value == True:
-    #             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
-
-    wb_IB_panel.save(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx'))  # 保存 Excel 文件
 
     record_work_state(exp_id, 'status_预处理实验结果程序', 'DONE', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DONE"
 
@@ -530,7 +556,7 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
 
 def fun_导入Pandas格式的实验结果数据合并为一个文件(list_filepath_pkl_BB, list_filepath_pkl_IB, list_idsExp_TASK):
     """
-    导入Pandas格式的实验结果数据合并为一个文件
+    导入Pandas格式的实验结果数据合并为一个文件  #FIXME 未适配除了 BB、IB 之外的各种 agents。暂时无法使用
 
     Args:
         list_filepath_pkl_BB: List[Path]: BB 实验结果数据文件路径列表
