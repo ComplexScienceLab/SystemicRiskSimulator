@@ -329,7 +329,14 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
         # 根据文件名前缀判断数据类型  #BUG 这个存在风险，因为文件名前缀可能不遵循约定，后续扩展可能会有变化
         if not para_01.startswith('I'):  # 说明是 1D 的数据
 
+            # 根据 filepath_pkl[para_01] 复制一个新文件，以免修改原始文件
             df_1D_original = pd.read_pickle(filepath_pkl[para_01])
+            filename_pkl_1D = Path(filepath_pkl[para_01]).name
+            filename_pkl_1D_panel = filename_pkl_1D.replace(f'{para_01}-', f'{para_01}_panel-')
+            filepath_pkl_1D_panal = Path(folderpath_exp_output_data, filename_pkl_1D_panel)  # 面板数据文件路径
+            df_1D_original.to_pickle(Path(filepath_pkl_1D_panal))  # 导出为 pkl 格式
+            df_1D_original = pd.read_pickle(filepath_pkl_1D_panal)  # 重新读取 pkl 文件，对该文件直接修改
+
             num_size = df_1D_original['id_agent'][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
             df_1D = df_1D_original.map(lambda x: x.flatten() if hasattr(x, 'flatten') else x)  # 压平二维数组
 
@@ -343,7 +350,7 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
             for i in range(df_1D.__len__()):
                 df_1D.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_1D[list_columns_for_transform_datatype[0]][i])
 
-                ## 展平为面板形式
+            ## 展平为面板形式
             list_columns_for_explode = [
                 v for i, v in enumerate(df_1D.columns) if (
                         df_1D[v].dtype == np.dtype('object')
@@ -364,11 +371,6 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
             df_1D_panel.insert(1, 'id_data', np.repeat(range(len(df_1D_panel) // num_size), num_size))  # 添加id_data列
 
             df_1D_panel = df_1D_panel.reset_index(drop=True)  # 重置索引
-
-            filename_pkl_1D = Path(filepath_pkl[para_01]).name
-            filename_pkl_1D_panel = filename_pkl_1D.replace(f'{para_01}-', f'{para_01}_panel-')
-            filepath_pkl_1D_panal = Path(folderpath_exp_output_data, filename_pkl_1D_panel)  # 面板数据文件路径
-            df_1D_panel.to_pickle(Path(filepath_pkl_1D_panal))  # 导出为 pkl 格式
 
             ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
             df_1D_panel.to_csv(Path(str(filepath_pkl_1D_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
@@ -416,7 +418,14 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
 
         else:  # 说明是 2D 的数据
 
+            # 根据 filepath_pkl[para_01] 复制一个新文件，以免修改原始文件
             df_2D_original = pd.read_pickle(filepath_pkl[para_01])
+            filename_pkl_2D = Path(filepath_pkl[para_01]).name
+            filename_pkl_2D_panel = filename_pkl_2D.replace(f'{para_01}-', f'{para_01}_panel-')
+            filepath_pkl_2D_panal = Path(folderpath_exp_output_data, filename_pkl_2D_panel)  # 面板数据文件路径
+            df_2D_original.to_pickle(Path(filepath_pkl_2D_panal))  # 导出为 pkl 格式
+            df_2D_original = pd.read_pickle(filepath_pkl_2D_panal)  # 重新读取 pkl 文件，对该文件直接修改
+
             (num_row, num_col) = df_2D_original['id_agent'][0].shape
             df_IB = deepcopy(df_2D_original)
 
@@ -430,7 +439,7 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
             for i in range(df_IB.__len__()):
                 df_IB.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_IB[list_columns_for_transform_datatype[0]][i])
 
-                ## 转换信息列表为矩阵形式，插入数据框  #HACK 能否用现成的功能函数代替？
+            ## 转换信息列表为矩阵形式，插入数据框  #HACK 能否用现成的功能函数代替？
             list_columns_for_transform = [
                 v for i, v in enumerate(df_IB.columns) if (
                         df_IB[v].dtype == np.dtype('object')
@@ -492,11 +501,6 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
             df_2D_panel.insert(1, 'id_data', np.repeat(range(len(df_2D_panel) // (num_row * num_col)), (num_row * num_col)))  # 添加id_data列
 
             df_2D_panel = df_2D_panel.reset_index(drop=True)  # 重置索引
-
-            filename_pkl_2D = Path(filepath_pkl[para_01]).name
-            filename_pkl_2D_panel = filename_pkl_2D.replace('IB_', 'IB_panel_')
-            filepath_pkl_2D_panal = Path(folderpath_exp_output_data, filename_pkl_2D_panel)  # 面板数据文件路径
-            df_2D_panel.to_pickle(Path(filepath_pkl_2D_panal))  # 导出为 pkl 格式
 
             ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
             df_2D_panel.to_csv(Path(Path(str(filepath_pkl_2D_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
