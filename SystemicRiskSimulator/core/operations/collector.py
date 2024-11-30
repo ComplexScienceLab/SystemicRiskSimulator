@@ -35,6 +35,10 @@ class Collector:
         #     with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
         #         dict_agents_data[agents_data] = pickle.load(f)
         #     pass  # for
+        #
+        # BB_data = pd.DataFrame()
+        # IB_data = pd.DataFrame()
+        # A_data = AgentDataCollection(BB_data, IB_data)
 
         # #HACK 改之后的收集 agents 数据文件代码
         dict_agents_data = {}
@@ -57,10 +61,6 @@ class Collector:
             # for k1, v1 in deepcopy(v).items():
             #     A_data[k][k1] = v1
             # pass  # for
-
-        # BB_data = pd.DataFrame()
-        # IB_data = pd.DataFrame()
-        # A_data = AgentDataCollection(BB_data, IB_data)
 
         # sgv['series_BB'] = pd.Series()
         # for i in A.BB.index:
@@ -90,7 +90,7 @@ class Collector:
         pass  # function
 
     @classmethod
-    def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict):
+    def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict):
         """
         收集数据并存储
 
@@ -108,32 +108,48 @@ class Collector:
         # BB_df = A.BB.to_frame().transpose()
         # BB = deepcopy(A.BB)
         # sgv['series_BB'] = pd.Series()
-        series_BB = pd.Series()
-        for i in A.BB.index:  #TODO 添加需要收集哪些具体给定的字段
-            series_BB[i] = A.BB[i].copy()
-        df_BB = series_BB.to_frame().transpose()
-        df_BB.insert(loc=0, column='process_name', value=sgv['process_name'])
-        df_BB.insert(loc=1, column='step', value=sgv['step'])
-        df_BB.insert(loc=2, column='turn', value=sgv['turn'])
-        df_BB.insert(loc=3, column='phase', value=sgv['phase'])
-        A_data.BB = pd.concat([A_data.BB, df_BB], ignore_index=True)
-        # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
 
-        # IB_df = A.IB.to_frame().transpose()
-        # IB = deepcopy(A.IB)
-        series_IB = pd.Series()
-        for i in A.IB.index:
-            series_IB[i] = A.IB[i].copy()
-        df_IB = series_IB.to_frame().transpose()
-        df_IB.insert(loc=0, column='process_name', value=sgv['process_name'])
-        df_IB.insert(loc=1, column='step', value=sgv['step'])
-        df_IB.insert(loc=2, column='turn', value=sgv['turn'])
-        df_IB.insert(loc=3, column='phase', value=sgv['phase'])
-        A_data.IB = pd.concat([A_data.IB, df_IB], ignore_index=True)
-        # IB_data = pd.concat([IB_data, IB_df], ignore_index=True)
+        # # #HACK 改之前的收集 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
+        # series_BB = pd.Series()
+        # for i in A.BB.index:  # TODO 添加需要收集哪些具体给定的字段
+        #     series_BB[i] = A.BB[i].copy()
+        # df_BB = series_BB.to_frame().transpose()
+        # df_BB.insert(loc=0, column='process_name', value=sgv['process_name'])
+        # df_BB.insert(loc=1, column='step', value=sgv['step'])
+        # df_BB.insert(loc=2, column='turn', value=sgv['turn'])
+        # df_BB.insert(loc=3, column='phase', value=sgv['phase'])
+        # A_data.BB = pd.concat([A_data.BB, df_BB], ignore_index=True)
+        # # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
+        #
+        # # IB_df = A.IB.to_frame().transpose()
+        # # IB = deepcopy(A.IB)
+        # series_IB = pd.Series()
+        # for i in A.IB.index:
+        #     series_IB[i] = A.IB[i].copy()
+        # df_IB = series_IB.to_frame().transpose()
+        # df_IB.insert(loc=0, column='process_name', value=sgv['process_name'])
+        # df_IB.insert(loc=1, column='step', value=sgv['step'])
+        # df_IB.insert(loc=2, column='turn', value=sgv['turn'])
+        # df_IB.insert(loc=3, column='phase', value=sgv['phase'])
+        # A_data.IB = pd.concat([A_data.IB, df_IB], ignore_index=True)
+        # # IB_data = pd.concat([IB_data, IB_df], ignore_index=True)
+        #
+        # # A_data.BB, A_data.IB = BB_data, IB_data
+        # # return A_data
 
-        # A_data.BB, A_data.IB = BB_data, IB_data
-        # return A_data
+        # #HACK 改之后的收集 agents 数据文件代码
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            series = pd.Series()
+            for i in A[para_01].index:
+                series[i] = A[para_01][i].copy()
+            df = series.to_frame().transpose()
+            df.insert(loc=0, column='process_name', value=sgv['process_name'])
+            df.insert(loc=1, column='step', value=sgv['step'])
+            df.insert(loc=2, column='turn', value=sgv['turn'])
+            df.insert(loc=3, column='phase', value=sgv['phase'])
+            A_data[para_01] = pd.concat([A_data[para_01], df], ignore_index=True)
+            pass  # for
+
         pass  # function
 
     @classmethod
@@ -177,8 +193,14 @@ class Collector:
         #     # compare.append(A_data.IB['hel'][i] ^ IB_decompress['hel'][i])
 
         ## 导出为pkl格式
-        pd.to_pickle(A_data.BB, Path(sgv['folderpath_experiments_output_data'], r"BB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
-        pd.to_pickle(A_data.IB, Path(sgv['folderpath_experiments_output_data'], r"IB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
+
+        # #HACK 改之后的收集 agents 数据文件代码
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"{para_01}-exp=" + str(sgv['id_experiment']) + ".pkl"))
+
+        # # #HACK 改之前的收集 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
+        # pd.to_pickle(A_data.BB, Path(sgv['folderpath_experiments_output_data'], r"BB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
+        # pd.to_pickle(A_data.IB, Path(sgv['folderpath_experiments_output_data'], r"IB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
 
         pass  # function
 
@@ -453,7 +475,7 @@ class Collector:
     @classmethod
     def compress_result_data(cls, BB_origin: pd.DataFrame, IB_origin: pd.DataFrame):
         """
-        压缩实验结果数据
+        压缩实验结果数据  #FIXME 未适配除了 BB、IB 之外的各种 agents。暂时无法使用
 
         Args:
             BB_origin (pd.DataFrame): 原始的 BB 实验结果数据 
