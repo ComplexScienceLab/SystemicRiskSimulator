@@ -372,7 +372,8 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
 
             df_1D_panel = df_1D_panel.reset_index(drop=True)  # 重置索引
 
-            ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
+            ## 导出为 pkl 格式，保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
+            df_1D_panel.to_pickle(Path(filepath_pkl_1D_panal))  # 导出为 pkl 格式
             df_1D_panel.to_csv(Path(str(filepath_pkl_1D_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
             with pd.ExcelWriter(Path(str(filepath_pkl_1D_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
                 df_1D_panel.to_excel(writer, sheet_name=f'{para_01}_panel')
@@ -502,7 +503,8 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
 
             df_2D_panel = df_2D_panel.reset_index(drop=True)  # 重置索引
 
-            ## 保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
+            ## 导出为 pkl 格式，保存为 csv、xlsx 格式，然后对 xlsx 格式的文件做进一步处理 #NOTE 有需要再启用以下代码
+            df_2D_panel.to_pickle(Path(filepath_pkl_2D_panal))  # 导出为 pkl 格式
             df_2D_panel.to_csv(Path(Path(str(filepath_pkl_2D_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
             with pd.ExcelWriter(Path(str(filepath_pkl_2D_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
                 df_2D_panel.to_excel(writer, sheet_name=f'{para_01}_panel')
