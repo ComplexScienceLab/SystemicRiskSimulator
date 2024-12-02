@@ -393,8 +393,8 @@ def main(sgv):
             df_IB_panel = csv_IB_10[cols_sorted_10]
 
             ## 一些变量
-            num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-            num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+            num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
+            num_2D_id = len(df_IB_panel)  # 数据表IB之行数
             num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
             num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
             num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -409,8 +409,8 @@ def main(sgv):
             else:
                 raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                 pass  # if
-            sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-            sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+            sgv['vis']['num_items_in_a_time_in_BB'] = num_1D_row_id // num_idData  # BB之一个运行时间片之项目数
+            sgv['vis']['num_items_in_a_time_in_IB'] = num_2D_id // num_idData  # IB之一个运行轮次之项目数
             num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
             num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
@@ -474,8 +474,8 @@ def main(sgv):
                 df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
-                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
+                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -489,8 +489,8 @@ def main(sgv):
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
-                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_1D_row_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_2D_id // num_idData  # IB之一个运行轮次之项目数
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
@@ -547,8 +547,8 @@ def main(sgv):
                 df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
-                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
+                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -562,8 +562,8 @@ def main(sgv):
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
-                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_1D_row_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_2D_id // num_idData  # IB之一个运行轮次之项目数
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
@@ -602,17 +602,117 @@ def main(sgv):
             #     p.map(fun_visualize_data, [sgv])
             #     # fun_visualize_data(sgv)
 
+            df_data_types = pd.DataFrame(sgv['vis']['list_dataTypes_for_heatmaps'])
+
             for i_exp in experiments_indices_to_vis:
+                dict_1D_panel = {}
+                dict_2D_panel = {}
+                for para_01 in sgv['list_agents_data_filename_para_01']:
+                    # 根据文件名前缀判断数据类型  #BUG 这个存在风险，因为文件名前缀可能不遵循约定，后续扩展可能会有变化
+                    if not para_01.startswith('I'):  # 说明是 1D 的数据
+                        v_1D = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], f'{para_01}_panel-exp={i_exp}.pkl'))
+                        dict_1D_panel[para_01] = v_1D
+                        if para_01 == 'BB':
+                            # 计算总的轮次数（是从0开始计数的)、总的步进数（是从0开始计数的)
+                            num_turn = v_1D['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                            num_idData = v_1D['id_data'].max() + 1  # 数据表之数据id个数
+                            num_step = num_idData  # 总的步进数（是从0开始计数的)
+                            pass  # if
+                    else:  # 说明是 2D 的数据
+                        df_2D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], f'{para_01}_panel-exp={i_exp}.pkl'))
+                        dict_2D_panel[para_01] = df_2D_panel
+                        pass  # if
+                    pass  # for
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                # 获取各个体、个体间一些信息
+                list_num_1D_row_id = []  # 1D数据之行数
+                list_num_1D_row_agent = []  # 1D数据之行数之个体数
+                list_max_value_row_1D = []  # 1D数据之行数之最大值
+                list_num_1D_col_id = []  # 1D数据之列数
+                list_num_1D_col_agent = []  # 1D数据之列数之个体数
+                list_max_value_col_1D = []  # 1D数据之列数之最大值
+                list_num_2D_id = []  # 2D数据之行数
+                list_num_2D_agent = []  # 2D数据之行数之个体数
+                list_max_value_2D = []  # 2D数据之最大值
+                for i, d in df_data_types.iterrows():
+                    for k_1D, v_1D in dict_1D_panel.items():
+                        if d['data_name'][0] in v_1D.columns:
+                            num_1D_row_agent = v_1D['id_agent'].max() + 1
+                            list_num_1D_row_agent.append(num_1D_row_agent)
+                            num_1D_row_id = len(v_1D)
+                            list_num_1D_row_id.append(num_1D_row_id)
+                            max_value_row_1D = v_1D[d['data_name'][0]].max()
+                            list_max_value_row_1D.append(max_value_row_1D)
+                            row_dataType_name = k_1D
+                            pass  # if
+                        if d['data_name'][1] in v_1D.columns:
+                            num_1D_col_agent = v_1D['id_agent'].max() + 1
+                            list_num_1D_col_agent.append(num_1D_col_agent)
+                            num_1D_col_id = len(v_1D)
+                            list_num_1D_col_id.append(num_1D_col_id)
+                            max_value_col_1D = v_1D[d['data_name'][1]].max()
+                            list_max_value_col_1D.append(max_value_col_1D)
+                            col_dataType_name = k_1D
+                            pass  # if
+                    for k_2D, v_2D in dict_2D_panel.items():
+                        if d['data_name'][2] in v_2D.columns:
+                            num_2D_agent = ((v_2D['row'].max() + 1), (v_2D['col'].max() + 1))
+                            list_num_2D_agent.append(num_2D_agent)
+                            num_2D_id = len(v_2D)
+                            list_num_2D_id.append(num_2D_id)
+                            max_value_2D = v_2D[d['data_name'][2]].max()
+                            list_max_value_2D.append(max_value_2D)
+                            matrix_dataType_name = k_2D
+                            pass  # if
+                        pass  # for
+                    pass  # for
 
-                ## 一些变量
-                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
-                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
-                num_step = num_idData  # 总的步进数（是从0开始计数的)
+                sgv['vis']['list_num_1D_row_id'] = list_num_1D_row_id
+                sgv['vis']['list_num_1D_row_agent'] = list_num_1D_row_agent
+                sgv['vis']['list_max_value_row_1D'] = list_max_value_row_1D
+                sgv['vis']['row_dataType_name'] = row_dataType_name
+                sgv['vis']['list_num_1D_col_id'] = list_num_1D_col_id
+                sgv['vis']['list_num_1D_col_agent'] = list_num_1D_col_agent
+                sgv['vis']['list_max_value_col_1D'] = list_max_value_col_1D
+                sgv['vis']['col_dataType_name'] = col_dataType_name
+                sgv['vis']['list_num_2D_id'] = list_num_2D_id
+                sgv['vis']['list_num_2D_agent'] = list_num_2D_agent
+                sgv['vis']['list_max_value_2D'] = list_max_value_2D
+                sgv['vis']['matrix_dataType_name'] = matrix_dataType_name
+
+                # 计算 list_num_2D_agent 里面行数和列数最大值，作为绘制矩阵热图规划画布布局的依据
+                list_num_2D_agent_row = [i[0] for i in list_num_2D_agent]
+                list_num_2D_agent_col = [i[1] for i in list_num_2D_agent]
+                max_num_2D_agent_row = max(list_num_2D_agent_row)
+                max_num_2D_agent_col = max(list_num_2D_agent_col)
+                max_num_2D_agent = max(max_num_2D_agent_row, max_num_2D_agent_col)
+
+                sgv['vis']['max_num_2D_agent'] = max_num_2D_agent
+
+                # df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
+                # df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+
+                # ## 一些变量
+                # num_1D_id = len(df_1D_panel)  # 1D数据表之行数
+                # # 遍历 dict_1D_panel，获取 1D 数据表之行数之最大值
+                # num_1D_id = 0
+                # for key in dict_1D_panel.keys():
+                #     if len(dict_1D_panel[key]) > num_1D_id:
+                #         num_1D_id = len(dict_1D_panel[key])
+                #         pass
+                #     pass  # for
+                # # 遍历 dict_2D_panel，获取 1D 数据表之行数之最大值
+                # num_2D_id = 0
+                # for key in dict_2D_panel.keys():
+                #     if len(dict_2D_panel[key]) > num_2D_id:
+                #         num_2D_id = len(dict_2D_panel[key])
+                #         pass
+                #     pass
+                # num_2D_id = len(df_2D_panel)  # 2D数据表之行数
+                # num_idData = df_1D_panel['id_data'].max() + 1  # 数据表之数据id个数
+                # num_turn = df_1D_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                # num_step = num_idData  # 总的步进数（是从0开始计数的)
+
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
                     sgv['vis']['name_time'] = 'step'
@@ -623,33 +723,68 @@ def main(sgv):
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
-                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
-                num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
-                num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_1D_row_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_2D_id // num_idData  # IB之一个运行轮次之项目数
+                # num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
+                # num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
                 print("绘制矩阵热图：实验" + str(i_exp))
 
                 sgv['vis']['zh_font_family'] = zh_font_family
                 sgv['vis']['en_font_family'] = en_font_family
 
-                df_data_types = pd.DataFrame(sgv['vis']['list_dataTypes_for_heatmaps'])
+                ### 计算各 1D 个体之代表性的类型之数据之最大值和最小值
+                sgv['vis']['min_1D_agent_value_in_all_panel'] = 0
+                sgv['vis']['max_1D_agent_value_in_all_panel'] = 0
+                for v in list_max_value_row_1D:
+                    if v > sgv['vis']['max_1D_agent_value_in_all_panel']:
+                        sgv['vis']['max_1D_agent_value_in_all_panel'] = v
+                        pass  # if
+                    pass  # for
+                for v in list_max_value_col_1D:
+                    if v > sgv['vis']['max_1D_agent_value_in_all_panel']:
+                        sgv['vis']['max_1D_agent_value_in_all_panel'] = v
+                        pass  # if
+                    pass  # for
 
-                ### 计算各银行主体之代表性的类型之数据之最大值和最小值
-                sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_IB_all'].max()
-                sgv['vis']['min_BB_value_in_all_panel'] = 0
-
-                ### 计算各银行主体间之代表性的类型之数据之最大值和最小值
-                sgv['vis']['max_IB_value_in_all_panel'] = df_IB_panel['A_IB'].max()
-                sgv['vis']['min_IB_value_in_all_panel'] = 0
+                ### 计算各 2D 个体之代表性的类型之数据之最大值和最小值
+                sgv['vis']['min_2D_agent_value_in_all_panel'] = 0
+                sgv['vis']['max_2D_agent_value_in_all_panel'] = 0
+                for v in list_max_value_2D:
+                    if v > sgv['vis']['max_2D_agent_value_in_all_panel']:
+                        sgv['vis']['max_2D_agent_value_in_all_panel'] = v
+                        pass  # if
+                    pass  # for
 
                 ## 创建一个作业列表，其中每个作业都是一个元组，包含所有需要传递给函数的参数
                 works = []
-                for i, d in df_data_types.iterrows():
-                    for t in range(sgv['vis']['num_time']):
-                        works.append((sgv, df_BB_panel, df_IB_panel, d, i_exp, t, i))
+                df_1D_panel_row = None
+                df_1D_panel_col = None
+                df_2D_panel = None
+                # for i in range(sgv['vis']['num_items_in_a_time_in_BB']):
+                for t in range(sgv['vis']['num_time']):
+                    for i, d in df_data_types.iterrows():
+                        for k_1D, v_1D in dict_1D_panel.items():
+                            if d['data_name'][0] in v_1D.columns:
+                                df_1D_panel_row = v_1D[v_1D['id_data'] == t]
+                                pass  # if
+                            if d['data_name'][1] in v_1D.columns:
+                                df_1D_panel_col = v_1D[v_1D['id_data'] == t]
+                                pass  # if
+                            pass  # for
+                        for k_2D, v_2D in dict_2D_panel.items():
+                            if d['data_name'][2] in v_2D.columns:
+                                df_2D_panel = v_2D[v_2D['id_data'] == t]
+                                pass  # if
+                            pass  # for
+                        works.append((sgv, df_1D_panel_row, df_1D_panel_col, df_2D_panel, d, i_exp, t, i))
                         pass  # for
                     pass  # for
+
+                    # for t in range(sgv['vis']['num_time']):
+                    #     works.append((sgv, dict_1D_panel, dict_2D_panel, d, i_exp, t, i))
+                    #     pass  # for
+                    # pass  # for
 
                 ## 绘图
                 if sgv['is_enable_multiprocessing_for_visualization']:  # 多进程并行处理
@@ -681,8 +816,8 @@ def main(sgv):
                 df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
-                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
+                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -696,8 +831,8 @@ def main(sgv):
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
-                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_1D_row_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_2D_id // num_idData  # IB之一个运行轮次之项目数
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
@@ -744,8 +879,8 @@ def main(sgv):
                 df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
-                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
+                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -759,8 +894,8 @@ def main(sgv):
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
-                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_1D_row_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_2D_id // num_idData  # IB之一个运行轮次之项目数
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
@@ -822,8 +957,8 @@ def main(sgv):
                 df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
-                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
+                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -837,8 +972,8 @@ def main(sgv):
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
-                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_1D_row_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_2D_id // num_idData  # IB之一个运行轮次之项目数
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
@@ -883,8 +1018,8 @@ def main(sgv):
                 df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
-                num_BB_id = len(df_BB_panel)  # 数据表BB之行数
-                num_IB_id = len(df_IB_panel)  # 数据表IB之行数
+                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
+                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
                 num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
                 num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
@@ -898,8 +1033,8 @@ def main(sgv):
                 else:
                     raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
                     pass  # if
-                sgv['vis']['num_items_in_a_time_in_BB'] = num_BB_id // num_idData  # BB之一个运行时间片之项目数
-                sgv['vis']['num_items_in_a_time_in_IB'] = num_IB_id // num_idData  # IB之一个运行轮次之项目数
+                sgv['vis']['num_items_in_a_time_in_BB'] = num_1D_row_id // num_idData  # BB之一个运行时间片之项目数
+                sgv['vis']['num_items_in_a_time_in_IB'] = num_2D_id // num_idData  # IB之一个运行轮次之项目数
                 num_agent = sgv['vis']['num_items_in_a_time_in_BB']  # 银行数
                 num_interbank = sgv['vis']['num_items_in_a_time_in_IB']  # 银行间关系数
 
@@ -972,10 +1107,10 @@ def process_one_heatmap(args):
         None
 
     """
-    sgv, df_BB_panel, df_IB_panel, d, i_exp, t, i = args
+    sgv, df_1D_panel_row, df_1D_panel_col, df_2D_panel, d, i_exp, t, i = args
 
     ## 获取相关的节点与边信息
-    data_vis_one_time_heatmap = generate_one_interbank_matrix_heatmaps_data_info(df_BB_panel, df_IB_panel, d['colormap'], d['relations'], t, d['data_name'], sgv['vis'])
+    data_vis_one_time_heatmap = generate_one_interbank_matrix_heatmaps_data_info(df_1D_panel_row, df_1D_panel_col, df_2D_panel, d['colormap'], d['relations'], t, d['data_name'], sgv['vis'])
 
     ## 用 matplotlib 绘制
     fig_heatmap = draw_one_interbank_matrix_heatmaps(data_vis_one_time_heatmap, sgv['vis'])

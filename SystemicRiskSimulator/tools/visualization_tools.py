@@ -22,15 +22,16 @@ from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re
 from SystemicRiskSimulator.tools.tools import Tools
 
 
-def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFrame, colormap: tuple, relations: str, time: int, dataName: tuple, sgv_vis: dict):
+def generate_one_interbank_matrix_heatmaps_data_info(df_1D_row: pd.DataFrame, df_1D_col: pd.DataFrame, df_2D: pd.DataFrame, colormap: tuple, relations: str, time: int, dataName: tuple, sgv_vis: dict):
     """
     生成矩阵热图相关的数据信息。
 
     Args:
-        df_BB (pd.DataFrame): 银行数据框
-        df_IB (pd.DataFrame): 银行间数据框
+        df_1D_row (pd.DataFrame): 1D 个体数据框，用于绘制矩阵热图之行信息（对应向量1）
+        df_1D_col (pd.DataFrame): 1D 个体数据框，用于绘制矩阵热图之列信息（对应向量2）
+        df_2D (pd.DataFrame): 2D 个体间数据框，用于绘制矩阵热图之矩阵信息（对应矩阵）
         colormap (tuple): 颜色映射元组（包括最小数值对应的颜色、最大数值对应的颜色）
-        relations (str): 需要绘制的银行间关系
+        relations (str): 需要绘制的个体间关系
         time (int): 时间
         dataName (tuple): 数据类型名称元组（包括竖向的向量1、横向的向量2、矩阵之名称）
         sgv_vis (dict): 模拟器全局变量
@@ -54,26 +55,48 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
 
     dataName_vector1, dataName_vector2, dataName_matrix = dataName[0], dataName[1], dataName[2]
 
-    ## 获取各银行个体之相关的数据
-    data_banksName = df_BB[df_BB[sgv_vis['name_time']] == time]['fullName'].values  # 银行名称
-    data_banksId = df_BB[df_BB[sgv_vis['name_time']] == time]['id_agent'].values  # 银行id
-    data_vector1 = df_BB[df_BB[sgv_vis['name_time']] == time][dataName_vector1].values  # 向量1之数据
-    data_vector2 = df_BB[df_BB[sgv_vis['name_time']] == time][dataName_vector2].values  # 向量2之数据
-    data_matrix = df_IB.loc[df_IB[sgv_vis['name_time']] == time, dataName_matrix].values  # 矩阵之数据
+    ## 获取各个体之相关的数据
+    data_agentsName_row = df_1D_row[df_1D_row[sgv_vis['name_time']] == time]['fullName'].values  # 向量1之个体名称
+    data_agentsName_col = df_1D_col[df_1D_col[sgv_vis['name_time']] == time]['fullName'].values  # 向量2之个体名称
+    data_agentsId_row = df_1D_row[df_1D_row[sgv_vis['name_time']] == time]['id_agent'].values  # 向量1之个体id
+    data_agentsId_col = df_1D_col[df_1D_col[sgv_vis['name_time']] == time]['id_agent'].values  # 向量2之个体id
+    data_vector1 = df_1D_row[df_1D_row[sgv_vis['name_time']] == time][dataName_vector1].values  # 向量1之数据
+    data_vector2 = df_1D_col[df_1D_col[sgv_vis['name_time']] == time][dataName_vector2].values  # 向量2之数据
+    data_matrix = df_2D.loc[df_2D[sgv_vis['name_time']] == time, dataName_matrix].values  # 矩阵之数据
 
-    ### 银行状态数据
-    banks_state = {}
-    for banksState_dataType in sgv_vis['list_dataTypes_for_banksState']:
-        banks_state[banksState_dataType] = df_BB[df_BB[sgv_vis['name_time']] == time][banksState_dataType].values
+    ### 个体状态数据
+    agents_state_row = {}  # 向量1之个体状态数据
+    for agentsState_dataType in sgv_vis['set_dataTypes_for_agentsState']:
+        if agentsState_dataType in df_1D_row.columns:
+            agents_state_row[agentsState_dataType] = df_1D_row[df_1D_row[sgv_vis['name_time']] == time][agentsState_dataType].values
+            pass  # if
         pass  # for
-    list_data_banksState = []
-    for i in range(len(data_banksId)):
-        list_data_banksState.append(set())
-        for k, v in banks_state.items():
+    list_data_agentsState_row = []  # 向量1之个体状态数据
+    for i in range(len(data_agentsId_row)):
+        list_data_agentsState_row.append(set())
+        for k, v in agents_state_row.items():
             if v[i]:
-                list_data_banksState[i].add(k)
+                list_data_agentsState_row[i].add(k)
                 pass  # if
-            if k not in sgv_vis['list_dataTypes_for_banksState']:
+            if k not in sgv_vis['set_dataTypes_for_agentsState']:
+                raise Exception(f"位于节点 {i} 判断 {k} 之状态错误！")
+                pass  # if
+            pass  # for
+        pass  # for
+    agents_state_col = {}  # 向量2之个体状态数据
+    for agentsState_dataType in sgv_vis['set_dataTypes_for_agentsState']:
+        if agentsState_dataType in df_1D_col.columns:
+            agents_state_col[agentsState_dataType] = df_1D_col[df_1D_col[sgv_vis['name_time']] == time][agentsState_dataType].values
+            pass  # if
+        pass  # for
+    list_data_agentsState_col = []  # 向量2之个体状态数据
+    for i in range(len(data_agentsId_col)):
+        list_data_agentsState_col.append(set())
+        for k, v in agents_state_col.items():
+            if v[i]:
+                list_data_agentsState_col[i].add(k)
+                pass  # if
+            if k not in sgv_vis['set_dataTypes_for_agentsState']:
                 raise Exception(f"位于节点 {i} 判断 {k} 之状态错误！")
                 pass  # if
             pass  # for
@@ -82,8 +105,8 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     ## 生成相关的数据之可视化信息
 
     ### 计算向量1、向量2、矩阵之实际可视化数值
-    min_value_in_one_heatmap = (data_vector1.min() - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)  # #BUG 这里很小的正数 0.0001 是为了避免除数为0，但是在一些情景下，可能依然不够小。后同。
-    max_value_in_one_heatmap = (data_vector1.max() - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)
+    min_value_in_one_heatmap = (data_vector1.min() - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001) / (sgv_vis['max_1D_agent_value_in_all_panel'] - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001)  # #BUG 这里很小的正数 0.0001 是为了避免除数为0，但是在一些情景下，可能依然不够小。后同。
+    max_value_in_one_heatmap = (data_vector1.max() - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001) / (sgv_vis['max_1D_agent_value_in_all_panel'] - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001)
     vector1 = 1.0 * Tools.MinMaxScaler(
         data_vector1,
         (
@@ -93,8 +116,8 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     ).astype(float)
     vector1[np.isclose(vector1, 0.0, atol=1e-4)] = 0.0
 
-    min_value_in_one_heatmap = (data_vector2.min() - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)
-    max_value_in_one_heatmap = (data_vector2.max() - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)
+    min_value_in_one_heatmap = (data_vector2.min() - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001) / (sgv_vis['max_1D_agent_value_in_all_panel'] - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001)
+    max_value_in_one_heatmap = (data_vector2.max() - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001) / (sgv_vis['max_1D_agent_value_in_all_panel'] - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001)
     vector2 = 1.0 * Tools.MinMaxScaler(
         data_vector2,
         (
@@ -104,8 +127,8 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     ).astype(float)
     vector2[np.isclose(vector2, 0.0, atol=1e-4)] = 0.0
 
-    min_value_in_one_heatmap = (data_matrix.min() - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)
-    max_value_in_one_heatmap = (data_matrix.max() - sgv_vis['min_BB_value_in_all_panel'] + 0.0001) / (sgv_vis['max_BB_value_in_all_panel'] - sgv_vis['min_BB_value_in_all_panel'] + 0.0001)
+    min_value_in_one_heatmap = (data_matrix.min() - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001) / (sgv_vis['max_1D_agent_value_in_all_panel'] - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001)
+    max_value_in_one_heatmap = (data_matrix.max() - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001) / (sgv_vis['max_1D_agent_value_in_all_panel'] - sgv_vis['min_1D_agent_value_in_all_panel'] + 0.0001)
     matrix = 1.0 * Tools.MinMaxScaler(
         data_matrix,
         (
@@ -115,41 +138,43 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
     ).astype(float)
     matrix[np.isclose(matrix, 0.0, atol=1e-4)] = 0.0
 
-    ### 获取银行状态数据之颜色
+    ### 获取个体状态数据之颜色
     data_banksState_color = [None] * data_vector1.size
-    for i, bank_states in enumerate(list_data_banksState):
-        for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
+    for i, bank_states in enumerate(list_data_agentsState_row):
+        for state in sgv_vis['set_dataTypes_for_agentsState']:  # 顺序遍历 set_dataTypes_for_agentsState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
             if state in bank_states:
                 data_banksState_color[i] = sgv_vis['dict_state_colors'][state]
                 break
 
-    ### 计算银行关系矩阵数据（包括债权债务关系）
-    data_A_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
-    data_debtors = data_A_IB > 0.0
-    data_Z_IB = df_IB.loc[df_IB[sgv_vis['name_time']] == time, 'Z_IB'].values.reshape(data_vector1.size, data_vector2.size)
-    data_creditors = data_Z_IB > 0.0
-    data_banksRelation = None
-    relation_color = ''
+    ### 计算个体关系矩阵数据（包括债权债务关系），并且设置颜色  #BUG 如果代入的变量不存在字段名称为 'A_IB' 或者 'Z_IB'，那么会报错
     data_banksRelation_color = np.full((data_vector1.size, data_vector2.size), '#FFFFFF', dtype=object)
-    if relations == 'cre':
-        data_banksRelation = data_creditors
-        relation_color = sgv_vis['dict_relation_colors']['cre']
-    elif relations == 'deb':
-        data_banksRelation = data_debtors
-        relation_color = sgv_vis['dict_relation_colors']['deb']
-        pass  # if
-    for i in range(data_banksRelation_color.shape[0]):
-        for j in range(data_banksRelation_color.shape[1]):
-            if data_banksRelation[i, j] > 0:
-                data_banksRelation_color[i, j] = relation_color
-                pass  # if
+    if 'A_IB' in df_2D.columns and 'Z_IB' in df_2D.columns:
+        data_A_IB = df_2D.loc[df_2D[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
+        data_debtors = data_A_IB > 0.0
+        data_Z_IB = df_2D.loc[df_2D[sgv_vis['name_time']] == time, 'Z_IB'].values.reshape(data_vector1.size, data_vector2.size)
+        data_creditors = data_Z_IB > 0.0
+        data_banksRelation = None
+        relation_color = ''
+        if relations == 'cre':
+            data_banksRelation = data_creditors
+            relation_color = sgv_vis['dict_relation_colors']['cre']
+        elif relations == 'deb':
+            data_banksRelation = data_debtors
+            relation_color = sgv_vis['dict_relation_colors']['deb']
+            pass  # if
+        for i in range(data_banksRelation_color.shape[0]):
+            for j in range(data_banksRelation_color.shape[1]):
+                if data_banksRelation[i, j] > 0:
+                    data_banksRelation_color[i, j] = relation_color
+                    pass  # if
+                pass  # for
             pass  # for
-        pass  # for
+        pass  # if
 
     ### 生成颜色映射信息
-    colormap_min_value = sgv_vis['min_BB_value_in_all_panel']
+    colormap_min_value = sgv_vis['min_1D_agent_value_in_all_panel']
     colormap_min_color = colormap[0]
-    colormap_max_value = sgv_vis['max_BB_value_in_all_panel']
+    colormap_max_value = sgv_vis['max_1D_agent_value_in_all_panel']
     colormap_max_color = colormap[1]
 
     ### 生成其他信息
@@ -157,21 +182,21 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
         color_map=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color),
         time_granularity=sgv_vis['time_granularity'],
         data_name=dataName_matrix,
-        process_name=df_BB[df_BB[sgv_vis['name_time']] == time]['process_name'].values[0],
-        step=df_BB[df_BB[sgv_vis['name_time']] == time]['step'].values[0],
-        turn=df_BB[df_BB[sgv_vis['name_time']] == time]['turn'].values[0],
-        phase=df_BB[df_BB[sgv_vis['name_time']] == time]['phase'].values[0],
+        process_name=df_1D_row[df_1D_row[sgv_vis['name_time']] == time]['process_name'].values[0],
+        step=df_1D_row[df_1D_row[sgv_vis['name_time']] == time]['step'].values[0],
+        turn=df_1D_row[df_1D_row[sgv_vis['name_time']] == time]['turn'].values[0],
+        phase=df_1D_row[df_1D_row[sgv_vis['name_time']] == time]['phase'].values[0],
     )
 
     ### 汇总生成的数据
     data = dict(
         vector1_data=vector1,
         vector1_values=data_vector1,
-        vector1_labels=data_banksName,
+        vector1_labels=data_agentsName_row,
         vector1_labels_color=data_banksState_color,
         vector2_data=vector2,
         vector2_values=data_vector2,
-        vector2_labels=data_banksName,
+        vector2_labels=data_agentsName_row,
         vector2_labels_color=data_banksState_color,
         matrix_data=matrix.reshape(data_vector1.size, data_vector2.size),
         matrix_values=data_matrix.reshape(data_vector1.size, data_vector2.size),
@@ -185,7 +210,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_BB: pd.DataFrame, df_IB:
 
 def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: float = 10, height: float = 10, dpi: int = 72):
     """
-    绘制单独的银行间矩阵热图
+    绘制单独的个体间矩阵热图
 
     Args:
         vis_data (dict): 网络流数据集
@@ -375,7 +400,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
 
     ### 银行状态数据
     banks_state = {}
-    for banksState_dataType in sgv_vis['list_dataTypes_for_banksState']:
+    for banksState_dataType in sgv_vis['set_dataTypes_for_agentsState']:
         banks_state[banksState_dataType] = df_BB[df_BB[sgv_vis['name_time']] == time][banksState_dataType].values
         pass  # for
     list_data_banksState = []
@@ -385,7 +410,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
             if v[i]:
                 list_data_banksState[i].add(k)
                 pass  # if
-            if k not in sgv_vis['list_dataTypes_for_banksState']:
+            if k not in sgv_vis['set_dataTypes_for_agentsState']:
                 raise Exception(f"位于节点 {i} 判断 {k} 之状态错误！")
                 pass  # if
             pass  # for
@@ -457,7 +482,7 @@ def generate_one_interbank_graph_data_info(df_BB: pd.DataFrame, df_IB: pd.DataFr
     )))  # 设置各节点之尺寸
     df_vertices_data['vertices_color'] = [None] * len(list_vertices_value)
     for i, bank_states in enumerate(list_data_banksState):
-        for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
+        for state in sgv_vis['set_dataTypes_for_agentsState']:  # 顺序遍历 set_dataTypes_for_agentsState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
             if state in bank_states:
                 df_vertices_data['vertices_color'][i] = sgv_vis['dict_state_colors'][state] if (not np.isnan(list_vertices_value[i]) and list_vertices_value[i] >= 0) else '#000000'
                 break
@@ -1004,7 +1029,7 @@ def generate_one_bank_accounts_data(df_BB: pd.DataFrame, dict_vis_data: dict, ti
         pass  # if
 
     ### 银行状态数据
-    for state in sgv_vis['list_dataTypes_for_banksState']:  # 顺序遍历 list_dataTypes_for_banksState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
+    for state in sgv_vis['set_dataTypes_for_agentsState']:  # 顺序遍历 set_dataTypes_for_agentsState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
         if df_BB[(df_BB[sgv_vis['name_time']] == time) & (df_BB['id_agent'] == id_agent)][state].values[0]:
             bankState_color = sgv_vis['dict_state_colors'][state]
             break
