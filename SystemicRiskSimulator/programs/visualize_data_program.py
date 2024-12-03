@@ -1091,7 +1091,7 @@ def process_one_heatmap(args):
 
     首先获取相关的节点与边信息，然后用 matplotlib 绘制，最后保存。
 
-    参数元组 args 信息如下：
+    #FIXME 参数元组 args 信息如下：
       - args[0]: sgv (dict): 一个字典，包含了所有的参数。
       - args[1]: df_BB_panel (pandas.DataFrame): 数据表BB。
       - args[2]: df_IB_panel (pandas.DataFrame): 数据表IB。

@@ -83,6 +83,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_1D_row: pd.DataFrame, df
                 pass  # if
             pass  # for
         pass  # for
+
     agents_state_col = {}  # 向量2之个体状态数据
     for agentsState_dataType in sgv_vis['set_dataTypes_for_agentsState']:
         if agentsState_dataType in df_1D_col.columns:
@@ -139,22 +140,39 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_1D_row: pd.DataFrame, df
     matrix[np.isclose(matrix, 0.0, atol=1e-4)] = 0.0
 
     ### 获取个体状态数据之颜色
-    data_banksState_color = [None] * data_vector1.size
+    data_agentsState_color_row = [None] * data_vector1.size
     for i, bank_states in enumerate(list_data_agentsState_row):
         for state in sgv_vis['set_dataTypes_for_agentsState']:  # 顺序遍历 set_dataTypes_for_agentsState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
             if state in bank_states:
-                data_banksState_color[i] = sgv_vis['dict_state_colors'][state]
+                data_agentsState_color_row[i] = sgv_vis['dict_state_colors'][state]
                 break
+            else:
+                data_agentsState_color_row[i] = '#FFFFFF'  # 如果没有个体状态数据，那么就将个体状态数据之颜色设置为白色
+                pass  # if
+            pass  # for
+        pass  # for
+
+    data_agentsState_color_col = [None] * data_vector2.size
+    for i, bank_states in enumerate(list_data_agentsState_col):
+        for state in sgv_vis['set_dataTypes_for_agentsState']:  # 顺序遍历 set_dataTypes_for_agentsState 中的每一个状态，如果该状态能够与 bank_states 中的状态匹配，那么就将该状态的颜色添加到个体颜色列表
+            if state in bank_states:
+                data_agentsState_color_col[i] = sgv_vis['dict_state_colors'][state]
+                break
+            else:
+                data_agentsState_color_col[i] = '#FFFFFF'  # 如果没有个体状态数据，那么就将个体状态数据之颜色设置为白色
+                pass  # if
+            pass  # for
+        pass  # for
 
     ### 计算个体关系矩阵数据（包括债权债务关系），并且设置颜色  #BUG 如果代入的变量不存在字段名称为 'A_IB' 或者 'Z_IB'，那么会报错
-    data_banksRelation_color = np.full((data_vector1.size, data_vector2.size), '#FFFFFF', dtype=object)
+    data_agentsRelation_color = np.full((data_vector1.size, data_vector2.size), '#FFFFFF', dtype=object)
     if 'A_IB' in df_2D.columns and 'Z_IB' in df_2D.columns:
         data_A_IB = df_2D.loc[df_2D[sgv_vis['name_time']] == time, 'A_IB'].values.reshape(data_vector1.size, data_vector2.size)
         data_debtors = data_A_IB > 0.0
         data_Z_IB = df_2D.loc[df_2D[sgv_vis['name_time']] == time, 'Z_IB'].values.reshape(data_vector1.size, data_vector2.size)
         data_creditors = data_Z_IB > 0.0
         data_banksRelation = None
-        relation_color = ''
+        relation_color = '#FFFFFF'  # 如果没有债权债务关系，那么就将关系状态数据之颜色设置为白色
         if relations == 'cre':
             data_banksRelation = data_creditors
             relation_color = sgv_vis['dict_relation_colors']['cre']
@@ -162,16 +180,16 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_1D_row: pd.DataFrame, df
             data_banksRelation = data_debtors
             relation_color = sgv_vis['dict_relation_colors']['deb']
             pass  # if
-        for i in range(data_banksRelation_color.shape[0]):
-            for j in range(data_banksRelation_color.shape[1]):
+        for i in range(data_agentsRelation_color.shape[0]):
+            for j in range(data_agentsRelation_color.shape[1]):
                 if data_banksRelation[i, j] > 0:
-                    data_banksRelation_color[i, j] = relation_color
+                    data_agentsRelation_color[i, j] = relation_color
                     pass  # if
                 pass  # for
             pass  # for
         pass  # if
 
-    ### 生成颜色映射信息
+    ### 生成值数据颜色映射信息
     colormap_min_value = sgv_vis['min_1D_agent_value_in_all_panel']
     colormap_min_color = colormap[0]
     colormap_max_value = sgv_vis['max_1D_agent_value_in_all_panel']
@@ -193,14 +211,14 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_1D_row: pd.DataFrame, df
         vector1_data=vector1,
         vector1_values=data_vector1,
         vector1_labels=data_agentsName_row,
-        vector1_labels_color=data_banksState_color,
+        vector1_labels_color=data_agentsState_color_row,
         vector2_data=vector2,
         vector2_values=data_vector2,
-        vector2_labels=data_agentsName_row,
-        vector2_labels_color=data_banksState_color,
+        vector2_labels=data_agentsName_col,
+        vector2_labels_color=data_agentsState_color_col,
         matrix_data=matrix.reshape(data_vector1.size, data_vector2.size),
         matrix_values=data_matrix.reshape(data_vector1.size, data_vector2.size),
-        matrix_labels_color=data_banksRelation_color,
+        matrix_labels_color=data_agentsRelation_color,
         others=others,
     )
 
@@ -256,11 +274,11 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     # ## 示例数据  #NOTE 仅在测试该功能期间使用
     # matrix_values = np.random.rand(5, 5)
     # vector1_values = np.random.rand(5)
-    # vector2_values = np.random.rand(5)
+    # vector2_values = np.random.rand(4)
     # step = 1
     # A_IB = 'A_IB'
     # vector1_labels = ['bank1', 'bank2', 'bank3', 'bank4', 'bank5']
-    # vector2_labels = ['bank1', 'bank2', 'bank3', 'bank4', 'bank5']
+    # vector2_labels = ['asset1', 'asset2', 'asset3', 'asset4']
 
     ## 创建自定义的颜色映射
     cmap = LinearSegmentedColormap.from_list('custom', [(0, others['color_map'][1]), (1, others['color_map'][3])], N=256)
@@ -282,7 +300,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_info.text(0.5, 1.0, dw_text, ha='center', va='center', color='black', fontsize=16)  # 在子图的中心添加文本
 
     ## 绘制矩阵热图
-    ax_matrix = fig.add_subplot(gs[2, 1])
+    ax_matrix = fig.add_subplot(gs[2, 1], aspect='equal')
     im_matrix = ax_matrix.pcolormesh(matrix_data.astype(float), cmap=cmap, edgecolors='black', linewidths=0.1, vmin=0, vmax=1)
 
     ax_matrix.set_title('')
@@ -305,7 +323,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
         pass  # for
 
     ## 绘制向量1的热图
-    ax_vector1 = fig.add_subplot(gs[2, 0])
+    ax_vector1 = fig.add_subplot(gs[2, 0], aspect='equal')
     ax_vector1.pcolormesh(vector1_data[:, np.newaxis].astype(float), cmap=cmap, edgecolors='black', linewidths=0.1, vmin=0, vmax=1)
 
     ax_vector1.set_title('')
@@ -324,7 +342,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
         pass  # for
 
     ## 绘制向量2的热图
-    ax_vector2 = fig.add_subplot(gs[1, 1])
+    ax_vector2 = fig.add_subplot(gs[1, 1], aspect='equal')
     ax_vector2.pcolormesh(vector2_data[np.newaxis, :].astype(float), cmap=cmap, edgecolors='black', linewidths=0.1, vmin=0, vmax=1)
 
     ax_vector2.set_title('')
