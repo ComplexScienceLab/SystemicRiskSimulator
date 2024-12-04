@@ -38,8 +38,8 @@ class Executer:
 
         """
 
-        # 深拷贝一份作为上一回合的数据
-        A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
+        # # 深拷贝一份作为上一回合的数据
+        # A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
 
         sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
         sgv['phase'] = 1  # 逐相复位（起始为1）
@@ -56,7 +56,8 @@ class Executer:
                 pass  # if
             pass  # if
 
-        return A, A_last, sgv
+        # return A, A_last, sgv
+        return A, sgv
 
     @classmethod
     def update_turnStep_by_RL(cls, content, A: ModelAgent, A_last: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
