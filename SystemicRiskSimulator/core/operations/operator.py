@@ -4,7 +4,7 @@
 
 from SystemicRiskSimulator.external_packages import Path, timeit, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional
 from SystemicRiskSimulator.tools.logging_tools import log_message, record_work_state
-from SystemicRiskSimulator.core.define.define_agents import SystemicRiskAgent
+from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.collector import Collector
 
@@ -172,13 +172,14 @@ class Operator:
         pass  # function
 
     @classmethod
-    def operate_run_experiment(cls, A: SystemicRiskAgent, A_last: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    # def operate_run_experiment(cls, A: ModelAgent, A_last: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    def operate_run_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
         运作运行实验。用于传统的 ABM 模型。
 
         Args:
-            A (SystemicRiskAgent): 多主体
-            A_last (SystemicRiskAgent): 上一回合的多主体
+            A (ModelAgent): 多主体
+            A_last (ModelAgent): 上一回合的多主体
             A_data (AgentDataCollection): 多主体之数据
             sgv (dict): 模拟器全局变量
             para (dict): 参数变量
@@ -196,8 +197,9 @@ class Operator:
         sgv['num_bank'] = len(A.BB['id_agent'])
 
         content_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
+        # content_Agents = model['model_agents'](content_Finance)  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
         if 'model_agents' in model.keys():  # 如果该模型有设计 Content_Agents
-            content_Agents = model['model_agents'](np.array(para['Strategy_default']))  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
+            content_Agents = model['model_agents'](np.array(para['Strategy_default']))  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
             content_Model = model['model_main'](content_Finance, content_Agents)  # 初始化 Content_Model 之实例
         else:
             content_Model = model['model_main'](content_Finance)  # 初始化 Content_Model 之实例
@@ -212,7 +214,8 @@ class Operator:
             )
             pass  # if
 
-        content_Model.model_content(A, A_last, A_data, para, sgv)
+        # content_Model.model_content(A, A_last, A_data, para, sgv)
+        content_Model.model_content(A, A_data, para, sgv)
 
         pass  # function
 
@@ -293,7 +296,7 @@ class Operator:
 
         ## 初始化 agents 数据
         A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
-        A_last = SystemicRiskAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
+        # A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
 
         ## 计算个体数量
         sgv['num_bank'] = len(A.BB['id_agent'])
@@ -306,18 +309,19 @@ class Operator:
                 is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
             )
 
-        A_data = Collector.init_agent_data_collection(A, sgv)
+        A_data = Collector.init_agent_data_collection(A, sgv, para)
 
-        return A, A_last, A_data, sgv, para
+        return A, A_data, sgv, para
+        # return A, A_last, A_data, sgv, para
         pass  # function
 
     @classmethod
-    def operate_step_experiment(cls, A: SystemicRiskAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    def operate_step_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
         运作步进实验。用于使用强化学习环境工具包自定义的模型。
 
         Args:
-            A (SystemicRiskAgent): 多主体
+            A (ModelAgent): 多主体
             A_data (AgentDataCollection): 多主体之数据
             sgv (dict): 模拟器全局变量
             para (dict): 参数字典
@@ -397,41 +401,41 @@ class Operator:
 
         pass  # function
 
-    @classmethod
-    def set_imported_values_to_Bank_variables(cls, para: dict, sgv: dict):
-        """
-        导入数据以初始化银行主体众、银行间主体众变量
-
-        Args:
-            para (dict): 参数集
-            sgv (dict): 模拟器全局变量
-
-        Returns:
-            bank(BankCommercial): 银行主体众
-            interbank(BankInterbank): 银行间主体众
-        """
-
-        with open(Path(sgv['folderpath_agents'], 'agents', f"BB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
-            dict_bankCommercial = pickle.load(f)
-        with open(Path(sgv['folderpath_agents'], 'agents', f"IB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
-            dict_bankInterbank = pickle.load(f)
-
-        # ## NOTE 当用对象字段数据结构时：
-        # bank, interbank = cls.set_default_values_to_Bank_variables()
-        # bank.__dict__ = deepcopy(dict_bankCommercial)
-        # interbank.__dict__ = deepcopy(dict_bankInterbank)
-
-        ## NOTE 当用pandas数据结构时：
-        bank = pd.Series()
-        for k, v in deepcopy(dict_bankCommercial).items():
-            bank[k] = v
-        interbank = pd.Series()
-        for k, v in deepcopy(dict_bankInterbank).items():
-            interbank[k] = v
-
-        return bank, interbank
-
-        pass  # function
+    # @classmethod
+    # def set_imported_values_to_Bank_variables(cls, para: dict, sgv: dict):
+    #     """
+    #     导入数据以初始化银行主体众、银行间主体众变量
+    #
+    #     Args:
+    #         para (dict): 参数集
+    #         sgv (dict): 模拟器全局变量
+    #
+    #     Returns:
+    #         bank(BankCommercial): 银行主体众
+    #         interbank(BankInterbank): 银行间主体众
+    #     """
+    #
+    #     with open(Path(sgv['folderpath_agents'], 'agents', f"BB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+    #         dict_bankCommercial = pickle.load(f)
+    #     with open(Path(sgv['folderpath_agents'], 'agents', f"IB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+    #         dict_bankInterbank = pickle.load(f)
+    #
+    #     # ## NOTE 当用对象字段数据结构时：
+    #     # bank, interbank = cls.set_default_values_to_Bank_variables()
+    #     # bank.__dict__ = deepcopy(dict_bankCommercial)
+    #     # interbank.__dict__ = deepcopy(dict_bankInterbank)
+    #
+    #     ## NOTE 当用pandas数据结构时：
+    #     bank = pd.Series()
+    #     for k, v in deepcopy(dict_bankCommercial).items():
+    #         bank[k] = v
+    #     interbank = pd.Series()
+    #     for k, v in deepcopy(dict_bankInterbank).items():
+    #         interbank[k] = v
+    #
+    #     return bank, interbank
+    #
+    #     pass  # function
 
     @classmethod
     def install_data(cls, init_data_method: str, sgv: dict, para: dict):
@@ -442,7 +446,7 @@ class Operator:
 
         - ``import data``:  导入数据以初始化
 
-        注意：在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值做处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
+        注意：在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值赋值处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
 
         Args:
             init_data_method (str): 初始化数据的方式
@@ -457,26 +461,83 @@ class Operator:
 
         """
 
-        if init_data_method == "import data":
-            BB, IB = cls.set_imported_values_to_Bank_variables(para, sgv)  # 导入数据以初始化银行变量
-        else:
-            raise ("关键词" + str(init_data_method) + "取值错误！")
-            pass  # if
+        # if init_data_method == "import data":
+        #     BB, IB = cls.set_imported_values_to_Bank_variables(para, sgv)  # 导入数据以初始化银行变量
+        # else:
+        #     raise ("关键词" + str(init_data_method) + "取值错误！")
+        #     pass  # if
 
-        sgv['num_bank'] = len(BB.on)  # 获取 agents 之个体数量
+        # #HACK 改之前的加载 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
+        # dict_agents_data = {}
+        # for i, agents_data in enumerate(sgv['list_agents_data']):
+        #     with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+        #         dict_agents_data[agents_data] = pickle.load(f)
+        #     pass  # for
 
-        # HACK 后续需要统一这两个变量的用法，防止混乱使用
-        b = (BB.on | BB.off)  # 临时设置A.BB示性变量
-        ib = ((BB.on | BB.off).reshape(-1, 1) & (BB.on | BB.off).reshape(1, -1))  # 临时设置IB示性变量
+        # #HACK 改之后的加载 agents 数据文件代码
+        dict_agents_data = {}
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            agents_filename = f"{para_01}"
+            for para_02 in sgv['list_agents_data_filename_para_02']:
+                if isinstance(para[para_02], float):
+                    agents_filename += f"-{para_02}={float(para[para_02]):.2f}"
+                else:
+                    agents_filename += f"-{para_02}={para[para_02]}"
+                pass  # for
+            agents_filename += ".pkl"
+            with open(Path(sgv['folderpath_agents'], 'agents', agents_filename), 'rb') as f:
+                dict_agents_data[para_01] = pickle.load(f)
+            pass  # for
+
+        # with open(Path(sgv['folderpath_agents'], 'agents', f"IB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+        #     dict_bankInterbank = pickle.load(f)
+
+        # ## NOTE 当用对象字段数据结构时：
+        # bank, interbank = cls.set_default_values_to_Bank_variables()
+        # bank.__dict__ = deepcopy(dict_bankCommercial)
+        # interbank.__dict__ = deepcopy(dict_bankInterbank)
+
+        ## NOTE 当用pandas数据结构时：
+
+        A = pd.Series()
+        for k, v in dict_agents_data.items():
+            A[k] = pd.Series()
+            for k1, v1 in deepcopy(v).items():
+                A[k][k1] = v1
+            pass  # for
+
+        # for k, v in dict_agents_data.items():
+        #     if k == 'BB':
+        #         BB = pd.Series()
+        #         for k, v in deepcopy(v).items():
+        #             BB[k] = v
+        #     elif k == 'IB':
+        #         IB = pd.Series()
+        #         for k, v in deepcopy(v).items():
+        #             IB[k] = v
+        #     pass
+
+        # BB = pd.Series()
+        # for k, v in deepcopy(dict_bankCommercial).items():
+        #     BB[k] = v
+        # IB = pd.Series()
+        # for k, v in deepcopy(dict_bankInterbank).items():
+        #     IB[k] = v
+
+        # sgv['num_bank'] = len(BB.exist)  # 获取 agents 之个体数量
+
+        # # HACK 后续需要统一这两个变量的用法，防止混乱使用
+        # b = (BB.exist | BB.exit)  # 临时设置A.BB示性变量
+        # ib = ((BB.exist | BB.exit).reshape(-1, 1) & (BB.exist | BB.exit).reshape(1, -1))  # 临时设置IB示性变量
 
         ## 构建Agent模型
         # NOTE 注意这时候`b`、`ib`变量在后续过程中没有发生变动。
 
         ## HACK 当用pandas数据结构时：
-        A = pd.Series([BB, IB, b, ib], index=['BB', 'IB', 'b', 'ib'])
+        # A = pd.Series([BB, IB, b, ib], index=['BB', 'IB', 'b', 'ib'])
 
         # ## HACK 当用对象字段数据结构时。
-        # A = SystemicRiskAgent(
+        # A = ModelAgent(
         #     0,  # 编号（必备的）
         #     BB,  # 商业银行群
         #     b,  # 商业银行群示性变量

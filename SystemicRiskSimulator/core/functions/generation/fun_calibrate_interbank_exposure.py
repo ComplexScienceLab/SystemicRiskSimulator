@@ -47,7 +47,12 @@ def calibrate_interbank_exposure(A_IB, Z_IB, target_density, n_samples_calib=10,
     Z_IB_r = numpy2ri.py2rpy(Z_IB_adjasted)
 
     # 调用 R 中的 calibrate_interbank_exposure 函数
-    model = systemicrisk.calibrate_ER(A_IB_r, Z_IB_r, float(target_density), n_samples_calib, thin)
+    if A_IB_adjasted.size != Z_IB_adjasted.size:  # 如果 A_IB 不是方阵，则使用 nonsquare 模型
+        model = systemicrisk.calibrate_ER_nonsquare(A_IB_r, Z_IB_r, float(target_density), n_samples_calib, thin)
+    else:
+        model = systemicrisk.calibrate_ER(A_IB_r, Z_IB_r, float(target_density), n_samples_calib, thin)
+        pass  # if
+
     # 使用重构的模型生成样本
     reconstructed_L_r = systemicrisk.sample_HierarchicalModel(l=A_IB_r, a=Z_IB_r, model=model, nsamples=1, thin=thin)
 

@@ -33,6 +33,8 @@ def adjust_A_IB_Z_IB_with_virtual_bank(A_IB, Z_IB):
         is_add_virtual_bank = False
 
     return A_IB_adjasted, Z_IB_adjasted, is_add_virtual_bank
+    pass  # function
+
 
 
 def adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB):
@@ -76,3 +78,4 @@ def adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB):
     print(np.sum(A_IB_adjasted) - np.sum(Z_IB_adjasted))
 
     return A_IB_adjasted, Z_IB_adjasted
+    pass  # function
