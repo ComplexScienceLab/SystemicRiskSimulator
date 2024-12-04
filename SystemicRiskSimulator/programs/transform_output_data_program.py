@@ -142,14 +142,16 @@ def main(sgv):
         if sgv['is_enable_multiprocessing_for_transform_output_data']:
             # #NOTE：并行处理，用 dask 延迟任务 #HACK 不建议用，因为速度没有显著提升
 
-            # #NOTE：多进程并行处理  #FIXME 没有适配改之后的处理结果数据代码，暂时不能用
+            # #NOTE：多进程并行处理
             num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
             works = []
-            for i, exp_id in enumerate(list_idsExp_TASK):
-                filepath_pkl_BB = list_filepath_pkl_BB[i]
-                filepath_pkl_IB = list_filepath_pkl_IB[i]
-                # print(f"exp_id = {exp_id}")
-                works.append((exp_id, filepath_pkl_BB, filepath_pkl_IB, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data']))
+            for para_01 in sgv['list_agents_data_filename_para_01']:
+                filepath_pkl = dict()
+                for i, exp_id in enumerate(list_idsExp_TASK):
+                    filepath_pkl[para_01] = dict_filepath_pkl[para_01][i]
+                    # print(f"exp_id = {exp_id}")
+                    works.append((exp_id, filepath_pkl, sgv['folderpath_experiments_output_log'], sgv['folderpath_experiments_output_data']))
+                    pass  # for
                 pass  # for
 
             # 并行运行作业
