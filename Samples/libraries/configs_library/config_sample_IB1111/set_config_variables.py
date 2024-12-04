@@ -12,25 +12,28 @@ set_config_variables = dict(
         预处理实验结果程序=True,  # 默认 True
         可视化结果程序=True,  # 默认 False
     ),
+
+    list_agents_data_filename_para_01=['BB', 'IB'],  # 设置 agents 初始数据列表
+    list_agents_data_filename_para_02=['year', 'density'],  # 设置 agents 初始数据列表文件名相关的参数
     init_data_method=r"import data",  # 初始化数据方式。初始化方式有如下："import data"、"set manually"、"randomly"、"only init"。默认"import data"；
     init_parameters_method=r"import data",  # 初始化参数方式。初始化方式有如下："import data"、"set manually"。默认"import data"；
     type_of_experiments_foldername=r"manually",  # 设置实验文件夹命名方式。取值："default"、"manually"。默认"manually"；
 
     # # 手动设置生成的实验文件夹全名。用于 `type_of_experiments_foldername=r"manually"`；
-    foldername_set_manually=r"test_sample_01",
+    foldername_set_manually=r"test_sample_IB1111",
 
-    foldername_prefix_experiments=r"test_sample_01",  # 手动设置初始生成的实验文件夹前缀名。默认"default"。当设置实验文件夹命名方式取值 "default" 的时候激活；
+    foldername_prefix_experiments=r"test_sample_IB1111",  # 手动设置初始生成的实验文件夹前缀名。默认"default"。当设置实验文件夹命名方式取值 "default" 的时候激活；
     is_datetime=True,  # 是否使用日期时间作为实验文件夹名称的一部分。默认 True；
     foldername_outputData=r"SystemicRiskSimulator",  # 输出数据总文件夹名称
     folderpath_realpath_outputData=r".",  # 从本实验项目根路径文件夹到输出数据总文件夹之相对路径。
     folderpath_root_experiments=r"Samples/data/sims/",  # 手动设置实验文件夹根路径。默认"data/sims/"；
     foldername_experiments_output_data=r"exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
-    folderpath_models=r"Samples/libraries/models_library/model_sample_01",  # 模型所在的文件夹
-    folderpath_config=r"Samples/libraries/configs_library/config_sample_01",  # 配置项设置所在的文件夹
-    folderpath_parameters=r"Samples/libraries/parameters_library/parameters_sample_01",  # 参数设置所在的文件夹
-    folderpath_agents=r"Samples/libraries/agents_library/agents_sample_01",  # 个体众数据初始化所在的文件夹
+    folderpath_models=r"Samples/libraries/models_library/model_sample_IB1111",  # 模型所在的文件夹
+    folderpath_config=r"Samples/libraries/configs_library/config_sample_IB1111",  # 配置项设置所在的文件夹
+    folderpath_parameters=r"Samples/libraries/parameters_library/parameters_sample_IB1111",  # 参数设置所在的文件夹
+    folderpath_agents=r"Samples/libraries/agents_library/agents_sample_IB1111",  # 个体众数据初始化所在的文件夹
     list_agents_yearName=['2012'],  # 设置 agents 初始数据列表（按照年份名称） #DEBUG 调试专用
-    running_mode=r"continue running mode",  # 运行模式。取值："continue running mode": 持续运行模式一路直接运行。默认"continue running mode"；
+    running_mode=r"continue running mode",  # 运行模式。取值："continue running mode": 持续运行模式, "stepping running mode": 步进运行模式}，否则一路直接运行。默认"continue running mode"； #BUG 暂时还没有重构"stepping running mode"的情况，因此设置为该模式会出错
     step_size=1,  # 设置步进跨度；如果该数值设置较大，则相当于直接处理程序；
 
     is_enable_multiprocessing_for_run_model=False,  # 运行模型期间，是否启用的多进程。默认 False；
@@ -42,22 +45,21 @@ set_config_variables = dict(
     list_idsExperiment_to_run=[46],  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
 
     num_bank=5,  # 手动输入最大的银行个数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
-    num_assets=1,  # 手动输入最大的资产种类数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
 
     is_auto_confirmation=True,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
-    is_auto_open_outputlog=False,  # 是否自动打开输出日志文件。默认 True；
+    is_auto_open_outputlog=False,  # 是否自动打开输出日志文件。默认 False；
     system_platform=sys.platform,  # 获取系统信息
 
     # 开发、调试模型专用变量：
-    is_develope_mode=True,  # 是否处于开发调试状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
+    is_develope_mode=False,  # 是否处于开发状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
     is_maintain_model_files_in_simulator_when_develope_mode=False,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。
     is_ignore_warning=False,  # 是否忽略警告。默认 False；
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)
-    test_turn_for_test=4,  # test变量，用于条件断点调试。相关语句：`sgv['turn']>=sgv['test_turn_for_test']`；
-    test_max_num_of_turn=10000,  # 最大运行轮次数（开发调试用）。默认 10000；
+    test_turn_for_test=4,  # test变量，用于打断点。相关语句：`sgv['turn']>=sgv['test_turn_for_test']`；
+    test_max_num_of_turn=1000,  # 最大运行轮次数（测试用）。默认 10000；
 
     # 其它配置
-    is_compress_result_data=False,  # 是否压缩实验结果数据。默认 False 。压缩数据可以在一定程度上有效减少实验数据文件的大小，但是会增加数据的读写时间。最合适的压缩数据方法是手动压缩相关的文件夹为 zip 等格式的文件。
+    is_compress_result_data=False,  # 是否压缩实验结果数据。默认 False。不建议开启此项，除非一批次实验生成大量数据。压缩数据可以在一定程度上有效减少实验数据文件的大小，但是会增加数据的读写时间。最高效的压缩数据方法是手动压缩相关的文件夹为 zip 等格式的文件。
 
     # NOTE 使用的模型类型类型设置：
     is_use_PettingZoo_environments=False,  # 是否使用 PettingZoo 环境框架。默认 True。
@@ -65,7 +67,7 @@ set_config_variables = dict(
     RL_state='using',  # 强化学习状态：可选值包括 'training', 'using'。默认值 'using'； #HACK 注意，当只有处于 'using' 值的时候才会收集运行过程之数据。
 
     # NOTE 手动设置后续处理用的实验文件夹名
-    foldername_experiments=r'test_sample_01',  # 实验文件夹名称
+    foldername_experiments=r'test_sample_IB1111',  # 实验文件夹名称
 
     # NOTE 设置预处理实验结果数据：
     is_enable_multiprocessing_for_transform_output_data=True,  # 是否启用多进程。默认 True；
@@ -92,8 +94,8 @@ set_config_variables = dict(
         拼接资产负债表图=True,  # 默认 True
         绘制矩阵热图=True,  # 默认 True
         拼接矩阵热图=True,  # 默认 True
-        绘制资金流网络图=True,  # 默认 False
-        拼接资金流网络图=True,  # 默认 False
+        绘制资金流网络图=True,  # 默认 True
+        拼接资金流网络图=True,  # 默认 True
         银行状态表格可视化=True,  # 默认 True
     ),
 
@@ -114,7 +116,7 @@ set_config_variables = dict(
             'hel': '#F1D0CB',  # 浅红色
             'isv': '#D9E8D6',  # 浅绿色
             'br': '#CCCCCC',  # 灰色
-            'off': '#999999',  # 深灰色
+            'exit': '#999999',  # 深灰色
         },
 
         # 设置各银行关系（包括债权债务关系）之颜色
@@ -124,6 +126,8 @@ set_config_variables = dict(
         },
 
         # #NOTE 设置矩阵热力图不同数据对应的属性
+
+        # 设置绘制矩阵热图子图行列值之数据、颜色映射、关系类型
         list_dataTypes_for_heatmaps=[
             dict(
                 data_name=('A_IB_all', 'Z_IB_all', 'A_IB'),
@@ -135,13 +139,18 @@ set_config_variables = dict(
                 colormap=('#FFFFFF', '#FF0000'),
                 relations='cre',
             ),
+            # dict(
+            #     data_name=('Loss_exIB_def_t', 'Default_D_def_s', 'Loss_IB_def'),
+            #     colormap=('#FFFFFF', '#000000'),
+            #     relations='deb',
+            # ),
             dict(
-                data_name=('Loss_def_t', 'Default_s', 'Loss_IB_def'),
+                data_name=('Loss_IB_def_t', 'Default_IB_def_s', 'Loss_IB_def'),
                 colormap=('#FFFFFF', '#000000'),
                 relations='deb',
             ),
             dict(
-                data_name=('Default_s', 'Loss_def_t', 'Default_IB'),
+                data_name=('Default_s', 'Loss_t', 'Default_IB'),
                 colormap=('#FFFFFF', '#A78900'),
                 relations='cre',
             ),
@@ -150,6 +159,14 @@ set_config_variables = dict(
                 colormap=('#FFFFFF', '#554EE6'),
                 relations='cre',
             ),
+        ],
+
+        # 个体状态数据类型。注意，这个数据存在优先级，暨越靠前的数据类型优先使用。
+        set_dataTypes_for_agentsState=[
+            'exit',
+            'br',
+            'isv',
+            'hel',
         ],
 
         # 设置绘制资产负债表图柱子的一些配置
@@ -167,7 +184,7 @@ set_config_variables = dict(
             accounts=[
                 dict(
                     data_type='asset',
-                    level='level 3',
+                    level='level 2',
                     subject='A_P',
                     value=0.0,
                     fill_color='#FBE7CF',
@@ -178,7 +195,7 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='asset',
-                    level='level 3',
+                    level='level 2',
                     subject='A_Q',
                     value=0.0,
                     fill_color='#DDE8FA',
@@ -189,7 +206,7 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='asset',
-                    level='level 3',
+                    level='level 2',
                     subject='A_R',
                     value=0.0,
                     fill_color='#DFC942',
@@ -200,32 +217,10 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='asset',
-                    level='level 3',
+                    level='level 2',
                     subject='A_other',
                     value=0.0,
                     fill_color='#FFFFFF',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='asset',
-                    level='level 3',
-                    subject='A_IB_all',
-                    value=0.0,
-                    fill_color='#F1D0CD',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='asset',
-                    level='level 2',
-                    subject='A_exIB',
-                    value=0.0,
-                    fill_color='#F9F7EE',
                     stroke_color='gray',
                     stroke_width=1,
                     position=(0, 0),
@@ -255,30 +250,8 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='liability',
-                    level='level 3',
-                    subject='Z_D',
-                    value=0.0,
-                    fill_color='#DFD6E6',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='liability',
-                    level='level 3',
-                    subject='Z_IB_all',
-                    value=0.0,
-                    fill_color='#D9E8D6',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='liability',
                     level='level 2',
-                    subject='Z_exIB',
+                    subject='Z_D',
                     value=0.0,
                     fill_color='#DFD6E6',
                     stroke_color='gray',
@@ -303,17 +276,6 @@ set_config_variables = dict(
                     subject='Z_all',
                     value=0.0,
                     fill_color='#EEEEEE',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='equity',
-                    level='level 3',
-                    subject='E_all',
-                    value=0.0,
-                    fill_color='#FFFF98',
                     stroke_color='gray',
                     stroke_width=1,
                     position=(0, 0),
@@ -347,7 +309,7 @@ set_config_variables = dict(
             shocks=[
                 dict(
                     data_type='shock_def_t',
-                    level='level 3',
+                    level='level 2',
                     subject='Shock_P_def_t',
                     value=0.0,
                     fill_color='#FF0000',
@@ -360,32 +322,6 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='shock_def_t',
-                    level='level 3',
-                    subject='Shock_IB_def_t',
-                    value=0.0,
-                    fill_color='#FF0000',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_def_t',
-                    level='level 2',
-                    subject='Shock_P_def_t',
-                    value=0.0,
-                    fill_color='#FF0000',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_exIB',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_def_t',
                     level='level 2',
                     subject='Shock_IB_def_t',
                     value=0.0,
@@ -394,25 +330,12 @@ set_config_variables = dict(
                     stroke_width=1,
                     side='asset',
                     align='A_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_def_t',
-                    level='level 1',
-                    subject='Shock_def_t',
-                    value=0.0,
-                    fill_color='#FF0000',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_all',
                     position=(0, 0),
                     size=(0, 0),
                 ),
                 dict(
                     data_type='shock_def_s',
-                    level='level 3',
+                    level='level 2',
                     subject='Shock_D_def_s',
                     value=0.0,
                     fill_color='#00FF00',
@@ -425,32 +348,6 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='shock_def_s',
-                    level='level 3',
-                    subject='Shock_IB_def_s',
-                    value=0.0,
-                    fill_color='#00FF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_def_s',
-                    level='level 2',
-                    subject='Shock_D_def_s',
-                    value=0.0,
-                    fill_color='#00FF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_exIB',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_def_s',
                     level='level 2',
                     subject='Shock_IB_def_s',
                     value=0.0,
@@ -459,19 +356,6 @@ set_config_variables = dict(
                     stroke_width=1,
                     side='liability',
                     align='Z_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='shock_def_s',
-                    level='level 1',
-                    subject='Shock_def_s',
-                    value=0.0,
-                    fill_color='#00FF00',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_all',
                     position=(0, 0),
                     size=(0, 0),
                 ),
@@ -481,7 +365,7 @@ set_config_variables = dict(
             loss=[
                 dict(
                     data_type='loss',
-                    level='level 3',
+                    level='level 2',
                     subject='Loss_exIB_def_t',
                     value=0.0,
                     fill_color='#808080',
@@ -494,7 +378,7 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='loss',
-                    level='level 3',
+                    level='level 2',
                     subject='Loss_IB_def_t',
                     value=0.0,
                     fill_color='#808080',
@@ -502,19 +386,6 @@ set_config_variables = dict(
                     stroke_width=1,
                     side='asset',
                     align='A_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='loss',
-                    level='level 2',
-                    subject='Loss_def_t',
-                    value=0.0,
-                    fill_color='#808080',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='asset',
-                    align='A_exIB',
                     position=(0, 0),
                     size=(0, 0),
                 ),
@@ -537,7 +408,7 @@ set_config_variables = dict(
             default=[
                 dict(
                     data_type='default',
-                    level='level 3',
+                    level='level 2',
                     subject='Default_D_def_s',
                     value=0.0,
                     fill_color='#A68E17',
@@ -550,34 +421,8 @@ set_config_variables = dict(
                 ),
                 dict(
                     data_type='default',
-                    level='level 3',
+                    level='level 2',
                     subject='Default_IB_def_s',
-                    value=0.0,
-                    fill_color='#A68E17',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_IB_all',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='default',
-                    level='level 2',
-                    subject='Default_exIB_s',
-                    value=0.0,
-                    fill_color='#A68E17',
-                    stroke_color='gray',
-                    stroke_width=1,
-                    side='liability',
-                    align='Z_exIB',
-                    position=(0, 0),
-                    size=(0, 0),
-                ),
-                dict(
-                    data_type='default',
-                    level='level 2',
-                    subject='Default_IB_s',
                     value=0.0,
                     fill_color='#A68E17',
                     stroke_color='gray',
@@ -638,16 +483,16 @@ set_config_variables = dict(
             ]
         ],
 
-
-
         # #NOTE 设置银行状态表格的一些配置
         # 状态相关的列名
         columns_states=[
-            'on',
-            'off',
+            'exist',
+            'exit',
             'hel',
             'isv',
             'br',
+            'con',
+            'inf',
         ],
 
         # 需要提取的列名
@@ -661,11 +506,13 @@ set_config_variables = dict(
             'id_agent',
             'abbr',
             'fullName',
-            'on',
-            'off',
+            'exist',
+            'exit',
             'hel',
             'isv',
             'br',
+            'con',
+            'inf',
         ],
 
         # 需要调整列边距的列名

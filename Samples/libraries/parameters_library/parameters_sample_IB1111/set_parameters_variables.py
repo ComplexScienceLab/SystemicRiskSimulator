@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
     # %%
     config = dict()
-    config['folderpath_config'] = r"Samples/libraries/configs_library/config_sample_01"  # 配置项文件夹路径
+    config['folderpath_config'] = r"Samples/libraries/configs_library/config_sample_IB1111"  # 配置项文件夹路径
     config['foldername_simulator'] = r"SystemicRiskSimulator"  # 模拟器所在工程文件夹名称
     config['folderpath_realpath_simulator'] = r"."  # 从本实验项目根路径文件夹到模拟器所在工程文件夹之相对路径。
     config['is_auto_confirmation'] = True  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 True；
@@ -163,11 +163,11 @@ if __name__ == '__main__':
     id_agents_para = 0
     for year in list_agents_yearName:
         for density in list_agents_networkDensity:
-            with open(Path(sgv['folderpath_agents'], 'agents', f"BB_year={year}_density={density:.2f}.pkl"), 'rb') as f:
+            with open(Path(sgv['folderpath_agents'], 'agents', f"BB-year={year}-density={density:.2f}.pkl"), 'rb') as f:
                 data = pickle.load(f)
                 new_row = pd.DataFrame({'id_agents_para': id_agents_para, 'yearName': year, 'networkDensity': density, 'agentsData': [data]})
                 df_agents_BB = pd.concat([df_agents_BB, new_row], ignore_index=True)
-            with open(Path(sgv['folderpath_agents'], 'agents', f"IB_year={year}_density={density:.2f}.pkl"), 'rb') as f:
+            with open(Path(sgv['folderpath_agents'], 'agents', f"IB-year={year}-density={density:.2f}.pkl"), 'rb') as f:
                 data = pickle.load(f)
                 new_row = pd.DataFrame({'id_agents_para': id_agents_para, 'yearName': year, 'networkDensity': density, 'agentsData': [data]})
                 df_agents_IB = pd.concat([df_agents_IB, new_row], ignore_index=True)
