@@ -1115,7 +1115,7 @@ def process_one_heatmap(args):
 
     ## 用 matplotlib 绘制
     fig_heatmap = draw_one_interbank_matrix_heatmaps(data_vis_one_time_heatmap, sgv['vis'])
-    fig_heatmap.savefig(Path(sgv['folderpath_plots_single_heatmaps'], 'IB_exp=' + str(i_exp) + '+data=' + d['data_name'][2] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
+    fig_heatmap.savefig(Path(sgv['folderpath_plots_single_heatmaps'], f"IB_exp={str(i_exp)}+data={d['data_name'][0]}_{d['data_name'][1]}_{d['data_name'][2]}+{sgv['vis']['name_time']}={str(t)}.pdf"))  # 保存
 
     pass  # function
 
