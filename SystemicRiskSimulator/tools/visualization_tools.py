@@ -1398,7 +1398,7 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
     total_figures_per_page = num_figure_in_horizontal_direction_per_page * num_figure_in_vertical_direction_per_page  # 每页最大总图数
     num_pages = int(np.ceil(len(list_fig_files) / total_figures_per_page))  # 最大总页数
 
-    ## 排序，优先按照需要分页的方向，其次按照不需要分页的方向。 #BUG 拼接矩阵热图可能会出现同一页的图像换序的情况。
+    ## 排序，优先按照需要分页的方向，其次按照不需要分页的方向。 #BUG 按照 data 排序的时候有时候可能出现个别乱序现象
     sorted_pkl_panel_file_list = sorted(list_fig_files, key=lambda name: (
         re.search(match_pattern_in_paging_direction, name)[0] if not re.search(match_pattern_in_paging_direction, name)[0].isdigit() else int(re.search(match_pattern_in_paging_direction, name)[0]),
         re.search(match_pattern_in_no_paging_direction, name)[0] if not re.search(match_pattern_in_no_paging_direction, name)[0].isdigit() else int(re.search(match_pattern_in_no_paging_direction, name)[0]),
