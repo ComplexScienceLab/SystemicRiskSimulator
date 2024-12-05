@@ -384,7 +384,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ## 调整子图之间的间距
     plt.subplots_adjust(wspace=0.05, hspace=0.05)
 
-    plt.show()  # 显示图像  #NOTE 仅在测试该功能期间使用
+    # plt.show()  # 显示图像  #NOTE 仅在测试该功能期间使用
     plt.close()  # 关闭图像
 
     return fig
