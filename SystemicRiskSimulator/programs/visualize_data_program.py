@@ -357,7 +357,7 @@ def main(sgv):
         list_filepath_csv_panel = list(sgv['folderpath_plots'].glob('*.csv'))  # 获取实验组输出数据csv格式的文件列表
 
         ## 排序，优先按照银行名称，其次按照时间。
-        match_pattern_in_vertical_direction = r'(?<=[IB]B_panel_exp=).+?(?=[(\.csv)])'
+        match_pattern_in_vertical_direction = r'(?<=[IB]B-panel_exp=).+?(?=[(\.csv)])'
         match_pattern_in_horizontal_direction = r'[IB]B'
         sorted_list_filepath_csv_panel = sorted(list_filepath_csv_panel, key=lambda name: (
             int(re.search(match_pattern_in_vertical_direction, str(name))[0]),
@@ -375,8 +375,8 @@ def main(sgv):
 
         ## 依次读取面板形式的CSV格式的文件，预处理每次实验
         for i_exp in experiments_indices:
-            csv_BB_00 = pd.read_csv(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.csv'))
-            csv_IB_00 = pd.read_csv(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.csv'))
+            csv_BB_00 = pd.read_csv(Path(sgv['folderpath_experiments_output_data'], 'BB-panel-exp=' + str(i_exp) + '.csv'))
+            csv_IB_00 = pd.read_csv(Path(sgv['folderpath_experiments_output_data'], 'IB-panel-exp=' + str(i_exp) + '.csv'))
 
             ## 预处理数据表
 
@@ -430,7 +430,7 @@ def main(sgv):
         list_fig_files = list(sgv['folderpath_experiments_output_data'].glob('*_panel_*.pkl'))  # 获取实验组输出数据pkl格式之文件列表
 
         ## 排序，优先按照银行名称，其次按照时间。
-        match_pattern_in_vertical_direction = r'(?<=[IB]B_panel_exp=).+?(?=[(\.pkl)])'
+        match_pattern_in_vertical_direction = r'(?<=[IB]B-panel_exp=).+?(?=[(\.pkl)])'
         match_pattern_in_horizontal_direction = r'[IB]B'
         sorted_pkl_panel_file_list = sorted(list_fig_files, key=lambda name: (
             int(re.search(match_pattern_in_vertical_direction, str(name))[0]),
@@ -470,8 +470,8 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB-panel-exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB-panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
@@ -543,8 +543,8 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB-panel-exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB-panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
@@ -584,7 +584,7 @@ def main(sgv):
                 merged_pdf = merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction, order_of_paging_in_horizontal_and_vertical_direction, order_of_match_pattern_in_horizontal_and_vertical_direction, list_fig_files, i_exp)
 
                 ## 保存
-                merged_pdf.save(Path(sgv['folderpath_plots_makeup_balanceSheets'], 'BB_exp=' + str(i_exp) + '.pdf'))
+                merged_pdf.save(Path(sgv['folderpath_plots_makeup_balanceSheets'], 'BB-exp=' + str(i_exp) + '.pdf'))
                 merged_pdf.close()
 
                 pass  # for  实验编号
@@ -812,8 +812,8 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB-panel-exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB-panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
@@ -856,7 +856,7 @@ def main(sgv):
                 merged_pdf = merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction, order_of_paging_in_horizontal_and_vertical_direction, order_of_match_pattern_in_horizontal_and_vertical_direction, list_fig_files, i_exp)
 
                 ## 保存
-                merged_pdf.save(Path(sgv['folderpath_plots_makeup_heatmaps'], 'IB_exp=' + str(i_exp) + '.pdf'))
+                merged_pdf.save(Path(sgv['folderpath_plots_makeup_heatmaps'], 'IB-exp=' + str(i_exp) + '.pdf'))
                 merged_pdf.close()
 
                 pass  # for
@@ -875,8 +875,8 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB-panel-exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB-panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
@@ -953,8 +953,8 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB-panel-exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB-panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
@@ -996,7 +996,7 @@ def main(sgv):
                 merged_pdf = merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction, order_of_paging_in_horizontal_and_vertical_direction, order_of_match_pattern_in_horizontal_and_vertical_direction, list_fig_files, i_exp)
 
                 ## 保存
-                merged_pdf.save(Path(sgv['folderpath_plots_makeup_graphs'], 'IB_exp=' + str(i_exp) + '.pdf'))
+                merged_pdf.save(Path(sgv['folderpath_plots_makeup_graphs'], 'IB-exp=' + str(i_exp) + '.pdf'))
                 merged_pdf.close()
 
                 pass  # for  实验编号
@@ -1014,8 +1014,8 @@ def main(sgv):
             Tools.delete_and_recreate_folder(sgv['folderpath_visualize_banksStates_table'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB-panel-exp=' + str(i_exp) + '.pkl'))
+                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB-panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
                 num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
@@ -1042,9 +1042,9 @@ def main(sgv):
 
                 df_BankStates = df_BB_panel[sgv['vis']['columnsName_extract']]  # 提取所需列
 
-                df_BankStates.to_excel(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_panel-exp=' + str(i_exp) + '.xlsx'), index=False)  # 将数据写入新的 Excel 文件
+                df_BankStates.to_excel(Path(sgv['folderpath_visualize_banksStates_table'], 'BB-panel-exp=' + str(i_exp) + '.xlsx'), index=False)  # 将数据写入新的 Excel 文件
 
-                wb_BB_panel = load_workbook(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_panel-exp=' + str(i_exp) + '.xlsx'))  # 使用 openpyxl 打开新的 Excel 文件
+                wb_BB_panel = load_workbook(Path(sgv['folderpath_visualize_banksStates_table'], 'BB-panel-exp=' + str(i_exp) + '.xlsx'))  # 使用 openpyxl 打开新的 Excel 文件
                 sheet_BB_panel = wb_BB_panel.active
 
                 sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格  #BUG  后续这个直接设定的单元格地址可能存在问题
@@ -1069,7 +1069,7 @@ def main(sgv):
                         if cell.value == True:
                             cell.fill = PatternFill(start_color="FFBBBB", end_color="FFBBBB", fill_type="solid")  # 根据单元格的值设置背景颜色
 
-                wb_BB_panel.save(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_panel-exp=' + str(i_exp) + '.xlsx'))  # 保存 Excel 文件
+                wb_BB_panel.save(Path(sgv['folderpath_visualize_banksStates_table'], 'BB-panel-exp=' + str(i_exp) + '.xlsx'))  # 保存 Excel 文件
 
                 pass  # for
 
@@ -1115,7 +1115,7 @@ def process_one_heatmap(args):
 
     ## 用 matplotlib 绘制
     fig_heatmap = draw_one_interbank_matrix_heatmaps(data_vis_one_time_heatmap, sgv['vis'])
-    fig_heatmap.savefig(Path(sgv['folderpath_plots_single_heatmaps'], f"IB_exp={str(i_exp)}+data={d['data_name'][0]}_{d['data_name'][1]}_{d['data_name'][2]}+{sgv['vis']['name_time']}={str(t)}.pdf"))  # 保存
+    fig_heatmap.savefig(Path(sgv['folderpath_plots_single_heatmaps'], f"IB-exp={str(i_exp)}+data={d['data_name'][0]}_{d['data_name'][1]}_{d['data_name'][2]}+{sgv['vis']['name_time']}={str(t)}.pdf"))  # 保存
 
     pass  # function
 
@@ -1149,7 +1149,7 @@ def process_one_graph(args):
 
     ## 用 NetworkX 绘制
     fig_graph = draw_one_interbank_flow_graph(data_vis_one_time_graph)
-    fig_graph.savefig(Path(sgv['folderpath_plots_single_graphs'], 'IB_exp=' + str(i_exp) + '+data=' + d + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
+    fig_graph.savefig(Path(sgv['folderpath_plots_single_graphs'], 'IB-exp=' + str(i_exp) + '+data=' + d + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
 
     pass  # function
 
@@ -1162,7 +1162,7 @@ def process_one_balanceSheet(args):
 
     参数元组 args 信息如下：
         - args[0]: sgv (dict): 一个字典，包含了所有的参数。
-        - args[1]: df_BB_panel (pandas.DataFrame): 数据表BB。
+        - args[1]: df_BB-panel (pandas.DataFrame): 数据表BB。
         - args[2]: data_vis_one_bank_BalanceSheet (dict): 用于绘制资产负债表的数据。
         - args[3]: i_exp (int): 实验编号。
         - args[4]: i (int): 银行编号。
@@ -1183,7 +1183,7 @@ def process_one_balanceSheet(args):
 
     ## 用 drawsvg 绘制资产负债表图
     svg_one_bank_balanceSheet = draw_one_bank_BalanceSheet(data_vis_one_bank_BalanceSheet, sgv['vis'], width=sgv['vis']['one_bank_BalanceSheet_width'], height=sgv['vis']['one_bank_BalanceSheet_height'], title_height=sgv['vis']['one_bank_BalanceSheet_title_height'], border=sgv['vis']['one_bank_BalanceSheet_border'])
-    svg_one_bank_balanceSheet.save_svg(Path(sgv['folderpath_plots_single_balanceSheets'], 'BB_exp=' + str(i_exp) + '+name=' + data_vis_one_bank_BalanceSheet['others']['bank_name'] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.svg'))  # 保存
+    svg_one_bank_balanceSheet.save_svg(Path(sgv['folderpath_plots_single_balanceSheets'], 'BB-exp=' + str(i_exp) + '+name=' + data_vis_one_bank_BalanceSheet['others']['bank_name'] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.svg'))  # 保存
 
     pass  # function
 
