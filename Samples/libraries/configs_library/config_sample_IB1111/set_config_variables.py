@@ -39,6 +39,7 @@ set_config_variables = dict(
     is_enable_multiprocessing_for_run_model=False,  # 运行模型期间，是否启用的多进程。默认 False；
     percent_core_for_multiprocessing=0.75,  # 设置多进程的 CPU 核心数与该设备总的 CPU 核心数占比。默认 0.75；
     is_rerun_all_done_works_in_the_same_experiments=True,  # 是否重新运行所有已经完成的实验。默认 True。如果为 True，则在实验运行之前，重置该实验组当中所有的实验作业运行状态为 "RAW"。
+    is_draw_color_band_distribution_before_experiments=False,  # 是否在实验运行之前绘制颜色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。默认 False；
     # list_idsExperiment_to_run=None,  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
     # list_idsExperiment_to_run=[46, 47, 48, 49, 50, 51, 56, 61, 67, 68],  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
     # list_idsExperiment_to_run=list(range(1, 68 + 1)),  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。

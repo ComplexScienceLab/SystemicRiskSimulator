@@ -199,7 +199,7 @@ def generate_one_interbank_matrix_heatmaps_data_info(df_1D_row: pd.DataFrame, df
     others = dict(
         color_map=(colormap_min_value, colormap_min_color, colormap_max_value, colormap_max_color),
         time_granularity=sgv_vis['time_granularity'],
-        data_name=dataName_matrix,
+        data_name=[dataName_vector1, dataName_vector2, dataName_matrix],
         process_name=df_1D_row[df_1D_row[sgv_vis['name_time']] == time]['process_name'].values[0],
         step=df_1D_row[df_1D_row[sgv_vis['name_time']] == time]['step'].values[0],
         turn=df_1D_row[df_1D_row[sgv_vis['name_time']] == time]['turn'].values[0],
@@ -286,15 +286,17 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
 
     ## 创建 Figure、GridSpec
     fig = plt.figure(figsize=(width, height), dpi=dpi)
-    gs = gridspec.GridSpec(3, 3, width_ratios=[1, vector2_data.size, 0.5], height_ratios=[0.5, 1, vector1_data.size])
+    gs = gridspec.GridSpec(3, 3, width_ratios=[1, vector2_data.size, 0.75], height_ratios=[0.75, 1, vector1_data.size])
 
     ## 添加标题与相关的信息
     ax_info = fig.add_subplot(gs[0, :])  # 创建一个新的子图，覆盖整个图像的顶部
     ax_info.axis('off')
     if others['time_granularity'] == '步进粒度':
-        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['turn'])}    s={str(others['step'])}    p={str(others['phase'])}"
+        # dw_text = f"{others['data_name'][2]}    {others['process_name']}    r={str(others['turn'])}    s={str(others['step'])}    p={str(others['phase'])}"
+        dw_text = f"{others['process_name']}    r={str(others['turn'])}    s={str(others['step'])}    p={str(others['phase'])}"
     elif others['time_granularity'] == '轮次粒度':
-        dw_text = f"{others['data_name']}    {others['process_name']}    r={str(others['turn'])}"  # TODO 未测试
+        # dw_text = f"{others['data_name'][2]}    {others['process_name']}    r={str(others['turn'])}"  # TODO 未测试
+        dw_text = f"{others['process_name']}    r={str(others['turn'])}"  # TODO 未测试
     else:
         raise ValueError("`time_granularity` 必须是 `'步进粒度'` 或 `'轮次粒度'`")
     ax_info.text(0.5, 1.0, dw_text, ha='center', va='center', color='black', fontsize=16)  # 在子图的中心添加文本
@@ -310,7 +312,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_matrix.set_yticklabels([])
     for i in range(matrix_data.shape[0]):  # 在每个方格中添加文本显示值
         for j in range(matrix_data.shape[1]):
-            if i == matrix_data.shape[1] - 1 - j:
+            if (matrix_data.shape[0] == matrix_data.shape[1] and i == matrix_data.shape[1] - 1 - j):  # 如果是对称矩阵的对角线上的元素，那么就不显示文本值
                 continue
             if np.isnan(matrix_values[i, j]):
                 ax_matrix.text(j + 0.5, i + 0.5, 'NaN', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor='red', edgecolor='black', boxstyle='round,pad=0.3'))
@@ -331,6 +333,7 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_vector1.set_xticklabels([])
     ax_vector1.set_yticks(np.arange(len(vector1_labels)) + 0.5)
     ax_vector1.set_yticklabels(vector1_labels, rotation='vertical', fontsize=16)
+    ax_vector1.set_ylabel(f"{others['data_name'][0]}", fontsize=16)
     for i in range(vector1_data.shape[0]):  # 在每个方格中添加文本显示值
         if np.isnan(vector1_values[i]):
             ax_vector1.text(0.5, i + 0.5, 'NaN', ha='center', va='center', color='black', fontsize=20, bbox=dict(facecolor='red', edgecolor='black', boxstyle='round,pad=0.3'))
@@ -349,6 +352,8 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     ax_vector2.set_xticks(np.arange(len(vector2_labels)) + 0.5)
     ax_vector2.set_xticklabels(vector2_labels, fontsize=16)
     ax_vector2.xaxis.tick_top()
+    ax_vector2.set_xlabel(f"{others['data_name'][1]}", fontsize=16)
+    ax_vector2.xaxis.set_label_position('top')
     ax_vector2.set_yticks([])
     ax_vector2.set_yticklabels([])
     for i in range(vector2_data.shape[0]):  # 在每个方格中添加文本显示值
@@ -368,6 +373,13 @@ def draw_one_interbank_matrix_heatmaps(vis_data: dict, sgv_vis: dict, width: flo
     labels_cbar = [f'{tick:.0f}' for tick in np.linspace(others['color_map'][0], others['color_map'][2], 10)]
     cbar.set_ticks(ticks_cbar)
     cbar.set_ticklabels(labels_cbar)
+
+    ## 添加向量1之变量名、向量2之变量名、矩阵之变量名
+    ax_title = fig.add_subplot(gs[1, 0])  # 创建一个新的子图，实现向量1之变量名、向量2之变量名、矩阵之变量名的显示
+    ax_title.axis('off')
+    # ax_title.text(0.5, 0.25, f"{others['data_name'][0]}", ha='center', va='center', color='black', fontsize=16)
+    # ax_title.text(0.5, 1.25, f"{others['data_name'][1]}", ha='center', va='center', color='black', fontsize=16)
+    ax_title.text(0.25, 0.75, f"{others['data_name'][2]}", ha='center', va='center', color='black', fontsize=16)
 
     ## 调整子图之间的间距
     plt.subplots_adjust(wspace=0.05, hspace=0.05)
@@ -1269,7 +1281,7 @@ def draw_one_bank_BalanceSheet(vis_data: dict, sgv_vis: dict, width: int = 600, 
 
 def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction: tuple, order_of_paging_in_horizontal_and_vertical_direction: tuple, order_of_match_pattern_in_horizontal_and_vertical_direction: tuple, list_fig_files: list, i_exp: int):
     """
-    将多个图像拼接、分页到一个 PDF 文件中。   #BUG 如果单页图像刚好填充一整页面，可能会出现乱序问题。
+    将多个图像拼接、分页到一个 PDF 文件中。
 
     Args:
         order_of_variable_mean_in_horizontal_and_vertical_direction (tuple): 横向与纵向的变量含义之顺序
@@ -1386,7 +1398,7 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
     total_figures_per_page = num_figure_in_horizontal_direction_per_page * num_figure_in_vertical_direction_per_page  # 每页最大总图数
     num_pages = int(np.ceil(len(list_fig_files) / total_figures_per_page))  # 最大总页数
 
-    ## 排序，优先按照需要分页的方向，其次按照不需要分页的方向。
+    ## 排序，优先按照需要分页的方向，其次按照不需要分页的方向。 #BUG 按照 data 排序的时候有时候可能出现个别乱序现象
     sorted_pkl_panel_file_list = sorted(list_fig_files, key=lambda name: (
         re.search(match_pattern_in_paging_direction, name)[0] if not re.search(match_pattern_in_paging_direction, name)[0].isdigit() else int(re.search(match_pattern_in_paging_direction, name)[0]),
         re.search(match_pattern_in_no_paging_direction, name)[0] if not re.search(match_pattern_in_no_paging_direction, name)[0].isdigit() else int(re.search(match_pattern_in_no_paging_direction, name)[0]),

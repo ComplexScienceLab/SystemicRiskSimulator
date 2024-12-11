@@ -357,7 +357,7 @@ def main(sgv):
         list_filepath_csv_panel = list(sgv['folderpath_plots'].glob('*.csv'))  # 获取实验组输出数据csv格式的文件列表
 
         ## 排序，优先按照银行名称，其次按照时间。
-        match_pattern_in_vertical_direction = r'(?<=[IB]B_panel_exp=).+?(?=[(\.csv)])'
+        match_pattern_in_vertical_direction = r'(?<=[IB]B-panel_exp=).+?(?=[(\.csv)])'
         match_pattern_in_horizontal_direction = r'[IB]B'
         sorted_list_filepath_csv_panel = sorted(list_filepath_csv_panel, key=lambda name: (
             int(re.search(match_pattern_in_vertical_direction, str(name))[0]),
@@ -430,7 +430,7 @@ def main(sgv):
         list_fig_files = list(sgv['folderpath_experiments_output_data'].glob('*_panel_*.pkl'))  # 获取实验组输出数据pkl格式之文件列表
 
         ## 排序，优先按照银行名称，其次按照时间。
-        match_pattern_in_vertical_direction = r'(?<=[IB]B_panel_exp=).+?(?=[(\.pkl)])'
+        match_pattern_in_vertical_direction = r'(?<=[IB]B-panel_exp=).+?(?=[(\.pkl)])'
         match_pattern_in_horizontal_direction = r'[IB]B'
         sorted_pkl_panel_file_list = sorted(list_fig_files, key=lambda name: (
             int(re.search(match_pattern_in_vertical_direction, str(name))[0]),
@@ -584,7 +584,7 @@ def main(sgv):
                 merged_pdf = merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction, order_of_paging_in_horizontal_and_vertical_direction, order_of_match_pattern_in_horizontal_and_vertical_direction, list_fig_files, i_exp)
 
                 ## 保存
-                merged_pdf.save(Path(sgv['folderpath_plots_makeup_balanceSheets'], 'BB_exp=' + str(i_exp) + '.pdf'))
+                merged_pdf.save(Path(sgv['folderpath_plots_makeup_balanceSheets'], 'BB-exp=' + str(i_exp) + '.pdf'))
                 merged_pdf.close()
 
                 pass  # for  实验编号
@@ -856,7 +856,7 @@ def main(sgv):
                 merged_pdf = merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction, order_of_paging_in_horizontal_and_vertical_direction, order_of_match_pattern_in_horizontal_and_vertical_direction, list_fig_files, i_exp)
 
                 ## 保存
-                merged_pdf.save(Path(sgv['folderpath_plots_makeup_heatmaps'], 'IB_exp=' + str(i_exp) + '.pdf'))
+                merged_pdf.save(Path(sgv['folderpath_plots_makeup_heatmaps'], 'IB-exp=' + str(i_exp) + '.pdf'))
                 merged_pdf.close()
 
                 pass  # for
@@ -996,7 +996,7 @@ def main(sgv):
                 merged_pdf = merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_vertical_direction, order_of_paging_in_horizontal_and_vertical_direction, order_of_match_pattern_in_horizontal_and_vertical_direction, list_fig_files, i_exp)
 
                 ## 保存
-                merged_pdf.save(Path(sgv['folderpath_plots_makeup_graphs'], 'IB_exp=' + str(i_exp) + '.pdf'))
+                merged_pdf.save(Path(sgv['folderpath_plots_makeup_graphs'], 'IB-exp=' + str(i_exp) + '.pdf'))
                 merged_pdf.close()
 
                 pass  # for  实验编号
@@ -1115,7 +1115,7 @@ def process_one_heatmap(args):
 
     ## 用 matplotlib 绘制
     fig_heatmap = draw_one_interbank_matrix_heatmaps(data_vis_one_time_heatmap, sgv['vis'])
-    fig_heatmap.savefig(Path(sgv['folderpath_plots_single_heatmaps'], 'IB_exp=' + str(i_exp) + '+data=' + d['data_name'][2] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
+    fig_heatmap.savefig(Path(sgv['folderpath_plots_single_heatmaps'], f"IB-exp={str(i_exp)}+data={d['data_name'][0]}_{d['data_name'][1]}_{d['data_name'][2]}+{sgv['vis']['name_time']}={str(t)}.pdf"))  # 保存
 
     pass  # function
 
@@ -1149,7 +1149,7 @@ def process_one_graph(args):
 
     ## 用 NetworkX 绘制
     fig_graph = draw_one_interbank_flow_graph(data_vis_one_time_graph)
-    fig_graph.savefig(Path(sgv['folderpath_plots_single_graphs'], 'IB_exp=' + str(i_exp) + '+data=' + d + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
+    fig_graph.savefig(Path(sgv['folderpath_plots_single_graphs'], 'IB-exp=' + str(i_exp) + '+data=' + d + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.pdf'))  # 保存
 
     pass  # function
 
@@ -1183,7 +1183,7 @@ def process_one_balanceSheet(args):
 
     ## 用 drawsvg 绘制资产负债表图
     svg_one_bank_balanceSheet = draw_one_bank_BalanceSheet(data_vis_one_bank_BalanceSheet, sgv['vis'], width=sgv['vis']['one_bank_BalanceSheet_width'], height=sgv['vis']['one_bank_BalanceSheet_height'], title_height=sgv['vis']['one_bank_BalanceSheet_title_height'], border=sgv['vis']['one_bank_BalanceSheet_border'])
-    svg_one_bank_balanceSheet.save_svg(Path(sgv['folderpath_plots_single_balanceSheets'], 'BB_exp=' + str(i_exp) + '+name=' + data_vis_one_bank_BalanceSheet['others']['bank_name'] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.svg'))  # 保存
+    svg_one_bank_balanceSheet.save_svg(Path(sgv['folderpath_plots_single_balanceSheets'], 'BB-exp=' + str(i_exp) + '+name=' + data_vis_one_bank_BalanceSheet['others']['bank_name'] + '+' + sgv['vis']['name_time'] + '=' + str(t) + '.svg'))  # 保存
 
     pass  # function
 

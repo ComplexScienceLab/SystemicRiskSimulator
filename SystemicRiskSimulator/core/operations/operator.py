@@ -128,10 +128,11 @@ class Operator:
                     pass  # with
 
                 ## 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
-                ids = [row[0] for row in rows]  # 获取实验组 id
-                status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-                logging.info("绘制实验组作业状态色带分布图...")
-                Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
+                if sgv['is_draw_color_band_distribution_before_experiments']:
+                    ids = [row[0] for row in rows]  # 获取实验组 id
+                    status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+                    logging.info("绘制实验组作业状态色带分布图...")
+                    Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
 
                 time_end_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
                 logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
