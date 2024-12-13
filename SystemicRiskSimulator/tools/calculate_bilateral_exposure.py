@@ -1,7 +1,5 @@
 """
-# 最大熵值法计算边权重
-
-基于《方意_荆中博_2022_外部冲击下系统性金融风险的生成机制》附录一：最大信息熵算法
+计算双边敞口边权重
 """
 
 from SystemicRiskSimulator.external_packages import np, time
@@ -9,9 +7,10 @@ from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import ad
 from scipy import optimize
 
 
-def calculate_bilateral_exposure(A_IB: np.array, Z_IB: np.array, target_density: float = 0.25, is_show_detal: bool = False, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
+
+def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array, target_density: float = 0.25, is_show_detal: bool = False, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
     """
-    通过各银行之银行间资产与银行间负债估算银行间双边敞口。
+    使用最大熵值法，通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
     基于《方意_荆中博_2022_外部冲击下系统性金融风险的生成机制》附录一：最大信息熵算法
     方意, 荆中博, 2022. 外部冲击下系统性金融风险的生成机制[J/OL]. 管理世界, 38(5): 19-35+102+36-46. DOI:10.19744/j.cnki.11-1235/f.2022.0077.
