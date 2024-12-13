@@ -1,5 +1,8 @@
 """
 计算双边敞口边权重
+
+- 使用中心边缘连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
+- 使用最大熵值法（Maximum Entropy），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 """
 
 from SystemicRiskSimulator.external_packages import np, time
@@ -11,7 +14,7 @@ from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import ad
 
 def calculate_bilateral_exposure_by_CP_algorithm(A_IB: np.array, Z_IB: np.array, num_core=20, is_show_detal: bool = False, is_add_virtual_bank=True, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e5):
     """
-    使用中心外围连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
+    使用中心边缘连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
     Args:
         A_IB (np.array): 各银行之银行间总资产
@@ -77,11 +80,10 @@ def calculate_bilateral_exposure_by_CP_algorithm(A_IB: np.array, Z_IB: np.array,
     temp_i = np.random.choice(np.arange(num_core), N - num_core)
     A0[num_core:, :num_core] = np.where(np.arange(num_core) == temp_j[:, np.newaxis], A0[num_core:, :num_core], 0)
     A0[:num_core, num_core:] = np.where(np.arange(num_core)[:, np.newaxis] == temp_i, A0[:num_core, num_core:], 0)
-    sum_diff = 100
 
+    # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
     iteration = 1
     while iteration < max_iteration:
-        # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
         A_IB_ij = ras(A0)
 
         if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
@@ -129,10 +131,11 @@ def calculate_bilateral_exposure_by_CP_algorithm(A_IB: np.array, Z_IB: np.array,
 
 def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array, target_density: float = 0.25, is_show_detal: bool = False, is_add_virtual_bank=True, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
     """
-    使用最大熵值法，通过各银行之银行间资产与银行间负债估算银行间双边敞口。
+    使用最大熵值法（Maximum Entropy），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
     基于《方意_荆中博_2022_外部冲击下系统性金融风险的生成机制》附录一：最大信息熵算法
-    方意, 荆中博, 2022. 外部冲击下系统性金融风险的生成机制[J/OL]. 管理世界, 38(5): 19-35+102+36-46. DOI:10.19744/j.cnki.11-1235/f.2022.0077.
+
+    > 方意, 荆中博, 2022. 外部冲击下系统性金融风险的生成机制[J/OL]. 管理世界, 38(5): 19-35+102+36-46. DOI:10.19744/j.cnki.11-1235/f.2022.0077.
 
 
     Args:
