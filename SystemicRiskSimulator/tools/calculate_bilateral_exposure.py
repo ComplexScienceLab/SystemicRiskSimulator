@@ -7,8 +7,124 @@ from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import ad
 from scipy import optimize
 
 
+def calculate_bilateral_exposure_by_CP_algorithm(A_IB: np.array, Z_IB: np.array, num_core=20, is_show_detal: bool = False, is_add_virtual_bank=True, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e5):
+    """
+    使用中心外围连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
+
+    Args:
+        A_IB (np.array): 各银行之银行间总资产
+        Z_IB (np.array): 各银行之银行间总负债
+        num_core (int): 核心银行数量。默认值 20
+        is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
+        is_add_virtual_bank (bool, optional): 是否添加虚拟银行。默认值 True
+        iteration_threshold (float, optional): 迭代阈值。默认值 1e-20
+        max_iteration (int, optional): 最大迭代次数。默认值 1000
+        denominator_precition_threshold (float, optional): 归一化阈值。默认值 1e5
+    """
+
+    def ras(A0: np.array) -> np.array:
+        """
+        RAS 方法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
+
+        Args:
+            A0 (numpy.ndarray): 输入矩阵。
+
+        Returns:
+            numpy.ndarray: 调整后的矩阵。
+        """
+        A = np.zeros_like(A0)
+        A1 = np.zeros_like(A0)
+        temp_x = A0.sum(axis=1)
+        r_x = np.where(temp_x == 0, 1, A_IB_adjasted / temp_x)
+        A1 = A0 * r_x[:, np.newaxis]
+        temp_y = A1.sum(axis=0)
+        r_y = np.where(temp_y == 0, 1, Z_IB_adjasted / temp_y)
+        A = A1 * r_y[np.newaxis, :]
+        return A
+        pass  # function
+
+    # is_add_virtual_bank = False  # 是否添加了虚拟银行
+
+    ## 预处理维度
+    A_IB, Z_IB = A_IB.flatten(), Z_IB.flatten()
+
+    ## 调整银行资产负债表使得总资产与总负债相等
+
+    ## #NOTE 调整方案〇：无需调整
+    # A_IB_adjasted, Z_IB_adjasted = A_IB, Z_IB
+
+    ## #NOTE 调整方案一：添加虚拟银行
+    A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB, Z_IB)
+
+    # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+    # A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB)
+
+    N = A_IB_adjasted.shape[0]  # 获取银行数量
+
+    N = N
+    A_IB_adjasted = A_IB_adjasted
+    Z_IB_adjasted = Z_IB_adjasted
+    A_IB_adjasted = np.array(A_IB_adjasted)
+    Z_IB_adjasted = np.array(Z_IB_adjasted)
+
+    A0 = np.ones((N, N))
+    A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
+    np.fill_diagonal(A0, 0)
+    A0[num_core:, num_core:] = 0
+    temp_j = np.random.choice(np.arange(num_core), N - num_core)
+    temp_i = np.random.choice(np.arange(num_core), N - num_core)
+    A0[num_core:, :num_core] = np.where(np.arange(num_core) == temp_j[:, np.newaxis], A0[num_core:, :num_core], 0)
+    A0[:num_core, num_core:] = np.where(np.arange(num_core)[:, np.newaxis] == temp_i, A0[:num_core, num_core:], 0)
+    sum_diff = 100
+
+    iteration = 1
+    while iteration < max_iteration:
+        # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
+        A_IB_ij = ras(A0)
 
 def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array, target_density: float = 0.25, is_show_detal: bool = False, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
+        if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
+            import matplotlib.pyplot as plt
+            import seaborn as sns
+            # 可视化初始的标准双边敞口矩阵为热力图
+            # 创建热力图的颜色映射方案
+            cmap = sns.diverging_palette(255, 0, s=99, as_cmap=True)
+            cmap.set_bad(color='white')
+            # 可视化初始数据之热力图
+            sns.heatmap(A_IB_ij, cmap=cmap, vmin=0, vmax=A_IB_ij.max(), cbar=True)
+            fig = plt.figure()  # 创建图形对象
+            ax = fig.add_subplot(111)  # 添加子图
+            ax.set_title('Iteration: 0')
+            ax.set_xlabel('X-axis')
+            ax.set_ylabel('Y-axis')
+            # plt.show()
+            time.sleep(0.25)
+            pass  # if
+
+        if np.allclose(A_IB_ij, A0, atol=iteration_threshold):  # 判断是否达到收敛
+            break
+
+        iteration += 1
+        A0 = A_IB_ij.copy()
+
+        pass  # while
+
+    Z_IB_ij = A_IB_ij.copy().T
+
+    # #DEBUG 测试是否正确
+    print(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
+    print(f"行元素和：{np.round(A_IB_ij.sum(axis=1) - A_IB_adjasted)}")
+    print(f"列元素和：{np.round(A_IB_ij.sum(axis=0) - Z_IB_adjasted)}")
+
+    print("计算最大熵值法计算边权重完成。")
+
+    if is_add_virtual_bank:  # 如果添加了虚拟银行，则删除虚拟银行
+        return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
+    else:
+        return A_IB_ij, Z_IB_ij
+
+    pass  # function
+
     """
     使用最大熵值法，通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
