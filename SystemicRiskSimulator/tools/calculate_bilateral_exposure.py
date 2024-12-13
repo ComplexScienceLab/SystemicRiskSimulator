@@ -4,7 +4,9 @@
 
 from SystemicRiskSimulator.external_packages import np, time
 from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import adjust_A_IB_Z_IB_with_virtual_bank, adjust_A_IB_Z_IB_by_resize
-from scipy import optimize
+
+
+# from scipy import optimize
 
 
 def calculate_bilateral_exposure_by_CP_algorithm(A_IB: np.array, Z_IB: np.array, num_core=20, is_show_detal: bool = False, is_add_virtual_bank=True, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e5):
@@ -82,7 +84,6 @@ def calculate_bilateral_exposure_by_CP_algorithm(A_IB: np.array, Z_IB: np.array,
         # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
         A_IB_ij = ras(A0)
 
-def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array, target_density: float = 0.25, is_show_detal: bool = False, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
         if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
             import matplotlib.pyplot as plt
             import seaborn as sns
@@ -125,6 +126,8 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array,
 
     pass  # function
 
+
+def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array, target_density: float = 0.25, is_show_detal: bool = False, is_add_virtual_bank=True, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
     """
     使用最大熵值法，通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
@@ -137,6 +140,7 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array,
         Z_IB (np.array): 银行间负债邻接矩阵
         target_density (float): 邻接矩阵指定的密度。默认值 0.25
         is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
+        is_add_virtual_bank (bool, optional): 是否添加虚拟银行。默认值 True
         iteration_threshold (float, optional): 迭代阈值。默认值 1e-3
         max_iteration (int, optional): 最大迭代次数。默认值 30
         denominator_precition_threshold (float, optional): 分母精度阈值。默认值 1e-4
@@ -146,8 +150,6 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array,
         Z_IB_ij (np.array): 银行间负债邻接矩阵
     """
 
-    is_add_virtual_bank = False  # 是否添加了虚拟银行
-
     ## 预处理维度
     A_IB, Z_IB = A_IB.flatten(), Z_IB.flatten()
 
@@ -156,11 +158,11 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array,
     ## #NOTE 调整方案〇：无需调整
     # A_IB_adjasted, Z_IB_adjasted = A_IB, Z_IB
 
-    # ## #NOTE 调整方案一：添加虚拟银行
-    # A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB, Z_IB)
+    ## #NOTE 调整方案一：添加虚拟银行
+    A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB, Z_IB)
 
-    ## #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
-    A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB)
+    # ## #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+    # A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB)
 
     N = A_IB_adjasted.shape[0]  # 获取银行数量
 
@@ -289,6 +291,8 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB: np.array, Z_IB: np.array,
         return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
     else:
         return A_IB_ij, Z_IB_ij
+
+    pass  # function
 
 # ## 基于以下程序之 Stata 版本翻译成的 Python 版本： #HACK 感觉这个版本不太合适于自己的情况
 # # 熵值法通用程序 *********
