@@ -71,7 +71,7 @@ set_config_variables = dict(
     foldername_experiments=r'test_sample_IB1111',  # 实验文件夹名称
 
     # NOTE 设置预处理实验结果数据：
-    is_enable_multiprocessing_for_transform_output_data=True,  # 是否启用多进程。默认 True；
+    is_enable_multiprocessing_for_transform_output_data=False,  # 是否启用多进程。默认 False；
     transform_data=dict(
         导入Pandas格式的实验结果数据转换为面板形式再导出=True,  # 默认 True。（NOTE：这个只需要运行一次即可。）
         导入Pandas格式的实验结果数据合并为一个文件=False,  # 默认 False。（NOTE：这个只需要运行一次即可。）
