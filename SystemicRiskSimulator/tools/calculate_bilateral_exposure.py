@@ -9,8 +9,6 @@ import numpy as np
 from SystemicRiskSimulator.external_packages import time
 from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import adjust_A_IB_Z_IB_with_virtual_bank, adjust_A_IB_Z_IB_by_resize
 
-import matplotlib.pyplot as plt
-
 
 # from scipy import optimize
 
