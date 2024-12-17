@@ -20,13 +20,13 @@ from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import ad
 def calculate_bilateral_exposure_by_CP_algorithm(
         A_IB_all: np.array,
         Z_IB_all: np.array,
-        array_idx_core_bank: np.array = None,
-        num_core=20,
-        method_link_core_banks: str = 'RAS',
-        method_link_core_and_peripheral_banks: str = '随机均匀分布',
+        array_idx_center_bank: np.array = None,
+        num_center=20,
+        method_link_center_banks: str = 'RAS',
+        method_link_center_and_peripheral_banks: str = '随机均匀分布',
+        df_classify: pd.DataFrame = None,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_show_detal: bool = False,
-        is_add_virtual_bank=True,
         iteration_threshold: float = 1e-20,
         max_iteration: int = 1000,
         denominator_precition_threshold: float = 1e5
@@ -39,14 +39,15 @@ def calculate_bilateral_exposure_by_CP_algorithm(
     Args:
         A_IB_all (np.array): 各银行之银行间总资产。注意，在导入之前需要自行将中心银行排在前面。
         Z_IB_all (np.array): 各银行之银行间总负债。注意，在导入之前需要自行将中心银行排在前面。
-        array_idx_core_bank (np.array): 核心银行集合之索引。默认值是 None ，按照中心银行排在前面的顺序，选取前 num_core 个银行。 #TODO 目前只能按照默认方法选取核心银行。
-        num_core (int): 核心银行数量。默认值 20
-        method_link_core_banks (str): 连接核心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。
-        method_link_core_and_peripheral_banks (str): 连接核心银行与边缘银行之间的方法。默认值 '随机均匀分布'，即使用随机均匀分布的方法。可选值包括：
+        array_idx_center_bank (np.array): 中心银行集合之索引。默认值是 None ，按照中心银行排在前面的顺序，选取前 num_center 个银行。 #TODO 目前只能按照默认方法选取中心银行。
+        num_center (int): 中心银行数量。默认值 20
+        method_link_center_banks (str): 连接中心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。
+        method_link_center_and_peripheral_banks (str): 连接中心银行与边缘银行之间的方法。默认值 '随机均匀分布'，即使用随机均匀分布的方法。可选值包括：
 
             - '随机均匀分布'：使用随机均匀分布。遍历所有的边缘银行，对于某一个边缘银行，随机选取一个中心银行与制定的边缘银行连接；
             - '按同分类连接'：根据中心银行与边缘银行之间的分类，连接同一分类的银行。对于同分类的中心银行和边缘银行，根据随机均匀分布的方法连接；
 
+        df_classify (pd.DataFrame): 分类数据框。其中排序按照先中心银行，后边缘银行。第一列是银行代码，第二列是银行分类。默认值 None，表示不使用分类数据框。
         method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
 
             - 'none'：不调整；
@@ -54,7 +55,6 @@ def calculate_bilateral_exposure_by_CP_algorithm(
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
         is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
-        is_add_virtual_bank (bool, optional): 是否添加虚拟银行。默认值 True
         iteration_threshold (float, optional): 迭代阈值。默认值 1e-20
         max_iteration (int, optional): 最大迭代次数。默认值 1000
         denominator_precition_threshold (float, optional): 归一化阈值。默认值 1e5
@@ -89,16 +89,16 @@ def calculate_bilateral_exposure_by_CP_algorithm(
     A0 = np.ones((N, N))
     A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
     np.fill_diagonal(A0, 0)  # 对角线为 0
-    A0[num_core:, num_core:] = 0
+    A0[num_center:, num_center:] = 0
 
     # 连接中心银行和边缘银行，使用均匀分布的随机选取的方法
 
-    match method_link_core_and_peripheral_banks:
+    match method_link_center_and_peripheral_banks:
         case '随机均匀分布':
-            temp_j = np.random.choice(np.arange(num_core), N - num_core)
-            temp_i = np.random.choice(np.arange(num_core), N - num_core)
-            A0[num_core:, :num_core] = np.where(np.arange(num_core) == temp_j[:, np.newaxis], A0[num_core:, :num_core], 0)
-            A0[:num_core, num_core:] = np.where(np.arange(num_core)[:, np.newaxis] == temp_i, A0[:num_core, num_core:], 0)
+            select_center_banks = np.random.choice(np.arange(num_center), N - num_center)  # 随机选取中心银行
+            select_peripheral_banks = np.random.choice(np.arange(num_center), N - num_center)  # 随机选取边缘银行
+            A0[num_center:, :num_center] = np.where(np.arange(num_center) == select_center_banks[:, np.newaxis], A0[num_center:, :num_center], 0)  # 对于每一个边缘银行，选取一个中心银行进行连接
+            A0[:num_center, num_center:] = np.where(np.arange(num_center)[:, np.newaxis] == select_peripheral_banks, A0[:num_center, num_center:], 0)  # 对于所选取的中心银行，连接这些选取的边缘银行
         case '按同分类连接':
             pass  # match
 
@@ -118,7 +118,7 @@ def calculate_bilateral_exposure_by_CP_algorithm(
     # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
     iteration = 1
     while iteration < max_iteration:
-        match method_link_core_banks:
+        match method_link_center_banks:
             case 'RAS':
                 A_IB_ij = RAS(A0, A_IB_adjasted, Z_IB_adjasted)
                 pass  # match
@@ -152,7 +152,7 @@ def calculate_bilateral_exposure_by_CP_algorithm(
 
     print("中心边缘连接算法计算边权重完成。")
 
-    if is_add_virtual_bank:  # 如果添加了虚拟银行，则删除虚拟银行
+    if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
         return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
     else:
         return A_IB_ij, Z_IB_ij
@@ -330,7 +330,7 @@ def calculate_bilateral_exposure_by_ME_algorithm(
 
     print("最大熵值法计算边权重完成。")
 
-    if is_add_virtual_bank:  # 如果添加了虚拟银行，则删除虚拟银行
+    if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
         return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
     else:
         return A_IB_ij, Z_IB_ij
@@ -412,7 +412,12 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
     A_IB_ij = reconstructed_L[0][0]
     Z_IB_ij = A_IB_ij.copy().T
 
-    return A_IB_ij, Z_IB_ij
+    if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # #DEBUG 如果添加了虚拟银行，则删除虚拟银行
+        return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
+    else:
+        return A_IB_ij, Z_IB_ij
+
+    pass  # function
 
     ## #HACK 调用 R 函数方案二：导出 csv 文件再通过命令行运行 R 函数，最后导入生成的 csv 文件  BUG 这个方案暂时无法运行成功。原因是传入数值失败。
 
@@ -602,27 +607,27 @@ if __name__ == "__main__":
     ## 测试 calculate_bilateral_exposure_by_CP_algorithm
 
     # 假设有 8 个中心银行和 24 个边缘银行
-    num_core = 8
+    num_center = 8
     num_peripheral = 24
-    num_banks = num_core + num_peripheral
+    num_banks = num_center + num_peripheral
 
     # 随机生成银行间总资产和总负债矩阵
     np.random.seed(42)  # 固定随机种子以便复现结果
     A_IB_all = np.random.rand(num_banks) * 100
-    A_IB_all[:num_core] = (np.random.rand(num_core) + 1) * 500
+    A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
     Z_IB_all = np.random.rand(num_banks) * 100
-    Z_IB_all[:num_core] = (np.random.rand(num_core) + 1) * 500
+    Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
     Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
 
-    # 核心银行的索引
-    array_idx_core_bank = np.arange(num_core)
+    # 中心银行的索引
+    array_idx_center_bank = np.arange(num_center)
 
     # 调用函数计算双边敞口
     A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_algorithm(
         A_IB_all=A_IB_all,
         Z_IB_all=Z_IB_all,
-        array_idx_core_bank=array_idx_core_bank,
-        num_core=num_core,
+        array_idx_center_bank=array_idx_center_bank,
+        num_center=num_center,
         is_show_detal=True,
         is_add_virtual_bank=False,
         iteration_threshold=1e-5,
