@@ -1,11 +1,17 @@
 """
-计算双边敞口边权重
+计算双边敞口边权重。  #BUG #TODO 重构之后还没有做简单测试。
 
 - 使用中心边缘连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 - 使用最大熵值法（Maximum Entropy），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 """
 
-from SystemicRiskSimulator.external_packages import np, Path, time
+__all__ = [
+    'calculate_bilateral_exposure_by_CP_algorithm',
+    'calculate_bilateral_exposure_by_ME_algorithm',
+    'calibrate_bilateral_exposure_by_ME_algorithm_by_R_package'
+]
+
+from SystemicRiskSimulator.external_packages import np, pd, Path, time
 from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import adjust_A_IB_Z_IB_with_virtual_bank, adjust_A_IB_Z_IB_by_resize
 
 
@@ -16,6 +22,8 @@ def calculate_bilateral_exposure_by_CP_algorithm(
         Z_IB_all: np.array,
         array_idx_core_bank: np.array = None,
         num_core=20,
+        method_link_core_banks: str = 'RAS',
+        method_link_core_and_peripheral_banks: str = '随机均匀分布',
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_show_detal: bool = False,
         is_add_virtual_bank=True,
@@ -33,7 +41,18 @@ def calculate_bilateral_exposure_by_CP_algorithm(
         Z_IB_all (np.array): 各银行之银行间总负债。注意，在导入之前需要自行将中心银行排在前面。
         array_idx_core_bank (np.array): 核心银行集合之索引。默认值是 None ，按照中心银行排在前面的顺序，选取前 num_core 个银行。 #TODO 目前只能按照默认方法选取核心银行。
         num_core (int): 核心银行数量。默认值 20
-        method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：'none'：不调整、'add_virtual_bank'：添加虚拟银行、'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+        method_link_core_banks (str): 连接核心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。
+        method_link_core_and_peripheral_banks (str): 连接核心银行与边缘银行之间的方法。默认值 '随机均匀分布'，即使用随机均匀分布的方法。可选值包括：
+
+            - '随机均匀分布'：使用随机均匀分布。遍历所有的边缘银行，对于某一个边缘银行，随机选取一个中心银行与制定的边缘银行连接；
+            - '按同分类连接'：根据中心银行与边缘银行之间的分类，连接同一分类的银行。对于同分类的中心银行和边缘银行，根据随机均匀分布的方法连接；
+
+        method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
+
+            - 'none'：不调整；
+            - 'add_virtual_bank'：添加虚拟银行；
+            - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
+
         is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
         is_add_virtual_bank (bool, optional): 是否添加虚拟银行。默认值 True
         iteration_threshold (float, optional): 迭代阈值。默认值 1e-20
@@ -42,26 +61,6 @@ def calculate_bilateral_exposure_by_CP_algorithm(
     """
 
     import numpy as np
-    def RAS(A0: np.array) -> np.array:
-        """
-        RAS 方法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
-
-        Args:
-            A0 (numpy.ndarray): 输入矩阵。
-
-        Returns:
-            numpy.ndarray: 调整后的矩阵。
-        """
-        A = np.zeros_like(A0)
-        A1 = np.zeros_like(A0)
-        temp_x = A0.sum(axis=1)
-        r_x = np.where(temp_x == 0, 1, A_IB_adjasted / temp_x)
-        A1 = A0 * r_x[:, np.newaxis]
-        temp_y = A1.sum(axis=0)
-        r_y = np.where(temp_y == 0, 1, Z_IB_adjasted / temp_y)
-        A = A1 * r_y[np.newaxis, :]
-        return A
-        pass  # function
 
     # is_add_virtual_bank = False  # 是否添加了虚拟银行
 
@@ -84,20 +83,24 @@ def calculate_bilateral_exposure_by_CP_algorithm(
 
     N = A_IB_adjasted.shape[0]  # 获取银行数量
 
-    N = N
-    A_IB_adjasted = A_IB_adjasted
-    Z_IB_adjasted = Z_IB_adjasted
     A_IB_adjasted = np.array(A_IB_adjasted)
     Z_IB_adjasted = np.array(Z_IB_adjasted)
 
     A0 = np.ones((N, N))
     A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
-    np.fill_diagonal(A0, 0)
+    np.fill_diagonal(A0, 0)  # 对角线为 0
     A0[num_core:, num_core:] = 0
-    temp_j = np.random.choice(np.arange(num_core), N - num_core)
-    temp_i = np.random.choice(np.arange(num_core), N - num_core)
-    A0[num_core:, :num_core] = np.where(np.arange(num_core) == temp_j[:, np.newaxis], A0[num_core:, :num_core], 0)
-    A0[:num_core, num_core:] = np.where(np.arange(num_core)[:, np.newaxis] == temp_i, A0[:num_core, num_core:], 0)
+
+    # 连接中心银行和边缘银行，使用均匀分布的随机选取的方法
+
+    match method_link_core_and_peripheral_banks:
+        case '随机均匀分布':
+            temp_j = np.random.choice(np.arange(num_core), N - num_core)
+            temp_i = np.random.choice(np.arange(num_core), N - num_core)
+            A0[num_core:, :num_core] = np.where(np.arange(num_core) == temp_j[:, np.newaxis], A0[num_core:, :num_core], 0)
+            A0[:num_core, num_core:] = np.where(np.arange(num_core)[:, np.newaxis] == temp_i, A0[:num_core, num_core:], 0)
+        case '按同分类连接':
+            pass  # match
 
     if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
         import matplotlib.pyplot as plt
@@ -115,7 +118,10 @@ def calculate_bilateral_exposure_by_CP_algorithm(
     # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
     iteration = 1
     while iteration < max_iteration:
-        A_IB_ij = RAS(A0)
+        match method_link_core_banks:
+            case 'RAS':
+                A_IB_ij = RAS(A0, A_IB_adjasted, Z_IB_adjasted)
+                pass  # match
 
         if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
             fig, ax = plt.subplots()
@@ -177,7 +183,12 @@ def calculate_bilateral_exposure_by_ME_algorithm(
         A_IB_all (np.array): 银行间资产邻接矩阵
         Z_IB_all (np.array): 银行间负债邻接矩阵
         target_density (float): 邻接矩阵指定的密度。默认值 0.25
-        method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：'none'：不调整、'add_virtual_bank'：添加虚拟银行、'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+        method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
+
+            - 'none'：不调整；
+            - 'add_virtual_bank'：添加虚拟银行；
+            - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
+
         is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
         is_add_virtual_bank (bool, optional): 是否添加虚拟银行。默认值 True
         iteration_threshold (float, optional): 迭代阈值。默认值 1e-3
@@ -346,7 +357,12 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
         target_density (float): 目标密度
         n_samples_calib (int, optional): 校准时生成的矩阵样本数量。默认为 10。
         thin (int, optional): 校准时的稀疏化参数。默认为 100。
-        method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：'none'：不调整、'add_virtual_bank'：添加虚拟银行、'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+        method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
+
+            - 'none'：不调整；
+            - 'add_virtual_bank'：添加虚拟银行；
+            - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
+
         folderpath_result (Path, optional): 结果文件夹路径。默认为 None。
 
     Returns:
@@ -558,6 +574,28 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
 # print(result)
 # print("This program was developed by Zhou Jing, Zhongnan University of Economics & Law, Wuhan, China")
 # print("Email: zhoucejing@126.com")
+
+
+def RAS(A0: np.array, A_IB_adjasted, Z_IB_adjasted) -> np.array:
+    """
+    RAS 方法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
+
+    Args:
+        A0 (numpy.ndarray): 输入矩阵。
+
+    Returns:
+        numpy.ndarray: 调整后的矩阵。
+    """
+    A = np.zeros_like(A0)
+    A1 = np.zeros_like(A0)
+    temp_x = A0.sum(axis=1)
+    r_x = np.where(temp_x == 0, 1, A_IB_adjasted / temp_x)
+    A1 = A0 * r_x[:, np.newaxis]
+    temp_y = A1.sum(axis=0)
+    r_y = np.where(temp_y == 0, 1, Z_IB_adjasted / temp_y)
+    A = A1 * r_y[np.newaxis, :]
+    return A
+    pass  # function
 
 
 if __name__ == "__main__":
