@@ -3,7 +3,7 @@
 """
 from SystemicRiskSimulator.external_packages import pickle, Path
 from SystemicRiskSimulator.core.define.define_type import *
-from SystemicRiskSimulator.core.functions.generation.fun_calibrate_interbank_exposure import calibrate_interbank_exposure
+from SystemicRiskSimulator.core.functions.generation.fun_calibrate_interbank_exposure import calibrate_bilateral_exposure_by_ME_algorithm_by_R_package
 
 pass  # end import
 
@@ -120,7 +120,7 @@ for year in list_年份:
                 ###########################
             )
 
-            # IBA, IBA_T = calibrate_interbank_exposure(set_bankCommercial_variables['A_P'].flatten(), set_debtAssets_variables['DA'].flatten(), target_density=1.0, folderpath_result=Path.cwd())  # #DEBUG 这个只是用来一次性生成的。测试的时候直接用生成的数据就行。
+            # IBA, IBA_T = calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(set_bankCommercial_variables['A_P'].flatten(), set_debtAssets_variables['DA'].flatten(), target_density=1.0, folderpath_result=Path.cwd())  # #DEBUG 这个只是用来一次性生成的。测试的时候直接用生成的数据就行。
 
             # %% 设置银行持有贷款类资产邻接矩阵
             set_banksDebtAssets_variables = dict(

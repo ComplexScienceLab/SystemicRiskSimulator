@@ -3,7 +3,7 @@
 """
 from SystemicRiskSimulator.external_packages import pickle, Path
 from SystemicRiskSimulator.core.define.define_type import *
-from SystemicRiskSimulator.core.functions.generation.fun_calibrate_interbank_exposure import calibrate_interbank_exposure
+from SystemicRiskSimulator.core.functions.generation.fun_calibrate_interbank_exposure import calibrate_bilateral_exposure_by_ME_algorithm_by_R_package
 
 pass  # end import
 
