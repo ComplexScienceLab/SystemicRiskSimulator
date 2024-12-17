@@ -47,7 +47,7 @@ def calculate_bilateral_exposure_by_CP_algorithm(
             - '随机均匀分布'：使用随机均匀分布。遍历所有的边缘银行，对于某一个边缘银行，随机选取一个中心银行与制定的边缘银行连接；
             - '按同分类连接'：根据中心银行与边缘银行之间的分类，连接同一分类的银行。对于同分类的中心银行和边缘银行，根据随机均匀分布的方法连接；
 
-        df_classify (pd.DataFrame): 分类数据框。其中排序按照先中心银行，后边缘银行。第一列是银行代码，第二列是银行分类。默认值 None，表示不使用分类数据框。
+        df_classify (pd.DataFrame): 分类数据框。其中要求自行预先排序按照先中心银行，后边缘银行。这个函数不提供排序功能。要求第一列是银行代码，第二列是银行分类。默认值 None，表示不使用分类数据框。
         method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
 
             - 'none'：不调整；
@@ -100,6 +100,27 @@ def calculate_bilateral_exposure_by_CP_algorithm(
             A0[num_center:, :num_center] = np.where(np.arange(num_center) == select_center_banks[:, np.newaxis], A0[num_center:, :num_center], 0)  # 对于每一个边缘银行，选取一个中心银行进行连接
             A0[:num_center, num_center:] = np.where(np.arange(num_center)[:, np.newaxis] == select_peripheral_banks, A0[:num_center, num_center:], 0)  # 对于所选取的中心银行，连接这些选取的边缘银行
         case '按同分类连接':
+            if df_classify is None:
+                raise ValueError("没有导入分类数据框。")
+            else:
+                # 获取分类信息
+                center_banks_class = df_classify.iloc[:num_center, 1].values
+                peripheral_banks_class = df_classify.iloc[num_center:, 1].values
+                # 遍历边缘银行，对于每一个边缘银行，选取一个中心银行进行连接
+                for i in range(num_center, N):
+                    peripheral_class = peripheral_banks_class[i - num_center]  # 获取当前边缘银行的分类
+                    same_class_center_banks = np.where(center_banks_class == peripheral_class)[0]  # 找到同分类的中心银行
+                    if len(same_class_center_banks) > 0:
+                        # 随机选取一个同分类的中心银行进行连接，如果是一个中心银行，那么直接连接
+                        selected_center_bank = np.random.choice(same_class_center_banks)
+                        A0[i, selected_center_bank] = A0[i, selected_center_bank]
+                        A0[selected_center_bank, i] = A0[selected_center_bank, i]
+                    else:
+                        # 如果没有同分类的中心银行，随机选取一个中心银行进行连接
+                        selected_center_bank = np.random.choice(np.arange(num_center))
+                        A0[i, selected_center_bank] = A0[i, selected_center_bank]
+                        A0[selected_center_bank, i] = A0[selected_center_bank, i]
+                pass  # if
             pass  # match
 
     if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
