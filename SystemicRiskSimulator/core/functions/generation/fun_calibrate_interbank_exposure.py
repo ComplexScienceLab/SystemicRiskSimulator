@@ -22,6 +22,7 @@ def calculate_bilateral_exposure_by_CP_algorithm(
         Z_IB_all: np.array,
         array_idx_center_bank: np.array = None,
         num_center=20,
+        center_agents_networkDensity: float = 1.0,
         method_link_center_banks: str = 'RAS',
         method_link_center_and_peripheral_banks: str = '随机均匀分布',
         df_classify: pd.DataFrame = None,
@@ -41,7 +42,12 @@ def calculate_bilateral_exposure_by_CP_algorithm(
         Z_IB_all (np.array): 各银行之银行间总负债。注意，在导入之前需要自行将中心银行排在前面。
         array_idx_center_bank (np.array): 中心银行集合之索引。默认值是 None ，按照中心银行排在前面的顺序，选取前 num_center 个银行。 #TODO 目前只能按照默认方法选取中心银行。
         num_center (int): 中心银行数量。默认值 20
-        method_link_center_banks (str): 连接中心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。
+        center_agents_networkDensity (float): 中心银行之间的连接密度。默认值 1.0。这个参数只有在 method_link_center_banks 为 'R语言的systemicrisk包之calibrate_ER' 时才有用
+        method_link_center_banks (str): 连接中心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。可选值包括：
+
+            - 'RAS'：使用 RAS 算法；
+            - 'R语言的systemicrisk包之calibrate_ER'：调用 R 语言的 systemicrisk 包之 calibrate_ER 算法。该方法允许根据不同的连接密度生成连接矩阵；
+
         method_link_center_and_peripheral_banks (str): 连接中心银行与边缘银行之间的方法。默认值 '随机均匀分布'，即使用随机均匀分布的方法。可选值包括：
 
             - '随机均匀分布'：使用随机均匀分布。遍历所有的边缘银行，对于某一个边缘银行，随机选取一个中心银行与制定的边缘银行连接；
@@ -59,10 +65,6 @@ def calculate_bilateral_exposure_by_CP_algorithm(
         max_iteration (int, optional): 最大迭代次数。默认值 1000
         denominator_precition_threshold (float, optional): 归一化阈值。默认值 1e5
     """
-
-    import numpy as np
-
-    # is_add_virtual_bank = False  # 是否添加了虚拟银行
 
     ## 预处理维度
     A_IB_all, Z_IB_all = A_IB_all.flatten(), Z_IB_all.flatten()
@@ -136,33 +138,33 @@ def calculate_bilateral_exposure_by_CP_algorithm(
         time.sleep(0.50)
         pass  # if
 
-    # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
-    iteration = 1
-    while iteration < max_iteration:
-        match method_link_center_banks:
-            case 'RAS':
+    match method_link_center_banks:
+        case 'R语言的systemicrisk包之calibrate_ER':
+            A_IB_ij = calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(A_IB_adjasted, Z_IB_adjasted, target_density=center_agents_networkDensity, method_adjast_bank_balanceSheet='none')
+        case 'RAS':
+            # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
+            iteration = 1
+            while iteration < max_iteration:
                 A_IB_ij = RAS(A0, A_IB_adjasted, Z_IB_adjasted)
-                pass  # match
+                if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
+                    fig, ax = plt.subplots()
+                    cax = ax.matshow(A_IB_ij, cmap='coolwarm')
+                    fig.colorbar(cax)
+                    ax.set_title('Iteration: {}'.format(iteration))
+                    ax.set_xlabel('X-axis')
+                    ax.set_ylabel('Y-axis')
+                    plt.show()
+                    time.sleep(0.50)
+                    print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A0))}")
+                    pass  # if
 
-        if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
-            fig, ax = plt.subplots()
-            cax = ax.matshow(A_IB_ij, cmap='coolwarm')
-            fig.colorbar(cax)
-            ax.set_title('Iteration: {}'.format(iteration))
-            ax.set_xlabel('X-axis')
-            ax.set_ylabel('Y-axis')
-            plt.show()
-            time.sleep(0.50)
-            print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A0))}")
-            pass  # if
+                if np.allclose(A_IB_ij, A0, atol=iteration_threshold):  # 判断是否达到收敛
+                    break
 
-        if np.allclose(A_IB_ij, A0, atol=iteration_threshold):  # 判断是否达到收敛
-            break
+                iteration += 1
+                A0 = A_IB_ij.copy()
 
-        iteration += 1
-        A0 = A_IB_ij.copy()
-
-        pass  # while
+                pass  # while
 
     Z_IB_ij = A_IB_ij.copy().T
 
@@ -433,7 +435,7 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
     A_IB_ij = reconstructed_L[0][0]
     Z_IB_ij = A_IB_ij.copy().T
 
-    if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # #DEBUG 如果添加了虚拟银行，则删除虚拟银行
+    if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
         return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
     else:
         return A_IB_ij, Z_IB_ij
