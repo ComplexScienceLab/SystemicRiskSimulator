@@ -616,11 +616,19 @@ def RAS(A0: np.array, A_IB_adjasted, Z_IB_adjasted) -> np.array:
     """
     A = np.zeros_like(A0)
     A1 = np.zeros_like(A0)
+    # 计算每行的和
     temp_x = A0.sum(axis=1)
-    r_x = np.where(temp_x == 0, 1, A_IB_adjasted / temp_x)
+    # 将 temp_x 中的零值替换为一个非常小的数值
+    temp_x_safe = np.where(temp_x == 0, 1e-10, temp_x)
+    # 计算 r_x
+    r_x = A_IB_adjasted / temp_x_safe
     A1 = A0 * r_x[:, np.newaxis]
+    # 计算每列的和
     temp_y = A1.sum(axis=0)
-    r_y = np.where(temp_y == 0, 1, Z_IB_adjasted / temp_y)
+    # 将 temp_y 中的零值替换为一个非常小的数值
+    temp_y_safe = np.where(temp_y == 0, 1e-10, temp_y)
+    # 计算 r_y
+    r_y = Z_IB_adjasted / temp_y_safe
     A = A1 * r_y[np.newaxis, :]
     return A
     pass  # function
