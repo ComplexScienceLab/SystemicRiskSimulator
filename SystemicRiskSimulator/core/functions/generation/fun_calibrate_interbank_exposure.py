@@ -11,7 +11,7 @@ __all__ = [
     'calibrate_bilateral_exposure_by_ME_algorithm_by_R_package'
 ]
 
-from SystemicRiskSimulator.external_packages import np, pd, Path, time
+from SystemicRiskSimulator.external_packages import np, pd, Path, time, logging
 from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import adjust_A_IB_Z_IB_with_virtual_bank, adjust_A_IB_Z_IB_by_resize
 
 
@@ -169,11 +169,11 @@ def calculate_bilateral_exposure_by_CP_algorithm(
     Z_IB_ij = A_IB_ij.copy().T
 
     # #DEBUG 测试是否正确
-    print(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
-    print(f"行元素和：{np.round(A_IB_ij.sum(axis=1) - A_IB_adjasted)}")
-    print(f"列元素和：{np.round(A_IB_ij.sum(axis=0) - Z_IB_adjasted)}")
+    logging.debug(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
+    logging.debug(f"行元素和：{np.round(A_IB_ij.sum(axis=1) - A_IB_adjasted)}")
+    logging.debug(f"列元素和：{np.round(A_IB_ij.sum(axis=0) - Z_IB_adjasted)}")
 
-    print("中心边缘连接算法计算边权重完成。")
+    logging.info("中心边缘连接算法计算边权重完成。")
 
     if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
         return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
@@ -347,11 +347,11 @@ def calculate_bilateral_exposure_by_ME_algorithm(
     # Z_IB_ij = A_IB_ij.copy().T
 
     # #DEBUG 测试是否正确
-    print(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
-    print(f"行元素和：{np.round(A_IB_ij.sum(axis=1) - A_IB_adjasted)}")
-    print(f"列元素和：{np.round(A_IB_ij.sum(axis=0) - Z_IB_adjasted)}")
+    logging.debug(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
+    logging.debug(f"行元素和：{np.round(A_IB_ij.sum(axis=1) - A_IB_adjasted)}")
+    logging.debug(f"列元素和：{np.round(A_IB_ij.sum(axis=0) - Z_IB_adjasted)}")
 
-    print("最大熵值法计算边权重完成。")
+    logging.info("最大熵值法计算边权重完成。")
 
     if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
         return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
