@@ -140,7 +140,7 @@ def calculate_bilateral_exposure_by_CP_algorithm(
 
     match method_link_center_banks:
         case 'R语言的systemicrisk包之calibrate_ER':
-            A_IB_ij = calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(A_IB_adjasted, Z_IB_adjasted, target_density=center_agents_networkDensity, method_adjast_bank_balanceSheet='none')
+            A_IB_ij, Z_IB_ij = calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(A_IB_adjasted, Z_IB_adjasted, target_density=center_agents_networkDensity, method_adjast_bank_balanceSheet='none')
         case 'RAS':
             # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
             iteration = 1
@@ -166,7 +166,7 @@ def calculate_bilateral_exposure_by_CP_algorithm(
 
                 pass  # while
 
-    Z_IB_ij = A_IB_ij.copy().T
+    # Z_IB_ij = A_IB_ij.copy().T
 
     # #DEBUG 测试是否正确
     logging.debug(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
@@ -362,8 +362,8 @@ def calculate_bilateral_exposure_by_ME_algorithm(
 
 
 def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
-        A_IB_all,
-        Z_IB_all,
+        A_IB_all: np.array,
+        Z_IB_all: np.array,
         target_density,
         n_samples_calib=10,
         thin=100,
@@ -375,8 +375,8 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
     中的 calibrate_bilateral_exposure_by_ME_algorithm_by_R_package 函数,并将结果转换为 NumPy 数组。
 
     Args:
-        A_IB_all (np.ndarray): 银行间资产
-        Z_IB_all (np.ndarray): 银行间负债
+        A_IB_all (np.array): 银行间资产
+        Z_IB_all (np.array): 银行间负债
         target_density (float): 目标密度
         n_samples_calib (int, optional): 校准时生成的矩阵样本数量。默认为 10。
         thin (int, optional): 校准时的稀疏化参数。默认为 100。
@@ -389,7 +389,7 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
         folderpath_result (Path, optional): 结果文件夹路径。默认为 None。
 
     Returns:
-        np.ndarray: 重构后的银行间资产负债矩阵
+        Tuple[numpy.ndarray, numpy.ndarray]: 重构后的银行间资产负债矩阵
     """
 
     ## #NOTE 调用 R 函数方案一：使用 rpy2 直接调用
