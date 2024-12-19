@@ -165,8 +165,9 @@ def calculate_bilateral_exposure_by_CP_algorithm(
                 A0 = A_IB_ij.copy()
 
                 pass  # while
+            Z_IB_ij = A_IB_ij.copy().T
 
-    # Z_IB_ij = A_IB_ij.copy().T
+            pass  # match
 
     # #DEBUG 测试是否正确
     logging.debug(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
