@@ -436,10 +436,15 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
     A_IB_ij = reconstructed_L[0][0]
     Z_IB_ij = A_IB_ij.copy().T
 
+    # 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
+    logging.info(f"估算前后变动占比：{np.abs(A_IB_ij.sum() - A_IB_adjasted.sum()) / A_IB_adjasted.sum()}")
+
     if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
-        return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
-    else:
-        return A_IB_ij, Z_IB_ij
+        A_IB_ij = A_IB_ij[:-1, :-1]
+        Z_IB_ij = Z_IB_ij[:-1, :-1]
+        pass  # if
+
+    return A_IB_ij, Z_IB_ij
 
     pass  # function
 
