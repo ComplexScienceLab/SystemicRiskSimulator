@@ -640,6 +640,44 @@ def RAS(A0: np.array, A_IB_adjasted, Z_IB_adjasted) -> np.array:
     pass  # function
 
 
+def calibrate_with_speed_optimization(A_IB_all, Z_IB_all, target_density=1.0, n_samples_calib=1000, thin=10):
+    """
+    #HACK 未适配未使用。通过自适应调整采样数量数量 （n_samples_calib） 来优化校准过程和 thinning factor （thin） 以平衡速度和精度。
+
+    Args:
+        A_IB_all (np.array): 银行间资产邻接矩阵
+        Z_IB_all (np.array): 银行间负债邻接矩阵
+        target_density (float): 邻接矩阵指定的密度。默认值 1.0
+        n_samples_calib (int): 校准时生成的矩阵样本数量。默认值 1000
+        thin (int): 校准时的稀疏化参数。默认值 10
+
+    Returns:
+        Tuple[np.array, np.array]: 重构后的银行间资产负债矩阵
+    """
+    try:
+        # 调整采样数量和薄化因子
+        logging.info(f"校准：采用 n_samples_calib={n_samples_calib}, thin={thin}")
+
+        # 调用估算函数
+        A_IB_ij, Z_IB_ij = calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
+            A_IB_all,
+            Z_IB_all,
+            target_density=target_density,
+            n_samples_calib=n_samples_calib,
+            thin=thin
+        )
+
+        # 根据校准结果
+        A_IB_all = A_IB_ij.sum(axis=1)
+        Z_IB_all = Z_IB_ij.sum(axis=1)
+
+        logging.info("校准完成")
+        return A_IB_ij, Z_IB_ij
+    except Exception as e:
+        logging.error(f"校准失败 {e}")
+        return None, None
+
+
 if __name__ == "__main__":
     ## 测试 calculate_bilateral_exposure_by_CP_algorithm
 
