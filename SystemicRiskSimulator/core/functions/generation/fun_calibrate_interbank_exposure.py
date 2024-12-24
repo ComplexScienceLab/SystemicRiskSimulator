@@ -231,25 +231,9 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB_all: np.array, Z_IB_all: n
 
     N = A_IB_adjasted.shape[0]  # 获取银行数量
 
-    ## 预置一些先验的元素值
-    X_ij_fixedVal = np.full((N, N), np.nan)  # 使用np.nan表示没有被预置的元素
-
-    # 预置规则 1：对角线为 0
-    np.fill_diagonal(X_ij_fixedVal, 0)
-
-    ## 根据预置的元素值，重新计算银行间资产负债矩阵之行和、列和
-    X_ij_mask = np.isnan(X_ij_fixedVal)  # 预置的元素值的掩码
-    A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(X_ij_mask, 0, X_ij_fixedVal), axis=1)
-    Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(X_ij_mask, 0, X_ij_fixedVal), axis=0)
-
-    A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])  # 标准化银行间资产负债矩阵
-    Z_IB_i_star = Z_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])
-    X_ij_star_0 = np.sqrt(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
-    # X_ij_star_0 = np.outer(A_IB_i_star, Z_IB_i_star)  # 初始化准双边敞口，通过外积计算
-    X_ij_star_prior_0 = np.zeros((N, N))  # 初始化准双边敞口
-    X_ij_star_prior_0[X_ij_mask] = X_ij_star_0[X_ij_mask] * (X_ij_star_0.sum() / np.outer(A_IB_i_star, Z_IB_i_star)[X_ij_mask].sum())  # 初始化准双边敞口，通过外积计算
-    X_ij_star_prior_0[~X_ij_mask] = X_ij_fixedVal[~X_ij_mask]
-    X_ij_star = X_ij_star_prior_0.copy()  # 初始化标准双边敞口矩阵
+    A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted, Z_IB_adjasted])  # 标准化银行间资产负债矩阵
+    Z_IB_i_star = Z_IB_adjasted / np.max([A_IB_adjasted, Z_IB_adjasted])
+    X_ij_star = np.sqrt(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
 
     if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
         import matplotlib.pyplot as plt
@@ -267,26 +251,6 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB_all: np.array, Z_IB_all: n
     iteration = 1
     while iteration < max_iteration:
         X_ij_prev = X_ij_star.copy()  # 保存上一次迭代的双边敞口矩阵
-
-        # ## #NOTE 考虑预置元素 #BUG 这个方案运行之后的结果误差很大，以至于无法使用。原因未知。
-        # for i in range(N):
-        #     X_j_mask = np.isnan(X_ij_fixedVal[:, i])
-        #     if X_j_mask.any():
-        #         X_j_prev = np.sum(X_ij_prev[:, i][X_j_mask])
-        #         if X_j_prev == 0:  # 行约束迭代
-        #             X_ij_star[:, i][X_j_mask] = 0
-        #         else:
-        #             denominator = X_j_prev if X_j_prev > denominator_precition_threshold else denominator_precition_threshold
-        #             X_ij_star[:, i][X_j_mask] = X_ij_prev[:, i][X_j_mask] * Z_IB_i_star[i] / denominator
-        #
-        #     X_i_mask = np.isnan(X_ij_fixedVal[i, :])
-        #     if X_i_mask.any():
-        #         X_i_prev = np.sum(X_ij_prev[i, :][X_i_mask])
-        #         if X_i_prev == 0:  # 列约束迭代
-        #             X_ij_star[i, :][X_i_mask] = 0
-        #         else:
-        #             denominator = X_i_prev if X_i_prev > denominator_precition_threshold else denominator_precition_threshold
-        #             X_ij_star[i, :][X_i_mask] = X_ij_prev[i, :][X_i_mask] * A_IB_i_star[i] / denominator
 
         ## NOTE 不考虑预置元素
         for i in range(N):
@@ -306,8 +270,6 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB_all: np.array, Z_IB_all: n
             fig, ax = plt.subplots()
             cax = ax.matshow(X_ij_star, cmap='coolwarm', vmin=0, vmax=X_ij_star.max())
             fig.colorbar(cax)
-            mask = X_ij_mask
-            ax.matshow(mask, cmap='gray', alpha=0.3)
             ax.set_title('Iteration: {}'.format(iteration))
             ax.set_xlabel('X-axis')
             ax.set_ylabel('Y-axis')
@@ -324,15 +286,8 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB_all: np.array, Z_IB_all: n
         pass  # while
 
     ## #NOTE 计算不考虑预置值的最终的银行间资产矩阵
-    A_IB_ij = X_ij_star / X_ij_star.sum() * np.max([A_IB_adjasted_prior.sum(), Z_IB_adjasted_prior.sum()])  # 计算最终的银行间资产矩阵
+    A_IB_ij = X_ij_star / X_ij_star.sum() * np.max([A_IB_adjasted.sum(), Z_IB_adjasted.sum()])  # 计算最终的银行间资产矩阵
     Z_IB_ij = A_IB_ij.copy().T
-
-    # ## #NOTE 计算预置值之后的最终的银行间资产矩阵、银行间负债矩阵  #BUG 这个方案运行之后的结果误差很大，以至于无法使用。原因未知。
-    # A_IB_ij = np.zeros((N, N))
-    # A_IB_ij[X_ij_mask] = X_ij_star[X_ij_mask] * (np.max([A_IB_adjasted_prior.sum(), Z_IB_adjasted_prior.sum()]) / X_ij_star[X_ij_mask].sum())
-    # # A_IB_ij[X_ij_mask] = X_ij_star[X_ij_mask] / X_ij_star[X_ij_mask].sum() * np.max([A_IB_adjasted.sum(), Z_IB_adjasted.sum()])
-    # A_IB_ij[~X_ij_mask] = X_ij_fixedVal[~X_ij_mask]  # 计算包括预置部分的最终的银行间资产矩阵、银行间负债矩阵
-    # Z_IB_ij = A_IB_ij.copy().T
 
     # #DEBUG 测试是否正确
     logging.debug(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
