@@ -265,12 +265,12 @@ def calculate_bilateral_exposure_by_ME_algorithm(
     match method_link_center_banks:
         case 'RAS':
             # A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
-            A0 = np.outer(A_IB_adjasted, Z_IB_adjasted)
+            A_IB_ij_prev = np.outer(A_IB_adjasted, Z_IB_adjasted)
             if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
                 import matplotlib.pyplot as plt
                 # 可视化初始的标准双边敞口矩阵为热力图
                 fig, ax = plt.subplots()
-                cax = ax.matshow(A_IB_adjasted, cmap='coolwarm')
+                cax = ax.matshow(A_IB_ij_prev, cmap='coolwarm')
                 fig.colorbar(cax)
                 ax.set_title('Iteration: 0')
                 ax.set_xlabel('X-axis')
@@ -301,7 +301,7 @@ def calculate_bilateral_exposure_by_ME_algorithm(
             # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
             iteration = 1
             while iteration < max_iteration:
-                A_IB_ij = RAS(A0, A_IB_adjasted, Z_IB_adjasted)  # 调用 RAS 算法
+                A_IB_ij = RAS(A_IB_ij_prev, A_IB_adjasted, Z_IB_adjasted)  # 调用 RAS 算法
                 if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
                     fig, ax = plt.subplots()
                     cax = ax.matshow(A_IB_ij, cmap='coolwarm')
@@ -311,14 +311,14 @@ def calculate_bilateral_exposure_by_ME_algorithm(
                     ax.set_ylabel('Y-axis')
                     plt.show()
                     time.sleep(0.50)
-                    print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A0))}")
+                    print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
                     pass  # if
 
-                if np.allclose(A_IB_ij, A0, atol=iteration_threshold):  # 判断是否达到收敛
+                if np.allclose(A_IB_ij, A_IB_ij_prev, atol=iteration_threshold):  # 判断是否达到收敛
                     break
 
                 iteration += 1
-                A0 = A_IB_ij.copy()
+                A_IB_ij_prev = A_IB_ij.copy()
 
                 pass  # while
 
