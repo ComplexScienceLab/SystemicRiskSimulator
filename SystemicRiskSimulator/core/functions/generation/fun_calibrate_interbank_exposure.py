@@ -17,7 +17,22 @@ from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import ad
 
 # from scipy import optimize
 
-def calculate_bilateral_exposure_by_CP_algorithm(A_IB_all: np.array, Z_IB_all: np.array, array_idx_center_bank: np.array = None, num_center=20, center_agents_networkDensity: float = 1.0, method_link_center_banks: str = 'RAS', method_link_center_and_peripheral_banks: str = '随机均匀分布', df_classify: pd.DataFrame = None, method_adjast_bank_balanceSheet: str = 'add_virtual_bank', is_maintain_virtual_bank=False, is_show_detal: bool = False, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e5):
+def calculate_bilateral_exposure_by_CP_algorithm(
+        A_IB_all: np.array,
+        Z_IB_all: np.array,
+        array_idx_center_bank: np.array = None,
+        num_center=20,
+        center_agents_networkDensity: float = 1.0,
+        method_link_center_banks: str = 'RAS',
+        method_link_center_and_peripheral_banks: str = '随机均匀分布',
+        df_classify: pd.DataFrame = None,
+        method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
+        is_maintain_virtual_bank=False,
+        is_show_detal: bool = False,
+        iteration_threshold: float = 1e-20,
+        max_iteration: int = 1000,
+        denominator_precition_threshold: float = 1e5
+):
     """
     使用中心边缘连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
@@ -181,7 +196,17 @@ def calculate_bilateral_exposure_by_CP_algorithm(A_IB_all: np.array, Z_IB_all: n
     pass  # function
 
 
-def calculate_bilateral_exposure_by_ME_algorithm(A_IB_all: np.array, Z_IB_all: np.array, target_density: float = 0.25, method_adjast_bank_balanceSheet: str = 'add_virtual_bank', iteration_threshold: float = 1e-20, is_show_detal: bool = False, is_maintain_virtual_bank=False, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
+def calculate_bilateral_exposure_by_ME_algorithm(
+        A_IB_all: np.array,
+        Z_IB_all: np.array,
+        target_density: float = 0.25,
+        method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
+        iteration_threshold: float = 1e-20,
+        is_show_detal: bool = False,
+        is_maintain_virtual_bank=False,
+        max_iteration: int = 1000,
+        denominator_precition_threshold: float = 1e-20
+):
     """
     使用最大熵值法（Maximum Entropy），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
@@ -314,7 +339,17 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB_all: np.array, Z_IB_all: n
     pass  # function
 
 
-def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(A_IB_all: np.array, Z_IB_all: np.array, target_density: float = 0.25, method_adjast_bank_balanceSheet: str = 'add_virtual_bank', is_maintain_virtual_bank=False, is_show_detal: bool = False, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
+def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(
+        A_IB_all: np.array,
+        Z_IB_all: np.array,
+        target_density: float = 0.25,
+        method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
+        is_maintain_virtual_bank=False,
+        is_show_detal: bool = False,
+        iteration_threshold: float = 1e-20,
+        max_iteration: int = 1000,
+        denominator_precition_threshold: float = 1e-20
+):
     """
     #NOW 通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
@@ -822,37 +857,37 @@ def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_
 
 
 if __name__ == "__main__":
-    ## 测试 calculate_bilateral_exposure_by_CP_algorithm
-
-    # 假设有 8 个中心银行和 24 个边缘银行
-    num_center = 8
-    num_peripheral = 24
-    num_banks = num_center + num_peripheral
-
-    # 随机生成银行间总资产和总负债矩阵
-    np.random.seed(42)  # 固定随机种子以便复现结果
-    A_IB_all = np.random.rand(num_banks) * 100
-    A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
-    Z_IB_all = np.random.rand(num_banks) * 100
-    Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
-    Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
-
-    # 中心银行的索引
-    array_idx_center_bank = np.arange(num_center)
-
-    # 调用函数计算双边敞口
-    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_algorithm(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-5, max_iteration=1000, denominator_precition_threshold=1e-20)
-
-    # 打印结果
-    print("银行间资产矩阵 A_IB_ij:")
-    print(A_IB_ij)
-    print("\n银行间负债矩阵 Z_IB_ij:")
-    print(Z_IB_ij)
-    print(f"\n总元素和之误差：{round(A_IB_ij.sum() - A_IB_all.sum())}")
-    print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-    print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-
-    print("\n测试 calculate_bilateral_exposure_by_CP_algorithm 完成。\n\n\n")
+    # ## 测试 calculate_bilateral_exposure_by_CP_algorithm
+    #
+    # # 假设有 8 个中心银行和 24 个边缘银行
+    # num_center = 8
+    # num_peripheral = 24
+    # num_banks = num_center + num_peripheral
+    #
+    # # 随机生成银行间总资产和总负债矩阵
+    # np.random.seed(42)  # 固定随机种子以便复现结果
+    # A_IB_all = np.random.rand(num_banks) * 100
+    # A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
+    # Z_IB_all = np.random.rand(num_banks) * 100
+    # Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
+    # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
+    #
+    # # 中心银行的索引
+    # array_idx_center_bank = np.arange(num_center)
+    #
+    # # 调用函数计算双边敞口
+    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_algorithm(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-5, max_iteration=1000, denominator_precition_threshold=1e-20)
+    #
+    # # 打印结果
+    # print("银行间资产矩阵 A_IB_ij:")
+    # print(A_IB_ij)
+    # print("\n银行间负债矩阵 Z_IB_ij:")
+    # print(Z_IB_ij)
+    # print(f"\n总元素和之误差：{round(A_IB_ij.sum() - A_IB_all.sum())}")
+    # print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
+    # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
+    #
+    # print("\n测试 calculate_bilateral_exposure_by_CP_algorithm 完成。\n\n\n")
 
     ## 测试 calculate_bilateral_exposure_by_ME_algorithm
 
