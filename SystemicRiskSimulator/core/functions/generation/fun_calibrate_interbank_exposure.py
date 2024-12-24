@@ -361,8 +361,13 @@ def calculate_bilateral_exposure_by_ME_method(
             pass  # match
 
     ## #NOTE 计算不考虑预置值的最终的银行间资产矩阵
-    A_IB_ij = X_ij_star / X_ij_star.sum() * np.max([A_IB_adjasted.sum(), Z_IB_adjasted.sum()])  # 计算最终的银行间资产矩阵
-    Z_IB_ij = A_IB_ij.copy().T
+    match method_link_center_banks:
+        case 'RAS':
+            Z_IB_ij = A_IB_ij.copy().T
+        case 'RAS-old':
+            A_IB_ij = X_ij_star / X_ij_star.sum() * np.max([A_IB_adjasted.sum(), Z_IB_adjasted.sum()])  # 计算最终的银行间资产矩阵
+            Z_IB_ij = A_IB_ij.copy().T
+            pass  # match
 
     # #DEBUG 测试是否正确
     logging.debug(f"总元素和：{round(A_IB_ij.sum() - A_IB_adjasted.sum())}")
@@ -392,6 +397,8 @@ def calculate_bilateral_exposure_by_ME_method(
 def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         A_IB_all: np.array,
         Z_IB_all: np.array,
+        A_preset_values: np.array,
+        mask: np.array,
         target_density: float = 0.25,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_maintain_virtual_bank=False,
