@@ -314,18 +314,7 @@ def calculate_bilateral_exposure_by_ME_algorithm(A_IB_all: np.array, Z_IB_all: n
     pass  # function
 
 
-def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(
-        A_IB_all: np.array,
-        Z_IB_all: np.array,
-        target_density: float = 0.25,
-        method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
-        is_show_detal: bool = False,
-        is_maintain_virtual_bank=False,
-        is_add_virtual_bank=True,
-        iteration_threshold: float = 1e-20,
-        max_iteration: int = 1000,
-        denominator_precition_threshold: float = 1e-20
-):
+def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(A_IB_all: np.array, Z_IB_all: np.array, target_density: float = 0.25, method_adjast_bank_balanceSheet: str = 'add_virtual_bank', is_maintain_virtual_bank=False, is_show_detal: bool = False, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
     """
     #NOW 通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
@@ -347,9 +336,8 @@ def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(
             - 'add_virtual_bank'：添加虚拟银行；
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
-        is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
-        is_add_virtual_bank (bool): 是否添加虚拟银行。默认值 True
         is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
+        is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float): 迭代阈值。默认值 1e-3
         max_iteration (int): 最大迭代次数。默认值 30
         denominator_precition_threshold (float): 分母精度阈值。默认值 1e-4
@@ -490,9 +478,19 @@ def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(
     logging.info("最大熵值法计算边权重完成。")
 
     if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
-        return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
+        if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
+            A_IB_ij = A_IB_ij
+            Z_IB_ij = Z_IB_ij
+        else:
+            A_IB_ij = A_IB_ij[:-1, :-1]
+            Z_IB_ij = Z_IB_ij[:-1, :-1]
+            pass  # if
     else:
-        return A_IB_ij, Z_IB_ij
+        A_IB_ij = A_IB_ij
+        Z_IB_ij = Z_IB_ij
+        pass  # if
+
+    return A_IB_ij, Z_IB_ij
 
     pass  # function
 
