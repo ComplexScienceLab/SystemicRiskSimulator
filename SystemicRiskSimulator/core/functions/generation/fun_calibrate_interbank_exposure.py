@@ -17,21 +17,7 @@ from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import ad
 
 # from scipy import optimize
 
-def calculate_bilateral_exposure_by_CP_algorithm(
-        A_IB_all: np.array,
-        Z_IB_all: np.array,
-        array_idx_center_bank: np.array = None,
-        num_center=20,
-        center_agents_networkDensity: float = 1.0,
-        method_link_center_banks: str = 'RAS',
-        method_link_center_and_peripheral_banks: str = '随机均匀分布',
-        df_classify: pd.DataFrame = None,
-        method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
-        is_show_detal: bool = False,
-        iteration_threshold: float = 1e-20,
-        max_iteration: int = 1000,
-        denominator_precition_threshold: float = 1e5
-):
+def calculate_bilateral_exposure_by_CP_algorithm(A_IB_all: np.array, Z_IB_all: np.array, array_idx_center_bank: np.array = None, num_center=20, center_agents_networkDensity: float = 1.0, method_link_center_banks: str = 'RAS', method_link_center_and_peripheral_banks: str = '随机均匀分布', df_classify: pd.DataFrame = None, method_adjast_bank_balanceSheet: str = 'add_virtual_bank', is_maintain_virtual_bank=False, is_show_detal: bool = False, iteration_threshold: float = 1e-20, max_iteration: int = 1000, denominator_precition_threshold: float = 1e5):
     """
     使用中心边缘连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
@@ -60,6 +46,7 @@ def calculate_bilateral_exposure_by_CP_algorithm(
             - 'add_virtual_bank'：添加虚拟银行；
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
+        is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
         is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float, optional): 迭代阈值。默认值 1e-20
         max_iteration (int, optional): 最大迭代次数。默认值 1000
@@ -177,25 +164,24 @@ def calculate_bilateral_exposure_by_CP_algorithm(
     logging.info("中心边缘连接算法计算边权重完成。")
 
     if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
-        return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
+        if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
+            A_IB_ij = A_IB_ij
+            Z_IB_ij = Z_IB_ij
+        else:
+            A_IB_ij = A_IB_ij[:-1, :-1]
+            Z_IB_ij = Z_IB_ij[:-1, :-1]
+            pass  # if
     else:
-        return A_IB_ij, Z_IB_ij
+        A_IB_ij = A_IB_ij
+        Z_IB_ij = Z_IB_ij
+        pass  # if
+
+    return A_IB_ij, Z_IB_ij
 
     pass  # function
 
 
-def calculate_bilateral_exposure_by_ME_algorithm(
-        A_IB_all: np.array,
-        Z_IB_all: np.array,
-        target_density: float = 0.25,
-        method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
-        is_show_detal: bool = False,
-        is_add_virtual_bank=True,
-        is_maintain_virtual_bank=False,
-        iteration_threshold: float = 1e-20,
-        max_iteration: int = 1000,
-        denominator_precition_threshold: float = 1e-20
-):
+def calculate_bilateral_exposure_by_ME_algorithm(A_IB_all: np.array, Z_IB_all: np.array, target_density: float = 0.25, method_adjast_bank_balanceSheet: str = 'add_virtual_bank', iteration_threshold: float = 1e-20, is_show_detal: bool = False, is_maintain_virtual_bank=False, max_iteration: int = 1000, denominator_precition_threshold: float = 1e-20):
     """
     使用最大熵值法（Maximum Entropy），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
@@ -214,9 +200,8 @@ def calculate_bilateral_exposure_by_ME_algorithm(
             - 'add_virtual_bank'：添加虚拟银行；
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
-        is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
-        is_add_virtual_bank (bool): 是否添加虚拟银行。默认值 True
         is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
+        is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float): 迭代阈值。默认值 1e-3
         max_iteration (int): 最大迭代次数。默认值 30
         denominator_precition_threshold (float): 分母精度阈值。默认值 1e-4
@@ -357,9 +342,19 @@ def calculate_bilateral_exposure_by_ME_algorithm(
     logging.info("最大熵值法计算边权重完成。")
 
     if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
-        return A_IB_ij[:-1, :-1], Z_IB_ij[:-1, :-1]
+        if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
+            A_IB_ij = A_IB_ij
+            Z_IB_ij = Z_IB_ij
+        else:
+            A_IB_ij = A_IB_ij[:-1, :-1]
+            Z_IB_ij = Z_IB_ij[:-1, :-1]
+            pass  # if
     else:
-        return A_IB_ij, Z_IB_ij
+        A_IB_ij = A_IB_ij
+        Z_IB_ij = Z_IB_ij
+        pass  # if
+
+    return A_IB_ij, Z_IB_ij
 
     pass  # function
 
@@ -554,7 +549,8 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
         n_samples_calib=10,
         thin=100,
         method_adjast_bank_balanceSheet='add_virtual_bank',
-        folderpath_result: Path = None
+        is_maintain_virtual_bank=False,
+        folderpath_result: Path = None,
 ):
     """
     调用 R 语言之工具包 systemicrisk 之函数 calibrate_ER，校准银行间资产负债矩阵，到指定的密度。
@@ -572,6 +568,7 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
             - 'add_virtual_bank'：添加虚拟银行；
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
+        is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False。
         folderpath_result (Path, optional): 结果文件夹路径。默认为 None。
 
     Returns:
@@ -625,8 +622,16 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
     logging.info(f"估算前后变动占比：{np.abs(A_IB_ij.sum() - A_IB_adjasted.sum()) / A_IB_adjasted.sum()}")
 
     if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
-        A_IB_ij = A_IB_ij[:-1, :-1]
-        Z_IB_ij = Z_IB_ij[:-1, :-1]
+        if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
+            A_IB_ij = A_IB_ij
+            Z_IB_ij = Z_IB_ij
+        else:
+            A_IB_ij = A_IB_ij[:-1, :-1]
+            Z_IB_ij = Z_IB_ij[:-1, :-1]
+            pass  # if
+    else:
+        A_IB_ij = A_IB_ij
+        Z_IB_ij = Z_IB_ij
         pass  # if
 
     return A_IB_ij, Z_IB_ij
@@ -825,7 +830,7 @@ def RAS(A0: np.array, A_IB_adjasted, Z_IB_adjasted) -> np.array:
     pass  # function
 
 
-def calibrate_with_speed_optimization(A_IB_all, Z_IB_all, target_density=1.0, n_samples_calib=1000, thin=10):
+def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_IB_all, target_density=1.0, n_samples_calib=1000, thin=10):
     """
     #HACK 未适配未使用。通过自适应调整采样数量数量 （n_samples_calib） 来优化校准过程和 thinning factor （thin） 以平衡速度和精度。
 
@@ -883,17 +888,7 @@ if __name__ == "__main__":
     array_idx_center_bank = np.arange(num_center)
 
     # 调用函数计算双边敞口
-    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_algorithm(
-        A_IB_all=A_IB_all,
-        Z_IB_all=Z_IB_all,
-        array_idx_center_bank=array_idx_center_bank,
-        num_center=num_center,
-        is_show_detal=True,
-        is_add_virtual_bank=False,
-        iteration_threshold=1e-5,
-        max_iteration=1000,
-        denominator_precition_threshold=1e5
-    )
+    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_algorithm(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-5, max_iteration=1000, denominator_precition_threshold=1e-20)
 
     # 打印结果
     print("银行间资产矩阵 A_IB_ij:")
@@ -920,7 +915,7 @@ if __name__ == "__main__":
     Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
 
     # 调用函数计算双边敞口
-    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_algorithm(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=0.25, is_show_detal=True, is_add_virtual_bank=False, iteration_threshold=1e-5, max_iteration=100, denominator_precition_threshold=1e-5)
+    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_algorithm(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=0.25, iteration_threshold=1e-5, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-5)
 
     # 打印结果
     print("银行间资产矩阵 A_IB_ij:")
