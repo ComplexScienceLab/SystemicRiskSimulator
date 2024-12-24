@@ -421,6 +421,8 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
     Args:
         A_IB_all (np.array): 银行间资产邻接矩阵
         Z_IB_all (np.array): 银行间负债邻接矩阵
+        A_preset_values (np.array): 预置的银行间资产邻接矩阵
+        mask (np.array): 预置的银行间资产邻接矩阵的掩码。值为 True 表示非预置值，值为 False 表示预置值。
         target_density (float): 邻接矩阵指定的密度。默认值 0.25
         method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
 
@@ -465,30 +467,32 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
     N = A_IB_adjasted.shape[0]  # 获取银行数量
 
     ## 预置一些先验的元素值
-    X_ij_fixedVal = np.full((N, N), np.nan)  # 使用np.nan表示没有被预置的元素
 
     # 预置规则 1：对角线为 0
-    np.fill_diagonal(X_ij_fixedVal, 0)
+    np.fill_diagonal(A_preset_values, 0)
+    mask &= ~np.eye(N, dtype=bool)
 
-    ## 根据预置的元素值，重新计算银行间资产负债矩阵之行和、列和
-    X_ij_mask = np.isnan(X_ij_fixedVal)  # 预置的元素值的掩码
-    A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(X_ij_mask, 0, X_ij_fixedVal), axis=1)
-    Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(X_ij_mask, 0, X_ij_fixedVal), axis=0)
+    # 根据预置的元素值，重新计算银行间资产负债矩阵之行和、列和
+    A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(mask, 0, A_preset_values), axis=1)
+    Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(mask, 0, A_preset_values), axis=0)
 
-    A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])  # 标准化银行间资产负债矩阵
-    Z_IB_i_star = Z_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])
-    X_ij_star_0 = np.sqrt(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
-    # X_ij_star_0 = np.outer(A_IB_i_star, Z_IB_i_star)  # 初始化准双边敞口，通过外积计算
-    X_ij_star_prior_0 = np.zeros((N, N))  # 初始化准双边敞口
-    X_ij_star_prior_0[X_ij_mask] = X_ij_star_0[X_ij_mask] * (X_ij_star_0.sum() / np.outer(A_IB_i_star, Z_IB_i_star)[X_ij_mask].sum())  # 初始化准双边敞口，通过外积计算
-    X_ij_star_prior_0[~X_ij_mask] = X_ij_fixedVal[~X_ij_mask]
-    X_ij_star = X_ij_star_prior_0.copy()  # 初始化标准双边敞口矩阵
+    # A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])  # 标准化银行间资产负债矩阵
+    # Z_IB_i_star = Z_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])
+    # # X_ij_star_0 = np.sqrt(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
+    # # # X_ij_star_0 = np.outer(A_IB_i_star, Z_IB_i_star)  # 初始化准双边敞口，通过外积计算
+    # # X_ij_star_prior_0 = np.zeros((N, N))  # 初始化准双边敞口
+    # # X_ij_star_prior_0[A_ij_mask] = X_ij_star_0[A_ij_mask] * (X_ij_star_0.sum() / np.outer(A_IB_i_star, Z_IB_i_star)[A_ij_mask].sum())  # 初始化准双边敞口，通过外积计算
+    # # X_ij_star_prior_0[~A_ij_mask] = A_ij_fixedVal[~A_ij_mask]
+    # # X_ij_star = X_ij_star_prior_0.copy()  # 初始化标准双边敞口矩阵
+    #
+    # # A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
 
+    A_IB_ij_prior_prev = np.outer(A_IB_adjasted_prior, Z_IB_adjasted_prior)
     if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
         import matplotlib.pyplot as plt
         # 可视化初始的标准双边敞口矩阵为热力图
         fig, ax = plt.subplots()
-        cax = ax.matshow(X_ij_star, cmap='coolwarm')
+        cax = ax.matshow(A_IB_ij_prior_prev, cmap='coolwarm')
         fig.colorbar(cax)
         ax.set_title('Iteration: 0')
         ax.set_xlabel('X-axis')
@@ -497,11 +501,31 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         time.sleep(0.50)
         pass  # if
 
+    # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
     iteration = 1
     while iteration < max_iteration:
-        X_ij_prev = X_ij_star.copy()  # 保存上一次迭代的双边敞口矩阵
+        A_IB_ij = RAS_algorithm_with_preset_values(A_IB_ij_prior_prev, A_IB_adjasted_prior, Z_IB_adjasted_prior, A_preset_values, mask, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
+        if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
+            fig, ax = plt.subplots()
+            cax = ax.matshow(A_IB_ij, cmap='coolwarm')
+            fig.colorbar(cax)
+            ax.set_title('Iteration: {}'.format(iteration))
+            ax.set_xlabel('X-axis')
+            ax.set_ylabel('Y-axis')
+            plt.show()
+            time.sleep(0.50)
+            print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
+            pass  # if
 
-        # ## #NOTE 考虑预置元素 #BUG 这个方案运行之后的结果误差很大，以至于无法使用。原因未知。
+        if np.allclose(A_IB_ij, A_IB_ij_prev, atol=iteration_threshold):  # 判断是否达到收敛
+            break
+
+        iteration += 1
+        A_IB_ij_prev = A_IB_ij.copy()
+
+        pass  # while
+
+        # # ## #NOTE 考虑预置元素 #BUG 这个方案运行之后的结果误差很大，以至于无法使用。原因未知。
         # for i in range(N):
         #     X_j_mask = np.isnan(X_ij_fixedVal[:, i])
         #     if X_j_mask.any():
@@ -539,7 +563,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
             fig, ax = plt.subplots()
             cax = ax.matshow(X_ij_star, cmap='coolwarm', vmin=0, vmax=X_ij_star.max())
             fig.colorbar(cax)
-            mask = X_ij_mask
+            mask = A_ij_mask
             ax.matshow(mask, cmap='gray', alpha=0.3)
             ax.set_title('Iteration: {}'.format(iteration))
             ax.set_xlabel('X-axis')
@@ -622,7 +646,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
         folderpath_result (Path, optional): 结果文件夹路径。默认为 None。
 
     Returns:
-        Tuple[numpy.ndarray, numpy.ndarray]: 重构后的银行间资产负债矩阵
+        Tuple[np.array, np.array]: 重构后的银行间资产负债矩阵
     """
 
     ## #NOTE 调用 R 函数方案一：使用 rpy2 直接调用
@@ -852,16 +876,49 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
 
 def RAS_algorithm(A0: np.array, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=1e-10) -> np.array:
     """
+    RAS 算法
+
     RAS 算法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
 
     Args:
-        A0 (numpy.ndarray): 输入矩阵。
-        A_IB_adjasted (numpy.ndarray): 调整后的银行间资产总和。
-        Z_IB_adjasted (numpy.ndarray): 调整后的银行间负债总和。
+        A0 (np.array): 输入矩阵。
+        A_IB_adjasted (np.array): 调整后的银行间资产总和。
+        Z_IB_adjasted (np.array): 调整后的银行间负债总和。
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
-        numpy.ndarray: 调整后的矩阵。
+        np.array: 调整后的矩阵。
+    """
+    A = np.zeros_like(A0)
+    A1 = np.zeros_like(A0)
+    temp_x = A0.sum(axis=1)  # 计算每行的和
+    temp_x_safe = np.where(temp_x == 0, denominator_precition_threshold, temp_x)  # 将 temp_x 中的零值替换为一个非常小的数值
+    r_x = A_IB_adjasted / temp_x_safe  # 计算 r_x
+    A1 = A0 * r_x[:, np.newaxis]
+    temp_y = A1.sum(axis=0)  # 计算每列的和
+    temp_y_safe = np.where(temp_y == 0, denominator_precition_threshold, temp_y)  # 将 temp_y 中的零值替换为一个非常小的数值
+    r_y = Z_IB_adjasted / temp_y_safe  # 计算 r_y
+    A = A1 * r_y[np.newaxis, :]
+    return A
+    pass  # function
+
+
+def RAS_algorithm_with_preset_values(A0: np.array, A_IB_adjasted: np.array, Z_IB_adjasted: np.array, A_preset_values: np.array, mask: np.array, denominator_precition_threshold=1e-10) -> np.array:
+    """
+    #NOW RAS 算法，带有预置值。
+
+    RAS 算法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
+
+    Args:
+        A0 (np.array): 输入矩阵。
+        A_IB_adjasted (np.array): 调整后的银行间资产总和。
+        Z_IB_adjasted (np.array): 调整后的银行间负债总和。
+        A_preset_values (np.array): 预置值的矩阵。
+        mask (np.array): 预置的银行间资产邻接矩阵的掩码。值为 True 表示非预置值，值为 False 表示预置值。
+        denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
+
+    Returns:
+        np.array: 调整后的矩阵。
     """
     A = np.zeros_like(A0)
     A1 = np.zeros_like(A0)
@@ -948,7 +1005,34 @@ if __name__ == "__main__":
     #
     # print("\n测试 calculate_bilateral_exposure_by_CP_method 完成。\n\n\n")
 
-    ## 测试 calculate_bilateral_exposure_by_ME_method
+    # ## 测试 calculate_bilateral_exposure_by_ME_method
+    #
+    # import numpy as np
+    #
+    # # 假设有 10 个银行
+    # num_banks = 10
+    #
+    # # 随机生成银行间总资产和总负债矩阵
+    # np.random.seed(42)  # 固定随机种子以便复现结果
+    # A_IB_all = np.random.rand(num_banks) * 100
+    # Z_IB_all = np.random.rand(num_banks) * 100
+    # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
+    #
+    # # 调用函数计算双边敞口
+    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all,iteration_threshold=1e-5, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-5)
+    #
+    # # 打印结果
+    # print("银行间资产矩阵 A_IB_ij:")
+    # print(A_IB_ij)
+    # print("\n银行间负债矩阵 Z_IB_ij:")
+    # print(Z_IB_ij)
+    # print(f"\n总元素和之误差：{round(A_IB_ij.sum() - A_IB_all.sum())}")
+    # print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
+    # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
+    #
+    # print("\n测试 calculate_bilateral_exposure_by_ME_method 完成。\n\n\n")
+
+    ## 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
 
     import numpy as np
 
@@ -961,8 +1045,14 @@ if __name__ == "__main__":
     Z_IB_all = np.random.rand(num_banks) * 100
     Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
 
+    # 随机生成预置值的矩阵
+    A_preset_values = np.random.rand(num_banks, num_banks)
+    A_preset_values[A_preset_values < 0.75] = 0
+    A_preset_values[A_preset_values >= 0.25] = 0.5
+    A_mask = np.where(A_preset_values == 0, True, False)
+
     # 调用函数计算双边敞口
-    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=0.25, iteration_threshold=1e-5, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-5)
+    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, A_preset_values=A_preset_values, mask=A_mask, target_density=0.5, iteration_threshold=1e-5, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-5)
 
     # 打印结果
     print("银行间资产矩阵 A_IB_ij:")
