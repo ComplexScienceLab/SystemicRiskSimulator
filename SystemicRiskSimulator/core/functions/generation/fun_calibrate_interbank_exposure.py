@@ -31,7 +31,7 @@ def calculate_bilateral_exposure_by_CP_algorithm(
         is_show_detal: bool = False,
         iteration_threshold: float = 1e-20,
         max_iteration: int = 1000,
-        denominator_precition_threshold: float = 1e5
+        denominator_precition_threshold: float = 1e-10
 ):
     """
     使用中心边缘连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
@@ -62,10 +62,10 @@ def calculate_bilateral_exposure_by_CP_algorithm(
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
         is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
-        is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
-        iteration_threshold (float, optional): 迭代阈值。默认值 1e-20
-        max_iteration (int, optional): 最大迭代次数。默认值 1000
-        denominator_precition_threshold (float, optional): 归一化阈值。默认值 1e5
+        is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
+        iteration_threshold (float): 迭代阈值。默认值 1e-20
+        max_iteration (int): 最大迭代次数。默认值 1000
+        denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
     """
 
     ## 预处理维度
@@ -90,8 +90,8 @@ def calculate_bilateral_exposure_by_CP_algorithm(
     A_IB_adjasted = np.array(A_IB_adjasted)
     Z_IB_adjasted = np.array(Z_IB_adjasted)
 
-    A0 = np.ones((N, N))
-    A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
+    # A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
+    A0 = np.outer(A_IB_adjasted, Z_IB_adjasted)
     np.fill_diagonal(A0, 0)  # 对角线为 0
     A0[num_center:, num_center:] = 0
 
@@ -201,11 +201,12 @@ def calculate_bilateral_exposure_by_ME_algorithm(
         Z_IB_all: np.array,
         target_density: float = 0.25,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
+        is_maintain_virtual_bank=False,
+        method_link_center_banks: str = 'RAS',
         iteration_threshold: float = 1e-20,
         is_show_detal: bool = False,
-        is_maintain_virtual_bank=False,
         max_iteration: int = 1000,
-        denominator_precition_threshold: float = 1e-20
+        denominator_precition_threshold: float = 1e-10
 ):
     """
     使用最大熵值法（Maximum Entropy），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
@@ -226,10 +227,15 @@ def calculate_bilateral_exposure_by_ME_algorithm(
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
         is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
+        method_link_center_banks (str): 连接中心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。可选值包括：
+
+            - 'RAS'：使用 RAS 算法；
+            - 'RAS-2'：使用旧的的 RAS 算法；
+
         is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float): 迭代阈值。默认值 1e-3
         max_iteration (int): 最大迭代次数。默认值 30
-        denominator_precition_threshold (float): 分母精度阈值。默认值 1e-4
+        denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
         A_IB_ij (np.array): 银行间资产邻接矩阵
@@ -256,59 +262,103 @@ def calculate_bilateral_exposure_by_ME_algorithm(
 
     N = A_IB_adjasted.shape[0]  # 获取银行数量
 
-    A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted, Z_IB_adjasted])  # 标准化银行间资产负债矩阵
-    Z_IB_i_star = Z_IB_adjasted / np.max([A_IB_adjasted, Z_IB_adjasted])
-    X_ij_star = np.sqrt(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
+    match method_link_center_banks:
+        case 'RAS':
+            # A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
+            A0 = np.outer(A_IB_adjasted, Z_IB_adjasted)
+            if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
+                import matplotlib.pyplot as plt
+                # 可视化初始的标准双边敞口矩阵为热力图
+                fig, ax = plt.subplots()
+                cax = ax.matshow(A_IB_adjasted, cmap='coolwarm')
+                fig.colorbar(cax)
+                ax.set_title('Iteration: 0')
+                ax.set_xlabel('X-axis')
+                ax.set_ylabel('Y-axis')
+                plt.show()
+                time.sleep(0.50)
+                pass  # if
+        case 'RAS-old':
+            A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted, Z_IB_adjasted])  # 标准化银行间资产负债矩阵
+            Z_IB_i_star = Z_IB_adjasted / np.max([A_IB_adjasted, Z_IB_adjasted])
+            X_ij_star = np.sqrt(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
+            if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
+                import matplotlib.pyplot as plt
+                # 可视化初始的标准双边敞口矩阵为热力图
+                fig, ax = plt.subplots()
+                cax = ax.matshow(X_ij_star, cmap='coolwarm')
+                fig.colorbar(cax)
+                ax.set_title('Iteration: 0')
+                ax.set_xlabel('X-axis')
+                ax.set_ylabel('Y-axis')
+                plt.show()
+                time.sleep(0.50)
+                pass  # if
+            pass  # match
 
-    if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
-        import matplotlib.pyplot as plt
-        # 可视化初始的标准双边敞口矩阵为热力图
-        fig, ax = plt.subplots()
-        cax = ax.matshow(X_ij_star, cmap='coolwarm')
-        fig.colorbar(cax)
-        ax.set_title('Iteration: 0')
-        ax.set_xlabel('X-axis')
-        ax.set_ylabel('Y-axis')
-        plt.show()
-        time.sleep(0.50)
-        pass  # if
+    match method_link_center_banks:
+        case 'RAS':
+            # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
+            iteration = 1
+            while iteration < max_iteration:
+                A_IB_ij = RAS(A0, A_IB_adjasted, Z_IB_adjasted)  # 调用 RAS 算法
+                if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
+                    fig, ax = plt.subplots()
+                    cax = ax.matshow(A_IB_ij, cmap='coolwarm')
+                    fig.colorbar(cax)
+                    ax.set_title('Iteration: {}'.format(iteration))
+                    ax.set_xlabel('X-axis')
+                    ax.set_ylabel('Y-axis')
+                    plt.show()
+                    time.sleep(0.50)
+                    print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A0))}")
+                    pass  # if
 
-    iteration = 1
-    while iteration < max_iteration:
-        X_ij_prev = X_ij_star.copy()  # 保存上一次迭代的双边敞口矩阵
+                if np.allclose(A_IB_ij, A0, atol=iteration_threshold):  # 判断是否达到收敛
+                    break
 
-        ## NOTE 不考虑预置元素
-        for i in range(N):
-            if np.sum(X_ij_prev[:, i]) == 0:  # 行约束迭代
-                X_ij_star[:, i] = 0
-            else:
-                denominator = np.sum(X_ij_prev[:, i]) if np.sum(X_ij_prev[:, i]) > denominator_precition_threshold else denominator_precition_threshold
-                X_ij_star[:, i] = X_ij_prev[:, i] * Z_IB_i_star[i] / denominator
+                iteration += 1
+                A0 = A_IB_ij.copy()
 
-            if np.sum(X_ij_prev[i, :]) == 0:  # 列约束迭代
-                X_ij_star[i, :] = 0
-            else:
-                denominator = np.sum(X_ij_prev[i, :]) if np.sum(X_ij_prev[i, :]) > denominator_precition_threshold else denominator_precition_threshold
-                X_ij_star[i, :] = X_ij_prev[i, :] * A_IB_i_star[i] / denominator
+                pass  # while
 
-        if is_show_detal:  # 可视化迭代数据之热力图
-            fig, ax = plt.subplots()
-            cax = ax.matshow(X_ij_star, cmap='coolwarm', vmin=0, vmax=X_ij_star.max())
-            fig.colorbar(cax)
-            ax.set_title('Iteration: {}'.format(iteration))
-            ax.set_xlabel('X-axis')
-            ax.set_ylabel('Y-axis')
-            plt.show()
-            time.sleep(0.50)
-            print(f"第{iteration}次迭代。精度：{np.max(np.abs(X_ij_star - X_ij_prev))}")
-            pass  # if
+        case 'RAS-old':
+            iteration = 1
+            while iteration < max_iteration:
 
-        if np.allclose(X_ij_star, X_ij_prev, atol=iteration_threshold):  # 判断是否达到收敛
-            break
+                X_ij_prev = X_ij_star.copy()  # 保存上一次迭代的双边敞口矩阵
+                for i in range(N):
+                    if np.sum(X_ij_prev[:, i]) == 0:  # 行约束迭代
+                        X_ij_star[:, i] = 0
+                    else:
+                        denominator = np.sum(X_ij_prev[:, i]) if np.sum(X_ij_prev[:, i]) > denominator_precition_threshold else denominator_precition_threshold
+                        X_ij_star[:, i] = X_ij_prev[:, i] * Z_IB_i_star[i] / denominator
 
-        iteration += 1
+                    if np.sum(X_ij_prev[i, :]) == 0:  # 列约束迭代
+                        X_ij_star[i, :] = 0
+                    else:
+                        denominator = np.sum(X_ij_prev[i, :]) if np.sum(X_ij_prev[i, :]) > denominator_precition_threshold else denominator_precition_threshold
+                        X_ij_star[i, :] = X_ij_prev[i, :] * A_IB_i_star[i] / denominator
 
-        pass  # while
+                if is_show_detal:  # 可视化迭代数据之热力图
+                    fig, ax = plt.subplots()
+                    cax = ax.matshow(X_ij_star, cmap='coolwarm', vmin=0, vmax=X_ij_star.max())
+                    fig.colorbar(cax)
+                    ax.set_title('Iteration: {}'.format(iteration))
+                    ax.set_xlabel('X-axis')
+                    ax.set_ylabel('Y-axis')
+                    plt.show()
+                    time.sleep(0.50)
+                    print(f"第{iteration}次迭代。精度：{np.max(np.abs(X_ij_star - X_ij_prev))}")
+                    pass  # if
+
+                if np.allclose(X_ij_star, X_ij_prev, atol=iteration_threshold):  # 判断是否达到收敛
+                    break
+
+                iteration += 1
+                pass  # while
+
+            pass  # match
 
     ## #NOTE 计算不考虑预置值的最终的银行间资产矩阵
     A_IB_ij = X_ij_star / X_ij_star.sum() * np.max([A_IB_adjasted.sum(), Z_IB_adjasted.sum()])  # 计算最终的银行间资产矩阵
@@ -372,10 +422,15 @@ def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
         is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
+        method_link_center_banks (str): 连接中心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。可选值包括：
+
+            - 'RAS'：使用 RAS 算法；
+            - 'RAS-2'：使用旧的的 RAS 算法；
+
         is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float): 迭代阈值。默认值 1e-3
         max_iteration (int): 最大迭代次数。默认值 30
-        denominator_precition_threshold (float): 分母精度阈值。默认值 1e-4
+        denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
         A_IB_ij (np.array): 银行间资产邻接矩阵
@@ -788,31 +843,28 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
 # print("Email: zhoucejing@126.com")
 
 
-def RAS(A0: np.array, A_IB_adjasted, Z_IB_adjasted) -> np.array:
+def RAS(A0: np.array, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=1e-10) -> np.array:
     """
     RAS 方法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
 
     Args:
         A0 (numpy.ndarray): 输入矩阵。
+        A_IB_adjasted (numpy.ndarray): 调整后的银行间资产总和。
+        Z_IB_adjasted (numpy.ndarray): 调整后的银行间负债总和。
+        denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
         numpy.ndarray: 调整后的矩阵。
     """
     A = np.zeros_like(A0)
     A1 = np.zeros_like(A0)
-    # 计算每行的和
-    temp_x = A0.sum(axis=1)
-    # 将 temp_x 中的零值替换为一个非常小的数值
-    temp_x_safe = np.where(temp_x == 0, 1e-10, temp_x)
-    # 计算 r_x
-    r_x = A_IB_adjasted / temp_x_safe
+    temp_x = A0.sum(axis=1)  # 计算每行的和
+    temp_x_safe = np.where(temp_x == 0, denominator_precition_threshold, temp_x)  # 将 temp_x 中的零值替换为一个非常小的数值
+    r_x = A_IB_adjasted / temp_x_safe  # 计算 r_x
     A1 = A0 * r_x[:, np.newaxis]
-    # 计算每列的和
-    temp_y = A1.sum(axis=0)
-    # 将 temp_y 中的零值替换为一个非常小的数值
-    temp_y_safe = np.where(temp_y == 0, 1e-10, temp_y)
-    # 计算 r_y
-    r_y = Z_IB_adjasted / temp_y_safe
+    temp_y = A1.sum(axis=0)  # 计算每列的和
+    temp_y_safe = np.where(temp_y == 0, denominator_precition_threshold, temp_y)  # 将 temp_y 中的零值替换为一个非常小的数值
+    r_y = Z_IB_adjasted / temp_y_safe  # 计算 r_y
     A = A1 * r_y[np.newaxis, :]
     return A
     pass  # function
