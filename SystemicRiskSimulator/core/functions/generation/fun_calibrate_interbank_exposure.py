@@ -6,9 +6,9 @@
 """
 
 __all__ = [
-    'calculate_bilateral_exposure_by_CP_algorithm',
-    'calculate_bilateral_exposure_by_ME_algorithm',
-    'calibrate_bilateral_exposure_by_ME_algorithm_by_R_package'
+    'calculate_bilateral_exposure_by_CP_method',
+    'calculate_bilateral_exposure_by_ME_method',
+    'calibrate_bilateral_exposure_by_ME_method_use_R_package'
 ]
 
 from SystemicRiskSimulator.external_packages import np, pd, Path, time, logging
@@ -17,7 +17,7 @@ from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import ad
 
 # from scipy import optimize
 
-def calculate_bilateral_exposure_by_CP_algorithm(
+def calculate_bilateral_exposure_by_CP_method(
         A_IB_all: np.array,
         Z_IB_all: np.array,
         array_idx_center_bank: np.array = None,
@@ -142,12 +142,12 @@ def calculate_bilateral_exposure_by_CP_algorithm(
 
     match method_link_center_banks:
         case 'R语言的systemicrisk包之calibrate_ER':
-            A_IB_ij, Z_IB_ij = calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(A_IB_adjasted, Z_IB_adjasted, target_density=center_agents_networkDensity, method_adjast_bank_balanceSheet='none')
+            A_IB_ij, Z_IB_ij = calibrate_bilateral_exposure_by_ME_method_use_R_package(A_IB_adjasted, Z_IB_adjasted, target_density=center_agents_networkDensity, method_adjast_bank_balanceSheet='none')
         case 'RAS':
             # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
             iteration = 1
             while iteration < max_iteration:
-                A_IB_ij = RAS(A0, A_IB_adjasted, Z_IB_adjasted)
+                A_IB_ij = RAS_algorithm(A0, A_IB_adjasted, Z_IB_adjasted)
                 if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
                     fig, ax = plt.subplots()
                     cax = ax.matshow(A_IB_ij, cmap='coolwarm')
@@ -196,7 +196,7 @@ def calculate_bilateral_exposure_by_CP_algorithm(
     pass  # function
 
 
-def calculate_bilateral_exposure_by_ME_algorithm(
+def calculate_bilateral_exposure_by_ME_method(
         A_IB_all: np.array,
         Z_IB_all: np.array,
         target_density: float = 0.25,
@@ -301,7 +301,7 @@ def calculate_bilateral_exposure_by_ME_algorithm(
             # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
             iteration = 1
             while iteration < max_iteration:
-                A_IB_ij = RAS(A_IB_ij_prev, A_IB_adjasted, Z_IB_adjasted)  # 调用 RAS 算法
+                A_IB_ij = RAS_algorithm(A_IB_ij_prev, A_IB_adjasted, Z_IB_adjasted)  # 调用 RAS 算法
                 if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
                     fig, ax = plt.subplots()
                     cax = ax.matshow(A_IB_ij, cmap='coolwarm')
@@ -389,7 +389,7 @@ def calculate_bilateral_exposure_by_ME_algorithm(
     pass  # function
 
 
-def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(
+def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         A_IB_all: np.array,
         Z_IB_all: np.array,
         target_density: float = 0.25,
@@ -585,7 +585,7 @@ def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(
     pass  # function
 
 
-def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
+def calibrate_bilateral_exposure_by_ME_method_use_R_package(
         A_IB_all: np.array,
         Z_IB_all: np.array,
         target_density,
@@ -597,7 +597,7 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
 ):
     """
     调用 R 语言之工具包 systemicrisk 之函数 calibrate_ER，校准银行间资产负债矩阵，到指定的密度。
-    中的 calibrate_bilateral_exposure_by_ME_algorithm_by_R_package 函数,并将结果转换为 NumPy 数组。
+    中的 calibrate_bilateral_exposure_by_ME_method_use_R_package 函数,并将结果转换为 NumPy 数组。
 
     Args:
         A_IB_all (np.array): 银行间资产
@@ -644,7 +644,7 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
     A_IB_r = numpy2ri.py2rpy(A_IB_adjasted)
     Z_IB_r = numpy2ri.py2rpy(Z_IB_adjasted)
 
-    # 调用 R 中的 calibrate_bilateral_exposure_by_ME_algorithm_by_R_package 函数
+    # 调用 R 中的 calibrate_bilateral_exposure_by_ME_method_use_R_package 函数
     if A_IB_adjasted.size != Z_IB_adjasted.size:  # 如果 A_IB 不是方阵，则使用 nonsquare 模型
         model = systemicrisk.calibrate_ER_nonsquare(A_IB_r, Z_IB_r, float(target_density), n_samples_calib, thin)
     else:
@@ -843,9 +843,9 @@ def calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
 # print("Email: zhoucejing@126.com")
 
 
-def RAS(A0: np.array, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=1e-10) -> np.array:
+def RAS_algorithm(A0: np.array, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=1e-10) -> np.array:
     """
-    RAS 方法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
+    RAS 算法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
 
     Args:
         A0 (numpy.ndarray): 输入矩阵。
@@ -889,7 +889,7 @@ def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_
         logging.info(f"校准：采用 n_samples_calib={n_samples_calib}, thin={thin}")
 
         # 调用估算函数
-        A_IB_ij, Z_IB_ij = calibrate_bilateral_exposure_by_ME_algorithm_by_R_package(
+        A_IB_ij, Z_IB_ij = calibrate_bilateral_exposure_by_ME_method_use_R_package(
             A_IB_all,
             Z_IB_all,
             target_density=target_density,
@@ -909,7 +909,7 @@ def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_
 
 
 if __name__ == "__main__":
-    # ## 测试 calculate_bilateral_exposure_by_CP_algorithm
+    # ## 测试 calculate_bilateral_exposure_by_CP_method
     #
     # # 假设有 8 个中心银行和 24 个边缘银行
     # num_center = 8
@@ -928,7 +928,7 @@ if __name__ == "__main__":
     # array_idx_center_bank = np.arange(num_center)
     #
     # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_algorithm(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-5, max_iteration=1000, denominator_precition_threshold=1e-20)
+    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-5, max_iteration=1000, denominator_precition_threshold=1e-20)
     #
     # # 打印结果
     # print("银行间资产矩阵 A_IB_ij:")
@@ -939,9 +939,9 @@ if __name__ == "__main__":
     # print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
     # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
     #
-    # print("\n测试 calculate_bilateral_exposure_by_CP_algorithm 完成。\n\n\n")
+    # print("\n测试 calculate_bilateral_exposure_by_CP_method 完成。\n\n\n")
 
-    ## 测试 calculate_bilateral_exposure_by_ME_algorithm
+    ## 测试 calculate_bilateral_exposure_by_ME_method
 
     import numpy as np
 
@@ -955,7 +955,7 @@ if __name__ == "__main__":
     Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
 
     # 调用函数计算双边敞口
-    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_algorithm(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=0.25, iteration_threshold=1e-5, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-5)
+    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=0.25, iteration_threshold=1e-5, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-5)
 
     # 打印结果
     print("银行间资产矩阵 A_IB_ij:")
@@ -966,4 +966,4 @@ if __name__ == "__main__":
     print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
     print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
 
-    print("\n测试 calculate_bilateral_exposure_by_ME_algorithm 完成。\n\n\n")
+    print("\n测试 calculate_bilateral_exposure_by_ME_method 完成。\n\n\n")
