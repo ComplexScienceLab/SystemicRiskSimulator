@@ -191,6 +191,7 @@ def calculate_bilateral_exposure_by_ME_algorithm(
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_show_detal: bool = False,
         is_add_virtual_bank=True,
+        is_maintain_virtual_bank=False,
         iteration_threshold: float = 1e-20,
         max_iteration: int = 1000,
         denominator_precition_threshold: float = 1e-20
@@ -213,11 +214,12 @@ def calculate_bilateral_exposure_by_ME_algorithm(
             - 'add_virtual_bank'：添加虚拟银行；
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
-        is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
-        is_add_virtual_bank (bool, optional): 是否添加虚拟银行。默认值 True
-        iteration_threshold (float, optional): 迭代阈值。默认值 1e-3
-        max_iteration (int, optional): 最大迭代次数。默认值 30
-        denominator_precition_threshold (float, optional): 分母精度阈值。默认值 1e-4
+        is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
+        is_add_virtual_bank (bool): 是否添加虚拟银行。默认值 True
+        is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
+        iteration_threshold (float): 迭代阈值。默认值 1e-3
+        max_iteration (int): 最大迭代次数。默认值 30
+        denominator_precition_threshold (float): 分母精度阈值。默认值 1e-4
 
     Returns:
         A_IB_ij (np.array): 银行间资产邻接矩阵
@@ -362,13 +364,13 @@ def calculate_bilateral_exposure_by_ME_algorithm(
     pass  # function
 
 
-
 def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(
         A_IB_all: np.array,
         Z_IB_all: np.array,
         target_density: float = 0.25,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_show_detal: bool = False,
+        is_maintain_virtual_bank=False,
         is_add_virtual_bank=True,
         iteration_threshold: float = 1e-20,
         max_iteration: int = 1000,
@@ -395,11 +397,12 @@ def calculate_bilateral_exposure_by_ME_algorithm_with_preset_fixed_values(
             - 'add_virtual_bank'：添加虚拟银行；
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
-        is_show_detal (bool, optional): 是否显示迭代过程的热力图。默认值 False
-        is_add_virtual_bank (bool, optional): 是否添加虚拟银行。默认值 True
-        iteration_threshold (float, optional): 迭代阈值。默认值 1e-3
-        max_iteration (int, optional): 最大迭代次数。默认值 30
-        denominator_precition_threshold (float, optional): 分母精度阈值。默认值 1e-4
+        is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
+        is_add_virtual_bank (bool): 是否添加虚拟银行。默认值 True
+        is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
+        iteration_threshold (float): 迭代阈值。默认值 1e-3
+        max_iteration (int): 最大迭代次数。默认值 30
+        denominator_precition_threshold (float): 分母精度阈值。默认值 1e-4
 
     Returns:
         A_IB_ij (np.array): 银行间资产邻接矩阵
@@ -917,16 +920,7 @@ if __name__ == "__main__":
     Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
 
     # 调用函数计算双边敞口
-    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_algorithm(
-        A_IB_all=A_IB_all,
-        Z_IB_all=Z_IB_all,
-        target_density=0.25,
-        is_show_detal=True,
-        is_add_virtual_bank=False,
-        iteration_threshold=1e-5,
-        max_iteration=100,
-        denominator_precition_threshold=1e-5
-    )
+    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_algorithm(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=0.25, is_show_detal=True, is_add_virtual_bank=False, iteration_threshold=1e-5, max_iteration=100, denominator_precition_threshold=1e-5)
 
     # 打印结果
     print("银行间资产矩阵 A_IB_ij:")
