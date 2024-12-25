@@ -18,8 +18,8 @@ from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import ad
 # from scipy import optimize
 
 def calculate_bilateral_exposure_by_CP_method(
-        A_IB_all: np.array,
-        Z_IB_all: np.array,
+        A_IB_all: np.ndarray,
+        Z_IB_all: np.ndarray,
         array_idx_center_bank: np.array = None,
         num_center=20,
         center_agents_networkDensity: float = 1.0,
@@ -39,9 +39,9 @@ def calculate_bilateral_exposure_by_CP_method(
     中心银行之间采用 RAS 算法的全连接方法。中心银行与边缘银行之间采用随机选取的方法。
 
     Args:
-        A_IB_all (np.array): 各银行之银行间总资产。注意，在导入之前需要自行将中心银行排在前面。
-        Z_IB_all (np.array): 各银行之银行间总负债。注意，在导入之前需要自行将中心银行排在前面。
-        array_idx_center_bank (np.array): 中心银行集合之索引。默认值是 None ，按照中心银行排在前面的顺序，选取前 num_center 个银行。 #TODO 目前只能按照默认方法选取中心银行。
+        A_IB_all (np.ndarray): 各银行之银行间总资产。注意，在导入之前需要自行将中心银行排在前面。
+        Z_IB_all (np.ndarray): 各银行之银行间总负债。注意，在导入之前需要自行将中心银行排在前面。
+        array_idx_center_bank (np.ndarray): 中心银行集合之索引。默认值是 None ，按照中心银行排在前面的顺序，选取前 num_center 个银行。 #TODO 目前只能按照默认方法选取中心银行。
         num_center (int): 中心银行数量。默认值 20
         center_agents_networkDensity (float): 中心银行之间的连接密度。默认值 1.0。这个参数只有在 method_link_center_banks 为 'R语言的systemicrisk包之calibrate_ER' 时才有用
         method_link_center_banks (str): 连接中心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。可选值包括：
@@ -197,8 +197,8 @@ def calculate_bilateral_exposure_by_CP_method(
 
 
 def calculate_bilateral_exposure_by_ME_method(
-        A_IB_all: np.array,
-        Z_IB_all: np.array,
+        A_IB_all: np.ndarray,
+        Z_IB_all: np.ndarray,
         target_density: float = 0.25,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_maintain_virtual_bank=False,
@@ -217,8 +217,8 @@ def calculate_bilateral_exposure_by_ME_method(
 
 
     Args:
-        A_IB_all (np.array): 银行间资产邻接矩阵
-        Z_IB_all (np.array): 银行间负债邻接矩阵
+        A_IB_all (np.ndarray): 银行间资产邻接矩阵
+        Z_IB_all (np.ndarray): 银行间负债邻接矩阵
         target_density (float): 邻接矩阵指定的密度。默认值 0.25
         method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
 
@@ -238,8 +238,8 @@ def calculate_bilateral_exposure_by_ME_method(
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
-        A_IB_ij (np.array): 银行间资产邻接矩阵
-        Z_IB_ij (np.array): 银行间负债邻接矩阵
+        A_IB_ij (np.ndarray): 银行间资产邻接矩阵
+        Z_IB_ij (np.ndarray): 银行间负债邻接矩阵
     """
     import numpy as np
 
@@ -396,10 +396,10 @@ def calculate_bilateral_exposure_by_ME_method(
 
 
 def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
-        A_IB_all: np.array,
-        Z_IB_all: np.array,
-        A_preset_values: np.array,
-        mask: np.array,
+        A_IB_all: np.ndarray,
+        Z_IB_all: np.ndarray,
+        A_preset_values: np.ndarray,
+        mask: np.ndarray,
         target_density: float = 0.25,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_maintain_virtual_bank=False,
@@ -420,10 +420,10 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
     > 方意, 荆中博, 2022. 外部冲击下系统性金融风险的生成机制[J/OL]. 管理世界, 38(5): 19-35+102+36-46. DOI:10.19744/j.cnki.11-1235/f.2022.0077.
 
     Args:
-        A_IB_all (np.array): 银行间资产邻接矩阵
-        Z_IB_all (np.array): 银行间负债邻接矩阵
-        A_preset_values (np.array): 预置的银行间资产邻接矩阵
-        mask (np.array): 预置的银行间资产邻接矩阵的掩码。值为 True 表示非预置值，值为 False 表示预置值。
+        A_IB_all (np.ndarray): 银行间资产邻接矩阵
+        Z_IB_all (np.ndarray): 银行间负债邻接矩阵
+        A_preset_values (np.ndarray): 预置的银行间资产邻接矩阵
+        mask (np.ndarray): 预置的银行间资产邻接矩阵的掩码。值为 True 表示非预置值，值为 False 表示预置值。
         target_density (float): 邻接矩阵指定的密度。默认值 0.25
         method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
 
@@ -443,8 +443,8 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
-        A_IB_ij (np.array): 银行间资产邻接矩阵
-        Z_IB_ij (np.array): 银行间负债邻接矩阵
+        A_IB_ij (np.ndarray): 银行间资产邻接矩阵
+        Z_IB_ij (np.ndarray): 银行间负债邻接矩阵
     """
     import numpy as np
 
@@ -618,8 +618,8 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
 
 def calibrate_bilateral_exposure_by_ME_method_use_R_package(
-        A_IB_all: np.array,
-        Z_IB_all: np.array,
+        A_IB_all: np.ndarray,
+        Z_IB_all: np.ndarray,
         target_density,
         n_samples_calib=10,
         thin=100,
@@ -632,8 +632,8 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
     中的 calibrate_bilateral_exposure_by_ME_method_use_R_package 函数,并将结果转换为 NumPy 数组。
 
     Args:
-        A_IB_all (np.array): 银行间资产
-        Z_IB_all (np.array): 银行间负债
+        A_IB_all (np.ndarray): 银行间资产
+        Z_IB_all (np.ndarray): 银行间负债
         target_density (float): 目标密度
         n_samples_calib (int, optional): 校准时生成的矩阵样本数量。默认为 10。
         thin (int, optional): 校准时的稀疏化参数。默认为 100。
@@ -875,16 +875,16 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
 # print("Email: zhoucejing@126.com")
 
 
-def RAS_algorithm(A0: np.array, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=1e-10) -> np.array:
+def RAS_algorithm(A0: np.ndarray, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=1e-10) -> np.array:
     """
     RAS 算法
 
     RAS 算法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
 
     Args:
-        A0 (np.array): 输入矩阵。
-        A_IB_adjasted (np.array): 调整后的银行间资产总和。
-        Z_IB_adjasted (np.array): 调整后的银行间负债总和。
+        A0 (np.ndarray): 输入矩阵。
+        A_IB_adjasted (np.ndarray): 调整后的银行间资产总和。
+        Z_IB_adjasted (np.ndarray): 调整后的银行间负债总和。
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
@@ -904,18 +904,18 @@ def RAS_algorithm(A0: np.array, A_IB_adjasted, Z_IB_adjasted, denominator_precit
     pass  # function
 
 
-def RAS_algorithm_with_preset_values(A0: np.array, A_IB_adjasted: np.array, Z_IB_adjasted: np.array, A_preset_values: np.array, mask: np.array, denominator_precition_threshold=1e-10) -> np.array:
+def RAS_algorithm_with_preset_values(A0: np.ndarray, A_IB_adjasted: np.ndarray, Z_IB_adjasted: np.ndarray, A_preset_values: np.ndarray, mask: np.ndarray, denominator_precition_threshold=1e-10) -> np.array:
     """
     #NOW RAS 算法，带有预置值。
 
     RAS 算法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
 
     Args:
-        A0 (np.array): 输入矩阵。
-        A_IB_adjasted (np.array): 调整后的银行间资产总和。
-        Z_IB_adjasted (np.array): 调整后的银行间负债总和。
-        A_preset_values (np.array): 预置值的矩阵。
-        mask (np.array): 预置的银行间资产邻接矩阵的掩码。值为 True 表示非预置值，值为 False 表示预置值。
+        A0 (np.ndarray): 输入矩阵。
+        A_IB_adjasted (np.ndarray): 调整后的银行间资产总和。
+        Z_IB_adjasted (np.ndarray): 调整后的银行间负债总和。
+        A_preset_values (np.ndarray): 预置值的矩阵。
+        mask (np.ndarray): 预置的银行间资产邻接矩阵的掩码。值为 True 表示非预置值，值为 False 表示预置值。
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
@@ -940,8 +940,8 @@ def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_
     #HACK 未适配未使用。通过自适应调整采样数量数量 （n_samples_calib） 来优化校准过程和 thinning factor （thin） 以平衡速度和精度。
 
     Args:
-        A_IB_all (np.array): 银行间资产邻接矩阵
-        Z_IB_all (np.array): 银行间负债邻接矩阵
+        A_IB_all (np.ndarray): 银行间资产邻接矩阵
+        Z_IB_all (np.ndarray): 银行间负债邻接矩阵
         target_density (float): 邻接矩阵指定的密度。默认值 1.0
         n_samples_calib (int): 校准时生成的矩阵样本数量。默认值 1000
         thin (int): 校准时的稀疏化参数。默认值 10
