@@ -266,6 +266,7 @@ def calculate_bilateral_exposure_by_ME_method(
         case 'RAS':
             # A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
             A_IB_ij_prev = np.outer(A_IB_adjasted, Z_IB_adjasted)
+            np.fill_diagonal(A_IB_ij_prev, 0)  # 对角线为 0
             if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
                 import matplotlib.pyplot as plt
                 # 可视化初始的标准双边敞口矩阵为热力图
@@ -922,10 +923,10 @@ def RAS_algorithm_with_preset_values(A0: np.array, A_IB_adjasted: np.array, Z_IB
     """
     A = np.zeros_like(A0)
     A1 = np.zeros_like(A0)
-    temp_x = A0.sum(axis=1)  # 计算每行的和
+    temp_x = np.sum(A0 * mask, axis=1)  # 计算每行的和
     temp_x_safe = np.where(temp_x == 0, denominator_precition_threshold, temp_x)  # 将 temp_x 中的零值替换为一个非常小的数值
     r_x = A_IB_adjasted / temp_x_safe  # 计算 r_x
-    A1 = A0 * r_x[:, np.newaxis]
+    A1[mask] = A0 * r_x[:, np.newaxis]
     temp_y = A1.sum(axis=0)  # 计算每列的和
     temp_y_safe = np.where(temp_y == 0, denominator_precition_threshold, temp_y)  # 将 temp_y 中的零值替换为一个非常小的数值
     r_y = Z_IB_adjasted / temp_y_safe  # 计算 r_y
@@ -1004,8 +1005,10 @@ if __name__ == "__main__":
     # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
     #
     # print("\n测试 calculate_bilateral_exposure_by_CP_method 完成。\n\n\n")
+    ## #DEBUG 测试 calculate_bilateral_exposure_by_CP_method
 
     # ## 测试 calculate_bilateral_exposure_by_ME_method
+    # ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method
     #
     # import numpy as np
     #
@@ -1064,3 +1067,4 @@ if __name__ == "__main__":
     print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
 
     print("\n测试 calculate_bilateral_exposure_by_ME_method 完成。\n\n\n")
+    # ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
