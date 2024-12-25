@@ -29,7 +29,7 @@ def calculate_bilateral_exposure_by_CP_method(
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_maintain_virtual_bank=False,
         is_show_detal: bool = False,
-        iteration_threshold: float = 1e-20,
+        iteration_threshold: float = 1e-10,
         max_iteration: int = 1000,
         denominator_precition_threshold: float = 1e-10
 ):
@@ -63,7 +63,7 @@ def calculate_bilateral_exposure_by_CP_method(
 
         is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
         is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
-        iteration_threshold (float): 迭代阈值。默认值 1e-20
+        iteration_threshold (float): 迭代阈值。默认值 1e-10
         max_iteration (int): 最大迭代次数。默认值 1000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
     """
@@ -73,16 +73,27 @@ def calculate_bilateral_exposure_by_CP_method(
 
     ## 调整银行资产负债表使得总资产与总负债相等
 
+    is_added_virtual_bank = None
     match method_adjast_bank_balanceSheet:
         case 'none':
             ## #NOTE 调整方案〇：无需调整
             A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
             ## #NOTE 调整方案一：添加虚拟银行
-            A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+                A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
+                logging.warning("银行间总资产与银行间总负债相等，无需调整。")
+                is_added_virtual_bank = False
+            else:
+                A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+                pass  # if
         case 'resize':
-            # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
-            A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+                logging.warning("银行间总资产与银行间总负债相等，无需调整。")
+            else:
+                # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+                A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
+                pass  # if
             pass  # match
 
     N = A_IB_adjasted.shape[0]  # 获取银行数量
@@ -137,7 +148,7 @@ def calculate_bilateral_exposure_by_CP_method(
         ax.set_xlabel('X-axis')
         ax.set_ylabel('Y-axis')
         plt.show()
-        time.sleep(0.50)
+        time.sleep(0.20)
         pass  # if
 
     match method_link_center_banks:
@@ -147,7 +158,7 @@ def calculate_bilateral_exposure_by_CP_method(
             # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
             iteration = 1
             while iteration < max_iteration:
-                A_IB_ij = RAS_algorithm(A0, A_IB_adjasted, Z_IB_adjasted)
+                A_IB_ij = RAS_algorithm(A0, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=denominator_precition_threshold)
                 if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
                     fig, ax = plt.subplots()
                     cax = ax.matshow(A_IB_ij, cmap='coolwarm')
@@ -156,11 +167,11 @@ def calculate_bilateral_exposure_by_CP_method(
                     ax.set_xlabel('X-axis')
                     ax.set_ylabel('Y-axis')
                     plt.show()
-                    time.sleep(0.50)
+                    time.sleep(0.20)
                     print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A0))}")
                     pass  # if
 
-                if np.allclose(A_IB_ij, A0, atol=iteration_threshold):  # 判断是否达到收敛
+                if np.allclose(A_IB_ij, A0, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
                     break
 
                 iteration += 1
@@ -178,7 +189,7 @@ def calculate_bilateral_exposure_by_CP_method(
 
     logging.info("中心边缘连接算法计算边权重完成。")
 
-    if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
+    if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
             A_IB_ij = A_IB_ij
             Z_IB_ij = Z_IB_ij
@@ -203,7 +214,7 @@ def calculate_bilateral_exposure_by_ME_method(
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_maintain_virtual_bank=False,
         method_link_center_banks: str = 'RAS',
-        iteration_threshold: float = 1e-20,
+        iteration_threshold: float = 1e-10,
         is_show_detal: bool = False,
         max_iteration: int = 1000,
         denominator_precition_threshold: float = 1e-10
@@ -233,7 +244,7 @@ def calculate_bilateral_exposure_by_ME_method(
             - 'RAS-2'：使用旧的的 RAS 算法；
 
         is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
-        iteration_threshold (float): 迭代阈值。默认值 1e-3
+        iteration_threshold (float): 迭代阈值。默认值 1e-10
         max_iteration (int): 最大迭代次数。默认值 30
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
@@ -248,16 +259,27 @@ def calculate_bilateral_exposure_by_ME_method(
 
     ## 调整银行资产负债表使得总资产与总负债相等
 
+    is_added_virtual_bank = None
     match method_adjast_bank_balanceSheet:
         case 'none':
             ## #NOTE 调整方案〇：无需调整
             A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
             ## #NOTE 调整方案一：添加虚拟银行
-            A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+                A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
+                logging.warning("银行间总资产与银行间总负债相等，无需调整。")
+                is_added_virtual_bank = False
+            else:
+                A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+                pass  # if
         case 'resize':
-            # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
-            A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+                logging.warning("银行间总资产与银行间总负债相等，无需调整。")
+            else:
+                # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+                A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
+                pass  # if
             pass  # match
 
     N = A_IB_adjasted.shape[0]  # 获取银行数量
@@ -277,7 +299,7 @@ def calculate_bilateral_exposure_by_ME_method(
                 ax.set_xlabel('X-axis')
                 ax.set_ylabel('Y-axis')
                 plt.show()
-                time.sleep(0.50)
+                time.sleep(0.20)
                 pass  # if
         case 'RAS-old':
             A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted, Z_IB_adjasted])  # 标准化银行间资产负债矩阵
@@ -293,7 +315,7 @@ def calculate_bilateral_exposure_by_ME_method(
                 ax.set_xlabel('X-axis')
                 ax.set_ylabel('Y-axis')
                 plt.show()
-                time.sleep(0.50)
+                time.sleep(0.20)
                 pass  # if
             pass  # match
 
@@ -302,7 +324,7 @@ def calculate_bilateral_exposure_by_ME_method(
             # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
             iteration = 1
             while iteration < max_iteration:
-                A_IB_ij = RAS_algorithm(A_IB_ij_prev, A_IB_adjasted, Z_IB_adjasted)  # 调用 RAS 算法
+                A_IB_ij = RAS_algorithm(A_IB_ij_prev, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=denominator_precition_threshold)
                 if is_show_detal:  # 可视化初始的标准双边敞口矩阵为热力图
                     fig, ax = plt.subplots()
                     cax = ax.matshow(A_IB_ij, cmap='coolwarm')
@@ -311,11 +333,11 @@ def calculate_bilateral_exposure_by_ME_method(
                     ax.set_xlabel('X-axis')
                     ax.set_ylabel('Y-axis')
                     plt.show()
-                    time.sleep(0.50)
+                    time.sleep(0.20)
                     print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
                     pass  # if
 
-                if np.allclose(A_IB_ij, A_IB_ij_prev, atol=iteration_threshold):  # 判断是否达到收敛
+                if np.allclose(A_IB_ij, A_IB_ij_prev, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
                     break
 
                 iteration += 1
@@ -349,7 +371,7 @@ def calculate_bilateral_exposure_by_ME_method(
                     ax.set_xlabel('X-axis')
                     ax.set_ylabel('Y-axis')
                     plt.show()
-                    time.sleep(0.50)
+                    time.sleep(0.20)
                     print(f"第{iteration}次迭代。精度：{np.max(np.abs(X_ij_star - X_ij_prev))}")
                     pass  # if
 
@@ -377,7 +399,7 @@ def calculate_bilateral_exposure_by_ME_method(
 
     logging.info("最大熵值法计算边权重完成。")
 
-    if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
+    if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
             A_IB_ij = A_IB_ij
             Z_IB_ij = Z_IB_ij
@@ -404,9 +426,9 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_maintain_virtual_bank=False,
         is_show_detal: bool = False,
-        iteration_threshold: float = 1e-20,
+        iteration_threshold: float = 1e-10,
         max_iteration: int = 1000,
-        denominator_precition_threshold: float = 1e-20
+        denominator_precition_threshold: float = 1e-10
 ):
     """
     #NOW 通过各银行之银行间资产与银行间负债估算银行间双边敞口。
@@ -438,7 +460,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
             - 'RAS-2'：使用旧的的 RAS 算法；
 
         is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
-        iteration_threshold (float): 迭代阈值。默认值 1e-3
+        iteration_threshold (float): 迭代阈值。默认值 1e-10
         max_iteration (int): 最大迭代次数。默认值 30
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
@@ -453,16 +475,27 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
     ## 调整银行资产负债表使得总资产与总负债相等
 
+    is_added_virtual_bank = None
     match method_adjast_bank_balanceSheet:
         case 'none':
             ## #NOTE 调整方案〇：无需调整
             A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
             ## #NOTE 调整方案一：添加虚拟银行
-            A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+                A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
+                logging.warning("银行间总资产与银行间总负债相等，无需调整。")
+                is_added_virtual_bank = False
+            else:
+                A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+                pass  # if
         case 'resize':
-            # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
-            A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+                logging.warning("银行间总资产与银行间总负债相等，无需调整。")
+            else:
+                # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+                A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
+                pass  # if
             pass  # match
 
     N = A_IB_adjasted.shape[0]  # 获取银行数量
@@ -499,7 +532,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         ax.set_xlabel('X-axis')
         ax.set_ylabel('Y-axis')
         plt.show()
-        time.sleep(0.50)
+        time.sleep(0.20)
         pass  # if
 
     # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
@@ -514,11 +547,11 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
             ax.set_xlabel('X-axis')
             ax.set_ylabel('Y-axis')
             plt.show()
-            time.sleep(0.50)
+            time.sleep(0.20)
             print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
             pass  # if
 
-        if np.allclose(A_IB_ij, A_IB_ij_prev, atol=iteration_threshold):  # 判断是否达到收敛
+        if np.allclose(A_IB_ij, A_IB_ij_prior_prev, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
             break
 
         iteration += 1
@@ -570,7 +603,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
             ax.set_xlabel('X-axis')
             ax.set_ylabel('Y-axis')
             plt.show()
-            time.sleep(0.50)
+            time.sleep(0.20)
             print(f"第{iteration}次迭代。精度：{np.max(np.abs(X_ij_star - X_ij_prev))}")
             pass  # if
 
@@ -599,7 +632,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
     logging.info("最大熵值法计算边权重完成。")
 
-    if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
+    if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
             A_IB_ij = A_IB_ij
             Z_IB_ij = Z_IB_ij
@@ -660,16 +693,27 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
     # 导入 R 中的 systemicrisk 包
     systemicrisk = importr('systemicrisk')
 
+    is_added_virtual_bank = None
     match method_adjast_bank_balanceSheet:
         case 'none':
             ## #NOTE 调整方案〇：无需调整
             A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
             ## #NOTE 调整方案一：添加虚拟银行
-            A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+                A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
+                logging.warning("银行间总资产与银行间总负债相等，无需调整。")
+                is_added_virtual_bank = False
+            else:
+                A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+                pass  # if
         case 'resize':
-            # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
-            A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+                logging.warning("银行间总资产与银行间总负债相等，无需调整。")
+            else:
+                # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+                A_IB_adjasted, Z_IB_adjasted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
+                pass  # if
             pass  # match
 
     # 将 NumPy 数组转换为 R 对象
@@ -696,7 +740,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
     # 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
     logging.info(f"估算前后变动占比：{np.abs(A_IB_ij.sum() - A_IB_adjasted.sum()) / A_IB_adjasted.sum()}")
 
-    if method_adjast_bank_balanceSheet == 'add_virtual_bank':  # 如果添加了虚拟银行，则删除虚拟银行
+    if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
             A_IB_ij = A_IB_ij
             Z_IB_ij = Z_IB_ij
@@ -974,7 +1018,7 @@ def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_
 
 
 if __name__ == "__main__":
-    # ## 测试 calculate_bilateral_exposure_by_CP_method
+    # ## #DEBUG 测试 calculate_bilateral_exposure_by_CP_method
     #
     # # 假设有 8 个中心银行和 24 个边缘银行
     # num_center = 8
@@ -988,12 +1032,13 @@ if __name__ == "__main__":
     # Z_IB_all = np.random.rand(num_banks) * 100
     # Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
     # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
+    # print(f"银行间总资产总和与银行间总负债总和差异：{A_IB_all.sum() - Z_IB_all.sum()}")
     #
     # # 中心银行的索引
     # array_idx_center_bank = np.arange(num_center)
     #
     # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-5, max_iteration=1000, denominator_precition_threshold=1e-20)
+    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-10, max_iteration=1000, denominator_precition_threshold=1e-10)
     #
     # # 打印结果
     # print("银行间资产矩阵 A_IB_ij:")
@@ -1005,9 +1050,7 @@ if __name__ == "__main__":
     # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
     #
     # print("\n测试 calculate_bilateral_exposure_by_CP_method 完成。\n\n\n")
-    ## #DEBUG 测试 calculate_bilateral_exposure_by_CP_method
 
-    # ## 测试 calculate_bilateral_exposure_by_ME_method
     # ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method
     #
     # import numpy as np
@@ -1022,7 +1065,7 @@ if __name__ == "__main__":
     # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
     #
     # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all,iteration_threshold=1e-5, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-5)
+    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, iteration_threshold=1e-10, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-10)
     #
     # # 打印结果
     # print("银行间资产矩阵 A_IB_ij:")
@@ -1035,7 +1078,7 @@ if __name__ == "__main__":
     #
     # print("\n测试 calculate_bilateral_exposure_by_ME_method 完成。\n\n\n")
 
-    ## 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
+    ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
 
     import numpy as np
 
@@ -1067,4 +1110,3 @@ if __name__ == "__main__":
     print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
 
     print("\n测试 calculate_bilateral_exposure_by_ME_method 完成。\n\n\n")
-    # ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
