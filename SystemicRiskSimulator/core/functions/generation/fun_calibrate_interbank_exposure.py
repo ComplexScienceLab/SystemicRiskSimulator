@@ -184,7 +184,7 @@ def calculate_bilateral_exposure_by_CP_method(
 
     # # #DEBUG 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
     # logging.debug(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # logging.debug(f"总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
     # logging.debug(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
     # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
     # logging.debug(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
@@ -397,7 +397,7 @@ def calculate_bilateral_exposure_by_ME_method(
 
     # # #DEBUG 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
     # logging.debug(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # logging.debug(f"总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
     # logging.debug(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
     # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
     # logging.debug(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
@@ -587,7 +587,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
     # # #DEBUG 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
     # logging.debug(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # logging.debug(f"总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
     # logging.debug(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
     # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
     # logging.debug(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
@@ -702,7 +702,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
 
     # # #DEBUG 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
     # logging.debug(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # logging.debug(f"总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
     # logging.debug(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
     # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
     # logging.debug(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
@@ -1022,7 +1022,7 @@ if __name__ == "__main__":
     # print("银行间资产矩阵 A_IB_ij:")
     # print(A_IB_ij)
     # print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # print(f"总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
     # print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
     # print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
     # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
@@ -1050,7 +1050,7 @@ if __name__ == "__main__":
     # print("银行间资产矩阵 A_IB_ij:")
     # print(A_IB_ij)
     # print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # print(f"总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
     # print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
     # print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
     # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
@@ -1084,7 +1084,7 @@ if __name__ == "__main__":
     print("银行间资产矩阵 A_IB_ij:")
     print(A_IB_ij)
     print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    print(f"总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
     print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
     print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
     print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
