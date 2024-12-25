@@ -549,7 +549,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         A_IB_adjasted_prior_masked = np.ma.masked_where(np.all(mask, 1), A_IB_adjasted_prior)
         Z_IB_adjasted_prior_masked = np.ma.masked_where(np.all(mask, 0), Z_IB_adjasted_prior)
         A_IB_ij_masked = RAS_algorithm(A_IB_ij_prev_masked, A_IB_adjasted_prior_masked, Z_IB_adjasted_prior_masked, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
-        A_IB_ij = np.ma.filled(A_IB_ij_masked, A_IB_ij_prev)
+        A_IB_ij = np.ma.filled(A_IB_ij_masked, A_preset_values)
         # A_IB_ij = RAS_algorithm_with_preset_values(A_IB_ij_prev, A_IB_adjasted_prior, Z_IB_adjasted_prior, A_preset_values, mask, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
         if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
             fig, ax = plt.subplots()
