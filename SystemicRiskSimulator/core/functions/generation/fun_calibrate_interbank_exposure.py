@@ -20,7 +20,7 @@ from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import ad
 def calculate_bilateral_exposure_by_CP_method(
         A_IB_all: np.ndarray,
         Z_IB_all: np.ndarray,
-        array_idx_center_bank: np.array = None,
+        array_idx_center_bank: np.ndarray = None,
         num_center=20,
         center_agents_networkDensity: float = 1.0,
         method_link_center_banks: str = 'RAS',
@@ -875,7 +875,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
 # print("Email: zhoucejing@126.com")
 
 
-def RAS_algorithm(A0: np.ndarray, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=1e-10) -> np.array:
+def RAS_algorithm(A0: np.ndarray, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=1e-10) -> np.ndarray:
     """
     RAS 算法
 
@@ -888,7 +888,7 @@ def RAS_algorithm(A0: np.ndarray, A_IB_adjasted, Z_IB_adjasted, denominator_prec
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
-        np.array: 调整后的矩阵。
+        np.ndarray: 调整后的矩阵。
     """
     A = np.zeros_like(A0)
     A1 = np.zeros_like(A0)
@@ -904,7 +904,7 @@ def RAS_algorithm(A0: np.ndarray, A_IB_adjasted, Z_IB_adjasted, denominator_prec
     pass  # function
 
 
-def RAS_algorithm_with_preset_values(A0: np.ndarray, A_IB_adjasted: np.ndarray, Z_IB_adjasted: np.ndarray, A_preset_values: np.ndarray, mask: np.ndarray, denominator_precition_threshold=1e-10) -> np.array:
+def RAS_algorithm_with_preset_values(A0: np.ndarray, A_IB_adjasted: np.ndarray, Z_IB_adjasted: np.ndarray, A_preset_values: np.ndarray, mask: np.ndarray, denominator_precition_threshold=1e-10) -> np.ndarray:
     """
     #NOW RAS 算法，带有预置值。
 
@@ -919,7 +919,7 @@ def RAS_algorithm_with_preset_values(A0: np.ndarray, A_IB_adjasted: np.ndarray, 
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
-        np.array: 调整后的矩阵。
+        np.ndarray: 调整后的矩阵。
     """
     A = np.zeros_like(A0)
     A1 = np.zeros_like(A0)

@@ -8,7 +8,7 @@ from SystemicRiskSimulator.external_packages import np
 
 # 构建测度指标
 
-def SR_meansure(Loss_in_IB: np.ndarray, E_all: np.array):
+def SR_meansure(Loss_in_IB: np.ndarray, E_all: np.ndarray):
     """
     构建系统性风险测度指标 "SR"。
     注意：要考虑里面的损失变量是否是存量还是流量。如果是存量变量，那么实际计算的时候，只需要代入最后一个时期的存量值即可。
