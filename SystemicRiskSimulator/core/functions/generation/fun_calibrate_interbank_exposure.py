@@ -1128,6 +1128,32 @@ def RAS_algorithm(A_0: np.ndarray, A_row_sum: np.ndarray, A_col_sum: np.ndarray,
 #     pass  # function
 
 
+def is_valid_adjacency_matrix(A: np.ndarray) -> bool:
+    """
+    检查邻接矩阵是否是对角线元素为 0 的全连接邻接矩阵
+
+    Args:
+        A (np.ndarray): 邻接矩阵
+
+    Returns:
+        is_valid (bool): 是否是有效的邻接矩阵
+    """
+    is_valid = True
+    if np.any(np.diag(A) != 0):
+        logging.error("对角线元素不为 0")
+        is_valid = False
+
+    # 检查非对角线元素是否全为非零
+    mask = np.ones_like(A, dtype=bool)  # 非对角线元素掩码
+    np.fill_diagonal(mask, 0)  # 将对角线元素置为0，保持非对角线为1
+    if np.any(A[mask] == 0):  # 如果非对角线元素中有零值，返回False
+        logging.error("非对角线元素中有零值")
+        is_valid = False
+
+    return is_valid
+    pass  # function
+
+
 def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_IB_all, target_density=1.0, n_samples_calib=1000, thin=10):
     """
     #HACK 未适配未使用。通过自适应调整采样数量数量 （n_samples_calib） 来优化校准过程和 thinning factor （thin） 以平衡速度和精度。
