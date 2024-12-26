@@ -153,58 +153,58 @@ def calculate_bilateral_exposure_by_CP_method(
 
     match method_link_center_banks:
         case 'R语言的systemicrisk包之calibrate_ER':
-            A_IB_ij, Z_IB_ij = calibrate_bilateral_exposure_by_ME_method_use_R_package(A_IB_adjasted, Z_IB_adjasted, target_density=center_agents_networkDensity, method_adjast_bank_balanceSheet='none')
+            A_IB_1, Z_IB_1 = calibrate_bilateral_exposure_by_ME_method_use_R_package(A_IB_adjasted, Z_IB_adjasted, target_density=center_agents_networkDensity, method_adjast_bank_balanceSheet='none')
         case 'RAS':
             iteration = 1
             while iteration < max_iteration:
-                A_IB_ij = RAS_algorithm(A_IB_0, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=denominator_precition_threshold)
+                A_IB_1 = RAS_algorithm(A_IB_0, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=denominator_precition_threshold)
                 if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
                     fig, ax = plt.subplots()
-                    cax = ax.matshow(A_IB_ij, cmap='coolwarm')
+                    cax = ax.matshow(A_IB_1, cmap='coolwarm')
                     fig.colorbar(cax)
                     ax.set_title('Iteration: {}'.format(iteration))
                     ax.set_xlabel('X-axis')
                     ax.set_ylabel('Y-axis')
                     plt.show()
                     time.sleep(0.25)
-                    print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_0))}")
+                    print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_1 - A_IB_0))}")
                     pass  # if
 
-                if np.allclose(A_IB_ij, A_IB_0, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
+                if np.allclose(A_IB_1, A_IB_0, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
                     break
 
                 iteration += 1
-                A_IB_0 = A_IB_ij.copy()
+                A_IB_0 = A_IB_1.copy()
 
                 pass  # while
-            Z_IB_ij = A_IB_ij.copy().T
+            Z_IB_1 = A_IB_1.copy().T
 
             pass  # match
 
     # # #DEBUG 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    # logging.debug(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-    # logging.debug(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-    # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
-    # logging.debug(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-    # logging.debug(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
+    # logging.debug(f"\n总元素和之误差：{np.round(A_IB_1.sum() - A_IB_all.sum())}")
+    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_1.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # logging.debug(f"\n行元素和之误差：{np.round(A_IB_1.sum(axis=1) - A_IB_all)}")
+    # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_1.sum(axis=1) - A_IB_all) / A_IB_all}")
+    # logging.debug(f"\n列元素和之误差：{np.round(A_IB_1.sum(axis=0) - Z_IB_all)}")
+    # logging.debug(f"\n列元素和之误差占比：{np.abs(A_IB_1.sum(axis=0) - Z_IB_all) / Z_IB_all}")
 
     logging.info("估算风险敞口矩阵完成。")
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
-            A_IB_ij = A_IB_ij
-            Z_IB_ij = Z_IB_ij
+            A_IB_1 = A_IB_1
+            Z_IB_1 = Z_IB_1
         else:
-            A_IB_ij = A_IB_ij[:-1, :-1]
-            Z_IB_ij = Z_IB_ij[:-1, :-1]
+            A_IB_1 = A_IB_1[:-1, :-1]
+            Z_IB_1 = Z_IB_1[:-1, :-1]
             pass  # if
     else:
-        A_IB_ij = A_IB_ij
-        Z_IB_ij = Z_IB_ij
+        A_IB_1 = A_IB_1
+        Z_IB_1 = Z_IB_1
         pass  # if
 
-    return A_IB_ij, Z_IB_ij
+    return A_IB_1, Z_IB_1
 
     pass  # function
 
@@ -244,8 +244,8 @@ def calculate_bilateral_exposure_by_ME_method(
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
-        A_IB_ij (np.ndarray): 银行间资产邻接矩阵
-        Z_IB_ij (np.ndarray): 银行间负债邻接矩阵
+        A_IB_1 (np.ndarray): 银行间资产邻接矩阵
+        Z_IB_1 (np.ndarray): 银行间负债邻接矩阵
     """
     import numpy as np
 
@@ -282,13 +282,12 @@ def calculate_bilateral_exposure_by_ME_method(
     match method_link_center_banks:
         case 'RAS':
             # A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
-            A_IB_ij_prev = np.outer(A_IB_adjasted, Z_IB_adjasted)
-            np.fill_diagonal(A_IB_ij_prev, 0)  # 对角线为 0
+            A_IB_0 = np.outer(A_IB_adjasted, Z_IB_adjasted)
+            np.fill_diagonal(A_IB_0, 0)  # 对角线为 0
             if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
                 import matplotlib.pyplot as plt
-                # 可视化标准双边敞口矩阵为热力图
                 fig, ax = plt.subplots()
-                cax = ax.matshow(A_IB_ij_prev, cmap='coolwarm')
+                cax = ax.matshow(A_IB_0, cmap='coolwarm')
                 fig.colorbar(cax)
                 ax.set_title('Iteration: 0')
                 ax.set_xlabel('X-axis')
@@ -302,7 +301,6 @@ def calculate_bilateral_exposure_by_ME_method(
             X_ij_star = np.sqrt(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
             if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
                 import matplotlib.pyplot as plt
-                # 可视化标准双边敞口矩阵为热力图
                 fig, ax = plt.subplots()
                 cax = ax.matshow(X_ij_star, cmap='coolwarm')
                 fig.colorbar(cax)
@@ -318,24 +316,24 @@ def calculate_bilateral_exposure_by_ME_method(
         case 'RAS':
             iteration = 1
             while iteration < max_iteration:
-                A_IB_ij = RAS_algorithm(A_IB_ij_prev, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=denominator_precition_threshold)
+                A_IB_1 = RAS_algorithm(A_IB_0, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=denominator_precition_threshold)
                 if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
                     fig, ax = plt.subplots()
-                    cax = ax.matshow(A_IB_ij, cmap='coolwarm')
+                    cax = ax.matshow(A_IB_1, cmap='coolwarm')
                     fig.colorbar(cax)
                     ax.set_title('Iteration: {}'.format(iteration))
                     ax.set_xlabel('X-axis')
                     ax.set_ylabel('Y-axis')
                     plt.show()
                     time.sleep(0.25)
-                    print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
+                    print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_1 - A_IB_0))}")
                     pass  # if
 
-                if np.allclose(A_IB_ij, A_IB_ij_prev, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
+                if np.allclose(A_IB_1, A_IB_0, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
                     break
 
                 iteration += 1
-                A_IB_ij_prev = A_IB_ij.copy()
+                A_IB_0 = A_IB_1.copy()
 
                 pass  # while
 
@@ -380,36 +378,36 @@ def calculate_bilateral_exposure_by_ME_method(
     ## #NOTE 计算不考虑预置值的最终的银行间资产矩阵
     match method_link_center_banks:
         case 'RAS':
-            Z_IB_ij = A_IB_ij.copy().T
+            Z_IB_1 = A_IB_1.copy().T
         case 'RAS-old':
-            A_IB_ij = X_ij_star / X_ij_star.sum() * np.max([A_IB_adjasted.sum(), Z_IB_adjasted.sum()])  # 计算最终的银行间资产矩阵
-            Z_IB_ij = A_IB_ij.copy().T
+            A_IB_1 = X_ij_star / X_ij_star.sum() * np.max([A_IB_adjasted.sum(), Z_IB_adjasted.sum()])  # 计算最终的银行间资产矩阵
+            Z_IB_1 = A_IB_1.copy().T
             pass  # match
 
     # # #DEBUG 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    # logging.debug(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-    # logging.debug(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-    # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
-    # logging.debug(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-    # logging.debug(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
+    # logging.debug(f"\n总元素和之误差：{np.round(A_IB_1.sum() - A_IB_all.sum())}")
+    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_1.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # logging.debug(f"\n行元素和之误差：{np.round(A_IB_1.sum(axis=1) - A_IB_all)}")
+    # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_1.sum(axis=1) - A_IB_all) / A_IB_all}")
+    # logging.debug(f"\n列元素和之误差：{np.round(A_IB_1.sum(axis=0) - Z_IB_all)}")
+    # logging.debug(f"\n列元素和之误差占比：{np.abs(A_IB_1.sum(axis=0) - Z_IB_all) / Z_IB_all}")
 
     logging.info("估算风险敞口矩阵完成。")
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
-            A_IB_ij = A_IB_ij
-            Z_IB_ij = Z_IB_ij
+            A_IB_1 = A_IB_1
+            Z_IB_1 = Z_IB_1
         else:
-            A_IB_ij = A_IB_ij[:-1, :-1]
-            Z_IB_ij = Z_IB_ij[:-1, :-1]
+            A_IB_1 = A_IB_1[:-1, :-1]
+            Z_IB_1 = Z_IB_1[:-1, :-1]
             pass  # if
     else:
-        A_IB_ij = A_IB_ij
-        Z_IB_ij = Z_IB_ij
+        A_IB_1 = A_IB_1
+        Z_IB_1 = Z_IB_1
         pass  # if
 
-    return A_IB_ij, Z_IB_ij
+    return A_IB_1, Z_IB_1
 
     pass  # function
 
@@ -456,8 +454,8 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
-        A_IB_ij (np.ndarray): 银行间资产邻接矩阵
-        Z_IB_ij (np.ndarray): 银行间负债邻接矩阵
+        A_IB_1 (np.ndarray): 银行间资产邻接矩阵
+        Z_IB_1 (np.ndarray): 银行间负债邻接矩阵
     """
     import numpy as np
 
@@ -501,13 +499,12 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
     A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=1)
     Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=0)
 
-    A_IB_ij_prev = np.outer(A_IB_adjasted_prior, Z_IB_adjasted_prior)
+    A_IB_0 = np.outer(A_IB_adjasted_prior, Z_IB_adjasted_prior)
     if is_show_detal:  # 可视化双边敞口矩阵为热力图
         import matplotlib.pyplot as plt
-        # 可视化标准双边敞口矩阵为热力图
-        A_IB_ij_prev_masked = np.ma.masked_where(mask, A_IB_ij_prev)
+        A_IB_0_prev_masked = np.ma.masked_where(mask, A_IB_0)
         fig, ax = plt.subplots()
-        cax = ax.matshow(A_IB_ij_prev_masked, cmap='coolwarm')
+        cax = ax.matshow(A_IB_0_prev_masked, cmap='coolwarm')
         fig.colorbar(cax)
         ax.set_title('Iteration: 0')
         ax.set_xlabel('X-axis')
@@ -518,70 +515,70 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
     iteration = 1
     while iteration < max_iteration:
-        A_IB_ij_prev_masked = np.ma.masked_where(mask, A_IB_ij_prev)
+        A_IB_0_prev_masked = np.ma.masked_where(mask, A_IB_0)
         A_IB_adjasted_prior_masked = np.ma.masked_where(np.all(mask, 1), A_IB_adjasted_prior)
         Z_IB_adjasted_prior_masked = np.ma.masked_where(np.all(mask, 0), Z_IB_adjasted_prior)
-        A_IB_ij_masked = RAS_algorithm(A_IB_ij_prev_masked, A_IB_adjasted_prior_masked, Z_IB_adjasted_prior_masked, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
-        A_IB_ij = np.ma.filled(A_IB_ij_masked, A_preset_values)
-        # A_IB_ij = RAS_algorithm_with_preset_values(A_IB_ij_prev, A_IB_adjasted_prior, Z_IB_adjasted_prior, A_preset_values, mask, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
+        A_IB_1_masked = RAS_algorithm(A_IB_0_prev_masked, A_IB_adjasted_prior_masked, Z_IB_adjasted_prior_masked, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
+        A_IB_1 = np.ma.filled(A_IB_1_masked, A_preset_values)
+        # A_IB_1 = RAS_algorithm_with_preset_values(A_IB_0, A_IB_adjasted_prior, Z_IB_adjasted_prior, A_preset_values, mask, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
         if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
             fig, ax = plt.subplots()
-            cax = ax.matshow(A_IB_ij_masked, cmap='coolwarm')
+            cax = ax.matshow(A_IB_1_masked, cmap='coolwarm')
             fig.colorbar(cax)
             ax.set_title('Iteration: {}'.format(iteration))
             ax.set_xlabel('X-axis')
             ax.set_ylabel('Y-axis')
             plt.show()
             time.sleep(0.25)
-            print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
+            print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_1 - A_IB_0))}")
             pass  # if
 
-        if np.allclose(A_IB_ij, A_IB_ij_prev, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
+        if np.allclose(A_IB_1, A_IB_0, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
             break
 
         iteration += 1
-        A_IB_ij_prev = A_IB_ij.copy()
+        A_IB_0 = A_IB_1.copy()
 
         pass  # while
 
     if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
         fig, ax = plt.subplots()
-        cax = ax.matshow(A_IB_ij, cmap='coolwarm')
+        cax = ax.matshow(A_IB_1, cmap='coolwarm')
         fig.colorbar(cax)
         ax.set_title('Iteration: {}'.format(iteration))
         ax.set_xlabel('X-axis')
         ax.set_ylabel('Y-axis')
         plt.show()
         time.sleep(0.25)
-        print(f"最终精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
+        print(f"最终精度：{np.max(np.abs(A_IB_1 - A_IB_0))}")
         pass  # if
 
-    Z_IB_ij = A_IB_ij.copy().T
+    Z_IB_1 = A_IB_1.copy().T
 
     # # #DEBUG 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    # logging.debug(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-    # logging.debug(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-    # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
-    # logging.debug(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-    # logging.debug(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
+    # logging.debug(f"\n总元素和之误差：{np.round(A_IB_1.sum() - A_IB_all.sum())}")
+    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_1.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # logging.debug(f"\n行元素和之误差：{np.round(A_IB_1.sum(axis=1) - A_IB_all)}")
+    # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_1.sum(axis=1) - A_IB_all) / A_IB_all}")
+    # logging.debug(f"\n列元素和之误差：{np.round(A_IB_1.sum(axis=0) - Z_IB_all)}")
+    # logging.debug(f"\n列元素和之误差占比：{np.abs(A_IB_1.sum(axis=0) - Z_IB_all) / Z_IB_all}")
 
     logging.info("估算风险敞口矩阵完成。")
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
-            A_IB_ij = A_IB_ij
-            Z_IB_ij = Z_IB_ij
+            A_IB_1 = A_IB_1
+            Z_IB_1 = Z_IB_1
         else:
-            A_IB_ij = A_IB_ij[:-1, :-1]
-            Z_IB_ij = Z_IB_ij[:-1, :-1]
+            A_IB_1 = A_IB_1[:-1, :-1]
+            Z_IB_1 = Z_IB_1[:-1, :-1]
             pass  # if
     else:
-        A_IB_ij = A_IB_ij
-        Z_IB_ij = Z_IB_ij
+        A_IB_1 = A_IB_1
+        Z_IB_1 = Z_IB_1
         pass  # if
 
-    return A_IB_ij, Z_IB_ij
+    return A_IB_1, Z_IB_1
 
     pass  # function
 
