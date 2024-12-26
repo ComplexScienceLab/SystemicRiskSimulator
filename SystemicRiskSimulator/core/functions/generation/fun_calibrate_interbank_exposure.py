@@ -8,6 +8,7 @@
 __all__ = [
     'calculate_bilateral_exposure_by_CP_method',
     'calculate_bilateral_exposure_by_ME_method',
+    'calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values',
     'calibrate_bilateral_exposure_by_ME_method_use_R_package'
 ]
 
