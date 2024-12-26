@@ -1,5 +1,5 @@
 """
-计算双边敞口边权重。  #BUG #TODO 重构之后还没有做简单测试。
+计算双边敞口边权重。
 
 - 使用中心边缘连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 - 使用最大熵值法（Maximum Entropy），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
@@ -213,7 +213,6 @@ def calculate_bilateral_exposure_by_CP_method(
 def calculate_bilateral_exposure_by_ME_method(
         A_IB_all: np.ndarray,
         Z_IB_all: np.ndarray,
-        target_density: float = 0.25,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_maintain_virtual_bank=False,
         method_link_center_banks: str = 'RAS',
@@ -225,15 +224,9 @@ def calculate_bilateral_exposure_by_ME_method(
     """
     使用最大熵值法（Maximum Entropy），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
-    基于《方意_荆中博_2022_外部冲击下系统性金融风险的生成机制》附录一：最大信息熵算法
-
-    > 方意, 荆中博, 2022. 外部冲击下系统性金融风险的生成机制[J/OL]. 管理世界, 38(5): 19-35+102+36-46. DOI:10.19744/j.cnki.11-1235/f.2022.0077.
-
-
     Args:
         A_IB_all (np.ndarray): 银行间资产邻接矩阵
         Z_IB_all (np.ndarray): 银行间负债邻接矩阵
-        target_density (float): 邻接矩阵指定的密度。默认值 0.25
         method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
 
             - 'none'：不调整；
@@ -428,7 +421,6 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         Z_IB_all: np.ndarray,
         A_preset_values: np.ndarray,
         mask: np.ndarray,
-        target_density: float = 0.25,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_maintain_virtual_bank=False,
         is_show_detal: bool = False,
@@ -437,22 +429,17 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         denominator_precition_threshold: float = 1e-10
 ):
     """
-    #NOW #FIXME 通过各银行之银行间资产与银行间负债估算银行间双边敞口。
+    # 通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
     使用最大熵值法（Maximum Entropy）。
 
     估算银行间双边敞口矩阵，允许使用手动预置的元素值。
-
-    基于《方意_荆中博_2022_外部冲击下系统性金融风险的生成机制》附录一：最大信息熵算法
-
-    > 方意, 荆中博, 2022. 外部冲击下系统性金融风险的生成机制[J/OL]. 管理世界, 38(5): 19-35+102+36-46. DOI:10.19744/j.cnki.11-1235/f.2022.0077.
 
     Args:
         A_IB_all (np.ndarray): 银行间资产邻接矩阵
         Z_IB_all (np.ndarray): 银行间负债邻接矩阵
         A_preset_values (np.ndarray): 预置的银行间资产邻接矩阵
         mask (np.ndarray): 预置的银行间资产邻接矩阵的掩码。值为 True 表示预置值，值为 False 表示非预置值。
-        target_density (float): 邻接矩阵指定的密度。默认值 0.25
         method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
 
             - 'none'：不调整；
@@ -515,17 +502,6 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
     # 根据预置的元素值，重新计算银行间资产负债矩阵之行和、列和
     A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=1)
     Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=0)
-
-    # A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])  # 标准化银行间资产负债矩阵
-    # Z_IB_i_star = Z_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])
-    # # X_ij_star_0 = np.sqrt(np.outer(A_IB_i_star, Z_IB_i_star))  # 初始化准双边敞口，通过外积计算
-    # # # X_ij_star_0 = np.outer(A_IB_i_star, Z_IB_i_star)  # 初始化准双边敞口，通过外积计算
-    # # X_ij_star_prior_0 = np.zeros((N, N))  # 初始化准双边敞口
-    # # X_ij_star_prior_0[A_ij_mask] = X_ij_star_0[A_ij_mask] * (X_ij_star_0.sum() / np.outer(A_IB_i_star, Z_IB_i_star)[A_ij_mask].sum())  # 初始化准双边敞口，通过外积计算
-    # # X_ij_star_prior_0[~A_ij_mask] = A_ij_fixedVal[~A_ij_mask]
-    # # X_ij_star = X_ij_star_prior_0.copy()  # 初始化标准双边敞口矩阵
-    #
-    # # A0 = np.outer(A_IB_adjasted, Z_IB_adjasted) / denominator_precition_threshold
 
     A_IB_ij_prev = np.outer(A_IB_adjasted_prior, Z_IB_adjasted_prior)
     if is_show_detal:  # 可视化双边敞口矩阵为热力图
@@ -918,40 +894,40 @@ def RAS_algorithm(A_0: np.ndarray, A_row_sum: np.ndarray, A_col_sum: np.ndarray,
     pass  # function
 
 
-def RAS_algorithm_with_preset_values(A_0: np.ndarray, A_row_sum: np.ndarray, A_col_sum: np.ndarray, A_preset_values: np.ndarray, mask: np.ndarray, denominator_precition_threshold=1e-10) -> np.ndarray:
-    """
-    # RAS 算法，带有预置值。
-
-    RAS 算法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
-
-    Args:
-        A_0 (np.ndarray): 输入矩阵。
-        A_row_sum (np.ndarray): 行约束条件（行和，列向量）
-        A_col_sum (np.ndarray): 列约束条件（列和，行向量）
-        A_preset_values (np.ndarray): 预置值的矩阵。
-        mask (np.ndarray): 预置的矩阵掩码。值为 True 表示预置值，值为 False 表示非预置值。
-        denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
-
-    Returns:
-        np.ndarray: 调整后的矩阵。
-    """
-    A_0_masked = np.ma.masked_where(mask, A_0)
-    A_row_sum_masked = np.ma.masked_where(np.all(mask, 1), A_row_sum)
-    A_col_sum_masked = np.ma.masked_where(np.all(mask, 0), A_col_sum)
-    A_1 = np.zeros_like(A_0_masked)
-    A_2 = np.zeros_like(A_0_masked)
-    temp_x = np.sum(A_0_masked, axis=1)  # 计算每行的和
-    # temp_x = np.sum(A0 * ~mask, axis=1)  # 计算每行的和
-    temp_x_safe = np.where(temp_x == 0, denominator_precition_threshold, temp_x)  # 将 temp_x 中的零值替换为一个非常小的数值
-    r_x = A_row_sum_masked / temp_x_safe  # 计算 r_x
-    A_1 = A_0_masked * r_x[:, np.newaxis]
-    temp_y = A_1.sum(axis=0)  # 计算每列的和
-    temp_y_safe = np.where(temp_y == 0, denominator_precition_threshold, temp_y)  # 将 temp_y 中的零值替换为一个非常小的数值
-    r_y = A_col_sum_masked / temp_y_safe  # 计算 r_y
-    A_2 = A_1 * r_y[np.newaxis, :]
-    A = np.ma.filled(A_2, fill_value=A_0)
-    return A
-    pass  # function
+# def RAS_algorithm_with_preset_values(A_0: np.ndarray, A_row_sum: np.ndarray, A_col_sum: np.ndarray, A_preset_values: np.ndarray, mask: np.ndarray, denominator_precition_threshold=1e-10) -> np.ndarray:
+#     """
+#     # RAS 算法，带有预置值。
+#
+#     RAS 算法是一种矩阵调整技术，适用于已知行列总和约束的情境，通常用于平衡矩阵中的行、列总和以达到指定的边际值。在网络生成中，比如借贷矩阵生成时，我们可以使用 RAS 方法确保生成的矩阵符合银行的借入、借出总额约束。
+#
+#     Args:
+#         A_0 (np.ndarray): 输入矩阵。
+#         A_row_sum (np.ndarray): 行约束条件（行和，列向量）
+#         A_col_sum (np.ndarray): 列约束条件（列和，行向量）
+#         A_preset_values (np.ndarray): 预置值的矩阵。
+#         mask (np.ndarray): 预置的矩阵掩码。值为 True 表示预置值，值为 False 表示非预置值。
+#         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
+#
+#     Returns:
+#         np.ndarray: 调整后的矩阵。
+#     """
+#     A_0_masked = np.ma.masked_where(mask, A_0)
+#     A_row_sum_masked = np.ma.masked_where(np.all(mask, 1), A_row_sum)
+#     A_col_sum_masked = np.ma.masked_where(np.all(mask, 0), A_col_sum)
+#     A_1 = np.zeros_like(A_0_masked)
+#     A_2 = np.zeros_like(A_0_masked)
+#     temp_x = np.sum(A_0_masked, axis=1)  # 计算每行的和
+#     # temp_x = np.sum(A0 * ~mask, axis=1)  # 计算每行的和
+#     temp_x_safe = np.where(temp_x == 0, denominator_precition_threshold, temp_x)  # 将 temp_x 中的零值替换为一个非常小的数值
+#     r_x = A_row_sum_masked / temp_x_safe  # 计算 r_x
+#     A_1 = A_0_masked * r_x[:, np.newaxis]
+#     temp_y = A_1.sum(axis=0)  # 计算每列的和
+#     temp_y_safe = np.where(temp_y == 0, denominator_precition_threshold, temp_y)  # 将 temp_y 中的零值替换为一个非常小的数值
+#     r_y = A_col_sum_masked / temp_y_safe  # 计算 r_y
+#     A_2 = A_1 * r_y[np.newaxis, :]
+#     A = np.ma.filled(A_2, fill_value=A_0)
+#     return A
+#     pass  # function
 
 
 def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_IB_all, target_density=1.0, n_samples_calib=1000, thin=10):
