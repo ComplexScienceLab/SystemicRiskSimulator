@@ -698,6 +698,30 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         pass  # while
 
     # #NOW #TODO 调整连接密度
+    # 检查是否是除了对角线之外的全连接邻接矩阵
+
+    if not is_valid_adjacency_matrix(A_IB_1):
+        raise ValueError("银行间资产邻接矩阵不是对角线元素为 0 的全连接邻接矩阵！")
+
+    A_IB_2 = A_IB_1.copy()
+    num_edges_to_delete = int(N * (N - 1) * (1 - target_density))  # 计算指定的连接密度所需要去掉的连边数
+    A_IB_2_flatten = A_IB_2.flatten()  # 给 A_IB_ij 按照元素值从小到大排序，获取排序的值和索引信息
+    A_IB_2_sorted_idx = np.unravel_index(np.argsort(A_IB_2_flatten), A_IB_2.shape)
+    A_IB_2_sorted_val = np.sort(A_IB_2_flatten)
+    A_IB_2_sorted_idx = (A_IB_2_sorted_idx[0][A_IB_2_sorted_val != 0], A_IB_2_sorted_idx[1][A_IB_2_sorted_val != 0])  # 去掉0元素的索引和对应的值
+    A_IB_2_sorted_val = A_IB_2_sorted_val[A_IB_2_sorted_val != 0]
+    # 逐步去掉非零的最小值的元素，直到达到目标密度
+    for i in range(num_edges_to_delete):
+        k = A_IB_2_sorted_idx[0][i], A_IB_2_sorted_idx[1][i]  # 获取最小元素索引
+        # 判断是否满足行列值约束最低条件
+        # 如果去掉该元素之后，导致行和向量或者列和向量出现0值，并且约束条件对应元素没有0值，则不允许去掉该元素
+        temp_c = A_IB_2[:, k[1]].sum()
+        temp_r = A_IB_2[k[0], :].sum()
+        if ~((temp_r - A_IB_2[k] == 0) ^ (Z_IB_adjasted[k[1]] == 0)) and ~((temp_c - A_IB_2[k] == 0) ^ (A_IB_adjasted[k[0]] == 0)):
+            A_IB_2[k] = 0  # 去掉该连接
+            A_IB_2_sorted_idx = (np.delete(A_IB_2_sorted_idx[0], i), np.delete(A_IB_2_sorted_idx[1], i))  # 去掉索引和对应的值
+
+            pass  # if
 
     # 根据预置的元素值，重新计算银行间资产负债矩阵之行和、列和
     mask = np.where(A_preset_values == set_1, True, False)
