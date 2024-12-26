@@ -9,6 +9,7 @@ __all__ = [
     'calculate_bilateral_exposure_by_CP_method',
     'calculate_bilateral_exposure_by_ME_method',
     'calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values',
+    'calculate_bilateral_exposure_by_ME_method_with_density',
     'calibrate_bilateral_exposure_by_ME_method_use_R_package'
 ]
 
@@ -656,7 +657,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
                 pass  # if
             pass  # match
 
-    N = A_IB_adjasted.shape[0]  # 获取银行数量
+    N = A_IB_adjasted.shape[0]  # 获取银行数量（包括虚拟银行）
 
     A_IB_0 = np.outer(A_IB_adjasted, Z_IB_adjasted)
     np.fill_diagonal(A_IB_0, 0)  # 对角线为 0
@@ -675,24 +676,24 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
 
     iteration = 1
     while iteration < max_iteration:
-        A_IB_ij = RAS_algorithm(A_IB_0, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=denominator_precition_threshold)
+        A_IB_1 = RAS_algorithm(A_IB_0, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=denominator_precition_threshold)
         if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
             fig, ax = plt.subplots()
-            cax = ax.matshow(A_IB_ij, cmap='coolwarm')
+            cax = ax.matshow(A_IB_1, cmap='coolwarm')
             fig.colorbar(cax)
             ax.set_title('Iteration: {}'.format(iteration))
             ax.set_xlabel('X-axis')
             ax.set_ylabel('Y-axis')
             plt.show()
             time.sleep(0.25)
-            print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
+            print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_1 - A_IB_0))}")
             pass  # if
 
-        if np.allclose(A_IB_ij, A_IB_ij_prev, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
+        if np.allclose(A_IB_1, A_IB_0, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
             break
 
         iteration += 1
-        A_IB_ij_prev = A_IB_ij.copy()
+        A_IB_0 = A_IB_1.copy()
 
         pass  # while
 
@@ -705,8 +706,6 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
 
     A_IB_ij_prev = np.outer(A_IB_adjasted_prior, Z_IB_adjasted_prior)
     if is_show_detal:  # 可视化双边敞口矩阵为热力图
-        import matplotlib.pyplot as plt
-        # 可视化标准双边敞口矩阵为热力图
         A_IB_ij_prev_masked = np.ma.masked_where(mask, A_IB_ij_prev)
         fig, ax = plt.subplots()
         cax = ax.matshow(A_IB_ij_prev_masked, cmap='coolwarm')
@@ -1282,7 +1281,7 @@ if __name__ == "__main__":
     import numpy as np
 
     # 假设有 10 个银行
-    num_banks = 10
+    num_banks = 5
 
     # 随机生成银行间总资产和总负债矩阵
     np.random.seed(42)  # 固定随机种子以便复现结果
@@ -1307,7 +1306,7 @@ if __name__ == "__main__":
     # Z_IB_all += A_preset_values.sum(axis=0)
 
     # 调用函数计算双边敞口
-    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_density(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, A_preset_values=A_preset_values, mask=A_mask, target_density=0.5, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
+    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_density(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=0.5, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
 
     # 打印结果
     print("银行间资产矩阵 A_IB_ij:")
