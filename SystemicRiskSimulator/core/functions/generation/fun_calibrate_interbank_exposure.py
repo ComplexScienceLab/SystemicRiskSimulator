@@ -82,15 +82,16 @@ def calculate_bilateral_exposure_by_CP_method(
             A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
             ## #NOTE 调整方案一：添加虚拟银行
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
                 is_added_virtual_bank = False
             else:
                 A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+                is_added_virtual_bank = True
                 pass  # if
         case 'resize':
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -262,15 +263,16 @@ def calculate_bilateral_exposure_by_ME_method(
             A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
             ## #NOTE 调整方案一：添加虚拟银行
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
                 is_added_virtual_bank = False
             else:
                 A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+                is_added_virtual_bank = True
                 pass  # if
         case 'resize':
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -472,15 +474,16 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
             A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
             ## #NOTE 调整方案一：添加虚拟银行
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
                 is_added_virtual_bank = False
             else:
                 A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+                is_added_virtual_bank = True
                 pass  # if
         case 'resize':
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -624,8 +627,10 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
-        A_IB_ij (np.ndarray): 银行间资产邻接矩阵
-        Z_IB_ij (np.ndarray): 银行间负债邻接矩阵
+        A_IB_4 (np.ndarray): 银行间资产邻接矩阵
+        Z_IB_4 (np.ndarray): 银行间负债邻接矩阵
+        density (float): 最终的连接密度
+        is_the_target_density (bool): 是否达到目标密度
     """
     import numpy as np
 
@@ -641,15 +646,16 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
             A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
             ## #NOTE 调整方案一：添加虚拟银行
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
                 is_added_virtual_bank = False
             else:
                 A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+                is_added_virtual_bank = True
                 pass  # if
         case 'resize':
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -697,21 +703,25 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
 
         pass  # while
 
-    # #NOW #TODO 调整连接密度
-    # 检查是否是除了对角线之外的全连接邻接矩阵
+    # 调整连接密度 #BUG 这个方案可能不一定会达到目标密度，因为可能有一些更优的解没有被发现
 
+    # 检查是否是除了对角线之外的全连接邻接矩阵
     if not is_valid_adjacency_matrix(A_IB_1):
         raise ValueError("银行间资产邻接矩阵不是对角线元素为 0 的全连接邻接矩阵！")
 
+    iteration += 1
     A_IB_2 = A_IB_1.copy()
-    num_edges_to_delete = int(N * (N - 1) * (1 - target_density))  # 计算指定的连接密度所需要去掉的连边数
-    A_IB_2_flatten = A_IB_2.flatten()  # 给 A_IB_ij 按照元素值从小到大排序，获取排序的值和索引信息
+    num_edges_no_zeros = np.count_nonzero(A_IB_2)  # 计算非零元素的个数
+    num_edges_to_delete = int(np.ceil(num_edges_no_zeros * (1 - target_density)))  # 计算指定的连接密度所需要去掉的连边数
+    A_IB_2_flatten = A_IB_2.flatten()  # 给 A_IB_4 按照元素值从小到大排序，获取排序的值和索引信息
     A_IB_2_sorted_idx = np.unravel_index(np.argsort(A_IB_2_flatten), A_IB_2.shape)
     A_IB_2_sorted_val = np.sort(A_IB_2_flatten)
     A_IB_2_sorted_idx = (A_IB_2_sorted_idx[0][A_IB_2_sorted_val != 0], A_IB_2_sorted_idx[1][A_IB_2_sorted_val != 0])  # 去掉0元素的索引和对应的值
     A_IB_2_sorted_val = A_IB_2_sorted_val[A_IB_2_sorted_val != 0]
     # 逐步去掉非零的最小值的元素，直到达到目标密度
-    for i in range(num_edges_to_delete):
+    i = 0  # 记录判断的元素索引
+    j = 0  # 记录已经去掉的连接个数
+    while (j != num_edges_to_delete) and (i < num_edges_no_zeros):
         k = A_IB_2_sorted_idx[0][i], A_IB_2_sorted_idx[1][i]  # 获取最小元素索引
         # 判断是否满足行列值约束最低条件
         # 如果去掉该元素之后，导致行和向量或者列和向量出现0值，并且约束条件对应元素没有0值，则不允许去掉该元素
@@ -719,94 +729,136 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         temp_r = A_IB_2[k[0], :].sum()
         if ~((temp_r - A_IB_2[k] == 0) ^ (Z_IB_adjasted[k[1]] == 0)) and ~((temp_c - A_IB_2[k] == 0) ^ (A_IB_adjasted[k[0]] == 0)):
             A_IB_2[k] = 0  # 去掉该连接
-            A_IB_2_sorted_idx = (np.delete(A_IB_2_sorted_idx[0], i), np.delete(A_IB_2_sorted_idx[1], i))  # 去掉索引和对应的值
-
+            # A_IB_2_sorted_idx = (np.delete(A_IB_2_sorted_idx[0], i), np.delete(A_IB_2_sorted_idx[1], i))  # 去掉索引和对应的值
+            j += 1
+            if is_show_detal:  # 可视化双边敞口矩阵为热力图
+                mask = np.where(A_IB_2 == 0, True, False)
+                A_IB_2_masked = np.ma.masked_where(mask, A_IB_2)
+                fig, ax = plt.subplots()
+                cax = ax.matshow(A_IB_2_masked, cmap='coolwarm')
+                fig.colorbar(cax)
+                ax.set_title(f'Iteration: {iteration} - {i}')
+                ax.set_xlabel('X-axis')
+                ax.set_ylabel('Y-axis')
+                plt.show()
+                time.sleep(0.1)
+                pass  # if
+        else:
+            logging.warning(f"不允许去掉元素：{k}，对应的值为：{A_IB_2[k]}。")
             pass  # if
+        i += 1
+        pass  # while
+
+    # 总结调整后的的连接密度
+    density = np.count_nonzero(A_IB_2) / num_edges_no_zeros
+    # 完成率
+    density / target_density
+    logging.info(f"调整后的的连接密度：{density}")
+    if density < target_density:
+        is_the_target_density = False
+        logging.warning(f"调整后的的连接密度未达到目标密度：{target_density}")
+    else:
+        is_the_target_density = True
+        logging.info(f"调整后的的连接密度已达到目标密度：{target_density}")
+        pass
 
     # 根据预置的元素值，重新计算银行间资产负债矩阵之行和、列和
-    mask = np.where(A_preset_values == set_1, True, False)
-    A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=1)
-    Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=0)
+    mask = np.where(A_IB_2 == 0, True, False)
+    # A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=1)
+    # Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=0)
 
-    A_IB_ij_prev = np.outer(A_IB_adjasted_prior, Z_IB_adjasted_prior)
+    # A_IB_ij_prev = np.outer(A_IB_adjasted, Z_IB_adjasted)
     if is_show_detal:  # 可视化双边敞口矩阵为热力图
-        A_IB_ij_prev_masked = np.ma.masked_where(mask, A_IB_ij_prev)
+        A_IB_2_masked = np.ma.masked_where(mask, A_IB_2)
         fig, ax = plt.subplots()
-        cax = ax.matshow(A_IB_ij_prev_masked, cmap='coolwarm')
+        cax = ax.matshow(A_IB_2_masked, cmap='coolwarm')
         fig.colorbar(cax)
-        ax.set_title('Iteration: 0')
+        ax.set_title(f'Iteration: {iteration} - adjasted density masked')
         ax.set_xlabel('X-axis')
         ax.set_ylabel('Y-axis')
         plt.show()
         time.sleep(0.25)
         pass  # if
 
-    iteration = 1
+    if is_show_detal:  # 可视化双边敞口矩阵为热力图
+        fig, ax = plt.subplots()
+        cax = ax.matshow(A_IB_1, cmap='coolwarm')
+        fig.colorbar(cax)
+        ax.set_title(f'Iteration: {iteration} - not adjasted density')
+        ax.set_xlabel('X-axis')
+        ax.set_ylabel('Y-axis')
+        plt.show()
+        time.sleep(0.25)
+        pass  # if
+
+    A_IB_3 = A_IB_2.copy()
+    iteration += 1
     while iteration < max_iteration:
-        A_IB_ij_prev_masked = np.ma.masked_where(mask, A_IB_ij_prev)
-        A_IB_adjasted_prior_masked = np.ma.masked_where(np.all(mask, 1), A_IB_adjasted_prior)
-        Z_IB_adjasted_prior_masked = np.ma.masked_where(np.all(mask, 0), Z_IB_adjasted_prior)
-        A_IB_ij_masked = RAS_algorithm(A_IB_ij_prev_masked, A_IB_adjasted_prior_masked, Z_IB_adjasted_prior_masked, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
-        A_IB_ij = np.ma.filled(A_IB_ij_masked, A_preset_values)
-        # A_IB_ij = RAS_algorithm_with_preset_values(A_IB_ij_prev, A_IB_adjasted_prior, Z_IB_adjasted_prior, A_preset_values, mask, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
+        A_IB_3_masked = np.ma.masked_where(mask, A_IB_3)
+        # A_IB_adjasted_prior_masked = np.ma.masked_where(np.all(mask, 1), A_IB_adjasted_prior)
+        # Z_IB_adjasted_prior_masked = np.ma.masked_where(np.all(mask, 0), Z_IB_adjasted_prior)
+        # A_IB_4_masked = RAS_algorithm(A_IB_2_masked, A_IB_adjasted_prior_masked, Z_IB_adjasted_prior_masked, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
+        A_IB_4_masked = RAS_algorithm(A_IB_3_masked, A_IB_adjasted, Z_IB_adjasted, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
+        A_IB_4 = np.ma.filled(A_IB_4_masked, A_IB_3)
+        # A_IB_4 = RAS_algorithm_with_preset_values(A_IB_ij_prev, A_IB_adjasted_prior, Z_IB_adjasted_prior, A_preset_values, mask, denominator_precition_threshold=denominator_precition_threshold)  # 调用 RAS 算法
         if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
             fig, ax = plt.subplots()
-            cax = ax.matshow(A_IB_ij_masked, cmap='coolwarm')
+            cax = ax.matshow(A_IB_4_masked, cmap='coolwarm')
             fig.colorbar(cax)
             ax.set_title('Iteration: {}'.format(iteration))
             ax.set_xlabel('X-axis')
             ax.set_ylabel('Y-axis')
             plt.show()
             time.sleep(0.25)
-            print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
+            print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_4 - A_IB_3))}")
             pass  # if
 
-        if np.allclose(A_IB_ij, A_IB_ij_prev, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
+        if np.allclose(A_IB_4, A_IB_3, atol=iteration_threshold, rtol=iteration_threshold):  # 判断是否达到收敛 #BUG 可能会出现难以收敛到很小的值的情况，可以考虑前后两个 `np.allclose` 的值的差值，如果不降反升，那么就停止迭代
             break
 
         iteration += 1
-        A_IB_ij_prev = A_IB_ij.copy()
+        A_IB_3 = A_IB_4.copy()
 
         pass  # while
 
     if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
         fig, ax = plt.subplots()
-        cax = ax.matshow(A_IB_ij, cmap='coolwarm')
+        cax = ax.matshow(A_IB_4, cmap='coolwarm')
         fig.colorbar(cax)
         ax.set_title('Iteration: {}'.format(iteration))
         ax.set_xlabel('X-axis')
         ax.set_ylabel('Y-axis')
         plt.show()
         time.sleep(0.25)
-        print(f"最终精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
+        print(f"最终精度：{np.max(np.abs(A_IB_4 - A_IB_3))}")
         pass  # if
 
-    Z_IB_ij = A_IB_ij.copy().T
+    Z_IB_4 = A_IB_4.copy().T
 
     # # #DEBUG 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    # logging.debug(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-    # logging.debug(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-    # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
-    # logging.debug(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-    # logging.debug(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
+    # logging.debug(f"\n总元素和之误差：{np.round(A_IB_4.sum() - A_IB_all.sum())}")
+    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_4.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    # logging.debug(f"\n行元素和之误差：{np.round(A_IB_4.sum(axis=1) - A_IB_all)}")
+    # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_4.sum(axis=1) - A_IB_all) / A_IB_all}")
+    # logging.debug(f"\n列元素和之误差：{np.round(A_IB_4.sum(axis=0) - Z_IB_all)}")
+    # logging.debug(f"\n列元素和之误差占比：{np.abs(A_IB_4.sum(axis=0) - Z_IB_all) / Z_IB_all}")
 
     logging.info("估算风险敞口矩阵完成。")
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
-            A_IB_ij = A_IB_ij
-            Z_IB_ij = Z_IB_ij
+            A_IB_4 = A_IB_4
+            Z_IB_4 = Z_IB_4
         else:
-            A_IB_ij = A_IB_ij[:-1, :-1]
-            Z_IB_ij = Z_IB_ij[:-1, :-1]
+            A_IB_4 = A_IB_4[:-1, :-1]
+            Z_IB_4 = Z_IB_4[:-1, :-1]
             pass  # if
     else:
-        A_IB_ij = A_IB_ij
-        Z_IB_ij = Z_IB_ij
+        A_IB_4 = A_IB_4
+        Z_IB_4 = Z_IB_4
         pass  # if
 
-    return A_IB_ij, Z_IB_ij
+    return A_IB_4, Z_IB_4, density, is_the_target_density
 
     pass  # function
 
@@ -861,15 +913,16 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
             A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
             ## #NOTE 调整方案一：添加虚拟银行
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjasted, Z_IB_adjasted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
                 is_added_virtual_bank = False
             else:
                 A_IB_adjasted, Z_IB_adjasted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
+                is_added_virtual_bank = True
                 pass  # if
         case 'resize':
-            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-20:
+            if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -1330,42 +1383,29 @@ if __name__ == "__main__":
 
     import numpy as np
 
-    # 假设有 10 个银行
-    num_banks = 5
+    for i in range(0, 10):
+        # 假设有 5 个银行
+        num_banks = 5
 
-    # 随机生成银行间总资产和总负债矩阵
-    np.random.seed(42)  # 固定随机种子以便复现结果
-    A_IB_all = np.random.rand(num_banks) * 100 + 100
-    Z_IB_all = np.random.rand(num_banks) * 100 + 100
-    Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
+        # 随机生成银行间总资产和总负债矩阵
+        np.random.seed(i)  # 固定随机种子以便复现结果
+        A_IB_all = np.random.rand(num_banks) * 100 + 100
+        Z_IB_all = np.random.rand(num_banks) * 100 + 100
+        Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
 
-    # 随机生成预置值的矩阵
-    A_preset_values = np.random.rand(num_banks, num_banks)
+        # 调用函数计算双边敞口
+        A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_density(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=0.75, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
 
-    # 预置规则1：随机选取 25% 的值设为 50，其余的值设为 0
-    set_1 = 10
-    A_preset_values[A_preset_values < 0.75] = 0
-    A_preset_values[A_preset_values >= 0.25] = set_1
-    A_mask = np.where(A_preset_values == set_1, True, False)
+        # 打印结果
+        print("银行间资产矩阵 A_IB_ij:")
+        print(A_IB_ij)
+        print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
+        print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+        print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
+        print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
+        print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
+        print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
 
-    # 预置规则2：对角线上的值设为 0
-    A_preset_values = A_preset_values - np.diag(np.diag(A_preset_values))
-    A_mask |= np.eye(num_banks, dtype=bool)
+        print(f"\n测试 calculate_bilateral_exposure_by_ME_method_with_density 第 {i + 1} 次 完成。\n\n\n")
 
-    # A_IB_all += A_preset_values.sum(axis=1)
-    # Z_IB_all += A_preset_values.sum(axis=0)
-
-    # 调用函数计算双边敞口
-    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_density(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=0.5, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
-
-    # 打印结果
-    print("银行间资产矩阵 A_IB_ij:")
-    print(A_IB_ij)
-    print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-    print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-    print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
-    print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-    print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
-
-    print("\n测试 calculate_bilateral_exposure_by_ME_method_with_density 完成。\n\n\n")
+    pass
