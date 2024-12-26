@@ -148,7 +148,7 @@ def calculate_bilateral_exposure_by_CP_method(
         ax.set_xlabel('X-axis')
         ax.set_ylabel('Y-axis')
         plt.show()
-        time.sleep(0.20)
+        time.sleep(0.25)
         pass  # if
 
     match method_link_center_banks:
@@ -167,7 +167,7 @@ def calculate_bilateral_exposure_by_CP_method(
                     ax.set_xlabel('X-axis')
                     ax.set_ylabel('Y-axis')
                     plt.show()
-                    time.sleep(0.20)
+                    time.sleep(0.25)
                     print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A0))}")
                     pass  # if
 
@@ -302,7 +302,7 @@ def calculate_bilateral_exposure_by_ME_method(
                 ax.set_xlabel('X-axis')
                 ax.set_ylabel('Y-axis')
                 plt.show()
-                time.sleep(0.20)
+                time.sleep(0.25)
                 pass  # if
         case 'RAS-old':
             A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted, Z_IB_adjasted])  # 标准化银行间资产负债矩阵
@@ -318,7 +318,7 @@ def calculate_bilateral_exposure_by_ME_method(
                 ax.set_xlabel('X-axis')
                 ax.set_ylabel('Y-axis')
                 plt.show()
-                time.sleep(0.20)
+                time.sleep(0.25)
                 pass  # if
             pass  # match
 
@@ -336,7 +336,7 @@ def calculate_bilateral_exposure_by_ME_method(
                     ax.set_xlabel('X-axis')
                     ax.set_ylabel('Y-axis')
                     plt.show()
-                    time.sleep(0.20)
+                    time.sleep(0.25)
                     print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
                     pass  # if
 
@@ -374,7 +374,7 @@ def calculate_bilateral_exposure_by_ME_method(
                     ax.set_xlabel('X-axis')
                     ax.set_ylabel('Y-axis')
                     plt.show()
-                    time.sleep(0.20)
+                    time.sleep(0.25)
                     print(f"第{iteration}次迭代。精度：{np.max(np.abs(X_ij_star - X_ij_prev))}")
                     pass  # if
 
@@ -437,7 +437,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         denominator_precition_threshold: float = 1e-10
 ):
     """
-    #NOW 通过各银行之银行间资产与银行间负债估算银行间双边敞口。
+    #NOW #FIXME 通过各银行之银行间资产与银行间负债估算银行间双边敞口。
 
     使用最大熵值法（Maximum Entropy）。
 
@@ -513,8 +513,8 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
     mask |= np.eye(N, dtype=bool)
 
     # 根据预置的元素值，重新计算银行间资产负债矩阵之行和、列和
-    A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(mask, 0, A_preset_values), axis=1)
-    Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(mask, 0, A_preset_values), axis=0)
+    A_IB_adjasted_prior = A_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=1)
+    Z_IB_adjasted_prior = Z_IB_adjasted - np.sum(np.where(mask, A_preset_values, 0), axis=0)
 
     # A_IB_i_star = A_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])  # 标准化银行间资产负债矩阵
     # Z_IB_i_star = Z_IB_adjasted / np.max([A_IB_adjasted_prior, Z_IB_adjasted_prior])
@@ -539,7 +539,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         ax.set_xlabel('X-axis')
         ax.set_ylabel('Y-axis')
         plt.show()
-        time.sleep(0.20)
+        time.sleep(0.25)
         pass  # if
 
     # while iteration_threshold > 0.0001:  # #BUG 如果一开始就满足条件，而不进入循环，会导致返回值有问题。因此需要在前面初始化 A_IB_ij
@@ -559,7 +559,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
             ax.set_xlabel('X-axis')
             ax.set_ylabel('Y-axis')
             plt.show()
-            time.sleep(0.20)
+            time.sleep(0.25)
             print(f"第{iteration}次迭代。精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
             pass  # if
 
@@ -573,13 +573,13 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
     if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
         fig, ax = plt.subplots()
-        cax = ax.matshow(A_IB_ij_prev, cmap='coolwarm')
+        cax = ax.matshow(A_IB_ij, cmap='coolwarm')
         fig.colorbar(cax)
         ax.set_title('Iteration: {}'.format(iteration))
         ax.set_xlabel('X-axis')
         ax.set_ylabel('Y-axis')
         plt.show()
-        time.sleep(0.20)
+        time.sleep(0.25)
         print(f"最终精度：{np.max(np.abs(A_IB_ij - A_IB_ij_prev))}")
         pass  # if
 
@@ -996,67 +996,67 @@ if __name__ == "__main__":
     ## 测试用
     logging.basicConfig(level=logging.DEBUG)
 
-    # ## #DEBUG 测试 calculate_bilateral_exposure_by_CP_method
-    #
-    # # 假设有 8 个中心银行和 24 个边缘银行
-    # num_center = 8
-    # num_peripheral = 24
-    # num_banks = num_center + num_peripheral
-    #
-    # # 随机生成银行间总资产和总负债矩阵
-    # np.random.seed(42)  # 固定随机种子以便复现结果
-    # A_IB_all = np.random.rand(num_banks) * 100
-    # A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
-    # Z_IB_all = np.random.rand(num_banks) * 100
-    # Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
-    # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
-    # print(f"银行间总资产总和与银行间总负债总和差异：{A_IB_all.sum() - Z_IB_all.sum()}")
-    #
-    # # 中心银行的索引
-    # array_idx_center_bank = np.arange(num_center)
-    #
-    # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-10, max_iteration=1000, denominator_precition_threshold=1e-10)
-    #
-    # # 打印结果
-    # print("银行间资产矩阵 A_IB_ij:")
-    # print(A_IB_ij)
-    # print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-    # print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-    # print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
-    # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-    # print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
-    #
-    # print("\n测试 calculate_bilateral_exposure_by_CP_method 完成。\n\n\n")
+    ## #DEBUG 测试 calculate_bilateral_exposure_by_CP_method
 
-    # ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method
-    #
-    # import numpy as np
-    #
-    # # 假设有 10 个银行
-    # num_banks = 10
-    #
-    # # 随机生成银行间总资产和总负债矩阵
-    # np.random.seed(42)  # 固定随机种子以便复现结果
-    # A_IB_all = np.random.rand(num_banks) * 100
-    # Z_IB_all = np.random.rand(num_banks) * 100
-    # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
-    #
-    # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, iteration_threshold=1e-10, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-10)
-    #
-    # # 打印结果
-    # print("银行间资产矩阵 A_IB_ij:")
-    # print(A_IB_ij)
-    # print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-    # print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-    # print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
-    # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-    # print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
-    #
-    # print("\n测试 calculate_bilateral_exposure_by_ME_method 完成。\n\n\n")
+    # 假设有 8 个中心银行和 24 个边缘银行
+    num_center = 8
+    num_peripheral = 24
+    num_banks = num_center + num_peripheral
+
+    # 随机生成银行间总资产和总负债矩阵
+    np.random.seed(42)  # 固定随机种子以便复现结果
+    A_IB_all = np.random.rand(num_banks) * 100
+    A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
+    Z_IB_all = np.random.rand(num_banks) * 100
+    Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
+    Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
+    print(f"银行间总资产总和与银行间总负债总和差异：{A_IB_all.sum() - Z_IB_all.sum()}")
+
+    # 中心银行的索引
+    array_idx_center_bank = np.arange(num_center)
+
+    # 调用函数计算双边敞口
+    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-10, max_iteration=1000, denominator_precition_threshold=1e-10)
+
+    # 打印结果
+    print("银行间资产矩阵 A_IB_ij:")
+    print(A_IB_ij)
+    print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
+    print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
+    print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
+    print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
+    print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
+
+    print("\n测试 calculate_bilateral_exposure_by_CP_method 完成。\n\n\n")
+
+    ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method
+
+    import numpy as np
+
+    # 假设有 10 个银行
+    num_banks = 10
+
+    # 随机生成银行间总资产和总负债矩阵
+    np.random.seed(42)  # 固定随机种子以便复现结果
+    A_IB_all = np.random.rand(num_banks) * 100
+    Z_IB_all = np.random.rand(num_banks) * 100
+    Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
+
+    # 调用函数计算双边敞口
+    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, iteration_threshold=1e-10, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-10)
+
+    # 打印结果
+    print("银行间资产矩阵 A_IB_ij:")
+    print(A_IB_ij)
+    print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
+    print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
+    print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
+    print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
+    print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
+
+    print("\n测试 calculate_bilateral_exposure_by_ME_method 完成。\n\n\n")
 
     ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
 
@@ -1073,12 +1073,22 @@ if __name__ == "__main__":
 
     # 随机生成预置值的矩阵
     A_preset_values = np.random.rand(num_banks, num_banks)
+
+    # 预置规则1：随机选取 25% 的值设为 50，其余的值设为 0
+    set_1 = 10
     A_preset_values[A_preset_values < 0.75] = 0
-    A_preset_values[A_preset_values >= 0.25] = 25
-    A_mask = np.where(A_preset_values == 25, True, False)
+    A_preset_values[A_preset_values >= 0.25] = set_1
+    A_mask = np.where(A_preset_values == set_1, True, False)
+
+    # 预置规则2：对角线上的值设为 0
+    A_preset_values = A_preset_values - np.diag(np.diag(A_preset_values))
+    A_mask |= np.eye(num_banks, dtype=bool)
+
+    # A_IB_all += A_preset_values.sum(axis=1)
+    # Z_IB_all += A_preset_values.sum(axis=0)
 
     # 调用函数计算双边敞口
-    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, A_preset_values=A_preset_values, mask=A_mask, target_density=0.5, iteration_threshold=1e-5, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-5)
+    A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, A_preset_values=A_preset_values, mask=A_mask, target_density=0.5, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
 
     # 打印结果
     print("银行间资产矩阵 A_IB_ij:")
