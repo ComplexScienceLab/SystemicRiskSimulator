@@ -179,6 +179,10 @@ def calculate_bilateral_exposure_by_CP_method(
                 A_IB_0 = A_IB_1.copy()
 
                 pass  # while
+
+            if iteration >= max_iteration:
+                logging.warning(f"迭代次数达到最大值：{max_iteration}。强制终止！")
+
             Z_IB_1 = A_IB_1.copy().T
 
             pass  # match
@@ -340,6 +344,9 @@ def calculate_bilateral_exposure_by_ME_method(
 
                 pass  # while
 
+            if iteration >= max_iteration:
+                logging.warning(f"迭代次数达到最大值：{max_iteration}。强制终止！")
+
         case 'RAS-old':
             iteration = 1
             while iteration < max_iteration:
@@ -375,6 +382,9 @@ def calculate_bilateral_exposure_by_ME_method(
 
                 iteration += 1
                 pass  # while
+
+            if iteration >= max_iteration:
+                logging.warning(f"迭代次数达到最大值：{max_iteration}。强制终止！")
 
             pass  # match
 
@@ -545,6 +555,9 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
         pass  # while
 
+    if iteration >= max_iteration:
+        logging.warning(f"迭代次数达到最大值：{max_iteration}。强制终止！")
+
     if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
         fig, ax = plt.subplots()
         cax = ax.matshow(A_IB_1, cmap='coolwarm')
@@ -703,6 +716,9 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
 
         pass  # while
 
+    if iteration >= max_iteration:
+        logging.warning(f"迭代次数达到最大值：{max_iteration}。强制终止！")
+
     # 调整连接密度 #BUG 这个方案可能不一定会达到目标密度，因为可能有一些更优的解没有被发现
 
     # 检查是否是除了对角线之外的全连接邻接矩阵
@@ -731,18 +747,18 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
             A_IB_2[k] = 0  # 去掉该连接
             # A_IB_2_sorted_idx = (np.delete(A_IB_2_sorted_idx[0], i), np.delete(A_IB_2_sorted_idx[1], i))  # 去掉索引和对应的值
             j += 1
-            if is_show_detal:  # 可视化双边敞口矩阵为热力图 #DEBUG 测试用
-                mask = np.where(A_IB_2 == 0, True, False)
-                A_IB_2_masked = np.ma.masked_where(mask, A_IB_2)
-                fig, ax = plt.subplots()
-                cax = ax.matshow(A_IB_2_masked, cmap='coolwarm')
-                fig.colorbar(cax)
-                ax.set_title(f'Iteration: {iteration} - {i}')
-                ax.set_xlabel('X-axis')
-                ax.set_ylabel('Y-axis')
-                plt.show()
-                time.sleep(0.1)
-                pass  # if
+            # if is_show_detal:  # 可视化双边敞口矩阵为热力图 #DEBUG 测试用
+            #     mask = np.where(A_IB_2 == 0, True, False)
+            #     A_IB_2_masked = np.ma.masked_where(mask, A_IB_2)
+            #     fig, ax = plt.subplots()
+            #     cax = ax.matshow(A_IB_2_masked, cmap='coolwarm')
+            #     fig.colorbar(cax)
+            #     ax.set_title(f'Iteration: {iteration} - {i}')
+            #     ax.set_xlabel('X-axis')
+            #     ax.set_ylabel('Y-axis')
+            #     plt.show()
+            #     time.sleep(0.1)
+            #     pass  # if
         else:
             logging.warning(f"不允许去掉元素：{k}，对应的值为：{A_IB_2[k]}。")
             pass  # if
@@ -821,6 +837,9 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         A_IB_3 = A_IB_4.copy()
 
         pass  # while
+
+    if iteration >= max_iteration:
+        logging.warning(f"迭代次数达到最大值：{max_iteration}。强制终止！")
 
     if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
         fig, ax = plt.subplots()
@@ -1384,10 +1403,10 @@ if __name__ == "__main__":
 
     import numpy as np
 
-    for i in range(0, 1):
+    for i in range(3, 5):
         # 假设有 5 个银行
-        num_banks = 5
-        target_density = 0.75
+        num_banks = 30
+        target_density = 0.5
 
         # 随机生成银行间总资产和总负债矩阵
         np.random.seed(i)  # 固定随机种子以便复现结果
