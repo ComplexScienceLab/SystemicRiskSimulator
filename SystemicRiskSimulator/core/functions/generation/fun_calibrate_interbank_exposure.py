@@ -15,6 +15,7 @@ __all__ = [
 
 from SystemicRiskSimulator.external_packages import np, pd, Path, time, logging
 from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import adjust_A_IB_Z_IB_with_virtual_bank, adjust_A_IB_Z_IB_by_resize
+from SystemicRiskSimulator.tools.data_tools import check_risk_exposure_matrix_constraints
 
 
 # from scipy import optimize
@@ -94,7 +95,7 @@ def calculate_bilateral_exposure_by_CP_method(
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
-                # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+                # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
             pass  # match
@@ -279,7 +280,7 @@ def calculate_bilateral_exposure_by_ME_method(
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
-                # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+                # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
             pass  # match
@@ -496,7 +497,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
-                # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+                # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
             pass  # match
@@ -671,7 +672,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
-                # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+                # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
             pass  # match
@@ -945,7 +946,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
-                # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+                # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
             pass  # match
@@ -1008,7 +1009,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
     #         ## #NOTE 调整方案一：添加虚拟银行
     #         A_IB_adjusted, Z_IB_adjusted, _ = adjust_A_IB_Z_IB_with_virtual_bank(A_IB_all, Z_IB_all)
     #     case 'resize':
-    #         # #NOTE 调整方案二：按照多出来的比例，压缩多出来的金额部分，使得二者相等。
+    #         # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
     #         A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
     #         pass  # match
     #
