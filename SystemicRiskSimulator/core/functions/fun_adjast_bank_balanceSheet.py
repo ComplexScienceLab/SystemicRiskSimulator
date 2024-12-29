@@ -39,7 +39,7 @@ def adjust_A_IB_Z_IB_with_virtual_bank(A_IB, Z_IB):
 
 def adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB):
     """
-    如果 A_IB 和 Z_IB 的总资产与总负债不相等,则按比例压缩多的那部分使得其总量与少的那部分总量相等。
+    如果 A_IB 和 Z_IB 的总资产与总负债不相等，则按比例压缩多的那部分使得其总量与少的那部分总量相等。 #FIXME：处理Z_IB_total如果是0，那么除0导致的 NaN 问题！
 
     Args:
         A_IB (np.ndarray): 银行间资产邻接矩阵
@@ -53,8 +53,10 @@ def adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB):
     Z_IB_total = np.sum(Z_IB)  # 计算银行间总负债
 
     if A_IB_total != Z_IB_total:  # 如果总资产不等于总负债
-        diff = np.abs(A_IB_total - Z_IB_total)
-        resize_radios = np.minimum(A_IB_total, Z_IB_total) / np.maximum(A_IB_total, Z_IB_total)
+        if Z_IB_total == 0:  # 处理 Z_IB_total 为 0 的情况
+            resize_radios = 0
+        else:
+            resize_radios = np.minimum(A_IB_total, Z_IB_total) / np.maximum(A_IB_total, Z_IB_total)
         A_IB_adjasted = A_IB * resize_radios if A_IB_total > Z_IB_total else A_IB
         Z_IB_adjasted = Z_IB * resize_radios if A_IB_total < Z_IB_total else Z_IB
     else:
