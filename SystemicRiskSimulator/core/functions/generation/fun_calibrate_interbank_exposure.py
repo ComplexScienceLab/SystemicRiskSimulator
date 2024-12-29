@@ -33,7 +33,7 @@ def calculate_bilateral_exposure_by_CP_method(
         is_maintain_virtual_bank=False,
         is_show_detal: bool = False,
         iteration_threshold: float = 1e-10,
-        max_iteration: int = 10000,
+        max_iteration: int = 100000,
         denominator_precition_threshold: float = 1e-10
 ):
     """
@@ -67,7 +67,7 @@ def calculate_bilateral_exposure_by_CP_method(
         is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
         is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float): 迭代阈值。默认值 1e-10
-        max_iteration (int): 最大迭代次数。默认值 10000
+        max_iteration (int): 最大迭代次数。默认值 100000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
     """
 
@@ -224,7 +224,7 @@ def calculate_bilateral_exposure_by_ME_method(
         method_link_center_banks: str = 'RAS',
         iteration_threshold: float = 1e-10,
         is_show_detal: bool = False,
-        max_iteration: int = 10000,
+        max_iteration: int = 100000,
         denominator_precition_threshold: float = 1e-10
 ):
     """
@@ -247,7 +247,7 @@ def calculate_bilateral_exposure_by_ME_method(
 
         is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float): 迭代阈值。默认值 1e-10
-        max_iteration (int): 最大迭代次数。默认值 10000
+        max_iteration (int): 最大迭代次数。默认值 100000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
@@ -435,7 +435,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         is_maintain_virtual_bank=False,
         is_show_detal: bool = False,
         iteration_threshold: float = 1e-10,
-        max_iteration: int = 10000,
+        max_iteration: int = 100000,
         denominator_precition_threshold: float = 1e-10
 ):
     """
@@ -464,7 +464,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
         is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float): 迭代阈值。默认值 1e-10
-        max_iteration (int): 最大迭代次数。默认值 10000
+        max_iteration (int): 最大迭代次数。默认值 100000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:
@@ -609,7 +609,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         is_maintain_virtual_bank=False,
         is_show_detal: bool = False,
         iteration_threshold: float = 1e-10,
-        max_iteration: int = 10000,
+        max_iteration: int = 100000,
         denominator_precition_threshold: float = 1e-10
 ):
     """
@@ -637,7 +637,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
 
         is_show_detal (bool): 是否显示迭代过程的热力图。默认值 False
         iteration_threshold (float): 迭代阈值。默认值 1e-10
-        max_iteration (int): 最大迭代次数。默认值 10000
+        max_iteration (int): 最大迭代次数。默认值 100000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
 
     Returns:

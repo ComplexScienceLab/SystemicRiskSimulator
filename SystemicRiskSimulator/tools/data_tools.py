@@ -28,7 +28,7 @@ def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarra
     diff_of_A_IB_all_and_Z_IB_all = A_IB.sum(axis=0) / Z_IB_all  # 计算列和约束的差别
 
     # 总和约束
-    diff_of_all = sum(A_IB.sum()) / sum(A_IB_all.sum())  # 计算总约束的差别
+    diff_of_all = A_IB.sum().sum() / A_IB_all.sum()  # 计算总约束的差别
 
     return diff_of_A_IB_all_and_Z_IB_all, diff_of_A_IB_all_and_A_IB, diff_of_A_IB_all_and_Z_IB_all, diff_of_all
 
