@@ -75,9 +75,9 @@ def adjust_A_IB_Z_IB_by_resize(A_IB, Z_IB):
         times += 1
         pass  # while
 
-    # DEBUG 查看二者是否相等
-    print(np.sum(A_IB_adjasted) == np.sum(Z_IB_adjasted))
-    print(np.sum(A_IB_adjasted) - np.sum(Z_IB_adjasted))
+    # # DEBUG 查看二者是否相等
+    # print(np.sum(A_IB_adjasted) == np.sum(Z_IB_adjasted))
+    # print(np.sum(A_IB_adjasted) - np.sum(Z_IB_adjasted))
 
     return A_IB_adjasted, Z_IB_adjasted
     pass  # function
