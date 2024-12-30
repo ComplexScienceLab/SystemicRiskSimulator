@@ -997,8 +997,6 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
 
     return A_IB_ij, Z_IB_ij
 
-    pass  # function
-
     ## #HACK 调用 R 函数方案二：导出 csv 文件再通过命令行运行 R 函数，最后导入生成的 csv 文件  BUG 这个方案暂时无法运行成功。原因是传入数值失败。
 
     # match method_adjast_bank_balanceSheet:
@@ -1025,6 +1023,12 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
     # reconstructed_L = pd.read_csv("reconstructed_L.csv", header=None).to_numpy()
     #
     # return reconstructed_L
+
+    pass  # function
+
+
+def calibrate_bilateral_exposure_by_ME_method_with_density_use_Other_algorithm():
+    pass  # function
 
 
 # import numpy as np
