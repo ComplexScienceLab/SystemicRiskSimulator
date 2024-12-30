@@ -613,7 +613,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         denominator_precition_threshold: float = 1e-10
 ):
     """
-    # 通过各银行之银行间资产与银行间负债估算银行间双边敞口。
+    通过各银行之银行间资产与银行间负债估算银行间双边敞口。 #BUG 存在行和难以拟合到约束的问题。
 
     使用最大熵值法（Maximum Entropy）。
 
@@ -1356,7 +1356,7 @@ if __name__ == "__main__":
     #
     # print("\n测试 calculate_bilateral_exposure_by_ME_method 完成。\n\n\n")
     #
-    # ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
+    ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
     #
     # import numpy as np
     #
@@ -1386,7 +1386,7 @@ if __name__ == "__main__":
     # # Z_IB_all += A_preset_values.sum(axis=0)
     #
     # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, A_preset_values=A_preset_values, mask=A_mask, target_density=0.5, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
+    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, A_preset_values=A_preset_values, mask=A_mask, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
     #
     # # 打印结果
     # print("银行间资产矩阵 A_IB_ij:")
@@ -1399,41 +1399,41 @@ if __name__ == "__main__":
     # print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
     #
     # print("\n测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values 完成。\n\n\n")
-
-    ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_density
-
-    import numpy as np
-
-    for i in range(3, 5):
-        # 假设有 5 个银行
-        num_banks = 30
-        target_density = 0.5
-
-        # 随机生成银行间总资产和总负债矩阵
-        np.random.seed(i)  # 固定随机种子以便复现结果
-        A_IB_all = np.random.rand(num_banks) * 100 + 100
-        Z_IB_all = np.random.rand(num_banks) * 100 + 100
-        Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
-
-        # 调用函数计算双边敞口
-        A_IB_ij, Z_IB_ij, density, is_the_target_density = calculate_bilateral_exposure_by_ME_method_with_density(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=target_density, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
-
-        # 打印结果
-        print(f"\n\n第 {i + 1} 次测试结果：")
-        print("银行间资产矩阵 A_IB_ij:")
-        print(A_IB_ij)
-        print("银行间资产矩阵 A_IB_ij:")
-        print(A_IB_ij)
-        print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-        print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-        print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-        print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
-        print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-        print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
-        print(f"\n实际密度：{density}")
-        print(f"\n目标密度：{target_density}")
-        print(f"\n是否达到目标密度：{is_the_target_density}")
-
-        print(f"\n测试 calculate_bilateral_exposure_by_ME_method_with_density 第 {i + 1} 次 完成。\n\n\n")
+    #
+    # ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_density
+    #
+    # import numpy as np
+    #
+    # for i in range(3, 5):
+    #     # 假设有 5 个银行
+    #     num_banks = 30
+    #     target_density = 0.5
+    #
+    #     # 随机生成银行间总资产和总负债矩阵
+    #     np.random.seed(i)  # 固定随机种子以便复现结果
+    #     A_IB_all = np.random.rand(num_banks) * 100 + 100
+    #     Z_IB_all = np.random.rand(num_banks) * 100 + 100
+    #     Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
+    #
+    #     # 调用函数计算双边敞口
+    #     A_IB_ij, Z_IB_ij, density, is_the_target_density = calculate_bilateral_exposure_by_ME_method_with_density(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=target_density, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
+    #
+    #     # 打印结果
+    #     print(f"\n\n第 {i + 1} 次测试结果：")
+    #     print("银行间资产矩阵 A_IB_ij:")
+    #     print(A_IB_ij)
+    #     print("银行间资产矩阵 A_IB_ij:")
+    #     print(A_IB_ij)
+    #     print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
+    #     print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    #     print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
+    #     print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
+    #     print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
+    #     print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
+    #     print(f"\n实际密度：{density}")
+    #     print(f"\n目标密度：{target_density}")
+    #     print(f"\n是否达到目标密度：{is_the_target_density}")
+    #
+    #     print(f"\n测试 calculate_bilateral_exposure_by_ME_method_with_density 第 {i + 1} 次 完成。\n\n\n")
 
     pass
