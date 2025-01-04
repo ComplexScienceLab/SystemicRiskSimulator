@@ -74,8 +74,10 @@ class Operator:
                 if is_recreate_experiments_works_status_db:  # 创建数据库并初始化表格
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
-                    c.execute("""CREATE TABLE IF NOT EXISTS experiments
-                                    (exp_id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)""")
+                    c.execute(
+                        """CREATE TABLE IF NOT EXISTS experiments
+                                                            (exp_id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)"""
+                    )
                     # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
                     for i in range(1, num_parameters_works + 1):
                         c.execute("INSERT INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
@@ -112,19 +114,25 @@ class Operator:
                 list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
                 # 保存实验组作业完成状态信息
                 with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
-                    json.dump({
-                        "计划运行的实验组 id": list_idsExp_TASK,
-                        "未运行过的实验组 id": list_idsExp_RAW,
-                        "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                        "已完成的实验组 id": list_idsExp_DONE,
-                        "完成率": len(list_idsExp_DONE) / num_parameters_works,
-                        "中断率": len(list_idsExp_DOING) / num_parameters_works,
-                    }, f)
-                    logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
-                        "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                        "完成率": len(list_idsExp_DONE) / num_parameters_works,
-                        "中断率": len(list_idsExp_DOING) / num_parameters_works,
-                    }))
+                    json.dump(
+                        {
+                            "计划运行的实验组 id": list_idsExp_TASK,
+                            "未运行过的实验组 id": list_idsExp_RAW,
+                            "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                            "已完成的实验组 id": list_idsExp_DONE,
+                            "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                            "中断率": len(list_idsExp_DOING) / num_parameters_works,
+                        }, f
+                    )
+                    logging.info(
+                        "实验组开始运行前，实验组作业完成状态情况如下:\n" + str(
+                            {
+                                "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                                "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                                "中断率": len(list_idsExp_DOING) / num_parameters_works,
+                            }
+                        )
+                    )
                     pass  # with
 
                 ## 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
