@@ -121,8 +121,10 @@ def calculate_bilateral_exposure_by_CP_method(
         case '随机均匀分布':
             select_center_banks = np.random.choice(np.arange(num_center), N - num_center)  # 随机选取中心银行，用于被边缘银行连接
             select_peripheral_banks = np.random.choice(np.arange(num_center), N - num_center)  # 随机选取中心银行，用于连接到边缘银行
-            A_IB_0[num_center:, :num_center] = np.where(np.arange(num_center) == select_center_banks[:, np.newaxis], A_IB_0[num_center:, :num_center], 0)  # 对于每一个边缘银行，连接到被选取的一个中心银行
-            A_IB_0[:num_center, num_center:] = np.where(np.arange(num_center)[:, np.newaxis] == select_peripheral_banks, A_IB_0[:num_center, num_center:], 0)  # 对于每一个边缘银行，被所选取的中心银行连接
+            # A_IB_0[num_center:, :num_center] = np.where(np.arange(num_center) == select_center_banks[:, np.newaxis], A_IB_0[num_center:, :num_center], 0)  # 对于每一个边缘银行，连接到被选取的一个中心银行  #HACK 这个不适用
+            A_IB_0[num_center:, :num_center] = np.where(np.arange(num_center) == select_center_banks[:, np.newaxis], A_IB_adjusted[num_center:, np.newaxis], 0)  # 对于每一个边缘银行，连接到被选取的一个中心银行  #BUG 这个只适用于单个边缘银行只连接一个中心银行的情况
+            # A_IB_0[:num_center, num_center:] = np.where(np.arange(num_center)[:, np.newaxis] == select_peripheral_banks, A_IB_0[:num_center, num_center:], 0)  # 对于每一个边缘银行，被所选取的中心银行连接  #HACK 这个不适用
+            A_IB_0[:num_center, num_center:] = np.where(np.arange(num_center)[:, np.newaxis] == select_peripheral_banks, Z_IB_adjusted[np.newaxis, num_center:], 0)  # 对于每一个边缘银行，被所选取的中心银行连接  #BUG 这个只适用于单个边缘银行只连接一个中心银行的情况
         case '按同分类连接':
             if df_classify is None:
                 raise ValueError("没有导入分类数据框。")
