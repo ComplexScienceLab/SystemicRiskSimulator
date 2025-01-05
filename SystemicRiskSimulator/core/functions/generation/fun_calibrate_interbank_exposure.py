@@ -109,8 +109,8 @@ def calculate_bilateral_exposure_by_CP_method(
 
     # A_IB_0 = np.outer(A_IB_adjusted, Z_IB_adjusted) / denominator_precition_threshold
     A_IB_0 = np.outer(A_IB_adjusted, Z_IB_adjusted)
-    np.fill_diagonal(A_IB_0, 0)  # 对角线为 0
-    A_IB_0[num_center:, num_center:] = 0
+    np.fill_diagonal(A_IB_0, 0)
+    A_IB_0[:num_center, :num_center] = 0  # 对角线为 0
 
     # 连接中心银行和边缘银行，使用均匀分布的随机选取的方法
 
