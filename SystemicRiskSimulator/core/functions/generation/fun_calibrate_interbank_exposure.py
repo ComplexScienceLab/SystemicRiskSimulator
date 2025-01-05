@@ -26,7 +26,7 @@ def calculate_bilateral_exposure_by_CP_method(
         array_idx_center_bank: np.ndarray = None,
         num_center=20,
         center_agents_networkDensity: float = 1.0,
-        method_link_center_banks: str = 'RAS',
+        algorithm_link_center_banks: str = 'RAS',
         method_link_center_and_peripheral_banks: str = '随机均匀分布',
         df_classify: pd.DataFrame = None,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
@@ -47,7 +47,7 @@ def calculate_bilateral_exposure_by_CP_method(
         array_idx_center_bank (np.ndarray): 中心银行集合之索引。默认值是 None ，按照中心银行排在前面的顺序，选取前 num_center 个银行。 #TODO 目前只能按照默认方法选取中心银行。
         num_center (int): 中心银行数量。默认值 20
         center_agents_networkDensity (float): 中心银行之间的连接密度。默认值 1.0。这个参数只有在 method_link_center_banks 为 'R语言的systemicrisk包之calibrate_ER' 时才有用
-        method_link_center_banks (str): 连接中心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。可选值包括：
+        algorithm_link_center_banks (str): 连接中心银行之间的算法。默认值 'RAS'，即使用 RAS 算法。可选值包括：
 
             - 'RAS'：使用 RAS 算法；
             - 'R语言的systemicrisk包之calibrate_ER'：调用 R 语言的 systemicrisk 包之 calibrate_ER 算法。该方法允许根据不同的连接密度生成连接矩阵；
@@ -154,7 +154,7 @@ def calculate_bilateral_exposure_by_CP_method(
         time.sleep(0.25)
         pass  # if
 
-    match method_link_center_banks:
+    match algorithm_link_center_banks:
         case 'R语言的systemicrisk包之calibrate_ER':
             A_IB_1, Z_IB_1 = calibrate_bilateral_exposure_by_ME_method_use_R_package(A_IB_adjusted, Z_IB_adjusted, target_density=center_agents_networkDensity, method_adjast_bank_balanceSheet='none')
         case 'RAS':
@@ -221,11 +221,12 @@ def calculate_bilateral_exposure_by_ME_method(
         Z_IB_all: np.ndarray,
         method_adjast_bank_balanceSheet: str = 'add_virtual_bank',
         is_maintain_virtual_bank=False,
-        method_link_center_banks: str = 'RAS',
+        algorithm_link_banks: str = 'RAS',
         iteration_threshold: float = 1e-10,
         is_show_detal: bool = False,
         max_iteration: int = 100000,
-        denominator_precition_threshold: float = 1e-10
+        denominator_precition_threshold: float = 1e-10,
+        **kwargs,
 ):
     """
     使用最大熵值法（Maximum Entropy），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
@@ -240,7 +241,7 @@ def calculate_bilateral_exposure_by_ME_method(
             - 'resize'：按照多出来的比例，压缩多出来的金额部分，使得二者相等；
 
         is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False
-        method_link_center_banks (str): 连接中心银行之间的方法。默认值 'RAS'，即使用 RAS 算法。可选值包括：
+        algorithm_link_banks (str): 连接银行之间的方法。默认值 'RAS'，即使用 RAS 算法。可选值包括：
 
             - 'RAS'：使用 RAS 算法；
             - 'RAS-2'：使用旧的的 RAS 算法；
@@ -287,7 +288,7 @@ def calculate_bilateral_exposure_by_ME_method(
 
     N = A_IB_adjusted.shape[0]  # 获取银行数量
 
-    match method_link_center_banks:
+    match algorithm_link_banks:
         case 'RAS':
             # A0 = np.outer(A_IB_adjusted, Z_IB_adjusted) / denominator_precition_threshold
             A_IB_0 = np.outer(A_IB_adjusted, Z_IB_adjusted)
@@ -320,7 +321,7 @@ def calculate_bilateral_exposure_by_ME_method(
                 pass  # if
             pass  # match
 
-    match method_link_center_banks:
+    match algorithm_link_banks:
         case 'RAS':
             iteration = 1
             while iteration < max_iteration:
@@ -390,7 +391,7 @@ def calculate_bilateral_exposure_by_ME_method(
             pass  # match
 
     ## #NOTE 计算不考虑预置值的最终的银行间资产矩阵
-    match method_link_center_banks:
+    match algorithm_link_banks:
         case 'RAS':
             Z_IB_1 = A_IB_1.copy().T
         case 'RAS-old':
@@ -410,18 +411,18 @@ def calculate_bilateral_exposure_by_ME_method(
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
-            A_IB_1 = A_IB_1
-            Z_IB_1 = Z_IB_1
+            A_IB = A_IB_1
+            Z_IB = Z_IB_1
         else:
-            A_IB_1 = A_IB_1[:-1, :-1]
-            Z_IB_1 = Z_IB_1[:-1, :-1]
+            A_IB = A_IB_1[:-1, :-1]
+            Z_IB = Z_IB_1[:-1, :-1]
             pass  # if
     else:
-        A_IB_1 = A_IB_1
-        Z_IB_1 = Z_IB_1
+        A_IB = A_IB_1
+        Z_IB = Z_IB_1
         pass  # if
 
-    return A_IB_1, Z_IB_1
+    return A_IB, Z_IB
 
     pass  # function
 
