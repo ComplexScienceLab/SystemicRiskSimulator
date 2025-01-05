@@ -1529,10 +1529,10 @@ if __name__ == "__main__":
     #
     # import numpy as np
     #
-    # for i in range(3, 5):
+    # for i in range(1):
     #     # 假设有 5 个银行
     #     num_banks = 30
-    #     target_density = 0.5
+    #     target_density = 0.75
     #
     #     # 随机生成银行间总资产和总负债矩阵
     #     np.random.seed(i)  # 固定随机种子以便复现结果
@@ -1541,7 +1541,16 @@ if __name__ == "__main__":
     #     Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
     #
     #     # 调用函数计算双边敞口
-    #     A_IB_ij, Z_IB_ij, density, is_the_target_density = calculate_bilateral_exposure_by_ME_method_with_density(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, target_density=target_density, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
+    #     A_IB_ij, Z_IB_ij, density, is_the_target_density = calculate_bilateral_exposure_by_ME_method_with_density(
+    #         A_IB_all=A_IB_all,
+    #         Z_IB_all=Z_IB_all,
+    #         target_density=target_density,
+    #         iteration_threshold=1e-3,
+    #         is_show_detal=True,
+    #         max_iteration=100,
+    #         denominator_precition_threshold=1e-3,
+    #         year=2021,
+    #     )
     #
     #     # 打印结果
     #     print(f"\n\n第 {i + 1} 次测试结果：")
