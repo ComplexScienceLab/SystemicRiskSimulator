@@ -191,22 +191,22 @@ def calculate_bilateral_exposure_by_CP_method(
 
             Z_IB_1 = A_IB_1.copy().T
 
+            # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
+            diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
+            logging.info(
+                f"""
+            \n
+            年份: {kwargs['year']}、连接密度: {center_agents_networkDensity}\n
+            A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
+            行和约束的差别: {diff_of_row_sum}\n
+            列和约束的差别: {diff_of_col_sum}\n
+            总和约束的差别: {diff_of_total_sum}\n
+            """
+            )
+
             pass  # match
 
     logging.info("估算风险敞口矩阵完成。")
-
-    # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
-    logging.info(
-        f"""
-    \n
-    年份: {kwargs['year']}、连接密度: {center_agents_networkDensity}\n
-    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
-    行和约束的差别: {diff_of_row_sum}\n
-    列和约束的差别: {diff_of_col_sum}\n
-    总和约束的差别: {diff_of_total_sum}\n
-    """
-    )
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
@@ -1388,9 +1388,9 @@ if __name__ == "__main__":
     #
     # # 随机生成银行间总资产和总负债矩阵
     # np.random.seed(42)  # 固定随机种子以便复现结果
-    # A_IB_all = np.random.rand(num_banks) * 100
+    # A_IB_all = (np.random.rand(num_banks) + 1) * 10
     # A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
-    # Z_IB_all = np.random.rand(num_banks) * 100
+    # Z_IB_all = (np.random.rand(num_banks) + 1) * 10
     # Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
     # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
     # print(f"银行间总资产总和与银行间总负债总和差异：{A_IB_all.sum() - Z_IB_all.sum()}")
@@ -1399,7 +1399,20 @@ if __name__ == "__main__":
     # array_idx_center_bank = np.arange(num_center)
     #
     # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, array_idx_center_bank=array_idx_center_bank, num_center=num_center, is_show_detal=True, iteration_threshold=1e-10, max_iteration=1000, denominator_precition_threshold=1e-10)
+    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_method(
+    #     A_IB_all=A_IB_all,
+    #     Z_IB_all=Z_IB_all,
+    #     array_idx_center_bank=array_idx_center_bank,
+    #     center_agents_networkDensity=0.75,
+    #     algorithm_link_center_banks='R语言的systemicrisk包之calibrate_ER',
+    #     method_adjast_bank_balanceSheet='resize',
+    #     num_center=num_center,
+    #     is_show_detal=True,
+    #     iteration_threshold=1e-10,
+    #     max_iteration=1000,
+    #     denominator_precition_threshold=1e-10,
+    #     year=2021,
+    # )
     #
     # # 打印结果
     # print("银行间资产矩阵 A_IB_ij:")
