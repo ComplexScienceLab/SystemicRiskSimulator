@@ -95,6 +95,7 @@ def calculate_bilateral_exposure_by_CP_method(
                 pass  # if
         case 'resize':
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
+                A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -287,6 +288,7 @@ def calculate_bilateral_exposure_by_ME_method(
                 pass  # if
         case 'resize':
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
+                A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -519,6 +521,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
                 pass  # if
         case 'resize':
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
+                A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -709,6 +712,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
                 pass  # if
         case 'resize':
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
+                A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -954,8 +958,8 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
         A_IB_all (np.ndarray): 银行间资产
         Z_IB_all (np.ndarray): 银行间负债
         target_density (float): 目标密度
-        n_samples_calib (int, optional): 校准时生成的矩阵样本数量。默认为 10。
-        thin (int, optional): 校准时的稀疏化参数。默认为 100。
+        n_samples_calib (int, optional): 校准时生成的矩阵样本数量。默认为 10。这个参数决定了在校准过程中生成的矩阵样本数量。它影响最终模型的精度和计算的成本。增加样本数通常会提供更精确的校准结果，但也会显著增加计算量。
+        thin (int, optional): 校准时的稀疏化参数。默认为 100。用于控制从采样过程中选择的样本数量，从生成的所有样本中只选择每隔 thin 次的一个样本，这有助于减少计算量并避免自相关。稀疏性较高的矩阵可能需要更大的 thin 值，以减少过多的采样。反之，稠密矩阵可能需要较小的 thin 值。
         method_adjast_bank_balanceSheet (str): 调整银行间总资产总负债不一致的方法。默认值 'add_virtual_bank'，即添加虚拟银行。可选值包括：
 
             - 'none'：不调整；
@@ -997,6 +1001,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
                 pass  # if
         case 'resize':
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
+                A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
             else:
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
@@ -1040,7 +1045,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
     logging.info(
         f"""
     \n
-    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
+    年份: {kwargs['year']}、连接密度: {target_density}\n
     A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
     行和约束的差别: {diff_of_row_sum}\n
     列和约束的差别: {diff_of_col_sum}\n
