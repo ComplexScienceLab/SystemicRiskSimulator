@@ -161,7 +161,32 @@ def calculate_bilateral_exposure_by_CP_method(
 
     match algorithm_link_center_banks:
         case 'R语言的systemicrisk包之calibrate_ER':
-            A_IB_1, Z_IB_1 = calibrate_bilateral_exposure_by_ME_method_use_R_package(A_IB_adjusted, Z_IB_adjusted, target_density=center_agents_networkDensity, method_adjast_bank_balanceSheet='none')
+            A_IB_1, Z_IB_1 = A_IB_0, A_IB_0.T
+            A_IB_adjusted_center, Z_IB_adjusted_center = A_IB_adjusted[:num_center], Z_IB_adjusted[:num_center]
+            # 需要减掉那些连接值之和，才能抵消行和列和约束多余量
+            A_IB_adjusted_center = A_IB_adjusted_center - A_IB_1[:num_center, num_center:].sum(axis=1)  # 减去中心银行连接边缘银行的值
+            Z_IB_adjusted_center = Z_IB_adjusted_center - A_IB_1[num_center:, :num_center].sum(axis=0)  # 减去边缘银行连接中心银行的值
+            A_IB_1_center, Z_IB_1_center = calibrate_bilateral_exposure_by_ME_method_use_R_package(
+                A_IB_adjusted_center,
+                Z_IB_adjusted_center,
+                target_density=center_agents_networkDensity,
+                method_adjast_bank_balanceSheet='none',
+                year=kwargs['year']
+            )
+            A_IB_1[:num_center, :num_center], Z_IB_1[:num_center, :num_center] = A_IB_1_center, Z_IB_1_center
+
+            if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
+                fig, ax = plt.subplots()
+                cax = ax.matshow(A_IB_1, cmap='coolwarm')
+                fig.colorbar(cax)
+                ax.set_title('Iteration: end')
+                ax.set_xlabel('X-axis')
+                ax.set_ylabel('Y-axis')
+                plt.show()
+                time.sleep(0.25)
+                print(f"最终迭代。精度：{np.max(np.abs(A_IB_1 - A_IB_0))}")
+                pass  # if
+
         case 'RAS':
             iteration = 1
             while iteration < max_iteration:
