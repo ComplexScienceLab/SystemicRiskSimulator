@@ -50,7 +50,7 @@ def calculate_bilateral_exposure_by_CP_method(
         center_agents_networkDensity (float): 中心银行之间的连接密度。默认值 1.0。这个参数只有在 method_link_center_banks 为 'R语言的systemicrisk包之calibrate_ER' 时才有用
         algorithm_link_center_banks (str): 连接中心银行之间的算法。默认值 'RAS'，即使用 RAS 算法。可选值包括：
 
-            - 'RAS'：使用 RAS 算法；
+            - 'RAS'：使用 RAS 算法； #HACK 暂时还没有实现预置值和指定密度的功能。
             - 'R语言的systemicrisk包之calibrate_ER'：调用 R 语言的 systemicrisk 包之 calibrate_ER 算法。该方法允许根据不同的连接密度生成连接矩阵；
 
         method_link_center_and_peripheral_banks (str): 连接中心银行与边缘银行之间的方法。默认值 '随机均匀分布'，即使用随机均匀分布的方法。可选值包括：
@@ -197,7 +197,7 @@ def calculate_bilateral_exposure_by_CP_method(
     logging.info(
         f"""
     \n
-    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
+    年份: {kwargs['year']}、连接密度: {center_agents_networkDensity}\n
     A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
     行和约束的差别: {diff_of_row_sum}\n
     列和约束的差别: {diff_of_col_sum}\n
@@ -910,7 +910,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
     logging.info(
         f"""
     \n
-    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
+    年份: {kwargs['year']}、连接密度: {target_density}\n
     A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
     行和约束的差别: {diff_of_row_sum}\n
     列和约束的差别: {diff_of_col_sum}\n
