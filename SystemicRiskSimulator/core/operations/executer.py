@@ -1,7 +1,7 @@
 """
 执行
 """
-from SystemicRiskSimulator.external_packages import logging, pd, deepcopy, dataclass
+from SystemicRiskSimulator.external_packages import logging, pd, deepcopy, dataclass, Optional
 from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 # from SystemicRiskSimulator.data.models.contents.content_finance import Finance
@@ -91,7 +91,7 @@ class Executer:
         pass  # function
 
     @classmethod
-    def update_variableStep(cls, content, update_way: str, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict, is_collect=True):
+    def update_variableStep(cls, content, update_way: str, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict, is_collect=True, collect: Optional[list] = None):
         """
         #NOTE：执行一次变量变更级别的步进更新
 
@@ -105,6 +105,7 @@ class Executer:
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
             is_collect (bool): 是否收集当前步进之数据。默认为 True。
+            collect (dict): 待收集的数据字段列表字典。默认为 None ，表示收集 A 当前回合的所有字段的数据。如果非 None ，则应设置为字典形式。字典的键名是变量名称，键值是该变量对应的数据字段列表。
 
         Returns:
             None
@@ -115,7 +116,7 @@ class Executer:
         # Finance.update_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         content.update_variables(A, by_way=update_way)  # 更新金融变量
         if is_collect or sgv['is_use_RLlib_frameworks'] is False or sgv['RL_state'] == 'using':
-            Collector.collect_agent_data(A, A_data, sgv, para)
+            Collector.collect_agent_data(A, A_data, sgv, para, collect)
             pass  # if
 
         sgv['step'] += 1  # 步进加一

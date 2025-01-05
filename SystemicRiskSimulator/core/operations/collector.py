@@ -90,14 +90,25 @@ class Collector:
         pass  # function
 
     @classmethod
-    def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict):
+    def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, collect: Optional[dict] = None):
         """
-        收集数据并存储
+        收集数据并存储。
+
+        > 注意：不收集备注变量 `note`，因为是静态的，不需要收集。
 
         Args:
             A (ModelAgent): 系统性风险个体众
             A_data (AgentDataCollection): 个体众数据集
             sgv: 模拟器全局变量
+            para (dict): 参数变量
+            collect (Optional[dict]): 待收集的数据字段列表字典。默认为 None ，表示收集 A 当前回合的所有字段的数据。如果非 None ，
+            举例：
+            ```python
+            dict(
+                BB=['A_IB_all', 'Loss_t', 'hel'],
+                IB=['A_IB', 'Shock_IB_def', 'hel']
+            )
+            ```
 
         Returns:
             A_data: 待收集的数据
@@ -139,6 +150,8 @@ class Collector:
 
         # #HACK 改之后的收集 agents 数据文件代码
         for para_01 in sgv['list_agents_data_filename_para_01']:
+            if para_01 == "note":  # 如果是备注变量，则跳过。因为是静态的，不需要收集
+                continue
             series = pd.Series()
             for i in A[para_01].index:
                 series[i] = A[para_01][i].copy()
@@ -147,7 +160,17 @@ class Collector:
             df.insert(loc=1, column='step', value=sgv['step'])
             df.insert(loc=2, column='turn', value=sgv['turn'])
             df.insert(loc=3, column='phase', value=sgv['phase'])
-            A_data[para_01] = pd.concat([A_data[para_01], df], ignore_index=True)
+            if collect is None:
+                A_data[para_01] = pd.concat([A_data[para_01], df], ignore_index=True)
+            else:
+                for variable in collect:
+                    for field in variable[variable]:
+                        if field in df.columns:
+                            A_data[variable] = pd.concat([A_data[variable], df[field]], ignore_index=True)
+                        pass  # for
+                    pass  # for
+                pass  # if
+
             pass  # for
 
         pass  # function
