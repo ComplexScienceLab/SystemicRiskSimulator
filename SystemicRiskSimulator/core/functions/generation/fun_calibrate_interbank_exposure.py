@@ -101,6 +101,8 @@ def calculate_bilateral_exposure_by_CP_method(
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
+        case _:
+            raise ValueError("不支持的调整方法！")
             pass  # match
 
     N = A_IB_adjusted.shape[0]  # 获取银行数量
@@ -294,6 +296,8 @@ def calculate_bilateral_exposure_by_ME_method(
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
+        case _:
+            raise ValueError("不支持的调整方法！")
             pass  # match
 
     N = A_IB_adjusted.shape[0]  # 获取银行数量
@@ -527,6 +531,8 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
+        case _:
+            raise ValueError("不支持的调整方法！")
             pass  # match
 
     N = A_IB_adjusted.shape[0]  # 获取银行数量
@@ -718,6 +724,8 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
+        case _:
+            raise ValueError("不支持的调整方法！")
             pass  # match
 
     N = A_IB_adjusted.shape[0]  # 获取银行数量（包括虚拟银行）
@@ -1007,6 +1015,8 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
                 # #NOTE 调整方案二：调整比例。按照多出来的比例，压缩多出来的金额部分，使得二者相等。
                 A_IB_adjusted, Z_IB_adjusted = adjust_A_IB_Z_IB_by_resize(A_IB_all, Z_IB_all)
                 pass  # if
+        case _:
+            raise ValueError("不支持的调整方法！")
             pass  # match
 
     # 将 NumPy 数组转换为 R 对象
