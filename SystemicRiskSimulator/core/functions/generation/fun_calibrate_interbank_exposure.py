@@ -34,7 +34,8 @@ def calculate_bilateral_exposure_by_CP_method(
         is_show_detal: bool = False,
         iteration_threshold: float = 1e-10,
         max_iteration: int = 100000,
-        denominator_precition_threshold: float = 1e-10
+        denominator_precition_threshold: float = 1e-10,
+        **kwargs,
 ):
     """
     使用中心边缘连接算法（Center Peripheral Connection），通过各银行之银行间资产与银行间负债估算银行间双边敞口。
@@ -69,6 +70,7 @@ def calculate_bilateral_exposure_by_CP_method(
         iteration_threshold (float): 迭代阈值。默认值 1e-10
         max_iteration (int): 最大迭代次数。默认值 100000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
+        **kwargs: 其他参数
     """
 
     ## 预处理维度
@@ -188,30 +190,35 @@ def calculate_bilateral_exposure_by_CP_method(
 
             pass  # match
 
-    # # #DEBUG 检测估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    # logging.debug(f"\n总元素和之误差：{np.round(A_IB_1.sum() - A_IB_all.sum())}")
-    # logging.debug(f"\n总元素和之误差占比：{np.abs(A_IB_1.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-    # logging.debug(f"\n行元素和之误差：{np.round(A_IB_1.sum(axis=1) - A_IB_all)}")
-    # logging.debug(f"\n行元素和之误差占比：{np.abs(A_IB_1.sum(axis=1) - A_IB_all) / A_IB_all}")
-    # logging.debug(f"\n列元素和之误差：{np.round(A_IB_1.sum(axis=0) - Z_IB_all)}")
-    # logging.debug(f"\n列元素和之误差占比：{np.abs(A_IB_1.sum(axis=0) - Z_IB_all) / Z_IB_all}")
-
     logging.info("估算风险敞口矩阵完成。")
+
+    # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
+    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
+    logging.info(
+        f"""
+    \n
+    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
+    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
+    行和约束的差别: {diff_of_row_sum}\n
+    列和约束的差别: {diff_of_col_sum}\n
+    总和约束的差别: {diff_of_total_sum}\n
+    """
+    )
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
-            A_IB_1 = A_IB_1
-            Z_IB_1 = Z_IB_1
+            A_IB = A_IB_1
+            Z_IB = Z_IB_1
         else:
-            A_IB_1 = A_IB_1[:-1, :-1]
-            Z_IB_1 = Z_IB_1[:-1, :-1]
+            A_IB = A_IB_1[:-1, :-1]
+            Z_IB = Z_IB_1[:-1, :-1]
             pass  # if
     else:
-        A_IB_1 = A_IB_1
-        Z_IB_1 = Z_IB_1
+        A_IB = A_IB_1
+        Z_IB = Z_IB_1
         pass  # if
 
-    return A_IB_1, Z_IB_1
+    return A_IB, Z_IB
 
     pass  # function
 
@@ -250,6 +257,7 @@ def calculate_bilateral_exposure_by_ME_method(
         iteration_threshold (float): 迭代阈值。默认值 1e-10
         max_iteration (int): 最大迭代次数。默认值 100000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
+        **kwargs: 其他参数
 
     Returns:
         A_IB_1 (np.ndarray): 银行间资产邻接矩阵
@@ -409,6 +417,19 @@ def calculate_bilateral_exposure_by_ME_method(
 
     logging.info("估算风险敞口矩阵完成。")
 
+    # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
+    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
+    logging.info(
+        f"""
+    \n
+    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
+    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
+    行和约束的差别: {diff_of_row_sum}\n
+    列和约束的差别: {diff_of_col_sum}\n
+    总和约束的差别: {diff_of_total_sum}\n
+    """
+    )
+
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
             A_IB = A_IB_1
@@ -437,7 +458,8 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         is_show_detal: bool = False,
         iteration_threshold: float = 1e-10,
         max_iteration: int = 100000,
-        denominator_precition_threshold: float = 1e-10
+        denominator_precition_threshold: float = 1e-10,
+        **kwargs,
 ):
     """
     # 通过各银行之银行间资产与银行间负债估算银行间双边敞口。
@@ -467,6 +489,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         iteration_threshold (float): 迭代阈值。默认值 1e-10
         max_iteration (int): 最大迭代次数。默认值 100000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
+        **kwargs: 其他参数
 
     Returns:
         A_IB_1 (np.ndarray): 银行间资产邻接矩阵
@@ -584,20 +607,33 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
     logging.info("估算风险敞口矩阵完成。")
 
+    # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
+    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
+    logging.info(
+        f"""
+    \n
+    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
+    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
+    行和约束的差别: {diff_of_row_sum}\n
+    列和约束的差别: {diff_of_col_sum}\n
+    总和约束的差别: {diff_of_total_sum}\n
+    """
+    )
+
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
-            A_IB_1 = A_IB_1
-            Z_IB_1 = Z_IB_1
+            A_IB = A_IB_1
+            Z_IB = Z_IB_1
         else:
-            A_IB_1 = A_IB_1[:-1, :-1]
-            Z_IB_1 = Z_IB_1[:-1, :-1]
+            A_IB = A_IB_1[:-1, :-1]
+            Z_IB = Z_IB_1[:-1, :-1]
             pass  # if
     else:
-        A_IB_1 = A_IB_1
-        Z_IB_1 = Z_IB_1
+        A_IB = A_IB_1
+        Z_IB = Z_IB_1
         pass  # if
 
-    return A_IB_1, Z_IB_1
+    return A_IB, Z_IB
 
     pass  # function
 
@@ -611,7 +647,8 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         is_show_detal: bool = False,
         iteration_threshold: float = 1e-10,
         max_iteration: int = 100000,
-        denominator_precition_threshold: float = 1e-10
+        denominator_precition_threshold: float = 1e-10,
+        **kwargs,
 ):
     """
     通过各银行之银行间资产与银行间负债估算银行间双边敞口。 #BUG 存在行和难以拟合到约束的问题。
@@ -640,6 +677,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         iteration_threshold (float): 迭代阈值。默认值 1e-10
         max_iteration (int): 最大迭代次数。默认值 100000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
+        **kwargs: 其他参数
 
     Returns:
         A_IB_4 (np.ndarray): 银行间资产邻接矩阵
@@ -867,20 +905,33 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
 
     logging.info("估算风险敞口矩阵完成。")
 
+    # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
+    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
+    logging.info(
+        f"""
+    \n
+    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
+    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
+    行和约束的差别: {diff_of_row_sum}\n
+    列和约束的差别: {diff_of_col_sum}\n
+    总和约束的差别: {diff_of_total_sum}\n
+    """
+    )
+
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
-            A_IB_4 = A_IB_4
-            Z_IB_4 = Z_IB_4
+            A_IB = A_IB_4
+            Z_IB = Z_IB_4
         else:
-            A_IB_4 = A_IB_4[:-1, :-1]
-            Z_IB_4 = Z_IB_4[:-1, :-1]
+            A_IB = A_IB_4[:-1, :-1]
+            Z_IB = Z_IB_4[:-1, :-1]
             pass  # if
     else:
-        A_IB_4 = A_IB_4
-        Z_IB_4 = Z_IB_4
+        A_IB = A_IB_4
+        Z_IB = Z_IB_4
         pass  # if
 
-    return A_IB_4, Z_IB_4, density, is_the_target_density
+    return A_IB, Z_IB, density, is_the_target_density
 
     pass  # function
 
@@ -893,7 +944,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
         thin=100,
         method_adjast_bank_balanceSheet='add_virtual_bank',
         is_maintain_virtual_bank=False,
-        folderpath_result: Path = None,
+        **kwargs,
 ):
     """
     调用 R 语言之工具包 systemicrisk 之函数 calibrate_ER，校准银行间资产负债矩阵，到指定的密度。
@@ -913,6 +964,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
 
         is_maintain_virtual_bank (bool): 是否保留虚拟银行。默认值 False。
         folderpath_result (Path, optional): 结果文件夹路径。默认为 None。
+        **kwargs: 其他参数
 
     Returns:
         Tuple[np.array, np.array]: 重构后的银行间资产负债矩阵
@@ -983,20 +1035,33 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
 
     logging.info("估算风险敞口矩阵完成。")
 
+    # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
+    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_ij, A_IB_adjusted, Z_IB_adjusted)
+    logging.info(
+        f"""
+    \n
+    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
+    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
+    行和约束的差别: {diff_of_row_sum}\n
+    列和约束的差别: {diff_of_col_sum}\n
+    总和约束的差别: {diff_of_total_sum}\n
+    """
+    )
+
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
-            A_IB_ij = A_IB_ij
-            Z_IB_ij = Z_IB_ij
+            A_IB = A_IB_ij
+            Z_IB = Z_IB_ij
         else:
-            A_IB_ij = A_IB_ij[:-1, :-1]
-            Z_IB_ij = Z_IB_ij[:-1, :-1]
+            A_IB = A_IB_ij[:-1, :-1]
+            Z_IB = Z_IB_ij[:-1, :-1]
             pass  # if
     else:
-        A_IB_ij = A_IB_ij
-        Z_IB_ij = Z_IB_ij
+        A_IB = A_IB_ij
+        Z_IB = Z_IB_ij
         pass  # if
 
-    return A_IB_ij, Z_IB_ij
+    return A_IB, Z_IB
 
     ## #HACK 调用 R 函数方案二：导出 csv 文件再通过命令行运行 R 函数，最后导入生成的 csv 文件  BUG 这个方案暂时无法运行成功。原因是传入数值失败。
 
