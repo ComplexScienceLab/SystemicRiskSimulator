@@ -307,8 +307,8 @@ class Operator:
         A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
         # A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
 
-        ## 计算个体数量
-        sgv['num_bank'] = len(A.BB['id_agent'])
+        ## 计算银行数量
+        sgv['num_bank'] = len(A.note['id_bank'])
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
             log_message(
