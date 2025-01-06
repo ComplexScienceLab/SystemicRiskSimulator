@@ -165,9 +165,100 @@ def calculate_bilateral_exposure_by_CP_method(
         case 'R语言的systemicrisk包之calibrate_ER':
             A_IB_1, Z_IB_1 = A_IB_0, A_IB_0.T
             A_IB_adjusted_center, Z_IB_adjusted_center = A_IB_adjusted[:num_center], Z_IB_adjusted[:num_center]
+
             # 需要减掉那些连接值之和，才能抵消行和列和约束多余量
             A_IB_adjusted_center = A_IB_adjusted_center - A_IB_1[:num_center, num_center:].sum(axis=1)  # 减去中心银行连接边缘银行的值
             Z_IB_adjusted_center = Z_IB_adjusted_center - A_IB_1[num_center:, :num_center].sum(axis=0)  # 减去边缘银行连接中心银行的值
+
+            # #NOW 极简版削峰填谷算法：重复以下过程，直到 `A_IB_adjusted_center` 与 `Z_IB_adjusted_center` 不再有负值为止
+            iteration = 1
+            can_find_valid_adjacency_matrix = True  # 是否有效的邻接矩阵
+            while np.any(A_IB_adjusted_center < 0) or np.any(Z_IB_adjusted_center < 0):
+                logging.debug(f"第{iteration}次迭代：")
+
+                if iteration > 2 * N * 100:
+                    logging.error("改中心银行与边缘连边的迭代次数达到最大值。仍未找到满足`A_IB_adjusted_center` 与 `Z_IB_adjusted_center` 不存在负值的值。改连边失败！程序强制终止！")
+                    can_find_valid_adjacency_matrix = False
+                    break
+
+                # 分别获取【待去边中心银行】集合、【待加边中心银行】集合
+                idxs_vertex_to_remove_edge_in_A_IB = np.where(A_IB_adjusted_center < 0)[0]
+                if idxs_vertex_to_remove_edge_in_A_IB.size > 0:
+                    idxs_vertex_to_remove_edge_in_A_IB = idxs_vertex_to_remove_edge_in_A_IB[np.argsort(A_IB_adjusted_center[idxs_vertex_to_remove_edge_in_A_IB])]  # 按照 A_IB_adjusted_center 的值从小到大排序
+                else:
+                    logging.debug("在行和方向找不到可以去边的中心银行！")
+                idxs_vertex_to_remove_edge_in_Z_IB = np.where(Z_IB_adjusted_center < 0)[0]
+                if idxs_vertex_to_remove_edge_in_Z_IB.size > 0:
+                    idxs_vertex_to_remove_edge_in_Z_IB = idxs_vertex_to_remove_edge_in_Z_IB[np.argsort(Z_IB_adjusted_center[idxs_vertex_to_remove_edge_in_Z_IB])]  # 按照 Z_IB_adjusted_center 的值从小到大排序
+                else:
+                    logging.debug("在列和方向找不到可以去边的中心银行！")
+                idxs_vertex_to_add_edge_in_A_IB = np.where(A_IB_adjusted_center >= 0)[0]
+                if idxs_vertex_to_add_edge_in_A_IB.size > 0:
+                    idxs_vertex_to_add_edge_in_A_IB = idxs_vertex_to_add_edge_in_A_IB[np.argsort(-A_IB_adjusted_center[idxs_vertex_to_add_edge_in_A_IB])]  # 按照 A_IB_adjusted_center 的值从大到小排序
+                else:  # 如果没有正值，那么说明找不到可以加边的中心银行
+                    can_find_valid_adjacency_matrix = False
+                    logging.error("在行和方向找不到可以加边的中心银行！")
+                idxs_vertex_to_add_edge_in_Z_IB = np.where(Z_IB_adjusted_center >= 0)[0]
+                if idxs_vertex_to_add_edge_in_Z_IB.size > 0:
+                    idxs_vertex_to_add_edge_in_Z_IB = idxs_vertex_to_add_edge_in_Z_IB[np.argsort(-Z_IB_adjusted_center[idxs_vertex_to_add_edge_in_Z_IB])]  # 按照 Z_IB_adjusted_center 的值从大到小排序
+                else:  # 如果没有正值，那么说明找不到可以加边的中心银行
+                    can_find_valid_adjacency_matrix = False
+                    logging.error("在列和方向找不到可以加边的中心银行！")
+
+                # idx_vertex_to_remove_edge = min(idxs_vertex_to_remove_edge_in_A_IB[0], idxs_vertex_to_remove_edge_in_Z_IB[0])
+
+                # 判断改连边，选择【待去边中心银行】、【待改连边边缘银行】、【待加边中心银行】，进行改连边，更新 `A_IB_adjusted_center` 或 `Z_IB_adjusted_center`
+                if can_find_valid_adjacency_matrix is False:
+                    logging.error("改中心银行与边缘连边失败！")
+                    break
+                elif (len(idxs_vertex_to_remove_edge_in_A_IB) != 0 and len(idxs_vertex_to_remove_edge_in_Z_IB) != 0):
+                    what_to_relink_edge = 'A_IB' if idxs_vertex_to_remove_edge_in_A_IB[0] < idxs_vertex_to_remove_edge_in_Z_IB[0] else 'Z_IB'
+                elif (len(idxs_vertex_to_remove_edge_in_A_IB) == 0 and len(idxs_vertex_to_remove_edge_in_Z_IB != 0)):
+                    what_to_relink_edge = 'Z_IB'
+                elif (len(idxs_vertex_to_remove_edge_in_A_IB) != 0 and len(idxs_vertex_to_remove_edge_in_Z_IB == 0)):
+                    what_to_relink_edge = 'A_IB'
+                    pass  # if
+
+                if what_to_relink_edge == 'A_IB':
+                    logging.debug("行和方向：")
+                    original_values = A_IB_adjusted_center.copy().tolist()
+                    idx_vertex_to_remove_edge = idxs_vertex_to_remove_edge_in_A_IB[0]  # 选择 A_IB_adjusted_center 最大的作为【待去边中心银行】
+                    idx_vertex_to_relink_edge = np.argmax(A_IB_1[idx_vertex_to_remove_edge, num_center:]) + num_center  # 选择与【待去边中心银行】连接的所有边缘银行当中，对应连接值 A_IB_adjusted 最大的边缘银行，作为【待改连边边缘银行】
+                    idx_vertex_to_add_edge = idxs_vertex_to_add_edge_in_A_IB[0]  # 选择 A_IB_adjusted_center 最大的作为【待加边中心银行】
+                    logging.debug(f"边缘银行 {idx_vertex_to_relink_edge} 与中心银行 {idx_vertex_to_remove_edge} 去边，与中心银行 {idx_vertex_to_add_edge} 加边")
+                    # 【待改连边边缘银行】不与【待去边中心银行】连接，改成与【待加边中心银行】连接。更新 `A_IB_adjusted_center`  #FIXME
+                    A_IB_adjusted_center[idx_vertex_to_add_edge] -= A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
+                    A_IB_adjusted_center[idx_vertex_to_remove_edge] += A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
+                    A_IB_1[idx_vertex_to_add_edge, idx_vertex_to_relink_edge] -= A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
+                    A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge] += A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
+                    # #DEBUG 打印出更新后的 A_IB_adjusted_center，只显示变更后的值，没变更的用星号代替
+                    logging.debug(f"A_IB_adjusted_center 变更前：{[f'{val:.2f}' for val in original_values]}")
+                    changed_values = [A_IB_adjusted_center[i] if A_IB_adjusted_center[i] != original_values[i] else '*' for i in range(len(original_values))]
+                    changed_values_str = [f"{val:.2f}" if isinstance(val, (int, float)) else val for val in changed_values]
+                    logging.debug(f"A_IB_adjusted_center 变更后：{changed_values_str}")
+                elif what_to_relink_edge == 'Z_IB':
+                    logging.debug("列和方向：")
+                    original_values = Z_IB_adjusted_center.copy().tolist()
+                    idx_vertex_to_remove_edge = idxs_vertex_to_remove_edge_in_Z_IB[0]  # 选择 Z_IB_adjusted_center 最大的作为【待去边中心银行】
+                    idx_vertex_to_relink_edge = np.argmax(A_IB_1[num_center:, idx_vertex_to_remove_edge]) + num_center  # 选择与【待去边中心银行】连接的所有边缘银行当中，对应连接值 Z_IB_adjusted 最大的边缘银行，作为【待改连边边缘银行】
+                    idx_vertex_to_add_edge = idxs_vertex_to_add_edge_in_Z_IB[0]  # 选择 Z_IB_adjusted_center 最大的作为【待加边中心银行】
+                    logging.debug(f"边缘银行 {idx_vertex_to_relink_edge} 与中心银行 {idx_vertex_to_remove_edge} 去边，与中心银行 {idx_vertex_to_add_edge} 加边")
+                    # 【待改连边边缘银行】不与【待去边中心银行】连接，改成与【待加边中心银行】连接。更新 `Z_IB_adjusted_center`  #FIXME
+                    Z_IB_adjusted_center[idx_vertex_to_add_edge] -= A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
+                    Z_IB_adjusted_center[idx_vertex_to_remove_edge] += A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
+                    A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_add_edge] -= A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
+                    A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge] += A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
+                    # #DEBUG 打印出更新后的 Z_IB_adjusted_center，只显示变更后的值，没变更的用星号代替
+                    logging.debug(f"Z_IB_adjusted_center 变更前：{[f'{val:.2f}' for val in original_values]}")
+                    changed_values = [Z_IB_adjusted_center[i] if Z_IB_adjusted_center[i] != original_values[i] else '*' for i in range(len(original_values))]
+                    changed_values_str = [f"{val:.2f}" if isinstance(val, (int, float)) else val for val in changed_values]
+                    logging.debug(f"Z_IB_adjusted_center 变更后：{changed_values_str}")
+                    pass  # if
+
+                iteration += 1
+                pass  # while
+
+            # 调用 R 语言的 systemicrisk 包之 calibrate_ER 算法 估算中心银行之间的风险敞口矩阵
             A_IB_1_center, Z_IB_1_center = calibrate_bilateral_exposure_by_ME_method_use_R_package(
                 A_IB_adjusted_center,
                 Z_IB_adjusted_center,
