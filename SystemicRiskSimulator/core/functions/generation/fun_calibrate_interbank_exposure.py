@@ -71,6 +71,11 @@ def calculate_bilateral_exposure_by_CP_method(
         max_iteration (int): 最大迭代次数。默认值 100000
         denominator_precition_threshold (float): 分母接近零精度阈值。默认值 1e-10。
         **kwargs: 其他参数
+
+    Returns:
+        A_IB (np.ndarray): 银行间双边敞口矩阵
+        Z_IB (np.ndarray): 银行间双边敞口矩阵的转置
+        is_valid_calibration_exposure_matrix (bool): 是否有效的双边敞口矩阵
     """
 
     # 预处理维度
@@ -243,8 +248,6 @@ def calculate_bilateral_exposure_by_CP_method(
                     A_IB_adjusted_center[idx_vertex_to_remove_edge] += A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
                     A_IB_1[idx_vertex_to_add_edge, idx_vertex_to_relink_edge] += A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
                     A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge] -= A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
-                    # A_IB_adjusted_center -= A_IB_1[:num_center, num_center:].sum(axis=1)  # 更新 A_IB_adjusted_center
-                    # Z_IB_adjusted_center -= A_IB_1[num_center:, :num_center].sum(axis=0)  # 更新 Z_IB_adjusted_center
                     # #DEBUG 打印出更新后的 A_IB_adjusted_center，只显示变更后的值，没变更的用星号代替
                     logging.debug(f"A_IB_adjusted_center 变更前：{[f'{val:.2f}' for val in original_values]}")
                     changed_values = [A_IB_adjusted_center[i] if A_IB_adjusted_center[i] != original_values[i] else '*' for i in range(len(original_values))]
@@ -266,8 +269,6 @@ def calculate_bilateral_exposure_by_CP_method(
                     Z_IB_adjusted_center[idx_vertex_to_remove_edge] += A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
                     A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_add_edge] += A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
                     A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge] -= A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
-                    # A_IB_adjusted_center -= A_IB_1[:num_center, num_center:].sum(axis=1)  # 更新 A_IB_adjusted_center
-                    # Z_IB_adjusted_center -= A_IB_1[num_center:, :num_center].sum(axis=0)  # 更新 Z_IB_adjusted_center
                     # #DEBUG 打印出更新后的 Z_IB_adjusted_center，只显示变更后的值，没变更的用星号代替
                     logging.debug(f"Z_IB_adjusted_center 变更前：{[f'{val:.2f}' for val in original_values]}")
                     changed_values = [Z_IB_adjusted_center[i] if Z_IB_adjusted_center[i] != original_values[i] else '*' for i in range(len(original_values))]
@@ -278,10 +279,13 @@ def calculate_bilateral_exposure_by_CP_method(
                 iteration += 1
                 pass  # while
 
-            print(f"更新完之后二者是否保持总和相同：{np.isclose(A_IB_adjusted_center.sum(), Z_IB_adjusted_center.sum())}")
+            logging.debug(f"更新完之后二者是否保持总和相同：{np.isclose(A_IB_adjusted_center.sum(), Z_IB_adjusted_center.sum())}")
+            if np.isclose(A_IB_adjusted_center.sum(), Z_IB_adjusted_center.sum()) is False:
+                logging.error("更新完之后二者不保持总和相同。中心银行与边缘银行连接失败！")
+                is_valid_calibration_exposure_matrix = False
 
             # 调用 R 语言的 systemicrisk 包之 calibrate_ER 算法 估算中心银行之间的风险敞口矩阵
-            A_IB_1_center, Z_IB_1_center = calibrate_bilateral_exposure_by_ME_method_use_R_package(
+            A_IB_1_center, Z_IB_1_center, is_valid_calibration_exposure_matrix = calibrate_bilateral_exposure_by_ME_method_use_R_package(
                 A_IB_adjusted_center,
                 Z_IB_adjusted_center,
                 target_density=center_agents_networkDensity,
@@ -333,17 +337,7 @@ def calculate_bilateral_exposure_by_CP_method(
             Z_IB_1 = A_IB_1.copy().T
 
             # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-            diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
-            logging.info(
-                f"""
-            \n
-            年份: {kwargs['year']}、连接密度: {center_agents_networkDensity}\n
-            A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
-            行和约束的差别: {diff_of_row_sum}\n
-            列和约束的差别: {diff_of_col_sum}\n
-            总和约束的差别: {diff_of_total_sum}\n
-            """
-            )
+            diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum, is_valid_calibration_exposure_matrix = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted, year=kwargs['year'], density=center_agents_networkDensity)
 
             pass  # match
 
@@ -362,7 +356,7 @@ def calculate_bilateral_exposure_by_CP_method(
         Z_IB = Z_IB_1
         pass  # if
 
-    return A_IB, Z_IB
+    return A_IB, Z_IB, is_valid_calibration_exposure_matrix
 
     pass  # function
 
@@ -565,17 +559,7 @@ def calculate_bilateral_exposure_by_ME_method(
     logging.info("估算风险敞口矩阵完成。")
 
     # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
-    logging.info(
-        f"""
-    \n
-    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
-    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
-    行和约束的差别: {diff_of_row_sum}\n
-    列和约束的差别: {diff_of_col_sum}\n
-    总和约束的差别: {diff_of_total_sum}\n
-    """
-    )
+    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum, is_valid_calibration_exposure_matrix = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted, year=kwargs['year'], density=kwargs['density'])
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
@@ -590,7 +574,7 @@ def calculate_bilateral_exposure_by_ME_method(
         Z_IB = Z_IB_1
         pass  # if
 
-    return A_IB, Z_IB
+    return A_IB, Z_IB, is_valid_calibration_exposure_matrix
 
     pass  # function
 
@@ -641,6 +625,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
     Returns:
         A_IB_1 (np.ndarray): 银行间资产邻接矩阵
         Z_IB_1 (np.ndarray): 银行间负债邻接矩阵
+        is_valid_calibration_exposure_matrix (bool): 是否有效的估算银行间双边敞口矩阵
     """
     import numpy as np
 
@@ -758,17 +743,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
     logging.info("估算风险敞口矩阵完成。")
 
     # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
-    logging.info(
-        f"""
-    \n
-    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
-    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
-    行和约束的差别: {diff_of_row_sum}\n
-    列和约束的差别: {diff_of_col_sum}\n
-    总和约束的差别: {diff_of_total_sum}\n
-    """
-    )
+    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum, is_valid_calibration_exposure_matrix = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted, year=kwargs['year'], density=kwargs['density'])
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
@@ -783,7 +758,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
         Z_IB = Z_IB_1
         pass  # if
 
-    return A_IB, Z_IB
+    return A_IB, Z_IB, is_valid_calibration_exposure_matrix
 
     pass  # function
 
@@ -834,6 +809,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         Z_IB_4 (np.ndarray): 银行间负债邻接矩阵
         density (float): 最终的连接密度
         is_the_target_density (bool): 是否达到目标密度
+        is_valid_calibration_exposure_matrix (bool): 是否有效的估算银行间双边敞口矩阵
     """
     import numpy as np
 
@@ -970,7 +946,12 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
     else:
         is_the_target_density = True
         logging.info(f"调整后的的连接密度已达到目标密度：{target_density}")
-        pass
+        pass  # if
+    if is_the_target_density is False:
+        is_valid_calibration_exposure_matrix = False
+    else:
+        is_valid_calibration_exposure_matrix = True
+        pass  # if
 
     # 根据预置的元素值，重新计算银行间资产负债矩阵之行和、列和
     mask = np.where(A_IB_2 == 0, True, False)
@@ -1059,17 +1040,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
     logging.info("估算风险敞口矩阵完成。")
 
     # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted)
-    logging.info(
-        f"""
-    \n
-    年份: {kwargs['year']}、连接密度: {target_density}\n
-    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
-    行和约束的差别: {diff_of_row_sum}\n
-    列和约束的差别: {diff_of_col_sum}\n
-    总和约束的差别: {diff_of_total_sum}\n
-    """
-    )
+    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum, is_valid_calibration_exposure_matrix = check_risk_exposure_matrix_constraints(A_IB_1, A_IB_adjusted, Z_IB_adjusted, year=kwargs['year'], density=kwargs['density'])
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
@@ -1084,7 +1055,7 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
         Z_IB = Z_IB_4
         pass  # if
 
-    return A_IB, Z_IB, density, is_the_target_density
+    return A_IB, Z_IB, density, is_the_target_density, is_valid_calibration_exposure_matrix
 
     pass  # function
 
@@ -1120,7 +1091,9 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
         **kwargs: 其他参数
 
     Returns:
-        Tuple[np.array, np.array]: 重构后的银行间资产负债矩阵
+        A_IB (np.ndarray): 估算之后的银行间资产
+        Z_IB (np.ndarray): 估算之后的银行间负债
+        is_valid_calibration_exposure_matrix (bool): 是否有效的估算银行间双边敞口矩阵
     """
 
     # NOTE 调用 R 函数方案一：使用 rpy2 直接调用
@@ -1192,17 +1165,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
     logging.info("估算风险敞口矩阵完成。")
 
     # 检查估算之后的最终的银行间负债矩阵对比原始的银行间负债矩阵
-    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum = check_risk_exposure_matrix_constraints(A_IB_ij, A_IB_adjusted, Z_IB_adjusted)
-    logging.info(
-        f"""
-    \n
-    年份: {kwargs['year']}、连接密度: {target_density}\n
-    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
-    行和约束的差别: {diff_of_row_sum}\n
-    列和约束的差别: {diff_of_col_sum}\n
-    总和约束的差别: {diff_of_total_sum}\n
-    """
-    )
+    diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum, is_valid_calibration_exposure_matrix = check_risk_exposure_matrix_constraints(A_IB_ij, A_IB_adjusted, Z_IB_adjusted, year=kwargs['year'], density=target_density)
 
     if is_added_virtual_bank is True:  # 如果添加了虚拟银行，则删除虚拟银行
         if is_maintain_virtual_bank:  # 如果保留虚拟银行，则返回虚拟银行
@@ -1217,7 +1180,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
         Z_IB = Z_IB_ij
         pass  # if
 
-    return A_IB, Z_IB
+    return A_IB, Z_IB, is_valid_calibration_exposure_matrix
 
     # HACK 调用 R 函数方案二：导出 csv 文件再通过命令行运行 R 函数，最后导入生成的 csv 文件  BUG 这个方案暂时无法运行成功。原因是传入数值失败。
 
@@ -1542,53 +1505,53 @@ if __name__ == "__main__":
     # 测试用
     logging.basicConfig(level=logging.DEBUG)
 
-    # # DEBUG 测试 calculate_bilateral_exposure_by_CP_method
-    #
-    # # 假设有 8 个中心银行和 24 个边缘银行
-    # num_center = 8
-    # num_peripheral = 24
-    # num_banks = num_center + num_peripheral
-    #
-    # # 随机生成银行间总资产和总负债矩阵
-    # np.random.seed(42)  # 固定随机种子以便复现结果
-    # A_IB_all = (np.random.rand(num_banks) + 1) * 10
-    # A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 40
-    # Z_IB_all = (np.random.rand(num_banks) + 1) * 10
-    # Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 40
-    # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
-    # print(f"银行间总资产总和与银行间总负债总和差异：{A_IB_all.sum() - Z_IB_all.sum()}")
-    #
-    # # 中心银行的索引
-    # array_idx_center_bank = np.arange(num_center)
-    #
-    # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_CP_method(
-    #     A_IB_all=A_IB_all,
-    #     Z_IB_all=Z_IB_all,
-    #     array_idx_center_bank=array_idx_center_bank,
-    #     center_agents_networkDensity=0.75,
-    #     algorithm_link_center_banks='R语言的systemicrisk包之calibrate_ER',
-    #     method_adjast_bank_balanceSheet='resize',
-    #     num_center=num_center,
-    #     is_show_detal=True,
-    #     iteration_threshold=1e-10,
-    #     max_iteration=1000,
-    #     denominator_precition_threshold=1e-10,
-    #     year=2021,
-    # )
-    #
-    # # 打印结果
-    # print("银行间资产矩阵 A_IB_ij:")
-    # print(A_IB_ij)
-    # print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
-    # print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
-    # print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
-    # print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
-    # print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
-    # print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
-    #
-    # print("\n测试 calculate_bilateral_exposure_by_CP_method 完成。\n\n\n")
-    #
+    # DEBUG 测试 calculate_bilateral_exposure_by_CP_method
+
+    # 假设有 8 个中心银行和 24 个边缘银行
+    num_center = 8
+    num_peripheral = 24
+    num_banks = num_center + num_peripheral
+
+    # 随机生成银行间总资产和总负债矩阵
+    np.random.seed(42)  # 固定随机种子以便复现结果
+    A_IB_all = (np.random.rand(num_banks) + 1) * 10
+    A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 40
+    Z_IB_all = (np.random.rand(num_banks) + 1) * 10
+    Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 40
+    Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
+    print(f"银行间总资产总和与银行间总负债总和差异：{A_IB_all.sum() - Z_IB_all.sum()}")
+
+    # 中心银行的索引
+    array_idx_center_bank = np.arange(num_center)
+
+    # 调用函数计算双边敞口
+    A_IB_ij, Z_IB_ij, is_valid_calibration_exposure_matrix = calculate_bilateral_exposure_by_CP_method(
+        A_IB_all=A_IB_all,
+        Z_IB_all=Z_IB_all,
+        array_idx_center_bank=array_idx_center_bank,
+        center_agents_networkDensity=0.75,
+        algorithm_link_center_banks='R语言的systemicrisk包之calibrate_ER',
+        method_adjast_bank_balanceSheet='resize',
+        num_center=num_center,
+        is_show_detal=True,
+        iteration_threshold=1e-10,
+        max_iteration=1000,
+        denominator_precition_threshold=1e-10,
+        year=2021,
+    )
+
+    # 打印结果
+    print("银行间资产矩阵 A_IB_ij:")
+    print(A_IB_ij)
+    print(f"\n总元素和之误差：{np.round(A_IB_ij.sum() - A_IB_all.sum())}")
+    print(f"\n总元素和之误差占比：{np.abs(A_IB_ij.sum() - A_IB_all.sum()) / A_IB_all.sum()}")
+    print(f"\n行元素和之误差：{np.round(A_IB_ij.sum(axis=1) - A_IB_all)}")
+    print(f"\n行元素和之误差占比：{np.abs(A_IB_ij.sum(axis=1) - A_IB_all) / A_IB_all}")
+    print(f"\n列元素和之误差：{np.round(A_IB_ij.sum(axis=0) - Z_IB_all)}")
+    print(f"\n列元素和之误差占比：{np.abs(A_IB_ij.sum(axis=0) - Z_IB_all) / Z_IB_all}")
+
+    print("\n测试 calculate_bilateral_exposure_by_CP_method 完成。\n\n\n")
+
     # ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method
     #
     # import numpy as np
@@ -1603,7 +1566,7 @@ if __name__ == "__main__":
     # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
     #
     # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, iteration_threshold=1e-10, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-10)
+    # A_IB_ij, Z_IB_ij, is_valid_calibration_exposure_matrix = calculate_bilateral_exposure_by_ME_method(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, iteration_threshold=1e-10, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-10)
     #
     # # 打印结果
     # print("银行间资产矩阵 A_IB_ij:")
@@ -1647,7 +1610,7 @@ if __name__ == "__main__":
     # # Z_IB_all += A_preset_values.sum(axis=0)
     #
     # # 调用函数计算双边敞口
-    # A_IB_ij, Z_IB_ij = calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, A_preset_values=A_preset_values, mask=A_mask, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
+    # A_IB_ij, Z_IB_ij, is_valid_calibration_exposure_matrix = calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(A_IB_all=A_IB_all, Z_IB_all=Z_IB_all, A_preset_values=A_preset_values, mask=A_mask, iteration_threshold=1e-3, is_show_detal=True, max_iteration=100, denominator_precition_threshold=1e-3)
     #
     # # 打印结果
     # print("银行间资产矩阵 A_IB_ij:")
@@ -1677,7 +1640,7 @@ if __name__ == "__main__":
     #     Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
     #
     #     # 调用函数计算双边敞口
-    #     A_IB_ij, Z_IB_ij, density, is_the_target_density = calculate_bilateral_exposure_by_ME_method_with_density(
+    #     A_IB_ij, Z_IB_ij, density, is_the_target_density, is_valid_calibration_exposure_matrix = calculate_bilateral_exposure_by_ME_method_with_density(
     #         A_IB_all=A_IB_all,
     #         Z_IB_all=Z_IB_all,
     #         target_density=target_density,

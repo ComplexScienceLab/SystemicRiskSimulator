@@ -3,10 +3,10 @@
 @Desc   : 一些常用的数据处理工具
 """
 
-from SystemicRiskSimulator.external_packages import np
+from SystemicRiskSimulator.external_packages import np, logging
 
 
-def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarray, Z_IB_all: np.ndarray):
+def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarray, Z_IB_all: np.ndarray, **kwargs):
     """
     检查生成的结果风险敞口矩阵与对应的行和、列和约束的差异情况
 
@@ -14,13 +14,17 @@ def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarra
         A_IB (np.ndarray): 风险敞口矩阵
         A_IB_all (np.ndarray): 风险敞口矩阵的行和约束数据（列向量）
         Z_IB_all (np.ndarray): 风险敞口矩阵的列和约束数据（行向量）
+        **kwargs: 额外参数
 
     Returns:
         diff_of_A_IB_all_and_Z_IB_all (float): 行和约束、列和约束总和的差别
         diff_of_row_sum (np.ndarray): 生成的矩阵之行和与行和约束的差别
         diff_of_col_sum (np.ndarray): 生成的矩阵之列和与列和约束的差别
         diff_of_total_sum (float): 生成的矩阵值总和与总和约束的差别
+        is_valid (bool): 是否有效
     """
+    is_valid = True  #TODO 这个还没有开发
+
     # 检查 A_IB_all、Z_IB_all 差别
     diff_of_A_IB_all_and_Z_IB_all = A_IB_all.sum() / Z_IB_all.sum()  # 计算行和约束、列和约束总和的差别
 
@@ -40,6 +44,17 @@ def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarra
     total_conditions = (A_IB_sum_0 == 0) & (A_IB_sum_1 == 0)
     diff_of_total_sum = np.where(total_conditions, r"零/零", np.where(A_IB_sum_0 == 0, rf"{A_IB_sum_1}/零", A_IB_sum_1 / A_IB_sum_0))
 
-    return diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum
+    logging.info(
+        f"""
+    \n
+    年份: {kwargs['year']}、连接密度: {kwargs['density']}\n
+    A_IB_all、Z_IB_all 总和的差别: {diff_of_A_IB_all_and_Z_IB_all}\n
+    行和约束的差别: {diff_of_row_sum}\n
+    列和约束的差别: {diff_of_col_sum}\n
+    总和约束的差别: {diff_of_total_sum}\n
+    """
+    )
+
+    return diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum, is_valid
 
     pass  # function
