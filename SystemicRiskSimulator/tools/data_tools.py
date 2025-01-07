@@ -24,17 +24,17 @@ def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarra
     # 检查 A_IB_all、Z_IB_all 差别
     diff_of_A_IB_all_and_Z_IB_all = A_IB_all.sum() / Z_IB_all.sum()  # 计算行和约束、列和约束总和的差别
 
-    # 行和约束
+    # 行和约束差别
     A_IB_sum = A_IB.sum(axis=1)
     row_conditions = (A_IB_all == 0) & (A_IB_sum == 0)
     diff_of_row_sum = np.where(row_conditions, r"零/零", np.where(A_IB_all == 0, rf"{A_IB_sum}/零", A_IB_sum / A_IB_all))
 
-    # 列和约束
+    # 列和约束差别
     Z_IB_sum = A_IB.sum(axis=0)
     col_conditions = (Z_IB_all == 0) & (Z_IB_sum == 0)
     diff_of_col_sum = np.where(col_conditions, r"零/零", np.where(Z_IB_all == 0, rf"{Z_IB_sum}/零", Z_IB_sum / Z_IB_all))
 
-    # 总和约束
+    # 总和约束差别
     A_IB_sum_1 = A_IB.sum().sum()
     A_IB_sum_0 = A_IB_all.sum()
     total_conditions = (A_IB_sum_0 == 0) & (A_IB_sum_1 == 0)
