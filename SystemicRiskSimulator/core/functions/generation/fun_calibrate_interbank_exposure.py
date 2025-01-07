@@ -73,18 +73,18 @@ def calculate_bilateral_exposure_by_CP_method(
         **kwargs: 其他参数
     """
 
-    ## 预处理维度
+    # 预处理维度
     A_IB_all, Z_IB_all = A_IB_all.flatten(), Z_IB_all.flatten()
 
-    ## 调整银行资产负债表使得总资产与总负债相等
+    # 调整银行资产负债表使得总资产与总负债相等
 
     is_added_virtual_bank = None
     match method_adjast_bank_balanceSheet:
         case 'none':
-            ## #NOTE 调整方案〇：无需调整
+            # NOTE 调整方案〇：无需调整
             A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
-            ## #NOTE 调整方案一：添加虚拟银行
+            # NOTE 调整方案一：添加虚拟银行
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
@@ -110,8 +110,16 @@ def calculate_bilateral_exposure_by_CP_method(
     A_IB_adjusted = np.array(A_IB_adjusted)
     Z_IB_adjusted = np.array(Z_IB_adjusted)
 
-    # A_IB_0 = np.outer(A_IB_adjusted, Z_IB_adjusted) / denominator_precition_threshold
-    A_IB_0 = np.outer(A_IB_adjusted, Z_IB_adjusted)
+    match algorithm_link_center_banks:
+        case 'R语言的systemicrisk包之calibrate_ER':
+            A_IB_0 = np.outer(A_IB_adjusted, Z_IB_adjusted)
+            # # 归一化到最大值是银行行和约束或者列和约束最大值
+            # A_IB_0 = A_IB_0 / max(np.max(A_IB_adjusted), np.max(Z_IB_adjusted))
+        case 'RAS':
+            # A_IB_0 = np.outer(A_IB_adjusted, Z_IB_adjusted) / denominator_precition_threshold
+            A_IB_0 = np.outer(A_IB_adjusted, Z_IB_adjusted)
+            pass  # match
+
     np.fill_diagonal(A_IB_0, 0)  # 对角线为 0
     A_IB_0[num_center:, num_center:] = 0  # 边缘银行连接为 0
 
@@ -125,7 +133,7 @@ def calculate_bilateral_exposure_by_CP_method(
             A_IB_0[num_center:, :num_center] = np.where(np.arange(num_center) == select_center_banks[:, np.newaxis], A_IB_adjusted[num_center:, np.newaxis], 0)  # 对于每一个边缘银行，连接到被选取的一个中心银行  #BUG 这个只适用于单个边缘银行只连接一个中心银行的情况
             # A_IB_0[:num_center, num_center:] = np.where(np.arange(num_center)[:, np.newaxis] == select_peripheral_banks, A_IB_0[:num_center, num_center:], 0)  # 对于每一个边缘银行，被所选取的中心银行连接  #HACK 这个不适用
             A_IB_0[:num_center, num_center:] = np.where(np.arange(num_center)[:, np.newaxis] == select_peripheral_banks, Z_IB_adjusted[np.newaxis, num_center:], 0)  # 对于每一个边缘银行，被所选取的中心银行连接  #BUG 这个只适用于单个边缘银行只连接一个中心银行的情况
-        case '按同分类连接':
+        case '按同分类连接':  # #HACK #BUG 这个似乎不能用
             if df_classify is None:
                 raise ValueError("没有导入分类数据框。")
             else:
@@ -167,10 +175,10 @@ def calculate_bilateral_exposure_by_CP_method(
             A_IB_adjusted_center, Z_IB_adjusted_center = A_IB_adjusted[:num_center], Z_IB_adjusted[:num_center]
 
             # 需要减掉那些连接值之和，才能抵消行和列和约束多余量
-            A_IB_adjusted_center = A_IB_adjusted_center - A_IB_1[:num_center, num_center:].sum(axis=1)  # 减去中心银行连接边缘银行的值
-            Z_IB_adjusted_center = Z_IB_adjusted_center - A_IB_1[num_center:, :num_center].sum(axis=0)  # 减去边缘银行连接中心银行的值
+            A_IB_adjusted_center -= A_IB_1[:num_center, num_center:].sum(axis=1)  # 减去中心银行连接边缘银行的值
+            Z_IB_adjusted_center -= A_IB_1[num_center:, :num_center].sum(axis=0)  # 减去边缘银行连接中心银行的值
 
-            # #NOW 极简版削峰填谷算法：重复以下过程，直到 `A_IB_adjusted_center` 与 `Z_IB_adjusted_center` 不再有负值为止
+            # 极简版削峰填谷算法：重复以下过程，直到 `A_IB_adjusted_center` 与 `Z_IB_adjusted_center` 不再有负值为止
             iteration = 1
             can_find_valid_adjacency_matrix = True  # 是否有效的邻接矩阵
             while np.any(A_IB_adjusted_center < 0) or np.any(Z_IB_adjusted_center < 0):
@@ -213,9 +221,9 @@ def calculate_bilateral_exposure_by_CP_method(
                     break
                 elif (len(idxs_vertex_to_remove_edge_in_A_IB) != 0 and len(idxs_vertex_to_remove_edge_in_Z_IB) != 0):
                     what_to_relink_edge = 'A_IB' if idxs_vertex_to_remove_edge_in_A_IB[0] < idxs_vertex_to_remove_edge_in_Z_IB[0] else 'Z_IB'
-                elif (len(idxs_vertex_to_remove_edge_in_A_IB) == 0 and len(idxs_vertex_to_remove_edge_in_Z_IB != 0)):
+                elif (len(idxs_vertex_to_remove_edge_in_A_IB) == 0 and len(idxs_vertex_to_remove_edge_in_Z_IB) != 0):
                     what_to_relink_edge = 'Z_IB'
-                elif (len(idxs_vertex_to_remove_edge_in_A_IB) != 0 and len(idxs_vertex_to_remove_edge_in_Z_IB == 0)):
+                elif (len(idxs_vertex_to_remove_edge_in_A_IB) != 0 and len(idxs_vertex_to_remove_edge_in_Z_IB) == 0):
                     what_to_relink_edge = 'A_IB'
                     pass  # if
 
@@ -223,14 +231,20 @@ def calculate_bilateral_exposure_by_CP_method(
                     logging.debug("行和方向：")
                     original_values = A_IB_adjusted_center.copy().tolist()
                     idx_vertex_to_remove_edge = idxs_vertex_to_remove_edge_in_A_IB[0]  # 选择 A_IB_adjusted_center 最大的作为【待去边中心银行】
+                    # idx_vertex_to_remove_edge = weighted_random_choice(idxs_vertex_to_remove_edge_in_A_IB, A_IB_adjusted_center[idxs_vertex_to_remove_edge_in_A_IB])  # 选择【待去边中心银行】，A_IB_adjusted_center 越大的选择概率越大
                     idx_vertex_to_relink_edge = np.argmax(A_IB_1[idx_vertex_to_remove_edge, num_center:]) + num_center  # 选择与【待去边中心银行】连接的所有边缘银行当中，对应连接值 A_IB_adjusted 最大的边缘银行，作为【待改连边边缘银行】
+                    # idx_vertex_to_relink_edge = weighted_random_choice(np.arange(num_center, N), A_IB_1[idx_vertex_to_remove_edge, num_center:])  # 选择与【待去边中心银行】连接的所有边缘银行当中的一个边缘银行，作为【待改连边边缘银行】。连接值 A_IB_adjusted 越大的选择概率越大
                     idx_vertex_to_add_edge = idxs_vertex_to_add_edge_in_A_IB[0]  # 选择 A_IB_adjusted_center 最大的作为【待加边中心银行】
+                    # idx_vertex_to_add_edge = weighted_random_choice(idxs_vertex_to_add_edge_in_A_IB, A_IB_adjusted_center[idxs_vertex_to_add_edge_in_A_IB])  # 选择【待加边中心银行】，A_IB_adjusted_center 越大的选择概率越大
                     logging.debug(f"边缘银行 {idx_vertex_to_relink_edge} 与中心银行 {idx_vertex_to_remove_edge} 去边，与中心银行 {idx_vertex_to_add_edge} 加边")
-                    # 【待改连边边缘银行】不与【待去边中心银行】连接，改成与【待加边中心银行】连接。更新 `A_IB_adjusted_center`  #FIXME
+                    # 【待改连边边缘银行】不与【待去边中心银行】连接，改成与【待加边中心银行】连接。更新 `A_IB_adjusted_center`
+                    logging.debug(f"迁移值{A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]:.2f}")
                     A_IB_adjusted_center[idx_vertex_to_add_edge] -= A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
                     A_IB_adjusted_center[idx_vertex_to_remove_edge] += A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
-                    A_IB_1[idx_vertex_to_add_edge, idx_vertex_to_relink_edge] -= A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
-                    A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge] += A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
+                    A_IB_1[idx_vertex_to_add_edge, idx_vertex_to_relink_edge] += A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
+                    A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge] -= A_IB_1[idx_vertex_to_remove_edge, idx_vertex_to_relink_edge]
+                    # A_IB_adjusted_center -= A_IB_1[:num_center, num_center:].sum(axis=1)  # 更新 A_IB_adjusted_center
+                    # Z_IB_adjusted_center -= A_IB_1[num_center:, :num_center].sum(axis=0)  # 更新 Z_IB_adjusted_center
                     # #DEBUG 打印出更新后的 A_IB_adjusted_center，只显示变更后的值，没变更的用星号代替
                     logging.debug(f"A_IB_adjusted_center 变更前：{[f'{val:.2f}' for val in original_values]}")
                     changed_values = [A_IB_adjusted_center[i] if A_IB_adjusted_center[i] != original_values[i] else '*' for i in range(len(original_values))]
@@ -240,14 +254,20 @@ def calculate_bilateral_exposure_by_CP_method(
                     logging.debug("列和方向：")
                     original_values = Z_IB_adjusted_center.copy().tolist()
                     idx_vertex_to_remove_edge = idxs_vertex_to_remove_edge_in_Z_IB[0]  # 选择 Z_IB_adjusted_center 最大的作为【待去边中心银行】
+                    # idx_vertex_to_remove_edge = weighted_random_choice(idxs_vertex_to_remove_edge_in_Z_IB, Z_IB_adjusted_center[idxs_vertex_to_remove_edge_in_Z_IB])  # 选择【待去边中心银行】，Z_IB_adjusted_center 越大的选择概率越大
                     idx_vertex_to_relink_edge = np.argmax(A_IB_1[num_center:, idx_vertex_to_remove_edge]) + num_center  # 选择与【待去边中心银行】连接的所有边缘银行当中，对应连接值 Z_IB_adjusted 最大的边缘银行，作为【待改连边边缘银行】
+                    # idx_vertex_to_relink_edge = weighted_random_choice(np.arange(num_center, N), Z_IB_1[num_center:, idx_vertex_to_remove_edge])  # 选择与【待去边中心银行】连接的所有边缘银行当中的一个边缘银行，作为【待改连边边缘银行】。连接值 Z_IB_adjusted 越大的选择概率越大
                     idx_vertex_to_add_edge = idxs_vertex_to_add_edge_in_Z_IB[0]  # 选择 Z_IB_adjusted_center 最大的作为【待加边中心银行】
+                    # idx_vertex_to_add_edge = weighted_random_choice(idxs_vertex_to_add_edge_in_Z_IB, Z_IB_adjusted_center[idxs_vertex_to_add_edge_in_Z_IB])  # 选择【待加边中心银行】，Z_IB_adjusted_center 越大的选择概率越大
                     logging.debug(f"边缘银行 {idx_vertex_to_relink_edge} 与中心银行 {idx_vertex_to_remove_edge} 去边，与中心银行 {idx_vertex_to_add_edge} 加边")
-                    # 【待改连边边缘银行】不与【待去边中心银行】连接，改成与【待加边中心银行】连接。更新 `Z_IB_adjusted_center`  #FIXME
+                    # 【待改连边边缘银行】不与【待去边中心银行】连接，改成与【待加边中心银行】连接。更新 `Z_IB_adjusted_center`
+                    logging.debug(f"迁移值{A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]:.2f}")
                     Z_IB_adjusted_center[idx_vertex_to_add_edge] -= A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
                     Z_IB_adjusted_center[idx_vertex_to_remove_edge] += A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
-                    A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_add_edge] -= A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
-                    A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge] += A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
+                    A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_add_edge] += A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
+                    A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge] -= A_IB_1[idx_vertex_to_relink_edge, idx_vertex_to_remove_edge]
+                    # A_IB_adjusted_center -= A_IB_1[:num_center, num_center:].sum(axis=1)  # 更新 A_IB_adjusted_center
+                    # Z_IB_adjusted_center -= A_IB_1[num_center:, :num_center].sum(axis=0)  # 更新 Z_IB_adjusted_center
                     # #DEBUG 打印出更新后的 Z_IB_adjusted_center，只显示变更后的值，没变更的用星号代替
                     logging.debug(f"Z_IB_adjusted_center 变更前：{[f'{val:.2f}' for val in original_values]}")
                     changed_values = [Z_IB_adjusted_center[i] if Z_IB_adjusted_center[i] != original_values[i] else '*' for i in range(len(original_values))]
@@ -258,6 +278,8 @@ def calculate_bilateral_exposure_by_CP_method(
                 iteration += 1
                 pass  # while
 
+            print(f"更新完之后二者是否保持总和相同：{np.isclose(A_IB_adjusted_center.sum(), Z_IB_adjusted_center.sum())}")
+
             # 调用 R 语言的 systemicrisk 包之 calibrate_ER 算法 估算中心银行之间的风险敞口矩阵
             A_IB_1_center, Z_IB_1_center = calibrate_bilateral_exposure_by_ME_method_use_R_package(
                 A_IB_adjusted_center,
@@ -266,6 +288,7 @@ def calculate_bilateral_exposure_by_CP_method(
                 method_adjast_bank_balanceSheet='none',
                 year=kwargs['year']
             )
+
             A_IB_1[:num_center, :num_center], Z_IB_1[:num_center, :num_center] = A_IB_1_center, Z_IB_1_center
 
             if is_show_detal:  # 可视化标准双边敞口矩阵为热力图
@@ -386,18 +409,18 @@ def calculate_bilateral_exposure_by_ME_method(
     """
     import numpy as np
 
-    ## 预处理维度
+    # 预处理维度
     A_IB_all, Z_IB_all = A_IB_all.flatten(), Z_IB_all.flatten()
 
-    ## 调整银行资产负债表使得总资产与总负债相等
+    # 调整银行资产负债表使得总资产与总负债相等
 
     is_added_virtual_bank = None
     match method_adjast_bank_balanceSheet:
         case 'none':
-            ## #NOTE 调整方案〇：无需调整
+            # NOTE 调整方案〇：无需调整
             A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
-            ## #NOTE 调整方案一：添加虚拟银行
+            # NOTE 调整方案一：添加虚拟银行
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
@@ -522,7 +545,7 @@ def calculate_bilateral_exposure_by_ME_method(
 
             pass  # match
 
-    ## #NOTE 计算不考虑预置值的最终的银行间资产矩阵
+    # NOTE 计算不考虑预置值的最终的银行间资产矩阵
     match algorithm_link_banks:
         case 'RAS':
             Z_IB_1 = A_IB_1.copy().T
@@ -621,18 +644,18 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
     """
     import numpy as np
 
-    ## 预处理维度
+    # 预处理维度
     A_IB_all, Z_IB_all = A_IB_all.flatten(), Z_IB_all.flatten()
 
-    ## 调整银行资产负债表使得总资产与总负债相等
+    # 调整银行资产负债表使得总资产与总负债相等
 
     is_added_virtual_bank = None
     match method_adjast_bank_balanceSheet:
         case 'none':
-            ## #NOTE 调整方案〇：无需调整
+            # NOTE 调整方案〇：无需调整
             A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
-            ## #NOTE 调整方案一：添加虚拟银行
+            # NOTE 调整方案一：添加虚拟银行
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
@@ -655,7 +678,7 @@ def calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values(
 
     N = A_IB_adjusted.shape[0]  # 获取银行数量
 
-    ## 预置一些先验的元素值
+    # 预置一些先验的元素值
 
     # 预置规则 1：对角线为 0
     np.fill_diagonal(A_preset_values, 0)
@@ -814,18 +837,18 @@ def calculate_bilateral_exposure_by_ME_method_with_density(
     """
     import numpy as np
 
-    ## 预处理维度
+    # 预处理维度
     A_IB_all, Z_IB_all = A_IB_all.flatten(), Z_IB_all.flatten()
 
-    ## 调整银行资产负债表使得总资产与总负债相等
+    # 调整银行资产负债表使得总资产与总负债相等
 
     is_added_virtual_bank = None
     match method_adjast_bank_balanceSheet:
         case 'none':
-            ## #NOTE 调整方案〇：无需调整
+            # NOTE 调整方案〇：无需调整
             A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
-            ## #NOTE 调整方案一：添加虚拟银行
+            # NOTE 调整方案一：添加虚拟银行
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
@@ -1100,7 +1123,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
         Tuple[np.array, np.array]: 重构后的银行间资产负债矩阵
     """
 
-    ## #NOTE 调用 R 函数方案一：使用 rpy2 直接调用
+    # NOTE 调用 R 函数方案一：使用 rpy2 直接调用
     import rpy2.robjects as ro
     from rpy2.robjects.packages import importr
     from rpy2.robjects import numpy2ri
@@ -1113,10 +1136,10 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
     is_added_virtual_bank = None
     match method_adjast_bank_balanceSheet:
         case 'none':
-            ## #NOTE 调整方案〇：无需调整
+            # NOTE 调整方案〇：无需调整
             A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
         case 'add_virtual_bank':
-            ## #NOTE 调整方案一：添加虚拟银行
+            # NOTE 调整方案一：添加虚拟银行
             if np.abs(A_IB_all.sum() - Z_IB_all.sum()) < 1e-10:
                 A_IB_adjusted, Z_IB_adjusted = A_IB_all, Z_IB_all
                 logging.warning("银行间总资产与银行间总负债相等，无需调整。")
@@ -1196,7 +1219,7 @@ def calibrate_bilateral_exposure_by_ME_method_use_R_package(
 
     return A_IB, Z_IB
 
-    ## #HACK 调用 R 函数方案二：导出 csv 文件再通过命令行运行 R 函数，最后导入生成的 csv 文件  BUG 这个方案暂时无法运行成功。原因是传入数值失败。
+    # HACK 调用 R 函数方案二：导出 csv 文件再通过命令行运行 R 函数，最后导入生成的 csv 文件  BUG 这个方案暂时无法运行成功。原因是传入数值失败。
 
     # match method_adjast_bank_balanceSheet:
     #     case 'none':
@@ -1491,6 +1514,17 @@ def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_
     except Exception as e:
         logging.error(f"校准失败 {e}")
         return None, None
+
+
+def weighted_random_choice(choices, weights):
+    return np.random.choice(choices, p=np.abs(weights) / np.sum(np.abs(weights)))
+
+
+# def select_vertices(idxs_vertex_to_remove_edge_in_A_IB, A_IB_adjusted_center, A_IB_1, num_center, N, idxs_vertex_to_add_edge_in_A_IB):
+#     idx_vertex_to_remove_edge = weighted_random_choice(idxs_vertex_to_remove_edge_in_A_IB, A_IB_adjusted_center[idxs_vertex_to_remove_edge_in_A_IB])
+#     idx_vertex_to_relink_edge = weighted_random_choice(np.arange(num_center, N), A_IB_1[idx_vertex_to_remove_edge, num_center:])
+#     idx_vertex_to_add_edge = weighted_random_choice(idxs_vertex_to_add_edge_in_A_IB, A_IB_adjusted_center[idxs_vertex_to_add_edge_in_A_IB])
+#     return idx_vertex_to_remove_edge, idx_vertex_to_relink_edge, idx_vertex_to_add_edge
 
 
 if __name__ == "__main__":
