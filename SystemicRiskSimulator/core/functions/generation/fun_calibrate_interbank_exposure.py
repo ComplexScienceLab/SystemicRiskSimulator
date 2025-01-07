@@ -1517,7 +1517,18 @@ def calibrate_with_speed_optimization_for_ME_algorithm_by_R_package(A_IB_all, Z_
 
 
 def weighted_random_choice(choices, weights):
+    """
+    加权随机选取个体。选取的概率与权重成正比。
+
+    Args:
+        choices (numpy.ndarray): 待选取的个体数组
+        weights (numpy.ndarray): 对应的权重列表
+
+    Returns:
+        Union[None, numpy.int64]: 选取的个体
+    """
     return np.random.choice(choices, p=np.abs(weights) / np.sum(np.abs(weights)))
+    pass  # function
 
 
 # def select_vertices(idxs_vertex_to_remove_edge_in_A_IB, A_IB_adjusted_center, A_IB_1, num_center, N, idxs_vertex_to_add_edge_in_A_IB):
@@ -1528,10 +1539,10 @@ def weighted_random_choice(choices, weights):
 
 
 if __name__ == "__main__":
-    ## 测试用
+    # 测试用
     logging.basicConfig(level=logging.DEBUG)
 
-    # ## #DEBUG 测试 calculate_bilateral_exposure_by_CP_method
+    # # DEBUG 测试 calculate_bilateral_exposure_by_CP_method
     #
     # # 假设有 8 个中心银行和 24 个边缘银行
     # num_center = 8
@@ -1541,9 +1552,9 @@ if __name__ == "__main__":
     # # 随机生成银行间总资产和总负债矩阵
     # np.random.seed(42)  # 固定随机种子以便复现结果
     # A_IB_all = (np.random.rand(num_banks) + 1) * 10
-    # A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
+    # A_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 40
     # Z_IB_all = (np.random.rand(num_banks) + 1) * 10
-    # Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 500
+    # Z_IB_all[:num_center] = (np.random.rand(num_center) + 1) * 40
     # Z_IB_all = A_IB_all.sum() / Z_IB_all.sum() * Z_IB_all  # A_IB_all 与 Z_IB_all 之和相等
     # print(f"银行间总资产总和与银行间总负债总和差异：{A_IB_all.sum() - Z_IB_all.sum()}")
     #
@@ -1606,7 +1617,7 @@ if __name__ == "__main__":
     #
     # print("\n测试 calculate_bilateral_exposure_by_ME_method 完成。\n\n\n")
     #
-    ## #DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
+    # DEBUG 测试 calculate_bilateral_exposure_by_ME_method_with_preset_fixed_values
     #
     # import numpy as np
     #
@@ -1655,9 +1666,9 @@ if __name__ == "__main__":
     # import numpy as np
     #
     # for i in range(1):
-    #     # 假设有 5 个银行
+    #
     #     num_banks = 30
-    #     target_density = 0.75
+    #     target_density = 0.15
     #
     #     # 随机生成银行间总资产和总负债矩阵
     #     np.random.seed(i)  # 固定随机种子以便复现结果
