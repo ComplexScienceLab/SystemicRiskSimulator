@@ -1,4 +1,5 @@
 ## 函数区：收集数据
+import shutil
 
 from scipy.sparse import csr_array
 from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, deepcopy
@@ -471,10 +472,20 @@ class Collector:
             pass  # if
         if is_generate_parameters_works_data:
             Tools.delete_and_recreate_folder(sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建输出文件夹之参数文件夹
-            Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到输出文件夹
+            # Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], sgv['folderpath_experiments_output_parameters'], is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到输出文件夹
+            shutil.copyfile(Path(sgv['folderpath_parameters'], "set_parameters_variables.py"), sgv['folderpath_experiments_output_parameters'])
+            shutil.copyfile(Path(sgv['folderpath_parameters'], "parameters.pkl"), sgv['folderpath_experiments_output_parameters'])
+            # 如果存在文件名（非格式名）为 parameters 的文件（例如 pkl、xlsx 等格式），就全部复制过去
+            for file in Path(sgv['folderpath_parameters']).iterdir():
+                if file.name == "parameters":
+                    shutil.copyfile(file, Path(sgv['folderpath_experiments_output_parameters'], file.name))
+                    pass  # if
+                pass  # for
+
             Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 删除并重新创建模拟器之 data 文件夹之 parameters 文件夹
-            Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到模拟器之 data 文件夹
-            pass
+            # Tools.copy_files_from_other_folders(sgv['folderpath_parameters'], Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])  # 导出一份参数文件夹到模拟器之 data 文件夹
+            shutil.copyfile(Path(sgv['folderpath_parameters'], "set_parameters_variables.py"), Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"))
+            pass  # if
 
         pass  # function
 

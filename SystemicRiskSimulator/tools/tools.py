@@ -165,6 +165,16 @@ class Tools:
 
             folderpath_experiments_output_data (Path): 实验导出数据文件夹路径
 
+            folderpath_experiments_output_log (Path): 实验导出日志文件夹路径
+
+            folderpath_experiments_output_config (Path): 实验导出配置项设置文件夹路径
+
+            folderpath_experiments_output_parameters (Path): 实验导出参数设置文件夹路径
+
+            folderpath_experiments_output_agents (Path): 实验导出实验个体众数据初始化设置文件夹路径
+
+            folderpath_experiments_output_models (Path): 实验导出模型文件夹路径
+
             folderpath_models (Path): 模型文件夹路径
 
             folderpath_config (Path): 实验配置项设置项文件夹路径
@@ -193,16 +203,16 @@ class Tools:
         folderpath_experiments_output_log = Path(folderpath_experiments, "outputlog")
         folderpath_experiments_output_log.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出日志
 
-        folderpath_experiments_output_config = Path(folderpath_experiments, "config")
+        folderpath_experiments_output_config = Path(folderpath_experiments_output_log, "config")
         folderpath_experiments_output_config.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出配置项设置
 
-        folderpath_experiments_output_parameters = Path(folderpath_experiments, "parameters")
+        folderpath_experiments_output_parameters = Path(folderpath_experiments_output_log, "parameters")
         folderpath_experiments_output_parameters.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出参数设置
 
-        folderpath_experiments_output_agents = Path(folderpath_experiments, "agents")
+        folderpath_experiments_output_agents = Path(folderpath_experiments_output_log, "agents")
         folderpath_experiments_output_agents.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出实验个体众数据初始化设置
 
-        folderpath_experiments_output_models = Path(folderpath_experiments, "models")
+        folderpath_experiments_output_models = Path(folderpath_experiments_output_log, "models")
         folderpath_experiments_output_models.mkdir(parents=True, exist_ok=True)  # 创建文件夹，以导出实验输出模型文件夹
 
         ## 设定实验相关的一些重要的文件夹
