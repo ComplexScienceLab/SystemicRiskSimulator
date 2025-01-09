@@ -203,7 +203,7 @@ class Operator:
         sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
 
         # 计算个体数量
-        sgv['num_bank'] = len(A.BB['id_agent'])
+        sgv['num_bank'] = len(A.note['id_bank'])
 
         content_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
         # content_Agents = model['model_agents'](content_Finance)  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
