@@ -267,6 +267,7 @@ def simulator(config: dict):
 
     # %% 结束
     print("运行完毕！")
+    print(f"时间：{datetime.datetime.now()}")
 
     # #TODO 发送邮件通知
 
