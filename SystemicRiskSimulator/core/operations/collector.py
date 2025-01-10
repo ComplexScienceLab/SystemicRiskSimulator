@@ -2,7 +2,7 @@
 import shutil
 
 from scipy.sparse import csr_array
-from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, deepcopy
+from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, deepcopy, time
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_type import *
@@ -219,8 +219,13 @@ class Collector:
         ## 导出为pkl格式
 
         # #HACK 改之后的收集 agents 数据文件代码
-        for para_01 in sgv['list_agents_data_filename_para_01']:
-            pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"{para_01}-exp=" + str(sgv['id_experiment']) + ".pkl"))
+        for para_01 in list(set(sgv['list_agents_data_filename_para_01'])-{"note"}):
+            if sgv['is_export_data_to_pkl']:
+                pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"{para_01}-exp=" + str(sgv['id_experiment']) + ".pkl"))
+            if sgv['is_export_data_to_xlsx']:
+                A_data[para_01].to_excel(Path(sgv['folderpath_experiments_output_data'], f"{para_01}-exp=" + str(sgv['id_experiment']) + ".xlsx"), index=False)
+            if sgv['is_export_data_to_csv']:
+                A_data[para_01].to_csv(Path(sgv['folderpath_experiments_output_data'], f"{para_01}-exp=" + str(sgv['id_experiment']) + ".csv"), index=False)
 
         # # #HACK 改之前的收集 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
         # pd.to_pickle(A_data.BB, Path(sgv['folderpath_experiments_output_data'], r"BB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式

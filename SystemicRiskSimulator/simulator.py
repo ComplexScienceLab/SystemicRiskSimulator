@@ -17,9 +17,10 @@ def simulator(config: dict):
 
     # global sgv, para
 
-    # %% 首先导入相关包
+    # %%
     from SystemicRiskSimulator.external_packages import os, platform, logging, Path, shutil, datetime, time, subprocess, pickle, base64
     from SystemicRiskSimulator.tools.tools import Tools
+    from SystemicRiskSimulator.core.operations.collector import Collector
 
     # %% 初始化
     ## 获取项目路径、模拟器工具路径
@@ -252,6 +253,10 @@ def simulator(config: dict):
         pass  # if
 
     # %% 清理
+
+    ## 导出配置数据
+    Collector.export_config_data(sgv)
+
     ## 删除设置文件夹、模型文件夹内的所有文件，但是保留文件夹  #HACK 无用，但是可以保留作为备用
     # Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/config"), is_auto_confirmation=sgv['is_auto_confirmation'])
     # Tools.delete_and_recreate_folder(Path(sgv['folderpath_simulator'], "SystemicRiskSimulator/data/parameters"), is_auto_confirmation=sgv['is_auto_confirmation'])

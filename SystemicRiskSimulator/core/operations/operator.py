@@ -154,7 +154,8 @@ class Operator:
             Collector.export_parameter_data(parameters_works, para)  # 导出控制参数数据
             pass  # if
 
-        sgv['len_parameters_works'] = num_parameters_works
+        sgv['num_experiments_to_run'] = len(list_idsExp_TASK)  # 获取实验组数量
+        sgv['num_unfinished_experiments_to_run'] = len(list_idsExp_TASK)  # 未完成的实验组数量
 
         ## 构建本次实验组所需的所有模型
 
@@ -250,7 +251,7 @@ class Operator:
         sgv['process_name'] = "START"
         sgv['is_continue_process'] = True
 
-        logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
+        logging.info("重置实验。实验ID " + str(sgv['id_experiment']) + " 开始：\n")
 
         logging.info("\n相关实验参数：" + str(para) + "\n")
 
@@ -297,7 +298,7 @@ class Operator:
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
             log_message(
-                "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
+                "重置实验。实验ID " + str(sgv['id_experiment']) + " 开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
                 is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
@@ -402,7 +403,7 @@ class Operator:
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
             log_message(
-                "本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n",
+                "本次实验结束，还剩下  " + str(sgv['num_unfinished_experiments_to_run']) + "  个实验。\n\n",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
                 is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']

@@ -114,7 +114,7 @@ def main(sgv):
             # model = list(models.values())[0]  # 获取当前实验对应的模型
             model = model  # 获取当前实验对应的模型
             sgv['id_experiment'] = i + 1  # 设定当前实验编号
-
+            sgv['num_unfinished_experiments_to_run'] -= 1  # 更新未完成实验数
             ## 运行一次实验作业
             fun_single_experiment_work(sgv['id_experiment'], sgv, para, model)
             pass  # for
