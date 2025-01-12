@@ -42,9 +42,11 @@ class Collector:
         # A_data = AgentDataCollection(BB_data, IB_data)
 
         # #HACK 改之后的收集 agents 数据文件代码
+        # #HACK 改之后的加载 agents 数据文件代码
         dict_agents_data = {}
+        id_agents = para['id_agents']
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            agents_filename = f"{para_01}"
+            agents_filename = f"id={id_agents}-v={para_01}"
             for para_02 in sgv['list_agents_data_filename_para_02']:
                 if isinstance(para[para_02], float):
                     agents_filename += f"-{para_02}={float(para[para_02]):.2f}"
