@@ -11,4 +11,6 @@ reportlab==4.2.5
 scipy==1.14.1
 svglib==1.5.1
 rpy2==3.5.17
+scipy==1.15.1
+
 
