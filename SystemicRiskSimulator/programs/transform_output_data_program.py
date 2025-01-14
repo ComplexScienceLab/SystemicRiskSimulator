@@ -325,7 +325,8 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
         None
     """
 
-    record_work_state(exp_id, 'status_预处理实验结果程序', 'DOING', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DOING"
+    if sgv['is_use_sqlite_to_manage_experiments']:
+        record_work_state(exp_id, 'status_预处理实验结果程序', 'DOING', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DOING"
 
     for para_01 in filepath_pkl.keys():
         # 根据文件名前缀判断数据类型  #BUG 这个存在风险，因为文件名前缀可能不遵循约定，后续扩展可能会有变化
@@ -557,7 +558,8 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
 
         pass  # for
 
-    record_work_state(exp_id, 'status_预处理实验结果程序', 'DONE', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DONE"
+    if sgv['is_use_sqlite_to_manage_experiments']:
+        record_work_state(exp_id, 'status_预处理实验结果程序', 'DONE', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DONE"
 
     pass  # function
 

@@ -241,8 +241,9 @@ class Operator:
         Returns:
             A, A_data, sgv, para
         """
+        if sgv['is_use_sqlite_to_manage_experiments']:
+            record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
 
-        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
 
         ## 重置模拟器全局变量
         sgv['turn'] = 0
@@ -283,8 +284,8 @@ class Operator:
         # c.execute("INSERT OR REPLACE INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
         # conn.commit()
         # conn.close()
-
-        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
+        if sgv['is_use_sqlite_to_manage_experiments']:
+            record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
 
         # modelEntity = model.content  # 获取节点实体对应的模型实体
 
@@ -399,7 +400,8 @@ class Operator:
         sgv['export_data_end_time'] = timeit.default_timer()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
-        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DONE", sgv['folderpath_experiments_output_log'])
+        if sgv['is_use_sqlite_to_manage_experiments']:
+            record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DONE", sgv['folderpath_experiments_output_log'])
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
             log_message(
