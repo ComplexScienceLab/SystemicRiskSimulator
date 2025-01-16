@@ -3,7 +3,7 @@
 @Desc   : 一些常用的数据处理工具
 """
 
-from SystemicRiskSimulator.external_packages import np, logging
+from SystemicRiskSimulator.external_packages import np, pd, logging
 
 
 def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarray, Z_IB_all: np.ndarray, **kwargs):
@@ -23,7 +23,7 @@ def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarra
         diff_of_total_sum (float): 生成的矩阵值总和与总和约束的差别
         is_valid (bool): 是否有效
     """
-    is_valid = True  #TODO 这个还没有开发
+    is_valid = True  # TODO 这个还没有开发
 
     # 检查 A_IB_all、Z_IB_all 差别
     diff_of_A_IB_all_and_Z_IB_all = A_IB_all.sum() / Z_IB_all.sum()  # 计算行和约束、列和约束总和的差别
@@ -57,4 +57,42 @@ def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarra
 
     return diff_of_A_IB_all_and_Z_IB_all, diff_of_row_sum, diff_of_col_sum, diff_of_total_sum, is_valid
 
+    pass  # function
+
+
+def fun_根据索引示性向量获取银行资产负债表表格相关信息(idxs_ind: np.ndarray, var_val: np.ndarray = None, df: pd.DataFrame = None) -> pd.DataFrame:
+    """
+    根据索引值获取银行中文简称
+
+    Args:
+        idxs_ind (np.ndarray): 索引的示性向量
+        var_val (np.ndarray): 变量值
+        df (pd.DataFrame, optional): 银行资产负债表表格。默认是 【df_所需银行资产负债表表格】
+
+    Returns:
+        pd.DataFrame: 返回一个 DataFrame，包含异常值的相关信息：
+            - idx: 索引
+            - 异常值: 变量值
+            - 银行代码: 银行代码
+            - 银行名称: 银行名称
+            - 年份: 年份
+            - 报表类型: 报表类型
+    """
+    idxs = np.where(idxs_ind)[0]
+    var_val = var_val[idxs]
+    银行代码 = df['基本：银行代码'].values[idxs]
+    银行名称 = df['基本：银行中文简称'].values[idxs]
+    年份 = df['基本：会计期间'].values[idxs]
+    报表类型 = df['基本：报表类型编码'].values[idxs]
+
+    print(f"银行：{df['基本：银行中文简称'].values}、会计期间{df['基本：会计期间'].values}、报表类型编码{df['基本：报表类型编码'].values}")
+
+    return pd.DataFrame({
+        'idx': idxs,
+        '异常值': var_val,
+        '银行代码': 银行代码,
+        '银行名称': 银行名称,
+        '年份': 年份,
+        '报表类型': 报表类型,
+    })
     pass  # function
