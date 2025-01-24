@@ -96,3 +96,98 @@ def fun_根据索引示性向量获取银行资产负债表表格相关信息(id
         '报表类型': 报表类型,
     })
     pass  # function
+
+
+def fun_根据资产负债表科目计算模型银行变量(list_subject: list, df_balanceSheet: pd.DataFrame, money_unit):
+    """
+    根据资产负债表科目计算模型银行变量
+
+    Args:
+        list_subject: list, 需要计算的科目列表
+        df_balanceSheet: DataFrame, 银行资产负债数据表
+        money_unit: int, 金额单位
+
+    Returns:
+        v: np.ndarray, 银行变量
+    """
+    df_var_val = df_balanceSheet[list_subject]
+    v = df_var_val.sum(axis=1).values / money_unit
+    return v
+    pass  # function
+
+
+def fun_根据对接的科目检测处理异常值(
+        method_处理异常值: str,
+        var_name: str,
+        list_subject: list,
+        df_balanceSheet: pd.DataFrame,
+        dict_异常值: dict,
+        money_unit,
+        year,
+        density,
+        list_agents_networkDensity
+):
+    """
+    根据对接的科目检测、处理异常值。
+
+    Args:
+        method_处理异常值: str, 处理异常值的方法。可选项包括：
+
+          - '剔除'
+          - '设置为零'
+
+        list_subject: list, 需要计算的科目列表
+        df_balanceSheet: DataFrame, 银行资产负债数据表
+        dict_异常值: dict, 异常值字典
+        money_unit: int, 金额单位
+        year: int, 年份
+        density: float, 网络连接密度
+        list_agents_networkDensity: list, 网络连接密度列表
+
+    Returns:
+        v: np.ndarray, 银行变量
+    """
+
+    ## 检测、处理异常值
+    list_相关的基本信息 = [
+        '基本：银行代码',
+        '基本：银行中文简称',
+    ]
+
+    df_v = df_balanceSheet[list_相关的基本信息 + list_subject]
+
+    # 找到【df_v】 当中所有科目列都是缺失值的或者加总为 0 或者很小的银行的所有行
+    df_v_异常值 = df_v[
+        df_v[list_subject].isnull().all(axis=1)
+        | (df_v[list_subject].sum(axis=1) < 1 / money_unit)
+        ]
+
+    # 剔除 A_IB_all 涉及到的科目当中，列全部是 NaN 值或者加总为 0 或者很小的银行
+    if len(df_v_异常值) > 0:
+        df_v_历年_合并期末_全部缺失值 = df_v[df_v[list_subject].isnull().all(axis=1)]
+        list_异常值银行代码 = df_v_异常值['基本：银行代码'].unique()
+        list_异常值银行名称 = df_v['基本：银行中文简称'][df_v[list_subject].isnull().all(axis=1)].unique()
+        logging.warning(f"年份 {year} 的变量 {var_name} 中，以下银行的在异常值：{list_异常值银行名称}")
+        list_index = df_balanceSheet.index[df_balanceSheet['基本：银行代码'].isin(list_异常值银行代码)]
+        if len(list_index) != len(list_异常值银行代码):
+            raise ValueError(f"年份 {year} 的变量 {var_name} 中，剔除异常值后，银行数量不一致！")
+        if method_处理异常值 == '剔除':
+            # #NOTE 方案一：剔除 A_IB_all 或 Z_IB_all 中的异常值对应的银行，继续分析
+            list_某一年份所需银行代码 = list(set(df_balanceSheet['基本：银行代码'].unique()) - set(list_异常值银行代码))  # 更新 list_某一年份所需银行代码
+            df_balanceSheet = df_balanceSheet[df_balanceSheet['基本：银行代码'].isin(list_某一年份所需银行代码)]  # 更新 df_某一年份所需银行资产负债数据表_剔除NaN
+            logging.warning(f"年份 {year} 的变量 {var_name} 中，剔除异常值后，剩余可用的银行数量：{len(list_某一年份所需银行代码)}")
+        elif method_处理异常值 == '设置为零':
+            # NOTE 方案二：不剔除 A_IB_all 或 Z_IB_all 中的异常值对应的银行，但是异常值设置为 0 ，调整指定的密度值。
+            list_某一年份所需银行代码 = df_balanceSheet['基本：银行代码'].unique()  # 更新 list_某一年份所需银行代码
+            df_balanceSheet.loc[df_balanceSheet['基本：银行代码'].isin(list_异常值银行代码), list_subject] = 0
+        else:
+            raise ValueError(f"未知的处理异常值的方法：{method_处理异常值}！")
+    else:
+        list_某一年份所需银行代码 = df_balanceSheet['基本：银行代码'].unique()
+        pass  # if
+
+    dict_异常值[var_name] = df_v_异常值
+
+    return df_balanceSheet, list_某一年份所需银行代码, dict_异常值
+
+    pass  # function
