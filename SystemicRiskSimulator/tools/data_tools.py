@@ -162,10 +162,10 @@ def fun_根据对接的科目检测处理异常值(
         | (df_v[list_subject].sum(axis=1) < 1 / money_unit)
         ]
 
-    # 剔除 A_IB_all 涉及到的科目当中，列全部是 NaN 值或者加总为 0 或者很小的银行
+    # 处理 A_IB_all 涉及到的科目当中，列全部是 NaN 值或者加总为 0 或者很小的银行
     if len(df_v_异常值) > 0:
         df_v_历年_合并期末_全部缺失值 = df_v[df_v[list_subject].isnull().all(axis=1)]
-        list_异常值银行代码 = df_v_异常值['基本：银行代码'].unique()
+        list_异常值银行代码 = df_v_异常值['基本：银行代码'].unique().tolist()
         list_异常值银行名称 = df_v['基本：银行中文简称'][df_v[list_subject].isnull().all(axis=1)].unique()
         logging.warning(f"年份 {year} 的变量 {var_name} 中，以下银行的在异常值：{list_异常值银行名称}")
         list_index = df_balanceSheet.index[df_balanceSheet['基本：银行代码'].isin(list_异常值银行代码)]
@@ -183,7 +183,7 @@ def fun_根据对接的科目检测处理异常值(
         else:
             raise ValueError(f"未知的处理异常值的方法：{method_处理异常值}！")
     else:
-        list_某一年份所需银行代码 = df_balanceSheet['基本：银行代码'].unique()
+        list_某一年份所需银行代码 = df_balanceSheet['基本：银行代码'].unique().tolist()
         pass  # if
 
     dict_异常值[var_name] = df_v_异常值
