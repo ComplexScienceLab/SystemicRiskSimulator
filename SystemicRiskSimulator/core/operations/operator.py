@@ -182,7 +182,6 @@ class Operator:
         pass  # function
 
     @classmethod
-    # def operate_run_experiment(cls, A: ModelAgent, A_last: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
     def operate_run_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
         运作运行实验。用于传统的 ABM 模型。
