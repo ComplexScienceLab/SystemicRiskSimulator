@@ -38,6 +38,24 @@ class Operator:
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
                 num_parameters_works = len(parameters_works)
+
+                # 根据配置项从参数库中获取参数
+                if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置计划运行所有的实验组
+                    list_idsExperiment_to_run = list(range(1, num_parameters_works + 1))
+                elif isinstance(sgv['list_idsExperiment_to_run'], list):  # 如果设置了实验组 id 列表，那么就设置计划列表内的实验组
+                    list_idsExperiment_to_run = sgv['list_idsExperiment_to_run']
+                elif isinstance(sgv['list_idsExperiment_to_run'], str):  # 如果设置了实验组运行条件文本，那么就解析文本信息，作为查询条件，设置计划符合条件的实验组
+                    query_text = sgv['list_idsExperiment_to_run']
+                    # try:
+                    # 使用 eval 解析文本信息，作为查询条件
+                    # parameters_works_filter = parameters_works.query(query_text)
+                    parameters_works_filter = parameters_works[eval(query_text)]  #FIXME
+                    list_idsExperiment_to_run = parameters_works_filter['exp_id'].tolist()
+                    # except Exception as e:
+                    #     raise Exception(f"实验组运行条件文本解析错误！！！")
+                else:
+                    list_idsExperiment_to_run = []
+
                 ## SQLite 数据库统计实验组之上一次的作业之完成情况
                 time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
                 # 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续删除原有的作业数据库再重建
@@ -110,7 +128,7 @@ class Operator:
                         list_idsExp_RAW.append(exp_id)
                         pass  # if
                     pass  # for
-                list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, num_parameters_works + 1))
+                list_idsExp_PLAN = list_idsExperiment_to_run
                 list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
                 # 保存实验组作业完成状态信息
                 with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
@@ -242,7 +260,6 @@ class Operator:
         """
         if sgv['is_use_sqlite_to_manage_experiments']:
             record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
-
 
         ## 重置模拟器全局变量
         sgv['turn'] = 0
