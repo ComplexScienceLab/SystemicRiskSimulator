@@ -203,14 +203,14 @@ class Collector:
 
 
 
-        ## #TODO 查看是否存在整列都是一模一样的全零或者全部 True 或者 False 或者空列表的列，如果存在，则记录该列的值到 A_data.note ，然后删除
-        list_columns_all_nan = A_data.BB.columns[A_data.BB.isnull().all()]
-        list_columns_all_zero = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == 0).all() if isinstance(x, np.ndarray) else x == 0).all()]
-        list_columns_all_True = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == True).all() if isinstance(x, np.ndarray) else x is True).all()]
-        list_columns_all_False = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == False).all() if isinstance(x, np.ndarray) else x is False).all()]
-        list_columns_all_empty = A_data.BB.columns[A_data.BB.applymap(lambda x: (len(x) == 0).all() if isinstance(x, np.ndarray) else len(x) == 0).all()]
-        # 合并上述列表
-        list_columns_can_remove = list_columns_all_nan.union(list_columns_all_zero).union(list_columns_all_True).union(list_columns_all_False).union(list_columns_all_empty)
+        # ## #TODO 查看是否存在整列都是一模一样的全零或者全部 True 或者 False 或者空列表的列，如果存在，则记录该列的值到 A_data.note ，然后删除
+        # list_columns_all_nan = A_data.BB.columns[A_data.BB.isnull().all()]
+        # list_columns_all_zero = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == 0).all() if isinstance(x, np.ndarray) else x == 0).all()]
+        # list_columns_all_True = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == True).all() if isinstance(x, np.ndarray) else x is True).all()]
+        # list_columns_all_False = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == False).all() if isinstance(x, np.ndarray) else x is False).all()]
+        # list_columns_all_empty = A_data.BB.columns[A_data.BB.applymap(lambda x: (len(x) == 0).all() if isinstance(x, np.ndarray) else len(x) == 0).all()]
+        # # 合并上述列表
+        # list_columns_can_remove = list_columns_all_nan.union(list_columns_all_zero).union(list_columns_all_True).union(list_columns_all_False).union(list_columns_all_empty)
 
 
 
