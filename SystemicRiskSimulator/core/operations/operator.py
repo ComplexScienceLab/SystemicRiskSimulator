@@ -46,13 +46,13 @@ class Operator:
                     list_idsExperiment_to_run = sgv['list_idsExperiment_to_run']
                 elif isinstance(sgv['list_idsExperiment_to_run'], str):  # 如果设置了实验组运行条件文本，那么就解析文本信息，作为查询条件，设置计划符合条件的实验组
                     query_text = sgv['list_idsExperiment_to_run']
-                    # try:
-                    # 使用 eval 解析文本信息，作为查询条件
-                    # parameters_works_filter = parameters_works.query(query_text)
-                    parameters_works_filter = parameters_works[eval(query_text)]
-                    list_idsExperiment_to_run = parameters_works_filter['exp_id'].tolist()
-                    # except Exception as e:
-                    #     raise Exception(f"实验组运行条件文本解析错误！！！")
+                    try:
+                        # 使用 eval 解析文本信息，作为查询条件
+                        # parameters_works_filter = parameters_works.query(query_text)
+                        parameters_works_filter = parameters_works[eval(query_text)]
+                        list_idsExperiment_to_run = parameters_works_filter['exp_id'].tolist()
+                    except Exception as e:
+                        raise Exception(f"实验组运行条件文本解析错误！！！")
                 else:
                     list_idsExperiment_to_run = []
 
