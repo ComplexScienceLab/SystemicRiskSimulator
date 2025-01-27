@@ -31,7 +31,7 @@ sgv['id_data'] = 0  # 实验初始数据帧ID号；
 sgv['turn'] = 0  # 初始轮次计次为0；
 sgv['phase'] = 0  # 当前逐相为0。不要改动
 sgv['step'] = 0  # 单次实验的当前步进为0。不要改动
-sgv['id_experiment'] = 1  # 当前实验组编号；
+sgv['id_experiment'] = 0  # 当前实验组编号；
 sgv['num_experiment'] = 0  # 实验组之实验个数；
 
 # sgv['state_of_schedule'] = ScheduleState.idle

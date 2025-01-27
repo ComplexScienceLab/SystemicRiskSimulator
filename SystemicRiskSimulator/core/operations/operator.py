@@ -41,7 +41,7 @@ class Operator:
 
                 # 根据配置项从参数库中获取参数
                 if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置计划运行所有的实验组
-                    list_idsExperiment_to_run = list(range(1, num_parameters_works + 1))
+                    list_idsExperiment_to_run = list(range(0, num_parameters_works))
                 elif isinstance(sgv['list_idsExperiment_to_run'], list):  # 如果设置了实验组 id 列表，那么就设置计划列表内的实验组
                     list_idsExperiment_to_run = sgv['list_idsExperiment_to_run']
                 elif isinstance(sgv['list_idsExperiment_to_run'], str):  # 如果设置了实验组运行条件文本，那么就解析文本信息，作为查询条件，设置计划符合条件的实验组

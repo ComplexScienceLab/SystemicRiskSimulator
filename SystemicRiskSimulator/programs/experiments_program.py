@@ -95,8 +95,8 @@ def main(sgv):
         if sgv['is_enable_multiprocessing_for_run_model']:
             with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
                 for i, para in parameters_works_TASK.iterrows():
-                    if Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt").exists():
-                        with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt"), 'r') as f_sub:
+                    if Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i}_exp.txt").exists():
+                        with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i}_exp.txt"), 'r') as f_sub:
                             f.write(f_sub.read())
                             pass  # with
                         pass  # if
@@ -113,7 +113,7 @@ def main(sgv):
             para = para.to_dict()  # 将参数数据框转换为字典
             # model = list(models.values())[0]  # 获取当前实验对应的模型
             model = model  # 获取当前实验对应的模型
-            sgv['id_experiment'] = i + 1  # 设定当前实验编号
+            sgv['id_experiment'] = i  # 设定当前实验编号
             sgv['num_unfinished_experiments_to_run'] -= 1  # 更新未完成实验数
             ## 运行一次实验作业
             fun_single_experiment_work(sgv['id_experiment'], sgv, para, model)
