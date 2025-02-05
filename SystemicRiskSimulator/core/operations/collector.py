@@ -198,14 +198,14 @@ class Collector:
 
         """
 
-        ## #TODO 查看是否存在整列都是一模一样的全零或者全部 True 或者 False 或者空列表的列，如果存在，则记录该列的值到 A_data.note ，然后删除
-        list_columns_all_nan = A_data.BB.columns[A_data.BB.isnull().all()]
-        list_columns_all_zero = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == 0).all() if isinstance(x, np.ndarray) else x == 0).all()]
-        list_columns_all_True = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == True).all() if isinstance(x, np.ndarray) else x is True).all()]
-        list_columns_all_False = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == False).all() if isinstance(x, np.ndarray) else x is False).all()]
-        list_columns_all_empty = A_data.BB.columns[A_data.BB.applymap(lambda x: (len(x) == 0).all() if isinstance(x, np.ndarray) else len(x) == 0).all()]
-        # 合并上述列表
-        list_columns_can_remove = list_columns_all_nan.union(list_columns_all_zero).union(list_columns_all_True).union(list_columns_all_False).union(list_columns_all_empty)
+        # ## #TODO 查看是否存在整列都是一模一样的全零或者全部 True 或者 False 或者空列表的列，如果存在，则记录该列的值到 A_data.note ，然后删除
+        # list_columns_all_nan = A_data.BB.columns[A_data.BB.isnull().all()]
+        # list_columns_all_zero = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == 0).all() if isinstance(x, np.ndarray) else x == 0).all()]
+        # list_columns_all_True = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == True).all() if isinstance(x, np.ndarray) else x is True).all()]
+        # list_columns_all_False = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == False).all() if isinstance(x, np.ndarray) else x is False).all()]
+        # list_columns_all_empty = A_data.BB.columns[A_data.BB.applymap(lambda x: (len(x) == 0).all() if isinstance(x, np.ndarray) else len(x) == 0).all()]
+        # # 合并上述列表
+        # list_columns_can_remove = list_columns_all_nan.union(list_columns_all_zero).union(list_columns_all_True).union(list_columns_all_False).union(list_columns_all_empty)
 
         ## 压缩数据
         if sgv['is_compress_result_data']:
@@ -223,23 +223,15 @@ class Collector:
         #     compare.append(A_data.BB['hel'][i] ^ A_data_decompress.BB['hel'][i])
         #     compare.append(A_data.IB['hel'][i] ^ A_data_decompress.IB['hel'][i])
 
-        ## 导出为pkl格式
-
-        # #HACK 改之后的收集 agents 数据文件代码
-        for para_01 in list(set(sgv['list_agents_data_filename_para_01']) - {"note"}):
+        ## 导出数据
+        # for para_01 in list(set(sgv['list_agents_data_filename_para_01']) - {"note"}):
+        for para_01 in sgv['list_agents_data_filename_para_01']:
             if sgv['is_export_data_to_pkl']:
                 pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
-                # pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"{para_01}-exp=" + str(sgv['id_experiment']) + ".pkl"))
             if sgv['is_export_data_to_xlsx']:
                 A_data[para_01].to_excel(Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx"), index=False)
-                # A_data[para_01].to_excel(Path(sgv['folderpath_experiments_output_data'], f"{para_01}-exp=" + str(sgv['id_experiment']) + ".xlsx"), index=False)
             if sgv['is_export_data_to_csv']:
                 A_data[para_01].to_csv(Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv"), index=False)
-                # A_data[para_01].to_csv(Path(sgv['folderpath_experiments_output_data'], f"{para_01}-exp=" + str(sgv['id_experiment']) + ".csv"), index=False)
-
-        # # #HACK 改之前的收集 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
-        # pd.to_pickle(A_data.BB, Path(sgv['folderpath_experiments_output_data'], r"BB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
-        # pd.to_pickle(A_data.IB, Path(sgv['folderpath_experiments_output_data'], r"IB_exp=" + str(sgv['id_experiment']) + r".pkl"))  # 导出为pkl格式
 
         pass  # function
 
