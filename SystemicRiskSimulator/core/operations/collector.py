@@ -1,6 +1,7 @@
 ## 函数区：收集数据
 import shutil
 
+import numpy as np
 from scipy.sparse import csr_array
 from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, deepcopy, time
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
@@ -197,21 +198,14 @@ class Collector:
 
         """
 
-        ## #TODO 获取实验列表当中的所有二维数组，转换成稀疏矩阵，然后保存到文件中
-
-
-
-
-        # ## #TODO 查看是否存在整列都是一模一样的全零或者全部 True 或者 False 或者空列表的列，如果存在，则记录该列的值到 A_data.note ，然后删除
-        # list_columns_all_nan = A_data.BB.columns[A_data.BB.isnull().all()]
-        # list_columns_all_zero = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == 0).all() if isinstance(x, np.ndarray) else x == 0).all()]
-        # list_columns_all_True = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == True).all() if isinstance(x, np.ndarray) else x is True).all()]
-        # list_columns_all_False = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == False).all() if isinstance(x, np.ndarray) else x is False).all()]
-        # list_columns_all_empty = A_data.BB.columns[A_data.BB.applymap(lambda x: (len(x) == 0).all() if isinstance(x, np.ndarray) else len(x) == 0).all()]
-        # # 合并上述列表
-        # list_columns_can_remove = list_columns_all_nan.union(list_columns_all_zero).union(list_columns_all_True).union(list_columns_all_False).union(list_columns_all_empty)
-
-
+        ## #TODO 查看是否存在整列都是一模一样的全零或者全部 True 或者 False 或者空列表的列，如果存在，则记录该列的值到 A_data.note ，然后删除
+        list_columns_all_nan = A_data.BB.columns[A_data.BB.isnull().all()]
+        list_columns_all_zero = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == 0).all() if isinstance(x, np.ndarray) else x == 0).all()]
+        list_columns_all_True = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == True).all() if isinstance(x, np.ndarray) else x is True).all()]
+        list_columns_all_False = A_data.BB.columns[A_data.BB.applymap(lambda x: (x == False).all() if isinstance(x, np.ndarray) else x is False).all()]
+        list_columns_all_empty = A_data.BB.columns[A_data.BB.applymap(lambda x: (len(x) == 0).all() if isinstance(x, np.ndarray) else len(x) == 0).all()]
+        # 合并上述列表
+        list_columns_can_remove = list_columns_all_nan.union(list_columns_all_zero).union(list_columns_all_True).union(list_columns_all_False).union(list_columns_all_empty)
 
         ## 压缩数据
         if sgv['is_compress_result_data']:
@@ -557,7 +551,7 @@ class Collector:
                 v_1D_compress = pd.DataFrame(columns=v_1D_origin.columns, index=range(len_result_data))
                 # 遍历每一列
                 for column in v_1D_origin.columns:
-                    if (type(v_1D_origin.at[0, column]) == np.ndarray and type(v_1D_origin.at[0, column][0]) == MoneyType):  # 如果是 MoneyType 型的 numpy 数组
+                    if (type(v_1D_origin.at[0, column]) == np.ndarray and (type(v_1D_origin.at[0, column][0]) == MoneyType or type(v_1D_origin.at[0, column][0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
                         v_1D_compress.at[0, column] = v_1D_origin.loc[0, column].copy()
                         for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
                             diff = v_1D_origin.at[i, column] - v_1D_origin.at[i - 1, column]
@@ -621,7 +615,7 @@ class Collector:
                 v_2D_compress = pd.DataFrame(columns=v_2D_origin.columns).reindex(range(len_result_data))
                 # 遍历每一列
                 for column in v_2D_origin.columns:
-                    if (type(v_2D_origin.at[0, column]) == np.ndarray and type(v_2D_origin.at[0, column][0, 0]) == MoneyType):  # 如果是 MoneyType 型的 numpy 数组
+                    if (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0, 0]) == MoneyType or type(v_2D_origin.at[0, column][0, 0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
                         v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
                         for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
                             diff = v_2D_origin.at[i, column] - v_2D_origin.at[i - 1, column]
