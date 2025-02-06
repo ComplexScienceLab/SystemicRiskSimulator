@@ -60,8 +60,11 @@ class Collector:
 
         A_data = pd.Series()
         for k, v in dict_agents_data.items():
-            A_data[k] = pd.DataFrame()
-            # for k1, v1 in deepcopy(v).items():
+            if k == "note":  # 如果是备注变量，则直接用 A 赋值
+                A_data[k] = A[k].copy()
+            else:
+                A_data[k] = pd.DataFrame()
+            # for k1, v1 in deepcopy(v).items():  # #HACK 之所以不用这几行是因为这个可能会与模型运行过程的第一步初始化重复初始化赋值。
             #     A_data[k][k1] = v1
             # pass  # for
 
@@ -538,68 +541,103 @@ class Collector:
         A_data_compress = pd.Series()
 
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            if para_01 == "note":  # 如果是备注变量，则跳过
+            if para_01 == "note":  # 如果是备注变量，则直接存入 A_data_compress.note
+                A_data_compress.note = A_data_origin.note.copy()  # #BUG 可能无法满意地深拷贝。
+                A_data_compress.note['compress'] = dict()
+                pass  # if
+            pass  # for
+
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            if para_01 == "note":  # 如果是备注变量，则已经处理过了，跳过
                 continue
+                pass  # if
+
+            A_data_compress.note['compress'][para_01] = dict()
+
             if not para_01.startswith("I"):  # 说明是 1D 的数据
                 v_1D_origin = A_data_origin[para_01]
                 len_result_data = len(v_1D_origin)
                 v_1D_compress = pd.DataFrame(columns=v_1D_origin.columns, index=range(len_result_data))
+                the_column = list(set(v_1D_origin.columns) - set(['process_name', 'step', 'turn', 'phase']))[0]
+                num_iter = len(v_1D_origin)  # 迭代次数（表格行数）
+                num_agent = len(v_1D_origin.at[0, the_column])  # 个体数量（表格单元格值之元素个数）
                 # 遍历每一列
                 for column in v_1D_origin.columns:
+                    is_all_same = np.full(num_iter, False)
                     if (type(v_1D_origin.at[0, column]) == np.ndarray and (type(v_1D_origin.at[0, column][0]) == MoneyType or type(v_1D_origin.at[0, column][0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
-                        v_1D_compress.at[0, column] = v_1D_origin.loc[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
-                            diff = v_1D_origin.at[i, column] - v_1D_origin.at[i - 1, column]
-                            v_1D_compress.at[i, column] = csr_array(diff.reshape(1, -1))
-                            pass  # for
-                        v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
-                    elif (type(v_1D_origin.at[0, column]) == np.ndarray and (type(v_1D_origin.at[0, column][0]) == IdsType or type(v_1D_origin.at[0, column][0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
-                        v_1D_compress.at[0, column] = v_1D_origin.at[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算不同
-                            diff = v_1D_origin.at[i, column] != v_1D_origin.at[i - 1, column]
-                            v_1D_compress.at[i, column] = csr_array(diff.astype(IdsType).reshape(1, -1))
-                            pass  # for
-                        v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
+                        v_1D_origin_value = 0.0
                     elif (type(v_1D_origin.at[0, column]) == np.ndarray and type(v_1D_origin.at[0, column][0]) == np.bool_):  # 如果是布尔型的 numpy 数组
-                        v_1D_compress.at[0, column] = v_1D_origin.at[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):
-                            diff = v_1D_origin.at[i, column] != v_1D_origin.at[i - 1, column]
-                            v_1D_compress.at[i, column] = csr_array(diff.reshape(1, -1))  # 转换为稀疏数组
-                            pass  # for
-                        v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
+                        v_1D_origin_value = v_1D_origin.at[0, column][0]
                     elif (type(v_1D_origin.at[0, column]) == np.ndarray and (type(v_1D_origin.at[0, column][0]) == NameType or type(v_1D_origin.at[0, column][0]) == AbbrType or type(v_1D_origin.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
-                        v_1D_compress.at[0, column] = v_1D_origin.at[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):
-                            diff = (v_1D_origin.at[i, column] == v_1D_origin.at[i - 1, column])
-                            v_1D_compress.at[i, column] = v_1D_origin.at[i, column].copy()
-                            v_1D_compress.at[i, column][diff] = ''
-                            if diff.all():  # 如果元素全为相同，则整个数组直接设置为 None，否则相同的元素设置为空字符串
-                                v_1D_compress.at[i, column] = None
-                            else:
-                                v_1D_compress.at[i, column][diff] = ''
-                                pass  # if
-                            pass  # for
-                        v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
+                        v_1D_origin_value = v_1D_origin.at[0, column][0]
                     elif (type(v_1D_origin.at[0, column]) == np.ndarray and v_1D_origin.at[0, column][0] == None):  # 如果值为 None 的 numpy 数组
-                        v_1D_compress.at[0, column] = v_1D_origin.at[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):
-                            v_1D_compress.at[i, column] = None  # 这里设定，只要元素存在 None，则整个数组都没有被使用，直接设为 None
-                            pass  # for
-                        v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
-                    elif (type(v_1D_origin.at[0, column]) == str):  # 如果是字符串类型
-                        v_1D_compress.at[0, column] = v_1D_origin.at[0, column]
-                        for i in range(1, len_result_data - 1, 1):
-                            if (v_1D_origin.at[i, column] == v_1D_origin.at[i - 1, column]):
-                                v_1D_compress.at[i, column] = None
-                            else:
-                                v_1D_compress.at[i, column] = v_1D_origin.at[i, column]
-                                pass  # if
-                            pass  # for
-                        v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column]
+                        v_1D_origin_value = None
                     else:
-                        v_1D_compress[column] = v_1D_origin[column].copy()
+                        continue
                         pass  # if
-
+                    for i in range(num_iter):
+                        if (v_1D_origin.at[i, column] == np.full(num_agent, v_1D_origin_value)).all():
+                            is_all_same[i] = True
+                            pass  # if
+                        pass  # for
+                    if is_all_same.all():  # 如果整列值作为 numpy 数组是全同数组 ，则标记该列的第一行的值到  A_data.note ，然后删除该列
+                        A_data_compress.note['compress'][para_01][column] = v_1D_origin_value  # 记录值到  A_data.note
+                        v_1D_compress.drop(columns=[column], inplace=True)  # 删除该列
+                    else:  # 差值压缩
+                        if (type(v_1D_origin.at[0, column]) == np.ndarray and (type(v_1D_origin.at[0, column][0]) == MoneyType or type(v_1D_origin.at[0, column][0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
+                            v_1D_compress.at[0, column] = v_1D_origin.loc[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
+                                diff = v_1D_origin.at[i, column] - v_1D_origin.at[i - 1, column]
+                                v_1D_compress.at[i, column] = csr_array(diff.reshape(1, -1))
+                                pass  # for
+                            v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_1D_origin.at[0, column]) == np.ndarray and (type(v_1D_origin.at[0, column][0]) == IdsType or type(v_1D_origin.at[0, column][0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
+                            v_1D_compress.at[0, column] = v_1D_origin.at[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算不同
+                                diff = v_1D_origin.at[i, column] != v_1D_origin.at[i - 1, column]
+                                v_1D_compress.at[i, column] = csr_array(diff.astype(IdsType).reshape(1, -1))
+                                pass  # for
+                            v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_1D_origin.at[0, column]) == np.ndarray and type(v_1D_origin.at[0, column][0]) == np.bool_):  # 如果是布尔型的 numpy 数组
+                            v_1D_compress.at[0, column] = v_1D_origin.at[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):
+                                diff = v_1D_origin.at[i, column] != v_1D_origin.at[i - 1, column]
+                                v_1D_compress.at[i, column] = csr_array(diff.reshape(1, -1))  # 转换为稀疏数组
+                                pass  # for
+                            v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_1D_origin.at[0, column]) == np.ndarray and (type(v_1D_origin.at[0, column][0]) == NameType or type(v_1D_origin.at[0, column][0]) == AbbrType or type(v_1D_origin.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
+                            v_1D_compress.at[0, column] = v_1D_origin.at[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):
+                                diff = (v_1D_origin.at[i, column] == v_1D_origin.at[i - 1, column])
+                                v_1D_compress.at[i, column] = v_1D_origin.at[i, column].copy()
+                                v_1D_compress.at[i, column][diff] = ''
+                                if diff.all():  # 如果元素全为相同，则整个数组直接设置为 None，否则相同的元素设置为空字符串
+                                    v_1D_compress.at[i, column] = None
+                                else:
+                                    v_1D_compress.at[i, column][diff] = ''
+                                    pass  # if
+                                pass  # for
+                            v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_1D_origin.at[0, column]) == np.ndarray and v_1D_origin.at[0, column][0] == None):  # 如果值为 None 的 numpy 数组
+                            v_1D_compress.at[0, column] = v_1D_origin.at[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):
+                                v_1D_compress.at[i, column] = None  # 这里设定，只要元素存在 None，则整个数组都没有被使用，直接设为 None
+                                pass  # for
+                            v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_1D_origin.at[0, column]) == str):  # 如果是字符串类型
+                            v_1D_compress.at[0, column] = v_1D_origin.at[0, column]
+                            for i in range(1, len_result_data - 1, 1):
+                                if (v_1D_origin.at[i, column] == v_1D_origin.at[i - 1, column]):
+                                    v_1D_compress.at[i, column] = None
+                                else:
+                                    v_1D_compress.at[i, column] = v_1D_origin.at[i, column]
+                                    pass  # if
+                                pass  # for
+                            v_1D_compress.at[len_result_data - 1, column] = v_1D_origin.at[len_result_data - 1, column]
+                        else:  # 如果是其他类型，不压缩
+                            v_1D_compress[column] = v_1D_origin[column].copy()
+                            pass  # if
+                        pass  # if
                     pass  # for
 
                 A_data_compress[para_01] = v_1D_compress
@@ -607,63 +645,89 @@ class Collector:
             else:  # 说明是 2D 的数据
                 v_2D_origin = A_data_origin[para_01]
                 len_result_data = len(v_2D_origin)
-                v_2D_compress = pd.DataFrame(columns=v_2D_origin.columns).reindex(range(len_result_data))
+                v_2D_compress = pd.DataFrame(columns=v_2D_origin.columns, index=range(len_result_data))
+                the_column = list(set(v_2D_origin.columns) - set(['process_name', 'step', 'turn', 'phase']))[0]
+                num_iter = len(v_2D_origin)  # 迭代次数（表格行数）
+                num_agent_x = v_2D_origin.at[0, the_column].shape[0]  # 行方向个体数量（表格单元格值之行方向元素个数）
+                num_agent_y = v_2D_origin.at[0, the_column].shape[1]  # 列方向个体数量（表格单元格值之行方向元素个数）
                 # 遍历每一列
                 for column in v_2D_origin.columns:
+                    is_all_same = np.full(num_iter, False)
                     if (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0, 0]) == MoneyType or type(v_2D_origin.at[0, column][0, 0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
-                        v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
-                            diff = v_2D_origin.at[i, column] - v_2D_origin.at[i - 1, column]
-                            v_2D_compress.at[i, column] = csr_array(diff)
-                            pass  # for
-                        v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
-                    elif (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0, 0]) == IdsType or type(v_2D_origin.at[0, column][0, 0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
-                        v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算不同
-                            diff = v_2D_origin.at[i, column] != v_2D_origin.at[i - 1, column]
-                            v_2D_compress.at[i, column] = csr_array(diff.astype(IdsType))
-                            pass  # for
-                        v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
+                        v_2D_origin_value = 0.0
                     elif (type(v_2D_origin.at[0, column]) == np.ndarray and type(v_2D_origin.at[0, column][0, 0]) == np.bool_):  # 如果是布尔型的 numpy 数组
-                        v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):
-                            diff = v_2D_origin.at[i, column] != v_2D_origin.at[i - 1, column]
-                            v_2D_compress.at[i, column] = csr_array(diff)  # 转换为稀疏数组
-                            pass  # for
-                        v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
+                        v_2D_origin_value = v_2D_origin.at[0, column][0]
                     elif (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0]) == NameType or type(v_2D_origin.at[0, column][0]) == AbbrType or type(v_2D_origin.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
-                        v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):
-                            diff = (v_2D_origin.at[i, column] == v_2D_origin.at[i - 1, column])
-                            v_2D_compress.at[i, column] = v_2D_origin.at[i, column].copy()
-                            v_2D_compress.at[i, column][diff] = ''
-                            if diff.all():  # 如果元素全为相同，则整个数组直接设置为 None，否则相同的元素设置为空字符串
-                                v_2D_compress.at[i, column] = None
-                            else:
-                                v_2D_compress.at[i, column][diff] = ''
-                                pass  # if
-                            pass  # for
-                        v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
+                        v_2D_origin_value = v_2D_origin.at[0, column][0]
                     elif (type(v_2D_origin.at[0, column]) == np.ndarray and v_2D_origin.at[0, column][0, 0] == None):  # 如果值为 None 的 numpy 数组
-                        v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
-                        for i in range(1, len_result_data - 1, 1):
-                            v_2D_compress.at[i, column] = None  # 这里设定，只要元素存在 None，则整个数组都没有被使用，直接设为 None
-                            pass  # for
-                        v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
-                    elif (type(v_2D_origin.at[0, column]) == str):  # 如果是字符串类型
-                        v_2D_compress.at[0, column] = v_2D_origin.at[0, column]
-                        for i in range(1, len_result_data - 1, 1):
-                            if (v_2D_origin.at[i, column] == v_2D_origin.at[i - 1, column]):
-                                v_2D_compress.at[i, column] = None
-                            else:
-                                v_2D_compress.at[i, column] = v_2D_origin.at[i, column]
-                                pass  # if
-                            pass  # for
-                        v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column]
-                    else:  # 其他数据类型，直接复制原来的数据
-                        v_2D_compress[column] = v_2D_origin[column].copy()
+                        v_2D_origin_value = None
+                    else:
+                        continue
                         pass  # if
+                    for i in range(num_iter):
+                        if (v_2D_origin.at[i, column] == np.full((num_agent_x, num_agent_y), v_2D_origin_value)).all():
+                            is_all_same[i] = True
+                            pass  # if
+                        pass  # for
+                    if is_all_same.all():  # 如果整列值作为 numpy 数组是全同数组 ，则标记该列的第一行的值到  A_data.note ，然后删除该列
+                        A_data_compress.note['compress'][para_01][column] = v_2D_origin_value  # 记录值到  A_data.note
+                        v_2D_compress.drop(columns=[column], inplace=True)  # 删除该列
+                    else:  # 差值压缩、稀疏化压缩
+                        if (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0, 0]) == MoneyType or type(v_2D_origin.at[0, column][0, 0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
+                            v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
+                                diff = v_2D_origin.at[i, column] - v_2D_origin.at[i - 1, column]
+                                v_2D_compress.at[i, column] = csr_array(diff)
+                                pass  # for
+                            v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0, 0]) == IdsType or type(v_2D_origin.at[0, column][0, 0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
+                            v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算不同
+                                diff = v_2D_origin.at[i, column] != v_2D_origin.at[i - 1, column]
+                                v_2D_compress.at[i, column] = csr_array(diff.astype(IdsType))
+                                pass  # for
+                            v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_2D_origin.at[0, column]) == np.ndarray and type(v_2D_origin.at[0, column][0, 0]) == np.bool_):  # 如果是布尔型的 numpy 数组
+                            v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):
+                                diff = v_2D_origin.at[i, column] != v_2D_origin.at[i - 1, column]
+                                v_2D_compress.at[i, column] = csr_array(diff)  # 转换为稀疏数组
+                                pass  # for
+                            v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0]) == NameType or type(v_2D_origin.at[0, column][0]) == AbbrType or type(v_2D_origin.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
+                            v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):
+                                diff = (v_2D_origin.at[i, column] == v_2D_origin.at[i - 1, column])
+                                v_2D_compress.at[i, column] = v_2D_origin.at[i, column].copy()
+                                v_2D_compress.at[i, column][diff] = ''
+                                if diff.all():  # 如果元素全为相同，则整个数组直接设置为 None，否则相同的元素设置为空字符串
+                                    v_2D_compress.at[i, column] = None
+                                else:
+                                    v_2D_compress.at[i, column][diff] = ''
+                                    pass  # if
+                                pass  # for
+                            v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_2D_origin.at[0, column]) == np.ndarray and v_2D_origin.at[0, column][0, 0] == None):  # 如果值为 None 的 numpy 数组
+                            v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
+                            for i in range(1, len_result_data - 1, 1):
+                                v_2D_compress.at[i, column] = None  # 这里设定，只要元素存在 None，则整个数组都没有被使用，直接设为 None
+                                pass  # for
+                            v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column].copy()
+                        elif (type(v_2D_origin.at[0, column]) == str):  # 如果是字符串类型
+                            v_2D_compress.at[0, column] = v_2D_origin.at[0, column]
+                            for i in range(1, len_result_data - 1, 1):
+                                if (v_2D_origin.at[i, column] == v_2D_origin.at[i - 1, column]):
+                                    v_2D_compress.at[i, column] = None
+                                else:
+                                    v_2D_compress.at[i, column] = v_2D_origin.at[i, column]
+                                    pass  # if
+                                pass  # for
+                            v_2D_compress.at[len_result_data - 1, column] = v_2D_origin.at[len_result_data - 1, column]
+                        else:  # 其他数据类型，直接复制原来的数据
+                            v_2D_compress[column] = v_2D_origin[column].copy()
+                            pass  # if
 
+                        pass  # if
                     pass  # for
 
                 A_data_compress[para_01] = v_2D_compress
