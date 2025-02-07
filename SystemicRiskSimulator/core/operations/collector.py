@@ -656,9 +656,9 @@ class Collector:
                     if (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0, 0]) == MoneyType or type(v_2D_origin.at[0, column][0, 0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
                         v_2D_origin_value = 0.0
                     elif (type(v_2D_origin.at[0, column]) == np.ndarray and type(v_2D_origin.at[0, column][0, 0]) == np.bool_):  # 如果是布尔型的 numpy 数组
-                        v_2D_origin_value = v_2D_origin.at[0, column][0]
+                        v_2D_origin_value = v_2D_origin.at[0, column][0, 0]
                     elif (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0]) == NameType or type(v_2D_origin.at[0, column][0]) == AbbrType or type(v_2D_origin.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
-                        v_2D_origin_value = v_2D_origin.at[0, column][0]
+                        v_2D_origin_value = v_2D_origin.at[0, column][0, 0]
                     elif (type(v_2D_origin.at[0, column]) == np.ndarray and v_2D_origin.at[0, column][0, 0] == None):  # 如果值为 None 的 numpy 数组
                         v_2D_origin_value = None
                     else:
