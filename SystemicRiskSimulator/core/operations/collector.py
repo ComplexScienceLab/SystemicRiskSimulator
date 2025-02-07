@@ -543,8 +543,8 @@ class Collector:
 
         for para_01 in sgv['list_agents_data_filename_para_01']:
             if para_01 == "note":  # 如果是备注变量，则直接存入 A_data_compress.note
-                A_data_compress.note = A_data_origin.note.copy()  # #BUG 可能无法满意地深拷贝。
-                A_data_compress.note['compress'] = dict()
+                A_data_compress[para_01] = A_data_origin.note.copy()  # #BUG 可能无法满意地深拷贝。
+                A_data_compress[para_01]['compress'] = dict()
                 pass  # if
             pass  # for
 
