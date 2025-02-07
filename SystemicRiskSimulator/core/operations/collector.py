@@ -764,7 +764,7 @@ class Collector:
     @classmethod
     def decompress_result_data(cls, A_data_compress: pd.Series, sgv: dict):
         """
-        解压实验结果数据。 #NOW 补充全同数据补全
+        解压实验结果数据。
 
         解压后的数据应该与原始的实验结果数据一样。
 
@@ -778,7 +778,7 @@ class Collector:
 
         A_data_decompress = pd.Series()
 
-        # 解压差值压缩、稀疏化压缩的数据
+        ## 解压差值压缩、稀疏化压缩的数据
         for para_01 in sgv['list_agents_data_filename_para_01']:
             if para_01 == "note":  # 如果是备注变量，则跳过
                 continue
@@ -931,7 +931,7 @@ class Collector:
                 pass  # if
             pass  # for
 
-        # #NOW 解压全同数据
+        ## 解压全同数据
         A_data_compress.note['compress']
         for k1, v1 in A_data_compress.note['compress'].items():
             if k1 == "note":  # 如果是备注变量，则跳过
