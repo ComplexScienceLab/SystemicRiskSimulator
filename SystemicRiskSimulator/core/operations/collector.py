@@ -224,6 +224,7 @@ class Collector:
         #     compare.append(A_data.BB['Loss_t'][i] - A_data_decompress.BB['Loss_t'][i])
         #     compare.append(A_data.IB['Shock_IB_def'][i] - A_data_decompress.IB['Shock_IB_def'][i])
         #     compare.append(A_data.BB['hel'][i] ^ A_data_decompress.BB['hel'][i])
+        #     # #DEBUG 手动检查 exit 等列是否还原回来了
         #     compare.append(A_data.IB['hel'][i] ^ A_data_decompress.IB['hel'][i])
 
         ## 导出数据
@@ -553,17 +554,19 @@ class Collector:
                 pass  # if
 
             A_data_compress.note['compress'][para_01] = dict()
+            # A_data_compress[para_01] = A_data_origin[para_01].copy()
 
             if not para_01.startswith("I"):  # 说明是 1D 的数据
                 v_1D_origin = A_data_origin[para_01]
-                len_result_data = len(v_1D_origin)
-                v_1D_compress = pd.DataFrame(columns=v_1D_origin.columns, index=range(len_result_data))
                 the_column = list(set(v_1D_origin.columns) - set(['process_name', 'step', 'turn', 'phase']))[0]
-                num_iter = len(v_1D_origin)  # 迭代次数（表格行数）
+                len_result_data = len(v_1D_origin)  # 迭代次数（表格行数）
                 num_agent = len(v_1D_origin.at[0, the_column])  # 个体数量（表格单元格值之元素个数）
-                # 遍历每一列
+                v_1D_compress = pd.DataFrame(columns=v_1D_origin.columns, index=range(len_result_data))
+                ## 全同列压缩
                 for column in v_1D_origin.columns:
-                    is_all_same = np.full(num_iter, False)
+                    is_compress_all_same = True  # 是否全同列压缩
+                    is_compress_diff = False  # 是否差值压缩
+                    is_all_same = np.full(len_result_data, False)
                     if (type(v_1D_origin.at[0, column]) == np.ndarray and (type(v_1D_origin.at[0, column][0]) == MoneyType or type(v_1D_origin.at[0, column][0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
                         v_1D_origin_value = 0.0
                     elif (type(v_1D_origin.at[0, column]) == np.ndarray and type(v_1D_origin.at[0, column][0]) == np.bool_):  # 如果是布尔型的 numpy 数组
@@ -573,17 +576,25 @@ class Collector:
                     elif (type(v_1D_origin.at[0, column]) == np.ndarray and v_1D_origin.at[0, column][0] == None):  # 如果值为 None 的 numpy 数组
                         v_1D_origin_value = None
                     else:
-                        continue
+                        is_compress_all_same = False
+                        is_compress_diff = True
                         pass  # if
-                    for i in range(num_iter):
-                        if (v_1D_origin.at[i, column] == np.full(num_agent, v_1D_origin_value)).all():
-                            is_all_same[i] = True
+                    if is_compress_all_same:  # 如果是全同列压缩
+                        for i in range(len_result_data):
+                            if (v_1D_origin.at[i, column] == np.full(num_agent, v_1D_origin_value)).all():
+                                is_all_same[i] = True
+                                pass  # if
+                            pass  # for
+                        if is_all_same.all():  # 如果整列值作为 numpy 数组是全同数组 ，则标记该列的第一行的值到  A_data.note ，然后删除该列
+                            A_data_compress.note['compress'][para_01][column] = v_1D_origin_value  # 记录值到  A_data.note
+                            v_1D_compress.drop(columns=[column], inplace=True)  # 删除该列
+                        else:
+                            is_compress_all_same = False
+                            is_compress_diff = True
                             pass  # if
-                        pass  # for
-                    if is_all_same.all():  # 如果整列值作为 numpy 数组是全同数组 ，则标记该列的第一行的值到  A_data.note ，然后删除该列
-                        A_data_compress.note['compress'][para_01][column] = v_1D_origin_value  # 记录值到  A_data.note
-                        v_1D_compress.drop(columns=[column], inplace=True)  # 删除该列
-                    else:  # 差值压缩
+                        pass  # if
+                    ## 差值压缩
+                    if is_compress_diff:  # 如果是差值压缩
                         if (type(v_1D_origin.at[0, column]) == np.ndarray and (type(v_1D_origin.at[0, column][0]) == MoneyType or type(v_1D_origin.at[0, column][0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
                             v_1D_compress.at[0, column] = v_1D_origin.loc[0, column].copy()
                             for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
@@ -644,15 +655,16 @@ class Collector:
 
             else:  # 说明是 2D 的数据
                 v_2D_origin = A_data_origin[para_01]
-                len_result_data = len(v_2D_origin)
-                v_2D_compress = pd.DataFrame(columns=v_2D_origin.columns, index=range(len_result_data))
                 the_column = list(set(v_2D_origin.columns) - set(['process_name', 'step', 'turn', 'phase']))[0]
-                num_iter = len(v_2D_origin)  # 迭代次数（表格行数）
+                len_result_data = len(v_2D_origin)  # 迭代次数（表格行数）
                 num_agent_x = v_2D_origin.at[0, the_column].shape[0]  # 行方向个体数量（表格单元格值之行方向元素个数）
                 num_agent_y = v_2D_origin.at[0, the_column].shape[1]  # 列方向个体数量（表格单元格值之行方向元素个数）
-                # 遍历每一列
+                v_2D_compress = pd.DataFrame(columns=v_2D_origin.columns, index=range(len_result_data))
+                ## 全同列压缩
                 for column in v_2D_origin.columns:
-                    is_all_same = np.full(num_iter, False)
+                    is_compress_all_same = True  # 是否全同列压缩
+                    is_compress_diff = False  # 是否差值压缩
+                    is_all_same = np.full(len_result_data, False)
                     if (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0, 0]) == MoneyType or type(v_2D_origin.at[0, column][0, 0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
                         v_2D_origin_value = 0.0
                     elif (type(v_2D_origin.at[0, column]) == np.ndarray and type(v_2D_origin.at[0, column][0, 0]) == np.bool_):  # 如果是布尔型的 numpy 数组
@@ -662,17 +674,25 @@ class Collector:
                     elif (type(v_2D_origin.at[0, column]) == np.ndarray and v_2D_origin.at[0, column][0, 0] == None):  # 如果值为 None 的 numpy 数组
                         v_2D_origin_value = None
                     else:
-                        continue
+                        is_compress_all_same = False
+                        is_compress_diff = True
                         pass  # if
-                    for i in range(num_iter):
-                        if (v_2D_origin.at[i, column] == np.full((num_agent_x, num_agent_y), v_2D_origin_value)).all():
-                            is_all_same[i] = True
+                    if is_compress_all_same:  # 如果是全同列压缩
+                        for i in range(len_result_data):
+                            if (v_2D_origin.at[i, column] == np.full((num_agent_x, num_agent_y), v_2D_origin_value)).all():
+                                is_all_same[i] = True
+                                pass  # if
+                            pass  # for
+                        if is_all_same.all():  # 如果整列值作为 numpy 数组是全同数组 ，则标记该列的第一行的值到  A_data.note ，然后删除该列
+                            A_data_compress.note['compress'][para_01][column] = v_2D_origin_value  # 记录值到  A_data.note
+                            v_2D_compress.drop(columns=[column], inplace=True)  # 删除该列
+                        else:
+                            is_compress_all_same = False
+                            is_compress_diff = True
                             pass  # if
-                        pass  # for
-                    if is_all_same.all():  # 如果整列值作为 numpy 数组是全同数组 ，则标记该列的第一行的值到  A_data.note ，然后删除该列
-                        A_data_compress.note['compress'][para_01][column] = v_2D_origin_value  # 记录值到  A_data.note
-                        v_2D_compress.drop(columns=[column], inplace=True)  # 删除该列
-                    else:  # 差值压缩、稀疏化压缩
+                        pass  # if
+                    ## 差值压缩、稀疏化压缩
+                    if is_compress_diff:  # 如果是差值压缩
                         if (type(v_2D_origin.at[0, column]) == np.ndarray and (type(v_2D_origin.at[0, column][0, 0]) == MoneyType or type(v_2D_origin.at[0, column][0, 0]) == np.float64)):  # 如果是 MoneyType 型的 numpy 数组
                             v_2D_compress.at[0, column] = v_2D_origin.at[0, column].copy()
                             for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，计算差值
@@ -733,6 +753,9 @@ class Collector:
                 A_data_compress[para_01] = v_2D_compress
 
                 pass  # if
+
+                # A_data_compress[para_01] = pd.concat([A_data_compress[para_01], A_data_origin[para_01][['process_name', 'step', 'turn', 'phase']]], axis=1)
+
             pass  # for
 
         return A_data_compress
@@ -741,7 +764,7 @@ class Collector:
     @classmethod
     def decompress_result_data(cls, A_data_compress: pd.Series, sgv: dict):
         """
-        解压实验结果数据。
+        解压实验结果数据。 #NOW 补充全同数据补全
 
         解压后的数据应该与原始的实验结果数据一样。
 
@@ -755,159 +778,198 @@ class Collector:
 
         A_data_decompress = pd.Series()
 
+        # 解压差值压缩、稀疏化压缩的数据
         for para_01 in sgv['list_agents_data_filename_para_01']:
             if para_01 == "note":  # 如果是备注变量，则跳过
                 continue
             if not para_01.startswith("I"):  # 说明是 1D 的数据
                 v_1D_compress = A_data_compress[para_01]
                 len_result_data = len(v_1D_compress)
-                len_result_data = len(v_1D_compress)
-                BB_decompress = pd.DataFrame(columns=v_1D_compress.columns, index=range(len_result_data))
+                v_1D_decompress = pd.DataFrame(columns=v_1D_compress.columns, index=range(len_result_data))
                 # 遍历每一列
                 for column in v_1D_compress.columns:
                     if (type(v_1D_compress.at[0, column]) == np.ndarray and type(v_1D_compress.at[0, column][0]) == MoneyType):  # 如果是 MoneyType 型的 numpy 数组
-                        BB_decompress.at[0, column] = v_1D_compress.at[0, column].copy()
-                        BB_decompress.at[1, column] = v_1D_compress.at[0, column] + v_1D_compress.at[1, column].toarray().ravel()
+                        v_1D_decompress.at[0, column] = v_1D_compress.at[0, column].copy()
+                        v_1D_decompress.at[1, column] = v_1D_compress.at[0, column] + v_1D_compress.at[1, column].toarray().ravel()
                         for i in range(2, len_result_data - 1, 1):  # 从第三行开始遍历每一行直到倒数第二行，累加差值
                             diff = v_1D_compress.at[i, column].toarray().ravel()
-                            BB_decompress.at[i, column] = BB_decompress.at[i - 1, column] + diff
+                            v_1D_decompress.at[i, column] = v_1D_decompress.at[i - 1, column] + diff
                             pass  # for
-                        BB_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
+                        v_1D_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_1D_compress.at[0, column]) == np.ndarray and (type(v_1D_compress.at[0, column][0]) == IdsType or type(v_1D_compress.at[0, column][0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
                         last_not_none = v_1D_compress.at[0, column].copy()
-                        BB_decompress.at[0, column] = last_not_none.copy()
+                        v_1D_decompress.at[0, column] = last_not_none.copy()
                         for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
                             diff = v_1D_compress.at[i, column].toarray().ravel()
                             if not diff.all():  # 设定只有这种可能性
-                                BB_decompress.at[i, column] = last_not_none.copy()
+                                v_1D_decompress.at[i, column] = last_not_none.copy()
                                 pass  # if
                             pass  # for
-                        BB_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
+                        v_1D_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_1D_compress.at[0, column]) == np.ndarray and type(v_1D_compress.at[0, column][0]) == np.bool_):  # 如果是布尔型的 numpy 数组
-                        BB_decompress.at[0, column] = v_1D_compress.at[0, column].copy()
-                        BB_decompress.at[1, column] = v_1D_compress.at[0, column] ^ v_1D_compress.at[1, column].toarray().ravel()
+                        v_1D_decompress.at[0, column] = v_1D_compress.at[0, column].copy()
+                        v_1D_decompress.at[1, column] = v_1D_compress.at[0, column] ^ v_1D_compress.at[1, column].toarray().ravel()
                         for i in range(2, len_result_data - 1, 1):
                             diff = v_1D_compress.at[i, column].toarray().ravel()
-                            BB_decompress.at[i, column] = BB_decompress.at[i - 1, column] ^ diff
+                            v_1D_decompress.at[i, column] = v_1D_decompress.at[i - 1, column] ^ diff
                             pass  # for
-                        BB_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
+                        v_1D_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_1D_compress.at[0, column]) == np.ndarray and (type(v_1D_compress.at[0, column][0]) == NameType or type(v_1D_compress.at[0, column][0]) == AbbrType or type(v_1D_compress.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
                         last_not_none = v_1D_compress.at[0, column].copy()
-                        BB_decompress.at[0, column] = last_not_none.copy()
+                        v_1D_decompress.at[0, column] = last_not_none.copy()
                         for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
                             if v_1D_compress.at[i, column] is None:  # 如果是 None，则直接设置为前一行的值，否则与上一个非 None 值计算不同的部分，然后赋值
-                                BB_decompress.at[i, column] = last_not_none.copy()
+                                v_1D_decompress.at[i, column] = last_not_none.copy()
                             else:
                                 last_last_not_none = last_not_none.copy()
                                 last_not_none = v_1D_compress.at[i, column].copy()
                                 diff = (last_not_none == '')
-                                BB_decompress.at[i, column] = last_not_none.copy()
-                                BB_decompress.at[i, column][diff] = last_last_not_none[diff]
+                                v_1D_decompress.at[i, column] = last_not_none.copy()
+                                v_1D_decompress.at[i, column][diff] = last_last_not_none[diff]
                                 pass  # if
                             pass  # for
-                        BB_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
+                        v_1D_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_1D_compress.at[0, column]) == np.ndarray and v_1D_compress.at[0, column][0] == None):  # 如果值为 None 的 numpy 数组
-                        BB_decompress.at[0, column] = v_1D_compress.at[0, column]
+                        v_1D_decompress.at[0, column] = v_1D_compress.at[0, column]
                         for i in range(1, len_result_data - 1, 1):
-                            BB_decompress.at[i, column] = v_1D_compress.at[0, column].copy()  # 直接赋值为第一行的值
+                            v_1D_decompress.at[i, column] = v_1D_compress.at[0, column].copy()  # 直接赋值为第一行的值
                             pass  # for
-                        BB_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
+                        v_1D_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_1D_compress.at[0, column]) == str):  # 如果是字符串类型
                         last_not_none = v_1D_compress.at[0, column]
-                        BB_decompress.at[0, column] = last_not_none
+                        v_1D_decompress.at[0, column] = last_not_none
                         for i in range(1, len_result_data - 1, 1):
                             if v_1D_compress.at[i, column] is None:  # 如果是 None，则直接设置为前一行的值，否则与上一个非 None 值计算不同的部分，然后赋值
-                                BB_decompress.at[i, column] = last_not_none
+                                v_1D_decompress.at[i, column] = last_not_none
                             else:
                                 last_not_none = v_1D_compress.at[i, column]
-                                BB_decompress.at[i, column] = last_not_none
+                                v_1D_decompress.at[i, column] = last_not_none
                                 pass  # if
                             pass  # for
-                        BB_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column]
+                        v_1D_decompress.at[len_result_data - 1, column] = v_1D_compress.at[len_result_data - 1, column]
                     else:  # 其他数据类型，直接复制原来的数据
-                        BB_decompress[column] = v_1D_compress[column].copy()
+                        v_1D_decompress[column] = v_1D_compress[column].copy()
                         pass  # if
 
                     pass  # for
 
-                A_data_decompress[para_01] = BB_decompress
+                A_data_decompress[para_01] = v_1D_decompress
 
             else:  # 说明是 2D 的数据
                 v_2D_compress = A_data_compress[para_01]
                 len_result_data = len(v_2D_compress)
-                IB_decompress = pd.DataFrame(columns=v_2D_compress.columns, index=range(len_result_data))
+                v_2D_decompress = pd.DataFrame(columns=v_2D_compress.columns, index=range(len_result_data))
                 # 遍历每一列
                 for column in v_2D_compress.columns:
                     if (type(v_2D_compress.at[0, column]) == np.ndarray and type(v_2D_compress.at[0, column][0, 0]) == MoneyType):  # 如果是 MoneyType 型的 numpy 数组
-                        IB_decompress.at[0, column] = v_2D_compress.at[0, column].copy()
-                        IB_decompress.at[1, column] = v_2D_compress.at[0, column] + v_2D_compress.at[1, column].toarray()
+                        v_2D_decompress.at[0, column] = v_2D_compress.at[0, column].copy()
+                        v_2D_decompress.at[1, column] = v_2D_compress.at[0, column] + v_2D_compress.at[1, column].toarray()
                         for i in range(2, len_result_data - 1, 1):  # 从第三行开始遍历每一行直到倒数第二行，累加差值
                             diff = v_2D_compress.at[i, column].toarray()
-                            IB_decompress.at[i, column] = IB_decompress.at[i - 1, column] + diff
+                            v_2D_decompress.at[i, column] = v_2D_decompress.at[i - 1, column] + diff
                             pass  # for
-                        IB_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
+                        v_2D_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_2D_compress.at[0, column]) == np.ndarray and (type(v_2D_compress.at[0, column][0, 0]) == IdsType or type(v_2D_compress.at[0, column][0, 0]) == np.int64)):  # 如果是 IdsType 型的 numpy 数组
                         last_not_none = v_2D_compress.at[0, column].copy()
-                        IB_decompress.at[0, column] = last_not_none.copy()
+                        v_2D_decompress.at[0, column] = last_not_none.copy()
                         for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
                             diff = v_2D_compress.at[i, column].toarray()
                             if not diff.all():  # 设定只有这种可能性
-                                IB_decompress.at[i, column] = last_not_none.copy()
+                                v_2D_decompress.at[i, column] = last_not_none.copy()
                                 pass  # if
                             pass  # for
-                        IB_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
+                        v_2D_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_2D_compress.at[0, column]) == np.ndarray and type(v_2D_compress.at[0, column][0, 0]) == np.bool_):  # 如果是布尔型的 numpy 数组
-                        IB_decompress.at[0, column] = v_2D_compress.at[0, column].copy()
-                        IB_decompress.at[1, column] = v_2D_compress.at[0, column] + v_2D_compress.at[1, column].toarray()
+                        v_2D_decompress.at[0, column] = v_2D_compress.at[0, column].copy()
+                        v_2D_decompress.at[1, column] = v_2D_compress.at[0, column] + v_2D_compress.at[1, column].toarray()
                         for i in range(2, len_result_data - 1, 1):
                             diff = v_2D_compress.at[i, column].toarray()
-                            IB_decompress.at[i, column] = IB_decompress.at[i - 1, column] ^ diff
+                            v_2D_decompress.at[i, column] = v_2D_decompress.at[i - 1, column] ^ diff
                             pass  # for
-                        IB_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
+                        v_2D_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_2D_compress.at[0, column]) == np.ndarray and (type(v_2D_compress.at[0, column][0]) == NameType or type(v_2D_compress.at[0, column][0]) == AbbrType or type(v_2D_compress.at[0, column][0]) == str)):  # 如果是字符串类型的 numpy 数组
                         last_not_none = v_2D_compress.at[0, column].copy()
-                        IB_decompress.at[0, column] = last_not_none.copy()
+                        v_2D_decompress.at[0, column] = last_not_none.copy()
                         for i in range(1, len_result_data - 1, 1):  # 从第二行开始遍历每一行直到倒数第二行，还原不同
                             if v_2D_compress.at[i, column] is None:  # 如果是 None，则直接设置为前一行的值，否则与上一个非 None 值计算不同的部分，然后赋值
-                                IB_decompress.at[i, column] = last_not_none.copy()
+                                v_2D_decompress.at[i, column] = last_not_none.copy()
                             else:
                                 last_last_not_none = last_not_none.copy()
                                 last_not_none = v_2D_compress.at[i, column].copy()
                                 diff = (last_not_none == '')
-                                IB_decompress.at[i, column] = last_not_none.copy()
-                                IB_decompress.at[i, column][diff] = last_last_not_none[diff]
+                                v_2D_decompress.at[i, column] = last_not_none.copy()
+                                v_2D_decompress.at[i, column][diff] = last_last_not_none[diff]
                                 pass  # if
                             pass  # for
-                        IB_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
+                        v_2D_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_2D_compress.at[0, column]) == np.ndarray and v_2D_compress.at[0, column][0, 0] == None):  # 如果值为 None 的 numpy 数组
-                        IB_decompress.at[0, column] = v_2D_compress.at[0, column]
+                        v_2D_decompress.at[0, column] = v_2D_compress.at[0, column]
                         for i in range(1, len_result_data - 1, 1):
-                            IB_decompress.at[i, column] = v_2D_compress.at[0, column].copy()  # 直接赋值为第一行的值
+                            v_2D_decompress.at[i, column] = v_2D_compress.at[0, column].copy()  # 直接赋值为第一行的值
                             pass  # for
-                        IB_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
+                        v_2D_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column].copy()
                     elif (type(v_2D_compress.at[0, column]) == str):  # 如果是字符串类型
                         last_not_none = v_2D_compress.at[0, column]
-                        IB_decompress.at[0, column] = last_not_none
+                        v_2D_decompress.at[0, column] = last_not_none
                         for i in range(1, len_result_data - 1, 1):
                             if v_2D_compress.at[i, column] is None:  # 如果是 None，则直接设置为前一行的值，否则与上一个非 None 值计算不同的部分，然后赋值
-                                IB_decompress.at[i, column] = last_not_none
+                                v_2D_decompress.at[i, column] = last_not_none
                             else:
                                 last_not_none = v_2D_compress.at[i, column]
-                                IB_decompress.at[i, column] = last_not_none
+                                v_2D_decompress.at[i, column] = last_not_none
                                 pass  # if
                             pass  # for
-                        IB_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column]
+                        v_2D_decompress.at[len_result_data - 1, column] = v_2D_compress.at[len_result_data - 1, column]
                     else:  # 其他数据类型，直接复制原来的数据
-                        IB_decompress[column] = v_2D_compress[column].copy()
+                        v_2D_decompress[column] = v_2D_compress[column].copy()
                         pass  # if
 
                     pass  # for
 
-                A_data_decompress[para_01] = IB_decompress
+                A_data_decompress[para_01] = v_2D_decompress
 
                 pass  # if
             pass  # for
 
+        # #NOW 解压全同数据
+        A_data_compress.note['compress']
+        for k1, v1 in A_data_compress.note['compress'].items():
+            if k1 == "note":  # 如果是备注变量，则跳过
+                continue
+            if not k1.startswith("I"):  # 说明是 1D 的数据
+                v_1D_compress = A_data_compress[k1]
+                the_column = list(set(v_1D_compress.columns) - set(['process_name', 'step', 'turn', 'phase']))[0]
+                len_result_data = len(v_1D_compress)  # 迭代次数（表格行数）
+                num_agent = len(v_1D_compress.at[0, the_column])  # 个体数量（表格单元格值之元素个数）
+                # v_1D_decompress = pd.DataFrame(columns=v_1D_compress.columns, index=range(len_result_data))
+                for k2, v2 in v1.items():
+                    series = pd.Series()
+                    for i in range(len_result_data):
+                        series[i] = np.full(num_agent, v2)
+                        pass  # for
+                    df = series.to_frame()
+                    df.columns = [k2]
+                    A_data_decompress[k1] = pd.concat([A_data_decompress[k1], df], axis=1, ignore_index=False)
+                    pass  # for
+            else:  # 说明是 2D 的数据
+                v_2D_compress = A_data_compress[k1]
+                the_column = list(set(v_2D_compress.columns) - set(['process_name', 'step', 'turn', 'phase']))[0]
+                len_result_data = len(v_2D_compress)  # 迭代次数（表格行数）
+                num_agent_x = v_2D_compress.at[0, the_column].shape[0]  # 行方向个体数量（表格单元格值之行方向元素个数）
+                num_agent_y = v_2D_compress.at[0, the_column].shape[1]  # 列方向个体数量（表格单元格值之行方向元素个数）
+                v_2D_compress = pd.DataFrame(columns=v_2D_compress.columns, index=range(len_result_data))
+                len_result_data = len(v_2D_compress)
+                # v_2D_decompress = pd.DataFrame(columns=v_2D_compress.columns, index=range(len_result_data))
+                for k2, v2 in v1.items():
+                    series = pd.Series()
+                    for i in range(len_result_data):
+                        series[i] = np.full((num_agent_x, num_agent_y), v2)
+                        pass  # for
+                    df = series.to_frame()
+                    df.columns = [k2]
+                    A_data_decompress[k1] = pd.concat([A_data_decompress[k1], df], axis=1, ignore_index=False)
+                    pass  # for
+                pass  # if
         return A_data_decompress
         pass  # function
 
