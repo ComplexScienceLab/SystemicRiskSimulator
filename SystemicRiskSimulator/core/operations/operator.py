@@ -223,13 +223,12 @@ class Operator:
         # 计算个体数量
         sgv['num_bank'] = len(A.note['id_bank'])
 
-        content_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
-        # content_Agents = model['model_agents'](content_Finance)  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
-        if 'model_agents' in model.keys():  # 如果该模型有设计 Content_Agents
-            content_Agents = model['model_agents'](np.array(para['Strategy_default']))  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
-            content_Model = model['model_main'](content_Finance, content_Agents)  # 初始化 Content_Model 之实例
+        model_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
+        if 'model_strategy' in model.keys():  # 如果该模型有设计 model_Strategy
+            model_Strategy = model['model_strategy'](np.array(para['Strategy_default']))  # 初始化 model_Strategy 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
+            model_main = model['model_main'](model_Finance, model_Strategy)  # 初始化 model_main 之实例
         else:
-            content_Model = model['model_main'](content_Finance)  # 初始化 Content_Model 之实例
+            model_main = model['model_main'](model_Finance)  # 初始化 Content_Model 之实例
             pass  # if
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
@@ -241,8 +240,8 @@ class Operator:
             )
             pass  # if
 
-        # content_Model.model_content(A, A_last, A_data, para, sgv)
-        content_Model.model_content(A, A_data, para, sgv)
+        # model_main.model_content(A, A_last, A_data, para, sgv)
+        model_main.model_content(A, A_data, para, sgv)
 
         pass  # function
 
