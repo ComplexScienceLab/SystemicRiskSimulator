@@ -159,13 +159,18 @@ def main(sgv):
             num_cores = int(multiprocessing.cpu_count() * sgv['percent_core_for_multiprocessing'])  # 用于计算的 CPU 核心数
             works = []
             for para_01 in sgv['list_agents_data_filename_para_01']:
+                if para_01 == "note":  # 如果是备注变量，则跳过。因为是作为辅助的，不需要转换
+                    continue
                 filepath_pkl = dict()
                 for i, exp_id in enumerate(list_idsExp_TASK):
                     filepath_pkl[para_01] = dict_filepath_pkl[para_01][i]
+                    filepath_note_pkl = dict_filepath_pkl['note'][i]
                     # print(f"exp_id = {exp_id}")
                     works.append((
                         exp_id,
                         filepath_pkl,
+                        filepath_note_pkl,
+                        sgv['columns_to_insert_into_panel_data'][para_01],
                         sgv['folderpath_experiments_output_log'],
                         folderpath_experiments_output_data_panel,
                         sgv['is_use_sqlite_to_manage_experiments'],
@@ -182,15 +187,18 @@ def main(sgv):
 
             # #NOTE：串行处理
             for para_01 in sgv['list_agents_data_filename_para_01']:
-                if para_01 == "note":  # 如果是备注变量，则跳过。因为是静态的，不需要转换
+                if para_01 == "note":  # 如果是备注变量，则跳过。因为是作为辅助的，不需要转换
                     continue
                 filepath_pkl = dict()
                 for i, exp_id in enumerate(list_idsExp_TASK):
                     filepath_pkl[para_01] = dict_filepath_pkl[para_01][i]
+                    filepath_note_pkl = dict_filepath_pkl['note'][i]
                     print(f"exp_id = {exp_id}")
                     fun_导入Pandas格式的实验结果数据转换为面板形式再导出(
                         exp_id,
                         filepath_pkl,
+                        filepath_note_pkl,
+                        sgv['columns_to_insert_into_panel_data'][para_01],
                         sgv['folderpath_experiments_output_log'],
                         folderpath_experiments_output_data_panel,
                         sgv['is_use_sqlite_to_manage_experiments'],
@@ -337,14 +345,15 @@ def main(sgv):
     pass  # main
 
 
-def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl: dict, folderpath_experiments_output_log: Path, folderpath_experiments_output_data_panel: Path, is_use_sqlite_to_manage_experiments: bool):
+def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl: dict, filepath_note_pkl: dict, columns_to_insert_into_panel_data: dict, folderpath_experiments_output_log: Path, folderpath_experiments_output_data_panel: Path, is_use_sqlite_to_manage_experiments: bool):
     """
     预处理单次实验之各实验结果数据
 
     Args:
         exp_id: int: 实验组 id
-        filepath_pkl_BB: Path: BB 实验结果数据文件路径
-        filepath_pkl_IB: IB 实验结果数据文件路径
+        filepath_pkl: dict: 实验结果数据文件路径
+        filepath_note_pkl: Path: 实验结果数据之 note 文件路径
+        columns_to_insert_into_panel_data: list: 需要插入到面板数据的字段。每一个元素是一个元组。第一个元素是需要插入的列名，第二个元素是需要插入的字段名的值，第三个元素是将新插入的列名移动到指定的列名的后面。
         folderpath_experiments_output_log: Path: 实验组输出日志文件夹路径
         folderpath_exp_output_data: Path: 面板数据文件夹路径
         is_use_sqlite_to_manage_experiments: bool: 是否使用 SQLite 数据库管理实验组
@@ -360,15 +369,20 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
         # 根据文件名前缀判断数据类型  #BUG 这个存在风险，因为文件名前缀可能不遵循约定，后续扩展可能会有变化
         if not para_01.startswith('I'):  # 说明是 1D 的数据
 
+            # 打开 exp_id 对应的 note 数据文件
+            with open(filepath_note_pkl, 'rb') as f:
+                series_note = pickle.load(f)  # 导入 note 数据
+                pass  # with
+
             # 根据 filepath_pkl[para_01] 复制一个新文件，以免修改原始文件
             df_1D_original = pd.read_pickle(filepath_pkl[para_01])
 
-            # 根据 parameters 数据表读取 exp 对应的编号的 agents 数据，然后加载 agents 数据当中的 note 变量
-            filepath_parameters = Path(filepath_pkl[para_01]).name  # 获取文件名
-            # 查找文件名的实验编号，
-            exp_id = int(re.findall(r'\d+', filepath_parameters)[0])
-            # 读取 parameters 数据表
-            df_parameters = pd.read_pickle(folderpath_experiments_output_log / "parameters/parameters.pkl")
+            # # 根据 parameters 数据表读取 exp 对应的编号的 agents 数据，然后加载 agents 数据当中的 note 变量 #HACK  代码无用
+            # filepath_parameters = Path(filepath_pkl[para_01]).name  # 获取文件名
+            # # 查找文件名的实验编号，
+            # exp_id = int(re.findall(r'\d+', filepath_parameters)[0])
+            # # 读取 parameters 数据表
+            # df_parameters = pd.read_pickle(folderpath_experiments_output_log / "parameters/parameters.pkl")
 
             # filepath_pkl_note = Path(folderpath_exp_output_data, filename_pkl_1D.replace(para_01, "note"))  # 同名的 note 数据文件路径
             # df_note = pd.read_pickle(filepath_pkl_note)  # 读取 note 数据文件
@@ -381,7 +395,14 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
             df_1D_original = pd.read_pickle(filepath_pkl_1D_panal)  # 重新读取 pkl 文件，对该文件直接修改
 
             num_size = df_1D_original[df_1D_original.columns[-1]][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
+
             df_1D = df_1D_original.map(lambda x: x.flatten() if hasattr(x, 'flatten') else x)  # 压平二维数组
+
+            # 添加 note 里面的值作为整列
+            for v in columns_to_insert_into_panel_data if columns_to_insert_into_panel_data is not None else []:
+                df_1D[v[0]] = pd.Series([series_note[v[1]]] * len(df_1D))
+                col = df_1D.pop(v[0])
+                df_1D.insert(df_1D.columns.get_loc(v[2]) + 1, v[0], col)
 
             ## 转换数据格式为numpy字符串格式
             list_columns_for_transform_datatype = [
