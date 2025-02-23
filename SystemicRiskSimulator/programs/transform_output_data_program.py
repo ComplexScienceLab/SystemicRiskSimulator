@@ -365,30 +365,22 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
     if is_use_sqlite_to_manage_experiments:
         record_work_state(exp_id, 'status_预处理实验结果程序', 'DOING', folderpath_experiments_output_log)  # 记录本次实验作业的完成状态为 "DOING"
 
+    # 打开 exp_id 对应的 note 数据文件
+    with open(filepath_note_pkl, 'rb') as f:
+        series_note = pickle.load(f)  # 导入 note 数据
+        pass  # with
+
     for para_01 in filepath_pkl.keys():
         # 根据文件名前缀判断数据类型  #BUG 这个存在风险，因为文件名前缀可能不遵循约定，后续扩展可能会有变化
         if not para_01.startswith('I'):  # 说明是 1D 的数据
 
-            # 打开 exp_id 对应的 note 数据文件
-            with open(filepath_note_pkl, 'rb') as f:
-                series_note = pickle.load(f)  # 导入 note 数据
-                pass  # with
-
             # 根据 filepath_pkl[para_01] 复制一个新文件，以免修改原始文件
             df_1D_original = pd.read_pickle(filepath_pkl[para_01])
-
-            # # 根据 parameters 数据表读取 exp 对应的编号的 agents 数据，然后加载 agents 数据当中的 note 变量 #HACK  代码无用
-            # filepath_parameters = Path(filepath_pkl[para_01]).name  # 获取文件名
-            # # 查找文件名的实验编号，
-            # exp_id = int(re.findall(r'\d+', filepath_parameters)[0])
-            # # 读取 parameters 数据表
-            # df_parameters = pd.read_pickle(folderpath_experiments_output_log / "parameters/parameters.pkl")
-
-            # filepath_pkl_note = Path(folderpath_exp_output_data, filename_pkl_1D.replace(para_01, "note"))  # 同名的 note 数据文件路径
-            # df_note = pd.read_pickle(filepath_pkl_note)  # 读取 note 数据文件
-            # list_id = df_note.columns[df_note.columns.str.startswith('id_')].tolist()  # 获取 note 的 `id_` 开头的列当中的一维数组
-            filename_pkl_1D = Path(filepath_pkl[para_01]).name
-            filename_pkl_1D_panel = filename_pkl_1D.replace(f'{para_01}-', f'{para_01}_panel-')
+            # filename_pkl_1D = Path(filepath_pkl[para_01]).name
+            # filename_pkl_1D_panel = filename_pkl_1D.replace(f'{para_01}-', f'{para_01}_panel-')
+            # #HACK 以上两行暂时用不到了，无用。
+            filename_pkl_1D = Path(filepath_pkl[para_01]).stem
+            filename_pkl_1D_panel = filename_pkl_1D + '-form=panel.pkl'
             filepath_pkl_1D_panal = (folderpath_experiments_output_data_panel / filename_pkl_1D_panel).resolve()  # 面板数据文件路径
             filepath_pkl_1D_panal.parent.mkdir(parents=True, exist_ok=True)
             df_1D_original.to_pickle(Path(filepath_pkl_1D_panal))  # 导出为 pkl 格式
@@ -484,9 +476,12 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
         else:  # 说明是 2D 的数据
 
             # 根据 filepath_pkl[para_01] 复制一个新文件，以免修改原始文件
+            # filename_pkl_2D = Path(filepath_pkl[para_01]).name
+            # filename_pkl_2D_panel = filename_pkl_2D.replace(f'{para_01}-', f'{para_01}_panel-')
+            # #HACK 以上两行暂时用不到了，无用。
+            filename_pkl_2D = Path(filepath_pkl[para_01]).stem
+            filename_pkl_2D_panel = filename_pkl_2D + '-form=panel.pkl'
             df_2D_original = pd.read_pickle(filepath_pkl[para_01])
-            filename_pkl_2D = Path(filepath_pkl[para_01]).name
-            filename_pkl_2D_panel = filename_pkl_2D.replace(f'{para_01}-', f'{para_01}_panel-')
             filepath_pkl_2D_panal = (folderpath_experiments_output_data_panel / filename_pkl_2D_panel).resolve()  # 面板数据文件路径
             df_2D_original.to_pickle(Path(filepath_pkl_2D_panal))  # 导出为 pkl 格式
             df_2D_original = pd.read_pickle(filepath_pkl_2D_panal)  # 重新读取 pkl 文件，对该文件直接修改
