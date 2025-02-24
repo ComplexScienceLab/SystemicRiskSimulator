@@ -102,6 +102,7 @@ def main(sgv):
 
     # sgv['folderpath_experiments'] = Path(sgv['folderpath_project'], sgv['folderpath_root_experiments'], sgv['foldername_experiments'])
     # sgv['folderpath_experiments_output_data'] = Path(sgv['folderpath_experiments'], sgv['foldername_experiments_output_data'])
+    sgv['folderpath_experiments_output_data_panel'] = (sgv['folderpath_experiments'] / sgv['foldername_experiments_output_data'] / '../exp_output_data_panel').resolve()
     sgv['folderpath_plots'] = Path(sgv['folderpath_experiments'], sgv['foldername_plots'])
     sgv['folderpath_plots'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_plots_single_heatmaps'] = Path(sgv['folderpath_plots'], sgv['foldername_plots_single_heatmaps'])
@@ -118,6 +119,14 @@ def main(sgv):
     sgv['folderpath_plots_makeup_balanceSheets'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_visualize_banksStates_table'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_banksStates_table'])
     sgv['folderpath_visualize_banksStates_table'].mkdir(parents=True, exist_ok=True)
+
+    ## 获取需要做的实验组之索引
+    list_fig_files = list(sgv['folderpath_experiments_output_data_panel'].glob('*-form=panel.pkl'))  # 获取实验组输出数据pkl格式之文件列表
+    if sgv['vis']['list_idsExperiment_to_vis'] is None:
+        experiments_indices_to_vis = list(range(len(list_fig_files)))
+    else:
+        experiments_indices_to_vis = sgv['vis']['list_idsExperiment_to_vis']
+        pass
 
     # # %% [markdown] # NOTE 导入Pandas格式的实验结果数据，然后转换为面板形式的数据，导出PKL、CSV、xlsx 格式数据。 #HACK 这个功能似乎无用
     #
@@ -152,26 +161,26 @@ def main(sgv):
     #             )
     #         ]  # 获取需要展平的列
     #
-    #         df_BB_panel = df_BB.explode('id_agent')  # 只展开 'id_agent' 列
+    #         df_1D_panel = df_BB.explode('id_agent')  # 只展开 'id_agent' 列
     #         for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
     #             if col != 'id_agent':
-    #                 df_BB_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack().reset_index(level=1, drop=True)
+    #                 df_1D_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack().reset_index(level=1, drop=True)
     #                 pass  # if
     #             pass  # for
-    #         df_BB_panel = df_BB_panel.reset_index(drop=True)  # 重置索引
+    #         df_1D_panel = df_1D_panel.reset_index(drop=True)  # 重置索引
     #
-    #         df_BB_panel.insert(0, 'id', range(len(df_BB_panel)))  # 添加id列
-    #         df_BB_panel.insert(1, 'id_data', np.repeat(range(len(df_BB_panel) // num_agent), num_agent))  # 添加id_data列
+    #         df_1D_panel.insert(0, 'id', range(len(df_1D_panel)))  # 添加id列
+    #         df_1D_panel.insert(1, 'id_data', np.repeat(range(len(df_1D_panel) // num_agent), num_agent))  # 添加id_data列
     #
-    #         df_BB_panel = df_BB_panel.reset_index(drop=True)  # 重置索引
+    #         df_1D_panel = df_1D_panel.reset_index(drop=True)  # 重置索引
     #
     #         filename_pkl_BB = Path(filepath_pkl_BB).name
     #         filename_pkl_BB_panel = filename_pkl_BB.replace('BB_', 'BB_panel_')
     #         filepath_pkl_BB_panal = Path(sgv['folderpath_plots'], filename_pkl_BB_panel)  # 面板数据文件路径
-    #         df_BB_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为 pkl 格式
-    #         df_BB_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
+    #         df_1D_panel.to_pickle(Path(filepath_pkl_BB_panal))  # 导出为 pkl 格式
+    #         df_1D_panel.to_csv(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.csv'), index=False)  # 导出为 csv 格式；
     #         with pd.ExcelWriter(Path(str(filepath_pkl_BB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
-    #             df_BB_panel.to_excel(writer, sheet_name='BB_panel')
+    #             df_1D_panel.to_excel(writer, sheet_name='BB_panel')
     #             pass  # with
     #
     #         ## 重新读取 xlsx 格式然后格式化
@@ -190,7 +199,7 @@ def main(sgv):
     #
     #         sheet_BB_panel.freeze_panes = "J2"  # 冻结窗格
     #
-    #         col_indices = [df_BB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+    #         col_indices = [df_1D_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
     #         for col_index in col_indices:
     #             col_letter = get_column_letter(col_index)
     #             sheet_BB_panel.column_dimensions[col_letter].width = 5
@@ -203,7 +212,7 @@ def main(sgv):
     #                     cell.fill = fill  # 将该行的背景色设置为浅灰色
     #
     #         # for col in columns_states:  # 遍历每一列
-    #         #     col_index = df_BB_panel.columns.get_loc(col) + 1
+    #         #     col_index = df_1D_panel.columns.get_loc(col) + 1
     #         #     col_letter = get_column_letter(col_index)
     #         #     rng = sheet_BB_panel[col_letter]
     #         #     for cell in rng:  # 遍历每一个单元格
@@ -276,27 +285,27 @@ def main(sgv):
     #             )
     #         ]  # 获取需要展平的列
     #
-    #         df_IB_panel = (df_IB.explode('id_agent')).explode('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
-    #         # df_IB_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
+    #         df_2D_panel = (df_IB.explode('id_agent')).explode('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
+    #         # df_2D_panel = df_IB['id_agent'].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True).to_frame('id_agent')  # 只展开 'id_agent' 列，对于二维数组需要展开两次
     #         for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
     #             if col != 'id_agent':
-    #                 df_IB_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
+    #                 df_2D_panel[col] = df_IB[col].apply(lambda x: pd.Series(x.flatten())).stack().reset_index(level=1, drop=True)  # 对于二维数组需要展开两次
     #                 pass  # if
     #             pass  # for
-    #         df_IB_panel = df_IB_panel.reset_index(drop=True)  # 重置索引
+    #         df_2D_panel = df_2D_panel.reset_index(drop=True)  # 重置索引
     #
-    #         df_IB_panel.insert(0, 'id', range(len(df_IB_panel)))  # 添加id列
-    #         df_IB_panel.insert(1, 'id_data', np.repeat(range(len(df_IB_panel) // num_agent ** 2), num_agent ** 2))  # 添加id_data列
+    #         df_2D_panel.insert(0, 'id', range(len(df_2D_panel)))  # 添加id列
+    #         df_2D_panel.insert(1, 'id_data', np.repeat(range(len(df_2D_panel) // num_agent ** 2), num_agent ** 2))  # 添加id_data列
     #
-    #         df_IB_panel = df_IB_panel.reset_index(drop=True)  # 重置索引
+    #         df_2D_panel = df_2D_panel.reset_index(drop=True)  # 重置索引
     #
     #         filename_pkl_IB = Path(filepath_pkl_IB).name
     #         filename_pkl_IB_panel = filename_pkl_IB.replace('IB_', 'IB_panel_')
     #         filepath_pkl_IB_panal = Path(sgv['folderpath_plots'], filename_pkl_IB_panel)  # 面板数据文件路径
-    #         df_IB_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为 pkl 格式
-    #         df_IB_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
+    #         df_2D_panel.to_pickle(Path(filepath_pkl_IB_panal))  # 导出为 pkl 格式
+    #         df_2D_panel.to_csv(Path(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.csv')), index=False)  # 导出为 csv 格式；
     #         with pd.ExcelWriter(Path(str(filepath_pkl_IB_panal).split('.')[0] + '.xlsx')) as writer:  # 导出为 xlsx 格式
-    #             df_IB_panel.to_excel(writer, sheet_name='IB_panel')
+    #             df_2D_panel.to_excel(writer, sheet_name='IB_panel')
     #             pass  # with
     #
     #         ## 重新读取 xlsx 格式然后格式化
@@ -318,7 +327,7 @@ def main(sgv):
     #
     #         sheet_IB_panel.freeze_panes = "K2"  # 冻结窗格
     #
-    #         col_indices = [df_IB_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
+    #         col_indices = [df_2D_panel.columns.get_loc(col_name) + 1 for col_name in columnsName_adjust]  # 调整列宽
     #         for col_index in col_indices:
     #             col_letter = get_column_letter(col_index)
     #             sheet_IB_panel.column_dimensions[col_letter].width = 5
@@ -331,7 +340,7 @@ def main(sgv):
     #                     cell.fill = fill  # 将该行的背景色设置为浅灰色
     #
     #         # for col in columns_states:  # 遍历每一列
-    #         #     col_index = df_BB_panel.columns.get_loc(col) + 1
+    #         #     col_index = df_1D_panel.columns.get_loc(col) + 1
     #         #     col_letter = get_column_letter(col_index)
     #         #     rng = sheet_IB_panel[col_letter]
     #         #     for cell in rng:  # 遍历每一个单元格
@@ -387,16 +396,16 @@ def main(sgv):
             ## 提前列`row`、`col`
             cols_sorted_10 = ['id_agent']
             cols_sorted_10 = cols_sorted_10 + [s for s in csv_BB_10.columns if not s in cols_sorted_10]
-            df_BB_panel = csv_BB_10[cols_sorted_10]
+            df_1D_panel = csv_BB_10[cols_sorted_10]
             cols_sorted_10 = ['row', 'col']
             cols_sorted_10 = cols_sorted_10 + [s for s in csv_IB_10.columns if not s in cols_sorted_10]
-            df_IB_panel = csv_IB_10[cols_sorted_10]
+            df_2D_panel = csv_IB_10[cols_sorted_10]
 
             ## 一些变量
-            num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
-            num_2D_id = len(df_IB_panel)  # 数据表IB之行数
-            num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-            num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+            num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
+            num_2D_id = len(df_2D_panel)  # 数据表IB之行数
+            num_idData = df_1D_panel['id_data'].max() + 1  # 数据表之数据id个数
+            num_turn = df_1D_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
             num_step = num_idData  # 总的步进数（是从0开始计数的)
 
             ## 根据时间粒度参数，确定时间轴名称及其长度
@@ -418,46 +427,45 @@ def main(sgv):
 
         pass  # if 导入面板形式的CSV数据预处理
 
-    # %% [markdown] ##  NOTE 导入面板形式的PKL数据预处理
+    # # %% [markdown] ##  NOTE 导入面板形式的PKL数据预处理 #TODO 这个功能无用，可以删除
+    #
+    # # %%
+    #
+    # if (sgv['visulization_process']['读取面板形式的PKL格式的文件']):
+    #     # 依次读取面板形式的PKL格式的文件，预处理每次实验
+    #
+    #     print("读取面板形式的PKL格式的文件")
+    #
+    #     list_fig_files = list(sgv['folderpath_experiments_output_data_panel'].glob('*-form=panel.pkl'))  # 获取实验组输出数据pkl格式之文件列表
+    #
+    #     ## 排序，优先按照银行名称，其次按照时间。#BUG 这个可能需要适配除了 BB 、IB 之外的其他名称。
+    #     match_pattern_in_vertical_direction = r'(?<=[IB]B-panel_exp=).+?(?=[(\.pkl)])'
+    #     match_pattern_in_horizontal_direction = r'[IB]B'
+    #     sorted_pkl_panel_file_list = sorted(list_fig_files, key=lambda name: (
+    #         int(re.search(match_pattern_in_vertical_direction, str(name))[0]),
+    #         re.search(match_pattern_in_horizontal_direction, str(name))[0],
+    #     ))
+    #
+    #     ## 获取所有实验之索引
+    #     experiments_indices = []
+    #     for filepath in sorted_pkl_panel_file_list:
+    #         match = re.search(r'exp=(\d+)', str(filepath))
+    #         if match:
+    #             experiments_indices.append(int(match.group(1)))
+    #         pass  # for
+    #     experiments_indices = sorted(list(set(experiments_indices)))  # 去重
+    #
+    #     ## 获取需要做的实验组之索引
+    #     if sgv['vis']['list_idsExperiment_to_vis'] is None:
+    #         experiments_indices_to_vis = experiments_indices
+    #     else:
+    #         experiments_indices_to_vis = sgv['vis']['list_idsExperiment_to_vis']
+    #         pass
+    #
+    #     pass  # if 读取面板形式的PKL格式的文件
 
-    # %%
-
-    if (sgv['visulization_process']['读取面板形式的PKL格式的文件']):
-        # 依次读取面板形式的PKL格式的文件，预处理每次实验
-
-        print("读取面板形式的PKL格式的文件")
-
-        list_fig_files = list(sgv['folderpath_experiments_output_data'].glob('*_panel_*.pkl'))  # 获取实验组输出数据pkl格式之文件列表
-
-        ## 排序，优先按照银行名称，其次按照时间。
-        match_pattern_in_vertical_direction = r'(?<=[IB]B-panel_exp=).+?(?=[(\.pkl)])'
-        match_pattern_in_horizontal_direction = r'[IB]B'
-        sorted_pkl_panel_file_list = sorted(list_fig_files, key=lambda name: (
-            int(re.search(match_pattern_in_vertical_direction, str(name))[0]),
-            re.search(match_pattern_in_horizontal_direction, str(name))[0],
-        ))
-
-        ## 获取所有实验之索引
-        experiments_indices = []
-        for filepath in sorted_pkl_panel_file_list:
-            match = re.search(r'exp=(\d+)', str(filepath))
-            if match:
-                experiments_indices.append(int(match.group(1)))
-            pass  # for
-        experiments_indices = sorted(list(set(experiments_indices)))  # 去重
-
-        ## 获取需要做的实验组之索引
-        if sgv['vis']['list_idsExperiment_to_vis'] is None:
-            experiments_indices_to_vis = experiments_indices
-        else:
-            experiments_indices_to_vis = sgv['vis']['list_idsExperiment_to_vis']
-            pass
-
-        pass  # if 读取面板形式的PKL格式的文件
-
-    # %% 绘制图
-
-    if (sgv['visulization_process']['读取面板形式的PKL格式的文件'] or sgv['visulization_process']['导入面板形式的CSV数据预处理']):
+    # if (sgv['visulization_process']['读取面板形式的PKL格式的文件'] or sgv['visulization_process']['导入面板形式的CSV数据预处理']):
+    if True:  # TODO 这个是占位用的，后续可以删除。
 
         # %% [markdown] ## #NOTE 绘制资产负债表图
         # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
@@ -470,14 +478,17 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                # id=0-v=note-year=2007-density=0.10.pkl
+                # exp=107-v=BB-aid=0-form=panel.pkl
+
+                df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
+                df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
 
                 ## 一些变量
-                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
-                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
-                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
+                num_2D_id = len(df_2D_panel)  # 数据表IB之行数
+                num_idData = df_1D_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_turn = df_1D_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
@@ -500,7 +511,7 @@ def main(sgv):
                 sgv['vis']['en_font_family'] = en_font_family
 
                 ### 计算各银行主体之代表性的类型之数据之最大值和最小值
-                sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
+                sgv['vis']['max_BB_value_in_all_panel'] = df_1D_panel['A_all'].max()
                 sgv['vis']['min_BB_value_in_all_panel'] = 0
 
                 ## 创建一个作业列表，其中每个作业都是一个元组，包含所有需要传递给函数的参数
@@ -513,7 +524,7 @@ def main(sgv):
                         for dataType_name in sgv['vis']['list_dataTypes_for_balanceSheets'].keys():
                             data_vis_one_bank_BalanceSheet[dataType_name] = pd.DataFrame(sgv['vis']['list_dataTypes_for_balanceSheets'][dataType_name])
                             pass  # for
-                        works.append((sgv, df_BB_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
+                        works.append((sgv, df_1D_panel, data_vis_one_bank_BalanceSheet, i_exp, i, t))
                         pass  # for
                     pass  # for
 
@@ -543,14 +554,14 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
+                df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
 
                 ## 一些变量
-                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
-                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
-                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
+                num_2D_id = len(df_2D_panel)  # 数据表IB之行数
+                num_idData = df_1D_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_turn = df_1D_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
@@ -609,8 +620,10 @@ def main(sgv):
                 dict_2D_panel = {}
                 for para_01 in sgv['list_agents_data_filename_para_01']:
                     # 根据文件名前缀判断数据类型  #BUG 这个存在风险，因为文件名前缀可能不遵循约定，后续扩展可能会有变化
+                    if para_01 == 'note':  # note 数据不需要处理
+                        continue
                     if not para_01.startswith('I'):  # 说明是 1D 的数据
-                        v_1D = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], f'{para_01}_panel-exp={i_exp}.pkl'))
+                        v_1D = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
                         dict_1D_panel[para_01] = v_1D
                         if para_01 == 'BB':
                             # 计算总的轮次数（是从0开始计数的)、总的步进数（是从0开始计数的)
@@ -619,7 +632,7 @@ def main(sgv):
                             num_step = num_idData  # 总的步进数（是从0开始计数的)
                             pass  # if
                     else:  # 说明是 2D 的数据
-                        df_2D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], f'{para_01}_panel-exp={i_exp}.pkl'))
+                        df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
                         dict_2D_panel[para_01] = df_2D_panel
                         pass  # if
                     pass  # for
@@ -689,8 +702,8 @@ def main(sgv):
 
                 sgv['vis']['max_num_2D_agent'] = max_num_2D_agent
 
-                # df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                # df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                # df_1D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
+                # df_2D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 # ## 一些变量
                 # num_1D_id = len(df_1D_panel)  # 1D数据表之行数
@@ -812,14 +825,21 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                # for para_01 in sgv['list_agents_data_filename_para_01']:
+                #     if para_01 == 'note':
+                #         continue
+                #     if not para_01.startswith('I'):  # 说明是 1D 的数据
+                #         df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
+
+                # #BUG 为什么这里不遍历 para_01，而是直接用 'BB' 和 'IB' ？
+                df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
+                df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
 
                 ## 一些变量
-                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
-                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
-                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
+                num_2D_id = len(df_2D_panel)  # 数据表IB之行数
+                num_idData = df_1D_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_turn = df_1D_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
@@ -863,7 +883,7 @@ def main(sgv):
 
             pass  # if 拼接矩阵热图
 
-        # %% [markdown] ## #NOTE 绘制资金流网络图
+        # %% [markdown] ## #NOTE 绘制资金流网络图 #BUG 这里的代码没有适配，已经不能保证能够正常使用！
         # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
 
         # %%
@@ -875,14 +895,14 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_1D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data_panel'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_2D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data_panel'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
-                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
-                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
-                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
+                num_2D_id = len(df_2D_panel)  # 数据表IB之行数
+                num_idData = df_1D_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_turn = df_1D_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
@@ -905,11 +925,11 @@ def main(sgv):
                 sgv['vis']['en_font_family'] = en_font_family
 
                 ### 计算各银行主体之代表性的类型之数据之最大值和最小值
-                sgv['vis']['max_BB_value_in_all_panel'] = df_BB_panel['A_all'].max()
+                sgv['vis']['max_BB_value_in_all_panel'] = df_1D_panel['A_all'].max()
                 sgv['vis']['min_BB_value_in_all_panel'] = 0
 
                 ### 计算各银行主体间之代表性的类型之数据之最大值和最小值
-                sgv['vis']['max_IB_value_in_all_panel'] = df_IB_panel['A_IB'].max()
+                sgv['vis']['max_IB_value_in_all_panel'] = df_2D_panel['A_IB'].max()
                 sgv['vis']['min_IB_value_in_all_panel'] = 0
 
                 ## 创建一个作业列表，其中每个作业都是一个元组，包含所有需要传递给函数的参数
@@ -923,7 +943,7 @@ def main(sgv):
                         data_vis_one_time_graph['vertices'] = pd.DataFrame()
                         data_vis_one_time_graph['edges'] = pd.DataFrame()
 
-                        works.append((sgv, df_BB_panel, df_IB_panel, data_vis_one_time_graph, i_exp, d, t))
+                        works.append((sgv, df_1D_panel, df_2D_panel, data_vis_one_time_graph, i_exp, d, t))
                         pass  # for
                     pass  # for
 
@@ -953,14 +973,14 @@ def main(sgv):
 
             for i_exp in experiments_indices_to_vis:
 
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_1D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data_panel'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_2D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data_panel'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
-                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
-                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
-                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
+                num_2D_id = len(df_2D_panel)  # 数据表IB之行数
+                num_idData = df_1D_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_turn = df_1D_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
@@ -1003,7 +1023,7 @@ def main(sgv):
 
             pass  # if 拼接资金流网络图
 
-        # %% [markdown] ## #NOTE 可视化银行状态表格
+        # %% [markdown] ## #NOTE 可视化银行状态表格 #BUG 这里的代码似乎没有适配，已经不能保证能够正常使用！
         # 单独提取银行状态数据，处理成高亮可视化表格
 
         # %%
@@ -1014,14 +1034,14 @@ def main(sgv):
             Tools.delete_and_recreate_folder(sgv['folderpath_visualize_banksStates_table'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
             for i_exp in experiments_indices_to_vis:
-                df_BB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
-                df_IB_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_1D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data_panel'], 'BB_panel-exp=' + str(i_exp) + '.pkl'))
+                df_2D_panel = pd.read_pickle(Path(sgv['folderpath_experiments_output_data_panel'], 'IB_panel-exp=' + str(i_exp) + '.pkl'))
 
                 ## 一些变量
-                num_1D_row_id = len(df_BB_panel)  # 数据表BB之行数
-                num_2D_id = len(df_IB_panel)  # 数据表IB之行数
-                num_idData = df_BB_panel['id_data'].max() + 1  # 数据表之数据id个数
-                num_turn = df_BB_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
+                num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
+                num_2D_id = len(df_2D_panel)  # 数据表IB之行数
+                num_idData = df_1D_panel['id_data'].max() + 1  # 数据表之数据id个数
+                num_turn = df_1D_panel['turn'].max() + 1  # 总的轮次数（是从0开始计数的)
                 num_step = num_idData  # 总的步进数（是从0开始计数的)
                 ## 根据时间粒度参数，确定时间轴名称及其长度
                 if sgv['vis']['time_granularity'] == '步进粒度':
@@ -1040,7 +1060,7 @@ def main(sgv):
 
                 print("可视化银行状态表格：实验" + str(i_exp))
 
-                df_BankStates = df_BB_panel[sgv['vis']['columnsName_extract']]  # 提取所需列
+                df_BankStates = df_1D_panel[sgv['vis']['columnsName_extract']]  # 提取所需列
 
                 df_BankStates.to_excel(Path(sgv['folderpath_visualize_banksStates_table'], 'BB_panel-exp=' + str(i_exp) + '.xlsx'), index=False)  # 将数据写入新的 Excel 文件
 
@@ -1075,9 +1095,9 @@ def main(sgv):
 
             pass  # if
 
-    else:
-        print("没有可用的数据，无法进行可视化！程序退出。")
-        pass  # if  判断是否已经导入数据
+    # else:
+    #     print("没有可用的数据，无法进行可视化！程序退出。")
+    #     pass  # if  判断是否已经导入数据
 
     if sgv['is_ignore_warning']:
         warnings.filterwarnings("default")  # 恢复警告
