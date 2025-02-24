@@ -149,7 +149,7 @@ def main(sgv):
         #     pass
         # agents_data_paras = df_parameters[df_parameters['type'] == 'agents_data']  # 获取 agents 数据表
 
-        folderpath_experiments_output_data_panel = Path(sgv['folderpath_experiments_output_data'] / "../exp_output_data_panel")
+        folderpath_experiments_output_data_panel = Path(sgv['folderpath_experiments_output_data'] / "../exp_output_data_panel").resolve()
         folderpath_experiments_output_data_panel.mkdir(parents=True, exist_ok=True)  # 创建面板数据文件夹
 
         if sgv['is_enable_multiprocessing_for_transform_output_data']:
