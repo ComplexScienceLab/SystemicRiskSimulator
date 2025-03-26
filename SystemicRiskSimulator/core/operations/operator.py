@@ -38,6 +38,24 @@ class Operator:
             with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                 parameters_works = pd.read_pickle(f)
                 num_parameters_works = len(parameters_works)
+
+                # 根据配置项从参数库中获取参数
+                if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置计划运行所有的实验组
+                    list_idsExperiment_to_run = list(range(0, num_parameters_works))
+                elif isinstance(sgv['list_idsExperiment_to_run'], list):  # 如果设置了实验组 id 列表，那么就设置计划列表内的实验组
+                    list_idsExperiment_to_run = sgv['list_idsExperiment_to_run']
+                elif isinstance(sgv['list_idsExperiment_to_run'], str):  # 如果设置了实验组运行条件文本，那么就解析文本信息，作为查询条件，设置计划符合条件的实验组
+                    query_text = sgv['list_idsExperiment_to_run']
+                    try:
+                        # 使用 eval 解析文本信息，作为查询条件
+                        # parameters_works_filter = parameters_works.query(query_text)
+                        parameters_works_filter = parameters_works[eval(query_text)]
+                        list_idsExperiment_to_run = parameters_works_filter['exp_id'].tolist()
+                    except Exception as e:
+                        raise Exception(f"实验组运行条件文本解析错误！！！")
+                else:
+                    list_idsExperiment_to_run = []
+
                 ## SQLite 数据库统计实验组之上一次的作业之完成情况
                 time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
                 # 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续删除原有的作业数据库再重建
@@ -74,8 +92,10 @@ class Operator:
                 if is_recreate_experiments_works_status_db:  # 创建数据库并初始化表格
                     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
                     c = conn.cursor()
-                    c.execute("""CREATE TABLE IF NOT EXISTS experiments
-                                    (exp_id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)""")
+                    c.execute(
+                        """CREATE TABLE IF NOT EXISTS experiments
+                                                            (exp_id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)"""
+                    )
                     # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
                     for i in range(1, num_parameters_works + 1):
                         c.execute("INSERT INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
@@ -108,23 +128,29 @@ class Operator:
                         list_idsExp_RAW.append(exp_id)
                         pass  # if
                     pass  # for
-                list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(1, num_parameters_works + 1))
+                list_idsExp_PLAN = list_idsExperiment_to_run
                 list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
                 # 保存实验组作业完成状态信息
                 with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
-                    json.dump({
-                        "计划运行的实验组 id": list_idsExp_TASK,
-                        "未运行过的实验组 id": list_idsExp_RAW,
-                        "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                        "已完成的实验组 id": list_idsExp_DONE,
-                        "完成率": len(list_idsExp_DONE) / num_parameters_works,
-                        "中断率": len(list_idsExp_DOING) / num_parameters_works,
-                    }, f)
-                    logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
-                        "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                        "完成率": len(list_idsExp_DONE) / num_parameters_works,
-                        "中断率": len(list_idsExp_DOING) / num_parameters_works,
-                    }))
+                    json.dump(
+                        {
+                            "计划运行的实验组 id": list_idsExp_TASK,
+                            "未运行过的实验组 id": list_idsExp_RAW,
+                            "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                            "已完成的实验组 id": list_idsExp_DONE,
+                            "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                            "中断率": len(list_idsExp_DOING) / num_parameters_works,
+                        }, f
+                    )
+                    logging.info(
+                        "实验组开始运行前，实验组作业完成状态情况如下:\n" + str(
+                            {
+                                "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                                "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                                "中断率": len(list_idsExp_DOING) / num_parameters_works,
+                            }
+                        )
+                    )
                     pass  # with
 
                 ## 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
@@ -146,7 +172,8 @@ class Operator:
             Collector.export_parameter_data(parameters_works, para)  # 导出控制参数数据
             pass  # if
 
-        sgv['len_parameters_works'] = num_parameters_works
+        sgv['num_experiments_to_run'] = len(list_idsExp_TASK)  # 获取实验组数量
+        sgv['num_unfinished_experiments_to_run'] = len(list_idsExp_TASK)  # 未完成的实验组数量
 
         ## 构建本次实验组所需的所有模型
 
@@ -173,7 +200,6 @@ class Operator:
         pass  # function
 
     @classmethod
-    # def operate_run_experiment(cls, A: ModelAgent, A_last: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
     def operate_run_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
         """
         运作运行实验。用于传统的 ABM 模型。
@@ -195,15 +221,14 @@ class Operator:
         sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
 
         # 计算个体数量
-        sgv['num_bank'] = len(A.BB['id_agent'])
+        sgv['num_bank'] = len(A.note['id_bank'])
 
-        content_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
-        # content_Agents = model['model_agents'](content_Finance)  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数
-        if 'model_agents' in model.keys():  # 如果该模型有设计 Content_Agents
-            content_Agents = model['model_agents'](np.array(para['Strategy_default']))  # 初始化 Content_Agents 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
-            content_Model = model['model_main'](content_Finance, content_Agents)  # 初始化 Content_Model 之实例
+        model_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
+        if 'model_strategy' in model.keys():  # 如果该模型有设计 model_Strategy
+            model_Strategy = model['model_strategy'](np.array(para['Strategy_default']))  # 初始化 model_Strategy 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
+            model_main = model['model_main'](model_Finance, model_Strategy)  # 初始化 model_main 之实例
         else:
-            content_Model = model['model_main'](content_Finance)  # 初始化 Content_Model 之实例
+            model_main = model['model_main'](model_Finance)  # 初始化 Content_Model 之实例
             pass  # if
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
@@ -215,8 +240,8 @@ class Operator:
             )
             pass  # if
 
-        # content_Model.model_content(A, A_last, A_data, para, sgv)
-        content_Model.model_content(A, A_data, para, sgv)
+        # model_main.model_content(A, A_last, A_data, para, sgv)
+        model_main.model_content(A, A_data, para, sgv)
 
         pass  # function
 
@@ -232,8 +257,8 @@ class Operator:
         Returns:
             A, A_data, sgv, para
         """
-
-        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
+        if sgv['is_use_sqlite_to_manage_experiments']:
+            record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
 
         ## 重置模拟器全局变量
         sgv['turn'] = 0
@@ -242,7 +267,7 @@ class Operator:
         sgv['process_name'] = "START"
         sgv['is_continue_process'] = True
 
-        logging.info("重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n")
+        logging.info("重置实验。实验ID " + str(sgv['id_experiment']) + " 开始：\n")
 
         logging.info("\n相关实验参数：" + str(para) + "\n")
 
@@ -274,8 +299,8 @@ class Operator:
         # c.execute("INSERT OR REPLACE INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
         # conn.commit()
         # conn.close()
-
-        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
+        if sgv['is_use_sqlite_to_manage_experiments']:
+            record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
 
         # modelEntity = model.content  # 获取节点实体对应的模型实体
 
@@ -289,7 +314,7 @@ class Operator:
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
             log_message(
-                "重置实验" + str(sgv['id_experiment']) + "/" + str(sgv['len_parameters_works']) + "开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
+                "重置实验。实验ID " + str(sgv['id_experiment']) + " 开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
                 is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
@@ -299,8 +324,8 @@ class Operator:
         A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
         # A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
 
-        ## 计算个体数量
-        sgv['num_bank'] = len(A.BB['id_agent'])
+        ## 计算银行数量
+        sgv['num_bank'] = len(A.note['id_bank'])
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
             log_message(
@@ -390,11 +415,12 @@ class Operator:
         sgv['export_data_end_time'] = timeit.default_timer()  # 记录此次导出数据结束时间
         sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
 
-        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DONE", sgv['folderpath_experiments_output_log'])
+        if sgv['is_use_sqlite_to_manage_experiments']:
+            record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DONE", sgv['folderpath_experiments_output_log'])
 
         if not sgv['is_enable_multiprocessing_for_run_model']:
             log_message(
-                "本次实验结束，还剩下" + str(sgv['len_parameters_works'] - sgv['id_experiment']) + "个实验。\n\n",
+                "本次实验结束，还剩下  " + str(sgv['num_unfinished_experiments_to_run']) + "  个实验。\n\n",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
                 f"logger_{sgv['id_experiment']}",
                 is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
@@ -477,8 +503,9 @@ class Operator:
 
         # #HACK 改之后的加载 agents 数据文件代码
         dict_agents_data = {}
+        sgv['id_agents'] = para['id_agents']
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            agents_filename = f"{para_01}"
+            agents_filename = f"id={sgv['id_agents']}-v={para_01}"
             for para_02 in sgv['list_agents_data_filename_para_02']:
                 if isinstance(para[para_02], float):
                     agents_filename += f"-{para_02}={float(para[para_02]):.2f}"

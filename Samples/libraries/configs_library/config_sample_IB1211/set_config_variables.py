@@ -13,25 +13,26 @@ set_config_variables = dict(
         可视化结果程序=True,  # 默认 False
     ),
 
-    list_agents_data_filename_para_01=['BB', 'IB'],  # 设置 agents 初始数据列表
-    list_agents_data_filename_para_02=['year', 'density'],  # 设置 agents 初始数据列表文件名相关的参数
+    list_agents_data_filename_para_01=['BB', 'DA', 'IB', 'IBA'],  # 设置 agents 初始数据列表
+    list_agents_data_filename_para_02=['year', 'density_IB', 'density_IBA'],  # 设置 agents 初始数据列表文件名相关的参数
     init_data_method=r"import data",  # 初始化数据方式。初始化方式有如下："import data"、"set manually"、"randomly"、"only init"。默认"import data"；
     init_parameters_method=r"import data",  # 初始化参数方式。初始化方式有如下："import data"、"set manually"。默认"import data"；
-    type_of_experiments_foldername=r"manually",  # 设置实验文件夹命名方式。取值："default"、"manually"。默认"manually"；
+    # type_of_experiments_foldername=r"default",  # 设置实验文件夹命名方式。取值："default"、"manually"。默认"default"；
+    type_of_experiments_foldername=r"manually",  # 设置实验文件夹命名方式。取值："default"、"manually"。默认"default"；
 
     # # 手动设置生成的实验文件夹全名。用于 `type_of_experiments_foldername=r"manually"`；
-    foldername_set_manually=r"test_sample_IB1111",
+    foldername_set_manually=r"test_sample_IB1211",
 
-    foldername_prefix_experiments=r"test_sample_IB1111",  # 手动设置初始生成的实验文件夹前缀名。默认"default"。当设置实验文件夹命名方式取值 "default" 的时候激活；
+    foldername_prefix_experiments=r"test_测试_IB1211",  # 手动设置初始生成的实验文件夹前缀名。默认"default"。当设置实验文件夹命名方式取值 "default" 的时候激活；
     is_datetime=True,  # 是否使用日期时间作为实验文件夹名称的一部分。默认 True；
-    foldername_outputData=r"SystemicRiskSimulator",  # 输出数据总文件夹名称
-    folderpath_realpath_outputData=r".",  # 从本实验项目根路径文件夹到输出数据总文件夹之相对路径。
-    folderpath_root_experiments=r"Samples/data/sims/",  # 手动设置实验文件夹根路径。默认"data/sims/"；
+    foldername_outputData=r"SystemicRiskData",  # 输出数据总文件夹名称
+    folderpath_realpath_outputData=r".",  # 从本实验项目根路径文件夹到输出数据所在总文件夹之相对路径。
+    folderpath_root_experiments=r"data/sims_test",  # 手动设置实验文件夹根路径。默认"data/sims/"；
     foldername_experiments_output_data=r"exp_output_data",  # 手动设置实验导出数据文件夹名称。默认"exp_output_data"；
-    folderpath_models=r"Samples/libraries/models_library/model_sample_IB1111",  # 模型所在的文件夹
-    folderpath_config=r"Samples/libraries/configs_library/config_sample_IB1111",  # 配置项设置所在的文件夹
-    folderpath_parameters=r"Samples/libraries/parameters_library/parameters_sample_IB1111",  # 参数设置所在的文件夹
-    folderpath_agents=r"Samples/libraries/agents_library/agents_sample_IB1111",  # 个体众数据初始化所在的文件夹
+    folderpath_models=r"libraries/models_library/model_IB1211",  # 模型所在的文件夹
+    folderpath_config=r"libraries/configs_library/config_sample_IB1211",  # 配置项设置所在的文件夹
+    folderpath_parameters=r"libraries/parameters_library/parameters_sample_IB1211",  # 参数设置所在的文件夹
+    folderpath_agents=r"libraries/agents_library/agents_sample_IB1211",  # 个体众数据初始化所在的文件夹
     list_agents_yearName=['2012'],  # 设置 agents 初始数据列表（按照年份名称） #DEBUG 调试专用
     running_mode=r"continue running mode",  # 运行模式。取值："continue running mode": 持续运行模式, "stepping running mode": 步进运行模式}，否则一路直接运行。默认"continue running mode"； #BUG 暂时还没有重构"stepping running mode"的情况，因此设置为该模式会出错
     step_size=1,  # 设置步进跨度；如果该数值设置较大，则相当于直接处理程序；
@@ -41,26 +42,28 @@ set_config_variables = dict(
     is_rerun_all_done_works_in_the_same_experiments=True,  # 是否重新运行所有已经完成的实验。默认 True。如果为 True，则在实验运行之前，重置该实验组当中所有的实验作业运行状态为 "RAW"。
     is_draw_color_band_distribution_before_experiments=False,  # 是否在实验运行之前绘制颜色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。默认 False；
     # list_idsExperiment_to_run=None,  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
-    # list_idsExperiment_to_run=[46, 47, 48, 49, 50, 51, 56, 61, 67, 68],  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
-    # list_idsExperiment_to_run=list(range(1, 68 + 1)),  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
-    list_idsExperiment_to_run=[46],  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。
+    # list_idsExperiment_to_run=[4862, 4970],  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。#DEBUG 用于调试
+    # list_idsExperiment_to_run=list(range(4861, 5076 + 1)),  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。#DEBUG 用于调试
+    list_idsExperiment_to_run=list(range(4861, 4870 + 1)),  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。#DEBUG 用于调试
+    # list_idsExperiment_to_run=[4880],  # 设置要运行的实验编号列表。默认 None，表示运行所有实验。#DEBUG 用于调试
 
     num_bank=5,  # 手动输入最大的银行个数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
+    num_asset=4,  # 手动输入最大的资产种类数（NOTE：如果是手动设置数据，那么设置具体值的时候必须保证是正确的。如果设置为 None 或者不设置，那么就会忽略该变量的设置值，而是根据实际情况计算一个值）；
 
     is_auto_confirmation=True,  # 是否自动确认一些比较危险的操作例如删除、移动、复制文件等。默认 False；
     is_auto_open_outputlog=False,  # 是否自动打开输出日志文件。默认 False；
     system_platform=sys.platform,  # 获取系统信息
 
     # 开发、调试模型专用变量：
-    is_develope_mode=False,  # 是否处于开发状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
+    is_develope_mode=True,  # 是否处于开发状态。默认 False。默认情况下，模拟器通在子进程独立启用相关的程序。启用之后，在模拟器中，将通过函数调用的方式调用各个程序。启用之后，适合在 Python 3.11 开始的版本做断点调试。
     is_maintain_model_files_in_simulator_when_develope_mode=False,  # 如果 is_develope_mode == True ，那么启用是否保留模拟器里的模型？默认 False。运行的时候只会运行输出文件夹内已有的模型，而不会运行外部导入的模型，运行后也不会将其删除。如果你想直接运行输出文件夹内已有的模型，并且做开发模型相关的工作，建议开启此项。
-    is_ignore_warning=False,  # 是否忽略警告。默认 False；
+    is_ignore_warning=True,  # 是否忽略警告。默认 False；
     test_logging=10,  # 日志输出级别。调试级别是10，输出信息级别是20。具体见：[logging —— python的日志记录工具](https://docs.python.org/zh-cn/3.9/library/logging.html#levels)
     test_turn_for_test=4,  # test变量，用于打断点。相关语句：`sgv['turn']>=sgv['test_turn_for_test']`；
     test_max_num_of_turn=1000,  # 最大运行轮次数（测试用）。默认 10000；
 
     # 其它配置
-    is_compress_result_data=False,  # 是否压缩实验结果数据。默认 False。不建议开启此项，除非一批次实验生成大量数据。压缩数据可以在一定程度上有效减少实验数据文件的大小，但是会增加数据的读写时间。最高效的压缩数据方法是手动压缩相关的文件夹为 zip 等格式的文件。
+    is_compress_result_data=False,  # 是否压缩实验结果数据。默认 False
 
     # NOTE 使用的模型类型类型设置：
     is_use_PettingZoo_environments=False,  # 是否使用 PettingZoo 环境框架。默认 True。
@@ -68,7 +71,7 @@ set_config_variables = dict(
     RL_state='using',  # 强化学习状态：可选值包括 'training', 'using'。默认值 'using'； #HACK 注意，当只有处于 'using' 值的时候才会收集运行过程之数据。
 
     # NOTE 手动设置后续处理用的实验文件夹名
-    foldername_experiments=r'test_sample_IB1111',  # 实验文件夹名称
+    foldername_experiments=r'test_sample_IB1211',  # 实验文件夹名称
 
     # NOTE 设置预处理实验结果数据：
     is_enable_multiprocessing_for_transform_output_data=False,  # 是否启用多进程。默认 False；
@@ -102,9 +105,10 @@ set_config_variables = dict(
 
     # #NOTE 设置可视化的选项
     vis=dict(
-        # list_idsExperiment_to_vis=[46, 47, 48, 49, 50, 51, 56, 61, 67, 68],  # 设置要可视化的实验编号列表。默认 None，表示可视化所有实验组。
-        # list_idsExperiment_to_vis=list(range(1, 68 + 1)),  # 设置要可视化的实验编号列表。默认 None，表示可视化所有实验组。
-        list_idsExperiment_to_vis=[46],  # 设置要可视化的实验编号列表。默认 None，表示可视化所有实验组。
+        # list_idsExperiment_to_vis=[4862, 4970],  # 设置要可视化的实验编号列表。默认 None，表示可视化所有实验组。
+        # list_idsExperiment_to_vis=list(range(4861, 5076 + 1)),  # 设置要可视化的实验编号列表。默认 None，表示可视化所有实验组。
+        list_idsExperiment_to_vis=list(range(4861, 4870 + 1)),  # 设置要可视化的实验编号列表。默认 None，表示可视化所有实验组。
+        # list_idsExperiment_to_vis=[4880],  # 设置要可视化的实验编号列表。默认 None，表示可视化所有实验组。
 
         time_granularity=r'步进粒度',  # 绘制的时间线粒度的粒度，有：'轮次粒度'、'步进粒度'；默认'步进粒度'。#DEBUG 还没有验证和适配'turn'。
         one_bank_BalanceSheet_width=600,  # 单个银行资产负债表的宽度
@@ -140,11 +144,6 @@ set_config_variables = dict(
                 colormap=('#FFFFFF', '#FF0000'),
                 relations='cre',
             ),
-            # dict(
-            #     data_name=('Loss_exIB_def_t', 'Default_D_def_s', 'Loss_IB_def'),
-            #     colormap=('#FFFFFF', '#000000'),
-            #     relations='deb',
-            # ),
             dict(
                 data_name=('Loss_IB_def_t', 'Default_IB_def_s', 'Loss_IB_def'),
                 colormap=('#FFFFFF', '#000000'),
@@ -158,6 +157,26 @@ set_config_variables = dict(
             dict(
                 data_name=('Z_IB_all', 'A_IB_all', 'Z_IB'),
                 colormap=('#FFFFFF', '#554EE6'),
+                relations='cre',
+            ),
+            dict(
+                data_name=('A_P', 'DA', 'IBA'),
+                colormap=('#FFFFFF', '#FF00FF'),
+                relations='deb',
+            ),
+            dict(
+                data_name=('A_P', 'DA', 'IDA_exp_factor'),
+                colormap=('#FFFFFF', '#FF00FF'),
+                relations='deb',
+            ),
+            dict(
+                data_name=('Loss_IBA_def_t', 'Shock_IBA_s', 'Loss_IBA'),
+                colormap=('#FFFFFF', '#FF00FF'),
+                relations='deb',
+            ),
+            dict(
+                data_name=('Shock_IBA_def_t', 'Shock_IBA_s', 'Shock_IBA_def'),
+                colormap=('#FFFFFF', '#FF00FF'),
                 relations='cre',
             ),
         ],

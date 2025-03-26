@@ -95,8 +95,8 @@ def main(sgv):
         if sgv['is_enable_multiprocessing_for_run_model']:
             with open(Path(sgv['folderpath_experiments_output_log'], "outputlog.txt"), 'a') as f:
                 for i, para in parameters_works_TASK.iterrows():
-                    if Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt").exists():
-                        with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i + 1}_exp.txt"), 'r') as f_sub:
+                    if Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i}_exp.txt").exists():
+                        with open(Path(sgv['folderpath_experiments_output_log'], f"outputlog_{i}_exp.txt"), 'r') as f_sub:
                             f.write(f_sub.read())
                             pass  # with
                         pass  # if
@@ -113,8 +113,8 @@ def main(sgv):
             para = para.to_dict()  # 将参数数据框转换为字典
             # model = list(models.values())[0]  # 获取当前实验对应的模型
             model = model  # 获取当前实验对应的模型
-            sgv['id_experiment'] = i + 1  # 设定当前实验编号
-
+            sgv['id_experiment'] = i  # 设定当前实验编号
+            sgv['num_unfinished_experiments_to_run'] -= 1  # 更新未完成实验数
             ## 运行一次实验作业
             fun_single_experiment_work(sgv['id_experiment'], sgv, para, model)
             pass  # for
@@ -187,11 +187,6 @@ def main(sgv):
             "中断率": len(list_idsExp_DOING) / num_parameters_works,
         }))
         pass  # with
-
-    ## 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之后的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
-    # ids = [row[0] for row in rows]  # 获取实验组 id
-    # status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-    # Tools.draw_color_band_after_experiments(ids, status_实验组模拟程序_运行状态, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_after_实验组模拟程序.png"))
 
     time_end_统计实验组作业情况 = time.time()  # #DEBUG
     logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG

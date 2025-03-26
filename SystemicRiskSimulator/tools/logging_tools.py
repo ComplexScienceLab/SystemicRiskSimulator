@@ -144,3 +144,29 @@ def log_message(message: str, filepath_log: Union[str, Path], logger_name=None, 
         logging.info(message)
         pass  # if
     pass  # function
+
+
+def log_listener(queue):
+    """
+    日志监听器。监听队列中的日志消息，并处理。
+
+    Args:
+        queue (Queue): 队列
+
+    Returns:
+        None
+
+    """
+    while True:
+        try:
+            record = queue.get()
+            if record is None:
+                break
+            logger = logging.getLogger(record.name)
+            logger.handle(record)
+        except Exception:
+            import sys, traceback
+            print('Error in log listener:', file=sys.stderr)
+            traceback.print_exc(file=sys.stderr)
+
+    pass  # function
