@@ -7,7 +7,20 @@
 # -*- coding: utf-8 -*-
 
 
-from SystemicRiskSimulator.external_packages import warnings, logging, platform, deepcopy, os, Path, time, sys, sqlite3, base64, pickle, multiprocessing, Pool, json, np
+import warnings
+import logging
+import platform
+from copy import deepcopy
+import os
+from pathlib import Path
+import time
+import sys
+import sqlite3
+import base64
+import pickle
+import multiprocessing
+from multiprocessing import Pool
+import json
 from SystemicRiskSimulator.core.operations.operator import Operator
 
 

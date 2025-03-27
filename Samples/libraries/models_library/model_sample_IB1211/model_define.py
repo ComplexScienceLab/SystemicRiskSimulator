@@ -2,7 +2,8 @@
 描述多主体相关的功能
 """
 
-from SystemicRiskSimulator.external_packages import np, dataclass
+import numpy as np
+from dataclasses import dataclass
 from SystemicRiskSimulator.core.define.define_type import StateType, MoneyType, IdsType, AbbrType, NameType
 
 

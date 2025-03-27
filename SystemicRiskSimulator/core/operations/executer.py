@@ -1,10 +1,12 @@
 """
 执行
 """
-from SystemicRiskSimulator.external_packages import logging, pd, deepcopy, dataclass, Optional
+import logging
+from copy import deepcopy
+from dataclasses import dataclass
+from typing import Optional
 from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
-# from SystemicRiskSimulator.data.models.contents.content_finance import Finance
 from SystemicRiskSimulator.core.operations.collector import Collector
 
 pass  # end import

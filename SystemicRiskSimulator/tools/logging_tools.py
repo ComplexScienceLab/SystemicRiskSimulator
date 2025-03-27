@@ -2,7 +2,11 @@
 日志记录器工具
 """
 
-from SystemicRiskSimulator.external_packages import logging, Union, Path, functools, sqlite3
+import logging
+from typing import Union
+from pathlib import Path
+import functools
+import sqlite3
 
 
 def record_work_state(id_experiment: int, state_column: str, state_value: str, folderpath_experiments_output_log: Path):

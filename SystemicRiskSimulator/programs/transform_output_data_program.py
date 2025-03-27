@@ -27,7 +27,24 @@
 # from dask.diagnostics import ProgressBar
 ## NOTE 导入包
 
-from SystemicRiskSimulator.external_packages import platform, Path, sqlite3, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool, multiprocessing, warnings, logging, json, sqlite3, timeit, os
+import platform
+from pathlib import Path
+import sqlite3
+import re
+import glob
+import pandas as pd
+import numpy as np
+from copy import deepcopy
+import sys
+import pickle
+import base64
+from multiprocessing import Pool
+import multiprocessing
+import warnings
+import logging
+import json
+import timeit
+import os
 # from multiprocessing import Lock
 
 from SystemicRiskSimulator.tools.logging_tools import record_work_state

@@ -2,7 +2,19 @@
 运作 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
 """
 
-from SystemicRiskSimulator.external_packages import Path, timeit, os, datetime, logging, deepcopy, json, Any, pickle, sqlite3, np, pd, Optional
+from pathlib import Path
+import timeit
+import os
+import datetime
+import logging
+from copy import deepcopy
+import json
+from typing import Any, Optional
+import pickle
+import sqlite3
+import numpy as np
+import pandas as pd
+
 from SystemicRiskSimulator.tools.logging_tools import log_message, record_work_state
 from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection

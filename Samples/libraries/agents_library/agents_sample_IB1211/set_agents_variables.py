@@ -1,7 +1,8 @@
 """
 设置多主体变量
 """
-from SystemicRiskSimulator.external_packages import pickle, Path
+import pickle
+from pathlib import Path
 from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.core.functions.generation.fun_calibrate_interbank_exposure import calibrate_bilateral_exposure_by_ME_method_use_R_package
 

@@ -18,7 +18,13 @@ from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 from openpyxl.utils import get_column_letter
 
-from SystemicRiskSimulator.external_packages import pd, np, reduce, Optional, re, Path, deepcopy
+import pandas as pd
+import numpy as np
+from functools import reduce
+from typing import Optional
+import re
+from pathlib import Path
+from copy import deepcopy
 from SystemicRiskSimulator.tools.tools import Tools
 
 

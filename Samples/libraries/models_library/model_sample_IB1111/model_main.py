@@ -2,7 +2,8 @@
 模型 sample 01
 """
 
-from SystemicRiskSimulator.external_packages import np, logging
+import numpy as np
+import logging
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.executer import Executer
 from .model_finance import ModelFinance

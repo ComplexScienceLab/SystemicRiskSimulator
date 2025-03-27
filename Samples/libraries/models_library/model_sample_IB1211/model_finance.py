@@ -1,4 +1,6 @@
-from SystemicRiskSimulator.external_packages import np, deepcopy, logging
+import numpy as np
+from copy import deepcopy
+import logging
 from .model_define import ModelAgent
 from SystemicRiskSimulator.core.define.define_type import StateType
 

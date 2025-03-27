@@ -18,7 +18,15 @@ def simulator(config: dict):
     # global sgv, para
 
     # %%
-    from SystemicRiskSimulator.external_packages import os, platform, logging, Path, shutil, datetime, time, subprocess, pickle, base64
+    import platform
+    import logging
+    from pathlib import Path
+    import shutil
+    import datetime
+    import time
+    import subprocess
+    import pickle
+    import base64
     from SystemicRiskSimulator.tools.tools import Tools
     from SystemicRiskSimulator.core.operations.collector import Collector
 

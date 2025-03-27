@@ -1,9 +1,11 @@
 ## 函数区：收集数据
 import shutil
 
-import numpy as np
 from scipy.sparse import csr_array
-from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, deepcopy, time
+import pickle
+import pandas as pd
+from pathlib import Path
+from typing import Optional
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_type import *
