@@ -103,7 +103,7 @@ def main(sgv):
     ## 通过设定的运行方式运行实验组
     match sgv['运行实验组的方式']:
         case '运行ABM实验组':
-            ## #NOTE：顺序运行实验组
+            ## #NOTE：运行ABM实验组
             if sgv['is_enable_multiprocessing_for_run_model']:
                 ## #NOTE：多进程并行处理
                 # para = para.to_dict()  # 将参数数据框转换为字典
@@ -190,7 +190,7 @@ def main(sgv):
                 pass  # if
 
         case '运行Gym和ABM实验组':
-            ## #NOTE：随机运行实验组做应用
+            ## #NOTE：运行Gym和ABM实验组
             # 注册环境
             gym.register(
                 id="gym_env",
@@ -206,8 +206,10 @@ def main(sgv):
                 # 创建环境
                 env = gym.make(
                     "gym_env",
+                    model=model,
                     para=parameters_works_TASK.iloc[0].to_dict(),
-
+                    sgv=sgv,
+                    # model_content=model,
                 )
                 observation, info = env.reset()
                 episode_over = False  # 是否结束本局
