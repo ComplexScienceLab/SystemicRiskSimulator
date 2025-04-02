@@ -82,27 +82,27 @@ def main(sgv):
     parameters_works_TASK = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
 
     ## 设定实验组运行方式
-    if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
+    if sgv['is_use_Gym_environments'] is False:
         ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型
         logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")
-        sgv['运行实验组的方式'] = '顺序运行实验组'
-    elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is False:
+        sgv['运行实验组的方式'] = '运行ABM实验组'
+    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is False:
         ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 进行训练。\n")
-        sgv['运行实验组的方式'] = '顺序运行实验组'
-    elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'using':
+        sgv['运行实验组的方式'] = '运行Gym和ABM实验组'
+    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'using':
         ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")
-        sgv['运行实验组的方式'] = '随机运行实验组做应用'
-    elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'using':
+        sgv['运行实验组的方式'] = '运行强化学习Gym和ABM模型实验组做应用'
+    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'using':
         ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")
-        sgv['运行实验组的方式'] = '随机运行实验组做训练'
+        sgv['运行实验组的方式'] = '运行强化学习Gym和ABM模型实验组做训练'
         pass  # if
 
     ## 通过设定的运行方式运行实验组
     match sgv['运行实验组的方式']:
-        case '顺序运行实验组':
+        case '运行ABM实验组':
             ## #NOTE：顺序运行实验组
             if sgv['is_enable_multiprocessing_for_run_model']:
                 ## #NOTE：多进程并行处理
@@ -189,7 +189,7 @@ def main(sgv):
 
                 pass  # if
 
-        case '随机运行实验组做应用':
+        case '运行Gym和ABM实验组':
             ## #NOTE：随机运行实验组做应用
             # 注册环境
             gym.register(
@@ -204,7 +204,11 @@ def main(sgv):
                 exp_id = np.random.choice(list_idsExp_TASK)
                 parameters_works_TASK = parameters_works[parameters_works['exp_id'] == exp_id]
                 # 创建环境
-                env = gym.make("gym_env", render_mode=None, **parameters_works_TASK.iloc[0].to_dict())
+                env = gym.make(
+                    "gym_env",
+                    para=parameters_works_TASK.iloc[0].to_dict(),
+
+                )
                 observation, info = env.reset()
                 episode_over = False  # 是否结束本局
                 # 对于本局，不断运行 env.step() 直到结束
@@ -281,7 +285,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
     sgv['id_experiment'] = exp_id  # 设定当前实验编号
 
     ## 进行实验作业
-    if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RLlib_frameworks'] is False:
+    if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RL_method'] is False:
         ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型
         logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")  # DEBUG专用
         ## 重置实验
@@ -292,7 +296,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         # Operator.operate_run_experiment(A, A_last, A_data, sgv, para, model)
         ## 收尾实验
         Operator.operate_end_experiment(A_data, sgv)
-    elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is False:
+    elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RL_method'] is False:
         ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，但是没有用强化学习框架 RLlib 进行训练。\n")
         ## 重置实验
@@ -303,7 +307,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
         ## 收尾实验
         Operator.operate_end_experiment(A_data, sgv)
-    elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'using':
+    elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'using':
         ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")
         ## 重置实验
@@ -313,7 +317,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         # A, A_data, sgv, para, model = Operator.operate_step_experiment(sgv, para, model)
         ## 收尾实验
         Operator.operate_end_experiment(A_data, sgv)
-    elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RLlib_frameworks'] is True and sgv['RL_state'] == 'training':
+    elif sgv['is_use_PettingZoo_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'training':
         ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做训练时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 进行训练。\n")
         ## 重置实验

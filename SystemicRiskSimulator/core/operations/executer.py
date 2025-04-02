@@ -117,7 +117,7 @@ class Executer:
         logging.debug(f"                步进：{sgv['step']}，相：{sgv['phase']}，更新源：{update_way}")
         # Finance.update_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         content.update_variables(A, by_way=update_way)  # 更新金融变量
-        if is_collect or sgv['is_use_RLlib_frameworks'] is False or sgv['RL_state'] == 'using':
+        if is_collect or sgv['is_use_RL_method'] is False or sgv['RL_state'] == 'using':
             Collector.collect_agent_data(A, A_data, sgv, para, collect)
             pass  # if
 
