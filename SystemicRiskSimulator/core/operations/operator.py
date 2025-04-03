@@ -257,43 +257,44 @@ class Operator:
 
         pass  # function
 
+    # @classmethod
+    # def operate_reset_experiment_for_PettingZoo(cls, sgv: dict, para: dict):
+    #     """
+    #     运作初始化实验。用于使用基于 PettingZoo 、Gym 等强化学习环境工具包自定义的模型。
+    #
+    #     Args:
+    #         sgv (dict): 模拟器全局变量
+    #         para (dict): 参数变量
+    #
+    #     Returns:
+    #         A, A_data, sgv, para
+    #     """
+    #     if sgv['is_use_sqlite_to_manage_experiments']:
+    #         record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
+    #
+    #     ## 重置模拟器全局变量
+    #     sgv['turn'] = 0
+    #     sgv['phase'] = 0
+    #     sgv['step'] = 0
+    #     sgv['process_name'] = "START"
+    #     sgv['is_continue_process'] = True
+    #
+    #     logging.info("重置实验。实验ID " + str(sgv['id_experiment']) + " 开始：\n")
+    #
+    #     logging.info("\n相关实验参数：" + str(para) + "\n")
+    #
+    #     ## 初始化 agents 数据
+    #     A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
+    #     logging.debug("                    初始化数据")
+    #     A_data = Collector.init_agent_data_collection(A, sgv, para)
+    #     # sgv['step'] += 1
+    #
+    #     return A, A_data, sgv, para
+    #     pass  # function
+
+
     @classmethod
-    def operate_reset_experiment_for_PettingZoo(cls, sgv: dict, para: dict):
-        """
-        运作初始化实验。用于使用基于 PettingZoo 、Gym 等强化学习环境工具包自定义的模型。
-
-        Args:
-            sgv (dict): 模拟器全局变量
-            para (dict): 参数变量
-
-        Returns:
-            A, A_data, sgv, para
-        """
-        if sgv['is_use_sqlite_to_manage_experiments']:
-            record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
-
-        ## 重置模拟器全局变量
-        sgv['turn'] = 0
-        sgv['phase'] = 0
-        sgv['step'] = 0
-        sgv['process_name'] = "START"
-        sgv['is_continue_process'] = True
-
-        logging.info("重置实验。实验ID " + str(sgv['id_experiment']) + " 开始：\n")
-
-        logging.info("\n相关实验参数：" + str(para) + "\n")
-
-        ## 初始化 agents 数据
-        A = cls.install_data(init_data_method=sgv['init_data_method'], sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
-        logging.debug("                    初始化数据")
-        A_data = Collector.init_agent_data_collection(A, sgv)
-        # sgv['step'] += 1
-
-        return A, A_data, sgv, para
-        pass  # function
-
-    @classmethod
-    def operate_reset_experiment(cls, sgv: dict, para: dict, model: Any):
+    def operate_reset_experiment(cls, sgv: dict, para: dict):
         """
         运作初始化实验。
 

@@ -203,12 +203,12 @@ def main(sgv):
 
             exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
             para = paras.iloc[exp_id].to_dict()  # 获取实验组参数作业数据框
-            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)  # 重置实验
+            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
 
             # 创建环境
             env = gym.make(
                 "gym_env",
-                model=model,
+                M=model,
                 A=A,
                 A_data=A_data,
                 para=para,
@@ -220,9 +220,8 @@ def main(sgv):
             np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
             while True:
                 exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-                para = parameters_works[parameters_works['exp_id'] == exp_id]  # 获取实验组参数作业数据框
-                para = para.to_dict()  # 将参数数据框转换为字典
-                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)  # 重置实验
+                para = paras.iloc[exp_id].to_dict()  # 获取实验组参数作业数据框
+                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
                 observation, info = env.reset()
                 episode_over = False  # 是否结束本局
                 # 对于本局，不断运行 env.step() 直到结束
