@@ -295,7 +295,7 @@ class Operator:
     @classmethod
     def operate_reset_experiment(cls, sgv: dict, para: dict, model: Any):
         """
-        运作初始化实验。用于不使用强化学习训练的，自定义的模型。
+        运作初始化实验。
 
         Args:
             sgv (dict): 模拟器全局变量
