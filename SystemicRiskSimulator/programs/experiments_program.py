@@ -230,7 +230,7 @@ def main(sgv):
                     observation, reward, terminated, truncated, info = env.step(action)  # 执行动作
                     episode_over = terminated or truncated  # 检查是否结束
                     pass  # while
-                observation, info = env.reset()  # 重置环境
+                # observation, info = env.reset()  # 重置环境
                 pass  # while
 
             logging.info(f"实验组结束。\n实验组运行总时长：{sgv['experiments_running_time']} 秒。\n导出数据运行总时长：{sgv['export_data_running_time']} 秒。\n模拟器运行总时长：{sgv['simulator_running_time']}秒。")
