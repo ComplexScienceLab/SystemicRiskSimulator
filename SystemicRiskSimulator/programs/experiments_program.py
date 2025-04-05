@@ -198,7 +198,7 @@ def main(sgv):
             # 注册 Gym 环境
             gym.register(
                 id="gym_env",
-                entry_point="libraries.models_library.model_IB3111.model_gymenv:ModelGymEnv",
+                entry_point=sgv['Gym_register_entry_point'],
             )
 
             exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
@@ -209,12 +209,15 @@ def main(sgv):
             env = gym.make(
                 "gym_env",
                 M=model['model_content'],
+                # M=model,
                 A=A,
                 A_data=A_data,
                 para=para,
                 sgv=sgv,
                 # model_content=model,
             )
+
+            model_gymenv = env.unwrapped  # 解包之后的环境
 
             # 每一局，随机选取一个实验组运行。
             np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
@@ -230,11 +233,9 @@ def main(sgv):
                     print(f"第{i}轮")
 
                     # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
-                    # #NOW 改成自定义动作
-                    # # 计算 Shock_IB_def
-                    # 根据策略计算银行间违约比例
-                    A.IB.theta_IB_def = env.M.model_strategy.update_strategies_variables(env.A.IB.theta_IB_def, env.A.BB.strategy_Default_IB_def_s, env.A.BB.isv, env.A.BB, env.A.IB)
-                    actions = env.convert_actions_to_gym(A.IB.theta_IB_def)  # 转换成 Gym 动作
+                    # 采样模型动作
+                    actions = model_gymenv.M.model_action(model_gymenv.A, model_gymenv.A_data, model_gymenv.para, model_gymenv.sgv)  # 计算银行间违约比例
+                    actions = model_gymenv.convert_actions_to_gym(actions)  # 转换成 Gym 动作
                     observations, rewards, terminated, truncated, infos = env.step(actions)  # 执行动作
                     episode_over = terminated or truncated  # 检查是否结束
                     i += 1
