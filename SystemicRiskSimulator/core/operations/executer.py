@@ -28,14 +28,12 @@ class Executer:
         Args:
             content (object): 相关的需要步进更新的功能类或者实例
             A (ModelAgent): 多主体
-            A_last (ModelAgent): 上一回合的多主体
             A_data (AgentDataCollection): 多主体之数据
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
 
         Returns:
             A (ModelAgent): 多主体
-            A_last (ModelAgent): 上一回合的多主体
             sgv (dict): 模拟器全局变量
 
         """
@@ -58,18 +56,16 @@ class Executer:
                 pass  # if
             pass  # if
 
-        # return A, A_last, sgv
         return A, sgv
 
     @classmethod
-    def update_turnStep_by_RL(cls, content, A: ModelAgent, A_last: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def update_turnStep_by_RL(cls, content, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         #NOTE：执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
 
         Args:
             content (object): 相关的需要步进更新的功能类或者实例
             A (ModelAgent): 多主体
-            A_last (ModelAgent): 上一回合的多主体
             A_data (AgentDataCollection): 多主体之数据
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
@@ -83,12 +79,9 @@ class Executer:
         sgv['phase'] = 1  # 逐相复位（起始为1）
         # sgv['process_name'] = process_name
         logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
-        content(A, A_last, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+        content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
-        # 深拷贝一份作为上一回合的数据
-        A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
-
-        return A, A_last, sgv
+        return A, sgv
 
         pass  # function
 

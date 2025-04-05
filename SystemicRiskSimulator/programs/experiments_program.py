@@ -208,7 +208,7 @@ def main(sgv):
             # 创建环境
             env = gym.make(
                 "gym_env",
-                M=model,
+                M=model['model_content'],
                 A=A,
                 A_data=A_data,
                 para=para,
@@ -222,15 +222,24 @@ def main(sgv):
                 exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
                 para = paras.iloc[exp_id].to_dict()  # 获取实验组参数作业数据框
                 A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
-                observation, info = env.reset()
+                observations, infos = env.reset()
                 episode_over = False  # 是否结束本局
                 # 对于本局，不断运行 env.step() 直到结束
+                i = 1
                 while not episode_over:
-                    action = env.action_space.sample()  # 选择动作
-                    observation, reward, terminated, truncated, info = env.step(action)  # 执行动作
+                    print(f"第{i}轮")
+
+                    # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
+                    # #NOW 改成自定义动作
+                    # # 计算 Shock_IB_def
+                    # 根据策略计算银行间违约比例
+                    A.IB.theta_IB_def = env.M.model_strategy.update_strategies_variables(env.A.IB.theta_IB_def, env.A.BB.strategy_Default_IB_def_s, env.A.BB.isv, env.A.BB, env.A.IB)
+                    actions = env.convert_actions_to_gym(A.IB.theta_IB_def)  # 转换成 Gym 动作
+                    observations, rewards, terminated, truncated, infos = env.step(actions)  # 执行动作
                     episode_over = terminated or truncated  # 检查是否结束
+                    i += 1
                     pass  # while
-                # observation, info = env.reset()  # 重置环境
+                # observations, infos = env.reset()  # 重置环境
                 pass  # while
 
             logging.info(f"实验组结束。\n实验组运行总时长：{sgv['experiments_running_time']} 秒。\n导出数据运行总时长：{sgv['export_data_running_time']} 秒。\n模拟器运行总时长：{sgv['simulator_running_time']}秒。")
@@ -334,7 +343,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
     ## 收尾实验
     Operator.operate_end_experiment(A_data, sgv)
 
-    # ## 进行实验作业
+    # ## 进行实验作业  #TODO 无用可删除
     # if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RL_method'] is False:
     #     ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型
     #     logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")  # DEBUG专用
