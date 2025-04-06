@@ -210,13 +210,12 @@ def main(sgv):
             # 创建环境
             env = gym.make(
                 "gym_env",
-                M=model['model_content'],
+                M=model['model_main'],
                 # M=model,
                 A=A,
                 A_data=A_data,
                 para=para,
                 sgv=sgv,
-                # model_content=model,
             )
 
             model_gymenv = env.unwrapped  # 解包之后的环境
@@ -236,7 +235,7 @@ def main(sgv):
 
                     # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
                     # 采样模型动作
-                    actions = model_gymenv.M.model_action(model_gymenv.A, model_gymenv.A_data, model_gymenv.para, model_gymenv.sgv)  # 计算银行间违约比例
+                    actions = model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)  # 计算银行间违约比例
                     actions = model_gymenv.convert_actions_to_gym(actions)  # 转换成 Gym 动作
                     observations, rewards, terminated, truncated, infos = env.step(actions)  # 执行动作
                     episode_over = terminated or truncated  # 检查是否结束
