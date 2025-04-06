@@ -210,7 +210,7 @@ def main(sgv):
             # 创建环境
             env = gym.make(
                 "gym_env",
-                M=model['model_main'],
+                model=model,
                 # M=model,
                 A=A,
                 A_data=A_data,
