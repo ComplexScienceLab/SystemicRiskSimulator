@@ -1,5 +1,5 @@
 """
-运作 #TODO 可以简化掉这个类，将其功能整合到`SystemicRiskSimulator.py`之中
+运作 #TODO 可以简化掉这个类，将其功能整合到`core.py`之中
 """
 
 from pathlib import Path
