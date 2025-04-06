@@ -211,51 +211,51 @@ class Operator:
 
         pass  # function
 
-    @classmethod
-    def operate_run_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
-        """
-        运作运行实验。用于传统的 ABM 模型。
-
-        Args:
-            A (ModelAgent): 多主体
-            A_last (ModelAgent): 上一回合的多主体
-            A_data (AgentDataCollection): 多主体之数据
-            sgv (dict): 模拟器全局变量
-            para (dict): 参数变量
-            model (Any): 模型节点实体
-
-        Returns:
-
-        """
-
-        ## 运行实验
-
-        sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
-
-        # 计算个体数量
-        sgv['num_bank'] = len(A.note['id_bank'])
-
-        model_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
-        if 'model_strategy' in model.keys():  # 如果该模型有设计 model_Strategy
-            model_Strategy = model['model_strategy'](np.array(para['Strategy_default']))  # 初始化 model_Strategy 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
-            model_main = model['model_main'](model_Finance, model_Strategy)  # 初始化 model_main 之实例
-        else:
-            model_main = model['model_main'](model_Finance)  # 初始化 Content_Model 之实例
-            pass  # if
-
-        if not sgv['is_enable_multiprocessing_for_run_model']:
-            log_message(
-                "    开始执行模型内容：",
-                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-                f"logger_{sgv['id_experiment']}",
-                is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
-            )
-            pass  # if
-
-        # model_main.model_content(A, A_last, A_data, para, sgv)
-        model_main.model_content(A, A_data, para, sgv)
-
-        pass  # function
+    # @classmethod
+    # def operate_run_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    #     """
+    #     运作运行实验。用于传统的 ABM 模型。
+    #
+    #     Args:
+    #         A (ModelAgent): 多主体
+    #         A_last (ModelAgent): 上一回合的多主体
+    #         A_data (AgentDataCollection): 多主体之数据
+    #         sgv (dict): 模拟器全局变量
+    #         para (dict): 参数变量
+    #         model (Any): 模型节点实体
+    #
+    #     Returns:
+    #
+    #     """
+    #
+    #     ## 运行实验
+    #
+    #     sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
+    #
+    #     # 计算个体数量
+    #     sgv['num_bank'] = len(A.note['id_bank'])
+    #
+    #     model_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
+    #     if 'model_strategy' in model.keys():  # 如果该模型有设计 model_Strategy
+    #         model_Strategy = model['model_strategy'](np.array(para['Strategy_default']))  # 初始化 model_Strategy 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
+    #         model_main = model['model_main'](model_Finance, model_Strategy)  # 初始化 model_main 之实例
+    #     else:
+    #         model_main = model['model_main'](model_Finance)  # 初始化 Content_Model 之实例
+    #         pass  # if
+    #
+    #     if not sgv['is_enable_multiprocessing_for_run_model']:
+    #         log_message(
+    #             "    开始执行模型内容：",
+    #             Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+    #             f"logger_{sgv['id_experiment']}",
+    #             is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+    #         )
+    #         pass  # if
+    #
+    #     # model_main.model_content(A, A_last, A_data, para, sgv)
+    #     model_main.model_content(A, A_data, para, sgv)
+    #
+    #     pass  # function
 
     # @classmethod
     # def operate_reset_experiment_for_PettingZoo(cls, sgv: dict, para: dict):
@@ -354,92 +354,94 @@ class Operator:
         # return A, A_last, A_data, sgv, para
         pass  # function
 
-    @classmethod
-    def operate_step_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
-        """
-        运作步进实验。用于使用强化学习环境工具包自定义的模型。
+    # @classmethod
+    # def operate_step_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    #     """
+    #     运作步进实验。用于使用强化学习环境工具包自定义的模型。
+    #
+    #     Args:
+    #         A (ModelAgent): 多主体
+    #         A_data (AgentDataCollection): 多主体之数据
+    #         sgv (dict): 模拟器全局变量
+    #         para (dict): 参数字典
+    #         model (Any): 模型节点实体
+    #
+    #     Returns:
+    #
+    #     """
+    #
+    #     ## 运行实验
+    #
+    #     sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
+    #
+    #     modelEntity = model.content  # 获取节点实体对应的模型实体
+    #
+    #     if not sgv['is_enable_multiprocessing_for_run_model']:
+    #         log_message(
+    #             "    开始执行模型内容：",
+    #             Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+    #             f"logger_{sgv['id_experiment']}",
+    #             is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+    #         )
+    #
+    #     sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
+    #
+    #     process = modelEntity.process
+    #
+    #     A, A_data, para, sgv = process(modelEntity, A, A_data, para, sgv)
+    #
+    #     return A, A_data, sgv, para
+    #
+    #     pass  # function
 
-        Args:
-            A (ModelAgent): 多主体
-            A_data (AgentDataCollection): 多主体之数据
-            sgv (dict): 模拟器全局变量
-            para (dict): 参数字典
-            model (Any): 模型节点实体
-
-        Returns:
-
-        """
-
-        ## 运行实验
-
-        sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
-
-        modelEntity = model.content  # 获取节点实体对应的模型实体
-
-        if not sgv['is_enable_multiprocessing_for_run_model']:
-            log_message(
-                "    开始执行模型内容：",
-                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-                f"logger_{sgv['id_experiment']}",
-                is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
-            )
-
-        sgv['process_name'] = modelEntity.attribute.entity_name  # 执行的过程之名称（英文名称）
-
-        process = modelEntity.process
-
-        A, A_data, para, sgv = process(modelEntity, A, A_data, para, sgv)
-
-        return A, A_data, sgv, para
-
-        pass  # function
-
-    @classmethod
-    def operate_end_experiment(cls, A_data: AgentDataCollection, sgv: dict):
-
-        # if True:  # #HACK 如果需要调试，请使用这个替换下面的
-        if not sgv['is_enable_multiprocessing_for_run_model']:
-            log_message(
-                "    结束执行模型内容。",
-                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-                f"logger_{sgv['id_experiment']}",
-                is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
-            )
-
-        sgv['is_continue_process'] = False  # 不再继续运行过程
-
-        sgv['experiment_end_time'] = timeit.default_timer()  # 记录此次实验结束时间
-        sgv['experiments_running_time'] += sgv['experiment_end_time'] - sgv['experiment_start_time']  # 累加此次实验运行时长
-
-        ## 导出数据之于已经收集的，然后结束本次实验
-
-        sgv['export_data_start_time'] = timeit.default_timer()  # 记录此次导出数据开始时间
-
-        if not sgv['is_enable_multiprocessing_for_run_model']:
-            log_message(
-                "                    导出数据",
-                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-                f"logger_{sgv['id_experiment']}",
-                is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
-            )
-
-        Collector.export_agent_data(A_data, sgv)
-
-        sgv['export_data_end_time'] = timeit.default_timer()  # 记录此次导出数据结束时间
-        sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
-
-        if sgv['is_use_sqlite_to_manage_experiments']:
-            record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DONE", sgv['folderpath_experiments_output_log'])
-
-        if not sgv['is_enable_multiprocessing_for_run_model']:
-            log_message(
-                "本次实验结束，还剩下  " + str(sgv['num_unfinished_experiments_to_run']) + "  个实验。\n\n",
-                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
-                f"logger_{sgv['id_experiment']}",
-                is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
-            )
-
-        pass  # function
+    # @classmethod
+    # def operate_end_experiment(cls, A_data: AgentDataCollection, sgv: dict):
+    #
+    #     ## 收尾实验
+    #
+    #     # if True:  # #HACK 如果需要调试，请使用这个替换下面的
+    #     if not sgv['is_enable_multiprocessing_for_run_model']:
+    #         log_message(
+    #             "    结束执行模型内容。",
+    #             Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+    #             f"logger_{sgv['id_experiment']}",
+    #             is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+    #         )
+    #
+    #     sgv['is_continue_process'] = False  # 不再继续运行过程
+    #
+    #     sgv['experiment_end_time'] = timeit.default_timer()  # 记录此次实验结束时间
+    #     sgv['experiments_running_time'] += sgv['experiment_end_time'] - sgv['experiment_start_time']  # 累加此次实验运行时长
+    #
+    #     ## 导出数据之于已经收集的，然后结束本次实验
+    #
+    #     sgv['export_data_start_time'] = timeit.default_timer()  # 记录此次导出数据开始时间
+    #
+    #     if not sgv['is_enable_multiprocessing_for_run_model']:
+    #         log_message(
+    #             "                    导出数据",
+    #             Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+    #             f"logger_{sgv['id_experiment']}",
+    #             is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+    #         )
+    #
+    #     Collector.export_agent_data(A_data, sgv)
+    #
+    #     sgv['export_data_end_time'] = timeit.default_timer()  # 记录此次导出数据结束时间
+    #     sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
+    #
+    #     if sgv['is_use_sqlite_to_manage_experiments']:
+    #         record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DONE", sgv['folderpath_experiments_output_log'])
+    #
+    #     if not sgv['is_enable_multiprocessing_for_run_model']:
+    #         log_message(
+    #             "本次实验结束，还剩下  " + str(sgv['num_unfinished_experiments_to_run']) + "  个实验。\n\n",
+    #             Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+    #             f"logger_{sgv['id_experiment']}",
+    #             is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+    #         )
+    #
+    #     pass  # function
 
     # @classmethod
     # def set_imported_values_to_Bank_variables(cls, para: dict, sgv: dict):

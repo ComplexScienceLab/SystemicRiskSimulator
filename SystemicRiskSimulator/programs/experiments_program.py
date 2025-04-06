@@ -3,7 +3,7 @@
 
 #BUG 如果运行的文件批量太大，可能存在内存泄露的问题。建议每次运行的文件批量不要超过 10000 个。
 """
-
+import timeit
 # -*- coding: utf-8 -*-
 
 
@@ -24,7 +24,9 @@ import json
 import gymnasium as gym
 import numpy as np
 
+from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.operator import Operator
+from SystemicRiskSimulator.tools.logging_tools import log_message, record_work_state
 
 
 def main(sgv):
@@ -338,12 +340,80 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
     ## 重置实验
     A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
     # A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
-    ## 运行实验
-    Operator.operate_run_experiment(A, A_data, sgv, para, model)
-    # Operator.operate_run_experiment(A, A_last, A_data, sgv, para, model)
-    ## 收尾实验
-    Operator.operate_end_experiment(A_data, sgv)
 
+    ## 运行实验
+    sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
+
+    # 计算个体数量
+    sgv['num_bank'] = len(A.note['id_bank'])
+
+    model_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
+    if 'model_strategy' in model.keys():  # 如果该模型有设计 model_Strategy
+        model_Strategy = model['model_strategy'](np.array(para['Strategy_default']))  # 初始化 model_Strategy 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
+        model_main = model['model_main'](model_Finance, model_Strategy)  # 初始化 model_main 之实例
+    else:
+        model_main = model['model_main'](model_Finance)  # 初始化 Content_Model 之实例
+        pass  # if
+
+    if not sgv['is_enable_multiprocessing_for_run_model']:
+        log_message(
+            "    开始执行模型内容：",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+            f"logger_{sgv['id_experiment']}",
+            is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+        )
+        pass  # if
+
+    # model_main.model_content(A, A_last, A_data, para, sgv)
+    model_main.model_content(A, A_data, para, sgv)
+
+    ## 收尾实验
+    # if True:  # #HACK 如果需要调试，请使用这个替换下面的
+    if not sgv['is_enable_multiprocessing_for_run_model']:
+        log_message(
+            "    结束执行模型内容。",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+            f"logger_{sgv['id_experiment']}",
+            is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+        )
+
+    sgv['is_continue_process'] = False  # 不再继续运行过程
+
+    sgv['experiment_end_time'] = timeit.default_timer()  # 记录此次实验结束时间
+    sgv['experiments_running_time'] += sgv['experiment_end_time'] - sgv['experiment_start_time']  # 累加此次实验运行时长
+
+    ## 导出数据之于已经收集的，然后结束本次实验
+
+    sgv['export_data_start_time'] = timeit.default_timer()  # 记录此次导出数据开始时间
+
+    if not sgv['is_enable_multiprocessing_for_run_model']:
+        log_message(
+            "                    导出数据",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+            f"logger_{sgv['id_experiment']}",
+            is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+        )
+
+    Collector.export_agent_data(A_data, sgv)
+
+    sgv['export_data_end_time'] = timeit.default_timer()  # 记录此次导出数据结束时间
+    sgv['export_data_running_time'] += sgv['export_data_end_time'] - sgv['export_data_start_time']  # 累加此次导出数据运行时长
+
+    if sgv['is_use_sqlite_to_manage_experiments']:
+        record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DONE", sgv['folderpath_experiments_output_log'])
+
+    if not sgv['is_enable_multiprocessing_for_run_model']:
+        log_message(
+            "本次实验结束，还剩下  " + str(sgv['num_unfinished_experiments_to_run']) + "  个实验。\n\n",
+            Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+            f"logger_{sgv['id_experiment']}",
+            is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+        )
+
+    # ## 运行实验  #TODO 无用可删除
+    # Operator.operate_run_experiment(A, A_data, sgv, para, model)
+    # ## 收尾实验
+    # Operator.operate_end_experiment(A_data, sgv)
     # ## 进行实验作业  #TODO 无用可删除
     # if sgv['is_use_PettingZoo_environments'] is False and sgv['is_use_RL_method'] is False:
     #     ## NOTE 如果只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型
