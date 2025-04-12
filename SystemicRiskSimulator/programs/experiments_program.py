@@ -235,14 +235,15 @@ def main(sgv):
 
                     # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
                     # 采样模型动作
-                    model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
+                    A, A_data, sgv = model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
                     actions = dict(
                         id_agent=A.BB.id_agent,
                         theta_IB_def=A.IB.theta_IB_def,
                         con=A.BB.con,
                     )
-                    actions = model_gymenv.convert_actions_to_gym(id_agent=A.BB.id_agent, theta_IB_def=A.IB.theta_IB_def, con=A.BB.con)  # 转换成 Gym 动作
-                    observations, rewards, terminated, truncated, infos = env.step(actions)  # 执行动作
+                    # actions = model_gymenv.convert_actions_to_gym(gym_agents_actions=actions, id_agent=A.BB.id_agent, theta_IB_def=A.IB.theta_IB_def, con=A.BB.con)  # 转换成 Gym 动作
+                    actions_gym = model_gymenv.convert_actions_to_gym(actions)  # 转换成 Gym 动作
+                    observations, rewards, terminated, truncated, infos = env.step(actions_gym)  # 执行动作
                     episode_over = terminated or truncated  # 检查是否结束
                     i += 1
                     pass  # while
