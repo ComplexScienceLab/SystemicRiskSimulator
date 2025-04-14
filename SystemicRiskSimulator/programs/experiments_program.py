@@ -244,7 +244,7 @@ def main(sgv):
                     # actions = model_gymenv.convert_actions_to_gym(gym_agents_actions=actions, id_agent=A.BB.id_agent, theta_IB_def=A.IB.theta_IB_def, con=A.BB.con)  # 转换成 Gym 动作
                     actions_gym = model_gymenv.convert_actions_to_gym(actions)  # 转换成 Gym 动作
                     observations, rewards, terminated, truncated, infos = env.step(actions_gym)  # 执行动作
-                    episode_over = terminated or truncated  # 检查是否结束
+                    episode_over = np.array(terminated).all() or np.array(truncated).all()  # 检查是否结束
                     i += 1
                     pass  # while
                 # observations, infos = env.reset()  # 重置环境
