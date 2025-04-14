@@ -81,7 +81,8 @@ def main(sgv):
     # c.execute("SELECT id,status FROM experiments WHERE status='TASK'")
     # rows = c.fetchall()
     # list_idsExp_TASK = [row[0] for row in rows]  # 获取实际上需要运行的实验组 id 列表
-    paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
+
+    # paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
 
     ## 设定实验组运行方式
     if sgv['is_use_Gym_environments'] is False:
@@ -106,6 +107,7 @@ def main(sgv):
     match sgv['运行实验组的方式']:
         case '运行ABM实验组':
             ## #NOTE：运行ABM实验组
+            paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK  #HACK 2025-04-14 移到此处
 
             ## #NOTE：多进程并行处理
             if sgv['is_enable_multiprocessing_for_run_model']:
@@ -206,21 +208,22 @@ def main(sgv):
             ## 运行固定的奖励函数参数
             # 随机选取一个奖励函数的参数
             np.random.seed(57)
-            alpha_reward = round(np.random.choice(paras['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
-
+            alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
             alpha_reward = 0.60  # #DEBUG 调试专用
 
             # 根据 alpha_reward 列分组 parameters_works
             grouped_parameters_works = parameters_works.groupby('alpha_reward')
+            # paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
 
-            para = grouped_parameters_works.get_group(alpha_reward).iloc[0].to_dict()  # 获取实验组参数作业数据框
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
+            # paras = grouped_parameters_works.get_group(alpha_reward).iloc[0].to_dict()  # 获取实际上需要运行的实验组参数作业数据框
             list_idsExp_TASK = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
-            # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-            # para = paras.iloc[exp_id].to_dict()  # 获取实验组参数作业数据框
-            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
-
             # 创建环境
+            exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+            exp_id = 956  # #DEBUG 调试专用
+            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             env = gym.make(
                 "gym_env",
                 model=model,
@@ -230,19 +233,17 @@ def main(sgv):
                 para=para,
                 sgv=sgv,
             )
-
             model_gymenv = env.unwrapped  # 解包之后的环境
 
             # 每一局，随机选取一个实验组运行。
             np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
             while True:
                 exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-
                 exp_id = 956  # #DEBUG 调试专用
 
-                para = paras.iloc[exp_id].to_dict()  # 获取实验组参数作业数据框
-                A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
-                observations, infos = env.reset()
+                para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+                model_gymenv.A, model_gymenv.A_data, model_gymenv.sgv, model_gymenv.para = Operator.operate_reset_experiment(model_gymenv.sgv, model_gymenv.para)  # 重置实验
+                observations, infos = env.reset()  # #BUG 这个有用吗？是否多余？
                 episode_over = False  # 是否结束本局
                 # 对于本局，不断运行 env.step() 直到结束
                 i = 0  # 轮次计数器
@@ -253,7 +254,8 @@ def main(sgv):
 
                     # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
                     # 采样模型动作
-                    A, A_data, sgv = model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
+                    # A, A_data, sgv = model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
+                    model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
                     actions = dict(
                         id_agent=A.BB.id_agent,
                         theta_IB_def=A.IB.theta_IB_def,
