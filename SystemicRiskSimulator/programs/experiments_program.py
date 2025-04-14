@@ -203,8 +203,21 @@ def main(sgv):
                 entry_point=sgv['Gym_register_entry_point'],
             )
 
-            exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-            para = paras.iloc[exp_id].to_dict()  # 获取实验组参数作业数据框
+            ## 运行固定的奖励函数参数
+            # 随机选取一个奖励函数的参数
+            np.random.seed(57)
+            alpha_reward = round(np.random.choice(paras['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
+
+            alpha_reward = 0.60  # #DEBUG 调试专用
+
+            # 根据 alpha_reward 列分组 parameters_works
+            grouped_parameters_works = parameters_works.groupby('alpha_reward')
+
+            para = grouped_parameters_works.get_group(alpha_reward).iloc[0].to_dict()  # 获取实验组参数作业数据框
+            list_idsExp_TASK = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
+
+            # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+            # para = paras.iloc[exp_id].to_dict()  # 获取实验组参数作业数据框
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
 
             # 创建环境
@@ -224,14 +237,19 @@ def main(sgv):
             np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
             while True:
                 exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+
+                exp_id = 956  # #DEBUG 调试专用
+
                 para = paras.iloc[exp_id].to_dict()  # 获取实验组参数作业数据框
                 A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
                 observations, infos = env.reset()
                 episode_over = False  # 是否结束本局
                 # 对于本局，不断运行 env.step() 直到结束
-                i = 1
+                i = 0  # 轮次计数器
                 while not episode_over:
                     print(f"第{i}轮")
+
+                    model_gymenv.M.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
                     # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
                     # 采样模型动作
