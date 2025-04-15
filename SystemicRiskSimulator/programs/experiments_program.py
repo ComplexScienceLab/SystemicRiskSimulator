@@ -97,8 +97,8 @@ def main(sgv):
         ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")
         sgv['运行实验组的方式'] = '运行强化学习Gym和ABM模型实验组做应用'
-    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'using':
-        ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做应用时
+    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'training':
+        ## #NOTE 如果使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib ，并且强化学习状态是做训练时
         logging.debug("\nexperiments_program.py : 使用 PettingZoo 环境框架结合自定义的环境模型，并且使用强化学习框架 RLlib 已经训练过的模型做运用。\n")
         sgv['运行实验组的方式'] = '运行强化学习Gym和ABM模型实验组做训练'
         pass  # if
@@ -237,7 +237,10 @@ def main(sgv):
 
             # 每一局，随机选取一个实验组运行。
             np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
-            while True:
+            sgv['episode'] = 0  # 初始化局数计数器
+            while sgv['episode'] < sgv['max_num_episode']:
+                sgv['episode'] += 1
+                print(f"第 {sgv['episode']} 局开始")
                 exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
                 exp_id = 956  # #DEBUG 调试专用
 
@@ -246,11 +249,8 @@ def main(sgv):
                 observations, infos = env.reset()  # #BUG 这个有用吗？是否多余？
                 episode_over = False  # 是否结束本局
                 # 对于本局，不断运行 env.step() 直到结束
-                i = 0  # 轮次计数器
+                model_gymenv.M.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
                 while not episode_over:
-                    print(f"第{i}轮")
-
-                    model_gymenv.M.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
                     # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
                     # 采样模型动作
@@ -265,9 +265,9 @@ def main(sgv):
                     actions_gym = model_gymenv.convert_actions_to_gym(actions)  # 转换成 Gym 动作
                     observations, rewards, terminated, truncated, infos = env.step(actions_gym)  # 执行动作
                     episode_over = np.array(terminated).all() or np.array(truncated).all()  # 检查是否结束
-                    i += 1
                     pass  # while
                 # observations, infos = env.reset()  # 重置环境
+                print(f"第 {sgv['episode']} 局结束")
                 pass  # while
 
             logging.info(f"实验组结束。\n实验组运行总时长：{sgv['experiments_running_time']} 秒。\n导出数据运行总时长：{sgv['export_data_running_time']} 秒。\n模拟器运行总时长：{sgv['simulator_running_time']}秒。")
