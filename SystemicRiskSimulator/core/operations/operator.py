@@ -396,7 +396,7 @@ class Operator:
             )
 
         ## 初始化 agents 数据
-        A = cls.reset_data(sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
+        A = cls.reset_data(A, A_data, sgv, para)  # 安装本次实验所需的多主体数据
         # A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
 
         ## 计算银行数量
@@ -410,7 +410,7 @@ class Operator:
                 is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
             )
 
-        A_data = Collector.reset_agent_data_collection(A_data, sgv, para)
+        A_data = Collector.reset_agent_data_collection(A, A_data, sgv, para)
 
         return A, A_data, sgv, para
         # return A, A_last, A_data, sgv, para
@@ -712,12 +712,22 @@ class Operator:
         # interbank.__dict__ = deepcopy(dict_bankInterbank)
 
         ## NOTE 当用pandas数据结构时：
-
-        A = pd.Series()
+        # A['BB']['Z_IB_all']  #DEBUG
         for k, v in dict_agents_data.items():
-            A[k] = pd.Series()
-            for k1, v1 in deepcopy(v).items():
-                A[k][k1] = v1
+            # A[k] = pd.Series()
+            if k != 'note':
+                for k1, v1 in deepcopy(v).items():
+                    print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
+                    if isinstance(v1, np.ndarray):
+                        A[k][k1][:] = v1[:]
+                    else:
+                        A[k][k1] = v1
+                        pass  # if
+                    pass  # for
+            else:
+                for k1, v1 in deepcopy(v).items():
+                    print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")
+                    A[k][k1] = v1
             pass  # for
 
         # for k, v in dict_agents_data.items():

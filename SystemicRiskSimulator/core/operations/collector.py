@@ -99,12 +99,13 @@ class Collector:
         pass  # function
 
     @classmethod
-    def reset_agent_data_collection(cls, A, sgv, para):
+    def reset_agent_data_collection(cls, A: pd.Series, A_data, sgv, para):
         """
-        #NOW 重置个体众数据集
+        重置个体众数据集
 
         Args:
             A (pd.Series): 系统性风险个体众
+            A_data (AgentDataCollection): 个体众数据集
             sgv (dict): 模拟器全局变量
             para (dict): 参数变量
 
@@ -144,10 +145,10 @@ class Collector:
 
         A_data = pd.Series()
         for k, v in dict_agents_data.items():
-            if k == "note":  # 如果是备注变量，则直接用 A 赋值
-                A_data[k] = A[k].copy()
-            else:
+            if k != "note":
                 A_data[k] = pd.DataFrame()
+            else:  # 如果是备注变量，则直接用 A 赋值
+                A_data[k] = A[k].copy()
             # for k1, v1 in deepcopy(v).items():  # #HACK 之所以不用这几行是因为这个可能会与模型运行过程的第一步初始化重复初始化赋值。
             #     A_data[k][k1] = v1
             # pass  # for
