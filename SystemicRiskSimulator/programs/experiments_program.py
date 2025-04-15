@@ -240,16 +240,15 @@ def main(sgv):
             sgv['episode'] = 0  # 初始化局数计数器
             while sgv['episode'] < sgv['max_num_episode']:
                 sgv['episode'] += 1
-                print(f"第 {sgv['episode']} 局开始")
                 exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
                 exp_id = 956  # #DEBUG 调试专用
 
                 para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
-                # model_gymenv.A, model_gymenv.A_data, model_gymenv.sgv, model_gymenv.para = Operator.operate_reset_experiment(model_gymenv.sgv, model_gymenv.para)  # 重置实验
-                observations, infos = env.reset()  # #BUG 这个有用吗？是否多余？
+                logging.info(f"第 {sgv['episode']} 局开始")
+                observations, infos = env.reset()  # #BUG 这个输出值如何利用起来？
                 episode_over = False  # 是否结束本局
                 # 对于本局，不断运行 env.step() 直到结束
-                model_gymenv.M.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+                model_gymenv.M.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新  #TODO 考虑把这个移到 env.reset() 当中。
                 while not episode_over:
 
                     # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
@@ -265,9 +264,11 @@ def main(sgv):
                     actions_gym = model_gymenv.convert_actions_to_gym(actions)  # 转换成 Gym 动作
                     observations, rewards, terminated, truncated, infos = env.step(actions_gym)  # 执行动作
                     episode_over = np.array(terminated).all() or np.array(truncated).all()  # 检查是否结束
+                    if episode_over:
+                        logging.info(f"第 {sgv['episode']} 局结束")
                     pass  # while
                 # observations, infos = env.reset()  # 重置环境
-                print(f"第 {sgv['episode']} 局结束")
+                # print(f"第 {sgv['episode']} 局结束")
                 pass  # while
 
             logging.info(f"实验组结束。\n实验组运行总时长：{sgv['experiments_running_time']} 秒。\n导出数据运行总时长：{sgv['export_data_running_time']} 秒。\n模拟器运行总时长：{sgv['simulator_running_time']}秒。")
