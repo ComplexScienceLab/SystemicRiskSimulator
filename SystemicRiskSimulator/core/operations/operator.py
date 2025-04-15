@@ -712,22 +712,33 @@ class Operator:
         # interbank.__dict__ = deepcopy(dict_bankInterbank)
 
         ## NOTE 当用pandas数据结构时：
-        # A['BB']['Z_IB_all']  #DEBUG
         for k, v in dict_agents_data.items():
             # A[k] = pd.Series()
             if k != 'note':
                 for k1, v1 in deepcopy(v).items():
-                    print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
                     if isinstance(v1, np.ndarray):
+                        if (A[k][k1] != v1).any():
+                            print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
                         A[k][k1][:] = v1[:]
                     else:
+                        if A[k][k1] != v1:
+                            print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
                         A[k][k1] = v1
                         pass  # if
                     pass  # for
             else:
                 for k1, v1 in deepcopy(v).items():
-                    print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")
-                    A[k][k1] = v1
+                    for k1, v1 in deepcopy(v).items():
+                        if isinstance(v1, np.ndarray):
+                            if (A[k][k1] != v1).any():
+                                print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
+                            A[k][k1][:] = v1[:]
+                        else:
+                            if A[k][k1] != v1:
+                                print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
+                            A[k][k1] = v1
+                            pass  # if
+                        pass  # for
             pass  # for
 
         # for k, v in dict_agents_data.items():
