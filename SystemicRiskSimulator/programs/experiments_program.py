@@ -242,7 +242,7 @@ def main(sgv):
                 exp_id = 956  # #DEBUG 调试专用
 
                 para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
-                model_gymenv.A, model_gymenv.A_data, model_gymenv.sgv, model_gymenv.para = Operator.operate_reset_experiment(model_gymenv.sgv, model_gymenv.para)  # 重置实验
+                # model_gymenv.A, model_gymenv.A_data, model_gymenv.sgv, model_gymenv.para = Operator.operate_reset_experiment(model_gymenv.sgv, model_gymenv.para)  # 重置实验
                 observations, infos = env.reset()  # #BUG 这个有用吗？是否多余？
                 episode_over = False  # 是否结束本局
                 # 对于本局，不断运行 env.step() 直到结束

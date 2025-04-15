@@ -292,7 +292,6 @@ class Operator:
     #     return A, A_data, sgv, para
     #     pass  # function
 
-
     @classmethod
     def operate_reset_experiment(cls, sgv: dict, para: dict):
         """
@@ -349,6 +348,69 @@ class Operator:
             )
 
         A_data = Collector.init_agent_data_collection(A, sgv, para)
+
+        return A, A_data, sgv, para
+        # return A, A_last, A_data, sgv, para
+        pass  # function
+
+    @classmethod
+    def operate_reset_experiment_for_Gym(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict):
+        """
+        运作初始化实验（用于Gym）。
+
+        Args:
+            A (ModelAgent): 多主体
+            A_data (AgentDataCollection): 多主体之数据
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
+
+        Returns:
+            A, A_data, sgv, para
+        """
+
+        # # 更新实验组作业状态为 "DOING"  #HACK 这个可以删除
+        # conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+        # c = conn.cursor()
+        # c.execute("INSERT OR REPLACE INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, 'DOING')", (sgv['id_experiment'],))
+        # conn.commit()
+        # conn.close()
+        if sgv['is_use_sqlite_to_manage_experiments']:
+            record_work_state(sgv['id_experiment'], "status_实验组模拟程序", "DOING", sgv['folderpath_experiments_output_log'])  # 记录本次实验作业的完成状态为 "DOING"
+
+        # modelEntity = model.content  # 获取节点实体对应的模型实体
+
+        ## 重置模拟器全局变量
+
+        sgv['turn'] = 0
+        sgv['phase'] = 0
+        sgv['step'] = 0
+        sgv['process_name'] = "START"
+        sgv['is_continue_process'] = True
+
+        if not sgv['is_enable_multiprocessing_for_run_model']:
+            log_message(
+                "重置实验。实验ID " + str(sgv['id_experiment']) + " 开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+            )
+
+        ## 初始化 agents 数据
+        A = cls.reset_data(sgv=sgv, para=para)  # 安装本次实验所需的多主体数据
+        # A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))  # #BUG 这个有用吗
+
+        ## 计算银行数量
+        sgv['num_bank'] = len(A.note['id_bank'])
+
+        if not sgv['is_enable_multiprocessing_for_run_model']:
+            log_message(
+                "                    初始化数据",
+                Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
+                f"logger_{sgv['id_experiment']}",
+                is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
+            )
+
+        A_data = Collector.reset_agent_data_collection(A_data, sgv, para)
 
         return A, A_data, sgv, para
         # return A, A_last, A_data, sgv, para
@@ -492,6 +554,115 @@ class Operator:
 
         Args:
             init_data_method (str): 初始化数据的方式
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
+
+        Returns:
+            A (pd.Series): 系统性风险个体众
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
+
+
+        """
+
+        # if init_data_method == "import data":
+        #     BB, IB = cls.set_imported_values_to_Bank_variables(para, sgv)  # 导入数据以初始化银行变量
+        # else:
+        #     raise ("关键词" + str(init_data_method) + "取值错误！")
+        #     pass  # if
+
+        # #HACK 改之前的加载 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
+        # dict_agents_data = {}
+        # for i, agents_data in enumerate(sgv['list_agents_data']):
+        #     with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+        #         dict_agents_data[agents_data] = pickle.load(f)
+        #     pass  # for
+
+        # #HACK 改之后的加载 agents 数据文件代码
+        dict_agents_data = {}
+        sgv['id_agents'] = para['id_agents']
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            agents_filename = f"id={sgv['id_agents']}-v={para_01}"
+            for para_02 in sgv['list_agents_data_filename_para_02']:
+                if isinstance(para[para_02], float):
+                    agents_filename += f"-{para_02}={float(para[para_02]):.2f}"
+                else:
+                    agents_filename += f"-{para_02}={para[para_02]}"
+                pass  # for
+            agents_filename += ".pkl"
+            with open(Path(sgv['folderpath_agents'], 'agents', agents_filename), 'rb') as f:
+                dict_agents_data[para_01] = pickle.load(f)
+            pass  # for
+
+        # with open(Path(sgv['folderpath_agents'], 'agents', f"IB_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+        #     dict_bankInterbank = pickle.load(f)
+
+        # ## NOTE 当用对象字段数据结构时：
+        # bank, interbank = cls.set_default_values_to_Bank_variables()
+        # bank.__dict__ = deepcopy(dict_bankCommercial)
+        # interbank.__dict__ = deepcopy(dict_bankInterbank)
+
+        ## NOTE 当用pandas数据结构时：
+
+        A = pd.Series()
+        for k, v in dict_agents_data.items():
+            A[k] = pd.Series()
+            for k1, v1 in deepcopy(v).items():
+                A[k][k1] = v1
+            pass  # for
+
+        # for k, v in dict_agents_data.items():
+        #     if k == 'BB':
+        #         BB = pd.Series()
+        #         for k, v in deepcopy(v).items():
+        #             BB[k] = v
+        #     elif k == 'IB':
+        #         IB = pd.Series()
+        #         for k, v in deepcopy(v).items():
+        #             IB[k] = v
+        #     pass
+
+        # BB = pd.Series()
+        # for k, v in deepcopy(dict_bankCommercial).items():
+        #     BB[k] = v
+        # IB = pd.Series()
+        # for k, v in deepcopy(dict_bankInterbank).items():
+        #     IB[k] = v
+
+        # sgv['num_bank'] = len(BB.exist)  # 获取 agents 之个体数量
+
+        # # HACK 后续需要统一这两个变量的用法，防止混乱使用
+        # b = (BB.exist | BB.exit)  # 临时设置A.BB示性变量
+        # ib = ((BB.exist | BB.exit).reshape(-1, 1) & (BB.exist | BB.exit).reshape(1, -1))  # 临时设置IB示性变量
+
+        ## 构建Agent模型
+        # NOTE 注意这时候`b`、`ib`变量在后续过程中没有发生变动。
+
+        ## HACK 当用pandas数据结构时：
+        # A = pd.Series([BB, IB, b, ib], index=['BB', 'IB', 'b', 'ib'])
+
+        # ## HACK 当用对象字段数据结构时。
+        # A = ModelAgent(
+        #     0,  # 编号（必备的）
+        #     BB,  # 商业银行群
+        #     b,  # 商业银行群示性变量
+        #     IB,  # 银行间邻接矩阵
+        #     ib,  # 银行间邻接矩阵示性变量
+        # )
+
+        return A
+        pass  # function
+
+    @classmethod
+    def reset_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict):
+        """
+        #NOW 重置已有的个体数据。
+
+        注意：在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值赋值处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
+
+        Args:
+            A (ModelAgent): 多主体
+            A_data (AgentDataCollection): 多主体之数据
             sgv (dict): 模拟器全局变量
             para (dict): 参数变量
 
