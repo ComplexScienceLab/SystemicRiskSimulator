@@ -209,7 +209,7 @@ def main(sgv):
             # 随机选取一个奖励函数的参数
             np.random.seed(57)
             alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
-            alpha_reward = 0.60  # #DEBUG 调试专用
+            # alpha_reward = 0.60  # #DEBUG 调试专用
 
             # 根据 alpha_reward 列分组 parameters_works
             grouped_parameters_works = parameters_works.groupby('alpha_reward')
@@ -221,7 +221,7 @@ def main(sgv):
 
             # 创建环境
             exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-            exp_id = 956  # #DEBUG 调试专用
+            # exp_id = 956  # #DEBUG 调试专用
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             env = gym.make(
@@ -303,7 +303,7 @@ def main(sgv):
 
     ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
     num_parameters_works = len(parameters_works)
-    time_start_统计实验组作业情况 = time.time()  # #DEBUG
+    time_start_统计实验组作业情况 = time.time()
     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
     c = conn.cursor()
     # 检查实验组作业完成状态
@@ -339,8 +339,8 @@ def main(sgv):
         }))
         pass  # with
 
-    time_end_统计实验组作业情况 = time.time()  # #DEBUG
-    logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
+    time_end_统计实验组作业情况 = time.time()
+    logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")
 
     conn.close()  # 关闭数据库连接
 

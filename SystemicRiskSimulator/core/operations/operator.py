@@ -656,7 +656,7 @@ class Operator:
     @classmethod
     def reset_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict):
         """
-        #NOW 重置已有的个体数据。
+        重置已有的个体数据。
 
         注意：在模型中使用类似`BB.Z[b]`这样的形式，目的是为了提取每个变量字段内部的数值赋值处理。不直接使用`BB.Z`，这样仅仅处理字段自身。例如`BB.Z[b] = BB.A[b]`将`BB.A`内的数值赋值给`BB.Z`，而`BB.Z = BB.A`是将`BB.A`作为引用赋值给`BB.Z`，而不是将`BB.A`的数值赋值给`BB.Z`。这样的意义是保证各个字段数据不会引用错乱。
 
@@ -717,12 +717,12 @@ class Operator:
             if k != 'note':
                 for k1, v1 in deepcopy(v).items():
                     if isinstance(v1, np.ndarray):
-                        if (A[k][k1] != v1).any():
-                            print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
+                        # if (A[k][k1] != v1).any():
+                        #     print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
                         A[k][k1][:] = v1[:]
                     else:
-                        if A[k][k1] != v1:
-                            print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
+                        # if A[k][k1] != v1:
+                        #     print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
                         A[k][k1] = v1
                         pass  # if
                     pass  # for
@@ -730,12 +730,12 @@ class Operator:
                 for k1, v1 in deepcopy(v).items():
                     for k1, v1 in deepcopy(v).items():
                         if isinstance(v1, np.ndarray):
-                            if (A[k][k1] != v1).any():
-                                print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
+                            # if (A[k][k1] != v1).any():
+                            #     print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
                             A[k][k1][:] = v1[:]
                         else:
-                            if A[k][k1] != v1:
-                                print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
+                            # if A[k][k1] != v1:
+                            #     print(f"重置 {k} {k1}，旧值{A[k][k1]}，新值{v1}")  # DEBUG
                             A[k][k1] = v1
                             pass  # if
                         pass  # for
