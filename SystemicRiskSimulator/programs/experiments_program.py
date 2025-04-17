@@ -271,8 +271,113 @@ def main(sgv):
                 # print(f"第 {sgv['episode']} 局结束")
                 pass  # while
 
-            sgv['simulator_end_time'] = time.time()  # 记录串行运行模式下，记录模拟器结束运行时刻
-            sgv['simulator_running_time'] = sgv['simulator_end_time'] - sgv['simulator_start_time']  # 记录串行运行模式下，模拟器运行时长
+            sgv['simulator_end_time'] = time.time()  # 记录模拟器结束运行时刻
+            sgv['simulator_running_time'] = sgv['simulator_end_time'] - sgv['simulator_start_time']  # 记录模拟器运行时长
+            logging.info(f"实验组结束。\n实验组运行总时长：{sgv['experiments_running_time']} 秒。\n导出数据运行总时长：{sgv['export_data_running_time']} 秒。\n模拟器运行总时长：{sgv['simulator_running_time']}秒。")
+
+            ## 默认程序打开输出文件查看
+            if sgv['is_auto_open_outputlog']:
+                system = platform.system()
+                if system == 'Darwin':
+                    os.system(r"open " + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
+                elif system == 'Windows':
+                    os.startfile(str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))
+                elif system == 'Linux':
+                    os.system('xdg-open ' + str(Path(sgv['folderpath_experiments_output_log'], r"outputlog.txt")))  # #BUG 还没测试过
+                else:
+                    print("Unsupported operating system")
+                    pass  # if
+                pass  # if
+
+            if sgv['is_ignore_warning']:
+                warnings.filterwarnings("default")  # 恢复警告
+                pass  # if
+
+            ## 关闭日志记录器
+            log_file_handler.close()
+            logger.removeHandler(log_file_handler)
+            log_console_handler.close()
+            logger.removeHandler(log_console_handler)
+
+        case '运行强化学习Gym和ABM模型实验组做训练':
+            ## #NOTE：运行Gym和ABM实验组
+
+            sgv['simulator_start_time'] = time.time()  # 记录串行运行模式下，模拟器开始运行时刻
+
+            # 注册 Gym 环境
+            gym.register(
+                id="gym_env",
+                entry_point=sgv['Gym_register_entry_point'],
+            )
+
+            ## 运行固定的奖励函数参数
+            # 随机选取一个奖励函数的参数
+            np.random.seed(57)
+            alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
+            # alpha_reward = 0.60  # #DEBUG 调试专用
+
+            # 根据 alpha_reward 列分组 parameters_works
+            grouped_parameters_works = parameters_works.groupby('alpha_reward')
+            # paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
+
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
+            # paras = grouped_parameters_works.get_group(alpha_reward).iloc[0].to_dict()  # 获取实际上需要运行的实验组参数作业数据框
+            list_idsExp_TASK = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
+
+            # 创建环境
+            exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+            # exp_id = 956  # #DEBUG 调试专用
+            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
+            env = gym.make(
+                "gym_env",
+                model=model,
+                # M=model,
+                A=A,
+                A_data=A_data,
+                para=para,
+                sgv=sgv,
+            )
+            model_gymenv = env.unwrapped  # 解包之后的环境
+
+            # 每一局，随机选取一个实验组运行。
+            np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
+            sgv['episode'] = 0  # 初始化局数计数器
+            while sgv['episode'] < sgv['max_num_episode']:
+                sgv['episode'] += 1
+                exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                exp_id = 956  # #DEBUG 调试专用
+
+                para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+                logging.info(f"第 {sgv['episode']} 局开始")
+                observations, infos = env.reset()  # #BUG 这个输出值如何利用起来？
+                episode_over = False  # 是否结束本局
+                # 对于本局，不断运行 env.step() 直到结束
+                model_gymenv.M.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新  #TODO 考虑把这个移到 env.reset() 当中。
+                while not episode_over:
+
+                    # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
+                    # 采样模型动作
+                    # A, A_data, sgv = model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
+                    model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
+                    actions = dict(
+                        id_agent=A.BB.id_agent,
+                        theta_IB_def=A.IB.theta_IB_def,
+                        con=A.BB.con,
+                    )
+                    # actions = model_gymenv.convert_actions_to_gym(gym_agents_actions=actions, id_agent=A.BB.id_agent, theta_IB_def=A.IB.theta_IB_def, con=A.BB.con)  # 转换成 Gym 动作
+                    actions_gym = model_gymenv.convert_actions_to_gym(actions)  # 转换成 Gym 动作
+                    observations, rewards, terminated, truncated, infos = env.step(actions_gym)  # 执行动作
+                    episode_over = np.array(terminated).all() or np.array(truncated).all()  # 检查是否结束
+                    if episode_over:
+                        logging.info(f"第 {sgv['episode']} 局结束")
+                    pass  # while
+                # observations, infos = env.reset()  # 重置环境
+                # print(f"第 {sgv['episode']} 局结束")
+                pass  # while
+
+            sgv['simulator_end_time'] = time.time()  # 记录模拟器结束运行时刻
+            sgv['simulator_running_time'] = sgv['simulator_end_time'] - sgv['simulator_start_time']  # 记录模拟器运行时长
             logging.info(f"实验组结束。\n实验组运行总时长：{sgv['experiments_running_time']} 秒。\n导出数据运行总时长：{sgv['export_data_running_time']} 秒。\n模拟器运行总时长：{sgv['simulator_running_time']}秒。")
 
             ## 默认程序打开输出文件查看
