@@ -234,6 +234,7 @@ def main(sgv):
                 sgv=sgv,
             )
 
+            ## # ----------------------------------------------------------------------------------
             model_gymenv = env.unwrapped  # 解包之后的环境
 
             # 每一局，随机选取一个实验组运行。
@@ -266,6 +267,7 @@ def main(sgv):
                         logging.info(f"第 {sgv['episode']} 局结束")
                     pass  # while
                 pass  # while
+            ## # ----------------------------------------------------------------------------------
 
             sgv['simulator_end_time'] = time.time()  # 记录模拟器结束运行时刻
             sgv['simulator_running_time'] = sgv['simulator_end_time'] - sgv['simulator_start_time']  # 记录模拟器运行时长
