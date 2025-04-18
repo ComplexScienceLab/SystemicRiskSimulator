@@ -340,42 +340,40 @@ def main(sgv):
             )
             model_gymenv = env.unwrapped  # 解包之后的环境
 
-            # 每一局，随机选取一个实验组运行。
-            np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
-            sgv['episode'] = 0  # 初始化局数计数器
-            while sgv['episode'] < sgv['max_num_episode']:
-                sgv['episode'] += 1
-                exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-                exp_id = 956  # #DEBUG 调试专用
+            # 环境参数
+            num_agents = env.sgv['num_bank']
+            obs_dim = env.observation_space[0].spaces['Loss_IB_def_t'].shape[0]
+            act_dim = env.action_space[0].spaces['Default_IB_def_s'].shape[0]
 
-                para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
-                logging.info(f"第 {sgv['episode']} 局开始")
-                observations, infos = env.reset()  # #BUG 这个输出值如何利用起来？
-                episode_over = False  # 是否结束本局
-                # 对于本局，不断运行 env.step() 直到结束
-                model_gymenv.M.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新  #TODO 考虑把这个移到 env.reset() 当中。
-                while not episode_over:
+            # 初始化强化学习算法
+            mappo = MAPPO(obs_dim, act_dim, num_agents)
 
-                    # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
-                    # 采样模型动作
-                    # A, A_data, sgv = model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
-                    model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
-                    actions = dict(
-                        id_agent=A.BB.id_agent,
-                        theta_IB_def=A.IB.theta_IB_def,
-                        con=A.BB.con,
-                    )
-                    # actions = model_gymenv.convert_actions_to_gym(gym_agents_actions=actions, id_agent=A.BB.id_agent, theta_IB_def=A.IB.theta_IB_def, con=A.BB.con)  # 转换成 Gym 动作
-                    actions_gym = model_gymenv.convert_actions_to_gym(actions)  # 转换成 Gym 动作
-                    observations, rewards, terminated, truncated, infos = env.step(actions_gym)  # 执行动作
-                    episode_over = np.array(terminated).all() or np.array(truncated).all()  # 检查是否结束
-                    if episode_over:
-                        logging.info(f"第 {sgv['episode']} 局结束")
-                    pass  # while
-                # observations, infos = env.reset()  # 重置环境
-                # print(f"第 {sgv['episode']} 局结束")
-                pass  # while
+            # 训练参数
+            num_episodes = 1000
+            max_steps = 100
 
+            for episode in range(num_episodes):
+                obs, _ = env.reset()
+                episode_rewards = np.zeros(num_agents)
+
+                for step in range(max_steps):
+                    actions = []
+                    for agent_id in range(num_agents):
+                        obs_tensor = torch.tensor(obs[agent_id]['Loss_IB_def_t'], dtype=torch.float32)
+                        action_probs, _ = mappo.models[agent_id](obs_tensor)
+                        action = Categorical(action_probs).sample().item()
+                        actions.append(action)
+
+                    next_obs, rewards, dones, _, _ = env.step(actions)
+                    mappo.update(obs, actions, rewards, dones, next_obs)
+
+                    obs = next_obs
+                    episode_rewards += np.array(rewards)
+
+                    if all(dones):
+                        break
+
+                print(f"Episode {episode + 1}, Rewards: {episode_rewards}")
             sgv['simulator_end_time'] = time.time()  # 记录模拟器结束运行时刻
             sgv['simulator_running_time'] = sgv['simulator_end_time'] - sgv['simulator_start_time']  # 记录模拟器运行时长
             logging.info(f"实验组结束。\n实验组运行总时长：{sgv['experiments_running_time']} 秒。\n导出数据运行总时长：{sgv['export_data_running_time']} 秒。\n模拟器运行总时长：{sgv['simulator_running_time']}秒。")
