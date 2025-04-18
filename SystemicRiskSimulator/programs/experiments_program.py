@@ -215,10 +215,8 @@ def main(sgv):
 
             # 根据 alpha_reward 列分组 parameters_works
             grouped_parameters_works = parameters_works.groupby('alpha_reward')
-            # paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
 
-            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
-            # paras = grouped_parameters_works.get_group(alpha_reward).iloc[0].to_dict()  # 获取实际上需要运行的实验组参数作业数据框
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
             sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
             # 创建环境
@@ -253,25 +251,20 @@ def main(sgv):
                 # 对于本局，不断运行 env.step() 直到结束
                 model_gymenv.M.model_content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新  #TODO 考虑把这个移到 env.reset() 当中。
                 while not episode_over:
-
-                    # action = env.action_space.sample()  # 选择动作  #TODO 仅作为参考，可以删除
                     # 采样模型动作
-                    # A, A_data, sgv = model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
+                    # action = env.action_space.sample()  # 选择动作  #TODO 这行仅作为参考，可以删除
                     model_gymenv.M.model_action(A=model_gymenv.A, A_data=model_gymenv.A_data, para=model_gymenv.para, sgv=model_gymenv.sgv)
                     actions = dict(
                         id_agent=A.BB.id_agent,
                         theta_IB_def=A.IB.theta_IB_def,
                         con=A.BB.con,
                     )
-                    # actions = model_gymenv.convert_actions_to_gym(gym_agents_actions=actions, id_agent=A.BB.id_agent, theta_IB_def=A.IB.theta_IB_def, con=A.BB.con)  # 转换成 Gym 动作
                     actions_gym = model_gymenv.convert_actions_to_gym(actions)  # 转换成 Gym 动作
                     observations, rewards, terminated, truncated, infos = env.step(actions_gym)  # 执行动作
                     episode_over = np.array(terminated).all() or np.array(truncated).all()  # 检查是否结束
                     if episode_over:
                         logging.info(f"第 {sgv['episode']} 局结束")
                     pass  # while
-                # observations, infos = env.reset()  # 重置环境
-                # print(f"第 {sgv['episode']} 局结束")
                 pass  # while
 
             sgv['simulator_end_time'] = time.time()  # 记录模拟器结束运行时刻
