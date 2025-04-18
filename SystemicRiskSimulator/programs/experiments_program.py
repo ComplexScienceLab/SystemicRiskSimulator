@@ -197,7 +197,9 @@ def main(sgv):
         case '运行Gym和ABM实验组':
             ## #NOTE：运行Gym和ABM实验组
 
-            sgv['simulator_start_time'] = time.time()  # 记录串行运行模式下，模拟器开始运行时刻
+            sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
+
+            model = model.model(parameters_works, sgv)
 
             # 注册 Gym 环境
             gym.register(
@@ -217,10 +219,10 @@ def main(sgv):
 
             paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
             # paras = grouped_parameters_works.get_group(alpha_reward).iloc[0].to_dict()  # 获取实际上需要运行的实验组参数作业数据框
-            list_idsExp_TASK = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
+            sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
             # 创建环境
-            exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+            exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
             # exp_id = 956  # #DEBUG 调试专用
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
@@ -233,6 +235,7 @@ def main(sgv):
                 para=para,
                 sgv=sgv,
             )
+
             model_gymenv = env.unwrapped  # 解包之后的环境
 
             # 每一局，随机选取一个实验组运行。
@@ -299,10 +302,10 @@ def main(sgv):
             log_console_handler.close()
             logger.removeHandler(log_console_handler)
 
-        case '运行强化学习Gym和ABM模型实验组做训练':
+        case '运行强化学习和Gym和ABM模型实验组做训练':
             ## #NOTE：运行Gym和ABM实验组
 
-            sgv['simulator_start_time'] = time.time()  # 记录串行运行模式下，模拟器开始运行时刻
+            sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
             # 注册 Gym 环境
             gym.register(
