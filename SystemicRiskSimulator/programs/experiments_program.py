@@ -23,6 +23,9 @@ from multiprocessing import Pool
 import json
 import gymnasium as gym
 import numpy as np
+import torch
+from matplotlib import pyplot as plt
+from torch.distributions import Categorical
 
 from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.operator import Operator
@@ -298,80 +301,313 @@ def main(sgv):
             logger.removeHandler(log_console_handler)
 
         case '运行强化学习和Gym和ABM模型实验组做训练':
-            ## #NOTE：运行Gym和ABM实验组
+
+            ## #NOTE：运行强化学习和Gym和ABM模型实验组做训练
+
+            ## ## #NOTE：自定义的强化学习  new  2025-04-19
 
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
-            # 注册 Gym 环境
+            ## # ----------------------------------------------------------------------------------
+            # import numpy as np
+            # import logging
+            # from model_RL_algorithm import PPO
+
+            # 初始化 Gym 环境和自定义环境模型
             gym.register(
                 id="gym_env",
                 entry_point=sgv['Gym_register_entry_point'],
             )
 
-            ## 运行固定的奖励函数参数
             # 随机选取一个奖励函数的参数
             np.random.seed(57)
-            alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
-            # alpha_reward = 0.60  # #DEBUG 调试专用
-
-            # 根据 alpha_reward 列分组 parameters_works
+            alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)
             grouped_parameters_works = parameters_works.groupby('alpha_reward')
-            # paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
-
-            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
-            # paras = grouped_parameters_works.get_group(alpha_reward).iloc[0].to_dict()  # 获取实际上需要运行的实验组参数作业数据框
-            list_idsExp_TASK = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]
+            sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()
 
             # 创建环境
-            exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-            # exp_id = 956  # #DEBUG 调试专用
-            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
-            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
+            exp_id = np.random.choice(sgv['list_idsExp_TASK'])
+            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
+            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
             env = gym.make(
                 "gym_env",
                 model=model,
-                # M=model,
                 A=A,
                 A_data=A_data,
                 para=para,
                 sgv=sgv,
             )
-            model_gymenv = env.unwrapped  # 解包之后的环境
 
-            # 环境参数
-            num_agents = env.sgv['num_bank']
-            obs_dim = env.observation_space[0].spaces['Loss_IB_def_t'].shape[0]
-            act_dim = env.action_space[0].spaces['Default_IB_def_s'].shape[0]
+            # 初始化 PPO 算法
+            obs_dim = env.observation_space.shape[0]
+            act_dim = env.action_space.n
+            ppo = PPO(obs_dim, act_dim, lr=1e-3, gamma=0.99, clip_eps=0.2)
 
-            # 初始化强化学习算法
-            mappo = MAPPO(obs_dim, act_dim, num_agents)
+            # 主循环
+            np.random.seed(114)
+            sgv['episode'] = 0
+            while sgv['episode'] < sgv['max_num_episode']:
+                sgv['episode'] += 1
+                exp_id = np.random.choice(list_idsExp_TASK)
+                para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
+                logging.info(f"第 {sgv['episode']} 局开始")
 
-            # 训练参数
-            num_episodes = 1000
-            max_steps = 100
+                # 重置环境
+                observations, infos = env.reset()
+                episode_over = False
+                episode_rewards = []
+                obs_list, action_list, reward_list, done_list, next_obs_list = [], [], [], [], []
 
-            for episode in range(num_episodes):
-                obs, _ = env.reset()
-                episode_rewards = np.zeros(num_agents)
+                while not episode_over:
+                    # 使用 PPO 策略选择动作
+                    obs_tensor = torch.tensor(observations, dtype=torch.float32)
+                    action_probs, _ = ppo.model(obs_tensor)
+                    dist = torch.distributions.Categorical(action_probs)
+                    action = dist.sample().item()
 
-                for step in range(max_steps):
-                    actions = []
-                    for agent_id in range(num_agents):
-                        obs_tensor = torch.tensor(obs[agent_id]['Loss_IB_def_t'], dtype=torch.float32)
-                        action_probs, _ = mappo.models[agent_id](obs_tensor)
-                        action = Categorical(action_probs).sample().item()
-                        actions.append(action)
+                    # 执行动作
+                    next_observations, rewards, terminated, truncated, infos = env.step(action)
+                    episode_over = np.array(terminated).all() or np.array(truncated).all()
 
-                    next_obs, rewards, dones, _, _ = env.step(actions)
-                    mappo.update(obs, actions, rewards, dones, next_obs)
+                    # 收集经验
+                    obs_list.append(observations)
+                    action_list.append(action)
+                    reward_list.append(rewards)
+                    done_list.append(terminated)
+                    next_obs_list.append(next_observations)
 
-                    obs = next_obs
-                    episode_rewards += np.array(rewards)
+                    # 更新当前观测
+                    observations = next_observations
+                    episode_rewards.append(rewards)
 
-                    if all(dones):
-                        break
+                    if episode_over:
+                        logging.info(f"第 {sgv['episode']} 局结束，总奖励: {sum(episode_rewards)}")
 
-                print(f"Episode {episode + 1}, Rewards: {episode_rewards}")
+                # 更新 PPO 策略
+                ppo.update(
+                    obs_list,
+                    action_list,
+                    reward_list,
+                    done_list,
+                    next_obs_list
+                )
+            ## # ----------------------------------------------------------------------------------
+
+
+
+            # ## ## #NOTE：自定义的强化学习  old  2025-04-18
+            #
+            # sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
+            #
+            # # 注册 Gym 环境
+            # gym.register(
+            #     id="gym_env",
+            #     entry_point=sgv['Gym_register_entry_point'],
+            # )
+            #
+            # ## 运行固定的奖励函数参数
+            # # 随机选取一个奖励函数的参数
+            # np.random.seed(57)
+            # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
+            # # alpha_reward = 0.60  # #DEBUG 调试专用
+            #
+            # # 根据 alpha_reward 列分组 parameters_works
+            # grouped_parameters_works = parameters_works.groupby('alpha_reward')
+            # # paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
+            #
+            # paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
+            # # paras = grouped_parameters_works.get_group(alpha_reward).iloc[0].to_dict()  # 获取实际上需要运行的实验组参数作业数据框
+            # list_idsExp_TASK = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
+            #
+            # # 创建环境
+            # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+            # # exp_id = 956  # #DEBUG 调试专用
+            # para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+            # A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
+            # env = gym.make(
+            #     "gym_env",
+            #     model=model,
+            #     # M=model,
+            #     A=A,
+            #     A_data=A_data,
+            #     para=para,
+            #     sgv=sgv,
+            # )
+            # model_gymenv = env.unwrapped  # 解包之后的环境
+            #
+            # # 环境参数
+            # num_agents = env.sgv['num_bank']
+            # obs_dim = env.observation_space[0].spaces['Loss_IB_def_t'].shape[0]
+            # act_dim = env.action_space[0].spaces['Default_IB_def_s'].shape[0]
+            #
+            # # 初始化强化学习算法
+            # mappo = model(obs_dim, act_dim, num_agents)
+            #
+            # # 训练参数
+            # num_episodes = 1000
+            # max_steps = 100
+            #
+            # for episode in range(num_episodes):
+            #     obs, _ = env.reset()
+            #     episode_rewards = np.zeros(num_agents)
+            #
+            #     for step in range(max_steps):
+            #         actions = []
+            #         for agent_id in range(num_agents):
+            #             obs_tensor = torch.tensor(obs[agent_id]['Loss_IB_def_t'], dtype=torch.float32)
+            #             action_probs, _ = mappo.models[agent_id](obs_tensor)
+            #             action = Categorical(action_probs).sample().item()
+            #             actions.append(action)
+            #
+            #         next_obs, rewards, dones, _, _ = env.step(actions)
+            #         mappo.update(obs, actions, rewards, dones, next_obs)
+            #
+            #         obs = next_obs
+            #         episode_rewards += np.array(rewards)
+            #
+            #         if all(dones):
+            #             break
+            #
+            #     print(f"Episode {episode + 1}, Rewards: {episode_rewards}")
+
+            ## ## #NOTE：来自《动手学强化学习》的强化学习。这个是原配的 2025-04-18
+            #
+            # # actor_lr = 1e-3  # 策略网络学习率
+            # # critic_lr = 1e-2  # 价值网络学习率
+            # # num_episodes = 500  # 训练的轮数
+            # # hidden_dim = 128  # 隐藏层维度
+            # # gamma = 0.98  # 折扣因子
+            # # gae_lambda = 0.95  # GAE 参数
+            # # epochs = 10  # 每批数据训练的轮数
+            # # eps = 0.2  # PPO 的截断参数
+            #
+            # # device = torch.device("cuda") if torch.cuda.is_available() else torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
+            # device = torch.device("cpu")  # #DEBUG 如果访问失败则使用这个。
+            # print(device)
+            #
+            # env_name = 'CartPole-v0'
+            # env = gym.make(env_name)
+            # env.seed(0)
+            # torch.manual_seed(0)
+            # state_dim = env.observation_space.shape[0]
+            # action_dim = env.action_space.n
+            # agent = model.model.model_algorithm(state_dim, sgv['hidden_dim'], action_dim, sgv['actor_lr'], sgv['critic_lr'], sgv['gae_lambda'],
+            #                                     sgv['epochs'], sgv['eps'], sgv['gamma'], device)
+            #
+            #
+            # return_list = train_on_policy_agent(env, agent, sgv['num_episodes'])
+            #
+            # episodes_list = list(range(len(return_list)))
+            # plt.plot(episodes_list, return_list)
+            # plt.xlabel('Episodes')
+            # plt.ylabel('Returns')
+            # plt.title('PPO on {}'.format(env_name))
+            # plt.show()
+            #
+            #
+            # mv_return = moving_average(return_list, 9)
+            # plt.plot(episodes_list, mv_return)
+            # plt.xlabel('Episodes')
+            # plt.ylabel('Returns')
+            # plt.title('PPO on {}'.format(env_name))
+            # plt.show()
+            #
+            # ## ----------------------------------------------------------------------
+
+            ## ## #NOTE：来自《动手学强化学习》的强化学习。这个是适配的 2025-04-19
+
+            import numpy as np
+            import logging
+            import torch
+            from model_RL_algorithm_从《动手学强化学习》适配
+            import ModelAlgorithm
+
+            # 初始化 Gym 环境和自定义环境模型
+            gym.register(
+                id="gym_env",
+                entry_point=sgv['Gym_register_entry_point'],
+            )
+
+            # 随机选取一个奖励函数的参数
+            np.random.seed(57)
+            alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)
+            grouped_parameters_works = parameters_works.groupby('alpha_reward')
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]
+            sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()
+
+            # 创建环境
+            exp_id = np.random.choice(sgv['list_idsExp_TASK'])
+            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
+            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+            env = gym.make(
+                "gym_env",
+                model=model,
+                A=A,
+                A_data=A_data,
+                para=para,
+                sgv=sgv,
+            )
+
+            # 初始化 PPO 算法
+            obs_dim = env.observation_space.shape[0]
+            act_dim = env.action_space.n
+            hidden_dim = 64  # 隐藏层维度
+            ppo = ModelAlgorithm.PPO(
+                state_dim=obs_dim,
+                hidden_dim=hidden_dim,
+                action_dim=act_dim,
+                actor_lr=1e-3,
+                critic_lr=1e-3,
+                gae_lambda=0.95,
+                epochs=10,
+                eps=0.2,
+                gamma=0.99,
+                device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            )
+
+            # 主循环
+            np.random.seed(114)
+            sgv['episode'] = 0
+            while sgv['episode'] < sgv['max_num_episode']:
+                sgv['episode'] += 1
+                exp_id = np.random.choice(list_idsExp_TASK)
+                para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
+                logging.info(f"第 {sgv['episode']} 局开始")
+
+                # 重置环境
+                observations, infos = env.reset()
+                episode_over = False
+                episode_rewards = []
+                transition_dict = {'states': [], 'actions': [], 'rewards': [], 'next_states': [], 'dones': []}
+
+                while not episode_over:
+                    # 使用 PPO 策略选择动作
+                    action = ppo.take_action(observations)
+
+                    # 执行动作
+                    next_observations, rewards, terminated, truncated, infos = env.step(action)
+                    episode_over = np.array(terminated).all() or np.array(truncated).all()
+
+                    # 收集经验
+                    transition_dict['states'].append(observations)
+                    transition_dict['actions'].append(action)
+                    transition_dict['rewards'].append(rewards)
+                    transition_dict['next_states'].append(next_observations)
+                    transition_dict['dones'].append(terminated)
+
+                    # 更新当前观测
+                    observations = next_observations
+                    episode_rewards.append(rewards)
+
+                    if episode_over:
+                        logging.info(f"第 {sgv['episode']} 局结束，总奖励: {sum(episode_rewards)}")
+
+                # 更新 PPO 策略
+                ppo.update(transition_dict)
+
+            ## ----------------------------------------------------------------------
+
             sgv['simulator_end_time'] = time.time()  # 记录模拟器结束运行时刻
             sgv['simulator_running_time'] = sgv['simulator_end_time'] - sgv['simulator_start_time']  # 记录模拟器运行时长
             logging.info(f"实验组结束。\n实验组运行总时长：{sgv['experiments_running_time']} 秒。\n导出数据运行总时长：{sgv['export_data_running_time']} 秒。\n模拟器运行总时长：{sgv['simulator_running_time']}秒。")
