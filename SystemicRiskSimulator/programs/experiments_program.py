@@ -67,7 +67,7 @@ def main(sgv):
 
     ## 初始化、构建、安装模型
     if sgv['init_parameters_method'] == 'import data':
-        sgv, list_idsExp_TASK, parameters_works, model = Operator.operate_installing(sgv)
+        sgv, list_idsExp_TASK, parameters_works, model_dict = Operator.operate_installing(sgv)
         pass  # if
 
     ## 运行实验组
@@ -129,7 +129,7 @@ def main(sgv):
                 works = []
                 for i, para in paras.iterrows():
                     exp_id = int(para.loc[i, 'exp_id'])  # 获取当前实验编号
-                    work = (exp_id, sgv, para, model)
+                    work = (exp_id, sgv, para, model_dict)
                     works.append(work)
                     pass  # for
 
@@ -159,7 +159,7 @@ def main(sgv):
                 for i, para in paras.iterrows():
                     para = para.to_dict()  # 将参数数据框转换为字典
                     # model = list(models.values())[0]  # 获取当前实验对应的模型
-                    model = model  # 获取当前实验对应的模型
+                    model = model_dict  # 获取当前实验对应的模型
                     sgv['id_experiment'] = i  # 设定当前实验编号
                     sgv['num_unfinished_experiments_to_run'] -= 1  # 更新未完成实验数
                     ## 运行一次实验作业
@@ -203,7 +203,6 @@ def main(sgv):
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
             ## # ----------------------------------------------------------------------------------
-            model = model.model(parameters_works, sgv)
 
             # 注册 Gym 环境
             gym.register(
@@ -230,7 +229,7 @@ def main(sgv):
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             env = gym.make(
                 "gym_env",
-                model=model,
+                # model=model_dict,
                 # M=model,
                 A=A,
                 A_data=A_data,
@@ -300,103 +299,104 @@ def main(sgv):
             log_console_handler.close()
             logger.removeHandler(log_console_handler)
 
-        case '运行强化学习和Gym和ABM模型实验组做训练':
+        case '运行强化学习Gym和ABM模型实验组做训练':
 
             ## #NOTE：运行强化学习和Gym和ABM模型实验组做训练
 
-            ## ## #NOTE：自定义的强化学习  new  2025-04-19
-
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
-            ## # ----------------------------------------------------------------------------------
+            # 初始化 Gym 环境和自定义环境模型
+            gym.register(
+                id=sgv['gym_env_id'],
+                entry_point=sgv['Gym_register_entry_point'],
+            )
+
+            ## ## #NOTE：自定义的强化学习  new  2025-04-19
+
             # import numpy as np
             # import logging
             # from model_RL_algorithm import PPO
 
-            # 初始化 Gym 环境和自定义环境模型
-            gym.register(
-                id="gym_env",
-                entry_point=sgv['Gym_register_entry_point'],
-            )
+            # ## # ----------------------------------------------------------------------------------
+            #
+            # # 随机选取一个奖励函数的参数
+            # np.random.seed(57)
+            # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)
+            # grouped_parameters_works = parameters_works.groupby('alpha_reward')
+            # paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]
+            # sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()
+            #
+            # # 创建环境
+            # exp_id = np.random.choice(sgv['list_idsExp_TASK'])
+            # para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
+            # A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
+            # env = gym.make(
+            #     "gym_env",
+            #     model=model,
+            #     A=A,
+            #     A_data=A_data,
+            #     para=para,
+            #     sgv=sgv,
+            # )
+            #
+            # # 初始化 PPO 算法
+            # obs_dim = env.observation_space.shape[0]
+            # act_dim = env.action_space.n
+            # ppo = PPO(obs_dim, act_dim, lr=1e-3, gamma=0.99, clip_eps=0.2)
+            #
+            # # 主循环
+            # np.random.seed(114)
+            # sgv['episode'] = 0
+            # while sgv['episode'] < sgv['max_num_episode']:
+            #     sgv['episode'] += 1
+            #     exp_id = np.random.choice(list_idsExp_TASK)
+            #     para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
+            #     logging.info(f"第 {sgv['episode']} 局开始")
+            #
+            #     # 重置环境
+            #     observations, infos = env.reset()
+            #     episode_over = False
+            #     episode_rewards = []
+            #     obs_list, action_list, reward_list, done_list, next_obs_list = [], [], [], [], []
+            #
+            #     while not episode_over:
+            #         # 使用 PPO 策略选择动作
+            #         obs_tensor = torch.tensor(observations, dtype=torch.float32)
+            #         action_probs, _ = ppo.model(obs_tensor)
+            #         dist = torch.distributions.Categorical(action_probs)
+            #         action = dist.sample().item()
+            #
+            #         # 执行动作
+            #         next_observations, rewards, terminated, truncated, infos = env.step(action)
+            #         episode_over = np.array(terminated).all() or np.array(truncated).all()
+            #
+            #         # 收集经验
+            #         obs_list.append(observations)
+            #         action_list.append(action)
+            #         reward_list.append(rewards)
+            #         done_list.append(terminated)
+            #         next_obs_list.append(next_observations)
+            #
+            #         # 更新当前观测
+            #         observations = next_observations
+            #         episode_rewards.append(rewards)
+            #
+            #         if episode_over:
+            #             logging.info(f"第 {sgv['episode']} 局结束，总奖励: {sum(episode_rewards)}")
+            #
+            #     # 更新 PPO 策略
+            #     ppo.update(
+            #         obs_list,
+            #         action_list,
+            #         reward_list,
+            #         done_list,
+            #         next_obs_list
+            #     )
+            # ## # ----------------------------------------------------------------------------------
 
-            # 随机选取一个奖励函数的参数
-            np.random.seed(57)
-            alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)
-            grouped_parameters_works = parameters_works.groupby('alpha_reward')
-            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]
-            sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()
-
-            # 创建环境
-            exp_id = np.random.choice(sgv['list_idsExp_TASK'])
-            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
-            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
-            env = gym.make(
-                "gym_env",
-                model=model,
-                A=A,
-                A_data=A_data,
-                para=para,
-                sgv=sgv,
-            )
-
-            # 初始化 PPO 算法
-            obs_dim = env.observation_space.shape[0]
-            act_dim = env.action_space.n
-            ppo = PPO(obs_dim, act_dim, lr=1e-3, gamma=0.99, clip_eps=0.2)
-
-            # 主循环
-            np.random.seed(114)
-            sgv['episode'] = 0
-            while sgv['episode'] < sgv['max_num_episode']:
-                sgv['episode'] += 1
-                exp_id = np.random.choice(list_idsExp_TASK)
-                para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
-                logging.info(f"第 {sgv['episode']} 局开始")
-
-                # 重置环境
-                observations, infos = env.reset()
-                episode_over = False
-                episode_rewards = []
-                obs_list, action_list, reward_list, done_list, next_obs_list = [], [], [], [], []
-
-                while not episode_over:
-                    # 使用 PPO 策略选择动作
-                    obs_tensor = torch.tensor(observations, dtype=torch.float32)
-                    action_probs, _ = ppo.model(obs_tensor)
-                    dist = torch.distributions.Categorical(action_probs)
-                    action = dist.sample().item()
-
-                    # 执行动作
-                    next_observations, rewards, terminated, truncated, infos = env.step(action)
-                    episode_over = np.array(terminated).all() or np.array(truncated).all()
-
-                    # 收集经验
-                    obs_list.append(observations)
-                    action_list.append(action)
-                    reward_list.append(rewards)
-                    done_list.append(terminated)
-                    next_obs_list.append(next_observations)
-
-                    # 更新当前观测
-                    observations = next_observations
-                    episode_rewards.append(rewards)
-
-                    if episode_over:
-                        logging.info(f"第 {sgv['episode']} 局结束，总奖励: {sum(episode_rewards)}")
-
-                # 更新 PPO 策略
-                ppo.update(
-                    obs_list,
-                    action_list,
-                    reward_list,
-                    done_list,
-                    next_obs_list
-                )
-            ## # ----------------------------------------------------------------------------------
-
-
-
+            pass
             # ## ## #NOTE：自定义的强化学习  old  2025-04-18
+            pass
             #
             # sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
             #
@@ -471,64 +471,15 @@ def main(sgv):
             #
             #     print(f"Episode {episode + 1}, Rewards: {episode_rewards}")
 
-            ## ## #NOTE：来自《动手学强化学习》的强化学习。这个是原配的 2025-04-18
-            #
-            # # actor_lr = 1e-3  # 策略网络学习率
-            # # critic_lr = 1e-2  # 价值网络学习率
-            # # num_episodes = 500  # 训练的轮数
-            # # hidden_dim = 128  # 隐藏层维度
-            # # gamma = 0.98  # 折扣因子
-            # # gae_lambda = 0.95  # GAE 参数
-            # # epochs = 10  # 每批数据训练的轮数
-            # # eps = 0.2  # PPO 的截断参数
-            #
-            # # device = torch.device("cuda") if torch.cuda.is_available() else torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
-            # device = torch.device("cpu")  # #DEBUG 如果访问失败则使用这个。
-            # print(device)
-            #
-            # env_name = 'CartPole-v0'
-            # env = gym.make(env_name)
-            # env.seed(0)
-            # torch.manual_seed(0)
-            # state_dim = env.observation_space.shape[0]
-            # action_dim = env.action_space.n
-            # agent = model.model.model_algorithm(state_dim, sgv['hidden_dim'], action_dim, sgv['actor_lr'], sgv['critic_lr'], sgv['gae_lambda'],
-            #                                     sgv['epochs'], sgv['eps'], sgv['gamma'], device)
-            #
-            #
-            # return_list = train_on_policy_agent(env, agent, sgv['num_episodes'])
-            #
-            # episodes_list = list(range(len(return_list)))
-            # plt.plot(episodes_list, return_list)
-            # plt.xlabel('Episodes')
-            # plt.ylabel('Returns')
-            # plt.title('PPO on {}'.format(env_name))
-            # plt.show()
-            #
-            #
-            # mv_return = moving_average(return_list, 9)
-            # plt.plot(episodes_list, mv_return)
-            # plt.xlabel('Episodes')
-            # plt.ylabel('Returns')
-            # plt.title('PPO on {}'.format(env_name))
-            # plt.show()
-            #
-            # ## ----------------------------------------------------------------------
-
+            pass
             ## ## #NOTE：来自《动手学强化学习》的强化学习。这个是适配的 2025-04-19
 
-            import numpy as np
-            import logging
-            import torch
-            from model_RL_algorithm_从《动手学强化学习》适配
-            import ModelAlgorithm
+            # import numpy as np
+            # import logging
+            # import torch
+            # from model_RL_algorithm import ModelAlgorithm
 
-            # 初始化 Gym 环境和自定义环境模型
-            gym.register(
-                id="gym_env",
-                entry_point=sgv['Gym_register_entry_point'],
-            )
-
+            ## 运行固定的奖励函数参数
             # 随机选取一个奖励函数的参数
             np.random.seed(57)
             alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)
@@ -540,31 +491,34 @@ def main(sgv):
             exp_id = np.random.choice(sgv['list_idsExp_TASK'])
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
-            env = gym.make(
-                "gym_env",
-                model=model,
-                A=A,
-                A_data=A_data,
-                para=para,
-                sgv=sgv,
-            )
+            # env = gym.make(
+            #     "gym_env",
+            #     # model=model_dict,
+            #     A=A,
+            #     para=para,
+            #     sgv=sgv,
+            # )
 
-            # 初始化 PPO 算法
-            obs_dim = env.observation_space.shape[0]
-            act_dim = env.action_space.n
-            hidden_dim = 64  # 隐藏层维度
-            ppo = ModelAlgorithm.PPO(
-                state_dim=obs_dim,
-                hidden_dim=hidden_dim,
-                action_dim=act_dim,
-                actor_lr=1e-3,
-                critic_lr=1e-3,
-                gae_lambda=0.95,
-                epochs=10,
-                eps=0.2,
-                gamma=0.99,
-                device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
-            )
+            # model_gymenv = env.unwrapped  # 解包之后的环境
+
+            # #NOW 初始化模型
+            model = model_dict['model_main'](model_dict, A, A_data, para, sgv)
+
+            # obs_dim = env.observation_space.shape[0]
+            # act_dim = env.action_space.n
+            # hidden_dim = 64  # 隐藏层维度 #TODO 这个参数需要从配置文件中获取
+            # ppo = model_gymenv.algo.PPO(
+            #     state_dim=obs_dim,
+            #     hidden_dim=hidden_dim,
+            #     action_dim=act_dim,
+            #     actor_lr=1e-3,
+            #     critic_lr=1e-3,
+            #     gae_lambda=0.95,
+            #     epochs=10,
+            #     eps=0.2,
+            #     gamma=0.99,
+            #     device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            # )
 
             # 主循环
             np.random.seed(114)
@@ -583,7 +537,7 @@ def main(sgv):
 
                 while not episode_over:
                     # 使用 PPO 策略选择动作
-                    action = ppo.take_action(observations)
+                    action = model_gymenv.algorithm.take_action(observations)
 
                     # 执行动作
                     next_observations, rewards, terminated, truncated, infos = env.step(action)
@@ -603,8 +557,8 @@ def main(sgv):
                     if episode_over:
                         logging.info(f"第 {sgv['episode']} 局结束，总奖励: {sum(episode_rewards)}")
 
-                # 更新 PPO 策略
-                ppo.update(transition_dict)
+                # 更新强化学习算法策略
+                model_gymenv.algorithm.update(transition_dict)
 
             ## ----------------------------------------------------------------------
 

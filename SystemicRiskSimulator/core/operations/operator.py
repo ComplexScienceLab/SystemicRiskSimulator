@@ -199,15 +199,15 @@ class Operator:
         else:
             pass  # if
 
-        ## 导入模型
-        model = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/model')), r"[Mm]odel", sgv['folderpath_simulator'])
+        ## 导入模型（以字典的形式表示模型相关的模块）
+        model_dict = Tools.import_modules_from_package(str(Path(sgv['folderpath_simulator'], r'SystemicRiskSimulator/data/model')), r"[Mm]odel", sgv['folderpath_simulator'])
 
         pass  # if
 
         ## 导出配置数据
         Collector.export_config_data(sgv)
 
-        return sgv, list_idsExp_TASK, parameters_works, model
+        return sgv, list_idsExp_TASK, parameters_works, model_dict
 
         pass  # function
 
