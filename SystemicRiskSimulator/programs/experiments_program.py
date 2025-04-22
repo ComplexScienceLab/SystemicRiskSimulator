@@ -23,9 +23,9 @@ from multiprocessing import Pool
 import json
 import gymnasium as gym
 import numpy as np
-import torch
-from matplotlib import pyplot as plt
-from torch.distributions import Categorical
+# import torch
+# from matplotlib import pyplot as plt
+# from torch.distributions import Categorical
 
 from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.operator import Operator
@@ -228,7 +228,7 @@ def main(sgv):
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             env = gym.make(
-                "gym_env",
+                sgv['gym_env_id'],
                 # model=model_dict,
                 # M=model,
                 A=A,
@@ -492,7 +492,7 @@ def main(sgv):
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
             # env = gym.make(
-            #     "gym_env",
+            #     sgv['gym_env_id'],
             #     # model=model_dict,
             #     A=A,
             #     para=para,
@@ -502,7 +502,7 @@ def main(sgv):
             # model_gymenv = env.unwrapped  # 解包之后的环境
 
             # #NOW 初始化模型
-            model = model_dict['model_main'](model_dict, A, A_data, para, sgv)
+            M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
 
             # obs_dim = env.observation_space.shape[0]
             # act_dim = env.action_space.n
@@ -522,25 +522,25 @@ def main(sgv):
 
             # 主循环
             np.random.seed(114)
-            sgv['episode'] = 0
-            while sgv['episode'] < sgv['max_num_episode']:
-                sgv['episode'] += 1
+            M.sgv['episode'] = 0
+            while M.sgv['episode'] < M.sgv['max_num_episode']:
+                M.sgv['episode'] += 1
                 exp_id = np.random.choice(list_idsExp_TASK)
                 para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()
-                logging.info(f"第 {sgv['episode']} 局开始")
+                logging.info(f"第 {M.sgv['episode']} 局开始")
 
                 # 重置环境
-                observations, infos = env.reset()
+                observations, infos = M.env.reset()
                 episode_over = False
                 episode_rewards = []
                 transition_dict = {'states': [], 'actions': [], 'rewards': [], 'next_states': [], 'dones': []}
 
                 while not episode_over:
                     # 使用 PPO 策略选择动作
-                    action = model_gymenv.algorithm.take_action(observations)
+                    action = M.model_algorithm.take_action(observations)
 
                     # 执行动作
-                    next_observations, rewards, terminated, truncated, infos = env.step(action)
+                    next_observations, rewards, terminated, truncated, infos = M.env.step(action)
                     episode_over = np.array(terminated).all() or np.array(truncated).all()
 
                     # 收集经验
@@ -555,10 +555,10 @@ def main(sgv):
                     episode_rewards.append(rewards)
 
                     if episode_over:
-                        logging.info(f"第 {sgv['episode']} 局结束，总奖励: {sum(episode_rewards)}")
+                        logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(episode_rewards)}")
 
                 # 更新强化学习算法策略
-                model_gymenv.algorithm.update(transition_dict)
+                M.model_gymenv.algorithm.update(transition_dict)
 
             ## ----------------------------------------------------------------------
 
