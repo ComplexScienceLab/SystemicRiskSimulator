@@ -213,20 +213,16 @@ def main(sgv):
             )
 
             ## 运行固定的奖励函数参数
-            # 随机选取一个奖励函数的参数
-            np.random.seed(57)
-            alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
-            # alpha_reward = 0.60  # #DEBUG 调试专用
-
-            # 根据 alpha_reward 列分组 parameters_works
-            grouped_parameters_works = parameters_works.groupby('alpha_reward')
-
+            np.random.seed(57)  # 随机选取一个奖励函数的参数 #TODO 后续改成从配置文件获取
+            # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
+            alpha_reward = 0.60  # #DEBUG 调试专用
+            grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
             paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
             sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
             # 创建环境
-            exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
-            # exp_id = 956  # #DEBUG 调试专用
+            # exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
+            exp_id = 956  # #DEBUG 调试专用
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             env = gym.make(
@@ -246,7 +242,7 @@ def main(sgv):
             sgv['episode'] = 0  # 初始化局数计数器
             while sgv['episode'] < sgv['max_num_episode']:
                 sgv['episode'] += 1
-                exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
                 exp_id = 956  # #DEBUG 调试专用
 
                 para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
@@ -303,12 +299,86 @@ def main(sgv):
 
         case '运行强化学习算法和ABM模型实验组做应用':
             ## #NOTE：运行强化学习算法和ABM模型实验组做应用
-            pass  #TODO
+            pass  # TODO
 
         case '运行强化学习算法和ABM模型实验组做训练':
             ## #NOW #NOTE：运行强化学习算法和ABM模型实验组做训练
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
+            ## 运行固定的奖励函数参数
+            np.random.seed(57)  # 随机选取一个奖励函数的参数 #TODO 后续改成从配置文件获取
+            # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
+            alpha_reward = 0.60  # #DEBUG 调试专用
+            grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
+            sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
+
+            # 创建环境
+            # exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
+            exp_id = 956  # #DEBUG 调试专用
+            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
+
+            # #NOW 初始化模型
+            M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
+
+            # 初始化模型和强化学习算法
+            obs_dim = sgv['obs_dim']  # 从配置中获取观测空间维度
+            act_dim = sgv['act_dim']  # 从配置中获取动作空间维度
+            hidden_dim = 64  # 隐藏层维度
+
+            # 初始化环境模型
+            model = ModelContent(sgv)  # 假设ModelContent是环境模型的类
+
+            # 每一局，随机选取一个实验组运行。
+            np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
+            sgv['episode'] = 0  # 初始化局数计数器
+            while sgv['episode'] < sgv['max_num_episode']:
+                sgv['episode'] += 1
+                exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                exp_id = 956  # #DEBUG 调试专用
+
+                para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+                logging.info(f"第 {sgv['episode']} 局开始")
+
+                # ## 重置环境 #NOTE 这个是有 Gym 的
+                # observations, infos = env.reset()  # #BUG 这个输出值如何利用起来？
+
+                ## 重置环境 #NOTE 这个是原生的
+                M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
+                # 将自定义的环境模型的观测值转换为 Gymnasium 可以理解的格式
+                gym_agents_observations = M.convert_observations_to_gym(id_agent=M.A.BB.id_agent, fullName=M.A.note.fullName_bank, Loss_IB_def_t=M.A.BB.Loss_IB_def_t, inf=M.A.BB.inf)
+
+                # 重置环境
+                observations = model.reset()
+                episode_over = False
+                episode_rewards = []
+                transition_dict = {'states': [], 'actions': [], 'rewards': [], 'next_states': [], 'dones': []}
+
+                while not episode_over:
+                    # 使用 PPO 策略选择动作
+                    action = ppo.take_action(observations)
+
+                    # 执行动作
+                    next_observations, rewards, terminated, _ = model.step(action)
+                    episode_over = np.array(terminated).all()
+
+                    # 收集经验
+                    transition_dict['states'].append(observations)
+                    transition_dict['actions'].append(action)
+                    transition_dict['rewards'].append(rewards)
+                    transition_dict['next_states'].append(next_observations)
+                    transition_dict['dones'].append(terminated)
+
+                    # 更新当前观测
+                    observations = next_observations
+                    episode_rewards.append(rewards)
+
+                    if episode_over:
+                        logging.info(f"第 {sgv['episode']} 局结束，总奖励: {sum(episode_rewards)}")
+
+                # 更新强化学习算法策略
+                ppo.update(transition_dict)
 
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':
             pass  # TODO
@@ -744,7 +814,6 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
             f"logger_{sgv['id_experiment']}",
             is_enable_multiprocessing_for_run_model=sgv['is_enable_multiprocessing_for_run_model']
         )
-
 
     pass  # function
 
