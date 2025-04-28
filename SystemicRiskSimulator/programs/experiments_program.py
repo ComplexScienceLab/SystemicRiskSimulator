@@ -319,7 +319,6 @@ def main(sgv):
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
 
-            # #NOW 初始化模型
             M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
 
             # 初始化模型和强化学习算法
@@ -360,14 +359,13 @@ def main(sgv):
                 while not episode_over:
 
                     M.model_content.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
-                    # 使用选定的强化学习算法策略选择动作
-                    agents_actions = []
-                    for i in self.sgv['num_bank']:
-                        agent_actions = M.model_algorithm.take_action(observations)  # #NOW 用RL算法选择动作
-                        agents_actions.append(agent_actions)
-                        pass  # for
-
-                    M.A.IB.theta_IB_def = np.array(agents_actions)
+                    actions = []
+                    for i in range(M.sgv['num_bank']):
+                        actions.append(
+                            M.model_algorithm[i].take_action(observations[i])  # 用RL算法选择个体动作
+                        )
+                    agents_actions = M.convert_actions_to_env(actions)  # PyTorch 生成的动作转换为
+                    M.A.IB.theta_IB_def = agents_actions
                     M.model_content.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
 
                     # 执行动作
@@ -376,8 +374,8 @@ def main(sgv):
                     observations = M.convert_observations_to_pytorch()
 
                     M.rewards = M.convert_rewards_to_gym(rewards=M.A.BB.rewards)  # 将自定义的环境模型的奖励转换为 Gymnasium 可以理解的格式
-                    terminated = [M.is_done() for _ in range(M.sgv['num_bank'])]  # 判断是否结束
-                    truncated = [M.is_done() for _ in range(M.sgv['num_bank'])]  # 判断是否截断
+                    dones = np.full(M.sgv['num_bank'], False)  # 判断是否结束
+                    # truncated = [M.is_done() for _ in range(M.sgv['num_bank'])]  # 判断是否截断
                     env_truncation = not M.sgv['is_continue_process']
                     infos = {'info': None}
                     # infos = [{'infos': {i: None for i in range(len(self.A.BB.id_agent))}} for _ in range(self.sgv['num_bank'])]  # infos 是一个字典列表，长度为 num_agent，每个字典的键为 'infos'，值为一个字典，包含银行的 id_agent 和 fullName_bank
@@ -387,10 +385,10 @@ def main(sgv):
 
                     # 收集经验
                     transition_dict['states'].append(observations)
-                    transition_dict['actions'].append(action)
+                    transition_dict['actions'].append(agents_actions)
                     transition_dict['rewards'].append(rewards)
                     transition_dict['next_states'].append(next_observations)
-                    transition_dict['dones'].append(terminated)
+                    transition_dict['dones'].append(dones)
 
                     # 更新当前观测
                     observations = next_observations
@@ -409,7 +407,7 @@ def main(sgv):
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':
             pass  # TODO
 
-        case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做训练':
+        case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做训练':  # #HACK  其实后续不打算用 Gym 相关的环境框架了
 
             ## #NOTE：运行强化学习和Gym和ABM模型实验组做训练
 
@@ -611,7 +609,6 @@ def main(sgv):
 
             # model_gymenv = env.unwrapped  # 解包之后的环境
 
-            # #NOW 初始化模型
             M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
 
             # obs_dim = env.observation_space.shape[0]
