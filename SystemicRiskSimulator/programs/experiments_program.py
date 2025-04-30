@@ -351,14 +351,14 @@ def main(sgv):
                 episode_rewards = []
                 # transition_dict = {'states': [], 'actions': [], 'rewards': [], 'next_states': [], 'dones': []}
                 # 执行动作
-                M.model_content.model_content(A=A, A_data=A_data, para=para, sgv=sgv)  # 执行一次轮次级别的步进更新
+                M.model_content(A=A, A_data=A_data, para=para, sgv=sgv)  # 执行一次轮次级别的步进更新
                 logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
                 # observations = M.convert_observations_to_pytorch(id_agent=M.A.BB.id_agent, Loss_IB_def_t=M.A.BB.Loss_IB_def_t, inf=M.A.BB.inf)  # 将自定义的环境模型的观测值转换为 Gymnasium 可以理解的格式  #NOTE 方案三的
                 observations = M.convert_observations_to_pytorch()
 
                 while not episode_over:
 
-                    M.model_content.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
+                    M.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
                     actions = []
                     for i in range(M.sgv['num_bank']):
                         actions.append(
@@ -366,14 +366,14 @@ def main(sgv):
                         )
                     agents_actions = M.convert_actions_to_env(actions)  # PyTorch 生成的动作转换为
                     M.A.IB.theta_IB_def = agents_actions
-                    M.model_content.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
+                    M.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
 
                     # 执行动作
-                    M.model_content.model_content(A=A, A_data=A_data, para=para, sgv=sgv)  # 执行一次轮次级别的步进更新
+                    M.model_content(A=A, A_data=A_data, para=para, sgv=sgv)  # 执行一次轮次级别的步进更新
                     logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
                     observations = M.convert_observations_to_pytorch()
 
-                    M.rewards = M.convert_rewards_to_gym(rewards=M.A.BB.rewards)  # 将自定义的环境模型的奖励转换为 Gymnasium 可以理解的格式
+                    M.A.BB.rewards = M.convert_rewards_to_pytorch(rewards=M.A.BB.rewards)  # 将自定义的环境模型的奖励转换为 Gymnasium 可以理解的格式
                     dones = np.full(M.sgv['num_bank'], False)  # 判断是否结束
                     # truncated = [M.is_done() for _ in range(M.sgv['num_bank'])]  # 判断是否截断
                     env_truncation = not M.sgv['is_continue_process']
@@ -384,9 +384,10 @@ def main(sgv):
                     episode_over = np.array(terminated).all()  # 检查是否结束
 
                     # 收集经验
+                    transition_dict = dict()
                     transition_dict['states'].append(observations)
                     transition_dict['actions'].append(agents_actions)
-                    transition_dict['rewards'].append(rewards)
+                    transition_dict['rewards'].append(M.A.BB.rewards)
                     transition_dict['next_states'].append(next_observations)
                     transition_dict['dones'].append(dones)
 
