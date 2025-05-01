@@ -359,11 +359,11 @@ def main(sgv):
                 while not episode_over:
 
                     M.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
-                    actions = []
-                    for i in range(M.sgv['num_bank']):
-                        actions.append(
-                            M.model_algorithm[i].take_action(observations[i])  # 用RL算法选择个体动作
-                        )
+                    # actions = []
+                    # for i in range(M.sgv['num_bank']):
+                    #     actions.append(
+                    #         M.model_algorithm[i].take_action(observations[i])  # 用RL算法选择个体动作
+                    #     )
                     agents_actions = M.convert_actions_to_env(actions)  # PyTorch 生成的动作转换为
                     M.A.IB.theta_IB_def = agents_actions
                     M.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
