@@ -227,8 +227,6 @@ def main(sgv):
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             env = gym.make(
                 sgv['gym_env_id'],
-                # model=model_dict,
-                # M=model,
                 A=A,
                 A_data=A_data,
                 para=para,
@@ -371,10 +369,12 @@ def main(sgv):
                     # 执行动作
                     M.model_content(A=A, A_data=A_data, para=para, sgv=sgv)  # 执行一次轮次级别的步进更新
                     logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
-                    observations = M.convert_observations_to_pytorch()
+                    M.A.AB.observations = M.convert_observations_to_pytorch()
 
-                    M.A.BB.rewards = M.convert_rewards_to_pytorch(rewards=M.A.BB.rewards)  # 将自定义的环境模型的奖励转换为 Gymnasium 可以理解的格式
-                    dones = np.full(M.sgv['num_bank'], False)  # 判断是否结束
+                    M.calc_rewards(lambda_param=1.0, r_min=0.0)  # 计算奖励值
+
+                    M.calc_dones()  # 判断是否结束
+
                     # truncated = [M.is_done() for _ in range(M.sgv['num_bank'])]  # 判断是否截断
                     env_truncation = not M.sgv['is_continue_process']
                     infos = {'info': None}
