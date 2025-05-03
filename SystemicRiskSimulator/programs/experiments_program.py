@@ -316,17 +316,7 @@ def main(sgv):
             exp_id = 956  # #DEBUG 调试专用
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
-
             M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
-
-            # 初始化模型和强化学习算法
-            # obs_dim = sgv['obs_dim']  # 从配置中获取观测空间维度
-            # act_dim = sgv['act_dim']  # 从配置中获取动作空间维度
-            # hidden_dim = 64  # 隐藏层维度
-
-            # # 初始化环境模型
-            # model = ModelContent(sgv)  # 假设ModelContent是环境模型的类
-
             # 每一局，随机选取一个实验组运行。
             np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
             M.sgv['episode'] = 0  # 初始化局数计数器
@@ -334,54 +324,43 @@ def main(sgv):
                 M.sgv['episode'] += 1
                 exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
                 exp_id = 956  # #DEBUG 调试专用
-
                 para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
                 logging.info(f"第 {M.sgv['episode']} 局开始")
-
                 ## 重置环境
                 M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
-                # 自定义的环境模型的观测值转换为 PyTorch 可以转换的格式
-                observations = M.convert_observations_to_pytorch()
-
-                # # 重置环境
-                # observations = model.reset()
+                # # 自定义的环境模型的观测值转换为 PyTorch 可以转换的格式
+                # M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.BB.Loss_IB_def_t)
                 episode_over = False
                 episode_rewards = []
                 # transition_dict = {'states': [], 'actions': [], 'rewards': [], 'next_states': [], 'dones': []}
-                # 执行动作
-                M.model_content(A=A, A_data=A_data, para=para, sgv=sgv)  # 执行一次轮次级别的步进更新
+
+                # 执行一次轮次级别的步进更新
+                M.model_content(A=A, A_data=A_data, para=para, sgv=sgv)
                 logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
-                # observations = M.convert_observations_to_pytorch(id_agent=M.A.BB.id_agent, Loss_IB_def_t=M.A.BB.Loss_IB_def_t, inf=M.A.BB.inf)  # 将自定义的环境模型的观测值转换为 Gymnasium 可以理解的格式  #NOTE 方案三的
-                observations = M.convert_observations_to_pytorch()
+
+                # 获取观测
+                M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.BB.Loss_IB_def_t)
 
                 while not episode_over:
-
-                    M.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
-                    # actions = []
-                    # for i in range(M.sgv['num_bank']):
-                    #     actions.append(
-                    #         M.model_algorithm[i].take_action(observations[i])  # 用RL算法选择个体动作
-                    #     )
-                    # agents_actions = M.convert_actions_to_env(M.A.AB.actions)  # PyTorch 生成的动作转换为
-                    # M.A.IB.theta_IB_def = M.A.AB.actions
+                    # 执行动作
                     M.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
 
                     # 执行动作
                     M.model_content(A=A, A_data=A_data, para=para, sgv=sgv)  # 执行一次轮次级别的步进更新
                     logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
-                    M.A.AB.observations = M.convert_observations_to_pytorch()
+                    M.A.AB.next_observations = M.get_observations()
 
-                    M.calc_rewards(lambda_param=1.0, r_min=0.0)  # 计算奖励值
+                    M.A.AB.rewards = M.calc_rewards(lambda_param=1.0, r_min=0.0, isv=M.A.BB.isv, Loss_IB_def_t=M.A.BB.Loss_IB_def_t)  # 计算奖励值
 
                     M.calc_dones()  # 判断是否结束
 
                     # truncated = [M.is_done() for _ in range(M.sgv['num_bank'])]  # 判断是否截断
-                    env_truncation = not M.sgv['is_continue_process']
-                    infos = {'info': None}
+                    # env_truncation = not M.sgv['is_continue_process']
+                    # infos = {'info': None}
                     # infos = [{'infos': {i: None for i in range(len(self.A.BB.id_agent))}} for _ in range(self.sgv['num_bank'])]  # infos 是一个字典列表，长度为 num_agent，每个字典的键为 'infos'，值为一个字典，包含银行的 id_agent 和 fullName_bank
-                    next_observations, rewards, terminated, _ = M.model_content.step()
+                    # next_observations, rewards, terminated, _ = M.model_content.step()
 
-                    episode_over = np.array(terminated).all()  # 检查是否结束
+                    episode_over = np.array(M.A.AB.dones).all()  # 检查是否结束 #BUG
 
                     # 收集经验
                     transition_dict = dict()
@@ -391,8 +370,8 @@ def main(sgv):
                     transition_dict['next_states'].append(next_observations)
                     transition_dict['dones'].append(dones)
 
-                    # 更新当前观测
-                    observations = next_observations
+                    # 更新前后观测
+                    M.A.AB.observations = M.A.AB.next_observations
                     episode_rewards.append(rewards)
 
                     if episode_over:
@@ -402,7 +381,16 @@ def main(sgv):
                     pass  # while
 
                 # 更新强化学习算法策略
-                M.model_algorithm.update(transition_dict)
+                for i in np.where(M.A.BB.strategy_style == 'well'):
+                    M.model_algorithm[i].update(
+                        M.A.AB.observations[i],
+                        M.A.AB.actions[i],
+                        M.A.AB.rewards[i],
+                        M.A.AB.observations_next[i],
+                        M.A.AB.dones[i]
+                    )
+                    pass  # for
+
                 pass  # while
 
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':
