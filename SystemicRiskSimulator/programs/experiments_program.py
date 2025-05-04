@@ -339,7 +339,7 @@ def main(sgv):
                 logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
 
                 # 获取观测
-                M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.BB.Loss_IB_def_t)
+                M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)
 
                 while not episode_over:
                     # 执行动作
@@ -348,7 +348,7 @@ def main(sgv):
                     # 执行动作
                     M.model_content(A=A, A_data=A_data, para=para, sgv=sgv)  # 执行一次轮次级别的步进更新
                     logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
-                    M.A.AB.next_observations = M.get_observations()
+                    M.A.AB.next_observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)
 
                     M.A.AB.rewards = M.calc_rewards(lambda_param=1.0, r_min=0.0, isv=M.A.BB.isv, Loss_IB_def_t=M.A.BB.Loss_IB_def_t)  # 计算奖励值
 
