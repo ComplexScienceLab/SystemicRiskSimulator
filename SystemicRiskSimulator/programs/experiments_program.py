@@ -374,19 +374,20 @@ def main(sgv):
                     M.A.AB.observations = M.A.AB.next_observations
                     # episode_rewards.append(rewards)
 
-                    if not M.sgv['is_continue_process']:
-                        logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards)}")
-                        pass  # if
 
                     pass  # while
 
+                if not M.sgv['is_continue_process']:
+                    logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards)}")
+                    pass  # if
+
                 # 更新强化学习算法策略 #FIXME
-                for i in np.where(M.A.BB.strategy_style == 'well'):
+                for i in np.where(M.A.BB.strategy_style == 'well')[0]:
                     M.model_algorithm[i].update(
                         M.A.AB.observations[i],
                         M.A.AB.actions[i],
                         M.A.AB.rewards[i],
-                        M.A.AB.observations_next[i],
+                        M.A.AB.next_observations[i],
                         M.A.AB.dones[i]
                     )
                     pass  # for
