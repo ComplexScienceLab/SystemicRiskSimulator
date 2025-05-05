@@ -330,8 +330,8 @@ def main(sgv):
                 M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
                 # # 自定义的环境模型的观测值转换为 PyTorch 可以转换的格式
                 # M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.BB.Loss_IB_def_t)
-                episode_over = False
-                episode_rewards = []
+                # episode_over = False
+                # episode_rewards = []
                 # transition_dict = {'states': [], 'actions': [], 'rewards': [], 'next_states': [], 'dones': []}
 
                 # 执行一次轮次级别的步进更新
@@ -341,7 +341,7 @@ def main(sgv):
                 # 获取观测
                 M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)
 
-                while not episode_over:
+                while not M.sgv['is_continue_process']:
                     # 执行动作
                     M.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
 
@@ -360,27 +360,27 @@ def main(sgv):
                     # infos = [{'infos': {i: None for i in range(len(self.A.BB.id_agent))}} for _ in range(self.sgv['num_bank'])]  # infos 是一个字典列表，长度为 num_agent，每个字典的键为 'infos'，值为一个字典，包含银行的 id_agent 和 fullName_bank
                     # next_observations, rewards, terminated, _ = M.model_content.step()
 
-                    episode_over = np.array(M.A.AB.dones).all()  # 检查是否结束 #BUG
+                    # episode_over = np.array(M.A.AB.dones).all()  # 检查是否结束 #BUG
 
-                    # 收集经验
-                    transition_dict = dict()
-                    transition_dict['states'].append(observations)
-                    transition_dict['actions'].append(agents_actions)
-                    transition_dict['rewards'].append(M.A.BB.rewards)
-                    transition_dict['next_states'].append(next_observations)
-                    transition_dict['dones'].append(dones)
+                    # # 收集经验
+                    # transition_dict = dict()
+                    # transition_dict['states'].append(observations)
+                    # transition_dict['actions'].append(agents_actions)
+                    # transition_dict['rewards'].append(M.A.BB.rewards)
+                    # transition_dict['next_states'].append(next_observations)
+                    # transition_dict['dones'].append(dones)
 
                     # 更新前后观测
                     M.A.AB.observations = M.A.AB.next_observations
-                    episode_rewards.append(rewards)
+                    # episode_rewards.append(rewards)
 
-                    if episode_over:
-                        logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(episode_rewards)}")
+                    if not M.sgv['is_continue_process']:
+                        logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards)}")
                         pass  # if
 
                     pass  # while
 
-                # 更新强化学习算法策略
+                # 更新强化学习算法策略 #FIXME
                 for i in np.where(M.A.BB.strategy_style == 'well'):
                     M.model_algorithm[i].update(
                         M.A.AB.observations[i],
