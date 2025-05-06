@@ -334,46 +334,32 @@ def main(sgv):
                 # episode_rewards = []
                 # transition_dict = {'states': [], 'actions': [], 'rewards': [], 'next_states': [], 'dones': []}
 
-                # 执行一次轮次级别的步进更新
-                M.model_content(A=A, A_data=A_data, para=para, sgv=sgv)
-                logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
+                M.model_content(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)  # 执行一次轮次级别的步进更新
+                # sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
+                # sgv['phase'] = 1  # 逐相复位（起始为1）
+                # logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
+                M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
-                # 获取观测
-                M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)
-
-                while not M.sgv['is_continue_process']:
-                    # 执行动作
+                while M.sgv['is_continue_process']:
+                    # 决策动作
                     M.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
 
-                    # 执行动作
-                    M.model_content(A=A, A_data=A_data, para=para, sgv=sgv)  # 执行一次轮次级别的步进更新
-                    logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
-                    M.A.AB.next_observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)
+                    # 执行动作以更新观测和环境
+                    M.model_content(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)  # 执行一次轮次级别的步进更新
+                    # sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
+                    # sgv['phase'] = 1  # 逐相复位（起始为1）
+                    # logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
+                    M.A.AB.next_observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
-                    M.A.AB.rewards = M.calc_rewards(lambda_param=1.0, r_min=0.0, isv=M.A.BB.isv, Loss_IB_def_t=M.A.BB.Loss_IB_def_t)  # 计算奖励值
+                    # 计算奖励值
+                    M.A.AB.rewards = M.calc_rewards(lambda_param=1.0, r_min=0.0, isv=M.A.BB.isv, Loss_IB_def_t=M.A.BB.Loss_IB_def_t)
 
-                    M.calc_dones()  # 判断是否结束
-
-                    # truncated = [M.is_done() for _ in range(M.sgv['num_bank'])]  # 判断是否截断
-                    # env_truncation = not M.sgv['is_continue_process']
-                    # infos = {'info': None}
-                    # infos = [{'infos': {i: None for i in range(len(self.A.BB.id_agent))}} for _ in range(self.sgv['num_bank'])]  # infos 是一个字典列表，长度为 num_agent，每个字典的键为 'infos'，值为一个字典，包含银行的 id_agent 和 fullName_bank
-                    # next_observations, rewards, terminated, _ = M.model_content.step()
-
-                    # episode_over = np.array(M.A.AB.dones).all()  # 检查是否结束 #BUG
-
-                    # # 收集经验
-                    # transition_dict = dict()
-                    # transition_dict['states'].append(observations)
-                    # transition_dict['actions'].append(agents_actions)
-                    # transition_dict['rewards'].append(M.A.BB.rewards)
-                    # transition_dict['next_states'].append(next_observations)
-                    # transition_dict['dones'].append(dones)
+                    # 判断是否结束
+                    M.calc_dones()
 
                     # 更新前后观测
-                    M.A.AB.observations = M.A.AB.next_observations
-                    # episode_rewards.append(rewards)
-
+                    for i in range(sgv['num_bank']):
+                        M.A.AB.observations[i][:] = M.A.AB.next_observations[i][:]  # 更新观测
 
                     pass  # while
 
@@ -570,7 +556,7 @@ def main(sgv):
             #     print(f"Episode {episode + 1}, Rewards: {episode_rewards}")
 
             pass
-            ## ## #NOTE：来自《动手学强化学习》的强化学习。这个是适配的 2025-04-19
+            ## ## #NOTE：来自《动手学强化学习》的强化学习。这个是适配的。 2025-04-19
 
             # import numpy as np
             # import logging
