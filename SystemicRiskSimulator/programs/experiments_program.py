@@ -368,7 +368,7 @@ def main(sgv):
                     pass  # if
 
                 # 更新强化学习算法策略 #FIXME
-                for i in np.where(M.A.BB.strategy_style == 'well')[0]:
+                for i in np.where(M.A.BB.strategy_style != "fixed")[0]:
                     M.model_algorithm[i].update(
                         M.A.AB.observations[i],
                         M.A.AB.actions[i],
