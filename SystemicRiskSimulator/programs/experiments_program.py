@@ -328,16 +328,8 @@ def main(sgv):
                 logging.info(f"第 {M.sgv['episode']} 局开始")
                 ## 重置环境
                 M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
-                # # 自定义的环境模型的观测值转换为 PyTorch 可以转换的格式
-                # M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.BB.Loss_IB_def_t)
-                # episode_over = False
-                # episode_rewards = []
-                # transition_dict = {'states': [], 'actions': [], 'rewards': [], 'next_states': [], 'dones': []}
 
                 M.model_content(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)  # 执行一次轮次级别的步进更新
-                # sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
-                # sgv['phase'] = 1  # 逐相复位（起始为1）
-                # logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
                 M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
                 while M.sgv['is_continue_process']:
@@ -346,9 +338,6 @@ def main(sgv):
 
                     # 执行动作以更新观测和环境
                     M.model_content(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)  # 执行一次轮次级别的步进更新
-                    # sgv['turn'] += 1  # 回合数计次轮次数（由于开始轮次是`START`，所以记为0）
-                    # sgv['phase'] = 1  # 逐相复位（起始为1）
-                    # logging.debug(f"        轮次：{M.sgv['turn']}，模型：{M.sgv['process_name']}")
                     M.A.AB.next_observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
                     # 计算奖励值
@@ -356,6 +345,9 @@ def main(sgv):
 
                     # 判断是否结束
                     M.calc_dones()
+
+                    # 各智能体经验
+                    agents_transition_observations=[]
 
                     # 更新前后观测
                     for i in range(sgv['num_bank']):
