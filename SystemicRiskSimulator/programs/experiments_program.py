@@ -341,13 +341,13 @@ def main(sgv):
                     M.A.AB.next_observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
                     # 计算奖励值
-                    M.A.AB.rewards = M.calc_rewards(lambda_param=1.0, r_min=0.0, isv=M.A.BB.isv, Loss_IB_def_t=M.A.BB.Loss_IB_def_t)
+                    M.calc_rewards(lambda_param=1.0, r_min=0.0, isv=M.A.BB.isv, Loss_IB_def_t=M.A.BB.Loss_IB_def_t)
 
                     # 判断是否结束
                     M.calc_dones()
 
                     # 各智能体经验
-                    agents_transition_observations=[]
+                    agents_transition_observations = []
 
                     # 更新前后观测
                     for i in range(sgv['num_bank']):
