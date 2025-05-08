@@ -329,15 +329,15 @@ def main(sgv):
                 ## 重置环境
                 M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
 
-                M.model_content(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)  # 执行一次轮次级别的步进更新
+                M.model_content()  # 执行一次轮次级别的步进更新
                 M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
                 while M.sgv['is_continue_process']:
                     # 决策动作
-                    M.model_action(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)
+                    M.model_action()
 
                     # 执行动作以更新观测和环境
-                    M.model_content(A=M.A, A_data=M.A_data, para=M.para, sgv=M.sgv)  # 执行一次轮次级别的步进更新
+                    M.model_content()  # 执行一次轮次级别的步进更新
                     M.A.AB.next_observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
                     # 计算奖励值
