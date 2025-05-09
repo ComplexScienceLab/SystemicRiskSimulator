@@ -578,7 +578,7 @@ class Tools:
             Union[list, np.ndarray]: 归一化后的数组，类型与输入一致。
         """
         if len(data) == 0:
-            raise ValueError("列表为空！")
+            raise ValueError("数组为空！")
 
         # 转换为 numpy 数组
         data_numpy = np.asarray(data)
