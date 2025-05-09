@@ -564,39 +564,72 @@ class Tools:
 
     pass  # function
 
+
     @classmethod
-    def MinMaxScaler(cls, data: Union[list, np.ndarray], min_max_range: tuple) -> np.ndarray:
+    def MinMaxScaler(cls, data: Union[list, np.ndarray], min_max_range: tuple) -> Union[list, np.ndarray]:
         """
         指定范围，归一化数组之各元素到范围内。
-        
+
         Args:
             data (Union[list, np.ndarray]): 待处理的数组
             min_max_range (tuple): 范围，(最小范围, 最大范围)
 
-        Returns: 列表形式的归一化数组。
+        Returns:
+            Union[list, np.ndarray]: 归一化后的数组，类型与输入一致。
         """
         if len(data) == 0:
-            raise Exception("列表为空！")
-            pass  # if
+            raise ValueError("列表为空！")
 
-        if isinstance(data, list):
-            is_list = True
-            data_numpy = np.asarray(data)
-        elif isinstance(data, np.ndarray):
-            is_list = False
-            data_numpy = data
+        # 转换为 numpy 数组
+        data_numpy = np.asarray(data)
+
+        # 检查最大值和最小值是否相等
+        data_range = np.ptp(data_numpy)  # 等价于 np.max(data_numpy) - np.min(data_numpy)
+        if data_range == 0:
+            # 如果所有元素相同，返回全为 min_max_range[0] 的数组
+            transformed_data = np.full_like(data_numpy, min_max_range[0], dtype=np.float64)
         else:
-            raise Exception("错误的数据类型！")
-            pass  # if
+            # 正常归一化
+            transformed_data = ((data_numpy - np.min(data_numpy)) / data_range) * (min_max_range[1] - min_max_range[0]) + min_max_range[0]
 
-        transformed_data = ((data_numpy - np.min(data_numpy) + 0.0001) / (np.max(data_numpy) - np.min(data_numpy) + 0.0001)) * (min_max_range[1] - min_max_range[0]) + min_max_range[0]
-
-        return transformed_data
-        # if is_list:
-        #     return list(transformed_data)
-        # else:
-        #     return transformed_data
+        # 如果输入是 list，返回 list
+        return transformed_data.tolist() if isinstance(data, list) else transformed_data
         pass  # function
+
+    # #HACK 旧版的计算方式
+    # @classmethod
+    # def MinMaxScaler(cls, data: Union[list, np.ndarray], min_max_range: tuple) -> np.ndarray:
+    #     """
+    #     指定范围，归一化数组之各元素到范围内。
+    #
+    #     Args:
+    #         data (Union[list, np.ndarray]): 待处理的数组
+    #         min_max_range (tuple): 范围，(最小范围, 最大范围)
+    #
+    #     Returns: 列表形式的归一化数组。
+    #     """
+    #     if len(data) == 0:
+    #         raise Exception("列表为空！")
+    #         pass  # if
+    #
+    #     if isinstance(data, list):
+    #         is_list = True
+    #         data_numpy = np.asarray(data)
+    #     elif isinstance(data, np.ndarray):
+    #         is_list = False
+    #         data_numpy = data
+    #     else:
+    #         raise Exception("错误的数据类型！")
+    #         pass  # if
+    #
+    #     transformed_data = ((data_numpy - np.min(data_numpy) + 0.0001) / (np.max(data_numpy) - np.min(data_numpy) + 0.0001)) * (min_max_range[1] - min_max_range[0]) + min_max_range[0]
+    #
+    #     return transformed_data
+    #     # if is_list:
+    #     #     return list(transformed_data)
+    #     # else:
+    #     #     return transformed_data
+    #     pass  # function
 
     @classmethod
     def generate_unique_identifier(cls):
