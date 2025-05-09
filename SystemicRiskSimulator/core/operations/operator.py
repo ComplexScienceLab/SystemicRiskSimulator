@@ -16,7 +16,7 @@ import numpy as np
 import pandas as pd
 
 from SystemicRiskSimulator.tools.logging_tools import log_message, record_work_state
-from SystemicRiskSimulator.core.define.define_agents import ModelAgent
+
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.collector import Collector
 
@@ -106,7 +106,14 @@ class Operator:
                     c = conn.cursor()
                     c.execute(
                         """CREATE TABLE IF NOT EXISTS experiments
-                                                            (exp_id INTEGER PRIMARY KEY, status_实验组模拟程序 TEXT)"""
+                           (
+                               exp_id
+                               INTEGER
+                               PRIMARY
+                               KEY,
+                               status_实验组模拟程序
+                               TEXT
+                           )"""
                     )
                     # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
                     for i in range(1, num_parameters_works + 1):
@@ -212,7 +219,7 @@ class Operator:
         pass  # function
 
     # @classmethod
-    # def operate_run_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    # def operate_run_experiment(cls, A, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
     #     """
     #     运作运行实验。用于传统的 ABM 模型。
     #
@@ -354,7 +361,7 @@ class Operator:
         pass  # function
 
     @classmethod
-    def operate_reset_experiment_for_Gym(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict):
+    def operate_reset_experiment_for_Gym(cls, A, A_data: AgentDataCollection, sgv: dict, para: dict):
         """
         运作初始化实验（用于Gym）。
 
@@ -417,7 +424,7 @@ class Operator:
         pass  # function
 
     # @classmethod
-    # def operate_step_experiment(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
+    # def operate_step_experiment(cls, A, A_data: AgentDataCollection, sgv: dict, para: dict, model: Any):
     #     """
     #     运作步进实验。用于使用强化学习环境工具包自定义的模型。
     #
@@ -654,7 +661,7 @@ class Operator:
         pass  # function
 
     @classmethod
-    def reset_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict):
+    def reset_data(cls, A, A_data: AgentDataCollection, sgv: dict, para: dict):
         """
         重置已有的个体数据。
 

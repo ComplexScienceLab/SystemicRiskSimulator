@@ -7,7 +7,6 @@ import pandas as pd
 from pathlib import Path
 from typing import Optional
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
-from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.tools.tools import Tools
 
@@ -181,7 +180,7 @@ class Collector:
         pass  # function
 
     @classmethod
-    def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, collect: Optional[dict] = None):
+    def collect_agent_data(cls, A, A_data: AgentDataCollection, sgv: dict, para: dict, collect: Optional[dict] = None):
         """
         收集数据并存储。
 
@@ -329,7 +328,7 @@ class Collector:
 
     # ## NOTE 当用对象字段数据结构时：
     # @classmethod
-    # def init_agent_data_collection(cls, A: ModelAgent, sgv: dict):
+    # def init_agent_data_collection(cls, A, sgv: dict):
     #     """
     #
     #     Args:
@@ -372,7 +371,7 @@ class Collector:
     #     pass
     #
     # @classmethod
-    # def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict):
+    # def collect_agent_data(cls, A, A_data: AgentDataCollection, sgv: dict):
     #     """
     #     收集数据并存储
     #

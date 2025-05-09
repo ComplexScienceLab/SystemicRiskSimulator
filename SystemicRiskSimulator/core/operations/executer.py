@@ -5,7 +5,7 @@ import logging
 from copy import deepcopy
 from dataclasses import dataclass
 from typing import Optional
-from SystemicRiskSimulator.core.define.define_agents import ModelAgent
+
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.collector import Collector
 
@@ -19,7 +19,7 @@ class Executer:
     """
 
     @classmethod
-    def update_turnStep_by_ABM(cls, content, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def update_turnStep_by_ABM(cls, content, A, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         #NOTE：执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
 
@@ -59,7 +59,7 @@ class Executer:
         return A, sgv
 
     @classmethod
-    def update_turnStep_by_RL(cls, content, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def update_turnStep_by_RL(cls, content, A, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         #NOTE：执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
 
@@ -86,7 +86,7 @@ class Executer:
         pass  # function
 
     @classmethod
-    def update_variableStep(cls, content, update_way: str, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict, is_collect=True, collect: Optional[list] = None):
+    def update_variableStep(cls, content, update_way: str, A, A_data: AgentDataCollection, para: dict, sgv: dict, is_collect=True, collect: Optional[list] = None):
         """
         #NOTE：执行一次变量变更级别的步进更新
 
@@ -121,7 +121,7 @@ class Executer:
         pass  # function
 
     # @classmethod
-    # def agentsRewards_variable_step_update(cls, content, update_way: str, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    # def agentsRewards_variable_step_update(cls, content, update_way: str, A, A_data: AgentDataCollection, para: dict, sgv: dict):
     #     """
     #     #NOTE：执行一次个体众奖励函数值变更级别的步进更新  #HACK 似乎无用了。
     #

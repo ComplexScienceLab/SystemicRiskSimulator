@@ -22,7 +22,7 @@ class ModelMain:
         self.model_finance = model_finance
         pass  # function
 
-    def model_content(self, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def model_content(self, A, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         模型IB1211
 

@@ -5,7 +5,7 @@
 import gymnasium as gym
 import ray
 import numpy as np
-from SystemicRiskSimulator.core.define.define_agents import ModelAgent
+
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.executer import Executer
 # from .content_finance import Content_Finance
