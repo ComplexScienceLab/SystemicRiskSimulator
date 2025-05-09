@@ -23,6 +23,8 @@ from multiprocessing import Pool
 import json
 import gymnasium as gym
 import numpy as np
+import pandas as pd
+
 # import torch
 # from matplotlib import pyplot as plt
 # from torch.distributions import Categorical
@@ -330,7 +332,7 @@ def main(sgv):
                 M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
 
                 M.model_content()  # 执行一次轮次级别的步进更新
-                M.A.AB.observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
+                M.A.AB.observations = M.get_observations(agent_variable_update=M.A.AB.observations, Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
                 while M.sgv['is_continue_process']:
                     # 决策动作
@@ -338,7 +340,7 @@ def main(sgv):
 
                     # 执行动作以更新观测和环境
                     M.model_content()  # 执行一次轮次级别的步进更新
-                    M.A.AB.next_observations = M.get_observations(Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
+                    M.A.AB.next_observations = M.get_observations(agent_variable_update=M.A.AB.next_observations, Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
                     # 计算奖励值
                     M.calc_rewards(lambda_param=1.0, r_min=0.0, isv=M.A.BB.isv, Loss_IB_def_t=M.A.BB.Loss_IB_def_t)
@@ -349,15 +351,25 @@ def main(sgv):
                     # 各智能体经验
                     agents_transition_observations = []
 
-                    # 更新前后观测
-                    for i in range(sgv['num_bank']):
-                        M.A.AB.observations[i][:] = M.A.AB.next_observations[i][:]  # 更新观测
+                    # 更新前后观测 #DEBUG
+                    print(f"更新前：")
+                    M.A.AB.observations = deepcopy(M.A.AB.next_observations)
 
                     pass  # while
 
                 if not M.sgv['is_continue_process']:
-                    logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards)}")
+                    logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
                     pass  # if
+
+                # 转换为数据框
+                for i in range(M.sgv['num_bank']):
+                    M.AB.observations[i] = pd.DataFrame(M.AB.observations[i])
+                    M.AB.next_observations[i] = pd.DataFrame(M.AB.next_observations[i])
+                    M.AB.actions[i] = pd.DataFrame(M.AB.actions[i])
+                    M.AB.rewards[i] = pd.DataFrame(M.AB.rewards[i])
+                    M.AB.dones[i] = pd.DataFrame(M.AB.dones[i])
+                    M.AB.truncations[i] = pd.DataFrame(M.AB.truncations[i])
+                    pass  # for
 
                 # 更新强化学习算法策略 #FIXME
                 for i in np.where(M.A.BB.strategy_style != "fixed")[0]:
