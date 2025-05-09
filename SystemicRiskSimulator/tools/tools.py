@@ -568,7 +568,7 @@ class Tools:
     @classmethod
     def MinMaxScaler(cls, data: Union[list, np.ndarray], min_max_range: tuple) -> Union[list, np.ndarray]:
         """
-        指定范围，归一化数组之各元素到范围内。
+        指定范围，缩放数组之各元素到范围内。
 
         Args:
             data (Union[list, np.ndarray]): 待处理的数组
