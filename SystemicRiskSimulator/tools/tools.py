@@ -564,6 +564,30 @@ class Tools:
 
     pass  # function
 
+    @classmethod
+    def normalize_array(cls, data: np.ndarray) -> np.ndarray:
+        """
+        对非空数组进行归一化处理。
+        如果数组的最大值和最小值不相等，则返回全零数组。
+        注意：如果数组是空的，则抛出异常。
+
+        Args:
+            data (numpy.ndarray): 输入数组。
+
+        Returns:
+            numpy.ndarray: 归一化后的数组。
+        """
+        if data.size == 0:
+            raise ValueError("数组为空！")
+
+        min_val = np.min(data)
+        max_val = np.max(data)
+        if max_val != min_val:
+            return (data - min_val) / (max_val - min_val)
+        else:
+            return np.zeros_like(data)
+            pass  # if
+        pass  # function
 
     @classmethod
     def MinMaxScaler(cls, data: Union[list, np.ndarray], min_max_range: tuple) -> Union[list, np.ndarray]:
