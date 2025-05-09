@@ -342,8 +342,14 @@ def main(sgv):
                     M.model_content()  # 执行一次轮次级别的步进更新
                     M.A.AB.next_observations = M.get_observations(agent_variable_update=M.A.AB.next_observations, Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
 
-                    # 计算奖励值
-                    M.calc_rewards(lambda_param=1.0, r_min=0.0, isv=M.A.BB.isv, Loss_IB_def_t=M.A.BB.Loss_IB_def_t)
+                    # # 计算奖励值
+                    # M.calc_rewards(
+                    #     alpha_reward=M.para['alpha_reward'],
+                    #     r_min=0.0,
+                    #     isv=M.A.BB.isv,
+                    #     Loss_IB_def_t=M.A.BB.Loss_IB_def_t,
+                    #     Default_IB_def_s=M.A.BB.Default_IB_def_s
+                    # )
 
                     # 判断是否结束
                     M.calc_dones()
@@ -357,19 +363,20 @@ def main(sgv):
 
                     pass  # while
 
-                if not M.sgv['is_continue_process']:
-                    logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
-                    pass  # if
-
                 # 转换为数据框
                 for i in range(M.sgv['num_bank']):
-                    M.AB.observations[i] = pd.DataFrame(M.AB.observations[i])
-                    M.AB.next_observations[i] = pd.DataFrame(M.AB.next_observations[i])
-                    M.AB.actions[i] = pd.DataFrame(M.AB.actions[i])
-                    M.AB.rewards[i] = pd.DataFrame(M.AB.rewards[i])
-                    M.AB.dones[i] = pd.DataFrame(M.AB.dones[i])
-                    M.AB.truncations[i] = pd.DataFrame(M.AB.truncations[i])
+                    M.A.AB.observations[i] = pd.DataFrame(M.A.AB.observations[i])
+                    M.A.AB.next_observations[i] = pd.DataFrame(M.A.AB.next_observations[i])
+                    M.A.AB.actions[i] = pd.DataFrame(M.A.AB.actions[i])
+                    M.A.AB.rewards[i] = pd.DataFrame(M.A.AB.rewards[i])
+                    M.A.AB.dones[i] = pd.DataFrame(M.A.AB.dones[i])
+                    M.A.AB.truncations[i] = pd.DataFrame(M.A.AB.truncations[i])
                     pass  # for
+
+                if not M.sgv['is_continue_process']:
+                    logging.info(f"第 {M.sgv['episode']} 局结束")
+                    # logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
+                    pass  # if
 
                 # 更新强化学习算法策略 #FIXME
                 for i in np.where(M.A.BB.strategy_style != "fixed")[0]:
