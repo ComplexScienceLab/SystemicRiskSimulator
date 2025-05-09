@@ -308,14 +308,14 @@ def main(sgv):
             ## 运行固定的奖励函数参数
             np.random.seed(57)  # 随机选取一个奖励函数的参数 #TODO 后续改成从配置文件获取
             # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
-            alpha_reward = 0.60  # #DEBUG 调试专用
+            alpha_reward = 0.50  # #DEBUG 调试专用
             grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
             paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
             sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
             # 创建环境
             # exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
-            exp_id = 956  # #DEBUG 调试专用
+            exp_id = 965  # #DEBUG 调试专用
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
