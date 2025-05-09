@@ -224,7 +224,7 @@ def main(sgv):
 
             # 创建环境
             # exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
-            exp_id = 956  # #DEBUG 调试专用
+            exp_id = 955  # #DEBUG 调试专用
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             env = gym.make(
