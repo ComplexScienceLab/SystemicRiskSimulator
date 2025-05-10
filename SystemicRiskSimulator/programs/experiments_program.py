@@ -360,15 +360,7 @@ def main(sgv):
                     # 更新前后观测
                     for i in range(M.sgv['num_bank']):
                         for k, v in M.A.AB.observations[i].items():
-                            print(f"i={i}, k={k}, v={v}")
-                            # for j in range(len(v)):
-                            #     print(f"j={j}, v[j]={v[j]}")
-                            #     pass # for
-                            print(f"更新前：")  # DEBUG
-                            print(M.A.AB.observations[i][k])  # DEBUG
                             M.A.AB.observations[i][k].append(deepcopy(M.A.AB.next_observations[i][k][-1]))
-                            print(f"更新后：")  # DEBUG
-                            print(M.A.AB.observations[i][k])  # DEBUG
                             pass  # for
                         pass  # for
 
