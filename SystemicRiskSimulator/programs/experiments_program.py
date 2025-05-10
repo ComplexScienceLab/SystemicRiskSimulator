@@ -357,11 +357,29 @@ def main(sgv):
                     # 各智能体经验
                     agents_transition_observations = []
 
-                    # 更新前后观测 #DEBUG
-                    print(f"更新前：")
-                    M.A.AB.observations = deepcopy(M.A.AB.next_observations)
+                    # 更新前后观测
+                    for i in range(M.sgv['num_bank']):
+                        for k, v in M.A.AB.observations[i].items():
+                            print(f"i={i}, k={k}, v={v}")
+                            # for j in range(len(v)):
+                            #     print(f"j={j}, v[j]={v[j]}")
+                            #     pass # for
+                            print(f"更新前：")  # DEBUG
+                            print(M.A.AB.observations[i][k])  # DEBUG
+                            M.A.AB.observations[i][k].append(deepcopy(M.A.AB.next_observations[i][k][-1]))
+                            print(f"更新后：")  # DEBUG
+                            print(M.A.AB.observations[i][k])  # DEBUG
+                            pass  # for
+                        pass  # for
 
                     pass  # while
+
+                if not M.sgv['is_continue_process']:
+                    logging.info(f"第 {M.sgv['episode']} 局结束")
+                    # logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
+                    pass  # if
+
+                ## 完成一局之后的处理
 
                 # 转换为数据框
                 for i in range(M.sgv['num_bank']):
@@ -373,19 +391,31 @@ def main(sgv):
                     M.A.AB.truncations[i] = pd.DataFrame(M.A.AB.truncations[i])
                     pass  # for
 
-                if not M.sgv['is_continue_process']:
-                    logging.info(f"第 {M.sgv['episode']} 局结束")
-                    # logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
-                    pass  # if
+                # 预处理 M.A.AB 各个个体之不合理的部分
+                for i in range(M.sgv['num_bank']):
+                    M.A.AB.observations[i] = M.A.AB.observations[i].iloc[:-1, :]  # 去掉最后一行
+                    # M.A.AB.next_observations[i] = M.A.AB.next_observations[i].iloc[1:, :]  # 去掉第一行
+                    pass
 
-                # 更新强化学习算法策略 #FIXME
+                ## 更新强化学习算法策略 #FIXME
                 for i in np.where(M.A.note.strategy_method == "learning")[0]:
+                    # 从数据框筛选出有效数据
+                    dict_valid_data = {
+                        'observations': np.stack(M.A.AB.observations[i][M.A.AB.observations[i]['mask']]['Loss_IB_def'].values),
+                        'actions': np.stack(M.A.AB.actions[i][M.A.AB.actions[i]['mask']]['theta_IB_def'].values),
+                        'rewards': np.stack(M.A.AB.rewards[i][M.A.AB.rewards[i]['mask']]['values'].values),
+                        'next_observations': np.stack(M.A.AB.next_observations[i][M.A.AB.next_observations[i]['mask']]['Loss_IB_def'].values),
+                        'dones': np.stack(M.A.AB.dones[i][M.A.AB.dones[i]['mask']]['values'].values),
+                        'truncations': np.stack(M.A.AB.truncations[i][M.A.AB.truncations[i]['mask']]['values'].values),
+                    }
+
+                    # 更新强化学习算法策略
                     M.model_algorithm[i].update(
-                        M.A.AB.observations[i],
-                        M.A.AB.actions[i],
-                        M.A.AB.rewards[i],
-                        M.A.AB.next_observations[i],
-                        M.A.AB.dones[i]
+                        dict_valid_data['observations'],
+                        dict_valid_data['actions'],
+                        dict_valid_data['rewards'],
+                        dict_valid_data['next_observations'],
+                        dict_valid_data['dones']
                     )
                     pass  # for
 
