@@ -67,7 +67,7 @@ set_config_variables = dict(
 
     # NOTE 使用的模型类型类型设置：
     is_use_PettingZoo_environments=False,  # 是否使用 PettingZoo 环境框架。默认 True。
-    is_use_RLlib_frameworks=False,  # 是否使用 RLlib 强化学习框架。默认 False。
+    is_use_RL_method=False,  # 是否使用强化学习方法。默认 False。
     RL_state='using',  # 强化学习状态：可选值包括 'training', 'using'。默认值 'using'； #HACK 注意，当只有处于 'using' 值的时候才会收集运行过程之数据。
 
     # NOTE 手动设置后续处理用的实验文件夹名

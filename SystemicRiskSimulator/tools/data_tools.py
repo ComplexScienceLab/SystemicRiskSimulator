@@ -3,7 +3,9 @@
 @Desc   : 一些常用的数据处理工具
 """
 
-from SystemicRiskSimulator.external_packages import np, pd, logging
+import numpy as np
+import pandas as pd
+import logging
 
 
 def check_risk_exposure_matrix_constraints(A_IB: np.ndarray, A_IB_all: np.ndarray, Z_IB_all: np.ndarray, **kwargs):

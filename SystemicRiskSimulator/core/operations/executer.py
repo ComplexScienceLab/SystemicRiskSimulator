@@ -1,10 +1,12 @@
 """
 执行
 """
-from SystemicRiskSimulator.external_packages import logging, pd, deepcopy, dataclass, Optional
-from SystemicRiskSimulator.core.define.define_agents import ModelAgent
+import logging
+from copy import deepcopy
+from dataclasses import dataclass
+from typing import Optional
+
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
-# from SystemicRiskSimulator.data.models.contents.content_finance import Finance
 from SystemicRiskSimulator.core.operations.collector import Collector
 
 pass  # end import
@@ -17,7 +19,7 @@ class Executer:
     """
 
     @classmethod
-    def update_turnStep_by_ABM(cls, content, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def update_turnStep_by_ABM(cls, content, A, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         #NOTE：执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
 
@@ -26,14 +28,12 @@ class Executer:
         Args:
             content (object): 相关的需要步进更新的功能类或者实例
             A (ModelAgent): 多主体
-            A_last (ModelAgent): 上一回合的多主体
             A_data (AgentDataCollection): 多主体之数据
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
 
         Returns:
             A (ModelAgent): 多主体
-            A_last (ModelAgent): 上一回合的多主体
             sgv (dict): 模拟器全局变量
 
         """
@@ -56,18 +56,16 @@ class Executer:
                 pass  # if
             pass  # if
 
-        # return A, A_last, sgv
         return A, sgv
 
     @classmethod
-    def update_turnStep_by_RL(cls, content, A: ModelAgent, A_last: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def update_turnStep_by_RL(cls, content, A, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         #NOTE：执行一次轮次级别（轮次粒度）的步进更新。对应强化学习的一次步进更新。
 
         Args:
             content (object): 相关的需要步进更新的功能类或者实例
             A (ModelAgent): 多主体
-            A_last (ModelAgent): 上一回合的多主体
             A_data (AgentDataCollection): 多主体之数据
             para (dict): 参数集
             sgv (dict): 模拟器全局变量
@@ -81,17 +79,14 @@ class Executer:
         sgv['phase'] = 1  # 逐相复位（起始为1）
         # sgv['process_name'] = process_name
         logging.debug(f"        轮次：{sgv['turn']}，模型：{sgv['process_name']}")
-        content(A, A_last, A_data, para, sgv)  # 执行一次轮次级别的步进更新
+        content(A, A_data, para, sgv)  # 执行一次轮次级别的步进更新
 
-        # 深拷贝一份作为上一回合的数据
-        A_last = ModelAgent(2, deepcopy(A.BB), deepcopy(A.b), deepcopy(A.IB), deepcopy(A.ib))
-
-        return A, A_last, sgv
+        return A, sgv
 
         pass  # function
 
     @classmethod
-    def update_variableStep(cls, content, update_way: str, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict, is_collect=True, collect: Optional[list] = None):
+    def update_variableStep(cls, content, update_way: str, A, A_data: AgentDataCollection, para: dict, sgv: dict, is_collect=True, collect: Optional[list] = None):
         """
         #NOTE：执行一次变量变更级别的步进更新
 
@@ -115,7 +110,7 @@ class Executer:
         logging.debug(f"                步进：{sgv['step']}，相：{sgv['phase']}，更新源：{update_way}")
         # Finance.update_variables(A.BB, A.IB, A.b, A.ib, by_way=update_way)  # 更新金融变量
         content.update_variables(A, by_way=update_way)  # 更新金融变量
-        if is_collect or sgv['is_use_RLlib_frameworks'] is False or sgv['RL_state'] == 'using':
+        if is_collect or sgv['is_use_RL_method'] is False or sgv['RL_state'] == 'using':
             Collector.collect_agent_data(A, A_data, sgv, para, collect)
             pass  # if
 
@@ -126,7 +121,7 @@ class Executer:
         pass  # function
 
     # @classmethod
-    # def agentsRewards_variable_step_update(cls, content, update_way: str, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    # def agentsRewards_variable_step_update(cls, content, update_way: str, A, A_data: AgentDataCollection, para: dict, sgv: dict):
     #     """
     #     #NOTE：执行一次个体众奖励函数值变更级别的步进更新  #HACK 似乎无用了。
     #

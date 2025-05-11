@@ -1,11 +1,12 @@
 ## 函数区：收集数据
 import shutil
 
-import numpy as np
 from scipy.sparse import csr_array
-from SystemicRiskSimulator.external_packages import pickle, pd, Path, Optional, deepcopy, time
+import pickle
+import pandas as pd
+from pathlib import Path
+from typing import Optional
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
-from SystemicRiskSimulator.core.define.define_agents import ModelAgent
 from SystemicRiskSimulator.core.define.define_type import *
 from SystemicRiskSimulator.tools.tools import Tools
 
@@ -18,6 +19,7 @@ class Collector:
     @classmethod
     def init_agent_data_collection(cls, A: pd.Series, sgv: dict, para: dict):
         """
+        初始化个体众数据集
 
         Args:
             A (pd.Series): 系统性风险个体众
@@ -96,7 +98,89 @@ class Collector:
         pass  # function
 
     @classmethod
-    def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict, para: dict, collect: Optional[dict] = None):
+    def reset_agent_data_collection(cls, A: pd.Series, A_data, sgv, para):
+        """
+        重置个体众数据集
+
+        Args:
+            A (pd.Series): 系统性风险个体众
+            A_data (AgentDataCollection): 个体众数据集
+            sgv (dict): 模拟器全局变量
+            para (dict): 参数变量
+
+        Returns:
+            A_data: 待收集的数据
+
+        """
+
+        ## 初始化数据框用以存储agent数据
+
+        # #HACK 改之前的收集 agents 数据文件代码，对于未适配的 set_config_variables.py 文件而言，如果没有
+        # dict_agents_data = {}
+        # for i, agents_data in enumerate(sgv['list_agents_data']):
+        #     with open(Path(sgv['folderpath_agents'], 'agents', f"{agents_data}_year={para['year']}_density={para['density']:.2f}.pkl"), 'rb') as f:
+        #         dict_agents_data[agents_data] = pickle.load(f)
+        #     pass  # for
+        #
+        # BB_data = pd.DataFrame()
+        # IB_data = pd.DataFrame()
+        # A_data = AgentDataCollection(BB_data, IB_data)
+
+        # #HACK 改之后的收集 agents 数据文件代码
+        dict_agents_data = {}
+        id_agents = para['id_agents']
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            agents_filename = f"id={id_agents}-v={para_01}"
+            for para_02 in sgv['list_agents_data_filename_para_02']:
+                if isinstance(para[para_02], float):
+                    agents_filename += f"-{para_02}={float(para[para_02]):.2f}"
+                else:
+                    agents_filename += f"-{para_02}={para[para_02]}"
+                pass  # for
+            agents_filename += ".pkl"
+            with open(Path(sgv['folderpath_agents'], 'agents', agents_filename), 'rb') as f:
+                dict_agents_data[para_01] = pickle.load(f)
+            pass  # for
+
+        A_data = pd.Series()
+        for k, v in dict_agents_data.items():
+            if k != "note":
+                A_data[k] = pd.DataFrame()
+            else:  # 如果是备注变量，则直接用 A 赋值
+                A_data[k] = A[k].copy()
+            # for k1, v1 in deepcopy(v).items():  # #HACK 之所以不用这几行是因为这个可能会与模型运行过程的第一步初始化重复初始化赋值。
+            #     A_data[k][k1] = v1
+            # pass  # for
+
+        # sgv['series_BB'] = pd.Series()
+        # for i in A.BB.index:
+        #     sgv['series_BB'][i] = A.BB[i].copy()
+        # sgv['df_BB'] = sgv['series_BB'].to_frame().transpose()
+        # sgv['df_BB'].insert(loc=0, column='process_name', value=sgv['process_name'])
+        # sgv['df_BB'].insert(loc=1, column='step', value=sgv['step'])
+        # sgv['df_BB'].insert(loc=2, column='turn', value=sgv['turn'])
+        # sgv['df_BB'].insert(loc=3, column='phase', value=sgv['phase'])
+        # # BB_data = pd.concat([BB_data, sgv['df_BB']], ignore_index=True)
+        # A_data.BB = pd.concat([A_data.BB, sgv['df_BB']], ignore_index=True)
+        #
+        # sgv['series_IB'] = pd.Series()
+        # for i in A.IB.index:
+        #     sgv['series_IB'][i] = A.IB[i].copy()
+        # sgv['df_IB'] = sgv['series_IB'].to_frame().transpose()
+        # sgv['df_IB'].insert(loc=0, column='process_name', value=sgv['process_name'])
+        # sgv['df_IB'].insert(loc=1, column='step', value=sgv['step'])
+        # sgv['df_IB'].insert(loc=2, column='turn', value=sgv['turn'])
+        # sgv['df_IB'].insert(loc=3, column='phase', value=sgv['phase'])
+        # # IB_data = pd.concat([IB_data, sgv['df_IB']], ignore_index=True)
+        # A_data.IB = pd.concat([A_data.IB, sgv['df_IB']], ignore_index=True)
+        #
+        # # A_data = pd.Series([BB_data, IB_data], index=['BB', 'IB'])
+
+        return A_data
+        pass  # function
+
+    @classmethod
+    def collect_agent_data(cls, A, A_data: AgentDataCollection, sgv: dict, para: dict, collect: Optional[dict] = None):
         """
         收集数据并存储。
 
@@ -244,7 +328,7 @@ class Collector:
 
     # ## NOTE 当用对象字段数据结构时：
     # @classmethod
-    # def init_agent_data_collection(cls, A: ModelAgent, sgv: dict):
+    # def init_agent_data_collection(cls, A, sgv: dict):
     #     """
     #
     #     Args:
@@ -287,7 +371,7 @@ class Collector:
     #     pass
     #
     # @classmethod
-    # def collect_agent_data(cls, A: ModelAgent, A_data: AgentDataCollection, sgv: dict):
+    # def collect_agent_data(cls, A, A_data: AgentDataCollection, sgv: dict):
     #     """
     #     收集数据并存储
     #

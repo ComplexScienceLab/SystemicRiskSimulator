@@ -3,9 +3,8 @@
 ## 定义类型，模式3-1
 
 
-from SystemicRiskSimulator.external_packages import np, Union, Any
-
-pass  # end import
+import numpy as np
+from typing import Union, Any
 
 ## 定义类型别名
 IdsType = np.int16  # 向量编号类型

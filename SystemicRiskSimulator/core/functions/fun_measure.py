@@ -3,8 +3,7 @@
 # 状态/开发
 ##########################################
 
-from SystemicRiskSimulator.external_packages import np
-
+import numpy as np
 
 # 构建测度指标
 

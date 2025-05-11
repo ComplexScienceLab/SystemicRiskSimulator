@@ -1,4 +1,6 @@
-from SystemicRiskSimulator.external_packages import np, deepcopy, logging
+import numpy as np
+from copy import deepcopy
+import logging
 from .model_define import ModelAgent
 from SystemicRiskSimulator.core.define.define_type import StateType
 
@@ -224,21 +226,21 @@ class ModelFinance:
     ## NOTE：功能函数集：计算状态功能
     ## #NOTE 以下的几个计算函数将在模型内容中单独使用，不用于联动同步计算。
 
-    def update_state_healthy_from_insolvent(self, A: ModelAgent, source_state_changes: StateType):
+    def update_state_healthy_from_insolvent(self, A, source_state_changes: StateType):
         """更新示性向量之于银行健康的，从资不抵债的。"""
         A.BB.hel[source_state_changes] = ~(A.BB.isv[source_state_changes])
         A.IB.hel = np.outer(A.BB.hel, A.BB.hel)
         logging.debug(f"                    update_state_healthy_from_insolvent")
         pass  # function
 
-    def update_state_exist_from_exit(self, A: ModelAgent, source_state_changes: StateType):
+    def update_state_exist_from_exit(self, A, source_state_changes: StateType):
         """更新示性向量之于银行存在的，从退出的。"""
         A.BB.exist[source_state_changes] = ~A.BB.exit[source_state_changes]
         A.IB.exist = np.outer(A.BB.exist, A.BB.exist)
         logging.debug(f"                    update_state_exist_from_exit")
         pass  # function
 
-    def calc_list_of_creditor_in_state_of_banks(self, A: ModelAgent, isState: StateType):
+    def calc_list_of_creditor_in_state_of_banks(self, A, isState: StateType):
         """计算指定的状态的银行之债权方银行示性矩阵。"""
 
         # 计算示性矩阵之于银行间风险敞口的
@@ -247,7 +249,7 @@ class ModelFinance:
         return is_exposure_of_creditor_in_state_of_banks
         pass  # function
 
-    def calc_list_of_debtor_in_state_of_banks(self, A: ModelAgent, isState: StateType):
+    def calc_list_of_debtor_in_state_of_banks(self, A, isState: StateType):
         """计算指定的状态的银行之债务方银行示性矩阵。"""
 
         # 计算示性矩阵之于银行间风险敞口的
@@ -529,7 +531,7 @@ class ModelFinance:
 
     ## NOTE 总的金融变量更新部分（主入口）
 
-    def update_variables(self, A: ModelAgent, by_way: str = 'all'):
+    def update_variables(self, A, by_way: str = 'all'):
         """
         更新各银行之借贷流量变量。
 

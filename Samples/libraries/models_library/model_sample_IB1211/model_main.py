@@ -2,7 +2,9 @@
 模型IB1211
 """
 
-from SystemicRiskSimulator.external_packages import np, logging, dataclass
+import numpy as np
+import logging
+from dataclasses import dataclass
 from SystemicRiskSimulator.core.define.define_agentDataCollection import AgentDataCollection
 from SystemicRiskSimulator.core.operations.executer import Executer
 from .model_finance import ModelFinance
@@ -20,7 +22,7 @@ class ModelMain:
         self.model_finance = model_finance
         pass  # function
 
-    def model_content(self, A: ModelAgent, A_data: AgentDataCollection, para: dict, sgv: dict):
+    def model_content(self, A, A_data: AgentDataCollection, para: dict, sgv: dict):
         """
         模型IB1211
 

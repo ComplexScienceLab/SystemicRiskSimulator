@@ -13,7 +13,10 @@ __all__ = [
     'calibrate_bilateral_exposure_by_ME_method_use_R_package'
 ]
 
-from SystemicRiskSimulator.external_packages import np, pd, Path, time, logging
+import numpy as np
+import pandas as pd
+import time
+import logging
 from SystemicRiskSimulator.core.functions.fun_adjast_bank_balanceSheet import adjust_A_IB_Z_IB_with_virtual_bank, adjust_A_IB_Z_IB_by_resize
 from SystemicRiskSimulator.tools.data_tools import check_risk_exposure_matrix_constraints
 

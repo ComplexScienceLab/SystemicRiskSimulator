@@ -11,7 +11,17 @@
 # ## 导入相关库
 
 # %%
-from SystemicRiskSimulator.external_packages import sys, Path, np, pd, pickle, itertools, time, reduce, random, logging
+import sys
+from pathlib import Path
+import numpy as np
+import pandas as pd
+import re
+import pickle
+import itertools
+import time
+from functools import reduce
+import random
+import logging
 from SystemicRiskSimulator.tools.tools import Tools
 
 # from libraries.agents_library.agents_test_IB1211.set_agents_variables import density_IBA

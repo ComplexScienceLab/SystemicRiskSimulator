@@ -3,8 +3,7 @@
 调整银行资产负债表
 """
 
-from SystemicRiskSimulator.external_packages import np
-
+import numpy as np
 
 def adjust_A_IB_Z_IB_with_virtual_bank(A_IB, Z_IB):
     """

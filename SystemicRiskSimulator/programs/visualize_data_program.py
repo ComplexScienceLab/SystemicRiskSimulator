@@ -10,7 +10,19 @@ Returns:
     None
 
 """
-from SystemicRiskSimulator.external_packages import platform, Path, re, glob, pd, np, deepcopy, sys, pickle, base64, Pool, multiprocessing, warnings
+import platform
+from pathlib import Path
+import re
+import glob
+import pandas as pd
+import numpy as np
+from copy import deepcopy
+import sys
+import pickle
+import base64
+from multiprocessing import Pool
+import multiprocessing
+import warnings
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
 

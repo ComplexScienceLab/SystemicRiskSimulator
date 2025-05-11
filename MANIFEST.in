@@ -1,0 +1,5 @@
+include README.md
+include SystemicRiskSimulator/**/*.py
+include SystemicRiskSimulator/**/*.pkl
+include SystemicRiskSimulator/**/*.json
+include SystemicRiskSimulator/**/*.txt
