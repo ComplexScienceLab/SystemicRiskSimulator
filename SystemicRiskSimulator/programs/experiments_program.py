@@ -402,13 +402,9 @@ def main(sgv):
                     }
 
                     # 更新强化学习算法策略
-                    M.model_algorithm[i].update(
-                        dict_valid_data['observations'],
-                        dict_valid_data['actions'],
-                        dict_valid_data['rewards'],
-                        dict_valid_data['next_observations'],
-                        dict_valid_data['dones']
-                    )
+                    logging.debug(f"开始更新银行 {i} 的强化学习算法策略")
+                    M.model_algorithm[i].update(dict_valid_data)
+                    logging.debug(f"结束更新银行 {i} 的强化学习算法策略")
                     pass  # for
 
                 pass  # while
