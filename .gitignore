@@ -11,6 +11,8 @@
 # paths that include data files
 venv/
 backup/
+*.egg-info/
+__pycache__/
 
 .idea/
 
@@ -23,6 +25,7 @@ management/python 虚拟环境
 data
 
 draft/
+
 
 
 ################################################################################
