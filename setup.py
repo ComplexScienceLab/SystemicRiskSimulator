@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="systemic_risk_simulator",
-    version="0.0.46_alpha",
+    name="systemicrisksimulator",
+    version="0.0.47_alpha",
     description="一个金融系统的系统性风险模拟器。 A systemic risk simulator for financial systems.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",

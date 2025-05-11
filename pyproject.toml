@@ -1,7 +1,7 @@
 [project]
 name = "systemicrisksimulator"
-version = "0.0.46_alpha"
-description = "Add your description here"
+version = "0.0.47_alpha"
+description = "一个金融系统的系统性风险模拟器。 A systemic risk simulator for financial systems."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -24,7 +24,11 @@ dependencies = [
     "svglib==1.5.1",
     "torch>=2.7.0",
 ]
-
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+include = ["systemicrisksimulator"]  # package names should match these glob patterns (["*"] by default)
+exclude = []  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
