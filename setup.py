@@ -12,6 +12,9 @@ setup(
     packages=find_packages(where="SystemicRiskSimulator"),
     package_dir={"": "SystemicRiskSimulator"},
     include_package_data=True,
+    exclude_package_data={
+        "": ["data/**/*"]
+    },
     python_requires=">=3.11",
     install_requires=[
         "chardet==5.2.0",

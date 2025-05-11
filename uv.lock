@@ -1002,7 +1002,7 @@ wheels = [
 [[package]]
 name = "systemicrisksimulator"
 version = "0.0.46a0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "chardet" },
     { name = "drawsvg" },
