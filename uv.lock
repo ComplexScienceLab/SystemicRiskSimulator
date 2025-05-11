@@ -1001,7 +1001,7 @@ wheels = [
 
 [[package]]
 name = "systemicrisksimulator"
-version = "0.0.45a0"
+version = "0.0.46a0"
 source = { virtual = "." }
 dependencies = [
     { name = "chardet" },
