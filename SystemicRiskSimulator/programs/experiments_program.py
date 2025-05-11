@@ -302,7 +302,7 @@ def main(sgv):
             pass  # TODO
 
         case '运行强化学习算法和ABM模型实验组做训练':
-            ## #NOW #NOTE：运行强化学习算法和ABM模型实验组做训练
+            ## #NOTE：运行强化学习算法和ABM模型实验组做训练
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
             ## 运行固定的奖励函数参数
@@ -331,40 +331,8 @@ def main(sgv):
                 ## 重置环境
                 M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
 
-                M.model_content()  # 执行一次轮次级别的步进更新
-                M.A.AB.observations = M.get_observations(agent_variable_update=M.A.AB.observations, Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
-
-                while M.sgv['is_continue_process']:
-                    # 决策动作
-                    M.model_action()
-
-                    # 执行动作以更新观测和环境
-                    M.model_content()  # 执行一次轮次级别的步进更新
-                    M.A.AB.next_observations = M.get_observations(agent_variable_update=M.A.AB.next_observations, Loss_IB_def=M.A.IB.Loss_IB_def)  # 获取观测
-
-                    # # 计算奖励值
-                    # M.calc_rewards(
-                    #     alpha_reward=M.para['alpha_reward'],
-                    #     r_min=0.0,
-                    #     isv=M.A.BB.isv,
-                    #     Loss_IB_def_t=M.A.BB.Loss_IB_def_t,
-                    #     Default_IB_def_s=M.A.BB.Default_IB_def_s
-                    # )
-
-                    # 判断是否结束
-                    M.calc_dones()
-
-                    # 各智能体经验
-                    agents_transition_observations = []
-
-                    # 更新前后观测
-                    for i in range(M.sgv['num_bank']):
-                        for k, v in M.A.AB.observations[i].items():
-                            M.A.AB.observations[i][k].append(deepcopy(M.A.AB.next_observations[i][k][-1]))
-                            pass  # for
-                        pass  # for
-
-                    pass  # while
+                ## 运行一局环境模拟
+                M.model_process()
 
                 if not M.sgv['is_continue_process']:
                     logging.info(f"第 {M.sgv['episode']} 局结束")
@@ -407,7 +375,6 @@ def main(sgv):
                                 pass  # for
                             pass  # if
                         pass  # for
-
 
                     pass  # for
 
