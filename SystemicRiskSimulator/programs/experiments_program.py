@@ -389,17 +389,27 @@ def main(sgv):
                     # M.A.AB.next_observations[i] = M.A.AB.next_observations[i].iloc[1:, :]  # 去掉第一行
                     pass
 
-                ## 更新强化学习算法策略 #FIXME
+                ## 更新强化学习算法策略
+
+                # 从数据框筛选出有效数据
                 for i in np.where(M.A.note.strategy_method == "learning")[0]:
-                    # 从数据框筛选出有效数据
-                    dict_valid_data = {
-                        'observations': np.stack(M.A.AB.observations[i][M.A.AB.observations[i]['mask']]['Loss_IB_def'].values),
-                        'actions': np.stack(M.A.AB.actions[i][M.A.AB.actions[i]['mask']]['theta_IB_def'].values),
-                        'rewards': np.stack(M.A.AB.rewards[i][M.A.AB.rewards[i]['mask']]['values'].values),
-                        'next_observations': np.stack(M.A.AB.next_observations[i][M.A.AB.next_observations[i]['mask']]['Loss_IB_def'].values),
-                        'dones': np.stack(M.A.AB.dones[i][M.A.AB.dones[i]['mask']]['values'].values),
-                        'truncations': np.stack(M.A.AB.truncations[i][M.A.AB.truncations[i]['mask']]['values'].values),
-                    }
+                    dict_valid_data = dict()
+                    for k1, v1 in M.A.AB.items():
+                        if k1 != 'id_agent':
+                            for k2, v2 in v1[i].items():
+                                if k2 != 'mask':
+                                    if len(v1[i][v1[i]['mask']][k2].values) > 0:
+                                        dict_valid_data[k1] = np.stack(v1[i][v1[i]['mask']][k2].values)  # 从数据框筛选出有效数据
+                                    else:  # 如果筛选的数据是空的，则赋值 0 值
+                                        dict_valid_data[k1] = np.zeros((1, len(v1[i][k2].values[0])))
+                                        pass  # if
+                                    pass  # if
+                                pass  # for
+                            pass  # if
+                        pass  # for
+
+
+                    pass  # for
 
                     # 更新强化学习算法策略
                     logging.debug(f"开始更新银行 {i} 的强化学习算法策略")
