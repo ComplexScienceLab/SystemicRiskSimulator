@@ -324,8 +324,8 @@ def main(sgv):
             M.sgv['episode'] = 0  # 初始化局数计数器
             while M.sgv['episode'] < sgv['max_num_episode']:
                 M.sgv['episode'] += 1
-                exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-                exp_id = 956  # #DEBUG 调试专用
+                # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                # exp_id = 956  # #DEBUG 调试专用
                 para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
                 logging.info(f"第 {M.sgv['episode']} 局开始")
                 ## 重置环境
