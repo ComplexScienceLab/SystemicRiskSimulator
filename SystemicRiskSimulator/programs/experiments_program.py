@@ -24,6 +24,7 @@ import json
 import gymnasium as gym
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 
 # import torch
 # from matplotlib import pyplot as plt
@@ -322,69 +323,88 @@ def main(sgv):
             # 每一局，随机选取一个实验组运行。
             np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
             M.sgv['episode'] = 0  # 初始化局数计数器
-            while M.sgv['episode'] < sgv['max_num_episode']:
-                M.sgv['episode'] += 1
-                # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-                # exp_id = 956  # #DEBUG 调试专用
-                para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
-                logging.info(f"第 {M.sgv['episode']} 局开始")
-                ## 重置环境
-                M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
 
-                ## 运行一局环境模拟
-                M.model_process()
+            for i_training_iteration in range(sgv['num_training_iterations']):  # 进行指定次数的迭代
+                with tqdm(total=int(sgv['num_episodes'] / sgv['num_training_iterations']), desc='Iteration %d' % i_training_iteration) as pbar:  # 显示进度条
+                    for i_episode in range(int(sgv['num_episodes'] / sgv['num_training_iterations'])):  # 每次迭代的回合数
+                        M.sgv['training_iteration'] = i_training_iteration
+                        M.sgv['episode'] = i_episode
 
-                if not M.sgv['is_continue_process']:
-                    logging.info(f"第 {M.sgv['episode']} 局结束")
-                    # logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
-                    pass  # if
+                        # while M.sgv['episode'] < sgv['num_episodes']:
+                        #     M.sgv['episode'] += 1
+                        # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                        # exp_id = 955  # #DEBUG 调试专用
+                        para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
+                        logging.info(f"第 {M.sgv['episode']} 局开始")
+                        ## 重置环境
+                        M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
 
-                ## 完成一局之后的处理
+                        ## 运行一局环境模拟
+                        M.model_process()
 
-                # 转换为数据框
-                for i in range(M.sgv['num_bank']):
-                    M.A.AB.observations[i] = pd.DataFrame(M.A.AB.observations[i])
-                    M.A.AB.next_observations[i] = pd.DataFrame(M.A.AB.next_observations[i])
-                    M.A.AB.actions[i] = pd.DataFrame(M.A.AB.actions[i])
-                    M.A.AB.rewards[i] = pd.DataFrame(M.A.AB.rewards[i])
-                    M.A.AB.dones[i] = pd.DataFrame(M.A.AB.dones[i])
-                    M.A.AB.truncations[i] = pd.DataFrame(M.A.AB.truncations[i])
-                    pass  # for
+                        if not M.sgv['is_continue_process']:
+                            logging.info(f"第 {M.sgv['episode']} 局结束")
+                            # logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
+                            pass  # if
 
-                # 预处理 M.A.AB 各个个体之不合理的部分
-                for i in range(M.sgv['num_bank']):
-                    M.A.AB.observations[i] = M.A.AB.observations[i].iloc[:-1, :]  # 去掉最后一行
-                    # M.A.AB.next_observations[i] = M.A.AB.next_observations[i].iloc[1:, :]  # 去掉第一行
-                    pass
+                        ## 完成一局之后的处理
 
-                ## 更新强化学习算法策略
+                        # 转换为数据框
+                        for i in range(M.sgv['num_bank']):
+                            M.A.AB.observations[i] = pd.DataFrame(M.A.AB.observations[i])
+                            M.A.AB.next_observations[i] = pd.DataFrame(M.A.AB.next_observations[i])
+                            M.A.AB.actions[i] = pd.DataFrame(M.A.AB.actions[i])
+                            M.A.AB.rewards[i] = pd.DataFrame(M.A.AB.rewards[i])
+                            M.A.AB.dones[i] = pd.DataFrame(M.A.AB.dones[i])
+                            M.A.AB.truncations[i] = pd.DataFrame(M.A.AB.truncations[i])
+                            pass  # for
 
-                # 从数据框筛选出有效数据
-                for i in np.where(M.A.note.strategy_method == "learning")[0]:
-                    dict_valid_data = dict()
-                    for k1, v1 in M.A.AB.items():
-                        if k1 != 'id_agent':
-                            for k2, v2 in v1[i].items():
-                                if k2 != 'mask':
-                                    if len(v1[i][v1[i]['mask']][k2].values) > 0:
-                                        dict_valid_data[k1] = np.stack(v1[i][v1[i]['mask']][k2].values)  # 从数据框筛选出有效数据
-                                    else:  # 如果筛选的数据是空的，则赋值 0 值
-                                        dict_valid_data[k1] = np.zeros((1, len(v1[i][k2].values[0])))
-                                        pass  # if
+                        ## 预处理 M.A.AB 各个个体之不合理的部分
+                        for i in range(M.sgv['num_bank']):
+                            M.A.AB.observations[i] = M.A.AB.observations[i].iloc[:-1, :]  # 去掉最后一行
+                            # M.A.AB.next_observations[i] = M.A.AB.next_observations[i].iloc[1:, :]  # 去掉第一行
+                            pass
+
+                        ## 更新强化学习算法策略
+
+                        ## 从数据框筛选出有效数据
+                        for i in np.where(M.A.note.strategy_method == "learning")[0]:
+                            dict_valid_data = dict()
+                            for k1, v1 in M.A.AB.items():
+                                if k1 != 'id_agent':
+                                    for k2, v2 in v1[i].items():
+                                        if k2 != 'mask':
+                                            if len(v1[i][v1[i]['mask']][k2].values) > 0:
+                                                dict_valid_data[k1] = np.stack(v1[i][v1[i]['mask']][k2].values)  # 从数据框筛选出有效数据
+                                            else:  # 如果筛选的数据是空的，则赋值 0 值
+                                                dict_valid_data[k1] = np.zeros((1, len(v1[i][k2].values[0])))
+                                                pass  # if
+                                            pass  # if
+                                        pass  # for
                                     pass  # if
                                 pass  # for
-                            pass  # if
-                        pass  # for
 
-                    pass  # for
+                            pass  # for
 
-                    # 更新强化学习算法策略
-                    logging.debug(f"开始更新银行 {i} 的强化学习算法策略")
-                    M.model_algorithm[i].update(dict_valid_data)
-                    logging.debug(f"结束更新银行 {i} 的强化学习算法策略")
-                    pass  # for
+                            ## 更新强化学习算法策略
+                            logging.debug(f"开始更新银行 {i} 的强化学习算法策略")
+                            M.model_algorithm[i].update(dict_valid_data)
+                            logging.debug(f"结束更新银行 {i} 的强化学习算法策略")
+                            pass  # for
 
-                pass  # while
+                            ## 更新进度条
+                            if (M.sgv['episode'] + 1) % sgv['num_episodes_to_update_tqdm'] == 0:  # 每隔若干局数更新一次进度条
+                                pbar.set_postfix({
+                                    'episode':
+                                        '%d' % (sgv['num_episodes'] / sgv['num_training_iterations'] * M.sgv['training_iteration'] + M.sgv['episode'] + 1),
+                                    # 'return':
+                                    #     '%.3f' % np.mean(win_list[-100:])
+                                })  # 显示当前局数
+                            pbar.update(1)  # 更新进度条
+
+                        pass  # while
+                    pass  # with
+                pass  # for
 
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':
             pass  # TODO
@@ -400,7 +420,6 @@ def main(sgv):
                 id=sgv['gym_env_id'],
                 entry_point=sgv['Gym_register_entry_point'],
             )
-
 
             ## ----------------------------------------------------------------------
 
@@ -433,7 +452,6 @@ def main(sgv):
             logger.removeHandler(log_console_handler)
 
             pass  # match
-
 
     ## 连接 SQLite 数据库，统计实验组之本次作业之完成情况
     num_parameters_works = len(parameters_works)
