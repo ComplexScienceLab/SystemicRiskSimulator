@@ -406,6 +406,9 @@ def main(sgv):
                     pass  # with
                 pass  # for
 
+            ## 保存训练数据
+            M.model_algorithm.RlUtils.save_training_data(M.model_algorithm)
+
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':
             pass  # TODO
 
