@@ -26,7 +26,8 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-# import torch
+import torch  # 添加对 torch 的导入
+
 # from matplotlib import pyplot as plt
 # from torch.distributions import Categorical
 
@@ -265,7 +266,7 @@ def main(sgv):
                     observations, rewards, terminated, truncated, infos = env.step(actions_gym)  # 执行动作
                     episode_over = np.array(terminated).all() or np.array(truncated).all()  # 检查是否结束
                     if episode_over:
-                        logging.info(f"第 {sgv['episode']} 局结束")
+                        logging.info(f"\n第 {sgv['episode']} 局结束\n")
                     pass  # while
                 pass  # while
             ## # ----------------------------------------------------------------------------------
@@ -300,7 +301,116 @@ def main(sgv):
 
         case '运行强化学习算法和ABM模型实验组做应用':
             ## #NOTE：运行强化学习算法和ABM模型实验组做应用
-            pass  # TODO
+            sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
+
+            ## #NOW 加载训练好的模型和参数
+            logging.info("加载训练好的模型和参数")
+            with open('./training_data.pkl', 'rb') as f:
+                training_data = pickle.load(f)
+
+            # #NOW 加载模型参数
+            M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
+            M.load_model('./trained_model.pth')  # 假设模型保存为 .pth 文件
+
+            ## 运行固定的奖励函数参数
+            np.random.seed(57)  # 随机选取一个奖励函数的参数 #TODO 后续改成从配置文件获取
+            # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
+            alpha_reward = 0.50  # #DEBUG 调试专用
+            grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
+            paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
+            sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
+
+            ## 创建环境
+            # exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
+            exp_id = 955  # #DEBUG 调试专用
+            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+            A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
+            M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
+
+            ## 每一局，随机选取一个实验组运行。
+            np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
+            # M.sgv['episode'] = 0  # 初始化局数计数器
+            for i_training_iteration in range(sgv['num_training_iterations']):  # 进行指定次数的迭代
+                M.sgv['training_iteration'] = i_training_iteration + 1
+                with tqdm(total=int(sgv['num_episodes'] / sgv['num_training_iterations']), desc=f"迭代 {M.sgv['training_iteration']}") as pbar:  # 显示进度条
+                    for i_episode in range(int(sgv['num_episodes'] / sgv['num_training_iterations'])):  # 每次迭代的局数
+                        M.sgv['episode'] = i_episode + 1
+
+                        # while M.sgv['episode'] < sgv['num_episodes']:
+                        #     M.sgv['episode'] += 1
+                        # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                        # exp_id = 955  # #DEBUG 调试专用
+                        para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
+                        # logging.debug(f"\n第 {M.sgv['episode']} 局开始\n")
+                        ## 重置环境
+                        M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
+
+                        ## 运行一局环境模拟
+                        M.model_process()
+
+                        # if not M.sgv['is_continue_process']:
+                        #     logging.info(f"第 {M.sgv['episode']} 局结束")
+                        #     # logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
+                        #     pass  # if
+
+                        # ## 完成一局之后的处理
+                        #
+                        # # 转换为数据框
+                        # for i in range(M.sgv['num_bank']):
+                        #     M.A.AB.observations[i] = pd.DataFrame(M.A.AB.observations[i])
+                        #     M.A.AB.next_observations[i] = pd.DataFrame(M.A.AB.next_observations[i])
+                        #     M.A.AB.actions[i] = pd.DataFrame(M.A.AB.actions[i])
+                        #     M.A.AB.rewards[i] = pd.DataFrame(M.A.AB.rewards[i])
+                        #     M.A.AB.dones[i] = pd.DataFrame(M.A.AB.dones[i])
+                        #     M.A.AB.truncations[i] = pd.DataFrame(M.A.AB.truncations[i])
+                        #     pass  # for
+                        #
+                        # ## 预处理 M.A.AB 各个个体之不合理的部分
+                        # for i in range(M.sgv['num_bank']):
+                        #     M.A.AB.observations[i] = M.A.AB.observations[i].iloc[:-1, :]  # 去掉最后一行
+                        #     # M.A.AB.next_observations[i] = M.A.AB.next_observations[i].iloc[1:, :]  # 去掉第一行
+                        #     pass
+                        #
+                        # ## 更新强化学习算法策略
+                        #
+                        # ## 从数据框筛选出有效数据
+                        # for i in np.where(M.A.note.strategy_method == "learning")[0]:
+                        #     dict_valid_data = dict()
+                        #     for k1, v1 in M.A.AB.items():
+                        #         if k1 != 'id_agent':
+                        #             for k2, v2 in v1[i].items():
+                        #                 if k2 != 'mask':
+                        #                     if len(v1[i][v1[i]['mask']][k2].values) > 0:
+                        #                         dict_valid_data[k1] = np.stack(v1[i][v1[i]['mask']][k2].values)  # 从数据框筛选出有效数据
+                        #                     else:  # 如果筛选的数据是空的，则赋值 0 值
+                        #                         dict_valid_data[k1] = np.zeros((1, len(v1[i][k2].values[0])))
+                        #                         pass  # if
+                        #                     pass  # if
+                        #                 pass  # for
+                        #             pass  # if
+                        #         pass  # for
+                        #
+                        #     pass  # for
+                        #
+                        #     ## 更新强化学习算法策略
+                        #     logging.debug(f"开始更新银行 {i} 的强化学习算法策略")
+                        #     M.model_algorithm[i].update(dict_valid_data)
+                        #     logging.debug(f"结束更新银行 {i} 的强化学习算法策略")
+                        #     pass  # for
+
+                            ## 更新进度条
+                            if (M.sgv['episode'] + 1) % sgv['num_episodes_to_update_tqdm'] == 0:  # 每隔若干局数更新一次进度条
+                                pbar.set_postfix({
+                                    'episode':
+                                        f"{(sgv['num_episodes'] / sgv['num_training_iterations'] * (M.sgv['training_iteration'] - 1) + M.sgv['episode']):.0f}",
+                                    # 'return':  #TODO 可以考虑加上其它信息，例如 rewards
+                                    #     f'{np.mean(win_list[-100:]):.3f}'
+                                })  # 显示当前局数
+                            pbar.update(1)  # 更新进度条
+
+                        pass  # while
+                    pass  # with
+                pass  # for
 
         case '运行强化学习算法和ABM模型实验组做训练':
             ## #NOTE：运行强化学习算法和ABM模型实验组做训练
@@ -314,38 +424,38 @@ def main(sgv):
             paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
             sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
-            # 创建环境
+            ## 创建环境
             # exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
             exp_id = 955  # #DEBUG 调试专用
             para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
-            # 每一局，随机选取一个实验组运行。
-            np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
-            M.sgv['episode'] = 0  # 初始化局数计数器
 
+            ## 每一局，随机选取一个实验组运行。
+            np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
+            # M.sgv['episode'] = 0  # 初始化局数计数器
             for i_training_iteration in range(sgv['num_training_iterations']):  # 进行指定次数的迭代
-                with tqdm(total=int(sgv['num_episodes'] / sgv['num_training_iterations']), desc='Iteration %d' % i_training_iteration) as pbar:  # 显示进度条
-                    for i_episode in range(int(sgv['num_episodes'] / sgv['num_training_iterations'])):  # 每次迭代的回合数
-                        M.sgv['training_iteration'] = i_training_iteration
-                        M.sgv['episode'] = i_episode
+                M.sgv['training_iteration'] = i_training_iteration + 1
+                with tqdm(total=int(sgv['num_episodes'] / sgv['num_training_iterations']), desc=f"迭代 {M.sgv['training_iteration']}") as pbar:  # 显示进度条
+                    for i_episode in range(int(sgv['num_episodes'] / sgv['num_training_iterations'])):  # 每次迭代的局数
+                        M.sgv['episode'] = i_episode + 1
 
                         # while M.sgv['episode'] < sgv['num_episodes']:
                         #     M.sgv['episode'] += 1
                         # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
                         # exp_id = 955  # #DEBUG 调试专用
                         para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
-                        logging.info(f"第 {M.sgv['episode']} 局开始")
+                        # logging.debug(f"\n第 {M.sgv['episode']} 局开始\n")
                         ## 重置环境
                         M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
 
                         ## 运行一局环境模拟
                         M.model_process()
 
-                        if not M.sgv['is_continue_process']:
-                            logging.info(f"第 {M.sgv['episode']} 局结束")
-                            # logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
-                            pass  # if
+                        # if not M.sgv['is_continue_process']:
+                        #     logging.info(f"第 {M.sgv['episode']} 局结束")
+                        #     # logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
+                        #     pass  # if
 
                         ## 完成一局之后的处理
 
@@ -396,9 +506,9 @@ def main(sgv):
                             if (M.sgv['episode'] + 1) % sgv['num_episodes_to_update_tqdm'] == 0:  # 每隔若干局数更新一次进度条
                                 pbar.set_postfix({
                                     'episode':
-                                        '%d' % (sgv['num_episodes'] / sgv['num_training_iterations'] * M.sgv['training_iteration'] + M.sgv['episode'] + 1),
-                                    # 'return':
-                                    #     '%.3f' % np.mean(win_list[-100:])
+                                        f"{(sgv['num_episodes'] / sgv['num_training_iterations'] * (M.sgv['training_iteration'] - 1) + M.sgv['episode']):.0f}",
+                                    # 'return':  #TODO 可以考虑加上其它信息，例如 rewards
+                                    #     f'{np.mean(win_list[-100:]):.3f}'
                                 })  # 显示当前局数
                             pbar.update(1)  # 更新进度条
 
@@ -406,7 +516,7 @@ def main(sgv):
                     pass  # with
                 pass  # for
 
-            ## 保存训练数据
+            ## #NOW 保存训练数据
             M.model_algorithm.RlUtils.save_training_data(M.model_algorithm)
 
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':

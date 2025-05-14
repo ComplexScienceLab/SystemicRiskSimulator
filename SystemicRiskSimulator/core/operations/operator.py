@@ -331,7 +331,7 @@ class Operator:
         sgv['process_name'] = "START"
         sgv['is_continue_process'] = True
 
-        if not sgv['is_enable_multiprocessing_for_run_model']:
+        if (not sgv['is_enable_multiprocessing_for_run_model'] and not sgv['is_use_RL_method']):
             log_message(
                 "重置实验。实验ID " + str(sgv['id_experiment']) + " 开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
@@ -346,7 +346,7 @@ class Operator:
         ## 计算银行数量
         sgv['num_bank'] = len(A.note['id_bank'])
 
-        if not sgv['is_enable_multiprocessing_for_run_model']:
+        if (not sgv['is_enable_multiprocessing_for_run_model'] and not sgv['is_use_RL_method']):
             log_message(
                 "                    初始化数据",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
@@ -394,7 +394,7 @@ class Operator:
         sgv['process_name'] = "START"
         sgv['is_continue_process'] = True
 
-        if not sgv['is_enable_multiprocessing_for_run_model']:
+        if (not sgv['is_enable_multiprocessing_for_run_model'] and not sgv['is_use_RL_method']):
             log_message(
                 "重置实验。实验ID " + str(sgv['id_experiment']) + " 开始：\n" + "\n开始记录时间：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n" + "\n相关实验参数：" + str(para) + "\n",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
@@ -409,7 +409,7 @@ class Operator:
         ## 计算银行数量
         sgv['num_bank'] = len(A.note['id_bank'])
 
-        if not sgv['is_enable_multiprocessing_for_run_model']:
+        if (not sgv['is_enable_multiprocessing_for_run_model'] and not sgv['is_use_RL_method']):
             log_message(
                 "                    初始化数据",
                 Path(sgv['folderpath_experiments_output_log'], f"outputlog_{sgv['id_experiment']}_exp.txt"),
