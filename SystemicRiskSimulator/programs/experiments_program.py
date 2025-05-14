@@ -347,72 +347,12 @@ def main(sgv):
 
                         ## 运行一局环境模拟
                         M.model_process()
-
-                        # if not M.sgv['is_continue_process']:
-                        #     logging.info(f"第 {M.sgv['episode']} 局结束")
-                        #     # logging.info(f"第 {M.sgv['episode']} 局结束，总奖励: {sum(M.A.AB.rewards['values'])}")
-                        #     pass  # if
-
-                        # ## 完成一局之后的处理
-                        #
-                        # # 转换为数据框
-                        # for i in range(M.sgv['num_bank']):
-                        #     M.A.AB.observations[i] = pd.DataFrame(M.A.AB.observations[i])
-                        #     M.A.AB.next_observations[i] = pd.DataFrame(M.A.AB.next_observations[i])
-                        #     M.A.AB.actions[i] = pd.DataFrame(M.A.AB.actions[i])
-                        #     M.A.AB.rewards[i] = pd.DataFrame(M.A.AB.rewards[i])
-                        #     M.A.AB.dones[i] = pd.DataFrame(M.A.AB.dones[i])
-                        #     M.A.AB.truncations[i] = pd.DataFrame(M.A.AB.truncations[i])
-                        #     pass  # for
-                        #
-                        # ## 预处理 M.A.AB 各个个体之不合理的部分
-                        # for i in range(M.sgv['num_bank']):
-                        #     M.A.AB.observations[i] = M.A.AB.observations[i].iloc[:-1, :]  # 去掉最后一行
-                        #     # M.A.AB.next_observations[i] = M.A.AB.next_observations[i].iloc[1:, :]  # 去掉第一行
-                        #     pass
-                        #
-                        # ## 更新强化学习算法策略
-                        #
-                        # ## 从数据框筛选出有效数据
-                        # for i in np.where(M.A.note.strategy_method == "learning")[0]:
-                        #     dict_valid_data = dict()
-                        #     for k1, v1 in M.A.AB.items():
-                        #         if k1 != 'id_agent':
-                        #             for k2, v2 in v1[i].items():
-                        #                 if k2 != 'mask':
-                        #                     if len(v1[i][v1[i]['mask']][k2].values) > 0:
-                        #                         dict_valid_data[k1] = np.stack(v1[i][v1[i]['mask']][k2].values)  # 从数据框筛选出有效数据
-                        #                     else:  # 如果筛选的数据是空的，则赋值 0 值
-                        #                         dict_valid_data[k1] = np.zeros((1, len(v1[i][k2].values[0])))
-                        #                         pass  # if
-                        #                     pass  # if
-                        #                 pass  # for
-                        #             pass  # if
-                        #         pass  # for
-                        #
-                        #     pass  # for
-                        #
-                        #     ## 更新强化学习算法策略
-                        #     logging.debug(f"开始更新银行 {i} 的强化学习算法策略")
-                        #     M.model_algorithm[i].update(dict_valid_data)
-                        #     logging.debug(f"结束更新银行 {i} 的强化学习算法策略")
-                        #     pass  # for
-
-                            ## 更新进度条
-                            if (M.sgv['episode'] + 1) % sgv['num_episodes_to_update_tqdm'] == 0:  # 每隔若干局数更新一次进度条
-                                pbar.set_postfix({
-                                    'episode':
-                                        f"{(sgv['num_episodes'] / sgv['num_training_iterations'] * (M.sgv['training_iteration'] - 1) + M.sgv['episode']):.0f}",
-                                    # 'return':  #TODO 可以考虑加上其它信息，例如 rewards
-                                    #     f'{np.mean(win_list[-100:]):.3f}'
-                                })  # 显示当前局数
-                            pbar.update(1)  # 更新进度条
-
                         pass  # while
                     pass  # with
                 pass  # for
 
         case '运行强化学习算法和ABM模型实验组做训练':
+
             ## #NOTE：运行强化学习算法和ABM模型实验组做训练
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
