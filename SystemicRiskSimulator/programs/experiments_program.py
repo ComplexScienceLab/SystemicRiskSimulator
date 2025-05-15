@@ -456,10 +456,10 @@ def main(sgv):
                     pass  # with
                 pass  # for
 
-            ## #NOW 保存训练数据
-            M.model_algorithm.RlUtils.save_training_data(M.model_algorithm)
+            ## 保存训练数据
+            M.model_algorithm.RlUtils.save_training_data(M.model_algorithm, M.sgv['foldername_experiments_output_data'] / "RL")
 
-        case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':
+        case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':  # #HACK  其实后续不打算用 Gym 相关的环境框架了
             pass  # TODO
 
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做训练':  # #HACK  其实后续不打算用 Gym 相关的环境框架了
