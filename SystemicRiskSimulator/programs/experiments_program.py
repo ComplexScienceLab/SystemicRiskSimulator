@@ -34,6 +34,7 @@ import torch  # 添加对 torch 的导入
 from SystemicRiskSimulator.core.operations.collector import Collector
 from SystemicRiskSimulator.core.operations.operator import Operator
 from SystemicRiskSimulator.tools.logging_tools import log_message, record_work_state
+from SystemicRiskSimulator.tools.rl_utils import RlUtils
 
 
 def main(sgv):
@@ -327,6 +328,12 @@ def main(sgv):
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
 
+            ## 加载训练好的模型和参数
+            logging.info("加载训练好的模型和参数")
+            for i in (M.A.note.strategy_method == "learning").nonzero()[0]:
+                RlUtils.load_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments_output_data'] / "RL")  # 调用加载方法
+                pass  # for
+
             ## 每一局，随机选取一个实验组运行。
             np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
             # M.sgv['episode'] = 0  # 初始化局数计数器
@@ -457,7 +464,9 @@ def main(sgv):
                 pass  # for
 
             ## 保存训练数据
-            M.model_algorithm.RlUtils.save_training_data(M.model_algorithm, M.sgv['foldername_experiments_output_data'] / "RL")
+            for i in (M.A.note.strategy_method == "learning").nonzero()[0]:
+                RlUtils.save_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments_output_data'] / "RL")
+                pass  # for
 
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':  # #HACK  其实后续不打算用 Gym 相关的环境框架了
             pass  # TODO
