@@ -304,15 +304,6 @@ def main(sgv):
             ## #NOTE：运行强化学习算法和ABM模型实验组做应用
             sgv['simulator_start_time'] = time.time()  # 记录模拟器开始运行时刻
 
-            ## #NOW 加载训练好的模型和参数
-            logging.info("加载训练好的模型和参数")
-            with open('./training_data.pkl', 'rb') as f:
-                training_data = pickle.load(f)
-
-            # #NOW 加载模型参数
-            M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
-            M.load_model('./trained_model.pth')  # 假设模型保存为 .pth 文件
-
             ## 运行固定的奖励函数参数
             np.random.seed(57)  # 随机选取一个奖励函数的参数 #TODO 后续改成从配置文件获取
             # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
@@ -331,7 +322,7 @@ def main(sgv):
             ## 加载训练好的模型和参数
             logging.info("加载训练好的模型和参数")
             for i in (M.A.note.strategy_method == "learning").nonzero()[0]:
-                RlUtils.load_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments_output_data'] / "RL")  # 调用加载方法
+                RlUtils.load_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments_output_data'] / "RL" / f"{i}")  # 调用加载方法
                 pass  # for
 
             ## 每一局，随机选取一个实验组运行。
@@ -465,7 +456,7 @@ def main(sgv):
 
             ## 保存训练数据
             for i in (M.A.note.strategy_method == "learning").nonzero()[0]:
-                RlUtils.save_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments_output_data'] / "RL")
+                RlUtils.save_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments_output_data'] / "RL" / f"{i}")
                 pass  # for
 
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':  # #HACK  其实后续不打算用 Gym 相关的环境框架了
