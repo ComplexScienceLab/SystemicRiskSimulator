@@ -312,17 +312,30 @@ class Collector:
         #     compare.append(A_data.IB['hel'][i] ^ A_data_decompress.IB['hel'][i])
 
         ## 导出数据
-        # for para_01 in list(set(sgv['list_agents_data_filename_para_01']) - {"note"}):
+
+        if sgv['is_use_RL_method']:
+            sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}_"
+            if sgv['RL_state'] == 'training':
+                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_training"
+            elif sgv['RL_state'] == 'using':
+                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_using"
+        else:
+            sgv['exp_id_exp_output_data'] = ""
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "normal"
+            pass  # if
+        folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
+
         for para_01 in sgv['list_agents_data_filename_para_01']:
             if para_01 == "note" or para_01 == "AB":  # 如果变量类型是 note 或者 AB ，则只保存成 pkl 文件
-                pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
+                pd.to_pickle(A_data[para_01], Path(folderpath_experiments_output_data, f"{sgv['exp_id_exp_output_data']}" f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
                 continue
             if sgv['is_export_data_to_pkl']:
-                pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
+                pd.to_pickle(A_data[para_01], Path(folderpath_experiments_output_data, f"{sgv['exp_id_exp_output_data']}" f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
             if sgv['is_export_data_to_xlsx']:
-                A_data[para_01].to_excel(Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx"), index=False)
+                A_data[para_01].to_excel(Path(folderpath_experiments_output_data, f"{sgv['exp_id_exp_output_data']}" f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx"), index=False)
             if sgv['is_export_data_to_csv']:
-                A_data[para_01].to_csv(Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv"), index=False)
+                A_data[para_01].to_csv(Path(folderpath_experiments_output_data, f"{sgv['exp_id_exp_output_data']}" f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv"), index=False)
+            pass  # for
 
         pass  # function
 
