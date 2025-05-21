@@ -322,16 +322,16 @@ def main(sgv):
             ## 加载训练好的模型和参数
             logging.info("加载训练好的模型和参数")
             for i in (M.A.note.strategy_method == "learning").nonzero()[0]:
-                RlUtils.load_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments_output_data'] / "RL" / f"{i}")  # 调用加载方法
+                RlUtils.load_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments'] / "RL" / f"{i}")  # 调用加载方法
                 pass  # for
 
             ## 每一局，随机选取一个实验组运行。
             np.random.seed(114)  # 设置随机种子 #TODO 后续改成从配置文件获取
             # M.sgv['episode'] = 0  # 初始化局数计数器
-            for i_training_iteration in range(sgv['num_training_iterations']):  # 进行指定次数的迭代
+            for i_training_iteration in range(M.sgv['num_training_iterations']):  # 进行指定次数的迭代
                 M.sgv['training_iteration'] = i_training_iteration + 1
-                with tqdm(total=int(sgv['num_episodes'] / sgv['num_training_iterations']), desc=f"迭代 {M.sgv['training_iteration']}") as pbar:  # 显示进度条
-                    for i_episode in range(int(sgv['num_episodes'] / sgv['num_training_iterations'])):  # 每次迭代的局数
+                with tqdm(total=int(M.sgv['num_episodes'] / M.sgv['num_training_iterations']), desc=f"迭代 {M.sgv['training_iteration']}") as pbar:  # 显示进度条
+                    for i_episode in range(int(M.sgv['num_episodes'] / M.sgv['num_training_iterations'])):  # 每次迭代的局数
                         M.sgv['episode'] = i_episode + 1
 
                         # while M.sgv['episode'] < sgv['num_episodes']:
@@ -363,9 +363,9 @@ def main(sgv):
             sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
             ## 创建环境
-            # exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
-            exp_id = 955  # #DEBUG 调试专用
-            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+            # sgv['id_experiment'] = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
+            sgv['id_experiment'] = 955  # #DEBUG 调试专用
+            para = paras[paras['exp_id'] == sgv['id_experiment']].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
 
@@ -380,9 +380,9 @@ def main(sgv):
 
                         # while M.sgv['episode'] < sgv['num_episodes']:
                         #     M.sgv['episode'] += 1
-                        # exp_id = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
-                        # exp_id = 955  # #DEBUG 调试专用
-                        para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
+                        # sgv['id_experiment'] = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                        # sgv['id_experiment'] = 955  # #DEBUG 调试专用
+                        para = paras[paras['exp_id'] == sgv['id_experiment']].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
                         # logging.debug(f"\n第 {M.sgv['episode']} 局开始\n")
                         ## 重置环境
                         M.A, M.A_data, M.sgv, M.para = Operator.operate_reset_experiment_for_Gym(M.A, M.A_data, M.sgv, M.para)
@@ -411,7 +411,7 @@ def main(sgv):
                         for i in range(M.sgv['num_bank']):
                             M.A.AB.observations[i] = M.A.AB.observations[i].iloc[:-1, :]  # 去掉最后一行
                             # M.A.AB.next_observations[i] = M.A.AB.next_observations[i].iloc[1:, :]  # 去掉第一行
-                            pass
+                            pass  # for
 
                         ## 更新强化学习算法策略
 
@@ -451,12 +451,18 @@ def main(sgv):
                             pbar.update(1)  # 更新进度条
 
                         pass  # while
+                        # 保存实验组数据
+                        Collector.export_agent_data(A_data, sgv)
+
+                        pass  # for
                     pass  # with
                 pass  # for
 
-            ## 保存训练数据
+            ## 导出实验结果数据
+
+            # 保存训练的数据
             for i in (M.A.note.strategy_method == "learning").nonzero()[0]:
-                RlUtils.save_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments_output_data'] / "RL" / f"{i}")
+                RlUtils.save_training_data(M.model_algorithm[i], M.sgv['folderpath_experiments'] / "RL" / f"{i}")
                 pass  # for
 
         case '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用':  # #HACK  其实后续不打算用 Gym 相关的环境框架了

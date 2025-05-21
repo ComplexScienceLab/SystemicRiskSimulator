@@ -314,7 +314,7 @@ class Collector:
         ## 导出数据
         # for para_01 in list(set(sgv['list_agents_data_filename_para_01']) - {"note"}):
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            if para_01 == "note":  # 如果是备注变量，则只保存成 pkl 文件
+            if para_01 == "note" or para_01 == "AB":  # 如果变量类型是 note 或者 AB ，则只保存成 pkl 文件
                 pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
                 continue
             if sgv['is_export_data_to_pkl']:
