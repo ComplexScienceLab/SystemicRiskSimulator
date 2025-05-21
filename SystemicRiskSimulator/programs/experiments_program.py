@@ -313,9 +313,10 @@ def main(sgv):
             sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
             ## 创建环境
-            # exp_id = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
-            exp_id = 955  # #DEBUG 调试专用
-            para = paras[paras['exp_id'] == exp_id].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
+            sgv['id_experiment'] = np.random.choice(paras.exp_id)  # 随机选择一个实验组
+            # sgv['id_experiment'] = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
+            # sgv['id_experiment'] = 955  # #DEBUG 调试专用
+            para = paras[paras['exp_id'] == sgv['id_experiment']].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
             M = model_dict['model_main'](model_dict, A, A_data, para, sgv)
 
@@ -331,7 +332,8 @@ def main(sgv):
             for i_episode in range(sgv['num_episodes']):  # 每次迭代的局数
                 M.sgv['id_episode'] = i_episode
 
-                sgv['id_experiment'] = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                sgv['id_experiment'] = np.random.choice(paras.exp_id)  # 随机选择一个实验组
+                # sgv['id_experiment'] = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
                 # sgv['id_experiment'] = 955  # #DEBUG 调试专用
                 para = paras[paras['exp_id'] == sgv['id_experiment']].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
 
@@ -360,7 +362,8 @@ def main(sgv):
             sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
 
             ## 创建环境
-            sgv['id_experiment'] = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
+            sgv['id_experiment'] = np.random.choice(paras.exp_id)  # 随机选择一个实验组
+            # sgv['id_experiment'] = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
             # sgv['id_experiment'] = 955  # #DEBUG 调试专用
             para = paras[paras['exp_id'] == sgv['id_experiment']].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
@@ -375,7 +378,8 @@ def main(sgv):
                     for i_episode in range(int(sgv['num_episodes'] / sgv['num_training_iterations'])):  # 每次迭代的局数
                         # M.sgv['episode'] = i_episode + 1
 
-                        sgv['id_experiment'] = np.random.choice(list_idsExp_TASK)  # 随机选择一个实验组
+                        sgv['id_experiment'] = np.random.choice(paras.exp_id)  # 随机选择一个实验组
+                        # sgv['id_experiment'] = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
                         # sgv['id_experiment'] = 955  # #DEBUG 调试专用
                         para = paras[paras['exp_id'] == sgv['id_experiment']].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
 
