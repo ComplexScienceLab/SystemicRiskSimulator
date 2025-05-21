@@ -278,4 +278,34 @@ class RlUtils:
 
         pass  # function
 
-    pass  # class
+    @staticmethod
+    def plot_convergence_curve(reward_list, save_path=None, window=10, use_moving_average=True):
+        """
+        绘制收敛曲线（奖励随episode变化的曲线），可选滑动平均。
+
+        Args:
+            reward_list (list or np.ndarray): 每一局的奖励数据。
+            save_path (str, optional): 图片保存路径。若为None则直接显示。
+            window (int): 滑动平均窗口大小。
+            use_moving_average (bool): 是否使用滑动平均。True为滑动平均，False为传统方式。
+        """
+        reward_array = np.array(reward_list)
+        plt.figure()
+        if use_moving_average and len(reward_array) >= window:
+            # 计算滑动平均
+            rewards_ma = np.convolve(reward_array, np.ones(window) / window, mode='valid')
+            plt.plot(np.arange(len(rewards_ma)) + window - 1, rewards_ma, label=f"{window}步滑动平均")
+            plt.plot(reward_array, alpha=0.3, label="原始奖励")
+        else:
+            # 传统方式：直接画原始奖励曲线
+            plt.plot(reward_array, label="原始奖励")
+        plt.xlabel("Episode")
+        plt.ylabel("Reward")
+        plt.title("收敛曲线（奖励随episode变化）")
+        plt.legend()
+        if save_path:
+            plt.savefig(save_path)
+        else:
+            plt.show()
+        plt.close()
+        pass  # function
