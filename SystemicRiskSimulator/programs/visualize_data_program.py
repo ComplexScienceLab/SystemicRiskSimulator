@@ -606,7 +606,7 @@ def main(sgv):
             dict_2D_panel = {}
             for para_01 in sgv['list_agents_data_filename_para_01']:
                 # 根据文件名前缀判断数据类型  #BUG 这个存在风险，因为文件名前缀可能不遵循约定，后续扩展可能会有变化
-                if para_01 == 'note':  # note 数据不需要处理
+                if (para_01 == 'note' or para_01 == 'AB'):  # note 数据不需要处理
                     continue
                 if not para_01.startswith('I'):  # 说明是 1D 的数据
                     v_1D = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
@@ -811,7 +811,7 @@ def main(sgv):
         for i_exp in experiments_indices_to_vis:
 
             # for para_01 in sgv['list_agents_data_filename_para_01']:
-            #     if para_01 == 'note':
+            #         if (para_01 == 'note' or para_01 == 'AB'):
             #         continue
             #     if not para_01.startswith('I'):  # 说明是 1D 的数据
             #         df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
