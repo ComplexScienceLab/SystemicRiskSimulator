@@ -314,7 +314,7 @@ class Collector:
         ## 导出数据
 
         if sgv['is_use_RL_method']:
-            sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}_"
+            sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}-"
             if sgv['RL_state'] == 'training':
                 folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_training"
             elif sgv['RL_state'] == 'using':

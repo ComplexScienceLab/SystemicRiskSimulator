@@ -21,7 +21,7 @@ import base64
 from multiprocessing import Pool
 import multiprocessing
 import warnings
-from SystemicRiskSimulator.tools.utils import RlUtils
+from SystemicRiskSimulator.tools.rl_utils import RlUtils
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
 
@@ -112,20 +112,18 @@ def main(sgv):
     ### 处理相关导入导出文件夹
 
     if sgv['is_use_RL_method']:
-        sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}_"
         if sgv['RL_state'] == 'training':
             folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_training"
         elif sgv['RL_state'] == 'using':
             folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_using"
     else:
-        sgv['exp_id_exp_output_data'] = ""
         folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "normal"
         pass  # if
 
     # #TODO 以下部分建议分散到具体的子程序里面
     # sgv['folderpath_experiments'] = Path(sgv['folderpath_project'], sgv['folderpath_root_experiments'], sgv['foldername_experiments'])
-    # sgv['folderpath_experiments_output_data'] = Path(sgv['folderpath_experiments'], sgv['foldername_experiments_output_data'])
-    sgv['folderpath_experiments_output_data_panel'] = (sgv['folderpath_experiments'] / foldername_experiments_output_data / '../exp_output_data_panel').resolve()
+    sgv['folderpath_experiments_output_data'] = folderpath_experiments_output_data
+    sgv['folderpath_experiments_output_data_panel'] = (sgv['folderpath_experiments'] / sgv['foldername_experiments_output_data'] / "normal" / '../exp_output_data_panel').resolve()
     sgv['folderpath_plots'] = Path(sgv['folderpath_experiments'], sgv['foldername_plots'])
     sgv['folderpath_plots'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_plots_single_heatmaps'] = Path(sgv['folderpath_plots'], sgv['foldername_plots_single_heatmaps'])
@@ -1077,7 +1075,45 @@ def main(sgv):
 
         pass  # if
 
+    # %% [markdown] ## #NOTE 绘制强化学习收敛曲线图
 
+    # %%
+    if (sgv['visulization_process']['绘制强化学习收敛曲线图']):
+        print("准备绘制强化学习收敛曲线图")
+        Tools.delete_and_recreate_folder(sgv['folderpath_visualize_强化学习收敛曲线'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            if (para_01 != 'AB'):
+                continue
+
+            # 集中收集 rewards 数据
+            for sgv['id_episode'] in range(sgv['num_episodes']):
+                # # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
+                # alpha_reward = 0.50  # #DEBUG 调试专用
+                # grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
+                # paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
+                # sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
+
+                logging.debug(f"处理实验编号为 {sgv['id_episode']} 的数据")
+
+                df_v = pd.read_pickle(list((sgv['folderpath_experiments_output_data']).glob(f"id={sgv['id_episode']}*-v={para_01}-*.pkl"))[0])
+
+                pass  # for
+
+            # 绘制强化学习收敛曲线图
+            RlUtils.plot_convergence_curve(
+                rewards_list=df_v['rewards'].tolist(),
+                save_path=sgv['folderpath_visualize_强化学习收敛曲线'],
+                use_moving_average=False,
+            )
+
+        else:
+            raise ValueError("`list_agents_data_filename_para_01` 必须包含 'AB' 选项")
+            pass  # if
+
+        pass  # if
+
+    # %%
     if sgv['is_ignore_warning']:
         warnings.filterwarnings("default")  # 恢复警告
 
