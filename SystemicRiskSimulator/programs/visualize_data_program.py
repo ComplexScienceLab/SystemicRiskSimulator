@@ -1,8 +1,6 @@
 """
 可视化结果程序。
 
-BUG 2023-07-11：改标注在图上的文本语言为英文。暂时不建议用中文标注在图上。因为如果使用中文，不能任意设置字体族；
-
 Args:
     sgv: dict
 
@@ -23,6 +21,7 @@ import base64
 from multiprocessing import Pool
 import multiprocessing
 import warnings
+from SystemicRiskSimulator.tools.utils import RlUtils
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
 
@@ -112,9 +111,21 @@ def main(sgv):
 
     ### 处理相关导入导出文件夹
 
+    if sgv['is_use_RL_method']:
+        sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}_"
+        if sgv['RL_state'] == 'training':
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_training"
+        elif sgv['RL_state'] == 'using':
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_using"
+    else:
+        sgv['exp_id_exp_output_data'] = ""
+        folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "normal"
+        pass  # if
+
+    # #TODO 以下部分建议分散到具体的子程序里面
     # sgv['folderpath_experiments'] = Path(sgv['folderpath_project'], sgv['folderpath_root_experiments'], sgv['foldername_experiments'])
     # sgv['folderpath_experiments_output_data'] = Path(sgv['folderpath_experiments'], sgv['foldername_experiments_output_data'])
-    sgv['folderpath_experiments_output_data_panel'] = (sgv['folderpath_experiments'] / sgv['foldername_experiments_output_data'] / '../exp_output_data_panel').resolve()
+    sgv['folderpath_experiments_output_data_panel'] = (sgv['folderpath_experiments'] / foldername_experiments_output_data / '../exp_output_data_panel').resolve()
     sgv['folderpath_plots'] = Path(sgv['folderpath_experiments'], sgv['foldername_plots'])
     sgv['folderpath_plots'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_plots_single_heatmaps'] = Path(sgv['folderpath_plots'], sgv['foldername_plots_single_heatmaps'])
@@ -131,6 +142,8 @@ def main(sgv):
     sgv['folderpath_plots_makeup_balanceSheets'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_visualize_banksStates_table'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_banksStates_table'])
     sgv['folderpath_visualize_banksStates_table'].mkdir(parents=True, exist_ok=True)
+    sgv['folderpath_visualize_强化学习收敛曲线'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_强化学习收敛曲线'])
+    sgv['folderpath_visualize_强化学习收敛曲线'].mkdir(parents=True, exist_ok=True)
 
     ## 获取需要做的实验组之索引
     list_fig_files = list(sgv['folderpath_experiments_output_data_panel'].glob('*-form=panel.pkl'))  # 获取实验组输出数据pkl格式之文件列表
@@ -439,7 +452,6 @@ def main(sgv):
 
         pass  # if 导入面板形式的CSV数据预处理
 
-
     # %% [markdown] ## #NOTE 绘制资产负债表图
     # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
 
@@ -578,6 +590,7 @@ def main(sgv):
     # %% [markdown] ## NOTE 绘制矩阵热图
     # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
 
+    # %%
     if (sgv['visulization_process']['绘制矩阵热图']):
         print("准备绘制矩阵热图")
         Tools.delete_and_recreate_folder(sgv['folderpath_plots_single_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
@@ -791,7 +804,6 @@ def main(sgv):
     # 导入各自的矩阵热图，按照横向数据类别纵向时间，拼接成大图
 
     # %%
-
     if (sgv['visulization_process']['拼接矩阵热图']):
         print("准备拼接矩阵热图")
         Tools.delete_and_recreate_folder(sgv['folderpath_plots_makeup_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
@@ -860,7 +872,6 @@ def main(sgv):
     # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
 
     # %%
-
     if (sgv['visulization_process']['绘制资金流网络图']):
 
         print("准备绘制资金流网络图")
@@ -939,7 +950,6 @@ def main(sgv):
     # 导入各自的网络图，按照横向数据类别纵向时间，拼接成大图
 
     # %%
-
     if (sgv['visulization_process']['拼接资金流网络图']):
         print("准备拼接资金流网络图")
         Tools.delete_and_recreate_folder(sgv['folderpath_plots_makeup_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
@@ -1000,7 +1010,6 @@ def main(sgv):
     # 单独提取银行状态数据，处理成高亮可视化表格
 
     # %%
-
     if (sgv['visulization_process']['银行状态表格可视化']):
 
         print("准备可视化银行状态表格")
