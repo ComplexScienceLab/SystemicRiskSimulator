@@ -1,5 +1,6 @@
 ## 函数区：收集数据
 import shutil
+from copy import deepcopy
 
 from scipy.sparse import csr_array
 import pickle
@@ -244,7 +245,7 @@ class Collector:
                 continue
             series = pd.Series()
             for i in A[para_01].index:
-                series[i] = A[para_01][i].copy()  # BUG 是否无法实现副本复制？
+                series[i] = deepcopy(A[para_01][i])  # #BUG 是否正确数据结构？
             df = series.to_frame().transpose()
             df.insert(loc=0, column='process_name', value=sgv['process_name'])
             df.insert(loc=1, column='step', value=sgv['step'])
@@ -326,15 +327,20 @@ class Collector:
         folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
 
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            if para_01 == "note" or para_01 == "AB":  # 如果变量类型是 note 或者 AB ，则只保存成 pkl 文件
-                pd.to_pickle(A_data[para_01], Path(folderpath_experiments_output_data, f"{sgv['exp_id_exp_output_data']}" f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
-                continue
-            if sgv['is_export_data_to_pkl']:
-                pd.to_pickle(A_data[para_01], Path(folderpath_experiments_output_data, f"{sgv['exp_id_exp_output_data']}" f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
-            if sgv['is_export_data_to_xlsx']:
-                A_data[para_01].to_excel(Path(folderpath_experiments_output_data, f"{sgv['exp_id_exp_output_data']}" f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx"), index=False)
-            if sgv['is_export_data_to_csv']:
-                A_data[para_01].to_csv(Path(folderpath_experiments_output_data, f"{sgv['exp_id_exp_output_data']}" f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv"), index=False)
+            match para_01:
+                case "note":  # 如果变量类型是 note ，则直接保存成 pkl 文件
+                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                case "AB":  # 如果变量类型是 AB ，则直接保存成 pkl 文件
+                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                case _:
+                    if sgv['is_export_data_to_xlsx']:
+                        A_data[para_01].to_excel(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
+                    if sgv['is_export_data_to_csv']:
+                        A_data[para_01].to_csv(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv", index=False)
+                    pass  # match
+            # DEBUG 立刻读取刚保存的文件检查是否正确
+            A_data_AB_before = A_data[para_01]
+            A_data_AB_after = pd.read_pickle(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
             pass  # for
 
         pass  # function
