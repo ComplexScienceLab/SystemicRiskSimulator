@@ -344,7 +344,7 @@ def main(sgv):
                 M.model_process()
 
                 # 保存实验组数据
-                Collector.export_agent_data(A_data, sgv)
+                Collector.export_agent_data(M.A_data, sgv)
 
                 pass  # for
 
@@ -451,7 +451,7 @@ def main(sgv):
 
                         pass  # while
                         # 保存实验组数据
-                        Collector.export_agent_data(A_data, sgv)
+                        Collector.export_agent_data(M.A_data, sgv)
 
                         M.sgv['id_episode'] += 1
 
