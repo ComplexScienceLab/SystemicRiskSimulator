@@ -241,19 +241,36 @@ class Collector:
 
         # #HACK 改之后的收集 agents 数据文件代码
         for para_01 in sgv['list_agents_data_filename_para_01']:
+            # if para_01 == "note" or para_01 == "AB":  # 如果是备注变量，则跳过。因为是静态的，不需要收集
             if para_01 == "note":  # 如果是备注变量，则跳过。因为是静态的，不需要收集
                 continue
+                pass  # if
+
             series = pd.Series()
-            for i in A[para_01].index:
-                series[i] = deepcopy(A[para_01][i])  # #BUG 是否正确数据结构？
+            if para_01 == "AB":  # 如果是 agent-based 类型
+                for field in A[para_01].index.drop('id_agent'):
+                    series[field] = deepcopy(A[para_01][field])
+                    for id_agent in range(len(series[field])):
+                        for k, v in series[field][id_agent].items():
+                            series[field][id_agent][k] = v[-1]
+                            pass  # for
+                        pass  # for
+                    pass  # for
+            else:
+                for field in A[para_01].index:
+                    series[field] = deepcopy(A[para_01][field])  # #BUG 是否正确数据结构？
+                    pass  # for
+                pass  # if
             df = series.to_frame().transpose()
             df.insert(loc=0, column='process_name', value=sgv['process_name'])
             df.insert(loc=1, column='step', value=sgv['step'])
             df.insert(loc=2, column='turn', value=sgv['turn'])
             df.insert(loc=3, column='phase', value=sgv['phase'])
-            if collect is None:
+
+            if collect is None:  # 如果没有指定收集的字段，则收集所有字段
                 A_data[para_01] = pd.concat([A_data[para_01], df], ignore_index=True)
-            else:
+                pass  # if
+            else:  # #TODO 尚未适配
                 for variable in collect:
                     for field in variable[variable]:
                         if field in df.columns:
