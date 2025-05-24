@@ -246,22 +246,32 @@ class Collector:
                 continue
                 pass  # if
 
-            series = pd.Series()
             if para_01 == "AB":  # 如果是 agent-based 类型
+                df = pd.DataFrame()
                 for field in A[para_01].index.drop('id_agent'):
-                    series[field] = deepcopy(A[para_01][field])
-                    for id_agent in range(len(series[field])):
-                        for k, v in series[field][id_agent].items():
-                            series[field][id_agent][k] = v[-1]
+                    dict_agents_values = dict()
+                    list_agents_values = []
+                    for id_agent, v_agent in enumerate(A[para_01][field]):
+                        dict_agent_value = dict()
+                        for k, v in v_agent.items():
+                            name_k = f"{field}_{k}"
+                            dict_agent_value[name_k] = v  # #NOW 只有最后一个是有效的。这里的 rewards 不是序列，而是重复累计的。
                             pass  # for
+                        dict_agents_values.update(dict_agent_value)
+                        list_agents_values.append(dict_agents_values)
+                        df_agents_values = pd.DataFrame(list_agents_values)
                         pass  # for
+                    df_agents_values.insert(loc=0, column='id_agent', value=np.arange(len(A[para_01][field])))
+                    df = pd.concat([df, df_agents_values], ignore_index=True)
                     pass  # for
-            else:
+            else:  # 如果是其他类型，暨规则数据结构类型，例如 BB、IB 等类型
+                series = pd.Series()
                 for field in A[para_01].index:
                     series[field] = deepcopy(A[para_01][field])  # #BUG 是否正确数据结构？
                     pass  # for
+                df = series.to_frame().transpose()
                 pass  # if
-            df = series.to_frame().transpose()
+
             df.insert(loc=0, column='process_name', value=sgv['process_name'])
             df.insert(loc=1, column='step', value=sgv['step'])
             df.insert(loc=2, column='turn', value=sgv['turn'])
@@ -355,9 +365,9 @@ class Collector:
                     if sgv['is_export_data_to_csv']:
                         A_data[para_01].to_csv(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv", index=False)
                     pass  # match
-            # DEBUG 立刻读取刚保存的文件检查是否正确
-            A_data_AB_before = A_data[para_01]
-            A_data_AB_after = pd.read_pickle(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+            # # DEBUG 立刻读取刚保存的文件检查是否正确
+            # A_data_AB_before = A_data[para_01]
+            # A_data_AB_after = pd.read_pickle(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
             pass  # for
 
         pass  # function
