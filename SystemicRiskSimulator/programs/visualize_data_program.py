@@ -21,6 +21,7 @@ import base64
 from multiprocessing import Pool
 import multiprocessing
 import warnings
+import logging
 from SystemicRiskSimulator.tools.rl_utils import RlUtils
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
@@ -1087,22 +1088,29 @@ def main(sgv):
                 continue
 
             # 集中收集 rewards 数据
+            df_rewards = pd.DataFrame()
+            list_episodes_agents_rewards = []
             for sgv['id_episode'] in range(sgv['num_episodes']):
-                # # alpha_reward = round(np.random.choice(parameters_works['alpha_reward'].unique()), 2)  # 随机选择一个奖励函数的参数
-                # alpha_reward = 0.50  # #DEBUG 调试专用
-                # grouped_parameters_works = parameters_works.groupby('alpha_reward')  # 根据 alpha_reward 列分组 parameters_works
-                # paras = grouped_parameters_works.get_group(alpha_reward)[grouped_parameters_works.get_group(alpha_reward)['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框
-                # sgv['list_idsExp_TASK'] = grouped_parameters_works.get_group(alpha_reward)['exp_id'].tolist()  # 获取实验组 id 列表
-
                 logging.debug(f"处理实验编号为 {sgv['id_episode']} 的数据")
 
                 df_v = pd.read_pickle(list((sgv['folderpath_experiments_output_data']).glob(f"id={sgv['id_episode']}*-v={para_01}-*.pkl"))[0])
-
+                list_agents_rewards = df_v.rewards.iloc[-1]  # 这里只计算最后一轮的 rewards，这里的 rewards 不是序列，而是重复累计的。
+                for id_agent in range(len(list_agents_rewards)):
+                    dict_agent_rewards = {
+                        'id_episode': sgv['id_episode'],
+                        'id_agent': id_agent,
+                        'values': list_agents_rewards[id_agent]['values'],
+                        'mask': list_agents_rewards[id_agent]['mask'],
+                    }
+                    list_episodes_agents_rewards.append(dict_agent_rewards)
+                    pass  # for
+                df_rewards = pd.DataFrame(list_episodes_agents_rewards)  # 将列表转换为 DataFrame
                 pass  # for
+
 
             # 绘制强化学习收敛曲线图
             RlUtils.plot_convergence_curve(
-                rewards_list=df_v['rewards'].tolist(),
+                reward_list=list_episodes_agents_rewards,
                 save_path=sgv['folderpath_visualize_强化学习收敛曲线'],
                 use_moving_average=False,
             )

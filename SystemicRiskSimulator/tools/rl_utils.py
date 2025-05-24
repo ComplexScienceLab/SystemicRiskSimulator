@@ -309,3 +309,5 @@ class RlUtils:
             plt.show()
         plt.close()
         pass  # function
+
+    pass  # class
