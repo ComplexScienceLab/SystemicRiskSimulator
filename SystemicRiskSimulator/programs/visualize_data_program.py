@@ -22,8 +22,7 @@ from multiprocessing import Pool
 import multiprocessing
 import warnings
 import logging
-from SystemicRiskSimulator.tools.rl_utils import RlUtils
-from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
+from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file, plot_convergence_curve
 
 
 def main(sgv):
@@ -1084,7 +1083,6 @@ def main(sgv):
         Tools.delete_and_recreate_folder(sgv['folderpath_visualize_强化学习收敛曲线'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            print(para_01)#DEBUG
             if (para_01 != 'AB'):
                 continue
 
@@ -1112,16 +1110,11 @@ def main(sgv):
 
             ## 绘制强化学习收敛曲线图
             for k, v in dict_agents_rewards.items():
-                RlUtils.plot_convergence_curve(
+                plot_convergence_curve(
                     arr_reward=v['rewards_values'].values,
-                    save_path=sgv['folderpath_visualize_强化学习收敛曲线'],
-                    agent_id=k,
+                    save_path=sgv['folderpath_visualize_强化学习收敛曲线'] / f"agent={k}-强化学习收敛曲线图.pdf",
                     use_moving_average=False,
                 )
-
-        # else:
-        #     raise ValueError("`list_agents_data_filename_para_01` 必须包含 'AB' 选项")
-        #     pass  # if
 
         pass  # if
 
