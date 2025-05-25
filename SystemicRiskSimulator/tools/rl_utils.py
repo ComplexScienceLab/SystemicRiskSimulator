@@ -279,31 +279,35 @@ class RlUtils:
         pass  # function
 
     @staticmethod
-    def plot_convergence_curve(reward_list, save_path=None, use_moving_average=True, window=10):
+    def plot_convergence_curve(arr_reward, save_path=None, agent_id=None, use_moving_average=True, window=10):
         """
         绘制收敛曲线（奖励随episode变化的曲线），可选滑动平均。
 
         Args:
-            reward_list (list or np.ndarray): 每一局的奖励数据。
+            arr_reward (list or np.ndarray): 每一局的奖励数据数组。
             save_path (str, optional): 图片保存路径。若为None则直接显示。
+            agent_id (int, optional): 代理编号。用于保存文件名时区分不同代理。
             window (int): 滑动平均窗口大小。
             use_moving_average (bool): 是否使用滑动平均。默认False，True为滑动平均，False为传统方式。
         """
-        reward_array = np.array(reward_list)
         plt.figure()
-        if use_moving_average and len(reward_array) >= window:
+        if use_moving_average and len(arr_reward) >= window:
             # 计算滑动平均
-            rewards_ma = np.convolve(reward_array, np.ones(window) / window, mode='valid')
+            rewards_ma = np.convolve(arr_reward, np.ones(window) / window, mode='valid')
             plt.plot(np.arange(len(rewards_ma)) + window - 1, rewards_ma, label=f"{window}步滑动平均")
-            plt.plot(reward_array, alpha=0.3, label="原始奖励")
+            plt.plot(arr_reward, alpha=0.3, label="原始奖励")
         else:
             # 传统方式：直接画原始奖励曲线
-            plt.plot(reward_array, label="原始奖励")
+            plt.plot(arr_reward, label="原始奖励")
         plt.xlabel("Episode")
         plt.ylabel("Reward")
         plt.title("收敛曲线（奖励随episode变化）")
         plt.legend()
         if save_path:
+            # 如果传入 agent_id，则在文件名中添加个体编号
+            if agent_id is not None:
+                save_path = Path(save_path)
+                save_path = save_path.with_stem(f"{save_path.stem}-agent={agent_id}")
             plt.savefig(save_path)
         else:
             plt.show()

@@ -1084,40 +1084,44 @@ def main(sgv):
         Tools.delete_and_recreate_folder(sgv['folderpath_visualize_强化学习收敛曲线'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
         for para_01 in sgv['list_agents_data_filename_para_01']:
+            print(para_01)#DEBUG
             if (para_01 != 'AB'):
                 continue
 
-            # 集中收集 rewards 数据
-            df_rewards = pd.DataFrame()
-            list_episodes_agents_rewards = []
-            for sgv['id_episode'] in range(sgv['num_episodes']):
-                logging.debug(f"处理实验编号为 {sgv['id_episode']} 的数据")
+            ## 集中收集 rewards 数据
+            df_v = pd.read_pickle(list((sgv['folderpath_experiments_output_data']).glob(f"id=0*-v={para_01}-*.pkl"))[0])
+            sgv['num_agents'] = df_v['rewards_values'][df_v['step'] == df_v['step'].max()].values.size
 
-                df_v = pd.read_pickle(list((sgv['folderpath_experiments_output_data']).glob(f"id={sgv['id_episode']}*-v={para_01}-*.pkl"))[0])
-                list_agents_rewards = df_v.rewards.iloc[-1]  # 这里只计算最后一轮的 rewards，这里的 rewards 不是序列，而是重复累计的。
-                for id_agent in range(len(list_agents_rewards)):
-                    dict_agent_rewards = {
-                        'id_episode': sgv['id_episode'],
-                        'id_agent': id_agent,
-                        'values': list_agents_rewards[id_agent]['values'],
-                        'mask': list_agents_rewards[id_agent]['mask'],
-                    }
-                    list_episodes_agents_rewards.append(dict_agent_rewards)
-                    pass  # for
-                df_rewards = pd.DataFrame(list_episodes_agents_rewards)  # 将列表转换为 DataFrame
+            arr_episodes_agents_rewardsValues = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个代理的奖励数据
+            arr_episodes_agents_rewardsMask = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个代理的奖励数据
+            for sgv['id_episode'] in range(sgv['num_episodes']):
+                # 这里只计算最后一轮的 rewards，这里的 rewards 不是序列，而是重复累计的。
+                arr_episodes_agents_rewardsValues[sgv['id_episode'], :] = df_v['rewards_values'][df_v['step'] == df_v['step'].max()].values
+                arr_episodes_agents_rewardsMask[sgv['id_episode'], :] = df_v['rewards_mask'][df_v['step'] == df_v['step'].max()].values
                 pass  # for
 
+            dict_agents_rewards = {}
+            for i in range(sgv['num_agents']):
+                # 创建 DataFrame，包含 id_episode, rewards_values, rewards_mask
+                df_agent_rewards = pd.DataFrame({
+                    'id_episode': np.arange(sgv['num_episodes']),
+                    'rewards_values': [arr_episodes_agents_rewardsValues[episode, i] for episode in range(sgv['num_episodes'])],
+                    'rewards_mask': [arr_episodes_agents_rewardsMask[episode, i] for episode in range(sgv['num_episodes'])],
+                })
+                dict_agents_rewards[i] = df_agent_rewards
 
-            # 绘制强化学习收敛曲线图
-            RlUtils.plot_convergence_curve(
-                reward_list=list_episodes_agents_rewards,
-                save_path=sgv['folderpath_visualize_强化学习收敛曲线'],
-                use_moving_average=False,
-            )
+            ## 绘制强化学习收敛曲线图
+            for k, v in dict_agents_rewards.items():
+                RlUtils.plot_convergence_curve(
+                    arr_reward=v['rewards_values'].values,
+                    save_path=sgv['folderpath_visualize_强化学习收敛曲线'],
+                    agent_id=k,
+                    use_moving_average=False,
+                )
 
-        else:
-            raise ValueError("`list_agents_data_filename_para_01` 必须包含 'AB' 选项")
-            pass  # if
+        # else:
+        #     raise ValueError("`list_agents_data_filename_para_01` 必须包含 'AB' 选项")
+        #     pass  # if
 
         pass  # if
 
