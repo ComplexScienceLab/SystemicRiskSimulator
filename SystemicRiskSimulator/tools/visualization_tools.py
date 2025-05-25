@@ -1541,7 +1541,7 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
     pass  # function
 
 
-def plot_convergence_curve(arr_reward, save_path=None, use_moving_average=True, window=10, fontproperties=zh_font_prop):
+def plot_convergence_curve(arr_reward, save_path=None, use_moving_average=True, window=10):
     """
     绘制收敛曲线（奖励随episode变化的曲线），可选滑动平均。
 

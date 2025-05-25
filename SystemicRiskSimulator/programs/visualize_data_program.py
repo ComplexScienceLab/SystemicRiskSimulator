@@ -70,15 +70,19 @@ def main(sgv):
     # %%
 
     ### 设置绘图时的字体 #NOTE：如果想要自定义字体，那么请开启下面的一段代码
-    if sgv['system_platform'] == 'Darwin':  # MacOS系统
-        zh_font_family = 'Songti SC'
-        en_font_family = 'Times New Roman'
-    elif sgv['system_platform'] == 'Windows':  # Windows系统
-        zh_font_family = 'SimHei'
-        en_font_family = 'Times New Roman'
-    else:  # 其他系统
+    if sgv['system_platform'] == 'darwin':  # MacOS系统
+        zh_font_family = 'Times New Roman'
+        en_font_family = 'Songti SC'
+    elif sgv['system_platform'] == 'windows':  # Windows系统
+        zh_font_family = 'Times New Roman'
+        en_font_family = 'SimHei'
+    else:  # 其他系统 #BUG 没有测试过
         zh_font_family = 'Arial'
         en_font_family = 'Arial'
+
+    # 配置字体回退
+    plt.rcParams['font.family'] = [zh_font_family, en_font_family]
+
     zh_font_prop = fm.FontProperties(fname=fm.findfont(fm.FontProperties(family=zh_font_family)))
     # zh_font_prop = fm.FontProperties(family=zh_font_family, size=14)  # 使用指定中文字体和字号
     zh_font_path = zh_font_prop.get_file()
@@ -94,8 +98,8 @@ def main(sgv):
     # zh_font_family = fm.FontProperties(family='Songti SC').get_name()  # 获取默认的中文字体为 Songti SC
     # en_font_family = fm.FontProperties(family='Times New Roman').get_name()  # 获取默认的英文字体为 Times New Roman
 
-    ### 配置 plt
-    plt.rcParams['font.family'] = zh_font_family
+    # ### 配置 plt
+    # plt.rcParams['font.family'] = zh_font_family
 
     ### 配置 reportlab
     pdfmetrics.registerFont(TTFont(zh_font_family, zh_font_path))
