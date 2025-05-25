@@ -255,15 +255,16 @@ class Collector:
                         dict_agent_value = dict()
                         for k, v in v_agent.items():
                             name_k = f"{field}_{k}"
-                            dict_agent_value[name_k] = v  # #NOW 只有最后一个是有效的。这里的 rewards 不是序列，而是重复累计的。
+                            dict_agent_value[name_k] = deepcopy(v[-1])  # 只有最后一个是有效的。这里的值不是单个的序列，而是重复累计的序列。
                             pass  # for
                         dict_agents_values.update(dict_agent_value)
                         list_agents_values.append(dict_agents_values)
-                        df_agents_values = pd.DataFrame(list_agents_values)
                         pass  # for
-                    df_agents_values.insert(loc=0, column='id_agent', value=np.arange(len(A[para_01][field])))
-                    df = pd.concat([df, df_agents_values], ignore_index=True)
+                        # df_agents_values = pd.DataFrame(list_agents_values)
+                    df = pd.concat([df, pd.DataFrame(list_agents_values)], axis=1, ignore_index=False)
                     pass  # for
+                df.insert(loc=0, column='id_agent', value=np.arange(sgv['num_bank']))
+                pass
             else:  # 如果是其他类型，暨规则数据结构类型，例如 BB、IB 等类型
                 series = pd.Series()
                 for field in A[para_01].index:
