@@ -1541,32 +1541,3 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
     pass  # function
 
 
-def plot_convergence_curve(arr_reward, save_path=None, use_moving_average=True, window=10):
-    """
-    绘制收敛曲线（奖励随episode变化的曲线），可选滑动平均。
-
-    Args:
-        arr_reward (list or np.ndarray): 每一局的奖励数据数组。
-        save_path (str, optional): 图片保存路径。若为 None 则直接显示。
-        window (int): 滑动平均窗口大小。
-        use_moving_average (bool): 是否使用滑动平均。默认 False 。 True 为滑动平均，False 为传统方式。
-    """
-    plt.figure()
-    if use_moving_average and len(arr_reward) >= window:
-        # 计算滑动平均
-        rewards_ma = np.convolve(arr_reward, np.ones(window) / window, mode='valid')
-        plt.plot(np.arange(len(rewards_ma)) + window - 1, rewards_ma, label=f"{window}步滑动平均")
-        plt.plot(arr_reward, alpha=0.3, label="原始奖励")
-    else:
-        # 传统方式：直接画原始奖励曲线
-        plt.plot(arr_reward, label="原始奖励")
-    plt.xlabel("Episode")
-    plt.ylabel("Reward")
-    plt.title("收敛曲线（奖励随episode变化）")
-    plt.legend()
-    if save_path:
-        plt.savefig(save_path)
-    else:
-        plt.show()
-    plt.close()
-    pass  # function

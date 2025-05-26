@@ -22,7 +22,7 @@ from multiprocessing import Pool
 import multiprocessing
 import warnings
 import logging
-from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file, plot_convergence_curve
+from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
 
 def main(sgv):
@@ -1086,39 +1086,66 @@ def main(sgv):
         print("准备绘制强化学习收敛曲线图")
         Tools.delete_and_recreate_folder(sgv['folderpath_visualize_强化学习收敛曲线'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
 
+        ## 设置参数
+        use_moving_average = False
+        window = 10  # 滑动平均窗口大小 #TODO 后续考虑将这个参数化
+
         for para_01 in sgv['list_agents_data_filename_para_01']:
             if (para_01 != 'AB'):
                 continue
 
-            ## 集中收集 rewards 数据
-            df_v = pd.read_pickle(list((sgv['folderpath_experiments_output_data']).glob(f"id=0*-v={para_01}-*.pkl"))[0])
-            sgv['num_agents'] = df_v['rewards_values'][df_v['step'] == df_v['step'].max()].values.size
+            dataValues_name = sgv['vis']['待收集的数据']['变量名'][0]
+            dataMask_name = sgv['vis']['待收集的数据']['变量名'][1]
+            data_label = sgv['vis']['待收集的数据']['文本标签']
 
-            arr_episodes_agents_rewardsValues = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个代理的奖励数据
-            arr_episodes_agents_rewardsMask = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个代理的奖励数据
+            ## 集中收集 AB 类型的相关数据
+            df_v = pd.read_pickle(list((sgv['folderpath_experiments_output_data']).glob(f"id=0*-v={para_01}-*.pkl"))[0])
+            sgv['num_agents'] = df_v[dataValues_name][df_v['step'] == df_v['step'].max()].values.size
+
+            arr_episodes_agents_values = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个代理的奖励数据
+            arr_episodes_agents_mask = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个代理的奖励数据
             for sgv['id_episode'] in range(sgv['num_episodes']):
-                # 这里只计算最后一轮的 rewards，这里的 rewards 不是序列，而是重复累计的。
-                arr_episodes_agents_rewardsValues[sgv['id_episode'], :] = df_v['rewards_values'][df_v['step'] == df_v['step'].max()].values
-                arr_episodes_agents_rewardsMask[sgv['id_episode'], :] = df_v['rewards_mask'][df_v['step'] == df_v['step'].max()].values
+                # 这里只计算最后一轮的数据，这里的数据不是序列，而是重复累计的。
+                arr_episodes_agents_values[sgv['id_episode'], :] = df_v[dataValues_name][df_v['step'] == df_v['step'].max()].values
+                arr_episodes_agents_mask[sgv['id_episode'], :] = df_v[dataMask_name][df_v['step'] == df_v['step'].max()].values
                 pass  # for
 
-            dict_agents_rewards = {}
+            dict_agents_data = {}
             for i in range(sgv['num_agents']):
-                # 创建 DataFrame，包含 id_episode, rewards_values, rewards_mask
-                df_agent_rewards = pd.DataFrame({
+                # 创建 DataFrame，包含 id_episode, data_values, data_mask
+                df_agent_data = pd.DataFrame({
                     'id_episode': np.arange(sgv['num_episodes']),
-                    'rewards_values': [arr_episodes_agents_rewardsValues[episode, i] for episode in range(sgv['num_episodes'])],
-                    'rewards_mask': [arr_episodes_agents_rewardsMask[episode, i] for episode in range(sgv['num_episodes'])],
+                    dataValues_name: [arr_episodes_agents_values[episode, i] for episode in range(sgv['num_episodes'])],
+                    dataMask_name: [arr_episodes_agents_mask[episode, i] for episode in range(sgv['num_episodes'])],
                 })
-                dict_agents_rewards[i] = df_agent_rewards
+                dict_agents_data[i] = df_agent_data
 
             ## 绘制强化学习收敛曲线图
-            for k, v in dict_agents_rewards.items():
-                plot_convergence_curve(
-                    arr_reward=v['rewards_values'].values,
-                    save_path=sgv['folderpath_visualize_强化学习收敛曲线'] / f"agent={k}-强化学习收敛曲线图.pdf",
-                    use_moving_average=False,
-                )
+            for k, v in dict_agents_data.items():
+
+                arr = v[dataValues_name].values
+                save_path = sgv['folderpath_visualize_强化学习收敛曲线'] / f"强化学习收敛曲线图-{data_label}-agent={k}.pdf"
+
+                # 绘制收敛曲线
+                plt.figure()
+                if use_moving_average and len(arr) >= window:
+                    # 计算滑动平均
+                    arr_ma = np.convolve(arr, np.ones(window) / window, mode='valid')
+                    plt.plot(np.arange(len(arr_ma)) + window - 1, arr_ma, label=f"{window}步滑动平均")
+                    plt.plot(arr, alpha=0.3, label="原始")
+                else:
+                    # 传统方式：直接画原始曲线
+                    plt.plot(arr, label="原始")
+                    pass  # if
+                plt.xlabel("Episode")
+                plt.ylabel(f"{sgv['vis']['待收集的数据']['文本标签']}")
+                plt.title(f"个体{k} {data_label}收敛曲线（随episode变化）")
+                plt.legend()
+                if save_path:
+                    plt.savefig(save_path)
+                else:
+                    plt.show()
+                plt.close()
 
         pass  # if
 
