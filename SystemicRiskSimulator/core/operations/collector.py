@@ -249,22 +249,27 @@ class Collector:
             if para_01 == "AB":  # 如果是 agent-based 类型
                 df = pd.DataFrame()
                 for field in A[para_01].index.drop('id_agent'):
-                    dict_agents_values = dict()
+                    # dict_agents_values = dict()
                     list_agents_values = []
                     for id_agent, v_agent in enumerate(A[para_01][field]):
                         dict_agent_value = dict()
                         for k, v in v_agent.items():
                             name_k = f"{field}_{k}"
+                            # # 取值的时候，只有最后一个是有效的。这里的值不是单个的序列，而是重复累计的序列。
+                            # if isinstance(v[-1], np.ndarray):
+                            #     dict_agent_value[name_k] = deepcopy(v[-1][:])  # 如果是 numpy 数组，取切片
+                            # else:
+                            #     dict_agent_value[name_k] = v[-1]  # 否则直接取值
+                            #     pass  # if
                             dict_agent_value[name_k] = deepcopy(v[-1])  # 只有最后一个是有效的。这里的值不是单个的序列，而是重复累计的序列。
                             pass  # for
-                        dict_agents_values.update(dict_agent_value)
-                        list_agents_values.append(dict_agents_values)
+                        dict_agent_value.update(dict_agent_value)
+                        list_agents_values.append(dict_agent_value)
                         pass  # for
                         # df_agents_values = pd.DataFrame(list_agents_values)
                     df = pd.concat([df, pd.DataFrame(list_agents_values)], axis=1, ignore_index=False)
                     pass  # for
                 df.insert(loc=0, column='id_agent', value=np.arange(sgv['num_bank']))
-                pass
             else:  # 如果是其他类型，暨规则数据结构类型，例如 BB、IB 等类型
                 series = pd.Series()
                 for field in A[para_01].index:
