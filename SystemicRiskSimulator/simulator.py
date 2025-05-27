@@ -262,7 +262,7 @@ def simulator(config: dict):
 
     # %% 清理
 
-    ## 导出配置数据
+    ## 导出最后的配置数据
     Collector.export_config_data(sgv)
 
     ## 删除设置文件夹、模型文件夹内的所有文件，但是保留文件夹  #HACK 无用，但是可以保留作为备用

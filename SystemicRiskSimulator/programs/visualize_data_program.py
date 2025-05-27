@@ -1105,7 +1105,7 @@ def main(sgv):
             arr_episodes_agents_values = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的奖励数据
             arr_episodes_agents_mask = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的奖励数据
             for sgv['id_episode'] in range(sgv['num_episodes']):
-                # 这里只计算最后一轮的数据，这里的数据不是序列，而是重复累计的。
+                # 这里只需要获取最后一轮的数据，这里的数据不是序列，而是重复累计的。
                 arr_episodes_agents_values[sgv['id_episode'], :] = df_v[dataValues_name][df_v['step'] == df_v['step'].max()].values
                 arr_episodes_agents_mask[sgv['id_episode'], :] = df_v[dataMask_name][df_v['step'] == df_v['step'].max()].values
                 pass  # for
