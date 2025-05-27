@@ -1102,8 +1102,8 @@ def main(sgv):
             df_v = pd.read_pickle(list((sgv['folderpath_experiments_output_data']).glob(f"id=0*-v={para_01}-*.pkl"))[0])
             sgv['num_agents'] = df_v[dataValues_name][df_v['step'] == df_v['step'].max()].values.size
 
-            arr_episodes_agents_values = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个代理的奖励数据
-            arr_episodes_agents_mask = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个代理的奖励数据
+            arr_episodes_agents_values = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的奖励数据
+            arr_episodes_agents_mask = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的奖励数据
             for sgv['id_episode'] in range(sgv['num_episodes']):
                 # 这里只计算最后一轮的数据，这里的数据不是序列，而是重复累计的。
                 arr_episodes_agents_values[sgv['id_episode'], :] = df_v[dataValues_name][df_v['step'] == df_v['step'].max()].values
@@ -1120,11 +1120,10 @@ def main(sgv):
                 })
                 dict_agents_data[i] = df_agent_data
 
-            ## 绘制强化学习收敛曲线图
+            ## 绘制强化学习收敛曲线图（单个个体）
             for k, v in dict_agents_data.items():
-
                 arr = v[dataValues_name].values
-                save_path = sgv['folderpath_visualize_强化学习收敛曲线'] / f"强化学习收敛曲线图-{data_label}-agent={k}.pdf"
+                filepath_single_agent = sgv['folderpath_visualize_强化学习收敛曲线'] / f"强化学习收敛曲线图-{data_label}-agent={k}.pdf"
 
                 # 绘制收敛曲线
                 plt.figure()
@@ -1133,16 +1132,16 @@ def main(sgv):
                     arr_ma = np.convolve(arr, np.ones(window) / window, mode='valid')
                     plt.plot(np.arange(len(arr_ma)) + window - 1, arr_ma, label=f"{window}步滑动平均")
                     plt.plot(arr, alpha=0.3, label="原始")
-                else:
-                    # 传统方式：直接画原始曲线
+                else:  # 直接画原始曲线
                     plt.plot(arr, label="原始")
                     pass  # if
                 plt.xlabel("Episode")
                 plt.ylabel(f"{sgv['vis']['待收集的数据']['文本标签']}")
                 plt.title(f"个体{k} {data_label}收敛曲线（随episode变化）")
                 plt.legend()
-                if save_path:
-                    plt.savefig(save_path)
+
+                if filepath_single_agent:
+                    plt.savefig(filepath_single_agent)
                 else:
                     plt.show()
                 plt.close()
