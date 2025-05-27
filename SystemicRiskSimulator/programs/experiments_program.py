@@ -363,7 +363,6 @@ def main(sgv):
 
             ## 创建环境
             sgv['id_experiment'] = np.random.choice(paras.exp_id)  # 随机选择一个实验组
-            # sgv['id_experiment'] = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
             # sgv['id_experiment'] = 955  # #DEBUG 调试专用
             para = paras[paras['exp_id'] == sgv['id_experiment']].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典
             A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)  # 重置实验
@@ -379,7 +378,6 @@ def main(sgv):
                         # M.sgv['episode'] = i_episode + 1
 
                         sgv['id_experiment'] = np.random.choice(paras.exp_id)  # 随机选择一个实验组
-                        # sgv['id_experiment'] = np.random.choice(sgv['list_idsExp_TASK'])  # 随机选择一个实验组
                         # sgv['id_experiment'] = 955  # #DEBUG 调试专用
                         para = paras[paras['exp_id'] == sgv['id_experiment']].squeeze().to_dict()  # 获取实验参数作业数据框并转换为字典 #BUG 为什么没用到？
 

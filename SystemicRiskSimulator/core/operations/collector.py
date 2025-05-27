@@ -286,7 +286,7 @@ class Collector:
             if collect is None:  # 如果没有指定收集的字段，则收集所有字段
                 A_data[para_01] = pd.concat([A_data[para_01], df], ignore_index=True)
                 pass  # if
-            else:  # #TODO 尚未适配
+            else:  # 如果指定了收集的字段，则只收集指定的字段
                 for variable in collect:
                     for field in variable[variable]:
                         if field in df.columns:
@@ -365,6 +365,8 @@ class Collector:
                     pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
                 case "AB":  # 如果变量类型是 AB ，则直接保存成 pkl 文件
                     pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                    if sgv['is_export_data_to_xlsx']:
+                        A_data[para_01].to_excel(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
                 case _:
                     if sgv['is_export_data_to_xlsx']:
                         A_data[para_01].to_excel(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
