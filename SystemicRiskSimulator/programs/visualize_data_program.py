@@ -1147,6 +1147,35 @@ def main(sgv):
                     plt.show()
                 plt.close()
 
+        ## 绘制所有个体的收敛曲线图
+        plt.figure()
+        filepath_all_agents = sgv['folderpath_visualize_强化学习收敛曲线'] / f"强化学习收敛曲线图-{data_label}-所有agent.pdf"
+        for k, v in dict_agents_data.items():
+            arr = v[dataValues_name].values
+            if use_moving_average and len(arr) >= window:
+                # 计算滑动平均
+                arr_ma = np.convolve(arr, np.ones(window) / window, mode='valid')
+                x = np.arange(len(arr_ma)) + window - 1
+                plt.plot(x, arr_ma, label=f"agent {k} ({window}步滑动平均)")
+            else:  # 直接画原始曲线
+                x = np.arange(len(arr))
+                plt.plot(x, arr, label=f"agent {k}")
+                pass  # if
+            plt.annotate(f"agent {k}", (x[-1], arr[-1]), textcoords="offset points", xytext=(5, 0), ha='left')  # 在曲线末尾标记标签
+        plt.xlabel("Episode")
+        plt.ylabel(f"{sgv['vis']['待收集的数据']['文本标签']}")
+        plt.title(f"所有个体 {data_label} 收敛曲线（随episode变化）")
+
+        # 将图例放置在图外
+        plt.legend(loc='upper left', bbox_to_anchor=(1.05, 1), borderaxespad=0.)
+
+        if filepath_all_agents:
+            plt.savefig(filepath_all_agents, bbox_inches='tight')  # 保存图像并调整边距
+            print(f"图像已保存到: {filepath_all_agents}")  # 打印保存路径
+        else:
+            plt.show()  # 显示图像
+
+        plt.close()
         pass  # if
 
     # %%
