@@ -1102,8 +1102,8 @@ def main(sgv):
             df_v = pd.read_pickle(list((sgv['folderpath_experiments_output_data']).glob(f"id=0*-v={para_01}-*.pkl"))[0])
             sgv['num_agents'] = df_v[dataValues_name][df_v['step'] == df_v['step'].max()].values.size
 
-            arr_episodes_agents_values = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的奖励数据
-            arr_episodes_agents_mask = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的奖励数据
+            arr_episodes_agents_values = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的相关数据
+            arr_episodes_agents_mask = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的相关数据
             for sgv['id_episode'] in range(sgv['num_episodes']):
                 # 这里只需要获取最后一轮的数据，这里的数据不是序列，而是重复累计的。
                 arr_episodes_agents_values[sgv['id_episode'], :] = df_v[dataValues_name][df_v['step'] == df_v['step'].max()].values
