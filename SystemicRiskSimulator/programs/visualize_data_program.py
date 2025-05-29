@@ -70,10 +70,10 @@ def main(sgv):
     # %%
 
     ### 设置绘图时的字体 #NOTE：如果想要自定义字体，那么请开启下面的一段代码
-    if sgv['system_platform'] == 'darwin':  # MacOS系统
+    if str(sgv['system_platform'][0]).lower() == 'darwin':  # MacOS系统
         zh_font_family = 'Times New Roman'
         en_font_family = 'Songti SC'
-    elif sgv['system_platform'] == 'windows':  # Windows系统
+    elif str(sgv['system_platform'][0]).lower() == 'windows':  # Windows系统
         zh_font_family = 'Times New Roman'
         en_font_family = 'SimHei'
     else:  # 其他系统 #BUG 没有测试过
