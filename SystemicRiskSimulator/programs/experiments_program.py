@@ -166,11 +166,10 @@ def main(sgv):
                 for i, para in paras.iterrows():
                     para = para.to_dict()  # 将参数数据框转换为字典
                     # model = list(models.values())[0]  # 获取当前实验对应的模型
-                    model = model_dict  # 获取当前实验对应的模型
                     sgv['id_experiment'] = i  # 设定当前实验编号
                     sgv['num_unfinished_experiments_to_run'] -= 1  # 更新未完成实验数
                     ## 运行一次实验作业
-                    fun_single_experiment_work(sgv['id_experiment'], sgv, para, model)
+                    fun_single_experiment_work(sgv['id_experiment'], sgv, para, model_dict)
                     pass  # for
 
                 sgv['simulator_end_time'] = time.time()  # 记录串行运行模式下，记录模拟器结束运行时刻
@@ -557,7 +556,7 @@ def main(sgv):
     pass  # main
 
 
-def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dict):
+def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model_dict: dict):
     """
     实验模拟程序。用于运行单个实验。
 
@@ -567,7 +566,7 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         exp_id (int): 实验编号
         sgv_original (dict): 模拟器全局变量（原始的）
         para (pandas.Series): 实验参数
-        model (dict): 模型
+        model_dict (dict): 模型字典。键名是模型名称，键值是模型类。模型类需要被初始化为实例才能使用。
 
     Returns:
         None
@@ -579,15 +578,17 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
     A, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para)
 
     ## 安装模型
-    model_Finance = model['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
-    if 'model_strategy' in model.keys():  # 如果该模型有设计 model_Strategy
-        model_Strategy = model['model_strategy'](np.array(para['Strategy_default']))  # 初始化 model_Strategy 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
-        model_main = model['model_main'](model_Finance, model_Strategy)  # 初始化 model_main 之实例
+
+    # model_Finance = model_dict['model_finance'](sgv['num_bank'])  # 初始化 Content_Finance 之实例
+    if 'model_strategy' in model_dict.keys():  # 如果该模型有设计 model_Strategy
+        # model_Strategy = model_dict['model_strategy'](np.array(para['Strategy_default']))  # 初始化 model_Strategy 之实例 #BUG 不能这样代入参数 #TODO 需要重新适配 IB2111 等原来的模型
+        model_main = model_dict['model_main'](model_dict, A, A_data, para, sgv)  # 初始化 model_main 之实例
     else:
-        model_main = model['model_main'](model_Finance)  # 初始化 Content_Model 之实例
+        model_main = model_dict['model_main'](model_dict, A, A_data, para, sgv)  # 初始化 model_main 之实例
+        # model_main = model_dict['model_main'](model_Finance)  # 初始化 model_main 之实例
         pass  # if
 
-    # A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model)
+    # A, A_last, A_data, sgv, para = Operator.operate_reset_experiment(sgv, para, model_dict)
 
     ## 运行实验
     sgv['experiment_start_time'] = timeit.default_timer()  # 记录此次实验开始时间
@@ -604,8 +605,8 @@ def fun_single_experiment_work(exp_id: int, sgv_original: dict, para, model: dic
         )
         pass  # if
 
-    # model_main.model_content(A, A_last, A_data, para, sgv)
-    model_main.model_content(A, A_data, para, sgv)
+    # 运行一局模型之全过程
+    model_main.model_process()
 
     ## 收尾实验
     # if True:  # #HACK 如果需要调试，请使用这个替换下面的
