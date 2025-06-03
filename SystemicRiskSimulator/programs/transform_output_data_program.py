@@ -75,6 +75,17 @@ def main(sgv):
     # %%
     print("执行：")
 
+    if sgv['is_use_RL_method']:
+        sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}-"
+        if sgv['RL_state'] == 'training':
+            sgv['folderpath_experiments_output_data'] = sgv['folderpath_experiments_output_data'] / "RL_training"
+        elif sgv['RL_state'] == 'using':
+            sgv['folderpath_experiments_output_data'] = sgv['folderpath_experiments_output_data'] / "RL_using"
+    else:
+        sgv['exp_id_exp_output_data'] = ""
+        sgv['folderpath_experiments_output_data'] = sgv['folderpath_experiments_output_data'] / "normal"
+        pass  # if
+
     num_files_BB = len(list(sgv['folderpath_experiments_output_data'].glob('*v=BB-*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
     num_files_IB = len(list(sgv['folderpath_experiments_output_data'].glob('*v=IB-*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
     print(f"BB 文件数等于 IB 文件数？：{num_files_BB == num_files_IB}")  # DEBUG
@@ -166,7 +177,7 @@ def main(sgv):
         #     pass
         # agents_data_paras = df_parameters[df_parameters['type'] == 'agents_data']  # 获取 agents 数据表
 
-        folderpath_experiments_output_data_panel = Path(sgv['folderpath_experiments_output_data'] / "../exp_output_data_panel").resolve()
+        folderpath_experiments_output_data_panel = Path(sgv['folderpath_experiments_output_data'] / "../../exp_output_data_panel").resolve()
         folderpath_experiments_output_data_panel.mkdir(parents=True, exist_ok=True)  # 创建面板数据文件夹
 
         if sgv['is_enable_multiprocessing_for_transform_output_data']:

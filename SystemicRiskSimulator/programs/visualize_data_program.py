@@ -144,8 +144,8 @@ def main(sgv):
     sgv['folderpath_plots_makeup_balanceSheets'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_visualize_banksStates_table'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_banksStates_table'])
     sgv['folderpath_visualize_banksStates_table'].mkdir(parents=True, exist_ok=True)
-    sgv['folderpath_visualize_强化学习收敛曲线'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_强化学习收敛曲线'])
-    sgv['folderpath_visualize_强化学习收敛曲线'].mkdir(parents=True, exist_ok=True)
+    # sgv['folderpath_visualize_强化学习收敛曲线'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_强化学习收敛曲线'])
+    # sgv['folderpath_visualize_强化学习收敛曲线'].mkdir(parents=True, exist_ok=True)
 
     ## 获取需要做的实验组之索引
     list_fig_files = list(sgv['folderpath_experiments_output_data_panel'].glob('*-form=panel.pkl'))  # 获取实验组输出数据pkl格式之文件列表
@@ -468,8 +468,8 @@ def main(sgv):
             # id=0-v=note-year=2007-density=0.10.pkl
             # exp=107-v=BB-aid=0-form=panel.pkl
 
-            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
-            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
+            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
+            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
 
             ## 一些变量
             num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
