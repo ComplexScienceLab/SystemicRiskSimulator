@@ -230,6 +230,7 @@ def main(sgv):
                         sgv['folderpath_experiments_output_log'],
                         folderpath_experiments_output_data_panel,
                         sgv['is_use_sqlite_to_manage_experiments'],
+                        sgv['list_table_for_explode'],
                     )
                     pass  # for
                 pass  # for
@@ -373,7 +374,7 @@ def main(sgv):
     pass  # main
 
 
-def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl: dict, filepath_note_pkl: dict, columns_to_insert_into_panel_data: dict, folderpath_experiments_output_log: Path, folderpath_experiments_output_data_panel: Path, is_use_sqlite_to_manage_experiments: bool):
+def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl: dict, filepath_note_pkl: dict, columns_to_insert_into_panel_data: dict, folderpath_experiments_output_log: Path, folderpath_experiments_output_data_panel: Path, is_use_sqlite_to_manage_experiments: bool, list_table_for_explode: list):
     """
     预处理单次实验之各实验结果数据
 
@@ -385,6 +386,7 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
         folderpath_experiments_output_log: Path: 实验组输出日志文件夹路径
         folderpath_exp_output_data: Path: 面板数据文件夹路径
         is_use_sqlite_to_manage_experiments: bool: 是否使用 SQLite 数据库管理实验组
+        list_table_for_explode: list: 需要展平的表格列表。每一个元素是一个字符串，表示需要展平的表格名。
 
     Returns:
         None
@@ -414,7 +416,15 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
             df_1D_original.to_pickle(Path(filepath_pkl_1D_panal))  # 导出为 pkl 格式
             df_1D_original = pd.read_pickle(filepath_pkl_1D_panal)  # 重新读取 pkl 文件，对该文件直接修改
 
-            num_size = df_1D_original[df_1D_original.columns[-1]][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
+            if para_01 in list_table_for_explode:
+                is_value_a_vector = True
+            else:
+                is_value_a_vector = False
+
+            if is_value_a_vector:
+                num_size = df_1D_original[df_1D_original.columns[-1]][0].shape[0]  # 获取个体数 #HACK 如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
+            else:
+                num_size = df_1D_original[df_1D_original.columns[-1]][0].size
 
             df_1D = df_1D_original.map(lambda x: x.flatten() if hasattr(x, 'flatten') else x)  # 压平二维数组
 
@@ -424,31 +434,36 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
                 col = df_1D.pop(v[0])
                 df_1D.insert(df_1D.columns.get_loc(v[2]) + 1, v[0], col)
 
-            ## 转换数据格式为numpy字符串格式
-            list_columns_for_transform_datatype = [
-                v for i, v in enumerate(df_1D.columns) if (
-                        df_1D[v].dtype == np.dtype('object')
-                        and type(df_1D[v][0]) == str
-                )
-            ]
-            for i in range(df_1D.__len__()):
-                df_1D.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_1D[list_columns_for_transform_datatype[0]][i])
+            if is_value_a_vector:
+                ## 转换数据格式为 numpy 字符串格式
+                list_columns_for_transform_datatype = [
+                    v for i, v in enumerate(df_1D.columns) if (
+                            df_1D[v].dtype == np.dtype('object')
+                            and type(df_1D[v][0]) == str
+                    )
+                ]
+                for i in range(df_1D.__len__()):
+                    df_1D.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_1D[list_columns_for_transform_datatype[0]][i])
+                    pass  # for
 
-            ## 展平为面板形式
-            list_columns_for_explode = [
-                v for i, v in enumerate(df_1D.columns) if (
-                        df_1D[v].dtype == np.dtype('object')
-                        and df_1D[v][0].size == num_size
-                )
-            ]  # 获取需要展平的列
+                ## 展平为面板形式
+                list_columns_for_explode = [
+                    v for i, v in enumerate(df_1D.columns) if (
+                            df_1D[v].dtype == np.dtype('object')
+                            and df_1D[v][0].size == num_size
+                    )
+                ]  # 获取需要展平的列
 
-            df_1D_panel = df_1D.explode('id_agent')  # 只展开 'id_agent' 列
-            for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
-                if col != 'id_agent':
-                    # df_1D_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).reset_index(level=1, drop=True)
-                    df_1D_panel[col] = df_1D.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).values
-                    pass  # if
-                pass  # for
+                df_1D_panel = df_1D.explode('id_agent')  # 只展开 'id_agent' 列
+                for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
+                    if col != 'id_agent':
+                        # df_1D_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).reset_index(level=1, drop=True)
+                        df_1D_panel[col] = df_1D.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).values
+                        pass  # if
+                    pass  # for
+            else:
+                df_1D_panel = df_1D
+                pass  # if
             df_1D_panel = df_1D_panel.reset_index(drop=True)  # 重置索引
 
             df_1D_panel.insert(0, 'id', range(len(df_1D_panel)))  # 添加id列
