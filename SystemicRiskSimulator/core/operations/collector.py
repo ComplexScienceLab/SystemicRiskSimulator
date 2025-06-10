@@ -350,33 +350,31 @@ class Collector:
         if sgv['is_use_RL_method']:
             sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}-"
             if sgv['RL_state'] == 'training':
-                sgv['folderpath_experiments_output_data'] = sgv['folderpath_experiments_output_data'] / "RL_training"
+                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
             elif sgv['RL_state'] == 'using':
-                sgv['folderpath_experiments_output_data'] = sgv['folderpath_experiments_output_data'] / "RL_using"
-        else:
-            sgv['exp_id_exp_output_data'] = ""
-            sgv['folderpath_experiments_output_data'] = sgv['folderpath_experiments_output_data'] / "normal"
+                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+                pass  # if
+            folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
             pass  # if
-        sgv['folderpath_experiments_output_data'].mkdir(parents=True, exist_ok=True)
 
         for para_01 in sgv['list_agents_data_filename_para_01']:
             match para_01:
                 case "note":  # 如果变量类型是 note ，则直接保存成 pkl 文件
-                    pd.to_pickle(A_data[para_01], sgv['folderpath_experiments_output_data'] / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
                 case "AB":  # 如果变量类型是 AB
-                    pd.to_pickle(A_data[para_01], sgv['folderpath_experiments_output_data'] / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
                     if sgv['is_export_data_to_xlsx']:
-                        A_data[para_01].to_excel(sgv['folderpath_experiments_output_data'] / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
+                        A_data[para_01].to_excel(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
                 case _:
-                    pd.to_pickle(A_data[para_01], sgv['folderpath_experiments_output_data'] / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
                     if sgv['is_export_data_to_xlsx']:
-                        A_data[para_01].to_excel(sgv['folderpath_experiments_output_data'] / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
+                        A_data[para_01].to_excel(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
                     if sgv['is_export_data_to_csv']:
-                        A_data[para_01].to_csv(sgv['folderpath_experiments_output_data'] / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv", index=False)
+                        A_data[para_01].to_csv(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv", index=False)
                     pass  # match
             # # DEBUG 立刻读取刚保存的文件检查是否正确
             # A_data_AB_before = A_data[para_01]
-            # A_data_AB_after = pd.read_pickle(sgv['folderpath_experiments_output_data'] / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+            # A_data_AB_after = pd.read_pickle(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
             pass  # for
 
         pass  # function

@@ -75,6 +75,17 @@ def simulator(config: dict):
         str_folderpath_agents=sgv['folderpath_agents'],
     )
 
+    if sgv['is_use_RL_method']:
+        if sgv['RL_state'] == 'training':
+            sgv['subfoldername_experiments_output_data'] = "RL_training"
+        elif sgv['RL_state'] == 'using':
+            sgv['subfoldername_experiments_output_data'] = "RL_using"
+            pass  # if
+    else:
+        sgv['exp_id_exp_output_data'] = ""
+        sgv['subfoldername_experiments_output_data'] = "normal"
+        pass  # if
+
     # from SystemicRiskSimulator.core.operations.operator import Operator
 
     # %% 是否运作实验程序

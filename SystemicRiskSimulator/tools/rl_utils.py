@@ -178,26 +178,25 @@ class RlUtils:
             >>> RlUtils.save_training_data_with_logging(model_algorithm)
         """
 
-        save_folder_path = Path(folderpath_save)
-        save_folder_path.mkdir(parents=True, exist_ok=True)  # 如果文件夹不存在则创建
+        Path(folderpath_save).mkdir(parents=True, exist_ok=True)  # 如果文件夹不存在则创建
 
         # 打印并保存策略网络状态字典
-        actor_state_dict_path = save_folder_path / 'actor_state_dict.pth'
+        actor_state_dict_path = folderpath_save / 'actor_state_dict.pth'
         print(f"Saving actor state dict to {actor_state_dict_path}")  # 打印保存路径
         torch.save(model_algorithm.actor.state_dict(), actor_state_dict_path)  # 保存策略网络状态字典
 
         # 打印并保存价值网络状态字典
-        critic_state_dict_path = save_folder_path / 'critic_state_dict.pth'
+        critic_state_dict_path = folderpath_save / 'critic_state_dict.pth'
         print(f"Saving critic state dict to {critic_state_dict_path}")  # 打印保存路径
         torch.save(model_algorithm.critic.state_dict(), critic_state_dict_path)  # 保存价值网络状态字典
 
         # 打印并保存策略网络优化器状态字典
-        actor_optimizer_state_dict_path = save_folder_path / 'actor_optimizer_state_dict.pth'
+        actor_optimizer_state_dict_path = folderpath_save / 'actor_optimizer_state_dict.pth'
         print(f"Saving actor optimizer state dict to {actor_optimizer_state_dict_path}")  # 打印保存路径
         torch.save(model_algorithm.actor_optimizer.state_dict(), actor_optimizer_state_dict_path)  # 保存策略网络优化器状态字典
 
         # 打印并保存价值网络优化器状态字典
-        critic_optimizer_state_dict_path = save_folder_path / 'critic_optimizer_state_dict.pth'
+        critic_optimizer_state_dict_path = folderpath_save / 'critic_optimizer_state_dict.pth'
         print(f"Saving critic optimizer state dict to {critic_optimizer_state_dict_path}")  # 打印保存路径
         torch.save(model_algorithm.critic_optimizer.state_dict(), critic_optimizer_state_dict_path)  # 保存价值网络优化器状态字典
 
@@ -208,7 +207,7 @@ class RlUtils:
             'num_update_epochs': model_algorithm.num_update_epochs,
             'eps': model_algorithm.eps
         }
-        hyperparameters_path = save_folder_path / 'hyperparameters.json'
+        hyperparameters_path = folderpath_save / 'hyperparameters.json'
         print(f"Saving hyperparameters to {hyperparameters_path}")  # 打印保存路径
         print(f"Hyperparameters: {json.dumps(hyperparameters, indent=4)}")  # 打印超参数
         with hyperparameters_path.open('w') as f:
