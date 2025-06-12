@@ -45,11 +45,12 @@ class Operator:
 
         """
 
-        # 如果不是使用 RL 方法，并且不是在训练状态下，那么就进行实验组的安装与初始化。在训练强化学习的模式下，不管理实验组的安装与初始化，而是直接使用强化学习环境工具包的相关方法来进行实验组的初始化。
-        if not (sgv['is_use_RL_method'] and sgv['RL_state']=='training'):
+        ## 设置参数作业列表
+        if sgv['init_parameters_method'] == "import data":
 
-            ## 设置参数作业列表
-            if sgv['init_parameters_method'] == "import data":
+            # 如果不是使用 RL 方法，并且不是在训练状态下，那么就进行实验组的安装与初始化
+            if not (sgv['is_use_RL_method'] and sgv['RL_state'] == 'training'):
+
                 with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
                     parameters_works = pd.read_pickle(f)
                     num_parameters_works = len(parameters_works)
@@ -190,19 +191,37 @@ class Operator:
                     pass  # with
 
                 Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
-            elif sgv['init_parameters_method'] == "set manually":  # #TODO HACK 这个选项几乎被废弃了。可以删除。
-                parameters_works = Tools.dict_to_product_list(para)  # 设置字典列表，由 set_parameters_variables 各参数之各可能的取值排列组合而成。此将用于做实验
-                Collector.export_parameter_data(parameters_works, para)  # 导出控制参数数据
-                pass  # if
 
-            sgv['num_experiments_to_run'] = len(list_idsExp_TASK)  # 获取实验组数量
-            sgv['num_unfinished_experiments_to_run'] = len(list_idsExp_TASK)  # 未完成的实验组数量
+                sgv['num_experiments_to_run'] = len(list_idsExp_TASK)  # 获取实验组数量
+                sgv['num_unfinished_experiments_to_run'] = len(list_idsExp_TASK)  # 未完成的实验组数量
 
-        else:
-            if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置随机选取实验组运行
+            else:  # #NOW 如果是使用 RL 方法，并且是在训练状态下，那么就不需要安装实验组数据，而是直接使用强化学习环境工具包的相关方法来进行实验组的初始化
+                # if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置随机选取实验组运行
+                #     list_idsExp_TASK=[]
 
-                pass  # if
+                with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
+                    parameters_works = pd.read_pickle(f)
+                    num_parameters_works = len(parameters_works)
 
+                    # 根据配置项从参数库中获取参数
+                    if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置计划运行所有的实验组
+                        list_idsExperiment_to_run = list(range(0, num_parameters_works))
+                    elif isinstance(sgv['list_idsExperiment_to_run'], list):  # 如果设置了实验组 id 列表，那么就设置计划列表内的实验组
+                        list_idsExperiment_to_run = sgv['list_idsExperiment_to_run']
+                    elif isinstance(sgv['list_idsExperiment_to_run'], str):  # 如果设置了实验组运行条件文本，那么就解析文本信息，作为查询条件，设置计划符合条件的实验组
+                        query_text = sgv['list_idsExperiment_to_run']
+                        try:
+                            # 使用 eval 解析文本信息，作为查询条件
+                            # parameters_works_filter = parameters_works.query(query_text)
+                            parameters_works_filter = parameters_works[eval(query_text)]
+                            list_idsExperiment_to_run = parameters_works_filter['exp_id'].tolist()
+                        except Exception as e:
+                            raise Exception(f"实验组运行条件文本解析错误！！！")
+                    else:
+                        list_idsExperiment_to_run = []
+                        pass  # if
+
+            pass  # if
 
         ## 构建本次实验组所需的所有模型
 
