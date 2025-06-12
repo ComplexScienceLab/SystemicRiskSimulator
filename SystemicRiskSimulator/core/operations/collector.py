@@ -354,8 +354,11 @@ class Collector:
             elif sgv['RL_state'] == 'using':
                 folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
                 pass  # if
-            folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
+        else:
+            sgv['exp_id_exp_output_data'] = ""
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
             pass  # if
+        folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
 
         for para_01 in sgv['list_agents_data_filename_para_01']:
             match para_01:
