@@ -75,7 +75,40 @@ def simulator(config: dict):
         str_folderpath_agents=sgv['folderpath_agents'],
     )
 
+    if sgv['is_use_RL_method']:
+        if sgv['RL_state'] == 'training':
+            sgv['subfoldername_experiments_output_data'] = "RL_training"
+        elif sgv['RL_state'] == 'using':
+            sgv['subfoldername_experiments_output_data'] = "RL_using"
+            pass  # if
+    else:
+        sgv['exp_id_exp_output_data'] = ""
+        sgv['subfoldername_experiments_output_data'] = "normal"
+        pass  # if
+
     # from SystemicRiskSimulator.core.operations.operator import Operator
+
+    ## 设定实验组运行方式
+    if sgv['is_use_Gym_environments'] is False and sgv['is_use_RL_method'] is False:
+        logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")
+        sgv['运行实验组的方式'] = '运行ABM实验组'
+    elif sgv['is_use_Gym_environments'] is False and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'using':
+        logging.debug("\nexperiments_program.py : 使用自定义的环境模型，并且使用强化学习算法对已经训练过的模型做运用。\n")
+        sgv['运行实验组的方式'] = '运行强化学习算法和ABM模型实验组做应用'
+    elif sgv['is_use_Gym_environments'] is False and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'training':
+        logging.debug("\nexperiments_program.py : 使用自定义的环境模型，并且使用强化学习算法做训练。\n")
+        sgv['运行实验组的方式'] = '运行强化学习算法和ABM模型实验组做训练'
+    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is False:
+        logging.debug("\nexperiments_program.py : 使用 Gymnasium 环境框架结合自定义的环境模型，但是没有用强化学习算法进行训练。\n")
+        sgv['运行实验组的方式'] = '运行Gym和ABM实验组'
+    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'using':
+        logging.debug("\nexperiments_program.py : 使用 Gymnasium 环境框架结合自定义的环境模型，并且使用强化学习算法已经训练过的模型做运用。\n")
+        sgv['运行实验组的方式'] = '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用'
+    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'training':
+        logging.debug("\nexperiments_program.py : 使用 Gymnasium 环境框架结合自定义的环境模型，并且使用强化学习算法做训练。\n")
+        sgv['运行实验组的方式'] = '运行强化学习算法和Gym框架结合自定义ABM模型实验组做训练'
+        pass  # if
+
 
     # %% 是否运作实验程序
     if sgv['schedule_operation']['实验组模拟程序']:
@@ -262,7 +295,7 @@ def simulator(config: dict):
 
     # %% 清理
 
-    ## 导出配置数据
+    ## 导出最后的配置数据
     Collector.export_config_data(sgv)
 
     ## 删除设置文件夹、模型文件夹内的所有文件，但是保留文件夹  #HACK 无用，但是可以保留作为备用

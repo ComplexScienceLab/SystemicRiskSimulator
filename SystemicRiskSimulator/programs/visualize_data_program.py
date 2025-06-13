@@ -1,8 +1,6 @@
 """
 可视化结果程序。
 
-BUG 2023-07-11：改标注在图上的文本语言为英文。暂时不建议用中文标注在图上。因为如果使用中文，不能任意设置字体族；
-
 Args:
     sgv: dict
 
@@ -23,6 +21,7 @@ import base64
 from multiprocessing import Pool
 import multiprocessing
 import warnings
+import logging
 from SystemicRiskSimulator.tools.visualization_tools import generate_one_interbank_matrix_heatmaps_data_info, draw_one_interbank_matrix_heatmaps, generate_one_interbank_graph_data_info, draw_one_interbank_flow_graph, generate_one_bank_accounts_data, draw_one_bank_BalanceSheet, merged_and_bind_figs_to_a_pdf_file
 
 
@@ -71,15 +70,19 @@ def main(sgv):
     # %%
 
     ### 设置绘图时的字体 #NOTE：如果想要自定义字体，那么请开启下面的一段代码
-    if sgv['system_platform'] == 'Darwin':  # MacOS系统
-        zh_font_family = 'Songti SC'
-        en_font_family = 'Times New Roman'
-    elif sgv['system_platform'] == 'Windows':  # Windows系统
-        zh_font_family = 'SimHei'
-        en_font_family = 'Times New Roman'
-    else:  # 其他系统
+    if str(sgv['system_platform'][0]).lower() == 'darwin':  # MacOS系统
+        zh_font_family = 'Times New Roman'
+        en_font_family = 'Songti SC'
+    elif str(sgv['system_platform'][0]).lower() == 'windows':  # Windows系统
+        zh_font_family = 'Times New Roman'
+        en_font_family = 'SimHei'
+    else:  # 其他系统 #BUG 没有测试过
         zh_font_family = 'Arial'
         en_font_family = 'Arial'
+
+    # 配置字体回退
+    plt.rcParams['font.family'] = [zh_font_family, en_font_family]
+
     zh_font_prop = fm.FontProperties(fname=fm.findfont(fm.FontProperties(family=zh_font_family)))
     # zh_font_prop = fm.FontProperties(family=zh_font_family, size=14)  # 使用指定中文字体和字号
     zh_font_path = zh_font_prop.get_file()
@@ -95,8 +98,8 @@ def main(sgv):
     # zh_font_family = fm.FontProperties(family='Songti SC').get_name()  # 获取默认的中文字体为 Songti SC
     # en_font_family = fm.FontProperties(family='Times New Roman').get_name()  # 获取默认的英文字体为 Times New Roman
 
-    ### 配置 plt
-    plt.rcParams['font.family'] = zh_font_family
+    # ### 配置 plt
+    # plt.rcParams['font.family'] = zh_font_family
 
     ### 配置 reportlab
     pdfmetrics.registerFont(TTFont(zh_font_family, zh_font_path))
@@ -112,9 +115,19 @@ def main(sgv):
 
     ### 处理相关导入导出文件夹
 
+    if sgv['is_use_RL_method']:
+        if sgv['RL_state'] == 'training':
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_training"
+        elif sgv['RL_state'] == 'using':
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "RL_using"
+    else:
+        folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / "normal"
+        pass  # if
+
+    # #TODO 以下部分建议分散到具体的子程序里面
     # sgv['folderpath_experiments'] = Path(sgv['folderpath_project'], sgv['folderpath_root_experiments'], sgv['foldername_experiments'])
-    # sgv['folderpath_experiments_output_data'] = Path(sgv['folderpath_experiments'], sgv['foldername_experiments_output_data'])
-    sgv['folderpath_experiments_output_data_panel'] = (sgv['folderpath_experiments'] / sgv['foldername_experiments_output_data'] / '../exp_output_data_panel').resolve()
+    sgv['folderpath_experiments_output_data'] = folderpath_experiments_output_data
+    sgv['folderpath_experiments_output_data_panel'] = (sgv['folderpath_experiments'] / sgv['foldername_experiments_output_data'] / "normal" / '../../exp_output_data_panel').resolve()
     sgv['folderpath_plots'] = Path(sgv['folderpath_experiments'], sgv['foldername_plots'])
     sgv['folderpath_plots'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_plots_single_heatmaps'] = Path(sgv['folderpath_plots'], sgv['foldername_plots_single_heatmaps'])
@@ -131,6 +144,8 @@ def main(sgv):
     sgv['folderpath_plots_makeup_balanceSheets'].mkdir(parents=True, exist_ok=True)
     sgv['folderpath_visualize_banksStates_table'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_banksStates_table'])
     sgv['folderpath_visualize_banksStates_table'].mkdir(parents=True, exist_ok=True)
+    # sgv['folderpath_visualize_强化学习收敛曲线'] = Path(sgv['folderpath_plots'], sgv['foldername_visualize_强化学习收敛曲线'])
+    # sgv['folderpath_visualize_强化学习收敛曲线'].mkdir(parents=True, exist_ok=True)
 
     ## 获取需要做的实验组之索引
     list_fig_files = list(sgv['folderpath_experiments_output_data_panel'].glob('*-form=panel.pkl'))  # 获取实验组输出数据pkl格式之文件列表
@@ -439,7 +454,6 @@ def main(sgv):
 
         pass  # if 导入面板形式的CSV数据预处理
 
-
     # %% [markdown] ## #NOTE 绘制资产负债表图
     # 依次按照时间、银行，分别绘制单独的资产负债表（资产负债表尺寸不一样大，尺寸按照比例）
 
@@ -454,8 +468,8 @@ def main(sgv):
             # id=0-v=note-year=2007-density=0.10.pkl
             # exp=107-v=BB-aid=0-form=panel.pkl
 
-            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
-            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
+            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
+            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
 
             ## 一些变量
             num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
@@ -527,8 +541,8 @@ def main(sgv):
 
         for i_exp in experiments_indices_to_vis:
 
-            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
-            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
+            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
+            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
 
             ## 一些变量
             num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
@@ -578,6 +592,7 @@ def main(sgv):
     # %% [markdown] ## NOTE 绘制矩阵热图
     # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
 
+    # %%
     if (sgv['visulization_process']['绘制矩阵热图']):
         print("准备绘制矩阵热图")
         Tools.delete_and_recreate_folder(sgv['folderpath_plots_single_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
@@ -593,10 +608,10 @@ def main(sgv):
             dict_2D_panel = {}
             for para_01 in sgv['list_agents_data_filename_para_01']:
                 # 根据文件名前缀判断数据类型  #BUG 这个存在风险，因为文件名前缀可能不遵循约定，后续扩展可能会有变化
-                if para_01 == 'note':  # note 数据不需要处理
+                if (para_01 == 'note' or para_01 == 'AB'):  # note 数据不需要处理
                     continue
                 if not para_01.startswith('I'):  # 说明是 1D 的数据
-                    v_1D = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
+                    v_1D = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
                     dict_1D_panel[para_01] = v_1D
                     if para_01 == 'BB':
                         # 计算总的轮次数（是从0开始计数的)、总的步进数（是从0开始计数的)
@@ -605,7 +620,7 @@ def main(sgv):
                         num_step = num_idData  # 总的步进数（是从0开始计数的)
                         pass  # if
                 else:  # 说明是 2D 的数据
-                    df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
+                    df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
                     dict_2D_panel[para_01] = df_2D_panel
                     pass  # if
                 pass  # for
@@ -791,7 +806,6 @@ def main(sgv):
     # 导入各自的矩阵热图，按照横向数据类别纵向时间，拼接成大图
 
     # %%
-
     if (sgv['visulization_process']['拼接矩阵热图']):
         print("准备拼接矩阵热图")
         Tools.delete_and_recreate_folder(sgv['folderpath_plots_makeup_heatmaps'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
@@ -799,14 +813,14 @@ def main(sgv):
         for i_exp in experiments_indices_to_vis:
 
             # for para_01 in sgv['list_agents_data_filename_para_01']:
-            #     if para_01 == 'note':
+            #         if (para_01 == 'note' or para_01 == 'AB'):
             #         continue
             #     if not para_01.startswith('I'):  # 说明是 1D 的数据
-            #         df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
+            #         df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v={para_01}-*-form=panel.pkl'))[0])
 
             # #BUG 为什么这里不遍历 para_01，而是直接用 'BB' 和 'IB' ？
-            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
-            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
+            df_1D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=BB-*-form=panel.pkl'))[0])
+            df_2D_panel = pd.read_pickle(list(sgv['folderpath_experiments_output_data_panel'].glob(f'*exp={i_exp}-v=IB-*-form=panel.pkl'))[0])
 
             ## 一些变量
             num_1D_row_id = len(df_1D_panel)  # 数据表BB之行数
@@ -860,7 +874,6 @@ def main(sgv):
     # 依次按照每个银行间数据类别、时间，分别绘制单独的银行间资金流网络图
 
     # %%
-
     if (sgv['visulization_process']['绘制资金流网络图']):
 
         print("准备绘制资金流网络图")
@@ -939,7 +952,6 @@ def main(sgv):
     # 导入各自的网络图，按照横向数据类别纵向时间，拼接成大图
 
     # %%
-
     if (sgv['visulization_process']['拼接资金流网络图']):
         print("准备拼接资金流网络图")
         Tools.delete_and_recreate_folder(sgv['folderpath_plots_makeup_graphs'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
@@ -1000,7 +1012,6 @@ def main(sgv):
     # 单独提取银行状态数据，处理成高亮可视化表格
 
     # %%
-
     if (sgv['visulization_process']['银行状态表格可视化']):
 
         print("准备可视化银行状态表格")
@@ -1068,7 +1079,106 @@ def main(sgv):
 
         pass  # if
 
+    # %% [markdown] ## #NOTE 绘制强化学习收敛曲线图（只有使用强化学习方法才能启用）
 
+    # %%
+    if sgv['is_use_RL_method']:
+        if (sgv['visulization_process']['绘制强化学习收敛曲线图']):
+            print("准备绘制强化学习收敛曲线图")
+            Tools.delete_and_recreate_folder(sgv['folderpath_visualize_强化学习收敛曲线'], sgv['is_auto_confirmation'])  # 删除并重建文件夹
+
+            ## 设置参数
+            use_moving_average = False
+            window = 10  # 滑动平均窗口大小 #TODO 后续考虑将这个参数化
+
+            for para_01 in sgv['list_agents_data_filename_para_01']:
+                if (para_01 != 'AB'):
+                    continue
+
+                dataValues_name = sgv['vis']['待收集的数据']['变量名'][0]
+                dataMask_name = sgv['vis']['待收集的数据']['变量名'][1]
+                data_label = sgv['vis']['待收集的数据']['文本标签']
+
+                ## 集中收集 AB 类型的相关数据
+                df_v = pd.read_pickle(list((sgv['folderpath_experiments_output_data']).glob(f"id=0*-v={para_01}-*.pkl"))[0])
+                sgv['num_agents'] = df_v[dataValues_name][df_v['step'] == df_v['step'].max()].values.size
+
+                arr_episodes_agents_values = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的相关数据
+                arr_episodes_agents_mask = np.empty((sgv['num_episodes'], sgv['num_agents']), dtype=object)  # 用于存储每个实验的每个个体的相关数据
+                for sgv['id_episode'] in range(sgv['num_episodes']):
+                    # 这里只需要获取最后一轮的数据，这里的数据不是序列，而是重复累计的。
+                    arr_episodes_agents_values[sgv['id_episode'], :] = df_v[dataValues_name][df_v['step'] == df_v['step'].max()].values
+                    arr_episodes_agents_mask[sgv['id_episode'], :] = df_v[dataMask_name][df_v['step'] == df_v['step'].max()].values
+                    pass  # for
+
+                dict_agents_data = {}
+                for i in range(sgv['num_agents']):
+                    # 创建 DataFrame，包含 id_episode, data_values, data_mask
+                    df_agent_data = pd.DataFrame({
+                        'id_episode': np.arange(sgv['num_episodes']),
+                        dataValues_name: [arr_episodes_agents_values[episode, i] for episode in range(sgv['num_episodes'])],
+                        dataMask_name: [arr_episodes_agents_mask[episode, i] for episode in range(sgv['num_episodes'])],
+                    })
+                    dict_agents_data[i] = df_agent_data
+
+                ## 绘制强化学习收敛曲线图（单个个体）
+                for k, v in dict_agents_data.items():
+                    arr = v[dataValues_name].values
+                    filepath_single_agent = sgv['folderpath_visualize_强化学习收敛曲线'] / f"强化学习收敛曲线图-{data_label}-agent={k}.pdf"
+
+                    # 绘制收敛曲线
+                    plt.figure()
+                    if use_moving_average and len(arr) >= window:
+                        # 计算滑动平均
+                        arr_ma = np.convolve(arr, np.ones(window) / window, mode='valid')
+                        plt.plot(np.arange(len(arr_ma)) + window - 1, arr_ma, label=f"{window}步滑动平均")
+                        plt.plot(arr, alpha=0.3, label="原始")
+                    else:  # 直接画原始曲线
+                        plt.plot(arr, label="原始")
+                        pass  # if
+                    plt.xlabel("Episode")
+                    plt.ylabel(f"{sgv['vis']['待收集的数据']['文本标签']}")
+                    plt.title(f"个体{k} {data_label}收敛曲线（随episode变化）")
+                    plt.legend()
+
+                    if filepath_single_agent:
+                        plt.savefig(filepath_single_agent)
+                    else:
+                        plt.show()
+                    plt.close()
+
+            ## 绘制所有个体的收敛曲线图
+            plt.figure()
+            filepath_all_agents = sgv['folderpath_visualize_强化学习收敛曲线'] / f"强化学习收敛曲线图-{data_label}-所有agent.pdf"
+            for k, v in dict_agents_data.items():
+                arr = v[dataValues_name].values
+                if use_moving_average and len(arr) >= window:
+                    # 计算滑动平均
+                    arr_ma = np.convolve(arr, np.ones(window) / window, mode='valid')
+                    x = np.arange(len(arr_ma)) + window - 1
+                    plt.plot(x, arr_ma, label=f"agent {k} ({window}步滑动平均)")
+                else:  # 直接画原始曲线
+                    x = np.arange(len(arr))
+                    plt.plot(x, arr, label=f"agent {k}")
+                    pass  # if
+                plt.annotate(f"agent {k}", (x[-1], arr[-1]), textcoords="offset points", xytext=(5, 0), ha='left')  # 在曲线末尾标记标签
+            plt.xlabel("Episode")
+            plt.ylabel(f"{sgv['vis']['待收集的数据']['文本标签']}")
+            plt.title(f"所有个体 {data_label} 收敛曲线（随episode变化）")
+
+            # 将图例放置在图外
+            plt.legend(loc='upper left', bbox_to_anchor=(1.05, 1), borderaxespad=0.)
+
+            if filepath_all_agents:
+                plt.savefig(filepath_all_agents, bbox_inches='tight')  # 保存图像并调整边距
+                print(f"图像已保存到: {filepath_all_agents}")  # 打印保存路径
+            else:
+                plt.show()  # 显示图像
+
+            plt.close()
+            pass  # if
+
+    # %%
     if sgv['is_ignore_warning']:
         warnings.filterwarnings("default")  # 恢复警告
 

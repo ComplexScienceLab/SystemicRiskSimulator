@@ -1539,3 +1539,5 @@ def merged_and_bind_figs_to_a_pdf_file(order_of_variable_mean_in_horizontal_and_
     return merged_pdf
 
     pass  # function
+
+

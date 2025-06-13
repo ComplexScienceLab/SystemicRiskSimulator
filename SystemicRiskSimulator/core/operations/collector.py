@@ -1,5 +1,6 @@
 ## 函数区：收集数据
 import shutil
+from copy import deepcopy
 
 from scipy.sparse import csr_array
 import pickle
@@ -240,19 +241,52 @@ class Collector:
 
         # #HACK 改之后的收集 agents 数据文件代码
         for para_01 in sgv['list_agents_data_filename_para_01']:
+            # if para_01 == "note" or para_01 == "AB":  # 如果是备注变量，则跳过。因为是静态的，不需要收集
             if para_01 == "note":  # 如果是备注变量，则跳过。因为是静态的，不需要收集
                 continue
-            series = pd.Series()
-            for i in A[para_01].index:
-                series[i] = A[para_01][i].copy()  # BUG 是否无法实现副本复制？
-            df = series.to_frame().transpose()
+                pass  # if
+
+            if para_01 == "AB":  # 如果是 agent-based 类型
+                df = pd.DataFrame()
+                for field in A[para_01].index.drop('id_agent'):
+                    # dict_agents_values = dict()
+                    list_agents_values = []
+                    for id_agent, v_agent in enumerate(A[para_01][field]):
+                        dict_agent_value = dict()
+                        for k, v in v_agent.items():
+                            name_k = f"{field}_{k}"
+                            # # 取值的时候，只有最后一个是有效的。这里的值不是单个的序列，而是重复累计的序列。
+                            # if isinstance(v[-1], np.ndarray):
+                            #     dict_agent_value[name_k] = deepcopy(v[-1][:])  # 如果是 numpy 数组，取切片
+                            # else:
+                            #     dict_agent_value[name_k] = v[-1]  # 否则直接取值
+                            #     pass  # if
+                            dict_agent_value[name_k] = deepcopy(v[-1])  # 只有最后一个是有效的。这里的值不是单个的序列，而是重复累计的序列。
+                            pass  # for
+                        dict_agent_value.update(dict_agent_value)
+                        list_agents_values.append(dict_agent_value)
+                        pass  # for
+                        # df_agents_values = pd.DataFrame(list_agents_values)
+                    df = pd.concat([df, pd.DataFrame(list_agents_values)], axis=1, ignore_index=False)
+                    pass  # for
+                df.insert(loc=0, column='id_agent', value=np.arange(sgv['num_bank']))
+            else:  # 如果是其他类型，暨规则数据结构类型，例如 BB、IB 等类型
+                series = pd.Series()
+                for field in A[para_01].index:
+                    series[field] = deepcopy(A[para_01][field])  # #BUG 是否正确数据结构？
+                    pass  # for
+                df = series.to_frame().transpose()
+                pass  # if
+
             df.insert(loc=0, column='process_name', value=sgv['process_name'])
             df.insert(loc=1, column='step', value=sgv['step'])
             df.insert(loc=2, column='turn', value=sgv['turn'])
             df.insert(loc=3, column='phase', value=sgv['phase'])
-            if collect is None:
+
+            if collect is None:  # 如果没有指定收集的字段，则收集所有字段
                 A_data[para_01] = pd.concat([A_data[para_01], df], ignore_index=True)
-            else:
+                pass  # if
+            else:  # 如果指定了收集的字段，则只收集指定的字段
                 for variable in collect:
                     for field in variable[variable]:
                         if field in df.columns:
@@ -312,17 +346,39 @@ class Collector:
         #     compare.append(A_data.IB['hel'][i] ^ A_data_decompress.IB['hel'][i])
 
         ## 导出数据
-        # for para_01 in list(set(sgv['list_agents_data_filename_para_01']) - {"note"}):
+
+        if sgv['is_use_RL_method']:
+            sgv['exp_id_exp_output_data'] = f"id={sgv['id_episode']}-"
+            if sgv['RL_state'] == 'training':
+                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+            elif sgv['RL_state'] == 'using':
+                folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+                pass  # if
+        else:
+            sgv['exp_id_exp_output_data'] = ""
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+            pass  # if
+        folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
+
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            if para_01 == "note":  # 如果是备注变量，则只保存成 pkl 文件
-                pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
-                continue
-            if sgv['is_export_data_to_pkl']:
-                pd.to_pickle(A_data[para_01], Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl"))
-            if sgv['is_export_data_to_xlsx']:
-                A_data[para_01].to_excel(Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx"), index=False)
-            if sgv['is_export_data_to_csv']:
-                A_data[para_01].to_csv(Path(sgv['folderpath_experiments_output_data'], f"exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv"), index=False)
+            match para_01:
+                case "note":  # 如果变量类型是 note ，则直接保存成 pkl 文件
+                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                case "AB":  # 如果变量类型是 AB
+                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                    if sgv['is_export_data_to_xlsx']:
+                        A_data[para_01].to_excel(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
+                case _:
+                    pd.to_pickle(A_data[para_01], folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+                    if sgv['is_export_data_to_xlsx']:
+                        A_data[para_01].to_excel(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.xlsx", index=False)
+                    if sgv['is_export_data_to_csv']:
+                        A_data[para_01].to_csv(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.csv", index=False)
+                    pass  # match
+            # # DEBUG 立刻读取刚保存的文件检查是否正确
+            # A_data_AB_before = A_data[para_01]
+            # A_data_AB_after = pd.read_pickle(folderpath_experiments_output_data / f"{sgv['exp_id_exp_output_data']}exp={str(sgv['id_experiment'])}-v={para_01}-aid={sgv['id_agents']}.pkl")
+            pass  # for
 
         pass  # function
 

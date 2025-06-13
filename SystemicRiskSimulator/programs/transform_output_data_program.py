@@ -75,10 +75,35 @@ def main(sgv):
     # %%
     print("执行：")
 
-    num_files_BB = len(list(sgv['folderpath_experiments_output_data'].glob('*v=BB-*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
-    num_files_IB = len(list(sgv['folderpath_experiments_output_data'].glob('*v=IB-*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
+    if sgv['is_use_RL_method']:
+        if sgv['RL_state'] == 'training':
+            sgv['subfoldername_experiments_output_data'] = "RL_training"
+        elif sgv['RL_state'] == 'using':
+            sgv['subfoldername_experiments_output_data'] = "RL_using"
+            pass  # if
+    else:
+        sgv['exp_id_exp_output_data'] = ""
+        sgv['subfoldername_experiments_output_data'] = "normal"
+        pass  # if
+
+    if sgv['is_use_RL_method']:
+        if sgv['RL_state'] == 'training':
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+        elif sgv['RL_state'] == 'using':
+            folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+            pass  # if
+        pass  # if
+    else:
+        folderpath_experiments_output_data = sgv['folderpath_experiments_output_data'] / sgv['subfoldername_experiments_output_data']
+        pass  # if
+
+    folderpath_experiments_output_data.mkdir(parents=True, exist_ok=True)
+
+    num_files_BB = len(list(folderpath_experiments_output_data.glob('*v=BB-*.pkl')))  # 获取实验组输出数据pkl格式之BB数据之文件数量
+    num_files_IB = len(list(folderpath_experiments_output_data.glob('*v=IB-*.pkl')))  # 获取实验组输出数据pkl格式之IB数据之文件数量
     print(f"BB 文件数等于 IB 文件数？：{num_files_BB == num_files_IB}")  # DEBUG
 
+    # if sgv['is_use_sqlite_to_manage_experiments']:
     ## 连接 SQLite 数据库，统计实验组作业完成情况（#HACK #NOTE 只能用于串行处理模式）
     conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
     c = conn.cursor()
@@ -109,49 +134,67 @@ def main(sgv):
             list_idsExp_RAW.append(exp_id)
             pass  # if
         pass  # for
-    list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(0, num_files_BB))
-    list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
-    # 保存实验组作业完成状态信息
-    with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
-        json.dump({
-            "计划运行的实验组 id": list_idsExp_TASK,
-            "未运行过的实验组 id": list_idsExp_RAW,
-            "之前运行中被中断的实验组 id": list_idsExp_DOING,
-            "已完成的实验组 id": list_idsExp_DONE,
-            "完成率": len(list_idsExp_DONE) / num_files_BB,
-            "中断率": len(list_idsExp_DOING) / num_files_BB,
-        }, f)
-        logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
-            "之前运行中被中断的实验组 id": list_idsExp_DOING,
-            "完成率": len(list_idsExp_DONE) / num_files_BB,
-            "中断率": len(list_idsExp_DOING) / num_files_BB,
-        }))
-    # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
-    # ids = [row[0] for row in rows]  # 获取实验组 id
-    # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-    # Tools.draw_color_band_before_experiments(ids, status_预处理实验结果程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_预处理实验结果程序.png"))
-    conn.close()
 
-    ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
+    # 如果实验组作业状态表中没有实验组 id，那么添加实验组 id 列
+    c.execute("PRAGMA table_info(experiments)")
+    if not any([v[1] == 'exp_id' for v in c.fetchall()]):
+        c.execute("ALTER TABLE experiments ADD COLUMN exp_id INTEGER")
+        conn.commit()
+        pass  # if
 
-    # #HACK 改之前的处理结果数据代码，对于未适配的 set_config_variables.py 文件而言，如果没有
-    # list_filepath_pkl_BB = []
-    # list_filepath_pkl_IB = []
-    # for id in list_idsExp_TASK:
-    #     list_filepath_pkl_BB.extend(sgv['folderpath_experiments_output_data'].glob(f'BB_exp={id}.pkl'))
-    #     list_filepath_pkl_IB.extend(sgv['folderpath_experiments_output_data'].glob(f'IB_exp={id}.pkl'))
-    #     pass  # for
+    # 读取实验组作业状态信息
+    # list_idsExp_DOING = []
+    # list_idsExp_DONE = []
+    # list_idsExp_RAW = []
 
-    # #HACK 改之后的处理结果数据代码
-    dict_filepath_pkl = dict()
-    for para_01 in sgv['list_agents_data_filename_para_01']:
-        list_filepath_pkl = []
-        for id in list_idsExp_TASK:
-            # list_filepath_pkl.extend(sgv['folderpath_experiments_output_data'].glob(f'{para_01}-exp={id}.pkl'))
-            list_filepath_pkl.extend(sgv['folderpath_experiments_output_data'].glob(f'exp={id}-v={para_01}-aid=*.pkl'))
+    if not sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':  # 如果不是运行强化学习算法和ABM模型实验组做训练
+
+        list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(0, num_files_BB))
+        list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
+        # 保存实验组作业完成状态信息
+        with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+            json.dump({
+                "计划运行的实验组 id": list_idsExp_TASK,
+                "未运行过的实验组 id": list_idsExp_RAW,
+                "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                "已完成的实验组 id": list_idsExp_DONE,
+                "完成率": len(list_idsExp_DONE) / num_files_BB,
+                "中断率": len(list_idsExp_DOING) / num_files_BB,
+            }, f)
+            logging.info("实验组开始运行前，实验组作业完成状态情况如下:\n" + str({
+                "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                "完成率": len(list_idsExp_DONE) / num_files_BB,
+                "中断率": len(list_idsExp_DOING) / num_files_BB,
+            }))
+        # # 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。
+        # ids = [row[0] for row in rows]  # 获取实验组 id
+        # status_预处理实验结果程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+        # Tools.draw_color_band_before_experiments(ids, status_预处理实验结果程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_预处理实验结果程序.png"))
+        conn.close()
+
+        ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
+        dict_filepath_pkl = dict()
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            list_filepath_pkl = []
+            for id_exp in list_idsExp_TASK:
+                list_filepath_pkl.extend(list(folderpath_experiments_output_data.glob(f'exp={id_exp}-v={para_01}-aid=*.pkl')))
+                pass  # for
+            dict_filepath_pkl[para_01] = list_filepath_pkl
             pass  # for
-        dict_filepath_pkl[para_01] = list_filepath_pkl
-        pass  # for
+
+    else:  # #NOW 如果是是运行强化学习算法和ABM模型实验组做训练，那么读取所有实验组 id 的实验结果数据
+        ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
+        dict_filepath_pkl = dict()
+        for para_01 in sgv['list_agents_data_filename_para_01']:
+            list_filepath_pkl = list(folderpath_experiments_output_data.glob(f'id=*-exp=*-v={para_01}-aid=*.pkl'))
+            list_idsExp_TASK = [int(re.search(r'id=(\d+)-exp=(\d+)-v=', str(v)).group(2)) for v in list_filepath_pkl]  # 获取实验组 id
+            # list_filepath_pkl = []
+            # for id_exp in list_idsExp_TASK:
+            #     list_filepath_pkl.extend(list(folderpath_experiments_output_data.glob(f'id=*-exp=*-v={para_01}-aid=*.pkl')))
+            #     pass  # for
+            dict_filepath_pkl[para_01] = list_filepath_pkl
+            pass  # for
+        pass  # if
 
     ## #NOTE 导入Pandas格式的实验结果数据转换为面板形式再导出
     if (sgv['transform_data']['导入Pandas格式的实验结果数据转换为面板形式再导出']):
@@ -166,7 +209,7 @@ def main(sgv):
         #     pass
         # agents_data_paras = df_parameters[df_parameters['type'] == 'agents_data']  # 获取 agents 数据表
 
-        folderpath_experiments_output_data_panel = Path(sgv['folderpath_experiments_output_data'] / "../exp_output_data_panel").resolve()
+        folderpath_experiments_output_data_panel = Path(folderpath_experiments_output_data / "../../exp_output_data_panel").resolve()
         folderpath_experiments_output_data_panel.mkdir(parents=True, exist_ok=True)  # 创建面板数据文件夹
 
         if sgv['is_enable_multiprocessing_for_transform_output_data']:
@@ -219,6 +262,7 @@ def main(sgv):
                         sgv['folderpath_experiments_output_log'],
                         folderpath_experiments_output_data_panel,
                         sgv['is_use_sqlite_to_manage_experiments'],
+                        sgv['list_table_for_explode'],
                     )
                     pass  # for
                 pass  # for
@@ -362,7 +406,7 @@ def main(sgv):
     pass  # main
 
 
-def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl: dict, filepath_note_pkl: dict, columns_to_insert_into_panel_data: dict, folderpath_experiments_output_log: Path, folderpath_experiments_output_data_panel: Path, is_use_sqlite_to_manage_experiments: bool):
+def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(exp_id: int, filepath_pkl: dict, filepath_note_pkl: dict, columns_to_insert_into_panel_data: dict, folderpath_experiments_output_log: Path, folderpath_experiments_output_data_panel: Path, is_use_sqlite_to_manage_experiments: bool, list_table_for_explode: list):
     """
     预处理单次实验之各实验结果数据
 
@@ -374,6 +418,7 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
         folderpath_experiments_output_log: Path: 实验组输出日志文件夹路径
         folderpath_exp_output_data: Path: 面板数据文件夹路径
         is_use_sqlite_to_manage_experiments: bool: 是否使用 SQLite 数据库管理实验组
+        list_table_for_explode: list: 需要展平的表格列表。每一个元素是一个字符串，表示需要展平的表格名。
 
     Returns:
         None
@@ -403,7 +448,15 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
             df_1D_original.to_pickle(Path(filepath_pkl_1D_panal))  # 导出为 pkl 格式
             df_1D_original = pd.read_pickle(filepath_pkl_1D_panal)  # 重新读取 pkl 文件，对该文件直接修改
 
-            num_size = df_1D_original[df_1D_original.columns[-1]][0].shape[0]  # 获取个体数 #BUG  如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
+            if para_01 in list_table_for_explode:
+                is_value_a_vector = True
+            else:
+                is_value_a_vector = False
+
+            if is_value_a_vector:
+                num_size = df_1D_original[df_1D_original.columns[-1]][0].shape[0]  # 获取个体数 #HACK 如果这里报错，那么最常见的可能是因为数据文件内容是空的。需要查看运行程序是否有配置因此正确导出数据
+            else:
+                num_size = df_1D_original[df_1D_original.columns[-1]][0].size
 
             df_1D = df_1D_original.map(lambda x: x.flatten() if hasattr(x, 'flatten') else x)  # 压平二维数组
 
@@ -413,31 +466,36 @@ def fun_导入Pandas格式的实验结果数据转换为面板形式再导出(ex
                 col = df_1D.pop(v[0])
                 df_1D.insert(df_1D.columns.get_loc(v[2]) + 1, v[0], col)
 
-            ## 转换数据格式为numpy字符串格式
-            list_columns_for_transform_datatype = [
-                v for i, v in enumerate(df_1D.columns) if (
-                        df_1D[v].dtype == np.dtype('object')
-                        and type(df_1D[v][0]) == str
-                )
-            ]
-            for i in range(df_1D.__len__()):
-                df_1D.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_1D[list_columns_for_transform_datatype[0]][i])
+            if is_value_a_vector:
+                ## 转换数据格式为 numpy 字符串格式
+                list_columns_for_transform_datatype = [
+                    v for i, v in enumerate(df_1D.columns) if (
+                            df_1D[v].dtype == np.dtype('object')
+                            and type(df_1D[v][0]) == str
+                    )
+                ]
+                for i in range(df_1D.__len__()):
+                    df_1D.at[i, list_columns_for_transform_datatype[0]] = np.str_(df_1D[list_columns_for_transform_datatype[0]][i])
+                    pass  # for
 
-            ## 展平为面板形式
-            list_columns_for_explode = [
-                v for i, v in enumerate(df_1D.columns) if (
-                        df_1D[v].dtype == np.dtype('object')
-                        and df_1D[v][0].size == num_size
-                )
-            ]  # 获取需要展平的列
+                ## 展平为面板形式
+                list_columns_for_explode = [
+                    v for i, v in enumerate(df_1D.columns) if (
+                            df_1D[v].dtype == np.dtype('object')
+                            and df_1D[v][0].size == num_size
+                    )
+                ]  # 获取需要展平的列
 
-            df_1D_panel = df_1D.explode('id_agent')  # 只展开 'id_agent' 列
-            for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
-                if col != 'id_agent':
-                    # df_1D_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).reset_index(level=1, drop=True)
-                    df_1D_panel[col] = df_1D.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).values
-                    pass  # if
-                pass  # for
+                df_1D_panel = df_1D.explode('id_agent')  # 只展开 'id_agent' 列
+                for col in list_columns_for_explode:  # 遍历其他需要展开的列，并将它们的元素展开以匹配 'id_agent' 列的行数
+                    if col != 'id_agent':
+                        # df_1D_panel[col] = df_BB.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).reset_index(level=1, drop=True)
+                        df_1D_panel[col] = df_1D.apply(lambda row: pd.Series(row[col]), axis=1).stack(dropna=False).values
+                        pass  # if
+                    pass  # for
+            else:
+                df_1D_panel = df_1D
+                pass  # if
             df_1D_panel = df_1D_panel.reset_index(drop=True)  # 重置索引
 
             df_1D_panel.insert(0, 'id', range(len(df_1D_panel)))  # 添加id列
