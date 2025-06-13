@@ -147,7 +147,7 @@ def main(sgv):
     # list_idsExp_DONE = []
     # list_idsExp_RAW = []
 
-    if not (sgv['is_use_RL_method'] and sgv['RL_state'] == 'training'):  # 如果不是在使用强化学习方法，并且不是在训练状态的时候
+    if not sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':  # 如果不是运行强化学习算法和ABM模型实验组做训练
 
         list_idsExp_PLAN = sgv['list_idsExperiment_to_run'] if sgv['list_idsExperiment_to_run'] is not None else list(range(0, num_files_BB))
         list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
@@ -182,14 +182,16 @@ def main(sgv):
             dict_filepath_pkl[para_01] = list_filepath_pkl
             pass  # for
 
-    else:  # #NOW 如果是使用强化学习方法，并且是训练状态，那么读取所有实验组 id 的实验结果数据
+    else:  # #NOW 如果是是运行强化学习算法和ABM模型实验组做训练，那么读取所有实验组 id 的实验结果数据
         ## 读取实验结果数据。根据 list_idsExp_TASK 中的实验组 id，读取实验结果数据。
         dict_filepath_pkl = dict()
         for para_01 in sgv['list_agents_data_filename_para_01']:
-            list_filepath_pkl = []
-            for id_exp in list_idsExp_TASK:
-                list_filepath_pkl.extend(list(folderpath_experiments_output_data.glob(f'id=*-exp={id_exp}-v={para_01}-aid=*.pkl')))
-                pass  # for
+            list_filepath_pkl = list(folderpath_experiments_output_data.glob(f'id=*-exp=*-v={para_01}-aid=*.pkl'))
+            list_idsExp_TASK = [int(re.search(r'id=(\d+)-exp=(\d+)-v=', str(v)).group(2)) for v in list_filepath_pkl]  # 获取实验组 id
+            # list_filepath_pkl = []
+            # for id_exp in list_idsExp_TASK:
+            #     list_filepath_pkl.extend(list(folderpath_experiments_output_data.glob(f'id=*-exp=*-v={para_01}-aid=*.pkl')))
+            #     pass  # for
             dict_filepath_pkl[para_01] = list_filepath_pkl
             pass  # for
         pass  # if

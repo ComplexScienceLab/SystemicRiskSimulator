@@ -71,9 +71,7 @@ def main(sgv):
         warnings.filterwarnings("ignore")  # 忽略警告
 
     ## 初始化、构建、安装模型
-    if sgv['init_parameters_method'] == 'import data':
-        sgv, list_idsExp_TASK, parameters_works, model_dict = Operator.operate_installing(sgv)
-        pass  # if
+    sgv, list_idsExp_TASK, parameters_works, model_dict = Operator.operate_installing(sgv)
 
     ## 运行实验组
     logging.debug("\n\n\n实验组开始：\n\n")
@@ -91,27 +89,6 @@ def main(sgv):
     # list_idsExp_TASK = [row[0] for row in rows]  # 获取实际上需要运行的实验组 id 列表
 
     # paras = parameters_works[parameters_works['exp_id'].isin(list_idsExp_TASK)]  # 获取实际上需要运行的实验组参数作业数据框  #HACK 2025-04-14 移到别处
-
-    ## 设定实验组运行方式
-    if sgv['is_use_Gym_environments'] is False and sgv['is_use_RL_method'] is False:
-        logging.debug("\nexperiments_program.py : 只使用模拟器自带的模型，不使用强化学习环境工具包自定义的模型。\n")
-        sgv['运行实验组的方式'] = '运行ABM实验组'
-    elif sgv['is_use_Gym_environments'] is False and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'using':
-        logging.debug("\nexperiments_program.py : 使用自定义的环境模型，并且使用强化学习算法对已经训练过的模型做运用。\n")
-        sgv['运行实验组的方式'] = '运行强化学习算法和ABM模型实验组做应用'
-    elif sgv['is_use_Gym_environments'] is False and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'training':
-        logging.debug("\nexperiments_program.py : 使用自定义的环境模型，并且使用强化学习算法做训练。\n")
-        sgv['运行实验组的方式'] = '运行强化学习算法和ABM模型实验组做训练'
-    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is False:
-        logging.debug("\nexperiments_program.py : 使用 Gymnasium 环境框架结合自定义的环境模型，但是没有用强化学习算法进行训练。\n")
-        sgv['运行实验组的方式'] = '运行Gym和ABM实验组'
-    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'using':
-        logging.debug("\nexperiments_program.py : 使用 Gymnasium 环境框架结合自定义的环境模型，并且使用强化学习算法已经训练过的模型做运用。\n")
-        sgv['运行实验组的方式'] = '运行强化学习算法和Gym框架结合自定义ABM模型实验组做应用'
-    elif sgv['is_use_Gym_environments'] is True and sgv['is_use_RL_method'] is True and sgv['RL_state'] == 'training':
-        logging.debug("\nexperiments_program.py : 使用 Gymnasium 环境框架结合自定义的环境模型，并且使用强化学习算法做训练。\n")
-        sgv['运行实验组的方式'] = '运行强化学习算法和Gym框架结合自定义ABM模型实验组做训练'
-        pass  # if
 
     ## 通过设定的运行方式运行实验组
     match sgv['运行实验组的方式']:

@@ -46,182 +46,185 @@ class Operator:
         """
 
         ## 设置参数作业列表
-        if sgv['init_parameters_method'] == "import data":
 
-            # 如果不是使用 RL 方法，并且不是在训练状态下，那么就进行实验组的安装与初始化
-            if not (sgv['is_use_RL_method'] and sgv['RL_state'] == 'training'):
+        # if sgv['init_parameters_method'] == "import data":
 
-                with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
-                    parameters_works = pd.read_pickle(f)
-                    num_parameters_works = len(parameters_works)
+        if not sgv['运行实验组的方式'] == '运行强化学习算法和ABM模型实验组做训练':  # 如果不是运行强化学习算法和ABM模型实验组做训练
 
-                    # 根据配置项从参数库中获取参数
-                    if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置计划运行所有的实验组
-                        list_idsExperiment_to_run = list(range(0, num_parameters_works))
-                    elif isinstance(sgv['list_idsExperiment_to_run'], list):  # 如果设置了实验组 id 列表，那么就设置计划列表内的实验组
-                        list_idsExperiment_to_run = sgv['list_idsExperiment_to_run']
-                    elif isinstance(sgv['list_idsExperiment_to_run'], str):  # 如果设置了实验组运行条件文本，那么就解析文本信息，作为查询条件，设置计划符合条件的实验组
-                        query_text = sgv['list_idsExperiment_to_run']
-                        try:
-                            # 使用 eval 解析文本信息，作为查询条件
-                            # parameters_works_filter = parameters_works.query(query_text)
-                            parameters_works_filter = parameters_works[eval(query_text)]
-                            list_idsExperiment_to_run = parameters_works_filter['exp_id'].tolist()
-                        except Exception as e:
-                            raise Exception(f"实验组运行条件文本解析错误！！！")
-                    else:
-                        list_idsExperiment_to_run = []
-                        pass  # if
+            with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
+                parameters_works = pd.read_pickle(f)
+                pass  # with
 
-                    ## SQLite 数据库统计实验组之上一次的作业之完成情况
-                    time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
-                    # 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续删除原有的作业数据库再重建
-                    if os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
-                        is_exist_experiments_works_status_db = True
-                        mtime_of_file_parameters_pkl = Path(sgv['folderpath_parameters'], "parameters.pkl").resolve().stat().st_mtime
-                        mtime_of_file_experimentsWorksStatus_db = Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db").resolve().stat().st_mtime
-                        if mtime_of_file_parameters_pkl > mtime_of_file_experimentsWorksStatus_db:
-                            is_mtime_of_file_parameters_pkl_changed = True
-                        else:
-                            is_mtime_of_file_parameters_pkl_changed = False
-                            pass  # if
-                    else:
-                        is_exist_experiments_works_status_db = False
-                        is_mtime_of_file_parameters_pkl_changed = True
-                        pass  # if
+            num_parameters_works = len(parameters_works)
 
-                    if sgv['is_rerun_all_done_works_in_the_same_experiments'] or is_mtime_of_file_parameters_pkl_changed:
-                        is_recreate_experiments_works_status_db = True
-                        if is_exist_experiments_works_status_db:
-                            is_remove_experiments_works_status_db = True
-                        else:
-                            is_remove_experiments_works_status_db = False
-                            pass  # if
-                    else:
-                        is_recreate_experiments_works_status_db = False
-                        is_remove_experiments_works_status_db = False
-                        pass  # if
+            # 根据配置项从参数库中获取参数
+            if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置计划运行所有的实验组
+                list_idsExp_PLAN = list(range(0, num_parameters_works))
+            elif isinstance(sgv['list_idsExperiment_to_run'], list):  # 如果设置了实验组 id 列表，那么就设置计划列表内的实验组
+                list_idsExp_PLAN = sgv['list_idsExperiment_to_run']
+            elif isinstance(sgv['list_idsExperiment_to_run'], str):  # 如果设置了实验组运行条件文本，那么就解析文本信息，作为查询条件，设置计划符合条件的实验组
+                query_text = sgv['list_idsExperiment_to_run']
+                try:
+                    # 使用 eval 解析文本信息，作为查询条件
+                    # parameters_works_filter = parameters_works.query(query_text)
+                    parameters_works_filter = parameters_works[eval(query_text)]
+                    list_idsExp_PLAN = parameters_works_filter['exp_id'].tolist()
+                except Exception as e:
+                    raise Exception(f"实验组运行条件文本解析错误！！！")
+            else:
+                list_idsExp_PLAN = []
+                pass  # if
 
-                    if is_remove_experiments_works_status_db:
-                        os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-                        pass  # if
+            ## SQLite 数据库统计实验组之上一次的作业之完成情况
+            time_start_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
+            # 如果参数库当中的参数文件夹中的参数文件有更新，那么就要在后续删除原有的作业数据库再重建
+            if os.path.exists(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db")):
+                is_exist_experiments_works_status_db = True
+                mtime_of_file_parameters_pkl = Path(sgv['folderpath_parameters'], "parameters.pkl").resolve().stat().st_mtime
+                mtime_of_file_experimentsWorksStatus_db = Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db").resolve().stat().st_mtime
+                if mtime_of_file_parameters_pkl > mtime_of_file_experimentsWorksStatus_db:
+                    is_mtime_of_file_parameters_pkl_changed = True
+                else:
+                    is_mtime_of_file_parameters_pkl_changed = False
+                    pass  # if
+            else:
+                is_exist_experiments_works_status_db = False
+                is_mtime_of_file_parameters_pkl_changed = True
+                pass  # if
 
-                    if is_recreate_experiments_works_status_db:  # 创建数据库并初始化表格
-                        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-                        c = conn.cursor()
-                        c.execute(
-                            """CREATE TABLE IF NOT EXISTS experiments
-                               (
-                                   exp_id
-                                   INTEGER
-                                   PRIMARY
-                                   KEY,
-                                   status_实验组模拟程序
-                                   TEXT
-                               )"""
-                        )
-                        # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
-                        for i in range(1, num_parameters_works + 1):
-                            c.execute("INSERT INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
-                            pass  # for
-                        conn.commit()
-                        is_exist_experiments_works_status_db = True
-                        is_recreate_experiments_works_status_db = False
-                    else:
-                        # 连接现有数据库
-                        conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
-                        c = conn.cursor()
-                        if sgv['is_rerun_all_done_works_in_the_same_experiments']:
-                            c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
-                            conn.commit()
-                            pass  # if
-                        pass  # if
-                    # 检查实验组作业完成状态
-                    c.execute("SELECT exp_id, status_实验组模拟程序 FROM experiments")
-                    rows = c.fetchall()
-                    list_idsExp_DOING = []
-                    list_idsExp_DONE = []
-                    list_idsExp_RAW = []
-                    for row in rows:
-                        exp_id, status_实验组模拟程序 = row[0], row[1]
-                        if status_实验组模拟程序 == "DOING":
-                            list_idsExp_DOING.append(exp_id)
-                        elif status_实验组模拟程序 == "DONE":
-                            list_idsExp_DONE.append(exp_id)
-                        else:
-                            list_idsExp_RAW.append(exp_id)
-                            pass  # if
-                        pass  # for
-                    list_idsExp_PLAN = list_idsExperiment_to_run
-                    list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
-                    # 保存实验组作业完成状态信息
-                    with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
-                        json.dump(
-                            {
-                                "计划运行的实验组 id": list_idsExp_TASK,
-                                "未运行过的实验组 id": list_idsExp_RAW,
-                                "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                                "已完成的实验组 id": list_idsExp_DONE,
-                                "完成率": len(list_idsExp_DONE) / num_parameters_works,
-                                "中断率": len(list_idsExp_DOING) / num_parameters_works,
-                            }, f
-                        )
-                        logging.info(
-                            "实验组开始运行前，实验组作业完成状态情况如下:\n" + str(
-                                {
-                                    "之前运行中被中断的实验组 id": list_idsExp_DOING,
-                                    "完成率": len(list_idsExp_DONE) / num_parameters_works,
-                                    "中断率": len(list_idsExp_DOING) / num_parameters_works,
-                                }
-                            )
-                        )
-                        pass  # with
+            if sgv['is_rerun_all_done_works_in_the_same_experiments'] or is_mtime_of_file_parameters_pkl_changed:
+                is_recreate_experiments_works_status_db = True
+                if is_exist_experiments_works_status_db:
+                    is_remove_experiments_works_status_db = True
+                else:
+                    is_remove_experiments_works_status_db = False
+                    pass  # if
+            else:
+                is_recreate_experiments_works_status_db = False
+                is_remove_experiments_works_status_db = False
+                pass  # if
 
-                    ## 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
-                    if sgv['is_draw_color_band_distribution_before_experiments']:
-                        ids = [row[0] for row in rows]  # 获取实验组 id
-                        status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
-                        logging.info("绘制实验组作业状态色带分布图...")
-                        Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
+            if is_remove_experiments_works_status_db:
+                os.remove(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                pass  # if
 
-                    time_end_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
-                    logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
+            if is_recreate_experiments_works_status_db:  # 创建数据库并初始化表格
+                conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                c = conn.cursor()
+                c.execute(
+                    """CREATE TABLE IF NOT EXISTS experiments
+                       (
+                           exp_id
+                           INTEGER
+                           PRIMARY
+                           KEY,
+                           status_实验组模拟程序
+                           TEXT
+                       )"""
+                )
+                # 根据实验组总数量，生成实验组作业状态信息。其中，所有实验组作业状态为 "RAW"
+                for i in range(1, num_parameters_works + 1):
+                    c.execute("INSERT INTO experiments (exp_id, status_实验组模拟程序) VALUES (?, ?)", (i, "RAW"))
+                    pass  # for
+                conn.commit()
+                is_exist_experiments_works_status_db = True
+                is_recreate_experiments_works_status_db = False
+            else:
+                # 连接现有数据库
+                conn = sqlite3.connect(Path(sgv['folderpath_experiments_output_log'], "experiments_works_status.db"))
+                c = conn.cursor()
+                if sgv['is_rerun_all_done_works_in_the_same_experiments']:
+                    c.execute("UPDATE experiments SET status_实验组模拟程序 = 'RAW'")
+                    conn.commit()
+                    pass  # if
+                pass  # if
+            # 检查实验组作业完成状态
+            c.execute("SELECT exp_id, status_实验组模拟程序 FROM experiments")
+            rows = c.fetchall()
+            list_idsExp_DOING = []
+            list_idsExp_DONE = []
+            list_idsExp_RAW = []
+            for row in rows:
+                exp_id, status_实验组模拟程序 = row[0], row[1]
+                if status_实验组模拟程序 == "DOING":
+                    list_idsExp_DOING.append(exp_id)
+                elif status_实验组模拟程序 == "DONE":
+                    list_idsExp_DONE.append(exp_id)
+                else:
+                    list_idsExp_RAW.append(exp_id)
+                    pass  # if
+                pass  # for
+            list_idsExp_TASK = [i for i in list_idsExp_PLAN if i not in list_idsExp_DONE]
+            # 保存实验组作业完成状态信息
+            with open(Path(sgv['folderpath_experiments_output_log'], "outputlog_worksStatesBeforeThisExperiments.json"), 'w') as f:
+                json.dump(
+                    {
+                        "计划运行的实验组 id": list_idsExp_TASK,
+                        "未运行过的实验组 id": list_idsExp_RAW,
+                        "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                        "已完成的实验组 id": list_idsExp_DONE,
+                        "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                        "中断率": len(list_idsExp_DOING) / num_parameters_works,
+                    }, f
+                )
+                logging.info(
+                    "实验组开始运行前，实验组作业完成状态情况如下:\n" + str(
+                        {
+                            "之前运行中被中断的实验组 id": list_idsExp_DOING,
+                            "完成率": len(list_idsExp_DONE) / num_parameters_works,
+                            "中断率": len(list_idsExp_DOING) / num_parameters_works,
+                        }
+                    )
+                )
 
-                    conn.close()  # 关闭数据库连接
-                    pass  # with
+            ## 绘制色带分布图，展示实验组 id 分布对应的实验组作业运行之前的作业完成状态信息。#BUG 如果实验组很多，那么绘制图像会占用大量的内存与时间！可以考虑注释不运行这段。
+            if sgv['is_draw_color_band_distribution_before_experiments']:
+                ids = [row[0] for row in rows]  # 获取实验组 id
+                status_实验组模拟程序_运行状态 = [row[1] for row in rows]  # 获取实验组作业状态
+                logging.info("绘制实验组作业状态色带分布图...")
+                Tools.draw_color_band_before_experiments(ids, status_实验组模拟程序_运行状态, list_idsExp_PLAN, list_idsExp_TASK, Path(sgv['folderpath_experiments_output_log'], "color_band_distribution_before_实验组模拟程序.png"))
 
-                Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
+            time_end_统计实验组作业情况 = timeit.default_timer()  # #DEBUG
+            logging.debug(f"统计参数数据完成，用时：{time_end_统计实验组作业情况 - time_start_统计实验组作业情况} 秒。")  # #DEBUG
 
-                sgv['num_experiments_to_run'] = len(list_idsExp_TASK)  # 获取实验组数量
-                sgv['num_unfinished_experiments_to_run'] = len(list_idsExp_TASK)  # 未完成的实验组数量
+            conn.close()  # 关闭数据库连接
 
-            else:  # #NOW 如果是使用 RL 方法，并且是在训练状态下，那么就不需要安装实验组数据，而是直接使用强化学习环境工具包的相关方法来进行实验组的初始化
-                # if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置随机选取实验组运行
-                #     list_idsExp_TASK=[]
 
-                with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
-                    parameters_works = pd.read_pickle(f)
-                    num_parameters_works = len(parameters_works)
 
-                    # 根据配置项从参数库中获取参数
-                    if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置计划运行所有的实验组
-                        list_idsExperiment_to_run = list(range(0, num_parameters_works))
-                    elif isinstance(sgv['list_idsExperiment_to_run'], list):  # 如果设置了实验组 id 列表，那么就设置计划列表内的实验组
-                        list_idsExperiment_to_run = sgv['list_idsExperiment_to_run']
-                    elif isinstance(sgv['list_idsExperiment_to_run'], str):  # 如果设置了实验组运行条件文本，那么就解析文本信息，作为查询条件，设置计划符合条件的实验组
-                        query_text = sgv['list_idsExperiment_to_run']
-                        try:
-                            # 使用 eval 解析文本信息，作为查询条件
-                            # parameters_works_filter = parameters_works.query(query_text)
-                            parameters_works_filter = parameters_works[eval(query_text)]
-                            list_idsExperiment_to_run = parameters_works_filter['exp_id'].tolist()
-                        except Exception as e:
-                            raise Exception(f"实验组运行条件文本解析错误！！！")
-                    else:
-                        list_idsExperiment_to_run = []
-                        pass  # if
+        else:  # #NOW 如果是运行强化学习算法和ABM模型实验组做训练，而是直接使用强化学习环境工具包的相关方法来进行实验组的初始化
+
+            with open(Path(sgv['folderpath_parameters'], "parameters.pkl"), 'rb') as f:
+                parameters_works = pd.read_pickle(f)
+                pass  # with
+
+            num_parameters_works = len(parameters_works)
+
+            # 根据配置项从参数库中获取参数
+            if sgv['list_idsExperiment_to_run'] is None:  # 如果没有设置实验组 id 列表，那么就设置计划运行所有的实验组
+                list_idsExp_PLAN = list(range(0, num_parameters_works))
+            elif isinstance(sgv['list_idsExperiment_to_run'], list):  # 如果设置了实验组 id 列表，那么就设置计划列表内的实验组
+                list_idsExp_PLAN = sgv['list_idsExperiment_to_run']
+            elif isinstance(sgv['list_idsExperiment_to_run'], str):  # 如果设置了实验组运行条件文本，那么就解析文本信息，作为查询条件，设置计划符合条件的实验组
+                query_text = sgv['list_idsExperiment_to_run']
+                try:
+                    # 使用 eval 解析文本信息，作为查询条件
+                    # parameters_works_filter = parameters_works.query(query_text)
+                    parameters_works_filter = parameters_works[eval(query_text)]
+                    list_idsExp_PLAN = parameters_works_filter['exp_id'].tolist()
+                except Exception as e:
+                    raise Exception(f"实验组运行条件文本解析错误！！！")
+            else:
+                list_idsExp_PLAN = []
+                pass  # if
+
+            list_idsExp_TASK = [i for i in list_idsExp_PLAN]
 
             pass  # if
+
+        Collector.export_parameter_data(sgv, parameters_works)  # 导出控制参数数据
+
+        sgv['num_experiments_to_run'] = len(list_idsExp_TASK)  # 获取实验组数量
+        sgv['num_unfinished_experiments_to_run'] = len(list_idsExp_TASK)  # 未完成的实验组数量
 
         ## 构建本次实验组所需的所有模型
 
